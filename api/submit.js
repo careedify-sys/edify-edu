@@ -1,46 +1,44 @@
-export default async function handler(req, res) {
-  // Allow CORS from your domain
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+export const config = { runtime: 'edge' };
+
+export default async function handler(req) {
+  const headers = {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Content-Type': 'application/json',
+  };
 
   if (req.method === 'OPTIONS') {
-    return res.status(200).end();
+    return new Response(null, { status: 200, headers });
   }
 
   if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
+    return new Response(JSON.stringify({ error: 'Method not allowed' }), { status: 405, headers });
   }
 
   try {
-    const { name, phone, program, qualification } = req.body;
+    const body = await req.json();
+    const { name, phone, program, qualification } = body;
 
-    // Validate required fields
     if (!name || !phone || !program || !qualification) {
-      return res.status(400).json({ error: 'Missing required fields' });
+      return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400, headers });
     }
 
-    // SHEET_URL is stored safely in Vercel Environment Variables
     const SHEET_URL = process.env.SHEET_URL;
 
     if (!SHEET_URL) {
-      console.error('SHEET_URL environment variable not set');
-      return res.status(500).json({ error: 'Server configuration error' });
+      return new Response(JSON.stringify({ error: 'Server config error' }), { status: 500, headers });
     }
 
-    const response = await fetch(SHEET_URL, {
+    await fetch(SHEET_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, phone, program, qualification }),
-      redirect: 'follow', // Important: Google Scripts redirect after POST
     });
 
-    console.log('Sheet response status:', response.status);
-
-    return res.status(200).json({ success: true });
+    return new Response(JSON.stringify({ success: true }), { status: 200, headers });
 
   } catch (err) {
-    console.error('Submit error:', err);
-    return res.status(500).json({ error: 'Internal server error' });
+    return new Response(JSON.stringify({ error: err.message }), { status: 500, headers });
   }
 }
