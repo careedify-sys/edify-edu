@@ -7,7 +7,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'AW-17380291250');
 </script>
 <meta charset="UTF-8">
@@ -20,8 +19,7 @@
       'value': 1.0,
       'currency': 'INR'
     });
-  </script>
-
+</script>
 </head>
 
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -35,6 +33,8 @@
     --green-l:#edfaf3;
     --muted:  #6b7280;
     --border: #e8e2d9;
+    --blue:   #1d4ed8;
+    --blue-l: #eff6ff;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -47,10 +47,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 24px 16px;
+    /* FIXED: removed justify-content:center so page scrolls naturally */
+    padding: 40px 16px;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden; /* only hide horizontal overflow, allow vertical scroll */
   }
 
   /* Decorative background circles */
@@ -62,6 +62,7 @@
     border-radius: 50%;
     background: radial-gradient(circle, rgba(201,146,13,0.08) 0%, transparent 70%);
     pointer-events: none;
+    z-index: 0;
   }
   body::after {
     content: '';
@@ -71,6 +72,7 @@
     border-radius: 50%;
     background: radial-gradient(circle, rgba(26,122,74,0.07) 0%, transparent 70%);
     pointer-events: none;
+    z-index: 0;
   }
 
   /* Card */
@@ -86,6 +88,7 @@
     animation: rise 0.6s cubic-bezier(0.22,1,0.36,1) both;
     position: relative;
     z-index: 1;
+    margin-bottom: 20px;
   }
 
   @keyframes rise {
@@ -275,22 +278,132 @@
     white-space: nowrap;
   }
 
+  /* ── Online Programs Section ── */
+  .programs-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 36px 40px 32px;
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.06);
+    animation: rise 0.6s 0.2s cubic-bezier(0.22,1,0.36,1) both;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+  }
+
+  .programs-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+
+  .programs-icon {
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    background: var(--blue-l);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem;
+  }
+
+  .programs-card h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.35rem;
+    font-weight: 900;
+    color: var(--ink);
+  }
+
+  .programs-card .subtitle {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 20px;
+    margin-top: 4px;
+  }
+
+  .programs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .program-item {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 14px 12px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .program-item:hover {
+    border-color: #93c5fd;
+    box-shadow: 0 2px 12px rgba(29,78,216,0.08);
+  }
+
+  .program-emoji {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  .program-item strong {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 2px;
+    line-height: 1.3;
+  }
+  .program-item span {
+    font-size: 0.73rem;
+    color: var(--muted);
+  }
+
+  .badge-online {
+    display: inline-block;
+    background: var(--blue-l);
+    border: 1px solid #93c5fd;
+    color: var(--blue);
+    font-size: 0.62rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 99px;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+  }
+
+  .programs-note {
+    background: var(--blue-l);
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 0.8rem;
+    color: #1e40af;
+    line-height: 1.5;
+  }
+
   /* Footer */
   .footer {
-    margin-top: 24px;
     font-size: 0.75rem;
     color: #9ca3af;
     animation: rise 0.5s 0.65s both;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 16px;
   }
   .footer a { color: #9ca3af; }
 
   @media (max-width: 480px) {
-    .card { padding: 36px 24px 32px; }
-    .divider { margin: 0 -24px 20px; }
+    .card, .programs-card { padding: 32px 20px 28px; }
+    .divider { margin: 0 -20px 20px; }
     h1 { font-size: 1.65rem; }
+    .programs-grid { grid-template-columns: 1fr; }
   }
 </style>
-</head>
 <body>
 
 <div class="card">
@@ -353,6 +466,58 @@
     <span class="badge-live">● Available</span>
   </div>
 
+</div>
+
+<!-- Online Programs Section -->
+<div class="programs-card">
+  <div class="programs-header">
+    <div class="programs-icon">💻</div>
+    <h2>Explore Online Programmes</h2>
+  </div>
+  <p class="subtitle">Study from anywhere — UGC-approved degrees with flexible schedules</p>
+
+  <div class="programs-grid">
+    <div class="program-item">
+      <span class="program-emoji">📊</span>
+      <strong>MBA</strong>
+      <span>2 Years · Various Specialisations</span><br>
+      <span class="badge-online">100% Online</span>
+    </div>
+    <div class="program-item">
+      <span class="program-emoji">💼</span>
+      <strong>BBA</strong>
+      <span>3 Years · Business & Management</span><br>
+      <span class="badge-online">100% Online</span>
+    </div>
+    <div class="program-item">
+      <span class="program-emoji">💻</span>
+      <strong>MCA</strong>
+      <span>2 Years · Computer Applications</span><br>
+      <span class="badge-online">100% Online</span>
+    </div>
+    <div class="program-item">
+      <span class="program-emoji">🎓</span>
+      <strong>BCA</strong>
+      <span>3 Years · IT & Software</span><br>
+      <span class="badge-online">100% Online</span>
+    </div>
+    <div class="program-item">
+      <span class="program-emoji">📚</span>
+      <strong>M.Com</strong>
+      <span>2 Years · Commerce & Finance</span><br>
+      <span class="badge-online">100% Online</span>
+    </div>
+    <div class="program-item">
+      <span class="program-emoji">🧠</span>
+      <strong>MA / MSc</strong>
+      <span>2 Years · Multiple Streams</span><br>
+      <span class="badge-online">100% Online</span>
+    </div>
+  </div>
+
+  <div class="programs-note">
+    🏛️ All programmes are from <strong>UGC-entitled universities</strong> — valid for jobs, higher studies & government exams. Ask your counsellor for fees & eligibility!
+  </div>
 </div>
 
 <p class="footer">
