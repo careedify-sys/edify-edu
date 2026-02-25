@@ -14,6 +14,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Online MBA & MCA Admission 2025 | Free Counselling | Rishi Upadhyay</title>
 <meta name="description" content="Talk to Rishi Upadhyay — Education Counsellor with 3+ years experience. Free MBA & MCA admission counselling. Amity, Manipal, LPU and 25+ universities. Call 70612 85806.">
+<link rel="prefetch" href="/thankyou.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -492,15 +494,120 @@
   .wa-float:hover { transform: scale(1.1); }
 
   @media (max-width: 768px) {
-    .hero-inner { grid-template-columns: 1fr; gap: 36px; }
-    .form-card { padding: 22px 16px; }
-    .about-inner { grid-template-columns: 1fr; text-align: center; gap: 28px; }
-    .about-photo { width: 150px; height: 150px; }
-    .unis-grid { grid-template-columns: repeat(2, 1fr); }
+    /* ── HERO LAYOUT ── */
+    .hero { padding: 20px 16px 36px; }
+    .hero-inner {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    /* Natural order: headline first, then compact form — both visible above fold */
+    .form-card { order: 0; margin-bottom: 0; }
+
+    /* ── RISHI CARD: compact ── */
+    .rishi-card { padding: 8px 12px; gap: 10px; margin-bottom: 10px; }
+    .rishi-photo { width: 46px; height: 46px; }
+    .r-name { font-size: 13px; }
+    .r-title { font-size: 10px; }
+    .r-creds { font-size: 10px; }
+
+    /* ── HERO TEXT: tight ── */
+    .hero h1 { font-size: 22px; margin-bottom: 8px; }
+    .badge { font-size: 10px; margin-bottom: 10px; padding: 4px 10px; }
+    .hero-desc { font-size: 13px; margin-bottom: 12px; line-height: 1.6; }
+    .uni-pills { margin-bottom: 12px; gap: 6px; }
+    .uni-pill { font-size: 11px; padding: 4px 9px; }
+    .phone-bar { padding: 10px 14px; margin-bottom: 12px; }
+    .phone-bar a { font-size: 17px; }
+    .trust-row { gap: 8px; margin-bottom: 0; }
+
+    /* ── FORM CARD: compact & professional ── */
+    .form-card { padding: 16px 14px; border-radius: 14px; box-shadow: 0 12px 40px rgba(0,0,0,0.25); }
+    .form-title { font-size: 16px; margin-bottom: 2px; }
+    .form-sub { font-size: 12px; margin-bottom: 10px; }
+    .deadline-pill { padding: 6px 10px; font-size: 11px; margin-bottom: 8px; }
+    .cd-row { margin-bottom: 10px; gap: 4px; }
+    .cd-box { min-width: 38px; padding: 4px 6px; }
+    .cd-n { font-size: 15px; }
+    .cd-l { font-size: 8px; }
+    .form-group { margin-bottom: 7px; }
+    .form-group label { font-size: 10px; margin-bottom: 3px; }
+    .form-group input, .form-group select { padding: 9px 11px; font-size: 15px; border-radius: 8px; }
+    .submit-btn { font-size: 14px; padding: 12px; border-radius: 10px; }
+    .risk-line { font-size: 11px; padding: 8px 10px; margin-top: 8px; }
+    .wa-alt { font-size: 12px; margin-top: 8px; }
+
+    /* ── COUNTDOWN ── */
+    .cd-row { gap: 5px; }
+    .cd-box { min-width: 42px; padding: 5px 8px; }
+    .cd-n { font-size: 17px; }
+    .cd-l { font-size: 8px; }
+
+    /* ── PHONE BAR ── */
+    .phone-bar { padding: 10px 14px; }
+    .phone-bar a { font-size: 17px; }
+
+    /* ── TRUST ROW ── */
+    .trust-row { gap: 10px; }
+    .trust-item { font-size: 12px; }
+
+    /* ── PROOF STRIP ── */
+    .proof-strip { gap: 20px; padding: 18px 16px; }
+    .proof-num { font-size: 22px; }
+
+    /* ── ABOUT ── */
+    .about-section { padding: 40px 16px; }
+    .about-inner { grid-template-columns: 1fr; text-align: center; gap: 20px; }
+    .about-photo { width: 130px; height: 130px; }
+    .about-stats { justify-content: center; }
+    .about-text { font-size: 14px; }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials-section { padding: 40px 16px; }
+    .testi-grid { grid-template-columns: 1fr; }
+
+    /* ── UNIVERSITIES ── */
+    .unis-section { padding: 40px 16px; }
+    .unis-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .uni-card { padding: 14px 10px; }
+    .uni-emoji { font-size: 22px; }
+    .uni-name { font-size: 11px; }
+
+    /* ── WHY SECTION ── */
+    .why-section { padding: 40px 16px; }
+    .why-grid { grid-template-columns: 1fr; gap: 12px; }
+
+    /* ── FAQ ── */
+    .faq-section { padding: 40px 16px; }
+    .faq-q { font-size: 13px; padding: 14px 16px; }
+    .faq-a { font-size: 13px; padding: 0 16px 14px; }
+
+    /* ── BOTTOM FORM ── */
+    .bottom-form-section { padding: 40px 16px; }
+    .bottom-form { padding: 20px 14px; }
+
+    /* ── NAV ── */
+    .nav { padding: 10px 14px; }
     .nav-phone span { display: none; }
+    .nav-phone { font-size: 13px; padding: 7px 12px; }
+
+    /* ── SECTION TITLES ── */
+    .section-title { font-size: 20px; }
+    .section-sub { font-size: 13px; }
+
+    /* ── STICKY BAR ── */
     .sticky-mobile-cta { display: flex; }
-    .wa-float { bottom: 80px; }
-    body { padding-bottom: 70px; }
+    .wa-float { display: none; } /* hidden on mobile — sticky bar covers it */
+    body { padding-bottom: 72px; }
+  }
+
+  /* Extra small phones */
+  @media (max-width: 380px) {
+    .hero h1 { font-size: 21px; }
+    .unis-grid { grid-template-columns: 1fr; }
+    .cd-box { min-width: 36px; }
+    .cd-n { font-size: 15px; }
   }
 </style>
 </head>
@@ -882,20 +989,17 @@
     document.getElementById(formId).style.display = "none";
     document.getElementById(successId).style.display = "block";
 
-    // Send data securely through server-side API, wait for it to complete before redirecting
+    // Send data in background — do NOT wait for response before redirecting
     fetch('/api/submit', {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
-    }).then(function(response) {
-      return response.json();
-    }).then(function(result) {
-      console.log("Submit result:", result);
-      setTimeout(function() { window.location.href = '/thankyou.html'; }, 1500);
     }).catch(function(err) {
-      console.log("Submit error:", err);
-      setTimeout(function() { window.location.href = '/thankyou.html'; }, 1500);
+      console.log("Submit error (non-blocking):", err);
     });
+
+    // Redirect immediately — don't wait for API to complete
+    setTimeout(function() { window.location.href = '/thankyou.html'; }, 300);
   }
 
   // FAQ toggle
