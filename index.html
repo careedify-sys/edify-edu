@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Online MBA Admission 2026 | Free Counselling | Edify</title>
 
-<!-- ✅ Google Tag (gtag.js) -->
+<!-- Google Tag -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17380291250"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -18,337 +18,312 @@
 
 <style>
 :root {
-  --navy:       #0B1F3A;
-  --navy2:      #122944;
-  --gold:       #C9933A;
-  --gold-light: #F0C96B;
-  --cream:      #FAF6EF;
-  --white:      #ffffff;
-  --gray-bg:    #F3F4F6;
-  --text-dark:  #111827;
-  --text-muted: #6B7280;
-  --green:      #25D366;
-  --shadow:     0 4px 24px rgba(11,31,58,0.10);
-  --shadow-lg:  0 16px 56px rgba(11,31,58,0.16);
+  --navy:      #0B1F3A;
+  --navy2:     #122944;
+  --gold:      #C9933A;
+  --gold-lt:   #F0C96B;
+  --red:       #E63946;
+  --green:     #25D366;
+  --cream:     #FAF6EF;
+  --white:     #fff;
+  --gray:      #F3F4F6;
+  --muted:     #6B7280;
+  --dark:      #111827;
+  --sh:        0 4px 24px rgba(11,31,58,.10);
+  --sh-lg:     0 16px 56px rgba(11,31,58,.18);
 }
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: 'DM Sans', sans-serif;
-  background: var(--cream);
-  color: var(--text-dark);
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--dark);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+/* ═══ NAV ═══ */
+nav{position:sticky;top:0;z-index:300;background:var(--navy);height:56px;padding:0 5%;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 16px rgba(0,0,0,.3)}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1.65rem;font-weight:900;letter-spacing:4px;color:var(--gold);text-transform:uppercase}
+.nav-right{display:flex;align-items:center;gap:12px}
+.nav-phone{color:var(--gold-lt);font-size:.82rem;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:5px}
+.nav-cta{background:var(--gold);color:var(--navy);padding:8px 18px;border-radius:6px;font-weight:700;font-size:.82rem;text-decoration:none;white-space:nowrap;transition:background .2s}
+.nav-cta:hover{background:var(--gold-lt)}
+
+/* ═══ HERO ═══ */
+.hero{background:var(--navy);padding:48px 5% 56px;display:grid;grid-template-columns:1fr 400px;grid-template-areas:"left form";gap:48px;align-items:start;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;top:-100px;right:-100px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(201,147,58,.15) 0%,transparent 68%);pointer-events:none}
+.hero-left{grid-area:left}
+.hero-right{grid-area:form}
+
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,147,58,.13);border:1px solid rgba(201,147,58,.5);color:var(--gold-lt);padding:5px 14px;border-radius:50px;font-size:.73rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:18px}
+.pulse-dot{width:7px;height:7px;border-radius:50%;background:var(--gold);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.5)}}
+
+.hero-left h1{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.2vw,2.8rem);color:var(--white);line-height:1.18;margin-bottom:16px}
+.hero-left h1 em{color:var(--gold);font-style:italic}
+.hero-left .sub{color:rgba(255,255,255,.68);font-size:.97rem;line-height:1.72;margin-bottom:24px;max-width:460px}
+
+/* quick stats row */
+.quick-stats{display:flex;gap:0;margin-bottom:28px;background:rgba(255,255,255,.06);border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+.qs-item{flex:1;padding:14px 12px;text-align:center;border-right:1px solid rgba(255,255,255,.08)}
+.qs-item:last-child{border-right:none}
+.qs-num{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:900;color:var(--gold);display:block;line-height:1}
+.qs-label{font-size:.7rem;color:rgba(255,255,255,.55);margin-top:3px;display:block}
+
+.trust-row{display:flex;flex-direction:column;gap:9px;margin-bottom:28px}
+.trust-item{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.82);font-size:.88rem}
+.tick-sm{width:20px;height:20px;border-radius:50%;background:rgba(201,147,58,.2);border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.tick-sm svg{width:10px;height:10px;stroke:var(--gold);stroke-width:3;fill:none}
+
+.hero-ctas{display:flex;gap:10px;flex-wrap:wrap}
+.btn-gold{background:var(--gold);color:var(--navy);padding:13px 24px;border-radius:8px;font-weight:700;font-size:.93rem;text-decoration:none;display:inline-flex;align-items:center;gap:7px;box-shadow:0 4px 18px rgba(201,147,58,.38);transition:all .2s;border:none;cursor:pointer}
+.btn-gold:hover{background:var(--gold-lt);transform:translateY(-2px)}
+.btn-wa{background:var(--green);color:white;padding:13px 20px;border-radius:8px;font-weight:600;font-size:.93rem;text-decoration:none;display:inline-flex;align-items:center;gap:7px;transition:all .2s}
+.btn-wa:hover{background:#1eba57;transform:translateY(-2px)}
+
+/* ═══ FORM CARD ═══ */
+.form-card{background:var(--white);border-radius:16px;box-shadow:var(--sh-lg);overflow:hidden;position:relative;z-index:5}
+.form-head{background:linear-gradient(135deg,var(--navy) 0%,#1a3a6a 100%);padding:18px 24px;text-align:center;border-bottom:3px solid var(--gold)}
+.form-head h3{font-family:'Playfair Display',serif;color:var(--white);font-size:1.12rem;margin-bottom:3px}
+.form-head p{color:rgba(255,255,255,.62);font-size:.78rem}
+.form-body{padding:20px 22px 18px}
+.form-group{margin-bottom:12px}
+.form-group label{display:block;font-size:.78rem;font-weight:600;color:var(--navy);margin-bottom:4px}
+.form-group input,.form-group select{width:100%;padding:10px 12px;border:1.5px solid #E5E7EB;border-radius:7px;font-size:.9rem;font-family:'DM Sans',sans-serif;color:var(--dark);background:#FAFAFA;transition:border-color .2s;-webkit-appearance:none;appearance:none}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,147,58,.13);background:var(--white)}
+.form-group input::placeholder{color:#9CA3AF}
+.form-submit{width:100%;padding:14px;background:var(--gold);color:var(--navy);border:none;border-radius:8px;font-size:.97rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;box-shadow:0 4px 14px rgba(201,147,58,.35);letter-spacing:.3px}
+.form-submit:hover{background:var(--gold-lt);transform:translateY(-1px)}
+.form-privacy{text-align:center;color:var(--muted);font-size:.72rem;margin-top:9px}
+
+/* discount badge inside form */
+.form-discount{background:linear-gradient(90deg,#e63946,#c1121f);color:white;text-align:center;padding:7px 12px;font-size:.78rem;font-weight:700;letter-spacing:.3px}
+.form-discount span{text-decoration:line-through;opacity:.7;margin-right:4px}
+
+/* ═══ UNI STRIP ═══ */
+.uni-strip{background:var(--white);padding:22px 5%;border-bottom:1px solid #EBEBEB}
+.uni-label{text-align:center;color:var(--muted);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1.8px;margin-bottom:14px}
+.uni-pills{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}
+.uni-pill{background:var(--gray);color:var(--navy);padding:7px 16px;border-radius:50px;font-weight:600;font-size:.82rem;border:1px solid #ddd}
+
+/* ═══ STATS BAR ═══ */
+.stats-bar{background:var(--navy);display:grid;grid-template-columns:repeat(4,1fr);padding:32px 5%}
+.stat-item{text-align:center;padding:8px 0}
+.stat-item+.stat-item{border-left:1px solid rgba(255,255,255,.1)}
+.stat-num{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:900;color:var(--gold);display:block;line-height:1}
+.stat-label{color:rgba(255,255,255,.58);font-size:.76rem;margin-top:5px;display:block}
+
+/* ═══ SECTIONS ═══ */
+.section{padding:68px 5%}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.65rem,2.6vw,2.2rem);color:var(--navy);text-align:center;margin-bottom:9px}
+.section-sub{text-align:center;color:var(--muted);max-width:500px;margin:0 auto 40px;line-height:1.72;font-size:.93rem}
+
+/* ═══ COMPARISON TABLE (CollegeVidya style) ═══ */
+.compare-section{background:var(--white)}
+.compare-table{width:100%;border-collapse:collapse;font-size:.88rem}
+.compare-table th{background:var(--navy);color:var(--gold);padding:13px 16px;text-align:left;font-weight:700;font-size:.82rem;text-transform:uppercase;letter-spacing:.8px}
+.compare-table th:first-child{width:36%}
+.compare-table td{padding:12px 16px;border-bottom:1px solid #F0F0F0;color:var(--dark)}
+.compare-table tr:last-child td{border-bottom:none}
+.compare-table tr:nth-child(even) td{background:#FAFAFA}
+.compare-table .tag{display:inline-block;background:rgba(201,147,58,.12);color:var(--gold);padding:2px 9px;border-radius:50px;font-size:.75rem;font-weight:600}
+.compare-table .tag-green{background:rgba(16,185,129,.1);color:#059669}
+
+/* ═══ WHY CARDS ═══ */
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:18px}
+.why-card{background:var(--white);border-radius:13px;padding:24px 20px;box-shadow:var(--sh);border-top:3px solid var(--gold);transition:transform .2s,box-shadow .2s}
+.why-card:hover{transform:translateY(-4px);box-shadow:var(--sh-lg)}
+.why-icon{font-size:1.8rem;margin-bottom:11px}
+.why-card h4{font-size:.97rem;font-weight:700;color:var(--navy);margin-bottom:7px}
+.why-card p{color:var(--muted);font-size:.84rem;line-height:1.64}
+
+/* ═══ STEPS ═══ */
+.process-section{background:var(--gray)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);background:var(--white);border-radius:13px;overflow:hidden;box-shadow:var(--sh)}
+.step{padding:28px 20px;text-align:center;border-right:1px solid #F0F0F0}
+.step:last-child{border-right:none}
+.step-num{width:44px;height:44px;background:var(--gold);color:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1.05rem;margin:0 auto 13px}
+.step h4{font-size:.92rem;font-weight:700;color:var(--navy);margin-bottom:7px}
+.step p{color:var(--muted);font-size:.8rem;line-height:1.58}
+
+/* ═══ TESTIMONIALS ═══ */
+.testimonials{background:var(--white)}
+.testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(275px,1fr));gap:20px}
+.testi-card{background:var(--cream);border-radius:13px;padding:24px;border-left:4px solid var(--gold)}
+.stars{color:var(--gold);font-size:.95rem;margin-bottom:10px;letter-spacing:2px}
+.testi-card>p{color:var(--dark);font-size:.87rem;line-height:1.68;margin-bottom:16px;font-style:italic}
+.testi-author{display:flex;align-items:center;gap:10px}
+.testi-avatar{width:40px;height:40px;border-radius:50%;background:var(--navy);color:var(--gold);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.97rem;flex-shrink:0}
+.testi-name{font-weight:700;font-size:.86rem;color:var(--navy)}
+.testi-role{font-size:.75rem;color:var(--muted);margin-top:2px}
+
+/* ═══ FAQ ═══ */
+.faq-section{background:var(--cream)}
+.faq-list{max-width:700px;margin:0 auto}
+.faq-item{background:var(--white);border-radius:9px;margin-bottom:9px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.faq-q{padding:15px 18px;font-weight:600;color:var(--navy);font-size:.89rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;list-style:none;user-select:none}
+.faq-q::-webkit-details-marker{display:none}
+.faq-q::after{content:'+';font-size:1.2rem;color:var(--gold)}
+details[open] .faq-q::after{content:'−'}
+.faq-a{padding:0 18px 14px;color:var(--muted);font-size:.85rem;line-height:1.7}
+
+/* ═══ FINAL CTA ═══ */
+.final-cta{background:var(--navy);padding:68px 5%;text-align:center;position:relative;overflow:hidden}
+.final-cta::before{content:'';position:absolute;bottom:-120px;left:50%;transform:translateX(-50%);width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(201,147,58,.12) 0%,transparent 68%);pointer-events:none}
+.final-cta h2{font-family:'Playfair Display',serif;color:var(--white);font-size:clamp(1.6rem,2.8vw,2.2rem);margin-bottom:10px}
+.final-cta p{color:rgba(255,255,255,.62);max-width:450px;margin:0 auto 28px;font-size:.94rem;line-height:1.7}
+.final-ctas{display:flex;gap:11px;justify-content:center;flex-wrap:wrap}
+
+/* ═══ FOOTER ═══ */
+footer{background:#060f1f;color:rgba(255,255,255,.4);text-align:center;padding:18px 5%;font-size:.78rem}
+footer a{color:var(--gold);text-decoration:none}
+
+/* ═══════════════════════════════════
+   DISCOUNT POPUP (appears after 5s)
+═══════════════════════════════════ */
+.discount-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:900;align-items:center;justify-content:center;animation:fadeOverlay .3s ease}
+.discount-overlay.show{display:flex}
+@keyframes fadeOverlay{from{opacity:0}to{opacity:1}}
+
+.discount-box{background:var(--white);border-radius:18px;max-width:400px;width:90%;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.35);animation:slideDiscount .35s cubic-bezier(.34,1.56,.64,1)}
+@keyframes slideDiscount{from{opacity:0;transform:scale(.85) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
+
+.discount-top{background:linear-gradient(135deg,var(--red),#c1121f);padding:22px 24px;text-align:center;position:relative}
+.discount-close{position:absolute;top:10px;right:14px;color:rgba(255,255,255,.7);font-size:1.4rem;cursor:pointer;line-height:1;background:none;border:none}
+.discount-close:hover{color:white}
+.discount-top .fire{font-size:2.2rem;margin-bottom:6px;display:block}
+.discount-top h2{font-family:'Playfair Display',serif;color:white;font-size:1.5rem;line-height:1.2;margin-bottom:4px}
+.discount-top p{color:rgba(255,255,255,.85);font-size:.83rem}
+.discount-saving{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);color:white;padding:4px 14px;border-radius:50px;font-size:.78rem;font-weight:700;margin-top:8px;letter-spacing:.5px}
+
+.discount-body{padding:22px 24px}
+.discount-countdown{display:flex;justify-content:center;gap:12px;margin-bottom:18px}
+.cd-block{text-align:center;background:var(--navy);color:var(--gold);border-radius:8px;padding:8px 14px;min-width:54px}
+.cd-num{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;display:block;line-height:1}
+.cd-label{font-size:.62rem;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.8px}
+
+.discount-perks{margin-bottom:18px}
+.discount-perk{display:flex;align-items:center;gap:9px;font-size:.84rem;color:var(--dark);margin-bottom:8px}
+.discount-perk svg{stroke:#10B981;stroke-width:2.5;fill:none;flex-shrink:0}
+
+.btn-avail{width:100%;padding:15px;background:var(--red);color:white;border:none;border-radius:9px;font-size:1rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;box-shadow:0 4px 16px rgba(230,57,70,.4);letter-spacing:.3px}
+.btn-avail:hover{background:#c1121f;transform:translateY(-2px)}
+.discount-fine{text-align:center;color:var(--muted);font-size:.7rem;margin-top:9px}
+
+/* ═══════════════════════════════════
+   MOBILE FLOATING FORM PILL
+   — small, on screen, draws attention
+═══════════════════════════════════ */
+.float-pill{
+  display:none;
+  position:fixed;bottom:16px;right:16px;z-index:400;
+  background:var(--gold);color:var(--navy);
+  padding:11px 18px;border-radius:50px;
+  font-weight:700;font-size:.85rem;
+  box-shadow:0 4px 20px rgba(201,147,58,.5);
+  align-items:center;gap:7px;
+  cursor:pointer;border:none;
+  animation:floatBounce 2.5s ease-in-out infinite;
+  white-space:nowrap;
 }
+@keyframes floatBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
 
-/* ══ NAV ══ */
-nav {
-  position: sticky; top: 0; z-index: 200;
-  background: var(--navy);
-  padding: 0 5%; height: 58px;
-  display: flex; align-items: center; justify-content: space-between;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.28);
+/* MOBILE SLIDE-UP FORM PANEL */
+.form-panel{
+  display:none;
+  position:fixed;bottom:0;left:0;right:0;z-index:500;
+  background:var(--white);
+  border-radius:20px 20px 0 0;
+  box-shadow:0 -8px 40px rgba(0,0,0,.22);
+  transform:translateY(100%);
+  transition:transform .35s cubic-bezier(.32,1,.32,1);
+  max-height:88vh;overflow-y:auto;
 }
-.nav-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.7rem; font-weight: 900;
-  letter-spacing: 4px; color: var(--gold);
-  text-transform: uppercase;
-}
-.nav-cta {
-  background: var(--gold); color: var(--navy);
-  padding: 9px 20px; border-radius: 6px;
-  font-weight: 700; font-size: .85rem;
-  text-decoration: none; white-space: nowrap;
-  transition: background .2s;
-}
-.nav-cta:hover { background: var(--gold-light); }
+.form-panel.open{transform:translateY(0)}
+.form-panel-handle{width:40px;height:4px;background:#ddd;border-radius:2px;margin:12px auto 0}
+.form-panel-head{background:var(--navy);padding:14px 20px;border-bottom:2px solid var(--gold);display:flex;align-items:center;justify-content:space-between}
+.form-panel-head h3{font-family:'Playfair Display',serif;color:var(--white);font-size:1.05rem}
+.panel-close{color:rgba(255,255,255,.6);font-size:1.4rem;cursor:pointer;background:none;border:none;line-height:1}
+.form-panel-body{padding:18px 20px 24px}
 
-/* ══ HERO ══ */
-.hero {
-  background: var(--navy);
-  padding: 56px 5% 64px;
-  display: grid;
-  grid-template-columns: 1fr 420px;
-  grid-template-areas: "left form";
-  gap: 52px; align-items: start;
-  position: relative; overflow: hidden;
-}
-.hero::after {
-  content: ''; position: absolute; top: -120px; right: -120px;
-  width: 560px; height: 560px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(201,147,58,0.15) 0%, transparent 68%);
-  pointer-events: none;
-}
-.hero-left  { grid-area: left; }
-.hero-right { grid-area: form; }
+/* STICKY BOTTOM BAR mobile */
+.sticky-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:350;background:var(--navy);border-top:2px solid var(--gold);padding:9px 13px;gap:9px}
+.sticky-bar a,.sticky-bar button{flex:1;text-align:center;padding:12px 9px;border-radius:8px;font-weight:700;font-size:.86rem;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:6px;border:none;cursor:pointer;font-family:'DM Sans',sans-serif}
+.sb-form{background:var(--gold);color:var(--navy)}
+.sb-wa{background:var(--green);color:white}
 
-.hero-badge {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: rgba(201,147,58,0.13); border: 1px solid rgba(201,147,58,0.55);
-  color: var(--gold-light); padding: 5px 15px; border-radius: 50px;
-  font-size: .75rem; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase;
-  margin-bottom: 20px;
-}
-.pulse-dot {
-  width: 7px; height: 7px; border-radius: 50%; background: var(--gold);
-  animation: pulse 1.6s ease-in-out infinite;
-}
-@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(1.5)} }
+/* ═══ ANIMATIONS ═══ */
+.fade-in{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}
+.fade-in.visible{opacity:1;transform:none}
 
-.hero-left h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 3.5vw, 3rem);
-  color: var(--white); line-height: 1.18; margin-bottom: 18px;
-}
-.hero-left h1 em { color: var(--gold); font-style: italic; }
-.hero-left p {
-  color: rgba(255,255,255,0.68); font-size: 1rem; line-height: 1.72;
-  margin-bottom: 30px; max-width: 460px;
-}
+/* ═══════════════
+   MOBILE ≤ 768px
+═══════════════ */
+@media(max-width:768px){
+  nav{padding:0 4%;height:50px}
+  .nav-logo{font-size:1.35rem;letter-spacing:3px}
+  .nav-phone{display:none}
+  .nav-cta{font-size:.76rem;padding:7px 12px}
 
-.trust-row { display: flex; flex-direction: column; gap: 10px; margin-bottom: 32px; }
-.trust-item { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.82); font-size: .9rem; }
-.trust-icon {
-  width: 22px; height: 22px; border-radius: 50%;
-  background: rgba(201,147,58,0.2); border: 1px solid var(--gold);
-  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-}
-.trust-icon svg { width: 11px; height: 11px; stroke: var(--gold); stroke-width: 3; fill: none; }
+  /* hero: form FIRST then copy */
+  .hero{grid-template-columns:1fr;grid-template-areas:"form" "left";padding:18px 4% 28px;gap:22px}
+  .hero::after{display:none}
+  .hero-left h1{font-size:1.55rem}
+  .hero-left .sub{font-size:.89rem;margin-bottom:18px}
+  .hero-badge{font-size:.68rem}
+  .hero-ctas{display:none}
 
-.hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
-.btn-gold {
-  background: var(--gold); color: var(--navy);
-  padding: 14px 26px; border-radius: 8px; font-weight: 700; font-size: .95rem;
-  text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
-  box-shadow: 0 4px 18px rgba(201,147,58,0.38); transition: all .2s; border: none; cursor: pointer;
-}
-.btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
-.btn-wa {
-  background: var(--green); color: white;
-  padding: 14px 22px; border-radius: 8px; font-weight: 600; font-size: .95rem;
-  text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all .2s;
-}
-.btn-wa:hover { background: #1eba57; transform: translateY(-2px); }
+  /* form card: shown in hero on mobile */
+  .form-card{border-radius:14px}
+  .form-body{padding:16px 16px 14px}
+  .form-head{padding:14px 18px}
 
-/* ══ FORM CARD ══ */
-.form-card {
-  background: var(--white); border-radius: 16px;
-  padding: 32px 28px; box-shadow: var(--shadow-lg);
-  position: relative; z-index: 5;
-}
-.form-card-header {
-  background: var(--navy); margin: -32px -28px 24px;
-  border-radius: 16px 16px 0 0; padding: 18px 28px; text-align: center;
-}
-.form-card-header h3 {
-  font-family: 'Playfair Display', serif;
-  color: var(--white); font-size: 1.2rem; margin-bottom: 4px;
-}
-.form-card-header p { color: rgba(255,255,255,0.65); font-size: .82rem; }
+  /* quick stats */
+  .quick-stats{display:grid;grid-template-columns:repeat(2,1fr)}
+  .qs-item:nth-child(2){border-right:none}
+  .qs-item:nth-child(3){border-top:1px solid rgba(255,255,255,.08);border-right:1px solid rgba(255,255,255,.08)}
+  .qs-item:nth-child(4){border-top:1px solid rgba(255,255,255,.08)}
 
-.form-group { margin-bottom: 14px; }
-.form-group label { display: block; font-size: .82rem; font-weight: 600; color: var(--navy); margin-bottom: 5px; }
-.form-group input,
-.form-group select {
-  width: 100%; padding: 11px 13px;
-  border: 1.5px solid #E5E7EB; border-radius: 7px;
-  font-size: .92rem; font-family: 'DM Sans', sans-serif;
-  color: var(--text-dark); background: #FAFAFA;
-  transition: border-color .2s, box-shadow .2s;
-  -webkit-appearance: none; appearance: none;
-}
-.form-group input:focus,
-.form-group select:focus {
-  outline: none; border-color: var(--gold);
-  box-shadow: 0 0 0 3px rgba(201,147,58,0.14); background: var(--white);
-}
-.form-group input::placeholder { color: #9CA3AF; }
-.form-submit {
-  width: 100%; padding: 15px;
-  background: var(--gold); color: var(--navy);
-  border: none; border-radius: 8px;
-  font-size: 1rem; font-weight: 700; cursor: pointer;
-  font-family: 'DM Sans', sans-serif;
-  transition: all .2s; margin-top: 6px;
-  box-shadow: 0 4px 18px rgba(201,147,58,0.35); letter-spacing: .3px;
-}
-.form-submit:hover { background: var(--gold-light); transform: translateY(-1px); }
-.form-privacy { text-align: center; color: var(--text-muted); font-size: .75rem; margin-top: 10px; }
+  .stats-bar{grid-template-columns:repeat(2,1fr);padding:24px 4%;gap:0}
+  .stat-item:nth-child(3){border-left:none;border-top:1px solid rgba(255,255,255,.1)}
+  .stat-item:nth-child(4){border-top:1px solid rgba(255,255,255,.1)}
+  .stat-num{font-size:1.85rem}
 
-/* ══ UNI STRIP ══ */
-.uni-strip { background: var(--white); padding: 24px 5%; border-bottom: 1px solid #EBEBEB; }
-.uni-label { text-align: center; color: var(--text-muted); font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.8px; margin-bottom: 16px; }
-.uni-pills { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
-.uni-pill { background: var(--gray-bg); color: var(--navy); padding: 8px 18px; border-radius: 50px; font-weight: 600; font-size: .85rem; border: 1px solid #ddd; }
+  .section{padding:48px 4%}
+  .section-title{font-size:1.42rem}
+  .section-sub{font-size:.86rem;margin-bottom:28px}
 
-/* ══ STATS BAR ══ */
-.stats-bar {
-  background: var(--navy);
-  display: grid; grid-template-columns: repeat(4, 1fr);
-  padding: 36px 5%;
-}
-.stat-item { text-align: center; padding: 10px 0; }
-.stat-item + .stat-item { border-left: 1px solid rgba(255,255,255,0.1); }
-.stat-num { font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 900; color: var(--gold); display: block; line-height: 1; }
-.stat-label { color: rgba(255,255,255,0.6); font-size: .8rem; margin-top: 6px; display: block; }
+  .why-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .why-card{padding:18px 14px}
+  .why-icon{font-size:1.5rem}
+  .why-card h4{font-size:.87rem}
+  .why-card p{font-size:.79rem}
 
-/* ══ SECTIONS ══ */
-.section { padding: 72px 5%; }
-.section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.7rem, 2.8vw, 2.3rem); color: var(--navy); text-align: center; margin-bottom: 10px; }
-.section-sub { text-align: center; color: var(--text-muted); max-width: 500px; margin: 0 auto 44px; line-height: 1.72; font-size: .95rem; }
+  .steps{grid-template-columns:1fr}
+  .step{border-right:none;border-bottom:1px solid #F0F0F0;padding:20px 16px}
+  .step:last-child{border-bottom:none}
 
-/* ══ WHY CARDS ══ */
-.why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
-.why-card { background: var(--white); border-radius: 14px; padding: 26px 22px; box-shadow: var(--shadow); border-top: 3px solid var(--gold); transition: transform .2s, box-shadow .2s; }
-.why-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-.why-icon { font-size: 1.9rem; margin-bottom: 12px; }
-.why-card h4 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
-.why-card p { color: var(--text-muted); font-size: .875rem; line-height: 1.65; }
+  .testi-grid{grid-template-columns:1fr}
+  .compare-table{font-size:.8rem}
+  .compare-table th,.compare-table td{padding:10px 12px}
 
-/* ══ STEPS ══ */
-.process-section { background: var(--gray-bg); }
-.steps { display: grid; grid-template-columns: repeat(4, 1fr); background: var(--white); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); }
-.step { padding: 30px 22px; text-align: center; border-right: 1px solid #F0F0F0; }
-.step:last-child { border-right: none; }
-.step-num { width: 46px; height: 46px; background: var(--gold); color: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.1rem; margin: 0 auto 14px; }
-.step h4 { font-size: .95rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
-.step p { color: var(--text-muted); font-size: .83rem; line-height: 1.6; }
+  .faq-q{font-size:.84rem;padding:13px 15px}
+  .faq-a{font-size:.82rem;padding:0 15px 13px}
 
-/* ══ TESTIMONIALS ══ */
-.testimonials { background: var(--white); }
-.testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; }
-.testi-card { background: var(--cream); border-radius: 14px; padding: 26px; border-left: 4px solid var(--gold); }
-.stars { color: var(--gold); font-size: 1rem; margin-bottom: 12px; letter-spacing: 2px; }
-.testi-card > p { color: var(--text-dark); font-size: .9rem; line-height: 1.7; margin-bottom: 18px; font-style: italic; }
-.testi-author { display: flex; align-items: center; gap: 11px; }
-.testi-avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--navy); color: var(--gold); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1rem; flex-shrink: 0; }
-.testi-name { font-weight: 700; font-size: .88rem; color: var(--navy); }
-.testi-role { font-size: .78rem; color: var(--text-muted); margin-top: 2px; }
+  .final-cta{padding:50px 4% 28px}
+  .final-ctas{flex-direction:column;align-items:center}
+  .final-ctas a{width:100%;max-width:330px;justify-content:center}
 
-/* ══ FAQ ══ */
-.faq-section { background: var(--cream); }
-.faq-list { max-width: 700px; margin: 0 auto; }
-.faq-item { background: var(--white); border-radius: 10px; margin-bottom: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-.faq-q { padding: 17px 20px; font-weight: 600; color: var(--navy); font-size: .92rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; user-select: none; }
-.faq-q::-webkit-details-marker { display: none; }
-.faq-q::after { content: '+'; font-size: 1.3rem; color: var(--gold); }
-details[open] .faq-q::after { content: '−'; }
-.faq-a { padding: 0 20px 16px; color: var(--text-muted); font-size: .88rem; line-height: 1.7; }
+  /* floating pill: show on mobile */
+  .float-pill{display:flex}
+  /* sticky bar */
+  .sticky-bar{display:flex}
+  footer{padding-bottom:80px}
 
-/* ══ FINAL CTA ══ */
-.final-cta { background: var(--navy); padding: 72px 5%; text-align: center; position: relative; overflow: hidden; }
-.final-cta::before { content: ''; position: absolute; bottom: -140px; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(201,147,58,0.13) 0%, transparent 68%); pointer-events: none; }
-.final-cta h2 { font-family: 'Playfair Display', serif; color: var(--white); font-size: clamp(1.7rem, 3vw, 2.3rem); margin-bottom: 12px; }
-.final-cta p { color: rgba(255,255,255,0.65); max-width: 460px; margin: 0 auto 30px; font-size: .96rem; line-height: 1.7; }
-.final-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-
-/* ══ FOOTER ══ */
-footer { background: #060f1f; color: rgba(255,255,255,0.42); text-align: center; padding: 20px 5%; font-size: .8rem; }
-footer a { color: var(--gold); text-decoration: none; }
-
-/* ══ STICKY BOTTOM BAR (mobile only) ══ */
-.sticky-bar {
-  display: none;
-  position: fixed; bottom: 0; left: 0; right: 0; z-index: 300;
-  background: var(--navy); border-top: 2px solid var(--gold);
-  padding: 10px 14px; gap: 10px;
-}
-.sticky-bar a {
-  flex: 1; text-align: center; padding: 13px 10px; border-radius: 8px;
-  font-weight: 700; font-size: .88rem; text-decoration: none;
-  display: flex; align-items: center; justify-content: center; gap: 6px;
-}
-.sticky-bar .sb-form { background: var(--gold); color: var(--navy); }
-.sticky-bar .sb-wa   { background: var(--green); color: white; }
-
-/* ══ ANIMATIONS ══ */
-.fade-in { opacity: 0; transform: translateY(20px); transition: opacity .55s ease, transform .55s ease; }
-.fade-in.visible { opacity: 1; transform: none; }
-
-/* ══════════════════════════
-   MOBILE — ≤ 768px
-══════════════════════════ */
-@media (max-width: 768px) {
-
-  /* NAV */
-  nav { padding: 0 4%; height: 52px; }
-  .nav-logo { font-size: 1.4rem; letter-spacing: 3px; }
-  .nav-cta { font-size: .78rem; padding: 7px 13px; }
-
-  /* HERO: form FIRST, then copy */
-  .hero {
-    grid-template-columns: 1fr;
-    grid-template-areas: "form" "left";
-    padding: 22px 4% 32px; gap: 26px;
-  }
-  .hero::after { display: none; }
-  .hero-left h1 { font-size: 1.6rem; }
-  .hero-left p  { font-size: .91rem; margin-bottom: 20px; }
-  .hero-badge   { font-size: .7rem; }
-  .hero-ctas    { display: none; } /* sticky bar handles it on mobile */
-
-  /* FORM */
-  .form-card { padding: 0 0 22px; border-radius: 14px; }
-  .form-card-header { margin: 0 0 18px; border-radius: 14px 14px 0 0; padding: 16px 20px; }
-  .form-card-header h3 { font-size: 1.08rem; }
-  .form-group { padding: 0 16px; margin-bottom: 12px; }
-  .form-group label { font-size: .79rem; }
-  .form-group input, .form-group select { padding: 11px 12px; font-size: .9rem; }
-  .form-submit { margin: 6px 16px 0; width: calc(100% - 32px); font-size: .93rem; }
-  .form-privacy { padding: 0 16px; font-size: .72rem; }
-
-  /* STATS */
-  .stats-bar { grid-template-columns: repeat(2, 1fr); padding: 28px 4%; gap: 0; }
-  .stat-item:nth-child(3) { border-left: none; border-top: 1px solid rgba(255,255,255,0.1); }
-  .stat-item:nth-child(4) { border-top: 1px solid rgba(255,255,255,0.1); }
-  .stat-num { font-size: 2rem; }
-  .stat-label { font-size: .75rem; }
-
-  /* SECTIONS */
-  .section { padding: 50px 4%; }
-  .section-title { font-size: 1.45rem; }
-  .section-sub  { font-size: .87rem; margin-bottom: 30px; }
-
-  /* WHY */
-  .why-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
-  .why-card { padding: 18px 14px; }
-  .why-icon { font-size: 1.5rem; margin-bottom: 10px; }
-  .why-card h4 { font-size: .88rem; }
-  .why-card p  { font-size: .8rem; }
-
-  /* STEPS */
-  .steps { grid-template-columns: 1fr; }
-  .step { border-right: none; border-bottom: 1px solid #F0F0F0; padding: 20px 16px; }
-  .step:last-child { border-bottom: none; }
-
-  /* TESTIMONIALS */
-  .testi-grid { grid-template-columns: 1fr; }
-  .testi-card > p { font-size: .86rem; }
-
-  /* FAQ */
-  .faq-q { font-size: .86rem; padding: 14px 16px; }
-  .faq-a  { font-size: .83rem; padding: 0 16px 14px; }
-
-  /* FINAL CTA */
-  .final-cta { padding: 52px 4% 80px; }
-  .final-ctas { flex-direction: column; align-items: center; }
-  .final-ctas a { width: 100%; max-width: 340px; justify-content: center; }
-
-  /* UNI PILLS */
-  .uni-pills { gap: 8px; }
-  .uni-pill  { font-size: .78rem; padding: 6px 13px; }
-
-  /* STICKY BAR: show */
-  .sticky-bar { display: flex; }
-
-  /* FOOTER: extra padding to clear sticky bar */
-  footer { padding-bottom: 90px; }
+  /* hide hero form on mobile — use float pill + panel instead */
+  /* Actually keep form in hero visible on mobile for immediate conversion */
+  .form-panel{display:block}
 }
 
-@media (max-width: 400px) {
-  .why-grid { grid-template-columns: 1fr; }
-  .hero-left h1 { font-size: 1.38rem; }
+@media(max-width:400px){
+  .why-grid{grid-template-columns:1fr}
+  .hero-left h1{font-size:1.35rem}
+  .discount-box{width:95%}
 }
 </style>
 </head>
@@ -357,103 +332,112 @@ footer a { color: var(--gold); text-decoration: none; }
 <!-- NAV -->
 <nav>
   <div class="nav-logo">EDIFY</div>
-  <a href="#lead-form" class="nav-cta"
-     onclick="document.getElementById('lead-form').scrollIntoView({behavior:'smooth'});return false;">
-    Get Free Match →
-  </a>
+  <div class="nav-right">
+    <a href="tel:7061285806" class="nav-phone">
+      <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      70612 85806
+    </a>
+    <a href="#lead-form" class="nav-cta" onclick="scrollToForm();return false;">Get Free Match →</a>
+  </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
 
   <div class="hero-left fade-in">
-    <div class="hero-badge">
-      <span class="pulse-dot"></span>
-      Admissions Open — 15 March 2026
-    </div>
+    <div class="hero-badge"><span class="pulse-dot"></span> Admissions Open — 15 March 2026</div>
     <h1>Upgrade Your Career with the <em>Right Online MBA</em> — Expert Help, Zero Cost</h1>
-    <p>Working full-time or switching careers? Rishi Upadhyay helps you find the perfect MBA from India's top universities — with zero fees and zero confusion.</p>
+    <p class="sub">Working full-time or switching careers? Rishi Upadhyay matches you to the perfect MBA from India's top universities — free of cost, within 24 hours.</p>
+
+    <!-- Quick stats -->
+    <div class="quick-stats">
+      <div class="qs-item"><span class="qs-num">500+</span><span class="qs-label">Counselled</span></div>
+      <div class="qs-item"><span class="qs-num">15+</span><span class="qs-label">Universities</span></div>
+      <div class="qs-item"><span class="qs-num">100%</span><span class="qs-label">Free</span></div>
+      <div class="qs-item"><span class="qs-num">24hr</span><span class="qs-label">Response</span></div>
+    </div>
+
     <div class="trust-row">
       <div class="trust-item">
-        <div class="trust-icon"><svg viewBox="0 0 12 10"><polyline points="11 1 4 9 1 6"/></svg></div>
-        500+ Professionals Successfully Counselled
+        <div class="tick-sm"><svg viewBox="0 0 12 10"><polyline points="11 1 4 9 1 6"/></svg></div>
+        Study while you work — only 10–15 hrs/week
       </div>
       <div class="trust-item">
-        <div class="trust-icon"><svg viewBox="0 0 12 10"><polyline points="11 1 4 9 1 6"/></svg></div>
-        Study While You Work — Only 10–15 hrs/week
+        <div class="tick-sm"><svg viewBox="0 0 12 10"><polyline points="11 1 4 9 1 6"/></svg></div>
+        UGC-DEB approved degrees recognised by top employers
       </div>
       <div class="trust-item">
-        <div class="trust-icon"><svg viewBox="0 0 12 10"><polyline points="11 1 4 9 1 6"/></svg></div>
-        UGC-Approved Degrees · 100% Free Counselling
+        <div class="tick-sm"><svg viewBox="0 0 12 10"><polyline points="11 1 4 9 1 6"/></svg></div>
+        EMI from ₹4,999/month — zero cost counselling
       </div>
     </div>
+
     <div class="hero-ctas">
-      <a href="#lead-form" class="btn-gold"
-         onclick="document.getElementById('lead-form').scrollIntoView({behavior:'smooth'});return false;">
-        📋 Get My Free MBA Match
-      </a>
-      <a href="https://wa.me/917061285806?text=Hi%20Rishi%2C%20I%20need%20free%20MBA%20counselling"
-         target="_blank" class="btn-wa">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-        WhatsApp Us
+      <a href="#lead-form" class="btn-gold" onclick="scrollToForm();return false;">📋 Get My Free MBA Match</a>
+      <a href="https://wa.me/917061285806?text=Hi%20Rishi%2C%20I%20need%20free%20MBA%20counselling" target="_blank" class="btn-wa">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        WhatsApp
       </a>
     </div>
   </div>
 
-  <!-- FORM — grid-area: form → appears FIRST on mobile -->
+  <!-- FORM — appears FIRST on mobile via grid-area -->
   <div class="hero-right fade-in" id="lead-form">
     <div class="form-card">
-      <div class="form-card-header">
+      <div class="form-discount">🎉 Limited Offer: <span>₹10,000</span> Discount Available — Claim Now</div>
+      <div class="form-head">
         <h3>Get Your Free MBA Match</h3>
-        <p>We'll shortlist your top 3 universities in 24 hrs</p>
+        <p>Top 3 universities shortlisted for you in 24 hrs</p>
       </div>
-      <form onsubmit="handleSubmit(event)">
-        <div class="form-group">
-          <label>Full Name *</label>
-          <input type="text" placeholder="Your full name" required autocomplete="name">
-        </div>
-        <div class="form-group">
-          <label>Phone Number *</label>
-          <input type="tel" placeholder="+91 XXXXX XXXXX" required autocomplete="tel">
-        </div>
-        <div class="form-group">
-          <label>Email Address *</label>
-          <input type="email" placeholder="your@email.com" required autocomplete="email">
-        </div>
-        <div class="form-group">
-          <label>Your Current Situation *</label>
-          <select required>
-            <option value="">Select your profile</option>
-            <option>Working Professional — want to upskill</option>
-            <option>Working Professional — want a promotion/raise</option>
-            <option>Career Switcher — changing industry</option>
-            <option>Career Switcher — moving into management</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Preferred MBA Specialisation</label>
-          <select>
-            <option value="">Not sure — need guidance</option>
-            <option>General MBA</option>
-            <option>Marketing</option>
-            <option>Finance</option>
-            <option>Human Resources</option>
-            <option>Operations Management</option>
-            <option>Digital Marketing</option>
-            <option>Supply Chain</option>
-            <option>Business Analytics</option>
-          </select>
-        </div>
-        <button type="submit" class="form-submit">Get My Free MBA Match →</button>
-      </form>
-      <p class="form-privacy">🔒 100% private · No spam · No obligation</p>
+      <div class="form-body">
+        <form id="mainForm" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" id="f-name" placeholder="Your full name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" id="f-phone" placeholder="+91 XXXXX XXXXX" required autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" id="f-email" placeholder="your@email.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label>Your Current Situation *</label>
+            <select id="f-situation" required>
+              <option value="">Select your profile</option>
+              <option>Working Professional — want to upskill</option>
+              <option>Working Professional — want a promotion/raise</option>
+              <option>Career Switcher — changing industry</option>
+              <option>Career Switcher — moving into management</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>MBA Specialisation</label>
+            <select id="f-spec">
+              <option value="">Not sure — need guidance</option>
+              <option>General MBA</option>
+              <option>Marketing</option>
+              <option>Finance</option>
+              <option>Human Resources</option>
+              <option>Operations Management</option>
+              <option>Digital Marketing</option>
+              <option>Supply Chain</option>
+              <option>Business Analytics</option>
+            </select>
+          </div>
+          <button type="submit" class="form-submit">Claim ₹10,000 Off + Free Match →</button>
+        </form>
+        <p class="form-privacy">🔒 100% private · No spam · No obligation</p>
+      </div>
     </div>
   </div>
 
 </section>
 
-<!-- UNIVERSITY STRIP -->
+<!-- UNI STRIP -->
 <div class="uni-strip fade-in">
   <p class="uni-label">We counsel for admissions to</p>
   <div class="uni-pills">
@@ -463,55 +447,84 @@ footer a { color: var(--gold); text-decoration: none; }
     <div class="uni-pill">NMIMS</div>
     <div class="uni-pill">DY Patil</div>
     <div class="uni-pill">Jain University</div>
-    <div class="uni-pill">+ More</div>
+    <div class="uni-pill">+ 10 More</div>
   </div>
 </div>
 
 <!-- STATS BAR -->
 <div class="stats-bar fade-in">
-  <div class="stat-item">
-    <span class="stat-num">500+</span>
-    <span class="stat-label">Students Counselled</span>
-  </div>
-  <div class="stat-item">
-    <span class="stat-num">15+</span>
-    <span class="stat-label">Partner Universities</span>
-  </div>
-  <div class="stat-item">
-    <span class="stat-num">100%</span>
-    <span class="stat-label">Free Guidance</span>
-  </div>
-  <div class="stat-item">
-    <span class="stat-num">24hr</span>
-    <span class="stat-label">Response Time</span>
-  </div>
+  <div class="stat-item"><span class="stat-num">500+</span><span class="stat-label">Students Counselled</span></div>
+  <div class="stat-item"><span class="stat-num">15+</span><span class="stat-label">Partner Universities</span></div>
+  <div class="stat-item"><span class="stat-num">100%</span><span class="stat-label">Free Guidance</span></div>
+  <div class="stat-item"><span class="stat-num">24hr</span><span class="stat-label">Response Time</span></div>
 </div>
 
+<!-- COMPARISON TABLE -->
+<section class="section compare-section fade-in">
+  <h2 class="section-title">Compare Top Online MBA Universities</h2>
+  <p class="section-sub">We help you pick from these — based on your budget, career goal and schedule.</p>
+  <div style="overflow-x:auto;border-radius:12px;box-shadow:var(--sh)">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>University</th>
+          <th>Fees</th>
+          <th>Duration</th>
+          <th>EMI/Month</th>
+          <th>Best For</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Amity Online</strong></td>
+          <td>₹1.2L – ₹1.8L</td>
+          <td>2 Years</td>
+          <td>₹5,999</td>
+          <td><span class="tag">Marketing · HR</span></td>
+        </tr>
+        <tr>
+          <td><strong>Manipal Online</strong></td>
+          <td>₹1.4L – ₹2L</td>
+          <td>2 Years</td>
+          <td>₹6,499</td>
+          <td><span class="tag">IT · Management</span></td>
+        </tr>
+        <tr>
+          <td><strong>LPU Online</strong></td>
+          <td>₹80K – ₹1.2L</td>
+          <td>2 Years</td>
+          <td>₹4,999</td>
+          <td><span class="tag">Budget-friendly</span></td>
+        </tr>
+        <tr>
+          <td><strong>NMIMS</strong></td>
+          <td>₹2L – ₹3L</td>
+          <td>2 Years</td>
+          <td>₹9,999</td>
+          <td><span class="tag tag-green">Premium · Finance</span></td>
+        </tr>
+        <tr>
+          <td><strong>DY Patil</strong></td>
+          <td>₹1L – ₹1.6L</td>
+          <td>2 Years</td>
+          <td>₹5,499</td>
+          <td><span class="tag">Healthcare · Ops</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="text-align:center;margin-top:20px;color:var(--muted);font-size:.83rem">Not sure which fits you? <a href="#lead-form" onclick="scrollToForm();return false;" style="color:var(--gold);font-weight:700">Get a free personalised match →</a></p>
+</section>
+
 <!-- WHY US -->
-<section class="section fade-in">
+<section class="section fade-in" style="background:var(--gray)">
   <h2 class="section-title">Why Working Professionals Choose Edify</h2>
-  <p class="section-sub">We don't just list universities — we understand your career, budget and schedule, then find the perfect fit.</p>
+  <p class="section-sub">We don't just list universities — we understand your career, budget and schedule.</p>
   <div class="why-grid">
-    <div class="why-card">
-      <div class="why-icon">⏰</div>
-      <h4>Built Around Your Schedule</h4>
-      <p>Only 10–15 hrs/week. Weekend-friendly programs so your career never pauses.</p>
-    </div>
-    <div class="why-card">
-      <div class="why-icon">🎯</div>
-      <h4>Matched to Your Goal</h4>
-      <p>Promotion? Salary hike? Career switch? We shortlist universities based on your outcome, not rankings.</p>
-    </div>
-    <div class="why-card">
-      <div class="why-icon">🏛️</div>
-      <h4>Only UGC-Approved Degrees</h4>
-      <p>Every university is UGC-DEB approved — recognised by India's top employers. No degree mills, ever.</p>
-    </div>
-    <div class="why-card">
-      <div class="why-icon">💰</div>
-      <h4>Completely Free to You</h4>
-      <p>Universities pay us a referral fee. You get expert, unbiased guidance at zero cost.</p>
-    </div>
+    <div class="why-card"><div class="why-icon">⏰</div><h4>Study While You Work</h4><p>Only 10–15 hrs/week. Weekend-friendly programs — your career never pauses.</p></div>
+    <div class="why-card"><div class="why-icon">🎯</div><h4>Matched to Your Goal</h4><p>Promotion? Salary hike? Career switch? We shortlist based on your outcome, not rankings.</p></div>
+    <div class="why-card"><div class="why-icon">🏛️</div><h4>Only UGC-Approved</h4><p>Every university is UGC-DEB approved. Recognised by India's top employers.</p></div>
+    <div class="why-card"><div class="why-icon">💰</div><h4>Zero Cost to You</h4><p>Universities pay us. You get expert, unbiased guidance at absolutely no cost.</p></div>
   </div>
 </section>
 
@@ -520,26 +533,10 @@ footer a { color: var(--gold); text-decoration: none; }
   <h2 class="section-title">How It Works</h2>
   <p class="section-sub">Four simple steps — we handle the hard parts.</p>
   <div class="steps">
-    <div class="step">
-      <div class="step-num">1</div>
-      <h4>Fill the Form</h4>
-      <p>Share your details and career goals. Takes under 60 seconds.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">2</div>
-      <h4>Free Counselling</h4>
-      <p>Rishi personally reviews your profile and recommends your top 3 universities.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">3</div>
-      <h4>Application Support</h4>
-      <p>We help you complete your application accurately and on time.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">4</div>
-      <h4>Get Enrolled</h4>
-      <p>Secure your seat and start your MBA — without a career break.</p>
-    </div>
+    <div class="step"><div class="step-num">1</div><h4>Fill the Form</h4><p>Share your details and career goals. Takes under 60 seconds.</p></div>
+    <div class="step"><div class="step-num">2</div><h4>Free Counselling</h4><p>Rishi personally reviews your profile and recommends your top 3 universities.</p></div>
+    <div class="step"><div class="step-num">3</div><h4>Application Support</h4><p>We help you complete your application accurately and on time.</p></div>
+    <div class="step"><div class="step-num">4</div><h4>Get Enrolled</h4><p>Secure your seat and start your MBA — without a career break.</p></div>
   </div>
 </section>
 
@@ -550,36 +547,18 @@ footer a { color: var(--gold); text-decoration: none; }
   <div class="testi-grid">
     <div class="testi-card">
       <div class="stars">★★★★★</div>
-      <p>"I've been in IT for 6 years and wanted to move into management. Rishi understood my situation immediately and helped me get into Manipal Online — I didn't take a single day off work."</p>
-      <div class="testi-author">
-        <div class="testi-avatar">A</div>
-        <div>
-          <div class="testi-name">Aakash Sharma</div>
-          <div class="testi-role">IT Professional → MBA, Manipal Online</div>
-        </div>
-      </div>
+      <p>"I've been in IT for 6 years and wanted to move into management. Rishi understood immediately and helped me get into Manipal Online — I didn't take a single day off work."</p>
+      <div class="testi-author"><div class="testi-avatar">A</div><div><div class="testi-name">Aakash Sharma</div><div class="testi-role">IT Professional → MBA, Manipal Online</div></div></div>
     </div>
     <div class="testi-card">
       <div class="stars">★★★★★</div>
-      <p>"I was switching from teaching to marketing with no idea where to start. Rishi matched me to an MBA at Amity that fit my budget perfectly. Got a new job within 8 months of enrolling!"</p>
-      <div class="testi-author">
-        <div class="testi-avatar">P</div>
-        <div>
-          <div class="testi-name">Priya Verma</div>
-          <div class="testi-role">Career Switcher → MBA Digital Marketing, Amity</div>
-        </div>
-      </div>
+      <p>"I was switching from teaching to marketing with no idea where to start. Rishi matched me to Amity that fit my budget. Got a new job within 8 months of enrolling!"</p>
+      <div class="testi-author"><div class="testi-avatar">P</div><div><div class="testi-name">Priya Verma</div><div class="testi-role">Career Switcher → MBA Digital Marketing, Amity</div></div></div>
     </div>
     <div class="testi-card">
       <div class="stars">★★★★★</div>
-      <p>"Working full-time with two kids — I thought an MBA was impossible. Rishi showed me how LPU's weekend program would work for my schedule. The whole process took less than a week!"</p>
-      <div class="testi-author">
-        <div class="testi-avatar">R</div>
-        <div>
-          <div class="testi-name">Rahul Nair</div>
-          <div class="testi-role">Working Professional → MBA Finance, LPU</div>
-        </div>
-      </div>
+      <p>"Working full-time with two kids — I thought an MBA was impossible. Rishi showed me how LPU's weekend program works for my schedule. The whole process took less than a week!"</p>
+      <div class="testi-author"><div class="testi-avatar">R</div><div><div class="testi-name">Rahul Nair</div><div class="testi-role">Working Professional → MBA Finance, LPU</div></div></div>
     </div>
   </div>
 </section>
@@ -587,146 +566,237 @@ footer a { color: var(--gold); text-decoration: none; }
 <!-- FAQ -->
 <section class="section faq-section fade-in">
   <h2 class="section-title">Frequently Asked Questions</h2>
-  <p class="section-sub">The questions we hear most from working professionals and career switchers.</p>
+  <p class="section-sub">Questions we hear most from working professionals and career switchers.</p>
   <div class="faq-list">
-    <div class="faq-item">
-      <details>
-        <summary class="faq-q">Can I do an MBA while working full-time?</summary>
-        <p class="faq-a">Yes — all the universities we recommend are designed for working professionals. Most require just 10–15 hours per week with flexible weekend and evening schedules. You never have to resign or take a break.</p>
-      </details>
-    </div>
-    <div class="faq-item">
-      <details>
-        <summary class="faq-q">Will an online MBA be recognised by employers?</summary>
-        <p class="faq-a">Every university we recommend is UGC-DEB approved — your degree is legally equivalent to a full-time MBA. Top employers across India accept degrees from Amity, Manipal, LPU, NMIMS, and DY Patil.</p>
-      </details>
-    </div>
-    <div class="faq-item">
-      <details>
-        <summary class="faq-q">I'm switching careers — will an MBA actually help?</summary>
-        <p class="faq-a">Absolutely. An MBA is one of the fastest ways to switch into management, marketing, finance, or HR. We help you pick the right specialisation for your target industry so the degree has maximum impact.</p>
-      </details>
-    </div>
-    <div class="faq-item">
-      <details>
-        <summary class="faq-q">What is the fee range? Are EMI options available?</summary>
-        <p class="faq-a">Fees range from ₹60,000 to ₹3,00,000 depending on the university. Most universities offer zero-cost EMI plans through partner banks — so you can start without a large upfront payment.</p>
-      </details>
-    </div>
-    <div class="faq-item">
-      <details>
-        <summary class="faq-q">Is the counselling really free? What's the catch?</summary>
-        <p class="faq-a">No catch. Edify earns a referral commission from universities when you enrol — so our guidance is completely free to you. We recommend based on your fit, not our commission size.</p>
-      </details>
-    </div>
-    <div class="faq-item">
-      <details>
-        <summary class="faq-q">How quickly can I get admitted?</summary>
-        <p class="faq-a">Most admissions are completed within 1–2 weeks of your enquiry. With the March 15 deadline approaching, submit your details today — we'll move fast so you don't miss your seat.</p>
-      </details>
-    </div>
+    <div class="faq-item"><details><summary class="faq-q">Can I do an MBA while working full-time?</summary><p class="faq-a">Yes — all universities we recommend are designed for working professionals. Most require just 10–15 hours per week with flexible weekend and evening schedules. You never have to resign.</p></details></div>
+    <div class="faq-item"><details><summary class="faq-q">Will an online MBA be recognised by employers?</summary><p class="faq-a">Every university we recommend is UGC-DEB approved — your degree is legally equivalent to a full-time MBA. Top employers accept degrees from Amity, Manipal, LPU, NMIMS, and DY Patil.</p></details></div>
+    <div class="faq-item"><details><summary class="faq-q">I'm switching careers — will an MBA actually help?</summary><p class="faq-a">Absolutely. An MBA is one of the fastest ways to switch into management, marketing, finance, or HR. We help you pick the right specialisation for maximum career impact.</p></details></div>
+    <div class="faq-item"><details><summary class="faq-q">What is the fee range? Are EMI options available?</summary><p class="faq-a">Fees range from ₹60,000 to ₹3,00,000. Most universities offer zero-cost EMI plans through partner banks — you can start without a large upfront payment.</p></details></div>
+    <div class="faq-item"><details><summary class="faq-q">Is the ₹10,000 discount real?</summary><p class="faq-a">Yes. When you enrol through Edify, universities offer special cashback/subsidy to our students. Submit your details and Rishi will explain exactly how to claim it during your counselling call.</p></details></div>
+    <div class="faq-item"><details><summary class="faq-q">Is the counselling really free? What's the catch?</summary><p class="faq-a">No catch. Edify earns a referral fee from universities when you enrol — so our guidance is 100% free to you. We recommend based on your fit, not our commission size.</p></details></div>
   </div>
 </section>
 
 <!-- FINAL CTA -->
 <section class="final-cta fade-in">
   <h2>Only 17 Days Left — Don't Miss March 2026</h2>
-  <p>Working professionals and career switchers — get your free personalised MBA match now. It takes 60 seconds.</p>
+  <p>Get your free personalised MBA match + claim your ₹10,000 discount. Takes 60 seconds.</p>
   <div class="final-ctas">
-    <a href="#lead-form" class="btn-gold"
-       onclick="document.getElementById('lead-form').scrollIntoView({behavior:'smooth'});return false;">
-      📋 Get My Free MBA Match
-    </a>
-    <a href="https://wa.me/917061285806?text=Hi%20Rishi%2C%20I%20need%20free%20MBA%20counselling"
-       target="_blank" class="btn-wa">
-      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <a href="#lead-form" class="btn-gold" onclick="scrollToForm();return false;">📋 Get My Free MBA Match</a>
+    <a href="https://wa.me/917061285806?text=Hi%20Rishi%2C%20I%20need%20free%20MBA%20counselling" target="_blank" class="btn-wa">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
       WhatsApp Instead
     </a>
   </div>
 </section>
+
+<!-- PRIVACY POLICY LINK -->
+<div style="background:#060f1f;text-align:center;padding:10px;font-size:.75rem">
+  <a href="/privacy-policy.html" style="color:var(--gold);text-decoration:none">Privacy Policy</a>
+  <span style="color:rgba(255,255,255,.3);margin:0 8px">·</span>
+  <a href="/thankyou.html" style="color:rgba(255,255,255,.3);text-decoration:none;font-size:.7rem">Thank You Page</a>
+</div>
 
 <!-- FOOTER -->
 <footer>
   <p>© 2026 Edify · <a href="tel:7061285806">70612 85806</a> · All admissions subject to university eligibility criteria.</p>
 </footer>
 
-<!-- STICKY BOTTOM BAR (mobile only) -->
+<!-- ═══════════════════════════
+  DISCOUNT POPUP (fires after 5s)
+═══════════════════════════ -->
+<div class="discount-overlay" id="discountOverlay">
+  <div class="discount-box">
+    <div class="discount-top">
+      <button class="discount-close" onclick="closeDiscount()">×</button>
+      <span class="fire">🔥</span>
+      <h2>₹10,000 OFF<br>Your MBA Fees!</h2>
+      <p>Exclusive discount for students who apply through Edify</p>
+      <span class="discount-saving">You save ₹10,000 on enrolment</span>
+    </div>
+    <div class="discount-body">
+      <!-- Countdown -->
+      <div class="discount-countdown">
+        <div class="cd-block"><span class="cd-num" id="cd-h">00</span><span class="cd-label">Hours</span></div>
+        <div class="cd-block"><span class="cd-num" id="cd-m">29</span><span class="cd-label">Mins</span></div>
+        <div class="cd-block"><span class="cd-num" id="cd-s">59</span><span class="cd-label">Secs</span></div>
+      </div>
+      <!-- Perks -->
+      <div class="discount-perks">
+        <div class="discount-perk"><svg width="16" height="16" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> ₹10,000 cashback on enrolment</div>
+        <div class="discount-perk"><svg width="16" height="16" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Free personalised university match</div>
+        <div class="discount-perk"><svg width="16" height="16" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> EMI from ₹4,999/month</div>
+        <div class="discount-perk"><svg width="16" height="16" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Valid only until 15 March 2026</div>
+      </div>
+      <button class="btn-avail" onclick="availNow()">🎉 Avail Now — Fill the Form</button>
+      <p class="discount-fine">Limited to first 50 applicants this month</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════
+  MOBILE FLOATING PILL
+═══════════════════════════ -->
+<button class="float-pill" id="floatPill" onclick="openPanel()">
+  🎓 Free MBA Match
+</button>
+
+<!-- ═══════════════════════════
+  MOBILE SLIDE-UP FORM PANEL
+═══════════════════════════ -->
+<div class="form-panel" id="formPanel">
+  <div class="form-panel-handle"></div>
+  <div class="form-panel-head">
+    <h3>Free MBA Match + ₹10,000 Off</h3>
+    <button class="panel-close" onclick="closePanel()">×</button>
+  </div>
+  <div class="form-panel-body">
+    <form id="panelForm" onsubmit="handleSubmit(event)">
+      <div class="form-group"><label>Full Name *</label><input type="text" id="p-name" placeholder="Your full name" required></div>
+      <div class="form-group"><label>Phone Number *</label><input type="tel" id="p-phone" placeholder="+91 XXXXX XXXXX" required></div>
+      <div class="form-group"><label>Email Address *</label><input type="email" id="p-email" placeholder="your@email.com" required></div>
+      <div class="form-group"><label>Your Situation *</label>
+        <select id="p-situation" required>
+          <option value="">Select your profile</option>
+          <option>Working Professional — want to upskill</option>
+          <option>Working Professional — want a promotion/raise</option>
+          <option>Career Switcher — changing industry</option>
+          <option>Career Switcher — moving into management</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group"><label>MBA Specialisation</label>
+        <select id="p-spec">
+          <option value="">Not sure — need guidance</option>
+          <option>General MBA</option>
+          <option>Marketing</option>
+          <option>Finance</option>
+          <option>Human Resources</option>
+          <option>Operations Management</option>
+          <option>Digital Marketing</option>
+          <option>Supply Chain</option>
+          <option>Business Analytics</option>
+        </select>
+      </div>
+      <button type="submit" class="form-submit">Claim ₹10,000 Off + Free Match →</button>
+    </form>
+    <p class="form-privacy" style="margin-top:10px">🔒 100% private · No spam</p>
+  </div>
+</div>
+
+<!-- STICKY BOTTOM BAR mobile -->
 <div class="sticky-bar">
-  <a class="sb-form" href="#lead-form"
-     onclick="document.getElementById('lead-form').scrollIntoView({behavior:'smooth'});return false;">
-    📋 Free MBA Match
-  </a>
-  <a class="sb-wa"
-     href="https://wa.me/917061285806?text=Hi%20Rishi%2C%20I%20need%20free%20MBA%20counselling"
-     target="_blank">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  <button class="sb-form" onclick="openPanel()">📋 Free MBA Match</button>
+  <a class="sb-wa" href="https://wa.me/917061285806?text=Hi%20Rishi%2C%20I%20need%20free%20MBA%20counselling" target="_blank">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
     WhatsApp
   </a>
 </div>
 
 <script>
-/* Scroll fade-in */
-const obs = new IntersectionObserver((entries) => {
-  entries.forEach((e, i) => {
-    if (e.isIntersecting) {
-      setTimeout(() => e.target.classList.add('visible'), i * 60);
-      obs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.08 });
-document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
-
-/* Form submit → Google Sheets → Google Ads conversion → redirect */
 const SHEET_URL = 'https://script.google.com/macros/s/AKfycbyilrFcjFJbb1XCg2Nl3RRadrND2VlLcvd61AK1g6DufZqZqmxCT1cOm5IaYcIMoelj/exec';
 
-function handleSubmit(e) {
-  e.preventDefault();
+/* ── Scroll animations ── */
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((e,i) => {
+    if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('visible'),i*60); obs.unobserve(e.target); }
+  });
+},{threshold:.08});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
 
-  const form = e.target;
-  const btn  = form.querySelector('.form-submit');
+/* ── Scroll to form ── */
+function scrollToForm(){
+  if(window.innerWidth<=768){ openPanel(); }
+  else{ document.getElementById('lead-form').scrollIntoView({behavior:'smooth'}); }
+}
 
-  // Grab all field values
-  const payload = {
-    name:           form.querySelector('input[type="text"]').value.trim(),
-    phone:          form.querySelector('input[type="tel"]').value.trim(),
-    email:          form.querySelector('input[type="email"]').value.trim(),
-    situation:      form.querySelectorAll('select')[0].value,
-    specialisation: form.querySelectorAll('select')[1].value || 'Not specified'
+/* ── Discount popup (fires after 5s) ── */
+setTimeout(()=>{
+  document.getElementById('discountOverlay').classList.add('show');
+  startCountdown();
+},5000);
+
+function closeDiscount(){ document.getElementById('discountOverlay').classList.remove('show'); }
+function availNow(){ closeDiscount(); scrollToForm(); }
+
+/* Overlay click to close */
+document.getElementById('discountOverlay').addEventListener('click',function(e){
+  if(e.target===this) closeDiscount();
+});
+
+/* ── Countdown timer ── */
+function startCountdown(){
+  let total = 29*60+59;
+  const h=document.getElementById('cd-h'),m=document.getElementById('cd-m'),s=document.getElementById('cd-s');
+  const tick=setInterval(()=>{
+    if(total<=0){clearInterval(tick);return;}
+    total--;
+    const mm=Math.floor(total/60), ss=total%60;
+    h.textContent='00';
+    m.textContent=String(mm).padStart(2,'0');
+    s.textContent=String(ss).padStart(2,'0');
+  },1000);
+}
+
+/* ── Mobile panel ── */
+function openPanel(){
+  document.getElementById('formPanel').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closePanel(){
+  document.getElementById('formPanel').classList.remove('open');
+  document.body.style.overflow='';
+}
+
+/* ── Collect fields from either form ── */
+function getPayload(form){
+  const ids = form.id==='mainForm'
+    ? {name:'f-name',phone:'f-phone',email:'f-email',sit:'f-situation',spec:'f-spec'}
+    : {name:'p-name',phone:'p-phone',email:'p-email',sit:'p-situation',spec:'p-spec'};
+  return {
+    name:          document.getElementById(ids.name).value.trim(),
+    phone:         document.getElementById(ids.phone).value.trim(),
+    email:         document.getElementById(ids.email).value.trim(),
+    situation:     document.getElementById(ids.sit).value,
+    specialisation:document.getElementById(ids.spec).value || 'Not specified'
   };
+}
 
-  // Basic validation
-  if (!payload.name || !payload.phone || !payload.email || !payload.situation) {
-    alert('Please fill in all required fields.');
-    return;
+/* ── Form submit → Sheets → Ads → redirect ── */
+function handleSubmit(e){
+  e.preventDefault();
+  const btn = e.target.querySelector('.form-submit');
+  const payload = getPayload(e.target);
+
+  if(!payload.name||!payload.phone||!payload.email||!payload.situation){
+    alert('Please fill in all required fields.');return;
   }
 
-  // Update button UI
-  btn.textContent = 'Submitting...';
-  btn.disabled = true;
+  btn.textContent='Submitting...';
+  btn.disabled=true;
 
-  // ✅ POST to Google Sheets
-  fetch(SHEET_URL, {
-    method: 'POST',
-    mode: 'no-cors',           // Apps Script requires no-cors
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload)
+  fetch(SHEET_URL,{
+    method:'POST', mode:'no-cors',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify(payload)
   })
-  .then(function() {
-    // ✅ Fire Google Ads conversion then redirect
-    gtag('event', 'conversion', {
-      'send_to': 'AW-17380291250',
-      'event_callback': function() {
-        window.location = '/thankyou.html';
-      }
+  .finally(()=>{
+    gtag('event','conversion',{
+      'send_to':'AW-17380291250',
+      'event_callback':()=>{ window.location='/thankyou.html'; }
     });
-    // Fallback redirect in case gtag is slow/blocked
-    setTimeout(function() { window.location = '/thankyou.html'; }, 1000);
-  })
-  .catch(function() {
-    // Even if fetch fails, still convert & redirect (no-cors won't throw on success)
-    gtag('event', 'conversion', { 'send_to': 'AW-17380291250' });
-    setTimeout(function() { window.location = '/thankyou.html'; }, 800);
+    setTimeout(()=>{ window.location='/thankyou.html'; },1000);
   });
+}
+
+/* ── Hide float pill when form is visible ── */
+const heroForm = document.getElementById('lead-form');
+const pill = document.getElementById('floatPill');
+if(heroForm && pill){
+  const pillObs = new IntersectionObserver((entries)=>{
+    pill.style.display = entries[0].isIntersecting ? 'none' : (window.innerWidth<=768?'flex':'none');
+  },{threshold:.3});
+  pillObs.observe(heroForm);
 }
 </script>
 </body>
