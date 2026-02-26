@@ -676,22 +676,26 @@ const obs = new IntersectionObserver((entries) => {
 }, { threshold: 0.08 });
 document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
 
-/* Form submit + Google Ads conversion tracking */
+/* Form submit + Google Ads conversion + redirect to Thank You page */
 function handleSubmit(e) {
   e.preventDefault();
 
-  // ✅ Fire Google Ads conversion
+  const btn = e.target.querySelector('.form-submit');
+  btn.textContent = 'Submitting...';
+  btn.disabled = true;
+
+  // ✅ Fire Google Ads conversion, then redirect
   gtag('event', 'conversion', {
     'send_to': 'AW-17380291250',
-    'event_callback': function() { console.log('Conversion tracked'); }
+    'event_callback': function() {
+      window.location = '/thankyou.html';
+    }
   });
 
-  // Update button
-  const btn = e.target.querySelector('.form-submit');
-  btn.textContent = "✅ Submitted! We'll match you within 24 hrs.";
-  btn.style.background = '#10B981';
-  btn.style.color = '#fff';
-  btn.disabled = true;
+  // Fallback: redirect after 1s in case gtag is slow or blocked
+  setTimeout(function() {
+    window.location = '/thankyou.html';
+  }, 1000);
 
   // 👉 TODO: POST form data to your backend / Google Sheet here
 }
