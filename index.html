@@ -676,28 +676,57 @@ const obs = new IntersectionObserver((entries) => {
 }, { threshold: 0.08 });
 document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
 
-/* Form submit + Google Ads conversion + redirect to Thank You page */
+/* Form submit → Google Sheets → Google Ads conversion → redirect */
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbyilrFcjFJbb1XCg2Nl3RRadrND2VlLcvd61AK1g6DufZqZqmxCT1cOm5IaYcIMoelj/exec';
+
 function handleSubmit(e) {
   e.preventDefault();
 
-  const btn = e.target.querySelector('.form-submit');
+  const form = e.target;
+  const btn  = form.querySelector('.form-submit');
+
+  // Grab all field values
+  const payload = {
+    name:           form.querySelector('input[type="text"]').value.trim(),
+    phone:          form.querySelector('input[type="tel"]').value.trim(),
+    email:          form.querySelector('input[type="email"]').value.trim(),
+    situation:      form.querySelectorAll('select')[0].value,
+    specialisation: form.querySelectorAll('select')[1].value || 'Not specified'
+  };
+
+  // Basic validation
+  if (!payload.name || !payload.phone || !payload.email || !payload.situation) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+
+  // Update button UI
   btn.textContent = 'Submitting...';
   btn.disabled = true;
 
-  // ✅ Fire Google Ads conversion, then redirect
-  gtag('event', 'conversion', {
-    'send_to': 'AW-17380291250',
-    'event_callback': function() {
-      window.location = '/thankyou.html';
-    }
+  // ✅ POST to Google Sheets
+  fetch(SHEET_URL, {
+    method: 'POST',
+    mode: 'no-cors',           // Apps Script requires no-cors
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  })
+  .then(function() {
+    // ✅ Fire Google Ads conversion then redirect
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17380291250',
+      'event_callback': function() {
+        window.location = '/thankyou.html';
+      }
+    });
+    // Fallback redirect in case gtag is slow/blocked
+    setTimeout(function() { window.location = '/thankyou.html'; }, 1000);
+  })
+  .catch(function() {
+    // Even if fetch fails, still convert & redirect (no-cors won't throw on success)
+    gtag('event', 'conversion', { 'send_to': 'AW-17380291250' });
+    setTimeout(function() { window.location = '/thankyou.html'; }, 800);
   });
-
-  // Fallback: redirect after 1s in case gtag is slow or blocked
-  setTimeout(function() {
-    window.location = '/thankyou.html';
-  }, 1000);
-
-  // 👉 TODO: POST form data to your backend / Google Sheet here
 }
 </script>
 </body>
