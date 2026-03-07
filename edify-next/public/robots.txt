@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /blog/write
+Disallow: /blog/new
+
+Sitemap: https://edifyedu.in/sitemap.xml

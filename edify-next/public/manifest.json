@@ -1,0 +1,22 @@
+{
+  "name": "Edify — Online Degrees India",
+  "short_name": "Edify",
+  "description": "Compare 106+ UGC approved online degrees. Honest. Zero paid rankings.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B1D35",
+  "theme_color": "#0B1D35",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-IN",
+  "categories": ["education"],
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable any" },
+    { "src": "/icon-180.png", "sizes": "180x180", "type": "image/png" }
+  ],
+  "shortcuts": [
+    { "name": "Browse Universities", "url": "/universities", "description": "Find UGC approved universities" },
+    { "name": "Compare Programs", "url": "/compare", "description": "Compare universities side by side" }
+  ]
+}
