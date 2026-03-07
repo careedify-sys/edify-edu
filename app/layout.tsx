@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     'best online MBA India 2025', 'online degree for government jobs', 'NMIMS online MBA',
     'Manipal online MBA', 'Symbiosis online', 'LPU online degree', 'Amity online',
   ],
-  metadataBase: new URL('https://edifyedu.in'),
+  metadataBase: new URL('https://www.edifyedu.in'),
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
@@ -36,14 +36,14 @@ export const metadata: Metadata = {
     siteName: 'Edify — edifyedu.in',
     type: 'website',
     locale: 'en_IN',
-    images: [{ url: 'https://edifyedu.in/og.png', width: 1200, height: 630, alt: "Edify — India's honest guide to online degrees" }],
+    images: [{ url: 'https://www.edifyedu.in/og.png', width: 1200, height: 630, alt: "Edify — India's honest guide to online degrees" }],
   },
   twitter: { card: 'summary_large_image', site: '@edifyedu' },
   robots: {
     index: true, follow: true,
     googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
-  alternates: { canonical: 'https://edifyedu.in' },
+  alternates: { canonical: 'https://www.edifyedu.in' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -58,14 +58,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="apple-mobile-web-app-title" content="Edify" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="application-name" content="Edify" />
-
         {/* Structured data — Organization */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Organization',
           name: 'Edify',
-          url: 'https://edifyedu.in',
-          logo: 'https://edifyedu.in/logo.png',
+          url: 'https://www.edifyedu.in',
+          logo: 'https://www.edifyedu.in/logo.png',
           description: 'Independent guide to UGC DEB approved online degrees in India',
           contactPoint: { '@type': 'ContactPoint', telephone: '+91-7061285806', contactType: 'customer service', availableLanguage: ['English', 'Hindi'] },
         })}} />
@@ -73,10 +72,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           '@context': 'https://schema.org',
           '@type': 'WebSite',
           name: 'Edify',
-          url: 'https://edifyedu.in',
+          url: 'https://www.edifyedu.in',
           potentialAction: {
             '@type': 'SearchAction',
-            target: { '@type': 'EntryPoint', urlTemplate: 'https://edifyedu.in/universities?search={search_term_string}' },
+            target: { '@type': 'EntryPoint', urlTemplate: 'https://www.edifyedu.in/universities?search={search_term_string}' },
             'query-input': 'required name=search_term_string',
           },
         })}} />
