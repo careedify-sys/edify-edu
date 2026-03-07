@@ -24,7 +24,7 @@ function CompareContent() {
     const a = searchParams.get('a')
     const b = searchParams.getAll('b')
     const ids = [a, ...b].filter((id): id is string => !!id && !!getUniversityById(id))
-    const unique = [...new Set(ids)]
+    const unique = Array.from(new Set(ids))
     if (unique.length > 0) {
       setSelectedIds(unique.slice(0, 3))
     } else {
