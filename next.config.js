@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: '.next-prod', // Using .next-prod to avoid Windows EPERM lock on .next/trace
-
   // ── Image optimisation ──────────────────────────────────────────────
   images: {
     remotePatterns: [
