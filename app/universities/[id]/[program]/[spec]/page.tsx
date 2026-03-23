@@ -1,0 +1,86 @@
+// app/universities/[id]/[program]/[spec]/page.tsx
+import { notFound } from 'next/navigation'
+import type { Metadata } from 'next'
+import { UNIVERSITIES, getUniversityById } from '@/lib/data'
+import type { Program } from '@/lib/data'
+import UniversitySpecClient from '@/components/UniversitySpecClient'
+
+const PM: Record<string, Program> = {
+  'mba': 'MBA', 'mca': 'MCA', 'bba': 'BBA', 'bca': 'BCA', 'ba': 'BA',
+  'bcom': 'B.Com', 'mcom': 'M.Com', 'ma': 'MA', 'msc': 'MSc', 'bsc': 'BSc',
+  'online-mba': 'MBA', 'online-mca': 'MCA', 'online-bba': 'BBA', 'online-bca': 'BCA',
+  'online-ba': 'BA', 'online-bcom': 'B.Com', 'online-mcom': 'M.Com',
+  'online-ma': 'MA', 'online-msc': 'MSc',
+}
+
+const toSlug = (s: string) => s.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
+
+// Pages render on demand (dynamicParams = true below); no static pre-generation
+// to avoid build-time OOM. ISR caches each page after first render.
+
+export async function generateMetadata(
+  { params }: { params: Promise<{ id: string; program: string; spec: string }> }
+): Promise<Metadata> {
+  const { id, program: programSlug, spec: specSlug } = await params
+  const u = getUniversityById(id)
+  const program = PM[programSlug?.toLowerCase()]
+  if (!u || !program) return { title: 'Not Found' }
+
+  const pd = u.programDetails[program]
+  const spec = pd?.specs?.find(s => toSlug(s) === specSlug)
+  if (!spec) return { title: 'Not Found' }
+
+  const year = new Date().getFullYear()
+  const title = `${u.name} Online ${program} ${spec} ${year} — Fees, Syllabus & Admission`
+  const description = `${u.name} Online ${program} with ${spec} specialisation. ${pd?.duration || '2 Years'}, NAAC ${u.naac} accredited, UGC DEB approved. Check fees, syllabus and ${year} admission details.`
+
+  return {
+    title,
+    description,
+    keywords: [
+      `${u.name} online ${program} ${spec}`,
+      `${u.name} ${program} ${spec} fees`,
+      `${u.name} ${program} ${spec} syllabus`,
+      `online ${program} ${spec} ${year}`,
+      `${u.abbr} ${program} ${spec}`,
+    ].join(', '),
+    alternates: {
+      canonical: `https://edifyedu.in/universities/${u.id}/${programSlug}/${specSlug}`,
+    },
+    openGraph: {
+      title,
+      description,
+      url: `https://edifyedu.in/universities/${u.id}/${programSlug}/${specSlug}`,
+      type: 'website',
+      siteName: 'Edify',
+      images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630 }],
+    },
+    robots: { index: true, follow: true },
+  }
+}
+
+export default async function UniversitySpecPage(
+  { params }: { params: Promise<{ id: string; program: string; spec: string }> }
+) {
+  const { id, program: programSlug, spec: specSlug } = await params
+  const u = getUniversityById(id)
+  const program = PM[programSlug?.toLowerCase()]
+
+  if (!u || !program || !u.programDetails[program]) notFound()
+
+  const pd = u.programDetails[program]!
+  const spec = pd.specs?.find(s => toSlug(s) === specSlug)
+  if (!spec) notFound()
+
+  return (
+    <UniversitySpecClient
+      university={u}
+      program={program}
+      programSlug={programSlug}
+      spec={spec}
+    />
+  )
+}
+
+export const revalidate = 21600
+export const dynamicParams = true

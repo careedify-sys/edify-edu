@@ -1,0 +1,54 @@
+# Next.js
+.next/
+.next2/
+.next-prod/
+out/
+
+# Dependencies
+node_modules/
+
+# Environment variables
+.env.local
+.env.*.local
+.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.tsbuildinfo
+next-env.d.ts
+
+# Development/migration scripts (not needed on server)
+append_online.js
+apply_logos.js
+apply_nirf_multi.js
+clean_names.js
+consolidate_specs.js
+diag.js
+extract_logos.js
+extract_nirf_2025.js
+inspect_nirf.js
+read_excel.js
+read_rankings.js
+reapply_slim_logos.js
+remove_double_online.js
+repair_db.js
+repair_db2.js
+update_approvals.js
+update_rankings.js
+update_sort.js
+
+# Data files not needed on server
+*.xlsx
+*.zip
+extracted_rankings/
+nirf_2025_map.json
+uni_approvals.json
+ts_errors.txt
+tsc_errors.txt

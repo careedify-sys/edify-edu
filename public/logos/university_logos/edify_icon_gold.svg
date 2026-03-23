@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Gold square background -->
+  <rect width="64" height="64" rx="12" fill="#D4A843"/>
+  <!-- Magnifying glass circle -->
+  <circle cx="27" cy="26" r="13" fill="none" stroke="#0F1117" stroke-width="3" stroke-linecap="round"/>
+  <!-- Handle -->
+  <line x1="36.2" y1="35.2" x2="46" y2="46" stroke="#0F1117" stroke-width="3" stroke-linecap="round"/>
+  <!-- List lines inside lens -->
+  <line x1="20" y1="22" x2="34" y2="22" stroke="#0F1117" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="20" y1="26" x2="32" y2="26" stroke="#0F1117" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="20" y1="30" x2="34" y2="30" stroke="#0F1117" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

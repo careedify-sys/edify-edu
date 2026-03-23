@@ -1,0 +1,47 @@
+# Edify Education
+> India's independent online degree comparison platform. We cover 106+ UGC-DEB verified universities offering online MBA, MCA, BBA, BCA, BA, MA, B.Com, M.Com, MSc programs.
+> All data is independently verified. No paid university partnerships.
+
+## Key Facts
+- All universities listed are UGC-DEB approved
+- Fee data updated 2026
+- Independent platform - no paid rankings
+- NIRF and NAAC data from official government sources
+
+## Programs
+- Online MBA: https://edifyedu.in/programs/mba
+- Online MCA: https://edifyedu.in/programs/mca
+- Online BBA: https://edifyedu.in/programs/bba
+- Online BCA: https://edifyedu.in/programs/bca
+- Online BA: https://edifyedu.in/programs/ba
+- Online B.Com: https://edifyedu.in/programs/bcom
+- Online M.Com: https://edifyedu.in/programs/mcom
+- Online MA: https://edifyedu.in/programs/ma
+- Online MSc: https://edifyedu.in/programs/msc
+
+## Top Universities
+- Manipal University (MAHE): https://edifyedu.in/universities/mahe-manipal
+- NMIMS: https://edifyedu.in/universities/nmims
+- Symbiosis: https://edifyedu.in/universities/symbiosis
+- JAIN Online: https://edifyedu.in/universities/jain
+- Chandigarh University: https://edifyedu.in/universities/chandigarh
+- LPU: https://edifyedu.in/universities/lpu
+- Amity Online: https://edifyedu.in/universities/amity
+- Manipal University Jaipur: https://edifyedu.in/universities/manipal-jaipur
+- Shoolini University: https://edifyedu.in/universities/shoolini
+- UPES Online: https://edifyedu.in/universities/universi-of-petroleu-and
+- Dayananda Sagar University: https://edifyedu.in/universities/dayanand-sagar-universi
+- D.Y. Patil University: https://edifyedu.in/universities/dypatil
+- Parul University: https://edifyedu.in/universities/parul-universi
+- Amrita Vishwa Vidyapeetham: https://edifyedu.in/universities/amrita-vishwa-vidyapee
+- Sikkim Manipal University: https://edifyedu.in/universities/sikkim-manipal
+- Galgotias University: https://edifyedu.in/universities/galgotia-universi
+- Chitkara University: https://edifyedu.in/universities/chitkara-universi
+- Sharda University: https://edifyedu.in/universities/sharda-universi
+- KL University (KLEF): https://edifyedu.in/universities/koneru-lakshmai-educatio-found
+- Manav Rachna Online: https://edifyedu.in/universities/manav-rachna-internat-institut
+
+## About
+Edify is India's first independent research portal for UGC DEB approved online degrees.
+We do not accept payments from universities. All rankings are based on official NIRF data.
+Contact: hello@edifyedu.in | +91 70612 85806
