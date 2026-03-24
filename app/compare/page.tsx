@@ -4,34 +4,301 @@ import { getSortRank } from '@/lib/data-slim'
 import { useState, useEffect, Suspense, useRef } from 'react'
 import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
-import { 
-  CheckCircle, XCircle, BarChart2, Plus, Minus, 
-  TrendingUp, Briefcase, Building2, Lock, Award, 
-  GraduationCap, Wallet, BookOpen, ChevronRight,
-  Info, ShieldCheck, Zap
+import {
+  CheckCircle, BarChart2, Plus, Minus,
+  TrendingUp, Briefcase, Lock, Award,
+  Wallet, BookOpen, ChevronRight,
+  Info, ShieldCheck, Zap, Search, X
 } from 'lucide-react'
-import { UNIS_SLIM, getSlimById, formatFeeSlim as formatFee } from '@/lib/data-slim'
+import { UNIS_SLIM, formatFeeSlim as formatFee } from '@/lib/data-slim'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import { getUniversityLogo, getMasterSyllabus } from '@/lib/content'
 import type { University, Program } from '@/lib/data'
 import EnquiryModal from '@/components/EnquiryModal'
 import { clsx } from 'clsx'
 
-const ALL_PROGRAMS: Program[] = ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com', 'MA', 'M.Com']
+const PROGRAM: Program = 'MBA'
+
+// Universities that have actual MBA syllabus data in MASTER_SYLLABUS
+const MBA_UNIS_WITH_DATA = [
+  { id: 'amity', name: 'Amity University Online' },
+  { id: 'chandigarh', name: 'Chandigarh University Online' },
+  { id: 'jain', name: 'JAIN Online' },
+  { id: 'lpu', name: 'Lovely Professional University Online' },
+  { id: 'manipal-jaipur', name: 'Manipal University Jaipur (MUJ) Online' },
+  { id: 'nmims', name: 'NMIMS Online' },
+  { id: 'symbiosis', name: 'Symbiosis School for Online and Digital Learning' },
+  { id: 'universi-of-petroleu-and', name: 'UPES Online' },
+  { id: 'shoolini', name: 'Shoolini University Online' },
+  { id: 'bharati-vidyapee-universi', name: 'Bharati Vidyapeeth Online' },
+  { id: 'amrita-vishwa-vidyapee', name: 'Amrita Vishwa Vidyapeetham Online' },
+  { id: 'galgotia-universi', name: 'Galgotias University Online' },
+  { id: 'sharda-universi', name: 'Sharda University Online' },
+  { id: 'mahe-manipal', name: 'Manipal Academy of Higher Education (MAHE) Online' },
+  { id: 'sikkim-manipal', name: 'Sikkim Manipal University Online' },
+  { id: 'kurukshe-universi', name: 'Kurukshetra University Online' },
+  { id: 'uttaranc-universi', name: 'Uttaranchal University Online' },
+  { id: 'vignans-foundati-for-science', name: "Vignan's Foundation for Science & Technology Online" },
+  { id: 'dayanand-sagar-universi', name: 'Dayananda Sagar University Online' },
+  { id: 'dr-dy-patil-vidyapeeth', name: 'Dr. D.Y. Patil Vidyapeeth, Pune Online' },
+  { id: 'noida-internat-universi', name: 'Noida International University Online' },
+  { id: 'dr-mgr-educatio-and', name: 'Dr. MGR Educational and Research Institute Online' },
+  { id: 'jaypee-universi', name: 'Jaypee Institute of Information Technology Online' },
+  { id: 'assam-down-town-universi', name: 'Assam Don Bosco University Online' },
+  { id: 'chitkara-universi', name: 'Chitkara University Online' },
+  { id: 'alliance-universi', name: 'Alliance University Online' },
+  { id: 'arka-jain-universi', name: 'ARKA JAIN University Online' },
+]
 
 const progSlug = (p: Program) => p.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
+
+// ── Standalone Syllabus Comparison Tool ────────────────────────────────────
+function SyllabusComparison() {
+  const [searchA, setSearchA] = useState('')
+  const [searchB, setSearchB] = useState('')
+  const [uniAId, setUniAId] = useState<string | null>(null)
+  const [uniBId, setUniBId] = useState<string | null>(null)
+  const [specA, setSpecA] = useState('')
+  const [specB, setSpecB] = useState('')
+  const [showDropA, setShowDropA] = useState(false)
+  const [showDropB, setShowDropB] = useState(false)
+
+  const suggestionsA = searchA.length >= 1
+    ? MBA_UNIS_WITH_DATA.filter(u => u.name.toLowerCase().includes(searchA.toLowerCase())).slice(0, 8)
+    : MBA_UNIS_WITH_DATA.slice(0, 8)
+
+  const suggestionsB = searchB.length >= 1
+    ? MBA_UNIS_WITH_DATA.filter(u => u.name.toLowerCase().includes(searchB.toLowerCase())).slice(0, 8)
+    : MBA_UNIS_WITH_DATA.slice(0, 8)
+
+  const syllabusA = uniAId ? getMasterSyllabus(uniAId, 'MBA') : null
+  const syllabusB = uniBId ? getMasterSyllabus(uniBId, 'MBA') : null
+
+  function getSpecsWithData(syllabus: ReturnType<typeof getMasterSyllabus>) {
+    if (!syllabus?.specSyllabus) return []
+    return Object.entries(syllabus.specSyllabus)
+      .filter(([, v]) => v.sem3 || v.sem4)
+      .map(([k]) => k)
+  }
+
+  const specsA = getSpecsWithData(syllabusA)
+  const specsB = getSpecsWithData(syllabusB)
+
+  function getSubjects(syllabus: ReturnType<typeof getMasterSyllabus>, spec: string): string[] {
+    if (!spec || !syllabus?.specSyllabus?.[spec]) return []
+    const v = syllabus.specSyllabus[spec]
+    const raw = [v.sem3, v.sem4].filter(Boolean).join(' | ')
+    return raw.split(' | ').map(s => s.trim()).filter(Boolean)
+  }
+
+  const subjectsA = getSubjects(syllabusA, specA)
+  const subjectsB = getSubjects(syllabusB, specB)
+  const setBSet = new Set(subjectsB.map(s => s.toLowerCase()))
+  const setASet = new Set(subjectsA.map(s => s.toLowerCase()))
+
+  function selectUni(which: 'A' | 'B', uni: { id: string; name: string }) {
+    if (which === 'A') {
+      setUniAId(uni.id); setSearchA(uni.name); setSpecA(''); setShowDropA(false)
+    } else {
+      setUniBId(uni.id); setSearchB(uni.name); setSpecB(''); setShowDropB(false)
+    }
+  }
+
+  function clearUni(which: 'A' | 'B') {
+    if (which === 'A') { setUniAId(null); setSearchA(''); setSpecA('') }
+    else { setUniBId(null); setSearchB(''); setSpecB('') }
+  }
+
+  const hasNoSpecData = (syllabus: ReturnType<typeof getMasterSyllabus>) =>
+    syllabus !== null && (!syllabus.specSyllabus || Object.keys(syllabus.specSyllabus).length === 0)
+
+  const commonSem1 = syllabusA?.sem1 || syllabusB?.sem1
+
+  return (
+    <div className="rounded-2xl overflow-hidden border border-amber/30 shadow-lg" style={{ background: 'linear-gradient(135deg, #FFFBEB 0%, #FFF7E6 100%)' }}>
+      {/* Header */}
+      <div className="px-5 sm:px-8 py-5 border-b border-amber/20">
+        <div className="flex items-start gap-3">
+          <span className="text-2xl mt-0.5">📚</span>
+          <div className="flex-1 min-w-0">
+            <h2 className="font-display text-lg sm:text-xl font-bold text-navy leading-tight">Compare Syllabus of Any Two MBA Programs</h2>
+            <p className="text-xs text-ink-3 mt-1">Select a university and specialisation on each side to compare semester-wise subjects</p>
+            <p className="text-[10px] text-amber-text font-semibold mt-1.5 bg-amber-light/60 inline-block px-2 py-0.5 rounded-full border border-amber/20">
+              Currently available for Online MBA programs only · More programs coming soon
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Two-column selectors */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-amber/20">
+        {(['A', 'B'] as const).map((side) => {
+          const isA = side === 'A'
+          const search = isA ? searchA : searchB
+          const setSearch = isA ? setSearchA : setSearchB
+          const uniId = isA ? uniAId : uniBId
+          const showDrop = isA ? showDropA : showDropB
+          const setShowDrop = isA ? setShowDropA : setShowDropB
+          const suggestions = isA ? suggestionsA : suggestionsB
+          const syllabus = isA ? syllabusA : syllabusB
+          const specs = isA ? specsA : specsB
+          const spec = isA ? specA : specB
+          const setSpec = isA ? setSpecA : setSpecB
+          const subjects = isA ? subjectsA : subjectsB
+          const otherSet = isA ? setBSet : setASet
+          const otherSpec = isA ? specB : specA
+          const label = isA ? 'University A' : 'University B'
+
+          return (
+            <div key={side} className="p-4 sm:p-5 flex flex-col gap-3">
+              {/* University label */}
+              <div className="text-[10px] font-black uppercase tracking-widest text-ink-3">{label}</div>
+
+              {/* Search input */}
+              <div className="relative">
+                <div className="flex items-center gap-2 bg-white border border-border rounded-xl px-3 py-2 focus-within:border-amber shadow-sm">
+                  <Search size={14} className="text-ink-3 flex-shrink-0" />
+                  <input
+                    type="text"
+                    value={search}
+                    onChange={e => { setSearch(e.target.value); setShowDrop(true) }}
+                    onFocus={() => setShowDrop(true)}
+                    onBlur={() => setTimeout(() => setShowDrop(false), 200)}
+                    placeholder="Type university name..."
+                    className="flex-1 text-xs font-semibold text-ink bg-transparent outline-none min-w-0"
+                    autoComplete="off"
+                  />
+                  {uniId && (
+                    <button onClick={() => clearUni(side)} className="text-ink-3 hover:text-red transition-colors">
+                      <X size={14} />
+                    </button>
+                  )}
+                </div>
+
+                {/* Dropdown */}
+                {showDrop && suggestions.length > 0 && (
+                  <div className="absolute z-50 top-full left-0 right-0 mt-1 bg-white border border-border rounded-xl shadow-xl overflow-hidden">
+                    {suggestions.map(uni => (
+                      <button
+                        key={uni.id}
+                        onMouseDown={() => selectUni(side, uni)}
+                        className={clsx(
+                          "w-full text-left px-3 py-2.5 text-xs font-semibold hover:bg-amber-light transition-colors border-b border-border/30 last:border-0",
+                          uniId === uni.id ? "bg-amber-light text-amber-text" : "text-ink"
+                        )}
+                      >
+                        {uni.name}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Specialisation dropdown */}
+              {uniId && (
+                <>
+                  {hasNoSpecData(syllabus) ? (
+                    <div className="p-3 rounded-xl bg-gray-50 border border-border text-xs text-ink-3 text-center">
+                      No syllabus data available for this university.<br />
+                      <span className="font-semibold">Contact us for details.</span>
+                    </div>
+                  ) : specs.length === 0 ? (
+                    <div className="p-3 rounded-xl bg-gray-50 border border-border text-xs text-ink-3 text-center">
+                      No specialisation data available yet.
+                    </div>
+                  ) : (
+                    <select
+                      value={spec}
+                      onChange={e => setSpec(e.target.value)}
+                      className="w-full text-xs font-semibold rounded-xl border border-border bg-white px-3 py-2.5 text-ink focus:outline-none focus:border-amber shadow-sm"
+                    >
+                      <option value="">— Select Specialisation —</option>
+                      {specs.map(s => <option key={s} value={s}>{s}</option>)}
+                    </select>
+                  )}
+                </>
+              )}
+
+              {/* Common subjects (sem1) */}
+              {spec && syllabus?.sem1 && (
+                <div>
+                  <div className="text-[9px] font-black uppercase tracking-widest text-ink-3 mb-1.5">Sem 1 — Core Subjects</div>
+                  <div className="flex flex-wrap gap-1">
+                    {syllabus.sem1.split(' | ').map(s => s.trim()).filter(Boolean).map(subj => (
+                      <span key={subj} className="px-2 py-1 rounded-lg text-[10px] font-medium bg-white/80 border border-border/50 text-ink-3">{subj}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Spec subjects (sem3/sem4) */}
+              {spec && subjects.length > 0 && (
+                <div>
+                  <div className="text-[9px] font-black uppercase tracking-widest text-ink-3 mb-1.5">Sem 3–4 Electives — {spec}</div>
+                  <div className="space-y-1">
+                    {subjects.map(subj => {
+                      const inOther = otherSpec && otherSet.has(subj.toLowerCase())
+                      return (
+                        <div
+                          key={subj}
+                          className="px-2.5 py-1.5 rounded-lg text-[11px] font-medium"
+                          style={{
+                            background: !otherSpec ? '#F8FAFC'
+                              : inOther ? 'rgba(34,197,94,0.1)'
+                              : 'rgba(251,191,36,0.12)',
+                            color: !otherSpec ? 'var(--ink-2)'
+                              : inOther ? '#15803D'
+                              : '#92400E',
+                            borderLeft: !otherSpec ? '3px solid #E2E8F0'
+                              : inOther ? '3px solid #22C55E'
+                              : '3px solid #F59E0B',
+                          }}
+                        >
+                          {subj}
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {spec && subjects.length === 0 && (
+                <div className="p-3 rounded-xl bg-gray-50 border border-border text-xs text-ink-3 text-center">
+                  No syllabus data available for this specialisation.<br />
+                  <span className="font-semibold">Contact us for details.</span>
+                </div>
+              )}
+            </div>
+          )
+        })}
+      </div>
+
+      {/* Legend */}
+      {(specA || specB) && (
+        <div className="flex items-center gap-4 px-5 pb-4 pt-1 border-t border-amber/10">
+          <span className="flex items-center gap-1.5 text-[10px] text-ink-3">
+            <span style={{ width: 10, height: 10, borderRadius: 2, background: 'rgba(34,197,94,0.2)', border: '1.5px solid #22C55E', display: 'inline-block' }} />
+            Common subject
+          </span>
+          <span className="flex items-center gap-1.5 text-[10px] text-ink-3">
+            <span style={{ width: 10, height: 10, borderRadius: 2, background: 'rgba(251,191,36,0.2)', border: '1.5px solid #F59E0B', display: 'inline-block' }} />
+            Unique subject
+          </span>
+        </div>
+      )}
+    </div>
+  )
+}
 
 function CompareContent() {
   const searchParams = useSearchParams()
   const [selectedIds, setSelectedIds] = useState<string[]>([])
-  const [program, setProgram] = useState<Program>('MBA')
   const [enquiryOpen, setEnquiryOpen] = useState(false)
   const [enquiryUni, setEnquiryUni] = useState('')
   const [initialized, setInitialized] = useState(false)
-  
+
   const headerRef = useRef<HTMLDivElement>(null)
 
-  // Read ?a= and ?b= params on load, or use defaults
   useEffect(() => {
     if (initialized) return
     const a = searchParams.get('a')
@@ -51,7 +318,7 @@ function CompareContent() {
     return (
       <div className="min-h-screen bg-bg flex items-center justify-center text-ink-3">
         <Zap className="animate-pulse mr-2" size={20} />
-        Loading premium comparison...
+        Loading comparison...
       </div>
     )
   }
@@ -59,7 +326,7 @@ function CompareContent() {
   const universities = selectedIds
     .map(id => getUniversityById(id))
     .filter((u): u is University => u !== undefined)
-  const available = UNIS_SLIM.filter(u => !selectedIds.includes(u.id))
+  const available = UNIS_SLIM.filter(u => !selectedIds.includes(u.id) && u.programs?.includes('MBA'))
 
   function addUni(id: string) {
     if (selectedIds.length >= 3) return
@@ -78,8 +345,8 @@ function CompareContent() {
       bestNirf: sorted[0],
       cheapest: [...universities].sort((a, b) => a.feeMin - b.feeMin)[0],
       bestSalary: universities.reduce((best, u) => {
-        const salary = u.programDetails?.[program]?.avgSalary || ''
-        const bestSalary = best.programDetails?.[program]?.avgSalary || ''
+        const salary = u.programDetails?.[PROGRAM]?.avgSalary || ''
+        const bestSalary = best.programDetails?.[PROGRAM]?.avgSalary || ''
         const parse = (s: string) => parseInt(s.replace(/[^0-9]/g, '').slice(0, 2)) || 0
         return parse(salary) > parse(bestSalary) ? u : best
       }),
@@ -93,8 +360,8 @@ function CompareContent() {
       {universities.length >= 2 && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
           '@context':'https://schema.org','@type':'Article',
-          headline:`${universities[0]?.name} vs ${universities[1]?.name} Online Programs — Honest Comparison 2026`,
-          description:`Detailed comparison of ${universities[0]?.name} and ${universities[1]?.name} — fees, NIRF rank, NAAC grade, programs and which is better for your profile.`,
+          headline:`${universities[0]?.name} vs ${universities[1]?.name} Online MBA — Comparison 2026`,
+          description:`Detailed comparison of ${universities[0]?.name} and ${universities[1]?.name} Online MBA — fees, NIRF rank, NAAC grade, specialisations and syllabus.`,
           url:`https://edifyedu.in/compare?a=${universities[0]?.id}&b=${universities[1]?.id}`,
           author:{'@type':'Organization',name:'Edify',url:'https://edifyedu.in'},
           publisher:{'@type':'Organization',name:'Edify',logo:{'@type':'ImageObject',url:'https://edifyedu.in/logo.png'}},
@@ -109,42 +376,28 @@ function CompareContent() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
               <div className="flex items-center gap-2 mb-3">
-                <span className="label-sm text-amber px-2 py-0.5 bg-amber-light rounded-full">Compare & Save</span>
+                <span className="label-sm text-amber px-2 py-0.5 bg-amber-light rounded-full">Compare MBA Programs</span>
                 <span className="text-[11px] text-ink-3 font-medium">Updated for July 2026 Session</span>
               </div>
               <h1 className="font-display text-3xl sm:text-4xl text-navy font-bold mb-3 tracking-tight">
-                Compare {universities.length > 0 ? `${universities.length} Universities` : 'Online Degrees'}
+                Compare Online MBA Universities
               </h1>
               <p className="text-sm text-ink-2 max-w-xl">
-                Side-by-side analysis of UGC DEB approved universities. We compare what matters: 
-                <span className="font-semibold text-navy"> Real Fees, NIRF Rank, and Career ROI.</span>
+                Side-by-side analysis of UGC DEB approved MBA programs. Compare real fees, NIRF rank, specialisations and semester-wise syllabus.
               </p>
             </div>
 
-            <div className="bg-bg/50 p-1.5 rounded-xl border border-border flex items-center gap-1">
-              <span className="text-[11px] font-bold text-ink-3 px-3 uppercase tracking-wider">Show for:</span>
-              <div className="flex bg-white rounded-lg shadow-sm border border-border/40 overflow-hidden">
-                {ALL_PROGRAMS.slice(0, 4).map(p => (
-                  <button 
-                    key={p} 
-                    onClick={() => setProgram(p)}
-                    className={clsx(
-                      "px-4 py-2 text-xs font-bold transition-all",
-                      program === p ? "bg-navy text-white" : "text-ink-2 hover:bg-bg"
-                    )}
-                  >
-                    {p}
-                  </button>
-                ))}
-              </div>
+            <div className="flex items-center gap-2 px-4 py-2 bg-navy/5 rounded-xl border border-navy/10">
+              <span className="text-[11px] font-bold text-ink-3">Program:</span>
+              <span className="px-3 py-1.5 bg-navy text-white text-xs font-bold rounded-lg">Online MBA</span>
             </div>
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-2">
             <span className="text-xs font-bold text-ink-3 mr-1">Add to compare:</span>
             {available.slice(0, 6).map(u => (
-              <button 
-                key={u.id} 
+              <button
+                key={u.id}
                 onClick={() => addUni(u.id)}
                 disabled={selectedIds.length >= 3}
                 className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-border hover:border-amber hover:text-amber transition-all text-xs font-semibold shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
@@ -157,6 +410,11 @@ function CompareContent() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        {/* ── Syllabus Comparator — ALWAYS VISIBLE AT TOP ─────── */}
+        <div className="mt-8 mb-8">
+          <SyllabusComparison />
+        </div>
+
         {universities.length === 0 ? (
           <div className="py-24 text-center">
             <div className="w-20 h-20 bg-bg rounded-full flex items-center justify-center mx-auto mb-6">
@@ -167,7 +425,7 @@ function CompareContent() {
             <Link href="/universities" className="btn-primary rounded-xl">Browse All Universities</Link>
           </div>
         ) : (
-          <div className="mt-8">
+          <div>
             {/* Verdict Card */}
             {verdict && (
               <div className="mb-8 p-6 bg-white border border-border rounded-2xl shadow-sm relative overflow-hidden group">
@@ -178,10 +436,10 @@ function CompareContent() {
                   </div>
                   <div>
                     <h3 className="font-display text-lg font-bold text-navy">The Edify Verdict</h3>
-                    <p className="text-xs text-ink-3">Based on current rankings and placement data for {program}</p>
+                    <p className="text-xs text-ink-3">Based on current rankings and placement data for Online MBA</p>
                   </div>
                 </div>
-                
+
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 relative z-10">
                   <div className="p-4 rounded-xl bg-bg border border-border-light hover:border-amber-glow transition-colors">
                     <div className="flex items-center gap-2 mb-2 text-amber font-bold text-[10px] uppercase tracking-widest">
@@ -202,37 +460,25 @@ function CompareContent() {
                       <Briefcase size={10} /> Career Reach
                     </div>
                     <div className="text-navy font-bold text-sm leading-tight mb-1">{verdict.bestSalary.name}</div>
-                    <div className="text-xs text-ink-3 font-semibold">Top Hiring Index for {program}</div>
+                    <div className="text-xs text-ink-3 font-semibold">Top Hiring Index for MBA</div>
                   </div>
                 </div>
               </div>
             )}
 
-            {/* ── Syllabus Comparator — TOP ─────────────────────── */}
-            <div className="mb-8 rounded-2xl overflow-hidden border border-amber/30" style={{ background: 'linear-gradient(135deg, #FFFBEB 0%, #FFF7E6 100%)' }}>
-              <div className="px-6 py-4 border-b border-amber/20 flex items-center gap-3">
-                <span className="text-xl">📚</span>
-                <div>
-                  <div className="font-bold text-navy text-base">Compare Syllabus of Any Two Universities</div>
-                  <div className="text-xs text-ink-3 mt-0.5">Select a specialisation for each university to compare Sem 3–4 subjects side by side</div>
-                </div>
-              </div>
-              <SyllabusComparison universities={universities} program={program} />
-            </div>
-
             {/* Comparison Grid */}
             <div className="bg-white border border-border rounded-2xl shadow-xl overflow-hidden">
-              
+
               {/* Sticky Table Header */}
               <div className="sticky top-0 z-[40] bg-white border-b border-border/80 backdrop-blur-md shadow-sm">
                 <div className="grid grid-cols-[180px_repeat(auto-fit,minmax(200px,1fr))] items-stretch">
                   <div className="p-4 flex flex-col justify-center border-r border-border/50 bg-bg/20">
                     <span className="label-sm text-ink-3">Comparing:</span>
-                    <span className="text-[10px] font-bold text-amber">{universities.length} Universities</span>
+                    <span className="text-[10px] font-bold text-amber">{universities.length} MBA Programs</span>
                   </div>
                   {universities.map(u => (
                     <div key={u.id} className="p-4 border-r border-border/50 flex flex-col items-center text-center relative group min-w-[200px]">
-                      <button 
+                      <button
                         onClick={() => removeUni(u.id)}
                         className="absolute right-2 top-2 p-1.5 rounded-full bg-bg text-ink-3 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-red-50 hover:text-red transition-all"
                       >
@@ -240,9 +486,9 @@ function CompareContent() {
                       </button>
                       <div className="h-12 flex items-center justify-center mb-3">
                         {getUniversityLogo(u.id) ? (
-                          <img 
-                            src={getUniversityLogo(u.id)!} 
-                            alt={u.name} 
+                          <img
+                            src={getUniversityLogo(u.id)!}
+                            alt={u.name}
                             style={{ maxHeight: '100%', maxWidth: '140px', objectFit: 'contain' }}
                           />
                         ) : (
@@ -263,10 +509,10 @@ function CompareContent() {
                 <Info size={12} className="text-white/40 cursor-help" />
               </div>
 
-              <ComparisonRow 
-                label="NIRF Ranking" 
+              <ComparisonRow
+                label="NIRF Ranking"
                 icon={<BarChart2 size={12} className="text-amber" />}
-                unis={universities} 
+                unis={universities}
                 fn={u => (
                   <div className="flex flex-col items-center">
                     <span className="text-lg font-black text-navy italic">#{u.nirf || '—'}</span>
@@ -274,24 +520,24 @@ function CompareContent() {
                   </div>
                 )}
               />
-              <ComparisonRow 
-                label="NAAC Grade" 
+              <ComparisonRow
+                label="NAAC Grade"
                 icon={<ShieldCheck size={12} className="text-sage" />}
-                unis={universities} 
+                unis={universities}
                 fn={u => (
                   <div className={clsx(
                     "px-3 py-1 rounded-full font-black text-sm",
-                    u.naac.includes('A++') ? "bg-sage-light text-sage" : 
+                    u.naac.includes('A++') ? "bg-sage-light text-sage" :
                     u.naac.includes('A+') ? "bg-amber-light text-amber-text" : "bg-bg text-ink-2"
                   )}>
                     {u.naac || '—'}
                   </div>
                 )}
               />
-              <ComparisonRow 
-                label="Approvals" 
+              <ComparisonRow
+                label="Approvals"
                 icon={<CheckCircle size={12} className="text-blue" />}
-                unis={universities} 
+                unis={universities}
                 fn={u => (
                   <div className="flex flex-wrap justify-center gap-1.5">
                     {['UGC DEB', 'AICTE', 'WES', 'QS'].map(ap => {
@@ -316,9 +562,9 @@ function CompareContent() {
                 </span>
               </div>
 
-              <ComparisonRow 
-                label="Course Fees" 
-                unis={universities} 
+              <ComparisonRow
+                label="Course Fees"
+                unis={universities}
                 fn={u => (
                   <div className="flex flex-col items-center">
                     <span className="text-base font-black text-navy">{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</span>
@@ -326,9 +572,9 @@ function CompareContent() {
                   </div>
                 )}
               />
-              <ComparisonRow 
-                label="EMI Starting" 
-                unis={universities} 
+              <ComparisonRow
+                label="EMI Starting"
+                unis={universities}
                 fn={u => (
                   <div className="flex items-center gap-1.5 px-3 py-1 bg-amber-light rounded-lg border border-amber/20">
                     <span className="text-xs font-black text-amber-text italic">₹{u.emiFrom.toLocaleString()}/mo</span>
@@ -337,8 +583,8 @@ function CompareContent() {
                 )}
               />
 
-              {/* 🔒 SCHOLARSHIP SECTION (The target lead gen) */}
-              <div 
+              {/* Scholarship Row */}
+              <div
                 onClick={() => { setEnquiryUni('Scholarship Enquiry'); setEnquiryOpen(true) }}
                 className="cursor-pointer group relative overflow-hidden bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500 transition-all hover:brightness-110"
               >
@@ -349,7 +595,7 @@ function CompareContent() {
                   </div>
                   {universities.map(u => (
                     <div key={u.id} className="p-4 border-l border-white/10 flex flex-col items-center gap-1 justify-center">
-                      <div className="text-xs font-bold text-white/90 text-center leading-snug mb-1">Scholarship that can actually save you money — up to ₹50,000 off</div>
+                      <div className="text-xs font-bold text-white/90 text-center leading-snug mb-1">Save up to ₹50,000 — check eligibility now</div>
                       <div className="flex items-center gap-1.5 px-3 py-1 bg-white/20 rounded-full backdrop-blur-md border border-white/30 text-[10px] font-bold text-white group-hover:bg-white group-hover:text-orange-600 transition-all uppercase tracking-tighter">
                         <Zap size={10} fill="currentColor" /> Check Eligibility
                       </div>
@@ -365,30 +611,30 @@ function CompareContent() {
                 </span>
               </div>
 
-              <ComparisonRow 
-                label="Avg Salary" 
-                unis={universities} 
+              <ComparisonRow
+                label="Avg Salary"
+                unis={universities}
                 fn={u => (
                   <div className="flex flex-col items-center gap-1">
-                    <span className="text-sm font-black text-sage uppercase tracking-tight italic">{u.programDetails[program]?.avgSalary || '₹5L - ₹12L'}</span>
+                    <span className="text-sm font-black text-sage uppercase tracking-tight italic">{u.programDetails[PROGRAM]?.avgSalary || '₹5L - ₹12L'}</span>
                     <TrendingUp size={14} className="text-sage/40" />
                   </div>
                 )}
               />
-              <ComparisonRow 
-                label="Top Hiring Partners" 
-                unis={universities} 
+              <ComparisonRow
+                label="Top Hiring Partners"
+                unis={universities}
                 fn={u => (
                   <div className="flex flex-wrap justify-center gap-1">
-                    {u.programDetails[program]?.topCompanies.slice(0, 4).map(c => (
+                    {u.programDetails[PROGRAM]?.topCompanies.slice(0, 4).map(c => (
                       <span key={c} className="px-2 py-0.5 rounded bg-bg border border-border/40 text-[9px] font-bold text-ink-3">{c}</span>
                     ))}
                   </div>
                 )}
               />
-              <ComparisonRow 
-                label="Placement Support" 
-                unis={universities} 
+              <ComparisonRow
+                label="Placement Support"
+                unis={universities}
                 fn={() => (
                   <div className="flex items-center gap-2 text-xs font-bold text-navy">
                     <CheckCircle size={14} className="text-sage" />
@@ -404,37 +650,21 @@ function CompareContent() {
                 </span>
               </div>
 
-              <ComparisonRow 
-                label="Specialisations" 
-                unis={universities} 
+              <ComparisonRow
+                label="Specialisations"
+                unis={universities}
                 fn={u => (
                   <div className="flex flex-col items-center gap-2">
-                    <span className="text-lg font-black text-amber italic">{u.programDetails[program]?.specs.length || 0}</span>
+                    <span className="text-lg font-black text-amber italic">{u.programDetails[PROGRAM]?.specs.length || 0}</span>
                     <div className="flex flex-wrap justify-center gap-1 max-w-[160px]">
-                      {u.programDetails[program]?.specs.slice(0, 3).map(s => (
+                      {u.programDetails[PROGRAM]?.specs.slice(0, 3).map(s => (
                         <span key={s} className="text-[9px] font-bold text-ink-3 text-center leading-tight line-clamp-1">{s}</span>
                       ))}
-                      {(u.programDetails[program]?.specs.length || 0) > 3 && <span className="text-[9px] text-amber font-bold">+{u.programDetails[program]!.specs.length - 3} more</span>}
+                      {(u.programDetails[PROGRAM]?.specs.length || 0) > 3 && <span className="text-[9px] text-amber font-bold">+{u.programDetails[PROGRAM]!.specs.length - 3} more</span>}
                     </div>
                   </div>
                 )}
               />
-              
-              <ComparisonRow
-                label="Syllabus Quality"
-                unis={universities}
-                fn={() => (
-                  <div className="flex flex-col items-center gap-1">
-                    <span className="text-[11px] font-bold text-navy uppercase text-center">Industry Focused</span>
-                    <span className="text-[9px] text-ink-3">Live Classes + Recordings</span>
-                  </div>
-                )}
-              />
-
-              {/* SYLLABUS COMPARISON */}
-              {universities.length >= 2 && (
-                <SyllabusComparison universities={universities} program={program} />
-              )}
 
               {/* ACTION BUTTON ROW */}
               <div className="grid grid-cols-[180px_repeat(auto-fit,minmax(200px,1fr))] items-stretch bg-bg/40">
@@ -443,14 +673,14 @@ function CompareContent() {
                 </div>
                 {universities.map(u => (
                   <div key={u.id} className="p-5 border-l border-border/50 shadow-inner flex flex-col gap-3">
-                    <button 
+                    <button
                       onClick={() => { setEnquiryUni(u.name); setEnquiryOpen(true) }}
                       className="w-full btn-primary py-3 rounded-xl shadow-lg ring-4 ring-amber-light/50 font-black text-xs uppercase"
                     >
                       Enquire Now
                     </button>
-                    <Link 
-                      href={`/universities/${u.id}/${progSlug(program)}`}
+                    <Link
+                      href={`/universities/${u.id}/${progSlug(PROGRAM)}`}
                       className="text-[10px] font-black text-center text-amber hover:text-amber-bright uppercase tracking-tighter"
                     >
                       View Detailed Analysis →
@@ -480,7 +710,7 @@ function CompareContent() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="p-8 bg-white border border-border rounded-3xl relative">
                 <h3 className="font-display text-xl font-bold text-navy mb-4">Frequently Compared</h3>
                 <div className="space-y-4">
@@ -502,144 +732,20 @@ function CompareContent() {
         )}
       </div>
 
-      <EnquiryModal 
-        isOpen={enquiryOpen} 
-        onClose={() => setEnquiryOpen(false)} 
-        universityName={enquiryUni} 
+      <EnquiryModal
+        isOpen={enquiryOpen}
+        onClose={() => setEnquiryOpen(false)}
+        universityName={enquiryUni}
       />
     </div>
   )
 }
 
-// ── Per-spec subject list (Sem 3 & 4 electives by specialisation) ──
-const SPEC_SUBJECTS: Record<string, string[]> = {
-  'Finance': ['Portfolio Management', 'Corporate Finance', 'Financial Derivatives', 'Investment Analysis', 'Risk Management', 'Taxation & GST', 'Mergers & Acquisitions', 'Treasury Management'],
-  'Finance & Banking': ['Portfolio Management', 'Corporate Finance', 'Financial Derivatives', 'Investment Analysis', 'Risk Management', 'Taxation & GST', 'Mergers & Acquisitions', 'Treasury Management'],
-  'Marketing': ['Consumer Behaviour', 'Digital Marketing', 'Brand Management', 'Sales & Distribution', 'Advertising & Communication', 'Marketing Research', 'Retail Management', 'CRM'],
-  'Digital Marketing': ['SEO & SEM', 'Social Media Marketing', 'Content Strategy', 'Email Marketing', 'Google Analytics', 'Influencer Marketing', 'E-Commerce Strategy', 'Performance Marketing'],
-  'Human Resource Management': ['Talent Acquisition', 'Compensation & Benefits', 'HR Analytics', 'Labour Laws', 'Organisational Development', 'Performance Management', 'Learning & Development', 'Employee Relations'],
-  'Operations Management': ['Supply Chain Management', 'Lean Six Sigma', 'Quality Management', 'Project Management', 'Production Planning', 'Inventory Control', 'Logistics Management', 'ERP Systems'],
-  'Information Technology': ['Cloud Architecture', 'Data Structures', 'Database Systems', 'Software Engineering', 'Network Security', 'Web Development', 'AI Fundamentals', 'DevOps'],
-  'Data Science': ['Machine Learning', 'Statistical Analysis', 'Python for Data Science', 'Big Data Analytics', 'Data Visualisation', 'Deep Learning', 'NLP', 'Model Deployment'],
-  'Business Analytics': ['Predictive Modelling', 'Data Mining', 'Statistical Tools', 'R & Python', 'Dashboard Design', 'Business Intelligence', 'Forecasting', 'Decision Analytics'],
-  'International Business': ['Global Trade & Policy', 'Export-Import Management', 'Cross-cultural Management', 'Foreign Exchange Markets', 'International Marketing', 'Trade Finance', 'Global Supply Chain', 'WTO & Regulations'],
-  'Entrepreneurship': ['Startup Ecosystems', 'Business Plan Development', 'Venture Capital', 'Design Thinking', 'Growth Hacking', 'Lean Startup', 'Intellectual Property', 'Social Entrepreneurship'],
-  'General Management': ['Strategic Management', 'Leadership & Team Building', 'Organisational Behaviour', 'Business Ethics', 'Change Management', 'Corporate Governance', 'Negotiation Skills', 'Decision Making'],
-  'Healthcare Management': ['Hospital Administration', 'Healthcare Finance', 'Medical Tourism', 'Health Policy', 'Pharmaceutical Management', 'Clinical Operations', 'Patient Experience', 'Healthcare Analytics'],
-  'Logistics & Supply Chain Management': ['Warehouse Management', 'Transportation Planning', 'Global Logistics', 'Demand Forecasting', 'Cold Chain Management', 'Inventory Optimisation', 'Procurement Strategy', 'Port & Customs'],
-  'Artificial Intelligence & Machine Learning': ['Deep Learning', 'Computer Vision', 'NLP', 'Reinforcement Learning', 'AI Ethics', 'Model Deployment', 'Neural Networks', 'Generative AI'],
-}
-
-function getSpecSubjects(spec: string): string[] {
-  return SPEC_SUBJECTS[spec] || SPEC_SUBJECTS['General Management'] || []
-}
-
-// ── Syllabus Comparison Component ─────────────────────────────
-function SyllabusComparison({ universities, program }: { universities: University[]; program: Program }) {
-  // Per-university selected spec
-  const [selectedSpecs, setSelectedSpecs] = useState<Record<string, string>>({})
-
-  if (universities.length < 2) return null
-
-  // Get available specs for each university (first 2 universities)
-  const uniA = universities[0]
-  const uniB = universities[1]
-  const specsA = uniA.programDetails[program]?.specs || []
-  const specsB = uniB.programDetails[program]?.specs || []
-
-  const specA = selectedSpecs[uniA.id] || ''
-  const specB = selectedSpecs[uniB.id] || ''
-
-  const subjectsA = specA ? getSpecSubjects(specA) : []
-  const subjectsB = specB ? getSpecSubjects(specB) : []
-
-  // Determine highlight colour per subject
-  function getSubjectMeta(subject: string, otherList: string[]) {
-    if (!otherList.length) return 'neutral'
-    return otherList.includes(subject) ? 'match' : 'diff'
-  }
-
-  return (
-    <div className="border-b border-border/50">
-      {/* Header row */}
-      <div className="bg-bg p-3 px-5 flex items-center gap-2 border-t border-border/50">
-        <span className="text-[10px] font-black text-navy-light uppercase tracking-[0.2em] flex items-center gap-2">
-          <BookOpen size={14} /> Compare Specialisation Curriculum
-        </span>
-      </div>
-
-      {/* Two-column dropdowns */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 border-t border-border/50">
-        {[{ u: uniA, specs: specsA }, { u: uniB, specs: specsB }].map(({ u, specs }, i) => (
-          <div key={u.id} className={`p-4 ${i === 1 ? 'border-t sm:border-t-0 sm:border-l border-border/50' : ''}`}>
-            <div className="text-[10px] font-black uppercase tracking-wider text-ink-3 mb-2">{u.abbr} — Select Specialisation</div>
-            <select
-              value={selectedSpecs[u.id] || ''}
-              onChange={e => setSelectedSpecs(prev => ({ ...prev, [u.id]: e.target.value }))}
-              className="w-full text-xs font-semibold rounded-lg border border-border bg-white px-3 py-2 text-ink focus:outline-none focus:border-amber"
-              style={{ appearance: 'auto' }}
-            >
-              <option value="">— Pick a specialisation —</option>
-              {specs.map(s => <option key={s} value={s}>{s}</option>)}
-            </select>
-
-            {selectedSpecs[u.id] && (
-              <div className="mt-3">
-                <div className="text-[9px] font-bold uppercase tracking-widest text-ink-3 mb-2">Sem 3–4 Subjects</div>
-                <div className="space-y-1">
-                  {getSpecSubjects(selectedSpecs[u.id]).map(subj => {
-                    const otherSpec = i === 0 ? (selectedSpecs[uniB.id] || '') : (selectedSpecs[uniA.id] || '')
-                    const otherSubjects = otherSpec ? getSpecSubjects(otherSpec) : []
-                    const meta = getSubjectMeta(subj, otherSubjects)
-                    return (
-                      <div
-                        key={subj}
-                        className="px-2.5 py-1.5 rounded-lg text-[11px] font-medium"
-                        style={{
-                          background: !otherSpec ? '#F8FAFC'
-                            : meta === 'match' ? 'rgba(34,197,94,0.1)'
-                            : 'rgba(251,191,36,0.12)',
-                          color: !otherSpec ? 'var(--ink-2)'
-                            : meta === 'match' ? '#15803D'
-                            : '#92400E',
-                          borderLeft: !otherSpec ? '3px solid #E2E8F0'
-                            : meta === 'match' ? '3px solid #22C55E'
-                            : '3px solid #F59E0B',
-                        }}
-                      >
-                        {subj}
-                      </div>
-                    )
-                  })}
-                </div>
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-
-      {/* Legend */}
-      {(specA || specB) && (
-        <div className="flex items-center gap-4 px-4 pb-3 pt-1">
-          <span className="flex items-center gap-1.5 text-[10px] text-ink-3">
-            <span style={{ width: 10, height: 10, borderRadius: 2, background: 'rgba(34,197,94,0.2)', border: '1.5px solid #22C55E', display: 'inline-block' }} />
-            Common subject
-          </span>
-          <span className="flex items-center gap-1.5 text-[10px] text-ink-3">
-            <span style={{ width: 10, height: 10, borderRadius: 2, background: 'rgba(251,191,36,0.2)', border: '1.5px solid #F59E0B', display: 'inline-block' }} />
-            Different subject
-          </span>
-        </div>
-      )}
-    </div>
-  )
-}
-
 function ComparisonRow({ label, unis, fn, icon = null }: {
-  label: string, 
-  unis: University[], 
+  label: string,
+  unis: University[],
   fn: (u: University) => React.ReactNode,
-  icon?: React.ReactNode 
+  icon?: React.ReactNode
 }) {
   return (
     <div className="grid grid-cols-[180px_repeat(auto-fit,minmax(200px,1fr))] items-stretch border-b border-border/50 group hover:bg-bg/20 transition-colors">
