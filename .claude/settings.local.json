@@ -45,7 +45,16 @@
       "Bash(grep -n \"redirect\\\\|notFound\\\\|await params\\\\|params instanceof\" app/universities/[id]/[program]/page.tsx)",
       "Bash(grep -n \"redirect\\\\|notFound\" app/universities/[id]/[program]/page.tsx)",
       "Bash(taskkill //F //IM node.exe)",
-      "Bash(grep -r \"GA4\\\\|gtag\\\\|G-QG\\\\|NEXT_PUBLIC_GA4\" /c/Users/91706/Downloads/edify-v16-final-with-cms/edify-next/app/layout.tsx /c/Users/91706/Downloads/edify-v16-final-with-cms/edify-next/app/ --include=*.tsx -l)"
+      "Bash(grep -r \"GA4\\\\|gtag\\\\|G-QG\\\\|NEXT_PUBLIC_GA4\" /c/Users/91706/Downloads/edify-v16-final-with-cms/edify-next/app/layout.tsx /c/Users/91706/Downloads/edify-v16-final-with-cms/edify-next/app/ --include=*.tsx -l)",
+      "Bash(find /c/Users/91706/Downloads/edify-v16-final-with-cms/edify-next -type f -name *compare*)",
+      "Bash(tasklist)",
+      "Bash(taskkill //PID 22316 //F)",
+      "Bash(taskkill //PID 6460 //F)",
+      "Bash(taskkill //PID 30468 //F)",
+      "Bash(taskkill //PID 21956 //F)",
+      "Bash(taskkill //PID 22984 //F)",
+      "Bash(taskkill //PID 27476 //F)",
+      "Bash(cd:*)"
     ]
   }
 }
