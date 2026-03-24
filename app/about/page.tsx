@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Shield, Award, Users, Phone, Mail, CheckCircle } from 'lucide-react'
+import { Shield, Award, Users, Phone, Mail, CheckCircle, XCircle, Database, BarChart2 } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'About Edify — India\'s Independent Online Education Guide',
@@ -91,15 +91,89 @@ export default function AboutPage() {
           ))}
         </div>
 
+        {/* Trust & Independence */}
+        <div className="card p-8 mb-8 border-l-4 border-amber">
+          <div className="flex items-center gap-3 mb-5">
+            <div className="w-10 h-10 rounded-full bg-amber/10 flex items-center justify-center">
+              <Shield className="w-5 h-5 text-amber" />
+            </div>
+            <h2 className="text-2xl font-bold text-navy">Trust &amp; Independence</h2>
+          </div>
+          <p className="text-ink-2 leading-relaxed mb-4">
+            This website is an independent, free, informational resource for students researching online MBA and other degrees in India. <strong className="text-navy">We do not earn referral fees, commissions, or payments from any university.</strong> No university pays to appear on this site, rank higher, or be featured anywhere.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <div>
+              <h3 className="font-bold text-navy mb-3 flex items-center gap-2"><CheckCircle className="w-4 h-4 text-sage" /> What This Website Is</h3>
+              <ul className="space-y-1.5 text-sm text-ink-2">
+                {[
+                  'A discovery platform for UGC-DEB approved online universities',
+                  'A comparison resource by NIRF rank, NAAC grade, fees and programs',
+                  'An independent educational information resource',
+                  'Neutral and impartial with no commercial bias',
+                  'Government-data-backed with transparent sourcing',
+                  'India-specific online higher education focus',
+                  'Student-first approach',
+                ].map(item => (
+                  <li key={item} className="flex items-start gap-2">
+                    <CheckCircle className="w-3.5 h-3.5 text-sage shrink-0 mt-0.5" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold text-navy mb-3 flex items-center gap-2"><XCircle className="w-4 h-4 text-red-400" /> What This Website Is NOT</h3>
+              <ul className="space-y-1.5 text-sm text-ink-2">
+                {[
+                  'Not an enrollment portal',
+                  'Not affiliated with any university',
+                  'Not earning money from student enrollments',
+                  'Not the final authority on fees — always verify on the official university website',
+                ].map(item => (
+                  <li key={item} className="flex items-start gap-2">
+                    <XCircle className="w-3.5 h-3.5 text-red-400 shrink-0 mt-0.5" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Rankings Policy */}
+        <div className="card p-8 mb-8">
+          <div className="flex items-center gap-3 mb-5">
+            <div className="w-10 h-10 rounded-full bg-navy/10 flex items-center justify-center">
+              <BarChart2 className="w-5 h-5 text-navy" />
+            </div>
+            <h2 className="text-2xl font-bold text-navy">Rankings Policy</h2>
+          </div>
+          <p className="text-ink-2 leading-relaxed mb-3">
+            All rankings on this site are based <strong className="text-navy">exclusively on NIRF rankings</strong> published by the Ministry of Education, India (nirfindia.org) and <strong className="text-navy">NAAC grades</strong> published by the National Assessment and Accreditation Council (naac.gov.in).
+          </p>
+          <div className="flex flex-wrap gap-3 mt-4">
+            {['Zero paid rankings', 'Zero sponsored placements', 'Zero commission-based ordering'].map(p => (
+              <span key={p} className="px-3 py-1.5 rounded-full bg-sage/10 text-sage text-xs font-bold border border-sage/20">{p}</span>
+            ))}
+          </div>
+        </div>
+
         {/* Data Sources */}
         <div className="card p-8 mb-8">
-          <h2 className="text-2xl font-bold text-navy mb-4">Our Data Sources</h2>
+          <div className="flex items-center gap-3 mb-5">
+            <div className="w-10 h-10 rounded-full bg-blue/10 flex items-center justify-center">
+              <Database className="w-5 h-5 text-blue" />
+            </div>
+            <h2 className="text-2xl font-bold text-navy">Data Sources</h2>
+          </div>
+          <p className="text-sm text-ink-2 mb-4">All university data on this site — fees, programs, specialisations — is sourced from:</p>
           <ul className="space-y-2 text-ink-2">
             {[
-              'UGC DEB (Distance Education Bureau) — approved university list',
-              'NAAC (National Assessment and Accreditation Council) — accreditation grades',
-              'NIRF (National Institutional Ranking Framework) — annual rankings',
-              'University official websites — fee structures and program details',
+              'Official university websites — fee structures and program details',
+              'NIRF rankings — Ministry of Education, India (nirfindia.org)',
+              'NAAC grades — National Assessment and Accreditation Council (naac.gov.in)',
+              'UGC Distance Education Bureau approved university list (ugc.ac.in)',
               'AICTE approvals — for technical programs',
             ].map(src => (
               <li key={src} className="flex items-start gap-2">
@@ -108,8 +182,18 @@ export default function AboutPage() {
               </li>
             ))}
           </ul>
-          <p className="text-xs text-ink-3 mt-4">
-            * Always verify current fees and admission details directly with the university before enrolling.
+          <div className="mt-5 p-4 rounded-xl bg-amber/5 border border-amber/20">
+            <p className="text-xs text-ink-2 leading-relaxed">
+              <strong className="text-amber-text">Fee Data Note:</strong> Fee data shown on this site is sourced from official university fee structures and is the most accurate publicly available information at time of publishing. Fees can change each academic year. <strong>Students must verify current fees directly on the official university website before enrolling.</strong> Last updated: March 2026.
+            </p>
+          </div>
+        </div>
+
+        {/* University Verification */}
+        <div className="card p-8 mb-8">
+          <h2 className="text-2xl font-bold text-navy mb-4">University Verification</h2>
+          <p className="text-ink-2 leading-relaxed">
+            Every university listed on this site is verified against the <strong className="text-navy">official UGC-DEB approved institutions list</strong>. No unrecognised, fake, or unapproved universities are listed.
           </p>
         </div>
 
