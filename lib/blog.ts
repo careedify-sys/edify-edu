@@ -164,4 +164,4 @@ export const BLOG_POSTS: BlogPost[] = [
   }
 ]
 
-export const BLOG_CATEGORIES: string[] = [...new Set(BLOG_POSTS.map(p => p.category).filter(Boolean))]
+export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))
