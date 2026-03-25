@@ -288,6 +288,7 @@ export function getPublishedPosts() {
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
 }
 export function getPostBySlug(slug: string) { return BLOG_POSTS.find(p => p.slug === slug) || null }
+export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
 ${postBlocks.join(',\n')}
