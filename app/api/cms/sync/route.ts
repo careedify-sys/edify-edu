@@ -222,8 +222,8 @@ export function formatFee(n: number): string {
 
 export function getUniversityById(id: string) { return UNIVERSITIES.find(u => u.id === id) }
 export function getUniversitiesByProgram(p: string) { return UNIVERSITIES.filter(u => u.programs.includes(p as Program)) }
-export function getAllPrograms(): Program[] { return [...new Set(UNIVERSITIES.flatMap(u => u.programs))] }
-export function getAllSpecs(prog: string): string[] { return [...new Set(UNIVERSITIES.flatMap(u => u.programDetails[prog as Program]?.specs ?? []))] }
+export function getAllPrograms(): Program[] { return Array.from(new Set(UNIVERSITIES.flatMap(u => u.programs))) }
+export function getAllSpecs(prog: string): string[] { return Array.from(new Set(UNIVERSITIES.flatMap(u => u.programDetails[prog as Program]?.specs ?? []))) }
 export function getUniversitiesBySpec(prog: string, spec: string) { return UNIVERSITIES.filter(u => u.programDetails[prog as Program]?.specs?.includes(spec)) }
 export function getPrograms(uid: string) { return UNIVERSITIES.find(u => u.id === uid)?.programs ?? [] }
 export function getFees(uid: string, prog: Program) { const pd = UNIVERSITIES.find(u => u.id === uid)?.programDetails[prog]; return pd?.fees ?? '' }
