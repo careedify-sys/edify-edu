@@ -4,7 +4,9 @@
 
 import Link from 'next/link'
 
-const GUIDES: { id: string; icon: string; tag: string; title: string; desc: string; readTime: string; content: string }[] = []
+const GUIDES: { id: string; icon: string; tag: string; title: string; desc: string; readTime: string; content: string }[] = [
+
+]
 
 export default function GuidesPage() {
   return (
