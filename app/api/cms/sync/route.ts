@@ -319,7 +319,7 @@ function generateGuidesPage(guides: Record<string, any>[]): string {
 
 import Link from 'next/link'
 
-export const GUIDES = [
+const GUIDES = [
 ${items.join(',\n')}
 ]
 
