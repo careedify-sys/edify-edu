@@ -11,9 +11,14 @@ import {
 
 // ── Auth ─────────────────────────────────────────────────────────────────────
 function checkAuth(req: NextRequest): boolean {
+  // Check session cookie (httpOnly — set by admin-auth route)
+  const sessionToken = process.env.ADMIN_SESSION_TOKEN
+  if (sessionToken && req.cookies.get('edify_admin_session')?.value === sessionToken) {
+    return true
+  }
+  // Fallback: check X-Admin-Token header
   const secret = process.env.ADMIN_API_SECRET || process.env.ADMIN_SECRET
   if (!secret) {
-    // In production, we MUST have a secret. In dev, we can be open.
     return process.env.NODE_ENV !== 'production'
   }
   return req.headers.get('X-Admin-Token') === secret
