@@ -321,7 +321,7 @@ function generateGuidesPage(guides: Record<string, any>[]): string {
 
 import Link from 'next/link'
 
-const GUIDES = [
+const GUIDES: { id: string; icon: string; tag: string; title: string; desc: string; readTime: string; content: string }[] = [
 ${items.join(',\n')}
 ]
 
