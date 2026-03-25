@@ -289,11 +289,12 @@ export function getPublishedPosts() {
 }
 export function getPostBySlug(slug: string) { return BLOG_POSTS.find(p => p.slug === slug) || null }
 export const getBlogPost = getPostBySlug
-export const BLOG_CATEGORIES: string[] = [...new Set(BLOG_POSTS.map(p => p.category).filter(Boolean))]
 
 export const BLOG_POSTS: BlogPost[] = [
 ${postBlocks.join(',\n')}
 ]
+
+export const BLOG_CATEGORIES: string[] = [...new Set(BLOG_POSTS.map(p => p.category).filter(Boolean))]
 `
 }
 
