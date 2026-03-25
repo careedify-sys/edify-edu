@@ -21,7 +21,7 @@ export interface University {
   highlight: string; tagline: string; description: string
   forWho: string[]; notFor: string[]
   programs: Program[]; programDetails: Partial<Record<Program, ProgramDetail>>
-  color: string
+  color: string; logo?: string
 }
 
 export const PROGRAM_META: Record<string, { label: string; desc: string; icon?: string }> = {
