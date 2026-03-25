@@ -4,7 +4,7 @@
 
 import Link from 'next/link'
 
-export const GUIDES = [
+const GUIDES = [
 
 ]
 
