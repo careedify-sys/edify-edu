@@ -183,46 +183,6 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaTitle: '',
     ctaDesc: '',
     content: `
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Is Online MBA Worth It in 2026? The Honest Truth | EdifyEdu</title>
-<meta name="description" content="Is an online MBA worth it in 2026? We break down UGC recognition, real ROI, who should do it—and who shouldn't. No fluff, just the honest picture.">
-<style>
-  body { font-family: Georgia, serif; max-width: 820px; margin: 0 auto; padding: 24px; color: #1a1a1a; line-height: 1.75; font-size: 17px; }
-  h1 { font-size: 2em; line-height: 1.3; margin-bottom: 8px; }
-  h2 { font-size: 1.35em; margin-top: 2.2em; margin-bottom: 0.5em; color: #1a1a1a; border-left: 4px solid #2563eb; padding-left: 12px; }
-  p { margin: 0 0 1.2em; }
-  .meta { color: #666; font-size: 0.88em; margin-bottom: 1.8em; font-family: sans-serif; }
-  .callout { background: #f0f7ff; border-left: 4px solid #2563eb; padding: 14px 18px; margin: 1.6em 0; border-radius: 0 6px 6px 0; }
-  .callout p { margin: 0; }
-  .verdict-box { background: #f9f5ff; border: 1px solid #c4b5fd; border-radius: 8px; padding: 18px 22px; margin: 2em 0; }
-  .verdict-box h3 { margin-top: 0; color: #5b21b6; }
-  ul { padding-left: 1.4em; margin: 0.5em 0 1.2em; }
-  ul li { margin-bottom: 0.45em; }
-  .internal-link { background: #fefce8; border: 1px solid #fde047; padding: 12px 16px; border-radius: 6px; margin: 2em 0; font-size: 0.95em; }
-  .faq { margin-top: 2.4em; }
-  .faq details { border: 1px solid #e5e7eb; border-radius: 6px; margin-bottom: 10px; padding: 12px 16px; }
-  .faq summary { cursor: pointer; font-weight: bold; font-size: 0.97em; }
-  .faq details p { margin: 10px 0 0; font-size: 0.95em; color: #333; }
-  .tag { display: inline-block; background: #e0f2fe; color: #075985; font-size: 0.78em; padding: 3px 9px; border-radius: 999px; margin-right: 5px; font-family: sans-serif; }
-</style>
-</head>
-<body>
-
-<h1>Is Online MBA Worth It in 2026? The Honest Truth Nobody Tells You</h1>
-<p class="meta">
-  Published: March 2026 &nbsp;|&nbsp; Read time: 7 min &nbsp;|&nbsp; Category: Online MBA India
-  <br><br>
-  <span class="tag">Online MBA</span>
-  <span class="tag">UGC DEB</span>
-  <span class="tag">MBA India 2026</span>
-  <span class="tag">Working Professionals</span>
-  <span class="tag">MBA ROI</span>
-</p>
-
 <p>Most people searching for an online MBA in India are already working. They're juggling jobs, maybe preparing for something else on the side, and they're wondering if this degree is worth two years and up to ₹3–4 lakh of their money. Fair question. Let's get into it properly.</p>
 
 <p>The short answer is: it depends entirely on <em>why</em> you're doing it. And if you haven't figured that out yet, this is the right place to start.</p>
@@ -235,7 +195,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>That said, not all of those 126 universities are worth your time. More on that below.</p>
 
-<div class="callout">
+<div class="callout-info">
   <p><strong>Quick stat:</strong> UGC data from 2022 showed online degree enrolments had jumped 179% between 2020 and 2022. The MBA was the most enrolled postgraduate program in that surge. The trend has only accelerated since.</p>
 </div>
 
@@ -271,7 +231,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>And if you're targeting the IIM-level MBA experience—the case competitions, the alumni network that actually picks up your calls, the recruiting brand—online isn't going to replicate that. It's a different product.</p>
 
-<div class="verdict-box">
+<div class="callout-key">
   <h3>The Networking Reality Check</h3>
   <p>Networking through an online MBA is weaker by default—but it's not zero. The students who get genuine value from it are the ones who actively show up to live sessions, connect on LinkedIn during the program, join alumni groups, and collaborate on group projects like they mean it. Your network through an online MBA is mostly a function of how much effort you put in, not the college's reputation alone.</p>
 </div>
@@ -284,8 +244,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>The degree works as a career tool when you treat it like one.</p>
 
-<div class="internal-link">
-  📘 Not sure which university to pick? Check out our detailed breakdown of how to evaluate and choose the right online MBA university in India on <a href="https://edifyedu.in/how-to-choose-online-mba-university">EdifyEdu.in</a> — we've covered everything from budget planning to verifying approvals.
+<div class="callout-info">
+  📘 Not sure which university to pick? Read our step-by-step guide: <a href="/blog/how-to-choose-online-mba-university-india-2026">How to Choose the Right Online MBA University in India</a>—budget planning, approvals to verify, and red flags to avoid.
 </div>
 
 <h2>The Bottom Line</h2>
@@ -295,39 +255,6 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>If you go in with clear goals, pick the right university (UGC-DEB approved, NAAC A or above, good NIRF ranking in management), and stay engaged for the two years—it will pay off. If you treat it as a box to check, it probably won't.</p>
 
 <p>That's not a commentary on online education. That's just how education works.</p>
-
-<div class="faq">
-  <h2>Frequently Asked Questions</h2>
-
-  <details>
-    <summary>Is an online MBA from India valid for government jobs?</summary>
-    <p>Yes—if the university is UGC-DEB approved, the degree is treated as equivalent to a traditional degree for government employment and higher education. Always verify the university's status on the official UGC-DEB portal before enrolling.</p>
-  </details>
-
-  <details>
-    <summary>Can I do an online MBA while working full-time?</summary>
-    <p>That's exactly what the format is designed for. Most programs use weekend live sessions, recorded lectures, and flexible assignment schedules. You don't need to quit your job—that's one of the main reasons working professionals prefer it.</p>
-  </details>
-
-  <details>
-    <summary>Is an online MBA better than a distance MBA?</summary>
-    <p>They're legally equivalent under UGC regulations, but the experience differs. Online MBAs typically have live sessions, interactive platforms, and more faculty engagement. Distance programs can be more self-paced. For learning quality, online programs from reputed universities generally offer more.</p>
-  </details>
-
-  <details>
-    <summary>What salary can I expect after an online MBA?</summary>
-    <p>This varies widely. Top programs like NMIMS have reported average placements in the ₹18–25 LPA range for their online cohorts, but that reflects the upper end. For most working professionals, the value shows up as a 20–50% salary bump from a promotion or role upgrade rather than a campus placement number.</p>
-  </details>
-
-  <details>
-    <summary>Do employers care if my MBA is online or offline?</summary>
-    <p>Increasingly, no—especially for mid-level and senior roles where your work experience matters more than the mode of study. The brand of the university matters more than whether it was online. An NMIMS or Symbiosis online MBA will be received very differently from an obscure, unranked institution's program.</p>
-  </details>
-</div>
-
-</body>
-</html>
-
     `,
   },
   {
@@ -351,52 +278,6 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaTitle: '',
     ctaDesc: '',
     content: `
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How to Choose the Right Online MBA University in India (2026) | EdifyEdu</title>
-<meta name="description" content="A no-nonsense guide to choosing the right online MBA university in India in 2026—budget, approvals, rankings, red flags, and university options from ₹60K to ₹3L.">
-<style>
-  body { font-family: Georgia, serif; max-width: 820px; margin: 0 auto; padding: 24px; color: #1a1a1a; line-height: 1.75; font-size: 17px; }
-  h1 { font-size: 2em; line-height: 1.3; margin-bottom: 8px; }
-  h2 { font-size: 1.35em; margin-top: 2.2em; margin-bottom: 0.5em; color: #1a1a1a; border-left: 4px solid #16a34a; padding-left: 12px; }
-  p { margin: 0 0 1.2em; }
-  .meta { color: #666; font-size: 0.88em; margin-bottom: 1.8em; font-family: sans-serif; }
-  .callout { background: #f0fdf4; border-left: 4px solid #16a34a; padding: 14px 18px; margin: 1.6em 0; border-radius: 0 6px 6px 0; }
-  .callout p { margin: 0; }
-  table { width: 100%; border-collapse: collapse; margin: 1.4em 0 2em; font-size: 0.92em; }
-  th { background: #f1f5f9; padding: 10px 12px; text-align: left; font-family: sans-serif; font-size: 0.85em; border-bottom: 2px solid #e2e8f0; }
-  td { padding: 9px 12px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
-  tr:last-child td { border-bottom: none; }
-  .checklist { background: #fafafa; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px 20px; margin: 1.6em 0; }
-  .checklist h3 { margin-top: 0; font-size: 1em; font-family: sans-serif; }
-  .checklist ul { margin: 0; }
-  .checklist li { margin-bottom: 0.4em; font-size: 0.95em; }
-  .internal-link { background: #fefce8; border: 1px solid #fde047; padding: 12px 16px; border-radius: 6px; margin: 2em 0; font-size: 0.95em; }
-  .faq { margin-top: 2.4em; }
-  .faq details { border: 1px solid #e5e7eb; border-radius: 6px; margin-bottom: 10px; padding: 12px 16px; }
-  .faq summary { cursor: pointer; font-weight: bold; font-size: 0.97em; }
-  .faq details p { margin: 10px 0 0; font-size: 0.95em; color: #333; }
-  .tag { display: inline-block; background: #dcfce7; color: #166534; font-size: 0.78em; padding: 3px 9px; border-radius: 999px; margin-right: 5px; font-family: sans-serif; }
-  .warning { background: #fff7ed; border-left: 4px solid #ea580c; padding: 14px 18px; margin: 1.6em 0; border-radius: 0 6px 6px 0; }
-  .warning p { margin: 0; }
-</style>
-</head>
-<body>
-
-<h1>How to Choose the Right Online MBA University in India in 2026 (Step-by-Step)</h1>
-<p class="meta">
-  Published: March 2026 &nbsp;|&nbsp; Read time: 8 min &nbsp;|&nbsp; Category: Online MBA India
-  <br><br>
-  <span class="tag">Online MBA University</span>
-  <span class="tag">UGC DEB Approved</span>
-  <span class="tag">NAAC Ranking</span>
-  <span class="tag">MBA Fees India</span>
-  <span class="tag">MBA 2026</span>
-</p>
-
 <p>There are over 126 universities approved by the Government of India to offer online degrees. That number sounds reassuring until you actually try to compare them—then it just becomes noise. Which ones are worth your money? Which have real faculty and not just uploaded slides? And which approvals actually matter for your career goals?</p>
 
 <p>This guide walks through the decision in the order it should actually happen—starting with why you want an MBA, not which university looks good on paper.</p>
@@ -466,7 +347,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p><strong>WES recognition</strong> matters specifically if you're considering working abroad or pursuing international higher education after your MBA.</p>
 
-<div class="warning">
+<div class="callout-warning">
   <p><strong>Red flag to watch:</strong> Some universities display vague "approved by Government of India" language without specifying which body or notification number. Always verify UGC-DEB status independently. The UGC website's DEB list is public and searchable.</p>
 </div>
 
@@ -482,8 +363,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Look specifically at whether the university delivers on live sessions (or just sends recordings), whether assignment feedback is real or just automated, and what the exam experience is actually like.</p>
 
-<div class="callout">
-  <p>For a current, verified list of all UGC-DEB approved universities offering online programs, you can browse the compiled list at <a href="https://edifyedu.in/ugc-approved-online-universities">EdifyEdu.in</a>—we keep it updated with program details, fees, and accreditations.</p>
+<div class="callout-info">
+  <p>For a current, verified list of all UGC-DEB approved universities offering online programs, <a href="/universities">browse all universities on Edify</a>—updated with program details, fees, and accreditations.</p>
 </div>
 
 <h2>Step 5: Match the University to Your Actual Career Goal</h2>
@@ -518,7 +399,7 @@ export const BLOG_POSTS: BlogPost[] = [
   </tbody>
 </table>
 
-<div class="checklist">
+<div class="callout-key">
   <h3>✅ Quick Checklist Before You Confirm Enrollment</h3>
   <ul>
     <li>Verified UGC-DEB approval on the official portal (not just the university website)</li>
@@ -532,8 +413,8 @@ export const BLOG_POSTS: BlogPost[] = [
   </ul>
 </div>
 
-<div class="internal-link">
-  📘 Still figuring out whether an online MBA is right for you at all? Read our honest breakdown: <a href="https://edifyedu.in/is-online-mba-worth-it-2026">Is Online MBA Worth It in 2026?</a>—we cover the ROI, who benefits most, and who should skip it.
+<div class="callout-info">
+  📘 Still figuring out whether an online MBA is right for you at all? Read: <a href="/blog/is-online-mba-worth-it-2026">Is Online MBA Worth It in 2026?</a>—we cover the ROI, who benefits most, and who should skip it.
 </div>
 
 <h2>One Last Thing</h2>
@@ -541,39 +422,6 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Choosing a university is the easy part. The harder part is deciding to actually engage with it once you're enrolled—turning up for live sessions, building connections with your batch, applying what you're learning at work. The degree opens doors. You still have to walk through them.</p>
 
 <p>Take your time with this decision, do the research properly, and don't let an admission counselor's deadline pressure you into picking before you're ready.</p>
-
-<div class="faq">
-  <h2>Frequently Asked Questions</h2>
-
-  <details>
-    <summary>How do I verify if a university is UGC-DEB approved?</summary>
-    <p>Go directly to the UGC Distance Education Bureau portal (deb.ugc.ac.in) and search for the university by name. Don't rely solely on the university's own website or marketing material for this verification.</p>
-  </details>
-
-  <details>
-    <summary>Does NAAC grade really matter for an online MBA?</summary>
-    <p>Yes, for two reasons. First, UGC's own regulations require institutions to have a minimum NAAC score to offer online programs—so a higher grade indicates the university meets stricter standards. Second, many recruiters and government bodies specifically look for NAAC-accredited institutions when evaluating credentials.</p>
-  </details>
-
-  <details>
-    <summary>Is BITS Pilani WILP a good option for online MBA?</summary>
-    <p>BITS WILP is a strong choice specifically for working professionals with an engineering background who want management exposure. It's rigorous, BITS-branded, and well-regarded in the tech and manufacturing sectors. The fees are on the higher side (around ₹2.5–3 lakh), but the brand value is real in those industries.</p>
-  </details>
-
-  <details>
-    <summary>Can I negotiate fees with online MBA universities?</summary>
-    <p>Often, yes. Most universities have seasonal admission cycles and scholarship windows. Some offer discounts for early payment, merit-based waivers, or alumni referrals. Always ask the admission counselor directly—the listed fee is rarely the final number.</p>
-  </details>
-
-  <details>
-    <summary>What specializations are in highest demand for online MBA graduates?</summary>
-    <p>Based on current hiring trends, Business Analytics, Digital Marketing, Finance, and Operations Management tend to show stronger placement and salary outcomes. HR and General Management are more stable but have slower growth trajectories. Choose based on your current field and where you want to go, not just what sounds impressive.</p>
-  </details>
-</div>
-
-</body>
-</html>
-
     `,
   }
 ]
