@@ -163,7 +163,7 @@ export const BLOG_POSTS: BlogPost[] = [
     `,
   },
   {
-    slug: '/is-online-mba-worth-it-2026',
+    slug: 'is-online-mba-worth-it-2026',
     title: 'Is Online MBA Worth It in 2026? The Honest Truth Nobody Tells You',
     metaDescription: 'Is an online MBA worth it in 2026? We break down UGC recognition, real ROI, who should do it—and who shouldn\'t. No fluff, just the honest picture.',
     category: 'Online MBA India',
@@ -331,7 +331,7 @@ export const BLOG_POSTS: BlogPost[] = [
     `,
   },
   {
-    slug: '/how-to-choose-online-mba-university-india-2026',
+    slug: 'how-to-choose-online-mba-university-india-2026',
     title: 'How to Choose the Right Online MBA University in India in 2026 (Step-by-Step)',
     metaDescription: 'A no-nonsense guide to choosing the right online MBA university in India in 2026—budget, approvals, rankings, red flags, and options from Rs.60K to Rs.3L.',
     category: 'Online MBA India',

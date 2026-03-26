@@ -251,8 +251,9 @@ function generateBlogTS(posts: Record<string, any>[]): string {
     const content = String(p['Content (HTML)'] ?? '<p>Content coming soon.</p>')
       .replace(/`/g, '\\`').replace(/\\/g, '\\\\').slice(0, 20000)
 
+    const slug = String(p['Slug (URL)'] ?? '').trim().replace(/^\/+/, '')
     return `  {
-    slug: '${ts(p['Slug (URL)'], 80)}',
+    slug: '${ts(slug, 80)}',
     title: '${ts(p['Title'], 120)}',
     metaDescription: '${ts(p['Meta Description'], 160)}',
     category: '${ts(p['Category'], 50)}',
