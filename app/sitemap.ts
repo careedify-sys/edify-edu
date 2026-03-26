@@ -39,9 +39,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     })),
-    // SEO-friendly program-first URLs
+    // SEO-friendly program-first URLs (use u.id so findUniId can redirect correctly)
     ...u.programs.map(prog => ({
-      url: `${BASE}/programs/${progSlug(prog)}/${u.name.toLowerCase().replace(/[^a-z0-9\s]/g,'').trim().replace(/\s+/g,'-').slice(0,40)}`,
+      url: `${BASE}/programs/${progSlug(prog)}/${u.id}`,
       lastModified: now,
       changeFrequency: 'weekly' as const,
       priority: 0.85,

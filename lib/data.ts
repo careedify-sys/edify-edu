@@ -518,6 +518,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'universi-of-petroleu-and',
+    logo: '/logos/university_logos/upes-logo-black.svg',
     name: 'University of Petroleum & Energy Studies (UPES) Online',
     abbr: 'UOPES',
     city: 'Dehradun',
@@ -589,6 +590,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'parul-universi',
+    logo: '/logos/university_logos/online_parul_university_logo.svg',
     name: 'Parul University Online',
     abbr: 'PUO',
     city: 'Waghodia',
@@ -688,6 +690,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'amrita-vishwa-vidyapee',
+    logo: '/logos/university_logos/amrita-online-logo.svg',
     name: 'Amrita Vishwa Vidyapeetham Online',
     abbr: 'AVVA',
     city: 'Online',
@@ -877,6 +880,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'shoolini',
+    logo: '/logos/university_logos/shoolini-university-online-logo.svg',
     name: 'Shoolini University Online',
     abbr: 'SUSO',
     city: 'Bajhol',
@@ -1145,6 +1149,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'sikkim-manipal',
+    logo: '/logos/university_logos/sikkim-manipal-university-logo.svg',
     name: 'Sikkim Manipal University Online',
     abbr: 'SMUOM',
     city: 'Gangtok',
@@ -1305,6 +1310,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'chitkara-universi',
+    logo: '/logos/university_logos/chitkara-university-online.svg',
     name: 'Chitkara University Online',
     abbr: 'CUCDO',
     city: 'Rajpura',
@@ -1741,6 +1747,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'mahe-manipal',
+    logo: '/logos/university_logos/mahe-manipal-online-logo.svg',
     name: 'Manipal Academy of Higher Education (MAHE) Online',
     abbr: 'MAHEO',
     city: 'Manipal',
@@ -1821,6 +1828,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'koneru-lakshmai-educatio-found',
+    logo: '/logos/university_logos/kl-university-online-logo.svg',
     name: 'Koneru Lakshmaiah Education Foundation (KL University) Online',
     abbr: 'KLEFU',
     city: 'Vaddeswaram',
@@ -2140,6 +2148,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'manav-rachna-internat-institut',
+    logo: '/logos/university_logos/manav-rachna-university-logo.svg',
     name: 'Manav Rachna Online',
     abbr: 'MRCDO',
     city: 'Online',
@@ -3268,6 +3277,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'vivekana-global-universi',
+    logo: '/logos/university_logos/vivekananda-global-university-logo.svg',
     name: 'Vivekananda Global University Online',
     abbr: 'VGUO',
     city: 'Jaipur',
@@ -3386,6 +3396,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'uttaranc-universi',
+    logo: '/logos/university_logos/uttaranchal-online-university-logo_1.svg',
     name: 'Uttaranchal University Online',
     abbr: 'UUUDO',
     city: 'Premnagar',
@@ -3465,6 +3476,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'andhra-universi',
+    logo: '/logos/university_logos/andhra-university-online-logo.svg',
     name: 'Andhra University Online',
     abbr: 'AUOA',
     city: 'Visakhapatnam',
@@ -3771,6 +3783,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'kurukshe-universi',
+    logo: '/logos/university_logos/kurukshetra-university-logo.svg',
     name: 'Kurukshetra University Online',
     abbr: 'KUO',
     city: 'Kurukshetra',
@@ -4118,6 +4131,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'bharati-vidyapee-universi',
+    logo: '/logos/university_logos/bvdu-logo.svg',
     name: 'Bharati Vidyapeeth (Deemed to be University) Online',
     abbr: 'BVUO',
     city: 'Pune',
@@ -4374,6 +4388,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'alliance-universi',
+    logo: '/logos/university_logos/alliance-university-logo.svg',
     name: 'Alliance University Online',
     abbr: 'AU',
     city: 'Online',
@@ -4669,6 +4684,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'jaypee-universi',
+    logo: '/logos/university_logos/jaypee-institute-of-information-technology-logo.svg',
     name: 'Jaypee Institute of Information Technology Online',
     abbr: 'JIITO',
     city: 'Noida',
@@ -5174,6 +5190,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'noida-internat-universi',
+    logo: '/logos/university_logos/noida-international-university.svg',
     name: 'Noida International University Online',
     abbr: 'NIUO',
     city: 'Greater Noida',
