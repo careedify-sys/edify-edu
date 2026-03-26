@@ -512,7 +512,7 @@ export function getUniversityLogo(uniId: string): string | null {
         universities: cmsData.universities.length,
         blogs: cmsData.blogs.length,
         guides: cmsData.guides.length,
-        logos: Object.keys(logoMap).length,
+        logos: cmsData.logos.length,
       },
       deployUrl: `https://github.com/${process.env.GITHUB_OWNER || 'careedify-sys'}/${process.env.GITHUB_REPO || 'edify-edu'}/actions`,
     })
