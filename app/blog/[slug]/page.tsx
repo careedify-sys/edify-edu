@@ -84,6 +84,9 @@ export async function generateMetadata(
   }
 }
 
+export const dynamicParams = true
+export const revalidate = 3600
+
 export async function generateStaticParams() {
   const posts = getPublishedPosts()
   return posts.map((post) => ({ slug: post.slug }))
