@@ -27,8 +27,9 @@ function checkAuth(req: NextRequest): boolean {
 // ── GitHub push helper ────────────────────────────────────────────────────────
 async function pushToGitHub(files: { path: string; content: string }[], message: string): Promise<{
   success: boolean
-  results: { path: string; success: boolean }[]
+  results: { path: string; success: boolean; skipped?: boolean }[]
   failedFiles: string[]
+  skippedFiles: string[]
 }> {
   const token  = process.env.GITHUB_TOKEN
   const owner  = process.env.GITHUB_OWNER  || 'careedify-sys'
@@ -37,22 +38,34 @@ async function pushToGitHub(files: { path: string; content: string }[], message:
 
   if (!token) throw new Error('GITHUB_TOKEN not set in Vercel environment variables')
 
-  async function getFileSHA(path: string): Promise<string | null> {
+  // Returns existing file SHA and decoded content (one API call per file, reused for both comparison and PUT)
+  async function getFileInfo(path: string): Promise<{ sha: string; content: string } | null> {
     const res = await fetch(
       `https://api.github.com/repos/${owner}/${repo}/contents/${path}?ref=${branch}`,
       { headers: { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json' } }
     )
     if (!res.ok) return null
-    return (await res.json()).sha || null
+    const data = await res.json()
+    if (!data.sha) return null
+    const decoded = Buffer.from((data.content as string).replace(/\n/g, ''), 'base64').toString('utf-8')
+    return { sha: data.sha, content: decoded }
   }
 
-  const results: { path: string; success: boolean }[] = []
+  const results: { path: string; success: boolean; skipped?: boolean }[] = []
 
   for (const file of files) {
-    const sha     = await getFileSHA(file.path)
+    const existing = await getFileInfo(file.path)
+
+    // Skip push if content is identical — prevents unnecessary Vercel rebuilds
+    if (existing && existing.content === file.content) {
+      results.push({ path: file.path, success: true, skipped: true })
+      await new Promise(r => setTimeout(r, 100)) // small pause between API calls
+      continue
+    }
+
     const encoded = Buffer.from(file.content, 'utf-8').toString('base64')
     const body: Record<string, string> = { message, content: encoded, branch }
-    if (sha) body.sha = sha
+    if (existing?.sha) body.sha = existing.sha
 
     const res = await fetch(
       `https://api.github.com/repos/${owner}/${repo}/contents/${file.path}`,
@@ -70,8 +83,10 @@ async function pushToGitHub(files: { path: string; content: string }[], message:
     await new Promise(r => setTimeout(r, 350)) // rate limit buffer
   }
 
-  const failedFiles = results.filter(r => !r.success).map(r => r.path)
-  return { success: failedFiles.length === 0, results, failedFiles }
+  const failedFiles  = results.filter(r => !r.success && !r.skipped).map(r => r.path)
+  const skippedFiles = results.filter(r => r.skipped).map(r => r.path)
+  const pushedCount  = results.filter(r => !r.skipped).length
+  return { success: failedFiles.length === 0, results, failedFiles, skippedFiles }
 }
 
 // ── Code generators ───────────────────────────────────────────────────────────
@@ -235,6 +250,20 @@ ${uniBlocks.join(',\n')}
 `
 }
 
+// ── Existing publish-date extractor ───────────────────────────────────────────
+// Parses the currently-deployed lib/blog.ts and returns a map of slug → publishedAt.
+// Used to preserve original dates across resyncs — only a date explicitly set in the
+// Google Sheet (non-empty "Published Date" column) overrides the stored date.
+function extractExistingDates(blogTS: string): Record<string, string> {
+  const dates: Record<string, string> = {}
+  const re = /slug:\s*'([^']+)'[\s\S]*?publishedAt:\s*'([^']+)'/g
+  let m: RegExpExecArray | null
+  while ((m = re.exec(blogTS)) !== null) {
+    dates[m[1]] = m[2]
+  }
+  return dates
+}
+
 // ── Blog content sanitizer ────────────────────────────────────────────────────
 // Strips full-page HTML shell, inline styles, duplicate title/meta, and FAQ
 // blocks that the site template already renders. Converts custom div classes
@@ -258,7 +287,7 @@ function sanitizeBlogContent(raw: string): string {
     .trim()
 }
 
-function generateBlogTS(posts: Record<string, any>[]): string {
+function generateBlogTS(posts: Record<string, any>[], existingDates: Record<string, string> = {}): string {
   const now = new Date().toISOString().split('T')[0]
   const ts  = (s: unknown, max = 300) => esc(s, max)
 
@@ -275,13 +304,16 @@ function generateBlogTS(posts: Record<string, any>[]): string {
       .replace(/`/g, '\\`').replace(/\\/g, '\\\\').slice(0, 20000)
 
     const slug = String(p['Slug (URL)'] ?? '').trim().replace(/^\/+/, '').replace(/^blog\//, '')
+    // Preserve original publish date: sheet value wins if set, otherwise keep existing date, else use today
+    const sheetDate = String(p['Published Date'] ?? '').trim()
+    const publishedAt = sheetDate || existingDates[slug] || now
     return `  {
     slug: '${ts(slug, 80)}',
     title: '${ts(p['Title'], 120)}',
     metaDescription: '${ts(p['Meta Description'], 160)}',
     category: '${ts(p['Category'], 50)}',
     tags: [${tags.map(t => `'${ts(t, 50)}'`).join(', ')}],
-    publishedAt: '${ts(p['Published Date'] || now, 20)}',
+    publishedAt: '${ts(publishedAt, 20)}',
     readTime: ${readTime},
     targetKeyword: '${ts(p['Target Keyword'], 100)}',
     relatedUniversities: [],
@@ -463,6 +495,28 @@ export async function POST(req: NextRequest) {
     // ── Step 3: Generate code files ────────────────────────────────────────
     addLog('Generating code files...')
 
+    // Fetch existing blog.ts from GitHub to preserve original publish dates
+    const existingBlogTS = await (async () => {
+      const token  = process.env.GITHUB_TOKEN
+      const owner  = process.env.GITHUB_OWNER  || 'careedify-sys'
+      const repo   = process.env.GITHUB_REPO   || 'edify-edu'
+      const branch = process.env.GITHUB_BRANCH || 'main'
+      if (!token) return ''
+      try {
+        const res = await fetch(
+          `https://api.github.com/repos/${owner}/${repo}/contents/lib/blog.ts?ref=${branch}`,
+          { headers: { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json' } }
+        )
+        if (!res.ok) return ''
+        const data = await res.json()
+        return Buffer.from((data.content as string).replace(/\n/g, ''), 'base64').toString('utf-8')
+      } catch { return '' }
+    })()
+    const existingDates = extractExistingDates(existingBlogTS)
+    if (Object.keys(existingDates).length > 0) {
+      addLog(`✓ Preserved publish dates for ${Object.keys(existingDates).length} existing post(s)`)
+    }
+
     const filesToPush: { path: string; content: string }[] = []
 
     if (hasUnis) {
@@ -471,7 +525,7 @@ export async function POST(req: NextRequest) {
       filesToPush.push({ path: 'lib/data.ts', content: dataTS })
     }
 
-    const blogTS = generateBlogTS(cmsData.blogs)
+    const blogTS = generateBlogTS(cmsData.blogs, existingDates)
     addLog(`✓ blog.ts: ${cmsData.blogs.length} posts`)
     filesToPush.push({ path: 'lib/blog.ts', content: blogTS })
 
@@ -507,8 +561,8 @@ export function getUniversityLogo(uniId: string): string | null {
       })
     }
 
-    // ── Step 5: Push to GitHub ─────────────────────────────────────────────
-    addLog(`Pushing ${filesToPush.length} files to GitHub...`)
+    // ── Step 5: Push to GitHub (changed files only) ────────────────────────
+    addLog(`Comparing ${filesToPush.length} files against GitHub (skipping unchanged)...`)
 
     const timestamp  = new Date().toISOString()
     const uniCount   = hasUnis ? cmsData.universities.filter(u => String(u['Status']||'active').toLowerCase() !== 'inactive').length : 0
@@ -516,11 +570,37 @@ export function getUniversityLogo(uniId: string): string | null {
 
     const pushResult = await pushToGitHub(filesToPush, commitMsg)
 
+    const pushedFiles  = pushResult.results.filter(r => !r.skipped)
+    const skippedCount = pushResult.skippedFiles.length
+    const pushedCount  = pushedFiles.length
+
+    if (skippedCount > 0) {
+      addLog(`⏭ Skipped ${skippedCount} unchanged file(s): ${pushResult.skippedFiles.join(', ')}`)
+    }
+
+    if (pushedCount === 0) {
+      addLog('✅ Nothing changed — no rebuild triggered')
+      return NextResponse.json({
+        ok: true,
+        files:        pushResult.results,
+        failedFiles:  [],
+        skippedFiles: pushResult.skippedFiles,
+        log,
+        message: '✅ Sync complete — all content identical, no rebuild needed.',
+        counts: {
+          universities: cmsData.universities.length,
+          blogs: cmsData.blogs.length,
+          guides: cmsData.guides.length,
+          logos: cmsData.logos.length,
+        },
+      })
+    }
+
     if (!pushResult.success) {
-      addLog(`⚠ Partial push: ${pushResult.results.filter(r => r.success).length}/${filesToPush.length} succeeded`)
+      addLog(`⚠ Partial push: ${pushedFiles.filter(r => r.success).length}/${pushedCount} succeeded`)
       addLog(`Failed: ${pushResult.failedFiles.join(', ')}`)
     } else {
-      addLog(`✓ All ${filesToPush.length} files pushed to GitHub`)
+      addLog(`✓ ${pushedCount} file(s) pushed to GitHub`)
       addLog('⏳ Vercel deploying — live in ~90 seconds')
     }
 
@@ -528,9 +608,10 @@ export function getUniversityLogo(uniId: string): string | null {
       ok: pushResult.success,
       files:        pushResult.results,
       failedFiles:  pushResult.failedFiles,
+      skippedFiles: pushResult.skippedFiles,
       log,
       message: pushResult.success
-        ? `✅ Sync complete. ${filesToPush.length} files pushed. Site live in ~90 seconds.`
+        ? `✅ Sync complete. ${pushedCount} file(s) changed and pushed. Site live in ~90 seconds.`
         : `⚠ Partial sync. ${pushResult.failedFiles.length} file(s) failed.`,
       counts: {
         universities: cmsData.universities.length,

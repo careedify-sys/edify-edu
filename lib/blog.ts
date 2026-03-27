@@ -245,7 +245,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>The degree works as a career tool when you treat it like one.</p>
 
 <div class="callout-info">
-  📘 Not sure which university to pick? Check out our detailed breakdown of how to evaluate and choose the right online MBA university in India on <a href="/how-to-choose-online-mba-university">EdifyEdu.in</a> — we've covered everything from budget planning to verifying approvals.
+  📘 Not sure which university to pick? Check out our detailed breakdown of how to evaluate and choose the right online MBA university in India on <a href="/blog/how-to-choose-online-mba-university-india-2026">EdifyEdu.in</a> — we've covered everything from budget planning to verifying approvals.
 </div>
 
 <h2>The Bottom Line</h2>
@@ -363,8 +363,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Look specifically at whether the university delivers on live sessions (or just sends recordings), whether assignment feedback is real or just automated, and what the exam experience is actually like.</p>
 
-<div class="callout-info">
-  <p>For a current, verified list of all UGC-DEB approved universities offering online programs, you can browse the compiled list at <a href="/ugc-approved-online-universities">EdifyEdu.in</a>—we keep it updated with program details, fees, and accreditations.</p>
+<div class="callout-key">
+  <p>For a current, verified list of all UGC-DEB approved universities offering online programs, you can browse the compiled list at <a href="/universities">EdifyEdu.in</a>—we keep it updated with program details, fees, and accreditations.</p>
 </div>
 
 <h2>Step 5: Match the University to Your Actual Career Goal</h2>
@@ -414,7 +414,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </div>
 
 <div class="callout-info">
-  📘 Still figuring out whether an online MBA is right for you at all? Read our honest breakdown: <a href="/is-online-mba-worth-it-2026">Is Online MBA Worth It in 2026?</a>—we cover the ROI, who benefits most, and who should skip it.
+  📘 Still figuring out whether an online MBA is right for you at all? Read our honest breakdown: <a href="/blog/is-online-mba-worth-it-2026">Is Online MBA Worth It in 2026?</a>—we cover the ROI, who benefits most, and who should skip it.
 </div>
 
 <h2>One Last Thing</h2>

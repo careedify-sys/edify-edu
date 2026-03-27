@@ -54,7 +54,13 @@
       "Bash(taskkill //PID 21956 //F)",
       "Bash(taskkill //PID 22984 //F)",
       "Bash(taskkill //PID 27476 //F)",
-      "Bash(cd:*)"
+      "Bash(cd:*)",
+      "Bash(grep -rn \"lpu-online\\\\|mahe-online\\\\|lpu online\\\\|mahe online\" C:/Users/91706/Downloads/edify-v16-final-with-cms/edify-next/ --include=*.ts --include=*.tsx --include=*.js)",
+      "Bash(node:*)",
+      "Bash(grep -v \"^\\\\-\\\\-$\")",
+      "Bash(xargs grep:*)",
+      "Bash(grep -rn \"Fetching all sheets\\\\|0 unis\\\\|0 posts\\\\|Fetched:\" C:/Users/91706/Downloads/edify-v16-final-with-cms/edify-next/ --include=*.ts --include=*.tsx --include=*.js --include=*.mjs)",
+      "Bash(grep:*)"
     ]
   }
 }
