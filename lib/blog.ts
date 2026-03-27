@@ -14,10 +14,7 @@ export function getPublishedPosts() {
     .filter(p => p.status === 'published')
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
 }
-export function getPostBySlug(slug: string) {
-  const clean = slug.replace(/^\/+/, '').replace(/^blog\//, '')
-  return BLOG_POSTS.find(p => p.slug === clean || p.slug === slug) || null
-}
+export function getPostBySlug(slug: string) { return BLOG_POSTS.find(p => p.slug === slug) || null }
 export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
