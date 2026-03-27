@@ -181,6 +181,41 @@ export default async function BlogPostPage({ params }: Props) {
         .prose-article .callout-key { background: rgba(200,129,26,0.08); border-left: 4px solid #C8811A; padding: 14px 18px; border-radius: 0 10px 10px 0; margin: 1.5rem 0; font-size: 15px; }
         .prose-article .callout-warning { background: rgba(234,179,8,0.08); border-left: 4px solid #EAB308; padding: 14px 18px; border-radius: 0 10px 10px 0; margin: 1.5rem 0; font-size: 15px; }
         .prose-article .callout-info { background: rgba(37,99,235,0.06); border-left: 4px solid #2563EB; padding: 14px 18px; border-radius: 0 10px 10px 0; margin: 1.5rem 0; font-size: 15px; }
+
+        /* ── Pull quote ─────────────────────────────────────────────── */
+        .prose-article .pull { border-left: 4px solid #16a34a; background: #f0fdf4; padding: 16px 20px; margin: 2rem 0; font-size: 1.05rem; font-style: italic; color: #166534; border-radius: 0 10px 10px 0; }
+
+        /* ── EMI block ──────────────────────────────────────────────── */
+        .prose-article .emi-block { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 24px; margin: 2rem 0; }
+        .prose-article .emi-block h3 { color: #15803d; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.1rem; }
+        .prose-article .emi-block p { color: #166534; margin-bottom: 1rem; }
+        .prose-article .emi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin: 1.25rem 0; }
+        .prose-article .emi-pill { background: #16a34a; color: #fff; border-radius: 8px; padding: 12px 14px; font-size: 13px; line-height: 1.5; display: flex; flex-direction: column; gap: 2px; }
+        .prose-article .emi-pill strong { font-size: 14px; font-weight: 700; display: block; }
+        .prose-article .emi-note { font-size: 12.5px; color: #15803d; margin: 0; }
+
+        /* ── CTA lead-capture block ─────────────────────────────────── */
+        .prose-article .cta-block { background: linear-gradient(135deg, #0B1D35 0%, #14532d 100%); border-radius: 14px; padding: 32px 28px; margin: 2.5rem 0; color: #fff; }
+        .prose-article .cta-block h3 { color: #fff; margin-top: 0; margin-bottom: 0.5rem; font-size: 1.25rem; }
+        .prose-article .cta-block p { color: rgba(255,255,255,0.85); margin-bottom: 1rem; }
+        .prose-article .cta-block p.sub { font-size: 14.5px; }
+        .prose-article .cta-block ul { padding-left: 1.25rem; margin-bottom: 1.5rem; }
+        .prose-article .cta-block li { color: rgba(255,255,255,0.9); margin-bottom: 0.4rem; font-size: 14px; }
+        .prose-article .cta-form { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1.25rem; }
+        .prose-article .cta-form input[type="text"],
+        .prose-article .cta-form input[type="tel"] { flex: 1 1 180px; padding: 11px 14px; border-radius: 8px; border: none; font-size: 14px; background: rgba(255,255,255,0.12); color: #fff; outline: none; }
+        .prose-article .cta-form input[type="text"]::placeholder,
+        .prose-article .cta-form input[type="tel"]::placeholder { color: rgba(255,255,255,0.5); }
+        .prose-article .cta-form input[type="text"]:focus,
+        .prose-article .cta-form input[type="tel"]:focus { background: rgba(255,255,255,0.2); }
+        .prose-article .cta-form button { padding: 11px 22px; border-radius: 8px; border: none; background: #16a34a; color: #fff; font-weight: 700; font-size: 14px; cursor: pointer; white-space: nowrap; }
+        .prose-article .cta-form button:hover { background: #15803d; }
+        .prose-article .cta-note { font-size: 12px; color: rgba(255,255,255,0.55); margin-top: 0.75rem; margin-bottom: 0; }
+
+        /* ── Internal link pills ────────────────────────────────────── */
+        .prose-article .ilink { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px 16px; margin: 0.75rem 0; font-size: 14px; color: #334155; }
+        .prose-article .ilink a { color: #C8811A; text-decoration: none; font-weight: 600; }
+        .prose-article .ilink a:hover { text-decoration: underline; }
       `}</style>
 
       {/* ── JSON-LD ────────────────────────────────────────────────────── */}
