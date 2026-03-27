@@ -14,7 +14,10 @@ export function getPublishedPosts() {
     .filter(p => p.status === 'published')
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
 }
-export function getPostBySlug(slug: string) { return BLOG_POSTS.find(p => p.slug === slug) || null }
+export function getPostBySlug(slug: string) {
+  const clean = slug.replace(/^\/+/, '').replace(/^blog\//, '')
+  return BLOG_POSTS.find(p => p.slug === clean || p.slug === slug) || null
+}
 export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -577,7 +580,7 @@ export const BLOG_POSTS: BlogPost[] = [
     `,
   },
   {
-    slug: 'blog/affordable-online-mba-india-2026',
+    slug: 'affordable-online-mba-india-2026',
     title: 'Best Affordable Online MBA in India 2026 — A Straight-Talk Guide',
     metaDescription: 'Looking for an affordable online MBA in India in 2026? Compare fees from ₹54K to ₹1.5L, check UGC approvals, and find the cheapest programs worth your money.',
     category: 'Online MBA India',
