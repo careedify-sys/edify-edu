@@ -235,7 +235,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>That said, not all of those 126 universities are worth your time. More on that below.</p>
 
-<div class="callout">
+<div class="callout-key">
   <p><strong>Quick stat:</strong> UGC data from 2022 showed online degree enrolments had jumped 179% between 2020 and 2022. The MBA was the most enrolled postgraduate program in that surge. The trend has only accelerated since.</p>
 </div>
 
@@ -284,7 +284,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>The degree works as a career tool when you treat it like one.</p>
 
-<div class="internal-link">
+<div class="callout-info">
   📘 Not sure which university to pick? Check out our detailed breakdown of how to evaluate and choose the right online MBA university in India on <a href="https://edifyedu.in/how-to-choose-online-mba-university">EdifyEdu.in</a> — we've covered everything from budget planning to verifying approvals.
 </div>
 
@@ -466,7 +466,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p><strong>WES recognition</strong> matters specifically if you're considering working abroad or pursuing international higher education after your MBA.</p>
 
-<div class="warning">
+<div class="callout-warning">
   <p><strong>Red flag to watch:</strong> Some universities display vague "approved by Government of India" language without specifying which body or notification number. Always verify UGC-DEB status independently. The UGC website's DEB list is public and searchable.</p>
 </div>
 
@@ -482,7 +482,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Look specifically at whether the university delivers on live sessions (or just sends recordings), whether assignment feedback is real or just automated, and what the exam experience is actually like.</p>
 
-<div class="callout">
+<div class="callout-key">
   <p>For a current, verified list of all UGC-DEB approved universities offering online programs, you can browse the compiled list at <a href="https://edifyedu.in/ugc-approved-online-universities">EdifyEdu.in</a>—we keep it updated with program details, fees, and accreditations.</p>
 </div>
 
@@ -532,7 +532,7 @@ export const BLOG_POSTS: BlogPost[] = [
   </ul>
 </div>
 
-<div class="internal-link">
+<div class="callout-info">
   📘 Still figuring out whether an online MBA is right for you at all? Read our honest breakdown: <a href="https://edifyedu.in/is-online-mba-worth-it-2026">Is Online MBA Worth It in 2026?</a>—we cover the ROI, who benefits most, and who should skip it.
 </div>
 
@@ -597,52 +597,6 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaTitle: '',
     ctaDesc: '',
     content: `
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Best Affordable Online MBA in India 2026 | EdifyEdu</title>
-<meta name="description" content="Looking for an affordable online MBA in India in 2026? Compare fees from ₹66K to ₹1.75L, check UGC approvals, and find the cheapest programs worth your money.">
-<style>
-  body { font-family: Georgia, serif; max-width: 820px; margin: 0 auto; padding: 24px; color: #1a1a1a; line-height: 1.78; font-size: 17px; }
-  h1 { font-size: 2em; line-height: 1.3; margin-bottom: 8px; }
-  h2 { font-size: 1.35em; margin-top: 2.2em; margin-bottom: 0.5em; color: #1a1a1a; border-left: 4px solid #d97706; padding-left: 12px; }
-  p { margin: 0 0 1.2em; }
-  .meta { color: #666; font-size: 0.88em; margin-bottom: 1.8em; font-family: sans-serif; }
-  table { width: 100%; border-collapse: collapse; margin: 1.4em 0 2em; font-size: 0.91em; }
-  th { background: #fef3c7; padding: 10px 12px; text-align: left; font-family: sans-serif; font-size: 0.85em; border-bottom: 2px solid #fcd34d; color: #92400e; }
-  td { padding: 9px 12px; border-bottom: 1px solid #f3f4f6; vertical-align: top; }
-  tr:nth-child(even) td { background: #fffbeb; }
-  tr:last-child td { border-bottom: none; }
-  .callout { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 14px 18px; margin: 1.6em 0; border-radius: 0 6px 6px 0; }
-  .callout p { margin: 0; }
-  .warning { background: #fff7ed; border-left: 4px solid #ea580c; padding: 14px 18px; margin: 1.6em 0; border-radius: 0 6px 6px 0; }
-  .warning p { margin: 0; }
-  .internal-link { background: #f0fdf4; border: 1px solid #86efac; padding: 12px 16px; border-radius: 6px; margin: 2em 0; font-size: 0.95em; }
-  ul { padding-left: 1.4em; margin: 0.5em 0 1.2em; }
-  ul li { margin-bottom: 0.45em; }
-  .faq { margin-top: 2.4em; }
-  .faq details { border: 1px solid #e5e7eb; border-radius: 6px; margin-bottom: 10px; padding: 12px 16px; }
-  .faq summary { cursor: pointer; font-weight: bold; font-size: 0.97em; }
-  .faq details p { margin: 10px 0 0; font-size: 0.95em; color: #333; }
-  .tag { display: inline-block; background: #fef3c7; color: #92400e; font-size: 0.78em; padding: 3px 9px; border-radius: 999px; margin-right: 5px; font-family: sans-serif; }
-  strong { color: #1a1a1a; }
-</style>
-</head>
-<body>
-
-<h1>Best Affordable Online MBA in India 2026 — A Straight-Talk Guide</h1>
-<p class="meta">
-  Published: March 2026 &nbsp;|&nbsp; Read time: 7 min &nbsp;|&nbsp; Category: Online MBA India
-  <br><br>
-  <span class="tag">Affordable Online MBA</span>
-  <span class="tag">Cheapest Online MBA India</span>
-  <span class="tag">Online MBA Low Cost</span>
-  <span class="tag">UGC DEB</span>
-  <span class="tag">MBA 2026</span>
-</p>
-
 <p>A full-time MBA from a private B-school in India can set you back ₹10–25 lakh. That number alone stops most working professionals from even considering it. But here's what a lot of people don't realise: you can get a UGC-approved, employer-accepted online MBA for as little as ₹66,000 — from a university the government itself funds.</p>
 
 <p>The affordable online MBA space in India has changed significantly since 2022, when UGC officially recognised online degrees as equivalent to traditional ones. The programs exist. The question is which ones are actually worth your money — and which are just cheap for a reason. That's what this guide is for.</p>
@@ -653,7 +607,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>For most people asking about an affordable online MBA, the sweet spot is ₹1–1.75 lakh: low enough to not feel like a gamble, structured enough to actually deliver value. Universities like LPU and Chandigarh University sit here and are genuinely solid options at this price point.</p>
 
-<div class="callout">
+<div class="callout-key">
   <p><strong>Quick numbers:</strong> Online MBA fees in India range from ₹54,000 (Mizoram University) to ₹3.15 lakh (NMIMS). A residential MBA from a private institution costs ₹8–25 lakh. The ROI math strongly favours online — most working professionals recover the full fee within 12–18 months of a post-MBA salary hike.</p>
 </div>
 
@@ -721,7 +675,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>A few things worth noting about this table. IGNOU recently scrapped its OPENMAT entrance exam — direct admission is now possible, which removes a barrier many people used to cite as a reason to avoid it. Chandigarh University's dual specialization at ₹1.5 lakh remains one of the strongest value-for-money options in the private segment.</p>
 
-<p>This isn't an exhaustive list. There are several other universities offering programs in the same fee ranges — some with strong regional reputations, niche specializations, or better placement support for specific industries. The ones above are a starting point, not the final word. Once you've shortlisted by budget, it's worth exploring the full list of UGC-DEB approved universities to see what else falls in your range. You can find that at <a href="https://edifyedu.in">EdifyEdu.in</a>.</p>
+<p>This isn't an exhaustive list. There are several other universities offering programs in the same fee ranges — some with strong regional reputations, niche specializations, or better placement support for specific industries. The ones above are a starting point, not the final word. Once you've shortlisted by budget, it's worth exploring the full list of UGC-DEB approved universities to see what else falls in your range. You can find that at <a href="/universities">EdifyEdu.in</a>.</p>
 
 <h2>Cheap Doesn't Always Mean Bad — But It Can</h2>
 
@@ -731,7 +685,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>The ₹1–1.75 lakh private university programs tend to offer a noticeably better platform experience — live classes, mentor support, peer interaction through virtual campuses. For most working professionals, that structure is what keeps them from dropping out quietly.</p>
 
-<div class="warning">
+<div class="callout-warning">
   <p><strong>One thing to verify yourself:</strong> Fees listed online frequently reflect introductory or discounted rates. Always ask for the full breakup — including exam fees, registration charges, and any semester-end costs — before you pay the first instalment. The number on the website is rarely the final number.</p>
 </div>
 
@@ -743,8 +697,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>That said, the hike doesn't happen automatically. It happens because you applied the learning, positioned the degree well in performance reviews, and made a case for a role upgrade. The degree is the tool. You still have to use it.</p>
 
-<div class="internal-link">
-  📘 Want to know how to evaluate which university is actually right for your situation? We've broken down the full selection process — approvals, rankings, red flags — at <a href="https://edifyedu.in/blog/how-to-choose-online-mba-university-india-2026">EdifyEdu.in</a>.
+<div class="callout-info">
+  📘 Want to know how to evaluate which university is actually right for your situation? We've broken down the full selection process — approvals, rankings, red flags — at <a href="/blog/how-to-choose-online-mba-university-india-2026">EdifyEdu.in</a>.
 </div>
 
 <h2>Who Should Go for the Budget Options vs Who Should Stretch</h2>
@@ -763,8 +717,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Picking based on price alone, without knowing what you're picking it for, is where most people go wrong. The cheapest affordable online MBA is the one that matches your goal — not just the one with the lowest number on the fee page.</p>
 
-<div class="internal-link">
-  📘 Already decided on an online MBA but not sure if it's worth it overall? Read: <a href="https://edifyedu.in/blog/is-online-mba-worth-it-2026">Is Online MBA Worth It in 2026?</a> — we get into the ROI, who benefits most, and who should skip it entirely.
+<div class="callout-info">
+  📘 Already decided on an online MBA but not sure if it's worth it overall? Read: <a href="/blog/is-online-mba-worth-it-2026">Is Online MBA Worth It in 2026?</a> — we get into the ROI, who benefits most, and who should skip it entirely.
 </div>
 
 <h2>Final Word</h2>
@@ -772,38 +726,6 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Affordable online MBAs in India in 2026 are real, UGC-valid, and employer-accepted — from programs as low as ₹54,000 to solid private university options under ₹2 lakh. The range is wide, and the right pick depends entirely on your goal, not just your budget.</p>
 
 <p>Verify the approvals yourself on the UGC-DEB portal. Ask for the full fee breakup. Check Reddit and LinkedIn alumni for honest feedback. And then make the decision with your career outcome in mind, not just the number on the brochure.</p>
-
-<div class="faq">
-  <h2>Frequently Asked Questions</h2>
-
-  <details>
-    <summary>What is the cheapest online MBA in India in 2026?</summary>
-    <p>Mizoram University currently offers one of the cheapest options at around ₹54,260 for the full program. IGNOU follows at ₹66,000. Both are UGC-DEB approved and carry the same legal validity as any other recognised online MBA degree.</p>
-  </details>
-
-  <details>
-    <summary>Is a cheap online MBA valid for government jobs?</summary>
-    <p>Yes — if it's from a UGC-DEB approved university. IGNOU and Mizoram University are central universities, which makes their degrees particularly strong for government employment and DPC promotions. Always verify the university's status on the official UGC-DEB portal before enrolling.</p>
-  </details>
-
-  <details>
-    <summary>What is the difference between a cheap online MBA and an expensive one?</summary>
-    <p>Primarily: learning platform quality, faculty access, live session availability, placement cell activity, and brand recognition. The degree's legal validity is the same if both universities are UGC-DEB approved. The experience and career support are what differ most.</p>
-  </details>
-
-  <details>
-    <summary>Can I negotiate fees for an online MBA?</summary>
-    <p>Often yes. Most universities run seasonal discount windows, early-bird waivers, and merit scholarships that aren't prominently listed. Always ask the admission counsellor directly before paying. The fee on the website is frequently not the final number.</p>
-  </details>
-
-  <details>
-    <summary>What salary hike can I expect after an affordable online MBA?</summary>
-    <p>Working professionals with existing experience typically see 30–50% salary hikes within 12–18 months, according to placement data from multiple universities and industry reports. The actual outcome depends on how you leverage the degree — the credential alone doesn't produce results without effort.</p>
-  </details>
-</div>
-
-</body>
-</html>
 
     `,
   }

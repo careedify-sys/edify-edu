@@ -235,6 +235,29 @@ ${uniBlocks.join(',\n')}
 `
 }
 
+// ── Blog content sanitizer ────────────────────────────────────────────────────
+// Strips full-page HTML shell, inline styles, duplicate title/meta, and FAQ
+// blocks that the site template already renders. Converts custom div classes
+// to the site's native callout classes. Safe to run on every sync.
+function sanitizeBlogContent(raw: string): string {
+  return raw
+    .replace(/<!DOCTYPE[^>]*>\s*/gi, '')
+    .replace(/<html[^>]*>\s*/gi, '').replace(/\s*<\/html>/gi, '')
+    .replace(/<head[\s\S]*?<\/head>\s*/gi, '')
+    .replace(/<body[^>]*>\s*/gi, '').replace(/\s*<\/body>/gi, '')
+    .replace(/<style[\s\S]*?<\/style>\s*/gi, '')
+    .replace(/<h1[^>]*>[\s\S]*?<\/h1>\s*/gi, '')
+    .replace(/<p[^>]*class=["'][^"']*\bmeta\b[^"']*["'][^>]*>[\s\S]*?<\/p>\s*/gi, '')
+    .replace(/<div[^>]*class=["'][^"']*\bfaq\b[^"']*["'][^>]*>[\s\S]*/gi, '')
+    .replace(/class="callout"/g,      'class="callout-info"')
+    .replace(/class="verdict-box"/g,  'class="callout-key"')
+    .replace(/class="checklist"/g,    'class="callout-key"')
+    .replace(/class="internal-link"/g,'class="callout-info"')
+    .replace(/class="warning"/g,      'class="callout-warning"')
+    .replace(/https?:\/\/(?:www\.)?edifyedu\.in\//g, '/')
+    .trim()
+}
+
 function generateBlogTS(posts: Record<string, any>[]): string {
   const now = new Date().toISOString().split('T')[0]
   const ts  = (s: unknown, max = 300) => esc(s, max)
@@ -248,7 +271,7 @@ function generateBlogTS(posts: Record<string, any>[]): string {
 
     const tags = splitComma(p['Tags (comma sep)'])
     const readTime = parseInt(String(p['Read Time (min)'] ?? '5')) || 5
-    const content = String(p['Content (HTML)'] ?? '<p>Content coming soon.</p>')
+    const content = sanitizeBlogContent(String(p['Content (HTML)'] ?? '<p>Content coming soon.</p>'))
       .replace(/`/g, '\\`').replace(/\\/g, '\\\\').slice(0, 20000)
 
     const slug = String(p['Slug (URL)'] ?? '').trim().replace(/^\/+/, '').replace(/^blog\//, '')
