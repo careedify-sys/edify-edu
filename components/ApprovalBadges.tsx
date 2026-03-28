@@ -233,6 +233,37 @@ export default function ApprovalBadges({
 
       {/* QS */}
       {hasQS && <ApprovalPill def={qsDef} column={isColumn} />}
+
+      {/* Any additional approvals not covered by the known badge definitions */}
+      {approvals.filter(a => {
+        const au = a.toUpperCase()
+        return !au.startsWith('UGC') && !au.startsWith('AICTE') && !au.startsWith('NAAC') &&
+               !au.startsWith('NIRF') && !au.startsWith('WES') && !au.startsWith('AIU') &&
+               au !== 'QS'
+      }).map(a => isColumn ? (
+        <div key={a} style={{
+          display: 'flex', alignItems: 'center', gap: 12,
+          padding: '10px 14px', background: '#ffffff', borderRadius: 10,
+          boxShadow: '0 1px 4px rgba(0,0,0,0.08)', marginBottom: 8,
+          border: '1px solid #F1F5F9',
+        }}>
+          <div style={{ width: 44, height: 44, borderRadius: 8, background: '#F8FAFC', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, fontSize: 18 }}>✓</div>
+          <div style={{ fontSize: 13, fontWeight: 800, color: '#0B1D35' }}>{a}</div>
+          <svg style={{ marginLeft: 'auto', flexShrink: 0 }} width="18" height="18" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="10" fill="#15803D18" />
+            <path d="M6 10.5l2.5 2.5L14 8" stroke="#15803D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </div>
+      ) : (
+        <div key={a} style={{
+          display: 'inline-flex', alignItems: 'center', gap: 6,
+          padding: '6px 12px', background: '#ffffff', borderRadius: 8,
+          boxShadow: '0 1px 3px rgba(0,0,0,0.08)', border: '1px solid rgba(0,0,0,0.07)',
+          fontSize: 11, fontWeight: 800, color: '#0B1D35',
+        }}>
+          <span style={{ color: '#15803D' }}>✓</span> {a}
+        </div>
+      ))}
     </div>
   )
 }

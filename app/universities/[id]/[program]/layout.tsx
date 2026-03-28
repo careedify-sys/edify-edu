@@ -121,7 +121,7 @@ export async function generateMetadata({ params }: { params: { id: string; progr
   // Use top spec in title for better long-tail SEO
   const topSpec = u.programDetails[prog as Program]?.specs?.[0]
   const specSuffix = topSpec && topSpec !== 'General' ? ` in ${topSpec}` : ''
-  const title = `Online ${progTitle}${specSuffix} | ${seoName} | ${nirf} | 2026`
+  const title = `${progTitle}${specSuffix} | ${seoName} | ${nirf} | 2026`
 
   const description = `Admissions open Oct 15–30, 2026. Online ${progTitle} at ${seoName}: ${fee} total, NAAC ${u.naac}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}.${specs ? ` Specs: ${specs}.` : ''} UGC DEB approved. Compare & apply!`
 

@@ -5,7 +5,7 @@ import { ChevronRight, BookOpen, Award, Users, Briefcase, TrendingUp } from 'luc
 import { formatFeeSlim as formatFee } from '@/lib/data-slim'
 import { PROGRAM_META } from '@/lib/data-client'
 import { getAllSpecs, getUniversitiesByProgram, UNIVERSITIES } from '@/lib/data'
-import { getProgramContent } from '@/lib/content'
+import { getProgramContent, getSpecContent, getSpecFallback } from '@/lib/content'
 import type { Program } from '@/lib/data'
 import ProgramPageClient from '@/components/ProgramPageClient'
 
@@ -162,13 +162,60 @@ export default async function CatchAllProgramPage(
               ))}
             </div>
 
-            <ProgramPageClient 
+            {/* About this Specialisation — only shown when a spec is active */}
+            {activeSpec && (() => {
+              const sc = getSpecContent(activeSpec) || getSpecFallback(activeSpec, program)
+              const uniWithSpec = universities.find(u => u.programDetails[program]?.specs?.includes(activeSpec))
+              const uniName = uniWithSpec?.name || `Top UGC DEB Approved Universities`
+              return (
+                <section className="card p-6 md:p-8 mt-6">
+                  <h2 className="text-xl font-bold text-navy mb-4">About Online {program} in {activeSpec}</h2>
+                  <div className="flex flex-col gap-4 text-[15px] text-ink-2 leading-relaxed">
+                    <p>
+                      {uniName.replace(/\s+online\s*$/i, '')} and other UGC DEB approved universities offer an Online {program} in {activeSpec} as a{program === 'MCA' || program === 'MSc' ? ' 2-year' : program === 'MBA' || program === 'M.Com' || program === 'MA' ? ' 2-year' : ' 3-year'} postgraduate program delivered entirely online. The program is UGC DEB approved and designed for working professionals and fresh graduates.
+                    </p>
+                    {sc.overview && <p>{sc.overview}</p>}
+                    <p>
+                      Online degrees from UGC DEB approved universities are accepted by government and private sector employers across India. The degree holds the same value as a regular on-campus degree as per UGC regulations.
+                    </p>
+                  </div>
+                </section>
+              )
+            })()}
+
+            <ProgramPageClient
               program={program}
               programSlug={programSlug}
               universities={universities}
               allSpecs={allSpecs}
               initialSpec={activeSpec}
             />
+
+            {/* Related Programs — internal linking for SEO */}
+            {program === 'MBA' && (
+              <section className="card p-6 md:p-8 mt-6">
+                <h2 className="text-lg font-bold text-navy mb-4">Related Programs You May Consider</h2>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                  {[
+                    { href: '/programs/mba', label: 'Online MBA India' },
+                    { href: '/programs/mba/finance', label: 'MBA Finance' },
+                    { href: '/programs/mba/marketing', label: 'MBA Marketing' },
+                    { href: '/programs/mba/hr', label: 'MBA Human Resources' },
+                    { href: '/programs/mba/data-science', label: 'MBA Data Science' },
+                    { href: '/compare', label: 'Compare Universities' },
+                  ].map(link => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="flex items-center gap-2 px-4 py-3 bg-white border border-border rounded-lg text-sm font-medium text-navy hover:border-amber hover:text-amber transition-colors no-underline"
+                    >
+                      <ChevronRight size={14} className="text-amber shrink-0" />
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            )}
           </div>
         </div>
       </div>

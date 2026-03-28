@@ -361,6 +361,28 @@ export default function UniversityPageClient({ university: u }: Props) {
                 </section>
               )}
 
+              {/* Admissions Open Banner */}
+              <section className="card-lg p-6" style={{ background: 'linear-gradient(135deg, #0B1D35, #142540)', border: '1px solid rgba(200,129,26,0.3)' }}>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div>
+                    <div className="text-[11px] font-bold text-amber uppercase tracking-widest mb-1">🎓 Admissions Open</div>
+                    <h2 className="font-display text-xl font-bold text-white mb-2">Admissions Open — July 2026 Batch</h2>
+                    <ul className="flex flex-col gap-1.5">
+                      <li className="text-sm text-slate-300">📅 Last date to apply: <strong className="text-white">October 15–30, 2026</strong></li>
+                      <li className="text-sm text-slate-300">💻 Mode: <strong className="text-white">100% Online — apply from anywhere in India</strong></li>
+                      <li className="text-sm text-slate-300">✅ Eligibility: <strong className="text-white">{u.eligibility}</strong></li>
+                    </ul>
+                  </div>
+                  <button
+                    onClick={() => setEnquiryOpen(true)}
+                    className="shrink-0 px-6 py-3 rounded-xl font-bold text-white whitespace-nowrap"
+                    style={{ background: 'linear-gradient(135deg,#c9922a,#e0a93a)', fontSize: 14 }}
+                  >
+                    Check Eligibility &amp; Apply →
+                  </button>
+                </div>
+              </section>
+
               {/* Who Should Apply */}
               <section className="card-lg p-6">
                 <h2 className="font-display text-xl font-bold text-navy mb-4">Who Should Apply?</h2>

@@ -48,11 +48,11 @@ const OUTCOMES: Record<string, string> = {
   'Accounting': 'Prepare and interpret financial statements per Indian and global standards',
 }
 
-function getOutcome(subject: string): string {
+function getOutcome(subject: string): string | null {
   for (const [kw, outcome] of Object.entries(OUTCOMES)) {
     if (subject.toLowerCase().includes(kw.toLowerCase())) return outcome
   }
-  return 'Build practical knowledge and skills in this subject area'
+  return null
 }
 
 function SubjectList({ text }: { text: string }) {
@@ -60,15 +60,18 @@ function SubjectList({ text }: { text: string }) {
   if (!subjects.length) return null
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-      {subjects.map((subj, i) => (
-        <div key={i} style={{ padding: '10px 14px', borderRadius: 10, background: 'var(--surface-2)', border: '1px solid #E2E8F4', display: 'flex', gap: 12, alignItems: 'flex-start', }}>
-          <div style={{ width: 24, height: 24, borderRadius: 6, flexShrink: 0, background: 'rgba(200,129,26,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 11, fontWeight: 800, color: 'var(--amber-text)', }}>{i + 1}</div>
-          <div className="flex-1 min-w-0">
-            <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--ink)', marginBottom: 2 }}>{subj}</div>
-            <div className="text-[11px] text-ink-3 leading-snug">{getOutcome(subj)}</div>
+      {subjects.map((subj, i) => {
+        const outcome = getOutcome(subj)
+        return (
+          <div key={i} style={{ padding: '10px 14px', borderRadius: 10, background: 'var(--surface-2)', border: '1px solid #E2E8F4', display: 'flex', gap: 12, alignItems: 'flex-start', }}>
+            <div style={{ width: 24, height: 24, borderRadius: 6, flexShrink: 0, background: 'rgba(200,129,26,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 11, fontWeight: 800, color: 'var(--amber-text)', }}>{i + 1}</div>
+            <div className="flex-1 min-w-0">
+              <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--ink)' }}>{subj}</div>
+              {outcome && <div className="text-[11px] text-ink-3 leading-snug mt-0.5">{outcome}</div>}
+            </div>
           </div>
-        </div>
-      ))}
+        )
+      })}
     </div>
   )
 }

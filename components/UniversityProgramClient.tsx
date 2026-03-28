@@ -185,6 +185,77 @@ function FullPage({ u, program, programSlug, pd }: {
               {/* Syllabus */}
               {syllabus && <SyllabusSection syllabus={syllabus} program={program} universityName={u.name} />}
 
+              {/* Examination Pattern */}
+              <section className="card-lg p-6">
+                <h2 className="font-display text-xl font-bold text-navy mb-4">Examination Pattern</h2>
+                <div className="overflow-x-auto">
+                  <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14 }}>
+                    <thead>
+                      <tr style={{ background: 'var(--surface-2)' }}>
+                        <th style={{ padding: '10px 14px', textAlign: 'left', fontWeight: 700, color: 'var(--navy)', borderBottom: '2px solid var(--border)', fontSize: 12, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Component</th>
+                        <th style={{ padding: '10px 14px', textAlign: 'left', fontWeight: 700, color: 'var(--navy)', borderBottom: '2px solid var(--border)', fontSize: 12, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Details</th>
+                        <th style={{ padding: '10px 14px', textAlign: 'right', fontWeight: 700, color: 'var(--navy)', borderBottom: '2px solid var(--border)', fontSize: 12, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Weightage</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        { component: 'Internal Assessment', details: 'Assignments & Projects', weightage: '30%' },
+                        { component: 'External Assessment', details: 'End-term Examination', weightage: '70%' },
+                        { component: 'Section A', details: 'Subjective Questions', weightage: '—' },
+                        { component: 'Section B', details: 'Case Studies', weightage: '—' },
+                        { component: 'Section C', details: 'Multiple Choice Questions (MCQs)', weightage: '—' },
+                      ].map((row, i) => (
+                        <tr key={i} style={{ borderBottom: '1px solid var(--border)', background: i % 2 === 0 ? '#fff' : 'var(--surface-2)' }}>
+                          <td style={{ padding: '10px 14px', fontWeight: 600, color: 'var(--ink)' }}>{row.component}</td>
+                          <td style={{ padding: '10px 14px', color: 'var(--ink-2)' }}>{row.details}</td>
+                          <td style={{ padding: '10px 14px', textAlign: 'right', fontWeight: 700, color: row.weightage !== '—' ? 'var(--amber-text)' : 'var(--ink-3)' }}>{row.weightage}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <div className="mt-4 grid sm:grid-cols-2 gap-3">
+                  <div className="flex items-start gap-2 text-sm text-ink-2">
+                    <BookOpen size={14} className="text-amber-text shrink-0 mt-0.5" />
+                    <span><strong>Minimum passing:</strong> 40% in each subject</span>
+                  </div>
+                  <div className="flex items-start gap-2 text-sm text-ink-2">
+                    <BookOpen size={14} className="text-amber-text shrink-0 mt-0.5" />
+                    <span><strong>Medium of instruction:</strong> English</span>
+                  </div>
+                </div>
+              </section>
+
+              {/* Who Can Apply */}
+              <section className="card-lg p-6">
+                <h2 className="font-display text-xl font-bold text-navy mb-4">Who Can Apply</h2>
+                <div className="flex flex-col gap-3 mb-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle size={18} className="text-green-500 shrink-0 mt-0.5" />
+                    <span className="text-sm text-ink-2">Completed graduation from a UGC recognised university</span>
+                  </div>
+                  {u.eligibilityPct > 0 && (
+                    <div className="flex items-start gap-3">
+                      <CheckCircle size={18} className="text-green-500 shrink-0 mt-0.5" />
+                      <span className="text-sm text-ink-2">Minimum <strong>{u.eligibilityPct}%</strong> marks in graduation</span>
+                    </div>
+                  )}
+                  <div className="flex items-start gap-3">
+                    <CheckCircle size={18} className="text-green-500 shrink-0 mt-0.5" />
+                    <span className="text-sm text-ink-2">No upper age limit — working professionals welcome</span>
+                  </div>
+                  {u.forWho.map(item => (
+                    <div key={item} className="flex items-start gap-3">
+                      <CheckCircle size={18} className="text-green-500 shrink-0 mt-0.5" />
+                      <span className="text-sm text-ink-2">{item}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="p-4 bg-surface-2 rounded-lg border border-border text-sm text-ink-2">
+                  <strong>Eligibility:</strong> {u.eligibility}
+                </div>
+              </section>
+
               {/* FAQs */}
               <section>
                 <h2 className="font-display text-xl font-bold text-navy mb-4">{program} at {u.abbr} — FAQs</h2>

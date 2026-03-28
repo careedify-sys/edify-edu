@@ -47,7 +47,8 @@ export async function generateMetadata(
 
   const year = new Date().getFullYear()
   const pd = u.programDetails[program]
-  const title = `${u.name} Online ${program} ${year} — Fees, Syllabus, Placements & Reviews`
+  const cleanName = u.name.replace(/\s+online\s*$/i, '')
+  const title = `${cleanName} Online ${program} ${year} — Fees, Syllabus, Placements & Reviews`
   const description = `${u.name} online ${program} — Total fees ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}, duration ${pd?.duration || '2 Years'}. ${pd?.specs?.length ? `${pd.specs.length}+ specialisations.` : ''} NAAC ${u.naac}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved. EMI from ₹${u.emiFrom.toLocaleString()}/month. Admission open ${year}.`
 
   const keywords = [
