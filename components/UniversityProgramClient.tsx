@@ -367,7 +367,10 @@ function FullPage({ u, program, programSlug, pd }: {
                         <div key={i} className="bg-white border border-border rounded-xl p-5">
                           <div className="flex items-start justify-between gap-3 mb-2">
                             <div>
-                              <div className="font-bold text-navy text-sm">{r.name}</div>
+                              <div className="flex items-center gap-1">
+                                <span className="font-bold text-navy text-sm">{r.name}</span>
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="7" fill="var(--sage)"/><path d="M4 7l2 2 4-4" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                              </div>
                               <div className="text-xs text-ink-3">{r.city}, India</div>
                             </div>
                             <div className="flex flex-col items-end gap-1">
@@ -377,9 +380,16 @@ function FullPage({ u, program, programSlug, pd }: {
                           </div>
                           <div className="text-amber text-sm mb-2">{'★'.repeat(r.rating)}{'☆'.repeat(5-r.rating)}</div>
                           <p className="text-sm text-ink-2 leading-relaxed">{r.review}</p>
-                          <div className="mt-2 text-[11px] text-green-600 font-semibold">✓ Verified Enrollment</div>
                         </div>
                       ))}
+                    </div>
+                    <div className="mt-4 text-center">
+                      <button
+                        onClick={() => setEnquiryOpen(true)}
+                        className="px-6 py-2.5 rounded-lg border border-amber text-amber-text text-sm font-semibold hover:bg-amber/10 transition-colors bg-transparent cursor-pointer"
+                      >
+                        Write a Review
+                      </button>
                     </div>
                   </section>
                 )
@@ -484,6 +494,7 @@ function LockedPage({ u, program, programSlug, pd }: {
   const [submitted, setSubmitted] = useState(false)
   const [submitting, setSubmitting] = useState(false)
   const [error, setError]         = useState('')
+  const [enquiryOpen, setEnquiryOpen] = useState(false)
 
   const meta      = PROGRAM_META[program]
   const otherUnis = getUniversitiesByProgram(program).filter(x => x.id !== u.id).slice(0, 4)
@@ -749,7 +760,11 @@ function LockedPage({ u, program, programSlug, pd }: {
                 {reviews.map((r, i) => (
                   <div key={i} className="bg-surface-1 border border-border rounded-xl p-5">
                     <div className="flex items-start justify-between gap-3 mb-2">
-                      <div className="font-bold text-navy text-sm">{r.name} · {r.city}, India</div>
+                      <div className="flex items-center gap-1 flex-wrap">
+                      <span className="font-bold text-navy text-sm">{r.name}</span>
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="7" fill="var(--sage)"/><path d="M4 7l2 2 4-4" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                      <span className="text-navy text-sm">· {r.city}, India</span>
+                    </div>
                       <div className="flex flex-col items-end gap-1 shrink-0">
                         <span className="px-2 py-0.5 bg-amber/10 text-amber-text text-[10px] font-bold rounded-full">{r.program}</span>
                         <span className="text-xs text-ink-3">{r.date}</span>
@@ -757,9 +772,16 @@ function LockedPage({ u, program, programSlug, pd }: {
                     </div>
                     <div className="text-amber text-sm mb-2">{'★'.repeat(r.rating)}{'☆'.repeat(5-r.rating)}</div>
                     <p className="text-sm text-ink-2 leading-relaxed">{r.review}</p>
-                    <div className="mt-2 text-[11px] text-green-600 font-semibold">✓ Verified Enrollment</div>
                   </div>
                 ))}
+              </div>
+              <div className="mt-4 text-center">
+                <button
+                  onClick={() => setEnquiryOpen(true)}
+                  className="px-6 py-2.5 rounded-lg border border-amber text-amber-text text-sm font-semibold hover:bg-amber/10 transition-colors bg-transparent cursor-pointer"
+                >
+                  Write a Review
+                </button>
               </div>
             </div>
           )
@@ -791,6 +813,7 @@ function LockedPage({ u, program, programSlug, pd }: {
           </div>
         )}
       </div>
+      <EnquiryModal isOpen={enquiryOpen} onClose={() => setEnquiryOpen(false)} universityName={u.name} universityId={u.id} defaultProgram={program} />
     </>
   )
 }
