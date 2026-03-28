@@ -427,10 +427,81 @@ export default function SpecializationPageClient({ university: u, program, speci
                 </section>
               )}
 
+              {/* Examination Pattern */}
+              <section className="card-lg p-6">
+                <h2 className="font-display text-xl font-bold text-navy mb-4">Examination Pattern</h2>
+                <div className="overflow-x-auto">
+                  <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14 }}>
+                    <thead>
+                      <tr style={{ background: 'var(--surface-2)' }}>
+                        <th style={{ padding: '10px 14px', textAlign: 'left', fontWeight: 700, color: 'var(--navy)', borderBottom: '2px solid var(--border)', fontSize: 12, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Component</th>
+                        <th style={{ padding: '10px 14px', textAlign: 'left', fontWeight: 700, color: 'var(--navy)', borderBottom: '2px solid var(--border)', fontSize: 12, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Details</th>
+                        <th style={{ padding: '10px 14px', textAlign: 'right', fontWeight: 700, color: 'var(--navy)', borderBottom: '2px solid var(--border)', fontSize: 12, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Weightage</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        { component: 'Internal Assessment', details: 'Assignments & Projects', weightage: '30%' },
+                        { component: 'External Assessment', details: 'End-term Examination', weightage: '70%' },
+                        { component: 'Section A', details: 'Subjective Questions', weightage: '—' },
+                        { component: 'Section B', details: 'Case Studies', weightage: '—' },
+                        { component: 'Section C', details: 'Multiple Choice Questions (MCQs)', weightage: '—' },
+                      ].map((row, i) => (
+                        <tr key={i} style={{ borderBottom: '1px solid var(--border)', background: i % 2 === 0 ? '#fff' : 'var(--surface-2)' }}>
+                          <td style={{ padding: '10px 14px', fontWeight: 600, color: 'var(--ink)' }}>{row.component}</td>
+                          <td style={{ padding: '10px 14px', color: 'var(--ink-2)' }}>{row.details}</td>
+                          <td style={{ padding: '10px 14px', textAlign: 'right', fontWeight: 700, color: row.weightage !== '—' ? 'var(--amber-text)' : 'var(--ink-3)' }}>{row.weightage}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <div className="mt-4 grid sm:grid-cols-2 gap-3">
+                  <div className="flex items-start gap-2 text-sm text-ink-2">
+                    <BookOpen size={14} className="text-amber shrink-0 mt-0.5" />
+                    <span><strong>Minimum passing:</strong> 40% in each subject</span>
+                  </div>
+                  <div className="flex items-start gap-2 text-sm text-ink-2">
+                    <BookOpen size={14} className="text-amber shrink-0 mt-0.5" />
+                    <span><strong>Medium of instruction:</strong> English</span>
+                  </div>
+                </div>
+              </section>
+
+              {/* Who Can Apply */}
+              <section className="card-lg p-6">
+                <h2 className="font-display text-xl font-bold text-navy mb-4">Who Can Apply</h2>
+                <div className="flex flex-col gap-3 mb-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle size={18} className="text-green-500 shrink-0 mt-0.5" />
+                    <span className="text-sm text-ink-2">Completed graduation from a UGC recognised university</span>
+                  </div>
+                  {u.eligibilityPct > 0 && (
+                    <div className="flex items-start gap-3">
+                      <CheckCircle size={18} className="text-green-500 shrink-0 mt-0.5" />
+                      <span className="text-sm text-ink-2">Minimum <strong>{u.eligibilityPct}%</strong> marks in graduation</span>
+                    </div>
+                  )}
+                  <div className="flex items-start gap-3">
+                    <CheckCircle size={18} className="text-green-500 shrink-0 mt-0.5" />
+                    <span className="text-sm text-ink-2">No upper age limit — working professionals welcome</span>
+                  </div>
+                  {u.forWho.map(item => (
+                    <div key={item} className="flex items-start gap-3">
+                      <CheckCircle size={18} className="text-green-500 shrink-0 mt-0.5" />
+                      <span className="text-sm text-ink-2">{item}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="p-4 bg-surface-2 rounded-lg border border-border text-sm text-ink-2">
+                  <strong>Eligibility:</strong> {u.eligibility}
+                </div>
+              </section>
+
               {/* FAQs */}
               <section>
                 <h2 className="font-display text-xl font-bold text-navy mb-4">
-                  FAQs - {u.name} {progInfo.name} in {specialization}
+                  FAQs — {u.name.replace(/\s+online\s*$/i, '')} {progInfo.name} in {specialization}
                 </h2>
                 <div className="flex flex-col gap-2">
                   {faqs.map((faq, i) => (
@@ -451,12 +522,37 @@ export default function SpecializationPageClient({ university: u, program, speci
                   ))}
                 </div>
               </section>
+              {/* Related Programs — internal linking for SEO */}
+              {program === 'MBA' && (
+                <section className="card-lg p-6">
+                  <h2 className="font-display text-lg font-bold text-navy mb-4">Related Programs You May Consider</h2>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                    {[
+                      { href: '/programs/mba', label: 'Best Online MBA India 2026' },
+                      { href: '/programs/mba/finance', label: 'MBA Finance' },
+                      { href: '/programs/mba/marketing', label: 'MBA Marketing' },
+                      { href: '/programs/mba/hr', label: 'MBA Human Resources' },
+                      { href: '/programs/mba/data-science', label: 'MBA Data Science' },
+                      { href: '/compare', label: 'Compare Universities' },
+                    ].map(link => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className="flex items-center gap-2 px-4 py-3 bg-white border border-border rounded-lg text-sm font-medium text-navy hover:border-amber hover:text-amber transition-colors no-underline"
+                      >
+                        <ChevronRight size={14} className="text-amber shrink-0" />
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+                </section>
+              )}
             </div>
 
             {/* Right Sidebar */}
             <div className="w-full lg:w-72 shrink-0">
               <div className="sticky top-20 flex flex-col gap-4">
-                
+
                 {/* Admission CTA */}
                 <div className="p-4 rounded-xl" style={{background:'linear-gradient(135deg,#0B1D35,#142540)',border:'1px solid rgba(200,129,26,0.3)'}}>
                   <div className="text-[10px] font-bold text-amber uppercase tracking-wider mb-2">🎓 Admissions Open</div>
