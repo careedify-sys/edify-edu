@@ -5,6 +5,7 @@ import {
   CheckCircle, Briefcase, TrendingUp, BookOpen, ChevronRight, Award, GraduationCap, Clock, IndianRupee, Lock
 } from 'lucide-react'
 import { formatFeeSlim as formatFee } from '@/lib/data-slim'
+import { cleanCareerOutcome } from '@/lib/format'
 import { getSpecContent, getSpecFallback, getMasterSyllabus, getUniversitySyllabus } from '@/lib/content'
 import ApprovalBadges from '@/components/ApprovalBadges'
 import type { University, Program } from '@/lib/data'
@@ -822,7 +823,7 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
   }
 
   const shortDesc = pd?.careerOutcome
-    ? pd.careerOutcome.split('.').slice(0, 2).join('.').trim() + '.'
+    ? cleanCareerOutcome(pd.careerOutcome).split('.').slice(0, 2).join('.').trim() + '.'
     : `${progInfo.name} in ${specialization} from ${u.name}. UGC DEB approved, ${pd?.duration || progInfo.duration} program.`
   const cleanName = u.name.replace(/\bOnline\b\s*$/i, '').trim()
 

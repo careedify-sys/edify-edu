@@ -6,6 +6,7 @@ import {
   Award, Users
 } from 'lucide-react'
 import { getUniversitiesByProgram, formatFeeSlim as formatFee } from '@/lib/data-slim'
+import { cleanCareerOutcome } from '@/lib/format'
 import { PROGRAM_META } from '@/lib/data-client'
 import { getProgramContent, getSpecContent, getSpecFallback, getUniversitySyllabus, getMasterSyllabus } from '@/lib/content'
 import SyllabusSection from '@/components/SyllabusSection'
@@ -102,7 +103,7 @@ function FullPage({ u, program, programSlug, pd }: {
               <h1 className="font-display" style={{ fontSize: 'clamp(1.6rem,4vw,2.4rem)', fontWeight: 800, color: '#fff', lineHeight: 1.15, marginBottom: 10 }}>
                 {program} from {u.name}
               </h1>
-              <p className="text-slate-400 text-[15px] leading-relaxed mb-5">{pd.careerOutcome.replace(/—\s*—/g, '—')}</p>
+              <p className="text-slate-400 text-[15px] leading-relaxed mb-5">{cleanCareerOutcome(pd.careerOutcome)}</p>
 
               <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 sm:gap-3 mb-6">
                 {[
@@ -499,7 +500,7 @@ function LockedPage({ u, program, programSlug, pd }: {
   const meta      = PROGRAM_META[program]
   const otherUnis = getUniversitiesByProgram(program).filter(x => x.id !== u.id).slice(0, 4)
   const shortDesc = pd.careerOutcome
-    ? pd.careerOutcome.split('.').slice(0, 2).join('.').trim() + '.'
+    ? cleanCareerOutcome(pd.careerOutcome).split('.').slice(0, 2).join('.').trim() + '.'
     : `Online ${program} from ${u.name}. UGC DEB approved, ${pd.duration} program.`
   const cleanName = u.name.replace(/\bOnline\b\s*$/i, '').trim()
 

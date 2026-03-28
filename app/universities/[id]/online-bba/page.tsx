@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
+import { cleanCareerOutcome } from '@/lib/format'
 
 const makeSlug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
 
@@ -55,7 +56,7 @@ export default async function OnlineBBAPage({ params }: { params: Promise<{ id: 
             {u.name} Online BBA
           </h1>
           <p className="text-slate-400 text-[15px] max-w-2xl">
-            {pd?.careerOutcome || `Bachelor of Business Administration from ${u.name}. Build your foundation in business management and leadership skills.`}
+            {cleanCareerOutcome(pd?.careerOutcome || '') || `Bachelor of Business Administration from ${u.name}. Build your foundation in business management and leadership skills.`}
           </p>
         </div>
       </div>

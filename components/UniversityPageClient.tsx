@@ -6,6 +6,7 @@ import {
   Briefcase, TrendingUp, Building2, Plus, BookOpen
 } from 'lucide-react'
 import { getUniversitiesByProgram, formatFeeSlim as formatFee } from '@/lib/data-slim'
+import { cleanCareerOutcome } from '@/lib/format'
 import { getProgramContent } from '@/lib/content'
 import type { Program, University } from '@/lib/data'
 import EnquiryModal from '@/components/EnquiryModal'
@@ -354,7 +355,7 @@ export default function UniversityPageClient({ university: u }: Props) {
                       <TrendingUp className="text-green-600 shrink-0 mt-0.5" size={20}/>
                       <div>
                         <div className="font-semibold text-green-800 mb-1">Career Outcome</div>
-                        <p className="text-sm text-green-700">{pd.careerOutcome}</p>
+                        <p className="text-sm text-green-700">{cleanCareerOutcome(pd.careerOutcome)}</p>
                       </div>
                     </div>
                   </div>

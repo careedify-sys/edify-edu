@@ -379,7 +379,7 @@ export default function ExcelImportPage() {
             avgSalary: salary,
             topCompanies: pd.hiring.length ? pd.hiring : ['TCS','Infosys','Wipro'],
             internshipType: 'Industry project and virtual internship',
-            careerOutcome: `UGC DEB approved ${prog} from ${uniName.slice(0,40).trimEnd()} — recognised for corporate hiring.`,
+            careerOutcome: `UGC DEB approved ${prog} from ${uniName.replace(/\s+online\s*$/i, '').trim()} — recognised for corporate hiring.`,
             edifySkills: parseEdifySkills(pd.edify_skills),
             edifyInternships: parseEdifyInternships(pd.edify_internships),
           }

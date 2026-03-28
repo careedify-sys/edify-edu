@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { BookOpen, Star, Users, TrendingUp, ArrowRight } from 'lucide-react'
 import { getSortRank, formatFeeSlim as formatFee } from '@/lib/data-slim'
+import { cleanCareerOutcome } from '@/lib/format'
 import type { Program, University } from '@/lib/data'
 import EnquiryModal from '@/components/EnquiryModal'
 
@@ -399,7 +400,7 @@ export default function ProgramPageClient({ program, programSlug, universities, 
                 </div>
               </div>
               <p className="text-xs text-ink-2 leading-relaxed">
-                {u.highlight} · {u.programDetails?.[program]?.careerOutcome || `Strong placement assistance for ${program} graduates.`}
+                {u.highlight} · {cleanCareerOutcome(u.programDetails?.[program]?.careerOutcome || '') || `Strong placement assistance for ${program} graduates.`}
               </p>
               <Link href={`/universities/${u.id}/${programSlug}`} className="text-xs font-bold text-amber-text mt-3 inline-block hover:underline">
                 Read Full Review →

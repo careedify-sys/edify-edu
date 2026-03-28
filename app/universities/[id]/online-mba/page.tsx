@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
+import { cleanCareerOutcome } from '@/lib/format'
 
 // Helper to create slug
 const makeSlug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
@@ -78,7 +79,7 @@ export default async function OnlineMBAPage(
             {u.name} Online MBA
           </h1>
           <p className="text-slate-400 text-[15px] max-w-2xl mb-6">
-            {pd?.careerOutcome || `Advance your career with an Online MBA from ${u.name}. Choose from ${specs.length}+ industry-relevant specializations.`}
+            {cleanCareerOutcome(pd?.careerOutcome || '') || `Advance your career with an Online MBA from ${u.name}. Choose from ${specs.length}+ industry-relevant specializations.`}
           </p>
           <div className="flex flex-wrap gap-3">
             <div className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg">

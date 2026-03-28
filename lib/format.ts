@@ -40,6 +40,24 @@ export function formatCompactINR(n: number): string {
 }
 
 /**
+ * Cleans a careerOutcome string that may have been truncated at 40 chars during import,
+ * leaving broken unclosed parentheses or en-dash fragments before "— recognised".
+ * Examples fixed:
+ *   "...Amrita Vishwa Vidyapeetham (Amrita — recognised..." → "...Amrita Vishwa Vidyapeetham — recognised..."
+ *   "...(DSU) On — recognised..."                          → "...(DSU) — recognised..."
+ *   "...— — recognised..."                                 → "...— recognised..."
+ */
+export function cleanCareerOutcome(text: string): string {
+  if (!text) return text
+  return text
+    .replace(/—\s*—/g, '—')                                   // double em-dash → single
+    .replace(/\s*[\(–][^—)]*—(\s*recognised)/g, ' —$1')       // unclosed paren or en-dash fragment before "recognised"
+    .replace(/\)\s+\w+\s+—(\s*recognised)/g, ') —$1')         // closed paren + trailing word + dash (e.g. "(DSU) On —")
+    .replace(/\s{2,}/g, ' ')
+    .trim()
+}
+
+/**
  * Formats common numbers with standard comma grouping (thousands).
  * Safe for hydration because it doesn't use system locale.
  */
