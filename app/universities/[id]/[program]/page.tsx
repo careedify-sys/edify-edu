@@ -94,12 +94,13 @@ function ProgramSchema({ u, program, programSlug }: {
 }) {
   const year = new Date().getFullYear()
   const pd = u.programDetails[program]
+  const cleanName = u.name.replace(/\s+online\s*$/i, '').trim()
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'Course',
-        name: `${u.name} Online ${program}`,
+        name: `${cleanName} Online ${program}`,
         description: `UGC DEB approved online ${program} from ${u.name}. NAAC ${u.naac} accredited.`,
         provider: {
           '@type': 'CollegeOrUniversity',

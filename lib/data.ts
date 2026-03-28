@@ -304,7 +304,7 @@ export const UNIVERSITIES: University[] = [
         avgSalary: '₹5L – ₹15L per annum',
         topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Lovely Professional University (LPU — recognised for corporate hiring.'},
+        careerOutcome: 'UGC DEB approved MBA from Lovely Professional University (LPU) — recognised for corporate hiring.'},
       'MCA': {
         specs: ['ML & AI specialization; GE basket electives', 'Data Science specialization; GE basket electives', 'Cyber Security specialization; GE basket electives', 'Full Stack Web Development specialization; GE bask', 'VR Game Development specialization; GE basket elec'],
         fees: '₹29K – ₹116K',
@@ -313,7 +313,7 @@ export const UNIVERSITIES: University[] = [
         avgSalary: '₹8L – ₹30L per annum',
         topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Lovely Professional University (LPU — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Lovely Professional University (LPU) — recognised for corporate hiring.',
       },
       'BBA': {
         specs: ['16 Specializations: Entrepreneurship', 'HRM', 'Marketing', 'International Business', 'Family Business', 'Digital Marketing', 'Fin-Tech', 'Retail and E-Commerce', 'Artificial Intelligence', 'HealthCare Management', 'Logistics and Supply Chain Management', 'Foreign Exchange Management', 'Travel & Tourism Management', 'Event Management'],
@@ -323,7 +323,7 @@ export const UNIVERSITIES: University[] = [
         avgSalary: '₹3L – ₹8L per annum',
         topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Lovely Professional University (LPU — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Lovely Professional University (LPU) — recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['Cyber Security', 'Data Science', 'Full Stack Web Development'],
@@ -333,7 +333,7 @@ export const UNIVERSITIES: University[] = [
         avgSalary: '₹3L – ₹7L per annum',
         topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Lovely Professional University (LPU — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from Lovely Professional University (LPU) — recognised for corporate hiring.',
       },
       'BA': {
         specs: ['No formal specializations — broad humanities & soc'],
@@ -343,7 +343,7 @@ export const UNIVERSITIES: University[] = [
         avgSalary: '₹2L – ₹6L per annum',
         topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BA from Lovely Professional University (LPU — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BA from Lovely Professional University (LPU) — recognised for corporate hiring.',
       },
       'M.Com': {
         specs: ['Commerce & Finance focus; no separate sub-speciali'],
@@ -353,7 +353,7 @@ export const UNIVERSITIES: University[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved M.Com from Lovely Professional University (LPU — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved M.Com from Lovely Professional University (LPU) — recognised for corporate hiring.',
       },
       'MSc': {
         specs: ['Mathematics focus; no separate specialization', 'Economics focus; research-oriented'],
@@ -363,7 +363,7 @@ export const UNIVERSITIES: University[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MSc from Lovely Professional University (LPU — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MSc from Lovely Professional University (LPU) — recognised for corporate hiring.',
       }
     },
     color: '#1B4FBE',
@@ -1934,7 +1934,7 @@ export const UNIVERSITIES: University[] = [
         avgSalary: '₹5L – ₹22L per annum',
         topCompanies: ['Amazon', 'Microsoft', 'TCS', 'Infosys', 'Wipro', 'Cognizant', 'HCL', 'Accenture', 'Flipkart', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Chandigarh University (CU Online) — — recognised for corporate hiring.'},
+        careerOutcome: 'UGC DEB approved MBA from Chandigarh University (CU Online) — recognised for corporate hiring.'},
       'MCA': {
         specs: ['Artificial Intelligence', 'Cloud Computing', 'Data Analytics', 'Full-Stack Development'],
         fees: '₹0.3L – ₹1.6L',
@@ -1943,7 +1943,7 @@ export const UNIVERSITIES: University[] = [
         avgSalary: '₹4L – ₹20L per annum',
         topCompanies: ['Amazon', 'Microsoft', 'TCS', 'Infosys', 'Wipro', 'Cognizant', 'HCL', 'Accenture', 'Flipkart', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Chandigarh University (CU Online) — — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Chandigarh University (CU Online) — recognised for corporate hiring.',
       },
       'BBA': {
         specs: ['Business Analytics specialization with data-focuse'],
@@ -1953,7 +1953,7 @@ export const UNIVERSITIES: University[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['Amazon', 'Microsoft', 'TCS', 'Infosys', 'Wipro', 'Cognizant', 'HCL', 'Accenture', 'Flipkart', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Chandigarh University (CU Online) — — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Chandigarh University (CU Online) — recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['General Management'],
@@ -1963,7 +1963,7 @@ export const UNIVERSITIES: University[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Chandigarh University (CU Online) — — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from Chandigarh University (CU Online) — recognised for corporate hiring.',
       },
       'MSc': {
         specs: ['Data Science focus; no sub-specializations; 80 cre'],
@@ -1973,7 +1973,7 @@ export const UNIVERSITIES: University[] = [
         avgSalary: '₹6L – ₹20L per annum',
         topCompanies: ['Amazon', 'Microsoft', 'TCS', 'Infosys', 'Wipro', 'Cognizant', 'HCL', 'Accenture', 'Flipkart', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MSc from Chandigarh University (CU Online) — — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MSc from Chandigarh University (CU Online) — recognised for corporate hiring.',
       }
     },
     color: '#2563EB',
