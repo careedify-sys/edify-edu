@@ -119,6 +119,7 @@ export async function generateMetadata({ params }: { params: { id: string; progr
 
   // ── Title: NO Edify branding ──────────────────────────────────
   // Use top spec in title for better long-tail SEO
+  const cleanName = u.name.replace(/\bOnline\b\s*$/i, '').trim()
   const topSpec = u.programDetails[prog as Program]?.specs?.[0]
   const specSuffix = topSpec && topSpec !== 'General' ? ` in ${topSpec}` : ''
   const title = `${progTitle}${specSuffix} | ${seoName} | ${nirf} | 2026`

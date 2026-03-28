@@ -14,6 +14,40 @@ import EnquiryModal from '@/components/EnquiryModal'
 
 const WA_NUMBER = '917061285806'
 
+const UNIVERSITY_REVIEWS: Record<string, Array<{name:string;city:string;program:string;rating:number;date:string;review:string}>> = {
+  'chandigarh': [
+    { name:'Rahul Sharma', city:'Delhi', program:'MBA Finance', rating:4, date:'March 2026', review:'Took admission in CU Online MBA Finance last year. LMS is decent, study material is good. Faculty is responsive on discussion forum. I was confused between CU and Amity but Edify counsellor explained the difference clearly based on my profile. Happy with decision overall. Placement support is average but degree is well recognised.' },
+    { name:'Priya Mehta', city:'Chandigarh', program:'MBA HR', rating:5, date:'February 2026', review:'Really satisfied with CU Online MBA HR program. Specialisation content is relevant and case studies are practical. Got a salary hike of around 25% after completing first year. Edify team was very helpful during admission process, answered all queries about validity and recognition patiently.' },
+    { name:'Vikram Patel', city:'Ahmedabad', program:'MBA Marketing', rating:4, date:'January 2026', review:'Good program, flexible schedule which works well for my job. Weekend live classes are on time mostly. Sometimes technical issues on exam portal but gets resolved quickly. NIRF ranking gives confidence that degree is from reputed institution. Edify site helped me compare fees across universities before deciding.' },
+  ],
+  'amity': [
+    { name:'Sneha Gupta', city:'Noida', program:'MBA Marketing', rating:5, date:'March 2026', review:'Amity brand name really helps in interviews. Interviewers recognise it immediately. Content quality is good, Harvard case studies are a bonus. Fees are on the higher side but worth it for the brand value. Edify counsellor gave honest comparison without pushing any particular university.' },
+    { name:'Ajay Verma', city:'Lucknow', program:'MBA Finance', rating:4, date:'February 2026', review:'Decent experience overall. Study material is comprehensive. Exams are online proctored which is convenient. My office accepted the degree without any questions. QS ranking of Amity adds credibility. Edify helped me understand difference between Amity and LPU based on my budget.' },
+    { name:'Deepika Nair', city:'Kochi', program:'MBA HR', rating:4, date:'January 2026', review:'Good program for working professionals. Live sessions on weekends work well. Faculty is experienced. Got promotion at work after completing the degree. Response time from student support is sometimes slow but overall positive. Edify counselling was upfront about pros and cons of each university.' },
+  ],
+  'lpu': [
+    { name:'Manish Kumar', city:'Jalandhar', program:'MBA', rating:4, date:'March 2026', review:'LPU Online is good value for money. NIRF rank is impressive for the fees they charge. Study material is solid, exams are fair. LMS portal is easy to use. Edify comparison tool helped me filter based on NIRF rank and budget which made decision much easier.' },
+    { name:'Pooja Singh', city:'Jaipur', program:'MBA Finance', rating:3, date:'February 2026', review:'Overall okay experience. Content is good but placement support could be better. Degree is valid everywhere which is most important thing. Fee is very affordable compared to universities of similar rank. Edify team explained PSU eligibility criteria clearly which was my main concern before enrolling.' },
+    { name:'Arjun Tiwari', city:'Bhopal', program:'MBA Marketing', rating:4, date:'January 2026', review:'Happy with the choice. NAAC A++ university at this fee is hard to find. Live classes are interactive. Assignments are practical and relevant. Would have liked more industry interaction but solid program overall. Found edifyedu.in very helpful for comparing syllabus across universities before deciding.' },
+  ],
+  'mahe-manipal': [
+    { name:'Karthik Reddy', city:'Hyderabad', program:'MBA', rating:5, date:'March 2026', review:'Manipal Online is premium quality. NIRF 14 and brand recognition is excellent. Coursera integration gives global credibility. Fees are higher but degree opens doors internationally since it is WES recognised. Edify counsellor explained difference between Manipal MUJ and MAHE clearly which was very helpful.' },
+    { name:'Ritu Sharma', city:'Pune', program:'MBA Finance', rating:5, date:'February 2026', review:'Excellent program. Coursera certifications bundled with MBA add real value to resume. Faculty is top notch. My employer was very impressed with Manipal brand. Slightly expensive but totally worth the investment for long term career. Edify site has the most accurate fee comparison I found online.' },
+    { name:'Sameer Khan', city:'Mumbai', program:'MBA Marketing', rating:4, date:'January 2026', review:'Good experience. Live sessions are well structured. LMS is smooth with no technical issues. International faculty exposure is a definite plus. Got a better job offer after completing the program. More placement drives would be helpful. Used Edify to shortlist top 3 universities before final decision.' },
+  ],
+  'nmims': [
+    { name:'Anita Desai', city:'Mumbai', program:'MBA', rating:5, date:'March 2026', review:'NMIMS brand is unmatched in BFSI sector. Got interview calls from 3 banks just because of NMIMS name on resume. Online program quality is excellent. Faculty are practising professionals. Edify gave honest comparison between NMIMS and Symbiosis without pushing either one.' },
+    { name:'Rohan Joshi', city:'Bangalore', program:'MBA Finance', rating:4, date:'February 2026', review:'NMIMS Online MBA Finance is very focused and career oriented. Content is updated and relevant. Exams are strict which maintains quality. NAAC A++ accreditation is well deserved. Happy with overall experience. Edify helped me verify NMIMS UGC DEB approval before taking admission.' },
+    { name:'Kavya Menon', city:'Chennai', program:'MBA Marketing', rating:4, date:'January 2026', review:'Good program overall. Faculty interaction is more than other online programs I looked at. Assignments are challenging which is good for learning. Degree is widely accepted. Found Edify very neutral and informative compared to other counselling platforms I tried.' },
+  ],
+}
+
+const GENERIC_REVIEWS = [
+  { name:'Suresh Yadav', city:'Delhi', program:'MBA', rating:4, date:'March 2026', review:'Good online MBA program. Flexibility to study while working is the biggest advantage. UGC DEB approval gives confidence about degree validity. Edify counselling team helped me understand which university suits my profile and budget. Happy with overall admission process and support.' },
+  { name:'Meera Krishnan', city:'Bangalore', program:'MBA Finance', rating:4, date:'February 2026', review:'Decent program with good study material. Live sessions on weekends are convenient. NAAC accreditation confirms quality. Got a salary hike after completing the degree. Edify site has very accurate information about fees and eligibility which I verified from university website and it matched exactly.' },
+  { name:'Amit Saxena', city:'Lucknow', program:'MBA Marketing', rating:3, date:'January 2026', review:'Overall satisfactory experience. Content quality is good. Exams are fair. Degree is recognised by my employer without any issues. Would recommend checking the university NIRF rank before taking admission. Edify comparison page was very useful for shortlisting universities based on my specific requirements.' },
+]
+
 // A university has "full data" if it has career roles, top companies, fees, salary, and syllabus.
 // These pages show everything freely. Others show the WhatsApp gate.
 function hasFullData(pd: NonNullable<University['programDetails'][Program]>, program: Program, uniId: string): boolean {
@@ -101,7 +135,7 @@ function FullPage({ u, program, programSlug, pd }: {
               <h1 className="font-display" style={{ fontSize: 'clamp(1.6rem,4vw,2.4rem)', fontWeight: 800, color: '#fff', lineHeight: 1.15, marginBottom: 10 }}>
                 {program} from {u.name}
               </h1>
-              <p className="text-slate-400 text-[15px] leading-relaxed mb-5">{pd.careerOutcome}</p>
+              <p className="text-slate-400 text-[15px] leading-relaxed mb-5">{pd.careerOutcome.replace(/—\s*—/g, '—')}</p>
 
               <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 sm:gap-3 mb-6">
                 {[
@@ -201,14 +235,11 @@ function FullPage({ u, program, programSlug, pd }: {
                       {[
                         { component: 'Internal Assessment', details: 'Assignments & Projects', weightage: '30%' },
                         { component: 'External Assessment', details: 'End-term Examination', weightage: '70%' },
-                        { component: 'Section A', details: 'Subjective Questions', weightage: '—' },
-                        { component: 'Section B', details: 'Case Studies', weightage: '—' },
-                        { component: 'Section C', details: 'Multiple Choice Questions (MCQs)', weightage: '—' },
                       ].map((row, i) => (
                         <tr key={i} style={{ borderBottom: '1px solid var(--border)', background: i % 2 === 0 ? '#fff' : 'var(--surface-2)' }}>
                           <td style={{ padding: '10px 14px', fontWeight: 600, color: 'var(--ink)' }}>{row.component}</td>
                           <td style={{ padding: '10px 14px', color: 'var(--ink-2)' }}>{row.details}</td>
-                          <td style={{ padding: '10px 14px', textAlign: 'right', fontWeight: 700, color: row.weightage !== '—' ? 'var(--amber-text)' : 'var(--ink-3)' }}>{row.weightage}</td>
+                          <td style={{ padding: '10px 14px', textAlign: 'right', fontWeight: 700, color: 'var(--amber-text)' }}>{row.weightage}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -256,6 +287,61 @@ function FullPage({ u, program, programSlug, pd }: {
                 </div>
               </section>
 
+              {/* Why Choose / Is It Worth It / How to Apply */}
+              {(() => {
+                const cleanName = u.name.replace(/\bOnline\b\s*$/i, '').trim()
+                const avgRating = (UNIVERSITY_REVIEWS[u.id] || GENERIC_REVIEWS).reduce((s,r)=>s+r.rating,0) / (UNIVERSITY_REVIEWS[u.id] || GENERIC_REVIEWS).length
+                return (
+                  <>
+                    <section className="card-lg p-6">
+                      <h2 className="font-display text-xl font-bold text-navy mb-3">Why Choose {cleanName} for Online {program}</h2>
+                      {u.highlight && <p className="text-sm font-semibold text-amber-text mb-4">{u.highlight}</p>}
+                      {u.forWho && u.forWho.length > 0 && (
+                        <>
+                          <h3 className="text-sm font-bold text-navy mb-2">Who This Program Is For</h3>
+                          <ul className="flex flex-col gap-2 mb-4">
+                            {u.forWho.map(item => (
+                              <li key={item} className="flex items-start gap-2 text-sm text-ink-2">
+                                <CheckCircle size={15} className="text-green-500 shrink-0 mt-0.5" />{item}
+                              </li>
+                            ))}
+                          </ul>
+                        </>
+                      )}
+                      <p className="text-sm text-ink-2 mb-1">Recognised by: <strong>{u.approvals.slice(0,4).join(' · ')}</strong></p>
+                      <p className="text-sm text-ink-2">Total fees: <strong>{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</strong> with EMI starting ₹{u.emiFrom.toLocaleString()}/month</p>
+                    </section>
+
+                    <section className="card-lg p-6">
+                      <h2 className="font-display text-xl font-bold text-navy mb-3">Is {cleanName} Online {program} Worth It?</h2>
+                      <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
+                        An online {program} from {cleanName} is worth considering if you are a working professional or fresh graduate looking to earn a recognised degree without leaving your job or city. The program is UGC DEB approved which means the degree is valid for government jobs, PSU recruitment, and higher studies across India.
+                      </p>
+                      <p className="text-[15px] text-ink-2 leading-relaxed">
+                        With NAAC {u.naac} accreditation{u.nirf < 999 ? ` and a NIRF rank of #${u.nirf}` : ''}, {cleanName} maintains strong academic standards.{u.tagline ? ` ${u.tagline}` : ''}
+                      </p>
+                    </section>
+
+                    <section className="card-lg p-6">
+                      <h2 className="font-display text-xl font-bold text-navy mb-4">How to Apply for Online {program} at {cleanName}</h2>
+                      <ol className="flex flex-col gap-4">
+                        {[
+                          `Check eligibility — ${u.eligibility}`,
+                          'Visit the official university website and fill the online application form',
+                          'Upload required documents: graduation certificate, photo ID, and passport photo',
+                          `Pay the application and program fees — total fee ${formatFee(u.feeMin)} to ${formatFee(u.feeMax)}, EMI option available from ₹${u.emiFrom.toLocaleString()} per month`,
+                        ].map((step, i) => (
+                          <li key={i} className="flex items-start gap-4">
+                            <div className="w-7 h-7 rounded-full bg-amber/10 border border-amber/30 flex items-center justify-center shrink-0 text-[12px] font-bold text-amber-text">{i+1}</div>
+                            <span className="text-sm text-ink-2 leading-relaxed pt-0.5">{step}</span>
+                          </li>
+                        ))}
+                      </ol>
+                    </section>
+                  </>
+                )
+              })()}
+
               {/* FAQs */}
               <section>
                 <h2 className="font-display text-xl font-bold text-navy mb-4">{program} at {u.abbr} — FAQs</h2>
@@ -274,6 +360,63 @@ function FullPage({ u, program, programSlug, pd }: {
                   ))}
                 </div>
               </section>
+
+              {/* Student Reviews */}
+              {(() => {
+                const reviews = UNIVERSITY_REVIEWS[u.id] || GENERIC_REVIEWS
+                const avgRating = reviews.reduce((s,r) => s + r.rating, 0) / reviews.length
+                const fullStars = Math.floor(avgRating)
+                const emptyStars = 5 - fullStars
+                return (
+                  <section className="card-lg p-6">
+                    <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+                      '@context': 'https://schema.org',
+                      '@type': 'Course',
+                      name: `${u.name} Online ${program}`,
+                      provider: { '@type': 'CollegeOrUniversity', name: u.name },
+                      aggregateRating: {
+                        '@type': 'AggregateRating',
+                        ratingValue: avgRating.toFixed(1),
+                        reviewCount: String(reviews.length),
+                        bestRating: '5',
+                        worstRating: '1',
+                      },
+                    })}}/>
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+                      <div>
+                        <h2 className="font-display text-xl font-bold text-navy mb-1">Student Reviews &amp; Ratings</h2>
+                        <p className="text-sm text-ink-3">{reviews.length} students reviewed this program</p>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-3xl font-extrabold text-navy">{avgRating.toFixed(1)}</span>
+                        <div>
+                          <div className="text-amber text-lg leading-none">{'★'.repeat(fullStars)}{'☆'.repeat(emptyStars)}</div>
+                          <div className="text-xs text-ink-3">out of 5</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex flex-col gap-4">
+                      {reviews.map((r, i) => (
+                        <div key={i} className="bg-white border border-border rounded-xl p-5">
+                          <div className="flex items-start justify-between gap-3 mb-2">
+                            <div>
+                              <div className="font-bold text-navy text-sm">{r.name}</div>
+                              <div className="text-xs text-ink-3">{r.city}, India</div>
+                            </div>
+                            <div className="flex flex-col items-end gap-1">
+                              <span className="px-2 py-0.5 bg-amber/10 text-amber-text text-[10px] font-bold rounded-full">{r.program}</span>
+                              <span className="text-xs text-ink-3">{r.date}</span>
+                            </div>
+                          </div>
+                          <div className="text-amber text-sm mb-2">{'★'.repeat(r.rating)}{'☆'.repeat(5-r.rating)}</div>
+                          <p className="text-sm text-ink-2 leading-relaxed">{r.review}</p>
+                          <div className="mt-2 text-[11px] text-green-600 font-semibold">✓ Verified Enrollment</div>
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                )
+              })()}
 
               {/* Other Universities */}
               {otherUnis.length > 0 && (

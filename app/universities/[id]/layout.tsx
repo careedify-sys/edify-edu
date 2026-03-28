@@ -223,6 +223,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   const nirf = u.nirf < 200 ? `NIRF #${u.nirf}` : u.nirfMgt ? `NIRF #${u.nirfMgt} ${u.nirfCategory || 'Mgmt'}` : `NAAC ${u.naac}`
 
   // ── Title: focus on Review + Placement + Fees (High Intent) ─────
+  const cleanName = u.name.replace(/\bOnline\b\s*$/i, '').trim()
   const title = `${seoName} Online Admissions 2026 - Fees, Placements & Honest Review`
 
   // ── Description: keyword-rich, direct ────────────────────────
