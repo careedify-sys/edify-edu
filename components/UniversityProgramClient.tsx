@@ -585,34 +585,82 @@ function LockedPage({ u, program, programSlug, pd }: {
           </div>
         </div>
 
+        {/* About the Program */}
+        <div className="bg-white border border-border rounded-2xl p-6 mb-6">
+          <h2 className="font-display text-xl font-bold text-navy mb-3">About Online {program} at {cleanName}</h2>
+          <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
+            {cleanName} offers a UGC DEB approved online {program} program designed for working professionals and graduates who want a recognised postgraduate degree with maximum flexibility. The program is delivered entirely online — with recorded lectures, live doubt sessions, and a digital learning management system — so you can study from anywhere in India without quitting your job.
+          </p>
+          <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
+            The online {program} from {cleanName} carries the same academic value as a campus degree. The degree certificate issued does not mention "distance" or "online" — it is identical to the regular {program} certificate and is accepted by employers, government departments, and institutions across India. With NAAC {u.naac} accreditation{u.nirf < 999 ? ` and a NIRF rank of #${u.nirf}` : ''}, the credential carries strong institutional credibility.
+          </p>
+          {pd.specs && pd.specs.length > 0 && (
+            <div>
+              <div className="text-sm font-bold text-navy mb-2">{pd.specs.length} Specialisations Available</div>
+              <div className="flex flex-wrap gap-2">
+                {pd.specs.map(s => (
+                  <span key={s} className="px-3 py-1 bg-surface-2 border border-border rounded-full text-xs font-medium text-ink-2">{s}</span>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Who Can Apply */}
+        <div className="bg-white border border-border rounded-2xl p-6 mb-6">
+          <h2 className="font-display text-xl font-bold text-navy mb-4">Who Can Apply for Online {program}</h2>
+          <div className="flex flex-col gap-3 mb-4">
+            {[
+              `Completed graduation from any UGC recognised university`,
+              `${u.eligibility}`,
+              `No upper age limit — working professionals and freshers both eligible`,
+              `No entrance exam required for admission`,
+              `Students from any stream (Science, Commerce, Arts) can apply`,
+            ].map(item => (
+              <div key={item} className="flex items-start gap-3">
+                <CheckCircle size={16} className="text-green-500 shrink-0 mt-0.5" />
+                <span className="text-sm text-ink-2">{item}</span>
+              </div>
+            ))}
+          </div>
+          <div className="p-4 bg-amber/5 border border-amber/20 rounded-xl text-sm text-ink-2">
+            <strong className="text-navy">Ideal for:</strong> Working professionals looking for a career switch or promotion, fresh graduates wanting a postgraduate degree, and entrepreneurs wanting a formal business qualification.
+          </div>
+        </div>
+
         {/* Why Choose */}
         <div className="bg-white border border-border rounded-2xl p-6 mb-6">
           <h2 className="font-display text-xl font-bold text-navy mb-3">Why Choose {cleanName} for Online {program}</h2>
           {u.highlight && <p className="text-sm font-semibold text-amber-text mb-4">{u.highlight}</p>}
-          {u.forWho && u.forWho.length > 0 && (
-            <>
-              <div className="text-sm font-bold text-navy mb-2">Who This Program Is For</div>
-              <ul className="flex flex-col gap-2 mb-4">
-                {u.forWho.map(item => (
-                  <li key={item} className="flex items-start gap-2 text-sm text-ink-2">
-                    <CheckCircle size={15} className="text-green-500 shrink-0 mt-0.5" />{item}
-                  </li>
-                ))}
-              </ul>
-            </>
-          )}
-          <p className="text-sm text-ink-2 mb-1">Recognised by: <strong>{u.approvals.slice(0,4).join(' · ')}</strong></p>
-          <p className="text-sm text-ink-2">Total fees: <strong>{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</strong> | EMI from ₹{u.emiFrom.toLocaleString()}/month</p>
+          <div className="flex flex-col gap-3 mb-4">
+            {[
+              `NAAC ${u.naac} accredited — one of India's highest quality grades for higher education`,
+              u.nirf < 999 ? `NIRF Rank #${u.nirf} — nationally recognised ranking by Ministry of Education` : `Nationally recognised university approved by UGC DEB for online education`,
+              `UGC DEB approved — degree is valid for government jobs, PSU recruitment, and further studies`,
+              `Affordable fees from ${formatFee(u.feeMin)} with EMI options from ₹${u.emiFrom.toLocaleString()}/month`,
+              `Online format — study on weekends and evenings without leaving your current job`,
+              ...(u.forWho?.slice(0, 2) ?? []),
+            ].filter(Boolean).map(item => (
+              <div key={item} className="flex items-start gap-3">
+                <CheckCircle size={16} className="text-green-500 shrink-0 mt-0.5" />
+                <span className="text-sm text-ink-2">{item}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-sm text-ink-2">Recognised by: <strong>{u.approvals.slice(0,4).join(' · ')}</strong></p>
         </div>
 
         {/* Is It Worth It */}
         <div className="bg-white border border-border rounded-2xl p-6 mb-6">
           <h2 className="font-display text-xl font-bold text-navy mb-3">Is {cleanName} Online {program} Worth It?</h2>
           <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
-            An online {program} from {cleanName} is worth considering if you are a working professional or fresh graduate who wants a recognised degree without leaving your job or city. The program is UGC DEB approved — valid for government jobs, PSU recruitment, and higher studies across India.
+            An online {program} from {cleanName} is a strong option if you are a working professional or fresh graduate looking for a recognised postgraduate degree without relocating or taking a career break. The program is UGC DEB approved — meaning the degree is legally valid for private sector jobs, government recruitment (where UGC DEB degrees are accepted){u.psuEligible ? ', PSU recruitment' : ''}, and admission to PhD programs across India.
+          </p>
+          <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
+            With NAAC {u.naac} accreditation{u.nirf < 999 ? ` and NIRF rank #${u.nirf}` : ''}, {cleanName} maintains strong academic standards that employers recognise. The total program fee ranges from {formatFee(u.feeMin)} to {formatFee(u.feeMax)} — significantly lower than most campus {program} programs — with monthly EMI options starting at ₹{u.emiFrom.toLocaleString()}, making it financially accessible.{u.tagline ? ` ${u.tagline}` : ''}
           </p>
           <p className="text-[15px] text-ink-2 leading-relaxed">
-            With NAAC {u.naac} accreditation{u.nirf < 999 ? ` and NIRF rank #${u.nirf}` : ''}, {cleanName} maintains strong academic standards.{u.tagline ? ` ${u.tagline}` : ''}
+            The online mode means you study through pre-recorded lectures, live doubt-clearing sessions, and online examinations — no daily commute, no relocation. Most students complete assignments during evenings and weekends while continuing full-time employment. If your goal is a recognised postgraduate qualification that fits around your life, {cleanName} online {program} delivers strong value for the investment.
           </p>
         </div>
 
@@ -622,9 +670,9 @@ function LockedPage({ u, program, programSlug, pd }: {
           <ol className="flex flex-col gap-4">
             {[
               `Check eligibility — ${u.eligibility}`,
-              'Visit the official university website and fill the online application form',
-              'Upload required documents: graduation certificate, photo ID, and passport photo',
-              `Pay the program fees — total fee ${formatFee(u.feeMin)} to ${formatFee(u.feeMax)}, EMI available from ₹${u.emiFrom.toLocaleString()} per month`,
+              'Visit the official university website and fill the online application form with your personal and academic details',
+              'Upload required documents: graduation marksheet, degree certificate, government photo ID, and passport-size photograph',
+              `Pay the program fees — total fee ${formatFee(u.feeMin)} to ${formatFee(u.feeMax)}, EMI available from ₹${u.emiFrom.toLocaleString()} per month. Semester-wise payment option available`,
             ].map((step, i) => (
               <li key={i} className="flex items-start gap-4">
                 <div className="w-7 h-7 rounded-full bg-amber/10 border border-amber/30 flex items-center justify-center shrink-0 text-[12px] font-bold text-amber-text">{i+1}</div>
@@ -633,6 +681,30 @@ function LockedPage({ u, program, programSlug, pd }: {
             ))}
           </ol>
         </div>
+
+        {/* FAQ */}
+        {(() => {
+          const faqs = [
+            { q: `Is the ${program} degree from ${cleanName} valid for government jobs?`, a: `Yes. ${cleanName} is UGC DEB approved for online education. The ${program} degree is valid for private sector employment, government jobs where UGC DEB approved degrees are accepted${u.psuEligible ? ', and PSU recruitment' : ''}, and further studies including PhD programs.` },
+            { q: `What is the total fee for online ${program} at ${cleanName}?`, a: `The total program fee ranges from ${formatFee(u.feeMin)} to ${formatFee(u.feeMax)} depending on the specialisation. EMI options are available from ₹${u.emiFrom.toLocaleString()} per month. Semester-wise payment is also available. Contact an Edify counsellor for the latest scholarship details.` },
+            { q: `How are classes conducted for online ${program}?`, a: `Classes are conducted online through a learning management system (LMS). You get access to pre-recorded video lectures, live interactive sessions, digital study material, and online assignments. There is no daily attendance requirement — you study at your own pace during evenings and weekends.` },
+            { q: `Can I do online ${program} while working full-time?`, a: `Yes — the program is specifically designed for working professionals. Classes are asynchronous (pre-recorded), with live sessions usually scheduled on weekends. Examinations are conducted online. Most students continue their jobs throughout the program without any disruption.` },
+            { q: `What specialisations are available in ${cleanName} online ${program}?`, a: pd.specs?.length ? `${cleanName} offers ${pd.specs.length} specialisations: ${pd.specs.join(', ')}. You choose your specialisation at the time of admission.` : `Multiple specialisations are available including Finance, Marketing, Human Resources, and Operations Management. Contact our counsellors for the complete updated list.` },
+          ]
+          return (
+            <div className="bg-white border border-border rounded-2xl p-6 mb-6">
+              <h2 className="font-display text-xl font-bold text-navy mb-4">Frequently Asked Questions — {cleanName} Online {program}</h2>
+              <div className="flex flex-col divide-y divide-border">
+                {faqs.map((faq, i) => (
+                  <div key={i} className="py-4 first:pt-0 last:pb-0">
+                    <div className="font-semibold text-navy text-sm mb-2">{faq.q}</div>
+                    <p className="text-sm text-ink-2 leading-relaxed">{faq.a}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )
+        })()}
 
         {/* Locked section */}
         <div className="relative rounded-2xl overflow-hidden border border-border">
@@ -667,24 +739,37 @@ function LockedPage({ u, program, programSlug, pd }: {
             </div>
           </div>
 
-          <div className="absolute inset-0 flex items-start justify-center pt-8 px-4"
-            style={{ background: 'linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.97) 18%, rgba(255,255,255,1) 40%)' }}>
+          <div className="absolute inset-0 flex items-start justify-center pt-6 px-4"
+            style={{ background: 'linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.97) 15%, rgba(255,255,255,1) 35%)' }}>
             <div className="w-full max-w-sm">
               {!submitted ? (
-                <div className="bg-white rounded-2xl border border-border shadow-xl p-6">
-                  <div className="text-center mb-5">
-                    <div className="text-2xl mb-2">🔒</div>
-                    <div className="text-base font-extrabold text-navy">Get Full Details</div>
-                    <div className="text-[11px] text-ink-3 mt-1">Fees · Syllabus · Placements · Reviews</div>
+                <div className="bg-white rounded-2xl border border-border shadow-xl overflow-hidden">
+                  <div className="px-6 pt-5 pb-4" style={{ background: 'linear-gradient(135deg,#0B1D35,#142540)' }}>
+                    <div className="text-[10px] font-bold text-amber uppercase tracking-widest mb-1">Free · Instant · No spam</div>
+                    <div className="text-base font-extrabold text-white mb-1">Get Your Personalised Fee & Syllabus</div>
+                    <div className="text-[11px] text-slate-400">{u.name} {program} — exact details sent to WhatsApp</div>
                   </div>
-                  <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+                  <div className="px-5 py-3 bg-surface-2 border-b border-border">
+                    {[
+                      'Exact semester-wise fee breakdown',
+                      'Complete syllabus — all 4 semesters',
+                      'Scholarship & EMI options',
+                      'Placement stats & average salary',
+                    ].map(item => (
+                      <div key={item} className="flex items-center gap-2 py-1">
+                        <CheckCircle size={13} className="text-green-500 shrink-0" />
+                        <span className="text-xs text-ink-2">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <form onSubmit={handleSubmit} className="flex flex-col gap-3 p-5">
                     <div>
                       <label className="text-[11px] font-bold text-ink-2 mb-1 block">Your Name *</label>
                       <input type="text" placeholder="Enter your full name" value={name} onChange={e => setName(e.target.value)} required
                         className="w-full px-3 py-2.5 rounded-lg border border-border text-sm focus:outline-none focus:border-amber transition-colors" />
                     </div>
                     <div>
-                      <label className="text-[11px] font-bold text-ink-2 mb-1 block">Phone Number *</label>
+                      <label className="text-[11px] font-bold text-ink-2 mb-1 block">WhatsApp Number *</label>
                       <div className="flex items-center border border-border rounded-lg overflow-hidden focus-within:border-amber transition-colors">
                         <span className="px-3 py-2.5 text-sm font-semibold text-ink-3 bg-surface-1 border-r border-border shrink-0">+91</span>
                         <input type="tel" placeholder="10-digit mobile" value={phone} onChange={e => setPhone(e.target.value.replace(/\D/g, '').slice(0, 10))} maxLength={10} required
@@ -700,7 +785,13 @@ function LockedPage({ u, program, programSlug, pd }: {
                         : <><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" /></svg>Send Me Details on WhatsApp</>
                       }
                     </button>
-                    <p className="text-[10px] text-ink-3 text-center">Details for <span className="font-semibold text-navy">{u.name} {program}</span> sent to WhatsApp.</p>
+                    <div className="flex items-center justify-center gap-3 text-[10px] text-ink-3">
+                      <span>🔒 No spam</span>
+                      <span>·</span>
+                      <span>⚡ Instant reply</span>
+                      <span>·</span>
+                      <span>✓ Free</span>
+                    </div>
                   </form>
                 </div>
               ) : (

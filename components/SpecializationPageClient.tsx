@@ -984,42 +984,48 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
         <section className="card-lg p-6 mb-6">
           <h2 className="font-display text-xl font-bold text-navy mb-3">Why Choose {cleanName} for {progInfo.name} in {specialization}</h2>
           {u.highlight && <p className="text-sm font-semibold text-amber-text mb-4">{u.highlight}</p>}
-          {u.forWho && u.forWho.length > 0 && (
-            <>
-              <h3 className="text-sm font-bold text-navy mb-2">Who This Program Is For</h3>
-              <ul className="flex flex-col gap-2 mb-4">
-                {u.forWho.map(item => (
-                  <li key={item} className="flex items-start gap-2 text-sm text-ink-2">
-                    <CheckCircle size={15} className="text-green-500 shrink-0 mt-0.5" />{item}
-                  </li>
-                ))}
-              </ul>
-            </>
-          )}
-          <p className="text-sm text-ink-2 mb-1">Recognised by: <strong>{u.approvals.slice(0,4).join(' · ')}</strong></p>
-          <p className="text-sm text-ink-2">Total fees: <strong>{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</strong> | EMI from ₹{u.emiFrom.toLocaleString()}/month</p>
+          <div className="flex flex-col gap-3 mb-4">
+            {[
+              `NAAC ${u.naac} accredited institution — nationally recognised academic quality standard`,
+              u.nirf < 999 ? `NIRF Rank #${u.nirf} — ranked by Ministry of Education among India's top universities` : `UGC DEB approved university for online education`,
+              `UGC DEB approved — degree valid for government jobs, PSU recruitment, and PhD admission`,
+              `Affordable total fee ${formatFee(u.feeMin)} – ${formatFee(u.feeMax)} with EMI from ₹${u.emiFrom.toLocaleString()}/month`,
+              `${specialization} specialisation — one of the fastest growing career tracks in India`,
+              `Study online — no relocation, no leave from job, weekend-friendly schedule`,
+              ...(u.forWho?.slice(0, 2) ?? []),
+            ].filter(Boolean).map(item => (
+              <div key={item} className="flex items-start gap-3">
+                <CheckCircle size={15} className="text-green-500 shrink-0 mt-0.5" />
+                <span className="text-sm text-ink-2">{item}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-sm text-ink-2">Recognised by: <strong>{u.approvals.slice(0,4).join(' · ')}</strong></p>
         </section>
 
         {/* Is It Worth It */}
         <section className="card-lg p-6 mb-6">
-          <h2 className="font-display text-xl font-bold text-navy mb-3">Is {cleanName} {progInfo.name} Worth It?</h2>
+          <h2 className="font-display text-xl font-bold text-navy mb-3">Is {cleanName} {progInfo.name} in {specialization} Worth It?</h2>
           <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
-            An online {program} from {cleanName} is worth considering if you are a working professional or fresh graduate who wants a recognised degree without leaving your job or city. The program is UGC DEB approved — valid for government jobs, PSU recruitment, and higher studies across India.
+            A {progInfo.name} in {specialization} from {cleanName} is a strong career investment if you are looking to specialise in this domain while earning a fully recognised postgraduate degree. The program is UGC DEB approved — the degree is valid for private sector jobs, government recruitment where UGC DEB degrees are accepted{u.psuEligible ? ', PSU positions' : ''}, and further academic pursuits.
+          </p>
+          <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
+            {cleanName} holds NAAC {u.naac} accreditation{u.nirf < 999 ? ` and a NIRF rank of #${u.nirf}` : ''} — credentials that matter during campus placements and employer verification. The fee ranges from {formatFee(u.feeMin)} to {formatFee(u.feeMax)} with EMI options from ₹{u.emiFrom.toLocaleString()}/month, making it significantly more affordable than an equivalent campus program.{u.tagline ? ` ${u.tagline}` : ''}
           </p>
           <p className="text-[15px] text-ink-2 leading-relaxed">
-            With NAAC {u.naac} accreditation{u.nirf < 999 ? ` and NIRF rank #${u.nirf}` : ''}, {cleanName} maintains strong academic standards.{u.tagline ? ` ${u.tagline}` : ''}
+            The {specialization} specialisation opens roles across multiple industries. Graduates are hired into roles that directly apply this expertise, with salaries varying by experience and employer. The online format means you continue working while building your qualification — there is no career gap, no relocation, and no disruption to your income while you study.
           </p>
         </section>
 
         {/* How to Apply */}
         <section className="card-lg p-6 mb-6">
-          <h2 className="font-display text-xl font-bold text-navy mb-4">How to Apply for {progInfo.name} at {cleanName}</h2>
+          <h2 className="font-display text-xl font-bold text-navy mb-4">How to Apply for {progInfo.name} in {specialization} at {cleanName}</h2>
           <ol className="flex flex-col gap-4">
             {[
               `Check eligibility — ${u.eligibility}`,
-              'Visit the official university website and fill the online application form',
-              'Upload required documents: graduation certificate, photo ID, and passport photo',
-              `Pay the program fees — total fee ${formatFee(u.feeMin)} to ${formatFee(u.feeMax)}, EMI option available from ₹${u.emiFrom.toLocaleString()} per month`,
+              `Select ${specialization} as your specialisation during the online application`,
+              'Upload required documents: graduation marksheet, degree certificate, government photo ID, and passport-size photograph',
+              `Pay the program fees — total fee ${formatFee(u.feeMin)} to ${formatFee(u.feeMax)}, semester-wise payment and EMI from ₹${u.emiFrom.toLocaleString()} per month available`,
             ].map((step, i) => (
               <li key={i} className="flex items-start gap-4">
                 <div className="w-7 h-7 rounded-full bg-amber/10 border border-amber/30 flex items-center justify-center shrink-0 text-[12px] font-bold text-amber-text">{i+1}</div>
@@ -1027,6 +1033,25 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
               </li>
             ))}
           </ol>
+        </section>
+
+        {/* FAQ */}
+        <section className="card-lg p-6 mb-6">
+          <h2 className="font-display text-xl font-bold text-navy mb-4">FAQs — {cleanName} {progInfo.name} in {specialization}</h2>
+          <div className="flex flex-col divide-y divide-border">
+            {[
+              { q: `Is the ${progInfo.name} in ${specialization} from ${cleanName} valid?`, a: `Yes — 100% valid. ${cleanName} is UGC DEB approved. The ${progInfo.name} degree in ${specialization} is valid for private sector jobs, government recruitment (where UGC DEB degrees are accepted)${u.psuEligible ? ', and PSU recruitment' : ''}, and PhD admission. The certificate does not say "online" — it is identical to a regular campus degree.` },
+              { q: `What is the fee for ${cleanName} ${progInfo.name} in ${specialization}?`, a: `Total fees range from ${formatFee(u.feeMin)} to ${formatFee(u.feeMax)}. EMI options start from ₹${u.emiFrom.toLocaleString()}/month. Semester-wise payment is available. Scholarships may be available — contact an Edify counsellor for the latest fee structure and discounts.` },
+              { q: `Can I study ${specialization} online while working full-time?`, a: `Yes. The program is designed for working professionals. All lectures are pre-recorded and accessible 24/7 through the LMS. Live sessions and exams are scheduled on weekends. There is no daily attendance requirement. Most students complete coursework during evenings and weekends without any impact on their jobs.` },
+              { q: `What career opportunities does an ${progInfo.name} in ${specialization} open?`, a: `An ${progInfo.name} in ${specialization} qualifies you for specialist and management roles in this domain. Graduates are recruited across industries — including corporate, consulting, banking, technology, and manufacturing sectors — by companies of all sizes. The exact salary depends on your prior experience and the employer.` },
+              { q: `How are exams conducted for the online ${progInfo.name} at ${cleanName}?`, a: `Examinations are conducted online through a proctored digital system. The grading is based on 30% internal assessment (assignments and projects) and 70% external assessment (end-term examination). Minimum passing marks in each subject is 40%. The medium of instruction and examination is English.` },
+            ].map((faq, i) => (
+              <div key={i} className="py-4 first:pt-0 last:pb-0">
+                <div className="font-semibold text-navy text-sm mb-2">{faq.q}</div>
+                <p className="text-sm text-ink-2 leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
         {/* Student Reviews */}
@@ -1130,18 +1155,31 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
           </div>
 
           {/* Overlay with form */}
-          <div className="absolute inset-0 flex items-start justify-center pt-8 px-4"
-            style={{ background: 'linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.97) 18%, rgba(255,255,255,1) 40%)' }}>
+          <div className="absolute inset-0 flex items-start justify-center pt-6 px-4"
+            style={{ background: 'linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.97) 15%, rgba(255,255,255,1) 35%)' }}>
             <div className="w-full max-w-sm">
               {!submitted ? (
-                <div className="bg-white rounded-2xl border border-border shadow-xl p-6">
-                  <div className="text-center mb-5">
-                    <div className="text-2xl mb-2">🔒</div>
-                    <div className="text-base font-extrabold text-navy">Get Full Details</div>
-                    <div className="text-[11px] text-ink-3 mt-1">
-                      Fees · Syllabus · Placements · Specialization Guide
-                    </div>
+                <div className="bg-white rounded-2xl border border-border shadow-xl overflow-hidden">
+                  <div className="px-6 pt-5 pb-4" style={{ background: 'linear-gradient(135deg,#0B1D35,#142540)' }}>
+                    <div className="text-[10px] font-bold text-amber uppercase tracking-widest mb-1">Free · Instant · No spam</div>
+                    <div className="text-base font-extrabold text-white mb-1">Get Your Fee & Syllabus Details</div>
+                    <div className="text-[11px] text-slate-400">{u.name} {progInfo.name} in {specialization}</div>
                   </div>
+                  <div className="px-5 py-3 bg-surface-2 border-b border-border">
+                    {[
+                      `Exact fee for ${specialization} specialisation`,
+                      'Complete syllabus — all 4 semesters',
+                      'Scholarship & EMI breakdown',
+                      'Placement data & career scope',
+                    ].map(item => (
+                      <div key={item} className="flex items-center gap-2 py-1">
+                        <CheckCircle size={13} className="text-green-500 shrink-0" />
+                        <span className="text-xs text-ink-2">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="p-5">
+                  <div className="sr-only">Get Full Details</div>
                   <form onSubmit={handleSubmit} className="flex flex-col gap-3">
                     <div>
                       <label className="text-[11px] font-bold text-ink-2 mb-1 block">Full Name *</label>
@@ -1181,10 +1219,15 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
                         : <><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Get Details on WhatsApp & Email</>
                       }
                     </button>
-                    <p className="text-[10px] text-ink-3 text-center">
-                      Details for <span className="font-semibold text-navy">{u.name} {program} — {specialization}</span> sent to WhatsApp.
-                    </p>
+                    <div className="flex items-center justify-center gap-3 text-[10px] text-ink-3 mt-1">
+                      <span>🔒 No spam</span>
+                      <span>·</span>
+                      <span>⚡ Instant reply</span>
+                      <span>·</span>
+                      <span>✓ Free</span>
+                    </div>
                   </form>
+                  </div>
                 </div>
               ) : (
                 <div className="bg-white rounded-2xl border border-green-200 shadow-xl p-6 text-center">
