@@ -585,6 +585,71 @@ function LockedPage({ u, program, programSlug, pd }: {
           </div>
         </div>
 
+        {/* ─── TOP LEAD FORM ─── */}
+        {!submitted ? (
+          <div className="bg-white rounded-2xl border border-border shadow-lg overflow-hidden mb-6">
+            <div className="px-6 pt-5 pb-4" style={{ background: 'linear-gradient(135deg,#0B1D35,#142540)' }}>
+              <div className="text-[10px] font-bold text-amber uppercase tracking-widest mb-1">Free · Instant · No spam</div>
+              <div className="text-base font-extrabold text-white mb-1">Get Your Personalised Fee &amp; Syllabus</div>
+              <div className="text-[11px] text-slate-400">{u.name} {program} — exact details sent to WhatsApp</div>
+            </div>
+            <div className="grid sm:grid-cols-[200px_1fr]">
+              <div className="px-5 py-4 bg-surface-2 border-b sm:border-b-0 sm:border-r border-border">
+                {['Exact semester-wise fee breakdown','Complete syllabus — all 4 semesters','Scholarship & EMI options','Placement stats & average salary'].map(item => (
+                  <div key={item} className="flex items-center gap-2 py-1.5">
+                    <CheckCircle size={13} className="text-green-500 shrink-0" />
+                    <span className="text-xs text-ink-2">{item}</span>
+                  </div>
+                ))}
+              </div>
+              <form onSubmit={handleSubmit} className="flex flex-col gap-3 p-5">
+                <div className="grid sm:grid-cols-2 gap-3">
+                  <div>
+                    <label className="text-[11px] font-bold text-ink-2 mb-1 block">Your Name *</label>
+                    <input type="text" placeholder="Enter your full name" value={name} onChange={e => setName(e.target.value)} required
+                      className="w-full px-3 py-2.5 rounded-lg border border-border text-sm focus:outline-none focus:border-amber transition-colors" />
+                  </div>
+                  <div>
+                    <label className="text-[11px] font-bold text-ink-2 mb-1 block">WhatsApp Number *</label>
+                    <div className="flex items-center border border-border rounded-lg overflow-hidden focus-within:border-amber transition-colors">
+                      <span className="px-3 py-2.5 text-sm font-semibold text-ink-3 bg-surface-1 border-r border-border shrink-0">+91</span>
+                      <input type="tel" placeholder="10-digit mobile" value={phone} onChange={e => setPhone(e.target.value.replace(/\D/g, '').slice(0, 10))} maxLength={10} required
+                        className="flex-1 px-3 py-2.5 text-sm focus:outline-none bg-white" />
+                    </div>
+                  </div>
+                </div>
+                {error && <p className="text-xs text-red-500 font-medium">{error}</p>}
+                <button type="submit" disabled={submitting}
+                  className="w-full py-3 rounded-xl font-bold text-white text-sm flex items-center justify-center gap-2 transition-opacity"
+                  style={{ background: 'linear-gradient(135deg,#25D366,#128C7E)', opacity: submitting ? 0.7 : 1 }}>
+                  {submitting
+                    ? <><span className="animate-spin inline-block w-4 h-4 border-2 border-white border-t-transparent rounded-full" />Sending…</>
+                    : <><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" /></svg>Send Me Details on WhatsApp</>
+                  }
+                </button>
+                <div className="flex items-center justify-center gap-3 text-[10px] text-ink-3">
+                  <span>🔒 No spam</span><span>·</span><span>⚡ Instant reply</span><span>·</span><span>✓ Free</span>
+                </div>
+              </form>
+            </div>
+          </div>
+        ) : (
+          <div className="bg-white rounded-2xl border border-green-200 shadow-lg p-6 text-center mb-6">
+            <div className="text-3xl mb-3">✅</div>
+            <div className="text-base font-extrabold text-navy mb-2">Thank you, {name.trim()}!</div>
+            <p className="text-sm text-ink-2 leading-relaxed">
+              You will receive full details of <span className="font-semibold text-navy">{u.name} {program}</span> on your WhatsApp{' '}
+              <span className="font-semibold text-green-700">({maskedPhone})</span> shortly.
+            </p>
+            <div className="mt-3 text-[11px] text-ink-3">Redirecting to WhatsApp…</div>
+            <a href={`https://wa.me/${WA_NUMBER}?text=${buildWAMessage()}`} target="_blank" rel="noopener noreferrer"
+              className="mt-3 inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-white text-sm"
+              style={{ background: 'linear-gradient(135deg,#25D366,#128C7E)' }}>
+              Open WhatsApp
+            </a>
+          </div>
+        )}
+
         {/* About the Program */}
         <div className="bg-white border border-border rounded-2xl p-6 mb-6">
           <h2 className="font-display text-xl font-bold text-navy mb-3">About Online {program} at {cleanName}</h2>
@@ -739,76 +804,20 @@ function LockedPage({ u, program, programSlug, pd }: {
             </div>
           </div>
 
-          <div className="absolute inset-0 flex items-start justify-center pt-6 px-4"
-            style={{ background: 'linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.97) 15%, rgba(255,255,255,1) 35%)' }}>
-            <div className="w-full max-w-sm">
-              {!submitted ? (
-                <div className="bg-white rounded-2xl border border-border shadow-xl overflow-hidden">
-                  <div className="px-6 pt-5 pb-4" style={{ background: 'linear-gradient(135deg,#0B1D35,#142540)' }}>
-                    <div className="text-[10px] font-bold text-amber uppercase tracking-widest mb-1">Free · Instant · No spam</div>
-                    <div className="text-base font-extrabold text-white mb-1">Get Your Personalised Fee & Syllabus</div>
-                    <div className="text-[11px] text-slate-400">{u.name} {program} — exact details sent to WhatsApp</div>
-                  </div>
-                  <div className="px-5 py-3 bg-surface-2 border-b border-border">
-                    {[
-                      'Exact semester-wise fee breakdown',
-                      'Complete syllabus — all 4 semesters',
-                      'Scholarship & EMI options',
-                      'Placement stats & average salary',
-                    ].map(item => (
-                      <div key={item} className="flex items-center gap-2 py-1">
-                        <CheckCircle size={13} className="text-green-500 shrink-0" />
-                        <span className="text-xs text-ink-2">{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <form onSubmit={handleSubmit} className="flex flex-col gap-3 p-5">
-                    <div>
-                      <label className="text-[11px] font-bold text-ink-2 mb-1 block">Your Name *</label>
-                      <input type="text" placeholder="Enter your full name" value={name} onChange={e => setName(e.target.value)} required
-                        className="w-full px-3 py-2.5 rounded-lg border border-border text-sm focus:outline-none focus:border-amber transition-colors" />
-                    </div>
-                    <div>
-                      <label className="text-[11px] font-bold text-ink-2 mb-1 block">WhatsApp Number *</label>
-                      <div className="flex items-center border border-border rounded-lg overflow-hidden focus-within:border-amber transition-colors">
-                        <span className="px-3 py-2.5 text-sm font-semibold text-ink-3 bg-surface-1 border-r border-border shrink-0">+91</span>
-                        <input type="tel" placeholder="10-digit mobile" value={phone} onChange={e => setPhone(e.target.value.replace(/\D/g, '').slice(0, 10))} maxLength={10} required
-                          className="flex-1 px-3 py-2.5 text-sm focus:outline-none bg-white" />
-                      </div>
-                    </div>
-                    {error && <p className="text-xs text-red-500 font-medium">{error}</p>}
-                    <button type="submit" disabled={submitting}
-                      className="w-full py-3 rounded-xl font-bold text-white text-sm flex items-center justify-center gap-2 transition-opacity"
-                      style={{ background: 'linear-gradient(135deg,#25D366,#128C7E)', opacity: submitting ? 0.7 : 1 }}>
-                      {submitting
-                        ? <><span className="animate-spin inline-block w-4 h-4 border-2 border-white border-t-transparent rounded-full" />Sending…</>
-                        : <><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" /></svg>Send Me Details on WhatsApp</>
-                      }
-                    </button>
-                    <div className="flex items-center justify-center gap-3 text-[10px] text-ink-3">
-                      <span>🔒 No spam</span>
-                      <span>·</span>
-                      <span>⚡ Instant reply</span>
-                      <span>·</span>
-                      <span>✓ Free</span>
-                    </div>
-                  </form>
-                </div>
+          <div className="absolute inset-0 flex items-center justify-center"
+            style={{ background: 'linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.92) 30%, rgba(255,255,255,1) 50%)' }}>
+            <div className="text-center px-4 mt-16">
+              {submitted ? (
+                <>
+                  <div className="text-4xl mb-2">🔓</div>
+                  <div className="font-bold text-navy text-sm">Details sent — check WhatsApp</div>
+                </>
               ) : (
-                <div className="bg-white rounded-2xl border border-green-200 shadow-xl p-6 text-center">
-                  <div className="text-3xl mb-3">✅</div>
-                  <div className="text-base font-extrabold text-navy mb-2">Thank you, {name.trim()}!</div>
-                  <p className="text-sm text-ink-2 leading-relaxed">
-                    You will receive full details of <span className="font-semibold text-navy">{u.name} {program}</span> on your WhatsApp{' '}
-                    <span className="font-semibold text-green-700">({maskedPhone})</span> shortly.
-                  </p>
-                  <div className="mt-4 text-[11px] text-ink-3">Redirecting to WhatsApp…</div>
-                  <a href={`https://wa.me/${WA_NUMBER}?text=${buildWAMessage()}`} target="_blank" rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-white text-sm"
-                    style={{ background: 'linear-gradient(135deg,#25D366,#128C7E)' }}>
-                    Open WhatsApp
-                  </a>
-                </div>
+                <>
+                  <div className="text-4xl mb-2">🔒</div>
+                  <div className="font-bold text-navy text-sm mb-1">Fill the form above to unlock</div>
+                  <p className="text-xs text-ink-3">Fee breakdown · Syllabus · Placements</p>
+                </>
               )}
             </div>
           </div>
