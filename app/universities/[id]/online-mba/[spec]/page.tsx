@@ -40,8 +40,9 @@ export async function generateMetadata(
   const spec = pd?.specs?.find(s => makeSlug(s) === specSlug) || specSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
 
   const year = new Date().getFullYear()
+  const cleanName = u.name.replace(/\bOnline\b\s*$/i, '').trim()
   // Professional title: "Amity University Online MBA in Marketing - Fees, Syllabus, Placements 2026"
-  const title = `${u.name} MBA in ${spec} - Fees, Syllabus, Placements ${year}`
+  const title = `${cleanName} Online MBA in ${spec} - Fees, Syllabus, Placements ${year}`
   const description = `${u.name} MBA in ${spec} - Complete details on fees, syllabus, eligibility, career scope and placements. NAAC ${u.naac}. ${u.nirf < 200 ? `NIRF #${u.nirf}.` : ''} UGC DEB approved. Admission open.`
 
   return {

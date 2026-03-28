@@ -12,6 +12,7 @@ import { IMPROVED_SPECS } from '@/lib/improved-specs'
 import EnquiryModal from '@/components/EnquiryModal'
 import SyllabusSection from '@/components/SyllabusSection'
 import LearningExperience from '@/components/LearningExperience'
+import { UNIVERSITY_REVIEWS, GENERIC_REVIEWS } from '@/lib/reviews-data'
 
 const WA_NUMBER = '917061285806'
 
@@ -74,19 +75,20 @@ export default function SpecializationPageClient({ university: u, program, speci
   
   // Get other specializations from this university
   const otherSpecs = pd?.specs?.filter(s => s !== specialization).slice(0, 6) || []
+  const cleanName = u.name.replace(/\bOnline\b\s*$/i, '').trim()
 
   // FAQs specific to this specialization
   const faqs = [
     {
-      q: `What is the fee for ${progInfo.name} in ${specialization} at ${u.name}?`,
-      a: `The total fee for ${progInfo.name} in ${specialization} at ${u.name} is ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K - ₹${Math.round(u.feeMax/1000)}K`}. EMI options are available starting from ₹${u.emiFrom.toLocaleString()}/month. Scholarships may be available for eligible candidates.`
+      q: `What is the fee for ${progInfo.name} in ${specialization} at ${cleanName}?`,
+      a: `The total fee for ${progInfo.name} in ${specialization} at ${cleanName} is ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K - ₹${Math.round(u.feeMax/1000)}K`}. EMI options are available starting from ₹${u.emiFrom.toLocaleString()}/month. Scholarships may be available for eligible candidates.`
     },
     {
-      q: `Is ${u.name} ${progInfo.name} in ${specialization} valid?`,
-      a: `Yes, ${u.name} ${progInfo.name} in ${specialization} is 100% valid. The university is UGC DEB approved and NAAC ${u.naac} accredited.${u.nirf < 200 ? ` It is NIRF #${u.nirf} ranked.` : ''} The degree is equivalent to a regular ${program} and is valid for private sector jobs, bank jobs, and higher education.`
+      q: `Is ${cleanName} ${progInfo.name} in ${specialization} valid?`,
+      a: `Yes, ${cleanName} ${progInfo.name} in ${specialization} is 100% valid. The university is UGC DEB approved and NAAC ${u.naac} accredited.${u.nirf < 200 ? ` It is NIRF #${u.nirf} ranked.` : ''} The degree is equivalent to a regular ${program} and is valid for private sector jobs, bank jobs, and higher education.`
     },
     {
-      q: `What is the eligibility for ${progInfo.name} in ${specialization} at ${u.name}?`,
+      q: `What is the eligibility for ${progInfo.name} in ${specialization} at ${cleanName}?`,
       a: `${u.eligibility}. No entrance exam is required. Admission is based on merit and online application. Working professionals with relevant experience may get additional weightage.`
     },
     {
@@ -495,10 +497,59 @@ export default function SpecializationPageClient({ university: u, program, speci
                 </div>
               </section>
 
+              {/* Why Choose */}
+              <section className="card-lg p-6">
+                <h2 className="font-display text-xl font-bold text-navy mb-3">Why Choose {cleanName} for {progInfo.name} in {specialization}</h2>
+                {u.highlight && <p className="text-sm font-semibold text-amber-text mb-4">{u.highlight}</p>}
+                {u.forWho && u.forWho.length > 0 && (
+                  <>
+                    <h3 className="text-sm font-bold text-navy mb-2">Who This Program Is For</h3>
+                    <ul className="flex flex-col gap-2 mb-4">
+                      {u.forWho.map(item => (
+                        <li key={item} className="flex items-start gap-2 text-sm text-ink-2">
+                          <CheckCircle size={15} className="text-green-500 shrink-0 mt-0.5" />{item}
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+                <p className="text-sm text-ink-2 mb-1">Recognised by: <strong>{u.approvals.slice(0,4).join(' · ')}</strong></p>
+                <p className="text-sm text-ink-2">Total fees: <strong>{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</strong> | EMI from ₹{u.emiFrom.toLocaleString()}/month</p>
+              </section>
+
+              {/* Is It Worth It */}
+              <section className="card-lg p-6">
+                <h2 className="font-display text-xl font-bold text-navy mb-3">Is {cleanName} {progInfo.name} Worth It?</h2>
+                <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
+                  An online {program} from {cleanName} is worth considering if you are a working professional or fresh graduate who wants a recognised degree without leaving your job or city. The program is UGC DEB approved — valid for government jobs, PSU recruitment, and higher studies across India.
+                </p>
+                <p className="text-[15px] text-ink-2 leading-relaxed">
+                  With NAAC {u.naac} accreditation{u.nirf < 999 ? ` and NIRF rank #${u.nirf}` : ''}, {cleanName} maintains strong academic standards.{u.tagline ? ` ${u.tagline}` : ''}
+                </p>
+              </section>
+
+              {/* How to Apply */}
+              <section className="card-lg p-6">
+                <h2 className="font-display text-xl font-bold text-navy mb-4">How to Apply for {progInfo.name} at {cleanName}</h2>
+                <ol className="flex flex-col gap-4">
+                  {[
+                    `Check eligibility — ${u.eligibility}`,
+                    'Visit the official university website and fill the online application form',
+                    'Upload required documents: graduation certificate, photo ID, and passport photo',
+                    `Pay the program fees — total fee ${formatFee(u.feeMin)} to ${formatFee(u.feeMax)}, EMI option available from ₹${u.emiFrom.toLocaleString()} per month`,
+                  ].map((step, i) => (
+                    <li key={i} className="flex items-start gap-4">
+                      <div className="w-7 h-7 rounded-full bg-amber/10 border border-amber/30 flex items-center justify-center shrink-0 text-[12px] font-bold text-amber-text">{i+1}</div>
+                      <span className="text-sm text-ink-2 leading-relaxed pt-0.5">{step}</span>
+                    </li>
+                  ))}
+                </ol>
+              </section>
+
               {/* FAQs */}
               <section>
                 <h2 className="font-display text-xl font-bold text-navy mb-4">
-                  FAQs — {u.name.replace(/\s+online\s*$/i, '')} {progInfo.name} in {specialization}
+                  FAQs — {cleanName} {progInfo.name} in {specialization}
                 </h2>
                 <div className="flex flex-col gap-2">
                   {faqs.map((faq, i) => (
@@ -519,6 +570,61 @@ export default function SpecializationPageClient({ university: u, program, speci
                   ))}
                 </div>
               </section>
+
+              {/* Student Reviews */}
+              {(() => {
+                const reviews = UNIVERSITY_REVIEWS[u.id] ?? GENERIC_REVIEWS
+                const avgRating = reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length
+                const fullStars = Math.floor(avgRating)
+                const emptyStars = 5 - fullStars
+                return (
+                  <section className="card-lg p-6">
+                    <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+                      '@context': 'https://schema.org',
+                      '@type': 'Course',
+                      name: `${u.name} ${progInfo.name} in ${specialization}`,
+                      provider: { '@type': 'CollegeOrUniversity', name: u.name },
+                      aggregateRating: {
+                        '@type': 'AggregateRating',
+                        ratingValue: avgRating.toFixed(1),
+                        reviewCount: String(reviews.length),
+                        bestRating: '5',
+                        worstRating: '1',
+                      },
+                    })}}/>
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+                      <div>
+                        <h2 className="font-display text-xl font-bold text-navy mb-1">Student Reviews &amp; Ratings</h2>
+                        <p className="text-sm text-ink-3">{reviews.length} students reviewed this program</p>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-3xl font-extrabold text-navy">{avgRating.toFixed(1)}</span>
+                        <div>
+                          <div className="text-amber text-lg leading-none">{'★'.repeat(fullStars)}{'☆'.repeat(emptyStars)}</div>
+                          <div className="text-xs text-ink-3">out of 5</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      {reviews.map((r, i) => (
+                        <div key={i} className="bg-white border border-border rounded-xl p-5">
+                          <div className="flex items-start justify-between gap-3 mb-2">
+                            <div className="font-bold text-navy text-sm">{r.name} · {r.city}, India</div>
+                            <div className="flex flex-col items-end gap-1 shrink-0">
+                              <span className="px-2 py-0.5 bg-amber/10 text-amber-text text-[10px] font-bold rounded-full">{r.program}</span>
+                              <span className="text-xs text-ink-3">{r.date}</span>
+                            </div>
+                          </div>
+                          <div className="text-amber text-sm mb-2">{'★'.repeat(r.rating)}{'☆'.repeat(5-r.rating)}</div>
+                          <p className="text-sm text-ink-2 leading-relaxed">{r.review}</p>
+                          <div className="mt-2 text-[11px] text-green-600 font-semibold">✓ Verified Enrollment</div>
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                )
+              })()}
+
               {/* Related Programs — internal linking for SEO */}
               {program === 'MBA' && (
                 <section className="card-lg p-6">
@@ -706,6 +812,7 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
   const shortDesc = pd?.careerOutcome
     ? pd.careerOutcome.split('.').slice(0, 2).join('.').trim() + '.'
     : `${progInfo.name} in ${specialization} from ${u.name}. UGC DEB approved, ${pd?.duration || progInfo.duration} program.`
+  const cleanName = u.name.replace(/\bOnline\b\s*$/i, '').trim()
 
   return (
     <>
@@ -859,6 +966,109 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
             </div>
           </section>
         )}
+
+        {/* Why Choose */}
+        <section className="card-lg p-6 mb-6">
+          <h2 className="font-display text-xl font-bold text-navy mb-3">Why Choose {cleanName} for {progInfo.name} in {specialization}</h2>
+          {u.highlight && <p className="text-sm font-semibold text-amber-text mb-4">{u.highlight}</p>}
+          {u.forWho && u.forWho.length > 0 && (
+            <>
+              <h3 className="text-sm font-bold text-navy mb-2">Who This Program Is For</h3>
+              <ul className="flex flex-col gap-2 mb-4">
+                {u.forWho.map(item => (
+                  <li key={item} className="flex items-start gap-2 text-sm text-ink-2">
+                    <CheckCircle size={15} className="text-green-500 shrink-0 mt-0.5" />{item}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+          <p className="text-sm text-ink-2 mb-1">Recognised by: <strong>{u.approvals.slice(0,4).join(' · ')}</strong></p>
+          <p className="text-sm text-ink-2">Total fees: <strong>{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</strong> | EMI from ₹{u.emiFrom.toLocaleString()}/month</p>
+        </section>
+
+        {/* Is It Worth It */}
+        <section className="card-lg p-6 mb-6">
+          <h2 className="font-display text-xl font-bold text-navy mb-3">Is {cleanName} {progInfo.name} Worth It?</h2>
+          <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
+            An online {program} from {cleanName} is worth considering if you are a working professional or fresh graduate who wants a recognised degree without leaving your job or city. The program is UGC DEB approved — valid for government jobs, PSU recruitment, and higher studies across India.
+          </p>
+          <p className="text-[15px] text-ink-2 leading-relaxed">
+            With NAAC {u.naac} accreditation{u.nirf < 999 ? ` and NIRF rank #${u.nirf}` : ''}, {cleanName} maintains strong academic standards.{u.tagline ? ` ${u.tagline}` : ''}
+          </p>
+        </section>
+
+        {/* How to Apply */}
+        <section className="card-lg p-6 mb-6">
+          <h2 className="font-display text-xl font-bold text-navy mb-4">How to Apply for {progInfo.name} at {cleanName}</h2>
+          <ol className="flex flex-col gap-4">
+            {[
+              `Check eligibility — ${u.eligibility}`,
+              'Visit the official university website and fill the online application form',
+              'Upload required documents: graduation certificate, photo ID, and passport photo',
+              `Pay the program fees — total fee ${formatFee(u.feeMin)} to ${formatFee(u.feeMax)}, EMI option available from ₹${u.emiFrom.toLocaleString()} per month`,
+            ].map((step, i) => (
+              <li key={i} className="flex items-start gap-4">
+                <div className="w-7 h-7 rounded-full bg-amber/10 border border-amber/30 flex items-center justify-center shrink-0 text-[12px] font-bold text-amber-text">{i+1}</div>
+                <span className="text-sm text-ink-2 leading-relaxed pt-0.5">{step}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        {/* Student Reviews */}
+        {(() => {
+          const reviews = UNIVERSITY_REVIEWS[u.id] ?? GENERIC_REVIEWS
+          const avgRating = reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length
+          const fullStars = Math.floor(avgRating)
+          const emptyStars = 5 - fullStars
+          return (
+            <section className="card-lg p-6 mb-6">
+              <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'Course',
+                name: `${u.name} ${progInfo.name} in ${specialization}`,
+                provider: { '@type': 'CollegeOrUniversity', name: u.name },
+                aggregateRating: {
+                  '@type': 'AggregateRating',
+                  ratingValue: avgRating.toFixed(1),
+                  reviewCount: String(reviews.length),
+                  bestRating: '5',
+                  worstRating: '1',
+                },
+              })}}/>
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+                <div>
+                  <h2 className="font-display text-xl font-bold text-navy mb-1">Student Reviews &amp; Ratings</h2>
+                  <p className="text-sm text-ink-3">{reviews.length} students reviewed this program</p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-3xl font-extrabold text-navy">{avgRating.toFixed(1)}</span>
+                  <div>
+                    <div className="text-amber text-lg leading-none">{'★'.repeat(fullStars)}{'☆'.repeat(emptyStars)}</div>
+                    <div className="text-xs text-ink-3">out of 5</div>
+                  </div>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {reviews.map((r, i) => (
+                  <div key={i} className="bg-white border border-border rounded-xl p-5">
+                    <div className="flex items-start justify-between gap-3 mb-2">
+                      <div className="font-bold text-navy text-sm">{r.name} · {r.city}, India</div>
+                      <div className="flex flex-col items-end gap-1 shrink-0">
+                        <span className="px-2 py-0.5 bg-amber/10 text-amber-text text-[10px] font-bold rounded-full">{r.program}</span>
+                        <span className="text-xs text-ink-3">{r.date}</span>
+                      </div>
+                    </div>
+                    <div className="text-amber text-sm mb-2">{'★'.repeat(r.rating)}{'☆'.repeat(5-r.rating)}</div>
+                    <p className="text-sm text-ink-2 leading-relaxed">{r.review}</p>
+                    <div className="mt-2 text-[11px] text-green-600 font-semibold">✓ Verified Enrollment</div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )
+        })()}
 
         {/* Locked content section with form */}
         <div className="relative rounded-2xl overflow-hidden border border-border">
