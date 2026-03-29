@@ -699,7 +699,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 7,
     targetKeyword: 'symbiosis online mba',
     relatedUniversities: [],
-    status: 'published',
+    status: 'draft',
     faqs: [
 
     ],
