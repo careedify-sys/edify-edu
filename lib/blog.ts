@@ -699,7 +699,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 7,
     targetKeyword: 'symbiosis online mba',
     relatedUniversities: [],
-    status: 'published',
+    status: 'draft',
     faqs: [
       { q: 'Is Symbiosis online MBA valid for government jobs?', a: 'Yes. The Symbiosis online MBA through SSODL is UGC-DEB entitled. It is treated as equivalent to a regular on-campus MBA under UGC guidelines and is accepted for UPSC, SSC, state PSC exams, banking and railways where an MBA is a listed qualification.' },
       { q: 'What is the difference between SSODL and SCDL?', a: 'SSODL offers a full MBA degree approved by UGC-DEB. SCDL offers a Post Graduate Diploma in Business Administration, which is a diploma and not a degree. For PhD admission and most government jobs, SSODL is the relevant program.' },
