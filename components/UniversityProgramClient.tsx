@@ -123,6 +123,10 @@ function FullPage({ u, program, programSlug, pd }: {
                 <button onClick={() => setEnquiryOpen(true)} style={{ padding: '13px 28px', borderRadius: 'var(--r-sm)', background: 'linear-gradient(135deg,#c9922a,#e0a93a)', color: '#fff', fontWeight: 700, fontSize: 14, border: 'none', cursor: 'pointer' }}>
                   Speak with an Advisor →
                 </button>
+                <button onClick={() => setEnquiryOpen(true)} style={{ padding: '13px 20px', borderRadius: 'var(--r-sm)', border: '2px solid rgba(201,146,42,0.5)', color: 'var(--amber-text)', background: 'transparent', fontSize: 13, fontWeight: 700, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6 }}>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  Talk to Alumni
+                </button>
                 <Link href={`/universities/${u.id}`} style={{ padding: '13px 20px', borderRadius: 'var(--r-sm)', border: '1px solid #1e2f45', color: 'var(--ink-4)', fontSize: 13, fontWeight: 600, textDecoration: 'none' }}>
                   ← All {u.abbr} Programs
                 </Link>
@@ -581,6 +585,12 @@ function LockedPage({ u, program, programSlug, pd }: {
                   <CheckCircle size={10} className="text-green-500" /> {a}
                 </span>
               ))}
+            </div>
+            <div className="mt-4">
+              <button onClick={() => setEnquiryOpen(true)} className="flex items-center gap-2 px-4 py-2.5 rounded-lg border-2 border-amber/50 text-amber-text text-sm font-bold bg-transparent hover:bg-amber/10 transition-colors cursor-pointer">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                Talk to Alumni
+              </button>
             </div>
           </div>
         </div>
