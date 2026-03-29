@@ -874,6 +874,122 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="ilink">Compare NMIMS against other UGC-DEB approved online MBA programs on fees, rankings, and student feedback at <a href="/universities/nmims">edifyedu.in/universities/nmims</a></div>
     `,
+  },
+  {
+    slug: 'amity-online-mba-review-2026',
+    title: 'Amity Online MBA: Fees, Reviews and Placement 2026',
+    metaDescription: 'A factual look at Amity online MBA covering fees, official specialisations, Reddit Quora Trustpilot Shiksha reviews, placement support and who the program actua',
+    category: 'University Review',
+    tags: ['amity online mba', 'amity online mba fees', 'amity online mba review', 'amity university online mba', 'amity mba 2026'],
+    publishedAt: '2026-03-29',
+    readTime: 8,
+    targetKeyword: 'amity online mba',
+    relatedUniversities: [],
+    status: 'published',
+    faqs: [
+      { q: 'Is Amity online MBA UGC approved and valid in India?', a: 'Yes. Amity University Online holds UGC-DEB approval and AICTE recognition. The degree is treated as equivalent to a regular on-campus MBA under UGC guidelines and is valid for government jobs, PSU recruitment, and higher education. Amity was the first university in India to receive UGC approval for online degree programs.' },
+      { q: 'What is the fee for Amity online MBA in 2026?', a: 'The total fee for Indian students is Rs 1,99,000 for a single specialisation, payable as Rs 49,750 per semester. Dual specialisation costs Rs 2,99,000. For international students, the full program fee is USD 5,000 or USD 1,250 per semester. Zero-cost EMI is available. Scholarships are available for defence personnel, Amity alumni, merit-based, Divyang, and sports categories.' },
+      { q: 'What are the specialisations in Amity online MBA?', a: 'The officially listed MBA specialisations on the Amity website are: General Management, Hospital and Healthcare Management, International Finance, Digital Entrepreneurship, Business Analytics, Data Science, HR Analytics, Digital Marketing Management, and Dual Specialisation. Additional tracks including Sales and Marketing, IT Management, and others are also offered.' },
+      { q: 'What is the eligibility for Amity online MBA?', a: 'Graduation in any discipline with a minimum of 40 percent marks from a recognised university. If your graduation score is below 40 percent, an admission test is required. There is no entrance exam for candidates who meet the 40 percent threshold. Foreign students need a Certificate of Equivalence from the Association of Indian Universities.' },
+      { q: 'Can I do Amity online MBA while working full-time?', a: 'Yes. The program is built for working professionals. Live sessions are scheduled on weekends. Recorded lectures are available anytime through the Amigo LMS app. Exams are conducted online with remote proctoring from home. Optional on-campus events like orientation, mid-year meetups, workshops, and convocation are organised but not mandatory.' },
+      { q: 'What do Reddit and Trustpilot reviews say about Amity online MBA?', a: 'Feedback is mixed. Working professionals on Reddit and Quora generally rate the flexibility and recorded content well. Trustpilot reviews surface more serious concerns including delayed LMS access after payment, poor support responsiveness, undisclosed re-examination charges appearing after admission, and difficulty with refund and cancellation processes. Always get the complete fee breakdown in writing before paying.' }
+    ],
+    ctaTitle: '',
+    ctaDesc: '',
+    content: `
+<p>Amity is one of the most searched names when people look up online MBAs in India, and it has earned that attention. It was the first university in India to get UGC approval for online degrees. It holds the only QS-ranked online MBA in the country. Its accreditations span India, the UK, the US, and Canada. But it also has a documented support problem that shows up consistently across student reviews on multiple platforms. If you are considering this program, both of those things deserve equal weight.</p>
+
+<p>All program information in this page is sourced directly from the <a href="https://amityonline.com/master-of-business-administration-online" target="_blank">official Amity Online MBA page</a>. Student feedback is drawn from Reddit, Quora, Trustpilot, Shiksha, and LinkedIn, with sources linked at the bottom of this page.</p>
+
+<h2>About Amity University Online</h2>
+
+<p>Amity University is a private university established in 2005 with its main campus in Noida. The online MBA is delivered through Amity Online, the university's dedicated digital learning platform. Over 2 lakh learners have enrolled across programs. Amity was the first university in India to receive UGC approval for online degree programs. It holds NAAC A+ accreditation and is ranked among the top universities globally for graduate employability by Times Higher Education.</p>
+
+<div class="callout-key">India's only QS-ranked online MBA, holding an Asia Pacific Top 10 position. UGC-DEB entitled and equivalent to a regular MBA degree under Indian law. Valid for government jobs, PSU recruitment, PhD admission, and internationally recognised by WES Canada, WASC USA, and QAA UK.</div>
+
+<h2>Program Structure</h2>
+
+<p>The program runs for two years across four semesters. The first two semesters cover core management subjects common to all students. From semester three, students move into their chosen specialisation. The final semester includes a project or dissertation.</p>
+
+<p>The 2026 curriculum is built around Universal Design for Learning (UDL) principles, meaning content is delivered across video, interactive exercises, and visual formats. Gamified role-play simulations let students practise business decision-making in a simulated environment. Live industry projects come with certifications students can show to recruiters before graduation. Prof. AMI, the AI-powered academic companion, is available around the clock for doubt resolution and personalised learning support.</p>
+
+<div class="callout-warning">Eligibility: graduation in any discipline with a minimum of 40 percent marks. Below 40 percent, an admission test is required. No entrance exam otherwise. There is no minimum work experience required. Foreign students need an AIU Certificate of Equivalence. Always get the complete fee breakdown including re-examination fees in writing before paying, as multiple reviewers have flagged charges appearing after admission that were not disclosed upfront.</div>
+
+<h2>How Learning Works</h2>
+
+<p>Everything runs through the Amigo LMS, available on desktop and as a mobile app. Students get access to recorded video lectures, live weekend sessions, assignments, quizzes, and project work. The platform also includes AI-powered tools: automatic summaries of lecture content, smart question generation for self-testing, and a built-in note-taker. The beSocial app provides a student community platform for networking, club participation, and peer interaction within the online format.</p>
+
+<p>On-campus events are optional but available throughout the program: Samagam (orientation), mid-year meetups, workshops, industry visits, Sangathan (annual sports event), and a formal convocation ceremony. These are part of what Amity calls a blended experience within an online program.</p>
+
+<h2>Fees</h2>
+
+<p>The total fee for Indian students is Rs 1,99,000 for a single specialisation, paid as Rs 49,750 per semester. Dual specialisation costs Rs 2,99,000. For international students, the full program fee is USD 5,000 or USD 1,250 per semester. Zero-cost EMI is available through partner banks. Scholarships are available for defence personnel, Amity alumni, merit-based candidates, Divyang, and sports categories.</p>
+
+<div class="emi-block">Zero-cost EMI available through partner banks. Dual specialisation at Rs 2,99,000. Scholarship categories: defence personnel, Amity alumni, merit-based, Divyang, sports. Loan assistance available for qualified applicants. Always confirm the full fee structure including re-examination and semester extension charges before enrolling.</div>
+
+<h2>Specialisations</h2>
+
+<p>The following MBA specialisations are officially listed on the Amity Online website. You choose from semester three onwards. Dual specialisation is available if you want to study across two tracks.</p>
+
+<p>The key specialisations listed on the official page are: General Management, Hospital and Healthcare Management, International Finance, Digital Entrepreneurship, Business Analytics, Data Science, HR Analytics, and Digital Marketing Management. Additional specialisations including Sales and Marketing, IT Management, and others are available. Check the <a href="https://amityonline.com/master-of-business-administration-online" target="_blank">official page</a> for the current full list as Amity continues to add tracks.</p>
+
+<h2>What Students on Reddit, Quora, Trustpilot, Shiksha and LinkedIn Say</h2>
+
+<p>The feedback is more complicated than most review pages show. Here is an honest breakdown by platform.</p>
+
+<div class="platform-section">
+  <div class="platform-label">Reddit and Quora</div>
+  <div class="voices-grid">
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">I managed to complete the MBA while working full time. The recorded sessions helped a lot. The flexibility is real and the content is solid once you are inside the system.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.quora.com/Is-it-worth-doing-an-MBA-through-Amity-University-Online" target="_blank">Quora</a></span><span class="sent s-pos">Positive</span></div></div>
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">Placement support is limited. You mostly have to find jobs yourself. The portal exists but don't expect the university to drive it for you.</div><div class="voice-footer"><span class="voice-src"><a href="https://jumpnetworks.in/is-amity-online-mba-worth-it/" target="_blank">Reddit feedback via JumpNetworks</a></span><span class="sent s-neg">Critical</span></div></div>
+  </div>
+
+  <div class="platform-label">Shiksha</div>
+  <div class="voices-grid">
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">Good for employed professionals. Classes are on weekends and the AMIGO portal has all placement and academic information. You have to keep an eye on it yourself for job roles.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.shiksha.com/college/amity-university-online-noida-28528/reviews" target="_blank">Shiksha, MBA Batch 2027</a></span><span class="sent s-pos">Positive</span></div></div>
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">Course content is decent but not really worth it if you are just after content. You can find a lot of this material online for free. The training experience is not exceptional.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.shiksha.com/college/amity-university-online-noida-28528/reviews" target="_blank">Shiksha Review</a></span><span class="sent s-mix">Mixed</span></div></div>
+  </div>
+
+  <div class="platform-label">Trustpilot</div>
+  <div class="voices-grid">
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">I paid the first semester fees and received no LMS login for weeks. The admission counsellor stopped responding. I only got access after raising repeated complaints. Everything that went wrong happened in the first month.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.trustpilot.com/review/amityonline.com" target="_blank">Trustpilot</a></span><span class="sent s-neg">Critical</span></div></div>
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">My third semester project was deleted by the university. They cited an integrity violation but never provided evidence despite repeated emails. The project was never restored.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.trustpilot.com/review/amityonline.com" target="_blank">Trustpilot</a></span><span class="sent s-neg">Critical</span></div></div>
+  </div>
+
+  <div class="platform-label">Official Learner Testimonials (Amity Website)</div>
+  <div class="voices-grid">
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">I needed a program that could seamlessly integrate with my demanding professional life. Amity proved to be the perfect fit. The curriculum is clear, relevant, and highly practical. The faculty is incredibly supportive.</div><div class="voice-footer"><span class="voice-src"><a href="https://amityonline.com/master-of-business-administration-online" target="_blank">Satheesh Nair, Group IT Manager, UAE</a></span><span class="sent s-pos">Positive</span></div></div>
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">The onboarding experience was smooth. You get email alerts for almost everything. I haven't faced any problem so far. The Amigo app is very convenient and the beSocial platform gives real campus vibes.</div><div class="voice-footer"><span class="voice-src"><a href="https://amityonline.com/master-of-business-administration-online" target="_blank">Jatin Gupta, MBA Batch July 2025</a></span><span class="sent s-pos">Positive</span></div></div>
+  </div>
+
+  <div class="platform-label">LinkedIn</div>
+  <div class="voices-grid">
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">Disappointed with Amity Online MBA's rushed pace. What was communicated during enrollment and what was delivered did not match in terms of pacing and support.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.linkedin.com/posts/dona-barman-b567769a_amityuniversityonline-onlinemba-workingprofessionals-activity-7338846374647472131-2rzQ" target="_blank">LinkedIn, Working Professional 2025</a></span><span class="sent s-neg">Critical</span></div></div>
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">I've given 2 stars only because of the professors, who are good. But student service is poor. I've been following up for months for my updated mark sheet with no positive response.</div><div class="voice-footer"><span class="voice-src"><a href="https://uk.trustpilot.com/review/amityonline.com?page=2" target="_blank">Trustpilot</a></span><span class="sent s-neg">Critical</span></div></div>
+  </div>
+</div>
+
+<div class="pull">The pattern across all platforms is consistent: the academic content, faculty quality, and LMS experience are generally well-rated. The administrative side, particularly support responsiveness, LMS access delays after payment, and undisclosed charges post-enrollment, draws the most serious criticism.</div>
+
+<h2>Placement Support</h2>
+
+<p>Amity provides structured placement support through the Amigo portal. Services include career exploration tools, resume and CV assistance, virtual job search support, one-on-one career counselling sessions, and interview preparation masterclasses. Virtual placement drives are organised with hiring partners. Entry-level roles targeted include Business Analyst, Marketing Associate, Financial Analyst, Operations Executive, and HR Executive. Mid-level roles include Product Manager, Marketing Manager, and HR Manager. Senior roles include Strategy Consultant, General Manager, and C-Suite Executive pathways.</p>
+
+<p>There is no guaranteed placement. Multiple student reviews note that placement outcomes depend heavily on individual effort and prior work experience. The university provides the infrastructure. Using it actively is the student's responsibility.</p>
+
+<h2>Who This Program Suits</h2>
+
+<p>Working professionals who need a flexible, UGC-DEB recognised MBA from a brand with genuine international accreditations are the right audience. The WES recognition is practically useful for anyone planning to work or study in Canada, the UK, or the US. The program is also relevant for government job aspirants since the degree is valid for UPSC, SSC, state PSC, banking, and railways recruitment.</p>
+
+<p>Fresh graduates can apply since minimum eligibility is just 40 percent. But without prior work experience, placement outcomes through an online program are modest compared to a full-time campus MBA.</p>
+
+<p>The Trustpilot complaints are serious enough to factor into your decision. LMS access delays after payment, hidden charges post-admission, and refund difficulties are not isolated incidents. Get every fee commitment and timeline in writing before you pay anything.</p>
+
+<div class="ilink">Compare Amity against other UGC-DEB approved online MBA programs on fees, rankings, and verified data at <a href="/universities/amity" target="_blank">edifyedu.in/universities/amity</a></div>
+
+<h2>Sources</h2>
+<p><a href="https://amityonline.com/master-of-business-administration-online" target="_blank">Amity Online Official MBA Page</a> &middot; <a href="https://www.trustpilot.com/review/amityonline.com" target="_blank">Trustpilot Reviews</a> &middot; <a href="https://uk.trustpilot.com/review/amityonline.com?page=2" target="_blank">Trustpilot Page 2</a> &middot; <a href="https://www.shiksha.com/college/amity-university-online-noida-28528/reviews" target="_blank">Shiksha Student Reviews</a> &middot; <a href="https://www.quora.com/Is-it-worth-doing-an-MBA-through-Amity-University-Online" target="_blank">Quora</a> &middot; <a href="https://jumpnetworks.in/is-amity-online-mba-worth-it/" target="_blank">Reddit feedback via JumpNetworks</a> &middot; <a href="https://www.linkedin.com/posts/dona-barman-b567769a_amityuniversityonline-onlinemba-workingprofessionals-activity-7338846374647472131-2rzQ" target="_blank">LinkedIn Review 2025</a></p>
+    `,
   }
 ]
 
