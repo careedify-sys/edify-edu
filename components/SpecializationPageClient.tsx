@@ -434,6 +434,20 @@ export default function SpecializationPageClient({ university: u, program, speci
                 </section>
               )}
 
+              {/* Talk to Alumni Banner */}
+              <div style={{ background: 'linear-gradient(135deg,#0B1D35,#142540)', border: '1px solid rgba(201,146,42,0.25)', borderRadius: 16 }} className="p-5 flex flex-col sm:flex-row items-center gap-4">
+                <div style={{ width: 48, height: 48, background: 'rgba(201,146,42,0.15)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e0a93a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div className="flex-1 text-center sm:text-left">
+                  <div style={{ color: '#fff', fontWeight: 700, fontSize: 14, marginBottom: 2 }}>Not sure? Hear from our alumni</div>
+                  <div style={{ color: '#94a3b8', fontSize: 12 }}>Real {u.abbr} {program} — {specialization} graduates share their honest experience</div>
+                </div>
+                <button onClick={() => setEnquiryOpen(true)} style={{ padding: '11px 22px', background: 'linear-gradient(135deg,#c9922a,#e0a93a)', color: '#fff', fontWeight: 700, fontSize: 13, border: 'none', borderRadius: 10, cursor: 'pointer', whiteSpace: 'nowrap', flexShrink: 0 }}>
+                  Talk to Alumni →
+                </button>
+              </div>
+
               {/* Examination Pattern */}
               <section className="card-lg p-6">
                 <h2 className="font-display text-xl font-bold text-navy mb-4">Examination Pattern</h2>
@@ -887,12 +901,6 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
                 </div>
               ))}
             </div>
-            <div className="mt-4">
-              <button onClick={() => setEnquiryOpen(true)} className="flex items-center gap-2 px-4 py-2.5 rounded-lg border-2 border-amber/50 text-amber-text text-sm font-bold bg-transparent hover:bg-amber/10 transition-colors cursor-pointer">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                Talk to Alumni
-              </button>
-            </div>
           </div>
         </div>
 
@@ -966,6 +974,20 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
             </a>
           </div>
         )}
+
+        {/* Talk to Alumni Banner */}
+        <div style={{ background: 'linear-gradient(135deg,#0B1D35,#142540)', border: '1px solid rgba(201,146,42,0.25)', borderRadius: 16 }} className="p-5 mb-6 flex flex-col sm:flex-row items-center gap-4">
+          <div style={{ width: 48, height: 48, background: 'rgba(201,146,42,0.15)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e0a93a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div className="flex-1 text-center sm:text-left">
+            <div style={{ color: '#fff', fontWeight: 700, fontSize: 14, marginBottom: 2 }}>Not sure? Hear from our alumni</div>
+            <div style={{ color: '#94a3b8', fontSize: 12 }}>Real {u.abbr} {program} — {specialization} graduates share their honest experience</div>
+          </div>
+          <button onClick={() => setEnquiryOpen(true)} style={{ padding: '11px 22px', background: 'linear-gradient(135deg,#c9922a,#e0a93a)', color: '#fff', fontWeight: 700, fontSize: 13, border: 'none', borderRadius: 10, cursor: 'pointer', whiteSpace: 'nowrap', flexShrink: 0 }}>
+            Talk to Alumni →
+          </button>
+        </div>
 
         {/* Examination Pattern */}
         <section className="card-lg p-6 mb-6">
