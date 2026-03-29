@@ -806,6 +806,19 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>This page covers the NMIMS online MBA honestly: the structure, the fees, what the learning experience looks like, and what students who have been through it tend to say.</p>
 
+<div class="quick-facts">
+  <div class="qf-cell"><span class="qf-label">Duration</span><span class="qf-val">2 Years</span></div>
+  <div class="qf-cell"><span class="qf-label">Mode</span><span class="qf-val">100% Online</span></div>
+  <div class="qf-cell"><span class="qf-label">Semesters</span><span class="qf-val">4</span></div>
+  <div class="qf-cell"><span class="qf-label">Total Fee</span><span class="qf-val">₹1.96L</span></div>
+  <div class="qf-cell"><span class="qf-label">Per Semester</span><span class="qf-val">₹55,000</span></div>
+  <div class="qf-cell"><span class="qf-label">Specialisations</span><span class="qf-val">5</span></div>
+  <div class="qf-cell"><span class="qf-label">NAAC Grade</span><span class="qf-val">A++</span></div>
+  <div class="qf-cell"><span class="qf-label">AACSB</span><span class="qf-val">Accredited</span></div>
+  <div class="qf-cell"><span class="qf-label">Entrance Exam</span><span class="qf-val">None</span></div>
+  <div class="qf-cell"><span class="qf-label">Min. Marks</span><span class="qf-val">50%</span></div>
+</div>
+
 <h2>About NMIMS and the Online Program</h2>
 
 <p>Narsee Monjee Institute of Management Studies is a private deemed-to-be university established in 1981 in Mumbai. The online MBA is offered through NMIMS Global Access School for Continuing Education, which holds UGC-DEB approval and Category I status from UGC. NMIMS also carries NAAC A++ accreditation with a score of 3.6, maintained across four consecutive assessment cycles. It is one of fewer than six percent of business schools globally to hold AACSB accreditation.</p>
