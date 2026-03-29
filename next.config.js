@@ -21,6 +21,15 @@ const nextConfig = {
 
   async redirects() {
     return [
+      // ── www → non-www (permanent 301) ─────────────────────────────────
+      // Fixes Google Search Console "Page with redirect" for http://www.edifyedu.in/
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.edifyedu.in' }],
+        destination: 'https://edifyedu.in/:path*',
+        permanent: true,
+      },
+
       // Online-prefix → canonical slug
       { source: '/programs/online-mba',        destination: '/programs/mba',   permanent: true  },
       { source: '/programs/online-mca',        destination: '/programs/mca',   permanent: true  },
