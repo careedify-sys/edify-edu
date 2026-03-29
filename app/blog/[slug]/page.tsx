@@ -5,10 +5,9 @@ import { Clock, Calendar, ChevronRight, Hash, BookOpen } from 'lucide-react'
 import { getBlogPost, getPublishedPosts } from '@/lib/blog'
 import { getSlimById } from '@/lib/data-slim'
 import BlogLeadForm from '@/components/BlogLeadForm'
-import BlogSidebarForm from '@/components/BlogSidebarForm'
 import BlogClientActions from '@/components/BlogClientActions'
 import BlogTOC from '@/components/BlogTOC'
-import BlogAlumniCard from '@/components/BlogAlumniCard'
+import BlogSidebarWidgets from '@/components/BlogSidebarWidgets'
 
 // ── Server-side helpers ───────────────────────────────────────────────────────
 
@@ -415,11 +414,10 @@ export default async function BlogPostPage({ params }: Props) {
               {/* Desktop TOC */}
               <BlogTOC headings={headings} />
 
-              {/* Lead form */}
-              <BlogSidebarForm postTitle={post.title} compact />
-
-              {/* Talk to an Alumnus */}
-              <BlogAlumniCard postTitle={post.title} />
+              {/* Talk to Alumnus + Program Details — hidden on mobile (in-article form handles mobile) */}
+              <div className="hidden lg:contents">
+                <BlogSidebarWidgets postTitle={post.title} />
+              </div>
 
               {/* Related universities */}
               {relatedUnis.length > 0 && (
