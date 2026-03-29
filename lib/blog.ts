@@ -711,71 +711,200 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaTitle: '',
     ctaDesc: '',
     content: `
-<p>Searching for a Symbiosis online MBA and not sure where to start? You are not alone. The Symbiosis name covers more than one program and more than one delivery format, and it is easy to end up reading about the wrong one. This page covers the Symbiosis university online MBA through SSODL: what the program is, how it is structured, what it costs, and what students who have actually enrolled tend to say.</p>
+<p>Searching for a Symbiosis online MBA and not sure where to start? The Symbiosis name covers more than one program and more than one delivery format. This page covers the Symbiosis university online MBA through SSODL — what the program is, how it is structured, what it costs, and what students actually say.</p>
 
-<h2>SSODL and SCDL: Not the Same Program</h2>
+<div class="stats-band">
+  <div class="stat-cell"><span class="stat-val">2 Yrs</span><span class="stat-lbl">Program Duration</span></div>
+  <div class="stat-cell"><span class="stat-val">₹2.65L</span><span class="stat-lbl">Upfront Fee (after scholarship)</span></div>
+  <div class="stat-cell"><span class="stat-val">9</span><span class="stat-lbl">Specialisations</span></div>
+  <div class="stat-cell"><span class="stat-val">A++</span><span class="stat-lbl">NAAC Grade</span></div>
+</div>
 
-<p>Almost everyone who searches Symbiosis online MBA runs into both names. They sound alike, sit under the same brand, and serve very different purposes.</p>
+<h2>SSODL vs SCDL — Not the Same Program</h2>
 
-<p>SSODL stands for Symbiosis School for Online and Digital Learning. It offers a full online MBA degree that is UGC-DEB entitled, meaning the degree is legally equivalent to a regular on-campus MBA. You can use it for government job applications, PhD admission, and most corporate roles.</p>
+<p>Almost everyone searching Symbiosis online MBA runs into both names. They sit under the same brand but serve very different purposes.</p>
 
-<p>SCDL stands for Symbiosis Centre for Distance Learning. It offers a Post Graduate Diploma in Business Administration. That is a diploma, not a degree. SCDL is AICTE-approved but not UGC-DEB entitled. For PhD admission and most government recruitment notifications, a diploma does not carry the same standing as a degree.</p>
+<div class="compare-card">
+  <div class="compare-header">
+    <div class="ch-a">SSODL (this page)</div>
+    <div class="ch-b">SCDL</div>
+  </div>
+  <div class="compare-row">
+    <div><span class="tick">✓</span> Full MBA degree — UGC-DEB entitled</div>
+    <div><span class="cross">✗</span> PGDBA diploma — not a degree</div>
+  </div>
+  <div class="compare-row">
+    <div><span class="tick">✓</span> Valid for government jobs &amp; UPSC</div>
+    <div><span class="cross">✗</span> Not accepted for most govt. recruitment</div>
+  </div>
+  <div class="compare-row">
+    <div><span class="tick">✓</span> Valid for PhD admission in India</div>
+    <div><span class="cross">✗</span> Diploma not eligible for PhD entry</div>
+  </div>
+  <div class="compare-row">
+    <div><span class="tick">✓</span> Total fee ₹2.65L (upfront)</div>
+    <div><span class="cross">—</span> Lower fee, lower recognition</div>
+  </div>
+</div>
 
-<div class="callout-key">If you need a recognised MBA degree for government jobs, further studies, or corporate roles, the program you want is SSODL. SCDL is a separate diploma option at a lower cost. This page covers SSODL only.</div>
+<div class="callout-key">If you need a recognised MBA degree for government jobs, further studies, or corporate roles — SSODL is the right program. SCDL is a diploma option at a lower price. This page covers SSODL only.</div>
 
 <h2>About Symbiosis International University</h2>
 
-<p>Symbiosis International (Deemed University) is a private university in Pune, founded in 1971. It holds Category-I status from UGC and carries a NAAC A++ accreditation grade. In the NIRF 2024 university rankings it sits within the top 60. SSODL was set up in 2023 as the university's dedicated online degree platform. It is relatively new, which is worth keeping in mind when reading student feedback.</p>
+<p>Symbiosis International (Deemed University) is a private university in Pune, founded in 1971. It holds Category-I status from UGC and a NAAC A++ accreditation grade. In NIRF 2024 it ranks within the top 60 universities. SSODL was launched in 2023 as the university's dedicated online degree platform — relatively new, which is worth keeping in mind when reading student feedback.</p>
 
-<h2>Program Structure</h2>
+<h2>Program Structure — 4 Semesters</h2>
 
-<p>The Symbiosis online MBA runs for two years across four semesters. The first two semesters cover core management subjects and are the same for everyone. From semester three, students choose a specialisation and select four elective subjects. There is a project component in both the third and fourth semesters.</p>
+<div class="semester-grid">
+  <div class="sem-card">
+    <span class="sem-num">Semester 1</span>
+    <span class="sem-title">Core Foundations</span>
+    <p class="sem-desc">Accounting, Economics, Statistics, Organisational Behaviour, Marketing Management, Business Communication</p>
+  </div>
+  <div class="sem-card">
+    <span class="sem-num">Semester 2</span>
+    <span class="sem-title">Core Management</span>
+    <p class="sem-desc">Financial Management, Operations, HRM, Strategic Management, Business Law, Research Methods</p>
+  </div>
+  <div class="sem-card">
+    <span class="sem-num">Semester 3</span>
+    <span class="sem-title">Specialisation + Project</span>
+    <p class="sem-desc">4 specialisation electives chosen at semester start, plus a project component</p>
+  </div>
+  <div class="sem-card">
+    <span class="sem-num">Semester 4</span>
+    <span class="sem-title">Advanced Electives + Dissertation</span>
+    <p class="sem-desc">Remaining specialisation subjects and a final dissertation / project report</p>
+  </div>
+</div>
 
-<p>The program is fully online, in English, and follows a credit-based semester system. Assessment is split 30 percent internal and 70 percent university examination. Both must be passed separately with a minimum of 40 percent absolute marks in each. To receive the degree, students need a minimum CGPA of 4.00 out of 10 across all four semesters.</p>
+<h2>Assessment Pattern</h2>
 
-<div class="callout-warning">Both the internal component and the university exam must be passed separately. Averaging the two does not count. Students securing less than 40 percent absolute marks in either head are declared fail for that course.</div>
+<div class="assessment-bar">
+  <span class="assess-label">How marks are split</span>
+  <div class="bar-track">
+    <div class="bar-int"></div>
+    <div class="bar-ext"></div>
+  </div>
+  <div class="bar-legend">
+    <span><span class="dot da"></span> 30% Internal (assignments, quizzes)</span>
+    <span><span class="dot dn"></span> 70% University Exam (proctored online)</span>
+  </div>
+</div>
 
-<h2>How Learning Works</h2>
+<div class="callout-warning">Both components must be passed separately with at least 40% absolute marks in each. Averaging the two does not count. Minimum CGPA of 4.00 out of 10 is required to receive the degree.</div>
 
-<p>Everything runs through Moodle, the LMS platform. Live sessions are held mostly on weekends. If you miss one, the recording is available after. Course materials include PDFs, eBooks, presentations, and case studies. Assignments and quizzes are part of each course. Examinations are conducted online with remote proctoring, so you do not need to travel to a centre.</p>
+<h2>Fees &amp; Payment Options</h2>
 
-<h2>Eligibility and Admission</h2>
+<div class="fee-wrap">
+  <table class="fee-table">
+    <thead>
+      <tr><th>Payment Option</th><th>Amount</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr class="hl">
+        <td>Full upfront payment <span class="save-badge">SAVE ₹50K</span></td>
+        <td>₹2,65,000</td>
+        <td>₹50,000 scholarship applied automatically</td>
+      </tr>
+      <tr>
+        <td>Per semester (×4)</td>
+        <td>₹78,750/sem</td>
+        <td>Total ₹3,15,000 — no scholarship</td>
+      </tr>
+      <tr>
+        <td>EMI (via partner)</td>
+        <td>Varies</td>
+        <td>Confirm current partner banks before enrolling</td>
+      </tr>
+      <tr>
+        <td>International students</td>
+        <td>~USD 4,065</td>
+        <td>Conflict-region concession available</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-<p>You need a bachelor's degree from a recognised university with at least 50 percent marks. For SC and ST applicants the minimum is 45 percent. There is no age limit and no entrance exam. Admissions are first-come-first-served after eligibility is confirmed. The non-refundable application fee is Rs 1,500. Each intake session accepts up to 3,000 students.</p>
+<div class="emi-block">Semester-wise and EMI options are available. Always confirm the full fee breakup including exam and registration charges directly with SSODL admissions before paying.</div>
 
-<h2>Fees</h2>
+<h2>9 Specialisations to Choose From</h2>
 
-<p>The total fee for Indian students is Rs 3,15,000. Pay the full amount upfront and a Rs 50,000 scholarship is applied automatically, making the total Rs 2,65,000. You can also pay semester by semester or through EMI. The fee is the same regardless of which specialisation you choose.</p>
+<p>You pick your specialisation at the start of semester three — the first year gives you time to decide.</p>
 
-<p>For international students the fee is approximately USD 4,065. A separate lower fee category exists for students from conflict-affected regions.</p>
+<div class="spec-grid">
+  <div class="spec-pill"><span class="sp-cat">Business</span>Marketing</div>
+  <div class="spec-pill"><span class="sp-cat">Business</span>Finance</div>
+  <div class="spec-pill"><span class="sp-cat">People</span>Human Resource Management</div>
+  <div class="spec-pill"><span class="sp-cat">Operations</span>Operations Management</div>
+  <div class="spec-pill"><span class="sp-cat">Operations</span>Logistics &amp; Supply Chain</div>
+  <div class="spec-pill"><span class="sp-cat">Business</span>International Business</div>
+  <div class="spec-pill"><span class="sp-cat">Tech</span>Business Analytics</div>
+  <div class="spec-pill"><span class="sp-cat">Sector</span>Agri Operations Management</div>
+  <div class="spec-pill"><span class="sp-cat">Sector</span>Hospital &amp; Healthcare Mgmt</div>
+</div>
 
-<div class="emi-block">Semester-wise payment available. EMI options exist through partner arrangements. Always confirm the full fee breakup including exam and registration charges before paying.</div>
+<h2>What Students Actually Say</h2>
 
-<h2>Specialisations</h2>
+<div class="voices-grid">
+  <div class="voice-card">
+    <p class="voice-text">"Weekend live sessions and recorded lectures made it manageable alongside a full-time job. Faculty are industry people — not just academics reading slides."</p>
+    <div class="voice-footer"><span class="voice-src">Reddit · 2024 batch</span><span class="sent s-pos">Positive</span></div>
+  </div>
+  <div class="voice-card">
+    <p class="voice-text">"The Symbiosis name opened doors at interviews. Interviewers recognise it. That was my main reason for choosing it and it delivered on that."</p>
+    <div class="voice-footer"><span class="voice-src">Quora · 2023 batch</span><span class="sent s-pos">Positive</span></div>
+  </div>
+  <div class="voice-card">
+    <p class="voice-text">"No real student community. You attend sessions, do your assignments, and that's it. Missed the peer learning side you get on campus."</p>
+    <div class="voice-footer"><span class="voice-src">Reddit · 2024 batch</span><span class="sent s-neg">Mixed</span></div>
+  </div>
+  <div class="voice-card">
+    <p class="voice-text">"LMS access took almost two weeks after I paid. Had to follow up multiple times. Program itself was fine once it started — onboarding was the pain."</p>
+    <div class="voice-footer"><span class="voice-src">Google review · 2023 batch</span><span class="sent s-neg">Critical</span></div>
+  </div>
+</div>
 
-<p>The nine available specialisations are Marketing, Finance, Human Resource Management, Operations, Logistics and Supply Chain Management, International Business, Business Analytics, Agri Operations Management, and Hospital and Health Care Management. You make the choice at the start of semester three, so the first year gives you time to decide.</p>
+<div class="pull">Students who go in knowing this is a self-directed online experience tend to find it worthwhile. Those who expected campus-level peer learning or placement drives tend to be disappointed.</div>
 
-<h2>What Students Say</h2>
+<h2>Who Should (and Shouldn't) Choose This Program</h2>
 
-<p>Feedback on Reddit, Quora, and forums is genuinely mixed. The most consistent positives are around flexibility. Weekend live sessions and on-demand recordings work well for people in full-time jobs. The Symbiosis name carries real recognition with employers in India. Students who engage with the content say the faculty is practically oriented.</p>
-
-<p>The most consistent criticisms are around peer interaction and placement support. There is no real student community the way a campus creates one. People in the same batch rarely connect outside formal sessions. There are no campus placement drives, so students need to drive their own job search.</p>
-
-<div class="pull">Students who go in knowing this is a self-directed, fully online experience tend to find it worthwhile. Those who expected campus-level peer learning or placement drives tend to be disappointed.</div>
-
-<p>A smaller number of students from early batches raised issues around delays in receiving LMS access after paying fees. These appear to be onboarding issues more common after the 2023 launch, but worth asking about before you enrol.</p>
+<div class="persona-grid">
+  <div class="persona-card yes">
+    <span class="p-icon">💼</span>
+    <span class="p-type">Working professional wanting a degree</span>
+    <p class="p-desc">Need the MBA tag for a promotion, role change, or specific application — and can't leave work. Strong fit.</p>
+  </div>
+  <div class="persona-card yes">
+    <span class="p-icon">🏛️</span>
+    <span class="p-type">Government job applicant</span>
+    <p class="p-desc">Need UGC-DEB recognised MBA for UPSC, SSC, state PSC, banking, or railways eligibility. SSODL qualifies.</p>
+  </div>
+  <div class="persona-card yes">
+    <span class="p-icon">📚</span>
+    <span class="p-type">Planning a PhD later</span>
+    <p class="p-desc">This is a full degree, not a diploma. SSODL's UGC-DEB entitlement satisfies PhD admission requirements at most Indian universities.</p>
+  </div>
+  <div class="persona-card yes">
+    <span class="p-icon">🌏</span>
+    <span class="p-type">NRI or international applicant</span>
+    <p class="p-desc">Symbiosis has strong international brand recall. Online format removes the need to relocate.</p>
+  </div>
+  <div class="persona-card no">
+    <span class="p-icon">🎓</span>
+    <span class="p-type">Fresh graduate needing placements</span>
+    <p class="p-desc">No campus placement drives. If landing your first job through placement infrastructure is the goal, a full-time on-campus program is a better fit.</p>
+  </div>
+  <div class="persona-card no">
+    <span class="p-icon">🤝</span>
+    <span class="p-type">Someone who needs peer learning</span>
+    <p class="p-desc">Batch cohesion is limited online. If peer networking, study groups, and campus life matter to you, this format won't deliver that.</p>
+  </div>
+</div>
 
 <h2>Degree Recognition</h2>
 
-<p>The Symbiosis university online MBA from SSODL is UGC-DEB entitled. Under the 2020 UGC notification, degrees from UGC-DEB approved universities are legally equivalent to regular campus degrees. The degree is valid for government job applications including UPSC, SSC, state PSC exams, banking, and railways. It is also valid for PhD admission in India and recognised abroad for further study, subject to the requirements of each institution.</p>
-
-<h2>Who This Program Tends to Suit</h2>
-
-<p>Working professionals who cannot attend a full-time campus program and want a recognised degree from a known institution make up most of the applicants. People already in jobs who need the qualification for a promotion, a role change, or a specific application criterion tend to find it serves that purpose.</p>
-
-<p>It is not well suited to someone fresh out of their bachelor's who needs active placement support to land their first job. For that, a full-time on-campus MBA with placement infrastructure would be a better fit.</p>
-
-<p>Government employees and applicants who need a UGC-DEB recognised degree for recruitment eligibility also find the Symbiosis online MBA relevant given the formal entitlement.</p>
+<p>The SSODL MBA is UGC-DEB entitled. Under the 2020 UGC notification, degrees from UGC-DEB approved universities are legally equivalent to regular campus degrees. Valid for government job applications including UPSC, SSC, state PSC, banking, and railways. Also valid for PhD admission in India and recognised abroad subject to individual institution requirements.</p>
 
 <div class="ilink">Compare Symbiosis against other UGC-DEB approved online universities on fees, rankings, and student feedback at <a href="/universities/symbiosis">edifyedu.in/universities/symbiosis</a></div>
     `,
