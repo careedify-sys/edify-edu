@@ -34,10 +34,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: 'Online MBA in India 2026 | Compare Universities & Fees | EdifyEdu',
+    default: 'Online Universities in India 2026 | Compare Fees & Programs | EdifyEdu',
     template: '%s | Edify',
   },
-  description: 'Compare 100+ UGC-DEB approved online MBA universities in India. Check fees, syllabus, placements and choose the best program for you.',
+  description: 'Compare 100+ UGC-DEB approved online universities in India. Check fees, syllabus, placements and choose the best program for you.',
   keywords: [
     'online mba india 2026', 'best online mba india', 'online mba for working professionals',
     'ugc deb approved online degree', 'nirf ranked online mba', 'naac a++ online university',
@@ -55,12 +55,12 @@ export const metadata: Metadata = {
     siteName: 'Edify — edifyedu.in',
     type: 'website',
     locale: 'en_IN',
-    title: 'Online MBA in India 2026 | Compare Universities & Fees | EdifyEdu',
-    description: 'Compare 100+ UGC-DEB approved online MBA universities in India. Check fees, syllabus, placements and choose the best program for you.',
+    title: 'Online Universities in India 2026 | Compare Fees & Programs | EdifyEdu',
+    description: 'Compare 100+ UGC-DEB approved online universities in India. Check fees, syllabus, placements and choose the best program for you.',
     url: 'https://edifyedu.in',
     images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: "Edify — India's honest guide to online degrees" }],
   },
-  twitter: { card: 'summary_large_image', site: '@edifyedu', title: 'Online MBA in India 2026 | Compare Universities & Fees | EdifyEdu', description: 'Compare 100+ UGC-DEB approved online MBA universities in India. Check fees, syllabus, placements and choose the best program for you.' },
+  twitter: { card: 'summary_large_image', site: '@edifyedu', title: 'Online Universities in India 2026 | Compare Fees & Programs | EdifyEdu', description: 'Compare 100+ UGC-DEB approved online universities in India. Check fees, syllabus, placements and choose the best program for you.' },
   robots: {
     index: true,
     follow: true,
