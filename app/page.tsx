@@ -277,39 +277,60 @@ export default function HomePage() {
       {/* ── SEO EDITORIAL SECTION ── */}
       <section style={{ padding: '80px 0', background: '#fff' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div style={{ textAlign: 'left', color: 'var(--navy)', lineHeight: '1.8' }}>
-            <h2 style={{ fontFamily: "'Fraunces',serif", fontSize: '2.4rem', fontWeight: 800, marginBottom: '24px', color: 'var(--navy)' }}>
-              How Edify Actually Works — and Why We Built It
+
+          {/* Header */}
+          <div style={{ marginBottom: '48px' }}>
+            <div className="section-label" style={{ marginBottom: '12px' }}>Why Edify exists</div>
+            <h2 style={{ fontFamily: "'Fraunces',serif", fontSize: 'clamp(1.8rem,4vw,2.4rem)', fontWeight: 800, color: 'var(--navy)', lineHeight: 1.2, marginBottom: '16px' }}>
+              Most online MBA guides are ads.<br />We built the one that isn't.
             </h2>
-
-            <p style={{ fontSize: '16px', marginBottom: '20px' }}>
-              Here's the thing about online MBA guides in India: most of them are advertisements. The university that pays more gets the "Best MBA" badge. We've seen it happen. We got tired of it. So we built Edify differently — every ranking you see is based on <strong>official NIRF data</strong>, not who paid us. That's not a marketing line. It's literally how the code works.
-            </p>
-
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginTop: '32px', marginBottom: '16px' }}>Check UGC DEB approval before anything else</h3>
-            <p style={{ fontSize: '16px', marginBottom: '20px' }}>
-              Before you compare fees or specialisations, make sure the university is <strong>UGC DEB approved</strong>. The Distance Education Bureau is the only authority that can authorise online degree programs in India. Without it, your degree might not be valid for jobs, further studies, or government exams. We verify DEB status for every university we list — so you don't have to cross-check at ugc.ac.in yourself (though you always can).
-            </p>
-
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginTop: '32px', marginBottom: '16px' }}>Why we use NIRF rankings, not our own</h3>
-            <p style={{ fontSize: '16px', marginBottom: '20px' }}>
-              Private rankings can be bought. <strong>NIRF (National Institutional Ranking Framework)</strong> rankings from the Ministry of Education can't. That's why we sort universities by NIRF rank by default. You'll see the same number next to Amity, Manipal, and LPU that the government publishes — no inflation, no deals. If a university ranks #62 overall but #24 in management, we show both. That second number matters a lot for MBA decisions.
-            </p>
-
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginTop: '32px', marginBottom: '16px' }}>We show you the full fee, not the teaser rate</h3>
-            <p style={{ fontSize: '16px', marginBottom: '20px' }}>
-              A lot of portals show the semester fee and bury the exam fees and study material costs. We hate that. Every fee on Edify is the <strong>total program cost</strong> — what you actually pay from enrolment to graduation. <strong>Online MBAs start at ₹60,000</strong> and go up to ₹3,00,000 depending on the university. You'll know exactly where each option sits before you even click through.
-            </p>
-
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginTop: '32px', marginBottom: '16px' }}>Yes, online degrees are valid for government jobs — with a catch</h3>
-            <p style={{ fontSize: '16px', marginBottom: '20px' }}>
-              Per the 2020 UGC notification, an <strong>online MBA or MCA</strong> from a UGC DEB approved university is legally equivalent to a regular campus degree. That means it's valid for UPSC, SSC, banking exams, and state government recruitment. The catch: the university must have been DEB approved <em>during your study period</em>. We mark PSU/govt eligibility clearly on each university page so you don't have to guess.
-            </p>
-
-            <p style={{ fontSize: '16px', marginTop: '32px', padding: '24px', background: 'var(--surface-2)', borderRadius: '12px', borderLeft: '4px solid var(--amber)' }}>
-              <strong>The short version:</strong> We don't take money to rank universities. We don't spam your phone after you enquire. If you need help picking between two options, our counsellors will tell you honestly — even if that means recommending the cheaper one. That's the whole point.
+            <p style={{ fontSize: '16px', color: 'var(--ink-2)', lineHeight: 1.8, maxWidth: '600px' }}>
+              The university that pays more gets the "Best MBA" badge everywhere else. We got tired of it — so every ranking on Edify comes from <strong style={{ color: 'var(--navy)' }}>official NIRF data</strong>, not who paid us. That's literally how the code works.
             </p>
           </div>
+
+          {/* 4 principles */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginBottom: '40px' }}>
+            {[
+              {
+                icon: <Shield size={20} />,
+                label: 'DEB approval first, always',
+                body: 'The Distance Education Bureau is the only body that can authorise an online degree in India. Without it, your degree may not count for jobs, govt exams, or PhD admission. We verify every university before listing — you can always double-check at ugc.ac.in.',
+              },
+              {
+                icon: <Award size={20} />,
+                label: 'Government rankings, not ours',
+                body: 'We sort by NIRF rank — published by the Ministry of Education, not sold to us. If Amity is #62 overall but #24 in management, you see both numbers. That gap matters more than most people realise for an MBA decision.',
+              },
+              {
+                icon: <CheckCircle size={20} />,
+                label: 'Total fee. No hidden line items.',
+                body: 'Other portals show the semester fee and bury exam fees and study material costs in the fine print. Every number on Edify is total programme cost — what you pay from day one to graduation day. Online MBAs run ₹60,000 to ₹3,00,000. You\'ll know exactly where each option lands.',
+              },
+              {
+                icon: <BookOpen size={20} />,
+                label: 'Online degrees and govt jobs — the real answer',
+                body: 'Per the 2020 UGC notification, an online degree from a DEB-approved university is legally equivalent to a campus degree. Valid for UPSC, SSC, banking, and state recruitment. One catch: the university must have been DEB-approved during your study period. We flag this clearly on each page.',
+              },
+            ].map((item, i) => (
+              <div key={i} style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '14px', padding: '24px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <div style={{ width: 38, height: 38, borderRadius: 10, background: 'rgba(212,146,42,0.1)', border: '1px solid rgba(212,146,42,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--amber-bright)', flexShrink: 0 }}>
+                  {item.icon}
+                </div>
+                <div style={{ fontWeight: 700, fontSize: '15px', color: 'var(--navy)', lineHeight: 1.4 }}>{item.label}</div>
+                <p style={{ fontSize: '13.5px', color: 'var(--ink-2)', lineHeight: 1.75, margin: 0 }}>{item.body}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Pledge */}
+          <div style={{ padding: '22px 28px', background: 'var(--navy)', borderRadius: '14px', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+            <div style={{ fontSize: '22px', flexShrink: 0, marginTop: '2px' }}>🤝</div>
+            <p style={{ fontSize: '14.5px', color: 'rgba(255,255,255,0.85)', lineHeight: 1.8, margin: 0 }}>
+              <strong style={{ color: '#fff' }}>Our promise:</strong> We don't take money to rank universities. We don't spam your phone. If you ask a counsellor to compare two options, they'll tell you honestly — even if that means recommending the cheaper one.
+            </p>
+          </div>
+
         </div>
       </section>
 
