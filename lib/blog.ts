@@ -713,6 +713,19 @@ export const BLOG_POSTS: BlogPost[] = [
     content: `
 <p>Searching for a Symbiosis online MBA and not sure where to start? You are not alone. The Symbiosis name covers more than one program and more than one delivery format, and it is easy to end up reading about the wrong one. This page covers the Symbiosis university online MBA through SSODL: what the program is, how it is structured, what it costs, and what students who have actually enrolled tend to say.</p>
 
+<div class="quick-facts">
+  <div class="qf-cell"><span class="qf-label">Duration</span><span class="qf-val">2 Years</span></div>
+  <div class="qf-cell"><span class="qf-label">Mode</span><span class="qf-val">100% Online</span></div>
+  <div class="qf-cell"><span class="qf-label">Semesters</span><span class="qf-val">4</span></div>
+  <div class="qf-cell"><span class="qf-label">Total Fee</span><span class="qf-val">₹2.65L</span></div>
+  <div class="qf-cell"><span class="qf-label">Per Semester</span><span class="qf-val">₹78,750</span></div>
+  <div class="qf-cell"><span class="qf-label">Specialisations</span><span class="qf-val">9</span></div>
+  <div class="qf-cell"><span class="qf-label">NAAC Grade</span><span class="qf-val">A++</span></div>
+  <div class="qf-cell"><span class="qf-label">UGC-DEB</span><span class="qf-val">Entitled</span></div>
+  <div class="qf-cell"><span class="qf-label">Entrance Exam</span><span class="qf-val">None</span></div>
+  <div class="qf-cell"><span class="qf-label">Min. Marks</span><span class="qf-val">50%</span></div>
+</div>
+
 <h2>SSODL and SCDL: Not the Same Program</h2>
 
 <p>Almost everyone who searches Symbiosis online MBA runs into both names. They sound alike, sit under the same brand, and serve very different purposes.</p>
@@ -913,6 +926,19 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Amity is one of the most searched names when people look up online MBAs in India, and it has earned that attention. It was the first university in India to get UGC approval for online degrees. It holds the only QS-ranked online MBA in the country. Its accreditations span India, the UK, the US, and Canada. But it also has a documented support problem that shows up consistently across student reviews on multiple platforms. If you are considering this program, both of those things deserve equal weight.</p>
 
 <p>All program information in this page is sourced directly from the <a href="https://amityonline.com/master-of-business-administration-online" target="_blank">official Amity Online MBA page</a>. Student feedback is drawn from Reddit, Quora, Trustpilot, Shiksha, and LinkedIn, with sources linked at the bottom of this page.</p>
+
+<div class="quick-facts">
+  <div class="qf-cell"><span class="qf-label">Duration</span><span class="qf-val">2 Years</span></div>
+  <div class="qf-cell"><span class="qf-label">Mode</span><span class="qf-val">100% Online</span></div>
+  <div class="qf-cell"><span class="qf-label">Semesters</span><span class="qf-val">4</span></div>
+  <div class="qf-cell"><span class="qf-label">Total Fee</span><span class="qf-val">₹1.99L</span></div>
+  <div class="qf-cell"><span class="qf-label">Per Semester</span><span class="qf-val">₹49,750</span></div>
+  <div class="qf-cell"><span class="qf-label">Specialisations</span><span class="qf-val">9+</span></div>
+  <div class="qf-cell"><span class="qf-label">NAAC Grade</span><span class="qf-val">A+</span></div>
+  <div class="qf-cell"><span class="qf-label">QS Ranked</span><span class="qf-val">Asia Top 10</span></div>
+  <div class="qf-cell"><span class="qf-label">Entrance Exam</span><span class="qf-val">None</span></div>
+  <div class="qf-cell"><span class="qf-label">Min. Marks</span><span class="qf-val">40%</span></div>
+</div>
 
 <h2>About Amity University Online</h2>
 
