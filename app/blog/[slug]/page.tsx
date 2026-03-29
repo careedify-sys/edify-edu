@@ -8,6 +8,7 @@ import BlogLeadForm from '@/components/BlogLeadForm'
 import BlogSidebarForm from '@/components/BlogSidebarForm'
 import BlogClientActions from '@/components/BlogClientActions'
 import BlogTOC from '@/components/BlogTOC'
+import BlogAlumniCard from '@/components/BlogAlumniCard'
 
 // ── Server-side helpers ───────────────────────────────────────────────────────
 
@@ -416,6 +417,9 @@ export default async function BlogPostPage({ params }: Props) {
 
               {/* Lead form */}
               <BlogSidebarForm postTitle={post.title} compact />
+
+              {/* Talk to an Alumnus */}
+              <BlogAlumniCard postTitle={post.title} />
 
               {/* Related universities */}
               {relatedUnis.length > 0 && (
