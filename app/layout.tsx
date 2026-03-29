@@ -34,10 +34,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: 'Edify — Online MBA India 2026 | Compare 127+ UGC Approved Online Universities',
+    default: 'Online MBA in India 2026 | Compare Universities & Fees | EdifyEdu',
     template: '%s | Edify',
   },
-  description: 'Compare 127+ UGC DEB approved online universities in India 2026. Online MBA from ₹60K. Get real NIRF rankings, syllabus, & fees. Admissions close Oct 15–30, 2026.',
+  description: 'Compare 100+ UGC-DEB approved online MBA universities in India. Check fees, syllabus, placements and choose the best program for you.',
   keywords: [
     'online mba india 2026', 'best online mba india', 'online mba for working professionals',
     'ugc deb approved online degree', 'nirf ranked online mba', 'naac a++ online university',
@@ -55,12 +55,12 @@ export const metadata: Metadata = {
     siteName: 'Edify — edifyedu.in',
     type: 'website',
     locale: 'en_IN',
-    title: 'Edify — Online MBA India 2026 | Compare 127+ UGC Approved Online Universities',
-    description: 'Compare 127+ UGC DEB approved online universities in India 2026. Online MBA from ₹60K. Real NIRF rankings, syllabus & fees. No paid placements.',
+    title: 'Online MBA in India 2026 | Compare Universities & Fees | EdifyEdu',
+    description: 'Compare 100+ UGC-DEB approved online MBA universities in India. Check fees, syllabus, placements and choose the best program for you.',
     url: 'https://edifyedu.in',
     images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: "Edify — India's honest guide to online degrees" }],
   },
-  twitter: { card: 'summary_large_image', site: '@edifyedu', title: 'Edify — Online MBA India 2026', description: 'Compare 127+ UGC DEB approved online universities. No paid rankings.' },
+  twitter: { card: 'summary_large_image', site: '@edifyedu', title: 'Online MBA in India 2026 | Compare Universities & Fees | EdifyEdu', description: 'Compare 100+ UGC-DEB approved online MBA universities in India. Check fees, syllabus, placements and choose the best program for you.' },
   robots: {
     index: true,
     follow: true,
