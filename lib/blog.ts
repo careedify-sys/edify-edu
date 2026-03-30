@@ -29,7 +29,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 8,
     targetKeyword: 'amity university online mba hr',
     relatedUniversities: [],
-    status: 'published',
+    status: 'draft',
     faqs: [
 
     ],
