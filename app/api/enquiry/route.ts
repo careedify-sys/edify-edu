@@ -1,4 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { Resend } from 'resend'
+
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 // Simple in-memory rate limiter (resets on cold start — good enough for edge)
 const RATE_LIMIT_WINDOW = 60_000 // 1 minute
@@ -36,24 +39,26 @@ export async function POST(req: NextRequest) {
     const programValue = program || 'Not specified'
     const sourceValue = sourcePage || source || 'website'
 
-    // ── 1. EMAIL via Web3Forms ──────────────────────────────────────────────
-    const web3Key = process.env.NEXT_PUBLIC_WEB3FORMS_KEY
-    if (web3Key && !web3Key.includes('YOUR_')) {
-      await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          access_key: web3Key,
-          subject: `🎓 New Lead — ${name} | ${programValue} @ ${universityValue}`,
-          from_name: 'EdifyEdu Leads',
-          name,
-          phone: `+91 ${phone}`,
-          email: email || 'Not provided',
-          'Interested In': programValue,
-          'Preferred University': universityValue,
-          'Source Page': sourceValue,
-          'Submitted At': timestamp,
-        }),
+    // ── 1. EMAIL via Resend ─────────────────────────────────────────────────
+    if (process.env.RESEND_API_KEY) {
+      resend.emails.send({
+        from: 'EdifyEdu Leads <leads@edifyedu.in>',
+        to: 'hello@edifyedu.in',
+        subject: `🎓 New Lead — ${name} | ${programValue} @ ${universityValue}`,
+        html: `
+          <div style="font-family:sans-serif;max-width:500px">
+            <h2 style="color:#0f172a">New Enquiry — EdifyEdu</h2>
+            <table style="width:100%;border-collapse:collapse;font-size:14px">
+              <tr><td style="padding:8px;background:#f8fafc;font-weight:600;width:40%">Name</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${name}</td></tr>
+              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Phone</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">+91 ${phone}</td></tr>
+              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Email</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${email || 'Not provided'}</td></tr>
+              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Interested In</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${programValue}</td></tr>
+              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">University</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${universityValue}</td></tr>
+              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Source</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${sourceValue}</td></tr>
+              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Submitted At</td><td style="padding:8px">${timestamp}</td></tr>
+            </table>
+          </div>
+        `,
       }).catch(() => {}) // Non-blocking
     }
 
