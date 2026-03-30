@@ -336,6 +336,7 @@ export interface BlogPost {
   faqs: { q: string; a: string }[]; relatedUniversities: string[]
   targetKeyword: string; status: 'published' | 'draft'
   ctaTitle?: string; ctaDesc?: string
+  quickFacts?: { label: string; value: string; green?: boolean }[]
 }
 
 export function getPublishedPosts() {

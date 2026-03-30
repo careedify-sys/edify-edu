@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Metadata, ResolvingMetadata } from 'next'
 import { Clock, Calendar, ChevronRight, Hash, BookOpen } from 'lucide-react'
 import { getBlogPost, getPublishedPosts } from '@/lib/blog'
+import { BLOG_QUICK_FACTS } from '@/lib/blog-quick-facts'
 import { getSlimById } from '@/lib/data-slim'
 import BlogLeadForm from '@/components/BlogLeadForm'
 import BlogClientActions from '@/components/BlogClientActions'
@@ -416,7 +417,7 @@ export default async function BlogPostPage({ params }: Props) {
 
               {/* Talk to Alumnus + Program Details — hidden on mobile (in-article form handles mobile) */}
               <div className="hidden lg:contents">
-                <BlogSidebarWidgets postTitle={post.title} quickFacts={post.quickFacts} />
+                <BlogSidebarWidgets postTitle={post.title} quickFacts={BLOG_QUICK_FACTS[post.slug]} />
               </div>
 
               {/* Related universities */}
