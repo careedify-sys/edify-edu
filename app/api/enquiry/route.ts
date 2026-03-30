@@ -43,7 +43,7 @@ export async function POST(req: NextRequest) {
     if (process.env.RESEND_API_KEY) {
       resend.emails.send({
         from: 'EdifyEdu Leads <leads@edifyedu.in>',
-        to: 'hello@edifyedu.in',
+        to: ['hello@edifyedu.in', 'rishiupadhyay4787@gmail.com'],
         subject: `🎓 New Lead — ${name} | ${programValue} @ ${universityValue}`,
         html: `
           <div style="font-family:sans-serif;max-width:500px">
