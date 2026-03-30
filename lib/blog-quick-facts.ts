@@ -37,4 +37,16 @@ export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; gr
     { label: 'Entrance Exam',     value: 'None (40%+)', green: true },
     { label: 'Min. Marks',        value: '40%' },
   ],
+  'ignou-online-mba-review-2026': [
+    { label: 'Total Fee',         value: '₹58,000' },
+    { label: 'Per Semester',      value: '₹14–16K' },
+    { label: 'Duration',          value: '2 to 4 Years' },
+    { label: 'Mode',              value: 'Online (MBAOL)' },
+    { label: 'Specialisations',   value: '5' },
+    { label: 'NAAC Grade',        value: 'A++' },
+    { label: 'NIRF Rank',         value: '#1 Open Univ' },
+    { label: 'WES',               value: 'Recognised', green: true },
+    { label: 'Entrance Exam',     value: 'None', green: true },
+    { label: 'Min. Marks',        value: '50% (45% reserved)' },
+  ],
 }
