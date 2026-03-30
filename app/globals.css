@@ -683,7 +683,35 @@ details summary::-webkit-details-marker { display: none; }
   .prose-article .compare-row { grid-template-columns: 1fr; }
   .prose-article .compare-row div:first-child { border-right: none; border-bottom: 1px solid #e2e8f0; }
   .prose-article .quick-facts { grid-template-columns: 1fr 1fr; }
+  .prose-article .accred-grid { grid-template-columns: 1fr 1fr; }
 }
+
+/* Accreditation pills (4-col grid) */
+.prose-article .accred-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 16px 0 24px; }
+.prose-article .accred-pill { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px 14px; text-align: center; }
+.prose-article .accred-name { font-size: 13px; font-weight: 700; color: #0f172a; }
+.prose-article .accred-desc { font-size: 11px; color: #64748b; margin-top: 3px; }
+
+/* Spec table (for long spec lists like Amity 18-spec) */
+.prose-article .spec-table { width: 100%; border-collapse: collapse; margin: 16px 0 28px; font-size: 14px; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; overflow: hidden; }
+.prose-article .spec-table th { background: #0f172a; color: #fff; padding: 11px 16px; text-align: left; font-size: 11.5px; font-weight: 600; letter-spacing: 0.4px; }
+.prose-article .spec-table td { padding: 11px 16px; border-bottom: 1px solid #e2e8f0; color: #334155; }
+.prose-article .spec-table tr:last-child td { border-bottom: none; }
+.prose-article .spec-table tr:nth-child(even) td { background: #f8fafc; }
+.prose-article .spec-cat { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #d4841a; }
+
+/* Sources section */
+.prose-article .sources-section { margin: 32px 0; padding: 20px 24px; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; }
+.prose-article .sources-section h3 { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #64748b; margin-bottom: 14px; }
+.prose-article .sources-list { list-style: none; display: flex; flex-direction: column; gap: 8px; padding: 0; margin: 0; }
+.prose-article .sources-list li { font-size: 13px; color: #334155; display: flex; align-items: center; gap: 8px; }
+.prose-article .sources-list li::before { content: '↗'; color: #d4841a; font-size: 12px; flex-shrink: 0; }
+.prose-article .sources-list a { color: #d4841a; text-decoration: none; font-weight: 500; }
+.prose-article .sources-list a:hover { text-decoration: underline; }
+.prose-article .src-badge { font-size: 10px; font-weight: 700; padding: 1px 7px; border-radius: 3px; background: #f1f5f9; color: #64748b; letter-spacing: 0.5px; }
+
+/* s-mix sentiment */
+.prose-article .s-mix { background: #fef3c7; color: #d4841a; }
 
 /* Platform label (groups voices by source in review posts) */
 .prose-article .platform-label { font-size: 10px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: #64748b; background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 4px; padding: 4px 10px; display: inline-block; margin: 20px 0 10px; }
