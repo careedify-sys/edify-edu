@@ -1072,7 +1072,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     ctaTitle: '',
     ctaDesc: '',
-    content: \`
+    content: `
 <div class="stats-band">
   <div class="stat-cell"><span class="stat-val">&#8377;58K</span><span class="stat-lbl">Total Fee</span></div>
   <div class="stat-cell"><span class="stat-val">2&ndash;4 Yr</span><span class="stat-lbl">Flexible Duration</span></div>
@@ -1202,7 +1202,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <li><a href="https://www.eduverticals.com/blogs/Online_MBA_from_IGNOU" target="_blank">EduVerticals — Is IGNOU MBA Worth It 2026?</a> <span class="src-badge">Review Site</span></li>
   </ul>
 </div>
-    \`,
+    `,
   }
 ]
 
