@@ -7,6 +7,7 @@ export interface BlogPost {
   faqs: { q: string; a: string }[]; relatedUniversities: string[]
   targetKeyword: string; status: 'published' | 'draft'
   ctaTitle?: string; ctaDesc?: string
+  quickFacts?: { label: string; value: string; green?: boolean }[]
 }
 
 export function getPublishedPosts() {
@@ -897,157 +898,174 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaTitle: '',
     ctaDesc: '',
     content: `
-<div class="stats-band">
-  <div class="stat-cell"><span class="stat-val">2 Yrs</span><span class="stat-lbl">Program Duration</span></div>
-  <div class="stat-cell"><span class="stat-val">&#8377;1.99L</span><span class="stat-lbl">Indian Students Fee</span></div>
-  <div class="stat-cell"><span class="stat-val">18</span><span class="stat-lbl">Specialisations</span></div>
-  <div class="stat-cell"><span class="stat-val">A+</span><span class="stat-lbl">NAAC Grade</span></div>
-</div>
-
 <p>Amity is one of the most searched names when people look up online MBAs in India, and it has earned that attention. It was the first university in India to get UGC approval for online degrees. It holds the only QS-ranked online MBA in the country. Its accreditations span India, the UK, the US, and Canada. But it also has a documented support problem that shows up consistently across student reviews on multiple platforms. If you are considering this program, both of those things deserve equal weight.</p>
 
-<p>All program information here is sourced directly from the <a href="https://amityonline.com/master-of-business-administration-online" target="_blank">official Amity Online MBA page</a>. Student feedback is drawn from Reddit, Quora, Trustpilot, Shiksha, and LinkedIn, with sources linked at the bottom.</p>
+<p>All program information in this page is sourced directly from the <a href="https://amityonline.com/master-of-business-administration-online" target="_blank">official Amity Online MBA page</a>. Student feedback is drawn from Reddit, Quora, Trustpilot, Shiksha, and LinkedIn, with sources linked at the bottom of this page.</p>
 
 <h2>About Amity University Online</h2>
 
-<p>Amity University is a private university established in 2005 with its main campus in Noida. The online MBA is delivered through Amity Online. Over 2 lakh learners have enrolled across programs. Amity was the first university in India to receive UGC approval for online degree programs and holds NAAC A+ accreditation. It is ranked among the best globally for graduate employability by Times Higher Education.</p>
+<p>Amity University is a private university established in 2005 with its main campus in Noida. The online MBA is delivered through Amity Online, the university's dedicated digital learning platform. Over 2 lakh learners have enrolled across programs. Amity was the first university in India to receive UGC approval for online degree programs. It holds NAAC A+ accreditation and is ranked among the top universities globally for graduate employability by Times Higher Education.</p>
 
-<div class="accred-grid">
-  <div class="accred-pill"><div class="accred-name">UGC-DEB</div><div class="accred-desc">India approved</div></div>
-  <div class="accred-pill"><div class="accred-name">WES</div><div class="accred-desc">Canada and USA</div></div>
-  <div class="accred-pill"><div class="accred-name">QS Asia Top 10</div><div class="accred-desc">Only Indian online MBA</div></div>
-  <div class="accred-pill"><div class="accred-name">WASC + QAA</div><div class="accred-desc">USA + UK approved</div></div>
-</div>
-
-<div class="callout-key">India's only QS-ranked online MBA holding an Asia Pacific Top 10 position. UGC-DEB entitled and equivalent to a regular MBA degree under Indian law. Valid for government jobs, PSU recruitment, PhD admission, and internationally recognised by WES, WASC, and QAA.</div>
+<div class="callout-key">India's only QS-ranked online MBA, holding an Asia Pacific Top 10 position. UGC-DEB entitled and equivalent to a regular MBA degree under Indian law. Valid for government jobs, PSU recruitment, PhD admission, and internationally recognised by WES Canada, WASC USA, and QAA UK.</div>
 
 <h2>Program Structure</h2>
 
-<p>The program runs for two years across four semesters. The first two cover core management subjects for all students. From semester three, students study their chosen specialisation. The final semester includes a project or dissertation.</p>
+<p>The program runs for two years across four semesters. The first two semesters cover core management subjects common to all students. From semester three, students move into their chosen specialisation. The final semester includes a project or dissertation.</p>
 
-<div class="semester-grid">
-  <div class="sem-card"><div class="sem-num">Semester 1</div><div class="sem-title">Core Foundations</div><div class="sem-desc">Business fundamentals, organisational behaviour, accounting, statistics. Same for all students.</div></div>
-  <div class="sem-card"><div class="sem-num">Semester 2</div><div class="sem-title">Core Management</div><div class="sem-desc">Finance, marketing, HR, operations, strategy. Common before specialisation begins.</div></div>
-  <div class="sem-card"><div class="sem-num">Semester 3</div><div class="sem-title">Specialisation + Live Projects</div><div class="sem-desc">Elective subjects from chosen track. Live industry projects with certifications begin.</div></div>
-  <div class="sem-card"><div class="sem-num">Semester 4</div><div class="sem-title">Advanced Electives + Dissertation</div><div class="sem-desc">Deeper specialisation and final project or dissertation for degree completion.</div></div>
-</div>
+<p>The 2026 curriculum is built around Universal Design for Learning (UDL) principles, meaning content is delivered across video, interactive exercises, and visual formats. Gamified role-play simulations let students practise business decision-making in a simulated environment. Live industry projects come with certifications students can show to recruiters before graduation. Prof. AMI, the AI-powered academic companion, is available around the clock for doubt resolution and personalised learning support.</p>
 
-<p>The 2026 curriculum is built around UDL principles. Gamified role-play simulations, AI-powered tools, live industry projects with certifications, and Prof. AMI the 24x7 AI academic companion are all part of the standard program. Students also get a free certification in Basics of AI included with the MBA.</p>
+<div class="callout-warning">Eligibility: graduation in any discipline with a minimum of 40 percent marks. Below 40 percent, an admission test is required. No entrance exam otherwise. There is no minimum work experience required. Foreign students need an AIU Certificate of Equivalence. Always get the complete fee breakdown including re-examination fees in writing before paying, as multiple reviewers have flagged charges appearing after admission that were not disclosed upfront.</div>
 
-<div class="callout-warning">Eligibility: graduation in any discipline with minimum 40 percent marks. Below 40 percent, an admission test is required. No minimum work experience. Foreign students need an AIU Certificate of Equivalence. Multiple reviewers have flagged undisclosed re-examination and extension charges appearing after admission. Always get the full fee breakdown in writing before paying anything.</div>
+<h2>How Learning Works</h2>
+
+<p>Everything runs through the Amigo LMS, available on desktop and as a mobile app. Students get access to recorded video lectures, live weekend sessions, assignments, quizzes, and project work. The platform also includes AI-powered tools: automatic summaries of lecture content, smart question generation for self-testing, and a built-in note-taker. The beSocial app provides a student community platform for networking, club participation, and peer interaction within the online format.</p>
+
+<p>On-campus events are optional but available throughout the program: Samagam (orientation), mid-year meetups, workshops, industry visits, Sangathan (annual sports event), and a formal convocation ceremony. These are part of what Amity calls a blended experience within an online program.</p>
 
 <h2>Fees</h2>
 
-<div class="fee-wrap">
-  <table class="fee-table">
-    <thead><tr><th>Category</th><th>Amount</th><th>Payment Option</th></tr></thead>
-    <tbody>
-      <tr class="hl"><td>Indian Students (Single Specialisation)</td><td>&#8377;1,99,000 <span class="save-badge">STANDARD</span></td><td>&#8377;49,750 per semester</td></tr>
-      <tr><td>Indian Students (Dual Specialisation)</td><td>&#8377;2,99,000</td><td>Two tracks, higher total</td></tr>
-      <tr><td>International Students (Full Program)</td><td>USD 5,000</td><td>USD 1,250 per semester</td></tr>
-      <tr><td>Zero-Cost EMI</td><td>Available</td><td>Through partner banks</td></tr>
-      <tr><td>Scholarships</td><td>Available</td><td>Defence, alumni, merit, Divyang, sports</td></tr>
-    </tbody>
-  </table>
-</div>
+<p>The total fee for Indian students is Rs 1,99,000 for a single specialisation, paid as Rs 49,750 per semester. Dual specialisation costs Rs 2,99,000. For international students, the full program fee is USD 5,000 or USD 1,250 per semester. Zero-cost EMI is available through partner banks. Scholarships are available for defence personnel, Amity alumni, merit-based candidates, Divyang, and sports categories.</p>
 
-<div class="emi-block">Loan assistance also available for qualified applicants. Dual specialisation at &#8377;2,99,000 for those wanting to study across two tracks. Always confirm the full fee breakdown including re-examination and semester extension charges before enrolling.</div>
+<div class="emi-block">Zero-cost EMI available through partner banks. Dual specialisation at Rs 2,99,000. Scholarship categories: defence personnel, Amity alumni, merit-based, Divyang, sports. Loan assistance available for qualified applicants. Always confirm the full fee structure including re-examination and semester extension charges before enrolling.</div>
 
-<h2>All 18 Specialisations (Official Names)</h2>
+<h2>Specialisations</h2>
 
-<p>The following are the 18 MBA specialisations available at Amity Online. You choose from semester three onwards. Dual specialisation is also available if you want to study across two tracks simultaneously.</p>
+<p>The following MBA specialisations are officially listed on the Amity Online website. You choose from semester three onwards. Dual specialisation is available if you want to study across two tracks.</p>
 
-<table class="spec-table">
-  <thead><tr><th>#</th><th>Specialisation</th><th>Category</th></tr></thead>
-  <tbody>
-    <tr><td>1</td><td>Business Analytics</td><td class="spec-cat">Tech</td></tr>
-    <tr><td>2</td><td>Data Science</td><td class="spec-cat">Tech</td></tr>
-    <tr><td>3</td><td>Digital Entrepreneurship</td><td class="spec-cat">Digital</td></tr>
-    <tr><td>4</td><td>Digital Marketing Management</td><td class="spec-cat">Digital</td></tr>
-    <tr><td>5</td><td>Entrepreneurship and Leadership Management</td><td class="spec-cat">Business</td></tr>
-    <tr><td>6</td><td>Finance and Accounting Management</td><td class="spec-cat">Finance</td></tr>
-    <tr><td>7</td><td>Global Finance Market</td><td class="spec-cat">Finance</td></tr>
-    <tr><td>8</td><td>Hospitality Management</td><td class="spec-cat">Sector</td></tr>
-    <tr><td>9</td><td>Human Resource Management</td><td class="spec-cat">People</td></tr>
-    <tr><td>10</td><td>Human Resources Analytics</td><td class="spec-cat">People</td></tr>
-    <tr><td>11</td><td>Information Technology Management</td><td class="spec-cat">Tech</td></tr>
-    <tr><td>12</td><td>Insurance Management</td><td class="spec-cat">Finance</td></tr>
-    <tr><td>13</td><td>International Business Management</td><td class="spec-cat">Business</td></tr>
-    <tr><td>14</td><td>International Finance (ACCA)</td><td class="spec-cat">Finance</td></tr>
-    <tr><td>15</td><td>Marketing and Sales Management</td><td class="spec-cat">Business</td></tr>
-    <tr><td>16</td><td>Production and Operations Management</td><td class="spec-cat">Operations</td></tr>
-    <tr><td>17</td><td>Retail Management</td><td class="spec-cat">Sector</td></tr>
-    <tr><td>18</td><td>General Management</td><td class="spec-cat">Business</td></tr>
-  </tbody>
-</table>
+<p>The key specialisations listed on the official page are: General Management, Hospital and Healthcare Management, International Finance, Digital Entrepreneurship, Business Analytics, Data Science, HR Analytics, and Digital Marketing Management. Additional specialisations including Sales and Marketing, IT Management, and others are available. Check the <a href="https://amityonline.com/master-of-business-administration-online" target="_blank">official page</a> for the current full list as Amity continues to add tracks.</p>
 
 <h2>What Students on Reddit, Quora, Trustpilot, Shiksha and LinkedIn Say</h2>
 
-<p>The feedback picture is more complicated than most review pages show. Here is an honest breakdown by platform with links to the original sources.</p>
+<p>The feedback is more complicated than most review pages show. Here is an honest breakdown by platform.</p>
 
-<div class="platform-label">Reddit and Quora</div>
-<div class="voices-grid">
-  <div class="voice-card"><div class="voice-text">I managed to complete the MBA while working full time. The recorded sessions helped a lot. The flexibility is real and the content is solid once you are inside the system.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.quora.com/Is-it-worth-doing-an-MBA-through-Amity-University-Online" target="_blank">Quora</a></span><span class="sent s-pos">Positive</span></div></div>
-  <div class="voice-card"><div class="voice-text">Placement support is limited. You mostly have to find jobs yourself. The portal exists but don't expect the university to drive it for you.</div><div class="voice-footer"><span class="voice-src"><a href="https://jumpnetworks.in/is-amity-online-mba-worth-it/" target="_blank">Reddit via JumpNetworks</a></span><span class="sent s-neg">Critical</span></div></div>
+<div class="platform-section">
+  <div class="platform-label">Reddit and Quora</div>
+  <div class="voices-grid">
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">I managed to complete the MBA while working full time. The recorded sessions helped a lot. The flexibility is real and the content is solid once you are inside the system.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.quora.com/Is-it-worth-doing-an-MBA-through-Amity-University-Online" target="_blank">Quora</a></span><span class="sent s-pos">Positive</span></div></div>
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">Placement support is limited. You mostly have to find jobs yourself. The portal exists but don't expect the university to drive it for you.</div><div class="voice-footer"><span class="voice-src"><a href="https://jumpnetworks.in/is-amity-online-mba-worth-it/" target="_blank">Reddit feedback via JumpNetworks</a></span><span class="sent s-neg">Critical</span></div></div>
+  </div>
+
+  <div class="platform-label">Shiksha</div>
+  <div class="voices-grid">
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">Good for employed professionals. Classes are on weekends and the AMIGO portal has all placement and academic information. You have to keep an eye on it yourself for job roles.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.shiksha.com/college/amity-university-online-noida-28528/reviews" target="_blank">Shiksha, MBA Batch 2027</a></span><span class="sent s-pos">Positive</span></div></div>
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">Course content is decent but not really worth it if you are just after content. You can find a lot of this material online for free. The training experience is not exceptional.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.shiksha.com/college/amity-university-online-noida-28528/reviews" target="_blank">Shiksha Review</a></span><span class="sent s-mix">Mixed</span></div></div>
+  </div>
+
+  <div class="platform-label">Trustpilot</div>
+  <div class="voices-grid">
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">I paid the first semester fees and received no LMS login for weeks. The admission counsellor stopped responding. I only got access after raising repeated complaints. Everything that went wrong happened in the first month.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.trustpilot.com/review/amityonline.com" target="_blank">Trustpilot</a></span><span class="sent s-neg">Critical</span></div></div>
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">My third semester project was deleted by the university. They cited an integrity violation but never provided evidence despite repeated emails. The project was never restored.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.trustpilot.com/review/amityonline.com" target="_blank">Trustpilot</a></span><span class="sent s-neg">Critical</span></div></div>
+  </div>
+
+  <div class="platform-label">Official Learner Testimonials (Amity Website)</div>
+  <div class="voices-grid">
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">I needed a program that could seamlessly integrate with my demanding professional life. Amity proved to be the perfect fit. The curriculum is clear, relevant, and highly practical. The faculty is incredibly supportive.</div><div class="voice-footer"><span class="voice-src"><a href="https://amityonline.com/master-of-business-administration-online" target="_blank">Satheesh Nair, Group IT Manager, UAE</a></span><span class="sent s-pos">Positive</span></div></div>
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">The onboarding experience was smooth. You get email alerts for almost everything. I haven't faced any problem so far. The Amigo app is very convenient and the beSocial platform gives real campus vibes.</div><div class="voice-footer"><span class="voice-src"><a href="https://amityonline.com/master-of-business-administration-online" target="_blank">Jatin Gupta, MBA Batch July 2025</a></span><span class="sent s-pos">Positive</span></div></div>
+  </div>
+
+  <div class="platform-label">LinkedIn</div>
+  <div class="voices-grid">
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">Disappointed with Amity Online MBA's rushed pace. What was communicated during enrollment and what was delivered did not match in terms of pacing and support.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.linkedin.com/posts/dona-barman-b567769a_amityuniversityonline-onlinemba-workingprofessionals-activity-7338846374647472131-2rzQ" target="_blank">LinkedIn, Working Professional 2025</a></span><span class="sent s-neg">Critical</span></div></div>
+    <div class="voice-card"><div class="qs">"</div><div class="voice-text">I've given 2 stars only because of the professors, who are good. But student service is poor. I've been following up for months for my updated mark sheet with no positive response.</div><div class="voice-footer"><span class="voice-src"><a href="https://uk.trustpilot.com/review/amityonline.com?page=2" target="_blank">Trustpilot</a></span><span class="sent s-neg">Critical</span></div></div>
+  </div>
 </div>
 
-<div class="platform-label">Shiksha</div>
-<div class="voices-grid">
-  <div class="voice-card"><div class="voice-text">Good for employed professionals. Classes are on weekends and the AMIGO portal has all placement and academic information. You have to keep an eye on it yourself for job roles that match your profile.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.shiksha.com/college/amity-university-online-noida-28528/reviews" target="_blank">Shiksha, MBA Batch 2027</a></span><span class="sent s-pos">Positive</span></div></div>
-  <div class="voice-card"><div class="voice-text">Course content is decent but not really worth it if you are just after content. You can find most of this material online for free. The training experience is not exceptional.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.shiksha.com/college/amity-university-online-noida-28528/reviews" target="_blank">Shiksha Review</a></span><span class="sent s-mix">Mixed</span></div></div>
-</div>
-
-<div class="platform-label">Trustpilot</div>
-<div class="voices-grid">
-  <div class="voice-card"><div class="voice-text">I paid the first semester fees and received no LMS login for weeks. The admission counsellor stopped responding. I only got access after raising repeated complaints. Everything that went wrong happened in the first month.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.trustpilot.com/review/amityonline.com" target="_blank">Trustpilot</a></span><span class="sent s-neg">Critical</span></div></div>
-  <div class="voice-card"><div class="voice-text">My third semester project was deleted by the university. They cited an integrity violation but never provided evidence despite repeated emails. The project was never restored.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.trustpilot.com/review/amityonline.com" target="_blank">Trustpilot</a></span><span class="sent s-neg">Critical</span></div></div>
-</div>
-
-<div class="platform-label">Official Learner Testimonials (Amity Website)</div>
-<div class="voices-grid">
-  <div class="voice-card"><div class="voice-text">I needed a program that could seamlessly integrate with my demanding professional life. Amity proved to be the perfect fit. The curriculum is clear, relevant, and highly practical. The faculty is incredibly supportive.</div><div class="voice-footer"><span class="voice-src"><a href="https://amityonline.com/master-of-business-administration-online" target="_blank">Satheesh Nair, Group IT Manager UAE</a></span><span class="sent s-pos">Positive</span></div></div>
-  <div class="voice-card"><div class="voice-text">The onboarding experience was smooth. You get email alerts for almost everything. The Amigo app is convenient and the beSocial platform gives real campus vibes. I haven't faced any problem so far.</div><div class="voice-footer"><span class="voice-src"><a href="https://amityonline.com/master-of-business-administration-online" target="_blank">Jatin Gupta, MBA Batch July 2025</a></span><span class="sent s-pos">Positive</span></div></div>
-</div>
-
-<div class="platform-label">LinkedIn</div>
-<div class="voices-grid">
-  <div class="voice-card"><div class="voice-text">Disappointed with Amity Online MBA's rushed pace. What was communicated during enrollment and what was delivered did not match in terms of pacing and support.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.linkedin.com/posts/dona-barman-b567769a_amityuniversityonline-onlinemba-workingprofessionals-activity-7338846374647472131-2rzQ" target="_blank">LinkedIn, Working Professional 2025</a></span><span class="sent s-neg">Critical</span></div></div>
-  <div class="voice-card"><div class="voice-text">I give 2 stars only because of the professors, who are good. But student service is poor. Following up for months for my updated mark sheet with no positive response from senior management.</div><div class="voice-footer"><span class="voice-src"><a href="https://uk.trustpilot.com/review/amityonline.com?page=2" target="_blank">Trustpilot Page 2</a></span><span class="sent s-neg">Critical</span></div></div>
-</div>
-
-<div class="pull">The pattern across all platforms is consistent: the academic content, faculty quality, and LMS experience are generally well-rated. The administrative side, including LMS access delays after payment, undisclosed charges post-enrollment, and poor support responsiveness, draws the most serious criticism.</div>
+<div class="pull">The pattern across all platforms is consistent: the academic content, faculty quality, and LMS experience are generally well-rated. The administrative side, particularly support responsiveness, LMS access delays after payment, and undisclosed charges post-enrollment, draws the most serious criticism.</div>
 
 <h2>Placement Support</h2>
 
-<p>Amity provides placement support through the Amigo portal: career exploration tools, resume and CV assistance, virtual job search support, one-on-one career counselling, and interview preparation masterclasses. Virtual placement drives are organised with hiring partners. The university works with over 500 recruiters including TCS, Amazon, IBM, KPMG, and HCLTech. There is no guaranteed placement. Students are expected to actively engage with the portal to access opportunities.</p>
+<p>Amity provides structured placement support through the Amigo portal. Services include career exploration tools, resume and CV assistance, virtual job search support, one-on-one career counselling sessions, and interview preparation masterclasses. Virtual placement drives are organised with hiring partners. Entry-level roles targeted include Business Analyst, Marketing Associate, Financial Analyst, Operations Executive, and HR Executive. Mid-level roles include Product Manager, Marketing Manager, and HR Manager. Senior roles include Strategy Consultant, General Manager, and C-Suite Executive pathways.</p>
 
-<p>Entry-level roles the program prepares students for include Business Analyst, Marketing Associate, Financial Analyst, Operations Executive, and HR Executive. Mid-level targets include Product Manager, Marketing Manager, HR Manager, and Business Development Manager. Senior pathways include Strategy Consultant, General Manager, and C-Suite Executive roles.</p>
+<p>There is no guaranteed placement. Multiple student reviews note that placement outcomes depend heavily on individual effort and prior work experience. The university provides the infrastructure. Using it actively is the student's responsibility.</p>
 
 <h2>Who This Program Suits</h2>
 
-<div class="persona-grid">
-  <div class="persona-card yes"><span class="p-icon">&#128188;</span><span class="p-type">Working Professional</span><p class="p-desc">Flexible weekend format, recorded content anytime, proctored online exams. Built for people who cannot leave their jobs.</p></div>
-  <div class="persona-card yes"><span class="p-icon">&#127758;</span><span class="p-type">Planning to Work Abroad</span><p class="p-desc">WES Canada, QAA UK, and WASC USA recognition makes this practically useful for international career or study plans.</p></div>
-  <div class="persona-card yes"><span class="p-icon">&#127963;</span><span class="p-type">Government Job Aspirant</span><p class="p-desc">UGC-DEB entitled. Valid for UPSC, SSC, state PSC, banking, and railways where an MBA is a listed qualification.</p></div>
-  <div class="persona-card yes"><span class="p-icon">&#128200;</span><span class="p-type">Low Marks in Graduation</span><p class="p-desc">Minimum 40 percent eligibility is lower than Symbiosis (50%) and NMIMS (50%). Admission test required below 40 percent.</p></div>
-  <div class="persona-card no"><span class="p-icon">&#9888;</span><span class="p-type">Fresh Graduate Needing Placements</span><p class="p-desc">No guaranteed placements. Outcomes depend heavily on individual effort. A campus MBA delivers significantly more here.</p></div>
-  <div class="persona-card no"><span class="p-icon">&#128222;</span><span class="p-type">Someone Needing Reliable Admin Support</span><p class="p-desc">LMS delays, hidden fees, and poor support responsiveness appear repeatedly across Trustpilot. Get everything in writing first.</p></div>
-</div>
+<p>Working professionals who need a flexible, UGC-DEB recognised MBA from a brand with genuine international accreditations are the right audience. The WES recognition is practically useful for anyone planning to work or study in Canada, the UK, or the US. The program is also relevant for government job aspirants since the degree is valid for UPSC, SSC, state PSC, banking, and railways recruitment.</p>
 
-<div class="ilink">Compare Amity against other UGC-DEB approved online MBA programs on fees, rankings, and verified data at <a href="/universities/amity">edifyedu.in/universities/amity</a></div>
+<p>Fresh graduates can apply since minimum eligibility is just 40 percent. But without prior work experience, placement outcomes through an online program are modest compared to a full-time campus MBA.</p>
 
-<div class="sources-section">
-  <h3>Sources Used in This Article</h3>
-  <ul class="sources-list">
-    <li><a href="https://amityonline.com/master-of-business-administration-online" target="_blank">Amity Online Official MBA Page</a> <span class="src-badge">Official</span></li>
-    <li><a href="https://www.trustpilot.com/review/amityonline.com" target="_blank">Trustpilot Reviews — Amity Online</a> <span class="src-badge">Trustpilot</span></li>
-    <li><a href="https://uk.trustpilot.com/review/amityonline.com?page=2" target="_blank">Trustpilot Reviews Page 2</a> <span class="src-badge">Trustpilot</span></li>
-    <li><a href="https://www.shiksha.com/college/amity-university-online-noida-28528/reviews" target="_blank">Shiksha Student Reviews — Amity University Online</a> <span class="src-badge">Shiksha</span></li>
-    <li><a href="https://www.quora.com/Is-it-worth-doing-an-MBA-through-Amity-University-Online" target="_blank">Quora — Is Amity Online MBA worth it?</a> <span class="src-badge">Quora</span></li>
-    <li><a href="https://jumpnetworks.in/is-amity-online-mba-worth-it/" target="_blank">Reddit feedback aggregated — JumpNetworks</a> <span class="src-badge">Reddit</span></li>
-    <li><a href="https://www.linkedin.com/posts/dona-barman-b567769a_amityuniversityonline-onlinemba-workingprofessionals-activity-7338846374647472131-2rzQ" target="_blank">LinkedIn — Disappointed with Amity Online MBA's rushed pace</a> <span class="src-badge">LinkedIn</span></li>
-  </ul>
-</div>
+<p>The Trustpilot complaints are serious enough to factor into your decision. LMS access delays after payment, hidden charges post-admission, and refund difficulties are not isolated incidents. Get every fee commitment and timeline in writing before you pay anything.</p>
+
+<div class="ilink">Compare Amity against other UGC-DEB approved online MBA programs on fees, rankings, and verified data at <a href="/universities/amity" target="_blank">edifyedu.in/universities/amity</a></div>
+
+<h2>Sources</h2>
+<p><a href="https://amityonline.com/master-of-business-administration-online" target="_blank">Amity Online Official MBA Page</a> &middot; <a href="https://www.trustpilot.com/review/amityonline.com" target="_blank">Trustpilot Reviews</a> &middot; <a href="https://uk.trustpilot.com/review/amityonline.com?page=2" target="_blank">Trustpilot Page 2</a> &middot; <a href="https://www.shiksha.com/college/amity-university-online-noida-28528/reviews" target="_blank">Shiksha Student Reviews</a> &middot; <a href="https://www.quora.com/Is-it-worth-doing-an-MBA-through-Amity-University-Online" target="_blank">Quora</a> &middot; <a href="https://jumpnetworks.in/is-amity-online-mba-worth-it/" target="_blank">Reddit feedback via JumpNetworks</a> &middot; <a href="https://www.linkedin.com/posts/dona-barman-b567769a_amityuniversityonline-onlinemba-workingprofessionals-activity-7338846374647472131-2rzQ" target="_blank">LinkedIn Review 2025</a></p>
+    `,
+  },
+  {
+    slug: 'ignou-online-mba-review-2026',
+    title: 'IGNOU Online MBA: Is It Still Worth It in 2026?',
+    metaDescription: 'Honest review of IGNOU online MBA (MBAOL) covering the Rs 58,000 total fee, 5 specialisations, Reddit and Quora reviews, and who should actually enrol in 2026.',
+    category: 'University Review',
+    tags: ['online mba ignou', 'ignou distance mba', 'ignou mba correspondence', 'mba distance learning ignou', 'ignou mbaol', 'ignou mba 2026'],
+    publishedAt: '2026-03-29',
+    readTime: 7,
+    targetKeyword: 'online mba ignou',
+    relatedUniversities: [],
+    status: 'published',
+    faqs: [
+      { q: 'What is the total fee for IGNOU online MBA in 2026?', a: 'The total fee for IGNOU online MBA (MBAOL) is Rs 58,000 for the full two-year program. Fees are Rs 14,000 per semester for semesters 1, 2, and 4, and Rs 16,000 for semester 3 which includes the project course. Exam fees are charged separately each semester. This makes it the most affordable UGC-DEB approved MBA in India.' },
+      { q: 'Is IGNOU online MBA valid for government jobs?', a: 'Yes. IGNOU is a Central University established by an Act of Parliament. The online MBA is UGC-DEB entitled and AICTE recognised. It is valid for all government jobs, PSU recruitment, and higher studies including PhD. No government department or recruitment body questions an IGNOU degree.' },
+      { q: 'What specialisations are available in IGNOU online MBA?', a: 'The MBAOL offers five specialisations: Human Resource Management, Financial Management, Operations Management, Marketing Management, and Services Management. You choose your specialisation in semester three. Each specialisation has seven courses across semesters three and four.' },
+      { q: 'Is OPENMAT required for IGNOU online MBA?', a: 'No. OPENMAT is not required for the MBAOL program. Admission is merit-based on your graduation score. You need a bachelor\'s degree of minimum three years with at least 50 percent marks. Reserved category candidates need 45 percent. No entrance exam is required.' },
+      { q: 'What is the difference between IGNOU online MBA and distance MBA?', a: 'Both lead to the same MBA degree with identical UGC recognition. The online MBA (MBAOL) uses an LMS with live classes, recorded lectures, and ebooks. The distance MBA sends printed study material to your address. Both carry the same UGC-DEB recognition and degree value.' },
+      { q: 'Is IGNOU online MBA worth it in 2026?', a: 'For government jobs, promotions, PSU eligibility, teaching positions, and PhD qualification, IGNOU is genuinely worth it at Rs 58,000 total. For freshers seeking premium corporate placements, the degree alone will not open those doors. For working professionals who want a recognised MBA at minimum cost while staying employed, it is the best value option in India.' }
+    ],
+    ctaTitle: '',
+    ctaDesc: '',
+    content: `
+<p>Rs 58,000. That is the total cost of a two-year MBA from India's largest open university, delivered fully online, with no entrance exam. The people who regret joining IGNOU and the people who found it genuinely valuable went in with very different expectations. This page covers what the program involves, what it costs, and what students on Reddit, Quora, and consumer review platforms have said.</p>
+
+<p>All program details are sourced from the <a href="https://iop.ignouonline.ac.in/programme/p21" target="_blank">official IGNOU IOP program page</a>. Student feedback is drawn from Quora, Reddit, and PissedConsumer, with sources linked at the bottom.</p>
+
+<h2>About IGNOU and the Online MBA</h2>
+
+<p>Indira Gandhi National Open University is a Central University established by an Act of Parliament in 1985. It is the world's largest open university with over 3 million active students. It holds NAAC A++ accreditation and ranks first in the NIRF open university category 2024. The online MBA (MBAOL) is IGNOU's dedicated fully online program, separate from its older distance MBA which uses printed study material sent by post. Both carry the same degree recognition.</p>
+
+<div class="callout-key">IGNOU is a Central University under an Act of Parliament. The MBAOL is UGC-DEB entitled, AICTE recognised, and WES recognised for use in Canada and the US. Valid for every government job, PSU recruitment, and PhD admission in India. NIRF ranked number one open university 2024.</div>
+
+<h2>Program Structure</h2>
+
+<p>The MBAOL runs for two years across four semesters. Minimum duration is two years, maximum is four. The program has 28 courses in total: 20 core subjects, 7 specialisation courses chosen in semesters three and four, and one project course (MMPP-001) that counts as two courses in credits and fee. Assessment is 30 percent assignments and 70 percent term-end examinations. Assignments must be submitted before you can appear for the term-end exam.</p>
+
+<div class="callout-warning">Assignments must be submitted before you can sit the term-end exam. This is non-negotiable. Students who fall behind on assignments get stuck in re-registration cycles that stretch a two-year program to three or four years. Plan your schedule around assignment deadlines from day one, not from exam dates.</div>
+
+<h2>Fees</h2>
+
+<p>Total fee is Rs 58,000 for the full two-year program. Semester 1, 2, and 4 cost Rs 14,000 each. Semester 3 costs Rs 16,000 as it includes the project course. Exam fees are charged separately each semester and are not included in this total.</p>
+
+<div class="emi-block">No EMI or scholarship schemes are available for IGNOU MBAOL. The low fee itself is the benefit. Exam fees charged separately each semester. Re-registration fee is Rs 300 per cycle. For comparison: Amity charges Rs 1,99,000. NMIMS charges Rs 1,96,000. Symbiosis charges Rs 3,15,000.</div>
+
+<h2>5 Specialisations (Official from IGNOU IOP)</h2>
+
+<p>The MBAOL offers exactly five specialisations, confirmed from the <a href="https://iop.ignouonline.ac.in/programme/p21" target="_blank">official IGNOU IOP program page</a>. You choose in semester three. Each specialisation has seven courses across semesters three and four: Human Resource Management, Financial Management, Operations Management, Marketing Management, and Services Management.</p>
+
+<h2>What Students on Quora, Reddit and PissedConsumer Say</h2>
+
+<p>The feedback splits sharply. People who went in knowing this is a self-directed government university program tend to be satisfied. People who needed administrative support, timely responses, or hand-holding from the university tend to be frustrated.</p>
+
+<p>On Quora, positive reviewers say the degree is solid for government jobs, promotions, and PSU eligibility. One reviewer called it a practical and credible choice for anyone continuing work while studying. Critical Quora reviews describe study material arriving after assignment deadlines, phone lines that go unanswered, emails with no reply, and a two-year program stretching to four with no degree certificate at the end.</p>
+
+<p>On Reddit, the pattern is similar. Students who treat it as a self-study program and manage their own deadlines complete it without major issues. Students who expect the university to guide them through the process are frequently disappointed.</p>
+
+<p>PissedConsumer reviews (216 total, average 1.8 stars) echo the Quora complaints: marks not updated, grade cards showing incorrect status, degree certificates delayed by months, and support teams that are unreachable.</p>
+
+<div class="pull">The honest summary from Quora and Reddit: IGNOU works well for disciplined self-learners who need a recognised degree on a tight budget and have no dependency on university administrative support. It does not work for people who need guidance, hand-holding, or timely resolution of issues. You are essentially managing this program by yourself.</div>
+
+<h2>Placement Support</h2>
+
+<p>IGNOU does not run campus placement drives in the traditional sense. An on-campus recruitment event was held in 2024 with external companies, offering backend executive and customer service roles at Rs 2 to 3.4 LPA. The highest package in that drive was Rs 15 LPA across all disciplines. For most IGNOU MBA graduates, career outcomes depend entirely on what they do with the degree, not what the university facilitates.</p>
+
+<h2>Who This Program Suits</h2>
+
+<p>The value case is strong for specific profiles: government employees and aspirants needing an MBA for promotion or eligibility, working professionals who want a recognised MBA at minimum cost, anyone planning a PhD or teaching role, and people needing WES recognition for Canada or the US.</p>
+
+<p>It is the wrong choice for freshers needing corporate placements, people wanting a premium brand name for elite career switches, or anyone who needs consistent administrative support from the university.</p>
+
+<div class="ilink">Compare IGNOU against other UGC-DEB approved online MBA programs on fees, specialisations, and verified student outcomes at <a href="/universities" target="_blank">edifyedu.in/universities</a></div>
+
+<h2>Sources</h2>
+<p><a href="https://iop.ignouonline.ac.in/programme/p21" target="_blank">IGNOU IOP Official MBAOL Page</a> &middot; <a href="https://www.quora.com/Should-I-go-for-an-online-MBA-from-IGNOU" target="_blank">Quora: Should I go for IGNOU online MBA?</a> &middot; <a href="https://www.quora.com/Is-an-MBA-from-IGNOU-a-valued-one-or-not" target="_blank">Quora: Is IGNOU MBA valued?</a> &middot; <a href="https://jumpnetworks.in/ignou-online-mba/" target="_blank">Reddit via JumpNetworks</a> &middot; <a href="https://ignou.pissedconsumer.com/review.html" target="_blank">PissedConsumer: 216 IGNOU Reviews</a> &middot; <a href="https://www.eduverticals.com/blogs/Online_MBA_from_IGNOU" target="_blank">EduVerticals IGNOU MBA 2026</a></p>
     `,
   }
 ]
