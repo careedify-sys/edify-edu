@@ -885,7 +885,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 8,
     targetKeyword: 'amity online mba',
     relatedUniversities: [],
-    status: 'draft',
+    status: 'published',
     faqs: [
       { q: 'Is Amity online MBA UGC approved and valid in India?', a: 'Yes. Amity University Online holds UGC-DEB approval and AICTE recognition. The degree is treated as equivalent to a regular on-campus MBA under UGC guidelines and is valid for government jobs, PSU recruitment, and higher education. Amity was the first university in India to receive UGC approval for online degree programs.' },
       { q: 'What is the fee for Amity online MBA in 2026?', a: 'The total fee for Indian students is Rs 1,99,000 for a single specialisation, payable as Rs 49,750 per semester. Dual specialisation costs Rs 2,99,000. For international students, the full program fee is USD 5,000 or USD 1,250 per semester. Zero-cost EMI is available. Scholarships are available for defence personnel, Amity alumni, merit-based, Divyang, and sports categories.' },
