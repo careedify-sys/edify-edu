@@ -14,12 +14,15 @@ const SPECIALISATIONS = [
   'Agri Operations Management',
 ]
 
+interface QuickFact { label: string; value: string; green?: boolean }
+
 interface Props {
   postTitle?: string
   specialisations?: string[]
+  quickFacts?: QuickFact[]
 }
 
-export default function BlogSidebarWidgets({ postTitle, specialisations }: Props) {
+export default function BlogSidebarWidgets({ postTitle, specialisations, quickFacts }: Props) {
   const specs = specialisations?.length ? specialisations : SPECIALISATIONS
 
   // ── Alumni card state ────────────────────────────────────────────────────
@@ -108,6 +111,26 @@ export default function BlogSidebarWidgets({ postTitle, specialisations }: Props
 
   return (
     <>
+      {/* ── Card 0: Quick Facts ───────────────────────────────────────── */}
+      {quickFacts && quickFacts.length > 0 && (
+        <div style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: 16, overflow: 'hidden' }}>
+          <div style={{ background: '#0B1D35', padding: '12px 18px' }}>
+            <div style={{ color: '#fff', fontWeight: 700, fontSize: 13 }}>📋 Quick Facts</div>
+          </div>
+          <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
+            {quickFacts.map((f, i) => (
+              <li key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '8px 16px', borderBottom: i < quickFacts.length - 1 ? '1px solid #f1f5f9' : 'none' }}>
+                <span style={{ fontSize: 12.5, color: '#64748b' }}>{f.label}</span>
+                <span style={f.green
+                  ? { fontSize: 12.5, fontWeight: 700, color: '#16a34a', background: '#f0fdf4', padding: '2px 8px', borderRadius: 4 }
+                  : { fontSize: 12.5, fontWeight: 700, color: '#0f172a' }
+                }>{f.value}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       {/* ── Card 1: Talk to an Alumnus ─────────────────────────────────── */}
       <div
         style={{

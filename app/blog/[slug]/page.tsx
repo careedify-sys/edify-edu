@@ -416,7 +416,7 @@ export default async function BlogPostPage({ params }: Props) {
 
               {/* Talk to Alumnus + Program Details — hidden on mobile (in-article form handles mobile) */}
               <div className="hidden lg:contents">
-                <BlogSidebarWidgets postTitle={post.title} />
+                <BlogSidebarWidgets postTitle={post.title} quickFacts={post.quickFacts} />
               </div>
 
               {/* Related universities */}

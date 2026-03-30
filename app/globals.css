@@ -685,6 +685,9 @@ details summary::-webkit-details-marker { display: none; }
   .prose-article .quick-facts { grid-template-columns: 1fr 1fr; }
 }
 
+/* Platform label (groups voices by source in review posts) */
+.prose-article .platform-label { font-size: 10px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: #64748b; background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 4px; padding: 4px 10px; display: inline-block; margin: 20px 0 10px; }
+
 /* Quick facts table */
 .prose-article .quick-facts { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: #e2e8f0; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; margin: 0 0 32px; }
 .prose-article .qf-cell { background: #fff; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
