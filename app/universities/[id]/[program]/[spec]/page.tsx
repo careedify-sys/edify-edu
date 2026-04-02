@@ -72,13 +72,60 @@ export default async function UniversitySpecPage(
   const spec = pd.specs?.find(s => toSlug(s) === specSlug)
   if (!spec) notFound()
 
+  const year = new Date().getFullYear()
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://edifyedu.in' },
+      { '@type': 'ListItem', position: 2, name: 'Universities', item: 'https://edifyedu.in/universities' },
+      { '@type': 'ListItem', position: 3, name: u.name, item: `https://edifyedu.in/universities/${u.id}` },
+      { '@type': 'ListItem', position: 4, name: `Online ${program}`, item: `https://edifyedu.in/universities/${u.id}/${programSlug}` },
+      { '@type': 'ListItem', position: 5, name: spec, item: `https://edifyedu.in/universities/${u.id}/${programSlug}/${specSlug}` },
+    ],
+  }
+
+  const courseSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Course',
+    name: `${u.name} Online ${program} — ${spec} Specialisation`,
+    description: `${u.name} Online ${program} with ${spec} specialisation. NAAC ${u.naac} accredited, UGC DEB approved. Enrol for ${year} batch.`,
+    provider: {
+      '@type': 'CollegeOrUniversity',
+      name: u.name,
+      sameAs: `https://edifyedu.in/universities/${u.id}`,
+    },
+    educationalLevel: program.startsWith('M') ? 'Postgraduate' : 'Undergraduate',
+    offers: u.feeMin ? {
+      '@type': 'Offer',
+      price: u.feeMin,
+      priceCurrency: 'INR',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        minPrice: u.feeMin,
+        maxPrice: u.feeMax,
+        priceCurrency: 'INR',
+      },
+    } : undefined,
+    hasCourseInstance: {
+      '@type': 'CourseInstance',
+      courseMode: 'Online',
+      startDate: `${year}-07-01`,
+      courseWorkload: `PT${pd?.duration?.replace(/[^0-9]/g, '') || '2'}Y`,
+    },
+  }
+
   return (
-    <UniversitySpecClient
-      university={u}
-      program={program}
-      programSlug={programSlug}
-      spec={spec}
-    />
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+      <UniversitySpecClient
+        university={u}
+        program={program}
+        programSlug={programSlug}
+        spec={spec}
+      />
+    </>
   )
 }
 

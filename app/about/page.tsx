@@ -21,8 +21,37 @@ export const metadata: Metadata = {
   },
 }
 
+const aboutFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Is Edify affiliated with any university?',
+      acceptedAnswer: { '@type': 'Answer', text: 'No. Edify is fully independent. We are not affiliated with, commissioned by, or paid by any university. All rankings and comparisons are based solely on official NIRF and NAAC data.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where does Edify get its university data from?',
+      acceptedAnswer: { '@type': 'Answer', text: 'All university data is sourced from official government sources: NIRF rankings (Ministry of Education), NAAC grades (naac.gov.in), UGC DEB approved list (ugc.ac.in), and official university websites for fee structures.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does Edify take money from universities for placement or ranking?',
+      acceptedAnswer: { '@type': 'Answer', text: 'No. Edify maintains a strict zero-paid-ranking policy. Universities cannot pay to be ranked higher, featured prominently, or recommended. All placements are purely based on NIRF rank and NAAC grade.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How accurate is the fee data on Edify?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Fee data is sourced from official university websites and is the most accurate publicly available information at time of publishing. Fees can change each academic year. Students must verify current fees directly on the official university website before enrolling. Last updated: March 2026.' },
+    },
+  ],
+}
+
 export default function AboutPage() {
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutFaqSchema) }} />
     <div className="bg-surface-1 min-h-screen">
       {/* Hero */}
       <div className="bg-navy text-white py-16">
@@ -223,5 +252,6 @@ export default function AboutPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }

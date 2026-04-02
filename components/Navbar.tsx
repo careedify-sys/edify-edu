@@ -324,7 +324,7 @@ export default function Navbar() {
               <Link href="/universities"
                 className="hidden sm:inline-flex items-center gap-2 btn-primary"
                 style={{ padding: '9px 18px', borderRadius: '10px', fontSize: '13px', textDecoration: 'none' }}>
-                Get Started
+                Browse Universities
               </Link>
               <button
                 className="lg:hidden p-2.5 rounded-xl transition-colors"
@@ -456,7 +456,7 @@ export default function Navbar() {
               <Link href="/universities"
                 style={{ display: 'block', textAlign: 'center', padding: '15px', borderRadius: '12px', fontWeight: 800, fontSize: '15px', textDecoration: 'none', background: 'var(--amber)', color: '#fff' }}
                 onClick={() => setMobileOpen(false)}>
-                Get Started →
+                Browse Universities →
               </Link>
             </div>
           </div>

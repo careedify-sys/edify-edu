@@ -48,12 +48,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ])
 
-  // Program index pages (standard + online-* SEO variants)
+  // Program index pages — canonical slugs only (online-* variants redirect to these)
   const programs = getAllPrograms()
-  const programPages: MetadataRoute.Sitemap = programs.flatMap(prog => [
-    { url: `${BASE}/programs/${progSlug(prog)}`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.85 },
-    { url: `${BASE}/programs/${onlineProgSlug(prog)}`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.85 },
-  ])
+  const programPages: MetadataRoute.Sitemap = programs.map(prog => (
+    { url: `${BASE}/programs/${progSlug(prog)}`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.85 }
+  ))
 
   // Specialisation pages — highest value SEO pages
   const specPages: MetadataRoute.Sitemap = programs.flatMap(prog => {

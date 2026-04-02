@@ -105,6 +105,15 @@ function PopularTopics() {
   )
 }
 
+const blogBreadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://edifyedu.in' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://edifyedu.in/blog' },
+  ],
+}
+
 // ── Main page ─────────────────────────────────────────────────────────────────
 export default function BlogPage() {
   const allPosts = getPublishedPosts()
@@ -112,6 +121,8 @@ export default function BlogPage() {
   const restPosts = allPosts.slice(1)
 
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogBreadcrumbSchema) }} />
     <div className="page-shell">
 
       {/* ── Hero / Page Header ─────────────────────────────────── */}
@@ -197,5 +208,6 @@ export default function BlogPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }

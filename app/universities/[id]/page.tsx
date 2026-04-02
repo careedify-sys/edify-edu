@@ -25,8 +25,10 @@ export async function generateMetadata(
   const year = new Date().getFullYear()
   const programList = u.programs.slice(0, 3).join(', ')
   const cleanName = u.name.replace(/\s+online\s*$/i, '')
-  const title = `${cleanName} Online ${u.programs[0]} ${year} — Fees, Syllabus, Placements & Reviews`
-  const description = `${u.name} online ${programList} — Total fees ₹${Math.round(u.feeMin/1000)}K–₹${Math.round(u.feeMax/1000)}K. NAAC ${u.naac} accredited.${u.nirf < 200 ? ` NIRF #${u.nirf} ranked.` : ''} UGC DEB approved. Compare syllabus, placements, EMI options. Admission open ${year}.`
+  const nirfSuffix = u.nirf && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
+  const naacSuffix = u.naac ? `, NAAC ${u.naac}` : ''
+  const title = `${cleanName} Online ${u.programs[0]} ${year}${nirfSuffix}${naacSuffix} — Fees, Syllabus & Placements`
+  const description = `${u.name} online ${programList} — Total fees ₹${Math.round(u.feeMin/1000)}K–₹${Math.round(u.feeMax/1000)}K. NAAC ${u.naac} accredited.${u.nirf && u.nirf < 200 ? ` NIRF #${u.nirf} ranked.` : ''} UGC DEB approved. Compare syllabus, placements, EMI options. Admission open ${year}.`
 
   const keywords = [
     `${u.name} online ${u.programs[0]} fees`,

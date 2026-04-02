@@ -102,7 +102,65 @@ export default async function CatchAllProgramPage(
   const feeMin = universities.length ? Math.min(...universities.map(u => u.feeMin)) : 0
   const feeMax = universities.length ? Math.max(...universities.map(u => u.feeMax)) : 0
 
+  const year = new Date().getFullYear()
+  const canonicalSlug = activeSpec
+    ? `https://edifyedu.in/programs/${programSlug}/${subSlug}`
+    : `https://edifyedu.in/programs/${programSlug}`
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://edifyedu.in' },
+      { '@type': 'ListItem', position: 2, name: 'Programs', item: 'https://edifyedu.in/programs' },
+      { '@type': 'ListItem', position: 3, name: `Online ${program}`, item: `https://edifyedu.in/programs/${programSlug}` },
+      ...(activeSpec ? [{ '@type': 'ListItem', position: 4, name: activeSpec, item: canonicalSlug }] : []),
+    ],
+  }
+
+  const courseSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Course',
+    name: activeSpec ? `Online ${program} in ${activeSpec}` : `Online ${program} in India ${year}`,
+    description: activeSpec
+      ? `UGC DEB approved online ${program} with ${activeSpec} specialisation. Compare ${universities.length} top-ranked universities in India.`
+      : `UGC DEB approved online ${program} programs in India. Compare ${universities.length} top-ranked universities. Fees from ₹${Math.round(feeMin/1000)}K.`,
+    provider: { '@type': 'Organization', name: 'Edify', sameAs: 'https://edifyedu.in' },
+    educationalLevel: program.startsWith('M') ? 'Postgraduate' : 'Undergraduate',
+    offers: {
+      '@type': 'Offer',
+      price: feeMin,
+      priceCurrency: 'INR',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        minPrice: feeMin,
+        maxPrice: feeMax,
+        priceCurrency: 'INR',
+      },
+    },
+    hasCourseInstance: {
+      '@type': 'CourseInstance',
+      courseMode: 'Online',
+      courseWorkload: 'PT2Y',
+      startDate: `${year}-07-01`,
+    },
+  }
+
+  const faqSchema = content?.faqs?.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: content.faqs.slice(0, 5).map((f: { q: string; a: string }) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  } : null
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
     <div className="bg-surface-1 min-h-screen pt-4 pb-20">
       <div className="container-custom">
         {/* Breadcrumbs */}
@@ -220,5 +278,6 @@ export default async function CatchAllProgramPage(
         </div>
       </div>
     </div>
+    </>
   )
 }
