@@ -25,7 +25,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/contact`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
   ]
 
-  // University pages (both URL formats)
+  // University pages — canonical /universities/ URLs only
+  // NOTE: /programs/{prog}/{u.id} URLs are intentionally excluded — they redirect
+  // to /universities/{id}/{prog} and redirect sources must not appear in sitemaps.
   const uniPages: MetadataRoute.Sitemap = UNIVERSITIES.flatMap(u => [
     {
       url: `${BASE}/universities/${u.id}`,
@@ -38,13 +40,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: 'weekly' as const,
       priority: 0.9,
-    })),
-    // SEO-friendly program-first URLs (use u.id so findUniId can redirect correctly)
-    ...u.programs.map(prog => ({
-      url: `${BASE}/programs/${progSlug(prog)}/${u.id}`,
-      lastModified: now,
-      changeFrequency: 'weekly' as const,
-      priority: 0.85,
     })),
   ])
 
