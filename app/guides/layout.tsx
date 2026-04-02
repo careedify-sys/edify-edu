@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Online Degree Guides India 2026 — Honest Answers to Every Question | Edify',
+  title: 'Online Degree Guides India 2026 — Honest Answers to Every Question',
   description: 'Straight answers on online MBA, MCA, BBA degrees in India. Is it valid for government jobs? How to choose a university? UGC DEB explained. No fluff, no paid placements.',
   keywords: [
     'online degree guide india 2026', 'is online mba valid for government jobs', 'how to choose online university india',

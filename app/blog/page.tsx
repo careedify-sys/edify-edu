@@ -14,6 +14,13 @@ export const metadata: Metadata = {
     description: 'Honest, independent guides on online degrees in India. No paid placements. NIRF-ranked comparisons.',
     url: 'https://edifyedu.in/blog',
     type: 'website',
+    images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: 'Edify Blog — Online Degree Guides India 2026' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Edify Blog — Online Degree Guides & University Reviews India 2026',
+    description: 'Honest, independent guides on online degrees in India. No paid placements. NIRF-ranked comparisons.',
+    images: ['https://edifyedu.in/og.webp'],
   },
 }
 

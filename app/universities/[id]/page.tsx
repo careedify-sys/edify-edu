@@ -28,7 +28,10 @@ export async function generateMetadata(
   const nirfSuffix = u.nirf && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
   const naacSuffix = u.naac ? `, NAAC ${u.naac}` : ''
   const title = `${cleanName} Online ${u.programs[0]} ${year}${nirfSuffix}${naacSuffix} — Fees, Syllabus & Placements`
-  const description = `${u.name} online ${programList} — Total fees ₹${Math.round(u.feeMin/1000)}K–₹${Math.round(u.feeMax/1000)}K. NAAC ${u.naac} accredited.${u.nirf && u.nirf < 200 ? ` NIRF #${u.nirf} ranked.` : ''} UGC DEB approved. Compare syllabus, placements, EMI options. Admission open ${year}.`
+  const feeMin = Math.round(u.feeMin / 1000)
+  const feeMax = Math.round(u.feeMax / 1000)
+  const feeStr = feeMin === feeMax ? `₹${feeMin}K` : `₹${feeMin}K–₹${feeMax}K`
+  const description = `${cleanName} online ${programList} — Total fees ${feeStr}. NAAC ${u.naac} accredited.${u.nirf && u.nirf < 200 ? ` NIRF #${u.nirf} ranked.` : ''} UGC DEB approved. Compare syllabus, placements, EMI options. Admission open ${year}.`
 
   const keywords = [
     `${u.name} online ${u.programs[0]} fees`,
