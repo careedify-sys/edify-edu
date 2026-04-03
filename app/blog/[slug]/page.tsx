@@ -63,7 +63,7 @@ export async function generateMetadata(
   const previousImages = (await parent).openGraph?.images || []
 
   return {
-    title: `${post.title} | Edify Blog`,
+    title: post.seoTitle || post.title,
     description: post.metaDescription,
     keywords: post.tags,
     robots: { index: true, follow: true },

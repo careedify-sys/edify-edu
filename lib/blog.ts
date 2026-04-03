@@ -7,6 +7,7 @@ export interface BlogPost {
   faqs: { q: string; a: string }[]; relatedUniversities: string[]
   targetKeyword: string; status: 'published' | 'draft'
   ctaTitle?: string; ctaDesc?: string
+  seoTitle?: string
   quickFacts?: { label: string; value: string; green?: boolean }[]
 }
 
@@ -166,6 +167,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'is-online-mba-worth-it-2026',
     title: 'Is Online MBA Worth It in 2026? The Honest Truth Nobody Tells You',
+    seoTitle: 'Is Online MBA Worth It in 2026? Honest Truth',
     metaDescription: 'Is an online MBA worth it in 2026? We break down UGC recognition, real ROI, who should do it—and who shouldn\'t. No fluff, just the honest picture.',
     category: 'Online MBA India',
     tags: ['Online MBA', 'UGC DEB', 'MBA India 2026', 'Working Professionals', 'MBA ROI'],
@@ -261,6 +263,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'how-to-choose-online-mba-university-india-2026',
     title: 'How to Choose the Right Online MBA University in India in 2026 (Step-by-Step)',
+    seoTitle: 'How to Choose an Online MBA University in India 2026',
     metaDescription: 'A no-nonsense guide to choosing the right online MBA university in India in 2026—budget, approvals, rankings, red flags, and options from Rs.60K to Rs.3L.',
     category: 'Online MBA India',
     tags: ['Online MBA University', 'UGC DEB Approved', 'NAAC Ranking', 'MBA Fees India', 'MBA 2026'],
@@ -428,6 +431,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'affordable-online-mba-india-2026',
     title: 'Best Affordable Online MBA in India 2026 — A Straight-Talk Guide',
+    seoTitle: 'Best Affordable Online MBA in India 2026',
     metaDescription: 'Looking for an affordable online MBA in India in 2026? Compare fees from ₹54K to ₹1.5L, check UGC approvals, and find the cheapest programs worth your money.',
     category: 'Online MBA India',
     tags: ['Affordable Online MBA', 'Cheapest Online MBA India', 'Online MBA Low Cost', 'UGC DEB', 'MBA 2026'],
@@ -580,6 +584,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'online-mba-for-working-professionals-india',
     title: 'Online MBA for Working Professionals in India 2026 — What to Check Before You Pay',
+    seoTitle: 'Online MBA for Working Professionals India 2026 — Key Checks',
     metaDescription: '5 years into your career and thinking about an online MBA? Here\'s what actually separates a good program from a wasted two years — and a free shortlist to help',
     category: 'Online MBA for Working Professionals',
     tags: ['Online MBA for Working Professionals', 'Online MBA India 2026', 'MBA While Working', 'No Cost EMI MBA', 'UGC DEB Approved', 'Online MBA Programs India'],
@@ -693,6 +698,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'symbiosis-online-mba-review-2026',
     title: 'Symbiosis Online MBA 2026: Fees, Program Details and Student Feedback',
+    seoTitle: 'Symbiosis Online MBA 2026: Fees & Student Reviews',
     metaDescription: 'A factual look at Symbiosis online MBA through SSODL covering fees, program structure, eligibility, specialisations and what students who enrolled actually expe',
     category: 'University Review',
     tags: ['symbiosis online mba', 'symbiosis university online mba', 'SSODL MBA', 'UGC DEB online MBA'],
@@ -784,6 +790,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'nmims-online-mba-review-2026',
     title: 'NMIMS Online MBA 2026: Fees, Program Details and Student Feedback',
+    seoTitle: 'NMIMS Online MBA 2026: Fees & Student Reviews',
     metaDescription: 'A factual look at NMIMS online MBA covering fees, program structure, specialisations, placement support and what students who enrolled actually experienced.',
     category: 'University Review',
     tags: ['nmims online mba', 'nmims online mba fees', 'nmims online mba review', 'nmims mba 2026', 'UGC DEB online MBA'],
