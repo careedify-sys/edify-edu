@@ -17,15 +17,7 @@ import { UNIVERSITY_REVIEWS, GENERIC_REVIEWS } from '@/lib/reviews-data'
 
 const WA_NUMBER = '917061285806'
 
-// Programs that NEVER have full syllabus — always fully lock the spec page
-const ALWAYS_LOCK_PROGRAMS: Program[] = ['BBA', 'BCA', 'BA', 'B.Com', 'M.Com', 'MA', 'MSc', 'BSc']
-
-function isFullyLocked(program: Program, syllabus: any): boolean {
-  if (ALWAYS_LOCK_PROGRAMS.includes(program)) return true
-  // MBA/MCA — lock if syllabus sem1 is missing
-  if (!syllabus?.sem1) return true
-  return false
-}
+// No lock — all spec pages show full content freely
 
 interface Props {
   university: University
@@ -59,21 +51,6 @@ export default function SpecializationPageClient({ university: u, program, speci
   const syllabus = getMasterSyllabus(u.id, program) || getUniversitySyllabus(u.id, program)
   const programSlug = `online-${program.toLowerCase().replace(/\./g, '')}`
 
-  // Check if this spec page should be fully locked
-  if (isFullyLocked(program, syllabus)) {
-    return (
-      <LockedSpecPage
-        u={u}
-        program={program}
-        specialization={specialization}
-        specSlug={specSlug}
-        pd={pd}
-        progInfo={progInfo}
-        programSlug={programSlug}
-      />
-    )
-  }
-  
   // Get other specializations from this university
   const otherSpecs = pd?.specs?.filter(s => s !== specialization).slice(0, 6) || []
   const cleanName = u.name.replace(/\bOnline\b\s*$/i, '').trim()
