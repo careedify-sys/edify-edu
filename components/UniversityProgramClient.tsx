@@ -16,25 +16,7 @@ import { UNIVERSITY_REVIEWS, GENERIC_REVIEWS } from '@/lib/reviews-data'
 
 const WA_NUMBER = '917061285806'
 
-// A university has "full data" if it has career roles, top companies, fees, salary, and syllabus.
-// These pages show everything freely. Others show the WhatsApp gate.
-function hasFullData(pd: NonNullable<University['programDetails'][Program]>, program: Program, uniId: string): boolean {
-  // Programs that NEVER have syllabus data - always lock
-  const ALWAYS_LOCK_PROGRAMS: Program[] = ['BBA', 'BCA', 'BA', 'B.Com', 'M.Com', 'MA', 'MSc', 'BSc']
-  if (ALWAYS_LOCK_PROGRAMS.includes(program)) return false
-
-  // Check syllabus from master/university syllabus sources (NOT pd.syllabus which is often empty)
-  const syllabusData = getMasterSyllabus(uniId, program) || getUniversitySyllabus(uniId, program)
-  const hasSyllabus = !!(syllabusData?.sem1 && syllabusData?.sem2)
-
-  return (
-    (pd.roles?.length ?? 0) > 0 &&
-    (pd.topCompanies?.length ?? 0) > 0 &&
-    !!pd.fees &&
-    !!pd.avgSalary &&
-    hasSyllabus
-  )
-}
+// Always show full page — no paywall gate
 
 interface Props {
   university: University
@@ -43,12 +25,8 @@ interface Props {
 }
 
 export default function UniversityProgramClient({ university: u, program, programSlug }: Props) {
-  const pd    = u.programDetails[program]!
-  const full  = hasFullData(pd, program, u.id)
-
-  return full
-    ? <FullPage u={u} program={program} programSlug={programSlug} pd={pd} />
-    : <LockedPage u={u} program={program} programSlug={programSlug} pd={pd} />
+  const pd = u.programDetails[program]!
+  return <FullPage u={u} program={program} programSlug={programSlug} pd={pd} />
 }
 
 // ── FULL DATA PAGE ─────────────────────────────────────────────
@@ -67,8 +45,8 @@ function FullPage({ u, program, programSlug, pd }: {
 
   const faqs = [
     { q: `Is the ${program} degree from ${u.name} valid?`, a: `Yes — 100% valid. ${u.name} is UGC DEB approved. The degree certificate is identical to a regular campus degree and is valid for private sector, government jobs where UGC DEB degrees are accepted${u.psuEligible ? ', and PSU recruitment' : ''}. ` },
-    { q: `What is the total fee for ${program} at ${u.name}?`, a: `Total fee is ${pd.fees}. EMI from ₹${u.emiFrom.toLocaleString()}/month. Semester-wise payment available. Ask a counsellor for current scholarships.` },
-    { q: `What specialisations does ${u.name} offer in ${program}?`, a: `${pd.specs.length} specialisations: ${pd.specs.join(', ')}.` },
+    { q: `What is the total fee for ${program} at ${u.name}?`, a: `Total fee is ${pd.fees || `₹${Math.round(u.feeMin/1000)}K+`}. EMI from ₹${u.emiFrom.toLocaleString()}/month. Semester-wise payment available. Ask a counsellor for current scholarships.` },
+    ...(pd.specs?.length ? [{ q: `What specialisations does ${u.name} offer in ${program}?`, a: `${pd.specs.length} specialisations: ${pd.specs.join(', ')}.` }] : []),
     { q: `Can I study while working full-time?`, a: `Yes — designed for working professionals. Live sessions + recorded videos, ${u.examMode} assessments. No mandatory daily attendance.` },
     { q: `What placement support does ${u.name} provide?`, a: `Placement assistance including job portals, resume workshops, mock interviews and campus drives. Alumni network + Naukri/LinkedIn placement support.` },
   ]
@@ -103,13 +81,13 @@ function FullPage({ u, program, programSlug, pd }: {
               <h1 className="font-display" style={{ fontSize: 'clamp(1.6rem,4vw,2.4rem)', fontWeight: 800, color: '#fff', lineHeight: 1.15, marginBottom: 10 }}>
                 {program} from {u.name}
               </h1>
-              <p className="text-slate-400 text-[15px] leading-relaxed mb-5">{cleanCareerOutcome(pd.careerOutcome)}</p>
+              {pd.careerOutcome && <p className="text-slate-400 text-[15px] leading-relaxed mb-5">{cleanCareerOutcome(pd.careerOutcome)}</p>}
 
               <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 sm:gap-3 mb-6">
                 {[
-                  { label: 'Total Fees', value: pd.fees },
-                  { label: 'Duration',   value: pd.duration },
-                  { label: 'Avg Salary', value: pd.avgSalary },
+                  { label: 'Total Fees', value: pd.fees || `₹${Math.round(u.feeMin/1000)}K+` },
+                  { label: 'Duration',   value: pd.duration || '2 Years' },
+                  ...(pd.avgSalary ? [{ label: 'Avg Salary', value: pd.avgSalary }] : []),
                   { label: 'NIRF Rank',  value: u.nirf < 900 ? `#${u.nirf}` : 'Recognised' },
                 ].map(s => (
                   <div key={s.label} style={{ padding: '10px 14px', background: 'rgba(255,255,255,0.06)', border: '1px solid #1e2f45', borderRadius: 'var(--r-sm)' }}>
@@ -141,10 +119,10 @@ function FullPage({ u, program, programSlug, pd }: {
             <div className="flex-1 flex flex-col gap-8">
 
               {/* Specialisations */}
-              <section className="card-lg p-6">
+              {(pd.specs?.length ?? 0) > 0 && <section className="card-lg p-6">
                 <h2 className="font-display text-xl font-bold text-navy mb-4">{program} Specialisations at {u.abbr}</h2>
                 <div className="flex flex-wrap gap-2">
-                  {pd.specs.map(spec => (
+                  {(pd.specs ?? []).map(spec => (
                     <button key={spec} onClick={() => setActiveSpec(activeSpec === spec ? null : spec)}
                       className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${activeSpec === spec ? 'bg-amber text-white' : 'bg-surface-2 border border-border text-ink-2 hover:border-amber'}`}>
                       {spec}
@@ -159,34 +137,34 @@ function FullPage({ u, program, programSlug, pd }: {
                     <span className="text-sm font-semibold text-green-600">{specContent.salaryRange}</span>
                   </div>
                 )}
-              </section>
+              </section>}
 
               {/* Career Outcomes */}
-              <section className="card-lg p-6">
+              {((pd.roles?.length ?? 0) > 0 || (pd.topCompanies?.length ?? 0) > 0) && <section className="card-lg p-6">
                 <h2 className="font-display text-xl font-bold text-navy mb-4">Career After {program} from {u.abbr}</h2>
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div>
+                  {(pd.roles?.length ?? 0) > 0 && <div>
                     <div className="flex items-center gap-2 text-sm font-bold text-navy mb-3"><Briefcase size={16} /> Job Roles</div>
                     <div className="flex flex-wrap gap-2">
-                      {pd.roles.map(role => (
+                      {(pd.roles ?? []).map(role => (
                         <span key={role} className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">{role}</span>
                       ))}
                     </div>
-                  </div>
-                  <div>
+                  </div>}
+                  {(pd.topCompanies?.length ?? 0) > 0 && <div>
                     <div className="flex items-center gap-2 text-sm font-bold text-navy mb-3"><TrendingUp size={16} /> Top Hiring Companies</div>
                     <div className="flex flex-wrap gap-2">
-                      {pd.topCompanies.slice(0, 8).map(c => (
+                      {(pd.topCompanies ?? []).slice(0, 8).map(c => (
                         <span key={c} className="px-3 py-1 bg-green-50 text-green-700 rounded-full text-xs font-medium">{c}</span>
                       ))}
                     </div>
-                  </div>
+                  </div>}
                 </div>
-                <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
+                {pd.avgSalary && <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
                   <div className="flex items-center gap-2 text-green-800 font-semibold mb-1"><Award size={16} /> Average Salary</div>
                   <div className="text-2xl font-bold text-green-700">{pd.avgSalary}</div>
-                </div>
-              </section>
+                </div>}
+              </section>}
 
               {/* Syllabus */}
               {syllabus && <SyllabusSection syllabus={syllabus} program={program} universityName={u.name} />}

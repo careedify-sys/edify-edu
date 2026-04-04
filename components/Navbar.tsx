@@ -12,8 +12,8 @@ import type { Program } from '@/lib/data-client'
    Show only recognised universities, sorted by NIRF, horizontally scrollable.
    ─────────────────────────────────────────────────────────────────────────── */
 const FEATURED_IDS = [
-  'nmims', 'symbiosis', 'manipal-jaipur', 'chandigarh', 'lpu', 'amity',
-  'bits-pilani-work-integrat', 'srm-institut-of-science', 'jain', 'dypatil',
+  'nmims-online', 'symbiosis-university-online', 'manipal-university-jaipur-online', 'chandigarh-university-online', 'lovely-professional-university-online', 'amity-university-online',
+  'bits-pilani-work-integrated-online', 'srm-institute-science-technology-online', 'jain-university-online', 'dy-patil-university-online',
 ]
 
 const PROGRAM_CATEGORIES = {
