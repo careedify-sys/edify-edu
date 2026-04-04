@@ -3957,6 +3957,8 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaTitle: '',
     ctaDesc: '',
     content: `
+<!-- Full LPU Online MBA Review 2026 -->
+
 <figure style="text-align:center; margin: 0 0 2em;">
 <svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:10px;display:block;">
   <defs>
@@ -4214,7 +4216,157 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <table>
   <thead>
-    <tr><th>Semester 1</th><th>Semester 2</th><th>Semester 3</th><th>Semester 4</th></tr
+    <tr><th>Semester 1</th><th>Semester 2</th><th>Semester 3</th><th>Semester 4</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Financial Reporting and Analysis</td>
+      <td>Corporate Finance</td>
+      <td>Specialisation Elective I</td>
+      <td>Specialisation Elective IV</td>
+    </tr>
+    <tr>
+      <td>Managerial Economics</td>
+      <td>Operations Management</td>
+      <td>Specialisation Elective II</td>
+      <td>Specialisation Elective V</td>
+    </tr>
+    <tr>
+      <td>International Business Environment</td>
+      <td>Corporate Strategy and Entrepreneurship</td>
+      <td>Specialisation Elective III</td>
+      <td>Specialisation Elective VI</td>
+    </tr>
+    <tr>
+      <td>Marketing Management</td>
+      <td>Research Methodology</td>
+      <td>Business Analytics</td>
+      <td>Capstone Project</td>
+    </tr>
+    <tr>
+      <td>Organisational Behaviour and HR Dynamics</td>
+      <td>Legal Aspects of Business</td>
+      <td>Seminar on Summer Training</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Communication for Leaders</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Semesters 3 and 4 are where your specialisation subjects come in. The Capstone Project in Semester 4 is applied work, not a written exam. All subjects are taught and submitted in English.</p>
+
+<h2>What the Learning Experience Actually Looks Like</h2>
+
+<p>LPU's LMS, called eConnect, is one of the better platforms in this segment. Live weekend sessions, recorded lectures available anytime, a mobile app, and weekly asynchronous mentoring are all part of the setup. Students report that the platform is easy to use and that faculty respond when contacted, though the depth of engagement varies by semester and batch.</p>
+
+<p>The curriculum includes simulations, case analysis, capstone projects, and guest lectures by industry practitioners. Whether the guest sessions are genuinely useful depends on who is invited that semester. That variability is not unique to LPU. It is common across every online MBA program that runs masterclasses.</p>
+
+<p>One thing that is consistent: the dual specialisation option runs through the regular program timeline without extra cost or extended duration. That is uncommon.</p>
+
+<div class="pull">
+  <p>The LMS works. The dual specialisation is real. What you get out of two years still depends on how much you show up.</p>
+</div>
+
+<h2>Placement Support: What Online Students Can Expect</h2>
+
+<p>LPU's campus MBA numbers are frequently mentioned in its marketing: highest package ₹49.4 LPA in 2025, average for the top 25% at ₹10.23 LPA. Those figures relate to the full-time on-campus cohort, not the online program.</p>
+
+<p>For online MBA students, placement support means resume assistance, virtual placement drives, access to job portals, and placement notifications. It is support, not a placement guarantee or a campus recruitment cycle. If you are already employed and doing this program for a promotion or credential upgrade, this is exactly what you need and nothing is missing. If you are expecting campus-style placements from an online program, that expectation needs adjusting before you enrol.</p>
+
+<p>For the online cohort specifically, average salary packages range between ₹4–7 LPA, with higher outcomes for candidates with prior work experience and strong specialisations. The highest package reported for online MBA graduates is ₹11.6 LPA.</p>
+
+<h2>Job Roles and Salary After LPU Online MBA</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Job Role</th>
+      <th>Specialisation</th>
+      <th>Average Salary (LPA)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Business Analyst</td><td>Business Analytics / Data Science</td><td>₹5–9 LPA</td></tr>
+    <tr><td>Financial Analyst</td><td>Finance / Banking</td><td>₹4–8 LPA</td></tr>
+    <tr><td>Marketing Manager</td><td>Marketing / Digital Marketing</td><td>₹5–9 LPA</td></tr>
+    <tr><td>HR Manager</td><td>Human Resource Management</td><td>₹4–7 LPA</td></tr>
+    <tr><td>Operations Manager</td><td>Operations / Logistics</td><td>₹5–9 LPA</td></tr>
+    <tr><td>IT Manager</td><td>Information Technology</td><td>₹6–10 LPA</td></tr>
+    <tr><td>Hospital Administrator</td><td>Healthcare Management</td><td>₹4–12 LPA</td></tr>
+    <tr><td>Supply Chain Manager</td><td>Logistics and Supply Chain</td><td>₹5–9 LPA</td></tr>
+    <tr><td>International Business Manager</td><td>International Business</td><td>₹5–10 LPA</td></tr>
+    <tr><td>Management Trainee</td><td>General / Any</td><td>₹4–6 LPA</td></tr>
+  </tbody>
+</table>
+
+<p>Salary outcomes for working professionals who already have 3–5 years of experience before the program tend to be at the higher end of these ranges. The degree combined with existing work experience is what drives the better outcomes. Not the degree alone.</p>
+
+<h2>Top Hiring Companies</h2>
+
+<p>Past LPU Online MBA graduates have been placed with: Amazon, Wipro, TCS, Cognizant, HDFC Bank, ICICI Bank, Tech Mahindra, Deloitte, Flipkart, Paytm, OYO, Kotak, Asian Paints, Infosys, HCL Technologies, and JP Morgan, among others. The sectors are primarily IT, BFSI, consulting, e-commerce, and FMCG.</p>
+
+<div class="callout-key">
+  <p><strong>Honest note:</strong> These hiring company names appear in LPU's placement marketing and relate to all LPU programs including on-campus. The online MBA placement pool is different. Use these names as a signal of which sectors LPU has industry relationships with. Not as a guarantee of where online MBA students specifically land.</p>
+</div>
+
+<h2>Admission Process: Step by Step</h2>
+
+<table>
+  <tbody>
+    <tr><td><strong>Step 1</strong></td><td>Visit lpuonline.com and select the MBA program</td></tr>
+    <tr><td><strong>Step 2</strong></td><td>Register with name, email, and phone number</td></tr>
+    <tr><td><strong>Step 3</strong></td><td>Fill the online application form with personal and academic details</td></tr>
+    <tr><td><strong>Step 4</strong></td><td>Upload scanned documents: marksheets, degree certificate, Aadhaar, photo, signature, ABC ID</td></tr>
+    <tr><td><strong>Step 5</strong></td><td>Pay the application fee of ₹1,500 via debit/credit card, UPI, or net banking</td></tr>
+    <tr><td><strong>Step 6</strong></td><td>University verifies documents and sends admission confirmation by email</td></tr>
+    <tr><td><strong>Step 7</strong></td><td>Receive LMS login credentials and get access to eConnect portal</td></tr>
+  </tbody>
+</table>
+
+<p>No entrance exam required. Admissions are merit-based (graduation marks). Two sessions per year: January and July. The July session application window typically opens in May–June.</p>
+
+<h2>Who Should Consider LPU Online MBA</h2>
+
+<p>It works well for working professionals wanting dual specialisation at under ₹1.5 lakh. It works well for people who need WES recognition for international plans. It works well for anyone who wants a NAAC A++ degree without paying more than most competitors in this price band charge. The LMS is good, the accreditations check out, and the fee structure is genuinely manageable.</p>
+
+<p>It is less suited to people who need a lot of academic hand-holding, or who are expecting placement outcomes equivalent to a full-time program. The program rewards people who manage their own learning. Passive enrollment rarely ends well in any online MBA, but LPU's format makes that especially clear.</p>
+
+<div class="callout-warning">
+  <p><strong>Watch out for:</strong> The ₹2,00,000 list price versus the discounted ₹1,46,240 can confuse applicants who see different figures on different websites. Always confirm the exact fee applicable at your time of application, in writing, before paying the first instalment.</p>
+</div>
+
+<h2>The Verdict</h2>
+
+<p>LPU Online MBA is a solid program at a price that makes sense for most working professionals. The dual specialisation, the WES recognition, and the LMS quality are real advantages over most programs in this bracket. Placement support exists but it will not replace your own effort in using the degree.</p>
+
+<p>At ₹1,46,240 with semester or EMI payment, the financial commitment is limited. The return depends on what you do once you have it. The degree gives you credibility and structure. What you build with that is still yours to figure out.</p>
+
+<div class="cta-block">
+  <h3>Considering LPU Online MBA?</h3>
+  <p class="sub">Get a personalised fee breakdown, EMI options, and a comparison with 2–3 alternatives at similar price points. One call, no pressure.</p>
+  <form class="cta-form" action="https://formspree.io/f/mojpvgwz" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="tel" name="phone" placeholder="Phone Number" required />
+    <input type="text" name="experience" placeholder="Years of Work Experience" required />
+    <input type="hidden" name="_subject" value="New Lead: LPU Online MBA Review Blog" />
+    <input type="hidden" name="_next" value="https://edifyedu.in" />
+    <button type="submit">Get a Free Counselling Call</button>
+  </form>
+  <p class="cta-note">We respond within 24 hours. Your number won't be shared or spammed.</p>
+</div>
+
+<div class="ilink">📘 Comparing LPU with Chandigarh, Amity or others before deciding? <a href="/compare">Use the Compare Tool</a> — fees, accreditations, and syllabus side by side.</div>
+
+<div class="ilink">📘 Want a checklist of what to verify before enrolling in any online MBA? <a href="/blog/online-mba-for-working-professionals-india">The working professionals guide covers all of it.</a></div>
+
+<div class="ilink">📘 Not sure if an online MBA is the right call at all? <a href="/blog/is-online-mba-worth-it-2026">Is Online MBA Worth It in 2026?</a> covers the ROI numbers honestly.</div>
+
+<div class="ilink">💰 Looking at other universities in the same price range? <a href="/blog/affordable-online-mba-india-2026">Best Affordable Online MBA in India 2026</a> — programs from ₹54,000 compared.</div>
     `,
   },
 
