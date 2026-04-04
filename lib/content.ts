@@ -1424,7 +1424,7 @@ export interface UniversitySyllabus {
 }
 
 export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
-  'amet-universi||B.Com': {
+  'amet-university-online||B.Com': {
     sem1: 'Financial Accounting, Micro Economics, Business',
     sem2: 'Corporate Accounting, Macro Economics, Business',
     sem3: 'Advanced Corporate Accounting, Cost Accounting,',
@@ -1436,7 +1436,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Compare 5 term insurance plans and present a recommendation report', 'Create a bank account opening checklist and KYC document list', 'Analyse a bank\'s NPA data and present findings', 'Build a mutual fund SIP calculator in Excel', 'Design a simple insurance needs analysis questionnaire', 'Research and compare 3 NBFCs and their products'],
     edifyInternships: ['Banking Operations Intern', 'Insurance Advisor Intern', 'Fintech Intern', 'Customer Service Intern', 'Apply via: Internshala', 'LinkedIn']
   },
-  'arka-jain-universi||MBA': {
+  'arka-jain-university-online||MBA': {
     sem1: 'Business Economics | Managerial Effectiveness & Ethics | Accounting and Finance | Organizational Behavior & Human Resources Management | Quantitative Techniques for Business Decisions',
     sem2: 'Entrepreneurship | Marketing Management | Banking, Financial Services and Insurance | Corporate Law | Business Analytics',
     sem3: 'Business Research Methods | Operations Management | Finance Spec: Direct and Indirect Taxes | Investment Analysis & Portfolio Management | Fintech – Foundations & Applications | Marketing Spec: Consumer Behavior | Integrated Marketing Communications | Sales and Distribution Manag',
@@ -1448,7 +1448,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Run a live Google Search Ad campaign with ₹500 budget', 'Build a complete SEO strategy for a local business website', 'Create a 30-day Instagram content calendar with copy + visuals', 'Write 5 email marketing sequences for a hypothetical brand', 'Build a WordPress landing page with CTA and lead form', 'Measure ROI of a hypothetical social media campaign'],
     edifyInternships: ['Digital Marketing Intern', 'SEO Intern', 'Social Media Intern', 'Content Creator Intern', 'Google Ads Intern', 'Email Marketing Intern']
   },
-  'alagappa-universi||B.Com': {
+  'alagappa-university-online||B.Com': {
     sem1: 'Financial Accounting - I, Business Management,',
     sem2: 'Financial Accounting - II, Marketing Management,',
     sem3: 'Corporate Accounting - I, Business Law, Business',
@@ -1457,7 +1457,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a set of books of accounts for a small business in Tally', 'File a mock GST return using practice data', 'Analyse a company\'s annual report', 'Build a personal budget tracker and investment planner in Excel', 'Prepare a cost-benefit analysis for a hypothetical business decision', 'Create a comparison of 2 mutual funds using NAV data'],
     edifyInternships: ['Accounts Intern', 'Tax Filing Intern', 'Audit Intern', 'Finance Assistant Intern', 'Banking Operations Intern', 'Apply via: Internshala']
   },
-  'aligarh-muslim-universi||B.A': {
+  'aligarh-muslim-university-online||B.A': {
     sem1: 'Microeconomics-I, Indian Economy-I, English',
     sem2: 'Microeconomics-II, Indian Economy-II, English',
     sem3: 'Macroeconomics-I, Statistical Methods for',
@@ -1469,7 +1469,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Analyse India\'s trade data from DGCI&S database', 'Build a price index tracker for essential commodities', 'Write a research paper on a microeconomics or macroeconomics topic', 'Create a data visualisation report using public economic data', 'Model a simple supply-demand scenario with elasticity calculations', 'TIP: Complete at least 2 projects and upload them to GitHub or Behance. Real pro'],
     edifyInternships: ['Economic Research Intern', 'Data Analyst Intern', 'Policy Research Intern', 'Finance Intern', 'Apply via: LinkedIn', 'NCAER']
   },
-  'alliance-universi||B.Com': {
+  'alliance-university-online||B.Com': {
     sem1: 'Foundation of Business English, Principles and',
     sem2: 'English for Business Communication, Hindi / Kannada',
     sem3: 'International Business, Economic Analysis for',
@@ -1478,7 +1478,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a complete P&L and Balance Sheet for a mock company in Tally', 'Build a receivables ageing report in Excel', 'Prepare a bank reconciliation statement', 'Create a 5-year financial projection for a startup', 'Design a GST compliance calendar', 'Analyse and present ratio analysis of a listed company'],
     edifyInternships: ['Accounts Executive Intern', 'Taxation Intern', 'Audit Intern', 'Finance Intern', 'Apply via: Internshala', 'CA firms']
   },
-  'amity||B.Com': {
+  'amity-university-online||B.Com': {
     sem1: 'Financial Accounting | Business Mathematics | Business Communication | Micro Economics | IT Fundamentals | Environmental Studies | Detailed sem-wise subjects available in Google Drive syllabus folder (amityonline.com – JS-rendered; Drive folder shared by user). Website pages conf',
     sem2: 'Cost Accounting | Business Law | Business Statistics | Macro Economics | Taxation Basics | Detailed sem-wise subjects available in Google Drive syllabus folder (amityonline.com – JS-rendered; Drive folder shared by user). Website pages confirm program structure but subjects are i',
     sem3: 'Corporate Accounting | Income Tax | Management Accounting | Financial Management | Auditing | Detailed sem-wise subjects available in Google Drive syllabus folder (amityonline.com – JS-rendered; Drive folder shared by user). Website pages confirm program structure but subjects ar',
@@ -1490,7 +1490,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a complete P&L and Balance Sheet for a mock company in Tally', 'Build a receivables ageing report in Excel', 'Prepare a bank reconciliation statement', 'Create a 5-year financial projection for a startup', 'Design a GST compliance calendar', 'Analyse and present ratio analysis of a listed company'],
     edifyInternships: ['Accounts Executive Intern', 'Taxation Intern', 'Audit Intern', 'Finance Intern', 'Apply via: Internshala', 'CA firms']
   },
-  'amrita-vishwa-vidyapee||B.Com': {
+  'amrita-vishwa-vidyapeetham-online||B.Com': {
     sem1: 'Communicative English, Financial Accounting,',
     sem2: 'Professional Communication, Management Accounting,',
     sem3: 'Corporate Accounting, Business Law, Banking and',
@@ -1502,7 +1502,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a complete P&L and Balance Sheet for a mock company in Tally', 'Build a receivables ageing report in Excel', 'Prepare a bank reconciliation statement', 'Create a 5-year financial projection for a startup', 'Design a GST compliance calendar', 'Analyse and present ratio analysis of a listed company'],
     edifyInternships: ['Accounts Executive Intern', 'Taxation Intern', 'Audit Intern', 'Finance Intern', 'Apply via: Internshala', 'CA firms']
   },
-  'andhra-universi||M.A': {
+  'andhra-university-online||M.A': {
     sem1: '• General Sociology | • Classical Sociological Thought | • Sociology of India | • Research Methodology',
     sem2: '• Modern Sociological Theories | • Social Movements in India | • Rural Sociology | • Sociology of Development',
     sem3: '• Urban Sociology | • Sociology of Health | • Gender and Society | • Social Problems in India',
@@ -1514,7 +1514,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Conduct a field study on a social issue in your local community', 'Write a sociological analysis of a social media phenomenon', 'Design and administer a 20-person survey on gender equality awareness', 'Research and present a case study on social mobility in urban India', 'Write a 2,000-word paper on caste discrimination in education', 'Analyse census data trends using Excel'],
     edifyInternships: ['Social Research Intern', 'NGO Field Work Intern', 'Community Development Intern', 'CSR Research Intern', 'Government Social Welfare Intern', 'Apply via: LinkedIn']
   },
-  'anna-universi||MBA': {
+  'anna-university-online||MBA': {
     sem1: 'Management Concepts, Statistics for Management,',
     sem2: 'Marketing Management, Human Resource Management,',
     sem3: 'Strategic Management, International Business',
@@ -1525,7 +1525,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Write a comprehensive business strategy report for any Indian company', 'Build a cross-functional business improvement proposal', 'Create a SWOT + Porter\'s Five Forces analysis for an industry', 'Design a business dashboard covering key metrics across departments', 'Prepare a stakeholder communication plan for a company initiative', 'Conduct a market feasibility study for a new product'],
     edifyInternships: ['Management Trainee Intern', 'Business Development Intern', 'Strategy Intern', 'Consulting Intern', 'Operations/HR/Finance rotation Intern', 'Apply via: LinkedIn']
   },
-  'assam-down-town-universi||BBA': {
+  'assam-don-bosco-university-online||BBA': {
     sem1: 'Management Concepts & Practices | Fundamentals of Financial Accounting | Business Economics | Communicative English | Entrepreneurship Principles & Practices | Understanding India | Environmental Studies',
     sem2: 'Ethics, Values & CSR | Marketing Research | Indian Economy | Basics of Quantitative Techniques | Organizational Behaviour | Computer Fundamentals | Service-Learning Project',
     sem3: 'Principles of Marketing | Fundamentals of HRM | Introduction to Financial Management | Emotional Intelligence | Managerial Communication | Minor Internship',
@@ -1537,7 +1537,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a social media marketing plan for a local restaurant/business', 'Design 10 Instagram posts for a brand using Canva', 'Write 5 blog posts for a hypothetical company website', 'Conduct a mini market survey and present insights', 'Run a free Google keyword research for a local business', 'Build a basic email newsletter template in Mailchimp'],
     edifyInternships: ['Social Media Intern', 'Digital Marketing Intern', 'Content Writing Intern', 'Marketing Assistant Intern', 'Field Sales Intern', 'Apply via: Internshala']
   },
-  'bs-abdur-rahman-institut||MBA': {
+  'bs-abdur-rahman-university-online||MBA': {
     sem1: 'Management Concepts, Managerial Economics,',
     sem2: 'Strategic Management, Human Resources Management,',
     sem3: 'Specialisation Elective I, Specialisation Elective',
@@ -1546,7 +1546,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Analyse India\'s trade data from DGCI&S database', 'Build a price index tracker for essential commodities', 'Write a research paper on a microeconomics or macroeconomics topic', 'Create a data visualisation report using public economic data', 'Model a simple supply-demand scenario with elasticity calculations', 'TIP: Complete at least 2 projects and upload them to GitHub or Behance. Real pro'],
     edifyInternships: ['Economic Research Intern', 'Data Analyst Intern', 'Policy Research Intern', 'Finance Intern', 'Apply via: LinkedIn', 'NCAER']
   },
-  'bharathi-universi||BBA': {
+  'bharath-university-online||BBA': {
     sem1: 'Language - I, English - I, Principles of',
     sem2: 'Language - II, English - II, Organizational',
     sem3: 'Financial Accounting, Production and Operations',
@@ -1557,14 +1557,14 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a business plan for a small startup idea', 'Build a simple sales tracker in Excel', 'Prepare a SWOT analysis for a company you admire', 'Design a professional LinkedIn profile and connect with 50 industry professional', 'Present a 5-minute business pitch for a hypothetical product', 'Write a market research report on an industry'],
     edifyInternships: ['Business Development Intern', 'Operations Intern', 'Sales Intern', 'Customer Service Intern', 'Admin Intern', 'Management Trainee Intern']
   },
-  'bharathidasan-uni||B.A': {
+  'bharathidasan-university-online||B.A': {
     research: 'Not Mentioned.',
     capstone: 'Project Work included in final year.',
     edifySkills: ['Academic writing & research skills', 'Content writing & copywriting', 'SEO content writing basics', 'Editing & proofreading', 'Digital publishing platforms', 'Scriptwriting basics', 'IELTS/TOEFL preparation', 'Translation tools'],
     edifyProjects: ['Write 5 long-form articles on literary or contemporary topics', 'Create a literary analysis research paper', 'Start a blog or Substack newsletter on literature/culture', 'Write a short screenplay or stage play', 'Translate a short story from regional language to English', 'Build a portfolio of 10 content writing samples for different industries'],
     edifyInternships: ['Content Writer Intern', 'Editorial Intern', 'Copywriting Intern', 'Academic Writing Intern', 'Translation Intern', 'Publishing Intern']
   },
-  'bharati-vidyapee-universi||BBA': {
+  'bharati-vidyapeeth-university-online||BBA': {
     sem1: 'Core management foundation subjects (Sem 1–4)',
     sem2: 'Marketing | Finance | HR | Analytics foundation subjects (Sem 1–4)',
     sem3: 'Specialisation introduction (Sem 3–4) | Consumer Behaviour | Services Marketing | Sales & Distribution | HR Planning | Labour Laws | Investment Analysis',
@@ -1576,7 +1576,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a social media marketing plan for a local restaurant/business', 'Design 10 Instagram posts for a brand using Canva', 'Write 5 blog posts for a hypothetical company website', 'Conduct a mini market survey and present insights', 'Run a free Google keyword research for a local business', 'Build a basic email newsletter template in Mailchimp'],
     edifyInternships: ['Social Media Intern', 'Digital Marketing Intern', 'Content Writing Intern', 'Marketing Assistant Intern', 'Field Sales Intern', 'Apply via: Internshala']
   },
-  'birla-institut-of-technolo||MBA': {
+  'bits-pilani-work-integrated-online||MBA': {
     sem1: 'Management Principles & Practices, Organizational',
     sem2: 'Marketing Management, Human Resource Management,',
     sem3: 'Business Ethics and Corporate Governance,',
@@ -1586,7 +1586,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Build a digital marketing campaign for a local SME', 'Create a brand audit report for a FMCG brand', 'Design a social media content calendar for 30 days', 'Conduct a competitor analysis using free tools', 'Write a go-to-market strategy for a hypothetical product launch', 'Run a Google Ads simulation using Google Skillshop'],
     edifyInternships: ['Digital Marketing Intern', 'SEO Analyst Intern', 'Brand Management Intern', 'Market Research Intern', 'Social Media Manager Intern', 'Content Marketing Intern']
   },
-  'charotar-universi-of-science||BBA': {
+  'charusat-university-online||BBA': {
     sem1: 'Communicative English, Principles and Practices of',
     sem2: 'Fundamentals of Economics, Quantitative Techniques,',
     sem3: 'Financial Management, Human Resource Management,',
@@ -1595,7 +1595,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a social media marketing plan for a local restaurant/business', 'Design 10 Instagram posts for a brand using Canva', 'Write 5 blog posts for a hypothetical company website', 'Conduct a mini market survey and present insights', 'Run a free Google keyword research for a local business', 'Build a basic email newsletter template in Mailchimp'],
     edifyInternships: ['Social Media Intern', 'Digital Marketing Intern', 'Content Writing Intern', 'Marketing Assistant Intern', 'Field Sales Intern', 'Apply via: Internshala']
   },
-  'universi-of-himachal-pradesh||M.A': {
+  'central-university-himachal-pradesh-online||M.A': {
     sem1: 'Microeconomic Theory, Mathematics for Economists,',
     sem2: 'Macroeconomic Theory, Development Economics,',
     sem3: 'Public Economics, Research Methodology for Social',
@@ -1605,7 +1605,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Analyse GDP data of India vs BRICS countries over 10 years', 'Build a price elasticity model for a product', 'Research and present monetary policy impact on inflation in India', 'Conduct a cost-benefit analysis for a government infrastructure project', 'Write a research paper on unemployment trends in India', 'Build an interactive economic data dashboard in Tableau'],
     edifyInternships: ['Economic Research Intern', 'Policy Analysis Intern', 'Data Analyst Intern', 'Think Tank Intern', 'Government Research Intern', 'Apply via: LinkedIn']
   },
-  'centurio-universi-of-technolo||MBA': {
+  'centurion-university-online||MBA': {
     sem1: 'Quantitative Techniques, Micro Economics,',
     sem2: 'Economic Environment of Business, Indian Society',
     sem3: 'Project Management, Introduction to PLM5 (Platforms',
@@ -1613,7 +1613,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Analyse India\'s trade data from DGCI&S database', 'Build a price index tracker for essential commodities', 'Write a research paper on a microeconomics or macroeconomics topic', 'Create a data visualisation report using public economic data', 'Model a simple supply-demand scenario with elasticity calculations', 'TIP: Complete at least 2 projects and upload them to GitHub or Behance. Real pro'],
     edifyInternships: ['Economic Research Intern', 'Data Analyst Intern', 'Policy Research Intern', 'Finance Intern', 'Apply via: LinkedIn', 'NCAER']
   },
-  'chandigarh||BBA': {
+  'chandigarh-university-online||BBA': {
     sem1: 'Microeconomics, Management Principles & Organizational Behaviour, Communication Skills, Introduction to Business Analytics & Computer Programming, Basic to Advanced Excel, Statistical Methods, Data Visualization, Machine Learning for Business, Business Intelligence',
     sem2: 'Basic to Advanced Excel, Statistical Methods, Data Visualization, Machine Learning for Business, Business Intelligence',
     sem56: 'Business Analytics specialization with data-focused electives; offered in collaboration with KPMG',
@@ -1623,7 +1623,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a business plan for a small startup idea', 'Build a simple sales tracker in Excel', 'Prepare a SWOT analysis for a company you admire', 'Design a professional LinkedIn profile and connect with 50 industry professional', 'Present a 5-minute business pitch for a hypothetical product', 'Write a market research report on an industry'],
     edifyInternships: ['Business Development Intern', 'Operations Intern', 'Sales Intern', 'Customer Service Intern', 'Admin Intern', 'Management Trainee Intern']
   },
-  'chatrapa-shahuji-maharaj-unive||B.Com': {
+  'chhatrapati-shahu-ji-maharaj-university-online||B.Com': {
     sem1: '⚠️ Syllabus not available',
     sem2: '⚠️',
     sem3: '⚠️',
@@ -1633,7 +1633,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a set of books of accounts for a small business in Tally', 'File a mock GST return using practice data', 'Analyse a company\'s annual report', 'Build a personal budget tracker and investment planner in Excel', 'Prepare a cost-benefit analysis for a hypothetical business decision', 'Create a comparison of 2 mutual funds using NAV data'],
     edifyInternships: ['Accounts Intern', 'Tax Filing Intern', 'Audit Intern', 'Finance Assistant Intern', 'Banking Operations Intern', 'Apply via: Internshala']
   },
-  'chitkara-universi||B.Com': {
+  'chitkara-university-online||B.Com': {
     sem1: 'Financial Accounting | Business Laws | Microeconomics | Cost Accounting | Banking & Insurance | Business Statistics',
     sem2: 'Corporate Accounting | Business Communication | Macroeconomics | Auditing Basics | IT for Commerce | Soft Skills',
     sem3: 'Corporate Accounting | Income Tax Law | Strategic Management | Investment Banking | Financial Institutions & Markets | Forensic Accounting',
@@ -1645,7 +1645,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Compare 5 term insurance plans and present a recommendation report', 'Create a bank account opening checklist and KYC document list', 'Analyse a bank\'s NPA data and present findings', 'Build a mutual fund SIP calculator in Excel', 'Design a simple insurance needs analysis questionnaire', 'Research and compare 3 NBFCs and their products'],
     edifyInternships: ['Banking Operations Intern', 'Insurance Advisor Intern', 'Fintech Intern', 'Customer Service Intern', 'Apply via: Internshala', 'LinkedIn']
   },
-  'christ-deemed-to-be||B.Com': {
+  'christ-university-online||B.Com': {
     sem1: 'Fundamentals of Accounting, Financial Accounting',
     sem2: 'Auditing, Financial Management, Corporate Law.',
     sem3: 'Management Accounting, Financial Markets and',
@@ -1656,7 +1656,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a complete P&L and Balance Sheet for a mock company in Tally', 'Build a receivables ageing report in Excel', 'Prepare a bank reconciliation statement', 'Create a 5-year financial projection for a startup', 'Design a GST compliance calendar', 'Analyse and present ratio analysis of a listed company'],
     edifyInternships: ['Accounts Executive Intern', 'Taxation Intern', 'Audit Intern', 'Finance Intern', 'Apply via: Internshala', 'CA firms']
   },
-  'dypatil||BBA': {
+  'dy-patil-university-online||BBA': {
     sem1: 'Principles of Management, Business Communication, Financial Accounting, Business Economics, Quantitative Methods, IT for Business',
     sem2: 'Marketing Management, HRM Fundamentals, Cost Accounting, Business Law, Organizational Behaviour, Business Statistics',
     sem3: 'Aviation Industry Overview, Airport Operations Management, Airline Management, Aviation Safety & Regulations',
@@ -1668,7 +1668,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a business plan for a small startup idea', 'Build a simple sales tracker in Excel', 'Prepare a SWOT analysis for a company you admire', 'Design a professional LinkedIn profile and connect with 50 industry professional', 'Present a 5-minute business pitch for a hypothetical product', 'Write a market research report on an industry'],
     edifyInternships: ['Business Development Intern', 'Operations Intern', 'Sales Intern', 'Customer Service Intern', 'Admin Intern', 'Management Trainee Intern']
   },
-  'datta-meghe-institut-of||MBA': {
+  'datta-meghe-university-online||MBA': {
     sem1: 'Managerial Economics, Financial Accounting &',
     sem2: 'Operation Management, Financial Management, Human',
     sem3: 'Corporate Strategy, Entrepreneurship Management,',
@@ -1679,7 +1679,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Build a digital marketing campaign for a local SME', 'Create a brand audit report for a FMCG brand', 'Design a social media content calendar for 30 days', 'Conduct a competitor analysis using free tools', 'Write a go-to-market strategy for a hypothetical product launch', 'Run a Google Ads simulation using Google Skillshop'],
     edifyInternships: ['Digital Marketing Intern', 'SEO Analyst Intern', 'Brand Management Intern', 'Market Research Intern', 'Social Media Manager Intern', 'Content Marketing Intern']
   },
-  'dayal-bagh-educatio-institut||B.A': {
+  'dayalbagh-educational-institute-online||B.A': {
     sem1: '⚠️ Syllabus not available',
     sem2: '⚠️',
     sem3: '⚠️',
@@ -1689,7 +1689,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Start a blog on a topic you\'re passionate about', 'Create a comprehensive report on a social issue in your community', 'Build a curated social media account around a topic', 'Conduct a 10-person interview survey and write a findings report', 'Create a Wikipedia-style article on a regional topic', 'Build a professional LinkedIn presence with 200+ connections'],
     edifyInternships: ['Content Writer Intern', 'Social Media Intern', 'Research Assistant Intern', 'NGO Field Intern', 'Communications Intern', 'PR Intern']
   },
-  'dayanand-sagar-universi||B.Com': {
+  'dayananda-sagar-university-online||B.Com': {
     sem1: 'Business Accounting, Managerial Economics,',
     sem2: 'Financial Accounting, Business Laws, Business',
     sem3: 'Corporate Accounting, Advanced Financial',
@@ -1700,7 +1700,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a set of books of accounts for a small business in Tally', 'File a mock GST return using practice data', 'Analyse a company\'s annual report', 'Build a personal budget tracker and investment planner in Excel', 'Prepare a cost-benefit analysis for a hypothetical business decision', 'Create a comparison of 2 mutual funds using NAV data'],
     edifyInternships: ['Accounts Intern', 'Tax Filing Intern', 'Audit Intern', 'Finance Assistant Intern', 'Banking Operations Intern', 'Apply via: Internshala']
   },
-  'desh-bhagat-universi||B.Com': {
+  'desh-bhagat-university-online||B.Com': {
     sem1: 'Introduction to Business, Principles of Economics,',
     sem2: 'Corporate Accounting, Business Environment,',
     sem3: 'Cost Accounting, Human Resource Management,',
@@ -1711,7 +1711,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a complete P&L and Balance Sheet for a mock company in Tally', 'Build a receivables ageing report in Excel', 'Prepare a bank reconciliation statement', 'Create a 5-year financial projection for a startup', 'Design a GST compliance calendar', 'Analyse and present ratio analysis of a listed company'],
     edifyInternships: ['Accounts Executive Intern', 'Taxation Intern', 'Audit Intern', 'Finance Intern', 'Apply via: Internshala', 'CA firms']
   },
-  'dr-babasahe-ambedkar-open||B.Com': {
+  'dr-babasaheb-ambedkar-open-university-online||B.Com': {
     sem1: 'Business Organization, Financial Accounting,',
     sem2: 'Corporate Accounting, Business Law, Company Law,',
     sem3: 'Cost Accounting, Income Tax, Business Mathematics,',
@@ -1722,7 +1722,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Compare 5 term insurance plans and present a recommendation report', 'Create a bank account opening checklist and KYC document list', 'Analyse a bank\'s NPA data and present findings', 'Build a mutual fund SIP calculator in Excel', 'Design a simple insurance needs analysis questionnaire', 'Research and compare 3 NBFCs and their products'],
     edifyInternships: ['Banking Operations Intern', 'Insurance Advisor Intern', 'Fintech Intern', 'Customer Service Intern', 'Apply via: Internshala', 'LinkedIn']
   },
-  'dr-babasahe-ambedkar-open||M.A': {
+  'dr-babasaheb-ambedkar-open-university-online||M.A': {
     sem1: 'Microeconomics -- I, Macroeconomics -- I,',
     sem2: 'Microeconomics- II, Macroeconomics- II,',
     sem3: 'International Economics, Quantitative Methods in',
@@ -1733,7 +1733,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Analyse GDP data of India vs BRICS countries over 10 years', 'Build a price elasticity model for a product', 'Research and present monetary policy impact on inflation in India', 'Conduct a cost-benefit analysis for a government infrastructure project', 'Write a research paper on unemployment trends in India', 'Build an interactive economic data dashboard in Tableau'],
     edifyInternships: ['Economic Research Intern', 'Policy Analysis Intern', 'Data Analyst Intern', 'Think Tank Intern', 'Government Research Intern', 'Apply via: LinkedIn']
   },
-  'dr-dy-patil-vidyapeeth||MBA': {
+  'dr-dy-patil-vidyapeeth-online||MBA': {
     sem1: 'Principles & Practices of Management | Organizational Behaviour | Management Accounting | Managerial Economics | Business Communication | Research Methodology',
     sem2: 'Human Resource Management | Marketing Management | Financial Management | Operations Management | Management Information System | Strategic Management & Business Policy',
     sem3: 'Artificial Intelligence for Business, Machine Learning Fundamentals, Data Science for Managers, AI Strategy & Ethics',
@@ -1744,7 +1744,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Build a customer churn prediction model using Python', 'Create an interactive sales dashboard in Tableau/Power BI', 'Perform exploratory data analysis on a real public dataset', 'Build a recommendation system for an e-commerce store', 'Predict stock prices using Python', 'Create a regression model for house price prediction'],
     edifyInternships: ['Data Analyst Intern', 'Business Analyst Intern', 'BI Analyst Intern', 'ML Engineer Intern', 'Analytics Intern', 'Apply via: LinkedIn']
   },
-  'dr-mgr-educatio-and||MBA': {
+  'dr-mgr-educational-research-institute-online||MBA': {
     sem1: 'Principles of Management | Managerial Economics | Statistical Methods | Basic Accounting | Business Communication',
     sem2: 'Management Accounting | Optimization Techniques | Marketing Management | Human Resource Management | Computer Applications for Business',
     sem3: 'Research Methodology | Strategic Management | International Business Management | Entrepreneurship Development | Specialisation Electives I–III',
@@ -1756,12 +1756,12 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Build a 3-statement financial model in Excel', 'Create a stock valuation report using DCF analysis', 'Analyse real annual reports of Reliance / TCS / HDFC Bank', 'Build a personal investment portfolio tracker in Excel', 'Research and present a mutual fund comparison for a hypothetical investor', 'Model a startup funding scenario using Excel'],
     edifyInternships: ['Financial Analyst Intern', 'Investment Research Intern', 'Credit Analyst Intern', 'Risk Analyst Intern', 'Accounts & Finance Intern', 'Equity Research Intern']
   },
-  'gla-universi||MBA': {
+  'gla-university-online||MBA': {
     edifySkills: ['NISM Series certifications', 'Credit analysis basics', 'BFSI domain knowledge', 'Financial modelling', 'Python for finance basics', 'RBI regulations overview', 'Fintech fundamentals', 'Bloomberg concepts'],
     edifyProjects: ['Analyse the credit risk of a hypothetical SME loan application', 'Build a loan EMI calculator and amortisation schedule in Excel', 'Research and compare 5 Indian banking stocks using ratio analysis', 'Create a fintech startup pitch deck', 'Model a bank\'s NPA recovery strategy', 'Design a KYC/AML compliance checklist'],
     edifyInternships: ['Banking Operations Intern', 'Credit Analyst Intern', 'Investment Banking Intern', 'Fintech Intern', 'Relationship Manager Intern', 'Apply via: LinkedIn']
   },
-  'gls-universi||B.Com': {
+  'gls-university-online||B.Com': {
     sem1: 'Fundamentals of Accounting - I, Language',
     sem2: 'Fundamentals of Accounting - II, Computer',
     sem3: 'Cost Accounting - I, Direct and Indirect Taxation -',
@@ -1771,7 +1771,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a complete P&L and Balance Sheet for a mock company in Tally', 'Build a receivables ageing report in Excel', 'Prepare a bank reconciliation statement', 'Create a 5-year financial projection for a startup', 'Design a GST compliance calendar', 'Analyse and present ratio analysis of a listed company'],
     edifyInternships: ['Accounts Executive Intern', 'Taxation Intern', 'Audit Intern', 'Finance Intern', 'Apply via: Internshala', 'CA firms']
   },
-  'galgotia-universi||BBA': {
+  'galgotias-university-online||BBA': {
     sem1: 'Financial Accounting | Principles of Management | Business Environment | Marketing Theory & Practices | Business Statistics | Communicative English | Office Automation Tool',
     sem2: 'Organisational Behaviour | Management & Cost Accounting | Production & Operations Management | IT Tools for Decision Making | Design Thinking | Business Economics | Business Communication 1',
     sem3: 'Financial Management | Business Communication 2 | HRM | Introduction to Business Analytics | Supply Chain Management | E-Business | Environmental Studies',
@@ -1783,7 +1783,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a personal financial plan', 'Analyse a company\'s annual report', 'Track and chart stock prices of 5 companies over 3 months', 'Prepare a mock GST return using practice data', 'Create a budget plan for a college-level event', 'Build a simple loan repayment calculator in Excel'],
     edifyInternships: ['Accounts Intern', 'Finance Assistant Intern', 'Tax Filing Intern', 'Banking Operations Intern', 'Insurance Intern', 'Apply via: Internshala']
   },
-  'ganpat-universi||BBA': {
+  'ganpat-university-online||BBA': {
     sem1: 'Fundamentals of Management, Foundation of',
     sem2: 'Marketing Management, Financial Statement Analysis,',
     sem3: 'Financial Management, Human Resource Management,',
@@ -1793,7 +1793,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a social media marketing plan for a local restaurant/business', 'Design 10 Instagram posts for a brand using Canva', 'Write 5 blog posts for a hypothetical company website', 'Conduct a mini market survey and present insights', 'Run a free Google keyword research for a local business', 'Build a basic email newsletter template in Mailchimp'],
     edifyInternships: ['Social Media Intern', 'Digital Marketing Intern', 'Content Writing Intern', 'Marketing Assistant Intern', 'Field Sales Intern', 'Apply via: Internshala']
   },
-  'gujarat-technolo-universi||MBA': {
+  'gujarat-technological-university-online||MBA': {
     sem1: 'Information Technology for Business, Principles of',
     sem2: 'Financial Management, Human Resource Management,',
     sem3: 'Strategic Management, Global Business Strategy,',
@@ -1804,7 +1804,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Research export opportunities for an Indian SME to enter one foreign market', 'Create an import-export documentation package for a hypothetical trade', 'Analyse India\'s FTA with a specific country and its business implications', 'Design a market entry strategy for an Indian brand entering UAE/Singapore', 'Compare Incoterms for 3 different trade scenarios', 'Build an international pricing strategy for a product'],
     edifyInternships: ['Export-Import Intern', 'International Business Development Intern', 'Trade Finance Intern', 'Global Sourcing Intern', 'Apply via: LinkedIn', 'EEPC India']
   },
-  'gujarat-universi||B.A': {
+  'gujarat-university-online||B.A': {
     sem1: 'Prose, Poetry, Indian Writing in English, Reading',
     sem2: 'The English Novel: Background, History and',
     sem3: 'Poetry and Poetic Forms, Comparative Literature,',
@@ -1815,7 +1815,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Write 5 long-form articles on literary or contemporary topics', 'Create a literary analysis research paper', 'Start a blog or Substack newsletter on literature/culture', 'Write a short screenplay or stage play', 'Translate a short story from regional language to English', 'Build a portfolio of 10 content writing samples for different industries'],
     edifyInternships: ['Content Writer Intern', 'Editorial Intern', 'Copywriting Intern', 'Academic Writing Intern', 'Translation Intern', 'Publishing Intern']
   },
-  'guru-ghasidas-vishwavi||B.Com': {
+  'guru-ghasidas-vishwavidyalaya-online||B.Com': {
     sem1: 'Financial Accounting, Business Laws, Financial',
     sem2: 'Corporate Accounting, Business Organization and',
     sem3: 'Financial Management, Income-tax Law and Practice,',
@@ -1826,12 +1826,12 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a complete P&L and Balance Sheet for a mock company in Tally', 'Build a receivables ageing report in Excel', 'Prepare a bank reconciliation statement', 'Create a 5-year financial projection for a startup', 'Design a GST compliance calendar', 'Analyse and present ratio analysis of a listed company'],
     edifyInternships: ['Accounts Executive Intern', 'Taxation Intern', 'Audit Intern', 'Finance Intern', 'Apply via: Internshala', 'CA firms']
   },
-  'guru-kashi-universi||MCA': {
+  'guru-kashi-university-online||MCA': {
     edifySkills: ['Core programming', 'Data Structures & Algorithms', 'DBMS & SQL', 'Web technologies basics', 'Git/GitHub', 'Linux command line', 'Object-oriented programming concepts', 'Problem solving'],
     edifyProjects: ['Build a library/inventory management system', 'Create a student grade management system in Java/Python', 'Build a simple REST API for a todo app', 'Design and implement a relational database for a hospital', 'Create a basic Android app', 'Build a simple chatbot using Python'],
     edifyInternships: ['Software Developer Intern', 'Web Developer Intern', 'Java/Python Developer Intern', 'Database Analyst Intern', 'IT Support Intern', 'Apply via: LinkedIn']
   },
-  'guru-nanak-dev-universi||M.Com': {
+  'guru-nanak-dev-university-online||M.Com': {
     sem1: 'Core M.Com subjects',
     sem2: 'Core M.Com subjects',
     sem3: 'Advanced Commerce subjects',
@@ -1841,7 +1841,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Build a comprehensive financial model for a listed company', 'Research and write a 3,000-word paper on GST compliance challenges', 'Create an investment portfolio analysis comparing equity vs debt returns', 'Conduct statistical analysis of a financial dataset using Excel', 'Prepare a consolidated financial statement for a hypothetical group company', 'Analyse Ind AS vs IFRS differences with case examples'],
     edifyInternships: ['Senior Finance Intern', 'Tax Research Intern', 'Audit Intern', 'Financial Analyst Intern', 'Accounts Manager Intern', 'Apply via: LinkedIn']
   },
-  'hindusta-institut-of-technolo||MBA': {
+  'hindustan-institute-technology-online||MBA': {
     sem1: 'Management Concepts and Corporate Governance,',
     sem2: 'Marketing Management, Human Resources Management,',
     sem3: 'Strategic Management, Project Management,',
@@ -1852,7 +1852,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Build a 3-statement financial model in Excel', 'Create a stock valuation report using DCF analysis', 'Analyse real annual reports of Reliance / TCS / HDFC Bank', 'Build a personal investment portfolio tracker in Excel', 'Research and present a mutual fund comparison for a hypothetical investor', 'Model a startup funding scenario using Excel'],
     edifyInternships: ['Financial Analyst Intern', 'Investment Research Intern', 'Credit Analyst Intern', 'Risk Analyst Intern', 'Accounts & Finance Intern', 'Equity Research Intern']
   },
-  'hindusta-institut-of-technolo||B.Com': {
+  'hindustan-institute-technology-online||B.Com': {
     sem1: 'Financial Accounting - I, Business Economics,',
     sem2: 'Financial Accounting - II, Marketing Management,',
     sem3: 'Corporate Accounting - I, Business Law, Banking',
@@ -1864,7 +1864,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a complete P&L and Balance Sheet for a mock company in Tally', 'Build a receivables ageing report in Excel', 'Prepare a bank reconciliation statement', 'Create a 5-year financial projection for a startup', 'Design a GST compliance calendar', 'Analyse and present ratio analysis of a listed company'],
     edifyInternships: ['Accounts Executive Intern', 'Taxation Intern', 'Audit Intern', 'Finance Intern', 'Apply via: Internshala', 'CA firms']
   },
-  'icfai-foundati-for-higher||MBA': {
+  'icfai-university-online||MBA': {
     sem1: 'Management and Organization Behavior, Business',
     sem2: 'Economics for Business, Operations Management,',
     sem3: 'Business Policy and Strategy, Financial Management,',
@@ -1875,7 +1875,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Build a digital marketing campaign for a local SME', 'Create a brand audit report for a FMCG brand', 'Design a social media content calendar for 30 days', 'Conduct a competitor analysis using free tools', 'Write a go-to-market strategy for a hypothetical product launch', 'Run a Google Ads simulation using Google Skillshop'],
     edifyInternships: ['Digital Marketing Intern', 'SEO Analyst Intern', 'Brand Management Intern', 'Market Research Intern', 'Social Media Manager Intern', 'Content Marketing Intern']
   },
-  'iift||MBA': {
+  'iift-online||MBA': {
     sem1: 'Microeconomics, Financial Accounting, Quantitative',
     sem2: 'Macroeconomics, Corporate Finance, Human Resource',
     sem3: 'International Marketing Management, International',
@@ -1886,7 +1886,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Build a digital marketing campaign for a local SME', 'Create a brand audit report for a FMCG brand', 'Design a social media content calendar for 30 days', 'Conduct a competitor analysis using free tools', 'Write a go-to-market strategy for a hypothetical product launch', 'Run a Google Ads simulation using Google Skillshop'],
     edifyInternships: ['Digital Marketing Intern', 'SEO Analyst Intern', 'Brand Management Intern', 'Market Research Intern', 'Social Media Manager Intern', 'Content Marketing Intern']
   },
-  'integral-universi||B.A': {
+  'integral-university-online||B.A': {
     sem1: 'Foundation English-I, Ethics and Culture,',
     sem2: 'Foundation English-II, Human Values, Environmental',
     sem3: 'History of Literature/Subject Theory-I, Language',
@@ -1897,7 +1897,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Write a policy brief on a current governance issue in India', 'Analyse election data from ECI website and present findings', 'Conduct a comparative study of 2 state governments\' performance', 'Research and write a paper on federalism challenges in India', 'Design a public opinion survey on a social issue', 'Analyse parliamentary debates/bills from PRS India portal'],
     edifyInternships: ['Policy Research Intern', 'Political Analyst Intern', 'NGO Intern', 'Legislative Research Intern', 'Think Tank Intern', 'Apply via: LinkedIn']
   },
-  'jain||BBA': {
+  'jain-university-online||BBA': {
     sem1: 'English | HRM & Organizational Behaviour | Financial Accounting | Modern Business Environment | Generative AI for Online Learners | Financial Literacy & Planning',
     sem2: 'Business Foundations with Excel | Financial Markets & Instruments | Business Management | Business Economics | Communicative English | Quantitative Techniques for Business',
     sem3: 'Python Foundations | Marketing Management | Business Ethics & Negotiation Skills | Data Visualization | Research Methodology | Environmental Science',
@@ -1909,7 +1909,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a social media marketing plan for a local restaurant/business', 'Design 10 Instagram posts for a brand using Canva', 'Write 5 blog posts for a hypothetical company website', 'Conduct a mini market survey and present insights', 'Run a free Google keyword research for a local business', 'Build a basic email newsletter template in Mailchimp'],
     edifyInternships: ['Social Media Intern', 'Digital Marketing Intern', 'Content Writing Intern', 'Marketing Assistant Intern', 'Field Sales Intern', 'Apply via: Internshala']
   },
-  'jss-academy-of-higher||BBA': {
+  'jss-university-online||BBA': {
     sem1: 'Part I English I, Part II English I, Financial',
     sem2: 'Part I English II, Part II English II, Financial',
     sem3: 'Part I English III, Part II English III, Management',
@@ -1918,7 +1918,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a business plan for a small startup idea', 'Build a simple sales tracker in Excel', 'Prepare a SWOT analysis for a company you admire', 'Design a professional LinkedIn profile and connect with 50 industry professional', 'Present a 5-minute business pitch for a hypothetical product', 'Write a market research report on an industry'],
     edifyInternships: ['Business Development Intern', 'Operations Intern', 'Sales Intern', 'Customer Service Intern', 'Admin Intern', 'Management Trainee Intern']
   },
-  'jagan-nath-universi||MBA': {
+  'jagannath-university-online||MBA': {
     sem1: 'Management Concepts & Organizational Behaviour | Managerial Economics | Quantitative Techniques | Financial Reporting, Statements & Analysis | Business Environment | Business Communication',
     sem2: 'Marketing Management | Human Resource Management | Financial Management | Production & Operations Management | Business Research | Management Information System',
     sem3: 'Strategic Management & Governance | Minor Project | Major Elective I | Major Elective II | Major Elective III | Minor Elective I | Minor Elective II',
@@ -1929,7 +1929,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Build a digital marketing campaign for a local SME', 'Create a brand audit report for a FMCG brand', 'Design a social media content calendar for 30 days', 'Conduct a competitor analysis using free tools', 'Write a go-to-market strategy for a hypothetical product launch', 'Run a Google Ads simulation using Google Skillshop'],
     edifyInternships: ['Digital Marketing Intern', 'SEO Analyst Intern', 'Brand Management Intern', 'Market Research Intern', 'Social Media Manager Intern', 'Content Marketing Intern']
   },
-  'jaipur-national-universi||BBA': {
+  'jaipur-national-university-online||BBA': {
     sem1: 'Financial Accounting, Managerial Economics,',
     sem2: 'Principles and Practices of Management, Marketing',
     sem3: 'HR Management, Financial Management, Business Law,',
@@ -1939,7 +1939,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a social media marketing plan for a local restaurant/business', 'Design 10 Instagram posts for a brand using Canva', 'Write 5 blog posts for a hypothetical company website', 'Conduct a mini market survey and present insights', 'Run a free Google keyword research for a local business', 'Build a basic email newsletter template in Mailchimp'],
     edifyInternships: ['Social Media Intern', 'Digital Marketing Intern', 'Content Writing Intern', 'Marketing Assistant Intern', 'Field Sales Intern', 'Apply via: Internshala']
   },
-  'jamia-millia-islamia-universi||MBA': {
+  'jamia-millia-islamia-online||MBA': {
     sem1: 'Management Concepts and Practices, Quantitative',
     sem2: 'Organizational Behaviour, Marketing Management,',
     sem3: 'Business Law, Entrepreneurship Development,',
@@ -1950,7 +1950,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Build a 3-statement financial model in Excel', 'Create a stock valuation report using DCF analysis', 'Analyse real annual reports of Reliance / TCS / HDFC Bank', 'Build a personal investment portfolio tracker in Excel', 'Research and present a mutual fund comparison for a hypothetical investor', 'Model a startup funding scenario using Excel'],
     edifyInternships: ['Financial Analyst Intern', 'Investment Research Intern', 'Credit Analyst Intern', 'Risk Analyst Intern', 'Accounts & Finance Intern', 'Equity Research Intern']
   },
-  'jaypee-universi||BBA': {
+  'jaypee-university-online||BBA': {
     sem1: 'Management Concepts and Practices | Micro Economics | Financial Accounting | Business Communication | Business Mathematics',
     sem2: 'Organizational Behaviour | Macro Economics | Managerial Accounting | Business Statistics | Marketing Management',
     sem3: 'Human Resource Management | Production and Operations Management | Business Law | Cost Accounting | Computer Applications in Business',
@@ -1962,7 +1962,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a social media marketing plan for a local restaurant/business', 'Design 10 Instagram posts for a brand using Canva', 'Write 5 blog posts for a hypothetical company website', 'Conduct a mini market survey and present insights', 'Run a free Google keyword research for a local business', 'Build a basic email newsletter template in Mailchimp'],
     edifyInternships: ['Social Media Intern', 'Digital Marketing Intern', 'Content Writing Intern', 'Marketing Assistant Intern', 'Field Sales Intern', 'Apply via: Internshala']
   },
-  'kiit-universi||B.Com': {
+  'kiit-university-online||B.Com': {
     sem1: 'Environmental Studies | Financial Accounting | Business Law | Business Statistics | Computer Application & Data Management | Accounting for Everyone',
     sem2: 'Professional Communication | Cost & Management Accounting | Corporate Law | Business Economics | Entrepreneurship Development & Startup Strategies | Entrepreneurship for 21st Century',
     sem3: 'Corporate Accounting | Direct-tax Law & Practice | Financial Management | Management Principles & Application | E-Commerce | Digital Commerce',
@@ -1974,7 +1974,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Research India\'s export potential in a specific product category', 'Create an EXIM documentation package for a shipment', 'Analyse currency risk and hedging strategy for an import transaction', 'Study a real Indian export company and present its global strategy', 'Research the impact of a specific FTA on Indian exporters', 'Design a foreign market entry plan for an Indian SME'],
     edifyInternships: ['Export-Import Intern', 'International Trade Finance Intern', 'Global Business Development Intern', 'Apply via: LinkedIn', 'Export promotion councils', 'Trading houses']
   },
-  'kalasali-academy-of-research||MBA': {
+  'kalasalingam-university-online||MBA': {
     sem1: 'Management Principles, Organizational Behavior,',
     sem2: 'Financial Management, Marketing Management, HR',
     sem3: 'Strategic Management, Business Law, Specialisation',
@@ -1984,7 +1984,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Analyse India\'s trade data from DGCI&S database', 'Build a price index tracker for essential commodities', 'Write a research paper on a microeconomics or macroeconomics topic', 'Create a data visualisation report using public economic data', 'Model a simple supply-demand scenario with elasticity calculations', 'TIP: Complete at least 2 projects and upload them to GitHub or Behance. Real pro'],
     edifyInternships: ['Economic Research Intern', 'Data Analyst Intern', 'Policy Research Intern', 'Finance Intern', 'Apply via: LinkedIn', 'NCAER']
   },
-  'karnatak-state-open-universi||B.A': {
+  'karnataka-state-open-university-online||B.A': {
     sem1: 'Language 1 & 2, Indian Constitution and',
     sem2: 'Language 1 & 2, Fundamentals of Computer',
     sem3: 'Optional 1, Optional 2, Optional 3 (selected',
@@ -1995,7 +1995,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Analyse India\'s trade data from DGCI&S database', 'Build a price index tracker for essential commodities', 'Write a research paper on a microeconomics or macroeconomics topic', 'Create a data visualisation report using public economic data', 'Model a simple supply-demand scenario with elasticity calculations', 'TIP: Complete at least 2 projects and upload them to GitHub or Behance. Real pro'],
     edifyInternships: ['Economic Research Intern', 'Data Analyst Intern', 'Policy Research Intern', 'Finance Intern', 'Apply via: LinkedIn', 'NCAER']
   },
-  'karunya-institut-of-technolo||B.Com': {
+  'karunya-university-online||B.Com': {
     sem1: 'English for Communication, Financial Accounting -',
     sem2: 'Professional English, Financial Accounting - II,',
     sem3: 'Business Law, Advanced Accounting, Income Tax,',
@@ -2007,7 +2007,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a complete P&L and Balance Sheet for a mock company in Tally', 'Build a receivables ageing report in Excel', 'Prepare a bank reconciliation statement', 'Create a 5-year financial projection for a startup', 'Design a GST compliance calendar', 'Analyse and present ratio analysis of a listed company'],
     edifyInternships: ['Accounts Executive Intern', 'Taxation Intern', 'Audit Intern', 'Finance Intern', 'Apply via: Internshala', 'CA firms']
   },
-  'karunya-institut-of-technolo||MBA': {
+  'karunya-university-online||MBA': {
     sem1: 'Accounting for Managers, Marketing for Business,',
     sem2: 'Business Research Methods, Quantitative Techniques',
     sem3: 'Legal Aspects of Business, Corporate Strategy,',
@@ -2018,7 +2018,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Build a customer churn prediction model using Python', 'Create an interactive sales dashboard in Tableau/Power BI', 'Perform exploratory data analysis on a real public dataset', 'Build a recommendation system for an e-commerce store', 'Predict stock prices using Python', 'Create a regression model for house price prediction'],
     edifyInternships: ['Data Analyst Intern', 'Business Analyst Intern', 'BI Analyst Intern', 'ML Engineer Intern', 'Analytics Intern', 'Apply via: LinkedIn']
   },
-  'koneru-lakshmai-educatio-found||BBA': {
+  'kl-university-online||BBA': {
     sem1: 'Integrated Professional English | Business Mathematics | Business Environment | Business Economics | Perspectives of Management | IT for Business Managers | Ecology & Environment',
     sem2: 'English Proficiency | Introduction to Financial Accounting | Business Statistics | Organizational Behaviour | Management Information Systems | Foreign Language | Design Thinking and Innovation I',
     sem3: 'Business Communication Skills III | Management Accountancy | Marketing Management | Human Resource Management | Business Research Methods | Macro Economics | Design Thinking and Innovation II',
@@ -2030,7 +2030,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a social media marketing plan for a local restaurant/business', 'Design 10 Instagram posts for a brand using Canva', 'Write 5 blog posts for a hypothetical company website', 'Conduct a mini market survey and present insights', 'Run a free Google keyword research for a local business', 'Build a basic email newsletter template in Mailchimp'],
     edifyInternships: ['Social Media Intern', 'Digital Marketing Intern', 'Content Writing Intern', 'Marketing Assistant Intern', 'Field Sales Intern', 'Apply via: Internshala']
   },
-  'kurukshe-universi||B.Com': {
+  'kurukshetra-university-online||B.Com': {
     sem1: 'Financial Accounting | Business Laws | Business Management | Language Communication',
     sem2: 'Computerized Accounting System | Company Law | Business Statistics | Environmental Studies | Human Value and Ethics',
     sem3: 'Corporate Accounting | Income Tax Law | Principles of Marketing | Personality Development',
@@ -2042,7 +2042,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Compare 5 term insurance plans and present a recommendation report', 'Create a bank account opening checklist and KYC document list', 'Analyse a bank\'s NPA data and present findings', 'Build a mutual fund SIP calculator in Excel', 'Design a simple insurance needs analysis questionnaire', 'Research and compare 3 NBFCs and their products'],
     edifyInternships: ['Banking Operations Intern', 'Insurance Advisor Intern', 'Fintech Intern', 'Customer Service Intern', 'Apply via: Internshala', 'LinkedIn']
   },
-  'lpu||B.A': {
+  'lovely-professional-university-online||B.A': {
     sem1: 'English Communication, Political Science, Sociology, History, Economics, Environmental Studies, Ability Enhancement compulsory courses, Interdisciplinary electives',
     sem2: 'Economics, Environmental Studies, Ability Enhancement compulsory courses, Interdisciplinary electives',
     sem56: 'No formal specializations — broad humanities & social sciences',
@@ -2052,7 +2052,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Analyse India\'s trade data from DGCI&S database', 'Build a price index tracker for essential commodities', 'Write a research paper on a microeconomics or macroeconomics topic', 'Create a data visualisation report using public economic data', 'Model a simple supply-demand scenario with elasticity calculations', 'TIP: Complete at least 2 projects and upload them to GitHub or Behance. Real pro'],
     edifyInternships: ['Economic Research Intern', 'Data Analyst Intern', 'Policy Research Intern', 'Finance Intern', 'Apply via: LinkedIn', 'NCAER']
   },
-  'mats-universi||B.Com': {
+  'mats-university-online||B.Com': {
     sem1: '⚠️ Semester subjects not available — verify from matsuniversity.ac.in',
     sem2: '⚠️ Verify from matsuniversity.ac.in',
     sem3: '⚠️ Verify from matsuniversity.ac.in',
@@ -2062,7 +2062,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a set of books of accounts for a small business in Tally', 'File a mock GST return using practice data', 'Analyse a company\'s annual report', 'Build a personal budget tracker and investment planner in Excel', 'Prepare a cost-benefit analysis for a hypothetical business decision', 'Create a comparison of 2 mutual funds using NAV data'],
     edifyInternships: ['Accounts Intern', 'Tax Filing Intern', 'Audit Intern', 'Finance Assistant Intern', 'Banking Operations Intern', 'Apply via: Internshala']
   },
-  'madurai-kamaraj-universi||B.Com': {
+  'madurai-kamaraj-university-online||B.Com': {
     sem1: 'Financial Accounting | Business Law | Cost Accounting | Business Communication',
     sem2: 'Auditing | Corporate Accounting | Taxation basics | Business Statistics',
     sem3: 'Advanced Accounting | Income Tax | Financial Management',
@@ -2074,7 +2074,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a complete P&L and Balance Sheet for a mock company in Tally', 'Build a receivables ageing report in Excel', 'Prepare a bank reconciliation statement', 'Create a 5-year financial projection for a startup', 'Design a GST compliance calendar', 'Analyse and present ratio analysis of a listed company'],
     edifyInternships: ['Accounts Executive Intern', 'Taxation Intern', 'Audit Intern', 'Finance Intern', 'Apply via: Internshala', 'CA firms']
   },
-  'maharish-markande-universi||B.Com': {
+  'maharishi-markandeshwar-university-online||B.Com': {
     sem1: 'Financial Accounting, Principles of Management,',
     sem2: 'Business Statistics, Business Laws, Business Ethics',
     sem3: 'Corporate Accounting, Fundamentals of Investment,',
@@ -2084,7 +2084,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Compare 5 term insurance plans and present a recommendation report', 'Create a bank account opening checklist and KYC document list', 'Analyse a bank\'s NPA data and present findings', 'Build a mutual fund SIP calculator in Excel', 'Design a simple insurance needs analysis questionnaire', 'Research and compare 3 NBFCs and their products'],
     edifyInternships: ['Banking Operations Intern', 'Insurance Advisor Intern', 'Fintech Intern', 'Customer Service Intern', 'Apply via: Internshala', 'LinkedIn']
   },
-  'mahatma-gandhi-universi||MBA': {
+  'mahatma-gandhi-university-online||MBA': {
     sem1: 'Management Process and Applications, Managerial',
     sem2: 'Organizational Behaviour, Marketing Management,',
     sem3: 'Strategic Management, Management Information',
@@ -2095,7 +2095,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Build a customer churn prediction model using Python', 'Create an interactive sales dashboard in Tableau/Power BI', 'Perform exploratory data analysis on a real public dataset', 'Build a recommendation system for an e-commerce store', 'Predict stock prices using Python', 'Create a regression model for house price prediction'],
     edifyInternships: ['Data Analyst Intern', 'Business Analyst Intern', 'BI Analyst Intern', 'ML Engineer Intern', 'Analytics Intern', 'Apply via: LinkedIn']
   },
-  'manav-rachna-internat-institut||B.A': {
+  'manav-rachna-online||B.A': {
     sem1: '(Economics) Microeconomics, Mathematics for',
     sem2: '(Economics) Macroeconomics, Statistics for',
     sem3: '(Economics) Intermediate Micro, Development',
@@ -2106,7 +2106,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Analyse India\'s trade data from DGCI&S database', 'Build a price index tracker for essential commodities', 'Write a research paper on a microeconomics or macroeconomics topic', 'Create a data visualisation report using public economic data', 'Model a simple supply-demand scenario with elasticity calculations', 'TIP: Complete at least 2 projects and upload them to GitHub or Behance. Real pro'],
     edifyInternships: ['Economic Research Intern', 'Data Analyst Intern', 'Policy Research Intern', 'Finance Intern', 'Apply via: LinkedIn', 'NCAER']
   },
-  'mangalay-universi||B.A': {
+  'mangalayatan-university-online||B.A': {
     sem1: '• Communication Skills | • Creative Writing | • Sociology | • Ethics | • Personality Development | • Environmental Studies | • Research Project',
     sem2: 'Discipline-based major subjects | Minor subjects | Communication Skills',
     sem3: 'Humanities + Sociology + Ethics subjects | Research Project',
@@ -2118,7 +2118,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Analyse India\'s trade data from DGCI&S database', 'Build a price index tracker for essential commodities', 'Write a research paper on a microeconomics or macroeconomics topic', 'Create a data visualisation report using public economic data', 'Model a simple supply-demand scenario with elasticity calculations', 'TIP: Complete at least 2 projects and upload them to GitHub or Behance. Real pro'],
     edifyInternships: ['Economic Research Intern', 'Data Analyst Intern', 'Policy Research Intern', 'Finance Intern', 'Apply via: LinkedIn', 'NCAER']
   },
-  'mahe-manipal||B.Com': {
+  'manipal-academy-higher-education-online||B.Com': {
     sem1: 'Financial Accounting | Business Mathematics | Business Communication | Principles of Management | Micro Economics | Legal Framework of Business',
     sem2: 'Advanced Financial Accounting | Cost Accounting | Business Law | Taxation (Direct) | Macro Economics | Statistics',
     sem3: 'Advanced Cost Accounting | GST & Indirect Taxation | Auditing & Assurance | Management Accounting | Corporate Finance | Elective',
@@ -2129,7 +2129,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a complete P&L and Balance Sheet for a mock company in Tally', 'Build a receivables ageing report in Excel', 'Prepare a bank reconciliation statement', 'Create a 5-year financial projection for a startup', 'Design a GST compliance calendar', 'Analyse and present ratio analysis of a listed company'],
     edifyInternships: ['Accounts Executive Intern', 'Taxation Intern', 'Audit Intern', 'Finance Intern', 'Apply via: Internshala', 'CA firms']
   },
-  'manipal-jaipur||B.Com': {
+  'manipal-university-jaipur-online||B.Com': {
     sem1: 'Financial Accounting, Business Economics, Business Mathematics & Statistics, Business Communication, Principles of Management',
     sem2: 'Corporate Accounting, Business Law, Cost Accounting, Taxation Basics, HRM',
     sem3: 'Advanced Accounting, Income Tax Law & Practice, Financial Management, Auditing',
@@ -2141,7 +2141,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a complete P&L and Balance Sheet for a mock company in Tally', 'Build a receivables ageing report in Excel', 'Prepare a bank reconciliation statement', 'Create a 5-year financial projection for a startup', 'Design a GST compliance calendar', 'Analyse and present ratio analysis of a listed company'],
     edifyInternships: ['Accounts Executive Intern', 'Taxation Intern', 'Audit Intern', 'Finance Intern', 'Apply via: Internshala', 'CA firms']
   },
-  'manonman-sundaran-universi||B.A': {
+  'manonmaniam-sundaranar-university-online||B.A': {
     sem1: 'Language - I, English - I, British Literature-I',
     sem2: 'Language - II, English - II, British Literature-II',
     sem3: 'British Literature-III (Victorian to Modern),',
@@ -2153,7 +2153,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Write 5 long-form articles on literary or contemporary topics', 'Create a literary analysis research paper', 'Start a blog or Substack newsletter on literature/culture', 'Write a short screenplay or stage play', 'Translate a short story from regional language to English', 'Build a portfolio of 10 content writing samples for different industries'],
     edifyInternships: ['Content Writer Intern', 'Editorial Intern', 'Copywriting Intern', 'Academic Writing Intern', 'Translation Intern', 'Publishing Intern']
   },
-  'marwadi-universi||B.Com': {
+  'marwadi-university-online||B.Com': {
     sem1: 'Not Mentioned (Verbatim subjects missing from',
     sem2: 'Not Mentioned (Verbatim subjects missing from',
     sem3: 'Not Mentioned (Verbatim subjects missing from',
@@ -2164,7 +2164,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Compare 5 term insurance plans and present a recommendation report', 'Create a bank account opening checklist and KYC document list', 'Analyse a bank\'s NPA data and present findings', 'Build a mutual fund SIP calculator in Excel', 'Design a simple insurance needs analysis questionnaire', 'Research and compare 3 NBFCs and their products'],
     edifyInternships: ['Banking Operations Intern', 'Insurance Advisor Intern', 'Fintech Intern', 'Customer Service Intern', 'Apply via: Internshala', 'LinkedIn']
   },
-  'mizoram-universi||M.A': {
+  'mizoram-university-online||M.A': {
     sem1: 'Sociological, Psychological, and Philosophical',
     sem2: 'Higher Education, Psychological Tests and',
     sem3: 'Research Methodology and Statistics in Education,',
@@ -2175,7 +2175,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Design a complete 4-week online course curriculum for any subject', 'Create 5 assessment rubrics using Bloom\'s Taxonomy', 'Build a Google Classroom demo for a subject', 'Record and edit a 10-minute educational video', 'Write a research proposal on a current educational challenge in India', 'Design an inclusive classroom plan for differently-abled students'],
     edifyInternships: ['Teaching Intern', 'Ed-Tech Content Intern', 'Curriculum Design Intern', 'Educational Research Intern', 'School Administration Intern', 'Apply via: Internshala']
   },
-  'nmims||B.Com': {
+  'nmims-online||B.Com': {
     sem1: 'Financial Accounting | Business Mathematics | Business Communication | Micro Economics | IT Fundamentals | Environmental Studies',
     sem2: 'Cost Accounting | Business Law | Business Statistics | Macro Economics | Taxation Basics (Income Tax)',
     sem3: 'Business & Allied Law | Banking & Insurance | Financial Management | Advanced Financial Accounting | Audit-I | International Business & Export Import Management',
@@ -2187,7 +2187,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a complete P&L and Balance Sheet for a mock company in Tally', 'Build a receivables ageing report in Excel', 'Prepare a bank reconciliation statement', 'Create a 5-year financial projection for a startup', 'Design a GST compliance calendar', 'Analyse and present ratio analysis of a listed company'],
     edifyInternships: ['Accounts Executive Intern', 'Taxation Intern', 'Audit Intern', 'Finance Intern', 'Apply via: Internshala', 'CA firms']
   },
-  'noida-internat-universi||BBA': {
+  'noida-international-university-online||BBA': {
     sem1: 'Principles of Management | Basic Accounting | Business Economics | Business Communication | Business Mathematics | Information Technology',
     sem2: 'Organizational Behaviour | Marketing Management | Financial Accounting | Business Statistics | Managerial Economics | Computer Applications',
     sem3: 'HRM | Operations Management | Business Law | Cost Accounting | Management Information Systems',
@@ -2199,7 +2199,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a social media marketing plan for a local restaurant/business', 'Design 10 Instagram posts for a brand using Canva', 'Write 5 blog posts for a hypothetical company website', 'Conduct a mini market survey and present insights', 'Run a free Google keyword research for a local business', 'Build a basic email newsletter template in Mailchimp'],
     edifyInternships: ['Social Media Intern', 'Digital Marketing Intern', 'Content Writing Intern', 'Marketing Assistant Intern', 'Field Sales Intern', 'Apply via: Internshala']
   },
-  'pp-savani-universi||BBA': {
+  'pp-savani-university-online||BBA': {
     sem1: 'Not Mentioned',
     sem2: 'Not Mentioned',
     sem3: 'Not Mentioned',
@@ -2210,7 +2210,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a business plan for a small startup idea', 'Build a simple sales tracker in Excel', 'Prepare a SWOT analysis for a company you admire', 'Design a professional LinkedIn profile and connect with 50 industry professional', 'Present a 5-minute business pitch for a hypothetical product', 'Write a market research report on an industry'],
     edifyInternships: ['Business Development Intern', 'Operations Intern', 'Sales Intern', 'Customer Service Intern', 'Admin Intern', 'Management Trainee Intern']
   },
-  'parul-universi||B.A': {
+  'parul-university-online||B.A': {
     sem1: 'Subject structure as per source: | • Major subjects (discipline based) | • Minor subjects | • Research Methodology | • Communication Skills | • Internship | • Project |  | (Sem-wise distribution available at paruluniversity.online — source document provides structure not semester',
     sem2: 'Major subjects (discipline based) | Minor subjects',
     sem3: 'Major subjects (discipline based) | Research Methodology | Minor subjects',
@@ -2222,7 +2222,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Write 5 long-form articles on literary or contemporary topics', 'Create a literary analysis research paper', 'Start a blog or Substack newsletter on literature/culture', 'Write a short screenplay or stage play', 'Translate a short story from regional language to English', 'Build a portfolio of 10 content writing samples for different industries'],
     edifyInternships: ['Content Writer Intern', 'Editorial Intern', 'Copywriting Intern', 'Academic Writing Intern', 'Translation Intern', 'Publishing Intern']
   },
-  'sastra-deemed-universi||MBA': {
+  'sastra-university-online||MBA': {
     sem1: 'Foundations of Management & Organisational Behaviour | Economics for Decision Making | Accounting for Managers | Business Research Methods',
     sem2: 'Contemporary Marketing Management | People Management | Financial Management | Operations & Supply Chain Management | Master Class I',
     sem3: 'Strategic Management | Business Analytics and Data Visualisation | Investment Analysis & Portfolio Management | Financial Markets & Mutual Funds | Project Management',
@@ -2234,7 +2234,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Build a 3-statement financial model in Excel', 'Create a stock valuation report using DCF analysis', 'Analyse real annual reports of Reliance / TCS / HDFC Bank', 'Build a personal investment portfolio tracker in Excel', 'Research and present a mutual fund comparison for a hypothetical investor', 'Model a startup funding scenario using Excel'],
     edifyInternships: ['Financial Analyst Intern', 'Investment Research Intern', 'Credit Analyst Intern', 'Risk Analyst Intern', 'Accounts & Finance Intern', 'Equity Research Intern']
   },
-  'sgt-universi||B.Com': {
+  'sgt-university-online||B.Com': {
     sem1: 'Management Concepts & Organizational Behaviour,',
     sem2: 'Human Resource Management, Principles of Marketing,',
     sem3: 'Business Economics, Corporate Accounting, Business',
@@ -2243,7 +2243,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a complete P&L and Balance Sheet for a mock company in Tally', 'Build a receivables ageing report in Excel', 'Prepare a bank reconciliation statement', 'Create a 5-year financial projection for a startup', 'Design a GST compliance calendar', 'Analyse and present ratio analysis of a listed company'],
     edifyInternships: ['Accounts Executive Intern', 'Taxation Intern', 'Audit Intern', 'Finance Intern', 'Apply via: Internshala', 'CA firms']
   },
-  'srm-institut-of-science||MBA': {
+  'srm-institute-science-technology-online||MBA': {
     sem1: 'Management Principles and Practices, Organizational',
     sem2: 'Financial Management, Marketing Management, Human',
     sem3: 'Strategic Management, Business Law, Elective I,',
@@ -2252,7 +2252,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Analyse India\'s trade data from DGCI&S database', 'Build a price index tracker for essential commodities', 'Write a research paper on a microeconomics or macroeconomics topic', 'Create a data visualisation report using public economic data', 'Model a simple supply-demand scenario with elasticity calculations', 'TIP: Complete at least 2 projects and upload them to GitHub or Behance. Real pro'],
     edifyInternships: ['Economic Research Intern', 'Data Analyst Intern', 'Policy Research Intern', 'Finance Intern', 'Apply via: LinkedIn', 'NCAER']
   },
-  'srm-sikkim-universi||BBA': {
+  'srm-university-sikkim-online||BBA': {
     sem1: 'Professional Communication, Principles of',
     sem2: 'Management and Cost Accounting, Organizational',
     sem3: 'Operations Research in Business, Financial',
@@ -2264,13 +2264,13 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a social media marketing plan for a local restaurant/business', 'Design 10 Instagram posts for a brand using Canva', 'Write 5 blog posts for a hypothetical company website', 'Conduct a mini market survey and present insights', 'Run a free Google keyword research for a local business', 'Build a basic email newsletter template in Mailchimp'],
     edifyInternships: ['Social Media Intern', 'Digital Marketing Intern', 'Content Writing Intern', 'Marketing Assistant Intern', 'Field Sales Intern', 'Apply via: Internshala']
   },
-  'sathyaba-institut-of-science||BBA': {
+  'sathyabama-university-online||BBA': {
     sem1: 'Principles of Management, Business',
     sem2: 'Financial Accounting-II, Marketing Management,',
     sem3: 'Corporate Accounting-I, Business Law, Banking',
     sem4: 'Corporate Accounting-II, Company Law, Indirect'
   },
-  'savitrib-phule-pune-universi||BBA': {
+  'savitribai-phule-pune-university-online||BBA': {
     sem1: '• Principles of Management | • Business Communication | • Business Economics (Micro) | • Business Mathematics | • Business Demography | • Compulsory English',
     sem2: '• Business Organization and System | • Principles of Marketing | • Principles of Finance | • Basics of Cost Accounting | • Business Statistics | • Compulsory English',
     sem3: '• Personality Development | • Business Ethics | • Human Resource Management | • Management Accounting | • Specialization Subject – I | • Specialization Subject – II',
@@ -2282,7 +2282,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a social media marketing plan for a local restaurant/business', 'Design 10 Instagram posts for a brand using Canva', 'Write 5 blog posts for a hypothetical company website', 'Conduct a mini market survey and present insights', 'Run a free Google keyword research for a local business', 'Build a basic email newsletter template in Mailchimp'],
     edifyInternships: ['Social Media Intern', 'Digital Marketing Intern', 'Content Writing Intern', 'Marketing Assistant Intern', 'Field Sales Intern', 'Apply via: Internshala']
   },
-  'sharda-universi||B.A': {
+  'sharda-university-online||B.A': {
     sem1: 'Introduction to Political Theory, Constitutional',
     sem2: 'Political Theory-Concepts and Debates, Political',
     sem3: 'Introduction to Comparative Government and',
@@ -2293,7 +2293,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Write a policy brief on a current governance issue in India', 'Analyse election data from ECI website and present findings', 'Conduct a comparative study of 2 state governments\' performance', 'Research and write a paper on federalism challenges in India', 'Design a public opinion survey on a social issue', 'Analyse parliamentary debates/bills from PRS India portal'],
     edifyInternships: ['Policy Research Intern', 'Political Analyst Intern', 'NGO Intern', 'Legislative Research Intern', 'Think Tank Intern', 'Apply via: LinkedIn']
   },
-  'shiv-nadar-institut-of||MBA': {
+  'shiv-nadar-university-online||MBA': {
     sem1: 'Managerial Economics, Financial Accounting &',
     sem2: 'Financial Management, Human Resources Management,',
     sem3: 'Strategic Management, Professional Ethics, Elective',
@@ -2302,7 +2302,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Run a live Google Search Ad campaign with ₹500 budget', 'Build a complete SEO strategy for a local business website', 'Create a 30-day Instagram content calendar with copy + visuals', 'Write 5 email marketing sequences for a hypothetical brand', 'Build a WordPress landing page with CTA and lead form', 'Measure ROI of a hypothetical social media campaign'],
     edifyInternships: ['Digital Marketing Intern', 'SEO Intern', 'Social Media Intern', 'Content Creator Intern', 'Google Ads Intern', 'Email Marketing Intern']
   },
-  'shobhit-universi||BBA': {
+  'shobhit-university-online||BBA': {
     sem1: 'Principles of Management, Business Economics,',
     sem2: 'Organizational Behavior, Marketing Management,',
     sem3: 'Human Resource Management, Cost Accounting,',
@@ -2314,7 +2314,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a social media marketing plan for a local restaurant/business', 'Design 10 Instagram posts for a brand using Canva', 'Write 5 blog posts for a hypothetical company website', 'Conduct a mini market survey and present insights', 'Run a free Google keyword research for a local business', 'Build a basic email newsletter template in Mailchimp'],
     edifyInternships: ['Social Media Intern', 'Digital Marketing Intern', 'Content Writing Intern', 'Marketing Assistant Intern', 'Field Sales Intern', 'Apply via: Internshala']
   },
-  'shoolini||B.Com': {
+  'shoolini-university-online||B.Com': {
     sem1: 'Financial Accounting, Business Mathematics, Business Economics, Functional English-1, Principles of Management | Open Elective',
     sem2: 'Cost Accounting, Business Statistics, Corporate Law, Organizational Behaviour, Functional English-2 | Open Elective',
     sem3: 'Financial Management, Taxation (Direct Tax), Auditing, Accounting for Managers | Subject Area electives',
@@ -2326,7 +2326,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a complete P&L and Balance Sheet for a mock company in Tally', 'Build a receivables ageing report in Excel', 'Prepare a bank reconciliation statement', 'Create a 5-year financial projection for a startup', 'Design a GST compliance calendar', 'Analyse and present ratio analysis of a listed company'],
     edifyInternships: ['Accounts Executive Intern', 'Taxation Intern', 'Audit Intern', 'Finance Intern', 'Apply via: Internshala', 'CA firms']
   },
-  'sikkim-manipal||B.A': {
+  'sikkim-manipal-university-online||B.A': {
     sem1: 'English Communication, Political Science, Sociology, History, Foundation of Social Science',
     sem2: 'Economics, Psychology, Geography, Environmental Studies, Interdisciplinary Elective',
     sem3: 'Indian Political System, Sociological Theory, Economic Development, Elective I',
@@ -2338,7 +2338,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Analyse India\'s trade data from DGCI&S database', 'Build a price index tracker for essential commodities', 'Write a research paper on a microeconomics or macroeconomics topic', 'Create a data visualisation report using public economic data', 'Model a simple supply-demand scenario with elasticity calculations', 'TIP: Complete at least 2 projects and upload them to GitHub or Behance. Real pro'],
     edifyInternships: ['Economic Research Intern', 'Data Analyst Intern', 'Policy Research Intern', 'Finance Intern', 'Apply via: LinkedIn', 'NCAER']
   },
-  'sri-ramachandra-universi||B.Sc': {
+  'sri-ramachandra-university-online||B.Sc': {
     sem1: 'Foundation of Data Science, Mathematical',
     sem2: 'Data Structures and Algorithms, Database Management',
     sem3: 'Machine Learning Foundations, Optimization',
@@ -2348,7 +2348,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Analyse India\'s trade data from DGCI&S database', 'Build a price index tracker for essential commodities', 'Write a research paper on a microeconomics or macroeconomics topic', 'Create a data visualisation report using public economic data', 'Model a simple supply-demand scenario with elasticity calculations', 'TIP: Complete at least 2 projects and upload them to GitHub or Behance. Real pro'],
     edifyInternships: ['Economic Research Intern', 'Data Analyst Intern', 'Policy Research Intern', 'Finance Intern', 'Apply via: LinkedIn', 'NCAER']
   },
-  'subharti-universi||MBA': {
+  'subharti-university-online||MBA': {
     sem1: 'Principles & Practice of Management, Managerial',
     sem2: 'Management Accounting, Marketing Management,',
     sem3: 'Business Policy & Strategic Management, Business',
@@ -2357,7 +2357,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Build a digital marketing campaign for a local SME', 'Create a brand audit report for a FMCG brand', 'Design a social media content calendar for 30 days', 'Conduct a competitor analysis using free tools', 'Write a go-to-market strategy for a hypothetical product launch', 'Run a Google Ads simulation using Google Skillshop'],
     edifyInternships: ['Digital Marketing Intern', 'SEO Analyst Intern', 'Brand Management Intern', 'Market Research Intern', 'Social Media Manager Intern', 'Content Marketing Intern']
   },
-  'symbiosis||B.Sc': {
+  'symbiosis-university-online||B.Sc': {
     sem1: 'Microeconomics, Macroeconomics, Mathematical Economics, Statistics for Economists, Development Economics, Public Finance, International Trade, Econometrics, Indian Economy, Business Economics, Research Methodology',
     sem2: 'Public Finance, International Trade, Econometrics, Indian Economy, Business Economics, Research Methodology',
     sem56: 'Economics honours; interdisciplinary electives from business/social sciences',
@@ -2367,12 +2367,12 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Analyse India\'s trade data from DGCI&S database', 'Build a price index tracker for essential commodities', 'Write a research paper on a microeconomics or macroeconomics topic', 'Create a data visualisation report using public economic data', 'Model a simple supply-demand scenario with elasticity calculations', 'TIP: Complete at least 2 projects and upload them to GitHub or Behance. Real pro'],
     edifyInternships: ['Economic Research Intern', 'Data Analyst Intern', 'Policy Research Intern', 'Finance Intern', 'Apply via: LinkedIn', 'NCAER']
   },
-  'teerthanker-universi||MBA': {
+  'teerthanker-mahaveer-university-online||MBA': {
     edifySkills: ['Google Analytics', 'HubSpot Inbound Marketing', 'Meta Blueprint – Facebook/Instagram Ads', 'Canva for content creation', 'CRM tools', 'Excel for market analysis', 'PowerPoint/Slides for brand decks', 'TIP: Learn at least 2–3 of these tools during your program. Free certifications'],
     edifyProjects: ['Build a digital marketing campaign for a local SME', 'Create a brand audit report for a FMCG brand', 'Design a social media content calendar for 30 days', 'Conduct a competitor analysis using free tools', 'Write a go-to-market strategy for a hypothetical product launch', 'Run a Google Ads simulation using Google Skillshop'],
     edifyInternships: ['Digital Marketing Intern', 'SEO Analyst Intern', 'Brand Management Intern', 'Market Research Intern', 'Social Media Manager Intern', 'Content Marketing Intern']
   },
-  'northcap-universi||B.Com': {
+  'northcap-university-online||B.Com': {
     sem1: 'Statistics & Research Methodology-I, Principles of',
     sem2: 'Statistics & Research Methodology-II, Financial',
     sem3: 'Income Tax, Marketing Management, Fundamentals of',
@@ -2381,7 +2381,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a set of books of accounts for a small business in Tally', 'File a mock GST return using practice data', 'Analyse a company\'s annual report', 'Build a personal budget tracker and investment planner in Excel', 'Prepare a cost-benefit analysis for a hypothetical business decision', 'Create a comparison of 2 mutual funds using NAV data'],
     edifyInternships: ['Accounts Intern', 'Tax Filing Intern', 'Audit Intern', 'Finance Assistant Intern', 'Banking Operations Intern', 'Apply via: Internshala']
   },
-  'universi-of-petroleu-and||BBA': {
+  'upes-online||BBA': {
     sem1: 'Principles of Management | Business Mathematics | Financial Accounting | Business Communication | Introduction to Digital Business',
     sem2: 'Business Economics | Business Law | Digital Marketing Fundamentals | Statistics for Business | E-Commerce Basics',
     sem3: 'Digital Business Strategy | E-Commerce Management | Social Media Marketing | FinTech & Digital Payments | UX & Design Thinking',
@@ -2393,7 +2393,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a social media marketing plan for a local restaurant/business', 'Design 10 Instagram posts for a brand using Canva', 'Write 5 blog posts for a hypothetical company website', 'Conduct a mini market survey and present insights', 'Run a free Google keyword research for a local business', 'Build a basic email newsletter template in Mailchimp'],
     edifyInternships: ['Social Media Intern', 'Digital Marketing Intern', 'Content Writing Intern', 'Marketing Assistant Intern', 'Field Sales Intern', 'Apply via: Internshala']
   },
-  'universi-of-lucknow||B.Com': {
+  'university-of-lucknow-online||B.Com': {
     sem1: 'Financial Accounting | Commerce core (Sem 1)',
     sem2: 'Commerce core (Sem 2)',
     sem3: 'Commerce advanced (Sem 3)',
@@ -2403,7 +2403,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Prepare a complete P&L and Balance Sheet for a mock company in Tally', 'Build a receivables ageing report in Excel', 'Prepare a bank reconciliation statement', 'Create a 5-year financial projection for a startup', 'Design a GST compliance calendar', 'Analyse and present ratio analysis of a listed company'],
     edifyInternships: ['Accounts Executive Intern', 'Taxation Intern', 'Audit Intern', 'Finance Intern', 'Apply via: Internshala', 'CA firms']
   },
-  'universi-of-madras||MBA': {
+  'university-of-madras-online||MBA': {
     sem1: 'Management Principles and Business Ethics,',
     sem2: 'Marketing Management, Human Resource Management,',
     sem3: 'Strategic Management, Management Information',
@@ -2413,7 +2413,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Analyse India\'s trade data from DGCI&S database', 'Build a price index tracker for essential commodities', 'Write a research paper on a microeconomics or macroeconomics topic', 'Create a data visualisation report using public economic data', 'Model a simple supply-demand scenario with elasticity calculations', 'TIP: Complete at least 2 projects and upload them to GitHub or Behance. Real pro'],
     edifyInternships: ['Economic Research Intern', 'Data Analyst Intern', 'Policy Research Intern', 'Finance Intern', 'Apply via: LinkedIn', 'NCAER']
   },
-  'universi-of-mysore||B.Com': {
+  'university-of-mysore-online||B.Com': {
     sem1: 'Business Organization and Management, Financial',
     sem2: 'Corporate Accounting - I, Business Law, Banking and',
     sem3: 'Financial Accounting - II, Cost Accounting, Income',
@@ -2424,7 +2424,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Compare 5 term insurance plans and present a recommendation report', 'Create a bank account opening checklist and KYC document list', 'Analyse a bank\'s NPA data and present findings', 'Build a mutual fund SIP calculator in Excel', 'Design a simple insurance needs analysis questionnaire', 'Research and compare 3 NBFCs and their products'],
     edifyInternships: ['Banking Operations Intern', 'Insurance Advisor Intern', 'Fintech Intern', 'Customer Service Intern', 'Apply via: Internshala', 'LinkedIn']
   },
-  'uttaranc-universi||B.A': {
+  'uttaranchal-university-online||B.A': {
     sem1: '• Introduction to Sociology | • Managerial Economics | • Basic Psychology | • English I | • Environmental Science | • Writing Skills',
     sem2: '• English II | • Social Stratification | • Macro Economics | • Cognitive Psychology | • Communicative English | • Business Statistics',
     sem3: '• Environmental Waste and Disaster Management | • Social Institutions in Sociology | • Physiological Process & Behaviour | • Marketing Management | • Constitution of India | • Basic Research Skills I',
@@ -2436,7 +2436,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Analyse India\'s trade data from DGCI&S database', 'Build a price index tracker for essential commodities', 'Write a research paper on a microeconomics or macroeconomics topic', 'Create a data visualisation report using public economic data', 'Model a simple supply-demand scenario with elasticity calculations', 'TIP: Complete at least 2 projects and upload them to GitHub or Behance. Real pro'],
     edifyInternships: ['Economic Research Intern', 'Data Analyst Intern', 'Policy Research Intern', 'Finance Intern', 'Apply via: LinkedIn', 'NCAER']
   },
-  'vellore-institut-of-technolo||MBA': {
+  'vit-vellore-online||MBA': {
     sem1: 'Management Theory and Practice, Organizational',
     sem2: 'Marketing Management, Human Resource Management,',
     sem3: 'Business Analytics, Business Law and Ethics, Indian',
@@ -2447,7 +2447,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Build a 3-statement financial model in Excel', 'Create a stock valuation report using DCF analysis', 'Analyse real annual reports of Reliance / TCS / HDFC Bank', 'Build a personal investment portfolio tracker in Excel', 'Research and present a mutual fund comparison for a hypothetical investor', 'Model a startup funding scenario using Excel'],
     edifyInternships: ['Financial Analyst Intern', 'Investment Research Intern', 'Credit Analyst Intern', 'Risk Analyst Intern', 'Accounts & Finance Intern', 'Equity Research Intern']
   },
-  'vellore-vit-online||M.Sc': {
+  'vit-university-online||M.Sc': {
     sem1: 'Statistical Methods for Data Science, Programming',
     sem2: 'Machine Learning, Optimization Techniques, Big Data',
     sem3: 'Business Analytics, Business Law and Ethics,',
@@ -2458,7 +2458,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Complete 3 end-to-end Kaggle competitions', 'Build a real-time stock price prediction model', 'Create a NLP model for document classification', 'Build an anomaly detection system for financial fraud', 'Deploy an ML model as a REST API', 'Create a big data pipeline using PySpark'],
     edifyInternships: ['Data Scientist Intern', 'ML Research Intern', 'AI Intern', 'Analytics Engineer Intern', 'BI Developer Intern', 'Apply via: LinkedIn']
   },
-  'vels-institut-of-science||BBA': {
+  'vels-university-online||BBA': {
     sem1: 'Principles of Management | Business Communication | Financial Accounting | Micro Economics | Business Mathematics',
     sem2: 'Organizational Behaviour | Marketing Management | Macro Economics | Business Statistics | Environmental Science',
     sem3: 'Human Resource Management | Production & Operations Management | Business Law | Cost Accounting | Computer Applications in Business',
@@ -2470,7 +2470,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a social media marketing plan for a local restaurant/business', 'Design 10 Instagram posts for a brand using Canva', 'Write 5 blog posts for a hypothetical company website', 'Conduct a mini market survey and present insights', 'Run a free Google keyword research for a local business', 'Build a basic email newsletter template in Mailchimp'],
     edifyInternships: ['Social Media Intern', 'Digital Marketing Intern', 'Content Writing Intern', 'Marketing Assistant Intern', 'Field Sales Intern', 'Apply via: Internshala']
   },
-  'visveswa-technolo-universi||BBA': {
+  'vtu-online||BBA': {
     sem1: 'Business Accounting, Managerial Economics,',
     sem2: 'Introduction to Digital Marketing, Business',
     sem3: 'Research Methodology, Web Design and Development,',
@@ -2480,7 +2480,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Create a social media marketing plan for a local restaurant/business', 'Design 10 Instagram posts for a brand using Canva', 'Write 5 blog posts for a hypothetical company website', 'Conduct a mini market survey and present insights', 'Run a free Google keyword research for a local business', 'Build a basic email newsletter template in Mailchimp'],
     edifyInternships: ['Social Media Intern', 'Digital Marketing Intern', 'Content Writing Intern', 'Marketing Assistant Intern', 'Field Sales Intern', 'Apply via: Internshala']
   },
-  'vivekana-global-universi||B.A': {
+  'vivekananda-global-university-online||B.A': {
     sem1: 'English-I, Elective I, Elective II, Elective III',
     sem2: 'English-II, Elective I, Elective II, Elective III',
     sem3: 'Communication Skills, Elective I, Elective II,',
@@ -2491,7 +2491,7 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
     edifyProjects: ['Analyse India\'s trade data from DGCI&S database', 'Build a price index tracker for essential commodities', 'Write a research paper on a microeconomics or macroeconomics topic', 'Create a data visualisation report using public economic data', 'Model a simple supply-demand scenario with elasticity calculations', 'TIP: Complete at least 2 projects and upload them to GitHub or Behance. Real pro'],
     edifyInternships: ['Economic Research Intern', 'Data Analyst Intern', 'Policy Research Intern', 'Finance Intern', 'Apply via: LinkedIn', 'NCAER']
   },
-  'yenepoya-universi||B.Com': {
+  'yenepoya-university-online||B.Com': {
     sem1: '• Financial Accounting I | • Business Management | • Business Economics | • English Communication | • Environmental Studies',
     sem2: '• Financial Accounting II | • Business Laws | • Banking and Insurance | • Modern Indian Language | • Principles of Marketing',
     sem3: '• Corporate Accounting I | • Business Statistics | • Income Tax I | • Financial Management | • E-Commerce',
@@ -2521,9 +2521,9 @@ export interface MasterSyllabus extends UniversitySyllabus {
 }
 
 export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
-  'amet-universi||MBA': {
+  'amet-university-online||MBA': {
   },
-  'arka-jain-universi||MBA': {
+  'arka-jain-university-online||MBA': {
     sem1: 'Human Resource Management | Business Economics | Sustainability and Ethics | Financial Reporting and Corporate Finance | Organizational Behavior and Human Resources Management | Quantitative Techniques for Business Decisions | Generative AI for Online Learners',
     sem2: 'Entrepreneurship | Marketing Management | Operations Research | Business Law and Corporate Governance | Business Analytics and Artificial Intelligence',
     specSyllabus: {
@@ -2541,7 +2541,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'alliance-universi||MBA': {
+  'alliance-university-online||MBA': {
     sem1: 'Intelligent Economics for Managers | Accounting for Managerial Decisions | Marketing | Theory and Practice | Operations Management | Organizational Behaviour',
     sem2: 'Business Statistics | Applied Business Research Methods | Macroeconomic Environment and Policy | Corporate Finance using AI | Human Resource Management',
     specSyllabus: {
@@ -2567,7 +2567,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'amity||MBA': {
+  'amity-university-online||MBA': {
     sem1: 'Accounting for Managers | Managerial Economics | Marketing Management | Statistics for Management | Professional communication',
     sem2: 'Business Research Methods | Financial Management | Human Resource Management | Legal Aspects of Business | Conflict Resolution and Management',
     specSyllabus: {
@@ -2601,7 +2601,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'amrita-vishwa-vidyapee||MBA': {
+  'amrita-vishwa-vidyapeetham-online||MBA': {
     sem1: 'Fundamentals of Management & Organizational Behaviour | Human Resources and Organizational Development | Marketing and Consumer Behaviour | Elective 1: Foundations of Computer Systems | Soft Skills and Employability Skills',
     sem2: 'Business Finance | Operations and Supply Chain Management | Data-Driven Decision Making | Business Ethics and Strategic Management | Elective 2: Introduction to Machine Learning',
     specSyllabus: {
@@ -2639,7 +2639,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'assam-down-town-universi||MBA': {
+  'assam-don-bosco-university-online||MBA': {
     sem1: 'Principles of Management | Managerial Economics | Management Communication | Marketing Management | Business Ethics and CSR | Financial Accounting',
     sem2: 'Financial Management | Quantitative Methods | Entrepreneurship Development | Market Research | Human Resource Management | Organizational Behaviour',
     specSyllabus: {
@@ -2657,11 +2657,11 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'bharati-vidyapee-universi||MBA': {
+  'bharati-vidyapeeth-university-online||MBA': {
   },
-  'birla-institut-of-technolo||MBA': {
+  'bits-pilani-work-integrated-online||MBA': {
   },
-  'chandigarh||MBA': {
+  'chandigarh-university-online||MBA': {
     sem1: 'Business | Society and Law | Financial Reporting and Analysis | Leadership & Organization Behavior | Managerial Economics | Marketing Management',
     sem2: 'People Management | Consumer Behaviour | Business Research Methods | Financial Management | Operations and Quality Management',
     highlight: 'Triple Global Certification: Harvard Business Publishing (Strategy & Leadership), PwC India (Industry Readiness), and PMI (Project Management); Access to 30,000+ Case Studies;',
@@ -2760,11 +2760,11 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'chitkara-universi||MBA': {
+  'chitkara-university-online||MBA': {
   },
-  'dayanand-sagar-universi||MBA': {
+  'dayananda-sagar-university-online||MBA': {
   },
-  'dr-dy-patil-vidyapeeth||MBA': {
+  'dr-dy-patil-vidyapeeth-online||MBA': {
     sem1: 'Principles & Practices of Management | Organisational Behaviour | Management Accounting | Managerial Economics | Business Communication | Research Methodology | Environment Awareness and Disaster Management.',
     sem2: 'Human Resource Management | Marketing Management | Financial Management | Operations Management | Management Information System | Strategic Management & Business Policy | Entrepreneurship Development.',
     highlight: 'Access to edX certifications from top global universities (Harvard, MIT) and WES recognition for international careers.',
@@ -2831,7 +2831,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'dr-mgr-educatio-and||MBA': {
+  'dr-mgr-educational-research-institute-online||MBA': {
     sem1: 'Principles of Mgmt & Behavioral Science | Managerial Economics | Basic Accounting | Business Legislation | Business Statistics | E-Commerce | Labs: Computer App | Business Comm.',
     sem2: 'Marketing Mgmt | HRM | Research Methodology | Talent Mgmt | Strategic HRM | Industrial Relations | Labs: Tally | Business Etiquette.',
     specSyllabus: {
@@ -2861,7 +2861,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'galgotia-universi||MBA': {
+  'galgotias-university-online||MBA': {
     sem1: 'Marketing Management | Accounting for Managers | Business Statistics | Legal Aspects | Managerial Economics.',
     sem2: 'Business Analytics | Corporate Finance | HRM | Research Method | Operations & SCM | Digital Marketing | Entrepreneurship',
     specSyllabus: {
@@ -2895,13 +2895,13 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'icfai-foundati-for-higher||MBA': {
+  'icfai-university-online||MBA': {
   },
-  'iift||MBA': {
+  'iift-online||MBA': {
   },
-  'integral-universi||MBA': {
+  'integral-university-online||MBA': {
   },
-  'jain||MBA': {
+  'jain-university-online||MBA': {
     sem1: 'Business Economics | Sustainability & Ethics | Financial Reporting & Corporate Finance | OB & HRM | Quantitative Techniques-I.',
     sem2: 'Entrepreneurship | Marketing Management | Quantitative Techniques-II | Python for Data Science | Business Analytics & AI.',
     specSyllabus: {
@@ -2975,7 +2975,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'jaypee-universi||MBA': {
+  'jaypee-university-online||MBA': {
     sem1: 'Economics | Financial Accounting | Marketing Mgmt | Business Stats (Excel) | Operations Mgmt | Corporate Finance | Digital Transformation.',
     sem2: 'Legal Aspects | HRM | Innovation & Entrepreneurship | Management Accounting | Business Research | Business Analytics | Digital Marketing | Capstone Project.',
     specSyllabus: {
@@ -2997,7 +2997,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'kurukshe-universi||MBA': {
+  'kurukshetra-university-online||MBA': {
     sem1: 'Management Process & OB | Business Statistics | Managerial Economics | Financial Accounting | Business Communication | Indian Economy & Business Environment',
     sem2: 'Marketing Management | Financial Management | HRM | Business Research Methods | Operations Management | Computer Applications in Management.',
     specSyllabus: {
@@ -3023,7 +3023,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'lpu||MBA': {
+  'lovely-professional-university-online||MBA': {
     sem1: 'Managerial Economics | Financial Reporting | Statements and Analysis | Marketing Management | OB & HRM | Quantitative Techniques',
     sem2: 'Corporate Strategy and Entrepreneurship | Corporate Finance | Business Research Methods | Operations Management | Information Systems for Business',
     specSyllabus: {
@@ -3069,7 +3069,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'nmims||MBA': {
+  'nmims-online||MBA': {
     sem1: 'Business Communication | Financial Accounting | Micro & Macro Economics | Organisational Behaviour | Marketing Management | Quantitative Methods–I',
     sem2: 'Cost & Management Accounting | Human Resource Management | Strategic Management | Business Analytics | Legal Aspect of Business | Operations Management.',
     specSyllabus: {
@@ -3095,7 +3095,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'noida-internat-universi||MBA': {
+  'noida-international-university-online||MBA': {
     sem1: 'Management Concepts & Organizational Behavior | Managerial Economics | Accounting for Managers | Business Communication | Business Statistics | Marketing Management | Computer Application For Business.',
     sem2: 'Financial Management | International Business Environment | Human Resource Management | Production & Operation Management | Business Research Method | Management Information System | Business Ethics & CSR | SPSS Training.',
     specSyllabus: {
@@ -3141,7 +3141,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'sharda-universi||MBA': {
+  'sharda-university-online||MBA': {
     sem1: 'Management Processes & Organizational Behaviour | Financial Accounting | Reporting and Analysis | Economic Analysis for Business Decision | Quantitative Techniques for Business Decision | Managerial Communication | Governance | Ethics & Sustainability.',
     sem2: 'Marketing Management | Human Resource Management | Business Research Methods | Corporate Finance & Financial Markets | Technology and Analytics for Business | Legal Aspects in Business.',
     specSyllabus: {
@@ -3171,7 +3171,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'shoolini||MBA': {
+  'shoolini-university-online||MBA': {
     sem1: 'Marketing Management | Organizational Behaviour | Financial Accounting | Entrepreneurship | Creativity Decoded | Digital and Technological Solutions | Functional English',
     sem2: 'Human Resource Management | Financial Management | Career and Life Skills | Managerial Economics | Statistics for Management | Functional English - 2 | Presentation & Charts | Fundamentals of Direct Selling',
     specSyllabus: {
@@ -3237,7 +3237,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'symbiosis||MBA': {
+  'symbiosis-university-online||MBA': {
     sem1: 'Business Statistics | Marketing Management | Financial Accounting | Operations Management | Legal Aspects of Business | Human Resource Management | Research Methodology | Microeconomics | Technology in Business | Data Driven Decision Making.',
     sem2: 'Organizational Behaviour | Operations Research | Macroeconomics | Financial Management | R Programming | Project Management | Management Information Systems | Business Communication | Consumer Behaviour and Insights | Digital Marketing | Design Thinking | Innovation Management.',
     specSyllabus: {
@@ -3279,7 +3279,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'universi-of-petroleu-and||MBA': {
+  'upes-online||MBA': {
     sem1: 'Managerial Economics | Accounting for Managers | Marketing Management | Quantitative Techniques | Operations Management.',
     sem2: 'OB & HRM | Project Management | Financial Management | Research Methodology | Business Analytics for Managers.',
     highlight: 'Professional Waiver: 5% marks relaxation (45% vs 50% min) for 2+ years work experience. Merit Scholarship: Up to 20% off 1st-year tuition for >80% in graduation or NMAT score >200.',
@@ -3330,7 +3330,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'uttaranc-universi||MBA': {
+  'uttaranchal-university-online||MBA': {
     sem1: 'Principles and Practices of Management | Accounting for Managerial Decisions | Economics for Managers | Business Environment | E-Commerce.',
     sem2: 'Emerging Business Law | Business Research Methods | Marketing Management | Business Analytics | Operations Management.',
     specSyllabus: {
@@ -3368,7 +3368,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'vignans-foundati-for-science||MBA': {
+  'vignan-university-online||MBA': {
     sem1: 'Principles of Management and Organizational Behaviour (PMOB) | Managerial Economics (ME) | Accounting for Managers (AFM) | Business Statistics and Analytics for Decision Making (BSAD) | Legal Environment for Business (LEB).',
     sem2: 'Marketing Management (MM) | Financial Markets & Corporate Finance (FM & CF) | Human Resource Management (HRM) | Operations Management (OM) | Business Research Methods (BRM) | Business Analytics (BA).',
     specSyllabus: {
@@ -3402,7 +3402,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'manipal-jaipur||MBA': {
+  'manipal-university-jaipur-online||MBA': {
     sem1: 'Entrepreneurial Practice | Business Communication | Managerial Economics | Financial Accounting | Data Visualisation (Excel/Tableau) | Organizational Behaviour | Marketing Management.',
     sem2: 'Business Research Methods (R/Python) | Advanced Financial Management | Operations Management | Human Resource Management | Strategic Management | Legal Aspects of Business.',
     highlight: 'Powered by Coursera integration',
@@ -3461,7 +3461,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'mahe-manipal||MBA': {
+  'manipal-academy-higher-education-online||MBA': {
     sem1: 'Managing People & Organizations | Financial Reporting & Statement Analysis | Managerial Economics | Business Communication | Business Statistics.',
     sem2: 'Financial Management | Marketing Management | Strategic Management | IT for Business | Business Leadership | Research Methodology.',
     highlight: 'MAHE MBA Stats: Total Fee: ₹2.92L. Sem Fee: ₹73K. Rank: #3 in India. Accreditations: NAAC A++, UGC, AICTE. USPs: IoE Status, Coursera Access, 1:1 Industry Mentorship, Mandatory 1-yr Work Exp, Minor/Ca',
@@ -3504,7 +3504,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'sikkim-manipal||MBA': {
+  'sikkim-manipal-university-online||MBA': {
     sem1: 'Principles of Mgmt & OB | Marketing Mgmt | Accounting for Managers | Business Economics | Business Communication | Legal Aspects of Business | Computer Application in Mgmt.',
     sem2: 'Quantitative Methods in Mgmt | HRM | Financial Mgmt | Production & Operations Mgmt | Research Methodology & Statistical Techniques | Global Economic Environment & Policy | MIS.',
     specSyllabus: {
@@ -3534,73 +3534,73 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
       },
     },
   },
-  'charotar-universi-of-science||MCA': {
+  'charusat-university-online||MCA': {
     sem1: 'Cloud Computing | Web Development using Open Source Technologies | Enterprise Computing using Java EE | Programming with .NET Architecture | Database Technologies | Academic Speaking and Presentation Skills.',
     sem2: 'Programming in Python | Advanced Web Designing | Advanced Mobile Programming | Software Engineering with Agile and DevOps | Academic Writing.',
     sem3: 'Data Analytics | Software Quality Assurance | Green Computing | Minor Project Work.',
     sem4: 'Dissertation / Project Work - Industrial Training.',
   },
-  'dr-babasahe-ambedkar-open||MCA': {
+  'dr-babasaheb-ambedkar-open-university-online||MCA': {
     sem1: 'Data Structure and Algorithms | Relational Database Management System | Web Development Technologies | Operating Systems | Software Engineering and Software Project Management | Programming Skills - I.',
     sem2: 'Object Oriented Concepts and Programming | Web Application Development using PHP | Web Development Technologies with ASP.Net | Computer Networking | Electives-I (Select one: Cloud Infrastructure and Services / Data Analytics using &quot | R&quot | / Applications and Network Security) | Programming S',
     sem3: 'Object Oriented Unified Modeling | Problem Solving using Python | Cross Platform Mobile Application Development | Internet Programming with Java | Electives-II (Select one: Principles of Cyber Security / Artificial Intelligence and Machine Learning / Components and Applications of Internet of Things',
     sem4: 'Internship cum Industrial Project.',
   },
-  'maharish-markande-universi||MCA': {
+  'maharishi-markandeshwar-university-online||MCA': {
     sem1: 'Data Structure Using C++ | Advanced Database Management System | Operating System | Software Engineering | Business Intelligence and Its Applications | Data Structure Using C++ Lab | Advanced Database Management System Lab | Bridge Course',
     sem2: 'Object Oriented Programming Using Java | Web Technologies | Python Programming | Mobile Programming | Mini Project – 1 | Electives (Node/Angular/React JS)',
     sem3: 'Software Engineering (Advanced) | Cryptography &amp | Network Security | Artificial Intelligence | Mobile Application Development | NoSQL Database | Mini Project – 2',
     sem4: 'Industry Defined Project (Internship) / Major Project',
   },
-  'universi-of-mysore||MCA': {
+  'university-of-mysore-online||MCA': {
     sem1: 'Computer Organization and Architecture | Data Structures and Algorithms | Mathematical Foundations of Computer Science | Operating System | Database Management Systems | Data Structures Lab | DBMS Lab.',
     sem2: 'Object Oriented Programming with Java | Computer Networks | Software Engineering | Python Programming | Analysis and Design of Algorithms | Java Lab | Python Lab.',
     sem3: 'Web Technologies | Artificial Intelligence | Mobile Application Development | Elective 1 | Elective 2 | Web Technologies Lab | Mobile App Lab.',
     sem4: 'Cloud Computing | Cyber Security | Major Project / Internship.',
   },
-  'vellore-vit-online||MCA': {
+  'vit-university-online||MCA': {
     sem1: 'Database Management Systems | Computer Architecture and Organization | Mathematical Foundations of Computer Applications | Data Structures and Algorithms | Software Engineering | Database Management Systems Lab | Data Structures and Algorithms Lab',
     sem2: 'Object Oriented Programming | Operating Systems | Computer Networks | Design and Analysis of Algorithms | Elective I | Object Oriented Programming Lab | Operating Systems Lab',
     sem3: 'Data Warehousing and Data Mining | Web Technologies | Elective II | Elective III | Elective IV | Web Technologies Lab | Mini Project',
     sem4: 'Elective V | Elective VI | Major Project',
   },
-  'anna-universi||MCA': {
+  'anna-university-online||MCA': {
     sem1: 'Mathematical Foundations of Computer Science | Advanced Data Structures and Algorithms | Advanced Database Management Systems | Advanced Software Engineering | Python Programming | Advanced Database Management Systems Laboratory | Data Structures and Algorithms Laboratory',
     sem2: 'Object Oriented Programming | Computer Networks | Operating Systems | Data Science | Web Application Development | Object Oriented Programming Laboratory | Web Application Development Laboratory',
     sem3: 'Data Mining and Data Warehousing | Cloud Computing Technologies | Mobile Application Development | Professional Elective I | Professional Elective II | Software Development Laboratory | Mini Project',
     sem4: 'Professional Elective III | Professional Elective IV | Project Work',
   },
-  'shobhit-universi||MCA': {
+  'shobhit-university-online||MCA': {
     sem1: 'Mathematical Foundation for Computer Science | Computer Organization &amp | Architecture | Data Structures and Algorithms | Database Management Systems | Object Oriented Programming using Java | Java Lab.',
     sem2: 'Design and Analysis of Algorithms | Computer Networks | Operating Systems | Software Engineering | Python Programming | Python Lab.',
     sem3: 'Machine Learning | Cloud Computing | Big Data Analytics | Cryptography and Network Security | Professional Ethics | Mini Project.',
     sem4: 'Major Project.',
   },
-  'andhra-universi||MCA': {
+  'andhra-university-online||MCA': {
     sem1: 'IT & Programming with C | Computer Organization',
     sem2: 'Data Structures | Microprocessors | Operating Systems | DBMS',
     sem3: 'Software Engineering | Computer Networks | Web Technologies | Python',
     sem4: 'Seminar on Recent Trends in IT | Major Internship Project',
   },
-  'mangalay-universi||MCA': {
+  'mangalayatan-university-online||MCA': {
     sem1: 'Programming in C++ | Advanced DBMS | Software Engineering | Business Intelligence & Applications',
     sem2: 'OOP using Java | Web Technologies | Python Programming | Mobile Programming | Mini Project-1',
     sem3: 'Software Engineering Advanced | Cryptography & Network Security | Mobile App Development | NoSQL Database | Mini Project-2',
     sem4: 'Industry Defined Project (Internship)',
   },
-  'bharati-vidyapee-universi||MCA': {
+  'bharati-vidyapeeth-university-online||MCA': {
     sem1: 'Applied DBMS | Computer Networks | Java Programming | Computational Statistics | Management Concepts & Applications',
     sem2: 'Object Oriented Software Engineering | Cloud Computing Concepts | Data Structures using Python | Data Warehousing & Data Mining | Web Supporting Technologies',
     sem3: 'Software Design Patterns | Artificial Intelligence | Information Security | Specialisation Electives',
     sem4: 'Seminar on Recent Trends in IT | Major Internship Project (60 days)',
   },
-  'koneru-lakshmai-educatio-found||MCA': {
+  'kl-university-online||MCA': {
     sem1: 'Professional Communication Skills | Computer Networks & Communications | Data Structures & Algorithms | OS Concepts | Database Systems | Computer Organization & Architecture',
     sem2: 'OOP | Data Analytics | Comprehensive Software Engineering | Professional Elective 1 | Lab sessions',
     sem3: 'Internship | Web Technologies | Essentials of Research Design | Professional Elective 3 | Term Paper',
     sem4: 'Open Elective 1 | Major Project',
   },
-  'assam-down-town-universi||BBA': {
+  'assam-don-bosco-university-online||BBA': {
     sem1: 'Management Concepts and Practices | Fundamentals of Financial Accounting | Business Economics | Communicative English | Entrepreneurship Principles and Practices | Understanding India | Environmental Studies',
     sem2: 'Ethics | Values and Corporate Social Responsibility | Marketing',
     sem3: 'Principles of Marketing | Fundamentals of Human Resource Management | Introduction to Financial Management | Emotional Intelligence | Managerial Communication | Minor Internship',
@@ -3608,7 +3608,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Business Decision Analysis | Corporate Governance and Professional Ethics | Production and Operations Management | Elective II | Internship',
     sem6: 'Business Policy and Strategic Management | Financial Markets and Institutions | Corporate and Business Law | Minor Project-1 | Elective III',
   },
-  'assam-down-town-universi||BCA': {
+  'assam-don-bosco-university-online||BCA': {
     sem1: 'Programming in C Language | Computer Programming in C Language (Theory/Lab) | Cyber Law and Ethics | Computer Fundamentals | Fundamentals of Business &amp | Economics | Environmental Studies | Service Learning | Business Communication',
     sem2: 'Data Structures Using C (Theory/Lab) | E-commerce Technologies | Hardware and Server Maintenance | Communicative English I | Indian Economy | Digital and Technological Solutions | Understanding India | Service-Learning Practice',
     sem3: 'Introduction to Java Programming (Theory/Lab) | Digital Logic Design (Theory/Lab) | Enterprise Resource Planning | Multimedia and Graphics | Service-Learning Practice | Emotional Intelligence',
@@ -3616,7 +3616,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Computer Network Fundamentals (Theory/Lab) | Android Application Development Fundamentals | Minor Project | Software Engineering (Theory/Lab) | Internship',
     sem6: 'Cloud Computing | Network Security | Web Technologies (Theory/Lab) | Business Statistics | Basics of Python (Theory/Lab)',
   },
-  'guru-ghasidas-vishwavi||B.Com': {
+  'guru-ghasidas-vishwavidyalaya-online||B.Com': {
     sem1: 'Financial Accounting | Business Laws | Financial Literacy | Rural Development | Creativity and Entrepreneurship | Spiritual Management | E-Commerce | Stock Market Operations',
     sem2: 'Corporate Accounting | Business Organization and Management | Business Environment | Basics of Management | Business Communication | Tribal Economics | New Venture Planning and Development | Personal Tax Planning and Tax Management',
     sem3: 'Financial Management | Income-tax Law and Practice | Principles of Marketing | Investing in Stock Markets | Advanced Financial Accounting | Indian Economy | Fundamentals of Banking',
@@ -3624,9 +3624,9 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Business Economics | Business Statistics | Management Accounting | Financial Markets and Institutions | Advertising and Personal Selling | Business',
     sem6: 'Goods &amp | Services Tax (GST) and Customs Law | Auditing | Personal Finance &amp | Planning | Seminar | Dissertation / Project',
   },
-  'gujarat-universi||B.Com': {
+  'gujarat-university-online||B.Com': {
   },
-  'gujarat-universi||BA': {
+  'gujarat-university-online||BA': {
     sem1: 'Prose | Poetry | Indian Writing in English | Reading and Writing Skills.',
     sem2: 'The English Novel: Background | History and Development | Writing for Media | Linguistics and Phonetics.',
     sem3: 'Poetry and Poetic Forms | Comparative Literature | Shakespearean Drama.',
@@ -3634,7 +3634,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'English Language and Literature | British Literature: Renaissance to Romanticism | Literature and Society | English Language Teaching (ELT) | Literary Criticism.',
     sem6: 'British Literature: Victorian Age to Modern | Postcolonial Literature | 20th Century British and American Literature | Modern Literary Theory | Critical Theories: Classical to Contemporary.',
   },
-  'charotar-universi-of-science||BCA': {
+  'charusat-university-online||BCA': {
     sem1: 'Information Technology Trends | Foundation of Programming | Digital Computer Fundamentals | Fundamentals of Web Designing | Communicative English.',
     sem2: 'Fundamentals of E-Commerce | Advanced Web Designing | Fundamentals of Object Oriented Programming | Database Fundamentals | Seminar.',
     sem3: 'Computer Oriented Management Systems | System Analysis and Design | Fundamentals of Data Structures and Algorithms | Fundamentals of Operating Systems | Environmental Sciences | Case Study.',
@@ -3642,7 +3642,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Object Oriented Programming using JAVA | Fundamentals of Visual Programming | Introduction to Multi-Paradigms Programming language | Communication and',
     sem6: 'Basics of Mobile Applications | Software Testing | Project Work | Contributory Personality Development.',
   },
-  'dr-babasahe-ambedkar-open||BCA': {
+  'dr-babasaheb-ambedkar-open-university-online||BCA': {
     sem1: 'Fundamental of Programming using C language | Fundamental of Computer &amp | Information Technology | Introduction to Internet Technologies and HTML | Financial Accounting and Management | Communication Skills-I | Environmental Studies-I.',
     sem2: 'Operating System and Software Installation | Data Structure Using C | Database Management System (DBMS) | Digital Electronics and Computer Organization | Communication Skills-II | Environmental Studies-II.',
     sem3: 'Object Oriented Concepts &amp | Programming - I | Introduction to Computer Network | Relational Database Management System (RDBMS) | Cyber Security | Digital Marketing and SEO | Personality Development-I.',
@@ -3650,7 +3650,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Software Engineering | Client/Server Architecture and Interface (C#) | Introduction to Python Programming | Business Application and Introduction to ERP | Mobile Operating Systems.',
     sem6: 'Object Oriented Analysis and Design | Internet Programming (ASP.NET Using C#) | Mobile Application Development | E-Commerce | Data Warehousing and Data Mining | Software Testing | Minor Project Cum Internship.',
   },
-  'dr-babasahe-ambedkar-open||B.Com': {
+  'dr-babasaheb-ambedkar-open-university-online||B.Com': {
     sem1: 'Business Organization | Financial Accounting | Business Economics | Principles of Management | Communication Skills.',
     sem2: 'Corporate Accounting | Business Law | Company Law | Banking and Finance | Environmental Studies.',
     sem3: 'Cost Accounting | Income Tax | Business Mathematics | Human Resource Management | Marketing Management.',
@@ -3658,7 +3658,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Advanced Financial Accounting | Business Statistics | International Business | Corporate Governance | Specialized Elective.',
     sem6: 'Project Work | Goods and Services Tax (GST) | Business Ethics | specialized elective based on track.',
   },
-  'marwadi-universi||B.Com': {
+  'marwadi-university-online||B.Com': {
     sem1: 'Not Mentioned (Verbatim subjects missing from specific link)',
     sem2: 'Not Mentioned (Verbatim subjects missing from specific link)',
     sem3: 'Not Mentioned (Verbatim subjects missing from specific link)',
@@ -3666,9 +3666,9 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Not Mentioned (Verbatim subjects missing from specific link)',
     sem6: 'Not Mentioned (Verbatim subjects missing from specific link)',
   },
-  'pp-savani-universi||BBA': {
+  'pp-savani-university-online||BBA': {
   },
-  'maharish-markande-universi||BCA': {
+  'maharishi-markandeshwar-university-online||BCA': {
     sem1: 'Not Mentioned (Verbatim subjects unavailable in link | includes Foundation and Computer Fundamentals)',
     sem2: 'Object Oriented Programming Using C++ | Data Structure | System Analysis and Design | Hindi | Environment Education | C++ Lab | Data Structure Lab | Seminar-I',
     sem3: 'Not Mentioned (Standard BCA core subjects)',
@@ -3676,7 +3676,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Not Mentioned (Standard BCA core subjects)',
     sem6: 'Major Project / Industrial Training',
   },
-  'sgt-universi||B.Com': {
+  'sgt-university-online||B.Com': {
     sem1: 'Management Concepts &amp | Organizational Behaviour | Financial Accounting | Artificial Intelligence For Everyone | Business Environment | Foundational Course: Communicative English | Design Thinking &amp | Innovation | Environmental Science.',
     sem2: 'Human Resource Management | Principles of Marketing | Business Statistics | Business Laws | Advanced Course: Communicative English | Basics of Entrepreneurship Skills | Human Values &amp | Ethics.',
     sem3: 'Business Economics | Corporate Accounting | Business',
@@ -3684,7 +3684,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Financial Management | Management Accounting | Security Analysis &amp | Portfolio Management | Goods and Service Tax (GST) &amp | Customs Law | Business Analytics | Internship - II.',
     sem6: 'Financial Analysis and Reporting | Financial Derivatives | Financial Analytics | Auditing.',
   },
-  'universi-of-mysore||BBA': {
+  'university-of-mysore-online||BBA': {
     sem1: 'Principles of Management | Business Economics | Financial Accounting | English | Environmental Studies.',
     sem2: 'Organizational Behaviour | Marketing Management | Human Resource Management | Business Mathematics | Constitution of India.',
     sem3: 'Financial Management | Cost Accounting | Business Law',
@@ -3692,7 +3692,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Operations Management | Business Ethics | Elective 2 | Elective 3 | Summer Training / Project.',
     sem6: 'Management Accounting | E-Business | Elective 4 | Elective 5 | Major Project.',
   },
-  'universi-of-mysore||BCA': {
+  'university-of-mysore-online||BCA': {
     sem1: 'Computer Fundamentals | Programming in C | Mathematics - I | English | Web Designing.',
     sem2: 'Data Structures | Object Oriented Programming with C++ | Mathematics - II | Database Management Systems | Environmental Studies.',
     sem3: 'Java Programming | Operating Systems | Computer Networks | Software Engineering | Python Programming.',
@@ -3700,7 +3700,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Cloud Computing | Information Security | Elective 2 | Elective 3 | Summer Internship.',
     sem6: 'Artificial Intelligence | Machine Learning | Elective 4 | Major Project.',
   },
-  'universi-of-mysore||B.Com': {
+  'university-of-mysore-online||B.Com': {
     sem1: 'Business Organization and Management | Financial Accounting - I | Business Economics | English | Environmental Studies.',
     sem2: 'Corporate Accounting - I | Business Law | Banking and Finance | Business Mathematics | Constitution of India.',
     sem3: 'Financial Accounting - II | Cost Accounting | Income Tax - I | Marketing Management | Management Information Systems.',
@@ -3708,7 +3708,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Management Accounting | Financial Management | Elective 2 | Elective 3 | Summer Project.',
     sem6: 'Principles of Marketing | Entrepreneurship | Elective 4 | Elective 5 | Major Project.',
   },
-  'karnatak-state-open-universi||B.Com': {
+  'karnataka-state-open-university-online||B.Com': {
     sem1: 'Language 1 &amp | Indian Constitution | Human Rights and Environmental Studies | Commercial Communication–I | Financial Accounting | Business Organization &amp | Management | Micro Economics',
     sem2: 'Language 1 &amp | Fundamentals of Computer Applications | Commercial Communication–II | Macro Economics | Cost Accounting | Company Accounting',
     sem3: 'Language 1 &amp | Income Tax &amp | GST | Company Law | Business Management–II | Accounting &amp | Finance–II',
@@ -3716,7 +3716,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Advanced Accountancy | Management of Financial Services',
     sem6: 'Major Project / Elective specialization',
   },
-  'christ-deemed-to-be||B.Com': {
+  'christ-university-online||B.Com': {
     sem1: 'Fundamentals of Accounting | Financial Accounting and Reporting | Business Mathematics and Statistics.',
     sem2: 'Auditing | Financial Management | Corporate Law.',
     sem3: 'Management Accounting | Financial Markets and Services | Organizational Behaviour.',
@@ -3724,9 +3724,9 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Human Resource Management | Financial Market and Institutions | Cost Accounting | Entrepreneurship.',
     sem6: 'Financial Statement Analysis | Project Management | Advanced Accounting.',
   },
-  'dayanand-sagar-universi||BCA': {
+  'dayananda-sagar-university-online||BCA': {
   },
-  'dayanand-sagar-universi||B.Com': {
+  'dayananda-sagar-university-online||B.Com': {
     sem1: 'Business Accounting | Managerial Economics | Management and Behavioural Practices | Corporate Governance and Business Ethics | Mastering English Communication.',
     sem2: 'Financial Accounting | Business Laws | Business Mathematics | Marketing Management | Basics of Excel.',
     sem3: 'Corporate Accounting | Advanced Financial Accounting | Business Statistics | Advanced Excel | Introduction to FinTech.',
@@ -3734,7 +3734,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Management Accounting | Financial Management | Preparedness for Interview | Discipline Electives | Internship.',
     sem6: 'Strategic Management | Entrepreneurship and Ethics | FinTech Analytics',
   },
-  'bharathi-universi||BBA': {
+  'bharath-university-online||BBA': {
     sem1: 'Language - I | English - I | Principles of Management | Basis of Business Statistics | Environmental Studies',
     sem2: 'Language - II | English - II | Organizational Behavior | Economics for Executives | Value Education - Human Rights',
     sem3: 'Financial Accounting | Production and Operations Management | Marketing Management | PC Software (MS Office) - Theory | PC Software (MS Office) - Practical',
@@ -3742,7 +3742,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Financial Management | Quantitative Techniques for Management',
     sem6: 'Strategic Management | Business Ethics and Global Business | Elective - III: Consumer Behaviour | Elective - IV: Supply Chain Management | Project Work and Viva-Voce',
   },
-  'hindusta-institut-of-technolo||BCA': {
+  'hindustan-institute-technology-online||BCA': {
     sem1: 'Computer Fundamentals and Organization | Programming in C | Mathematical Foundations | English Communication | C Programming Lab',
     sem2: 'Data Structures and Algorithms | Operating Systems | Database Management Systems | Discrete Mathematics | Data Structures Lab | DBMS Lab',
     sem3: 'Object Oriented Programming using Java | Computer Networks | Software Engineering | Probability and Statistics | Java Programming Lab',
@@ -3750,7 +3750,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Mobile Application Development | Cloud Computing | Open Source Technologies | Elective - I | Mobile App Development Lab',
     sem6: 'Big Data Analytics | Artificial Intelligence | Elective - II | Project Work',
   },
-  'hindusta-institut-of-technolo||B.Com': {
+  'hindustan-institute-technology-online||B.Com': {
     sem1: 'Financial Accounting - I | Business Economics | Business Management | English - I | Tamil - I / Hindi - I',
     sem2: 'Financial Accounting - II | Marketing Management | Business Mathematics | English - II | Tamil - II / Hindi - II',
     sem3: 'Corporate Accounting - I | Business Law | Banking Theory Law and Practice | Business Statistics | Environmental Science',
@@ -3758,7 +3758,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Management Accounting | Income Tax Law and Practice | Auditing | Financial Management | Entrepreneurship Development',
     sem6: 'Practical Auditing | Financial Markets and Services | E-Commerce | Human Resource Management | Project Work',
   },
-  'karunya-kcode-universi||B.Com': {
+  'karunya-kcode-online||B.Com': {
     sem1: 'English for Communication | Financial Accounting - I | Business Organization | Business Economics | Principles of Marketing',
     sem2: 'Professional English | Financial Accounting - II | Banking Theory Law and Practice | Company Law and Secretarial Practice | Business Statistics With R',
     sem3: 'Business Law | Advanced Accounting | Income Tax | Business',
@@ -3766,7 +3766,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Corporate Accounting-II | Cost Accounting-II | Financial Management | Indian Financial System | International Business',
     sem6: 'Fundamentals of Advertising | New Venture Creation | Portfolio Management | Value Education',
   },
-  'aligarh-muslim-universi||BA': {
+  'aligarh-muslim-university-online||BA': {
     sem1: 'English Language I | Ethics and Culture/Sunni Theology/Shia Theology | Compulsory Urdu/Elementary Urdu | Introduction to English Literature-I | Indian Writing in English-I',
     sem2: 'English Language II | Ethics and Culture/Sunni Theology/Shia Theology | Compulsory Urdu/Elementary Urdu | Introduction to English Literature-II | Indian Writing in English-II',
     sem3: 'English Language III | Environmental Studies | Compulsory Urdu/Elementary Urdu | British Literature-I | American Literature-I',
@@ -3774,7 +3774,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'British Literature-III | Women’s Writing in English | Literary Criticism-I | Post-Colonial Literature-I',
     sem6: 'British Literature-IV | Contemporary Literature | Literary Criticism-II | Post-Colonial Literature-II',
   },
-  'sharda-universi||BCA': {
+  'sharda-university-online||BCA': {
     sem1: 'Programming for Problem Solving using C | Computer Fundamentals and Organization | Mathematical Foundations | English Communication | C Programming Lab',
     sem2: 'Object Oriented Programming using C++ | Data Structures and Algorithms | Database Management Systems | Discrete Mathematics | C++ Lab | DBMS Lab',
     sem3: 'Programming in Java | Computer Networks | Software Engineering | Probability and Statistics | Java Programming Lab | Web Technology Lab',
@@ -3782,7 +3782,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Mobile Application Development | Cloud Computing | Elective-I | Elective-II | Mobile App Development Lab | Mini Project',
     sem6: 'Artificial Intelligence | Cyber Security | Elective-III | Major Project',
   },
-  'integral-universi||BCA': {
+  'integral-university-online||BCA': {
     sem1: 'Computer Fundamentals | Programming in C | Mathematical Foundation-I | Professional Communication | C Programming Lab',
     sem2: 'Data Structures using C | Operating System | Discrete Mathematics | Database Management Systems | Data Structure Lab | DBMS Lab',
     sem3: 'Object Oriented Programming using Java | Computer Networks | Software Engineering | Numerical and Statistical Techniques | Java Lab',
@@ -3790,7 +3790,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Mobile Application Development | Cloud Computing | Artificial Intelligence | Elective-I | Mobile App Lab | Mini Project',
     sem6: 'Cyber Security | Big Data Analytics | Elective-II | Major Project Key Differentiator: Strong focus on &quot | Numerical and Statistical Techniques&quot | alongside modern Python and Cloud modules.',
   },
-  'integral-universi||B.Com': {
+  'integral-university-online||B.Com': {
     sem1: 'Financial Accounting | Business Organization | Business Communication | Micro Economics | Business Mathematics',
     sem2: 'Advanced Accounting | Marketing Management | Macro Economics | Business Statistics | Environmental Studies',
     sem3: 'Corporate Accounting | Business Law | Banking Theory | Cost Accounting | Computer Applications',
@@ -3798,7 +3798,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Auditing | Financial Management | Indian Financial System | Elective-I | Elective-II',
     sem6: 'Practical Auditing | Financial Markets | E-Commerce | Project Work Key Differentiator: Includes &quot | Practical Auditing&quot | and &quot | E-Commerce&quot | as core modules in the final year.',
   },
-  'shobhit-universi||BBA': {
+  'shobhit-university-online||BBA': {
     sem1: 'Principles of Management | Business Economics | Financial Accounting | Business Communication | Business Mathematics.',
     sem2: 'Organizational Behavior | Marketing Management | Business Statistics | Environmental Studies | Macro Economics.',
     sem3: 'Human Resource Management | Cost Accounting | Business Law | IT in Management | Production &amp | Operations Management.',
@@ -3806,7 +3806,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Strategic Management | Sales &amp | Distribution Management | Logistics &amp | SCM | Digital Marketing | Training &amp | Development.',
     sem6: 'Business Ethics | Retail Management | Advertising &amp | Sales Promotion | Industry Project.',
   },
-  'shobhit-universi||BCA': {
+  'shobhit-university-online||BCA': {
     sem1: 'Computer Fundamentals | Programming in C | Mathematical Foundation-I | Communication Skills | C Programming Lab.',
     sem2: 'Data Structures using C | Operating System | Discrete Mathematics | Database Management Systems | Data Structures Lab.',
     sem3: 'Object Oriented Programming using Java | Computer Networks | Software Engineering | Numerical and Statistical Techniques | Java Lab.',
@@ -3814,7 +3814,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Mobile Application Development | Cloud Computing | Artificial Intelligence | Mobile App Lab | Mini Project.',
     sem6: 'Cyber Security | Big Data Analytics | Major Project.',
   },
-  'mangalay-universi||BBA': {
+  'mangalayatan-university-online||BBA': {
     sem1: 'Fundamentals of Management | Business Math | Managerial Economics | Financial Accounting | Environmental Studies | English',
     sem2: 'Macro Economics | Business Statistics | Business Ethics & CSR | Communication Lab',
     sem3: 'Management Accounting | Principles of Marketing | Business Laws | IT Tools for Business',
@@ -3822,7 +3822,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Business Policy & Strategy | Financial Management | Operations Management | Summer Training Report',
     sem6: 'Management Information System | Industrial Project',
   },
-  'mangalay-universi||BCA': {
+  'mangalayatan-university-online||BCA': {
     sem1: 'Computer Fundamentals | Programming in C | Math | Web Designing | Communication Skills',
     sem2: 'Data Structures | OOP with C++ | Math-2 | DBMS',
     sem3: 'Java Programming | Computer Networks | Software Engineering | Python',
@@ -3830,7 +3830,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Cloud Computing | Information Security | Summer Internship',
     sem6: 'Machine Learning | Major Project',
   },
-  'yenepoya-universi||B.Com': {
+  'yenepoya-university-online||B.Com': {
     sem1: 'Financial Accounting | Business Economics | Business Management | Business Law',
     sem2: 'Corporate Accounting | Marketing Management | Business Statistics',
     sem3: 'Cost Accounting | Income Tax | Banking & Finance',
@@ -3838,7 +3838,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Financial Management | Advanced Accounting',
     sem6: 'GST | Project Work',
   },
-  'bharati-vidyapee-universi||BBA': {
+  'bharati-vidyapeeth-university-online||BBA': {
     sem1: 'Management Fundamentals | Business Mathematics | Managerial Economics | Financial Accounting',
     sem2: 'Macro Economics | Business Statistics | Business Ethics & CSR',
     sem3: 'Management Accounting | Principles of Marketing | Business Laws | IT Tools for Business',
@@ -3846,7 +3846,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Strategic Management | Financial Management | Operations Management | Summer Internship | Specialisation Electives I & II',
     sem6: 'MIS | Specialisation Electives III & IV | Industrial Project',
   },
-  'bharati-vidyapee-universi||BCA': {
+  'bharati-vidyapeeth-university-online||BCA': {
     sem1: 'IT Trends | Foundation of Programming | Digital Computer Fundamentals | Web Designing Fundamentals | Communication Skills',
     sem2: 'E-Commerce Fundamentals | Advanced Web Designing | OOP | Database Fundamentals',
     sem3: 'Computer Oriented Management Systems | System Analysis & Design | Data Structures & Algorithms',
@@ -3854,7 +3854,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'OOP using JAVA | Fundamentals of Visual Programming | Multi-Paradigms Programming | Elective-II',
     sem6: 'Basics of Mobile Applications | Software Testing | Project Work',
   },
-  'koneru-lakshmai-educatio-found||BBA': {
+  'kl-university-online||BBA': {
     sem1: 'Integrated Professional English | Business Mathematics | Business Environment | Business Economics | Perspectives of Management | IT for Business Managers | Ecology & Environment',
     sem2: 'English Proficiency | Introduction to Financial Accounting | Business Statistics | MIS | Foreign Language | Design Thinking & Innovation-I',
     sem3: 'Business Communication Skills | Management Accountancy | Marketing Management | HRM | Business Research Methods | Macro Economics | Design Thinking & Innovation-II',
@@ -3862,7 +3862,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Business Analytics | Soft Skills | Fundamentals of Digital Marketing | Research Paper Writing | Elective 1',
     sem6: 'Entrepreneurship | Strategic Management | Enterprise Resource Planning | Elective 3',
   },
-  'koneru-lakshmai-educatio-found||BCA': {
+  'kl-university-online||BCA': {
     sem1: 'Integrated Professional English | Mathematics for Computer Science | Problem Solving through Programming | Computer Organization & Architecture | Ecology & Environment | Essentials of IT',
     sem2: 'English Proficiency | Data Structures | OOP through Java | Mobile App Development | Web & Social Media Technologies',
     sem3: 'Software Engineering | DBMS | Computer Networks | Web Development using Python | Design Thinking & Innovation | Internship-1 | Professional Elective 1',
@@ -3870,89 +3870,89 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Foreign Language | Corporate Readiness Skills | Internship-2 | Professional Elective 3',
     sem6: 'Major Project | Professional Elective 4 | MOOCS Certifications',
   },
-  'assam-down-town-universi||MA': {
+  'assam-don-bosco-university-online||MA': {
     sem1: 'State and its Elements | Introduction to the Public Administration | Comparative and Development Administration | Public Policy | Engaged Policy and Governance Elective Group I | Policy Formulation-Structures and processes Elective Group II',
     sem2: 'Administrative Theory and Principles | Indian Administration | Public Personnel Administration',
     sem3: 'Budget and Financial Administration in India | Social Welfare Administration | Environmental Governance | Citizens and Administration | Policy Analysis ELECTIVE GROUP I | Dissertation-Phase I | Data Management and Visualization | Innovation in Governance | Service Learning-(Community Engagement)',
     sem4: 'Decentralization and Local Governance | E-Governance | Policy Implementation (PP) ELECTIVE GROUP I | Tribal Development Policy In North East India | Dissertations-Phase II | Service-Learning Project',
   },
-  'guru-ghasidas-vishwavi||M.Com': {
+  'guru-ghasidas-vishwavidyalaya-online||M.Com': {
     sem1: 'Organizational Behaviour | Statistical Analysis | Managerial Economics | Corporate Financial Accounting | Accounting for Managerial Decisions',
     sem2: 'Computer Applications in Business | Corporate Legal Framework | Financial Management | Marketing Management',
     sem3: 'Management of Financial Services | Strategic Management | Advanced Corporate Accounting | Discipline Specific Elective (e.g. | Financial Markets | International Marketing)',
     sem4: 'Corporate Governance and Business Ethics | Dissertation | Discipline Specific Elective (e.g. | Security Analysis | Portfolio Management)',
   },
-  'guru-ghasidas-vishwavi||MA': {
+  'guru-ghasidas-vishwavidyalaya-online||MA': {
     sem1: 'Poetry I (Renaissance to Romantic) | Drama I (Shakespeare to Sheridan) | Prose | History of English Literature',
     sem2: 'Poetry II (Victorian to Modern) | Drama II (Ibsen to Beckett) | Fiction I (18th-19th Century) | Literary Criticism and Theory I',
     sem3: 'Fiction II (Modern) | Literary Criticism and Theory II | Indian Writing in English | Elective (Linguistics and Stylistics | New Literatures in English)',
     sem4: 'American Literature',
   },
-  'gujarat-universi||M.Com': {
+  'gujarat-university-online||M.Com': {
   },
-  'dr-babasahe-ambedkar-open||MA': {
+  'dr-babasaheb-ambedkar-open-university-online||MA': {
     sem1: 'Microeconomics – I | Macroeconomics – I | Quantitative Methods in Economics – I | Environmental Economics – I | Industrial Economics- I.',
     sem2: 'Microeconomics- II | Macroeconomics- II | Environmental Economics – II | Industrial Economics- II | Cooperation.',
     sem3: 'International Economics | Quantitative Methods in Economics- II | Economics of Demography | Public Economics',
     sem4: 'Indian Economy | Theories of Economic Growth and Development | Indian Economic Thinkers | Financial Institutions and Market | Modern Economic Philosophy OR Project.',
   },
-  'pp-savani-universi||M.Com': {
+  'pp-savani-university-online||M.Com': {
   },
-  'manav-rachna-internat-institut||M.Com': {
+  'manav-rachna-online||M.Com': {
     sem1: 'Economics for Managerial Decisions – I | Quantitative Techniques | Accounting Theory and Practices | Marketing Management | Organisation Theory and Behaviour.',
     sem2: 'Cost and Management Accounting | Human Resource Management | Financial Management and Policy | Economics for Managerial Decisions – II | E-Commerce.',
     sem3: 'Business Policy and Strategic Management | Corporate Accounting Practices | Advanced Business',
     sem4: 'International Accounting | Financial Analytics | Marketing Analytics | Direct Taxation | Indirect Taxation | Investment Analysis and Portfolio Management | Project Management.',
   },
-  'universi-of-himachal-pradesh||MA': {
+  'central-university-himachal-pradesh-online||MA': {
     sem1: 'Microeconomic Theory | Mathematics for Economists | Contemporary issues in Indian Economy-I | Statistical Methods | Basics of Macro Economics | Indian Knowledge System | Foundation of Indian Culture.',
     sem2: 'Macroeconomic Theory | Development Economics | International Economics | Introductory Econometrics | Indian Economic Thought (IKS) | Contemporary Issues in Indian Economy-II | Cultural Heritage of Bharat.',
     sem3: 'Public Economics',
     sem4: 'Agricultural Economics | Econometrics with Statistical Software - II | Academic Writing for Economics (Theory) | Academic Writing for Economics (VivaVoce) | Dissertation (M.A.) | Viva-Voce.',
   },
-  'universi-of-mysore||M.Com': {
+  'university-of-mysore-online||M.Com': {
     sem1: 'Business Policy and Environment | Statistical Analysis | Marketing Management | Financial Management | Accounting Theory | Business Communication.',
     sem2: 'Managerial Economics',
     sem3: 'Strategic Management | Advanced Cost and Management Accounting | Elective 1 | Elective 2 | Elective 3.',
     sem4: 'International Business | Corporate Governance and Business Ethics | Elective 4 | Elective 5 | Dissertation / Project.',
   },
-  'sathyaba-institut-of-science||MSc': {
+  'sathyabama-university-online||MSc': {
     sem1: 'Financial Accounting-I | Business Economics | Business Management | English-I | Tamil-I/Hindi-I.',
     sem2: 'Financial Accounting-II | Marketing Management | Business Mathematics | English-II | Tamil-II/Hindi-II.',
     sem3: 'Corporate Accounting-I | Business Law | Banking Theory Law &amp | Practice | Business Statistics | Environmental Science.',
     sem4: 'Corporate Accounting-II | Company Law | Indirect Taxes | Cost Accounting | General Proficiency.',
   },
-  'manonman-sundaran-universi||MA': {
+  'manonmaniam-sundaranar-university-online||MA': {
     sem1: 'Micro Economic Analysis I | Macro Economic Analysis I | Mathematical Economics | Indian Economy',
     sem2: 'Micro Economic Analysis II | Macro Economic Analysis II | Statistical Methods for Economics',
     sem3: 'Public Economics | International Economics | Environmental Economics | Development Economics',
     sem4: 'Monetary Economics | Industrial Economics | Agricultural Economics | Dissertation/Project',
   },
-  'sharda-universi||M.Com': {
+  'sharda-university-online||M.Com': {
     sem1: 'Managerial Economics | Financial Accounting | Organizational Behaviour | Business Statistics | IT for Managers',
     sem2: 'Financial Management',
     sem3: 'Blockchain Technology in Finance | Algorithmic Trading | Cybersecurity in Banking | Insurtech &amp | Wealthtech | Elective I',
     sem4: 'Regtech &amp | Compliance | Fintech Strategy &amp | Innovation | Master Project/Dissertation',
   },
-  'andhra-universi||MA': {
+  'andhra-university-online||MA': {
     sem1: 'Foundations of Sociology | Sociological Theories-I',
     sem2: 'Research Methods in Social Sciences | Indian Social Structure',
     sem3: 'Political Sociology | Economic Sociology',
     sem4: 'Contemporary Sociological Theories | Project',
   },
-  'mangalay-universi||MSc': {
+  'mangalayatan-university-online||MSc': {
     sem1: 'Advanced Abstract Algebra | Topology | Integral Transforms | Special Functions | MATLAB | Differential Geometry',
     sem2: 'Measure Theory & Integration | PDEs | Discrete Mathematics | Analytical Mechanics',
     sem3: 'Functional Analysis | Mathematical Statistics | Optimisation Techniques | Fluid Mechanics | Python',
     sem4: 'Integral Equation | Operation Research | Integral Transforms | MATLAB | Graph Theory',
   },
-  'mangalay-universi||M.Com': {
+  'mangalayatan-university-online||M.Com': {
     sem1: 'Principles of Management | Financial Accounting | Marketing Management | Cost Accounting/Indian Financial System | Management of Self & Career',
     sem2: 'Financial Management | Indian Economic Policy | Business Environment | Management Accounting/Security Analysis | Operations of Stock Exchanges',
     sem3: 'Tax Planning & Management | Research Methodology | Accounting & Control System/Portfolio Management',
     sem4: 'Strategic Management | International Business | Corporate Governance & Business Ethics | Dissertation',
   },
-  'mangalay-universi||MA': {
+  'mangalayatan-university-online||MA': {
     sem1: 'Poetry-I (Renaissance to Romantic) | Drama-I (Shakespeare to Restoration) | Prose | History of English Literature 1500-1660',
     sem2: 'Poetry-II (Victorian to Modern) | Drama-II | Fiction-I (18th-19th Century) | Literary Criticism & Theory I',
     sem3: 'Fiction-II (Modern) | Literary Criticism & Theory II | Indian Writing in English | Electives',
