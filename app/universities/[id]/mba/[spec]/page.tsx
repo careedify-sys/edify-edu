@@ -1,5 +1,5 @@
-// app/universities/[id]/online-mba/[spec]/page.tsx
-// University MBA Specialization Page - e.g., /universities/amity/online-mba/marketing
+// app/universities/[id]/mba/[spec]/page.tsx
+// University MBA Specialization Page - e.g., /universities/amity/mba/marketing
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
@@ -49,12 +49,12 @@ export async function generateMetadata(
     title,
     description,
     alternates: {
-      canonical: `https://edifyedu.in/universities/${u.id}/online-mba/${specSlug}`,
+      canonical: `https://edifyedu.in/universities/${u.id}/mba/${specSlug}`,
     },
     openGraph: {
       title,
       description,
-      url: `https://edifyedu.in/universities/${u.id}/online-mba/${specSlug}`,
+      url: `https://edifyedu.in/universities/${u.id}/mba/${specSlug}`,
       type: 'website',
       images: [{ url: '/og.webp', width: 1200, height: 630 }],
     },

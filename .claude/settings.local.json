@@ -60,7 +60,17 @@
       "Bash(grep -v \"^\\\\-\\\\-$\")",
       "Bash(xargs grep:*)",
       "Bash(grep -rn \"Fetching all sheets\\\\|0 unis\\\\|0 posts\\\\|Fetched:\" C:/Users/91706/Downloads/edify-v16-final-with-cms/edify-next/ --include=*.ts --include=*.tsx --include=*.js --include=*.mjs)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "WebFetch(domain:www.edifyedu.in)",
+      "WebFetch(domain:edifyedu.in)",
+      "WebSearch",
+      "Bash(winget upgrade:*)",
+      "WebFetch(domain:collegevidya.com)",
+      "Bash(cat -n app/universities/[id]/[program]/page.tsx)",
+      "Bash(find C:Users91706Downloadsedify-v16-final-with-cmsedify-next/public -type f \\\\\\(-name *.jpg -o -name *.png \\\\\\))",
+      "Bash(cat app/universities/[id]/[program]/[spec]/page.tsx)",
+      "Bash(npx next:*)",
+      "Bash(grep -n \"getMasterSyllabus\\\\|getUniversitySyllabus\\\\|case ''''\\\\|''''mba''''\\\\|''''mca''''\" lib/content.ts)"
     ]
   }
 }

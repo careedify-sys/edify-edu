@@ -49,7 +49,7 @@ export default function SpecializationPageClient({ university: u, program, speci
   const specContentRaw = getSpecContent(specialization) || getSpecFallback(specialization, program)
   const specContent = { ...(specContentRaw || {}), ...(IMPROVED_SPECS[specialization.toLowerCase()] || {}) }
   const syllabus = getMasterSyllabus(u.id, program) || getUniversitySyllabus(u.id, program)
-  const programSlug = `online-${program.toLowerCase().replace(/\./g, '')}`
+  const programSlug = program.toLowerCase().replace(/\./g, '')
 
   // Get other specializations from this university
   const otherSpecs = pd?.specs?.filter(s => s !== specialization).slice(0, 6) || []

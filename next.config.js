@@ -30,6 +30,16 @@ const nextConfig = {
         permanent: true,
       },
 
+      // University program slug: online-mba → mba (removes duplicate "online" since university IDs already contain it)
+      { source: '/universities/:id/online-mba',           destination: '/universities/:id/mba',           permanent: true },
+      { source: '/universities/:id/online-mba/:path*',    destination: '/universities/:id/mba/:path*',    permanent: true },
+      { source: '/universities/:id/online-mca',           destination: '/universities/:id/mca',           permanent: true },
+      { source: '/universities/:id/online-mca/:path*',    destination: '/universities/:id/mca/:path*',    permanent: true },
+      { source: '/universities/:id/online-bba',           destination: '/universities/:id/bba',           permanent: true },
+      { source: '/universities/:id/online-bba/:path*',    destination: '/universities/:id/bba/:path*',    permanent: true },
+      { source: '/universities/:id/online-bca',           destination: '/universities/:id/bca',           permanent: true },
+      { source: '/universities/:id/online-bca/:path*',    destination: '/universities/:id/bca/:path*',    permanent: true },
+
       // Online-prefix → canonical slug
       { source: '/programs/online-mba',        destination: '/programs/mba',   permanent: true  },
       { source: '/programs/online-mca',        destination: '/programs/mca',   permanent: true  },

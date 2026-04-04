@@ -1,4 +1,4 @@
-// app/universities/[id]/online-mba/page.tsx
+// app/universities/[id]/mba/page.tsx
 // University Online MBA Page - shows all specializations
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
@@ -31,7 +31,7 @@ export async function generateMetadata(
   return {
     title,
     description,
-    alternates: { canonical: `https://edifyedu.in/universities/${u.id}/online-mba` },
+    alternates: { canonical: `https://edifyedu.in/universities/${u.id}/mba` },
     openGraph: { title, description, type: 'website' },
     robots: { index: true, follow: true },
   }
@@ -115,7 +115,7 @@ export default async function OnlineMBAPage(
             return (
               <Link
                 key={spec}
-                href={`/universities/${u.id}/online-mba/${slug}`}
+                href={`/universities/${u.id}/mba/${slug}`}
                 className="block p-5 bg-white border border-border rounded-xl hover:border-amber hover:shadow-lg transition-all no-underline group"
               >
                 <div className="text-lg font-bold text-navy mb-2 group-hover:text-amber transition-colors">

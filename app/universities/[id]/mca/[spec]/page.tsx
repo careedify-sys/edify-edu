@@ -1,4 +1,4 @@
-// app/universities/[id]/online-mca/[spec]/page.tsx
+// app/universities/[id]/mca/[spec]/page.tsx
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
@@ -36,7 +36,7 @@ export async function generateMetadata(
 
   return {
     title, description,
-    alternates: { canonical: `https://edifyedu.in/universities/${u.id}/online-mca/${specSlug}` },
+    alternates: { canonical: `https://edifyedu.in/universities/${u.id}/mca/${specSlug}` },
     openGraph: { title, description, type: 'website' },
     robots: { index: true, follow: true },
   }
