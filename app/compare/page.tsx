@@ -21,33 +21,33 @@ const PROGRAM: Program = 'MBA'
 
 // Universities that have actual MBA syllabus data in MASTER_SYLLABUS
 const MBA_UNIS_WITH_DATA = [
-  { id: 'amity', name: 'Amity University Online' },
-  { id: 'chandigarh', name: 'Chandigarh University Online' },
-  { id: 'jain', name: 'JAIN Online' },
-  { id: 'lpu', name: 'Lovely Professional University Online' },
-  { id: 'manipal-jaipur', name: 'Manipal University Jaipur (MUJ) Online' },
-  { id: 'nmims', name: 'NMIMS Online' },
-  { id: 'symbiosis', name: 'Symbiosis School for Online and Digital Learning' },
-  { id: 'universi-of-petroleu-and', name: 'UPES Online' },
-  { id: 'shoolini', name: 'Shoolini University Online' },
-  { id: 'bharati-vidyapee-universi', name: 'Bharati Vidyapeeth Online' },
-  { id: 'amrita-vishwa-vidyapee', name: 'Amrita Vishwa Vidyapeetham Online' },
-  { id: 'galgotia-universi', name: 'Galgotias University Online' },
-  { id: 'sharda-universi', name: 'Sharda University Online' },
-  { id: 'mahe-manipal', name: 'Manipal Academy of Higher Education (MAHE) Online' },
-  { id: 'sikkim-manipal', name: 'Sikkim Manipal University Online' },
-  { id: 'kurukshe-universi', name: 'Kurukshetra University Online' },
-  { id: 'uttaranc-universi', name: 'Uttaranchal University Online' },
-  { id: 'vignans-foundati-for-science', name: "Vignan's Foundation for Science & Technology Online" },
-  { id: 'dayanand-sagar-universi', name: 'Dayananda Sagar University Online' },
-  { id: 'dr-dy-patil-vidyapeeth', name: 'Dr. D.Y. Patil Vidyapeeth, Pune Online' },
-  { id: 'noida-internat-universi', name: 'Noida International University Online' },
-  { id: 'dr-mgr-educatio-and', name: 'Dr. MGR Educational and Research Institute Online' },
-  { id: 'jaypee-universi', name: 'Jaypee Institute of Information Technology Online' },
-  { id: 'assam-down-town-universi', name: 'Assam Don Bosco University Online' },
-  { id: 'chitkara-universi', name: 'Chitkara University Online' },
-  { id: 'alliance-universi', name: 'Alliance University Online' },
-  { id: 'arka-jain-universi', name: 'ARKA JAIN University Online' },
+  { id: 'amity-university-online', name: 'Amity University Online' },
+  { id: 'chandigarh-university-online', name: 'Chandigarh University Online' },
+  { id: 'jain-university-online', name: 'JAIN Online' },
+  { id: 'lovely-professional-university-online', name: 'Lovely Professional University Online' },
+  { id: 'manipal-university-jaipur-online', name: 'Manipal University Jaipur (MUJ) Online' },
+  { id: 'nmims-online', name: 'NMIMS Online' },
+  { id: 'symbiosis-university-online', name: 'Symbiosis School for Online and Digital Learning' },
+  { id: 'upes-online', name: 'UPES Online' },
+  { id: 'shoolini-university-online', name: 'Shoolini University Online' },
+  { id: 'bharati-vidyapeeth-university-online', name: 'Bharati Vidyapeeth Online' },
+  { id: 'amrita-vishwa-vidyapeetham-online', name: 'Amrita Vishwa Vidyapeetham Online' },
+  { id: 'galgotias-university-online', name: 'Galgotias University Online' },
+  { id: 'sharda-university-online', name: 'Sharda University Online' },
+  { id: 'manipal-academy-higher-education-online', name: 'Manipal Academy of Higher Education (MAHE) Online' },
+  { id: 'sikkim-manipal-university-online', name: 'Sikkim Manipal University Online' },
+  { id: 'kurukshetra-university-online', name: 'Kurukshetra University Online' },
+  { id: 'uttaranchal-university-online', name: 'Uttaranchal University Online' },
+  { id: 'vignan-university-online', name: "Vignan's Foundation for Science & Technology Online" },
+  { id: 'dayananda-sagar-university-online', name: 'Dayananda Sagar University Online' },
+  { id: 'dr-dy-patil-vidyapeeth-online', name: 'Dr. D.Y. Patil Vidyapeeth, Pune Online' },
+  { id: 'noida-international-university-online', name: 'Noida International University Online' },
+  { id: 'dr-mgr-educational-research-institute-online', name: 'Dr. MGR Educational and Research Institute Online' },
+  { id: 'jaypee-university-online', name: 'Jaypee Institute of Information Technology Online' },
+  { id: 'assam-don-bosco-university-online', name: 'Assam Don Bosco University Online' },
+  { id: 'chitkara-university-online', name: 'Chitkara University Online' },
+  { id: 'alliance-university-online', name: 'Alliance University Online' },
+  { id: 'arka-jain-university-online', name: 'ARKA JAIN University Online' },
 ]
 
 const progSlug = (p: Program) => p.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
@@ -309,7 +309,7 @@ function CompareContent() {
     if (unique.length > 0) {
       setSelectedIds(unique.slice(0, 3))
     } else {
-      setSelectedIds(['jain', 'amity'])
+      setSelectedIds(['jain-university-online', 'amity-university-online'])
     }
     setInitialized(true)
   }, [searchParams, initialized])

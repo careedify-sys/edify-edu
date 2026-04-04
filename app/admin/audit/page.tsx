@@ -28,11 +28,11 @@ const AUDIT_CHECKS = [
   { id: 'msc',         round: 2, label: '/programs/msc resolves',            url: '/programs/msc',             expect: 200 },
 
   // ── Round 3: University pages ────────────────────────────────────────
-  { id: 'amity',       round: 3, label: 'Amity uni page',                    url: '/universities/amity',       expect: 200 },
+  { id: 'amity-university-online',       round: 3, label: 'Amity uni page',                    url: '/universities/amity',       expect: 200 },
   { id: 'amity-mba',   round: 3, label: 'Amity MBA page',                    url: '/universities/amity/mba',   expect: 200 },
-  { id: 'lpu',         round: 3, label: 'LPU uni page',                      url: '/universities/lpu',         expect: 200 },
-  { id: 'jain',        round: 3, label: 'JAIN uni page',                     url: '/universities/jain',        expect: 200 },
-  { id: 'symbiosis',   round: 3, label: 'Symbiosis MBA page',               url: '/universities/symbiosis/mba', expect: 200 },
+  { id: 'lovely-professional-university-online',         round: 3, label: 'LPU uni page',                      url: '/universities/lpu',         expect: 200 },
+  { id: 'jain-university-online',        round: 3, label: 'JAIN uni page',                     url: '/universities/jain',        expect: 200 },
+  { id: 'symbiosis-university-online',   round: 3, label: 'Symbiosis MBA page',               url: '/universities/symbiosis/mba', expect: 200 },
   { id: 'mahe',        round: 3, label: 'MAHE Manipal page',                url: '/universities/mahe-manipal', expect: 200 },
   { id: 'manipal-404', round: 3, label: 'Old /universities/manipal → 404 (redirects to mahe)', url: '/universities/manipal', expect: 'redirect' },
 

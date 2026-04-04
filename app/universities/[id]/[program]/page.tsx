@@ -16,9 +16,9 @@ const PM: Record<string, Program> = {
 // Others are served via ISR (dynamicParams = true) on first request, then cached.
 export async function generateStaticParams() {
   const TOP_UNI_IDS = [
-    'amity', 'chandigarh', 'jain', 'lpu', 'manipal-jaipur',
-    'nmims', 'symbiosis', 'mahe-manipal', 'sikkim-manipal', 'sharda-universi',
-    'amrita-vishwa-vidyapee', 'chitkara-universi', 'alliance-universi',
+    'amity-university-online', 'chandigarh-university-online', 'jain-university-online', 'lovely-professional-university-online', 'manipal-university-jaipur-online',
+    'nmims-online', 'symbiosis-university-online', 'manipal-academy-higher-education-online', 'sikkim-manipal-university-online', 'sharda-university-online',
+    'amrita-vishwa-vidyapeetham-online', 'chitkara-university-online', 'alliance-university-online',
   ]
   const TOP_PROGRAMS = ['mba', 'mca']
   const params: { id: string; program: string }[] = []

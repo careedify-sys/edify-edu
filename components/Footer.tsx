@@ -39,11 +39,11 @@ export default function Footer() {
           <div>
             <h4 className="text-xs font-bold uppercase tracking-widest mb-5 text-amber">Top Universities</h4>
             {[
-              { label:'NMIMS Online',     href:'/universities/nmims' },
-              { label:'Symbiosis SSODL',   href:'/universities/symbiosis' },
-              { label:'Manipal Online',   href:'/universities/manipal-jaipur' },
-              { label:'LPU Online',       href:'/universities/lpu' },
-              { label:'Amity Online',     href:'/universities/amity' },
+              { label:'NMIMS Online',     href:'/universities/nmims-online' },
+              { label:'Symbiosis SSODL',   href:'/universities/symbiosis-university-online' },
+              { label:'Manipal Online',   href:'/universities/manipal-university-jaipur-online' },
+              { label:'LPU Online',       href:'/universities/lovely-professional-university-online' },
+              { label:'Amity Online',     href:'/universities/amity-university-online' },
               { label:'View All 100+ →',  href:'/universities' },
             ].map(l => (
               <Link key={l.href} href={l.href} className="footer-link">{l.label}</Link>

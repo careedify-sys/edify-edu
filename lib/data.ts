@@ -104,7 +104,7 @@ export function getUniversitiesBySpec(program: Program, spec: string) {
 
 export const UNIVERSITIES: University[] = [
   {
-    id: 'jain',
+    id: 'jain-university-online',
     logo: '/logos/university_logos/jain_university-logo.svg',
     name: 'JAIN (Deemed-to-be University) Online',
     abbr: 'JUJOD',
@@ -184,7 +184,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'amity',
+    id: 'amity-university-online',
     logo: '/logos/university_logos/amity-online-university-logo_2.svg',
     name: 'Amity University Online',
     abbr: 'AUO',
@@ -267,7 +267,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'lpu',
+    id: 'lovely-professional-university-online',
     logo: '/logos/university_logos/lpu-logo.svg',
     name: 'Lovely Professional University Online',
     abbr: 'LPUO',
@@ -369,7 +369,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'dayanand-sagar-universi',
+    id: 'dayananda-sagar-university-online',
     name: 'Dayananda Sagar University Online',
     abbr: 'DSUO',
     city: 'Online',
@@ -448,7 +448,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'dypatil',
+    id: 'dy-patil-university-online',
     name: 'D.Y. Patil University, Navi Mumbai Online',
     abbr: 'DPUNM',
     city: 'Sector 7',
@@ -517,7 +517,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'universi-of-petroleu-and',
+    id: 'upes-online',
     logo: '/logos/university_logos/upes-logo-black.svg',
     name: 'University of Petroleum & Energy Studies (UPES) Online',
     abbr: 'UOPES',
@@ -589,7 +589,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'parul-universi',
+    id: 'parul-university-online',
     logo: '/logos/university_logos/online_parul_university_logo.svg',
     name: 'Parul University Online',
     abbr: 'PUO',
@@ -689,7 +689,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'amrita-vishwa-vidyapee',
+    id: 'amrita-vishwa-vidyapeetham-online',
     logo: '/logos/university_logos/amrita-online-logo.svg',
     name: 'Amrita Vishwa Vidyapeetham Online',
     abbr: 'AVVA',
@@ -780,7 +780,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'mangalay-universi',
+    id: 'mangalayatan-university-online',
     name: 'Mangalayatan University Online',
     abbr: 'MUO',
     city: 'Aligarh',
@@ -879,7 +879,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'shoolini',
+    id: 'shoolini-university-online',
     logo: '/logos/university_logos/shoolini-university-online-logo.svg',
     name: 'Shoolini University Online',
     abbr: 'SUSO',
@@ -969,7 +969,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'manipal-jaipur',
+    id: 'manipal-university-jaipur-online',
     logo: '/logos/university_logos/muj-logo.svg',
     name: 'Manipal University Jaipur (MUJ) Online',
     abbr: 'MUJOM',
@@ -1069,7 +1069,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'galgotia-universi',
+    id: 'galgotias-university-online',
     name: 'Galgotias University Online',
     abbr: 'GUO',
     city: 'Greater Noida',
@@ -1148,7 +1148,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'sikkim-manipal',
+    id: 'sikkim-manipal-university-online',
     logo: '/logos/university_logos/sikkim-manipal-university-logo.svg',
     name: 'Sikkim Manipal University Online',
     abbr: 'SMUOM',
@@ -1228,7 +1228,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'symbiosis',
+    id: 'symbiosis-university-online',
     logo: '/logos/university_logos/SSODL.svg',
     name: 'Symbiosis School for Online and Digital Learning (SSODL), Pune Online',
     abbr: 'SSODL',
@@ -1309,7 +1309,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'chitkara-universi',
+    id: 'chitkara-university-online',
     logo: '/logos/university_logos/chitkara-university-online.svg',
     name: 'Chitkara University Online',
     abbr: 'CUCDO',
@@ -1379,7 +1379,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'yenepoya-universi',
+    id: 'yenepoya-university-online',
     name: 'Yenepoya (Deemed to be University) Online',
     abbr: 'YUO',
     city: 'Deralakatte',
@@ -1448,7 +1448,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'sharda-universi',
+    id: 'sharda-university-online',
     name: 'Sharda University Online',
     abbr: 'SUO',
     city: 'Greater Noida',
@@ -1537,7 +1537,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'vignans-foundati-for-science',
+    id: 'vignan-university-online',
     name: "Vignan's Foundation for Science, Technology & Research Online",
     abbr: 'VFSTR',
     city: 'Guntur',
@@ -1606,7 +1606,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'manonman-sundaran-universi',
+    id: 'manonmaniam-sundaranar-university-online',
     name: 'Manonmaniam Sundaranar University Online',
     abbr: 'MSUO',
     city: 'Tirunelveli',
@@ -1685,7 +1685,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'nmims',
+    id: 'nmims-online',
     logo: '/logos/university_logos/nmims-online-logo.svg',
     name: 'NMIMS (Narsee Monjee Institute of Management Studies) Online',
     abbr: 'NMIMS',
@@ -1746,7 +1746,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'mahe-manipal',
+    id: 'manipal-academy-higher-education-online',
     logo: '/logos/university_logos/mahe-manipal-online-logo.svg',
     name: 'Manipal Academy of Higher Education (MAHE) Online',
     abbr: 'MAHEO',
@@ -1827,7 +1827,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'koneru-lakshmai-educatio-found',
+    id: 'kl-university-online',
     logo: '/logos/university_logos/kl-university-online-logo.svg',
     name: 'Koneru Lakshmaiah Education Foundation (KL University) Online',
     abbr: 'KLEFU',
@@ -1898,7 +1898,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'chandigarh',
+    id: 'chandigarh-university-online',
     logo: '/logos/university_logos/cu-online.svg',
     name: 'Chandigarh University Online',
     abbr: 'CUO',
@@ -1979,7 +1979,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'visveswa-technolo-universi',
+    id: 'vtu-online',
     name: 'Visvesvaraya Technological University (VTU) Online',
     abbr: 'VTU',
     city: 'Online',
@@ -2048,7 +2048,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'integral-universi',
+    id: 'integral-university-online',
     name: 'Integral University Online',
     abbr: 'IUO',
     city: 'Lucknow',
@@ -2147,7 +2147,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'manav-rachna-internat-institut',
+    id: 'manav-rachna-online',
     logo: '/logos/university_logos/manav-rachna-university-logo.svg',
     name: 'Manav Rachna Online',
     abbr: 'MRCDO',
@@ -2247,7 +2247,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'karnatak-state-open-universi',
+    id: 'karnataka-state-open-university-online',
     name: 'Karnataka State Open University (KSOU) Online',
     abbr: 'KSOU',
     city: 'Online',
@@ -2346,7 +2346,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'bharathidasan-uni',
+    id: 'bharathidasan-university-online',
     name: 'Bharathidasan University Online',
     abbr: 'BUO',
     city: 'Tiruchirappalli',
@@ -2405,7 +2405,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'hindusta-institut-of-technolo',
+    id: 'hindustan-institute-technology-online',
     name: 'Hindustan Institute of Technology and Science (CODE) Online',
     abbr: 'HITS',
     city: 'Chennai',
@@ -2446,7 +2446,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'guru-ghasidas-vishwavi',
+    id: 'guru-ghasidas-vishwavidyalaya-online',
     name: 'Guru Ghasidas Vishwavidyalaya (GGU) Online',
     abbr: 'GGV',
     city: 'Online',
@@ -2525,7 +2525,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'dr-babasahe-ambedkar-open',
+    id: 'dr-babasaheb-ambedkar-open-university-online',
     name: 'Dr. Babasaheb Ambedkar Open University Online',
     abbr: 'DBAOU',
     city: 'Online',
@@ -2604,7 +2604,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'marwadi-universi',
+    id: 'marwadi-university-online',
     name: 'Marwadi University Online',
     abbr: 'MU',
     city: 'Online',
@@ -2693,7 +2693,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'pp-savani-universi',
+    id: 'pp-savani-university-online',
     name: 'P P Savani University Online',
     abbr: 'PPSU',
     city: 'Online',
@@ -2772,7 +2772,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'universi-of-mysore',
+    id: 'university-of-mysore-online',
     name: 'University of Mysore Online',
     abbr: 'UM',
     city: 'Online',
@@ -2861,7 +2861,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'aligarh-muslim-universi',
+    id: 'aligarh-muslim-university-online',
     name: 'Aligarh Muslim University Online',
     abbr: 'AMUD',
     city: 'Aligarh',
@@ -2931,7 +2931,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'gujarat-universi',
+    id: 'gujarat-university-online',
     name: 'Gujarat University Online',
     abbr: 'GUDO',
     city: 'Online',
@@ -3010,7 +3010,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'charotar-universi-of-science',
+    id: 'charusat-university-online',
     name: 'CHARUSAT (Charotar University of Science and Online',
     abbr: 'CUS',
     city: 'Online',
@@ -3079,7 +3079,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'gls-universi',
+    id: 'gls-university-online',
     name: 'GLS University Online',
     abbr: 'GUDO',
     city: 'Online',
@@ -3148,7 +3148,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'maharish-markande-universi',
+    id: 'maharishi-markandeshwar-university-online',
     name: 'Maharishi Markandeshwar (Deemed to be University) Online',
     abbr: 'MMU',
     city: 'Online',
@@ -3237,7 +3237,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'mizoram-universi',
+    id: 'mizoram-university-online',
     name: 'Mizoram University (MZU) Online',
     abbr: 'MU',
     city: 'Aizawl',
@@ -3276,7 +3276,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'vivekana-global-universi',
+    id: 'vivekananda-global-university-online',
     logo: '/logos/university_logos/vivekananda-global-university-logo.svg',
     name: 'Vivekananda Global University Online',
     abbr: 'VGUO',
@@ -3356,7 +3356,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'dr-mgr-educatio-and',
+    id: 'dr-mgr-educational-research-institute-online',
     name: 'Dr. MGR Educational and Research Institute Online',
     abbr: 'DMERI',
     city: 'Chennai',
@@ -3395,7 +3395,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'uttaranc-universi',
+    id: 'uttaranchal-university-online',
     logo: '/logos/university_logos/uttaranchal-online-university-logo_1.svg',
     name: 'Uttaranchal University Online',
     abbr: 'UUUDO',
@@ -3475,7 +3475,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'andhra-universi',
+    id: 'andhra-university-online',
     logo: '/logos/university_logos/andhra-university-online-logo.svg',
     name: 'Andhra University Online',
     abbr: 'AUOA',
@@ -3536,7 +3536,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'sgt-universi',
+    id: 'sgt-university-online',
     name: 'SGT University Online',
     abbr: 'SUDO',
     city: 'Online',
@@ -3605,7 +3605,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'universi-of-himachal-pradesh',
+    id: 'central-university-himachal-pradesh-online',
     name: 'Central University of Himachal Pradesh Online',
     abbr: 'CUHP',
     city: 'Online',
@@ -3654,7 +3654,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'mahatma-gandhi-universi',
+    id: 'mahatma-gandhi-university-online',
     name: 'Mahatma Gandhi University Online',
     abbr: 'MGU',
     city: 'Kottayam',
@@ -3693,7 +3693,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'vellore-institut-of-technolo',
+    id: 'vit-university-online',
     name: 'Vellore Institute of Science and Technology (VIT Online',
     abbr: 'VIST',
     city: 'Vellore',
@@ -3733,7 +3733,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'karunya-institut-of-technolo',
+    id: 'karunya-university-online',
     name: 'Karunya Institute of Technology and Sciences (KCODE) Online',
     abbr: 'KITS',
     city: 'Coimbatore',
@@ -3782,7 +3782,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'kurukshe-universi',
+    id: 'kurukshetra-university-online',
     logo: '/logos/university_logos/kurukshetra-university-logo.svg',
     name: 'Kurukshetra University Online',
     abbr: 'KUO',
@@ -3862,7 +3862,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'sastra-deemed-universi',
+    id: 'sastra-university-online',
     name: 'SASTRA Deemed University Online',
     abbr: 'SDUO',
     city: 'Thanjavur',
@@ -3911,7 +3911,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'dr-dy-patil-vidyapeeth',
+    id: 'dr-dy-patil-vidyapeeth-online',
     logo: '/logos/university_logos/dpu-online.svg',
     name: 'Dr. D.Y. Patil Vidyapeeth, Pune – Centre for Online Learning (DPU-COL) Online',
     abbr: 'DDPVP',
@@ -3951,7 +3951,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'jamia-millia-islamia-universi',
+    id: 'jamia-millia-islamia-online',
     name: 'Jamia Millia Islamia (JMI) Online',
     abbr: 'JMI',
     city: 'Online',
@@ -3992,7 +3992,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'christ-deemed-to-be',
+    id: 'christ-university-online',
     name: 'Christ (Deemed to be University) Online',
     abbr: 'CUO',
     city: 'Online',
@@ -4061,7 +4061,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'shobhit-universi',
+    id: 'shobhit-university-online',
     name: 'Shobhit Institute of Engineering & Technology (Shobhit Online',
     abbr: 'SIET',
     city: 'Meerut',
@@ -4130,7 +4130,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'bharati-vidyapee-universi',
+    id: 'bharati-vidyapeeth-university-online',
     logo: '/logos/university_logos/bvdu-logo.svg',
     name: 'Bharati Vidyapeeth (Deemed to be University) Online',
     abbr: 'BVUO',
@@ -4200,7 +4200,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'assam-down-town-universi',
+    id: 'assam-don-bosco-university-online',
     name: 'Assam Don Bosco University Online',
     abbr: 'ADBUC',
     city: 'Guwahati',
@@ -4269,7 +4269,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'universi-of-lucknow',
+    id: 'university-of-lucknow-online',
     name: "University of Lucknow Online",
     abbr: 'ULCDO',
     city: 'Lucknow',
@@ -4338,7 +4338,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'jss-academy-of-higher',
+    id: 'jss-university-online',
     name: 'JSS Academy of Higher Education & Research (JSS AHER) Online',
     abbr: 'JAHER',
     city: 'Online',
@@ -4387,7 +4387,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'alliance-universi',
+    id: 'alliance-university-online',
     logo: '/logos/university_logos/alliance-university-logo.svg',
     name: 'Alliance University Online',
     abbr: 'AU',
@@ -4447,7 +4447,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'desh-bhagat-universi',
+    id: 'desh-bhagat-university-online',
     name: 'Desh Bhagat University Online',
     abbr: 'DBUO',
     city: 'Mandi Gobindgarh',
@@ -4506,7 +4506,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'ganpat-universi',
+    id: 'ganpat-university-online',
     name: 'Ganpat University Online',
     abbr: 'GU',
     city: 'Mehsana',
@@ -4565,7 +4565,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'amet-universi',
+    id: 'amet-university-online',
     name: 'AMET University (Academy of Maritime Education and Online',
     abbr: 'AUME',
     city: 'Kanathur',
@@ -4624,7 +4624,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'guru-nanak-dev-universi',
+    id: 'guru-nanak-dev-university-online',
     name: 'Guru Nanak Dev University Online',
     abbr: 'GNDUO',
     city: 'Amritsar',
@@ -4683,7 +4683,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'jaypee-universi',
+    id: 'jaypee-university-online',
     logo: '/logos/university_logos/jaypee-institute-of-information-technology-logo.svg',
     name: 'Jaypee Institute of Information Technology Online',
     abbr: 'JIITO',
@@ -4733,7 +4733,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'savitrib-phule-pune-universi',
+    id: 'savitribai-phule-pune-university-online',
     name: 'Savitribai Phule Pune University (SPPU) Online',
     abbr: 'SPPUC',
     city: 'Ganeshkhind',
@@ -4782,7 +4782,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'srm-sikkim-universi',
+    id: 'srm-university-sikkim-online',
     name: 'SRM University Sikkim Online',
     abbr: 'SRMUS',
     city: 'Gangtok',
@@ -4894,7 +4894,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#C0392B',
   },  {
-    id: 'sathyaba-institut-of-science',
+    id: 'sathyabama-university-online',
     name: 'Sathyabama Institute of Science and Technology (Centre Online',
     abbr: 'SIST',
     city: 'Chennai',
@@ -4943,7 +4943,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'vellore-vit-online',
+    id: 'vit-vellore-online',
     name: 'Vellore Institute of Technology Online',
     abbr: 'VITO',
     city: 'Vellore',
@@ -4992,7 +4992,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'karunya-kcode-universi',
+    id: 'karunya-kcode-online',
     name: 'Karunya Institute of Technology and Sciences (KCODE Online',
     abbr: 'KITS',
     city: 'Coimbatore',
@@ -5041,7 +5041,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'anna-universi',
+    id: 'anna-university-online',
     name: 'Anna University Online',
     abbr: 'AUDE',
     city: 'Chennai',
@@ -5091,7 +5091,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'vels-institut-of-science',
+    id: 'vels-university-online',
     name: 'Vels Institute of Science, Technology & Advanced Online',
     abbr: 'VISTA',
     city: 'Pallavaram',
@@ -5140,7 +5140,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'northcap-universi',
+    id: 'northcap-university-online',
     name: 'The NorthCap University Online',
     abbr: 'TNUO',
     city: 'Gurugram',
@@ -5189,7 +5189,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'noida-internat-universi',
+    id: 'noida-international-university-online',
     logo: '/logos/university_logos/noida-international-university.svg',
     name: 'Noida International University Online',
     abbr: 'NIUO',
@@ -5239,7 +5239,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'iift',
+    id: 'iift-online',
     name: 'Indian Institute of Foreign Trade (IIFT) Online',
     abbr: 'IIFT',
     city: 'New Delhi',
@@ -5279,7 +5279,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'gujarat-technolo-universi',
+    id: 'gujarat-technological-university-online',
     name: 'Gujarat Technological University (GTU) Online',
     abbr: 'GTU',
     city: 'Online',
@@ -5318,7 +5318,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'birla-institut-of-technolo',
+    id: 'bits-pilani-online',
     name: 'Birla Institute of Technology (BIT) Mesra Online',
     abbr: 'BITM',
     city: 'Online',
@@ -5359,7 +5359,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'alvas-college',
+    id: 'alvas-college-online',
     name: "Alva's College (Autonomous) - ACU Online",
     abbr: 'ACAO',
     city: 'Online',
@@ -5398,7 +5398,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'datta-meghe-institut-of',
+    id: 'datta-meghe-university-online',
     name: 'Datta Meghe Institute of Higher Education & Research Online',
     abbr: 'DMIHE',
     city: 'Wardha / Nagpur',
@@ -5437,7 +5437,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'kiit-universi',
+    id: 'kiit-university-online',
     name: 'KIIT Deemed to be University Online',
     abbr: 'KDU',
     city: 'Bhubaneswar',
@@ -5478,7 +5478,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'centurio-universi-of-technolo',
+    id: 'centurion-university-online',
     name: 'Centurion University of Technology and Management Online',
     abbr: 'CUTM',
     city: 'Gajapati / Bhubaneswar',
@@ -5517,7 +5517,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'guru-kashi-universi',
+    id: 'guru-kashi-university-online',
     name: 'Guru Kashi University Online',
     abbr: 'GKUO',
     city: '',
@@ -5556,7 +5556,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'jaipur-national-universi',
+    id: 'jaipur-national-university-online',
     name: 'Jaipur National University Online',
     abbr: 'JNUJ',
     city: 'Jaipur',
@@ -5595,7 +5595,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'bs-abdur-rahman-institut',
+    id: 'bs-abdur-rahman-university-online',
     name: 'B.S. Abdur Rahman Crescent Institute of Science and Online',
     abbr: 'BARCI',
     city: 'Vandalur',
@@ -5634,7 +5634,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'srm-institut-of-science',
+    id: 'srm-institute-science-technology-online',
     name: 'SRM Institute of Science and Technology Online',
     abbr: 'SRMIST',
     city: 'Kattankulathur',
@@ -5767,7 +5767,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#C0392B',
   },  {
-    id: 'universi-of-madras',
+    id: 'university-of-madras-online',
     name: 'University of Madras Online',
     abbr: 'UMDE',
     city: 'Chennai',
@@ -5806,7 +5806,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'kalasali-academy-of-research',
+    id: 'kalasalingam-university-online',
     name: 'Kalasalingam Academy of Research and Education (KARE) Online',
     abbr: 'KARE',
     city: 'Krishnankoil',
@@ -5846,7 +5846,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'alagappa-universi',
+    id: 'alagappa-university-online',
     name: 'Alagappa University Online',
     abbr: 'AUOP',
     city: '',
@@ -5885,7 +5885,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'bharathi-universi',
+    id: 'bharathiar-university-online',
     name: 'Bharathiar University Online',
     abbr: 'BUDE',
     city: 'Coimbatore',
@@ -5924,7 +5924,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'sri-ramachandra-universi',
+    id: 'sri-ramachandra-university-online',
     name: 'Sri Ramachandra Institute of Higher Education and Online',
     abbr: 'SRIHE',
     city: 'Chennai',
@@ -5963,7 +5963,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'icfai-foundati-for-higher',
+    id: 'icfai-university-online',
     name: 'ICFAI Foundation for Higher Education Online',
     abbr: 'IFHEO',
     city: 'Hyderabad',
@@ -6003,7 +6003,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'shiv-nadar-institut-of',
+    id: 'shiv-nadar-university-online',
     name: 'Shiv Nadar University Online',
     abbr: 'SNUE',
     city: 'Greater Noida',
@@ -6042,7 +6042,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'gla-universi',
+    id: 'gla-university-online',
     name: 'GLA University Online',
     abbr: 'GUO',
     city: 'Mathura',
@@ -6121,7 +6121,7 @@ export const UNIVERSITIES: University[] = [
     color: '#2563EB',
   },
   {
-    id: 'jagan-nath-universi',
+    id: 'jagannath-university-online',
     name: 'Jagan Nath University Online',
     abbr: 'JNU',
     city: 'Jaipur',
@@ -6160,7 +6160,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'teerthanker-universi',
+    id: 'teerthanker-mahaveer-university-online',
     name: 'Teerthanker Mahaveer University Online',
     abbr: 'TMUO',
     city: 'Moradabad',
@@ -6199,7 +6199,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'subharti-universi',
+    id: 'subharti-university-online',
     name: 'Swami Vivekanand Subharti University Online',
     abbr: 'SVSUO',
     city: 'Meerut',
@@ -6238,7 +6238,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'arka-jain-universi',
+    id: 'arka-jain-university-online',
     name: 'ARKA JAIN University – JGI Online (arkajain.edu.in) Online',
     abbr: 'AJUJO',
     city: 'Jamshedpur',
@@ -6277,7 +6277,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891B2',
   },
   {
-    id: 'jawaharl-nehru-universi',
+    id: 'jawaharlal-nehru-university-online',
     name: 'JAWAHARLAL NEHRU UNIVERSITY Online',
     abbr: 'JNU',
     city: 'New Delhi',
@@ -6316,7 +6316,7 @@ export const UNIVERSITIES: University[] = [
     color: '#6366f1',
   },
   {
-    id: 'jamia-hamdard',
+    id: 'jamia-hamdard-online',
     logo: '/logos/university_logos/jamia-hamdard-online-logo.svg',
     name: 'JAMIA HAMDARD Online',
     abbr: 'JH',
@@ -6406,7 +6406,7 @@ export const UNIVERSITIES: University[] = [
     color: '#dc2626',
   },
   {
-    id: 'kalinga-institut-of-industri',
+    id: 'kalinga-institute-industrial-technology-online',
     name: 'KALINGA INSTITUTE OF INDUSTRIAL TECHNOLOGY Online',
     abbr: 'KIOIT',
     city: 'Bhubaneswar',
@@ -6476,7 +6476,7 @@ export const UNIVERSITIES: University[] = [
     color: '#b45309',
   },
   {
-    id: 'universi-of-kerala',
+    id: 'university-of-kerala-online',
     name: 'UNIVERSITY OF KERALA Online',
     abbr: 'UOK',
     city: 'Kochi',
@@ -6545,7 +6545,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0369a1',
   },
   {
-    id: 'bits-pilani-work-integrat',
+    id: 'bits-pilani-work-integrated-online',
     name: 'BITS Pilani Work Integrated Learning Programmes (WILP) Online',
     abbr: 'BPWIL',
     city: 'India',
@@ -6586,7 +6586,7 @@ export const UNIVERSITIES: University[] = [
     color: '#86198f',
   },
   {
-    id: 'graphic-era-universi',
+    id: 'graphic-era-university-online',
     name: 'GRAPHIC ERA UNIVERSITY Online',
     abbr: 'GEU',
     city: 'Dehradun',
@@ -6666,7 +6666,7 @@ export const UNIVERSITIES: University[] = [
     color: '#059669',
   },
   {
-    id: 'devi-ahilya-vishwavi',
+    id: 'devi-ahilya-vishwavidyalaya-online',
     name: 'DEVI AHILYA VISHWAVIDYALAYA Online',
     abbr: 'DAV',
     city: 'Bhopal',
@@ -6715,7 +6715,7 @@ export const UNIVERSITIES: University[] = [
     color: '#d97706',
   },
   {
-    id: 'madurai-kamaraj-universi',
+    id: 'madurai-kamaraj-university-online',
     name: 'MADURAI KAMARAJ UNIVERSITY Online',
     abbr: 'MKU',
     city: 'Chennai',
@@ -6794,7 +6794,7 @@ export const UNIVERSITIES: University[] = [
     color: '#16a34a',
   },
   {
-    id: 'shanmugh-arts-science-technolo',
+    id: 'shanmugha-arts-science-technology-research-online',
     name: 'SHANMUGHA ARTS, SCIENCE, TECHNOLOGY & RESEARCH ACADEMY Online',
     abbr: 'SASTR',
     city: 'Chennai',
@@ -6893,7 +6893,7 @@ export const UNIVERSITIES: University[] = [
     color: '#9333ea',
   },
   {
-    id: 'universi-of-mumbai',
+    id: 'university-of-mumbai-online',
     name: 'UNIVERSITY OF MUMBAI Online',
     abbr: 'UOM',
     city: 'Pune',
@@ -6932,7 +6932,7 @@ export const UNIVERSITIES: University[] = [
     color: '#b45309',
   },
   {
-    id: 'universi-of-jammu',
+    id: 'university-of-jammu-online',
     name: 'UNIVERSITY OF JAMMU Online',
     abbr: 'UOJ',
     city: 'India',
@@ -6981,7 +6981,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0369a1',
   },
   {
-    id: 'shivaji-universi',
+    id: 'shivaji-university-online',
     name: 'SHIVAJI UNIVERSITY Online',
     abbr: 'SU',
     city: 'Pune',
@@ -7030,7 +7030,7 @@ export const UNIVERSITIES: University[] = [
     color: '#15803d',
   },
   {
-    id: 'banastha-vidyapit',
+    id: 'banasthali-vidyapith-online',
     name: 'BANASTHALI VIDYAPITH Online',
     abbr: 'BV',
     city: 'Jaipur',
@@ -7109,7 +7109,7 @@ export const UNIVERSITIES: University[] = [
     color: '#c2410c',
   },
   {
-    id: 'guru-gobind-singh-indrapra',
+    id: 'guru-gobind-singh-indraprastha-university-online',
     name: 'GURU GOBIND SINGH INDRAPRASTHA VISHWAVIDYALAYA Online',
     abbr: 'GGSIV',
     city: 'New Delhi',
@@ -7178,7 +7178,7 @@ export const UNIVERSITIES: University[] = [
     color: '#92400e',
   },
   {
-    id: 'bangalor-universi',
+    id: 'bangalore-university-online',
     name: 'BANGALORE UNIVERSITY Online',
     abbr: 'BU',
     city: 'Bengaluru',
@@ -7237,7 +7237,7 @@ export const UNIVERSITIES: University[] = [
     color: '#312e81',
   },
   {
-    id: 'internat-institut-of-informat',
+    id: 'iiit-bangalore-online',
     name: 'INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY Online',
     abbr: 'IIOIT',
     city: 'Hyderabad',
@@ -7277,7 +7277,7 @@ export const UNIVERSITIES: University[] = [
     color: '#134e4a',
   },
   {
-    id: 'dayal-bagh-educatio-institut',
+    id: 'dayalbagh-educational-institute-online',
     name: 'DAYAL BAGH EDUCATIONAL INSTITUTE Online',
     abbr: 'DBEI',
     city: 'Lucknow',
@@ -7356,7 +7356,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0891b2',
   },
   {
-    id: 'adichunc-universi',
+    id: 'adichunchanagiri-university-online',
     name: 'ADICHUNCHANAGIRI UNIVERSITY Online',
     abbr: 'AU',
     city: 'Bengaluru',
@@ -7395,7 +7395,7 @@ export const UNIVERSITIES: University[] = [
     color: '#059669',
   },
   {
-    id: 'bharath-institut-of-higher',
+    id: 'bharath-university-online',
     name: 'BHARATH INSTITUTE OF HIGHER EDUCATION AND RESEARCH Online',
     abbr: 'BIOHE',
     city: 'Chennai',
@@ -7454,7 +7454,7 @@ export const UNIVERSITIES: University[] = [
     color: '#d97706',
   },
   {
-    id: 'chatrapa-shahuji-maharaj-unive',
+    id: 'chhatrapati-shahu-ji-maharaj-university-online',
     name: 'CHATRAPATI SHAHUJI MAHARAJ UNIVERSITY Online',
     abbr: 'CSMU',
     city: 'Lucknow',
@@ -7543,7 +7543,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0e7490',
   },
   {
-    id: 'deen-dayal-upadhyay-gorakhpu',
+    id: 'deen-dayal-upadhyay-gorakhpur-university-online',
     name: 'DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY Online',
     abbr: 'DDUGU',
     city: 'Lucknow',
@@ -7622,7 +7622,7 @@ export const UNIVERSITIES: University[] = [
     color: '#4f46e5',
   },
   {
-    id: 'guru-jambhesh-universi-of',
+    id: 'guru-jambheshwar-university-online',
     name: 'GURU JAMBHESHWAR UNIVERSITY OF SCIENCE AND TECHNOLOGY Online',
     abbr: 'GJUOS',
     city: 'Rohtak',
@@ -7701,7 +7701,7 @@ export const UNIVERSITIES: University[] = [
     color: '#065f46',
   },
   {
-    id: 'maharshi-dayanand-universi',
+    id: 'maharshi-dayanand-university-online',
     name: 'MAHARSHI DAYANAND UNIVERSITY Online',
     abbr: 'MDU',
     city: 'Rohtak',
@@ -7760,7 +7760,7 @@ export const UNIVERSITIES: University[] = [
     color: '#7c3aed',
   },
   {
-    id: 'mahatma-jyotiba-phule-rohilkha',
+    id: 'mahatma-jyotiba-phule-rohilkhand-university-online',
     name: 'MAHATMA JYOTIBA PHULE ROHILKHAND UNIVERSITY Online',
     abbr: 'MJPRU',
     city: 'Lucknow',
@@ -7819,7 +7819,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0284c7',
   },
   {
-    id: 'mats-universi',
+    id: 'mats-university-online',
     name: 'MATS UNIVERSITY Online',
     abbr: 'MU',
     city: 'Raipur',
@@ -7898,7 +7898,7 @@ export const UNIVERSITIES: University[] = [
     color: '#b45309',
   },
   {
-    id: 'meenaksh-academy-of-higher',
+    id: 'meenakshi-academy-higher-education-online',
     name: 'MEENAKSHI ACADEMY OF HIGHER EDUCATION AND RESEARCH Online',
     abbr: 'MAOHE',
     city: 'Chennai',
@@ -7957,7 +7957,7 @@ export const UNIVERSITIES: University[] = [
     color: '#4f46e5',
   },
   {
-    id: 'mody-universi-of-science',
+    id: 'mody-university-online',
     name: 'MODY UNIVERSITY OF SCIENCE AND TECHNOLOGY Online',
     abbr: 'MUOSA',
     city: 'Jaipur',
@@ -8056,7 +8056,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0369a1',
   },
   {
-    id: 'sage-universi',
+    id: 'sage-university-online',
     name: 'SAGE UNIVERSITY Online',
     abbr: 'SU',
     city: 'Bhopal',
@@ -8145,7 +8145,7 @@ export const UNIVERSITIES: University[] = [
     color: '#0f766e',
   },
   {
-    id: 'shree-guru-gobind-singh',
+    id: 'shree-guru-gobind-singh-tricentenary-university-online',
     name: 'SHREE GURU GOBIND SINGH TRICENTENARY UNIVERSITY Online',
     abbr: 'SGGST',
     city: 'Rohtak',
@@ -8224,7 +8224,7 @@ export const UNIVERSITIES: University[] = [
     color: '#1d4ed8',
   },
   {
-    id: 'shri-ramasamy-memorial-univers',
+    id: 'shri-ramasamy-memorial-university-online',
     name: 'SHRI RAMASAMY MEMORIAL UNIVERSITY Online',
     abbr: 'SRMU',
     city: 'Gangtok',

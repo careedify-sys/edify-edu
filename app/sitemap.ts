@@ -62,7 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   })
 
   // University × program × spec pages — only priority universities to keep sitemap manageable
-  const PRIORITY = ['amity','chandigarh','jain','lpu','manipal-jaipur','mahe-manipal','nmims','symbiosis','universi-of-petroleu-and','shoolini','bharati-vidyapee-universi','amrita-vishwa-vidyapee','galgotia-universi']
+  const PRIORITY = ['amity-university-online','chandigarh-university-online','jain-university-online','lovely-professional-university-online','manipal-university-jaipur-online','manipal-academy-higher-education-online','nmims-online','symbiosis-university-online','upes-online','shoolini-university-online','bharati-vidyapeeth-university-online','amrita-vishwa-vidyapeetham-online','galgotias-university-online']
   const uniSpecPages: MetadataRoute.Sitemap = UNIVERSITIES
     .filter(u => PRIORITY.includes(u.id))
     .flatMap(u =>
