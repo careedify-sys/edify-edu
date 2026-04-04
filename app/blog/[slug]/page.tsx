@@ -73,7 +73,7 @@ export async function generateMetadata(
       type: 'article',
       publishedTime: post.publishedAt,
       modifiedTime: post.publishedAt,
-      authors: ['Edify Admissions Team'],
+      authors: ['Rishi Kumar'],
       images: [
         { url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: post.title },
         ...previousImages,
@@ -153,7 +153,7 @@ export default async function BlogPostPage({ params }: Props) {
     },
     author: {
       '@type': 'Person',
-      name: 'Edify Admissions Team',
+      name: 'Rishi Kumar',
       url: 'https://edifyedu.in/about',
     },
     publisher: {
@@ -265,10 +265,10 @@ export default async function BlogPostPage({ params }: Props) {
                   className="w-9 h-9 rounded-full flex items-center justify-center font-black text-xs shrink-0"
                   style={{ background: 'linear-gradient(135deg,#D4922A,#e0a93a)', color: '#0B1D35' }}
                 >
-                  ED
+                  RK
                 </div>
                 <div>
-                  <div className="text-sm font-bold" style={{ color: '#0B1D35' }}>Edify Admissions Team</div>
+                  <div className="text-sm font-bold" style={{ color: '#0B1D35' }}>Rishi Kumar</div>
                   <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#D4922A' }}>
                     Expert Verified
                   </div>
