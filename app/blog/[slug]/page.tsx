@@ -152,7 +152,7 @@ export default async function BlogPostPage({ params }: Props) {
       height: 630,
     },
     author: {
-      '@type': 'Organization',
+      '@type': 'Person',
       name: 'Edify Admissions Team',
       url: 'https://edifyedu.in/about',
     },

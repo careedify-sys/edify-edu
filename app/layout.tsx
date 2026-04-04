@@ -91,6 +91,11 @@ const orgSchema = {
   url: 'https://edifyedu.in',
   logo: 'https://edifyedu.in/logo.png',
   description: 'Independent guide to UGC DEB approved online degrees in India',
+  sameAs: [
+    'https://www.linkedin.com/company/edifyedu',
+    'https://twitter.com/edifyedu',
+    'https://www.instagram.com/edifyedu',
+  ],
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: '+91-7061285806',

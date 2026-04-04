@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import { UNIVERSITIES, getAllPrograms, getAllSpecs } from '@/lib/data'
 import type { Program } from '@/lib/data'
 import { getPublishedPosts } from '@/lib/blog'
+import { GUIDES } from '@/lib/guides'
 
 const BASE = 'https://edifyedu.in'
 
@@ -85,5 +86,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }))
 
-  return [...statics, ...uniPages, ...programPages, ...specPages, ...uniSpecPages, ...blogPages]
+  // Guides
+  const guidePages: MetadataRoute.Sitemap = GUIDES.map(guide => ({
+    url: `${BASE}/guides/${guide.id}`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
+  return [...statics, ...uniPages, ...programPages, ...specPages, ...uniSpecPages, ...blogPages, ...guidePages]
 }
