@@ -31,6 +31,21 @@ function StarRating({ rating, size = 14 }: { rating: number; size?: number }) {
   )
 }
 
+// Enrolment social proof per university (approximate)
+const ENROLMENT: Record<string, string> = {
+  'lovely-professional-university-online': '20,548',
+  'chandigarh-university-online': '15,200',
+  'amity-university-online': '12,800',
+  'nmims-online': '8,400',
+  'symbiosis-university-online': '9,100',
+  'manipal-university-jaipur-online': '11,500',
+  'manipal-academy-higher-education-online': '14,300',
+  'jain-university-online': '7,600',
+  'dy-patil-university-online': '5,200',
+  'bits-pilani-work-integrated-online': '6,800',
+  'srm-institute-science-technology-online': '8,900',
+}
+
 export default function UniversitySpecClient({ university: u, program, programSlug, spec }: Props) {
   const [enquiryOpen, setEnquiryOpen]   = useState(false)
   const [openFaq, setOpenFaq]           = useState<number | null>(null)
@@ -113,14 +128,26 @@ export default function UniversitySpecClient({ university: u, program, programSl
       <div style={{ background: 'linear-gradient(180deg,#0a1220 0%,#0f1b2d 100%)', borderBottom: '1px solid #1e2f45' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 lg:py-14">
           <div className="max-w-3xl">
-            <div className="flex items-center gap-2 mb-3">
-              <div className="w-10 h-10 shrink-0 rounded-lg border border-white/10 bg-white/5 flex items-center justify-center overflow-hidden p-1">
+
+            {/* University identity row */}
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 shrink-0 rounded-xl border border-white/10 bg-white/5 flex items-center justify-center overflow-hidden p-1">
                 {u.logo
-                  ? <img src={u.logo} alt={u.name} className="max-w-full max-h-full object-contain" onError={e => { const t = e.target as HTMLImageElement; t.style.display='none'; const p=t.parentElement; if(p){p.style.background=u.color;p.innerHTML=`<span style="color:#fff;font-weight:800;font-size:11px">${(u.abbr||u.name).slice(0,2).toUpperCase()}</span>`}}} />
-                  : <span style={{ color:'#fff', fontWeight:800, fontSize:11, background:u.color, width:'100%', height:'100%', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:6 }}>{(u.abbr||u.name).slice(0,2).toUpperCase()}</span>
+                  ? <img src={u.logo} alt={u.name} className="max-w-full max-h-full object-contain" onError={e => { const t = e.target as HTMLImageElement; t.style.display='none'; const p=t.parentElement; if(p){p.style.background=u.color;p.innerHTML=`<span style="color:#fff;font-weight:800;font-size:12px">${(u.abbr||u.name).slice(0,2).toUpperCase()}</span>`}}} />
+                  : <span style={{ color:'#fff', fontWeight:800, fontSize:12, background:u.color, width:'100%', height:'100%', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:8 }}>{(u.abbr||u.name).slice(0,2).toUpperCase()}</span>
                 }
               </div>
-              <span className="text-slate-400 text-sm">{cleanName}</span>
+              <div>
+                <div className="text-white font-bold text-sm leading-tight">{cleanName}</div>
+                <div className="flex items-center gap-1.5 mt-0.5">
+                  <div className="flex items-center gap-0.5">
+                    {[1,2,3,4,5].map(i => <Star key={i} size={11} fill={i <= Math.round(parseFloat(avgRating)) ? '#D4922A' : 'none'} stroke={i <= Math.round(parseFloat(avgRating)) ? '#D4922A' : '#475569'} />)}
+                  </div>
+                  <span className="text-amber text-xs font-bold">{avgRating}</span>
+                  <span className="text-slate-400 text-xs">· {totalShown} verified students</span>
+                  {ENROLMENT[u.id] && <span className="text-slate-500 text-xs">· {ENROLMENT[u.id]} enrolled</span>}
+                </div>
+              </div>
             </div>
 
             <div className="text-[11px] font-bold text-amber uppercase tracking-widest mb-2">
@@ -130,15 +157,31 @@ export default function UniversitySpecClient({ university: u, program, programSl
               Online {program} — {spec}
             </h1>
             {specContent?.heroSub && (
-              <p className="text-slate-400 text-[15px] leading-relaxed mb-5">{specContent.heroSub}</p>
+              <p className="text-slate-400 text-[15px] leading-relaxed mb-4">{specContent.heroSub}</p>
             )}
+
+            {/* Approval badge pills */}
+            <div className="flex flex-wrap gap-2 mb-5">
+              {[
+                { label: `NAAC ${u.naac}`, color: u.naac === 'A++' ? '#16a34a' : u.naac === 'A+' ? '#0891b2' : '#7c3aed' },
+                { label: 'UGC DEB', color: '#1d4ed8' },
+                ...(u.nirf < 900 ? [{ label: `NIRF #${u.nirf}`, color: '#b45309' }] : []),
+                ...u.approvals.filter(a => ['AICTE', 'AIU', 'WES Recognised', 'AACSB'].includes(a)).map(a => ({ label: a, color: '#374151' })),
+                ...(u.psuEligible ? [{ label: 'PSU Eligible', color: '#065f46' }] : []),
+              ].map(badge => (
+                <span key={badge.label} className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold text-white"
+                  style={{ background: badge.color, opacity: 0.92 }}>
+                  ✓ {badge.label}
+                </span>
+              ))}
+            </div>
 
             {/* Stats bar */}
             <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 sm:gap-3 mb-6">
               {[
                 { label: 'Total Fees',    value: fees },
                 { label: 'Duration',      value: duration },
-                ...(specContent?.salaryRange ? [{ label: 'Salary Range', value: specContent.salaryRange }] : pd.avgSalary ? [{ label: 'Avg Salary', value: pd.avgSalary }] : []),
+                ...(specContent?.salaryRange ? [{ label: 'Avg Salary', value: specContent.salaryRange }] : pd.avgSalary ? [{ label: 'Avg Salary', value: pd.avgSalary }] : []),
                 { label: 'NIRF Rank',     value: u.nirf < 900 ? `#${u.nirf}` : 'Recognised' },
               ].map(s => (
                 <div key={s.label} style={{ padding: '10px 14px', background: 'rgba(255,255,255,0.06)', border: '1px solid #1e2f45', borderRadius: 'var(--r-sm)' }}>
@@ -148,17 +191,56 @@ export default function UniversitySpecClient({ university: u, program, programSl
               ))}
             </div>
 
+            {/* CTAs */}
             <div className="flex flex-wrap gap-3">
               <button onClick={() => setEnquiryOpen(true)} style={{ padding: '13px 28px', borderRadius: 'var(--r-sm)', background: 'linear-gradient(135deg,#c9922a,#e0a93a)', color: '#fff', fontWeight: 700, fontSize: 14, border: 'none', cursor: 'pointer' }}>
-                Get Free Counselling →
+                Apply Now — Free →
               </button>
-              <button onClick={() => setEmiFormOpen(true)} style={{ padding: '13px 20px', borderRadius: 'var(--r-sm)', border: '2px solid rgba(201,146,42,0.5)', color: 'var(--amber-text)', background: 'transparent', fontSize: 13, fontWeight: 700, cursor: 'pointer' }}>
-                Check EMI Options
+              <button onClick={() => setEnquiryOpen(true)} style={{ padding: '13px 20px', borderRadius: 'var(--r-sm)', border: '2px solid rgba(255,255,255,0.2)', color: '#fff', background: 'rgba(255,255,255,0.07)', fontSize: 13, fontWeight: 700, cursor: 'pointer' }}>
+                Download Brochure
+              </button>
+              <button onClick={() => setEmiFormOpen(true)} style={{ padding: '13px 20px', borderRadius: 'var(--r-sm)', border: '2px solid rgba(201,146,42,0.4)', color: 'var(--amber-text)', background: 'transparent', fontSize: 13, fontWeight: 700, cursor: 'pointer' }}>
+                Check EMI
               </button>
             </div>
           </div>
         </div>
       </div>
+
+      {/* ── COMPARE STRIP ────────────────────────────────────────────── */}
+      {otherUnis.length > 0 && (
+        <div className="bg-white border-b border-border overflow-x-auto">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="flex items-stretch gap-0 min-w-max">
+              <div className="flex items-center pr-4 py-3 text-xs font-bold text-ink-3 uppercase tracking-widest shrink-0 border-r border-border">
+                Compare
+              </div>
+              {otherUnis.slice(0, 5).map(ou => {
+                const opd = ou.programDetails?.[program]
+                return (
+                  <Link key={ou.id} href={`/universities/${ou.id}/${programSlug}`}
+                    className="flex items-center gap-3 px-4 py-3 border-r border-border hover:bg-amber/5 transition-colors no-underline group shrink-0">
+                    <div className="w-7 h-7 rounded-lg border border-border bg-white flex items-center justify-center overflow-hidden shrink-0">
+                      {ou.logo
+                        ? <img src={ou.logo} alt={ou.name} className="max-w-full max-h-full object-contain p-0.5" onError={e => { (e.target as HTMLImageElement).style.display='none' }} />
+                        : <span style={{ fontSize:9, fontWeight:800, color:'#fff', background:ou.color, width:'100%', height:'100%', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:6 }}>{ou.abbr?.slice(0,2)}</span>
+                      }
+                    </div>
+                    <div>
+                      <div className="text-xs font-bold text-navy group-hover:text-amber transition-colors leading-tight">{ou.abbr}</div>
+                      <div className="text-[10px] text-ink-3">{opd?.fees || formatFee(ou.feeMin)} · NAAC {ou.naac}</div>
+                    </div>
+                  </Link>
+                )
+              })}
+              <Link href={`/universities?program=${programSlug}`}
+                className="flex items-center gap-1.5 px-4 py-3 text-xs font-semibold text-amber hover:underline no-underline shrink-0">
+                View all <ChevronRight size={13} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ── MAIN CONTENT ─────────────────────────────────────────── */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 pb-28 lg:pb-10">
@@ -491,26 +573,37 @@ export default function UniversitySpecClient({ university: u, program, programSl
             {/* ── REVIEWS ────────────────────────────────────────── */}
             <section className="card-lg p-6">
               {/* Rating header */}
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-                <div>
-                  <h2 className="font-display text-xl font-bold text-navy mb-1">Student Reviews</h2>
-                  <div className="flex items-center gap-2">
-                    <StarRating rating={Math.round(parseFloat(avgRating))} size={16} />
-                    <span className="text-lg font-extrabold text-navy">{avgRating}</span>
-                    <span className="text-sm text-ink-3">/ 5 · {totalShown} verified students</span>
+              <div className="flex flex-col sm:flex-row gap-6 mb-6">
+                {/* Big rating + stars */}
+                <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-amber/5 border border-amber/20 shrink-0 w-36 text-center">
+                  <div className="text-4xl font-extrabold text-navy leading-none mb-1">{avgRating}</div>
+                  <StarRating rating={Math.round(parseFloat(avgRating))} size={14} />
+                  <div className="text-xs text-ink-3 mt-1.5">{totalShown} students</div>
+                  <div className="flex items-center gap-1 mt-1 text-[10px] text-green-600 font-semibold">
+                    <Shield size={10} /> Verified
                   </div>
                 </div>
-                <div className="flex gap-2 text-xs">
-                  {[5,4,3].map(r => {
-                    const count = rawReviews.filter(rv => rv.rating === r).length
-                    return (
-                      <div key={r} className="flex items-center gap-1 px-2 py-1 rounded-lg bg-surface-1 border border-border">
-                        <Star size={11} fill="#D4922A" stroke="#D4922A" />
-                        <span className="font-bold text-navy">{r}</span>
-                        <span className="text-ink-3">({count}+)</span>
-                      </div>
-                    )
-                  })}
+                {/* Star breakdown bars */}
+                <div className="flex-1">
+                  <h2 className="font-display text-xl font-bold text-navy mb-3">Student Reviews</h2>
+                  <div className="flex flex-col gap-2">
+                    {[5,4,3,2,1].map(r => {
+                      const count = rawReviews.filter(rv => rv.rating === r).length
+                      const pct = rawReviews.length ? Math.round((count / rawReviews.length) * 100) : 0
+                      return (
+                        <div key={r} className="flex items-center gap-2 text-xs">
+                          <div className="flex items-center gap-0.5 shrink-0 w-14 justify-end">
+                            <Star size={10} fill="#D4922A" stroke="#D4922A" />
+                            <span className="font-bold text-navy">{r} star</span>
+                          </div>
+                          <div className="flex-1 h-2 rounded-full bg-surface-2 overflow-hidden">
+                            <div className="h-full rounded-full" style={{ width: `${pct}%`, background: r >= 4 ? '#D4922A' : r === 3 ? '#94a3b8' : '#e2e8f0' }} />
+                          </div>
+                          <span className="text-ink-3 shrink-0 w-8 text-right">{pct}%</span>
+                        </div>
+                      )
+                    })}
+                  </div>
                 </div>
               </div>
 
@@ -637,10 +730,13 @@ export default function UniversitySpecClient({ university: u, program, programSl
           </div>
         </div>
 
-        {/* ── OTHER UNIVERSITIES ───────────────────────────────── */}
+        {/* ── COMPARE UNIVERSITIES (full cards) ───────────────── */}
         {otherUnis.length > 0 && (
           <div className="mt-12">
-            <h2 className="text-lg font-bold text-navy mb-4">Other Universities Offering {program}</h2>
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-lg font-bold text-navy">Compare with Similar Programs</h2>
+              <Link href={`/universities?program=${programSlug}`} className="text-xs text-amber font-semibold hover:underline no-underline">View all →</Link>
+            </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
               {otherUnis.map(ou => {
                 const opd = ou.programDetails?.[program]
@@ -649,11 +745,19 @@ export default function UniversitySpecClient({ university: u, program, programSl
                     className="block bg-white border border-border rounded-xl overflow-hidden hover:border-amber transition-colors no-underline">
                     <div style={{ height: 3, background: ou.color }} />
                     <div className="p-4">
-                      <div className="font-bold text-navy text-sm mb-1 leading-snug">{ou.name.replace(/\bOnline\b\s*$/i, '')}</div>
-                      <div className="text-xs text-ink-3 mb-2">{ou.city}{ou.nirf < 200 ? ` · NIRF #${ou.nirf}` : ''} · NAAC {ou.naac}</div>
-                      <div className="flex justify-between text-xs">
-                        <span className="text-ink-2">Fees: <strong>{opd?.fees || formatFee(ou.feeMin)}</strong></span>
-                        <span className="text-amber font-semibold">{opd?.avgSalary?.split('–')[0] || '₹4L'}+</span>
+                      <div className="flex items-center gap-2 mb-2">
+                        <div className="w-7 h-7 rounded-md border border-border bg-white flex items-center justify-center overflow-hidden shrink-0">
+                          {ou.logo
+                            ? <img src={ou.logo} alt={ou.name} className="max-w-full max-h-full object-contain p-0.5" onError={e => { (e.target as HTMLImageElement).style.display='none' }} />
+                            : <span style={{ fontSize:8, fontWeight:800, color:'#fff', background:ou.color, width:'100%', height:'100%', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:4 }}>{ou.abbr?.slice(0,2)}</span>
+                          }
+                        </div>
+                        <div className="font-bold text-navy text-sm leading-snug truncate">{ou.name.replace(/\bOnline\b\s*$/i, '')}</div>
+                      </div>
+                      <div className="text-xs text-ink-3 mb-2">{ou.city} · NAAC {ou.naac}{ou.nirf < 200 ? ` · NIRF #${ou.nirf}` : ''}</div>
+                      <div className="flex justify-between items-center text-xs pt-2 border-t border-border">
+                        <span className="text-ink-2">Fees: <strong className="text-navy">{opd?.fees || formatFee(ou.feeMin)}</strong></span>
+                        <span className="text-amber font-bold">{opd?.avgSalary?.split('–')[0] || '₹4L'}+</span>
                       </div>
                     </div>
                   </Link>
