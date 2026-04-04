@@ -339,7 +339,7 @@ export default function UniversityPageClient({ university: u }: Props) {
                     <div className="flex flex-wrap gap-2">
                       {pd.specs.map(spec => {
                         const specSlug = spec.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
-                        const programSlug = `online-${displayProgram.toLowerCase().replace(/\./g, '')}`
+                        const programSlug = displayProgram.toLowerCase().replace(/\./g, '')
                         return (
                           <Link
                             key={spec}

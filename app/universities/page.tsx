@@ -57,12 +57,12 @@ export default function UniversitiesPage() {
   )
 
   return (
-    <div style={{ minHeight:'100vh', background:'var(--bg)' }}>
+    <main style={{ minHeight:'100vh', background:'var(--bg)' }}>
 
       {/* Page header */}
-      <div style={{ background:'linear-gradient(160deg,#1A2F4E,#264573)', borderBottom:'none' }}>
+      <header style={{ background:'linear-gradient(160deg,#1A2F4E,#264573)', borderBottom:'none' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
-          <div className="section-label mb-3" style={{ color:'rgba(245,158,11,0.8)' }}>UGC DEB Approved</div>
+          <p className="section-label mb-3" style={{ color:'rgba(245,158,11,0.8)' }}>UGC DEB Approved</p>
           <h1 className="font-display text-3xl md:text-4xl text-white mb-3"
             style={{ fontFamily:"'Fraunces',serif" }}>
             127+ Best Online Universities India 2026 — UGC DEB Approved
@@ -71,9 +71,9 @@ export default function UniversitiesPage() {
             All UGC DEB approved. Sorted by NIRF rank by default. Filter by program, region, NAAC grade and fees.
           </p>
         </div>
-      </div>
+      </header>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
 
         {/* Search + Sort + Filter toggle */}
         <div className="flex flex-col sm:flex-row gap-3 mb-5">
@@ -158,7 +158,7 @@ export default function UniversitiesPage() {
         {/* Results count */}
         <div className="flex items-center justify-between mb-5">
           <h2 className="text-sm font-semibold" style={{ color:'var(--ink-2)' }}>
-            {filtered.length} universities found
+            <span>{filtered.length} universities found</span>
             {activeFilters > 0 && <span className="text-ink-3"> (filtered from {UNIS_SLIM.length})</span>}
           </h2>
           {activeFilters > 0 && (
@@ -170,17 +170,19 @@ export default function UniversitiesPage() {
         {filtered.length === 0 ? (
           <div className="card p-12 text-center bg-white">
             <div className="text-4xl mb-4">🔍</div>
-            <div className="font-semibold mb-2" style={{ color:'var(--navy)' }}>No universities match your filters</div>
+            <p className="font-semibold mb-2" style={{ color:'var(--navy)' }}>No universities match your filters</p>
             <button onClick={reset} className="text-sm font-semibold text-amber">Clear all filters →</button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-            {filtered.map(u => (
-              <UniversityCard key={u.id} u={u} highlightProgram={programs[0]} />
+          <ol className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 list-none p-0 m-0">
+            {filtered.map((u, idx) => (
+              <li key={u.id}>
+                <UniversityCard u={u} highlightProgram={programs[0]} />
+              </li>
             ))}
-          </div>
+          </ol>
         )}
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }

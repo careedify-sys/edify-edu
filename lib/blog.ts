@@ -784,7 +784,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Government employees and applicants who need a UGC-DEB recognised degree for recruitment eligibility also find the Symbiosis online MBA relevant given the formal entitlement.</p>
 
-<div class="ilink">Compare Symbiosis against other UGC-DEB approved online universities on fees, rankings, and student feedback at <a href="/universities/symbiosis">edifyedu.in/universities/symbiosis</a></div>
+<div class="ilink">Compare Symbiosis against other UGC-DEB approved online universities on fees, rankings, and student feedback at <a href="/universities/symbiosis-university-online">edifyedu.in/universities/symbiosis</a></div>
     `,
   },
   {
@@ -880,7 +880,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>If the fee is your primary constraint, there are cheaper UGC-DEB approved options. Universities like IGNOU offer accredited online MBAs at a significantly lower cost. The trade-off is brand recognition and the quality of the learning infrastructure. NMIMS costs more because it delivers more in those two areas specifically.</p>
 
-<div class="ilink">Compare NMIMS against other UGC-DEB approved online MBA programs on fees, rankings, and student feedback at <a href="/universities/nmims">edifyedu.in/universities/nmims</a></div>
+<div class="ilink">Compare NMIMS against other UGC-DEB approved online MBA programs on fees, rankings, and student feedback at <a href="/universities/nmims-online">edifyedu.in/universities/nmims</a></div>
     `,
   },
   {
@@ -993,7 +993,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>The Trustpilot complaints are serious enough to factor into your decision. LMS access delays after payment, hidden charges post-admission, and refund difficulties are not isolated incidents. Get every fee commitment and timeline in writing before you pay anything.</p>
 
-<div class="ilink">Compare Amity against other UGC-DEB approved online MBA programs on fees, rankings, and verified data at <a href="/universities/amity" target="_blank">edifyedu.in/universities/amity</a></div>
+<div class="ilink">Compare Amity against other UGC-DEB approved online MBA programs on fees, rankings, and verified data at <a href="/universities/amity-university-online" target="_blank">edifyedu.in/universities/amity</a></div>
 
 <h2>Sources</h2>
 <p><a href="https://amityonline.com/master-of-business-administration-online" target="_blank">Amity Online Official MBA Page</a> &middot; <a href="https://www.trustpilot.com/review/amityonline.com" target="_blank">Trustpilot Reviews</a> &middot; <a href="https://uk.trustpilot.com/review/amityonline.com?page=2" target="_blank">Trustpilot Page 2</a> &middot; <a href="https://www.shiksha.com/college/amity-university-online-noida-28528/reviews" target="_blank">Shiksha Student Reviews</a> &middot; <a href="https://www.quora.com/Is-it-worth-doing-an-MBA-through-Amity-University-Online" target="_blank">Quora</a> &middot; <a href="https://jumpnetworks.in/is-amity-online-mba-worth-it/" target="_blank">Reddit feedback via JumpNetworks</a> &middot; <a href="https://www.linkedin.com/posts/dona-barman-b567769a_amityuniversityonline-onlinemba-workingprofessionals-activity-7338846374647472131-2rzQ" target="_blank">LinkedIn Review 2025</a></p>

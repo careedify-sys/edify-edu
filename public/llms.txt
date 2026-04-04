@@ -1,12 +1,13 @@
 # Edify Education
-> India's independent online degree comparison platform. We cover 106+ UGC-DEB verified universities offering online MBA, MCA, BBA, BCA, BA, MA, B.Com, M.Com, MSc programs.
+> India's independent online degree comparison platform. We cover 127+ UGC-DEB verified universities offering online MBA, MCA, BBA, BCA, BA, MA, B.Com, M.Com, MSc programs.
 > All data is independently verified. No paid university partnerships.
 
 ## Key Facts
 - All universities listed are UGC-DEB approved
 - Fee data updated 2026
-- Independent platform - no paid rankings
+- Independent platform — no paid rankings
 - NIRF and NAAC data from official government sources
+- Platform URL: https://edifyedu.in
 
 ## Programs
 - Online MBA: https://edifyedu.in/programs/mba
@@ -19,27 +20,55 @@
 - Online MA: https://edifyedu.in/programs/ma
 - Online MSc: https://edifyedu.in/programs/msc
 
+## MBA Specialisations
+- MBA Finance: https://edifyedu.in/programs/mba/finance
+- MBA Marketing: https://edifyedu.in/programs/mba/marketing
+- MBA Human Resource Management: https://edifyedu.in/programs/mba/human-resource-management
+- MBA Data Science & Analytics: https://edifyedu.in/programs/mba/data-science-analytics
+- MBA Business Analytics: https://edifyedu.in/programs/mba/business-analytics
+- MBA Digital Marketing: https://edifyedu.in/programs/mba/digital-marketing
+- MBA Operations Management: https://edifyedu.in/programs/mba/operations-management
+- MBA International Business: https://edifyedu.in/programs/mba/international-business
+
 ## Top Universities
-- Manipal University (MAHE): https://edifyedu.in/universities/mahe-manipal
-- NMIMS: https://edifyedu.in/universities/nmims
-- Symbiosis: https://edifyedu.in/universities/symbiosis
-- JAIN Online: https://edifyedu.in/universities/jain
-- Chandigarh University: https://edifyedu.in/universities/chandigarh
-- LPU: https://edifyedu.in/universities/lpu
-- Amity Online: https://edifyedu.in/universities/amity
-- Manipal University Jaipur: https://edifyedu.in/universities/manipal-jaipur
-- Shoolini University: https://edifyedu.in/universities/shoolini
-- UPES Online: https://edifyedu.in/universities/universi-of-petroleu-and
-- Dayananda Sagar University: https://edifyedu.in/universities/dayanand-sagar-universi
-- D.Y. Patil University: https://edifyedu.in/universities/dypatil
-- Parul University: https://edifyedu.in/universities/parul-universi
-- Amrita Vishwa Vidyapeetham: https://edifyedu.in/universities/amrita-vishwa-vidyapee
-- Sikkim Manipal University: https://edifyedu.in/universities/sikkim-manipal
-- Galgotias University: https://edifyedu.in/universities/galgotia-universi
-- Chitkara University: https://edifyedu.in/universities/chitkara-universi
-- Sharda University: https://edifyedu.in/universities/sharda-universi
-- KL University (KLEF): https://edifyedu.in/universities/koneru-lakshmai-educatio-found
-- Manav Rachna Online: https://edifyedu.in/universities/manav-rachna-internat-institut
+- Amity University Online (NAAC A+): https://edifyedu.in/universities/amity-university-online
+- NMIMS Online (NAAC A++): https://edifyedu.in/universities/nmims-online
+- Symbiosis University Online (NAAC A++): https://edifyedu.in/universities/symbiosis-university-online
+- JAIN University Online (NAAC A++): https://edifyedu.in/universities/jain-university-online
+- Chandigarh University Online (NAAC A+): https://edifyedu.in/universities/chandigarh-university-online
+- LPU Online (NAAC A+): https://edifyedu.in/universities/lovely-professional-university-online
+- Manipal Academy (MAHE) Online (NAAC A++): https://edifyedu.in/universities/manipal-academy-higher-education-online
+- Manipal University Jaipur Online (NAAC A+): https://edifyedu.in/universities/manipal-university-jaipur-online
+- Shoolini University Online (NAAC A+): https://edifyedu.in/universities/shoolini-university-online
+- UPES Online (NAAC A): https://edifyedu.in/universities/upes-online
+- Dayananda Sagar University Online (NAAC A+): https://edifyedu.in/universities/dayananda-sagar-university-online
+- D.Y. Patil University Online (NAAC A+): https://edifyedu.in/universities/dy-patil-university-online
+- Parul University Online (NAAC A+): https://edifyedu.in/universities/parul-university-online
+- Amrita Vishwa Vidyapeetham Online (NAAC A++): https://edifyedu.in/universities/amrita-vishwa-vidyapeetham-online
+- Sikkim Manipal University Online (NAAC A): https://edifyedu.in/universities/sikkim-manipal-university-online
+- Galgotias University Online (NAAC A+): https://edifyedu.in/universities/galgotias-university-online
+- Chitkara University Online (NAAC A+): https://edifyedu.in/universities/chitkara-university-online
+- Sharda University Online (NAAC A+): https://edifyedu.in/universities/sharda-university-online
+- KL University Online (NAAC A+): https://edifyedu.in/universities/kl-university-online
+- Manav Rachna Online (NAAC A+): https://edifyedu.in/universities/manav-rachna-online
+- SRM Institute of Science and Technology Online (NAAC A++): https://edifyedu.in/universities/srm-institute-science-technology-online
+- BITS Pilani Work Integrated (NAAC A++): https://edifyedu.in/universities/bits-pilani-work-integrated-online
+
+## University MBA Pages
+- Amity MBA: https://edifyedu.in/universities/amity-university-online/mba
+- NMIMS MBA: https://edifyedu.in/universities/nmims-online/mba
+- Symbiosis MBA: https://edifyedu.in/universities/symbiosis-university-online/mba
+- LPU MBA: https://edifyedu.in/universities/lovely-professional-university-online/mba
+- Chandigarh University MBA: https://edifyedu.in/universities/chandigarh-university-online/mba
+- Manipal Jaipur MBA: https://edifyedu.in/universities/manipal-university-jaipur-online/mba
+- JAIN MBA: https://edifyedu.in/universities/jain-university-online/mba
+- SRM MBA: https://edifyedu.in/universities/srm-institute-science-technology-online/mba
+
+## Tools
+- Compare Universities: https://edifyedu.in/compare
+- All Universities: https://edifyedu.in/universities
+- Guides: https://edifyedu.in/guides
+- Blog: https://edifyedu.in/blog
 
 ## About
 Edify is India's first independent research portal for UGC DEB approved online degrees.

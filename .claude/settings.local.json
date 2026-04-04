@@ -70,7 +70,8 @@
       "Bash(find C:Users91706Downloadsedify-v16-final-with-cmsedify-next/public -type f \\\\\\(-name *.jpg -o -name *.png \\\\\\))",
       "Bash(cat app/universities/[id]/[program]/[spec]/page.tsx)",
       "Bash(npx next:*)",
-      "Bash(grep -n \"getMasterSyllabus\\\\|getUniversitySyllabus\\\\|case ''''\\\\|''''mba''''\\\\|''''mca''''\" lib/content.ts)"
+      "Bash(grep -n \"getMasterSyllabus\\\\|getUniversitySyllabus\\\\|case ''''\\\\|''''mba''''\\\\|''''mca''''\" lib/content.ts)",
+      "Bash(/dev/null find:*)"
     ]
   }
 }

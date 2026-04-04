@@ -241,6 +241,62 @@ export default async function CatchAllProgramPage(
               )
             })()}
 
+            {/* Top universities for this specialisation — direct internal links to spec pages */}
+            {activeSpec && (() => {
+              const specSlugStr = activeSpec.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'')
+              const unisWithSpec = universities
+                .filter(u => u.programDetails[program]?.specs?.some(s => s === activeSpec))
+                .sort((a,b) => (a.nirf||999) - (b.nirf||999))
+                .slice(0, 8)
+              if (!unisWithSpec.length) return null
+              return (
+                <section className="card p-6 md:p-8 mt-6">
+                  <h2 className="text-xl font-bold text-navy mb-1">
+                    Top Universities for {program} in {activeSpec}
+                  </h2>
+                  <p className="text-sm text-ink-3 mb-5">
+                    UGC DEB approved universities offering {program} with {activeSpec} specialisation — sorted by NIRF rank
+                  </p>
+                  <div className="grid sm:grid-cols-2 gap-3">
+                    {unisWithSpec.map(u => {
+                      const pd = u.programDetails[program]
+                      return (
+                        <Link
+                          key={u.id}
+                          href={`/universities/${u.id}/${programSlug}/${specSlugStr}`}
+                          className="flex items-center gap-3 p-4 bg-white border border-border rounded-xl hover:border-amber hover:shadow-md transition-all no-underline group"
+                        >
+                          <div className="w-9 h-9 rounded-lg border border-border bg-white flex items-center justify-center overflow-hidden shrink-0">
+                            {u.logo
+                              ? <img src={u.logo} alt={u.name} className="max-w-full max-h-full object-contain p-0.5" onError={e => { (e.target as HTMLImageElement).style.display='none' }} />
+                              : <span style={{ fontSize:9, fontWeight:800, color:'#fff', background:u.color, width:'100%', height:'100%', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:6 }}>{u.abbr?.slice(0,2)}</span>
+                            }
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <div className="text-sm font-bold text-navy group-hover:text-amber transition-colors leading-snug truncate">
+                              {u.name.replace(/\bOnline\b\s*$/i,'')}
+                            </div>
+                            <div className="text-xs text-ink-3">
+                              NAAC {u.naac}{u.nirf < 200 ? ` · NIRF #${u.nirf}` : ''} · {pd?.fees || formatFee(u.feeMin)}
+                            </div>
+                          </div>
+                          <ChevronRight size={14} className="text-amber shrink-0" />
+                        </Link>
+                      )
+                    })}
+                  </div>
+                  <div className="mt-4 pt-4 border-t border-border flex flex-wrap gap-3">
+                    <Link href={`/programs/${programSlug}`} className="text-sm text-amber font-semibold hover:underline no-underline">
+                      ← All {program} Universities
+                    </Link>
+                    <Link href="/compare" className="text-sm text-ink-2 font-semibold hover:text-amber no-underline">
+                      Compare Side-by-Side →
+                    </Link>
+                  </div>
+                </section>
+              )
+            })()}
+
             <ProgramPageClient
               program={program}
               programSlug={programSlug}
