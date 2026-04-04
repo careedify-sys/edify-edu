@@ -22,6 +22,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/blog`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${BASE}/guides`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/tools`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/tools/cgpa-calculator`, lastModified: now, changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${BASE}/tools/percentage-to-gpa`, lastModified: now, changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${BASE}/tools/emi-calculator`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/about`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${BASE}/contact`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
   ]

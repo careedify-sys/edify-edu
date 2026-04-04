@@ -69,6 +69,10 @@
 - All Universities: https://edifyedu.in/universities
 - Guides: https://edifyedu.in/guides
 - Blog: https://edifyedu.in/blog
+- CGPA to Percentage Calculator: https://edifyedu.in/tools/cgpa-calculator
+- Percentage to GPA Calculator: https://edifyedu.in/tools/percentage-to-gpa
+- EMI Calculator: https://edifyedu.in/tools/emi-calculator
+- All Tools: https://edifyedu.in/tools
 
 ## About
 Edify is India's first independent research portal for UGC DEB approved online degrees.
