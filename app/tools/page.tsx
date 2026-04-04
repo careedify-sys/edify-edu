@@ -1,5 +1,5 @@
 'use client'
-type ToolMode = 'emi' | 'roi' | 'salary' | 'unit' | 'percent' | 'age' | 'gpa'
+type ToolMode = 'emi' | 'roi' | 'salary' | 'unit' | 'percent' | 'age' | 'gpa' | 'cgpa'
 
 
 import { useState } from 'react'
@@ -376,6 +376,44 @@ function GPACalc() {
   )
 }
 
+// ── CGPA Quick Calc (inline preview; full tool at /tools/cgpa-calculator) ──
+function CGPAQuickCalc() {
+  const [cgpa, setCgpa] = useState('')
+  const [pct, setPct] = useState('')
+  const cgpaResult = cgpa && !isNaN(+cgpa) && +cgpa > 0 && +cgpa <= 10 ? (+cgpa * 9.5).toFixed(2) : null
+  const pctResult  = pct  && !isNaN(+pct)  && +pct  > 0 && +pct  <= 100 ? (+pct  / 9.5).toFixed(2) : null
+  return (
+    <div className="flex flex-col gap-3.5">
+      <div className="grid grid-cols-2 gap-3">
+        <label className="flex flex-col gap-[5px]">
+          <span className="text-[11px] font-bold text-ink-3 uppercase">CGPA (out of 10)</span>
+          <input type="number" value={cgpa} onChange={e=>setCgpa(e.target.value)} min={0} max={10} step={0.01} placeholder="e.g. 8.75"
+            className="px-3 py-2.5 rounded-lg border border-border text-sm font-semibold"/>
+        </label>
+        <label className="flex flex-col gap-[5px]">
+          <span className="text-[11px] font-bold text-ink-3 uppercase">Percentage (%)</span>
+          <input type="number" value={pct} onChange={e=>setPct(e.target.value)} min={0} max={100} step={0.01} placeholder="e.g. 75.5"
+            className="px-3 py-2.5 rounded-lg border border-border text-sm font-semibold"/>
+        </label>
+      </div>
+      <div className="grid grid-cols-2 gap-2">
+        <div style={{padding:14,borderRadius:'var(--r-sm)',textAlign:'center',background:'linear-gradient(135deg,#c9922a,#e0a93a)'}}>
+          <div suppressHydrationWarning style={{fontSize:18,fontWeight:800,color:'#fff',marginBottom:3}}>{cgpaResult ? cgpaResult+'%' : '—'}</div>
+          <div style={{fontSize:10,color:'rgba(255,255,255,0.8)',fontWeight:600}}>CGPA → Percentage</div>
+        </div>
+        <div style={{padding:14,borderRadius:'var(--r-sm)',textAlign:'center',background:'var(--surface-2)',border:'1px solid var(--border)'}}>
+          <div suppressHydrationWarning style={{fontSize:18,fontWeight:800,color:'var(--ink)',marginBottom:3}}>{pctResult ? pctResult+' / 10' : '—'}</div>
+          <div style={{fontSize:10,color:'var(--ink-3)',fontWeight:600}}>% → CGPA</div>
+        </div>
+      </div>
+      <div style={{fontSize:11,color:'var(--ink-3)',textAlign:'center'}}>Formula: Percentage = CGPA × 9.5 (UGC standard)</div>
+      <Link href="/tools/cgpa-calculator" style={{display:'block',textAlign:'center',padding:'8px 16px',borderRadius:'var(--r-sm)',background:'var(--ink)',color:'#fff',fontSize:12,fontWeight:700,textDecoration:'none'}}>
+        Full CGPA Calculator + Table →
+      </Link>
+    </div>
+  )
+}
+
 const TOOLS = [
   {id:'emi',icon:'📊',label:'EMI Calculator',desc:'Monthly payment for any fee',component:<EMICalc/>},
   {id:'roi',icon:'📈',label:'MBA ROI',desc:'Is your degree worth it?',component:<ROICalc/>},
@@ -384,6 +422,7 @@ const TOOLS = [
   {id:'pct',icon:'%',label:'Percentage Calc',desc:'% of, % change, what %',component:<PercentCalc/>},
   {id:'age',icon:'🎂',label:'Age Calculator',desc:'Age, days lived, birthday',component:<AgeCalc/>},
   {id:'gpa',icon:'🎓',label:'GPA ↔ Percentage',desc:'Convert GPA/CGPA/marks',component:<GPACalc/>},
+  {id:'cgpa',icon:'📐',label:'CGPA Calculator',desc:'CGPA ↔ % · Full table',component:<CGPAQuickCalc/>},
 ]
 
 export default function ToolsPage() {
@@ -410,7 +449,7 @@ export default function ToolsPage() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
             <div className="text-[11px] font-bold text-amber uppercase tracking-widest mb-2">Free Tools</div>
             <h1 style={{fontSize:'clamp(1.4rem,3vw,1.9rem)',fontWeight:800,color:'var(--ink)',margin:'0 0 8px',lineHeight:1.2}}>Daily Calculators & Converters</h1>
-            <p className="body-sm m-0">7 free tools — EMI, ROI, salary, unit converter, percentage, age & GPA calculator.</p>
+            <p className="body-sm m-0">8 free tools — EMI, ROI, salary, unit converter, percentage, age, GPA & CGPA calculator.</p>
           </div>
         </div>
 

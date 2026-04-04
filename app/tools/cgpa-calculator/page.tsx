@@ -1,0 +1,154 @@
+import type { Metadata } from 'next'
+import CgpaCalculatorClient from './CgpaCalculatorClient'
+
+export const metadata: Metadata = {
+  title: 'CGPA to Percentage Calculator 2026 — Convert CGPA Instantly | Edify',
+  description:
+    'Free CGPA to percentage calculator using the standard UGC formula (CGPA × 9.5). Convert 8.75, 7.5, 6.5 CGPA to percentage instantly. Also reverse: percentage to CGPA. Includes full conversion table & grade classification.',
+  keywords: [
+    'cgpa to percentage',
+    'cgpa to percentage calculator',
+    '8.75 cgpa in percentage',
+    '7.5 cgpa in percentage',
+    '8.5 cgpa in percentage',
+    '9.0 cgpa in percentage',
+    '6.5 cgpa in percentage',
+    'change cgpa into percentage',
+    'convert cgpa to percentage',
+    'cgpa full form',
+    'full form of cgpa and sgpa',
+    'cgpa to percentage formula',
+    'cgpa calculator india',
+    'sgpa to percentage',
+    'cgpa percentage conversion table',
+    'cgpa to marks',
+    'what is cgpa',
+    'cgpa meaning',
+    'anna university cgpa to percentage',
+    'vtu cgpa to percentage',
+  ],
+  alternates: { canonical: 'https://edifyedu.in/tools/cgpa-calculator' },
+  openGraph: {
+    title: 'CGPA to Percentage Calculator 2026 — Convert Instantly | Edify',
+    description:
+      'Free CGPA ↔ Percentage converter using UGC formula (CGPA × 9.5). Includes full table for 6.0 to 10.0 CGPA and grade classification.',
+    url: 'https://edifyedu.in/tools/cgpa-calculator',
+    type: 'website',
+    images: [
+      {
+        url: 'https://edifyedu.in/og.webp',
+        width: 1200,
+        height: 630,
+        alt: 'CGPA to Percentage Calculator — Edify',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'CGPA to Percentage Calculator 2026 | Edify',
+    description:
+      'Convert any CGPA to percentage using the UGC formula. Free, instant, no login required.',
+  },
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is CGPA full form?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'CGPA stands for Cumulative Grade Point Average. SGPA stands for Semester Grade Point Average. CGPA is the overall average of all SGPAs across all semesters of a degree program.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How to convert CGPA to percentage?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'To convert CGPA to percentage, use the UGC formula: Percentage = CGPA × 9.5. For example, 8.0 CGPA = 8.0 × 9.5 = 76%. This formula is standard across most Indian universities including Anna University, VTU, and JNTU.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is 8.75 CGPA in percentage?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: '8.75 CGPA in percentage = 8.75 × 9.5 = 83.13%. This is considered a first-class with distinction result at most Indian universities.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is 7.5 CGPA in percentage?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: '7.5 CGPA in percentage = 7.5 × 9.5 = 71.25%. This is a first-class result (above 60%) at most Indian universities.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is CGPA to percentage conversion the same at all universities?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. Most Indian universities follow the UGC formula (CGPA × 9.5). However, Mumbai University (7-point scale), Pune University, and universities using 4.0-scale GPA have different conversion methods. Always confirm with your university registrar.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the minimum CGPA required for Online MBA admission?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Most online MBA programs in India require a minimum of 50% aggregate in a bachelor\'s degree, which is approximately 5.26 CGPA on a 10-point scale. Some universities like NMIMS or Manipal require 60% (approximately 6.32 CGPA).',
+      },
+    },
+  ],
+}
+
+const webAppSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: 'CGPA to Percentage Calculator',
+  description:
+    'Free online CGPA to percentage calculator using the UGC standard formula (CGPA × 9.5). Supports both CGPA to percentage and percentage to CGPA conversion.',
+  applicationCategory: 'EducationApplication',
+  operatingSystem: 'Web',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' },
+  url: 'https://edifyedu.in/tools/cgpa-calculator',
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://edifyedu.in' },
+    { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://edifyedu.in/tools' },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'CGPA Calculator',
+      item: 'https://edifyedu.in/tools/cgpa-calculator',
+    },
+  ],
+}
+
+export default function CgpaCalculatorPage() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <CgpaCalculatorClient />
+    </>
+  )
+}
