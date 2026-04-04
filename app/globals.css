@@ -721,3 +721,12 @@ details summary::-webkit-details-marker { display: none; }
 .prose-article .qf-cell { background: #fff; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
 .prose-article .qf-label { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #64748b; }
 .prose-article .qf-val { font-size: 15px; font-weight: 700; color: #0f172a; line-height: 1.2; }
+
+/* Internal link cards (blog post footers) */
+.prose-article .internal-links { margin: 2rem 0; }
+.prose-article .il-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+.prose-article .il-card { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; text-decoration: none; transition: border-color 0.2s, box-shadow 0.2s; }
+.prose-article .il-card:hover { border-color: #D4922A; box-shadow: 0 2px 12px rgba(212,146,42,0.15); }
+.prose-article .il-uni { font-size: 10px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: #D4922A; }
+.prose-article .il-title { font-size: 13px; font-weight: 700; color: #0B1D35; line-height: 1.3; }
+.prose-article .il-sub { font-size: 12px; color: #64788A; }
