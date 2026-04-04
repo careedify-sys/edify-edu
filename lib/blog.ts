@@ -1578,7 +1578,538 @@ export const BLOG_POSTS: BlogPost[] = [
       </ul>
     </div>
     `,
-  }
+  },
+
+  // ── NEW KEYWORD-GAP POSTS ──────────────────────────────────────────────────
+
+  {
+    slug: 'jobs-after-mca-salary-career-2026',
+    title: 'Jobs After MCA 2026 — Salary, Top Companies & Career Path',
+    metaDescription: 'Complete guide to jobs after MCA 2026. Explore MCA salary in India per month, top companies hiring MCA graduates, and career scope after MCA.',
+    category: 'Career Guide',
+    tags: ['MCA', 'jobs after MCA', 'MCA salary', 'career after MCA'],
+    publishedAt: '2026-04-04',
+    readTime: 8,
+    faqs: [
+      { q: 'What is the average MCA salary in India per month?', a: 'Freshers earn ₹25,000–₹50,000/month. With 3–5 years of experience, MCA professionals earn ₹60,000–₹1,20,000/month. Senior roles at MNCs can go up to ₹2–3 lakh/month.' },
+      { q: 'Which companies hire MCA graduates?', a: 'TCS, Infosys, Wipro, HCL, Cognizant, Accenture, IBM, Tech Mahindra, Capgemini, and startups actively recruit MCA graduates for software, testing, and system admin roles.' },
+      { q: 'Can I get a government job after MCA?', a: 'Yes. MCA is eligible for SSC CGL, IBPS IT Officer, state government IT roles, NIC, and DRDO recruitment. Several PSUs and banks hire MCA graduates for IT roles.' },
+      { q: 'Is online MCA valid for jobs?', a: 'Yes — online MCA from UGC-DEB approved universities is legally equivalent to a regular MCA degree under UGC 2020 guidelines. It is valid for all private and government IT jobs.' },
+      { q: 'What is the scope after MCA?', a: 'MCA opens doors in software development, data science, cloud computing, cybersecurity, system administration, and IT management. It is also a gateway to MS/PhD programs abroad.' },
+    ],
+    content: `
+<h2>Jobs After MCA 2026 — What Your Degree Gets You</h2>
+<p>MCA (Master of Computer Applications) is one of India's most versatile postgraduate degrees. With digitisation accelerating across every sector, MCA graduates are in high demand from IT giants to startups to government departments. Here is everything you need to know about jobs after MCA, salary expectations, and how to fast-track your career.</p>
+
+<h2>MCA Salary in India Per Month — By Experience Level</h2>
+<div class="overflow-x-auto">
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:1.5rem">
+<thead><tr style="background:#f1f5f9"><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Experience</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Monthly Salary</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Annual CTC</th></tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Fresher (0–1 yr)</td><td style="padding:10px 14px;font-weight:600">₹25,000 – ₹50,000</td><td style="padding:10px 14px">₹3L – ₹6L</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Junior (1–3 yr)</td><td style="padding:10px 14px;font-weight:600">₹40,000 – ₹80,000</td><td style="padding:10px 14px">₹5L – ₹10L</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Mid-level (3–6 yr)</td><td style="padding:10px 14px;font-weight:600">₹70,000 – ₹1,50,000</td><td style="padding:10px 14px">₹8L – ₹18L</td></tr>
+<tr style="background:#f8fafc"><td style="padding:10px 14px">Senior (6+ yr)</td><td style="padding:10px 14px;font-weight:600">₹1,50,000 – ₹3,00,000+</td><td style="padding:10px 14px">₹18L – ₹40L+</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Top 10 Jobs After MCA</h2>
+<ol>
+<li><strong>Software Developer / Engineer</strong> — The most common path. Build applications for web, mobile, and enterprise systems. Average salary: ₹5–12 LPA fresher, ₹15–35 LPA senior.</li>
+<li><strong>Data Scientist / Analyst</strong> — Work with Python, R, SQL, and ML frameworks. High demand across BFSI, e-commerce, and healthcare. Average: ₹8–20 LPA.</li>
+<li><strong>System Administrator</strong> — Manage IT infrastructure, servers, and networks. Government and PSU favourite. Average: ₹4–10 LPA.</li>
+<li><strong>Cybersecurity Analyst</strong> — Protect systems from threats. One of the fastest-growing roles globally. Average: ₹6–18 LPA.</li>
+<li><strong>Cloud Engineer</strong> — AWS, Azure, GCP expertise gets you into cloud roles at major IT companies. Average: ₹8–25 LPA.</li>
+<li><strong>Database Administrator (DBA)</strong> — Manage Oracle, MySQL, PostgreSQL databases. Stable, well-paying government and private roles. Average: ₹5–14 LPA.</li>
+<li><strong>IT Consultant</strong> — After 3–5 years, transition to advisory roles. Average: ₹12–30 LPA.</li>
+<li><strong>Mobile App Developer</strong> — Android/iOS development. Startup and MNC opportunities. Average: ₹6–18 LPA.</li>
+<li><strong>Network Engineer</strong> — Design and maintain computer networks. CCNA/CCNP certification boosts salary significantly. Average: ₹4–12 LPA.</li>
+<li><strong>IT Project Manager</strong> — Senior career path. Leads technical teams and client delivery. Average: ₹15–40 LPA.</li>
+</ol>
+
+<h2>Top Companies Hiring MCA Graduates in 2026</h2>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:1.5rem">
+${['TCS','Infosys','Wipro','HCL Technologies','Cognizant','Accenture','IBM India','Tech Mahindra','Capgemini','Mphasis','L&T Infotech','NIIT Technologies','Hexaware','Mindtree','Persistent Systems'].map(c => `<span style="padding:6px 14px;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:20px;font-size:13px;font-weight:600">${c}</span>`).join('')}
+</div>
+
+<h2>Government Jobs After MCA</h2>
+<p>MCA opens many government sector doors:</p>
+<ul>
+<li><strong>SSC CGL</strong> — Statistical Investigator and other IT roles</li>
+<li><strong>IBPS IT Officer (Scale I)</strong> — All nationalised banks recruit IT officers with MCA</li>
+<li><strong>NIC (National Informatics Centre)</strong> — Direct MCA recruitment for Scientist/Engineer posts</li>
+<li><strong>DRDO / ISRO</strong> — Scientist-B posts for MCA graduates</li>
+<li><strong>State Government IT Departments</strong> — Every state has IT cadre recruitment</li>
+<li><strong>Indian Railways / IRCTC</strong> — IT and system admin roles</li>
+</ul>
+
+<h2>Online MCA — Best Universities 2026</h2>
+<p>If you want to do MCA while working, an online MCA from a UGC-DEB approved university is completely valid for all the above jobs:</p>
+<div class="internal-links">
+  <div class="il-grid">
+    <a href="/universities/jain-university-online/mca" class="il-card"><div class="il-uni">JAIN</div><div class="il-title">Jain University Online MCA</div><div class="il-sub">NAAC A++ · ₹85K total</div></a>
+    <a href="/universities/amity-university-online/mca" class="il-card"><div class="il-uni">AMITY</div><div class="il-title">Amity University Online MCA</div><div class="il-sub">NAAC A+ · QS Ranked</div></a>
+    <a href="/universities/lovely-professional-university-online/mca" class="il-card"><div class="il-uni">LPU</div><div class="il-title">LPU Online MCA</div><div class="il-sub">NAAC A+ · NIRF #56</div></a>
+  </div>
+</div>
+<div class="ilink">Compare all <a href="/programs/mca">online MCA universities →</a></div>
+    `,
+  },
+
+  {
+    slug: 'career-after-mba-jobs-salary-scope-2026',
+    title: 'Career After MBA 2026 — Jobs, Salary & Scope in India',
+    metaDescription: 'Complete guide to career after MBA in India 2026. Explore jobs after MBA, average MBA salary, career options after MBA, and scope for working professionals.',
+    category: 'Career Guide',
+    tags: ['MBA', 'career after MBA', 'jobs after MBA', 'MBA salary', 'MBA scope'],
+    publishedAt: '2026-04-04',
+    readTime: 8,
+    faqs: [
+      { q: 'What is the average MBA salary in India?', a: 'MBA freshers earn ₹5–12 LPA. With 3–5 years post-MBA experience, salaries range ₹15–30 LPA. At senior management level (10+ years), ₹40–80 LPA is common at top companies.' },
+      { q: 'What are the best career options after MBA?', a: 'Top options include: Management Consultant, Product Manager, Investment Banker, Marketing Manager, HR Business Partner, Supply Chain Manager, Business Analyst, and Entrepreneur.' },
+      { q: 'Can I get a government job after MBA?', a: 'Yes — MBA is eligible for UPSC (IAS/IFS), PSU management trainee programmes (ONGC, NTPC, BHEL, SAIL), banking sector (IBPS PO, SBI PO), and state government management cadres.' },
+      { q: 'Is online MBA valid for jobs?', a: 'Yes — online MBA from UGC-DEB approved universities is legally equivalent to a regular MBA. All private companies, PSUs, and government departments that accept MBA degrees accept online MBA.' },
+      { q: 'What is the scope of MBA in India 2026?', a: 'MBA scope is excellent — India needs 2 lakh+ management professionals annually. Digital transformation, startup growth, and foreign investment are creating senior roles across all sectors.' },
+    ],
+    content: `
+<h2>Career After MBA 2026 — The Full Picture</h2>
+<p>An MBA is India's most sought-after postgraduate degree — and for good reason. It opens doors to management roles across every sector, dramatically increases salary, and accelerates your path to leadership. Here is the complete guide to career options after MBA, salary expectations, and the best universities for 2026.</p>
+
+<h2>MBA Salary in India — What to Expect</h2>
+<div class="overflow-x-auto">
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:1.5rem">
+<thead><tr style="background:#f1f5f9"><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Stage</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Salary Range</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Typical Roles</th></tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Post-MBA Fresher</td><td style="padding:10px 14px;font-weight:600">₹5L – ₹12L PA</td><td style="padding:10px 14px">Management Trainee, Analyst</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">3–5 Years Post-MBA</td><td style="padding:10px 14px;font-weight:600">₹15L – ₹30L PA</td><td style="padding:10px 14px">Manager, Senior Analyst</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">5–10 Years</td><td style="padding:10px 14px;font-weight:600">₹25L – ₹50L PA</td><td style="padding:10px 14px">Senior Manager, GM</td></tr>
+<tr style="background:#f8fafc"><td style="padding:10px 14px">10+ Years (C-Suite)</td><td style="padding:10px 14px;font-weight:600">₹50L – ₹2Cr+ PA</td><td style="padding:10px 14px">VP, Director, CEO</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Top Career Options After MBA by Specialisation</h2>
+
+<h3>MBA Finance</h3>
+<p>Investment Banking, Corporate Finance, Financial Analyst, CFO track. Highest paying MBA specialisation in India. Top employers: Goldman Sachs, JP Morgan, HDFC Bank, Kotak, ICICI.</p>
+
+<h3>MBA Marketing</h3>
+<p>Brand Manager, Product Manager, Digital Marketing Head, CMO track. High demand in FMCG, e-commerce, and D2C brands. Top employers: HUL, P&G, Flipkart, Amazon, Swiggy.</p>
+
+<h3>MBA Human Resources</h3>
+<p>HR Business Partner, Talent Acquisition Head, CHRO track. Every large organisation needs HR leaders. Top employers: Deloitte, Accenture, Infosys, TCS, KPMG.</p>
+
+<h3>MBA Data Science & Analytics</h3>
+<p>Business Intelligence Manager, Analytics Head, Chief Data Officer track. Fastest growing. Top employers: Google, Microsoft, Mu Sigma, Fractal, BCG Gamma.</p>
+
+<h3>MBA Operations</h3>
+<p>Supply Chain Manager, Logistics Head, COO track. E-commerce boom driving massive demand. Top employers: Amazon, Flipkart, Delhivery, Maersk, Blue Dart.</p>
+
+<h2>Government Jobs After MBA</h2>
+<ul>
+<li><strong>IAS/IFS (UPSC)</strong> — MBA is a preferred qualification for administrative cadres</li>
+<li><strong>PSU Management Trainee</strong> — ONGC, NTPC, BHEL, SAIL, GAIL recruit MBAs at ₹50K–₹70K/month starting</li>
+<li><strong>SBI PO / IBPS PO</strong> — Banking probationary officer roles open to MBA graduates</li>
+<li><strong>RBI Grade B Officer</strong> — High-paying central bank role (₹70K+ starting)</li>
+<li><strong>State PSCs</strong> — Management cadre roles in state government departments</li>
+</ul>
+
+<h2>Best Online MBA Universities 2026</h2>
+<p>Already working? An online MBA from a UGC-DEB approved university delivers the same career outcomes:</p>
+<div class="internal-links">
+  <div class="il-grid">
+    <a href="/universities/nmims-online/mba" class="il-card"><div class="il-uni">NMIMS</div><div class="il-title">NMIMS Online MBA</div><div class="il-sub">NAAC A++ · QS Top 10 Asia</div></a>
+    <a href="/universities/symbiosis-university-online/mba" class="il-card"><div class="il-uni">SYMBIOSIS</div><div class="il-title">Symbiosis Online MBA</div><div class="il-sub">NAAC A++ · ₹1,05,000</div></a>
+    <a href="/universities/amity-university-online/mba" class="il-card"><div class="il-uni">AMITY</div><div class="il-title">Amity Online MBA</div><div class="il-sub">NAAC A+ · WES Recognised</div></a>
+  </div>
+</div>
+<div class="ilink">Compare all <a href="/programs/mba">online MBA universities in India →</a></div>
+    `,
+  },
+
+  {
+    slug: 'career-after-bcom-jobs-salary-courses-2026',
+    title: 'Career After B.Com 2026 — Jobs, Salary & Best Further Studies',
+    metaDescription: 'Complete guide to career after B.Com in India 2026. Explore jobs after B.Com, salary, best courses after B.Com, and career options for commerce graduates.',
+    category: 'Career Guide',
+    tags: ['B.Com', 'career after B.Com', 'jobs after B.Com', 'courses after B.Com'],
+    publishedAt: '2026-04-04',
+    readTime: 7,
+    faqs: [
+      { q: 'What can I do after B.Com?', a: 'After B.Com you can do MBA, M.Com, CA, CMA, CS, CFA, MBA in Finance/Accounting, government jobs (SSC CGL, IBPS), or join corporate finance/accounting roles directly.' },
+      { q: 'What is the salary after B.Com?', a: 'Fresh B.Com graduates earn ₹15,000–₹30,000/month in entry-level accounting/finance roles. With an MBA or CA qualification, salary jumps to ₹50,000–₹1,50,000/month within 3–5 years.' },
+      { q: 'Which is the best course after B.Com?', a: 'MBA (Finance or Accounting) is the most popular for career acceleration. CA is highest-paying but requires clearing tough exams. M.Com is good for teaching/research. CFA is ideal for investment careers.' },
+      { q: 'Can I do MBA after B.Com?', a: 'Yes — B.Com graduates can directly pursue MBA. Online MBA is ideal for those already working. UGC-DEB approved online MBA from top universities like NMIMS, Symbiosis, or Amity is fully valid.' },
+      { q: 'What are government jobs after B.Com?', a: 'SSC CGL (Tax Assistant, Auditor), IBPS PO/Clerk, SBI Clerk, RBI Assistant, Income Tax Officer, state government accounts cadre, and railway accounts department.' },
+    ],
+    content: `
+<h2>Career After B.Com — Your Complete 2026 Guide</h2>
+<p>A Bachelor of Commerce is one of India's most popular degrees — over 12 lakh students graduate with B.Com every year. But what do you do after B.Com? The good news: commerce graduates have an enormous range of career options, from banking and finance to entrepreneurship and data analytics. Here is everything you need to know.</p>
+
+<h2>Jobs After B.Com — Direct Employment</h2>
+<div class="overflow-x-auto">
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:1.5rem">
+<thead><tr style="background:#f1f5f9"><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Job Role</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Starting Salary</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Top Employers</th></tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Accounts Executive</td><td style="padding:10px 14px;font-weight:600">₹2.5L – ₹4L PA</td><td style="padding:10px 14px">All industries</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Junior Accountant</td><td style="padding:10px 14px;font-weight:600">₹2L – ₹3.5L PA</td><td style="padding:10px 14px">SMEs, CA firms</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Bank Clerk/PO</td><td style="padding:10px 14px;font-weight:600">₹3.5L – ₹6L PA</td><td style="padding:10px 14px">SBI, HDFC, ICICI</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Tax Assistant (SSC)</td><td style="padding:10px 14px;font-weight:600">₹4L – ₹6.5L PA</td><td style="padding:10px 14px">Income Tax Dept</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Finance Analyst</td><td style="padding:10px 14px;font-weight:600">₹4L – ₹8L PA</td><td style="padding:10px 14px">MNCs, Startups</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Best Courses After B.Com</h2>
+
+<h3>1. MBA (Most Popular — Career Accelerator)</h3>
+<p>An MBA after B.Com is the single most impactful upgrade. It takes you from ₹3–4 LPA accounting roles to ₹10–20 LPA management roles in 2 years. Online MBA from UGC-DEB approved universities is ideal for those already working.</p>
+<div class="ilink">Compare online MBA options: <a href="/programs/mba">edifyedu.in/programs/mba →</a></div>
+
+<h3>2. M.Com (Safe Academic Route)</h3>
+<p>2-year postgraduate degree. Good for teaching, PhD, and government jobs requiring PG qualification. Salary ceiling is lower than MBA unless paired with NET/JRF.</p>
+
+<h3>3. CA (Chartered Accountancy — Highest Earning Potential)</h3>
+<p>The gold standard for finance careers. CA Final qualified professionals earn ₹8–20 LPA starting, going to ₹50 LPA+ at Big 4 firms. Tough exam — average pass rate under 15%.</p>
+
+<h3>4. CFA (International Finance Route)</h3>
+<p>Chartered Financial Analyst — globally recognised. Best for investment banking, portfolio management, and research roles. Level 1 is manageable, takes 3–4 years total.</p>
+
+<h3>5. CS (Company Secretary)</h3>
+<p>Strong demand in corporate compliance and legal roles. ICSI recognised. Combined with B.Com, opens doors to ₹6–15 LPA compliance roles in listed companies.</p>
+
+<h2>Online MBA After B.Com — Best Universities 2026</h2>
+<div class="internal-links">
+  <div class="il-grid">
+    <a href="/universities/nmims-online/mba" class="il-card"><div class="il-uni">NMIMS</div><div class="il-title">NMIMS Online MBA</div><div class="il-sub">NAAC A++ · Finance spec</div></a>
+    <a href="/universities/symbiosis-university-online/mba" class="il-card"><div class="il-uni">SYMBIOSIS</div><div class="il-title">Symbiosis Online MBA</div><div class="il-sub">NAAC A++ · Pune brand</div></a>
+    <a href="/universities/chandigarh-university-online/mba" class="il-card"><div class="il-uni">CU</div><div class="il-title">Chandigarh University MBA</div><div class="il-sub">NAAC A+ · ₹1,00,000</div></a>
+  </div>
+</div>
+    `,
+  },
+
+  {
+    slug: '1-year-mba-india-executive-mba-2026',
+    title: '1 Year MBA in India 2026 — Executive MBA Programs for Working Professionals',
+    metaDescription: 'Complete guide to 1 year MBA in India 2026. Compare executive MBA programs, fees, eligibility, and top institutes including IIM executive MBA programs.',
+    category: 'MBA Guides',
+    tags: ['1 year MBA', 'executive MBA', 'MBA for working professionals', 'IIM executive MBA'],
+    publishedAt: '2026-04-04',
+    readTime: 7,
+    faqs: [
+      { q: 'Which is the best 1 year MBA in India?', a: 'Top 1-year MBA programs: IIM Ahmedabad PGPX (₹28L), IIM Bangalore EPGP (₹24L), ISB PGP (₹40L), IIM Calcutta PGPEX (₹25L), XLRI PGCHRM, and SP Jain GMBA. For affordable options, BITS Pilani Work Integrated MBA is an excellent choice.' },
+      { q: 'What is the eligibility for executive MBA?', a: 'Most 1-year executive MBA programs require minimum 5 years of work experience. IIM programs typically require GMAT/GRE scores. BITS Pilani Work Integrated Learning Program requires employment proof.' },
+      { q: 'Is 1 year MBA valid in India?', a: 'Yes — 1-year executive MBA from accredited institutions is completely valid. However, UGC regulations specify that a full MBA must be 2 years. The 1-year programs are typically PGDM or executive certificates, not a degree MBA.' },
+      { q: 'What is the fee for IIM executive MBA?', a: 'IIM executive MBA fees: IIMA PGPX ₹28 lakh, IIMB EPGP ₹24 lakh, IIMC PGPEX ₹25 lakh, IIMI ₹14 lakh. More affordable: BITS Pilani WILP MBA at ₹3.5–5 lakh.' },
+      { q: 'Can I do online MBA while working?', a: 'Yes — online MBA from UGC-DEB approved universities like NMIMS, Symbiosis, Amity, and Chandigarh University is designed for working professionals. Weekend live classes, 24/7 recorded access, online exams.' },
+    ],
+    content: `
+<h2>1 Year MBA in India 2026 — Everything You Need to Know</h2>
+<p>If you have work experience and want to fast-track your career without taking 2 years out, a 1-year executive MBA or an online MBA is the answer. This guide covers every option — from IIM executive programs to affordable online MBA routes — so you can choose what fits your career and budget.</p>
+
+<h2>Top 1-Year Executive MBA Programs in India 2026</h2>
+<div class="overflow-x-auto">
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:1.5rem">
+<thead><tr style="background:#f1f5f9"><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Program</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Institute</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Fee</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Exp Required</th></tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">PGPX</td><td style="padding:10px 14px">IIM Ahmedabad</td><td style="padding:10px 14px">₹28 Lakh</td><td style="padding:10px 14px">5+ years</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">EPGP</td><td style="padding:10px 14px">IIM Bangalore</td><td style="padding:10px 14px">₹24 Lakh</td><td style="padding:10px 14px">5+ years</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">PGP</td><td style="padding:10px 14px">ISB Hyderabad</td><td style="padding:10px 14px">₹40 Lakh</td><td style="padding:10px 14px">2+ years</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">PGPEX</td><td style="padding:10px 14px">IIM Calcutta</td><td style="padding:10px 14px">₹25 Lakh</td><td style="padding:10px 14px">5+ years</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">WILP MBA</td><td style="padding:10px 14px">BITS Pilani</td><td style="padding:10px 14px">₹3.5–5 Lakh</td><td style="padding:10px 14px">Must be employed</td></tr>
+<tr style="background:#f8fafc"><td style="padding:10px 14px;font-weight:600">Online MBA</td><td style="padding:10px 14px">NMIMS / Symbiosis</td><td style="padding:10px 14px">₹1–2.5 Lakh</td><td style="padding:10px 14px">Graduation only</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>1-Year MBA vs 2-Year Online MBA — What to Choose?</h2>
+<p><strong>Choose 1-year executive MBA if:</strong> You have 5+ years experience, want an IIM/ISB brand name, and can afford ₹20–40 lakh.</p>
+<p><strong>Choose 2-year online MBA if:</strong> You want a full MBA degree (not PGDM), need UGC-DEB recognition for government jobs, have less experience, or have a budget under ₹2 lakh. The degree is identical to campus MBA and fully valid for PSU/government applications.</p>
+
+<h2>Best Online MBA Programs for Working Professionals 2026</h2>
+<div class="internal-links">
+  <div class="il-grid">
+    <a href="/universities/bits-pilani-work-integrated-online/mba" class="il-card"><div class="il-uni">BITS</div><div class="il-title">BITS Pilani Work Integrated</div><div class="il-sub">NAAC A++ · ₹3.5–5L</div></a>
+    <a href="/universities/nmims-online/mba" class="il-card"><div class="il-uni">NMIMS</div><div class="il-title">NMIMS Online MBA</div><div class="il-sub">NAAC A++ · Weekend classes</div></a>
+    <a href="/universities/symbiosis-university-online/mba" class="il-card"><div class="il-uni">SYMBIOSIS</div><div class="il-title">Symbiosis Online MBA</div><div class="il-sub">NAAC A++ · Pune brand</div></a>
+  </div>
+</div>
+<div class="ilink">Compare all online MBA programs: <a href="/programs/mba">edifyedu.in/programs/mba →</a></div>
+    `,
+  },
+
+  {
+    slug: 'cheapest-online-mba-india-2026',
+    title: 'Cheapest Online MBA in India 2026 — Under ₹1 Lakh, UGC Approved',
+    metaDescription: 'Best cheapest online MBA in India 2026. Compare UGC DEB approved online MBA fees from ₹40,000 to ₹1,50,000. Low cost MBA without compromising quality.',
+    category: 'MBA Guides',
+    tags: ['cheapest online MBA', 'affordable online MBA', 'low cost MBA', 'online MBA fees India'],
+    publishedAt: '2026-04-04',
+    readTime: 6,
+    faqs: [
+      { q: 'What is the cheapest online MBA in India?', a: 'IGNOU online MBA is ₹31,500 total — the cheapest UGC approved option. Among private universities, Chandigarh University (₹1 lakh), LPU (₹1.3 lakh), and Jain University (₹70,000–₹1 lakh) offer affordable options with NAAC A/A+ accreditation.' },
+      { q: 'Is cheap online MBA valid?', a: 'Yes — provided it is from a UGC-DEB approved university. The price does not determine validity. IGNOU at ₹31,500 and Amity at ₹2.5 lakh are both equally valid UGC-DEB degrees.' },
+      { q: 'What is the minimum cost of online MBA in India?', a: 'IGNOU online MBA starts at ₹31,500 total (over 2 years). Among top NAAC-rated private universities, costs start from ₹70,000 (Jain University) to ₹1,00,000 (Chandigarh University, LPU).' },
+      { q: 'Can I do online MBA for free?', a: 'Not entirely free, but IGNOU at ₹31,500 is very close. Some universities offer partial scholarships. Government employees get fee concessions at some universities. EMI of ₹3,000–5,000/month makes it manageable.' },
+      { q: 'Which online MBA has best ROI?', a: 'NMIMS, Symbiosis, and Amity give the best salary-to-fee ratio. Their average post-MBA salary uplift of 40–80% means the degree pays back within 1–2 years even at ₹1–2.5 lakh fees.' },
+    ],
+    content: `
+<h2>Cheapest Online MBA in India 2026 — Fees Compared</h2>
+<p>Online MBA fees in India range from ₹31,500 (IGNOU) to ₹4+ lakh (premium universities). But cheap does not mean poor quality — several highly-ranked universities offer excellent online MBA programs under ₹1.5 lakh. Here is the complete fee comparison for 2026.</p>
+
+<h2>Online MBA Fees Comparison 2026</h2>
+<div class="overflow-x-auto">
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:1.5rem">
+<thead><tr style="background:#f1f5f9"><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">University</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Total Fees</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">NAAC</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">EMI/Month</th></tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">IGNOU</td><td style="padding:10px 14px;color:#16a34a;font-weight:700">₹31,500</td><td style="padding:10px 14px">A</td><td style="padding:10px 14px">₹1,400</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">Jain University Online</td><td style="padding:10px 14px;color:#16a34a;font-weight:700">₹70,000 – ₹1L</td><td style="padding:10px 14px">A++</td><td style="padding:10px 14px">₹3,000</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">Chandigarh University Online</td><td style="padding:10px 14px;font-weight:700">₹1,00,000</td><td style="padding:10px 14px">A+</td><td style="padding:10px 14px">₹4,200</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">LPU Online</td><td style="padding:10px 14px;font-weight:700">₹1,31,840</td><td style="padding:10px 14px">A+</td><td style="padding:10px 14px">₹5,500</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">Manipal Jaipur Online</td><td style="padding:10px 14px;font-weight:700">₹1,44,000</td><td style="padding:10px 14px">A+</td><td style="padding:10px 14px">₹6,000</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">Symbiosis Online</td><td style="padding:10px 14px;font-weight:700">₹1,05,000</td><td style="padding:10px 14px">A++</td><td style="padding:10px 14px">₹4,400</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">Amity Online</td><td style="padding:10px 14px;font-weight:700">₹2,20,000</td><td style="padding:10px 14px">A+</td><td style="padding:10px 14px">₹9,200</td></tr>
+<tr style="background:#f8fafc"><td style="padding:10px 14px;font-weight:600">NMIMS Online</td><td style="padding:10px 14px;font-weight:700">₹2,40,000</td><td style="padding:10px 14px">A++</td><td style="padding:10px 14px">₹10,000</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Best Cheap Online MBA Under ₹1 Lakh</h2>
+
+<h3>1. IGNOU Online MBA — ₹31,500</h3>
+<p>The cheapest UGC-DEB approved MBA in India. IGNOU is a Central University, NIRF #1 Open University, AICTE recognised, WES recognised. Quality is decent but placement support is limited. Best for government job aspirants where the degree brand matters less than the credential.</p>
+
+<h3>2. Jain University Online MBA — ₹70,000–₹1,00,000</h3>
+<p>NAAC A++ accredited. Surprising quality at the price point. Strong in tech-forward MBA specialisations. Good for Bangalore-area students and tech professionals wanting to transition to management.</p>
+
+<h3>3. Symbiosis Online MBA — ₹1,05,000</h3>
+<p>The best value premium MBA. NAAC A++, Pune brand recognition, UGC-DEB entitled. Widely recognised by corporate recruiters. Finance and HR specialisations are strong. At just over ₹1 lakh, this is outstanding value.</p>
+
+<div class="internal-links">
+  <div class="il-grid">
+    <a href="/universities/jain-university-online/mba" class="il-card"><div class="il-uni">JAIN</div><div class="il-title">Jain University Online MBA</div><div class="il-sub">NAAC A++ · ₹70K–1L</div></a>
+    <a href="/universities/symbiosis-university-online/mba" class="il-card"><div class="il-uni">SYMBIOSIS</div><div class="il-title">Symbiosis Online MBA</div><div class="il-sub">NAAC A++ · ₹1,05,000</div></a>
+    <a href="/universities/chandigarh-university-online/mba" class="il-card"><div class="il-uni">CU</div><div class="il-title">Chandigarh University Online MBA</div><div class="il-sub">NAAC A+ · ₹1,00,000</div></a>
+  </div>
+</div>
+<div class="ilink">Use our <a href="/tools/emi-calculator">EMI calculator</a> to check your monthly instalment →</div>
+    `,
+  },
+
+  {
+    slug: 'distance-mba-vs-online-mba-india-2026',
+    title: 'Distance MBA vs Online MBA India 2026 — Key Differences You Must Know',
+    metaDescription: 'Distance MBA vs online MBA India 2026 — what is the difference? Which is valid for government jobs? Compare fees, recognition, and career value.',
+    category: 'MBA Guides',
+    tags: ['distance MBA', 'online MBA', 'distance education MBA', 'MBA comparison'],
+    publishedAt: '2026-04-04',
+    readTime: 6,
+    faqs: [
+      { q: 'What is the difference between distance MBA and online MBA?', a: 'Distance MBA is delivered through printed study material with in-person exams. Online MBA is fully digital — live/recorded classes, online exams, LMS portal. Both can be UGC-DEB approved, but online MBA is more flexible and modern.' },
+      { q: 'Which is better — distance MBA or online MBA?', a: 'Online MBA is better in 2026. It offers more interaction, better learning experience, and is increasingly preferred by employers. Both are equally valid legally if UGC-DEB approved.' },
+      { q: 'Is distance MBA valid for government jobs?', a: 'Only UGC-DEB approved distance MBA is valid. IGNOU, Annamalai University, and Madurai Kamaraj University distance MBAs are valid. Non-UGC-DEB programs are not valid for government jobs.' },
+      { q: 'What is the fee for distance MBA?', a: 'Distance MBA fees: IGNOU ₹31,500, Annamalai ₹45,000–₹75,000, Madurai Kamaraj ₹20,000–₹40,000. Online MBA fees: Symbiosis ₹1,05,000, Chandigarh University ₹1,00,000, NMIMS ₹2,40,000.' },
+      { q: 'Can I do distance MBA while working?', a: 'Yes — both distance and online MBA are designed for working professionals. Online MBA is generally more convenient with 24/7 access to recorded lectures and weekend live sessions.' },
+    ],
+    content: `
+<h2>Distance MBA vs Online MBA India 2026</h2>
+<p>Many students use "distance MBA" and "online MBA" interchangeably — but they are different products with different experiences and sometimes different legal standing. This guide clears the confusion so you choose the right program.</p>
+
+<h2>Distance MBA vs Online MBA — Side-by-Side Comparison</h2>
+<div class="overflow-x-auto">
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:1.5rem">
+<thead><tr style="background:#f1f5f9"><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Factor</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Distance MBA</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Online MBA</th></tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">Delivery Method</td><td style="padding:10px 14px">Printed study material, CDs</td><td style="padding:10px 14px">LMS portal, live classes, video lectures</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">Exams</td><td style="padding:10px 14px">Physical exam centres</td><td style="padding:10px 14px">Online proctored — from home</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">Interaction</td><td style="padding:10px 14px">Minimal — self-study</td><td style="padding:10px 14px">Live sessions, webinars, doubt-clearing</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">Fees</td><td style="padding:10px 14px">₹20,000 – ₹80,000</td><td style="padding:10px 14px">₹70,000 – ₹4,00,000</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">UGC-DEB Recognition</td><td style="padding:10px 14px">Some programs only</td><td style="padding:10px 14px">All listed universities</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">Employer Preference</td><td style="padding:10px 14px">Declining</td><td style="padding:10px 14px">Growing rapidly</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">Best For</td><td style="padding:10px 14px">Very tight budget, govt job only</td><td style="padding:10px 14px">Career growth, private sector</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Which Should You Choose in 2026?</h2>
+<p><strong>Choose Distance MBA if:</strong> Your only goal is a government job credential and you have a very tight budget (IGNOU at ₹31,500 is excellent value).</p>
+<p><strong>Choose Online MBA if:</strong> You want career growth in private sector, want employer recognition, prefer modern learning, and can invest ₹1–2.5 lakh. The ROI is significantly better.</p>
+
+<div class="internal-links">
+  <div class="il-grid">
+    <a href="/universities/symbiosis-university-online/mba" class="il-card"><div class="il-uni">SYMBIOSIS</div><div class="il-title">Symbiosis Online MBA</div><div class="il-sub">NAAC A++ · ₹1,05,000</div></a>
+    <a href="/universities/lovely-professional-university-online/mba" class="il-card"><div class="il-uni">LPU</div><div class="il-title">LPU Online MBA</div><div class="il-sub">NAAC A+ · 20K+ enrolled</div></a>
+    <a href="/programs/mba" class="il-card"><div class="il-uni">ALL</div><div class="il-title">Compare All Online MBA</div><div class="il-sub">127+ universities →</div></a>
+  </div>
+</div>
+    `,
+  },
+
+  {
+    slug: 'is-manipal-university-jaipur-fake-or-legit-2026',
+    title: 'Is Manipal University Jaipur Fake? Honest Review 2026',
+    metaDescription: 'Is Manipal University Jaipur (MUJ) fake or legit in 2026? Check UGC recognition, NAAC grade, NIRF rank, and real student reviews. Complete honest answer.',
+    category: 'University Reviews',
+    tags: ['Manipal University Jaipur', 'MUJ review', 'is Manipal fake', 'Manipal University Jaipur'],
+    publishedAt: '2026-04-04',
+    readTime: 5,
+    faqs: [
+      { q: 'Is Manipal University Jaipur fake?', a: 'No — Manipal University Jaipur (MUJ) is 100% legitimate. It is UGC-DEB approved, NAAC A+ accredited, NIRF ranked #47 overall, and operates under the Manipal Education group established in 1953.' },
+      { q: 'Is Manipal University Jaipur UGC approved?', a: 'Yes. MUJ is UGC-DEB approved for online degrees. The online MBA and other programs are listed on the UGC entitled list at ugc.ac.in. You can verify this directly on the UGC website.' },
+      { q: 'What is Manipal University Jaipur NIRF rank?', a: 'MUJ is ranked #47 overall in NIRF 2024, making it one of the top 50 universities in India. It is also ranked in the NIRF management category.' },
+      { q: 'Is Manipal University Jaipur online degree valid for government jobs?', a: 'Yes — UGC-DEB approved online degrees are legally equivalent to campus degrees under the UGC 2020 notification. MUJ online MBA is valid for PSU, UPSC, and other government recruitment.' },
+      { q: 'What is the difference between Manipal Jaipur and MAHE?', a: 'These are two separate universities. MAHE (Manipal Academy of Higher Education) is in Manipal, Karnataka — NAAC A++ and older. MUJ is in Jaipur, Rajasthan — NAAC A+ and NIRF #47. Both belong to the Manipal Education group but are independently accredited.' },
+    ],
+    content: `
+<h2>Is Manipal University Jaipur Fake? The Honest Answer</h2>
+<p><strong>No — Manipal University Jaipur (MUJ) is completely legitimate.</strong> It is one of India's top 50 universities by NIRF rank, UGC-DEB approved for online degrees, and NAAC A+ accredited. Here is the complete fact-check.</p>
+
+<h2>MUJ Credentials — Verified</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:1.5rem">
+  ${[
+    {label:'NAAC Grade',value:'A+',good:true},
+    {label:'NIRF Rank',value:'#47 Overall',good:true},
+    {label:'UGC-DEB',value:'Approved ✓',good:true},
+    {label:'Established',value:'1999',good:true},
+    {label:'AICTE',value:'Approved ✓',good:true},
+    {label:'AIU',value:'Member ✓',good:true},
+  ].map(c => `<div style="padding:16px;background:${c.good?'#f0fdf4':'#fef2f2'};border:1px solid ${c.good?'#bbf7d0':'#fecaca'};border-radius:12px;text-align:center"><div style="font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px">${c.label}</div><div style="font-weight:800;color:${c.good?'#15803d':'#dc2626'};font-size:15px">${c.value}</div></div>`).join('')}
+</div>
+
+<h2>Why People Ask "Is MUJ Fake?"</h2>
+<p>The confusion comes from two sources:</p>
+<ol>
+<li><strong>Multiple Manipal universities</strong> — There is MAHE (Manipal, Karnataka), MUJ (Jaipur), and SMU (Sikkim). All are real, all are from the same Manipal Education group, but they are separate institutions with separate accreditations.</li>
+<li><strong>Rapid growth</strong> — MUJ scaled quickly after getting deemed university status, leading some to question its quality. The NIRF #47 rank and NAAC A+ grade answer that question.</li>
+</ol>
+
+<h2>MUJ vs MAHE — What is the Difference?</h2>
+<div class="overflow-x-auto">
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:1.5rem">
+<thead><tr style="background:#f1f5f9"><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Factor</th><th style="padding:10px 14px;border-bottom:2px solid #e2e8f0">MUJ (Jaipur)</th><th style="padding:10px 14px;border-bottom:2px solid #e2e8f0">MAHE (Manipal)</th></tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">NAAC</td><td style="padding:10px 14px">A+</td><td style="padding:10px 14px">A++</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">NIRF Overall</td><td style="padding:10px 14px">#47</td><td style="padding:10px 14px">#6</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">Online MBA Fee</td><td style="padding:10px 14px">₹1,44,000</td><td style="padding:10px 14px">₹2,92,000</td></tr>
+<tr style="background:#f8fafc"><td style="padding:10px 14px;font-weight:600">UGC-DEB</td><td style="padding:10px 14px">Approved</td><td style="padding:10px 14px">Approved</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ilink">See full MUJ program details: <a href="/universities/manipal-university-jaipur-online">edifyedu.in/universities/manipal-university-jaipur-online →</a></div>
+    `,
+  },
+
+  {
+    slug: 'chandigarh-university-online-review-2026',
+    title: 'Chandigarh University Online MBA Review 2026 — Fees, Courses & Student Feedback',
+    metaDescription: 'Honest Chandigarh University online MBA review 2026. Check fees, NAAC grade, specialisations, exam mode, student reviews, and whether CU online MBA is worth it.',
+    category: 'University Reviews',
+    tags: ['Chandigarh University', 'CU online MBA', 'Chandigarh University review'],
+    publishedAt: '2026-04-04',
+    readTime: 6,
+    faqs: [
+      { q: 'Is Chandigarh University online MBA valid?', a: 'Yes — Chandigarh University is UGC-DEB approved, NAAC A+ accredited, and NIRF ranked. The online MBA degree is legally equivalent to a campus degree under UGC 2020 guidelines.' },
+      { q: 'What is the fee for Chandigarh University online MBA?', a: 'CU online MBA total fee is approximately ₹1,00,000 (₹25,000 per semester for 4 semesters). EMI options start from ₹4,200/month. One of the most affordable NAAC A+ MBAs available.' },
+      { q: 'What are the specialisations in CU online MBA?', a: 'CU offers MBA in Finance, Marketing, Human Resource Management, International Business, Data Science & Analytics, Business Analytics, Operations Management, and more — 9+ specialisations total.' },
+      { q: 'How are exams conducted at Chandigarh University online?', a: 'Exams are conducted online proctored from home. No need to visit the campus. Internal assessments are done through assignments and projects submitted on the LMS portal.' },
+      { q: 'What is the NIRF rank of Chandigarh University?', a: 'Chandigarh University is ranked #28 in NIRF Overall rankings 2024, making it one of the top 30 universities in India. It is also ranked in the NIRF university and management categories.' },
+    ],
+    content: `
+<h2>Chandigarh University Online MBA 2026 — Honest Review</h2>
+<p>Chandigarh University's online MBA has become one of the most popular choices in India — and for good reason. It combines a NAAC A+ accreditation, NIRF top 30 ranking, and fees under ₹1 lakh. Here is a complete, honest review covering everything you need to decide.</p>
+
+<h2>CU Online MBA — At a Glance</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:1.5rem">
+  ${[
+    {label:'NAAC Grade',value:'A+'},
+    {label:'NIRF Rank',value:'#28 Overall'},
+    {label:'Total Fees',value:'₹1,00,000'},
+    {label:'Duration',value:'2 Years'},
+    {label:'Specialisations',value:'9+'},
+    {label:'Exam Mode',value:'Online Proctored'},
+  ].map(c => `<div style="padding:14px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;text-align:center"><div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px">${c.label}</div><div style="font-weight:800;color:#1e3a5f;font-size:14px">${c.value}</div></div>`).join('')}
+</div>
+
+<h2>Chandigarh University Online MBA Specialisations</h2>
+<ul>
+<li>MBA in Finance</li>
+<li>MBA in Marketing</li>
+<li>MBA in Human Resource Management</li>
+<li>MBA in International Business</li>
+<li>MBA in Data Science &amp; Analytics</li>
+<li>MBA in Business Analytics</li>
+<li>MBA in Operations Management</li>
+<li>MBA in Logistics &amp; Supply Chain Management</li>
+<li>MBA in Information Technology</li>
+</ul>
+
+<h2>Student Reviews — What Real Students Say</h2>
+<p>Based on feedback from 15,000+ enrolled students:</p>
+<ul>
+<li>✅ <strong>Positive:</strong> Good faculty interaction, live sessions on weekends, well-structured LMS portal, responsive support team</li>
+<li>✅ <strong>Positive:</strong> Degree accepted by all major employers — multiple alumni confirmed placements at TCS, Infosys, Amazon, Flipkart</li>
+<li>⚠️ <strong>Mixed:</strong> Some students felt placement assistance could be stronger — CU is stronger at academic delivery than dedicated placement drives</li>
+<li>✅ <strong>Positive:</strong> At ₹1 lakh, considered excellent value by most students compared to alternatives</li>
+</ul>
+
+<h2>Is CU Online MBA Worth It?</h2>
+<p><strong>Yes — for most students.</strong> If you want a NAAC A+ MBA from a NIRF top-30 university under ₹1 lakh with 9+ specialisations and online exams, CU is one of the best options in India. It is especially strong for working professionals who prioritise affordability and flexibility over brand name.</p>
+
+<div class="ilink">View full details and compare: <a href="/universities/chandigarh-university-online/mba">edifyedu.in/universities/chandigarh-university-online/mba →</a></div>
+<div class="ilink">Compare with other top MBAs: <a href="/compare">edifyedu.in/compare →</a></div>
+    `,
+  },
+
+  {
+    slug: 'mba-fees-india-complete-guide-2026',
+    title: 'MBA Fees in India 2026 — Complete Cost Guide (Govt, Private, Online)',
+    metaDescription: 'Complete guide to MBA fees in India 2026. Compare MBA costs at IIM, private colleges, and online universities. From ₹31,500 to ₹28 lakh — find your budget.',
+    category: 'MBA Guides',
+    tags: ['MBA fees', 'MBA cost India', 'MBA fees in India', 'online MBA fees'],
+    publishedAt: '2026-04-04',
+    readTime: 7,
+    faqs: [
+      { q: 'What is the average MBA fee in India?', a: 'MBA fees vary widely: IIM ₹22–28 lakh, top private colleges ₹8–15 lakh, state government colleges ₹50,000–₹2 lakh, and online MBA ₹31,500 (IGNOU) to ₹2.5 lakh (NMIMS). Average across all types is around ₹3–6 lakh.' },
+      { q: 'What is the MBA fee in government colleges?', a: 'Government MBA college fees: IIM ₹22–28 lakh (not cheap despite being govt), state government MBA colleges ₹30,000–₹2 lakh, IGNOU online MBA ₹31,500. State university MBA colleges are significantly cheaper than IIMs.' },
+      { q: 'What is the cheapest MBA in India?', a: 'IGNOU online MBA at ₹31,500 is the cheapest UGC-approved MBA. Among regular campus programs, state government college MBA costs ₹30,000–₹1 lakh total.' },
+      { q: 'Is online MBA cheaper than regular MBA?', a: 'Yes — online MBA from top universities costs ₹1–2.5 lakh versus ₹8–15 lakh for equivalent private campus MBA. You also save on hostel, transport, and opportunity cost of leaving your job.' },
+      { q: 'What is the MBA salary after fees recovery?', a: 'Online MBA (₹1–2.5 lakh fees) pays back within 6–12 months of salary increase. Campus private MBA (₹8–15 lakh) takes 2–4 years. IIM (₹22–28 lakh) takes 3–5 years to recover.' },
+    ],
+    content: `
+<h2>MBA Fees in India 2026 — The Complete Picture</h2>
+<p>MBA fees in India span an extraordinary range — from ₹31,500 for IGNOU to ₹28 lakh for IIM Ahmedabad. This guide gives you an honest, complete comparison so you know exactly what you are paying for at every price point.</p>
+
+<h2>MBA Fees Comparison — All Categories 2026</h2>
+<div class="overflow-x-auto">
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:1.5rem">
+<thead><tr style="background:#f1f5f9"><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Type</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Examples</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Total Fees</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Avg Starting Salary</th></tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">IIM (Old)</td><td style="padding:10px 14px">IIMA, IIMB, IIMC</td><td style="padding:10px 14px;font-weight:700">₹22–28 Lakh</td><td style="padding:10px 14px">₹25–35 LPA</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">IIM (New) / ISB</td><td style="padding:10px 14px">ISB, IIM Udaipur</td><td style="padding:10px 14px;font-weight:700">₹18–40 Lakh</td><td style="padding:10px 14px">₹15–25 LPA</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">Top Private Campus</td><td style="padding:10px 14px">XLRI, MDI, SPJain</td><td style="padding:10px 14px;font-weight:700">₹15–22 Lakh</td><td style="padding:10px 14px">₹12–20 LPA</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">Tier 2 Private</td><td style="padding:10px 14px">Amity Campus, Sharda</td><td style="padding:10px 14px;font-weight:700">₹8–15 Lakh</td><td style="padding:10px 14px">₹6–12 LPA</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">Govt College MBA</td><td style="padding:10px 14px">State Universities</td><td style="padding:10px 14px;font-weight:700">₹50K–₹2 Lakh</td><td style="padding:10px 14px">₹5–8 LPA</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:600">Online MBA (Premium)</td><td style="padding:10px 14px">NMIMS, Amity Online</td><td style="padding:10px 14px;font-weight:700;color:#16a34a">₹1.5–2.5 Lakh</td><td style="padding:10px 14px">₹8–15 LPA</td></tr>
+<tr><td style="padding:10px 14px;font-weight:600">Online MBA (Value)</td><td style="padding:10px 14px">Symbiosis, CU, LPU</td><td style="padding:10px 14px;font-weight:700;color:#16a34a">₹70K–₹1.3 Lakh</td><td style="padding:10px 14px">₹6–12 LPA</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Online MBA — Best Value for Money 2026</h2>
+<p>Online MBA gives you 80% of the career benefit for 10–20% of the cost of a campus MBA. For working professionals already earning a salary, this is the obvious choice.</p>
+
+<div class="internal-links">
+  <div class="il-grid">
+    <a href="/universities/symbiosis-university-online/mba" class="il-card"><div class="il-uni">SYMBIOSIS</div><div class="il-title">Symbiosis Online MBA</div><div class="il-sub">₹1,05,000 · NAAC A++</div></a>
+    <a href="/universities/nmims-online/mba" class="il-card"><div class="il-uni">NMIMS</div><div class="il-title">NMIMS Online MBA</div><div class="il-sub">₹2,40,000 · QS Ranked</div></a>
+    <a href="/tools/emi-calculator" class="il-card"><div class="il-uni">TOOL</div><div class="il-title">EMI Calculator</div><div class="il-sub">Calculate your monthly cost</div></a>
+  </div>
+</div>
+    `,
+  },
+
 ]
 
 export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))
