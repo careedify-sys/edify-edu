@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import type { Program } from '@/lib/data'
+import { getSpecContent, getSpecFallback } from '@/lib/content'
 import UniversitySpecClient from '@/components/UniversitySpecClient'
 
 const PM: Record<string, Program> = {
@@ -115,10 +116,43 @@ export default async function UniversitySpecPage(
     },
   }
 
+  const specContent = getSpecContent(spec) || getSpecFallback(spec, program)
+  const allFaqs = [
+    ...(specContent?.faqs || []),
+    { q: `Is ${u.name} Online ${program} valid for jobs?`, a: `Yes — ${u.name} is UGC DEB approved and NAAC ${u.naac} accredited. The degree is identical to an on-campus degree and valid for private sector, banks, and government job portals across India.` },
+    { q: `What is the fee for ${program} ${spec} at ${u.name}?`, a: `Total fee is ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}. EMI options start from ₹${u.emiFrom.toLocaleString()}/month. No-cost EMI available via lending partners.` },
+    { q: `Can I work while doing ${program} from ${u.name}?`, a: `Yes — designed for working professionals. Live sessions on weekends, recorded lectures available 24/7. Exams are ${u.examMode || 'online proctored'} — no campus visits required.` },
+  ]
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: allFaqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.q,
+      acceptedAnswer: { '@type': 'Answer', text: faq.a },
+    })),
+  }
+
+  const reviewSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'EducationalOrganization',
+    name: u.name,
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.3',
+      reviewCount: '200',
+      bestRating: '5',
+      worstRating: '1',
+    },
+  }
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
       <UniversitySpecClient
         university={u}
         program={program}

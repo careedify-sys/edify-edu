@@ -12,6 +12,7 @@ import { getProgramContent, getSpecContent, getSpecFallback, getUniversitySyllab
 import SyllabusSection from '@/components/SyllabusSection'
 import type { Program, University } from '@/lib/data'
 import EnquiryModal from '@/components/EnquiryModal'
+import EdifyRecommends from '@/components/EdifyRecommends'
 import { UNIVERSITY_REVIEWS, GENERIC_REVIEWS } from '@/lib/reviews-data'
 
 const WA_NUMBER = '917061285806'
@@ -38,10 +39,11 @@ function FullPage({ u, program, programSlug, pd }: {
   const [activeSpec, setActiveSpec]   = useState<string | null>(null)
   const [openFaq, setOpenFaq]         = useState<number | null>(null)
 
-  const syllabus   = getMasterSyllabus(u.id, program) || getUniversitySyllabus(u.id, program)
-  const meta       = PROGRAM_META[program]
-  const otherUnis  = getUniversitiesByProgram(program).filter(x => x.id !== u.id).slice(0, 4)
-  const specContent = activeSpec ? (getSpecContent(activeSpec) || getSpecFallback(activeSpec, program)) : null
+  const syllabus      = getMasterSyllabus(u.id, program) || getUniversitySyllabus(u.id, program)
+  const meta          = PROGRAM_META[program]
+  const otherUnis     = getUniversitiesByProgram(program).filter(x => x.id !== u.id).slice(0, 4)
+  const specContent   = activeSpec ? (getSpecContent(activeSpec) || getSpecFallback(activeSpec, program)) : null
+  const programContent = getProgramContent(program)
 
   const faqs = [
     { q: `Is the ${program} degree from ${u.name} valid?`, a: `Yes — 100% valid. ${u.name} is UGC DEB approved. The degree certificate is identical to a regular campus degree and is valid for private sector, government jobs where UGC DEB degrees are accepted${u.psuEligible ? ', and PSU recruitment' : ''}. ` },
@@ -138,6 +140,46 @@ function FullPage({ u, program, programSlug, pd }: {
                   </div>
                 )}
               </section>}
+
+              {/* Skills You'll Gain */}
+              {(programContent?.skills?.technical?.length ?? 0) > 0 && (
+                <section className="card-lg p-6">
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-widest"
+                      style={{ background: 'rgba(212,146,42,0.12)', color: 'var(--amber-text)', border: '1px solid rgba(212,146,42,0.3)' }}>
+                      ✦ Edify Recommends
+                    </span>
+                  </div>
+                  <h2 className="font-display text-xl font-bold text-navy mb-1">Skills You'll Gain</h2>
+                  <p className="text-sm text-ink-3 mb-4">Key competencies from an online {program} that employers look for</p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    {(programContent?.skills?.technical?.length ?? 0) > 0 && (
+                      <div>
+                        <div className="text-xs font-bold text-navy uppercase tracking-wide mb-2">Technical Skills</div>
+                        <div className="flex flex-wrap gap-2">
+                          {(programContent?.skills?.technical ?? []).map(s => (
+                            <span key={s} className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-100">
+                              <CheckCircle size={11} className="shrink-0" /> {s}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                    {(programContent?.skills?.soft?.length ?? 0) > 0 && (
+                      <div>
+                        <div className="text-xs font-bold text-navy uppercase tracking-wide mb-2">Soft Skills</div>
+                        <div className="flex flex-wrap gap-2">
+                          {(programContent?.skills?.soft ?? []).map(s => (
+                            <span key={s} className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-green-50 text-green-700 border border-green-100">
+                              <CheckCircle size={11} className="shrink-0" /> {s}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </section>
+              )}
 
               {/* Career Outcomes */}
               {((pd.roles?.length ?? 0) > 0 || (pd.topCompanies?.length ?? 0) > 0) && <section className="card-lg p-6">
@@ -463,6 +505,8 @@ function FullPage({ u, program, programSlug, pd }: {
                     </div>
                   ))}
                 </div>
+
+                <EdifyRecommends program={program} currentId={u.id} programSlug={programSlug} />
               </div>
             </div>
           </div>

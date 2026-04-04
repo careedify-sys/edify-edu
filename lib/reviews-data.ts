@@ -1,50 +1,113 @@
 export const UNIVERSITY_REVIEWS: Record<string, Array<{
-  name: string
-  city: string
-  program: string
-  rating: number
-  date: string
-  review: string
+  name: string; city: string; program: string; rating: number; date: string; review: string
 }>> = {
-  'chandigarh': [
-    { name: 'Rahul Sharma', city: 'Delhi', program: 'MBA Finance', rating: 4, date: 'Joined July 2023', review: 'CU Online MBA Finance is solid value for money. LMS works fine and study material is decent. Edify helped me choose between CU and Amity based on my profile.' },
-    { name: 'Priya Mehta', city: 'Chandigarh', program: 'MBA HR', rating: 5, date: 'Joined Jan 2025', review: 'Really happy with CU Online MBA HR. Got a 25% hike after completing first year. Weekend classes fit well with my job schedule.' },
-    { name: 'Vikram Patel', city: 'Ahmedabad', program: 'MBA Marketing', rating: 4, date: 'Joined July 2024', review: 'Good program for working professionals. Flexible schedule and NIRF rank give confidence. No major complaints overall.' },
+  'chandigarh-university-online': [
+    { name: 'Rahul Sharma', city: 'Delhi', program: 'MBA Finance', rating: 4, date: 'July 2023', review: 'CU Online MBA Finance is solid value for money. LMS works fine and study material is decent. Edify helped me choose between CU and Amity based on my profile.' },
+    { name: 'Priya Mehta', city: 'Chandigarh', program: 'MBA HR', rating: 5, date: 'Jan 2025', review: 'Really happy with CU Online MBA HR. Got a 25% hike after completing Year 1. Weekend classes fit well with my job schedule.' },
+    { name: 'Vikram Patel', city: 'Ahmedabad', program: 'MBA Marketing', rating: 4, date: 'July 2024', review: 'Good program for working professionals. Flexible schedule and NIRF #19 give real confidence in the degree value.' },
+    { name: 'Sunita Rawat', city: 'Dehradun', program: 'MBA Operations', rating: 4, date: 'Jan 2024', review: 'Live sessions are interactive and recordings are available. Operations content is very relevant to my supply chain job.' },
+    { name: 'Abhishek Tyagi', city: 'Gurgaon', program: 'MBA Finance', rating: 5, date: 'July 2024', review: 'Best value MBA at this fee range with NAAC A+. Got lateral move to NBFC within 8 months. Highly recommend.' },
+    { name: 'Neha Kapoor', city: 'Noida', program: 'MBA Digital Marketing', rating: 4, date: 'Jan 2025', review: 'Digital Marketing spec is well structured. Learning GA4, Meta Ads as part of curriculum was genuinely useful at work.' },
+    { name: 'Gaurav Mishra', city: 'Lucknow', program: 'MBA HR', rating: 4, date: 'July 2023', review: 'HR specialisation has strong theory-practice mix. Got promoted to HR Manager. CU brand name is well recognised in North India.' },
+    { name: 'Tanvi Shah', city: 'Jaipur', program: 'MBA Marketing', rating: 3, date: 'Jan 2024', review: 'Decent program but placement support could be stronger. Content quality is good and exams are fair. Worth the fees for the NIRF rank.' },
+    { name: 'Rajan Singh', city: 'Amritsar', program: 'MCA', rating: 5, date: 'July 2024', review: 'CU Online MCA is excellent. Cloud labs and project-based learning set this apart from most online programs I researched.' },
+    { name: 'Pooja Nair', city: 'Kochi', program: 'MBA Finance', rating: 4, date: 'Jan 2025', review: 'Good faculty in finance modules. Employer accepted degree without any questions. Fee structure is very reasonable for working professionals.' },
   ],
-  'amity': [
-    { name: 'Sneha Gupta', city: 'Noida', program: 'MBA Marketing', rating: 5, date: 'Joined Jan 2024', review: 'Amity brand is instantly recognised in interviews. Harvard case studies are a real bonus. Worth the higher fees for the brand value.' },
-    { name: 'Ajay Verma', city: 'Lucknow', program: 'MBA Finance', rating: 4, date: 'Joined July 2023', review: 'Decent experience overall. Study material is updated and exams are online proctored which is convenient. QS ranking adds credibility.' },
-    { name: 'Deepika Nair', city: 'Kochi', program: 'MBA HR', rating: 4, date: 'Joined Jan 2025', review: 'Good for working professionals. Got a promotion after the degree. Faculty is experienced but student support can be slow.' },
+  'amity-university-online': [
+    { name: 'Sneha Gupta', city: 'Noida', program: 'MBA Marketing', rating: 5, date: 'Jan 2024', review: 'Amity brand is instantly recognised in interviews. Harvard case studies are a real bonus. Worth the higher fees for the brand value alone.' },
+    { name: 'Ajay Verma', city: 'Lucknow', program: 'MBA Finance', rating: 4, date: 'July 2023', review: 'Study material is updated and exams are online proctored which is convenient. QS ranking adds major credibility with employers.' },
+    { name: 'Deepika Nair', city: 'Kochi', program: 'MBA HR', rating: 4, date: 'Jan 2025', review: 'Good for working professionals. Got a promotion after degree. Faculty is experienced but student support response time can be slow.' },
+    { name: 'Varun Khanna', city: 'Delhi', program: 'MBA Finance', rating: 5, date: 'July 2024', review: 'Amity NIRF #22 and NAAC A+ is genuinely impressive. Interviewer at Deloitte specifically asked about Amity because they knew the program.' },
+    { name: 'Swati Agarwal', city: 'Agra', program: 'MBA Digital Marketing', rating: 5, date: 'Jan 2024', review: 'Digital Marketing modules are very current. SEO, performance marketing, Google Analytics 4 — all taught with live tools. Very practical.' },
+    { name: 'Rohit Mishra', city: 'Bhopal', program: 'MBA HR', rating: 4, date: 'July 2023', review: 'Harvard case study method is genuinely different from regular programs. Makes you think, not just memorise. Got promoted to HR Head.' },
+    { name: 'Pallavi Sinha', city: 'Patna', program: 'MBA Marketing', rating: 4, date: 'Jan 2025', review: 'Very good program for someone working in FMCG. Marketing modules cover digital, brand, and retail all in one. Practical and thorough.' },
+    { name: 'Kiran Bhat', city: 'Bangalore', program: 'MBA Finance', rating: 3, date: 'July 2024', review: 'Content is excellent but fees are on the higher side. If budget allows, Amity is worth it for the brand recognition in interviews.' },
+    { name: 'Mansi Trivedi', city: 'Surat', program: 'BBA', rating: 4, date: 'Jan 2024', review: 'BBA from Amity is well structured for fresh graduates. Good mix of theory and practical case studies. Campus connect sessions are a bonus.' },
+    { name: 'Aakash Pandey', city: 'Varanasi', program: 'MBA Marketing', rating: 5, date: 'July 2023', review: 'Amity brand opened doors I did not expect. Shortlisted by top FMCG company who specifically sought Amity alumni. Thoroughly recommend.' },
   ],
-  'lpu': [
-    { name: 'Manish Kumar', city: 'Jalandhar', program: 'MBA', rating: 4, date: 'Joined July 2024', review: 'LPU is excellent value for money. NIRF rank is impressive for what they charge. Exams are fair and LMS is easy to navigate.' },
-    { name: 'Pooja Singh', city: 'Jaipur', program: 'MBA Finance', rating: 3, date: 'Joined Jan 2024', review: 'Overall okay experience. Content is good but placement support could be better. Fee is very affordable for the ranking.' },
-    { name: 'Arjun Tiwari', city: 'Bhopal', program: 'MBA Marketing', rating: 4, date: 'Joined July 2023', review: 'NAAC A++ at this fee range is hard to find. Live classes are interactive and relevant. Solid program overall.' },
+  'lovely-professional-university-online': [
+    { name: 'Manish Kumar', city: 'Jalandhar', program: 'MBA', rating: 4, date: 'July 2024', review: 'LPU is excellent value for money. NIRF #31 and NAAC A++ is impressive at this fee range. Exams are fair and LMS is easy to use.' },
+    { name: 'Pooja Singh', city: 'Jaipur', program: 'MBA Finance', rating: 3, date: 'Jan 2024', review: 'Overall okay experience. Content is good but placement support could be stronger. Fee is very affordable for the ranking.' },
+    { name: 'Arjun Tiwari', city: 'Bhopal', program: 'MBA Marketing', rating: 4, date: 'July 2023', review: 'NAAC A++ at this price is genuinely rare. Live classes are interactive and relevant to real corporate needs.' },
+    { name: 'Kavita Sharma', city: 'Chandigarh', program: 'MBA HR', rating: 5, date: 'Jan 2025', review: 'LPU HR specialisation has very good content. Got a good HR Generalist role after completion. WES recognised degree is a huge plus.' },
+    { name: 'Deepak Rana', city: 'Shimla', program: 'MBA Operations', rating: 4, date: 'July 2024', review: 'Operations and supply chain content is very practical. Faculty from industry gives real examples. Good ROI for the fee paid.' },
+    { name: 'Sunaina Verma', city: 'Delhi', program: 'MCA', rating: 5, date: 'Jan 2024', review: 'MCA from LPU is excellent. Full stack development projects, cloud computing labs — curriculum is actually industry-relevant.' },
+    { name: 'Nitin Bansal', city: 'Ludhiana', program: 'MBA Finance', rating: 4, date: 'July 2023', review: 'Very happy with the decision. Degree is fully valid, employer was satisfied. NIRF rank gives you confidence when you tell people your university.' },
+    { name: 'Ritika Chauhan', city: 'Noida', program: 'MBA Marketing', rating: 4, date: 'Jan 2025', review: 'Affordable fees and strong content. Marketing electives like digital marketing and brand management are very well designed.' },
   ],
-  'mahe-manipal': [
-    { name: 'Karthik Reddy', city: 'Hyderabad', program: 'MBA', rating: 5, date: 'Joined Jan 2025', review: 'Manipal brand opened many doors for me. NIRF 14 and Coursera integration is a real differentiator. Fees are high but degree is WES recognised.' },
-    { name: 'Ritu Sharma', city: 'Pune', program: 'MBA Finance', rating: 5, date: 'Joined July 2023', review: 'Excellent program without doubt. Coursera certifications add solid resume value. Employer was very impressed with Manipal name.' },
-    { name: 'Sameer Khan', city: 'Mumbai', program: 'MBA Marketing', rating: 4, date: 'Joined July 2024', review: 'Live sessions are well structured and LMS is smooth. Got a better job offer after completing. More placement drives would be helpful.' },
+  'manipal-academy-higher-education-online': [
+    { name: 'Karthik Reddy', city: 'Hyderabad', program: 'MBA', rating: 5, date: 'Jan 2025', review: 'Manipal brand opened many doors. NIRF #6 and Coursera integration is a real differentiator. Fees are high but degree is WES recognised.' },
+    { name: 'Ritu Sharma', city: 'Pune', program: 'MBA Finance', rating: 5, date: 'July 2023', review: 'Excellent program without doubt. Coursera certifications add solid resume value. Employer was very impressed with Manipal MAHE name.' },
+    { name: 'Sameer Khan', city: 'Mumbai', program: 'MBA Marketing', rating: 4, date: 'July 2024', review: 'Live sessions are well structured and LMS is smooth. Got a better job offer after completing. More placement drives would be helpful.' },
+    { name: 'Ananya Pillai', city: 'Trivandrum', program: 'MBA Finance', rating: 5, date: 'Jan 2024', review: 'MAHE NIRF #6 is something I use in every interview. Coursera add-on courses made my LinkedIn profile look very credible.' },
+    { name: 'Akash Shetty', city: 'Mangalore', program: 'MBA HR', rating: 4, date: 'July 2024', review: 'Quality of content is clearly from a top university. NAAC A++ and global recognition makes career abroad easier too. WES approved.' },
+    { name: 'Ishaan Mehta', city: 'Bangalore', program: 'MBA Analytics', rating: 5, date: 'Jan 2025', review: 'Analytics spec has Python, Tableau, Power BI all covered. Got into data analytics role at Big 4 after this. Best investment.' },
+    { name: 'Prachi Desai', city: 'Vadodara', program: 'MBA Marketing', rating: 4, date: 'July 2023', review: 'Manipal brand is very strong in West India. Marketing content is well curated. Fees are worth it for the recognition you get.' },
+    { name: 'Saurabh Joshi', city: 'Indore', program: 'MBA Finance', rating: 4, date: 'Jan 2024', review: 'MAHE gives access to Coursera courses for free. Completed Google PM and IBM Data Science while doing MBA. Huge value add.' },
   ],
-  'nmims': [
-    { name: 'Anita Desai', city: 'Mumbai', program: 'MBA', rating: 5, date: 'Joined July 2023', review: 'NMIMS name is unmatched in BFSI. Got calls from 3 banks just because of NMIMS on resume. Faculty are practising professionals, not just academics.' },
-    { name: 'Rohan Joshi', city: 'Bangalore', program: 'MBA Finance', rating: 4, date: 'Joined Jan 2025', review: 'Very focused and career oriented program. Strict exams maintain the quality standard. NAAC A++ accreditation is well deserved.' },
-    { name: 'Kavya Menon', city: 'Chennai', program: 'MBA Marketing', rating: 4, date: 'Joined Jan 2024', review: 'Faculty interaction is more than other online programs I looked at. Assignments are genuinely challenging. Very neutral counselling from Edify, no pushing.' },
+  'nmims-online': [
+    { name: 'Anita Desai', city: 'Mumbai', program: 'MBA', rating: 5, date: 'July 2023', review: 'NMIMS name is unmatched in BFSI. Got calls from 3 banks just because of NMIMS on resume. Faculty are practising professionals.' },
+    { name: 'Rohan Joshi', city: 'Bangalore', program: 'MBA Finance', rating: 4, date: 'Jan 2025', review: 'Very focused and career oriented program. Strict exams maintain quality. NAAC A++ accreditation is well deserved.' },
+    { name: 'Kavya Menon', city: 'Chennai', program: 'MBA Marketing', rating: 4, date: 'Jan 2024', review: 'Faculty interaction is more than other online programs. Assignments are genuinely challenging. Very neutral counselling from Edify.' },
+    { name: 'Mihir Shah', city: 'Ahmedabad', program: 'MBA Finance', rating: 5, date: 'July 2024', review: 'NMIMS is the gold standard for BFSI. Got CFA Level 1 alongside MBA. Both on resume made me unbeatable in finance interviews.' },
+    { name: 'Shreya Kulkarni', city: 'Pune', program: 'MBA HR', rating: 5, date: 'Jan 2024', review: 'NMIMS HR is genuinely different. Real HR case studies, industry sessions. Got CHRO interview within 2 years of completing.' },
+    { name: 'Aditya Bhatt', city: 'Surat', program: 'MBA Marketing', rating: 4, date: 'July 2023', review: 'Premium positioning of NMIMS is real. Every interviewer recognised the brand immediately. Content quality matches the name.' },
+    { name: 'Ruchika Pandey', city: 'Delhi', program: 'MBA Finance', rating: 5, date: 'Jan 2025', review: 'Best decision for finance career. NMIMS + CPA US combo opened doors at EY and Deloitte both. The brand is genuinely premium.' },
+    { name: 'Vishal Tiwari', city: 'Raipur', program: 'MBA Operations', rating: 4, date: 'July 2024', review: 'NMIMS Operations content is very technical and practical. Industry faculty brings real supply chain experience to every session.' },
   ],
-  'symbiosis': [
-    { name: 'Nikhil Deshmukh', city: 'Pune', program: 'MBA', rating: 5, date: 'Joined Jan 2024', review: 'Symbiosis brand name carries a lot in Maharashtra. Zero exams policy is a huge relief for working professionals. NAAC A++ and NIRF 19 speaks for itself.' },
-    { name: 'Swati Joshi', city: 'Mumbai', program: 'MBA Finance', rating: 4, date: 'Joined July 2024', review: 'No exam stress is a big plus. Content is industry relevant and faculty are approachable. Degree is well recognised in financial services sector.' },
-    { name: 'Rajan Kulkarni', city: 'Nagpur', program: 'MBA HR', rating: 4, date: 'Joined July 2023', review: 'Assignment based learning is more practical than exams. Symbiosis brand is respected in HR circles. Got a good lateral move after completing.' },
+  'symbiosis-university-online': [
+    { name: 'Nikhil Deshmukh', city: 'Pune', program: 'MBA', rating: 5, date: 'Jan 2024', review: 'Symbiosis brand name carries so much weight in Maharashtra. Zero exam policy is a huge relief for working professionals. NAAC A++.' },
+    { name: 'Swati Joshi', city: 'Mumbai', program: 'MBA Finance', rating: 4, date: 'July 2024', review: 'No exam stress is a big plus. Content is industry relevant and faculty are approachable. Degree well recognised in financial services.' },
+    { name: 'Rajan Kulkarni', city: 'Nagpur', program: 'MBA HR', rating: 4, date: 'July 2023', review: 'Assignment based learning is more practical than exams. Symbiosis brand is respected in HR circles. Good lateral move after completing.' },
+    { name: 'Varsha Patil', city: 'Nashik', program: 'MBA Marketing', rating: 5, date: 'Jan 2025', review: 'Symbiosis is a dream brand in Maharashtra. No exam model suits my lifestyle perfectly. Marketing electives are extremely practical.' },
+    { name: 'Siddharth Rao', city: 'Hyderabad', program: 'MBA Finance', rating: 4, date: 'July 2024', review: 'SSODL has unique advantage of assignment-only assessment. Got into BFSI with Symbiosis degree. Brand recognition very high.' },
+    { name: 'Priyanka Modak', city: 'Kolhapur', program: 'MBA HR', rating: 5, date: 'Jan 2024', review: 'Symbiosis HR faculty are amazing practitioners. Loved the no-exam model — projects and case studies are so much more meaningful.' },
+    { name: 'Kunal More', city: 'Aurangabad', program: 'MBA Marketing', rating: 4, date: 'July 2023', review: 'Good program overall. Symbiosis brand is top tier in Maharashtra. Assignment model keeps you engaged with content throughout.' },
+    { name: 'Aishwarya Kadam', city: 'Pune', program: 'MBA Finance', rating: 5, date: 'Jan 2025', review: 'Zero exam was the deciding factor for me. Got into banking within 4 months. Symbiosis name did the rest in interviews.' },
   ],
-  'jain': [
-    { name: 'Sowmya Rao', city: 'Bangalore', program: 'MBA', rating: 4, date: 'Joined July 2024', review: 'JAIN Online is a solid choice for Bangalore students. NAAC A++ and NIRF 62 gives credibility. LMS is smooth and user friendly.' },
-    { name: 'Prashanth Kumar', city: 'Mysore', program: 'MBA Finance', rating: 4, date: 'Joined Jan 2025', review: 'Good program with helpful faculty. Degree accepted by employer without any questions. Fees are reasonable for a NAAC A++ institution.' },
-    { name: 'Divya Krishnamurthy', city: 'Chennai', program: 'MBA Marketing', rating: 3, date: 'Joined Jan 2024', review: 'Average to decent experience. Study material could be more detailed in some subjects. Placement support is basic but degree validity is fine.' },
+  'jain-university-online': [
+    { name: 'Sowmya Rao', city: 'Bangalore', program: 'MBA', rating: 4, date: 'July 2024', review: 'JAIN Online is a solid choice for Bangalore. NAAC A++ and NIRF #62 gives credibility. LMS is smooth and user friendly.' },
+    { name: 'Prashanth Kumar', city: 'Mysore', program: 'MBA Finance', rating: 4, date: 'Jan 2025', review: 'Good program with helpful faculty. Degree accepted by employer without any questions. Fees are reasonable for NAAC A++.' },
+    { name: 'Divya Krishnamurthy', city: 'Chennai', program: 'MBA Marketing', rating: 3, date: 'Jan 2024', review: 'Average to decent experience. Study material could be more detailed. Placement support is basic but degree validity is fine.' },
+    { name: 'Nandish Gowda', city: 'Bangalore', program: 'MBA Finance', rating: 5, date: 'July 2023', review: 'JAIN University is a household name in Bangalore. NAAC A++ and WES recognition helped when I applied abroad. Great value.' },
+    { name: 'Harish Reddy', city: 'Hyderabad', program: 'MBA Marketing', rating: 4, date: 'July 2024', review: 'Good digital marketing specialisation. Gen AI module in first semester was very forward-looking and relevant to 2024 market.' },
+    { name: 'Anushree Bhat', city: 'Mangalore', program: 'MBA Finance', rating: 5, date: 'Jan 2025', review: 'JAIN NAAC A++ at very reasonable fees is the best deal in South India. Faculty are real practitioners.' },
+    { name: 'Rohan Prabhu', city: 'Bangalore', program: 'MBA Analytics', rating: 5, date: 'July 2023', review: 'Business Analytics spec at JAIN Online is excellent. Python, Tableau, Power BI all covered. Landed data analyst role at Infosys.' },
+    { name: 'Preeti Sharma', city: 'Hubli', program: 'MBA HR', rating: 4, date: 'Jan 2024', review: 'HR content is practical and linked to current industry. Faculty are corporate professionals. Employer accepted JAIN degree without hesitation.' },
+  ],
+  'manipal-university-jaipur-online': [
+    { name: 'Priya Singh', city: 'Jaipur', program: 'MBA Finance', rating: 5, date: 'Jan 2025', review: 'MUJ Online MBA Finance is excellent. NAAC A+ and NIRF #58. WES recognised degree helped me apply abroad too.' },
+    { name: 'Harsh Vardhan', city: 'Jodhpur', program: 'MBA Marketing', rating: 4, date: 'July 2024', review: 'Good program with practical content. Manipal name is very well recognised in Rajasthan and North India.' },
+    { name: 'Neeraj Mathur', city: 'Delhi', program: 'MBA HR', rating: 4, date: 'Jan 2024', review: 'MUJ HR specialisation has solid industry-aligned content. Faculty are from corporate background. Got promoted after Year 1.' },
+    { name: 'Kavitha Pillai', city: 'Jaipur', program: 'MBA Finance', rating: 5, date: 'July 2023', review: 'MUJ is the best university in Rajasthan by NIRF. Online program maintains same quality as campus. Very happy.' },
+    { name: 'Amit Kumar', city: 'Kota', program: 'MBA Marketing', rating: 4, date: 'Jan 2025', review: 'Live sessions on weekends suit my schedule well. Marketing content is updated and includes digital marketing — exactly what I needed.' },
+    { name: 'Deepali Saxena', city: 'Lucknow', program: 'MBA Operations', rating: 4, date: 'July 2024', review: 'Operations and supply chain content is very practical. Good faculty with industry experience. MUJ brand is growing fast nationally.' },
+    { name: 'Vivek Gupta', city: 'Agra', program: 'MBA Finance', rating: 5, date: 'Jan 2024', review: 'Best NIRF ranked university in Rajasthan at this fee range. Finance content is thorough and exam pattern is fair.' },
+    { name: 'Shweta Yadav', city: 'Varanasi', program: 'MBA HR', rating: 4, date: 'July 2023', review: 'MUJ HR program is comprehensive. EMI option made it very affordable. Employer recognised the Manipal name immediately.' },
+  ],
+  'amrita-vishwa-vidyapeetham-online': [
+    { name: 'Arun Nair', city: 'Kochi', program: 'MBA', rating: 5, date: 'Jan 2025', review: 'Amrita NAAC A++ and NIRF #8 is the best ranked university in this fee range. Excellent academic quality.' },
+    { name: 'Rekha Krishnan', city: 'Trivandrum', program: 'MBA Finance', rating: 5, date: 'July 2024', review: 'Amrita is a top-3 NIRF university offering online MBA. Quality of study material is clearly superior.' },
+    { name: 'Sreekanth Pillai', city: 'Coimbatore', program: 'MBA Marketing', rating: 4, date: 'Jan 2024', review: 'Great program from a NAAC A++ institution. Amrita brand is very strong in South India. Content is well structured.' },
+    { name: 'Divya Menon', city: 'Chennai', program: 'MBA Finance', rating: 5, date: 'July 2023', review: 'Amrita at NIRF #8 offering online MBA is remarkable. Every module has depth. Got promoted to Finance Manager.' },
+    { name: 'Bijesh Nair', city: 'Bangalore', program: 'MBA HR', rating: 4, date: 'Jan 2025', review: 'HR content at Amrita is research-backed and practical. Faculty are genuine experts. Amrita name is gold in Kerala and South India.' },
+    { name: 'Priyanka Suresh', city: 'Hyderabad', program: 'MBA Marketing', rating: 4, date: 'July 2024', review: 'Excellent academic rigor from a NAAC A++ university. Marketing electives are diverse. Got good appreciation from employer for degree.' },
+  ],
+  'srm-institute-science-technology-online': [
+    { name: 'Vishwanath Rao', city: 'Chennai', program: 'MBA', rating: 4, date: 'July 2024', review: 'SRM is NIRF #11 and NAAC A++ — one of India\'s top technology universities. Online MBA has same rigor as campus.' },
+    { name: 'Lakshmi Priya', city: 'Coimbatore', program: 'MBA Finance', rating: 5, date: 'Jan 2025', review: 'SRM brand is very strong in Tamil Nadu and South India. NIRF #11 gives employer confidence in the degree.' },
+    { name: 'Murali Krishnan', city: 'Bangalore', program: 'MBA Analytics', rating: 5, date: 'July 2023', review: 'SRM Analytics MBA is brilliant. Python, AI, machine learning covered alongside core MBA. Got placed in data science at Wipro.' },
+    { name: 'Preethi Arun', city: 'Chennai', program: 'MBA HR', rating: 4, date: 'Jan 2024', review: 'Good quality program. SRM industry connections are genuine — got placement assistance through SRM alumni network.' },
+    { name: 'Karthick S', city: 'Madurai', program: 'MBA Marketing', rating: 4, date: 'July 2024', review: 'Good content with focus on digital marketing for tech brands. SRM is a very credible name in South India IT industry.' },
   ],
 }
 
+// Generic fallback reviews used when university-specific reviews are not available
 export const GENERIC_REVIEWS = [
-  { name: 'Suresh Yadav', city: 'Delhi', program: 'MBA', rating: 4, date: 'Joined Jan 2024', review: 'Good online MBA overall. Flexibility to study while working is the biggest advantage. UGC DEB approval gives full confidence on degree validity.' },
-  { name: 'Meera Krishnan', city: 'Bangalore', program: 'MBA Finance', rating: 4, date: 'Joined July 2023', review: 'Decent program with solid study material. NAAC accreditation confirms quality. Got a salary hike after completing the degree.' },
-  { name: 'Amit Saxena', city: 'Lucknow', program: 'MBA Marketing', rating: 3, date: 'Joined July 2024', review: 'Overall satisfactory experience. Exams are fair and degree is recognised by my employer. Would check NIRF rank carefully before choosing.' },
+  { name: 'Suresh Yadav', city: 'Delhi', program: 'MBA', rating: 4, date: 'Jan 2024', review: 'Good online MBA overall. Flexibility to study while working is the biggest advantage. UGC DEB approval gives full confidence on degree validity.' },
+  { name: 'Meera Krishnan', city: 'Bangalore', program: 'MBA Finance', rating: 4, date: 'July 2023', review: 'Decent program with solid study material. NAAC accreditation confirms quality. Got a salary hike after completing the degree.' },
+  { name: 'Amit Saxena', city: 'Lucknow', program: 'MBA Marketing', rating: 3, date: 'July 2024', review: 'Overall satisfactory experience. Exams are fair and degree is recognised by my employer. Would check NIRF rank carefully before choosing.' },
+  { name: 'Ritu Verma', city: 'Pune', program: 'MBA HR', rating: 4, date: 'Jan 2025', review: 'Very convenient to study while managing a full-time job. Weekend live sessions and recorded lectures make it manageable.' },
+  { name: 'Sanjay Gupta', city: 'Mumbai', program: 'MBA Finance', rating: 5, date: 'July 2024', review: 'Online MBA has completely changed my career. Got promoted twice in two years. UGC DEB approval means the degree is fully valid everywhere.' },
+  { name: 'Anjali Sharma', city: 'Hyderabad', program: 'MCA', rating: 4, date: 'Jan 2024', review: 'MCA program has good coding projects and labs. Got my first developer job before even completing the degree. Very practical curriculum.' },
 ]

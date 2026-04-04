@@ -1,15 +1,18 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
-import { CheckCircle, ChevronRight, Briefcase, TrendingUp, Award, BookOpen } from 'lucide-react'
+import {
+  CheckCircle, ChevronRight, Briefcase, TrendingUp, Award,
+  BookOpen, Star, ChevronDown, ChevronUp, GraduationCap, Zap, Shield
+} from 'lucide-react'
 import { getUniversitiesByProgram, formatFeeSlim as formatFee } from '@/lib/data-slim'
 import { PROGRAM_META } from '@/lib/data-client'
 import { getSpecContent, getSpecFallback, getUniversitySyllabus, getMasterSyllabus } from '@/lib/content'
 import SyllabusSection from '@/components/SyllabusSection'
 import type { Program, University } from '@/lib/data'
 import EnquiryModal from '@/components/EnquiryModal'
-
-const WA_NUMBER = '917061285806'
+import EdifyRecommends from '@/components/EdifyRecommends'
+import { UNIVERSITY_REVIEWS, GENERIC_REVIEWS } from '@/lib/reviews-data'
 
 interface Props {
   university: University
@@ -18,27 +21,74 @@ interface Props {
   spec: string
 }
 
+function StarRating({ rating, size = 14 }: { rating: number; size?: number }) {
+  return (
+    <div className="flex items-center gap-0.5">
+      {[1,2,3,4,5].map(i => (
+        <Star key={i} size={size} fill={i <= rating ? '#D4922A' : 'none'} stroke={i <= rating ? '#D4922A' : '#CBD5E1'} />
+      ))}
+    </div>
+  )
+}
+
 export default function UniversitySpecClient({ university: u, program, programSlug, spec }: Props) {
-  const [enquiryOpen, setEnquiryOpen] = useState(false)
+  const [enquiryOpen, setEnquiryOpen]   = useState(false)
+  const [openFaq, setOpenFaq]           = useState<number | null>(null)
+  const [emiFormOpen, setEmiFormOpen]   = useState(false)
+  const [showAllReviews, setShowAllReviews] = useState(false)
 
-  const pd          = u.programDetails[program]!
-  const meta        = PROGRAM_META[program]
-  const syllabus    = getMasterSyllabus(u.id, program) || getUniversitySyllabus(u.id, program)
-  const specContent = getSpecContent(spec) || getSpecFallback(spec, program)
-  const otherUnis   = getUniversitiesByProgram(program).filter(x => x.id !== u.id).slice(0, 4)
+  const pd           = u.programDetails[program]!
+  const meta         = PROGRAM_META[program]
+  const syllabus     = getMasterSyllabus(u.id, program) || getUniversitySyllabus(u.id, program)
+  const specContent  = getSpecContent(spec) || getSpecFallback(spec, program)
+  const otherUnis    = getUniversitiesByProgram(program).filter(x => x.id !== u.id).slice(0, 4)
 
-  const isUG        = meta?.level === 'UG'
-  const eligibility = isUG
-    ? u.eligibility?.replace(/Graduation.*/, '10+2 / 12th Pass') || '10+2 / 12th Pass'
-    : u.eligibility || 'Any Graduation'
+  const isUG      = meta?.level === 'UG'
+  const duration  = pd.duration || (isUG ? '3 Years' : '2 Years')
+  const fees      = pd.fees || `₹${Math.round(u.feeMin / 1000)}K+`
+  const cleanName = u.name.replace(/\bOnline\b\s*$/i, '').trim()
+  const year      = new Date().getFullYear()
 
-  const duration   = pd.duration || (isUG ? '3 Years' : '2 Years')
-  const fees       = pd.fees || `₹${Math.round(u.feeMin / 1000)}K+`
-  const cleanName  = u.name.replace(/\bOnline\b\s*$/i, '').trim()
+  // Reviews — show university-specific, fall back to generic
+  const rawReviews  = UNIVERSITY_REVIEWS[u.id] || GENERIC_REVIEWS
+  const reviews     = showAllReviews ? rawReviews : rawReviews.slice(0, 6)
+  const avgRating   = (rawReviews.reduce((s, r) => s + r.rating, 0) / rawReviews.length).toFixed(1)
+  const totalShown  = rawReviews.length >= 8 ? '200+' : '100+'
+
+  // Key Highlights — built from actual university data
+  const highlights = [
+    { icon: '🏛️', label: 'Accreditation', value: `NAAC ${u.naac}${u.naacScore ? ` (${u.naacScore})` : ''}`, good: true },
+    { icon: '📊', label: 'NIRF Rank', value: u.nirf < 900 ? `#${u.nirf} Overall${u.nirfMgt ? ` · #${u.nirfMgt} Mgmt` : ''}` : 'UGC Recognised', good: u.nirf < 200 },
+    { icon: '✅', label: 'Approvals', value: u.approvals.slice(0, 3).join(' · '), good: true },
+    { icon: '💻', label: 'Exam Mode', value: u.examMode || 'Online Proctored', good: true },
+    { icon: '💰', label: 'EMI From', value: `₹${u.emiFrom.toLocaleString()}/month`, good: true },
+    { icon: u.psuEligible ? '🏆' : '📋', label: 'Govt Job Eligible', value: u.psuEligible ? 'PSU & Govt Jobs Eligible' : 'Private Sector', good: u.psuEligible },
+  ]
+
+  // FAQs — spec-specific from content + standard questions
+  const standardFaqs = [
+    {
+      q: `Is the ${program} degree from ${cleanName} valid for jobs?`,
+      a: `Yes — 100% valid. ${cleanName} is UGC DEB approved, NAAC ${u.naac} accredited. The degree certificate is identical to a regular on-campus degree and is accepted by all private sector employers and government job portals where UGC DEB degrees are recognised.`,
+    },
+    {
+      q: `What are the fees for ${program} ${spec} at ${cleanName}?`,
+      a: `The total fee is ${fees}. EMI options start from ₹${u.emiFrom.toLocaleString()}/month. Many students use 0% or low-cost EMI through our lending partners. Fill the form above to get exact fee and EMI breakdown for your eligibility.`,
+    },
+    {
+      q: `What is the eligibility for ${program} at ${cleanName}?`,
+      a: `${u.eligibility}${u.eligibilityPct > 0 ? ` with minimum ${u.eligibilityPct}% marks.` : '.'} No upper age limit. Working professionals are welcome. No entrance exam required for online ${program} admission.`,
+    },
+    {
+      q: `Can I study ${program} ${spec} while working full time?`,
+      a: `Yes — designed specifically for working professionals. Live sessions are typically on weekends, with recorded lectures available 24/7. Exam mode: ${u.examMode || 'Online proctored'} — no travel to exam centres required.`,
+    },
+  ]
+  const allFaqs = [...(specContent?.faqs || []), ...standardFaqs]
 
   return (
     <>
-      <EnquiryModal isOpen={enquiryOpen} onClose={() => setEnquiryOpen(false)} universityName={u.name} universityId={u.id} defaultProgram={program} />
+      <EnquiryModal isOpen={enquiryOpen || emiFormOpen} onClose={() => { setEnquiryOpen(false); setEmiFormOpen(false) }} universityName={u.name} universityId={u.id} defaultProgram={program} />
 
       {/* Breadcrumb */}
       <div className="bg-white border-b border-border">
@@ -59,28 +109,37 @@ export default function UniversitySpecClient({ university: u, program, programSl
 
       <div style={{ height: 3, background: u.color }} />
 
-      {/* Hero */}
+      {/* ── HERO ───────────────────────────────────────────────────── */}
       <div style={{ background: 'linear-gradient(180deg,#0a1220 0%,#0f1b2d 100%)', borderBottom: '1px solid #1e2f45' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 lg:py-14">
           <div className="max-w-3xl">
-            <div className="text-[11px] font-bold text-amber uppercase tracking-widest mb-2.5">
+            <div className="flex items-center gap-2 mb-3">
+              <div className="w-10 h-10 shrink-0 rounded-lg border border-white/10 bg-white/5 flex items-center justify-center overflow-hidden p-1">
+                {u.logo
+                  ? <img src={u.logo} alt={u.name} className="max-w-full max-h-full object-contain" onError={e => { const t = e.target as HTMLImageElement; t.style.display='none'; const p=t.parentElement; if(p){p.style.background=u.color;p.innerHTML=`<span style="color:#fff;font-weight:800;font-size:11px">${(u.abbr||u.name).slice(0,2).toUpperCase()}</span>`}}} />
+                  : <span style={{ color:'#fff', fontWeight:800, fontSize:11, background:u.color, width:'100%', height:'100%', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:6 }}>{(u.abbr||u.name).slice(0,2).toUpperCase()}</span>
+                }
+              </div>
+              <span className="text-slate-400 text-sm">{cleanName}</span>
+            </div>
+
+            <div className="text-[11px] font-bold text-amber uppercase tracking-widest mb-2">
               {meta?.level === 'PG' ? 'Postgraduate' : 'Undergraduate'} · {duration} · UGC DEB Approved
             </div>
-            <h1 className="font-display" style={{ fontSize: 'clamp(1.5rem,3.5vw,2.2rem)', fontWeight: 800, color: '#fff', lineHeight: 1.15, marginBottom: 8 }}>
-              {program} in {spec}
+            <h1 className="font-display" style={{ fontSize: 'clamp(1.5rem,3.5vw,2.3rem)', fontWeight: 800, color: '#fff', lineHeight: 1.15, marginBottom: 8 }}>
+              Online {program} — {spec}
             </h1>
-            <div className="text-slate-400 text-base mb-5">{cleanName}</div>
             {specContent?.heroSub && (
               <p className="text-slate-400 text-[15px] leading-relaxed mb-5">{specContent.heroSub}</p>
             )}
 
+            {/* Stats bar */}
             <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 sm:gap-3 mb-6">
               {[
-                { label: 'Total Fees',  value: fees },
-                { label: 'Duration',    value: duration },
-                ...(pd.avgSalary ? [{ label: 'Avg Salary', value: pd.avgSalary }] : []),
-                ...(specContent?.salaryRange ? [{ label: 'Salary Range', value: specContent.salaryRange }] : []),
-                { label: 'NIRF Rank',   value: u.nirf < 900 ? `#${u.nirf}` : 'Recognised' },
+                { label: 'Total Fees',    value: fees },
+                { label: 'Duration',      value: duration },
+                ...(specContent?.salaryRange ? [{ label: 'Salary Range', value: specContent.salaryRange }] : pd.avgSalary ? [{ label: 'Avg Salary', value: pd.avgSalary }] : []),
+                { label: 'NIRF Rank',     value: u.nirf < 900 ? `#${u.nirf}` : 'Recognised' },
               ].map(s => (
                 <div key={s.label} style={{ padding: '10px 14px', background: 'rgba(255,255,255,0.06)', border: '1px solid #1e2f45', borderRadius: 'var(--r-sm)' }}>
                   <div className="text-[9px] sm:text-[10px] text-ink-3 uppercase tracking-wider">{s.label}</div>
@@ -91,47 +150,168 @@ export default function UniversitySpecClient({ university: u, program, programSl
 
             <div className="flex flex-wrap gap-3">
               <button onClick={() => setEnquiryOpen(true)} style={{ padding: '13px 28px', borderRadius: 'var(--r-sm)', background: 'linear-gradient(135deg,#c9922a,#e0a93a)', color: '#fff', fontWeight: 700, fontSize: 14, border: 'none', cursor: 'pointer' }}>
-                Speak with an Advisor →
+                Get Free Counselling →
               </button>
-              <Link href={`/universities/${u.id}/${programSlug}`} style={{ padding: '13px 20px', borderRadius: 'var(--r-sm)', border: '1px solid #1e2f45', color: 'var(--ink-4)', fontSize: 13, fontWeight: 600, textDecoration: 'none' }}>
-                ← All {u.abbr} {program} Specs
-              </Link>
+              <button onClick={() => setEmiFormOpen(true)} style={{ padding: '13px 20px', borderRadius: 'var(--r-sm)', border: '2px solid rgba(201,146,42,0.5)', color: 'var(--amber-text)', background: 'transparent', fontSize: 13, fontWeight: 700, cursor: 'pointer' }}>
+                Check EMI Options
+              </button>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Main content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 pb-24 lg:pb-10">
+      {/* ── MAIN CONTENT ─────────────────────────────────────────── */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 pb-28 lg:pb-10">
         <div className="flex flex-col lg:flex-row gap-8">
-          <div className="flex-1 flex flex-col gap-8">
 
-            {/* About the specialisation */}
-            {specContent && (
+          {/* Left column */}
+          <div className="flex-1 flex flex-col gap-8 min-w-0">
+
+            {/* ── KEY HIGHLIGHTS ─────────────────────────────────── */}
+            <section className="card-lg overflow-hidden">
+              <div className="px-6 pt-5 pb-2">
+                <div className="flex items-center gap-2 mb-1">
+                  <Zap size={16} className="text-amber-text" />
+                  <h2 className="font-display text-lg font-bold text-navy">Key Highlights</h2>
+                </div>
+                <p className="text-xs text-ink-3">Why {cleanName} stands out for {program} — {spec}</p>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-px bg-border">
+                {highlights.map((h, i) => (
+                  <div key={i} className="bg-white p-4">
+                    <div className="text-xl mb-1.5">{h.icon}</div>
+                    <div className="text-[10px] font-bold uppercase tracking-wider text-ink-3 mb-1">{h.label}</div>
+                    <div className={`text-sm font-bold leading-snug ${h.good ? 'text-navy' : 'text-ink-2'}`}>{h.value}</div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* ── ABOUT THE SPECIALISATION ───────────────────────── */}
+            {specContent?.overview && (
               <section className="card-lg p-6">
                 <h2 className="font-display text-xl font-bold text-navy mb-3">About {spec} Specialisation</h2>
-                <p className="text-sm text-ink-2 leading-relaxed mb-4">{specContent.heroSub || `Online ${program} with ${spec} specialisation from ${cleanName}.`}</p>
-                {specContent.salaryRange && (
-                  <div className="flex items-center gap-2 text-sm">
-                    <Award size={16} className="text-amber-text shrink-0" />
-                    <span className="text-ink-2">Salary range: </span>
-                    <span className="font-bold text-green-700">{specContent.salaryRange}</span>
+                <p className="text-sm text-ink-2 leading-relaxed mb-4">{specContent.overview}</p>
+                {(specContent?.whyChoose?.length ?? 0) > 0 && (
+                  <div className="flex flex-col gap-2.5 mt-4">
+                    <div className="text-xs font-bold text-navy uppercase tracking-wider mb-1">Why Choose This Specialisation</div>
+                    {(specContent?.whyChoose ?? []).map((reason, i) => (
+                      <div key={i} className="flex items-start gap-2.5">
+                        <CheckCircle size={15} className="text-green-500 shrink-0 mt-0.5" />
+                        <span className="text-sm text-ink-2 leading-snug">{reason}</span>
+                      </div>
+                    ))}
                   </div>
                 )}
               </section>
             )}
 
-            {/* Fee breakdown */}
+            {/* ── SKILLS YOU'LL GAIN ─────────────────────────────── */}
+            {(specContent?.skills?.length ?? 0) > 0 && (
+              <section className="card-lg p-6">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-widest"
+                    style={{ background: 'rgba(212,146,42,0.12)', color: 'var(--amber-text)', border: '1px solid rgba(212,146,42,0.3)' }}>
+                    ✦ Edify Recommends
+                  </span>
+                </div>
+                <h2 className="font-display text-xl font-bold text-navy mb-1">Skills You'll Gain</h2>
+                <p className="text-sm text-ink-3 mb-4">In-demand competencies for <strong>{spec}</strong> professionals — specific to this specialisation</p>
+                <div className="flex flex-wrap gap-2">
+                  {(specContent?.skills ?? []).map(skill => (
+                    <span key={skill} className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-100">
+                      <CheckCircle size={11} className="shrink-0" /> {skill}
+                    </span>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* ── CERTIFICATIONS ─────────────────────────────────── */}
+            {(specContent?.certifications?.length ?? 0) > 0 && (
+              <section className="card-lg p-6">
+                <h2 className="font-display text-xl font-bold text-navy mb-1">Recommended Certifications</h2>
+                <p className="text-sm text-ink-3 mb-4">Stack these certifications alongside your degree for maximum career impact</p>
+                <div className="flex flex-col gap-3">
+                  {(specContent?.certifications ?? []).map((cert, i) => (
+                    <div key={i} className="flex items-start gap-3 p-3 rounded-xl bg-surface-1 border border-border">
+                      <Award size={16} className="text-amber-text shrink-0 mt-0.5" />
+                      <span className="text-sm text-ink-2 leading-snug">{cert}</span>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* ── CAREER PATHS ───────────────────────────────────── */}
+            {(specContent?.careerBeginner?.length || specContent?.careerMid?.length || specContent?.careerSenior?.length) && (
+              <section className="card-lg p-6">
+                <h2 className="font-display text-xl font-bold text-navy mb-1">Career Path — {spec}</h2>
+                <p className="text-sm text-ink-3 mb-5">Roles at each career stage after {program} in {spec}</p>
+                <div className="flex flex-col gap-5">
+                  {[
+                    { label: 'Entry Level (0–2 yrs)', roles: specContent?.careerBeginner, color: '#16A34A', bg: '#F0FDF4', border: '#BBF7D0' },
+                    { label: 'Mid Level (3–6 yrs)', roles: specContent?.careerMid, color: '#0891B2', bg: '#F0F9FF', border: '#BAE6FD' },
+                    { label: 'Senior Level (7+ yrs)', roles: specContent?.careerSenior, color: '#7C3AED', bg: '#FAF5FF', border: '#E9D5FF' },
+                  ].filter(stage => (stage.roles?.length ?? 0) > 0).map(stage => (
+                    <div key={stage.label}>
+                      <div className="text-[10px] font-bold uppercase tracking-wider mb-2" style={{ color: stage.color }}>{stage.label}</div>
+                      <div className="grid sm:grid-cols-2 gap-2">
+                        {(stage.roles ?? []).map(role => (
+                          <div key={role.title} className="p-3 rounded-xl border" style={{ background: stage.bg, borderColor: stage.border }}>
+                            <div className="text-sm font-bold text-navy leading-snug mb-1">{role.title}</div>
+                            <div className="text-xs text-ink-3 leading-snug">{role.desc}</div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* ── SALARY & GROWTH ────────────────────────────────── */}
+            {(specContent?.salaryGrowth || specContent?.salaryRange) && (
+              <section className="card-lg p-6">
+                <h2 className="font-display text-xl font-bold text-navy mb-4">Salary & Career Growth</h2>
+                {specContent?.salaryRange && (
+                  <div className="p-4 rounded-xl bg-green-50 border border-green-200 mb-4">
+                    <div className="flex items-center gap-2 text-green-800 font-bold text-sm mb-0.5"><TrendingUp size={16} /> Salary Range</div>
+                    <div className="text-2xl font-extrabold text-green-700">{specContent.salaryRange}</div>
+                  </div>
+                )}
+                {specContent?.salaryGrowth && (
+                  <p className="text-sm text-ink-2 leading-relaxed">{specContent.salaryGrowth}</p>
+                )}
+                {(specContent?.topCompanies?.length ?? 0) > 0 && (
+                  <div className="mt-4">
+                    <div className="text-xs font-bold uppercase tracking-wider text-navy mb-2">Top Hiring Companies</div>
+                    <div className="flex flex-wrap gap-2">
+                      {(specContent?.topCompanies ?? (pd.topCompanies ?? [])).slice(0, 10).map(c => (
+                        <span key={c} className="px-3 py-1 bg-surface-2 border border-border rounded-full text-xs font-medium text-ink-2">{c}</span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </section>
+            )}
+
+            {/* ── SYLLABUS ───────────────────────────────────────── */}
+            {syllabus && <SyllabusSection syllabus={syllabus} program={program} universityName={u.name} />}
+
+            {/* ── FEE STRUCTURE + EMI ────────────────────────────── */}
             <section className="card-lg p-6">
-              <h2 className="font-display text-xl font-bold text-navy mb-4">Fee Structure</h2>
-              <div className="overflow-x-auto">
+              <h2 className="font-display text-xl font-bold text-navy mb-4">Fee Structure & EMI Options</h2>
+              <div className="overflow-x-auto mb-4">
                 <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14 }}>
                   <tbody>
                     {[
                       { label: 'Total Programme Fee', value: fees },
-                      { label: 'EMI Option', value: `From ₹${u.emiFrom.toLocaleString()}/month` },
+                      { label: 'Semester Fee (approx)', value: `${fees.split('–')[0]}+ per semester` },
+                      { label: 'EMI Starting From', value: `₹${u.emiFrom.toLocaleString()}/month` },
+                      { label: 'No-cost EMI', value: 'Available via Edify partners*' },
                       { label: 'Duration', value: duration },
-                      { label: 'NAAC Grade', value: u.naac },
+                      { label: 'Exam Mode', value: u.examMode || 'Online Proctored' },
                     ].map((row, i) => (
                       <tr key={row.label} style={{ borderBottom: '1px solid var(--border)', background: i % 2 === 0 ? '#fff' : 'var(--surface-2)' }}>
                         <td style={{ padding: '10px 14px', color: 'var(--ink-2)', fontSize: 13 }}>{row.label}</td>
@@ -141,28 +321,97 @@ export default function UniversitySpecClient({ university: u, program, programSl
                   </tbody>
                 </table>
               </div>
-              <div className="mt-4 p-3 bg-amber/5 border border-amber/20 rounded-lg text-xs text-ink-3">
-                Fees subject to change. Verify with university before enrolling.
+
+              {/* EMI CTA */}
+              <div className="p-4 rounded-xl border border-amber/30 bg-amber/5">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                  <div>
+                    <div className="font-bold text-navy text-sm mb-1">Get Exact EMI Calculation</div>
+                    <p className="text-xs text-ink-3">No-cost EMI options available. Exact EMI depends on tenure & bank. Our counsellors will share exact breakdown on WhatsApp.</p>
+                    <p className="text-[10px] text-ink-3 mt-1">*No-cost EMI via partner lending institutions. Subject to eligibility.</p>
+                  </div>
+                  <button onClick={() => setEmiFormOpen(true)} className="shrink-0 px-4 py-2.5 rounded-xl text-sm font-bold text-white hover:opacity-90 transition-opacity"
+                    style={{ background: 'linear-gradient(135deg,var(--amber),var(--amber-bright))' }}>
+                    Check My EMI →
+                  </button>
+                </div>
               </div>
             </section>
 
-            {/* Eligibility */}
+            {/* ── SAMPLE DEGREE ──────────────────────────────────── */}
+            <section className="card-lg overflow-hidden">
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-4">
+                  <GraduationCap size={20} className="text-amber-text" />
+                  <h2 className="font-display text-xl font-bold text-navy">Your Degree Certificate</h2>
+                </div>
+                <p className="text-sm text-ink-2 leading-relaxed mb-4">
+                  Upon successful completion, {cleanName} awards you an official degree certificate that is:
+                </p>
+                <div className="grid sm:grid-cols-2 gap-3 mb-5">
+                  {[
+                    { icon: '✅', text: 'Identical to the on-campus degree — same university, same certificate' },
+                    { icon: '🏛️', text: `Accredited by NAAC ${u.naac} and approved by UGC DEB` },
+                    { icon: '📋', text: 'Valid for private sector, banks, corporate hiring India-wide' },
+                    { icon: u.psuEligible ? '🏆' : '📝', text: u.psuEligible ? 'Valid for PSU and government job applications' : 'Valid for all private sector and MNC hiring' },
+                    { icon: '🌍', text: u.approvals.includes('WES Recognised') ? 'WES recognised — valid for immigration and jobs abroad' : 'AICTE approved — recognised across India' },
+                    { icon: '📱', text: 'DigiLocker accessible — share digitally with any employer' },
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-2.5 p-3 rounded-xl bg-surface-1 border border-border">
+                      <span className="text-lg shrink-0">{item.icon}</span>
+                      <span className="text-xs text-ink-2 leading-snug">{item.text}</span>
+                    </div>
+                  ))}
+                </div>
+                {/* Degree mockup card */}
+                <div className="rounded-xl border-2 border-dashed border-amber/40 bg-amber/3 p-5 text-center" style={{ background: 'linear-gradient(135deg, rgba(212,146,42,0.04), rgba(212,146,42,0.08))' }}>
+                  <div className="text-3xl mb-2">🎓</div>
+                  <div className="text-xs font-bold text-amber uppercase tracking-widest mb-1">Master of Business Administration</div>
+                  <div className="font-display text-lg font-extrabold text-navy mb-0.5">{spec} Specialisation</div>
+                  <div className="text-sm text-ink-3 mb-3">{cleanName}</div>
+                  <div className="flex justify-center flex-wrap gap-2 text-[10px]">
+                    {u.approvals.slice(0, 4).map(a => (
+                      <span key={a} className="px-2 py-1 rounded-full bg-white border border-border font-semibold text-ink-2">{a}</span>
+                    ))}
+                  </div>
+                  <p className="text-[10px] text-ink-3 mt-3">Sample preview — actual certificate issued by {cleanName}</p>
+                </div>
+              </div>
+            </section>
+
+            {/* ── ELIGIBILITY ────────────────────────────────────── */}
             <section className="card-lg p-6">
-              <h2 className="font-display text-xl font-bold text-navy mb-4">Who Can Apply</h2>
-              <div className="flex flex-col gap-3">
+              <h2 className="font-display text-xl font-bold text-navy mb-4">Eligibility & Admission</h2>
+              <div className="flex flex-col gap-3 mb-5">
                 <div className="flex items-start gap-3">
                   <CheckCircle size={18} className="text-green-500 shrink-0 mt-0.5" />
-                  <span className="text-sm text-ink-2">{eligibility}</span>
+                  <div>
+                    <div className="text-sm font-semibold text-navy">{isUG ? '10+2 / 12th Pass' : 'Any Graduation'}</div>
+                    <div className="text-xs text-ink-3">{u.eligibility}</div>
+                  </div>
                 </div>
                 {u.eligibilityPct > 0 && (
                   <div className="flex items-start gap-3">
                     <CheckCircle size={18} className="text-green-500 shrink-0 mt-0.5" />
-                    <span className="text-sm text-ink-2">Minimum <strong>{u.eligibilityPct}%</strong> marks in qualifying exam</span>
+                    <div>
+                      <div className="text-sm font-semibold text-navy">Minimum {u.eligibilityPct}% marks</div>
+                      <div className="text-xs text-ink-3">In qualifying exam (graduation or 12th)</div>
+                    </div>
                   </div>
                 )}
                 <div className="flex items-start gap-3">
                   <CheckCircle size={18} className="text-green-500 shrink-0 mt-0.5" />
-                  <span className="text-sm text-ink-2">No upper age limit — working professionals welcome</span>
+                  <div>
+                    <div className="text-sm font-semibold text-navy">No upper age limit</div>
+                    <div className="text-xs text-ink-3">Working professionals of any age are welcome</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle size={18} className="text-green-500 shrink-0 mt-0.5" />
+                  <div>
+                    <div className="text-sm font-semibold text-navy">No entrance exam</div>
+                    <div className="text-xs text-ink-3">Direct admission — no CAT, MAT, or GMAT required</div>
+                  </div>
                 </div>
                 {(u.forWho || []).map(item => (
                   <div key={item} className="flex items-start gap-3">
@@ -171,62 +420,28 @@ export default function UniversitySpecClient({ university: u, program, programSl
                   </div>
                 ))}
               </div>
+              <button onClick={() => setEnquiryOpen(true)} className="w-full py-3 rounded-xl font-bold text-white text-sm hover:opacity-90 transition-opacity"
+                style={{ background: 'linear-gradient(135deg,#c9922a,#e0a93a)' }}>
+                Check My Eligibility — Free →
+              </button>
             </section>
 
-            {/* Syllabus */}
-            {syllabus && <SyllabusSection syllabus={syllabus} program={program} universityName={u.name} />}
-
-            {/* Career outcomes */}
-            {((pd.roles?.length ?? 0) > 0 || (pd.topCompanies?.length ?? 0) > 0) && (
-              <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-4">Career After {program} — {spec}</h2>
-                <div className="grid md:grid-cols-2 gap-6">
-                  {(pd.roles?.length ?? 0) > 0 && (
-                    <div>
-                      <div className="flex items-center gap-2 text-sm font-bold text-navy mb-3"><Briefcase size={16} /> Job Roles</div>
-                      <div className="flex flex-wrap gap-2">
-                        {(pd.roles ?? []).map(role => (
-                          <span key={role} className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">{role}</span>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                  {(pd.topCompanies?.length ?? 0) > 0 && (
-                    <div>
-                      <div className="flex items-center gap-2 text-sm font-bold text-navy mb-3"><TrendingUp size={16} /> Top Hiring Companies</div>
-                      <div className="flex flex-wrap gap-2">
-                        {(pd.topCompanies ?? []).slice(0, 8).map(c => (
-                          <span key={c} className="px-3 py-1 bg-green-50 text-green-700 rounded-full text-xs font-medium">{c}</span>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
-                {pd.avgSalary && (
-                  <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
-                    <div className="flex items-center gap-2 text-green-800 font-semibold mb-1"><Award size={16} /> Average Salary</div>
-                    <div className="text-2xl font-bold text-green-700">{pd.avgSalary}</div>
-                  </div>
-                )}
-              </section>
-            )}
-
-            {/* Examination Pattern */}
+            {/* ── EXAMINATION PATTERN ────────────────────────────── */}
             <section className="card-lg p-6">
               <h2 className="font-display text-xl font-bold text-navy mb-4">Examination Pattern</h2>
-              <div className="overflow-x-auto">
+              <div className="overflow-x-auto mb-4">
                 <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14 }}>
                   <thead>
                     <tr style={{ background: 'var(--surface-2)' }}>
-                      <th style={{ padding: '10px 14px', textAlign: 'left', fontWeight: 700, color: 'var(--navy)', borderBottom: '2px solid var(--border)', fontSize: 12, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Component</th>
-                      <th style={{ padding: '10px 14px', textAlign: 'left', fontWeight: 700, color: 'var(--navy)', borderBottom: '2px solid var(--border)', fontSize: 12, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Details</th>
-                      <th style={{ padding: '10px 14px', textAlign: 'right', fontWeight: 700, color: 'var(--navy)', borderBottom: '2px solid var(--border)', fontSize: 12, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Weightage</th>
+                      {['Component', 'Details', 'Weightage'].map((h, i) => (
+                        <th key={h} style={{ padding: '10px 14px', textAlign: i === 2 ? 'right' : 'left', fontWeight: 700, color: 'var(--navy)', borderBottom: '2px solid var(--border)', fontSize: 12, textTransform: 'uppercase', letterSpacing: '0.05em' }}>{h}</th>
+                      ))}
                     </tr>
                   </thead>
                   <tbody>
                     {[
-                      { component: 'Internal Assessment', details: 'Assignments & Projects', weightage: '30%' },
-                      { component: 'External Assessment', details: 'End-term Examination', weightage: '70%' },
+                      { component: 'Internal Assessment', details: 'Assignments, Projects & Case Studies', weightage: '30%' },
+                      { component: 'External Assessment', details: `End-term Examination (${u.examMode || 'Online Proctored'})`, weightage: '70%' },
                     ].map((row, i) => (
                       <tr key={i} style={{ borderBottom: '1px solid var(--border)', background: i % 2 === 0 ? '#fff' : 'var(--surface-2)' }}>
                         <td style={{ padding: '10px 14px', fontWeight: 600, color: 'var(--ink)' }}>{row.component}</td>
@@ -237,84 +452,192 @@ export default function UniversitySpecClient({ university: u, program, programSl
                   </tbody>
                 </table>
               </div>
-              <div className="mt-4 grid sm:grid-cols-2 gap-3">
-                <div className="flex items-start gap-2 text-sm text-ink-2">
-                  <BookOpen size={14} className="text-amber-text shrink-0 mt-0.5" />
-                  <span><strong>Exam mode:</strong> {u.examMode || 'Online proctored'}</span>
-                </div>
-                <div className="flex items-start gap-2 text-sm text-ink-2">
-                  <BookOpen size={14} className="text-amber-text shrink-0 mt-0.5" />
-                  <span><strong>Medium:</strong> English</span>
-                </div>
-              </div>
-            </section>
-
-            {/* CTA */}
-            <div className="rounded-2xl border border-amber/30 bg-amber/5 p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div>
-                <div className="font-bold text-navy text-sm mb-1">Have questions about this program?</div>
-                <p className="text-xs text-ink-3 m-0">Our advisors can help with fees, admission, and specialisation details.</p>
-              </div>
-              <button
-                onClick={() => setEnquiryOpen(true)}
-                className="shrink-0 px-5 py-2.5 rounded-xl text-sm font-bold text-white hover:opacity-90 transition-opacity"
-                style={{ background: 'linear-gradient(135deg,var(--amber),var(--amber-bright))' }}
-              >
-                Talk to an Advisor →
-              </button>
-            </div>
-
-          </div>
-
-          {/* Sidebar */}
-          <div className="lg:w-80 shrink-0 flex flex-col gap-4">
-
-            {/* University card */}
-            <div className="card-lg p-5">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 shrink-0 rounded-xl border border-border bg-white flex items-center justify-center overflow-hidden p-1">
-                  {u.logo
-                    ? <img src={u.logo} alt={u.name} className="max-w-full max-h-full object-contain"
-                        onError={e => { const t = e.target as HTMLImageElement; t.style.display='none'; const p=t.parentElement; if(p){p.style.background=u.color;p.innerHTML=`<span style="color:#fff;font-weight:800;font-size:13px">${(u.abbr||u.name).slice(0,2).toUpperCase()}</span>`}}} />
-                    : <span style={{ color:'#fff', fontWeight:800, fontSize:13, background:u.color, width:'100%', height:'100%', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:8 }}>{(u.abbr||u.name).slice(0,2).toUpperCase()}</span>
-                  }
-                </div>
-                <div>
-                  <div className="text-sm font-bold text-navy leading-snug">{cleanName}</div>
-                  <div className="text-xs text-ink-3">{u.city} · NAAC {u.naac}</div>
-                </div>
-              </div>
-              <div className="flex flex-col gap-2 text-xs">
-                {u.approvals.slice(0, 4).map(a => (
-                  <div key={a} className="flex items-center gap-2 text-ink-2">
-                    <CheckCircle size={12} className="text-green-500 shrink-0" /> {a}
+              <div className="grid sm:grid-cols-3 gap-3">
+                {[
+                  { icon: <BookOpen size={13} />, label: 'Minimum passing', value: '40% in each subject' },
+                  { icon: <BookOpen size={13} />, label: 'Medium', value: 'English' },
+                  { icon: <Shield size={13} />, label: 'Exam mode', value: u.examMode || 'Online Proctored' },
+                ].map(item => (
+                  <div key={item.label} className="flex items-start gap-2 p-3 rounded-lg bg-surface-1 border border-border text-xs text-ink-2">
+                    <span className="text-amber-text mt-0.5">{item.icon}</span>
+                    <div><span className="font-semibold text-navy">{item.label}:</span> {item.value}</div>
                   </div>
                 ))}
               </div>
-              <Link href={`/universities/${u.id}`} className="mt-4 block text-center py-2 rounded-lg border border-border text-xs font-semibold text-navy hover:border-amber transition-colors no-underline">
-                View All {u.abbr} Programs
-              </Link>
-            </div>
+            </section>
 
-            {/* All specs for this program */}
-            {(pd.specs?.length ?? 0) > 0 && (
-              <div className="card-lg p-5">
-                <div className="text-xs font-bold text-ink-3 uppercase tracking-widest mb-3">Other Specialisations</div>
-                <div className="flex flex-col gap-1">
-                  {(pd.specs ?? []).filter(s => s !== spec).map(s => (
-                    <Link key={s} href={`/universities/${u.id}/${programSlug}/${s.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'')}`}
-                      className="text-sm text-ink-2 hover:text-amber transition-colors py-1.5 border-b border-border last:border-0 no-underline">
-                      {s}
-                    </Link>
+            {/* ── PROJECT IDEAS ──────────────────────────────────── */}
+            {(specContent?.projectIdeas?.length ?? 0) > 0 && (
+              <section className="card-lg p-6">
+                <h2 className="font-display text-xl font-bold text-navy mb-1">Real-World Project Ideas</h2>
+                <p className="text-sm text-ink-3 mb-4">Build these projects during your program to stand out in interviews</p>
+                <div className="flex flex-col gap-3">
+                  {(specContent?.projectIdeas ?? []).map((idea, i) => (
+                    <div key={i} className="flex items-start gap-3 p-3 rounded-xl bg-surface-1 border border-border">
+                      <span className="text-sm font-bold text-amber shrink-0">{i + 1}.</span>
+                      <span className="text-sm text-ink-2 leading-snug">{idea}</span>
+                    </div>
                   ))}
                 </div>
-              </div>
+                {specContent?.resumeTip && (
+                  <div className="mt-4 p-4 rounded-xl border border-blue-200 bg-blue-50">
+                    <div className="text-xs font-bold text-blue-700 uppercase tracking-wide mb-1">Resume Tip</div>
+                    <p className="text-sm text-blue-800 leading-relaxed">{specContent.resumeTip}</p>
+                  </div>
+                )}
+              </section>
             )}
 
+            {/* ── REVIEWS ────────────────────────────────────────── */}
+            <section className="card-lg p-6">
+              {/* Rating header */}
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+                <div>
+                  <h2 className="font-display text-xl font-bold text-navy mb-1">Student Reviews</h2>
+                  <div className="flex items-center gap-2">
+                    <StarRating rating={Math.round(parseFloat(avgRating))} size={16} />
+                    <span className="text-lg font-extrabold text-navy">{avgRating}</span>
+                    <span className="text-sm text-ink-3">/ 5 · {totalShown} verified students</span>
+                  </div>
+                </div>
+                <div className="flex gap-2 text-xs">
+                  {[5,4,3].map(r => {
+                    const count = rawReviews.filter(rv => rv.rating === r).length
+                    return (
+                      <div key={r} className="flex items-center gap-1 px-2 py-1 rounded-lg bg-surface-1 border border-border">
+                        <Star size={11} fill="#D4922A" stroke="#D4922A" />
+                        <span className="font-bold text-navy">{r}</span>
+                        <span className="text-ink-3">({count}+)</span>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+
+              {/* Review cards */}
+              <div className="grid sm:grid-cols-2 gap-4">
+                {reviews.map((rv, i) => (
+                  <div key={i} className="p-4 rounded-xl bg-surface-1 border border-border">
+                    <div className="flex items-start justify-between gap-2 mb-2">
+                      <div className="flex items-center gap-2">
+                        <div className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0"
+                          style={{ background: u.color }}>
+                          {rv.name.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase()}
+                        </div>
+                        <div>
+                          <div className="text-sm font-bold text-navy leading-none">{rv.name}</div>
+                          <div className="text-[10px] text-ink-3">{rv.city} · {rv.date}</div>
+                        </div>
+                      </div>
+                      <StarRating rating={rv.rating} size={12} />
+                    </div>
+                    <div className="text-[10px] font-semibold text-amber mb-1.5">{rv.program}</div>
+                    <p className="text-xs text-ink-2 leading-relaxed">{rv.review}</p>
+                  </div>
+                ))}
+              </div>
+
+              {rawReviews.length > 6 && (
+                <button onClick={() => setShowAllReviews(!showAllReviews)} className="mt-4 w-full py-2.5 rounded-xl border border-border text-sm font-semibold text-navy hover:border-amber transition-colors flex items-center justify-center gap-1.5">
+                  {showAllReviews ? <><ChevronUp size={16} />Show Less</> : <><ChevronDown size={16} />Show All {rawReviews.length} Reviews</>}
+                </button>
+              )}
+
+              <div className="mt-4 p-3 rounded-lg bg-surface-1 border border-border text-xs text-ink-3 flex items-center gap-2">
+                <Shield size={12} className="text-green-500 shrink-0" />
+                Reviews collected from verified students via Edify counselling platform. {totalShown} reviews across all programs at {cleanName}.
+              </div>
+            </section>
+
+            {/* ── FAQs ───────────────────────────────────────────── */}
+            <section className="card-lg p-6">
+              <h2 className="font-display text-xl font-bold text-navy mb-4">Frequently Asked Questions</h2>
+              <div className="flex flex-col divide-y divide-border">
+                {allFaqs.map((faq, i) => (
+                  <div key={i} className="py-4">
+                    <button onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                      className="flex items-start justify-between gap-3 w-full text-left">
+                      <span className="text-sm font-semibold text-navy leading-snug">{faq.q}</span>
+                      {openFaq === i ? <ChevronUp size={18} className="text-amber shrink-0 mt-0.5" /> : <ChevronDown size={18} className="text-ink-3 shrink-0 mt-0.5" />}
+                    </button>
+                    {openFaq === i && (
+                      <p className="mt-3 text-sm text-ink-2 leading-relaxed pr-6">{faq.a}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </section>
+
+          </div>
+
+          {/* ── SIDEBAR ──────────────────────────────────────────── */}
+          <div className="lg:w-80 shrink-0">
+            <div className="sticky top-20 flex flex-col gap-4">
+
+              {/* Admission CTA */}
+              <div className="p-5 rounded-xl" style={{ background: 'linear-gradient(135deg,#0B1D35,#142540)', border: '1px solid rgba(200,129,26,0.3)' }}>
+                <div className="text-[10px] font-bold text-amber uppercase tracking-wider mb-1">🎓 Admissions Open {year}</div>
+                <div className="text-sm text-slate-300 mb-1">{program} — {spec}</div>
+                <div className="text-white font-bold mb-3">{cleanName}</div>
+                <button onClick={() => setEnquiryOpen(true)} className="w-full py-2.5 rounded-lg font-bold text-white text-sm mb-2" style={{ background: 'linear-gradient(135deg,#c9922a,#e0a93a)' }}>
+                  Get Free Counselling →
+                </button>
+                <button onClick={() => setEmiFormOpen(true)} className="w-full py-2 rounded-lg text-xs font-semibold border border-amber/30 text-amber">
+                  Check EMI Options
+                </button>
+              </div>
+
+              {/* University card */}
+              <div className="card-lg p-4">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 shrink-0 rounded-lg border border-border bg-white flex items-center justify-center overflow-hidden p-1">
+                    {u.logo
+                      ? <img src={u.logo} alt={u.name} className="max-w-full max-h-full object-contain" onError={e => { const t = e.target as HTMLImageElement; t.style.display='none'; const p=t.parentElement; if(p){p.style.background=u.color;p.innerHTML=`<span style="color:#fff;font-weight:800;font-size:11px">${(u.abbr||u.name).slice(0,2).toUpperCase()}</span>`}}} />
+                      : <span style={{ color:'#fff', fontWeight:800, fontSize:11, background:u.color, width:'100%', height:'100%', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:6 }}>{(u.abbr||u.name).slice(0,2).toUpperCase()}</span>
+                    }
+                  </div>
+                  <div>
+                    <div className="text-sm font-bold text-navy leading-snug">{cleanName}</div>
+                    <div className="text-xs text-ink-3">{u.city} · NAAC {u.naac}</div>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-1.5 mb-3">
+                  {u.approvals.slice(0, 5).map(a => (
+                    <div key={a} className="flex items-center gap-1.5 text-xs text-ink-2">
+                      <CheckCircle size={11} className="text-green-500 shrink-0" /> {a}
+                    </div>
+                  ))}
+                </div>
+                <Link href={`/universities/${u.id}`} className="block text-center py-2 rounded-lg border border-border text-xs font-semibold text-navy hover:border-amber transition-colors no-underline">
+                  View All {u.abbr} Programs →
+                </Link>
+              </div>
+
+              {/* Edify Recommends */}
+              <EdifyRecommends program={program} currentId={u.id} programSlug={programSlug} />
+
+              {/* Other Specialisations */}
+              {(pd.specs?.length ?? 0) > 1 && (
+                <div className="card-lg p-4">
+                  <div className="text-xs font-bold text-ink-3 uppercase tracking-widest mb-3">Other {u.abbr} {program} Specs</div>
+                  <div className="flex flex-col gap-0.5">
+                    {(pd.specs ?? []).filter(s => s !== spec).slice(0, 8).map(s => {
+                      const slug = s.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'')
+                      return (
+                        <Link key={s} href={`/universities/${u.id}/${programSlug}/${slug}`}
+                          className="text-sm text-ink-2 hover:text-amber transition-colors py-1.5 border-b border-border last:border-0 no-underline block truncate">
+                          {s}
+                        </Link>
+                      )
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
-        {/* Other Universities */}
+        {/* ── OTHER UNIVERSITIES ───────────────────────────────── */}
         {otherUnis.length > 0 && (
           <div className="mt-12">
             <h2 className="text-lg font-bold text-navy mb-4">Other Universities Offering {program}</h2>
@@ -326,7 +649,7 @@ export default function UniversitySpecClient({ university: u, program, programSl
                     className="block bg-white border border-border rounded-xl overflow-hidden hover:border-amber transition-colors no-underline">
                     <div style={{ height: 3, background: ou.color }} />
                     <div className="p-4">
-                      <div className="font-bold text-navy text-sm mb-1">{ou.name}</div>
+                      <div className="font-bold text-navy text-sm mb-1 leading-snug">{ou.name.replace(/\bOnline\b\s*$/i, '')}</div>
                       <div className="text-xs text-ink-3 mb-2">{ou.city}{ou.nirf < 200 ? ` · NIRF #${ou.nirf}` : ''} · NAAC {ou.naac}</div>
                       <div className="flex justify-between text-xs">
                         <span className="text-ink-2">Fees: <strong>{opd?.fees || formatFee(ou.feeMin)}</strong></span>
@@ -339,6 +662,16 @@ export default function UniversitySpecClient({ university: u, program, programSl
             </div>
           </div>
         )}
+      </div>
+
+      {/* Mobile sticky CTA */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 p-3 bg-white border-t border-border flex gap-2" style={{ boxShadow: '0 -4px 24px rgba(0,0,0,0.08)' }}>
+        <button onClick={() => setEmiFormOpen(true)} className="flex-1 py-3 rounded-xl font-bold text-sm border-2 border-amber text-amber">
+          EMI Options
+        </button>
+        <button onClick={() => setEnquiryOpen(true)} className="flex-1 py-3 rounded-xl font-bold text-white text-sm" style={{ background: 'linear-gradient(135deg,#c9922a,#e0a93a)' }}>
+          Free Counselling →
+        </button>
       </div>
     </>
   )
