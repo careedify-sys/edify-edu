@@ -1590,6 +1590,9 @@ export const BLOG_POSTS: BlogPost[] = [
     tags: ['MCA', 'jobs after MCA', 'MCA salary', 'career after MCA'],
     publishedAt: '2026-04-04',
     readTime: 8,
+    targetKeyword: 'jobs after mca',
+    relatedUniversities: ['jain-university-online', 'amity-university-online', 'lovely-professional-university-online'],
+    status: 'published' as const,
     faqs: [
       { q: 'What is the average MCA salary in India per month?', a: 'Freshers earn ₹25,000–₹50,000/month. With 3–5 years of experience, MCA professionals earn ₹60,000–₹1,20,000/month. Senior roles at MNCs can go up to ₹2–3 lakh/month.' },
       { q: 'Which companies hire MCA graduates?', a: 'TCS, Infosys, Wipro, HCL, Cognizant, Accenture, IBM, Tech Mahindra, Capgemini, and startups actively recruit MCA graduates for software, testing, and system admin roles.' },
@@ -1665,6 +1668,9 @@ ${['TCS','Infosys','Wipro','HCL Technologies','Cognizant','Accenture','IBM India
     tags: ['MBA', 'career after MBA', 'jobs after MBA', 'MBA salary', 'MBA scope'],
     publishedAt: '2026-04-04',
     readTime: 8,
+    targetKeyword: 'career after mba',
+    relatedUniversities: ['nmims-online', 'symbiosis-university-online', 'amity-university-online'],
+    status: 'published' as const,
     faqs: [
       { q: 'What is the average MBA salary in India?', a: 'MBA freshers earn ₹5–12 LPA. With 3–5 years post-MBA experience, salaries range ₹15–30 LPA. At senior management level (10+ years), ₹40–80 LPA is common at top companies.' },
       { q: 'What are the best career options after MBA?', a: 'Top options include: Management Consultant, Product Manager, Investment Banker, Marketing Manager, HR Business Partner, Supply Chain Manager, Business Analyst, and Entrepreneur.' },
@@ -1736,6 +1742,9 @@ ${['TCS','Infosys','Wipro','HCL Technologies','Cognizant','Accenture','IBM India
     tags: ['B.Com', 'career after B.Com', 'jobs after B.Com', 'courses after B.Com'],
     publishedAt: '2026-04-04',
     readTime: 7,
+    targetKeyword: 'career after bcom',
+    relatedUniversities: ['nmims-online', 'amity-university-online'],
+    status: 'published' as const,
     faqs: [
       { q: 'What can I do after B.Com?', a: 'After B.Com you can do MBA, M.Com, CA, CMA, CS, CFA, MBA in Finance/Accounting, government jobs (SSC CGL, IBPS), or join corporate finance/accounting roles directly.' },
       { q: 'What is the salary after B.Com?', a: 'Fresh B.Com graduates earn ₹15,000–₹30,000/month in entry-level accounting/finance roles. With an MBA or CA qualification, salary jumps to ₹50,000–₹1,50,000/month within 3–5 years.' },
@@ -1798,6 +1807,9 @@ ${['TCS','Infosys','Wipro','HCL Technologies','Cognizant','Accenture','IBM India
     tags: ['1 year MBA', 'executive MBA', 'MBA for working professionals', 'IIM executive MBA'],
     publishedAt: '2026-04-04',
     readTime: 7,
+    targetKeyword: '1 year mba india',
+    relatedUniversities: ['nmims-online', 'symbiosis-university-online'],
+    status: 'published' as const,
     faqs: [
       { q: 'Which is the best 1 year MBA in India?', a: 'Top 1-year MBA programs: IIM Ahmedabad PGPX (₹28L), IIM Bangalore EPGP (₹24L), ISB PGP (₹40L), IIM Calcutta PGPEX (₹25L), XLRI PGCHRM, and SP Jain GMBA. For affordable options, BITS Pilani Work Integrated MBA is an excellent choice.' },
       { q: 'What is the eligibility for executive MBA?', a: 'Most 1-year executive MBA programs require minimum 5 years of work experience. IIM programs typically require GMAT/GRE scores. BITS Pilani Work Integrated Learning Program requires employment proof.' },
@@ -1848,6 +1860,9 @@ ${['TCS','Infosys','Wipro','HCL Technologies','Cognizant','Accenture','IBM India
     tags: ['cheapest online MBA', 'affordable online MBA', 'low cost MBA', 'online MBA fees India'],
     publishedAt: '2026-04-04',
     readTime: 6,
+    targetKeyword: 'cheapest online mba india',
+    relatedUniversities: ['symbiosis-university-online', 'jain-university-online'],
+    status: 'published' as const,
     faqs: [
       { q: 'What is the cheapest online MBA in India?', a: 'IGNOU online MBA is ₹31,500 total — the cheapest UGC approved option. Among private universities, Chandigarh University (₹1 lakh), LPU (₹1.3 lakh), and Jain University (₹70,000–₹1 lakh) offer affordable options with NAAC A/A+ accreditation.' },
       { q: 'Is cheap online MBA valid?', a: 'Yes — provided it is from a UGC-DEB approved university. The price does not determine validity. IGNOU at ₹31,500 and Amity at ₹2.5 lakh are both equally valid UGC-DEB degrees.' },
@@ -1906,6 +1921,9 @@ ${['TCS','Infosys','Wipro','HCL Technologies','Cognizant','Accenture','IBM India
     tags: ['distance MBA', 'online MBA', 'distance education MBA', 'MBA comparison'],
     publishedAt: '2026-04-04',
     readTime: 6,
+    targetKeyword: 'distance mba vs online mba',
+    relatedUniversities: ['symbiosis-university-online', 'amity-university-online'],
+    status: 'published' as const,
     faqs: [
       { q: 'What is the difference between distance MBA and online MBA?', a: 'Distance MBA is delivered through printed study material with in-person exams. Online MBA is fully digital — live/recorded classes, online exams, LMS portal. Both can be UGC-DEB approved, but online MBA is more flexible and modern.' },
       { q: 'Which is better — distance MBA or online MBA?', a: 'Online MBA is better in 2026. It offers more interaction, better learning experience, and is increasingly preferred by employers. Both are equally valid legally if UGC-DEB approved.' },
@@ -1955,6 +1973,9 @@ ${['TCS','Infosys','Wipro','HCL Technologies','Cognizant','Accenture','IBM India
     tags: ['Manipal University Jaipur', 'MUJ review', 'is Manipal fake', 'Manipal University Jaipur'],
     publishedAt: '2026-04-04',
     readTime: 5,
+    targetKeyword: 'manipal university jaipur online review',
+    relatedUniversities: ['manipal-university-jaipur-online'],
+    status: 'published' as const,
     faqs: [
       { q: 'Is Manipal University Jaipur fake?', a: 'No — Manipal University Jaipur (MUJ) is 100% legitimate. It is UGC-DEB approved, NAAC A+ accredited, NIRF ranked #47 overall, and operates under the Manipal Education group established in 1953.' },
       { q: 'Is Manipal University Jaipur UGC approved?', a: 'Yes. MUJ is UGC-DEB approved for online degrees. The online MBA and other programs are listed on the UGC entitled list at ugc.ac.in. You can verify this directly on the UGC website.' },
@@ -2009,6 +2030,9 @@ ${['TCS','Infosys','Wipro','HCL Technologies','Cognizant','Accenture','IBM India
     tags: ['Chandigarh University', 'CU online MBA', 'Chandigarh University review'],
     publishedAt: '2026-04-04',
     readTime: 6,
+    targetKeyword: 'chandigarh university online review',
+    relatedUniversities: ['chandigarh-university-online'],
+    status: 'published' as const,
     faqs: [
       { q: 'Is Chandigarh University online MBA valid?', a: 'Yes — Chandigarh University is UGC-DEB approved, NAAC A+ accredited, and NIRF ranked. The online MBA degree is legally equivalent to a campus degree under UGC 2020 guidelines.' },
       { q: 'What is the fee for Chandigarh University online MBA?', a: 'CU online MBA total fee is approximately ₹1,00,000 (₹25,000 per semester for 4 semesters). EMI options start from ₹4,200/month. One of the most affordable NAAC A+ MBAs available.' },
@@ -2070,6 +2094,9 @@ ${['TCS','Infosys','Wipro','HCL Technologies','Cognizant','Accenture','IBM India
     tags: ['MBA fees', 'MBA cost India', 'MBA fees in India', 'online MBA fees'],
     publishedAt: '2026-04-04',
     readTime: 7,
+    targetKeyword: 'mba fees india',
+    relatedUniversities: ['symbiosis-university-online', 'nmims-online', 'amity-university-online'],
+    status: 'published' as const,
     faqs: [
       { q: 'What is the average MBA fee in India?', a: 'MBA fees vary widely: IIM ₹22–28 lakh, top private colleges ₹8–15 lakh, state government colleges ₹50,000–₹2 lakh, and online MBA ₹31,500 (IGNOU) to ₹2.5 lakh (NMIMS). Average across all types is around ₹3–6 lakh.' },
       { q: 'What is the MBA fee in government colleges?', a: 'Government MBA college fees: IIM ₹22–28 lakh (not cheap despite being govt), state government MBA colleges ₹30,000–₹2 lakh, IGNOU online MBA ₹31,500. State university MBA colleges are significantly cheaper than IIMs.' },
