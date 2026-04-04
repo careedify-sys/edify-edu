@@ -108,10 +108,23 @@ export default async function GuidePage({ params }: Props) {
 
         {/* ── Body ────────────────────────────────────────────── */}
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
-          <article
-            className="prose prose-sm sm:prose max-w-none"
-            dangerouslySetInnerHTML={{ __html: guide.content }}
-          />
+
+          {/* Quick summary card */}
+          <div className="rounded-2xl p-5 mb-6" style={{ background: 'rgba(212,146,42,0.07)', border: '1px solid rgba(212,146,42,0.25)' }}>
+            <div className="flex items-center gap-2 mb-2">
+              <span style={{ color: '#D4922A' }}>✦</span>
+              <span className="text-xs font-black uppercase tracking-widest" style={{ color: '#D4922A' }}>Quick Answer</span>
+            </div>
+            <p className="text-sm leading-relaxed m-0" style={{ color: '#3B5068' }}>{guide.desc}</p>
+          </div>
+
+          {/* Article content */}
+          <div className="bg-white rounded-2xl border border-border p-6 sm:p-8 mb-6">
+            <article
+              className="prose-article"
+              dangerouslySetInnerHTML={{ __html: guide.content }}
+            />
+          </div>
 
           {/* CTA */}
           <div className="mt-8 rounded-2xl border border-amber/30 bg-amber/5 p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
