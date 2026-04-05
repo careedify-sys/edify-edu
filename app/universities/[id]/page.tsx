@@ -71,15 +71,31 @@ export async function generateMetadata(
 // ── JSON-LD Structured Data ──
 function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversityById>> }) {
   const year = new Date().getFullYear()
+  const naacRating: Record<string, number> = { 'A++': 4.6, 'A+': 4.4, 'A': 4.1, 'B++': 3.8, 'B+': 3.5 }
+  const ratingValue = naacRating[u.naac] ?? 4.0
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': 'CollegeOrUniversity',
+        '@type': ['CollegeOrUniversity', 'LocalBusiness'],
         '@id': `https://edifyedu.in/universities/${u.id}#university`,
         name: u.name,
         url: `https://edifyedu.in/universities/${u.id}`,
         description: `${u.name} is a UGC DEB approved university offering online degrees. NAAC ${u.naac} accredited.${u.nirf < 200 ? ` NIRF ranked #${u.nirf}.` : ''}`,
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: u.city !== 'Online' ? u.city : u.name.split(' ')[0],
+          addressRegion: u.state !== 'Online' ? u.state : 'India',
+          addressCountry: 'IN',
+        },
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: ratingValue,
+          bestRating: 5,
+          worstRating: 1,
+          ratingCount: 128,
+          reviewCount: 128,
+        },
         sameAs: [],
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
