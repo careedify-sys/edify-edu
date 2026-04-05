@@ -32,6 +32,14 @@ const SPEC_SLUG_MAP: Record<string, { display: string; contentKey: string; keywo
   'digital-marketing':            { display: 'Digital Marketing', contentKey: 'digital marketing', keywords: ['mba digital marketing', 'online mba digital marketing india 2026', 'mba digital marketing career', 'mba digital marketing salary'] },
   'operations-management':        { display: 'Operations Management', contentKey: 'operations & supply chain', keywords: ['mba operations management', 'online mba operations india 2026', 'mba operations career salary', 'mba supply chain management'] },
   'international-business':       { display: 'International Business', contentKey: 'international business', keywords: ['mba international business', 'online mba international business india 2026', 'mba ib career salary', 'mba international business scope'] },
+  'entrepreneurship':             { display: 'Entrepreneurship', contentKey: 'entrepreneurship', keywords: ['mba entrepreneurship india 2026', 'online mba entrepreneurship', 'mba entrepreneurship career salary', 'best mba entrepreneurship india', 'mba startup india'] },
+  'project-management':           { display: 'Project Management', contentKey: 'project management', keywords: ['mba project management india 2026', 'online mba project management', 'mba project management career', 'mba pmp india'] },
+  'supply-chain-management':      { display: 'Supply Chain Management', contentKey: 'logistics & supply chain', keywords: ['mba supply chain management india 2026', 'online mba supply chain', 'mba scm career salary', 'mba logistics india'] },
+  'healthcare-management':        { display: 'Healthcare Management', contentKey: 'healthcare management', keywords: ['mba healthcare management india 2026', 'online mba hospital management', 'mba healthcare career salary'] },
+  'it-management':                { display: 'IT Management', contentKey: 'it management', keywords: ['mba it management india 2026', 'online mba information technology', 'mba it career salary india'] },
+  'general-management':           { display: 'General Management', contentKey: 'general management', keywords: ['mba general management india 2026', 'online mba general management', 'mba general management career'] },
+  'banking-finance':              { display: 'Banking & Finance', contentKey: 'finance', keywords: ['mba banking finance india 2026', 'online mba banking finance', 'mba banking career salary india'] },
+  'logistics-supply-chain':       { display: 'Logistics & Supply Chain', contentKey: 'logistics & supply chain', keywords: ['mba logistics supply chain india 2026', 'online mba logistics', 'mba supply chain career salary'] },
 }
 
 function findUniId(slug: string) {
@@ -63,21 +71,29 @@ export async function generateMetadata(
   const { activeSpec, specEntry } = resolveSpec(subSlug, allSpecs)
 
   const year = new Date().getFullYear()
-  const title = activeSpec
-    ? `Best Online ${program} in ${activeSpec} 2026 — Fees, Colleges, Career | Edify`
-    : `Online ${program} India 2026 — Compare 127+ UGC Approved Universities | Edify`
 
-  const description = activeSpec
-    ? `Compare top UGC DEB approved online ${program} programs with ${activeSpec} specialisation in India 2026. Check NIRF ranks, fees, career scope, and salary data.`
-    : `Explore all UGC approved online ${program} programs in India. Find real NIRF rankings, NAAC A++ grades, and fees from ₹40K. Verified admissions for 2026.`
+  // Use spec-specific metadata from content.ts when available
+  const specContent = activeSpec
+    ? (specEntry ? getSpecContent(specEntry.contentKey) : null) || getSpecContent(activeSpec)
+    : null
+
+  const title = specContent?.metaTitle
+    || (activeSpec
+      ? `Best Online ${program} in ${activeSpec} ${year} — Fees, Colleges, Career | Edify`
+      : `Online ${program} India ${year} — Compare 127+ UGC Approved Universities | Edify`)
+
+  const description = specContent?.metaDesc
+    || (activeSpec
+      ? `Compare top UGC DEB approved online ${program} programs with ${activeSpec} specialisation in India ${year}. Check NIRF ranks, fees, career scope, and salary data.`
+      : `Explore all UGC approved online ${program} programs in India. Find real NIRF rankings, NAAC A++ grades, and fees from ₹40K. Verified admissions for ${year}.`)
 
   const canonical = activeSpec
     ? `https://edifyedu.in/programs/${programSlug}/${subSlug}`
     : `https://edifyedu.in/programs/${programSlug}`
 
   const specKeywords = specEntry?.keywords || (activeSpec
-    ? [`online ${program} ${activeSpec.toLowerCase()}`, `${program} ${activeSpec.toLowerCase()} india 2026`, `${program} ${activeSpec.toLowerCase()} career salary`, `best ${program} ${activeSpec.toLowerCase()} india`]
-    : [`online ${program} india 2026`, `best online ${program} india`, `ugc approved ${program}`, `online ${program} for working professionals`])
+    ? [`online ${program} ${activeSpec.toLowerCase()}`, `${program} ${activeSpec.toLowerCase()} india ${year}`, `${program} ${activeSpec.toLowerCase()} career salary`, `best ${program} ${activeSpec.toLowerCase()} india`]
+    : [`online ${program} india ${year}`, `best online ${program} india`, `ugc approved ${program}`, `online ${program} for working professionals`])
 
   return {
     title,
