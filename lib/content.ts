@@ -1165,9 +1165,40 @@ Companies in 2026 are looking for **HR Analytics** and **Organizational Design**
 }
 
 // ─── HELPER FUNCTIONS ─────────────────────────────────────────
+const SPEC_ALIASES: Record<string, string> = {
+  'marketing management': 'marketing',
+  'marketing & sales management': 'marketing',
+  'sales & marketing': 'marketing',
+  'finance management': 'finance',
+  'financial management': 'finance',
+  'finance & accounting management': 'finance',
+  'banking & finance': 'finance',
+  'operations management': 'operations & supply chain',
+  'operations & supply chain management': 'operations & supply chain',
+  'logistics & supply chain management': 'operations & supply chain',
+  'production & operations management': 'operations & supply chain',
+  'supply chain': 'operations & supply chain',
+  'data science & business analytics': 'data science',
+  'data science and analytics': 'data science',
+  'analytics and data science': 'data science',
+  'data science & analytics': 'data science',
+  'business intelligence & analytics': 'business analytics',
+  'digital marketing management': 'digital marketing',
+  'digital marketing & e-commerce': 'digital marketing',
+  'digital marketing & sales': 'digital marketing',
+  'international business management': 'international business',
+  'international trade & business': 'international business',
+  'human resources analytics': 'human resource management',
+  'hr management': 'human resource management',
+  'human resource management & finance': 'human resource management',
+}
+
 export function getSpecContent(spec: string): SpecContent | null {
   const key = spec.toLowerCase().replace(/[^a-z0-9 &]/g, '').trim()
-  return SPEC_CONTENT[key] || SPEC_CONTENT[key.replace(/ & /g, ' ')] || null
+  return SPEC_CONTENT[key]
+    || SPEC_CONTENT[key.replace(/ & /g, ' ')]
+    || SPEC_CONTENT[SPEC_ALIASES[key] || '']
+    || null
 }
 export function getProgramContent(program: string): ProgramContent | null {
   return PROGRAM_CONTENT[program] || null

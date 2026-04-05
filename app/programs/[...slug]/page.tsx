@@ -12,14 +12,39 @@ import ProgramPageClient from '@/components/ProgramPageClient'
 const PM: Record<string, Program> = {
   'mba':'MBA','mca':'MCA','bba':'BBA','bca':'BCA','ba':'BA',
   'bcom':'B.Com','mcom':'M.Com','ma':'MA','msc':'MSc','bsc':'BSc',
-  // online-* slug variants for SEO-friendly URLs
   'online-mba':'MBA','online-mca':'MCA','online-bba':'BBA','online-bca':'BCA',
   'online-ba':'BA','online-bcom':'B.Com','online-mcom':'M.Com',
   'online-ma':'MA','online-msc':'MSc',
 }
 
+// Maps URL slugs → display name, content key, and target keywords for SEO
+const SPEC_SLUG_MAP: Record<string, { display: string; contentKey: string; keywords: string[] }> = {
+  'marketing':                    { display: 'Marketing', contentKey: 'marketing', keywords: ['mba marketing', 'online mba marketing india 2026', 'mba marketing career salary', 'best mba marketing specialisation'] },
+  'marketing-management':         { display: 'Marketing Management', contentKey: 'marketing', keywords: ['mba marketing management', 'online mba marketing management india 2026', 'mba marketing management career', 'mba marketing salary india'] },
+  'finance':                      { display: 'Finance', contentKey: 'finance', keywords: ['mba finance', 'online mba finance india 2026', 'mba finance career salary', 'best mba finance specialisation'] },
+  'finance-management':           { display: 'Finance Management', contentKey: 'finance', keywords: ['mba finance management', 'online mba finance management 2026', 'mba finance career india', 'mba finance salary'] },
+  'financial-management':         { display: 'Financial Management', contentKey: 'finance', keywords: ['mba financial management', 'online mba financial management india', 'mba finance career 2026', 'mba finance scope'] },
+  'human-resource-management':    { display: 'Human Resource Management', contentKey: 'human resource management', keywords: ['mba hr', 'mba human resource management', 'online mba hr india 2026', 'mba hr salary india', 'mba hrm career'] },
+  'hr-management':                { display: 'HR Management', contentKey: 'human resource management', keywords: ['mba hr management', 'online mba hr india 2026', 'mba hrm career salary'] },
+  'data-science-analytics':       { display: 'Data Science & Analytics', contentKey: 'data science', keywords: ['mba data science analytics', 'online mba data science india 2026', 'mba analytics career salary', 'best mba data science india'] },
+  'data-science':                 { display: 'Data Science', contentKey: 'data science', keywords: ['mba data science', 'online mba data science india 2026', 'mba data science career', 'mba data science salary'] },
+  'business-analytics':           { display: 'Business Analytics', contentKey: 'business analytics', keywords: ['mba business analytics', 'online mba business analytics india 2026', 'mba analytics career salary', 'mba business analytics scope'] },
+  'digital-marketing':            { display: 'Digital Marketing', contentKey: 'digital marketing', keywords: ['mba digital marketing', 'online mba digital marketing india 2026', 'mba digital marketing career', 'mba digital marketing salary'] },
+  'operations-management':        { display: 'Operations Management', contentKey: 'operations & supply chain', keywords: ['mba operations management', 'online mba operations india 2026', 'mba operations career salary', 'mba supply chain management'] },
+  'international-business':       { display: 'International Business', contentKey: 'international business', keywords: ['mba international business', 'online mba international business india 2026', 'mba ib career salary', 'mba international business scope'] },
+}
+
 function findUniId(slug: string) {
   return UNIVERSITIES.find(u => u.id === slug || u.abbr.toLowerCase() === slug)?.id
+}
+
+function resolveSpec(subSlug: string | undefined, allSpecs: string[]) {
+  if (!subSlug) return { activeSpec: null, specEntry: null }
+  // 1. Match from university data specs
+  const dataSpec = allSpecs.find(s => s.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') === subSlug)
+  // 2. Fall back to canonical map
+  const entry = SPEC_SLUG_MAP[subSlug] || null
+  return { activeSpec: dataSpec || entry?.display || null, specEntry: entry }
 }
 
 export async function generateMetadata(
@@ -35,27 +60,29 @@ export async function generateMetadata(
 
   // Check if subSlug is a specialization
   const allSpecs = getAllSpecs(program)
-  const activeSpec = allSpecs.find(s => s.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'') === subSlug)
+  const { activeSpec, specEntry } = resolveSpec(subSlug, allSpecs)
 
   const year = new Date().getFullYear()
-  const title = activeSpec 
-    ? `Best Online ${program} in ${activeSpec} — Colleges, Fees, Review ${year} | Edify`
+  const title = activeSpec
+    ? `Best Online ${program} in ${activeSpec} 2026 — Fees, Colleges, Career | Edify`
     : `Online ${program} India 2026 — Compare 127+ UGC Approved Universities | Edify`
-  
+
   const description = activeSpec
-    ? `Compare top UGC DEB approved online universities for ${program} with ${activeSpec} specialisation. Check NIRF ranks, fees, and syllabus for 2026.`
+    ? `Compare top UGC DEB approved online ${program} programs with ${activeSpec} specialisation in India 2026. Check NIRF ranks, fees, career scope, and salary data.`
     : `Explore all UGC approved online ${program} programs in India. Find real NIRF rankings, NAAC A++ grades, and fees from ₹40K. Verified admissions for 2026.`
 
   const canonical = activeSpec
     ? `https://edifyedu.in/programs/${programSlug}/${subSlug}`
     : `https://edifyedu.in/programs/${programSlug}`
 
+  const specKeywords = specEntry?.keywords || (activeSpec
+    ? [`online ${program} ${activeSpec.toLowerCase()}`, `${program} ${activeSpec.toLowerCase()} india 2026`, `${program} ${activeSpec.toLowerCase()} career salary`, `best ${program} ${activeSpec.toLowerCase()} india`]
+    : [`online ${program} india 2026`, `best online ${program} india`, `ugc approved ${program}`, `online ${program} for working professionals`])
+
   return {
     title,
     description,
-    keywords: activeSpec
-      ? [`online ${program} ${activeSpec}`, `${program} ${activeSpec} india 2026`, `ugc approved ${program}`, `online ${program} fees india`]
-      : [`online ${program} india 2026`, `best online ${program} india`, `ugc approved ${program}`, `online ${program} for working professionals`],
+    keywords: specKeywords,
     alternates: { canonical },
     openGraph: {
       title,
@@ -93,7 +120,7 @@ export default async function CatchAllProgramPage(
 
   // Check if subSlug is a specialization
   const allSpecs = getAllSpecs(program)
-  const activeSpec = allSpecs.find(s => s.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'') === subSlug)
+  const { activeSpec, specEntry } = resolveSpec(subSlug, allSpecs)
 
   const meta = PROGRAM_META[program]
   const content = getProgramContent(program)
@@ -188,7 +215,7 @@ export default async function CatchAllProgramPage(
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-navy leading-tight">
                   Online {program} <br className="hidden md:block"/>
                   {activeSpec ? (
-                    <span className="text-amber-text">Spec: {activeSpec}</span>
+                    <span className="text-amber-text">in {activeSpec}</span>
                   ) : (
                     <span>Your Gateway to Career Growth</span>
                   )}
@@ -222,7 +249,7 @@ export default async function CatchAllProgramPage(
 
             {/* About this Specialisation — only shown when a spec is active */}
             {activeSpec && (() => {
-              const sc = getSpecContent(activeSpec) || getSpecFallback(activeSpec, program)
+              const sc = (specEntry ? getSpecContent(specEntry.contentKey) : null) || getSpecContent(activeSpec) || getSpecFallback(activeSpec, program)
               const uniWithSpec = universities.find(u => u.programDetails[program]?.specs?.includes(activeSpec))
               const uniName = uniWithSpec?.name || `Top UGC DEB Approved Universities`
               return (
@@ -302,7 +329,7 @@ export default async function CatchAllProgramPage(
               programSlug={programSlug}
               universities={universities}
               allSpecs={allSpecs}
-              initialSpec={activeSpec}
+              initialSpec={activeSpec ?? undefined}
             />
 
             {/* Related Programs — internal linking for SEO */}
