@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 // Simple in-memory rate limiter (resets on cold start — good enough for edge)
 const RATE_LIMIT_WINDOW = 60_000 // 1 minute
 const RATE_LIMIT_MAX    = 5       // 5 submissions per IP per minute
@@ -41,6 +39,7 @@ export async function POST(req: NextRequest) {
 
     // ── 1. EMAIL via Resend ─────────────────────────────────────────────────
     if (process.env.RESEND_API_KEY) {
+      const resend = new Resend(process.env.RESEND_API_KEY)
       resend.emails.send({
         from: 'EdifyEdu Leads <leads@edifyedu.in>',
         to: ['hello@edifyedu.in', 'rishiupadhyay4787@gmail.com'],
