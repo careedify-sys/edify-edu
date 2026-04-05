@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   keywords: [
     'compare online mba india', 'online mba syllabus comparison 2026', 'amity vs manipal online mba syllabus',
     'compare ugc approved online degree', 'online mba fees comparison india', 'best online mba syllabus india 2026',
+    'amity online mba', 'manipal online mba', 'symbiosis online mba', 'nmims online mba', 'chandigarh university mba fees',
+    'jain online mba', 'dy patil online mba', 'lpu online mba', 'best online mba colleges in india',
   ],
   alternates: { canonical: 'https://edifyedu.in/compare' },
   openGraph: {

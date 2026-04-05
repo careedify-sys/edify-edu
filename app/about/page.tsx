@@ -5,7 +5,7 @@ import { Shield, Award, Users, Phone, Mail, CheckCircle, XCircle, Database, BarC
 export const metadata: Metadata = {
   title: 'About Edify — India\'s Independent Online Education Guide',
   description: 'Edify is India\'s independent guide to UGC DEB approved online degrees. No paid rankings. No university affiliations. We help students compare 125+ universities honestly.',
-  keywords: 'about edify, independent education guide india, ugc deb approved universities, honest online degree comparison',
+  keywords: 'about edify, independent education guide india, ugc deb approved universities, honest online degree comparison, best online mba colleges in india, online mba india, nirf ranked online universities, naac a++ online university, online mba for working professionals, top 10 mba colleges in india',
   alternates: { canonical: 'https://edifyedu.in/about' },
   openGraph: {
     title: 'About Edify — India\'s Independent Online Education Guide',

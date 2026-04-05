@@ -5,7 +5,20 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Online MBA Guides 2026 — Honest Answers | Edify',
   description: 'Clear, no-fluff guides for online MBA decisions in India. UGC DEB approval, NAAC rankings, eligibility, government jobs, and more.',
+  keywords: 'online mba guides india, is online mba valid for government jobs, is online mba valid, ugc deb approved universities list, online mba for working professionals, online degree for government jobs, online mba eligibility, online mba admission 2026, naac a++ online university, nirf ranked online mba, distance mba guide, correspondence mba india, online mba india 2026, best online mba india, online mca course',
   alternates: { canonical: 'https://edifyedu.in/guides' },
+  openGraph: {
+    title: 'Online MBA Guides 2026 — Honest Answers | Edify',
+    description: 'Clear, no-fluff guides for online MBA decisions in India. UGC DEB approval, NAAC rankings, eligibility, government jobs, and more.',
+    url: 'https://edifyedu.in/guides',
+    type: 'website',
+    images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: 'Online MBA Guides India 2026 — Edify' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Online MBA Guides 2026 | Edify',
+    description: 'No-fluff guides on UGC DEB approval, NAAC rankings, government jobs, and online MBA eligibility in India.',
+  },
 }
 
 export default function GuidesPage() {
