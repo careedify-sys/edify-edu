@@ -2,16 +2,26 @@ import type { Metadata } from 'next'
 import CgpaCalculatorClient from './CgpaCalculatorClient'
 
 export const metadata: Metadata = {
-  title: 'CGPA to Percentage Calculator 2026 — Convert CGPA Instantly | Edify',
+  title: 'CGPA to Percentage Calculator — How to Convert CGPA Instantly | Edify',
   description:
-    'Free CGPA to percentage calculator using the standard UGC formula (CGPA × 9.5). Convert 8.75, 7.5, 6.5 CGPA to percentage instantly. Also reverse: percentage to CGPA. Includes full conversion table & grade classification.',
+    'Free CGPA to percentage calculator using the UGC formula (CGPA × 9.5). How to convert CGPA into percentage — instant results. SGPA to percentage, 6.6 to 9.5 CGPA conversion table, grade classification.',
   keywords: [
     'cgpa to percentage',
     'cgpa to percentage calculator',
+    'how to convert cgpa into percentage',
+    'how to calculate percentage from cgpa',
+    'sgpa to percentage',
+    'sgpa calculator',
+    'cgpa multiplying factor',
     '8.75 cgpa in percentage',
     '7.5 cgpa in percentage',
     '8.5 cgpa in percentage',
     '9.0 cgpa in percentage',
+    '9.5 cgpa in percentage',
+    '8.9 cgpa in percentage',
+    '8.1 cgpa in percentage',
+    '7.3 cgpa in percentage',
+    '6.6 cgpa in percentage',
     '6.5 cgpa in percentage',
     'change cgpa into percentage',
     'convert cgpa to percentage',
@@ -19,7 +29,6 @@ export const metadata: Metadata = {
     'full form of cgpa and sgpa',
     'cgpa to percentage formula',
     'cgpa calculator india',
-    'sgpa to percentage',
     'cgpa percentage conversion table',
     'cgpa to marks',
     'what is cgpa',

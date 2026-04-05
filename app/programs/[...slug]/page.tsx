@@ -91,9 +91,19 @@ export async function generateMetadata(
     ? `https://edifyedu.in/programs/${programSlug}/${subSlug}`
     : `https://edifyedu.in/programs/${programSlug}`
 
+  // Program-level base keywords from keyword gap research
+  const PROGRAM_BASE_KEYWORDS: Partial<Record<string, string[]>> = {
+    MBA: [`online mba india ${year}`, `best online mba india`, `online mba for working professionals`, `mba course duration`, `mba how many years`, `mba specializations`, `types of mba`, `mba course details`, `best mba colleges in india`, `best online mba colleges in india`, `mba for working professionals`, `top 10 mba colleges in india`, `mba salary per month`, `best university for mba in india`],
+    MCA: [`online mca india ${year}`, `best online mca india`, `online mca course`, `mca salary in india`, `best course after bca`, `after bca which course is best`, `mca after bca`, `online mca course fees`, `online mca duration`],
+    BBA: [`online bba india ${year}`, `bba course`, `bba course details after 12th`, `job opportunities after bba`, `bba international business`, `amity bba fees`, `amity university bba fees`],
+    BCA: [`online bca course`, `bca salary in india`, `bca starting salary in india per month`, `best course after bca`, `online bca course fees`],
+    'B.Com': [`online bcom india ${year}`, `best course after b com`, `courses after bcom`, `b com course details`, `b com how many years`, `b com accounting and finance`],
+    MA: [`online ma india ${year}`, `courses after ba`, `ba job opportunities`, `ma distance learning india`],
+  }
+
   const specKeywords = specEntry?.keywords || (activeSpec
     ? [`online ${program} ${activeSpec.toLowerCase()}`, `${program} ${activeSpec.toLowerCase()} india ${year}`, `${program} ${activeSpec.toLowerCase()} career salary`, `best ${program} ${activeSpec.toLowerCase()} india`]
-    : [`online ${program} india ${year}`, `best online ${program} india`, `ugc approved ${program}`, `online ${program} for working professionals`])
+    : (PROGRAM_BASE_KEYWORDS[program] || [`online ${program} india ${year}`, `best online ${program} india`, `ugc approved ${program}`, `online ${program} for working professionals`]))
 
   return {
     title,

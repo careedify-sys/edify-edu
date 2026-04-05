@@ -7,7 +7,7 @@ import BlogSidebarForm from '@/components/BlogSidebarForm'
 export const metadata: Metadata = {
   title: 'Online MBA Blog India 2026 — Honest Guides, Reviews & Advice | Edify',
   description: 'No-fluff guides on online MBA, MCA, BBA in India. Compare fees, accreditation, career outcomes. Written by Edify experts. Updated for 2026 admissions.',
-  keywords: 'online mba blog india, online degree guide 2026, ugc deb approved universities, best online mba india, online mba for working professionals',
+  keywords: 'online mba blog india, online degree guide 2026, ugc deb approved universities, best online mba india, online mba for working professionals, mba course duration, mba how many years, mba specializations, correspondence mba india, distance mba guide, mba salary per month, best online mba colleges in india, amity online mba review, chandigarh university mba fees, manipal online mba review',
   alternates: { canonical: 'https://edifyedu.in/blog' },
   openGraph: {
     title: 'Edify Blog — Online Degree Guides & University Reviews India 2026',

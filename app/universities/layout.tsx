@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: '127+ Best Online Universities India 2026 — UGC DEB Approved',
   description: 'Compare 127+ UGC DEB approved online universities in India 2026. Filter by NIRF rank, NAAC grade, program (MBA, MCA, BBA, BCA), fees, and region. All universities independently verified.',
-  keywords: 'best online universities india 2026, ugc deb approved universities list, nirf ranked online universities, online university comparison india, naac a++ online university',
+  keywords: 'best online universities india 2026, ugc deb approved universities list, nirf ranked online universities, online university comparison india, naac a++ online university, amity online mba, amity university online mba, chandigarh university mba fees, chandigarh university online, manipal university online, manipal online mba, jain university mba fees, jain online mba, dy patil online mba, symbiosis online mba, nmims online mba, lpu online mba, manipal jaipur mba fees',
   alternates: { canonical: 'https://edifyedu.in/universities' },
   openGraph: {
     title: '127+ Best Online Universities India 2026 — UGC DEB Approved',
