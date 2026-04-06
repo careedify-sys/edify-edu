@@ -4,7 +4,7 @@ import CgpaCalculatorClient from './CgpaCalculatorClient'
 export const metadata: Metadata = {
   title: 'CGPA to Percentage Calculator — How to Convert CGPA Instantly | Edify',
   description:
-    'Free CGPA to percentage calculator using the UGC formula (CGPA × 9.5). How to convert CGPA into percentage — instant results. SGPA to percentage, 6.6 to 9.5 CGPA conversion table, grade classification.',
+    'Free CGPA to percentage calculator using UGC formula (CGPA × 9.5). Instant results for all CGPA values. SGPA conversion, grade table & full classification.',
   keywords: [
     'cgpa to percentage',
     'cgpa to percentage calculator',

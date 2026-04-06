@@ -197,6 +197,43 @@ const nextConfig = {
       { source: '/universities/kalinga-institut-of-industri',   destination: '/universities/kalinga-institute-industrial-technology-online', permanent: true },
       { source: '/universities/kalinga-institut-of-industri/:path*', destination: '/universities/kalinga-institute-industrial-technology-online/:path*', permanent: true },
 
+      // ── Broken/truncated slugs indexed by Google — 301 to correct canonical ──
+      // University slugs (truncated old versions)
+      { source: '/universities/shanmugh-arts-science-technolo',          destination: '/universities/shanmugha-arts-science-technology-research-online',    permanent: true },
+      { source: '/universities/shanmugh-arts-science-technolo/:path*',   destination: '/universities/shanmugha-arts-science-technology-research-online/:path*', permanent: true },
+      { source: '/universities/sri-ramachandra-universi',                destination: '/universities/sri-ramachandra-university-online',                    permanent: true },
+      { source: '/universities/sri-ramachandra-universi/:path*',         destination: '/universities/sri-ramachandra-university-online/:path*',             permanent: true },
+      { source: '/universities/bharath-institut-of-higher',              destination: '/universities',                                                       permanent: true },
+      { source: '/universities/bharath-institut-of-higher/:path*',       destination: '/universities',                                                       permanent: true },
+      { source: '/universities/deen-dayal-upadhyay-gorakhpu',            destination: '/universities/deen-dayal-upadhyay-gorakhpur-university-online',      permanent: true },
+      { source: '/universities/deen-dayal-upadhyay-gorakhpu/:path*',     destination: '/universities/deen-dayal-upadhyay-gorakhpur-university-online/:path*', permanent: true },
+      { source: '/universities/sathyaba-institut-of-science',            destination: '/universities/sathyabama-university-online',                         permanent: true },
+      { source: '/universities/sathyaba-institut-of-science/:path*',     destination: '/universities/sathyabama-university-online/:path*',                  permanent: true },
+      { source: '/universities/bharathi-universi',                       destination: '/universities/bharathidasan-university-online',                      permanent: true },
+      { source: '/universities/bharathi-universi/:path*',                destination: '/universities/bharathidasan-university-online/:path*',               permanent: true },
+      { source: '/universities/teerthanker-universi',                    destination: '/universities/teerthanker-mahaveer-university-online',               permanent: true },
+      { source: '/universities/teerthanker-universi/:path*',             destination: '/universities/teerthanker-mahaveer-university-online/:path*',        permanent: true },
+      { source: '/universities/jaypee-universi',                         destination: '/universities/jaypee-university-online',                             permanent: true },
+      { source: '/universities/jaypee-universi/:path*',                  destination: '/universities/jaypee-university-online/:path*',                      permanent: true },
+      { source: '/universities/arka-jain-universi',                      destination: '/universities/arka-jain-university-online',                          permanent: true },
+      { source: '/universities/arka-jain-universi/:path*',               destination: '/universities/arka-jain-university-online/:path*',                   permanent: true },
+
+      // CU BBA business-analytics truncated suffix
+      { source: '/universities/chandigarh-university-online/bba/business-analytics-specialization-with-data-focuse', destination: '/universities/chandigarh-university-online/bba/business-analytics', permanent: true },
+
+      // Program slugs with double-hyphens (CMS generation artifact)
+      { source: '/programs/mba/hospital--health-care-management',        destination: '/programs/mba/hospital-healthcare-management',                       permanent: true },
+      { source: '/programs/mba/data-science--ai',                        destination: '/programs/mba/data-science-ai',                                      permanent: true },
+      { source: '/programs/mba/tourism--event-management',               destination: '/programs/mba/tourism-event-management',                             permanent: true },
+
+      // Program slugs with trailing noise suffix
+      { source: '/programs/msc/data-science-focus-no-sub-specializations-80-cre', destination: '/programs/msc/data-science',                               permanent: true },
+      { source: '/programs/mca/artificial-intelligence-and-data-science-cyber-se', destination: '/programs/mca/artificial-intelligence-and-data-science',  permanent: true },
+
+      // Missing-data program pages
+      { source: '/programs/mba/insurance-management',                    destination: '/programs/mba/banking-insurance',                                    permanent: true },
+      { source: '/programs/mba/public-policy',                           destination: '/programs/mba',                                                      permanent: true },
+
       // Legacy patterns
       { source: '/college/:id',                destination: '/universities/:id',          permanent: true },
       { source: '/college/:id/:program',       destination: '/universities/:id/:program', permanent: true },

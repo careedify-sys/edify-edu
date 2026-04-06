@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Contact Edify — Expert Guidance for Online Degrees in India',
-  description: 'Talk to our counsellors for free. We help you pick the right online degree — no spam, no pressure, no paid referrals. Call, email, or WhatsApp.',
+  description: 'Talk to our expert counsellors for free. We help you pick the right online degree — no spam, no pressure, no paid referrals. Call, email, or WhatsApp anytime.',
   keywords: 'contact edify, education advisor india, online mba guidance, education advisor india',
   alternates: { canonical: 'https://edifyedu.in/contact' },
   openGraph: {

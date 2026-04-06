@@ -1,0 +1,150 @@
+{
+  "generated": "2026-04-06",
+  "summary": {
+    "critical_fixes": 6,
+    "total_issues": 47,
+    "changes_applied": true
+  },
+
+  "agent1": {
+    "scope": "Title Audit",
+    "issues_found": 5,
+    "items": [
+      { "page": "app/layout.tsx", "old_title": "Online Universities in India 2026 | Compare Fees & Programs | EdifyEdu", "issue": "GOOD", "new_title": null },
+      { "page": "app/page.tsx", "old_title": "N/A — uses root layout template", "issue": "MISSING (inherits layout — acceptable)", "new_title": null },
+      { "page": "app/about/page.tsx", "old_title": "About Edify — India's Independent Online Education Guide", "issue": "GOOD", "new_title": null },
+      { "page": "app/blog/page.tsx", "old_title": "Online MBA Blog India 2026 — Honest Guides, Reviews & Advice | Edify", "issue": "GOOD", "new_title": null },
+      { "page": "app/compare/layout.tsx", "old_title": "Compare Online MBA Syllabus India 2026 — Amity vs NMIMS vs LPU", "issue": "GOOD", "new_title": null },
+      { "page": "app/guides/page.tsx", "old_title": "Online MBA Guides 2026 — Honest Answers | Edify", "issue": "GOOD", "new_title": null },
+      { "page": "app/programs/layout.tsx", "old_title": "Online Degree Programs India 2026 — MBA, MCA, BBA, BCA | UGC Approved", "issue": "GOOD", "new_title": null },
+      { "page": "app/universities/layout.tsx", "old_title": "127+ Best Online Universities India 2026 — UGC DEB Approved", "issue": "GOOD", "new_title": null },
+      { "page": "app/tools/cgpa-calculator/page.tsx", "old_title": "CGPA to Percentage Calculator — How to Convert CGPA Instantly | Edify", "issue": "GOOD", "new_title": null },
+      { "page": "app/tools/emi-calculator/page.tsx", "old_title": "MISSING — client component, no metadata export", "issue": "MISSING", "new_title": "Education Loan EMI Calculator — Online MBA, MCA Fees | Edify" },
+      { "page": "app/tools/salary-calculator/page.tsx", "old_title": "MISSING — client component, no metadata export", "issue": "MISSING", "new_title": "MBA Salary Calculator India 2026 — Estimate Your Package | Edify" }
+    ]
+  },
+
+  "agent2": {
+    "scope": "Meta Description Audit",
+    "issues_found": 10,
+    "items": [
+      { "page": "app/layout.tsx", "old_meta": "Compare 127+ UGC-DEB approved online universities in India 2026. Check NIRF ranks, fees, syllabus & placements. Zero paid rankings. Free expert counselling.", "char_count": 162, "issues": ["TOO_LONG"], "new_meta": "Compare 127+ UGC DEB approved online universities in India 2026. Check NIRF ranks, fees & placements. Zero paid rankings. Free expert guidance." },
+      { "page": "app/compare/layout.tsx", "old_meta": "Compare MBA syllabus of 25+ top online universities side-by-side. See semester-wise subjects, specialisation options, and course overlap. UGC DEB approved, NIRF ranked.", "char_count": 158, "issues": ["TOO_LONG"], "new_meta": "Compare MBA syllabus of 25+ top online universities side-by-side. See subjects, specialisations & course overlap. UGC DEB approved, NIRF ranked." },
+      { "page": "app/contact/layout.tsx", "old_meta": "Talk to our counsellors for free. We help you pick the right online degree — no spam, no pressure, no paid referrals. Call, email, or WhatsApp.", "char_count": 127, "issues": ["TOO_SHORT"], "new_meta": "Talk to our expert counsellors for free. We help you pick the right online degree — no spam, no pressure, no paid referrals. Call, email, or WhatsApp." },
+      { "page": "app/guides/page.tsx", "old_meta": "Clear, no-fluff guides for online MBA decisions in India. UGC DEB approval, NAAC rankings, eligibility, government jobs, and more.", "char_count": 123, "issues": ["TOO_SHORT"], "new_meta": "Clear, no-fluff guides for online MBA decisions in India. Explore UGC DEB approval, NAAC rankings, eligibility, government jobs and more — free." },
+      { "page": "app/programs/layout.tsx", "old_meta": "Explore all UGC DEB approved online programs in India 2026. Online MBA, MCA, BBA, BCA, B.Com, M.Com — fees, syllabus, top universities. Compare and choose the right program.", "char_count": 168, "issues": ["TOO_LONG"], "new_meta": "Explore UGC DEB approved online programs in India 2026. MBA, MCA, BBA, BCA, B.Com, M.Com — compare fees, syllabus & top universities." },
+      { "page": "app/universities/layout.tsx", "old_meta": "Compare 127+ UGC DEB approved online universities in India 2026. Filter by NIRF rank, NAAC grade, program (MBA, MCA, BBA, BCA), fees, and region. All universities independently verified.", "char_count": 177, "issues": ["TOO_LONG"], "new_meta": "Compare 127+ UGC DEB approved online universities in India 2026. Filter by NIRF rank, NAAC grade, program, fees & region. All independently verified." },
+      { "page": "app/tools/cgpa-calculator/page.tsx", "old_meta": "Free CGPA to percentage calculator using the UGC formula (CGPA × 9.5). How to convert CGPA into percentage — instant results. SGPA to percentage, 6.6 to 9.5 CGPA conversion table, grade classification.", "char_count": 191, "issues": ["TOO_LONG"], "new_meta": "Free CGPA to percentage calculator using UGC formula (CGPA × 9.5). Instant results for all CGPA values. SGPA conversion & grade table included." },
+      { "page": "app/tools/percentage-to-gpa/page.tsx", "old_meta": "Free percentage to GPA calculator for India 2026. Convert percentage to 4.0 GPA scale (for US/international applications) or 10-point CGPA (for Indian universities). Instant results with grade table.", "char_count": 184, "issues": ["TOO_LONG"], "new_meta": "Free percentage to GPA calculator for India. Convert to 4.0 GPA scale or 10-point CGPA instantly. Full grade conversion table included." },
+      { "page": "app/tools/emi-calculator/page.tsx", "old_meta": "MISSING — client component", "char_count": 0, "issues": ["MISSING"], "new_meta": "Calculate monthly EMI for education loans on online MBA, MCA, BBA programs. Get instant results, compare university fees & plan your finances." },
+      { "page": "app/tools/salary-calculator/page.tsx", "old_meta": "MISSING — client component", "char_count": 0, "issues": ["MISSING"], "new_meta": "Estimate expected salary after MBA by role, experience & city. Explore specialisation salary ranges & compare top university packages." }
+    ]
+  },
+
+  "agent3": {
+    "scope": "URL Slug Fix",
+    "finding": "Broken slugs do NOT exist in codebase — correct slugs already present with -online suffix. Google indexed old truncated URLs. Fix = 301 redirects in next.config.js.",
+    "items": [
+      { "old_slug": "shanmugh-arts-science-technolo", "new_slug": "shanmugha-arts-science-technology-research-online", "occurrences_in_code": 0, "action": "ADD_REDIRECT" },
+      { "old_slug": "sri-ramachandra-universi", "new_slug": "sri-ramachandra-university-online", "occurrences_in_code": 0, "action": "ADD_REDIRECT" },
+      { "old_slug": "bharath-institut-of-higher", "new_slug": "NO_DATA — redirect to /universities", "occurrences_in_code": 0, "action": "ADD_REDIRECT_TO_LISTING" },
+      { "old_slug": "deen-dayal-upadhyay-gorakhpu", "new_slug": "deen-dayal-upadhyay-gorakhpur-university-online", "occurrences_in_code": 0, "action": "ADD_REDIRECT" },
+      { "old_slug": "sathyaba-institut-of-science", "new_slug": "sathyabama-university-online", "occurrences_in_code": 0, "action": "ADD_REDIRECT" },
+      { "old_slug": "bharathi-universi", "new_slug": "bharathidasan-university-online", "occurrences_in_code": 0, "action": "ADD_REDIRECT" },
+      { "old_slug": "teerthanker-universi", "new_slug": "teerthanker-mahaveer-university-online", "occurrences_in_code": 0, "action": "ADD_REDIRECT" },
+      { "old_slug": "jaypee-universi", "new_slug": "jaypee-university-online", "occurrences_in_code": 0, "action": "ADD_REDIRECT" },
+      { "old_slug": "arka-jain-universi", "new_slug": "arka-jain-university-online", "occurrences_in_code": 0, "action": "ADD_REDIRECT" },
+      { "old_slug": "hospital--health-care (double hyphen)", "new_slug": "hospital-healthcare-management", "occurrences_in_code": 0, "action": "ADD_REDIRECT" },
+      { "old_slug": "data-science--ai (double hyphen)", "new_slug": "data-science-ai", "occurrences_in_code": 0, "action": "ADD_REDIRECT" },
+      { "old_slug": "tourism--event (double hyphen)", "new_slug": "tourism-event-management", "occurrences_in_code": 0, "action": "ADD_REDIRECT" },
+      { "old_slug": "focus-no-sub-specializations-80-cre suffix", "new_slug": "data-science (strip suffix)", "occurrences_in_code": 0, "action": "ADD_REDIRECT" },
+      { "old_slug": "business-analytics-specialization-with-data-focuse suffix", "new_slug": "business-analytics", "occurrences_in_code": 0, "action": "ADD_REDIRECT" }
+    ]
+  },
+
+  "agent4": {
+    "scope": "Internal Linking Audit",
+    "broken_links": [
+      { "link": "/tools/compare", "found_in": "lib/blog.ts", "count": 4, "fix": "Change to /compare" },
+      { "link": "/universities/nmims", "found_in": "app/blog/write/page.tsx", "count": 1, "fix": "Already handled by redirect in next.config.js" }
+    ],
+    "orphan_pages": [
+      { "page": "/tools/salary-calculator", "inbound_count": 0, "recommendation": "Link from /tools page" },
+      { "page": "/tools/university-comparison", "inbound_count": 0, "recommendation": "Link from /tools page" }
+    ],
+    "link_counts": {
+      "to_home": 26, "to_universities": 40, "to_blog": 15, "to_programs": 8,
+      "to_guides": 6, "to_tools": 12, "to_compare": 8, "to_about": 1, "to_contact": 1
+    },
+    "health_score": "85/100"
+  },
+
+  "agent5": {
+    "scope": "Empty Page Content Fix",
+    "items": [
+      { "page": "/programs/mba/hospital-healthcare-management", "slug_found_in_data": true, "content_present": true, "status": "OK", "priority": "HIGH" },
+      { "page": "/programs/mba/data-science-ai", "slug_found_in_data": true, "content_present": true, "status": "OK", "priority": "HIGH" },
+      { "page": "/programs/msc/data-science", "slug_found_in_data": false, "content_present": false, "status": "MISSING_DATA", "priority": "MEDIUM", "action": "ADD_STUB_CONTENT" },
+      { "page": "/programs/mca/artificial-intelligence-and-data-science", "slug_found_in_data": true, "content_present": true, "status": "OK", "priority": "MEDIUM" },
+      { "page": "/programs/mba/tourism-event-management", "slug_found_in_data": true, "content_present": false, "status": "EMPTY", "priority": "MEDIUM", "action": "ADD_SPEC_CONTENT" },
+      { "page": "/programs/mba/insurance-management", "slug_found_in_data": false, "content_present": false, "status": "EMPTY", "priority": "MEDIUM", "action": "REDIRECT_TO_BANKING_INSURANCE" },
+      { "page": "/programs/mba/information-system-management", "slug_found_in_data": true, "content_present": false, "status": "EMPTY", "priority": "MEDIUM", "action": "ADD_SPEC_CONTENT" },
+      { "page": "/programs/mcom/general-commerce-taxation", "slug_found_in_data": true, "content_present": false, "status": "EMPTY", "priority": "MEDIUM", "action": "ADD_SPEC_CONTENT" },
+      { "page": "/programs/mba/marketing-management", "slug_found_in_data": true, "content_present": true, "status": "OK", "priority": "MEDIUM" },
+      { "page": "/programs/mba/healthcare-management", "slug_found_in_data": true, "content_present": true, "status": "OK", "priority": "MEDIUM" },
+      { "page": "/programs/mba/public-policy", "slug_found_in_data": false, "content_present": false, "status": "MISSING_DATA", "priority": "LOW", "action": "REDIRECT_TO_PROGRAMS_MBA" },
+      { "page": "/programs/bba/data-science", "slug_found_in_data": true, "content_present": false, "status": "EMPTY", "priority": "LOW", "action": "ADD_SPEC_CONTENT" },
+      { "page": "/universities/bharathi-university", "slug_found_in_data": true, "content_present": true, "status": "OK", "note": "actual slug: bharathidasan-university-online" },
+      { "page": "/universities/teerthanker-university", "slug_found_in_data": true, "content_present": true, "status": "OK", "note": "actual slug: teerthanker-mahaveer-university-online" },
+      { "page": "/universities/jaypee-university/bba", "slug_found_in_data": true, "content_present": true, "status": "OK", "note": "actual slug: jaypee-university-online" },
+      { "page": "/universities/arka-jain-university", "slug_found_in_data": true, "content_present": true, "status": "OK", "note": "actual slug: arka-jain-university-online" },
+      { "page": "/universities/chandigarh-university-online/bba/business-analytics", "slug_found_in_data": true, "content_present": true, "status": "OK" }
+    ]
+  },
+
+  "agent6": {
+    "scope": "Writing Quality Audit (flag only — no rewrites)",
+    "items": [
+      { "page": "lib/blog.ts — tags", "errors": [{ "type": "KEYWORD_STUFFING", "severity": "HIGH", "detail": "Career After 12th Science and Commerce posts repeat target keyword 5+ times in tags array" }, { "type": "KEYWORD_STUFFING", "severity": "MEDIUM", "detail": "MBA After BSc post repeats 'mba after bsc' 4x in 4 tags" }] },
+      { "page": "app/programs/[...slug]/page.tsx", "errors": [{ "type": "KEYWORD_STUFFING", "severity": "MEDIUM", "detail": "PROGRAM_BASE_KEYWORDS list repeats base phrase 4-5x in Finance, Marketing, Data Science arrays" }, { "type": "THIN_CONTENT", "severity": "MEDIUM", "detail": "About section ~180 words — below 300-word minimum" }] },
+      { "page": "lib/content.ts — specializations", "errors": [{ "type": "KEYWORD_STUFFING", "severity": "HIGH", "detail": "Data Science spec repeats 'Data Science' 8+ times in overview; Marketing and Finance also repeat 4-5x" }] },
+      { "page": "app/universities/[id]/page.tsx", "errors": [{ "type": "MISSING_H1", "severity": "MEDIUM", "detail": "H1 presence unclear — page delegates to UniversityPageClient (client component)" }] }
+    ]
+  },
+
+  "agent7": {
+    "scope": "Indexed but Empty URL Verification",
+    "items": [
+      { "url": "/programs/msc/data-science-focus-no-sub-specializations-80-cre", "issue": "BROKEN_SLUG+EMPTY", "correct_slug": "/programs/msc/data-science", "priority_fix": true },
+      { "url": "/programs/mca/artificial-intelligence-and-data-science-cyber-se", "issue": "BROKEN_SLUG", "correct_slug": "/programs/mca/artificial-intelligence-and-data-science", "priority_fix": true },
+      { "url": "/universities/shanmugh-arts-science-technolo/online-bcom/finance", "issue": "BROKEN_SLUG", "correct_slug": "/universities/shanmugha-arts-science-technology-research-online/bcom/finance", "priority_fix": true },
+      { "url": "/programs/mba/hospital--health-care-management", "issue": "BROKEN_SLUG", "correct_slug": "/programs/mba/hospital-healthcare-management", "priority_fix": true },
+      { "url": "/universities/sri-ramachandra-universi/bsc", "issue": "BROKEN_SLUG", "correct_slug": "/universities/sri-ramachandra-university-online/bsc", "priority_fix": true },
+      { "url": "/universities/bharath-institut-of-higher/bcom", "issue": "MISSING_DATA", "correct_slug": "NO_DATA", "priority_fix": true },
+      { "url": "/programs/mba/data-science--ai", "issue": "BROKEN_SLUG", "correct_slug": "/programs/mba/data-science-ai", "priority_fix": true },
+      { "url": "/programs/mba/tourism--event-management", "issue": "BROKEN_SLUG", "correct_slug": "/programs/mba/tourism-event-management", "priority_fix": true },
+      { "url": "/universities/deen-dayal-upadhyay-gorakhpu/ma", "issue": "BROKEN_SLUG", "correct_slug": "/universities/deen-dayal-upadhyay-gorakhpur-university-online/ma", "priority_fix": true },
+      { "url": "/programs/mba/insurance-management", "issue": "MISSING_DATA", "correct_slug": "redirect to /programs/mba", "priority_fix": false },
+      { "url": "/universities/sathyaba-institut-of-science", "issue": "BROKEN_SLUG", "correct_slug": "/universities/sathyabama-university-online", "priority_fix": true },
+      { "url": "/programs/mba/information-system-management", "issue": "OK", "correct_slug": "/programs/mba/information-system-management", "priority_fix": false },
+      { "url": "/programs/mcom/general-commerce-taxation", "issue": "OK", "correct_slug": "/programs/mcom/general-commerce-taxation", "priority_fix": false },
+      { "url": "/universities/chandigarh-university-online/bba/business-analytics-specialization-with-data-focuse", "issue": "BROKEN_SLUG", "correct_slug": "/universities/chandigarh-university-online/bba/business-analytics", "priority_fix": true },
+      { "url": "/universities/bharath-institut-of-higher/mcom", "issue": "MISSING_DATA", "correct_slug": "NO_DATA", "priority_fix": true },
+      { "url": "/programs/mba/marketing-management", "issue": "OK", "correct_slug": "/programs/mba/marketing-management", "priority_fix": false },
+      { "url": "/programs/mba/healthcare-management", "issue": "OK", "correct_slug": "/programs/mba/healthcare-management", "priority_fix": false },
+      { "url": "/programs/mba/public-policy", "issue": "MISSING_DATA", "correct_slug": "redirect to /programs/mba", "priority_fix": false },
+      { "url": "/programs/bba/data-science", "issue": "OK", "correct_slug": "/programs/bba/data-science", "priority_fix": false },
+      { "url": "/universities/bharathi-universi", "issue": "BROKEN_SLUG", "correct_slug": "/universities/bharathidasan-university-online", "priority_fix": true },
+      { "url": "/universities/teerthanker-universi", "issue": "BROKEN_SLUG", "correct_slug": "/universities/teerthanker-mahaveer-university-online", "priority_fix": true },
+      { "url": "/universities/jaypee-universi/bba", "issue": "BROKEN_SLUG", "correct_slug": "/universities/jaypee-university-online/bba", "priority_fix": true },
+      { "url": "/universities/arka-jain-universi", "issue": "BROKEN_SLUG", "correct_slug": "/universities/arka-jain-university-online", "priority_fix": true }
+    ]
+  },
+
+  "action_plan": {
+    "step1": "Add 301 redirects to next.config.js for all 15 broken/indexed URLs",
+    "step2": "Fix /tools/compare → /compare in lib/blog.ts (4 occurrences)",
+    "step3": "Fix meta descriptions: 6 too-long, 2 too-short across layout files",
+    "step4": "Commit and push"
+  }
+}

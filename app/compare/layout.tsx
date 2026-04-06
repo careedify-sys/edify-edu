@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Compare Online MBA Syllabus India 2026 — Amity vs NMIMS vs LPU',
-  description: 'Compare MBA syllabus of 25+ top online universities side-by-side. See semester-wise subjects, specialisation options, and course overlap. UGC DEB approved, NIRF ranked.',
+  description: 'Compare MBA syllabus of 25+ top online universities side-by-side. See subjects, specialisations & course overlap. UGC DEB approved, NIRF ranked.',
   keywords: [
     'compare online mba india', 'online mba syllabus comparison 2026', 'amity vs manipal online mba syllabus',
     'compare ugc approved online degree', 'online mba fees comparison india', 'best online mba syllabus india 2026',

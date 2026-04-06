@@ -2203,7 +2203,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <div class="il-grid">
     <a href="/universities/manipal-university-jaipur-online" class="il-card"><div class="il-uni">MUJ</div><div class="il-title">Manipal Jaipur Online</div><div class="il-sub">NAAC A+ · NIRF #47</div></a>
     <a href="/universities/manipal-academy-higher-education-online" class="il-card"><div class="il-uni">MAHE</div><div class="il-title">Manipal (MAHE) Online</div><div class="il-sub">NAAC A++ · NIRF #6</div></a>
-    <a href="/tools/compare" class="il-card"><div class="il-uni">TOOL</div><div class="il-title">Compare Universities</div><div class="il-sub">Side by side</div></a>
+    <a href="/compare" class="il-card"><div class="il-uni">TOOL</div><div class="il-title">Compare Universities</div><div class="il-sub">Side by side</div></a>
   </div>
 </div>
     `,
@@ -2296,7 +2296,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/universities/chandigarh-university-online/mba" class="il-card"><div class="il-uni">CU</div><div class="il-title">CU Online MBA</div><div class="il-sub">₹1,00,000 · NIRF #28</div></a>
     <a href="/universities/symbiosis-university-online/mba" class="il-card"><div class="il-uni">SYMBIOSIS</div><div class="il-title">Symbiosis Online MBA</div><div class="il-sub">₹1,05,000 · NAAC A++</div></a>
     <a href="/universities/lovely-professional-university-online/mba" class="il-card"><div class="il-uni">LPU</div><div class="il-title">LPU Online MBA</div><div class="il-sub">Also NAAC A+ · North India</div></a>
-    <a href="/tools/compare" class="il-card"><div class="il-uni">TOOL</div><div class="il-title">Compare All</div><div class="il-sub">Full side-by-side</div></a>
+    <a href="/compare" class="il-card"><div class="il-uni">TOOL</div><div class="il-title">Compare All</div><div class="il-sub">Full side-by-side</div></a>
   </div>
 </div>
     `,
@@ -2747,7 +2747,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/programs/mba" class="il-card"><div class="il-uni">MBA</div><div class="il-title">Online MBA Universities</div><div class="il-sub">UGC-approved, PSU-valid degrees</div></a>
     <a href="/programs/mba/finance" class="il-card"><div class="il-uni">FIN</div><div class="il-title">MBA Finance</div><div class="il-sub">Best for banking & PSU Finance</div></a>
     <a href="/universities" class="il-card"><div class="il-uni">ALL</div><div class="il-title">Compare Universities</div><div class="il-sub">Fees, NAAC, placements</div></a>
-    <a href="/tools/compare" class="il-card"><div class="il-uni">CMP</div><div class="il-title">Compare Tool</div><div class="il-sub">Side-by-side university comparison</div></a>
+    <a href="/compare" class="il-card"><div class="il-uni">CMP</div><div class="il-title">Compare Tool</div><div class="il-sub">Side-by-side university comparison</div></a>
   </div>
 </div>
     `,
@@ -2938,7 +2938,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/universities/amity-university-online/mba" class="il-card"><div class="il-uni">AMITY</div><div class="il-title">Amity Online MBA</div><div class="il-sub">Full details & admission</div></a>
     <a href="/universities/nmims-online/mba" class="il-card"><div class="il-uni">NMIMS</div><div class="il-title">NMIMS Online MBA</div><div class="il-sub">₹2,40,000 · Top placement</div></a>
     <a href="/universities/symbiosis-university-online/mba" class="il-card"><div class="il-uni">SYMBIOSIS</div><div class="il-title">Symbiosis Online MBA</div><div class="il-sub">₹1,05,000 · NAAC A++</div></a>
-    <a href="/tools/compare" class="il-card"><div class="il-uni">TOOL</div><div class="il-title">Compare Universities</div><div class="il-sub">Side-by-side comparison</div></a>
+    <a href="/compare" class="il-card"><div class="il-uni">TOOL</div><div class="il-title">Compare Universities</div><div class="il-sub">Side-by-side comparison</div></a>
   </div>
 </div>
     `,

@@ -4,7 +4,7 @@ import PercentageToGpaClient from './PercentageToGpaClient'
 export const metadata: Metadata = {
   title: 'Percentage to GPA Calculator 2026 — Convert Instantly (4.0 & 10-Point Scale) | Edify',
   description:
-    'Free percentage to GPA calculator for India 2026. Convert percentage to 4.0 GPA scale (for US/international applications) or 10-point CGPA (for Indian universities). Instant results with grade table.',
+    'Free percentage to GPA calculator for India. Convert to 4.0 GPA scale or 10-point CGPA instantly. Full grade conversion table & results for all percentages.',
   keywords: [
     'percentage to gpa',
     'percentage to gpa calculator',
