@@ -1452,6 +1452,8 @@ export interface UniversitySyllabus {
   edifySkills?: string[]
   edifyProjects?: string[]
   edifyInternships?: string[]
+  highlight?: string
+  programOverview?: string
 }
 
 export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
@@ -1860,7 +1862,9 @@ export const UNIVERSITY_SYLLABUS: Record<string, UniversitySyllabus> = {
   'guru-kashi-university-online||MCA': {
     edifySkills: ['Core programming', 'Data Structures & Algorithms', 'DBMS & SQL', 'Web technologies basics', 'Git/GitHub', 'Linux command line', 'Object-oriented programming concepts', 'Problem solving'],
     edifyProjects: ['Build a library/inventory management system', 'Create a student grade management system in Java/Python', 'Build a simple REST API for a todo app', 'Design and implement a relational database for a hospital', 'Create a basic Android app', 'Build a simple chatbot using Python'],
-    edifyInternships: ['Software Developer Intern', 'Web Developer Intern', 'Java/Python Developer Intern', 'Database Analyst Intern', 'IT Support Intern', 'Apply via: LinkedIn']
+    edifyInternships: ['Software Developer Intern', 'Web Developer Intern', 'Java/Python Developer Intern', 'Database Analyst Intern', 'IT Support Intern', 'Apply via: LinkedIn'],
+    highlight: 'Industry-relevant curriculum; Focus on software development and application design; Coverage of AI, Machine Learning, Cloud Computing and Cybersecurity; Strong foundation in programming and database management; Practical and research-based learning; ',
+    programOverview: 'The online MCA at Guru Kashi University is a UGC DEB approved two-year postgraduate program. The Government of India has formally recognised that online degrees from UGC DEB approved universities carry the same academic and legal standing as regular campus degrees, making this MCA fully valid for private employment, government roles, and higher studies.\n\nIndustry-relevant curriculum. Focus on software development and application design. Coverage of AI, Machine Learning, Cloud Computing and Cybersecurity. Strong foundation in programming and database management.',
   },
   'guru-nanak-dev-university-online||M.Com': {
     sem1: 'Core M.Com subjects',
@@ -2548,6 +2552,7 @@ export interface SpecSyllabusVariant {
 
 export interface MasterSyllabus extends UniversitySyllabus {
   highlight?: string
+  programOverview?: string
   specSyllabus?: Record<string, SpecSyllabusVariant>
 }
 
@@ -3566,28 +3571,38 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     },
   },
   'charusat-university-online||MCA': {
-    sem1: 'Cloud Computing | Web Development using Open Source Technologies | Enterprise Computing using Java EE | Programming with .NET Architecture | Database Technologies | Academic Speaking and Presentation Skills.',
-    sem2: 'Programming in Python | Advanced Web Designing | Advanced Mobile Programming | Software Engineering with Agile and DevOps | Academic Writing.',
-    sem3: 'Data Analytics | Software Quality Assurance | Green Computing | Minor Project Work.',
-    sem4: 'Dissertation / Project Work - Industrial Training.',
+    sem1: 'Cloud Computing | Web Development using Open Source Technologies | Enterprise Computing using Java EE | Programming with .NET Architecture | Database Technologies | Academic Speaking and Presentation Skills',
+    sem2: 'Programming in Python | Advanced Web Designing | Advanced Mobile Programming | Software Engineering with Agile and DevOps | Academic Writing',
+    sem3: 'Data Analytics | Software Quality Assurance | Green Computing | Minor Project Work',
+    sem4: 'Dissertation / Project Work | Industrial Training',
+    highlight: 'UGC-Entitled Online Degree; NAAC A+ Accredited University; Flexible Learning for Working Professionals; Industry-Relevant Curriculum (Software, DBMS, Cybersecurity); Choice-Based Credit System; LMS with High-Quality Digital Content; Live + Recorded C',
+    programOverview: 'The online MCA at Charotar University of Science & Technology is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-Entitled Online Degree. NAAC A+ Accredited University. Flexible Learning for Working Professionals. Industry-Relevant Curriculum (Software, DBMS, Cybersecurity). Choice-Based Credit System.\n\nThe four semesters build on each other in a logical sequence. Year one covers programming fundamentals, data structures, operating systems, and database systems. Year two brings in more advanced subjects, professional electives, and a final project or internship that puts classroom learning to practical use.',
   },
   'dr-babasaheb-ambedkar-open-university-online||MCA': {
     sem1: 'Data Structure and Algorithms | Relational Database Management System | Web Development Technologies | Operating Systems | Software Engineering and Software Project Management | Programming Skills - I.',
     sem2: 'Object Oriented Concepts and Programming | Web Application Development using PHP | Web Development Technologies with ASP.Net | Computer Networking | Electives-I (Select one: Cloud Infrastructure and Services / Data Analytics using &quot | R&quot | / Applications and Network Security) | Programming S',
     sem3: 'Object Oriented Unified Modeling | Problem Solving using Python | Cross Platform Mobile Application Development | Internet Programming with Java | Electives-II (Select one: Principles of Cyber Security / Artificial Intelligence and Machine Learning / Components and Applications of Internet of Things',
     sem4: 'Internship cum Industrial Project.',
+  
+    highlight: 'Highly Affordable Fee Structure; Pay-As-You-Go Model (Per Year / Per Semester); Separate Low-Cost Fees for Indian (SAARC) Students; Transparent Fee Breakdown (Registration, Exam, Project); Minimal Additional Charges; Suitable for Budget-Conscious Lea',
+    programOverview: 'The online MCA at Dr. Babasaheb Ambedkar Open University is a UGC DEB approved two-year postgraduate program. The Government of India has formally recognised that online degrees from UGC DEB approved universities carry the same academic and legal standing as regular campus degrees, making this MCA fully valid for private employment, government roles, and higher studies.\n\nHighly Affordable Fee Structure. Pay-As-You-Go Model (Per Year / Per Semester). Separate Low-Cost Fees for Indian (SAARC) Students. Transparent Fee Breakdown (Registration, Exam, Project).',
   },
   'maharishi-markandeshwar-university-online||MCA': {
     sem1: 'Data Structure Using C++ | Advanced Database Management System | Operating System | Software Engineering | Business Intelligence and Its Applications | Data Structure Using C++ Lab | Advanced Database Management System Lab | Bridge Course',
     sem2: 'Object Oriented Programming Using Java | Web Technologies | Python Programming | Mobile Programming | Mini Project – 1 | Electives (Node/Angular/React JS)',
     sem3: 'Software Engineering (Advanced) | Cryptography &amp | Network Security | Artificial Intelligence | Mobile Application Development | NoSQL Database | Mini Project – 2',
     sem4: 'Industry Defined Project (Internship) / Major Project',
+  
+    highlight: 'UGC-Approved Deemed-to-be University; NAAC A++ Accredited Institution; Industry-Aligned Curriculum (Programming, AI, Data Science, Cybersecurity); Strong Focus on Practical Learning & IT Skills; Flexible Online Learning for Working Professionals; Liv',
+    programOverview: 'The online MCA at Maharishi Markandeshwar is a UGC DEB approved two-year postgraduate program. The Government of India has formally recognised that online degrees from UGC DEB approved universities carry the same academic and legal standing as regular campus degrees, making this MCA fully valid for private employment, government roles, and higher studies.\n\nUGC-Approved Deemed-to-be University. NAAC A++ Accredited Institution. Industry-Aligned Curriculum (Programming, AI, Data Science, Cybersecurity). Strong Focus on Practical Learning & IT Skills.',
   },
   'university-of-mysore-online||MCA': {
-    sem1: 'Computer Organization and Architecture | Data Structures and Algorithms | Mathematical Foundations of Computer Science | Operating System | Database Management Systems | Data Structures Lab | DBMS Lab.',
-    sem2: 'Object Oriented Programming with Java | Computer Networks | Software Engineering | Python Programming | Analysis and Design of Algorithms | Java Lab | Python Lab.',
-    sem3: 'Web Technologies | Artificial Intelligence | Mobile Application Development | Elective 1 | Elective 2 | Web Technologies Lab | Mobile App Lab.',
-    sem4: 'Cloud Computing | Cyber Security | Major Project / Internship.',
+    sem1: 'Advanced Data Structures and Indexing | Object Oriented Programming with C++ | Advanced Database Management System | Java Programming | Linux Programming | E-commerce and E-governance',
+    sem2: 'Data Communication and Networks | Artificial Intelligence | .Net with C# | Cloud Computing | Data Mining and Data Warehousing | Cryptography and Network Security',
+    sem3: 'Advanced Software Engineering | Python Programming | Machine Learning | Digital Image Processing | Internet of Things',
+    sem4: 'Project Work | Communication Skills and Professional Management',
+    highlight: 'UGC-Entitled & NAAC Accredited Government University; Degree Equivalent to Regular MCA (Valid for Jobs & Higher Studies); One of India’s Oldest Universities (Established 1916); Affordable Fee Structure; Industry-Relevant Curriculum with Core IT Subje',
+    programOverview: 'The online MCA at University of Mysore is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-Entitled & NAAC Accredited Government University. Degree Equivalent to Regular MCA (Valid for Jobs & Higher Studies). One of India’s Oldest Universities (Established 1916). Affordable Fee Structure. Industry-Relevant Curriculum with Core IT Subjects.\n\nThe four semesters build on each other in a logical sequence. Year one covers programming fundamentals, data structures, operating systems, and database systems. Year two brings in more advanced subjects, professional electives, and a final project or internship that puts classroom learning to practical use.',
   },
   'vit-university-online||MCA': {
     sem1: 'Database Management Systems | Computer Architecture and Organization | Mathematical Foundations of Computer Applications | Data Structures and Algorithms | Software Engineering | Database Management Systems Lab | Data Structures and Algorithms Lab',
@@ -3606,6 +3621,9 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem2: 'Design and Analysis of Algorithms | Computer Networks | Operating Systems | Software Engineering | Python Programming | Python Lab.',
     sem3: 'Machine Learning | Cloud Computing | Big Data Analytics | Cryptography and Network Security | Professional Ethics | Mini Project.',
     sem4: 'Major Project.',
+  
+    highlight: 'UGC-DEB approved and NAAC accredited degree; 2-year online MCA program with flexible learning; Specializations in AI & Machine Learning, Data Science, Cloud Computing, Cyber Security and Full Stack Development; Industry-aligned curriculum designed wi',
+    programOverview: 'The online MCA at Shobhit Institute of Engineering & Technology is a UGC DEB approved two-year postgraduate program. The Government of India has formally recognised that online degrees from UGC DEB approved universities carry the same academic and legal standing as regular campus degrees, making this MCA fully valid for private employment, government roles, and higher studies.\n\nUGC-DEB approved and NAAC accredited degree. 2-year online MCA program with flexible learning. Specializations in AI & Machine Learning, Data Science, Cloud Computing, Cyber Security and Full Stack Development. Industry-aligned curriculum designed with latest technologies.\n\nThere are 5 specialisations, including Cloud Computing, AI & Machine Learning, Full Stack Development and more.',
   },
   'andhra-university-online||MCA': {
     sem1: 'IT & Programming with C | Computer Organization',
@@ -3614,22 +3632,44 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem4: 'Seminar on Recent Trends in IT | Major Internship Project',
   },
   'mangalayatan-university-online||MCA': {
-    sem1: 'Programming in C++ | Advanced DBMS | Software Engineering | Business Intelligence & Applications',
-    sem2: 'OOP using Java | Web Technologies | Python Programming | Mobile Programming | Mini Project-1',
-    sem3: 'Software Engineering Advanced | Cryptography & Network Security | Mobile App Development | NoSQL Database | Mini Project-2',
-    sem4: 'Industry Defined Project (Internship)',
+    sem1: 'Data Communication & Computer Networks | Computer Organization & Architecture | Professional Communication | Discrete Mathematics | Accountancy and Financial Management | Programming with C | Programming with C Lab',
+    sem2: 'Web Programming | Advance Cyber Security | Management Information System | Design & Analysis of Algorithm | Data Structure using C++ | DAA and Web Programming Lab | Data Structure using C++ Lab',
+    sem3: 'Artificial Intelligence and Machine Learning | Data Science using R Programming | OOP’s Technologies and Java Programming | Advanced DBMS | Soft Computing Techniques | Java Programming Lab | Data Science using R Programming Lab',
+    sem4: 'Big Data Analytics | Mobile Computing | Natural Language Processing | Python Programming | Quantum Computing | Python Programming Lab | Project',
+    highlight: 'UGC-approved and NAAC A+ accredited university; Flexible online learning with self-paced and recorded lectures; Industry-relevant curriculum focused on programming and IT skills; Strong foundation in software development, databases and networking; Ac',
+    programOverview: 'The online MCA at Mangalayatan University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-approved and NAAC A+ accredited university. Flexible online learning with self-paced and recorded lectures. Industry-relevant curriculum focused on programming and IT skills. Strong foundation in software development, databases and networking. Access to LMS with study materials, PPTs and recorded sessions.\n\nThe four semesters build on each other in a logical sequence. Year one covers programming fundamentals, data structures, operating systems, and database systems. Year two brings in more advanced subjects, professional electives, and a final project or internship that puts classroom learning to practical use.',
   },
   'bharati-vidyapeeth-university-online||MCA': {
-    sem1: 'Applied DBMS | Computer Networks | Java Programming | Computational Statistics | Management Concepts & Applications',
-    sem2: 'Object Oriented Software Engineering | Cloud Computing Concepts | Data Structures using Python | Data Warehousing & Data Mining | Web Supporting Technologies',
-    sem3: 'Software Design Patterns | Artificial Intelligence | Information Security | Specialisation Electives',
-    sem4: 'Seminar on Recent Trends in IT | Major Internship Project (60 days)',
+    sem1: 'Applied Database Management Systems | Computer Networks | Java Programming | Computational Statistics | Management Concepts and Applications | Lab on Applied Database Management Systems | Lab on Java Programming | MOOCs-I | Open Course (Universal Human Values / Cyber Security / Soft Skills)',
+    sem2: 'Object Oriented Software Engineering | Cloud Computing Concepts | Data Structures using Python | Data Warehousing and Data Mining | Web Supporting Technologies | Lab on Data Structures using Python | Minor Project – 1 | MOOCs-II | Open Course (Foreign Language / Digital Technology / Human Psychology at Workplace)',
+    sem3: 'Software Design Patterns | Artificial Intelligence | Information Security | Electives (Virtualization / AWS / Statistical Programming in R / Introduction to Data Science / Linux Programming & Administration / Perl / Ruby / JavaScript / Android / C# / ASP.NET MVC / HTML5 / AJAX / Recommender Systems / Knowledge Management / IoT / Big Data / Hadoop / Cyber Security / Data Management) | Lab on Software Testing | Minor Project – 2 | MOOCs-III | Open Course (Social Change in Technology / Water Management / Economics for IT Industry)',
+    sem4: 'Seminar on Recent Trends in IT | Advanced Electives (Cloud / Data Science / Linux / Open Source / Mobile / .NET / Net-Centric / Information Systems / IoT / Big Data / Cyber Security / Data Management) | Major Internship Project',
+    highlight: 'UGC-Entitled & AICTE Approved Online MCA Program; NAAC A+ Accredited Deemed University with 60+ Years Legacy; Industry-Oriented Curriculum (Software Development, DBMS, Networks, Cybersecurity); Dual Elective System with Multiple Specialization Option',
+    programOverview: 'The online MCA at Bharati Vidyapeeth is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-Entitled & AICTE Approved Online MCA Program. NAAC A+ Accredited Deemed University with 60+ Years Legacy. Industry-Oriented Curriculum (Software Development, DBMS, Networks, Cybersecurity). Dual Elective System with Multiple Specialization Options. Strong Focus on Practical Learning & Hands-On Assignments.\n\nThere are 12 specialisation options, including Cloud Computing, Data Science, Linux, and 9 more. All students start with the same core subjects in semesters one and two, then move into their chosen specialisation from semester three, finishing with advanced electives and a project.',
   },
   'kl-university-online||MCA': {
-    sem1: 'Professional Communication Skills | Computer Networks & Communications | Data Structures & Algorithms | OS Concepts | Database Systems | Computer Organization & Architecture',
-    sem2: 'OOP | Data Analytics | Comprehensive Software Engineering | Professional Elective 1 | Lab sessions',
-    sem3: 'Internship | Web Technologies | Essentials of Research Design | Professional Elective 3 | Term Paper',
-    sem4: 'Open Elective 1 | Major Project',
+    sem1: 'Professional Communication Skills | Computer Networks and Communications | Data Structures and Algorithms | Operating Systems Concepts | Database Systems',
+    sem2: 'Object-Oriented Programming | Data Analytics | Comprehensive Software Engineering | Applied Machine Learning | Pattern Recognition',
+    specSyllabus: {
+      'Artificial Intelligence': {
+        sem3: 'Internship | Web Technologies | Essentials of Research Design | Computer Vision | Applied Deep Learning | Applications of Natural Language Processing | Term Paper',
+        sem4: 'OE 1 | OE 2 | Project',
+      },
+      'Data Science': {
+        sem3: 'Internship | Web Technologies | Essentials of Research Design | Data Visualization Techniques | Statistics for Data Science | Graph and Web Analytics | Term Paper',
+        sem4: 'OE 1 | OE 2 | Project',
+      },
+      'Cloud Technology': {
+        sem3: 'Internship | Web Technologies | Essentials of Research Design | Cloud Architectures | Cloud and Serverless Computing | Cloud Web Services | Term Paper',
+        sem4: 'OE 1 | OE 2 | Project',
+      },
+      'Cybersecurity': {
+        sem3: 'Internship | Web Technologies | Essentials of Research Design | Malware Analysis | Security Governance and Management | Cloud Security | Term Paper',
+        sem4: 'OE 1 | OE 2 | Project',
+      },
+    },
+    highlight: 'UGC Entitled; NAAC A++ Accredited University; Affordable Fee Structure (~₹65,500 Total); Flexible Learning for Working Professionals; Live + Recorded Classes (LMS Access); 650+ Hours of Learning Content; Industry-Oriented Curriculum (Programming, Cyb',
+    programOverview: 'The online MCA at Koneru Lakshmaiah Education Foundation is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC Entitled. NAAC A++ Accredited University. Affordable Fee Structure (~₹65,500 Total). Flexible Learning for Working Professionals. Live + Recorded Classes (LMS Access).\n\nThere are 4 specialisation options, including Artificial Intelligence, Data Science, Cloud Technology, and 1 more. All students start with the same core subjects in semesters one and two, then move into their chosen specialisation from semester three, finishing with advanced electives and a project.\n\nThe full program fee is around Rs. 66,000, payable in semester-wise installments. EMI plans are available for those who prefer to spread payments across months.',
   },
   'assam-don-bosco-university-online||BBA': {
     sem1: 'Management Concepts and Practices | Fundamentals of Financial Accounting | Business Economics | Communicative English | Entrepreneurship Principles and Practices | Understanding India | Environmental Studies',
@@ -3988,7 +4028,630 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem2: 'Poetry-II (Victorian to Modern) | Drama-II | Fiction-I (18th-19th Century) | Literary Criticism & Theory I',
     sem3: 'Fiction-II (Modern) | Literary Criticism & Theory II | Indian Writing in English | Electives',
     sem4: 'American Literature | Research Methodology | Dissertation | Electives',
-  }
+  },
+  'amity-university-online||MCA': {
+    sem1: 'Professional Communication | Core Java | Advanced Database Management Systems | Advanced Software Engineering Principles | Graph Theory and Combinatorics',
+    sem2: 'Research Methodology | Data Structures and Algorithm Design | Cognitive Analytics and Social Skills for Professional | Network Security and Cryptography',
+    specSyllabus: {
+      'general': {
+        sem3: 'Unix/Linux Programming | Seminar (Evaluation) | Cloud Infrastructure and Services | Quantitative Aptitude | Professional Ethics',
+        sem4: 'Augmented Reality and Virtual Reality | Blockchain Technology and Management Business Management | Blockchain Technology and Management Technical Development | Elective Courses General | Machine Learning | Machine Learning and Artificial Intelligence',
+      },
+      'Artificial Intelligence and Machine Learning': {
+        sem3: 'Cloud Infrastructure and Services | Deep Learning & Neural Network | Professional Ethics | Quantitative Aptitude | Seminar (Evaluation) | Social Media & Text Analytics | Unix/Linux Programming',
+        sem4: 'Major Project',
+      },
+      'Financial Technology and AI': {
+        sem3: 'Cloud Infrastructure and Services | Unix/Linux Programming | Seminar (Evaluation) | Quantitative Aptitude | Professional Ethics | Cybersecurity, Cloud Computing and Big Data in FinTech | WealthTech, RegTech and FinTech Innovation',
+        sem4: 'Major Project',
+      },
+      'Cyber Security': {
+        sem3: 'Cloud Infrastructure and Services | UNIX/Linux Programming | Professional Ethics | Quantitative Aptitude | Seminar (Evaluation) | Application Security, Data Security, Malware Analysis | SIEM and Security Operation, UEBA',
+        sem4: 'Major Project',
+      },
+      'Software Engineering': {
+        sem3: 'Cloud Infrastructure and Services | UNIX/Linux Programming | Professional Ethics | Quantitative Aptitude | Seminar (Evaluation) | Getting Cloud Ready for Development | Microservices Master',
+        sem4: 'Major Project',
+      },
+      'Blockchain Technology': {
+        sem3: 'Architecting Blockchain Solutions | Building Ethereum Applications | Professional Ethics | Programming Fundamentals Golang and Solidity | Quantitative Aptitude | Seminar (Evaluation) | Technicalities and Implementation of Blockchain | Unix/Linux Programming',
+        sem4: 'Major Project',
+      },
+    },
+    highlight: 'UGC-entitled and NAAC A+ accredited degree; Globally recognized online program; Industry-aligned curriculum with focus on AI, ML, Data Science and Cybersecurity; Collaborations with industry leaders like HCLTech, Paytm, TCS iON and KPMG; Specializati',
+    programOverview: 'The online MCA at Amity University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-entitled and NAAC A+ accredited degree. Globally recognized online program. Industry-aligned curriculum with focus on AI, ML, Data Science and Cybersecurity. Collaborations with industry leaders like HCLTech, Paytm, TCS iON and KPMG. Specialization programs co-developed with companies like Paytm (FinTech & AI).\n\nThere are 5 specialisation options, including Artificial Intelligence and Machine Learning, Financial Technology and AI, Cyber Security, and 2 more. All students start with the same core subjects in semesters one and two, then move into their chosen specialisation from semester three, finishing with advanced electives and a project.',
+  },
+  'amrita-vishwa-vidyapeetham-online||MCA': {
+    sem1: 'Foundations of Computer Systems | Mathematical Foundations for Computer Applications | Object Oriented Programming using Java | Stream Core 1 | Stream Core 2',
+    sem2: 'Data Structures and Algorithms | Soft Skills | Stream Core Mathematics | Stream Core 3 | Stream Core 4 | Professional Elective 1',
+    specSyllabus: {
+      'Artificial Intelligence and Machine Learning': {
+        sem3: 'Software Project Management | Research Methodology | Complex Network Analysis | Reinforcement Learning | MCA AI & ML Elective II | MCA AI & ML Elective III | Case Study',
+        sem4: 'Capstone Project | MCA AI & ML Elective IV | MCA AI & ML Elective V | Elective Data Engineering for AI | Elective No SQL Databases | Elective Applications of Machine Learning | Elective Computational Statistics | Elective IoT for AI | Elective Computer Vision | Elective Business Analytics and Visualization | Elective Generative AI and LLM',
+      },
+      'Cybersecurity': {
+        sem3: 'Software Project Management | Research Methodology | Blockchain and Decentralized Applications | Cyber Forensics | MCA Cyber Security Elective II | MCA Cyber Security Elective III | Case Study',
+        sem4: 'Capstone Project | MCA Cyber Security Elective IV | MCA Cyber Security Elective II | Cybersecurity Governance Risk and Compliance | Essentials of Cyber Security | Cyber Security Law | System Security | Web Application Security | Cloud and Infrastructure Security | Vulnerability Assessment and Penetration Testing | Zero Trust Architecture',
+      },
+      'General': {
+        sem3: 'Software Project Management | Research Methodology | Stream Core 5 | Stream Core 6 | Professional Elective 2 | Professional Elective 3 | Case Study',
+        sem4: 'Capstone Project | Professional Elective 4 | Professional Elective 5 | Stream Core Mathematics Probability and Statistics | Stream Core Mathematics Computational Linear Algebra | Stream Core Mathematics Mathematical Foundations for Cryptography | Programming Essentials in Python | Advanced Computer Networks | Software Engineering and Design Patterns | Advanced DBMS | Software Testing | Full Stack Development',
+      },
+    },
+    highlight: 'UGC-entitled and AICTE-approved degree; NAAC A++ accredited top-ranked university (NIRF Rank 8); Globally recognized degree with WES recognition (USA & Canada); Specializations in Artificial Intelligence, Cybersecurity and General track; Industry-ali',
+    programOverview: 'The online MCA at Amrita Vishwa Vidyapeetham is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-entitled and AICTE-approved degree. NAAC A++ accredited top-ranked university (NIRF Rank 8). Globally recognized degree with WES recognition (USA & Canada). Specializations in Artificial Intelligence, Cybersecurity and General track. Industry-aligned curriculum with focus on emerging technologies.\n\nStudents pick a specialisation from tracks like Artificial Intelligence and Machine Learning and Cybersecurity. The first two semesters are common for all students, covering foundational computer science subjects. From semester three onwards, coursework becomes specific to the chosen track, with project work and electives rounding out the final semester.',
+  },
+  'assam-don-bosco-university-online||MCA': {
+    sem1: 'Mathematical Foundation for Computer Science | Theory of Computation | Operating Systems | Data Structures and Algorithms | Programming Through Java | Operating Systems Lab | Data Structures and Algorithms Lab | Programming Through Java Lab',
+    sem2: 'Software Engineering | Data Communication and Computer Networks | Advanced Database Management Systems | Internet Technology and Applications | Sensor Networks and Internet of Things | Data Communication and Computer Networks Lab | Internet Technology and Applications Lab | Advanced Database Management Systems Lab | Service Learning/Community Engagement',
+    sem3: 'Cyber Law and IT Security | Machine Learning | Enterprise Resource Planning | Research Methodology and IPR | Machine Learning Lab | Elective I Artificial Intelligence | Elective I Data Science | Elective II Artificial Intelligence | Elective II Data Science',
+    sem4: 'Major Project | Elective III Artificial Intelligence | Elective III Data Science',
+    highlight: 'UGC & AICTE Approved Degree; NAAC A+ Accredited University; Specializations in AI & Machine Learning and Data Science; Industry-Aligned Curriculum; Strong Focus on Programming & IT Skills; Practical Learning with Projects & Labs; Flexible Fully Onlin',
+    programOverview: 'The online MCA at Assam Don Bosco University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC & AICTE Approved Degree. NAAC A+ Accredited University. Specializations in AI & Machine Learning and Data Science. Industry-Aligned Curriculum. Strong Focus on Programming & IT Skills.\n\nStudents pick a specialisation from tracks like Artificial Intelligence & Machine Learning and Data Science. The first two semesters are common for all students, covering foundational computer science subjects. From semester three onwards, coursework becomes specific to the chosen track, with project work and electives rounding out the final semester.',
+  },
+  'bs-abdur-rahman-university-online||MCA': {
+    sem1: 'Mathematical Foundation for Computer Applications | Computer Organization and Operating System | Database Management Systems | Computer Networks | Data Structures and Algorithms using C/C++ | Object Oriented Software Engineering | Data Structures and Algorithms Laboratory using C/C++ | Programming in C and C++ Laboratory | DBMS Laboratory',
+    sem2: 'Programming in Java | Resource Management Techniques | Cloud Computing | Mobile Application Development | Introduction to Data Science | Elective I | Communication Skills Laboratory | Advanced Technology Laboratory (Cloud/Mobile/Data Science) | Programming in Java Laboratory',
+    sem3: 'Python Programming | Block Chain Technologies | Big Data Analytics | Machine Learning Techniques | Advanced Web Development and Services | Elective II | Customer Relationship Management | Python Programming Laboratory | Mini Project',
+    sem4: 'Project',
+    highlight: 'Industry-focused curriculum with emphasis on programming and emerging technologies; Strong foundation in computer applications and software development; Access to virtual labs, live classes and MOOCs; Courses delivered with support from IIT professor',
+    programOverview: 'The online MCA at B.S. Abdur Rahman Institute of Science and Technology is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nIndustry-focused curriculum with emphasis on programming and emerging technologies. Strong foundation in computer applications and software development. Access to virtual labs, live classes and MOOCs. Courses delivered with support from IIT professors under QEEE program. Exposure to real-world projects and practical learning.\n\nThe four semesters build on each other in a logical sequence. Year one covers programming fundamentals, data structures, operating systems, and database systems. Year two brings in more advanced subjects, professional electives, and a final project or internship that puts classroom learning to practical use.',
+  },
+  'centurion-university-online||MCA': {
+    sem1: 'Software Engineering | Programming in C | Data Analysis and Visualization using Python | Relational and Distributed Databases | Customer Experience Design and Programming | Job Readiness',
+    sem2: 'Machine Learning using Python | Cloud Practitioner (AWS) | Cloud Fundamentals (Azure) | Java Programming | Data Structures with Competitive Coding | Information Security (CISCO) | System Administrator (RedHat)',
+    sem3: 'Design and Analysis of Algorithms | Machine Learning for Predictive Analytics | Deep Learning for Image Analytics | Data Analytics using Tableau',
+    sem4: 'Project | Android Development with Kotlin',
+    highlight: 'Strong foundation in programming; Database management; Networking; Web development; Artificial Intelligence; Cloud computing; Data analytics; Cybersecurity; Industry-oriented curriculum; Real-time projects; Practical exposure; Personalized learning p',
+    programOverview: 'The online MCA at Centurion University of Technology and Management is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nStrong foundation in programming. Database management. Web development. Artificial Intelligence. Cloud computing.\n\nThe four semesters build on each other in a logical sequence. Year one covers programming fundamentals, data structures, operating systems, and database systems. Year two brings in more advanced subjects, professional electives, and a final project or internship that puts classroom learning to practical use.',
+  },
+  'chandigarh-university-online||MCA': {
+    sem1: 'Advanced Database Management System | Advanced Computer Networks | Web Programming | Python Programming | Network Security and Cryptography',
+    sem2: 'Advanced Internet Programming | Design and Analysis of Algorithms | Software Testing | Web Application Development | Cyber Security',
+    specSyllabus: {
+      'Cloud Computing': {
+        sem3: 'Introduction to Cloud Computing | Introduction to Amazon Web Services | Introduction to Microsoft Azure services | Cloud Programming | Cloud Virtualization',
+        sem4: 'Introduction to Google Cloud services | Introduction to IBM Cloud Services | Major Project',
+      },
+      'Full Stack Development': {
+        sem3: 'HTML, CSS and Javascript | User Interface, Experience, Design | DevOps -1 (GIT, Jenkins, Docker) | Software Architecture | Prototyping',
+        sem4: 'Web Services- Rest API, ReactJS, NodeJS Development | DevOps-2 (Ansible, Puppet, Nagios) | Major Project',
+      },
+      'Data Analytics': {
+        sem3: 'Data Analytics Using Python | SQL for Data Analytics | Web Analytics | Digital Media Analytics | IOT and Data Analytics',
+        sem4: 'Data Analytics using R | Data Analytics for decision making | Major project',
+      },
+      'Artificial Intelligence and Machine Learning': {
+        sem3: 'Machine Learning in Python | Statistics and Python in Machine Learning | Business Application of Machine Learning | Deep Learning and NLP | Web, Social Analytics and Visualization',
+        sem4: 'Big data hadoop | IOT cloud and watson analytics | Major project',
+      },
+    },
+    highlight: 'Industry-aligned curriculum; Focus on cloud computing and emerging technologies; Training in programming languages like Python, Java, PHP; Web development skills including HTML, CSS, JavaScript; Exposure to data analytics and modern IT tools; Flexibl',
+    programOverview: 'The online MCA at Chandigarh University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nIndustry-aligned curriculum. Focus on cloud computing and emerging technologies. Training in programming languages like Python, Java, PHP. Web development skills including HTML, CSS, JavaScript. Exposure to data analytics and modern IT tools.\n\nThere are 4 specialisation options, including Cloud Computing, Full Stack Development, Data Analytics, and 1 more. All students start with the same core subjects in semesters one and two, then move into their chosen specialisation from semester three, finishing with advanced electives and a project.',
+  },
+  'christ-university-online||MCA': {
+    sem1: 'Mathematics for Computer Science | Computer Organization and Architecture | Problem Solving Techniques using C | Advanced Operating System | Advanced Database Management Systems',
+    sem2: 'Data Communication and Computer Networks | Java Programming | Data Structures and Algorithms | Python Programming (Swayam Course) | Full Stack Development | Artificial Intelligence and Machine Learning',
+    sem3: 'Cloud Computing | Software Engineering | Research Methodology | Elective 1 (AI for Healthcare / AI for Security / Quantum Computing) | Elective 2 (Applied Statistics using R / Digital Forensics / Game Programming) | Elective 3 (Business Intelligence / Network Security and Cryptography / Robotics Process Automation)',
+    sem4: 'Internet of Things | Software Project Management | Elective 1 (Natural Language Processing / Blockchain Technology / Augmented and Virtual Reality) | Elective 2 (Neural Networks and Deep Learning / Cyber Security and Incident Response Management / Industrial IoT) | Elective 3 (Big Data Analytics / Predictive Analytics / Generative AI) | Elective 4 (Accounting and Finance Management / Econometrics / Computational Social Science / Cognitive Psychology) | Major Project',
+    highlight: 'AICTE-Approved Online MCA Program; NAAC A+ Accredited Deemed-to-be University; Strong Focus on Industry-Aligned Curriculum (AI, Cloud, Web, Mobile Development); Hands-On Learning with Real-World Projects & System Design; Covers Core + Emerging Techno',
+    programOverview: 'The online MCA at Christ is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nAICTE-Approved Online MCA Program. NAAC A+ Accredited Deemed-to-be University. Strong Focus on Industry-Aligned Curriculum (AI, Cloud, Web, Mobile Development). Hands-On Learning with Real-World Projects & System Design. Covers Core + Emerging Technologies (ML, Data, Cloud).\n\nThe four semesters build on each other in a logical sequence. Year one covers programming fundamentals, data structures, operating systems, and database systems. Year two brings in more advanced subjects, professional electives, and a final project or internship that puts classroom learning to practical use.',
+  },
+  'datta-meghe-university-online||MCA': {
+    sem1: 'Mathematical Logic, Combination & Graph Theory | Advanced Software Engineering | UI Frameworks | Front End Development & Programming | GEC (Database Design Development) | SEC (Front End Development & Programming Lab) | SEC (Database Design Development Lab) | AECC (Business Communication)',
+    sem2: 'Applied Machine Learning | Statistical Data Analytics with R | DSE (Reinforcement Learning / Develop Enterprise Application) | DSE (Deep Learning / Application Integration) | GEC (Software Testing and Quality Assurance) | SEC (Machine Learning Lab) | SEC (R Programming Lab) | AECC (Research Methodology with Writing Research Paper)',
+    sem3: 'AI Implementation Capstone',
+    sem4: 'In-Plant Project Work and Seminar / Company Internship',
+    highlight: 'UGC-Approved Deemed-to-be University with NAAC Accreditation; 2-Year Online MCA with Flexible Learning Model; Industry-Relevant Curriculum Focused on Software Development & IT Applications; Strong Emphasis on Practical Learning & Real-World Projects;',
+    programOverview: 'The online MCA at Datta Meghe Institute of Higher Education and Research is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-Approved Deemed-to-be University with NAAC Accreditation. 2-Year Online MCA with Flexible Learning Model. Industry-Relevant Curriculum Focused on Software Development & IT Applications. Strong Emphasis on Practical Learning & Real-World Projects. Capstone Project & Final Internship for Hands-On Experience.\n\nThe four semesters build on each other in a logical sequence. Year one covers programming fundamentals, data structures, operating systems, and database systems. Year two brings in more advanced subjects, professional electives, and a final project or internship that puts classroom learning to practical use.',
+  },
+  'dayananda-sagar-university-online||MCA': {
+    sem1: 'Advanced Data Structures and Algorithms | Advanced Python Programming | Advanced Operating Systems | Relational Database Management Systems | Mathematical Methods | Advanced Data Structures and Algorithms Lab | Advanced Python Programming Lab | RDBMS Lab',
+    sem2: 'Machine Learning with Python | Advanced Java Programming | Design and Analysis of Algorithms | Full Stack Development | Computer Communication Network | Advanced Java Programming Lab | Machine Learning with Python Lab | Full Stack Development Lab | Elective-I (Cloud Computing Technologies / Big Data Analytics / Data Science / Quantum Algorithms / Blockchain Technologies)',
+    sem3: 'Cyber Security | Embedded Systems and Internet of Things | Elective-II (Cloud Security & Infrastructure / Data Analytics & Visualization / Artificial Intelligence / Quantum Information / Research Methodology & IPR) | Elective-III (IoT / Data Mining / Deep Learning / Quantum Error Correction / Mobile Application Development Techniques) | Elective-IV (IoT / Data Mining / Deep Learning / Quantum Error Correction / Mobile Application Development Techniques) | Design and Analysis of Algorithms Lab | Mini Project',
+    sem4: 'General Elective (Business Data Analytics / Industrial Safety / Operations Research) | Project',
+    highlight: 'Industry-Aligned Curriculum with Specializations in AI, Data Science, Cloud, Blockchain & Quantum Computing; Strong Focus on Practical Learning with Cloud Labs & Capstone Projects; Live + Self-Paced Learning (Recorded Lectures + Webinars); Hands-On E',
+    programOverview: 'The online MCA at Dayananda Sagar University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nIndustry-Aligned Curriculum with Specializations in AI, Data Science, Cloud, Blockchain & Quantum Computing. Strong Focus on Practical Learning with Cloud Labs & Capstone Projects. Live + Self-Paced Learning (Recorded Lectures + Webinars). Hands-On Experience with Real-World Projects & Coding. Emphasis on Emerging Technologies (AI, ML, IoT, Cybersecurity).\n\nThere are 15 specialisation options, including Cloud Computing Technologies, Data Science, Blockchain Technologies, and 12 more. All students start with the same core subjects in semesters one and two, then move into their chosen specialisation from semester three, finishing with advanced electives and a project.',
+  },
+  'desh-bhagat-university-online||MCA': {
+    sem1: 'Emerging Technologies | Emerging Technologies Lab | Relational Database Management System | Relational Database Management System Lab | Computer Oriented Numerical and Statistical Methods | Software Engineering | Capstone Project',
+    sem2: 'C# Programming | C# Programming Lab | Design and Analysis Of Algorithm | Design and Analysis Of Algorithm Lab | Artificial Intelligence | Digital Marketing | Capstone Project | Data Warehousing and Data Mining',
+    sem3: 'Java Programming | Java Programming Lab | Python | Python Lab | Big Data Analytics | Cloud Computing | Cloud Computing Lab | Capstone Project | Internet of Things | Machine Learning',
+    sem4: 'Industrial Training',
+    highlight: 'UGC-approved and NAAC A+ accredited degree; Fully online and flexible learning; Study anytime anywhere; Industry-aligned curriculum; Specializations in AI, Data Science and Cyber Security; Strong foundation in programming and software development; Co',
+    programOverview: 'The online MCA at Desh Bhagat University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-approved and NAAC A+ accredited degree. Fully online and flexible learning. Study anytime anywhere. Industry-aligned curriculum. Specializations in AI, Data Science and Cyber Security.\n\nStudents pick a specialisation from tracks like Cyber Security and AI and Data Science. The first two semesters are common for all students, covering foundational computer science subjects. From semester three onwards, coursework becomes specific to the chosen track, with project work and electives rounding out the final semester.',
+  },
+  'dr-dy-patil-vidyapeeth-online||MCA': {
+    sem1: 'Computer Organisation and Architecture | Data Structure Using C | Object Oriented Programming Using C++ | Discrete Mathematics and Combinatorics | Lab - OOPS Using C++ | Business Communication',
+    sem2: 'Database Management System | Full Stack Web Development | Software Engineering | Data Communication and Computer Networks | Lab - DBMS | Lab - Full Stack Web Development',
+    sem3: 'Core & Advanced Java | Python Programming | Advanced Cloud Computing | Basics of Artificial Intelligence & Machine Learning | Lab - Java & Python Programming | Environment Awareness and Disaster Management',
+    sem4: 'Business Analytics | Basics of Blockchain Technology | Cyber Laws & Hacking | Research Project',
+    highlight: 'UGC & AICTE Approved Online Degree with NAAC A++ Accreditation; Top Ranked University with 40+ Years of Academic Excellence; Industry-Aligned Curriculum with AI, Cloud, Blockchain & Emerging Tech; 25+ AI Tools Integrated into Learning; 100% Placement',
+    programOverview: 'The online MCA at Dr. D.Y. Patil Vidyapeeth (Pune) is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC & AICTE Approved Online Degree with NAAC A++ Accreditation. Top Ranked University with 40+ Years of Academic Excellence. Industry-Aligned Curriculum with AI, Cloud, Blockchain & Emerging Tech. 25+ AI Tools Integrated into Learning. 100% Placement Assistance with 300+ Hiring Partners.\n\nThe four semesters build on each other in a logical sequence. Year one covers programming fundamentals, data structures, operating systems, and database systems. Year two brings in more advanced subjects, professional electives, and a final project or internship that puts classroom learning to practical use.',
+  },
+  'gla-university-online||MCA': {
+    sem1: 'Fundamentals of Computer Science | Software Engineering and Testing | Problem Solving Using Python | Web Technology | Database Management System | Professional Communication I | Problem Solving Using Python Lab | Web Technology Lab | Database Management System Lab | Soft Skills I',
+    sem2: 'Problem Solving Using Java | Applied Data Structure and Applications | Machine Learning | Computer Networks | Professional Communication II | Ethics & Values | Problem Solving Using Java Lab | Applied Data Structure and Applications Lab using C/C++ | Mini Project | Soft Skills II',
+    sem3: 'Cloud Computing | .Net Framework using C# | Mobile Application Development I | Digital and Social Media Marketing | Full Stack I | Soft Skills III | Environmental Studies | Project I | Cloud Computing Lab | Mobile Application Development I Lab | Digital and Social Media Marketing Lab | Full Stack I Lab | .Net Framework Lab',
+    sem4: 'DevOps | Mobile Application Development II | Full Stack Development II | Search Engine Optimization | Soft Skills IV | Project II | DevOps Lab | Mobile Application Development II Lab | Full Stack Development II Lab | Search Engine Optimization Lab',
+    highlight: 'UGC-entitled and NAAC A+ accredited program; Industry-aligned curriculum with focus on emerging technologies like Cloud Computing and Machine Learning; Strong emphasis on practical learning with virtual labs and hands-on projects; Certified MOOC-base',
+    programOverview: 'The online MCA at G.L.A. University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-entitled and NAAC A+ accredited program. Industry-aligned curriculum with focus on emerging technologies like Cloud Computing and Machine Learning. Strong emphasis on practical learning with virtual labs and hands-on projects. Certified MOOC-based content integrated into curriculum. Continuous assessment through assignments, MCQs, viva and capstone projects.\n\nThe four semesters build on each other in a logical sequence. Year one covers programming fundamentals, data structures, operating systems, and database systems. Year two brings in more advanced subjects, professional electives, and a final project or internship that puts classroom learning to practical use.',
+  },
+  'galgotias-university-online||MCA': {
+    sem1: 'Problem Solving and Computer Programming | Computational Mathematics and Statistics | Database Management System | Digital Computer Organization | English Proficiency and Aptitude Building | Quantitative Aptitude and Reasoning',
+    sem2: 'Object Oriented Programming with Java | Machine Learning with Python | Data Structures | Verbal and Quantitative Reasoning | Data Communication & Networking | Operating Systems | Training I | Elective I Internet of Things | Elective I Data Science with R',
+    sem3: 'Object Oriented Programming with Java | Machine Learning with Python | Data Structures | Verbal and Quantitative Reasoning | Data Communication & Networking | Operating Systems | Training I | Elective I Internet of Things | Elective I Data Science with R',
+    sem4: 'Major Project',
+    highlight: 'UGC-DEB and AICTE approved online degree; NAAC A+ accredited university; 2-year postgraduate MCA program; Flexible online learning with live and recorded classes; Industry-aligned curriculum with focus on real-world applications; Strong foundation in',
+    programOverview: 'The online MCA at Galgotias University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-DEB and AICTE approved online degree. NAAC A+ accredited university. 2-year postgraduate MCA program. Flexible online learning with live and recorded classes. Industry-aligned curriculum with focus on real-world applications.\n\nThe four semesters build on each other in a logical sequence. Year one covers programming fundamentals, data structures, operating systems, and database systems. Year two brings in more advanced subjects, professional electives, and a final project or internship that puts classroom learning to practical use.',
+  },
+  'guru-nanak-dev-university-online||MCA': {
+    sem1: 'Design And Analysis Of Algorithms | System Software | System Simulation | Design of Programming Languages | Programming Lab-I | Secure Software Development',
+    sem2: 'Open Source Software | Distributed Systems | Web Technologies | Microprocessor & It\'s Applications | Programming Lab-II | Information Systems and Security',
+    sem3: 'Advanced Software Engineering | Soft Computing | Data Warehousing and Data Mining | Advanced Computer Architecture | Cloud Native Application development | Programming Lab-III',
+    sem4: 'Major Project/Industrial Training/Dissertation',
+    highlight: 'UGC-approved online degree; Flexible self-paced learning; Learn anytime anywhere; Industry-relevant curriculum; Hands-on projects and practical assignments; Expert faculty guidance; Strong focus on programming and software development; Coverage of da',
+    programOverview: 'The online MCA at Guru Nanak Dev University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-approved online degree. Flexible self-paced learning. Learn anytime anywhere. Industry-relevant curriculum. Hands-on projects and practical assignments.\n\nThe four semesters build on each other in a logical sequence. Year one covers programming fundamentals, data structures, operating systems, and database systems. Year two brings in more advanced subjects, professional electives, and a final project or internship that puts classroom learning to practical use.',
+  },
+  'hindustan-institute-technology-online||MCA': {
+    sem1: 'Advanced Data Structures & Algorithms using Python | Statistics for Computer Science | Database Technology | Object Oriented Programming Using JAVA | Computer Networks | Practical Software Design Project | Software Design Project',
+    sem2: 'Web Design and Development | Data Warehousing and Data Mining | Machine Learning | Software Engineering | Practical Software Design Project | Web Programming Lab | Elective I Web Analytics | Elective I Big Data Analytics',
+    sem3: 'Software Testing and Quality Assurance | DevOps | MOOC | Presentation Skills and Academic Writing | Project Phase I | Elective II R Programming | Elective II Big Data Analytics | Elective III Semantic Web | Elective III Data Visualization Techniques and Tools',
+    sem4: 'Personality Development | Project Work Phase II | Elective IV Data Classification Methods and Evaluation | Elective IV Principles of Deep Learning',
+    highlight: 'UGC-entitled and AICTE-approved degree; 2-year postgraduate MCA program; Industry-integrated curriculum with focus on modern software development; Strong foundation in programming, databases and computer networks; Emphasis on emerging technologies li',
+    programOverview: 'The online MCA at Hindustan Institute of Technology and Science (HITS) is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-entitled and AICTE-approved degree. 2-year postgraduate MCA program. Industry-integrated curriculum with focus on modern software development. Strong foundation in programming, databases and computer networks. Emphasis on emerging technologies like Big Data, Cloud Computing and Python.\n\nStudents pick a specialisation from tracks like Computer Science and IT, Cyber Security & Cloud Computing, and Data Science. The first two semesters are common for all students, covering foundational computer science subjects. From semester three onwards, coursework becomes specific to the chosen track, with project work and electives rounding out the final semester.',
+  },
+  'jain-university-online||MCA': {
+    sem1: 'Mathematical Foundations for Computer Science | Computing Concepts and Problem Solving using C | Operating Systems | Data Structures | Problem Solving using C Lab | Data Structures Lab | Generative AI Applications in Modern Computing',
+    sem2: 'Advanced Database Systems | Java Programming | Web Technologies | Cloud Computing Foundations | Advanced Database Systems Lab | Java Programming Lab | Environmental, Social, and Governance (ESG) in IT',
+    specSyllabus: {
+      'DevOps': {
+        sem3: 'Artificial Intelligence and Machine Learning | Python Programming | Infrastructure as Code & Automation | AI & Machine Learning Lab | Python Programming Lab | Open Elective',
+        sem4: 'Site Reliability Engineering | DevSecOps | Microservices & Containerization | DevOps in AI & Big Data | Project',
+      },
+      'Natural Language Processing & Large Language Models Development': {
+        sem3: 'Artificial Intelligence and Machine Learning | Python Programming | Transformer Models & Attention Mechanisms | AI & Machine Learning Lab | Python Programming Lab | Open Elective',
+        sem4: 'Large-Scale AI Model Deployment | Multimodal AI | Reinforcement Learning | Fine-Tuning & Optimization | Project',
+      },
+      'Data Analytics': {
+        sem3: 'Artificial Intelligence and Machine Learning | Python Programming | Computer Vision | AI & Machine Learning Lab | Python Programming Lab | Open Elective',
+        sem4: 'Natural Language Processing | Predictive Analytics using Machine Learning | Deep Learning | Big Data Hadoop | Project',
+      },
+      'Cyber Security': {
+        sem3: 'Artificial Intelligence and Machine Learning | Python Programming | Cyber Threat Intelligence | AI & Machine Learning Lab | Python Programming Lab | Open Elective',
+        sem4: 'Ethical Hacking | Defensive Cyber Security Technologies | Vulnerability Analysis | Penetration Testing | Project',
+      },
+      'Full Stack Development': {
+        sem3: 'Application Development using Python | Web Technologies | React JS | Advanced Database Systems | Mobile Application Development | Applied Learning | Application Development using Python Lab | Web Technologies Lab',
+        sem4: 'Software Engineering & Testing | Web APIs | Network Security & Cryptography | DevOps | Mastering Professional and Academic Writing | Capstone Project',
+      },
+      'Cloud Computing': {
+        sem3: 'Application Development using Python | Web Technologies | Cloud Managed Services | Containers and Microservices | Big Data Management and Analytics | Applied Learning | Application Development using Python Lab | Web Technologies Lab',
+        sem4: 'CI/CD and DevOps | Cloud Security and Migration | Microsoft Azure Essentials | Google Cloud Platform Essentials | Mastering Professional and Academic Writing | Capstone Project',
+      },
+      'Data Science': {
+        sem3: 'Data Visualization | Web Technologies | Predictive Analytics using Machine Learning | Statistical Methods in Decision Making | Advanced Database Systems | Applied Learning | Predictive Analytics using Machine Learning Lab | Web Technologies Lab',
+        sem4: 'Data Mining | Time Series Analysis | Natural Language Processing and GenAI | Applied Analytics - Marketing, Web, Social Media | Mastering Professional and Academic Writing | Capstone Project',
+      },
+      'Artificial Intelligence': {
+        sem3: 'Predictive Analytics using Machine Learning | Web Technologies | Advanced Database Systems | Recommendation Systems | Advanced Machine Learning | Applied Learning | Predictive Analytics using Machine Learning Lab | Web Technologies Lab',
+        sem4: 'Model Deployment and AI in Practice | Neural Networks and Deep Learning | Computer Vision | Natural Language Processing and GenAI | Mastering Professional and Academic Writing | Capstone Project',
+      },
+      'Computer Science and Information Technology': {
+        sem3: 'Artificial Intelligence and Machine Learning | Python Programming | Software Testing | AI & Machine Learning Lab | Python Programming Lab | Open Elective',
+        sem4: 'IT Project Management | Big Data Analytics | Low-Code/No-Code Application Development | Data Visualization | Project',
+      },
+    },
+    highlight: 'Dual Qualification with Global Certifications (BCS, IoA UK); 2000+ Hiring Partners with Strong Placement Ecosystem; 65% Avg Salary Hike & 78% Career Success Rate; Technology-Driven Learning (AI Tools, Simulation-Based Learning); 70+ Electives & Multi',
+    programOverview: 'The online MCA at Jain is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nDual Qualification with Global Certifications (BCS, IoA UK). 2000+ Hiring Partners with Strong Placement Ecosystem. 65% Avg Salary Hike & 78% Career Success Rate. Technology-Driven Learning (AI Tools, Simulation-Based Learning). 70+ Electives & Multiple Specializations (AI, Data Science, Cloud, Cybersecurity).\n\nThere are 9 specialisation options, including DevOps, Natural Language Processing & Large Language Models Development, Data Analytics, and 6 more. All students start with the same core subjects in semesters one and two, then move into their chosen specialisation from semester three, finishing with advanced electives and a project.',
+  },
+  'jaipur-national-university-online||MCA': {
+    sem1: 'Object Oriented Programming with C++ | Database Management System | Computer Graphics | Information and Network Security | Management Process and Organizational Behavior with Environmental Ethics | Advance Data Structure and Algorithm Analysis | Understanding Prescription, Doses and Dose Forms | Dining Etiquettes | Basics of Photography | Crime and Society | Industrial Mathematics | Object Oriented Programming with C++ and Java Lab | Database Management System Lab | Computer Graphics Lab | Advance Data Structure and Algorithm Analysis Lab',
+    sem2: 'Theory of Computation | Software Engineering | Web Technology | Computer Based Optimization Techniques | Microprocessor & Assembly Language Programming | E-Commerce and Digital Marketing | Introduction to Epidemiology | Basics of Baking | Videography | Sociology of Health | Nanotechnology | Software Engineering Lab | Web Technology Lab | Microprocessor Lab | Seminar',
+    sem3: 'Compiler Design | Advanced Database Concepts | Internet of Things | Android Programming | .NET Framework and ASP.NET | Introduction to Artificial Intelligence and Machine Learning | Big Data Analytics | Mobile Computing | Cloud Computing | Human Computer Interaction | Public Health Pharmacy | Rajasthan and Punjabi Cuisine | Script Writing for Film | Sociology of Media | Research Methodology | Advanced Database Concepts Lab | Internet of Things Lab | Android Programming Lab | .NET Lab | Artificial Intelligence Lab using Python | Communication & Soft Skills | Summer Training Presentation',
+    sem4: 'Industrial Training | Research Paper Publication | Calculus of Variation and Special Functions | Differential Equations | Real Analysis | C Programming | C Programming Lab',
+    highlight: 'UGC-approved online degree program; Flexible online learning with semester system; Industry-relevant curriculum with practical exposure; Focus on programming, AI, ML and cybersecurity; Strong foundation in computer science and software development; H',
+    programOverview: 'The online MCA at Jaipur National University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-approved online degree program. Flexible online learning with semester system. Industry-relevant curriculum with practical exposure. Focus on programming, AI, ML and cybersecurity. Strong foundation in computer science and software development.\n\nThe four semesters build on each other in a logical sequence. Year one covers programming fundamentals, data structures, operating systems, and database systems. Year two brings in more advanced subjects, professional electives, and a final project or internship that puts classroom learning to practical use.',
+  },
+  'kurukshetra-university-online||MCA': {
+    sem1: 'Operating System & Linux | Data Structures | Client Side Web Technology | Programming in Java | Computer Fundamentals and Problem Solving Through C | Seminar | Practical 1 | Practical 2 | Practical 3',
+    sem2: 'Database Management Systems | Server Side Web Technology | Artificial Intelligence | Mathematical Foundations for Computer Science | Computer Network | Internship | Constitutional, Human and Moral Values, and IPR | Practical 4 | Practical 5 | Practical 6',
+    sem3: 'Machine Learning in Python | Design and Analysis of Algorithms | Ethical Hacking | Data Analytics using Excel | Big Data & Pattern Recognition | Practical 7 | Practical 8',
+    sem4: 'Blockchain Technology | Principles of Programming Languages | Object Oriented Design and UML | Cyber Security Fundamentals | Dissertation / Project',
+    highlight: 'UGC-Entitled & NAAC A++ Accredited University; AICTE Approved Online MCA; Strong Government University Legacy (Established 1956); Industry-Relevant Curriculum (AI, Data, Programming); Live + Recorded Interactive Classes; Flexible Self-Paced Learning ',
+    programOverview: 'The online MCA at Kurukshetra University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-Entitled & NAAC A++ Accredited University. AICTE Approved Online MCA. Strong Government University Legacy (Established 1956). Industry-Relevant Curriculum (AI, Data, Programming). Live + Recorded Interactive Classes.\n\nThe four semesters build on each other in a logical sequence. Year one covers programming fundamentals, data structures, operating systems, and database systems. Year two brings in more advanced subjects, professional electives, and a final project or internship that puts classroom learning to practical use.',
+  },
+  'lovely-professional-university-online||MCA': {
+    sem1: 'Software Engineering Practices | Object Oriented Programming using C++ | Data Warehousing and Data Mining | Linux and Shell Scripting | Data Communication and Networking | Skill Enhancement Course I | Fundamentals of Computer and C Programming | Elementary Mathematics',
+    sem2: 'Programming in Java | Advanced Data Structures | Introduction to Big Data | Cloud Computing | Mathematical Foundation for Computer Science | Web Technologies | Skill Enhancement Course II',
+    specSyllabus: {
+      'AR/ VR (Game Development)': {
+        sem3: 'Programming in Python | Skill Enhancement Course III | Game Development using Unity Engine | Unreal Programming using C++ | Generic Elective I | Generic Elective II | Seminar on Summer Training | One course from GE Basket 1',
+        sem4: 'Skill Enhancement Course IV | Game AI & Reinforcement Learning | Virtual Reality and Augmented Reality in Game Development | Generic Elective III | Generic Elective IV | Project Work',
+      },
+      'Machine Learning & AI': {
+        sem3: 'Programming in Python | Skill Enhancement Course III | Fundamentals of Machine Learning | Natural Language Processing | Generic Elective I | Generic Elective II | Seminar on Summer Training | One course from GE Basket 1',
+        sem4: 'Skill Enhancement Course IV | Deep Learning | Advance Data Visualization | Generic Elective III | Generic Elective IV | Project Work',
+      },
+      'Data Science': {
+        sem3: 'Programming in Python | Skill Enhancement Course III | Probability and Statistics | Data Science Tool Box | Generic Elective I | Generic Elective II | Seminar on Summer Training | One course from GE Basket 1',
+        sem4: 'Skill Enhancement Course IV | Advance Data Visualization | Machine Learning | Generic Elective III | Generic Elective IV | Project Work',
+      },
+      'Cybersecurity': {
+        sem3: 'Programming in Python | Skill Enhancement Course III | Network Administration | Cyber Forensic | Generic Elective I | Generic Elective II | Seminar on Summer Training | One course from GE Basket 1',
+        sem4: 'Skill Enhancement Course IV | Securing Networks and its Infrastructure | Vulnerability Assessment and Penetration Testing | Generic Elective III | Generic Elective IV | Project Work',
+      },
+      'Full Stack Web Development': {
+        sem3: 'Programming in Python | Skill Enhancement Course III | Front End Web Developer | Web Development using ReactJS | Generic Elective I | Generic Elective II | Seminar on Summer Training | One course from GE Basket 1',
+        sem4: 'Skill Enhancement Course IV | Advanced Web Development | Web Development in Python using Django | Generic Elective III | Generic Elective IV | Project Work',
+      },
+    },
+    highlight: 'Industry-oriented curriculum designed by experts; Highly qualified faculty; Advanced LMS with interactive features; Mobile learning support; Master classes by industry experts; Guest lectures for real-world insights; Placement assistance and career s',
+    programOverview: 'The online MCA at Lovely Professional University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nIndustry-oriented curriculum designed by experts. Highly qualified faculty. Advanced LMS with interactive features. Mobile learning support. Master classes by industry experts.\n\nThere are 5 specialisation options, including AR/ VR (Game Development), Machine Learning & AI, Data Science, and 2 more. All students start with the same core subjects in semesters one and two, then move into their chosen specialisation from semester three, finishing with advanced electives and a project.',
+  },
+  'manav-rachna-online||MCA': {
+    sem1: 'Research Innovation Catalyst-I | Linear Algebra & Statistical Techniques | Data Structures | Object Oriented Programming in Java | Python Programming | Data Structures Lab | Object Oriented Programming in Java Lab | Python Programming Lab | Placement Competency Enhancement-I | Fundamentals of Computer Programming | Elements of Mathematics',
+    sem2: 'Research Innovation Catalyst-II | Data Communications | Analysis & Design of Algorithm | Introduction to Artificial Intelligence | Vocational Training / Project | R Programming Lab | Android Application Development Lab | Placement Competency Enhancement-II',
+    sem3: 'Research Innovation Catalyst-III | Data Mining and Warehousing | Software Engineering & Testing | Operations Research | Big Data Analytics',
+    sem4: 'Introduction to .NET | Advanced Java | Introduction to .NET Lab | Advanced Java Lab',
+    highlight: 'UGC & AICTE Approved Online MCA; NAAC A++ Accredited University; Multiple Specializations (AI & Data Science, Cybersecurity, Cloud, Full Stack); Industry Collaboration with Microsoft; Flexible Learning (Live Weekend Classes + 24x7 LMS); Strong Focus ',
+    programOverview: 'The online MCA at Manav Rachna International Institute of Research and Studies is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC & AICTE Approved Online MCA. NAAC A++ Accredited University. Multiple Specializations (AI & Data Science, Cybersecurity, Cloud, Full Stack). Industry Collaboration with Microsoft. Flexible Learning (Live Weekend Classes + 24x7 LMS).\n\nThere are 4 specialisation options, including Cyber Security and Block Chain, Artificial Intelligence and Data Science, Cloud Computing and Internet of Things, and 1 more. All students start with the same core subjects in semesters one and two, then move into their chosen specialisation from semester three, finishing with advanced electives and a project.',
+  },
+  'manipal-academy-higher-education-online||MCA': {
+    sem1: 'Mathematics for Computing | Business Communication | Problem Solving using C | Operating Systems | Software Engineering',
+    sem2: 'Database Management with Structured Query Language | Data Analytics and Visualization with Python | Object Oriented Programming with Java | Data Structures and Algorithms',
+    specSyllabus: {
+      'Artificial Intelligence & Machine Learning': {
+        sem3: 'Computer Networks | Web Technologies | Machine Learning Methods | Big Data Analytics | Research Methodology',
+        sem4: 'Project | AI & ML | Cloud Computing | Cybersecurity | Full Stack Development | Electives/Specializations (Deep Learning Principles and Applications, Artificial Intelligence, Big Data Analytics, Computer Vision)',
+      },
+      'Cloud Computing': {
+        sem3: 'Computer Networks | Web Technologies | Machine Learning Methods | Big Data Analytics | Research Methodology',
+        sem4: 'Project | AI & ML | Cloud Computing | Cybersecurity | Full Stack Development | Electives/Specializations (Cloud Architecture and Management, Cloud DevOps, Cloud Application and Database with Java, Cloud Security Essentials)',
+      },
+      'Cybersecurity': {
+        sem3: 'Computer Networks | Web Technologies | Machine Learning Methods | Big Data Analytics | Research Methodology',
+        sem4: 'Project | AI & ML | Cloud Computing | Cybersecurity | Full Stack Development | Electives/Specializations (Basics in Information Security, Forensic Investigation, Cyber Crime Intervention, Cloud Security Essentials)',
+      },
+      'Full Stack Development': {
+        sem3: 'Computer Networks | Web Technologies | Machine Learning Methods | Big Data Analytics | Research Methodology',
+        sem4: 'Project | AI & ML | Cloud Computing | Cybersecurity | Full Stack Development | Electives/Specializations (Back-end Web Development, Front-end Web Development, Human-Computer Interaction, Cloud Security Essentials)',
+      },
+    },
+    highlight: 'Institution of Eminence & NAAC A++ Accredited University; NIRF Top-Ranked University in India; Designed Specifically for Working Professionals; Specializations in AI & ML, Cybersecurity, Cloud Computing, Full Stack; Advanced LMS with Live + Recorded ',
+    programOverview: 'The online MCA at Manipal Academy of Higher Education is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nInstitution of Eminence & NAAC A++ Accredited University. NIRF Top-Ranked University in India. Designed Specifically for Working Professionals. Specializations in AI & ML, Cybersecurity, Cloud Computing, Full Stack. Advanced LMS with Live + Recorded Classes & Discussion Forums.\n\nThere are 4 specialisation options, including Artificial Intelligence & Machine Learning, Cloud Computing, Cybersecurity, and 1 more. All students start with the same core subjects in semesters one and two, then move into their chosen specialisation from semester three, finishing with advanced electives and a project.',
+  },
+  'manipal-university-jaipur-online||MCA': {
+    sem1: 'Fundamentals of Computers and IT | Fundamentals of Mathematics | Discrete Mathematics and Graph Theory | Python Programming | Programming and Problem Solving in C | Relational Database Management System | Data Visualisation | Relational Database Management Systems Lab | Programming and Problem Solving in C Lab | Python Programming Lab',
+    sem2: 'Computer Networks and Protocols | Object Oriented Programming using Java | Operating System | Data Structure and Algorithms | Computer Architecture | Object Oriented Programming using Java Lab | Data Structure and Algorithms Lab | Elective (Artificial Intelligence)',
+    specSyllabus: {
+      'AI & Data Science': {
+        sem3: 'Unix and Shell Programming | Web Technology | Software Engineering and Project Management | Unix and Shell Programming Lab | Web Technology Lab | Elective (Categorical Data Analysis and Generalized Linear Models / Deep Learning and Text Mining)',
+        sem4: 'Mobile Application Development | Project Work | Elective (Applied Data Analytics)',
+      },
+      'Comprehensive Emerging Technologies': {
+        sem3: 'Unix and Shell Programming | Web Technology | Software Engineering and Project Management | Unix and Shell Programming Lab | Web Technology Lab | Elective (Data Mining Techniques / Blockchain Technologies)',
+        sem4: 'Mobile Application Development | Project Work | Elective (Big Data Analytics and Business Intelligence)',
+      },
+      'Artificial Intelligence & Machine Learning': {
+        sem3: 'Unix and Shell Programming | Web Technology | Software Engineering and Project Management | Unix and Shell Programming Lab | Web Technology Lab | Elective (Introduction to Machine Learning / Fundamentals of Unsupervised Learning)',
+        sem4: 'Mobile Application Development | Project Work | Elective (AI in Project Management)',
+      },
+      'Cloud Computing': {
+        sem3: 'Unix and Shell Programming | Web Technology | Software Engineering and Project Management | Unix and Shell Programming Lab | Web Technology Lab | Elective (Cloud Architecture and Services / Google Cloud Essentials)',
+        sem4: 'Mobile Application Development | Project Work | Elective (Cloud Application Development)',
+      },
+      'Cybersecurity': {
+        sem3: 'Unix and Shell Programming | Web Technology | Software Engineering and Project Management | Unix and Shell Programming Lab | Web Technology Lab | Elective (Cyber Law and Ethics / Ethical Hacking)',
+        sem4: 'Mobile Application Development | Project Work | Elective (Cryptography and Network Security)',
+      },
+    },
+    highlight: 'NAAC A+ Accredited University with Strong NIRF Ranking; Industry-Aligned Curriculum with Practical Labs & Projects; Specializations in AI, Data Science, Cloud & Cybersecurity; Access to Coursera Certifications (₹3,999) & Microsoft Skill Badge; Advanc',
+    programOverview: 'The online MCA at Manipal University Jaipur is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nNAAC A+ Accredited University with Strong NIRF Ranking. Industry-Aligned Curriculum with Practical Labs & Projects. Specializations in AI, Data Science, Cloud & Cybersecurity. Access to Coursera Certifications (₹3,999) & Microsoft Skill Badge. Advanced Virtual Programming Lab & Digital Library.\n\nThere are 5 specialisation options, including AI & Data Science, Comprehensive Emerging Technologies, Artificial Intelligence & Machine Learning, and 2 more. All students start with the same core subjects in semesters one and two, then move into their chosen specialisation from semester three, finishing with advanced electives and a project.',
+  },
+  'marwadi-university-online||MCA': {
+    sem1: 'Problem Solving using Python | Techniques Object Oriented | Practicals based on Python | Computer Networks Virtualization | Analysis and Design using UML | MOOC - Web Technologies (HTML, CSS, PHP)',
+    sem2: 'Artificial Intelligence | Data Science | Practicals based on Data Science using Python | Blockchain Technology | Elective - Unstructured Database Big Data Technologies | MOOC - Web Development using Python Framework',
+    sem3: 'Software Engineering | Cryptography | Artificial Intelligence | Mini Project 2 | Elective (Big Data Tools / Machine Vision / Machine Learning / ASP.Net Programming) | MOOC (Cloud Computing) | Corporate Etiquettes',
+    sem4: 'Final Project / Dissertation',
+    highlight: 'UGC-Entitled & AICTE-Approved Degree; NAAC A+ Accredited University; Flexible Learning for Working Professionals; Live Weekend Classes; Unlimited Access to Recorded Lectures & Study Materials; Learn at Your Own Pace with Structured Milestones; Indust',
+    programOverview: 'The online MCA at Marwadi University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-Entitled & AICTE-Approved Degree. NAAC A+ Accredited University. Flexible Learning for Working Professionals. Live Weekend Classes. Unlimited Access to Recorded Lectures & Study Materials.\n\nThe four semesters build on each other in a logical sequence. Year one covers programming fundamentals, data structures, operating systems, and database systems. Year two brings in more advanced subjects, professional electives, and a final project or internship that puts classroom learning to practical use.',
+  },
+  'mody-university-online||MCA': {
+    sem1: 'Object Oriented Programming Using C++ | Computer Architecture | Discrete Mathematics | Enterprise Resource Planning | Database Management System | C++ Programming Practicals | DBMS Practical',
+    sem2: 'Operating System | Java Programming | Software Engineering | Data Warehousing and Mining | Advance Data Structure | Java Programming Practicals | Advance Data Structure Practical',
+    specSyllabus: {
+      'Artificial Intelligence and Machine Learning': {
+        sem3: 'Visualization with R Programming | Data Communication and Network | Python Programming | Research Methodology | R Programming Practical | Python Programming Practicals | Elective (AI & ML) Artificial Intelligence and Machine Learning',
+        sem4: 'Data Science and Analytics | Mobile Application Design and Development | Project | Mobile Application Design and Development Practicals | Elective (AI & ML) Natural Language Processing',
+      },
+      'Cloud Computing': {
+        sem3: 'Visualization with R Programming | Data Communication and Network | Python Programming | Research Methodology | R Programming Practical | Python Programming Practicals | Elective (Cloud Computing) Cloud Computing',
+        sem4: 'Data Science and Analytics | Mobile Application Design and Development | Project | Mobile Application Design and Development Practicals | Elective (Cloud Computing) Cloud Security Management',
+      },
+      'Internet of Things (IoT)': {
+        sem3: 'Visualization with R Programming | Data Communication and Network | Python Programming | Research Methodology | R Programming Practical | Python Programming Practicals | Elective (IoT) Wireless Sensor Networks & IoT Standards',
+        sem4: 'Data Science and Analytics | Mobile Application Design and Development | Project | Mobile Application Design and Development Practicals | Elective (IoT) Descriptive Analytics for IoT',
+      },
+      'Web Technology': {
+        sem3: 'Visualization with R Programming | Data Communication and Network | Python Programming | Research Methodology | R Programming Practical | Python Programming Practicals | Elective (Web Technology) Web Development (C#)',
+        sem4: 'Data Science and Analytics | Mobile Application Design and Development | Project | Mobile Application Design and Development Practicals | Elective (Web Technology) Full Stack Development',
+      },
+    },
+    highlight: 'Industry-aligned curriculum focused on emerging technologies; Strong foundation in programming with C++, Java and Python; Coverage of Data Science, Artificial Intelligence, Machine Learning and Cybersecurity; Focus on software development and IT mana',
+    programOverview: 'The online MCA at Mody University of Science and Technology is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nIndustry-aligned curriculum focused on emerging technologies. Strong foundation in programming with C++, Java and Python. Coverage of Data Science, Artificial Intelligence, Machine Learning and Cybersecurity. Focus on software development and IT management. Hands-on learning through virtual labs and real-world projects.\n\nThere are 4 specialisation options, including Artificial Intelligence and Machine Learning, Cloud Computing, Internet of Things (IoT), and 1 more. All students start with the same core subjects in semesters one and two, then move into their chosen specialisation from semester three, finishing with advanced electives and a project.',
+  },
+  'noida-international-university-online||MCA': {
+    sem1: 'Fundamental of Computers & Emerging Technologies | Problem Solving using C | Principles of Management & Communication | Discrete Mathematics | Computer Organization & Architecture | Problem Solving using C Lab | Computer Organization & Architecture Lab | Professional Communication Lab',
+    sem2: 'Web Technologies | Object Oriented Programming Using Java | Data Structures and Algorithms | Data Base Management System | Web Technologies Lab | Object Oriented Programming Using Java Lab | Data Structures and Algorithms Lab | DBMS Lab | Fundamental of AI and Problem Solving',
+    sem3: 'Unix & Shell Programming | Computer Network & Protocols | Software Engineering & Project Management | Unix & Shell Programming Lab | Software Engineering Lab | Introduction to Machine Learning | Fundamentals of Unsupervised Learning',
+    sem4: 'Banking and Insurance Management | Project Work | Artificial Intelligence in Project Management',
+    highlight: 'UGC-entitled and NAAC A+ accredited degree; 100% online learning with live and recorded lectures; Industry-aligned curriculum covering programming, AI, data science and cybersecurity; Strong focus on software development, cloud computing and database',
+    programOverview: 'The online MCA at Noida International University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-entitled and NAAC A+ accredited degree. 100% online learning with live and recorded lectures. Industry-aligned curriculum covering programming, AI, data science and cybersecurity. Strong focus on software development, cloud computing and database management. Hands-on learning through projects and virtual labs.\n\nThe program offers a specialisation in AI & Data Science. Semesters one and two build a shared foundation in programming, databases, and networks, then semester three and four focus on advanced domain subjects and a capstone project.',
+  },
+  'srm-institute-science-technology-online||MCA': {
+    sem1: 'Programming using Java | Operating System | Database Technology | Advanced Web Application Development | Cyber Security | Software Engineering | IT Infrastructure Management | Career Advancement I | Mathematical Foundation',
+    sem2: 'Python Programming | Computer Networks | Optimization Techniques | Android Applications Development | Software Testing | Data Analysis Using R | Career Advancement II',
+    specSyllabus: {
+      'General': {
+        sem3: 'Object Oriented Analysis and Design | Artificial Intelligence and Machine Learning | Cloud Computing | Internet of Things (IoT) | Internship | Mini Project Work | Software Project Management | Data Warehouse and Data Mining | Organizational Behavior and Professional Ethics | Career Advancement III',
+        sem4: 'Project Work',
+      },
+      'Generative AI': {
+        sem3: 'Object Oriented Analysis and Design | Internship | Mini Project Work | Career Advancement III | Large Language Models in Generative AI | Building Conversational AI for Human Resources | Advanced Techniques in Generative AI | AI Data Analytics and Predictive Modeling',
+        sem4: 'Project Work',
+      },
+    },
+    highlight: 'UGC-entitled online degree program; 2-year MCA with flexible online learning; Industry-aligned curriculum covering latest technologies; Specializations in Data Science & Machine Learning, Cyber Security & Cyber Forensics and AI & Generative AI; Stron',
+    programOverview: 'The online MCA at S.R.M. Institute of Sciences and Technology is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-entitled online degree program. 2-year MCA with flexible online learning. Industry-aligned curriculum covering latest technologies. Specializations in Data Science & Machine Learning, Cyber Security & Cyber Forensics and AI & Generative AI. Strong foundation in programming, data structures and software development.\n\nThe program offers a specialisation in Generative AI. Semesters one and two build a shared foundation in programming, databases, and networks, then semester three and four focus on advanced domain subjects and a capstone project.',
+  },
+  'savitribai-phule-pune-university-online||MCA': {
+    sem1: 'Programming from First Principles | Processor Architecture and Design | Computational Mathematics | Persistent Data Management | Elective (Foundations of Artificial Intelligence) | Research Methodology',
+    sem2: 'Data Organization for Program Construction | Software Subsystem for Hardware Virtualization | Computational Thinking | Foundations of Software Development | Elective 1 | Elective 2 | Foundations of Data Analytics',
+    sem3: 'Communication Protocols | Software Component Engineering | Elective 1 | Elective 2 | Elective 3 | Research Project',
+    sem4: 'Internship | Online Elective 1 (MOOC 1) | Online Elective 2 (MOOC 2)',
+    highlight: 'UGC-Recognized Government University with Strong Academic Legacy; NAAC A+ Accredited University; 2-Year Online MCA Program (4 Semesters); Industry-Oriented Curriculum Covering Software Development, Data & Systems; Flexible Online Learning via Centre ',
+    programOverview: 'The online MCA at Savitribai Phule Pune University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-Recognized Government University with Strong Academic Legacy. NAAC A+ Accredited University. 2-Year Online MCA Program (4 Semesters). Industry-Oriented Curriculum Covering Software Development, Data & Systems. Flexible Online Learning via Centre for Distance & Online Education.\n\nThe four semesters build on each other in a logical sequence. Year one covers programming fundamentals, data structures, operating systems, and database systems. Year two brings in more advanced subjects, professional electives, and a final project or internship that puts classroom learning to practical use.',
+  },
+  'shanmugha-arts-science-technology-research-online||MCA': {
+    sem1: 'Statistical Methods | Data Structures (Semi Theory & Semi Practical) | Problem Solving & Programming in C | Database Management Systems | Soft Skills I',
+    sem2: 'Design & Analysis of Algorithms (Semi Theory & Semi Practical) | Operating System Concepts & Principles (Semi Theory & Semi Practical) | Java Programming | Computer Networks (Semi Theory & Semi Practical) | Soft Skills II',
+    specSyllabus: {
+      'Full Stack Development': {
+        sem3: 'Software Engineering (Semi Theory & Semi Practical) | Python Programming with Web Frameworks | Web Technology (Semi Theory & Semi Practical) | Low Code Programming with Oracle | Software Design & Testing',
+        sem4: 'Natural Language Processing | Cloud Computing | Design Thinking | Full Stack Web Application Development | Project & Viva Voce',
+      },
+      'Artificial Intelligence & Data Science': {
+        sem3: 'Software Engineering (Semi Theory & Semi Practical) | Python Programming with Web Frameworks | Web Technology (Semi Theory & Semi Practical) | Fundamentals of AI & Data Science | Machine Learning Techniques',
+        sem4: 'Natural Language Processing | Cloud Computing | Predictive Analytics & Data Visualization | Data Analytics for Health Care Applications | Project & Viva Voce',
+      },
+      'Cyber Security': {
+        sem3: 'Software Engineering (Semi Theory & Semi Practical) | Python Programming with Web Frameworks | Web Technology (Semi Theory & Semi Practical) | Cryptography & Network Security | Cyber Security & Ethical Hacking',
+        sem4: 'Natural Language Processing | Cloud Computing | Machine Learning for Cyber Security | Enterprise Block Chain Framework | Project & Viva Voce',
+      },
+    },
+    highlight: 'Recognized online MCA from a top-ranked NAAC A++ university; Industry-aligned curriculum with focus on AI, Data Science and Cybersecurity; Hands-on project-based learning with real-world applications; Strong foundation in programming, algorithms and ',
+    programOverview: 'The online MCA at Shanmugha Arts, Science, Technology & Research Academy is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nRecognized online MCA from a top-ranked NAAC A++ university. Industry-aligned curriculum with focus on AI, Data Science and Cybersecurity. Hands-on project-based learning with real-world applications. Strong foundation in programming, algorithms and software engineering. Exposure to emerging technologies like cloud computing, NLP and machine learning.\n\nStudents pick a specialisation from tracks like Full Stack Development, Artificial Intelligence & Data Science, and Cyber Security. The first two semesters are common for all students, covering foundational computer science subjects. From semester three onwards, coursework becomes specific to the chosen track, with project work and electives rounding out the final semester.',
+  },
+  'sharda-university-online||MCA': {
+    sem1: 'Mathematical Foundation for Computer Application | C Programming and File Handling | Operating System and Unix Shell Programming | Computer Architecture and Organization | Data Communication and Computer Networks | Introduction to Computers & Technology',
+    sem2: 'Data Structures with C | Database Management System | Software Engineering | Java Programming | Logic Building and Soft Skills',
+    specSyllabus: {
+      'Data Science': {
+        sem3: 'Application Development Using Python | Design and Analysis of Algorithms | Statistical Methods in Decision Making | Data Visualization | Introduction to Data Science',
+        sem4: 'IT Project Management | Artificial Intelligence and Machine Learning | SQL for Data Science | Time Series Analytics | Project',
+      },
+      'Computer Science and Information Technology': {
+        sem3: 'Application Development Using Python | Design and Analysis of Algorithms | Cryptography and Network Security | Cloud Infrastructure and Service | Object Oriented Modelling and Design Pattern',
+        sem4: 'IT Project Management | C# with ASP.NET | Introduction to R Programming | Internet of Thing | Project',
+      },
+      'Augmented Reality and Virtual Reality with Artificial Intelligence': {
+        sem3: 'IT Project Management | C# with ASP.NET | Introduction to R Programming | Internet of Thing | Project',
+        sem4: 'Strategic & Industry Projects | IT Project Management | Applied Generative AI and Model Safety | Time Series Analysis | Neural Networks and Deep Learning | Capstone Industry Project (with Leverage Online)',
+      },
+    },
+    highlight: 'UGC-recognized and globally accepted online degree; Flexible online learning with self-paced and live sessions; Industry-aligned curriculum focused on real-world IT skills; Strong foundation in programming, databases, networking and software engineer',
+    programOverview: 'The online MCA at Sharda University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-recognized and globally accepted online degree. Flexible online learning with self-paced and live sessions. Industry-aligned curriculum focused on real-world IT skills. Strong foundation in programming, databases, networking and software engineering. Exposure to emerging technologies like AI, Data Science, Cloud Computing and Cybersecurity.\n\nStudents pick a specialisation from tracks like Data Science, Computer Science and Information Technology, and Augmented Reality and Virtual Reality with Artificial Intelligence. The first two semesters are common for all students, covering foundational computer science subjects. From semester three onwards, coursework becomes specific to the chosen track, with project work and electives rounding out the final semester.',
+  },
+  'shoolini-university-online||MCA': {
+    sem1: 'Functional English-1 | Problem Solving with C | Computational Mathematics | Applied Database Management System | Open Elective | Saying it with Presentations | Principles of Management',
+    sem2: 'Web Technology | Functional English-2 | Data Structure and Algorithm (C) | Python Application Programming | Open Elective | Digital Marketing for Practitioners | Entrepreneurship',
+    specSyllabus: {
+      'AI Specialization': {
+        sem3: 'Java Programming | Object-Oriented Programming with C++ | Operating System Concepts | Open Elective | Artificial Intelligence | Generative AI-1',
+        sem4: 'Project Work | Computer Networking | Open Elective | Machine Learning in Python | Generative AI-2',
+      },
+      'Data Science': {
+        sem3: 'Java Programming | Object-Oriented Programming with C++ | Operating System Concepts | Open Elective | Data Analytics using Python | Data Science',
+        sem4: 'Project Work | Computer Networking | Open Elective | Digital Media Analytics | IoT and Data Science',
+      },
+      'Full Stack': {
+        sem3: 'Java Programming | Object-Oriented Programming with C++ | Operating System Concepts | Open Elective | UX/UI | DevOps',
+        sem4: 'Project Work | Computer Networking | Open Elective | Software Architecture | Prototyping',
+      },
+    },
+    highlight: 'UGC-Entitled Online Degree; India’s Top-Ranked Private University (QS & THE Rankings); Specializations in AI & ML, Data Science & Full Stack; Mentorship by Top Industry Experts (McKinsey, HSBC, IITs, IIMs); Pay-After-Placement Option Available; 250+ ',
+    programOverview: 'The online MCA at Shoolini University of Biotechnology and Management Sciences is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-Entitled Online Degree. India’s Top-Ranked Private University (QS & THE Rankings). Specializations in AI & ML, Data Science & Full Stack. Mentorship by Top Industry Experts (McKinsey, HSBC, IITs, IIMs). Pay-After-Placement Option Available.\n\nStudents pick a specialisation from tracks like AI Specialization, Data Science, and Full Stack. The first two semesters are common for all students, covering foundational computer science subjects. From semester three onwards, coursework becomes specific to the chosen track, with project work and electives rounding out the final semester.',
+  },
+  'shree-guru-gobind-singh-tricentenary-university-online||MCA': {
+    sem1: 'Operating System | Python Programming | Advanced Database Management System | Fundamentals of Artificial Intelligence and Machine Learning | Mathematical & Statistical Foundations | Operating System Lab | Python Programming Lab | Advanced Database Management System Lab | Fundamentals of Artificial Intelligence and Machine Learning Lab | Professional Communication | Bridge Course (Only for Non-Computer Background) | Programming in C',
+    sem2: 'Cloud Computing | Advanced Data Structures | Object-Oriented Programming with Java | Software Engineering & Project Management | Data Warehousing & Data Mining | Critical Reasoning & Systems Thinking | Applied AI',
+    specSyllabus: {
+      'Artificial Intelligence & Machine Learning': {
+        sem3: 'Full Stack Development | Design & Analysis of Algorithms | Distributed Systems | Generative AI Fundamentals | Fundamentals of Deep Learning | Internship',
+        sem4: 'Mobile App Development | Research Methodology & Academic Writing | Capstone Project | Ethical AI & Responsible Computing | Natural Language Processing | Project',
+      },
+      'Data Science': {
+        sem3: 'Full Stack Development | Design & Analysis of Algorithms | Distributed Systems | Generative AI | Data Exploration & Preparation | Internship',
+        sem4: 'Mobile App Development | Research Methodology & Academic Writing | Capstone Project | Data Visualization | Big Data | Project',
+      },
+      'Cyber Security': {
+        sem3: 'Full Stack Development | Design & Analysis of Algorithms | Distributed Systems | Generative AI | Cryptography & Network Security | Internship',
+        sem4: 'Mobile App Development | Research Methodology & Academic Writing | Capstone Project | Cyber Forensics | Vulnerability Assessment & Penetration Testing | Project',
+      },
+      'Blockchain Technology': {
+        sem3: 'Full Stack Development | Design & Analysis of Algorithms | Distributed Systems | Generative AI | Web Development for Blockchain Application | Internship',
+        sem4: 'Mobile App Development | Research Methodology & Academic Writing | Capstone Project | Smart Contract and Solidity Programming | Cyber Security with Blockchain | Project',
+      },
+    },
+    highlight: 'UGC-Entitled & NAAC A+ Accredited University; Industry-Aligned Curriculum (AI, Data Science, Cloud, Cybersecurity); Strong Focus on Programming & Software Development Skills; Fully Online Flexible Learning (Anytime, Anywhere); Affordable Fee Structur',
+    programOverview: 'The online MCA at Shree Guru Gobind Singh Tricentenary University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-Entitled & NAAC A+ Accredited University. Industry-Aligned Curriculum (AI, Data Science, Cloud, Cybersecurity). Strong Focus on Programming & Software Development Skills. Fully Online Flexible Learning (Anytime, Anywhere). Affordable Fee Structure (₹24,500 per Semester).\n\nThere are 4 specialisation options, including Artificial Intelligence & Machine Learning, Data Science, Cyber Security, and 1 more. All students start with the same core subjects in semesters one and two, then move into their chosen specialisation from semester three, finishing with advanced electives and a project.',
+  },
+  'shri-ramasamy-memorial-university-online||MCA': {
+    sem1: 'Basic Mathematics | Fundamentals of Computer | Programming in Java | Operating System | Database Technology | Computer Networks | Programming in Java Practical | Operating System and Database Technology Practical',
+    sem2: 'Python Programming | Advanced Data Structure and Algorithms | Advanced Web Application Development | Optimization Techniques | Advanced Data Structure and Algorithms Practical | Advanced Web Application Development Practical',
+    specSyllabus: {
+      'Data Science and Machine Learning': {
+        sem3: 'Artificial Intelligence and Machine Learning | IT Infrastructure Management | Android Applications Development | Internet of Things (IoT) | Mini Project | Specialization Data Science and Machine Learning | Data Analysis using R | Machine Learning for Data Science',
+        sem4: 'MEAN Stack Web Development | Software Engineering and Project Management | Project Work | Specialization Data Science and Machine Learning | Big Data Analytics | Data Visualization',
+      },
+      'Cyber Security & Cyber Forensics': {
+        sem3: 'Artificial Intelligence and Machine Learning | IT Infrastructure Management | Android Applications Development | Internet of Things (IoT) | Mini Project | Specialization Cyber Security and Cyber Forensics | Cyber Security | Vulnerability Assessment and Penetration Testing',
+        sem4: 'MEAN Stack Web Development | Software Engineering and Project Management | Project Work | Specialization Cyber Security and Cyber Forensics | Principles of Digital Forensics | Security and Privacy in Blockchain Systems',
+      },
+      'Artificial Intelligence & Gen AI': {
+        sem3: 'Artificial Intelligence and Machine Learning | IT Infrastructure Management | Android Applications Development | Internet of Things (IoT) | Mini Project | Specialization AI & Gen AI | Introduction to Generative AI | Natural Language Processing',
+        sem4: 'MEAN Stack Web Development | Software Engineering and Project Management | Project Work | Specialization AI & Gen AI | Large Language Models and Applications | GenAI Application Development',
+      },
+    },
+    highlight: 'UGC-entitled online degree; Industry-relevant curriculum with focus on emerging technologies; Strong foundation in programming and software development; Access to Coursera for global certifications; Exposure to AI, Machine Learning, Data Science and ',
+    programOverview: 'The online MCA at Shri Ramasamy Memorial University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-entitled online degree. Industry-relevant curriculum with focus on emerging technologies. Strong foundation in programming and software development. Access to Coursera for global certifications. Exposure to AI, Machine Learning, Data Science and Cloud Computing.\n\nStudents pick a specialisation from tracks like Data Science and Machine Learning, Cyber Security & Cyber Forensics, and Artificial Intelligence & Gen AI. The first two semesters are common for all students, covering foundational computer science subjects. From semester three onwards, coursework becomes specific to the chosen track, with project work and electives rounding out the final semester.',
+  },
+  'sikkim-manipal-university-online||MCA': {
+    sem1: 'Computational Mathematics | Java Programming | Operating Systems | Database Management System | Database Management System Lab | Java Programming Lab | Fundamentals of Computers & IT | Fundamental of Mathematics',
+    sem2: 'Python Programming | Software Engineering and Unified Modelling Language | Computer Organization and Architecture | Data Structure and Algorithm | Data Structure and Algorithm Lab | Python Programming Lab',
+    sem3: '.NET Framework | Computer Network | IT Laws and Practices | .NET Framework Lab | Computer Network Lab | Elective (Data Warehousing and Data Mining / Cloud Computing)',
+    sem4: 'Mobile Application Development | Angular JS, React JS, and VUE JS | Project | Elective (Machine Learning / Distributed System and Grid Computing)',
+    highlight: 'UGC-Entitled & NAAC A+ Accredited University; Affordable Online MCA Program (₹27,500 per Semester); AI-Enabled Learning Management System; Industry-Aligned Curriculum (AI, Programming, Deep Learning); Live + Recorded Classes with Discussion Forums; O',
+    programOverview: 'The online MCA at Sikkim Manipal University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-Entitled & NAAC A+ Accredited University. Affordable Online MCA Program (₹27,500 per Semester). AI-Enabled Learning Management System. Industry-Aligned Curriculum (AI, Programming, Deep Learning). Live + Recorded Classes with Discussion Forums.\n\nThe four semesters build on each other in a logical sequence. Year one covers programming fundamentals, data structures, operating systems, and database systems. Year two brings in more advanced subjects, professional electives, and a final project or internship that puts classroom learning to practical use.',
+  },
+  'upes-online||MCA': {
+    sem1: 'Advance Python Programming | Data Base Management Systems | Discrete Mathematics | Object Oriented Programming using C++ | Advance Data Structures | AI for everyone',
+    sem2: 'Web Technologies | Operating Systems | Design and Analysis of Algorithm | Java Programming | Applied Machine Learning | Computer Graphics',
+    specSyllabus: {
+      'Artificial Intelligence and Machine Learning': {
+        sem3: 'Object-Oriented Analysis and Design Using UML | Computer Networks | Advanced Java Programming | Software Engineering and Project Management | AR/VR Development | Deep Learning',
+        sem4: 'Project Dissertation | Android Application Development | Pattern and Visual Recognition | Computational Linguistics and Natural Language Processing',
+      },
+      'Cyber Security and Forensics': {
+        sem3: 'Object-Oriented Analysis and Design Using UML | Computer Networks | Advanced Java Programming | Software Engineering and Project Management | AR/VR Development | Digital Forensics I',
+        sem4: 'Project Dissertation | Android Application Development | Digital Forensics II | Ethical Hacking & Penetration Testing',
+      },
+      'Data Science': {
+        sem3: 'Object-Oriented Analysis and Design Using UML | Computer Networks | Advanced Java Programming | Software Engineering and Project Management | AR/VR Development | Machine Learning and Deep Learning',
+        sem4: 'Project Dissertation | Android Application Development | Cloud Computing for Data Science | Use of Cloud Platforms for Data Processing Analysis and Storage | Generative Artificial Intelligence',
+      },
+    },
+    highlight: '2-year online MCA program with specialization in AI & Machine Learning; Strong focus on deep learning, NLP, computer vision and AI model deployment; Industry-aligned curriculum designed with academicians and industry experts; Hands-on learning throug',
+    programOverview: 'The online MCA at University of Petroleum and Energy is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\n2-year online MCA program with specialization in AI & Machine Learning. Strong focus on deep learning, NLP, computer vision and AI model deployment. Industry-aligned curriculum designed with academicians and industry experts. Hands-on learning through real-world projects and case studies. Mandatory internship for practical industry exposure.\n\nStudents pick a specialisation from tracks like Artificial Intelligence and Machine Learning, Cyber Security and Forensics, and Data Science. The first two semesters are common for all students, covering foundational computer science subjects. From semester three onwards, coursework becomes specific to the chosen track, with project work and electives rounding out the final semester.',
+  },
+  'uttaranchal-university-online||MCA': {
+    sem1: 'OOPS using C++ | Operating System | Computer Organization and Architecture | Discrete Mathematics | Financial Accounting',
+    sem2: 'Python Programming | Data Structure | Software Engineering | Data Communication and Networking | Theory of Computation',
+    sem3: 'Database Management System | Web Technology | Information Security | Artificial Intelligence | Soft Computing',
+    sem4: 'Capstone Project',
+    highlight: 'UGC-entitled and NAAC A+ accredited degree; 2-year MCA program with flexible online learning; Live and recorded classes with 8–10 hours weekly commitment; Industry-oriented curriculum focused on programming, software development and IT skills; Strong',
+    programOverview: 'The online MCA at Uttaranchal University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-entitled and NAAC A+ accredited degree. 2-year MCA program with flexible online learning. Live and recorded classes with 8,10 hours weekly commitment. Industry-oriented curriculum focused on programming, software development and IT skills. Strong foundation in database management, networking and information security.\n\nThe four semesters build on each other in a logical sequence. Year one covers programming fundamentals, data structures, operating systems, and database systems. Year two brings in more advanced subjects, professional electives, and a final project or internship that puts classroom learning to practical use.',
+  },
+  'vit-vellore-online||MCA': {
+    sem1: 'Discrete Mathematical Structures | Python Programming | Data Structure and Algorithms | Operating Systems | Database Systems',
+    sem2: 'Statistics for Data Science | Software Engineering | Computer Networks | Programming in Java | Elective I Artificial Intelligence',
+    sem3: 'Elective II | Elective III | Elective IV | Elective V | Elective VI',
+    sem4: 'Elective VII | Seminar | Project Work',
+    highlight: 'UGC-entitled and AICTE-approved MCA degree; Degree equivalent to on-campus program; 2-year online program with flexible learning; Live online classes by VIT faculty and industry experts; Recorded lectures for self-paced learning; Industry-aligned cur',
+    programOverview: 'The online MCA at Vellore Institute of Technology is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-entitled and AICTE-approved MCA degree. Degree equivalent to on-campus program. 2-year online program with flexible learning. Live online classes by VIT faculty and industry experts. Recorded lectures for self-paced learning.\n\nThere are 11 specialisation options, including Artificial Intelligence, Machine Learning, Cyber Security, and 8 more. All students start with the same core subjects in semesters one and two, then move into their chosen specialisation from semester three, finishing with advanced electives and a project.',
+  },
+  'vignan-university-online||MCA': {
+    sem1: 'Probability and Statistics | C & Data Structures | Operating System | Computer Architecture and Organization | Web Technologies',
+    sem2: 'Design and Analysis of Algorithms | Database Management System | Software Engineering | Java Programming | Python Programming',
+    specSyllabus: {
+      'Computer Science and IT': {
+        sem3: 'Computer Networks | Big Data Analytics | Data Visualization | Machine Learning | Cloud Computing',
+        sem4: 'Cryptography and Network Security | Blockchain Technology | Cyber Security | Project',
+      },
+      'Data Science': {
+        sem3: 'Computer Networks | Big Data Analytics | Data Visualization | Machine Learning | SQL for Data Science',
+        sem4: 'Cryptography and Network Security | Reinforcement Learning | Natural Language Processing | Project',
+      },
+    },
+    highlight: 'Strong Foundation in Computer Science & IT; In-depth Programming & Software Skills; Practical & Lab-Based Learning; Industry-Relevant Curriculum; Focus on Core IT Skill Development; Project-Based Learning Approach; Advanced Certifications (Cloud Comp',
+    programOverview: 'The online MCA at Vignan\'s is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nStrong Foundation in Computer Science & IT. In-depth Programming & Software Skills. Practical & Lab-Based Learning. Industry-Relevant Curriculum. Focus on Core IT Skill Development.\n\nStudents pick a specialisation from tracks like Computer Science and IT and Data Science. The first two semesters are common for all students, covering foundational computer science subjects. From semester three onwards, coursework becomes specific to the chosen track, with project work and electives rounding out the final semester.',
+  },
+  'vtu-online||MCA': {
+    sem1: 'Mathematical Foundation for Computer Application | Operating System | Database Management System | Programming Using C | C Programming Lab | Database Management Lab',
+    sem2: 'Data Structure and Algorithms | Object Oriented Programming Using Python | Software Engineering | Computer Networks | Data Structure Lab | Python Lab',
+    specSyllabus: {
+      'General': {
+        sem3: 'Web Programming | Object Oriented Programming Using Java | Analysis & Design of Algorithm | Elective-I | Data Analytics Using Python | Introduction to Data Mining | Cryptography and Network Security | Web Programming Lab | Programming using Java Lab',
+        sem4: 'Elective-II | Cloud Computing | Big Data Analytics | Cyber Security Governance, Risk & Compliance | Elective-III | Artificial Intelligence | Blockchain Technology | Machine Learning | Major Project',
+      },
+      'Artificial Intelligence & Data Science': {
+        sem3: 'Artificial Intelligence | Data Analytics Using Python | Elective-I | Big Data Analytics | Data Mining | Linear Algebra and Applications | Elective-II | Data Visualization | Agile Technologies | Natural Language Processing | Artificial Intelligence Lab | Data Analytics Lab',
+        sem4: 'Deep Learning | Elective-III | Data and Web Mining | Predictive Analysis | Artificial Intelligence in Cyber Security | Major Project',
+      },
+      'Cyber Security & Cloud Computing': {
+        sem3: 'Ethical Hacking | Cloud Web Services | Elective-I | Principles of Virtualization | Storage and Data Centre | Cloud Computing | Elective-II | Blockchain Technology | AI in Cyber Security | Cyber Security Governance, Risk & Compliance | Ethical Hacking Lab | Cloud Web Services Lab',
+        sem4: 'Digital Forensics | Elective-III | Cyber Security and Cyber Law | Cryptography and Network Security | Python Scripting for Security | Major Project',
+      },
+    },
+    highlight: 'UGC-Approved & Government University (Karnataka); Industry-Focused Curriculum (AI, Cloud, Cybersecurity, Data Science); Strong Focus on Practical Learning & Real-World Projects; Flexible Online Learning (Live + Recorded Classes); Designed for Working',
+    programOverview: 'The online MCA at Visveswaraya Technological University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-Approved & Government University (Karnataka). Industry-Focused Curriculum (AI, Cloud, Cybersecurity, Data Science). Strong Focus on Practical Learning & Real-World Projects. Flexible Online Learning (Live + Recorded Classes). Designed for Working Professionals.\n\nStudents pick a specialisation from tracks like Artificial Intelligence & Data Science and Cyber Security & Cloud Computing. The first two semesters are common for all students, covering foundational computer science subjects. From semester three onwards, coursework becomes specific to the chosen track, with project work and electives rounding out the final semester.',
+  },
+  'vivekananda-global-university-online||MCA': {
+    sem1: 'Mathematical Foundation for Computer Application | Fundamentals of Computer and Programming in C | Operating Systems | Database Management System | Software Engineering and Project Management | Virtualization and Cloud Technology | Web Technology Lab | Trans-Disciplinary Project',
+    sem2: 'Object-Oriented Programming using Java | Data Structures and Algorithms Using C | Computer Networks | Machine Learning with Python | Linux and Shell Programming | Trans-Disciplinary Project | Artificial Intelligence | Introduction to Data Science | Cloud Architectural Patterns | Data Visualization',
+    sem3: 'Design & Analysis of Algorithm | Deep Learning | Natural Processing Language | Artificial Intelligence and Intelligent Agents | Seminar | Summer Internship | Transdisciplinary Project | Artificial Intelligence | Elective II (AI) Big Data Analytics | Elective II (AI) Knowledge Engineering & Expert Systems | Elective II (AI) Pattern Recognition | Elective II (AI) Blockchain | Elective II (CTIS) Storage and Data Center | Elective II (CTIS) Cloud Web Services | Elective II (CTIS) Cryptography and Network Security | Elective II (CTIS) Cyber Forensics | Elective II (CTIS) Ethical Hacking | Elective II (CTIS) Blockchain | Elective II (CTIS) Security Architecture',
+    sem4: 'Project Phase II | Industry Internship | Research Project | Industrial Project | Academic/Research Lab Project | Research Publications | Trans-Disciplinary Project',
+    highlight: 'UGC-approved and NAAC A+ accredited degree; 100% online flexible learning; Study anytime from anywhere; Industry-aligned curriculum; Focus on AI, Machine Learning, Cloud Computing and Cybersecurity; Hands-on learning with AI, ML and Blockchain labs; ',
+    programOverview: 'The online MCA at Vivekananda Global University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-approved and NAAC A+ accredited degree. 100% online flexible learning. Study anytime from anywhere. Industry-aligned curriculum. Focus on AI, Machine Learning, Cloud Computing and Cybersecurity.\n\nStudents pick a specialisation from tracks like Artificial Intelligence and Cloud Technology & Information Security. The first two semesters are common for all students, covering foundational computer science subjects. From semester three onwards, coursework becomes specific to the chosen track, with project work and electives rounding out the final semester.',
+  },
+  'yenepoya-university-online||MCA': {
+    sem1: 'Fundamentals of C Programming | Probability and Statistics | Generative AI for App Development | Database Management Systems | HTML, CSS, and JavaScript',
+    sem2: 'Operating Systems | Python Programming | Data Structures and Algorithms | Cloud Computing Foundations | UI Development Using React',
+    sem3: 'Software Testing and Quality Assurance | Web Application Development and Deployment | Machine Learning for Developers | Java Programming | Advanced Database Management Systems',
+    sem4: 'Project',
+    highlight: 'UGC-Entitled & Recognized Degree; Flexible 100% Online Learning (Study Anytime, Anywhere); Designed for Working Professionals; Industry-Aligned Curriculum (Programming, Data, Cloud, AI); Live + Recorded Classes via LMS; Practical & Project-Based Lear',
+    programOverview: 'The online MCA at Yenepoya University is a two-year, four-semester postgraduate program approved by UGC DEB. It covers software development, data structures, networking, database management, and emerging technologies like cloud computing and artificial intelligence. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, so the MCA you earn here is fully valid for private employment, government roles, and further education.\n\nUGC-Entitled & Recognized Degree. Flexible 100% Online Learning (Study Anytime, Anywhere). Designed for Working Professionals. Industry-Aligned Curriculum (Programming, Data, Cloud, AI). Live + Recorded Classes via LMS.\n\nStudents pick a specialisation from tracks like Computer Science and Information Technology and Cloud Computing and Cyber Security. The first two semesters are common for all students, covering foundational computer science subjects. From semester three onwards, coursework becomes specific to the chosen track, with project work and electives rounding out the final semester.',
+  },
+
+  'chhatrapati-shahu-ji-maharaj-university-online||MCA': {
+    programOverview: 'The online MCA at Chatrapati Shahuji Maharaj University is a UGC DEB approved two-year postgraduate program. The Government of India has formally recognised that online degrees from UGC DEB approved universities carry the same academic and legal standing as regular campus degrees, making this MCA fully valid for private employment, government roles, and higher studies.',
+  },
+
+  'ganpat-university-online||MCA': {
+    highlight: 'UGC-Entitled Online Degree; Industry-Aligned Curriculum (Java, Python, .NET); Strong Focus on Software Development & Emerging Technologies; Covers Data Science, Cloud Computing & Networking; Flexible 100% Online Learning (Live + Recorded Sessions); A',
+    programOverview: 'The online MCA at Ganpat university is a UGC DEB approved two-year postgraduate program. The Government of India has formally recognised that online degrees from UGC DEB approved universities carry the same academic and legal standing as regular campus degrees, making this MCA fully valid for private employment, government roles, and higher studies.\n\nUGC-Entitled Online Degree. Industry-Aligned Curriculum (Java, Python, .NET). Strong Focus on Software Development & Emerging Technologies. Covers Data Science, Cloud Computing & Networking.',
+  },
+
+  'graphic-era-university-online||MCA': {
+    highlight: 'UGC-approved online MCA program; 2-year flexible duration (extendable up to 5 years); Industry-relevant curriculum focused on programming, software development and IT applications; Strong foundation in computer science and application development; Em',
+    programOverview: 'The online MCA at Graphic Era University is a UGC DEB approved two-year postgraduate program. The Government of India has formally recognised that online degrees from UGC DEB approved universities carry the same academic and legal standing as regular campus degrees, making this MCA fully valid for private employment, government roles, and higher studies.\n\nUGC-approved online MCA program. 2-year flexible duration (extendable up to 5 years). Industry-relevant curriculum focused on programming, software development and IT applications. Strong foundation in computer science and application development.',
+  },
+
+  'guru-ghasidas-vishwavidyalaya-online||MCA': {
+    highlight: 'UGC-DEB Entitled Central University; NAAC A++ Accredited; UGC Category-1 University with Graded Autonomy; Strong National & Global Rankings (QS, THE, India Today); Flexible Online Learning (Anytime, Anywhere); Expert Faculty & Academic Excellence; In',
+    programOverview: 'The online MCA at Guru Ghasidas Vishwavidyalaya is a UGC DEB approved two-year postgraduate program. The Government of India has formally recognised that online degrees from UGC DEB approved universities carry the same academic and legal standing as regular campus degrees, making this MCA fully valid for private employment, government roles, and higher studies.\n\nUGC-DEB Entitled Central University. NAAC A++ Accredited. UGC Category-1 University with Graded Autonomy. Strong National & Global Rankings (QS, THE, India Today).',
+  },
+
+  'jamia-hamdard-online||MCA': {
+    highlight: 'UGC-Approved & NAAC A++ Accredited University; Industry-Aligned Curriculum with Emerging Technologies (AI, Cloud, Cybersecurity); Strong Focus on Programming, Systems & Data Analytics; Flexible Online Learning (Live + Recorded Classes); LMS Access wi',
+    programOverview: 'The online MCA at Jamia Hamdard is a UGC DEB approved two-year postgraduate program. The Government of India has formally recognised that online degrees from UGC DEB approved universities carry the same academic and legal standing as regular campus degrees, making this MCA fully valid for private employment, government roles, and higher studies.\n\nUGC-Approved & NAAC A++ Accredited University. Industry-Aligned Curriculum with Emerging Technologies (AI, Cloud, Cybersecurity). Strong Focus on Programming, Systems & Data Analytics. Flexible Online Learning (Live + Recorded Classes).',
+  },
+
+  'mats-university-online||MCA': {
+    highlight: 'Comprehensive IT Curriculum (Programming, AI, Cloud, Data Analytics); Strong Focus on Advanced Technologies (Machine Learning, Cybersecurity, Mobile App Development); Project-Based Learning Approach; Industry Internship & Research Opportunities; Mult',
+    programOverview: 'The online MCA at MATS University is a UGC DEB approved two-year postgraduate program. The Government of India has formally recognised that online degrees from UGC DEB approved universities carry the same academic and legal standing as regular campus degrees, making this MCA fully valid for private employment, government roles, and higher studies.\n\nComprehensive IT Curriculum (Programming, AI, Cloud, Data Analytics). Strong Focus on Advanced Technologies (Machine Learning, Cybersecurity, Mobile App Development). Project-Based Learning Approach. Industry Internship & Research Opportunities.',
+  },
+
+  'parul-university-online||MCA': {
+    highlight: 'NAAC A++ Accredited University; UGC-Entitled Online Degree; Flexible 100% Online Learning; Industry-Aligned Curriculum (AI, ML, Blockchain); Multiple Specializations (Cybersecurity, AI/ML, Full Stack); Designed for Working Professionals; LMS with 24x',
+    programOverview: 'The online MCA at Parul University is a UGC DEB approved two-year postgraduate program. The Government of India has formally recognised that online degrees from UGC DEB approved universities carry the same academic and legal standing as regular campus degrees, making this MCA fully valid for private employment, government roles, and higher studies.\n\nNAAC A++ Accredited University. UGC-Entitled Online Degree. Flexible 100% Online Learning. Industry-Aligned Curriculum (AI, ML, Blockchain).\n\nSpecialisation options include Cybersecurity & Forensic, Full Stack Web Development, Artificial Intelligence / Machine Learning.',
+  },
+  'assam-down-town-university-online||MCA': {
+    highlight: 'UGC-DEB Approved & NAAC A+ Accredited; Industry-Oriented Curriculum; Strong Focus on Programming & IT Skills; Hands-On Learning with Projects & Case Studies; Live + Recorded Classes via LMS; 24x7 Learning Support',
+    programOverview: 'The online MCA at Assam Down Town University is a UGC DEB approved two-year postgraduate program built around software development, data structures, programming fundamentals, and specialised tracks in AI and Data Science. The Government of India has formally recognised that online degrees from UGC DEB approved universities hold the same academic and legal standing as regular campus degrees, making this MCA fully valid for private employment, government roles, and further education.\n\nUGC-DEB Approved and NAAC A+ Accredited. The curriculum is industry-oriented with a strong focus on programming and IT skills. Learning happens through live and recorded classes on a dedicated LMS with 24x7 access, and the program includes hands-on projects and case studies to give students practical exposure alongside theory.\n\nStudents pick a specialisation from Artificial Intelligence & Machine Learning or Data Science. Both tracks share a common foundation in semesters one and two, then branch into advanced domain subjects in semesters three and four. The total program fee is Rs. 90,000 payable at Rs. 22,500 per semester, with EMI options available.',
+  },
+
 }
 
 export function getMasterSyllabus(uniId: string, degree: string): MasterSyllabus | null {

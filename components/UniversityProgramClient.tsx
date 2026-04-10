@@ -537,6 +537,7 @@ function LockedPage({ u, program, programSlug, pd }: {
   const [error, setError]         = useState('')
   const [enquiryOpen, setEnquiryOpen] = useState(false)
 
+  const syllabus  = getMasterSyllabus(u.id, program) || getUniversitySyllabus(u.id, program)
   const meta      = PROGRAM_META[program]
   const otherUnis = getUniversitiesByProgram(program).filter(x => x.id !== u.id).slice(0, 4)
   const shortDesc = pd.careerOutcome
@@ -707,12 +708,18 @@ function LockedPage({ u, program, programSlug, pd }: {
         {/* About the Program */}
         <div className="bg-white border border-border rounded-2xl p-6 mb-6">
           <h2 className="font-display text-xl font-bold text-navy mb-3">About Online {program} at {cleanName}</h2>
-          <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
-            {cleanName} offers a UGC DEB approved online {program} program designed for working professionals and graduates who want a recognised postgraduate degree with maximum flexibility. The program is delivered entirely online — with recorded lectures, live doubt sessions, and a digital learning management system — so you can study from anywhere in India without quitting your job.
-          </p>
-          <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
-            The online {program} from {cleanName} carries the same academic value as a campus degree. The degree certificate issued does not mention "distance" or "online" — it is identical to the regular {program} certificate and is accepted by employers, government departments, and institutions across India. With NAAC {u.naac} accreditation{u.nirf < 999 ? ` and a NIRF rank of #${u.nirf}` : ''}, the credential carries strong institutional credibility.
-          </p>
+          {(syllabus as any)?.programOverview ? (
+            <div className="text-[15px] text-ink-2 leading-relaxed mb-3 whitespace-pre-line">{(syllabus as any).programOverview}</div>
+          ) : (
+            <>
+              <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
+                {cleanName} offers a UGC DEB approved online {program} program built for working professionals and fresh graduates who want a recognised postgraduate degree without putting their career on hold. The program runs fully online through recorded lectures, live sessions, and a dedicated LMS, so you can study from anywhere in India on your own schedule.
+              </p>
+              <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
+                The Government of India has formally declared that online degrees from UGC DEB approved universities hold equal academic and legal standing to regular campus degrees. The online {program} from {cleanName} is accepted by private employers, government departments, and public sector undertakings across India. With NAAC {u.naac} accreditation{u.nirf < 999 ? ` and a NIRF rank of #${u.nirf}` : ''}, the credential carries solid institutional standing.
+              </p>
+            </>
+          )}
           {pd.specs && pd.specs.length > 0 && (
             <div>
               <div className="text-sm font-bold text-navy mb-2">{pd.specs.length} Specialisations Available</div>
