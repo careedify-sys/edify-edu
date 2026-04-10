@@ -738,7 +738,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>The Symbiosis online MBA runs for two years across four semesters. The first two semesters cover core management subjects and are the same for everyone. From semester three, students choose a specialisation and select four elective subjects. There is a project component in both the third and fourth semesters.</p>
 
-<p>The program is fully online, in English, and follows a credit-based semester system. Assessment is split 30 percent internal and 70 percent university examination. Both must be passed separately with a minimum of 40 percent absolute marks in each. To receive the degree, students need a minimum CGPA of 4.00 out of 10 across all four semesters.</p>
+<p>The program is fully online, in English, and follows a credit-based semester system. Assessment is split 30 percent internal and 70 percent university examination. Both must be passed separately with a minimum of 40 percent absolute marks in each. To receive the degree, students need a minimum CGPA of 4.00 out of 10 across all four semesters. Use the <a href="/tools/cgpa-calculator" style="color:inherit;text-decoration:underline;text-underline-offset:2px">CGPA to percentage calculator</a> to check where you stand.</p>
 
 <div class="callout-warning">Both the internal component and the university exam must be passed separately. Averaging the two does not count. Students securing less than 40 percent absolute marks in either head are declared fail for that course.</div>
 
@@ -748,7 +748,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Eligibility and Admission</h2>
 
-<p>You need a bachelor's degree from a recognised university with at least 50 percent marks. For SC and ST applicants the minimum is 45 percent. There is no age limit and no entrance exam. Admissions are first-come-first-served after eligibility is confirmed. The non-refundable application fee is Rs 1,500. Each intake session accepts up to 3,000 students.</p>
+<p>You need a bachelor's degree from a recognised university with at least 50 percent marks (unsure of your score? <a href="/tools/cgpa-calculator" style="color:inherit;text-decoration:underline;text-underline-offset:2px">convert your CGPA to percentage</a> in one click). For SC and ST applicants the minimum is 45 percent. There is no age limit and no entrance exam. Admissions are first-come-first-served after eligibility is confirmed. The non-refundable application fee is Rs 1,500. Each intake session accepts up to 3,000 students.</p>
 
 <h2>Fees</h2>
 
@@ -2906,7 +2906,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Amity Online MBA Admission Process</h2>
 
-<p>Eligibility: Any bachelor's degree with minimum 50% marks from a UGC-recognised university. No entrance exam required for most applicants — admission is direct based on academic record. Some applicants are called for a personal interview.</p>
+<p>Eligibility: Any bachelor's degree with minimum 50% marks from a UGC-recognised university (<a href="/tools/cgpa-calculator" style="color:inherit;text-decoration:underline;text-underline-offset:2px">check your CGPA here</a>). No entrance exam required for most applicants — admission is direct based on academic record. Some applicants are called for a personal interview.</p>
 
 <p>You can apply online through the Amity Online portal. Documents needed: graduation certificate, mark sheets, ID proof, and passport photo. Enrollment is typically available twice a year — January and July.</p>
 
@@ -4013,7 +4013,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Lovely Professional University started its online division in 2005, which is earlier than most Indian universities even considered offering programs digitally. The online MBA runs two years across four semesters. You can extend it up to four years if needed. The program is UGC-DEB approved, AICTE recognised, NAAC A++ accredited, and WES recognised for international validity.</p>
 
-<p>Admissions happen twice a year: January and July sessions. No entrance exam is required for the online program. You need a bachelor's degree from a recognised university with a minimum of 50% marks (45% for reserved categories).</p>
+<p>Admissions happen twice a year: January and July sessions. No entrance exam is required for the online program. You need a bachelor's degree from a recognised university with a minimum of <a href="/tools/cgpa-calculator" style="color:inherit;text-decoration:underline;text-underline-offset:2px">50% marks</a> (45% for reserved categories). If your marksheet shows CGPA, convert it instantly.</p>
 
 <h2>All Specialisations Available</h2>
 
@@ -5737,7 +5737,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>The admission process for online MBA as a fresher is generally straightforward:</p>
 
 <ol>
-  <li>Check eligibility: 50% aggregate in graduation (any stream)</li>
+  <li>Check eligibility: 50% aggregate in graduation — <a href="/tools/cgpa-calculator" style="color:inherit;text-decoration:underline;text-underline-offset:2px">convert CGPA to percentage</a> if your marksheet shows grade points</li>
   <li>Some universities require a qualifying score in CAT, MAT, or conduct their own test</li>
   <li>Submit application with 10th, 12th, and graduation marksheets</li>
   <li>Pay the admission fee and secure your seat</li>
@@ -5807,7 +5807,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>You need a bachelor's degree from a UGC-recognized university. The stream does not matter — engineering, science, commerce, arts, law, medicine — all are eligible. The degree can be regular, distance, or from a correspondence program, as long as the university itself is UGC-recognized.</p>
 
 <h3>2. Minimum Percentage</h3>
-<p>The standard requirement across most universities is 50% aggregate in graduation. For reserved category candidates (SC, ST, OBC-NCL), this is typically relaxed to 45%. A few universities like IGNOU have more flexible criteria.</p>
+<p>The standard requirement across most universities is 50% aggregate in graduation. If your marksheet shows CGPA rather than a percentage, use the <a href="/tools/cgpa-calculator" style="color:inherit;text-decoration:underline;text-underline-offset:2px">CGPA to percentage converter</a> to verify eligibility. For reserved category candidates (SC, ST, OBC-NCL), this is typically relaxed to 45%. A few universities like IGNOU have more flexible criteria.</p>
 
 <h3>3. Work Experience</h3>
 <p>For standard online MBA programs, work experience is typically optional or not required at all. For executive MBA tracks or MBA for working professionals with senior-level targeting, 3-5 years of experience may be preferred. Check the specific program's requirements.</p>
