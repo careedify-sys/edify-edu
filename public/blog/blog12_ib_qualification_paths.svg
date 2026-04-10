@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="390" viewBox="0 0 988 390" role="img" aria-label="Blog 12: IB qualification paths">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="390" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="304" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 12: IB qualification paths</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">Path</text>
+<line x1="271" y1="70" x2="271" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="285" y="92.5" class="th" fill="#FFFFFF">Level you typically enter</text>
+<line x1="536" y1="70" x2="536" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="550" y="92.5" class="th" fill="#FFFFFF">What it requires</text>
+<rect x="24" y="110" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="133.5" class="td" fill="#444444">MBA from IIM/ISB/XLRI + summer</text>
+<text x="38" y="151.5" class="td" fill="#444444">internship</text>
+<line x1="271" y1="114" x2="271" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="285" y="142.5" class="td" fill="#444444">Associate (post-MBA)</text>
+<line x1="536" y1="114" x2="536" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="550" y="133.5" class="td" fill="#444444">Strong MBA academic record + summer internship</text>
+<text x="550" y="151.5" class="td" fill="#444444">conversion</text>
+<rect x="24" y="166" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="166" x2="964" y2="166" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="189.5" class="td" fill="#444444">B.Tech (IIT) + direct banking</text>
+<text x="38" y="207.5" class="td" fill="#444444">placement</text>
+<line x1="271" y1="170" x2="271" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="285" y="198.5" class="td" fill="#444444">Analyst (entry)</text>
+<line x1="536" y1="170" x2="536" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="550" y="198.5" class="td" fill="#444444">Strong placement record, technical skills, networking</text>
+<rect x="24" y="222" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="222" x2="964" y2="222" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="248.5" class="td" fill="#444444">CA (Chartered Accountant)</text>
+<line x1="271" y1="226" x2="271" y2="262" stroke="#C8DDD0" stroke-width="1"/>
+<text x="285" y="248.5" class="td" fill="#444444">Analyst (via Big 4 M&amp;A practice)</text>
+<line x1="536" y1="226" x2="536" y2="262" stroke="#C8DDD0" stroke-width="1"/>
+<text x="550" y="248.5" class="td" fill="#444444">CA + articleship experience in deals or valuation</text>
+<rect x="24" y="266" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="266" x2="964" y2="266" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="289.5" class="td" fill="#444444">CFA (Chartered Financial</text>
+<text x="38" y="307.5" class="td" fill="#444444">Analyst)</text>
+<line x1="271" y1="270" x2="271" y2="318" stroke="#C8DDD0" stroke-width="1"/>
+<text x="285" y="289.5" class="td" fill="#444444">Analyst (supports, does not</text>
+<text x="285" y="307.5" class="td" fill="#444444">guarantee entry)</text>
+<line x1="536" y1="270" x2="536" y2="318" stroke="#C8DDD0" stroke-width="1"/>
+<text x="550" y="289.5" class="td" fill="#444444">CFA helps with valuation roles; does not substitute for</text>
+<text x="550" y="307.5" class="td" fill="#444444">degree pedigree</text>
+<rect x="24" y="322" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="322" x2="964" y2="322" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="348.5" class="td" fill="#444444">Non-IIM MBA + lateral move</text>
+<line x1="271" y1="326" x2="271" y2="362" stroke="#C8DDD0" stroke-width="1"/>
+<text x="285" y="348.5" class="td" fill="#444444">Analyst to Associate</text>
+<line x1="536" y1="326" x2="536" y2="362" stroke="#C8DDD0" stroke-width="1"/>
+<text x="550" y="348.5" class="td" fill="#444444">Requires performance record at a mid-tier firm first</text>
+<rect x="24" y="66" width="940" height="300" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

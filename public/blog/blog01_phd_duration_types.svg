@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="310" viewBox="0 0 988 310" role="img" aria-label="Blog 1: PhD duration types">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="310" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="224" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 1: PhD duration types</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">PhD Type</text>
+<line x1="283" y1="70" x2="283" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="297" y="92.5" class="th" fill="#FFFFFF">Official Duration</text>
+<line x1="435" y1="70" x2="435" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="449" y="92.5" class="th" fill="#FFFFFF">Real-World Duration</text>
+<line x1="605" y1="70" x2="605" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="619" y="92.5" class="th" fill="#FFFFFF">Best For</text>
+<rect x="24" y="110" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="136.5" class="td" fill="#444444">Full-time</text>
+<line x1="283" y1="114" x2="283" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="297" y="136.5" class="td" fill="#444444">3–5 years</text>
+<line x1="435" y1="114" x2="435" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="449" y="136.5" class="td" fill="#444444">4–7 years</text>
+<line x1="605" y1="114" x2="605" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="619" y="136.5" class="td" fill="#444444">Recent graduates, JRF/fellowship holders</text>
+<rect x="24" y="154" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="154" x2="964" y2="154" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="180.5" class="td" fill="#444444">Part-time</text>
+<line x1="283" y1="158" x2="283" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="297" y="180.5" class="td" fill="#444444">5–7 years</text>
+<line x1="435" y1="158" x2="435" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="449" y="180.5" class="td" fill="#444444">6–9 years</text>
+<line x1="605" y1="158" x2="605" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="619" y="180.5" class="td" fill="#444444">Working professionals near a university</text>
+<rect x="24" y="198" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="198" x2="964" y2="198" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="224.5" class="td" fill="#444444">Integrated (after bachelor&#39;s)</text>
+<line x1="283" y1="202" x2="283" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="297" y="224.5" class="td" fill="#444444">5–6 years</text>
+<line x1="435" y1="202" x2="435" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="449" y="224.5" class="td" fill="#444444">5–7 years</text>
+<line x1="605" y1="202" x2="605" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="619" y="224.5" class="td" fill="#444444">Students who want to skip the master&#39;s</text>
+<rect x="24" y="242" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="242" x2="964" y2="242" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="268.5" class="td" fill="#444444">DBA (management doctorate)</text>
+<line x1="283" y1="246" x2="283" y2="282" stroke="#C8DDD0" stroke-width="1"/>
+<text x="297" y="268.5" class="td" fill="#444444">3–5 years</text>
+<line x1="435" y1="246" x2="435" y2="282" stroke="#C8DDD0" stroke-width="1"/>
+<text x="449" y="268.5" class="td" fill="#444444">3–5 years</text>
+<line x1="605" y1="246" x2="605" y2="282" stroke="#C8DDD0" stroke-width="1"/>
+<text x="619" y="268.5" class="td" fill="#444444">Senior executives in management roles</text>
+<rect x="24" y="66" width="940" height="220" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

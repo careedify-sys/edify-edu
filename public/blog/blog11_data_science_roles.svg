@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="302" viewBox="0 0 988 302" role="img" aria-label="Blog 11: Data science roles comparison">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="302" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="216" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 11: Data science roles comparison</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">Role</text>
+<line x1="91" y1="70" x2="91" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="105" y="92.5" class="th" fill="#FFFFFF">Primary work</text>
+<line x1="393" y1="70" x2="393" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="407" y="92.5" class="th" fill="#FFFFFF">Tools</text>
+<line x1="632" y1="70" x2="632" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="646" y="92.5" class="th" fill="#FFFFFF">Education typically needed</text>
+<rect x="24" y="110" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="133.5" class="td" fill="#444444">Data</text>
+<text x="38" y="151.5" class="td" fill="#444444">Analyst</text>
+<line x1="91" y1="114" x2="91" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="105" y="133.5" class="td" fill="#444444">Clean, analyze, and visualize data to</text>
+<text x="105" y="151.5" class="td" fill="#444444">answer business questions</text>
+<line x1="393" y1="114" x2="393" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="407" y="133.5" class="td" fill="#444444">Excel, SQL, Power BI,</text>
+<text x="407" y="151.5" class="td" fill="#444444">Tableau, Python basics</text>
+<line x1="632" y1="114" x2="632" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="646" y="133.5" class="td" fill="#444444">B.Com / BBA / B.Sc + SQL + Excel; MBA</text>
+<text x="646" y="151.5" class="td" fill="#444444">analytics adds salary</text>
+<rect x="24" y="166" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="166" x2="964" y2="166" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="189.5" class="td" fill="#444444">Data Sci</text>
+<text x="38" y="207.5" class="td" fill="#444444">entist</text>
+<line x1="91" y1="170" x2="91" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="105" y="189.5" class="td" fill="#444444">Build statistical models and ML models</text>
+<text x="105" y="207.5" class="td" fill="#444444">to predict outcomes</text>
+<line x1="393" y1="170" x2="393" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="407" y="189.5" class="td" fill="#444444">Python, R, scikit-learn,</text>
+<text x="407" y="207.5" class="td" fill="#444444">statistics, SQL</text>
+<line x1="632" y1="170" x2="632" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="646" y="189.5" class="td" fill="#444444">B.Tech/B.Sc CS + Python + statistics; M.Sc</text>
+<text x="646" y="207.5" class="td" fill="#444444">or MBA data science common</text>
+<rect x="24" y="222" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="222" x2="964" y2="222" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="245.5" class="td" fill="#444444">ML</text>
+<text x="38" y="263.5" class="td" fill="#444444">Engineer</text>
+<line x1="91" y1="226" x2="91" y2="274" stroke="#C8DDD0" stroke-width="1"/>
+<text x="105" y="245.5" class="td" fill="#444444">Build, train, and deploy ML models in</text>
+<text x="105" y="263.5" class="td" fill="#444444">production at scale</text>
+<line x1="393" y1="226" x2="393" y2="274" stroke="#C8DDD0" stroke-width="1"/>
+<text x="407" y="245.5" class="td" fill="#444444">Python, TensorFlow/PyTorch,</text>
+<text x="407" y="263.5" class="td" fill="#444444">MLOps, cloud platforms</text>
+<line x1="632" y1="226" x2="632" y2="274" stroke="#C8DDD0" stroke-width="1"/>
+<text x="646" y="245.5" class="td" fill="#444444">B.Tech CSE + ML frameworks; M.Tech AI/ML</text>
+<text x="646" y="263.5" class="td" fill="#444444">or strong project portfolio</text>
+<rect x="24" y="66" width="940" height="212" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

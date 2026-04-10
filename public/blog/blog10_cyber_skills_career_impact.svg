@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="414" viewBox="0 0 988 414" role="img" aria-label="Blog 10: Cyber security skills">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="414" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="328" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 10: Cyber security skills</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">Skill</text>
+<line x1="266" y1="70" x2="266" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="280" y="92.5" class="th" fill="#FFFFFF">Career impact</text>
+<line x1="627" y1="70" x2="627" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="641" y="92.5" class="th" fill="#FFFFFF">How to build it</text>
+<rect x="24" y="110" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="133.5" class="td" fill="#444444">Cloud security</text>
+<text x="38" y="151.5" class="td" fill="#444444">(AWS/Azure/GCP)</text>
+<line x1="266" y1="114" x2="266" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="280" y="133.5" class="td" fill="#444444">Opens the highest-paying security engineering</text>
+<text x="280" y="151.5" class="td" fill="#444444">roles</text>
+<line x1="627" y1="114" x2="627" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="641" y="133.5" class="td" fill="#444444">AWS Security Specialty, Azure Security</text>
+<text x="641" y="151.5" class="td" fill="#444444">Engineer certs + project work</text>
+<rect x="24" y="166" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="166" x2="964" y2="166" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="198.5" class="td" fill="#444444">Penetration testing</text>
+<line x1="266" y1="170" x2="266" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="280" y="189.5" class="td" fill="#444444">Separate career path with high demand;</text>
+<text x="280" y="207.5" class="td" fill="#444444">freelance potential</text>
+<line x1="627" y1="170" x2="627" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="641" y="189.5" class="td" fill="#444444">OSCP certification + bug bounty programs</text>
+<text x="641" y="207.5" class="td" fill="#444444">on HackerOne/Bugcrowd</text>
+<rect x="24" y="222" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="222" x2="964" y2="222" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="245.5" class="td" fill="#444444">Incident response and digital</text>
+<text x="38" y="263.5" class="td" fill="#444444">forensics</text>
+<line x1="266" y1="226" x2="266" y2="274" stroke="#C8DDD0" stroke-width="1"/>
+<text x="280" y="245.5" class="td" fill="#444444">Critical for BFSI sector; leads to senior</text>
+<text x="280" y="263.5" class="td" fill="#444444">incident management</text>
+<line x1="627" y1="226" x2="627" y2="274" stroke="#C8DDD0" stroke-width="1"/>
+<text x="641" y="254.5" class="td" fill="#444444">GCIH/GCFA certifications + SOC experience</text>
+<rect x="24" y="278" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="278" x2="964" y2="278" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="301.5" class="td" fill="#444444">Compliance and governance</text>
+<text x="38" y="319.5" class="td" fill="#444444">(ISO 27001, GDPR, DPDP)</text>
+<line x1="266" y1="282" x2="266" y2="330" stroke="#C8DDD0" stroke-width="1"/>
+<text x="280" y="301.5" class="td" fill="#444444">Enables risk management and consulting roles</text>
+<text x="280" y="319.5" class="td" fill="#444444">without deep technical depth</text>
+<line x1="627" y1="282" x2="627" y2="330" stroke="#C8DDD0" stroke-width="1"/>
+<text x="641" y="310.5" class="td" fill="#444444">CISA or CRISC certification</text>
+<rect x="24" y="334" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="334" x2="964" y2="334" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="366.5" class="td" fill="#444444">AI-driven threat detection</text>
+<line x1="266" y1="338" x2="266" y2="386" stroke="#C8DDD0" stroke-width="1"/>
+<text x="280" y="357.5" class="td" fill="#444444">Emerging skill in 2025-2026; not yet widely</text>
+<text x="280" y="375.5" class="td" fill="#444444">held</text>
+<line x1="627" y1="338" x2="627" y2="386" stroke="#C8DDD0" stroke-width="1"/>
+<text x="641" y="357.5" class="td" fill="#444444">SIEM tools + ML fundamentals applied to</text>
+<text x="641" y="375.5" class="td" fill="#444444">security data</text>
+<rect x="24" y="66" width="940" height="324" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

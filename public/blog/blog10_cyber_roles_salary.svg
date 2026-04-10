@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="556" viewBox="0 0 988 556" role="img" aria-label="Blog 10: Cyber security roles and salary">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="556" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="470" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 10: Cyber security roles and salary</text>
+<rect x="24" y="66" width="940" height="56" fill="#1A6B2B"/>
+<text x="38" y="98.5" class="th" fill="#FFFFFF">Role</text>
+<line x1="272" y1="70" x2="272" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="286" y="89.5" class="th" fill="#FFFFFF">Salary</text>
+<text x="286" y="107.5" class="th" fill="#FFFFFF">(India, LPA)</text>
+<line x1="393" y1="70" x2="393" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="407" y="98.5" class="th" fill="#FFFFFF">What you do</text>
+<line x1="756" y1="70" x2="756" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="770" y="98.5" class="th" fill="#FFFFFF">Top employers</text>
+<rect x="24" y="122" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="122" x2="964" y2="122" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="154.5" class="td" fill="#444444">SOC Analyst</text>
+<line x1="272" y1="126" x2="272" y2="174" stroke="#C8DDD0" stroke-width="1"/>
+<text x="286" y="154.5" class="td" fill="#444444">Rs. 4–10 LPA</text>
+<line x1="393" y1="126" x2="393" y2="174" stroke="#C8DDD0" stroke-width="1"/>
+<text x="407" y="145.5" class="td" fill="#444444">Monitor systems, detect threats, respond to</text>
+<text x="407" y="163.5" class="td" fill="#444444">incidents</text>
+<line x1="756" y1="126" x2="756" y2="174" stroke="#C8DDD0" stroke-width="1"/>
+<text x="770" y="145.5" class="td" fill="#444444">Banks, IT firms, large</text>
+<text x="770" y="163.5" class="td" fill="#444444">MNCs</text>
+<rect x="24" y="178" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="178" x2="964" y2="178" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="201.5" class="td" fill="#444444">Penetration Tester (Ethical</text>
+<text x="38" y="219.5" class="td" fill="#444444">Hacker)</text>
+<line x1="272" y1="182" x2="272" y2="230" stroke="#C8DDD0" stroke-width="1"/>
+<text x="286" y="210.5" class="td" fill="#444444">Rs. 5–20 LPA</text>
+<line x1="393" y1="182" x2="393" y2="230" stroke="#C8DDD0" stroke-width="1"/>
+<text x="407" y="201.5" class="td" fill="#444444">Simulate attacks to find vulnerabilities</text>
+<text x="407" y="219.5" class="td" fill="#444444">before attackers do</text>
+<line x1="756" y1="182" x2="756" y2="230" stroke="#C8DDD0" stroke-width="1"/>
+<text x="770" y="201.5" class="td" fill="#444444">Consulting firms, IT</text>
+<text x="770" y="219.5" class="td" fill="#444444">services</text>
+<rect x="24" y="234" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="234" x2="964" y2="234" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="266.5" class="td" fill="#444444">Security Engineer</text>
+<line x1="272" y1="238" x2="272" y2="286" stroke="#C8DDD0" stroke-width="1"/>
+<text x="286" y="257.5" class="td" fill="#444444">Rs. 10–25</text>
+<text x="286" y="275.5" class="td" fill="#444444">LPA</text>
+<line x1="393" y1="238" x2="393" y2="286" stroke="#C8DDD0" stroke-width="1"/>
+<text x="407" y="266.5" class="td" fill="#444444">Build and maintain security infrastructure</text>
+<line x1="756" y1="238" x2="756" y2="286" stroke="#C8DDD0" stroke-width="1"/>
+<text x="770" y="257.5" class="td" fill="#444444">Product companies,</text>
+<text x="770" y="275.5" class="td" fill="#444444">fintech</text>
+<rect x="24" y="290" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="290" x2="964" y2="290" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="322.5" class="td" fill="#444444">Cloud Security Engineer</text>
+<line x1="272" y1="294" x2="272" y2="342" stroke="#C8DDD0" stroke-width="1"/>
+<text x="286" y="313.5" class="td" fill="#444444">Rs. 15–30</text>
+<text x="286" y="331.5" class="td" fill="#444444">LPA</text>
+<line x1="393" y1="294" x2="393" y2="342" stroke="#C8DDD0" stroke-width="1"/>
+<text x="407" y="313.5" class="td" fill="#444444">Secure AWS/Azure/GCP platforms and</text>
+<text x="407" y="331.5" class="td" fill="#444444">architectures</text>
+<line x1="756" y1="294" x2="756" y2="342" stroke="#C8DDD0" stroke-width="1"/>
+<text x="770" y="313.5" class="td" fill="#444444">SaaS companies, cloud-</text>
+<text x="770" y="331.5" class="td" fill="#444444">native firms</text>
+<rect x="24" y="346" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="346" x2="964" y2="346" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="378.5" class="td" fill="#444444">Cybersecurity Risk Manager</text>
+<line x1="272" y1="350" x2="272" y2="398" stroke="#C8DDD0" stroke-width="1"/>
+<text x="286" y="369.5" class="td" fill="#444444">Rs. 18–35</text>
+<text x="286" y="387.5" class="td" fill="#444444">LPA</text>
+<line x1="393" y1="350" x2="393" y2="398" stroke="#C8DDD0" stroke-width="1"/>
+<text x="407" y="369.5" class="td" fill="#444444">Assess and manage cyber risk across the</text>
+<text x="407" y="387.5" class="td" fill="#444444">enterprise</text>
+<line x1="756" y1="350" x2="756" y2="398" stroke="#C8DDD0" stroke-width="1"/>
+<text x="770" y="378.5" class="td" fill="#444444">BFSI, telecom, consulting</text>
+<rect x="24" y="402" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="402" x2="964" y2="402" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="434.5" class="td" fill="#444444">Security Architect</text>
+<line x1="272" y1="406" x2="272" y2="454" stroke="#C8DDD0" stroke-width="1"/>
+<text x="286" y="425.5" class="td" fill="#444444">Rs. 20–40</text>
+<text x="286" y="443.5" class="td" fill="#444444">LPA</text>
+<line x1="393" y1="406" x2="393" y2="454" stroke="#C8DDD0" stroke-width="1"/>
+<text x="407" y="425.5" class="td" fill="#444444">Design enterprise security frameworks and</text>
+<text x="407" y="443.5" class="td" fill="#444444">systems</text>
+<line x1="756" y1="406" x2="756" y2="454" stroke="#C8DDD0" stroke-width="1"/>
+<text x="770" y="425.5" class="td" fill="#444444">Large banks, MNCs,</text>
+<text x="770" y="443.5" class="td" fill="#444444">government</text>
+<rect x="24" y="458" width="940" height="74" fill="#FFFFFF"/>
+<line x1="24" y1="458" x2="964" y2="458" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="490.5" class="td" fill="#444444">CISO (Chief Information</text>
+<text x="38" y="508.5" class="td" fill="#444444">Security Officer)</text>
+<line x1="272" y1="462" x2="272" y2="528" stroke="#C8DDD0" stroke-width="1"/>
+<text x="286" y="481.5" class="td" fill="#444444">Rs. 50</text>
+<text x="286" y="499.5" class="td" fill="#444444">lakh–1</text>
+<text x="286" y="517.5" class="td" fill="#444444">crore+</text>
+<line x1="393" y1="462" x2="393" y2="528" stroke="#C8DDD0" stroke-width="1"/>
+<text x="407" y="490.5" class="td" fill="#444444">Own the entire security strategy of an</text>
+<text x="407" y="508.5" class="td" fill="#444444">organization</text>
+<line x1="756" y1="462" x2="756" y2="528" stroke="#C8DDD0" stroke-width="1"/>
+<text x="770" y="490.5" class="td" fill="#444444">Large banks, tech MNCs,</text>
+<text x="770" y="508.5" class="td" fill="#444444">government</text>
+<rect x="24" y="66" width="940" height="466" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

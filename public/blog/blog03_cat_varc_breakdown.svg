@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="310" viewBox="0 0 988 310" role="img" aria-label="Blog 3: CAT VARC section breakdown">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="310" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="224" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 3: CAT VARC section breakdown</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">Sub-section</text>
+<line x1="404" y1="70" x2="404" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="418" y="92.5" class="th" fill="#FFFFFF">Questions</text>
+<line x1="519" y1="70" x2="519" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="533" y="92.5" class="th" fill="#FFFFFF">Type</text>
+<line x1="596" y1="70" x2="596" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="610" y="92.5" class="th" fill="#FFFFFF">Weightage</text>
+<rect x="24" y="110" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="136.5" class="td" fill="#444444">Reading Comprehension (4 passages, ~4 Qs each)</text>
+<line x1="404" y1="114" x2="404" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="418" y="136.5" class="td" fill="#444444">16</text>
+<line x1="519" y1="114" x2="519" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="533" y="136.5" class="td" fill="#444444">MCQ</text>
+<line x1="596" y1="114" x2="596" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="610" y="136.5" class="td" fill="#444444">~67% of VARC</text>
+<rect x="24" y="154" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="154" x2="964" y2="154" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="180.5" class="td" fill="#444444">Para Jumbles</text>
+<line x1="404" y1="158" x2="404" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="418" y="180.5" class="td" fill="#444444">3–4</text>
+<line x1="519" y1="158" x2="519" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="533" y="180.5" class="td" fill="#444444">TITA</text>
+<line x1="596" y1="158" x2="596" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="610" y="180.5" class="td" fill="#444444">~15%</text>
+<rect x="24" y="198" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="198" x2="964" y2="198" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="224.5" class="td" fill="#444444">Para Summary</text>
+<line x1="404" y1="202" x2="404" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="418" y="224.5" class="td" fill="#444444">2–3</text>
+<line x1="519" y1="202" x2="519" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="533" y="224.5" class="td" fill="#444444">TITA</text>
+<line x1="596" y1="202" x2="596" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="610" y="224.5" class="td" fill="#444444">~10%</text>
+<rect x="24" y="242" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="242" x2="964" y2="242" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="268.5" class="td" fill="#444444">Odd One Out (sentence)</text>
+<line x1="404" y1="246" x2="404" y2="282" stroke="#C8DDD0" stroke-width="1"/>
+<text x="418" y="268.5" class="td" fill="#444444">2–3</text>
+<line x1="519" y1="246" x2="519" y2="282" stroke="#C8DDD0" stroke-width="1"/>
+<text x="533" y="268.5" class="td" fill="#444444">TITA</text>
+<line x1="596" y1="246" x2="596" y2="282" stroke="#C8DDD0" stroke-width="1"/>
+<text x="610" y="268.5" class="td" fill="#444444">~8%</text>
+<rect x="24" y="66" width="940" height="220" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

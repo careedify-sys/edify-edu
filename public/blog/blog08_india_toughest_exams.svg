@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="444" viewBox="0 0 988 444" role="img" aria-label="Blog 8: India toughest exams">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="444" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="358" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 8: India toughest exams</text>
+<rect x="24" y="66" width="940" height="56" fill="#1A6B2B"/>
+<text x="38" y="98.5" class="th" fill="#FFFFFF">Exam</text>
+<line x1="151" y1="70" x2="151" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="165" y="98.5" class="th" fill="#FFFFFF">Governing body</text>
+<line x1="369" y1="70" x2="369" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="383" y="98.5" class="th" fill="#FFFFFF">Final selection rate</text>
+<line x1="617" y1="70" x2="617" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="631" y="98.5" class="th" fill="#FFFFFF">Stages</text>
+<line x1="881" y1="70" x2="881" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="895" y="89.5" class="th" fill="#FFFFFF">Years to</text>
+<text x="895" y="107.5" class="th" fill="#FFFFFF">prepare</text>
+<rect x="24" y="122" width="940" height="74" fill="#FFFFFF"/>
+<line x1="24" y1="122" x2="964" y2="122" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="145.5" class="td" fill="#444444">UPSC Civil</text>
+<text x="38" y="163.5" class="td" fill="#444444">Services</text>
+<text x="38" y="181.5" class="td" fill="#444444">(CSE)</text>
+<line x1="151" y1="126" x2="151" y2="192" stroke="#C8DDD0" stroke-width="1"/>
+<text x="165" y="154.5" class="td" fill="#444444">Union Public Service</text>
+<text x="165" y="172.5" class="td" fill="#444444">Commission</text>
+<line x1="369" y1="126" x2="369" y2="192" stroke="#C8DDD0" stroke-width="1"/>
+<text x="383" y="163.5" class="td" fill="#444444">~0.1–0.2%</text>
+<line x1="617" y1="126" x2="617" y2="192" stroke="#C8DDD0" stroke-width="1"/>
+<text x="631" y="163.5" class="td" fill="#444444">Prelims + Mains + Interview</text>
+<line x1="881" y1="126" x2="881" y2="192" stroke="#C8DDD0" stroke-width="1"/>
+<text x="895" y="154.5" class="td" fill="#444444">2–5</text>
+<text x="895" y="172.5" class="td" fill="#444444">years</text>
+<rect x="24" y="196" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="196" x2="964" y2="196" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="219.5" class="td" fill="#444444">IIT JEE</text>
+<text x="38" y="237.5" class="td" fill="#444444">Advanced</text>
+<line x1="151" y1="200" x2="151" y2="248" stroke="#C8DDD0" stroke-width="1"/>
+<text x="165" y="228.5" class="td" fill="#444444">IITs (rotational)</text>
+<line x1="369" y1="200" x2="369" y2="248" stroke="#C8DDD0" stroke-width="1"/>
+<text x="383" y="219.5" class="td" fill="#444444">~1–3% of JEE Main; &lt;2% of all</text>
+<text x="383" y="237.5" class="td" fill="#444444">JEE Main candidates</text>
+<line x1="617" y1="200" x2="617" y2="248" stroke="#C8DDD0" stroke-width="1"/>
+<text x="631" y="228.5" class="td" fill="#444444">JEE Main + JEE Advanced</text>
+<line x1="881" y1="200" x2="881" y2="248" stroke="#C8DDD0" stroke-width="1"/>
+<text x="895" y="219.5" class="td" fill="#444444">2–4</text>
+<text x="895" y="237.5" class="td" fill="#444444">years</text>
+<rect x="24" y="252" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="252" x2="964" y2="252" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="275.5" class="td" fill="#444444">CA Final</text>
+<text x="38" y="293.5" class="td" fill="#444444">(ICAI)</text>
+<line x1="151" y1="256" x2="151" y2="304" stroke="#C8DDD0" stroke-width="1"/>
+<text x="165" y="275.5" class="td" fill="#444444">Institute of Chartered</text>
+<text x="165" y="293.5" class="td" fill="#444444">Accountants of India</text>
+<line x1="369" y1="256" x2="369" y2="304" stroke="#C8DDD0" stroke-width="1"/>
+<text x="383" y="284.5" class="td" fill="#444444">10–15% at Final level</text>
+<line x1="617" y1="256" x2="617" y2="304" stroke="#C8DDD0" stroke-width="1"/>
+<text x="631" y="275.5" class="td" fill="#444444">Foundation + Intermediate +</text>
+<text x="631" y="293.5" class="td" fill="#444444">Final + 3-yr articleship</text>
+<line x1="881" y1="256" x2="881" y2="304" stroke="#C8DDD0" stroke-width="1"/>
+<text x="895" y="275.5" class="td" fill="#444444">3–5</text>
+<text x="895" y="293.5" class="td" fill="#444444">years</text>
+<rect x="24" y="308" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="308" x2="964" y2="308" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="340.5" class="td" fill="#444444">NEET-UG</text>
+<line x1="151" y1="312" x2="151" y2="360" stroke="#C8DDD0" stroke-width="1"/>
+<text x="165" y="331.5" class="td" fill="#444444">NTA (National Testing</text>
+<text x="165" y="349.5" class="td" fill="#444444">Agency)</text>
+<line x1="369" y1="312" x2="369" y2="360" stroke="#C8DDD0" stroke-width="1"/>
+<text x="383" y="340.5" class="td" fill="#444444">~7–8% for MBBS seats</text>
+<line x1="617" y1="312" x2="617" y2="360" stroke="#C8DDD0" stroke-width="1"/>
+<text x="631" y="331.5" class="td" fill="#444444">Single exam, enormous</text>
+<text x="631" y="349.5" class="td" fill="#444444">competition</text>
+<line x1="881" y1="312" x2="881" y2="360" stroke="#C8DDD0" stroke-width="1"/>
+<text x="895" y="331.5" class="td" fill="#444444">2–3</text>
+<text x="895" y="349.5" class="td" fill="#444444">years</text>
+<rect x="24" y="364" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="364" x2="964" y2="364" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="396.5" class="td" fill="#444444">GATE</text>
+<line x1="151" y1="368" x2="151" y2="416" stroke="#C8DDD0" stroke-width="1"/>
+<text x="165" y="396.5" class="td" fill="#444444">IITs and IISc (rotational)</text>
+<line x1="369" y1="368" x2="369" y2="416" stroke="#C8DDD0" stroke-width="1"/>
+<text x="383" y="396.5" class="td" fill="#444444">15–18% pass rate</text>
+<line x1="617" y1="368" x2="617" y2="416" stroke="#C8DDD0" stroke-width="1"/>
+<text x="631" y="396.5" class="td" fill="#444444">Single exam</text>
+<line x1="881" y1="368" x2="881" y2="416" stroke="#C8DDD0" stroke-width="1"/>
+<text x="895" y="387.5" class="td" fill="#444444">6–18</text>
+<text x="895" y="405.5" class="td" fill="#444444">months</text>
+<rect x="24" y="66" width="940" height="354" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

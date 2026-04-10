@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="446" viewBox="0 0 988 446" role="img" aria-label="Blog 9: IAS salary components">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="446" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="360" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 9: IAS salary components</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">Component</text>
+<line x1="235" y1="70" x2="235" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="249" y="92.5" class="th" fill="#FFFFFF">Amount / Rate</text>
+<line x1="423" y1="70" x2="423" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="437" y="92.5" class="th" fill="#FFFFFF">Notes</text>
+<rect x="24" y="110" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="136.5" class="td" fill="#444444">Basic Pay (Pay Level 10)</text>
+<line x1="235" y1="114" x2="235" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="249" y="136.5" class="td" fill="#444444">Rs. 56,100/month</text>
+<line x1="423" y1="114" x2="423" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="437" y="136.5" class="td" fill="#444444">Same for every fresh IAS officer regardless of AIR rank</text>
+<rect x="24" y="154" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="154" x2="964" y2="154" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="180.5" class="td" fill="#444444">Dearness Allowance (DA)</text>
+<line x1="235" y1="158" x2="235" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="249" y="180.5" class="td" fill="#444444">~38–46% of basic pay</text>
+<line x1="423" y1="158" x2="423" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="437" y="180.5" class="td" fill="#444444">Revised twice yearly in Jan and July; compensates for inflation</text>
+<rect x="24" y="198" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="198" x2="964" y2="198" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="221.5" class="td" fill="#444444">House Rent Allowance</text>
+<text x="38" y="239.5" class="td" fill="#444444">(HRA)</text>
+<line x1="235" y1="202" x2="235" y2="250" stroke="#C8DDD0" stroke-width="1"/>
+<text x="249" y="230.5" class="td" fill="#444444">8–24% of basic pay</text>
+<line x1="423" y1="202" x2="423" y2="250" stroke="#C8DDD0" stroke-width="1"/>
+<text x="437" y="230.5" class="td" fill="#444444">Only if not in govt. accommodation. X city: 24%, Y: 16%, Z: 8%</text>
+<rect x="24" y="254" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="254" x2="964" y2="254" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="286.5" class="td" fill="#444444">Transport Allowance (TA)</text>
+<line x1="235" y1="258" x2="235" y2="306" stroke="#C8DDD0" stroke-width="1"/>
+<text x="249" y="277.5" class="td" fill="#444444">Variable by posting</text>
+<text x="249" y="295.5" class="td" fill="#444444">city</text>
+<line x1="423" y1="258" x2="423" y2="306" stroke="#C8DDD0" stroke-width="1"/>
+<text x="437" y="286.5" class="td" fill="#444444">Fixed per level, revised periodically</text>
+<rect x="24" y="310" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="310" x2="964" y2="310" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="342.5" class="td" fill="#444444">Training stipend (LBSNAA)</text>
+<line x1="235" y1="314" x2="235" y2="362" stroke="#C8DDD0" stroke-width="1"/>
+<text x="249" y="333.5" class="td" fill="#444444">Rs.</text>
+<text x="249" y="351.5" class="td" fill="#444444">35,000–40,000/month</text>
+<line x1="423" y1="314" x2="423" y2="362" stroke="#C8DDD0" stroke-width="1"/>
+<text x="437" y="342.5" class="td" fill="#444444">During initial 2-year training at Mussoorie — lower due to deductions</text>
+<rect x="24" y="366" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="366" x2="964" y2="366" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="389.5" class="td" fill="#444444">Gross in-hand (entry</text>
+<text x="38" y="407.5" class="td" fill="#444444">level)</text>
+<line x1="235" y1="370" x2="235" y2="418" stroke="#C8DDD0" stroke-width="1"/>
+<text x="249" y="389.5" class="td" fill="#444444">Rs.</text>
+<text x="249" y="407.5" class="td" fill="#444444">70,000–85,000/month</text>
+<line x1="423" y1="370" x2="423" y2="418" stroke="#C8DDD0" stroke-width="1"/>
+<text x="437" y="398.5" class="td" fill="#444444">After adding DA, HRA, TA and applicable deductions</text>
+<rect x="24" y="66" width="940" height="356" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

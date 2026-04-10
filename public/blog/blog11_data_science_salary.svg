@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="310" viewBox="0 0 988 310" role="img" aria-label="Blog 11: Data science salary by role">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="310" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="224" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 11: Data science salary by role</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">Role</text>
+<line x1="227" y1="70" x2="227" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="241" y="92.5" class="th" fill="#FFFFFF">Fresher (0–2 yrs)</text>
+<line x1="419" y1="70" x2="419" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="433" y="92.5" class="th" fill="#FFFFFF">Mid-level (3–6 yrs)</text>
+<line x1="634" y1="70" x2="634" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="648" y="92.5" class="th" fill="#FFFFFF">Senior (6–10 yrs)</text>
+<rect x="24" y="110" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="136.5" class="td" fill="#444444">Data Analyst</text>
+<line x1="227" y1="114" x2="227" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="241" y="136.5" class="td" fill="#444444">Rs. 4–8 LPA</text>
+<line x1="419" y1="114" x2="419" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="433" y="136.5" class="td" fill="#444444">Rs. 8–15 LPA</text>
+<line x1="634" y1="114" x2="634" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="648" y="136.5" class="td" fill="#444444">Rs. 15–25 LPA</text>
+<rect x="24" y="154" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="154" x2="964" y2="154" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="180.5" class="td" fill="#444444">Data Scientist</text>
+<line x1="227" y1="158" x2="227" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="241" y="180.5" class="td" fill="#444444">Rs. 7–12 LPA</text>
+<line x1="419" y1="158" x2="419" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="433" y="180.5" class="td" fill="#444444">Rs. 12–25 LPA</text>
+<line x1="634" y1="158" x2="634" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="648" y="180.5" class="td" fill="#444444">Rs. 25–45 LPA</text>
+<rect x="24" y="198" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="198" x2="964" y2="198" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="224.5" class="td" fill="#444444">ML Engineer</text>
+<line x1="227" y1="202" x2="227" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="241" y="224.5" class="td" fill="#444444">Rs. 6–12 LPA</text>
+<line x1="419" y1="202" x2="419" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="433" y="224.5" class="td" fill="#444444">Rs. 15–30 LPA</text>
+<line x1="634" y1="202" x2="634" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="648" y="224.5" class="td" fill="#444444">Rs. 30–55 LPA</text>
+<rect x="24" y="242" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="242" x2="964" y2="242" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="268.5" class="td" fill="#444444">Chief Data Officer</text>
+<line x1="227" y1="246" x2="227" y2="282" stroke="#C8DDD0" stroke-width="1"/>
+<text x="241" y="268.5" class="td" fill="#444444">N/A</text>
+<line x1="419" y1="246" x2="419" y2="282" stroke="#C8DDD0" stroke-width="1"/>
+<text x="433" y="268.5" class="td" fill="#444444">N/A</text>
+<line x1="634" y1="246" x2="634" y2="282" stroke="#C8DDD0" stroke-width="1"/>
+<text x="648" y="268.5" class="td" fill="#444444">Rs. 80 lakh–2 crore (15+ yrs)</text>
+<rect x="24" y="66" width="940" height="220" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

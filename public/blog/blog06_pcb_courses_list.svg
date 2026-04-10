@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="470" viewBox="0 0 988 470" role="img" aria-label="Blog 6: PCB courses list">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="470" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="384" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 6: PCB courses list</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">Course</text>
+<line x1="159" y1="70" x2="159" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="173" y="92.5" class="th" fill="#FFFFFF">Duration</text>
+<line x1="223" y1="70" x2="223" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="237" y="92.5" class="th" fill="#FFFFFF">Entrance exam</text>
+<line x1="450" y1="70" x2="450" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="464" y="92.5" class="th" fill="#FFFFFF">Starting salary</text>
+<rect x="24" y="110" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="142.5" class="td" fill="#444444">MBBS</text>
+<line x1="159" y1="114" x2="159" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="173" y="133.5" class="td" fill="#444444">5.5</text>
+<text x="173" y="151.5" class="td" fill="#444444">years</text>
+<line x1="223" y1="114" x2="223" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="237" y="142.5" class="td" fill="#444444">NEET-UG</text>
+<line x1="450" y1="114" x2="450" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="464" y="133.5" class="td" fill="#444444">Rs. 6–15 LPA (government) / Rs. 10–25 LPA (corporate hospitals</text>
+<text x="464" y="151.5" class="td" fill="#444444">after PG)</text>
+<rect x="24" y="166" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="166" x2="964" y2="166" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="189.5" class="td" fill="#444444">BDS</text>
+<text x="38" y="207.5" class="td" fill="#444444">(Dentistry)</text>
+<line x1="159" y1="170" x2="159" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="173" y="198.5" class="td" fill="#444444">5 years</text>
+<line x1="223" y1="170" x2="223" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="237" y="198.5" class="td" fill="#444444">NEET-UG</text>
+<line x1="450" y1="170" x2="450" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="464" y="198.5" class="td" fill="#444444">Rs. 5–12 LPA (builds significantly with own practice)</text>
+<rect x="24" y="222" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="222" x2="964" y2="222" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="254.5" class="td" fill="#444444">B.Sc Nursing</text>
+<line x1="159" y1="226" x2="159" y2="274" stroke="#C8DDD0" stroke-width="1"/>
+<text x="173" y="254.5" class="td" fill="#444444">4 years</text>
+<line x1="223" y1="226" x2="223" y2="274" stroke="#C8DDD0" stroke-width="1"/>
+<text x="237" y="245.5" class="td" fill="#444444">NEET-UG / state nursing</text>
+<text x="237" y="263.5" class="td" fill="#444444">entrance</text>
+<line x1="450" y1="226" x2="450" y2="274" stroke="#C8DDD0" stroke-width="1"/>
+<text x="464" y="254.5" class="td" fill="#444444">Rs. 3–8 LPA in India / Rs. 20–60 LPA equivalent abroad</text>
+<rect x="24" y="278" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="278" x2="964" y2="278" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="301.5" class="td" fill="#444444">B.Pharm</text>
+<text x="38" y="319.5" class="td" fill="#444444">(Pharmacy)</text>
+<line x1="159" y1="282" x2="159" y2="330" stroke="#C8DDD0" stroke-width="1"/>
+<text x="173" y="310.5" class="td" fill="#444444">4 years</text>
+<line x1="223" y1="282" x2="223" y2="330" stroke="#C8DDD0" stroke-width="1"/>
+<text x="237" y="301.5" class="td" fill="#444444">NEET-UG / state pharma</text>
+<text x="237" y="319.5" class="td" fill="#444444">entrance</text>
+<line x1="450" y1="282" x2="450" y2="330" stroke="#C8DDD0" stroke-width="1"/>
+<text x="464" y="310.5" class="td" fill="#444444">Rs. 3–8 LPA (clinical research pays higher)</text>
+<rect x="24" y="334" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="334" x2="964" y2="334" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="357.5" class="td" fill="#444444">B.Sc</text>
+<text x="38" y="375.5" class="td" fill="#444444">Biotechnology</text>
+<line x1="159" y1="338" x2="159" y2="386" stroke="#C8DDD0" stroke-width="1"/>
+<text x="173" y="366.5" class="td" fill="#444444">3 years</text>
+<line x1="223" y1="338" x2="223" y2="386" stroke="#C8DDD0" stroke-width="1"/>
+<text x="237" y="366.5" class="td" fill="#444444">Merit-based</text>
+<line x1="450" y1="338" x2="450" y2="386" stroke="#C8DDD0" stroke-width="1"/>
+<text x="464" y="366.5" class="td" fill="#444444">Rs. 3–7 LPA (R&amp;D or pharma; improves significantly with M.Sc)</text>
+<rect x="24" y="390" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="390" x2="964" y2="390" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="413.5" class="td" fill="#444444">BPT (Physiothe</text>
+<text x="38" y="431.5" class="td" fill="#444444">rapy)</text>
+<line x1="159" y1="394" x2="159" y2="442" stroke="#C8DDD0" stroke-width="1"/>
+<text x="173" y="413.5" class="td" fill="#444444">4.5</text>
+<text x="173" y="431.5" class="td" fill="#444444">years</text>
+<line x1="223" y1="394" x2="223" y2="442" stroke="#C8DDD0" stroke-width="1"/>
+<text x="237" y="422.5" class="td" fill="#444444">NEET-UG / state entrance</text>
+<line x1="450" y1="394" x2="450" y2="442" stroke="#C8DDD0" stroke-width="1"/>
+<text x="464" y="422.5" class="td" fill="#444444">Rs. 3–8 LPA (higher with specialization or abroad)</text>
+<rect x="24" y="66" width="940" height="380" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="570" viewBox="0 0 988 570" role="img" aria-label="Blog 9: IAS non-monetary perks">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="570" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="484" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 9: IAS non-monetary perks</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">Perk</text>
+<line x1="179" y1="70" x2="179" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="193" y="92.5" class="th" fill="#FFFFFF">Value</text>
+<line x1="479" y1="70" x2="479" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="493" y="92.5" class="th" fill="#FFFFFF">Honest note</text>
+<rect x="24" y="110" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="133.5" class="td" fill="#444444">Government</text>
+<text x="38" y="151.5" class="td" fill="#444444">accommodation</text>
+<line x1="179" y1="114" x2="179" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="193" y="133.5" class="td" fill="#444444">A furnished bungalow in prime</text>
+<text x="193" y="151.5" class="td" fill="#444444">government areas</text>
+<line x1="479" y1="114" x2="479" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="493" y="133.5" class="td" fill="#444444">Rent-free. In Delhi or Mumbai, this alone is worth Rs. 1.5–3</text>
+<text x="493" y="151.5" class="td" fill="#444444">lakh/month in market rent.</text>
+<rect x="24" y="166" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="166" x2="964" y2="166" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="189.5" class="td" fill="#444444">Official vehicle</text>
+<text x="38" y="207.5" class="td" fill="#444444">and driver</text>
+<line x1="179" y1="170" x2="179" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="193" y="198.5" class="td" fill="#444444">Car with driver for official duties</text>
+<line x1="479" y1="170" x2="479" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="493" y="198.5" class="td" fill="#444444">Scales with seniority. At senior levels, multiple vehicles.</text>
+<rect x="24" y="222" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="222" x2="964" y2="222" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="254.5" class="td" fill="#444444">Household staff</text>
+<line x1="179" y1="226" x2="179" y2="274" stroke="#C8DDD0" stroke-width="1"/>
+<text x="193" y="245.5" class="td" fill="#444444">Cook, security, maids at senior</text>
+<text x="193" y="263.5" class="td" fill="#444444">postings</text>
+<line x1="479" y1="226" x2="479" y2="274" stroke="#C8DDD0" stroke-width="1"/>
+<text x="493" y="254.5" class="td" fill="#444444">Provided by the state government.</text>
+<rect x="24" y="278" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="278" x2="964" y2="278" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="301.5" class="td" fill="#444444">Medical coverage</text>
+<text x="38" y="319.5" class="td" fill="#444444">(CGHS)</text>
+<line x1="179" y1="282" x2="179" y2="330" stroke="#C8DDD0" stroke-width="1"/>
+<text x="193" y="310.5" class="td" fill="#444444">Comprehensive for officer and family</text>
+<line x1="479" y1="282" x2="479" y2="330" stroke="#C8DDD0" stroke-width="1"/>
+<text x="493" y="310.5" class="td" fill="#444444">Covers most expenses at government hospitals.</text>
+<rect x="24" y="334" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="334" x2="964" y2="334" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="360.5" class="td" fill="#444444">Study leave</text>
+<line x1="179" y1="338" x2="179" y2="374" stroke="#C8DDD0" stroke-width="1"/>
+<text x="193" y="360.5" class="td" fill="#444444">Up to 2–4 years, paid</text>
+<line x1="479" y1="338" x2="479" y2="374" stroke="#C8DDD0" stroke-width="1"/>
+<text x="493" y="360.5" class="td" fill="#444444">Officers can study at international universities on paid leave.</text>
+<rect x="24" y="378" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="378" x2="964" y2="378" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="410.5" class="td" fill="#444444">Job security</text>
+<line x1="179" y1="382" x2="179" y2="430" stroke="#C8DDD0" stroke-width="1"/>
+<text x="193" y="401.5" class="td" fill="#444444">Near-complete; dismissal is</text>
+<text x="193" y="419.5" class="td" fill="#444444">constitutionally protected</text>
+<line x1="479" y1="382" x2="479" y2="430" stroke="#C8DDD0" stroke-width="1"/>
+<text x="493" y="410.5" class="td" fill="#444444">Cannot be removed without a lengthy due process.</text>
+<rect x="24" y="434" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="434" x2="964" y2="434" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="457.5" class="td" fill="#444444">Post-retirement</text>
+<text x="38" y="475.5" class="td" fill="#444444">appointments</text>
+<line x1="179" y1="438" x2="179" y2="486" stroke="#C8DDD0" stroke-width="1"/>
+<text x="193" y="457.5" class="td" fill="#444444">Tribunals, regulatory bodies, UN</text>
+<text x="193" y="475.5" class="td" fill="#444444">postings</text>
+<line x1="479" y1="438" x2="479" y2="486" stroke="#C8DDD0" stroke-width="1"/>
+<text x="493" y="466.5" class="td" fill="#444444">Many retired IAS officers continue earning in advisory roles.</text>
+<rect x="24" y="490" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="490" x2="964" y2="490" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="513.5" class="td" fill="#444444">Pension (pre-2004</text>
+<text x="38" y="531.5" class="td" fill="#444444">batch)</text>
+<line x1="179" y1="494" x2="179" y2="542" stroke="#C8DDD0" stroke-width="1"/>
+<text x="193" y="522.5" class="td" fill="#444444">Defined benefit — 50% of last salary</text>
+<line x1="479" y1="494" x2="479" y2="542" stroke="#C8DDD0" stroke-width="1"/>
+<text x="493" y="522.5" class="td" fill="#444444">Very valuable long-term. Post-2004 batch gets NPS instead.</text>
+<rect x="24" y="66" width="940" height="480" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="334" viewBox="0 0 988 334" role="img" aria-label="Blog 18: Top LLM colleges India">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="334" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="248" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 18: Top LLM colleges India</text>
+<rect x="24" y="66" width="940" height="56" fill="#1A6B2B"/>
+<text x="38" y="98.5" class="th" fill="#FFFFFF">Institution type</text>
+<line x1="307" y1="70" x2="307" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="321" y="89.5" class="th" fill="#FFFFFF">Fee range</text>
+<text x="321" y="107.5" class="th" fill="#FFFFFF">(total)</text>
+<line x1="457" y1="70" x2="457" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="471" y="98.5" class="th" fill="#FFFFFF">Examples</text>
+<rect x="24" y="122" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="122" x2="964" y2="122" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="148.5" class="td" fill="#444444">National Law Universities (NLUs)</text>
+<line x1="307" y1="126" x2="307" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="321" y="148.5" class="td" fill="#444444">Rs. 1–3 lakh</text>
+<line x1="457" y1="126" x2="457" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="471" y="148.5" class="td" fill="#444444">NLSIU Bangalore, NLU Delhi, NALSAR Hyderabad, NLU Jodhpur</text>
+<rect x="24" y="166" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="166" x2="964" y2="166" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="198.5" class="td" fill="#444444">Central Universities</text>
+<line x1="307" y1="170" x2="307" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="321" y="189.5" class="td" fill="#444444">Rs. 20,000–1</text>
+<text x="321" y="207.5" class="td" fill="#444444">lakh</text>
+<line x1="457" y1="170" x2="457" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="471" y="198.5" class="td" fill="#444444">Delhi University Faculty of Law, BHU Law School, JMI</text>
+<rect x="24" y="222" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="222" x2="964" y2="222" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="248.5" class="td" fill="#444444">Top Private Law Schools</text>
+<line x1="307" y1="226" x2="307" y2="262" stroke="#C8DDD0" stroke-width="1"/>
+<text x="321" y="248.5" class="td" fill="#444444">Rs. 2–8 lakh</text>
+<line x1="457" y1="226" x2="457" y2="262" stroke="#C8DDD0" stroke-width="1"/>
+<text x="471" y="248.5" class="td" fill="#444444">Jindal Global Law School, Symbiosis Law School Pune</text>
+<rect x="24" y="266" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="266" x2="964" y2="266" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="292.5" class="td" fill="#444444">IIMs (Legal Management programs)</text>
+<line x1="307" y1="270" x2="307" y2="306" stroke="#C8DDD0" stroke-width="1"/>
+<text x="321" y="292.5" class="td" fill="#444444">Rs. 5–15 lakh</text>
+<line x1="457" y1="270" x2="457" y2="306" stroke="#C8DDD0" stroke-width="1"/>
+<text x="471" y="292.5" class="td" fill="#444444">IIM Calcutta has programs at law-management intersection</text>
+<rect x="24" y="66" width="940" height="244" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

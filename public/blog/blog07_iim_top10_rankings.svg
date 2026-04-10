@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="586" viewBox="0 0 988 586" role="img" aria-label="Blog 7: Top 10 IIM rankings 2026">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="586" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="500" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 7: Top 10 IIM rankings 2026</text>
+<rect x="24" y="66" width="940" height="56" fill="#1A6B2B"/>
+<text x="38" y="89.5" class="th" fill="#FFFFFF">NIRF</text>
+<text x="38" y="107.5" class="th" fill="#FFFFFF">Rank</text>
+<line x1="110" y1="70" x2="110" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="124" y="98.5" class="th" fill="#FFFFFF">IIM</text>
+<line x1="311" y1="70" x2="311" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="325" y="98.5" class="th" fill="#FFFFFF">Location</text>
+<line x1="445" y1="70" x2="445" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="459" y="98.5" class="th" fill="#FFFFFF">Avg Package (LPA)</text>
+<line x1="608" y1="70" x2="608" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="622" y="98.5" class="th" fill="#FFFFFF">Total Fees (2 yr)</text>
+<line x1="771" y1="70" x2="771" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="785" y="98.5" class="th" fill="#FFFFFF">CAT Cutoff (approx.)</text>
+<rect x="24" y="122" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="122" x2="964" y2="122" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="148.5" class="td" fill="#444444">1</text>
+<line x1="110" y1="126" x2="110" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="124" y="148.5" class="td" fill="#444444">IIM Ahmedabad (IIMA)</text>
+<line x1="311" y1="126" x2="311" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="325" y="148.5" class="td" fill="#444444">Gujarat</text>
+<line x1="445" y1="126" x2="445" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="459" y="148.5" class="td" fill="#444444">Rs. 35–40 LPA</text>
+<line x1="608" y1="126" x2="608" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="622" y="148.5" class="td" fill="#444444">Rs. 25–28 L</text>
+<line x1="771" y1="126" x2="771" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="785" y="148.5" class="td" fill="#444444">99+ percentile</text>
+<rect x="24" y="166" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="166" x2="964" y2="166" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="192.5" class="td" fill="#444444">2</text>
+<line x1="110" y1="170" x2="110" y2="206" stroke="#C8DDD0" stroke-width="1"/>
+<text x="124" y="192.5" class="td" fill="#444444">IIM Bangalore (IIMB)</text>
+<line x1="311" y1="170" x2="311" y2="206" stroke="#C8DDD0" stroke-width="1"/>
+<text x="325" y="192.5" class="td" fill="#444444">Karnataka</text>
+<line x1="445" y1="170" x2="445" y2="206" stroke="#C8DDD0" stroke-width="1"/>
+<text x="459" y="192.5" class="td" fill="#444444">Rs. 33–38 LPA</text>
+<line x1="608" y1="170" x2="608" y2="206" stroke="#C8DDD0" stroke-width="1"/>
+<text x="622" y="192.5" class="td" fill="#444444">Rs. 24–26 L</text>
+<line x1="771" y1="170" x2="771" y2="206" stroke="#C8DDD0" stroke-width="1"/>
+<text x="785" y="192.5" class="td" fill="#444444">99+ percentile</text>
+<rect x="24" y="210" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="210" x2="964" y2="210" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="236.5" class="td" fill="#444444">3</text>
+<line x1="110" y1="214" x2="110" y2="250" stroke="#C8DDD0" stroke-width="1"/>
+<text x="124" y="236.5" class="td" fill="#444444">IIM Kozhikode (IIMK)</text>
+<line x1="311" y1="214" x2="311" y2="250" stroke="#C8DDD0" stroke-width="1"/>
+<text x="325" y="236.5" class="td" fill="#444444">Kerala</text>
+<line x1="445" y1="214" x2="445" y2="250" stroke="#C8DDD0" stroke-width="1"/>
+<text x="459" y="236.5" class="td" fill="#444444">Rs. 31–34 LPA</text>
+<line x1="608" y1="214" x2="608" y2="250" stroke="#C8DDD0" stroke-width="1"/>
+<text x="622" y="236.5" class="td" fill="#444444">Rs. 21–23 L</text>
+<line x1="771" y1="214" x2="771" y2="250" stroke="#C8DDD0" stroke-width="1"/>
+<text x="785" y="236.5" class="td" fill="#444444">97–99 percentile</text>
+<rect x="24" y="254" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="254" x2="964" y2="254" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="280.5" class="td" fill="#444444">4</text>
+<line x1="110" y1="258" x2="110" y2="294" stroke="#C8DDD0" stroke-width="1"/>
+<text x="124" y="280.5" class="td" fill="#444444">IIM Lucknow (IIML)</text>
+<line x1="311" y1="258" x2="311" y2="294" stroke="#C8DDD0" stroke-width="1"/>
+<text x="325" y="280.5" class="td" fill="#444444">Uttar Pradesh</text>
+<line x1="445" y1="258" x2="445" y2="294" stroke="#C8DDD0" stroke-width="1"/>
+<text x="459" y="280.5" class="td" fill="#444444">Rs. 28–33 LPA</text>
+<line x1="608" y1="258" x2="608" y2="294" stroke="#C8DDD0" stroke-width="1"/>
+<text x="622" y="280.5" class="td" fill="#444444">Rs. 20–22 L</text>
+<line x1="771" y1="258" x2="771" y2="294" stroke="#C8DDD0" stroke-width="1"/>
+<text x="785" y="280.5" class="td" fill="#444444">97–99 percentile</text>
+<rect x="24" y="298" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="298" x2="964" y2="298" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="324.5" class="td" fill="#444444">5</text>
+<line x1="110" y1="302" x2="110" y2="338" stroke="#C8DDD0" stroke-width="1"/>
+<text x="124" y="324.5" class="td" fill="#444444">IIM Calcutta (IIMC)</text>
+<line x1="311" y1="302" x2="311" y2="338" stroke="#C8DDD0" stroke-width="1"/>
+<text x="325" y="324.5" class="td" fill="#444444">West Bengal</text>
+<line x1="445" y1="302" x2="445" y2="338" stroke="#C8DDD0" stroke-width="1"/>
+<text x="459" y="324.5" class="td" fill="#444444">Rs. 34–38 LPA</text>
+<line x1="608" y1="302" x2="608" y2="338" stroke="#C8DDD0" stroke-width="1"/>
+<text x="622" y="324.5" class="td" fill="#444444">Rs. 27–30 L</text>
+<line x1="771" y1="302" x2="771" y2="338" stroke="#C8DDD0" stroke-width="1"/>
+<text x="785" y="324.5" class="td" fill="#444444">99+ percentile</text>
+<rect x="24" y="342" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="342" x2="964" y2="342" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="368.5" class="td" fill="#444444">6</text>
+<line x1="110" y1="346" x2="110" y2="382" stroke="#C8DDD0" stroke-width="1"/>
+<text x="124" y="368.5" class="td" fill="#444444">IIM Mumbai (ex-NITIE)</text>
+<line x1="311" y1="346" x2="311" y2="382" stroke="#C8DDD0" stroke-width="1"/>
+<text x="325" y="368.5" class="td" fill="#444444">Maharashtra</text>
+<line x1="445" y1="346" x2="445" y2="382" stroke="#C8DDD0" stroke-width="1"/>
+<text x="459" y="368.5" class="td" fill="#444444">Rs. 28–30 LPA</text>
+<line x1="608" y1="346" x2="608" y2="382" stroke="#C8DDD0" stroke-width="1"/>
+<text x="622" y="368.5" class="td" fill="#444444">Rs. 20–22 L</text>
+<line x1="771" y1="346" x2="771" y2="382" stroke="#C8DDD0" stroke-width="1"/>
+<text x="785" y="368.5" class="td" fill="#444444">95–98 percentile</text>
+<rect x="24" y="386" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="386" x2="964" y2="386" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="412.5" class="td" fill="#444444">7</text>
+<line x1="110" y1="390" x2="110" y2="426" stroke="#C8DDD0" stroke-width="1"/>
+<text x="124" y="412.5" class="td" fill="#444444">IIM Indore (IIMI)</text>
+<line x1="311" y1="390" x2="311" y2="426" stroke="#C8DDD0" stroke-width="1"/>
+<text x="325" y="412.5" class="td" fill="#444444">Madhya Pradesh</text>
+<line x1="445" y1="390" x2="445" y2="426" stroke="#C8DDD0" stroke-width="1"/>
+<text x="459" y="412.5" class="td" fill="#444444">Rs. 25–28 LPA</text>
+<line x1="608" y1="390" x2="608" y2="426" stroke="#C8DDD0" stroke-width="1"/>
+<text x="622" y="412.5" class="td" fill="#444444">Rs. 19–21 L</text>
+<line x1="771" y1="390" x2="771" y2="426" stroke="#C8DDD0" stroke-width="1"/>
+<text x="785" y="412.5" class="td" fill="#444444">95–97 percentile</text>
+<rect x="24" y="430" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="430" x2="964" y2="430" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="456.5" class="td" fill="#444444">8</text>
+<line x1="110" y1="434" x2="110" y2="470" stroke="#C8DDD0" stroke-width="1"/>
+<text x="124" y="456.5" class="td" fill="#444444">IIM Rohtak</text>
+<line x1="311" y1="434" x2="311" y2="470" stroke="#C8DDD0" stroke-width="1"/>
+<text x="325" y="456.5" class="td" fill="#444444">Haryana</text>
+<line x1="445" y1="434" x2="445" y2="470" stroke="#C8DDD0" stroke-width="1"/>
+<text x="459" y="456.5" class="td" fill="#444444">Rs. 18–21 LPA</text>
+<line x1="608" y1="434" x2="608" y2="470" stroke="#C8DDD0" stroke-width="1"/>
+<text x="622" y="456.5" class="td" fill="#444444">Rs. 17–19 L</text>
+<line x1="771" y1="434" x2="771" y2="470" stroke="#C8DDD0" stroke-width="1"/>
+<text x="785" y="456.5" class="td" fill="#444444">90–95 percentile</text>
+<rect x="24" y="474" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="474" x2="964" y2="474" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="500.5" class="td" fill="#444444">9</text>
+<line x1="110" y1="478" x2="110" y2="514" stroke="#C8DDD0" stroke-width="1"/>
+<text x="124" y="500.5" class="td" fill="#444444">IIM Raipur</text>
+<line x1="311" y1="478" x2="311" y2="514" stroke="#C8DDD0" stroke-width="1"/>
+<text x="325" y="500.5" class="td" fill="#444444">Chhattisgarh</text>
+<line x1="445" y1="478" x2="445" y2="514" stroke="#C8DDD0" stroke-width="1"/>
+<text x="459" y="500.5" class="td" fill="#444444">Rs. 18–20 LPA</text>
+<line x1="608" y1="478" x2="608" y2="514" stroke="#C8DDD0" stroke-width="1"/>
+<text x="622" y="500.5" class="td" fill="#444444">Rs. 18–20 L</text>
+<line x1="771" y1="478" x2="771" y2="514" stroke="#C8DDD0" stroke-width="1"/>
+<text x="785" y="500.5" class="td" fill="#444444">90–95 percentile</text>
+<rect x="24" y="518" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="518" x2="964" y2="518" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="544.5" class="td" fill="#444444">10</text>
+<line x1="110" y1="522" x2="110" y2="558" stroke="#C8DDD0" stroke-width="1"/>
+<text x="124" y="544.5" class="td" fill="#444444">IIM Tiruchirappalli</text>
+<line x1="311" y1="522" x2="311" y2="558" stroke="#C8DDD0" stroke-width="1"/>
+<text x="325" y="544.5" class="td" fill="#444444">Tamil Nadu</text>
+<line x1="445" y1="522" x2="445" y2="558" stroke="#C8DDD0" stroke-width="1"/>
+<text x="459" y="544.5" class="td" fill="#444444">Rs. 18–21 LPA</text>
+<line x1="608" y1="522" x2="608" y2="558" stroke="#C8DDD0" stroke-width="1"/>
+<text x="622" y="544.5" class="td" fill="#444444">Rs. 16–18 L</text>
+<line x1="771" y1="522" x2="771" y2="558" stroke="#C8DDD0" stroke-width="1"/>
+<text x="785" y="544.5" class="td" fill="#444444">90–95 percentile</text>
+<rect x="24" y="66" width="940" height="496" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

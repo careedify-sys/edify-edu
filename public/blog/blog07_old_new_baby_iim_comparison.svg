@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="368" viewBox="0 0 988 368" role="img" aria-label="Blog 7: Old vs New vs Baby IIMs">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="368" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="282" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 7: Old vs New vs Baby IIMs</text>
+<rect x="24" y="66" width="940" height="56" fill="#1A6B2B"/>
+<text x="38" y="98.5" class="th" fill="#FFFFFF">Category</text>
+<line x1="153" y1="70" x2="153" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="167" y="98.5" class="th" fill="#FFFFFF">CAT Required</text>
+<line x1="276" y1="70" x2="276" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="290" y="89.5" class="th" fill="#FFFFFF">Avg</text>
+<text x="290" y="107.5" class="th" fill="#FFFFFF">Package</text>
+<line x1="360" y1="70" x2="360" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="374" y="98.5" class="th" fill="#FFFFFF">Reputation</text>
+<line x1="476" y1="70" x2="476" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="490" y="98.5" class="th" fill="#FFFFFF">Best for</text>
+<rect x="24" y="122" width="940" height="74" fill="#FFFFFF"/>
+<line x1="24" y1="122" x2="964" y2="122" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="154.5" class="td" fill="#444444">Old IIMs</text>
+<text x="38" y="172.5" class="td" fill="#444444">(BLACKI)</text>
+<line x1="153" y1="126" x2="153" y2="192" stroke="#C8DDD0" stroke-width="1"/>
+<text x="167" y="154.5" class="td" fill="#444444">97–99.5+</text>
+<text x="167" y="172.5" class="td" fill="#444444">percentile</text>
+<line x1="276" y1="126" x2="276" y2="192" stroke="#C8DDD0" stroke-width="1"/>
+<text x="290" y="145.5" class="td" fill="#444444">Rs.</text>
+<text x="290" y="163.5" class="td" fill="#444444">25–40</text>
+<text x="290" y="181.5" class="td" fill="#444444">LPA</text>
+<line x1="360" y1="126" x2="360" y2="192" stroke="#C8DDD0" stroke-width="1"/>
+<text x="374" y="154.5" class="td" fill="#444444">Global</text>
+<text x="374" y="172.5" class="td" fill="#444444">recognition</text>
+<line x1="476" y1="126" x2="476" y2="192" stroke="#C8DDD0" stroke-width="1"/>
+<text x="490" y="154.5" class="td" fill="#444444">Finance, consulting, general management — top firms recruit</text>
+<text x="490" y="172.5" class="td" fill="#444444">here</text>
+<rect x="24" y="196" width="940" height="74" fill="#F4FAF6"/>
+<line x1="24" y1="196" x2="964" y2="196" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="228.5" class="td" fill="#444444">New IIMs</text>
+<text x="38" y="246.5" class="td" fill="#444444">(2007–2011)</text>
+<line x1="153" y1="200" x2="153" y2="266" stroke="#C8DDD0" stroke-width="1"/>
+<text x="167" y="228.5" class="td" fill="#444444">90–97</text>
+<text x="167" y="246.5" class="td" fill="#444444">percentile</text>
+<line x1="276" y1="200" x2="276" y2="266" stroke="#C8DDD0" stroke-width="1"/>
+<text x="290" y="219.5" class="td" fill="#444444">Rs.</text>
+<text x="290" y="237.5" class="td" fill="#444444">15–25</text>
+<text x="290" y="255.5" class="td" fill="#444444">LPA</text>
+<line x1="360" y1="200" x2="360" y2="266" stroke="#C8DDD0" stroke-width="1"/>
+<text x="374" y="228.5" class="td" fill="#444444">Strong,</text>
+<text x="374" y="246.5" class="td" fill="#444444">growing</text>
+<line x1="476" y1="200" x2="476" y2="266" stroke="#C8DDD0" stroke-width="1"/>
+<text x="490" y="237.5" class="td" fill="#444444">Good ROI, strong regional networks, solid placements</text>
+<rect x="24" y="270" width="940" height="74" fill="#FFFFFF"/>
+<line x1="24" y1="270" x2="964" y2="270" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="302.5" class="td" fill="#444444">Baby IIMs</text>
+<text x="38" y="320.5" class="td" fill="#444444">(2015+)</text>
+<line x1="153" y1="274" x2="153" y2="340" stroke="#C8DDD0" stroke-width="1"/>
+<text x="167" y="302.5" class="td" fill="#444444">85–93</text>
+<text x="167" y="320.5" class="td" fill="#444444">percentile</text>
+<line x1="276" y1="274" x2="276" y2="340" stroke="#C8DDD0" stroke-width="1"/>
+<text x="290" y="293.5" class="td" fill="#444444">Rs.</text>
+<text x="290" y="311.5" class="td" fill="#444444">10–18</text>
+<text x="290" y="329.5" class="td" fill="#444444">LPA</text>
+<line x1="360" y1="274" x2="360" y2="340" stroke="#C8DDD0" stroke-width="1"/>
+<text x="374" y="311.5" class="td" fill="#444444">Developing</text>
+<line x1="476" y1="274" x2="476" y2="340" stroke="#C8DDD0" stroke-width="1"/>
+<text x="490" y="302.5" class="td" fill="#444444">Lower fees, lower competition — value depends on alumni network</text>
+<text x="490" y="320.5" class="td" fill="#444444">development</text>
+<rect x="24" y="66" width="940" height="278" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

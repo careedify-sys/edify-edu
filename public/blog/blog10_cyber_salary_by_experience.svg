@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="354" viewBox="0 0 988 354" role="img" aria-label="Blog 10: Cyber security salary by experience">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="354" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="268" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 10: Cyber security salary by experience</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">Experience Level</text>
+<line x1="206" y1="70" x2="206" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="220" y="92.5" class="th" fill="#FFFFFF">Typical roles</text>
+<line x1="586" y1="70" x2="586" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="600" y="92.5" class="th" fill="#FFFFFF">Annual salary (LPA)</text>
+<line x1="777" y1="70" x2="777" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="791" y="92.5" class="th" fill="#FFFFFF">Monthly (approx.)</text>
+<rect x="24" y="110" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="136.5" class="td" fill="#444444">Fresher (0–1 yr)</text>
+<line x1="206" y1="114" x2="206" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="220" y="136.5" class="td" fill="#444444">SOC Analyst Trainee, IT Security Intern</text>
+<line x1="586" y1="114" x2="586" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="600" y="136.5" class="td" fill="#444444">Rs. 3.5–6 LPA</text>
+<line x1="777" y1="114" x2="777" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="791" y="136.5" class="td" fill="#444444">Rs. 29,000–50,000</text>
+<rect x="24" y="154" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="154" x2="964" y2="154" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="180.5" class="td" fill="#444444">Junior (1–3 yrs)</text>
+<line x1="206" y1="158" x2="206" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="220" y="180.5" class="td" fill="#444444">Security Analyst, Vulnerability Assessor</text>
+<line x1="586" y1="158" x2="586" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="600" y="180.5" class="td" fill="#444444">Rs. 6–12 LPA</text>
+<line x1="777" y1="158" x2="777" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="791" y="180.5" class="td" fill="#444444">Rs. 50,000–1 lakh</text>
+<rect x="24" y="198" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="198" x2="964" y2="198" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="224.5" class="td" fill="#444444">Mid-level (3–6 yrs)</text>
+<line x1="206" y1="202" x2="206" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="220" y="224.5" class="td" fill="#444444">Penetration Tester, Incident Responder</text>
+<line x1="586" y1="202" x2="586" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="600" y="224.5" class="td" fill="#444444">Rs. 10–20 LPA</text>
+<line x1="777" y1="202" x2="777" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="791" y="224.5" class="td" fill="#444444">Rs. 83,000–1.7 lakh</text>
+<rect x="24" y="242" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="242" x2="964" y2="242" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="268.5" class="td" fill="#444444">Senior (6–10 yrs)</text>
+<line x1="206" y1="246" x2="206" y2="282" stroke="#C8DDD0" stroke-width="1"/>
+<text x="220" y="268.5" class="td" fill="#444444">Security Architect, Security Manager</text>
+<line x1="586" y1="246" x2="586" y2="282" stroke="#C8DDD0" stroke-width="1"/>
+<text x="600" y="268.5" class="td" fill="#444444">Rs. 20–40 LPA</text>
+<line x1="777" y1="246" x2="777" y2="282" stroke="#C8DDD0" stroke-width="1"/>
+<text x="791" y="268.5" class="td" fill="#444444">Rs. 1.7–3.3 lakh</text>
+<rect x="24" y="286" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="286" x2="964" y2="286" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="312.5" class="td" fill="#444444">Expert (10+ yrs)</text>
+<line x1="206" y1="290" x2="206" y2="326" stroke="#C8DDD0" stroke-width="1"/>
+<text x="220" y="312.5" class="td" fill="#444444">CISO, Director of Security</text>
+<line x1="586" y1="290" x2="586" y2="326" stroke="#C8DDD0" stroke-width="1"/>
+<text x="600" y="312.5" class="td" fill="#444444">Rs. 50 lakh–1 crore+</text>
+<line x1="777" y1="290" x2="777" y2="326" stroke="#C8DDD0" stroke-width="1"/>
+<text x="791" y="312.5" class="td" fill="#444444">Rs. 4.2 lakh+</text>
+<rect x="24" y="66" width="940" height="264" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

@@ -9481,6 +9481,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>How long does a PhD take in India?</h2>
 <p>Officially, 3 to 6 years. In practice, many students take longer — especially in lab sciences, where experiments do not respect deadlines.</p>
 <p>Here is the honest breakdown:</p>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog01_phd_duration_types.svg" alt="PhD duration types in India — full-time, part-time, integrated, DBA comparison" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>A PhD in India typically requires you to begin with coursework (usually one or two semesters), then write and defend a research proposal, publish at least one paper in a peer-reviewed journal, and finally submit and defend your thesis. The journal publication requirement is what kills timelines for most students — peer review can take 6 to 18 months per paper.</p>
 <h2>What does it actually cost?</h2>
 <p>Government institutions like IITs and central universities charge between Rs. 10,000 and Rs. 50,000 per year in fees. If you get a JRF (Junior Research Fellowship), you also receive a monthly stipend — currently Rs. 37,000 per month for the first two years and Rs. 42,000 for subsequent years as of the 2023 revision.</p>
@@ -9542,6 +9543,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>That is why he is called the father of modern management theory. Frederick Taylor, his contemporary, was focused on shop-floor efficiency. Fayol was thinking about the whole organization, from the top down.</p>
 <p>The one thing Fayol got right that still matters: management can be learned. It is not a personality trait. That insight alone was radical in 1916.</p>
 <h2>All 14 principles — with the details that actually matter</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog02_fayol_14_principles.svg" alt="All 14 Fayol principles of management with core idea and modern example" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <h2>The five that are most commonly tested — and most commonly misunderstood</h2>
 <h3>1. Unity of Command vs Unity of Direction</h3>
 <p>Students mix these up constantly. Unity of Command is about reporting lines — one employee, one boss. Unity of Direction is about objectives — one goal, one plan. You can have multiple people working toward the same goal (Unity of Direction) while each of them still reports to only one manager (Unity of Command).</p>
@@ -9563,6 +9565,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>The bigger critique: Fayol wrote from the top down. His framework is about managing others, not about employee motivation, psychological safety, or bottom-up innovation. You will not find anything about intrinsic motivation in these 14 principles. For that, you need later theorists like Maslow, Herzberg, or McGregor.</p>
 <p>Use Fayol as a foundation, not a ceiling. His 14 principles tell you what the structure of a healthy organization looks like. They do not tell you how to inspire people.</p>
 <h2>Fayol vs Taylor — for the exam and beyond</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog02_fayol_vs_taylor.svg" alt="Fayol vs Taylor management theory comparison" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <h2>How to use these principles in an MBA exam</h2>
 <p>Most exam questions on Fayol's principles ask you to: (a) identify which principle was violated in a given scenario, or (b) apply a principle to a real business situation. The most commonly tested: Unity of Command (violation = employee getting orders from two bosses), Discipline (violation = rules applied inconsistently), and Equity (violation = unequal treatment for similar roles).</p>
 <p>When writing exam answers, always name the principle, define it briefly, apply it to the case, and state what should have been done differently. Three lines per question is usually enough.</p>
@@ -9593,19 +9596,23 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Let's be direct about something: the IIMs do not publish an official CAT syllabus. Not ever. What you will find on the internet — including this guide — is a reconstruction built from 10+ years of actual CAT papers. The good news is that the exam has been remarkably consistent. The core topics have not changed significantly since 2019.</p>
 <p>CAT 2026 is expected to be held on November 29, 2026, based on patterns from previous years. IIM Kozhikode is expected to conduct it. Here is everything you need to know about what is actually tested.</p>
 <h2>The exam in numbers</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog03_cat_exam_pattern.svg" alt="CAT 2026 exam pattern — sections, questions, marks, time" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>One thing toppers consistently say: TITA questions are gifts. No negative marking means you should attempt every single TITA question, even when uncertain. This alone can add 10-15 marks to your score.</p>
 <h2>Section 1: VARC — Verbal Ability and Reading Comprehension (24 questions, 40 minutes)</h2>
 <p>VARC has two parts, and they are not equal:</p>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog03_cat_varc_breakdown.svg" alt="CAT VARC section breakdown — RC vs VA questions and weightage" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>RC passages are typically 500 to 900 words, drawn from topics like economics, philosophy, social science, science, and literature. They are not predictable by topic — what is predictable is the question style: inference, main idea, tone, author's intent.</p>
 <p>Here is what most guides will not tell you: CAT stopped testing direct vocabulary and grammar after 2016. If you are making word lists, stop. The VARC section only measures whether you can read complex English with comprehension and speed. That requires reading — not memorizing.</p>
 <p>A practical tip: read at least one article daily from publications like Aeon, The Economist, or The Hindu's opinion section. Not to find CAT topics. To build the mental stamina to read dense writing quickly.</p>
 <h2>Section 2: DILR — Data Interpretation and Logical Reasoning (22 questions, 40 minutes)</h2>
 <p>DILR is the most feared section and for good reason. Unlike VARC (which rewards reading) and QA (which rewards mathematical skill), DILR rewards a type of thinking that is harder to build — the ability to decode unfamiliar puzzle formats under time pressure.</p>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog03_cat_dilr_breakdown.svg" alt="CAT DILR section — topics, typical questions, sub-sections" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>DILR comes in sets — usually 4 to 5 sets of 4 to 6 questions each. The catch: if you cannot crack the logic of a set in the first 2 minutes, it is often better to skip the entire set and move on. Spending 15 minutes on one set and getting it wrong costs you more than abandoning it.</p>
 <p>Recent CAT papers (2022-2025) have featured increasingly unconventional set types — sports tournaments with unusual scoring rules, data games, network flow problems. The only way to prepare is to solve hundreds of diverse sets, not just practice traditional bar graph questions.</p>
 <p>The DILR section is pure skill — no academic subject knowledge required. A literature student with good analytical thinking can outscore an engineer here. Practice is the only differentiator.</p>
 <h2>Section 3: QA — Quantitative Ability (22 questions, 40 minutes)</h2>
 <p>QA tests mathematics at roughly Class 10 to 12 level — but with a twist. The questions require application and multi-step reasoning, not formula recitation. Speed matters as much as accuracy.</p>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog03_cat_qa_topic_weightage.svg" alt="CAT QA topic-wise weightage and key sub-topics" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <div class="cta-block">
 <h3>Ready to Upgrade Your Qualifications?</h3>
 <p>Compare 50+ <a href="/universities">UGC DEB approved universities</a> offering <a href="/programs/mba">online MBA</a>, MCA, BBA, BCA, B.Com — all in one place.</p>
@@ -9653,6 +9660,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>What is a career objective on a resume?</h2>
 <p>A career objective is 2 to 3 sentences at the top of your resume that tell a recruiter: who you are, what you bring, and what you want. For freshers, it compensates for the lack of work experience by putting your education and skills in context.</p>
 <p>It is different from a resume summary (which looks backward at experience) and a professional profile (which is more narrative). For freshers, career objective is the right format.</p>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog04_resume_format_types.svg" alt="Career objective vs resume summary vs professional profile — comparison" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <h2>The formula that works</h2>
 <p>A good career objective has four parts, all in two to three sentences:</p>
 <ul>
@@ -9730,6 +9738,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>This guide is different. It starts with your career goal and works backward to the right course — not the other way around.</p>
 <h2>First, what do you actually want from this course?</h2>
 <p>That question sounds obvious but most students skip it. A DCA course gets you an admin job in 6 months. A BCA degree takes 3 years but opens software development and data science paths. One is not better — they serve different goals.</p>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog05_computer_courses_by_goal.svg" alt="Computer courses after 12th matched to career goal — time, fees, pathway" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <h2>Degree-level computer courses: the full picture</h2>
 <h3>BCA — Bachelor of Computer Applications (3 years)</h3>
 <p>BCA is the most practical technology degree for students who did not take PCM in 12th class. Most BCA programs accept students from all streams. You learn programming (Java, Python, C), databases, networking, and web development. Starting salaries for BCA graduates range from Rs. 3 to 6 LPA, rising to Rs. 8 to 15 LPA after 3 to 4 years of experience.</p>
@@ -9744,6 +9753,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <a href="/programs/mca" style="display:inline-block;background:#f59e0b;color:#000;padding:10px 22px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:8px">Compare MCA Universities →</a>
 </div>
 <h2>Diploma and certificate courses: what they actually prepare you for</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog05_diploma_computer_courses.svg" alt="Diploma computer courses — DCA, ADCA, PGDCA, DOEACC — duration and career path" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>A DCA or ADCA makes sense if you need income soon and your family cannot wait 3 years. But know going in that the career ceiling is lower. Plan to upskill within 2 years if you want to move beyond admin roles.</p>
 <h2>Free and low-cost online computer certifications worth having</h2>
 <p>Several online certifications are genuinely respected by employers and cost very little:</p>
@@ -9754,6 +9764,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <li>Google IT Support Professional Certificate (Coursera) — 6 months, paid but financial aid available. Opens IT helpdesk and support roles.</li>
 </ul>
 <h2>The salary reality: what do these courses actually pay?</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog05_computer_course_salary.svg" alt="Computer course salary comparison — fresher and 3-year experience ranges" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>These are ranges, not guarantees. Location matters — Bengaluru and Hyderabad pay significantly more than tier-2 cities for the same role. Skills matter — a BCA graduate who knows cloud and Python well can earn more than a B.Tech graduate from a low-ranked college.</p>
 <div class="cta-block">
 <h3>Explore Online <a href="/programs/mca">MCA program</a> in 2026</h3>
@@ -9782,11 +9793,14 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Here is a genuinely useful guide to courses after 12th science — organized by your subject combination, realistic about what each path involves, and honest about the time and money each requires.</p>
 <h2>First: which science stream are you?</h2>
 <p>Your subject combination matters for eligibility, not just for content interest. Here is the quick reference:</p>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog06_science_stream_subjects.svg" alt="Science stream subjects — PCM, PCB, PCMB and career doors they open" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <h2>PCM — engineering and beyond</h2>
 <p>The obvious path: B.Tech or BE at an engineering college via JEE Main or state CET. This is what most PCM students default to — but it is worth pausing to consider whether it is the right choice for you, not just the expected one.</p>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog06_pcm_courses_list.svg" alt="PCM courses after 12th — B.Tech, BCA, B.Sc — duration, entrance, salary" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>One thing worth knowing: 65% of B.Tech graduates in India work in roles that do not require engineering skills, according to NASSCOM reports. Engineering is a solid degree, but it is not the only path — and it is not always the fastest path to a good income.</p>
 <h2>PCB — medicine and life sciences</h2>
 <p>NEET is the central entrance exam for all medical courses. With over 23 lakh candidates competing for roughly 1.09 lakh MBBS seats in 2024, the stakes are real.</p>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog06_pcb_courses_list.svg" alt="PCB courses after 12th — MBBS, BDS, Pharmacy, Nursing — duration, entrance, salary" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>One thing that does not get discussed enough: B.Sc Nursing abroad is a career path with genuinely high earning potential. Registered nurses in the UK, Canada, and Australia earn the equivalent of Rs. 20 to 60 LPA. Indian nurses are in demand in all three markets. The qualification requires abroad exams (IELTS, NMC for the UK, NCLEX for the US/Canada), but the financial return over a 10-year career is substantial.</p>
 <h2>PCMB — the widest options</h2>
 <p>Having all four subjects means you can pursue all of the above. But beyond that, PCMB opens some unique interdisciplinary paths:</p>
@@ -9850,6 +9864,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Other international rankings (Financial Times MBA, QS, Bloomberg) also cover Indian IIMs but use different criteria — salary growth, global alumni reach, faculty with PhDs. IIM Ahmedabad, Bangalore, and Calcutta consistently appear in these global lists.</p>
 <h2>Top 10 IIMs — 2026 rankings and key data</h2>
 <p>Note: NIRF 2025 rankings are the most recent officially published. NIRF 2026 rankings had not been released at the time of writing. Fees and package figures are approximate, based on latest placement reports.</p>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog07_iim_top10_rankings.svg" alt="Top 10 IIM rankings India 2026 — NIRF rank, fees, average package, CAT cutoff" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <div class="cta-block">
 <h3>Find the Best <a href="/programs/mba">online MBA</a> for You</h3>
 <p>Compare top online MBA universities in India — fees, accreditation, placements, and specialisations side by side.</p>
@@ -9857,7 +9872,9 @@ export const BLOG_POSTS: BlogPost[] = [
 </div>
 <p>IIM Calcutta ranks lower than Ahmedabad and Bangalore in NIRF but consistently matches them in finance and banking placements. Rankings and specialty reputation are not the same thing.</p>
 <h2>Complete list of all 21 IIMs in India</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog07_all_21_iims_india.svg" alt="All 21 IIMs in India — location, year established, old/new/baby category" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <h2>Old IIMs vs new IIMs vs baby IIMs — the real differences</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog07_old_new_baby_iim_comparison.svg" alt="Old IIMs vs new IIMs vs baby IIMs — CAT cutoff, packages, reputation comparison" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <h2>What the IIM ranking does not tell you</h2>
 <p>Rankings are aggregate scores. They tell you about average outcomes. What they do not capture:</p>
 <ul>
@@ -9901,6 +9918,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <li>Career stakes — what happens if you do not pass, and whether a second attempt is realistic</li>
 </ul>
 <h2>India's top 5 toughest exams</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog08_india_toughest_exams.svg" alt="India's top 5 toughest exams — UPSC, CA Final, IIT JEE, CLAT, NDA" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <h3>UPSC Civil Services — India's most intense exam</h3>
 <p>Over 13 lakh people apply for UPSC Civil Services every year. About 10,000 make it past Prelims. Around 2,500 clear Mains. Roughly 1,000 are finally selected.</p>
 <p>The syllabus covers Indian history, geography, economics, polity, international relations, science and technology, environment, ethics, and current affairs — plus one or two optional subjects of the candidate's choosing. The Mains has nine papers, including essay writing and general studies across multiple domains. The Interview tests personality, communication, and judgment.</p>
@@ -9918,6 +9936,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Becoming a Chartered Accountant requires passing three exam levels (Foundation, Intermediate, Final) plus three years of mandatory articleship training. The CA Final pass rate consistently sits between 10 and 15%, and most candidates take multiple attempts to clear all papers in a single attempt.</p>
 <p>The total journey — from Class 12 to CA designation — takes most candidates 5 to 7 years. The syllabus at Final level is equivalent in depth to a postgraduate degree in accounting, auditing, taxation, and financial management.</p>
 <h2>Top 5 toughest exams in the world</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog08_world_toughest_exams.svg" alt="Top 5 toughest exams in the world — Gaokao, Mensa, LNAT, USMLE, CFA — pass rates" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <h3>The Gaokao — scale, pressure, and near-zero margin</h3>
 <p>More than 13 million Chinese students sit the Gaokao every year. For top universities like Peking and Tsinghua, the effective admission rate is 0.003%. The exam lasts 9 hours across two or three days. Most students have been preparing for it since middle school — some for their entire academic life.</p>
 <p>The pressure is cultural as much as academic. A family's social mobility often hinges on one child's Gaokao score. That context makes it uniquely brutal.</p>
@@ -9955,11 +9974,14 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Here is the complete picture of IAS salary in India in 2026, including what the numbers mean and what they do not capture.</p>
 <h2>IAS salary 2026 — the starting point</h2>
 <p>Under the 7th Pay Commission framework, all IAS officers start at the same level: Pay Level 10, with a basic pay of Rs. 56,100 per month. This figure has been consistent since the 7th CPC implementation in 2016, though Dearness Allowance (DA) revisions have increased effective take-home pay over time.</p>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog09_ias_salary_components.svg" alt="IAS salary components 2026 — basic pay, HRA, DA, TA and total take-home" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>The in-hand figure of Rs. 70,000 to 85,000 per month for a fresh IAS officer is not exceptional by private sector standards for someone of that qualification level. The financial case for an IAS career is not the starting salary — it is the full package over 35+ years.</p>
 <h2>Rank-wise IAS pay scale 2026</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog09_ias_rankwise_pay_scale.svg" alt="IAS rank-wise pay scale 2026 — Junior Time Scale to Cabinet Secretary" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>These are basic pay figures. Add 38 to 46% DA on top of each, plus allowances, to get gross monthly compensation. A District Magistrate at Level 13 earning Rs. 1,18,500 basic pay receives roughly Rs. 1.7 to 2 lakh per month gross in most postings.</p>
 <h2>The perks: what no salary figure captures</h2>
 <p>The monetary salary of an IAS officer understates the total compensation significantly. Here is what comes with the job:</p>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog09_ias_perks_and_benefits.svg" alt="IAS officer perks and benefits — accommodation, vehicle, staff and honest notes" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <div class="cta-block">
 <h3>Explore UGC Approved Online Programs</h3>
 <p>If you are looking to upgrade your qualifications alongside your career, explore accredited online degrees that carry full government recognition.</p>
@@ -9997,8 +10019,10 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>India is one of the most targeted countries for cyberattacks — and simultaneously one of the most underprepared in terms of trained security talent. CERT-In (India's Computer Emergency Response Team) has reported a significant rise in ransomware incidents and data breaches across banking, healthcare, and government in recent years. That gap between threat and defense is why cyber security careers in India are paying more than they ever have.</p>
 <p>Here is what the numbers actually look like.</p>
 <h2>Cyber security salary in India — by experience level</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog10_cyber_salary_by_experience.svg" alt="Cyber security salary India by experience — fresher to senior, monthly and annual" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>These ranges are realistic based on 2025-2026 market data. The gap between average and top talent is wide. A security engineer with deep cloud security skills in Bengaluru earns very differently from a generic IT support person with a security certificate in a tier-3 city.</p>
 <h2>Salary by role — what each position actually does and earns</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog10_cyber_roles_salary.svg" alt="Cyber security roles and salary India — SOC analyst, pentester, CISO and more" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <h2>Why salaries keep rising</h2>
 <p>Three forces are pushing cyber security salaries up in India specifically:</p>
 <p>First, regulation. The Digital Personal Data Protection (DPDP) Act 2023 created legal compliance obligations around how Indian companies store and protect data. RBI and SEBI have issued mandatory cybersecurity frameworks for financial entities. Every regulated company now needs qualified security professionals to meet these requirements — and the talent pool is too small.</p>
@@ -10006,6 +10030,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Third, remote global hiring. Indian cyber security professionals with the right certifications are increasingly hired by US, UK, and European companies at near-global rates while staying in India. This has pulled domestic salary benchmarks upward.</p>
 <h2>Skills that actually move your salary</h2>
 <p>Certifications are one part of the picture. Skills are what employers are actually paying for:</p>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog10_cyber_skills_career_impact.svg" alt="Cyber security skills and career impact — cloud security, CEH, CISSP and how to build them" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <div class="cta-block">
 <h3>Explore <a href="/programs/mca">online MCA</a> Programs in 2026</h3>
 <p>Compare 50+ <a href="/universities">UGC DEB approved universities</a> offering online MCA — fees, syllabus, specialisations, and career outcomes in one place.</p>
@@ -10049,7 +10074,9 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Data science has become a catch-all term in India. A data analyst who makes Excel pivot tables, a data scientist who builds predictive models, and an ML engineer who deploys neural networks to production all get lumped under 'data science' — and they earn very differently.</p>
 <p>Here is the breakdown, by actual role.</p>
 <h2>The three roles: what they actually do</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog11_data_science_roles.svg" alt="Data analyst vs data scientist vs ML engineer — primary work, tools, education needed" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <h2>Salary by role and experience</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog11_data_science_salary.svg" alt="Data science salary India by role and experience — analyst, scientist, ML engineer" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>The entry-level gap between a data analyst (Rs. 4-8 LPA) and a data scientist (Rs. 7-12 LPA) is real but not enormous. The gap widens significantly at mid and senior levels — a senior data scientist at a product company earns Rs. 25-45 LPA, while a senior analyst doing similar hours might top out at Rs. 20-25 LPA.</p>
 <h2>What skills actually determine your salary</h2>
 <p>In data science, your tool stack matters less than your problem-solving depth. Two candidates both knowing Python will be evaluated on what they built with it. But some skills consistently unlock higher packages:</p>
@@ -10103,6 +10130,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <li>Pitch Books: PowerPoint presentations for client meetings and deal pitches. More of your early career than you expect.</li>
 </ul>
 <h2>Salary by level</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog12_investment_banking_salary.svg" alt="Investment banking salary India by level — analyst to MD, base and bonus" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>At analyst level, bonuses can equal or exceed base salary in a good year. At MD level, the variable component dwarfs the fixed. The salary table above understates what top performers earn — and overstates what average performers in weak deal years receive.</p>
 <div class="cta-block">
 <h3>Find the Best <a href="/programs/mba">online MBA</a> for You</h3>
@@ -10111,6 +10139,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </div>
 <h2>Qualifications that get you in</h2>
 <p>The most common routes into investment banking in India:</p>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog12_ib_qualification_paths.svg" alt="Investment banking qualification paths in India — MBA, CA, CFA and entry level" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>The honest reality: the IIM route (especially IIM Ahmedabad, Bangalore, Calcutta, and Kozhikode) is the most reliable path to an associate role at a bulge bracket or top Indian bank. Non-IIM MBA graduates typically need to start at boutique firms and work their way up.</p>
 <h2>Top investment banks operating in India</h2>
 <p>Global firms: Goldman Sachs, JP Morgan, Morgan Stanley, Citigroup, Barclays, Deutsche Bank, HSBC. These pay the highest salaries and have the most competitive hiring.</p>
@@ -10147,6 +10176,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>The case that arts students often miss</h2>
 <p>The UPSC Civil Services Examination — which selects IAS, IPS, and IFS officers — is open to graduates from any stream. The same is true for the CA examination. Several IIMs have a significant percentage of arts and commerce graduates in their MBA cohorts. Law from a good NLU is one of the fastest tracks to a Rs. 30 to 50 LPA salary within 5 to 7 years of practice.</p>
 <h2>Top arts stream careers — with salary reality</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog13_arts_stream_careers_salary.svg" alt="Top arts stream careers and salary India — IAS, law, journalism, design and more" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>Corporate law and IAS are among the highest-paying long-term careers in India, both fully accessible to arts stream graduates. Neither requires engineering or medicine. Both require years of focused preparation — but the ceiling is among the highest in any profession.</p>
 <h2>Best courses after 12th arts with high salary potential</h2>
 <ul>
@@ -10189,6 +10219,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: `<h2>Commerce Jobs List and Salary in India 2026 — What Each Career Actually Pays</h2>
 <p>Commerce is the stream most associated with 'safe' careers: accounting, banking, finance. But the range of what you can actually do with a commerce background — from investment banking to IAS to data analytics — is wider than most students realize when they choose their 11th grade subjects.</p>
 <h2>Top commerce jobs with salary ranges in India 2026</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog14_commerce_careers_salary.svg" alt="Top commerce jobs and salary India 2026 — CA, CS, actuary, MBA finance and more" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>CA and MBA Finance from a top institute are the two paths with the highest lifetime earning potential from a commerce background. Both require substantial investment — CA requires 3 to 5 years and articleship; MBA requires 2 years and Rs. 15 to 30 lakh in fees at top institutes.</p>
 <h2>Government sector commerce careers worth knowing</h2>
 <p>Commerce graduates often overlook government sector opportunities that offer excellent salary-plus-perks packages:</p>
@@ -10205,6 +10236,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <a href="/universities" style="display:inline-block;background:#f59e0b;color:#000;padding:10px 22px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:8px">Explore All Programs →</a>
 </div>
 <h2>Course roadmap after B.Com</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog14_bcom_course_paths.svg" alt="Course roadmap after B.Com — CA, MBA, M.Com, CS — duration, cost and career return" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <div class="cta-block">
 <h3>Not Sure Which Program to Pick?</h3>
 <p>Explore all UGC DEB approved online degrees — MBA, MCA, BBA, BCA, B.Com — and find the right fit for your goals and budget.</p>
@@ -10230,6 +10262,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: `<h2>B.Sc Career Options and Salary in India 2026 — What to Do After Your Degree</h2>
 <p>A B.Sc degree without a plan is where a lot of good students get stuck. The degree itself is solid — rigorous, disciplined, and genuinely useful. But the job market does not automatically reward the qualification alone. What comes next matters as much as the degree itself.</p>
 <h2>B.Sc stream-wise career options and salary</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog15_bsc_streams_careers.svg" alt="B.Sc stream-wise career options and starting salary India 2026" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <h2>Highest-paying paths after B.Sc</h2>
 <ul>
 <li>B.Sc Nursing + UK/Canada/Australia registration — This is genuinely one of the best ROI paths in Indian education. NMC registration (UK) combined with a B.Sc Nursing from an Indian college can lead to salaries of Rs. 20 to 60 LPA equivalent. The process involves IELTS (minimum 7 band) and a skills test, but demand for Indian nurses in these markets is consistently high.</li>
@@ -10277,6 +10310,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>What is a PGDM?</h2>
 <p>PGDM stands for Post Graduate Diploma in Management. It is a diploma conferred by autonomous institutions approved by AICTE (All India Council for Technical Education). IIMs, ISB, XLRI, MDI, and several other top management institutions offer PGDMs. These institutions are not affiliated with any university — they design their own curriculum, which is why PGDM programs tend to be more industry-aligned and flexible than university-prescribed <a href="/programs/mba">MBA program</a>.</p>
 <h2>10-parameter comparison</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog16_pgdm_vs_mba_comparison.svg" alt="PGDM vs MBA India 2026 — 10 parameter comparison: type, fees, recognition, placements" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>A PGDM from IIM Ahmedabad is worth more in the corporate market than an MBA from most universities. But a PGDM from a low-ranking AICTE-approved private college might be worth less than an MBA from a decent state university. The institution matters more than the degree type.</p>
 <div class="cta-block">
 <h3>Find the Best <a href="/programs/mba">online MBA</a> for You</h3>
@@ -10289,6 +10323,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>Executive PGDM — a separate category</h2>
 <p>Executive PGDM (or Executive MBA) programs are designed for working professionals with 5 to 10+ years of experience. They typically run 1 to 2 years in weekend or modular formats. IIMs, ISB, XLRI, and MDI all offer well-regarded executive programs. These are not the same as the regular 2-year PGP — the admission process, curriculum, and peer group are different.</p>
 <h2>Which should you choose?</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog16_pgdm_vs_mba_decision.svg" alt="PGDM vs MBA — which to choose based on your career goal, budget and target company" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <div class="cta-block">
 <h3>Find the Best Online MBA for You</h3>
 <p>Compare top online MBA universities in India — fees, accreditation, placements, and specialisations side by side.</p>
@@ -10316,6 +10351,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>That said, having strong substantive points helps. Here are 20+ topics with key angles you can develop.</p>
 <p>The one thing most candidates get wrong: they come prepared to speak, not to converse. A GD is a conversation between 8 to 10 people. The candidate who adds value to others' points — rather than waiting to make their own — consistently scores higher.</p>
 <h2>Types of GD topics you will encounter</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog17_gd_topic_types.svg" alt="Types of GD topics for MBA — current affairs, abstract, case-based, factual" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <h2>20+ GD topics for MBA 2026 — with key points</h2>
 <h3>1. AI will replace human jobs — debate both sides</h3>
 <p>For: Automation is already displacing routine jobs in manufacturing, data entry, customer service. NASSCOM estimates automation has eliminated or transformed 500,000+ BPO roles in the last 5 years. Against: AI creates new job categories; industrial revolutions historically created more jobs than they eliminated. The printing press did not end writing jobs. Key insight: The impact is uneven — low-skill routine work is most at risk, while roles requiring judgment, creativity, and relationships are growing. India's challenge is that its large workforce is disproportionately concentrated in routine work.</p>
@@ -10372,9 +10408,12 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>LLM stands for Legum Magister — Latin for Master of Laws. It is a postgraduate law degree that lets you specialize in a specific legal domain: corporate law, constitutional law, intellectual property, taxation, international law, criminal law, or others.</p>
 <p>Where a regular LLB gives you a foundation across all areas of law, an LLM means you go deep in one. That depth makes you more valuable in that specific practice area — which is why senior positions at specialized law firms increasingly list LLM (or equivalent experience) as a requirement.</p>
 <h2>LLM course duration: 1 year vs 2 years</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog18_llm_1yr_vs_2yr.svg" alt="LLM 1 year vs 2 year comparison — semesters, thesis, cost, best for" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>Is a 1-year LLM valid in India? Yes — provided it is from an institution recognized by both the Bar Council of India (BCI) and UGC. The format (1 year or 2 year) does not determine validity. The institutional recognition does. Always verify on the BCI website before enrolling.</p>
 <h2>LLM specialisations and career paths</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog18_llm_specialisations.svg" alt="LLM specialisations and career scope India — corporate law, criminal law, IP, human rights" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <h2>Top colleges for LLM in India</h2>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog18_llm_top_colleges.svg" alt="Top colleges for LLM in India — NLUs, IITs, private universities — fees and examples" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <h2>Is LLM worth it? The honest answer</h2>
 <p>It depends on what you want from it. LLM makes sense if: you want to specialize in a specific high-demand area (corporate law, IP, taxation, international law), you want a career in academia (most law faculty positions require LLM + NET), or you want to practice internationally.</p>
 <p>LLM is less useful if: you plan to be a general practitioner, you are doing it because you are not sure what else to do after LLB, or you cannot get into a recognized institution and are considering a low-ranked program.</p>

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="524" viewBox="0 0 988 524" role="img" aria-label="Blog 6: PCM courses list">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="524" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="438" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 6: PCM courses list</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">Course</text>
+<line x1="184" y1="70" x2="184" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="198" y="92.5" class="th" fill="#FFFFFF">Duration</text>
+<line x1="266" y1="70" x2="266" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="280" y="92.5" class="th" fill="#FFFFFF">Entrance exam</text>
+<line x1="447" y1="70" x2="447" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="461" y="92.5" class="th" fill="#FFFFFF">Starting salary</text>
+<line x1="585" y1="70" x2="585" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="599" y="92.5" class="th" fill="#FFFFFF">Real talk</text>
+<rect x="24" y="110" width="940" height="74" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="151.5" class="td" fill="#444444">B.Tech / BE</text>
+<line x1="184" y1="114" x2="184" y2="180" stroke="#C8DDD0" stroke-width="1"/>
+<text x="198" y="151.5" class="td" fill="#444444">4 years</text>
+<line x1="266" y1="114" x2="266" y2="180" stroke="#C8DDD0" stroke-width="1"/>
+<text x="280" y="142.5" class="td" fill="#444444">JEE Main, state CETs</text>
+<text x="280" y="160.5" class="td" fill="#444444">(MHT-CET, KCET, etc.)</text>
+<line x1="447" y1="114" x2="447" y2="180" stroke="#C8DDD0" stroke-width="1"/>
+<text x="461" y="133.5" class="td" fill="#444444">Rs. 5–40 LPA</text>
+<text x="461" y="151.5" class="td" fill="#444444">(college-</text>
+<text x="461" y="169.5" class="td" fill="#444444">dependent)</text>
+<line x1="585" y1="114" x2="585" y2="180" stroke="#C8DDD0" stroke-width="1"/>
+<text x="599" y="142.5" class="td" fill="#444444">College quality matters enormously. A tier-3</text>
+<text x="599" y="160.5" class="td" fill="#444444">college vs IIT: very different outcomes.</text>
+<rect x="24" y="184" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="184" x2="964" y2="184" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="207.5" class="td" fill="#444444">B.Sc Computer</text>
+<text x="38" y="225.5" class="td" fill="#444444">Science / IT</text>
+<line x1="184" y1="188" x2="184" y2="236" stroke="#C8DDD0" stroke-width="1"/>
+<text x="198" y="216.5" class="td" fill="#444444">3 years</text>
+<line x1="266" y1="188" x2="266" y2="236" stroke="#C8DDD0" stroke-width="1"/>
+<text x="280" y="216.5" class="td" fill="#444444">Merit-based</text>
+<line x1="447" y1="188" x2="447" y2="236" stroke="#C8DDD0" stroke-width="1"/>
+<text x="461" y="216.5" class="td" fill="#444444">Rs. 3–8 LPA</text>
+<line x1="585" y1="188" x2="585" y2="236" stroke="#C8DDD0" stroke-width="1"/>
+<text x="599" y="207.5" class="td" fill="#444444">Underrated option. Solid foundation for IT</text>
+<text x="599" y="225.5" class="td" fill="#444444">career, lower cost than B.Tech.</text>
+<rect x="24" y="240" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="240" x2="964" y2="240" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="272.5" class="td" fill="#444444">BCA</text>
+<line x1="184" y1="244" x2="184" y2="292" stroke="#C8DDD0" stroke-width="1"/>
+<text x="198" y="272.5" class="td" fill="#444444">3 years</text>
+<line x1="266" y1="244" x2="266" y2="292" stroke="#C8DDD0" stroke-width="1"/>
+<text x="280" y="263.5" class="td" fill="#444444">Merit-based /</text>
+<text x="280" y="281.5" class="td" fill="#444444">university entrance</text>
+<line x1="447" y1="244" x2="447" y2="292" stroke="#C8DDD0" stroke-width="1"/>
+<text x="461" y="272.5" class="td" fill="#444444">Rs. 3–6 LPA</text>
+<line x1="585" y1="244" x2="585" y2="292" stroke="#C8DDD0" stroke-width="1"/>
+<text x="599" y="263.5" class="td" fill="#444444">Good for IT career without the JEE pressure.</text>
+<text x="599" y="281.5" class="td" fill="#444444">More accessible.</text>
+<rect x="24" y="296" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="296" x2="964" y2="296" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="328.5" class="td" fill="#444444">B.Arch</text>
+<line x1="184" y1="300" x2="184" y2="348" stroke="#C8DDD0" stroke-width="1"/>
+<text x="198" y="328.5" class="td" fill="#444444">5 years</text>
+<line x1="266" y1="300" x2="266" y2="348" stroke="#C8DDD0" stroke-width="1"/>
+<text x="280" y="319.5" class="td" fill="#444444">JEE Main Paper 2 /</text>
+<text x="280" y="337.5" class="td" fill="#444444">NATA</text>
+<line x1="447" y1="300" x2="447" y2="348" stroke="#C8DDD0" stroke-width="1"/>
+<text x="461" y="328.5" class="td" fill="#444444">Rs. 4–10 LPA</text>
+<line x1="585" y1="300" x2="585" y2="348" stroke="#C8DDD0" stroke-width="1"/>
+<text x="599" y="319.5" class="td" fill="#444444">Long program, creative and technical. Very</text>
+<text x="599" y="337.5" class="td" fill="#444444">different from engineering.</text>
+<rect x="24" y="352" width="940" height="74" fill="#FFFFFF"/>
+<line x1="24" y1="352" x2="964" y2="352" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="375.5" class="td" fill="#444444">Merchant Navy</text>
+<text x="38" y="393.5" class="td" fill="#444444">(B.Sc Nautical</text>
+<text x="38" y="411.5" class="td" fill="#444444">Science)</text>
+<line x1="184" y1="356" x2="184" y2="422" stroke="#C8DDD0" stroke-width="1"/>
+<text x="198" y="393.5" class="td" fill="#444444">3 years</text>
+<line x1="266" y1="356" x2="266" y2="422" stroke="#C8DDD0" stroke-width="1"/>
+<text x="280" y="393.5" class="td" fill="#444444">IMU-CET</text>
+<line x1="447" y1="356" x2="447" y2="422" stroke="#C8DDD0" stroke-width="1"/>
+<text x="461" y="393.5" class="td" fill="#444444">Rs. 8–25 LPA</text>
+<line x1="585" y1="356" x2="585" y2="422" stroke="#C8DDD0" stroke-width="1"/>
+<text x="599" y="384.5" class="td" fill="#444444">High starting salary, requires sea time. Not for</text>
+<text x="599" y="402.5" class="td" fill="#444444">everyone but genuinely high paying.</text>
+<rect x="24" y="426" width="940" height="74" fill="#F4FAF6"/>
+<line x1="24" y1="426" x2="964" y2="426" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="458.5" class="td" fill="#444444">NDA (National</text>
+<text x="38" y="476.5" class="td" fill="#444444">Defence Academy)</text>
+<line x1="184" y1="430" x2="184" y2="496" stroke="#C8DDD0" stroke-width="1"/>
+<text x="198" y="449.5" class="td" fill="#444444">Variable</text>
+<text x="198" y="467.5" class="td" fill="#444444">after</text>
+<text x="198" y="485.5" class="td" fill="#444444">12th</text>
+<line x1="266" y1="430" x2="266" y2="496" stroke="#C8DDD0" stroke-width="1"/>
+<text x="280" y="467.5" class="td" fill="#444444">UPSC NDA exam</text>
+<line x1="447" y1="430" x2="447" y2="496" stroke="#C8DDD0" stroke-width="1"/>
+<text x="461" y="458.5" class="td" fill="#444444">Rs. 6–15 LPA +</text>
+<text x="461" y="476.5" class="td" fill="#444444">allowances</text>
+<line x1="585" y1="430" x2="585" y2="496" stroke="#C8DDD0" stroke-width="1"/>
+<text x="599" y="458.5" class="td" fill="#444444">For those who want a military career. Requires</text>
+<text x="599" y="476.5" class="td" fill="#444444">physical fitness and specific exam prep.</text>
+<rect x="24" y="66" width="940" height="434" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

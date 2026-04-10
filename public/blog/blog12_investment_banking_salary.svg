@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="354" viewBox="0 0 988 354" role="img" aria-label="Blog 12: Investment banking salary levels">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="354" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="268" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 12: Investment banking salary levels</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">Level</text>
+<line x1="84" y1="70" x2="84" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="98" y="92.5" class="th" fill="#FFFFFF">Role</text>
+<line x1="351" y1="70" x2="351" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="365" y="92.5" class="th" fill="#FFFFFF">Experience</text>
+<line x1="581" y1="70" x2="581" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="595" y="92.5" class="th" fill="#FFFFFF">Base Salary (LPA)</text>
+<line x1="774" y1="70" x2="774" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="788" y="92.5" class="th" fill="#FFFFFF">Total with bonus</text>
+<rect x="24" y="110" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="136.5" class="td" fill="#444444">Entry</text>
+<line x1="84" y1="114" x2="84" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="136.5" class="td" fill="#444444">Analyst</text>
+<line x1="351" y1="114" x2="351" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="365" y="136.5" class="td" fill="#444444">0–3 yrs (post-graduation)</text>
+<line x1="581" y1="114" x2="581" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="595" y="136.5" class="td" fill="#444444">Rs. 10–18 LPA</text>
+<line x1="774" y1="114" x2="774" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="788" y="136.5" class="td" fill="#444444">Rs. 15–30 LPA</text>
+<rect x="24" y="154" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="154" x2="964" y2="154" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="180.5" class="td" fill="#444444">Junior</text>
+<line x1="84" y1="158" x2="84" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="180.5" class="td" fill="#444444">Associate</text>
+<line x1="351" y1="158" x2="351" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="365" y="180.5" class="td" fill="#444444">3–6 yrs (or post-MBA)</text>
+<line x1="581" y1="158" x2="581" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="595" y="180.5" class="td" fill="#444444">Rs. 20–35 LPA</text>
+<line x1="774" y1="158" x2="774" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="788" y="180.5" class="td" fill="#444444">Rs. 30–60 LPA</text>
+<rect x="24" y="198" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="198" x2="964" y2="198" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="224.5" class="td" fill="#444444">Mid</text>
+<line x1="84" y1="202" x2="84" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="224.5" class="td" fill="#444444">Vice President (VP)</text>
+<line x1="351" y1="202" x2="351" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="365" y="224.5" class="td" fill="#444444">6–10 yrs</text>
+<line x1="581" y1="202" x2="581" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="595" y="224.5" class="td" fill="#444444">Rs. 40–70 LPA</text>
+<line x1="774" y1="202" x2="774" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="788" y="224.5" class="td" fill="#444444">Rs. 60 lakh–1.2 crore</text>
+<rect x="24" y="242" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="242" x2="964" y2="242" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="268.5" class="td" fill="#444444">Senior</text>
+<line x1="84" y1="246" x2="84" y2="282" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="268.5" class="td" fill="#444444">Director / Executive Director</text>
+<line x1="351" y1="246" x2="351" y2="282" stroke="#C8DDD0" stroke-width="1"/>
+<text x="365" y="268.5" class="td" fill="#444444">10–15 yrs</text>
+<line x1="581" y1="246" x2="581" y2="282" stroke="#C8DDD0" stroke-width="1"/>
+<text x="595" y="268.5" class="td" fill="#444444">Rs. 70 lakh–1.5 crore</text>
+<line x1="774" y1="246" x2="774" y2="282" stroke="#C8DDD0" stroke-width="1"/>
+<text x="788" y="268.5" class="td" fill="#444444">Rs. 1–3 crore</text>
+<rect x="24" y="286" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="286" x2="964" y2="286" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="312.5" class="td" fill="#444444">Top</text>
+<line x1="84" y1="290" x2="84" y2="326" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="312.5" class="td" fill="#444444">Managing Director (MD)</text>
+<line x1="351" y1="290" x2="351" y2="326" stroke="#C8DDD0" stroke-width="1"/>
+<text x="365" y="312.5" class="td" fill="#444444">15+ yrs</text>
+<line x1="581" y1="290" x2="581" y2="326" stroke="#C8DDD0" stroke-width="1"/>
+<text x="595" y="312.5" class="td" fill="#444444">Rs. 1.5–3 crore+</text>
+<line x1="774" y1="290" x2="774" y2="326" stroke="#C8DDD0" stroke-width="1"/>
+<text x="788" y="312.5" class="td" fill="#444444">Rs. 3–10 crore+</text>
+<rect x="24" y="66" width="940" height="264" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

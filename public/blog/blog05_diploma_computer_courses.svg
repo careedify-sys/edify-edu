@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="402" viewBox="0 0 988 402" role="img" aria-label="Blog 5: Diploma computer courses">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="402" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="316" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 5: Diploma computer courses</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">Course</text>
+<line x1="254" y1="70" x2="254" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="268" y="92.5" class="th" fill="#FFFFFF">Duration</text>
+<line x1="320" y1="70" x2="320" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="334" y="92.5" class="th" fill="#FFFFFF">What it prepares you for</text>
+<line x1="629" y1="70" x2="629" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="643" y="92.5" class="th" fill="#FFFFFF">Common employers</text>
+<rect x="24" y="110" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="133.5" class="td" fill="#444444">DCA — Diploma in Computer</text>
+<text x="38" y="151.5" class="td" fill="#444444">Applications</text>
+<line x1="254" y1="114" x2="254" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="268" y="133.5" class="td" fill="#444444">6–12</text>
+<text x="268" y="151.5" class="td" fill="#444444">months</text>
+<line x1="320" y1="114" x2="320" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="334" y="133.5" class="td" fill="#444444">Data entry, office admin, basic</text>
+<text x="334" y="151.5" class="td" fill="#444444">accounting software</text>
+<line x1="629" y1="114" x2="629" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="643" y="133.5" class="td" fill="#444444">Small businesses, government offices,</text>
+<text x="643" y="151.5" class="td" fill="#444444">schools</text>
+<rect x="24" y="166" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="166" x2="964" y2="166" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="192.5" class="td" fill="#444444">ADCA — Advanced DCA</text>
+<line x1="254" y1="170" x2="254" y2="206" stroke="#C8DDD0" stroke-width="1"/>
+<text x="268" y="192.5" class="td" fill="#444444">1 year</text>
+<line x1="320" y1="170" x2="320" y2="206" stroke="#C8DDD0" stroke-width="1"/>
+<text x="334" y="192.5" class="td" fill="#444444">DCA + basic programming, web basics</text>
+<line x1="629" y1="170" x2="629" y2="206" stroke="#C8DDD0" stroke-width="1"/>
+<text x="643" y="192.5" class="td" fill="#444444">BPO, data entry firms, small IT companies</text>
+<rect x="24" y="210" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="210" x2="964" y2="210" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="242.5" class="td" fill="#444444">Diploma in Web Design</text>
+<line x1="254" y1="214" x2="254" y2="262" stroke="#C8DDD0" stroke-width="1"/>
+<text x="268" y="233.5" class="td" fill="#444444">6–12</text>
+<text x="268" y="251.5" class="td" fill="#444444">months</text>
+<line x1="320" y1="214" x2="320" y2="262" stroke="#C8DDD0" stroke-width="1"/>
+<text x="334" y="242.5" class="td" fill="#444444">HTML, CSS, basic JavaScript, Photoshop</text>
+<line x1="629" y1="214" x2="629" y2="262" stroke="#C8DDD0" stroke-width="1"/>
+<text x="643" y="242.5" class="td" fill="#444444">Digital agencies, freelance</text>
+<rect x="24" y="266" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="266" x2="964" y2="266" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="298.5" class="td" fill="#444444">Diploma in Cybersecurity</text>
+<line x1="254" y1="270" x2="254" y2="318" stroke="#C8DDD0" stroke-width="1"/>
+<text x="268" y="298.5" class="td" fill="#444444">1 year</text>
+<line x1="320" y1="270" x2="320" y2="318" stroke="#C8DDD0" stroke-width="1"/>
+<text x="334" y="289.5" class="td" fill="#444444">Network security basics, ethical</text>
+<text x="334" y="307.5" class="td" fill="#444444">hacking intro</text>
+<line x1="629" y1="270" x2="629" y2="318" stroke="#C8DDD0" stroke-width="1"/>
+<text x="643" y="289.5" class="td" fill="#444444">IT support, SOC entry-level after further</text>
+<text x="643" y="307.5" class="td" fill="#444444">certification</text>
+<rect x="24" y="322" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="322" x2="964" y2="322" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="354.5" class="td" fill="#444444">Diploma in Data Science</text>
+<line x1="254" y1="326" x2="254" y2="374" stroke="#C8DDD0" stroke-width="1"/>
+<text x="268" y="345.5" class="td" fill="#444444">6–12</text>
+<text x="268" y="363.5" class="td" fill="#444444">months</text>
+<line x1="320" y1="326" x2="320" y2="374" stroke="#C8DDD0" stroke-width="1"/>
+<text x="334" y="345.5" class="td" fill="#444444">Python basics, Excel analytics,</text>
+<text x="334" y="363.5" class="td" fill="#444444">introductory ML</text>
+<line x1="629" y1="326" x2="629" y2="374" stroke="#C8DDD0" stroke-width="1"/>
+<text x="643" y="354.5" class="td" fill="#444444">Junior analyst roles at analytics firms</text>
+<rect x="24" y="66" width="940" height="312" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

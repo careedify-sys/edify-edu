@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B1D35"/>
+      <stop offset="100%" style="stop-color:#0f2a4a"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#ffffff" opacity="0.06"/>
+    </pattern>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <!-- Amber top bar -->
+  <rect width="1200" height="6" fill="#D4922A"/>
+  <!-- Left accent line -->
+  <rect x="80" y="160" width="4" height="180" fill="#D4922A" opacity="0.8"/>
+  <!-- Category label -->
+  <text x="104" y="190" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#D4922A" letter-spacing="3" text-anchor="start">EDUCATION</text>
+  <!-- Main title -->
+  <text x="104" y="260" font-family="'Segoe UI', Arial, sans-serif" font-size="72" font-weight="800" fill="#FFFFFF" text-anchor="start">PhD</text>
+  <text x="104" y="345" font-family="'Segoe UI', Arial, sans-serif" font-size="72" font-weight="800" fill="#FFFFFF" text-anchor="start">Full Form</text>
+  <text x="104" y="410" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#a0b8d0" text-anchor="start">&amp; Doctorate Guide</text>
+  <!-- Right side icon: Graduation cap -->
+  <!-- Cap board (mortarboard top) -->
+  <polygon points="900,200 1050,260 900,320 750,260" fill="#D4922A" opacity="0.9"/>
+  <!-- Cap top shine -->
+  <polygon points="900,200 1050,260 900,320 750,260" fill="none" stroke="#fff" stroke-width="2" opacity="0.3"/>
+  <!-- Cap base cylinder -->
+  <ellipse cx="900" cy="320" rx="90" ry="28" fill="#1e3a5f"/>
+  <rect x="810" y="293" width="180" height="55" fill="#1e3a5f"/>
+  <ellipse cx="900" cy="348" rx="90" ry="28" fill="#1e4060"/>
+  <!-- Tassel string -->
+  <line x1="1050" y1="260" x2="1050" y2="340" stroke="#D4922A" stroke-width="3"/>
+  <circle cx="1050" cy="345" r="6" fill="#D4922A"/>
+  <!-- Tassel fringe -->
+  <line x1="1044" y1="345" x2="1040" y2="385" stroke="#D4922A" stroke-width="2"/>
+  <line x1="1050" y1="345" x2="1050" y2="388" stroke="#D4922A" stroke-width="2"/>
+  <line x1="1056" y1="345" x2="1060" y2="385" stroke="#D4922A" stroke-width="2"/>
+  <!-- Diploma scroll below cap -->
+  <rect x="820" y="390" width="160" height="100" rx="8" fill="#1e3a5f" stroke="#D4922A" stroke-width="2"/>
+  <rect x="810" y="385" width="20" height="110" rx="10" fill="#D4922A" opacity="0.7"/>
+  <rect x="970" y="385" width="20" height="110" rx="10" fill="#D4922A" opacity="0.7"/>
+  <line x1="840" y1="420" x2="960" y2="420" stroke="#D4922A" stroke-width="1.5" opacity="0.6"/>
+  <line x1="840" y1="440" x2="960" y2="440" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <line x1="840" y1="458" x2="960" y2="458" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <!-- Decorative circle -->
+  <circle cx="900" cy="315" r="200" fill="none" stroke="#D4922A" stroke-width="1" opacity="0.1"/>
+  <circle cx="900" cy="315" r="240" fill="none" stroke="#D4922A" stroke-width="0.5" opacity="0.07"/>
+  <!-- Bottom branding -->
+  <text x="600" y="610" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#4a6a8a" text-anchor="middle" letter-spacing="2">edifyedu.in</text>
+</svg>

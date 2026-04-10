@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="354" viewBox="0 0 988 354" role="img" aria-label="Blog 2: Fayol vs Taylor comparison">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="354" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="268" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 2: Fayol vs Taylor comparison</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">Aspect</text>
+<line x1="198" y1="70" x2="198" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="212" y="92.5" class="th" fill="#FFFFFF">Henri Fayol</text>
+<line x1="566" y1="70" x2="566" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="580" y="92.5" class="th" fill="#FFFFFF">Frederick Taylor</text>
+<rect x="24" y="110" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="136.5" class="td" fill="#444444">Focus</text>
+<line x1="198" y1="114" x2="198" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="212" y="136.5" class="td" fill="#444444">The whole organization — top to bottom</text>
+<line x1="566" y1="114" x2="566" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="580" y="136.5" class="td" fill="#444444">The shop floor — bottom-level workers</text>
+<rect x="24" y="154" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="154" x2="964" y2="154" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="180.5" class="td" fill="#444444">Approach</text>
+<line x1="198" y1="158" x2="198" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="212" y="180.5" class="td" fill="#444444">Administrative / top-down</text>
+<line x1="566" y1="158" x2="566" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="580" y="180.5" class="td" fill="#444444">Scientific / task-specific</text>
+<rect x="24" y="198" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="198" x2="964" y2="198" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="224.5" class="td" fill="#444444">Core question</text>
+<line x1="198" y1="202" x2="198" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="212" y="224.5" class="td" fill="#444444">How should management be structured?</text>
+<line x1="566" y1="202" x2="566" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="580" y="224.5" class="td" fill="#444444">How can worker productivity be maximized?</text>
+<rect x="24" y="242" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="242" x2="964" y2="242" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="268.5" class="td" fill="#444444">Key concept</text>
+<line x1="198" y1="246" x2="198" y2="282" stroke="#C8DDD0" stroke-width="1"/>
+<text x="212" y="268.5" class="td" fill="#444444">14 universal management principles</text>
+<line x1="566" y1="246" x2="566" y2="282" stroke="#C8DDD0" stroke-width="1"/>
+<text x="580" y="268.5" class="td" fill="#444444">Time-and-motion studies, piece-rate pay</text>
+<rect x="24" y="286" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="286" x2="964" y2="286" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="312.5" class="td" fill="#444444">Best remembered as</text>
+<line x1="198" y1="290" x2="198" y2="326" stroke="#C8DDD0" stroke-width="1"/>
+<text x="212" y="312.5" class="td" fill="#444444">Father of Modern Management Theory</text>
+<line x1="566" y1="290" x2="566" y2="326" stroke="#C8DDD0" stroke-width="1"/>
+<text x="580" y="312.5" class="td" fill="#444444">Father of Scientific Management</text>
+<rect x="24" y="66" width="940" height="264" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

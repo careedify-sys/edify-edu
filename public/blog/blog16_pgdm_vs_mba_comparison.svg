@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="646" viewBox="0 0 988 646" role="img" aria-label="Blog 16: PGDM vs MBA comparison">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="646" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="560" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 16: PGDM vs MBA comparison</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">Parameter</text>
+<line x1="234" y1="70" x2="234" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="248" y="92.5" class="th" fill="#FFFFFF">MBA</text>
+<line x1="549" y1="70" x2="549" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="563" y="92.5" class="th" fill="#FFFFFF">PGDM</text>
+<rect x="24" y="110" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="136.5" class="td" fill="#444444">Type</text>
+<line x1="234" y1="114" x2="234" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="248" y="136.5" class="td" fill="#444444">Degree</text>
+<line x1="549" y1="114" x2="549" y2="150" stroke="#C8DDD0" stroke-width="1"/>
+<text x="563" y="136.5" class="td" fill="#444444">Diploma</text>
+<rect x="24" y="154" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="154" x2="964" y2="154" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="180.5" class="td" fill="#444444">Conferred by</text>
+<line x1="234" y1="158" x2="234" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="248" y="180.5" class="td" fill="#444444">UGC-recognized universities</text>
+<line x1="549" y1="158" x2="549" y2="194" stroke="#C8DDD0" stroke-width="1"/>
+<text x="563" y="180.5" class="td" fill="#444444">AICTE-approved autonomous institutions</text>
+<rect x="24" y="198" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="198" x2="964" y2="198" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="224.5" class="td" fill="#444444">Curriculum flexibility</text>
+<line x1="234" y1="202" x2="234" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="248" y="224.5" class="td" fill="#444444">Lower — university-prescribed</text>
+<line x1="549" y1="202" x2="549" y2="238" stroke="#C8DDD0" stroke-width="1"/>
+<text x="563" y="224.5" class="td" fill="#444444">Higher — institution designs own curriculum</text>
+<rect x="24" y="242" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="242" x2="964" y2="242" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="274.5" class="td" fill="#444444">Top institutions</text>
+<line x1="234" y1="246" x2="234" y2="294" stroke="#C8DDD0" stroke-width="1"/>
+<text x="248" y="265.5" class="td" fill="#444444">DU FMS, JBIMS Mumbai, Government MBA</text>
+<text x="248" y="283.5" class="td" fill="#444444">colleges</text>
+<line x1="549" y1="246" x2="549" y2="294" stroke="#C8DDD0" stroke-width="1"/>
+<text x="563" y="265.5" class="td" fill="#444444">IIMs, ISB, XLRI, MDI, SP Jain, IIM-equivalent private</text>
+<text x="563" y="283.5" class="td" fill="#444444">schools</text>
+<rect x="24" y="298" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="298" x2="964" y2="298" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="330.5" class="td" fill="#444444">Average fees</text>
+<line x1="234" y1="302" x2="234" y2="350" stroke="#C8DDD0" stroke-width="1"/>
+<text x="248" y="321.5" class="td" fill="#444444">Rs. 2–15 lakh (government colleges much</text>
+<text x="248" y="339.5" class="td" fill="#444444">cheaper)</text>
+<line x1="549" y1="302" x2="549" y2="350" stroke="#C8DDD0" stroke-width="1"/>
+<text x="563" y="330.5" class="td" fill="#444444">Rs. 10–35 lakh at top institutes</text>
+<rect x="24" y="354" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="354" x2="964" y2="354" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="377.5" class="td" fill="#444444">Industry recognition</text>
+<text x="38" y="395.5" class="td" fill="#444444">(corporate)</text>
+<line x1="234" y1="358" x2="234" y2="406" stroke="#C8DDD0" stroke-width="1"/>
+<text x="248" y="386.5" class="td" fill="#444444">Good</text>
+<line x1="549" y1="358" x2="549" y2="406" stroke="#C8DDD0" stroke-width="1"/>
+<text x="563" y="386.5" class="td" fill="#444444">Often higher at top PGDM institutes</text>
+<rect x="24" y="410" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="410" x2="964" y2="410" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="433.5" class="td" fill="#444444">Government job</text>
+<text x="38" y="451.5" class="td" fill="#444444">eligibility</text>
+<line x1="234" y1="414" x2="234" y2="462" stroke="#C8DDD0" stroke-width="1"/>
+<text x="248" y="442.5" class="td" fill="#444444">Accepted universally</text>
+<line x1="549" y1="414" x2="549" y2="462" stroke="#C8DDD0" stroke-width="1"/>
+<text x="563" y="442.5" class="td" fill="#444444">Accepted in most cases but verify each notification</text>
+<rect x="24" y="466" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="466" x2="964" y2="466" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="492.5" class="td" fill="#444444">PhD admission eligibility</text>
+<line x1="234" y1="470" x2="234" y2="506" stroke="#C8DDD0" stroke-width="1"/>
+<text x="248" y="492.5" class="td" fill="#444444">Generally accepted everywhere</text>
+<line x1="549" y1="470" x2="549" y2="506" stroke="#C8DDD0" stroke-width="1"/>
+<text x="563" y="492.5" class="td" fill="#444444">May require verification at some universities</text>
+<rect x="24" y="510" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="510" x2="964" y2="510" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="542.5" class="td" fill="#444444">Duration</text>
+<line x1="234" y1="514" x2="234" y2="562" stroke="#C8DDD0" stroke-width="1"/>
+<text x="248" y="542.5" class="td" fill="#444444">2 years typical</text>
+<line x1="549" y1="514" x2="549" y2="562" stroke="#C8DDD0" stroke-width="1"/>
+<text x="563" y="533.5" class="td" fill="#444444">1–2 years (1-year formats available at ISB, executive</text>
+<text x="563" y="551.5" class="td" fill="#444444">programs)</text>
+<rect x="24" y="566" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="566" x2="964" y2="566" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="598.5" class="td" fill="#444444">Best for</text>
+<line x1="234" y1="570" x2="234" y2="618" stroke="#C8DDD0" stroke-width="1"/>
+<text x="248" y="589.5" class="td" fill="#444444">Government jobs, academic roles, PhD</text>
+<text x="248" y="607.5" class="td" fill="#444444">admission</text>
+<line x1="549" y1="570" x2="549" y2="618" stroke="#C8DDD0" stroke-width="1"/>
+<text x="563" y="598.5" class="td" fill="#444444">Corporate careers, especially at top institutes</text>
+<rect x="24" y="66" width="940" height="556" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

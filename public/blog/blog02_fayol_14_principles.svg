@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="918" viewBox="0 0 988 918" role="img" aria-label="Blog 2: Fayol 14 principles table">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="918" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="832" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 2: Fayol 14 principles table</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">#</text>
+<line x1="84" y1="70" x2="84" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="98" y="92.5" class="th" fill="#FFFFFF">Principle</text>
+<line x1="280" y1="70" x2="280" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="294" y="92.5" class="th" fill="#FFFFFF">Core Idea</text>
+<line x1="542" y1="70" x2="542" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="556" y="92.5" class="th" fill="#FFFFFF">Modern Example</text>
+<rect x="24" y="110" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="142.5" class="td" fill="#444444">1</text>
+<line x1="84" y1="114" x2="84" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="142.5" class="td" fill="#444444">Division of Work</text>
+<line x1="280" y1="114" x2="280" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="294" y="142.5" class="td" fill="#444444">Specialization improves output</text>
+<line x1="542" y1="114" x2="542" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="556" y="133.5" class="td" fill="#444444">Amazon has separate teams for logistics, tech,</text>
+<text x="556" y="151.5" class="td" fill="#444444">marketing — each deeply specialized</text>
+<rect x="24" y="166" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="166" x2="964" y2="166" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="198.5" class="td" fill="#444444">2</text>
+<line x1="84" y1="170" x2="84" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="189.5" class="td" fill="#444444">Authority and</text>
+<text x="98" y="207.5" class="td" fill="#444444">Responsibility</text>
+<line x1="280" y1="170" x2="280" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="294" y="189.5" class="td" fill="#444444">Power and accountability must be</text>
+<text x="294" y="207.5" class="td" fill="#444444">equal</text>
+<line x1="542" y1="170" x2="542" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="556" y="189.5" class="td" fill="#444444">A project manager who assigns tasks must also own the</text>
+<text x="556" y="207.5" class="td" fill="#444444">results</text>
+<rect x="24" y="222" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="222" x2="964" y2="222" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="254.5" class="td" fill="#444444">3</text>
+<line x1="84" y1="226" x2="84" y2="274" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="254.5" class="td" fill="#444444">Discipline</text>
+<line x1="280" y1="226" x2="280" y2="274" stroke="#C8DDD0" stroke-width="1"/>
+<text x="294" y="245.5" class="td" fill="#444444">Rules must be followed and</text>
+<text x="294" y="263.5" class="td" fill="#444444">enforced consistently</text>
+<line x1="542" y1="226" x2="542" y2="274" stroke="#C8DDD0" stroke-width="1"/>
+<text x="556" y="245.5" class="td" fill="#444444">An investment firm&#39;s strict insider trading policy</text>
+<text x="556" y="263.5" class="td" fill="#444444">applies to everyone, always</text>
+<rect x="24" y="278" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="278" x2="964" y2="278" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="310.5" class="td" fill="#444444">4</text>
+<line x1="84" y1="282" x2="84" y2="330" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="310.5" class="td" fill="#444444">Unity of Command</text>
+<line x1="280" y1="282" x2="280" y2="330" stroke="#C8DDD0" stroke-width="1"/>
+<text x="294" y="310.5" class="td" fill="#444444">One boss per employee</text>
+<line x1="542" y1="282" x2="542" y2="330" stroke="#C8DDD0" stroke-width="1"/>
+<text x="556" y="301.5" class="td" fill="#444444">Confusion drops when a sales rep reports to one</text>
+<text x="556" y="319.5" class="td" fill="#444444">regional manager, not two</text>
+<rect x="24" y="334" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="334" x2="964" y2="334" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="366.5" class="td" fill="#444444">5</text>
+<line x1="84" y1="338" x2="84" y2="386" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="366.5" class="td" fill="#444444">Unity of Direction</text>
+<line x1="280" y1="338" x2="280" y2="386" stroke="#C8DDD0" stroke-width="1"/>
+<text x="294" y="366.5" class="td" fill="#444444">One plan per objective</text>
+<line x1="542" y1="338" x2="542" y2="386" stroke="#C8DDD0" stroke-width="1"/>
+<text x="556" y="357.5" class="td" fill="#444444">Microsoft&#39;s cloud strategy under Satya Nadella unified</text>
+<text x="556" y="375.5" class="td" fill="#444444">all teams toward Azure</text>
+<rect x="24" y="390" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="390" x2="964" y2="390" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="422.5" class="td" fill="#444444">6</text>
+<line x1="84" y1="394" x2="84" y2="442" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="413.5" class="td" fill="#444444">Subordination of</text>
+<text x="98" y="431.5" class="td" fill="#444444">Individual Interest</text>
+<line x1="280" y1="394" x2="280" y2="442" stroke="#C8DDD0" stroke-width="1"/>
+<text x="294" y="422.5" class="td" fill="#444444">Org goals come first</text>
+<line x1="542" y1="394" x2="542" y2="442" stroke="#C8DDD0" stroke-width="1"/>
+<text x="556" y="413.5" class="td" fill="#444444">During restructuring, departments accept budget cuts</text>
+<text x="556" y="431.5" class="td" fill="#444444">for the company&#39;s survival</text>
+<rect x="24" y="446" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="446" x2="964" y2="446" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="478.5" class="td" fill="#444444">7</text>
+<line x1="84" y1="450" x2="84" y2="498" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="478.5" class="td" fill="#444444">Remuneration</text>
+<line x1="280" y1="450" x2="280" y2="498" stroke="#C8DDD0" stroke-width="1"/>
+<text x="294" y="478.5" class="td" fill="#444444">Fair pay motivates people</text>
+<line x1="542" y1="450" x2="542" y2="498" stroke="#C8DDD0" stroke-width="1"/>
+<text x="556" y="469.5" class="td" fill="#444444">A company paying 2% commission to new hires vs 3% to</text>
+<text x="556" y="487.5" class="td" fill="#444444">veterans violates this</text>
+<rect x="24" y="502" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="502" x2="964" y2="502" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="534.5" class="td" fill="#444444">8</text>
+<line x1="84" y1="506" x2="84" y2="554" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="534.5" class="td" fill="#444444">Centralisation</text>
+<line x1="280" y1="506" x2="280" y2="554" stroke="#C8DDD0" stroke-width="1"/>
+<text x="294" y="525.5" class="td" fill="#444444">Balance top-down control with</text>
+<text x="294" y="543.5" class="td" fill="#444444">local autonomy</text>
+<line x1="542" y1="506" x2="542" y2="554" stroke="#C8DDD0" stroke-width="1"/>
+<text x="556" y="525.5" class="td" fill="#444444">Google lets engineering teams choose their own tools;</text>
+<text x="556" y="543.5" class="td" fill="#444444">military uses pure top-down</text>
+<rect x="24" y="558" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="558" x2="964" y2="558" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="590.5" class="td" fill="#444444">9</text>
+<line x1="84" y1="562" x2="84" y2="610" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="590.5" class="td" fill="#444444">Scalar Chain</text>
+<line x1="280" y1="562" x2="280" y2="610" stroke="#C8DDD0" stroke-width="1"/>
+<text x="294" y="581.5" class="td" fill="#444444">Clear hierarchy for</text>
+<text x="294" y="599.5" class="td" fill="#444444">communication</text>
+<line x1="542" y1="562" x2="542" y2="610" stroke="#C8DDD0" stroke-width="1"/>
+<text x="556" y="581.5" class="td" fill="#444444">The &#39;gang plank&#39; — same-level employees can talk</text>
+<text x="556" y="599.5" class="td" fill="#444444">directly in urgent situations</text>
+<rect x="24" y="614" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="614" x2="964" y2="614" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="646.5" class="td" fill="#444444">10</text>
+<line x1="84" y1="618" x2="84" y2="666" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="646.5" class="td" fill="#444444">Order</text>
+<line x1="280" y1="618" x2="280" y2="666" stroke="#C8DDD0" stroke-width="1"/>
+<text x="294" y="637.5" class="td" fill="#444444">Right person, right place, right</text>
+<text x="294" y="655.5" class="td" fill="#444444">time</text>
+<line x1="542" y1="618" x2="542" y2="666" stroke="#C8DDD0" stroke-width="1"/>
+<text x="556" y="637.5" class="td" fill="#444444">A well-organized warehouse where every item has a</text>
+<text x="556" y="655.5" class="td" fill="#444444">fixed location</text>
+<rect x="24" y="670" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="670" x2="964" y2="670" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="702.5" class="td" fill="#444444">11</text>
+<line x1="84" y1="674" x2="84" y2="722" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="702.5" class="td" fill="#444444">Equity</text>
+<line x1="280" y1="674" x2="280" y2="722" stroke="#C8DDD0" stroke-width="1"/>
+<text x="294" y="693.5" class="td" fill="#444444">Treat people fairly, regardless</text>
+<text x="294" y="711.5" class="td" fill="#444444">of who they are</text>
+<line x1="542" y1="674" x2="542" y2="722" stroke="#C8DDD0" stroke-width="1"/>
+<text x="556" y="693.5" class="td" fill="#444444">Equal pay for equal work across gender, caste, and</text>
+<text x="556" y="711.5" class="td" fill="#444444">religion</text>
+<rect x="24" y="726" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="726" x2="964" y2="726" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="758.5" class="td" fill="#444444">12</text>
+<line x1="84" y1="730" x2="84" y2="778" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="758.5" class="td" fill="#444444">Stability of Tenure</text>
+<line x1="280" y1="730" x2="280" y2="778" stroke="#C8DDD0" stroke-width="1"/>
+<text x="294" y="749.5" class="td" fill="#444444">High turnover is expensive —</text>
+<text x="294" y="767.5" class="td" fill="#444444">keep good people</text>
+<line x1="542" y1="730" x2="542" y2="778" stroke="#C8DDD0" stroke-width="1"/>
+<text x="556" y="749.5" class="td" fill="#444444">Info Edge India rewards employees at 5-year and</text>
+<text x="556" y="767.5" class="td" fill="#444444">10-year milestones</text>
+<rect x="24" y="782" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="782" x2="964" y2="782" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="814.5" class="td" fill="#444444">13</text>
+<line x1="84" y1="786" x2="84" y2="834" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="814.5" class="td" fill="#444444">Initiative</text>
+<line x1="280" y1="786" x2="280" y2="834" stroke="#C8DDD0" stroke-width="1"/>
+<text x="294" y="805.5" class="td" fill="#444444">Let employees propose and try</text>
+<text x="294" y="823.5" class="td" fill="#444444">things</text>
+<line x1="542" y1="786" x2="542" y2="834" stroke="#C8DDD0" stroke-width="1"/>
+<text x="556" y="805.5" class="td" fill="#444444">Allowing a junior team member to lead a small client</text>
+<text x="556" y="823.5" class="td" fill="#444444">project builds ownership</text>
+<rect x="24" y="838" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="838" x2="964" y2="838" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="870.5" class="td" fill="#444444">14</text>
+<line x1="84" y1="842" x2="84" y2="890" stroke="#C8DDD0" stroke-width="1"/>
+<text x="98" y="870.5" class="td" fill="#444444">Esprit de Corps</text>
+<line x1="280" y1="842" x2="280" y2="890" stroke="#C8DDD0" stroke-width="1"/>
+<text x="294" y="861.5" class="td" fill="#444444">Team unity beats individual</text>
+<text x="294" y="879.5" class="td" fill="#444444">brilliance</text>
+<line x1="542" y1="842" x2="542" y2="890" stroke="#C8DDD0" stroke-width="1"/>
+<text x="556" y="861.5" class="td" fill="#444444">Tata Group&#39;s culture of collective responsibility over</text>
+<text x="556" y="879.5" class="td" fill="#444444">individual glory</text>
+<rect x="24" y="66" width="940" height="828" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

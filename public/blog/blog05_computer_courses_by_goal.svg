@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="446" viewBox="0 0 988 446" role="img" aria-label="Blog 5: Computer courses by goal">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="446" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="360" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 5: Computer courses by goal</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">If your goal is...</text>
+<line x1="316" y1="70" x2="316" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="330" y="92.5" class="th" fill="#FFFFFF">Start here</text>
+<line x1="608" y1="70" x2="608" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="622" y="92.5" class="th" fill="#FFFFFF">Time</text>
+<line x1="746" y1="70" x2="746" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="760" y="92.5" class="th" fill="#FFFFFF">Fees (approx.)</text>
+<rect x="24" y="110" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="133.5" class="td" fill="#444444">A job quickly, basic computer</text>
+<text x="38" y="151.5" class="td" fill="#444444">literacy</text>
+<line x1="316" y1="114" x2="316" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="330" y="133.5" class="td" fill="#444444">DCA (Diploma in Computer</text>
+<text x="330" y="151.5" class="td" fill="#444444">Applications)</text>
+<line x1="608" y1="114" x2="608" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="622" y="142.5" class="td" fill="#444444">6 months–1 year</text>
+<line x1="746" y1="114" x2="746" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="760" y="142.5" class="td" fill="#444444">Rs. 5,000–30,000 total</text>
+<rect x="24" y="166" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="166" x2="964" y2="166" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="192.5" class="td" fill="#444444">Software development career</text>
+<line x1="316" y1="170" x2="316" y2="206" stroke="#C8DDD0" stroke-width="1"/>
+<text x="330" y="192.5" class="td" fill="#444444">BCA or B.Tech CSE</text>
+<line x1="608" y1="170" x2="608" y2="206" stroke="#C8DDD0" stroke-width="1"/>
+<text x="622" y="192.5" class="td" fill="#444444">3–4 years</text>
+<line x1="746" y1="170" x2="746" y2="206" stroke="#C8DDD0" stroke-width="1"/>
+<text x="760" y="192.5" class="td" fill="#444444">Rs. 50K–3L/year</text>
+<rect x="24" y="210" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="210" x2="964" y2="210" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="242.5" class="td" fill="#444444">Data science or ML career</text>
+<line x1="316" y1="214" x2="316" y2="262" stroke="#C8DDD0" stroke-width="1"/>
+<text x="330" y="242.5" class="td" fill="#444444">BCA/B.Sc CS + Python certifications</text>
+<line x1="608" y1="214" x2="608" y2="262" stroke="#C8DDD0" stroke-width="1"/>
+<text x="622" y="233.5" class="td" fill="#444444">3 years + 6</text>
+<text x="622" y="251.5" class="td" fill="#444444">months</text>
+<line x1="746" y1="214" x2="746" y2="262" stroke="#C8DDD0" stroke-width="1"/>
+<text x="760" y="233.5" class="td" fill="#444444">Rs. 50K–1L/year + free</text>
+<text x="760" y="251.5" class="td" fill="#444444">certs</text>
+<rect x="24" y="266" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="266" x2="964" y2="266" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="298.5" class="td" fill="#444444">Cybersecurity career</text>
+<line x1="316" y1="270" x2="316" y2="318" stroke="#C8DDD0" stroke-width="1"/>
+<text x="330" y="289.5" class="td" fill="#444444">B.Sc IT + CEH/Security+</text>
+<text x="330" y="307.5" class="td" fill="#444444">certification</text>
+<line x1="608" y1="270" x2="608" y2="318" stroke="#C8DDD0" stroke-width="1"/>
+<text x="622" y="289.5" class="td" fill="#444444">3 years + 6</text>
+<text x="622" y="307.5" class="td" fill="#444444">months</text>
+<line x1="746" y1="270" x2="746" y2="318" stroke="#C8DDD0" stroke-width="1"/>
+<text x="760" y="298.5" class="td" fill="#444444">Rs. 40K–80K/year</text>
+<rect x="24" y="322" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="322" x2="964" y2="322" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="348.5" class="td" fill="#444444">Web design or digital marketing</text>
+<line x1="316" y1="326" x2="316" y2="362" stroke="#C8DDD0" stroke-width="1"/>
+<text x="330" y="348.5" class="td" fill="#444444">Short course (3–6 months)</text>
+<line x1="608" y1="326" x2="608" y2="362" stroke="#C8DDD0" stroke-width="1"/>
+<text x="622" y="348.5" class="td" fill="#444444">3–6 months</text>
+<line x1="746" y1="326" x2="746" y2="362" stroke="#C8DDD0" stroke-width="1"/>
+<text x="760" y="348.5" class="td" fill="#444444">Rs. 0–50,000</text>
+<rect x="24" y="366" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="366" x2="964" y2="366" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="398.5" class="td" fill="#444444">Cloud computing role</text>
+<line x1="316" y1="370" x2="316" y2="418" stroke="#C8DDD0" stroke-width="1"/>
+<text x="330" y="398.5" class="td" fill="#444444">BCA/BCS + AWS/Azure certification</text>
+<line x1="608" y1="370" x2="608" y2="418" stroke="#C8DDD0" stroke-width="1"/>
+<text x="622" y="389.5" class="td" fill="#444444">3 years + 3</text>
+<text x="622" y="407.5" class="td" fill="#444444">months</text>
+<line x1="746" y1="370" x2="746" y2="418" stroke="#C8DDD0" stroke-width="1"/>
+<text x="760" y="389.5" class="td" fill="#444444">Rs. 50K–1L/year + cert</text>
+<text x="760" y="407.5" class="td" fill="#444444">exam</text>
+<rect x="24" y="66" width="940" height="356" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

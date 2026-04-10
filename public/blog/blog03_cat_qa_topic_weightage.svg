@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="378" viewBox="0 0 988 378" role="img" aria-label="Blog 3: CAT QA topic weightage">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="378" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="292" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 3: CAT QA topic weightage</text>
+<rect x="24" y="66" width="940" height="56" fill="#1A6B2B"/>
+<text x="38" y="98.5" class="th" fill="#FFFFFF">Topic</text>
+<line x1="199" y1="70" x2="199" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="213" y="89.5" class="th" fill="#FFFFFF">Weightage (% of</text>
+<text x="213" y="107.5" class="th" fill="#FFFFFF">QA)</text>
+<line x1="350" y1="70" x2="350" y2="118" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="364" y="98.5" class="th" fill="#FFFFFF">Key Sub-topics to focus on</text>
+<rect x="24" y="122" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="122" x2="964" y2="122" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="148.5" class="td" fill="#444444">Arithmetic</text>
+<line x1="199" y1="126" x2="199" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="213" y="148.5" class="td" fill="#444444">40–45%</text>
+<line x1="350" y1="126" x2="350" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="364" y="148.5" class="td" fill="#444444">Percentages, Profit &amp; Loss, Time-Speed-Distance, Averages, Ratio &amp; Proportion</text>
+<rect x="24" y="166" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="166" x2="964" y2="166" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="192.5" class="td" fill="#444444">Algebra</text>
+<line x1="199" y1="170" x2="199" y2="206" stroke="#C8DDD0" stroke-width="1"/>
+<text x="213" y="192.5" class="td" fill="#444444">20–25%</text>
+<line x1="350" y1="170" x2="350" y2="206" stroke="#C8DDD0" stroke-width="1"/>
+<text x="364" y="192.5" class="td" fill="#444444">Quadratic equations, inequalities, functions, progressions</text>
+<rect x="24" y="210" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="210" x2="964" y2="210" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="233.5" class="td" fill="#444444">Geometry &amp;</text>
+<text x="38" y="251.5" class="td" fill="#444444">Mensuration</text>
+<line x1="199" y1="214" x2="199" y2="262" stroke="#C8DDD0" stroke-width="1"/>
+<text x="213" y="242.5" class="td" fill="#444444">15–18%</text>
+<line x1="350" y1="214" x2="350" y2="262" stroke="#C8DDD0" stroke-width="1"/>
+<text x="364" y="242.5" class="td" fill="#444444">Triangles, circles, coordinate geometry, solid geometry</text>
+<rect x="24" y="266" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="266" x2="964" y2="266" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="292.5" class="td" fill="#444444">Number System</text>
+<line x1="199" y1="270" x2="199" y2="306" stroke="#C8DDD0" stroke-width="1"/>
+<text x="213" y="292.5" class="td" fill="#444444">10–12%</text>
+<line x1="350" y1="270" x2="350" y2="306" stroke="#C8DDD0" stroke-width="1"/>
+<text x="364" y="292.5" class="td" fill="#444444">LCM, HCF, remainder theorem, factors, divisibility rules</text>
+<rect x="24" y="310" width="940" height="44" fill="#FFFFFF"/>
+<line x1="24" y1="310" x2="964" y2="310" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="336.5" class="td" fill="#444444">Modern Maths</text>
+<line x1="199" y1="314" x2="199" y2="350" stroke="#C8DDD0" stroke-width="1"/>
+<text x="213" y="336.5" class="td" fill="#444444">8–10%</text>
+<line x1="350" y1="314" x2="350" y2="350" stroke="#C8DDD0" stroke-width="1"/>
+<text x="364" y="336.5" class="td" fill="#444444">Permutations, combinations, probability, set theory</text>
+<rect x="24" y="66" width="940" height="288" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="246" viewBox="0 0 988 246" role="img" aria-label="Blog 3: CAT DILR section breakdown">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="246" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="160" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 3: CAT DILR section breakdown</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">Sub-section</text>
+<line x1="218" y1="70" x2="218" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="232" y="92.5" class="th" fill="#FFFFFF">Topics</text>
+<line x1="598" y1="70" x2="598" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="612" y="92.5" class="th" fill="#FFFFFF">Typical Questions</text>
+<rect x="24" y="110" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="133.5" class="td" fill="#444444">Data Interpretation</text>
+<text x="38" y="151.5" class="td" fill="#444444">(DI)</text>
+<line x1="218" y1="114" x2="218" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="232" y="133.5" class="td" fill="#444444">Tables, bar graphs, pie charts, line graphs,</text>
+<text x="232" y="151.5" class="td" fill="#444444">caselets</text>
+<line x1="598" y1="114" x2="598" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="612" y="142.5" class="td" fill="#444444">10–12</text>
+<rect x="24" y="166" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="166" x2="964" y2="166" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="198.5" class="td" fill="#444444">Logical Reasoning (LR)</text>
+<line x1="218" y1="170" x2="218" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="232" y="189.5" class="td" fill="#444444">Seating arrangements, puzzles, games &amp;</text>
+<text x="232" y="207.5" class="td" fill="#444444">tournaments, networks, Venn diagrams</text>
+<line x1="598" y1="170" x2="598" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="612" y="198.5" class="td" fill="#444444">10–12</text>
+<rect x="24" y="66" width="940" height="156" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>

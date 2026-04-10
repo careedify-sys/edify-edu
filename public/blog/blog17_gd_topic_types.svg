@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="402" viewBox="0 0 988 402" role="img" aria-label="Blog 17: GD topic types">
+<style>
+  text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .th  { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+  .td  { font-size: 12px; fill: #444444; }
+  .ttl { font-size: 15px; font-weight: 700; fill: #111111; }
+</style>
+<rect width="988" height="402" rx="12" fill="#FFFFFF"/>
+<rect x="22" y="64" width="944" height="316" rx="11" fill="#C8DDD0"/>
+<text x="24" y="50" class="ttl">Blog 17: GD topic types</text>
+<rect x="24" y="66" width="940" height="44" fill="#1A6B2B"/>
+<text x="38" y="92.5" class="th" fill="#FFFFFF">Type</text>
+<line x1="170" y1="70" x2="170" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="184" y="92.5" class="th" fill="#FFFFFF">What it tests</text>
+<line x1="507" y1="70" x2="507" y2="106" stroke="#FFFFFF44" stroke-width="1"/>
+<text x="521" y="92.5" class="th" fill="#FFFFFF">Example topics</text>
+<rect x="24" y="110" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="110" x2="964" y2="110" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="142.5" class="td" fill="#444444">Current affairs</text>
+<line x1="170" y1="114" x2="170" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="184" y="133.5" class="td" fill="#444444">Awareness of recent events; ability to</text>
+<text x="184" y="151.5" class="td" fill="#444444">analyze</text>
+<line x1="507" y1="114" x2="507" y2="162" stroke="#C8DDD0" stroke-width="1"/>
+<text x="521" y="142.5" class="td" fill="#444444">AI regulation, gig economy, India&#39;s manufacturing growth</text>
+<rect x="24" y="166" width="940" height="56" fill="#F4FAF6"/>
+<line x1="24" y1="166" x2="964" y2="166" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="189.5" class="td" fill="#444444">Business and</text>
+<text x="38" y="207.5" class="td" fill="#444444">economy</text>
+<line x1="170" y1="170" x2="170" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="184" y="198.5" class="td" fill="#444444">Business knowledge; strategic thinking</text>
+<line x1="507" y1="170" x2="507" y2="218" stroke="#C8DDD0" stroke-width="1"/>
+<text x="521" y="198.5" class="td" fill="#444444">Startup vs legacy companies, FDI policy, gig work</text>
+<rect x="24" y="222" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="222" x2="964" y2="222" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="254.5" class="td" fill="#444444">Abstract</text>
+<line x1="170" y1="226" x2="170" y2="274" stroke="#C8DDD0" stroke-width="1"/>
+<text x="184" y="254.5" class="td" fill="#444444">Lateral thinking; creative interpretation</text>
+<line x1="507" y1="226" x2="507" y2="274" stroke="#C8DDD0" stroke-width="1"/>
+<text x="521" y="245.5" class="td" fill="#444444">&#39;Speed is the new currency&#39;, &#39;A rolling stone gathers no</text>
+<text x="521" y="263.5" class="td" fill="#444444">moss&#39;</text>
+<rect x="24" y="278" width="940" height="44" fill="#F4FAF6"/>
+<line x1="24" y1="278" x2="964" y2="278" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="304.5" class="td" fill="#444444">Social / ethical</text>
+<line x1="170" y1="282" x2="170" y2="318" stroke="#C8DDD0" stroke-width="1"/>
+<text x="184" y="304.5" class="td" fill="#444444">Values; ability to handle sensitive topics</text>
+<line x1="507" y1="282" x2="507" y2="318" stroke="#C8DDD0" stroke-width="1"/>
+<text x="521" y="304.5" class="td" fill="#444444">Reservation policy, gender pay gap, farmer distress</text>
+<rect x="24" y="322" width="940" height="56" fill="#FFFFFF"/>
+<line x1="24" y1="322" x2="964" y2="322" stroke="#C8DDD0" stroke-width="1"/>
+<text x="38" y="354.5" class="td" fill="#444444">Factual</text>
+<line x1="170" y1="326" x2="170" y2="374" stroke="#C8DDD0" stroke-width="1"/>
+<text x="184" y="345.5" class="td" fill="#444444">Data-based discussion; analysis of</text>
+<text x="184" y="363.5" class="td" fill="#444444">statistics</text>
+<line x1="507" y1="326" x2="507" y2="374" stroke="#C8DDD0" stroke-width="1"/>
+<text x="521" y="354.5" class="td" fill="#444444">India&#39;s GDP growth, unemployment data, education spending</text>
+<rect x="24" y="66" width="940" height="312" rx="10" fill="none" stroke="#C8DDD0" stroke-width="1.5"/>
+</svg>
