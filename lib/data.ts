@@ -141,15 +141,18 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from JAIN (Deemed-to-be University) – JA — recognised for corporate hiring.'},
       'MCA': {
-        specs: ['DevOps', 'Computer Science & IT', 'Data Analytics', 'Cyber Security', 'Full Stack Development', 'Cloud Computing', 'Data Science', 'Artificial Intelligence'],
-        fees: '₹160K – ₹240K',
+        specs: ['DevOps', 'Natural Language Processing & Large Language Models Development', 'Data Analytics', 'Cyber Security', 'Full Stack Development', 'Cloud Computing', 'Data Science', 'Artificial Intelligence', 'Computer Science and Information Technology'],
+        fees: '₹1.6L',
         duration: '2 Yrs',
-        roles: ['DevOps Trainee', 'Cloud Support Engineer', 'SRE Trainee', 'Automation Engineer Trainee'],
-        avgSalary: '₹5L – ₹16L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank', 'ICICI Bank', 'Reliance', 'Accenture', 'EY', 'KPMG', 'Amazon'],
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from JAIN (Deemed-to-be University) – JA — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Jain (Deemed-to-be University) — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['Finance', 'Marketing', 'Digital Marketing', 'Data Science', 'Human Resource Management'],
         fees: '₹0.3L – ₹2.8L',
@@ -224,15 +227,18 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Amity University Online — recognised for corporate hiring.'},
       'MCA': {
-        specs: ['Computer Applications (BCA) → MCA (combined 4.5-ye', 'Computer Applications (5 specialisations: Cyber Se', 'Blockchain', 'ML&AI', 'Software Engineering', 'FinTech+AI)', 'Cyber Security', 'Blockchain Technology & Management', 'Financial Technology & AI (with Paytm)'],
-        fees: '₹29K – ₹116K',
-        duration: '4.5 Years (54 months)',
-        roles: ['Software Developer', 'Programmer Analyst'],
-        avgSalary: '₹5L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'HCL Tech', 'Reliance', 'Accenture', 'PwC', 'EY', 'HDFC Bank', 'SBI', 'Tech Mahindra'],
+        specs: ['general', 'Artificial Intelligence and Machine Learning', 'Financial Technology and AI', 'Cyber Security', 'Software Engineering', 'Blockchain Technology'],
+        fees: '₹7K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Amity University Online — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Amity University — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['General Business Administration (option for Data A', 'Travel & Tourism Management', 'Data Analytics'],
         fees: '₹60K – ₹200K',
@@ -306,15 +312,18 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Lovely Professional University (LPU) — recognised for corporate hiring.'},
       'MCA': {
-        specs: ['ML & AI specialization; GE basket electives', 'Data Science specialization; GE basket electives', 'Cyber Security specialization; GE basket electives', 'Full Stack Web Development specialization; GE bask', 'VR Game Development specialization; GE basket elec'],
-        fees: '₹29K – ₹116K',
-        duration: '2 Years (4 Semesters); extendable to 4 years',
-        roles: ['ML Engineer', 'AI Developer', 'Data Scientist', 'NLP Engineer', 'Computer Vision Engineer', 'AI Research Associate'],
-        avgSalary: '₹8L – ₹30L per annum',
-        topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
+        specs: ['AR/ VR (Game Development)', 'Machine Learning & AI', 'Data Science', 'Cybersecurity', 'Full Stack Web Development'],
+        fees: '₹37K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Lovely Professional University (LPU) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Lovely Professional University — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['16 Specializations: Entrepreneurship', 'HRM', 'Marketing', 'International Business', 'Family Business', 'Digital Marketing', 'Fin-Tech', 'Retail and E-Commerce', 'Artificial Intelligence', 'HealthCare Management', 'Logistics and Supply Chain Management', 'Foreign Exchange Management', 'Travel & Tourism Management', 'Event Management'],
         fees: '₹0.2L – ₹1.5L',
@@ -392,7 +401,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Dayananda Sagar University (DSU) Online. NAAC A accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'BCA', 'B.Com'],
+    programs: ['MBA', 'MCA', 'BCA', 'B.Com'],
     programDetails: {
       'MBA': {
         specs: ['Financial Management (FinTech focus)', 'Human Resource Management', 'Marketing Management', 'IT & Systems Management', 'Logistics & Supply Chain Management', 'Entrepreneurship Management', 'Business Analytics', 'Artificial Intelligence'],
@@ -405,15 +414,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Dayananda Sagar University (DSU) On — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['Cloud Computing', 'Data Science', 'Blockchain Technologies', 'Quantum Computing', 'Artificial Intelligence', 'Deep Learning', 'Big Data Analytics', 'Internet of Things', 'Natural Language Processing', 'Mobile Application Development', 'Data Analytics', 'Industrial IoT (IIoT)', 'Business Intelligence', 'Business Data Management'],
-        fees: '₹140K – ₹140K',
-        duration: '2 Years',
-        roles: ['Blockchain Developer', 'Smart Contract Auditor.'],
-        avgSalary: '₹7 LPA - ₹20 LPA',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
+        specs: ['Cloud Computing Technologies', 'Data Science', 'Blockchain Technologies', 'Quantum Computing', 'Artificial Intelligence', 'Deep Learning', 'Big Data Analytics', 'Internet of Things (IoT)', 'Natural Language Processing', 'Mobile Application Development', 'Data Analytics & Visualization', 'Industrial IoT & Automation', 'Business Intelligence Technology', 'Business Data Analytics', 'Quantum Machine Learning'],
+        fees: '₹1.2L',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Dayananda Sagar University (DSU) On — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Dayananda Sagar University — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['Digital Marketing', 'Logistics & Supply Chain Management', 'Business Analytics'],
         fees: '₹0.2L – ₹1.2L',
@@ -471,7 +483,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from D.Y. Patil University, Navi Mumbai (DYPU Onli. NAAC A accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Graduates targeting sales/marketing careers', 'working professionals in sales/marketing', 'brand professionals'],
     notFor: ['Students needing fully on-campus experience', 'those requiring entrance exam pathway', 'students below 50% UG marks (general category)'],
-    programs: ['MBA', 'MCA', 'BBA', 'BCA'],
+    programs: ['MBA', 'BBA', 'BCA'],
     programDetails: {
       'MBA': {
         specs: ['Sales & Marketing', 'Human Resource Management', 'Hospital & Healthcare Management', 'Finance', 'Retail Management', 'Logistics & Supply Chain Management', 'International Business', 'Entrepreneurship Management', 'Event Management', 'Digital Marketing', 'Data Science & Business Analytics'],
@@ -483,16 +495,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from D.Y. Patil University, Navi Mumbai — recognised for corporate hiring.',
       },
-      'MCA': {
-        specs: ['Data Science', 'Cloud Computing', 'Cyber Security', 'Artificial Intelligence', 'Full Stack Development'],
-        fees: '₹60K – ₹200K',
-        duration: '2 Years',
-        roles: ['Software Engineer', 'ML Engineer', 'Cloud Developer', 'Cyber Security Analyst'],
-        avgSalary: '₹5L – ₹20L per annum',
-        topCompanies: ['Indigo Airlines', 'American Express', 'Cipla', 'Emerson', 'Bajaj', 'Vodafone', 'IBM', 'Genpact', 'Taj Hotels', 'Oberoi Hotels'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from D.Y. Patil University, Navi Mumbai — recognised for corporate hiring.',
-      },
+
       'BBA': {
         specs: ['General Management', 'Aviation', 'Travel & Tourism', 'Marketing', 'Logistics', 'Event Mgmt', 'Sports Mgmt', 'Retail Ops', 'Hospital Mgmt', 'Invest Bank'],
         fees: '₹60K – ₹200K',
@@ -556,15 +559,18 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from UPES Online (University of Petroleu — recognised for corporate hiring.'},
       'MCA': {
-        specs: ['Artificial Intelligence & Machine Learning', 'Cyber Security & Forensics', 'Data Science'],
-        fees: '₹185K – ₹185K',
-        duration: '2 Years',
-        roles: ['ML Engineer', 'AI Analyst', 'Data Scientist (Jnr)', 'NLP Engineer'],
-        avgSalary: '₹5L – ₹20L per annum',
-        topCompanies: ['Not explicitly listed for MCA'],
+        specs: ['Artificial Intelligence and Machine Learning', 'Cyber Security and Forensics', 'Data Science'],
+        fees: '₹TBD',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from UPES Online (University of Petroleu — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from University of Petroleum and Energy — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['Marketing Management', 'Human Resource Management', 'Financial Management', 'Operations Management', 'Digital Business', 'Logistics & Supply Chain Management', 'International Business'],
         fees: '₹169K – ₹169K',
@@ -626,15 +632,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Parul University – Online (paruluni — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['General (AI & Robotics', 'Deep Learning', 'Computer Vision', 'Cyber Security', 'Cloud)'],
-        fees: '₹0.1L – ₹1.0L',
+        specs: ['Cybersecurity & Forensic', 'Full Stack Web Development', 'Artificial Intelligence / Machine Learning'],
+        fees: '₹30K',
         duration: '2 Yrs',
-        roles: ['Software Developer', 'Java Developer', 'Python Developer', 'AI/ML Trainee', 'Cloud Engineer Trainee'],
-        avgSalary: '₹4L – ₹16L per annum',
-        topCompanies: ['Reliance Digital', 'TCS (Tata Consultancy Services)', 'Amazon', 'L&T (Larsen & Toubro)', 'Capgemini', 'UltraTech Cement', 'Deloitte', 'Apple', 'Tesla', 'Google'],
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Parul University – Online (paruluni — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Parul University — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management'],
         fees: '₹18K – ₹70K',
@@ -715,7 +724,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Amrita Vishwa Vidyapeetham (Amrita AHEAD). NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA'],
+    programs: ['MBA', 'MCA'],
     programDetails: {
       'MBA': {
         specs: ['Finance', 'Fintech', 'Marketing', 'Business Analytics', 'Operations Management', 'Artificial Intelligence', 'International Finance and Accounting (ACCA)', 'Environmental, Social, and Governance (ESG)'],
@@ -727,15 +736,18 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Amrita Vishwa Vidyapeetham (Amrita — recognised for corporate hiring.'},
       'MCA': {
-        specs: ['Cybersecurity', 'Artificial Intelligence and Machine Learning'],
-        fees: '₹195K – ₹195K',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
+        specs: ['Artificial Intelligence and Machine Learning', 'Cybersecurity', 'General'],
+        fees: '₹6K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Amrita Vishwa Vidyapeetham (Amrita — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Amrita Vishwa Vidyapeetham — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['Banking & Fintech', 'Data Analytics', 'Digital Marketing', 'International Finance (ACCA)'],
         fees: '₹165K – ₹165K',
@@ -816,15 +828,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Mangalayatan University – Online (m — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['General (AI', 'Data Science R', 'Advanced Cyber Security', 'Big Data', 'NLP', 'Quantum Computing', 'Mobile Computing)'],
-        fees: '₹67K – ₹67K',
+        specs: ['General'],
+        fees: '₹0K',
         duration: '2 Yrs',
-        roles: ['Software Developer', 'Python Developer', 'ML Trainee', 'Data Analyst', 'Web Developer'],
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
-        topCompanies: ['Amazon', 'TCS', 'Wipro', 'Infosys', 'Capgemini', 'HCL', 'ICICI Bank', 'HDFC Bank', 'Reliance Industries', 'MNCs across IT/BFSI/Manufacturing'],
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Mangalayatan University – Online (m — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Mangalayatan University — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management'],
         fees: '₹31K – ₹103K',
@@ -916,15 +931,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Shoolini University – Shoolini Onli — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['Data Science', 'Cloud Computing', 'Cyber Security', 'Artificial Intelligence', 'Full Stack Development'],
-        fees: '₹0.3L – ₹2.0L',
-        duration: '2 Years',
-        roles: ['Software Developer', 'Python Developer', 'ML Engineer (junior)', 'Data Analyst', 'Full Stack Developer', 'AI Developer'],
-        avgSalary: '₹5L – ₹20L per annum',
-        topCompanies: ['Accenture', 'Deloitte', 'Ericsson', 'ICICI Bank', 'KPMG', 'L&T', 'Mercer', 'Adani Group', 'Grant Thornton', 'L\'Oreal'],
+        specs: ['AI Specialization', 'Data Science', 'Full Stack'],
+        fees: '₹0K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Shoolini University – Shoolini Onli — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Shoolini University of Biotechnology and Management Sciences — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Retail Management', 'Entrepreneurship'],
         fees: '₹0.1L – ₹1.2L',
@@ -1006,15 +1024,18 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Manipal University Jaipur (MUJ) – O — recognised for corporate hiring.'},
       'MCA': {
-        specs: ['General Management'],
-        fees: '₹40K – ₹160K',
-        duration: '2 Years (4 Semesters)',
-        roles: ['Software Engineer', 'ML Engineer', 'Cloud Developer', 'Cyber Security Analyst', 'Data Engineer'],
-        avgSalary: '₹5L – ₹18L per annum',
-        topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
+        specs: ['AI & Data Science', 'Comprehensive Emerging Technologies', 'Artificial Intelligence & Machine Learning', 'Cloud Computing', 'Cybersecurity'],
+        fees: '₹1.6L',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Manipal University Jaipur (MUJ) – O — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Manipal University Jaipur — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['General Management'],
         fees: '₹0.2L – ₹1.2L',
@@ -1105,15 +1126,18 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Galgotias University – Online (galg — recognised for corporate hiring.'},
       'MCA': {
-        specs: ['IoT', 'Data Analytics', 'Cyber Security', 'Cloud', 'Web Design (Elective-based)'],
-        fees: '₹21K – ₹84K',
+        specs: ['General'],
+        fees: '₹1K',
         duration: '2 Yrs',
-        roles: ['Software Developer', 'Java Developer', 'ML Trainee', 'Cloud Support Engineer'],
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
-        topCompanies: ['Accenture', 'Amazon', 'Cognizant', 'Deloitte', 'Facebook (Meta)', 'IBM', 'Infosys', 'Microsoft', 'TCS', '830+ recruiters'],
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Galgotias University – Online (galg — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Galgotias University — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management'],
         fees: '₹77K – ₹77K',
@@ -1185,15 +1209,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Sikkim Manipal University (SMU) – O — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['General Management'],
-        fees: '₹18K – ₹75K',
-        duration: '2 Years (4 Semesters)',
-        roles: ['Software Engineer', 'Web Developer', 'ML Engineer', 'Cloud Developer', 'Database Administrator'],
-        avgSalary: '₹4L – ₹15L per annum',
-        topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
+        specs: ['General'],
+        fees: '₹1.1L',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Sikkim Manipal University (SMU) – O — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Sikkim Manipal University — recognised for corporate hiring.',
       },
+      
+      
+
       'B.Com': {
         specs: ['General Management'],
         fees: '₹0.1L – ₹0.8L',
@@ -1402,18 +1429,9 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Yenepoya (Deemed to be University) – Online. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Marketing professionals targeting brand, digital, IMC, international marketing c'],
     notFor: ['Deep tech seekers', 'Pure finance aspirants'],
-    programs: ['MBA', 'B.Com', 'MCA'],
+    programs: ['MBA', 'MCA', 'B.Com'],
     programDetails: {
-      'MCA': {
-        specs: ['Computer Science and Information Technology', 'Cloud Computing and Cyber Security'],
-        fees: '₹50K total (₹25K/year)',
-        duration: '2 Yrs',
-        roles: ['Software Developer', 'Systems Analyst', 'Data Analyst', 'Application Developer', 'IT Consultant'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Capgemini'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved online MCA — recognised for IT careers and higher education across India.',
-      },
+      
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management'],
         fees: '₹120K – ₹120K',
@@ -1424,6 +1442,18 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Yenepoya (Deemed to be University) — recognised for corporate hiring.',
       },
+      'MCA': {
+        specs: ['Computer Science and Information Technology', 'Cloud Computing and Cyber Security'],
+        fees: '₹50K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from Yenepoya University — recognised for corporate hiring.',
+      },
+      
+      
       'BBA': {
         specs: ['General Management', 'Logistics and Supply Chain Management', 'Healthcare Management'],
         fees: '₹90K – ₹105K',
@@ -1482,7 +1512,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Sharda University (Sharda Online). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'BCA', 'M.Com'],
+    programs: ['MBA', 'MCA', 'BCA', 'M.Com'],
     programDetails: {
       'MBA': {
         specs: ['Healthcare and Hospital Administration', 'Marketing', 'Human Resource Management', 'Finance', 'Data Science and Analytics', 'Strategic Human Resource Management'],
@@ -1494,15 +1524,18 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Sharda University (Sharda Online) — recognised for corporate hiring.'},
       'MCA': {
-        specs: ['Data Science', 'AR, VR and Information Security', 'Computer Science and IT'],
-        fees: '₹100K – ₹100K',
-        duration: '2 Years',
-        roles: ['Junior Data Scientist', 'Software Developer'],
-        avgSalary: 'Not Mentioned',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
+        specs: ['Data Science', 'Computer Science and Information Technology', 'Augmented Reality and Virtual Reality with Artificial Intelligence'],
+        fees: '₹30K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Sharda University (Sharda Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Sharda University — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['General Management'],
         fees: '₹0.2L – ₹1.5L',
@@ -1583,25 +1616,17 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Vignan\'s Foundation for Science, Te — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['Data Science', 'Computer Science & IT'],
-        fees: '₹60K – ₹200K',
-        duration: '2 Years',
-        roles: ['Data Analyst Trainee', 'ML Analyst', 'Data Science Trainee', 'BI Analyst'],
-        avgSalary: '₹5L – ₹14L per annum',
-        topCompanies: ['foundit', 'Google Cloud', 'AWS', 'HDFC Bank', 'ICICI Bank', 'Amazon', 'Accenture'],
+        specs: ['Computer Science and IT', 'Data Science'],
+        fees: '₹90K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Vignan\'s Foundation for Science, Te — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Vignan\'s Foundation for Science, Technology and Research — recognised for corporate hiring.',
       },
-      'BBA': {
-        specs: ['Marketing & Human Resources', 'Marketing & Analytics'],
-        fees: '₹150K – ₹150K',
-        duration: '3 Years',
-        roles: ['HR Trainee', 'Marketing Executive', 'Sales Executive', 'HR Coordinator'],
-        avgSalary: '₹3L – ₹7L per annum',
-        topCompanies: ['foundit', 'Google Cloud', 'AWS', 'HDFC Bank', 'ICICI Bank', 'Amazon', 'Accenture'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Vignan\'s Foundation for Science, Te — recognised for corporate hiring.',
-      },
+      
+      
       'BCA': {
         specs: ['Data Science'],
         fees: '₹150K – ₹150K',
@@ -1794,15 +1819,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Manipal Academy of Higher Education — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['General Management'],
-        fees: '₹60K – ₹240K',
-        duration: '2 Years (4 Semesters)',
-        roles: ['Software Engineer', 'ML Engineer', 'Data Scientist', 'Cloud Architect', 'Cyber Security Analyst'],
-        avgSalary: '₹6L – ₹22L per annum',
-        topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
+        specs: ['Artificial Intelligence & Machine Learning', 'Cloud Computing', 'Cybersecurity', 'Full Stack Development'],
+        fees: '₹2.2L',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from Manipal Academy of Higher Education — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['General Management'],
         fees: '₹168K – ₹224K',
@@ -1875,15 +1903,18 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Koneru Lakshmaiah Education Foundat — recognised for corporate hiring.'},
       'MCA': {
-        specs: ['Cloud Computing', 'Data Science', 'Cyber Security', 'Artificial Intelligence'],
-        fees: '₹65K – ₹65K',
+        specs: ['Artificial Intelligence', 'Data Science', 'Cloud Technology', 'Cybersecurity'],
+        fees: '₹66K',
         duration: '2 Yrs',
-        roles: ['Software Engineer', 'System Analyst', 'Database Administrator', 'Data Scientist', 'Security Consultant'],
-        avgSalary: '₹5.5L – ₹12L per annum',
-        topCompanies: ['Google', 'Microsoft', 'IBM', 'Accenture', 'Infosys', 'Wipro', 'Capgemini'],
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Koneru Lakshmaiah Education Foundat — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Koneru Lakshmaiah Education Foundation — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management'],
         fees: '₹79K – ₹79K',
@@ -1946,15 +1977,18 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Chandigarh University (CU Online) — recognised for corporate hiring.'},
       'MCA': {
-        specs: ['Artificial Intelligence', 'Cloud Computing', 'Data Analytics', 'Full-Stack Development'],
-        fees: '₹0.3L – ₹1.6L',
-        duration: '2 Years (4 Semesters)',
-        roles: ['Software Engineer (₹5–20 LPA)', 'Cybersecurity Specialist (₹5–15 LPA)', 'App Developer (₹4–10 LPA)', 'Data Analyst/Scientist (₹6–18 LPA)', 'Cloud Engineer'],
-        avgSalary: '₹4L – ₹20L per annum',
-        topCompanies: ['Amazon', 'Microsoft', 'TCS', 'Infosys', 'Wipro', 'Cognizant', 'HCL', 'Accenture', 'Flipkart', 'HDFC Bank'],
+        specs: ['Cloud Computing', 'Full Stack Development', 'Data Analytics', 'Artificial Intelligence and Machine Learning'],
+        fees: '₹1.6L',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Chandigarh University (CU Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Chandigarh University — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['Business Analytics specialization with data-focuse'],
         fees: '₹0.3L – ₹1.9L',
@@ -2025,15 +2059,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Visvesvaraya Technological Universi — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['General (IT & Software Development)', 'Artificial Intelligence & Data Science', 'Cyber Security & Cloud Computing'],
-        fees: '₹127K – ₹141K',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
+        specs: ['General', 'Artificial Intelligence & Data Science', 'Cyber Security & Cloud Computing'],
+        fees: '₹TBD',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Visvesvaraya Technological Universi — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Visveswaraya Technological University — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['Digital Marketing'],
         fees: '₹77K – ₹77K',
@@ -2093,16 +2130,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Integral University (Integral Onlin — recognised for corporate hiring.',
       },
-      'MCA': {
-        specs: ['Computer Science'],
-        fees: '₹15K – ₹60K',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Integral University (Integral Onlin — recognised for corporate hiring.',
-      },
+
       'BCA': {
         specs: ['General Management'],
         fees: '₹0.1L – ₹0.6L',
@@ -2181,7 +2209,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Manav Rachna Centre for Distance and Online E. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'M.Com'],
+    programs: ['MBA', 'MCA', 'M.Com'],
     programDetails: {
       'MBA': {
         specs: ['Marketing, Finance, Human Resource Management,'],
@@ -2194,15 +2222,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Manav Rachna Centre for Distance an — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['Artificial Intelligence and Data Science, Cyber Se'],
-        fees: '₹140K – ₹140K',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
+        specs: ['Cyber Security and Block Chain', 'Artificial Intelligence and Data Science', 'Cloud Computing and Internet of Things', 'Full Stack Development and DevOps', 'General'],
+        fees: '₹1.2L',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Manav Rachna Centre for Distance an — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Manav Rachna International Institute of Research and Studies — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['General, Banking and Financial Services, Digital'],
         fees: '₹180K – ₹180K',
@@ -2292,16 +2323,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Karnataka State Open University (KS — recognised for corporate hiring.',
       },
-      'MCA': {
-        specs: ['Computer Science and IT'],
-        fees: '₹29K – ₹29K',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Karnataka State Open University (KS — recognised for corporate hiring.',
-      },
+
       'BBA': {
         specs: ['General Management', 'Marketing', 'Finance', 'Human Resource Management', 'Supply'],
         fees: '₹39K – ₹39K',
@@ -2440,18 +2462,9 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Hindustan Institute of Technology and Science. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'BCA', 'B.Com', 'MCA'],
+    programs: ['MBA', 'MCA', 'BCA', 'B.Com'],
     programDetails: {
-      'MCA': {
-        specs: ['Computer Science and IT', 'Cyber Security & Cloud Computing', 'Data Science'],
-        fees: '₹90K total (₹22.5K/sem)',
-        duration: '2 Yrs',
-        roles: ['Software Developer', 'Systems Analyst', 'Data Analyst', 'Application Developer', 'IT Consultant'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Capgemini'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved online MCA — recognised for IT careers and higher education across India.',
-      },
+      
       'MBA': {
         specs: ['Finance'],
         fees: '₹120K – ₹120K',
@@ -2462,6 +2475,18 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Hindustan Institute of Technology a — recognised for corporate hiring.',
       },
+      'MCA': {
+        specs: ['Computer Science and IT', 'Cyber Security & Cloud Computing', 'Data Science'],
+        fees: '₹0K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from Hindustan Institute of Technology and Science (HITS) — recognised for corporate hiring.',
+      },
+      
+      
     },
     color: '#2563EB',
   },
@@ -2489,7 +2514,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Guru Ghasidas Vishwavidyalaya (GGU). NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'B.Com', 'MA', 'M.Com'],
+    programs: ['MBA', 'MCA', 'B.Com', 'MA', 'M.Com'],
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management'],
@@ -2502,15 +2527,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Guru Ghasidas Vishwavidyalaya (GGU) — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['Computer Science and Information Technology'],
-        fees: '₹147K – ₹147K',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
+        specs: [],
+        fees: '₹1.3L',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Guru Ghasidas Vishwavidyalaya (GGU) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Guru Ghasidas Vishwavidyalaya — recognised for corporate hiring.',
       },
+      
+      
+
       'BCA': {
         specs: ['Computer Science and IT'],
         fees: '₹147K – ₹147K',
@@ -2581,15 +2609,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Dr. Babasaheb Ambedkar Open Univers — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['General Management'],
-        fees: '₹50K – ₹50K',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
+        specs: [],
+        fees: '₹50K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Dr. Babasaheb Ambedkar Open Univers — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Dr. Babasaheb Ambedkar Open University — recognised for corporate hiring.',
       },
+      
+      
+
       'BCA': {
         specs: ['General Management'],
         fees: '₹45K – ₹45K',
@@ -2647,7 +2678,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Marwadi University. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'B.Com'],
+    programs: ['MBA', 'MCA', 'B.Com'],
     programDetails: {
       'MBA': {
         specs: ['Finance, Marketing, Human Resource Management,'],
@@ -2660,15 +2691,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Marwadi University — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['General, Software Engineering, Web and Mobile'],
-        fees: '₹25K – ₹100K',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
+        specs: ['General'],
+        fees: '₹89K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from Marwadi University — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['Marketing, Finance, Human Resource Management'],
         fees: '₹0.2L – ₹1.2L',
@@ -2828,15 +2862,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from University of Mysore (Online) — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['General Management'],
-        fees: '₹100K – ₹100K',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
+        specs: ['General'],
+        fees: '₹TBD',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from University of Mysore (Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from University of Mysore — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['General Management'],
         fees: '₹120K – ₹120K',
@@ -3066,15 +3103,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from CHARUSAT (Charotar University of Sc — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['General Management'],
-        fees: '₹75K – ₹150K',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
+        specs: [],
+        fees: '₹1.5L',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from CHARUSAT (Charotar University of Sc — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Charotar University of Science & Technology — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['Marketing', 'Finance'],
         fees: '₹50K – ₹150K',
@@ -3204,15 +3244,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Maharishi Markandeshwar (Deemed to — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['General Management'],
-        fees: '₹100K – ₹100K',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
+        specs: [],
+        fees: '₹1.0L',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Maharishi Markandeshwar (Deemed to — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Maharishi Markandeshwar — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['General, Digital Marketing, Business Analytics, Ba'],
         fees: '₹108K – ₹108K',
@@ -3320,18 +3363,9 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Vivekananda Global University (VGU Online). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'BBA', 'BCA', 'BA', 'MSc', 'MCA'],
+    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'MSc'],
     programDetails: {
-      'MCA': {
-        specs: ['Artificial Intelligence', 'Cloud Technology & Information Security'],
-        fees: '₹1.50L total (₹37.5K/sem)',
-        duration: '2 Yrs',
-        roles: ['Software Developer', 'Systems Analyst', 'Data Analyst', 'Application Developer', 'IT Consultant'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Capgemini'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved online MCA — recognised for IT careers and higher education across India.',
-      },
+      
       'MBA': {
         specs: ['General Management', 'Digital Marketing', 'Retail Management', 'Fintech', 'Human Resource Management', 'Operations Management'],
         fees: '₹150K – ₹150K',
@@ -3342,6 +3376,18 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Vivekananda Global University (VGU — recognised for corporate hiring.',
       },
+      'MCA': {
+        specs: ['Artificial Intelligence', 'Cloud Technology & Information Security'],
+        fees: '₹0K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from Vivekananda Global University — recognised for corporate hiring.',
+      },
+      
+      
       'BBA': {
         specs: ['General, Digital Marketing, Retail Management, Fin'],
         fees: '₹132K – ₹132K',
@@ -3462,15 +3508,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Uttaranchal University – UU Doon On — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['General (AI', 'Information Security', 'Soft Computing', 'Web Technology in core)'],
-        fees: '₹23K – ₹94K',
+        specs: ['General'],
+        fees: '₹1.2L',
         duration: '2 Yrs',
-        roles: ['Software Developer', 'Python Developer', 'Web Developer', 'Database Developer'],
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
-        topCompanies: ['Amazon', 'Accenture', 'Infosys', 'TCS', 'Cognizant', 'Capgemini', 'Wipro', 'ICICI Bank', 'Citibank', 'Reliance Retail'],
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Uttaranchal University – UU Doon On — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Uttaranchal University — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management'],
         fees: '₹0.2L – ₹1.0L',
@@ -3529,7 +3578,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Andhra University – Online AUSDE (andhraunive. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals targeting marketing, brand, CRM careers', 'PSU aspirants (GMR, LIC placements)'],
     notFor: ['Deep tech seekers', 'Pure finance aspirants'],
-    programs: ['MBA', 'MCA', 'MA'],
+    programs: ['MBA', 'MA'],
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management'],
@@ -3541,16 +3590,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Andhra University – Online AUSDE (a — recognised for corporate hiring.',
       },
-      'MCA': {
-        specs: ['General (Data Warehousing & Mining', 'Web Technologies', 'Networking', 'Elective-based)'],
-        fees: '₹14K – ₹62K',
-        duration: '2 Yrs',
-        roles: ['Software Developer', 'Web Developer', 'Database Developer', 'Systems Programmer'],
-        avgSalary: '₹3.5L – ₹10L per annum',
-        topCompanies: ['Capgemini', 'GMR Group', 'LIC of India', 'Public Sector Undertakings (PSUs)', 'Amazon', 'TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Andhra University – Online AUSDE (a — recognised for corporate hiring.',
-      },
+
 
       'MA': {
         specs: ['Sociology'],
@@ -3669,17 +3709,8 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Central University of Himachal Prad — recognised for corporate hiring.',
-      },
-      'MCA': {
-        specs: ['Computer Applications'],
-        fees: '₹70K – ₹70K',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Central University of Himachal Prad — recognised for corporate hiring.',
       }
+
     },
     color: '#2563EB',
   },
@@ -3747,7 +3778,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Vellore Institute of Science and Technology. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA'],
+    programs: ['MBA', 'MCA'],
     programDetails: {
       'MBA': {
         specs: ['General Management', 'Marketing', 'Operations and supply chain management', 'Finance', 'HRM'],
@@ -3759,6 +3790,18 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Vellore Institute of Science and Te — recognised for corporate hiring.',
       },
+      'MCA': {
+        specs: ['Artificial Intelligence', 'Machine Learning', 'Cyber Security', 'Software Quality Assurance and Reliability', 'Virtual and Augmented Reality', 'Big Data Analytics', 'Computer Architecture', 'Mobile Application Development', 'Cyber Forensics', 'Blockchain Technologies', 'Data Mining Techniques'],
+        fees: '₹1.6L',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from Vellore Institute of Technology — recognised for corporate hiring.',
+      },
+      
+      
     },
     color: '#1B4FBE',
   },
@@ -3849,15 +3892,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Kurukshetra University – Online (ku — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['General (AI', 'Cyber Security', 'Machine Learning', 'Blockchain', 'Big Data', 'Mobile Apps)'],
-        fees: '₹60K – ₹200K',
+        specs: [],
+        fees: '₹77K',
         duration: '2 Yrs',
-        roles: ['Software Developer', 'ML Trainee', 'Cyber Security Analyst Trainee'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['Industry placements'],
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Kurukshetra University – Online (ku — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Kurukshetra University — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['General Management'],
         fees: '₹60K – ₹200K',
@@ -3916,7 +3962,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from SASTRA Deemed University – Online (sastra.edu. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Marketing aspirants targeting Phygital Retailing, Startup Marketing, Digital Soc'],
     notFor: ['Deep finance/tech seekers'],
-    programs: ['MBA', 'MCA'],
+    programs: ['MBA'],
     programDetails: {
       'MBA': {
         specs: ['Marketing Management', 'Financial Management', 'Human Resource Management', 'General Management'],
@@ -3926,17 +3972,8 @@ export const UNIVERSITIES: University[] = [
         avgSalary: '₹5L – ₹14L per annum',
         topCompanies: ['Accenture', 'Amazon', 'Infosys', 'TATA', 'Wipro', 'Top MNCs'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from SASTRA Deemed University – Online ( — recognised for corporate hiring.'},
-      'MCA': {
-        specs: ['Full Stack Development', 'Artificial Intelligence & Data Science', 'Cyber Security'],
-        fees: '₹0.1L – ₹2.0L',
-        duration: '2 Yrs',
-        roles: ['Software Developer', 'Python Developer', 'ML Trainee', 'Cyber Security Analyst Trainee'],
-        avgSalary: '₹5L – ₹14L per annum',
-        topCompanies: ['Amazon', 'SAP', 'Genpact', 'Wipro', 'TCS', 'Infosys', 'Deloitte', 'Top MNCs'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from SASTRA Deemed University – Online ( — recognised for corporate hiring.',
-      }
+        careerOutcome: 'UGC DEB approved MBA from SASTRA Deemed University – Online ( — recognised for corporate hiring.'}
+
     },
     color: '#1B4FBE',
   },
@@ -3967,16 +4004,7 @@ export const UNIVERSITIES: University[] = [
     notFor: ['Those wanting fully on-campus experience', 'students not meeting 50% UG marks', 'those requiring entrance exam pathway'],
     programs: ['MBA', 'MCA'],
     programDetails: {
-      'MCA': {
-        specs: ['General'],
-        fees: 'Contact for fee details',
-        duration: '2 Yrs',
-        roles: ['Software Developer', 'Systems Analyst', 'Data Analyst', 'Application Developer', 'IT Consultant'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Capgemini'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved online MCA — recognised for IT careers and higher education across India.',
-      },
+      
       'MBA': {
         specs: ['Project Mgmt', 'Blockchain', 'AI & ML', 'Agri Business', 'Marketing Management', 'Human Resource Management', 'Finance', 'IT Management', 'Operations Management', 'FinTech Management', 'Hospital Administration & Healthcare Management', 'International Business Management', 'Logistics & Supply Chain Management', 'Business Analytics'],
         fees: '₹0.1L – ₹1.9L',
@@ -3986,7 +4014,19 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['ITC', 'HDFC Bank', 'Capgemini', 'Infosys', 'TCS', 'Wipro', 'Accenture', 'IBM', 'HCL', 'Cognizant'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Dr. D.Y. Patil Vidyapeeth, Pune – C — recognised for corporate hiring.',
-      }
+      },
+      'MCA': {
+        specs: ['general'],
+        fees: '₹TBD',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from Dr. D.Y. Patil Vidyapeeth (Pune) — recognised for corporate hiring.',
+      },
+      
+      
     },
     color: '#1B4FBE',
   },
@@ -4056,7 +4096,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Christ (Deemed to be University) Online. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'B.Com'],
+    programs: ['MBA', 'MCA', 'B.Com'],
     programDetails: {
       'MBA': {
         specs: ['Business Analytics'],
@@ -4068,15 +4108,18 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Christ (Deemed to be University) On — recognised for corporate hiring.'},
       'MCA': {
-        specs: ['Computer Science and IT'],
-        fees: '₹230K – ₹230K',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
+        specs: [],
+        fees: '₹2.3L',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Christ (Deemed to be University) On — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Christ (Deemed to be University) — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['General Management'],
         fees: '₹175K – ₹175K',
@@ -4137,15 +4180,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Shobhit Institute of Engineering & — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['General Management'],
-        fees: '₹100K – ₹100K',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
+        specs: ['Cloud Computing', 'AI & Machine Learning', 'Full Stack Development', 'Cyber Security', 'Data Science'],
+        fees: '₹35K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Shobhit Institute of Engineering & — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Shobhit Institute of Engineering & Technology — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['General Management'],
         fees: '₹90K – ₹90K',
@@ -4207,15 +4253,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Bharati Vidyapeeth (Deemed to be Un — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['Data Science', 'Mobile Computing', 'Big Data', 'Cyber Security', 'Cloud Computing', 'Linux', 'IoT', 'Dot Net', 'Information Systems', 'Open-Source Technologies'],
-        fees: '₹60K – ₹200K',
+        specs: ['Cloud Computing', 'Data Science', 'Linux', 'Open-Source Technologies', 'Mobile Computing', 'Dot Net Technologies', 'Net Centric Technologies', 'Information Systems', 'Big Data', 'IOT', 'Cyber Security', 'Data Management'],
+        fees: '₹1.3L',
         duration: '2 Yrs',
-        roles: ['Software Developer', 'Data Analyst', 'Cloud Trainee', 'ML Engineer Trainee'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['Top MNCs (Accenture', 'Amazon', 'Infosys', 'TCS', 'Wipro)'],
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Bharati Vidyapeeth (Deemed to be Un — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Bharati Vidyapeeth — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['Marketing', 'Financial Management', 'Business Analytics', 'International Business', 'Production & Operations', 'Agribusiness', 'Retail', 'Project Mgmt', 'Event Mgmt', 'Hospitality', 'Sports'],
         fees: '₹60K – ₹200K',
@@ -4277,14 +4326,17 @@ export const UNIVERSITIES: University[] = [
       },
       'MCA': {
         specs: ['Artificial Intelligence & Machine Learning', 'Data Science'],
-        fees: '₹60K – ₹200K',
-        duration: '2 Yrs (max 4)',
-        roles: ['Data Analyst Trainee', 'ML Associate', 'Software Engineer'],
-        avgSalary: 'Not specified',
-        topCompanies: ['Not mentioned'],
+        fees: '₹TBD',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Assam Don Bosco University – CDOE ( — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Assam Don Bosco University — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['Marketing Management', 'Finance', 'HR Management', 'Entrepreneurship', 'Artificial Intelligence'],
         fees: '₹60K – ₹200K',
@@ -4510,18 +4562,9 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Desh Bhagat University (DBU Online). NAAC A accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'BBA', 'B.Com', 'MCA'],
+    programs: ['MBA', 'MCA', 'BBA', 'B.Com'],
     programDetails: {
-      'MCA': {
-        specs: ['Cyber Security', 'AI and Data Science'],
-        fees: '₹88K total (₹22K/sem)',
-        duration: '2 Yrs',
-        roles: ['Software Developer', 'Systems Analyst', 'Data Analyst', 'Application Developer', 'IT Consultant'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Capgemini'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved online MCA — recognised for IT careers and higher education across India.',
-      },
+      
       'MBA': {
         specs: ['General Management', 'Finance'],
         fees: '₹60K – ₹200K',
@@ -4532,6 +4575,18 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Desh Bhagat University (DBU Online) — recognised for corporate hiring.',
       },
+      'MCA': {
+        specs: ['Cyber Security', 'AI and Data Science'],
+        fees: '₹1.2L',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from Desh Bhagat University — recognised for corporate hiring.',
+      },
+      
+      
       'BBA': {
         specs: ['General Management'],
         fees: '₹60K – ₹200K',
@@ -4592,15 +4647,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Ganpat University — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['General (Electives in Data Science', 'Agile)'],
-        fees: '₹97K – ₹97K',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
+        specs: [],
+        fees: '₹97K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Ganpat University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Ganpat university — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['Marketing', 'Finance'],
         fees: '₹90K – ₹90K',
@@ -4710,15 +4768,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Guru Nanak Dev University – ODL (gn — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['General Computer Applications'],
-        fees: '₹38K – ₹76K',
+        specs: ['general'],
+        fees: '₹0K',
         duration: '2 Yrs',
-        roles: ['Software Developer', 'Systems Analyst'],
-        avgSalary: '₹4L – ₹10L per annum',
-        topCompanies: ['Industry placements'],
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Guru Nanak Dev University – ODL (gn — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Guru Nanak Dev University — recognised for corporate hiring.',
       },
+      
+      
+
       'M.Com': {
         specs: ['Commerce'],
         fees: '₹17K – ₹34K',
@@ -4806,18 +4867,21 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Savitribai Phule Pune University (SPPU) – CDO. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Class 12 students (any stream) targeting management careers', 'Pune ecosystem + government job credibility seekers', 'Aspirants wanting NIRF #11 State University degree'],
     notFor: ['Deep tech/programming seekers', 'Pure research-focused aspirants'],
-    programs: ['BBA', 'BCA', 'MCA'],
+    programs: ['MCA', 'BBA', 'BCA'],
     programDetails: {
       'MCA': {
-        specs: ['General'],
-        fees: '₹1.58L total (₹39.72K/sem)',
+        specs: ['general'],
+        fees: '₹1.6L',
         duration: '2 Yrs',
-        roles: ['Software Developer', 'Systems Analyst', 'Data Analyst', 'Application Developer', 'IT Consultant'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Capgemini'],
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved online MCA — recognised for IT careers and higher education across India.',
+        careerOutcome: 'UGC DEB approved MCA from Savitribai Phule Pune University — recognised for corporate hiring.',
       },
+      
+      
+      
       'BBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management'],
         fees: '₹60K – ₹200K',
@@ -4865,7 +4929,7 @@ export const UNIVERSITIES: University[] = [
     description: 'SRM University Sikkim offers UGC DEB approved online programs under the SRM Group brand. NAAC A+ accredited. Features AI-driven personalized learning, Coursera certifications, and placement support via 3000+ company network.',
     forWho: ['Professionals seeking career advancement with flexible online learning', 'Students wanting SRM Group brand at affordable fees'],
     notFor: ['Candidates requiring physical campus interaction'],
-    programs: ['MBA', 'MCA', 'BBA', 'BCA'],
+    programs: ['MBA', 'BBA', 'BCA'],
     programDetails: {
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management'],
@@ -4888,19 +4952,7 @@ export const UNIVERSITIES: University[] = [
         edifyProjects: ['Design a digital marketing campaign with ₹500 Google Ads budget', 'HR analytics case study on attrition using Excel'],
         edifyInternships: ['Business Analyst Intern', 'Marketing Manager Intern', 'Financial Consultant Intern', 'HR Manager Intern'],
       },
-      'MCA': {
-        specs: ['Cyber Security', 'Big Data Analytics', 'Mean Stack Web Development', 'IoT', 'Data Visualization'],
-        fees: '₹1.45L total',
-        duration: '2 Years (4 Semesters)',
-        roles: ['Software Developer', 'Web Developer', 'IoT Developer', 'Data Scientist', 'ML Engineer'],
-        avgSalary: '₹5L – ₹12L per annum',
-        topCompanies: ['HDFC Bank', 'OYO', 'Flipkart', 'Wipro', 'IT Services Companies'],
-        internshipType: 'Mini Project (Sem 3) + Project Work (Sem 4)',
-        careerOutcome: 'UGC DEB approved MCA from SRM Sikkim — NAAC A+. Industry-relevant curriculum with AI-driven learning and 7,000+ international courses.',
-        edifySkills: ['Python (TryHackMe free for Cyber Security)', 'Mean Stack basics (free on freeCodeCamp)', 'Docker basics', 'AWS IoT free tier', 'Git & GitHub (mandatory)'],
-        edifyProjects: ['Build a full-stack MEAN app with user authentication', 'IoT sensor simulation using Raspberry Pi or Tinkercad'],
-        edifyInternships: ['Cyber Security Analyst Intern', 'Full Stack Developer Intern', 'IoT Developer Intern', 'Data Scientist Intern'],
-      },
+
       'BBA': {
         specs: ['General Management', 'Digital Marketing', 'Business Analytics with AI'],
         fees: '₹1.17L total (₹19,500/sem)',
@@ -5018,18 +5070,9 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Vellore Institute of Technology (VIT Online). NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MCA'],
+    programs: [],
     programDetails: {
-      'MCA': {
-        specs: ['General Management'],
-        fees: '₹140K – ₹140K',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Vellore Institute of Technology (VI — recognised for corporate hiring.',
-      },
+      
       'MSc': {
         specs: ['Data Science'],
         fees: '₹150K – ₹150K',
@@ -5118,7 +5161,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Anna University (Centre for Distance Educatio. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'MCA'],
+    programs: ['MBA'],
     programDetails: {
       'MBA': {
         specs: ['General Management'],
@@ -5128,17 +5171,8 @@ export const UNIVERSITIES: University[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Anna University (Centre for Distanc — recognised for corporate hiring.'},
-      'MCA': {
-        specs: ['General Management'],
-        fees: '₹100K – ₹100K',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Anna University (Centre for Distanc — recognised for corporate hiring.',
-      }
+        careerOutcome: 'UGC DEB approved MBA from Anna University (Centre for Distanc — recognised for corporate hiring.'}
+
     },
     color: '#1B4FBE',
   },
@@ -5265,18 +5299,9 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Noida International University – Online (niu.. NAAC A accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['MBA aspirants wanting Dual Specialisation across diverse domains including rare'],
     notFor: ['Students wanting a single-focus specialisation program'],
-    programs: ['MBA', 'BBA', 'MCA'],
+    programs: ['MBA', 'MCA', 'BBA'],
     programDetails: {
-      'MCA': {
-        specs: ['AI & Data Science'],
-        fees: '₹1.18L total (₹59K/year)',
-        duration: '2 Yrs',
-        roles: ['Software Developer', 'Systems Analyst', 'Data Analyst', 'Application Developer', 'IT Consultant'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Capgemini'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved online MCA — recognised for IT careers and higher education across India.',
-      },
+      
       'MBA': {
         specs: ['General Management', 'Marketing', 'Finance', 'Human Resource Management'],
         fees: '₹29K – ₹118K',
@@ -5287,6 +5312,18 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Noida International University – On — recognised for corporate hiring.',
       },
+      'MCA': {
+        specs: ['AI & Data Science'],
+        fees: '₹0K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from Noida International University — recognised for corporate hiring.',
+      },
+      
+      
       'BBA': {
         specs: ['General Management'],
         fees: '₹0.2L – ₹1.1L',
@@ -5485,16 +5522,7 @@ export const UNIVERSITIES: University[] = [
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
     programs: ['MBA', 'MCA'],
     programDetails: {
-      'MCA': {
-        specs: ['General'],
-        fees: '₹1.40L total (₹70K/year)',
-        duration: '2 Yrs',
-        roles: ['Software Developer', 'Systems Analyst', 'Data Analyst', 'Application Developer', 'IT Consultant'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Capgemini'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved online MCA — recognised for IT careers and higher education across India.',
-      },
+      
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management'],
         fees: '₹80K – ₹80K',
@@ -5504,7 +5532,19 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Datta Meghe Institute of Higher Edu — recognised for corporate hiring.',
-      }
+      },
+      'MCA': {
+        specs: ['general'],
+        fees: '₹70K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from Datta Meghe Institute of Higher Education and Research — recognised for corporate hiring.',
+      },
+      
+      
     },
     color: '#1B4FBE',
   },
@@ -5575,16 +5615,7 @@ export const UNIVERSITIES: University[] = [
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
     programs: ['MBA', 'MCA'],
     programDetails: {
-      'MCA': {
-        specs: ['General'],
-        fees: '₹1.20L total (₹30K/sem)',
-        duration: '2 Yrs',
-        roles: ['Software Developer', 'Systems Analyst', 'Data Analyst', 'Application Developer', 'IT Consultant'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Capgemini'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved online MCA — recognised for IT careers and higher education across India.',
-      },
+      
       'MBA': {
         specs: ['Business Analytics', 'Finance', 'Healthcare Management', 'Human Resource Management', 'Marketing', 'Pharmaceutical Management'],
         fees: '₹140K – ₹140K',
@@ -5594,7 +5625,17 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Centurion University of Technology — recognised for corporate hiring.',
-      }
+      },
+      'MCA': {
+        specs: ['general'],
+        fees: '₹1K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from Centurion University of Technology and Management — recognised for corporate hiring.',
+      },
     },
     color: '#2563EB',
   },
@@ -5625,15 +5666,18 @@ export const UNIVERSITIES: University[] = [
     programs: ['MCA'],
     programDetails: {
       'MCA': {
-        specs: ['General Management'],
-        fees: '₹60K – ₹200K',
-        duration: '2 Years',
-        roles: ['Not Mentioned Mid Level Roles: Not Mentioned Senior'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
+        specs: ['general'],
+        fees: '₹1K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Guru Kashi University (GKU Online) — recognised for corporate hiring.',
-      }
+        careerOutcome: 'UGC DEB approved MCA from Guru Kashi University — recognised for corporate hiring.',
+      },
+      
+      
+      
     },
     color: '#0891B2',
   },
@@ -5661,18 +5705,21 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Jaipur National University (Online JEST). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['BBA', 'MCA'],
+    programs: ['MCA', 'BBA'],
     programDetails: {
       'MCA': {
-        specs: ['General'],
-        fees: '₹1.06L total (₹26.6K/sem)',
+        specs: ['general'],
+        fees: '₹0K',
         duration: '2 Yrs',
-        roles: ['Software Developer', 'Systems Analyst', 'Data Analyst', 'Application Developer', 'IT Consultant'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Capgemini'],
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved online MCA — recognised for IT careers and higher education across India.',
+        careerOutcome: 'UGC DEB approved MCA from Jaipur National University — recognised for corporate hiring.',
       },
+      
+      
+      
       'BBA': {
         specs: ['Fintech, Digital Marketing, Aviation Management'],
         fees: '₹104K – ₹104K',
@@ -5712,16 +5759,7 @@ export const UNIVERSITIES: University[] = [
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
     programs: ['MBA', 'MCA'],
     programDetails: {
-      'MCA': {
-        specs: ['General'],
-        fees: '₹1.21L total (₹30K/sem)',
-        duration: '2 Yrs',
-        roles: ['Software Developer', 'Systems Analyst', 'Data Analyst', 'Application Developer', 'IT Consultant'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Capgemini'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved online MCA — recognised for IT careers and higher education across India.',
-      },
+      
       'MBA': {
         specs: ['Human Resources Management', 'Financial Management', 'Marketing Management', 'Operations Management', 'Logistics & Supply Chain Management', 'Management & Information Systems'],
         fees: '₹160K – ₹160K',
@@ -5731,7 +5769,19 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from B.S. Abdur Rahman Crescent Institut — recognised for corporate hiring.',
-      }
+      },
+      'MCA': {
+        specs: ['general'],
+        fees: '₹1K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from B.S. Abdur Rahman Institute of Science and Technology — recognised for corporate hiring.',
+      },
+      
+      
     },
     color: '#2563EB',
   },
@@ -5783,18 +5833,18 @@ export const UNIVERSITIES: University[] = [
         edifyInternships: ['Business Analyst Intern', 'Digital Marketing Intern', 'Financial Analyst Intern', 'HR Operations Intern'],
       },
       'MCA': {
-        specs: ['Cloud Computing', 'Data Science', 'Cyber Security', 'AI & ML'],
-        fees: '₹1.0L total (₹25,000/sem)',
-        duration: '2 Years (4 Semesters)',
-        roles: ['Software Developer', 'Systems Analyst', 'Junior Data Scientist', 'Full Stack Developer'],
-        avgSalary: '₹5L – ₹15L per annum',
-        topCompanies: ['Cognizant', 'IBM', 'HCL', 'TCS', 'Amazon'],
-        internshipType: 'Seminar + Mini Project (Sem 3) + Major Project (Sem 4)',
-        careerOutcome: 'UGC DEB approved MCA from SRMIST — NIRF #18, NAAC A++. Strong focus on cloud, AI/ML, and cybersecurity.',
-        edifySkills: ['Python (pandas, scikit-learn)', 'AWS Cloud Practitioner (free prep)', 'SQL & MySQL', 'Linux command line', 'Docker basics'],
-        edifyProjects: ['Deploy a full-stack web app on AWS free tier', 'Build a machine learning model for classification', 'Create a REST API with Node.js + MongoDB'],
-        edifyInternships: ['Software Developer Intern', 'Cloud Engineer Intern', 'Data Science Intern', 'Cyber Security Analyst Intern'],
+        specs: ['General', 'Generative AI'],
+        fees: '₹38K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from S.R.M. Institute of Sciences and Technology — recognised for corporate hiring.',
       },
+      
+      
+
       'M.Com': {
         specs: ['Accounting & Finance', 'International Business'],
         fees: '₹60K total (₹15,000/sem)',
@@ -6172,15 +6222,18 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from GLA University (GLA Online) — recognised for corporate hiring.'},
       'MCA': {
-        specs: ['Computer Applications (BCA) → MCA (combined 4.5-ye', 'Computer Applications (5 specialisations: Cyber Se', 'Blockchain', 'ML&AI', 'Software Engineering', 'FinTech+AI)', 'Cyber Security', 'Blockchain Technology & Management', 'Financial Technology & AI (with Paytm)'],
-        fees: '₹29K – ₹116K',
-        duration: '4.5 Years (54 months)',
-        roles: ['Software Developer', 'Programmer Analyst'],
-        avgSalary: '₹5L – ₹12L per annum',
-        topCompanies: ['Google', 'Apple', 'PwC', 'Reliance', 'EY', 'Samsung', 'Qatar Airways', 'Tech Mahindra', 'SBI', 'HDFC'],
+        specs: ['general'],
+        fees: '₹2K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from GLA University (GLA Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from G.L.A. University — recognised for corporate hiring.',
       },
+      
+      
+
       'BBA': {
         specs: ['General Business Administration (option for Data A', 'Travel & Tourism Management', 'Data Analytics'],
         fees: '₹60K – ₹200K',
@@ -6487,15 +6540,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'MBA from JAMIA HAMDARD is UGC DEB approved and valid for corporate hiring and government roles across India.',
       },
       'MCA': {
-        specs: ['Data Science','Cloud Computing','Cybersecurity','Full Stack Development','AI & ML','IoT'],
-        fees: '\u20b963K \u2013 \u20b9153K',
-        duration: '2 Years',
-        roles: ['Software Engineer','Data Analyst','Cloud Engineer','Cybersecurity Analyst','DevOps Engineer'],
-        avgSalary: '\u20b94.5L \u2013 \u20b916L per annum',
-        topCompanies: ['TCS','Infosys','Wipro','HCL','Amazon','Accenture'],
-        internshipType: 'Project-based online',
-        careerOutcome: 'MCA from JAMIA HAMDARD prepares graduates for IT careers with UGC DEB recognised degree.',
-      }
+        specs: [],
+        fees: '₹88K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from Jamia Hamdard — recognised for corporate hiring.',
+      },
+      
+      
+
     },
     color: '#dc2626',
   },
@@ -6747,15 +6803,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'MBA from GRAPHIC ERA UNIVERSITY is UGC DEB approved and valid for corporate hiring and government roles across India.',
       },
       'MCA': {
-        specs: ['Data Science','Cloud Computing','Cybersecurity','Full Stack Development','AI & ML','IoT'],
-        fees: '\u20b963K \u2013 \u20b9153K',
-        duration: '2 Years',
-        roles: ['Software Engineer','Data Analyst','Cloud Engineer','Cybersecurity Analyst','DevOps Engineer'],
-        avgSalary: '\u20b94.5L \u2013 \u20b916L per annum',
-        topCompanies: ['TCS','Infosys','Wipro','HCL','Amazon','Accenture'],
-        internshipType: 'Project-based online',
-        careerOutcome: 'MCA from GRAPHIC ERA UNIVERSITY prepares graduates for IT careers with UGC DEB recognised degree.',
-      }
+        specs: ['General'],
+        fees: '₹0K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from Graphic Era University — recognised for corporate hiring.',
+      },
+      
+      
+
     },
     color: '#059669',
   },
@@ -6974,15 +7033,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'MBA from SHANMUGHA ARTS, SCIENCE, TECHNOLOGY & RESEARCH ACADEMY is UGC DEB approved and valid for corporate hiring and government roles across India.',
       },
       'MCA': {
-        specs: ['Data Science','Cloud Computing','Cybersecurity','Full Stack Development','AI & ML','IoT'],
-        fees: '\u20b963K \u2013 \u20b9153K',
-        duration: '2 Years',
-        roles: ['Software Engineer','Data Analyst','Cloud Engineer','Cybersecurity Analyst','DevOps Engineer'],
-        avgSalary: '\u20b94.5L \u2013 \u20b916L per annum',
-        topCompanies: ['TCS','Infosys','Wipro','HCL','Amazon','Accenture'],
-        internshipType: 'Project-based online',
-        careerOutcome: 'MCA from SHANMUGHA ARTS, SCIENCE, TECHNOLOGY & RESEARCH ACADEMY prepares graduates for IT careers with UGC DEB recognised degree.',
-      }
+        specs: ['Full Stack Development', 'Artificial Intelligence & Data Science', 'Cyber Security'],
+        fees: '₹50K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from Shanmugha Arts, Science, Technology & Research Academy — recognised for corporate hiring.',
+      },
+      
+      
+
     },
     color: '#9333ea',
   },
@@ -7227,7 +7289,7 @@ export const UNIVERSITIES: University[] = [
     description: 'GURU GOBIND SINGH INDRAPRASTHA VISHWAVIDYALAYA offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in New Delhi and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['B.Com', 'BBA', 'MA', 'MCA'],
+    programs: ['B.Com', 'BBA', 'MA'],
     programDetails: {
       'B.Com': {
         specs: ['Finance','Accounting','Taxation','E-Commerce','Banking & Insurance'],
@@ -7257,17 +7319,8 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
         careerOutcome: 'MA from GURU GOBIND SINGH INDRAPRASTHA VISHWAVIDYALAYA is ideal for civil services, research and education careers.',
-      },
-      'MCA': {
-        specs: ['Data Science','Cloud Computing','Cybersecurity','Full Stack Development','AI & ML','IoT'],
-        fees: '\u20b976K \u2013 \u20b9170K',
-        duration: '2 Years',
-        roles: ['Software Engineer','Data Analyst','Cloud Engineer','Cybersecurity Analyst','DevOps Engineer'],
-        avgSalary: '\u20b94.5L \u2013 \u20b916L per annum',
-        topCompanies: ['TCS','Infosys','Wipro','HCL','Amazon','Accenture'],
-        internshipType: 'Project-based online',
-        careerOutcome: 'MCA from GURU GOBIND SINGH INDRAPRASTHA VISHWAVIDYALAYA prepares graduates for IT careers with UGC DEB recognised degree.',
       }
+
     },
     color: '#92400e',
   },
@@ -7355,18 +7408,9 @@ export const UNIVERSITIES: University[] = [
     description: 'INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Hyderabad and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['MCA'],
+    programs: [],
     programDetails: {
-      'MCA': {
-        specs: ['Data Science','Cloud Computing','Cybersecurity','Full Stack Development','AI & ML','IoT'],
-        fees: '\u20b951K \u2013 \u20b9127K',
-        duration: '2 Years',
-        roles: ['Software Engineer','Data Analyst','Cloud Engineer','Cybersecurity Analyst','DevOps Engineer'],
-        avgSalary: '\u20b94.5L \u2013 \u20b916L per annum',
-        topCompanies: ['TCS','Infosys','Wipro','HCL','Amazon','Accenture'],
-        internshipType: 'Project-based online',
-        careerOutcome: 'MCA from INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY prepares graduates for IT careers with UGC DEB recognised degree.',
-      },
+      
     },
     color: '#134e4a',
   },
@@ -7624,15 +7668,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'MBA from CHATRAPATI SHAHUJI MAHARAJ UNIVERSITY is UGC DEB approved and valid for corporate hiring and government roles across India.',
       },
       'MCA': {
-        specs: ['Data Science','Cloud Computing','Cybersecurity','Full Stack Development','AI & ML','IoT'],
-        fees: '\u20b942K \u2013 \u20b9102K',
-        duration: '2 Years',
-        roles: ['Software Engineer','Data Analyst','Cloud Engineer','Cybersecurity Analyst','DevOps Engineer'],
-        avgSalary: '\u20b94.5L \u2013 \u20b916L per annum',
-        topCompanies: ['TCS','Infosys','Wipro','HCL','Amazon','Accenture'],
-        internshipType: 'Project-based online',
-        careerOutcome: 'MCA from CHATRAPATI SHAHUJI MAHARAJ UNIVERSITY prepares graduates for IT careers with UGC DEB recognised degree.',
-      }
+        specs: ['General'],
+        fees: '₹TBD',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from Chatrapati Shahuji Maharaj University — recognised for corporate hiring.',
+      },
+      
+      
+
     },
     color: '#0e7490',
   },
@@ -7740,7 +7787,7 @@ export const UNIVERSITIES: University[] = [
     description: 'GURU JAMBHESHWAR UNIVERSITY OF SCIENCE AND TECHNOLOGY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Rohtak and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['B.Com', 'MA', 'M.Com', 'MBA', 'MCA'],
+    programs: ['B.Com', 'MA', 'M.Com', 'MBA'],
     programDetails: {
       'B.Com': {
         specs: ['Finance','Accounting','Taxation','E-Commerce','Banking & Insurance'],
@@ -7780,17 +7827,8 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS','Infosys','Wipro','HDFC Bank','Deloitte','Amazon'],
         internshipType: 'Virtual industry project',
         careerOutcome: 'MBA from GURU JAMBHESHWAR UNIVERSITY OF SCIENCE AND TECHNOLOGY is UGC DEB approved and valid for corporate hiring and government roles across India.',
-      },
-      'MCA': {
-        specs: ['Data Science','Cloud Computing','Cybersecurity','Full Stack Development','AI & ML','IoT'],
-        fees: '\u20b951K \u2013 \u20b9127K',
-        duration: '2 Years',
-        roles: ['Software Engineer','Data Analyst','Cloud Engineer','Cybersecurity Analyst','DevOps Engineer'],
-        avgSalary: '\u20b94.5L \u2013 \u20b916L per annum',
-        topCompanies: ['TCS','Infosys','Wipro','HCL','Amazon','Accenture'],
-        internshipType: 'Project-based online',
-        careerOutcome: 'MCA from GURU JAMBHESHWAR UNIVERSITY OF SCIENCE AND TECHNOLOGY prepares graduates for IT careers with UGC DEB recognised degree.',
       }
+
     },
     color: '#065f46',
   },
@@ -7979,15 +8017,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'MBA from MATS UNIVERSITY is UGC DEB approved and valid for corporate hiring and government roles across India.',
       },
       'MCA': {
-        specs: ['Data Science','Cloud Computing','Cybersecurity','Full Stack Development','AI & ML','IoT'],
-        fees: '\u20b951K \u2013 \u20b9127K',
-        duration: '2 Years',
-        roles: ['Software Engineer','Data Analyst','Cloud Engineer','Cybersecurity Analyst','DevOps Engineer'],
-        avgSalary: '\u20b94.5L \u2013 \u20b916L per annum',
-        topCompanies: ['TCS','Infosys','Wipro','HCL','Amazon','Accenture'],
-        internshipType: 'Project-based online',
-        careerOutcome: 'MCA from MATS UNIVERSITY prepares graduates for IT careers with UGC DEB recognised degree.',
-      }
+        specs: [],
+        fees: '₹TBD',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from MATS University — recognised for corporate hiring.',
+      },
+      
+      
+
     },
     color: '#b45309',
   },
@@ -8137,15 +8178,16 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'MBA from MODY UNIVERSITY OF SCIENCE AND TECHNOLOGY is UGC DEB approved and valid for corporate hiring and government roles across India.',
       },
       'MCA': {
-        specs: ['Data Science','Cloud Computing','Cybersecurity','Full Stack Development','AI & ML','IoT'],
-        fees: '\u20b963K \u2013 \u20b9153K',
-        duration: '2 Years',
-        roles: ['Software Engineer','Data Analyst','Cloud Engineer','Cybersecurity Analyst','DevOps Engineer'],
-        avgSalary: '\u20b94.5L \u2013 \u20b916L per annum',
-        topCompanies: ['TCS','Infosys','Wipro','HCL','Amazon','Accenture'],
-        internshipType: 'Project-based online',
-        careerOutcome: 'MCA from MODY UNIVERSITY OF SCIENCE AND TECHNOLOGY prepares graduates for IT careers with UGC DEB recognised degree.',
-      }
+        specs: ['Artificial Intelligence and Machine Learning', 'Cloud Computing', 'Internet of Things (IoT)', 'Web Technology'],
+        fees: '₹TBD',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from Mody University of Science and Technology — recognised for corporate hiring.',
+      },
+
     },
     color: '#0369a1',
   },
@@ -8173,7 +8215,7 @@ export const UNIVERSITIES: University[] = [
     description: 'SAGE UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Bhopal and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['BBA', 'BCA', 'MA', 'M.Com', 'MBA', 'MCA'],
+    programs: ['BBA', 'BCA', 'MA', 'M.Com', 'MBA'],
     programDetails: {
       'BBA': {
         specs: ['Finance','Marketing','Human Resource Management','Entrepreneurship','Digital Marketing','Retail Management'],
@@ -8224,17 +8266,8 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS','Infosys','Wipro','HDFC Bank','Deloitte','Amazon'],
         internshipType: 'Virtual industry project',
         careerOutcome: 'MBA from SAGE UNIVERSITY is UGC DEB approved and valid for corporate hiring and government roles across India.',
-      },
-      'MCA': {
-        specs: ['Data Science','Cloud Computing','Cybersecurity','Full Stack Development','AI & ML','IoT'],
-        fees: '\u20b951K \u2013 \u20b9127K',
-        duration: '2 Years',
-        roles: ['Software Engineer','Data Analyst','Cloud Engineer','Cybersecurity Analyst','DevOps Engineer'],
-        avgSalary: '\u20b94.5L \u2013 \u20b916L per annum',
-        topCompanies: ['TCS','Infosys','Wipro','HCL','Amazon','Accenture'],
-        internshipType: 'Project-based online',
-        careerOutcome: 'MCA from SAGE UNIVERSITY prepares graduates for IT careers with UGC DEB recognised degree.',
       }
+
     },
     color: '#0f766e',
   },
@@ -8305,15 +8338,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'MBA from SHREE GURU GOBIND SINGH TRICENTENARY UNIVERSITY is UGC DEB approved and valid for corporate hiring and government roles across India.',
       },
       'MCA': {
-        specs: ['Data Science','Cloud Computing','Cybersecurity','Full Stack Development','AI & ML','IoT'],
-        fees: '\u20b951K \u2013 \u20b9127K',
-        duration: '2 Years',
-        roles: ['Software Engineer','Data Analyst','Cloud Engineer','Cybersecurity Analyst','DevOps Engineer'],
-        avgSalary: '\u20b94.5L \u2013 \u20b916L per annum',
-        topCompanies: ['TCS','Infosys','Wipro','HCL','Amazon','Accenture'],
-        internshipType: 'Project-based online',
-        careerOutcome: 'MCA from SHREE GURU GOBIND SINGH TRICENTENARY UNIVERSITY prepares graduates for IT careers with UGC DEB recognised degree.',
-      }
+        specs: ['Artificial Intelligence & Machine Learning', 'Data Science', 'Cyber Security', 'Blockchain Technology'],
+        fees: '₹98K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from Shree Guru Gobind Singh Tricentenary University — recognised for corporate hiring.',
+      },
+      
+      
+
     },
     color: '#1d4ed8',
   },
@@ -8394,15 +8430,18 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'MBA from SHRI RAMASAMY MEMORIAL UNIVERSITY is UGC DEB approved and valid for corporate hiring and government roles across India.',
       },
       'MCA': {
-        specs: ['Data Science','Cloud Computing','Cybersecurity','Full Stack Development','AI & ML','IoT'],
-        fees: '\u20b951K \u2013 \u20b9127K',
-        duration: '2 Years',
-        roles: ['Software Engineer','Data Analyst','Cloud Engineer','Cybersecurity Analyst','DevOps Engineer'],
-        avgSalary: '\u20b94.5L \u2013 \u20b916L per annum',
-        topCompanies: ['TCS','Infosys','Wipro','HCL','Amazon','Accenture'],
-        internshipType: 'Project-based online',
-        careerOutcome: 'MCA from SHRI RAMASAMY MEMORIAL UNIVERSITY prepares graduates for IT careers with UGC DEB recognised degree.',
-      }
+        specs: ['Data Science and Machine Learning', 'Cyber Security & Cyber Forensics', 'Artificial Intelligence & Gen AI'],
+        fees: '₹1.0L',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from Shri Ramasamy Memorial University — recognised for corporate hiring.',
+      },
+      
+      
+
     },
     color: '#065f46',
   },
@@ -8435,14 +8474,17 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MCA': {
         specs: ['Artificial Intelligence & Machine Learning', 'Data Science'],
-        fees: '₹90K total (₹22.5K/sem)',
-        duration: '2 Years (4 Semesters)',
-        roles: ['Data Analyst', 'ML Engineer', 'Software Developer', 'AI Engineer', 'Data Scientist'],
-        avgSalary: '₹4L – ₹10L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'Cognizant', 'Tech Mahindra'],
-        internshipType: 'Project-based online internship',
-        careerOutcome: 'UGC DEB approved MCA from Assam Down Town University — NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
+        fees: '₹90K',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from Assam Down Town University — recognised for corporate hiring.',
       },
+      
+      
+      
     },
     color: '#0891B2',
   }
