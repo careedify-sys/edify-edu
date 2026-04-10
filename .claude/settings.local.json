@@ -71,7 +71,28 @@
       "Bash(cat app/universities/[id]/[program]/[spec]/page.tsx)",
       "Bash(npx next:*)",
       "Bash(grep -n \"getMasterSyllabus\\\\|getUniversitySyllabus\\\\|case ''''\\\\|''''mba''''\\\\|''''mca''''\" lib/content.ts)",
-      "Bash(/dev/null find:*)"
+      "Bash(/dev/null find:*)",
+      "Bash(python3:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(cat /c/Users/91706/Downloads/edify-v16-final-with-cms/edify-next/app/guides/[id]/page.tsx)",
+      "Bash(python add_7blogs.py)",
+      "Bash(python add_10blogs.py)",
+      "Bash(curl -s \"https://edifyedu.in/programs/mba/entrepreneurship\")",
+      "Bash(pip install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python add_edifyedu_10blogs.py)",
+      "Bash(curl -s --max-time 30 \"https://edifyedu.in/programs/mba\")",
+      "Bash(curl -s --max-time 30 \"https://edifyedu.in/programs\")",
+      "Bash(curl -s --max-time 30 \"https://edifyedu.in/programs/mca\")",
+      "Bash(grep -o \"category: ''''[^'''']*''''\" lib/blog.ts)",
+      "Read(//c/Users/91706/Downloads/**)",
+      "Bash(echo \"Exit: $?, Lines: $\\(wc -l < /tmp/mca_entries.ts\\)\")",
+      "Bash(read key:*)",
+      "Bash(echo \"Exit: $?\")",
+      "Read(//c/Users/91706/AppData/Local/Temp/**)",
+      "Bash(python:*)"
     ]
   }
 }
