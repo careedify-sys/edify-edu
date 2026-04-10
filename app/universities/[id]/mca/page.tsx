@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
+import { getMasterSyllabus } from '@/lib/content'
 import { cleanCareerOutcome } from '@/lib/format'
 
 const makeSlug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
@@ -18,9 +19,14 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 
   const year = new Date().getFullYear()
   const pd = u.programDetails['MCA']
+  const syllabus = getMasterSyllabus(u.id, 'MCA') as any
+  const description = syllabus?.metaDesc ||
+    `${u.name} MCA - ${pd?.specs?.length || 3}+ specializations. Fees ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}. NAAC ${u.naac}. UGC DEB approved.`
+  const keywords = syllabus?.metaKeywords || undefined
   return {
     title: `${u.name} MCA - Fees, Specializations, Placements ${year}`,
-    description: `${u.name} MCA - ${pd?.specs?.length || 3}+ specializations. Fees ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}. NAAC ${u.naac}. UGC DEB approved.`,
+    description,
+    keywords,
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/mca` },
   }
 }

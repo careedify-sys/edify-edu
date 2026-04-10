@@ -2,6 +2,7 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
+import { getMasterSyllabus } from '@/lib/content'
 import SpecializationPageClient from '@/components/SpecializationPageClient'
 
 const makeSlug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
@@ -31,11 +32,15 @@ export async function generateMetadata(
   if (!spec) return { title: 'Not Found' }
 
   const year = new Date().getFullYear()
+  const syllabus = getMasterSyllabus(u.id, 'MCA') as any
   const title = `${u.name} MCA in ${spec} - Fees, Syllabus, Placements ${year}`
-  const description = `${u.name} MCA in ${spec} - Fees, syllabus, eligibility, career scope. NAAC ${u.naac}. UGC DEB approved.`
+  const description = syllabus?.metaDesc
+    ? `${u.name} MCA in ${spec}. ${syllabus.metaDesc}`
+    : `${u.name} MCA in ${spec} - Fees, syllabus, eligibility, career scope. NAAC ${u.naac}. UGC DEB approved.`
+  const keywords = syllabus?.metaKeywords || undefined
 
   return {
-    title, description,
+    title, description, keywords,
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/mca/${specSlug}` },
     openGraph: { title, description, type: 'website' },
     robots: { index: true, follow: true },
