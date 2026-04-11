@@ -261,6 +261,20 @@ const nextConfig = {
       { source: '/online-mca',                 destination: '/programs/mca',  permanent: true },
       { source: '/online-mba-india',           destination: '/programs/mba',  permanent: true },
 
+      // Program spec sub-routes — these 500 in the server component; redirect to base program
+      // University ID sub-routes are handled separately by permanentRedirect in the page component
+      ...[
+        'marketing','marketing-management','finance','finance-management','financial-management',
+        'human-resource-management','hr-management','hr','data-science-analytics','data-science',
+        'business-analytics','digital-marketing','operations-management','international-business',
+        'entrepreneurship','project-management','supply-chain-management','healthcare-management',
+        'it-management','general-management','banking-finance','logistics-supply-chain',
+      ].map(spec => ({
+        source: `/programs/:program/${spec}`,
+        destination: '/programs/:program',
+        permanent: false,
+      })),
+
       // Blog legacy
       { source: '/post/:slug',                 destination: '/blog/:slug',    permanent: true },
       { source: '/article/:slug',              destination: '/blog/:slug',    permanent: true },
