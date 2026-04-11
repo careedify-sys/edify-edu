@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="336" viewBox="0 0 760 336">
+  <rect width="760" height="336" rx="12" fill="#F8FAFC"/>
+  <text x="380" y="28" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#0F172A">Amity Online MCA: All 6 Specialisations at a Glance</text>
+  <rect x="28" y="44" width="218" height="118" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="28" y="44" width="218" height="8" rx="4" fill="#0F172A"/>
+  <text x="137" y="73" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#0F172A">General Track</text>
+  <text x="137" y="91" text-anchor="middle" font-family="Arial" font-size="11" fill="#475569">Core CS, Cloud, Linux</text>
+  <text x="137" y="107" text-anchor="middle" font-family="Arial" font-size="11" fill="#475569">ML elective</text>
+  <text x="137" y="126" text-anchor="middle" font-family="Arial" font-size="11" fill="#94A3B8">Broad IT roles</text>
+  <rect x="48" y="142" width="178" height="10" rx="5" fill="#E2E8F0"/>
+  <rect x="48" y="142" width="89" height="10" rx="5" fill="#0F172A"/>
+  <text x="137" y="164" text-anchor="middle" font-family="Arial" font-size="10" fill="#64748B">Demand: Moderate</text>
+  <rect x="270" y="44" width="218" height="118" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="270" y="44" width="218" height="8" rx="4" fill="#0F172A"/>
+  <text x="379" y="73" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#0F172A">AI and ML</text>
+  <text x="379" y="91" text-anchor="middle" font-family="Arial" font-size="11" fill="#475569">Deep Learning, NLP,</text>
+  <text x="379" y="107" text-anchor="middle" font-family="Arial" font-size="11" fill="#475569">Neural Networks</text>
+  <text x="379" y="126" text-anchor="middle" font-family="Arial" font-size="11" fill="#94A3B8">ML Engineer, AI Developer</text>
+  <rect x="290" y="142" width="178" height="10" rx="5" fill="#E2E8F0"/>
+  <rect x="290" y="142" width="160" height="10" rx="5" fill="#F97316"/>
+  <text x="379" y="164" text-anchor="middle" font-family="Arial" font-size="10" fill="#64748B">Demand: Very High</text>
+  <rect x="512" y="44" width="218" height="118" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="512" y="44" width="218" height="8" rx="4" fill="#F97316"/>
+  <text x="621" y="73" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#0F172A">FinTech and AI</text>
+  <text x="621" y="91" text-anchor="middle" font-family="Arial" font-size="11" fill="#475569">ML for Finance, Blockchain</text>
+  <text x="621" y="107" text-anchor="middle" font-family="Arial" font-size="11" fill="#475569">WealthTech, RegTech</text>
+  <text x="621" y="122" text-anchor="middle" font-family="Arial" font-size="11" fill="#EA580C" font-weight="bold">With Paytm</text>
+  <rect x="532" y="142" width="178" height="10" rx="5" fill="#E2E8F0"/>
+  <rect x="532" y="142" width="142" height="10" rx="5" fill="#F97316"/>
+  <text x="621" y="164" text-anchor="middle" font-family="Arial" font-size="10" fill="#64748B">Demand: High + Niche</text>
+  <rect x="28" y="184" width="218" height="118" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="28" y="184" width="218" height="8" rx="4" fill="#DC2626"/>
+  <text x="137" y="213" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#0F172A">Cyber Security</text>
+  <text x="137" y="231" text-anchor="middle" font-family="Arial" font-size="11" fill="#475569">Threat Intel, SIEM</text>
+  <text x="137" y="247" text-anchor="middle" font-family="Arial" font-size="11" fill="#475569">Malware, Incident Response</text>
+  <text x="137" y="262" text-anchor="middle" font-family="Arial" font-size="11" fill="#DC2626" font-weight="bold">With HCLTech</text>
+  <rect x="48" y="282" width="178" height="10" rx="5" fill="#E2E8F0"/>
+  <rect x="48" y="282" width="160" height="10" rx="5" fill="#DC2626"/>
+  <text x="137" y="304" text-anchor="middle" font-family="Arial" font-size="10" fill="#64748B">Demand: Very High</text>
+  <rect x="270" y="184" width="218" height="118" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="270" y="184" width="218" height="8" rx="4" fill="#7C3AED"/>
+  <text x="379" y="213" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#0F172A">Software Engineering</text>
+  <text x="379" y="231" text-anchor="middle" font-family="Arial" font-size="11" fill="#475569">DevOps, Angular</text>
+  <text x="379" y="247" text-anchor="middle" font-family="Arial" font-size="11" fill="#475569">Microservices, CI/CD</text>
+  <text x="379" y="262" text-anchor="middle" font-family="Arial" font-size="11" fill="#7C3AED" font-weight="bold">With TCS iON</text>
+  <rect x="290" y="282" width="178" height="10" rx="5" fill="#E2E8F0"/>
+  <rect x="290" y="282" width="133" height="10" rx="5" fill="#7C3AED"/>
+  <text x="379" y="304" text-anchor="middle" font-family="Arial" font-size="10" fill="#64748B">Demand: High</text>
+  <rect x="512" y="184" width="218" height="118" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="512" y="184" width="218" height="8" rx="4" fill="#0EA5E9"/>
+  <text x="621" y="213" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#0F172A">Blockchain</text>
+  <text x="621" y="231" text-anchor="middle" font-family="Arial" font-size="11" fill="#475569">Ethereum, Hyperledger</text>
+  <text x="621" y="247" text-anchor="middle" font-family="Arial" font-size="11" fill="#475569">Solidity, Golang</text>
+  <text x="621" y="262" text-anchor="middle" font-family="Arial" font-size="11" fill="#94A3B8">Web3, DeFi roles</text>
+  <rect x="532" y="282" width="178" height="10" rx="5" fill="#E2E8F0"/>
+  <rect x="532" y="282" width="89" height="10" rx="5" fill="#0EA5E9"/>
+  <text x="621" y="304" text-anchor="middle" font-family="Arial" font-size="10" fill="#64748B">Demand: Niche, growing</text>
+</svg>

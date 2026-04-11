@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="328" viewBox="0 0 760 328">
+  <rect width="760" height="328" rx="12" fill="#F8FAFC"/>
+  <text x="380" y="30" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#0F172A">Online MCA Specialisation vs Career Outcome (2025)</text>
+  <text x="135" y="55" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#475569">Specialisation</text>
+  <text x="390" y="55" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#475569">Top Job Roles</text>
+  <text x="635" y="55" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#475569">Starting Salary</text>
+  <line x1="30" y1="62" x2="730" y2="62" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="30" y="66" width="700" height="48" rx="6" fill="#EFF6FF"/>
+  <rect x="30" y="66" width="8" height="48" rx="3" fill="#0F172A"/>
+  <text x="145" y="95" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#0F172A">AI and Machine Learning</text>
+  <text x="390" y="88" text-anchor="middle" font-family="Arial" font-size="11" fill="#334155">ML Engineer, AI Developer, Data Scientist</text>
+  <text x="390" y="104" text-anchor="middle" font-family="Arial" font-size="11" fill="#334155">NLP Specialist, Research Analyst</text>
+  <text x="635" y="95" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#16A34A">&#x20B9;5 - 9 LPA</text>
+  <rect x="30" y="120" width="700" height="48" rx="6" fill="#FFFFFF" stroke="#F1F5F9" stroke-width="1"/>
+  <rect x="30" y="120" width="8" height="48" rx="3" fill="#F97316"/>
+  <text x="145" y="149" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#0F172A">Data Science</text>
+  <text x="390" y="142" text-anchor="middle" font-family="Arial" font-size="11" fill="#334155">Data Analyst, Business Analyst, BI Developer</text>
+  <text x="390" y="158" text-anchor="middle" font-family="Arial" font-size="11" fill="#334155">Product Analyst, Data Engineer</text>
+  <text x="635" y="149" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#16A34A">&#x20B9;4 - 8 LPA</text>
+  <rect x="30" y="174" width="700" height="48" rx="6" fill="#FEF2F2"/>
+  <rect x="30" y="174" width="8" height="48" rx="3" fill="#DC2626"/>
+  <text x="145" y="203" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#0F172A">Cybersecurity</text>
+  <text x="390" y="196" text-anchor="middle" font-family="Arial" font-size="11" fill="#334155">Security Analyst, Ethical Hacker, Forensic Analyst</text>
+  <text x="390" y="212" text-anchor="middle" font-family="Arial" font-size="11" fill="#334155">SOC Analyst, Penetration Tester</text>
+  <text x="635" y="203" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#16A34A">&#x20B9;5 - 10 LPA</text>
+  <rect x="30" y="228" width="700" height="48" rx="6" fill="#FFFFFF" stroke="#F1F5F9" stroke-width="1"/>
+  <rect x="30" y="228" width="8" height="48" rx="3" fill="#8B5CF6"/>
+  <text x="145" y="257" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#0F172A">Full Stack Development</text>
+  <text x="390" y="250" text-anchor="middle" font-family="Arial" font-size="11" fill="#334155">Frontend/Backend Developer, DevOps Engineer</text>
+  <text x="390" y="266" text-anchor="middle" font-family="Arial" font-size="11" fill="#334155">React/Node Developer, Software Engineer</text>
+  <text x="635" y="257" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#16A34A">&#x20B9;4 - 8 LPA</text>
+  <rect x="30" y="282" width="700" height="36" rx="6" fill="#F0F9FF"/>
+  <rect x="30" y="282" width="8" height="36" rx="3" fill="#0EA5E9"/>
+  <text x="145" y="305" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#0F172A">Cloud Computing</text>
+  <text x="390" y="305" text-anchor="middle" font-family="Arial" font-size="11" fill="#334155">Cloud Engineer, AWS/Azure Admin, Cloud Architect (5+ yrs)</text>
+  <text x="635" y="305" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#16A34A">&#x20B9;5 - 12 LPA</text>
+</svg>
