@@ -103,6 +103,7 @@ export default function Footer() {
               { label:'Compare Universities',              href:'/compare' },
               { label:'UGC DEB What It Means',            href:'/guides' },
               { label:'Is Online MBA Worth It?',           href:'/guides' },
+              { label:'Discount Coupons',                  href:'/coupons' },
               { label:'Blog',                              href:'/blog' },
               { label:'About Us',                          href:'/about' },
               { label:'Contact Us',                        href:'/contact' },

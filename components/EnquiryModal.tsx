@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { X, Send, MessageCircle, CheckCircle, Loader2, Phone, Mail, User, BookOpen, Building2 } from 'lucide-react'
+import { X, Send, MessageCircle, CheckCircle, Loader2, Mail, User, BookOpen, Building2, Tag } from 'lucide-react'
 
 interface EnquiryModalProps {
   isOpen: boolean
@@ -10,6 +10,10 @@ interface EnquiryModalProps {
   universityId?: string
   defaultProgram?: string
   sourcePage?: string
+  /** Pre-fill and lock a coupon code (e.g. from the /coupons page) */
+  couponCode?: string
+  /** Human-readable discount label shown in the applied badge (e.g. "25% off") */
+  couponDiscount?: string
 }
 
 const PROGRAMS = ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'B.Com', 'MA', 'M.Com', 'MSc', 'BSc', 'Not sure yet']
@@ -23,6 +27,8 @@ export default function EnquiryModal({
   universityId,
   defaultProgram,
   sourcePage,
+  couponCode,
+  couponDiscount,
 }: EnquiryModalProps) {
   const [step, setStep] = useState<Step>('form')
   const [form, setForm] = useState({
@@ -31,6 +37,7 @@ export default function EnquiryModal({
     email: '',
     program: defaultProgram || '',
     preferredUniversity: universityName || '',
+    couponCode: couponCode || '',
   })
   const [errors, setErrors] = useState<Partial<Record<keyof typeof form, string>>>({})
   const modalRef = useRef<HTMLDivElement>(null)
@@ -43,9 +50,10 @@ export default function EnquiryModal({
         ...f,
         program: defaultProgram || '',
         preferredUniversity: universityName || '',
+        couponCode: couponCode || '',
       }))
     }
-  }, [isOpen, defaultProgram, universityName])
+  }, [isOpen, defaultProgram, universityName, couponCode])
 
   useEffect(() => {
     function handleKey(e: KeyboardEvent) {
@@ -89,6 +97,7 @@ export default function EnquiryModal({
           program: form.program,
           preferredUniversity: form.preferredUniversity || universityName || 'Not specified',
           sourcePage: sourceFinal,
+          ...(form.couponCode.trim() ? { couponCode: form.couponCode.trim().toUpperCase() } : {}),
         }),
       })
 
@@ -249,6 +258,36 @@ export default function EnquiryModal({
                   className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-sm transition-all outline-none focus:border-orange-400 focus:bg-white"
                 />
               </div>
+            </div>
+
+            {/* Coupon Code */}
+            <div>
+              <label className="text-xs font-bold text-slate-500 uppercase tracking-wide block mb-1.5">
+                Coupon Code <span className="font-normal text-slate-400">(optional)</span>
+              </label>
+
+              {/* Applied badge — shown when couponCode prop is pre-filled */}
+              {couponCode && couponDiscount && (
+                <div className="flex items-center gap-2 bg-green-50 border border-green-200 rounded-xl px-4 py-2.5 mb-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 shrink-0" />
+                  <span className="text-sm font-bold text-green-700">
+                    Coupon applied: {couponCode} — {couponDiscount}
+                  </span>
+                </div>
+              )}
+
+              <div className="relative">
+                <Tag className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                <input
+                  type="text"
+                  placeholder="e.g. AMITY25"
+                  aria-label="Coupon code"
+                  value={form.couponCode}
+                  onChange={e => setForm(f => ({ ...f, couponCode: e.target.value.toUpperCase() }))}
+                  className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-sm transition-all outline-none focus:border-orange-400 focus:bg-white font-mono tracking-wider"
+                />
+              </div>
+              <p className="text-xs text-slate-400 mt-1">Apply during counselling call for instant discount</p>
             </div>
 
             {/* Trust note */}
