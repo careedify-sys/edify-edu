@@ -676,7 +676,7 @@ function CompareContent() {
             style={{ background: 'radial-gradient(ellipse, #f59e0b 0%, transparent 70%)' }} />
         </div>
 
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 pt-12 pb-10">
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 pt-6 pb-6 sm:pt-12 sm:pb-10">
           {/* Updated badge */}
           <div className="flex justify-center mb-5">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-amber/30 bg-amber/10 text-amber text-[11px] font-bold uppercase tracking-wider">
@@ -697,13 +697,13 @@ function CompareContent() {
 
           {/* Program toggle — prominent pill tabs */}
           <div className="flex justify-center mb-8">
-            <div className="flex items-center p-1 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm gap-1">
+            <div className="flex items-center p-1 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm gap-1 w-full sm:w-auto">
               {(['MBA', 'MCA'] as const).map(p => (
                 <button
                   key={p}
                   onClick={() => { setProgram(p); setSelectedIds(['jain-university-online', 'amity-university-online']) }}
                   className={clsx(
-                    "px-7 py-2.5 text-sm font-bold rounded-xl transition-all duration-200",
+                    "flex-1 sm:flex-none px-7 py-2.5 text-sm font-bold rounded-xl transition-all duration-200",
                     program === p
                       ? "bg-amber text-white shadow-lg shadow-amber/30"
                       : "text-white/60 hover:text-white hover:bg-white/10"
@@ -736,7 +736,7 @@ function CompareContent() {
 
       {/* ── UNIVERSITY SELECTOR PANEL ────────────────────────────────────── */}
       <div className="border-b border-border bg-white sticky top-0 z-30 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 py-2 sm:py-4">
           <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
             {/* Currently comparing */}
             <div className="flex items-center gap-2 flex-wrap">
@@ -802,7 +802,7 @@ function CompareContent() {
 
           {/* University cards grid — only shown when searching or always show first N */}
           {selectedIds.length < 3 && (filteredAvailable.length > 0) && (
-            <div className="mt-3 flex gap-2 overflow-x-auto pb-1 scrollbar-none">
+            <div className="mt-3 flex flex-col sm:flex-row sm:flex-nowrap gap-2 sm:overflow-x-auto pb-1 scrollbar-none" style={{ WebkitOverflowScrolling: 'touch' }}>
               {filteredAvailable.slice(0, uniSearch ? 20 : 10).map(u => (
                 <button
                   key={u.id}
@@ -909,7 +909,8 @@ function CompareContent() {
             </div>
 
             {/* Comparison Grid */}
-            <div className="bg-white border border-border rounded-2xl shadow-xl overflow-hidden overflow-x-auto">
+            <div className="bg-white border border-border rounded-2xl shadow-xl overflow-hidden">
+            <div className="overflow-x-auto" style={{ WebkitOverflowScrolling: 'touch' }}>
 
               {/* Sticky Table Header */}
               <div
@@ -920,7 +921,7 @@ function CompareContent() {
                   className="grid items-stretch"
                   style={{ gridTemplateColumns: `180px repeat(${universities.length}, minmax(220px, 1fr))` }}
                 >
-                  <div className="p-4 flex flex-col justify-center border-r border-border/50 bg-navy/3">
+                  <div className="p-4 flex flex-col justify-center border-r border-border/50 bg-navy/3 sticky left-0 z-10">
                     <span className="text-[10px] font-bold text-ink-3 uppercase tracking-wider">Comparing</span>
                     <span className="text-xs font-black text-amber mt-0.5">{universities.length} Online {program}</span>
                   </div>
@@ -1020,7 +1021,7 @@ function CompareContent() {
                   className="grid items-stretch border-b border-orange-400/30"
                   style={{ gridTemplateColumns: `180px repeat(${universities.length}, minmax(220px, 1fr))` }}
                 >
-                  <div className="p-4 flex items-center gap-2 bg-black/10">
+                  <div className="p-4 flex items-center gap-2 bg-black/10 sticky left-0 z-10">
                     <Lock size={16} className="text-white animate-bounce" />
                     <span className="text-[11px] font-black text-white uppercase tracking-wider">Scholarship</span>
                   </div>
@@ -1097,7 +1098,7 @@ function CompareContent() {
                 className="grid items-stretch bg-navy/3 border-t-2 border-border"
                 style={{ gridTemplateColumns: `180px repeat(${universities.length}, minmax(220px, 1fr))` }}
               >
-                <div className="p-4 flex items-center justify-center border-r border-border/50 bg-bg/30">
+                <div className="p-4 flex items-center justify-center border-r border-border/50 bg-bg/30 sticky left-0 z-10">
                   <div className="text-center">
                     <div className="text-[11px] font-black text-navy uppercase tracking-wider mb-0.5">Ready?</div>
                     <div className="text-[10px] text-ink-3 font-medium">Pick your university</div>
@@ -1120,7 +1121,8 @@ function CompareContent() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div>{/* /overflow-x-auto */}
+            </div>{/* /Comparison Grid */}
 
             {/* ── BOTTOM PROOF / CTA SECTION ──────────────────────────────── */}
             <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -1237,7 +1239,7 @@ function ComparisonRow({ label, unis, fn, icon = null }: {
       className="grid items-stretch border-b border-border/40 group hover:bg-amber-light/5 transition-colors"
       style={{ gridTemplateColumns: `180px repeat(${unis.length}, minmax(220px, 1fr))` }}
     >
-      <div className="p-4 flex items-center gap-2 bg-bg/30 font-bold text-xs text-ink-3 border-r border-border/50 group-hover:bg-bg/60 transition-colors">
+      <div className="p-4 flex items-center gap-2 bg-bg/30 font-bold text-xs text-ink-3 border-r border-border/50 group-hover:bg-bg/60 transition-colors sticky left-0 z-10">
         {icon}
         <span>{label}</span>
       </div>
