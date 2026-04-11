@@ -144,6 +144,15 @@ export default function UniversityPageClient({ university: u }: Props) {
                   <h1 className="font-display flex-1" style={{fontSize:'clamp(1.6rem,4vw,2.4rem)',fontWeight:800,color:'#fff',lineHeight:1.15,margin:0}}>
                     {u.name}
                   </h1>
+                  {(u as any).enrollments ? (
+                    <div className="flex flex-wrap gap-3 mt-2">
+                      {(u as any).rankingBadge && (
+                        <span className="text-xs font-semibold text-amber-300">{(u as any).rankingBadge}</span>
+                      )}
+                      <span className="text-xs text-slate-300">{/* studentsEnrolledLine */}{(u as any).enrollments}+ students counselled through Edify</span>
+                    </div>
+                  ) : null}
+
                 </div>
                 <p className="text-slate-400 text-[15px] mb-4 flex items-center gap-1.5">
                   <MapPin size={14}/> {u.city}, {u.state}

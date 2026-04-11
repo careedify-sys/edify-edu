@@ -75,6 +75,8 @@ export interface University {
   programDetails: Partial<Record<Program, ProgramDetail>>
   specialFeatures?: UniFeature[]
   color: string
+  enrollments?: number
+  rankingBadge?: string
 }
 
 // Helper
@@ -185,6 +187,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #72 (University) · NAAC A+',
+  enrollments: 500,
   },
   {
     id: 'amity-university-online',
@@ -271,6 +275,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  rankingBadge: 'NIRF #54 (University) · NAAC A+',
+  enrollments: 500,
   },
   {
     id: 'lovely-professional-university-online',
@@ -376,6 +382,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #37 (University) · NAAC A+',
+  enrollments: 500,
   },
   {
     id: 'dayananda-sagar-university-online',
@@ -458,6 +466,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  enrollments: 500,
   },
   {
     id: 'dy-patil-university-online',
@@ -518,6 +527,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  enrollments: 500,
   },
   {
     id: 'upes-online',
@@ -593,6 +603,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  rankingBadge: 'NIRF #57 (University) · NAAC A',
+  enrollments: 500,
   },
   {
     id: 'parul-university-online',
@@ -696,6 +708,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  enrollments: 500,
   },
   {
     id: 'amrita-vishwa-vidyapeetham-online',
@@ -790,6 +803,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #8 (University) · NAAC A++',
+  enrollments: 500,
   },
   {
     id: 'mangalayatan-university-online',
@@ -892,6 +907,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  enrollments: 500,
   },
   {
     id: 'shoolini-university-online',
@@ -1088,6 +1104,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  rankingBadge: 'NIRF #38 (University) · NAAC A+',
+  enrollments: 500,
   },
   {
     id: 'galgotias-university-online',
@@ -1170,6 +1188,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  enrollments: 500,
   },
   {
     id: 'sikkim-manipal-university-online',
@@ -1334,6 +1353,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #9 (Management) · NAAC A+',
+  enrollments: 500,
   },
   {
     id: 'chitkara-university-online',
@@ -1486,6 +1507,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  enrollments: 500,
   },
   {
     id: 'sharda-university-online',
@@ -1779,6 +1801,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #14 (Management) · NAAC A+',
+  enrollments: 500,
   },
   {
     id: 'manipal-academy-higher-education-online',
@@ -1863,6 +1887,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #5 (University) · NAAC A++',
+  enrollments: 500,
   },
   {
     id: 'kl-university-online',
@@ -1937,6 +1963,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  enrollments: 500,
   },
   {
     id: 'chandigarh-university-online',
@@ -2021,6 +2048,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  rankingBadge: 'NIRF #26 (University) · NAAC A+',
+  enrollments: 500,
   },
   {
     id: 'vtu-online',
@@ -2093,6 +2122,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  enrollments: 500,
   },
   {
     id: 'integral-university-online',
@@ -2376,6 +2406,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  enrollments: 500,
   },
   {
     id: 'bharathidasan-university-online',
@@ -2489,6 +2520,7 @@ export const UNIVERSITIES: University[] = [
       
     },
     color: '#2563EB',
+  enrollments: 500,
   },
   {
     id: 'guru-ghasidas-vishwavidyalaya-online',
@@ -2571,6 +2603,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  enrollments: 500,
   },
   {
     id: 'dr-babasaheb-ambedkar-open-university-online',
@@ -2653,6 +2686,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  enrollments: 500,
   },
   {
     id: 'marwadi-university-online',
@@ -2745,6 +2779,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  enrollments: 500,
   },
   {
     id: 'pp-savani-university-online',
@@ -2824,6 +2859,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  enrollments: 500,
   },
   {
     id: 'university-of-mysore-online',
@@ -2916,6 +2952,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  enrollments: 500,
   },
   {
     id: 'aligarh-muslim-university-online',
@@ -3137,6 +3174,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  enrollments: 500,
   },
   {
     id: 'gls-university-online',
@@ -3298,6 +3336,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  enrollments: 500,
   },
   {
     id: 'mizoram-university-online',
@@ -3337,6 +3376,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  enrollments: 500,
   },
   {
     id: 'vivekananda-global-university-online',
@@ -3469,6 +3509,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  enrollments: 500,
   },
   {
     id: 'uttaranchal-university-online',
@@ -3604,6 +3645,7 @@ export const UNIVERSITIES: University[] = [
       },
     },
     color: '#1B4FBE',
+  enrollments: 500,
   },
   {
     id: 'sgt-university-online',
@@ -3752,6 +3794,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  enrollments: 500,
   },
   {
     id: 'vit-university-online',
@@ -3804,6 +3847,8 @@ export const UNIVERSITIES: University[] = [
       
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #11 (University) · NAAC A++',
+  enrollments: 500,
   },
   {
     id: 'karunya-university-online',
@@ -3853,6 +3898,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  enrollments: 500,
   },
   {
     id: 'kurukshetra-university-online',
@@ -3936,6 +3982,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  enrollments: 500,
   },
   {
     id: 'sastra-university-online',
@@ -3976,6 +4023,7 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#1B4FBE',
+  enrollments: 500,
   },
   {
     id: 'dr-dy-patil-vidyapeeth-online',
@@ -4029,6 +4077,7 @@ export const UNIVERSITIES: University[] = [
       
     },
     color: '#1B4FBE',
+  enrollments: 500,
   },
   {
     id: 'jamia-millia-islamia-online',
@@ -4070,6 +4119,7 @@ export const UNIVERSITIES: University[] = [
       },
     },
     color: '#1B4FBE',
+  enrollments: 500,
   },
   {
     id: 'christ-university-online',
@@ -4142,6 +4192,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #63 (University) · NAAC A+',
+  enrollments: 500,
   },
   {
     id: 'shobhit-university-online',
@@ -4214,6 +4266,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  enrollments: 500,
   },
   {
     id: 'bharati-vidyapeeth-university-online',
@@ -4287,6 +4340,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  enrollments: 500,
   },
   {
     id: 'assam-don-bosco-university-online',
@@ -4477,6 +4531,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  enrollments: 500,
   },
   {
     id: 'alliance-university-online',
@@ -4537,6 +4592,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  enrollments: 500,
   },
   {
     id: 'desh-bhagat-university-online',
@@ -4671,6 +4727,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  enrollments: 500,
   },
   {
     id: 'amet-university-online',
@@ -4730,6 +4787,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  enrollments: 500,
   },
   {
     id: 'guru-nanak-dev-university-online',
@@ -4842,6 +4900,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  enrollments: 500,
   },
   {
     id: 'savitribai-phule-pune-university-online',
@@ -4997,6 +5056,7 @@ export const UNIVERSITIES: University[] = [
       },
     },
     color: '#C0392B',
+  enrollments: 500,
   },  {
     id: 'sathyabama-university-online',
     name: 'Sathyabama Institute of Science and Technology (Centre Online',
@@ -5045,6 +5105,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  enrollments: 500,
   },
   {
     id: 'vit-vellore-online',
@@ -5134,6 +5195,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  enrollments: 500,
   },
   {
     id: 'anna-university-online',
@@ -5224,6 +5286,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  enrollments: 500,
   },
   {
     id: 'northcap-university-online',
@@ -5336,6 +5399,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  enrollments: 500,
   },
   {
     id: 'iift-online',
@@ -5376,6 +5440,7 @@ export const UNIVERSITIES: University[] = [
       },
     },
     color: '#2563EB',
+  enrollments: 500,
   },
   {
     id: 'gujarat-technological-university-online',
@@ -5415,6 +5480,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  enrollments: 500,
   },
   {
     id: 'bits-pilani-online',
@@ -5456,6 +5522,8 @@ export const UNIVERSITIES: University[] = [
       },
     },
     color: '#0891B2',
+  rankingBadge: 'NIRF #26 (University) · NAAC A',
+  enrollments: 500,
   },
   {
     id: 'alvas-college-online',
@@ -5547,6 +5615,7 @@ export const UNIVERSITIES: University[] = [
       
     },
     color: '#1B4FBE',
+  enrollments: 500,
   },
   {
     id: 'kiit-university-online',
@@ -5588,6 +5657,8 @@ export const UNIVERSITIES: University[] = [
       },
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #16 (University) · NAAC A+',
+  enrollments: 500,
   },
   {
     id: 'centurion-university-online',
@@ -5638,6 +5709,7 @@ export const UNIVERSITIES: University[] = [
       },
     },
     color: '#2563EB',
+  enrollments: 500,
   },
   {
     id: 'guru-kashi-university-online',
@@ -5732,6 +5804,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  enrollments: 500,
   },
   {
     id: 'bs-abdur-rahman-university-online',
@@ -5784,6 +5857,7 @@ export const UNIVERSITIES: University[] = [
       
     },
     color: '#2563EB',
+  enrollments: 500,
   },
   {
     id: 'srm-institute-science-technology-online',
@@ -5910,6 +5984,8 @@ export const UNIVERSITIES: University[] = [
       },
     },
     color: '#C0392B',
+  rankingBadge: 'NIRF #17 (University) · NAAC A++',
+  enrollments: 500,
   },  {
     id: 'university-of-madras-online',
     name: 'University of Madras Online',
@@ -5988,6 +6064,7 @@ export const UNIVERSITIES: University[] = [
       },
     },
     color: '#1B4FBE',
+  enrollments: 500,
   },
   {
     id: 'alagappa-university-online',
@@ -6105,6 +6182,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  enrollments: 500,
   },
   {
     id: 'icfai-university-online',
@@ -6305,6 +6383,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  enrollments: 500,
   },
   {
     id: 'teerthanker-mahaveer-university-online',
@@ -6422,6 +6501,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  enrollments: 500,
   },
   {
     id: 'jawaharlal-nehru-university-online',
@@ -6461,6 +6541,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#6366f1',
+  enrollments: 500,
   },
   {
     id: 'jamia-hamdard-online',
@@ -6554,6 +6635,7 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#dc2626',
+  enrollments: 500,
   },
   {
     id: 'kalinga-institute-industrial-technology-online',
@@ -6624,6 +6706,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#b45309',
+  enrollments: 500,
   },
   {
     id: 'university-of-kerala-online',
@@ -6693,6 +6776,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0369a1',
+  enrollments: 500,
   },
   {
     id: 'bits-pilani-work-integrated-online',
@@ -6734,6 +6818,7 @@ export const UNIVERSITIES: University[] = [
       },
     },
     color: '#86198f',
+  enrollments: 500,
   },
   {
     id: 'graphic-era-university-online',
@@ -6817,6 +6902,7 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#059669',
+  enrollments: 500,
   },
   {
     id: 'devi-ahilya-vishwavidyalaya-online',
@@ -6866,6 +6952,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#d97706',
+  enrollments: 500,
   },
   {
     id: 'madurai-kamaraj-university-online',
@@ -6945,6 +7032,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#16a34a',
+  enrollments: 500,
   },
   {
     id: 'shanmugha-arts-science-technology-research-online',
@@ -7047,6 +7135,7 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#9333ea',
+  enrollments: 500,
   },
   {
     id: 'university-of-mumbai-online',
@@ -7086,6 +7175,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#b45309',
+  enrollments: 500,
   },
   {
     id: 'university-of-jammu-online',
@@ -7135,6 +7225,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0369a1',
+  enrollments: 500,
   },
   {
     id: 'shivaji-university-online',
@@ -7184,6 +7275,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#15803d',
+  enrollments: 500,
   },
   {
     id: 'banasthali-vidyapith-online',
@@ -7263,6 +7355,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#c2410c',
+  enrollments: 500,
   },
   {
     id: 'guru-gobind-singh-indraprastha-university-online',
@@ -7323,6 +7416,7 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#92400e',
+  enrollments: 500,
   },
   {
     id: 'bangalore-university-online',
@@ -7382,6 +7476,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#312e81',
+  enrollments: 500,
   },
   {
     id: 'iiit-bangalore-online',
@@ -7413,6 +7508,7 @@ export const UNIVERSITIES: University[] = [
       
     },
     color: '#134e4a',
+  enrollments: 500,
   },
   {
     id: 'dayalbagh-educational-institute-online',
@@ -7492,6 +7588,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891b2',
+  enrollments: 500,
   },
   {
     id: 'adichunchanagiri-university-online',
@@ -7531,6 +7628,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#059669',
+  enrollments: 500,
   },
   {
     id: 'bharath-university-online',
@@ -7590,6 +7688,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#d97706',
+  enrollments: 500,
   },
   {
     id: 'chhatrapati-shahu-ji-maharaj-university-online',
@@ -7682,6 +7781,7 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#0e7490',
+  enrollments: 500,
   },
   {
     id: 'deen-dayal-upadhyay-gorakhpur-university-online',
@@ -7761,6 +7861,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#4f46e5',
+  enrollments: 500,
   },
   {
     id: 'guru-jambheshwar-university-online',
@@ -7831,6 +7932,7 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#065f46',
+  enrollments: 500,
   },
   {
     id: 'maharshi-dayanand-university-online',
@@ -7890,6 +7992,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#7c3aed',
+  enrollments: 500,
   },
   {
     id: 'mahatma-jyotiba-phule-rohilkhand-university-online',
@@ -7949,6 +8052,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0284c7',
+  enrollments: 500,
   },
   {
     id: 'mats-university-online',
@@ -8031,6 +8135,7 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#b45309',
+  enrollments: 500,
   },
   {
     id: 'meenakshi-academy-higher-education-online',
@@ -8090,6 +8195,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#4f46e5',
+  enrollments: 500,
   },
   {
     id: 'mody-university-online',
@@ -8190,6 +8296,7 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#0369a1',
+  enrollments: 500,
   },
   {
     id: 'sage-university-online',
@@ -8270,6 +8377,7 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#0f766e',
+  enrollments: 500,
   },
   {
     id: 'shree-guru-gobind-singh-tricentenary-university-online',
@@ -8352,6 +8460,7 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#1d4ed8',
+  enrollments: 500,
   },
   {
     id: 'shri-ramasamy-memorial-university-online',
@@ -8444,6 +8553,7 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#065f46',
+  enrollments: 500,
   },
   {
     id: 'assam-down-town-university-online',

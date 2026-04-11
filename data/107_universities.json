@@ -1,0 +1,467 @@
+[
+  {
+    "university": "Jain University Online",
+    "slug": "jain-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Amity University Online",
+    "slug": "amity-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Chandigarh University Online",
+    "slug": "chandigarh-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "SRM Institute Science Technology Online",
+    "slug": "srm-institute-science-technology-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Lovely Professional University Online",
+    "slug": "lovely-professional-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Dayananda Sagar University Online",
+    "slug": "dayananda-sagar-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Dy Patil University Online",
+    "slug": "dy-patil-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "UPES Online",
+    "slug": "upes-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Parul University Online",
+    "slug": "parul-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Amrita Vishwa Vidyapeetham Online",
+    "slug": "amrita-vishwa-vidyapeetham-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Mangalayatan University Online",
+    "slug": "mangalayatan-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Manipal University Jaipur Online",
+    "slug": "manipal-university-jaipur-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Galgotias University Online",
+    "slug": "galgotias-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Symbiosis University Online",
+    "slug": "symbiosis-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Yenepoya University Online",
+    "slug": "yenepoya-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "NMIMS Online",
+    "slug": "nmims-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Manipal Academy Higher Education Online",
+    "slug": "manipal-academy-higher-education-online",
+    "enrollments": 500
+  },
+  {
+    "university": "KL University Online",
+    "slug": "kl-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "VTU Online",
+    "slug": "vtu-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Karnataka State Open University Online",
+    "slug": "karnataka-state-open-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Hindustan Institute Technology Online",
+    "slug": "hindustan-institute-technology-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Guru Ghasidas Vishwavidyalaya Online",
+    "slug": "guru-ghasidas-vishwavidyalaya-online",
+    "enrollments": 500
+  },
+  {
+    "university": "DR Babasaheb Ambedkar Open University Online",
+    "slug": "dr-babasaheb-ambedkar-open-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Marwadi University Online",
+    "slug": "marwadi-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "PP Savani University Online",
+    "slug": "pp-savani-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "University Of Mysore Online",
+    "slug": "university-of-mysore-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Charusat University Online",
+    "slug": "charusat-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Maharishi Markandeshwar University Online",
+    "slug": "maharishi-markandeshwar-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Mizoram University Online",
+    "slug": "mizoram-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "DR Mgr Educational Research Institute Online",
+    "slug": "dr-mgr-educational-research-institute-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Andhra University Online",
+    "slug": "andhra-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Mahatma Gandhi University Online",
+    "slug": "mahatma-gandhi-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "VIT University Online",
+    "slug": "vit-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Karunya University Online",
+    "slug": "karunya-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Kurukshetra University Online",
+    "slug": "kurukshetra-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Sastra University Online",
+    "slug": "sastra-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "DR Dy Patil Vidyapeeth Online",
+    "slug": "dr-dy-patil-vidyapeeth-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Jamia Millia Islamia Online",
+    "slug": "jamia-millia-islamia-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Christ University Online",
+    "slug": "christ-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Shobhit University Online",
+    "slug": "shobhit-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Bharati Vidyapeeth University Online",
+    "slug": "bharati-vidyapeeth-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "JSS University Online",
+    "slug": "jss-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Alliance University Online",
+    "slug": "alliance-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Ganpat University Online",
+    "slug": "ganpat-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Amet University Online",
+    "slug": "amet-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Jaypee University Online",
+    "slug": "jaypee-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "SRM University Sikkim Online",
+    "slug": "srm-university-sikkim-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Sathyabama University Online",
+    "slug": "sathyabama-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Karunya Kcode Online",
+    "slug": "karunya-kcode-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Vels University Online",
+    "slug": "vels-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Noida International University Online",
+    "slug": "noida-international-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "IIFT Online",
+    "slug": "iift-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Gujarat Technological University Online",
+    "slug": "gujarat-technological-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "BITS Pilani Online",
+    "slug": "bits-pilani-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Datta Meghe University Online",
+    "slug": "datta-meghe-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "KIIT University Online",
+    "slug": "kiit-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Centurion University Online",
+    "slug": "centurion-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Jaipur National University Online",
+    "slug": "jaipur-national-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "BS Abdur Rahman University Online",
+    "slug": "bs-abdur-rahman-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Kalasalingam University Online",
+    "slug": "kalasalingam-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Sri Ramachandra University Online",
+    "slug": "sri-ramachandra-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Jagannath University Online",
+    "slug": "jagannath-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Arka Jain University Online",
+    "slug": "arka-jain-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Jawaharlal Nehru University Online",
+    "slug": "jawaharlal-nehru-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Jamia Hamdard Online",
+    "slug": "jamia-hamdard-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Kalinga Institute Industrial Technology Online",
+    "slug": "kalinga-institute-industrial-technology-online",
+    "enrollments": 500
+  },
+  {
+    "university": "University Of Kerala Online",
+    "slug": "university-of-kerala-online",
+    "enrollments": 500
+  },
+  {
+    "university": "BITS Pilani Work Integrated Online",
+    "slug": "bits-pilani-work-integrated-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Graphic Era University Online",
+    "slug": "graphic-era-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya Online",
+    "slug": "devi-ahilya-vishwavidyalaya-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Madurai Kamaraj University Online",
+    "slug": "madurai-kamaraj-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Shanmugha Arts Science Technology Research Online",
+    "slug": "shanmugha-arts-science-technology-research-online",
+    "enrollments": 500
+  },
+  {
+    "university": "University Of Mumbai Online",
+    "slug": "university-of-mumbai-online",
+    "enrollments": 500
+  },
+  {
+    "university": "University Of Jammu Online",
+    "slug": "university-of-jammu-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Shivaji University Online",
+    "slug": "shivaji-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Banasthali Vidyapith Online",
+    "slug": "banasthali-vidyapith-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Guru Gobind Singh Indraprastha University Online",
+    "slug": "guru-gobind-singh-indraprastha-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Bangalore University Online",
+    "slug": "bangalore-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "IIIT Bangalore Online",
+    "slug": "iiit-bangalore-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Dayalbagh Educational Institute Online",
+    "slug": "dayalbagh-educational-institute-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Adichunchanagiri University Online",
+    "slug": "adichunchanagiri-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Bharath University Online",
+    "slug": "bharath-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Chhatrapati Shahu Ji Maharaj University Online",
+    "slug": "chhatrapati-shahu-ji-maharaj-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Deen Dayal Upadhyay Gorakhpur University Online",
+    "slug": "deen-dayal-upadhyay-gorakhpur-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Guru Jambheshwar University Online",
+    "slug": "guru-jambheshwar-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Maharshi Dayanand University Online",
+    "slug": "maharshi-dayanand-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Mahatma Jyotiba Phule Rohilkhand University Online",
+    "slug": "mahatma-jyotiba-phule-rohilkhand-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Mats University Online",
+    "slug": "mats-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Meenakshi Academy Higher Education Online",
+    "slug": "meenakshi-academy-higher-education-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Mody University Online",
+    "slug": "mody-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Sage University Online",
+    "slug": "sage-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Shree Guru Gobind Singh Tricentenary University Online",
+    "slug": "shree-guru-gobind-singh-tricentenary-university-online",
+    "enrollments": 500
+  },
+  {
+    "university": "Shri Ramasamy Memorial University Online",
+    "slug": "shri-ramasamy-memorial-university-online",
+    "enrollments": 500
+  }
+]
