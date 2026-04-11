@@ -242,7 +242,7 @@ const nextConfig = {
 
       // Old SEO canonical URLs (/online-mba/jain-university) → program pages
       { source: '/online-mba/:id',             destination: '/programs/mba',  permanent: true },
-      { source: '/online-mca/:id',             destination: '/programs/mca',  permanent: true },
+      // NOTE: /online-mca/:id intentionally removed — /online-mca/[slug] is a real page (MCA blog posts)
       { source: '/online-bba/:id',             destination: '/programs/bba',  permanent: true },
       { source: '/online-bca/:id',             destination: '/programs/bca',  permanent: true },
       { source: '/online-mcom/:id',            destination: '/programs/mcom', permanent: true },

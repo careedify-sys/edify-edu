@@ -17,8 +17,6 @@ import type { University, Program } from '@/lib/data'
 import EnquiryModal from '@/components/EnquiryModal'
 import { clsx } from 'clsx'
 
-const PROGRAM: Program = 'MBA'
-
 // Universities that have actual MBA syllabus data in MASTER_SYLLABUS
 const MBA_UNIS_WITH_DATA = [
   { id: 'amity-university-online', name: 'Amity University Online' },
@@ -50,10 +48,49 @@ const MBA_UNIS_WITH_DATA = [
   { id: 'arka-jain-university-online', name: 'ARKA JAIN University Online' },
 ]
 
+// Universities that have actual MCA syllabus data in MASTER_SYLLABUS
+const MCA_UNIS_WITH_DATA = [
+  { id: 'amity-university-online', name: 'Amity University Online' },
+  { id: 'chandigarh-university-online', name: 'Chandigarh University Online' },
+  { id: 'jain-university-online', name: 'JAIN Online' },
+  { id: 'lovely-professional-university-online', name: 'Lovely Professional University Online' },
+  { id: 'manipal-university-jaipur-online', name: 'Manipal University Jaipur (MUJ) Online' },
+  { id: 'manipal-academy-higher-education-online', name: 'Manipal Academy of Higher Education (MAHE) Online' },
+  { id: 'upes-online', name: 'UPES Online' },
+  { id: 'shoolini-university-online', name: 'Shoolini University Online' },
+  { id: 'bharati-vidyapeeth-university-online', name: 'Bharati Vidyapeeth Online' },
+  { id: 'amrita-vishwa-vidyapeetham-online', name: 'Amrita Vishwa Vidyapeetham Online' },
+  { id: 'galgotias-university-online', name: 'Galgotias University Online' },
+  { id: 'sharda-university-online', name: 'Sharda University Online' },
+  { id: 'sikkim-manipal-university-online', name: 'Sikkim Manipal University Online' },
+  { id: 'kurukshetra-university-online', name: 'Kurukshetra University Online' },
+  { id: 'uttaranchal-university-online', name: 'Uttaranchal University Online' },
+  { id: 'vignan-university-online', name: "Vignan's Foundation Online" },
+  { id: 'dayananda-sagar-university-online', name: 'Dayananda Sagar University Online' },
+  { id: 'dr-dy-patil-vidyapeeth-online', name: 'Dr. D.Y. Patil Vidyapeeth Online' },
+  { id: 'noida-international-university-online', name: 'Noida International University Online' },
+  { id: 'vit-vellore-online', name: 'VIT Vellore Online' },
+  { id: 'anna-university-online', name: 'Anna University Online' },
+  { id: 'kl-university-online', name: 'KL University Online' },
+  { id: 'andhra-university-online', name: 'Andhra University Online' },
+  { id: 'gla-university-online', name: 'GLA University Online' },
+  { id: 'guru-nanak-dev-university-online', name: 'Guru Nanak Dev University Online' },
+  { id: 'jaipur-national-university-online', name: 'Jaipur National University Online' },
+  { id: 'manav-rachna-online', name: 'Manav Rachna University Online' },
+  { id: 'srm-institute-science-technology-online', name: 'SRM Institute Online' },
+  { id: 'savitribai-phule-pune-university-online', name: 'Savitribai Phule Pune University Online' },
+  { id: 'shanmugha-arts-science-technology-research-online', name: 'SASTRA University Online' },
+  { id: 'parul-university-online', name: 'Parul University Online' },
+  { id: 'graphic-era-university-online', name: 'Graphic Era University Online' },
+  { id: 'assam-don-bosco-university-online', name: 'Assam Don Bosco University Online' },
+  { id: 'christ-university-online', name: 'Christ University Online' },
+  { id: 'vtu-online', name: 'VTU Online' },
+]
+
 const progSlug = (p: Program) => p.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
 
 // ── Standalone Syllabus Comparison Tool ────────────────────────────────────
-function SyllabusComparison() {
+function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
   const [searchA, setSearchA] = useState('')
   const [searchB, setSearchB] = useState('')
   const [uniAId, setUniAId] = useState<string | null>(null)
@@ -63,16 +100,25 @@ function SyllabusComparison() {
   const [showDropA, setShowDropA] = useState(false)
   const [showDropB, setShowDropB] = useState(false)
 
+  // Reset selections when program changes
+  useEffect(() => {
+    setUniAId(null); setUniBId(null)
+    setSearchA(''); setSearchB('')
+    setSpecA(''); setSpecB('')
+  }, [program])
+
+  const uniList = program === 'MCA' ? MCA_UNIS_WITH_DATA : MBA_UNIS_WITH_DATA
+
   const suggestionsA = searchA.length >= 1
-    ? MBA_UNIS_WITH_DATA.filter(u => u.name.toLowerCase().includes(searchA.toLowerCase())).slice(0, 8)
-    : MBA_UNIS_WITH_DATA.slice(0, 8)
+    ? uniList.filter(u => u.name.toLowerCase().includes(searchA.toLowerCase())).slice(0, 8)
+    : uniList.slice(0, 8)
 
   const suggestionsB = searchB.length >= 1
-    ? MBA_UNIS_WITH_DATA.filter(u => u.name.toLowerCase().includes(searchB.toLowerCase())).slice(0, 8)
-    : MBA_UNIS_WITH_DATA.slice(0, 8)
+    ? uniList.filter(u => u.name.toLowerCase().includes(searchB.toLowerCase())).slice(0, 8)
+    : uniList.slice(0, 8)
 
-  const syllabusA = uniAId ? getMasterSyllabus(uniAId, 'MBA') : null
-  const syllabusB = uniBId ? getMasterSyllabus(uniBId, 'MBA') : null
+  const syllabusA = uniAId ? getMasterSyllabus(uniAId, program) : null
+  const syllabusB = uniBId ? getMasterSyllabus(uniBId, program) : null
 
   function getSpecsWithData(syllabus: ReturnType<typeof getMasterSyllabus>) {
     if (!syllabus?.specSyllabus) return []
@@ -121,11 +167,8 @@ function SyllabusComparison() {
         <div className="flex items-start gap-3">
           <span className="text-2xl mt-0.5">📚</span>
           <div className="flex-1 min-w-0">
-            <h2 className="font-display text-lg sm:text-xl font-bold text-navy leading-tight">Compare Syllabus of Any Two MBA Programs</h2>
-            <p className="text-xs text-ink-3 mt-1">Select a university and specialisation on each side to compare semester-wise subjects</p>
-            <p className="text-[10px] text-amber-text font-semibold mt-1.5 bg-amber-light/60 inline-block px-2 py-0.5 rounded-full border border-amber/20">
-              Currently available for Online MBA programs only · More programs coming soon
-            </p>
+            <h2 className="font-display text-lg sm:text-xl font-bold text-navy leading-tight">Compare Syllabus of Any Two Online {program} Programs</h2>
+            <p className="text-xs text-ink-3 mt-1">Select a university on each side to compare semester-wise subjects{program === 'MBA' ? ' and specialisations' : ''}</p>
           </div>
         </div>
       </div>
@@ -292,6 +335,7 @@ function SyllabusComparison() {
 
 function CompareContent() {
   const searchParams = useSearchParams()
+  const [program, setProgram] = useState<'MBA' | 'MCA'>('MBA')
   const [selectedIds, setSelectedIds] = useState<string[]>([])
   const [enquiryOpen, setEnquiryOpen] = useState(false)
   const [enquiryUni, setEnquiryUni] = useState('')
@@ -326,7 +370,7 @@ function CompareContent() {
   const universities = selectedIds
     .map(id => getUniversityById(id))
     .filter((u): u is University => u !== undefined)
-  const available = UNIS_SLIM.filter(u => !selectedIds.includes(u.id) && u.programs?.includes('MBA'))
+  const available = UNIS_SLIM.filter(u => !selectedIds.includes(u.id) && u.programs?.includes(program))
 
   function addUni(id: string) {
     if (selectedIds.length >= 3) return
@@ -345,8 +389,8 @@ function CompareContent() {
       bestNirf: sorted[0],
       cheapest: [...universities].sort((a, b) => a.feeMin - b.feeMin)[0],
       bestSalary: universities.reduce((best, u) => {
-        const salary = u.programDetails?.[PROGRAM]?.avgSalary || ''
-        const bestSalary = best.programDetails?.[PROGRAM]?.avgSalary || ''
+        const salary = u.programDetails?.[program]?.avgSalary || ''
+        const bestSalary = best.programDetails?.[program]?.avgSalary || ''
         const parse = (s: string) => parseInt(s.replace(/[^0-9]/g, '').slice(0, 2)) || 0
         return parse(salary) > parse(bestSalary) ? u : best
       }),
@@ -360,8 +404,8 @@ function CompareContent() {
       {universities.length >= 2 && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
           '@context':'https://schema.org','@type':'Article',
-          headline:`${universities[0]?.name} vs ${universities[1]?.name} Online MBA — Comparison 2026`,
-          description:`Detailed comparison of ${universities[0]?.name} and ${universities[1]?.name} Online MBA — fees, NIRF rank, NAAC grade, specialisations and syllabus.`,
+          headline:`${universities[0]?.name} vs ${universities[1]?.name} Online ${program} — Comparison 2026`,
+          description:`Detailed comparison of ${universities[0]?.name} and ${universities[1]?.name} Online ${program} — fees, NIRF rank, NAAC grade and syllabus.`,
           url:`https://edifyedu.in/compare?a=${universities[0]?.id}&b=${universities[1]?.id}`,
           author:{'@type':'Organization',name:'Edify',url:'https://edifyedu.in'},
           publisher:{'@type':'Organization',name:'Edify',logo:{'@type':'ImageObject',url:'https://edifyedu.in/logo.png'}},
@@ -376,20 +420,28 @@ function CompareContent() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
               <div className="flex items-center gap-2 mb-3">
-                <span className="label-sm text-amber px-2 py-0.5 bg-amber-light rounded-full">Compare MBA Programs</span>
+                <span className="label-sm text-amber px-2 py-0.5 bg-amber-light rounded-full">Compare {program} Programs</span>
                 <span className="text-[11px] text-ink-3 font-medium">Updated for July 2026 Session</span>
               </div>
               <h1 className="font-display text-3xl sm:text-4xl text-navy font-bold mb-3 tracking-tight">
-                Compare Online MBA Universities
+                Compare Online {program} Universities
               </h1>
               <p className="text-sm text-ink-2 max-w-xl">
-                Side-by-side analysis of UGC DEB approved MBA programs. Compare real fees, NIRF rank, specialisations and semester-wise syllabus.
+                Side-by-side analysis of UGC DEB approved {program} programs. Compare real fees, NIRF rank{program === 'MBA' ? ', specialisations' : ''} and semester-wise syllabus.
               </p>
             </div>
 
-            <div className="flex items-center gap-2 px-4 py-2 bg-navy/5 rounded-xl border border-navy/10">
-              <span className="text-[11px] font-bold text-ink-3">Program:</span>
-              <span className="px-3 py-1.5 bg-navy text-white text-xs font-bold rounded-lg">Online MBA</span>
+            <div className="flex items-center gap-1.5 p-1.5 bg-navy/5 rounded-xl border border-navy/10">
+              <span className="text-[11px] font-bold text-ink-3 px-2">Program:</span>
+              {(['MBA', 'MCA'] as const).map(p => (
+                <button
+                  key={p}
+                  onClick={() => { setProgram(p); setSelectedIds(['jain-university-online', 'amity-university-online']) }}
+                  className={`px-4 py-1.5 text-xs font-bold rounded-lg transition-all ${program === p ? 'bg-navy text-white shadow-sm' : 'text-ink-2 hover:bg-navy/10'}`}
+                >
+                  Online {p}
+                </button>
+              ))}
             </div>
           </div>
 
@@ -412,7 +464,7 @@ function CompareContent() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* ── Syllabus Comparator — ALWAYS VISIBLE AT TOP ─────── */}
         <div className="mt-8 mb-8">
-          <SyllabusComparison />
+          <SyllabusComparison program={program} />
         </div>
 
         {universities.length === 0 ? (
@@ -436,7 +488,7 @@ function CompareContent() {
                   </div>
                   <div>
                     <h3 className="font-display text-lg font-bold text-navy">The Edify Verdict</h3>
-                    <p className="text-xs text-ink-3">Based on current rankings and placement data for Online MBA</p>
+                    <p className="text-xs text-ink-3">Based on current rankings and placement data for Online {program}</p>
                   </div>
                 </div>
 
@@ -460,7 +512,7 @@ function CompareContent() {
                       <Briefcase size={10} /> Career Reach
                     </div>
                     <div className="text-navy font-bold text-sm leading-tight mb-1">{verdict.bestSalary.name}</div>
-                    <div className="text-xs text-ink-3 font-semibold">Top Hiring Index for MBA</div>
+                    <div className="text-xs text-ink-3 font-semibold">Top Hiring Index for {program}</div>
                   </div>
                 </div>
               </div>
@@ -474,7 +526,7 @@ function CompareContent() {
                 <div className="grid grid-cols-[180px_repeat(auto-fit,minmax(200px,1fr))] items-stretch">
                   <div className="p-4 flex flex-col justify-center border-r border-border/50 bg-bg/20">
                     <span className="label-sm text-ink-3">Comparing:</span>
-                    <span className="text-[10px] font-bold text-amber">{universities.length} MBA Programs</span>
+                    <span className="text-[10px] font-bold text-amber">{universities.length} {program} Programs</span>
                   </div>
                   {universities.map(u => (
                     <div key={u.id} className="p-4 border-r border-border/50 flex flex-col items-center text-center relative group min-w-[200px]">
@@ -616,7 +668,7 @@ function CompareContent() {
                 unis={universities}
                 fn={u => (
                   <div className="flex flex-col items-center gap-1">
-                    <span className="text-sm font-black text-sage uppercase tracking-tight italic">{u.programDetails[PROGRAM]?.avgSalary || '₹5L - ₹12L'}</span>
+                    <span className="text-sm font-black text-sage uppercase tracking-tight italic">{u.programDetails[program]?.avgSalary || (program === 'MCA' ? '₹4L - ₹10L' : '₹5L - ₹12L')}</span>
                     <TrendingUp size={14} className="text-sage/40" />
                   </div>
                 )}
@@ -626,7 +678,7 @@ function CompareContent() {
                 unis={universities}
                 fn={u => (
                   <div className="flex flex-wrap justify-center gap-1">
-                    {u.programDetails[PROGRAM]?.topCompanies.slice(0, 4).map(c => (
+                    {u.programDetails[program]?.topCompanies.slice(0, 4).map(c => (
                       <span key={c} className="px-2 py-0.5 rounded bg-bg border border-border/40 text-[9px] font-bold text-ink-3">{c}</span>
                     ))}
                   </div>
@@ -655,12 +707,12 @@ function CompareContent() {
                 unis={universities}
                 fn={u => (
                   <div className="flex flex-col items-center gap-2">
-                    <span className="text-lg font-black text-amber italic">{u.programDetails[PROGRAM]?.specs.length || 0}</span>
+                    <span className="text-lg font-black text-amber italic">{u.programDetails[program]?.specs.length || 0}</span>
                     <div className="flex flex-wrap justify-center gap-1 max-w-[160px]">
-                      {u.programDetails[PROGRAM]?.specs.slice(0, 3).map(s => (
+                      {u.programDetails[program]?.specs.slice(0, 3).map(s => (
                         <span key={s} className="text-[9px] font-bold text-ink-3 text-center leading-tight line-clamp-1">{s}</span>
                       ))}
-                      {(u.programDetails[PROGRAM]?.specs.length || 0) > 3 && <span className="text-[9px] text-amber font-bold">+{u.programDetails[PROGRAM]!.specs.length - 3} more</span>}
+                      {(u.programDetails[program]?.specs.length || 0) > 3 && <span className="text-[9px] text-amber font-bold">+{(u.programDetails[program]?.specs.length || 0) - 3} more</span>}
                     </div>
                   </div>
                 )}
@@ -680,7 +732,7 @@ function CompareContent() {
                       Enquire Now
                     </button>
                     <Link
-                      href={`/universities/${u.id}/${progSlug(PROGRAM)}`}
+                      href={`/universities/${u.id}/${progSlug(program)}`}
                       className="text-[10px] font-black text-center text-amber hover:text-amber-bright uppercase tracking-tighter"
                     >
                       View Detailed Analysis →
@@ -714,12 +766,17 @@ function CompareContent() {
               <div className="p-8 bg-white border border-border rounded-3xl relative">
                 <h3 className="font-display text-xl font-bold text-navy mb-4">Frequently Compared</h3>
                 <div className="space-y-4">
-                  {[
+                  {(program === 'MCA' ? [
+                    "Amity Online MCA vs Jain Online MCA",
+                    "LPU Online MCA vs Chandigarh University MCA",
+                    "Manipal MUJ MCA vs Sikkim Manipal MCA",
+                    "UPES Online MCA vs Galgotias MCA"
+                  ] : [
                     "Amity Online vs Manipal Online",
                     "Jain Online vs Chandigarh University",
                     "LPU Online vs NMIMS Online",
                     "Sikkim Manipal vs Amrita AHEAD"
-                  ].map(c => (
+                  ]).map(c => (
                     <div key={c} className="flex items-center justify-between p-3 rounded-xl border border-border-light hover:border-amber hover:bg-amber-light/10 transition-all cursor-pointer group">
                       <span className="text-xs font-bold text-ink-2 group-hover:text-navy">{c}</span>
                       <ChevronRight size={14} className="text-ink-3 group-hover:text-amber" />
