@@ -8,7 +8,8 @@ import {
   CheckCircle, BarChart2, Plus, Minus,
   TrendingUp, Briefcase, Lock, Award,
   Wallet, BookOpen, ChevronRight, ChevronDown, ChevronUp,
-  Info, ShieldCheck, Zap, Search, X, Star, GraduationCap, Users
+  Info, ShieldCheck, Zap, Search, X, Star, GraduationCap, Users,
+  Calendar, ArrowUp
 } from 'lucide-react'
 import { UNIS_SLIM, formatFeeSlim as formatFee } from '@/lib/data-slim'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
@@ -161,20 +162,26 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
   const commonSem1 = syllabusA?.sem1 || syllabusB?.sem1
 
   return (
-    <div className="rounded-2xl overflow-hidden border border-amber/30 shadow-lg bg-white">
-      {/* Header */}
-      <div className="px-5 sm:px-8 py-5 bg-gradient-to-r from-amber/10 to-amber/5 border-b border-amber/20">
-        <div className="flex items-start gap-3">
-          <div className="w-10 h-10 rounded-xl bg-amber flex items-center justify-center text-white shadow-md shadow-amber/30 flex-shrink-0 mt-0.5">
-            <BookOpen size={18} />
+    <div className="rounded-3xl overflow-hidden border-2 border-amber/40 shadow-2xl bg-white">
+      {/* Hero Header */}
+      <div
+        className="px-6 sm:px-10 py-8"
+        style={{ background: 'linear-gradient(135deg, #1e3a5f 0%, #0d2240 60%, #1a1a2e 100%)' }}
+      >
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div
+            className="w-14 h-14 rounded-2xl flex items-center justify-center shadow-xl flex-shrink-0"
+            style={{ background: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)' }}
+          >
+            <BookOpen size={24} className="text-white" />
           </div>
           <div className="flex-1 min-w-0">
-            <h2 className="font-display text-lg sm:text-xl font-bold text-navy leading-tight">
-              Compare Syllabus of Any Two Online {program} Programs
+            <h2 className="font-display text-2xl sm:text-3xl font-bold text-white leading-tight">
+              Compare Syllabus Side by Side
             </h2>
-            <p className="text-xs text-ink-3 mt-1">
-              Select a university on each side to compare semester-wise subjects
-              {program === 'MBA' ? ' and specialisations' : ''}
+            <p className="text-white/60 text-sm mt-1.5 leading-relaxed">
+              Select any two universities to compare semester-wise subjects
+              {program === 'MBA' ? ' and specialisations' : ''} — instantly see what each teaches
             </p>
           </div>
         </div>
@@ -201,11 +208,15 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
           const accentColor = isA ? '#1e3a5f' : '#d97706'
 
           return (
-            <div key={side} className="p-4 sm:p-6 flex flex-col gap-3">
+            <div
+              key={side}
+              className="p-5 sm:p-7 flex flex-col gap-4"
+              style={{ borderTop: `3px solid ${accentColor}` }}
+            >
               {/* University label pill */}
               <div className="flex items-center gap-2">
                 <span
-                  className="inline-flex items-center justify-center w-6 h-6 rounded-full text-white text-[10px] font-black"
+                  className="inline-flex items-center justify-center w-7 h-7 rounded-full text-white text-xs font-black shadow-md"
                   style={{ background: accentColor }}
                 >
                   {side}
@@ -215,7 +226,7 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
 
               {/* Search input */}
               <div className="relative">
-                <div className="flex items-center gap-2 bg-bg border border-border rounded-xl px-3 py-2.5 focus-within:border-amber focus-within:bg-white shadow-sm transition-all">
+                <div className="flex items-center gap-2 bg-bg border-2 border-border rounded-xl px-3 py-3 focus-within:border-amber focus-within:bg-white shadow-sm transition-all">
                   <Search size={14} className="text-ink-3 flex-shrink-0" />
                   <input
                     type="text"
@@ -269,7 +280,7 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
                     <select
                       value={spec}
                       onChange={e => setSpec(e.target.value)}
-                      className="w-full text-xs font-semibold rounded-xl border border-border bg-bg px-3 py-2.5 text-ink focus:outline-none focus:border-amber shadow-sm transition-all"
+                      className="w-full text-xs font-semibold rounded-xl border-2 border-border bg-bg px-3 py-3 text-ink focus:outline-none focus:border-amber shadow-sm transition-all"
                     >
                       <option value="">— Select Specialisation —</option>
                       {specs.map(s => <option key={s} value={s}>{s}</option>)}
@@ -340,7 +351,7 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
 
       {/* Legend */}
       {(specA || specB) && (
-        <div className="flex items-center gap-4 px-5 pb-4 pt-2 border-t border-amber/10 bg-amber/5">
+        <div className="flex items-center gap-4 px-6 pb-5 pt-3 border-t border-amber/10 bg-amber/5">
           <span className="flex items-center gap-1.5 text-[10px] text-ink-3">
             <span style={{ width: 10, height: 10, borderRadius: 2, background: 'rgba(34,197,94,0.2)', border: '1.5px solid #22C55E', display: 'inline-block' }} />
             Common subject
@@ -351,6 +362,216 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
           </span>
         </div>
       )}
+    </div>
+  )
+}
+
+// ── NIRF Rank Badge ──────────────────────────────────────────────────────────
+function NirfBadge({ rank }: { rank?: number | string }) {
+  if (!rank) return <span className="text-ink-3 font-bold text-sm">—</span>
+  return (
+    <div className="flex flex-col items-center gap-1">
+      <div
+        className="w-16 h-16 rounded-full flex items-center justify-center shadow-lg border-4"
+        style={{
+          background: 'linear-gradient(135deg, #1e3a5f 0%, #2d5282 100%)',
+          borderColor: '#f59e0b',
+          boxShadow: '0 4px 16px rgba(30,58,95,0.3)',
+        }}
+      >
+        <div className="text-center leading-none">
+          <div className="text-[9px] font-bold text-amber/80 uppercase tracking-wider">#</div>
+          <div className="text-xl font-black text-white leading-none">{rank}</div>
+        </div>
+      </div>
+      <span className="text-[9px] text-ink-3 uppercase font-bold tracking-wider">NIRF Rank</span>
+    </div>
+  )
+}
+
+// ── NAAC Grade Badge ─────────────────────────────────────────────────────────
+function NaacBadge({ grade }: { grade?: string }) {
+  if (!grade) return <span className="text-ink-3 font-bold text-sm">—</span>
+  const styles =
+    grade.includes('A++') ? { bg: '#14532d', text: '#fff', border: '#166534', glow: '#22c55e' }
+    : grade.includes('A+') ? { bg: '#92400e', text: '#fff', border: '#d97706', glow: '#f59e0b' }
+    : grade.includes('A') ? { bg: '#1e40af', text: '#fff', border: '#3b82f6', glow: '#60a5fa' }
+    : { bg: '#374151', text: '#fff', border: '#6b7280', glow: '#9ca3af' }
+  return (
+    <div
+      className="inline-flex items-center gap-2 px-4 py-2 rounded-full font-black text-sm shadow-md"
+      style={{
+        background: styles.bg,
+        color: styles.text,
+        border: `2px solid ${styles.border}`,
+        boxShadow: `0 0 12px ${styles.glow}40`,
+      }}
+    >
+      <ShieldCheck size={14} />
+      NAAC {grade}
+    </div>
+  )
+}
+
+// ── Fee Range Bar ────────────────────────────────────────────────────────────
+function FeeRangeBar({ feeMin, feeMax, colIdx }: { feeMin: number; feeMax: number; colIdx: number }) {
+  const colors = ['#1e3a5f', '#d97706', '#16a34a']
+  const color = colors[colIdx] || colors[0]
+  const maxPossible = 300000
+  const minPct = Math.min((feeMin / maxPossible) * 100, 100)
+  const maxPct = Math.min((feeMax / maxPossible) * 100, 100)
+  return (
+    <div className="flex flex-col items-center gap-2 w-full max-w-[180px]">
+      <div className="flex items-end justify-between w-full gap-1">
+        <div className="flex flex-col items-center">
+          <span className="text-[10px] text-ink-3 font-bold uppercase tracking-wide">Min</span>
+          <span className="text-sm font-black" style={{ color }}>{formatFee(feeMin)}</span>
+        </div>
+        <span className="text-ink-3 text-xs font-bold mb-0.5">—</span>
+        <div className="flex flex-col items-center">
+          <span className="text-[10px] text-ink-3 font-bold uppercase tracking-wide">Max</span>
+          <span className="text-sm font-black" style={{ color }}>{formatFee(feeMax)}</span>
+        </div>
+      </div>
+      <div className="relative w-full h-3 bg-bg rounded-full overflow-hidden border border-border/50">
+        <div
+          className="absolute top-0 bottom-0 rounded-full"
+          style={{
+            left: `${minPct}%`,
+            width: `${maxPct - minPct}%`,
+            background: `linear-gradient(90deg, ${color}80, ${color})`,
+            minWidth: 12,
+          }}
+        />
+      </div>
+      <span className="text-[9px] text-ink-3 font-medium">Total Program Fee</span>
+    </div>
+  )
+}
+
+// ── EMI Display ──────────────────────────────────────────────────────────────
+function EmiDisplay({ emiFrom }: { emiFrom: number }) {
+  return (
+    <div className="flex flex-col items-center gap-1.5">
+      <div className="flex items-center gap-2 px-4 py-2.5 rounded-xl border-2 border-amber/30 bg-amber/5">
+        <Calendar size={14} className="text-amber flex-shrink-0" />
+        <span className="text-base font-black text-amber-text">
+          &#x20B9;{emiFrom.toLocaleString()}
+        </span>
+        <span className="text-[10px] font-bold text-ink-3">/mo</span>
+      </div>
+      <span className="text-[9px] text-ink-3 font-medium uppercase tracking-wider">No-Cost EMI Available</span>
+    </div>
+  )
+}
+
+// ── Approval Badges ──────────────────────────────────────────────────────────
+function ApprovalBadges({ approvals }: { approvals: string[] }) {
+  const checks = ['UGC DEB', 'AICTE', 'WES', 'QS']
+  return (
+    <div className="flex flex-wrap justify-center gap-2">
+      {checks.map(ap => {
+        const has = approvals.some(a => a.toLowerCase().includes(ap.toLowerCase()))
+        return (
+          <div
+            key={ap}
+            className={clsx(
+              "flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[10px] font-black border-2 transition-all",
+              has
+                ? "bg-white border-green-300 text-green-700 shadow-sm shadow-green-100"
+                : "bg-bg border-border/30 text-ink-3 line-through opacity-35"
+            )}
+          >
+            {has && <CheckCircle size={10} className="text-green-500 flex-shrink-0" />}
+            {ap}
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
+// ── Salary Range Display ─────────────────────────────────────────────────────
+function SalaryDisplay({ salary, colIdx }: { salary: string; colIdx: number }) {
+  const colors = ['#1e3a5f', '#d97706', '#16a34a']
+  const color = colors[colIdx] || colors[0]
+  const display = salary || '₹4L – ₹10L'
+  return (
+    <div className="flex flex-col items-center gap-2 w-full max-w-[180px]">
+      <div className="flex items-center gap-2">
+        <ArrowUp size={16} className="text-green-500" />
+        <span className="text-lg font-black" style={{ color }}>{display}</span>
+      </div>
+      <div className="relative w-full h-2.5 bg-bg rounded-full overflow-hidden border border-border/40">
+        <div
+          className="absolute inset-y-0 left-0 rounded-full"
+          style={{
+            width: '70%',
+            background: `linear-gradient(90deg, ${color}40, ${color})`,
+          }}
+        />
+      </div>
+      <span className="text-[9px] text-ink-3 font-medium uppercase tracking-wider">Avg CTC Post Graduation</span>
+    </div>
+  )
+}
+
+// ── Company Pills ────────────────────────────────────────────────────────────
+const PILL_COLORS = [
+  { bg: '#eff6ff', text: '#1d4ed8' },
+  { bg: '#fef3c7', text: '#92400e' },
+  { bg: '#f0fdf4', text: '#15803d' },
+  { bg: '#faf5ff', text: '#6b21a8' },
+  { bg: '#fff1f2', text: '#be123c' },
+]
+function CompanyPills({ companies }: { companies: string[] }) {
+  if (!companies || companies.length === 0) return <span className="text-ink-3 text-xs">—</span>
+  return (
+    <div className="flex flex-wrap justify-center gap-1.5 max-w-[200px]">
+      {companies.slice(0, 6).map((c, i) => (
+        <span
+          key={c}
+          className="px-2.5 py-1 rounded-lg text-[10px] font-bold"
+          style={{ background: PILL_COLORS[i % PILL_COLORS.length].bg, color: PILL_COLORS[i % PILL_COLORS.length].text }}
+        >
+          {c}
+        </span>
+      ))}
+    </div>
+  )
+}
+
+// ── Specialisation Display ───────────────────────────────────────────────────
+function SpecDisplay({ specs, colIdx }: { specs: string[]; colIdx: number }) {
+  const colors = ['#1e3a5f', '#d97706', '#16a34a']
+  const color = colors[colIdx] || colors[0]
+  const pillBg = colIdx === 0 ? '#eff6ff' : colIdx === 1 ? '#fef3c7' : '#f0fdf4'
+  const pillText = color
+  return (
+    <div className="flex flex-col items-center gap-3 w-full max-w-[200px]">
+      <div
+        className="w-14 h-14 rounded-2xl flex items-center justify-center font-black text-2xl text-white shadow-lg"
+        style={{ background: `linear-gradient(135deg, ${color} 0%, ${color}cc 100%)` }}
+      >
+        {specs.length}
+      </div>
+      <div className="flex gap-1 overflow-x-auto pb-1 scrollbar-none max-w-full">
+        {specs.slice(0, 4).map(s => (
+          <span
+            key={s}
+            className="flex-shrink-0 px-2 py-1 rounded-lg text-[9px] font-bold whitespace-nowrap"
+            style={{ background: pillBg, color: pillText }}
+          >
+            {s}
+          </span>
+        ))}
+        {specs.length > 4 && (
+          <span className="flex-shrink-0 px-2 py-1 rounded-lg text-[9px] font-bold text-amber-text bg-amber/10">
+            +{specs.length - 4} more
+          </span>
+        )}
+      </div>
+      <span className="text-[9px] text-ink-3 font-medium uppercase tracking-wider">Specialisations</span>
     </div>
   )
 }
@@ -396,7 +617,7 @@ function CompareContent() {
     .filter((u): u is University => u !== undefined)
   const available = UNIS_SLIM.filter(u => !selectedIds.includes(u.id) && u.programs?.includes(program))
   const filteredAvailable = uniSearch.length >= 1
-    ? available.filter(u => (u.name || '').toLowerCase().includes(uniSearch.toLowerCase()) || (u.abbr || '').toLowerCase().includes(uniSearch.toLowerCase()))
+    ? available.filter(u => (u.name || '').toLowerCase().includes(uniSearch.toLowerCase()))
     : available
 
   function addUni(id: string) {
@@ -520,7 +741,7 @@ function CompareContent() {
             {/* Currently comparing */}
             <div className="flex items-center gap-2 flex-wrap">
               <span className="text-[11px] font-bold text-ink-3 uppercase tracking-wider whitespace-nowrap">Comparing:</span>
-              {universities.map(u => (
+              {universities.map((u, idx) => (
                 <div
                   key={u.id}
                   className="flex items-center gap-2 pl-2 pr-1 py-1 rounded-xl bg-navy/5 border border-navy/15 group"
@@ -529,10 +750,15 @@ function CompareContent() {
                     {getUniversityLogo(u.id) ? (
                       <img src={getUniversityLogo(u.id)!} alt={u.name} className="w-6 h-6 object-contain" />
                     ) : (
-                      <span className="text-navy font-black text-[10px]">{u.abbr?.slice(0, 3)}</span>
+                      <span
+                        className="text-white font-black text-[9px] w-6 h-6 rounded-full flex items-center justify-center"
+                        style={{ background: idx === 0 ? '#1e3a5f' : idx === 1 ? '#d97706' : '#16a34a' }}
+                      >
+                        {u.name.slice(0, 2).toUpperCase()}
+                      </span>
                     )}
                   </div>
-                  <span className="text-[11px] font-bold text-navy max-w-[120px] truncate">{u.abbr || u.name.split(' ')[0]}</span>
+                  <span className="text-[11px] font-bold text-navy max-w-[140px] truncate" title={u.name}>{u.name}</span>
                   <button
                     onClick={() => removeUni(u.id)}
                     className="p-1 rounded-lg text-ink-3 hover:bg-red-50 hover:text-red-500 transition-colors opacity-60 group-hover:opacity-100"
@@ -588,12 +814,12 @@ function CompareContent() {
                     {getUniversityLogo(u.id) ? (
                       <img src={getUniversityLogo(u.id)!} alt={u.name} className="w-6 h-6 object-contain" />
                     ) : (
-                      <span className="text-navy font-black text-[9px]">{u.abbr?.slice(0, 3) || u.name.slice(0, 3)}</span>
+                      <span className="text-navy font-black text-[9px]">{u.name.slice(0, 3).toUpperCase()}</span>
                     )}
                   </div>
                   <div className="flex flex-col items-start min-w-0">
-                    <span className="text-[11px] font-bold text-navy group-hover:text-amber-text transition-colors whitespace-nowrap max-w-[100px] truncate">
-                      {u.abbr || u.name.split(' ')[0]}
+                    <span className="text-[11px] font-bold text-navy group-hover:text-amber-text transition-colors max-w-[120px] truncate" title={u.name}>
+                      {u.name}
                     </span>
                     {u.feeMin && (
                       <span className="text-[9px] text-ink-3 font-medium whitespace-nowrap">
@@ -667,6 +893,21 @@ function CompareContent() {
               </div>
             )}
 
+            {/* ── SYLLABUS COMPARATOR — HERO FEATURE, ABOVE TABLE ──────── */}
+            <div className="mt-8 mb-10">
+              {/* Featured Tool amber badge */}
+              <div className="flex items-center gap-3 mb-4">
+                <span
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-black uppercase tracking-wider shadow-sm"
+                  style={{ background: '#f59e0b', color: '#fff', boxShadow: '0 2px 8px rgba(245,158,11,0.35)' }}
+                >
+                  <Star size={11} fill="currentColor" /> Featured Tool
+                </span>
+                <span className="text-[11px] text-ink-3 font-medium">The most powerful feature on this page</span>
+              </div>
+              <SyllabusComparison program={program} />
+            </div>
+
             {/* Comparison Grid */}
             <div className="bg-white border border-border rounded-2xl shadow-xl overflow-hidden overflow-x-auto">
 
@@ -684,13 +925,12 @@ function CompareContent() {
                     <span className="text-xs font-black text-amber mt-0.5">{universities.length} Online {program}</span>
                   </div>
                   {universities.map((u, idx) => {
-                    const naacColor = u.naac?.includes('A++') ? '#166534' : u.naac?.includes('A+') ? '#92400E' : '#374151'
-                    const naacBg = u.naac?.includes('A++') ? '#dcfce7' : u.naac?.includes('A+') ? '#fef3c7' : '#f3f4f6'
+                    const colColors = ['#1e3a5f', '#d97706', '#16a34a']
                     return (
                       <div
                         key={u.id}
                         className="p-4 border-r border-border/50 flex flex-col items-center text-center relative group min-w-[220px]"
-                        style={{ borderTop: `3px solid ${idx === 0 ? '#1e3a5f' : idx === 1 ? '#d97706' : '#22c55e'}` }}
+                        style={{ borderTop: `3px solid ${colColors[idx]}` }}
                       >
                         <button
                           onClick={() => removeUni(u.id)}
@@ -706,19 +946,16 @@ function CompareContent() {
                               style={{ maxHeight: '100%', maxWidth: '140px', objectFit: 'contain' }}
                             />
                           ) : (
-                            <div className="text-navy font-black text-xl italic">{u.abbr}</div>
+                            <div
+                              className="w-12 h-12 rounded-xl flex items-center justify-center text-white font-black text-base"
+                              style={{ background: colColors[idx] }}
+                            >
+                              {u.name.slice(0, 2).toUpperCase()}
+                            </div>
                           )}
                         </div>
                         <div className="text-[11px] font-black text-navy leading-tight line-clamp-2 px-2 uppercase tracking-tight mb-2">{u.name}</div>
-                        {u.naac && (
-                          <span
-                            className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-black"
-                            style={{ background: naacBg, color: naacColor }}
-                          >
-                            <ShieldCheck size={9} />
-                            NAAC {u.naac}
-                          </span>
-                        )}
+                        <NaacBadge grade={u.naac} />
                       </div>
                     )
                   })}
@@ -737,49 +974,19 @@ function CompareContent() {
                 label="NIRF Ranking"
                 icon={<BarChart2 size={12} className="text-amber" />}
                 unis={universities}
-                fn={u => (
-                  <div className="flex flex-col items-center">
-                    <span className="text-2xl font-black text-navy italic">#{u.nirf || '—'}</span>
-                    <span className="text-[9px] text-ink-3 uppercase font-bold tracking-wider">National Rank</span>
-                  </div>
-                )}
+                fn={(u, idx) => <NirfBadge rank={u.nirf} />}
               />
               <ComparisonRow
                 label="NAAC Grade"
                 icon={<ShieldCheck size={12} className="text-sage" />}
                 unis={universities}
-                fn={u => (
-                  <div className={clsx(
-                    "px-4 py-1.5 rounded-full font-black text-sm border",
-                    u.naac.includes('A++') ? "bg-sage-light text-sage border-sage/20" :
-                    u.naac.includes('A+') ? "bg-amber-light text-amber-text border-amber/20" :
-                    "bg-bg text-ink-2 border-border"
-                  )}>
-                    {u.naac || '—'}
-                  </div>
-                )}
+                fn={(u, idx) => <NaacBadge grade={u.naac} />}
               />
               <ComparisonRow
                 label="Approvals"
                 icon={<CheckCircle size={12} className="text-blue" />}
                 unis={universities}
-                fn={u => (
-                  <div className="flex flex-wrap justify-center gap-1.5">
-                    {['UGC DEB', 'AICTE', 'WES', 'QS'].map(ap => {
-                      const has = u.approvals.some(a => a.toLowerCase().includes(ap.toLowerCase()))
-                      return (
-                        <div key={ap} className={clsx(
-                          "px-2 py-0.5 rounded-md text-[9px] font-bold border transition-all",
-                          has
-                            ? "bg-white border-sage/30 text-sage shadow-sm"
-                            : "bg-bg border-border text-ink-3 opacity-40"
-                        )}>
-                          {ap}
-                        </div>
-                      )
-                    })}
-                  </div>
-                )}
+                fn={(u, idx) => <ApprovalBadges approvals={u.approvals} />}
               />
 
               {/* ── SECTION: FEE STRUCTURE */}
@@ -794,22 +1001,14 @@ function CompareContent() {
               <ComparisonRow
                 label="Course Fees"
                 unis={universities}
-                fn={u => (
-                  <div className="flex flex-col items-center">
-                    <span className="text-base font-black text-navy">{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</span>
-                    <span className="text-[10px] text-ink-3 font-medium mt-0.5">Total Online Program Fee</span>
-                  </div>
+                fn={(u, idx) => (
+                  <FeeRangeBar feeMin={u.feeMin} feeMax={u.feeMax} colIdx={idx} />
                 )}
               />
               <ComparisonRow
                 label="EMI Starting"
                 unis={universities}
-                fn={u => (
-                  <div className="flex items-center gap-1.5 px-3 py-1.5 bg-amber-light rounded-xl border border-amber/20">
-                    <span className="text-xs font-black text-amber-text italic">₹{u.emiFrom.toLocaleString()}/mo</span>
-                    <ChevronRight size={10} className="text-amber" />
-                  </div>
-                )}
+                fn={(u, idx) => <EmiDisplay emiFrom={u.emiFrom} />}
               />
 
               {/* Scholarship Row */}
@@ -848,24 +1047,18 @@ function CompareContent() {
               <ComparisonRow
                 label="Avg Salary"
                 unis={universities}
-                fn={u => (
-                  <div className="flex flex-col items-center gap-1">
-                    <span className="text-sm font-black text-sage uppercase tracking-tight italic">
-                      {u.programDetails[program]?.avgSalary || (program === 'MCA' ? '₹4L - ₹10L' : '₹5L - ₹12L')}
-                    </span>
-                    <TrendingUp size={14} className="text-sage/40" />
-                  </div>
+                fn={(u, idx) => (
+                  <SalaryDisplay
+                    salary={u.programDetails[program]?.avgSalary || (program === 'MCA' ? '₹4L – ₹10L' : '₹5L – ₹12L')}
+                    colIdx={idx}
+                  />
                 )}
               />
               <ComparisonRow
                 label="Top Hiring Partners"
                 unis={universities}
-                fn={u => (
-                  <div className="flex flex-wrap justify-center gap-1">
-                    {u.programDetails[program]?.topCompanies.slice(0, 4).map(c => (
-                      <span key={c} className="px-2 py-0.5 rounded bg-bg border border-border/40 text-[9px] font-bold text-ink-3">{c}</span>
-                    ))}
-                  </div>
+                fn={(u, idx) => (
+                  <CompanyPills companies={u.programDetails[program]?.topCompanies || []} />
                 )}
               />
               <ComparisonRow
@@ -891,18 +1084,11 @@ function CompareContent() {
               <ComparisonRow
                 label="Specialisations"
                 unis={universities}
-                fn={u => (
-                  <div className="flex flex-col items-center gap-2">
-                    <span className="text-2xl font-black text-amber italic">{u.programDetails[program]?.specs.length || 0}</span>
-                    <div className="flex flex-wrap justify-center gap-1 max-w-[160px]">
-                      {u.programDetails[program]?.specs.slice(0, 3).map(s => (
-                        <span key={s} className="text-[9px] font-bold text-ink-3 text-center leading-tight line-clamp-1">{s}</span>
-                      ))}
-                      {(u.programDetails[program]?.specs.length || 0) > 3 && (
-                        <span className="text-[9px] text-amber font-bold">+{(u.programDetails[program]?.specs.length || 0) - 3} more</span>
-                      )}
-                    </div>
-                  </div>
+                fn={(u, idx) => (
+                  <SpecDisplay
+                    specs={u.programDetails[program]?.specs || []}
+                    colIdx={idx}
+                  />
                 )}
               />
 
@@ -934,42 +1120,6 @@ function CompareContent() {
                   </div>
                 ))}
               </div>
-            </div>
-
-            {/* ── SYLLABUS COMPARATOR — COLLAPSIBLE, BELOW TABLE ─────────── */}
-            <div className="mt-8">
-              <button
-                onClick={() => setSyllabusOpen(prev => !prev)}
-                className="w-full flex items-center justify-between px-6 py-4 bg-white border border-border rounded-2xl shadow-sm hover:shadow-md hover:border-amber/30 transition-all group"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-xl bg-amber/10 flex items-center justify-center group-hover:bg-amber/20 transition-colors">
-                    <BookOpen size={16} className="text-amber" />
-                  </div>
-                  <div className="text-left">
-                    <div className="text-sm font-black text-navy">Compare Syllabus Subjects</div>
-                    <div className="text-[11px] text-ink-3 font-medium">Semester-wise subject breakdown for any two {program} universities</div>
-                  </div>
-                </div>
-                <div className={clsx(
-                  "flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all",
-                  syllabusOpen
-                    ? "bg-navy/5 text-navy"
-                    : "bg-amber text-white shadow-sm shadow-amber/30"
-                )}>
-                  {syllabusOpen ? (
-                    <><ChevronUp size={14} /> Collapse</>
-                  ) : (
-                    <><ChevronDown size={14} /> Compare Syllabus</>
-                  )}
-                </div>
-              </button>
-
-              {syllabusOpen && (
-                <div className="mt-4">
-                  <SyllabusComparison program={program} />
-                </div>
-              )}
             </div>
 
             {/* ── BOTTOM PROOF / CTA SECTION ──────────────────────────────── */}
@@ -1079,7 +1229,7 @@ function SectionDivider({
 function ComparisonRow({ label, unis, fn, icon = null }: {
   label: string,
   unis: University[],
-  fn: (u: University) => React.ReactNode,
+  fn: (u: University, idx: number) => React.ReactNode,
   icon?: React.ReactNode
 }) {
   return (
@@ -1098,8 +1248,9 @@ function ComparisonRow({ label, unis, fn, icon = null }: {
             "p-4 py-6 border-l border-border/40 flex flex-col items-center justify-center text-center",
             idx % 2 === 0 ? "bg-white" : "bg-bg/20"
           )}
+          style={{ borderTop: `2px solid ${idx === 0 ? '#1e3a5f20' : idx === 1 ? '#d9770620' : '#16a34a20'}` }}
         >
-          {fn(u)}
+          {fn(u, idx)}
         </div>
       ))}
     </div>
