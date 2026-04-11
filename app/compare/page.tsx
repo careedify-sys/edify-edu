@@ -7,8 +7,8 @@ import Link from 'next/link'
 import {
   CheckCircle, BarChart2, Plus, Minus,
   TrendingUp, Briefcase, Lock, Award,
-  Wallet, BookOpen, ChevronRight,
-  Info, ShieldCheck, Zap, Search, X
+  Wallet, BookOpen, ChevronRight, ChevronDown, ChevronUp,
+  Info, ShieldCheck, Zap, Search, X, Star, GraduationCap, Users
 } from 'lucide-react'
 import { UNIS_SLIM, formatFeeSlim as formatFee } from '@/lib/data-slim'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
@@ -161,14 +161,21 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
   const commonSem1 = syllabusA?.sem1 || syllabusB?.sem1
 
   return (
-    <div className="rounded-2xl overflow-hidden border border-amber/30 shadow-lg" style={{ background: 'linear-gradient(135deg, #FFFBEB 0%, #FFF7E6 100%)' }}>
+    <div className="rounded-2xl overflow-hidden border border-amber/30 shadow-lg bg-white">
       {/* Header */}
-      <div className="px-5 sm:px-8 py-5 border-b border-amber/20">
+      <div className="px-5 sm:px-8 py-5 bg-gradient-to-r from-amber/10 to-amber/5 border-b border-amber/20">
         <div className="flex items-start gap-3">
-          <span className="text-2xl mt-0.5">📚</span>
+          <div className="w-10 h-10 rounded-xl bg-amber flex items-center justify-center text-white shadow-md shadow-amber/30 flex-shrink-0 mt-0.5">
+            <BookOpen size={18} />
+          </div>
           <div className="flex-1 min-w-0">
-            <h2 className="font-display text-lg sm:text-xl font-bold text-navy leading-tight">Compare Syllabus of Any Two Online {program} Programs</h2>
-            <p className="text-xs text-ink-3 mt-1">Select a university on each side to compare semester-wise subjects{program === 'MBA' ? ' and specialisations' : ''}</p>
+            <h2 className="font-display text-lg sm:text-xl font-bold text-navy leading-tight">
+              Compare Syllabus of Any Two Online {program} Programs
+            </h2>
+            <p className="text-xs text-ink-3 mt-1">
+              Select a university on each side to compare semester-wise subjects
+              {program === 'MBA' ? ' and specialisations' : ''}
+            </p>
           </div>
         </div>
       </div>
@@ -191,15 +198,24 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
           const otherSet = isA ? setBSet : setASet
           const otherSpec = isA ? specB : specA
           const label = isA ? 'University A' : 'University B'
+          const accentColor = isA ? '#1e3a5f' : '#d97706'
 
           return (
-            <div key={side} className="p-4 sm:p-5 flex flex-col gap-3">
-              {/* University label */}
-              <div className="text-[10px] font-black uppercase tracking-widest text-ink-3">{label}</div>
+            <div key={side} className="p-4 sm:p-6 flex flex-col gap-3">
+              {/* University label pill */}
+              <div className="flex items-center gap-2">
+                <span
+                  className="inline-flex items-center justify-center w-6 h-6 rounded-full text-white text-[10px] font-black"
+                  style={{ background: accentColor }}
+                >
+                  {side}
+                </span>
+                <span className="text-[11px] font-black uppercase tracking-widest text-ink-3">{label}</span>
+              </div>
 
               {/* Search input */}
               <div className="relative">
-                <div className="flex items-center gap-2 bg-white border border-border rounded-xl px-3 py-2 focus-within:border-amber shadow-sm">
+                <div className="flex items-center gap-2 bg-bg border border-border rounded-xl px-3 py-2.5 focus-within:border-amber focus-within:bg-white shadow-sm transition-all">
                   <Search size={14} className="text-ink-3 flex-shrink-0" />
                   <input
                     type="text"
@@ -207,12 +223,12 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
                     onChange={e => { setSearch(e.target.value); setShowDrop(true) }}
                     onFocus={() => setShowDrop(true)}
                     onBlur={() => setTimeout(() => setShowDrop(false), 200)}
-                    placeholder="Type university name..."
-                    className="flex-1 text-xs font-semibold text-ink bg-transparent outline-none min-w-0"
+                    placeholder="Search university…"
+                    className="flex-1 text-xs font-semibold text-ink bg-transparent outline-none min-w-0 placeholder:text-ink-3/60"
                     autoComplete="off"
                   />
                   {uniId && (
-                    <button onClick={() => clearUni(side)} className="text-ink-3 hover:text-red transition-colors">
+                    <button onClick={() => clearUni(side)} className="text-ink-3 hover:text-red transition-colors p-0.5">
                       <X size={14} />
                     </button>
                   )}
@@ -241,19 +257,19 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
               {uniId && (
                 <>
                   {hasNoSpecData(syllabus) ? (
-                    <div className="p-3 rounded-xl bg-gray-50 border border-border text-xs text-ink-3 text-center">
+                    <div className="p-3 rounded-xl bg-bg border border-border text-xs text-ink-3 text-center">
                       No syllabus data available for this university.<br />
                       <span className="font-semibold">Contact us for details.</span>
                     </div>
                   ) : specs.length === 0 ? (
-                    <div className="p-3 rounded-xl bg-gray-50 border border-border text-xs text-ink-3 text-center">
+                    <div className="p-3 rounded-xl bg-bg border border-border text-xs text-ink-3 text-center">
                       No specialisation data available yet.
                     </div>
                   ) : (
                     <select
                       value={spec}
                       onChange={e => setSpec(e.target.value)}
-                      className="w-full text-xs font-semibold rounded-xl border border-border bg-white px-3 py-2.5 text-ink focus:outline-none focus:border-amber shadow-sm"
+                      className="w-full text-xs font-semibold rounded-xl border border-border bg-bg px-3 py-2.5 text-ink focus:outline-none focus:border-amber shadow-sm transition-all"
                     >
                       <option value="">— Select Specialisation —</option>
                       {specs.map(s => <option key={s} value={s}>{s}</option>)}
@@ -265,10 +281,13 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
               {/* Common subjects (sem1) */}
               {spec && syllabus?.sem1 && (
                 <div>
-                  <div className="text-[9px] font-black uppercase tracking-widest text-ink-3 mb-1.5">Sem 1 — Core Subjects</div>
+                  <div className="text-[9px] font-black uppercase tracking-widest text-ink-3 mb-1.5 flex items-center gap-1">
+                    <span className="w-2 h-2 rounded-full bg-navy inline-block" />
+                    Sem 1 — Core Subjects
+                  </div>
                   <div className="flex flex-wrap gap-1">
                     {syllabus.sem1.split(' | ').map(s => s.trim()).filter(Boolean).map(subj => (
-                      <span key={subj} className="px-2 py-1 rounded-lg text-[10px] font-medium bg-white/80 border border-border/50 text-ink-3">{subj}</span>
+                      <span key={subj} className="px-2 py-1 rounded-lg text-[10px] font-medium bg-bg border border-border/50 text-ink-3">{subj}</span>
                     ))}
                   </div>
                 </div>
@@ -277,7 +296,10 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
               {/* Spec subjects (sem3/sem4) */}
               {spec && subjects.length > 0 && (
                 <div>
-                  <div className="text-[9px] font-black uppercase tracking-widest text-ink-3 mb-1.5">Sem 3–4 Electives — {spec}</div>
+                  <div className="text-[9px] font-black uppercase tracking-widest text-ink-3 mb-1.5 flex items-center gap-1">
+                    <span className="w-2 h-2 rounded-full bg-amber inline-block" />
+                    Sem 3–4 Electives — {spec}
+                  </div>
                   <div className="space-y-1">
                     {subjects.map(subj => {
                       const inOther = otherSpec && otherSet.has(subj.toLowerCase())
@@ -306,7 +328,7 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
               )}
 
               {spec && subjects.length === 0 && (
-                <div className="p-3 rounded-xl bg-gray-50 border border-border text-xs text-ink-3 text-center">
+                <div className="p-3 rounded-xl bg-bg border border-border text-xs text-ink-3 text-center">
                   No syllabus data available for this specialisation.<br />
                   <span className="font-semibold">Contact us for details.</span>
                 </div>
@@ -318,7 +340,7 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
 
       {/* Legend */}
       {(specA || specB) && (
-        <div className="flex items-center gap-4 px-5 pb-4 pt-1 border-t border-amber/10">
+        <div className="flex items-center gap-4 px-5 pb-4 pt-2 border-t border-amber/10 bg-amber/5">
           <span className="flex items-center gap-1.5 text-[10px] text-ink-3">
             <span style={{ width: 10, height: 10, borderRadius: 2, background: 'rgba(34,197,94,0.2)', border: '1.5px solid #22C55E', display: 'inline-block' }} />
             Common subject
@@ -340,6 +362,8 @@ function CompareContent() {
   const [enquiryOpen, setEnquiryOpen] = useState(false)
   const [enquiryUni, setEnquiryUni] = useState('')
   const [initialized, setInitialized] = useState(false)
+  const [syllabusOpen, setSyllabusOpen] = useState(false)
+  const [uniSearch, setUniSearch] = useState('')
 
   const headerRef = useRef<HTMLDivElement>(null)
 
@@ -371,6 +395,9 @@ function CompareContent() {
     .map(id => getUniversityById(id))
     .filter((u): u is University => u !== undefined)
   const available = UNIS_SLIM.filter(u => !selectedIds.includes(u.id) && u.programs?.includes(program))
+  const filteredAvailable = uniSearch.length >= 1
+    ? available.filter(u => (u.name || '').toLowerCase().includes(uniSearch.toLowerCase()) || (u.abbr || '').toLowerCase().includes(uniSearch.toLowerCase()))
+    : available
 
   function addUni(id: string) {
     if (selectedIds.length >= 3) return
@@ -400,7 +427,7 @@ function CompareContent() {
   const verdict = getVerdict()
 
   return (
-    <div className="page-shell pb-20">
+    <div className="pb-20">
       {universities.length >= 2 && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
           '@context':'https://schema.org','@type':'Article',
@@ -413,31 +440,53 @@ function CompareContent() {
         })}} />
       )}
 
-      {/* Hero Section */}
-      <div className="bg-white border-b border-border-light relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-amber-glow/20 to-transparent pointer-events-none" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 relative z-10">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <div>
-              <div className="flex items-center gap-2 mb-3">
-                <span className="label-sm text-amber px-2 py-0.5 bg-amber-light rounded-full">Compare {program} Programs</span>
-                <span className="text-[11px] text-ink-3 font-medium">Updated for July 2026 Session</span>
-              </div>
-              <h1 className="font-display text-3xl sm:text-4xl text-navy font-bold mb-3 tracking-tight">
-                Compare Online {program} Universities
-              </h1>
-              <p className="text-sm text-ink-2 max-w-xl">
-                Side-by-side analysis of UGC DEB approved {program} programs. Compare real fees, NIRF rank{program === 'MBA' ? ', specialisations' : ''} and semester-wise syllabus.
-              </p>
-            </div>
+      {/* ── HERO ─────────────────────────────────────────────────────────── */}
+      <div
+        className="relative overflow-hidden"
+        style={{ background: 'linear-gradient(135deg, #0d2240 0%, #1e3a5f 55%, #0d2240 100%)' }}
+      >
+        {/* Decorative blobs */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full opacity-10"
+            style={{ background: 'radial-gradient(circle, #f59e0b 0%, transparent 70%)' }} />
+          <div className="absolute -bottom-16 -left-16 w-72 h-72 rounded-full opacity-10"
+            style={{ background: 'radial-gradient(circle, #f59e0b 0%, transparent 70%)' }} />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[200px] opacity-5"
+            style={{ background: 'radial-gradient(ellipse, #f59e0b 0%, transparent 70%)' }} />
+        </div>
 
-            <div className="flex items-center gap-1.5 p-1.5 bg-navy/5 rounded-xl border border-navy/10">
-              <span className="text-[11px] font-bold text-ink-3 px-2">Program:</span>
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 pt-12 pb-10">
+          {/* Updated badge */}
+          <div className="flex justify-center mb-5">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-amber/30 bg-amber/10 text-amber text-[11px] font-bold uppercase tracking-wider">
+              <Star size={10} fill="currentColor" /> Updated for July 2026 Session
+            </span>
+          </div>
+
+          {/* H1 */}
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-4 leading-tight tracking-tight">
+            Compare Online{' '}
+            <span className="text-amber">{program}</span>{' '}
+            Universities
+          </h1>
+          <p className="text-white/60 text-sm sm:text-base text-center max-w-2xl mx-auto mb-8 leading-relaxed">
+            Side-by-side analysis of UGC DEB approved {program} programs. Compare real fees, NIRF rankings
+            {program === 'MBA' ? ', specialisations' : ''} and semester-wise syllabus — all in one place.
+          </p>
+
+          {/* Program toggle — prominent pill tabs */}
+          <div className="flex justify-center mb-8">
+            <div className="flex items-center p-1 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm gap-1">
               {(['MBA', 'MCA'] as const).map(p => (
                 <button
                   key={p}
                   onClick={() => { setProgram(p); setSelectedIds(['jain-university-online', 'amity-university-online']) }}
-                  className={`px-4 py-1.5 text-xs font-bold rounded-lg transition-all ${program === p ? 'bg-navy text-white shadow-sm' : 'text-ink-2 hover:bg-navy/10'}`}
+                  className={clsx(
+                    "px-7 py-2.5 text-sm font-bold rounded-xl transition-all duration-200",
+                    program === p
+                      ? "bg-amber text-white shadow-lg shadow-amber/30"
+                      : "text-white/60 hover:text-white hover:bg-white/10"
+                  )}
                 >
                   Online {p}
                 </button>
@@ -445,27 +494,127 @@ function CompareContent() {
             </div>
           </div>
 
-          <div className="mt-8 flex flex-wrap items-center gap-2">
-            <span className="text-xs font-bold text-ink-3 mr-1">Add to compare:</span>
-            {available.slice(0, 6).map(u => (
-              <button
-                key={u.id}
-                onClick={() => addUni(u.id)}
-                disabled={selectedIds.length >= 3}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-border hover:border-amber hover:text-amber transition-all text-xs font-semibold shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                <Plus size={12} /> {u.abbr || u.name.split(' ')[0]}
-              </button>
+          {/* Trust badges row */}
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-6">
+            {[
+              { icon: <GraduationCap size={14} />, label: '127+ Universities', sub: 'Verified Database' },
+              { icon: <ShieldCheck size={14} />, label: 'UGC DEB Verified', sub: 'All Programs Approved' },
+              { icon: <Zap size={14} />, label: '24 Hr Callback', sub: 'Expert Counsellor' },
+            ].map(badge => (
+              <div key={badge.label} className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/8 border border-white/10">
+                <span className="text-amber">{badge.icon}</span>
+                <div>
+                  <div className="text-white text-xs font-bold leading-tight">{badge.label}</div>
+                  <div className="text-white/40 text-[10px] leading-tight">{badge.sub}</div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        {/* ── Syllabus Comparator — ALWAYS VISIBLE AT TOP ─────── */}
-        <div className="mt-8 mb-8">
-          <SyllabusComparison program={program} />
+      {/* ── UNIVERSITY SELECTOR PANEL ────────────────────────────────────── */}
+      <div className="border-b border-border bg-white sticky top-0 z-30 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+          <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+            {/* Currently comparing */}
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-[11px] font-bold text-ink-3 uppercase tracking-wider whitespace-nowrap">Comparing:</span>
+              {universities.map(u => (
+                <div
+                  key={u.id}
+                  className="flex items-center gap-2 pl-2 pr-1 py-1 rounded-xl bg-navy/5 border border-navy/15 group"
+                >
+                  <div className="w-6 h-6 flex items-center justify-center flex-shrink-0">
+                    {getUniversityLogo(u.id) ? (
+                      <img src={getUniversityLogo(u.id)!} alt={u.name} className="w-6 h-6 object-contain" />
+                    ) : (
+                      <span className="text-navy font-black text-[10px]">{u.abbr?.slice(0, 3)}</span>
+                    )}
+                  </div>
+                  <span className="text-[11px] font-bold text-navy max-w-[120px] truncate">{u.abbr || u.name.split(' ')[0]}</span>
+                  <button
+                    onClick={() => removeUni(u.id)}
+                    className="p-1 rounded-lg text-ink-3 hover:bg-red-50 hover:text-red-500 transition-colors opacity-60 group-hover:opacity-100"
+                  >
+                    <X size={11} />
+                  </button>
+                </div>
+              ))}
+              {selectedIds.length < 3 && (
+                <span className="text-[11px] text-ink-3 font-medium px-2">
+                  + add {3 - selectedIds.length} more
+                </span>
+              )}
+            </div>
+
+            {/* Divider */}
+            <div className="hidden sm:block w-px h-8 bg-border" />
+
+            {/* Search bar to add universities */}
+            {selectedIds.length < 3 && (
+              <div className="flex-1 min-w-[220px] max-w-xs relative">
+                <div className="flex items-center gap-2 bg-bg border border-border rounded-xl px-3 py-2 focus-within:border-amber focus-within:bg-white transition-all">
+                  <Search size={13} className="text-ink-3 flex-shrink-0" />
+                  <input
+                    type="text"
+                    value={uniSearch}
+                    onChange={e => setUniSearch(e.target.value)}
+                    placeholder={`Search ${program} university to add…`}
+                    className="flex-1 text-xs font-medium text-ink bg-transparent outline-none placeholder:text-ink-3/60"
+                    autoComplete="off"
+                  />
+                  {uniSearch && (
+                    <button onClick={() => setUniSearch('')} className="text-ink-3 hover:text-ink transition-colors">
+                      <X size={12} />
+                    </button>
+                  )}
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* University cards grid — only shown when searching or always show first N */}
+          {selectedIds.length < 3 && (filteredAvailable.length > 0) && (
+            <div className="mt-3 flex gap-2 overflow-x-auto pb-1 scrollbar-none">
+              {filteredAvailable.slice(0, uniSearch ? 20 : 10).map(u => (
+                <button
+                  key={u.id}
+                  onClick={() => { addUni(u.id); setUniSearch('') }}
+                  className="flex-shrink-0 flex items-center gap-2 px-3 py-2 rounded-xl bg-bg border border-border hover:border-amber hover:bg-amber-light/20 transition-all group min-w-0"
+                  title={u.name}
+                >
+                  <div className="w-7 h-7 flex items-center justify-center flex-shrink-0 bg-white rounded-lg border border-border/50">
+                    {getUniversityLogo(u.id) ? (
+                      <img src={getUniversityLogo(u.id)!} alt={u.name} className="w-6 h-6 object-contain" />
+                    ) : (
+                      <span className="text-navy font-black text-[9px]">{u.abbr?.slice(0, 3) || u.name.slice(0, 3)}</span>
+                    )}
+                  </div>
+                  <div className="flex flex-col items-start min-w-0">
+                    <span className="text-[11px] font-bold text-navy group-hover:text-amber-text transition-colors whitespace-nowrap max-w-[100px] truncate">
+                      {u.abbr || u.name.split(' ')[0]}
+                    </span>
+                    {u.feeMin && (
+                      <span className="text-[9px] text-ink-3 font-medium whitespace-nowrap">
+                        from {formatFee(u.feeMin)}
+                      </span>
+                    )}
+                  </div>
+                  <Plus size={12} className="text-ink-3 group-hover:text-amber flex-shrink-0 ml-1" />
+                </button>
+              ))}
+              {!uniSearch && filteredAvailable.length > 10 && (
+                <span className="flex-shrink-0 flex items-center px-3 text-[11px] text-ink-3 font-medium whitespace-nowrap">
+                  +{filteredAvailable.length - 10} more — search above
+                </span>
+              )}
+            </div>
+          )}
         </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         {universities.length === 0 ? (
           <div className="py-24 text-center">
@@ -480,10 +629,10 @@ function CompareContent() {
           <div>
             {/* Verdict Card */}
             {verdict && (
-              <div className="mb-8 p-6 bg-white border border-border rounded-2xl shadow-sm relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-amber-glow -mr-16 -mt-16 rounded-full blur-3xl opacity-50 group-hover:opacity-100 transition-opacity" />
-                <div className="flex items-start gap-4 mb-6 relative z-10">
-                  <div className="w-10 h-10 bg-amber rounded-xl flex items-center justify-center text-white shadow-lg shadow-amber/20">
+              <div className="mt-8 mb-8 p-6 bg-white border border-border rounded-2xl shadow-sm relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-48 h-48 bg-amber-glow -mr-20 -mt-20 rounded-full blur-3xl opacity-40 pointer-events-none" />
+                <div className="flex items-center gap-3 mb-5 relative z-10">
+                  <div className="w-10 h-10 bg-amber rounded-xl flex items-center justify-center text-white shadow-lg shadow-amber/20 flex-shrink-0">
                     <Award size={20} />
                   </div>
                   <div>
@@ -493,21 +642,21 @@ function CompareContent() {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 relative z-10">
-                  <div className="p-4 rounded-xl bg-bg border border-border-light hover:border-amber-glow transition-colors">
+                  <div className="p-4 rounded-xl bg-bg border border-border-light hover:border-amber/30 transition-colors group">
                     <div className="flex items-center gap-2 mb-2 text-amber font-bold text-[10px] uppercase tracking-widest">
                       <Zap size={10} /> Highest Rank
                     </div>
                     <div className="text-navy font-bold text-sm leading-tight mb-1">{verdict.bestNirf.name}</div>
                     <div className="text-xs text-ink-3 font-semibold">NIRF Rank #{verdict.bestNirf.nirf}</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-bg border border-border-light hover:border-amber-glow transition-colors">
+                  <div className="p-4 rounded-xl bg-bg border border-border-light hover:border-sage/30 transition-colors group">
                     <div className="flex items-center gap-2 mb-2 text-sage font-bold text-[10px] uppercase tracking-widest">
                       <Wallet size={10} /> Best ROI
                     </div>
                     <div className="text-navy font-bold text-sm leading-tight mb-1">{verdict.cheapest.name}</div>
                     <div className="text-xs text-ink-3 font-semibold">Starting {formatFee(verdict.cheapest.feeMin)}</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-bg border border-border-light hover:border-amber-glow transition-colors">
+                  <div className="p-4 rounded-xl bg-bg border border-border-light hover:border-blue/30 transition-colors group">
                     <div className="flex items-center gap-2 mb-2 text-blue font-bold text-[10px] uppercase tracking-widest">
                       <Briefcase size={10} /> Career Reach
                     </div>
@@ -519,47 +668,70 @@ function CompareContent() {
             )}
 
             {/* Comparison Grid */}
-            <div className="bg-white border border-border rounded-2xl shadow-xl overflow-hidden">
+            <div className="bg-white border border-border rounded-2xl shadow-xl overflow-hidden overflow-x-auto">
 
               {/* Sticky Table Header */}
-              <div className="sticky top-0 z-[40] bg-white border-b border-border/80 backdrop-blur-md shadow-sm">
-                <div className="grid grid-cols-[180px_repeat(auto-fit,minmax(200px,1fr))] items-stretch">
-                  <div className="p-4 flex flex-col justify-center border-r border-border/50 bg-bg/20">
-                    <span className="label-sm text-ink-3">Comparing:</span>
-                    <span className="text-[10px] font-bold text-amber">{universities.length} {program} Programs</span>
+              <div
+                ref={headerRef}
+                className="sticky top-[73px] z-[35] bg-white border-b-2 border-border shadow-md"
+              >
+                <div
+                  className="grid items-stretch"
+                  style={{ gridTemplateColumns: `180px repeat(${universities.length}, minmax(220px, 1fr))` }}
+                >
+                  <div className="p-4 flex flex-col justify-center border-r border-border/50 bg-navy/3">
+                    <span className="text-[10px] font-bold text-ink-3 uppercase tracking-wider">Comparing</span>
+                    <span className="text-xs font-black text-amber mt-0.5">{universities.length} Online {program}</span>
                   </div>
-                  {universities.map(u => (
-                    <div key={u.id} className="p-4 border-r border-border/50 flex flex-col items-center text-center relative group min-w-[200px]">
-                      <button
-                        onClick={() => removeUni(u.id)}
-                        className="absolute right-2 top-2 p-1.5 rounded-full bg-bg text-ink-3 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-red-50 hover:text-red transition-all"
+                  {universities.map((u, idx) => {
+                    const naacColor = u.naac?.includes('A++') ? '#166534' : u.naac?.includes('A+') ? '#92400E' : '#374151'
+                    const naacBg = u.naac?.includes('A++') ? '#dcfce7' : u.naac?.includes('A+') ? '#fef3c7' : '#f3f4f6'
+                    return (
+                      <div
+                        key={u.id}
+                        className="p-4 border-r border-border/50 flex flex-col items-center text-center relative group min-w-[220px]"
+                        style={{ borderTop: `3px solid ${idx === 0 ? '#1e3a5f' : idx === 1 ? '#d97706' : '#22c55e'}` }}
                       >
-                        <Minus size={12} />
-                      </button>
-                      <div className="h-12 flex items-center justify-center mb-3">
-                        {getUniversityLogo(u.id) ? (
-                          <img
-                            src={getUniversityLogo(u.id)!}
-                            alt={u.name}
-                            style={{ maxHeight: '100%', maxWidth: '140px', objectFit: 'contain' }}
-                          />
-                        ) : (
-                          <div className="text-navy font-black text-xl italic">{u.abbr}</div>
+                        <button
+                          onClick={() => removeUni(u.id)}
+                          className="absolute right-2 top-2 p-1.5 rounded-full bg-bg text-ink-3 opacity-0 group-hover:opacity-100 transition-all hover:bg-red-50 hover:text-red-500"
+                        >
+                          <X size={12} />
+                        </button>
+                        <div className="h-12 flex items-center justify-center mb-2">
+                          {getUniversityLogo(u.id) ? (
+                            <img
+                              src={getUniversityLogo(u.id)!}
+                              alt={u.name}
+                              style={{ maxHeight: '100%', maxWidth: '140px', objectFit: 'contain' }}
+                            />
+                          ) : (
+                            <div className="text-navy font-black text-xl italic">{u.abbr}</div>
+                          )}
+                        </div>
+                        <div className="text-[11px] font-black text-navy leading-tight line-clamp-2 px-2 uppercase tracking-tight mb-2">{u.name}</div>
+                        {u.naac && (
+                          <span
+                            className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-black"
+                            style={{ background: naacBg, color: naacColor }}
+                          >
+                            <ShieldCheck size={9} />
+                            NAAC {u.naac}
+                          </span>
                         )}
                       </div>
-                      <div className="text-xs font-black text-navy leading-tight line-clamp-2 px-2 uppercase tracking-tight">{u.name}</div>
-                    </div>
-                  ))}
+                    )
+                  })}
                 </div>
               </div>
 
-              {/* SECTION: ACADEMIC CREDIBILITY */}
-              <div className="bg-navy p-3 px-5 flex items-center justify-between">
-                <span className="text-[10px] font-black text-amber-bright uppercase tracking-[0.2em] flex items-center gap-2">
-                  <Award size={14} /> Academic Credibility & Trust
-                </span>
-                <Info size={12} className="text-white/40 cursor-help" />
-              </div>
+              {/* ── SECTION: ACADEMIC CREDIBILITY */}
+              <SectionDivider
+                label="Academic Credibility & Trust"
+                icon={<Award size={14} />}
+                colorClass="bg-navy"
+                textClass="text-amber-bright"
+              />
 
               <ComparisonRow
                 label="NIRF Ranking"
@@ -567,7 +739,7 @@ function CompareContent() {
                 unis={universities}
                 fn={u => (
                   <div className="flex flex-col items-center">
-                    <span className="text-lg font-black text-navy italic">#{u.nirf || '—'}</span>
+                    <span className="text-2xl font-black text-navy italic">#{u.nirf || '—'}</span>
                     <span className="text-[9px] text-ink-3 uppercase font-bold tracking-wider">National Rank</span>
                   </div>
                 )}
@@ -578,9 +750,10 @@ function CompareContent() {
                 unis={universities}
                 fn={u => (
                   <div className={clsx(
-                    "px-3 py-1 rounded-full font-black text-sm",
-                    u.naac.includes('A++') ? "bg-sage-light text-sage" :
-                    u.naac.includes('A+') ? "bg-amber-light text-amber-text" : "bg-bg text-ink-2"
+                    "px-4 py-1.5 rounded-full font-black text-sm border",
+                    u.naac.includes('A++') ? "bg-sage-light text-sage border-sage/20" :
+                    u.naac.includes('A+') ? "bg-amber-light text-amber-text border-amber/20" :
+                    "bg-bg text-ink-2 border-border"
                   )}>
                     {u.naac || '—'}
                   </div>
@@ -597,7 +770,9 @@ function CompareContent() {
                       return (
                         <div key={ap} className={clsx(
                           "px-2 py-0.5 rounded-md text-[9px] font-bold border transition-all",
-                          has ? "bg-white border-sage/30 text-sage shadow-sm shadow-sage/5 scale-105" : "bg-bg border-border text-ink-3 opacity-40 grayscale"
+                          has
+                            ? "bg-white border-sage/30 text-sage shadow-sm"
+                            : "bg-bg border-border text-ink-3 opacity-40"
                         )}>
                           {ap}
                         </div>
@@ -607,12 +782,14 @@ function CompareContent() {
                 )}
               />
 
-              {/* SECTION: COURSE INVESTMENT */}
-              <div className="bg-bg p-3 px-5 flex items-center gap-2 border-y border-border/50">
-                <span className="text-[10px] font-black text-navy uppercase tracking-[0.2em] flex items-center gap-2">
-                  <Wallet size={14} /> Fee Structure & Flexibility
-                </span>
-              </div>
+              {/* ── SECTION: FEE STRUCTURE */}
+              <SectionDivider
+                label="Fee Structure & Flexibility"
+                icon={<Wallet size={14} />}
+                colorClass="bg-amber/10 border-y border-amber/20"
+                textClass="text-amber-text"
+                leftAccent="#d97706"
+              />
 
               <ComparisonRow
                 label="Course Fees"
@@ -620,7 +797,7 @@ function CompareContent() {
                 fn={u => (
                   <div className="flex flex-col items-center">
                     <span className="text-base font-black text-navy">{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</span>
-                    <span className="text-[10px] text-ink-3 font-medium">Total Online Program Fee</span>
+                    <span className="text-[10px] text-ink-3 font-medium mt-0.5">Total Online Program Fee</span>
                   </div>
                 )}
               />
@@ -628,9 +805,9 @@ function CompareContent() {
                 label="EMI Starting"
                 unis={universities}
                 fn={u => (
-                  <div className="flex items-center gap-1.5 px-3 py-1 bg-amber-light rounded-lg border border-amber/20">
+                  <div className="flex items-center gap-1.5 px-3 py-1.5 bg-amber-light rounded-xl border border-amber/20">
                     <span className="text-xs font-black text-amber-text italic">₹{u.emiFrom.toLocaleString()}/mo</span>
-                    <ChevronRight size={10} className="text-amber animate-pulse" />
+                    <ChevronRight size={10} className="text-amber" />
                   </div>
                 )}
               />
@@ -640,7 +817,10 @@ function CompareContent() {
                 onClick={() => { setEnquiryUni('Scholarship Enquiry'); setEnquiryOpen(true) }}
                 className="cursor-pointer group relative overflow-hidden bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500 transition-all hover:brightness-110"
               >
-                <div className="grid grid-cols-[180px_repeat(auto-fit,minmax(200px,1fr))] items-stretch border-b border-orange-400/30">
+                <div
+                  className="grid items-stretch border-b border-orange-400/30"
+                  style={{ gridTemplateColumns: `180px repeat(${universities.length}, minmax(220px, 1fr))` }}
+                >
                   <div className="p-4 flex items-center gap-2 bg-black/10">
                     <Lock size={16} className="text-white animate-bounce" />
                     <span className="text-[11px] font-black text-white uppercase tracking-wider">Scholarship</span>
@@ -656,19 +836,23 @@ function CompareContent() {
                 </div>
               </div>
 
-              {/* SECTION: CAREER OUTCOMES */}
-              <div className="bg-sage-light p-3 px-5 flex items-center gap-2 border-y border-border/50">
-                <span className="text-[10px] font-black text-sage uppercase tracking-[0.2em] flex items-center gap-2">
-                  <TrendingUp size={14} /> Career Impact & Salary
-                </span>
-              </div>
+              {/* ── SECTION: CAREER OUTCOMES */}
+              <SectionDivider
+                label="Career Impact & Salary"
+                icon={<TrendingUp size={14} />}
+                colorClass="bg-sage-light border-y border-sage/20"
+                textClass="text-sage"
+                leftAccent="#16a34a"
+              />
 
               <ComparisonRow
                 label="Avg Salary"
                 unis={universities}
                 fn={u => (
                   <div className="flex flex-col items-center gap-1">
-                    <span className="text-sm font-black text-sage uppercase tracking-tight italic">{u.programDetails[program]?.avgSalary || (program === 'MCA' ? '₹4L - ₹10L' : '₹5L - ₹12L')}</span>
+                    <span className="text-sm font-black text-sage uppercase tracking-tight italic">
+                      {u.programDetails[program]?.avgSalary || (program === 'MCA' ? '₹4L - ₹10L' : '₹5L - ₹12L')}
+                    </span>
                     <TrendingUp size={14} className="text-sage/40" />
                   </div>
                 )}
@@ -695,39 +879,49 @@ function CompareContent() {
                 )}
               />
 
-              {/* SECTION: CURRICULUM */}
-              <div className="bg-bg p-3 px-5 flex items-center gap-2 border-y border-border/50">
-                <span className="text-[10px] font-black text-navy-light uppercase tracking-[0.2em] flex items-center gap-2">
-                  <BookOpen size={14} /> Curriculum & Specialisations
-                </span>
-              </div>
+              {/* ── SECTION: CURRICULUM */}
+              <SectionDivider
+                label="Curriculum & Specialisations"
+                icon={<BookOpen size={14} />}
+                colorClass="bg-bg border-y border-border/50"
+                textClass="text-navy"
+                leftAccent="#1e3a5f"
+              />
 
               <ComparisonRow
                 label="Specialisations"
                 unis={universities}
                 fn={u => (
                   <div className="flex flex-col items-center gap-2">
-                    <span className="text-lg font-black text-amber italic">{u.programDetails[program]?.specs.length || 0}</span>
+                    <span className="text-2xl font-black text-amber italic">{u.programDetails[program]?.specs.length || 0}</span>
                     <div className="flex flex-wrap justify-center gap-1 max-w-[160px]">
                       {u.programDetails[program]?.specs.slice(0, 3).map(s => (
                         <span key={s} className="text-[9px] font-bold text-ink-3 text-center leading-tight line-clamp-1">{s}</span>
                       ))}
-                      {(u.programDetails[program]?.specs.length || 0) > 3 && <span className="text-[9px] text-amber font-bold">+{(u.programDetails[program]?.specs.length || 0) - 3} more</span>}
+                      {(u.programDetails[program]?.specs.length || 0) > 3 && (
+                        <span className="text-[9px] text-amber font-bold">+{(u.programDetails[program]?.specs.length || 0) - 3} more</span>
+                      )}
                     </div>
                   </div>
                 )}
               />
 
-              {/* ACTION BUTTON ROW */}
-              <div className="grid grid-cols-[180px_repeat(auto-fit,minmax(200px,1fr))] items-stretch bg-bg/40">
-                <div className="p-4 flex items-center justify-center font-bold text-xs text-ink-3 border-r border-border/50 bg-bg/20">
-                  Ready to proceed?
+              {/* ── ACTION BUTTON ROW */}
+              <div
+                className="grid items-stretch bg-navy/3 border-t-2 border-border"
+                style={{ gridTemplateColumns: `180px repeat(${universities.length}, minmax(220px, 1fr))` }}
+              >
+                <div className="p-4 flex items-center justify-center border-r border-border/50 bg-bg/30">
+                  <div className="text-center">
+                    <div className="text-[11px] font-black text-navy uppercase tracking-wider mb-0.5">Ready?</div>
+                    <div className="text-[10px] text-ink-3 font-medium">Pick your university</div>
+                  </div>
                 </div>
                 {universities.map(u => (
-                  <div key={u.id} className="p-5 border-l border-border/50 shadow-inner flex flex-col gap-3">
+                  <div key={u.id} className="p-5 border-l border-border/50 flex flex-col gap-3">
                     <button
                       onClick={() => { setEnquiryUni(u.name); setEnquiryOpen(true) }}
-                      className="w-full btn-primary py-3 rounded-xl shadow-lg ring-4 ring-amber-light/50 font-black text-xs uppercase"
+                      className="w-full btn-primary py-3 rounded-xl shadow-lg ring-4 ring-amber-light/50 font-black text-xs uppercase tracking-wide"
                     >
                       Enquire Now
                     </button>
@@ -735,37 +929,92 @@ function CompareContent() {
                       href={`/universities/${u.id}/${progSlug(program)}`}
                       className="text-[10px] font-black text-center text-amber hover:text-amber-bright uppercase tracking-tighter"
                     >
-                      View Detailed Analysis →
+                      View Full Analysis →
                     </Link>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Bottom Proof Section */}
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
-              <div className="p-8 bg-navy rounded-3xl text-white relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-amber-bright/10 rounded-full -mr-32 -mt-32 blur-3xl" />
-                <h3 className="font-display text-2xl font-bold mb-4">India's Only Direct-to-Counsellor Guide</h3>
-                <p className="text-white/70 text-sm mb-8 leading-relaxed">
-                  We are not an automated search engine. Our database is verified by human experts who cross-check every UGC approval and NIRF update directly from government sources.
-                </p>
-                <div className="flex items-center gap-6">
-                  <div className="flex flex-col">
-                    <span className="text-2xl font-bold text-amber">127+</span>
-                    <span className="text-[10px] uppercase font-bold text-white/50 tracking-widest">Unis Verified</span>
+            {/* ── SYLLABUS COMPARATOR — COLLAPSIBLE, BELOW TABLE ─────────── */}
+            <div className="mt-8">
+              <button
+                onClick={() => setSyllabusOpen(prev => !prev)}
+                className="w-full flex items-center justify-between px-6 py-4 bg-white border border-border rounded-2xl shadow-sm hover:shadow-md hover:border-amber/30 transition-all group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-xl bg-amber/10 flex items-center justify-center group-hover:bg-amber/20 transition-colors">
+                    <BookOpen size={16} className="text-amber" />
                   </div>
-                  <div className="w-px h-10 bg-white/20" />
-                  <div className="flex flex-col">
-                    <span className="text-2xl font-bold text-amber">24 Hr</span>
-                    <span className="text-[10px] uppercase font-bold text-white/50 tracking-widest">Callback Guarantee</span>
+                  <div className="text-left">
+                    <div className="text-sm font-black text-navy">Compare Syllabus Subjects</div>
+                    <div className="text-[11px] text-ink-3 font-medium">Semester-wise subject breakdown for any two {program} universities</div>
+                  </div>
+                </div>
+                <div className={clsx(
+                  "flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all",
+                  syllabusOpen
+                    ? "bg-navy/5 text-navy"
+                    : "bg-amber text-white shadow-sm shadow-amber/30"
+                )}>
+                  {syllabusOpen ? (
+                    <><ChevronUp size={14} /> Collapse</>
+                  ) : (
+                    <><ChevronDown size={14} /> Compare Syllabus</>
+                  )}
+                </div>
+              </button>
+
+              {syllabusOpen && (
+                <div className="mt-4">
+                  <SyllabusComparison program={program} />
+                </div>
+              )}
+            </div>
+
+            {/* ── BOTTOM PROOF / CTA SECTION ──────────────────────────────── */}
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Trust card */}
+              <div className="p-8 rounded-3xl text-white relative overflow-hidden"
+                style={{ background: 'linear-gradient(135deg, #0d2240 0%, #1e3a5f 100%)' }}
+              >
+                <div className="absolute top-0 right-0 w-64 h-64 bg-amber-bright/10 rounded-full -mr-32 -mt-32 blur-3xl pointer-events-none" />
+                <div className="relative z-10">
+                  <div className="w-10 h-10 rounded-xl bg-amber/20 flex items-center justify-center mb-4">
+                    <ShieldCheck size={20} className="text-amber" />
+                  </div>
+                  <h3 className="font-display text-xl font-bold mb-3 leading-tight">
+                    India's Only Direct-to-Counsellor Guide
+                  </h3>
+                  <p className="text-white/60 text-sm mb-6 leading-relaxed">
+                    We are not an automated search engine. Our database is verified by human experts who cross-check every UGC approval and NIRF update directly from government sources.
+                  </p>
+                  <div className="flex items-center gap-6">
+                    <div className="flex flex-col">
+                      <span className="text-2xl font-bold text-amber">127+</span>
+                      <span className="text-[10px] uppercase font-bold text-white/40 tracking-widest">Unis Verified</span>
+                    </div>
+                    <div className="w-px h-10 bg-white/15" />
+                    <div className="flex flex-col">
+                      <span className="text-2xl font-bold text-amber">24 Hr</span>
+                      <span className="text-[10px] uppercase font-bold text-white/40 tracking-widest">Callback Guarantee</span>
+                    </div>
+                    <div className="w-px h-10 bg-white/15" />
+                    <div className="flex flex-col">
+                      <span className="text-2xl font-bold text-amber">100%</span>
+                      <span className="text-[10px] uppercase font-bold text-white/40 tracking-widest">UGC DEB Approved</span>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="p-8 bg-white border border-border rounded-3xl relative">
-                <h3 className="font-display text-xl font-bold text-navy mb-4">Frequently Compared</h3>
-                <div className="space-y-4">
+              {/* Frequently compared */}
+              <div className="p-6 bg-white border border-border rounded-3xl">
+                <div className="flex items-center gap-2 mb-4">
+                  <Users size={16} className="text-amber" />
+                  <h3 className="font-display text-base font-bold text-navy">Frequently Compared</h3>
+                </div>
+                <div className="space-y-2">
                   {(program === 'MCA' ? [
                     "Amity Online MCA vs Jain Online MCA",
                     "LPU Online MCA vs Chandigarh University MCA",
@@ -777,9 +1026,12 @@ function CompareContent() {
                     "LPU Online vs NMIMS Online",
                     "Sikkim Manipal vs Amrita AHEAD"
                   ]).map(c => (
-                    <div key={c} className="flex items-center justify-between p-3 rounded-xl border border-border-light hover:border-amber hover:bg-amber-light/10 transition-all cursor-pointer group">
+                    <div
+                      key={c}
+                      className="flex items-center justify-between p-3 rounded-xl border border-border-light hover:border-amber hover:bg-amber-light/10 transition-all cursor-pointer group"
+                    >
                       <span className="text-xs font-bold text-ink-2 group-hover:text-navy">{c}</span>
-                      <ChevronRight size={14} className="text-ink-3 group-hover:text-amber" />
+                      <ChevronRight size={14} className="text-ink-3 group-hover:text-amber flex-shrink-0" />
                     </div>
                   ))}
                 </div>
@@ -798,6 +1050,32 @@ function CompareContent() {
   )
 }
 
+// ── Section Divider Component ──────────────────────────────────────────────
+function SectionDivider({
+  label,
+  icon,
+  colorClass,
+  textClass,
+  leftAccent,
+}: {
+  label: string
+  icon: React.ReactNode
+  colorClass: string
+  textClass: string
+  leftAccent?: string
+}) {
+  return (
+    <div className={clsx('p-3 px-5 flex items-center gap-3', colorClass)}
+      style={leftAccent ? { borderLeft: `4px solid ${leftAccent}` } : undefined}
+    >
+      <span className={clsx('text-[10px] font-black uppercase tracking-[0.2em] flex items-center gap-2', textClass)}>
+        {icon}
+        {label}
+      </span>
+    </div>
+  )
+}
+
 function ComparisonRow({ label, unis, fn, icon = null }: {
   label: string,
   unis: University[],
@@ -805,12 +1083,22 @@ function ComparisonRow({ label, unis, fn, icon = null }: {
   icon?: React.ReactNode
 }) {
   return (
-    <div className="grid grid-cols-[180px_repeat(auto-fit,minmax(200px,1fr))] items-stretch border-b border-border/50 group hover:bg-bg/20 transition-colors">
-      <div className="p-4 flex items-center gap-2 bg-bg/5 font-bold text-xs text-ink-3 border-r border-border/50">
-        {icon} {label}
+    <div
+      className="grid items-stretch border-b border-border/40 group hover:bg-amber-light/5 transition-colors"
+      style={{ gridTemplateColumns: `180px repeat(${unis.length}, minmax(220px, 1fr))` }}
+    >
+      <div className="p-4 flex items-center gap-2 bg-bg/30 font-bold text-xs text-ink-3 border-r border-border/50 group-hover:bg-bg/60 transition-colors">
+        {icon}
+        <span>{label}</span>
       </div>
-      {unis.map(u => (
-        <div key={u.id} className="p-4 py-6 border-l border-border/50 flex flex-col items-center justify-center text-center">
+      {unis.map((u, idx) => (
+        <div
+          key={u.id}
+          className={clsx(
+            "p-4 py-6 border-l border-border/40 flex flex-col items-center justify-center text-center",
+            idx % 2 === 0 ? "bg-white" : "bg-bg/20"
+          )}
+        >
           {fn(u)}
         </div>
       ))}
@@ -822,6 +1110,7 @@ export default function ComparePage() {
   return (
     <Suspense fallback={
       <div className="min-h-screen bg-bg flex items-center justify-center text-ink-3">
+        <Zap className="animate-pulse mr-2" size={20} />
         Loading Comparison Engine...
       </div>
     }>
