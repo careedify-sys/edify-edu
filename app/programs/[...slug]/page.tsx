@@ -273,24 +273,121 @@ export default async function CatchAllProgramPage(
               ))}
             </div>
 
-            {/* About this Specialisation — only shown when a spec is active */}
+            {/* About + rich spec content — only shown when a spec is active */}
             {activeSpec && (() => {
               const sc = (specEntry ? getSpecContent(specEntry.contentKey) : null) || getSpecContent(activeSpec) || getSpecFallback(activeSpec, program)
               const uniWithSpec = universities.find(u => u.programDetails[program]?.specs?.includes(activeSpec))
               const uniName = uniWithSpec?.name || `Top UGC DEB Approved Universities`
               return (
-                <section className="card p-6 md:p-8 mt-6">
-                  <h2 className="text-xl font-bold text-navy mb-4">About Online {program} in {activeSpec}</h2>
-                  <div className="flex flex-col gap-4 text-[15px] text-ink-2 leading-relaxed">
-                    <p>
-                      {uniName.replace(/\s+online\s*$/i, '')} and other UGC DEB approved universities offer an Online {program} in {activeSpec} as a{program === 'MCA' || program === 'MSc' ? ' 2-year' : program === 'MBA' || program === 'M.Com' || program === 'MA' ? ' 2-year' : ' 3-year'} postgraduate program delivered entirely online. The program is UGC DEB approved and designed for working professionals and fresh graduates.
-                    </p>
-                    {sc.overview && <p>{sc.overview}</p>}
-                    <p>
-                      Online degrees from UGC DEB approved universities are accepted by government and private sector employers across India. The degree holds the same value as a regular on-campus degree as per UGC regulations.
-                    </p>
-                  </div>
-                </section>
+                <>
+                  {/* Overview */}
+                  <section className="card p-6 md:p-8 mt-6">
+                    <h2 className="text-xl font-bold text-navy mb-4">About Online {program} in {activeSpec}</h2>
+                    <div className="flex flex-col gap-4 text-[15px] text-ink-2 leading-relaxed">
+                      <p>
+                        {uniName.replace(/\s+online\s*$/i, '')} and other UGC DEB approved universities offer an Online {program} in {activeSpec} as a{program === 'MCA' || program === 'MSc' ? ' 2-year' : program === 'MBA' || program === 'M.Com' || program === 'MA' ? ' 2-year' : ' 3-year'} postgraduate program delivered entirely online. The program is UGC DEB approved and designed for working professionals and fresh graduates.
+                      </p>
+                      {sc.overview && <p>{sc.overview}</p>}
+                      <p>Online degrees from UGC DEB approved universities are accepted by government and private sector employers across India. The degree holds the same value as a regular on-campus degree as per UGC regulations.</p>
+                    </div>
+                  </section>
+
+                  {/* Why choose + Skills */}
+                  {(sc.whyChoose?.length || sc.skills?.length) && (
+                    <section className="grid md:grid-cols-2 gap-4 mt-4">
+                      {sc.whyChoose?.length ? (
+                        <div className="card p-6">
+                          <h3 className="text-base font-bold text-navy mb-3">Why {activeSpec}?</h3>
+                          <ul className="space-y-2">
+                            {sc.whyChoose.map((w: string, i: number) => (
+                              <li key={i} className="flex items-start gap-2 text-sm text-ink-2">
+                                <span className="text-green-500 font-bold mt-0.5 shrink-0">✓</span>
+                                <span>{w}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ) : null}
+                      {sc.skills?.length ? (
+                        <div className="card p-6">
+                          <h3 className="text-base font-bold text-navy mb-3">Skills You'll Build</h3>
+                          <ul className="space-y-2">
+                            {sc.skills.map((s: string, i: number) => (
+                              <li key={i} className="flex items-start gap-2 text-sm text-ink-2">
+                                <span className="text-amber-text font-bold mt-0.5 shrink-0">→</span>
+                                <span>{s}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ) : null}
+                    </section>
+                  )}
+
+                  {/* Career paths */}
+                  {(sc.careerBeginner?.length || sc.careerMid?.length || sc.careerSenior?.length) && (
+                    <section className="card p-6 md:p-8 mt-4">
+                      <h2 className="text-xl font-bold text-navy mb-5">Career Path: {program} in {activeSpec}</h2>
+                      <div className="grid md:grid-cols-3 gap-4">
+                        {[
+                          { label: '0–3 Years', items: sc.careerBeginner, color: '#3b82f6' },
+                          { label: '3–7 Years', items: sc.careerMid, color: '#f59e0b' },
+                          { label: '7+ Years', items: sc.careerSenior, color: '#10b981' },
+                        ].map(({ label, items, color }) => items?.length ? (
+                          <div key={label}>
+                            <div className="text-[10px] font-black uppercase tracking-widest mb-3" style={{ color }}>{label}</div>
+                            <div className="space-y-3">
+                              {items.map((c: { title: string; desc: string }, i: number) => (
+                                <div key={i} className="bg-surface-1 rounded-xl p-3 border border-border">
+                                  <div className="text-sm font-bold text-navy">{c.title}</div>
+                                  <div className="text-xs text-ink-3 mt-1">{c.desc}</div>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        ) : null)}
+                      </div>
+                      {sc.salaryRange && (
+                        <div className="mt-5 pt-4 border-t border-border flex flex-wrap gap-6 text-sm">
+                          <div><span className="font-bold text-navy">Salary range: </span><span className="text-ink-2">{sc.salaryRange}</span></div>
+                          {sc.salaryGrowth && <div className="text-ink-3">{sc.salaryGrowth}</div>}
+                        </div>
+                      )}
+                    </section>
+                  )}
+
+                  {/* Certifications */}
+                  {sc.certifications?.length ? (
+                    <section className="card p-6 mt-4">
+                      <h3 className="text-base font-bold text-navy mb-3">Certifications to Stack Alongside</h3>
+                      <ul className="space-y-1.5">
+                        {sc.certifications.map((c: string, i: number) => (
+                          <li key={i} className="flex items-start gap-2 text-sm text-ink-2">
+                            <span className="text-amber-text font-bold shrink-0">★</span>
+                            <span>{c}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      {sc.resumeTip && (
+                        <div className="mt-4 p-3 rounded-lg bg-surface-1 border border-border text-sm text-ink-2">
+                          <span className="font-bold text-navy">Resume tip: </span>{sc.resumeTip}
+                        </div>
+                      )}
+                    </section>
+                  ) : null}
+
+                  {/* Top hiring companies */}
+                  {sc.topCompanies?.length ? (
+                    <section className="card p-6 mt-4">
+                      <h3 className="text-base font-bold text-navy mb-3">Top Hiring Companies</h3>
+                      <div className="flex flex-wrap gap-2">
+                        {sc.topCompanies.map((c: string, i: number) => (
+                          <span key={i} className="px-3 py-1 rounded-full text-xs font-medium border border-border bg-white text-ink-2">{c}</span>
+                        ))}
+                      </div>
+                    </section>
+                  ) : null}
+                </>
               )
             })()}
 
