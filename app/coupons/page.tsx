@@ -1,26 +1,10 @@
 'use client'
 
 import { useState, useCallback } from 'react'
-import type { Metadata } from 'next'
 import { Copy, Check, Tag, Clock, Sparkles, BadgePercent, GraduationCap, ChevronRight } from 'lucide-react'
 import { COUPONS, getCouponsByProgram, type Coupon } from '@/lib/coupons'
 import EnquiryModal from '@/components/EnquiryModal'
 
-// ── SEO metadata (exported for Next.js, ignored at runtime in 'use client') ──
-// Note: for metadata export in 'use client' pages use a separate layout.tsx or
-// declare via generateMetadata in a server wrapper. Kept here as reference.
-export const metadata = {
-  title: 'Exclusive Online Degree Discount Coupons 2026 | EdifyEdu',
-  description:
-    'Get verified discount coupons for Online MBA & MCA from UGC DEB approved universities — Amity, JAIN, LPU, Manipal, NMIMS, Symbiosis & 12 more. Save up to ₹30,000.',
-  alternates: { canonical: 'https://edifyedu.in/coupons' },
-  openGraph: {
-    title: 'Exclusive Online Degree Discount Coupons 2026 | EdifyEdu',
-    description: 'Verified discount coupons for Online MBA & MCA. UGC DEB approved universities only.',
-    url: 'https://edifyedu.in/coupons',
-    type: 'website',
-  },
-}
 
 type FilterTab = 'All' | 'MBA' | 'MCA'
 
