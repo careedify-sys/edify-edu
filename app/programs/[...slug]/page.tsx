@@ -1,4 +1,4 @@
-import { notFound, redirect } from 'next/navigation'
+import { notFound, permanentRedirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ChevronRight, BookOpen, Award, Users, Briefcase, TrendingUp } from 'lucide-react'
@@ -140,7 +140,7 @@ export default async function CatchAllProgramPage(
   if (subSlug) {
     const uId = findUniId(subSlug)
     if (uId) {
-      redirect(`/universities/${uId}/${programSlug}`)
+      permanentRedirect(`/universities/${uId}/${programSlug}`)
     }
   }
 
