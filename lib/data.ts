@@ -4043,11 +4043,11 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Accenture', 'Amazon', 'Infosys', 'TATA', 'Wipro', 'Top MNCs'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from SASTRA Deemed University – Online ( — recognised for corporate hiring.'
-  rankingBadge: 'NIRF #42 (University)',
 }
     },
     color: '#1B4FBE',
   enrollments: 500,
+  rankingBadge: 'NIRF #42 (University)',
   },
   {
     id: 'dr-dy-patil-vidyapeeth-online',
