@@ -270,6 +270,8 @@ const nextConfig = {
       { source: '/programs/',                  destination: '/programs',      permanent: true },
       { source: '/compare/',                   destination: '/compare',       permanent: true },
       { source: '/tools/',                     destination: '/tools',         permanent: true },
+      { source: '/index.html',                 destination: '/',              permanent: true },
+      { source: '/index',                      destination: '/',              permanent: true },
     ]
   },
 

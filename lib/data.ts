@@ -325,7 +325,7 @@ export const UNIVERSITIES: University[] = [
       
 
       'BBA': {
-        specs: ['16 Specializations: Entrepreneurship', 'HRM', 'Marketing', 'International Business', 'Family Business', 'Digital Marketing', 'Fin-Tech', 'Retail and E-Commerce', 'Artificial Intelligence', 'HealthCare Management', 'Logistics and Supply Chain Management', 'Foreign Exchange Management', 'Travel & Tourism Management', 'Event Management'],
+        specs: ['Entrepreneurship', 'Human Resource Management', 'Marketing', 'International Business', 'Family Business', 'Digital Marketing', 'FinTech', 'Retail & E-Commerce', 'Artificial Intelligence', 'Healthcare Management', 'Logistics & Supply Chain', 'Foreign Exchange Management', 'Travel & Tourism Management', 'Event Management'],
         fees: '₹0.2L – ₹1.5L',
         duration: '3 Years (6 Semesters)',
         roles: ['Business Analyst', 'Marketing Manager', 'HR Executive', 'Operations Manager', 'Sales Manager', 'Entrepreneur'],
@@ -345,7 +345,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved BCA from Lovely Professional University (LPU) — recognised for corporate hiring.',
       },
       'BA': {
-        specs: ['No formal specializations — broad humanities & soc'],
+        specs: ['Humanities & Social Sciences'],
         fees: '₹0.1L – ₹0.9L',
         duration: '3 Years (6 Semesters)',
         roles: ['Content Writer', 'Journalist', 'Social Worker', 'Educator', 'Public Administrator', 'PR Officer'],
@@ -365,7 +365,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved M.Com from Lovely Professional University (LPU) — recognised for corporate hiring.',
       },
       'MSc': {
-        specs: ['Mathematics focus; no separate specialization', 'Economics focus; research-oriented'],
+        specs: ['Mathematics', 'Economics'],
         fees: '₹14K – ₹56K',
         duration: '2 Years (4 Semesters)',
         roles: ['Data Analyst', 'Actuary', 'Mathematics Lecturer/Professor', 'Quantitative Analyst', 'Research Scientist', 'Statistician'],
@@ -1313,7 +1313,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved BCA from Symbiosis School for Online and Dig — recognised for corporate hiring.',
       },
       'MSc': {
-        specs: ['Data Science (single specialization); research pro', 'Computer Applications specialization; project mand', 'Economics (no sub-specialization); research-intens'],
+        specs: ['Data Science', 'Computer Applications', 'Economics'],
         fees: '₹35K – ₹140K',
         duration: '2 Years (4 Semesters); extendable to 4 years',
         roles: ['Data Scientist', 'ML Engineer', 'Data Analyst', 'Business Intelligence Analyst', 'NLP Engineer', 'Research Data Scientist'],
@@ -1323,7 +1323,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MSc from Symbiosis School for Online and Dig — recognised for corporate hiring.',
       },
       'BSc': {
-        specs: ['Economics honours; interdisciplinary electives fro', 'social sciences'],
+        specs: ['Economics', 'Social Sciences'],
         fees: '₹0.2L – ₹1.5L',
         duration: '3 Years (6 Semesters)',
         roles: ['Economist', 'Data Analyst', 'Financial Analyst', 'Policy Researcher', 'Banking Officer', 'UPSC/Civil Services aspirant'],
@@ -2010,7 +2010,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved BCA from Chandigarh University (CU Online) — recognised for corporate hiring.',
       },
       'MSc': {
-        specs: ['Data Science focus; no sub-specializations; 80 cre'],
+        specs: ['Data Science'],
         fees: '₹0.3L – ₹1.5L',
         duration: '2 Years (4 Semesters)',
         roles: ['Data Scientist (₹11.57 LPA avg)', 'Data Analyst (₹6.36 LPA avg)', 'BI Manager (₹8–20 LPA)', 'Market Research Analyst (₹4.5–12 LPA)', 'Financial Analyst (₹6–18 LPA)', 'Supply Chain Analyst (₹6–16 LPA)'],
