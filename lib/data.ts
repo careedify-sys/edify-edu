@@ -19,6 +19,7 @@ export interface SyllabusSemester {
 }
 
 export interface ProgramDetail {
+  rankingBadge?: string;
   specs: string[]
   fees: string
   roles: string[]
