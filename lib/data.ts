@@ -152,7 +152,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from Jain (Deemed-to-be University) — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #72 (University) · NAAC A++',
       },
       
       
@@ -189,6 +188,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #72 (University 2024)',
   enrollments: 500,
   },
   {
@@ -240,7 +240,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from Amity University — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #54 (University) · NAAC A+',
       },
       
       
@@ -277,6 +276,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  rankingBadge: 'NIRF #54 (University 2024)',
   enrollments: 500,
   },
   {
@@ -327,7 +327,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from Lovely Professional University — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #37 (University) · NAAC A+',
       },
       
       
@@ -384,6 +383,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #37 (University 2024)',
   enrollments: 500,
   },
   {
@@ -421,7 +421,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Dayananda Sagar University (DSU) On — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #101+ (University)',
       },
       'MCA': {
         specs: ['Cloud Computing Technologies', 'Data Science', 'Blockchain Technologies', 'Quantum Computing', 'Artificial Intelligence', 'Deep Learning', 'Big Data Analytics', 'Internet of Things (IoT)', 'Natural Language Processing', 'Mobile Application Development', 'Data Analytics & Visualization', 'Industrial IoT & Automation', 'Business Intelligence Technology', 'Business Data Analytics', 'Quantum Machine Learning'],
@@ -468,6 +467,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -505,7 +505,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Indigo Airlines', 'American Express', 'Cipla', 'Emerson', 'Bajaj', 'Vodafone', 'IBM', 'Genpact', 'Taj Hotels', 'Oberoi Hotels'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from D.Y. Patil University, Navi Mumbai — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #44 (University)',
       },
 
       'BBA': {
@@ -530,6 +529,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  rankingBadge: 'NIRF #44 (University 2024)',
   enrollments: 500,
   },
   {
@@ -580,7 +580,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from University of Petroleum and Energy — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #57 (University) · NAAC A',
       },
       
       
@@ -607,6 +606,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  rankingBadge: 'NIRF #57 (University 2024)',
   enrollments: 500,
   },
   {
@@ -645,7 +645,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Reliance Digital', 'TCS (Tata Consultancy Services)', 'Amazon', 'L&T (Larsen & Toubro)', 'Capgemini', 'UltraTech Cement', 'Deloitte', 'Apple', 'Tesla', 'Google'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Parul University – Online (paruluni — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #101+ (University)',
       },
       'MCA': {
         specs: ['Cybersecurity & Forensic', 'Full Stack Web Development', 'Artificial Intelligence / Machine Learning'],
@@ -712,6 +711,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -761,7 +761,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from Amrita Vishwa Vidyapeetham — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #8 (University) · NAAC A++',
       },
       
       
@@ -808,6 +807,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #8 (University 2024)',
   enrollments: 500,
   },
   {
@@ -911,8 +911,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
-  enrollments: 500,
   rankingBadge: 'NAAC A+ accredited',
+  enrollments: 500,
   },
   {
     id: 'shoolini-university-online',
@@ -1053,7 +1053,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from Manipal University Jaipur — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #38 (University) · NAAC A+',
       },
       
       
@@ -1110,6 +1109,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  rankingBadge: 'NIRF #38 (University 2024)',
   enrollments: 500,
   },
   {
@@ -1157,7 +1157,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from Galgotias University — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #101+ (University)',
       },
       
       
@@ -1194,6 +1193,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -1326,7 +1326,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BBA from Symbiosis School for Online and Dig — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #9 (Management) · NAAC A+',
       },
       'BCA': {
         specs: ['General Management'],
@@ -1360,6 +1359,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #9 (Management 2024)',
   enrollments: 500,
   },
   {
@@ -1468,7 +1468,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Infosys', 'Wipro', 'Amazon', 'IBM', 'Capgemini', 'Tech Mahindra', 'Apollo Hospitals', 'Manipal Hospital', 'Fortis Escorts Hospital', 'Max Healthcare'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Yenepoya (Deemed to be University) — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #95 (University)',
       },
       'MCA': {
         specs: ['Computer Science and Information Technology', 'Cloud Computing and Cyber Security'],
@@ -1514,6 +1513,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  rankingBadge: 'NIRF #95 (University 2024)',
   enrollments: 500,
   },
   {
@@ -1795,7 +1795,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Helix Tech', 'Wockhardt', 'Bajaj Electricals', 'Michelin'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BBA from NMIMS (Narsee Monjee Institute of M — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #14 (Management) · NAAC A+',
       },
       'B.Com': {
         specs: ['Commerce', 'Accountancy', 'Finance'],
@@ -1809,6 +1808,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #14 (Management 2024)',
   enrollments: 500,
   },
   {
@@ -1848,7 +1848,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Manipal Academy of Higher Education — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #5 (University) · NAAC A++',
       },
       'MCA': {
         specs: ['Artificial Intelligence & Machine Learning', 'Cloud Computing', 'Cybersecurity', 'Full Stack Development'],
@@ -1895,6 +1894,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #5 (University 2024)',
   enrollments: 500,
   },
   {
@@ -1944,7 +1944,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from Koneru Lakshmaiah Education Foundation — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #39 (University)',
       },
       
       
@@ -1971,6 +1970,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #39 (University 2024)',
   enrollments: 500,
   },
   {
@@ -2020,7 +2020,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from Chandigarh University — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #26 (University) · NAAC A+',
       },
       
       
@@ -2057,6 +2056,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  rankingBadge: 'NIRF #26 (University 2024)',
   enrollments: 500,
   },
   {
@@ -2094,7 +2094,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Visvesvaraya Technological Universi — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #51 (University)',
       },
       'MCA': {
         specs: ['General', 'Artificial Intelligence & Data Science', 'Cyber Security & Cloud Computing'],
@@ -2131,6 +2130,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  rankingBadge: 'NIRF #51 (University 2024)',
   enrollments: 500,
   },
   {
@@ -2415,8 +2415,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
-  enrollments: 500,
   rankingBadge: 'NAAC A++ accredited',
+  enrollments: 500,
   },
   {
     id: 'bharathidasan-university-online',
@@ -2515,7 +2515,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Hindustan Institute of Technology a — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #101+ (University)',
       },
       'MCA': {
         specs: ['Computer Science and IT', 'Cyber Security & Cloud Computing', 'Data Science'],
@@ -2531,6 +2530,7 @@ export const UNIVERSITIES: University[] = [
       
     },
     color: '#2563EB',
+  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -2568,7 +2568,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Guru Ghasidas Vishwavidyalaya (GGU) — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #59 (University)',
       },
       'MCA': {
         specs: [],
@@ -2615,6 +2614,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #59 (University 2024)',
   enrollments: 500,
   },
   {
@@ -2652,7 +2652,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Dr. Babasaheb Ambedkar Open Univers — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #3 (Open University)',
       },
       'MCA': {
         specs: [],
@@ -2699,6 +2698,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #3 (Open University 2024)',
   enrollments: 500,
   },
   {
@@ -2792,8 +2792,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
-  enrollments: 500,
   rankingBadge: 'NAAC A+ accredited',
+  enrollments: 500,
   },
   {
     id: 'pp-savani-university-online',
@@ -2873,8 +2873,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
-  enrollments: 500,
   rankingBadge: 'NAAC A+ accredited',
+  enrollments: 500,
   },
   {
     id: 'university-of-mysore-online',
@@ -2911,7 +2911,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from University of Mysore (Online) — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #54 (University)',
       },
       'MCA': {
         specs: ['General'],
@@ -2968,6 +2967,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  rankingBadge: 'NIRF #54 (University 2024)',
   enrollments: 500,
   },
   {
@@ -3154,7 +3154,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from CHARUSAT (Charotar University of Sc — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #101+ (University)',
       },
       'MCA': {
         specs: [],
@@ -3191,6 +3190,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -3297,7 +3297,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Maharishi Markandeshwar (Deemed to — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #71 (University)',
       },
       'MCA': {
         specs: [],
@@ -3354,6 +3353,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #71 (University 2024)',
   enrollments: 500,
   },
   {
@@ -3391,10 +3391,10 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Mizoram University (MZU) — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #77 (University)',
       }
     },
     color: '#0891B2',
+  rankingBadge: 'NIRF #77 (University 2024)',
   enrollments: 500,
   },
   {
@@ -3525,10 +3525,10 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Wipro', 'Infosys', 'Deloitte (General university partners)'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Dr. MGR Educational and Research In — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #101+ (University)',
       }
     },
     color: '#2563EB',
+  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -3650,7 +3650,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Capgemini', 'GMR Group', 'LIC of India', 'Public Sector Undertakings (PSUs)', 'Amazon', 'TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Andhra University – Online AUSDE (a — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #55 (University)',
       },
 
 
@@ -3666,6 +3665,7 @@ export const UNIVERSITIES: University[] = [
       },
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #55 (University 2024)',
   enrollments: 500,
   },
   {
@@ -3812,10 +3812,10 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Mahatma Gandhi University (CDOE) — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #37 (University)',
       }
     },
     color: '#0891B2',
+  rankingBadge: 'NIRF #37 (University 2024)',
   enrollments: 500,
   },
   {
@@ -3854,7 +3854,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Vellore Institute of Science and Te — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #11 (University) · NAAC A++',
       },
       'MCA': {
         specs: ['Artificial Intelligence', 'Machine Learning', 'Cyber Security', 'Software Quality Assurance and Reliability', 'Virtual and Augmented Reality', 'Big Data Analytics', 'Computer Architecture', 'Mobile Application Development', 'Cyber Forensics', 'Blockchain Technologies', 'Data Mining Techniques'],
@@ -3870,6 +3869,7 @@ export const UNIVERSITIES: University[] = [
       
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #11 (University 2024)',
   enrollments: 500,
   },
   {
@@ -3917,10 +3917,10 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved B.Com from Karunya Institute of Technology and — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #74 (University)',
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #74 (University 2024)',
   enrollments: 500,
   },
   {
@@ -3959,7 +3959,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Industry placements (government university)'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Kurukshetra University – Online (ku — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #101 (University)',
       },
       'MCA': {
         specs: [],
@@ -4006,6 +4005,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #101 (University 2024)',
   enrollments: 500,
   },
   {
@@ -4047,8 +4047,8 @@ export const UNIVERSITIES: University[] = [
 }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #42 (University 2024)',
   enrollments: 500,
-  rankingBadge: 'NIRF #42 (University)',
   },
   {
     id: 'dr-dy-patil-vidyapeeth-online',
@@ -4102,8 +4102,8 @@ export const UNIVERSITIES: University[] = [
       
     },
     color: '#1B4FBE',
-  enrollments: 500,
   rankingBadge: 'NAAC A++ accredited',
+  enrollments: 500,
   },
   {
     id: 'jamia-millia-islamia-online',
@@ -4142,10 +4142,10 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Jamia Millia Islamia (JMI) — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #11 (University)',
       },
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #11 (University 2024)',
   enrollments: 500,
   },
   {
@@ -4193,7 +4193,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from Christ (Deemed to be University) — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #63 (University) · NAAC A+',
       },
       
       
@@ -4220,6 +4219,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #63 (University 2024)',
   enrollments: 500,
   },
   {
@@ -4293,8 +4293,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
-  enrollments: 500,
   rankingBadge: 'NAAC A accredited',
+  enrollments: 500,
   },
   {
     id: 'bharati-vidyapeeth-university-online',
@@ -4332,7 +4332,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Top MNCs (university placement support)'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Bharati Vidyapeeth (Deemed to be Un — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #81 (University)',
       },
       'MCA': {
         specs: ['Cloud Computing', 'Data Science', 'Linux', 'Open-Source Technologies', 'Mobile Computing', 'Dot Net Technologies', 'Net Centric Technologies', 'Information Systems', 'Big Data', 'IOT', 'Cyber Security', 'Data Management'],
@@ -4369,6 +4368,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
+  rankingBadge: 'NIRF #81 (University 2024)',
   enrollments: 500,
   },
   {
@@ -4547,7 +4547,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from JSS Academy of Higher Education & R — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #34 (University)',
       },
       'BBA': {
         specs: ['Hospital and Health System Management'],
@@ -4561,6 +4560,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #34 (University 2024)',
   enrollments: 500,
   },
   {
@@ -4609,7 +4609,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BBA from Alliance University (Online) — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #101+ (University)',
       },
       'B.Com': {
         specs: ['Accounting and Taxation', 'Finance'],
@@ -4623,6 +4622,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -4758,8 +4758,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
-  enrollments: 500,
   rankingBadge: 'NAAC A accredited',
+  enrollments: 500,
   },
   {
     id: 'amet-university-online',
@@ -4819,8 +4819,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
-  enrollments: 500,
   rankingBadge: 'NAAC A accredited',
+  enrollments: 500,
   },
   {
     id: 'guru-nanak-dev-university-online',
@@ -4933,8 +4933,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
-  enrollments: 500,
   rankingBadge: 'NAAC A accredited',
+  enrollments: 500,
   },
   {
     id: 'savitribai-phule-pune-university-online',
@@ -5090,8 +5090,8 @@ export const UNIVERSITIES: University[] = [
       },
     },
     color: '#C0392B',
-  enrollments: 500,
   rankingBadge: 'NAAC A+ accredited',
+  enrollments: 500,
   },  {
     id: 'sathyabama-university-online',
     name: 'Sathyabama Institute of Science and Technology (Centre Online',
@@ -5137,10 +5137,10 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BBA from Sathyabama Institute of Science and — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #51 (University)',
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #51 (University 2024)',
   enrollments: 500,
   },
   {
@@ -5231,8 +5231,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
-  enrollments: 500,
   rankingBadge: 'NAAC A++ accredited',
+  enrollments: 500,
   },
   {
     id: 'anna-university-online',
@@ -5310,7 +5310,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Vels Institute of Science, Technolo — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #101 (University)',
       },
       'BBA': {
         specs: ['General Management'],
@@ -5324,6 +5323,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
+  rankingBadge: 'NIRF #101 (University 2024)',
   enrollments: 500,
   },
   {
@@ -5437,8 +5437,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
-  enrollments: 500,
   rankingBadge: 'NAAC A accredited',
+  enrollments: 500,
   },
   {
     id: 'iift-online',
@@ -5476,10 +5476,10 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Indian Institute of Foreign Trade ( — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #7 (Management)',
       },
     },
     color: '#2563EB',
+  rankingBadge: 'NIRF #7 (Management 2024)',
   enrollments: 500,
   },
   {
@@ -5520,8 +5520,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
-  enrollments: 500,
   rankingBadge: 'NAAC A+ accredited',
+  enrollments: 500,
   },
   {
     id: 'bits-pilani-online',
@@ -5560,10 +5560,10 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Birla Institute of Technology (BIT) — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #26 (University) · NAAC A',
       },
     },
     color: '#0891B2',
+  rankingBadge: 'NIRF #26 (University 2024)',
   enrollments: 500,
   },
   {
@@ -5641,7 +5641,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Datta Meghe Institute of Higher Edu — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #42 (University)',
       },
       'MCA': {
         specs: ['general'],
@@ -5657,6 +5656,7 @@ export const UNIVERSITIES: University[] = [
       
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #42 (University 2024)',
   enrollments: 500,
   },
   {
@@ -5696,10 +5696,10 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved M.Com from KIIT Deemed to be University — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #16 (University) · NAAC A+',
       },
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #16 (University 2024)',
   enrollments: 500,
   },
   {
@@ -5738,7 +5738,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Centurion University of Technology — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #101+ (University)',
       },
       'MCA': {
         specs: ['general'],
@@ -5752,6 +5751,7 @@ export const UNIVERSITIES: University[] = [
       },
     },
     color: '#2563EB',
+  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -5847,8 +5847,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
-  enrollments: 500,
   rankingBadge: 'NAAC A+ accredited',
+  enrollments: 500,
   },
   {
     id: 'bs-abdur-rahman-university-online',
@@ -5901,8 +5901,8 @@ export const UNIVERSITIES: University[] = [
       
     },
     color: '#2563EB',
-  enrollments: 500,
   rankingBadge: 'NAAC A+ accredited',
+  enrollments: 500,
   },
   {
     id: 'srm-institute-science-technology-online',
@@ -5950,7 +5950,6 @@ export const UNIVERSITIES: University[] = [
         edifySkills: ['Advanced Excel & Power BI', 'Python basics for analytics', 'Tableau for data visualisation', 'Google Analytics certification', 'Leadership & Corporate Communication'],
         edifyProjects: ['Build a financial dashboard using Power BI for a mock company', 'Design a digital marketing campaign for a local brand', 'HR analytics case study using Excel'],
         edifyInternships: ['Business Analyst Intern', 'Digital Marketing Intern', 'Financial Analyst Intern', 'HR Operations Intern'],
-  rankingBadge: 'NIRF #17 (University) · NAAC A++',
       },
       'MCA': {
         specs: ['General', 'Generative AI'],
@@ -6030,6 +6029,7 @@ export const UNIVERSITIES: University[] = [
       },
     },
     color: '#C0392B',
+  rankingBadge: 'NIRF #17 (University 2024)',
   enrollments: 500,
   },  {
     id: 'university-of-madras-online',
@@ -6106,10 +6106,10 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Kalasalingam Academy of Research an — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #30 (University)',
       },
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #30 (University 2024)',
   enrollments: 500,
   },
   {
@@ -6225,10 +6225,10 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BSc from Sri Ramachandra Institute of Higher — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #55 (University)',
       }
     },
     color: '#1B4FBE',
+  rankingBadge: 'NIRF #55 (University 2024)',
   enrollments: 500,
   },
   {
@@ -6427,10 +6427,10 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Jagan Nath University (Online) — recognised for corporate hiring.',
-  rankingBadge: 'NIRF #45 (University)',
       }
     },
     color: '#0891B2',
+  rankingBadge: 'NIRF #45 (University 2024)',
   enrollments: 500,
   },
   {
@@ -6549,8 +6549,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
-  enrollments: 500,
   rankingBadge: 'NAAC A accredited',
+  enrollments: 500,
   },
   {
     id: 'jawaharlal-nehru-university-online',
@@ -6587,10 +6587,10 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
         careerOutcome: 'MA from JAWAHARLAL NEHRU UNIVERSITY is ideal for civil services, research and education careers.',
-  rankingBadge: 'NIRF #2 (University)',
       }
     },
     color: '#6366f1',
+  rankingBadge: 'NIRF #2 (University 2024)',
   enrollments: 500,
   },
   {
@@ -6639,7 +6639,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['HUL','Reliance','HDFC Bank','Amazon','Flipkart'],
         internshipType: 'Industry project',
         careerOutcome: 'BBA from JAMIA HAMDARD provides a recognised management degree for entry-level corporate roles.',
-  rankingBadge: 'NIRF #21 (University)',
       },
       'BCA': {
         specs: ['Data Science','Web Development','Cloud Computing','Cybersecurity','AI & ML','Mobile Development'],
@@ -6686,6 +6685,7 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#dc2626',
+  rankingBadge: 'NIRF #21 (University 2024)',
   enrollments: 500,
   },
   {
@@ -6724,7 +6724,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Government Departments','NGOs','Media Houses','Ed-tech firms','BPOs'],
         internshipType: 'Community or media project',
         careerOutcome: 'BA is valid for most government jobs and civil services. Widely accepted degree.',
-  rankingBadge: 'NIRF #15 (University)',
       },
       'B.Com': {
         specs: ['Finance','Accounting','Taxation','E-Commerce','Banking & Insurance'],
@@ -6758,6 +6757,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#b45309',
+  rankingBadge: 'NIRF #15 (University 2024)',
   enrollments: 500,
   },
   {
@@ -6795,7 +6795,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
         careerOutcome: 'B.Com from UNIVERSITY OF KERALA is valid for banking, finance and government roles.',
-  rankingBadge: 'NIRF #21 (University)',
       },
       'BBA': {
         specs: ['Finance','Marketing','Human Resource Management','Entrepreneurship','Digital Marketing','Retail Management'],
@@ -6829,6 +6828,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0369a1',
+  rankingBadge: 'NIRF #21 (University 2024)',
   enrollments: 500,
   },
   {
@@ -6868,10 +6868,10 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS','Infosys','Wipro','HDFC Bank','Deloitte','Amazon'],
         internshipType: 'Virtual industry project',
         careerOutcome: 'MBA from BITS Pilani Work Integrated Learning Programmes (WILP) is UGC DEB approved and valid for corporate hiring and government roles across India.',
-  rankingBadge: 'NIRF #26 (University)',
       },
     },
     color: '#86198f',
+  rankingBadge: 'NIRF #26 (University 2024)',
   enrollments: 500,
   },
   {
@@ -6920,7 +6920,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['HUL','Reliance','HDFC Bank','Amazon','Flipkart'],
         internshipType: 'Industry project',
         careerOutcome: 'BBA from GRAPHIC ERA UNIVERSITY provides a recognised management degree for entry-level corporate roles.',
-  rankingBadge: 'NIRF #48 (University)',
       },
       'BCA': {
         specs: ['Data Science','Web Development','Cloud Computing','Cybersecurity','AI & ML','Mobile Development'],
@@ -6957,6 +6956,7 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#059669',
+  rankingBadge: 'NIRF #48 (University 2024)',
   enrollments: 500,
   },
   {
@@ -6994,7 +6994,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
         careerOutcome: 'MA from DEVI AHILYA VISHWAVIDYALAYA is ideal for civil services, research and education careers.',
-  rankingBadge: 'NIRF #101+ (University)',
       },
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Operations Management', 'Data Science', 'Digital Marketing', 'International Business'],
@@ -7008,6 +7007,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#d97706',
+  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -7045,7 +7045,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Government Departments','NGOs','Media Houses','Ed-tech firms','BPOs'],
         internshipType: 'Community or media project',
         careerOutcome: 'BA is valid for most government jobs and civil services. Widely accepted degree.',
-  rankingBadge: 'NIRF #63 (University)',
       },
       'B.Com': {
         specs: ['Finance','Accounting','Taxation','E-Commerce','Banking & Insurance'],
@@ -7089,6 +7088,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#16a34a',
+  rankingBadge: 'NIRF #63 (University 2024)',
   enrollments: 500,
   },
   {
@@ -7126,7 +7126,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
         careerOutcome: 'B.Com from SHANMUGHA ARTS, SCIENCE, TECHNOLOGY & RESEARCH ACADEMY is valid for banking, finance and government roles.',
-  rankingBadge: 'NIRF #28 (University)',
       },
       'BBA': {
         specs: ['Finance','Marketing','Human Resource Management','Entrepreneurship','Digital Marketing','Retail Management'],
@@ -7193,6 +7192,7 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#9333ea',
+  rankingBadge: 'NIRF #28 (University 2024)',
   enrollments: 500,
   },
   {
@@ -7230,10 +7230,10 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
         careerOutcome: 'MA from UNIVERSITY OF MUMBAI is ideal for civil services, research and education careers.',
-  rankingBadge: 'NIRF #61 (University)',
       }
     },
     color: '#b45309',
+  rankingBadge: 'NIRF #61 (University 2024)',
   enrollments: 500,
   },
   {
@@ -7271,7 +7271,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
         careerOutcome: 'MA from UNIVERSITY OF JAMMU is ideal for civil services, research and education careers.',
-  rankingBadge: 'NIRF #50 (University)',
       },
       'M.Com': {
         specs: ['Finance','Accounting','Taxation','Business Studies','E-Commerce'],
@@ -7285,6 +7284,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0369a1',
+  rankingBadge: 'NIRF #50 (University 2024)',
   enrollments: 500,
   },
   {
@@ -7322,7 +7322,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Deloitte','EY','KPMG','HDFC Bank','ICICI Bank'],
         internshipType: 'Finance firm internship',
         careerOutcome: 'M.Com from SHIVAJI UNIVERSITY advances commerce careers in finance, tax and audit.',
-  rankingBadge: 'NIRF #101+ (University)',
       },
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Operations Management', 'Data Science', 'Digital Marketing', 'International Business'],
@@ -7336,6 +7335,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#15803d',
+  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -7373,7 +7373,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Government Departments','NGOs','Media Houses','Ed-tech firms','BPOs'],
         internshipType: 'Community or media project',
         careerOutcome: 'BA is valid for most government jobs and civil services. Widely accepted degree.',
-  rankingBadge: 'NIRF #67 (University)',
       },
       'B.Com': {
         specs: ['Finance','Accounting','Taxation','E-Commerce','Banking & Insurance'],
@@ -7417,6 +7416,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#c2410c',
+  rankingBadge: 'NIRF #67 (University 2024)',
   enrollments: 500,
   },
   {
@@ -7464,7 +7464,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['HUL','Reliance','HDFC Bank','Amazon','Flipkart'],
         internshipType: 'Industry project',
         careerOutcome: 'BBA from GURU GOBIND SINGH INDRAPRASTHA VISHWAVIDYALAYA provides a recognised management degree for entry-level corporate roles.',
-  rankingBadge: 'NIRF #80 (University)',
       },
       'MA': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
@@ -7479,6 +7478,7 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#92400e',
+  rankingBadge: 'NIRF #80 (University 2024)',
   enrollments: 500,
   },
   {
@@ -7516,7 +7516,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
         careerOutcome: 'B.Com from BANGALORE UNIVERSITY is valid for banking, finance and government roles.',
-  rankingBadge: 'NIRF #101+ (University)',
       },
       'MA': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
@@ -7540,6 +7539,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#312e81',
+  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -7570,9 +7570,9 @@ export const UNIVERSITIES: University[] = [
     programs: [],
     programDetails: {
       
-  rankingBadge: 'NIRF #74 (Engineering)',
     },
     color: '#134e4a',
+  rankingBadge: 'NIRF #74 (Engineering 2024)',
   enrollments: 500,
   },
   {
@@ -7620,7 +7620,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
         careerOutcome: 'B.Com from DAYAL BAGH EDUCATIONAL INSTITUTE is valid for banking, finance and government roles.',
-  rankingBadge: 'NIRF #101+ (University)',
       },
       'BBA': {
         specs: ['Finance','Marketing','Human Resource Management','Entrepreneurship','Digital Marketing','Retail Management'],
@@ -7654,6 +7653,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891b2',
+  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -7694,8 +7694,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#059669',
-  enrollments: 500,
   rankingBadge: 'NAAC A+ accredited',
+  enrollments: 500,
   },
   {
     id: 'bharath-university-online',
@@ -7732,7 +7732,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Government Departments','NGOs','Media Houses','Ed-tech firms','BPOs'],
         internshipType: 'Community or media project',
         careerOutcome: 'BA is valid for most government jobs and civil services. Widely accepted degree.',
-  rankingBadge: 'NIRF #73 (University)',
       },
       'B.Com': {
         specs: ['Finance','Accounting','Taxation','E-Commerce','Banking & Insurance'],
@@ -7756,6 +7755,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#d97706',
+  rankingBadge: 'NIRF #73 (University 2024)',
   enrollments: 500,
   },
   {
@@ -7849,8 +7849,8 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#0e7490',
-  enrollments: 500,
   rankingBadge: 'NAAC B++ accredited',
+  enrollments: 500,
   },
   {
     id: 'deen-dayal-upadhyay-gorakhpur-university-online',
@@ -7887,7 +7887,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
         careerOutcome: 'B.Com from DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY is valid for banking, finance and government roles.',
-  rankingBadge: 'NIRF #96 (University)',
       },
       'BBA': {
         specs: ['Finance','Marketing','Human Resource Management','Entrepreneurship','Digital Marketing','Retail Management'],
@@ -7931,6 +7930,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#4f46e5',
+  rankingBadge: 'NIRF #96 (University 2024)',
   enrollments: 500,
   },
   {
@@ -7978,7 +7978,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
         careerOutcome: 'MA from GURU JAMBHESHWAR UNIVERSITY OF SCIENCE AND TECHNOLOGY is ideal for civil services, research and education careers.',
-  rankingBadge: 'NIRF #101+ (University)',
       },
       'M.Com': {
         specs: ['Finance','Accounting','Taxation','Business Studies','E-Commerce'],
@@ -8003,6 +8002,7 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#065f46',
+  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -8063,8 +8063,8 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#7c3aed',
-  enrollments: 500,
   rankingBadge: 'NAAC A+ accredited',
+  enrollments: 500,
   },
   {
     id: 'mahatma-jyotiba-phule-rohilkhand-university-online',
@@ -8101,7 +8101,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Government Departments','NGOs','Media Houses','Ed-tech firms','BPOs'],
         internshipType: 'Community or media project',
         careerOutcome: 'BA is valid for most government jobs and civil services. Widely accepted degree.',
-  rankingBadge: 'NIRF #78 (University)',
       },
       'MA': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
@@ -8125,6 +8124,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0284c7',
+  rankingBadge: 'NIRF #78 (University 2024)',
   enrollments: 500,
   },
   {
@@ -8208,8 +8208,8 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#b45309',
-  enrollments: 500,
   rankingBadge: 'NAAC A accredited',
+  enrollments: 500,
   },
   {
     id: 'meenakshi-academy-higher-education-online',
@@ -8246,7 +8246,6 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Government Departments','NGOs','Media Houses','Ed-tech firms','BPOs'],
         internshipType: 'Community or media project',
         careerOutcome: 'BA is valid for most government jobs and civil services. Widely accepted degree.',
-  rankingBadge: 'NIRF #101+ (University)',
       },
       'B.Com': {
         specs: ['Finance','Accounting','Taxation','E-Commerce','Banking & Insurance'],
@@ -8270,6 +8269,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#4f46e5',
+  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -8371,8 +8371,8 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#0369a1',
-  enrollments: 500,
   rankingBadge: 'NAAC A+ accredited',
+  enrollments: 500,
   },
   {
     id: 'sage-university-online',
@@ -8453,8 +8453,8 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#0f766e',
-  enrollments: 500,
   rankingBadge: 'NAAC A accredited',
+  enrollments: 500,
   },
   {
     id: 'shree-guru-gobind-singh-tricentenary-university-online',
@@ -8537,8 +8537,8 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#1d4ed8',
-  enrollments: 500,
   rankingBadge: 'NAAC A accredited',
+  enrollments: 500,
   },
   {
     id: 'shri-ramasamy-memorial-university-online',
@@ -8631,8 +8631,8 @@ export const UNIVERSITIES: University[] = [
 
     },
     color: '#065f46',
-  enrollments: 500,
   rankingBadge: 'NAAC A accredited',
+  enrollments: 500,
   },
   {
     id: 'assam-down-town-university-online',
