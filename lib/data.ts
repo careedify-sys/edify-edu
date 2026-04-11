@@ -3390,8 +3390,8 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Mizoram University (MZU) — recognised for corporate hiring.',
-      }
   rankingBadge: 'NIRF #77 (University)',
+      }
     },
     color: '#0891B2',
   enrollments: 500,
@@ -3524,8 +3524,8 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Wipro', 'Infosys', 'Deloitte (General university partners)'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Dr. MGR Educational and Research In — recognised for corporate hiring.',
-      }
   rankingBadge: 'NIRF #101+ (University)',
+      }
     },
     color: '#2563EB',
   enrollments: 500,
@@ -3811,8 +3811,8 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Mahatma Gandhi University (CDOE) — recognised for corporate hiring.',
-      }
   rankingBadge: 'NIRF #37 (University)',
+      }
     },
     color: '#0891B2',
   enrollments: 500,
@@ -3916,8 +3916,8 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved B.Com from Karunya Institute of Technology and — recognised for corporate hiring.',
-      }
   rankingBadge: 'NIRF #74 (University)',
+      }
     },
     color: '#1B4FBE',
   enrollments: 500,
@@ -4042,9 +4042,9 @@ export const UNIVERSITIES: University[] = [
         avgSalary: '₹5L – ₹14L per annum',
         topCompanies: ['Accenture', 'Amazon', 'Infosys', 'TATA', 'Wipro', 'Top MNCs'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from SASTRA Deemed University – Online ( — recognised for corporate hiring.'}
-
+        careerOutcome: 'UGC DEB approved MBA from SASTRA Deemed University – Online ( — recognised for corporate hiring.'
   rankingBadge: 'NIRF #42 (University)',
+}
     },
     color: '#1B4FBE',
   enrollments: 500,
@@ -5136,8 +5136,8 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BBA from Sathyabama Institute of Science and — recognised for corporate hiring.',
-      }
   rankingBadge: 'NIRF #51 (University)',
+      }
     },
     color: '#1B4FBE',
   enrollments: 500,
@@ -6224,8 +6224,8 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BSc from Sri Ramachandra Institute of Higher — recognised for corporate hiring.',
-      }
   rankingBadge: 'NIRF #55 (University)',
+      }
     },
     color: '#1B4FBE',
   enrollments: 500,
@@ -6426,8 +6426,8 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Jagan Nath University (Online) — recognised for corporate hiring.',
-      }
   rankingBadge: 'NIRF #45 (University)',
+      }
     },
     color: '#0891B2',
   enrollments: 500,
@@ -6586,8 +6586,8 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
         careerOutcome: 'MA from JAWAHARLAL NEHRU UNIVERSITY is ideal for civil services, research and education careers.',
-      }
   rankingBadge: 'NIRF #2 (University)',
+      }
     },
     color: '#6366f1',
   enrollments: 500,
@@ -7229,8 +7229,8 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
         careerOutcome: 'MA from UNIVERSITY OF MUMBAI is ideal for civil services, research and education careers.',
-      }
   rankingBadge: 'NIRF #61 (University)',
+      }
     },
     color: '#b45309',
   enrollments: 500,
