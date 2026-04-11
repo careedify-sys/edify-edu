@@ -355,7 +355,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved BA from Lovely Professional University (LPU) — recognised for corporate hiring.',
       },
       'M.Com': {
-        specs: ['Commerce & Finance focus; no separate sub-speciali'],
+        specs: ['Commerce & Finance'],
         fees: '₹20K – ₹70K',
         duration: '2 Years (4 Semesters)',
         roles: ['Chartered Accountant support', 'Financial Analyst', 'Tax Consultant', 'Auditor', 'Finance Manager', 'Banking Officer'],
