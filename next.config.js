@@ -272,6 +272,15 @@ const nextConfig = {
       { source: '/tools/',                     destination: '/tools',         permanent: true },
       { source: '/index.html',                 destination: '/',              permanent: true },
       { source: '/index',                      destination: '/',              permanent: true },
+      // Legacy cPanel / WordPress URLs Google has indexed
+      { source: '/cgi-sys/suspendedpage.cgi',  destination: '/',              permanent: true },
+      { source: '/cgi-sys/:path*',             destination: '/',              permanent: true },
+      { source: '/author/:path*',              destination: '/blog',          permanent: true },
+      { source: '/feed',                       destination: '/blog',          permanent: true },
+      { source: '/feed/',                      destination: '/blog',          permanent: true },
+      { source: '/wp-content/:path*',          destination: '/',              permanent: true },
+      { source: '/wp-admin/:path*',            destination: '/',              permanent: true },
+      { source: '/wp-login.php',               destination: '/',              permanent: true },
     ]
   },
 
