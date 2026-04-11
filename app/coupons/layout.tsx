@@ -1,22 +1,17 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Online MBA & MCA Discount Coupons 2026 — Save up to ₹30,000 | EdifyEdu',
+  title: 'Online MBA Fees Discount Coupons 2026 — Save up to ₹30,000 | EdifyEdu',
   description:
-    'Get verified online MBA & MCA coupon codes 2026 — Amity University online coupon AMITY25, JAIN online discount JAIN20, LPU online MBA offer LPU20, Manipal online MBA coupon MANIPAL20, Chandigarh University online discount, NMIMS online coupon, Symbiosis online MBA coupon, online MCA discount code. Save up to ₹30,000 on UGC DEB approved universities.',
+    'Save on online MBA fees with verified coupon codes 2026. NMIMS online MBA fees discount, Amity online MBA fees offer, Symbiosis online MBA fees coupon, UPES online MBA fees savings, Sikkim Manipal MBA discount & more. Reduce your online MBA fee structure by 15–25%. UGC DEB approved universities.',
   keywords: [
-    'online mba coupon code',
-    'amity university online coupon',
-    'jain university online discount',
-    'lpu online mba offer',
+    'online mba fees', 'nmims online mba fees', 'amity online mba fees', 'symbiosis online mba fees',
+    'amity university online mba fees', 'upes online mba fees', 'sikkim manipal university online mba fees',
+    'online mba fees in india', 'online mba fee structure', 'symbiosis pune online mba fees',
+    'sp jain online mba fees', 'icfai online mba fees', 'online mba coupon code',
+    'amity university online coupon', 'nmims online coupon', 'symbiosis online mba coupon',
+    'online mca discount code', 'online mba fee discount india', 'lpu online mba offer',
     'manipal online mba coupon',
-    'chandigarh university online discount',
-    'nmims online coupon',
-    'symbiosis online mba coupon',
-    'online mca discount code',
-    'online degree coupon code 2026',
-    'ugc deb university discount',
-    'online mba fee discount india',
   ],
   openGraph: {
     title: 'Online MBA & MCA Discount Coupons 2026 — Save up to ₹30,000 | EdifyEdu',
