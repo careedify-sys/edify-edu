@@ -911,6 +911,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#2563EB',
   enrollments: 500,
+  rankingBadge: 'NAAC A+ accredited',
   },
   {
     id: 'shoolini-university-online',
@@ -2414,6 +2415,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#1B4FBE',
   enrollments: 500,
+  rankingBadge: 'NAAC A++ accredited',
   },
   {
     id: 'bharathidasan-university-online',
@@ -2790,6 +2792,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#2563EB',
   enrollments: 500,
+  rankingBadge: 'NAAC A+ accredited',
   },
   {
     id: 'pp-savani-university-online',
@@ -2870,6 +2873,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#2563EB',
   enrollments: 500,
+  rankingBadge: 'NAAC A+ accredited',
   },
   {
     id: 'university-of-mysore-online',
@@ -4098,6 +4102,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#1B4FBE',
   enrollments: 500,
+  rankingBadge: 'NAAC A++ accredited',
   },
   {
     id: 'jamia-millia-islamia-online',
@@ -4288,6 +4293,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#0891B2',
   enrollments: 500,
+  rankingBadge: 'NAAC A accredited',
   },
   {
     id: 'bharati-vidyapeeth-university-online',
@@ -4752,6 +4758,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#0891B2',
   enrollments: 500,
+  rankingBadge: 'NAAC A accredited',
   },
   {
     id: 'amet-university-online',
@@ -4812,6 +4819,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#0891B2',
   enrollments: 500,
+  rankingBadge: 'NAAC A accredited',
   },
   {
     id: 'guru-nanak-dev-university-online',
@@ -4925,6 +4933,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#0891B2',
   enrollments: 500,
+  rankingBadge: 'NAAC A accredited',
   },
   {
     id: 'savitribai-phule-pune-university-online',
@@ -5081,6 +5090,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#C0392B',
   enrollments: 500,
+  rankingBadge: 'NAAC A+ accredited',
   },  {
     id: 'sathyabama-university-online',
     name: 'Sathyabama Institute of Science and Technology (Centre Online',
@@ -5221,6 +5231,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#1B4FBE',
   enrollments: 500,
+  rankingBadge: 'NAAC A++ accredited',
   },
   {
     id: 'anna-university-online',
@@ -5426,6 +5437,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#0891B2',
   enrollments: 500,
+  rankingBadge: 'NAAC A accredited',
   },
   {
     id: 'iift-online',
@@ -5508,6 +5520,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#2563EB',
   enrollments: 500,
+  rankingBadge: 'NAAC A+ accredited',
   },
   {
     id: 'bits-pilani-online',
@@ -5834,6 +5847,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#2563EB',
   enrollments: 500,
+  rankingBadge: 'NAAC A+ accredited',
   },
   {
     id: 'bs-abdur-rahman-university-online',
@@ -5887,6 +5901,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#2563EB',
   enrollments: 500,
+  rankingBadge: 'NAAC A+ accredited',
   },
   {
     id: 'srm-institute-science-technology-online',
@@ -6534,6 +6549,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#0891B2',
   enrollments: 500,
+  rankingBadge: 'NAAC A accredited',
   },
   {
     id: 'jawaharlal-nehru-university-online',
@@ -7678,6 +7694,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#059669',
   enrollments: 500,
+  rankingBadge: 'NAAC A+ accredited',
   },
   {
     id: 'bharath-university-online',
@@ -7832,6 +7849,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#0e7490',
   enrollments: 500,
+  rankingBadge: 'NAAC B++ accredited',
   },
   {
     id: 'deen-dayal-upadhyay-gorakhpur-university-online',
@@ -8045,6 +8063,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#7c3aed',
   enrollments: 500,
+  rankingBadge: 'NAAC A+ accredited',
   },
   {
     id: 'mahatma-jyotiba-phule-rohilkhand-university-online',
@@ -8189,6 +8208,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#b45309',
   enrollments: 500,
+  rankingBadge: 'NAAC A accredited',
   },
   {
     id: 'meenakshi-academy-higher-education-online',
@@ -8351,6 +8371,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#0369a1',
   enrollments: 500,
+  rankingBadge: 'NAAC A+ accredited',
   },
   {
     id: 'sage-university-online',
@@ -8432,6 +8453,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#0f766e',
   enrollments: 500,
+  rankingBadge: 'NAAC A accredited',
   },
   {
     id: 'shree-guru-gobind-singh-tricentenary-university-online',
@@ -8515,6 +8537,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#1d4ed8',
   enrollments: 500,
+  rankingBadge: 'NAAC A accredited',
   },
   {
     id: 'shri-ramasamy-memorial-university-online',
@@ -8608,6 +8631,7 @@ export const UNIVERSITIES: University[] = [
     },
     color: '#065f46',
   enrollments: 500,
+  rankingBadge: 'NAAC A accredited',
   },
   {
     id: 'assam-down-town-university-online',

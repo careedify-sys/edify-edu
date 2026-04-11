@@ -73,8 +73,8 @@
     "university": "Mangalayatan University Online",
     "slug": "mangalayatan-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A+ accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "Manipal University Jaipur Online",
@@ -136,8 +136,8 @@
     "university": "Karnataka State Open University Online",
     "slug": "karnataka-state-open-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A++ accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "Hindustan Institute Technology Online",
@@ -164,15 +164,15 @@
     "university": "Marwadi University Online",
     "slug": "marwadi-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A+ accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "PP Savani University Online",
     "slug": "pp-savani-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A+ accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "University Of Mysore Online",
@@ -255,8 +255,8 @@
     "university": "DR Dy Patil Vidyapeeth Online",
     "slug": "dr-dy-patil-vidyapeeth-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A++ accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "Jamia Millia Islamia Online",
@@ -276,8 +276,8 @@
     "university": "Shobhit University Online",
     "slug": "shobhit-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "Bharati Vidyapeeth University Online",
@@ -304,29 +304,29 @@
     "university": "Ganpat University Online",
     "slug": "ganpat-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "Amet University Online",
     "slug": "amet-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "Jaypee University Online",
     "slug": "jaypee-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "SRM University Sikkim Online",
     "slug": "srm-university-sikkim-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A+ accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "Sathyabama University Online",
@@ -339,8 +339,8 @@
     "university": "Karunya Kcode Online",
     "slug": "karunya-kcode-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A++ accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "Vels University Online",
@@ -353,8 +353,8 @@
     "university": "Noida International University Online",
     "slug": "noida-international-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "IIFT Online",
@@ -367,8 +367,8 @@
     "university": "Gujarat Technological University Online",
     "slug": "gujarat-technological-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A+ accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "BITS Pilani Online",
@@ -402,15 +402,15 @@
     "university": "Jaipur National University Online",
     "slug": "jaipur-national-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A+ accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "BS Abdur Rahman University Online",
     "slug": "bs-abdur-rahman-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A+ accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "Kalasalingam University Online",
@@ -437,8 +437,8 @@
     "university": "Arka Jain University Online",
     "slug": "arka-jain-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "Jawaharlal Nehru University Online",
@@ -563,8 +563,8 @@
     "university": "Adichunchanagiri University Online",
     "slug": "adichunchanagiri-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A+ accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "Bharath University Online",
@@ -577,8 +577,8 @@
     "university": "Chhatrapati Shahu Ji Maharaj University Online",
     "slug": "chhatrapati-shahu-ji-maharaj-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC B++ accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "Deen Dayal Upadhyay Gorakhpur University Online",
@@ -598,8 +598,8 @@
     "university": "Maharshi Dayanand University Online",
     "slug": "maharshi-dayanand-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A+ accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "Mahatma Jyotiba Phule Rohilkhand University Online",
@@ -612,8 +612,8 @@
     "university": "Mats University Online",
     "slug": "mats-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "Meenakshi Academy Higher Education Online",
@@ -626,28 +626,28 @@
     "university": "Mody University Online",
     "slug": "mody-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A+ accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "Sage University Online",
     "slug": "sage-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "Shree Guru Gobind Singh Tricentenary University Online",
     "slug": "shree-guru-gobind-singh-tricentenary-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A accredited",
+    "ranking_source": "NAAC"
   },
   {
     "university": "Shri Ramasamy Memorial University Online",
     "slug": "shri-ramasamy-memorial-university-online",
     "enrollments": 500,
-    "ranking_text": null,
-    "ranking_source": null
+    "ranking_text": "NAAC A accredited",
+    "ranking_source": "NAAC"
   }
 ]
