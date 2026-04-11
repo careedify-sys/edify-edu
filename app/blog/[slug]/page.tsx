@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation'
+import { notFound, permanentRedirect } from 'next/navigation'
 import Link from 'next/link'
 import { Metadata, ResolvingMetadata } from 'next'
 import { Clock, Calendar, ChevronRight, Hash, BookOpen } from 'lucide-react'
@@ -101,8 +101,14 @@ export async function generateStaticParams() {
 
 // ── Page component ────────────────────────────────────────────────────────────
 
+// Slugs with canonical URLs under /online-mca/ — redirect blog route to canonical
+const ONLINE_MCA_SLUGS = ['online-mca-course-india', 'amity-online-mca-fees-review']
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = params instanceof Promise ? await params : params
+
+  if (ONLINE_MCA_SLUGS.includes(slug)) permanentRedirect(`/online-mca/${slug}`)
+
   const post = getBlogPost(slug)
 
   if (!post || post.status !== 'published') return notFound()

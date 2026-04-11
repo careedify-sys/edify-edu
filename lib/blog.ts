@@ -10440,12 +10440,12 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'online-mca-course-india',
-    title: 'Online MCA Course in India: Fees, Colleges and Career Scope 2025',
-    seoTitle: 'Online MCA Course India 2025 — Fees, Top Colleges and Career Scope',
-    metaDescription: 'Online MCA course in India 2025 — fees from Rs.50,000 to Rs.2.2L, top UGC-approved colleges, specialisation guide, and realistic salary data for working professionals.',
+    title: 'Online MCA Course in India: Fees, Colleges and Career Scope 2026',
+    seoTitle: 'Online MCA Course India 2026 — Fees, Top Colleges and Career Scope',
+    metaDescription: 'Online MCA course in India 2026 — fees from Rs.50,000 to Rs.2.2L, top UGC-approved colleges, specialisation guide, and realistic salary data for working professionals.',
     category: 'Online MCA Programs',
-    tags: ["online mca course","mca online","online mca degree","top online mca colleges in india","online mca program","online mca course fees","best online mca india"],
-    publishedAt: '2026-04-10',
+    tags: ["online mca course","mca online","online mca program","online mca course fees","online mca degree","online mca course in india","top online mca colleges in india","mca online verification"],
+    publishedAt: '2026-04-11',
     readTime: 10,
     targetKeyword: 'online mca course',
     relatedUniversities: [],
@@ -10470,7 +10470,7 @@ export const BLOG_POSTS: BlogPost[] = [
             "a": "Yes. Most online MCA programs run weekend live classes with recorded lectures available anytime. Typical commitment is 8-12 hours per week depending on the university."
       },
       {
-            "q": "Which online MCA specialisation has the best career scope in 2025?",
+            "q": "Which online MCA specialisation has the best career scope in 2026?",
             "a": "AI and Machine Learning, Cybersecurity, and Cloud Computing have the strongest demand. Full Stack Development is a solid pick if your goal is landing a developer role quickly after graduation."
       },
       {
@@ -10479,7 +10479,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
             "q": "What is the average salary after completing an online MCA?",
-            "a": "Freshers start between Rs.3-7 LPA. With 4-7 years of experience in data science, cloud, or cybersecurity, salaries reach Rs.8-18 LPA. Payscale puts the average MCA salary in India at around Rs.10 LPA (2025)."
+            "a": "Freshers start between Rs.3-7 LPA. With 4-7 years of experience in data science, cloud, or cybersecurity, salaries reach Rs.8-18 LPA. Payscale puts the average MCA salary in India at around Rs.10 LPA (2026)."
       }
 ],
     content: `<p>Searching for an <strong>online MCA course</strong> and not sure where to start? You're not alone. Fees vary from Rs.50,000 to Rs.2.2 lakh, specialisations range from AI to cybersecurity, and every university claims to be the best. The degree you get from a UGC-DEB approved online MCA program is legally the same as a classroom one — that's the most important thing to know before comparing options.</p>
@@ -10490,7 +10490,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div style="background:rgba(16,185,129,0.07);border:1.5px solid rgba(16,185,129,0.22);border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0"><p style="margin:0 0 0.5rem;font-weight:700;color:#0B1D35">✅ Eligibility in one line:</p><p style="margin:0;color:#3B5068">Bachelor's degree with 45-50% marks. BCA, B.Sc. Computer Science, B.Tech, or any graduation with Maths at 10+2 or graduation level qualifies. Several universities run bridge courses for non-maths backgrounds.</p></div>
 <h2>Online MCA Course Fees: What You'll Actually Pay</h2>
 <p><strong>Online MCA course fees</strong> vary more than most comparison sites admit. Here's a realistic range based on actual published data from UGC-approved universities — no marketing averages:</p>
-<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/svg1_fees.svg" alt="Online MCA Course Fees Comparison 2025 — UGC Approved Universities" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/svg1_fees.svg" alt="Online MCA Course Fees Comparison 2026 — UGC Approved Universities" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>Most universities offer semester-wise payment or EMI. SMU (Sikkim Manipal) breaks down to Rs.4,583/month. Amrita to Rs.6,250/month. If budget is your primary filter, there are solid UGC-approved options well under Rs.1 lakh total.</p>
 <p>One thing worth knowing: the online MCA course fees at premium universities like Manipal MAHE (Rs.2.2L) or Christ University (Rs.2.3L) reflect brand and infrastructure — not necessarily better placement outcomes at entry level.</p>
 <h2>Top Online MCA Colleges in India: How to Compare Them</h2>
@@ -10502,18 +10502,18 @@ export const BLOG_POSTS: BlogPost[] = [
 <li><strong>Best government university option:</strong> Kurukshetra University (NAAC A++, Rs.76,647), Guru Nanak Dev University (Rs.90,600), VTU Karnataka — valid degrees at government pricing.</li>
 </ul>
 <h2>Which Specialisation Should You Pick?</h2>
-<p>This is the most important decision in any online MCA program. The chart below maps specialisations to 2025 career outcomes:</p>
-<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/svg3_specialisation.svg" alt="Online MCA Specialisation vs Career Outcomes 2025" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
+<p>This is the most important decision in any online MCA program. The chart below maps specialisations to 2026 career outcomes:</p>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/svg3_specialisation.svg" alt="Online MCA Specialisation vs Career Outcomes 2026" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <ul>
-<li><strong>AI and Machine Learning —</strong> Highest demand in 2025. Manipal, Jain, Amrita, VIT, Chandigarh University all offer strong tracks. Best if you have Python basics.</li>
+<li><strong>AI and Machine Learning —</strong> Highest demand in 2026. Manipal, Jain, Amrita, VIT, Chandigarh University all offer strong tracks. Best if you have Python basics.</li>
 <li><strong>Data Science —</strong> Accessible entry to analytics roles. Good pick for data analyst, business analyst, or ML engineer targets. Manipal Jaipur, SASTRA, Vignan's have solid curricula.</li>
 <li><strong>Cybersecurity —</strong> Undersupplied talent pool, strong salaries. Amrita, VIT, Jain, and SGT have well-structured tracks covering ethical hacking, forensics, and cloud security.</li>
 <li><strong>Full Stack Development —</strong> Best for landing a developer job quickly. SASTRA, Chandigarh University, and Jain cover React, Node, DevOps reasonably well.</li>
 <li><strong>Cloud Computing —</strong> Strong if you're already in IT infrastructure. Chandigarh University's track covers AWS, Azure, GCP, and IBM Cloud. Manipal Jaipur and Jain also have strong cloud modules.</li>
 </ul>
 <h2>Salary After Online MCA: Realistic Numbers</h2>
-<p>The chart below shows salary ranges across experience levels based on Payscale and Glassdoor India data (2025):</p>
-<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/svg2_salary.svg" alt="MCA Graduate Salary Ranges India 2025 by Experience Level" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
+<p>The chart below shows salary ranges across experience levels based on Payscale and Glassdoor India data (2026):</p>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/svg2_salary.svg" alt="MCA Graduate Salary Ranges India 2026 by Experience Level" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>Fresh graduates start between Rs.3-7 LPA. A software developer at a mid-size firm starts at Rs.4-5 LPA. A data analyst or cloud role at a product company could start at Rs.6-8 LPA if your skills are sharp.</p>
 <p>With 4-7 years in data science, cloud, or cybersecurity, salaries commonly reach Rs.8-18 LPA. Senior specialists in ML or cloud architecture earn Rs.20-40 LPA at product companies. The degree gets you in the door — the specialisation and skills you build during the program determine the ceiling.</p>
 <div style="background:rgba(245,158,11,0.07);border:1.5px solid rgba(245,158,11,0.22);border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0"><p style="margin:0 0 0.5rem;font-weight:700;color:#0B1D35">⚠️ Watch out for 3-year programs:</p><p style="margin:0;color:#3B5068">Some platforms still advertise 3-year MCAs. The UGC mandated a shift to 2-year for NAAC A+ and above universities. Always confirm the program duration and check the university on ugcdeb.gov.in before enrolling.</p></div>
@@ -10534,16 +10534,16 @@ export const BLOG_POSTS: BlogPost[] = [
 <li><strong>Placement claims vs placement numbers.</strong> Ask for last year's placement percentage and median package — not just the names of partner companies.</li>
 </ul>
 <div style="background:rgba(212,146,42,0.07);border:1.5px solid rgba(212,146,42,0.22);border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0"><p style="margin:0 0 0.5rem;font-weight:700;color:#0B1D35">💡 No paid rankings. No referral fees.</p><p style="margin:0;color:#3B5068">EdifyEdu.in compares online MCA programs across 30+ UGC-DEB verified universities. Every comparison is based on public data — not advertiser money.</p></div>
-<p><strong>Sources:</strong> Payscale India (2025), Glassdoor India (2025), UGC-DEB approved institution list, NAAC accreditation database, university official websites (fee data 2025)</p>`,
+<p><strong>Sources:</strong> Payscale India (2026), Glassdoor India (2026), UGC-DEB approved institution list, NAAC accreditation database, university official websites (fee data 2026)</p>`,
   },
   {
     slug: 'amity-online-mca-fees-review',
-    title: 'Amity Online MCA: Fees, Specialisations and Honest Review 2025',
-    seoTitle: 'Amity Online MCA Fees and Review 2025 — Is It Worth Rs.1.7 Lakh?',
+    title: 'Amity Online MCA: Fees, Specialisations and Honest Review 2026',
+    seoTitle: 'Amity Online MCA Fees and Review 2026 — Is It Worth Rs.1.7 Lakh?',
     metaDescription: 'Amity online MCA fees are Rs.1.7 lakh total (Rs.42,500/semester) — complete review of all 6 specialisations, HCLTech/Paytm tie-ups, placement claims, and how it compares to alternatives.',
     category: 'Online MCA Programs',
-    tags: ["amity online mca","amity online mca fees","amity mca online","amity university online mca","amity mca fees 2025","online mca amity review"],
-    publishedAt: '2026-04-10',
+    tags: ["amity online mca","amity online mca fees","amity mca online","amity university online mca","amity university online mca fees"],
+    publishedAt: '2026-04-11',
     readTime: 8,
     targetKeyword: 'amity online mca',
     relatedUniversities: ["amity-university-online"],
@@ -10589,15 +10589,15 @@ export const BLOG_POSTS: BlogPost[] = [
 </ul>
 <p>The Amity online MCA fees may not include all charges upfront. Registration fees and examination fees per semester can add to the total. Always ask for a complete fee breakup before enrolling — several students report being surprised by additional costs after admission.</p>
 <p>The chart below puts these fees in context against other comparable UGC-approved universities:</p>
-<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/svg4_amity_fees.svg" alt="Amity Online MCA Fees vs Competitors 2025 — UGC Approved Universities" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/svg4_amity_fees.svg" alt="Amity Online MCA Fees vs Competitors 2026 — UGC Approved Universities" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>Compared to the market, Amity University online MCA at Rs.1.7L is more expensive than Amrita (Rs.1.4L) and Chandigarh University (Rs.1.55L) — though cheaper than Manipal MAHE (Rs.2.2L) and Christ University (Rs.2.3L). The question is whether the Amity brand and industry tie-ups justify the premium over Amrita — which has a higher NIRF ranking and NAAC A++ accreditation at lower cost.</p>
 <div style="background:rgba(212,146,42,0.07);border:1.5px solid rgba(212,146,42,0.22);border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0"><p style="margin:0 0 0.5rem;font-weight:700;color:#0B1D35">💡 Fee context:</p><p style="margin:0;color:#3B5068">At Rs.1.7 lakh total, Amity online MCA works out to about Rs.85,000 per year — roughly Rs.7,000/month. A mid-career salary bump after MCA typically recovers this within the first year, especially with a well-chosen specialisation.</p></div>
 <h2>All 6 Specialisations: What Each One Is Actually Worth</h2>
 <p>The specialisation you pick matters more than the university name for most hiring contexts. Here's the full picture:</p>
-<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/svg5_amity_spec.svg" alt="Amity Online MCA Specialisations and Industry Partnerships 2025" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
+<div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/svg5_amity_spec.svg" alt="Amity Online MCA Specialisations and Industry Partnerships 2026" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <ul>
 <li><strong>General —</strong> Core CS, Cloud Infrastructure, Unix/Linux, ML as elective. Suitable for broad IT roles but no standout differentiator.</li>
-<li><strong>AI and Machine Learning —</strong> Deep Learning, Neural Networks, Social Media Analytics. High demand in 2025 across most IT employers.</li>
+<li><strong>AI and Machine Learning —</strong> Deep Learning, Neural Networks, Social Media Analytics. High demand in 2026 across most IT employers.</li>
 <li><strong>Financial Technology and AI —</strong> Co-developed with Paytm. Covers ML for finance, Blockchain development, WealthTech, and RegTech. Genuinely niche — strong value if you're in banking, payments, or fintech.</li>
 <li><strong>Cyber Security —</strong> Co-developed with HCLTech. Threat intelligence, SIEM, malware analysis, incident response. One of the better-structured cybersecurity tracks among <a href="/online-mca/online-mca-course-india" style="color:inherit;text-decoration:underline;text-underline-offset:2px">online MCA programs</a>.</li>
 <li><strong>Software Engineering —</strong> Co-developed with TCS iON. DevOps, Angular, Microservices, cloud-readiness. Good for enterprise software or DevOps careers.</li>
@@ -10617,7 +10617,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div style="background:rgba(212,146,42,0.07);border:1.5px solid rgba(212,146,42,0.22);border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0"><p style="margin:0 0 0.5rem;font-weight:700;color:#0B1D35">💡 Want the full comparison?</p><p style="margin:0;color:#3B5068">EdifyEdu.in has a neutral side-by-side of 30+ online MCA universities — fees, syllabus, accreditation, and specialisations — without any referral commissions.</p></div>
 <h2>How to Apply</h2>
 <p>Applications go through amityonline.com. Fill an online form, submit graduation marksheets and ID proof, pay the registration fee. No entrance exam for the online program. Amity runs July-August and January-February batches — both are equally valid.</p>
-<p><strong>Sources:</strong> Amity University Online (official website, 2025), UGC-DEB approved institution list, NAAC accreditation database, Payscale India (2025), EdifyEdu university data (2025)</p>`,
+<p><strong>Sources:</strong> Amity University Online (official website, 2026), UGC-DEB approved institution list, NAAC accreditation database, Payscale India (2026), EdifyEdu university data (2026)</p>`,
   },
 ]
 
