@@ -2,466 +2,652 @@
   {
     "university": "Jain University Online",
     "slug": "jain-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #72 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Amity University Online",
     "slug": "amity-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #54 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Chandigarh University Online",
     "slug": "chandigarh-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #26 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "SRM Institute Science Technology Online",
     "slug": "srm-institute-science-technology-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #17 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Lovely Professional University Online",
     "slug": "lovely-professional-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #37 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Dayananda Sagar University Online",
     "slug": "dayananda-sagar-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #101+ (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Dy Patil University Online",
     "slug": "dy-patil-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #44 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "UPES Online",
     "slug": "upes-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #57 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Parul University Online",
     "slug": "parul-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #101+ (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Amrita Vishwa Vidyapeetham Online",
     "slug": "amrita-vishwa-vidyapeetham-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #8 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Mangalayatan University Online",
     "slug": "mangalayatan-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "Manipal University Jaipur Online",
     "slug": "manipal-university-jaipur-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #38 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Galgotias University Online",
     "slug": "galgotias-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #101+ (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Symbiosis University Online",
     "slug": "symbiosis-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #9 (Management 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Yenepoya University Online",
     "slug": "yenepoya-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #95 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "NMIMS Online",
     "slug": "nmims-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #14 (Management 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Manipal Academy Higher Education Online",
     "slug": "manipal-academy-higher-education-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #5 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "KL University Online",
     "slug": "kl-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #39 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "VTU Online",
     "slug": "vtu-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #51 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Karnataka State Open University Online",
     "slug": "karnataka-state-open-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "Hindustan Institute Technology Online",
     "slug": "hindustan-institute-technology-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #101+ (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Guru Ghasidas Vishwavidyalaya Online",
     "slug": "guru-ghasidas-vishwavidyalaya-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #59 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "DR Babasaheb Ambedkar Open University Online",
     "slug": "dr-babasaheb-ambedkar-open-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #3 (Open University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Marwadi University Online",
     "slug": "marwadi-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "PP Savani University Online",
     "slug": "pp-savani-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "University Of Mysore Online",
     "slug": "university-of-mysore-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #54 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Charusat University Online",
     "slug": "charusat-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #101+ (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Maharishi Markandeshwar University Online",
     "slug": "maharishi-markandeshwar-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #71 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Mizoram University Online",
     "slug": "mizoram-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #77 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "DR Mgr Educational Research Institute Online",
     "slug": "dr-mgr-educational-research-institute-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #101+ (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Andhra University Online",
     "slug": "andhra-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #55 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Mahatma Gandhi University Online",
     "slug": "mahatma-gandhi-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #37 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "VIT University Online",
     "slug": "vit-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #11 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Karunya University Online",
     "slug": "karunya-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #74 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Kurukshetra University Online",
     "slug": "kurukshetra-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #101 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Sastra University Online",
     "slug": "sastra-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #42 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "DR Dy Patil Vidyapeeth Online",
     "slug": "dr-dy-patil-vidyapeeth-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "Jamia Millia Islamia Online",
     "slug": "jamia-millia-islamia-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #11 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Christ University Online",
     "slug": "christ-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #63 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Shobhit University Online",
     "slug": "shobhit-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "Bharati Vidyapeeth University Online",
     "slug": "bharati-vidyapeeth-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #81 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "JSS University Online",
     "slug": "jss-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #34 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Alliance University Online",
     "slug": "alliance-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #101+ (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Ganpat University Online",
     "slug": "ganpat-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "Amet University Online",
     "slug": "amet-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "Jaypee University Online",
     "slug": "jaypee-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "SRM University Sikkim Online",
     "slug": "srm-university-sikkim-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "Sathyabama University Online",
     "slug": "sathyabama-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #51 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Karunya Kcode Online",
     "slug": "karunya-kcode-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "Vels University Online",
     "slug": "vels-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #101 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Noida International University Online",
     "slug": "noida-international-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "IIFT Online",
     "slug": "iift-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #7 (Management 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Gujarat Technological University Online",
     "slug": "gujarat-technological-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "BITS Pilani Online",
     "slug": "bits-pilani-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #26 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Datta Meghe University Online",
     "slug": "datta-meghe-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #42 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "KIIT University Online",
     "slug": "kiit-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #16 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Centurion University Online",
     "slug": "centurion-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #101+ (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Jaipur National University Online",
     "slug": "jaipur-national-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "BS Abdur Rahman University Online",
     "slug": "bs-abdur-rahman-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "Kalasalingam University Online",
     "slug": "kalasalingam-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #30 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Sri Ramachandra University Online",
     "slug": "sri-ramachandra-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #55 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Jagannath University Online",
     "slug": "jagannath-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #45 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Arka Jain University Online",
     "slug": "arka-jain-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "Jawaharlal Nehru University Online",
     "slug": "jawaharlal-nehru-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #2 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Jamia Hamdard Online",
     "slug": "jamia-hamdard-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #21 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Kalinga Institute Industrial Technology Online",
     "slug": "kalinga-institute-industrial-technology-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #15 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "University Of Kerala Online",
     "slug": "university-of-kerala-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #21 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "BITS Pilani Work Integrated Online",
     "slug": "bits-pilani-work-integrated-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #26 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Graphic Era University Online",
     "slug": "graphic-era-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #48 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Devi Ahilya Vishwavidyalaya Online",
     "slug": "devi-ahilya-vishwavidyalaya-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #101+ (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Madurai Kamaraj University Online",
     "slug": "madurai-kamaraj-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #63 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Shanmugha Arts Science Technology Research Online",
     "slug": "shanmugha-arts-science-technology-research-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #28 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "University Of Mumbai Online",
     "slug": "university-of-mumbai-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #61 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "University Of Jammu Online",
     "slug": "university-of-jammu-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #50 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Shivaji University Online",
     "slug": "shivaji-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #101+ (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Banasthali Vidyapith Online",
     "slug": "banasthali-vidyapith-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #67 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Guru Gobind Singh Indraprastha University Online",
     "slug": "guru-gobind-singh-indraprastha-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #80 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Bangalore University Online",
     "slug": "bangalore-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #101+ (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "IIIT Bangalore Online",
     "slug": "iiit-bangalore-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #74 (Engineering 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Dayalbagh Educational Institute Online",
     "slug": "dayalbagh-educational-institute-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #101+ (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Adichunchanagiri University Online",
     "slug": "adichunchanagiri-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "Bharath University Online",
     "slug": "bharath-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #73 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Chhatrapati Shahu Ji Maharaj University Online",
     "slug": "chhatrapati-shahu-ji-maharaj-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "Deen Dayal Upadhyay Gorakhpur University Online",
     "slug": "deen-dayal-upadhyay-gorakhpur-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #96 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Guru Jambheshwar University Online",
     "slug": "guru-jambheshwar-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #101+ (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Maharshi Dayanand University Online",
     "slug": "maharshi-dayanand-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "Mahatma Jyotiba Phule Rohilkhand University Online",
     "slug": "mahatma-jyotiba-phule-rohilkhand-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #78 (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Mats University Online",
     "slug": "mats-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "Meenakshi Academy Higher Education Online",
     "slug": "meenakshi-academy-higher-education-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": "NIRF #101+ (University 2024)",
+    "ranking_source": "NIRF"
   },
   {
     "university": "Mody University Online",
     "slug": "mody-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "Sage University Online",
     "slug": "sage-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "Shree Guru Gobind Singh Tricentenary University Online",
     "slug": "shree-guru-gobind-singh-tricentenary-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   },
   {
     "university": "Shri Ramasamy Memorial University Online",
     "slug": "shri-ramasamy-memorial-university-online",
-    "enrollments": 500
+    "enrollments": 500,
+    "ranking_text": null,
+    "ranking_source": null
   }
 ]
