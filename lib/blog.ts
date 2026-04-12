@@ -11537,6 +11537,30 @@ export const BLOG_POSTS: BlogPost[] = [
   </div>
 </div>
 
+<div style="margin:32px 0;text-align:center">
+  <svg viewBox="0 0 680 220" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,sans-serif" style="max-width:100%;height:auto">
+    <rect width="680" height="220" fill="#f8fafc" rx="12"/>
+    <text x="340" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">UU Doon Online MBA: EMI Comparison with Similar Programs</text>
+    <text x="60" y="56" font-size="12" fill="#64748b">UU Doon (exam incl.)</text>
+    <rect x="250" y="44" width="158" height="18" fill="#f97316" rx="4"/>
+    <text x="414" y="57" font-size="12" font-weight="700" fill="#f97316"> Rs. 3,956/mo</text>
+    <text x="60" y="88" font-size="12" fill="#64748b">Galgotias</text>
+    <rect x="250" y="76" width="190" height="18" fill="#B8892A" rx="4" opacity="0.8"/>
+    <text x="446" y="89" font-size="12" font-weight="700" fill="#B8892A"> Rs. 4,762/mo*</text>
+    <text x="60" y="120" font-size="12" fill="#64748b">Vignan Online</text>
+    <rect x="250" y="108" width="228" height="18" fill="#0f172a" rx="4" opacity="0.7"/>
+    <text x="484" y="121" font-size="12" font-weight="700" fill="#0f172a"> Rs. 5,700/mo</text>
+    <text x="60" y="152" font-size="12" fill="#64748b">DSU Online</text>
+    <rect x="250" y="140" width="240" height="18" fill="#0f172a" rx="4" opacity="0.6"/>
+    <text x="496" y="153" font-size="12" font-weight="700" fill="#0f172a"> Rs. 5,000-6,000/mo</text>
+    <text x="60" y="184" font-size="12" fill="#64748b">NMIMS Online</text>
+    <rect x="250" y="172" width="293" height="18" fill="#64748b" rx="4" opacity="0.8"/>
+    <text x="549" y="185" font-size="12" font-weight="700" fill="#64748b"> Rs. 6,111/mo</text>
+    <text x="340" y="210" text-anchor="middle" font-size="11" fill="#94a3b8">*Estimated. All EMI figures are indicative. Verify on official sites.</text>
+  </svg>
+  <div style="font-size:13px;color:#64748b;margin-top:8px;font-style:italic">UU Doon offers the lowest EMI in this comparison at Rs. 3,956/month, with exam fees already included in the semester fee.</div>
+</div>
+
 <h2>Who Should Apply for UU Doon Online MBA?</h2>
 
 <p>UU Doon makes most sense for professionals in Uttarakhand, HP, UP, and North India where the Uttaranchal University name carries local recognition. If you are in a government or semi-government role and need an MBA for promotion or pay-scale benefits, the UGC approval and NAAC A+ make this a strong candidate.</p>
@@ -11692,6 +11716,56 @@ export const BLOG_POSTS: BlogPost[] = [
   <p style="color:#94a3b8;font-size:15px;margin:0 0 20px">Browse all verified programs with exact fee breakdowns. No paid rankings, no commissions.</p>
   <a href="/compare" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;margin-right:12px">Compare Universities</a>
   <a href="/contact" style="display:inline-block;background:transparent;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid #f97316">Talk to a Counsellor</a>
+</div>
+
+<div style="margin:32px 0;text-align:center">
+  <svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,sans-serif" style="max-width:100%;height:auto">
+    <rect width="700" height="280" fill="#f8fafc" rx="12"/>
+    <text x="350" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Galgotias Online MBA: Fee Breakdown at a Glance</text>
+    <circle cx="180" cy="155" r="100" fill="none" stroke="#e2e8f0" stroke-width="28"/>
+    <circle cx="180" cy="155" r="100" fill="none" stroke="#f97316" stroke-width="28" stroke-dasharray="549 80" stroke-dashoffset="157" transform="rotate(-90 180 155)"/>
+    <circle cx="180" cy="155" r="100" fill="none" stroke="#B8892A" stroke-width="28" stroke-dasharray="80 549" stroke-dashoffset="-392" transform="rotate(-90 180 155)"/>
+    <text x="180" y="148" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Rs. 76,200</text>
+    <text x="180" y="168" text-anchor="middle" font-size="11" fill="#64748b">Total Program</text>
+    <rect x="320" y="90" width="14" height="14" fill="#f97316" rx="2"/>
+    <text x="340" y="102" font-size="13" fill="#374151">Course Fee: Rs. 66,000 (4 sems x Rs. 16,500)</text>
+    <rect x="320" y="118" width="14" height="14" fill="#B8892A" rx="2"/>
+    <text x="340" y="130" font-size="13" fill="#374151">Exam Fee: Rs. 8,000 (Rs. 4,000/yr)</text>
+    <rect x="320" y="146" width="14" height="14" fill="#0f172a" rx="2"/>
+    <text x="340" y="158" font-size="13" fill="#374151">Reg Fee: Rs. 1,200 (one-time)</text>
+    <rect x="320" y="174" width="14" height="14" fill="#64748b" rx="2"/>
+    <text x="340" y="186" font-size="13" fill="#374151">Alumni Fee: Rs. 1,000 (one-time)</text>
+    <text x="350" y="240" text-anchor="middle" font-size="11" fill="#94a3b8">Fees are indicative. Verify at galgotiasonline.edu.in before paying.</text>
+    <text x="350" y="258" text-anchor="middle" font-size="11" fill="#94a3b8">Exam fee: 70% weightage end-term + 30% internal assessment.</text>
+  </svg>
+  <div style="font-size:13px;color:#64748b;margin-top:8px;font-style:italic">Each semester course fee works out to approximately Rs. 16,500. Exam fees are separate.</div>
+</div>
+
+<div style="margin:32px 0;text-align:center">
+  <svg viewBox="0 0 680 210" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,sans-serif" style="max-width:100%;height:auto">
+    <rect width="680" height="210" fill="#0f172a" rx="12"/>
+    <text x="340" y="26" text-anchor="middle" font-size="13" font-weight="700" fill="#f97316">Galgotias Online MBA: How Learning Works</text>
+    <rect x="30" y="45" width="140" height="80" fill="#1e293b" rx="8"/>
+    <text x="100" y="78" text-anchor="middle" font-size="20" fill="#f97316">📱</text>
+    <text x="100" y="96" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">24/7 LMS Access</text>
+    <text x="100" y="113" text-anchor="middle" font-size="10" fill="#94a3b8">Study Anytime</text>
+    <rect x="190" y="45" width="140" height="80" fill="#1e293b" rx="8"/>
+    <text x="260" y="78" text-anchor="middle" font-size="20" fill="#B8892A">🎥</text>
+    <text x="260" y="96" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Live Lectures</text>
+    <text x="260" y="113" text-anchor="middle" font-size="10" fill="#94a3b8">+ Recorded Sessions</text>
+    <rect x="350" y="45" width="140" height="80" fill="#1e293b" rx="8"/>
+    <text x="420" y="78" text-anchor="middle" font-size="20" fill="#f97316">📝</text>
+    <text x="420" y="96" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Master Thesis</text>
+    <text x="420" y="113" text-anchor="middle" font-size="10" fill="#94a3b8">Sems 3 &amp; 4</text>
+    <rect x="510" y="45" width="145" height="80" fill="#1e293b" rx="8"/>
+    <text x="582" y="78" text-anchor="middle" font-size="20" fill="#B8892A">📊</text>
+    <text x="582" y="96" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">70:30 Exam Split</text>
+    <text x="582" y="113" text-anchor="middle" font-size="10" fill="#94a3b8">End-term + Internal</text>
+    <text x="340" y="162" text-anchor="middle" font-size="11" fill="#64748b">Case studies, real-world projects, and doubt-clearing sessions included.</text>
+    <text x="340" y="180" text-anchor="middle" font-size="11" fill="#64748b">Mobile app access available for lectures, assignments, and fee payment.</text>
+    <text x="340" y="198" text-anchor="middle" font-size="11" fill="#64748b">Industry-oriented curriculum aligned with current market requirements.</text>
+  </svg>
+  <div style="font-size:13px;color:#64748b;margin-top:8px;font-style:italic">Galgotias Online uses a standard LMS-based delivery model with live and recorded components.</div>
 </div>
 
 <h2>Honest Assessment: Pros and Cons</h2>
@@ -11878,6 +11952,59 @@ export const BLOG_POSTS: BlogPost[] = [
   <a href="/contact" style="display:inline-block;background:transparent;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid #f97316">Talk to a Counsellor</a>
 </div>
 
+<div style="margin:32px 0;text-align:center">
+  <svg viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,sans-serif" style="max-width:100%;height:auto">
+    <rect width="680" height="200" fill="#f8fafc" rx="12"/>
+    <text x="340" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">ARKA JAIN Online MBA: Rs. 1,08,500 Fee Breakdown</text>
+    <text x="30" y="60" font-size="12" fill="#64748b">Semester Fees (4 x Rs. 25,000)</text>
+    <rect x="270" y="46" width="340" height="20" fill="#f97316" rx="4"/>
+    <text x="616" y="60" font-size="12" font-weight="700" fill="#f97316"> Rs. 1,00,000</text>
+    <text x="30" y="95" font-size="12" fill="#64748b">Registration Fee (one-time)</text>
+    <rect x="270" y="81" width="26" height="20" fill="#B8892A" rx="4"/>
+    <text x="302" y="95" font-size="12" font-weight="700" fill="#B8892A"> Rs. 2,500</text>
+    <text x="30" y="130" font-size="12" fill="#64748b">Exam Fee (Rs. 3,000 x 2 years)</text>
+    <rect x="270" y="116" width="57" height="20" fill="#0f172a" rx="4" opacity="0.8"/>
+    <text x="333" y="130" font-size="12" font-weight="700" fill="#0f172a"> Rs. 6,000</text>
+    <line x1="270" y1="155" x2="610" y2="155" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="270" y="172" font-size="13" font-weight="700" fill="#0f172a">Total: Rs. 1,08,500</text>
+    <text x="270" y="188" font-size="11" fill="#94a3b8">Fees are indicative. Verify at onlineaju.ac.in before applying.</text>
+  </svg>
+  <div style="font-size:13px;color:#64748b;margin-top:8px;font-style:italic">Semester fees make up Rs. 1,00,000 of the total. Registration and exam fees account for the remaining Rs. 8,500.</div>
+</div>
+
+<div style="margin:32px 0;text-align:center">
+  <svg viewBox="0 0 680 210" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,sans-serif" style="max-width:100%;height:auto">
+    <rect width="680" height="210" fill="#0f172a" rx="12"/>
+    <text x="340" y="26" text-anchor="middle" font-size="13" font-weight="700" fill="#f97316">ARKA JAIN Online MBA: AI Integration Across the Curriculum</text>
+    <rect x="20" y="50" width="150" height="100" fill="#1e293b" rx="8"/>
+    <text x="95" y="78" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Semester 1</text>
+    <text x="95" y="96" text-anchor="middle" font-size="10" fill="#f97316">Generative AI</text>
+    <text x="95" y="112" text-anchor="middle" font-size="10" fill="#f97316">for Online Learners</text>
+    <text x="95" y="130" text-anchor="middle" font-size="9" fill="#94a3b8">(All students, compulsory)</text>
+    <text x="182" y="103" text-anchor="middle" font-size="16" fill="#f97316">→</text>
+    <rect x="195" y="50" width="150" height="100" fill="#1e293b" rx="8"/>
+    <text x="270" y="78" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Semester 2</text>
+    <text x="270" y="96" text-anchor="middle" font-size="10" fill="#f97316">Business Analytics</text>
+    <text x="270" y="112" text-anchor="middle" font-size="10" fill="#f97316">and AI</text>
+    <text x="270" y="130" text-anchor="middle" font-size="9" fill="#94a3b8">(All students, compulsory)</text>
+    <text x="357" y="103" text-anchor="middle" font-size="16" fill="#f97316">→</text>
+    <rect x="370" y="50" width="150" height="100" fill="#1e293b" rx="8"/>
+    <text x="445" y="78" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Semesters 3-4</text>
+    <text x="445" y="96" text-anchor="middle" font-size="10" fill="#94a3b8">Domain Specialization</text>
+    <text x="445" y="112" text-anchor="middle" font-size="10" fill="#94a3b8">Finance / HR / Marketing</text>
+    <text x="445" y="130" text-anchor="middle" font-size="9" fill="#64748b">+ Fintech, Open Electives</text>
+    <text x="532" y="103" text-anchor="middle" font-size="16" fill="#f97316">→</text>
+    <rect x="545" y="50" width="120" height="100" fill="#f97316" rx="8"/>
+    <text x="605" y="78" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">MBA Degree</text>
+    <text x="605" y="96" text-anchor="middle" font-size="10" fill="#ffe4cc">Master Thesis</text>
+    <text x="605" y="112" text-anchor="middle" font-size="10" fill="#ffe4cc">AI-literate</text>
+    <text x="605" y="130" text-anchor="middle" font-size="10" fill="#ffe4cc">Graduate</text>
+    <text x="340" y="178" text-anchor="middle" font-size="11" fill="#64748b">Unlike most programs, Generative AI is compulsory from Day 1, not an optional elective in Year 2.</text>
+    <text x="340" y="196" text-anchor="middle" font-size="11" fill="#64748b">Business Analytics &amp; AI in Semester 2 builds on the Generative AI foundation from Semester 1.</text>
+  </svg>
+  <div style="font-size:13px;color:#64748b;margin-top:8px;font-style:italic">ARKA JAIN builds AI literacy progressively: Generative AI in Sem 1, then Business Analytics &amp; AI in Sem 2, before domain specialization begins in Sem 3.</div>
+</div>
+
 <h2>Honest Assessment</h2>
 
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 32px">
@@ -12038,6 +12165,39 @@ export const BLOG_POSTS: BlogPost[] = [
   <p style="color:#94a3b8;font-size:15px;margin:0 0 20px">Browse all verified programs with fee and syllabus comparisons. Independent. No paid rankings.</p>
   <a href="/compare" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;margin-right:12px">Compare Universities</a>
   <a href="/contact" style="display:inline-block;background:transparent;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid #f97316">Talk to a Counsellor</a>
+</div>
+
+<div style="margin:32px 0;text-align:center">
+  <svg viewBox="0 0 680 230" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,sans-serif" style="max-width:100%;height:auto">
+    <rect width="680" height="230" fill="#f8fafc" rx="12"/>
+    <text x="340" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">NIU Online MBA vs Galgotias Online MBA: Quick Comparison</text>
+    <rect x="30" y="44" width="200" height="30" fill="#0f172a" rx="4"/>
+    <text x="130" y="63" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Feature</text>
+    <rect x="238" y="44" width="190" height="30" fill="#f97316" rx="4"/>
+    <text x="333" y="63" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">NIU Online MBA</text>
+    <rect x="436" y="44" width="220" height="30" fill="#B8892A" rx="4"/>
+    <text x="546" y="63" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Galgotias Online MBA</text>
+    <text x="40" y="95" font-size="12" fill="#374151">Total Fee</text>
+    <text x="248" y="95" font-size="12" font-weight="600" fill="#f97316">Rs. 88,500 (early-bird)</text>
+    <text x="446" y="95" font-size="12" font-weight="600" fill="#B8892A">Rs. 76,200</text>
+    <line x1="30" y1="103" x2="650" y2="103" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="40" y="123" font-size="12" fill="#374151">NAAC Grade</text>
+    <text x="248" y="123" font-size="12" fill="#374151">A+</text>
+    <text x="446" y="123" font-size="12" fill="#374151">A+</text>
+    <line x1="30" y1="131" x2="650" y2="131" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="40" y="151" font-size="12" fill="#374151">Specializations</text>
+    <text x="248" y="151" font-size="12" font-weight="600" fill="#f97316">10 tracks</text>
+    <text x="446" y="151" font-size="12" fill="#374151">7 tracks</text>
+    <line x1="30" y1="159" x2="650" y2="159" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="40" y="179" font-size="12" fill="#374151">SPSS Training</text>
+    <text x="248" y="179" font-size="12" font-weight="600" fill="#f97316">Yes (Sem 2, all students)</text>
+    <text x="446" y="179" font-size="12" fill="#374151">No</text>
+    <line x1="30" y1="187" x2="650" y2="187" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="40" y="207" font-size="12" fill="#374151">Healthcare/Agri/Retail tracks</text>
+    <text x="248" y="207" font-size="12" font-weight="600" fill="#f97316">Yes (dedicated tracks)</text>
+    <text x="446" y="207" font-size="12" fill="#374151">Healthcare only</text>
+  </svg>
+  <div style="font-size:13px;color:#64748b;margin-top:8px;font-style:italic">NIU has more specializations and SPSS training, Galgotias is cheaper. Both are NAAC A+ from Greater Noida.</div>
 </div>
 
 <h2>Honest Assessment</h2>
@@ -12226,6 +12386,48 @@ export const BLOG_POSTS: BlogPost[] = [
   <a href="/contact" style="display:inline-block;background:transparent;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid #f97316">Talk to a Counsellor</a>
 </div>
 
+<div style="margin:32px 0;text-align:center">
+  <svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,sans-serif" style="max-width:100%;height:auto">
+    <rect width="700" height="260" fill="#0f172a" rx="12"/>
+    <text x="350" y="26" text-anchor="middle" font-size="13" font-weight="700" fill="#f97316">Shoolini Online MBA: 16 Specializations at a Glance</text>
+    <circle cx="350" cy="140" r="55" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+    <text x="350" y="134" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Shoolini</text>
+    <text x="350" y="148" text-anchor="middle" font-size="11" fill="#94a3b8">Online MBA</text>
+    <text x="350" y="162" text-anchor="middle" font-size="10" fill="#f97316">16 Tracks</text>
+    <circle cx="170" cy="80" r="34" fill="#1e293b"/>
+    <text x="170" y="76" text-anchor="middle" font-size="9" fill="#94a3b8">Standard</text>
+    <text x="170" y="88" text-anchor="middle" font-size="9" fill="#fff">Finance, HR,</text>
+    <text x="170" y="100" text-anchor="middle" font-size="9" fill="#fff">Marketing, IT</text>
+    <line x1="204" y1="91" x2="298" y2="120" stroke="#f97316" stroke-width="1" stroke-dasharray="3"/>
+    <circle cx="120" cy="160" r="34" fill="#1e293b"/>
+    <text x="120" y="153" text-anchor="middle" font-size="9" fill="#94a3b8">Digital &amp; Data</text>
+    <text x="120" y="165" text-anchor="middle" font-size="9" fill="#fff">Digital Mktg,</text>
+    <text x="120" y="177" text-anchor="middle" font-size="9" fill="#fff">Data Science</text>
+    <line x1="154" y1="155" x2="296" y2="145" stroke="#f97316" stroke-width="1" stroke-dasharray="3"/>
+    <circle cx="175" cy="210" r="34" fill="#1e293b"/>
+    <text x="175" y="203" text-anchor="middle" font-size="9" fill="#94a3b8">Finance</text>
+    <text x="175" y="215" text-anchor="middle" font-size="9" fill="#fff">Banking &amp; Ins,</text>
+    <text x="175" y="227" text-anchor="middle" font-size="9" fill="#fff">Financial Mgmt</text>
+    <line x1="208" y1="203" x2="298" y2="162" stroke="#f97316" stroke-width="1" stroke-dasharray="3"/>
+    <circle cx="530" cy="75" r="38" fill="#431407" stroke="#f97316" stroke-width="1.5"/>
+    <text x="530" y="66" text-anchor="middle" font-size="9" font-weight="700" fill="#f97316">NICHE</text>
+    <text x="530" y="79" text-anchor="middle" font-size="9" fill="#fff">Pharma, Biotech,</text>
+    <text x="530" y="91" text-anchor="middle" font-size="9" fill="#fff">Food Tech</text>
+    <line x1="493" y1="85" x2="403" y2="122" stroke="#f97316" stroke-width="1.5" stroke-dasharray="3"/>
+    <circle cx="580" cy="155" r="34" fill="#431407" stroke="#f97316" stroke-width="1.5"/>
+    <text x="580" y="148" text-anchor="middle" font-size="9" font-weight="700" fill="#f97316">RARE</text>
+    <text x="580" y="160" text-anchor="middle" font-size="9" fill="#fff">Agribusiness,</text>
+    <text x="580" y="172" text-anchor="middle" font-size="9" fill="#fff">Direct Selling</text>
+    <line x1="548" y1="152" x2="403" y2="145" stroke="#f97316" stroke-width="1.5" stroke-dasharray="3"/>
+    <circle cx="530" cy="225" r="34" fill="#1e293b"/>
+    <text x="530" y="218" text-anchor="middle" font-size="9" fill="#94a3b8">Industry</text>
+    <text x="530" y="230" text-anchor="middle" font-size="9" fill="#fff">Tourism, Retail,</text>
+    <text x="530" y="242" text-anchor="middle" font-size="9" fill="#fff">Real Estate, SCM</text>
+    <line x1="498" y1="217" x2="402" y2="165" stroke="#f97316" stroke-width="1" stroke-dasharray="3"/>
+  </svg>
+  <div style="font-size:13px;color:#64748b;margin-top:8px;font-style:italic">Shoolini's niche tracks (Pharma, Biotech, Food Tech, Direct Selling, Agribusiness) are what make this program genuinely different. No other accredited online MBA in India at this price range offers these combinations.</div>
+</div>
+
 <h2>Honest Assessment</h2>
 
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 32px">
@@ -12385,6 +12587,44 @@ export const BLOG_POSTS: BlogPost[] = [
   <h3 style="color:#fff;margin:0 0 10px;font-size:20px">Comparing DY Patil with NMIMS, JAIN, or Chandigarh University?</h3>
   <p style="color:#94a3b8;font-size:15px;margin:0 0 20px">EdifyEdu covers all major online MBA programs with WES recognition flags, fee data and syllabus breakdown. No commissions.</p>
   <a href="/compare" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Compare Online MBAs</a>
+</div>
+
+<div style="margin:32px 0;text-align:center">
+  <svg viewBox="0 0 680 240" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,sans-serif" style="max-width:100%;height:auto">
+    <rect width="680" height="240" fill="#f8fafc" rx="12"/>
+    <text x="340" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">DY Patil Online MBA: Unique Value Drivers vs Market</text>
+    <rect x="30" y="50" width="130" height="130" fill="#0f172a" rx="8"/>
+    <text x="95" y="90" text-anchor="middle" font-size="22">🌍</text>
+    <text x="95" y="110" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">WES</text>
+    <text x="95" y="125" text-anchor="middle" font-size="11" fill="#94a3b8">Recognized</text>
+    <text x="95" y="148" text-anchor="middle" font-size="9" fill="#64748b">Canada/USA</text>
+    <text x="95" y="162" text-anchor="middle" font-size="9" fill="#64748b">immigration</text>
+    <text x="95" y="176" text-anchor="middle" font-size="9" fill="#64748b">credential eval</text>
+    <rect x="178" y="50" width="130" height="130" fill="#0f172a" rx="8"/>
+    <text x="243" y="90" text-anchor="middle" font-size="22">🎓</text>
+    <text x="243" y="110" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">edX Access</text>
+    <text x="243" y="125" text-anchor="middle" font-size="11" fill="#94a3b8">Harvard, MIT</text>
+    <text x="243" y="148" text-anchor="middle" font-size="9" fill="#64748b">Elective modules</text>
+    <text x="243" y="162" text-anchor="middle" font-size="9" fill="#64748b">from global</text>
+    <text x="243" y="176" text-anchor="middle" font-size="9" fill="#64748b">universities</text>
+    <rect x="326" y="50" width="130" height="130" fill="#0f172a" rx="8"/>
+    <text x="391" y="90" text-anchor="middle" font-size="22">⭐</text>
+    <text x="391" y="110" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">NAAC A++</text>
+    <text x="391" y="125" text-anchor="middle" font-size="11" fill="#94a3b8">Highest Grade</text>
+    <text x="391" y="148" text-anchor="middle" font-size="9" fill="#64748b">NIRF Top 50</text>
+    <text x="391" y="162" text-anchor="middle" font-size="9" fill="#64748b">Management</text>
+    <text x="391" y="176" text-anchor="middle" font-size="9" fill="#64748b">universities</text>
+    <rect x="474" y="50" width="180" height="130" fill="#f97316" rx="8"/>
+    <text x="564" y="90" text-anchor="middle" font-size="22">🧬</text>
+    <text x="564" y="110" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Niche Tracks</text>
+    <text x="564" y="125" text-anchor="middle" font-size="11" fill="#ffe4cc">Blockchain MBA</text>
+    <text x="564" y="140" text-anchor="middle" font-size="11" fill="#ffe4cc">AI &amp; ML MBA</text>
+    <text x="564" y="155" text-anchor="middle" font-size="11" fill="#ffe4cc">Agribusiness</text>
+    <text x="564" y="170" text-anchor="middle" font-size="11" fill="#ffe4cc">FinTech MBA</text>
+    <text x="340" y="210" text-anchor="middle" font-size="11" fill="#64748b">DY Patil is one of very few online MBAs in India recognized by WES for international career assessment.</text>
+    <text x="340" y="228" text-anchor="middle" font-size="11" fill="#64748b">The edX integration adds elective content from top global universities, not degrees from those universities.</text>
+  </svg>
+  <div style="font-size:13px;color:#64748b;margin-top:8px;font-style:italic">DY Patil Online MBA's strongest differentiators are WES recognition for international careers and NAAC A++ accreditation at this price point.</div>
 </div>
 
 <h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Honest Assessment</h2>
@@ -12560,6 +12800,37 @@ export const BLOG_POSTS: BlogPost[] = [
   <a href="/compare" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Compare Online MBAs</a>
 </div>
 
+<div style="margin:32px 0;text-align:center">
+  <svg viewBox="0 0 680 260" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,sans-serif" style="max-width:100%;height:auto">
+    <rect width="680" height="260" fill="#0f172a" rx="12"/>
+    <text x="340" y="26" text-anchor="middle" font-size="13" font-weight="700" fill="#f97316">Chandigarh University Online MBA: The Triple Certification Value Stack</text>
+    <rect x="30" y="45" width="185" height="150" fill="#7c0000" rx="8" opacity="0.9"/>
+    <text x="122" y="80" text-anchor="middle" font-size="22">🎓</text>
+    <text x="122" y="102" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Harvard Business</text>
+    <text x="122" y="117" text-anchor="middle" font-size="12" fill="#ffcccc">Publishing Cert</text>
+    <text x="122" y="140" text-anchor="middle" font-size="10" fill="#ffaaaa">Business Strategy</text>
+    <text x="122" y="155" text-anchor="middle" font-size="10" fill="#ffaaaa">Content</text>
+    <text x="122" y="178" text-anchor="middle" font-size="9" fill="#ff8888">NOT Harvard University</text>
+    <rect x="248" y="45" width="185" height="150" fill="#d04a02" rx="8" opacity="0.9"/>
+    <text x="340" y="80" text-anchor="middle" font-size="22">💼</text>
+    <text x="340" y="102" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">PwC India</text>
+    <text x="340" y="117" text-anchor="middle" font-size="12" fill="#ffe0cc">Certificate</text>
+    <text x="340" y="140" text-anchor="middle" font-size="10" fill="#ffccaa">2 MBA Subjects</text>
+    <text x="340" y="155" text-anchor="middle" font-size="10" fill="#ffccaa">Taught by PwC</text>
+    <text x="340" y="178" text-anchor="middle" font-size="9" fill="#ffaa88">Finance-relevant, strong</text>
+    <rect x="466" y="45" width="185" height="150" fill="#1a5276" rx="8" opacity="0.9"/>
+    <text x="558" y="80" text-anchor="middle" font-size="22">📋</text>
+    <text x="558" y="102" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">PMI Training</text>
+    <text x="558" y="117" text-anchor="middle" font-size="12" fill="#cce5ff">+ Membership</text>
+    <text x="558" y="140" text-anchor="middle" font-size="10" fill="#aad4ff">23 hrs training</text>
+    <text x="558" y="155" text-anchor="middle" font-size="10" fill="#aad4ff">23 PDUs for CAPM</text>
+    <text x="558" y="178" text-anchor="middle" font-size="9" fill="#88c0ff">CAPM exam prep only</text>
+    <text x="340" y="220" text-anchor="middle" font-size="11" fill="#64748b">All three certifications are add-ons to the MBA degree, not replacements for it.</text>
+    <text x="340" y="240" text-anchor="middle" font-size="11" fill="#64748b">PwC and PMI credentials carry more direct employer value than the Harvard certificate for most job profiles.</text>
+  </svg>
+  <div style="font-size:13px;color:#64748b;margin-top:8px;font-style:italic">PwC is strongest for finance roles. PMI is strongest for project management careers. Harvard Business Publishing certificate signals quality curriculum but is distinct from Harvard degrees.</div>
+</div>
+
 <h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Honest Assessment</h2>
 
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 32px">
@@ -12699,6 +12970,44 @@ export const BLOG_POSTS: BlogPost[] = [
   <h3 style="color:#fff;margin:0 0 10px;font-size:20px">Comparing JIIT with other NCR online MBAs for tech professionals?</h3>
   <p style="color:#94a3b8;font-size:15px;margin:0 0 20px">EdifyEdu covers all major programs including JIIT, Galgotias, Sharda, and more with complete syllabus and fee data.</p>
   <a href="/compare" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Compare Online MBAs</a>
+</div>
+
+<div style="margin:32px 0;text-align:center">
+  <svg viewBox="0 0 680 220" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,sans-serif" style="max-width:100%;height:auto">
+    <rect width="680" height="220" fill="#0f172a" rx="12"/>
+    <text x="340" y="26" text-anchor="middle" font-size="13" font-weight="700" fill="#f97316">JIIT Online MBA: Technology Integration Across All 4 Semesters</text>
+    <rect x="20" y="45" width="150" height="125" fill="#1e293b" rx="8"/>
+    <text x="95" y="68" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Semester 1</text>
+    <text x="95" y="88" text-anchor="middle" font-size="10" fill="#f97316">Digital</text>
+    <text x="95" y="102" text-anchor="middle" font-size="10" fill="#f97316">Transformation</text>
+    <text x="95" y="122" text-anchor="middle" font-size="9" fill="#94a3b8">Business Stats</text>
+    <text x="95" y="136" text-anchor="middle" font-size="9" fill="#94a3b8">with Excel</text>
+    <text x="95" y="156" text-anchor="middle" font-size="9" fill="#64748b">All specializations</text>
+    <rect x="185" y="45" width="150" height="125" fill="#1e293b" rx="8"/>
+    <text x="260" y="68" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Semester 2</text>
+    <text x="260" y="88" text-anchor="middle" font-size="10" fill="#f97316">Business Analytics</text>
+    <text x="260" y="102" text-anchor="middle" font-size="10" fill="#f97316">+ Capstone Project</text>
+    <text x="260" y="122" text-anchor="middle" font-size="9" fill="#94a3b8">Digital Marketing</text>
+    <text x="260" y="136" text-anchor="middle" font-size="9" fill="#94a3b8">Innovation</text>
+    <text x="260" y="156" text-anchor="middle" font-size="9" fill="#64748b">All specializations</text>
+    <rect x="350" y="45" width="150" height="125" fill="#1e293b" rx="8"/>
+    <text x="425" y="68" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Semester 3</text>
+    <text x="425" y="88" text-anchor="middle" font-size="10" fill="#f97316">AI in Business</text>
+    <text x="425" y="102" text-anchor="middle" font-size="10" fill="#f97316">+ Internship/OJT</text>
+    <text x="425" y="122" text-anchor="middle" font-size="9" fill="#94a3b8">Domain electives</text>
+    <text x="425" y="136" text-anchor="middle" font-size="9" fill="#94a3b8">begin here</text>
+    <text x="425" y="156" text-anchor="middle" font-size="9" fill="#64748b">All specializations</text>
+    <rect x="515" y="45" width="150" height="125" fill="#f97316" rx="8"/>
+    <text x="590" y="68" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Semester 4</text>
+    <text x="590" y="88" text-anchor="middle" font-size="10" fill="#ffe4cc">Major Project</text>
+    <text x="590" y="102" text-anchor="middle" font-size="10" fill="#ffe4cc">+ Strategic Mgmt</text>
+    <text x="590" y="122" text-anchor="middle" font-size="9" fill="#ffe4cc">Advanced domain</text>
+    <text x="590" y="136" text-anchor="middle" font-size="9" fill="#ffe4cc">subjects</text>
+    <text x="590" y="156" text-anchor="middle" font-size="9" fill="#ffcc99">Degree awarded</text>
+    <text x="340" y="192" text-anchor="middle" font-size="11" fill="#64748b">Digital Transformation in Sem 1. AI in Business in Sem 3. Blockchain in IT Analytics Sem 3. Major Project in Sem 4.</text>
+    <text x="340" y="210" text-anchor="middle" font-size="11" fill="#64748b">Technology is embedded across all 4 semesters, not added as optional electives.</text>
+  </svg>
+  <div style="font-size:13px;color:#64748b;margin-top:8px;font-style:italic">Technology integration is built into the JIIT curriculum from Day 1, unlike programs that add AI/ML as optional specialization electives.</div>
 </div>
 
 <h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Honest Assessment</h2>
