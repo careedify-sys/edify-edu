@@ -252,6 +252,9 @@ const nextConfig = {
       { source: '/online-ba/:id',              destination: '/programs/ba',   permanent: true },
       { source: '/online-bsc/:id',             destination: '/programs/bsc',  permanent: true },
 
+      // University-program vanity URLs (e.g. /{uni}-online-{program})
+      { source: '/vignan-online-mca',          destination: '/universities/vignan-university-online/mca', permanent: true },
+
       // Short aliases
       { source: '/mba',                        destination: '/programs/mba',  permanent: true },
       { source: '/mca',                        destination: '/programs/mca',  permanent: true },
