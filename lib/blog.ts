@@ -11761,8 +11761,6 @@ export const BLOG_POSTS: BlogPost[] = [
   <strong>Disclaimer:</strong> EdifyEdu is an independent university comparison platform. All fees are indicative based on publicly available data as of early 2026. Fees may change without notice. Please verify all details at <a href="https://galgotiasonline.edu.in/" target="_blank" rel="noopener">galgotiasonline.edu.in</a> and confirm UGC-DEB approval status on the UGC portal before applying. EdifyEdu does not accept referral commissions from any university.
 </div>`,
   },
-]
-
   {
     slug: 'arka-jain-online-mba-review',
     title: 'ARKA JAIN University JGI Online MBA 2026: Fees, GenAI Syllabus and Honest Review',
@@ -12285,6 +12283,467 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div style="font-size:13px;color:#64748b;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px;margin-top:32px">
   <strong>Disclaimer:</strong> EdifyEdu is an independent university comparison platform. All fees are indicative based on publicly available data as of early 2026. The Pay After Placement terms should be verified directly at <a href="https://shoolini.online/mba.php" target="_blank" rel="noopener">shoolini.online</a> before applying. Confirm UGC-DEB approval status on the UGC portal. EdifyEdu does not accept referral commissions from any university.
+</div>`,
+  },
+  {
+    slug: 'dy-patil-online-mba-review',
+    title: 'DY Patil Online MBA Pune 2026: WES Recognition, edX Harvard MIT Access and Honest Review',
+    seoTitle: 'DY Patil Online MBA Review 2026 — WES Recognized, edX Harvard MIT, NAAC A++',
+    metaDescription: 'DY Patil Online MBA at Rs 1,89,400. NAAC A++, WES recognized for Canada/USA careers. edX access to Harvard MIT elective content. 15 specializations including Blockchain and AI. Full review.',
+    category: 'Online MBA Programs',
+    tags: ['dy patil online mba', 'dy patil online mba review', 'wes recognized mba india', 'dy patil mba fees', 'online mba pune'],
+    publishedAt: '2026-04-12',
+    readTime: 9,
+    targetKeyword: 'dy patil online mba review',
+    relatedUniversities: ['dy-patil-university-online'],
+    status: 'published' as const,
+    ctaTitle: 'Planning to work abroad after your MBA?',
+    ctaDesc: 'EdifyEdu tracks WES-recognized online MBAs in India with full fee and syllabus data. No commissions.',
+    faqs: [
+      { q: 'Is DY Patil Online MBA WES recognized?', a: 'Yes, Dr DY Patil Vidyapeeth mentions WES recognition for international career applications. Verify directly with WES at wes.org before relying on it for immigration or job applications.' },
+      { q: 'What does the edX access in DY Patil MBA actually mean?', a: 'Students get access to elective learning modules on edX from universities like Harvard and MIT. These are supplemental content modules, not degrees or certificates from those universities. The MBA degree itself comes from DY Patil.' },
+      { q: 'What is the difference between DY Patil Pune and Navi Mumbai campus for online MBA?', a: 'Pune campus costs Rs 1,89,400 and includes exam fees in the semester fee. Navi Mumbai campus costs Rs 1,70,000 but charges Rs 2,500/semester separately for exams. The edX integration is referenced primarily in Pune campus materials.' },
+    ],
+    content: `
+<p style="font-size:13px;color:#64748b;margin-bottom:4px">Written by <strong>Komal Srivastava</strong> · 7+ years in higher education counselling · Updated April 2026</p>
+
+<p>DY Patil Online MBA from Pune sits in an interesting price bracket. At Rs 1,89,400, it sits between budget programs like Sharda (Rs 1.40 lakhs) and premium ones like NMIMS (Rs 1.96 lakhs). What makes it noteworthy is two things most online MBAs cannot claim: WES recognition for international career applications, and access to elective courses on edX from universities like Harvard and MIT as part of the program.</p>
+
+<p>For someone planning to work or study abroad after their MBA, the WES recognition alone is a meaningful differentiator. EdifyEdu does not accept referral commissions. Verify all fees at the official site before applying.</p>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-left:5px solid #f97316;border-radius:10px;padding:24px 28px;margin:32px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:16px">
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Total Fee (Pune)</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 1,89,400</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Per Semester</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 47,350</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">NAAC Grade</div><div style="font-size:17px;font-weight:700;color:#0f172a">A++</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">WES Recognized</div><div style="font-size:17px;font-weight:700;color:#0f172a">Yes</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">edX Access</div><div style="font-size:17px;font-weight:700;color:#0f172a">Harvard, MIT+</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Specializations</div><div style="font-size:17px;font-weight:700;color:#0f172a">15 tracks</div></div>
+</div>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Is DY Patil Online MBA Legitimate?</h2>
+
+<p>Yes. Dr D Y Patil Vidyapeeth is a deemed-to-be university established in Pune in 2003. It holds NAAC A++ accreditation — the highest grade available — and is among the top 50 universities in India by NIRF 2025. The university is also recognized by WES (World Education Services), ASSOCHAM, AIU, and ISO 9001:2015, making it one of the better-credentialed online MBA providers for international career aspirations.</p>
+
+<div style="background:linear-gradient(135deg,#1a1a2e,#16213e);border:2px solid #f97316;border-radius:12px;padding:24px 28px;margin:28px 0;color:#fff">
+  <h3 style="color:#f97316;margin:0 0 10px;font-size:18px">What the edX Integration Actually Means</h3>
+  <p style="margin:0;color:#94a3b8;font-size:15px">DY Patil students get access to elective modules on edX, including content from Harvard Business School Online, MIT, and other partners. These are supplemental learning modules — not degree courses from those universities. You are enrolled in a DY Patil MBA. The content quality is genuinely high. The degree itself comes from DY Patil, not Harvard or MIT.</p>
+</div>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Why WES Recognition Matters</h2>
+
+<p>World Education Services (WES) is the primary credential evaluation body used by employers and immigration authorities in Canada, USA, and other countries when assessing Indian degrees. A WES-recognized institution means your DY Patil MBA can be evaluated for jobs, further studies, or immigration purposes abroad — without the typical uncertainty that comes with lesser-known Indian universities.</p>
+
+<p>For professionals planning to work in Canada or the USA after their MBA, WES recognition from DY Patil is a practical advantage that most affordable online MBA programs simply do not have. At Rs 1,89,400, this is the most affordable WES-recognized NAAC A++ online MBA in India.</p>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Fee Structure</h2>
+
+<table style="width:100%;border-collapse:collapse;margin:20px 0 32px;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Component</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Pune Campus</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Navi Mumbai Campus</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Semester Fee x4</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 47,350/sem</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 42,500/sem</td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Registration Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,500</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 500</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Exam Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Included in sem fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 2,500/semester extra</td></tr>
+    <tr style="font-weight:700;background:#fef9f0;color:#0f172a"><td style="padding:10px 14px">Total Program Fee</td><td style="padding:10px 14px">Rs. 1,89,400</td><td style="padding:10px 14px">Rs. 1,70,000</td></tr>
+  </tbody>
+</table>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">15 Specializations: Including Blockchain and AI &amp; ML</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:10px;margin:20px 0 32px">
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;font-size:13px;font-weight:600;color:#0f172a">🤖 AI &amp; ML</div>
+  <div style="background:#fff7ed;border:1px solid #f97316;border-radius:8px;padding:12px 14px;font-size:13px;font-weight:600;color:#0f172a">⛓️ Blockchain</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;font-size:13px;font-weight:600;color:#0f172a">📊 Business Analytics</div>
+  <div style="background:#fff7ed;border:1px solid #f97316;border-radius:8px;padding:12px 14px;font-size:13px;font-weight:600;color:#0f172a">💳 FinTech Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;font-size:13px;font-weight:600;color:#0f172a">💰 Finance Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;font-size:13px;font-weight:600;color:#0f172a">👥 Human Resource</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;font-size:13px;font-weight:600;color:#0f172a">📣 Marketing</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;font-size:13px;font-weight:600;color:#0f172a">📱 Digital Marketing</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;font-size:13px;font-weight:600;color:#0f172a">⚙️ Operations</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;font-size:13px;font-weight:600;color:#0f172a">💻 IT Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;font-size:13px;font-weight:600;color:#0f172a">🌍 International Business</div>
+  <div style="background:#fff7ed;border:1px solid #f97316;border-radius:8px;padding:12px 14px;font-size:13px;font-weight:600;color:#0f172a">🌿 Agri Business</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;font-size:13px;font-weight:600;color:#0f172a">🏥 Hospital Administration</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;font-size:13px;font-weight:600;color:#0f172a">🚚 Logistics &amp; SCM</div>
+  <div style="background:#fff7ed;border:1px solid #f97316;border-radius:8px;padding:12px 14px;font-size:13px;font-weight:600;color:#0f172a">🏗️ Project Management</div>
+</div>
+
+<p>The Blockchain MBA track covers Blockchain Fundamentals, Smart Contracts &amp; Ethereum, Hyperledger &amp; Corda, and Cryptography — the most comprehensive Blockchain MBA curriculum available in any affordable Indian online MBA program. The AI &amp; ML track covers Fundamentals of AI, Machine Learning Algorithms, Deep Learning, and Natural Language Processing in Semester 3, followed by AI Strategy &amp; Governance in Semester 4.</p>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Syllabus Structure</h2>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 1 — Management Foundation (All Specializations)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">1</span></div>
+  <div style="padding:14px 18px;background:#fff;display:flex;flex-wrap:wrap;gap:8px"><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Principles of Management</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Organisational Behaviour</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Management Accounting</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Managerial Economics</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Business Communication</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Research Methodology</span></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 3 — Specialization Core (Blockchain Track)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">3</span></div>
+  <div style="padding:14px 18px;background:#fff;display:flex;flex-wrap:wrap;gap:8px"><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Blockchain Fundamentals</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Smart Contracts &amp; Ethereum</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Hyperledger &amp; Corda</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Cryptography</span></div>
+</div>
+
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);color:#fff;border-radius:12px;padding:32px 36px;margin:48px 0 32px;text-align:center">
+  <h3 style="color:#fff;margin:0 0 10px;font-size:20px">Comparing DY Patil with NMIMS, JAIN, or Chandigarh University?</h3>
+  <p style="color:#94a3b8;font-size:15px;margin:0 0 20px">EdifyEdu covers all major online MBA programs with WES recognition flags, fee data and syllabus breakdown. No commissions.</p>
+  <a href="/compare" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Compare Online MBAs</a>
+</div>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Honest Assessment</h2>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 32px">
+  <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#166534;margin:0 0 12px;font-size:16px">What Works</h3>
+    <ul style="list-style:none;padding:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#16a34a;font-weight:700">✓</span> WES recognized — valid for Canada/USA career assessment</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#16a34a;font-weight:700">✓</span> NAAC A++ highest accreditation at this price point</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#16a34a;font-weight:700">✓</span> edX access to Harvard, MIT elective content</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#16a34a;font-weight:700">✓</span> Exam fee included — no hidden charges</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#16a34a;font-weight:700">✓</span> Blockchain MBA track is most detailed in affordable segment</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#16a34a;font-weight:700">✓</span> NIRF Top 50 management rank</li>
+    </ul>
+  </div>
+  <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#9a3412;margin:0 0 12px;font-size:16px">Watch Out For</h3>
+    <ul style="list-style:none;padding:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#ea580c;font-weight:700">!</span> Rs 1,89,400 is premium tier of online MBA pricing</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#ea580c;font-weight:700">!</span> edX access is to modules, not Harvard/MIT degrees</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#ea580c;font-weight:700">!</span> Pune and Navi Mumbai campuses have different fees</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#ea580c;font-weight:700">!</span> Brand recognition primarily in Maharashtra</li>
+    </ul>
+  </div>
+</div>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Who Should Apply</h2>
+
+<p>DY Patil Online MBA is most compelling for three profiles. First, professionals with international career ambitions — the WES recognition makes your degree evaluable for jobs and immigration in Canada and USA. Second, technology-forward professionals wanting Blockchain, AI &amp; ML, or FinTech Management tracks that go deeper than what cheaper programs offer. Third, Maharashtra-based professionals where DY Patil has strong brand recognition in Pune's IT, pharma, and manufacturing sectors.</p>
+
+<blockquote style="border-left:4px solid #f97316;padding:14px 20px;background:#f8fafc;margin:24px 0;border-radius:0 8px 8px 0;font-style:italic;color:#64748b;font-size:15px">The WES recognition is the most underrated feature in DY Patil Online MBA's value proposition. For anyone with international ambitions post-MBA, this is worth more than most certifications other programs advertise.</blockquote>
+
+<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
+  <p style="font-size:16px;font-weight:700;color:#9a3412;margin:0 0 8px">Targeting international careers or need WES-recognized credentials?</p>
+  <p style="font-size:14px;color:#64748b;margin:0 0 18px">Our counsellors help you find the right WES-recognized online MBA for your specific career goals — free, no-pressure guidance.</p>
+  <a href="/contact" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Get Free Counselling</a>
+</div>
+
+<p style="font-size:14px;color:#64748b;margin:16px 0">Also read: <a href="/blog/chandigarh-university-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Chandigarh University MBA</a> — Rs 1,65,000, Harvard+PwC+PMI certs · <a href="/blog/shoolini-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Shoolini MBA</a> — Rs 1,30,000, Pharma/Biotech · <a href="/blog/dsu-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">DSU MBA</a> — Rs 1,20,000, NAAC A++ · <a href="/blog" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">All MBA Reviews</a></p>
+
+<div style="font-size:13px;color:#64748b;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px;margin-top:32px">
+  <strong>Disclaimer:</strong> EdifyEdu is an independent platform. The edX access is to elective learning modules, not degrees from Harvard or MIT. WES recognition should be verified independently at wes.org. Verify all current fees at dypatilonline.com. EdifyEdu does not accept referral commissions from any university.
+</div>`,
+  },
+  {
+    slug: 'chandigarh-university-online-mba-review',
+    title: 'Chandigarh University Online MBA 2026: Harvard PwC PMI Certifications, 23 Specializations Reviewed',
+    seoTitle: 'Chandigarh University Online MBA Review 2026 — Harvard PwC PMI Certs, 23 Specs, NIRF Ranked',
+    metaDescription: 'CU Online MBA at Rs 1,65,000. India first online MBA with Harvard Business Publishing, PwC India and PMI triple certification. 23 specializations, NAAC A+, NIRF Top 36. Honest review of what those certifications actually mean.',
+    category: 'Online MBA Programs',
+    tags: ['chandigarh university online mba', 'cu online mba review', 'online mba with harvard certification india', 'online mba with pwc certification', 'chandigarh university mba fees'],
+    publishedAt: '2026-04-12',
+    readTime: 9,
+    targetKeyword: 'chandigarh university online mba review',
+    relatedUniversities: ['chandigarh-university-online'],
+    status: 'published' as const,
+    ctaTitle: 'Comparing CU Online MBA with NMIMS, JAIN, or Symbiosis?',
+    ctaDesc: 'EdifyEdu covers all major programs with fee, certification, and syllabus comparisons. No paid rankings.',
+    faqs: [
+      { q: 'Is the Harvard certification from CU Online MBA real?', a: 'Yes, but it is from Harvard Business Publishing Education — the content publishing arm of Harvard — not Harvard University or Harvard Business School. It is a certificate for business strategy content and adds value on a resume, but it is not equivalent to a Harvard degree or program.' },
+      { q: 'What does the PwC certification mean in CU Online MBA?', a: 'PwC India co-creates and actually teaches two core MBA subjects: Financial Reporting & Analysis and Financial Management. PwC-branded certificates are issued on completion. This is industry-credible, especially for finance and consulting roles.' },
+      { q: 'What is the actual fee for Chandigarh University Online MBA?', a: 'Rs 1,65,000 is after a 25% early-bird scholarship. The standard fee before scholarship is Rs 1,80,400. Verify current scholarship availability before applying at onlinecu.in.' },
+    ],
+    content: `
+<p style="font-size:13px;color:#64748b;margin-bottom:4px">Written by <strong>Komal Srivastava</strong> · 7+ years in higher education counselling · Updated April 2026</p>
+
+<p>If you have searched for "online MBA with Harvard certification India" or "online MBA with PwC certification," Chandigarh University Online comes up in most results. The triple certification bundle from Harvard Business Publishing, PwC India, and PMI is the program's headline feature and the primary reason students choose CU Online over cheaper alternatives at the same accreditation level.</p>
+
+<p>The certifications are real. But there are things worth knowing before you let those three logos drive the decision. EdifyEdu does not accept referral commissions. All fees verified from onlinecu.in.</p>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-left:5px solid #f97316;border-radius:10px;padding:24px 28px;margin:32px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:16px">
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Total Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 1,65,000</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Per Semester</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 41,250</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">NAAC Grade</div><div style="font-size:17px;font-weight:700;color:#0f172a">A+</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">NIRF Rank</div><div style="font-size:17px;font-weight:700;color:#0f172a">Top 36 (Mgmt)</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Specializations</div><div style="font-size:17px;font-weight:700;color:#0f172a">23 tracks</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Certifications</div><div style="font-size:17px;font-weight:700;color:#0f172a">Harvard+PwC+PMI</div></div>
+</div>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">The Triple Certification: What You Actually Get</h2>
+
+<p>This is the part most reviews skim over. Let us be specific about what each certification means.</p>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin:24px 0 32px">
+  <div style="background:linear-gradient(135deg,#7c0000,#a00000);color:#fff;border-radius:12px;padding:20px;text-align:center">
+    <div style="font-size:22px;margin-bottom:8px">🎓</div>
+    <h3 style="color:#fff;margin:0 0 8px;font-size:15px">Harvard Business Publishing</h3>
+    <p style="margin:0;font-size:13px;opacity:0.9">Certificate in Business Strategy. From Harvard's content publishing arm. NOT a Harvard University degree or HBS certificate.</p>
+  </div>
+  <div style="background:linear-gradient(135deg,#d04a02,#e85a0a);color:#fff;border-radius:12px;padding:20px;text-align:center">
+    <div style="font-size:22px;margin-bottom:8px">💼</div>
+    <h3 style="color:#fff;margin:0 0 8px;font-size:15px">PwC India Certificate</h3>
+    <p style="margin:0;font-size:13px;opacity:0.9">2 MBA subjects co-created and taught by PwC experts. Finance-relevant, industry-credible, strong for consulting roles.</p>
+  </div>
+  <div style="background:linear-gradient(135deg,#1a5276,#2980b9);color:#fff;border-radius:12px;padding:20px;text-align:center">
+    <div style="font-size:22px;margin-bottom:8px">📋</div>
+    <h3 style="color:#fff;margin:0 0 8px;font-size:15px">PMI Training + Membership</h3>
+    <p style="margin:0;font-size:13px;opacity:0.9">23 hrs ATP-delivered training. 1-year PMI membership. 23 PDUs toward CAPM. Prepares for exam but does not give CAPM.</p>
+  </div>
+</div>
+
+<div style="background:#fef9f0;border:1px solid #B8892A;border-radius:10px;padding:20px 24px;margin:24px 0">
+  <p style="margin:0;color:#92400e;font-size:15px"><strong>Important distinction:</strong> The Harvard Business Publishing certificate is from Harvard's publishing arm, not Harvard University. It adds resume value and signals quality curriculum, but it is not equivalent to a Harvard degree or program. The PwC and PMI credentials are more directly industry-useful for finance and project management roles respectively.</p>
+</div>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Is CU Online MBA Legitimate?</h2>
+
+<p>Yes. Chandigarh University, established in 2012 in Mohali, Punjab, is UGC-DEB entitled, NAAC A+ accredited, and AICTE approved. The NIRF 2025 management ranking placed it at 36th. CU is one of the most prominent private universities in North India with over 30,000 students and a strong placement infrastructure. Verify UGC-DEB status at deb.ugc.ac.in.</p>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Fee Structure</h2>
+
+<table style="width:100%;border-collapse:collapse;margin:20px 0 32px;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Fee Component</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Amount</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Notes</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Semester Fee x4</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 41,250/sem</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">After 25% early bird scholarship</td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Registration Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">One-time</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Without Scholarship</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,80,400</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Standard fee before early-bird</td></tr>
+    <tr style="font-weight:700;background:#fef9f0;color:#0f172a"><td style="padding:10px 14px">Total (After Scholarship)</td><td style="padding:10px 14px">Rs. 1,65,000</td><td style="padding:10px 14px">Zero-cost EMI from Rs 6,875/mo</td></tr>
+  </tbody>
+</table>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">23 Specializations: Widest Menu in India's Online MBA Market</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;margin:20px 0 32px">
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">💰 Finance</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">👥 HR Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">📣 Marketing</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">📊 Business Analytics</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">💻 Information Technology</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">📱 Digital Marketing</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">🌍 International Business</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">⚙️ Operations Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">🏥 Hospital Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">🏦 Banking &amp; Insurance</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">💳 FinTech</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">📊 Data Science &amp; AI</div>
+  <div style="background:#fff7ed;border:1px solid #f97316;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">✈️ Airlines &amp; Airport Mgmt</div>
+  <div style="background:#fff7ed;border:1px solid #f97316;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">📰 Media Management</div>
+  <div style="background:#fff7ed;border:1px solid #f97316;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">🌐 International Relations</div>
+  <div style="background:#fff7ed;border:1px solid #f97316;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">🌿 Disaster Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">🚚 Logistics &amp; SCM</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">🛒 Retail Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">🎪 Event Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">✈️ Travel &amp; Tourism</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">🚀 Entrepreneurship</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">🎯 Brand Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:600;color:#0f172a">⚙️ General Management</div>
+</div>
+
+<p>The Airlines &amp; Airport Management, Disaster Management, and International Relations tracks are unavailable elsewhere in the online MBA market. If you work in aviation, media, or public sector roles, CU Online is effectively the only UGC-DEB approved program covering your domain.</p>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Syllabus Structure</h2>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 1 — Business Foundations (All Specializations)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">1</span></div>
+  <div style="padding:14px 18px;background:#fff;display:flex;flex-wrap:wrap;gap:8px"><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Business, Society and Law</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Financial Reporting &amp; Analysis (PwC)</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Leadership &amp; Org Behaviour</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Managerial Economics</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Marketing Management</span></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 2 — Core Management (All Specializations)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">2</span></div>
+  <div style="padding:14px 18px;background:#fff;display:flex;flex-wrap:wrap;gap:8px"><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">People Management</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Consumer Behaviour</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Business Research Methods</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Financial Management (PwC)</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Operations &amp; Quality Management</span></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 3 — Specialization Core (FinTech Track)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">3</span></div>
+  <div style="padding:14px 18px;background:#fff;display:flex;flex-wrap:wrap;gap:8px"><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Strategy, Business &amp; Globalization</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Block Chain Management</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Machine Learning in Fintech</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">AI in Fintech</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Data Visualisation for Managers</span></div>
+</div>
+
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);color:#fff;border-radius:12px;padding:32px 36px;margin:48px 0 32px;text-align:center">
+  <h3 style="color:#fff;margin:0 0 10px;font-size:20px">Comparing CU Online MBA with NMIMS, JAIN, or Symbiosis?</h3>
+  <p style="color:#94a3b8;font-size:15px;margin:0 0 20px">EdifyEdu covers all major programs with certification, fee, and syllabus comparisons. Independent, no commissions.</p>
+  <a href="/compare" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Compare Online MBAs</a>
+</div>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Honest Assessment</h2>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 32px">
+  <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#166534;margin:0 0 12px;font-size:16px">What Works</h3>
+    <ul style="list-style:none;padding:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#16a34a;font-weight:700">✓</span> PwC India co-teaches 2 subjects — genuinely industry-relevant for finance roles</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#16a34a;font-weight:700">✓</span> PMI training + 23 PDUs: real credential progress toward CAPM</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#16a34a;font-weight:700">✓</span> 23 specializations — widest menu in India's online MBA market</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#16a34a;font-weight:700">✓</span> 30,000+ Harvard Business School case study library access</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#16a34a;font-weight:700">✓</span> NIRF 36th management rank — among top publicly ranked online MBAs</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#16a34a;font-weight:700">✓</span> Airlines, Media, Disaster Management tracks unavailable elsewhere</li>
+    </ul>
+  </div>
+  <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#9a3412;margin:0 0 12px;font-size:16px">Watch Out For</h3>
+    <ul style="list-style:none;padding:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#ea580c;font-weight:700">!</span> Harvard certificate is from Harvard Business Publishing, not Harvard University</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#ea580c;font-weight:700">!</span> PMI training prepares for CAPM but does not give CAPM automatically</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#ea580c;font-weight:700">!</span> Rs 1,65,000 is after early-bird discount — verify scholarship availability</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#ea580c;font-weight:700">!</span> Brand recognition strongest in North India; less so in South and West</li>
+    </ul>
+  </div>
+</div>
+
+<blockquote style="border-left:4px solid #f97316;padding:14px 20px;background:#f8fafc;margin:24px 0;border-radius:0 8px 8px 0;font-style:italic;color:#64748b;font-size:15px">The PwC co-teaching and PMI training are more practically valuable than the Harvard Business Publishing certificate. If you are going for this program for PwC and PMI credentials, that is a solid reason. If you are going primarily for the "Harvard" name, recalibrate expectations first.</blockquote>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Who Should Apply</h2>
+
+<p>CU Online MBA makes the most sense for three profiles. Finance and consulting aspirants who want PwC-branded credentials alongside their MBA. Project management professionals who want 23 PDUs toward CAPM and a 1-year PMI membership. And professionals in niche sectors like aviation, media, disaster management, or tourism who have no other UGC-DEB approved program covering their domain.</p>
+
+<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
+  <p style="font-size:16px;font-weight:700;color:#9a3412;margin:0 0 8px">Not sure CU Online is right for your domain?</p>
+  <p style="font-size:14px;color:#64748b;margin:0 0 18px">Our counsellors help you evaluate certification-bundled MBAs — matching the right program to your career goals. Free, no-pressure guidance.</p>
+  <a href="/contact" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Get Free Counselling</a>
+</div>
+
+<p style="font-size:14px;color:#64748b;margin:16px 0">Also read: <a href="/blog/dy-patil-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">DY Patil MBA</a> — Rs 1,89,400, WES recognized, Blockchain · <a href="/blog/jaypee-jiit-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">JIIT MBA</a> — Rs 1,75,000, AI+tech focused · <a href="/blog/shoolini-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Shoolini MBA</a> — Rs 1,30,000, Pharma/Biotech · <a href="/blog" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">All MBA Reviews</a></p>
+
+<div style="font-size:13px;color:#64748b;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px;margin-top:32px">
+  <strong>Disclaimer:</strong> EdifyEdu is an independent platform. The Harvard Business Publishing certificate is from Harvard's publishing arm, not Harvard University. Verify all current fees, certification terms, and scholarship availability at onlinecu.in before applying. EdifyEdu does not accept referral commissions from any university.
+</div>`,
+  },
+  {
+    slug: 'jaypee-jiit-online-mba-review',
+    title: 'Jaypee JIIT Online MBA 2026: Fees, IT Business Analytics, AI in Business and Honest Review',
+    seoTitle: 'JIIT Online MBA Review 2026 — IT Business Analytics, AI in Business, Rs 1,75,000 Full Review',
+    metaDescription: 'Jaypee Institute of Information Technology Online MBA at Rs 1,75,000. Engineering college MBA built for tech professionals. AI in Business in Semester 3, mandatory Internship/OJT, IT Business Analytics track with Blockchain, Predictive Analytics and Big Data.',
+    category: 'Online MBA Programs',
+    tags: ['jaypee jiit online mba', 'jiit online mba review', 'online mba for engineers india', 'online mba it business analytics', 'jiit mba fees 2026'],
+    publishedAt: '2026-04-12',
+    readTime: 8,
+    targetKeyword: 'jaypee jiit online mba review',
+    relatedUniversities: ['jiit-online'],
+    status: 'published' as const,
+    ctaTitle: 'Looking for the best online MBA for engineers and IT professionals?',
+    ctaDesc: 'EdifyEdu has a dedicated comparison of tech-forward online MBA programs with full syllabus and fee data.',
+    faqs: [
+      { q: 'Is JIIT Online MBA UGC approved?', a: 'Yes. Jaypee Institute of Information Technology is a deemed-to-be university in Noida, UP, established in 2001, with UGC recognition and UGC-DEB approval for online programs. Verify at deb.ugc.ac.in.' },
+      { q: 'Does JIIT Online MBA include AI in Business for all students?', a: 'Yes. Artificial Intelligence in Business is a compulsory subject in Semester 3 for all four specializations, not just the IT Business Analytics track.' },
+      { q: 'What is the total fee for JIIT Online MBA?', a: 'Rs 1,75,000 total — Rs 44,500 in Semester 1 (Rs 43,000 course + Rs 1,500 exam), Rs 43,500 each for Semesters 2–4 (Rs 42,000 + Rs 1,500), plus Rs 1,000 registration fee one-time.' },
+    ],
+    content: `
+<p style="font-size:13px;color:#64748b;margin-bottom:4px">Written by <strong>Komal Srivastava</strong> · 7+ years in higher education counselling · Updated April 2026</p>
+
+<p>Most online MBAs are designed by business schools, for business school audiences. Jaypee Institute of Information Technology (JIIT) online MBA comes from an engineering college, and that shapes everything about how the program is built. The curriculum is more technical than the standard online MBA. Every student gets Artificial Intelligence in Business in Semester 3, a mandatory Internship or On-Job Training component, and a Capstone Project in Semester 2. The IT Business Analytics specialization reads like it was written by engineers who know what data professionals actually need.</p>
+
+<p>If you are a software engineer, IT professional, or working in technology and want an MBA that treats tech as foundational rather than optional, JIIT online is worth examining. EdifyEdu takes no referral commissions. Verify all fees at jiitonline.com.</p>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-left:5px solid #f97316;border-radius:10px;padding:24px 28px;margin:32px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:16px">
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Total Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 1,75,000</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Sem 1 Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 44,500</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Sem 2-4 Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 43,500/sem</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Reg Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 1,000</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Specializations</div><div style="font-size:17px;font-weight:700;color:#0f172a">4 focused tracks</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Internship/OJT</div><div style="font-size:17px;font-weight:700;color:#0f172a">Included (Sem 3)</div></div>
+</div>
+
+<div style="background:linear-gradient(135deg,#f0f4ff,#e8eeff);border:2px solid #4f46e5;border-radius:12px;padding:24px 28px;margin:28px 0">
+  <h3 style="color:#3730a3;margin:0 0 10px;font-size:18px">Who Built This MBA and Why It Matters</h3>
+  <p style="margin:0;color:#374151;font-size:15px">JIIT is an engineering and technology-focused university in Noida, affiliated with the Jaypee Group. The online MBA was designed with the same engineering-meets-management philosophy: Digital Transformation in Semester 1, AI in Business for every student in Semester 3, and an IT Business Analytics track that covers IT Security, Cyber Law, BPR, ERP, Blockchain, Predictive Analytics, Big Data, and Advanced Tools for Data Science. These are not surface-level additions for marketing purposes. They are foundational to how JIIT thinks about business education.</p>
+</div>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Is JIIT Online MBA Legitimate?</h2>
+
+<p>Yes. Jaypee Institute of Information Technology is a deemed-to-be university in Noida, Uttar Pradesh, established in 2001. It holds UGC recognition and is approved for online programs under UGC-DEB. JIIT carries real credibility in the NCR tech sector where its campus alumni are well-placed. For a tech professional already working in Noida's IT corridor, a JIIT MBA carries more recognition than most people outside that region might expect. Verify UGC-DEB approval at deb.ugc.ac.in.</p>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Fee Structure: Fully Transparent</h2>
+
+<table style="width:100%;border-collapse:collapse;margin:20px 0 32px;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Semester</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Course Fee</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Exam Fee</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Total/Semester</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Semester 1</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 43,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,500</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 44,500</td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Semester 2</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 42,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,500</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 43,500</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Semester 3</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 42,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,500</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 43,500</td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Semester 4</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 42,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,500</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 43,500</td></tr>
+    <tr style="font-weight:700;background:#fef9f0;color:#0f172a"><td style="padding:10px 14px">Total (incl Rs 1,000 reg fee)</td><td style="padding:10px 14px" colspan="2">Full 2-year program</td><td style="padding:10px 14px">Rs. 1,75,000</td></tr>
+  </tbody>
+</table>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">4 Specializations: Focused Rather Than Broad</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:20px 0 32px">
+  <div style="background:#fff7ed;border:1px solid #f97316;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">💻</span> IT &amp; Business Analytics</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">💰</span> Finance</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">👥</span> Human Resource</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">📣</span> Marketing</div>
+</div>
+
+<p>The IT Business Analytics specialization is the flagship track. If you are an engineer wanting to move into analytics leadership, product management, or tech strategy, this is the track built for you.</p>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Syllabus: Where JIIT Stands Apart</h2>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 1 — Management + Technology Foundation (All Specializations)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">1</span></div>
+  <div style="padding:14px 18px;background:#fff;display:flex;flex-wrap:wrap;gap:8px"><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Economics</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Financial Accounting</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Marketing Management</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Organisational Behaviour</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Business Statistics (Excel)</span><span style="background:#fff7ed;border:1px solid #f97316;border-radius:20px;padding:4px 12px;font-size:13px;font-weight:600">Digital Transformation ★</span></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 2 — Core Management + Capstone (All Specializations)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">2</span></div>
+  <div style="padding:14px 18px;background:#fff;display:flex;flex-wrap:wrap;gap:8px"><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Legal Aspects</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">HRM</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Innovation &amp; Entrepreneurship</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Business Analytics</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Digital Marketing</span><span style="background:#fff7ed;border:1px solid #f97316;border-radius:20px;padding:4px 12px;font-size:13px;font-weight:600">Capstone Project ★</span></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 3 — IT Business Analytics + AI + Internship</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">3</span></div>
+  <div style="padding:14px 18px;background:#fff;display:flex;flex-wrap:wrap;gap:8px"><span style="background:#fff7ed;border:1px solid #f97316;border-radius:20px;padding:4px 12px;font-size:13px;font-weight:600">AI in Business ★</span><span style="background:#fff7ed;border:1px solid #f97316;border-radius:20px;padding:4px 12px;font-size:13px;font-weight:600">Internship/OJT ★</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">IT Security &amp; Cyber Law</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">BPR, BPM &amp; ERP</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Predictive Analytics</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Blockchain</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">E-Commerce &amp; E-Governance</span></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 4 — Advanced Analytics + Major Project</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">4</span></div>
+  <div style="padding:14px 18px;background:#fff;display:flex;flex-wrap:wrap;gap:8px"><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Strategic Management</span><span style="background:#fff7ed;border:1px solid #f97316;border-radius:20px;padding:4px 12px;font-size:13px;font-weight:600">Major Project ★</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Big Data &amp; Data Visualisation</span><span style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px">Advanced Tools for Data Science</span></div>
+</div>
+
+<p>The Marketing track adds Omnichannel Marketing and AI/ML-powered Marketing in Semester 4. The Finance track covers Security Analysis, Portfolio Management, Financial Statement Analysis, Business Valuation, and Behavioral Finance. The HR track covers Workplace Diversity, Performance &amp; Compensation Management, Learning and Development, and Talent Management.</p>
+
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);color:#fff;border-radius:12px;padding:32px 36px;margin:48px 0 32px;text-align:center">
+  <h3 style="color:#fff;margin:0 0 10px;font-size:20px">Comparing JIIT with other NCR online MBAs for tech professionals?</h3>
+  <p style="color:#94a3b8;font-size:15px;margin:0 0 20px">EdifyEdu covers all major programs including JIIT, Galgotias, Sharda, and more with complete syllabus and fee data.</p>
+  <a href="/compare" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Compare Online MBAs</a>
+</div>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Honest Assessment</h2>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 32px">
+  <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#166534;margin:0 0 12px;font-size:16px">What Works</h3>
+    <ul style="list-style:none;padding:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#16a34a;font-weight:700">✓</span> Engineering DNA: tech-integrated curriculum from Semester 1</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#16a34a;font-weight:700">✓</span> AI in Business compulsory for all students in Semester 3</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#16a34a;font-weight:700">✓</span> Internship/OJT built into Semester 3</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#16a34a;font-weight:700">✓</span> IT Analytics track: Blockchain, Predictive Analytics, Big Data, Advanced Data Science</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#16a34a;font-weight:700">✓</span> Capstone Project (Sem 2) + Major Project (Sem 4) — real deliverables</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#16a34a;font-weight:700">✓</span> Strong NCR/Noida brand for IT sector professionals</li>
+    </ul>
+  </div>
+  <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#9a3412;margin:0 0 12px;font-size:16px">Watch Out For</h3>
+    <ul style="list-style:none;padding:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#ea580c;font-weight:700">!</span> Only 4 specializations — limited for niche domain professionals</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#ea580c;font-weight:700">!</span> Brand recognition mainly in NCR tech sector</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#ea580c;font-weight:700">!</span> Rs 1,75,000 is not cheapest in this accreditation range</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative"><span style="position:absolute;left:0;color:#ea580c;font-weight:700">!</span> Not the right choice for Bengaluru/Mumbai brand recognition</li>
+    </ul>
+  </div>
+</div>
+
+<blockquote style="border-left:4px solid #f97316;padding:14px 20px;background:#f8fafc;margin:24px 0;border-radius:0 8px 8px 0;font-style:italic;color:#64748b;font-size:15px">JIIT Online MBA is the only program that treats Digital Transformation as a Semester 1 foundation subject and AI in Business as a Semester 3 requirement for all students — not just those in the analytics track. That is an engineering school's way of building a business curriculum.</blockquote>
+
+<h2 style="font-size:22px;font-weight:700;color:#0f172a;margin:48px 0 16px;padding-bottom:8px;border-bottom:3px solid #f97316;display:inline-block">Who Should Apply</h2>
+
+<p>JIIT Online MBA is purpose-built for one specific profile: a working professional with a technology background who wants an MBA that does not force them to abandon what they know. Software engineers, IT project managers, data analysts, systems architects, and product managers at companies in Noida's technology belt — these are the people for whom this program is genuinely designed.</p>
+
+<p>It is not the right program for professionals in non-tech domains wanting niche specializations in healthcare or pharma (look at <a href="/blog/shoolini-online-mba-review" style="color:#f97316;font-weight:600">Shoolini Online</a> or <a href="/blog/dy-patil-online-mba-review" style="color:#f97316;font-weight:600">DY Patil</a>). And if national brand prestige is the primary driver, <a href="/programs" style="color:#f97316;font-weight:600">NMIMS or Symbiosis</a> carry more weight.</p>
+
+<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
+  <p style="font-size:16px;font-weight:700;color:#9a3412;margin:0 0 8px">Engineer or IT professional looking for the right online MBA?</p>
+  <p style="font-size:14px;color:#64748b;margin:0 0 18px">Our counsellors help tech professionals find the right MBA — one that matches your background, goals, and sector. Free guidance, no pressure.</p>
+  <a href="/contact" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Get Free Counselling</a>
+</div>
+
+<p style="font-size:14px;color:#64748b;margin:16px 0">Also read: <a href="/blog/chandigarh-university-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">CU Online MBA</a> — Rs 1,65,000, Harvard+PwC+PMI · <a href="/blog/galgotias-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Galgotias MBA</a> — Rs 1,20,000, NCR · <a href="/blog/arka-jain-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">ARKA JAIN MBA</a> — Rs 1,08,500, GenAI · <a href="/blog/dy-patil-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">DY Patil MBA</a> — Rs 1,89,400, WES · <a href="/blog" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">All MBA Reviews</a></p>
+
+<div style="font-size:13px;color:#64748b;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px;margin-top:32px">
+  <strong>Disclaimer:</strong> EdifyEdu is an independent platform. All fees are indicative based on publicly available data as of early 2026. Verify all current fees, UGC-DEB status, and program terms at jiitonline.com before applying. EdifyEdu does not accept referral commissions from any university.
 </div>`,
   },
 ]
