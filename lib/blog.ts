@@ -11189,6 +11189,578 @@ export const BLOG_POSTS: BlogPost[] = [
   <strong>Disclaimer:</strong> EdifyEdu is an independent university comparison platform. All fees mentioned are indicative based on publicly available data as of early 2026. Fees may change without notice. Please verify all details including current fees, UGC-DEB approval status, and eligibility criteria directly at <a href="https://dsuonline.com/" target="_blank" rel="noopener">dsuonline.com</a> and the UGC portal before applying. EdifyEdu does not accept referral commissions from any university.
 </div>`,
   },
+  {
+    slug: 'smu-online-mba-review',
+    title: 'Sikkim Manipal University Online MBA 2026: Fees, Dual Specialization, Syllabus and Honest Review',
+    seoTitle: 'SMU Online MBA Fees 2026 — Rs. 1,10,000 Total | Dual Specialization Review',
+    metaDescription: 'SMU Online MBA at Rs. 1,10,000 total. NAAC A+, Manipal Group. Mandatory dual specialization, full syllabus, fee breakdown and honest review for 2026.',
+    category: 'Online MBA Programs',
+    tags: ['smu online mba', 'sikkim manipal university online mba', 'smu online mba fees', 'manipal online mba', 'dual specialization mba india', 'online mba manipal group'],
+    publishedAt: '2026-04-12',
+    readTime: 9,
+    targetKeyword: 'smu online mba',
+    relatedUniversities: ['sikkim-manipal-university'],
+    status: 'published',
+    ctaTitle: 'Compare SMU Against Other Online MBA Programs',
+    ctaDesc: 'See how SMU Online MBA stacks up against MAHE, MUJ and 20+ other UGC-approved programs — fees, dual specialization, accreditation side by side.',
+    faqs: [
+      { q: 'What is the total fee for SMU Online MBA?', a: 'The total fee is Rs. 1,10,000 for the full two-year program, paid as Rs. 27,500 per semester. No entrance exam is required. Verify current fees at onlinemanipal.com before applying.' },
+      { q: 'What is the dual specialization in SMU Online MBA?', a: 'SMU mandates that all students choose a primary and a secondary specialization. In semesters 3 and 4, you study core subjects from your primary track plus 2 subjects from a secondary specialization. Both appear on your degree transcript.' },
+      { q: 'Is SMU Online MBA UGC approved?', a: 'Yes. Sikkim Manipal University holds NAAC A+ accreditation and UGC-DEB entitlement for online degrees. The degree is legally equivalent to a regular campus MBA.' },
+      { q: 'How does SMU Online MBA compare to MAHE?', a: 'SMU costs Rs. 1,10,000 vs MAHE at Rs. 2,92,000. MAHE carries a stronger brand (NAAC A++, Rank #3 nationally). SMU offers the same Manipal alumni network access at one-third the cost, with a mandatory dual specialization MAHE does not have.' },
+      { q: 'Who should apply for SMU Online MBA?', a: 'SMU is best suited for mid-career professionals who want Manipal brand association at an affordable price and benefit from a dual-domain curriculum. Healthcare professionals are particularly well-served by the Healthcare specialization at Rs. 1,10,000 total.' }
+    ],
+    content: `<p>Sikkim Manipal University occupies an interesting position in the online MBA market. It is part of the Manipal Education group, which also offers programs under MAHE (Rs. 2.92 lakhs) and MUJ (Rs. 1.75 lakhs). But SMU sits at Rs. 1,10,000 total and comes with something most programs at this price point do not: a mandatory dual specialization requirement.</p>
+
+<p>That one structural difference changes who this program is for. If you pick Finance as your primary track, you are also required to study two subjects from a second specialization. You graduate with competency across two domains, not just one. For a mid-career professional trying to expand their profile, that is a meaningful curriculum design choice.</p>
+
+<p>This review is based on publicly available data. EdifyEdu does not accept referral fees. All details should be verified at <a href="https://www.onlinemanipal.com/institution/sikkim-manipal-university" target="_blank" rel="noopener">onlinemanipal.com</a>.</p>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-left:5px solid #f97316;border-radius:10px;padding:24px 28px;margin:32px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px">
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Total Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 1,10,000</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Per Semester</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 27,500</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">NAAC Grade</div><div style="font-size:17px;font-weight:700;color:#0f172a">A+</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">UGC Status</div><div style="font-size:17px;font-weight:700;color:#0f172a">UGC-Entitled</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Specializations</div><div style="font-size:17px;font-weight:700;color:#0f172a">6 tracks</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Dual Spec</div><div style="font-size:17px;font-weight:700;color:#0f172a">Mandatory</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Alumni Network</div><div style="font-size:17px;font-weight:700;color:#0f172a">5 Lakh+</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Entrance Exam</div><div style="font-size:17px;font-weight:700;color:#0f172a">Not Required</div></div>
+</div>
+
+<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:20px 24px;margin:24px 0">
+  <h3 style="color:#1e40af;margin:0 0 10px;font-size:16px">The Dual Specialization Feature Explained</h3>
+  <p style="margin:0;font-size:14px;color:#374151">SMU Online MBA requires all students to choose a primary and a secondary specialization. In semesters 3 and 4, you study core subjects from your primary track plus two subjects from a secondary specialization. Both functional domains appear on your degree transcript — useful if you want a hybrid profile like Finance + Analytics or HR + Marketing.</p>
+</div>
+
+<h2>Is SMU Online MBA Legitimate?</h2>
+
+<p>Yes. Sikkim Manipal University is a government-recognized university established under a state act. Its online programs run through the OnlineManipal platform — Manipal Education's dedicated online learning infrastructure. The university holds NAAC A+ accreditation and UGC-DEB entitlement for online degrees.</p>
+
+<p>Being part of the Manipal Group gives SMU access to infrastructure, faculty, and alumni networks that most standalone universities at this price point cannot match. Verify UGC-DEB approval at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a> before paying any fees.</p>
+
+<h2>SMU Online MBA Fee Structure</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Fee Component</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Amount</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Notes</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Semester Fee (x4)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 27,500 per semester</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Payable at start of each semester</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Total Program Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,10,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">2-year full program</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Entrance Exam</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Not Required</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Merit-based admission</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>At Rs. 1,10,000 total, SMU is the most affordable track within the Manipal education group. Compare it with MUJ at Rs. 1,75,000 or MAHE at Rs. 2,92,000. You get the Manipal brand association at roughly one-third the cost of MAHE.</p>
+
+<div style="margin:32px 0;text-align:center">
+  <svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,sans-serif" style="max-width:100%;height:auto">
+    <rect width="700" height="240" fill="#f8fafc" rx="12"/>
+    <text x="350" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Manipal Group: Online MBA Fee Comparison</text>
+    <rect x="60" y="50" width="185" height="40" fill="#f97316" rx="6"/>
+    <text x="152" y="75" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">SMU: Rs. 1,10,000</text>
+    <text x="60" y="105" font-size="12" fill="#64748b">Sikkim Manipal University</text>
+    <rect x="60" y="125" width="292" height="40" fill="#B8892A" rx="6"/>
+    <text x="206" y="150" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">MUJ: Rs. 1,75,000</text>
+    <text x="60" y="180" font-size="12" fill="#64748b">Manipal University Jaipur</text>
+    <rect x="60" y="195" width="487" height="35" fill="#0f172a" rx="6"/>
+    <text x="303" y="217" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">MAHE: Rs. 2,92,000</text>
+  </svg>
+  <div style="font-size:13px;color:#64748b;margin-top:8px;font-style:italic">SMU is the most affordable Manipal track. Fees are indicative; verify on onlinemanipal.com.</div>
+</div>
+
+<h2>Specializations and the Dual Specialization System</h2>
+
+<p>SMU offers 6 primary specializations. Each student picks a primary track and selects two subjects from a secondary specialization in semesters 3 and 4.</p>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:20px 0 32px">
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">📣</span> Marketing</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">💰</span> Finance</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">👥</span> Human Resources</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">💻</span> Systems (IT Management)</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🚚</span> Operations &amp; Supply Chain</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🏥</span> Healthcare</div>
+</div>
+
+<h2>Semester-Wise Syllabus</h2>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 1 — Common Foundation</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">1</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Principles of Management &amp; OB</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Marketing Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Accounting for Managers</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Economics</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Communication</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Legal Aspects of Business</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Computer Application in Management</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 2 — Core Management</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">2</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Quantitative Methods</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Human Resource Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Financial Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Production &amp; Operations Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Research Methodology &amp; Statistics</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Global Economic Environment</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Management Information Systems</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 3 — Primary + 2 from Secondary (Finance Track)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">3</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Project Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Strategy</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Security Analysis &amp; Portfolio Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Derivative Market</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Taxation</li><li style="background:#f97316;color:#fff;border-radius:20px;padding:4px 12px;font-size:13px;font-weight:600">+ 2 Subjects from Spec II</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 4 — Advanced + Banking &amp; Insurance + 2 from Spec II</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">4</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Banking and Insurance Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Project Work</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Multinational Finance &amp; Risk Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Marketing of Financial Services &amp; M&amp;A</li><li style="background:#f97316;color:#fff;border-radius:20px;padding:4px 12px;font-size:13px;font-weight:600">+ 2 Subjects from Spec II</li></ul></div>
+</div>
+
+<p>The Marketing track covers Consumer Behavior, Advertisement &amp; Brand Management, Retail and Distribution Management, Supply Chain Management, Market Research, Service Marketing, and Global Marketing. The Healthcare track includes Health Education &amp; Communication, Healthcare Core Services, Quality Management in Healthcare, and Legal Aspects in Healthcare Administration.</p>
+
+<h2>Eligibility and Admission</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;width:38%;background:#f8fafc">Minimum Qualification</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Bachelor's degree from a UGC-recognized university</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Entrance Exam</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Not Required</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Work Experience</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Not Mandatory</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Platform</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">OnlineManipal.com</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:600;color:#0f172a;background:#f8fafc">Alumni Network</td><td style="padding:10px 14px">5 Lakh+ Manipal Group alumni</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);color:#fff;border-radius:12px;padding:32px 36px;margin:48px 0 32px;text-align:center">
+  <h3 style="color:#fff;margin:0 0 10px;font-size:20px">How does SMU compare to MAHE and MUJ?</h3>
+  <p style="color:#94a3b8;font-size:15px;margin:0 0 20px">Browse all three Manipal tracks side by side — fees, syllabi, accreditation. No paid rankings.</p>
+  <a href="/compare" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;margin-right:12px">Compare Universities</a>
+  <a href="/contact" style="display:inline-block;background:transparent;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid #f97316">Talk to a Counsellor</a>
+</div>
+
+<h2>Honest Assessment</h2>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 32px">
+  <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#166534;margin:0 0 12px;font-size:16px">What Works</h3>
+    <ul style="list-style:none;padding:0;margin:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Mandatory dual specialization — two domains on one degree</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Most affordable Manipal Group track at Rs. 1,10,000</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">NAAC A+ and UGC-entitled</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">5 lakh+ Manipal alumni network access</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">No entrance exam required</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Healthcare specialization at lowest Manipal price</li>
+    </ul>
+  </div>
+  <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#9a3412;margin:0 0 12px;font-size:16px">Watch Out For</h3>
+    <ul style="list-style:none;padding:0;margin:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Fewer specialization tracks (6) vs MUJ (13+)</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">SMU brand is softer than MAHE in premium markets</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Banking &amp; Insurance Management is mandatory in Sem 4 for all tracks</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Online batch placement support differs from campus</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Who Should Apply for SMU Online MBA?</h2>
+
+<p>SMU Online MBA fits a mid-career professional who wants Manipal brand association at the lowest possible price, and who benefits from dual-domain study. If you are in a company where Finance + Operations, or Marketing + HR, or IT + Finance is a realistic cross-functional role, the dual specialization genuinely changes what you study.</p>
+
+<p>The Healthcare specialization is worth highlighting separately. At Rs. 1,10,000 total, this is one of the cheapest ways to get a Manipal-branded healthcare management MBA. If you are a nurse, pharmacist, or hospital administrator looking to move into management, SMU Healthcare at this price is hard to argue against.</p>
+
+<blockquote style="border-left:4px solid #f97316;padding:14px 20px;background:#f8fafc;margin:24px 0;border-radius:0 8px 8px 0;font-style:italic;color:#64748b;font-size:15px">The dual specialization is SMU Online MBA's most distinctive feature. At Rs. 1,10,000, you get two functional domains on your degree rather than one — a curriculum design choice most budget online MBAs have not made.</blockquote>
+
+<h2>SMU vs Other Manipal Group Online MBAs</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Program</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Total Fee</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">NAAC</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Key Differentiator</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">SMU Online MBA</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,10,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Dual spec mandatory, cheapest Manipal</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">MUJ Online MBA</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,75,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Coursera integration, 13+ specs</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">MAHE Online MBA</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rs. 2,92,000</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">A++</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rank #3 India, IoE status</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p style="font-size:14px;color:#64748b">Also compare: <a href="/blog/galgotias-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Galgotias Online MBA</a> — Rs. 76,200, cheapest NAAC A+ · <a href="/blog/vignan-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Vignan Online MBA</a> — Rs. 90,000 · <a href="/blog/uu-doon-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">UU Doon Online MBA</a> — Rs. 94,000</p>
+
+<h2>Final Word</h2>
+
+<p>Sikkim Manipal University Online MBA at Rs. 1,10,000 punches above its price. The mandatory dual specialization, Manipal alumni network, NAAC A+ accreditation, and Healthcare specialization make this worth serious consideration. It is not MAHE — the brand is softer, the specialization list shorter. But for the right candidate, the value equation is genuinely strong.</p>
+
+<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
+  <p style="font-size:16px;font-weight:700;color:#9a3412;margin:0 0 8px">Not sure if SMU is right for you?</p>
+  <p style="font-size:14px;color:#64748b;margin:0 0 18px">Our counsellors help you pick between SMU, MAHE, MUJ and other programs based on your budget and career goals — free, no pressure.</p>
+  <a href="/contact" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Get Free Counselling</a>
+</div>
+
+<p style="font-size:14px;color:#64748b;margin:16px 0">Also read: <a href="/blog/galgotias-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Galgotias MBA</a> — Rs. 76,200 · <a href="/blog/uu-doon-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">UU Doon MBA</a> — Rs. 94,000 · <a href="/blog/vignan-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Vignan MBA</a> — Rs. 90,000 · <a href="/blog" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">All MBA Reviews</a></p>
+
+<div style="font-size:13px;color:#64748b;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px;margin-top:32px">
+  <strong>Disclaimer:</strong> EdifyEdu is an independent university comparison platform. All fees are indicative based on publicly available data as of early 2026. Please verify all current fees, available specializations, and UGC-DEB approval status at <a href="https://www.onlinemanipal.com/institution/sikkim-manipal-university" target="_blank" rel="noopener">onlinemanipal.com</a> before applying. EdifyEdu does not accept referral commissions from any university.
+</div>`,
+  },
+  {
+    slug: 'uu-doon-online-mba-review',
+    title: 'Uttaranchal University Online MBA 2026: Fees, Syllabus, Specializations and Honest Review',
+    seoTitle: 'UU Doon Online MBA Fees 2026 — Rs. 94,000 Total | Uttaranchal Review',
+    metaDescription: 'UU Doon Online MBA at Rs. 94,000 total (after 30% scholarship). NAAC A+, Dehradun. Full fee breakdown, 8 specializations, syllabus and honest review for 2026.',
+    category: 'Online MBA Programs',
+    tags: ['uttaranchal university online mba', 'uu doon online mba', 'online mba dehradun', 'uu online mba fees', 'cheapest online mba uttarakhand', 'uu doon mba review'],
+    publishedAt: '2026-04-12',
+    readTime: 8,
+    targetKeyword: 'uttaranchal university online mba',
+    relatedUniversities: ['uttaranchal-university'],
+    status: 'published',
+    ctaTitle: 'Compare UU Doon Against Other Online MBA Programs',
+    ctaDesc: 'See how UU Doon Online MBA stacks up against Vignan, Galgotias and other UGC-approved programs — fees, EMI, accreditation side by side.',
+    faqs: [
+      { q: 'What is the total fee for UU Doon Online MBA?', a: 'After the 30% early-bird scholarship, the total fee is Rs. 94,000 (Rs. 24,500 per semester x 4). The standard fee without scholarship is Rs. 98,000. Exam fees are included in the semester fee. Verify current scholarship availability at onlineuu.in.' },
+      { q: 'Is UU Doon Online MBA UGC approved?', a: 'Yes. Uttaranchal University is recognized under UGC Sections 2(f) and 12(B), UGC-DEB approved for online programs, and NAAC A+ accredited — the first university in Uttarakhand to achieve this in the first accreditation cycle.' },
+      { q: 'What is the EMI for UU Doon Online MBA?', a: 'The EMI starts from Rs. 3,956 per month, which is the lowest among comparable accredited online MBA programs in India. Exam fees are already included in the semester fee.' },
+      { q: 'What specializations does UU Doon Online MBA offer?', a: '8 specializations: Business Analytics, Digital Marketing, Financial Management, HR Management, Information Technology, International Business, Logistics & Supply Chain Management, and Marketing Management.' },
+      { q: 'Who should apply for UU Doon Online MBA?', a: 'Best suited for working professionals in Uttarakhand, UP, and North India — especially government/semi-government employees needing an MBA for promotion, or professionals in marketing who want the formal credential at minimum cost.' }
+    ],
+    content: `<p>Uttaranchal University does not get nearly as much search traffic as Amity or LPU, and that is precisely why it can rank well for certain searches. The university holds NAAC A+ accreditation, sits in Dehradun, and was the first university in Uttarakhand to receive A+ in the first accreditation cycle. The online MBA at Rs. 94,000 total (after 30% early-bird scholarship) is one of the most affordable accredited options in North India.</p>
+
+<p>This review uses publicly available data. EdifyEdu does not take referral fees. All fees should be verified at <a href="https://www.onlineuu.in/mba.php" target="_blank" rel="noopener">onlineuu.in</a>.</p>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-left:5px solid #f97316;border-radius:10px;padding:24px 28px;margin:32px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px">
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Total Fee (After Scholarship)</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 94,000</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Per Semester</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 24,500</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">EMI Option</div><div style="font-size:17px;font-weight:700;color:#0f172a">From Rs. 3,956/mo</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Exam Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Included</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Scholarship</div><div style="font-size:17px;font-weight:700;color:#0f172a">30% Early-Bird</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">NAAC Grade</div><div style="font-size:17px;font-weight:700;color:#0f172a">A+</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">UGC-DEB Approved</div><div style="font-size:17px;font-weight:700;color:#0f172a">Yes</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Specializations</div><div style="font-size:17px;font-weight:700;color:#0f172a">8 tracks</div></div>
+</div>
+
+<div style="background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:14px 18px;margin:20px 0">
+  <p style="margin:0;font-size:14px;color:#374151"><strong>Important:</strong> The Rs. 94,000 fee reflects the 30% early-bird scholarship. The standard fee is Rs. 98,000. Exam fees are included in the semester fee — a genuine advantage over programs that charge them separately. Verify current scholarship availability at <a href="https://www.onlineuu.in/" target="_blank" rel="noopener">onlineuu.in</a>.</p>
+</div>
+
+<h2>Is Uttaranchal University Online MBA Legitimate?</h2>
+
+<p>Yes. Uttaranchal University was established in 2013 under the Uttaranchal University Act, 2012. It is recognized under UGC Sections 2(f) and 12(B), UGC-DEB approved for online programs, NAAC A+ accredited, and AICTE approved. India Today ranks it among the top 50 private universities in India.</p>
+
+<p>The biggest standalone credential here is being Uttarakhand's first NAAC A+ university in the first accreditation cycle. Verify approval status at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a> before paying.</p>
+
+<h2>UU Doon Online MBA Fee Structure</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Fee Component</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Amount</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Notes</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Semester Fee (x4)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 24,500 per semester</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Exam fee included</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Total (With Scholarship)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 94,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">After 30% early-bird discount</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">EMI Option</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">From Rs. 3,956/month</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Lowest in segment</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Specializations Offered</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:20px 0 32px">
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">📊</span> Business Analytics</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">📣</span> Digital Marketing</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">💰</span> Financial Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">👥</span> HR Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">💻</span> Information Technology</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🌍</span> International Business</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🚚</span> Logistics &amp; Supply Chain</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">📣</span> Marketing Management</div>
+</div>
+
+<h2>Semester-Wise Syllabus</h2>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 1 — Business Foundations</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">1</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Principles and Practices of Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Accounting for Managerial Decisions</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Economics for Managers</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Environment</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">E-Commerce</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 2 — Core Management</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">2</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Emerging Business Law</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Research Methods</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Marketing Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Analytics</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Operations Management</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 3 — Specialization Core (Business Analytics Track)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">3</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Strategic Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Supply Chain Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Financial Statement Analysis</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Big Data Analytics in Business</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">R Programming for Business</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 4 — Advanced Specialization (Business Analytics Track)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">4</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Entrepreneurship Development</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Corporate Governance</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Project Work</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Marketing &amp; Social Media Analytics</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Python Programming &amp; Data Visualization</li></ul></div>
+</div>
+
+<p>The Digital Marketing track covers Fundamentals of Digital Marketing, Digital Business Design, Digital Technologies and Analytics, and Digital Strategies for Business. The Logistics track includes International Logistics, Supply Chain Modelling, Supply Chain Analytics, and Sustainability in Logistics.</p>
+
+<h2>Eligibility and Admission Process</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;width:38%;background:#f8fafc">Minimum Qualification</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Bachelor's degree (3-year min) from a UGC-recognized university</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Minimum Marks</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">50% aggregate (45% for reserved category)</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Entrance Exam</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Not required. First-come, first-served.</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Mentorship</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">1-on-1 dedicated mentor assigned per student</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:600;color:#0f172a;background:#f8fafc">Admission Cycles</td><td style="padding:10px 14px">January and July sessions</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);color:#fff;border-radius:12px;padding:32px 36px;margin:48px 0 32px;text-align:center">
+  <h3 style="color:#fff;margin:0 0 10px;font-size:20px">Comparing UU Doon with other online MBAs?</h3>
+  <p style="color:#94a3b8;font-size:15px;margin:0 0 20px">Browse all verified programs by fee, EMI, and specialization. No paid rankings, no commissions.</p>
+  <a href="/compare" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;margin-right:12px">Compare Universities</a>
+  <a href="/contact" style="display:inline-block;background:transparent;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid #f97316">Talk to a Counsellor</a>
+</div>
+
+<h2>What Makes UU Doon Stand Out</h2>
+
+<p>Exam fees are included in the semester fee — at programs like Vignan, Galgotias, or NIU, exam fees are charged separately. At UU Doon the Rs. 24,500 per semester covers everything, keeping the total more predictable.</p>
+
+<p>The 1-on-1 mentorship model is explicitly marketed and appears in student testimonials. The Digital Marketing and Logistics &amp; Supply Chain specializations have reasonably current syllabi — the Logistics track covering Sustainability in Logistics is a 2026-relevant addition older programs have not updated.</p>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 32px">
+  <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#166534;margin:0 0 12px;font-size:16px">What Works</h3>
+    <ul style="list-style:none;padding:0;margin:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Exam fee included — no hidden charges</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Lowest EMI in segment at Rs. 3,956/month</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">NAAC A+ — first in Uttarakhand</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">1-on-1 mentor per student</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">8 specializations incl. Digital Marketing, Logistics</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">WES recognized for international applications</li>
+    </ul>
+  </div>
+  <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#9a3412;margin:0 0 12px;font-size:16px">Watch Out For</h3>
+    <ul style="list-style:none;padding:0;margin:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">30% scholarship is time-limited — verify availability</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Brand recognition mainly in Uttarakhand and nearby states</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Limited placement infrastructure for online batch</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Executive MBA (Rs. 3.10 lakhs) is a different program — do not confuse</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Who Should Apply for UU Doon Online MBA?</h2>
+
+<p>UU Doon makes most sense for professionals in Uttarakhand, HP, UP, and North India where the Uttaranchal University name carries local recognition. If you are in a government or semi-government role and need an MBA for promotion or pay-scale benefits, the UGC approval and NAAC A+ make this a strong candidate.</p>
+
+<p>The Digital Marketing specialization is worth looking at if you are already working in marketing and want the formal credential. You are not paying Rs. 2 lakhs for something you could have got for Rs. 94,000.</p>
+
+<blockquote style="border-left:4px solid #f97316;padding:14px 20px;background:#f8fafc;margin:24px 0;border-radius:0 8px 8px 0;font-style:italic;color:#64748b;font-size:15px">The Rs. 3,956/month EMI is the lowest I have seen among accredited online MBA programs in India. If cash flow is your primary constraint, this is worth shortlisting alongside Galgotias and Vignan.</blockquote>
+
+<h2>UU Doon vs Comparable Programs</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">University</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Total Fee</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">NAAC</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Key USP</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0"><a href="/blog/galgotias-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">Galgotias Online</a></td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 76,200</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Cheapest accredited program, NCR</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc"><a href="/blog/vignan-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">Vignan Online</a></td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 90,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">NIRF top 75, Andhra Pradesh</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">UU Doon Online</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 94,000*</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Lowest EMI, exam fee included</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a"><a href="/blog/smu-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">SMU Online</a></td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rs. 1,10,000</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">A+</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Manipal brand, dual specialization</td></tr>
+  </tbody>
+</table>
+</div>
+<p style="font-size:13px;color:#64748b">*After early-bird scholarship. Fees are indicative; verify on official sites.</p>
+
+<h2>Final Word</h2>
+
+<p>Uttaranchal University Online MBA at Rs. 94,000 (post-scholarship) is a genuinely good deal for the North Indian market. The NAAC A+ grade, UGC-DEB approval, 1-on-1 mentorship, included exam fees, and the lowest available EMI make it one of the most financially accessible legitimate programs available.</p>
+
+<p>It is not a brand that opens doors in Bengaluru or Mumbai IT companies. But within its geographic catchment, and for anyone in a government or semi-government job wanting an affordable MBA credential, this program checks most boxes.</p>
+
+<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
+  <p style="font-size:16px;font-weight:700;color:#9a3412;margin:0 0 8px">Not sure if UU Doon is the right fit?</p>
+  <p style="font-size:14px;color:#64748b;margin:0 0 18px">Our counsellors help working professionals shortlist the right online MBA based on budget, location, and career goals — free, no-pressure guidance.</p>
+  <a href="/contact" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Get Free Counselling</a>
+</div>
+
+<p style="font-size:14px;color:#64748b;margin:16px 0">Also read: <a href="/blog/galgotias-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Galgotias MBA</a> — Rs. 76,200, cheapest NAAC A+ · <a href="/blog/vignan-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Vignan MBA</a> — Rs. 90,000 · <a href="/blog/smu-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">SMU MBA</a> — Rs. 1,10,000, dual spec · <a href="/blog" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">All MBA Reviews</a></p>
+
+<div style="font-size:13px;color:#64748b;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px;margin-top:32px">
+  <strong>Disclaimer:</strong> EdifyEdu is an independent university comparison platform. All fees are indicative based on publicly available data as of early 2026. The 30% scholarship availability should be verified directly at <a href="https://www.onlineuu.in/mba.php" target="_blank" rel="noopener">onlineuu.in</a>. Confirm UGC-DEB approval status on the UGC portal before applying. EdifyEdu does not accept referral commissions from any university.
+</div>`,
+  },
+  {
+    slug: 'galgotias-online-mba-review',
+    title: 'Galgotias Online MBA 2026: Fees, Syllabus, Specializations and Honest Review',
+    seoTitle: 'Galgotias Online MBA Fees 2026 — Rs. 76,200 Total | Cheapest NAAC A+',
+    metaDescription: 'Galgotias University Online MBA at Rs. 76,200 total. NAAC A+, Greater Noida. Full fee breakdown, 7 specializations, semester-wise syllabus and honest review for 2026.',
+    category: 'Online MBA Programs',
+    tags: ['galgotias online mba', 'galgotias university online mba', 'cheapest online mba india', 'galgotias online mba fees', 'online mba greater noida', 'galgotias mba review'],
+    publishedAt: '2026-04-12',
+    readTime: 8,
+    targetKeyword: 'galgotias online mba',
+    relatedUniversities: ['galgotias-university'],
+    status: 'published',
+    ctaTitle: 'Compare Galgotias Against Other Online MBA Programs',
+    ctaDesc: 'See how Galgotias Online MBA stacks up against Vignan, UU Doon and other UGC-approved programs — fees, syllabi, accreditation side by side.',
+    faqs: [
+      { q: 'What is the total fee for Galgotias Online MBA?', a: 'The total fee is Rs. 76,200, broken down as: course fee Rs. 66,000 (Rs. 16,500 per semester x4), exam fee Rs. 8,000 (Rs. 4,000/year), registration fee Rs. 1,200, and alumni fee Rs. 1,000. Verify current fees at galgotiasonline.edu.in.' },
+      { q: 'Is Galgotias Online MBA UGC approved?', a: 'Yes. Galgotias University holds NAAC A+ accreditation, UGC-DEB approval for online programs, and is AICTE approved. The university ranked 93rd in NIRF MBA 2026 rankings.' },
+      { q: 'What specializations does Galgotias Online MBA offer?', a: '7 specializations: Finance Management, HR Management, Marketing Management, Operations Management, Business Analytics, Healthcare Management, and International Business Management.' },
+      { q: 'Is Galgotias Online MBA the cheapest accredited option?', a: 'At Rs. 76,200 total, Galgotias is the cheapest NAAC A+ online MBA in India. The only cheaper options typically lack NAAC accreditation or UGC-DEB approval.' },
+      { q: 'Who should apply for Galgotias Online MBA?', a: 'Best suited for working professionals in NCR, UP, and North India who need the formal MBA credential without spending Rs. 2+ lakhs. Particularly good for the Business Analytics track which covers Python, AI for Business, and data tools.' }
+    ],
+    content: `<p>Rs. 76,200. That is the total cost of a two-year online MBA from a NAAC A+ university in India's NCR region. Galgotias Online MBA sits at the cheapest end of the legitimate online MBA market, and yet it holds UGC-DEB approval, NIRF ranking, and a curriculum that covers modern topics like AI for Business and Python analytics.</p>
+
+<p>This review is based on publicly available data. EdifyEdu does not accept referral commissions. All fees should be verified directly at <a href="https://galgotiasonline.edu.in/" target="_blank" rel="noopener">galgotiasonline.edu.in</a> before applying.</p>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-left:5px solid #f97316;border-radius:10px;padding:24px 28px;margin:32px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px">
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Total Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 76,200</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Yearly Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 33,000</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Exam Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 4,000/year</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Reg Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 1,200 (one-time)</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">NAAC Grade</div><div style="font-size:17px;font-weight:700;color:#0f172a">A+</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">NIRF MBA Rank</div><div style="font-size:17px;font-weight:700;color:#0f172a">93rd (2026)</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">UGC-DEB</div><div style="font-size:17px;font-weight:700;color:#0f172a">Approved</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Specializations</div><div style="font-size:17px;font-weight:700;color:#0f172a">7 tracks</div></div>
+</div>
+
+<h2>Is Galgotias Online MBA Legitimate?</h2>
+
+<p>Yes. Galgotias University, Greater Noida was established in 2011. It is recognized by UGC-DEB for online programs, holds NAAC A+ accreditation, and is AICTE approved. The university ranked 93rd in NIRF MBA rankings 2026 — notable for a program at this price point.</p>
+
+<p>The degree carries the same legal weight as a regular campus MBA under UGC regulations. It is valid for government jobs, private sector roles, and higher education. Verify UGC-DEB approval at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a> before paying any fees.</p>
+
+<h2>Galgotias Online MBA Fee Structure: Exact Breakdown</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Fee Component</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Amount</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Frequency</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Yearly Course Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 33,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Per year (2 years)</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Exam Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 4,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Per year (2 years)</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Registration Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,200</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">One-time</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Alumni Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">One-time</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Total Program Cost</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rs. 76,200</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Full 2-year program</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>Exams use a 70:30 split — end-term exams 70% and internal assessments 30%. Always confirm current fee components at the official portal as charges can be updated each academic year.</p>
+
+<h2>Specializations Available</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:20px 0 32px">
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">💰</span> Finance Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">👥</span> HR Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">📣</span> Marketing Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">⚙️</span> Operations Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">📊</span> Business Analytics</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🏥</span> Healthcare Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🌍</span> International Business</div>
+</div>
+
+<h2>Galgotias Online MBA Syllabus (Semester-Wise)</h2>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 1 — Business Foundations</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">1</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Marketing Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Accounting for Managers</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Organizational Behaviour</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Statistics</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Legal Aspects of Business</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Managerial Economics</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 2 — Core Management</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">2</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Analytics</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Corporate Finance</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Human Resource Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Research Methodology</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Operations &amp; Supply Chain Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Digital Marketing</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Entrepreneurship</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 3 — Specialization Core (Finance Track)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">3</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Communication</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Strategic Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Master Thesis (Initial Phase)</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Financial Markets and Services</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Investment Analysis</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Financial Risk Management</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 4 — Advanced Specialization (Finance Track)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">4</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Ethics and CSR</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Master Thesis (Final Phase)</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Managing Banks and Institutions</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">International Finance</li></ul></div>
+</div>
+
+<p>The Business Analytics track covers AI for Business, Analytics using Python, Marketing Analytics, Data Visualization, and Decision Modelling with Spreadsheets. The HR track covers Competency Mapping, Compensation and Reward Management, Learning and Development, Leadership and Team Building, and Talent Management.</p>
+
+<h2>Eligibility and Admission</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;width:38%;background:#f8fafc">Minimum Qualification</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Bachelor's degree in any stream from a UGC-recognized university</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Minimum Marks</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">50% aggregate (verify 50% vs 55% on official site)</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Entrance Exam</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Not required. First-come, first-served.</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Work Experience</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Not mandatory</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:600;color:#0f172a;background:#f8fafc">Admission Cycles</td><td style="padding:10px 14px">January and July sessions</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);color:#fff;border-radius:12px;padding:32px 36px;margin:48px 0 32px;text-align:center">
+  <h3 style="color:#fff;margin:0 0 10px;font-size:20px">Comparing Galgotias with other online MBAs?</h3>
+  <p style="color:#94a3b8;font-size:15px;margin:0 0 20px">Browse all verified programs with exact fee breakdowns. No paid rankings, no commissions.</p>
+  <a href="/compare" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;margin-right:12px">Compare Universities</a>
+  <a href="/contact" style="display:inline-block;background:transparent;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid #f97316">Talk to a Counsellor</a>
+</div>
+
+<h2>Honest Assessment: Pros and Cons</h2>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 32px">
+  <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#166534;margin:0 0 12px;font-size:16px">What Works</h3>
+    <ul style="list-style:none;padding:0;margin:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Most affordable NAAC A+ online MBA in India at Rs. 76,200</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">UGC-DEB approved, legally equivalent to regular MBA</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">NIRF 93rd ranked in Management (2026)</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Greater Noida location adds NCR credibility</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">No entrance exam needed</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Business Analytics track includes Python and AI for Business</li>
+    </ul>
+  </div>
+  <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#9a3412;margin:0 0 12px;font-size:16px">Watch Out For</h3>
+    <ul style="list-style:none;padding:0;margin:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Brand recognition limited outside NCR and UP</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Placement support for online students less structured than campus</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Exam fee charged separately (Rs. 4,000/year)</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Not the right choice if employer prestige is primary concern</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Who Should Apply for Galgotias Online MBA?</h2>
+
+<p>The Rs. 76,200 price tag targets a specific person: working, wanting the formal MBA credential, and not spending Rs. 2 to 3 lakhs on a program that delivers roughly the same degree level. Probably in UP, NCR, or North India where Galgotias carries some name recognition.</p>
+
+<p>The Business Analytics specialization is worth noting. Subjects like AI for Business, Analytics using Python, and Decision Modelling with Spreadsheets are genuinely practical. For a working data analyst or business operations professional in a mid-size company who wants the MBA title alongside technical skills, this track at this price is difficult to argue against.</p>
+
+<blockquote style="border-left:4px solid #f97316;padding:14px 20px;background:#f8fafc;margin:24px 0;border-radius:0 8px 8px 0;font-style:italic;color:#64748b;font-size:15px">If you are comparing Galgotias Online MBA with programs costing two to three times as much, ask yourself one question: will my employer actually pay attention to the difference? For many mid-career professionals in India, the honest answer is no.</blockquote>
+
+<h2>Galgotias vs Other Budget Online MBA Programs</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">University</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Total Fee</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">NAAC</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Location USP</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Galgotias Online</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 76,200</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Greater Noida, NCR</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc"><a href="/blog/vignan-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">Vignan Online</a></td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 90,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Andhra Pradesh</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0"><a href="/blog/uu-doon-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">UU Doon Online</a></td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 94,000*</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Dehradun, Uttarakhand</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc"><a href="/blog/smu-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">SMU Online</a></td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,10,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Manipal brand, dual spec</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a"><a href="/blog/dsu-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">DSU Online</a></td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rs. 1,20,000</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">A++</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Bengaluru, A++ grade</td></tr>
+  </tbody>
+</table>
+</div>
+<p style="font-size:13px;color:#64748b">*After early-bird discount. All fees are indicative; verify on official university sites.</p>
+
+<h2>Final Word</h2>
+
+<p>Galgotias Online MBA at Rs. 76,200 is the most affordable NAAC A+ online MBA in India. The accreditation is real, the degree is legally valid, the NIRF ranking exists, and the curriculum covers modern tools. It is not a premium brand. But for a working professional in North India who needs the credential without draining savings, this program delivers value most Rs. 2-lakh programs cannot justify over.</p>
+
+<p>Go in with clear expectations. Come out with a valid MBA and Rs. 1+ lakh still in the bank.</p>
+
+<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
+  <p style="font-size:16px;font-weight:700;color:#9a3412;margin:0 0 8px">Not sure Galgotias is the right choice for you?</p>
+  <p style="font-size:14px;color:#64748b;margin:0 0 18px">Our counsellors help you compare Galgotias, Vignan, UU Doon and other programs based on your budget and goals — free, no pressure.</p>
+  <a href="/contact" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Get Free Counselling</a>
+</div>
+
+<p style="font-size:14px;color:#64748b;margin:16px 0">Also read: <a href="/blog/vignan-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Vignan MBA</a> — Rs. 90,000 · <a href="/blog/uu-doon-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">UU Doon MBA</a> — Rs. 94,000 · <a href="/blog/smu-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">SMU MBA</a> — Rs. 1,10,000 · <a href="/blog/dsu-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">DSU MBA</a> — Rs. 1,20,000 · <a href="/blog" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">All MBA Reviews</a></p>
+
+<div style="font-size:13px;color:#64748b;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px;margin-top:32px">
+  <strong>Disclaimer:</strong> EdifyEdu is an independent university comparison platform. All fees are indicative based on publicly available data as of early 2026. Fees may change without notice. Please verify all details at <a href="https://galgotiasonline.edu.in/" target="_blank" rel="noopener">galgotiasonline.edu.in</a> and confirm UGC-DEB approval status on the UGC portal before applying. EdifyEdu does not accept referral commissions from any university.
+</div>`,
+  },
 ]
 
 export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))
