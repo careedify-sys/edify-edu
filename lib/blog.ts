@@ -11763,4 +11763,530 @@ export const BLOG_POSTS: BlogPost[] = [
   },
 ]
 
+  {
+    slug: 'arka-jain-online-mba-review',
+    title: 'ARKA JAIN University JGI Online MBA 2026: Fees, GenAI Syllabus and Honest Review',
+    seoTitle: 'ARKA JAIN Online MBA Fees 2026 — Rs. 1,08,500 | GenAI Sem 1 | JGI Group',
+    metaDescription: 'ARKA JAIN JGI Online MBA at Rs. 1,08,500 total. The only affordable online MBA with Generative AI compulsory in Semester 1. Full syllabus, fee breakdown and honest review.',
+    category: 'Online MBA Programs',
+    tags: ['arka jain online mba', 'jgi online mba', 'arka jain university mba', 'generative ai mba india', 'jgi group online mba', 'arka jain mba fees'],
+    publishedAt: '2026-04-12',
+    readTime: 8,
+    targetKeyword: 'arka jain online mba',
+    relatedUniversities: ['arka-jain-university'],
+    status: 'published',
+    ctaTitle: 'Compare ARKA JAIN Against Other Online MBA Programs',
+    ctaDesc: 'See how ARKA JAIN compares to JAIN Online, Galgotias, and 20+ other UGC-approved programs — fees, AI syllabus, specializations side by side.',
+    faqs: [
+      { q: 'What is the total fee for ARKA JAIN Online MBA?', a: 'The total fee is Rs. 1,08,500: registration fee Rs. 2,500 (one-time) + semester fee Rs. 25,000 x4 + exam fee Rs. 3,000 x2 years. Verify at onlineaju.ac.in before applying.' },
+      { q: 'What makes ARKA JAIN Online MBA unique?', a: 'Generative AI for Online Learners is a compulsory Semester 1 subject for all students. No other affordable online MBA in India (sub-Rs. 1.5 lakh) mandates Generative AI from the first semester.' },
+      { q: 'Is ARKA JAIN Online MBA UGC approved?', a: 'ARKA JAIN University holds UGC recognition and the online MBA is DEB-approved. Part of the JGI Group (same as JAIN Online Bengaluru). Verify at deb.ugc.ac.in before paying.' },
+      { q: 'How many specializations does ARKA JAIN Online MBA offer?', a: '3 specializations: Finance, Human Resource Management, and Marketing. The common curriculum across all tracks includes Generative AI (Sem 1) and Business Analytics & AI (Sem 2).' },
+      { q: 'How does ARKA JAIN compare to JAIN Online?', a: 'ARKA JAIN costs Rs. 1,08,500 vs JAIN Online at Rs. 1,96,000. JAIN Online has 15+ specs and a stronger Bengaluru brand. ARKA JAIN has the stronger AI curriculum with Generative AI mandatory in Sem 1.' }
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin-bottom:4px">Written by <strong>Komal Srivastava</strong> · 7+ years in higher education counselling · Updated April 2026</p>
+
+<p>Most people searching for an online MBA have never heard of ARKA JAIN University. That is exactly why this blog exists. The university is part of the JGI Group (same group behind JAIN Online in Bengaluru), holds UGC-DEB approval, and offers one of the more interesting syllabus designs in the affordable online MBA segment.</p>
+
+<p>The standout feature: Generative AI for Online Learners is a core first-semester subject for all students, regardless of specialization. At a time when every employer is talking about AI literacy, building it into the foundation semester rather than making it an optional elective is a deliberate curriculum choice worth noting.</p>
+
+<p>EdifyEdu does not accept referral fees. Verify all details at <a href="https://onlineaju.ac.in/mba/" target="_blank" rel="noopener">onlineaju.ac.in</a>.</p>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-left:5px solid #f97316;border-radius:10px;padding:24px 28px;margin:32px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px">
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Total Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 1,08,500</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Semester Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 25,000 x4</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Registration</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 2,500 (one-time)</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Exam Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 3,000/year</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Group</div><div style="font-size:17px;font-weight:700;color:#0f172a">JGI Group</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">UGC-DEB</div><div style="font-size:17px;font-weight:700;color:#0f172a">Approved</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Unique Feature</div><div style="font-size:17px;font-weight:700;color:#0f172a">GenAI in Sem 1</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Specializations</div><div style="font-size:17px;font-weight:700;color:#0f172a">3 tracks</div></div>
+</div>
+
+<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:20px 24px;margin:24px 0">
+  <h3 style="color:#1e40af;margin:0 0 10px;font-size:16px">The Generative AI Differentiator</h3>
+  <p style="margin:0;font-size:14px;color:#374151">ARKA JAIN online MBA includes Generative AI for Online Learners as a core subject in Semester 1 for all students. No other online MBA in the sub-Rs. 1.5 lakh category has Generative AI as a compulsory first-semester subject. Business Analytics &amp; AI follows in Semester 2. This means every graduate, regardless of specialization, completes two AI-focused courses before entering their domain electives.</p>
+</div>
+
+<h2>About ARKA JAIN University and JGI Group</h2>
+
+<p>ARKA JAIN University is located in Jharkhand and is part of the JGI (Jain Group of Institutions) conglomerate — the same group that operates JAIN Online out of Bengaluru at Rs. 1.96 lakhs. ARKA JAIN offers the JGI group's online MBA at a significantly lower price, making it the budget track within the same institutional family.</p>
+
+<p>Always verify current UGC-DEB approval status at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a> before paying any fees.</p>
+
+<h2>ARKA JAIN Online MBA Fee Structure</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Fee Component</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Amount</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">When Paid</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Registration Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 2,500</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">One-time at admission</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Semester Fee (x4)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 25,000 per semester</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Start of each semester</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Exam Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 3,000 per year</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Yearly (x2 years)</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Total Program Cost</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rs. 1,08,500</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Full 2-year program</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Specializations Available</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:20px 0 32px">
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">💰</span> Finance</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">👥</span> Human Resource Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">📣</span> Marketing</div>
+</div>
+
+<h2>Semester-Wise Syllabus</h2>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 1 — Foundation + Generative AI (All Specializations)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">1</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Human Resource Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Economics</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Sustainability and Ethics</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Financial Reporting and Corporate Finance</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Quantitative Techniques for Business</li><li style="background:#f97316;color:#fff;border-radius:20px;padding:4px 12px;font-size:13px;font-weight:700">Generative AI for Online Learners ★</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 2 — Core Business + AI and Analytics (All Specializations)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">2</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Entrepreneurship</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Marketing Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Operations Research</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Law and Corporate Governance</li><li style="background:#f97316;color:#fff;border-radius:20px;padding:4px 12px;font-size:13px;font-weight:700">Business Analytics &amp; AI ★</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 3 — Specialization Core (Finance Track)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">3</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Research Methods</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Operations Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Direct and Indirect Taxes</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Investment Analysis &amp; Portfolio Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Banking and Insurance</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Fintech: Foundations and Applications</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 4 — Advanced Specialization + Thesis (Finance Track)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">4</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Strategic Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Indian Financial System &amp; Markets</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Wealth Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">International Finance &amp; Investment Banking</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Risk Management &amp; Behavioural Finance</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Master Thesis / Project</li></ul></div>
+</div>
+
+<p>The Marketing track covers Consumer Behavior, Integrated Marketing Communications, Omni Channel Marketing, Market Research Tools, B2B Marketing, Retail Marketing, Digital Marketing &amp; Brand Management, and Global Marketing. The HR track covers Talent Acquisition, Learning &amp; Development, Industrial Relations, Employee Management, International HRM, Performance Management, OD &amp; Change, and Compensation Management.</p>
+
+<h2>Eligibility and Admission</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;width:38%;background:#f8fafc">Minimum Qualification</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Bachelor's degree from a UGC-recognized university</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Entrance Exam</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Not required (verify on official site)</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">JGI Group</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Same group as JAIN Online Bengaluru</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:600;color:#0f172a;background:#f8fafc">Admission Cycles</td><td style="padding:10px 14px">January and July sessions (UGC bi-annual)</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);color:#fff;border-radius:12px;padding:32px 36px;margin:48px 0 32px;text-align:center">
+  <h3 style="color:#fff;margin:0 0 10px;font-size:20px">Comparing ARKA JAIN with JAIN Online or other programs?</h3>
+  <p style="color:#94a3b8;font-size:15px;margin:0 0 20px">Browse all JGI Group and other UGC-approved programs side by side — fees, AI syllabus, specializations.</p>
+  <a href="/compare" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;margin-right:12px">Compare Universities</a>
+  <a href="/contact" style="display:inline-block;background:transparent;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid #f97316">Talk to a Counsellor</a>
+</div>
+
+<h2>Honest Assessment</h2>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 32px">
+  <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#166534;margin:0 0 12px;font-size:16px">What Works</h3>
+    <ul style="list-style:none;padding:0;margin:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Generative AI compulsory in Semester 1 — only affordable MBA to do this</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Business Analytics &amp; AI in Semester 2 for all students</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Part of JGI Group (same as JAIN Online Bengaluru)</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Fintech coverage in Finance track is current and relevant</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Master Thesis provides research depth</li>
+    </ul>
+  </div>
+  <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#9a3412;margin:0 0 12px;font-size:16px">Watch Out For</h3>
+    <ul style="list-style:none;padding:0;margin:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Only 3 specializations — limited for niche career changers</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">ARKA JAIN brand less recognized than JAIN Online</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Jharkhand location — limited local corporate connections</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Verify NAAC accreditation status independently</li>
+    </ul>
+  </div>
+</div>
+
+<blockquote style="border-left:4px solid #f97316;padding:14px 20px;background:#f8fafc;margin:24px 0;border-radius:0 8px 8px 0;font-style:italic;color:#64748b;font-size:15px">No other online MBA at Rs. 1 lakh range makes Generative AI a compulsory subject from the very first semester. That is either a genuine competitive advantage or an interesting experiment — the curriculum design suggests they are serious about it.</blockquote>
+
+<h2>Comparison with Similar Programs</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">University</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Total Fee</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">GenAI in Syllabus</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Specializations</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">ARKA JAIN (JGI)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,08,500</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Sem 1 compulsory ★</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">3 tracks</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc"><a href="/blog/galgotias-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">Galgotias Online</a></td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 76,200</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">AI for Business (Sem 3)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">7 tracks</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0"><a href="/blog/dsu-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">DSU Online</a></td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,20,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">AI specialization track</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">7 tracks</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a"><a href="/blog/smu-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">SMU Online</a></td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rs. 1,10,000</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Not standard</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">6 tracks + dual spec</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Final Word</h2>
+
+<p>ARKA JAIN University JGI Online MBA at Rs. 1,08,500 is a genuinely interesting choice, primarily because of the Generative AI integration in Semester 1. For a profession increasingly shaped by AI tools, starting an MBA with a compulsory Generative AI module is forward-thinking. The tradeoff is limited specialization options and a smaller brand footprint. But for a budget-conscious professional in Finance, HR, or Marketing who wants AI embedded from day one, this program is worth serious consideration.</p>
+
+<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
+  <p style="font-size:16px;font-weight:700;color:#9a3412;margin:0 0 8px">Not sure if ARKA JAIN is right for you?</p>
+  <p style="font-size:14px;color:#64748b;margin:0 0 18px">Our counsellors compare ARKA JAIN, JAIN Online, Galgotias and other programs based on your AI career goals and budget — free guidance.</p>
+  <a href="/contact" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Get Free Counselling</a>
+</div>
+
+<p style="font-size:14px;color:#64748b;margin:16px 0">Also read: <a href="/blog/galgotias-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Galgotias MBA</a> — Rs. 76,200 · <a href="/blog/uu-doon-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">UU Doon MBA</a> — Rs. 94,000 · <a href="/blog/noida-international-university-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">NIU MBA</a> — Rs. 88,500 · <a href="/blog/shoolini-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Shoolini MBA</a> — Rs. 1,30,000 · <a href="/blog" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">All MBA Reviews</a></p>
+
+<div style="font-size:13px;color:#64748b;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px;margin-top:32px">
+  <strong>Disclaimer:</strong> EdifyEdu is an independent university comparison platform. All fees are indicative based on publicly available data as of early 2026. Please verify all current fees, UGC-DEB approval status, NAAC accreditation, and program availability at <a href="https://onlineaju.ac.in/mba/" target="_blank" rel="noopener">onlineaju.ac.in</a> and the UGC portal before applying. EdifyEdu does not accept referral commissions from any university.
+</div>`,
+  },
+  {
+    slug: 'noida-international-university-online-mba-review',
+    title: 'Noida International University Online MBA 2026: Fees, 10 Specializations, Syllabus and Honest Review',
+    seoTitle: 'NIU Online MBA Fees 2026 — Rs. 88,500 | 10 Specializations | SPSS Training',
+    metaDescription: 'NIU Online MBA at Rs. 88,500 after early-bird discount. NAAC A+, Greater Noida. 10 specializations, SPSS training, detailed healthcare & agri syllabi and honest review.',
+    category: 'Online MBA Programs',
+    tags: ['noida international university online mba', 'niu online mba', 'niu online mba fees', 'online mba greater noida', 'niu mba review', 'cheapest online mba ncr'],
+    publishedAt: '2026-04-12',
+    readTime: 8,
+    targetKeyword: 'noida international university online mba',
+    relatedUniversities: ['noida-international-university'],
+    status: 'published',
+    ctaTitle: 'Compare NIU Against Other Online MBA Programs',
+    ctaDesc: 'See how NIU Online MBA stacks up against Galgotias, Sharda and other Greater Noida programs — fees, specializations, accreditation side by side.',
+    faqs: [
+      { q: 'What is the total fee for NIU Online MBA?', a: 'After the 25% early-bird discount the total is approximately Rs. 88,500. The standard fee is Rs. 1,17,100 (Rs. 29,500 per semester x4 + Rs. 2,000 exam fee per semester x4 + Rs. 1,100 registration). Exam fees are charged separately each semester. Verify at niuonline.edu.in.' },
+      { q: 'How many specializations does NIU Online MBA offer?', a: '10 specializations: Business Analytics, Finance, HR Management, Marketing Management, Information Technology, International Business, Hospital & Health Care Management, Production & Operations Management, Retail Management, and Agri Business.' },
+      { q: 'Is NIU Online MBA UGC approved?', a: 'Yes. Noida International University holds NAAC A+ accreditation and is UGC-DEB recognized for online programs. Verify at deb.ugc.ac.in before applying.' },
+      { q: 'What makes NIU Online MBA stand out?', a: 'SPSS Training is compulsory in Semester 2 for all students. NIU also offers 10 specializations including Agribusiness, Retail Management, and Hospital & Health Care Management with detailed syllabi — rare at this price range.' },
+      { q: 'Who should apply for NIU Online MBA?', a: 'Best suited for professionals in healthcare, hospital administration, retail, or agribusiness wanting a sub-Rs. 1 lakh program (post-discount) with a dedicated specialization track. Also good for analytics professionals due to the SPSS + ML curriculum.' }
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin-bottom:4px">Written by <strong>Komal Srivastava</strong> · 7+ years in higher education counselling · Updated April 2026</p>
+
+<p>Noida International University (NIU) sits in an unusual spot. It is based in Greater Noida, competes with <a href="/blog/galgotias-online-mba-review" style="color:inherit;text-decoration:underline;text-underline-offset:2px">Galgotias</a> on price and geography, offers 10 specializations compared to Galgotias's 7, and includes SPSS Training as a compulsory second-semester subject for all students. At Rs. 88,500 total after early-bird discount, it undercuts most competitors while offering one of the more detailed publicly available syllabi in the segment.</p>
+
+<p>EdifyEdu takes no referral commissions. Verify all current fees at <a href="https://niuonline.edu.in/programme-detail/mba/" target="_blank" rel="noopener">niuonline.edu.in</a>.</p>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-left:5px solid #f97316;border-radius:10px;padding:24px 28px;margin:32px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px">
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Fee (Early-Bird 25% off)</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 88,500</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Standard Semester Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 29,500/sem</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Exam Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 2,000/semester</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Reg Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 1,100</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">NAAC Grade</div><div style="font-size:17px;font-weight:700;color:#0f172a">A+</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">UGC-DEB</div><div style="font-size:17px;font-weight:700;color:#0f172a">Recognized</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Location</div><div style="font-size:17px;font-weight:700;color:#0f172a">Greater Noida, UP</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Specializations</div><div style="font-size:17px;font-weight:700;color:#0f172a">10 tracks</div></div>
+</div>
+
+<div style="background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:14px 18px;margin:20px 0">
+  <p style="margin:0;font-size:14px;color:#374151"><strong>Fee note:</strong> Rs. 88,500 is the early-bird discounted price (25% off). The standard total is approximately Rs. 1,17,100. Exam fee of Rs. 2,000 per semester is additional each semester. Verify at <a href="https://niuonline.edu.in/" target="_blank" rel="noopener">niuonline.edu.in</a>.</p>
+</div>
+
+<h2>Is Noida International University Online MBA Legitimate?</h2>
+
+<p>Yes. NIU is a private university established in Greater Noida, UP. It holds NAAC A+ accreditation and is UGC-DEB recognized for online programs. The degree is legally equivalent to a regular MBA. Verify UGC-DEB approval at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>.</p>
+
+<h2>NIU Online MBA Fee Structure</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Fee Component</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Standard</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">After 25% Early-Bird</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Semester Fee (x4)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 29,500/sem</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Discounted</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Exam Fee (x4 sems)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 2,000/sem</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 2,000/sem</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Registration Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,100</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,100</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Total Program Cost</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rs. 1,17,100*</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rs. 88,500</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>10 Specializations</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:20px 0 32px">
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">📊</span> Business Analytics</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">💰</span> Finance</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">👥</span> Human Resource Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">📣</span> Marketing Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">💻</span> Information Technology</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🌍</span> International Business</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🏥</span> Hospital &amp; Health Care Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">⚙️</span> Production &amp; Operations Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🛒</span> Retail Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🌿</span> Agri Business</div>
+</div>
+
+<h2>Semester-Wise Syllabus</h2>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 1 — Management Foundations (All Specializations)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">1</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Management Concepts &amp; OB</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Managerial Economics</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Accounting for Managers</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Communication</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Statistics</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Marketing Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Computer Application for Business</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 2 — Core Management + SPSS (All Specializations)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">2</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Financial Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">International Business Environment</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Human Resource Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Production &amp; Operations Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Research Method</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">MIS &amp; Business Ethics</li><li style="background:#f97316;color:#fff;border-radius:20px;padding:4px 12px;font-size:13px;font-weight:700">SPSS Training ★</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 3 — Specialization Core (Business Analytics Track)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">3</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Strategic Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">AI &amp; Machine Learning</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Supply Chain Analytics</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Marketing Analytics</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Machine Learning using Python</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 4 — Advanced Specialization (Business Analytics Track)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">4</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Digital Marketing &amp; E-Commerce</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">HR Analytics</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Blockchain Technologies</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Database Management System</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Financial &amp; Credit Risk Analytics</li></ul></div>
+</div>
+
+<p>The Hospital and Health Care Management track has 15+ subjects across semesters 3 and 4 including Healthcare Policies, Quality Management &amp; Accreditation, Health Insurance &amp; Medical Tourism, and Disaster Management. The Retail Management track covers Visual Merchandising, Franchising in Retailing, Luxury Retailing, and Rural Retailing. The Agribusiness track covers Agribusiness Cooperatives, Microfinance for Agribusiness, and Seed Production Technology.</p>
+
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);color:#fff;border-radius:12px;padding:32px 36px;margin:48px 0 32px;text-align:center">
+  <h3 style="color:#fff;margin:0 0 10px;font-size:20px">Comparing NIU with Galgotias or Sharda in Greater Noida?</h3>
+  <p style="color:#94a3b8;font-size:15px;margin:0 0 20px">Browse all verified programs with fee and syllabus comparisons. Independent. No paid rankings.</p>
+  <a href="/compare" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;margin-right:12px">Compare Universities</a>
+  <a href="/contact" style="display:inline-block;background:transparent;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid #f97316">Talk to a Counsellor</a>
+</div>
+
+<h2>Honest Assessment</h2>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 32px">
+  <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#166534;margin:0 0 12px;font-size:16px">What Works</h3>
+    <ul style="list-style:none;padding:0;margin:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Sub-Rs. 90,000 pricing with 10 specializations (best ratio in segment)</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">SPSS Training in Semester 2 — practically useful for research</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Detailed healthcare MBA syllabus at lowest available price</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Agribusiness, Retail, Hospital tracks not common at this price</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">NAAC A+ and UGC-DEB recognized</li>
+    </ul>
+  </div>
+  <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#9a3412;margin:0 0 12px;font-size:16px">Watch Out For</h3>
+    <ul style="list-style:none;padding:0;margin:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Rs. 88,500 is early-bird discounted — verify availability</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Exam fee Rs. 2,000 per semester is additional each time</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Lower brand recognition than Galgotias or Sharda in same region</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Verify NAAC and UGC-DEB status independently</li>
+    </ul>
+  </div>
+</div>
+
+<blockquote style="border-left:4px solid #f97316;padding:14px 20px;background:#f8fafc;margin:24px 0;border-radius:0 8px 8px 0;font-style:italic;color:#64748b;font-size:15px">If you are in healthcare, retail, or agribusiness and cannot afford Symbiosis or DY Patil, NIU's dedicated specialization tracks at Rs. 88,500 post-discount are worth serious consideration. The syllabus depth is genuinely good.</blockquote>
+
+<h2>NIU vs Comparable Programs</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">University</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Total Fee</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Specs</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Key USP</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0"><a href="/blog/galgotias-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">Galgotias Online</a></td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 76,200</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">7</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Cheapest, NCR</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">NIU Online</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 88,500*</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">10</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Most specs, SPSS</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0"><a href="/blog/vignan-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">Vignan Online</a></td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 90,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">7</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">NAAC A+, South India</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a"><a href="/blog/smu-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">SMU Online</a></td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rs. 1,10,000</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">6</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Manipal brand, dual spec</td></tr>
+  </tbody>
+</table>
+</div>
+<p style="font-size:13px;color:#64748b">*Post-discount prices. Verify current rates on official sites.</p>
+
+<h2>Final Word</h2>
+
+<p>Noida International University Online MBA at Rs. 88,500 post-discount is a well-structured program that flies under most people's radar. The 10 specializations, SPSS training for all students, and detailed healthcare and agribusiness syllabi make it a better academic choice than its brand recognition suggests. The key caveat: make sure the early-bird offer is available when you apply, and add Rs. 2,000 per semester exam fee to your cost calculation.</p>
+
+<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
+  <p style="font-size:16px;font-weight:700;color:#9a3412;margin:0 0 8px">Not sure if NIU is right for you?</p>
+  <p style="font-size:14px;color:#64748b;margin:0 0 18px">Our counsellors help you compare NIU, Galgotias, and other NCR programs based on your sector and goals — free guidance.</p>
+  <a href="/contact" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Get Free Counselling</a>
+</div>
+
+<p style="font-size:14px;color:#64748b;margin:16px 0">Also read: <a href="/blog/galgotias-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Galgotias MBA</a> — Rs. 76,200 · <a href="/blog/uu-doon-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">UU Doon MBA</a> — Rs. 94,000 · <a href="/blog/arka-jain-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">ARKA JAIN MBA</a> — Rs. 1,08,500, GenAI Sem 1 · <a href="/blog/shoolini-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Shoolini MBA</a> — Rs. 1,30,000, 16 specs · <a href="/blog" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">All MBA Reviews</a></p>
+
+<div style="font-size:13px;color:#64748b;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px;margin-top:32px">
+  <strong>Disclaimer:</strong> EdifyEdu is an independent university comparison platform. The Rs. 88,500 fee reflects a 25% early-bird discount that may not be available year-round. Verify current fees, discount availability, UGC-DEB approval, and NAAC status at <a href="https://niuonline.edu.in/" target="_blank" rel="noopener">niuonline.edu.in</a> and the UGC portal before applying. EdifyEdu does not accept referral commissions from any university.
+</div>`,
+  },
+  {
+    slug: 'shoolini-online-mba-review',
+    title: 'Shoolini Online MBA 2026: Fees, 16 Specializations, Pay After Placement and Honest Review',
+    seoTitle: 'Shoolini Online MBA 2026 — Rs. 1,30,000 | 16 Specs | QS #1 Private Univ India',
+    metaDescription: 'Shoolini Online MBA at Rs. 1,30,000 (or Rs. 1,18,000 PAP). QS #1 Private University India. 16 MBA specializations incl. Pharma, Biotech, Food Tech. Full honest review.',
+    category: 'Online MBA Programs',
+    tags: ['shoolini online mba', 'shoolini university online mba', 'shoolini mba fees', 'online mba pharma', 'online mba biotechnology', 'pay after placement mba india'],
+    publishedAt: '2026-04-12',
+    readTime: 9,
+    targetKeyword: 'shoolini online mba',
+    relatedUniversities: ['shoolini-university'],
+    status: 'published',
+    ctaTitle: 'Compare Shoolini Against Other Online MBA Programs',
+    ctaDesc: 'See how Shoolini stacks up against DSU, SMU, JAIN and 20+ other UGC-approved programs — fees, niche specializations, Pay After Placement explained.',
+    faqs: [
+      { q: 'What is the total fee for Shoolini Online MBA?', a: 'Standard fee after 35% scholarship is Rs. 1,30,000. The Pay After Placement (PAP) option costs Rs. 1,18,000 total (80% paid during the course at Rs. 19,750/semester, 20% after placement). A 10% lumpsum discount is also available. Verify current fees at shoolini.online.' },
+      { q: 'What is the Pay After Placement model at Shoolini?', a: 'Under PAP, you pay Rs. 19,750 per semester during the program (80% of fee). The remaining 20% (Rs. 39,000) is payable after placement or admission to a foreign university. This is not a loan — read the PAP terms carefully with Shoolini before opting in.' },
+      { q: 'What makes Shoolini Online MBA unique?', a: 'Shoolini offers 16 specializations including Pharma & Healthcare Management, Biotechnology Management, Food Technology Management, and Direct Selling Management — tracks unavailable at any other UGC-DEB approved online MBA at this price. QS ranked Shoolini #1 Private University in India (2025).' },
+      { q: 'Is Shoolini Online MBA UGC approved?', a: 'Yes. Shoolini University is NAAC A+ accredited, UGC-DEB approved for online programs, and NIRF ranked 69-70 nationally (2025). Verify at deb.ugc.ac.in.' },
+      { q: 'Who should apply for Shoolini Online MBA?', a: 'Primarily suited for professionals in pharma, biotech, food technology, agribusiness, or life sciences who want a dedicated MBA track in their domain. For standard Finance/HR/Marketing tracks, Shoolini competes with DSU, SMU, and JAIN Online on price but the niche value is its core differentiator.' }
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin-bottom:4px">Written by <strong>Komal Srivastava</strong> · 7+ years in higher education counselling · Updated April 2026</p>
+
+<p>Shoolini Online MBA is unusual in two ways. First, it offers 16 specialization tracks — more than almost any other online MBA in India. Several cover domains like Pharma and Healthcare Management, Biotechnology Management, Food Technology Management, and Direct Selling Management that you simply cannot find at most UGC-DEB approved universities at this price. Second, it has a Pay After Placement model that lets you defer 20% of fees until after you land a job.</p>
+
+<p>Neither of these features makes it the right choice for everyone. But if you are in pharma, biotech, food industry, or life sciences and want an affordable online MBA from a genuinely well-ranked university, this program deserves serious attention.</p>
+
+<p>EdifyEdu does not take referral commissions. All fees should be verified at <a href="https://shoolini.online/mba.php" target="_blank" rel="noopener">shoolini.online</a> before applying.</p>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-left:5px solid #f97316;border-radius:10px;padding:24px 28px;margin:32px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px">
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Fee (After Scholarship)</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 1,30,000</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">PAP Option Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 1,18,000*</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Per Semester</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 30,000–32,500</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Reg Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 500</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">NAAC Grade</div><div style="font-size:17px;font-weight:700;color:#0f172a">A+</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">QS Rank</div><div style="font-size:17px;font-weight:700;color:#0f172a">#1 Private Univ India</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">NIRF Rank</div><div style="font-size:17px;font-weight:700;color:#0f172a">#69–70 (2025)</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Specializations</div><div style="font-size:17px;font-weight:700;color:#0f172a">16 tracks</div></div>
+</div>
+
+<h2>Is Shoolini Online MBA Legitimate?</h2>
+
+<p>Yes. Shoolini University, established in Kasauli, Himachal Pradesh, is UGC-DEB approved, NAAC A+ accredited, and AICTE recognized. QS World University Rankings 2025 placed Shoolini as the number one private university in India. Times Higher Education Impact Rankings placed it among the top 200 universities globally. NIRF 2025 ranked it 69th to 70th nationally. Verify UGC-DEB approval at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>.</p>
+
+<h2>Fee Structure: Both Payment Options</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Payment Option</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Total Fee</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">How It Works</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Standard (35% Scholarship)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,30,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Pay full fee across 4 semesters</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">PAP Option (25% Scholarship)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,18,000*</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 19,750/sem during course; Rs. 39,000 after placement</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Lumpsum (10% extra discount)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">~Rs. 1,17,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Pay full upfront for additional 10% off</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Registration Fee</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rs. 500</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Non-refundable</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:20px 24px;margin:24px 0">
+  <h3 style="color:#1e40af;margin:0 0 10px;font-size:16px">What is the Pay After Placement Model?</h3>
+  <p style="margin:0;font-size:14px;color:#374151">Under PAP, you pay Rs. 19,750 per semester during the 2-year program (80% of fee). The remaining Rs. 39,000 (20%) is payable only after you get a placement or admission to a foreign university. This is not an education loan. Read the PAP terms carefully with Shoolini directly before opting in — verify current PAP terms at <a href="https://shoolini.online/mba.php" target="_blank" rel="noopener">shoolini.online</a>.</p>
+</div>
+
+<h2>All 16 Specializations</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:20px 0 32px">
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">📣</span> Marketing Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">💰</span> Financial Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">👥</span> Human Resource Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">💻</span> IT Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">📊</span> Data Science &amp; Business Analytics</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">📱</span> Digital Marketing</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🏦</span> Banking &amp; Insurance</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">⚙️</span> Operation &amp; Supply Chain</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🏨</span> Retail Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">✈️</span> Tourism Management</div>
+  <div style="background:#fef3c7;border:2px solid #f97316;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:700;color:#92400e;display:flex;align-items:center;gap:10px"><span style="font-size:20px">💊</span> Pharma &amp; Health Care Management</div>
+  <div style="background:#fef3c7;border:2px solid #f97316;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:700;color:#92400e;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🧬</span> Biotechnology Management</div>
+  <div style="background:#fef3c7;border:2px solid #f97316;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:700;color:#92400e;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🍕</span> Food Technology Management</div>
+  <div style="background:#fef3c7;border:2px solid #f97316;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:700;color:#92400e;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🌿</span> Agri Business Management</div>
+  <div style="background:#fef3c7;border:2px solid #f97316;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:700;color:#92400e;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🏠</span> Real Estate Management</div>
+  <div style="background:#fef3c7;border:2px solid #f97316;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:700;color:#92400e;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🤝</span> Direct Selling Management</div>
+</div>
+<p style="font-size:13px;color:#64748b">Highlighted tracks (orange border) are unique to Shoolini — unavailable at other UGC-DEB online MBAs at this price range.</p>
+
+<h2>Semester-Wise Syllabus</h2>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 1 — Business &amp; Management Foundations</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">1</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Marketing Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Organizational Behaviour</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Financial Accounting</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Entrepreneurship</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Digital and Technological Solutions</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Functional English</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 2 — Core Management with Skill Building</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">2</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Human Resource Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Financial Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Managerial Economics</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Statistics for Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Career and Life Skills</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Fundamentals of Direct Selling</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 3 — Specialization Core (Pharma &amp; Healthcare Track)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">3</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Legal Aspects of Business</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Healthcare Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Health Economics</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Pharma Marketing &amp; Sales</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Storytelling with Data</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Acing Interviews through AI</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 4 — Advanced + Capstone (Pharma &amp; Healthcare Track)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">4</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Future Leader's Program</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Sales Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Regulatory Environment in Pharma</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Healthcare Ops Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Entrepreneurship in Life Sciences</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Capstone Project</li></ul></div>
+</div>
+
+<p>The Biotechnology Management track covers Introductory Biotech, Industrial Biotechnology, Regulatory Affairs in Biotech, and Entrepreneurship in Life Sciences. The Food Technology Management track covers Food Regulations &amp; Policy, Food Science &amp; Technology, Food Safety &amp; Quality Management, and Food Product Development. The Data Science track covers AI for Business, Python for Business, Data Visualization, Data Ethics, and Social Media Strategy.</p>
+
+<h2>Eligibility and Admission</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;width:38%;background:#f8fafc">Minimum Marks (Indian)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">50% aggregate (45% for SC/ST/OBC/PwD)</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Entrance Exam</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Not required. Direct admission.</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Application Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 500 (non-refundable)</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:600;color:#0f172a;background:#f8fafc">Admission Cycles</td><td style="padding:10px 14px">January and July sessions</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);color:#fff;border-radius:12px;padding:32px 36px;margin:48px 0 32px;text-align:center">
+  <h3 style="color:#fff;margin:0 0 10px;font-size:20px">Is Shoolini the right online MBA for your sector?</h3>
+  <p style="color:#94a3b8;font-size:15px;margin:0 0 20px">Our counsellors help pharma, biotech, and food sector professionals find the right program match — free, honest guidance.</p>
+  <a href="/compare" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;margin-right:12px">Compare Universities</a>
+  <a href="/contact" style="display:inline-block;background:transparent;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid #f97316">Talk to a Counsellor</a>
+</div>
+
+<h2>Honest Assessment</h2>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 32px">
+  <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#166534;margin:0 0 12px;font-size:16px">What Works</h3>
+    <ul style="list-style:none;padding:0;margin:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">QS #1 Private University in India (2025) — real external ranking</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">16 specializations incl. unique Pharma, Biotech, Food Tech, Direct Selling</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Pay After Placement model for cash-flow-conscious students</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">NAAC A+, UGC-DEB approved, NIRF top 70 nationally</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">AI-based interview prep and career support included</li>
+    </ul>
+  </div>
+  <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#9a3412;margin:0 0 12px;font-size:16px">Watch Out For</h3>
+    <ul style="list-style:none;padding:0;margin:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">PAP terms must be read carefully — not the same as an education loan</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Himachal Pradesh base — limited brand recall in major metros</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Standard specs less distinctive vs competition at same price</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px">Fees vary across sources; verify scholarship availability directly</li>
+    </ul>
+  </div>
+</div>
+
+<blockquote style="border-left:4px solid #f97316;padding:14px 20px;background:#f8fafc;margin:24px 0;border-radius:0 8px 8px 0;font-style:italic;color:#64748b;font-size:15px">Shoolini Online MBA is worth a serious look if you are in pharma, biotech, food tech, or agribusiness. For those sectors, it is the only affordable accredited online MBA that actually teaches your domain.</blockquote>
+
+<h2>Shoolini vs Comparable Programs</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">University</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Total Fee</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">NAAC</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Key USP</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Shoolini Online (Std)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,30,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">16 specs, QS #1 Private India</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Shoolini Online (PAP)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,18,000*</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Pay 80% now, 20% after placement</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0"><a href="/blog/dsu-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">DSU Online</a></td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,20,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A++</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A++ grade, Bengaluru brand</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc"><a href="/blog/smu-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">SMU Online</a></td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,10,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Manipal brand, dual spec</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a"><a href="/blog/arka-jain-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">ARKA JAIN Online</a></td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rs. 1,08,500</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">—</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">GenAI Sem 1, JGI Group</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Final Word</h2>
+
+<p>Shoolini Online MBA earns its place primarily because of the niche specializations. The QS number one private university ranking is real. The Pay After Placement model reduces risk. The Pharma, Biotech, Food Tech, and Agribusiness tracks are available nowhere else at this price point.</p>
+
+<p>If you are in one of those sectors, this is genuinely the strongest affordable option available. If you are not, it is a solid but not exceptional Rs. 1.30 lakh online MBA in a crowded market. Go in with clear eyes about which category you fall into.</p>
+
+<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
+  <p style="font-size:16px;font-weight:700;color:#9a3412;margin:0 0 8px">Not sure Shoolini is the right fit for your sector?</p>
+  <p style="font-size:14px;color:#64748b;margin:0 0 18px">Our counsellors help pharma, biotech, and life sciences professionals find the best-match online MBA — free, no-pressure guidance.</p>
+  <a href="/contact" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Get Free Counselling</a>
+</div>
+
+<p style="font-size:14px;color:#64748b;margin:16px 0">Also read: <a href="/blog/dsu-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">DSU MBA</a> — Rs. 1,20,000, NAAC A++ · <a href="/blog/smu-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">SMU MBA</a> — Rs. 1,10,000, Manipal · <a href="/blog/arka-jain-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">ARKA JAIN MBA</a> — Rs. 1,08,500, GenAI · <a href="/blog/noida-international-university-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">NIU MBA</a> — Rs. 88,500 · <a href="/blog" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">All MBA Reviews</a></p>
+
+<div style="font-size:13px;color:#64748b;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px;margin-top:32px">
+  <strong>Disclaimer:</strong> EdifyEdu is an independent university comparison platform. All fees are indicative based on publicly available data as of early 2026. The Pay After Placement terms should be verified directly at <a href="https://shoolini.online/mba.php" target="_blank" rel="noopener">shoolini.online</a> before applying. Confirm UGC-DEB approval status on the UGC portal. EdifyEdu does not accept referral commissions from any university.
+</div>`,
+  },
+]
+
 export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))
