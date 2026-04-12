@@ -10619,6 +10619,576 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Applications go through amityonline.com. Fill an online form, submit graduation marksheets and ID proof, pay the registration fee. No entrance exam for the online program. Amity runs July-August and January-February batches — both are equally valid.</p>
 <p><strong>Sources:</strong> Amity University Online (official website, 2026), UGC-DEB approved institution list, NAAC accreditation database, Payscale India (2026), EdifyEdu university data (2026)</p>`,
   },
+  {
+    slug: 'vignan-online-mba-review',
+    title: 'Vignan Online MBA 2026: Fees, Syllabus, Honest Review',
+    seoTitle: 'Vignan Online MBA Fees 2026 — Rs. 90,000 Total | Honest Review',
+    metaDescription: 'Vignan Online MBA at Rs. 90,000 total. NAAC A+ ranked. Full fee breakdown, semester-wise syllabus, 7 specializations and honest review of who should apply.',
+    category: 'Online MBA Programs',
+    tags: ['vignan online mba', 'vignan online mba fees', 'vignan university online mba', 'cheapest online mba india', 'online mba naac a plus'],
+    publishedAt: '2026-04-11',
+    readTime: 8,
+    targetKeyword: 'vignan online mba',
+    relatedUniversities: ['vignan-university'],
+    status: 'published',
+    ctaTitle: 'Compare Vignan Against Other Online MBA Programs',
+    ctaDesc: 'See how Vignan Online MBA stacks up against Symbiosis, NMIMS, Jain and 20+ other UGC-approved programs — fees, specializations, accreditation side by side.',
+    faqs: [
+      {
+        q: 'What is the total fee for Vignan Online MBA?',
+        a: 'The total fee is Rs. 90,000 for the full two-year program, paid as Rs. 22,500 per semester. A no-cost EMI option is available at approximately Rs. 5,700 per month. Verify current fees directly at vignanonline.com before applying.'
+      },
+      {
+        q: 'Is Vignan Online MBA UGC approved?',
+        a: 'Yes. Vignan University holds NAAC A+ accreditation and UGC 12B status. The online MBA is approved by UGC-DEB, which means the degree is equivalent to a regular campus MBA for employment and higher education purposes.'
+      },
+      {
+        q: 'What specializations are available in Vignan Online MBA?',
+        a: 'Seven specializations: Finance, Human Resource Management, Marketing, IT Management, Business Analytics, Healthcare Management, and Logistics & Supply Chain. Specialization courses begin in Semester 3.'
+      },
+      {
+        q: 'Is Vignan Online MBA valid for government jobs?',
+        a: 'Yes. UGC-DEB approved online degrees are treated at par with regular campus degrees for government job applications. Verify UGC-DEB approval status on the official UGC portal before applying.'
+      },
+      {
+        q: 'Who should apply for Vignan Online MBA?',
+        a: 'Vignan Online MBA is best suited for working professionals in South India — particularly Andhra Pradesh and Telangana — who want an affordable, accredited MBA without career interruption. It is less suitable for candidates prioritizing pan-India brand recognition.'
+      }
+    ],
+    content: `<p>If you are hunting for an affordable online MBA from a UGC-recognized, NAAC A+ university, Vignan's name will come up. It is not the flashiest program out there, and that is fine. At Rs. 90,000 for the full two years, it targets a very specific kind of student: someone budget-conscious, already working, and not willing to pay premium prices for a degree they will mostly study on weekends.</p>
+
+<p>This review is based on publicly available program data and does not accept referral commissions from any university. Fees mentioned are indicative and should be verified directly on <a href="https://vignanonline.com/" target="_blank" rel="noopener">vignanonline.com</a> before applying.</p>
+
+<div class="snapshot" style="background:#f8fafc;border:1px solid #e2e8f0;border-left:5px solid #f97316;border-radius:10px;padding:24px 28px;margin:32px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px">
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Total Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 90,000</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Per Semester</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 22,500</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">EMI Option</div><div style="font-size:17px;font-weight:700;color:#0f172a">~Rs. 5,700/mo</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Duration</div><div style="font-size:17px;font-weight:700;color:#0f172a">2 Years (4 Sems)</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">NAAC Grade</div><div style="font-size:17px;font-weight:700;color:#0f172a">A+</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">UGC Approved</div><div style="font-size:17px;font-weight:700;color:#0f172a">Yes (DEB)</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">NIRF Rank</div><div style="font-size:17px;font-weight:700;color:#0f172a">Top 75 (2024)</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Specializations</div><div style="font-size:17px;font-weight:700;color:#0f172a">7 tracks</div></div>
+</div>
+
+<div style="margin:32px 0;text-align:center">
+  <svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, sans-serif" style="max-width:100%;height:auto">
+    <rect width="700" height="300" fill="#f8fafc" rx="12"/>
+    <text x="350" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Online MBA Fee Comparison (Total Program Cost)</text>
+    <rect x="60" y="200" width="70" height="60" fill="#f97316" rx="4"/>
+    <text x="95" y="195" text-anchor="middle" font-size="12" font-weight="700" fill="#f97316">Rs. 90K</text>
+    <text x="95" y="278" text-anchor="middle" font-size="11" fill="#64748b">Vignan</text>
+    <rect x="160" y="210" width="70" height="50" fill="#f97316" rx="4" opacity="0.8"/>
+    <text x="195" y="205" text-anchor="middle" font-size="12" font-weight="700" fill="#f97316">Rs. 76K</text>
+    <text x="195" y="278" text-anchor="middle" font-size="11" fill="#64748b">Galgotias</text>
+    <rect x="260" y="182" width="70" height="78" fill="#B8892A" rx="4" opacity="0.7"/>
+    <text x="295" y="177" text-anchor="middle" font-size="12" font-weight="700" fill="#B8892A">Rs. 1.02L</text>
+    <text x="295" y="278" text-anchor="middle" font-size="11" fill="#64748b">KUK Online</text>
+    <rect x="360" y="146" width="70" height="114" fill="#0f172a" rx="4" opacity="0.7"/>
+    <text x="395" y="141" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a">Rs. 1.40L</text>
+    <text x="395" y="278" text-anchor="middle" font-size="11" fill="#64748b">Sharda</text>
+    <rect x="460" y="90" width="70" height="170" fill="#0f172a" rx="4" opacity="0.6"/>
+    <text x="495" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a">Rs. 1.96L</text>
+    <text x="495" y="278" text-anchor="middle" font-size="11" fill="#64748b">NMIMS</text>
+    <rect x="560" y="40" width="70" height="220" fill="#0f172a" rx="4" opacity="0.5"/>
+    <text x="595" y="35" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a">Rs. 2.65L</text>
+    <text x="595" y="278" text-anchor="middle" font-size="11" fill="#64748b">Symbiosis</text>
+    <line x1="40" y1="260" x2="660" y2="260" stroke="#e2e8f0" stroke-width="1.5"/>
+  </svg>
+  <div style="font-size:13px;color:#64748b;margin-top:8px;font-style:italic">Fee comparison is indicative. Verify current fees on each university's official website.</div>
+</div>
+
+<h2>Is Vignan University Legit for an Online MBA?</h2>
+
+<p>The short answer is yes. Vignan's Foundation for Science, Technology and Research is a deemed-to-be university located in Vadlamudi, Andhra Pradesh. It holds NAAC A+ accreditation, UGC 12B status, and its online programs are approved by UGC-DEB, which is the body that regulates online degrees in India.</p>
+
+<p>The NIRF 2024 ranking placed it in the top 75 universities nationally. That is not IIM territory, but for an online degree from a non-metro university, this accreditation stack is solid. Government jobs, most private employers, and higher education abroad (subject to WES evaluation) typically recognize UGC-DEB approved degrees the same way as regular campus degrees.</p>
+
+<p>To double-check UGC-DEB approval status yourself, visit the UGC-DEB portal and search for Vignan. This is standard practice before applying to any online university in India.</p>
+
+<h2>Vignan Online MBA Fee Structure</h2>
+
+<p>The Vignan Online MBA total fee is Rs. 90,000 for the full two-year program. This is among the lowest in the segment for a NAAC A+ institution. The university also offers a no-cost EMI option that works out to roughly Rs. 5,700 per month.</p>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Fee Component</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Amount</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">When Payable</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Semester Fee (x4)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 22,500 per semester</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Start of each semester</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Total Program Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 90,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Full course</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">EMI Option</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">~Rs. 5,700 / month</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Monthly (no interest)</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>Note: Exam fees may be charged separately depending on the specialization and semester. Always confirm the exact fee breakdown directly with the university at <a href="https://vignanonline.com/" target="_blank" rel="noopener">vignanonline.com</a> before paying.</p>
+
+<h2>Specializations Available</h2>
+
+<p>Vignan Online MBA currently offers 7 specializations. The first two semesters cover common core subjects across all tracks. Specialization courses kick in from semester 3.</p>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:20px 0 32px">
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">📊</span> Finance</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">👥</span> Human Resource Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">📣</span> Marketing</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">💻</span> IT Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🔢</span> Business Analytics</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🏥</span> Healthcare Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🚚</span> Logistics &amp; Supply Chain</div>
+</div>
+
+<p>Also considering an MCA? See our guide to <a href="/vignan-online-mca" style="color:inherit;text-decoration:underline;text-underline-offset:2px">Vignan Online MCA fees and admission</a> for a full overview of the MCA program offered by the same university.</p>
+
+<h2>Vignan Online MBA Syllabus (Semester-Wise)</h2>
+
+<p>The first two semesters are common for all students regardless of specialization. Semesters 3 and 4 differ based on the track chosen.</p>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 1 — Foundation Subjects</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">1</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Principles of Management &amp; Organizational Behaviour</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Managerial Economics</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Accounting for Managers</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Statistics &amp; Analytics for Decision Making</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Legal Environment for Business</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 2 — Core Business Subjects</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">2</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Marketing Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Financial Markets &amp; Corporate Finance</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Human Resource Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Operations Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Research Methods</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Analytics</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 3 — Specialization (Finance Track Example)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">3</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Environment &amp; Strategy</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Management of Banking &amp; Financial Services</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Direct &amp; Indirect Taxation</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Fixed Income Securities &amp; Derivatives</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Research-Based Learning I</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 4 — Advanced Specialization (Finance Track Example)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">4</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Entrepreneurship Development</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Investment Analysis &amp; Portfolio Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Fintech Foundation &amp; Applications</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Corporate Valuation &amp; Investment Banking</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Research-Based Learning II</li></ul></div>
+</div>
+
+<p>The Marketing track in semesters 3 and 4 covers subjects like Agricultural &amp; Rural Marketing, Integrated Marketing Communications, Services Marketing &amp; CRM, Global Marketing, B2B Marketing, Retail Marketing &amp; Brand Management, and Digital Marketing &amp; Data Analytics. The Healthcare Management track goes into SCM &amp; Material Management in Healthcare, Medical Record Management, Healthcare Insurance, Healthcare Laws, and Medical Tourism.</p>
+
+<div style="margin:32px 0;text-align:center">
+  <svg viewBox="0 0 680 220" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, sans-serif" style="max-width:100%;height:auto">
+    <rect width="680" height="220" fill="#0f172a" rx="12"/>
+    <text x="340" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#f97316">How Vignan Online MBA Delivers Learning</text>
+    <rect x="30" y="50" width="130" height="80" fill="#1e293b" rx="8"/>
+    <text x="95" y="82" text-anchor="middle" font-size="22" fill="#f97316">🎥</text>
+    <text x="95" y="100" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Live Weekend</text>
+    <text x="95" y="115" text-anchor="middle" font-size="12" fill="#94a3b8">Sessions</text>
+    <rect x="180" y="50" width="130" height="80" fill="#1e293b" rx="8"/>
+    <text x="245" y="82" text-anchor="middle" font-size="22" fill="#B8892A">📚</text>
+    <text x="245" y="100" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Recorded</text>
+    <text x="245" y="115" text-anchor="middle" font-size="12" fill="#94a3b8">Lectures (LMS)</text>
+    <rect x="330" y="50" width="130" height="80" fill="#1e293b" rx="8"/>
+    <text x="395" y="82" text-anchor="middle" font-size="22" fill="#f97316">📝</text>
+    <text x="395" y="100" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">120 Hours</text>
+    <text x="395" y="115" text-anchor="middle" font-size="12" fill="#94a3b8">Per Subject</text>
+    <rect x="480" y="50" width="170" height="80" fill="#1e293b" rx="8"/>
+    <text x="565" y="82" text-anchor="middle" font-size="22" fill="#B8892A">💻</text>
+    <text x="565" y="100" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Online Proctored</text>
+    <text x="565" y="115" text-anchor="middle" font-size="12" fill="#94a3b8">Exams (June/Nov)</text>
+    <text x="340" y="170" text-anchor="middle" font-size="12" fill="#64748b">Exam pattern: 50 MCQs + 2 essay-type questions. Webcam required.</text>
+    <text x="340" y="190" text-anchor="middle" font-size="12" fill="#64748b">Exams conducted on LMS portal via laptop or mobile.</text>
+  </svg>
+  <div style="font-size:13px;color:#64748b;margin-top:8px;font-style:italic">Vignan Online uses a mix of live and recorded sessions. Exams are fully online and proctored.</div>
+</div>
+
+<h2>Eligibility and Admission Process</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;width:38%;background:#f8fafc">Minimum Qualification</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Bachelor's degree in any discipline from a UGC-recognized university</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Minimum Marks</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">50% aggregate (5% relaxation for SC/ST candidates)</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Entrance Exam</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Not required. Admission based on academic merit.</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Work Experience</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Not mandatory</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Admission Cycles</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">January and July/August sessions (UGC bi-annual)</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:600;color:#0f172a;background:#f8fafc">ABC ID &amp; DEB ID</td><td style="padding:10px 14px">Mandatory as per UGC guidelines</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);color:#fff;border-radius:12px;padding:32px 36px;margin:48px 0 32px;text-align:center">
+  <h3 style="color:#fff;margin:0 0 10px;font-size:20px">Comparing multiple online MBA programs?</h3>
+  <p style="color:#94a3b8;font-size:15px;margin:0 0 20px">EdifyEdu lists verified online MBA programs across India with fee breakdowns, syllabi, and honest comparisons. No paid rankings, no referral fees.</p>
+  <a href="/programs" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Browse All Online MBA Programs</a>
+</div>
+
+<h2>Honest Assessment: Pros and Cons</h2>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 32px">
+  <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#166534;margin:0 0 12px;font-size:16px">Strengths</h3>
+    <ul style="list-style:none;padding:0;margin:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Lowest total fee among NAAC A+ online MBAs in India</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">UGC-DEB approved, equivalent to regular MBA</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">No entrance exam needed</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Good for working professionals (weekend live sessions)</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">7 specializations including niche tracks like Healthcare and Logistics</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">No-cost EMI option makes it financially accessible</li>
+    </ul>
+  </div>
+  <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#9a3412;margin:0 0 12px;font-size:16px">Watch Out For</h3>
+    <ul style="list-style:none;padding:0;margin:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Limited brand recognition outside Andhra Pradesh/Telangana</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Placement support for online students is less structured than campus programs</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Syllabus for some tracks (Logistics) shows limited elective detail publicly</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Not ideal if you need strong alumni network in North/West India</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Physical exam centre may be required for some assessments</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Who Should Apply for Vignan Online MBA?</h2>
+
+<p>Vignan Online MBA makes most sense for a specific profile. You are already working, probably in a role where an MBA will help you get a promotion or change industries. You do not want to spend Rs. 2 to 3 lakhs on a program you will study on your phone during commutes. You are in Andhra Pradesh, Telangana, or another southern state where Vignan's reputation carries more weight.</p>
+
+<p>If you are in Mumbai, Delhi, or Bengaluru and your employer is going to scrutinize the brand, you might want to consider Symbiosis, NMIMS, or Jain Online instead. The degree is valid everywhere in India, but brand recognition is unequal across regions.</p>
+
+<p>For someone doing a government job and wanting an MBA for the grade pay benefit, or a small business owner who just needs the formal credential, Vignan at Rs. 90,000 is genuinely hard to beat. This won't work for everyone, but for the right candidate it is one of the best value options in the market.</p>
+
+<blockquote style="border-left:4px solid #f97316;padding:14px 20px;background:#f8fafc;margin:24px 0;border-radius:0 8px 8px 0;font-style:italic;color:#64748b;font-size:15px">
+  The question is not whether Vignan Online MBA is good or bad. It is whether it is right for your specific situation. For a working professional in South India on a tight budget, it delivers solid value. For someone chasing an MBA for brand prestige, look elsewhere.
+</blockquote>
+
+<h2>Quick Comparison with Similar Programs</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">University</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Total Fee</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">NAAC Grade</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Key USP</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Vignan Online</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 90,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Lowest fee in NAAC A+ segment</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Galgotias Online</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 76,200</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Cheapest option overall</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Kurukshetra University Online</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,02,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A++</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">State university credibility</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Sharda University Online</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,40,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">NCR-based, broader recognition</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">NMIMS Online</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rs. 1,96,000</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">A+</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Strong Mumbai brand</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p style="font-size:14px;color:#64748b">Related: <a href="/blog/dsu-online-mba-review" style="color:inherit;text-decoration:underline;text-underline-offset:2px">Dayananda Sagar University Online MBA Review</a> — NAAC A++, Bengaluru-based, Rs. 1,20,000 total.</p>
+
+<p>Fees are indicative. Always verify on the respective official websites before making any admission decisions.</p>
+
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);color:#fff;border-radius:12px;padding:32px 36px;margin:48px 0 32px;text-align:center">
+  <h3 style="color:#fff;margin:0 0 10px;font-size:20px">Want a side-by-side comparison of all online MBAs?</h3>
+  <p style="color:#94a3b8;font-size:15px;margin:0 0 20px">Browse EdifyEdu's independent, commission-free university comparison tool for the Indian online MBA market.</p>
+  <a href="/compare" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;margin-right:12px">Compare Universities</a>
+  <a href="/contact" style="display:inline-block;background:transparent;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid #f97316">Talk to a Counsellor</a>
+</div>
+
+<h2>Final Word</h2>
+
+<p>Vignan Online MBA at Rs. 90,000 total is a legitimate, affordable option for budget-conscious professionals who want a UGC-approved degree without the financial stress of more expensive programs. It has the accreditation stack it needs (NAAC A+, UGC-DEB), a reasonable syllabus, and flexible payment terms.</p>
+
+<p>What it does not have is a pan-India brand name or the placement machinery of premium programs. Go in with clear expectations: this is a credential builder and a knowledge upgrade, not a campus networking experience.</p>
+
+<p>If that matches what you need, it is worth a serious look.</p>
+
+<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
+  <p style="font-size:16px;font-weight:700;color:#9a3412;margin:0 0 8px">Still unsure which program is right for you?</p>
+  <p style="font-size:14px;color:#64748b;margin:0 0 18px">Our counsellors help working professionals shortlist the right online MBA — based on budget, location, and career goals. Free, no-pressure guidance.</p>
+  <a href="/contact" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Get Free Counselling</a>
+</div>
+
+<p style="font-size:14px;color:#64748b;margin:16px 0">Also read: <a href="/blog/dsu-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">DSU Online MBA Review</a> — NAAC A++, Bengaluru, Rs. 1,20,000 · <a href="/blog" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">All MBA Reviews</a> · <a href="/universities" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Browse All Universities</a></p>
+
+<div style="font-size:13px;color:#64748b;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px;margin-top:32px">
+  <strong>Disclaimer:</strong> EdifyEdu is an independent university comparison platform. All fees mentioned in this article are indicative and based on publicly available data as of early 2026. Fees can change without notice. Please verify all details directly on <a href="https://vignanonline.com/" target="_blank" rel="noopener">vignanonline.com</a> and confirm UGC-DEB approval status on the UGC portal before applying. EdifyEdu does not accept referral commissions from any university.
+</div>`,
+  },
+  {
+    slug: 'dsu-online-mba-review',
+    title: 'Dayananda Sagar University Online MBA 2026: Fees, Syllabus, Honest Review',
+    seoTitle: 'DSU Online MBA Fees 2026 — Rs. 1,20,000 Total | Dayananda Sagar Review',
+    metaDescription: 'DSU Online MBA at Rs. 1,20,000 total. NAAC A++ ranked Bangalore university. Complete fee breakdown, specializations, syllabus and honest review for 2026.',
+    category: 'Online MBA Programs',
+    tags: ['dsu online mba', 'dayananda sagar university online mba', 'dayananda sagar online mba fees', 'online mba bangalore', 'dsu online mba review'],
+    publishedAt: '2026-04-11',
+    readTime: 9,
+    targetKeyword: 'dsu online mba',
+    relatedUniversities: ['dayananda-sagar-university'],
+    status: 'published',
+    ctaTitle: 'Compare DSU Against Other Online MBA Programs',
+    ctaDesc: 'See how DSU Online MBA stacks up against Jain, NMIMS, Symbiosis and 20+ other UGC-approved programs — fees, specializations, accreditation side by side.',
+    faqs: [
+      {
+        q: 'What is the total fee for DSU Online MBA?',
+        a: 'The total program fee is Rs. 1,20,000 for the two-year program, paid as Rs. 30,000 per semester. An EMI option is available at Rs. 5,000 to Rs. 6,000 per month. Verify current fees at dsuonline.com before applying.'
+      },
+      {
+        q: 'Is DSU Online MBA UGC approved?',
+        a: 'Yes. Dayananda Sagar University holds NAAC A++ accreditation — the highest available grade. The online MBA falls under UGC-DEB regulations and is treated as equivalent to a regular campus MBA for employment and higher education.'
+      },
+      {
+        q: 'What specializations are available in DSU Online MBA?',
+        a: 'Seven specializations: Artificial Intelligence, Business Analytics, Entrepreneurship Management, Financial Management (FinTech focus), Human Resource Management, IT & Systems Management, and Marketing Management.'
+      },
+      {
+        q: 'How does DSU Online MBA compare to other Bengaluru universities?',
+        a: 'DSU is NAAC A++ at Rs. 1,20,000 — cheaper than Jain Online (Rs. 1,96,000) and Christ University (Rs. 2,30,000+), both also Bengaluru-based. For professionals specifically in the Bengaluru tech sector, DSU offers competitive value relative to its price point.'
+      },
+      {
+        q: 'Who should apply for DSU Online MBA?',
+        a: 'DSU Online MBA is best suited for working professionals based in or around Bengaluru — especially in tech, healthcare, or financial services — who want an affordable, NAAC A++ accredited degree. Less suitable for candidates who need strong pan-India placement infrastructure or North/West India brand recognition.'
+      }
+    ],
+    content: `<p>Dayananda Sagar University sits in an interesting spot. It is not a tier-1 brand like NMIMS or Symbiosis, but it is a Bengaluru-based university with NAAC A++ accreditation, decent corporate connections in South India, and an online MBA that costs Rs. 1,20,000 total. That combination is harder to find than you might think.</p>
+
+<p>This review does not take referral fees from any university. Fees and program details are based on publicly available data and should be confirmed directly at <a href="https://dsuonline.com/" target="_blank" rel="noopener">dsuonline.com</a>.</p>
+
+<div class="snapshot" style="background:#f8fafc;border:1px solid #e2e8f0;border-left:5px solid #f97316;border-radius:10px;padding:24px 28px;margin:32px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px">
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Total Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 1,20,000</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Per Semester</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 30,000</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">EMI Range</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 5,000–6,000/mo</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Duration</div><div style="font-size:17px;font-weight:700;color:#0f172a">2 Years</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">NAAC Grade</div><div style="font-size:17px;font-weight:700;color:#0f172a">A++</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">UGC Approved</div><div style="font-size:17px;font-weight:700;color:#0f172a">Yes</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">BW B-School Rank</div><div style="font-size:17px;font-weight:700;color:#0f172a">61st in India</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Specializations</div><div style="font-size:17px;font-weight:700;color:#0f172a">7 tracks</div></div>
+</div>
+
+<div style="margin:32px 0;text-align:center">
+  <svg viewBox="0 0 680 240" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, sans-serif" style="max-width:100%;height:auto">
+    <rect width="680" height="240" fill="#f8fafc" rx="12"/>
+    <text x="340" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">DSU Online MBA at a Glance</text>
+    <text x="60" y="58" font-size="12" fill="#64748b">Accreditation</text>
+    <rect x="200" y="44" width="350" height="18" fill="#e2e8f0" rx="4"/>
+    <rect x="200" y="44" width="332" height="18" fill="#f97316" rx="4"/>
+    <text x="560" y="58" font-size="12" font-weight="700" fill="#0f172a">NAAC A++</text>
+    <text x="60" y="90" font-size="12" fill="#64748b">Affordability</text>
+    <rect x="200" y="76" width="350" height="18" fill="#e2e8f0" rx="4"/>
+    <rect x="200" y="76" width="280" height="18" fill="#B8892A" rx="4"/>
+    <text x="560" y="90" font-size="12" font-weight="700" fill="#0f172a">Rs. 1.2L total</text>
+    <text x="60" y="122" font-size="12" fill="#64748b">Brand (South India)</text>
+    <rect x="200" y="108" width="350" height="18" fill="#e2e8f0" rx="4"/>
+    <rect x="200" y="108" width="240" height="18" fill="#0f172a" rx="4"/>
+    <text x="560" y="122" font-size="12" font-weight="700" fill="#0f172a">Strong</text>
+    <text x="60" y="154" font-size="12" fill="#64748b">Specializations</text>
+    <rect x="200" y="140" width="350" height="18" fill="#e2e8f0" rx="4"/>
+    <rect x="200" y="140" width="196" height="18" fill="#f97316" rx="4" opacity="0.8"/>
+    <text x="560" y="154" font-size="12" font-weight="700" fill="#0f172a">7 tracks</text>
+    <text x="60" y="186" font-size="12" fill="#64748b">National Recognition</text>
+    <rect x="200" y="172" width="350" height="18" fill="#e2e8f0" rx="4"/>
+    <rect x="200" y="172" width="168" height="18" fill="#B8892A" rx="4" opacity="0.8"/>
+    <text x="560" y="186" font-size="12" font-weight="700" fill="#0f172a">Moderate</text>
+    <text x="340" y="222" text-anchor="middle" font-size="11" fill="#94a3b8">Ratings are relative to the Indian online MBA market, not absolute scores.</text>
+  </svg>
+  <div style="font-size:13px;color:#64748b;margin-top:8px;font-style:italic">DSU scores high on accreditation and affordability. National brand recognition is moderate outside South India.</div>
+</div>
+
+<h2>Is DSU Online MBA Legitimate?</h2>
+
+<p>Yes. Dayananda Sagar University holds NAAC A++ accreditation, which is the highest grade awarded. It is UGC-approved and the online MBA program falls under UGC-DEB (Distance Education Bureau) regulations, which means the degree is equivalent to a regular campus MBA in the eyes of most employers, government bodies, and higher education institutions.</p>
+
+<p>Business World ranked DSU's School of Commerce &amp; Management Studies 61st among 146 B-schools nationally in 2023. That is not top 20 territory, but for an online program it signals that the university's management school has some standing in the industry. The Week ranked it 12th among India's future B-schools in 2021.</p>
+
+<p>To verify UGC-DEB approval independently, visit the official UGC portal and search for Dayananda Sagar University. This step takes two minutes and is worth doing for any online university you are considering.</p>
+
+<div style="background:#fef9f0;border:1px solid #B8892A;border-radius:10px;padding:20px 24px;margin:24px 0">
+  <p style="margin:0;color:#92400e;font-size:15px"><strong>Quick check:</strong> DSU Online MBA appears on the UGC's approved online programs list. Always cross-verify on <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a> before you pay admission fees.</p>
+</div>
+
+<h2>Dayananda Sagar Online MBA Fee Structure</h2>
+
+<p>The total program fee is Rs. 1,20,000 for the two-year program. This is broken into four semester payments of Rs. 30,000 each. The university offers an EMI option in the range of Rs. 5,000 to Rs. 6,000 per month.</p>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Fee Component</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Amount</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Notes</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Semester Fee x4</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 30,000 per semester</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Payable at start of each semester</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Total Program Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,20,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">2-year full course</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Monthly EMI</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rs. 5,000 to 6,000</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">EMI facility available</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>These fees are indicative based on publicly available data as of early 2026. Please confirm the exact fee structure and any additional charges (registration, exam fees) directly at <a href="https://dsuonline.com/online-mba/" target="_blank" rel="noopener">dsuonline.com</a>.</p>
+
+<h2>Specializations Offered</h2>
+
+<p>DSU Online offers 7 specialization tracks for the online MBA. The program structure follows 4 semesters, with specialization-specific subjects in semesters 3 and 4.</p>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:20px 0 32px">
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🤖</span> Artificial Intelligence</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">📊</span> Business Analytics</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🚀</span> Entrepreneurship Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">💳</span> Financial Management (FinTech focus)</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">👥</span> Human Resource Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">💻</span> IT &amp; Systems Management</div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">📣</span> Marketing Management</div>
+</div>
+
+<p>Note that Supply Chain Management is also listed on DSU's online MBA page, though full syllabus details for this track were not publicly available at the time of writing. Confirm the available specializations at the time of your application.</p>
+
+<h2>Syllabus Overview (Semester-Wise)</h2>
+
+<p>Syllabus data for DSU Online MBA was not as detailed publicly as some other programs. Based on the institution's school structure and AICTE model curriculum alignment, the general framework looks like this:</p>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 1 — Business Fundamentals</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">1</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Principles of Management &amp; Organizational Behaviour</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Managerial Economics</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Financial Accounting</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Marketing Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Statistics</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Communication</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 2 — Core Management</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">2</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Financial Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Human Resource Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Operations Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Business Research Methods</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Management Information Systems</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Legal Aspects of Business</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 3 — Specialization Core (Marketing Track Example)</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">3</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Strategic Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Consumer Behaviour</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Digital Marketing</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Brand Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Sales &amp; Distribution Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Market Research</li></ul></div>
+</div>
+
+<div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;overflow:hidden">
+  <div style="background:#0f172a;color:#fff;padding:12px 18px;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center"><span>Semester 4 — Advanced Electives &amp; Project</span><span style="background:#f97316;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700">4</span></div>
+  <div style="padding:14px 18px;background:#fff"><ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0"><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">International Marketing</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Retail Management</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Services Marketing</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Entrepreneurship Development</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Project Work / Dissertation</li><li style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 12px;font-size:13px;color:#374151">Viva Voce</li></ul></div>
+</div>
+
+<p>The AI specialization track covers subjects like Fundamentals of AI, Machine Learning Algorithms, Deep Learning, Natural Language Processing in semester 3, and AI Strategy &amp; Governance, Cognitive Computing, and a project in semester 4. The Business Analytics track follows a data science pathway with Python, statistical tools, and predictive analytics. Confirm the current syllabus directly with the university as course structures can be updated yearly.</p>
+
+<div style="margin:32px 0;text-align:center">
+  <svg viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, sans-serif" style="max-width:100%;height:auto">
+    <rect width="680" height="200" fill="#0f172a" rx="12"/>
+    <text x="340" y="25" text-anchor="middle" font-size="13" font-weight="700" fill="#f97316">DSU Online MBA: 2-Year Program Structure</text>
+    <rect x="30" y="55" width="140" height="80" fill="#1e293b" rx="8"/>
+    <text x="100" y="85" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Semester 1-2</text>
+    <text x="100" y="102" text-anchor="middle" font-size="10" fill="#94a3b8">Common Core</text>
+    <text x="100" y="118" text-anchor="middle" font-size="10" fill="#64748b">Foundations</text>
+    <text x="182" y="97" text-anchor="middle" font-size="18" fill="#f97316">→</text>
+    <rect x="195" y="55" width="140" height="80" fill="#1e293b" rx="8"/>
+    <text x="265" y="85" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Semester 3</text>
+    <text x="265" y="102" text-anchor="middle" font-size="10" fill="#94a3b8">Specialization</text>
+    <text x="265" y="118" text-anchor="middle" font-size="10" fill="#64748b">Core Electives</text>
+    <text x="347" y="97" text-anchor="middle" font-size="18" fill="#f97316">→</text>
+    <rect x="360" y="55" width="140" height="80" fill="#1e293b" rx="8"/>
+    <text x="430" y="85" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Semester 4</text>
+    <text x="430" y="102" text-anchor="middle" font-size="10" fill="#94a3b8">Advanced</text>
+    <text x="430" y="118" text-anchor="middle" font-size="10" fill="#64748b">+ Project</text>
+    <text x="512" y="97" text-anchor="middle" font-size="18" fill="#f97316">→</text>
+    <rect x="525" y="55" width="130" height="80" fill="#f97316" rx="8"/>
+    <text x="590" y="85" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Degree</text>
+    <text x="590" y="102" text-anchor="middle" font-size="10" fill="#ffe4cc">MBA from DSU</text>
+    <text x="590" y="118" text-anchor="middle" font-size="10" fill="#ffe4cc">UGC Approved</text>
+    <text x="340" y="165" text-anchor="middle" font-size="11" fill="#64748b">Choose specialization at admission. Specialization subjects begin in Semester 3.</text>
+    <text x="340" y="182" text-anchor="middle" font-size="11" fill="#64748b">7 specializations available including AI, Analytics, Finance, HR, Marketing, IT, Entrepreneurship.</text>
+  </svg>
+  <div style="font-size:13px;color:#64748b;margin-top:8px;font-style:italic">The first two semesters are common across all specializations. Elective tracks begin in the third semester.</div>
+</div>
+
+<h2>Eligibility and Admission Process</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;width:38%;background:#f8fafc">Minimum Qualification</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Bachelor's degree in any discipline from a UGC-recognized university</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Minimum Marks</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">55% aggregate (some sources cite 50% for online mode)</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Entrance Exam</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Not required for online program (merit-based admission)</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Work Experience</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Not mandatory for online mode</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Admission Mode</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Fully online application at dsuonline.com</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;font-weight:600;color:#0f172a;background:#f8fafc">Intake Cycles</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">January and July/August sessions</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:600;color:#0f172a;background:#f8fafc">ABC ID &amp; DEB ID</td><td style="padding:10px 14px">Required as per UGC guidelines</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);color:#fff;border-radius:12px;padding:32px 36px;margin:48px 0 32px;text-align:center">
+  <h3 style="color:#fff;margin:0 0 10px;font-size:20px">Comparing DSU with other online MBAs?</h3>
+  <p style="color:#94a3b8;font-size:15px;margin:0 0 20px">EdifyEdu lists verified online MBA programs across India with fee breakdowns and honest comparisons. No paid rankings. No referral commissions.</p>
+  <a href="/programs" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Browse All Online MBA Programs</a>
+</div>
+
+<h2>What Sets DSU Online MBA Apart</h2>
+
+<p>A few things stand out when you look at DSU's online program relative to others in the same fee bracket.</p>
+
+<p>First, the NAAC A++ rating. Most universities in the Rs. 1 to 1.5 lakh range are NAAC A or A+. DSU's A++ is the highest available grade and it does carry some weight, especially for government job applications and higher education pursuits abroad. Second, the AI and Business Analytics specializations are reasonably current and relevant, unlike older programs that still carry legacy computing syllabi from the early 2010s.</p>
+
+<p>Third, being a Bengaluru-based university gives it an edge for professionals working in the tech sector. A large portion of Bengaluru's working population wants an affordable weekend MBA without moving to a tier-1 city. DSU already is in one.</p>
+
+<blockquote style="border-left:4px solid #f97316;padding:14px 20px;background:#f8fafc;margin:24px 0;border-radius:0 8px 8px 0;font-style:italic;color:#64748b;font-size:15px">
+  At Rs. 1,20,000 total with NAAC A++ accreditation and a Bengaluru address, DSU Online MBA is genuinely competitive for working professionals in South India's tech sector.
+</blockquote>
+
+<h2>Honest Assessment</h2>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 32px">
+  <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#166534;margin:0 0 12px;font-size:16px">What Works</h3>
+    <ul style="list-style:none;padding:0;margin:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">NAAC A++ — highest accreditation grade available</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Affordable at Rs. 1,20,000 total</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Bengaluru base gives regional credibility in South India's tech sector</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">AI and Business Analytics tracks are relevant to 2026 job market</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Business World ranked — has some B-school credibility</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Online proctored exams, flexible schedule for working professionals</li>
+    </ul>
+  </div>
+  <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:20px 22px">
+    <h3 style="color:#9a3412;margin:0 0 12px;font-size:16px">Watch Out For</h3>
+    <ul style="list-style:none;padding:0;margin:0">
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Limited brand recall in North and West India</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Detailed public syllabus for all tracks is not easily available</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Placement support for online students is weaker than the campus program</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Campus MBA rankings (61st) do not directly apply to online mode</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Supply Chain Management track had limited public information</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Verify if exam fee is included in the quoted Rs. 1,20,000</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Who Should Apply for DSU Online MBA?</h2>
+
+<p>DSU Online MBA fits professionals who are based in or around Bengaluru, working in tech, healthcare, or financial services, and looking for a credible, affordable MBA that won't require them to give up their weekends entirely.</p>
+
+<p>If you are a software engineer in an IT park in Electronic City or Whitefield who wants an MBA to move into management, this program's fee point and Bengaluru brand are genuinely relevant. The AI and Business Analytics tracks give you subject matter that overlaps with your existing domain.</p>
+
+<p>It is less compelling if you are in Delhi or Mumbai where the employer might not recognize DSU, or if you need a program with strong national placement infrastructure. For those use cases, you would be better served by NMIMS Online, Symbiosis SSODL, or Jain Online depending on budget.</p>
+
+<h2>DSU vs Comparable Online MBA Programs</h2>
+
+<div style="overflow-x:auto;margin:20px 0 32px">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">University</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Total Fee</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">NAAC</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Key Advantage</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Vignan Online</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 90,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Cheapest NAAC A+ program</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">DSU Online</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,20,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">A++</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">A++ grade, Bengaluru brand</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Kurukshetra University Online</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,02,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A++</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">State university, North India</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Sharda University Online</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,40,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">NCR base, broader recognition</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Jain Online</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,96,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A++</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Strong Bengaluru brand, JAIN</td></tr>
+    <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">NMIMS Online</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rs. 1,96,000</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">A+</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Strong Mumbai/national brand</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p style="font-size:14px;color:#64748b">Related: <a href="/blog/vignan-online-mba-review" style="color:inherit;text-decoration:underline;text-underline-offset:2px">Vignan Online MBA Review</a> — NAAC A+, Andhra Pradesh-based, Rs. 90,000 total — the most affordable NAAC A+ option.</p>
+
+<p>All fees are indicative. Verify directly with the respective universities before applying.</p>
+
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);color:#fff;border-radius:12px;padding:32px 36px;margin:48px 0 32px;text-align:center">
+  <h3 style="color:#fff;margin:0 0 10px;font-size:20px">Need help shortlisting the right online MBA?</h3>
+  <p style="color:#94a3b8;font-size:15px;margin:0 0 20px">EdifyEdu compares all major UGC-DEB verified online MBA programs in India. No ads, no commissions, just data.</p>
+  <a href="/compare" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;margin-right:12px">Compare Universities</a>
+  <a href="/contact" style="display:inline-block;background:transparent;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid #f97316">Talk to a Counsellor</a>
+</div>
+
+<h2>Final Verdict</h2>
+
+<p>Dayananda Sagar University Online MBA is a solid option in the Rs. 1 to 1.5 lakh range, especially if you are in South India. The NAAC A++ rating is the strongest in its price category, the Bengaluru location matters if you work in the tech industry there, and the newer tracks in AI and Business Analytics are practical choices for 2026.</p>
+
+<p>The brand doesn't travel as well outside the South. If that is a concern, factor it into your decision. But if you are a working professional in Bengaluru or surrounding areas looking for an affordable, accredited online MBA, DSU deserves a serious look.</p>
+
+<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
+  <p style="font-size:16px;font-weight:700;color:#9a3412;margin:0 0 8px">Not sure if DSU is the right fit for you?</p>
+  <p style="font-size:14px;color:#64748b;margin:0 0 18px">Our counsellors help working professionals find the right online MBA — free, honest, no pressure. Tell us your budget and career goal, we'll shortlist three best-fit options.</p>
+  <a href="/contact" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Get Free Counselling</a>
+</div>
+
+<p style="font-size:14px;color:#64748b;margin:16px 0">Also read: <a href="/blog/vignan-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Vignan Online MBA Review</a> — NAAC A+, Andhra Pradesh, Rs. 90,000 · <a href="/blog" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">All MBA Reviews</a> · <a href="/universities" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Browse All Universities</a></p>
+
+<div style="font-size:13px;color:#64748b;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px;margin-top:32px">
+  <strong>Disclaimer:</strong> EdifyEdu is an independent university comparison platform. All fees mentioned are indicative based on publicly available data as of early 2026. Fees may change without notice. Please verify all details including current fees, UGC-DEB approval status, and eligibility criteria directly at <a href="https://dsuonline.com/" target="_blank" rel="noopener">dsuonline.com</a> and the UGC portal before applying. EdifyEdu does not accept referral commissions from any university.
+</div>`,
+  },
 ]
 
 export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))
