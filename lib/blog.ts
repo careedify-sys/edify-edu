@@ -13055,6 +13055,329 @@ export const BLOG_POSTS: BlogPost[] = [
   <strong>Disclaimer:</strong> EdifyEdu is an independent platform. All fees are indicative based on publicly available data as of early 2026. Verify all current fees, UGC-DEB status, and program terms at jiitonline.com before applying. EdifyEdu does not accept referral commissions from any university.
 </div>`,
   },
+  {
+    slug: 'amity-university-mba-distance-2026',
+    title: 'Amity University Distance MBA 2026: Fees, Eligibility, Specializations and Honest Review',
+    seoTitle: 'Amity University Distance MBA 2026 — Fees, Eligibility, Specializations & Comparison',
+    metaDescription: 'Amity University online and distance MBA fees 2026 — ₹1,99,000 total, 19 specializations, NAAC A+, QS Asia Pacific Top 10. Eligibility, syllabus, placements and comparison vs NMIMS, JAIN, Symbiosis.',
+    category: 'University Reviews',
+    tags: ['amity mba online fees', 'amity distance mba fees', 'amity university delhi mba fees', 'amity university mba eligibility', 'amity university distance mba fees', 'amity distance mba', 'amity noida distance mba', 'amity university noida mba fees and placement'],
+    publishedAt: '2026-04-13',
+    readTime: 12,
+    targetKeyword: 'amity university distance mba fees',
+    relatedUniversities: ['amity-university-online'],
+    status: 'published' as const,
+    ctaTitle: 'Comparing Amity against 3–4 other options?',
+    ctaDesc: 'Our independent advisors help match programme to career goal — for free. No referral commissions from any university.',
+    faqs: [
+      { q: 'What are the actual Amity MBA online fees for 2026?', a: 'The standard Amity MBA online fees total ₹1,99,000 — four semesters at ₹49,750 each. There is no separate registration fee. For the ACCA International Finance or dual-specialization track, the fee rises to approximately ₹2,99,000. EMI starts at around ₹8,292 per month. Verify current figures at amityonline.com before applying.' },
+      { q: 'Is Amity University distance MBA fees different from the online MBA?', a: 'Yes. Amity distance MBA fees typically range from ₹1,20,000 to ₹1,51,800 — lower than the online MBA. However, the distance programme offers fewer specializations (4–6 vs 19), no live sessions, and self-study material only. Both carry UGC-DEB approval, but the online MBA includes WASC/QAA international accreditations and the QS ranking.' },
+      { q: 'What is the Amity University MBA eligibility for online admission?', a: 'A bachelor\'s degree from any recognized university with a minimum 40% aggregate is required. No entrance exam is mandatory. Candidates with less than 40% may be considered after clearing an internal online admission test. There is no work experience requirement and no age limit.' },
+      { q: 'What are Amity University Noida MBA fees and placement data?', a: 'For the full-time on-campus MBA at Amity Business School Noida, total tuition ranges from ₹6.4 lakh to ₹15.8 lakh. Placement data for 2024: 202 recruiters participated, average package ₹7.35 LPA, median ₹6.50 LPA, highest ₹26.30 LPA in Finance domain.' },
+      { q: 'How does Amity compare to NMIMS, JAIN, and Symbiosis for the online MBA?', a: 'NMIMS wins for BFSI/Finance corporate acceptance in India. JAIN Online has NAAC A++ and costs slightly less at ₹1.96L. Symbiosis at ₹2.65–3.15L is most expensive but carries strong HR brand recognition. Amity is best for students needing international credential validation (WES, WASC, QAA) or the ACCA integration track.' },
+    ],
+    content: `
+<p style="font-size:13px;color:#64748b;margin-bottom:4px">Written by <strong>Rishi Kumar</strong> · Expert Verified · Updated April 2026</p>
+
+<div style="background:#f7f7fb;border:1px solid #e5e7eb;border-radius:10px;padding:20px 24px;margin-bottom:32px">
+  <p style="font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#7a7a9a;margin-bottom:10px">✦ Key Highlights</p>
+  <ul style="list-style:none;padding:0;margin:0">
+    <li style="padding:5px 0;font-size:14px;color:#4a4a6a;display:flex;align-items:flex-start;gap:8px"><span style="color:#059669;font-weight:700;flex-shrink:0">✓</span>What Amity MBA online fees actually total — and EMI breakdown</li>
+    <li style="padding:5px 0;font-size:14px;color:#4a4a6a;display:flex;align-items:flex-start;gap:8px"><span style="color:#059669;font-weight:700;flex-shrink:0">✓</span>Online MBA vs distance MBA at Amity: they are not the same programme</li>
+    <li style="padding:5px 0;font-size:14px;color:#4a4a6a;display:flex;align-items:flex-start;gap:8px"><span style="color:#059669;font-weight:700;flex-shrink:0">✓</span>Amity University Noida MBA fees and placement data from campus programme</li>
+    <li style="padding:5px 0;font-size:14px;color:#4a4a6a;display:flex;align-items:flex-start;gap:8px"><span style="color:#059669;font-weight:700;flex-shrink:0">✓</span>All 19 specializations and their Semester 3–4 syllabus from official data</li>
+    <li style="padding:5px 0;font-size:14px;color:#4a4a6a;display:flex;align-items:flex-start;gap:8px"><span style="color:#059669;font-weight:700;flex-shrink:0">✓</span>How Amity stacks up on fee, accreditation, and brand vs 6 comparable programmes</li>
+  </ul>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:28px 0">
+  <div style="background:#f7f7fb;border:1px solid #e5e7eb;border-radius:6px;padding:14px 12px;text-align:center"><div style="font-size:20px;font-weight:800;color:#2563eb;line-height:1.2">₹1.99L</div><div style="font-size:11px;color:#7a7a9a;margin-top:3px">Total Online MBA Fee</div></div>
+  <div style="background:#f7f7fb;border:1px solid #e5e7eb;border-radius:6px;padding:14px 12px;text-align:center"><div style="font-size:20px;font-weight:800;color:#2563eb;line-height:1.2">19</div><div style="font-size:11px;color:#7a7a9a;margin-top:3px">Specializations</div></div>
+  <div style="background:#f7f7fb;border:1px solid #e5e7eb;border-radius:6px;padding:14px 12px;text-align:center"><div style="font-size:20px;font-weight:800;color:#2563eb;line-height:1.2">NAAC A+</div><div style="font-size:11px;color:#7a7a9a;margin-top:3px">Accreditation Grade</div></div>
+  <div style="background:#f7f7fb;border:1px solid #e5e7eb;border-radius:6px;padding:14px 12px;text-align:center"><div style="font-size:20px;font-weight:800;color:#2563eb;line-height:1.2">QS Top 10</div><div style="font-size:11px;color:#7a7a9a;margin-top:3px">Asia Pacific Online MBA</div></div>
+</div>
+
+<h2 style="font-size:21px;font-weight:800;color:#1a1a2e;margin:44px 0 14px;padding-bottom:8px;border-bottom:2px solid #eff6ff">The Number That Confuses Everyone</h2>
+
+<p>If you've searched for <strong>Amity University distance MBA fees</strong>, you've probably seen figures ranging from ₹1.20 lakh to ₹2.99 lakh. None of them are wrong — they're just describing different things. Amity runs two distinct modes: an <strong>online MBA</strong> through its Learning Management System and a <strong>distance MBA</strong> through self-study materials, priced differently. There's also the full-time campus MBA at Amity Noida, which costs ₹6.4L–₹15.8L and has nothing to do with the distance or online programmes.</p>
+
+<div style="background:#eff6ff;border-left:4px solid #2563eb;border-radius:0 10px 10px 0;padding:16px 20px;margin:22px 0;font-size:15px">
+  <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;opacity:.65">How to read this page</div>
+  All fees are total course fees unless stated otherwise. NIRF rank = Management category 2025. Verify current fees and UGC-DEB approval at deb.ugc.ac.in and amityonline.com before applying.
+</div>
+
+<h2 style="font-size:21px;font-weight:800;color:#1a1a2e;margin:44px 0 14px;padding-bottom:8px;border-bottom:2px solid #eff6ff">Amity MBA Online Fees: Complete Breakdown</h2>
+
+<p>The <strong>Amity MBA online fees</strong> for a standard specialization come to <strong>₹1,99,000 total</strong>, spread across four semesters at ₹49,750 each. EMI starts at roughly ₹8,292 per month. There is no separate registration fee.</p>
+
+<p>For the ACCA (International Finance) track or any dual-specialization option, the per-semester fee jumps to ₹74,750 — bringing the total to approximately ₹2,99,000. That's a significant difference, so double-check which track you actually need before choosing the pricier option.</p>
+
+<table style="width:100%;border-collapse:collapse;margin:20px 0;font-size:14px;border-radius:10px;overflow:hidden;border:1px solid #e5e7eb">
+  <thead><tr><th style="background:#1a1a2e;color:#fff;padding:12px 14px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase">Fee Component</th><th style="background:#1a1a2e;color:#fff;padding:12px 14px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase">Amount</th><th style="background:#1a1a2e;color:#fff;padding:12px 14px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase">Notes</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Semester Fee × 4 (standard)</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb"><span style="background:#eff6ff;color:#2563eb;font-weight:700;font-size:13px;padding:3px 8px;border-radius:4px">₹49,750/sem</span></td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">All 19 standard specializations</td></tr>
+    <tr style="background:#fef9c3;font-weight:700"><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb"><strong>Total (Standard)</strong></td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb"><span style="background:#eff6ff;color:#2563eb;font-weight:700;font-size:13px;padding:3px 8px;border-radius:4px">₹1,99,000</span></td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">No registration fee</td></tr>
+    <tr style="background:#f7f7fb"><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Semester Fee × 4 (ACCA/Dual Spec)</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb"><span style="background:#eff6ff;color:#2563eb;font-weight:700;font-size:13px;padding:3px 8px;border-radius:4px">₹74,750/sem</span></td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">International Finance (ACCA) track</td></tr>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Total (ACCA/Dual)</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb"><span style="background:#eff6ff;color:#2563eb;font-weight:700;font-size:13px;padding:3px 8px;border-radius:4px">~₹2,99,000</span></td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">ACCA exemptions included</td></tr>
+    <tr style="background:#f7f7fb"><td style="padding:12px 14px">EMI (standard, 0% interest)</td><td style="padding:12px 14px"><span style="background:#eff6ff;color:#2563eb;font-weight:700;font-size:13px;padding:3px 8px;border-radius:4px">~₹8,292/mo</span></td><td style="padding:12px 14px">Starts at; varies by tenure</td></tr>
+  </tbody>
+</table>
+
+<div style="margin:28px 0;text-align:center">
+  <svg viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:100%;height:auto">
+    <defs>
+      <linearGradient id="amg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    </defs>
+    <rect width="660" height="300" fill="#f7f7fb" rx="12"/>
+    <text x="330" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#1a1a2e">Amity Online MBA — Fee Breakdown (₹1,99,000 Total)</text>
+    <text x="20" y="70" font-family="system-ui" font-size="11" fill="#7a7a9a">Sem 1</text>
+    <rect x="90" y="55" width="380" height="24" rx="4" fill="url(#amg1)" opacity=".9"/>
+    <text x="478" y="72" font-family="system-ui" font-size="11" font-weight="700" fill="#1e40af">₹49,750</text>
+    <text x="20" y="112" font-family="system-ui" font-size="11" fill="#7a7a9a">Sem 2</text>
+    <rect x="90" y="97" width="380" height="24" rx="4" fill="url(#amg1)" opacity=".85"/>
+    <text x="478" y="114" font-family="system-ui" font-size="11" font-weight="700" fill="#1e40af">₹49,750</text>
+    <text x="20" y="154" font-family="system-ui" font-size="11" fill="#7a7a9a">Sem 3</text>
+    <rect x="90" y="139" width="380" height="24" rx="4" fill="url(#amg1)" opacity=".8"/>
+    <text x="478" y="156" font-family="system-ui" font-size="11" font-weight="700" fill="#1e40af">₹49,750</text>
+    <text x="20" y="196" font-family="system-ui" font-size="11" fill="#7a7a9a">Sem 4</text>
+    <rect x="90" y="181" width="380" height="24" rx="4" fill="url(#amg1)" opacity=".75"/>
+    <text x="478" y="198" font-family="system-ui" font-size="11" font-weight="700" fill="#1e40af">₹49,750</text>
+    <rect x="90" y="222" width="380" height="34" rx="6" fill="#1a1a2e"/>
+    <text x="280" y="244" text-anchor="middle" font-family="system-ui" font-size="14" font-weight="800" fill="#fff">TOTAL: ₹1,99,000 (No registration fee)</text>
+    <text x="330" y="285" text-anchor="middle" font-family="system-ui" font-size="10" fill="#9ca3af">Standard specializations. ACCA/Dual: ₹74,750/sem = ~₹2,99,000. Verify at amityonline.com.</text>
+  </svg>
+  <div style="font-size:12px;color:#7a7a9a;text-align:center;margin-top:6px">Amity Online MBA fee structure — semester-wise breakdown (standard track)</div>
+</div>
+
+<h2 style="font-size:21px;font-weight:800;color:#1a1a2e;margin:44px 0 14px;padding-bottom:8px;border-bottom:2px solid #eff6ff">Amity Distance MBA vs Online MBA: What's Different</h2>
+
+<table style="width:100%;border-collapse:collapse;margin:20px 0;font-size:14px;border-radius:10px;overflow:hidden;border:1px solid #e5e7eb">
+  <thead><tr><th style="background:#1a1a2e;color:#fff;padding:12px 14px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase">Factor</th><th style="background:#1a1a2e;color:#fff;padding:12px 14px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase">Amity Online MBA</th><th style="background:#1a1a2e;color:#fff;padding:12px 14px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase">Amity Distance MBA</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Learning Mode</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">LMS + Live Weekend Sessions + Recorded Lectures</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Physical study material, self-directed</td></tr>
+    <tr style="background:#f7f7fb"><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Total Fee</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb"><strong>₹1,99,000</strong></td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">~₹1,20,000–₹1,51,800</td></tr>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Specializations</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">19 available</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">4–6 core options</td></tr>
+    <tr style="background:#f7f7fb"><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Live Interaction</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Weekend sessions + doubt clearing</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Minimal / none</td></tr>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Global Accreditation</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">WASC (USA), QAA (UK), WES</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Same university accreditation</td></tr>
+    <tr style="background:#f7f7fb"><td style="padding:12px 14px">QS Ranking</td><td style="padding:12px 14px">Asia Pacific Top 10 (online MBA)</td><td style="padding:12px 14px">Not separately ranked</td></tr>
+  </tbody>
+</table>
+
+<div style="background:#fffbeb;border-left:4px solid #d97706;border-radius:0 10px 10px 0;padding:16px 20px;margin:22px 0;font-size:15px">
+  <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;opacity:.65">Before You Apply</div>
+  Always verify UGC-DEB approval for the specific academic session at deb.ugc.ac.in. Approvals are session-specific and can change year to year.
+</div>
+
+<h2 style="font-size:21px;font-weight:800;color:#1a1a2e;margin:44px 0 14px;padding-bottom:8px;border-bottom:2px solid #eff6ff">Amity University MBA Eligibility</h2>
+
+<p>For the online MBA, <strong>Amity University MBA eligibility</strong> is relatively accessible — a bachelor's degree from a recognized university with a minimum of 40% aggregate. No entrance exam is required. If your aggregate falls below 40%, you'll need to clear an internal online admission test. No work experience requirement, no age limit. International students can also enroll.</p>
+
+<table style="width:100%;border-collapse:collapse;margin:20px 0;font-size:14px;border-radius:10px;overflow:hidden;border:1px solid #e5e7eb">
+  <thead><tr><th style="background:#1a1a2e;color:#fff;padding:12px 14px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase">Criterion</th><th style="background:#1a1a2e;color:#fff;padding:12px 14px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase">Online MBA (ADDOE)</th><th style="background:#1a1a2e;color:#fff;padding:12px 14px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase">Campus MBA (Noida)</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Minimum Graduation</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">40% aggregate</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">50% aggregate (CGPA 7+)</td></tr>
+    <tr style="background:#f7f7fb"><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Work Experience</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Not required</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Not required (non-sponsored)</td></tr>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Entrance Exam</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">None (below 40% → internal test)</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">CAT / MAT / CMAT / NMAT / GMAT</td></tr>
+    <tr style="background:#f7f7fb"><td style="padding:12px 14px">Admission Mode</td><td style="padding:12px 14px">First-come, first-served</td><td style="padding:12px 14px">Merit + PI round</td></tr>
+  </tbody>
+</table>
+
+<h2 style="font-size:21px;font-weight:800;color:#1a1a2e;margin:44px 0 14px;padding-bottom:8px;border-bottom:2px solid #eff6ff">19 Specializations: What's Actually Covered</h2>
+
+<p>All tracks share the same first-year foundation: Accounting for Managers, Managerial Economics, Marketing Management, Statistics for Management, Financial Management, HR Management, Business Research Methods, and Legal Aspects of Business. Specialization content kicks in from Semester 3.</p>
+
+<h3 style="font-size:17px;font-weight:700;color:#1a1a2e;margin:28px 0 10px">Business Analytics</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0">
+  <div style="border:1px solid #e5e7eb;border-radius:6px;overflow:hidden">
+    <div style="padding:10px 14px;background:#1a1a2e;color:#fff;font-size:12px;font-weight:700;text-transform:uppercase">Semester 3</div>
+    <div style="padding:12px 14px;font-size:13px;color:#4a4a6a"><ul style="padding-left:16px;margin:0"><li style="margin-bottom:3px">Power BI — Data Analysis &amp; Visualization</li><li style="margin-bottom:3px">Forecasting Techniques</li><li style="margin-bottom:3px">Supervised Learning Techniques</li><li style="margin-bottom:3px">Introduction to Business Analytics</li><li style="margin-bottom:3px">Strategic Management + Minor Project</li></ul></div>
+  </div>
+  <div style="border:1px solid #e5e7eb;border-radius:6px;overflow:hidden">
+    <div style="padding:10px 14px;background:#1a1a2e;color:#fff;font-size:12px;font-weight:700;text-transform:uppercase">Semester 4</div>
+    <div style="padding:12px 14px;font-size:13px;color:#4a4a6a"><ul style="padding-left:16px;margin:0"><li style="margin-bottom:3px">Big Data Analytics</li><li style="margin-bottom:3px">Optimization &amp; Dimension Reduction</li><li style="margin-bottom:3px">Digital Marketing</li><li style="margin-bottom:3px">Major Project</li></ul></div>
+  </div>
+</div>
+
+<h3 style="font-size:17px;font-weight:700;color:#1a1a2e;margin:28px 0 10px">Data Science</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0">
+  <div style="border:1px solid #e5e7eb;border-radius:6px;overflow:hidden">
+    <div style="padding:10px 14px;background:#1a1a2e;color:#fff;font-size:12px;font-weight:700;text-transform:uppercase">Semester 3</div>
+    <div style="padding:12px 14px;font-size:13px;color:#4a4a6a"><ul style="padding-left:16px;margin:0"><li style="margin-bottom:3px">Introduction to Data Science</li><li style="margin-bottom:3px">Data Engineering</li><li style="margin-bottom:3px">Data Visualization and EDA</li><li style="margin-bottom:3px">Analytics for Decision Making</li><li style="margin-bottom:3px">Strategic Management</li></ul></div>
+  </div>
+  <div style="border:1px solid #e5e7eb;border-radius:6px;overflow:hidden">
+    <div style="padding:10px 14px;background:#1a1a2e;color:#fff;font-size:12px;font-weight:700;text-transform:uppercase">Semester 4</div>
+    <div style="padding:12px 14px;font-size:13px;color:#4a4a6a"><ul style="padding-left:16px;margin:0"><li style="margin-bottom:3px">Supervised &amp; Unsupervised Machine Learning</li><li style="margin-bottom:3px">Advanced Deep Learning</li><li style="margin-bottom:3px">Digital Marketing</li><li style="margin-bottom:3px">Major Project</li></ul></div>
+  </div>
+</div>
+
+<h3 style="font-size:17px;font-weight:700;color:#1a1a2e;margin:28px 0 10px">Hospital &amp; Healthcare Management</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0">
+  <div style="border:1px solid #e5e7eb;border-radius:6px;overflow:hidden">
+    <div style="padding:10px 14px;background:#1a1a2e;color:#fff;font-size:12px;font-weight:700;text-transform:uppercase">Semester 3</div>
+    <div style="padding:12px 14px;font-size:13px;color:#4a4a6a"><ul style="padding-left:16px;margin:0"><li style="margin-bottom:3px">Decision Leadership in Emergency Care</li><li style="margin-bottom:3px">Complex Case Management (Internal Medicine)</li><li style="margin-bottom:3px">Patient Care in Critical Care Settings</li><li style="margin-bottom:3px">Strategic Healthcare Leadership</li></ul></div>
+  </div>
+  <div style="border:1px solid #e5e7eb;border-radius:6px;overflow:hidden">
+    <div style="padding:10px 14px;background:#1a1a2e;color:#fff;font-size:12px;font-weight:700;text-transform:uppercase">Semester 4</div>
+    <div style="padding:12px 14px;font-size:13px;color:#4a4a6a"><ul style="padding-left:16px;margin:0"><li style="margin-bottom:3px">AI Tools &amp; Applications in Healthcare</li><li style="margin-bottom:3px">Driving Innovation in Healthcare Technology</li><li style="margin-bottom:3px">Advanced Hospital Operations</li><li style="margin-bottom:3px">Major Project</li></ul></div>
+  </div>
+</div>
+
+<p>The full list of 19 specializations: Business Analytics, Data Science, Digital Entrepreneurship, Digital Marketing Management, Entrepreneurship &amp; Leadership Management, Finance &amp; Accounting Management, General Management, Global Finance Market, Hospital &amp; Healthcare Management, Hospitality Management, Human Resource Analytics, Human Resource Management, Information Technology Management, Insurance Management, International Business Management, International Finance (ACCA), Marketing &amp; Sales Management, Production &amp; Operations Management, and Retail Management.</p>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin:12px 0">
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#f5f3ff;color:#7c3aed;border:1px solid #ddd6fe">Business Analytics</span>
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#f5f3ff;color:#7c3aed;border:1px solid #ddd6fe">Data Science</span>
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#f5f3ff;color:#7c3aed;border:1px solid #ddd6fe">Digital Marketing Mgmt</span>
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#ecfdf5;color:#059669;border:1px solid #a7f3d0">Healthcare Mgmt</span>
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe">Finance &amp; Accounting</span>
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe">HR Analytics</span>
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe">International Finance (ACCA)</span>
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#ecfdf5;color:#059669;border:1px solid #a7f3d0">Digital Entrepreneurship</span>
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe">HR Management</span>
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#f5f3ff;color:#7c3aed;border:1px solid #ddd6fe">IT Management</span>
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe">Marketing &amp; Sales</span>
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe">Insurance Management</span>
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe">International Business</span>
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe">Production &amp; Operations</span>
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe">Retail Management</span>
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe">Hospitality Management</span>
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe">General Management</span>
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe">Global Finance Market</span>
+  <span style="font-size:12px;padding:4px 10px;border-radius:20px;background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe">Entrepreneurship &amp; Leadership</span>
+</div>
+
+<h2 style="font-size:21px;font-weight:800;color:#1a1a2e;margin:44px 0 14px;padding-bottom:8px;border-bottom:2px solid #eff6ff">What Genuinely Sets Amity Apart</h2>
+
+<p><strong>International accreditation nobody else has.</strong> Amity holds both WASC (Western Association of Schools and Colleges, USA) and QAA (Quality Assurance Agency, UK) accreditations for its online MBA. No other Indian online MBA provider has both at the same time. This matters specifically if you're planning to move to Canada or the USA — your degree needs WES credential evaluation, and Amity's accreditations support that process cleanly.</p>
+
+<p><strong>The ACCA integration is real.</strong> The International Finance specialization is co-approved by ACCA UK. Students completing this track receive exemptions from several ACCA exams. Only Amity, JAIN Online, and Amrita offer this in India currently.</p>
+
+<p><strong>QS Asia Pacific Top 10 is a verifiable rank.</strong> The QS ranking specifically for online MBA programmes in the Asia Pacific region placed Amity in the top 10. This is category-specific and internationally recognized — not a general university ranking.</p>
+
+<blockquote style="border-left:4px solid #2563eb;padding:12px 20px;margin:24px 0;background:#eff6ff;border-radius:0 6px 6px 0;font-size:15px;font-style:italic;color:#4a4a6a">The WASC and QAA accreditations are the real differentiators. Everything else — the NAAC grade, UGC-DEB approval — you can get elsewhere. Those two you can't.</blockquote>
+
+<h2 style="font-size:21px;font-weight:800;color:#1a1a2e;margin:44px 0 14px;padding-bottom:8px;border-bottom:2px solid #eff6ff">Amity University Noida MBA Fees and Placement</h2>
+
+<p>The full-time campus MBA at Amity Business School, Noida is a different product entirely:</p>
+
+<table style="width:100%;border-collapse:collapse;margin:20px 0;font-size:14px;border-radius:10px;overflow:hidden;border:1px solid #e5e7eb">
+  <thead><tr><th style="background:#1a1a2e;color:#fff;padding:12px 14px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase">Component</th><th style="background:#1a1a2e;color:#fff;padding:12px 14px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase">Amount</th><th style="background:#1a1a2e;color:#fff;padding:12px 14px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase">Notes</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Total Tuition (full-time MBA)</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb"><span style="background:#eff6ff;color:#2563eb;font-weight:700;font-size:13px;padding:3px 8px;border-radius:4px">₹6.4L – ₹15.8L</span></td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Varies by specialization</td></tr>
+    <tr style="background:#f7f7fb;font-weight:700"><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb"><strong>MBA Average Package (2024)</strong></td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb"><strong>₹7.35 LPA</strong></td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">202 recruiters, 105 new</td></tr>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">MBA Highest Package (2024)</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb"><span style="background:#eff6ff;color:#2563eb;font-weight:700;font-size:13px;padding:3px 8px;border-radius:4px">₹26.30 LPA</span></td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Finance domain; not representative</td></tr>
+    <tr style="background:#f7f7fb"><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">Median Package</td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb"><span style="background:#eff6ff;color:#2563eb;font-weight:700;font-size:13px;padding:3px 8px;border-radius:4px">₹6.50 LPA</span></td><td style="padding:12px 14px;border-bottom:1px solid #e5e7eb">More representative than highest</td></tr>
+    <tr><td style="padding:12px 14px">NIRF Management Rank</td><td style="padding:12px 14px">~#49 (2025)</td><td style="padding:12px 14px">National Institutional Ranking Framework</td></tr>
+  </tbody>
+</table>
+
+<p>The ₹26.30 LPA highest package figure gets quoted everywhere. Plan around the <strong>median of ₹6.50 LPA</strong> when thinking about ROI on a ₹6–15L campus programme. The 202 recruiters figure is healthy for a private university, with companies across tech, BFSI, consulting, and FMCG sectors participating.</p>
+
+<h2 style="font-size:21px;font-weight:800;color:#1a1a2e;margin:44px 0 14px;padding-bottom:8px;border-bottom:2px solid #eff6ff">How Amity Compares: Fee vs Brand vs Accreditation</h2>
+
+<div style="margin:28px 0;text-align:center">
+  <svg viewBox="0 0 660 380" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:100%;height:auto">
+    <defs>
+      <linearGradient id="amcg1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+      <linearGradient id="amcg2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#fbbf24"/></linearGradient>
+      <linearGradient id="amcg3" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#059669"/><stop offset="100%" stop-color="#34d399"/></linearGradient>
+    </defs>
+    <rect width="660" height="380" fill="#f7f7fb" rx="12"/>
+    <text x="330" y="26" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#1a1a2e">Online MBA Total Fee Comparison — Where Amity Sits (2026)</text>
+    <line x1="160" y1="46" x2="160" y2="348" stroke="#d1d5db" stroke-width="1.5"/>
+    <text x="152" y="70" text-anchor="end" font-family="system-ui" font-size="11" fill="#4a4a6a">Galgotias Online</text>
+    <rect x="164" y="56" width="89" height="20" rx="3" fill="url(#amcg3)" opacity=".85"/>
+    <text x="259" y="71" font-family="system-ui" font-size="10" font-weight="700" fill="#065f46">₹76,200</text>
+    <text x="152" y="106" text-anchor="end" font-family="system-ui" font-size="11" fill="#4a4a6a">Vignan Online</text>
+    <rect x="164" y="92" width="105" height="20" rx="3" fill="url(#amcg3)" opacity=".8"/>
+    <text x="275" y="107" font-family="system-ui" font-size="10" font-weight="700" fill="#065f46">₹90,000</text>
+    <text x="152" y="142" text-anchor="end" font-family="system-ui" font-size="11" fill="#4a4a6a">SMU Manipal</text>
+    <rect x="164" y="128" width="128" height="20" rx="3" fill="url(#amcg1)" opacity=".75"/>
+    <text x="298" y="143" font-family="system-ui" font-size="10" font-weight="700" fill="#1e40af">₹1,10,000</text>
+    <text x="152" y="178" text-anchor="end" font-family="system-ui" font-size="11" fill="#4a4a6a">CU Online</text>
+    <rect x="164" y="164" width="193" height="20" rx="3" fill="url(#amcg1)" opacity=".85"/>
+    <text x="363" y="179" font-family="system-ui" font-size="10" font-weight="700" fill="#1e40af">₹1,65,000</text>
+    <text x="152" y="214" text-anchor="end" font-family="system-ui" font-size="11" fill="#4a4a6a">NMIMS Online</text>
+    <rect x="164" y="200" width="229" height="20" rx="3" fill="url(#amcg1)" opacity=".85"/>
+    <text x="399" y="215" font-family="system-ui" font-size="10" font-weight="700" fill="#1e40af">₹1,96,000</text>
+    <text x="152" y="250" text-anchor="end" font-family="system-ui" font-size="12" font-weight="800" fill="#1a1a2e">Amity Online ★</text>
+    <rect x="164" y="236" width="233" height="22" rx="3" fill="url(#amcg2)" opacity=".95"/>
+    <text x="403" y="252" font-family="system-ui" font-size="11" font-weight="800" fill="#92400e">₹1,99,000</text>
+    <text x="152" y="288" text-anchor="end" font-family="system-ui" font-size="11" fill="#4a4a6a">DY Patil Online</text>
+    <rect x="164" y="274" width="233" height="20" rx="3" fill="url(#amcg1)" opacity=".8"/>
+    <text x="403" y="289" font-family="system-ui" font-size="10" font-weight="700" fill="#1e40af">₹1,89,400</text>
+    <text x="152" y="326" text-anchor="end" font-family="system-ui" font-size="11" fill="#4a4a6a">Symbiosis SSODL</text>
+    <rect x="164" y="312" width="310" height="20" rx="3" fill="url(#amcg2)" opacity=".7"/>
+    <text x="480" y="327" font-family="system-ui" font-size="10" font-weight="700" fill="#92400e">₹2,65,000 (net)</text>
+    <text x="330" y="362" text-anchor="middle" font-family="system-ui" font-size="10" fill="#9ca3af">★ Amity includes WASC+QAA international accreditations and 19 specializations. Fees approx. Verify before applying.</text>
+  </svg>
+  <div style="font-size:12px;color:#7a7a9a;text-align:center;margin-top:6px">Amity Online MBA sits in the upper-mid fee range — less than Symbiosis, more than LPU or CU Online — with international accreditations others don't have.</div>
+</div>
+
+<table style="width:100%;border-collapse:collapse;margin:20px 0;font-size:13px;border-radius:10px;overflow:hidden;border:1px solid #e5e7eb">
+  <thead><tr><th style="background:#1a1a2e;color:#fff;padding:10px 12px;text-align:left;font-size:11px;font-weight:700;text-transform:uppercase">University</th><th style="background:#1a1a2e;color:#fff;padding:10px 12px;text-align:left;font-size:11px;font-weight:700;text-transform:uppercase">Total Fee</th><th style="background:#1a1a2e;color:#fff;padding:10px 12px;text-align:left;font-size:11px;font-weight:700;text-transform:uppercase">NAAC</th><th style="background:#1a1a2e;color:#fff;padding:10px 12px;text-align:left;font-size:11px;font-weight:700;text-transform:uppercase">Specs</th><th style="background:#1a1a2e;color:#fff;padding:10px 12px;text-align:left;font-size:11px;font-weight:700;text-transform:uppercase">Key Differentiator</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb"><a href="/blog/galgotias-online-mba-review" style="color:#2563eb">Galgotias Online</a></td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">₹76,200</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">A+</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">7</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">Lowest fee, UGC-DEB valid</td></tr>
+    <tr style="background:#f7f7fb"><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb"><a href="/blog/arka-jain-online-mba-review" style="color:#2563eb">ARKA JAIN (JGI)</a></td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">₹1,08,500</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">A+</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">3</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">Gen AI in Sem 1 curriculum</td></tr>
+    <tr><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb"><a href="/blog/smu-online-mba-review" style="color:#2563eb">SMU Manipal</a></td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">₹1,10,000</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">A+</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">6 (Dual)</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">Mandatory dual specialization</td></tr>
+    <tr style="background:#f7f7fb"><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb"><a href="/blog/chandigarh-university-online-mba-review" style="color:#2563eb">Chandigarh Univ</a></td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">₹1,65,000</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">A+</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">23</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">Harvard+PwC+PMI certs</td></tr>
+    <tr><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb"><a href="/blog/dy-patil-online-mba-review" style="color:#2563eb">DY Patil Online</a></td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">₹1,89,400</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">A++</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">15</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">WES recognized, Blockchain, edX</td></tr>
+    <tr style="background:#fef9c3;font-weight:700"><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">★ Amity Online</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">₹1,99,000</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">A+</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">19</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">WASC+QAA+WES, QS Asia Top 10</td></tr>
+    <tr><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">NMIMS Online</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">₹1,96,000</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">A+</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">5</td><td style="padding:10px 12px;border-bottom:1px solid #e5e7eb">Highest corporate acceptance BFSI</td></tr>
+    <tr style="background:#f7f7fb"><td style="padding:10px 12px">Symbiosis SSODL</td><td style="padding:10px 12px">₹2,65,000*</td><td style="padding:10px 12px">A++</td><td style="padding:10px 12px">9</td><td style="padding:10px 12px">Brand for HR/Finance MNCs</td></tr>
+  </tbody>
+</table>
+
+<h2 style="font-size:21px;font-weight:800;color:#1a1a2e;margin:44px 0 14px;padding-bottom:8px;border-bottom:2px solid #eff6ff">Honest Assessment</h2>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0">
+  <div style="background:#ecfdf5;border:1px solid #a7f3d0;border-radius:6px;padding:16px">
+    <h4 style="color:#059669;margin:0 0 10px;font-size:14px;font-weight:700;text-transform:uppercase">✓ What Works</h4>
+    <ul style="list-style:none;padding:0;margin:0;font-size:13px">
+      <li style="padding:4px 0;display:flex;gap:7px;align-items:flex-start"><span style="color:#059669;font-weight:800;flex-shrink:0">✓</span>WASC (USA) + QAA (UK) — no other Indian online MBA has both</li>
+      <li style="padding:4px 0;display:flex;gap:7px;align-items:flex-start"><span style="color:#059669;font-weight:800;flex-shrink:0">✓</span>WES recognized — supports Canadian immigration credential evaluation</li>
+      <li style="padding:4px 0;display:flex;gap:7px;align-items:flex-start"><span style="color:#059669;font-weight:800;flex-shrink:0">✓</span>ACCA integration (International Finance) — exam exemptions</li>
+      <li style="padding:4px 0;display:flex;gap:7px;align-items:flex-start"><span style="color:#059669;font-weight:800;flex-shrink:0">✓</span>19 specializations including HR Analytics, Healthcare, Hospitality</li>
+      <li style="padding:4px 0;display:flex;gap:7px;align-items:flex-start"><span style="color:#059669;font-weight:800;flex-shrink:0">✓</span>QS Asia Pacific Top 10 for online MBA — internationally verifiable</li>
+      <li style="padding:4px 0;display:flex;gap:7px;align-items:flex-start"><span style="color:#059669;font-weight:800;flex-shrink:0">✓</span>Eligibility at 40% — accessible for more students than NMIMS (50%)</li>
+    </ul>
+  </div>
+  <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:6px;padding:16px">
+    <h4 style="color:#dc2626;margin:0 0 10px;font-size:14px;font-weight:700;text-transform:uppercase">⚠ Watch Out</h4>
+    <ul style="list-style:none;padding:0;margin:0;font-size:13px">
+      <li style="padding:4px 0;display:flex;gap:7px;align-items:flex-start"><span style="color:#dc2626;font-weight:800;flex-shrink:0">!</span>NIRF #49 — below Symbiosis (#32), strong brand recall programmes</li>
+      <li style="padding:4px 0;display:flex;gap:7px;align-items:flex-start"><span style="color:#dc2626;font-weight:800;flex-shrink:0">!</span>₹1.99L is mid-to-upper cost; NAAC A++ options (JAIN) cost less</li>
+      <li style="padding:4px 0;display:flex;gap:7px;align-items:flex-start"><span style="color:#dc2626;font-weight:800;flex-shrink:0">!</span>ACCA/Dual spec at ₹2.99L — big jump; clarify before choosing</li>
+      <li style="padding:4px 0;display:flex;gap:7px;align-items:flex-start"><span style="color:#dc2626;font-weight:800;flex-shrink:0">!</span>Brand recognition stronger in Delhi-NCR, North India vs South/West</li>
+      <li style="padding:4px 0;display:flex;gap:7px;align-items:flex-start"><span style="color:#dc2626;font-weight:800;flex-shrink:0">!</span>Campus MBA placement data should not be confused with online MBA outcomes</li>
+    </ul>
+  </div>
+</div>
+
+<div style="background:linear-gradient(135deg,#1e3a8a 0%,#2563eb 100%);border-radius:10px;padding:28px 30px;color:#fff;margin:36px 0;text-align:center">
+  <h3 style="color:#fff;font-size:20px;margin:0 0 8px">Comparing Amity against 3–4 other options?</h3>
+  <p style="color:rgba(255,255,255,.85);font-size:15px;margin:0 0 18px">Our independent advisors help match programme to career goal — for free. No referral commissions from any university.</p>
+  <a href="/compare" style="display:inline-block;background:#fff;color:#2563eb;font-weight:700;font-size:15px;padding:12px 28px;border-radius:6px;text-decoration:none">Compare Online MBAs</a>
+</div>
+
+<h2 style="font-size:21px;font-weight:800;color:#1a1a2e;margin:44px 0 14px;padding-bottom:8px;border-bottom:2px solid #eff6ff">Who Should Choose Amity Online MBA</h2>
+
+<p>Amity makes the most sense for three specific profiles. First, anyone planning to work or study abroad — Canada, UK, Australia, USA — where WES credential evaluation and WASC/QAA accreditations matter. Second, professionals pursuing ACCA qualification alongside their MBA, where the International Finance track reduces ACCA exams needed. Third, students needing a programme with 19+ specializations at a mid-range price with strong international recognition.</p>
+
+<p>This won't be the right fit if you're purely targeting BFSI roles in India where the NMIMS brand commands a premium. It also won't be optimal if you're budget-constrained — <a href="/blog/galgotias-online-mba-review" style="color:#2563eb">Galgotias</a>, Vignan, and <a href="/blog/arka-jain-online-mba-review" style="color:#2563eb">ARKA JAIN</a> deliver UGC-DEB valid degrees at under ₹1.10 lakh. Amity's premium is the international accreditation stack and specific employer segment recognition.</p>
+
+<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
+  <p style="font-size:16px;font-weight:700;color:#9a3412;margin:0 0 8px">Not sure Amity is the right fit for your goals?</p>
+  <p style="font-size:14px;color:#64748b;margin:0 0 18px">Our counsellors compare Amity against NMIMS, JAIN, Symbiosis and others based on your sector, location, and target employer — free guidance.</p>
+  <a href="/contact" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Get Free Counselling</a>
+</div>
+
+<p style="font-size:14px;color:#64748b;margin:16px 0">Also read: <a href="/blog/chandigarh-university-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">CU Online MBA</a> — Harvard+PwC+PMI · <a href="/blog/dy-patil-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">DY Patil MBA</a> — WES recognized · <a href="/blog/smu-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">SMU Manipal MBA</a> — dual spec · <a href="/blog" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">All MBA Reviews</a></p>
+
+<div style="font-size:12px;color:#7a7a9a;border-top:1px solid #e5e7eb;padding-top:14px;margin-top:40px">
+  <strong>Disclaimer:</strong> This is an independent information resource. All fee data sourced from official university portals as of April 2026 and may change. NIRF ranks from Management category 2025. Placement data from publicly available 2024 placement reports. Verify all fees, scholarship availability, and UGC-DEB approval at deb.ugc.ac.in and amityonline.com before applying. No university paid for placement in this article. EdifyEdu does not accept referral commissions from any university.
+</div>`,
+  },
 ]
 
 export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))
