@@ -2,16 +2,22 @@ import { Video, Users, MonitorPlay, FileText, ShieldCheck } from 'lucide-react'
 
 interface Props {
   program?: string
+  universityName?: string
+  specialization?: string
 }
 
-export default function LearningExperience({ program }: Props) {
+export default function LearningExperience({ program, universityName, specialization }: Props) {
   const isMBA = program && program.toLowerCase() === 'mba'
-  
+  const progLabel = program ? `Online ${program}` : 'Online Degree'
+  const h2 = universityName
+    ? `How ${universityName} Delivers ${progLabel} — Classes & Schedule`
+    : `Online ${progLabel} Learning Format — Classes & Schedule`
+
   return (
     <section className="card-lg p-6">
       <div className="mb-6">
         <h2 className="font-display text-xl font-bold text-navy">
-          How Classes are Conducted
+          {h2}
         </h2>
         <p className="text-sm text-ink-2 mt-2">
           Experience a world-class blended learning approach optimally designed for working professionals to balance work and study.

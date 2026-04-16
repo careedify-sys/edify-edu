@@ -260,7 +260,7 @@ export default function SpecializationPageClient({ university: u, program, speci
                 <section id="syllabus" className="scroll-mt-24 mb-16 card-lg relative overflow-hidden">
                   <h2 className="text-2xl font-bold text-navy mb-6 flex items-center gap-2 px-6 pt-6">
                     <BookOpen className="text-amber" size={24} />
-                    Syllabus
+                    {cleanName} {progInfo.name} in {specialization} — Semester-wise Syllabus 2026
                   </h2>
                   <div className="relative border-t border-border p-8 text-center bg-slate-50 flex flex-col items-center justify-center min-h-[280px]">
                     <div className="absolute inset-0 bg-gradient-to-b from-white/40 to-white/90 z-10 blur-[1px]"></div>
@@ -293,7 +293,7 @@ export default function SpecializationPageClient({ university: u, program, speci
               )}
 
               {/* Learning Experience */}
-              <LearningExperience program={program} />
+              <LearningExperience program={program} universityName={cleanName} specialization={specialization} />
 
               {/* Edify Recommends */}
               {((specContent as any)?.skills?.length > 0 || (specContent as any)?.projectIdeas?.length > 0 || (specContent as any)?.internships?.length > 0) && (

@@ -14,7 +14,7 @@ const PM: Record<string, Program> = {
   'online-ma': 'MA', 'online-msc': 'MSc',
 }
 
-const toSlug = (s: string) => s.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
+const toSlug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 
 // Pages render on demand (dynamicParams = true below); no static pre-generation
 // to avoid build-time OOM. ISR caches each page after first render.
