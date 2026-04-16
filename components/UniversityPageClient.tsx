@@ -8,6 +8,7 @@ import {
 import { getUniversitiesByProgram, formatFeeSlim as formatFee } from '@/lib/data-slim'
 import { cleanCareerOutcome } from '@/lib/format'
 import { getProgramContent } from '@/lib/content'
+import { SAMPLE_DEGREES, getSampleDegree } from '@/lib/sample-degrees'
 import type { Program, University } from '@/lib/data'
 import EnquiryModal from '@/components/EnquiryModal'
 import ApprovalBadges from '@/components/ApprovalBadges'
@@ -383,6 +384,44 @@ export default function UniversityPageClient({ university: u }: Props) {
                   </div>
                 </section>
               )}
+
+              {/* Sample Degree Certificate — only shown for universities with configured SVGs */}
+              {SAMPLE_DEGREES[u.id] && (() => {
+                const degreeUrl = getSampleDegree(u.id, displayProgram)
+                return (
+                  <section className="card-lg p-6">
+                    <div className="text-[11px] font-bold text-amber uppercase tracking-widest mb-1">Authentic Degree Preview</div>
+                    <h2 className="font-display text-xl font-bold text-navy mb-2">Sample Degree Certificate</h2>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                      <div>
+                        <img
+                          src={degreeUrl}
+                          alt={`Sample degree certificate from ${u.name}`}
+                          loading="lazy"
+                          className="rounded-xl border border-slate-200 shadow-md hover:shadow-lg transition-shadow max-w-md w-full"
+                        />
+                      </div>
+                      <div>
+                        <p className="text-[15px] text-ink-2 leading-relaxed">
+                          This is the actual degree certificate awarded by <strong className="text-navy">{cleanName}</strong> upon successful completion of the online {displayProgram} program. UGC DEB approved and fully valid for all corporate hiring, government job applications, and higher education admissions.
+                        </p>
+                        <ul className="mt-4 space-y-2">
+                          {[
+                            'Equivalent to a regular campus degree under UGC DEB regulations 2020',
+                            'Accepted for PSU eligibility and government recruitment',
+                            'Valid for further studies including PhD admissions',
+                          ].map(point => (
+                            <li key={point} className="flex items-start gap-2 text-sm text-ink-2">
+                              <CheckCircle size={15} className="text-green-500 shrink-0 mt-0.5" />
+                              {point}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </section>
+                )
+              })()}
 
               {/* Admissions Open Banner */}
               <section className="card-lg p-6" style={{ background: 'linear-gradient(135deg, #0B1D35, #142540)', border: '1px solid rgba(200,129,26,0.3)' }}>
