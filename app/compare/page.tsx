@@ -115,55 +115,57 @@ export default async function ComparePage(
 ) {
   // searchParams consumed by generateMetadata above; page content is the same for all pairs
   return (
-    <div className="bg-slate-50">
+    <div className="bg-slate-100">
 
       {/* ── HERO — clean, focused ──────────────────────────────────────────── */}
       <div style={{ background: 'linear-gradient(160deg, #0d2240 0%, #1b3454 100%)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-10 pb-10 sm:pt-14 sm:pb-12 text-center">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-amber-500/40 bg-amber-500/10 text-amber-400 text-[11px] font-semibold mb-5">
+          <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-amber-400/50 bg-amber-400/20 text-amber-300 text-[11px] font-bold uppercase tracking-wider mb-5">
             Updated for July 2026 Admission Session
           </span>
           <h1 className="font-display text-2xl sm:text-[2.2rem] font-bold text-white mb-3 leading-tight">
             Compare Online MBA &amp; MCA Universities 2026
           </h1>
-          <p className="text-white/70 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+          <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
             Side-by-side fees, NIRF rankings, NAAC grades and semester-wise syllabus for 125+ UGC DEB approved universities — so you decide with data, not guesswork.
           </p>
         </div>
       </div>
 
-      {/* ── POPULAR COMPARISONS — white card on slate bg ──────────────────── */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
-        <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8">
-          <p className="text-xs font-semibold text-amber-600 uppercase tracking-widest mb-1">Quick Start</p>
+      {/* ── POPULAR COMPARISONS ───────────────────────────────────────────── */}
+      <div className="border-t border-slate-200 max-w-6xl mx-auto px-4 sm:px-6 py-10">
+        <div className="bg-white rounded-2xl border border-slate-200 shadow-md p-6 sm:p-8">
+          <p className="text-xs font-semibold text-orange-500 uppercase tracking-widest mb-1">Quick Start</p>
           <h2 className="font-display text-lg font-bold text-slate-800 mb-6">Popular University Comparisons</h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">Online MBA</p>
-              <div className="space-y-1.5">
+              <p className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-1">Online MBA</p>
+              <div className="w-8 h-0.5 bg-orange-500 mb-4" />
+              <div className="space-y-2">
                 {MBA_PAIRS.map(pair => (
                   <Link
                     key={pair.href}
                     href={pair.href}
-                    className="flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-100 hover:border-amber-300 hover:bg-amber-50 transition-all group no-underline"
+                    className="flex items-center justify-between px-4 py-3.5 rounded-xl border border-slate-200 hover:border-orange-300 hover:bg-orange-50/30 transition-all group no-underline"
                   >
                     <span className="text-sm font-medium text-slate-700 group-hover:text-slate-900">{pair.label}</span>
-                    <ChevronRight size={14} className="text-slate-300 group-hover:text-amber-500 flex-shrink-0 ml-2" />
+                    <ChevronRight size={14} className="text-slate-300 group-hover:text-orange-500 flex-shrink-0 ml-2 transition-colors" />
                   </Link>
                 ))}
               </div>
             </div>
             <div>
-              <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">Online MCA</p>
-              <div className="space-y-1.5">
+              <p className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-1">Online MCA</p>
+              <div className="w-8 h-0.5 bg-orange-500 mb-4" />
+              <div className="space-y-2">
                 {MCA_PAIRS.map(pair => (
                   <Link
                     key={pair.href}
                     href={pair.href}
-                    className="flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-100 hover:border-amber-300 hover:bg-amber-50 transition-all group no-underline"
+                    className="flex items-center justify-between px-4 py-3.5 rounded-xl border border-slate-200 hover:border-orange-300 hover:bg-orange-50/30 transition-all group no-underline"
                   >
                     <span className="text-sm font-medium text-slate-700 group-hover:text-slate-900">{pair.label}</span>
-                    <ChevronRight size={14} className="text-slate-300 group-hover:text-amber-500 flex-shrink-0 ml-2" />
+                    <ChevronRight size={14} className="text-slate-300 group-hover:text-orange-500 flex-shrink-0 ml-2 transition-colors" />
                   </Link>
                 ))}
               </div>

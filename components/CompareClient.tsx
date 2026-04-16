@@ -801,7 +801,7 @@ function CompareContent() {
   }
 
   return (
-    <div className="pb-10 bg-slate-50">
+    <div className="pb-10 bg-slate-100">
       {universities.length >= 2 && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
           '@context':'https://schema.org','@type':'Article',
