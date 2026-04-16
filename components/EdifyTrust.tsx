@@ -77,7 +77,7 @@ export default function EdifyTrust({ compact = false }: { compact?: boolean }) {
             <h2 style={{ fontSize:'clamp(1.4rem,3.5vw,2rem)',fontWeight:800,color:'#fff', margin:'0 0 12px',lineHeight:1.2 }}>
               We Evaluate 3–4 Stages Before Recommending Any University
             </h2>
-            <p style={{fontSize:14,color:'var(--ink-4)',maxWidth:540,margin:'0 auto',lineHeight:1.6}}>
+            <p style={{fontSize:14,color:'rgba(255,255,255,0.75)',maxWidth:540,margin:'0 auto',lineHeight:1.6}}>
               Most platforms list whoever pays them. Edify is different — our rankings are 100% NIRF-based with zero paid placements.
             </p>
           </div>
@@ -89,7 +89,7 @@ export default function EdifyTrust({ compact = false }: { compact?: boolean }) {
                 <div style={{ position:'absolute',top:12,right:14, fontSize:28,fontWeight:900,color:'rgba(255,255,255,0.04)', fontFamily:'serif',lineHeight:1 }}>{s.num}</div>
                 <div className="text-2xl mb-2.5">{s.icon}</div>
                 <div className="text-[13px] font-bold text-white mb-1.5">{s.title}</div>
-                <div style={{fontSize:12,color:'var(--ink-4)',lineHeight:1.65}}>{s.desc}</div>
+                <div style={{fontSize:12,color:'rgba(255,255,255,0.75)',lineHeight:1.65}}>{s.desc}</div>
                 {i < STAGES.length - 1 && (
                   <div style={{ position:'absolute',top:'50%',right:-8, width:16,height:2,background:'rgba(200,129,26,0.4)', display:'none' }}/>
                 )}
@@ -99,7 +99,7 @@ export default function EdifyTrust({ compact = false }: { compact?: boolean }) {
 
           {/* Bottom CTA */}
           <div className="text-center">
-            <div className="text-xs text-ink-3 mb-3.5">
+            <div className="text-xs mb-3.5" style={{ color:'rgba(255,255,255,0.65)' }}>
               ✓ Free · No spam &nbsp;·&nbsp; ✓ Advisor responds within 1 hour &nbsp;·&nbsp; ✓ No obligation
             </div>
             <button onClick={() => setOpen(true)} style={{ padding:'14px 32px',borderRadius:'var(--r-sm)', background:'linear-gradient(135deg,#c9922a,#e0a93a)', color:'#fff',fontWeight:700,fontSize:14,border:'none',cursor:'pointer', boxShadow:'0 4px 24px rgba(201,146,42,0.4)' }}>

@@ -115,7 +115,7 @@ export default function HomePage() {
               Online Universities India 2026
             </h1>
 
-            <p style={{ fontSize:'16px', lineHeight:'1.75', color:'rgba(255,255,255,0.55)', maxWidth:'560px', margin:'0 auto 36px' }}>
+            <p style={{ fontSize:'16px', lineHeight:'1.75', color:'rgba(255,255,255,0.75)', maxWidth:'560px', margin:'0 auto 36px' }}>
               We don't accept payments from universities. All rankings based on official NIRF data only. {totalUnis}+ UGC DEB approved universities compared honestly.
             </p>
 
@@ -128,7 +128,7 @@ export default function HomePage() {
               ].map(s => (
                 <div key={s.n} className="text-center">
                   <div style={{ fontFamily:"'Fraunces',serif", fontSize:'26px', fontWeight:800, color:'#fff', lineHeight:1 }}>{s.n}</div>
-                  <div style={{ fontSize:'11px', color:'rgba(255,255,255,0.35)', marginTop:'4px' }}>{s.label}</div>
+                  <div style={{ fontSize:'11px', color:'rgba(255,255,255,0.65)', marginTop:'4px' }}>{s.label}</div>
                 </div>
               ))}
             </div>
@@ -340,7 +340,7 @@ export default function HomePage() {
           <h2 style={{ fontFamily:"'Fraunces',serif", fontSize:'clamp(1.5rem,4vw,2.2rem)', fontWeight:800, color:'#fff', marginBottom:'12px' }}>
             India&apos;s Most Trusted Online Degree Guide
           </h2>
-          <p style={{ color:'rgba(255,255,255,0.4)', maxWidth:'480px', margin:'0 auto 48px', fontSize:'14px', lineHeight:'1.7' }}>
+          <p style={{ color:'rgba(255,255,255,0.7)', maxWidth:'480px', margin:'0 auto 48px', fontSize:'14px', lineHeight:'1.7' }}>
             All data verified from official UGC, NAAC, and NIRF portals. Updated quarterly.
           </p>
           <div style={{ display:'flex', flexWrap:'wrap', justifyContent:'center', gap:'24px', maxWidth:'800px', margin:'0 auto' }}>
@@ -358,7 +358,7 @@ export default function HomePage() {
                 <div style={{ fontFamily:"'Fraunces',serif", fontSize:'2.5rem', fontWeight:800, color:'#fff', lineHeight:1.1, marginBottom:'4px' }}>
                   {s.n}
                 </div>
-                <div style={{ fontSize:'12px', color:'rgba(255,255,255,0.35)', fontWeight:600 }}>
+                <div style={{ fontSize:'12px', color:'rgba(255,255,255,0.7)', fontWeight:600 }}>
                   {s.label}
                 </div>
               </div>

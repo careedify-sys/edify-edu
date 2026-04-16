@@ -89,7 +89,7 @@ export function ExitIntentPopup() {
             <h2 style={{fontSize:20,fontWeight:800,color:'#fff',lineHeight:1.3,margin:'0 0 8px'}}>
               Get a personalised university shortlist in 2 minutes
             </h2>
-            <p style={{fontSize:13,color:'var(--ink-4)',lineHeight:1.6,margin:0}}>
+            <p style={{fontSize:13,color:'rgba(255,255,255,0.75)',lineHeight:1.6,margin:0}}>
               Free. No spam. Edify evaluates your goals, budget & eligibility before recommending — zero paid placements.
             </p>
           </div>

@@ -120,7 +120,7 @@ export default async function ComparePage(
       {/* ── HERO — clean, focused ──────────────────────────────────────────── */}
       <div style={{ background: 'linear-gradient(160deg, #0d2240 0%, #1b3454 100%)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-10 pb-10 sm:pt-14 sm:pb-12 text-center">
-          <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-amber-500 text-slate-900 text-[11px] font-bold uppercase tracking-wider mb-5">
+          <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-amber-400/30 bg-amber-500/10 text-amber-300 text-[11px] font-semibold uppercase tracking-wider mb-5">
             Updated for July 2026 Admission Session
           </span>
           <h1 className="font-display text-2xl sm:text-[2.2rem] font-bold text-white mb-3 leading-tight">
@@ -193,7 +193,7 @@ export default async function ComparePage(
                 <item.icon size={20} className="text-amber-400 mx-auto mb-2" />
                 <p className="text-2xl sm:text-3xl font-bold text-amber-400">{item.stat}</p>
                 <p className="text-white text-xs sm:text-sm font-semibold mt-1">{item.label}</p>
-                <p className="text-slate-400 text-[11px] mt-0.5">{item.sub}</p>
+                <p className="text-slate-300 text-[11px] mt-0.5">{item.sub}</p>
               </div>
             ))}
           </div>

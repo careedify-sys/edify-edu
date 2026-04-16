@@ -1,3 +1,24 @@
+/* ================================================================
+   DARK BACKGROUND TEXT COLOR RULES — read before editing
+   ================================================================
+   On bg-navy / bg-slate-900 / #0B1D35 / #0d2240 sections:
+
+   NEVER USE:
+   - text-slate-{400-900}  (grey on dark = invisible)
+   - text-gray-{400-900}   (same problem)
+   - text-ink-4 / var(--ink-4)  (#6B7E92 — designed for light bg)
+   - text-white with opacity below /60
+
+   USE INSTEAD:
+   - Headings (H1-H3):        text-white
+   - Body / paragraphs:       rgba(255,255,255,0.75) or text-white/75
+   - Muted / secondary:       rgba(255,255,255,0.65) or text-slate-300
+   - Eyebrow / accent labels: text-amber-400 or var(--amber-vivid)
+   - Stat numbers:            text-white font-bold
+   - Icons:                   text-amber-400 or text-white/80
+   - Pills on dark bg:        bg-amber-500/10 border border-amber-400/30 text-amber-300
+   ================================================================ */
+
 /* ═══════════════════════════════════════════════════════════════
    EDIFY — Neuroscience-Informed Design System v4
    
@@ -604,7 +625,7 @@ details summary::-webkit-details-marker { display: none; }
 .prose-article .compare-header { background: #0f172a; padding: 14px 20px; display: grid; grid-template-columns: 1fr 1fr; }
 .prose-article .compare-header div { font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 0 8px; }
 .prose-article .ch-a { color: #f59e0b; }
-.prose-article .ch-b { color: rgba(255,255,255,0.4); }
+.prose-article .ch-b { color: rgba(255,255,255,0.85); }
 .prose-article .compare-row { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid #e2e8f0; }
 .prose-article .compare-row:last-child { border-bottom: none; }
 .prose-article .compare-row div { padding: 11px 18px; font-size: 13.5px; color: #334155; display: flex; align-items: flex-start; gap: 8px; line-height: 1.5; margin: 0; }
