@@ -172,7 +172,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main
           id="main-content"
           style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}
-          className="pb-16 sm:pb-0"
+          className="pb-20 lg:pb-0"
         >
           {children}
         </main>

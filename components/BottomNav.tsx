@@ -19,7 +19,7 @@ export default function BottomNav() {
 
   return (
     <nav
-      className="sm:hidden"
+      className="lg:hidden"
       style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 80, background: '#fff', borderTop: '1px solid var(--border)', paddingBottom: 'env(safe-area-inset-bottom)', boxShadow: '0 -4px 20px rgba(11,29,53,0.08)', display: 'flex', }}>
       {TABS.map(tab => {
         const active = path === tab.href || (tab.href !== '/' && path.startsWith(tab.href))

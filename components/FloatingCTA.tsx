@@ -11,7 +11,7 @@ export default function FloatingCTA() {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="floating-cta fixed left-4 bottom-[80px] sm:left-auto sm:right-5 sm:bottom-6 md:bottom-8 z-[60] flex items-center gap-2 sm:pl-4 sm:pr-5 sm:py-3.5 p-3.5 rounded-full shadow-xl font-bold text-sm transition-all hover:scale-105 active:scale-95"
+        className="floating-cta hidden lg:flex fixed right-6 bottom-6 z-[60] items-center gap-2 pl-4 pr-5 py-3.5 rounded-full shadow-xl font-bold text-sm transition-all hover:scale-105 active:scale-95"
         style={{ background:'linear-gradient(135deg,var(--amber),var(--amber-bright))', color:'var(--navy)', boxShadow: 'var(--shadow-amber)' }}
         aria-label="Speak with an Advisor"
       >
