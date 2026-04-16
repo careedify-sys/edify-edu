@@ -204,12 +204,12 @@ export default function UniversityPageClient({ university: u }: Props) {
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                     Talk to Alumni
                   </button>
-                  <Link
-                    href={compareUrl}
-                    style={{padding:'13px 20px',borderRadius:'var(--r-sm)',border:'1px solid #1e2f45',color:'var(--ink-4)',fontSize:13,fontWeight:600,textDecoration:'none',display:'flex',alignItems:'center',gap:6}}
+                  <button
+                    onClick={() => { window.location.href = compareUrl }}
+                    style={{padding:'13px 20px',borderRadius:'var(--r-sm)',border:'1px solid #1e2f45',color:'var(--ink-4)',fontSize:13,fontWeight:600,textDecoration:'none',display:'flex',alignItems:'center',gap:6,background:'transparent',cursor:'pointer'}}
                   >
                     <BarChart2 size={16}/> Compare
-                  </Link>
+                  </button>
                 </div>
               </div>
               {/* Right Sidebar */}
