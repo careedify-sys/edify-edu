@@ -385,12 +385,12 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
+              { icon:'🏆', title:'Best Online MBA in India 2026', desc:'Top 10 online MBAs ranked by NIRF & NAAC with fees, specializations, and honest picks by use case.', href:'/best-online-mba-india' },
               { icon:'🏛️', title:'Is Online Degree Valid in India?', desc:'UGC 2020 notification, government job eligibility, what DEB approval means.', href:'/guides/is-online-degree-valid-india' },
               { icon:'📋', title:'Online MBA for Government Jobs', desc:'Which online MBAs count for UPSC, SSC, banking and state PSC exams.', href:'/guides/online-mba-for-government-jobs' },
               { icon:'🔍', title:'How to Check UGC DEB Approval', desc:'Step-by-step: verify any university\'s online degree approval in 2 minutes.', href:'/guides/how-to-check-ugc-deb-approval' },
               { icon:'🎓', title:'Online MBA vs Distance MBA', desc:'Key differences, validity, fee range, and which suits working professionals.', href:'/guides/online-mba-vs-distance-mba' },
               { icon:'📊', title:'NAAC & NIRF Rankings Explained', desc:'What NAAC grades and NIRF ranks actually mean for your MBA choice.', href:'/guides/naac-nirf-rankings-explained' },
-              { icon:'✅', title:'Online MBA Eligibility India', desc:'Graduation requirements, age limits, entrance exams — all clarified.', href:'/guides/online-mba-eligibility-india' },
             ].map(g => (
               <Link key={g.href} href={g.href} className="no-underline group">
                 <div style={{ background:'var(--bg)', border:'1px solid var(--border)', borderRadius:'var(--r-sm)', padding:'20px', height:'100%', transition:'var(--t-base)' }}

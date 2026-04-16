@@ -59,6 +59,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/tools/cgpa-calculator`,   lastModified: now, changeFrequency: 'monthly', priority: 0.75 },
     { url: `${BASE}/tools/percentage-to-gpa`, lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
 
+    // Authority landing pages
+    { url: `${BASE}/best-online-mba-india`,   lastModified: now, changeFrequency: 'monthly', priority: 0.90 },
+
     // Brand / trust pages
     { url: `${BASE}/about`,                   lastModified: now, changeFrequency: 'yearly',  priority: 0.50 },
     { url: `${BASE}/contact`,                 lastModified: now, changeFrequency: 'yearly',  priority: 0.50 },
