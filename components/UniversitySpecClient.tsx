@@ -254,7 +254,7 @@ export default function UniversitySpecClient({ university: u, program, programSl
               <div className="px-6 pt-5 pb-2">
                 <div className="flex items-center gap-2 mb-1">
                   <Zap size={16} className="text-amber-text" />
-                  <h2 className="font-display text-lg font-bold text-navy">Key Highlights</h2>
+                  <h2 className="font-display text-lg font-bold text-navy">{cleanName} {program} in {spec} — Key Facts {year}</h2>
                 </div>
                 <p className="text-xs text-ink-3">Why {cleanName} stands out for {program} — {spec}</p>
               </div>
@@ -272,7 +272,7 @@ export default function UniversitySpecClient({ university: u, program, programSl
             {/* ── ABOUT THE SPECIALISATION ───────────────────────── */}
             {specContent?.overview && (
               <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-3">About {spec} Specialisation</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-3">About {spec} in {cleanName} Online {program}</h2>
                 <p className="text-sm text-ink-2 leading-relaxed mb-4">{specContent.overview}</p>
                 {(specContent?.whyChoose?.length ?? 0) > 0 && (
                   <div className="flex flex-col gap-2.5 mt-4">
@@ -297,7 +297,7 @@ export default function UniversitySpecClient({ university: u, program, programSl
                     ✦ Edify Recommends
                   </span>
                 </div>
-                <h2 className="font-display text-xl font-bold text-navy mb-1">Skills You'll Gain</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-1">Skills You'll Gain from {cleanName} {program} in {spec}</h2>
                 <p className="text-sm text-ink-3 mb-4">In-demand competencies for <strong>{spec}</strong> professionals — specific to this specialisation</p>
                 <div className="flex flex-wrap gap-2">
                   {(specContent?.skills ?? []).map(skill => (
@@ -328,7 +328,7 @@ export default function UniversitySpecClient({ university: u, program, programSl
             {/* ── CAREER PATHS ───────────────────────────────────── */}
             {(specContent?.careerBeginner?.length || specContent?.careerMid?.length || specContent?.careerSenior?.length) && (
               <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-1">Career Path — {spec}</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-1">Career Path After {spec} — {cleanName} {program} Scope</h2>
                 <p className="text-sm text-ink-3 mb-5">Roles at each career stage after {program} in {spec}</p>
                 <div className="flex flex-col gap-5">
                   {[
@@ -355,7 +355,7 @@ export default function UniversitySpecClient({ university: u, program, programSl
             {/* ── SALARY & GROWTH ────────────────────────────────── */}
             {(specContent?.salaryGrowth || specContent?.salaryRange) && (
               <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-4">Salary & Career Growth</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">{spec} Salary & Career Growth After {cleanName} {program}</h2>
                 {specContent?.salaryRange && (
                   <div className="p-4 rounded-xl bg-green-50 border border-green-200 mb-4">
                     <div className="flex items-center gap-2 text-green-800 font-bold text-sm mb-0.5"><TrendingUp size={16} /> Salary Range</div>
@@ -383,7 +383,7 @@ export default function UniversitySpecClient({ university: u, program, programSl
 
             {/* ── FEE STRUCTURE + EMI ────────────────────────────── */}
             <section className="card-lg p-6">
-              <h2 className="font-display text-xl font-bold text-navy mb-4">Fee Structure & EMI Options</h2>
+              <h2 className="font-display text-xl font-bold text-navy mb-4">{cleanName} Online {program} in {spec} Fees {year} — EMI Options</h2>
               <div className="overflow-x-auto mb-4">
                 <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14 }}>
                   <tbody>
@@ -463,7 +463,7 @@ export default function UniversitySpecClient({ university: u, program, programSl
 
             {/* ── ELIGIBILITY ────────────────────────────────────── */}
             <section className="card-lg p-6">
-              <h2 className="font-display text-xl font-bold text-navy mb-4">Eligibility & Admission</h2>
+              <h2 className="font-display text-xl font-bold text-navy mb-4">{cleanName} {program} in {spec} Eligibility & Admission {year}</h2>
               <div className="flex flex-col gap-3 mb-5">
                 <div className="flex items-start gap-3">
                   <CheckCircle size={18} className="text-green-500 shrink-0 mt-0.5" />
@@ -510,7 +510,7 @@ export default function UniversitySpecClient({ university: u, program, programSl
 
             {/* ── EXAMINATION PATTERN ────────────────────────────── */}
             <section className="card-lg p-6">
-              <h2 className="font-display text-xl font-bold text-navy mb-4">Examination Pattern</h2>
+              <h2 className="font-display text-xl font-bold text-navy mb-4">{cleanName} {program} in {spec} — Exam Pattern & Assessment</h2>
               <div className="overflow-x-auto mb-4">
                 <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14 }}>
                   <thead>
@@ -585,7 +585,7 @@ export default function UniversitySpecClient({ university: u, program, programSl
                 </div>
                 {/* Star breakdown bars */}
                 <div className="flex-1">
-                  <h2 className="font-display text-xl font-bold text-navy mb-3">Student Reviews</h2>
+                  <h2 className="font-display text-xl font-bold text-navy mb-3">{cleanName} {program} in {spec} Reviews — Student Feedback</h2>
                   <div className="flex flex-col gap-2">
                     {[5,4,3,2,1].map(r => {
                       const count = rawReviews.filter(rv => rv.rating === r).length
@@ -644,7 +644,7 @@ export default function UniversitySpecClient({ university: u, program, programSl
 
             {/* ── FAQs ───────────────────────────────────────────── */}
             <section className="card-lg p-6">
-              <h2 className="font-display text-xl font-bold text-navy mb-4">Frequently Asked Questions</h2>
+              <h2 className="font-display text-xl font-bold text-navy mb-4">FAQs — {cleanName} {program} in {spec} {year}</h2>
               <div className="flex flex-col divide-y divide-border">
                 {allFaqs.map((faq, i) => (
                   <div key={i} className="py-4">
@@ -734,7 +734,7 @@ export default function UniversitySpecClient({ university: u, program, programSl
         {otherUnis.length > 0 && (
           <div className="mt-12">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-lg font-bold text-navy">Compare with Similar Programs</h2>
+              <h2 className="text-lg font-bold text-navy">Compare {cleanName} {program} with Similar Online Programs</h2>
               <Link href={`/universities?program=${programSlug}`} className="text-xs text-amber font-semibold hover:underline no-underline">View all →</Link>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">

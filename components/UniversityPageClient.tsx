@@ -399,7 +399,7 @@ export default function UniversityPageClient({ university: u }: Props) {
 
               {/* Who Should Apply */}
               <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-4">Who Should Apply?</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">Who Should Apply to {u.name} Online Programs?</h2>
                 <div className="text-sm font-bold text-green-600 uppercase tracking-wider mb-3">✓ Best For</div>
                 <ul className="space-y-2">
                   {u.forWho.map(item => (

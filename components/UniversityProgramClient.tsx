@@ -122,7 +122,7 @@ function FullPage({ u, program, programSlug, pd }: {
 
               {/* Specialisations */}
               {(pd.specs?.length ?? 0) > 0 && <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-4">{program} Specialisations at {u.name}</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">Online {program} Specialisations at {u.name} — Finance, Marketing & More</h2>
                 <div className="flex flex-wrap gap-2">
                   {(pd.specs ?? []).map(spec => (
                     <button key={spec} onClick={() => setActiveSpec(activeSpec === spec ? null : spec)}
@@ -150,7 +150,7 @@ function FullPage({ u, program, programSlug, pd }: {
                       ✦ Edify Recommends
                     </span>
                   </div>
-                  <h2 className="font-display text-xl font-bold text-navy mb-1">Skills You'll Gain</h2>
+                  <h2 className="font-display text-xl font-bold text-navy mb-1">Skills You'll Gain from {u.name} Online {program}</h2>
                   <p className="text-sm text-ink-3 mb-4">Key competencies from an online {program} that employers look for</p>
                   <div className="grid md:grid-cols-2 gap-4">
                     {(programContent?.skills?.technical?.length ?? 0) > 0 && (
@@ -183,7 +183,7 @@ function FullPage({ u, program, programSlug, pd }: {
 
               {/* Career Outcomes */}
               {((pd.roles?.length ?? 0) > 0 || (pd.topCompanies?.length ?? 0) > 0) && <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-4">Career After {program} from {u.name}</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">Is {u.name} Online {program} Good for Working Professionals?</h2>
                 <div className="grid md:grid-cols-2 gap-6">
                   {(pd.roles?.length ?? 0) > 0 && <div>
                     <div className="flex items-center gap-2 text-sm font-bold text-navy mb-3"><Briefcase size={16} /> Job Roles</div>
@@ -213,7 +213,7 @@ function FullPage({ u, program, programSlug, pd }: {
 
               {/* Examination Pattern */}
               <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-4">Examination Pattern</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">{u.name} Online {program} — How Classes & Exams Work</h2>
                 <div className="overflow-x-auto">
                   <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14 }}>
                     <thead>
@@ -251,7 +251,7 @@ function FullPage({ u, program, programSlug, pd }: {
 
               {/* Who Can Apply */}
               <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-4">Who Can Apply</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">{u.name} Online {program} Eligibility 2026 — Who Can Apply</h2>
                 <div className="flex flex-col gap-3 mb-4">
                   <div className="flex items-start gap-3">
                     <CheckCircle size={18} className="text-green-500 shrink-0 mt-0.5" />
@@ -286,7 +286,7 @@ function FullPage({ u, program, programSlug, pd }: {
                 return (
                   <>
                     <section className="card-lg p-6">
-                      <h2 className="font-display text-xl font-bold text-navy mb-3">Why Choose {cleanName} for Online {program}</h2>
+                      <h2 className="font-display text-xl font-bold text-navy mb-3">Why Choose {cleanName} Online {program} in 2026?</h2>
                       {u.highlight && <p className="text-sm font-semibold text-amber-text mb-4">{u.highlight}</p>}
                       {u.forWho && u.forWho.length > 0 && (
                         <>
@@ -305,7 +305,7 @@ function FullPage({ u, program, programSlug, pd }: {
                     </section>
 
                     <section className="card-lg p-6">
-                      <h2 className="font-display text-xl font-bold text-navy mb-3">Is {cleanName} Online {program} Worth It?</h2>
+                      <h2 className="font-display text-xl font-bold text-navy mb-3">Is {cleanName} Online {program} Worth It in 2026?</h2>
                       <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
                         An online {program} from {cleanName} is worth considering if you are a working professional or fresh graduate looking to earn a recognised degree without leaving your job or city. The program is UGC DEB approved which means the degree is valid for government jobs, PSU recruitment, and higher studies across India.
                       </p>
@@ -315,7 +315,7 @@ function FullPage({ u, program, programSlug, pd }: {
                     </section>
 
                     <section className="card-lg p-6">
-                      <h2 className="font-display text-xl font-bold text-navy mb-4">How to Apply for Online {program} at {cleanName}</h2>
+                      <h2 className="font-display text-xl font-bold text-navy mb-4">{cleanName} Online {program} Admission 2026 — How to Apply</h2>
                       <ol className="flex flex-col gap-4">
                         {[
                           `Check eligibility — ${u.eligibility}`,
@@ -336,7 +336,7 @@ function FullPage({ u, program, programSlug, pd }: {
 
               {/* FAQs */}
               <section>
-                <h2 className="font-display text-xl font-bold text-navy mb-4">{program} at {u.name} — FAQs</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">{u.name} Online {program} — FAQs 2026</h2>
                 <div className="flex flex-col gap-2">
                   {faqs.map((faq, i) => (
                     <div key={i} className="bg-white border border-border rounded-xl overflow-hidden">
@@ -390,7 +390,7 @@ function FullPage({ u, program, programSlug, pd }: {
                     })}}/>
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
                       <div>
-                        <h2 className="font-display text-xl font-bold text-navy mb-1">Student Reviews &amp; Ratings</h2>
+                        <h2 className="font-display text-xl font-bold text-navy mb-1">{u.name} Online {program} Reviews — What Students Say</h2>
                         <p className="text-sm text-ink-3">{reviews.length} students reviewed this program</p>
                       </div>
                       <div className="flex items-center gap-2">
@@ -437,7 +437,7 @@ function FullPage({ u, program, programSlug, pd }: {
               {/* Other Universities */}
               {otherUnis.length > 0 && (
                 <section>
-                  <h2 className="font-display text-xl font-bold text-navy mb-4">Other Universities Offering {program}</h2>
+                  <h2 className="font-display text-xl font-bold text-navy mb-4">Best Universities for Online {program} in India 2026</h2>
                   <div className="grid sm:grid-cols-2 gap-4">
                     {otherUnis.map(ou => {
                       const opd = ou.programDetails?.[program]
@@ -707,7 +707,7 @@ function LockedPage({ u, program, programSlug, pd }: {
 
         {/* About the Program */}
         <div className="bg-white border border-border rounded-2xl p-6 mb-6">
-          <h2 className="font-display text-xl font-bold text-navy mb-3">About Online {program} at {cleanName}</h2>
+          <h2 className="font-display text-xl font-bold text-navy mb-3">{cleanName} Online {program} 2026 — Courses & Specialisations</h2>
           {(syllabus as any)?.programOverview ? (
             <div className="text-[15px] text-ink-2 leading-relaxed mb-3 whitespace-pre-line">{(syllabus as any).programOverview}</div>
           ) : (
@@ -734,7 +734,7 @@ function LockedPage({ u, program, programSlug, pd }: {
 
         {/* Who Can Apply */}
         <div className="bg-white border border-border rounded-2xl p-6 mb-6">
-          <h2 className="font-display text-xl font-bold text-navy mb-4">Who Can Apply for Online {program}</h2>
+          <h2 className="font-display text-xl font-bold text-navy mb-4">{cleanName} Online {program} Eligibility 2026 — Who Can Apply</h2>
           <div className="flex flex-col gap-3 mb-4">
             {[
               `Completed graduation from any UGC recognised university`,
@@ -756,7 +756,7 @@ function LockedPage({ u, program, programSlug, pd }: {
 
         {/* Why Choose */}
         <div className="bg-white border border-border rounded-2xl p-6 mb-6">
-          <h2 className="font-display text-xl font-bold text-navy mb-3">Why Choose {cleanName} for Online {program}</h2>
+          <h2 className="font-display text-xl font-bold text-navy mb-3">Why Choose {cleanName} Online {program} in 2026?</h2>
           {u.highlight && <p className="text-sm font-semibold text-amber-text mb-4">{u.highlight}</p>}
           <div className="flex flex-col gap-3 mb-4">
             {[
@@ -778,7 +778,7 @@ function LockedPage({ u, program, programSlug, pd }: {
 
         {/* Is It Worth It */}
         <div className="bg-white border border-border rounded-2xl p-6 mb-6">
-          <h2 className="font-display text-xl font-bold text-navy mb-3">Is {cleanName} Online {program} Worth It?</h2>
+          <h2 className="font-display text-xl font-bold text-navy mb-3">Is {cleanName} Online {program} Worth It in 2026?</h2>
           <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
             An online {program} from {cleanName} is a strong option if you are a working professional or fresh graduate looking for a recognised postgraduate degree without relocating or taking a career break. The program is UGC DEB approved — meaning the degree is legally valid for private sector jobs, government recruitment (where UGC DEB degrees are accepted){u.psuEligible ? ', PSU recruitment' : ''}, and admission to PhD programs across India.
           </p>
@@ -792,7 +792,7 @@ function LockedPage({ u, program, programSlug, pd }: {
 
         {/* How to Apply */}
         <div className="bg-white border border-border rounded-2xl p-6 mb-6">
-          <h2 className="font-display text-xl font-bold text-navy mb-4">How to Apply for Online {program} at {cleanName}</h2>
+          <h2 className="font-display text-xl font-bold text-navy mb-4">{cleanName} Online {program} Admission 2026 — How to Apply</h2>
           <ol className="flex flex-col gap-4">
             {[
               `Check eligibility — ${u.eligibility}`,
@@ -819,7 +819,7 @@ function LockedPage({ u, program, programSlug, pd }: {
           ]
           return (
             <div className="bg-white border border-border rounded-2xl p-6 mb-6">
-              <h2 className="font-display text-xl font-bold text-navy mb-4">Frequently Asked Questions — {cleanName} Online {program}</h2>
+              <h2 className="font-display text-xl font-bold text-navy mb-4">{cleanName} Online {program} — FAQs 2026</h2>
               <div className="flex flex-col divide-y divide-border">
                 {faqs.map((faq, i) => (
                   <div key={i} className="py-4 first:pt-0 last:pb-0">

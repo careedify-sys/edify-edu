@@ -229,7 +229,7 @@ export default function SpecializationPageClient({ university: u, program, speci
               {/* About Specialization */}
               <section className="card-lg p-6">
                 <h2 className="font-display text-xl font-bold text-navy mb-4">
-                  About {progInfo.name} in {specialization}
+                  About {progInfo.name} in {specialization} at {cleanName}
                 </h2>
                 <p className="text-ink-2 text-[15px] leading-relaxed mb-4">
                   {specContent?.overview || `If you're looking to go deep into ${specialization.toLowerCase()} — not just learn the theory but actually use it at work — this is the specialisation for that. The ${progInfo.name} in ${specialization} from ${u.name} covers the practical side: real frameworks, tools people actually use on the job, and enough depth that your employer will notice the difference.`}
@@ -348,7 +348,7 @@ export default function SpecializationPageClient({ university: u, program, speci
               {/* Career Outcomes */}
               <section className="card-lg p-6">
                 <h2 className="font-display text-xl font-bold text-navy mb-4">
-                  Career After {progInfo.name} in {specialization}
+                  {cleanName} {progInfo.name} in {specialization} — Career Scope
                 </h2>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
@@ -391,7 +391,7 @@ export default function SpecializationPageClient({ university: u, program, speci
               {otherSpecs.length > 0 && (
                 <section className="card-lg p-6">
                   <h2 className="font-display text-xl font-bold text-navy mb-4">
-                    Other {program} Specializations at {u.name}
+                    Other {u.name} {program} Specializations 2026
                   </h2>
                   <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
                     {otherSpecs.map(spec => {
@@ -427,7 +427,7 @@ export default function SpecializationPageClient({ university: u, program, speci
 
               {/* Examination Pattern */}
               <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-4">Examination Pattern</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">{cleanName} {progInfo.name} in {specialization} — Exam Pattern</h2>
                 <div className="overflow-x-auto">
                   <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14 }}>
                     <thead>
@@ -465,7 +465,7 @@ export default function SpecializationPageClient({ university: u, program, speci
 
               {/* Who Can Apply */}
               <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-4">Who Can Apply</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">{cleanName} {progInfo.name} in {specialization} Eligibility 2026</h2>
                 <div className="flex flex-col gap-3 mb-4">
                   <div className="flex items-start gap-3">
                     <CheckCircle size={18} className="text-green-500 shrink-0 mt-0.5" />
@@ -495,7 +495,7 @@ export default function SpecializationPageClient({ university: u, program, speci
 
               {/* Why Choose */}
               <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-3">Why Choose {cleanName} for {progInfo.name} in {specialization}</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-3">Why Choose {cleanName} for {progInfo.name} in {specialization} in 2026?</h2>
                 {u.highlight && <p className="text-sm font-semibold text-amber-text mb-4">{u.highlight}</p>}
                 {u.forWho && u.forWho.length > 0 && (
                   <>
@@ -515,7 +515,7 @@ export default function SpecializationPageClient({ university: u, program, speci
 
               {/* Is It Worth It */}
               <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-3">Is {cleanName} {progInfo.name} Worth It?</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-3">Is {cleanName} {progInfo.name} in {specialization} Worth It in 2026?</h2>
                 <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
                   An online {program} from {cleanName} is worth considering if you are a working professional or fresh graduate who wants a recognised degree without leaving your job or city. The program is UGC DEB approved — valid for government jobs, PSU recruitment, and higher studies across India.
                 </p>
@@ -526,7 +526,7 @@ export default function SpecializationPageClient({ university: u, program, speci
 
               {/* How to Apply */}
               <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-4">How to Apply for {progInfo.name} at {cleanName}</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">{cleanName} {progInfo.name} Admission 2026 — How to Apply</h2>
                 <ol className="flex flex-col gap-4">
                   {[
                     `Check eligibility — ${u.eligibility}`,
@@ -590,7 +590,7 @@ export default function SpecializationPageClient({ university: u, program, speci
                     })}}/>
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
                       <div>
-                        <h2 className="font-display text-xl font-bold text-navy mb-1">Student Reviews &amp; Ratings</h2>
+                        <h2 className="font-display text-xl font-bold text-navy mb-1">{cleanName} {progInfo.name} Reviews — What Students Say</h2>
                         <p className="text-sm text-ink-3">{reviews.length} students reviewed this program</p>
                       </div>
                       <div className="flex items-center gap-2">
@@ -635,7 +635,7 @@ export default function SpecializationPageClient({ university: u, program, speci
               {/* Related Programs — internal linking for SEO */}
               {program === 'MBA' && (
                 <section className="card-lg p-6">
-                  <h2 className="font-display text-lg font-bold text-navy mb-4">Related Programs You May Consider</h2>
+                  <h2 className="font-display text-lg font-bold text-navy mb-4">Other Online {progInfo.name} Programs to Consider in 2026</h2>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                     {[
                       { href: '/programs/mba', label: 'Best Online MBA India 2026' },
@@ -968,7 +968,7 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
 
         {/* Examination Pattern */}
         <section className="card-lg p-6 mb-6">
-          <h2 className="font-display text-xl font-bold text-navy mb-4">Examination Pattern</h2>
+          <h2 className="font-display text-xl font-bold text-navy mb-4">{cleanName} {progInfo.name} in {specialization} — Exam Pattern</h2>
           <div className="overflow-x-auto">
             <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14 }}>
               <thead>
@@ -1006,7 +1006,7 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
 
         {/* Who Can Apply */}
         <section className="card-lg p-6 mb-6">
-          <h2 className="font-display text-xl font-bold text-navy mb-4">Who Can Apply</h2>
+          <h2 className="font-display text-xl font-bold text-navy mb-4">{cleanName} {progInfo.name} in {specialization} Eligibility 2026</h2>
           <div className="flex flex-col gap-3 mb-4">
             <div className="flex items-start gap-3">
               <CheckCircle size={18} className="text-green-500 shrink-0 mt-0.5" />
@@ -1037,7 +1037,7 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
         {/* Related Programs */}
         {program === 'MBA' && (
           <section className="card-lg p-6 mb-6">
-            <h2 className="font-display text-lg font-bold text-navy mb-4">Related Programs You May Consider</h2>
+            <h2 className="font-display text-lg font-bold text-navy mb-4">Other Online {progInfo.name} Programs to Consider in 2026</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {[
                 { href: '/programs/mba', label: 'Best Online MBA India 2026' },
@@ -1062,7 +1062,7 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
 
         {/* Why Choose */}
         <section className="card-lg p-6 mb-6">
-          <h2 className="font-display text-xl font-bold text-navy mb-3">Why Choose {cleanName} for {progInfo.name} in {specialization}</h2>
+          <h2 className="font-display text-xl font-bold text-navy mb-3">Why Choose {cleanName} for {progInfo.name} in {specialization} in 2026?</h2>
           {u.highlight && <p className="text-sm font-semibold text-amber-text mb-4">{u.highlight}</p>}
           <div className="flex flex-col gap-3 mb-4">
             {[
@@ -1085,7 +1085,7 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
 
         {/* Is It Worth It */}
         <section className="card-lg p-6 mb-6">
-          <h2 className="font-display text-xl font-bold text-navy mb-3">Is {cleanName} {progInfo.name} in {specialization} Worth It?</h2>
+          <h2 className="font-display text-xl font-bold text-navy mb-3">Is {cleanName} {progInfo.name} in {specialization} Worth It in 2026?</h2>
           <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
             A {progInfo.name} in {specialization} from {cleanName} is a strong career investment if you are looking to specialise in this domain while earning a fully recognised postgraduate degree. The program is UGC DEB approved — the degree is valid for private sector jobs, government recruitment where UGC DEB degrees are accepted{u.psuEligible ? ', PSU positions' : ''}, and further academic pursuits.
           </p>
@@ -1099,7 +1099,7 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
 
         {/* How to Apply */}
         <section className="card-lg p-6 mb-6">
-          <h2 className="font-display text-xl font-bold text-navy mb-4">How to Apply for {progInfo.name} in {specialization} at {cleanName}</h2>
+          <h2 className="font-display text-xl font-bold text-navy mb-4">{cleanName} {progInfo.name} in {specialization} Admission 2026 — How to Apply</h2>
           <ol className="flex flex-col gap-4">
             {[
               `Check eligibility — ${u.eligibility}`,
@@ -1157,7 +1157,7 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
               })}}/>
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
                 <div>
-                  <h2 className="font-display text-xl font-bold text-navy mb-1">Student Reviews &amp; Ratings</h2>
+                  <h2 className="font-display text-xl font-bold text-navy mb-1">{cleanName} {progInfo.name} Reviews — What Students Say</h2>
                   <p className="text-sm text-ink-3">{reviews.length} students reviewed this program</p>
                 </div>
                 <div className="flex items-center gap-2">
