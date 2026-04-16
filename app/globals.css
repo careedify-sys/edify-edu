@@ -408,12 +408,6 @@ input, select, textarea { font-size: 16px; font-family: inherit; }
   .uni-detail-layout > div:last-child { display: none !important; }
 }
 
-/* ── FLOATING CTA — bottom safe area (iPhone home indicator) ─── */
-/* Neuroscience: persistent bottom CTA captures low-intent scrollers */
-.floating-cta {
-  position: fixed !important;
-  bottom: calc(24px + env(safe-area-inset-bottom)) !important;
-}
 
 /* ── CTA PSYCHOLOGY — scarcity strip ───────────────────────────── */
 /* Red pulse dot = urgency cue. Neurologically triggers loss-aversion. */

@@ -827,7 +827,7 @@ function CompareContent() {
                   "px-6 py-1.5 text-sm font-bold rounded-lg transition-all",
                   program === p
                     ? "bg-amber-500 text-white shadow-md"
-                    : "text-slate-600 hover:text-slate-900 hover:bg-white"
+                    : "bg-white border border-slate-200 text-slate-600 hover:text-slate-900 hover:border-slate-300"
                 )}
               >
                 Online {p}
