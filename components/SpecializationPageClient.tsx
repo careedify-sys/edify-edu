@@ -391,7 +391,7 @@ export default function SpecializationPageClient({ university: u, program, speci
               {otherSpecs.length > 0 && (
                 <section className="card-lg p-6">
                   <h2 className="font-display text-xl font-bold text-navy mb-4">
-                    Other {program} Specializations at {u.abbr}
+                    Other {program} Specializations at {u.name}
                   </h2>
                   <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
                     {otherSpecs.map(spec => {

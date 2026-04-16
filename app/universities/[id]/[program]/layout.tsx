@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { getUniversityById, formatFee } from '@/lib/data'
 import type { Program } from '@/lib/data'
+import { getTitleName } from '@/lib/seo-title'
 
 // Same SEO name map — shared source of truth
 const SEO_NAME: Record<string, string> = {
@@ -117,12 +118,8 @@ export async function generateMetadata({ params }: { params: { id: string; progr
   const specs = pd?.specs?.slice(0, 3).join(', ') || ''
   const nirf = u.nirf < 200 ? `NIRF #${u.nirf}` : u.nirfMgt ? `NIRF #${u.nirfMgt} ${u.nirfCategory || 'Mgmt'}` : `NAAC ${u.naac}`
 
-  // ── Title: NO Edify branding ──────────────────────────────────
-  // Use top spec in title for better long-tail SEO
-  const cleanName = u.name.replace(/\bOnline\b\s*$/i, '').trim()
-  const topSpec = u.programDetails[prog as Program]?.specs?.[0]
-  const specSuffix = topSpec && topSpec !== 'General' ? ` in ${topSpec}` : ''
-  const title = `${progTitle}${specSuffix} | ${seoName} | ${nirf} | 2026`
+  const titleName = getTitleName(u.id, u.name, u.abbr)
+  const title = `${titleName} ${progTitle} — Fees & Syllabus 2026 | EdifyEdu`
 
   const description = `Admissions open Oct 15–30, 2026. Online ${progTitle} at ${seoName}: ${fee} total, NAAC ${u.naac}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}.${specs ? ` Specs: ${specs}.` : ''} UGC DEB approved. Compare & apply!`
 

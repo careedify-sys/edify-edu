@@ -122,7 +122,7 @@ function FullPage({ u, program, programSlug, pd }: {
 
               {/* Specialisations */}
               {(pd.specs?.length ?? 0) > 0 && <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-4">{program} Specialisations at {u.abbr}</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">{program} Specialisations at {u.name}</h2>
                 <div className="flex flex-wrap gap-2">
                   {(pd.specs ?? []).map(spec => (
                     <button key={spec} onClick={() => setActiveSpec(activeSpec === spec ? null : spec)}
@@ -183,7 +183,7 @@ function FullPage({ u, program, programSlug, pd }: {
 
               {/* Career Outcomes */}
               {((pd.roles?.length ?? 0) > 0 || (pd.topCompanies?.length ?? 0) > 0) && <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-4">Career After {program} from {u.abbr}</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">Career After {program} from {u.name}</h2>
                 <div className="grid md:grid-cols-2 gap-6">
                   {(pd.roles?.length ?? 0) > 0 && <div>
                     <div className="flex items-center gap-2 text-sm font-bold text-navy mb-3"><Briefcase size={16} /> Job Roles</div>
@@ -336,7 +336,7 @@ function FullPage({ u, program, programSlug, pd }: {
 
               {/* FAQs */}
               <section>
-                <h2 className="font-display text-xl font-bold text-navy mb-4">{program} at {u.abbr} — FAQs</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">{program} at {u.name} — FAQs</h2>
                 <div className="flex flex-col gap-2">
                   {faqs.map((faq, i) => (
                     <div key={i} className="bg-white border border-border rounded-xl overflow-hidden">

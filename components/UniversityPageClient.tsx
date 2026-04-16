@@ -324,7 +324,7 @@ export default function UniversityPageClient({ university: u }: Props) {
               {pd && (
                 <section className="card-lg p-6">
                   <h2 className="font-display text-xl font-bold text-navy mb-4">
-                    {displayProgram} at {u.abbr}
+                    {displayProgram} at {u.name}
                   </h2>
                   
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">

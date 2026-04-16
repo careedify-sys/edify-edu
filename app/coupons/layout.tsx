@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Online MBA Fees Discount Coupons 2026 — Save up to ₹30,000 | EdifyEdu',
+  title: 'Online MBA Discount Coupons 2026 — Save up to ₹30,000',
   description:
     'Save on online MBA fees with verified coupon codes 2026. NMIMS online MBA fees discount, Amity online MBA fees offer, Symbiosis online MBA fees coupon, UPES online MBA fees savings, Sikkim Manipal MBA discount & more. Reduce your online MBA fee structure by 15–25%. UGC DEB approved universities.',
   keywords: [

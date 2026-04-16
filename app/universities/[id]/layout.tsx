@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { getUniversityById, formatFee } from '@/lib/data'
 import type { University } from '@/lib/data'
+import { getTitleName } from '@/lib/seo-title'
 
 // ─── Canonical SEO name per university ID (from keyword research doc) ───
 const SEO_NAME: Record<string, string> = {
@@ -222,9 +223,10 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   const feeStr = `${formatFee(u.feeMin)}–${formatFee(u.feeMax)}`
   const nirf = u.nirf < 200 ? `NIRF #${u.nirf}` : u.nirfMgt ? `NIRF #${u.nirfMgt} ${u.nirfCategory || 'Mgmt'}` : `NAAC ${u.naac}`
 
-  // ── Title: focus on Review + Placement + Fees (High Intent) ─────
-  const cleanName = u.name.replace(/\bOnline\b\s*$/i, '').trim()
-  const title = `${seoName} Online Admissions 2026 - Fees, Placements & Honest Review`
+  // ── Title: short name + programs in parens — stays within Google's 600px limit ──
+  const titleName = getTitleName(u.id, u.name, u.abbr)
+  const progStr = (u.programs || []).slice(0, 3).join(', ') || mainProg
+  const title = `${titleName} Online (${progStr}, Fees 2026) | EdifyEdu`
 
   // ── Description: keyword-rich, direct ────────────────────────
   const description = `Direct Admission 2026 at ${seoName} Online. Get honest faculty reviews, actual package/placement stats, and total fees (${feeStr}). ${nirf}, NAAC ${u.naac}. UGC DEB approved. Compare syllabus and apply today!`
