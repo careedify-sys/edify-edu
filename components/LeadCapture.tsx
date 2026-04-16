@@ -233,7 +233,8 @@ export function StickyBottomBar({ label, universityName }: { label?: string; uni
 
   return (
     <>
-      <div style={{
+      {/* Desktop only — hidden on mobile where BottomNav already has Call Us */}
+      <div className="hidden lg:block" style={{
         position: 'fixed', bottom: 24, right: 20, zIndex: 200,
         transform: visible ? 'translateY(0) scale(1)' : 'translateY(80px) scale(0.8)',
         opacity: visible ? 1 : 0,
