@@ -44,6 +44,7 @@ function FullPage({ u, program, programSlug, pd }: {
   const otherUnis     = getUniversitiesByProgram(program).filter(x => x.id !== u.id).slice(0, 4)
   const specContent   = activeSpec ? (getSpecContent(activeSpec) || getSpecFallback(activeSpec, program)) : null
   const programContent = getProgramContent(program)
+  const cleanName     = u.name.replace(/\bOnline\b\s*$/i, '').trim()
 
   const faqs = [
     { q: `Is the ${program} degree from ${u.name} valid?`, a: `Yes — 100% valid. ${u.name} is UGC DEB approved. The degree certificate is identical to a regular campus degree and is valid for private sector, government jobs where UGC DEB degrees are accepted${u.psuEligible ? ', and PSU recruitment' : ''}. ` },
@@ -122,7 +123,7 @@ function FullPage({ u, program, programSlug, pd }: {
 
               {/* Specialisations */}
               {(pd.specs?.length ?? 0) > 0 && <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-4">Online {program} Specialisations at {u.name} — Finance, Marketing & More</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">Online {program} Specialisations at {cleanName} — Finance, Marketing & More</h2>
                 <div className="flex flex-wrap gap-2">
                   {(pd.specs ?? []).map(spec => (
                     <button key={spec} onClick={() => setActiveSpec(activeSpec === spec ? null : spec)}
@@ -150,7 +151,7 @@ function FullPage({ u, program, programSlug, pd }: {
                       ✦ Edify Recommends
                     </span>
                   </div>
-                  <h2 className="font-display text-xl font-bold text-navy mb-1">Skills You'll Gain from {u.name} Online {program}</h2>
+                  <h2 className="font-display text-xl font-bold text-navy mb-1">Skills You'll Gain from {cleanName} Online {program}</h2>
                   <p className="text-sm text-ink-3 mb-4">Key competencies from an online {program} that employers look for</p>
                   <div className="grid md:grid-cols-2 gap-4">
                     {(programContent?.skills?.technical?.length ?? 0) > 0 && (
@@ -183,7 +184,7 @@ function FullPage({ u, program, programSlug, pd }: {
 
               {/* Career Outcomes */}
               {((pd.roles?.length ?? 0) > 0 || (pd.topCompanies?.length ?? 0) > 0) && <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-4">Is {u.name} Online {program} Good for Working Professionals?</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">Is {cleanName} Online {program} Good for Working Professionals?</h2>
                 <div className="grid md:grid-cols-2 gap-6">
                   {(pd.roles?.length ?? 0) > 0 && <div>
                     <div className="flex items-center gap-2 text-sm font-bold text-navy mb-3"><Briefcase size={16} /> Job Roles</div>
@@ -213,7 +214,7 @@ function FullPage({ u, program, programSlug, pd }: {
 
               {/* Examination Pattern */}
               <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-4">{u.name} Online {program} — How Classes & Exams Work</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">{cleanName} Online {program} — How Classes & Exams Work</h2>
                 <div className="overflow-x-auto">
                   <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14 }}>
                     <thead>
@@ -251,7 +252,7 @@ function FullPage({ u, program, programSlug, pd }: {
 
               {/* Who Can Apply */}
               <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-4">{u.name} Online {program} Eligibility 2026 — Who Can Apply</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">{cleanName} Online {program} Eligibility 2026 — Who Can Apply</h2>
                 <div className="flex flex-col gap-3 mb-4">
                   <div className="flex items-start gap-3">
                     <CheckCircle size={18} className="text-green-500 shrink-0 mt-0.5" />
@@ -336,7 +337,7 @@ function FullPage({ u, program, programSlug, pd }: {
 
               {/* FAQs */}
               <section>
-                <h2 className="font-display text-xl font-bold text-navy mb-4">{u.name} Online {program} — FAQs 2026</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">{cleanName} Online {program} — FAQs 2026</h2>
                 <div className="flex flex-col gap-2">
                   {faqs.map((faq, i) => (
                     <div key={i} className="bg-white border border-border rounded-xl overflow-hidden">
@@ -378,7 +379,7 @@ function FullPage({ u, program, programSlug, pd }: {
                     <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
                       '@context': 'https://schema.org',
                       '@type': 'Course',
-                      name: `${u.name} Online ${program}`,
+                      name: `${cleanName} Online ${program}`,
                       provider: { '@type': 'CollegeOrUniversity', name: u.name },
                       aggregateRating: {
                         '@type': 'AggregateRating',
@@ -390,7 +391,7 @@ function FullPage({ u, program, programSlug, pd }: {
                     })}}/>
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
                       <div>
-                        <h2 className="font-display text-xl font-bold text-navy mb-1">{u.name} Online {program} Reviews — What Students Say</h2>
+                        <h2 className="font-display text-xl font-bold text-navy mb-1">{cleanName} Online {program} Reviews — What Students Say</h2>
                         <p className="text-sm text-ink-3">{reviews.length} students reviewed this program</p>
                       </div>
                       <div className="flex items-center gap-2">
@@ -895,7 +896,7 @@ function LockedPage({ u, program, programSlug, pd }: {
               <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
                 '@context': 'https://schema.org',
                 '@type': 'Course',
-                name: `${u.name} Online ${program}`,
+                name: `${cleanName} Online ${program}`,
                 provider: { '@type': 'CollegeOrUniversity', name: u.name },
                 aggregateRating: {
                   '@type': 'AggregateRating',

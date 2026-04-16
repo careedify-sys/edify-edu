@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Free Online Degree Tools 2026 — EMI, ROI & Salary Calculators | Edify',
+  title: { absolute: 'Free Online Degree Tools 2026 — EMI, ROI & Salary Calculators | Edify' },
   description: 'Free calculators for online MBA, MCA, BBA students. Calculate EMI payments, salary hike ROI, GPA conversion, and compare degree value. Unbiased, data-backed tools.',
   keywords: [
     'online degree roi calculator', 'online mba salary hike calculator', 'online mba emi calculator',

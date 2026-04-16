@@ -16,10 +16,10 @@ import { GUIDES } from '@/lib/guides'
 const BASE = 'https://edifyedu.in'
 
 const progSlug = (p: Program) =>
-  p.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
+  p.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 
 const specSlug = (s: string) =>
-  s.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
+  s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 
 // Tier priority by NIRF rank — better-ranked universities deserve more crawl budget
 function uniPriority(nirf: number): number {
@@ -78,12 +78,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // These are the primary landing pages for each degree program
   // NOTE: /programs/{prog}/{u.id} redirects to these — excluded from sitemap
   const uniProgPages: MetadataRoute.Sitemap = UNIVERSITIES.flatMap(u =>
-    u.programs.map(prog => ({
-      url: `${BASE}/universities/${u.id}/${progSlug(prog)}`,
-      lastModified: now,
-      changeFrequency: 'monthly' as const,
-      priority: progPriority(prog),
-    }))
+    u.programs
+      .filter(prog => !!u.programDetails[prog])
+      .map(prog => ({
+        url: `${BASE}/universities/${u.id}/${progSlug(prog)}`,
+        lastModified: now,
+        changeFrequency: 'monthly' as const,
+        priority: progPriority(prog),
+      }))
   )
 
   // ── Program index pages (/programs/{prog}) ────────────────────────────────
