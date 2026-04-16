@@ -62,6 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Brand / trust pages
     { url: `${BASE}/about`,                   lastModified: now, changeFrequency: 'yearly',  priority: 0.50 },
     { url: `${BASE}/contact`,                 lastModified: now, changeFrequency: 'yearly',  priority: 0.50 },
+    { url: `${BASE}/coupons`,                 lastModified: now, changeFrequency: 'weekly',  priority: 0.65 },
     { url: `${BASE}/privacy-policy`,          lastModified: now, changeFrequency: 'yearly',  priority: 0.30 },
   ]
 

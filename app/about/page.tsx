@@ -21,6 +21,29 @@ export const metadata: Metadata = {
   },
 }
 
+const teamSchema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Rishi Kumar',
+    jobTitle: 'Founder & Lead Researcher',
+    worksFor: { '@type': 'Organization', name: 'Edify', url: 'https://edifyedu.in' },
+    url: 'https://edifyedu.in/about#team',
+    description: 'Education researcher and data analyst focused on India\'s online higher education sector. Tracks UGC DEB approvals, NIRF rankings, and fee structures across 125+ universities. 7+ years advising students on degree choices.',
+    knowsAbout: ['UGC DEB approved universities', 'Online MBA India 2026', 'NIRF rankings', 'NAAC accreditation', 'Online degree validity India'],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Komal Srivastava',
+    jobTitle: 'Senior Education Counsellor',
+    worksFor: { '@type': 'Organization', name: 'Edify', url: 'https://edifyedu.in' },
+    url: 'https://edifyedu.in/about#team',
+    description: '7+ years in higher education counselling. Specialises in reviewing online MBA programs, AI-integrated curricula, and helping working professionals choose programs aligned with their career goals.',
+    knowsAbout: ['Online MBA program review', 'Higher education counselling India', 'UGC DEB approved programs', 'MBA specializations India'],
+  },
+]
+
 const aboutFaqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -51,6 +74,9 @@ const aboutFaqSchema = {
 export default function AboutPage() {
   return (
     <>
+    {teamSchema.map((s, i) => (
+      <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
+    ))}
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutFaqSchema) }} />
     <div className="bg-surface-1 min-h-screen">
       {/* Hero */}
@@ -224,6 +250,50 @@ export default function AboutPage() {
           <p className="text-ink-2 leading-relaxed">
             Every university listed on this site is verified against the <strong className="text-navy">official UGC-DEB approved institutions list</strong>. No unrecognised, fake, or unapproved universities are listed.
           </p>
+        </div>
+
+        {/* Research Team */}
+        <div id="team" className="card p-8 mb-8">
+          <h2 className="text-2xl font-bold text-navy mb-2">Research Team</h2>
+          <p className="text-sm text-ink-2 mb-6">Every university review, ranking, and comparison on Edify is authored or verified by one of our two in-house education specialists.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              {
+                initials: 'RK',
+                name: 'Rishi Kumar',
+                title: 'Founder & Lead Researcher',
+                desc: 'Education researcher and data analyst focused on India\'s online higher education sector. Tracks UGC DEB approvals, NIRF rankings, and fee structures across 125+ universities.',
+                tags: ['UGC DEB', 'NIRF Rankings', 'Fee Structures', '7+ Years'],
+              },
+              {
+                initials: 'KS',
+                name: 'Komal Srivastava',
+                title: 'Senior Education Counsellor',
+                desc: '7+ years in higher education counselling. Specialises in reviewing online MBA programs, AI-integrated curricula, and helping working professionals choose programs aligned with their career goals.',
+                tags: ['Online MBA', 'Career Counselling', 'UGC DEB', '7+ Years'],
+              },
+            ].map(member => (
+              <div key={member.name} className="flex gap-4 p-5 rounded-xl" style={{ background: 'var(--surface-2)', border: '1px solid var(--border)' }}>
+                <div className="w-14 h-14 rounded-full flex items-center justify-center font-black text-base shrink-0"
+                  style={{ background: 'linear-gradient(135deg,#c9922a,#e0a93a)', color: '#0B1D35' }}>
+                  {member.initials}
+                </div>
+                <div className="min-w-0">
+                  <div className="font-bold text-navy text-base mb-0.5">{member.name}</div>
+                  <div className="text-xs font-bold uppercase tracking-wider mb-2" style={{ color: '#c9922a' }}>{member.title}</div>
+                  <p className="text-sm text-ink-2 leading-relaxed mb-3">{member.desc}</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {member.tags.map(tag => (
+                      <span key={tag} className="text-[10px] font-bold px-2 py-0.5 rounded-full"
+                        style={{ background: 'rgba(200,129,26,0.1)', color: '#c9922a', border: '1px solid rgba(200,129,26,0.2)' }}>
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Contact CTA */}

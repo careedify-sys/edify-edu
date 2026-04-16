@@ -165,7 +165,11 @@ export default async function BlogPostPage({ params }: Props) {
     author: {
       '@type': 'Person',
       name: post.author || 'Rishi Kumar',
-      url: 'https://edifyedu.in/about',
+      url: 'https://edifyedu.in/about#team',
+      jobTitle: post.author === 'Komal Srivastava' ? 'Senior Education Counsellor' : 'Founder & Lead Researcher',
+      description: post.author === 'Komal Srivastava'
+        ? '7+ years in higher education counselling. Specialises in reviewing online MBA programs and helping working professionals choose programs aligned with their career goals.'
+        : 'Education researcher and data analyst focused on India\'s online higher education sector. 7+ years advising students on degree choices.',
     },
     publisher: {
       '@type': 'Organization',
@@ -279,9 +283,9 @@ export default async function BlogPostPage({ params }: Props) {
                   {(post.author || 'Rishi Kumar').split(' ').map(w => w[0]).join('')}
                 </div>
                 <div>
-                  <div className="text-sm font-bold" style={{ color: '#0B1D35' }}>{post.author || 'Rishi Kumar'}</div>
+                  <Link href="/about#team" className="text-sm font-bold no-underline hover:underline" style={{ color: '#0B1D35' }}>{post.author || 'Rishi Kumar'}</Link>
                   <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#D4922A' }}>
-                    Expert Verified
+                    Senior Education Researcher
                   </div>
                 </div>
               </div>
