@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const titleName = getTitleName(u.id, u.name, u.abbr)
   return {
     title: `${titleName} Online BBA — Fees & Syllabus ${year} | EdifyEdu`,
-    description: `${u.name} BBA - Bachelor of Business Administration. Fees ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}. NAAC ${u.naac}. UGC DEB approved. 3 Years duration.`,
+    description: `${titleName} online BBA: fees ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}, NAAC ${u.naac}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved. 3-year degree.`,
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/bba` },
   }
 }

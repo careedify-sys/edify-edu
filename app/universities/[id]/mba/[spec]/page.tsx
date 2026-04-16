@@ -45,7 +45,8 @@ export async function generateMetadata(
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const shortSpec = shortenSpec(spec)
   const title = `${titleName} Online MBA in ${shortSpec} ${year} | EdifyEdu`
-  const description = `${u.name} MBA in ${spec} - Complete details on fees, syllabus, eligibility, career scope and placements. NAAC ${u.naac}. ${u.nirf < 200 ? `NIRF #${u.nirf}.` : ''} UGC DEB approved. Admission open.`
+  const fee = pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`
+  const description = `${titleName} MBA in ${spec}: fees ${fee}, NAAC ${u.naac}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved. Admissions open ${year}.`
 
   return {
     title,

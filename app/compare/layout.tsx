@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Compare Online MBA Fees 2026 — Top Universities India',
-  description: 'Compare online MBA fees in India 2026 side-by-side. NMIMS online MBA fees, Amity online MBA fees, Symbiosis online MBA fees, UPES online MBA fees, Sikkim Manipal MBA fees & 25+ more. Total fees from ₹60,000. UGC DEB approved, NIRF ranked.',
+  description: 'Compare online MBA fees 2026 — NMIMS, Amity, Symbiosis, UPES, Sikkim Manipal & 25+ universities. Total fees from ₹60,000. UGC DEB approved, NIRF ranked.',
   keywords: [
     'online mba fees', 'nmims online mba fees', 'amity online mba fees', 'symbiosis online mba fees',
     'amity university online mba fees', 'upes online mba fees', 'sikkim manipal university online mba fees',

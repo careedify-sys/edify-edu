@@ -32,7 +32,7 @@ export async function generateMetadata(
   const feeMax = Math.round(u.feeMax / 1000)
   const feeStr = feeMin === feeMax ? `₹${feeMin}K` : `₹${feeMin}K–₹${feeMax}K`
   const mainProg = u.programs[0] || 'MBA'
-  const description = `${cleanName} online ${progStr} — fees ${feeStr}, NAAC ${u.naac}${u.nirf && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved. Syllabus, placements, EMI options. Admissions open ${year}.`
+  const description = `${titleName} online ${progStr}: fees ${feeStr}, NAAC ${u.naac}${u.nirf && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved. Admissions open ${year}.`
 
   const keywords = [
     `${u.name} online ${mainProg} fees`,

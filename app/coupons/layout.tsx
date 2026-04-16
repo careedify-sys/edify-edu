@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Online MBA Discount Coupons 2026 — Save up to ₹30,000',
   description:
-    'Save on online MBA fees with verified coupon codes 2026. NMIMS online MBA fees discount, Amity online MBA fees offer, Symbiosis online MBA fees coupon, UPES online MBA fees savings, Sikkim Manipal MBA discount & more. Reduce your online MBA fee structure by 15–25%. UGC DEB approved universities.',
+    'Verified coupon codes for Amity, NMIMS, Symbiosis, LPU & 18 more UGC DEB universities. Save ₹10,000–₹30,000 on online MBA or MCA fees 2026. Discounts 15–25%.',
   keywords: [
     'online mba fees', 'nmims online mba fees', 'amity online mba fees', 'symbiosis online mba fees',
     'amity university online mba fees', 'upes online mba fees', 'sikkim manipal university online mba fees',

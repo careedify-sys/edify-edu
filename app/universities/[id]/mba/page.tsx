@@ -28,7 +28,7 @@ export async function generateMetadata(
   const pd = u.programDetails['MBA']
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const title = `${titleName} Online MBA — Fees & Syllabus ${year} | EdifyEdu`
-  const description = `${u.name} MBA - ${pd?.specs?.length || 5}+ specializations available. Fees ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}. NAAC ${u.naac}. ${u.nirf < 200 ? `NIRF #${u.nirf}.` : ''} UGC DEB approved.`
+  const description = `${titleName} online MBA: ${pd?.specs?.length || 5}+ specializations, fees ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}, NAAC ${u.naac}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved.`
 
   return {
     title,
