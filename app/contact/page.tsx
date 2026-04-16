@@ -139,6 +139,37 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
+      {/* About / FAQ section */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h2 className="text-lg font-bold text-navy mb-3">How EdifyEdu Helps You Choose</h2>
+            <p className="text-ink-2 text-sm leading-relaxed mb-4">
+              Picking an online degree is not simple. Fees vary, NAAC grades differ, and not every UGC approved program carries the same employer recognition. EdifyEdu compares over 127 universities on verified data so you can make a confident decision without spending weeks on research.
+            </p>
+            <p className="text-ink-2 text-sm leading-relaxed">
+              Our counsellors have personally reviewed admission processes, syllabus structures, and placement records at each institution. When you contact us, you get a straightforward conversation focused on your budget, your current qualification, and your career target. We do not push you toward any particular university.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-lg font-bold text-navy mb-3">Common Questions We Answer</h2>
+            <div className="space-y-4">
+              <div>
+                <p className="font-semibold text-navy text-sm">Which online MBA is best for working professionals?</p>
+                <p className="text-ink-3 text-sm mt-1">It depends on your industry, budget, and how much time you can give each week. Our counsellors match you with options that fit your actual situation rather than giving a generic top-10 list.</p>
+              </div>
+              <div>
+                <p className="font-semibold text-navy text-sm">Are online degrees accepted by government employers?</p>
+                <p className="text-ink-3 text-sm mt-1">Degrees from UGC DEB approved universities are treated on par with regular degrees for PSU and government job eligibility. We can confirm which specific universities hold this approval before you apply.</p>
+              </div>
+              <div>
+                <p className="font-semibold text-navy text-sm">Can I get a scholarship for online programs?</p>
+                <p className="text-ink-3 text-sm mt-1">Several universities offer merit-based and need-based scholarships. Contact us with your last examination score and we will check your eligibility across multiple universities at once.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
