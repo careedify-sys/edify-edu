@@ -388,6 +388,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'dayananda-sagar-university-online',
+    logo: '/logos/university_logos/dsuonline-newlogo.svg',
     name: 'Dayananda Sagar University Online',
     abbr: 'DSUO',
     city: 'Online',
@@ -472,6 +473,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'dy-patil-university-online',
+    logo: '/logos/university_logos/dy-patil-university-navi-mumbai-logo.svg',
     name: 'D.Y. Patil University, Navi Mumbai Online',
     abbr: 'DPUNM',
     city: 'Sector 7',
@@ -812,6 +814,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'mangalayatan-university-online',
+    logo: '/logos/university_logos/mangalayatan-logo.svg',
     name: 'Mangalayatan University Online',
     abbr: 'MUO',
     city: 'Aligarh',
@@ -1114,6 +1117,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'galgotias-university-online',
+    logo: '/logos/university_logos/galgotias-university-logo.svg',
     name: 'Galgotias University Online',
     abbr: 'GUO',
     city: 'Greater Noida',
@@ -1434,6 +1438,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'yenepoya-university-online',
+    logo: '/logos/university_logos/yenepoya-university.svg',
     name: 'Yenepoya (Deemed to be University) Online',
     abbr: 'YUO',
     city: 'Deralakatte',
@@ -2878,6 +2883,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'university-of-mysore-online',
+    logo: '/logos/university_logos/university-of-mysor-logo.svg',
     name: 'University of Mysore Online',
     abbr: 'UM',
     city: 'Online',
@@ -4010,6 +4016,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'sastra-university-online',
+    logo: '/logos/university_logos/sastra-logo.svg',
     name: 'SASTRA Deemed University Online',
     abbr: 'SDUO',
     city: 'Thanjavur',
@@ -4224,6 +4231,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'shobhit-university-online',
+    logo: '/logos/university_logos/shobhit-university-logo.svg',
     name: 'Shobhit Institute of Engineering & Technology (Shobhit Online',
     abbr: 'SIET',
     city: 'Meerut',
@@ -4373,6 +4381,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'assam-don-bosco-university-online',
+    logo: '/logos/university_logos/assam-don-bosco-university-logo.svg',
     name: 'Assam Don Bosco University Online',
     abbr: 'ADBUC',
     city: 'Guwahati',
@@ -4699,6 +4708,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'ganpat-university-online',
+    logo: '/logos/university_logos/ganpat-university-logo.svg',
     name: 'Ganpat University Online',
     abbr: 'GU',
     city: 'Mehsana',
@@ -4824,6 +4834,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'guru-nanak-dev-university-online',
+    logo: '/logos/university_logos/guru-nanak-dev-logo.svg',
     name: 'Guru Nanak Dev University Online',
     abbr: 'GNDUO',
     city: 'Amritsar',
@@ -6312,6 +6323,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'gla-university-online',
+    logo: '/logos/university_logos/gla-mathura-online-logo.svg',
     name: 'GLA University Online',
     abbr: 'GUO',
     city: 'Mathura',

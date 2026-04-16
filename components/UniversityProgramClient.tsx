@@ -14,6 +14,7 @@ import type { Program, University } from '@/lib/data'
 import EnquiryModal from '@/components/EnquiryModal'
 import EdifyRecommends from '@/components/EdifyRecommends'
 import { UNIVERSITY_REVIEWS, GENERIC_REVIEWS } from '@/lib/reviews-data'
+import { getSampleDegree } from '@/lib/sample-degrees'
 
 const WA_NUMBER = '917061285806'
 
@@ -505,6 +506,18 @@ function FullPage({ u, program, programSlug, pd }: {
                       <CheckCircle size={14} className="text-green-500" /> {a}
                     </div>
                   ))}
+                </div>
+
+                <div className="bg-white border border-border rounded-xl p-5">
+                  <h3 className="font-bold text-navy text-sm mb-3">Sample Degree Certificate</h3>
+                  <p className="text-xs text-ink-2 mb-3">This is a sample of the degree certificate issued by {u.name} upon program completion.</p>
+                  <img
+                    src={getSampleDegree(u.id, program)}
+                    alt={`${u.name} sample degree certificate`}
+                    className="w-full max-w-sm mx-auto rounded-lg border border-border"
+                    loading="lazy"
+                    style={{ maxHeight: 400, objectFit: 'contain' }}
+                  />
                 </div>
 
                 <EdifyRecommends program={program} currentId={u.id} programSlug={programSlug} />
