@@ -243,7 +243,7 @@ export default async function CatchAllProgramPage(
                   {activeSpec ? (
                     <span className="text-amber-text">in {activeSpec}</span>
                   ) : (
-                    <span className="text-amber-text">Colleges in India {year} — UGC DEB Approved</span>
+                    <span className="text-amber-text">Universities in India {year} — UGC DEB Approved</span>
                   )}
                 </h1>
                 <p className="mt-4 text-lg text-ink-2 max-w-2xl leading-relaxed">
@@ -256,18 +256,18 @@ export default async function CatchAllProgramPage(
             {/* Stats Bar */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
               {[
-                { icon: BookOpen, label: 'Options', value: `${universities.length} Unis` },
+                { icon: BookOpen, label: 'Universities', value: `${universities.length}` },
                 { icon: Award, label: 'Min Fee', value: formatFee(feeMin) },
-                { icon: Users, label: 'Specs', value: `${allSpecs.length}+` },
-                { icon: Briefcase, label: 'Salary Range', value: '4L-18L' },
+                { icon: Users, label: 'Specialisations', value: `${allSpecs.length}+` },
+                { icon: Briefcase, label: 'Salary Range', value: '₹4L – ₹18L' },
               ].map(stat => (
-                <div key={stat.label} className="card p-4 flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-surface-2 flex items-center justify-center text-amber-text">
+                <div key={stat.label} className="bg-white rounded-xl p-5 border border-slate-200 flex flex-col gap-3">
+                  <div className="w-5 h-5 text-amber-text">
                     <stat.icon size={20}/>
                   </div>
                   <div>
-                    <div className="text-[10px] uppercase tracking-wider text-ink-3">{stat.label}</div>
-                    <div className="font-bold text-navy truncate">{stat.value}</div>
+                    <div className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-0.5">{stat.label}</div>
+                    <div className="text-2xl lg:text-3xl font-bold text-slate-900">{stat.value}</div>
                   </div>
                 </div>
               ))}

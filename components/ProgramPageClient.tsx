@@ -307,7 +307,7 @@ export default function ProgramPageClient({ program, programSlug, universities, 
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap items-center gap-1.5 mb-1">
                     <span className="text-xs font-bold text-amber-text uppercase tracking-wider">{u.naac} Accredited</span>
-                    {u.nirf < 200 && <span className="text-xs text-ink-3">· NIRF #{u.nirf}</span>}
+                    {u.nirf > 0 && u.nirf < 200 && <span className="text-xs text-ink-3">· NIRF #{u.nirf}</span>}
                     {DUAL_SPEC_IDS.includes(u.id) && (
                       <span style={{ background: '#0D9488', color: '#fff', fontSize: 10, fontWeight: 700, padding: '2px 10px', borderRadius: 20, letterSpacing: '0.02em', whiteSpace: 'nowrap' }}>
                         Dual Spec ✓
@@ -368,7 +368,7 @@ export default function ProgramPageClient({ program, programSlug, universities, 
               {filtered.slice(0, 15).map(u => (
                 <tr key={u.id} className="border-b border-border-light hover:bg-surface-1 transition-colors">
                   <td className="py-3 font-semibold text-navy">{u.name}</td>
-                  <td className="py-3 text-right font-bold text-amber-text">{formatFee(u.feeMin)}–{formatFee(u.feeMax)}</td>
+                  <td className="py-3 text-right font-bold text-amber-text">{u.feeMin === u.feeMax ? formatFee(u.feeMin) : `${formatFee(u.feeMin)}–${formatFee(u.feeMax)}`}</td>
                   <td className="py-3 text-right text-ink-2">₹{u.emiFrom.toLocaleString()}</td>
                   <td className="py-3 text-right text-ink-3">{u.programDetails?.[program]?.specs?.length || '—'}</td>
                 </tr>
