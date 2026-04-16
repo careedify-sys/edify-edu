@@ -120,7 +120,7 @@ export default async function ComparePage(
       {/* ── HERO — clean, focused ──────────────────────────────────────────── */}
       <div style={{ background: 'linear-gradient(160deg, #0d2240 0%, #1b3454 100%)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-10 pb-10 sm:pt-14 sm:pb-12 text-center">
-          <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-amber-400/50 bg-amber-400/20 text-amber-300 text-[11px] font-bold uppercase tracking-wider mb-5">
+          <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-amber-500 text-slate-900 text-[11px] font-bold uppercase tracking-wider mb-5">
             Updated for July 2026 Admission Session
           </span>
           <h1 className="font-display text-2xl sm:text-[2.2rem] font-bold text-white mb-3 leading-tight">
@@ -182,7 +182,7 @@ export default async function ComparePage(
       {/* ── TRUST STATS — static, server-rendered ─────────────────────────── */}
       <div style={{ background: 'linear-gradient(135deg, #0d2240 0%, #1e3a5f 100%)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
-          <p className="text-center text-white/60 text-xs font-semibold uppercase tracking-widest mb-6">Why students trust EdifyEdu</p>
+          <p className="text-center text-amber-400 text-xs font-semibold uppercase tracking-widest mb-6">Why students trust EdifyEdu</p>
           <div className="grid grid-cols-3 gap-4 sm:gap-8 mb-8">
             {[
               { icon: Award, stat: '125+', label: 'Universities Verified', sub: 'UGC DEB approved' },
@@ -193,12 +193,12 @@ export default async function ComparePage(
                 <item.icon size={20} className="text-amber-400 mx-auto mb-2" />
                 <p className="text-2xl sm:text-3xl font-bold text-amber-400">{item.stat}</p>
                 <p className="text-white text-xs sm:text-sm font-semibold mt-1">{item.label}</p>
-                <p className="text-white/60 text-[11px] mt-0.5">{item.sub}</p>
+                <p className="text-slate-400 text-[11px] mt-0.5">{item.sub}</p>
               </div>
             ))}
           </div>
           <div className="text-center">
-            <p className="text-white/60 text-sm mb-4">Our counsellors have reviewed every university's syllabus, placement record, and UGC approval status. Free 15-minute call, no obligation.</p>
+            <p className="text-slate-300 text-sm mb-4">Our counsellors have reviewed every university's syllabus, placement record, and UGC approval status. Free 15-minute call, no obligation.</p>
             <a
               href="tel:7061285806"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm text-white border border-amber-500/40 bg-amber-500/20 hover:bg-amber-500/30 transition-colors"

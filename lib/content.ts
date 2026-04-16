@@ -4855,7 +4855,35 @@ export const UNIVERSITY_LOGOS: Record<string, string> = {
   'vivekana-global-universi': '/logos/university_logos/vivekananda-global-university-logo.svg',
   'manav-rachna-internat-institut': '/logos/university_logos/manav-rachna-university-logo.svg',
   'alagappa-universi': '/logos/university_logos/bvdu-logo.svg', // Placeholder fix
-  'vignans-foundati-for-science': '/logos/university_logos/kl-university-online-logo.svg'
+  'vignans-foundati-for-science': '/logos/university_logos/kl-university-online-logo.svg',
+  // Full-ID mappings for universities without logo in data-slim
+  'srm-institute-science-technology-online': '/logos/university_logos/srm-color.svg',
+  'dayananda-sagar-university-online': '/logos/university_logos/dayanand-sagar-logo.svg',
+  'mangalayatan-university-online': '/logos/university_logos/mangalayatan-logo.svg',
+  'galgotias-university-online': '/logos/university_logos/galgotias-university-logo.svg',
+  'yenepoya-university-online': '/logos/university_logos/yenepoya-university.svg',
+  'sharda-university-online': '/logos/university_logos/sharda-university.svg',
+  'vtu-online': '/logos/university_logos/visvesvaraya-tchnological-university.svg',
+  'integral-university-online': '/logos/university_logos/integral-university.svg',
+  'dr-babasaheb-ambedkar-open-university-online': '/logos/university_logos/dr-babasahed-ambedkar-open-university.svg',
+  'university-of-mysore-online': '/logos/university_logos/university-of-mysor-logo.svg',
+  'gujarat-university-online': '/logos/university_logos/gujrat-university.svg',
+  'charusat-university-online': '/logos/university_logos/charusat.svg',
+  'maharishi-markandeshwar-university-online': '/logos/university_logos/maharishi-markandeshwar.svg',
+  'dr-mgr-educational-research-institute-online': '/logos/university_logos/dr-mgr-logo.svg',
+  'sgt-university-online': '/logos/university_logos/sgt.svg',
+  'sastra-university-online': '/logos/university_logos/sastra-logo.svg',
+  'dr-dy-patil-vidyapeeth-online': '/logos/university_logos/dr-dy-patil-vidyapeeth-pune-logo.svg',
+  'christ-university-online': '/logos/university_logos/christ-deemed-to-be-university.svg',
+  'shobhit-university-online': '/logos/university_logos/shobhit-university-logo.svg',
+  'bharati-vidyapeeth-university-online': '/logos/university_logos/bharati-vidyapeeth.svg',
+  'assam-don-bosco-university-online': '/logos/university_logos/assam-don-bosco-university-logo.svg',
+  'desh-bhagat-university-online': '/logos/university_logos/desh-bhagat-university.svg',
+  'guru-nanak-dev-university-online': '/logos/university_logos/guru-nanak-dev-logo.svg',
+  'gls-university-online': '/logos/university_logos/gujrat-law-socitey.svg',
+  'gla-university-online': '/logos/university_logos/gla-mathura-online-logo.svg',
+  'vit-vellore-online': '/logos/university_logos/vit_logo_306x100px-01-012025.svg',
+  'arka-jain-university-online': '/logos/university_logos/alliance-university-logo.svg',
 }
 
 export function getUniversityLogo(uniId: string): string | null {
