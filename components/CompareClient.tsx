@@ -169,7 +169,7 @@ function UniSlot({
         <div className="px-4 py-3 flex items-center justify-between">
           <div>
             <p className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold mb-0.5">Fees</p>
-            <p className="text-sm font-bold text-slate-800">{formatFee(fullU.feeMin)} – {formatFee(fullU.feeMax)}</p>
+            <p className="text-sm font-bold text-slate-800">{fullU.feeMin === fullU.feeMax ? formatFee(fullU.feeMin) : `${formatFee(fullU.feeMin)} – ${formatFee(fullU.feeMax)}`}</p>
           </div>
           {pd?.avgSalary && (
             <div className="text-right">
@@ -589,7 +589,7 @@ function UniCard({
         <div className="px-4 py-3 flex items-center justify-between gap-2">
           <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Course Fees</span>
           <div className="text-right">
-            <span className="text-sm font-bold text-slate-800">{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</span>
+            <span className="text-sm font-bold text-slate-800">{u.feeMin === u.feeMax ? formatFee(u.feeMin) : `${formatFee(u.feeMin)} – ${formatFee(u.feeMax)}`}</span>
             <p className="text-[11px] text-slate-500 mt-0.5">EMI from ₹{u.emiFrom.toLocaleString()}/mo</p>
           </div>
         </div>
@@ -747,7 +747,7 @@ function CompareContent() {
   function FeeDisplay({ u }: { u: University }) {
     return (
       <div className="text-center">
-        <p className="text-sm font-bold text-slate-800">{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</p>
+        <p className="text-sm font-bold text-slate-800">{u.feeMin === u.feeMax ? formatFee(u.feeMin) : `${formatFee(u.feeMin)} – ${formatFee(u.feeMax)}`}</p>
         <p className="text-[11px] text-slate-500 mt-0.5">Total program fee</p>
       </div>
     )
@@ -906,20 +906,35 @@ function CompareContent() {
                   </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                  <div className="p-3.5 rounded-xl border border-slate-100 bg-slate-50">
-                    <p className="text-[10px] font-semibold text-amber-600 uppercase tracking-wider mb-1">Highest Rank</p>
-                    <p className="text-sm font-bold text-slate-800 leading-snug mb-0.5">{verdict.bestNirf.name}</p>
-                    <p className="text-xs text-slate-500">NIRF #{verdict.bestNirf.nirf}</p>
+                  <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-sm" style={{ borderTop: '3px solid #0f172a' }}>
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="w-7 h-7 rounded-lg bg-slate-100 flex items-center justify-center flex-shrink-0">
+                        <Award size={14} className="text-slate-700" />
+                      </div>
+                      <p className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Highest Rank</p>
+                    </div>
+                    <p className="text-sm font-bold text-slate-900 leading-snug mb-1">{verdict.bestNirf.name}</p>
+                    <p className="text-xs font-semibold text-slate-500">NIRF #{verdict.bestNirf.nirf}</p>
                   </div>
-                  <div className="p-3.5 rounded-xl border border-slate-100 bg-slate-50">
-                    <p className="text-[10px] font-semibold text-green-600 uppercase tracking-wider mb-1">Best Value</p>
-                    <p className="text-sm font-bold text-slate-800 leading-snug mb-0.5">{verdict.cheapest.name}</p>
-                    <p className="text-xs text-slate-500">From {formatFee(verdict.cheapest.feeMin)}</p>
+                  <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-sm" style={{ borderTop: '3px solid #16a34a' }}>
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="w-7 h-7 rounded-lg bg-green-50 flex items-center justify-center flex-shrink-0">
+                        <Wallet size={14} className="text-green-600" />
+                      </div>
+                      <p className="text-[10px] font-bold text-green-600 uppercase tracking-wider">Best Value</p>
+                    </div>
+                    <p className="text-sm font-bold text-slate-900 leading-snug mb-1">{verdict.cheapest.name}</p>
+                    <p className="text-xs font-semibold text-slate-500">From {formatFee(verdict.cheapest.feeMin)}</p>
                   </div>
-                  <div className="p-3.5 rounded-xl border border-slate-100 bg-slate-50">
-                    <p className="text-[10px] font-semibold text-blue-600 uppercase tracking-wider mb-1">Career Reach</p>
-                    <p className="text-sm font-bold text-slate-800 leading-snug mb-0.5">{verdict.bestSalary.name}</p>
-                    <p className="text-xs text-slate-500">Top Hiring Index for {program}</p>
+                  <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-sm" style={{ borderTop: '3px solid #d97706' }}>
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="w-7 h-7 rounded-lg bg-amber-50 flex items-center justify-center flex-shrink-0">
+                        <TrendingUp size={14} className="text-amber-600" />
+                      </div>
+                      <p className="text-[10px] font-bold text-amber-600 uppercase tracking-wider">Career Reach</p>
+                    </div>
+                    <p className="text-sm font-bold text-slate-900 leading-snug mb-1">{verdict.bestSalary.name}</p>
+                    <p className="text-xs font-semibold text-slate-500">Top Hiring Index for {program}</p>
                   </div>
                 </div>
               </div>
