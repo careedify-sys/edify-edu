@@ -394,6 +394,29 @@ export default async function BlogPostPage({ params }: Props) {
                 postUrl={postUrl}
               />
 
+              {/* From Our Guides — links to /guides/* pages to break content silo */}
+              <div className="mt-6 bg-white rounded-2xl border border-border p-5">
+                <div className="text-[10px] font-black uppercase tracking-widest mb-3" style={{ color: '#D4922A' }}>
+                  From Our Guides
+                </div>
+                <div className="grid sm:grid-cols-3 gap-3">
+                  {[
+                    { title: 'Is Online Degree Valid in India?', href: '/guides/is-online-degree-valid-india' },
+                    { title: 'Online MBA for Government Jobs', href: '/guides/online-mba-for-government-jobs' },
+                    { title: 'How to Check UGC DEB Approval', href: '/guides/how-to-check-ugc-deb-approval' },
+                  ].map(g => (
+                    <Link
+                      key={g.href}
+                      href={g.href}
+                      className="block text-xs font-semibold no-underline hover:underline"
+                      style={{ color: '#0B1D35' }}
+                    >
+                      {g.title} →
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
               {/* Related articles */}
               {otherPosts.length > 0 && (
                 <div className="mt-8">

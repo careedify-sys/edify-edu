@@ -9,7 +9,7 @@ export default function Footer() {
         .footer-link:hover { color: rgba(255,255,255,0.9); }
       `}</style>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-14 pb-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-10 mb-12">
 
           {/* Brand */}
           <div className="md:col-span-1">
@@ -67,11 +67,11 @@ export default function Footer() {
             <h4 className="text-xs font-bold uppercase tracking-widest mb-5 text-amber">Top Universities</h4>
             {[
               { label:'NMIMS Online',     href:'/universities/nmims-online' },
-              { label:'Symbiosis SSODL',   href:'/universities/symbiosis-university-online' },
+              { label:'Symbiosis SSODL',  href:'/universities/symbiosis-university-online' },
               { label:'Manipal Online',   href:'/universities/manipal-university-jaipur-online' },
               { label:'LPU Online',       href:'/universities/lovely-professional-university-online' },
               { label:'Amity Online',     href:'/universities/amity-university-online' },
-              { label:'View All 100+ →',  href:'/universities' },
+              { label:'View All 125+ →',  href:'/universities' },
             ].map(l => (
               <Link key={l.href} href={l.href} className="footer-link">{l.label}</Link>
             ))}
@@ -94,20 +94,39 @@ export default function Footer() {
             ))}
           </div>
 
+          {/* Guides + Tools */}
+          <div>
+            <h4 className="text-xs font-bold uppercase tracking-widest mb-5 text-amber">Guides</h4>
+            {[
+              { label:'Is Online Degree Valid in India?',     href:'/guides/is-online-degree-valid-india' },
+              { label:'Online MBA for Government Jobs',        href:'/guides/online-mba-for-government-jobs' },
+              { label:'Online MBA vs Distance MBA',           href:'/guides/online-mba-vs-distance-mba' },
+              { label:'How to Check UGC DEB Approval',        href:'/guides/how-to-check-ugc-deb-approval' },
+              { label:'NAAC & NIRF Rankings Explained',       href:'/guides/naac-nirf-rankings-explained' },
+              { label:'Online MBA Eligibility in India',      href:'/guides/online-mba-eligibility-india' },
+            ].map(l => (
+              <Link key={l.href} href={l.href} className="footer-link">{l.label}</Link>
+            ))}
+            <h4 className="text-xs font-bold uppercase tracking-widest mt-6 mb-5 text-amber">Tools</h4>
+            {[
+              { label:'EMI Calculator',         href:'/tools/emi-calculator' },
+              { label:'CGPA Calculator',         href:'/tools/cgpa-calculator' },
+              { label:'Percentage to GPA',       href:'/tools/percentage-to-gpa' },
+            ].map(l => (
+              <Link key={l.href} href={l.href} className="footer-link">{l.label}</Link>
+            ))}
+          </div>
+
           {/* Resources */}
           <div>
             <h4 className="text-xs font-bold uppercase tracking-widest mb-5 text-amber">Resources</h4>
             {[
-              { label:'Is My Degree Valid for Govt Jobs?', href:'/guides' },
-              { label:'Online vs Distance Education',      href:'/guides' },
-              { label:'Compare Universities',              href:'/compare' },
-              { label:'UGC DEB What It Means',            href:'/guides' },
-              { label:'Is Online MBA Worth It?',           href:'/guides' },
-              { label:'Discount Coupons',                  href:'/coupons' },
-              { label:'Blog',                              href:'/blog' },
-              { label:'About Us',                          href:'/about' },
-              { label:'Contact Us',                        href:'/contact' },
-              { label:'Privacy Policy',                    href:'/privacy-policy' },
+              { label:'Compare Universities',  href:'/compare' },
+              { label:'Discount Coupons',      href:'/coupons' },
+              { label:'Blog',                  href:'/blog' },
+              { label:'About Us',              href:'/about' },
+              { label:'Contact Us',            href:'/contact' },
+              { label:'Privacy Policy',        href:'/privacy-policy' },
             ].map(l => (
               <Link key={l.label} href={l.href} className="footer-link">{l.label}</Link>
             ))}

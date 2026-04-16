@@ -374,6 +374,42 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Popular Guides ── */}
+      <section style={{ padding:'64px 0', background:'var(--surface)' }}>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div style={{ textAlign:'center', marginBottom:'40px' }}>
+            <div className="section-label">Free Guides</div>
+            <h2 style={{ fontFamily:"'Fraunces',serif", fontSize:'clamp(1.4rem,3vw,2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
+              Honest Answers Before You Enrol
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { icon:'🏛️', title:'Is Online Degree Valid in India?', desc:'UGC 2020 notification, government job eligibility, what DEB approval means.', href:'/guides/is-online-degree-valid-india' },
+              { icon:'📋', title:'Online MBA for Government Jobs', desc:'Which online MBAs count for UPSC, SSC, banking and state PSC exams.', href:'/guides/online-mba-for-government-jobs' },
+              { icon:'🔍', title:'How to Check UGC DEB Approval', desc:'Step-by-step: verify any university\'s online degree approval in 2 minutes.', href:'/guides/how-to-check-ugc-deb-approval' },
+              { icon:'🎓', title:'Online MBA vs Distance MBA', desc:'Key differences, validity, fee range, and which suits working professionals.', href:'/guides/online-mba-vs-distance-mba' },
+              { icon:'📊', title:'NAAC & NIRF Rankings Explained', desc:'What NAAC grades and NIRF ranks actually mean for your MBA choice.', href:'/guides/naac-nirf-rankings-explained' },
+              { icon:'✅', title:'Online MBA Eligibility India', desc:'Graduation requirements, age limits, entrance exams — all clarified.', href:'/guides/online-mba-eligibility-india' },
+            ].map(g => (
+              <Link key={g.href} href={g.href} className="no-underline group">
+                <div style={{ background:'var(--bg)', border:'1px solid var(--border)', borderRadius:'var(--r-sm)', padding:'20px', height:'100%', transition:'var(--t-base)' }}
+                  className="group-hover:border-amber/40 group-hover:shadow-sm transition-all">
+                  <div style={{ fontSize:'24px', marginBottom:'10px' }}>{g.icon}</div>
+                  <div style={{ fontWeight:700, fontSize:'14px', color:'var(--navy)', lineHeight:1.4, marginBottom:'6px' }}>{g.title}</div>
+                  <p style={{ fontSize:'12.5px', color:'var(--ink-3)', lineHeight:1.6, margin:0 }}>{g.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div style={{ textAlign:'center', marginTop:'32px' }}>
+            <Link href="/guides" style={{ fontSize:'13px', fontWeight:600, color:'var(--amber-text)', textDecoration:'none' }}>
+              View all guides →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-16 bg-bg">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">

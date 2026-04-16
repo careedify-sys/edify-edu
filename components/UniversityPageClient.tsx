@@ -180,7 +180,7 @@ export default function UniversityPageClient({ university: u }: Props) {
                 </div>
 
                 {/* Quick Stats */}
-                <div className="flex flex-wrap gap-3 mb-6">
+                <div className="flex flex-wrap gap-3 mb-3">
                   {[
                     { label: 'Total Fee', value: `${formatFee(u.feeMin)} – ${formatFee(u.feeMax)}` },
                     { label: 'EMI from', value: `₹${u.emiFrom.toLocaleString()}/mo` },
@@ -192,6 +192,11 @@ export default function UniversityPageClient({ university: u }: Props) {
                       <div className="text-[15px] font-bold text-white">{stat.value}</div>
                     </div>
                   ))}
+                </div>
+                <div className="mb-6">
+                  <Link href="/tools/emi-calculator" className="text-[12px] text-amber no-underline hover:underline font-semibold">
+                    Calculate your exact monthly EMI →
+                  </Link>
                 </div>
 
                 <div className="flex flex-wrap gap-3">
@@ -585,6 +590,20 @@ export default function UniversityPageClient({ university: u }: Props) {
                     >
                       <span className="text-ink-2 font-medium">{prog}</span>
                       <span className="text-amber text-xs">{u.programDetails[prog]?.fees || formatFee(u.feeMin)}</span>
+                    </Link>
+                  ))}
+                </div>
+
+                <div className="bg-white border border-border rounded-xl p-4">
+                  <div className="font-bold text-navy text-sm mb-3">Useful Guides</div>
+                  {[
+                    { label:'Is Online Degree Valid in India?', href:'/guides/is-online-degree-valid-india' },
+                    { label:'How to Check UGC DEB Approval', href:'/guides/how-to-check-ugc-deb-approval' },
+                    { label:'NAAC & NIRF Rankings Explained', href:'/guides/naac-nirf-rankings-explained' },
+                    { label:'Online MBA Eligibility', href:'/guides/online-mba-eligibility-india' },
+                  ].map(g => (
+                    <Link key={g.href} href={g.href} className="block py-2 border-b border-border text-xs font-medium text-ink-2 no-underline hover:text-amber transition-colors">
+                      {g.label}
                     </Link>
                   ))}
                 </div>
