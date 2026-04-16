@@ -143,7 +143,7 @@ export default function UniversityPageClient({ university: u }: Props) {
                     </div>
                   )}
                   <h1 className="font-display flex-1" style={{fontSize:'clamp(1.6rem,4vw,2.4rem)',fontWeight:800,color:'#fff',lineHeight:1.15,margin:0}}>
-                    {u.name}
+                    {cleanName} Online — {u.programs.slice(0,3).join(', ')} Fees &amp; Reviews 2026
                   </h1>
                   {(u as any).enrollments ? (
                     <div className="flex flex-wrap gap-3 mt-2">

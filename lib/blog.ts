@@ -8,6 +8,7 @@ export interface BlogPost {
   targetKeyword: string; status: 'published' | 'draft'
   ctaTitle?: string; ctaDesc?: string
   seoTitle?: string
+  author?: string
   quickFacts?: { label: string; value: string; green?: boolean }[]
 }
 
@@ -11847,6 +11848,7 @@ export const BLOG_POSTS: BlogPost[] = [
     targetKeyword: 'arka jain online mba',
     relatedUniversities: ['arka-jain-university'],
     status: 'published',
+    author: 'Komal Srivastava',
     ctaTitle: 'Compare ARKA JAIN Against Other Online MBA Programs',
     ctaDesc: 'See how ARKA JAIN compares to JAIN Online, Galgotias, and 20+ other UGC-approved programs — fees, AI syllabus, specializations side by side.',
     faqs: [
@@ -12073,6 +12075,7 @@ export const BLOG_POSTS: BlogPost[] = [
     targetKeyword: 'noida international university online mba',
     relatedUniversities: ['noida-international-university'],
     status: 'published',
+    author: 'Komal Srivastava',
     ctaTitle: 'Compare NIU Against Other Online MBA Programs',
     ctaDesc: 'See how NIU Online MBA stacks up against Galgotias, Sharda and other Greater Noida programs — fees, specializations, accreditation side by side.',
     faqs: [
@@ -12269,6 +12272,7 @@ export const BLOG_POSTS: BlogPost[] = [
     targetKeyword: 'shoolini online mba',
     relatedUniversities: ['shoolini-university'],
     status: 'published',
+    author: 'Komal Srivastava',
     ctaTitle: 'Compare Shoolini Against Other Online MBA Programs',
     ctaDesc: 'See how Shoolini stacks up against DSU, SMU, JAIN and 20+ other UGC-approved programs — fees, niche specializations, Pay After Placement explained.',
     faqs: [
@@ -12499,6 +12503,7 @@ export const BLOG_POSTS: BlogPost[] = [
     targetKeyword: 'dy patil online mba review',
     relatedUniversities: ['dy-patil-university-online'],
     status: 'published' as const,
+    author: 'Komal Srivastava',
     ctaTitle: 'Planning to work abroad after your MBA?',
     ctaDesc: 'EdifyEdu tracks WES-recognized online MBAs in India with full fee and syllabus data. No commissions.',
     faqs: [
@@ -12682,6 +12687,7 @@ export const BLOG_POSTS: BlogPost[] = [
     targetKeyword: 'chandigarh university online mba review',
     relatedUniversities: ['chandigarh-university-online'],
     status: 'published' as const,
+    author: 'Komal Srivastava',
     ctaTitle: 'Comparing CU Online MBA with NMIMS, JAIN, or Symbiosis?',
     ctaDesc: 'EdifyEdu covers all major programs with fee, certification, and syllabus comparisons. No paid rankings.',
     faqs: [
@@ -12886,6 +12892,7 @@ export const BLOG_POSTS: BlogPost[] = [
     targetKeyword: 'jaypee jiit online mba review',
     relatedUniversities: ['jiit-online'],
     status: 'published' as const,
+    author: 'Komal Srivastava',
     ctaTitle: 'Looking for the best online MBA for engineers and IT professionals?',
     ctaDesc: 'EdifyEdu has a dedicated comparison of tech-forward online MBA programs with full syllabus and fee data.',
     faqs: [
