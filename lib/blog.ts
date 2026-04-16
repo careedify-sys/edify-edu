@@ -9616,7 +9616,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="cta-block">
 <h3>Ready to Upgrade Your Qualifications?</h3>
 <p>Compare 50+ <a href="/universities">UGC DEB approved universities</a> offering <a href="/programs/mba">online MBA</a>, MCA, BBA, BCA, B.Com — all in one place.</p>
-<a href="/universities" style="display:inline-block;background:#f59e0b;color:#000;padding:10px 22px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:8px"><a href="/compare">compare universities</a> →</a>
+<a href="/compare" style="display:inline-block;background:#f59e0b;color:#000;padding:10px 22px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:8px">Compare Universities →</a>
 </div>
 <p>Arithmetic alone covers 8 to 10 questions per paper consistently over the last five years. If you get your arithmetic fundamentals right, you can realistically target 50 to 60 percent of QA marks before touching geometry or modern maths.</p>
 <p>One thing worth knowing: the QA section increasingly uses TITA questions (around 6 to 8 per paper). These tend to have cleaner, integer answers. Develop the habit of checking whether your answer is a whole number — if it isn't, you likely made an error.</p>
@@ -9684,7 +9684,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="cta-block">
 <h3>Ready to Upgrade Your Qualifications?</h3>
 <p>Compare 50+ <a href="/universities">UGC DEB approved universities</a> offering <a href="/programs/mba">online MBA</a>, MCA, BBA, BCA, B.Com — all in one place.</p>
-<a href="/universities" style="display:inline-block;background:#f59e0b;color:#000;padding:10px 22px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:8px"><a href="/compare">compare universities</a> →</a>
+<a href="/compare" style="display:inline-block;background:#f59e0b;color:#000;padding:10px 22px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:8px">Compare Universities →</a>
 </div>
 <h3>BCA freshers</h3>
 <p>'<a href="/programs/bca" style="color:inherit;text-decoration:underline;text-underline-offset:2px">BCA</a> in Python web development and basic machine learning. Seeking a software developer or junior data analyst role at a technology company where I can build full-stack skills and contribute to live product development.'</p>
@@ -9927,7 +9927,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="cta-block">
 <h3>Ready to Upgrade Your Qualifications?</h3>
 <p>Compare 50+ <a href="/universities">UGC DEB approved universities</a> offering <a href="/programs/mba">online MBA</a>, MCA, BBA, BCA, B.Com — all in one place.</p>
-<a href="/universities" style="display:inline-block;background:#f59e0b;color:#000;padding:10px 22px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:8px"><a href="/compare">compare universities</a> →</a>
+<a href="/compare" style="display:inline-block;background:#f59e0b;color:#000;padding:10px 22px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:8px">Compare Universities →</a>
 </div>
 <h3>JEE Advanced — math, physics, and chemistry at extreme depth</h3>
 <p>JEE Main screens out everyone except the top 2.5 lakh students from 14.76 lakh who sat the exam in 2025. Of those 2.5 lakh who take JEE Advanced, about 54,000 qualify for IIT admission. IIT seats total approximately 17,000. That is an effective admission rate below 2% from all JEE Main candidates.</p>
