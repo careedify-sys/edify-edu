@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 
   const year = new Date().getFullYear()
   const pd = u.programDetails['MCA']
+  const titleName = getTitleName(u.id, u.name, u.abbr)
   const syllabus = getMasterSyllabus(u.id, 'MCA') as any
   const description = syllabus?.metaDesc ||
     `${titleName} online MCA: ${pd?.specs?.length || 3}+ specializations, fees ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}, NAAC ${u.naac}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved.`
   const keywords = syllabus?.metaKeywords || undefined
-  const titleName = getTitleName(u.id, u.name, u.abbr)
   return {
     title: `${titleName} Online MCA — Fees & Syllabus ${year} | EdifyEdu`,
     description,
