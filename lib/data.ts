@@ -1523,6 +1523,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'sharda-university-online',
+    logo: '/logos/university_logos/sharda-university.svg',
     name: 'Sharda University Online',
     abbr: 'SUO',
     city: 'Greater Noida',
@@ -2066,6 +2067,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'vtu-online',
+    logo: '/logos/university_logos/visvesvaraya-tchnological-university.svg',
     name: 'Visvesvaraya Technological University (VTU) Online',
     abbr: 'VTU',
     city: 'Online',
@@ -2140,6 +2142,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'integral-university-online',
+    logo: '/logos/university_logos/integral-university.svg',
     name: 'Integral University Online',
     abbr: 'IUO',
     city: 'Lucknow',
@@ -2624,6 +2627,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'dr-babasaheb-ambedkar-open-university-online',
+    logo: '/logos/university_logos/dr-babasahed-ambedkar-open-university.svg',
     name: 'Dr. Babasaheb Ambedkar Open University Online',
     abbr: 'DBAOU',
     city: 'Online',
@@ -3048,6 +3052,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'gujarat-university-online',
+    logo: '/logos/university_logos/gujrat-university.svg',
     name: 'Gujarat University Online',
     abbr: 'GUDO',
     city: 'Online',
@@ -3127,6 +3132,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'charusat-university-online',
+    logo: '/logos/university_logos/charusat.svg',
     name: 'CHARUSAT (Charotar University of Science and Online',
     abbr: 'CUS',
     city: 'Online',
@@ -3201,6 +3207,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'gls-university-online',
+    logo: '/logos/university_logos/gujrat-law-socitey.svg',
     name: 'GLS University Online',
     abbr: 'GUDO',
     city: 'Online',
@@ -3270,6 +3277,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'maharishi-markandeshwar-university-online',
+    logo: '/logos/university_logos/maharishi-markandeshwar.svg',
     name: 'Maharishi Markandeshwar (Deemed to be University) Online',
     abbr: 'MMU',
     city: 'Online',
@@ -3498,6 +3506,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'dr-mgr-educational-research-institute-online',
+    logo: '/logos/university_logos/dr-mgr-logo.svg',
     name: 'Dr. MGR Educational and Research Institute Online',
     abbr: 'DMERI',
     city: 'Chennai',
@@ -3676,6 +3685,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'sgt-university-online',
+    logo: '/logos/university_logos/sgt.svg',
     name: 'SGT University Online',
     abbr: 'SUDO',
     city: 'Online',
@@ -3826,6 +3836,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'vit-university-online',
+    logo: '/logos/university_logos/vellore-institute-of-technology-logo.svg',
     name: 'Vellore Institute of Science and Technology (VIT Online',
     abbr: 'VIST',
     city: 'Vellore',
@@ -4157,6 +4168,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'christ-university-online',
+    logo: '/logos/university_logos/christ-deemed-to-be-university.svg',
     name: 'Christ (Deemed to be University) Online',
     abbr: 'CUO',
     city: 'Online',
@@ -4636,6 +4648,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'desh-bhagat-university-online',
+    logo: '/logos/university_logos/desh-bhagat-university.svg',
     name: 'Desh Bhagat University Online',
     abbr: 'DBUO',
     city: 'Mandi Gobindgarh',
@@ -5011,6 +5024,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'srm-university-sikkim-online',
+    logo: '/logos/university_logos/shri-ramaswamy-university-sikkim-logo.svg',
     name: 'SRM University Sikkim Online',
     abbr: 'SRMUS',
     city: 'Gangtok',
@@ -5156,6 +5170,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'vit-vellore-online',
+    logo: '/logos/university_logos/vellore-institute-of-technology-logo.svg',
     name: 'Vellore Institute of Technology Online',
     abbr: 'VITO',
     city: 'Vellore',
@@ -5618,6 +5633,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'datta-meghe-university-online',
+    logo: '/logos/university_logos/datta-meghe.svg',
     name: 'Datta Meghe Institute of Higher Education & Research Online',
     abbr: 'DMIHE',
     city: 'Wardha / Nagpur',
@@ -5715,6 +5731,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'centurion-university-online',
+    logo: '/logos/university_logos/centurion-university.svg',
     name: 'Centurion University of Technology and Management Online',
     abbr: 'CUTM',
     city: 'Gajapati / Bhubaneswar',
@@ -5767,6 +5784,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'guru-kashi-university-online',
+    logo: '/logos/university_logos/guru-kashi-university.svg',
     name: 'Guru Kashi University Online',
     abbr: 'GKUO',
     city: '',
@@ -5809,6 +5827,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'jaipur-national-university-online',
+    logo: '/logos/university_logos/jaipur-nataional-univesity.svg',
     name: 'Jaipur National University Online',
     abbr: 'JNUJ',
     city: 'Jaipur',
@@ -5863,6 +5882,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'bs-abdur-rahman-university-online',
+    logo: '/logos/university_logos/crescent-logo.svg',
     name: 'B.S. Abdur Rahman Crescent Institute of Science and Online',
     abbr: 'BARCI',
     city: 'Vandalur',
@@ -5917,6 +5937,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'srm-institute-science-technology-online',
+    logo: '/logos/university_logos/srm-institue-tamil-nadu-logo.svg',
     name: 'SRM Institute of Science and Technology Online',
     abbr: 'SRMIST',
     city: 'Kattankulathur',
@@ -6566,6 +6587,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'jawaharlal-nehru-university-online',
+    logo: '/logos/university_logos/jnu-logo-final.svg',
     name: 'JAWAHARLAL NEHRU UNIVERSITY Online',
     abbr: 'JNU',
     city: 'New Delhi',
@@ -6888,6 +6910,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'graphic-era-university-online',
+    logo: '/logos/university_logos/graphic-era-university.svg',
     name: 'GRAPHIC ERA UNIVERSITY Online',
     abbr: 'GEU',
     city: 'Dehradun',
@@ -7105,6 +7128,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'shanmugha-arts-science-technology-research-online',
+    logo: '/logos/university_logos/sastra-university-logo.svg',
     name: 'SHANMUGHA ARTS, SCIENCE, TECHNOLOGY & RESEARCH ACADEMY Online',
     abbr: 'SASTR',
     city: 'Chennai',
@@ -7433,6 +7457,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'guru-gobind-singh-indraprastha-university-online',
+    logo: '/logos/university_logos/guru-gobind-singhindraprastha-university.svg',
     name: 'GURU GOBIND SINGH INDRAPRASTHA VISHWAVIDYALAYA Online',
     abbr: 'GGSIV',
     city: 'New Delhi',
@@ -7956,6 +7981,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'guru-jambheshwar-university-online',
+    logo: '/logos/university_logos/guru-jambeshwar-university-of-science-and-technology.svg',
     name: 'GURU JAMBHESHWAR UNIVERSITY OF SCIENCE AND TECHNOLOGY Online',
     abbr: 'GJUOS',
     city: 'Rohtak',
@@ -8150,6 +8176,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'mats-university-online',
+    logo: '/logos/university_logos/mats-university.svg',
     name: 'MATS UNIVERSITY Online',
     abbr: 'MU',
     city: 'Raipur',
@@ -8295,6 +8322,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'mody-university-online',
+    logo: '/logos/university_logos/mody-university.svg',
     name: 'MODY UNIVERSITY OF SCIENCE AND TECHNOLOGY Online',
     abbr: 'MUOSA',
     city: 'Jaipur',
@@ -8397,6 +8425,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'sage-university-online',
+    logo: '/logos/university_logos/sage-university-logo.svg',
     name: 'SAGE UNIVERSITY Online',
     abbr: 'SU',
     city: 'Bhopal',
