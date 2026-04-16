@@ -122,8 +122,8 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 220000,
-    feeMax: 220000,
+    feeMin: 160000,
+    feeMax: 196000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -136,7 +136,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Business Analytics', 'Digital Marketing', 'International Business', 'Operations Management', 'Logistics & Supply Chain Management', 'Entrepreneurship & Leadership', 'Healthcare Management', 'Retail Management', 'Information Technology (IT)', 'Banking & Financial Services', 'General Management'],
-        fees: '₹0.1L – ₹2.8L',
+        fees: '₹1.96L',
         duration: '2 Yrs',
         roles: ['HR Executive', 'Finance Analyst', 'Talent Acquisition Specialist', 'Investment Analyst Trainee'],
         avgSalary: '₹5L – ₹18L per annum',
@@ -233,7 +233,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Amity University Online — recognised for corporate hiring.'},
       'MCA': {
         specs: ['general', 'Artificial Intelligence and Machine Learning', 'Financial Technology and AI', 'Cyber Security', 'Software Engineering', 'Blockchain Technology'],
-        fees: '₹1.99L',
+        fees: '₹1.7L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -296,7 +296,7 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 146240,
+    feeMin: 108800,
     feeMax: 146240,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
@@ -311,7 +311,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Human Resource Management', 'Finance', 'Marketing', 'Operations Management', 'Business Analytics', 'Digital Marketing', 'Data Science', 'Information Technology (IT)', 'International Business', 'Hospital & Healthcare Management', 'Logistics & Supply Chain Management', 'Banking & Financial Services'],
-        fees: '₹40K – ₹161K',
+        fees: '₹1.46L',
         duration: '2 Years (4 Semesters); extendable to 4 years',
         roles: ['Marketing Manager', 'Brand Manager', 'Digital Marketing Specialist', 'Product Manager', 'Market Research Analyst', 'Sales Manager'],
         avgSalary: '₹5L – ₹15L per annum',
@@ -320,7 +320,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Lovely Professional University (LPU) — recognised for corporate hiring.'},
       'MCA': {
         specs: ['AR/VR (Game Development)', 'Machine Learning & AI', 'Data Science', 'Cybersecurity', 'Full Stack Web Development', 'Cloud Computing'],
-        fees: '₹37K',
+        fees: '₹1.08L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -415,7 +415,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Business Analytics', 'Operations Management', 'International Business', 'Healthcare Management', 'Information Technology Management'],
-        fees: '₹30K – ₹120K',
+        fees: '₹1.2L',
         duration: '2 Years',
         roles: ['HR Executive', 'Recruiter', 'Training Coordinator.'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -566,7 +566,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'International Business', 'Business Analytics', 'Energy Management', 'Logistics & Supply Chain Management', 'Oil & Gas Management', 'Digital Marketing', 'Healthcare Management'],
-        fees: '₹0.1L – ₹2.4L',
+        fees: '₹1.75L',
         duration: '2 Years',
         roles: ['Marketing Coordinator', 'Marketing Analyst', 'Digital Marketing Specialist', 'Market Researcher'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -851,7 +851,7 @@ export const UNIVERSITIES: University[] = [
       },
       'MCA': {
         specs: ['General'],
-        fees: '₹0K',
+        fees: '₹67K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -932,8 +932,8 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 110000,
-    feeMax: 110000,
+    feeMin: 130000,
+    feeMax: 130000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -946,7 +946,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'Business Analytics', 'Digital Marketing', 'International Business', 'Data Science', 'Logistics & Supply Chain Management', 'Healthcare Management', 'IT Management', 'Entrepreneurship', 'Banking & Financial Services', 'Retail Management', 'Tourism & Hospitality Management'],
-        fees: '₹0.2L – ₹2.0L',
+        fees: '₹1.3L',
         duration: '2 Years',
         roles: ['Business Analyst', 'Marketing Manager', 'Financial Analyst', 'HR Manager', 'Operations Manager', 'IT Manager'],
         avgSalary: '₹4L – ₹20L per annum',
@@ -956,7 +956,7 @@ export const UNIVERSITIES: University[] = [
       },
       'MCA': {
         specs: ['Artificial Intelligence & Machine Learning', 'Cybersecurity', 'Data Science'],
-        fees: '₹0K',
+        fees: '₹1.3L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -1132,7 +1132,7 @@ export const UNIVERSITIES: University[] = [
     govtRecognised: true,
     psuEligible: true,
     feeMin: 76200,
-    feeMax: 76200,
+    feeMax: 84200,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -1145,7 +1145,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Finance', 'Human Resource Management', 'Marketing Management', 'Operations Management', 'Business Analytics', 'Healthcare Management', 'International Business Management'],
-        fees: '₹76K – ₹76K',
+        fees: '₹76.2K',
         duration: '2 Yrs',
         roles: ['Financial Analyst', 'Investment Analyst Trainee', 'Credit Analyst'],
         avgSalary: '₹5L – ₹15L per annum',
@@ -1154,7 +1154,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Galgotias University – Online (galg — recognised for corporate hiring.'},
       'MCA': {
         specs: ['General'],
-        fees: '₹1K',
+        fees: '₹84.2K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -1322,7 +1322,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Human Resource Management', 'Finance', 'Operations Management', 'Logistics & Supply Chain Management', 'Agri Operations Management', 'International Business', 'Business Analytics', 'Hospital & Health Care Management'],
-        fees: '₹78K – ₹315K',
+        fees: '₹3.15L',
         duration: '2 Years',
         roles: ['Business Analyst', 'HR Executive', 'Marketing Coordinator', 'Operations Associate', 'Supply Chain Analyst'],
         avgSalary: '₹6L – ₹10L per annum',
@@ -1545,8 +1545,8 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 150000,
-    feeMax: 150000,
+    feeMin: 120000,
+    feeMax: 140000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -1559,7 +1559,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'Business Analytics', 'International Business'],
-        fees: '₹150K – ₹150K',
+        fees: '₹1.4L',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: 'Not Mentioned',
@@ -1568,7 +1568,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Sharda University (Sharda Online) — recognised for corporate hiring.'},
       'MCA': {
         specs: ['Artificial Intelligence & Machine Learning', 'Cybersecurity', 'Data Science'],
-        fees: '₹30K',
+        fees: '₹1.2L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -1636,8 +1636,8 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 110000,
-    feeMax: 110000,
+    feeMin: 90000,
+    feeMax: 90000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -1650,7 +1650,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'Business Analytics', 'Data Science', 'Healthcare Management'],
-        fees: '₹22K – ₹90K',
+        fees: '₹90K',
         duration: '2 Years',
         roles: ['Financial Analyst', 'Tax Analyst', 'Investment Banking Trainee', 'Credit Analyst'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -1779,8 +1779,8 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 220000,
-    feeMax: 220000,
+    feeMin: 196000,
+    feeMax: 196000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -1793,7 +1793,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Business Administration', 'Finance', 'Marketing', 'Human Resource Management', 'Operations Management'],
-        fees: '₹60K – ₹200K',
+        fees: '₹1.96L',
         duration: '2 Years (4-year max validity)',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Analyst'],
         avgSalary: '₹5L – ₹10L per annum',
@@ -1840,7 +1840,7 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 280000,
+    feeMin: 220000,
     feeMax: 280000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
@@ -1928,8 +1928,8 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 60000,
-    feeMax: 200000,
+    feeMin: 65500,
+    feeMax: 65500,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -1951,7 +1951,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Koneru Lakshmaiah Education Foundat — recognised for corporate hiring.'},
       'MCA': {
         specs: ['Artificial Intelligence', 'Data Science', 'Cloud Technology', 'Cybersecurity'],
-        fees: '₹66K',
+        fees: '₹65.5K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -2004,7 +2004,7 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 165000,
+    feeMin: 155000,
     feeMax: 165000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
@@ -2018,7 +2018,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['General Management', 'Marketing Management', 'Finance', 'Human Resource Management', 'Business Analytics', 'Data Science', 'International Business', 'Operations Management', 'Logistics & Supply Chain Management', 'Healthcare & Hospital Administration', 'Information Technology', 'Entrepreneurship & Family Business', 'Retail Management', 'Banking, Insurance & Financial Services', 'Digital Marketing', 'Agri Business Management', 'Sports Management', 'Tourism & Hospitality Management', 'Aviation Management', 'Oil & Gas Management', 'Media & Communication Management', 'Infrastructure Management', 'Energy Management'],
-        fees: '₹0.4L – ₹2.2L',
+        fees: '₹1.65L',
         duration: '2 Years (4 Semesters)',
         roles: ['Marketing Manager (₹7–20 LPA)', 'Business Analyst (₹6–18 LPA)', 'Financial Analyst (₹5–15 LPA)', 'HR Manager (₹6–18 LPA)', 'Operations Manager (₹7–22 LPA)', 'Project Manager (₹8–22 LPA)'],
         avgSalary: '₹5L – ₹22L per annum',
@@ -2027,7 +2027,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Chandigarh University (CU Online) — recognised for corporate hiring.'},
       'MCA': {
         specs: ['Cloud Computing', 'Full Stack Development', 'Data Analytics', 'Artificial Intelligence and Machine Learning'],
-        fees: '₹1.6L',
+        fees: '₹1.55L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -2278,7 +2278,7 @@ export const UNIVERSITIES: University[] = [
       },
       'MCA': {
         specs: ['Cyber Security and Block Chain', 'Artificial Intelligence and Data Science', 'Cloud Computing and Internet of Things', 'Full Stack Development and DevOps', 'General'],
-        fees: '₹1.2L',
+        fees: '₹1.1L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -3569,8 +3569,8 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 110000,
-    feeMax: 110000,
+    feeMin: 94000,
+    feeMax: 120000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -3583,7 +3583,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'Business Analytics', 'International Business', 'Digital Marketing', 'Healthcare Management'],
-        fees: '₹23K – ₹94K',
+        fees: '₹94K',
         duration: '2 Yrs',
         roles: ['Business Analyst', 'Marketing Executive', 'HR Executive', 'Finance Analyst', 'Digital Marketing Executive', 'Supply Chain Analyst'],
         avgSalary: '₹4L – ₹16L per annum',
@@ -3601,6 +3601,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from Uttaranchal University — recognised for corporate hiring.',
       },
+
       
       
 
@@ -3858,8 +3859,8 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 60000,
-    feeMax: 200000,
+    feeMin: 160000,
+    feeMax: 160000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -3963,8 +3964,8 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 110000,
-    feeMax: 110000,
+    feeMin: 76647,
+    feeMax: 102000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -3977,7 +3978,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'General Management'],
-        fees: '₹60K – ₹200K',
+        fees: '₹1.02L',
         duration: '2 Yrs',
         roles: ['Management Trainee', 'HR Executive', 'Marketing Executive', 'Financial Analyst'],
         avgSalary: '₹5L – ₹12L per annum',
@@ -3987,7 +3988,7 @@ export const UNIVERSITIES: University[] = [
       },
       'MCA': {
         specs: [],
-        fees: '₹77K',
+        fees: '₹76.6K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -4106,7 +4107,7 @@ export const UNIVERSITIES: University[] = [
       
       'MBA': {
         specs: ['Project Management', 'Blockchain', 'AI & ML', 'Agri Business', 'Marketing Management', 'Human Resource Management', 'Finance', 'IT Management', 'Operations Management', 'FinTech Management', 'Hospital Administration & Healthcare Management', 'International Business Management', 'Logistics & Supply Chain Management', 'Business Analytics'],
-        fees: '₹0.1L – ₹1.9L',
+        fees: '₹1.89L',
         duration: '2 Years (4 Semesters)',
         roles: ['Project Coordinator', 'Project Manager', 'Scrum Master', 'PMO Analyst'],
         avgSalary: '₹5L – ₹18L per annum',
@@ -4288,7 +4289,7 @@ export const UNIVERSITIES: University[] = [
       },
       'MCA': {
         specs: ['Cloud Computing', 'AI & Machine Learning', 'Full Stack Development', 'Cyber Security', 'Data Science'],
-        fees: '₹35K',
+        fees: '₹70K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -4339,7 +4340,7 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 160000,
+    feeMin: 134000,
     feeMax: 160000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
@@ -4353,7 +4354,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'International Business', 'Production & Operations', 'Information Technology (IT)', 'Business Analytics', 'Agribusiness', 'Retail', 'Project Management', 'Event Management', 'Hospitality', 'Sports Management', 'Infrastructure Management'],
-        fees: '₹60K – ₹200K',
+        fees: '₹1.6L',
         duration: '2 Yrs',
         roles: ['Management Trainee', 'HR Executive', 'Marketing Executive', 'Operations Analyst'],
         avgSalary: '₹5L – ₹14L per annum',
@@ -4363,7 +4364,7 @@ export const UNIVERSITIES: University[] = [
       },
       'MCA': {
         specs: ['Cloud Computing', 'Data Science', 'Linux', 'Open-Source Technologies', 'Mobile Computing', 'Dot Net Technologies', 'Net Centric Technologies', 'Information Systems', 'Big Data', 'IOT', 'Cyber Security', 'Data Management'],
-        fees: '₹1.3L',
+        fees: '₹1.34L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -4932,8 +4933,8 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 150000,
-    feeMax: 150000,
+    feeMin: 175000,
+    feeMax: 175000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -4946,7 +4947,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'General Management'],
-        fees: '₹40K – ₹160K',
+        fees: '₹1.75L',
         duration: '2 Yrs',
         roles: ['Marketing Executive', 'Brand Trainee', 'Digital Marketing Trainee'],
         avgSalary: '₹5L – ₹12L per annum',
@@ -5424,8 +5425,8 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 110000,
-    feeMax: 110000,
+    feeMin: 88500,
+    feeMax: 118000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -5439,7 +5440,7 @@ export const UNIVERSITIES: University[] = [
       
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'Business Analytics', 'International Business', 'Healthcare Management', 'Digital Marketing', 'IT & Systems Management', 'Entrepreneurship'],
-        fees: '₹29K – ₹118K',
+        fees: '₹88.5K',
         duration: '2 Yrs',
         roles: ['Management Trainee', 'Analyst', 'Operations Trainee', 'Healthcare Admin Trainee'],
         avgSalary: '₹5L – ₹14L per annum',
@@ -5449,7 +5450,7 @@ export const UNIVERSITIES: University[] = [
       },
       'MCA': {
         specs: ['Artificial Intelligence & Machine Learning', 'Cybersecurity', 'Data Science'],
-        fees: '₹0K',
+        fees: '₹1.18L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -5959,7 +5960,7 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 60000,
+    feeMin: 150000,
     feeMax: 189000,
     emiFrom: 2500,
     eligibility: 'Graduation with minimum 50% aggregate marks from recognized university',
@@ -5993,7 +5994,7 @@ export const UNIVERSITIES: University[] = [
       },
       'MCA': {
         specs: ['General', 'Generative AI'],
-        fees: '₹38K',
+        fees: '₹1.5L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -6566,8 +6567,8 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 60000,
-    feeMax: 200000,
+    feeMin: 108500,
+    feeMax: 108500,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -6580,7 +6581,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management'],
-        fees: '₹90K – ₹103K',
+        fees: '₹1.08L',
         duration: '2 Yrs',
         roles: ['Regional Sales Manager', 'Social Media Manager', 'Credit Manager', 'Accounting Manager', 'HR Manager', 'Marketing Manager'],
         avgSalary: '₹5L – ₹12L per annum',
@@ -6714,7 +6715,7 @@ export const UNIVERSITIES: University[] = [
       },
       'MCA': {
         specs: [],
-        fees: '₹88K',
+        fees: '₹87.5K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -7150,7 +7151,7 @@ export const UNIVERSITIES: University[] = [
     govtRecognised: true,
     psuEligible: true,
     feeMin: 75000,
-    feeMax: 180000,
+    feeMax: 200000,
     emiFrom: 4000,
     eligibility: '50% in graduation',
     eligibilityPct: 50,
@@ -7223,7 +7224,7 @@ export const UNIVERSITIES: University[] = [
       },
       'MCA': {
         specs: ['Full Stack Development', 'Artificial Intelligence & Data Science', 'Cyber Security'],
-        fees: '₹50K',
+        fees: '₹2L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
