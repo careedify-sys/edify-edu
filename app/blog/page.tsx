@@ -79,12 +79,12 @@ function TrustStrip() {
 
 // ── Popular topics as pill chips ──────────────────────────────────────────────
 const TRENDING_TOPICS = [
-  { label: 'Online MBA 2026',          href: '/blog/online-mba-working-professionals-india-2026' },
-  { label: 'UGC DEB Approved List',    href: '/blog/ugc-deb-approved-online-universities-india' },
+  { label: 'Online MBA 2026',          href: '/blog/online-mba-for-working-professionals-india' },
+  { label: 'UGC DEB Approved List',    href: '/blog/ugc-deb-approved-universities-list-2026' },
   { label: 'MBA vs MCA',               href: '/programs/mba' },
   { label: 'Best MBA Specialisations', href: '/programs/mba/finance' },
   { label: 'Compare Universities',     href: '/compare' },
-  { label: 'MBA for Govt Jobs',        href: '/blog/ugc-deb-approved-online-universities-india' },
+  { label: 'MBA for Govt Jobs',        href: '/blog/ugc-deb-approved-universities-list-2026' },
   { label: 'Fees Under ₹1 Lakh',      href: '/universities' },
   { label: 'Online MCA 2026',          href: '/programs/mca' },
 ]

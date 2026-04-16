@@ -58,7 +58,12 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { slug } = params instanceof Promise ? await params : params
   const post = getBlogPost(slug)
-  if (!post) return {}
+  // Explicit noindex for missing/draft posts — prevents inheriting the homepage
+  // canonical from root layout, which caused Screaming Frog to flag these as
+  // "canonicalised to homepage + noindex" when a wrong slug was linked internally
+  if (!post || post.status !== 'published') {
+    return { robots: { index: false, follow: false } }
+  }
 
   const previousImages = (await parent).openGraph?.images || []
 
