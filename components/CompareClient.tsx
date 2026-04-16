@@ -1,14 +1,14 @@
 'use client'
 
 import { getSortRank } from '@/lib/data-slim'
-import { useState, useEffect, Suspense } from 'react'
+import { useState, useEffect, useRef, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import {
   CheckCircle, BarChart2, Plus,
   TrendingUp, Lock, Award,
   Wallet, BookOpen, ChevronRight,
-  ShieldCheck, Zap, Search, X, Star, GraduationCap, Users,
+  ShieldCheck, Zap, Search, X, Star, Users,
   Calendar, ArrowUp
 } from 'lucide-react'
 import { UNIS_SLIM, formatFeeSlim as formatFee } from '@/lib/data-slim'
@@ -90,7 +90,169 @@ const MCA_UNIS_WITH_DATA = [
 
 const progSlug = (p: Program) => p.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
 
-// ── Standalone Syllabus Comparison Tool ────────────────────────────────────
+const SLOT_COLORS = ['#1e3a5f', '#d97706', '#16a34a']
+const SLOT_LABELS = ['University 1', 'University 2', 'University 3']
+
+// ── University Slot — slot-based picker (mobile-first) ──────────────────────
+function UniSlot({
+  index, selectedId, onSelect, onRemove, program, allSelectedIds
+}: {
+  index: number; selectedId: string | null; onSelect: (id: string) => void;
+  onRemove: () => void; program: 'MBA' | 'MCA'; allSelectedIds: string[]
+}) {
+  const [search, setSearch] = useState('')
+  const [open, setOpen] = useState(false)
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  const available = UNIS_SLIM.filter(u =>
+    !allSelectedIds.includes(u.id) &&
+    u.programs?.includes(program) &&
+    (search.length < 1 || (u.name || '').toLowerCase().includes(search.toLowerCase()))
+  )
+
+  const fullU = selectedId ? getUniversityById(selectedId) : null
+  const color = SLOT_COLORS[index]
+  const label = SLOT_LABELS[index]
+
+  function openDropdown() {
+    setOpen(true)
+    setTimeout(() => inputRef.current?.focus(), 50)
+  }
+
+  function pick(id: string) {
+    onSelect(id)
+    setOpen(false)
+    setSearch('')
+  }
+
+  if (fullU) {
+    const pd = fullU.programDetails?.[program]
+    return (
+      <div className="rounded-2xl overflow-hidden border-2 bg-white" style={{ borderColor: color }}>
+        {/* Header bar with uni name */}
+        <div className="px-4 py-3 flex items-center gap-3" style={{ background: color }}>
+          <div className="w-9 h-9 bg-white rounded-xl flex items-center justify-center flex-shrink-0 border border-white/20">
+            {getUniversityLogo(fullU.id) ? (
+              <img src={getUniversityLogo(fullU.id)!} alt={fullU.name} className="w-7 h-7 object-contain" />
+            ) : (
+              <span className="font-bold text-xs" style={{ color }}>{fullU.name.slice(0, 2).toUpperCase()}</span>
+            )}
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="text-white font-bold text-sm leading-snug line-clamp-2">{fullU.name}</p>
+            <p className="text-white/60 text-[11px] mt-0.5">{label}</p>
+          </div>
+          <button onClick={onRemove} className="flex-shrink-0 p-1.5 rounded-lg bg-white/10 hover:bg-white/25 transition-colors">
+            <X size={14} className="text-white" />
+          </button>
+        </div>
+        {/* Quick stats */}
+        <div className="px-4 py-3 grid grid-cols-2 gap-2 border-b border-slate-100">
+          <div>
+            <p className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold mb-0.5">NAAC</p>
+            <NaacBadge grade={fullU.naac} />
+          </div>
+          {fullU.nirf && fullU.nirf < 300 ? (
+            <div>
+              <p className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold mb-0.5">NIRF Rank</p>
+              <p className="text-sm font-bold text-slate-800">#{fullU.nirf}</p>
+            </div>
+          ) : (
+            <div>
+              <p className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold mb-0.5">Approval</p>
+              <span className="text-xs font-semibold text-green-700 flex items-center gap-1">
+                <CheckCircle size={11} className="text-green-500" /> UGC DEB
+              </span>
+            </div>
+          )}
+        </div>
+        <div className="px-4 py-3 flex items-center justify-between">
+          <div>
+            <p className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold mb-0.5">Fees</p>
+            <p className="text-sm font-bold text-slate-800">{formatFee(fullU.feeMin)} – {formatFee(fullU.feeMax)}</p>
+          </div>
+          {pd?.avgSalary && (
+            <div className="text-right">
+              <p className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold mb-0.5">Avg Salary</p>
+              <p className="text-sm font-bold text-slate-800 flex items-center gap-1 justify-end">
+                <ArrowUp size={12} className="text-green-500" />{pd.avgSalary}
+              </p>
+            </div>
+          )}
+        </div>
+      </div>
+    )
+  }
+
+  // Empty slot
+  return (
+    <div className="relative">
+      <button
+        onClick={openDropdown}
+        className="w-full rounded-2xl border-2 border-dashed border-slate-200 bg-slate-50 hover:border-amber-400 hover:bg-amber-50/40 transition-all p-5 text-left group"
+      >
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-xl border-2 border-dashed border-slate-300 group-hover:border-amber-400 flex items-center justify-center transition-colors">
+            <Plus size={18} className="text-slate-400 group-hover:text-amber-500 transition-colors" />
+          </div>
+          <div>
+            <p className="text-sm font-semibold text-slate-600 group-hover:text-slate-800">{label}</p>
+            <p className="text-xs text-slate-400 mt-0.5">Tap to search &amp; add university</p>
+          </div>
+        </div>
+      </button>
+
+      {/* Dropdown */}
+      {open && (
+        <>
+          <div className="fixed inset-0 z-40" onClick={() => { setOpen(false); setSearch('') }} />
+          <div className="absolute z-50 top-full left-0 right-0 mt-2 bg-white rounded-2xl border border-slate-200 shadow-2xl overflow-hidden">
+            <div className="p-3 border-b border-slate-100 bg-white sticky top-0">
+              <div className="flex items-center gap-2 bg-slate-50 rounded-xl px-3 py-2.5 border border-slate-200 focus-within:border-amber-400 transition-colors">
+                <Search size={14} className="text-slate-400 flex-shrink-0" />
+                <input
+                  ref={inputRef}
+                  type="text"
+                  value={search}
+                  onChange={e => setSearch(e.target.value)}
+                  placeholder="Type university name…"
+                  className="flex-1 text-sm bg-transparent outline-none text-slate-700 placeholder:text-slate-400 min-w-0"
+                  autoComplete="off"
+                />
+                {search && (
+                  <button onClick={() => setSearch('')} className="text-slate-400 hover:text-slate-600">
+                    <X size={13} />
+                  </button>
+                )}
+              </div>
+            </div>
+            <div className="max-h-60 overflow-y-auto">
+              {available.slice(0, 25).map(u => (
+                <button
+                  key={u.id}
+                  onMouseDown={() => pick(u.id)}
+                  className="w-full text-left px-4 py-3 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-800 border-b border-slate-50 last:border-0 transition-colors font-medium"
+                >
+                  {u.name}
+                </button>
+              ))}
+              {available.length === 0 && (
+                <p className="text-center py-6 text-sm text-slate-400">No universities found for &ldquo;{search}&rdquo;</p>
+              )}
+              {!search && available.length > 25 && (
+                <p className="text-center py-3 text-xs text-slate-400 border-t border-slate-100">
+                  +{available.length - 25} more — type to filter
+                </p>
+              )}
+            </div>
+          </div>
+        </>
+      )}
+    </div>
+  )
+}
+
+// ── Syllabus Comparison Tool ─────────────────────────────────────────────────
 function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
   const [searchA, setSearchA] = useState('')
   const [searchB, setSearchB] = useState('')
@@ -100,6 +262,7 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
   const [specB, setSpecB] = useState('')
   const [showDropA, setShowDropA] = useState(false)
   const [showDropB, setShowDropB] = useState(false)
+  const [activeTab, setActiveTab] = useState<'A' | 'B'>('A')
 
   useEffect(() => {
     setUniAId(null); setUniBId(null)
@@ -158,153 +321,188 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
   const hasNoSpecData = (syllabus: ReturnType<typeof getMasterSyllabus>) =>
     syllabus !== null && (!syllabus.specSyllabus || Object.keys(syllabus.specSyllabus).length === 0)
 
+  function SideContent({ side }: { side: 'A' | 'B' }) {
+    const isA = side === 'A'
+    const search = isA ? searchA : searchB
+    const setSearch = isA ? setSearchA : setSearchB
+    const uniId = isA ? uniAId : uniBId
+    const showDrop = isA ? showDropA : showDropB
+    const setShowDrop = isA ? setShowDropA : setShowDropB
+    const suggestions = isA ? suggestionsA : suggestionsB
+    const syllabus = isA ? syllabusA : syllabusB
+    const specs = isA ? specsA : specsB
+    const spec = isA ? specA : specB
+    const setSpec = isA ? setSpecA : setSpecB
+    const subjects = isA ? subjectsA : subjectsB
+    const otherSet = isA ? setBSet : setASet
+    const otherSpec = isA ? specB : specA
+    const label = isA ? 'University A' : 'University B'
+    const accentColor = isA ? '#1e3a5f' : '#d97706'
+
+    return (
+      <div className="flex flex-col gap-3">
+        <div className="flex items-center gap-2">
+          <span className="w-5 h-5 rounded-full flex items-center justify-center text-white text-[10px] font-bold flex-shrink-0" style={{ background: accentColor }}>
+            {side}
+          </span>
+          <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">{label}</span>
+        </div>
+
+        <div className="relative">
+          <div className="flex items-center gap-2 border border-slate-200 rounded-xl px-3 py-2.5 focus-within:border-amber-400 bg-white transition-colors">
+            <Search size={13} className="text-slate-400 flex-shrink-0" />
+            <input
+              type="text"
+              value={search}
+              onChange={e => { setSearch(e.target.value); setShowDrop(true) }}
+              onFocus={() => setShowDrop(true)}
+              onBlur={() => setTimeout(() => setShowDrop(false), 200)}
+              placeholder="Search university…"
+              className="flex-1 text-sm text-slate-700 bg-transparent outline-none min-w-0 placeholder:text-slate-400"
+              autoComplete="off"
+            />
+            {uniId && (
+              <button onClick={() => clearUni(side)} className="text-slate-400 hover:text-red-500 transition-colors">
+                <X size={13} />
+              </button>
+            )}
+          </div>
+          {showDrop && suggestions.length > 0 && (
+            <div className="absolute z-50 top-full left-0 right-0 mt-1 bg-white border border-slate-200 rounded-xl shadow-xl overflow-hidden">
+              {suggestions.map(uni => (
+                <button
+                  key={uni.id}
+                  onMouseDown={() => selectUni(side, uni)}
+                  className={clsx(
+                    "w-full text-left px-3 py-2.5 text-xs text-slate-700 hover:bg-amber-50 transition-colors border-b border-slate-100 last:border-0 font-medium",
+                    uniId === uni.id && "bg-amber-50 text-amber-700 font-semibold"
+                  )}
+                >
+                  {uni.name}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {uniId && (
+          <>
+            {hasNoSpecData(syllabus) ? (
+              <p className="text-xs text-slate-500 text-center py-2 bg-slate-50 rounded-lg">No syllabus data yet. <span className="font-semibold text-amber-600">Contact us.</span></p>
+            ) : specs.length === 0 ? (
+              <p className="text-xs text-slate-500 text-center py-2 bg-slate-50 rounded-lg">No specialisation data available yet.</p>
+            ) : (
+              <select
+                value={spec}
+                onChange={e => setSpec(e.target.value)}
+                className="w-full text-sm rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-slate-700 focus:outline-none focus:border-amber-400 transition-colors"
+              >
+                <option value="">— Select Specialisation —</option>
+                {specs.map(s => <option key={s} value={s}>{s}</option>)}
+              </select>
+            )}
+          </>
+        )}
+
+        {spec && syllabus?.sem1 && (
+          <div>
+            <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest mb-1.5">Sem 1 — Core Subjects</p>
+            <div className="flex flex-wrap gap-1">
+              {syllabus.sem1.split(' | ').map(s => s.trim()).filter(Boolean).map(subj => (
+                <span key={subj} className="px-2 py-1 rounded-md text-[11px] bg-slate-50 border border-slate-200 text-slate-600">{subj}</span>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {spec && subjects.length > 0 && (
+          <div>
+            <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest mb-1.5">Sem 3–4 Electives — {spec}</p>
+            <div className="space-y-1">
+              {subjects.map(subj => {
+                const inOther = otherSpec && otherSet.has(subj.toLowerCase())
+                return (
+                  <div
+                    key={subj}
+                    className={clsx(
+                      "px-2.5 py-1.5 rounded-lg text-xs border-l-2",
+                      !otherSpec
+                        ? "bg-slate-50 border-slate-300 text-slate-700"
+                        : inOther
+                        ? "bg-green-50 border-green-400 text-green-800"
+                        : "bg-amber-50 border-amber-400 text-amber-800"
+                    )}
+                  >
+                    {subj}
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        )}
+
+        {spec && subjects.length === 0 && (
+          <p className="text-xs text-slate-500 text-center py-2 bg-slate-50 rounded-lg">No data for this specialisation. <span className="font-semibold text-amber-600">Contact us.</span></p>
+        )}
+      </div>
+    )
+  }
+
   return (
     <div className="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm">
       {/* Header */}
-      <div className="px-5 py-4 border-b border-slate-100 flex items-center gap-3">
+      <div className="px-5 py-4 border-b border-slate-100 flex items-center gap-3 bg-slate-50">
         <div className="w-8 h-8 rounded-lg bg-amber-500 flex items-center justify-center flex-shrink-0">
           <BookOpen size={15} className="text-white" />
         </div>
         <div>
           <p className="text-sm font-bold text-slate-800">Compare Syllabus Side by Side</p>
-          <p className="text-xs text-slate-400 mt-0.5">
-            Select two universities to compare semester-wise subjects{program === 'MBA' ? ' and specialisations' : ''}
+          <p className="text-xs text-slate-500 mt-0.5">
+            Select two universities to compare semester-wise subjects
           </p>
         </div>
       </div>
 
-      {/* Two-column selectors */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-slate-100">
-        {(['A', 'B'] as const).map((side) => {
-          const isA = side === 'A'
-          const search = isA ? searchA : searchB
-          const setSearch = isA ? setSearchA : setSearchB
-          const uniId = isA ? uniAId : uniBId
-          const showDrop = isA ? showDropA : showDropB
-          const setShowDrop = isA ? setShowDropA : setShowDropB
-          const suggestions = isA ? suggestionsA : suggestionsB
-          const syllabus = isA ? syllabusA : syllabusB
-          const specs = isA ? specsA : specsB
-          const spec = isA ? specA : specB
-          const setSpec = isA ? setSpecA : setSpecB
-          const subjects = isA ? subjectsA : subjectsB
-          const otherSet = isA ? setBSet : setASet
-          const otherSpec = isA ? specB : specA
-          const label = isA ? 'University A' : 'University B'
-
-          return (
-            <div key={side} className="p-4 sm:p-5 flex flex-col gap-3">
-              <span className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest">{label}</span>
-
-              <div className="relative">
-                <div className="flex items-center gap-2 border border-slate-200 rounded-xl px-3 py-2.5 focus-within:border-amber-400 bg-white transition-colors">
-                  <Search size={13} className="text-slate-400 flex-shrink-0" />
-                  <input
-                    type="text"
-                    value={search}
-                    onChange={e => { setSearch(e.target.value); setShowDrop(true) }}
-                    onFocus={() => setShowDrop(true)}
-                    onBlur={() => setTimeout(() => setShowDrop(false), 200)}
-                    placeholder="Search university…"
-                    className="flex-1 text-sm text-slate-700 bg-transparent outline-none min-w-0 placeholder:text-slate-400"
-                    autoComplete="off"
-                  />
-                  {uniId && (
-                    <button onClick={() => clearUni(side)} className="text-slate-400 hover:text-slate-600 transition-colors">
-                      <X size={13} />
-                    </button>
-                  )}
-                </div>
-
-                {showDrop && suggestions.length > 0 && (
-                  <div className="absolute z-50 top-full left-0 right-0 mt-1 bg-white border border-slate-200 rounded-xl shadow-lg overflow-hidden">
-                    {suggestions.map(uni => (
-                      <button
-                        key={uni.id}
-                        onMouseDown={() => selectUni(side, uni)}
-                        className={clsx(
-                          "w-full text-left px-3 py-2.5 text-xs text-slate-700 hover:bg-amber-50 transition-colors border-b border-slate-100 last:border-0",
-                          uniId === uni.id && "bg-amber-50 text-amber-700 font-semibold"
-                        )}
-                      >
-                        {uni.name}
-                      </button>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              {uniId && (
-                <>
-                  {hasNoSpecData(syllabus) ? (
-                    <p className="text-xs text-slate-400 text-center py-2">No syllabus data available. <span className="font-medium">Contact us for details.</span></p>
-                  ) : specs.length === 0 ? (
-                    <p className="text-xs text-slate-400 text-center py-2">No specialisation data available yet.</p>
-                  ) : (
-                    <select
-                      value={spec}
-                      onChange={e => setSpec(e.target.value)}
-                      className="w-full text-sm rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-slate-700 focus:outline-none focus:border-amber-400 transition-colors"
-                    >
-                      <option value="">— Select Specialisation —</option>
-                      {specs.map(s => <option key={s} value={s}>{s}</option>)}
-                    </select>
-                  )}
-                </>
+      {/* Mobile: tab-based; Desktop: side-by-side */}
+      <div className="p-4 sm:p-5">
+        {/* Mobile tab switcher */}
+        <div className="flex sm:hidden gap-2 mb-4">
+          {(['A', 'B'] as const).map(side => (
+            <button
+              key={side}
+              onClick={() => setActiveTab(side)}
+              className={clsx(
+                "flex-1 py-2 rounded-xl text-sm font-semibold border transition-all",
+                activeTab === side
+                  ? "text-white border-transparent"
+                  : "text-slate-500 border-slate-200 bg-white hover:bg-slate-50"
               )}
+              style={activeTab === side ? { background: SLOT_COLORS[side === 'A' ? 0 : 1] } : {}}
+            >
+              University {side}
+            </button>
+          ))}
+        </div>
 
-              {spec && syllabus?.sem1 && (
-                <div>
-                  <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest mb-1.5">Sem 1 — Core Subjects</p>
-                  <div className="flex flex-wrap gap-1">
-                    {syllabus.sem1.split(' | ').map(s => s.trim()).filter(Boolean).map(subj => (
-                      <span key={subj} className="px-2 py-1 rounded-md text-[11px] bg-slate-50 border border-slate-200 text-slate-500">{subj}</span>
-                    ))}
-                  </div>
-                </div>
-              )}
+        {/* Mobile: show active tab only */}
+        <div className="sm:hidden">
+          <SideContent side={activeTab} />
+        </div>
 
-              {spec && subjects.length > 0 && (
-                <div>
-                  <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest mb-1.5">Sem 3–4 Electives — {spec}</p>
-                  <div className="space-y-1">
-                    {subjects.map(subj => {
-                      const inOther = otherSpec && otherSet.has(subj.toLowerCase())
-                      return (
-                        <div
-                          key={subj}
-                          className={clsx(
-                            "px-2.5 py-1.5 rounded-lg text-xs border-l-2",
-                            !otherSpec
-                              ? "bg-slate-50 border-slate-200 text-slate-600"
-                              : inOther
-                              ? "bg-green-50 border-green-400 text-green-700"
-                              : "bg-amber-50 border-amber-400 text-amber-700"
-                          )}
-                        >
-                          {subj}
-                        </div>
-                      )
-                    })}
-                  </div>
-                </div>
-              )}
-
-              {spec && subjects.length === 0 && (
-                <p className="text-xs text-slate-400 text-center py-2">No data for this specialisation. <span className="font-medium">Contact us.</span></p>
-              )}
-            </div>
-          )
-        })}
+        {/* Desktop: side-by-side */}
+        <div className="hidden sm:grid grid-cols-2 gap-6 divide-x divide-slate-100">
+          <div><SideContent side="A" /></div>
+          <div className="pl-6"><SideContent side="B" /></div>
+        </div>
       </div>
 
       {(specA || specB) && (
         <div className="flex items-center gap-4 px-5 py-3 border-t border-slate-100 bg-slate-50">
-          <span className="flex items-center gap-1.5 text-[11px] text-slate-500">
+          <span className="flex items-center gap-1.5 text-[11px] text-slate-600">
             <span className="w-3 h-3 rounded bg-green-100 border border-green-400 inline-block" />
             Common subject
           </span>
-          <span className="flex items-center gap-1.5 text-[11px] text-slate-500">
+          <span className="flex items-center gap-1.5 text-[11px] text-slate-600">
             <span className="w-3 h-3 rounded bg-amber-100 border border-amber-400 inline-block" />
             Unique subject
           </span>
@@ -317,10 +515,10 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
 function NaacBadge({ grade }: { grade?: string }) {
   if (!grade) return <span className="text-slate-400 text-sm">—</span>
   const cls =
-    grade.includes('A++') ? 'bg-green-100 text-green-700 border-green-200'
-    : grade.includes('A+') ? 'bg-amber-100 text-amber-700 border-amber-200'
-    : grade.includes('A') ? 'bg-blue-100 text-blue-700 border-blue-200'
-    : 'bg-slate-100 text-slate-600 border-slate-200'
+    grade.includes('A++') ? 'bg-green-100 text-green-800 border-green-200'
+    : grade.includes('A+') ? 'bg-amber-100 text-amber-800 border-amber-200'
+    : grade.includes('A') ? 'bg-blue-100 text-blue-800 border-blue-200'
+    : 'bg-slate-100 text-slate-700 border-slate-200'
   return (
     <span className={clsx('inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold border', cls)}>
       <ShieldCheck size={11} />
@@ -341,8 +539,8 @@ function ApprovalBadges({ approvals }: { approvals: string[] }) {
             className={clsx(
               "flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-medium border",
               has
-                ? "bg-white border-green-200 text-green-700"
-                : "bg-slate-50 border-slate-200 text-slate-300 line-through"
+                ? "bg-white border-green-200 text-green-800"
+                : "bg-slate-50 border-slate-200 text-slate-400 line-through"
             )}
           >
             {has && <CheckCircle size={10} className="text-green-500" />}
@@ -363,21 +561,22 @@ function UniCard({
   const specs = pd?.specs || []
   const companies = pd?.topCompanies || []
   const salary = pd?.avgSalary || (program === 'MCA' ? '₹4L – ₹10L' : '₹5L – ₹12L')
+  const color = SLOT_COLORS[idx]
 
   return (
     <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
-      <div className="px-4 pt-4 pb-3 border-b border-slate-100 flex items-start gap-3">
-        <div className="w-12 h-12 flex items-center justify-center flex-shrink-0 bg-slate-50 rounded-xl border border-slate-100">
+      <div className="px-4 pt-4 pb-3 border-b border-slate-100 flex items-start gap-3" style={{ borderTop: `3px solid ${color}` }}>
+        <div className="w-11 h-11 flex items-center justify-center flex-shrink-0 bg-slate-50 rounded-xl border border-slate-100">
           {getUniversityLogo(u.id) ? (
-            <img src={getUniversityLogo(u.id)!} alt={u.name} className="w-10 h-10 object-contain" />
+            <img src={getUniversityLogo(u.id)!} alt={u.name} className="w-9 h-9 object-contain" />
           ) : (
-            <span className="text-slate-500 font-bold text-sm">{u.name.slice(0, 2).toUpperCase()}</span>
+            <span className="text-slate-600 font-bold text-sm">{u.name.slice(0, 2).toUpperCase()}</span>
           )}
         </div>
         <div className="flex-1 min-w-0">
           <p className="text-sm font-bold text-slate-800 leading-snug">{u.name}</p>
           <div className="flex items-center gap-2 mt-1 flex-wrap">
-            {u.nirf && <span className="text-xs font-bold text-slate-700">#{u.nirf} NIRF</span>}
+            {u.nirf && u.nirf < 300 && <span className="text-xs font-bold text-slate-700">#{u.nirf} NIRF</span>}
             <NaacBadge grade={u.naac} />
           </div>
         </div>
@@ -388,18 +587,18 @@ function UniCard({
 
       <div className="divide-y divide-slate-100">
         <div className="px-4 py-3 flex items-center justify-between gap-2">
-          <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Course Fees</span>
+          <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Course Fees</span>
           <div className="text-right">
             <span className="text-sm font-bold text-slate-800">{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</span>
-            <p className="text-[11px] text-slate-400 mt-0.5">EMI from ₹{u.emiFrom.toLocaleString()}/mo</p>
+            <p className="text-[11px] text-slate-500 mt-0.5">EMI from ₹{u.emiFrom.toLocaleString()}/mo</p>
           </div>
         </div>
         <div className="px-4 py-3">
-          <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-2">Approvals</span>
+          <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider block mb-2">Approvals</span>
           <ApprovalBadges approvals={u.approvals} />
         </div>
         <div className="px-4 py-3 flex items-center justify-between gap-2">
-          <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Avg Salary</span>
+          <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Avg Salary</span>
           <span className="text-sm font-bold text-slate-800 flex items-center gap-1">
             <ArrowUp size={13} className="text-green-500" />
             {salary}
@@ -407,26 +606,26 @@ function UniCard({
         </div>
         {specs.length > 0 && (
           <div className="px-4 py-3">
-            <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-2">{specs.length} Specialisations</span>
+            <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider block mb-2">{specs.length} Specialisations</span>
             <div className="flex flex-wrap gap-1">
               {specs.slice(0, 5).map(s => (
-                <span key={s} className="px-2 py-1 rounded-md text-[11px] bg-slate-50 border border-slate-200 text-slate-600">{s}</span>
+                <span key={s} className="px-2 py-1 rounded-md text-[11px] bg-slate-50 border border-slate-200 text-slate-700">{s}</span>
               ))}
               {specs.length > 5 && (
-                <span className="px-2 py-1 rounded-md text-[11px] bg-amber-50 border border-amber-200 text-amber-600">+{specs.length - 5} more</span>
+                <span className="px-2 py-1 rounded-md text-[11px] bg-amber-50 border border-amber-200 text-amber-700">+{specs.length - 5} more</span>
               )}
             </div>
           </div>
         )}
         {companies.length > 0 && (
           <div className="px-4 py-3">
-            <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-2">Hiring Partners</span>
-            <p className="text-xs text-slate-600 leading-relaxed">{companies.slice(0, 6).join(', ')}</p>
+            <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider block mb-2">Hiring Partners</span>
+            <p className="text-xs text-slate-700 leading-relaxed">{companies.slice(0, 6).join(', ')}</p>
           </div>
         )}
         <div className="px-4 py-3 flex items-center justify-between gap-2">
-          <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Placement Support</span>
-          <span className="flex items-center gap-1 text-xs text-green-700 font-medium">
+          <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Placement Support</span>
+          <span className="flex items-center gap-1 text-xs text-green-800 font-semibold">
             <CheckCircle size={12} className="text-green-500" />
             LMS + Job Portal
           </span>
@@ -434,10 +633,12 @@ function UniCard({
       </div>
 
       <div className="px-4 py-4 bg-slate-50 border-t border-slate-100 flex flex-col gap-2">
-        <button onClick={onEnquire} className="w-full bg-amber-500 hover:bg-amber-600 text-white text-sm font-bold py-2.5 rounded-xl transition-colors">
+        <button onClick={onEnquire}
+          className="w-full text-white text-sm font-bold py-2.5 rounded-xl transition-colors"
+          style={{ background: color }}>
           Enquire Now
         </button>
-        <Link href={`/universities/${u.id}/${progSlug(program)}`} className="text-xs text-center text-amber-600 hover:text-amber-700 font-semibold">
+        <Link href={`/universities/${u.id}/${progSlug(program)}`} className="text-xs text-center font-semibold text-amber-600 hover:text-amber-700">
           View Full Analysis →
         </Link>
       </div>
@@ -448,8 +649,8 @@ function UniCard({
 function SectionDivider({ label, icon }: { label: string; icon: React.ReactNode }) {
   return (
     <div className="px-4 py-2.5 bg-slate-50 border-y border-slate-100 flex items-center gap-2">
-      <span className="text-slate-400">{icon}</span>
-      <span className="text-[10px] font-semibold text-slate-500 uppercase tracking-widest">{label}</span>
+      <span className="text-slate-500">{icon}</span>
+      <span className="text-[10px] font-semibold text-slate-600 uppercase tracking-widest">{label}</span>
     </div>
   )
 }
@@ -460,9 +661,9 @@ function ComparisonRow({ label, unis, fn, icon = null }: {
   return (
     <div
       className="grid items-stretch border-b border-slate-100 hover:bg-slate-50/50 transition-colors"
-      style={{ gridTemplateColumns: `160px repeat(${unis.length}, minmax(200px, 1fr))` }}
+      style={{ gridTemplateColumns: `150px repeat(${unis.length}, minmax(190px, 1fr))` }}
     >
-      <div className="p-4 flex items-center gap-2 text-xs font-medium text-slate-500 border-r border-slate-100 sticky left-0 z-10 bg-white">
+      <div className="p-4 flex items-center gap-2 text-xs font-semibold text-slate-600 border-r border-slate-100 sticky left-0 z-10 bg-white">
         {icon}
         <span>{label}</span>
       </div>
@@ -482,7 +683,6 @@ function CompareContent() {
   const [enquiryOpen, setEnquiryOpen] = useState(false)
   const [enquiryUni, setEnquiryUni] = useState('')
   const [initialized, setInitialized] = useState(false)
-  const [uniSearch, setUniSearch] = useState('')
 
   useEffect(() => {
     if (initialized) return
@@ -511,10 +711,6 @@ function CompareContent() {
   const universities = selectedIds
     .map(id => getUniversityById(id))
     .filter((u): u is University => u !== undefined)
-  const available = UNIS_SLIM.filter(u => !selectedIds.includes(u.id) && u.programs?.includes(program))
-  const filteredAvailable = uniSearch.length >= 1
-    ? available.filter(u => (u.name || '').toLowerCase().includes(uniSearch.toLowerCase()))
-    : available
 
   function addUni(id: string) {
     if (selectedIds.length >= 3) return
@@ -524,6 +720,11 @@ function CompareContent() {
 
   function removeUni(id: string) {
     setSelectedIds(prev => prev.filter(x => x !== id))
+  }
+
+  function switchProgram(p: 'MBA' | 'MCA') {
+    setProgram(p)
+    setSelectedIds(['jain-university-online', 'amity-university-online'])
   }
 
   function getVerdict() {
@@ -547,7 +748,7 @@ function CompareContent() {
     return (
       <div className="text-center">
         <p className="text-sm font-bold text-slate-800">{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</p>
-        <p className="text-[11px] text-slate-400 mt-0.5">Total program fee</p>
+        <p className="text-[11px] text-slate-500 mt-0.5">Total program fee</p>
       </div>
     )
   }
@@ -569,10 +770,10 @@ function CompareContent() {
         <span className="text-lg font-bold text-slate-700">{specs.length}</span>
         <div className="flex flex-wrap justify-center gap-1">
           {specs.slice(0, 3).map(s => (
-            <span key={s} className="px-1.5 py-0.5 rounded text-[10px] bg-slate-100 text-slate-600">{s}</span>
+            <span key={s} className="px-1.5 py-0.5 rounded text-[10px] bg-slate-100 text-slate-700">{s}</span>
           ))}
           {specs.length > 3 && (
-            <span className="px-1.5 py-0.5 rounded text-[10px] bg-amber-50 text-amber-600">+{specs.length - 3}</span>
+            <span className="px-1.5 py-0.5 rounded text-[10px] bg-amber-50 text-amber-700">+{specs.length - 3}</span>
           )}
         </div>
       </div>
@@ -593,7 +794,7 @@ function CompareContent() {
     const companies = u.programDetails?.[program]?.topCompanies || []
     if (!companies.length) return <span className="text-slate-400 text-xs">—</span>
     return (
-      <p className="text-[11px] text-slate-600 text-center leading-relaxed max-w-[180px]">
+      <p className="text-[11px] text-slate-700 text-center leading-relaxed max-w-[180px]">
         {companies.slice(0, 5).join(', ')}
       </p>
     )
@@ -609,153 +810,138 @@ function CompareContent() {
           url:`https://edifyedu.in/compare?a=${universities[0]?.id}&b=${universities[1]?.id}`,
           author:{'@type':'Organization',name:'Edify',url:'https://edifyedu.in'},
           publisher:{'@type':'Organization',name:'Edify',logo:{'@type':'ImageObject',url:'https://edifyedu.in/logo.png'}},
-          dateModified:'2026-03-22',
+          dateModified:'2026-04-16',
         })}} />
       )}
 
-      {/* ── PROGRAM TOGGLE (inside client) ───────────────────────────────── */}
+      {/* ── PROGRAM TOGGLE ─────────────────────────────────────────────────── */}
       <div className="border-b border-slate-200 bg-white sticky top-0 z-30 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
-          {/* Program toggle */}
-          <div className="flex items-center gap-3 mb-3">
-            <div className="flex p-1 rounded-xl border border-slate-200 bg-slate-50 gap-1">
-              {(['MBA', 'MCA'] as const).map(p => (
-                <button
-                  key={p}
-                  onClick={() => { setProgram(p); setSelectedIds(['jain-university-online', 'amity-university-online']) }}
-                  className={clsx(
-                    "px-5 py-1.5 text-sm font-semibold rounded-lg transition-all",
-                    program === p
-                      ? "bg-amber-500 text-white shadow-md"
-                      : "text-slate-500 hover:text-slate-800 hover:bg-white"
-                  )}
-                >
-                  Online {p}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Selected pills row */}
-          <div className="flex items-center gap-2 flex-wrap mb-2.5">
-            <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider whitespace-nowrap">Comparing:</span>
-            {universities.map((u) => (
-              <div key={u.id} className="flex items-center gap-1.5 pl-2 pr-1 py-1 rounded-lg bg-slate-100 border border-slate-200">
-                <div className="w-5 h-5 flex items-center justify-center flex-shrink-0">
-                  {getUniversityLogo(u.id) ? (
-                    <img src={getUniversityLogo(u.id)!} alt={u.name} className="w-5 h-5 object-contain" />
-                  ) : (
-                    <span className="text-slate-500 font-bold text-[9px]">{u.name.slice(0, 2).toUpperCase()}</span>
-                  )}
-                </div>
-                <span className="text-[11px] font-semibold text-slate-700 max-w-[130px] truncate">{u.name}</span>
-                <button onClick={() => removeUni(u.id)} className="p-1 text-slate-400 hover:text-red-500 transition-colors">
-                  <X size={11} />
-                </button>
-              </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center gap-4">
+          <span className="text-xs font-semibold text-slate-500 whitespace-nowrap hidden sm:block">Program:</span>
+          <div className="flex p-1 rounded-xl border border-slate-200 bg-slate-50 gap-1">
+            {(['MBA', 'MCA'] as const).map(p => (
+              <button
+                key={p}
+                onClick={() => switchProgram(p)}
+                className={clsx(
+                  "px-6 py-1.5 text-sm font-bold rounded-lg transition-all",
+                  program === p
+                    ? "bg-amber-500 text-white shadow-md"
+                    : "text-slate-600 hover:text-slate-900 hover:bg-white"
+                )}
+              >
+                Online {p}
+              </button>
             ))}
-            {selectedIds.length < 3 && (
-              <span className="text-[11px] text-slate-400 font-medium">+ add {3 - selectedIds.length} more</span>
-            )}
           </div>
+          <span className="text-xs text-slate-400 hidden sm:block">Select up to 3 universities below</span>
+        </div>
+      </div>
 
-          {selectedIds.length < 3 && (
-            <div className="flex items-center gap-2 border border-slate-200 rounded-xl px-3 py-2 focus-within:border-amber-400 bg-white transition-colors max-w-sm">
-              <Search size={13} className="text-slate-400 flex-shrink-0" />
-              <input
-                type="text"
-                value={uniSearch}
-                onChange={e => setUniSearch(e.target.value)}
-                placeholder={`Search ${program} university to add…`}
-                className="flex-1 text-sm text-slate-700 bg-transparent outline-none placeholder:text-slate-400"
-                autoComplete="off"
+      {/* ── UNIVERSITY SELECTOR SLOTS ───────────────────────────────────────── */}
+      <div className="bg-white border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
+          <p className="text-sm font-bold text-slate-700 mb-4 flex items-center gap-2">
+            <span className="w-5 h-5 rounded-full bg-amber-500 text-white text-[10px] font-bold flex items-center justify-center">1</span>
+            Choose universities to compare
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {[0, 1, 2].map(idx => (
+              <UniSlot
+                key={idx}
+                index={idx}
+                selectedId={selectedIds[idx] || null}
+                onSelect={(id) => {
+                  const newIds = [...selectedIds]
+                  if (idx < newIds.length) {
+                    newIds[idx] = id
+                  } else {
+                    newIds.push(id)
+                  }
+                  setSelectedIds(newIds)
+                }}
+                onRemove={() => removeUni(selectedIds[idx])}
+                program={program}
+                allSelectedIds={selectedIds}
               />
-              {uniSearch && (
-                <button onClick={() => setUniSearch('')} className="text-slate-400 hover:text-slate-600">
-                  <X size={12} />
-                </button>
-              )}
-            </div>
-          )}
-
-          {selectedIds.length < 3 && filteredAvailable.length > 0 && (
-            <div className="mt-2 flex flex-wrap gap-1.5">
-              {filteredAvailable.slice(0, uniSearch ? 20 : 12).map(u => (
-                <button
-                  key={u.id}
-                  onClick={() => { addUni(u.id); setUniSearch('') }}
-                  className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg border border-slate-200 bg-white hover:border-amber-400 hover:bg-amber-50 transition-all text-[11px] font-medium text-slate-600 hover:text-amber-700"
-                >
-                  <Plus size={11} className="text-slate-400" />
-                  {u.name}
-                </button>
-              ))}
-              {!uniSearch && filteredAvailable.length > 12 && (
-                <span className="text-[11px] text-slate-400 self-center px-1">+{filteredAvailable.length - 12} — search above</span>
-              )}
-            </div>
+            ))}
+          </div>
+          {universities.length < 2 && (
+            <p className="text-xs text-amber-600 font-semibold mt-3 flex items-center gap-1">
+              <Star size={11} fill="currentColor" />
+              Select at least 2 universities to see the comparison
+            </p>
           )}
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {universities.length === 0 ? (
-          <div className="py-24 text-center">
+          <div className="py-20 text-center">
             <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-5">
               <BarChart2 size={28} className="text-slate-300" />
             </div>
-            <p className="text-lg font-bold text-slate-700 mb-2">No Universities Selected</p>
-            <p className="text-slate-400 mb-7 text-sm">Add up to 3 universities to compare their fees and rankings.</p>
+            <p className="text-lg font-bold text-slate-700 mb-2">Select Universities Above</p>
+            <p className="text-slate-500 mb-7 text-sm">Add 2 or 3 universities using the slots above to compare fees, rankings and syllabus.</p>
             <Link href="/universities" className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition-colors">
               Browse All Universities
             </Link>
           </div>
+        ) : universities.length === 1 ? (
+          <div className="py-12 text-center">
+            <p className="text-slate-500 text-sm">Add one more university using slot 2 above to start comparing.</p>
+          </div>
         ) : (
           <div>
+            {/* Verdict */}
             {verdict && (
-              <div className="mt-6 mb-6 border border-slate-200 rounded-2xl bg-white p-5">
+              <div className="mt-6 mb-6 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <div className="flex items-center gap-2 mb-4">
                   <div className="w-8 h-8 bg-amber-500 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Award size={16} className="text-white" />
                   </div>
                   <div>
                     <p className="text-sm font-bold text-slate-800">The Edify Verdict</p>
-                    <p className="text-[11px] text-slate-400">Based on rankings and placement data for Online {program}</p>
+                    <p className="text-[11px] text-slate-500">Based on rankings and placement data for Online {program}</p>
                   </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   <div className="p-3.5 rounded-xl border border-slate-100 bg-slate-50">
-                    <p className="text-[10px] font-semibold text-amber-500 uppercase tracking-wider mb-1">Highest Rank</p>
+                    <p className="text-[10px] font-semibold text-amber-600 uppercase tracking-wider mb-1">Highest Rank</p>
                     <p className="text-sm font-bold text-slate-800 leading-snug mb-0.5">{verdict.bestNirf.name}</p>
-                    <p className="text-xs text-slate-400">NIRF #{verdict.bestNirf.nirf}</p>
+                    <p className="text-xs text-slate-500">NIRF #{verdict.bestNirf.nirf}</p>
                   </div>
                   <div className="p-3.5 rounded-xl border border-slate-100 bg-slate-50">
-                    <p className="text-[10px] font-semibold text-green-500 uppercase tracking-wider mb-1">Best Value</p>
+                    <p className="text-[10px] font-semibold text-green-600 uppercase tracking-wider mb-1">Best Value</p>
                     <p className="text-sm font-bold text-slate-800 leading-snug mb-0.5">{verdict.cheapest.name}</p>
-                    <p className="text-xs text-slate-400">From {formatFee(verdict.cheapest.feeMin)}</p>
+                    <p className="text-xs text-slate-500">From {formatFee(verdict.cheapest.feeMin)}</p>
                   </div>
                   <div className="p-3.5 rounded-xl border border-slate-100 bg-slate-50">
-                    <p className="text-[10px] font-semibold text-blue-500 uppercase tracking-wider mb-1">Career Reach</p>
+                    <p className="text-[10px] font-semibold text-blue-600 uppercase tracking-wider mb-1">Career Reach</p>
                     <p className="text-sm font-bold text-slate-800 leading-snug mb-0.5">{verdict.bestSalary.name}</p>
-                    <p className="text-xs text-slate-400">Top Hiring Index for {program}</p>
+                    <p className="text-xs text-slate-500">Top Hiring Index for {program}</p>
                   </div>
                 </div>
               </div>
             )}
 
+            {/* Syllabus tool */}
             <div className="mb-6">
               <div className="flex items-center gap-2 mb-3">
-                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-500 text-white text-[11px] font-semibold">
-                  <Star size={10} fill="currentColor" /> Featured Tool
-                </span>
-                <span className="text-[11px] text-slate-400">Compare semester-wise subjects instantly</span>
+                <p className="text-sm font-bold text-slate-700 flex items-center gap-2">
+                  <span className="w-5 h-5 rounded-full bg-amber-500 text-white text-[10px] font-bold flex items-center justify-center">2</span>
+                  Compare Semester-wise Syllabus
+                </p>
               </div>
               <SyllabusComparison program={program} />
             </div>
 
-            {/* Mobile: cards stacked */}
+            {/* Mobile: stacked cards */}
             <div className="md:hidden space-y-4 mb-8">
-              <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider">University Details</p>
+              <p className="text-sm font-bold text-slate-700 flex items-center gap-2">
+                <span className="w-5 h-5 rounded-full bg-amber-500 text-white text-[10px] font-bold flex items-center justify-center">3</span>
+                University Details
+              </p>
               {universities.map((u, idx) => (
                 <UniCard
                   key={u.id}
@@ -768,20 +954,21 @@ function CompareContent() {
               ))}
             </div>
 
-            {/* Desktop: side-by-side table */}
+            {/* Desktop: comparison table */}
             <div className="hidden md:block mb-8 border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
               <div className="overflow-x-auto" style={{ WebkitOverflowScrolling: 'touch' }}>
+                {/* Table header */}
                 <div className="sticky top-[57px] z-[35] border-b border-slate-200 bg-white">
-                  <div className="grid" style={{ gridTemplateColumns: `160px repeat(${universities.length}, minmax(200px, 1fr))` }}>
+                  <div className="grid" style={{ gridTemplateColumns: `150px repeat(${universities.length}, minmax(190px, 1fr))` }}>
                     <div className="p-4 border-r border-slate-100 bg-slate-50">
-                      <span className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider block">Comparing</span>
+                      <span className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider block">Comparing</span>
                       <span className="text-xs font-bold text-amber-600 mt-0.5 block">{universities.length} Online {program}</span>
                     </div>
                     {universities.map((u, idx) => (
                       <div
                         key={u.id}
-                        className="p-4 border-r border-slate-100 flex flex-col items-center text-center relative group min-w-[200px]"
-                        style={{ borderTop: `2px solid ${idx === 0 ? '#1e3a5f' : idx === 1 ? '#d97706' : '#16a34a'}` }}
+                        className="p-4 border-r border-slate-100 flex flex-col items-center text-center relative group min-w-[190px]"
+                        style={{ borderTop: `3px solid ${SLOT_COLORS[idx]}` }}
                       >
                         <button
                           onClick={() => removeUni(u.id)}
@@ -791,14 +978,14 @@ function CompareContent() {
                         </button>
                         <div className="h-10 flex items-center justify-center mb-2">
                           {getUniversityLogo(u.id) ? (
-                            <img src={getUniversityLogo(u.id)!} alt={u.name} style={{ maxHeight: '100%', maxWidth: '130px', objectFit: 'contain' }} />
+                            <img src={getUniversityLogo(u.id)!} alt={u.name} style={{ maxHeight: '100%', maxWidth: '120px', objectFit: 'contain' }} />
                           ) : (
-                            <div className="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-slate-500 font-bold text-sm">
+                            <div className="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-slate-600 font-bold text-sm">
                               {u.name.slice(0, 2).toUpperCase()}
                             </div>
                           )}
                         </div>
-                        <p className="text-xs font-bold text-slate-700 leading-snug line-clamp-2 px-2 mb-1.5">{u.name}</p>
+                        <p className="text-xs font-bold text-slate-800 leading-snug line-clamp-2 px-2 mb-1.5">{u.name}</p>
                         <NaacBadge grade={u.naac} />
                       </div>
                     ))}
@@ -807,12 +994,12 @@ function CompareContent() {
 
                 <SectionDivider label="Academic Credibility" icon={<Award size={13} />} />
                 <ComparisonRow label="NIRF Rank" icon={<BarChart2 size={12} className="text-amber-500" />} unis={universities}
-                  fn={(u) => u.nirf ? <span className="text-lg font-bold text-slate-800">#{u.nirf}</span> : <span className="text-slate-300">—</span>}
+                  fn={(u) => u.nirf && u.nirf < 300 ? <span className="text-lg font-bold text-slate-800">#{u.nirf}</span> : <span className="text-slate-400">—</span>}
                 />
-                <ComparisonRow label="NAAC Grade" icon={<ShieldCheck size={12} className="text-slate-400" />} unis={universities}
+                <ComparisonRow label="NAAC Grade" icon={<ShieldCheck size={12} className="text-slate-500" />} unis={universities}
                   fn={(u) => <NaacBadge grade={u.naac} />}
                 />
-                <ComparisonRow label="Approvals" icon={<CheckCircle size={12} className="text-slate-400" />} unis={universities}
+                <ComparisonRow label="Approvals" icon={<CheckCircle size={12} className="text-slate-500" />} unis={universities}
                   fn={(u) => <ApprovalBadges approvals={u.approvals} />}
                 />
 
@@ -820,11 +1007,12 @@ function CompareContent() {
                 <ComparisonRow label="Course Fees" unis={universities} fn={(u) => <FeeDisplay u={u} />} />
                 <ComparisonRow label="EMI Option" unis={universities} fn={(u) => <EmiDisplay u={u} />} />
 
+                {/* Scholarship row */}
                 <div
                   onClick={() => { setEnquiryUni('Scholarship Enquiry'); setEnquiryOpen(true) }}
                   className="cursor-pointer bg-amber-500 hover:bg-amber-600 transition-colors"
                 >
-                  <div className="grid items-stretch" style={{ gridTemplateColumns: `160px repeat(${universities.length}, minmax(200px, 1fr))` }}>
+                  <div className="grid items-stretch" style={{ gridTemplateColumns: `150px repeat(${universities.length}, minmax(190px, 1fr))` }}>
                     <div className="p-4 flex items-center gap-2 bg-black/10">
                       <Lock size={14} className="text-white" />
                       <span className="text-xs font-semibold text-white uppercase tracking-wider">Scholarship</span>
@@ -845,7 +1033,7 @@ function CompareContent() {
                 <ComparisonRow label="Hiring Partners" unis={universities} fn={(u) => <CompaniesDisplay u={u} />} />
                 <ComparisonRow label="Placement Support" unis={universities}
                   fn={() => (
-                    <span className="flex items-center gap-1 text-xs text-green-700 font-medium">
+                    <span className="flex items-center gap-1 text-xs text-green-800 font-semibold">
                       <CheckCircle size={13} className="text-green-500" />
                       LMS + Job Portal
                     </span>
@@ -855,14 +1043,16 @@ function CompareContent() {
                 <SectionDivider label="Curriculum" icon={<BookOpen size={13} />} />
                 <ComparisonRow label="Specialisations" unis={universities} fn={(u) => <SpecDisplay u={u} />} />
 
-                <div className="grid bg-slate-50 border-t border-slate-200" style={{ gridTemplateColumns: `160px repeat(${universities.length}, minmax(200px, 1fr))` }}>
+                {/* Footer CTA row */}
+                <div className="grid bg-slate-50 border-t border-slate-200" style={{ gridTemplateColumns: `150px repeat(${universities.length}, minmax(190px, 1fr))` }}>
                   <div className="p-4 flex items-center justify-center border-r border-slate-100">
-                    <p className="text-xs font-semibold text-slate-500 text-center">Ready to pick your university?</p>
+                    <p className="text-xs font-semibold text-slate-600 text-center">Ready to pick your university?</p>
                   </div>
-                  {universities.map(u => (
+                  {universities.map((u, idx) => (
                     <div key={u.id} className="p-4 border-l border-slate-100 flex flex-col gap-2">
                       <button onClick={() => { setEnquiryUni(u.name); setEnquiryOpen(true) }}
-                        className="w-full bg-amber-500 hover:bg-amber-600 text-white text-xs font-bold py-2.5 rounded-xl transition-colors">
+                        className="w-full text-white text-xs font-bold py-2.5 rounded-xl transition-opacity hover:opacity-90"
+                        style={{ background: SLOT_COLORS[idx] }}>
                         Enquire Now
                       </button>
                       <Link href={`/universities/${u.id}/${progSlug(program)}`} className="text-[11px] font-semibold text-center text-amber-600 hover:text-amber-700">
@@ -874,8 +1064,10 @@ function CompareContent() {
               </div>
             </div>
 
+            {/* Bottom cards */}
             <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
-              <div className="p-6 rounded-2xl text-white relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #0d2240 0%, #1e3a5f 100%)' }}>
+              {/* Trust card */}
+              <div className="p-6 rounded-2xl relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #0d2240 0%, #1e3a5f 100%)' }}>
                 <div className="relative z-10">
                   <div className="w-9 h-9 rounded-lg bg-amber-500/20 flex items-center justify-center mb-4">
                     <ShieldCheck size={18} className="text-amber-400" />
@@ -883,28 +1075,29 @@ function CompareContent() {
                   <p className="text-base font-bold text-white mb-2 leading-tight">
                     India&apos;s Only Direct-to-Counsellor Guide
                   </p>
-                  <p className="text-white/50 text-sm mb-5 leading-relaxed">
+                  <p className="text-white/70 text-sm mb-5 leading-relaxed">
                     Our database is verified by human experts who cross-check every UGC approval and NIRF update from government sources.
                   </p>
                   <div className="flex items-center gap-5">
                     <div>
                       <span className="text-xl font-bold text-amber-400 block">127+</span>
-                      <span className="text-[10px] text-white/40 uppercase tracking-wider">Unis Verified</span>
+                      <span className="text-[10px] text-white/50 uppercase tracking-wider">Unis Verified</span>
                     </div>
-                    <div className="w-px h-8 bg-white/15" />
+                    <div className="w-px h-8 bg-white/20" />
                     <div>
                       <span className="text-xl font-bold text-amber-400 block">24 Hr</span>
-                      <span className="text-[10px] text-white/40 uppercase tracking-wider">Callback</span>
+                      <span className="text-[10px] text-white/50 uppercase tracking-wider">Callback</span>
                     </div>
-                    <div className="w-px h-8 bg-white/15" />
+                    <div className="w-px h-8 bg-white/20" />
                     <div>
                       <span className="text-xl font-bold text-amber-400 block">100%</span>
-                      <span className="text-[10px] text-white/40 uppercase tracking-wider">UGC DEB</span>
+                      <span className="text-[10px] text-white/50 uppercase tracking-wider">UGC DEB</span>
                     </div>
                   </div>
                 </div>
               </div>
 
+              {/* Frequently compared */}
               <div className="p-5 bg-white border border-slate-200 rounded-2xl">
                 <div className="flex items-center gap-2 mb-4">
                   <Users size={15} className="text-amber-500" />
@@ -927,7 +1120,7 @@ function CompareContent() {
                       href={c.href}
                       className="flex items-center justify-between p-3 rounded-xl border border-slate-100 hover:border-amber-300 hover:bg-amber-50 transition-all group no-underline"
                     >
-                      <span className="text-xs font-medium text-slate-600 group-hover:text-slate-800">{c.label}</span>
+                      <span className="text-xs font-medium text-slate-700 group-hover:text-slate-900">{c.label}</span>
                       <ChevronRight size={13} className="text-slate-400 group-hover:text-amber-500 flex-shrink-0" />
                     </Link>
                   ))}
