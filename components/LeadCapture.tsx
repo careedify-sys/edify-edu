@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react'
 import { X } from 'lucide-react'
-import EnquiryModal from './EnquiryModal'
+import EnquiryModal from './EnquiryModalDynamic'
 
 // ── ENTRY POPUP (5s delay on first visit) ──────────────────────
 export function EntryPopup() {

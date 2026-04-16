@@ -6,7 +6,7 @@ import { MapPin } from 'lucide-react'
 import type { UniSlim } from '@/lib/data-slim'
 import { formatFeeSlim as formatFee } from '@/lib/data-slim'
 import { getUniversityLogo } from '@/lib/content'
-import EnquiryModal from './EnquiryModal'
+import EnquiryModal from './EnquiryModalDynamic'
 
 function UniLogo({ src, name, abbr, color }: { src?: string | null; name: string; abbr: string; color: string }) {
   const [err, setErr] = useState(false)
@@ -19,7 +19,7 @@ function UniLogo({ src, name, abbr, color }: { src?: string | null; name: string
     )
   }
   return (
-    <img src={src} alt={`${name} logo`} style={{ maxHeight: 36, maxWidth: 130, objectFit: 'contain' }} loading="lazy" onError={() => setErr(true)} />
+    <img src={src} alt={`${name} logo`} width={130} height={36} style={{ maxHeight: 36, maxWidth: 130, objectFit: 'contain' }} loading="lazy" onError={() => setErr(true)} />
   )
 }
 

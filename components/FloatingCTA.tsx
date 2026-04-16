@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { MessageCircle } from 'lucide-react'
-import EnquiryModal from './EnquiryModal'
+import EnquiryModal from './EnquiryModalDynamic'
 
 export default function FloatingCTA() {
   const [open, setOpen] = useState(false)

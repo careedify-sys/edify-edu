@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import EnquiryModal from './EnquiryModal'
+import EnquiryModal from './EnquiryModalDynamic'
 
 const STAGES = [
   {

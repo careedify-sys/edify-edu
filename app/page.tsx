@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import type { CSSProperties } from 'react'
 import EdifyTrust from '@/components/EdifyTrust'
 import { StickyBottomBar } from '@/components/LeadCapture'
-import EnquiryModal from '@/components/EnquiryModal'
+import EnquiryModal from '@/components/EnquiryModalDynamic'
 
 import Link from 'next/link'
 import { ArrowRight, CheckCircle, XCircle, Shield, TrendingUp, Star, Award, BookOpen } from 'lucide-react'

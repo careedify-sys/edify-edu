@@ -139,7 +139,7 @@ export default function UniversityPageClient({ university: u }: Props) {
                 <div className="flex items-center gap-5 mb-6">
                   {u.logo && (
                     <div className="bg-white rounded-xl flex items-center justify-center p-3 shadow-xl shrink-0 border border-white/20" style={{ width: '120px', height: '84px' }}>
-                      <img src={u.logo} alt={u.abbr} style={{ maxHeight: '100%', maxWidth: '100%', objectFit:'contain' }} />
+                      <img src={u.logo} alt={u.abbr} width={96} height={60} style={{ maxHeight: '100%', maxWidth: '100%', objectFit:'contain' }} loading="eager" fetchPriority="high" />
                     </div>
                   )}
                   <h1 className="font-display flex-1" style={{fontSize:'clamp(1.6rem,4vw,2.4rem)',fontWeight:800,color:'#fff',lineHeight:1.15,margin:0}}>

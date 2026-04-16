@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Plus_Jakarta_Sans, Fraunces } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import { EntryPopup, ExitIntentPopup } from '@/components/LeadCapture'
@@ -156,21 +157,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }} />
 
-        {/* ── Google Analytics 4 + Google Ads ───────────────────── */}
-        {process.env.NEXT_PUBLIC_GA4_ID && (
-          <>
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA4_ID}`} />
-            <script dangerouslySetInnerHTML={{ __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${process.env.NEXT_PUBLIC_GA4_ID}', {
-                page_path: window.location.pathname,
-              });
-              gtag('config', 'AW-17380291250');
-            `}} />
-          </>
-        )}
       </head>
       <body>
         {/* Skip-navigation for keyboard / screen-reader users */}
@@ -193,6 +179,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <FloatingCTA />
         <BottomNav />
+        {/* ── Google Analytics 4 + Google Ads (afterInteractive = non-blocking) ── */}
+        {process.env.NEXT_PUBLIC_GA4_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA4_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4-init" strategy="afterInteractive">{`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${process.env.NEXT_PUBLIC_GA4_ID}', { page_path: window.location.pathname });
+              gtag('config', 'AW-17380291250');
+            `}</Script>
+          </>
+        )}
       </body>
     </html>
   )

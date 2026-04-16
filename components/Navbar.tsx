@@ -138,7 +138,7 @@ export default function Navbar() {
 
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2.5 shrink-0 no-underline">
-              <img src="/logos/university_logos/edify_logo_transparent_onlight.svg" alt="Edify" className="h-8 sm:h-10 lg:h-12 w-auto object-contain" />
+              <img src="/logos/university_logos/edify_logo_transparent_onlight.svg" alt="Edify" width={120} height={40} className="h-8 sm:h-10 lg:h-12 w-auto object-contain" fetchPriority="high" />
             </Link>
 
             {/* Desktop search */}
