@@ -106,7 +106,7 @@ export async function generateMetadata(
     : (PROGRAM_BASE_KEYWORDS[program] || [`online ${program} india ${year}`, `best online ${program} india`, `ugc approved ${program}`, `online ${program} for working professionals`]))
 
   return {
-    title,
+    title: { absolute: title },
     description,
     keywords: specKeywords,
     alternates: { canonical },
@@ -239,11 +239,11 @@ export default async function CatchAllProgramPage(
                   <TrendingUp size={12}/> UGC DEB Approved 2026
                 </div>
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-navy leading-tight">
-                  Online {program} <br className="hidden md:block"/>
+                  Online {program}{' '}
                   {activeSpec ? (
                     <span className="text-amber-text">in {activeSpec}</span>
                   ) : (
-                    <span>Your Gateway to Career Growth</span>
+                    <span className="text-amber-text">Colleges in India {year} — UGC DEB Approved</span>
                   )}
                 </h1>
                 <p className="mt-4 text-lg text-ink-2 max-w-2xl leading-relaxed">
