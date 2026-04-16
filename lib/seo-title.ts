@@ -84,7 +84,7 @@ export const TITLE_NAME: Record<string, string> = {
   'bs-abdur-rahman-university-online': 'BS Abdur Rahman',
   'madurai-kamaraj-university-online': 'Madurai Kamaraj Univ',
   'dr-mgr-educational-research-institute-online': 'Dr MGR Institute',
-  'shanmugha-arts-science-technology-research-online': 'SASTRA University',
+  'shanmugha-arts-science-technology-research-online': 'Shanmugha Arts SASTRA',
   'sastra-university-online': 'SASTRA University',
   'sathyabama-university-online': 'Sathyabama Institute',
   'srm-institute-science-technology-online': 'SRM Institute',
