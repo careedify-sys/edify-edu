@@ -801,7 +801,7 @@ function CompareContent() {
   }
 
   return (
-    <div className="pb-20 bg-white">
+    <div className="pb-10 bg-slate-50">
       {universities.length >= 2 && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
           '@context':'https://schema.org','@type':'Article',
@@ -839,8 +839,8 @@ function CompareContent() {
       </div>
 
       {/* ── UNIVERSITY SELECTOR SLOTS ───────────────────────────────────────── */}
-      <div className="bg-white border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
+      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 sm:p-6">
           <p className="text-sm font-bold text-slate-700 mb-4 flex items-center gap-2">
             <span className="w-5 h-5 rounded-full bg-amber-500 text-white text-[10px] font-bold flex items-center justify-center">1</span>
             Choose universities to compare
@@ -1064,41 +1064,9 @@ function CompareContent() {
               </div>
             </div>
 
-            {/* Bottom cards */}
-            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
-              {/* Trust card */}
-              <div className="p-6 rounded-2xl relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #0d2240 0%, #1e3a5f 100%)' }}>
-                <div className="relative z-10">
-                  <div className="w-9 h-9 rounded-lg bg-amber-500/20 flex items-center justify-center mb-4">
-                    <ShieldCheck size={18} className="text-amber-400" />
-                  </div>
-                  <p className="text-base font-bold text-white mb-2 leading-tight">
-                    India&apos;s Only Direct-to-Counsellor Guide
-                  </p>
-                  <p className="text-white/70 text-sm mb-5 leading-relaxed">
-                    Our database is verified by human experts who cross-check every UGC approval and NIRF update from government sources.
-                  </p>
-                  <div className="flex items-center gap-5">
-                    <div>
-                      <span className="text-xl font-bold text-amber-400 block">127+</span>
-                      <span className="text-[10px] text-white/50 uppercase tracking-wider">Unis Verified</span>
-                    </div>
-                    <div className="w-px h-8 bg-white/20" />
-                    <div>
-                      <span className="text-xl font-bold text-amber-400 block">24 Hr</span>
-                      <span className="text-[10px] text-white/50 uppercase tracking-wider">Callback</span>
-                    </div>
-                    <div className="w-px h-8 bg-white/20" />
-                    <div>
-                      <span className="text-xl font-bold text-amber-400 block">100%</span>
-                      <span className="text-[10px] text-white/50 uppercase tracking-wider">UGC DEB</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Frequently compared */}
-              <div className="p-5 bg-white border border-slate-200 rounded-2xl">
+            {/* Bottom — frequently compared */}
+            <div className="mt-4 mb-8">
+              <div className="p-5 bg-white border border-slate-200 rounded-2xl shadow-sm">
                 <div className="flex items-center gap-2 mb-4">
                   <Users size={15} className="text-amber-500" />
                   <p className="text-sm font-bold text-slate-800">Frequently Compared</p>
@@ -1130,6 +1098,7 @@ function CompareContent() {
           </div>
         )}
       </div>
+
 
       <EnquiryModal
         isOpen={enquiryOpen}
