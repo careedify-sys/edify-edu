@@ -1,6 +1,8 @@
 // app/compare/page.tsx — Server Component wrapper
 // Static H1/H2/FAQ is server-rendered (crawler-visible)
 // Interactive comparison tool loads client-side via CompareClient
+// force-dynamic: each ?a=&b= pair gets its own canonical + title via generateMetadata
+export const dynamic = 'force-dynamic'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ChevronRight, ChevronDown, ShieldCheck, Award, Wallet, Phone } from 'lucide-react'

@@ -834,7 +834,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Mangalayatan University – Online (mangalayata. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['HR professionals targeting industrial relations, global HRM, OD, negotiation rol'],
     notFor: ['Deep tech/finance seekers', 'Non-HR backgrounds'],
-    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'MA', 'M.Com', 'MSc'],
+    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'M.Com', 'MSc'],
     programDetails: {
       'MBA': {
         specs: ['Marketing Management', 'Finance', 'Human Resource Management', 'Business Analytics', 'Operations Management', 'Logistics & Supply Chain Management', 'International Business', 'Digital Marketing'],
@@ -1693,7 +1693,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Manonmaniam Sundaranar University (MSU Online. NAAC A accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'MA'],
+    programs: ['MBA'],
     programDetails: {
       'MBA': {
         specs: ['Financial Management', 'Entrepreneurship', 'Marketing Management', 'Human Resource Management', 'Production and Logistics Management'],
@@ -2503,9 +2503,9 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Hindustan Institute of Technology and Science. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'MCA', 'BCA', 'B.Com'],
+    programs: ['MBA', 'MCA'],
     programDetails: {
-      
+
       'MBA': {
         specs: ['Finance'],
         fees: '₹120K – ₹120K',
@@ -2557,7 +2557,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Guru Ghasidas Vishwavidyalaya (GGU). NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'MCA', 'B.Com', 'MA', 'M.Com'],
+    programs: ['MBA', 'MCA', 'B.Com', 'M.Com'],
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management'],
@@ -2641,7 +2641,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Dr. Babasaheb Ambedkar Open University. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'MCA', 'BCA', 'B.Com', 'MA'],
+    programs: ['MBA', 'MCA', 'BCA', 'B.Com'],
     programDetails: {
       'MBA': {
         specs: ['Finance', 'Marketing'],
@@ -3761,7 +3761,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Central University of Himachal Pradesh (Centr. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'MA'],
+    programs: ['MBA'],
     programDetails: {
       'MBA': {
         specs: ['General Management'],
@@ -4395,7 +4395,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Assam Don Bosco University – CDOE (dbuniversi. NAAC A accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals, entrepreneurs, graduates seeking flexible leadership trai'],
     notFor: ['Students seeking purely academic/theoretical research without industrial applica'],
-    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'MA'],
+    programs: ['MBA', 'MCA', 'BBA', 'BCA'],
     programDetails: {
       'MBA': {
         specs: ['Project Management', 'Logistics & Supply Chain Management', 'Operations Management', 'HR Management', 'Finance', 'Marketing Management'],
