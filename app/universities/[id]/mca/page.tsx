@@ -70,7 +70,7 @@ export default async function OnlineMCAPage({ params }: { params: Promise<{ id: 
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
-        <h2 className="font-display text-xl font-bold text-navy mb-6">Choose Your MCA Specialization</h2>
+        <h2 className="font-display text-xl font-bold text-navy mb-6">{u.name} Online MCA Specializations 2026</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {specs.map(spec => (
             <Link key={spec} href={`/universities/${u.id}/mca/${makeSlug(spec)}`}

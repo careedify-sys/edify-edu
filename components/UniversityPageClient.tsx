@@ -289,7 +289,7 @@ export default function UniversityPageClient({ university: u }: Props) {
               {/* About University */}
               <section className="card-lg p-6">
                 <h2 className="font-display text-xl font-bold text-navy mb-4">
-                  About {u.name}
+                  {u.name} Online — Programs, Fees & Reviews 2026
                 </h2>
                 <p className="text-ink-2 text-[15px] leading-relaxed mb-4">
                   {u.description}

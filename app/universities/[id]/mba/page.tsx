@@ -109,7 +109,7 @@ export default async function OnlineMBAPage(
       {/* Specializations Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
         <h2 className="font-display text-xl font-bold text-navy mb-6">
-          Choose Your MBA Specialization
+          {u.name} Online MBA Specializations 2026
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {specs.map(spec => {
