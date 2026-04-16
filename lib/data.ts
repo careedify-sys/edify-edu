@@ -135,7 +135,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'M.Com'],
     programDetails: {
       'MBA': {
-        specs: ['General Management', 'Human Resource Management & Finance', 'Finance & Marketing', 'Marketing & Human Resource Management', 'Finance & Business Analytics', 'Project Management', 'Information Technology (IT)', 'Supply Chain', 'Production & Operations Management', 'Business Intelligence & Analytics', 'Entrepreneurship & Venture Creation', 'International Finance (ACCA)', 'Data Science', 'Digital Marketing & E-Commerce', 'Artificial Intelligence', 'Banking & Finance', 'Human Resource Management', 'Finance', 'Marketing'],
+        specs: ['Marketing', 'Finance', 'Human Resource Management', 'Business Analytics', 'Digital Marketing', 'International Business', 'Operations Management', 'Logistics & Supply Chain Management', 'Entrepreneurship & Leadership', 'Healthcare Management', 'Retail Management', 'Information Technology (IT)', 'Banking & Financial Services', 'General Management'],
         fees: '₹0.1L – ₹2.8L',
         duration: '2 Yrs',
         roles: ['HR Executive', 'Finance Analyst', 'Talent Acquisition Specialist', 'Investment Analyst Trainee'],
@@ -144,7 +144,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from JAIN (Deemed-to-be University) – JA — recognised for corporate hiring.'},
       'MCA': {
-        specs: ['DevOps', 'Natural Language Processing & Large Language Models Development', 'Data Analytics', 'Cyber Security', 'Full Stack Development', 'Cloud Computing', 'Data Science', 'Artificial Intelligence', 'Computer Science and Information Technology'],
+        specs: ['Artificial Intelligence and Machine Learning', 'Cybersecurity', 'Data Science', 'Internet of Things (IoT)', 'Full Stack Development', 'Cloud Computing', 'General', 'Blockchain Technology'],
         fees: '₹1.6L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -209,8 +209,8 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 199000,
-    feeMax: 199000,
+    feeMin: 115000,
+    feeMax: 225000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -224,7 +224,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Hospital & Healthcare Management', 'Business Analytics', 'Data Science', 'Digital Entrepreneurship', 'Digital Marketing Management', 'Entrepreneurship & Leadership Management', 'Finance & Accounting Management', 'Global Finance Market', 'Hospitality Management', 'Human Resource Management', 'Human Resources Analytics', 'Information Technology (IT)', 'Insurance Management', 'International Business Management', 'International Finance (ACCA)', 'Marketing & Sales Management', 'Production & Operations Management', 'Retail Management', 'General Management'],
-        fees: '₹40K – ₹161K',
+        fees: '₹2.25L',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Executive'],
         avgSalary: '₹5L – ₹12L per annum',
@@ -233,7 +233,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Amity University Online — recognised for corporate hiring.'},
       'MCA': {
         specs: ['general', 'Artificial Intelligence and Machine Learning', 'Financial Technology and AI', 'Cyber Security', 'Software Engineering', 'Blockchain Technology'],
-        fees: '₹7K',
+        fees: '₹1.99L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -246,7 +246,7 @@ export const UNIVERSITIES: University[] = [
 
       'BBA': {
         specs: ['General Business Administration (option for Data A', 'Travel & Tourism Management', 'Data Analytics'],
-        fees: '₹60K – ₹200K',
+        fees: '₹1.99L',
         duration: '3 Years',
         roles: ['Sales Executive', 'Marketing Trainee', 'Business Development Executive'],
         avgSalary: '₹3L – ₹6L per annum',
@@ -256,7 +256,7 @@ export const UNIVERSITIES: University[] = [
       },
       'BCA': {
         specs: ['Computer Applications (4 specialisations available', 'Computer Applications – Data Science', 'Computer Applications – Financial Technology & AI'],
-        fees: '₹60K – ₹200K',
+        fees: '₹1.75L',
         duration: '3 Years',
         roles: ['Junior Developer', 'Software Trainee', 'IT Support'],
         avgSalary: '₹3L – ₹7L per annum',
@@ -266,7 +266,7 @@ export const UNIVERSITIES: University[] = [
       },
       'B.Com': {
         specs: ['Commerce', 'Accounting', 'Commerce Honours (Advanced Accounting & Finance)'],
-        fees: '₹60K – ₹200K',
+        fees: '₹1.15L',
         duration: '3 Years',
         roles: ['Accounts Executive', 'Tax Assistant', 'Audit Trainee'],
         avgSalary: '₹3L – ₹6L per annum',
@@ -319,7 +319,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Lovely Professional University (LPU) — recognised for corporate hiring.'},
       'MCA': {
-        specs: ['AR/ VR (Game Development)', 'Machine Learning & AI', 'Data Science', 'Cybersecurity', 'Full Stack Web Development'],
+        specs: ['AR/VR (Game Development)', 'Machine Learning & AI', 'Data Science', 'Cybersecurity', 'Full Stack Web Development', 'Cloud Computing'],
         fees: '₹37K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -414,7 +414,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BCA', 'B.Com'],
     programDetails: {
       'MBA': {
-        specs: ['Financial Management (FinTech focus)', 'Human Resource Management', 'Marketing Management', 'IT & Systems Management', 'Logistics & Supply Chain Management', 'Entrepreneurship Management', 'Business Analytics', 'Artificial Intelligence'],
+        specs: ['Finance', 'Marketing', 'Human Resource Management', 'Business Analytics', 'Operations Management', 'International Business', 'Healthcare Management', 'Information Technology Management'],
         fees: '₹30K – ₹120K',
         duration: '2 Years',
         roles: ['HR Executive', 'Recruiter', 'Training Coordinator.'],
@@ -424,7 +424,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Dayananda Sagar University (DSU) On — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['Cloud Computing Technologies', 'Data Science', 'Blockchain Technologies', 'Quantum Computing', 'Artificial Intelligence', 'Deep Learning', 'Big Data Analytics', 'Internet of Things (IoT)', 'Natural Language Processing', 'Mobile Application Development', 'Data Analytics & Visualization', 'Industrial IoT & Automation', 'Business Intelligence Technology', 'Business Data Analytics', 'Quantum Machine Learning'],
+        specs: ['Artificial Intelligence & Machine Learning', 'Data Science', 'Cybersecurity', 'Internet of Things (IoT)', 'Cloud Computing', 'Full Stack Development', 'Blockchain Technology', 'Business Analytics', 'Data Engineering', 'DevOps', 'Digital Marketing Technology', 'Game Development', 'UI/UX Design', 'General'],
         fees: '₹1.2L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -565,7 +565,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA'],
     programDetails: {
       'MBA': {
-        specs: ['Marketing Management', 'Human Resource Management', 'Financial Management', 'Operations Management', 'Business Analytics', 'Logistics & Supply Chain Management', 'International Business', 'Digital Business', 'Oil and Gas Management', 'Power Management', 'Infrastructure Management'],
+        specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'International Business', 'Business Analytics', 'Energy Management', 'Logistics & Supply Chain Management', 'Oil & Gas Management', 'Digital Marketing', 'Healthcare Management'],
         fees: '₹0.1L – ₹2.4L',
         duration: '2 Years',
         roles: ['Marketing Coordinator', 'Marketing Analyst', 'Digital Marketing Specialist', 'Market Researcher'],
@@ -574,7 +574,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from UPES Online (University of Petroleu — recognised for corporate hiring.'},
       'MCA': {
-        specs: ['Artificial Intelligence and Machine Learning', 'Cyber Security and Forensics', 'Data Science'],
+        specs: ['Artificial Intelligence & Machine Learning', 'Cybersecurity', 'Data Science'],
         fees: '₹TBD',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -733,8 +733,8 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 170000,
-    feeMax: 170000,
+    feeMin: 140000,
+    feeMax: 260000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -747,7 +747,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Finance', 'Fintech', 'Marketing', 'Business Analytics', 'Operations Management', 'Artificial Intelligence', 'International Finance and Accounting (ACCA)', 'Environmental, Social, and Governance (ESG)'],
-        fees: '₹220K – ₹220K',
+        fees: '₹1.7L – ₹2.6L',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -756,7 +756,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Amrita Vishwa Vidyapeetham (Amrita — recognised for corporate hiring.'},
       'MCA': {
         specs: ['Artificial Intelligence and Machine Learning', 'Cybersecurity', 'General'],
-        fees: '₹6K',
+        fees: '₹1.4L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -945,7 +945,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com', 'MSc'],
     programDetails: {
       'MBA': {
-        specs: ['Marketing Management', 'Human Resource Management', 'Financial Management', 'Digital Marketing', 'Retail Management', 'Banking & Insurance', 'Operation & Supply Chain Management', 'IT Management', 'Tourism Management', 'Real Estate Management', 'Direct Selling Management', 'Data Science & Business Analytics', 'Agri Business Management', 'Biotechnology Management', 'Food Technology Management', 'Pharma & Health Care Management'],
+        specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'Business Analytics', 'Digital Marketing', 'International Business', 'Data Science', 'Logistics & Supply Chain Management', 'Healthcare Management', 'IT Management', 'Entrepreneurship', 'Banking & Financial Services', 'Retail Management', 'Tourism & Hospitality Management'],
         fees: '₹0.2L – ₹2.0L',
         duration: '2 Years',
         roles: ['Business Analyst', 'Marketing Manager', 'Financial Analyst', 'HR Manager', 'Operations Manager', 'IT Manager'],
@@ -955,7 +955,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Shoolini University – Shoolini Onli — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['AI Specialization', 'Data Science', 'Full Stack'],
+        specs: ['Artificial Intelligence & Machine Learning', 'Cybersecurity', 'Data Science'],
         fees: '₹0K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -1026,8 +1026,8 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 160000,
-    feeMax: 160000,
+    feeMin: 139500,
+    feeMax: 180000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -1039,8 +1039,8 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com', 'M.Com', 'MSc'],
     programDetails: {
       'MBA': {
-        specs: ['Finance', 'Marketing', 'Human Resource Management', 'Analytics and Data Science', 'Digital Marketing', 'Operations Management', 'International Business', 'Project Management', 'Logistics & Supply Chain Management', 'Information System Management', 'IT & FinTech', 'BFSI (Banking', 'Financial Services and Insurance)', 'Retail Management'],
-        fees: '₹43K – ₹175K',
+        specs: ['Finance', 'Marketing', 'Human Resource Management', 'Analytics and Data Science', 'Digital Marketing', 'Operations Management', 'International Business', 'Project Management', 'Logistics & Supply Chain Management', 'Information System Management', 'IT & FinTech', 'BFSI (Banking, Financial Services and Insurance)', 'Retail Management'],
+        fees: '₹1.8L',
         duration: '2 Years (4 Semesters)',
         roles: ['Management Trainee', 'Business Analyst', 'Marketing Manager', 'HR Executive', 'Operations Manager', 'Financial Analyst'],
         avgSalary: '₹4L – ₹15L per annum',
@@ -1049,7 +1049,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Manipal University Jaipur (MUJ) – O — recognised for corporate hiring.'},
       'MCA': {
         specs: ['AI & Data Science', 'Comprehensive Emerging Technologies', 'Artificial Intelligence & Machine Learning', 'Cloud Computing', 'Cybersecurity'],
-        fees: '₹1.6L',
+        fees: '₹1.58L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -1062,7 +1062,7 @@ export const UNIVERSITIES: University[] = [
 
       'BBA': {
         specs: ['General Management'],
-        fees: '₹0.2L – ₹1.2L',
+        fees: '₹1.39L',
         duration: '3 Years (6 Semesters)',
         roles: ['Management Trainee', 'Sales Executive', 'Marketing Executive', 'HR Executive', 'Operations Coordinator'],
         avgSalary: '₹3L – ₹7L per annum',
@@ -1072,7 +1072,7 @@ export const UNIVERSITIES: University[] = [
       },
       'BCA': {
         specs: ['General Management'],
-        fees: '₹0.2L – ₹1.2L',
+        fees: '₹1.39L',
         duration: '3 Years (6 Semesters)',
         roles: ['Software Developer', 'Web Developer', 'Systems Administrator', 'Data Analyst', 'IT Support Engineer'],
         avgSalary: '₹3L – ₹7L per annum',
@@ -1144,7 +1144,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'M.Com'],
     programDetails: {
       'MBA': {
-        specs: ['Finance', 'HR Management', 'Marketing Management', 'Operations Management', 'Business Analytics', 'Healthcare Management', 'International Business Management'],
+        specs: ['Finance', 'Human Resource Management', 'Marketing Management', 'Operations Management', 'Business Analytics', 'Healthcare Management', 'International Business Management'],
         fees: '₹76K – ₹76K',
         duration: '2 Yrs',
         roles: ['Financial Analyst', 'Investment Analyst Trainee', 'Credit Analyst'],
@@ -1215,7 +1215,7 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 110000,
+    feeMin: 90000,
     feeMax: 110000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
@@ -1225,11 +1225,11 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Sikkim Manipal University (SMU) – Online Mani. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Students wanting most affordable Manipal MBA (₹1.1L vs ₹1.75L at MUJ and ₹2.92L', 'Those wanting dual expertise – Marketing mandatory gives all-round commercial sk', 'Healthcare professionals wanting MBA'],
     notFor: ['Students wanting highly specialised single-domain MBA', 'Those needing strongest NIRF ranking (MAHE or MUJ rank higher)'],
-    programs: ['MBA', 'MCA', 'B.Com', 'BA', 'M.Com'],
+    programs: ['MBA', 'MCA', 'BBA', 'B.Com', 'BA', 'M.Com'],
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Systems (IT Management)', 'Operations & Supply Chain Management', 'Healthcare'],
-        fees: '₹27K – ₹110K',
+        fees: '₹1.1L',
         duration: '2 Years',
         roles: ['Marketing Executive', 'Sales Executive', 'HR Executive', 'Ops Analyst', 'Healthcare Admin'],
         avgSalary: '₹5L – ₹9L per annum',
@@ -1247,8 +1247,16 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from Sikkim Manipal University — recognised for corporate hiring.',
       },
-      
-      
+      'BBA': {
+        specs: ['General Management'],
+        fees: '₹90K',
+        duration: '3 Years (6 Semesters)',
+        roles: ['Business Executive', 'Sales Trainee', 'Marketing Executive', 'HR Executive'],
+        avgSalary: '₹2.5L – ₹6L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'HDFC Bank', 'ICICI Bank', 'Axis Bank'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved BBA from Sikkim Manipal University — recognised for corporate hiring.',
+      },
 
       'B.Com': {
         specs: ['General Management'],
@@ -1550,7 +1558,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BCA', 'M.Com'],
     programDetails: {
       'MBA': {
-        specs: ['Healthcare and Hospital Administration', 'Marketing', 'Human Resource Management', 'Finance', 'Data Science and Analytics', 'Strategic Human Resource Management'],
+        specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'Business Analytics', 'International Business'],
         fees: '₹150K – ₹150K',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -1559,7 +1567,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Sharda University (Sharda Online) — recognised for corporate hiring.'},
       'MCA': {
-        specs: ['Data Science', 'Computer Science and Information Technology', 'Augmented Reality and Virtual Reality with Artificial Intelligence'],
+        specs: ['Artificial Intelligence & Machine Learning', 'Cybersecurity', 'Data Science'],
         fees: '₹30K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -1641,7 +1649,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA'],
     programDetails: {
       'MBA': {
-        specs: ['Finance', 'Marketing', 'Human Resource Management', 'Logistics & Supply Chain Management', 'Business Analytics', 'Healthcare Management', 'IT Management'],
+        specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'Business Analytics', 'Data Science', 'Healthcare Management'],
         fees: '₹22K – ₹90K',
         duration: '2 Years',
         roles: ['Financial Analyst', 'Tax Analyst', 'Investment Banking Trainee', 'Credit Analyst'],
@@ -1651,7 +1659,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Vignan\'s Foundation for Science, Te — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['Computer Science and IT', 'Data Science'],
+        specs: ['Artificial Intelligence & Machine Learning', 'Data Science'],
         fees: '₹90K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -1784,7 +1792,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'BBA', 'B.Com'],
     programDetails: {
       'MBA': {
-        specs: ['Marketing Management', 'Business Management', 'Financial Management', 'Human Resource Management', 'Operations & Data Sciences Management'],
+        specs: ['Business Administration', 'Finance', 'Marketing', 'Human Resource Management', 'Operations Management'],
         fees: '₹60K – ₹200K',
         duration: '2 Years (4-year max validity)',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Analyst'],
@@ -1846,7 +1854,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'B.Com', 'MSc'],
     programDetails: {
       'MBA': {
-        specs: ['Healthcare Management', 'Pharmaceutical Management', 'Business Analytics', 'Data Science', 'Finance', 'Marketing', 'Operations Management', 'Human Resource Management', 'Logistics & Supply Chain Management'],
+        specs: ['Marketing', 'Finance', 'Human Resource Management', 'Business Analytics', 'Operations & Supply Chain Management', 'Banking & Financial Services', 'Healthcare Management', 'International Business', 'Information Technology Management'],
         fees: '₹68K – ₹275K',
         duration: '2 Years (4 Semesters)',
         roles: ['Management Trainee', 'Business Analyst', 'Marketing Manager', 'Financial Analyst', 'HR Business Partner', 'Operations Manager'],
@@ -1856,7 +1864,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Manipal Academy of Higher Education — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['Artificial Intelligence & Machine Learning', 'Cloud Computing', 'Cybersecurity', 'Full Stack Development'],
+        specs: ['Artificial Intelligence and Machine Learning', 'Cybersecurity', 'Data Science', 'General'],
         fees: '₹2.2L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -2009,7 +2017,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'MSc'],
     programDetails: {
       'MBA': {
-        specs: ['Human Resource Management', 'International Business', 'Entrepreneurship', 'Finance', 'Information Technology', 'Banking & Insurance', 'Logistics & Supply Chain Management', 'Hospital Management', 'Event Management', 'Travel & Tourism Management', 'Airlines & Airport Management', 'Operations Management', 'Digital Marketing'],
+        specs: ['General Management', 'Marketing Management', 'Finance', 'Human Resource Management', 'Business Analytics', 'Data Science', 'International Business', 'Operations Management', 'Logistics & Supply Chain Management', 'Healthcare & Hospital Administration', 'Information Technology', 'Entrepreneurship & Family Business', 'Retail Management', 'Banking, Insurance & Financial Services', 'Digital Marketing', 'Agri Business Management', 'Sports Management', 'Tourism & Hospitality Management', 'Aviation Management', 'Oil & Gas Management', 'Media & Communication Management', 'Infrastructure Management', 'Energy Management'],
         fees: '₹0.4L – ₹2.2L',
         duration: '2 Years (4 Semesters)',
         roles: ['Marketing Manager (₹7–20 LPA)', 'Business Analyst (₹6–18 LPA)', 'Financial Analyst (₹5–15 LPA)', 'HR Manager (₹6–18 LPA)', 'Operations Manager (₹7–22 LPA)', 'Project Manager (₹8–22 LPA)'],
@@ -3574,7 +3582,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'BA'],
     programDetails: {
       'MBA': {
-        specs: ['Marketing Management', 'Financial Management', 'HR Management', 'Business Analytics', 'Information Technology (IT)', 'Digital Marketing', 'International Business', 'Logistics & Supply Chain Management'],
+        specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'Business Analytics', 'International Business', 'Digital Marketing', 'Healthcare Management'],
         fees: '₹23K – ₹94K',
         duration: '2 Yrs',
         roles: ['Business Analyst', 'Marketing Executive', 'HR Executive', 'Finance Analyst', 'Digital Marketing Executive', 'Supply Chain Analyst'],
@@ -3873,7 +3881,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Vellore Institute of Science and Te — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['Artificial Intelligence', 'Machine Learning', 'Cyber Security', 'Software Quality Assurance and Reliability', 'Virtual and Augmented Reality', 'Big Data Analytics', 'Computer Architecture', 'Mobile Application Development', 'Cyber Forensics', 'Blockchain Technologies', 'Data Mining Techniques'],
+        specs: ['Artificial Intelligence and Machine Learning', 'Cybersecurity', 'Data Science', 'Internet of Things (IoT)', 'Full Stack Development', 'Cloud Computing', 'Blockchain Technology', 'Data Analytics', 'Software Engineering', 'Game Development', 'General'],
         fees: '₹1.6L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -3968,7 +3976,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'B.Com', 'M.Com'],
     programDetails: {
       'MBA': {
-        specs: ['Finance', 'Marketing', 'Human Resource Management', 'Business Analytics', 'IT Management'],
+        specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'General Management'],
         fees: '₹60K – ₹200K',
         duration: '2 Yrs',
         roles: ['Management Trainee', 'HR Executive', 'Marketing Executive', 'Financial Analyst'],
@@ -4097,7 +4105,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       
       'MBA': {
-        specs: ['Project Mgmt', 'Blockchain', 'AI & ML', 'Agri Business', 'Marketing Management', 'Human Resource Management', 'Finance', 'IT Management', 'Operations Management', 'FinTech Management', 'Hospital Administration & Healthcare Management', 'International Business Management', 'Logistics & Supply Chain Management', 'Business Analytics'],
+        specs: ['Project Management', 'Blockchain', 'AI & ML', 'Agri Business', 'Marketing Management', 'Human Resource Management', 'Finance', 'IT Management', 'Operations Management', 'FinTech Management', 'Hospital Administration & Healthcare Management', 'International Business Management', 'Logistics & Supply Chain Management', 'Business Analytics'],
         fees: '₹0.1L – ₹1.9L',
         duration: '2 Years (4 Semesters)',
         roles: ['Project Coordinator', 'Project Manager', 'Scrum Master', 'PMO Analyst'],
@@ -4107,8 +4115,8 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Dr. D.Y. Patil Vidyapeeth, Pune – C — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['general'],
-        fees: '₹TBD',
+        specs: ['General', 'Artificial Intelligence & Machine Learning', 'Blockchain Technology', 'Business Analytics', 'Digital Marketing Management', 'FinTech Management'],
+        fees: '₹1.9L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -4937,7 +4945,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'BBA'],
     programDetails: {
       'MBA': {
-        specs: ['IT & Business Analytics', 'Marketing', 'Human Resource Management', 'Finance'],
+        specs: ['Marketing', 'Finance', 'Human Resource Management', 'General Management'],
         fees: '₹40K – ₹160K',
         duration: '2 Yrs',
         roles: ['Marketing Executive', 'Brand Trainee', 'Digital Marketing Trainee'],
@@ -5430,7 +5438,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       
       'MBA': {
-        specs: ['General Management', 'Marketing', 'Finance', 'Human Resource Management'],
+        specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'Business Analytics', 'International Business', 'Healthcare Management', 'Digital Marketing', 'IT & Systems Management', 'Entrepreneurship'],
         fees: '₹29K – ₹118K',
         duration: '2 Yrs',
         roles: ['Management Trainee', 'Analyst', 'Operations Trainee', 'Healthcare Admin Trainee'],
@@ -5440,7 +5448,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Noida International University – On — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['AI & Data Science'],
+        specs: ['Artificial Intelligence & Machine Learning', 'Cybersecurity', 'Data Science'],
         fees: '₹0K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -6358,8 +6366,8 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 60000,
-    feeMax: 200000,
+    feeMin: 140000,
+    feeMax: 220000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -6371,8 +6379,8 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com'],
     programDetails: {
       'MBA': {
-        specs: ['Choose from: Finance & Accounting', 'Marketing & Sales', 'Operations Management', 'IT & Systems', 'Logistics & SCM', 'Banking & Insurance', 'Entrepreneurship', 'Retail', 'Project Mgmt', 'Advertising', 'Aviation', 'Oil & Gas', 'Media', 'Healthcare'],
-        fees: '₹40K – ₹161K',
+        specs: ['Finance & Accounting', 'Marketing & Sales', 'Human Resource Management', 'Operations Management', 'IT & Systems', 'Logistics & SCM', 'Banking & Insurance', 'Entrepreneurship', 'Retail Management', 'Project Management', 'Advertising & Brand Management', 'Aviation Management', 'Oil & Gas Management', 'Media Management', 'Healthcare Management', 'General Management'],
+        fees: '₹1.76L – ₹2.2L',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Executive'],
         avgSalary: '₹5L – ₹12L per annum',
@@ -6380,8 +6388,8 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from GLA University (GLA Online) — recognised for corporate hiring.'},
       'MCA': {
-        specs: ['general'],
-        fees: '₹2K',
+        specs: ['General', 'Data Science & AI', 'Cybersecurity', 'Cloud Computing'],
+        fees: '₹1.4L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
