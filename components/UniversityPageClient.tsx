@@ -142,22 +142,25 @@ export default function UniversityPageClient({ university: u }: Props) {
                       <img src={u.logo} alt={u.abbr} width={96} height={60} style={{ maxHeight: '100%', maxWidth: '100%', objectFit:'contain' }} loading="eager" fetchPriority="high" />
                     </div>
                   )}
-                  <h1 className="font-display flex-1" style={{fontSize:'clamp(1.6rem,4vw,2.4rem)',fontWeight:800,color:'#fff',lineHeight:1.15,margin:0}}>
+                  <h1 className="font-display flex-1" style={{fontSize:'clamp(1.5rem,3.5vw,2.2rem)',fontWeight:800,color:'#fff',lineHeight:1.15,margin:0}}>
                     {cleanName} Online — {u.programs.slice(0,3).join(', ')} Fees &amp; Reviews 2026
                   </h1>
-                  {(u as any).enrollments ? (
-                    <div className="flex flex-wrap gap-3 mt-2">
-                      {(u as any).rankingBadge && (
-                        <span className="text-xs font-semibold text-amber-300">{(u as any).rankingBadge}</span>
-                      )}
-                      <span className="text-xs text-slate-300">{/* studentsEnrolledLine */}{(u as any).enrollments}+ students counselled through Edify</span>
-                    </div>
-                  ) : null}
-
                 </div>
-                <p className="text-slate-400 text-[15px] mb-4 flex items-center gap-1.5">
+                <p className="text-slate-400 text-[15px] mb-3 flex items-center gap-1.5">
                   <MapPin size={14}/> {u.city}, {u.state}
                 </p>
+                {((u as any).rankingBadge || (u as any).enrollments) && (
+                  <div className="flex flex-wrap items-center gap-3 mb-4">
+                    {(u as any).rankingBadge && (
+                      <span className="inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-full" style={{ background: 'rgba(200,129,26,0.2)', color: '#FBBF24', border: '1px solid rgba(200,129,26,0.3)' }}>
+                        🏆 {(u as any).rankingBadge}
+                      </span>
+                    )}
+                    {(u as any).enrollments && (
+                      <span className="text-xs text-slate-400">{(u as any).enrollments}+ students counselled through Edify</span>
+                    )}
+                  </div>
+                )}
                 <p className="text-[15px] text-slate-300 leading-[1.7] mb-5 max-w-2xl">
                   {u.description}
                 </p>
@@ -316,7 +319,7 @@ export default function UniversityPageClient({ university: u }: Props) {
                     <div className="text-xs text-ink-3 uppercase tracking-wider">NAAC Grade</div>
                     <div className="font-bold text-navy">{u.naac}</div>
                   </div>
-                  {u.nirf < 200 && (
+                  {u.nirf > 0 && u.nirf < 200 && (
                     <div className="bg-surface-2 rounded-lg p-4 text-center">
                       <div className="text-2xl mb-2">🏆</div>
                       <div className="text-xs text-ink-3 uppercase tracking-wider">NIRF Rank</div>
