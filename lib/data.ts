@@ -223,7 +223,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com'],
     programDetails: {
       'MBA': {
-        specs: ['MBA', 'Hospital & Healthcare Management', 'Business Analytics', 'Data Science', 'Digital Entrepreneurship', 'Digital Marketing Management', 'Entrepreneurship & Leadership Management', 'Finance & Accounting Management', 'Global Finance Market', 'Hospitality Management', 'Human Resource Management', 'Human Resources Analytics', 'Information Technology (IT)', 'Insurance Management', 'International Business Management', 'International Finance (ACCA)', 'Marketing & Sales Management', 'Production & Operations Management', 'Retail Management', 'General Management'],
+        specs: ['Hospital & Healthcare Management', 'Business Analytics', 'Data Science', 'Digital Entrepreneurship', 'Digital Marketing Management', 'Entrepreneurship & Leadership Management', 'Finance & Accounting Management', 'Global Finance Market', 'Hospitality Management', 'Human Resource Management', 'Human Resources Analytics', 'Information Technology (IT)', 'Insurance Management', 'International Business Management', 'International Finance (ACCA)', 'Marketing & Sales Management', 'Production & Operations Management', 'Retail Management', 'General Management'],
         fees: '₹40K – ₹161K',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Executive'],

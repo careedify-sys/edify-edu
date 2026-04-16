@@ -1,6 +1,6 @@
 // app/universities/[id]/[program]/page.tsx
 // ✅ Server Component — enables SSG, per-page metadata, and optimal Lighthouse scores
-import { notFound, redirect } from 'next/navigation'
+import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import type { Program } from '@/lib/data'
@@ -184,7 +184,7 @@ export default async function UniversityProgramPage(
 
   if (!university) notFound()
   if (!program || !university.programs.includes(program) || !university.programDetails[program]) {
-    redirect(`/universities/${id}`)
+    notFound()
   }
 
   return (

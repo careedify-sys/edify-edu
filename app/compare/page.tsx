@@ -5,16 +5,42 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ChevronRight, ChevronDown, ShieldCheck, Award, Wallet, Phone } from 'lucide-react'
 import CompareClient from '@/components/CompareClient'
+import { getUniversityById } from '@/lib/data'
+import { getTitleName } from '@/lib/seo-title'
 
-export const metadata: Metadata = {
-  title: 'Compare Online MBA & MCA Universities 2026 — Fees, Syllabus & Rankings | EdifyEdu',
-  description: 'Compare online MBA and MCA universities side by side. Check fees, NAAC grade, NIRF rank, specialisations and semester-wise syllabus for 127+ UGC DEB approved universities.',
-  alternates: { canonical: 'https://edifyedu.in/compare' },
-  openGraph: {
-    title: 'Compare Online MBA & MCA Universities 2026 | EdifyEdu',
-    description: 'Side-by-side comparison of fees, NIRF rankings, NAAC grades and syllabus for 127+ UGC DEB approved online programs.',
-    type: 'website',
-  },
+export async function generateMetadata(
+  { searchParams }: { searchParams: Promise<{ a?: string; b?: string }> }
+): Promise<Metadata> {
+  const { a, b } = await searchParams
+
+  if (a && b) {
+    const uA = getUniversityById(a)
+    const uB = getUniversityById(b)
+    if (uA && uB) {
+      const nameA = getTitleName(uA.id, uA.name, uA.abbr)
+      const nameB = getTitleName(uB.id, uB.name, uB.abbr)
+      const canonicalUrl = `https://edifyedu.in/compare?a=${a}&b=${b}`
+      const title = `${nameA} vs ${nameB} Online MBA 2026 — Fees, Rank & Syllabus | EdifyEdu`
+      const description = `Compare ${nameA} and ${nameB} online MBA side by side. See fees, NIRF rank, NAAC grade, specialisations and semester-wise syllabus for both universities.`
+      return {
+        title,
+        description,
+        alternates: { canonical: canonicalUrl },
+        openGraph: { title, description, url: canonicalUrl, type: 'website' },
+      }
+    }
+  }
+
+  return {
+    title: 'Compare Online MBA & MCA Universities 2026 — Fees, Syllabus & Rankings | EdifyEdu',
+    description: 'Compare online MBA and MCA universities side by side. Check fees, NAAC grade, NIRF rank, specialisations and semester-wise syllabus for 127+ UGC DEB approved universities.',
+    alternates: { canonical: 'https://edifyedu.in/compare' },
+    openGraph: {
+      title: 'Compare Online MBA & MCA Universities 2026 | EdifyEdu',
+      description: 'Side-by-side comparison of fees, NIRF rankings, NAAC grades and syllabus for 127+ UGC DEB approved online programs.',
+      type: 'website',
+    },
+  }
 }
 
 // Popular comparison pairs — MBA
@@ -82,7 +108,10 @@ const FAQS = [
   },
 ]
 
-export default function ComparePage() {
+export default async function ComparePage(
+  { searchParams }: { searchParams: Promise<{ a?: string; b?: string }> }
+) {
+  // searchParams consumed by generateMetadata above; page content is the same for all pairs
   return (
     <div className="bg-slate-50">
 

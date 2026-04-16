@@ -94,14 +94,16 @@ function getSeoName(id: string, fullName: string): string {
 }
 
 
-// Pre-render all university×program combinations at build time
+// Pre-render only university×program combinations that have programDetails
 export async function generateStaticParams() {
   const { UNIVERSITIES } = await import('@/lib/data')
   return UNIVERSITIES.flatMap(u =>
-    u.programs.map(prog => ({
-      id: u.id,
-      program: prog.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, ''),
-    }))
+    u.programs
+      .filter(prog => !!u.programDetails[prog as keyof typeof u.programDetails])
+      .map(prog => ({
+        id: u.id,
+        program: prog.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, ''),
+      }))
   )
 }
 
