@@ -65,7 +65,7 @@ export default function UniversitiesPage() {
           <p className="section-label mb-3" style={{ color:'rgba(245,158,11,0.8)' }}>UGC DEB Approved</p>
           <h1 className="font-display text-3xl md:text-4xl text-white mb-3"
             style={{ fontFamily:"'Fraunces',serif" }}>
-            127+ Best Online Universities India 2026 — UGC DEB Approved
+            125+ Best Online Universities India 2026 — UGC DEB Approved
           </h1>
           <p className="text-sm max-w-lg" style={{ color:'rgba(255,255,255,0.5)', lineHeight:'1.7' }}>
             All UGC DEB approved. Sorted by NIRF rank by default. Filter by program, region, NAAC grade and fees.

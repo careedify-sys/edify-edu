@@ -1,5 +1,5 @@
 # Edify Education
-> India's independent online degree comparison platform. We cover 127+ UGC-DEB verified universities offering online MBA, MCA, BBA, BCA, BA, MA, B.Com, M.Com, MSc programs.
+> India's independent online degree comparison platform. We cover 125+ UGC-DEB verified universities offering online MBA, MCA, BBA, BCA, BA, MA, B.Com, M.Com, MSc programs.
 > All data is independently verified. No paid university partnerships.
 
 ## Key Facts

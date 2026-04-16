@@ -8,7 +8,7 @@ export const SITE_CONFIG = {
   "admissions_deadline": "October 15–30, 2026",
   "contact_email": "hello@edifyedu.in",
   "whatsapp_number": "917061285806",
-  "hero_headline": "Compare 127+ UGC Approved Online Universities",
+  "hero_headline": "Compare 125+ UGC Approved Online Universities",
   "banner_text": "Admissions Open — July 2026 batch closing October 15–30"
 } as const
 

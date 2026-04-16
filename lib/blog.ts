@@ -1761,7 +1761,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/universities/nmims-online/mba" class="il-card"><div class="il-uni">NMIMS</div><div class="il-title">NMIMS Online MBA</div><div class="il-sub">₹2,40,000 · NAAC A+</div></a>
     <a href="/universities/symbiosis-university-online/mba" class="il-card"><div class="il-uni">SYMBIOSIS</div><div class="il-title">Symbiosis Online MBA</div><div class="il-sub">₹1,05,000 · NAAC A++</div></a>
     <a href="/universities/amity-university-online/mba" class="il-card"><div class="il-uni">AMITY</div><div class="il-title">Amity Online MBA</div><div class="il-sub">₹1,45,000 · NAAC A+</div></a>
-    <a href="/programs/mba" class="il-card"><div class="il-uni">COMPARE</div><div class="il-title">All Online MBAs</div><div class="il-sub">127+ universities</div></a>
+    <a href="/programs/mba" class="il-card"><div class="il-uni">COMPARE</div><div class="il-title">All Online MBAs</div><div class="il-sub">125+ universities</div></a>
   </div>
 </div>
     `,
@@ -1947,7 +1947,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/universities/nmims-online/mba" class="il-card"><div class="il-uni">NMIMS</div><div class="il-title">NMIMS Online MBA</div><div class="il-sub">₹2,40,000 · Weekend schedule</div></a>
     <a href="/universities/symbiosis-university-online/mba" class="il-card"><div class="il-uni">SYMBIOSIS</div><div class="il-title">Symbiosis Online MBA</div><div class="il-sub">₹1,05,000 · NAAC A++</div></a>
     <a href="/universities/bits-pilani-work-integrated-online" class="il-card"><div class="il-uni">BITS</div><div class="il-title">BITS Pilani WILP</div><div class="il-sub">₹3.5–5L · For employed only</div></a>
-    <a href="/programs/mba" class="il-card"><div class="il-uni">COMPARE</div><div class="il-title">All Online MBAs</div><div class="il-sub">127+ universities</div></a>
+    <a href="/programs/mba" class="il-card"><div class="il-uni">COMPARE</div><div class="il-title">All Online MBAs</div><div class="il-sub">125+ universities</div></a>
   </div>
 </div>
     `,
@@ -2114,7 +2114,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/universities/symbiosis-university-online/mba" class="il-card"><div class="il-uni">SYMBIOSIS</div><div class="il-title">Symbiosis Online MBA</div><div class="il-sub">₹1,05,000 · NAAC A++</div></a>
     <a href="/universities/chandigarh-university-online/mba" class="il-card"><div class="il-uni">CU</div><div class="il-title">Chandigarh University Online</div><div class="il-sub">₹1,00,000 · NIRF Top 30</div></a>
     <a href="/universities/lovely-professional-university-online/mba" class="il-card"><div class="il-uni">LPU</div><div class="il-title">LPU Online MBA</div><div class="il-sub">₹1,20,000 · NAAC A+</div></a>
-    <a href="/programs/mba" class="il-card"><div class="il-uni">ALL</div><div class="il-title">Compare All Online MBAs</div><div class="il-sub">127+ universities</div></a>
+    <a href="/programs/mba" class="il-card"><div class="il-uni">ALL</div><div class="il-title">Compare All Online MBAs</div><div class="il-sub">125+ universities</div></a>
   </div>
 </div>
     `,
@@ -2389,7 +2389,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/universities/symbiosis-university-online/mba" class="il-card"><div class="il-uni">SYMBIOSIS</div><div class="il-title">Symbiosis Online MBA</div><div class="il-sub">₹1,05,000 · NAAC A++</div></a>
     <a href="/universities/nmims-online/mba" class="il-card"><div class="il-uni">NMIMS</div><div class="il-title">NMIMS Online MBA</div><div class="il-sub">₹2,40,000 · Strong brand</div></a>
     <a href="/tools/emi-calculator" class="il-card"><div class="il-uni">TOOL</div><div class="il-title">EMI Calculator</div><div class="il-sub">Calculate monthly cost</div></a>
-    <a href="/programs/mba" class="il-card"><div class="il-uni">COMPARE</div><div class="il-title">All Online MBAs</div><div class="il-sub">127+ universities</div></a>
+    <a href="/programs/mba" class="il-card"><div class="il-uni">COMPARE</div><div class="il-title">All Online MBAs</div><div class="il-sub">125+ universities</div></a>
   </div>
 </div>
     `,
@@ -3037,7 +3037,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/programs/bca" class="il-card"><div class="il-uni">PROGRAM</div><div class="il-title">Online BCA</div><div class="il-sub">Best for PCM science grads</div></a>
     <a href="/programs/bba" class="il-card"><div class="il-uni">PROGRAM</div><div class="il-title">Online BBA</div><div class="il-sub">Business after science</div></a>
     <a href="/programs/mca" class="il-card"><div class="il-uni">PROGRAM</div><div class="il-title">Online MCA</div><div class="il-sub">After BCA or BSc CS</div></a>
-    <a href="/universities" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">All Universities</div><div class="il-sub">127+ UGC-approved</div></a>
+    <a href="/universities" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">All Universities</div><div class="il-sub">125+ UGC-approved</div></a>
   </div>
 </div>
     `,
@@ -3123,7 +3123,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/programs/bba" class="il-card"><div class="il-uni">PROGRAM</div><div class="il-title">Online BBA</div><div class="il-sub">Best for commerce grads</div></a>
     <a href="/programs/mba" class="il-card"><div class="il-uni">PROGRAM</div><div class="il-title">Online MBA</div><div class="il-sub">After B.Com or BBA</div></a>
     <a href="/programs/bcom" class="il-card"><div class="il-uni">PROGRAM</div><div class="il-title">Online B.Com</div><div class="il-sub">Foundation degree</div></a>
-    <a href="/universities" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">All Universities</div><div class="il-sub">127+ UGC-approved</div></a>
+    <a href="/universities" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">All Universities</div><div class="il-sub">125+ UGC-approved</div></a>
   </div>
 </div>
     `,
@@ -3231,7 +3231,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/programs/mba" class="il-card"><div class="il-uni">PROGRAM</div><div class="il-title">Online MBA Guide</div><div class="il-sub">All specializations compared</div></a>
     <a href="/programs/mba/data-science-analytics" class="il-card"><div class="il-uni">MBA</div><div class="il-title">MBA Data Science</div><div class="il-sub">Best for science grads</div></a>
     <a href="/programs/msc" class="il-card"><div class="il-uni">PROGRAM</div><div class="il-title">Online MSc</div><div class="il-sub">Stay in science instead</div></a>
-    <a href="/universities" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">All Universities</div><div class="il-sub">127+ UGC-approved</div></a>
+    <a href="/universities" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">All Universities</div><div class="il-sub">125+ UGC-approved</div></a>
   </div>
 </div>
     `,
@@ -3332,7 +3332,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/universities/symbiosis-university-online/mba" class="il-card"><div class="il-uni">SYMBIOSIS</div><div class="il-title">Symbiosis Online MBA</div><div class="il-sub">₹1,05,000 · NAAC A++ · No exam</div></a>
     <a href="/universities/jain-university-online/mba" class="il-card"><div class="il-uni">JAIN</div><div class="il-title">JAIN Online MBA</div><div class="il-sub">₹1,05,000 · NAAC A++ · No exam</div></a>
     <a href="/universities/nmims-online/mba" class="il-card"><div class="il-uni">NMIMS</div><div class="il-title">NMIMS Online MBA</div><div class="il-sub">₹2,40,000 · Top brand · No exam</div></a>
-    <a href="/programs/mba" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">All Online MBAs</div><div class="il-sub">Compare 127+ universities</div></a>
+    <a href="/programs/mba" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">All Online MBAs</div><div class="il-sub">Compare 125+ universities</div></a>
   </div>
 </div>
     `,
@@ -3427,7 +3427,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/blog/cmat-exam-2026-guide-eligibility-pattern" class="il-card"><div class="il-uni">EXAM</div><div class="il-title">CMAT Exam 2026 Guide</div><div class="il-sub">NTA's national MBA exam explained</div></a>
     <a href="/blog/mba-entrance-exams-india-2026" class="il-card"><div class="il-uni">COMPARE</div><div class="il-title">CAT vs MAT vs CMAT vs XAT</div><div class="il-sub">Which exam for which MBA</div></a>
     <a href="/blog/online-mba-without-entrance-exam-india-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Online MBA Without Entrance Exam</div><div class="il-sub">UGC-DEB programs, no exam needed</div></a>
-    <a href="/programs/mba" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Online MBA Programs</div><div class="il-sub">Compare 127+ universities</div></a>
+    <a href="/programs/mba" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Online MBA Programs</div><div class="il-sub">Compare 125+ universities</div></a>
   </div>
 </div>
     `,
@@ -3521,7 +3521,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/blog/mat-exam-2026-eligibility-pattern-dates" class="il-card"><div class="il-uni">EXAM</div><div class="il-title">MAT Exam 2026 Guide</div><div class="il-sub">AIMA's 4-window exam explained</div></a>
     <a href="/blog/mba-entrance-exams-india-2026" class="il-card"><div class="il-uni">COMPARE</div><div class="il-title">CAT vs MAT vs CMAT vs XAT</div><div class="il-sub">All MBA entrance exams compared</div></a>
     <a href="/blog/online-mba-without-entrance-exam-india-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Online MBA Without Entrance Exam</div><div class="il-sub">No exam needed for online MBA</div></a>
-    <a href="/programs/mba" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Online MBA Programs</div><div class="il-sub">127+ UGC-DEB approved</div></a>
+    <a href="/programs/mba" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Online MBA Programs</div><div class="il-sub">125+ UGC-DEB approved</div></a>
   </div>
 </div>
     `,
@@ -3628,7 +3628,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/blog/mat-exam-2026-eligibility-pattern-dates" class="il-card"><div class="il-uni">EXAM</div><div class="il-title">MAT Exam 2026 Guide</div><div class="il-sub">Pattern, dates, score explained</div></a>
     <a href="/blog/cmat-exam-2026-guide-eligibility-pattern" class="il-card"><div class="il-uni">EXAM</div><div class="il-title">CMAT Exam 2026 Guide</div><div class="il-sub">NTA's annual MBA exam</div></a>
     <a href="/blog/online-mba-without-entrance-exam-india-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Online MBA Without Entrance Exam</div><div class="il-sub">Universities that need no exam</div></a>
-    <a href="/programs/mba" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Online MBA Programs</div><div class="il-sub">Compare 127+ universities</div></a>
+    <a href="/programs/mba" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Online MBA Programs</div><div class="il-sub">Compare 125+ universities</div></a>
   </div>
 </div>
     `,
@@ -3731,7 +3731,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="internal-links">
   <div class="il-grid">
-    <a href="/universities" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All 127+ Universities</div><div class="il-sub">Filter by NAAC, program, fees</div></a>
+    <a href="/universities" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All 125+ Universities</div><div class="il-sub">Filter by NAAC, program, fees</div></a>
     <a href="/compare" class="il-card"><div class="il-uni">TOOL</div><div class="il-title">Compare Universities</div><div class="il-sub">Side-by-side comparison</div></a>
     <a href="/blog/is-online-mba-worth-it-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Is Online MBA Worth It?</div><div class="il-sub">ROI, recognition, reality check</div></a>
     <a href="/programs/mba" class="il-card"><div class="il-uni">MBA</div><div class="il-title">Online MBA Programs</div><div class="il-sub">UGC-DEB approved options</div></a>
@@ -3822,7 +3822,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <div class="il-grid">
     <a href="/blog/is-online-mba-worth-it-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Is Online MBA Worth It?</div><div class="il-sub">ROI and recognition reality check</div></a>
     <a href="/blog/mba-entrance-exams-india-2026" class="il-card"><div class="il-uni">EXAMS</div><div class="il-title">MBA Entrance Exams Compared</div><div class="il-sub">CAT, MAT, CMAT, XAT guide</div></a>
-    <a href="/programs/mba" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">Online MBA Programs</div><div class="il-sub">127+ UGC-DEB approved options</div></a>
+    <a href="/programs/mba" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">Online MBA Programs</div><div class="il-sub">125+ UGC-DEB approved options</div></a>
     <a href="/compare" class="il-card"><div class="il-uni">TOOL</div><div class="il-title">Compare Universities</div><div class="il-sub">Side-by-side fee and ranking data</div></a>
   </div>
 </div>
@@ -3929,7 +3929,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/blog/is-online-mba-worth-it-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Is Online MBA Worth It?</div><div class="il-sub">Full ROI breakdown</div></a>
     <a href="/blog/best-mba-specialization-india-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Best MBA Specialization 2026</div><div class="il-sub">Which specialization for your goals</div></a>
     <a href="/blog/affordable-online-mba-india-2026" class="il-card"><div class="il-uni">FEES</div><div class="il-title">Affordable Online MBA India</div><div class="il-sub">Programs from ₹54,000</div></a>
-    <a href="/programs/mba" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Online MBA Programs</div><div class="il-sub">Compare 127+ universities</div></a>
+    <a href="/programs/mba" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Online MBA Programs</div><div class="il-sub">Compare 125+ universities</div></a>
   </div>
 </div>
     `,
@@ -4473,7 +4473,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/blog/online-mba-without-entrance-exam-india-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Online MBA Without Entrance Exam</div><div class="il-sub">No exam needed at top universities</div></a>
     <a href="/blog/affordable-online-mba-india-2026" class="il-card"><div class="il-uni">FEES</div><div class="il-title">Affordable Online MBA India</div><div class="il-sub">Programs from ₹54,000</div></a>
     <a href="/blog/ugc-deb-approved-universities-list-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">UGC DEB Approved List 2026</div><div class="il-sub">How to verify before enrolling</div></a>
-    <a href="/programs/mba" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Online MBA Programs</div><div class="il-sub">127+ UGC-DEB approved options</div></a>
+    <a href="/programs/mba" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Online MBA Programs</div><div class="il-sub">125+ UGC-DEB approved options</div></a>
   </div>
 </div>
     `,
@@ -4601,7 +4601,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/universities/symbiosis-university-online/mba" class="il-card"><div class="il-uni">SYMBIOSIS</div><div class="il-title">Symbiosis Online MBA</div><div class="il-sub">₹1,05,000 · NAAC A++</div></a>
     <a href="/blog/mba-vs-pgdm-online-india-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">MBA vs PGDM — Which Is Better?</div><div class="il-sub">Degree vs diploma explained</div></a>
     <a href="/blog/online-mba-for-working-professionals-india" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Online MBA for Working Professionals</div><div class="il-sub">7 things to check before you pay</div></a>
-    <a href="/programs/mba" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Online MBA Programs</div><div class="il-sub">127+ UGC-DEB approved options</div></a>
+    <a href="/programs/mba" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Online MBA Programs</div><div class="il-sub">125+ UGC-DEB approved options</div></a>
   </div>
 </div>
     `,
@@ -4710,7 +4710,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/blog/ugc-deb-approved-universities-list-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">UGC DEB Approved List 2026</div><div class="il-sub">How to verify before enrolling</div></a>
     <a href="/blog/online-mba-without-entrance-exam-india-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Online MBA Without Entrance Exam</div><div class="il-sub">Direct admission universities</div></a>
     <a href="/blog/affordable-online-mba-india-2026" class="il-card"><div class="il-uni">FEES</div><div class="il-title">Affordable Online MBA India</div><div class="il-sub">Programs from ₹54,000</div></a>
-    <a href="/programs/mba" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Online MBA Programs</div><div class="il-sub">127+ UGC-DEB approved options</div></a>
+    <a href="/programs/mba" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Online MBA Programs</div><div class="il-sub">125+ UGC-DEB approved options</div></a>
   </div>
 </div>
     `,
@@ -4729,7 +4729,7 @@ export const BLOG_POSTS: BlogPost[] = [
     status: 'published' as const,
     quickFacts: [
       { label: 'Regulatory Body', value: 'UGC-DEB' },
-      { label: 'Approved Universities', value: '127+' },
+      { label: 'Approved Universities', value: '125+' },
       { label: 'Employer Acceptance', value: 'Broadly Yes' },
       { label: 'UPSC Eligible', value: 'Yes (with conditions)' },
     ],
@@ -4752,7 +4752,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>UGC-DEB is the regulatory arm of the University Grants Commission that specifically oversees distance and online education in India. Any university offering an online or distance degree must have explicit permission from UGC-DEB — not just a general university license, but a specific approval for each program they run.</p>
 
-<p>As of 2026, there are 127+ universities with active UGC-DEB approval. These include institutions like Amity University Online, NMIMS, Manipal Online, LPU Online, and Chandigarh University. Degrees from all of these are fully valid.</p>
+<p>As of 2026, there are 125+ universities with active UGC-DEB approval. These include institutions like Amity University Online, NMIMS, Manipal Online, LPU Online, and Chandigarh University. Degrees from all of these are fully valid.</p>
 
 <h2>Are Online Degrees Accepted by Employers?</h2>
 
@@ -4829,7 +4829,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <a href="/blog/ugc-deb-approved-universities-list-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">UGC DEB Approved Universities List</div><div class="il-sub">Full verified list 2026</div></a>
   <a href="/blog/online-mba-salary-india-2026" class="il-card"><div class="il-uni">SALARY</div><div class="il-title">Online MBA Salary in India</div><div class="il-sub">What graduates actually earn</div></a>
   <a href="/blog/distance-mba-vs-online-mba-india-2026" class="il-card"><div class="il-uni">COMPARE</div><div class="il-title">Distance MBA vs Online MBA</div><div class="il-sub">Key differences explained</div></a>
-  <a href="/universities" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Approved Universities</div><div class="il-sub">127+ UGC-DEB verified</div></a>
+  <a href="/universities" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Approved Universities</div><div class="il-sub">125+ UGC-DEB verified</div></a>
 </div>
 </div>
     `,
@@ -4935,7 +4935,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="internal-links">
 <strong>Explore MBA Programs</strong>
 <div class="il-grid">
-  <a href="/programs/mba" class="il-card"><div class="il-uni">MBA</div><div class="il-title">All Online MBA Programs</div><div class="il-sub">Compare 127+ options</div></a>
+  <a href="/programs/mba" class="il-card"><div class="il-uni">MBA</div><div class="il-title">All Online MBA Programs</div><div class="il-sub">Compare 125+ options</div></a>
   <a href="/programs/mba/data-science-analytics" class="il-card"><div class="il-uni">SPEC</div><div class="il-title">MBA Data Science</div><div class="il-sub">Top programs and fees</div></a>
   <a href="/programs/mba/operations-management" class="il-card"><div class="il-uni">SPEC</div><div class="il-title">MBA Operations</div><div class="il-sub">Best for engineers</div></a>
   <a href="/blog/online-mba-salary-india-2026" class="il-card"><div class="il-uni">SALARY</div><div class="il-title">Online MBA Salary Guide</div><div class="il-sub">2026 data</div></a>
@@ -5865,7 +5865,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <a href="/blog/online-mba-admission-process-india-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">MBA Admission Process</div><div class="il-sub">Step by step 2026</div></a>
   <a href="/blog/online-mba-without-entrance-exam-india-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">MBA Without Entrance Exam</div><div class="il-sub">Direct admission options</div></a>
   <a href="/blog/online-mba-for-freshers-india-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Online MBA for Freshers</div><div class="il-sub">No experience needed?</div></a>
-  <a href="/universities" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Approved Universities</div><div class="il-sub">127+ UGC-DEB verified</div></a>
+  <a href="/universities" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Approved Universities</div><div class="il-sub">125+ UGC-DEB verified</div></a>
 </div>
 </div>
     `,
@@ -6079,7 +6079,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <a href="/blog/online-mba-eligibility-criteria-india-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Online MBA Eligibility</div><div class="il-sub">Full criteria 2026</div></a>
   <a href="/blog/online-mba-without-entrance-exam-india-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">MBA Without Entrance Exam</div><div class="il-sub">Direct admission options</div></a>
   <a href="/blog/mba-fees-india-complete-guide-2026" class="il-card"><div class="il-uni">FEES</div><div class="il-title">MBA Fees Complete Guide</div><div class="il-sub">All costs explained</div></a>
-  <a href="/universities" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Approved Universities</div><div class="il-sub">127+ options</div></a>
+  <a href="/universities" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Approved Universities</div><div class="il-sub">125+ options</div></a>
 </div>
 </div>
     `,

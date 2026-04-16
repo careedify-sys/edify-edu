@@ -111,7 +111,7 @@ export default function HomePage() {
             </div>
 
             <h1 style={{ fontFamily:"'Fraunces',serif", fontSize:'clamp(2rem,5vw,3.5rem)', fontWeight:800, color:'#fff', lineHeight:1.12, marginBottom:'20px', letterSpacing:'-0.02em' }}>
-              Compare 127+ <span style={{ color:'var(--amber-bright)' }}>UGC Approved</span><br />
+              Compare 125+ <span style={{ color:'var(--amber-bright)' }}>UGC Approved</span><br />
               Online Universities India 2026
             </h1>
 

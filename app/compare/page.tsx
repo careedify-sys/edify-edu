@@ -35,11 +35,11 @@ export async function generateMetadata(
 
   return {
     title: 'Compare Online MBA & MCA Universities 2026 — Fees, Syllabus & Rankings | EdifyEdu',
-    description: 'Compare online MBA and MCA universities side by side. Check fees, NAAC grade, NIRF rank, specialisations and semester-wise syllabus for 127+ UGC DEB approved universities.',
+    description: 'Compare online MBA and MCA universities side by side. Check fees, NAAC grade, NIRF rank, specialisations and semester-wise syllabus for 125+ UGC DEB approved universities.',
     alternates: { canonical: 'https://edifyedu.in/compare' },
     openGraph: {
       title: 'Compare Online MBA & MCA Universities 2026 | EdifyEdu',
-      description: 'Side-by-side comparison of fees, NIRF rankings, NAAC grades and syllabus for 127+ UGC DEB approved online programs.',
+      description: 'Side-by-side comparison of fees, NIRF rankings, NAAC grades and syllabus for 125+ UGC DEB approved online programs.',
       type: 'website',
     },
   }
@@ -127,7 +127,7 @@ export default async function ComparePage(
             Compare Online MBA &amp; MCA Universities 2026
           </h1>
           <p className="text-white/70 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-            Side-by-side fees, NIRF rankings, NAAC grades and semester-wise syllabus for 127+ UGC DEB approved universities — so you decide with data, not guesswork.
+            Side-by-side fees, NIRF rankings, NAAC grades and semester-wise syllabus for 125+ UGC DEB approved universities — so you decide with data, not guesswork.
           </p>
         </div>
       </div>
@@ -183,7 +183,7 @@ export default async function ComparePage(
           <p className="text-center text-white/60 text-xs font-semibold uppercase tracking-widest mb-6">Why students trust EdifyEdu</p>
           <div className="grid grid-cols-3 gap-4 sm:gap-8 mb-8">
             {[
-              { icon: Award, stat: '127+', label: 'Universities Verified', sub: 'UGC DEB approved' },
+              { icon: Award, stat: '125+', label: 'Universities Verified', sub: 'UGC DEB approved' },
               { icon: ShieldCheck, stat: '24 Hr', label: 'Callback Guarantee', sub: 'Mon–Sat 9am–7pm IST' },
               { icon: Wallet, stat: '100%', label: 'UGC DEB Programs', sub: 'Valid for PSU & private' },
             ].map(item => (
@@ -214,7 +214,7 @@ export default async function ComparePage(
           <h2 className="font-display text-xl font-bold text-slate-800 text-center mb-8">How the Comparison Tool Works</h2>
           <div className="grid sm:grid-cols-3 gap-6">
             {[
-              { step: '1', title: 'Select universities', desc: 'Use the 3 slots to pick any universities you want to compare. Search by name — all 127+ UGC DEB approved programs are available.' },
+              { step: '1', title: 'Select universities', desc: 'Use the 3 slots to pick any universities you want to compare. Search by name — all 125+ UGC DEB approved programs are available.' },
               { step: '2', title: 'Compare syllabus', desc: 'Pick a specialisation for each university. Green subjects are common to both; amber subjects are unique — so you can see exactly what differs.' },
               { step: '3', title: 'Check rankings & fees', desc: 'Scroll down to see NIRF rank, NAAC grade, total fees, EMI options, average salary, and top hiring companies side by side.' },
             ].map(s => (

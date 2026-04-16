@@ -130,7 +130,7 @@ export default async function GuidePage({ params }: Props) {
           <div className="mt-8 rounded-2xl border border-amber/30 bg-amber/5 p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
               <div className="font-bold text-navy text-sm mb-1">Ready to compare universities?</div>
-              <p className="text-xs text-ink-3 m-0">See fees, NIRF ranks, and syllabi for 127+ UGC DEB approved universities.</p>
+              <p className="text-xs text-ink-3 m-0">See fees, NIRF ranks, and syllabi for 125+ UGC DEB approved universities.</p>
             </div>
             <Link
               href="/universities"

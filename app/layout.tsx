@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     default: 'Online Universities in India 2026 | Compare Fees & Programs | EdifyEdu',
     template: '%s | Edify',
   },
-  description: 'Compare 127+ UGC DEB approved online universities in India 2026. Check NIRF ranks, fees & placements. Zero paid rankings. Free expert guidance.',
+  description: 'Compare 125+ UGC DEB approved online universities in India 2026. Check NIRF ranks, fees & placements. Zero paid rankings. Free expert guidance.',
   keywords: [
     'online mba india 2026', 'best online mba india', 'online mba for working professionals',
     'ugc deb approved online degree', 'nirf ranked online mba', 'naac a++ online university',
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_IN',
     title: 'Online Universities in India 2026 | Compare Fees & Programs | EdifyEdu',
-    description: 'Compare 127+ UGC DEB approved online universities in India 2026. Check NIRF ranks, fees & placements. Zero paid rankings. Free expert guidance.',
+    description: 'Compare 125+ UGC DEB approved online universities in India 2026. Check NIRF ranks, fees & placements. Zero paid rankings. Free expert guidance.',
     url: 'https://edifyedu.in',
     images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: "Edify — India's honest guide to online degrees" }],
   },

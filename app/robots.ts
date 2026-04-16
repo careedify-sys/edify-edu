@@ -71,6 +71,5 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: 'https://edifyedu.in/sitemap.xml',
-    host: 'https://edifyedu.in',
   }
 }

@@ -80,7 +80,7 @@ export async function generateMetadata(
   const title = specContent?.metaTitle
     || (activeSpec
       ? `Best Online ${program} in ${activeSpec} ${year} — Fees, Colleges, Career | Edify`
-      : `Online ${program} India ${year} — Compare 127+ UGC Approved Universities | Edify`)
+      : `Online ${program} India ${year} — Compare 125+ UGC Approved Universities | Edify`)
 
   const description = specContent?.metaDesc
     || (activeSpec

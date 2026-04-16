@@ -33,6 +33,7 @@ export default function UniversityPageClient({ university: u }: Props) {
   const programContent = getProgramContent(displayProgram)
   const otherUnis = getUniversitiesByProgram(displayProgram).filter(x=>x.id!==u.id).slice(0,4)
   const compareUrl = `/compare?a=${u.id}${compareList.map(i=>`&b=${i}`).join('')}`
+  const cleanName = u.name.replace(/\bOnline\b\s*$/i, '').trim()
 
   function addToCompare(uniId: string) {
     if (compareList.includes(uniId)) return
@@ -289,7 +290,7 @@ export default function UniversityPageClient({ university: u }: Props) {
               {/* About University */}
               <section className="card-lg p-6">
                 <h2 className="font-display text-xl font-bold text-navy mb-4">
-                  {u.name} Online — Programs, Fees & Reviews 2026
+                  {cleanName} Online Programs — Fees & Reviews 2026
                 </h2>
                 <p className="text-ink-2 text-[15px] leading-relaxed mb-4">
                   {u.description}
@@ -399,7 +400,7 @@ export default function UniversityPageClient({ university: u }: Props) {
 
               {/* Who Should Apply */}
               <section className="card-lg p-6">
-                <h2 className="font-display text-xl font-bold text-navy mb-4">Who Should Apply to {u.name} Online Programs?</h2>
+                <h2 className="font-display text-xl font-bold text-navy mb-4">Who Should Apply to {cleanName} Online Programs?</h2>
                 <div className="text-sm font-bold text-green-600 uppercase tracking-wider mb-3">✓ Best For</div>
                 <ul className="space-y-2">
                   {u.forWho.map(item => (

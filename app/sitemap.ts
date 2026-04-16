@@ -2,7 +2,7 @@
 // Strategy:
 //  • Priorities are tiered: crawl budget flows to highest-value pages first
 //  • changeFrequency is realistic (not everything is 'weekly')
-//  • All 128+ universities included for spec pages (no whitelist filter)
+//  • All 125+ universities included for spec pages (no whitelist filter)
 //  • University × program pages are the #1 money pages → priority 0.92
 //  • Query-param compare URLs (/compare?a=x&b=y) intentionally excluded
 //  • Redirect sources (/programs/{prog}/{id}) intentionally excluded
@@ -62,6 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Brand / trust pages
     { url: `${BASE}/about`,                   lastModified: now, changeFrequency: 'yearly',  priority: 0.50 },
     { url: `${BASE}/contact`,                 lastModified: now, changeFrequency: 'yearly',  priority: 0.50 },
+    { url: `${BASE}/privacy-policy`,          lastModified: now, changeFrequency: 'yearly',  priority: 0.30 },
   ]
 
   // ── University hub pages (/universities/{id}) ─────────────────────────────
