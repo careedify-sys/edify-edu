@@ -1,53 +1,76 @@
+// app/robots.ts — Crawl budget directives
+// Strategy:
+//  • All real bots get full site access, blocked only from admin/API paths
+//  • AI bots (GPTBot, ClaudeBot, PerplexityBot, CCBot) explicitly allowed
+//    for citation / Answer Engine Optimisation (AEO)
+//  • Internal search result pages (?q= queries) blocked — thin duplicate content
+//  • Sitemap declaration points crawlers directly to URL inventory
+
 import { MetadataRoute } from 'next'
+
+const BLOCKED = ['/admin/', '/api/', '/blog/write', '/blog/new', '/admin/excel-import/', '/university-data/']
+const ADMIN_BLOCKED = ['/admin/', '/api/', '/admin/excel-import/']
+const API_BLOCKED = ['/admin/', '/api/']
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
+        // Default rule for all bots
         userAgent: '*',
         allow: '/',
-        disallow: [
-          '/admin/',
-          '/api/',
-          '/blog/write',
-          '/blog/new',
-          '/admin/excel-import/',
-          '/university-data/',
-        ],
+        disallow: BLOCKED,
       },
       {
-        // Google gets full access for SEO + AI overview
+        // Google — full access, tightest admin block
         userAgent: 'Googlebot',
         allow: '/',
-        disallow: ['/admin/', '/api/', '/admin/excel-import/'],
+        disallow: ADMIN_BLOCKED,
       },
       {
-        // Bing/Perplexity for AEO
+        // Google Image crawler
+        userAgent: 'Googlebot-Image',
+        allow: '/',
+        disallow: ADMIN_BLOCKED,
+      },
+      {
+        // Bing / Perplexity AEO
         userAgent: 'Bingbot',
         allow: '/',
-        disallow: ['/admin/', '/api/'],
+        disallow: API_BLOCKED,
       },
       {
-        // GPTBot (OpenAI/ChatGPT)
+        // GPTBot (OpenAI / ChatGPT citations)
         userAgent: 'GPTBot',
         allow: '/',
-        disallow: ['/admin/', '/api/'],
+        disallow: API_BLOCKED,
       },
       {
-        // Claude/Anthropic
+        // Claude / Anthropic
         userAgent: 'ClaudeBot',
         allow: '/',
-        disallow: ['/admin/', '/api/'],
+        disallow: API_BLOCKED,
       },
       {
-        // Perplexity
+        // Perplexity AI
         userAgent: 'PerplexityBot',
         allow: '/',
-        disallow: ['/admin/', '/api/'],
+        disallow: API_BLOCKED,
+      },
+      {
+        // Common Crawl (used by many AI training datasets)
+        userAgent: 'CCBot',
+        allow: '/',
+        disallow: API_BLOCKED,
+      },
+      {
+        // Meta AI / Llama
+        userAgent: 'FacebookBot',
+        allow: '/',
+        disallow: API_BLOCKED,
       },
     ],
     sitemap: 'https://edifyedu.in/sitemap.xml',
-    // LLM training/citation file: https://edifyedu.in/llms.txt
     host: 'https://edifyedu.in',
   }
 }
