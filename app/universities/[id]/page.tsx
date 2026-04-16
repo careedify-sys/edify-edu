@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import UniversityPageClient from '@/components/UniversityPageClient'
+import { getTitleName } from '@/lib/seo-title'
 
 // ── Static Params (SSG) — pre-render all university pages at build time ──
 export async function generateStaticParams() {
@@ -23,24 +24,24 @@ export async function generateMetadata(
   }
 
   const year = new Date().getFullYear()
-  const programList = u.programs.slice(0, 3).join(', ')
   const cleanName = u.name.replace(/\s+online\s*$/i, '')
-  const nirfSuffix = u.nirf && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
-  const naacSuffix = u.naac ? `, NAAC ${u.naac}` : ''
-  const title = `${cleanName} Online ${u.programs[0]} ${year}${nirfSuffix}${naacSuffix} — Fees, Syllabus & Placements`
+  const titleName = getTitleName(u.id, u.name, u.abbr)
+  const progStr = u.programs.slice(0, 3).join(', ')
+  const title = `${titleName} Online (${progStr}, Fees ${year}) | EdifyEdu`
   const feeMin = Math.round(u.feeMin / 1000)
   const feeMax = Math.round(u.feeMax / 1000)
   const feeStr = feeMin === feeMax ? `₹${feeMin}K` : `₹${feeMin}K–₹${feeMax}K`
-  const description = `${cleanName} online ${programList} — Total fees ${feeStr}. NAAC ${u.naac} accredited.${u.nirf && u.nirf < 200 ? ` NIRF #${u.nirf} ranked.` : ''} UGC DEB approved. Compare syllabus, placements, EMI options. Admission open ${year}.`
+  const mainProg = u.programs[0] || 'MBA'
+  const description = `${cleanName} online ${progStr} — fees ${feeStr}, NAAC ${u.naac}${u.nirf && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved. Syllabus, placements, EMI options. Admissions open ${year}.`
 
   const keywords = [
-    `${u.name} online ${u.programs[0]} fees`,
-    `${u.name} online ${u.programs[0]} syllabus`,
-    `${u.name} online ${u.programs[0]} placements`,
-    `${u.name} online ${u.programs[0]} reviews`,
-    `${u.name} online ${u.programs[0]} admission ${year}`,
+    `${u.name} online ${mainProg} fees`,
+    `${u.name} online ${mainProg} syllabus`,
+    `${u.name} online ${mainProg} placements`,
+    `${u.name} online ${mainProg} reviews`,
+    `${u.name} online ${mainProg} admission ${year}`,
     `${u.name} online degree`,
-    `${u.abbr} online ${u.programs[0]}`,
+    `${u.abbr} online ${mainProg}`,
   ].join(', ')
 
   return {

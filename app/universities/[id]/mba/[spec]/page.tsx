@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import SpecializationPageClient from '@/components/SpecializationPageClient'
+import { getTitleName, shortenSpec } from '@/lib/seo-title'
 
 // Helper to create slug
 const makeSlug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
@@ -41,8 +42,9 @@ export async function generateMetadata(
 
   const year = new Date().getFullYear()
   const cleanName = u.name.replace(/\bOnline\b\s*$/i, '').trim()
-  // Professional title: "Amity University Online MBA in Marketing - Fees, Syllabus, Placements 2026"
-  const title = `${cleanName} Online MBA in ${spec} - Fees, Syllabus, Placements ${year}`
+  const titleName = getTitleName(u.id, u.name, u.abbr)
+  const shortSpec = shortenSpec(spec)
+  const title = `${titleName} Online MBA in ${shortSpec} ${year} | EdifyEdu`
   const description = `${u.name} MBA in ${spec} - Complete details on fees, syllabus, eligibility, career scope and placements. NAAC ${u.naac}. ${u.nirf < 200 ? `NIRF #${u.nirf}.` : ''} UGC DEB approved. Admission open.`
 
   return {

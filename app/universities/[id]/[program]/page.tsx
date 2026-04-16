@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import type { Program } from '@/lib/data'
 import UniversityProgramClient from '@/components/UniversityProgramClient'
+import { getTitleName } from '@/lib/seo-title'
 
 // Program slug to Program type mapping
 const PM: Record<string, Program> = {
@@ -48,7 +49,8 @@ export async function generateMetadata(
   const year = new Date().getFullYear()
   const pd = u.programDetails[program]
   const cleanName = u.name.replace(/\s+online\s*$/i, '')
-  const title = `${cleanName} Online ${program} ${year} — Fees, Syllabus, Placements & Reviews`
+  const titleName = getTitleName(u.id, u.name, u.abbr)
+  const title = `${titleName} Online ${program} — Fees & Syllabus ${year} | EdifyEdu`
   const description = `${u.name} online ${program} — Total fees ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}, duration ${pd?.duration || '2 Years'}. ${pd?.specs?.length ? `${pd.specs.length}+ specialisations.` : ''} NAAC ${u.naac}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved. EMI from ₹${u.emiFrom.toLocaleString()}/month. Admission open ${year}.`
 
   const keywords = [

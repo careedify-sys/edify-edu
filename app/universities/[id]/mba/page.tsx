@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import { cleanCareerOutcome } from '@/lib/format'
+import { getTitleName } from '@/lib/seo-title'
 
 // Helper to create slug
 const makeSlug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
@@ -25,7 +26,8 @@ export async function generateMetadata(
 
   const year = new Date().getFullYear()
   const pd = u.programDetails['MBA']
-  const title = `${u.name} MBA - Fees, Specializations, Placements ${year}`
+  const titleName = getTitleName(u.id, u.name, u.abbr)
+  const title = `${titleName} Online MBA — Fees & Syllabus ${year} | EdifyEdu`
   const description = `${u.name} MBA - ${pd?.specs?.length || 5}+ specializations available. Fees ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}. NAAC ${u.naac}. ${u.nirf < 200 ? `NIRF #${u.nirf}.` : ''} UGC DEB approved.`
 
   return {

@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import { cleanCareerOutcome } from '@/lib/format'
+import { getTitleName } from '@/lib/seo-title'
 
 const makeSlug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
 
@@ -18,8 +19,9 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 
   const year = new Date().getFullYear()
   const pd = u.programDetails['BBA']
+  const titleName = getTitleName(u.id, u.name, u.abbr)
   return {
-    title: `${u.name} BBA - Fees, Specializations, Placements ${year}`,
+    title: `${titleName} Online BBA — Fees & Syllabus ${year} | EdifyEdu`,
     description: `${u.name} BBA - Bachelor of Business Administration. Fees ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}. NAAC ${u.naac}. UGC DEB approved. 3 Years duration.`,
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/bba` },
   }

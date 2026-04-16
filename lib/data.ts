@@ -5167,9 +5167,9 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Vellore Institute of Technology (VIT Online). NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: [],
+    programs: ['MSc'],
     programDetails: {
-      
+
       'MSc': {
         specs: ['Data Science'],
         fees: '₹150K – ₹150K',
@@ -7567,9 +7567,18 @@ export const UNIVERSITIES: University[] = [
     description: 'INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Hyderabad and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: [],
+    programs: ['MBA'],
     programDetails: {
-      
+      'MBA': {
+        specs: ['General Management'],
+        fees: '₹60K – ₹150K',
+        duration: '2 Years',
+        roles: ['Business Analyst', 'Operations Manager', 'Project Manager'],
+        avgSalary: '₹4L – ₹12L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'Tech Mahindra'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MBA from IIIT Hyderabad — recognised for corporate hiring across India.',
+      }
     },
     color: '#134e4a',
   rankingBadge: 'NIRF #74 (Engineering 2024)',

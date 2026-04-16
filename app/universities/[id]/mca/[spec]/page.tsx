@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import { getMasterSyllabus } from '@/lib/content'
 import SpecializationPageClient from '@/components/SpecializationPageClient'
+import { getTitleName, shortenSpec } from '@/lib/seo-title'
 
 const makeSlug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
 
@@ -33,10 +34,12 @@ export async function generateMetadata(
 
   const year = new Date().getFullYear()
   const syllabus = getMasterSyllabus(u.id, 'MCA') as any
-  const title = `${u.name} MCA in ${spec} - Fees, Syllabus, Placements ${year}`
+  const titleName = getTitleName(u.id, u.name, u.abbr)
+  const shortSpec = shortenSpec(spec)
+  const title = `${titleName} MCA in ${shortSpec} — Fees ${year} | EdifyEdu`
   const description = syllabus?.metaDesc
     ? `${u.name} MCA in ${spec}. ${syllabus.metaDesc}`
-    : `${u.name} MCA in ${spec} - Fees, syllabus, eligibility, career scope. NAAC ${u.naac}. UGC DEB approved.`
+    : `${u.name} MCA in ${spec} — fees, syllabus, eligibility & career scope. NAAC ${u.naac}. UGC DEB approved. Admissions open ${year}.`
   const keywords = syllabus?.metaKeywords || undefined
 
   return {
