@@ -114,7 +114,7 @@ const articleSchema = {
 
 // ── Top 10 University Data ────────────────────────────────────────────────────
 
-export const TOP_10 = [
+const TOP_10 = [
   {
     rank: 1,
     id: 'manipal-academy-higher-education-online',
