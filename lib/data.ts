@@ -8508,6 +8508,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'shree-guru-gobind-singh-tricentenary-university-online',
+    logo: '/logos/university_logos/sgt.svg',
     name: 'SHREE GURU GOBIND SINGH TRICENTENARY UNIVERSITY Online',
     abbr: 'SGGST',
     city: 'Rohtak',

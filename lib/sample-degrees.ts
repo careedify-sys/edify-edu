@@ -49,6 +49,10 @@ export const SAMPLE_DEGREES: Record<string, { mba?: string; mca?: string; bba?: 
     mca: '/logos/sample-degrees/sastra-mca-sample-degree.svg',
     default: '/logos/sample-degrees/sastra-mca-certificate.svg',
   },
+  'shanmugha-arts-science-technology-research-online': {
+    mca: '/logos/sample-degrees/sastra-mca-sample-degree.svg',
+    default: '/logos/sample-degrees/sastra-mca-certificate.svg',
+  },
   'gla-university-online': {
     mba: '/logos/sample-degrees/gla-mathura-sample-degree-mba.svg',
     default: '/logos/sample-degrees/gla-mathura-sample-degree-mba.svg',
@@ -72,7 +76,7 @@ export const SAMPLE_DEGREES: Record<string, { mba?: string; mca?: string; bba?: 
   'mangalayatan-university-online': {
     default: '/logos/sample-degrees/magalayatan-university-online-sample-degree.svg',
   },
-  'manav-rachna-university-online': {
+  'manav-rachna-online': {
     default: '/logos/sample-degrees/manav-ranchna-sample-degree.svg',
   },
   'university-of-mysore-online': {
