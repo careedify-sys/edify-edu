@@ -134,25 +134,11 @@ export default async function UniversitySpecPage(
     })),
   }
 
-  const reviewSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'EducationalOrganization',
-    name: u.name,
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.3',
-      reviewCount: '200',
-      bestRating: '5',
-      worstRating: '1',
-    },
-  }
-
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
       <UniversitySpecClient
         university={u}
         program={program}

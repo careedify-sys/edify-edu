@@ -21,8 +21,19 @@ export const metadata: Metadata = {
   },
 }
 
+const guidesListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://edifyedu.in' },
+    { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://edifyedu.in/guides' },
+  ],
+}
+
 export default function GuidesPage() {
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(guidesListSchema) }} />
     <div className="page-shell">
       <div className="bg-white border-b border-border py-7">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -46,5 +57,6 @@ export default function GuidesPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }

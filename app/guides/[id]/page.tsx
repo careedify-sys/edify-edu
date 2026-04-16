@@ -49,6 +49,14 @@ export default async function GuidePage({ params }: Props) {
     '@type': 'Article',
     headline: guide.title,
     description: guide.metaDescription,
+    datePublished: '2026-01-15',
+    dateModified: '2026-04-01',
+    image: {
+      '@type': 'ImageObject',
+      url: 'https://edifyedu.in/og.webp',
+      width: 1200,
+      height: 630,
+    },
     author: {
       '@type': 'Person',
       name: 'Rishi Kumar',

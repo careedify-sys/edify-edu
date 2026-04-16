@@ -99,12 +99,23 @@ const orgSchema = {
   '@type': 'Organization',
   name: 'Edify',
   url: 'https://edifyedu.in',
-  logo: 'https://edifyedu.in/logo.png',
+  logo: {
+    '@type': 'ImageObject',
+    url: 'https://edifyedu.in/logos/edify_logo_192.png',
+    width: 192,
+    height: 192,
+  },
   description: 'Independent guide to UGC DEB approved online degrees in India',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Delhi',
+    addressRegion: 'Delhi',
+    addressCountry: 'IN',
+  },
   sameAs: [
-    'https://www.linkedin.com/company/edifyedu',
-    'https://twitter.com/edifyedu',
-    'https://www.instagram.com/edifyedu',
+    'https://www.linkedin.com/company/edifyeducation',
+    'https://www.instagram.com/_edifyeducation',
+    'https://youtube.com/@edify_edu',
   ],
   contactPoint: {
     '@type': 'ContactPoint',
