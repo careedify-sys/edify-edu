@@ -7,7 +7,7 @@ import { PROGRAM_META } from '@/lib/data-client'
 import type { Program } from '@/lib/data'
 
 
-const PROGRAMS: Program[] = ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'B.Com', 'MA', 'M.Com', 'MSc']
+const PROGRAMS: Program[] = ['MBA', 'MCA', 'BBA', 'BCA', 'B.A', 'B.Com', 'M.A', 'M.Com', 'M.Sc']
 
 export default function ProgramsPage() {
   return (

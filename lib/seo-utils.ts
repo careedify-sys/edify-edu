@@ -16,12 +16,12 @@ export function getProgramSlug(program: string): string {
     'MCA': 'mca',
     'BBA': 'bba',
     'BCA': 'bca',
-    'BA': 'ba',
+    'B.A': 'ba',
     'B.Com': 'bcom',
     'M.Com': 'mcom',
-    'MA': 'ma',
-    'MSc': 'msc',
-    'BSc': 'bsc',
+    'M.A': 'ma',
+    'M.Sc': 'msc',
+    'B.Sc': 'bsc',
     'MBA (WX)': 'mba-executive'
   }
   return mapping[program] || toUrlSlug(program)
