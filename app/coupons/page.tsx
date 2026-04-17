@@ -178,7 +178,7 @@ const FAQ_ITEMS = [
   },
   {
     q: 'Are these coupon codes verified?',
-    a: 'Yes. Every coupon code on this page is verified directly with the university admissions team. Our EdifyEdu counsellors confirm the discount live on the call before you make any payment.',
+    a: 'Yes. Every coupon code on this page is verified directly with the university admissions team. Our EdifyEdu team confirms the discount live on the call before you make any payment.',
   },
   {
     q: 'Can I use a coupon code with EMI?',
@@ -186,7 +186,7 @@ const FAQ_ITEMS = [
   },
   {
     q: 'How to get Amity University Online discount coupon?',
-    a: 'Use coupon code AMITY25 during your counselling call to get 25% off on Amity University Online MBA (saves up to ₹30,000). For MCA, use AMITYMCA20 for 20% off. Click "Reveal Code" on the Amity card above to get the code.',
+    a: 'Use coupon code AMITY25 during your advisor call to get 25% off on Amity University Online MBA (saves up to ₹30,000). For MCA, use AMITYMCA20 for 20% off. Click "Reveal Code" on the Amity card above to get the code.',
   },
   {
     q: 'Is there a coupon code for JAIN Online MBA?',
@@ -194,7 +194,7 @@ const FAQ_ITEMS = [
   },
   {
     q: 'How to apply LPU Online MBA or MCA discount code?',
-    a: 'Use LPU20 for 20% off on LPU Online MBA (saves ₹18,000) or LPUMCA20 for 20% off on LPU Online MCA. Mention the code to your EdifyEdu advisor during the counselling call.',
+    a: 'Use LPU20 for 20% off on LPU Online MBA (saves ₹18,000) or LPUMCA20 for 20% off on LPU Online MCA. Mention the code to your EdifyEdu advisor during the call.',
   },
   {
     q: 'Can I get a discount on Manipal Online MCA?',
@@ -206,7 +206,7 @@ const FAQ_ITEMS = [
   },
   {
     q: 'Is there an NMIMS Online coupon code?',
-    a: 'Yes. NMIMS15 gives 15% off on NMIMS Online MBA saving up to ₹20,000. Apply this code via your EdifyEdu counsellor during the admissions call.',
+    a: 'Yes. NMIMS15 gives 15% off on NMIMS Online MBA saving up to ₹20,000. Apply this code via your EdifyEdu advisor during the admissions call.',
   },
   {
     q: 'Is there a Symbiosis Online MBA coupon code?',
@@ -377,7 +377,7 @@ export default function CouponsPage() {
             Verified offers on{' '}
             <strong className="text-white/90">UGC DEB approved universities</strong>. Save up to
             ₹30,000 on your Online MBA or MCA fee — reveal the code, fill a quick form, and apply
-            during your counselling call.
+            during your advisor call.
           </p>
 
           {/* Stats row */}

@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import {
   MapPin, CheckCircle, BarChart2, ChevronRight, Award,
-  Briefcase, TrendingUp, Building2, Plus, BookOpen
+  Briefcase, TrendingUp, Building2, Plus, BookOpen, Users
 } from 'lucide-react'
 import { getUniversitiesByProgram, formatFeeSlim as formatFee } from '@/lib/data-slim'
 import { cleanCareerOutcome } from '@/lib/format'
@@ -151,14 +151,17 @@ export default function UniversityPageClient({ university: u }: Props) {
                   <MapPin size={14}/> {u.city}, {u.state}
                 </p>
                 {((u as any).rankingBadge || (u as any).enrollments) && (
-                  <div className="flex flex-wrap items-center gap-3 mb-4">
+                  <div className="flex flex-wrap items-center gap-2 mb-4">
                     {(u as any).rankingBadge && (
-                      <span className="inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-full" style={{ background: 'rgba(200,129,26,0.2)', color: '#FBBF24', border: '1px solid rgba(200,129,26,0.3)' }}>
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-400/30 text-amber-300 text-xs font-semibold">
                         🏆 {(u as any).rankingBadge}
                       </span>
                     )}
                     {(u as any).enrollments && (
-                      <span className="text-xs text-slate-400">{(u as any).enrollments}+ students counselled through Edify</span>
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/20 text-slate-200 text-xs font-semibold">
+                        <Users className="w-3.5 h-3.5 text-amber-400" />
+                        {(u as any).enrollments}+ students guided by Edify
+                      </span>
                     )}
                   </div>
                 )}

@@ -141,7 +141,7 @@ export function MidScrollPopup({ universityName }: { universityName?: string }) 
               {universityName ? `Considering ${universityName.split(' ')[0]}?` : 'Need help choosing?'}
             </div>
             <div className="text-xs text-ink-3 leading-snug mb-3">
-              Edify counsellors compare fees, NIRF ranks & placement data to find your best match — free.
+              Edify advisors compare fees, NIRF ranks & placement data to find your best match — free.
             </div>
             <button onClick={() => { setDismissed(true); setModalOpen(true) }} style={{ padding:'9px 16px',borderRadius:'var(--r-xs)', background:'linear-gradient(135deg,#c9922a,#e0a93a)', color:'#fff',fontWeight:700,fontSize:12,border:'none',cursor:'pointer' }}>
               Connect with an Advisor →

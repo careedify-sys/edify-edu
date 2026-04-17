@@ -119,7 +119,7 @@ export default function GatedContent({
                     Check your scholarship eligibility
                   </div>
                   <div className="text-[11px] text-ink-3 leading-snug">
-                    A counsellor will share all available discounts for {uniShort} {programName} — takes 2 minutes.
+                    An advisor will share all available discounts for {uniShort} {programName} — takes 2 minutes.
                   </div>
                 </div>
               </div>
@@ -153,7 +153,7 @@ export default function GatedContent({
               </button>
 
               <div style={{ textAlign: 'center', marginTop: 8, fontSize: 10, color: 'var(--ink-4)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 }}>
-                <Shield size={10}/> Your details are shared only with the counsellor — never sold
+                <Shield size={10}/> Your details are shared only with your advisor — never sold
               </div>
             </div>
           </div>
@@ -164,7 +164,7 @@ export default function GatedContent({
       {unlocked && (
         <div style={{ padding: '12px 20px', borderTop: '1px solid rgba(31,107,82,0.15)', background: 'rgba(31,107,82,0.06)', display: 'flex', alignItems: 'center', gap: 8, fontSize: 12, color: 'var(--sage)', fontWeight: 600, }}>
           <span className="text-base"><span aria-hidden="true">✓</span></span>
-          A counsellor will confirm your exact discount within 24 hours on {form.phone}
+          An advisor will confirm your exact discount within 24 hours on {form.phone}
         </div>
       )}
     </div>

@@ -225,7 +225,7 @@ export default function HomePage() {
               <span className="font-extrabold text-[16px] tracking-wide" style={{ color:'var(--amber-bright)' }}>Edify</span>
             </div>
             <div className="relative z-10">
-            {['Sorted by NIRF rank only — zero paid placement','Exact fees from official university brochures','Explain NAAC/NIRF/UGC DEB in plain language','One counsellor — you will never be spammed','Govt job validity verified for every degree'].map(item => (
+            {['Sorted by NIRF rank only — zero paid placement','Exact fees from official university brochures','Explain NAAC/NIRF/UGC DEB in plain language','One advisor — you will never be spammed','Govt job validity verified for every degree'].map(item => (
               <div key={item} className="flex items-start gap-3 mb-5">
                 <CheckCircle style={{ width:'16px', height:'16px', color:'var(--sage-bright)', flexShrink:0, marginTop:'2px' }} />
                 <span className="text-[13.5px] font-medium leading-relaxed" style={{ color:'rgba(255,255,255,0.7)' }}>{item}</span>
@@ -327,7 +327,7 @@ export default function HomePage() {
           <div style={{ padding: '22px 28px', background: 'var(--navy)', borderRadius: '14px', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
             <div style={{ fontSize: '22px', flexShrink: 0, marginTop: '2px' }}>🤝</div>
             <p style={{ fontSize: '14.5px', color: 'rgba(255,255,255,0.85)', lineHeight: 1.8, margin: 0 }}>
-              <strong style={{ color: '#fff' }}>Our promise:</strong> We don't take money to rank universities. We don't spam your phone. If you ask a counsellor to compare two options, they'll tell you honestly — even if that means recommending the cheaper one.
+              <strong style={{ color: '#fff' }}>Our promise:</strong> We don't take money to rank universities. We don't spam your phone. If you ask an advisor to compare two options, they'll tell you honestly — even if that means recommending the cheaper one.
             </p>
           </div>
 

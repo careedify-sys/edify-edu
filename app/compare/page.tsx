@@ -198,7 +198,7 @@ export default async function ComparePage(
             ))}
           </div>
           <div className="text-center">
-            <p className="text-slate-300 text-sm mb-4">Our counsellors have reviewed every university's syllabus, placement record, and UGC approval status. Free 15-minute call, no obligation.</p>
+            <p className="text-slate-300 text-sm mb-4">Our team has reviewed every university's syllabus, placement record, and UGC approval status. Free 15-minute call, no obligation.</p>
             <a
               href="tel:7061285806"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm text-white border border-amber-500/40 bg-amber-500/20 hover:bg-amber-500/30 transition-colors"
@@ -261,7 +261,7 @@ export default async function ComparePage(
           {/* Still confused CTA */}
           <div className="mt-10 p-6 bg-white rounded-2xl border border-slate-200 shadow-sm text-center">
             <p className="font-bold text-slate-800 mb-1">Still not sure which university to pick?</p>
-            <p className="text-sm text-slate-500 mb-4">Our counsellors compare programs for you based on your budget, qualification, and career goal — in a free 15-minute call.</p>
+            <p className="text-sm text-slate-500 mb-4">Our advisors compare programs for you based on your budget, qualification, and career goal — in a free 15-minute call.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
                 href="tel:7061285806"

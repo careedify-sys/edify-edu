@@ -11,7 +11,20 @@ const config: Config = {
     extend: {
       colors: {
         navy:    '#0B1D35',
-        amber:   '#D4922A',
+        amber: {
+          DEFAULT: '#D4922A',
+          50:  '#FFF9EC',
+          100: '#FEF3DC',
+          200: '#FDE8B4',
+          300: '#FCD34D',
+          400: '#FBBF24',
+          500: '#F59E0B',
+          600: '#D97706',
+          700: '#B45309',
+          800: '#92400E',
+          900: '#78350F',
+          950: '#451A03',
+        },
         'amber-bright': '#E09520',
         'amber-text':   '#A0650F',
         'amber-light':  '#FEF3DC',

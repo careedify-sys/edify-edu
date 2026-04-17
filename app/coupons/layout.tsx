@@ -34,7 +34,7 @@ const faqSchema = {
       name: 'How to get Amity University Online discount coupon?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Use coupon code AMITY25 during your counselling call with an EdifyEdu advisor to get 25% off on Amity University Online MBA fee, saving up to ₹30,000. For MCA, use AMITYMCA20 for 20% off.',
+        text: 'Use coupon code AMITY25 during your advisor call to get 25% off on Amity University Online MBA fee, saving up to ₹30,000. For MCA, use AMITYMCA20 for 20% off.',
       },
     },
     {
@@ -50,7 +50,7 @@ const faqSchema = {
       name: 'How to apply LPU Online discount code?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Apply coupon code LPU20 for 20% off on LPU Online MBA (saves up to ₹18,000) or LPUMCA20 for 20% off on LPU Online MCA. Share the code during your counselling call.',
+        text: 'Apply coupon code LPU20 for 20% off on LPU Online MBA (saves up to ₹18,000) or LPUMCA20 for 20% off on LPU Online MCA. Share the code during your advisor call.',
       },
     },
     {
@@ -74,7 +74,7 @@ const faqSchema = {
       name: 'Is there an NMIMS Online coupon code?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Coupon code NMIMS15 gives 15% off on NMIMS Online MBA, saving up to ₹20,000. Apply this code through your EdifyEdu counsellor.',
+        text: 'Yes. Coupon code NMIMS15 gives 15% off on NMIMS Online MBA, saving up to ₹20,000. Apply this code through your EdifyEdu advisor.',
       },
     },
     {
@@ -98,7 +98,7 @@ const faqSchema = {
       name: 'Are these coupon codes verified?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. All coupon codes listed on EdifyEdu are verified directly with the university admissions teams. Our counsellors confirm the discount during your call before you pay.',
+        text: 'Yes. All coupon codes listed on EdifyEdu are verified directly with the university admissions teams. Our team confirms the discount during your call before you pay.',
       },
     },
     {

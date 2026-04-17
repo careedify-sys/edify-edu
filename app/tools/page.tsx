@@ -481,7 +481,7 @@ export default function ToolsPage() {
           <div style={{marginTop:24,padding:'20px 24px',background:'linear-gradient(135deg,#0B1D35,#142540)',borderRadius:'var(--r-md)',display:'flex',alignItems:'center',justifyContent:'space-between',gap:16,flexWrap:'wrap'}}>
             <div>
               <div className="text-sm font-bold text-white mb-1">Need help choosing the right university?</div>
-              <div className="text-xs text-slate-400">Free counselling — Edify evaluates 3–4 stages before recommending. Zero paid rankings.</div>
+              <div className="text-xs text-slate-400">Free guidance — Edify evaluates 3–4 stages before recommending. Zero paid rankings.</div>
             </div>
             <Link href="/universities" style={{padding:'11px 20px',borderRadius:'var(--r-sm)',background:'linear-gradient(135deg,#c9922a,#e0a93a)',color:'#fff',fontWeight:700,fontSize:13,textDecoration:'none',whiteSpace:'nowrap'}}>
               Browse Universities →
