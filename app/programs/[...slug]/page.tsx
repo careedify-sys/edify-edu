@@ -10,11 +10,11 @@ import type { Program } from '@/lib/data'
 import ProgramPageClient from '@/components/ProgramPageClient'
 
 const PM: Record<string, Program> = {
-  'mba':'MBA','mca':'MCA','bba':'BBA','bca':'BCA','ba':'BA',
-  'bcom':'B.Com','mcom':'M.Com','ma':'MA','msc':'MSc','bsc':'BSc',
+  'mba':'MBA','mca':'MCA','bba':'BBA','bca':'BCA','ba':'B.A',
+  'bcom':'B.Com','mcom':'M.Com','ma':'M.A','msc':'M.Sc','bsc':'B.Sc',
   'online-mba':'MBA','online-mca':'MCA','online-bba':'BBA','online-bca':'BCA',
-  'online-ba':'BA','online-bcom':'B.Com','online-mcom':'M.Com',
-  'online-ma':'MA','online-msc':'MSc',
+  'online-ba':'B.A','online-bcom':'B.Com','online-mcom':'M.Com',
+  'online-ma':'M.A','online-msc':'M.Sc',
 }
 
 // Maps URL slugs → display name, content key, and target keywords for SEO
