@@ -1324,7 +1324,6 @@ const SPEC_ALIASES: Record<string, string> = {
   'hospital administration': 'healthcare management',
   'healthcare': 'healthcare management',
   'hospital and health system management': 'healthcare management',
-  'healthcare & hospital administration': 'healthcare management',
   'hospital mgmt': 'healthcare management',
 
   // Entrepreneurship
