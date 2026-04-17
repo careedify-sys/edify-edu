@@ -264,6 +264,27 @@ const nextConfig = {
       { source: '/online-mca',                 destination: '/programs/mca',  permanent: true },
       { source: '/online-mba-india',           destination: '/programs/mba',  permanent: true },
 
+      // ── Blog duplicate consolidation (301) ────────────────────────────
+      // SMU
+      { source: '/blog/smu-online-mba-review-2026',                        destination: '/blog/smu-online-mba-review',                          permanent: true },
+      // Amity
+      { source: '/blog/amity-university-online-mba-fees-courses-review-2026', destination: '/blog/amity-university-mba-distance-2026',          permanent: true },
+      { source: '/blog/amity-online-mba-review-2026',                      destination: '/blog/amity-university-mba-distance-2026',             permanent: true },
+      // Chandigarh
+      { source: '/blog/chandigarh-university-online-review-2026',          destination: '/blog/chandigarh-university-online-mba-review',        permanent: true },
+      // DY Patil
+      { source: '/blog/dy-patil-online-mba-fee-structure-2026',            destination: '/blog/dy-patil-online-mba-review',                    permanent: true },
+      // MBA Duration
+      { source: '/blog/how-many-years-mba-india-2026',                     destination: '/blog/mba-course-duration-india-2026',                 permanent: true },
+      { source: '/blog/mba-duration-in-india-guide-2026',                  destination: '/blog/mba-course-duration-india-2026',                 permanent: true },
+      { source: '/blog/mba-course-time-weekly-hours-2026',                 destination: '/blog/mba-course-duration-india-2026',                 permanent: true },
+      { source: '/blog/mba-course-duration-how-many-years-2026',           destination: '/blog/mba-course-duration-india-2026',                 permanent: true },
+      // MBA Postgrad
+      { source: '/blog/mba-graduate-or-postgraduate-india-2026',           destination: '/blog/is-mba-post-graduation-india-2026',             permanent: true },
+      // Online vs Distance
+      { source: '/blog/distance-mba-vs-online-mba-india-2026',             destination: '/blog/online-mba-vs-distance-mba-difference-2026',    permanent: true },
+      { source: '/blog/difference-online-mba-distance-mba-2026',           destination: '/blog/online-mba-vs-distance-mba-difference-2026',    permanent: true },
+
       // Blog legacy
       { source: '/post/:slug',                 destination: '/blog/:slug',    permanent: true },
       { source: '/article/:slug',              destination: '/blog/:slug',    permanent: true },
