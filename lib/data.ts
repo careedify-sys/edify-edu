@@ -1,7 +1,7 @@
 // lib/data.ts — Edify University Database
 // Each program has: specs, fees, roles, salary, companies, internship, careerOutcome
 
-export type Program = 'MBA' | 'MCA' | 'BBA' | 'BCA' | 'BA' | 'B.Com' | 'M.Com' | 'MA' | 'MSc' | 'BSc' | 'MBA (WX)'
+export type Program = 'MBA' | 'MCA' | 'BBA' | 'BCA' | 'BA' | 'B.A' | 'B.Com' | 'M.Com' | 'MA' | 'M.A' | 'MSc' | 'M.Sc' | 'BSc' | 'B.Sc' | 'MBA (WX)'
 
 export interface SpecRoles {
   [spec: string]: { roles: string[]; salary: string; companies: string[] }
