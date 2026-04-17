@@ -473,7 +473,7 @@ BCA graduates in 2026 are highly sought after by IT giants like TCS and Wipro fo
     `,
   },
 
-  'BA': {
+  'B.A': {
     metaTitle: 'Online BA in India 2026 — Subjects, Careers & UPSC Guide | Edify',
     metaDesc: 'Earn an online BA from UGC-approved universities. Study English, Psychology, Political Science, History, Journalism. 3-year degree. Fees from ₹18K. UPSC-eligible. Government-job valid options available.',
     heroHeadline: 'Online BA — Knowledge That Opens Every Door.',
@@ -738,7 +738,7 @@ In 2026, M.Com is no longer just "Higher Accounting." You can specialize in **Fi
     `,
   },
 
-  'MA': {
+  'M.A': {
     metaTitle: 'Online MA in India 2026 — Subjects, Careers & UGC NET Guide | Edify',
     metaDesc: 'Earn an online MA from UGC-approved universities. Study English, Psychology, Political Science, History, Sociology or Journalism. 2-year PG degree. Fees from ₹18K. UGC NET eligible. UPSC career path.',
     heroHeadline: 'Online MA — Deepen Your Expertise. Open Doors to Teaching, Research & Public Service.',

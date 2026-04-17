@@ -1,7 +1,7 @@
 // lib/data.ts — Edify University Database
 // Each program has: specs, fees, roles, salary, companies, internship, careerOutcome
 
-export type Program = 'MBA' | 'MCA' | 'BBA' | 'BCA' | 'BA' | 'B.A' | 'B.Com' | 'M.Com' | 'MA' | 'M.A' | 'MSc' | 'M.Sc' | 'BSc' | 'B.Sc' | 'MBA (WX)'
+export type Program = 'MBA' | 'MCA' | 'BBA' | 'BCA' | 'B.A' | 'B.Com' | 'M.Com' | 'M.A' | 'M.Sc' | 'B.Sc' | 'MBA (WX)'
 
 export interface SpecRoles {
   [spec: string]: { roles: string[]; salary: string; companies: string[] }
@@ -307,7 +307,7 @@ export const UNIVERSITIES: University[] = [
     forWho: ['Graduates seeking marketing leadership', 'working marketing professionals', 'digital marketers seeking career upgrade'],
     notFor: ['Those not meeting eligibility criteria', 'those requiring only on-campus experience', 'students needing highly personalized offline mentoring'],
     qsRank: 51,
-    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'M.Com', 'MSc', 'B.A', 'M.A', 'M.Sc'],
+    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.A', 'M.Com', 'M.Sc', 'M.A'],
     programDetails: {
       'MBA': {
         specs: ['Human Resource Management', 'Finance', 'Marketing', 'Operations Management', 'Business Analytics', 'Digital Marketing', 'Data Science', 'Information Technology (IT)', 'International Business', 'Hospital & Healthcare Management', 'Logistics & Supply Chain Management', 'Banking & Financial Services'],
@@ -351,7 +351,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BCA from Lovely Professional University (LPU) — recognised for corporate hiring.',
       },
-      'BA': {
+      'B.A': {
         specs: ['Humanities & Social Sciences'],
         fees: '₹0.1L – ₹0.9L',
         duration: '3 Years (6 Semesters)',
@@ -371,7 +371,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved M.Com from Lovely Professional University (LPU) — recognised for corporate hiring.',
       },
-      'MSc': {
+      'M.Sc': {
         specs: ['Mathematics', 'Economics'],
         fees: '₹14K – ₹56K',
         duration: '2 Years (4 Semesters)',
@@ -636,7 +636,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Parul University – Online (paruluniversity.on. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Marketing professionals targeting brand, digital & sales roles', 'MBA aspirants wanting Digital Marketing + Brand Mgmt combo'],
     notFor: ['Non-analytical backgrounds', 'Deep tech aspirants'],
-    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com', 'BA', 'M.Com', 'B.A', 'M.A'],
+    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com', 'B.A', 'M.Com', 'M.A'],
     programDetails: {
       'MBA': {
         specs: ['Agribusiness Management', 'Banking & Financial Services', 'Business Analytics', 'Digital Marketing & Sales', 'Entrepreneurship & Innovation Management', 'Family Managed Business', 'Finance', 'Forensic Accounting & Corporate Fraud Investigation', 'Healthcare Management', 'Human Resource Management', 'Information Technology (IT)', 'International Trade & Business', 'Logistics & Supply Chain Management', 'Marketing', 'Operations Management', 'Pharmaceutical Management', 'Project Management', 'Public Policy', 'Retail Management', 'Tourism & Event Management'],
@@ -691,7 +691,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved B.Com from Parul University – Online (paruluni — recognised for corporate hiring.',
       },
-      'BA': {
+      'B.A': {
         specs: ['Psychology', 'English Literature', 'Journalism & Mass Communication'],
         fees: '₹60K – ₹70K',
         duration: '3 Yrs',
@@ -837,7 +837,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Mangalayatan University – Online (mangalayata. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['HR professionals targeting industrial relations, global HRM, OD, negotiation rol'],
     notFor: ['Deep tech/finance seekers', 'Non-HR backgrounds'],
-    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'M.Com', 'MSc', 'B.A'],
+    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'M.Com', 'M.Sc', 'B.A'],
     programDetails: {
       'MBA': {
         specs: ['Marketing Management', 'Finance', 'Human Resource Management', 'Business Analytics', 'Operations Management', 'Logistics & Supply Chain Management', 'International Business', 'Digital Marketing'],
@@ -882,7 +882,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BCA from Mangalayatan University – Online (m — recognised for corporate hiring.',
       },
-      'BA': {
+      'B.A': {
         specs: ['Humanities', 'Sociology', 'Ethics & Social Sciences'],
         fees: '₹31K – ₹55K',
         duration: '3 Yrs',
@@ -902,7 +902,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved M.Com from Mangalayatan University – Online (m — recognised for corporate hiring.',
       },
-      'MSc': {
+      'M.Sc': {
         specs: ['Pure Mathematics (Algebra', 'Analysis', 'Topology', 'Differential Equations', 'Statistics', 'Number Theory)'],
         fees: '₹55K – ₹55K',
         duration: '2 Yrs',
@@ -942,7 +942,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Shoolini University – Shoolini Online (SCDOE). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals wanting flexible MBA', 'fresh graduates targeting management careers', 'those needing Pay-After-Placement option'],
     notFor: ['Students wanting fully on-campus/classroom experience', 'those not comfortable with fully online self-paced learning', 'those below minimum marks eligibility'],
-    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com', 'MSc', 'M.A', 'M.Sc'],
+    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com', 'M.Sc', 'M.A'],
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'Business Analytics', 'Digital Marketing', 'International Business', 'Data Science', 'Logistics & Supply Chain Management', 'Healthcare Management', 'IT Management', 'Entrepreneurship', 'Banking & Financial Services', 'Retail Management', 'Tourism & Hospitality Management'],
@@ -997,7 +997,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved B.Com from Shoolini University – Shoolini Onli — recognised for corporate hiring.',
       },
-      'MSc': {
+      'M.Sc': {
         specs: ['M.Sc Data Science'],
         fees: '₹130K – ₹160K',
         duration: '2 Years',
@@ -1036,7 +1036,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Manipal University Jaipur (MUJ) – Online Mani. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Graduates seeking management credentials', 'working professionals targeting leadership', 'those wanting NAAC A+ MBA at affordable fees'],
     notFor: ['Those seeking only offline/on-campus experience', 'students not meeting UG eligibility', 'those needing highly personalized offline mentoring'],
-    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com', 'M.Com', 'MSc', 'M.A', 'M.Sc'],
+    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com', 'M.Com', 'M.Sc', 'M.A'],
     programDetails: {
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Analytics and Data Science', 'Digital Marketing', 'Operations Management', 'International Business', 'Project Management', 'Logistics & Supply Chain Management', 'Information System Management', 'IT & FinTech', 'BFSI (Banking, Financial Services and Insurance)', 'Retail Management'],
@@ -1100,7 +1100,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved M.Com from Manipal University Jaipur (MUJ) – O — recognised for corporate hiring.',
       },
-      'MSc': {
+      'M.Sc': {
         specs: ['General Management'],
         fees: '₹30K – ₹120K',
         duration: '2 Years (4 Semesters)',
@@ -1225,7 +1225,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Sikkim Manipal University (SMU) – Online Mani. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Students wanting most affordable Manipal MBA (₹1.1L vs ₹1.75L at MUJ and ₹2.92L', 'Those wanting dual expertise – Marketing mandatory gives all-round commercial sk', 'Healthcare professionals wanting MBA'],
     notFor: ['Students wanting highly specialised single-domain MBA', 'Those needing strongest NIRF ranking (MAHE or MUJ rank higher)'],
-    programs: ['MBA', 'MCA', 'BBA', 'B.Com', 'BA', 'M.Com', 'B.A', 'M.A'],
+    programs: ['MBA', 'MCA', 'BBA', 'B.Com', 'B.A', 'M.Com', 'M.A'],
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Systems (IT Management)', 'Operations & Supply Chain Management', 'Healthcare'],
@@ -1268,7 +1268,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved B.Com from Sikkim Manipal University (SMU) – O — recognised for corporate hiring.',
       },
-      'BA': {
+      'B.A': {
         specs: ['General Management'],
         fees: '₹0.1L – ₹0.8L',
         duration: '3 Years (6 Semesters)',
@@ -1318,7 +1318,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Symbiosis School for Online and Digital Learn. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals, freshers seeking premium brand, students wanting high-tec'],
     notFor: ['Students seeking low-cost distance diploma (SCDL PGDBA is cheaper alternative)', 'Students needing physical campus'],
-    programs: ['MBA', 'BBA', 'BCA', 'MSc', 'BSc', 'B.Sc', 'M.A', 'M.Sc'],
+    programs: ['MBA', 'BBA', 'BCA', 'M.Sc', 'B.Sc', 'M.A'],
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Human Resource Management', 'Finance', 'Operations Management', 'Logistics & Supply Chain Management', 'Agri Operations Management', 'International Business', 'Business Analytics', 'Hospital & Health Care Management'],
@@ -1349,7 +1349,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BCA from Symbiosis School for Online and Dig — recognised for corporate hiring.',
       },
-      'MSc': {
+      'M.Sc': {
         specs: ['Data Science', 'Computer Applications', 'Economics'],
         fees: '₹35K – ₹140K',
         duration: '2 Years (4 Semesters); extendable to 4 years',
@@ -1359,7 +1359,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MSc from Symbiosis School for Online and Dig — recognised for corporate hiring.',
       },
-      'BSc': {
+      'B.Sc': {
         specs: ['Economics', 'Social Sciences'],
         fees: '₹0.2L – ₹1.5L',
         duration: '3 Years (6 Semesters)',
@@ -1599,7 +1599,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BCA from Sharda University (Sharda Online) — recognised for corporate hiring.',
       },
-      'BA': {
+      'B.A': {
         specs: ['Political Science'],
         fees: '₹54K – ₹54K',
         duration: '3 Years',
@@ -1739,7 +1739,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved B.Com from Manonmaniam Sundaranar University ( — recognised for corporate hiring.',
       },
-      'BA': {
+      'B.A': {
         specs: ['English Literature'],
         fees: '₹45K – ₹45K',
         duration: '3 Years',
@@ -1851,7 +1851,7 @@ export const UNIVERSITIES: University[] = [
     forWho: ['Graduates targeting top-tier management careers', 'NAAC A++ seekers', 'professionals wanting IoE-tagged MBA credential'],
     notFor: ['Those seeking only offline/on-campus experience', 'students not meeting UG eligibility', 'those needing highly personalized offline mentoring'],
     qsRank: 32,
-    programs: ['MBA', 'MCA', 'BBA', 'B.Com', 'MSc', 'M.Sc'],
+    programs: ['MBA', 'MCA', 'BBA', 'B.Com', 'M.Sc'],
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Business Analytics', 'Operations & Supply Chain Management', 'Banking & Financial Services', 'Healthcare Management', 'International Business', 'Information Technology Management'],
@@ -1896,7 +1896,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved B.Com from Manipal Academy of Higher Education — recognised for corporate hiring.',
       },
-      'MSc': {
+      'M.Sc': {
         specs: ['General Management'],
         fees: '₹60K – ₹240K',
         duration: '2 Years (4 Semesters)',
@@ -2014,7 +2014,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Chandigarh University (CU Online). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Graduates seeking management careers', 'working professionals wanting MBA without career break', 'CA/CS/CMA seeking MBA upgrade'],
     notFor: ['Those not meeting eligibility criteria', 'those requiring only on-campus experience', 'students needing highly personalized offline mentoring'],
-    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'MSc', 'M.A', 'M.Sc'],
+    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'M.Sc', 'M.A'],
     programDetails: {
       'MBA': {
         specs: ['General Management', 'Marketing Management', 'Finance', 'Human Resource Management', 'Business Analytics', 'Data Science', 'International Business', 'Operations Management', 'Logistics & Supply Chain Management', 'Healthcare & Hospital Administration', 'Information Technology', 'Entrepreneurship & Family Business', 'Retail Management', 'Banking, Insurance & Financial Services', 'Digital Marketing', 'Agri Business Management', 'Sports Management', 'Tourism & Hospitality Management', 'Aviation Management', 'Oil & Gas Management', 'Media & Communication Management', 'Infrastructure Management', 'Energy Management'],
@@ -2058,7 +2058,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BCA from Chandigarh University (CU Online) — recognised for corporate hiring.',
       },
-      'MSc': {
+      'M.Sc': {
         specs: ['Data Science'],
         fees: '₹0.3L – ₹1.5L',
         duration: '2 Years (4 Semesters)',
@@ -2206,7 +2206,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved B.Com from Integral University (Integral Onlin — recognised for corporate hiring.',
       },
-      'BA': {
+      'B.A': {
         specs: ['English, Urdu, Hindi, History, Political Science,'],
         fees: '₹36K – ₹36K',
         duration: '3 Years',
@@ -2226,7 +2226,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved M.Com from Integral University (Integral Onlin — recognised for corporate hiring.',
       },
-      'MSc': {
+      'M.Sc': {
         specs: ['Mathematics'],
         fees: '₹30K – ₹30K',
         duration: '2 Years',
@@ -2319,7 +2319,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved B.Com from Manav Rachna Centre for Distance an — recognised for corporate hiring.',
       },
-      'BA': {
+      'B.A': {
         specs: ['Economics, English'],
         fees: '₹120K – ₹120K',
         duration: '3 Years',
@@ -2409,7 +2409,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved B.Com from Karnataka State Open University (KS — recognised for corporate hiring.',
       },
-      'BA': {
+      'B.A': {
         specs: ['History, Economics, Political Science, Sociology,'],
         fees: '₹10K – ₹30K',
         duration: '3 Years',
@@ -2458,7 +2458,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Bharathidasan University (BDU Online). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'BBA', 'BA', 'B.A', 'M.A'],
+    programs: ['MBA', 'BBA', 'B.A', 'M.A'],
     programDetails: {
       'MBA': {
         specs: ['Finance', 'Human Resource Management', 'Marketing', 'Operations Management', 'Systems'],
@@ -2480,7 +2480,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BBA from Bharathidasan University (BDU Onlin — recognised for corporate hiring.',
       },
-      'BA': {
+      'B.A': {
         specs: ['English'],
         fees: '₹45K – ₹45K',
         duration: '3 Years',
@@ -2797,7 +2797,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved B.Com from Marwadi University — recognised for corporate hiring.',
       },
-      'MSc': {
+      'M.Sc': {
         specs: ['Business Analytics'],
         fees: '₹25K – ₹100K',
         duration: '2 Years',
@@ -2878,7 +2878,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved M.Com from P P Savani University (CDOE) — recognised for corporate hiring.',
       },
-      'MSc': {
+      'M.Sc': {
         specs: ['Data Science'],
         fees: '₹32K – ₹130K',
         duration: '2 Years',
@@ -3014,7 +3014,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Aligarh Muslim University (Centre for Distanc. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'BA', 'B.A', 'B.Com', 'M.A', 'M.Com'],
+    programs: ['MBA', 'B.A', 'B.Com', 'M.A', 'M.Com'],
     programDetails: {
       'MBA': {
         specs: ['General Management'],
@@ -3035,7 +3035,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved B.Com from Aligarh Muslim University (Centre f — recognised for corporate hiring.',
       },
-      'BA': {
+      'B.A': {
         specs: ['English', 'Economics', 'Political Science', 'History'],
         fees: '₹28K – ₹28K',
         duration: '3 Years',
@@ -3083,7 +3083,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Gujarat University (Centre for Distance and O. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['B.Com', 'BA', 'M.Com', 'B.A', 'BCA', 'M.A', 'M.Sc'],
+    programs: ['B.Com', 'B.A', 'M.Com', 'BCA', 'M.A', 'M.Sc'],
     programDetails: {
       'BCA': {
         specs: ['Computer Applications'],
@@ -3105,7 +3105,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved B.Com from Gujarat University (Centre for Dist — recognised for corporate hiring.',
       },
-      'BA': {
+      'B.A': {
         specs: ['English'],
         fees: '₹15K – ₹15K',
         duration: '3 Years (Maximum 6 years)',
@@ -3125,7 +3125,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved M.Com from Gujarat University (Centre for Dist — recognised for corporate hiring.',
       },
-      'MSc': {
+      'M.Sc': {
         specs: ['Mathematics'],
         fees: '₹18K – ₹36K',
         duration: '2 Years',
@@ -3363,7 +3363,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved B.Com from Maharishi Markandeshwar (Deemed to — recognised for corporate hiring.',
       },
-      'MSc': {
+      'M.Sc': {
         specs: ['Mathematics'],
         fees: '₹70K – ₹70K',
         duration: '2 Years',
@@ -3444,7 +3444,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Vivekananda Global University (VGU Online). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'MSc', 'B.A', 'M.A', 'M.Sc'],
+    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.A', 'M.Sc', 'M.A'],
     programDetails: {
       
       'MBA': {
@@ -3489,7 +3489,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BCA from Vivekananda Global University (VGU — recognised for corporate hiring.',
       },
-      'BA': {
+      'B.A': {
         specs: ['Economics, Political Science, English, History, Co'],
         fees: '₹72K – ₹72K',
         duration: '3 Years',
@@ -3499,7 +3499,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BA from Vivekananda Global University (VGU — recognised for corporate hiring.',
       },
-      'MSc': {
+      'M.Sc': {
         specs: ['Mathematics'],
         fees: '₹72K – ₹72K',
         duration: '2 Years',
@@ -3613,7 +3613,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Uttaranchal University – UU Doon Online (onli. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals targeting MBA upgrade', 'Graduates in any discipline', 'Those needing WES-recognized degree for Canada'],
     notFor: ['Students needing fully on-campus experience', 'Those wanting deep tech research tracks'],
-    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'B.A'],
+    programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.A'],
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'Business Analytics', 'International Business', 'Digital Marketing', 'Healthcare Management'],
@@ -3659,7 +3659,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BCA from Uttaranchal University – UU Doon On — recognised for corporate hiring.',
       },
-      'BA': {
+      'B.A': {
         specs: ['General – Sociology', 'Economics', 'Psychology', 'Political Science', 'Public Speaking'],
         fees: '₹0.1L – ₹0.7L',
         duration: '3 Yrs',
@@ -3697,7 +3697,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Andhra University – Online AUSDE (andhraunive. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals targeting marketing, brand, CRM careers', 'PSU aspirants (GMR, LIC placements)'],
     notFor: ['Deep tech seekers', 'Pure finance aspirants'],
-    programs: ['MBA', 'MA', 'M.A', 'MCA'],
+    programs: ['MBA', 'M.A', 'MCA'],
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management'],
@@ -3711,7 +3711,7 @@ export const UNIVERSITIES: University[] = [
       },
 
 
-      'MA': {
+      'M.A': {
         specs: ['Sociology'],
         fees: '₹30,000 total',
         duration: '2 Years (4 Semesters)',
@@ -5185,7 +5185,7 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Sathyabama Institute of Science and Technolog. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'MSc', 'BBA'],
+    programs: ['MBA', 'M.Sc', 'BBA'],
     programDetails: {
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Systems', 'Operations Management', 'Business Analytics', 'Healthcare', 'Tourism & Hospitality', 'Entrepreneurship'],
@@ -5236,10 +5236,10 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Vellore Institute of Technology (VIT Online). NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MSc'],
+    programs: ['M.Sc'],
     programDetails: {
 
-      'MSc': {
+      'M.Sc': {
         specs: ['Data Science'],
         fees: '₹150K – ₹150K',
         duration: '2 Years',
@@ -6289,9 +6289,9 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Sri Ramachandra Institute of Higher Education. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['BSc', 'B.Sc'],
+    programs: ['B.Sc'],
     programDetails: {
-      'BSc': {
+      'B.Sc': {
         specs: ['Data Science'],
         fees: '₹150K – ₹150K',
         duration: '3 Years',
@@ -6653,9 +6653,9 @@ export const UNIVERSITIES: University[] = [
     description: 'JAWAHARLAL NEHRU UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in New Delhi and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['MA'],
+    programs: ['M.A'],
     programDetails: {
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b958K \u2013 \u20b9130K',
         duration: '2 Years',
@@ -6696,7 +6696,7 @@ export const UNIVERSITIES: University[] = [
     description: 'JAMIA HAMDARD offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in New Delhi and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['B.Com', 'BBA', 'BCA', 'MA', 'MBA', 'MCA'],
+    programs: ['B.Com', 'BBA', 'BCA', 'M.A', 'MBA', 'MCA'],
     programDetails: {
       'B.Com': {
         specs: ['Finance','Accounting','Taxation','E-Commerce','Banking & Insurance'],
@@ -6727,7 +6727,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Project-based',
         careerOutcome: 'BCA from JAMIA HAMDARD builds IT fundamentals for entry-level software careers.',
       },
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b948K \u2013 \u20b9117K',
         duration: '2 Years',
@@ -6790,9 +6790,9 @@ export const UNIVERSITIES: University[] = [
     description: 'KALINGA INSTITUTE OF INDUSTRIAL TECHNOLOGY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Bhubaneswar and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['BA', 'B.Com', 'MA', 'M.Com'],
+    programs: ['B.A', 'B.Com', 'M.A', 'M.Com'],
     programDetails: {
-      'BA': {
+      'B.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Journalism & Mass Communication'],
         fees: '\u20b945K \u2013 \u20b9100K',
         duration: '3 Years',
@@ -6812,7 +6812,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Commerce/Finance internship',
         careerOutcome: 'B.Com from KALINGA INSTITUTE OF INDUSTRIAL TECHNOLOGY is valid for banking, finance and government roles.',
       },
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b958K \u2013 \u20b9130K',
         duration: '2 Years',
@@ -7061,9 +7061,9 @@ export const UNIVERSITIES: University[] = [
     description: 'DEVI AHILYA VISHWAVIDYALAYA offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Bhopal and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['MA', 'MBA'],
+    programs: ['M.A', 'MBA'],
     programDetails: {
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b948K \u2013 \u20b9117K',
         duration: '2 Years',
@@ -7112,9 +7112,9 @@ export const UNIVERSITIES: University[] = [
     description: 'MADURAI KAMARAJ UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Chennai and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['BA', 'B.Com', 'BBA', 'MA', 'M.Com', 'BCA', 'M.A', 'MBA', 'MCA'],
+    programs: ['B.A', 'B.Com', 'BBA', 'M.A', 'M.Com', 'BCA', 'MBA', 'MCA'],
     programDetails: {
-      'BA': {
+      'B.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Journalism & Mass Communication'],
         fees: '\u20b937K \u2013 \u20b990K',
         duration: '3 Years',
@@ -7144,7 +7144,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project',
         careerOutcome: 'BBA from MADURAI KAMARAJ UNIVERSITY provides a recognised management degree for entry-level corporate roles.',
       },
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b948K \u2013 \u20b9117K',
         duration: '2 Years',
@@ -7194,7 +7194,7 @@ export const UNIVERSITIES: University[] = [
     description: 'SHANMUGHA ARTS, SCIENCE, TECHNOLOGY & RESEARCH ACADEMY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Chennai and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['B.Com', 'BBA', 'BCA', 'MA', 'M.Com', 'MBA', 'MCA'],
+    programs: ['B.Com', 'BBA', 'BCA', 'M.A', 'M.Com', 'MBA', 'MCA'],
     programDetails: {
       'B.Com': {
         specs: ['Finance','Accounting','Taxation','E-Commerce','Banking & Insurance'],
@@ -7226,7 +7226,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Project-based',
         careerOutcome: 'BCA from SHANMUGHA ARTS, SCIENCE, TECHNOLOGY & RESEARCH ACADEMY builds IT fundamentals for entry-level software careers.',
       },
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b948K \u2013 \u20b9117K',
         duration: '2 Years',
@@ -7298,9 +7298,9 @@ export const UNIVERSITIES: University[] = [
     description: 'UNIVERSITY OF MUMBAI offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Pune and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['MA', 'BBA', 'BCA', 'MBA', 'MCA'],
+    programs: ['M.A', 'BBA', 'BCA', 'MBA', 'MCA'],
     programDetails: {
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b958K \u2013 \u20b9130K',
         duration: '2 Years',
@@ -7339,9 +7339,9 @@ export const UNIVERSITIES: University[] = [
     description: 'UNIVERSITY OF JAMMU offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in India and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['MA', 'M.Com'],
+    programs: ['M.A', 'M.Com'],
     programDetails: {
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b948K \u2013 \u20b9117K',
         duration: '2 Years',
@@ -7441,9 +7441,9 @@ export const UNIVERSITIES: University[] = [
     description: 'BANASTHALI VIDYAPITH offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Jaipur and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['BA', 'B.Com', 'MA', 'M.Com', 'MBA'],
+    programs: ['B.A', 'B.Com', 'M.A', 'M.Com', 'MBA'],
     programDetails: {
-      'BA': {
+      'B.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Journalism & Mass Communication'],
         fees: '\u20b945K \u2013 \u20b9100K',
         duration: '3 Years',
@@ -7463,7 +7463,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Commerce/Finance internship',
         careerOutcome: 'B.Com from BANASTHALI VIDYAPITH is valid for banking, finance and government roles.',
       },
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b958K \u2013 \u20b9130K',
         duration: '2 Years',
@@ -7524,7 +7524,7 @@ export const UNIVERSITIES: University[] = [
     description: 'GURU GOBIND SINGH INDRAPRASTHA VISHWAVIDYALAYA offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in New Delhi and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['B.Com', 'BBA', 'MA'],
+    programs: ['B.Com', 'BBA', 'M.A'],
     programDetails: {
       'B.Com': {
         specs: ['Finance','Accounting','Taxation','E-Commerce','Banking & Insurance'],
@@ -7545,7 +7545,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project',
         careerOutcome: 'BBA from GURU GOBIND SINGH INDRAPRASTHA VISHWAVIDYALAYA provides a recognised management degree for entry-level corporate roles.',
       },
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b958K \u2013 \u20b9130K',
         duration: '2 Years',
@@ -7585,7 +7585,7 @@ export const UNIVERSITIES: University[] = [
     description: 'BANGALORE UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Bengaluru and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['B.Com', 'MA', 'M.Com'],
+    programs: ['B.Com', 'M.A', 'M.Com'],
     programDetails: {
       'B.Com': {
         specs: ['Finance','Accounting','Taxation','E-Commerce','Banking & Insurance'],
@@ -7597,7 +7597,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Commerce/Finance internship',
         careerOutcome: 'B.Com from BANGALORE UNIVERSITY is valid for banking, finance and government roles.',
       },
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b939K \u2013 \u20b997K',
         duration: '2 Years',
@@ -7689,9 +7689,9 @@ export const UNIVERSITIES: University[] = [
     description: 'DAYAL BAGH EDUCATIONAL INSTITUTE offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Lucknow and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['BA', 'B.Com', 'BBA', 'MA', 'M.Com', 'B.A', 'M.A'],
+    programs: ['B.A', 'B.Com', 'BBA', 'M.A', 'M.Com'],
     programDetails: {
-      'BA': {
+      'B.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Journalism & Mass Communication'],
         fees: '\u20b937K \u2013 \u20b990K',
         duration: '3 Years',
@@ -7720,7 +7720,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project',
         careerOutcome: 'BBA from DAYAL BAGH EDUCATIONAL INSTITUTE provides a recognised management degree for entry-level corporate roles.',
       },
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b948K \u2013 \u20b9117K',
         duration: '2 Years',
@@ -7810,9 +7810,9 @@ export const UNIVERSITIES: University[] = [
     description: 'BHARATH INSTITUTE OF HIGHER EDUCATION AND RESEARCH offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Chennai and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['BA', 'B.Com', 'M.Com'],
+    programs: ['B.A', 'B.Com', 'M.Com'],
     programDetails: {
-      'BA': {
+      'B.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Journalism & Mass Communication'],
         fees: '\u20b937K \u2013 \u20b990K',
         duration: '3 Years',
@@ -7965,7 +7965,7 @@ export const UNIVERSITIES: University[] = [
     description: 'DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Lucknow and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['B.Com', 'BBA', 'MA', 'M.Com', 'MBA'],
+    programs: ['B.Com', 'BBA', 'M.A', 'M.Com', 'MBA'],
     programDetails: {
       'B.Com': {
         specs: ['Finance','Accounting','Taxation','E-Commerce','Banking & Insurance'],
@@ -7987,7 +7987,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project',
         careerOutcome: 'BBA from DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY provides a recognised management degree for entry-level corporate roles.',
       },
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b939K \u2013 \u20b997K',
         duration: '2 Years',
@@ -8048,7 +8048,7 @@ export const UNIVERSITIES: University[] = [
     description: 'GURU JAMBHESHWAR UNIVERSITY OF SCIENCE AND TECHNOLOGY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Rohtak and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['B.Com', 'MA', 'M.Com', 'MBA'],
+    programs: ['B.Com', 'M.A', 'M.Com', 'MBA'],
     programDetails: {
       'B.Com': {
         specs: ['Finance','Accounting','Taxation','E-Commerce','Banking & Insurance'],
@@ -8059,7 +8059,7 @@ export const UNIVERSITIES: University[] = [
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
         careerOutcome: 'B.Com from GURU JAMBHESHWAR UNIVERSITY OF SCIENCE AND TECHNOLOGY is valid for banking, finance and government roles.'},
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b939K \u2013 \u20b997K',
         duration: '2 Years',
@@ -8119,9 +8119,9 @@ export const UNIVERSITIES: University[] = [
     description: 'MAHARSHI DAYANAND UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Rohtak and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['BA', 'MA', 'M.Com'],
+    programs: ['B.A', 'M.A', 'M.Com'],
     programDetails: {
-      'BA': {
+      'B.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Journalism & Mass Communication'],
         fees: '\u20b937K \u2013 \u20b990K',
         duration: '3 Years',
@@ -8131,7 +8131,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Community or media project',
         careerOutcome: 'BA is valid for most government jobs and civil services. Widely accepted degree.',
       },
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b948K \u2013 \u20b9117K',
         duration: '2 Years',
@@ -8180,9 +8180,9 @@ export const UNIVERSITIES: University[] = [
     description: 'MAHATMA JYOTIBA PHULE ROHILKHAND UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Lucknow and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['BA', 'MA', 'M.Com'],
+    programs: ['B.A', 'M.A', 'M.Com'],
     programDetails: {
-      'BA': {
+      'B.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Journalism & Mass Communication'],
         fees: '\u20b937K \u2013 \u20b990K',
         duration: '3 Years',
@@ -8192,7 +8192,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Community or media project',
         careerOutcome: 'BA is valid for most government jobs and civil services. Widely accepted degree.',
       },
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b948K \u2013 \u20b9117K',
         duration: '2 Years',
@@ -8326,9 +8326,9 @@ export const UNIVERSITIES: University[] = [
     description: 'MEENAKSHI ACADEMY OF HIGHER EDUCATION AND RESEARCH offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Chennai and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['BA', 'B.Com', 'MA'],
+    programs: ['B.A', 'B.Com', 'M.A'],
     programDetails: {
-      'BA': {
+      'B.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Journalism & Mass Communication'],
         fees: '\u20b937K \u2013 \u20b990K',
         duration: '3 Years',
@@ -8348,7 +8348,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Commerce/Finance internship',
         careerOutcome: 'B.Com from MEENAKSHI ACADEMY OF HIGHER EDUCATION AND RESEARCH is valid for banking, finance and government roles.',
       },
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b948K \u2013 \u20b9117K',
         duration: '2 Years',
@@ -8388,9 +8388,9 @@ export const UNIVERSITIES: University[] = [
     description: 'MODY UNIVERSITY OF SCIENCE AND TECHNOLOGY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Jaipur and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['BA', 'B.Com', 'BCA', 'MA', 'M.Com', 'MBA', 'MCA'],
+    programs: ['B.A', 'B.Com', 'BCA', 'M.A', 'M.Com', 'MBA', 'MCA'],
     programDetails: {
-      'BA': {
+      'B.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Journalism & Mass Communication'],
         fees: '\u20b937K \u2013 \u20b990K',
         duration: '3 Years',
@@ -8420,7 +8420,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Project-based',
         careerOutcome: 'BCA from MODY UNIVERSITY OF SCIENCE AND TECHNOLOGY builds IT fundamentals for entry-level software careers.',
       },
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b948K \u2013 \u20b9117K',
         duration: '2 Years',
@@ -8491,7 +8491,7 @@ export const UNIVERSITIES: University[] = [
     description: 'SAGE UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Bhopal and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['BBA', 'BCA', 'MA', 'M.Com', 'MBA'],
+    programs: ['BBA', 'BCA', 'M.A', 'M.Com', 'MBA'],
     programDetails: {
       'BBA': {
         specs: ['Finance','Marketing','Human Resource Management','Entrepreneurship','Digital Marketing','Retail Management'],
@@ -8513,7 +8513,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Project-based',
         careerOutcome: 'BCA from SAGE UNIVERSITY builds IT fundamentals for entry-level software careers.',
       },
-      'MA': {
+      'M.A': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b939K \u2013 \u20b997K',
         duration: '2 Years',
@@ -8877,14 +8877,14 @@ export const PROGRAM_META: Record<string, { icon: string; desc: string; duration
   'MBA': { icon: '💼', desc: 'Master of Business Administration', duration: '2 Years', level: 'PG' },
   'MBA (WX)': { icon: '🏆', desc: 'MBA for Working Executives', duration: '2 Years', level: 'PG' },
   'MCA': { icon: '💻', desc: 'Master of Computer Applications', duration: '2 Years', level: 'PG' },
-  'MA': { icon: '📖', desc: 'Master of Arts', duration: '2 Years', level: 'PG' },
+  'M.A': { icon: '📖', desc: 'Master of Arts', duration: '2 Years', level: 'PG' },
   'M.Com': { icon: '📊', desc: 'Master of Commerce', duration: '2 Years', level: 'PG' },
-  'MSc': { icon: '🔬', desc: 'Master of Science', duration: '2 Years', level: 'PG' },
+  'M.Sc': { icon: '🔬', desc: 'Master of Science', duration: '2 Years', level: 'PG' },
   'BBA': { icon: '🎓', desc: 'Bachelor of Business Administration', duration: '3 Years', level: 'UG' },
   'BCA': { icon: '🖥️', desc: 'Bachelor of Computer Applications', duration: '3 Years', level: 'UG' },
-  'BA': { icon: '📚', desc: 'Bachelor of Arts', duration: '3 Years', level: 'UG' },
+  'B.A': { icon: '📚', desc: 'Bachelor of Arts', duration: '3 Years', level: 'UG' },
   'B.Com': { icon: '💰', desc: 'Bachelor of Commerce', duration: '3 Years', level: 'UG' },
-  'BSc': { icon: '⚗️', desc: 'Bachelor of Science', duration: '3 Years', level: 'UG' },
+  'B.Sc': { icon: '⚗️', desc: 'Bachelor of Science', duration: '3 Years', level: 'UG' },
 }
 
 // Compat helpers
