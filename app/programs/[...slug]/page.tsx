@@ -285,7 +285,7 @@ export default async function CatchAllProgramPage(
                     <h2 className="text-xl font-bold text-navy mb-4">About Online {program} in {activeSpec}</h2>
                     <div className="flex flex-col gap-4 text-[15px] text-ink-2 leading-relaxed">
                       <p>
-                        {uniName.replace(/\s+online\s*$/i, '')} and other UGC DEB approved universities offer an Online {program} in {activeSpec} as a{program === 'MCA' || program === 'MSc' ? ' 2-year' : program === 'MBA' || program === 'M.Com' || program === 'MA' ? ' 2-year' : ' 3-year'} postgraduate program delivered entirely online. The program is UGC DEB approved and designed for working professionals and fresh graduates.
+                        {uniName.replace(/\s+online\s*$/i, '')} and other UGC DEB approved universities offer an Online {program} in {activeSpec} as a{program === 'MCA' || program === 'M.Sc' ? ' 2-year' : program === 'MBA' || program === 'M.Com' || program === 'M.A' ? ' 2-year' : ' 3-year'} postgraduate program delivered entirely online. The program is UGC DEB approved and designed for working professionals and fresh graduates.
                       </p>
                       {sc.overview && <p>{sc.overview}</p>}
                       <p>Online degrees from UGC DEB approved universities are accepted by government and private sector employers across India. The degree holds the same value as a regular on-campus degree as per UGC regulations.</p>
