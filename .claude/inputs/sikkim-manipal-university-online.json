@@ -1,0 +1,56 @@
+{
+  "university_slug": "sikkim-manipal-university-online",
+  "university_name": "Sikkim Manipal University",
+  "university_short_name": "SMU",
+
+  "programme": "Online MBA",
+  "programme_full_name": "Online MBA with Dual Specialization",
+
+  "target_keyword": "SMU Online MBA review",
+  "secondary_keywords": [
+    "sikkim manipal online mba",
+    "smu online mba fees 2026",
+    "smu mba dual specialization",
+    "manipal group online mba"
+  ],
+
+  "official_portal_url": "https://www.onlinemanipal.com/online-mba-degree-dual-specialization-smu",
+  "current_blog_url": "https://edifyedu.in/blog/smu-online-mba-review",
+
+  "fees_override": {
+    "sticker_total": 120000,
+    "effective_total": 108000,
+    "sticker_per_sem": 30000,
+    "effective_per_sem": 27000,
+    "emi_per_month": 4500,
+    "application_fee": 500,
+    "scholarship_categories": [
+      "Northeast region learners",
+      "Defense personnel",
+      "Differently-abled applicants",
+      "SMU alumni"
+    ]
+  },
+
+  "category": "Online MBA Programs",
+  "target_word_count": 2050,
+  "published_date": "2026-04-17",
+
+  "unique_angles_to_prioritise": [
+    "dual-spec career combinations mapped to job roles",
+    "ABC credit portability under NEP 2020",
+    "bundled foundation courses worth INR 50K",
+    "scholarship category specifics",
+    "who should NOT apply reverse framing"
+  ],
+
+  "internal_links_to_include": [
+    "/compare",
+    "/contact",
+    "/blog/galgotias-online-mba-review",
+    "/blog/uu-doon-online-mba-review",
+    "/blog/vignan-online-mba-review"
+  ],
+
+  "skip_sections": []
+}

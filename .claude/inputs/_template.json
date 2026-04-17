@@ -1,0 +1,55 @@
+{
+  "$schema": "https://edifyedu.in/schemas/university-review-input.v1.json",
+  "_comment": "Copy this file to .claude/inputs/{slug}.json and fill in every field. Do not leave placeholders.",
+
+  "university_slug": "REQUIRED — kebab-case, matches /universities/{slug} route, e.g. 'sikkim-manipal-university-online'",
+  "university_name": "REQUIRED — display name, e.g. 'Sikkim Manipal University'",
+  "university_short_name": "OPTIONAL — abbreviation used in title, e.g. 'SMU'",
+
+  "programme": "REQUIRED — e.g. 'Online MBA', 'Distance MBA', 'Online BCA'",
+  "programme_full_name": "REQUIRED — e.g. 'Online MBA with Dual Specialization'",
+
+  "target_keyword": "REQUIRED — single phrase, e.g. 'SMU online MBA review'",
+  "secondary_keywords": [
+    "REQUIRED — 3-5 related phrases",
+    "e.g. 'sikkim manipal online mba'",
+    "e.g. 'smu online mba fees 2026'"
+  ],
+
+  "official_portal_url": "REQUIRED — the authoritative programme page on the university's or Online Manipal's site",
+  "current_blog_url": "OPTIONAL — if rewriting an existing EdifyEdu blog, paste the live URL",
+
+  "fees_override": {
+    "_comment": "OPTIONAL — if you have verified fees that differ from the portal, put them here. The command will cross-check.",
+    "sticker_total": 120000,
+    "effective_total": 108000,
+    "sticker_per_sem": 30000,
+    "effective_per_sem": 27000,
+    "emi_per_month": 4500,
+    "application_fee": 500,
+    "scholarship_categories": ["Northeast region", "Defense personnel", "Differently-abled", "SMU alumni"]
+  },
+
+  "category": "REQUIRED — one of: 'Online MBA Programs', 'Online MCA Programs', 'Online BBA Programs', 'Online BCA Programs', 'Distance Education', 'University Reviews'",
+  "target_word_count": 2000,
+  "published_date": "YYYY-MM-DD",
+
+  "unique_angles_to_prioritise": [
+    "OPTIONAL — if you have specific angles in mind, list them here. Otherwise the command picks from the menu.",
+    "e.g. 'dual-spec career combinations'",
+    "e.g. 'ABC credit portability under NEP 2020'"
+  ],
+
+  "internal_links_to_include": [
+    "OPTIONAL — if you want specific Edify pages linked, list them here. Otherwise the command picks from the allowed list.",
+    "e.g. '/compare'",
+    "e.g. '/contact'",
+    "e.g. '/blog/galgotias-online-mba-review'"
+  ],
+
+  "skip_sections": [
+    "OPTIONAL — if a section doesn't apply to this programme, list section names here",
+    "e.g. 'campus-immersion'",
+    "e.g. 'foundation-courses'"
+  ]
+}

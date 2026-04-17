@@ -92,7 +92,32 @@
       "Bash(read key:*)",
       "Bash(echo \"Exit: $?\")",
       "Read(//c/Users/91706/AppData/Local/Temp/**)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(sed -n '4595,4610p' lib/data.ts)",
+      "Bash(sed -n '5155,5170p' lib/data.ts)",
+      "Bash(sed -n '6803,6818p' lib/data.ts)",
+      "Bash(sed -n '7808,7822p' lib/data.ts)",
+      "Bash(sed -n '3255,3262p' lib/data.ts)",
+      "Bash(sed -n '7825,7832p' lib/data.ts)",
+      "Bash(unzip -o \"blog_tables_svg \\(1\\).zip\" -d blog_tables_svg_extracted)",
+      "Bash(npm install:*)",
+      "Bash(awk 'NR>=9713 && NR<=9830' lib/blog.ts)",
+      "Bash(git:*)",
+      "Bash(PORT=3002 npx next dev --port 3002)",
+      "Bash(curl -s http://localhost:3002/programs/mba/digital-marketing -o /dev/null -w \"%{http_code}\")",
+      "Bash(node_modules/.bin/tsc --noEmit)",
+      "Bash(curl -s \"https://collegevidya.com/coupons/online-mba/\")",
+      "Bash(echo \"EXIT:$?\")",
+      "Read(//c//**)",
+      "Bash(mkdir -p /tmp/diffs)",
+      "Bash(awk 'NR>=82 && NR<=90')",
+      "Bash(sed -n '97,123p' \"C:/Users/91706/Downloads/galgotias-online-mba-review.html\")",
+      "Bash(sed -n '229,255p' \"C:/Users/91706/Downloads/galgotias-online-mba-review.html\")",
+      "Bash(sed -n '130,153p' \"C:/Users/91706/Downloads/arka-jain-online-mba-review.html\")",
+      "Bash(sed -n '227,267p' \"C:/Users/91706/Downloads/arka-jain-online-mba-review.html\")",
+      "Bash(sed:*)",
+      "Bash(sort -t: -k2 -n)",
+      "Bash(unzip:*)"
     ]
   }
 }
