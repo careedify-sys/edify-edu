@@ -18,7 +18,7 @@ export interface ProgramData {
 // Programs data by university
 export const PROGRAMS_DATA: Record<string, Record<string, ProgramData>> = {
   'aligarh-muslim-university': {
-    'B.A': {
+    'BA': {
       specs: ['nan', 'nan', 'nan'],
       syllabus: {
         sem1: ['History of India (Ancient Period)', 'Ancient World Civilizations', 'English Language I', 'Ethics and Culture/Theology', 'Urdu'],
@@ -45,7 +45,7 @@ export const PROGRAMS_DATA: Record<string, Record<string, ProgramData>> = {
   },
   'andhra-university': {
     
-    'M.A': {
+    'MA': {
       specs: ['Sociology'],
       syllabus: {
         sem1: ['Foundations of Sociology', 'Sociological Theories-I'],
@@ -82,7 +82,7 @@ export const PROGRAMS_DATA: Record<string, Record<string, ProgramData>> = {
         sem6: ['Cloud Computing', 'Network Security', 'Web Technologies (Theory/Lab)', 'Business Statistics', 'Basics of Python (Theory/Lab)'],
       },
     },
-    'M.A': {
+    'MA': {
       specs: ['Public Administration', 'Public Policy', 'Governance'],
       syllabus: {
         sem1: ['State and its Elements', 'Introduction to the Public Administration', 'Comparative and Development Administration', 'Public Policy', 'Engaged Policy and Governance Elective Group I'],
@@ -131,7 +131,7 @@ export const PROGRAMS_DATA: Record<string, Record<string, ProgramData>> = {
     },
   },
   'central-university-of-himachal': {
-    'M.A': {
+    'MA': {
       specs: ['nan', 'nan'],
       syllabus: {
         sem1: ['Political and Economic History of India up to 8th ', 'Political and Economic History of India 8th c. CE ', 'Society', 'Culture and Dharma in India up to Early Medieval P', 'Outline of Historical Tourism'],
@@ -210,7 +210,7 @@ export const PROGRAMS_DATA: Record<string, Record<string, ProgramData>> = {
         sem6: ['Project Work', 'Goods and Services Tax (GST)', 'Business Ethics', 'specialized elective based on track.'],
       },
     },
-    'M.A': {
+    'MA': {
       specs: ['nan', 'nan'],
       syllabus: {
         sem1: ['ઐતિહાસિક સંશોધન પદ્ધતિઓ (Historical'],
@@ -230,7 +230,7 @@ export const PROGRAMS_DATA: Record<string, Record<string, ProgramData>> = {
         sem4: ['Not Mentioned'],
       },
     },
-    'B.A': {
+    'BA': {
       specs: ['nan'],
       syllabus: {
         sem1: ['Prose', 'Poetry', 'Indian Writing in English', 'Reading and Writing Skills.'],
@@ -272,7 +272,7 @@ export const PROGRAMS_DATA: Record<string, Record<string, ProgramData>> = {
         sem4: ['Corporate Governance and Business Ethics', 'Dissertation', 'Discipline Specific Elective (e.g.', 'Security Analysis', 'Portfolio Management)'],
       },
     },
-    'M.A': {
+    'MA': {
       specs: ['in Finance', 'Marketing', 'or HRM 2. MA Hindi'],
       syllabus: {
         sem1: ['Poetry I (Renaissance to Romantic)', 'Drama I (Shakespeare to Sheridan)', 'Prose', 'History of English Literature'],
@@ -430,7 +430,7 @@ export const PROGRAMS_DATA: Record<string, Record<string, ProgramData>> = {
         sem6: ['AI', 'Machine Learning', 'Major Project'],
       },
     },
-    'M.Sc': {
+    'MSc': {
       specs: ['Mathematics'],
       syllabus: {
         sem1: ['Advanced Abstract Algebra', 'Topology', 'Integral Transforms', 'Special Functions', 'MATLAB'],
@@ -448,7 +448,7 @@ export const PROGRAMS_DATA: Record<string, Record<string, ProgramData>> = {
         sem4: ['Strategic Management', 'International Business', 'Corporate Governance & Business Ethics', 'Dissertation'],
       },
     },
-    'M.A': {
+    'MA': {
       specs: ['English Literature', 'Journalism & Mass Communication', 'Education', 'Political Science'],
       syllabus: {
         sem1: ['Western Political Thought', 'Indian Government & Politics', 'Political Theory'],
@@ -459,7 +459,7 @@ export const PROGRAMS_DATA: Record<string, Record<string, ProgramData>> = {
     },
   },
   'manonmaniam-sundaranar-univers': {
-    'M.A': {
+    'MA': {
       specs: ['nan', 'nan'],
       syllabus: {
         sem1: ['Ancient Indian History (Upto 1206 AD)', 'Medieval Indian History (1206-1707 AD)', 'Modern Indian History (1707-1857 AD)', 'History of South India'],
@@ -505,7 +505,7 @@ export const PROGRAMS_DATA: Record<string, Record<string, ProgramData>> = {
     },
   },
   'sathyabama-institute-of-scienc': {
-    'M.Sc': {
+    'MSc': {
       specs: ['electives in Cultural and Comparative st'],
       syllabus: {
         sem1: ['Financial Accounting-I', 'Business Economics', 'Business Management', 'English-I', 'Tamil-I/Hindi-I.'],

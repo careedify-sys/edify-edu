@@ -4,8 +4,8 @@
 
 export type Program =
   | 'MBA' | 'MCA' | 'BBA' | 'BCA'
-  | 'B.Com' | 'M.Com' | 'B.A' | 'M.A'
-  | 'M.Sc' | 'B.Sc' | 'MBA (WX)'
+  | 'B.Com' | 'M.Com' | 'BA' | 'MA'
+  | 'MSc' | 'BSc' | 'MBA (WX)'
 
 export const PROGRAM_META: Record<string, { label: string; desc: string; icon?: string; duration?: string; level?: string }> = {
   'MBA':      { label: 'Online MBA',    desc: 'Master of Business Administration', icon: '💼' },
@@ -14,17 +14,17 @@ export const PROGRAM_META: Record<string, { label: string; desc: string; icon?: 
   'BCA':      { label: 'Online BCA',    desc: 'Bachelor of Computer Applications', icon: '🖥️' },
   'B.Com':    { label: 'Online B.Com',  desc: 'Bachelor of Commerce',              icon: '📒' },
   'M.Com':    { label: 'Online M.Com',  desc: 'Master of Commerce',                icon: '📈' },
-  'B.A':      { label: 'Online BA',     desc: 'Bachelor of Arts',                  icon: '🎓' },
-  'M.A':      { label: 'Online MA',     desc: 'Master of Arts',                    icon: '📚' },
-  'M.Sc':     { label: 'Online M.Sc',   desc: 'Master of Science',                 icon: '🔬' },
-  'B.Sc':     { label: 'Online B.Sc',   desc: 'Bachelor of Science',               icon: '⚗️' },
+  'BA':       { label: 'Online BA',     desc: 'Bachelor of Arts',                  icon: '🎓' },
+  'MA':       { label: 'Online MA',     desc: 'Master of Arts',                    icon: '📚' },
+  'MSc':      { label: 'Online M.Sc',   desc: 'Master of Science',                 icon: '🔬' },
+  'BSc':      { label: 'Online B.Sc',   desc: 'Bachelor of Science',               icon: '⚗️' },
   'MBA (WX)': { label: 'Executive MBA', desc: 'Executive MBA (Work Integrated)',    icon: '🏛️' },
 }
 
 export const PROG_SLUG_MAP: Record<string, Program> = {
   'mba':    'MBA',   'mca':  'MCA',   'bba':   'BBA',   'bca': 'BCA',
-  'bcom':   'B.Com', 'mcom': 'M.Com', 'ba':    'B.A',    'ma':  'M.A',
-  'msc':    'M.Sc',   'bsc':  'B.Sc',   'mba-wx':'MBA (WX)',
+  'bcom':   'B.Com', 'mcom': 'M.Com', 'ba':    'BA',    'ma':  'MA',
+  'msc':    'MSc',   'bsc':  'BSc',   'mba-wx':'MBA (WX)',
 }
 
 /** Format a fee number for display. Pure function — zero dependencies. */

@@ -9,8 +9,8 @@ import { getTitleName } from '@/lib/seo-title'
 
 // Program slug to Program type mapping
 const PM: Record<string, Program> = {
-  'mba': 'MBA', 'mca': 'MCA', 'bba': 'BBA', 'bca': 'BCA', 'ba': 'B.A',
-  'bcom': 'B.Com', 'mcom': 'M.Com', 'ma': 'M.A', 'msc': 'M.Sc', 'bsc': 'B.Sc', 'mba-wx': 'MBA (WX)',
+  'mba': 'MBA', 'mca': 'MCA', 'bba': 'BBA', 'bca': 'BCA', 'ba': 'BA',
+  'bcom': 'B.Com', 'mcom': 'M.Com', 'ma': 'MA', 'msc': 'MSc', 'bsc': 'BSc', 'mba-wx': 'MBA (WX)',
 }
 
 // ── Static Params (SSG) — pre-render top university+program combinations only ──

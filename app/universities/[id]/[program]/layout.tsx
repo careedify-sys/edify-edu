@@ -69,8 +69,8 @@ const SEO_NAME: Record<string, string> = {
 }
 
 const PM: Record<string, string> = {
-  'mba': 'MBA', 'mca': 'MCA', 'bba': 'BBA', 'bca': 'BCA', 'ba': 'B.A',
-  'bcom': 'B.Com', 'mcom': 'M.Com', 'ma': 'M.A', 'msc': 'M.Sc', 'bsc': 'B.Sc',
+  'mba': 'MBA', 'mca': 'MCA', 'bba': 'BBA', 'bca': 'BCA', 'ba': 'BA',
+  'bcom': 'B.Com', 'mcom': 'M.Com', 'ma': 'MA', 'msc': 'MSc', 'bsc': 'BSc',
 }
 
 const PROG_TITLE: Record<string, string> = {

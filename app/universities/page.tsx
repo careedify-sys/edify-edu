@@ -7,7 +7,7 @@ import { UNIS_SLIM, formatFeeSlim as formatFee } from '@/lib/data-slim'
 import UniversityCard from '@/components/UniversityCard'
 import type { Program } from '@/lib/data'
 
-const PROGRAMS: Program[] = ['MBA', 'MCA', 'BBA', 'BCA', 'B.A', 'B.Com', 'M.A', 'M.Com', 'M.Sc']
+const PROGRAMS: Program[] = ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'B.Com', 'MA', 'M.Com', 'MSc']
 const REGIONS = ['North', 'West', 'South', 'East', 'Central']
 const NAAC_GRADES = ['A++', 'A+', 'A', 'B++']
 

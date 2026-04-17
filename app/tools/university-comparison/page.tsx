@@ -5,7 +5,7 @@ import { ChevronRight, Search, Filter, SortAsc, CheckCircle, XCircle } from 'luc
 import { UNIS_SLIM } from '@/lib/data-slim'
 import type { Program } from '@/lib/data-client'
 
-const PROGRAMS: Program[] = ['MBA', 'MCA', 'BBA', 'BCA', 'M.A', 'M.Com', 'B.A', 'B.Com']
+const PROGRAMS: Program[] = ['MBA', 'MCA', 'BBA', 'BCA', 'MA', 'M.Com', 'BA', 'B.Com']
 
 export default function UniversityComparisonPage() {
   const [search, setSearch] = useState('')

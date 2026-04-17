@@ -64,7 +64,7 @@ export interface ValidationResult {
   summary:  string
 }
 
-const VALID_PROGRAMS   = ['MBA','MCA','BBA','BCA','B.A','B.Com','M.Com','M.A','M.Sc','B.Sc','MBA (WX)']
+const VALID_PROGRAMS   = ['MBA','MCA','BBA','BCA','BA','B.Com','M.Com','MA','MSc','BSc','MBA (WX)']
 const VALID_REGIONS    = ['North','South','West','East','Central']
 const VALID_NAAC       = ['A++','A+','A','B++','B+','B']
 const VALID_EXAM_MODES = ['Online','Assignment-based','Exam Centre','Hybrid']
