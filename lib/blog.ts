@@ -1089,7 +1089,7 @@ export const BLOG_POSTS: BlogPost[] = [
     status: 'published',
     faqs: [
       { q: 'Which Online Manipal university is best for MBA?', a: 'Depends on your goal. MAHE (Rs 2.92L) is NIRF #3 with NAAC A++ and IoE status, best for working professionals wanting the strongest brand. MUJ (Rs 1.75L) offers 13 specialisations and a QS-ranked degree, best for fresh graduates or early-career professionals. SMU (Rs 1.10L) is most affordable with dual specialisation built in, best for budget-conscious learners.' },
-      { q: 'What is the total fee for Online Manipal MBA?', a: 'MAHE: Rs 2,92,000 total (Rs 73,000 per semester). MUJ: Rs 1,75,000 total (Rs 43,750 per semester). SMU: Rs 1,10,000 total (Rs 27,500 per semester). All three offer no-cost EMI and scholarships of up to 20%.' },
+      { q: 'What is the total fee for Online Manipal MBA?', a: 'MAHE: Rs 2,92,000 total (Rs 73,000 per semester). MUJ: Rs 1,75,000 total (Rs 43,750 per semester). SMU: Rs 1,20,000 total (Rs 27,500 per semester). All three offer no-cost EMI and scholarships of up to 20%.' },
       { q: 'Is Online Manipal MBA valid for government jobs?', a: 'Yes. All three programs are UGC-DEB entitled and AICTE approved. The degrees are equivalent to regular on-campus degrees and valid for government jobs, PSU recruitment, corporate employment, and higher education including PhD.' },
       { q: 'Does MAHE require work experience for online MBA?', a: 'Yes. MAHE\'s online MBA requires minimum 1 year of work experience. Fresh graduates can still apply but must submit an SOP video. MUJ and SMU have no work experience requirement.' },
       { q: 'What specialisations does MUJ online MBA offer?', a: '13 specialisations: Finance, Marketing, HRM, Analytics and Data Science, Digital Marketing, BFSI, IT and FinTech, Operations Management, International Business, Information Systems Management, Project Management, Supply Chain Management, and Retail Management.' },
@@ -1290,7 +1290,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <div class="persona-card yes"><div class="p-icon">&#128138;</div><div class="p-type">Healthcare or Pharma Professional</div><div class="p-desc">MAHE is the only campus offering Healthcare and Pharmaceutical Management specialisations. If you work in these sectors, the brand and specialisation combination is hard to match.</div></div>
       <div class="persona-card yes"><div class="p-icon">&#127963;</div><div class="p-type">Seeking Premium Brand Recognition</div><div class="p-desc">NIRF #3, NAAC A++, Institution of Eminence. If your employer specifically values MAHE's name, the Rs 2,92,000 fee is the price of that premium.</div></div>
       <div class="persona-card yes"><div class="p-icon">&#128200;</div><div class="p-type">Working Professional with Experience</div><div class="p-desc">MAHE requires work experience or SOP video. The program is genuinely built around professionals who already have industry context to apply to coursework.</div></div>
-      <div class="persona-card no"><div class="p-icon">&#9888;</div><div class="p-type">Fresh Graduate on a Budget</div><div class="p-desc">At Rs 2,92,000, MAHE is the priciest option. MUJ at Rs 1,75,000 or SMU at Rs 1,10,000 offer similar UGC recognition at lower cost if budget is a constraint.</div></div>
+      <div class="persona-card no"><div class="p-icon">&#9888;</div><div class="p-type">Fresh Graduate on a Budget</div><div class="p-desc">At Rs 2,92,000, MAHE is the priciest option. MUJ at Rs 1,75,000 or SMU at Rs 1,20,000 offer similar UGC recognition at lower cost if budget is a constraint.</div></div>
     </div>
 
     <div class="internal-links">
@@ -1338,7 +1338,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaTitle: '',
     ctaDesc: '',
     content: `
-<p>If you search "online MBA India" on any forum, MUJ comes up most often in the comments. It was one of the first universities in India to offer an online MBA with UGC approval, starting its first batch in April 2021. The Rs 1,75,000 fee sits in a middle ground between MAHE (Rs 2,92,000) and SMU (Rs 1,10,000), but what really distinguishes it is the range of 13 specialisations, including tracks like IT and FinTech, BFSI, and International Business that the other two campuses do not offer.</p>
+<p>If you search "online MBA India" on any forum, MUJ comes up most often in the comments. It was one of the first universities in India to offer an online MBA with UGC approval, starting its first batch in April 2021. The Rs 1,75,000 fee sits in a middle ground between MAHE (Rs 2,92,000) and SMU (Rs 1,20,000), but what really distinguishes it is the range of 13 specialisations, including tracks like IT and FinTech, BFSI, and International Business that the other two campuses do not offer.</p>
     <p>All program details are sourced from the <a href="https://www.onlinemanipal.com/online-mba-manipal-university-jaipur" target="_blank">official MUJ MBA page on Online Manipal</a>. Student feedback is from Quora, Shiksha, and College Vidya.</p>
 
     <h2>About MUJ</h2>
@@ -1464,11 +1464,11 @@ export const BLOG_POSTS: BlogPost[] = [
     relatedUniversities: [],
     status: 'published',
     faqs: [
-      { q: 'What is the fee for SMU online MBA?', a: 'Rs 1,10,000 total for the full two-year program, paid as Rs 27,500 per semester. No-cost EMI from Rs 4,583 per month. 10% discount on full upfront payment. 5% discount on annual payment. Scholarships for defence, differently-abled, alumni, and Sikkim and Northeast India students.' },
+      { q: 'What is the fee for SMU online MBA?', a: 'Rs 1,20,000 total for the full two-year program, paid as Rs 27,500 per semester. No-cost EMI from Rs 4,583 per month. 10% discount on full upfront payment. 5% discount on annual payment. Scholarships for defence, differently-abled, alumni, and Sikkim and Northeast India students.' },
       { q: 'How does dual specialisation work at SMU?', a: 'Marketing is compulsory as the first specialisation. Students choose one second specialisation from Finance, Human Resource Management, Systems, Operations and Supply Chain Management, or Healthcare. Both are completed within the standard two-year program at no extra cost.' },
       { q: 'Is SMU online MBA valid for government jobs?', a: 'Yes. SMU holds NAAC A+ accreditation with UGC-DEB entitlement and AICTE compliance. The online MBA is fully equivalent to an on-campus degree and valid for government jobs, PSU recruitment, corporate employment, and higher education.' },
       { q: 'What is the assessment structure at SMU?', a: '30 percent continuous assessment through assignments and 70 percent term-end examination. Both parts must individually clear 40 percent to pass. Passing overall but failing either component individually is still a fail for that course.' },
-      { q: 'Why choose SMU over MAHE or MUJ?', a: 'SMU is the most affordable at Rs 1,10,000 total with dual specialisation built in at no extra cost. If budget is the primary constraint and the Marketing compulsory structure fits your goals, SMU delivers the Manipal brand, NAAC A+ accreditation, and a dual specialisation degree at the lowest fee.' },
+      { q: 'Why choose SMU over MAHE or MUJ?', a: 'SMU is the most affordable at Rs 1,20,000 total with dual specialisation built in at no extra cost. If budget is the primary constraint and the Marketing compulsory structure fits your goals, SMU delivers the Manipal brand, NAAC A+ accreditation, and a dual specialisation degree at the lowest fee.' },
       { q: 'Is Marketing compulsory at SMU online MBA?', a: 'Yes. Marketing is the compulsory first specialisation for all SMU MBA students. For the second specialisation, students choose from Finance, Human Resource Management, Systems, Operations and Supply Chain Management, or Healthcare.' }
     ],
     ctaTitle: '',
@@ -9341,6 +9341,11 @@ export const BLOG_POSTS: BlogPost[] = [
   <strong>No Registration Fee:</strong> Unlike many online MBA programmes, Amity does not charge a separate registration or application fee. The price above is what you pay — no hidden charges on top.
 </div>
 
+<div style="margin:24px 0;text-align:center">
+  <img src="/blog/amity-mba-payment-options-2026.svg" alt="Amity Online MBA payment options comparison 2026 — one-time ₹2,07,000, EMI ₹8,906/mo, annual ₹1,06,880/yr" loading="lazy" style="width:100%;max-width:660px;border-radius:10px;border:1px solid #e5e7eb" />
+  <p style="font-size:12px;color:#9ca3af;margin-top:6px">All four payment options compared — one-time payment at ₹2,07,000 is the best value route</p>
+</div>
+
 <h2 id="distance-vs-online">Amity Distance MBA vs Online MBA: What's Different</h2>
 <table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">
   <thead><tr style="background:#1a1a2e;color:#fff"><th style="padding:10px 14px;text-align:left">Factor</th><th style="padding:10px 14px;text-align:left">Amity Online MBA</th><th style="padding:10px 14px;text-align:left">Amity Distance MBA</th></tr></thead>
@@ -9398,11 +9403,15 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>The ₹26.30 LPA highest package gets quoted everywhere — plan around the median of ₹6.50 LPA for ROI calculations. For <strong>Amity University Delhi MBA fees</strong> — the main management campus is in Noida; online programme fees are the same regardless of campus.</p>
 
 <h2 id="comparison">How Amity Compares: Fee vs Brand vs Accreditation</h2>
+<div style="margin:20px 0;text-align:center">
+  <img src="/blog/amity-mba-fee-comparison-2026.svg" alt="Online MBA fee comparison 2026 — Amity vs NMIMS, Symbiosis, SMU, LPU, MAHE" loading="lazy" style="width:100%;max-width:660px;border-radius:10px;border:1px solid #e5e7eb" />
+  <p style="font-size:12px;color:#9ca3af;margin-top:6px">Amity sits in the upper-mid range — more than SMU or LPU, less than Symbiosis — with international accreditations others lack</p>
+</div>
 <table style="width:100%;border-collapse:collapse;font-size:13px;margin:16px 0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">
   <thead><tr style="background:#1a1a2e;color:#fff"><th style="padding:10px 12px;text-align:left">University</th><th style="padding:10px 12px;text-align:left">Total Fee</th><th style="padding:10px 12px;text-align:left">NAAC</th><th style="padding:10px 12px;text-align:left">NIRF</th><th style="padding:10px 12px;text-align:left">Key Differentiator</th></tr></thead>
   <tbody>
     <tr><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">Galgotias Online</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">₹76,200</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">A+</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">—</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">Lowest fee, UGC-DEB valid</td></tr>
-    <tr style="background:#f9fafb"><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">SMU Manipal</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">₹1,10,000</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">A+</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">—</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">Mandatory dual specialization</td></tr>
+    <tr style="background:#f9fafb"><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">SMU Manipal</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">₹1,20,000</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">A+</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">—</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">Mandatory dual specialization</td></tr>
     <tr><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">Chandigarh Univ</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">₹1,65,000</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">A+</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">#36</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">Harvard+PwC+PMI certs</td></tr>
     <tr style="background:#f9fafb"><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">Amrita Vishwa</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">₹1,70,000</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">A++</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">#28</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">ESG + ACCA tracks, NAAC A++</td></tr>
     <tr><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">NMIMS / JAIN</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">₹1,96,000</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">A+/A++</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">#52/#62</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">BFSI brand (NMIMS) / NAAC A++ (JAIN)</td></tr>
@@ -11283,8 +11292,8 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'smu-online-mba-review',
     title: 'Sikkim Manipal University Online MBA 2026: Fees, Dual Specialization, Syllabus and Honest Review',
-    seoTitle: 'SMU Online MBA Fees 2026 — Rs. 1,10,000 Total | Dual Specialization Review',
-    metaDescription: 'SMU Online MBA at Rs. 1,10,000 total. NAAC A+, Manipal Group. Mandatory dual specialization, full syllabus, fee breakdown and honest review for 2026.',
+    seoTitle: 'SMU Online MBA Fees 2026 — Rs. 1,20,000 Total | Dual Specialization Review',
+    metaDescription: 'SMU Online MBA at Rs. 1,20,000 total. NAAC A+, Manipal Group. Mandatory dual specialization, full syllabus, fee breakdown and honest review for 2026.',
     category: 'Online MBA Programs',
     tags: ['smu online mba', 'sikkim manipal university online mba', 'smu online mba fees', 'manipal online mba', 'dual specialization mba india', 'online mba manipal group'],
     publishedAt: '2026-04-12',
@@ -11298,10 +11307,10 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'What is the total fee for SMU Online MBA?', a: 'The total fee is Rs. 1,10,000 for the full two-year program, paid as Rs. 27,500 per semester. No entrance exam is required. Verify current fees at onlinemanipal.com before applying.' },
       { q: 'What is the dual specialization in SMU Online MBA?', a: 'SMU mandates that all students choose a primary and a secondary specialization. In semesters 3 and 4, you study core subjects from your primary track plus 2 subjects from a secondary specialization. Both appear on your degree transcript.' },
       { q: 'Is SMU Online MBA UGC approved?', a: 'Yes. Sikkim Manipal University holds NAAC A+ accreditation and UGC-DEB entitlement for online degrees. The degree is legally equivalent to a regular campus MBA.' },
-      { q: 'How does SMU Online MBA compare to MAHE?', a: 'SMU costs Rs. 1,10,000 vs MAHE at Rs. 2,92,000. MAHE carries a stronger brand (NAAC A++, Rank #3 nationally). SMU offers the same Manipal alumni network access at one-third the cost, with a mandatory dual specialization MAHE does not have.' },
+      { q: 'How does SMU Online MBA compare to MAHE?', a: 'SMU costs Rs. 1,20,000 vs MAHE at Rs. 2,92,000. MAHE carries a stronger brand (NAAC A++, Rank #3 nationally). SMU offers the same Manipal alumni network access at one-third the cost, with a mandatory dual specialization MAHE does not have.' },
       { q: 'Who should apply for SMU Online MBA?', a: 'SMU is best suited for mid-career professionals who want Manipal brand association at an affordable price and benefit from a dual-domain curriculum. Healthcare professionals are particularly well-served by the Healthcare specialization at Rs. 1,10,000 total.' }
     ],
-    content: `<p>Sikkim Manipal University occupies an interesting position in the online MBA market. It is part of the Manipal Education group, which also offers programs under MAHE (Rs. 2.92 lakhs) and MUJ (Rs. 1.75 lakhs). But SMU sits at Rs. 1,10,000 total and comes with something most programs at this price point do not: a mandatory dual specialization requirement.</p>
+    content: `<p>Sikkim Manipal University occupies an interesting position in the online MBA market. It is part of the Manipal Education group, which also offers programs under MAHE (Rs. 2.92 lakhs) and MUJ (Rs. 1.75 lakhs). But SMU sits at Rs. 1,20,000 total and comes with something most programs at this price point do not: a mandatory dual specialization requirement.</p>
 
 <p>That one structural difference changes who this program is for. If you pick Finance as your primary track, you are also required to study two subjects from a second specialization. You graduate with competency across two domains, not just one. For a mid-career professional trying to expand their profile, that is a meaningful curriculum design choice.</p>
 
@@ -11349,7 +11358,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <rect width="700" height="240" fill="#f8fafc" rx="12"/>
     <text x="350" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Manipal Group: Online MBA Fee Comparison</text>
     <rect x="60" y="50" width="185" height="40" fill="#f97316" rx="6"/>
-    <text x="152" y="75" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">SMU: Rs. 1,10,000</text>
+    <text x="152" y="75" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">SMU: Rs. 1,20,000</text>
     <text x="60" y="105" font-size="12" fill="#64748b">Sikkim Manipal University</text>
     <rect x="60" y="125" width="292" height="40" fill="#B8892A" rx="6"/>
     <text x="206" y="150" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">MUJ: Rs. 1,75,000</text>
