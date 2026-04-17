@@ -10,6 +10,7 @@ import { getSpecContent, getSpecFallback, getMasterSyllabus, getUniversitySyllab
 import ApprovalBadges from '@/components/ApprovalBadges'
 import type { University, Program } from '@/lib/data'
 import { IMPROVED_SPECS } from '@/lib/improved-specs'
+import { getUniversitySpecOverride, applySpecOverride } from '@/lib/spec-overrides'
 import EnquiryModal from '@/components/EnquiryModal'
 import SyllabusSection from '@/components/SyllabusSection'
 import LearningExperience from '@/components/LearningExperience'
@@ -47,7 +48,9 @@ export default function SpecializationPageClient({ university: u, program, speci
   const pd = u.programDetails[program]
   const progInfo = PROGRAM_DISPLAY[program] || { name: `Online ${program}`, level: 'Postgraduate', duration: '2 Years' }
   const specContentRaw = getSpecContent(specialization) || getSpecFallback(specialization, program)
-  const specContent = { ...(specContentRaw || {}), ...(IMPROVED_SPECS[specialization.toLowerCase()] || {}) }
+  const globalImproved = IMPROVED_SPECS[specialization.toLowerCase()] || {}
+  const uniOverride = getUniversitySpecOverride(u.id, program, specialization)
+  const specContent = applySpecOverride({ ...(specContentRaw || {}), ...globalImproved }, uniOverride)
   const syllabus = getMasterSyllabus(u.id, program) || getUniversitySyllabus(u.id, program)
   const programSlug = program.toLowerCase().replace(/\./g, '')
 
