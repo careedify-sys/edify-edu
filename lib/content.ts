@@ -1166,39 +1166,155 @@ Companies in 2026 are looking for **HR Analytics** and **Organizational Design**
 
 // ─── HELPER FUNCTIONS ─────────────────────────────────────────
 const SPEC_ALIASES: Record<string, string> = {
+  // Marketing
   'marketing management': 'marketing',
   'marketing & sales management': 'marketing',
   'sales & marketing': 'marketing',
+  'marketing & sales': 'marketing',
+  'advertising & brand management': 'marketing',
+
+  // Finance
   'finance management': 'finance',
   'financial management': 'finance',
   'finance & accounting management': 'finance',
+  'finance & accounting': 'finance',
   'banking & finance': 'finance',
+  'banking & financial services': 'finance',
+  'banking insurance & financial services': 'finance',
+  'global finance market': 'finance',
+  'bfsi banking financial services and insurance': 'finance',
+
+  // International Business
+  'international business management': 'international business',
+  'international trade & business': 'international business',
+  'international finance & accounting': 'international business',
+  'international finance and accounting': 'international business',
+  'international finance and accounting acca': 'international business',
+  'international finance acca': 'international business',
+
+  // Operations & Supply Chain
   'operations management': 'operations & supply chain',
   'operations & supply chain management': 'operations & supply chain',
   'logistics & supply chain management': 'operations & supply chain',
   'production & operations management': 'operations & supply chain',
   'supply chain': 'operations & supply chain',
+  'production & operations': 'operations & supply chain',
+  'operations and supply chain management': 'operations & supply chain',
+  'production and logistics management': 'operations & supply chain',
+
+  // Logistics & Supply Chain
+  'logistics & scm': 'logistics & supply chain',
+  'supply chain & logistics': 'logistics & supply chain',
+  'logistics and supply chain management': 'logistics & supply chain',
+  'shipping & logistics management': 'logistics & supply chain',
+  'logistics': 'logistics & supply chain',
+
+  // Data Science
   'data science & business analytics': 'data science',
   'data science and analytics': 'data science',
   'analytics and data science': 'data science',
   'data science & analytics': 'data science',
+  'data science & ai': 'data science',
+  'data science & artificial intelligence': 'data science',
+  'data science and artificial intelligence': 'data science',
+  'data science and machine learning': 'data science',
+  'big data analytics': 'data science',
+
+  // Business Analytics
   'business intelligence & analytics': 'business analytics',
+  'data analytics': 'business analytics',
+  'business analytics with ai': 'business analytics',
+  'business analytics pathway': 'business analytics',
+
+  // Artificial Intelligence
+  'artificial intelligence and machine learning': 'artificial intelligence',
+  'artificial intelligence & machine learning': 'artificial intelligence',
+  'artificial intelligence  machine learning': 'artificial intelligence',
+  'artificial intelligence & data science': 'artificial intelligence',
+  'artificial intelligence and data science': 'artificial intelligence',
+  'artificial intelligence & gen ai': 'artificial intelligence',
+  'ai & machine learning': 'artificial intelligence',
+  'machine learning & ai': 'artificial intelligence',
+  'ai & ml': 'artificial intelligence',
+
+  // Cybersecurity (SPEC_CONTENT key has no space)
+  'cyber security': 'cybersecurity',
+  'cybersecurity & forensic': 'cybersecurity',
+  'cyber security & cloud computing': 'cybersecurity',
+  'cyber security & cyber forensics': 'cybersecurity',
+  'cyber security and block chain': 'cybersecurity',
+  'cloud computing & cyber security': 'cybersecurity',
+  'cloud computing and cyber security': 'cybersecurity',
+
+  // Cloud Computing
+  'information technology': 'cloud computing',
+  'information technology it': 'cloud computing',
+  'information technology management': 'cloud computing',
+  'it management': 'cloud computing',
+  'it & systems management': 'cloud computing',
+  'it & systems': 'cloud computing',
+  'information systems': 'cloud computing',
+  'software engineering': 'cloud computing',
+  'software development': 'cloud computing',
+  'full stack development': 'cloud computing',
+  'full stack web development': 'cloud computing',
+
+  // Digital Marketing
   'digital marketing management': 'digital marketing',
   'digital marketing & e-commerce': 'digital marketing',
   'digital marketing & sales': 'digital marketing',
-  'international business management': 'international business',
-  'international trade & business': 'international business',
+
+  // Human Resource Management
   'human resources analytics': 'human resource management',
   'hr management': 'human resource management',
   'human resource management & finance': 'human resource management',
+  'human resources management': 'human resource management',
+  'hrm': 'human resource management',
+
+  // Healthcare Management
+  'hospital & healthcare management': 'healthcare management',
+  'hospital & health care management': 'healthcare management',
+  'healthcare & hospital administration': 'healthcare management',
+  'hospital administration & healthcare management': 'healthcare management',
+  'healthcare and hospital administration': 'healthcare management',
+  'hospital administration': 'healthcare management',
+  'healthcare': 'healthcare management',
+  'hospital and health system management': 'healthcare management',
+  'healthcare & hospital administration': 'healthcare management',
+  'hospital mgmt': 'healthcare management',
+
+  // Entrepreneurship
+  'entrepreneurship & leadership': 'entrepreneurship',
+  'entrepreneurship management': 'entrepreneurship',
+  'entrepreneurship & leadership management': 'entrepreneurship',
+  'digital entrepreneurship': 'entrepreneurship',
+  'entrepreneurship & innovation management': 'entrepreneurship',
+  'entrepreneurship & family business': 'entrepreneurship',
+  'family managed business': 'entrepreneurship',
+  'family business': 'entrepreneurship',
+
+  // General Management
+  'business administration': 'general management',
+  'retail management': 'general management',
+  'general management  finance': 'general management',
+  'general management  marketing': 'general management',
+  'general management  hr': 'general management',
+  'general management  operations': 'general management',
+  'general management  strategy': 'general management',
 }
 
 export function getSpecContent(spec: string): SpecContent | null {
   const key = spec.toLowerCase().replace(/[^a-z0-9 &]/g, '').trim()
-  return SPEC_CONTENT[key]
+  const result = SPEC_CONTENT[key]
     || SPEC_CONTENT[key.replace(/ & /g, ' ')]
     || SPEC_CONTENT[SPEC_ALIASES[key] || '']
     || null
+  if (!result && process.env.NODE_ENV === 'development') {
+    console.warn(
+      `[EdifyEdu] getSpecContent miss: spec="${spec}" key="${key}" — no match in SPEC_CONTENT or SPEC_ALIASES. Page will show generic fallback content. Add an alias or new SPEC_CONTENT entry to fix.`
+    )
+  }
+  return result
 }
 export function getProgramContent(program: string): ProgramContent | null {
   return PROGRAM_CONTENT[program] || null
