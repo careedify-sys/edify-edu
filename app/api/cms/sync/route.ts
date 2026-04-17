@@ -559,26 +559,39 @@ export async function POST(req: NextRequest) {
     // ── Step 3: Generate code files ────────────────────────────────────────
     addLog('Generating code files...')
 
-    // Fetch existing blog.ts from GitHub to preserve original publish dates
+    // Fetch existing blog.ts from GitHub to preserve original publish dates and manual posts.
+    // NOTE: Use raw.githubusercontent.com (not the Contents API) — the Contents API silently
+    // returns empty/errors for files larger than 1 MB, which caused blog.ts (1.35 MB) to be
+    // treated as blank, wiping all manually-written posts on every sync.
     const existingBlogTS = await (async () => {
       const token  = process.env.GITHUB_TOKEN
       const owner  = process.env.GITHUB_OWNER  || 'careedify-sys'
       const repo   = process.env.GITHUB_REPO   || 'edify-edu'
       const branch = process.env.GITHUB_BRANCH || 'main'
-      if (!token) return ''
       try {
+        // raw.githubusercontent.com serves the file directly — no 1 MB size limit
+        const headers: Record<string, string> = { 'Cache-Control': 'no-cache' }
+        if (token) headers['Authorization'] = `token ${token}`
         const res = await fetch(
-          `https://api.github.com/repos/${owner}/${repo}/contents/lib/blog.ts?ref=${branch}`,
-          { headers: { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json' } }
+          `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/lib/blog.ts`,
+          { headers, signal: AbortSignal.timeout(30000) }
         )
         if (!res.ok) return ''
-        const data = await res.json()
-        return Buffer.from((data.content as string).replace(/\n/g, ''), 'base64').toString('utf-8')
+        return await res.text()
       } catch { return '' }
     })()
     const existingDates = extractExistingDates(existingBlogTS)
-    if (Object.keys(existingDates).length > 0) {
-      addLog(`✓ Preserved publish dates for ${Object.keys(existingDates).length} existing post(s)`)
+    const existingPostCount = (existingBlogTS.match(/slug:\s*'/g) || []).length
+    if (existingPostCount > 0) {
+      addLog(`✓ Read existing blog.ts: ${existingPostCount} posts (for manual-post preservation + date retention)`)
+    } else if (existingBlogTS === '') {
+      // This used to silently wipe all manual posts. Now we warn loudly and abort.
+      addLog('⚠ WARNING: Could not fetch existing blog.ts from GitHub (empty response). Aborting sync to prevent wiping manual posts.')
+      return NextResponse.json({
+        ok: false,
+        error: 'Could not read existing blog.ts — aborting to prevent data loss. Check GITHUB_TOKEN permissions and repo access.',
+        log,
+      }, { status: 500 })
     }
 
     const filesToPush: { path: string; content: string }[] = []
