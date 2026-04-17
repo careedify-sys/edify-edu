@@ -8770,8 +8770,7 @@ export const UNIVERSITIES: University[] = [
       
     },
     color: '#0891B2',
-  }
-
+  },
   {
     id: 'ignou-online',
     logo: '/logos/university_logos/ignou-logo.svg',
