@@ -96,8 +96,8 @@ export const SAMPLE_DEGREES: Record<string, { mba?: string; mca?: string; bba?: 
     default: '/logos/sample-degrees/dr-dy-patil-vidyapeeth-sample-degree-mca.svg',
   },
   'dr-mgr-educational-research-institute-online': {
-    mba: '/logos/sample-degrees/mba_degree_new2025.svg',
-    default: '/logos/sample-degrees/mba_degree_new2025.svg',
+    mba: '/logos/sample-degrees/online-mba-certificate-image.svg',
+    default: '/logos/sample-degrees/online-mba-certificate-image.svg',
   },
 }
 
