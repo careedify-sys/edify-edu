@@ -8,6 +8,7 @@ import {
   validateAll, buildLogoMap, generateLogoMapTS, generateSiteConfigTS,
   esc, escArr, splitComma, splitPipe, type CMSData,
 } from '@/lib/cms-schema'
+import { notifyIndexNow } from '@/lib/indexnow'
 
 // ── Auth ─────────────────────────────────────────────────────────────────────
 function checkAuth(req: NextRequest): boolean {
@@ -680,6 +681,32 @@ export function getUniversityLogo(uniId: string): string | null {
     } else {
       addLog(`✓ ${pushedCount} file(s) pushed to GitHub`)
       addLog('⏳ Vercel deploying — live in ~90 seconds')
+    }
+
+    // ── Notify IndexNow (fire and forget) ─────────────────────────────────
+    // Build URLs for all content types that changed so Bing/Yandex index them quickly.
+    // This runs async and never blocks the sync response.
+    const indexNowUrls: string[] = []
+
+    if (hasUnis) {
+      for (const u of cmsData.universities) {
+        const uid = String(u['ID'] ?? '').trim()
+        if (uid) indexNowUrls.push(`https://edifyedu.in/universities/${uid}`)
+      }
+    }
+
+    for (const p of cmsData.blogs) {
+      const slug = String(p['Slug (URL)'] ?? '').trim().replace(/^\/+/, '').replace(/^blog\//, '')
+      if (slug && String(p['Status'] ?? '').toLowerCase() !== 'draft') {
+        indexNowUrls.push(`https://edifyedu.in/blog/${slug}`)
+      }
+    }
+
+    if (indexNowUrls.length > 0) {
+      addLog(`Notifying IndexNow: ${indexNowUrls.length} URL(s)`)
+      notifyIndexNow(indexNowUrls).catch((err) => {
+        console.error('[CMS Sync] IndexNow notification failed:', err)
+      })
     }
 
     return NextResponse.json({
