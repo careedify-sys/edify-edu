@@ -95,10 +95,6 @@ export const SAMPLE_DEGREES: Record<string, { mba?: string; mca?: string; bba?: 
     mca: '/logos/sample-degrees/dr-dy-patil-vidyapeeth-sample-degree-mca.svg',
     default: '/logos/sample-degrees/dr-dy-patil-vidyapeeth-sample-degree-mca.svg',
   },
-  'dr-mgr-educational-research-institute-online': {
-    mba: '/logos/sample-degrees/online-mba-certificate-image.svg',
-    default: '/logos/sample-degrees/online-mba-certificate-image.svg',
-  },
 }
 
 // Generic fallbacks by program
