@@ -4,8 +4,8 @@
 
 export type Program =
   | 'MBA' | 'MCA' | 'BBA' | 'BCA'
-  | 'B.Com' | 'M.Com' | 'BA' | 'MA'
-  | 'MSc' | 'BSc' | 'MBA (WX)'
+  | 'B.Com' | 'M.Com' | 'BA' | 'B.A' | 'MA' | 'M.A'
+  | 'MSc' | 'M.Sc' | 'BSc' | 'B.Sc' | 'MBA (WX)'
 
 export const PROGRAM_META: Record<string, { label: string; desc: string; icon?: string; duration?: string; level?: string }> = {
   'MBA':      { label: 'Online MBA',    desc: 'Master of Business Administration', icon: '💼' },
