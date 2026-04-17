@@ -8,9 +8,11 @@
 
 import { MetadataRoute } from 'next'
 
-const BLOCKED = ['/admin/', '/api/', '/blog/write', '/blog/new', '/admin/excel-import/', '/university-data/']
-const ADMIN_BLOCKED = ['/admin/', '/api/', '/admin/excel-import/']
-const API_BLOCKED = ['/admin/', '/api/']
+// /compare? blocks all /compare?a=X&b=Y query-param variants from crawling.
+// The canonical for /compare is always https://edifyedu.in/compare (no params).
+const BLOCKED = ['/admin/', '/api/', '/blog/write', '/blog/new', '/admin/excel-import/', '/university-data/', '/compare?']
+const ADMIN_BLOCKED = ['/admin/', '/api/', '/admin/excel-import/', '/compare?']
+const API_BLOCKED = ['/admin/', '/api/', '/compare?']
 
 export default function robots(): MetadataRoute.Robots {
   return {
