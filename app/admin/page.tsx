@@ -17,7 +17,7 @@ import {
 } from 'lucide-react'
 
 /* ── CONSTANTS ─────────────────────────────────────────────── */
-const ALL_PROGRAMS: Program[] = ['MBA','MCA','BBA','BCA','BA','B.Com','MA','M.Com','MSc','BSc','MBA (WX)']
+const ALL_PROGRAMS: Program[] = ['MBA','MCA','BBA','BCA','B.A','B.Com','M.A','M.Com','M.Sc','B.Sc','MBA (WX)']
 const REGIONS = ['North','South','West','East','Central']
 const EXAM_MODES = ['Online','Assignment-based','Exam Centre','Hybrid']
 const NAAC_GRADES = ['A++','A+','A','B++','B+','B']
