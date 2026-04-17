@@ -8,6 +8,7 @@ export interface BlogPost {
   targetKeyword: string; status: 'published' | 'draft'
   ctaTitle?: string; ctaDesc?: string; seoTitle?: string
   quickFacts?: { label: string; value: string; green?: boolean }[]
+  author?: string
 }
 
 export function getPublishedPosts() {
@@ -2053,23 +2054,10 @@ export const BLOG_POSTS: BlogPost[] = [
     content: `
 <!-- University logo with production path + inline SVG fallback -->
   <div class="university-logo-box">
-    <!-- Production logo (resolves on edifyedu.in):
-         /logos/university_logos/sikkim-manipal-university-online.svg -->
     <img
-      src="/logos/university_logos/sikkim-manipal-university-online.svg"
+      src="/logos/university_logos/sikkim-manipal-university-logo.svg"
       alt="Sikkim Manipal University logo"
-      class="university-logo"
-      onerror="this.outerHTML=document.getElementById('smu-logo-fallback').innerHTML" />
-    <template id="smu-logo-fallback"></template>
-    <script>
-      // Inline SVG fallback (renders when static asset is absent, e.g. opening this HTML locally)
-      document.getElementById('smu-logo-fallback').innerHTML = \\`
-        <svg class="university-logo" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" aria-label="SMU">
-          <circle cx="36" cy="36" r="34" fill="#0f172a" stroke="#f97316" stroke-width="2"/>
-          <text x="36" y="34" text-anchor="middle" fill="#f97316" font-family="Inter, sans-serif" font-size="18" font-weight="800" letter-spacing="1">SMU</text>
-          <text x="36" y="50" text-anchor="middle" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="8" font-weight="500">ONLINE</text>
-        </svg>\\`;
-    </script>
+      class="university-logo" />
     <div>
       <div class="uni-name">Sikkim Manipal University</div>
       <div class="uni-tag">NAAC A+ · UGC-DEB Entitled · Manipal Education Group · Estd. 1995</div>
