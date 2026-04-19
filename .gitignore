@@ -1,3 +1,7 @@
+# Audit output files (generated, not source)
+audit-report.csv
+audit-summary.md
+
 # Next.js
 .next/
 .next2/
