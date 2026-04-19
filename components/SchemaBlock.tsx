@@ -1,0 +1,94 @@
+import type { University, ProgramDetail } from '@/lib/data'
+import type { Coupon } from '@/lib/coupons'
+
+interface Props {
+  u: University
+  pd: ProgramDetail
+  program: string
+  programSlug: string
+  spec?: string
+  specSlug?: string
+  coupon?: Coupon | null
+  faqs?: { q: string; a: string }[]
+}
+
+export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlug, coupon, faqs }: Props) {
+  const year     = new Date().getFullYear()
+  const baseUrl  = 'https://edifyedu.in'
+  const pageUrl  = spec
+    ? `${baseUrl}/universities/${u.id}/${programSlug}/${specSlug}`
+    : `${baseUrl}/universities/${u.id}/${programSlug}`
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home',         item: baseUrl },
+      { '@type': 'ListItem', position: 2, name: 'Universities', item: `${baseUrl}/universities` },
+      { '@type': 'ListItem', position: 3, name: u.name,         item: `${baseUrl}/universities/${u.id}` },
+      { '@type': 'ListItem', position: 4, name: `Online ${program}`, item: `${baseUrl}/universities/${u.id}/${programSlug}` },
+      ...(spec && specSlug ? [{ '@type': 'ListItem', position: 5, name: spec, item: pageUrl }] : []),
+    ],
+  }
+
+  const courseSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Course',
+    name: spec ? `${u.name} Online ${program} — ${spec} Specialisation` : `${u.name} Online ${program}`,
+    description: spec
+      ? `Online ${program} with ${spec} specialisation from ${u.name}. NAAC ${u.naac} accredited, UGC DEB approved. Admissions open for ${year}.`
+      : `UGC DEB approved Online ${program} from ${u.name}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations, fees ${pd.fees || `from ₹${Math.round(u.feeMin / 1000)}K`}.`,
+    provider: {
+      '@type': 'CollegeOrUniversity',
+      name: u.name,
+      sameAs: `${baseUrl}/universities/${u.id}`,
+    },
+    educationalLevel: ['MBA', 'MCA', 'M.Com', 'MA', 'MSc'].includes(program) ? 'Postgraduate' : 'Undergraduate',
+    courseMode: 'Online',
+    url: pageUrl,
+    offers: u.feeMin ? {
+      '@type': 'Offer',
+      price: u.feeMin,
+      priceCurrency: 'INR',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        minPrice: u.feeMin,
+        maxPrice: u.feeMax || u.feeMin,
+        priceCurrency: 'INR',
+      },
+      ...(coupon ? {
+        hasMerchantReturnPolicy: {
+          '@type': 'MerchantReturnPolicy',
+          name: `EdifyEdu Coupon: ${coupon.code}`,
+          description: coupon.savings,
+        },
+      } : {}),
+    } : undefined,
+    hasCourseInstance: {
+      '@type': 'CourseInstance',
+      courseMode: 'Online',
+      startDate: `${year}-07-01`,
+      courseWorkload: `PT${pd.duration?.replace(/[^0-9]/g, '') || '2'}Y`,
+    },
+  }
+
+  const faqSchema = faqs?.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(f => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  } : null
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
+    </>
+  )
+}
