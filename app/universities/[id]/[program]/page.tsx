@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import type { Program } from '@/lib/data'
-import UniversityProgramClient from '@/components/UniversityProgramClient'
+import UniProgramBody from '@/components/UniProgramBody'
 import { getTitleName } from '@/lib/seo-title'
 
 // Program slug to Program type mapping
@@ -88,91 +88,6 @@ export async function generateMetadata(
   }
 }
 
-// ── JSON-LD Schema for university program page ──
-function ProgramSchema({ u, program, programSlug }: {
-  u: NonNullable<ReturnType<typeof getUniversityById>>;
-  program: Program;
-  programSlug: string;
-}) {
-  const year = new Date().getFullYear()
-  const pd = u.programDetails[program]
-  const cleanName = u.name.replace(/\s+online\s*$/i, '').trim()
-  const schema = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'Course',
-        name: `${cleanName} Online ${program}`,
-        description: `UGC DEB approved online ${program} from ${u.name}. NAAC ${u.naac} accredited.`,
-        provider: {
-          '@type': 'CollegeOrUniversity',
-          name: u.name,
-          sameAs: `https://edifyedu.in/universities/${u.id}`,
-        },
-        offers: {
-          '@type': 'Offer',
-          price: u.feeMin,
-          priceCurrency: 'INR',
-          description: pd?.fees || `From ₹${Math.round(u.feeMin/1000)}K`,
-        },
-        timeRequired: pd?.duration || 'P2Y',
-        courseMode: 'online',
-        educationalCredentialAwarded: program,
-        hasCourseInstance: {
-          '@type': 'CourseInstance',
-          courseMode: 'online',
-          startDate: `${year}-07-01`,
-        },
-      },
-      {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://edifyedu.in' },
-          { '@type': 'ListItem', position: 2, name: 'Universities', item: 'https://edifyedu.in/universities' },
-          { '@type': 'ListItem', position: 3, name: u.name, item: `https://edifyedu.in/universities/${u.id}` },
-          { '@type': 'ListItem', position: 4, name: `Online ${program}`, item: `https://edifyedu.in/universities/${u.id}/${programSlug}` },
-        ],
-      },
-      {
-        '@type': 'FAQPage',
-        mainEntity: [
-          {
-            '@type': 'Question',
-            name: `What is the fee for ${u.name} online ${program}?`,
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: `${u.name} online ${program} fees are ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K to ₹${Math.round(u.feeMax/1000)}K`}. EMI options start from ₹${u.emiFrom.toLocaleString()}/month.`,
-            },
-          },
-          {
-            '@type': 'Question',
-            name: `What is the syllabus for ${u.name} online ${program}?`,
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: `${u.name} online ${program} covers core ${program} subjects${pd?.specs?.length ? ` with ${pd.specs.length}+ specialisations including ${pd.specs.slice(0,3).join(', ')}` : ''}. Duration is ${pd?.duration || '2 years'}.`,
-            },
-          },
-          {
-            '@type': 'Question',
-            name: `Is ${u.name} online ${program} valid for government jobs?`,
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: `Yes. ${u.name} is UGC DEB approved for online education, making the ${program} degree valid for private sector jobs, government recruitment (where UGC DEB approved degrees are accepted)${u.psuEligible ? ', and PSU recruitment' : ''}, and further studies.`,
-            },
-          },
-        ],
-      },
-    ],
-  }
-
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
-  )
-}
-
 // ── Page Component (Server Component) ──
 export default async function UniversityProgramPage(
   { params }: { params: any }
@@ -187,15 +102,15 @@ export default async function UniversityProgramPage(
     notFound()
   }
 
+  const pd = university.programDetails[program]!
+
   return (
-    <>
-      <ProgramSchema u={university} program={program} programSlug={programSlug} />
-      <UniversityProgramClient
-        university={university}
-        program={program}
-        programSlug={programSlug}
-      />
-    </>
+    <UniProgramBody
+      u={university}
+      program={program}
+      programSlug={programSlug}
+      pd={pd}
+    />
   )
 }
 

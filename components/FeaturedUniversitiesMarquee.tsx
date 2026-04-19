@@ -69,8 +69,7 @@ export default function FeaturedUniversitiesMarquee({ brands, totalUnis }: Props
         </div>
       </div>
 
-      <style>{`
-        /* Desktop: auto-scroll marquee */
+      <style dangerouslySetInnerHTML={{ __html: `
         @media (min-width: 768px) {
           .feat-marquee-track {
             animation: feat-scroll 50s linear infinite;
@@ -84,8 +83,6 @@ export default function FeaturedUniversitiesMarquee({ brands, totalUnis }: Props
             to   { transform: translateX(-50%); }
           }
         }
-
-        /* Mobile: native snap-scroll, no marquee */
         @media (max-width: 767px) {
           .feat-marquee-track {
             overflow-x: auto;
@@ -94,11 +91,8 @@ export default function FeaturedUniversitiesMarquee({ brands, totalUnis }: Props
             scrollbar-width: none;
           }
           .feat-marquee-track::-webkit-scrollbar { display: none; }
-          /* Only show first half on mobile (no duplicates needed) */
           .feat-chip:nth-child(n+${brands.length + 1}) { display: none; }
         }
-
-        /* Reduced motion: no animation */
         @media (prefers-reduced-motion: reduce) {
           .feat-marquee-track {
             animation: none !important;
@@ -106,12 +100,11 @@ export default function FeaturedUniversitiesMarquee({ brands, totalUnis }: Props
             scrollbar-width: none;
           }
         }
-
         .feat-chip > div:hover {
           border-color: var(--amber) !important;
           background: var(--amber-light) !important;
         }
-      `}</style>
+      ` }} />
     </section>
   )
 }
