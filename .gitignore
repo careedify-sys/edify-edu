@@ -1,6 +1,8 @@
 # Audit output files (generated, not source)
 audit-report.csv
 audit-summary.md
+scripts/broken-pages-report.md
+scripts/phase-2-verification.md
 
 # Next.js
 .next/

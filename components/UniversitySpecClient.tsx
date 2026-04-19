@@ -64,16 +64,18 @@ export default function UniversitySpecClient({ university: u, program, programSl
   const cleanName = u.name.replace(/\bOnline\b\s*$/i, '').trim()
   const year      = new Date().getFullYear()
 
-  // Reviews — show university-specific, fall back to generic
-  const rawReviews  = UNIVERSITY_REVIEWS[u.id] || GENERIC_REVIEWS
+  // Reviews — filter by current program to avoid cross-program leakage
+  const allUniReviews = UNIVERSITY_REVIEWS[u.id] || GENERIC_REVIEWS
+  const filteredReviews = allUniReviews.filter(r => r.program.toLowerCase().includes(program.toLowerCase()))
+  const rawReviews  = filteredReviews.length > 0 ? filteredReviews : allUniReviews.filter(r => GENERIC_REVIEWS.includes(r))
   const reviews     = showAllReviews ? rawReviews : rawReviews.slice(0, 6)
-  const avgRating   = (rawReviews.reduce((s, r) => s + r.rating, 0) / rawReviews.length).toFixed(1)
+  const avgRating   = rawReviews.length > 0 ? (rawReviews.reduce((s, r) => s + r.rating, 0) / rawReviews.length).toFixed(1) : '4.5'
   const totalShown  = rawReviews.length >= 8 ? '200+' : '100+'
 
   // Key Highlights — built from actual university data
   const highlights = [
     { icon: '🏛️', label: 'Accreditation', value: `NAAC ${u.naac}${u.naacScore ? ` (${u.naacScore})` : ''}`, good: true },
-    { icon: '📊', label: 'NIRF Rank', value: u.nirf < 900 ? `#${u.nirf} Overall${u.nirfMgt ? ` · #${u.nirfMgt} Mgmt` : ''}` : 'UGC Recognised', good: u.nirf < 200 },
+    { icon: '📊', label: 'NIRF Rank', value: u.nirf > 0 && u.nirf < 900 ? `#${u.nirf} Overall${u.nirfMgt ? ` · #${u.nirfMgt} Mgmt` : ''}` : 'UGC Recognised', good: u.nirf > 0 && u.nirf < 200 },
     { icon: '✅', label: 'Approvals', value: u.approvals.slice(0, 3).join(' · '), good: true },
     { icon: '💻', label: 'Exam Mode', value: u.examMode || 'Online Proctored', good: true },
     { icon: '💰', label: 'EMI From', value: `₹${u.emiFrom.toLocaleString()}/month`, good: true },
@@ -165,7 +167,7 @@ export default function UniversitySpecClient({ university: u, program, programSl
               {[
                 { label: `NAAC ${u.naac}`, color: u.naac === 'A++' ? '#16a34a' : u.naac === 'A+' ? '#0891b2' : '#7c3aed' },
                 { label: 'UGC DEB', color: '#1d4ed8' },
-                ...(u.nirf < 900 ? [{ label: `NIRF #${u.nirf}`, color: '#b45309' }] : []),
+                ...(u.nirf > 0 && u.nirf < 900 ? [{ label: `NIRF #${u.nirf}`, color: '#b45309' }] : []),
                 ...u.approvals.filter(a => ['AICTE', 'AIU', 'WES Recognised', 'AACSB'].includes(a)).map(a => ({ label: a, color: '#374151' })),
                 ...(u.psuEligible ? [{ label: 'PSU Eligible', color: '#065f46' }] : []),
               ].map(badge => (
@@ -182,7 +184,7 @@ export default function UniversitySpecClient({ university: u, program, programSl
                 { label: 'Total Fees',    value: fees },
                 { label: 'Duration',      value: duration },
                 ...(specContent?.salaryRange ? [{ label: 'Avg Salary', value: specContent.salaryRange }] : pd.avgSalary ? [{ label: 'Avg Salary', value: pd.avgSalary }] : []),
-                { label: 'NIRF Rank',     value: u.nirf < 900 ? `#${u.nirf}` : 'Recognised' },
+                { label: 'NIRF Rank',     value: u.nirf > 0 && u.nirf < 900 ? `#${u.nirf}` : 'Recognised' },
               ].map(s => (
                 <div key={s.label} style={{ padding: '10px 14px', background: 'rgba(255,255,255,0.06)', border: '1px solid #1e2f45', borderRadius: 'var(--r-sm)' }}>
                   <div className="text-[9px] sm:text-[10px] text-ink-3 uppercase tracking-wider">{s.label}</div>

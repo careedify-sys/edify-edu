@@ -66,7 +66,7 @@ export default function SpecializationPageClient({ university: u, program, speci
     },
     {
       q: `Is ${cleanName} ${progInfo.name} in ${specialization} valid?`,
-      a: `Yes, ${cleanName} ${progInfo.name} in ${specialization} is 100% valid. The university is UGC DEB approved and NAAC ${u.naac} accredited.${u.nirf < 200 ? ` It is NIRF #${u.nirf} ranked.` : ''} The degree is equivalent to a regular ${program} and is valid for private sector jobs, bank jobs, and higher education.`
+      a: `Yes, ${cleanName} ${progInfo.name} in ${specialization} is 100% valid. The university is UGC DEB approved and NAAC ${u.naac} accredited.${u.nirf > 0 && u.nirf < 200 ? ` It is NIRF #${u.nirf} ranked.` : ''} The degree is equivalent to a regular ${program} and is valid for private sector jobs, bank jobs, and higher education.`
     },
     {
       q: `What is the eligibility for ${progInfo.name} in ${specialization} at ${cleanName}?`,
@@ -142,8 +142,8 @@ export default function SpecializationPageClient({ university: u, program, speci
                     <img src={u.logo} alt={u.abbr} style={{ maxHeight: '100%', maxWidth: '100%', objectFit:'contain' }} />
                   </div>
                 )}
-                <h1 className="font-display flex-1" style={{fontSize:'clamp(1.5rem,4vw,2.2rem)',fontWeight:800,color:'#fff',lineHeight:1.15,margin:0}}>
-                  {u.name} {progInfo.name.replace('Online ', '')} in {specialization}
+                <h1 className="font-display flex-1" style={{fontSize:'clamp(1.75rem,4vw,3rem)',fontWeight:800,color:'#fff',lineHeight:1.15,margin:0,wordWrap:'break-word',overflowWrap:'break-word'}}>
+                  Online {program} in {specialization.replace(/,\s*$/, '')} from {cleanName}
                 </h1>
               </div>
               <p className="text-slate-400 text-[15px] leading-relaxed mb-5">
@@ -523,7 +523,7 @@ export default function SpecializationPageClient({ university: u, program, speci
                   An online {program} from {cleanName} is worth considering if you are a working professional or fresh graduate who wants a recognised degree without leaving your job or city. The program is UGC DEB approved — valid for government jobs, PSU recruitment, and higher studies across India.
                 </p>
                 <p className="text-[15px] text-ink-2 leading-relaxed">
-                  With NAAC {u.naac} accreditation{u.nirf < 999 ? ` and NIRF rank #${u.nirf}` : ''}, {cleanName} maintains strong academic standards.{u.tagline ? ` ${u.tagline}` : ''}
+                  With NAAC {u.naac} accreditation{u.nirf > 0 && u.nirf < 999 ? ` and NIRF rank #${u.nirf}` : ''}, {cleanName} maintains strong academic standards.{u.tagline ? ` ${u.tagline}` : ''}
                 </p>
               </section>
 
@@ -572,7 +572,10 @@ export default function SpecializationPageClient({ university: u, program, speci
 
               {/* Student Reviews */}
               {(() => {
-                const reviews = UNIVERSITY_REVIEWS[u.id] ?? GENERIC_REVIEWS
+                const allUniReviews = UNIVERSITY_REVIEWS[u.id] ?? GENERIC_REVIEWS
+                const filtered = allUniReviews.filter(r => r.program.toLowerCase().includes(program.toLowerCase()))
+                const reviews = filtered.length > 0 ? filtered : allUniReviews.filter(r => GENERIC_REVIEWS.includes(r))
+                if (reviews.length === 0) return null
                 const avgRating = reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length
                 const fullStars = Math.floor(avgRating)
                 const emptyStars = 5 - fullStars
@@ -716,7 +719,7 @@ export default function SpecializationPageClient({ university: u, program, speci
                       { label: 'EMI from', value: `₹${u.emiFrom.toLocaleString()}/mo` },
                       { label: 'Exam Mode', value: u.examMode },
                       { label: 'NAAC', value: u.naac },
-                      { label: 'NIRF', value: u.nirf < 200 ? `#${u.nirf}` : 'N/A' },
+                      { label: 'NIRF', value: u.nirf > 0 && u.nirf < 200 ? `#${u.nirf}` : 'N/A' },
                     ].map(row => (
                       <div key={row.label} className="flex justify-between py-2 border-b border-border text-xs">
                         <span className="text-ink-3">{row.label}</span>
@@ -1070,7 +1073,7 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
           <div className="flex flex-col gap-3 mb-4">
             {[
               `NAAC ${u.naac} accredited institution — nationally recognised academic quality standard`,
-              u.nirf < 999 ? `NIRF Rank #${u.nirf} — ranked by Ministry of Education among India's top universities` : `UGC DEB approved university for online education`,
+              u.nirf > 0 && u.nirf < 999 ? `NIRF Rank #${u.nirf} — ranked by Ministry of Education among India's top universities` : `UGC DEB approved university for online education`,
               `UGC DEB approved — degree valid for government jobs, PSU recruitment, and PhD admission`,
               `Affordable total fee ${formatFee(u.feeMin)} – ${formatFee(u.feeMax)} with EMI from ₹${u.emiFrom.toLocaleString()}/month`,
               `${specialization} specialisation — one of the fastest growing career tracks in India`,
@@ -1093,7 +1096,7 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
             A {progInfo.name} in {specialization} from {cleanName} is a strong career investment if you are looking to specialise in this domain while earning a fully recognised postgraduate degree. The program is UGC DEB approved — the degree is valid for private sector jobs, government recruitment where UGC DEB degrees are accepted{u.psuEligible ? ', PSU positions' : ''}, and further academic pursuits.
           </p>
           <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
-            {cleanName} holds NAAC {u.naac} accreditation{u.nirf < 999 ? ` and a NIRF rank of #${u.nirf}` : ''} — credentials that matter during campus placements and employer verification. The fee ranges from {formatFee(u.feeMin)} to {formatFee(u.feeMax)} with EMI options from ₹{u.emiFrom.toLocaleString()}/month, making it significantly more affordable than an equivalent campus program.{u.tagline ? ` ${u.tagline}` : ''}
+            {cleanName} holds NAAC {u.naac} accreditation{u.nirf > 0 && u.nirf < 999 ? ` and a NIRF rank of #${u.nirf}` : ''} — credentials that matter during campus placements and employer verification. The fee ranges from {formatFee(u.feeMin)} to {formatFee(u.feeMax)} with EMI options from ₹{u.emiFrom.toLocaleString()}/month, making it significantly more affordable than an equivalent campus program.{u.tagline ? ` ${u.tagline}` : ''}
           </p>
           <p className="text-[15px] text-ink-2 leading-relaxed">
             The {specialization} specialisation opens roles across multiple industries. Graduates are hired into roles that directly apply this expertise, with salaries varying by experience and employer. The online format means you continue working while building your qualification — there is no career gap, no relocation, and no disruption to your income while you study.
@@ -1139,7 +1142,10 @@ function LockedSpecPage({ u, program, specialization, specSlug, pd, progInfo, pr
 
         {/* Student Reviews */}
         {(() => {
-          const reviews = UNIVERSITY_REVIEWS[u.id] ?? GENERIC_REVIEWS
+          const allUniReviews = UNIVERSITY_REVIEWS[u.id] ?? GENERIC_REVIEWS
+          const filtered = allUniReviews.filter(r => r.program.toLowerCase().includes(program.toLowerCase()))
+          const reviews = filtered.length > 0 ? filtered : allUniReviews.filter(r => GENERIC_REVIEWS.includes(r))
+          if (reviews.length === 0) return null
           const avgRating = reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length
           const fullStars = Math.floor(avgRating)
           const emptyStars = 5 - fullStars

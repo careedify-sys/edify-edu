@@ -30,7 +30,9 @@ function extractHeadings(html: string): { id: string; text: string; level: 2 | 3
 }
 
 function addHeadingIds(html: string): string {
-  return html.replace(
+  // First convert any <h1> in content to <h2> to prevent duplicate H1
+  const noH1 = html.replace(/<h1([^>]*)>([\s\S]*?)<\/h1>/gi, '<h2$1>$2</h2>')
+  return noH1.replace(
     /<h([23])([^>]*)>([\s\S]*?)<\/h\1>/gi,
     (_, level, attrs, content) => {
       const text = content.replace(/<[^>]+>/g, '').trim()
@@ -512,7 +514,7 @@ export default async function BlogPostPage({ params }: Props) {
                                 className="text-[10px] font-bold uppercase tracking-wider"
                                 style={{ color: '#D4922A' }}
                               >
-                                NIRF #{u.nirf}
+                                {u.nirf > 0 && u.nirf < 900 ? `NIRF #${u.nirf}` : 'UGC Approved'}
                               </div>
                             </div>
                           </Link>

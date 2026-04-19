@@ -51,7 +51,7 @@ export async function generateMetadata(
   const cleanName = u.name.replace(/\s+online\s*$/i, '')
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const title = `${titleName} Online ${program} — Fees & Syllabus ${year} | EdifyEdu`
-  const description = `${titleName} online ${program}: fees ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}, ${pd?.duration || '2 Yrs'}${pd?.specs?.length ? `, ${pd.specs.length}+ specialisations` : ''}. NAAC ${u.naac}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved.`
+  const description = `${titleName} online ${program}: fees ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}, ${pd?.duration || '2 Yrs'}${pd?.specs?.length ? `, ${pd.specs.length}+ specialisations` : ''}. NAAC ${u.naac}${u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved.`
 
   const keywords = [
     `${u.name} online ${program} fees`,

@@ -82,8 +82,8 @@ function FullPage({ u, program, programSlug, pd }: {
               <div className="text-[11px] font-bold text-amber uppercase tracking-widest mb-2.5">
                 {meta?.level === 'PG' ? 'Postgraduate' : 'Undergraduate'} · {pd.duration} · UGC DEB Approved
               </div>
-              <h1 className="font-display" style={{ fontSize: 'clamp(1.6rem,4vw,2.4rem)', fontWeight: 800, color: '#fff', lineHeight: 1.15, marginBottom: 10 }}>
-                {program} from {u.name}
+              <h1 className="font-display" style={{ fontSize: 'clamp(1.75rem,4vw,3rem)', fontWeight: 800, color: '#fff', lineHeight: 1.15, marginBottom: 10, wordWrap: 'break-word', overflowWrap: 'break-word' }}>
+                {u.name} Online {program}: Fees, Syllabus &amp; Specialisations 2026
               </h1>
               {pd.careerOutcome && <p className="text-slate-400 text-[15px] leading-relaxed mb-5">{cleanCareerOutcome(pd.careerOutcome)}</p>}
 
@@ -92,7 +92,7 @@ function FullPage({ u, program, programSlug, pd }: {
                   { label: 'Total Fees', value: pd.fees || `₹${Math.round(u.feeMin/1000)}K+` },
                   { label: 'Duration',   value: pd.duration || '2 Years' },
                   ...(pd.avgSalary ? [{ label: 'Avg Salary', value: pd.avgSalary }] : []),
-                  { label: 'NIRF Rank',  value: u.nirf < 900 ? `#${u.nirf}` : 'Recognised' },
+                  { label: 'NIRF Rank',  value: u.nirf > 0 && u.nirf < 900 ? `#${u.nirf}` : 'Recognised' },
                 ].map(s => (
                   <div key={s.label} style={{ padding: '10px 14px', background: 'rgba(255,255,255,0.06)', border: '1px solid #1e2f45', borderRadius: 'var(--r-sm)' }}>
                     <div className="text-[9px] sm:text-[10px] text-ink-3 uppercase tracking-wider">{s.label}</div>
@@ -312,7 +312,7 @@ function FullPage({ u, program, programSlug, pd }: {
                         An online {program} from {cleanName} is worth considering if you are a working professional or fresh graduate looking to earn a recognised degree without leaving your job or city. The program is UGC DEB approved which means the degree is valid for government jobs, PSU recruitment, and higher studies across India.
                       </p>
                       <p className="text-[15px] text-ink-2 leading-relaxed">
-                        With NAAC {u.naac} accreditation{u.nirf < 999 ? ` and a NIRF rank of #${u.nirf}` : ''}, {cleanName} maintains strong academic standards.{u.tagline ? ` ${u.tagline}` : ''}
+                        With NAAC {u.naac} accreditation{u.nirf > 0 && u.nirf < 999 ? ` and a NIRF rank of #${u.nirf}` : ''}, {cleanName} maintains strong academic standards.{u.tagline ? ` ${u.tagline}` : ''}
                       </p>
                     </section>
 
@@ -371,7 +371,10 @@ function FullPage({ u, program, programSlug, pd }: {
 
               {/* Student Reviews */}
               {(() => {
-                const reviews = UNIVERSITY_REVIEWS[u.id] || GENERIC_REVIEWS
+                const allUniReviews = UNIVERSITY_REVIEWS[u.id] || GENERIC_REVIEWS
+                const filtered = allUniReviews.filter(r => r.program.toLowerCase().includes(program.toLowerCase()))
+                const reviews = filtered.length > 0 ? filtered : allUniReviews.filter(r => GENERIC_REVIEWS.includes(r))
+                if (reviews.length === 0) return null
                 const avgRating = reviews.reduce((s,r) => s + r.rating, 0) / reviews.length
                 const fullStars = Math.floor(avgRating)
                 const emptyStars = 5 - fullStars
@@ -449,7 +452,7 @@ function FullPage({ u, program, programSlug, pd }: {
                           <div style={{ height: 3, background: ou.color }} />
                           <div className="p-4">
                             <div className="font-bold text-navy mb-1">{ou.name}</div>
-                            <div className="text-xs text-ink-3 mb-2">{ou.city}{ou.nirf < 200 ? ` · NIRF #${ou.nirf}` : ''} · {ou.naac}</div>
+                            <div className="text-xs text-ink-3 mb-2">{ou.city}{ou.nirf > 0 && ou.nirf < 200 ? ` · NIRF #${ou.nirf}` : ''} · {ou.naac}</div>
                             <div className="flex justify-between text-sm">
                               <span className="text-ink-2">Fees: <strong>{opd?.fees || formatFee(ou.feeMin)}</strong></span>
                               <span className="text-green-600 font-medium">{opd?.avgSalary?.split('–')[0] || '₹4L'}+</span>
@@ -730,7 +733,7 @@ function LockedPage({ u, program, programSlug, pd }: {
                 {cleanName} offers a UGC DEB approved online {program} program built for working professionals and fresh graduates who want a recognised postgraduate degree without putting their career on hold. The program runs fully online through recorded lectures, live sessions, and a dedicated LMS, so you can study from anywhere in India on your own schedule.
               </p>
               <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
-                The Government of India has formally declared that online degrees from UGC DEB approved universities hold equal academic and legal standing to regular campus degrees. The online {program} from {cleanName} is accepted by private employers, government departments, and public sector undertakings across India. With NAAC {u.naac} accreditation{u.nirf < 999 ? ` and a NIRF rank of #${u.nirf}` : ''}, the credential carries solid institutional standing.
+                The Government of India has formally declared that online degrees from UGC DEB approved universities hold equal academic and legal standing to regular campus degrees. The online {program} from {cleanName} is accepted by private employers, government departments, and public sector undertakings across India. With NAAC {u.naac} accreditation{u.nirf > 0 && u.nirf < 999 ? ` and a NIRF rank of #${u.nirf}` : ''}, the credential carries solid institutional standing.
               </p>
             </>
           )}
@@ -775,7 +778,7 @@ function LockedPage({ u, program, programSlug, pd }: {
           <div className="flex flex-col gap-3 mb-4">
             {[
               `NAAC ${u.naac} accredited — one of India's highest quality grades for higher education`,
-              u.nirf < 999 ? `NIRF Rank #${u.nirf} — nationally recognised ranking by Ministry of Education` : `Nationally recognised university approved by UGC DEB for online education`,
+              u.nirf > 0 && u.nirf < 999 ? `NIRF Rank #${u.nirf} — nationally recognised ranking by Ministry of Education` : `Nationally recognised university approved by UGC DEB for online education`,
               `UGC DEB approved — degree is valid for government jobs, PSU recruitment, and further studies`,
               `Affordable fees from ${formatFee(u.feeMin)} with EMI options from ₹${u.emiFrom.toLocaleString()}/month`,
               `Online format — study on weekends and evenings without leaving your current job`,
@@ -797,7 +800,7 @@ function LockedPage({ u, program, programSlug, pd }: {
             An online {program} from {cleanName} is a strong option if you are a working professional or fresh graduate looking for a recognised postgraduate degree without relocating or taking a career break. The program is UGC DEB approved — meaning the degree is legally valid for private sector jobs, government recruitment (where UGC DEB degrees are accepted){u.psuEligible ? ', PSU recruitment' : ''}, and admission to PhD programs across India.
           </p>
           <p className="text-[15px] text-ink-2 leading-relaxed mb-3">
-            With NAAC {u.naac} accreditation{u.nirf < 999 ? ` and NIRF rank #${u.nirf}` : ''}, {cleanName} maintains strong academic standards that employers recognise. The total program fee ranges from {formatFee(u.feeMin)} to {formatFee(u.feeMax)} — significantly lower than most campus {program} programs — with monthly EMI options starting at ₹{u.emiFrom.toLocaleString()}, making it financially accessible.{u.tagline ? ` ${u.tagline}` : ''}
+            With NAAC {u.naac} accreditation{u.nirf > 0 && u.nirf < 999 ? ` and NIRF rank #${u.nirf}` : ''}, {cleanName} maintains strong academic standards that employers recognise. The total program fee ranges from {formatFee(u.feeMin)} to {formatFee(u.feeMax)} — significantly lower than most campus {program} programs — with monthly EMI options starting at ₹{u.emiFrom.toLocaleString()}, making it financially accessible.{u.tagline ? ` ${u.tagline}` : ''}
           </p>
           <p className="text-[15px] text-ink-2 leading-relaxed">
             The online mode means you study through pre-recorded lectures, live doubt-clearing sessions, and online examinations — no daily commute, no relocation. Most students complete assignments during evenings and weekends while continuing full-time employment. If your goal is a recognised postgraduate qualification that fits around your life, {cleanName} online {program} delivers strong value for the investment.
@@ -900,7 +903,10 @@ function LockedPage({ u, program, programSlug, pd }: {
 
         {/* Student Reviews */}
         {(() => {
-          const reviews = UNIVERSITY_REVIEWS[u.id] ?? GENERIC_REVIEWS
+          const allUniReviews = UNIVERSITY_REVIEWS[u.id] ?? GENERIC_REVIEWS
+          const filtered = allUniReviews.filter(r => r.program.toLowerCase().includes(program.toLowerCase()))
+          const reviews = filtered.length > 0 ? filtered : allUniReviews.filter(r => GENERIC_REVIEWS.includes(r))
+          if (reviews.length === 0) return null
           const avgRating = reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length
           const fullStars = Math.floor(avgRating)
           const emptyStars = 5 - fullStars
@@ -976,7 +982,7 @@ function LockedPage({ u, program, programSlug, pd }: {
                     <div style={{ height: 3, background: ou.color }} />
                     <div className="p-4">
                       <div className="font-bold text-navy text-sm mb-1">{ou.name}</div>
-                      <div className="text-xs text-ink-3 mb-2">{ou.city}{ou.nirf < 200 ? ` · NIRF #${ou.nirf}` : ''} · NAAC {ou.naac}</div>
+                      <div className="text-xs text-ink-3 mb-2">{ou.city}{ou.nirf > 0 && ou.nirf < 200 ? ` · NIRF #${ou.nirf}` : ''} · NAAC {ou.naac}</div>
                       <div className="flex justify-between text-xs">
                         <span className="text-ink-2">Fees: <strong>{opd?.fees || formatFee(ou.feeMin)}</strong></span>
                         <span className="text-amber font-semibold">{opd?.avgSalary?.split('–')[0] || '₹4L'}+</span>

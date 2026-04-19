@@ -415,10 +415,19 @@ async function writeSummary(results) {
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 async function main() {
-  const urls = await discoverUrls()
+  // Parse --limit N flag
+  const limitFlagIdx = process.argv.indexOf('--limit')
+  const urlLimit = limitFlagIdx !== -1 ? parseInt(process.argv[limitFlagIdx + 1], 10) : Infinity
+
+  let urls = await discoverUrls()
   if (urls.length === 0) {
     console.error('[Audit] No URLs discovered. Exiting.')
     process.exit(1)
+  }
+
+  if (Number.isFinite(urlLimit) && urlLimit > 0) {
+    urls = urls.slice(0, urlLimit)
+    console.log(`[Audit] --limit applied: auditing first ${urlLimit} URLs`)
   }
 
   console.log(`\n[Audit] Auditing ${urls.length} URLs (concurrency: ${CONCURRENCY}, delay: ${BATCH_DELAY_MS}ms between batches)\n`)

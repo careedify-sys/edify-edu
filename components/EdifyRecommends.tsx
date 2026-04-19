@@ -66,7 +66,7 @@ export default function EdifyRecommends({ program, currentId, programSlug }: Pro
 
       <div className="flex flex-col gap-3">
         {picks.map(u => {
-          const why = WHY[u.id] || `${u.naac} · ${u.nirf < 900 ? `NIRF #${u.nirf}` : 'UGC Approved'}`
+          const why = WHY[u.id] || `${u.naac} · ${u.nirf > 0 && u.nirf < 900 ? `NIRF #${u.nirf}` : 'UGC Approved'}`
           return (
             <Link
               key={u.id}

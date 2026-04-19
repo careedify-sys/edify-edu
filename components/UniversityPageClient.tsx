@@ -47,7 +47,7 @@ export default function UniversityPageClient({ university: u }: Props) {
   const faqs = [
     {
       q:`Is ${u.name} a good university for online degrees?`,
-      a:`${u.name} is ${u.nirf < 200 ? `NIRF #${u.nirf} overall` : 'a UGC DEB approved university'}${u.nirfMgt && u.nirfMgt < 200 ?` and NIRF #${u.nirfMgt} in Management`:''}. It holds NAAC ${u.naac} accreditation and is UGC DEB approved. For private sector careers and corporate hiring it is a strong choice. Always verify specific job notifications for government roles.`
+      a:`${u.name} is ${u.nirf > 0 && u.nirf < 200 ? `NIRF #${u.nirf} overall` : 'a UGC DEB approved university'}${u.nirfMgt && u.nirfMgt < 200 ?` and NIRF #${u.nirfMgt} in Management`:''}. It holds NAAC ${u.naac} accreditation and is UGC DEB approved. For private sector careers and corporate hiring it is a strong choice. Always verify specific job notifications for government roles.`
     },
     {
       q:`What is the total fee for ${u.name} ${displayProgram}?`,
@@ -99,7 +99,7 @@ export default function UniversityPageClient({ university: u }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
         '@context':'https://schema.org','@type':'Course',
         name:`${u.name} ${displayProgram}`,
-        description:`UGC DEB approved ${displayProgram} from ${u.name}. NAAC ${u.naac} accredited.${u.nirf < 200 ? ` NIRF #${u.nirf}.` : ''} Total fee ${formatFee(u.feeMin)}–${formatFee(u.feeMax)}.`,
+        description:`UGC DEB approved ${displayProgram} from ${u.name}. NAAC ${u.naac} accredited.${u.nirf > 0 && u.nirf < 200 ? ` NIRF #${u.nirf}.` : ''} Total fee ${formatFee(u.feeMin)}–${formatFee(u.feeMax)}.`,
         url:`https://edifyedu.in/universities/${u.id}`,
         provider:{'@type':'EducationalOrganization',name:u.name},
         educationalLevel:'Postgraduate',
@@ -143,8 +143,8 @@ export default function UniversityPageClient({ university: u }: Props) {
                       <img src={u.logo} alt={u.abbr} width={96} height={60} style={{ maxHeight: '100%', maxWidth: '100%', objectFit:'contain' }} loading="eager" fetchPriority="high" />
                     </div>
                   )}
-                  <h1 className="font-display flex-1" style={{fontSize:'clamp(1.5rem,3.5vw,2.2rem)',fontWeight:800,color:'#fff',lineHeight:1.15,margin:0}}>
-                    {cleanName} Online — {u.programs.slice(0,3).join(', ')} Fees &amp; Reviews 2026
+                  <h1 className="font-display flex-1" style={{fontSize:'clamp(1.75rem,4vw,3rem)',fontWeight:800,color:'#fff',lineHeight:1.15,margin:0,wordWrap:'break-word',overflowWrap:'break-word'}}>
+                    {cleanName} — Online Degrees, Fees &amp; Reviews 2026
                   </h1>
                 </div>
                 <p className="text-slate-400 text-[15px] mb-3 flex items-center gap-1.5">

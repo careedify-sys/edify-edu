@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const syllabus = getMasterSyllabus(u.id, 'MCA') as any
   const description = syllabus?.metaDesc ||
-    `${titleName} online MCA: ${pd?.specs?.length || 3}+ specializations, fees ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}, NAAC ${u.naac}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved.`
+    `${titleName} online MCA: ${pd?.specs?.length || 3}+ specializations, fees ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}, NAAC ${u.naac}${u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved.`
   const keywords = syllabus?.metaKeywords || undefined
   return {
     title: `${titleName} Online MCA — Fees & Syllabus ${year} | EdifyEdu`,
@@ -91,7 +91,7 @@ export default async function OnlineMCAPage({ params }: { params: Promise<{ id: 
                 {u.name} offers a fully online Master of Computer Applications approved by UGC DEB. The program runs for {pd?.duration || '2 years'} and is designed for graduates who want to build strong expertise in software engineering, data science, cloud infrastructure, and modern IT systems. Students get access to live sessions, recorded lectures, and project-based assessments so they can study without stepping away from work.
               </p>
               <p className="text-ink-2 leading-relaxed text-[15px] mt-3">
-                The university holds NAAC {u.naac} accreditation{u.nirf < 200 ? ` and a NIRF rank of #${u.nirf}` : ''}, which makes the degree widely accepted by employers across India. Graduates from {u.abbr} Online MCA have joined companies in IT services, product development, consulting, and government sectors.
+                The university holds NAAC {u.naac} accreditation{u.nirf > 0 && u.nirf < 200 ? ` and a NIRF rank of #${u.nirf}` : ''}, which makes the degree widely accepted by employers across India. Graduates from {u.abbr} Online MCA have joined companies in IT services, product development, consulting, and government sectors.
               </p>
             </div>
 
@@ -139,7 +139,7 @@ export default async function OnlineMCAPage({ params }: { params: Promise<{ id: 
                   <span className="text-ink-3">NAAC Grade</span>
                   <span className="font-bold text-navy">{u.naac}</span>
                 </div>
-                {u.nirf < 200 && (
+                {u.nirf > 0 && u.nirf < 200 && (
                   <div className="flex justify-between text-sm">
                     <span className="text-ink-3">NIRF Rank</span>
                     <span className="font-bold text-navy">#{u.nirf}</span>

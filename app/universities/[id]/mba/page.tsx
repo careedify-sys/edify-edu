@@ -28,7 +28,7 @@ export async function generateMetadata(
   const pd = u.programDetails['MBA']
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const title = `${titleName} Online MBA — Fees & Syllabus ${year} | EdifyEdu`
-  const description = `${titleName} online MBA: ${pd?.specs?.length || 5}+ specializations, fees ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}, NAAC ${u.naac}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved.`
+  const description = `${titleName} online MBA: ${pd?.specs?.length || 5}+ specializations, fees ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}, NAAC ${u.naac}${u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved.`
 
   return {
     title,
@@ -96,7 +96,7 @@ export default async function OnlineMBAPage(
               <span className="text-slate-400 text-xs">NAAC</span>
               <div className="text-white font-bold">{u.naac}</div>
             </div>
-            {u.nirf < 200 && (
+            {u.nirf > 0 && u.nirf < 200 && (
               <div className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg">
                 <span className="text-slate-400 text-xs">NIRF</span>
                 <div className="text-white font-bold">#{u.nirf}</div>
@@ -146,7 +146,7 @@ export default async function OnlineMBAPage(
                 {u.name} runs an online MBA program recognized by UGC DEB, designed for working professionals and fresh graduates looking to grow in business management. The {pd?.duration || '2-year'} program covers finance, marketing, operations, strategy, and leadership through live and recorded sessions that fit around a job schedule.
               </p>
               <p className="text-ink-2 leading-relaxed text-[15px] mt-3">
-                The university carries NAAC {u.naac} accreditation{u.nirf < 200 ? ` and holds a NIRF rank of #${u.nirf}` : ''}, giving the MBA degree the institutional credibility that matters to employers. Students select a specialization that aligns with their career goal and complete the program with an industry project or internship.
+                The university carries NAAC {u.naac} accreditation{u.nirf > 0 && u.nirf < 200 ? ` and holds a NIRF rank of #${u.nirf}` : ''}, giving the MBA degree the institutional credibility that matters to employers. Students select a specialization that aligns with their career goal and complete the program with an industry project or internship.
               </p>
             </div>
 
@@ -194,7 +194,7 @@ export default async function OnlineMBAPage(
                   <span className="text-ink-3">NAAC Grade</span>
                   <span className="font-bold text-navy">{u.naac}</span>
                 </div>
-                {u.nirf < 200 && (
+                {u.nirf > 0 && u.nirf < 200 && (
                   <div className="flex justify-between text-sm">
                     <span className="text-ink-3">NIRF Rank</span>
                     <span className="font-bold text-navy">#{u.nirf}</span>
