@@ -143,7 +143,7 @@ export default function SpecializationPageClient({ university: u, program, speci
                   </div>
                 )}
                 <h1 className="font-display flex-1" style={{fontSize:'clamp(1.75rem,4vw,3rem)',fontWeight:800,color:'#fff',lineHeight:1.15,margin:0,wordWrap:'break-word',overflowWrap:'break-word'}}>
-                  Online {program} in {specialization.replace(/,\s*$/, '')} from {cleanName}
+                  Online {program} in {specialization} from {cleanName}
                 </h1>
               </div>
               <p className="text-slate-400 text-[15px] leading-relaxed mb-5">

@@ -1,0 +1,7088 @@
+[
+  {
+    "university_slug": "alagappa-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "aligarh-muslim-university-online",
+    "program": "ba",
+    "spec_slug": "economics",
+    "spec_name": "Economics"
+  },
+  {
+    "university_slug": "aligarh-muslim-university-online",
+    "program": "ba",
+    "spec_slug": "english",
+    "spec_name": "English"
+  },
+  {
+    "university_slug": "aligarh-muslim-university-online",
+    "program": "ba",
+    "spec_slug": "history",
+    "spec_name": "History"
+  },
+  {
+    "university_slug": "aligarh-muslim-university-online",
+    "program": "ba",
+    "spec_slug": "political-science",
+    "spec_name": "Political Science"
+  },
+  {
+    "university_slug": "aligarh-muslim-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "aligarh-muslim-university-online",
+    "program": "ma",
+    "spec_slug": "english",
+    "spec_name": "English"
+  },
+  {
+    "university_slug": "aligarh-muslim-university-online",
+    "program": "ma",
+    "spec_slug": "hindi",
+    "spec_name": "Hindi"
+  },
+  {
+    "university_slug": "aligarh-muslim-university-online",
+    "program": "ma",
+    "spec_slug": "history",
+    "spec_name": "History"
+  },
+  {
+    "university_slug": "aligarh-muslim-university-online",
+    "program": "ma",
+    "spec_slug": "political-science",
+    "spec_name": "Political Science"
+  },
+  {
+    "university_slug": "aligarh-muslim-university-online",
+    "program": "ma",
+    "spec_slug": "urdu",
+    "spec_name": "Urdu"
+  },
+  {
+    "university_slug": "aligarh-muslim-university-online",
+    "program": "mcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "alliance-university-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "alliance-university-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "alliance-university-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "alliance-university-online",
+    "program": "bcom",
+    "spec_slug": "accounting-and-taxation",
+    "spec_name": "Accounting and Taxation"
+  },
+  {
+    "university_slug": "alliance-university-online",
+    "program": "bcom",
+    "spec_slug": "finance",
+    "spec_name": "Finance Management"
+  },
+  {
+    "university_slug": "alliance-university-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "alliance-university-online",
+    "program": "mba",
+    "spec_slug": "business-analytics-ai",
+    "spec_name": "Business Analytics & AI"
+  },
+  {
+    "university_slug": "alliance-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "alliance-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "alliance-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "alliance-university-online",
+    "program": "mba",
+    "spec_slug": "operations",
+    "spec_name": "Operations"
+  },
+  {
+    "university_slug": "alvas-college-online",
+    "program": "mba",
+    "spec_slug": "business-analytics-pathway",
+    "spec_name": "Business Analytics Pathway"
+  },
+  {
+    "university_slug": "amet-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "amet-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "amet-university-online",
+    "program": "mba",
+    "spec_slug": "shipping-logistics",
+    "spec_name": "Shipping & Logistics"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "ba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bba",
+    "spec_slug": "data-analytics",
+    "spec_name": "Data Analytics"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bba",
+    "spec_slug": "general-business-administration-option-for-data-analytics-specialisation",
+    "spec_name": "General Business Administration (option for Data Analytics specialisation)"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bba",
+    "spec_slug": "travel-tourism-management",
+    "spec_name": "Travel & Tourism Management"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bca",
+    "spec_slug": "cloud-security",
+    "spec_name": "Cloud Security"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bca",
+    "spec_slug": "computer-applications-4-specialisations-available",
+    "spec_name": "Computer Applications (4 specialisations available)"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bca",
+    "spec_slug": "computer-applications-data-science",
+    "spec_name": "Computer Applications – Data Science"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bca",
+    "spec_slug": "computer-applications-financial-technology-ai-with-paytm",
+    "spec_name": "Computer Applications – Financial Technology & AI (with Paytm)"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bca",
+    "spec_slug": "data-analytics",
+    "spec_name": "Data Analytics"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bca",
+    "spec_slug": "data-engineering",
+    "spec_name": "Data Engineering"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bca",
+    "spec_slug": "software-engineering",
+    "spec_name": "Software Engineering"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bcom",
+    "spec_slug": "accounting",
+    "spec_name": "Accounting"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bcom",
+    "spec_slug": "commerce",
+    "spec_name": "Commerce"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bcom",
+    "spec_slug": "commerce-honours-advanced-accounting-finance",
+    "spec_name": "Commerce Honours (Advanced Accounting & Finance)"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "bcom",
+    "spec_slug": "international-finance-accounting",
+    "spec_name": "International Finance Accounting"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "ma",
+    "spec_slug": "journalism-mass-communication",
+    "spec_name": "Journalism Mass Communication"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "ma",
+    "spec_slug": "public-policy-governance",
+    "spec_name": "Public Policy Governance"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "digital-entrepreneurship",
+    "spec_name": "Digital Entrepreneurship"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "digital-marketing-management",
+    "spec_name": "Digital Marketing Management"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "dual-specialization",
+    "spec_name": "Dual Specialization"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "entrepreneurship-and-leadership-management",
+    "spec_name": "Entrepreneurship and Leadership Management"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "finance-and-accounting-management",
+    "spec_name": "Finance and Accounting Management"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "global-finance-market",
+    "spec_name": "Global Finance Market"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "healthcare-management",
+    "spec_name": "Hospital & Healthcare Management"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "hospital-healthcare-management",
+    "spec_name": "Hospital Healthcare Management"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "hospitality-management",
+    "spec_name": "Hospitality Management"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-analytics",
+    "spec_name": "Human Resource Analytics"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "information-technology-management",
+    "spec_name": "Information Technology Management"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "insurance-management",
+    "spec_name": "Insurance Management"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business Management"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "international-finance",
+    "spec_name": "International Finance"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "international-finance-acca",
+    "spec_name": "International Finance (ACCA)"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "marketing-sales-management",
+    "spec_name": "Marketing & Sales Management"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "production-and-operations-management",
+    "spec_name": "Production and Operations Management"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "retail-management",
+    "spec_name": "Retail Management"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-machine-learning",
+    "spec_name": "Artificial Intelligence and Machine Learning"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mca",
+    "spec_slug": "blockchain-technology",
+    "spec_name": "Blockchain Technology"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mca",
+    "spec_slug": "cyber-security",
+    "spec_name": "Cyber Security"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mca",
+    "spec_slug": "financial-technology-and-ai",
+    "spec_name": "Financial Technology and AI"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mca",
+    "spec_slug": "software-engineering",
+    "spec_name": "Software Engineering"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mcom",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mcom",
+    "spec_slug": "financial-management",
+    "spec_name": "Financial Management"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "msc",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "bba",
+    "spec_slug": "banking-fintech",
+    "spec_name": "Banking & Fintech"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "bba",
+    "spec_slug": "data-analytics",
+    "spec_name": "Data Analytics"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "bba",
+    "spec_slug": "digital-marketing",
+    "spec_name": "Digital Marketing"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "bba",
+    "spec_slug": "international-finance-acca",
+    "spec_name": "International Finance (ACCA)"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "bca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "bca",
+    "spec_slug": "artificial-intelligence-and-data-science",
+    "spec_name": "Artificial Intelligence and Data Science"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "bca",
+    "spec_slug": "artificial-intelligence-data-science",
+    "spec_name": "Artificial Intelligence Data Science"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "bca",
+    "spec_slug": "general-computer-applications",
+    "spec_name": "General (Computer Applications)"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "bcom",
+    "spec_slug": "general-commerce",
+    "spec_name": "General (Commerce)"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "bcom",
+    "spec_slug": "international-finance-and-accounting",
+    "spec_name": "International Finance and Accounting"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mba",
+    "spec_slug": "artificial-intelligence",
+    "spec_name": "Artificial Intelligence"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mba",
+    "spec_slug": "environmental-social-and-governance-esg",
+    "spec_name": "Environmental, Social, and Governance (ESG)"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mba",
+    "spec_slug": "esg",
+    "spec_name": "Esg"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mba",
+    "spec_slug": "fintech",
+    "spec_name": "Fintech"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mba",
+    "spec_slug": "international-finance-and-accounting-acca",
+    "spec_name": "International Finance and Accounting (ACCA)"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mba",
+    "spec_slug": "operations",
+    "spec_name": "Operations"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mba",
+    "spec_slug": "operations-management",
+    "spec_name": "Operations Management"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence",
+    "spec_name": "Artificial Intelligence"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-machine-learning",
+    "spec_name": "Artificial Intelligence and Machine Learning"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mca",
+    "spec_slug": "cyber-security",
+    "spec_name": "Cyber Security"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mca",
+    "spec_slug": "cybersecurity",
+    "spec_name": "Cybersecurity"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mcom",
+    "spec_slug": "general-commerce-and-management",
+    "spec_name": "General (Commerce and Management)"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mcom",
+    "spec_slug": "international-finance-and-accounting",
+    "spec_name": "International Finance and Accounting"
+  },
+  {
+    "university_slug": "andhra-university-online",
+    "program": "ma",
+    "spec_slug": "sociology-education",
+    "spec_name": "Sociology – Education"
+  },
+  {
+    "university_slug": "andhra-university-online",
+    "program": "ma",
+    "spec_slug": "sociology-environmental",
+    "spec_name": "Sociology – Environmental"
+  },
+  {
+    "university_slug": "andhra-university-online",
+    "program": "ma",
+    "spec_slug": "sociology-gender",
+    "spec_name": "Sociology – Gender"
+  },
+  {
+    "university_slug": "andhra-university-online",
+    "program": "ma",
+    "spec_slug": "sociology-health",
+    "spec_name": "Sociology – Health"
+  },
+  {
+    "university_slug": "andhra-university-online",
+    "program": "ma",
+    "spec_slug": "sociology-industrial",
+    "spec_name": "Sociology – Industrial"
+  },
+  {
+    "university_slug": "andhra-university-online",
+    "program": "ma",
+    "spec_slug": "sociology-rural",
+    "spec_name": "Sociology – Rural"
+  },
+  {
+    "university_slug": "andhra-university-online",
+    "program": "ma",
+    "spec_slug": "sociology-urban",
+    "spec_name": "Sociology – Urban"
+  },
+  {
+    "university_slug": "andhra-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "andhra-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "andhra-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "andhra-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "anna-university-online",
+    "program": "mba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "anna-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "arka-jain-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "arka-jain-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "arka-jain-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "assam-don-bosco-university-online",
+    "program": "bba",
+    "spec_slug": "artificial-intelligence",
+    "spec_name": "Artificial Intelligence"
+  },
+  {
+    "university_slug": "assam-don-bosco-university-online",
+    "program": "bba",
+    "spec_slug": "entrepreneurship",
+    "spec_name": "Entrepreneurship"
+  },
+  {
+    "university_slug": "assam-don-bosco-university-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Finance Management"
+  },
+  {
+    "university_slug": "assam-don-bosco-university-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "assam-don-bosco-university-online",
+    "program": "bba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "assam-don-bosco-university-online",
+    "program": "bca",
+    "spec_slug": "computer-science-and-information-technology",
+    "spec_name": "Computer Science and Information Technology"
+  },
+  {
+    "university_slug": "assam-don-bosco-university-online",
+    "program": "ma",
+    "spec_slug": "governance",
+    "spec_name": "Governance"
+  },
+  {
+    "university_slug": "assam-don-bosco-university-online",
+    "program": "ma",
+    "spec_slug": "public-administration",
+    "spec_name": "Public Administration"
+  },
+  {
+    "university_slug": "assam-don-bosco-university-online",
+    "program": "ma",
+    "spec_slug": "public-policy",
+    "spec_name": "Public Policy"
+  },
+  {
+    "university_slug": "assam-don-bosco-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance Management"
+  },
+  {
+    "university_slug": "assam-don-bosco-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "assam-don-bosco-university-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "assam-don-bosco-university-online",
+    "program": "mba",
+    "spec_slug": "operations-management",
+    "spec_name": "Operations Management"
+  },
+  {
+    "university_slug": "assam-don-bosco-university-online",
+    "program": "mba",
+    "spec_slug": "project-management",
+    "spec_name": "Project Management"
+  },
+  {
+    "university_slug": "assam-don-bosco-university-online",
+    "program": "mba",
+    "spec_slug": "supply-chain-management",
+    "spec_name": "Supply Chain Management"
+  },
+  {
+    "university_slug": "assam-don-bosco-university-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-machine-learning",
+    "spec_name": "Artificial Intelligence & Machine Learning"
+  },
+  {
+    "university_slug": "assam-don-bosco-university-online",
+    "program": "mca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "assam-down-town-university-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-machine-learning",
+    "spec_name": "Artificial Intelligence & Machine Learning"
+  },
+  {
+    "university_slug": "assam-down-town-university-online",
+    "program": "mca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "bharathiar-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "bharathidasan-university-online",
+    "program": "ba",
+    "spec_slug": "english",
+    "spec_name": "English"
+  },
+  {
+    "university_slug": "bharathidasan-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "bharathidasan-university-online",
+    "program": "ma",
+    "spec_slug": "economics",
+    "spec_name": "Economics"
+  },
+  {
+    "university_slug": "bharathidasan-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "bharathidasan-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource"
+  },
+  {
+    "university_slug": "bharathidasan-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "bharathidasan-university-online",
+    "program": "mba",
+    "spec_slug": "operations",
+    "spec_name": "Operations"
+  },
+  {
+    "university_slug": "bharathidasan-university-online",
+    "program": "mba",
+    "spec_slug": "systems",
+    "spec_name": "Systems"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "bba",
+    "spec_slug": "agribusiness",
+    "spec_name": "Agribusiness"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "bba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "bba",
+    "spec_slug": "event-management",
+    "spec_name": "Event Management"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Financial Management"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "bba",
+    "spec_slug": "hospitality",
+    "spec_name": "Hospitality"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "HR"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "bba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "bba",
+    "spec_slug": "it",
+    "spec_name": "IT"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "bba",
+    "spec_slug": "production-operations",
+    "spec_name": "Production & Operations"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "bba",
+    "spec_slug": "project-management",
+    "spec_name": "Project Management"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "bba",
+    "spec_slug": "retail",
+    "spec_name": "Retail"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "bba",
+    "spec_slug": "sports",
+    "spec_name": "Sports"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "bca",
+    "spec_slug": "data-analysis",
+    "spec_name": "Data Analysis"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "bca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "bca",
+    "spec_slug": "information-security",
+    "spec_name": "Information Security"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "bca",
+    "spec_slug": "information-systems",
+    "spec_name": "Information Systems"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mba",
+    "spec_slug": "agribusiness",
+    "spec_name": "Agribusiness"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mba",
+    "spec_slug": "event-management",
+    "spec_name": "Event Management"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mba",
+    "spec_slug": "hospitality",
+    "spec_name": "Hospitality"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mba",
+    "spec_slug": "information-technology",
+    "spec_name": "Information Technology"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mba",
+    "spec_slug": "infrastructure",
+    "spec_name": "Infrastructure"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mba",
+    "spec_slug": "production-operations",
+    "spec_name": "Production & Operations"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mba",
+    "spec_slug": "project-management",
+    "spec_name": "Project Management"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mba",
+    "spec_slug": "retail",
+    "spec_name": "Retail"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mba",
+    "spec_slug": "sports",
+    "spec_name": "Sports"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mca",
+    "spec_slug": "big-data",
+    "spec_name": "Big Data"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mca",
+    "spec_slug": "cloud-computing",
+    "spec_name": "Cloud Computing"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mca",
+    "spec_slug": "cyber-security",
+    "spec_name": "Cyber Security"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mca",
+    "spec_slug": "data-management",
+    "spec_name": "Data Management"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mca",
+    "spec_slug": "dot-net",
+    "spec_name": "Dot Net"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mca",
+    "spec_slug": "dot-net-technologies",
+    "spec_name": "Dot Net Technologies"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mca",
+    "spec_slug": "information-systems",
+    "spec_name": "Information Systems"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mca",
+    "spec_slug": "iot",
+    "spec_name": "IOT"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mca",
+    "spec_slug": "linux",
+    "spec_name": "Linux"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mca",
+    "spec_slug": "mobile-computing",
+    "spec_name": "Mobile Computing"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mca",
+    "spec_slug": "net-centric-technologies",
+    "spec_name": "Net Centric Technologies"
+  },
+  {
+    "university_slug": "bharati-vidyapeeth-university-online",
+    "program": "mca",
+    "spec_slug": "open-source-technologies",
+    "spec_name": "Open-Source Technologies"
+  },
+  {
+    "university_slug": "bits-pilani-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "bits-pilani-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "bits-pilani-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource"
+  },
+  {
+    "university_slug": "bits-pilani-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "bs-abdur-rahman-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Financial Management"
+  },
+  {
+    "university_slug": "bs-abdur-rahman-university-online",
+    "program": "mba",
+    "spec_slug": "human-resources-management",
+    "spec_name": "Human Resources Management"
+  },
+  {
+    "university_slug": "bs-abdur-rahman-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "central-university-himachal-pradesh-online",
+    "program": "ma",
+    "spec_slug": "economics",
+    "spec_name": "Economics"
+  },
+  {
+    "university_slug": "central-university-himachal-pradesh-online",
+    "program": "ma",
+    "spec_slug": "history",
+    "spec_name": "History"
+  },
+  {
+    "university_slug": "central-university-himachal-pradesh-online",
+    "program": "ma",
+    "spec_slug": "political-science",
+    "spec_name": "Political Science"
+  },
+  {
+    "university_slug": "central-university-himachal-pradesh-online",
+    "program": "mba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "central-university-himachal-pradesh-online",
+    "program": "mca",
+    "spec_slug": "computer-applications",
+    "spec_name": "Computer Applications"
+  },
+  {
+    "university_slug": "centurion-university-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "centurion-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "centurion-university-online",
+    "program": "mba",
+    "spec_slug": "healthcare-management",
+    "spec_name": "Healthcare Management"
+  },
+  {
+    "university_slug": "centurion-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "bba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "bca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "ma",
+    "spec_slug": "economics",
+    "spec_name": "economics"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "ma",
+    "spec_slug": "english",
+    "spec_name": "English"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "ma",
+    "spec_slug": "focus-on-digital-journalism-pr-corporate-communication",
+    "spec_name": "Focus on digital journalism, PR & corporate communication"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "airlines-airport-management",
+    "spec_name": "Airlines & Airport Management"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "banking-insurance",
+    "spec_name": "Banking & Insurance"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "brand-management",
+    "spec_name": "Brand Management"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "data-science-artificial-intelligence",
+    "spec_name": "Data Science & Artificial Intelligence"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "digital-marketing",
+    "spec_name": "Digital Marketing"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "disaster-management",
+    "spec_name": "Disaster Management"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "entrepreneurship",
+    "spec_name": "Entrepreneurship"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "event-management",
+    "spec_name": "Event Management"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "fintech",
+    "spec_name": "FinTech"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "hospital-management",
+    "spec_name": "Hospital Management"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "information-technology",
+    "spec_name": "Information Technology"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "international-relations",
+    "spec_name": "International Relations"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "logistics-supply-chain-management",
+    "spec_name": "Logistics & Supply Chain Management"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "media-management",
+    "spec_name": "Media Management"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "operations-management",
+    "spec_name": "Operations Management"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "retail-management",
+    "spec_name": "Retail Management"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mba",
+    "spec_slug": "travel-tourism-management",
+    "spec_name": "Travel & Tourism Management"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-machine-learning",
+    "spec_name": "Artificial Intelligence and Machine Learning"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mca",
+    "spec_slug": "cloud-computing",
+    "spec_name": "Cloud Computing"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mca",
+    "spec_slug": "data-analytics",
+    "spec_name": "Data Analytics"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "mca",
+    "spec_slug": "full-stack-development",
+    "spec_name": "Full Stack Development"
+  },
+  {
+    "university_slug": "chandigarh-university-online",
+    "program": "msc",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "charusat-university-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "charusat-university-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "HR"
+  },
+  {
+    "university_slug": "charusat-university-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "charusat-university-online",
+    "program": "bca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "charusat-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance Management"
+  },
+  {
+    "university_slug": "charusat-university-online",
+    "program": "mba",
+    "spec_slug": "hr-management",
+    "spec_name": "HR Management"
+  },
+  {
+    "university_slug": "charusat-university-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "charusat-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "chhatrapati-shahu-ji-maharaj-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "chhatrapati-shahu-ji-maharaj-university-online",
+    "program": "bca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "chhatrapati-shahu-ji-maharaj-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "chhatrapati-shahu-ji-maharaj-university-online",
+    "program": "mba",
+    "spec_slug": "general-contact-university-for-specialisations",
+    "spec_name": "General (contact university for specialisations)"
+  },
+  {
+    "university_slug": "chhatrapati-shahu-ji-maharaj-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "chhatrapati-shahu-ji-maharaj-university-online",
+    "program": "mcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "chitkara-university-online",
+    "program": "bba",
+    "spec_slug": "data-science-ai",
+    "spec_name": "Data Science & AI"
+  },
+  {
+    "university_slug": "chitkara-university-online",
+    "program": "bba",
+    "spec_slug": "digital-sciences-business-management",
+    "spec_name": "Digital Sciences & Business Management"
+  },
+  {
+    "university_slug": "chitkara-university-online",
+    "program": "bba",
+    "spec_slug": "fintech-ai",
+    "spec_name": "FinTech & AI"
+  },
+  {
+    "university_slug": "chitkara-university-online",
+    "program": "bba",
+    "spec_slug": "logistics-supply-chain-management",
+    "spec_name": "Logistics & Supply Chain Management"
+  },
+  {
+    "university_slug": "chitkara-university-online",
+    "program": "bca",
+    "spec_slug": "artificial-intelligence-machine-learning",
+    "spec_name": "AI & Machine Learning"
+  },
+  {
+    "university_slug": "chitkara-university-online",
+    "program": "bca",
+    "spec_slug": "cyber-security",
+    "spec_name": "Cyber Security"
+  },
+  {
+    "university_slug": "chitkara-university-online",
+    "program": "bca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "chitkara-university-online",
+    "program": "bcom",
+    "spec_slug": "applied-finance",
+    "spec_name": "Applied Finance"
+  },
+  {
+    "university_slug": "chitkara-university-online",
+    "program": "mba",
+    "spec_slug": "cyber-security",
+    "spec_name": "Cyber Security"
+  },
+  {
+    "university_slug": "chitkara-university-online",
+    "program": "mba",
+    "spec_slug": "data-science-artificial-intelligence",
+    "spec_name": "Data Science & Artificial Intelligence"
+  },
+  {
+    "university_slug": "chitkara-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "chitkara-university-online",
+    "program": "mba",
+    "spec_slug": "global-accounting",
+    "spec_name": "Global Accounting"
+  },
+  {
+    "university_slug": "chitkara-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "chitkara-university-online",
+    "program": "mba",
+    "spec_slug": "international-finance-accounting",
+    "spec_name": "International Finance & Accounting"
+  },
+  {
+    "university_slug": "chitkara-university-online",
+    "program": "mba",
+    "spec_slug": "international-finance-accounting-acca",
+    "spec_name": "International Finance & Accounting (ACCA)"
+  },
+  {
+    "university_slug": "chitkara-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "chitkara-university-online",
+    "program": "mba",
+    "spec_slug": "pharmaceutical-management",
+    "spec_name": "Pharmaceutical Management"
+  },
+  {
+    "university_slug": "chitkara-university-online",
+    "program": "mba",
+    "spec_slug": "supply-chain-logistics",
+    "spec_name": "Supply Chain & Logistics"
+  },
+  {
+    "university_slug": "christ-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "christ-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "christ-university-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "christ-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "christ-university-online",
+    "program": "mca",
+    "spec_slug": "computer-science-and-it",
+    "spec_name": "Computer Science and IT"
+  },
+  {
+    "university_slug": "datta-meghe-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Financial Management"
+  },
+  {
+    "university_slug": "datta-meghe-university-online",
+    "program": "mba",
+    "spec_slug": "it-systems",
+    "spec_name": "IT & Systems"
+  },
+  {
+    "university_slug": "datta-meghe-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "datta-meghe-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "dayalbagh-educational-institute-online",
+    "program": "ba",
+    "spec_slug": "social-science",
+    "spec_name": "Social Science"
+  },
+  {
+    "university_slug": "dayalbagh-educational-institute-online",
+    "program": "bba",
+    "spec_slug": "management",
+    "spec_name": "Management"
+  },
+  {
+    "university_slug": "dayalbagh-educational-institute-online",
+    "program": "bcom",
+    "spec_slug": "commerce",
+    "spec_name": "Commerce"
+  },
+  {
+    "university_slug": "dayalbagh-educational-institute-online",
+    "program": "ma",
+    "spec_slug": "theology",
+    "spec_name": "Theology"
+  },
+  {
+    "university_slug": "dayalbagh-educational-institute-online",
+    "program": "mcom",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "bba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "bba",
+    "spec_slug": "digital-marketing",
+    "spec_name": "Digital Marketing"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "bba",
+    "spec_slug": "supply-chain-management",
+    "spec_name": "Supply Chain Management"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "bca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "bcom",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "bcom",
+    "spec_slug": "fintech",
+    "spec_name": "FinTech"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "bcom",
+    "spec_slug": "supply-chain-management",
+    "spec_name": "Supply Chain Management"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mba",
+    "spec_slug": "artificial-intelligence",
+    "spec_name": "Artificial Intelligence"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mba",
+    "spec_slug": "entrepreneurship-management",
+    "spec_name": "Entrepreneurship Management"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mba",
+    "spec_slug": "financial-management-fintech-focus",
+    "spec_name": "Financial Management (FinTech focus)"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mba",
+    "spec_slug": "it-systems-management",
+    "spec_name": "IT & Systems Management"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mba",
+    "spec_slug": "supply-chain-management",
+    "spec_name": "Supply Chain Management"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence",
+    "spec_name": "Artificial Intelligence"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mca",
+    "spec_slug": "big-data-analytics",
+    "spec_name": "Big Data Analytics"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mca",
+    "spec_slug": "blockchain-technologies",
+    "spec_name": "Blockchain Technologies"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mca",
+    "spec_slug": "business-data-analytics",
+    "spec_name": "Business Data Analytics"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mca",
+    "spec_slug": "business-intelligence-technology",
+    "spec_name": "Business Intelligence Technology"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mca",
+    "spec_slug": "cloud-computing-technologies",
+    "spec_name": "Cloud Computing Technologies"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mca",
+    "spec_slug": "data-analytics-visualization",
+    "spec_name": "Data Analytics & Visualization"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mca",
+    "spec_slug": "deep-learning",
+    "spec_name": "Deep Learning"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mca",
+    "spec_slug": "industrial-iot-automation",
+    "spec_name": "Industrial IoT & Automation"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mca",
+    "spec_slug": "internet-of-things-iot",
+    "spec_name": "Internet of Things (IoT)"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mca",
+    "spec_slug": "mobile-application-development",
+    "spec_name": "Mobile Application Development"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mca",
+    "spec_slug": "natural-language-processing",
+    "spec_name": "Natural Language Processing"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mca",
+    "spec_slug": "quantum-computing",
+    "spec_name": "Quantum Computing"
+  },
+  {
+    "university_slug": "dayananda-sagar-university-online",
+    "program": "mca",
+    "spec_slug": "quantum-machine-learning",
+    "spec_name": "Quantum Machine Learning"
+  },
+  {
+    "university_slug": "desh-bhagat-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "desh-bhagat-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "desh-bhagat-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "desh-bhagat-university-online",
+    "program": "mca",
+    "spec_slug": "ai-and-data-science",
+    "spec_name": "AI and Data Science"
+  },
+  {
+    "university_slug": "desh-bhagat-university-online",
+    "program": "mca",
+    "spec_slug": "cyber-security",
+    "spec_name": "Cyber Security"
+  },
+  {
+    "university_slug": "dr-babasaheb-ambedkar-open-university-online",
+    "program": "bca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "dr-babasaheb-ambedkar-open-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "dr-babasaheb-ambedkar-open-university-online",
+    "program": "ma",
+    "spec_slug": "economics",
+    "spec_name": "Economics"
+  },
+  {
+    "university_slug": "dr-babasaheb-ambedkar-open-university-online",
+    "program": "ma",
+    "spec_slug": "english-literature",
+    "spec_name": "English Literature"
+  },
+  {
+    "university_slug": "dr-babasaheb-ambedkar-open-university-online",
+    "program": "ma",
+    "spec_slug": "gujarati-literature",
+    "spec_name": "Gujarati Literature"
+  },
+  {
+    "university_slug": "dr-babasaheb-ambedkar-open-university-online",
+    "program": "ma",
+    "spec_slug": "hindi-literature",
+    "spec_name": "Hindi Literature"
+  },
+  {
+    "university_slug": "dr-babasaheb-ambedkar-open-university-online",
+    "program": "ma",
+    "spec_slug": "history",
+    "spec_name": "History"
+  },
+  {
+    "university_slug": "dr-babasaheb-ambedkar-open-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "dr-babasaheb-ambedkar-open-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "HR"
+  },
+  {
+    "university_slug": "dr-babasaheb-ambedkar-open-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "dr-babasaheb-ambedkar-open-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "dr-babasaheb-ambedkar-open-university-online",
+    "program": "mcom",
+    "spec_slug": "accounting",
+    "spec_name": "Accounting"
+  },
+  {
+    "university_slug": "dr-babasaheb-ambedkar-open-university-online",
+    "program": "mcom",
+    "spec_slug": "bfsi",
+    "spec_name": "BFSI"
+  },
+  {
+    "university_slug": "dr-babasaheb-ambedkar-open-university-online",
+    "program": "mcom",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mba",
+    "spec_slug": "agri-business",
+    "spec_name": "Agri Business"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mba",
+    "spec_slug": "artificial-intelligence-machine-learning",
+    "spec_name": "AI & ML"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mba",
+    "spec_slug": "blockchain",
+    "spec_name": "Blockchain"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mba",
+    "spec_slug": "digital-marketing-management",
+    "spec_name": "Digital Marketing Management"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance Management"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mba",
+    "spec_slug": "fintech-management",
+    "spec_name": "FinTech Management"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mba",
+    "spec_slug": "hospital-administration-healthcare-management",
+    "spec_name": "Hospital Administration & Healthcare Management"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business Management"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mba",
+    "spec_slug": "it-management",
+    "spec_name": "IT Management"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mba",
+    "spec_slug": "logistics-supply-chain-management",
+    "spec_name": "Logistics & Supply Chain Management"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mba",
+    "spec_slug": "operations-management",
+    "spec_name": "Operations Management"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mba",
+    "spec_slug": "project-mgmt",
+    "spec_name": "Project Mgmt"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "dr-mgr-educational-research-institute-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance Management"
+  },
+  {
+    "university_slug": "dr-mgr-educational-research-institute-online",
+    "program": "mba",
+    "spec_slug": "healthcare-management",
+    "spec_name": "Hospital & Healthcare Management"
+  },
+  {
+    "university_slug": "dr-mgr-educational-research-institute-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "dr-mgr-educational-research-institute-online",
+    "program": "mba",
+    "spec_slug": "information-systems",
+    "spec_name": "Information Systems"
+  },
+  {
+    "university_slug": "dr-mgr-educational-research-institute-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "dr-mgr-educational-research-institute-online",
+    "program": "mba",
+    "spec_slug": "operations-management",
+    "spec_name": "Operations Management"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "bba",
+    "spec_slug": "aviation",
+    "spec_name": "Aviation"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "bba",
+    "spec_slug": "event-mgmt",
+    "spec_name": "Event Mgmt"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "bba",
+    "spec_slug": "hospital-mgmt",
+    "spec_name": "Hospital Mgmt"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "HR"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "bba",
+    "spec_slug": "invest-bank",
+    "spec_name": "Invest Bank"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "bba",
+    "spec_slug": "logistics",
+    "spec_name": "Logistics"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "bba",
+    "spec_slug": "retail-ops",
+    "spec_name": "Retail Ops"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "bba",
+    "spec_slug": "sports-mgmt",
+    "spec_name": "Sports Mgmt"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "bba",
+    "spec_slug": "travel-tourism",
+    "spec_name": "Travel & Tourism"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "bca",
+    "spec_slug": "bca",
+    "spec_name": "BCA"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "mba",
+    "spec_slug": "data-science-abd-business-analytics",
+    "spec_name": "Data Science abd Business analytics"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "mba",
+    "spec_slug": "digital-mktg",
+    "spec_name": "Digital Mktg"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "mba",
+    "spec_slug": "entrepreneur",
+    "spec_name": "Entrepreneur"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "mba",
+    "spec_slug": "event-mgmt",
+    "spec_name": "Event Mgmt"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "mba",
+    "spec_slug": "healthcare",
+    "spec_name": "Healthcare"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "HRM"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "mba",
+    "spec_slug": "intl-business",
+    "spec_name": "Intl Business"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "mba",
+    "spec_slug": "logistics-scm",
+    "spec_name": "Logistics SCM"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "mba",
+    "spec_slug": "retail",
+    "spec_name": "Retail"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "mba",
+    "spec_slug": "sales-mktg",
+    "spec_name": "Sales & Mktg"
+  },
+  {
+    "university_slug": "dy-patil-university-online",
+    "program": "mca",
+    "spec_slug": "mca",
+    "spec_name": "MCA"
+  },
+  {
+    "university_slug": "galgotias-university-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "galgotias-university-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource"
+  },
+  {
+    "university_slug": "galgotias-university-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "galgotias-university-online",
+    "program": "bba",
+    "spec_slug": "operations",
+    "spec_name": "Operations"
+  },
+  {
+    "university_slug": "galgotias-university-online",
+    "program": "bca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "galgotias-university-online",
+    "program": "ma",
+    "spec_slug": "economics",
+    "spec_name": "Economics"
+  },
+  {
+    "university_slug": "galgotias-university-online",
+    "program": "ma",
+    "spec_slug": "english-literature-language",
+    "spec_name": "English Literature & Language"
+  },
+  {
+    "university_slug": "galgotias-university-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "galgotias-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance Management"
+  },
+  {
+    "university_slug": "galgotias-university-online",
+    "program": "mba",
+    "spec_slug": "healthcare-management",
+    "spec_name": "Healthcare Management"
+  },
+  {
+    "university_slug": "galgotias-university-online",
+    "program": "mba",
+    "spec_slug": "hr-management",
+    "spec_name": "HR Management"
+  },
+  {
+    "university_slug": "galgotias-university-online",
+    "program": "mba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business Management"
+  },
+  {
+    "university_slug": "galgotias-university-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "galgotias-university-online",
+    "program": "mba",
+    "spec_slug": "operations-management",
+    "spec_name": "Operations Management"
+  },
+  {
+    "university_slug": "galgotias-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "galgotias-university-online",
+    "program": "mcom",
+    "spec_slug": "accountancy",
+    "spec_name": "Accountancy"
+  },
+  {
+    "university_slug": "galgotias-university-online",
+    "program": "mcom",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "ganpat-university-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "ganpat-university-online",
+    "program": "bba",
+    "spec_slug": "ib",
+    "spec_name": "IB"
+  },
+  {
+    "university_slug": "ganpat-university-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "ganpat-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "ganpat-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "HR"
+  },
+  {
+    "university_slug": "ganpat-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "ganpat-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "gla-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "gla-university-online",
+    "program": "bca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "gla-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "gla-university-online",
+    "program": "mba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "gla-university-online",
+    "program": "mba",
+    "spec_slug": "banking-financial-services",
+    "spec_name": "Banking & Financial Services"
+  },
+  {
+    "university_slug": "gla-university-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "gla-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "gls-university-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "gls-university-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "HR"
+  },
+  {
+    "university_slug": "gls-university-online",
+    "program": "bba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "gls-university-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "gls-university-online",
+    "program": "bba",
+    "spec_slug": "public",
+    "spec_name": "Public"
+  },
+  {
+    "university_slug": "gls-university-online",
+    "program": "bca",
+    "spec_slug": "artificial-intelligence-machine-learning",
+    "spec_name": "AI & Machine Learning"
+  },
+  {
+    "university_slug": "gls-university-online",
+    "program": "bca",
+    "spec_slug": "web-development",
+    "spec_name": "Web Development"
+  },
+  {
+    "university_slug": "gls-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "gls-university-online",
+    "program": "bcom",
+    "spec_slug": "finance-accounting",
+    "spec_name": "Finance & Accounting"
+  },
+  {
+    "university_slug": "gls-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "gls-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "gls-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "gls-university-online",
+    "program": "mca",
+    "spec_slug": "computer-science-and-it",
+    "spec_name": "Computer Science and IT"
+  },
+  {
+    "university_slug": "gls-university-online",
+    "program": "mcom",
+    "spec_slug": "accounting",
+    "spec_name": "Accounting"
+  },
+  {
+    "university_slug": "gls-university-online",
+    "program": "mcom",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "gls-university-online",
+    "program": "mcom",
+    "spec_slug": "taxation",
+    "spec_name": "Taxation"
+  },
+  {
+    "university_slug": "graphic-era-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "gujarat-technological-university-online",
+    "program": "mba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "gujarat-university-online",
+    "program": "ba",
+    "spec_slug": "english",
+    "spec_name": "English"
+  },
+  {
+    "university_slug": "gujarat-university-online",
+    "program": "bca",
+    "spec_slug": "computer-applications",
+    "spec_name": "Computer Applications"
+  },
+  {
+    "university_slug": "gujarat-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "gujarat-university-online",
+    "program": "ma",
+    "spec_slug": "english-literature",
+    "spec_name": "English Literature"
+  },
+  {
+    "university_slug": "gujarat-university-online",
+    "program": "mcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "gujarat-university-online",
+    "program": "msc",
+    "spec_slug": "mathematics",
+    "spec_name": "Mathematics"
+  },
+  {
+    "university_slug": "guru-ghasidas-vishwavidyalaya-online",
+    "program": "bca",
+    "spec_slug": "computer-science-and-it",
+    "spec_name": "Computer Science and IT"
+  },
+  {
+    "university_slug": "guru-ghasidas-vishwavidyalaya-online",
+    "program": "bcom",
+    "spec_slug": "commerce",
+    "spec_name": "Commerce"
+  },
+  {
+    "university_slug": "guru-ghasidas-vishwavidyalaya-online",
+    "program": "ma",
+    "spec_slug": "english-literature",
+    "spec_name": "English Literature"
+  },
+  {
+    "university_slug": "guru-ghasidas-vishwavidyalaya-online",
+    "program": "ma",
+    "spec_slug": "political-science",
+    "spec_name": "Political Science"
+  },
+  {
+    "university_slug": "guru-ghasidas-vishwavidyalaya-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "guru-ghasidas-vishwavidyalaya-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "guru-ghasidas-vishwavidyalaya-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "guru-ghasidas-vishwavidyalaya-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "guru-ghasidas-vishwavidyalaya-online",
+    "program": "mca",
+    "spec_slug": "computer-science-and-information-technology",
+    "spec_name": "Computer Science and Information Technology"
+  },
+  {
+    "university_slug": "guru-ghasidas-vishwavidyalaya-online",
+    "program": "mcom",
+    "spec_slug": "commerce",
+    "spec_name": "Commerce"
+  },
+  {
+    "university_slug": "guru-kashi-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "guru-nanak-dev-university-online",
+    "program": "mba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "guru-nanak-dev-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "guru-nanak-dev-university-online",
+    "program": "mca",
+    "spec_slug": "general-computer-applications",
+    "spec_name": "General Computer Applications"
+  },
+  {
+    "university_slug": "guru-nanak-dev-university-online",
+    "program": "mcom",
+    "spec_slug": "commerce",
+    "spec_name": "Commerce"
+  },
+  {
+    "university_slug": "hindustan-institute-technology-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "hindustan-institute-technology-online",
+    "program": "bca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "hindustan-institute-technology-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "hindustan-institute-technology-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "hindustan-institute-technology-online",
+    "program": "mba",
+    "spec_slug": "hospital-management",
+    "spec_name": "Hospital Management"
+  },
+  {
+    "university_slug": "hindustan-institute-technology-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "hindustan-institute-technology-online",
+    "program": "mba",
+    "spec_slug": "logistics-and-supply-chain-management",
+    "spec_name": "Logistics and Supply Chain Management"
+  },
+  {
+    "university_slug": "hindustan-institute-technology-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "hindustan-institute-technology-online",
+    "program": "mba",
+    "spec_slug": "operations-management",
+    "spec_name": "Operations Management"
+  },
+  {
+    "university_slug": "hindustan-institute-technology-online",
+    "program": "mca",
+    "spec_slug": "computer-science-and-it",
+    "spec_name": "Computer Science and IT"
+  },
+  {
+    "university_slug": "hindustan-institute-technology-online",
+    "program": "mca",
+    "spec_slug": "cyber-security-cloud-computing",
+    "spec_name": "Cyber Security & Cloud Computing"
+  },
+  {
+    "university_slug": "hindustan-institute-technology-online",
+    "program": "mca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "icfai-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "icfai-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "icfai-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "iift-online",
+    "program": "mba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "ba",
+    "spec_slug": "english",
+    "spec_name": "English"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "ba",
+    "spec_slug": "hindi",
+    "spec_name": "Hindi"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "ba",
+    "spec_slug": "history",
+    "spec_name": "History"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "ba",
+    "spec_slug": "political-science",
+    "spec_name": "Political Science"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "ba",
+    "spec_slug": "urdu",
+    "spec_name": "Urdu"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "bca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "ma",
+    "spec_slug": "community-development",
+    "spec_name": "Community Development"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "ma",
+    "spec_slug": "english",
+    "spec_name": "English"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "ma",
+    "spec_slug": "hindi",
+    "spec_name": "Hindi"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "ma",
+    "spec_slug": "history",
+    "spec_name": "History"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "ma",
+    "spec_slug": "medical-psychiatric-social",
+    "spec_name": "Medical & Psychiatric Social"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "ma",
+    "spec_slug": "pol-science",
+    "spec_name": "Pol Science"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "ma",
+    "spec_slug": "sociology",
+    "spec_name": "Sociology"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "ma",
+    "spec_slug": "urdu",
+    "spec_name": "Urdu"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "mba",
+    "spec_slug": "information-system-management",
+    "spec_name": "INFORMATION SYSTEM MANAGEMENT"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "mba",
+    "spec_slug": "international-business",
+    "spec_name": "INTERNATIONAL BUSINESS"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "mba",
+    "spec_slug": "investment-management",
+    "spec_name": "INVESTMENT MANAGEMENT"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "mba",
+    "spec_slug": "retail-management",
+    "spec_name": "RETAIL MANAGEMENT"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "mca",
+    "spec_slug": "computer-science",
+    "spec_name": "Computer Science"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "mcom",
+    "spec_slug": "accounting-finance",
+    "spec_name": "Accounting & Finance"
+  },
+  {
+    "university_slug": "integral-university-online",
+    "program": "msc",
+    "spec_slug": "mathematics",
+    "spec_name": "Mathematics"
+  },
+  {
+    "university_slug": "jagannath-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "jagannath-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "jagannath-university-online",
+    "program": "mba",
+    "spec_slug": "information-technology",
+    "spec_name": "Information Technology"
+  },
+  {
+    "university_slug": "jagannath-university-online",
+    "program": "mba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "jagannath-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "bba",
+    "spec_slug": "data-science-analytics",
+    "spec_name": "Data Science & Analytics"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "bba",
+    "spec_slug": "digital-marketing",
+    "spec_name": "Digital Marketing"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "bca",
+    "spec_slug": "artificial-intelligence",
+    "spec_name": "Artificial Intelligence"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "bca",
+    "spec_slug": "cloud-computing",
+    "spec_name": "Cloud Computing"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "bca",
+    "spec_slug": "computer-science-it",
+    "spec_name": "Computer Science & IT"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "bca",
+    "spec_slug": "cyber-security",
+    "spec_name": "Cyber Security"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "bca",
+    "spec_slug": "data-science-analytics",
+    "spec_name": "Data Science & Analytics"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "ma",
+    "spec_slug": "economics",
+    "spec_name": "Economics"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "ma",
+    "spec_slug": "english",
+    "spec_name": "English"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "ma",
+    "spec_slug": "public-policy",
+    "spec_name": "Public Policy"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "artificial-intelligence",
+    "spec_name": "Artificial Intelligence"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "banking-and-finance",
+    "spec_name": "Banking and Finance"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "business-intelligence-and-analytics",
+    "spec_name": "Business Intelligence and Analytics"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "data-science-and-analytics",
+    "spec_name": "Data Science and Analytics"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "digital-marketing-and-e-commerce",
+    "spec_name": "Digital Marketing and E-Commerce"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "entrepreneurship-and-venture-creation",
+    "spec_name": "Entrepreneurship and Venture Creation"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "finance-business-analytics",
+    "spec_name": "Finance & Business Analytics"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "finance-marketing",
+    "spec_name": "Finance & Marketing"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management-finance",
+    "spec_name": "Human Resource Management & Finance"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "information-technology-management",
+    "spec_name": "Information Technology Management"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "international-finance-acca",
+    "spec_name": "International Finance (ACCA)"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "marketing-human-resource-management",
+    "spec_name": "Marketing & Human Resource Management"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "project-management",
+    "spec_name": "Project Management"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "supply-chain-production-and-operations-management",
+    "spec_name": "Supply Chain, Production and Operations Management"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence",
+    "spec_name": "Artificial Intelligence"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mca",
+    "spec_slug": "cloud-computing",
+    "spec_name": "Cloud Computing"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mca",
+    "spec_slug": "computer-science-and-information-technology",
+    "spec_name": "Computer Science and Information Technology"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mca",
+    "spec_slug": "cyber-security",
+    "spec_name": "Cyber Security"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mca",
+    "spec_slug": "data-analytics",
+    "spec_name": "Data Analytics"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mca",
+    "spec_slug": "devops",
+    "spec_name": "DevOps"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mca",
+    "spec_slug": "full-stack-development",
+    "spec_name": "Full Stack Development"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mca",
+    "spec_slug": "natural-language-processing-large-language-models-development",
+    "spec_name": "Natural Language Processing & Large Language Models Development"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mcom",
+    "spec_slug": "accounting-finance",
+    "spec_name": "Accounting & Finance"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mcom",
+    "spec_slug": "international-finance-accounting-acca",
+    "spec_name": "International Finance & Accounting (ACCA)"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mcom",
+    "spec_slug": "professional-accounting-finance-cpa-us",
+    "spec_name": "Professional Accounting & Finance (CPA US)"
+  },
+  {
+    "university_slug": "jaipur-national-university-online",
+    "program": "bba",
+    "spec_slug": "aviation-management",
+    "spec_name": "Aviation Management"
+  },
+  {
+    "university_slug": "jaipur-national-university-online",
+    "program": "bba",
+    "spec_slug": "digital-marketing",
+    "spec_name": "Digital Marketing"
+  },
+  {
+    "university_slug": "jaipur-national-university-online",
+    "program": "bba",
+    "spec_slug": "fintech",
+    "spec_name": "Fintech"
+  },
+  {
+    "university_slug": "jaipur-national-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "jamia-hamdard-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "jamia-millia-islamia-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Financial Management"
+  },
+  {
+    "university_slug": "jamia-millia-islamia-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "jamia-millia-islamia-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "jamia-millia-islamia-online",
+    "program": "mba",
+    "spec_slug": "operations-management",
+    "spec_name": "Operations Management"
+  },
+  {
+    "university_slug": "jaypee-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "jaypee-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "jaypee-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource"
+  },
+  {
+    "university_slug": "jaypee-university-online",
+    "program": "mba",
+    "spec_slug": "it-business-analytics",
+    "spec_name": "IT & Business Analytics"
+  },
+  {
+    "university_slug": "jaypee-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "jss-university-online",
+    "program": "bba",
+    "spec_slug": "hospital-and-health-system-management",
+    "spec_name": "Hospital and Health System Management"
+  },
+  {
+    "university_slug": "jss-university-online",
+    "program": "mba",
+    "spec_slug": "hospital-administration",
+    "spec_name": "Hospital Administration"
+  },
+  {
+    "university_slug": "jss-university-online",
+    "program": "mba",
+    "spec_slug": "pharmacy-administration",
+    "spec_name": "Pharmacy Administration"
+  },
+  {
+    "university_slug": "kalasalingam-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "kalasalingam-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "kalasalingam-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "ba",
+    "spec_slug": "economics",
+    "spec_name": "Economics"
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "ba",
+    "spec_slug": "history",
+    "spec_name": "History"
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "ba",
+    "spec_slug": "political-science",
+    "spec_name": "Political Science"
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "ba",
+    "spec_slug": "sociology",
+    "spec_name": "Sociology"
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "HR"
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "bba",
+    "spec_slug": "supply-chain",
+    "spec_name": "Supply Chain"
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "bca",
+    "spec_slug": "computer-applications",
+    "spec_name": "Computer Applications"
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "ma",
+    "spec_slug": "english-literature",
+    "spec_name": "English Literature"
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "mba",
+    "spec_slug": "human-resources",
+    "spec_name": "Human Resources"
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "mba",
+    "spec_slug": "operations",
+    "spec_name": "Operations"
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "mca",
+    "spec_slug": "computer-science-and-it",
+    "spec_name": "Computer Science and IT"
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "mcom",
+    "spec_slug": "accounting-and-finance",
+    "spec_name": "Accounting and Finance"
+  },
+  {
+    "university_slug": "karnataka-state-open-university-online",
+    "program": "mcom",
+    "spec_slug": "marketing-management-and-human",
+    "spec_name": "Marketing Management and Human"
+  },
+  {
+    "university_slug": "karunya-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "karunya-university-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "karunya-university-online",
+    "program": "mba",
+    "spec_slug": "entrepreneurship",
+    "spec_name": "Entrepreneurship"
+  },
+  {
+    "university_slug": "karunya-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "karunya-university-online",
+    "program": "mba",
+    "spec_slug": "human-resources",
+    "spec_name": "Human Resources"
+  },
+  {
+    "university_slug": "karunya-university-online",
+    "program": "mba",
+    "spec_slug": "logistics-and-supply-chain-management",
+    "spec_name": "Logistics and Supply Chain Management"
+  },
+  {
+    "university_slug": "karunya-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "kiit-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "kiit-university-online",
+    "program": "ma",
+    "spec_slug": "econometrics",
+    "spec_name": "Econometrics"
+  },
+  {
+    "university_slug": "kiit-university-online",
+    "program": "ma",
+    "spec_slug": "financial-economics",
+    "spec_name": "Financial Economics"
+  },
+  {
+    "university_slug": "kiit-university-online",
+    "program": "ma",
+    "spec_slug": "public-policy",
+    "spec_name": "Public Policy"
+  },
+  {
+    "university_slug": "kiit-university-online",
+    "program": "mcom",
+    "spec_slug": "accountancy",
+    "spec_name": "Accountancy"
+  },
+  {
+    "university_slug": "kiit-university-online",
+    "program": "mcom",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "kl-university-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "kl-university-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "kl-university-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "kl-university-online",
+    "program": "bca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "kl-university-online",
+    "program": "mba",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "kl-university-online",
+    "program": "mba",
+    "spec_slug": "digital-marketing",
+    "spec_name": "Digital Marketing"
+  },
+  {
+    "university_slug": "kl-university-online",
+    "program": "mba",
+    "spec_slug": "entrepreneurship",
+    "spec_name": "Entrepreneurship"
+  },
+  {
+    "university_slug": "kl-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "kl-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "kl-university-online",
+    "program": "mba",
+    "spec_slug": "logistics-scm",
+    "spec_name": "Logistics & SCM"
+  },
+  {
+    "university_slug": "kl-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "kl-university-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence",
+    "spec_name": "Artificial Intelligence"
+  },
+  {
+    "university_slug": "kl-university-online",
+    "program": "mca",
+    "spec_slug": "cloud-computing",
+    "spec_name": "Cloud Computing"
+  },
+  {
+    "university_slug": "kl-university-online",
+    "program": "mca",
+    "spec_slug": "cloud-technology",
+    "spec_name": "Cloud Technology"
+  },
+  {
+    "university_slug": "kl-university-online",
+    "program": "mca",
+    "spec_slug": "cyber-security",
+    "spec_name": "Cyber Security"
+  },
+  {
+    "university_slug": "kl-university-online",
+    "program": "mca",
+    "spec_slug": "cybersecurity",
+    "spec_name": "Cybersecurity"
+  },
+  {
+    "university_slug": "kl-university-online",
+    "program": "mca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "kurukshetra-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "kurukshetra-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "kurukshetra-university-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "kurukshetra-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "kurukshetra-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource"
+  },
+  {
+    "university_slug": "kurukshetra-university-online",
+    "program": "mba",
+    "spec_slug": "it-management",
+    "spec_name": "IT Management"
+  },
+  {
+    "university_slug": "kurukshetra-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "kurukshetra-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "kurukshetra-university-online",
+    "program": "mcom",
+    "spec_slug": "general-commerce-finance",
+    "spec_name": "General Commerce – Finance"
+  },
+  {
+    "university_slug": "kurukshetra-university-online",
+    "program": "mcom",
+    "spec_slug": "general-commerce-international-business",
+    "spec_name": "General Commerce – International Business"
+  },
+  {
+    "university_slug": "kurukshetra-university-online",
+    "program": "mcom",
+    "spec_slug": "general-commerce-taxation",
+    "spec_name": "General Commerce – Taxation"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "ba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "bba",
+    "spec_slug": "artificial-intelligence",
+    "spec_name": "Artificial Intelligence"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "bba",
+    "spec_slug": "banking-and-finance",
+    "spec_name": "Banking and Finance"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "bba",
+    "spec_slug": "digital-marketing",
+    "spec_name": "Digital Marketing"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "bba",
+    "spec_slug": "event-management",
+    "spec_name": "Event Management"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "bba",
+    "spec_slug": "family-business",
+    "spec_name": "Family Business"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "bba",
+    "spec_slug": "fin-tech",
+    "spec_name": "Fin-Tech"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "bba",
+    "spec_slug": "foreign-exchange-management",
+    "spec_name": "Foreign Exchange Management"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "bba",
+    "spec_slug": "healthcare-management",
+    "spec_name": "HealthCare Management"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "HRM"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "bba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "bba",
+    "spec_slug": "logistics-and-supply-chain-management",
+    "spec_name": "Logistics and Supply Chain Management"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "bba",
+    "spec_slug": "retail-and-e-commerce",
+    "spec_name": "Retail and E-Commerce"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "bba",
+    "spec_slug": "travel-tourism-management",
+    "spec_name": "Travel & Tourism Management"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "bca",
+    "spec_slug": "ai",
+    "spec_name": "AI"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "bca",
+    "spec_slug": "cyber-security",
+    "spec_name": "Cyber Security"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "bca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "bca",
+    "spec_slug": "full-stack-web-development",
+    "spec_name": "Full Stack Web Development"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "ma",
+    "spec_slug": "economics-focus",
+    "spec_name": "Economics focus"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "ma",
+    "spec_slug": "english-language-literature-focus",
+    "spec_name": "English Language & Literature focus"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "ma",
+    "spec_slug": "history-focus-research-oriented",
+    "spec_name": "History focus; research-oriented"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "ma",
+    "spec_slug": "political-science",
+    "spec_name": "Political Science"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "ma",
+    "spec_slug": "sociology",
+    "spec_name": "Sociology"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "mba",
+    "spec_slug": "banking-financial-services",
+    "spec_name": "Banking & Financial Services"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "mba",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "mba",
+    "spec_slug": "digital-marketing",
+    "spec_name": "Digital Marketing"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "mba",
+    "spec_slug": "healthcare-management",
+    "spec_name": "Hospital & Healthcare Management"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "mba",
+    "spec_slug": "information-technology",
+    "spec_name": "Information Technology"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "mba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "mba",
+    "spec_slug": "logistics-supply-chain-management",
+    "spec_name": "Logistics & Supply Chain Management"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "mba",
+    "spec_slug": "operations-management",
+    "spec_name": "Operations Management"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "mca",
+    "spec_slug": "ar-vr-game-development",
+    "spec_name": "AR/ VR (Game Development)"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "mca",
+    "spec_slug": "cybersecurity",
+    "spec_name": "Cybersecurity"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "mca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "mca",
+    "spec_slug": "full-stack-web-development",
+    "spec_name": "Full Stack Web Development"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "mca",
+    "spec_slug": "machine-learning-ai",
+    "spec_name": "Machine Learning & AI"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "mcom",
+    "spec_slug": "commerce-finance",
+    "spec_name": "Commerce & Finance"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "msc",
+    "spec_slug": "economics",
+    "spec_name": "Economics"
+  },
+  {
+    "university_slug": "lovely-professional-university-online",
+    "program": "msc",
+    "spec_slug": "mathematics",
+    "spec_name": "Mathematics"
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "bca",
+    "spec_slug": "general",
+    "spec_name": "General – C"
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "bca",
+    "spec_slug": "general-ai",
+    "spec_name": "General – AI"
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "bca",
+    "spec_slug": "general-data-structures",
+    "spec_name": "General – Data Structures"
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "bca",
+    "spec_slug": "general-dbms",
+    "spec_name": "General – DBMS"
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "bca",
+    "spec_slug": "general-java",
+    "spec_name": "General – Java"
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "bca",
+    "spec_slug": "general-python",
+    "spec_name": "General – Python"
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "ma",
+    "spec_slug": "journalism-mass-communication",
+    "spec_name": "Journalism & Mass Communication"
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "HRM"
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "mba",
+    "spec_slug": "production",
+    "spec_name": "Production"
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "mba",
+    "spec_slug": "systems",
+    "spec_name": "Systems"
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "mca",
+    "spec_slug": "general-big-data-analytics",
+    "spec_name": "General – Big Data Analytics"
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "mca",
+    "spec_slug": "general-cloud-computing",
+    "spec_name": "General – Cloud Computing"
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "mca",
+    "spec_slug": "general-machine-learning",
+    "spec_name": "General – Machine Learning"
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "mcom",
+    "spec_slug": "group-a-accounting-investment",
+    "spec_name": "Group A: Accounting & Investment"
+  },
+  {
+    "university_slug": "madurai-kamaraj-university-online",
+    "program": "mcom",
+    "spec_slug": "group-b-marketing",
+    "spec_name": "Group B: Marketing"
+  },
+  {
+    "university_slug": "maharishi-markandeshwar-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "maharishi-markandeshwar-university-online",
+    "program": "bba",
+    "spec_slug": "banking",
+    "spec_name": "Banking"
+  },
+  {
+    "university_slug": "maharishi-markandeshwar-university-online",
+    "program": "bba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "maharishi-markandeshwar-university-online",
+    "program": "bba",
+    "spec_slug": "digital-marketing",
+    "spec_name": "Digital Marketing"
+  },
+  {
+    "university_slug": "maharishi-markandeshwar-university-online",
+    "program": "bca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "maharishi-markandeshwar-university-online",
+    "program": "bcom",
+    "spec_slug": "accounting-and-finance",
+    "spec_name": "Accounting and Finance"
+  },
+  {
+    "university_slug": "maharishi-markandeshwar-university-online",
+    "program": "bcom",
+    "spec_slug": "banking-and-finance",
+    "spec_name": "Banking and Finance"
+  },
+  {
+    "university_slug": "maharishi-markandeshwar-university-online",
+    "program": "bcom",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "maharishi-markandeshwar-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance Management"
+  },
+  {
+    "university_slug": "maharishi-markandeshwar-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource"
+  },
+  {
+    "university_slug": "maharishi-markandeshwar-university-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "maharishi-markandeshwar-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "maharishi-markandeshwar-university-online",
+    "program": "msc",
+    "spec_slug": "mathematics",
+    "spec_name": "Mathematics"
+  },
+  {
+    "university_slug": "mahatma-gandhi-university-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "mahatma-gandhi-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "mahatma-gandhi-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "mahatma-gandhi-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "mahatma-gandhi-university-online",
+    "program": "mba",
+    "spec_slug": "operations-management",
+    "spec_name": "Operations Management"
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "ba",
+    "spec_slug": "economics",
+    "spec_name": "Economics"
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "ba",
+    "spec_slug": "english",
+    "spec_name": "English"
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "bba",
+    "spec_slug": "banking-and-financial-services",
+    "spec_name": "Banking and Financial Services"
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "bba",
+    "spec_slug": "digital",
+    "spec_name": "Digital"
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "bca",
+    "spec_slug": "cyber-security",
+    "spec_name": "Cyber Security"
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "bca",
+    "spec_slug": "data-science-and-big-data-analytics",
+    "spec_name": "Data Science and Big Data Analytics"
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "bcom",
+    "spec_slug": "general-acca-integrated",
+    "spec_name": "General, ACCA (Integrated)"
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "ma",
+    "spec_slug": "english-literature",
+    "spec_name": "English Literature"
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-and-data-science",
+    "spec_name": "Artificial Intelligence and Data Science"
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "mca",
+    "spec_slug": "cloud-computing-and-internet-of-things",
+    "spec_name": "Cloud Computing and Internet of Things"
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "mca",
+    "spec_slug": "cyber-security",
+    "spec_name": "Cyber Security"
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "mca",
+    "spec_slug": "cyber-security-and-block-chain",
+    "spec_name": "Cyber Security and Block Chain"
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "mca",
+    "spec_slug": "full-stack-development-and-devops",
+    "spec_name": "Full Stack Development and DevOps"
+  },
+  {
+    "university_slug": "manav-rachna-online",
+    "program": "mcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "mangalayatan-university-online",
+    "program": "ba",
+    "spec_slug": "ethics-social-sciences",
+    "spec_name": "Ethics & Social Sciences"
+  },
+  {
+    "university_slug": "mangalayatan-university-online",
+    "program": "ba",
+    "spec_slug": "humanities",
+    "spec_name": "Humanities"
+  },
+  {
+    "university_slug": "mangalayatan-university-online",
+    "program": "ba",
+    "spec_slug": "sociology",
+    "spec_name": "Sociology"
+  },
+  {
+    "university_slug": "mangalayatan-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "mangalayatan-university-online",
+    "program": "mcom",
+    "spec_slug": "accounting",
+    "spec_name": "Accounting"
+  },
+  {
+    "university_slug": "mangalayatan-university-online",
+    "program": "mcom",
+    "spec_slug": "direct-indirect-taxation",
+    "spec_name": "Direct & Indirect Taxation"
+  },
+  {
+    "university_slug": "mangalayatan-university-online",
+    "program": "mcom",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "mangalayatan-university-online",
+    "program": "mcom",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "mba",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "mba",
+    "spec_slug": "healthcare-management",
+    "spec_name": "Healthcare Management"
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "mba",
+    "spec_slug": "logistics-supply-chain-management",
+    "spec_name": "Logistics & Supply Chain Management"
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "mba",
+    "spec_slug": "operations-management",
+    "spec_name": "Operations Management"
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "mba",
+    "spec_slug": "pharmaceutical-management",
+    "spec_name": "Pharmaceutical Management"
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-machine-learning",
+    "spec_name": "Artificial Intelligence & Machine Learning"
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "mca",
+    "spec_slug": "cloud-computing",
+    "spec_name": "Cloud Computing"
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "mca",
+    "spec_slug": "cybersecurity",
+    "spec_name": "Cybersecurity"
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "mca",
+    "spec_slug": "full-stack-development",
+    "spec_name": "Full Stack Development"
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "msc",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "bca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "ma",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mba",
+    "spec_slug": "analytics-and-data-science",
+    "spec_name": "Analytics and Data Science"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mba",
+    "spec_slug": "bfsi-banking-financial-services-and-insurance",
+    "spec_name": "BFSI (Banking, Financial Services and Insurance)"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mba",
+    "spec_slug": "digital-marketing",
+    "spec_name": "Digital Marketing"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mba",
+    "spec_slug": "information-system-management",
+    "spec_name": "Information System Management"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mba",
+    "spec_slug": "it-fintech",
+    "spec_name": "IT & FinTech"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mba",
+    "spec_slug": "operations-management",
+    "spec_name": "Operations Management"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mba",
+    "spec_slug": "project-management",
+    "spec_name": "Project Management"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mba",
+    "spec_slug": "retail-management",
+    "spec_name": "Retail Management"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mba",
+    "spec_slug": "supply-chain-management",
+    "spec_name": "Supply Chain Management"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mca",
+    "spec_slug": "ai-data-science",
+    "spec_name": "AI & Data Science"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-machine-learning",
+    "spec_name": "Artificial Intelligence & Machine Learning"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mca",
+    "spec_slug": "cloud-computing",
+    "spec_name": "Cloud Computing"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mca",
+    "spec_slug": "comprehensive-emerging-technologies",
+    "spec_name": "Comprehensive Emerging Technologies"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mca",
+    "spec_slug": "cybersecurity",
+    "spec_name": "Cybersecurity"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "msc",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "manonmaniam-sundaranar-university-online",
+    "program": "ba",
+    "spec_slug": "english-literature",
+    "spec_name": "English Literature"
+  },
+  {
+    "university_slug": "manonmaniam-sundaranar-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "manonmaniam-sundaranar-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "manonmaniam-sundaranar-university-online",
+    "program": "ma",
+    "spec_slug": "economics",
+    "spec_name": "Economics"
+  },
+  {
+    "university_slug": "manonmaniam-sundaranar-university-online",
+    "program": "ma",
+    "spec_slug": "history",
+    "spec_name": "History"
+  },
+  {
+    "university_slug": "manonmaniam-sundaranar-university-online",
+    "program": "ma",
+    "spec_slug": "journalism-and-mass-communication",
+    "spec_name": "Journalism and Mass Communication"
+  },
+  {
+    "university_slug": "manonmaniam-sundaranar-university-online",
+    "program": "mba",
+    "spec_slug": "entrepreneurship",
+    "spec_name": "Entrepreneurship"
+  },
+  {
+    "university_slug": "manonmaniam-sundaranar-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Financial Management"
+  },
+  {
+    "university_slug": "manonmaniam-sundaranar-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "manonmaniam-sundaranar-university-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "manonmaniam-sundaranar-university-online",
+    "program": "mba",
+    "spec_slug": "production-and-logistics-management",
+    "spec_name": "Production and Logistics Management"
+  },
+  {
+    "university_slug": "manonmaniam-sundaranar-university-online",
+    "program": "mcom",
+    "spec_slug": "accounting-and-finance",
+    "spec_name": "Accounting and Finance"
+  },
+  {
+    "university_slug": "marwadi-university-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "marwadi-university-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "marwadi-university-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "marwadi-university-online",
+    "program": "bca",
+    "spec_slug": "computer-applications",
+    "spec_name": "Computer Applications"
+  },
+  {
+    "university_slug": "marwadi-university-online",
+    "program": "bcom",
+    "spec_slug": "commerce",
+    "spec_name": "Commerce"
+  },
+  {
+    "university_slug": "marwadi-university-online",
+    "program": "ma",
+    "spec_slug": "english-literature",
+    "spec_name": "English Literature"
+  },
+  {
+    "university_slug": "marwadi-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "marwadi-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "marwadi-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "marwadi-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "marwadi-university-online",
+    "program": "mca",
+    "spec_slug": "software-engineering",
+    "spec_name": "Software Engineering"
+  },
+  {
+    "university_slug": "marwadi-university-online",
+    "program": "mca",
+    "spec_slug": "web-and-mobile",
+    "spec_name": "Web and Mobile"
+  },
+  {
+    "university_slug": "marwadi-university-online",
+    "program": "msc",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "mats-university-online",
+    "program": "bba",
+    "spec_slug": "general-management-contact-university-for-specialisation-structure",
+    "spec_name": "General Management (contact university for specialisation structure)"
+  },
+  {
+    "university_slug": "mats-university-online",
+    "program": "bca",
+    "spec_slug": "general-computer-applications-contact-university-for-specialisation",
+    "spec_name": "General Computer Applications (contact university for specialisation)"
+  },
+  {
+    "university_slug": "mats-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "mats-university-online",
+    "program": "mba",
+    "spec_slug": "finance-marketing-human-resources-operations-strategy-contact-university-for-specialisation-structure",
+    "spec_name": "Finance | Marketing | Human Resources | Operations | Strategy (contact university for specialisation structure)"
+  },
+  {
+    "university_slug": "mats-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "mizoram-university-online",
+    "program": "ma",
+    "spec_slug": "education",
+    "spec_name": "Education"
+  },
+  {
+    "university_slug": "mizoram-university-online",
+    "program": "mba",
+    "spec_slug": "big-data-analytics",
+    "spec_name": "Big Data Analytics"
+  },
+  {
+    "university_slug": "mizoram-university-online",
+    "program": "mba",
+    "spec_slug": "entrepreneurship",
+    "spec_name": "Entrepreneurship"
+  },
+  {
+    "university_slug": "mizoram-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Financial Management"
+  },
+  {
+    "university_slug": "mizoram-university-online",
+    "program": "mba",
+    "spec_slug": "logistics-supply-chain-management",
+    "spec_name": "Logistics & Supply Chain Management"
+  },
+  {
+    "university_slug": "mizoram-university-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "mody-university-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-machine-learning",
+    "spec_name": "Artificial Intelligence and Machine Learning"
+  },
+  {
+    "university_slug": "mody-university-online",
+    "program": "mca",
+    "spec_slug": "cloud-computing",
+    "spec_name": "Cloud Computing"
+  },
+  {
+    "university_slug": "mody-university-online",
+    "program": "mca",
+    "spec_slug": "internet-of-things-iot",
+    "spec_name": "Internet of Things (IoT)"
+  },
+  {
+    "university_slug": "mody-university-online",
+    "program": "mca",
+    "spec_slug": "web-technology",
+    "spec_name": "Web Technology"
+  },
+  {
+    "university_slug": "nmims-online",
+    "program": "bba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "nmims-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "finance"
+  },
+  {
+    "university_slug": "nmims-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "nmims-online",
+    "program": "bcom",
+    "spec_slug": "accountancy",
+    "spec_name": "Accountancy"
+  },
+  {
+    "university_slug": "nmims-online",
+    "program": "bcom",
+    "spec_slug": "commerce",
+    "spec_name": "Commerce"
+  },
+  {
+    "university_slug": "nmims-online",
+    "program": "bcom",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "nmims-online",
+    "program": "mba",
+    "spec_slug": "business-management",
+    "spec_name": "Business Management"
+  },
+  {
+    "university_slug": "nmims-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Financial Management"
+  },
+  {
+    "university_slug": "nmims-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "nmims-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "nmims-online",
+    "program": "mba",
+    "spec_slug": "operations-and-data-sciences-management",
+    "spec_name": "Operations and Data Sciences Management"
+  },
+  {
+    "university_slug": "noida-international-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "noida-international-university-online",
+    "program": "mba",
+    "spec_slug": "agri-business",
+    "spec_name": "Agri Business"
+  },
+  {
+    "university_slug": "noida-international-university-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "noida-international-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "noida-international-university-online",
+    "program": "mba",
+    "spec_slug": "hospital-health-care-management",
+    "spec_name": "Hospital & Health Care Management"
+  },
+  {
+    "university_slug": "noida-international-university-online",
+    "program": "mba",
+    "spec_slug": "hospital-healthcare",
+    "spec_name": "Hospital & Healthcare"
+  },
+  {
+    "university_slug": "noida-international-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "noida-international-university-online",
+    "program": "mba",
+    "spec_slug": "information-technology",
+    "spec_name": "Information Technology"
+  },
+  {
+    "university_slug": "noida-international-university-online",
+    "program": "mba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "noida-international-university-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "noida-international-university-online",
+    "program": "mba",
+    "spec_slug": "production-operations-management",
+    "spec_name": "Production & Operations Management"
+  },
+  {
+    "university_slug": "noida-international-university-online",
+    "program": "mba",
+    "spec_slug": "retail-management",
+    "spec_name": "Retail Management"
+  },
+  {
+    "university_slug": "noida-international-university-online",
+    "program": "mca",
+    "spec_slug": "ai-data-science",
+    "spec_name": "AI & Data Science"
+  },
+  {
+    "university_slug": "noida-international-university-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-machine-learning",
+    "spec_name": "AI & ML"
+  },
+  {
+    "university_slug": "noida-international-university-online",
+    "program": "mca",
+    "spec_slug": "cyber-security",
+    "spec_name": "Cyber Security"
+  },
+  {
+    "university_slug": "northcap-university-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "northcap-university-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "HR"
+  },
+  {
+    "university_slug": "northcap-university-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "northcap-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "ba",
+    "spec_slug": "english-literature",
+    "spec_name": "English Literature"
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "ba",
+    "spec_slug": "journalism-mass-communication",
+    "spec_name": "Journalism & Mass Communication"
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "ba",
+    "spec_slug": "psychology",
+    "spec_name": "Psychology"
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource"
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "bca",
+    "spec_slug": "general-ai",
+    "spec_name": "General – AI"
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "bca",
+    "spec_slug": "general-data-mining",
+    "spec_name": "General – Data Mining"
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "bca",
+    "spec_slug": "general-deep-learning",
+    "spec_name": "General – Deep Learning"
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "bca",
+    "spec_slug": "general-machine-learning",
+    "spec_name": "General – Machine Learning"
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "bca",
+    "spec_slug": "general-mobile-app-dev",
+    "spec_name": "General – Mobile App Dev"
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "bcom",
+    "spec_slug": "accounting-finance",
+    "spec_name": "Accounting & Finance"
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "bcom",
+    "spec_slug": "banking-insurance",
+    "spec_name": "Banking & Insurance"
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "ma",
+    "spec_slug": "english-language-teaching",
+    "spec_name": "English Language Teaching"
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "ma",
+    "spec_slug": "journalism-mass-communication",
+    "spec_name": "Journalism & Mass Communication"
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-machine-learning",
+    "spec_name": "Artificial Intelligence / Machine Learning"
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "mca",
+    "spec_slug": "cybersecurity-forensic",
+    "spec_name": "Cybersecurity & Forensic"
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "mca",
+    "spec_slug": "full-stack-web-development",
+    "spec_name": "Full Stack Web Development"
+  },
+  {
+    "university_slug": "parul-university-online",
+    "program": "mcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "pp-savani-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "pp-savani-university-online",
+    "program": "bca",
+    "spec_slug": "computer-applications",
+    "spec_name": "Computer Applications"
+  },
+  {
+    "university_slug": "pp-savani-university-online",
+    "program": "ma",
+    "spec_slug": "english-literature",
+    "spec_name": "English Literature"
+  },
+  {
+    "university_slug": "pp-savani-university-online",
+    "program": "ma",
+    "spec_slug": "french-language",
+    "spec_name": "French Language"
+  },
+  {
+    "university_slug": "pp-savani-university-online",
+    "program": "mba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "pp-savani-university-online",
+    "program": "mba",
+    "spec_slug": "hospital-administration",
+    "spec_name": "Hospital Administration"
+  },
+  {
+    "university_slug": "pp-savani-university-online",
+    "program": "mba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "pp-savani-university-online",
+    "program": "mba",
+    "spec_slug": "logistics-supply-chain-management",
+    "spec_name": "Logistics & Supply Chain Management"
+  },
+  {
+    "university_slug": "pp-savani-university-online",
+    "program": "mcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "pp-savani-university-online",
+    "program": "msc",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "sastra-university-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-data-science",
+    "spec_name": "Artificial Intelligence & Data Science"
+  },
+  {
+    "university_slug": "sastra-university-online",
+    "program": "mca",
+    "spec_slug": "cyber-security",
+    "spec_name": "Cyber Security"
+  },
+  {
+    "university_slug": "sastra-university-online",
+    "program": "mca",
+    "spec_slug": "full-stack-development",
+    "spec_name": "Full Stack Development"
+  },
+  {
+    "university_slug": "sathyabama-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "sathyabama-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "sathyabama-university-online",
+    "program": "mba",
+    "spec_slug": "human-resources",
+    "spec_name": "Human Resources"
+  },
+  {
+    "university_slug": "sathyabama-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "sathyabama-university-online",
+    "program": "mba",
+    "spec_slug": "systems",
+    "spec_name": "Systems"
+  },
+  {
+    "university_slug": "savitribai-phule-pune-university-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "savitribai-phule-pune-university-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "savitribai-phule-pune-university-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "savitribai-phule-pune-university-online",
+    "program": "bca",
+    "spec_slug": "general",
+    "spec_name": "General – C++"
+  },
+  {
+    "university_slug": "savitribai-phule-pune-university-online",
+    "program": "bca",
+    "spec_slug": "general-android",
+    "spec_name": "General – Android"
+  },
+  {
+    "university_slug": "savitribai-phule-pune-university-online",
+    "program": "bca",
+    "spec_slug": "general-dbms",
+    "spec_name": "General – DBMS"
+  },
+  {
+    "university_slug": "savitribai-phule-pune-university-online",
+    "program": "bca",
+    "spec_slug": "general-dot-net",
+    "spec_name": "General – Dot Net"
+  },
+  {
+    "university_slug": "savitribai-phule-pune-university-online",
+    "program": "bca",
+    "spec_slug": "general-java",
+    "spec_name": "General – Java"
+  },
+  {
+    "university_slug": "savitribai-phule-pune-university-online",
+    "program": "bca",
+    "spec_slug": "general-python",
+    "spec_name": "General – Python"
+  },
+  {
+    "university_slug": "savitribai-phule-pune-university-online",
+    "program": "bca",
+    "spec_slug": "general-software-testing",
+    "spec_name": "General – Software Testing"
+  },
+  {
+    "university_slug": "savitribai-phule-pune-university-online",
+    "program": "bca",
+    "spec_slug": "general-web",
+    "spec_name": "General – Web"
+  },
+  {
+    "university_slug": "savitribai-phule-pune-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "sgt-university-online",
+    "program": "bba",
+    "spec_slug": "analytics",
+    "spec_name": "Analytics"
+  },
+  {
+    "university_slug": "sgt-university-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "sgt-university-online",
+    "program": "bba",
+    "spec_slug": "human-resources",
+    "spec_name": "Human Resources"
+  },
+  {
+    "university_slug": "sgt-university-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "sgt-university-online",
+    "program": "bca",
+    "spec_slug": "artificial-intelligence-machine-learning",
+    "spec_name": "AI & Machine Learning"
+  },
+  {
+    "university_slug": "sgt-university-online",
+    "program": "bca",
+    "spec_slug": "cloud-computing",
+    "spec_name": "Cloud Computing"
+  },
+  {
+    "university_slug": "sgt-university-online",
+    "program": "bca",
+    "spec_slug": "cybersecurity",
+    "spec_name": "Cybersecurity"
+  },
+  {
+    "university_slug": "sgt-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "sgt-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance Management"
+  },
+  {
+    "university_slug": "sgt-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource"
+  },
+  {
+    "university_slug": "sgt-university-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "sgt-university-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-machine-learning",
+    "spec_name": "AI & Machine Learning"
+  },
+  {
+    "university_slug": "sgt-university-online",
+    "program": "mca",
+    "spec_slug": "blockchain-technology",
+    "spec_name": "Blockchain Technology"
+  },
+  {
+    "university_slug": "sgt-university-online",
+    "program": "mca",
+    "spec_slug": "cyber-security",
+    "spec_name": "Cyber Security"
+  },
+  {
+    "university_slug": "sgt-university-online",
+    "program": "mca",
+    "spec_slug": "cybersecurity",
+    "spec_name": "Cybersecurity"
+  },
+  {
+    "university_slug": "sgt-university-online",
+    "program": "mca",
+    "spec_slug": "data-analytics",
+    "spec_name": "Data Analytics"
+  },
+  {
+    "university_slug": "sgt-university-online",
+    "program": "mca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "sharda-university-online",
+    "program": "ba",
+    "spec_slug": "political-science",
+    "spec_name": "Political Science"
+  },
+  {
+    "university_slug": "sharda-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "sharda-university-online",
+    "program": "bca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "sharda-university-online",
+    "program": "mba",
+    "spec_slug": "data-science-and-analytics",
+    "spec_name": "Data Science and Analytics"
+  },
+  {
+    "university_slug": "sharda-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "sharda-university-online",
+    "program": "mba",
+    "spec_slug": "healthcare-and-hospital-administration",
+    "spec_name": "Healthcare and Hospital Administration"
+  },
+  {
+    "university_slug": "sharda-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "sharda-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "sharda-university-online",
+    "program": "mba",
+    "spec_slug": "strategic-human-resource-management",
+    "spec_name": "Strategic Human Resource Management"
+  },
+  {
+    "university_slug": "sharda-university-online",
+    "program": "mca",
+    "spec_slug": "ar",
+    "spec_name": "AR"
+  },
+  {
+    "university_slug": "sharda-university-online",
+    "program": "mca",
+    "spec_slug": "augmented-reality-and-virtual-reality-with-artificial-intelligence",
+    "spec_name": "Augmented Reality and Virtual Reality with Artificial Intelligence"
+  },
+  {
+    "university_slug": "sharda-university-online",
+    "program": "mca",
+    "spec_slug": "computer-science-and-information-technology",
+    "spec_name": "Computer Science and Information Technology"
+  },
+  {
+    "university_slug": "sharda-university-online",
+    "program": "mca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "sharda-university-online",
+    "program": "mca",
+    "spec_slug": "vr-and-information-security",
+    "spec_name": "VR and Information Security"
+  },
+  {
+    "university_slug": "sharda-university-online",
+    "program": "mcom",
+    "spec_slug": "accounting-and-finance",
+    "spec_name": "Accounting and Finance"
+  },
+  {
+    "university_slug": "sharda-university-online",
+    "program": "mcom",
+    "spec_slug": "fintech",
+    "spec_name": "Fintech"
+  },
+  {
+    "university_slug": "sharda-university-online",
+    "program": "mcom",
+    "spec_slug": "public-accounting",
+    "spec_name": "Public Accounting"
+  },
+  {
+    "university_slug": "shiv-nadar-university-online",
+    "program": "mba",
+    "spec_slug": "data-science-and-analytics",
+    "spec_name": "Data Science and Analytics"
+  },
+  {
+    "university_slug": "shiv-nadar-university-online",
+    "program": "mba",
+    "spec_slug": "digital-finance",
+    "spec_name": "Digital Finance"
+  },
+  {
+    "university_slug": "shiv-nadar-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "shobhit-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "shobhit-university-online",
+    "program": "bca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "shobhit-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Financial Management"
+  },
+  {
+    "university_slug": "shobhit-university-online",
+    "program": "mba",
+    "spec_slug": "human",
+    "spec_name": "Human"
+  },
+  {
+    "university_slug": "shobhit-university-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "shobhit-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "shobhit-university-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-machine-learning",
+    "spec_name": "AI & Machine Learning"
+  },
+  {
+    "university_slug": "shobhit-university-online",
+    "program": "mca",
+    "spec_slug": "cloud-computing",
+    "spec_name": "Cloud Computing"
+  },
+  {
+    "university_slug": "shobhit-university-online",
+    "program": "mca",
+    "spec_slug": "cyber-security",
+    "spec_name": "Cyber Security"
+  },
+  {
+    "university_slug": "shobhit-university-online",
+    "program": "mca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "shobhit-university-online",
+    "program": "mca",
+    "spec_slug": "full-stack-development",
+    "spec_name": "Full Stack Development"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "bba",
+    "spec_slug": "bba",
+    "spec_name": "BBA"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "bca",
+    "spec_slug": "bca",
+    "spec_name": "BCA"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "bcom",
+    "spec_slug": "bcom-hons",
+    "spec_name": "B.Com (Hons)"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "ma",
+    "spec_slug": "ma-english",
+    "spec_name": "MA English"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "ma",
+    "spec_slug": "ma-jmc",
+    "spec_name": "MA JMC"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mba",
+    "spec_slug": "agri-business-management",
+    "spec_name": "Agri Business Management"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mba",
+    "spec_slug": "banking-insurance",
+    "spec_name": "Banking & Insurance"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mba",
+    "spec_slug": "biotechnology-management",
+    "spec_name": "Biotechnology Management"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mba",
+    "spec_slug": "data-science-business-analytics",
+    "spec_name": "Data Science & Business Analytics"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mba",
+    "spec_slug": "digital-marketing",
+    "spec_name": "Digital Marketing"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mba",
+    "spec_slug": "direct-selling-management",
+    "spec_name": "Direct Selling Management"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Financial Management"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mba",
+    "spec_slug": "food-technology-management",
+    "spec_name": "Food Technology Management"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mba",
+    "spec_slug": "it-management",
+    "spec_name": "IT Management"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mba",
+    "spec_slug": "operation-supply-chain-management",
+    "spec_name": "Operation & Supply Chain Management"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mba",
+    "spec_slug": "pharma-health-care-management",
+    "spec_name": "Pharma & Health Care Management"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mba",
+    "spec_slug": "real-estate-management",
+    "spec_name": "Real Estate Management"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mba",
+    "spec_slug": "retail-management",
+    "spec_name": "Retail Management"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mba",
+    "spec_slug": "tourism-management",
+    "spec_name": "Tourism Management"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mca",
+    "spec_slug": "ai-specialization",
+    "spec_name": "AI Specialization"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "mca",
+    "spec_slug": "full-stack",
+    "spec_name": "Full Stack"
+  },
+  {
+    "university_slug": "shoolini-university-online",
+    "program": "msc",
+    "spec_slug": "msc-data-science",
+    "spec_name": "M.Sc Data Science"
+  },
+  {
+    "university_slug": "sikkim-manipal-university-online",
+    "program": "ba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "sikkim-manipal-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "sikkim-manipal-university-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "sikkim-manipal-university-online",
+    "program": "ma",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "sikkim-manipal-university-online",
+    "program": "mba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "sikkim-manipal-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "sikkim-manipal-university-online",
+    "program": "mba",
+    "spec_slug": "healthcare",
+    "spec_name": "Healthcare"
+  },
+  {
+    "university_slug": "sikkim-manipal-university-online",
+    "program": "mba",
+    "spec_slug": "human-resources",
+    "spec_name": "Human Resources"
+  },
+  {
+    "university_slug": "sikkim-manipal-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "sikkim-manipal-university-online",
+    "program": "mba",
+    "spec_slug": "operations-supply-chain-management",
+    "spec_name": "Operations & Supply Chain Management"
+  },
+  {
+    "university_slug": "sikkim-manipal-university-online",
+    "program": "mba",
+    "spec_slug": "systems-it-management",
+    "spec_name": "Systems (IT Management)"
+  },
+  {
+    "university_slug": "sikkim-manipal-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "sikkim-manipal-university-online",
+    "program": "mcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "sri-ramachandra-university-online",
+    "program": "bsc",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "srm-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "srm-university-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-gen-ai",
+    "spec_name": "Artificial Intelligence & Gen AI"
+  },
+  {
+    "university_slug": "srm-university-online",
+    "program": "mca",
+    "spec_slug": "cyber-security-cyber-forensics",
+    "spec_name": "Cyber Security & Cyber Forensics"
+  },
+  {
+    "university_slug": "srm-university-online",
+    "program": "mca",
+    "spec_slug": "data-science-and-machine-learning",
+    "spec_name": "Data Science and Machine Learning"
+  },
+  {
+    "university_slug": "srm-university-online",
+    "program": "mca",
+    "spec_slug": "generative-ai",
+    "spec_name": "Generative AI"
+  },
+  {
+    "university_slug": "subharti-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Financial Management"
+  },
+  {
+    "university_slug": "subharti-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource"
+  },
+  {
+    "university_slug": "subharti-university-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "symbiosis-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "symbiosis-university-online",
+    "program": "bca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "symbiosis-university-online",
+    "program": "bsc",
+    "spec_slug": "economics",
+    "spec_name": "Economics"
+  },
+  {
+    "university_slug": "symbiosis-university-online",
+    "program": "ma",
+    "spec_slug": "mass-communication",
+    "spec_name": "Mass Communication"
+  },
+  {
+    "university_slug": "symbiosis-university-online",
+    "program": "mba",
+    "spec_slug": "agri-operations-management",
+    "spec_name": "Agri Operations Management"
+  },
+  {
+    "university_slug": "symbiosis-university-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "symbiosis-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "symbiosis-university-online",
+    "program": "mba",
+    "spec_slug": "hospital-and-health-care-management",
+    "spec_name": "Hospital and Health Care Management"
+  },
+  {
+    "university_slug": "symbiosis-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource"
+  },
+  {
+    "university_slug": "symbiosis-university-online",
+    "program": "mba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "symbiosis-university-online",
+    "program": "mba",
+    "spec_slug": "logistics-and-supply-chain-management",
+    "spec_name": "Logistics and Supply Chain Management"
+  },
+  {
+    "university_slug": "symbiosis-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "symbiosis-university-online",
+    "program": "mba",
+    "spec_slug": "operations",
+    "spec_name": "Operations"
+  },
+  {
+    "university_slug": "symbiosis-university-online",
+    "program": "msc",
+    "spec_slug": "computer-applications",
+    "spec_name": "Computer Applications"
+  },
+  {
+    "university_slug": "symbiosis-university-online",
+    "program": "msc",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "symbiosis-university-online",
+    "program": "msc",
+    "spec_slug": "economics",
+    "spec_name": "Economics"
+  },
+  {
+    "university_slug": "teerthanker-mahaveer-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "teerthanker-mahaveer-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "teerthanker-mahaveer-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "university-of-lucknow-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "university-of-lucknow-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "university-of-lucknow-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "university-of-lucknow-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "HR"
+  },
+  {
+    "university_slug": "university-of-lucknow-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "university-of-lucknow-online",
+    "program": "mcom",
+    "spec_slug": "commerce",
+    "spec_name": "Commerce"
+  },
+  {
+    "university_slug": "university-of-madras-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "university-of-madras-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "university-of-madras-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "university-of-madras-online",
+    "program": "mba",
+    "spec_slug": "systems",
+    "spec_name": "Systems"
+  },
+  {
+    "university_slug": "university-of-mysore-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "university-of-mysore-online",
+    "program": "bca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "university-of-mysore-online",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "university-of-mysore-online",
+    "program": "mba",
+    "spec_slug": "data-science-and-business-analytics",
+    "spec_name": "Data Science and Business Analytics"
+  },
+  {
+    "university_slug": "university-of-mysore-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "university-of-mysore-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "HR"
+  },
+  {
+    "university_slug": "university-of-mysore-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "university-of-mysore-online",
+    "program": "mcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "bba",
+    "spec_slug": "digital-business",
+    "spec_name": "Digital Business"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Financial Management"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "bba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "bba",
+    "spec_slug": "logistics-supply-chain-management",
+    "spec_name": "Logistics & Supply Chain Management"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "bba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "bba",
+    "spec_slug": "operations-management",
+    "spec_name": "Operations Management"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "bca",
+    "spec_slug": "cloud-computing-cyber-security",
+    "spec_name": "Cloud Computing & Cyber Security"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "bca",
+    "spec_slug": "data-analytics",
+    "spec_name": "Data Analytics"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "bca",
+    "spec_slug": "new-age-technology",
+    "spec_name": "New Age Technology"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "mba",
+    "spec_slug": "digital-business",
+    "spec_name": "Digital Business"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Financial Management"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "mba",
+    "spec_slug": "infrastructure-management",
+    "spec_name": "Infrastructure Management"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "mba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "mba",
+    "spec_slug": "logistics-supply-chain-management",
+    "spec_name": "Logistics & Supply Chain Management"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "mba",
+    "spec_slug": "oil-and-gas-management",
+    "spec_name": "Oil and Gas Management"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "mba",
+    "spec_slug": "operations-management",
+    "spec_name": "Operations Management"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "mba",
+    "spec_slug": "power-management",
+    "spec_name": "Power Management"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-machine-learning",
+    "spec_name": "Artificial Intelligence & Machine Learning"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "mca",
+    "spec_slug": "cyber-security-and-forensics",
+    "spec_name": "Cyber Security and Forensics"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "mca",
+    "spec_slug": "cyber-security-forensics",
+    "spec_name": "Cyber Security & Forensics"
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "mca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "uttaranchal-university-online",
+    "program": "ba",
+    "spec_slug": "economics",
+    "spec_name": "Economics"
+  },
+  {
+    "university_slug": "uttaranchal-university-online",
+    "program": "ba",
+    "spec_slug": "political-science",
+    "spec_name": "Political Science"
+  },
+  {
+    "university_slug": "uttaranchal-university-online",
+    "program": "ba",
+    "spec_slug": "psychology",
+    "spec_name": "Psychology"
+  },
+  {
+    "university_slug": "uttaranchal-university-online",
+    "program": "ba",
+    "spec_slug": "public-speaking",
+    "spec_name": "Public Speaking"
+  },
+  {
+    "university_slug": "uttaranchal-university-online",
+    "program": "ba",
+    "spec_slug": "sociology",
+    "spec_name": "Sociology"
+  },
+  {
+    "university_slug": "uttaranchal-university-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "uttaranchal-university-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource"
+  },
+  {
+    "university_slug": "uttaranchal-university-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "uttaranchal-university-online",
+    "program": "bca",
+    "spec_slug": "iot",
+    "spec_name": "IoT"
+  },
+  {
+    "university_slug": "uttaranchal-university-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "uttaranchal-university-online",
+    "program": "mba",
+    "spec_slug": "digital-marketing",
+    "spec_name": "Digital Marketing"
+  },
+  {
+    "university_slug": "uttaranchal-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Financial Management"
+  },
+  {
+    "university_slug": "uttaranchal-university-online",
+    "program": "mba",
+    "spec_slug": "hr-management",
+    "spec_name": "HR Management"
+  },
+  {
+    "university_slug": "uttaranchal-university-online",
+    "program": "mba",
+    "spec_slug": "information-technology",
+    "spec_name": "Information Technology"
+  },
+  {
+    "university_slug": "uttaranchal-university-online",
+    "program": "mba",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  },
+  {
+    "university_slug": "uttaranchal-university-online",
+    "program": "mba",
+    "spec_slug": "logistics-supply-chain-management",
+    "spec_name": "Logistics & Supply Chain Management"
+  },
+  {
+    "university_slug": "uttaranchal-university-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "uttaranchal-university-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "vels-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "vels-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance Management"
+  },
+  {
+    "university_slug": "vels-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "vels-university-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "vels-university-online",
+    "program": "mba",
+    "spec_slug": "production-management",
+    "spec_name": "Production Management"
+  },
+  {
+    "university_slug": "vels-university-online",
+    "program": "mba",
+    "spec_slug": "systems-management",
+    "spec_name": "Systems Management"
+  },
+  {
+    "university_slug": "vignan-university-online",
+    "program": "bba",
+    "spec_slug": "marketing-analytics",
+    "spec_name": "Marketing & Analytics"
+  },
+  {
+    "university_slug": "vignan-university-online",
+    "program": "bba",
+    "spec_slug": "marketing-human-resources",
+    "spec_name": "Marketing & Human Resources"
+  },
+  {
+    "university_slug": "vignan-university-online",
+    "program": "bca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "vignan-university-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "vignan-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "vignan-university-online",
+    "program": "mba",
+    "spec_slug": "healthcare-management",
+    "spec_name": "Healthcare Management"
+  },
+  {
+    "university_slug": "vignan-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "vignan-university-online",
+    "program": "mba",
+    "spec_slug": "it-management",
+    "spec_name": "IT Management"
+  },
+  {
+    "university_slug": "vignan-university-online",
+    "program": "mba",
+    "spec_slug": "logistics-supply-chain-management",
+    "spec_name": "Logistics & Supply Chain Management"
+  },
+  {
+    "university_slug": "vignan-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "vignan-university-online",
+    "program": "mca",
+    "spec_slug": "computer-science-and-it",
+    "spec_name": "Computer Science and IT"
+  },
+  {
+    "university_slug": "vignan-university-online",
+    "program": "mca",
+    "spec_slug": "computer-science-it",
+    "spec_name": "Computer Science & IT"
+  },
+  {
+    "university_slug": "vignan-university-online",
+    "program": "mca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "vit-university-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence",
+    "spec_name": "Artificial Intelligence"
+  },
+  {
+    "university_slug": "vit-university-online",
+    "program": "mca",
+    "spec_slug": "big-data-analytics",
+    "spec_name": "Big Data Analytics"
+  },
+  {
+    "university_slug": "vit-university-online",
+    "program": "mca",
+    "spec_slug": "blockchain-technologies",
+    "spec_name": "Blockchain Technologies"
+  },
+  {
+    "university_slug": "vit-university-online",
+    "program": "mca",
+    "spec_slug": "computer-architecture",
+    "spec_name": "Computer Architecture"
+  },
+  {
+    "university_slug": "vit-university-online",
+    "program": "mca",
+    "spec_slug": "cyber-forensics",
+    "spec_name": "Cyber Forensics"
+  },
+  {
+    "university_slug": "vit-university-online",
+    "program": "mca",
+    "spec_slug": "cyber-security",
+    "spec_name": "Cyber Security"
+  },
+  {
+    "university_slug": "vit-university-online",
+    "program": "mca",
+    "spec_slug": "data-mining-techniques",
+    "spec_name": "Data Mining Techniques"
+  },
+  {
+    "university_slug": "vit-university-online",
+    "program": "mca",
+    "spec_slug": "machine-learning",
+    "spec_name": "Machine Learning"
+  },
+  {
+    "university_slug": "vit-university-online",
+    "program": "mca",
+    "spec_slug": "mobile-application-development",
+    "spec_name": "Mobile Application Development"
+  },
+  {
+    "university_slug": "vit-university-online",
+    "program": "mca",
+    "spec_slug": "software-quality-assurance-and-reliability",
+    "spec_name": "Software Quality Assurance and Reliability"
+  },
+  {
+    "university_slug": "vit-university-online",
+    "program": "mca",
+    "spec_slug": "virtual-and-augmented-reality",
+    "spec_name": "Virtual and Augmented Reality"
+  },
+  {
+    "university_slug": "vit-vellore-online",
+    "program": "msc",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "vivekananda-global-university-online",
+    "program": "ba",
+    "spec_slug": "computer",
+    "spec_name": "Computer"
+  },
+  {
+    "university_slug": "vivekananda-global-university-online",
+    "program": "ba",
+    "spec_slug": "economics",
+    "spec_name": "Economics"
+  },
+  {
+    "university_slug": "vivekananda-global-university-online",
+    "program": "ba",
+    "spec_slug": "english",
+    "spec_name": "English"
+  },
+  {
+    "university_slug": "vivekananda-global-university-online",
+    "program": "ba",
+    "spec_slug": "history",
+    "spec_name": "History"
+  },
+  {
+    "university_slug": "vivekananda-global-university-online",
+    "program": "ba",
+    "spec_slug": "political-science",
+    "spec_name": "Political Science"
+  },
+  {
+    "university_slug": "vivekananda-global-university-online",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "vivekananda-global-university-online",
+    "program": "bba",
+    "spec_slug": "digital-marketing",
+    "spec_name": "Digital Marketing"
+  },
+  {
+    "university_slug": "vivekananda-global-university-online",
+    "program": "bba",
+    "spec_slug": "fintech",
+    "spec_name": "Fintech"
+  },
+  {
+    "university_slug": "vivekananda-global-university-online",
+    "program": "bba",
+    "spec_slug": "retail-management",
+    "spec_name": "Retail Management"
+  },
+  {
+    "university_slug": "vivekananda-global-university-online",
+    "program": "bca",
+    "spec_slug": "ux-data-science-ctis-cloud-tech-info-security",
+    "spec_name": "UX, Data Science, CTIS (Cloud Tech & Info Security)"
+  },
+  {
+    "university_slug": "vivekananda-global-university-online",
+    "program": "ma",
+    "spec_slug": "english",
+    "spec_name": "English"
+  },
+  {
+    "university_slug": "vivekananda-global-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "vivekananda-global-university-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence",
+    "spec_name": "Artificial Intelligence"
+  },
+  {
+    "university_slug": "vivekananda-global-university-online",
+    "program": "mca",
+    "spec_slug": "cloud-technology-information-security",
+    "spec_name": "Cloud Technology & Information Security"
+  },
+  {
+    "university_slug": "vivekananda-global-university-online",
+    "program": "msc",
+    "spec_slug": "mathematics",
+    "spec_name": "Mathematics"
+  },
+  {
+    "university_slug": "vtu-online",
+    "program": "mca",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "vtu-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-data-science",
+    "spec_name": "Artificial Intelligence & Data Science"
+  },
+  {
+    "university_slug": "vtu-online",
+    "program": "mca",
+    "spec_slug": "cyber-security-cloud-computing",
+    "spec_name": "Cyber Security & Cloud Computing"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ba",
+    "spec_slug": "community-development",
+    "spec_name": "Community Development"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ba",
+    "spec_slug": "social-work",
+    "spec_name": "Social Work"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "bba",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "bba",
+    "spec_slug": "digital-marketing",
+    "spec_name": "Digital Marketing"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "bba",
+    "spec_slug": "healthcare-management",
+    "spec_name": "Healthcare Management"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "bba",
+    "spec_slug": "logistics-and-supply-chain-management",
+    "spec_name": "Logistics and Supply Chain Management"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "bca",
+    "spec_slug": "animation-and-graphic-design",
+    "spec_name": "Animation and Graphic Design"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "bca",
+    "spec_slug": "cloud-computing-and-cyber-security",
+    "spec_name": "Cloud Computing and Cyber Security"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "bca",
+    "spec_slug": "computer-science-and-it",
+    "spec_name": "Computer Science and IT"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "bca",
+    "spec_slug": "computing-information-technology-foundation",
+    "spec_name": "Computing & Information Technology Foundation"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "bca",
+    "spec_slug": "data-analytics",
+    "spec_name": "Data Analytics"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "bca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "bca",
+    "spec_slug": "data-science-and-artificial-intelligence",
+    "spec_name": "Data Science and Artificial Intelligence"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "bcom",
+    "spec_slug": "",
+    "spec_name": ""
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "bcom",
+    "spec_slug": "accounting-and-finance",
+    "spec_name": "Accounting and Finance"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "communication-industry",
+    "spec_name": "Communication Industry"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "community-development",
+    "spec_name": "Community Development"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "conflict-resolution",
+    "spec_name": "Conflict Resolution"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "development-studies",
+    "spec_name": "Development Studies"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "distance-education",
+    "spec_name": "Distance Education"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "educational-technology",
+    "spec_name": "Educational Technology"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "english-literature-language",
+    "spec_name": "English Literature & Language"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "environmental-studies",
+    "spec_name": "Environmental Studies"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "gandhian-studies",
+    "spec_name": "Gandhian Studies"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "hindi-literature-language",
+    "spec_name": "Hindi Literature & Language"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "human-environment-systems",
+    "spec_name": "Human-Environment Systems"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "journalism-mass-communication",
+    "spec_name": "Journalism & Mass Communication"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "media",
+    "spec_name": "Media"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "multilingual-communication",
+    "spec_name": "Multilingual Communication"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "open-learning",
+    "spec_name": "Open Learning"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "peace-studies",
+    "spec_name": "Peace Studies"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "rural-development",
+    "spec_name": "Rural Development"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "rural-management",
+    "spec_name": "Rural Management"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "sanskrit-language-indian-knowledge-traditions",
+    "spec_name": "Sanskrit Language & Indian Knowledge Traditions"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "social-welfare",
+    "spec_name": "Social Welfare"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "social-work",
+    "spec_name": "Social Work"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "sustainability-science",
+    "spec_name": "Sustainability Science"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "ma",
+    "spec_slug": "translation-theory-practice",
+    "spec_name": "Translation Theory & Practice"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mba",
+    "spec_slug": "digital-marketing",
+    "spec_name": "Digital Marketing"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mba",
+    "spec_slug": "general-management-finance",
+    "spec_name": "General Management – Finance"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mba",
+    "spec_slug": "general-management-hr",
+    "spec_name": "General Management – HR"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mba",
+    "spec_slug": "general-management-marketing",
+    "spec_name": "General Management – Marketing"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mba",
+    "spec_slug": "general-management-operations",
+    "spec_name": "General Management – Operations"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mba",
+    "spec_slug": "general-management-strategy",
+    "spec_name": "General Management – Strategy"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-data-science",
+    "spec_name": "Artificial Intelligence & Data Science"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mca",
+    "spec_slug": "computer-applications",
+    "spec_name": "Computer Applications"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mca",
+    "spec_slug": "cyber-security-cloud-computing",
+    "spec_name": "Cyber Security & Cloud Computing"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mca",
+    "spec_slug": "general-it-software-development",
+    "spec_name": "General (IT & Software Development)"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mca",
+    "spec_slug": "it-management",
+    "spec_name": "IT Management"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mca",
+    "spec_slug": "software-development",
+    "spec_name": "Software Development"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mcom",
+    "spec_slug": "accounting",
+    "spec_name": "Accounting"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mcom",
+    "spec_slug": "advanced-business-commerce",
+    "spec_name": "Advanced Business & Commerce"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mcom",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "— (new, no slug)",
+    "program": "mcom",
+    "spec_slug": "international-business",
+    "spec_name": "International Business"
+  }
+]

@@ -1,143 +1,102 @@
-// app/sitemap.ts — Technical SEO sitemap
-// Strategy:
-//  • Priorities are tiered: crawl budget flows to highest-value pages first
-//  • changeFrequency is realistic (not everything is 'weekly')
-//  • All 125+ universities included for spec pages (no whitelist filter)
-//  • University × program pages are the #1 money pages → priority 0.92
-//  • Query-param compare URLs (/compare?a=x&b=y) intentionally excluded
-//  • Redirect sources (/programs/{prog}/{id}) intentionally excluded
+// app/sitemap.ts — rebuilt from Excel-sourced lib/data/valid-urls.json
+// Source of truth: data/EdifyEdu_Unified_Programs_v3.xlsx (Programs sheet)
+// Regenerate: npm run build:urls
+//
+// Priority tiers:
+//   1.0  /                          (homepage)
+//   0.92 /universities, /programs, /compare, /universities/{slug}/{prog}
+//   0.90 /programs/{prog}           (program listing pages)
+//   0.84 /universities/{slug}       (university hubs)
+//   0.80 /universities/{slug}/{prog}/{spec}
+//   0.78 /programs/{prog}/{spec}
+//   0.75 /blog/{slug}
+//   0.70 /guides/{slug}
+//   0.65 everything else
 
 import { MetadataRoute } from 'next'
-import { UNIVERSITIES, getAllPrograms, getAllSpecs } from '@/lib/data'
-import type { Program } from '@/lib/data'
+import { readFileSync } from 'fs'
+import { join } from 'path'
 import { getPublishedPosts } from '@/lib/blog'
 import { GUIDES } from '@/lib/guides'
 
 const BASE = 'https://edifyedu.in'
 
-const progSlug = (p: Program) =>
-  p.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
-
-const specSlug = (s: string) =>
-  s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
-
-// Tier priority by NIRF rank — better-ranked universities deserve more crawl budget
-function uniPriority(nirf: number): number {
-  if (nirf <= 50)   return 0.92
-  if (nirf <= 100)  return 0.88
-  if (nirf <= 200)  return 0.84
-  return 0.80
+function loadValidUrls(): string[] {
+  try {
+    return JSON.parse(
+      readFileSync(join(process.cwd(), 'lib', 'data', 'valid-urls.json'), 'utf8')
+    ) as string[]
+  } catch {
+    console.warn('[sitemap] lib/data/valid-urls.json not found. Run: npm run build:urls')
+    return []
+  }
 }
 
-// Program-level page priority — MBA/MCA > BBA/BCA > others
-function progPriority(prog: Program): number {
-  if (prog === 'MBA' || prog === 'MCA') return 0.92
-  if (prog === 'BBA' || prog === 'BCA') return 0.85
-  return 0.78
+type Freq = MetadataRoute.Sitemap[0]['changeFrequency']
+
+function urlMeta(path: string): { priority: number; freq: Freq } {
+  if (path === '/')
+    return { priority: 1.0, freq: 'daily' }
+
+  if (path === '/universities' || path === '/programs' || path === '/compare')
+    return { priority: 0.92, freq: 'weekly' }
+
+  if (path === '/blog' || path === '/guides')
+    return { priority: 0.82, freq: 'daily' }
+
+  if (path === '/coupons')
+    return { priority: 0.65, freq: 'weekly' }
+
+  if (path === '/about' || path === '/contact' || path === '/privacy-policy')
+    return { priority: 0.50, freq: 'yearly' }
+
+  // /programs/{prog}  (exactly 2 segments)
+  if (/^\/programs\/[^/]+$/.test(path))
+    return { priority: 0.90, freq: 'weekly' }
+
+  // /programs/{prog}/{spec}  (3 segments)
+  if (/^\/programs\/[^/]+\/[^/]+$/.test(path))
+    return { priority: 0.78, freq: 'monthly' }
+
+  // /universities/{slug}  (2 segments)
+  if (/^\/universities\/[^/]+$/.test(path))
+    return { priority: 0.84, freq: 'monthly' }
+
+  // /universities/{slug}/{prog}  (3 segments) — money pages
+  if (/^\/universities\/[^/]+\/[^/]+$/.test(path))
+    return { priority: 0.92, freq: 'monthly' }
+
+  // /universities/{slug}/{prog}/{spec}  (4 segments)
+  if (/^\/universities\/[^/]+\/[^/]+\/[^/]+$/.test(path))
+    return { priority: 0.80, freq: 'monthly' }
+
+  return { priority: 0.65, freq: 'monthly' }
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
 
-  // ── Static pages ──────────────────────────────────────────────────────────
-  const statics: MetadataRoute.Sitemap = [
-    // Homepage — crawled daily, maximum priority
-    { url: BASE,                              lastModified: now, changeFrequency: 'daily',   priority: 1.0 },
+  // ── Registry pages from valid-urls.json ───────────────────────────────────
+  const registryPages: MetadataRoute.Sitemap = loadValidUrls().map(path => {
+    const { priority, freq } = urlMeta(path)
+    return {
+      url: `${BASE}${path}`,
+      lastModified: now,
+      changeFrequency: freq,
+      priority,
+    }
+  })
 
-    // High-intent listing pages
-    { url: `${BASE}/universities`,            lastModified: now, changeFrequency: 'weekly',  priority: 0.92 },
-    { url: `${BASE}/programs`,                lastModified: now, changeFrequency: 'weekly',  priority: 0.90 },
-    { url: `${BASE}/compare`,                 lastModified: now, changeFrequency: 'weekly',  priority: 0.88 },
-
-    // Content hub
-    { url: `${BASE}/blog`,                    lastModified: now, changeFrequency: 'daily',   priority: 0.82 },
-    { url: `${BASE}/guides`,                  lastModified: now, changeFrequency: 'weekly',  priority: 0.75 },
-
-    // Tools — transactional intent
+  // ── Tool pages (not in registry — hardcoded static) ───────────────────────
+  const toolPages: MetadataRoute.Sitemap = [
     { url: `${BASE}/tools`,                   lastModified: now, changeFrequency: 'monthly', priority: 0.80 },
     { url: `${BASE}/tools/emi-calculator`,    lastModified: now, changeFrequency: 'monthly', priority: 0.78 },
     { url: `${BASE}/tools/cgpa-calculator`,   lastModified: now, changeFrequency: 'monthly', priority: 0.75 },
     { url: `${BASE}/tools/percentage-to-gpa`, lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
-
-    // Authority landing pages
     { url: `${BASE}/best-online-mba-india`,   lastModified: now, changeFrequency: 'monthly', priority: 0.90 },
-
-    // Brand / trust pages
-    { url: `${BASE}/about`,                   lastModified: now, changeFrequency: 'yearly',  priority: 0.50 },
-    { url: `${BASE}/contact`,                 lastModified: now, changeFrequency: 'yearly',  priority: 0.50 },
-    { url: `${BASE}/coupons`,                 lastModified: now, changeFrequency: 'weekly',  priority: 0.65 },
-    { url: `${BASE}/privacy-policy`,          lastModified: now, changeFrequency: 'yearly',  priority: 0.30 },
   ]
 
-  // ── University hub pages (/universities/{id}) ─────────────────────────────
-  // One entry per university — priority tiered by NIRF rank
-  const uniHubPages: MetadataRoute.Sitemap = UNIVERSITIES.map(u => ({
-    url: `${BASE}/universities/${u.id}`,
-    lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: uniPriority(u.nirf),
-  }))
-
-  // ── University × program pages — HIGHEST PRIORITY ─────────────────────────
-  // e.g. /universities/amity-university-online/mba
-  // These are the primary landing pages for each degree program
-  // NOTE: /programs/{prog}/{u.id} redirects to these — excluded from sitemap
-  const uniProgPages: MetadataRoute.Sitemap = UNIVERSITIES.flatMap(u =>
-    u.programs
-      .filter(prog => !!u.programDetails[prog])
-      .map(prog => ({
-        url: `${BASE}/universities/${u.id}/${progSlug(prog)}`,
-        lastModified: now,
-        changeFrequency: 'monthly' as const,
-        priority: progPriority(prog),
-      }))
-  )
-
-  // ── Program index pages (/programs/{prog}) ────────────────────────────────
-  // e.g. /programs/mba, /programs/mca, /programs/bba, /programs/bca
-  const programs = getAllPrograms()
-  const programListPages: MetadataRoute.Sitemap = programs.map(prog => ({
-    url: `${BASE}/programs/${progSlug(prog)}`,
-    lastModified: now,
-    changeFrequency: 'weekly' as const,
-    priority: progPriority(prog),
-  }))
-
-  // ── Global specialisation pages (/programs/{prog}/{spec}) ─────────────────
-  // e.g. /programs/mba/finance, /programs/mca/data-science
-  // These are the richest keyword-targeted pages on the site
-  const specListPages: MetadataRoute.Sitemap = programs.flatMap(prog => {
-    const specs = getAllSpecs(prog)
-    const base = progPriority(prog)
-    return specs.map(spec => ({
-      url: `${BASE}/programs/${progSlug(prog)}/${specSlug(spec)}`,
-      lastModified: now,
-      changeFrequency: 'monthly' as const,
-      priority: base,
-    }))
-  })
-
-  // ── University × program × spec pages (/universities/{id}/{prog}/{spec}) ──
-  // e.g. /universities/amity-university-online/mba/finance
-  // ALL universities included (not just a whitelist) — flatMap returns [] for unis
-  // with no spec data so no bloat from empty entries
-  const uniSpecPages: MetadataRoute.Sitemap = UNIVERSITIES.flatMap(u => {
-    const nirfPri = uniPriority(u.nirf)
-    return Object.entries(u.programDetails).flatMap(([prog, pd]) => {
-      if (!pd?.specs?.length) return []
-      const pSlug = progSlug(prog as Program)
-      const basePri = Math.min(nirfPri, progPriority(prog as Program))
-      return pd.specs.map(spec => ({
-        url: `${BASE}/universities/${u.id}/${pSlug}/${specSlug(spec)}`,
-        lastModified: now,
-        changeFrequency: 'monthly' as const,
-        priority: Math.round(basePri * 100 - 5) / 100, // slightly below the program page
-      }))
-    })
-  })
-
   // ── Blog posts ────────────────────────────────────────────────────────────
-  // lastModified uses actual publish date; changeFrequency yearly (evergreen)
   const blogPages: MetadataRoute.Sitemap = getPublishedPosts().map(post => ({
     url: `${BASE}/blog/${post.slug}`,
     lastModified: new Date(post.publishedAt),
@@ -153,16 +112,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.70,
   }))
 
-  // Return in priority order: statics → program pages → uni hubs → uni×prog →
-  // prog listings → spec listings → uni×spec → blog → guides
-  return [
-    ...statics,
-    ...uniProgPages,
-    ...uniHubPages,
-    ...programListPages,
-    ...specListPages,
-    ...uniSpecPages,
-    ...blogPages,
-    ...guidePages,
-  ]
+  return [...registryPages, ...toolPages, ...blogPages, ...guidePages]
 }

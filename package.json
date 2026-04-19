@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/build-valid-urls.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "build:urls": "node scripts/build-valid-urls.js",
     "indexnow:notify-all": "tsx scripts/notify-sitemap-to-indexnow.ts",
     "audit": "node scripts/audit-site.js"
   },
