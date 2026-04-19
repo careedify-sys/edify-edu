@@ -206,7 +206,7 @@ export default function RequestSampleModal({ universityId, universityName, progr
         )}
       </div>
 
-      <style>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         @keyframes modal-slide-up {
           from { transform: translateY(40px); opacity: 0; }
           to   { transform: translateY(0);    opacity: 1; }
@@ -221,7 +221,7 @@ export default function RequestSampleModal({ universityId, universityName, progr
             align-items: center !important;
           }
         }
-      `}</style>
+      ` }} />
     </div>
   )
 

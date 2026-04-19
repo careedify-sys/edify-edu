@@ -238,14 +238,14 @@ export default function PreAdmissionTools({ universityId }: Props) {
         })}
       </div>
 
-      <style>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         .pre-tool-card:hover {
           transform: translateY(-4px) scale(1.02) !important;
           box-shadow: 0 8px 24px rgba(11, 21, 51, 0.12) !important;
           border-color: rgba(244, 160, 36, 0.3) !important;
         }
         div[style*="overflow-x"]::-webkit-scrollbar { display: none; }
-      `}</style>
+      ` }} />
     </div>
   )
 }

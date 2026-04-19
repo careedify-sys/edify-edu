@@ -88,33 +88,21 @@ export default function AnimatedProgramsStrip({ programs }: Props) {
         </div>
       </div>
 
-      <style>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         div[style*="scrollbar-width"]::-webkit-scrollbar { display: none; }
-
-        /* Hover bounce with cubic-bezier spring */
-        .prog-chip {
-          will-change: transform;
-        }
+        .prog-chip { will-change: transform; }
         .prog-chip:hover {
           transform: scale(1.1) !important;
           background: var(--amber-light) !important;
           color: var(--amber) !important;
           transition: transform 300ms cubic-bezier(0.34,1.56,0.64,1) !important;
         }
-        .prog-chip:hover span:last-of-type {
-          color: var(--amber) !important;
-        }
-
-        /* Reduced motion: fade only */
+        .prog-chip:hover span:last-of-type { color: var(--amber) !important; }
         @media (prefers-reduced-motion: reduce) {
-          .prog-chip {
-            transform: scale(1) !important;
-          }
-          .prog-chip:hover {
-            transform: scale(1) !important;
-          }
+          .prog-chip { transform: scale(1) !important; }
+          .prog-chip:hover { transform: scale(1) !important; }
         }
-      `}</style>
+      ` }} />
     </section>
   )
 }
