@@ -1,3 +1,5 @@
+'use client'
+
 /**
  * ApprovalBadges.tsx
  * Shared component that renders university approval logos with full names and sublabels.

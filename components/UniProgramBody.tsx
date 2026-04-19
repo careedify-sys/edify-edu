@@ -6,20 +6,19 @@ import { ChevronRight } from 'lucide-react'
 import type { University, ProgramDetail } from '@/lib/data'
 import { getUniversitiesByProgram } from '@/lib/data'
 import { getShortUniversityName } from '@/lib/format'
-import { getMasterSyllabus, getUniversitySyllabus } from '@/lib/content'
 import { UNIVERSITY_REVIEWS } from '@/lib/reviews-data'
 import { COUPONS } from '@/lib/coupons'
 import type { Program } from '@/lib/data'
 
 import SchemaBlock       from './SchemaBlock'
 import UniHero           from './UniHero'
-import ApprovalsRow      from './ApprovalsRow'
+import ApprovalBadges    from './ApprovalBadges'
 import SectionAbout      from './SectionAbout'
 import SectionWhoCanApply from './SectionWhoCanApply'
 import SectionClasses    from './SectionClasses'
 import SectionExams      from './SectionExams'
 import SpecializationGrid from './SpecializationGrid'
-import SectionSyllabus   from './SectionSyllabus'
+import SectionCoreSubjects from './SectionCoreSubjects'
 import FeeBreakdown      from './FeeBreakdown'
 import EMIPlans          from './EMIPlans'
 import InlineCTA         from './InlineCTA'
@@ -48,7 +47,6 @@ interface Props {
 export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
   const cleanName  = getShortUniversityName(u.name)
   const specs      = pd.specs || []
-  const syllabus   = getMasterSyllabus(u.id, program) || getUniversitySyllabus(u.id, program)
   const peers      = getUniversitiesByProgram(program).filter(x => x.id !== u.id).slice(0, 3)
   const coupon     = COUPONS.find(c => c.universityId === u.id && (c.program === program || c.program === 'All')) || null
 
@@ -99,7 +97,17 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
             <main className="flex-1 min-w-0 space-y-6">
 
               {/* §3 Approvals */}
-              <ApprovalsRow u={u} />
+              <div className="rounded-xl border border-slate-200 bg-white p-5">
+                <ApprovalBadges
+                  approvals={u.approvals}
+                  naac={u.naac}
+                  nirf={u.nirf}
+                  nirfMgt={u.nirfMgt}
+                  nirfEng={u.nirfEng}
+                  highlight={u.highlight}
+                  layout="row"
+                />
+              </div>
 
               {/* §4 About */}
               <SectionAbout u={u} program={program} pd={pd} cleanName={cleanName} />
@@ -125,13 +133,8 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
                 />
               )}
 
-              {/* §9 Syllabus */}
-              <SectionSyllabus
-                syllabus={syllabus}
-                program={program}
-                universityName={cleanName}
-                specs={specs}
-              />
+              {/* §9 Core Subjects */}
+              <SectionCoreSubjects program={program} cleanName={cleanName} />
 
               {/* §10 Fees */}
               <FeeBreakdown u={u} pd={pd} program={program} />

@@ -85,6 +85,14 @@ export function getShortUniversityName(name: string): string {
 }
 
 /**
+ * Returns the level label for a program (POSTGRADUATE / UNDERGRADUATE / CERTIFICATE).
+ */
+export function getProgramLevel(program: string): string {
+  const postgrad = ['MBA', 'MCA', 'M.Com', 'MA', 'MSc', 'MBA (WX)']
+  return postgrad.includes(program) ? 'POSTGRADUATE' : 'UNDERGRADUATE'
+}
+
+/**
  * Formats common numbers with standard comma grouping (thousands).
  * Safe for hydration because it doesn't use system locale.
  */

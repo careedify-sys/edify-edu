@@ -20,14 +20,18 @@ export default function SampleCertificate({ universityId, program, universityNam
       </p>
 
       {degPath ? (
-        <figure className="rounded-lg border border-slate-200 overflow-hidden bg-slate-50 p-4 flex justify-center">
-          <img
-            src={degPath}
-            alt={`${universityName} ${program} sample degree certificate`}
-            className="max-h-72 object-contain w-full"
-            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
-          />
-          <figcaption className="sr-only">Sample {program} degree certificate from {universityName}</figcaption>
+        <figure className="flex flex-col items-center gap-3">
+          <figcaption className="text-sm font-semibold text-slate-600 text-center">
+            Sample {program} Degree Certificate from {universityName}
+          </figcaption>
+          <div className="rounded-lg border border-slate-200 overflow-hidden bg-slate-50 p-4" style={{ maxWidth: 480, width: '100%' }}>
+            <img
+              src={degPath}
+              alt={`${universityName} ${program} sample degree certificate`}
+              className="max-h-72 object-contain w-full"
+              onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
+            />
+          </div>
         </figure>
       ) : (
         <div className="rounded-lg border-2 border-dashed border-slate-200 bg-slate-50 p-10 flex flex-col items-center text-center gap-3">

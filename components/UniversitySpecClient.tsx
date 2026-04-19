@@ -299,8 +299,8 @@ export default function UniversitySpecClient({ university: u, program, programSl
                     ✦ Edify Recommends
                   </span>
                 </div>
-                <h2 className="font-display text-xl font-bold text-navy mb-1">Skills You'll Gain from {cleanName} {program} in {spec}</h2>
-                <p className="text-sm text-ink-3 mb-4">In-demand competencies for <strong>{spec}</strong> professionals — specific to this specialisation</p>
+                <h2 className="font-display text-xl font-bold text-navy mb-1">Skills to Learn Alongside Your {program}</h2>
+                <p className="text-sm text-ink-3 mb-4">EdifyEdu recommends picking up these skills during or after your {spec} specialisation. They are not part of the university syllabus.</p>
                 <div className="flex flex-wrap gap-2">
                   {(specContent?.skills ?? []).map(skill => (
                     <span key={skill} className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-100">

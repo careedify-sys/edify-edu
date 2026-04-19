@@ -1,5 +1,5 @@
 import type { University, ProgramDetail } from '@/lib/data'
-import { cleanCareerOutcome, formatINR } from '@/lib/format'
+import { cleanCareerOutcome, formatINR, getProgramLevel } from '@/lib/format'
 import { TrendingUp } from 'lucide-react'
 
 interface Props {
@@ -12,24 +12,27 @@ interface Props {
 
 export default function UniHero({ u, program, pd, cleanName, spec }: Props) {
   const specs  = pd.specs || []
+  const level  = getProgramLevel(program)
   const h1 = spec
     ? `Online ${program} in ${spec} from ${cleanName}`
     : `${cleanName} Online ${program}: Fees, Syllabus & Specialisations 2026`
 
   const eyebrow = spec
-    ? `${pd.duration || '2 Years'} · UGC DEB Approved`
-    : `${specs.length > 0 ? `${specs.length} Specialisations · ` : ''}${pd.duration || '2 Years'} · UGC DEB Approved`
+    ? `${level} · ${pd.duration || '2 Years'} · UGC DEB Approved`
+    : `${level} · ${specs.length > 0 ? `${specs.length} Specialisations · ` : ''}${pd.duration || '2 Years'} · UGC DEB Approved`
 
   const sub = spec
     ? `${program} with ${spec} specialisation from ${cleanName}. UGC DEB approved. NAAC ${u.naac} accredited.`
     : (cleanCareerOutcome(pd.careerOutcome || '') || `Advance your career with an Online ${program} from ${cleanName}. Choose from ${specs.length}+ industry-relevant specialisations. Study while working.`)
 
+  const eligibilityLabel = ['MBA', 'MCA'].includes(program) ? 'Grad + 50%' : '10+2 + 50%'
+
   const stats = [
     { label: 'Total Fees', value: pd.fees || formatINR(u.feeMin) },
     { label: 'Duration', value: pd.duration || '2 Years' },
+    { label: 'Eligibility', value: eligibilityLabel },
     { label: 'NAAC', value: u.naac },
     ...(u.nirf > 0 && u.nirf < 500 ? [{ label: 'NIRF', value: `#${u.nirf}` }] : []),
-    ...(pd.avgSalary ? [{ label: 'Avg Salary', value: pd.avgSalary.split('–')[0].trim() + '+' }] : []),
   ]
 
   return (

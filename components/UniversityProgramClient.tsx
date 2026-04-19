@@ -152,8 +152,8 @@ function FullPage({ u, program, programSlug, pd }: {
                       ✦ Edify Recommends
                     </span>
                   </div>
-                  <h2 className="font-display text-xl font-bold text-navy mb-1">Skills You'll Gain from {cleanName} Online {program}</h2>
-                  <p className="text-sm text-ink-3 mb-4">Key competencies from an online {program} that employers look for</p>
+                  <h2 className="font-display text-xl font-bold text-navy mb-1">Skills to Learn Alongside Your {program}</h2>
+                  <p className="text-sm text-ink-3 mb-4">EdifyEdu recommends picking up these skills during or after your {program}. They are not part of the university syllabus.</p>
                   <div className="grid md:grid-cols-2 gap-4">
                     {(programContent?.skills?.technical?.length ?? 0) > 0 && (
                       <div>

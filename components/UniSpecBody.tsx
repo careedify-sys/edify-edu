@@ -11,7 +11,7 @@ import type { Program } from '@/lib/data'
 
 import SchemaBlock        from './SchemaBlock'
 import UniHero            from './UniHero'
-import ApprovalsRow       from './ApprovalsRow'
+import ApprovalBadges     from './ApprovalBadges'
 import SectionAbout       from './SectionAbout'
 import SectionWhoCanApply from './SectionWhoCanApply'
 import SectionClasses     from './SectionClasses'
@@ -159,7 +159,17 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
 
             {/* ── MAIN COLUMN ── */}
             <main className="flex-1 min-w-0 space-y-6">
-              <ApprovalsRow u={u} />
+              <div className="rounded-xl border border-slate-200 bg-white p-5">
+                <ApprovalBadges
+                  approvals={u.approvals}
+                  naac={u.naac}
+                  nirf={u.nirf}
+                  nirfMgt={u.nirfMgt}
+                  nirfEng={u.nirfEng}
+                  highlight={u.highlight}
+                  layout="row"
+                />
+              </div>
               <SectionAbout u={u} program={program} pd={pd} cleanName={cleanName} spec={spec} />
               <SectionWhoCanApply u={u} program={program} />
               <SectionClasses u={u} program={program} />
