@@ -15,6 +15,8 @@ import ApprovalBadges from '@/components/ApprovalBadges'
 import { StickyBottomBar, ScholarshipPopup } from '@/components/LeadCapture'
 import EdifyTrust from '@/components/EdifyTrust'
 import GatedContent from '@/components/GatedContent'
+import AssuredMarquee from '@/components/AssuredMarquee'
+import PreAdmissionTools from '@/components/PreAdmissionTools'
 
 const progSlug = (p: Program) => p.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'')
 
@@ -115,6 +117,8 @@ export default function UniversityPageClient({ university: u }: Props) {
           {'@type':'ListItem',position:3,name:`${u.name} ${displayProgram}`,item:`https://edifyedu.in/universities/${u.id}`},
         ]
       })}}/>
+
+      <AssuredMarquee />
 
       <div className="page-shell">
         <div style={{height:3,background:u.color}}/>
@@ -294,6 +298,9 @@ export default function UniversityPageClient({ university: u }: Props) {
               </div>
             </div>
           </div>
+
+          {/* Pre-Admission Tools strip */}
+          <PreAdmissionTools universityId={u.id} />
 
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Left Column - Main Content */}

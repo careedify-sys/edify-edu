@@ -36,6 +36,7 @@ import StickyLeadCard    from './StickyLeadCard'
 import CouponCard        from './CouponCard'
 import QuickFactsCard    from './QuickFactsCard'
 import WhatsAppFloat     from './WhatsAppFloat'
+import AssuredMarquee   from './AssuredMarquee'
 
 interface Props {
   u: University
@@ -66,6 +67,7 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
   return (
     <>
       <SchemaBlock u={u} pd={pd} program={program} programSlug={programSlug} coupon={coupon} faqs={faqs} />
+      <AssuredMarquee />
 
       <div className="page-shell">
         {/* Top colour bar */}
@@ -223,7 +225,7 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
                   universityId={u.id}
                   defaultProgram={program}
                 />
-                <CouponCard coupon={coupon} universityId={u.id} program={program} />
+                <CouponCard coupon={coupon} universityId={u.id} program={program} universityName={cleanName} />
                 <QuickFactsCard u={u} pd={pd} program={program} />
               </div>
             </aside>

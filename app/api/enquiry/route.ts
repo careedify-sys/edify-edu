@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
 
   try {
     const body = await req.json()
-    const { name, phone, email, program, university, preferredUniversity, sourcePage, source } = body
+    const { name, phone, email, state, program, university, preferredUniversity, sourcePage, source, couponCode } = body
 
     if (!name || !phone) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
@@ -36,6 +36,7 @@ export async function POST(req: NextRequest) {
     const universityValue = university || preferredUniversity || 'Not specified'
     const programValue = program || 'Not specified'
     const sourceValue = sourcePage || source || 'website'
+    const stateValue = state || 'Not specified'
 
     // ── 1. EMAIL via Resend ─────────────────────────────────────────────────
     if (process.env.RESEND_API_KEY) {
@@ -51,9 +52,11 @@ export async function POST(req: NextRequest) {
               <tr><td style="padding:8px;background:#f8fafc;font-weight:600;width:40%">Name</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${name}</td></tr>
               <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Phone</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">+91 ${phone}</td></tr>
               <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Email</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${email || 'Not provided'}</td></tr>
+              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">State</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${stateValue}</td></tr>
               <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Interested In</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${programValue}</td></tr>
               <tr><td style="padding:8px;background:#f8fafc;font-weight:600">University</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${universityValue}</td></tr>
               <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Source</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${sourceValue}</td></tr>
+              ${couponCode ? `<tr><td style="padding:8px;background:#f8fafc;font-weight:600">Coupon</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${couponCode}</td></tr>` : ''}
               <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Submitted At</td><td style="padding:8px">${timestamp}</td></tr>
             </table>
           </div>
@@ -72,9 +75,11 @@ export async function POST(req: NextRequest) {
           name,
           phone,
           email: email || '',
+          state: stateValue,
           program: programValue,
           university: universityValue,
           sourcePage: sourceValue,
+          couponCode: couponCode || '',
         }),
       }).catch(() => {}) // Non-blocking
     }

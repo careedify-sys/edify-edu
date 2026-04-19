@@ -34,6 +34,7 @@ import StickyLeadCard     from './StickyLeadCard'
 import CouponCard         from './CouponCard'
 import QuickFactsCard     from './QuickFactsCard'
 import WhatsAppFloat      from './WhatsAppFloat'
+import AssuredMarquee    from './AssuredMarquee'
 import { CheckCircle } from 'lucide-react'
 
 interface Props {
@@ -129,6 +130,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
   return (
     <>
       <SchemaBlock u={u} pd={pd} program={program} programSlug={programSlug} spec={spec} specSlug={specSlug} coupon={coupon} faqs={faqs} />
+      <AssuredMarquee />
 
       <div className="page-shell">
         <div style={{ height: 3, background: u.color }} />
@@ -233,7 +235,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
             <aside className="lg:w-72 xl:w-80 shrink-0">
               <div className="sticky top-4 space-y-4">
                 <StickyLeadCard universityName={u.name} universityId={u.id} defaultProgram={program} />
-                <CouponCard coupon={coupon} universityId={u.id} program={program} />
+                <CouponCard coupon={coupon} universityId={u.id} program={program} universityName={cleanName} />
                 <QuickFactsCard u={u} pd={pd} program={program} />
               </div>
             </aside>
