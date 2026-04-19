@@ -9,9 +9,9 @@ interface Props {
 
 const PROGRAM_RED_FLAGS: Record<string, string[]> = {
   MBA: [
-    'An online MBA will not replace a top IIM/IIT offline MBA for investment banking or top consulting firms — if that is your goal, this is not the path.',
-    'Placement guarantee is not provided. Placement assistance ≠ guaranteed job offer.',
-    'If you want a degree recognised for campus placement drives at MNC headquarters, an online MBA has limited reach there.',
+    'An online MBA does not carry the brand weight of IIM Ahmedabad, XLRI, or ISB for roles in investment banking or top-tier strategy consulting. If those specific institutions or roles are your primary target, an offline programme from those institutions is the right fit.',
+    'Placement assistance is provided, not a placement guarantee. It means access to job portals, resume workshops, and career events — not a guaranteed offer letter.',
+    'Campus-based MNC placement drives (on-site rounds at employer premises) have limited reach for online graduates compared to top residential B-schools.',
   ],
   MCA: [
     'An online MCA alone will not land you a product role at top-tier tech companies (FAANG). You need portfolio projects and DSA skills alongside the degree.',

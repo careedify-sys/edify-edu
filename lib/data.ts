@@ -131,7 +131,7 @@ export const UNIVERSITIES: University[] = [
     tagline: 'Rare dual HR+Finance MBA; Employee Negotiation Skills as dedicated subject; Gen AI in Sem 1 core; Business Analytics & A',
     description: 'UGC DEB approved online programs from JAIN (Deemed-to-be University) – JAIN Online. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Professionals wanting combined HR + Finance expertise', 'BFSI HR aspirants', 'Dual-skill career builders'],
-    notFor: ['Those wanting single-focus specialization', 'Campus experience seekers'],
+    notFor: ['Those seeking an on-campus residential experience', 'Students needing a guaranteed placement offer'],
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'M.Com', 'MA'],
     programDetails: {
       'MBA': {

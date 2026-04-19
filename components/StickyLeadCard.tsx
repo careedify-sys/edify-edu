@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { CheckCircle, Loader2, Phone, User, Mail, MapPin } from 'lucide-react'
 
 const PROGRAMS = ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'B.Com', 'MA', 'M.Com', 'MSc', 'Not sure yet']
@@ -28,9 +28,25 @@ export default function StickyLeadCard({ universityName, universityId, defaultPr
   const [email,     setEmail]     = useState('')
   const [state,     setState]     = useState('')
   const [program,   setProgram]   = useState(defaultProgram || '')
+  const [notes,     setNotes]     = useState('')
+  const [showNotes, setShowNotes] = useState(false)
   const [submitted, setSubmitted] = useState(false)
   const [loading,   setLoading]   = useState(false)
   const [error,     setError]     = useState('')
+  const rootRef = useRef<HTMLDivElement>(null)
+
+  // Listen for programmatic prefill (e.g. from RequestSampleCertCard)
+  useEffect(() => {
+    function handler(e: Event) {
+      const detail = (e as CustomEvent<{ notes?: string }>).detail
+      if (detail?.notes) {
+        setNotes(detail.notes)
+        setShowNotes(true)
+      }
+    }
+    window.addEventListener('edify:prefill-lead', handler)
+    return () => window.removeEventListener('edify:prefill-lead', handler)
+  }, [])
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -58,6 +74,7 @@ export default function StickyLeadCard({ universityName, universityId, defaultPr
         program: program || defaultProgram || 'General',
         preferredUniversity: universityName,
         universityId,
+        notes: notes.trim() || undefined,
         source: 'sticky_card',
         timestamp: new Date().toISOString(),
       }),
@@ -81,7 +98,7 @@ export default function StickyLeadCard({ universityName, universityId, defaultPr
   }
 
   return (
-    <div className="rounded-xl border border-amber-200 bg-white p-5 shadow-md">
+    <div id="sticky-lead-card" className="rounded-xl border border-amber-200 bg-white p-5 shadow-md">
       <div className="mb-4">
         <div className="text-[10px] font-black uppercase tracking-widest text-amber-600 mb-1">Free Counselling</div>
         <h2 className="text-base font-bold leading-snug" style={{ color: '#0B1533' }}>
@@ -154,6 +171,17 @@ export default function StickyLeadCard({ universityName, universityId, defaultPr
             <option key={p} value={p}>{p}</option>
           ))}
         </select>
+
+        {showNotes && (
+          <textarea
+            value={notes}
+            onChange={e => setNotes(e.target.value)}
+            maxLength={140}
+            rows={2}
+            placeholder="Your request (optional)"
+            className="w-full px-3 py-2.5 text-sm border border-slate-200 rounded-lg focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-200 resize-none"
+          />
+        )}
 
         {error && <p className="text-xs text-red-500">{error}</p>}
 

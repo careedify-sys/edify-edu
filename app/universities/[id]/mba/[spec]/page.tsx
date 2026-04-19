@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getUniversityById } from '@/lib/data'
 import { getProgramSpecParams, getSpecDisplayName } from '@/lib/data/programs'
-import SpecializationPageClient from '@/components/SpecializationPageClient'
+import UniSpecBody from '@/components/UniSpecBody'
 import { getTitleName, shortenSpec } from '@/lib/seo-title'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
@@ -54,18 +54,23 @@ export default async function SpecializationPage(
   { params }: { params: Promise<{ id: string; spec: string }> }
 ) {
   const { id, spec: specSlug } = await params
-  const university = getUniversityById(id)
-  if (!university) notFound()
+  const u = getUniversityById(id)
+  if (!u) notFound()
 
   const spec = getSpecDisplayName(id, 'mba', specSlug)
   if (!spec) notFound()
 
+  const pd = u.programDetails['MBA']
+  if (!pd) notFound()
+
   return (
-    <SpecializationPageClient
-      university={university}
+    <UniSpecBody
+      u={u}
       program="MBA"
-      specialization={spec}
+      programSlug="mba"
+      spec={spec}
       specSlug={specSlug}
+      pd={pd}
     />
   )
 }

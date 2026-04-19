@@ -106,11 +106,13 @@ export const GENERIC_DEGREE: Record<string, string> = {
   default: '/logos/sample-degrees/sample-degree.svg',
 }
 
-export function getSampleDegree(universityId: string, program: string): string {
+/**
+ * Returns the path to a uni-specific sample degree SVG, or null if none exists.
+ * NEVER falls back to generic certs — showing another uni's cert mislabeled is a trust break.
+ */
+export function getSampleDegree(universityId: string, program: string): string | null {
   const prog = program.toLowerCase().replace(/[^a-z]/g, '') as 'mba' | 'mca' | 'bba' | 'bca'
   const uni = SAMPLE_DEGREES[universityId]
-  if (uni) {
-    return uni[prog] || uni.default || GENERIC_DEGREE[program] || GENERIC_DEGREE.default
-  }
-  return GENERIC_DEGREE[program] || GENERIC_DEGREE.default
+  if (!uni) return null
+  return uni[prog] || uni.default || null
 }

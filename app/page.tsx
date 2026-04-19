@@ -10,6 +10,9 @@ import Link from 'next/link'
 import { ArrowRight, CheckCircle, XCircle, Shield, TrendingUp, Star, Award, BookOpen } from 'lucide-react'
 import { UNIS_SLIM } from '@/lib/data-slim'
 import UniversityCard from '@/components/UniversityCard'
+import FeaturedUniversitiesMarquee from '@/components/FeaturedUniversitiesMarquee'
+import AnimatedUniGrid from '@/components/AnimatedUniGrid'
+import AnimatedProgramsStrip from '@/components/AnimatedProgramsStrip'
 
 const PROGRAMS_SHOWCASE = [
   { key:'MBA',   label:'MBA',   icon:'💼', desc:'2 yrs · PG' },
@@ -148,47 +151,10 @@ export default function HomePage() {
       </section>
 
       {/* FEATURED BRANDS — social proof */}
-      <section style={{ background:'var(--surface)', borderBottom:'1px solid var(--border-light)' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-5">
-          <div style={{ display:'flex', alignItems:'center', gap:'12px', marginBottom:'12px' }}>
-            <span style={{ fontSize:'11px', fontWeight:'700', color:'var(--ink-3)', textTransform:'uppercase', letterSpacing:'0.08em', whiteSpace:'nowrap' }}>Featured universities</span>
-            <div style={{ flex:1, height:'1px', background:'var(--border-light)' }} />
-            <Link href="/universities" style={{ fontSize:'11px', fontWeight:'700', color:'var(--amber)', textDecoration:'none', whiteSpace:'nowrap' }}>View all {totalUnis}+ →</Link>
-          </div>
-          <div className="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none]">
-            {FEATURED_BRANDS.map(b => (
-              <Link key={b.id} href={`/universities/${b.id}`} className="no-underline shrink-0">
-                <div style={{ display:'flex', alignItems:'center', gap:'8px', padding:'8px 14px', borderRadius:'var(--r-sm)', border:'1.5px solid var(--border)', background:'var(--surface)', whiteSpace:'nowrap' }}
-                  className="brand-chip">
-                  <div style={{ width:'8px', height:'8px', borderRadius:'var(--r-pill)', background:b.color, flexShrink:0 }} />
-                  <span style={{ fontWeight:'700', fontSize:'13px', color:'var(--ink)' }}>{b.name}</span>
-                  <span style={{ fontSize:'10px', color:'var(--ink-3)', paddingLeft:'6px', borderLeft:'1px solid var(--border)' }}>{b.tag}</span>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-        <style>{`.brand-chip { transition: var(--t-base); } .brand-chip:hover { border-color: var(--amber) !important; background: var(--amber-light) !important; }`}</style>
-      </section>
+      <FeaturedUniversitiesMarquee brands={FEATURED_BRANDS} totalUnis={totalUnis} />
 
       {/* PROGRAMS STRIP */}
-      <section style={{ background:'var(--surface-2)', borderBottom:'1px solid var(--border)' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
-          <div className="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none]">
-            {PROGRAMS_SHOWCASE.map((p, i) => {
-              const slug = p.key.toLowerCase().replace(/\./g, '').replace(/\s+/g, '-')
-              return (
-                <Link key={i} href={`/programs/${slug}`} className="prog-chip"
-                  style={{ flexShrink:0, flexDirection:'column', minWidth:'68px', padding:'10px 14px', gap:'4px' }}>
-                  <span className="text-[20px]">{p.icon}</span>
-                  <span style={{ fontSize:'11px', fontWeight:'700' }}>{p.label}</span>
-                  <span style={{ fontSize:'9px', color:'var(--ink-3)' }}>{p.desc}</span>
-                </Link>
-              )
-            })}
-          </div>
-        </div>
-      </section>
+      <AnimatedProgramsStrip programs={PROGRAMS_SHOWCASE} />
 
     {/* WHY EDIFY */}
     <section className="py-20 relative overflow-hidden" style={{ background:'var(--bg)' }}>
@@ -268,9 +234,7 @@ export default function HomePage() {
               View All {totalUnis}+ <ArrowRight style={{ width:'15px', height:'15px' }} />
             </Link>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {topUnis.map(u => <UniversityCard key={u.id} u={u} />)}
-          </div>
+          <AnimatedUniGrid unis={topUnis} />
         </div>
       </section>
 

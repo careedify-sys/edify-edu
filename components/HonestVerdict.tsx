@@ -33,9 +33,9 @@ const PROGRAM_SUITS: Record<string, string[]> = {
 
 const PROGRAM_ELSEWHERE: Record<string, string[]> = {
   MBA: [
-    'You want the IIM Ahmedabad brand — apply offline only',
-    'You need placement guarantee with a specific salary number',
-    'You want a 1-year accelerated MBA',
+    'You need the IIM/XLRI/ISB campus brand for investment banking or top consulting — apply offline only',
+    'You need a written placement guarantee with a minimum salary commitment',
+    'You want a 1-year accelerated full-time MBA format',
   ],
   MCA: [
     'You want a core systems programming or VLSI role — needs B.Tech/M.Tech',

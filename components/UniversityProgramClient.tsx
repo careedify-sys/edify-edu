@@ -515,7 +515,7 @@ function FullPage({ u, program, programSlug, pd }: {
                   <h3 className="font-bold text-navy text-sm mb-3">Sample Degree Certificate</h3>
                   <p className="text-xs text-ink-2 mb-3">This is a sample of the degree certificate issued by {u.name} upon program completion.</p>
                   <img
-                    src={getSampleDegree(u.id, program)}
+                    src={getSampleDegree(u.id, program) ?? undefined}
                     alt={`${u.name} sample degree certificate`}
                     className="w-full max-w-sm mx-auto rounded-lg border border-border"
                     loading="lazy"

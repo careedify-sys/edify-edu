@@ -397,7 +397,7 @@ export default function UniversityPageClient({ university: u }: Props) {
 
               {/* Sample Degree Certificate — only shown for universities with configured SVGs */}
               {SAMPLE_DEGREES[u.id] && (() => {
-                const degreeUrl = getSampleDegree(u.id, displayProgram)
+                const degreeUrl = getSampleDegree(u.id, displayProgram) ?? undefined
                 return (
                   <section className="card-lg p-6">
                     <div className="text-[11px] font-bold text-amber uppercase tracking-widest mb-1">Authentic Degree Preview</div>
