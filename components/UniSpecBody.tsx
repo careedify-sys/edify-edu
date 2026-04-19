@@ -23,6 +23,7 @@ import InlineCTA          from './InlineCTA'
 import SampleCertificate  from './SampleCertificate'
 import AdmissionSteps     from './AdmissionSteps'
 import SectionPlacements  from './SectionPlacements'
+import BeyondAdmissionSection from './BeyondAdmissionSection'
 import TopHirers          from './TopHirers'
 import ReviewsBlock       from './ReviewsBlock'
 import RedFlagsBlock      from './RedFlagsBlock'
@@ -194,6 +195,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
               <SampleCertificate universityId={u.id} program={program} universityName={cleanName} />
               <AdmissionSteps />
               <SectionPlacements pd={pd} cleanName={cleanName} program={program} />
+              <BeyondAdmissionSection cleanName={cleanName} />
               <TopHirers pd={pd} program={program} cleanName={cleanName} />
               <ReviewsBlock universityId={u.id} program={program} />
               <RedFlagsBlock u={u} program={program} cleanName={cleanName} />

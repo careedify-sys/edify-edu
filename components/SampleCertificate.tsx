@@ -37,7 +37,11 @@ export default function SampleCertificate({ universityId, program, universityNam
           </div>
         </figure>
       ) : (
-        <RequestSampleCertCard universityName={universityName} />
+        <RequestSampleCertCard
+          universityName={universityName}
+          universityId={universityId}
+          program={program}
+        />
       )}
     </section>
   )

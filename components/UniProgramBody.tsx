@@ -25,6 +25,7 @@ import InlineCTA         from './InlineCTA'
 import SampleCertificate from './SampleCertificate'
 import AdmissionSteps    from './AdmissionSteps'
 import SectionPlacements from './SectionPlacements'
+import BeyondAdmissionSection from './BeyondAdmissionSection'
 import TopHirers         from './TopHirers'
 import ReviewsBlock      from './ReviewsBlock'
 import RedFlagsBlock     from './RedFlagsBlock'
@@ -61,7 +62,7 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
     { q: `What is the eligibility for ${program} at ${cleanName}?`, a: u.eligibility || `Any Bachelor's degree with minimum 50% aggregate marks. Final year students may apply.` },
     { q: `What exam mode does ${cleanName} use?`, a: `${u.examMode} examinations. No mandatory campus visits required for most semesters.` },
     { q: `How long does the ${program} program take at ${cleanName}?`, a: `${pd.duration || '2 years'}. Classes are online with flexible scheduling.` },
-    { q: `What is the EMI for ${cleanName} ${program}?`, a: `EMI starts from ₹${u.emiFrom.toLocaleString()}/month. Multiple tenure options (6, 12, 24 months) available via Bajaj Finserv and other lenders.` },
+    { q: `What is the EMI for ${cleanName} ${program}?`, a: `EMI starts from ₹${u.emiFrom.toLocaleString()}/month. Multiple tenure options (6, 12, 24 months) available via EdifyEdu-partnered NBFCs: Fibe, GrayQuest, Techfino, and Avanse.` },
   ]
 
   return (
@@ -164,6 +165,9 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
 
               {/* §14 Placements */}
               <SectionPlacements pd={pd} cleanName={cleanName} program={program} />
+
+              {/* §14b Beyond Admission */}
+              <BeyondAdmissionSection cleanName={cleanName} />
 
               {/* §15 Top Hirers */}
               <TopHirers pd={pd} program={program} cleanName={cleanName} />

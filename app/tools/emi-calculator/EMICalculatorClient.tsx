@@ -205,12 +205,13 @@ export default function EMICalculatorClient() {
               With fees ranging from ₹40,000 to ₹4,00,000 for a complete program, most students can comfortably finance
               their education through EMI options.
             </p>
-            <h3 className="text-navy font-semibold mt-6 mb-2">Popular Banks for Education Loans</h3>
+            <h3 className="text-navy font-semibold mt-6 mb-2">Lending Partners for Online Education</h3>
             <ul>
+              <li><strong>Fibe:</strong> Instant approval, flexible tenure, no collateral</li>
+              <li><strong>GrayQuest:</strong> Education-specific NBFC, covers full fee upfront</li>
+              <li><strong>Techfino:</strong> Digital-first loan processing, competitive rates</li>
+              <li><strong>Avanse:</strong> 9.5% onwards, flexible repayment options</li>
               <li><strong>SBI Scholar Loan:</strong> 8.5% onwards, up to ₹20 lakhs without collateral</li>
-              <li><strong>HDFC Credila:</strong> 9.5% onwards, flexible repayment options</li>
-              <li><strong>Axis Bank:</strong> 10.5% onwards, quick processing</li>
-              <li><strong>ICICI Bank:</strong> 10% onwards, covers tuition + living expenses</li>
             </ul>
             <h3 className="text-navy font-semibold mt-6 mb-2">Tax Benefits on Education Loan</h3>
             <p>

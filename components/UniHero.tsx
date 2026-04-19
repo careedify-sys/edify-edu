@@ -1,9 +1,9 @@
 'use client'
 
-import { useState } from 'react'
 import type { University, ProgramDetail } from '@/lib/data'
 import { cleanCareerOutcome, formatINR, getProgramLevel } from '@/lib/format'
 import { TrendingUp } from 'lucide-react'
+import LOGOS_MANIFEST from '@/lib/data/logos-manifest.json'
 
 interface Props {
   u: University
@@ -13,19 +13,10 @@ interface Props {
   spec?: string
 }
 
-function getInitials(name: string): string {
-  return name
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 2)
-    .map(w => w[0].toUpperCase())
-    .join('')
-}
-
 export default function UniHero({ u, program, pd, cleanName, spec }: Props) {
-  const [logoError, setLogoError] = useState(false)
   const specs  = pd.specs || []
   const level  = getProgramLevel(program)
+  const logoPath: string | undefined = (LOGOS_MANIFEST as Record<string, string>)[u.id]
 
   const h1 = spec
     ? `Online ${program} in ${spec} from ${cleanName}`
@@ -49,7 +40,6 @@ export default function UniHero({ u, program, pd, cleanName, spec }: Props) {
     ...(u.nirf > 0 && u.nirf < 500 ? [{ label: 'NIRF', value: `#${u.nirf}`, highlight: false }] : []),
   ]
 
-  const logoSrc = `/logos/university_logos/${u.id}.svg`
   const intakeLine = (pd as any).nextIntake
     ? `Next batch: ${(pd as any).nextIntake}`
     : 'Next batch: Jul 2026'
@@ -70,24 +60,12 @@ export default function UniHero({ u, program, pd, cleanName, spec }: Props) {
           </span>
         </div>
 
-        {/* Logo + H1 block */}
+        {/* Logo (if available) + H1 block */}
         <div className="flex items-center gap-4 mb-4">
-          {logoError ? (
-            <div
-              style={{
-                width: 64, height: 64, borderRadius: 14, flexShrink: 0,
-                background: 'linear-gradient(135deg,#F4A024,#B45309)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontSize: 20, fontWeight: 800, color: '#fff',
-              }}
-            >
-              {getInitials(cleanName)}
-            </div>
-          ) : (
+          {logoPath && (
             <img
-              src={logoSrc}
+              src={logoPath}
               alt={`${cleanName} logo`}
-              onError={() => setLogoError(true)}
               style={{
                 width: 64, height: 64, objectFit: 'contain',
                 background: '#fff', borderRadius: 14, padding: 8,
@@ -95,7 +73,6 @@ export default function UniHero({ u, program, pd, cleanName, spec }: Props) {
               }}
             />
           )}
-
           <h1
             className="font-bold text-white leading-tight"
             style={{ fontSize: 'clamp(1.35rem,3.5vw,2.1rem)', fontWeight: 800 }}
