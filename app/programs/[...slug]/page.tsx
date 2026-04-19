@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ChevronRight, BookOpen, Award, Users, Briefcase, TrendingUp } from 'lucide-react'
 import { formatFeeSlim as formatFee } from '@/lib/data-slim'
+import { getShortUniversityName } from '@/lib/format'
 import { PROGRAM_META } from '@/lib/data-client'
 import { getAllSpecs, getUniversitiesByProgram, UNIVERSITIES } from '@/lib/data'
 import { getProgramContent, getSpecContent, getSpecFallback } from '@/lib/content'
@@ -424,7 +425,7 @@ export default async function CatchAllProgramPage(
                           </div>
                           <div className="flex-1 min-w-0">
                             <div className="text-sm font-bold text-navy group-hover:text-amber transition-colors leading-snug truncate">
-                              {u.name.replace(/\bOnline\b\s*$/i,'')}
+                              {getShortUniversityName(u.name)}
                             </div>
                             <div className="text-xs text-ink-3">
                               NAAC {u.naac}{u.nirf < 200 ? ` · NIRF #${u.nirf}` : ''} · {pd?.fees || formatFee(u.feeMin)}

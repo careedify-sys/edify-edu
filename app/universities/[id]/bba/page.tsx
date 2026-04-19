@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
-import { cleanCareerOutcome } from '@/lib/format'
+import { cleanCareerOutcome, getShortUniversityName } from '@/lib/format'
 import { getTitleName } from '@/lib/seo-title'
 
 const makeSlug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
@@ -34,6 +34,7 @@ export default async function OnlineBBAPage({ params }: { params: Promise<{ id: 
 
   const pd = u.programDetails['BBA']
   const specs = pd?.specs || ['General Management', 'Marketing', 'Finance', 'Human Resource Management', 'International Business']
+  const cleanName = getShortUniversityName(u.name)
 
   return (
     <div className="page-shell">
@@ -43,7 +44,7 @@ export default async function OnlineBBAPage({ params }: { params: Promise<{ id: 
           <div className="flex items-center gap-1.5 text-xs text-ink-2 flex-wrap">
             <Link href="/">Home</Link><span>›</span>
             <Link href="/universities">Universities</Link><span>›</span>
-            <Link href={`/universities/${u.id}`}>{u.abbr}</Link><span>›</span>
+            <Link href={`/universities/${u.id}`}>{cleanName}</Link><span>›</span>
             <span className="text-amber font-semibold">Online BBA</span>
           </div>
         </div>
@@ -55,16 +56,16 @@ export default async function OnlineBBAPage({ params }: { params: Promise<{ id: 
             Undergraduate · {pd?.duration || '3 Years'} · UGC DEB Approved
           </div>
           <h1 className="font-display text-white" style={{fontSize:'clamp(1.6rem,4vw,2.4rem)',fontWeight:800,marginBottom:8}}>
-            {u.name} Online BBA
+            {cleanName} Online BBA
           </h1>
           <p className="text-slate-400 text-[15px] max-w-2xl">
-            {cleanCareerOutcome(pd?.careerOutcome || '') || `Bachelor of Business Administration from ${u.name}. Build your foundation in business management and leadership skills.`}
+            {cleanCareerOutcome(pd?.careerOutcome || '') || `Bachelor of Business Administration from ${cleanName}. Build your foundation in business management and leadership skills.`}
           </p>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
-        <h2 className="font-display text-xl font-bold text-navy mb-6">{u.name} Online BBA Specializations 2026</h2>
+        <h2 className="font-display text-xl font-bold text-navy mb-6">{cleanName} Online BBA Specializations 2026</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {specs.map(spec => (
             <Link key={spec} href={`/universities/${u.id}/bba/${makeSlug(spec)}`}
@@ -80,12 +81,12 @@ export default async function OnlineBBAPage({ params }: { params: Promise<{ id: 
         <div className="mt-12 grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
             <div>
-              <h2 className="font-display text-lg font-bold text-navy mb-3">About the Online BBA at {u.name}</h2>
+              <h2 className="font-display text-lg font-bold text-navy mb-3">About the Online BBA at {cleanName}</h2>
               <p className="text-ink-2 leading-relaxed text-[15px]">
-                {u.name} offers an online Bachelor of Business Administration approved by UGC DEB. This {pd?.duration || '3-year'} undergraduate program gives students a solid foundation in business principles, marketing, finance, human resource management, and organizational behavior. The coursework is delivered through an online platform so students can learn from anywhere in India.
+                {cleanName} offers an online Bachelor of Business Administration approved by UGC DEB. This {pd?.duration || '3-year'} undergraduate program gives students a solid foundation in business principles, marketing, finance, human resource management, and organizational behavior. The coursework is delivered through an online platform so students can learn from anywhere in India.
               </p>
               <p className="text-ink-2 leading-relaxed text-[15px] mt-3">
-                With NAAC {u.naac} accreditation{u.nirf < 200 ? ` and a NIRF rank of #${u.nirf}` : ''}, {u.name} is a recognized institution whose BBA degree is accepted by employers in the private sector and is valid for entry into postgraduate programs like MBA. Students pick a specialization and graduate with both theoretical knowledge and practical project work.
+                With NAAC {u.naac} accreditation{u.nirf < 200 ? ` and a NIRF rank of #${u.nirf}` : ''}, {cleanName} is a recognized institution whose BBA degree is accepted by employers in the private sector and is valid for entry into postgraduate programs like MBA. Students pick a specialization and graduate with both theoretical knowledge and practical project work.
               </p>
             </div>
 
@@ -93,7 +94,7 @@ export default async function OnlineBBAPage({ params }: { params: Promise<{ id: 
               <div>
                 <h2 className="font-display text-lg font-bold text-navy mb-3">Career Scope After {u.abbr} Online BBA</h2>
                 <p className="text-ink-2 text-[15px] mb-3">
-                  After completing a BBA from {u.name}, graduates typically start in junior management, sales, marketing, HR, and operations roles. The degree also serves as a strong base for pursuing an MBA, which can significantly increase earning potential over time.
+                  After completing a BBA from {cleanName}, graduates typically start in junior management, sales, marketing, HR, and operations roles. The degree also serves as a strong base for pursuing an MBA, which can significantly increase earning potential over time.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {pd.roles.slice(0, 8).map(role => (
@@ -107,7 +108,7 @@ export default async function OnlineBBAPage({ params }: { params: Promise<{ id: 
               <div>
                 <h2 className="font-display text-lg font-bold text-navy mb-3">Companies That Hire {u.abbr} BBA Graduates</h2>
                 <p className="text-ink-2 text-[15px]">
-                  {u.name} BBA graduates have joined organizations including {pd.topCompanies.slice(0, 6).join(', ')} and others in business development, customer success, and administrative roles. The university provides students access to career counselling and a dedicated placement support team.
+                  {cleanName} BBA graduates have joined organizations including {pd.topCompanies.slice(0, 6).join(', ')} and others in business development, customer success, and administrative roles. The university provides students access to career counselling and a dedicated placement support team.
                 </p>
               </div>
             )}
@@ -158,7 +159,7 @@ export default async function OnlineBBAPage({ params }: { params: Promise<{ id: 
         </div>
 
         <div className="mt-8 pt-6 border-t border-border">
-          <Link href={`/universities/${u.id}`} className="text-amber font-semibold">← Back to {u.name}</Link>
+          <Link href={`/universities/${u.id}`} className="text-amber font-semibold">← Back to {cleanName}</Link>
         </div>
       </div>
     </div>

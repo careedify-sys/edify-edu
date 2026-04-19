@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
-import { cleanCareerOutcome } from '@/lib/format'
+import { cleanCareerOutcome, getShortUniversityName } from '@/lib/format'
 import { getTitleName } from '@/lib/seo-title'
 
 // Helper to create slug
@@ -51,6 +51,7 @@ export default async function OnlineMBAPage(
 
   const pd = u.programDetails['MBA']
   const specs = pd?.specs || []
+  const cleanName = getShortUniversityName(u.name)
 
   return (
     <div className="page-shell">
@@ -64,7 +65,7 @@ export default async function OnlineMBAPage(
             <span>›</span>
             <Link href="/universities" className="hover:text-amber">Universities</Link>
             <span>›</span>
-            <Link href={`/universities/${u.id}`} className="hover:text-amber">{u.abbr}</Link>
+            <Link href={`/universities/${u.id}`} className="hover:text-amber">{cleanName}</Link>
             <span>›</span>
             <span className="text-amber font-semibold">Online MBA</span>
           </div>
@@ -78,10 +79,10 @@ export default async function OnlineMBAPage(
             {specs.length} Specializations · {pd?.duration || '2 Years'} · UGC DEB Approved
           </div>
           <h1 className="font-display text-white" style={{fontSize:'clamp(1.6rem,4vw,2.4rem)',fontWeight:800,marginBottom:8}}>
-            {u.name} Online MBA
+            {cleanName} Online MBA
           </h1>
           <p className="text-slate-400 text-[15px] max-w-2xl mb-6">
-            {cleanCareerOutcome(pd?.careerOutcome || '') || `Advance your career with an Online MBA from ${u.name}. Choose from ${specs.length}+ industry-relevant specializations.`}
+            {cleanCareerOutcome(pd?.careerOutcome || '') || `Advance your career with an Online MBA from ${cleanName}. Choose from ${specs.length}+ industry-relevant specializations.`}
           </p>
           <div className="flex flex-wrap gap-3">
             <div className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg">
@@ -109,7 +110,7 @@ export default async function OnlineMBAPage(
       {/* Specializations Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
         <h2 className="font-display text-xl font-bold text-navy mb-6">
-          {u.name} Online MBA Specializations 2026
+          {cleanName} Online MBA Specializations 2026
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {specs.map(spec => {
@@ -141,9 +142,9 @@ export default async function OnlineMBAPage(
         <div className="mt-12 grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
             <div>
-              <h2 className="font-display text-lg font-bold text-navy mb-3">About the Online MBA at {u.name}</h2>
+              <h2 className="font-display text-lg font-bold text-navy mb-3">About the Online MBA at {cleanName}</h2>
               <p className="text-ink-2 leading-relaxed text-[15px]">
-                {u.name} runs an online MBA program recognized by UGC DEB, designed for working professionals and fresh graduates looking to grow in business management. The {pd?.duration || '2-year'} program covers finance, marketing, operations, strategy, and leadership through live and recorded sessions that fit around a job schedule.
+                {cleanName} runs an online MBA program recognized by UGC DEB, designed for working professionals and fresh graduates looking to grow in business management. The {pd?.duration || '2-year'} program covers finance, marketing, operations, strategy, and leadership through live and recorded sessions that fit around a job schedule.
               </p>
               <p className="text-ink-2 leading-relaxed text-[15px] mt-3">
                 The university carries NAAC {u.naac} accreditation{u.nirf > 0 && u.nirf < 200 ? ` and holds a NIRF rank of #${u.nirf}` : ''}, giving the MBA degree the institutional credibility that matters to employers. Students select a specialization that aligns with their career goal and complete the program with an industry project or internship.
@@ -221,7 +222,7 @@ export default async function OnlineMBAPage(
         {/* Back link */}
         <div className="mt-8 pt-6 border-t border-border">
           <Link href={`/universities/${u.id}`} className="text-amber font-semibold hover:underline">
-            ← Back to {u.name} All Programs
+            ← Back to {cleanName} All Programs
           </Link>
         </div>
       </div>

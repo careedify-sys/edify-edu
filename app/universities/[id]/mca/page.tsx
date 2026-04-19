@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import { getMasterSyllabus } from '@/lib/content'
-import { cleanCareerOutcome } from '@/lib/format'
+import { cleanCareerOutcome, getShortUniversityName } from '@/lib/format'
 import { getTitleName } from '@/lib/seo-title'
 
 const makeSlug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
@@ -40,6 +40,7 @@ export default async function OnlineMCAPage({ params }: { params: Promise<{ id: 
 
   const pd = u.programDetails['MCA']
   const specs = pd?.specs || ['Data Science', 'AI & Machine Learning', 'Cloud Computing', 'Cyber Security']
+  const cleanName = getShortUniversityName(u.name)
 
   return (
     <div className="page-shell">
@@ -49,7 +50,7 @@ export default async function OnlineMCAPage({ params }: { params: Promise<{ id: 
           <div className="flex items-center gap-1.5 text-xs text-ink-2 flex-wrap">
             <Link href="/">Home</Link><span>›</span>
             <Link href="/universities">Universities</Link><span>›</span>
-            <Link href={`/universities/${u.id}`}>{u.abbr}</Link><span>›</span>
+            <Link href={`/universities/${u.id}`}>{cleanName}</Link><span>›</span>
             <span className="text-amber font-semibold">Online MCA</span>
           </div>
         </div>
@@ -61,16 +62,16 @@ export default async function OnlineMCAPage({ params }: { params: Promise<{ id: 
             {specs.length} Specializations · {pd?.duration || '2 Years'} · UGC DEB Approved
           </div>
           <h1 className="font-display text-white" style={{fontSize:'clamp(1.6rem,4vw,2.4rem)',fontWeight:800,marginBottom:8}}>
-            {u.name} Online MCA
+            {cleanName} Online MCA
           </h1>
           <p className="text-slate-400 text-[15px] max-w-2xl">
-            {cleanCareerOutcome(pd?.careerOutcome || '') || `Master of Computer Applications from ${u.name}. Build expertise in software development, data science, and emerging technologies.`}
+            {cleanCareerOutcome(pd?.careerOutcome || '') || `Master of Computer Applications from ${cleanName}. Build expertise in software development, data science, and emerging technologies.`}
           </p>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
-        <h2 className="font-display text-xl font-bold text-navy mb-6">{u.name} Online MCA Specializations 2026</h2>
+        <h2 className="font-display text-xl font-bold text-navy mb-6">{cleanName} Online MCA Specializations 2026</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {specs.map(spec => (
             <Link key={spec} href={`/universities/${u.id}/mca/${makeSlug(spec)}`}
@@ -86,9 +87,9 @@ export default async function OnlineMCAPage({ params }: { params: Promise<{ id: 
         <div className="mt-12 grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
             <div>
-              <h2 className="font-display text-lg font-bold text-navy mb-3">About the Online MCA at {u.name}</h2>
+              <h2 className="font-display text-lg font-bold text-navy mb-3">About the Online MCA at {cleanName}</h2>
               <p className="text-ink-2 leading-relaxed text-[15px]">
-                {u.name} offers a fully online Master of Computer Applications approved by UGC DEB. The program runs for {pd?.duration || '2 years'} and is designed for graduates who want to build strong expertise in software engineering, data science, cloud infrastructure, and modern IT systems. Students get access to live sessions, recorded lectures, and project-based assessments so they can study without stepping away from work.
+                {cleanName} offers a fully online Master of Computer Applications approved by UGC DEB. The program runs for {pd?.duration || '2 years'} and is designed for graduates who want to build strong expertise in software engineering, data science, cloud infrastructure, and modern IT systems. Students get access to live sessions, recorded lectures, and project-based assessments so they can study without stepping away from work.
               </p>
               <p className="text-ink-2 leading-relaxed text-[15px] mt-3">
                 The university holds NAAC {u.naac} accreditation{u.nirf > 0 && u.nirf < 200 ? ` and a NIRF rank of #${u.nirf}` : ''}, which makes the degree widely accepted by employers across India. Graduates from {u.abbr} Online MCA have joined companies in IT services, product development, consulting, and government sectors.
@@ -99,7 +100,7 @@ export default async function OnlineMCAPage({ params }: { params: Promise<{ id: 
               <div>
                 <h2 className="font-display text-lg font-bold text-navy mb-3">Career Scope After {u.abbr} Online MCA</h2>
                 <p className="text-ink-2 text-[15px] mb-3">
-                  An MCA from {u.name} prepares students for roles across software development, data analytics, system administration, and IT management. The average salary reported by recent graduates ranges around {pd.avgSalary || '₹5L to ₹12L'} per year depending on the specialization and location.
+                  An MCA from {cleanName} prepares students for roles across software development, data analytics, system administration, and IT management. The average salary reported by recent graduates ranges around {pd.avgSalary || '₹5L to ₹12L'} per year depending on the specialization and location.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {pd.roles.slice(0, 8).map(role => (
@@ -164,7 +165,7 @@ export default async function OnlineMCAPage({ params }: { params: Promise<{ id: 
         </div>
 
         <div className="mt-8 pt-6 border-t border-border">
-          <Link href={`/universities/${u.id}`} className="text-amber font-semibold">← Back to {u.name}</Link>
+          <Link href={`/universities/${u.id}`} className="text-amber font-semibold">← Back to {cleanName}</Link>
         </div>
       </div>
     </div>

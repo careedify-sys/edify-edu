@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
-import { cleanCareerOutcome } from '@/lib/format'
+import { cleanCareerOutcome, getShortUniversityName } from '@/lib/format'
 import { getTitleName } from '@/lib/seo-title'
 
 const makeSlug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
@@ -34,6 +34,7 @@ export default async function OnlineBCAPage({ params }: { params: Promise<{ id: 
 
   const pd = u.programDetails['BCA']
   const specs = pd?.specs || ['Computer Science', 'Data Science', 'Cloud Computing', 'Web Development', 'Mobile App Development']
+  const cleanName = getShortUniversityName(u.name)
 
   return (
     <div className="page-shell">
@@ -43,7 +44,7 @@ export default async function OnlineBCAPage({ params }: { params: Promise<{ id: 
           <div className="flex items-center gap-1.5 text-xs text-ink-2 flex-wrap">
             <Link href="/">Home</Link><span>›</span>
             <Link href="/universities">Universities</Link><span>›</span>
-            <Link href={`/universities/${u.id}`}>{u.abbr}</Link><span>›</span>
+            <Link href={`/universities/${u.id}`}>{cleanName}</Link><span>›</span>
             <span className="text-amber font-semibold">Online BCA</span>
           </div>
         </div>
@@ -55,16 +56,16 @@ export default async function OnlineBCAPage({ params }: { params: Promise<{ id: 
             Undergraduate · {pd?.duration || '3 Years'} · UGC DEB Approved
           </div>
           <h1 className="font-display text-white" style={{fontSize:'clamp(1.6rem,4vw,2.4rem)',fontWeight:800,marginBottom:8}}>
-            {u.name} Online BCA
+            {cleanName} Online BCA
           </h1>
           <p className="text-slate-400 text-[15px] max-w-2xl">
-            {cleanCareerOutcome(pd?.careerOutcome || '') || `Bachelor of Computer Applications from ${u.name}. Start your career in software development and IT.`}
+            {cleanCareerOutcome(pd?.careerOutcome || '') || `Bachelor of Computer Applications from ${cleanName}. Start your career in software development and IT.`}
           </p>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
-        <h2 className="font-display text-xl font-bold text-navy mb-6">{u.name} Online BCA Specializations 2026</h2>
+        <h2 className="font-display text-xl font-bold text-navy mb-6">{cleanName} Online BCA Specializations 2026</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {specs.map(spec => (
             <Link key={spec} href={`/universities/${u.id}/bca/${makeSlug(spec)}`}
@@ -80,9 +81,9 @@ export default async function OnlineBCAPage({ params }: { params: Promise<{ id: 
         <div className="mt-12 grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
             <div>
-              <h2 className="font-display text-lg font-bold text-navy mb-3">About the Online BCA at {u.name}</h2>
+              <h2 className="font-display text-lg font-bold text-navy mb-3">About the Online BCA at {cleanName}</h2>
               <p className="text-ink-2 leading-relaxed text-[15px]">
-                {u.name} offers a UGC DEB approved Bachelor of Computer Applications that students can complete entirely online over {pd?.duration || '3 years'}. The BCA program is built for students who have finished Class 12 and want to start a career in software development, web technologies, or IT management without leaving their home city.
+                {cleanName} offers a UGC DEB approved Bachelor of Computer Applications that students can complete entirely online over {pd?.duration || '3 years'}. The BCA program is built for students who have finished Class 12 and want to start a career in software development, web technologies, or IT management without leaving their home city.
               </p>
               <p className="text-ink-2 leading-relaxed text-[15px] mt-3">
                 The university is accredited by NAAC with a grade of {u.naac}{u.nirf < 200 ? ` and holds a NIRF rank of #${u.nirf}` : ''}. The degree is recognized by government and private sector employers across India, and students can choose from multiple specializations to match their interest area.
@@ -93,7 +94,7 @@ export default async function OnlineBCAPage({ params }: { params: Promise<{ id: 
               <div>
                 <h2 className="font-display text-lg font-bold text-navy mb-3">Career Scope After {u.abbr} Online BCA</h2>
                 <p className="text-ink-2 text-[15px] mb-3">
-                  After completing the BCA from {u.name}, students typically go into junior software developer, web developer, technical support, and QA analyst roles. Many graduates also continue to an MCA or MBA to grow into senior positions faster.
+                  After completing the BCA from {cleanName}, students typically go into junior software developer, web developer, technical support, and QA analyst roles. Many graduates also continue to an MCA or MBA to grow into senior positions faster.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {pd.roles.slice(0, 8).map(role => (
@@ -107,7 +108,7 @@ export default async function OnlineBCAPage({ params }: { params: Promise<{ id: 
               <div>
                 <h2 className="font-display text-lg font-bold text-navy mb-3">Companies That Hire {u.abbr} BCA Graduates</h2>
                 <p className="text-ink-2 text-[15px]">
-                  Graduates from {u.name} BCA have joined companies like {pd.topCompanies.slice(0, 6).join(', ')} and others across IT services and product roles. The university provides a student portal, live sessions, and basic placement support throughout the program.
+                  Graduates from {cleanName} BCA have joined companies like {pd.topCompanies.slice(0, 6).join(', ')} and others across IT services and product roles. The university provides a student portal, live sessions, and basic placement support throughout the program.
                 </p>
               </div>
             )}
@@ -158,7 +159,7 @@ export default async function OnlineBCAPage({ params }: { params: Promise<{ id: 
         </div>
 
         <div className="mt-8 pt-6 border-t border-border">
-          <Link href={`/universities/${u.id}`} className="text-amber font-semibold">← Back to {u.name}</Link>
+          <Link href={`/universities/${u.id}`} className="text-amber font-semibold">← Back to {cleanName}</Link>
         </div>
       </div>
     </div>
