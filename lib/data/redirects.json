@@ -1,0 +1,1594 @@
+{
+  "redirects": [
+    {
+      "source": "/universities/jain-university-online/m-com",
+      "destination": "/universities/jain-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/amity-university-online/b-com",
+      "destination": "/universities/amity-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/lovely-professional-university-online/m-com",
+      "destination": "/universities/lovely-professional-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dayananda-sagar-university-online/b-com",
+      "destination": "/universities/dayananda-sagar-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/parul-university-online/b-com",
+      "destination": "/universities/parul-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/parul-university-online/m-com",
+      "destination": "/universities/parul-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/amrita-vishwa-vidyapeetham-online/b-com",
+      "destination": "/universities/amrita-vishwa-vidyapeetham-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/amrita-vishwa-vidyapeetham-online/m-com",
+      "destination": "/universities/amrita-vishwa-vidyapeetham-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/mangalayatan-university-online/m-com",
+      "destination": "/universities/mangalayatan-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/shoolini-university-online/b-com",
+      "destination": "/universities/shoolini-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/manipal-university-jaipur-online/b-com",
+      "destination": "/universities/manipal-university-jaipur-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/manipal-university-jaipur-online/m-com",
+      "destination": "/universities/manipal-university-jaipur-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/galgotias-university-online/m-com",
+      "destination": "/universities/galgotias-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/sikkim-manipal-university-online/b-com",
+      "destination": "/universities/sikkim-manipal-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/sikkim-manipal-university-online/m-com",
+      "destination": "/universities/sikkim-manipal-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chitkara-university-online/b-com",
+      "destination": "/universities/chitkara-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/sharda-university-online/m-com",
+      "destination": "/universities/sharda-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/manonmaniam-sundaranar-university-online/b-com",
+      "destination": "/universities/manonmaniam-sundaranar-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/manonmaniam-sundaranar-university-online/m-com",
+      "destination": "/universities/manonmaniam-sundaranar-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/nmims-online/b-com",
+      "destination": "/universities/nmims-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/manipal-academy-higher-education-online/b-com",
+      "destination": "/universities/manipal-academy-higher-education-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/integral-university-online/b-com",
+      "destination": "/universities/integral-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/integral-university-online/m-com",
+      "destination": "/universities/integral-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/manav-rachna-online/m-com",
+      "destination": "/universities/manav-rachna-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/manav-rachna-online/b-com",
+      "destination": "/universities/manav-rachna-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/karnataka-state-open-university-online/b-com",
+      "destination": "/universities/karnataka-state-open-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/karnataka-state-open-university-online/m-com",
+      "destination": "/universities/karnataka-state-open-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/guru-ghasidas-vishwavidyalaya-online/b-com",
+      "destination": "/universities/guru-ghasidas-vishwavidyalaya-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/guru-ghasidas-vishwavidyalaya-online/m-com",
+      "destination": "/universities/guru-ghasidas-vishwavidyalaya-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dr-babasaheb-ambedkar-open-university-online/b-com",
+      "destination": "/universities/dr-babasaheb-ambedkar-open-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dr-babasaheb-ambedkar-open-university-online/m-com",
+      "destination": "/universities/dr-babasaheb-ambedkar-open-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/marwadi-university-online/b-com",
+      "destination": "/universities/marwadi-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/pp-savani-university-online/m-com",
+      "destination": "/universities/pp-savani-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/university-of-mysore-online/b-com",
+      "destination": "/universities/university-of-mysore-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/university-of-mysore-online/m-com",
+      "destination": "/universities/university-of-mysore-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/aligarh-muslim-university-online/b-com",
+      "destination": "/universities/aligarh-muslim-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/aligarh-muslim-university-online/m-com",
+      "destination": "/universities/aligarh-muslim-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/gujarat-university-online/b-com",
+      "destination": "/universities/gujarat-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/gujarat-university-online/m-com",
+      "destination": "/universities/gujarat-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/gls-university-online/b-com",
+      "destination": "/universities/gls-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/maharishi-markandeshwar-university-online/b-com",
+      "destination": "/universities/maharishi-markandeshwar-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/sgt-university-online/b-com",
+      "destination": "/universities/sgt-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/karunya-university-online/b-com",
+      "destination": "/universities/karunya-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/kurukshetra-university-online/b-com",
+      "destination": "/universities/kurukshetra-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/kurukshetra-university-online/m-com",
+      "destination": "/universities/kurukshetra-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/christ-university-online/b-com",
+      "destination": "/universities/christ-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/university-of-lucknow-online/b-com",
+      "destination": "/universities/university-of-lucknow-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/university-of-lucknow-online/m-com",
+      "destination": "/universities/university-of-lucknow-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/alliance-university-online/b-com",
+      "destination": "/universities/alliance-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/desh-bhagat-university-online/b-com",
+      "destination": "/universities/desh-bhagat-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/amet-university-online/b-com",
+      "destination": "/universities/amet-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/guru-nanak-dev-university-online/m-com",
+      "destination": "/universities/guru-nanak-dev-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/northcap-university-online/b-com",
+      "destination": "/universities/northcap-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/kiit-university-online/m-com",
+      "destination": "/universities/kiit-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/alagappa-university-online/b-com",
+      "destination": "/universities/alagappa-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/gla-university-online/b-com",
+      "destination": "/universities/gla-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/jamia-hamdard-online/b-com",
+      "destination": "/universities/jamia-hamdard-online",
+      "permanent": true
+    },
+    {
+      "source": "/universities/graphic-era-university-online/b-com",
+      "destination": "/universities/graphic-era-university-online",
+      "permanent": true
+    },
+    {
+      "source": "/universities/madurai-kamaraj-university-online/b-com",
+      "destination": "/universities/madurai-kamaraj-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/madurai-kamaraj-university-online/m-com",
+      "destination": "/universities/madurai-kamaraj-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dayalbagh-educational-institute-online/b-com",
+      "destination": "/universities/dayalbagh-educational-institute-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dayalbagh-educational-institute-online/m-com",
+      "destination": "/universities/dayalbagh-educational-institute-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chhatrapati-shahu-ji-maharaj-university-online/b-com",
+      "destination": "/universities/chhatrapati-shahu-ji-maharaj-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chhatrapati-shahu-ji-maharaj-university-online/m-com",
+      "destination": "/universities/chhatrapati-shahu-ji-maharaj-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/mats-university-online/b-com",
+      "destination": "/universities/mats-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/mody-university-online/b-com",
+      "destination": "/universities/mody-university-online",
+      "permanent": true
+    },
+    {
+      "source": "/universities/mody-university-online/m-com",
+      "destination": "/universities/mody-university-online/mca",
+      "permanent": true
+    },
+    {
+      "source": "/universities/ignou-online/b-com",
+      "destination": "/universities/ignou-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/ignou-online/m-com",
+      "destination": "/universities/ignou-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com",
+      "destination": "/programs/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com",
+      "destination": "/programs/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/accountancy",
+      "destination": "/programs/bcom/accountancy",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/accounting",
+      "destination": "/programs/bcom/accounting",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/accounting-finance",
+      "destination": "/programs/bcom/accounting-finance",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/accounting-and-finance",
+      "destination": "/programs/bcom/accounting-and-finance",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/accounting-and-taxation",
+      "destination": "/programs/bcom/accounting-and-taxation",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/applied-finance",
+      "destination": "/programs/bcom/applied-finance",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/b-com-hons",
+      "destination": "/programs/bcom/bcom-hons",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/banking-finance",
+      "destination": "/programs/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/banking-insurance",
+      "destination": "/programs/bcom/banking-insurance",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/business-analytics",
+      "destination": "/programs/bcom/business-analytics",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/commerce",
+      "destination": "/programs/bcom/commerce",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/commerce-honours-advanced-accounting-finance",
+      "destination": "/programs/bcom/commerce-honours-advanced-accounting-finance",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/e-commerce",
+      "destination": "/programs/bcom/commerce",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/fintech",
+      "destination": "/programs/bcom/fintech",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/finance",
+      "destination": "/programs/bcom/finance",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/general-commerce",
+      "destination": "/programs/bcom/general-commerce",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/general-management",
+      "destination": "/programs/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/general-acca-integrated",
+      "destination": "/programs/bcom/general-acca-integrated",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/international-finance-and-accounting",
+      "destination": "/programs/bcom/international-finance-and-accounting",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/logistics-supply-chain-management",
+      "destination": "/programs/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/marke",
+      "destination": "/programs/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/programs/b-com/taxation",
+      "destination": "/programs/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/programs/ba/economics-english",
+      "destination": "/programs/ba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/ba/economics-political-science-english-history-co",
+      "destination": "/programs/ba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/ba/english-urdu-hindi-history-political-science",
+      "destination": "/programs/ba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/ba/general-management",
+      "destination": "/programs/ba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bba/business-analytics-specialization-with-data-focuse",
+      "destination": "/programs/bba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bba/business-analytics-with-ai",
+      "destination": "/programs/bba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bba/data-science",
+      "destination": "/programs/bba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bba/finance-marketing-human-resource-management",
+      "destination": "/programs/bba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bba/financial-management",
+      "destination": "/programs/bba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bba/fintech-digital-marketing-aviation-management",
+      "destination": "/programs/bba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bba/general-business-administration-option-for-data-a",
+      "destination": "/programs/bba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bba/general-management",
+      "destination": "/programs/bba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bba/general-banking-and-financial-services-digital",
+      "destination": "/programs/bba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bba/general-digital-marketing-business-analytics-ba",
+      "destination": "/programs/bba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bba/general-digital-marketing-retail-management-fin",
+      "destination": "/programs/bba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bba/hr-management",
+      "destination": "/programs/bba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bba/logistics-supply-chain",
+      "destination": "/programs/bba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bba/project-mgmt",
+      "destination": "/programs/bba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/net",
+      "destination": "/programs/bca/iot",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/ai-foundations",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/blockchain",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/business-intelligence",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/cyber-security-data-science-and-big-data-analytic",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/data-mining",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/deep-learning",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/elective-based-generative-ai",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/full-stack-development",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/general-iot",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/general-management",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/iot-internet-of-things",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/java",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/linux",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/machine-learning",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/mobile-app-dev",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/mobile-development",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/python",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/web-dev",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bca/web-dev-php",
+      "destination": "/programs/bca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/bsc/social-sciences",
+      "destination": "/programs/bsc",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/accountancy",
+      "destination": "/programs/mcom/accountancy",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/accounting",
+      "destination": "/programs/mcom/accounting",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/accounting-finance",
+      "destination": "/programs/mcom/accounting-finance",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/accounting-and-finance",
+      "destination": "/programs/mcom/accounting-and-finance",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/accounting-and-finance-marketing-management-and-h",
+      "destination": "/programs/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/advanced-business-commerce",
+      "destination": "/programs/mcom/advanced-business-commerce",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/bfsi",
+      "destination": "/programs/mcom/bfsi",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/business-studies",
+      "destination": "/programs/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/commerce",
+      "destination": "/programs/mcom/commerce",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/commerce-finance",
+      "destination": "/programs/mcom/commerce-finance",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/direct-indirect-taxation",
+      "destination": "/programs/mcom/direct-indirect-taxation",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/e-commerce",
+      "destination": "/programs/mcom/commerce",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/elective-based",
+      "destination": "/programs/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/finance",
+      "destination": "/programs/mcom/finance",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/fintech",
+      "destination": "/programs/mcom/fintech",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/general-accountancy",
+      "destination": "/programs/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/general-accounting",
+      "destination": "/programs/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/general-commerce-and-management",
+      "destination": "/programs/mcom/general-commerce-and-management",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/general-commerce",
+      "destination": "/programs/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/general-commerce-taxation",
+      "destination": "/programs/mcom/general-commerce-taxation",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/general-management",
+      "destination": "/programs/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/international-business",
+      "destination": "/programs/mcom/international-business",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/international-finance-accounting-acca",
+      "destination": "/programs/mcom/international-finance-accounting-acca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/international-finance-and-accounting",
+      "destination": "/programs/mcom/international-finance-and-accounting",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/professional-accounting-finance-cpa-us",
+      "destination": "/programs/mcom/professional-accounting-finance-cpa-us",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/public-accounting",
+      "destination": "/programs/mcom/public-accounting",
+      "permanent": true
+    },
+    {
+      "source": "/programs/m-com/taxation",
+      "destination": "/programs/mcom/taxation",
+      "permanent": true
+    },
+    {
+      "source": "/programs/ma/psychology",
+      "destination": "/programs/ma",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mba/agribusiness-management",
+      "destination": "/programs/mba/agri-business-management",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mba/aviation-management",
+      "destination": "/programs/mba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mba/business-administration",
+      "destination": "/programs/mba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mba/energy-management",
+      "destination": "/programs/mba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mba/family-managed-business",
+      "destination": "/programs/mba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mba/financial-management",
+      "destination": "/programs/mba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mba/general-management",
+      "destination": "/programs/mba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mba/hrm",
+      "destination": "/programs/mba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mba/human-re",
+      "destination": "/programs/mba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mba/human-resource-management-marketing-management-f",
+      "destination": "/programs/mba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mba/human-resources-analytics",
+      "destination": "/programs/mba/human-resource-analytics",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mba/information-technology-it",
+      "destination": "/programs/mba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mba/international-business-management",
+      "destination": "/programs/mba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mba/marketing-management-financial-management-human",
+      "destination": "/programs/mba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mba/marketing-finance-human-resource-management",
+      "destination": "/programs/mba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mba/operations-and-supply-chain-management",
+      "destination": "/programs/mba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mba/sports-management",
+      "destination": "/programs/mba",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mca/artificial-intelligence-and-machine-learning",
+      "destination": "/programs/mca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mca/business-analytics",
+      "destination": "/programs/mca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mca/cloud-computing-and-cyber-security",
+      "destination": "/programs/mca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mca/data-engineering",
+      "destination": "/programs/mca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mca/digital-marketing-management",
+      "destination": "/programs/mca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mca/digital-marketing-technology",
+      "destination": "/programs/mca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mca/fintech-management",
+      "destination": "/programs/mca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mca/game-development",
+      "destination": "/programs/mca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/mca/general",
+      "destination": "/programs/mca",
+      "permanent": true
+    },
+    {
+      "source": "/programs/msc/analysis",
+      "destination": "/programs/msc",
+      "permanent": true
+    },
+    {
+      "source": "/programs/msc/differential-equations",
+      "destination": "/programs/msc",
+      "permanent": true
+    },
+    {
+      "source": "/programs/msc/general-management",
+      "destination": "/programs/msc",
+      "permanent": true
+    },
+    {
+      "source": "/programs/msc/number-theory",
+      "destination": "/programs/msc",
+      "permanent": true
+    },
+    {
+      "source": "/programs/msc/pure-mathematics-algebra",
+      "destination": "/programs/msc",
+      "permanent": true
+    },
+    {
+      "source": "/programs/msc/statistics",
+      "destination": "/programs/msc",
+      "permanent": true
+    },
+    {
+      "source": "/programs/msc/topology",
+      "destination": "/programs/msc",
+      "permanent": true
+    },
+    {
+      "source": "/universities/jain-university-online/m-com/accounting-finance",
+      "destination": "/universities/jain-university-online/mcom/accounting-finance",
+      "permanent": true
+    },
+    {
+      "source": "/universities/jain-university-online/m-com/professional-accounting-finance-cpa-us",
+      "destination": "/universities/jain-university-online/mcom/professional-accounting-finance-cpa-us",
+      "permanent": true
+    },
+    {
+      "source": "/universities/jain-university-online/m-com/international-finance-accounting-acca",
+      "destination": "/universities/jain-university-online/mcom/international-finance-accounting-acca",
+      "permanent": true
+    },
+    {
+      "source": "/universities/amity-university-online/b-com/commerce",
+      "destination": "/universities/amity-university-online/bcom/commerce",
+      "permanent": true
+    },
+    {
+      "source": "/universities/amity-university-online/b-com/accounting",
+      "destination": "/universities/amity-university-online/bcom/accounting",
+      "permanent": true
+    },
+    {
+      "source": "/universities/amity-university-online/b-com/commerce-honours-advanced-accounting-finance",
+      "destination": "/universities/amity-university-online/bcom/commerce-honours-advanced-accounting-finance",
+      "permanent": true
+    },
+    {
+      "source": "/universities/lovely-professional-university-online/m-com/commerce-finance",
+      "destination": "/universities/lovely-professional-university-online/mcom/commerce-finance",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dayananda-sagar-university-online/b-com/fintech",
+      "destination": "/universities/dayananda-sagar-university-online/bcom/fintech",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dayananda-sagar-university-online/b-com/logistics-supply-chain-management",
+      "destination": "/universities/dayananda-sagar-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dayananda-sagar-university-online/b-com/business-analytics",
+      "destination": "/universities/dayananda-sagar-university-online/bcom/business-analytics",
+      "permanent": true
+    },
+    {
+      "source": "/universities/parul-university-online/b-com/accounting-finance",
+      "destination": "/universities/parul-university-online/bcom/accounting-finance",
+      "permanent": true
+    },
+    {
+      "source": "/universities/parul-university-online/b-com/banking-insurance",
+      "destination": "/universities/parul-university-online/bcom/banking-insurance",
+      "permanent": true
+    },
+    {
+      "source": "/universities/parul-university-online/m-com/general-accountancy",
+      "destination": "/universities/parul-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/parul-university-online/m-com/finance",
+      "destination": "/universities/parul-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/parul-university-online/m-com/elective-based",
+      "destination": "/universities/parul-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/amrita-vishwa-vidyapeetham-online/b-com/international-finance-and-accounting",
+      "destination": "/universities/amrita-vishwa-vidyapeetham-online/bcom/international-finance-and-accounting",
+      "permanent": true
+    },
+    {
+      "source": "/universities/amrita-vishwa-vidyapeetham-online/b-com/general-commerce",
+      "destination": "/universities/amrita-vishwa-vidyapeetham-online/bcom/general-commerce",
+      "permanent": true
+    },
+    {
+      "source": "/universities/amrita-vishwa-vidyapeetham-online/m-com/international-finance-and-accounting",
+      "destination": "/universities/amrita-vishwa-vidyapeetham-online/mcom/international-finance-and-accounting",
+      "permanent": true
+    },
+    {
+      "source": "/universities/amrita-vishwa-vidyapeetham-online/m-com/general-commerce-and-management",
+      "destination": "/universities/amrita-vishwa-vidyapeetham-online/mcom/general-commerce-and-management",
+      "permanent": true
+    },
+    {
+      "source": "/universities/mangalayatan-university-online/m-com/general-accounting",
+      "destination": "/universities/mangalayatan-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/mangalayatan-university-online/m-com/direct-indirect-taxation",
+      "destination": "/universities/mangalayatan-university-online/mcom/direct-indirect-taxation",
+      "permanent": true
+    },
+    {
+      "source": "/universities/mangalayatan-university-online/m-com/international-business",
+      "destination": "/universities/mangalayatan-university-online/mcom/international-business",
+      "permanent": true
+    },
+    {
+      "source": "/universities/mangalayatan-university-online/m-com/finance",
+      "destination": "/universities/mangalayatan-university-online/mcom/finance",
+      "permanent": true
+    },
+    {
+      "source": "/universities/shoolini-university-online/b-com/b-com-hons",
+      "destination": "/universities/shoolini-university-online/bcom/bcom-hons",
+      "permanent": true
+    },
+    {
+      "source": "/universities/manipal-university-jaipur-online/b-com/general-management",
+      "destination": "/universities/manipal-university-jaipur-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/manipal-university-jaipur-online/m-com/general-management",
+      "destination": "/universities/manipal-university-jaipur-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/galgotias-university-online/m-com/accountancy",
+      "destination": "/universities/galgotias-university-online/mcom/accountancy",
+      "permanent": true
+    },
+    {
+      "source": "/universities/galgotias-university-online/m-com/finance",
+      "destination": "/universities/galgotias-university-online/mcom/finance",
+      "permanent": true
+    },
+    {
+      "source": "/universities/sikkim-manipal-university-online/b-com/general-management",
+      "destination": "/universities/sikkim-manipal-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/sikkim-manipal-university-online/m-com/general-management",
+      "destination": "/universities/sikkim-manipal-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chitkara-university-online/b-com/applied-finance",
+      "destination": "/universities/chitkara-university-online/bcom/applied-finance",
+      "permanent": true
+    },
+    {
+      "source": "/universities/sharda-university-online/m-com/accounting-and-finance",
+      "destination": "/universities/sharda-university-online/mcom/accounting-and-finance",
+      "permanent": true
+    },
+    {
+      "source": "/universities/sharda-university-online/m-com/public-accounting",
+      "destination": "/universities/sharda-university-online/mcom/public-accounting",
+      "permanent": true
+    },
+    {
+      "source": "/universities/sharda-university-online/m-com/fintech",
+      "destination": "/universities/sharda-university-online/mcom/fintech",
+      "permanent": true
+    },
+    {
+      "source": "/universities/manonmaniam-sundaranar-university-online/b-com/general-commerce",
+      "destination": "/universities/manonmaniam-sundaranar-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/manonmaniam-sundaranar-university-online/m-com/accounting-and-finance",
+      "destination": "/universities/manonmaniam-sundaranar-university-online/mcom/accounting-and-finance",
+      "permanent": true
+    },
+    {
+      "source": "/universities/nmims-online/b-com/commerce",
+      "destination": "/universities/nmims-online/bcom/commerce",
+      "permanent": true
+    },
+    {
+      "source": "/universities/nmims-online/b-com/accountancy",
+      "destination": "/universities/nmims-online/bcom/accountancy",
+      "permanent": true
+    },
+    {
+      "source": "/universities/nmims-online/b-com/finance",
+      "destination": "/universities/nmims-online/bcom/finance",
+      "permanent": true
+    },
+    {
+      "source": "/universities/manipal-academy-higher-education-online/b-com/general-management",
+      "destination": "/universities/manipal-academy-higher-education-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chandigarh-university-online/bba/business-analytics-specialization-with-data-focuse",
+      "destination": "/universities/chandigarh-university-online/bba",
+      "permanent": true
+    },
+    {
+      "source": "/universities/integral-university-online/b-com/general-management",
+      "destination": "/universities/integral-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/integral-university-online/m-com/accounting-finance",
+      "destination": "/universities/integral-university-online/mcom/accounting-finance",
+      "permanent": true
+    },
+    {
+      "source": "/universities/manav-rachna-online/b-com/general-acca-integrated",
+      "destination": "/universities/manav-rachna-online/bcom/general-acca-integrated",
+      "permanent": true
+    },
+    {
+      "source": "/universities/manav-rachna-online/m-com/general-management",
+      "destination": "/universities/manav-rachna-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/karnataka-state-open-university-online/b-com/general-management",
+      "destination": "/universities/karnataka-state-open-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/karnataka-state-open-university-online/m-com/accounting-and-finance-marketing-management-and-h",
+      "destination": "/universities/karnataka-state-open-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/guru-ghasidas-vishwavidyalaya-online/b-com/commerce",
+      "destination": "/universities/guru-ghasidas-vishwavidyalaya-online/bcom/commerce",
+      "permanent": true
+    },
+    {
+      "source": "/universities/guru-ghasidas-vishwavidyalaya-online/m-com/commerce",
+      "destination": "/universities/guru-ghasidas-vishwavidyalaya-online/mcom/commerce",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dr-babasaheb-ambedkar-open-university-online/b-com/general-management",
+      "destination": "/universities/dr-babasaheb-ambedkar-open-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dr-babasaheb-ambedkar-open-university-online/m-com/accounting",
+      "destination": "/universities/dr-babasaheb-ambedkar-open-university-online/mcom/accounting",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dr-babasaheb-ambedkar-open-university-online/m-com/finance",
+      "destination": "/universities/dr-babasaheb-ambedkar-open-university-online/mcom/finance",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dr-babasaheb-ambedkar-open-university-online/m-com/bfsi",
+      "destination": "/universities/dr-babasaheb-ambedkar-open-university-online/mcom/bfsi",
+      "permanent": true
+    },
+    {
+      "source": "/universities/marwadi-university-online/b-com/commerce",
+      "destination": "/universities/marwadi-university-online/bcom/commerce",
+      "permanent": true
+    },
+    {
+      "source": "/universities/pp-savani-university-online/m-com/general-management",
+      "destination": "/universities/pp-savani-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/university-of-mysore-online/b-com/general-management",
+      "destination": "/universities/university-of-mysore-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/university-of-mysore-online/m-com/general-management",
+      "destination": "/universities/university-of-mysore-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/aligarh-muslim-university-online/b-com/general-commerce",
+      "destination": "/universities/aligarh-muslim-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/aligarh-muslim-university-online/m-com/general-commerce",
+      "destination": "/universities/aligarh-muslim-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/gujarat-university-online/b-com/general-management",
+      "destination": "/universities/gujarat-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/gujarat-university-online/m-com/general-management",
+      "destination": "/universities/gujarat-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/gls-university-online/b-com/applied-finance",
+      "destination": "/universities/gls-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/maharishi-markandeshwar-university-online/b-com/accounting-and-finance",
+      "destination": "/universities/maharishi-markandeshwar-university-online/bcom/accounting-and-finance",
+      "permanent": true
+    },
+    {
+      "source": "/universities/maharishi-markandeshwar-university-online/b-com/banking-finance",
+      "destination": "/universities/maharishi-markandeshwar-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/maharishi-markandeshwar-university-online/b-com/marke",
+      "destination": "/universities/maharishi-markandeshwar-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/sgt-university-online/b-com/applied-finance",
+      "destination": "/universities/sgt-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/karunya-university-online/b-com/general-management",
+      "destination": "/universities/karunya-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/kurukshetra-university-online/b-com/general-commerce",
+      "destination": "/universities/kurukshetra-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/kurukshetra-university-online/m-com/general-commerce-taxation",
+      "destination": "/universities/kurukshetra-university-online/mcom/general-commerce-taxation",
+      "permanent": true
+    },
+    {
+      "source": "/universities/kurukshetra-university-online/m-com/finance",
+      "destination": "/universities/kurukshetra-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/kurukshetra-university-online/m-com/international-business",
+      "destination": "/universities/kurukshetra-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/christ-university-online/b-com/general-management",
+      "destination": "/universities/christ-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/university-of-lucknow-online/b-com/general-commerce",
+      "destination": "/universities/university-of-lucknow-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/university-of-lucknow-online/m-com/commerce",
+      "destination": "/universities/university-of-lucknow-online/mcom/commerce",
+      "permanent": true
+    },
+    {
+      "source": "/universities/alliance-university-online/b-com/accounting-and-taxation",
+      "destination": "/universities/alliance-university-online/bcom/accounting-and-taxation",
+      "permanent": true
+    },
+    {
+      "source": "/universities/alliance-university-online/b-com/finance",
+      "destination": "/universities/alliance-university-online/bcom/finance",
+      "permanent": true
+    },
+    {
+      "source": "/universities/desh-bhagat-university-online/b-com/general-management",
+      "destination": "/universities/desh-bhagat-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/amet-university-online/b-com/general-management",
+      "destination": "/universities/amet-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/guru-nanak-dev-university-online/m-com/commerce",
+      "destination": "/universities/guru-nanak-dev-university-online/mcom/commerce",
+      "permanent": true
+    },
+    {
+      "source": "/universities/northcap-university-online/b-com/general-management",
+      "destination": "/universities/northcap-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/kiit-university-online/m-com/international-business",
+      "destination": "/universities/kiit-university-online/mcom/international-business",
+      "permanent": true
+    },
+    {
+      "source": "/universities/alagappa-university-online/b-com/general-management",
+      "destination": "/universities/alagappa-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/gla-university-online/b-com/commerce",
+      "destination": "/universities/gla-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/gla-university-online/b-com/accounting",
+      "destination": "/universities/gls-university-online/mcom/accounting",
+      "permanent": true
+    },
+    {
+      "source": "/universities/gla-university-online/b-com/commerce-honours-advanced-accounting-finance",
+      "destination": "/universities/gla-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/madurai-kamaraj-university-online/b-com/finance",
+      "destination": "/universities/madurai-kamaraj-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/madurai-kamaraj-university-online/b-com/accounting",
+      "destination": "/universities/madurai-kamaraj-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/madurai-kamaraj-university-online/b-com/taxation",
+      "destination": "/universities/madurai-kamaraj-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/madurai-kamaraj-university-online/b-com/e-commerce",
+      "destination": "/universities/madurai-kamaraj-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/madurai-kamaraj-university-online/b-com/banking-insurance",
+      "destination": "/universities/madurai-kamaraj-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/madurai-kamaraj-university-online/m-com/finance",
+      "destination": "/universities/madurai-kamaraj-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/madurai-kamaraj-university-online/m-com/accounting",
+      "destination": "/universities/madurai-kamaraj-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/madurai-kamaraj-university-online/m-com/taxation",
+      "destination": "/universities/madurai-kamaraj-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/madurai-kamaraj-university-online/m-com/business-studies",
+      "destination": "/universities/madurai-kamaraj-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/madurai-kamaraj-university-online/m-com/e-commerce",
+      "destination": "/universities/madurai-kamaraj-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dayalbagh-educational-institute-online/b-com/finance",
+      "destination": "/universities/dayalbagh-educational-institute-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dayalbagh-educational-institute-online/b-com/accounting",
+      "destination": "/universities/dayalbagh-educational-institute-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dayalbagh-educational-institute-online/b-com/taxation",
+      "destination": "/universities/dayalbagh-educational-institute-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dayalbagh-educational-institute-online/b-com/e-commerce",
+      "destination": "/universities/dayalbagh-educational-institute-online/bcom/commerce",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dayalbagh-educational-institute-online/b-com/banking-insurance",
+      "destination": "/universities/dayalbagh-educational-institute-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dayalbagh-educational-institute-online/m-com/finance",
+      "destination": "/universities/dayalbagh-educational-institute-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dayalbagh-educational-institute-online/m-com/accounting",
+      "destination": "/universities/dayalbagh-educational-institute-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dayalbagh-educational-institute-online/m-com/taxation",
+      "destination": "/universities/dayalbagh-educational-institute-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dayalbagh-educational-institute-online/m-com/business-studies",
+      "destination": "/universities/dayalbagh-educational-institute-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/dayalbagh-educational-institute-online/m-com/e-commerce",
+      "destination": "/universities/dayalbagh-educational-institute-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chhatrapati-shahu-ji-maharaj-university-online/b-com/finance",
+      "destination": "/universities/chhatrapati-shahu-ji-maharaj-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chhatrapati-shahu-ji-maharaj-university-online/b-com/accounting",
+      "destination": "/universities/chhatrapati-shahu-ji-maharaj-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chhatrapati-shahu-ji-maharaj-university-online/b-com/taxation",
+      "destination": "/universities/chhatrapati-shahu-ji-maharaj-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chhatrapati-shahu-ji-maharaj-university-online/b-com/e-commerce",
+      "destination": "/universities/chhatrapati-shahu-ji-maharaj-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chhatrapati-shahu-ji-maharaj-university-online/b-com/banking-insurance",
+      "destination": "/universities/chhatrapati-shahu-ji-maharaj-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chhatrapati-shahu-ji-maharaj-university-online/m-com/finance",
+      "destination": "/universities/chhatrapati-shahu-ji-maharaj-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chhatrapati-shahu-ji-maharaj-university-online/m-com/accounting",
+      "destination": "/universities/chhatrapati-shahu-ji-maharaj-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chhatrapati-shahu-ji-maharaj-university-online/m-com/taxation",
+      "destination": "/universities/chhatrapati-shahu-ji-maharaj-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chhatrapati-shahu-ji-maharaj-university-online/m-com/business-studies",
+      "destination": "/universities/chhatrapati-shahu-ji-maharaj-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chhatrapati-shahu-ji-maharaj-university-online/m-com/e-commerce",
+      "destination": "/universities/chhatrapati-shahu-ji-maharaj-university-online/mcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/mats-university-online/b-com/finance",
+      "destination": "/universities/mats-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/mats-university-online/b-com/accounting",
+      "destination": "/universities/mats-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/mats-university-online/b-com/taxation",
+      "destination": "/universities/mats-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/mats-university-online/b-com/e-commerce",
+      "destination": "/universities/mats-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/mats-university-online/b-com/banking-insurance",
+      "destination": "/universities/mats-university-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/ignou-online/b-com/general-commerce",
+      "destination": "/universities/ignou-online/bcom",
+      "permanent": true
+    },
+    {
+      "source": "/universities/ignou-online/m-com/advanced-business-commerce",
+      "destination": "/universities/ignou-online/mcom/advanced-business-commerce",
+      "permanent": true
+    },
+    {
+      "source": "/universities/ignou-online/m-com/finance",
+      "destination": "/universities/ignou-online/mcom/finance",
+      "permanent": true
+    },
+    {
+      "source": "/universities/ignou-online/m-com/accounting",
+      "destination": "/universities/ignou-online/mcom/accounting",
+      "permanent": true
+    },
+    {
+      "source": "/universities/ignou-online/m-com/international-business",
+      "destination": "/universities/ignou-online/mcom/international-business",
+      "permanent": true
+    }
+  ]
+}

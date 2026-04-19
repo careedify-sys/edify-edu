@@ -51,7 +51,7 @@ update_rankings.js
 update_sort.js
 
 # Data files not needed on server
-*.xlsx
+# *.xlsx — commented out so data/*.xlsx can be tracked by git
 *.zip
 extracted_rankings/
 nirf_2025_map.json
