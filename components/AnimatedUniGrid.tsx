@@ -56,7 +56,7 @@ export default function AnimatedUniGrid({ unis }: Props) {
         ))}
       </div>
 
-      <style>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         .ani-uni-card > * {
           transition: transform 200ms ease-out, box-shadow 200ms ease-out, border-color 200ms ease-out !important;
         }
@@ -65,7 +65,7 @@ export default function AnimatedUniGrid({ unis }: Props) {
           box-shadow: 0 8px 28px rgba(11,21,51,0.12) !important;
           border-color: rgba(244,160,36,0.2) !important;
         }
-      `}</style>
+      ` }} />
     </>
   )
 }

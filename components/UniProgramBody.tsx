@@ -38,6 +38,7 @@ import CouponCard        from './CouponCard'
 import QuickFactsCard    from './QuickFactsCard'
 import WhatsAppFloat     from './WhatsAppFloat'
 import AssuredMarquee   from './AssuredMarquee'
+import RequestSyllabusCard from './RequestSyllabusCard'
 
 interface Props {
   u: University
@@ -138,6 +139,11 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
 
               {/* §9 Core Subjects */}
               <SectionCoreSubjects program={program} cleanName={cleanName} />
+
+              {/* §9b Syllabus request — only when no syllabus data is available */}
+              {!pd.syllabus || !['sem1','sem2','sem3','sem4','sem56','coreSpec','research','capstone'].some(k => !!(pd.syllabus as any)?.[k]) ? (
+                <RequestSyllabusCard uniId={u.id} uniName={cleanName} program={program} />
+              ) : null}
 
               {/* §10 Fees */}
               <FeeBreakdown u={u} pd={pd} program={program} />

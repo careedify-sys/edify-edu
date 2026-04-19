@@ -36,6 +36,7 @@ import CouponCard         from './CouponCard'
 import QuickFactsCard     from './QuickFactsCard'
 import WhatsAppFloat      from './WhatsAppFloat'
 import AssuredMarquee    from './AssuredMarquee'
+import RequestSyllabusCard from './RequestSyllabusCard'
 import { CheckCircle } from 'lucide-react'
 
 interface Props {
@@ -182,6 +183,12 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
               <CurriculumDive />
 
               <SectionSyllabus syllabus={syllabus} program={program} universityName={cleanName} />
+
+              {/* Syllabus request card — only when no syllabus data is available */}
+              {!syllabus || !['sem1','sem2','sem3','sem4','sem56','coreSpec','research','capstone'].some(k => !!(syllabus as any)[k]) ? (
+                <RequestSyllabusCard uniId={u.id} uniName={cleanName} program={program} />
+              ) : null}
+
               <FeeBreakdown u={u} pd={pd} program={program} />
 
               <InlineCTA
