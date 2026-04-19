@@ -58,6 +58,33 @@ export function cleanCareerOutcome(text: string): string {
 }
 
 /**
+ * Strips trailing "Online" / "(Online)" from a university display name so it can be
+ * safely composed with " Online {Program}" without producing "Online Online".
+ * Also strips "Deemed to be University", "Deemed University" parentheticals
+ * that add no display value.
+ */
+export function formatUniversityDisplayName(name: string): string {
+  if (!name) return ''
+  return name
+    .replace(/\s+Online\s*$/i, '')
+    .replace(/\s+\(Online\)\s*$/i, '')
+    .trim()
+}
+
+/**
+ * Short university name for use in H1, H2, and breadcrumbs.
+ * - Strips trailing " Online" (prevents "Online Online" when composing headings)
+ * - When the result exceeds 50 chars, strips the first trailing parenthetical
+ *   (e.g. "(Centre for Distance Education)" or "(Deemed to be University)")
+ *   so headings don't break mid-parenthesis on small screens.
+ */
+export function getShortUniversityName(name: string): string {
+  const clean = formatUniversityDisplayName(name)
+  if (clean.length <= 50) return clean
+  return clean.replace(/\s*\([^)]+\)\s*$/, '').trim()
+}
+
+/**
  * Formats common numbers with standard comma grouping (thousands).
  * Safe for hydration because it doesn't use system locale.
  */

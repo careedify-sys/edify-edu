@@ -6,7 +6,7 @@ import {
   Briefcase, TrendingUp, Building2, Plus, BookOpen, Users
 } from 'lucide-react'
 import { getUniversitiesByProgram, formatFeeSlim as formatFee } from '@/lib/data-slim'
-import { cleanCareerOutcome } from '@/lib/format'
+import { cleanCareerOutcome, getShortUniversityName } from '@/lib/format'
 import { getProgramContent } from '@/lib/content'
 import { SAMPLE_DEGREES, getSampleDegree } from '@/lib/sample-degrees'
 import type { Program, University } from '@/lib/data'
@@ -34,7 +34,7 @@ export default function UniversityPageClient({ university: u }: Props) {
   const programContent = getProgramContent(displayProgram)
   const otherUnis = getUniversitiesByProgram(displayProgram).filter(x=>x.id!==u.id).slice(0,4)
   const compareUrl = `/compare?a=${u.id}${compareList.map(i=>`&b=${i}`).join('')}`
-  const cleanName = u.name.replace(/\bOnline\b\s*$/i, '').trim()
+  const cleanName = getShortUniversityName(u.name)
 
   function addToCompare(uniId: string) {
     if (compareList.includes(uniId)) return
@@ -127,7 +127,7 @@ export default function UniversityPageClient({ university: u }: Props) {
               <ChevronRight size={12}/>
               <Link href="/universities" className="text-ink-2 no-underline">Universities</Link>
               <ChevronRight size={12}/>
-              <span className="text-amber font-semibold">{u.abbr}</span>
+              <span className="text-amber font-semibold">{cleanName}</span>
             </div>
           </div>
         </div>

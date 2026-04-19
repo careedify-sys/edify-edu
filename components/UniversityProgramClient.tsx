@@ -6,7 +6,7 @@ import {
   Award, Users
 } from 'lucide-react'
 import { getUniversitiesByProgram, formatFeeSlim as formatFee } from '@/lib/data-slim'
-import { cleanCareerOutcome } from '@/lib/format'
+import { cleanCareerOutcome, getShortUniversityName } from '@/lib/format'
 import { PROGRAM_META } from '@/lib/data-client'
 import { getProgramContent, getSpecContent, getSpecFallback, getUniversitySyllabus, getMasterSyllabus } from '@/lib/content'
 import SyllabusSection from '@/components/SyllabusSection'
@@ -45,7 +45,7 @@ function FullPage({ u, program, programSlug, pd }: {
   const otherUnis     = getUniversitiesByProgram(program).filter(x => x.id !== u.id).slice(0, 4)
   const specContent   = activeSpec ? (getSpecContent(activeSpec) || getSpecFallback(activeSpec, program)) : null
   const programContent = getProgramContent(program)
-  const cleanName     = u.name.replace(/\bOnline\b\s*$/i, '').trim()
+  const cleanName     = getShortUniversityName(u.name)
 
   const faqs = [
     { q: `Is the ${program} degree from ${u.name} valid?`, a: `Yes — 100% valid. ${u.name} is UGC DEB approved. The degree certificate is identical to a regular campus degree and is valid for private sector, government jobs where UGC DEB degrees are accepted${u.psuEligible ? ', and PSU recruitment' : ''}. ` },
@@ -68,7 +68,7 @@ function FullPage({ u, program, programSlug, pd }: {
               <ChevronRight size={12} />
               <Link href="/universities" className="text-ink-2 no-underline hover:text-navy">Universities</Link>
               <ChevronRight size={12} />
-              <Link href={`/universities/${u.id}`} className="text-ink-2 no-underline hover:text-navy">{u.abbr}</Link>
+              <Link href={`/universities/${u.id}`} className="text-ink-2 no-underline hover:text-navy">{cleanName}</Link>
               <ChevronRight size={12} />
               <span className="text-amber font-semibold">{program}</span>
             </div>
@@ -83,7 +83,7 @@ function FullPage({ u, program, programSlug, pd }: {
                 {meta?.level === 'PG' ? 'Postgraduate' : 'Undergraduate'} · {pd.duration} · UGC DEB Approved
               </div>
               <h1 className="font-display" style={{ fontSize: 'clamp(1.75rem,4vw,3rem)', fontWeight: 800, color: '#fff', lineHeight: 1.15, marginBottom: 10, wordWrap: 'break-word', overflowWrap: 'break-word' }}>
-                {u.name} Online {program}: Fees, Syllabus &amp; Specialisations 2026
+                {cleanName} Online {program}: Fees, Syllabus &amp; Specialisations 2026
               </h1>
               {pd.careerOutcome && <p className="text-slate-400 text-[15px] leading-relaxed mb-5">{cleanCareerOutcome(pd.careerOutcome)}</p>}
 
@@ -110,7 +110,7 @@ function FullPage({ u, program, programSlug, pd }: {
                   Talk to Alumni
                 </button>
                 <Link href={`/universities/${u.id}`} style={{ padding: '13px 20px', borderRadius: 'var(--r-sm)', border: '1px solid #1e2f45', color: 'var(--ink-4)', fontSize: 13, fontWeight: 600, textDecoration: 'none' }}>
-                  ← All {u.abbr} Programs
+                  ← All {cleanName} Programs
                 </Link>
               </div>
             </div>
@@ -593,7 +593,7 @@ function LockedPage({ u, program, programSlug, pd }: {
             <ChevronRight size={12} />
             <Link href="/universities" className="text-ink-2 no-underline hover:text-navy">Universities</Link>
             <ChevronRight size={12} />
-            <Link href={`/universities/${u.id}`} className="text-ink-2 no-underline hover:text-navy">{u.abbr}</Link>
+            <Link href={`/universities/${u.id}`} className="text-ink-2 no-underline hover:text-navy">{cleanName}</Link>
             <ChevronRight size={12} />
             <span className="text-amber font-semibold">{program}</span>
           </div>
