@@ -1,0 +1,10 @@
+{
+  "_comment": "Maps truncated Excel sheet names to canonical uni slugs. Only sheets that REQUIRE an alias (slug > 27 chars) are listed here. Sheets whose full slug fits within 31 chars (including '_MBA') do NOT need an alias.",
+  "_rule": "sheet_name + '_MBA' must be <= 31 chars total. Max sheet slug length = 27 chars.",
+  "aliases": {
+    "lpu-online_MBA": "lovely-professional-university-online",
+    "chandigarh-online_MBA": "chandigarh-university-online",
+    "smu-online_MBA": "sikkim-manipal-university-online",
+    "dy-patil-online_MBA": "dr-dy-patil-vidyapeeth-online"
+  }
+}
