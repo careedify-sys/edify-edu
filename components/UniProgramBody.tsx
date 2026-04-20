@@ -152,6 +152,16 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
         {/* Hero — full width */}
         <UniHero u={u} program={program} pd={pd} cleanName={cleanName} />
 
+        {/* TL;DR block (generated content only) */}
+        {s?.tldr && (
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-5">
+            <div className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-3">
+              <span className="text-xs font-black text-amber-700 uppercase tracking-wide mr-2">TL;DR</span>
+              <span className="text-sm text-slate-700">{s.tldr}</span>
+            </div>
+          </div>
+        )}
+
         {/* 2-column body */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
           <div className="flex flex-col lg:flex-row gap-8">
