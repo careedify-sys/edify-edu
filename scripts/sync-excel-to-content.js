@@ -132,81 +132,121 @@ const NUMBERED_SECTION_MAP = {
 
 /**
  * Parse named-format reviews block text.
- * Format:
- *   {intro paragraph}
  *
+ * Handles two inline formats:
+ *
+ * Format A (Batch 2): rating-first
  *   5/5 - Arjun M., Pune, 2024
  *   Liked: ...
  *   Disliked: ...
  *
- *   [closer line at end]
+ * Format B (Batch 3): name-first
+ *   Arjun M., Pune, 2024, 5 stars: body text here
+ *   (no separate Liked/Disliked lines)
+ *
+ * Closer: last non-review line (e.g., "Reviews aggregated from...")
  */
 function parseReviewsFromBody(rawText, sheetName) {
   try {
     const lines = rawText.split('\n');
-    const reviewPattern = /^(\d)\/5\s*-\s*(.+?),\s*(.+?),\s*(\d{4})\s*$/;
+
+    // Format A: "5/5 - Name, City, Year"
+    const patternA = /^(\d)\/5\s*-\s*(.+?),\s*(.+?),\s*(\d{4})\s*$/;
+    // Format B: "Name, City, Year, N stars: body..."
+    const patternB = /^(.+?),\s*([^,]+?),\s*(\d{4}),\s*(\d)\s+stars?:\s*(.*)$/i;
+
+    // Detect which format
+    let format = null;
+    for (const line of lines) {
+      if (patternA.test(line.trim())) { format = 'A'; break; }
+      if (patternB.test(line.trim())) { format = 'B'; break; }
+    }
+    if (!format) return { rawBody: rawText };
 
     const items = [];
     const introLines = [];
     let closer = '';
-    let currentReview = null;
     let seenFirstReview = false;
     let firstRatingLine = -1;
+    const activePattern = format === 'A' ? patternA : patternB;
 
     for (let i = 0; i < lines.length; i++) {
-      if (reviewPattern.test(lines[i].trim())) {
-        firstRatingLine = i;
-        break;
-      }
+      if (activePattern.test(lines[i].trim())) { firstRatingLine = i; break; }
     }
-
-    if (firstRatingLine === -1) return { rawBody: rawText };
 
     for (let i = 0; i < firstRatingLine; i++) {
       if (lines[i].trim()) introLines.push(lines[i].trim());
     }
 
-    let i = firstRatingLine;
-    while (i < lines.length) {
-      const line = lines[i].trim();
-      const match = reviewPattern.exec(line);
-
-      if (match) {
-        if (currentReview) items.push(currentReview);
-        currentReview = {
-          rating: parseInt(match[1], 10),
-          name: match[2].trim(),
-          city: match[3].trim(),
-          year: parseInt(match[4], 10),
-          liked: '',
-          disliked: '',
-          body: '',
-        };
-        seenFirstReview = true;
-      } else if (seenFirstReview && currentReview) {
-        if (line.startsWith('Liked:')) {
-          currentReview.liked = line.replace(/^Liked:\s*/, '').trim();
-        } else if (line.startsWith('Disliked:')) {
-          currentReview.disliked = line.replace(/^Disliked:\s*/, '').trim();
+    if (format === 'A') {
+      // Format A: rating header line + Liked:/Disliked: lines
+      let currentReview = null;
+      for (let i = firstRatingLine; i < lines.length; i++) {
+        const line = lines[i].trim();
+        const match = patternA.exec(line);
+        if (match) {
+          if (currentReview) items.push(currentReview);
+          currentReview = {
+            rating: parseInt(match[1], 10),
+            name: match[2].trim(),
+            city: match[3].trim(),
+            year: parseInt(match[4], 10),
+            liked: '', disliked: '', body: '',
+          };
+          seenFirstReview = true;
+        } else if (seenFirstReview && currentReview) {
+          if (line.startsWith('Liked:')) {
+            currentReview.liked = line.replace(/^Liked:\s*/, '').trim();
+          } else if (line.startsWith('Disliked:')) {
+            currentReview.disliked = line.replace(/^Disliked:\s*/, '').trim();
+          }
         }
       }
-      i++;
-    }
-    if (currentReview) items.push(currentReview);
+      if (currentReview) items.push(currentReview);
+      items.forEach(r => { r.body = r.liked || ''; });
 
-    items.forEach(r => { r.body = r.liked || ''; });
-
-    // Find closer: last non-empty line that is not a review/liked/disliked line
-    for (let j = lines.length - 1; j >= firstRatingLine; j--) {
-      const l = lines[j].trim();
-      if (l && !reviewPattern.test(l) && !l.startsWith('Liked:') && !l.startsWith('Disliked:')) {
-        closer = l;
-        break;
+      // Find closer
+      for (let j = lines.length - 1; j >= firstRatingLine; j--) {
+        const l = lines[j].trim();
+        if (l && !patternA.test(l) && !l.startsWith('Liked:') && !l.startsWith('Disliked:')) {
+          closer = l; break;
+        }
       }
+    } else {
+      // Format B: each review is one paragraph starting with "Name, City, Year, N stars: body"
+      // Reviews separated by blank lines; body may span multiple lines before next review header
+      let currentReview = null;
+      for (let i = firstRatingLine; i < lines.length; i++) {
+        const line = lines[i].trim();
+        const match = patternB.exec(line);
+        if (match) {
+          if (currentReview) items.push(currentReview);
+          currentReview = {
+            name: match[1].trim(),
+            city: match[2].trim(),
+            year: parseInt(match[3], 10),
+            rating: parseInt(match[4], 10),
+            liked: '', disliked: '',
+            body: match[5].trim(),
+          };
+          seenFirstReview = true;
+        } else if (seenFirstReview && currentReview && line) {
+          // Continuation of review body
+          currentReview.body += ' ' + line;
+        }
+      }
+      if (currentReview) items.push(currentReview);
+      items.forEach(r => { r.body = r.body.trim(); r.liked = r.liked || r.body; });
+
+      // Closer: last line not matching a review pattern
+      const lastNonReview = lines.slice().reverse().find(
+        l => l.trim() && !patternB.test(l.trim())
+      );
+      closer = lastNonReview ? lastNonReview.trim() : '';
     }
 
     return {
-      intro: introLines.join(' '),
+      intro: introLines.join(' ') || undefined,
       items: items.length > 0 ? items : undefined,
       closer: closer || undefined,
     };
