@@ -9,6 +9,8 @@ import { getShortUniversityName } from '@/lib/format'
 import { UNIVERSITY_REVIEWS } from '@/lib/reviews-data'
 import { COUPONS } from '@/lib/coupons'
 import type { Program } from '@/lib/data'
+import { getPageContent } from '@/lib/data/page-content'
+import type { PageContent } from '@/lib/data/page-content-schema'
 
 import SchemaBlock       from './SchemaBlock'
 import UniHero           from './UniHero'
@@ -48,11 +50,67 @@ interface Props {
   pd: ProgramDetail
 }
 
+// ── Inline generated-content components ─────────────────────────────────────
+
+function GeneratedReviewsBlock({ reviews }: { reviews: NonNullable<PageContent['sections']['reviews']> }) {
+  return (
+    <section className="rounded-xl border border-slate-200 bg-white p-6">
+      <h2 className="text-lg font-bold mb-2" style={{ color: '#0B1533' }}>
+        {reviews.heading || 'Student Reviews'}
+      </h2>
+      {reviews.intro && <p className="text-sm text-slate-500 mb-4">{reviews.intro}</p>}
+      <div className="space-y-4">
+        {reviews.items?.map((r, i) => (
+          <div key={i} className="border border-slate-100 rounded-lg p-4">
+            <div className="flex items-center justify-between mb-2">
+              <span className="font-semibold text-sm text-slate-800">{r.name}</span>
+              <span className="text-xs text-slate-500">{r.city}{r.year ? ` · ${r.year}` : ''}</span>
+            </div>
+            <div className="flex items-center gap-1 mb-2">
+              {Array.from({ length: 5 }).map((_, j) => (
+                <span key={j} style={{ color: j < r.rating ? '#F4A024' : '#CBD5E1', fontSize: 14 }}>★</span>
+              ))}
+            </div>
+            <p className="text-sm text-slate-700">{r.body || r.liked}</p>
+            {r.liked && r.body && <p className="text-xs text-green-700 mt-1">Liked: {r.liked}</p>}
+            {r.disliked && <p className="text-xs text-red-600 mt-1">Disliked: {r.disliked}</p>}
+          </div>
+        ))}
+      </div>
+      {reviews.closer && <p className="text-xs text-slate-400 mt-4 italic">{reviews.closer}</p>}
+    </section>
+  )
+}
+
+function GeneratedRedFlagsBlock({ redFlags }: { redFlags: NonNullable<PageContent['sections']['redFlags']> }) {
+  return (
+    <section className="rounded-xl border border-red-100 bg-white p-6">
+      <h2 className="text-lg font-bold mb-2 text-red-700">
+        {redFlags.heading || 'Red Flags to Know Before You Enrol'}
+      </h2>
+      {redFlags.intro && <p className="text-sm text-slate-500 mb-4">{redFlags.intro}</p>}
+      <div className="space-y-3">
+        {redFlags.flags?.map((f, i) => (
+          <div key={i} className="p-3 rounded-lg bg-red-50 border border-red-100">
+            <span className="text-xs font-black text-red-500 uppercase tracking-wide">Red Flag {i + 1}</span>
+            <p className="text-sm text-slate-700 mt-1">{f.sentence1} {f.sentence2}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+// ── Main component ───────────────────────────────────────────────────────────
+
 export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
   const cleanName  = getShortUniversityName(u.name)
   const specs      = pd.specs || []
   const peers      = getUniversitiesByProgram(program).filter(x => x.id !== u.id).slice(0, 3)
   const coupon     = COUPONS.find(c => c.universityId === u.id && (c.program === program || c.program === 'All')) || null
+
+  const content = getPageContent(u.id, program.toLowerCase())
+  const s = content?.sections
 
   const faqs: { q: string; a: string }[] = [
     { q: `Is the ${program} degree from ${cleanName} valid for jobs?`, a: `Yes. ${cleanName} is UGC DEB approved. The degree is identical to an on-campus ${program} and valid for private sector jobs, government portals where UGC DEB degrees are accepted${u.psuEligible ? ', and PSU recruitment' : ''}.` },
@@ -114,6 +172,16 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
                 />
               </div>
 
+              {/* §3B UGC-DEB (generated content only) */}
+              {s?.ugcDeb?.body && (
+                <section className="rounded-xl border border-slate-200 bg-white p-6">
+                  <h2 className="text-lg font-bold mb-3" style={{ color: '#0B1533' }}>
+                    {s.ugcDeb.heading || 'UGC-DEB Approval and Degree Validity'}
+                  </h2>
+                  <div className="text-sm text-slate-600 leading-relaxed whitespace-pre-line">{s.ugcDeb.body}</div>
+                </section>
+              )}
+
               {/* §4 About */}
               <SectionAbout u={u} program={program} pd={pd} cleanName={cleanName} />
 
@@ -170,6 +238,16 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
               {/* §13 Admission */}
               <AdmissionSteps />
 
+              {/* §13B ABC ID (generated content only) */}
+              {s?.abcId?.body && (
+                <section className="rounded-xl border border-slate-200 bg-white p-6">
+                  <h2 className="text-lg font-bold mb-3" style={{ color: '#0B1533' }}>
+                    {s.abcId.heading || 'Academic Bank of Credits (ABC ID)'}
+                  </h2>
+                  <div className="text-sm text-slate-600 leading-relaxed whitespace-pre-line">{s.abcId.body}</div>
+                </section>
+              )}
+
               {/* §14 Placements */}
               <SectionPlacements pd={pd} cleanName={cleanName} program={program} />
 
@@ -180,10 +258,18 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
               <TopHirers pd={pd} program={program} cleanName={cleanName} />
 
               {/* §16 Reviews */}
-              <ReviewsBlock universityId={u.id} program={program} />
+              {s?.reviews?.items?.length ? (
+                <GeneratedReviewsBlock reviews={s.reviews} />
+              ) : (
+                <ReviewsBlock universityId={u.id} program={program} />
+              )}
 
               {/* §17 Red Flags */}
-              <RedFlagsBlock u={u} program={program} cleanName={cleanName} />
+              {s?.redFlags?.flags?.length ? (
+                <GeneratedRedFlagsBlock redFlags={s.redFlags} />
+              ) : (
+                <RedFlagsBlock u={u} program={program} cleanName={cleanName} />
+              )}
 
               {/* Inline CTA after Red Flags */}
               <InlineCTA
@@ -215,7 +301,7 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
               />
 
               {/* §20 FAQs */}
-              <FAQBlock faqs={faqs} />
+              <FAQBlock faqs={s?.faqs?.length ? s.faqs.map(f => ({ q: f.question, a: f.answer })) : faqs} />
 
               {/* §21 Last Updated */}
               <LastUpdatedStamp program={program} universityId={u.id} />
