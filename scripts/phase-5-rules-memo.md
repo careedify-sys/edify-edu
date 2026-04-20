@@ -78,3 +78,28 @@ Use NAMED-KEY format (Batch 2+ standard). Columns: A=key, B=heading, C=content, 
 Keys: `tldr`, `intro`, `about_h2/about_body`, `ugc_deb_h2/ugc_deb_body`, `abc_h2/abc_body`, `syllabus_h2/syllabus_body`, `reviews_h2/reviews_body`, `red_flags_h2/red_flags_body`, `faqs_h2`, `faq_1`/`faq_1_a`…`faq_10`/`faq_10_a`.
 
 NOT the numbered-key format used in Batch 1 (which also works but is legacy).
+
+---
+
+## STRICT PLACEMENT RULE (effective Batch 5+)
+
+The 80/20 EdifyEdu brand cap is MAXIMUM 5 mentions per page, but they MUST be only in these 5 allowed slots. Any mention outside these slots is a rule violation and must be stripped.
+
+**Allowed slots (and only these):**
+1. `about_body` — commission-free disclosure sentence
+2. `fees_body` — "EdifyEdu reconfirms fees..." mandated closer
+3. `beyond_admission_body` — branded section (unlimited mentions OK here since this IS the branded section)
+4. `verdict_body` — optional closer "If undecided, counsellor call is free"
+5. One FAQ answer — optional
+
+**Explicitly forbidden slots:**
+- `coupon_body` (do not disclaim coupon codes when UI offers them)
+- `hirers_body` (no brand disclaimer in Top Hirers)
+- `placements_body` (no brand disclaimer in Placements)
+- `review_intro` or review bodies (reviews are student voices, not brand voice)
+- `red_flags_body` (red flags are editorial limits of the UNI, not brand self-reference)
+- `syllabus_body` (syllabus is program-specific, not brand-related)
+
+**Before completing any page:** grep the generated content for "EdifyEdu" and confirm all occurrences are in the 5 allowed slots only.
+
+**Historical note:** Batch 4 had 2 rogue mentions (`coupon_body`, `hirers_body`). These shipped as-is but must not repeat in Batch 5+.
