@@ -41,14 +41,38 @@ function slugify(s: string): string {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 }
 
+// Normalise slug for fuzzy matching:
+//   'logistics-and-supply-chain-management' and 'logistics-supply-chain-management'
+//   should match because '&' → '' in data.ts but 'and' stays in xlsx slugs.
+function normalise(s: string): string {
+  return s.replace(/-and-/g, '-').replace(/-or-/g, '-').replace(/-/g, '')
+}
+
 // Try to find a manifest key that's close enough to the incoming specSlug.
-// Exact match first; then check if either string contains the other.
+// Precedence:
+//   1. Exact match
+//   2. URL slug contains manifest key (e.g. 'human-resource-management' ⊇ 'human-resource')
+//      → prefer shortest manifest key to avoid 'agri-operations-management' stealing 'operations-management'
+//   3. Manifest key contains URL slug (less preferred)
+//   4. Normalised equality after stripping '-and-'/'-or-' (handles '&' vs 'and')
+//   5. null
 function findSpecKey(progData: Record<string, any>, specSlug: string): string | null {
   if (specSlug in progData) return specSlug
-  // Try partial containment
   const keys = Object.keys(progData).filter(k => k !== '_core')
-  const partial = keys.find(k => k.includes(specSlug) || specSlug.includes(k))
-  return partial || null
+
+  // Pass 2: URL slug contains manifest key — prefer shortest (most specific) key
+  const subsetCandidates = keys.filter(k => specSlug.includes(k))
+  if (subsetCandidates.length) {
+    return subsetCandidates.reduce((a, b) => (b.length > a.length ? b : a))
+  }
+
+  // Pass 3: manifest key contains URL slug
+  const supersetMatch = keys.find(k => k.includes(specSlug))
+  if (supersetMatch) return supersetMatch
+
+  // Pass 4: normalised equality (strips 'and'/'or' — handles '&' vs 'and' in slugs)
+  const normSlug = normalise(specSlug)
+  return keys.find(k => normalise(k) === normSlug) || null
 }
 
 /**
