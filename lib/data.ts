@@ -531,7 +531,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
-  rankingBadge: 'NIRF #44 (University 2024)',
+  // DY Patil University Navi Mumbai is not separately ranked in NIRF. NIRF #44 (University 2024) belongs to Dr. D.Y. Patil Vidyapeeth, Pune — a different institution. Do not attribute that rank to this record.
   enrollments: 500,
   },
   {
