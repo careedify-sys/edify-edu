@@ -60,7 +60,7 @@ export default function SectionSyllabus({ syllabus, program, universityName, spe
       <div className="space-y-2">
         {available.map(sem => {
           const content = syllabus![sem.key] as string
-          const subjects = content.split(',').map(s => s.trim()).filter(Boolean)
+          const subjects = content.split(/[,;|]/).map(s => s.replace(/^[•\-\s]+/, '').trim()).filter(s => s.length > 2)
           const isOpen = openSem === sem.key
 
           return (

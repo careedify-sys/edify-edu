@@ -5,7 +5,8 @@ import { ChevronRight } from 'lucide-react'
 import type { University, ProgramDetail } from '@/lib/data'
 import { getUniversitiesByProgram } from '@/lib/data'
 import { getShortUniversityName } from '@/lib/format'
-import { getMasterSyllabus, getUniversitySyllabus, getSpecContent, getSpecFallback } from '@/lib/content'
+import { getSpecContent, getSpecFallback } from '@/lib/content'
+import { getSyllabus } from '@/lib/syllabus'
 import { COUPONS } from '@/lib/coupons'
 import type { Program } from '@/lib/data'
 
@@ -50,7 +51,7 @@ interface Props {
 
 export default function UniSpecBody({ u, program, programSlug, spec, specSlug, pd }: Props) {
   const cleanName  = getShortUniversityName(u.name)
-  const syllabus   = getMasterSyllabus(u.id, program) || getUniversitySyllabus(u.id, program)
+  const syllabus   = getSyllabus(u.id, program, specSlug)
   const peers      = getUniversitiesByProgram(program).filter(x => x.id !== u.id).slice(0, 3)
   const coupon     = COUPONS.find(c => c.universityId === u.id && (c.program === program || c.program === 'All')) || null
   const specContent = getSpecContent(spec) || getSpecFallback(spec, program)
@@ -182,12 +183,11 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
               {/* §8 — Curriculum Deep Dive (replaces SpecializationGrid) */}
               <CurriculumDive />
 
-              <SectionSyllabus syllabus={syllabus} program={program} universityName={cleanName} />
-
-              {/* Syllabus request card — only when no syllabus data is available */}
-              {!syllabus || !['sem1','sem2','sem3','sem4','sem56','coreSpec','research','capstone'].some(k => !!(syllabus as any)[k]) ? (
+              {syllabus && (['sem1','sem2','sem3','sem4','sem56','coreSpec','research','capstone'] as const).some(k => !!(syllabus as any)[k]) ? (
+                <SectionSyllabus syllabus={syllabus} program={program} universityName={cleanName} />
+              ) : (
                 <RequestSyllabusCard uniId={u.id} uniName={cleanName} program={program} />
-              ) : null}
+              )}
 
               <FeeBreakdown u={u} pd={pd} program={program} />
 
