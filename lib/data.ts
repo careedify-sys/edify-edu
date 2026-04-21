@@ -118,7 +118,7 @@ export const UNIVERSITIES: University[] = [
     nirfMgt: 73,
     naac: 'A++',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #62', 'AICTE', 'WES Recognised'],
+    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #73', 'AICTE', 'WES Recognised'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -188,7 +188,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
-  rankingBadge: 'NIRF #72 (University 2024)',
+  rankingBadge: 'NIRF #73 (Management 2025)',
   enrollments: 500,
   },
   {
@@ -276,7 +276,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
-  rankingBadge: 'NIRF #54 (University 2024)',
+  rankingBadge: 'NIRF #49 (Management 2025)',
   enrollments: 500,
   },
   {
@@ -383,7 +383,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
-  rankingBadge: 'NIRF #37 (University 2024)',
+  rankingBadge: 'NIRF #44 (Management 2025)',
   enrollments: 500,
   },
   {
@@ -394,10 +394,10 @@ export const UNIVERSITIES: University[] = [
     city: 'Online',
     state: 'Online',
     region: 'Central',
-    nirf: 43,
+    nirf: 999,
     naac: 'A',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A', 'NIRF #43', 'AICTE', 'WES Recognised'],
+    approvals: ['UGC DEB', 'NAAC A', 'NIRF not listed 2025', 'AICTE', 'WES Recognised'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -468,7 +468,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
-  rankingBadge: 'NIRF #101+ (University 2024)',
+  rankingBadge: 'Not listed in NIRF 2025 rankings',
   enrollments: 500,
   },
   {
@@ -547,7 +547,7 @@ export const UNIVERSITIES: University[] = [
     nirfEng: 43,
     naac: 'A',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A', 'NIRF #45', 'AICTE', 'WES Recognised', 'QS Ranked'],
+    approvals: ['UGC DEB', 'NAAC A', 'NIRF #36', 'AICTE', 'WES Recognised', 'QS Ranked'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -608,7 +608,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
-  rankingBadge: 'NIRF #57 (University 2024)',
+  rankingBadge: 'NIRF #36 (Management 2025)',
   enrollments: 500,
   },
   {
@@ -729,7 +729,7 @@ export const UNIVERSITIES: University[] = [
     nirfEng: 23,
     naac: 'A++',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #7', 'AICTE', 'WES Recognised'],
+    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #8', 'AICTE', 'WES Recognised'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -809,7 +809,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
-  rankingBadge: 'NIRF #8 (University 2024)',
+  rankingBadge: 'NIRF #26 (Management 2025)',
   enrollments: 500,
   },
   {
@@ -1008,7 +1008,8 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MSc from Shoolini University – Shoolini Onli — recognised for corporate hiring.',
       }
     },
-    color: '#2563EB',
+      rankingBadge: 'NIRF #69 (University 2025)',
+  color: '#2563EB',
   },
   {
     id: 'manipal-university-jaipur-online',
@@ -1022,7 +1023,7 @@ export const UNIVERSITIES: University[] = [
     nirfMgt: 81,
     naac: 'A+',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A+', 'NIRF #58', 'AICTE', 'WES Recognised'],
+    approvals: ['UGC DEB', 'NAAC A+', 'NIRF #81', 'AICTE', 'WES Recognised'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -1112,7 +1113,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
-  rankingBadge: 'NIRF #38 (University 2024)',
+  rankingBadge: 'NIRF #81 (Management 2025)',
   enrollments: 500,
   },
   {
@@ -1123,11 +1124,11 @@ export const UNIVERSITIES: University[] = [
     city: 'Greater Noida',
     state: 'Uttar Pradesh',
     region: 'North',
-    nirf: 101,
-    nirfMgt: 101,
+    nirf: 999,
+    nirfMgt: 999,
     naac: 'A+',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A+', 'NIRF #36', 'AICTE', 'WES Recognised'],
+    approvals: ['UGC DEB', 'NAAC A+', 'NIRF 101-125 (Management band)', 'AICTE', 'WES Recognised'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -1197,7 +1198,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
-  rankingBadge: 'NIRF #101+ (University 2024)',
+  rankingBadge: 'NIRF 101-125 (Management 2025 band — no individual rank)',
   enrollments: 500,
   },
   {
@@ -1304,7 +1305,7 @@ export const UNIVERSITIES: University[] = [
     nirfEng: 46,
     naac: 'A++',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #11', 'AICTE', 'WES Recognised'],
+    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #24', 'AICTE', 'WES Recognised'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -1371,7 +1372,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
-  rankingBadge: 'NIRF #9 (Management 2024)',
+  rankingBadge: 'NIRF #24 (University 2025)',
   enrollments: 500,
   },
   {
@@ -1386,7 +1387,7 @@ export const UNIVERSITIES: University[] = [
     nirfMgt: 78,
     naac: 'A+',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A+', 'NIRF #54'],
+    approvals: ['UGC DEB', 'NAAC A+', 'NIRF #78'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -1442,7 +1443,8 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved B.Com from Chitkara University – Centre for Di — recognised for corporate hiring.',
       }
     },
-    color: '#2563EB',
+      rankingBadge: 'NIRF #78 (Management 2025)',
+  color: '#2563EB',
   },
   {
     id: 'yenepoya-university-online',
@@ -1538,7 +1540,7 @@ export const UNIVERSITIES: University[] = [
     state: 'Uttar Pradesh',
     region: 'North',
     nirf: 87,
-    nirfMgt: 101,
+    nirfMgt: 999,
     naac: 'A+',
     ugc: true,
     approvals: ['UGC DEB', 'NAAC A+', 'NIRF #87'],
@@ -1620,7 +1622,8 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved M.Com from Sharda University (Sharda Online) — recognised for corporate hiring.',
       }
     },
-    color: '#2563EB',
+      rankingBadge: 'NIRF #87 (University 2025)',
+  color: '#2563EB',
   },
   {
     id: 'vignan-university-online',
@@ -1629,7 +1632,7 @@ export const UNIVERSITIES: University[] = [
     city: 'Guntur',
     state: 'Andhra Pradesh',
     region: 'South',
-    nirf: 75,
+    nirf: 70,
     naac: 'A+',
     ugc: true,
     approvals: ['UGC DEB', 'NAAC A+', 'NIRF #70'],
@@ -1681,7 +1684,8 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved BCA from Vignan\'s Foundation for Science, Te — recognised for corporate hiring.',
       }
     },
-    color: '#2563EB',
+      rankingBadge: 'NIRF #70 (University 2025)',
+  color: '#2563EB',
   },
   {
     id: 'manonmaniam-sundaranar-university-online',
@@ -1822,7 +1826,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
-  rankingBadge: 'NIRF #14 (Management 2024)',
+  rankingBadge: 'NIRF #24 (Management 2025)',
   enrollments: 500,
   },
   {
@@ -1836,7 +1840,7 @@ export const UNIVERSITIES: University[] = [
     nirf: 3,
     naac: 'A++',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #14', 'AICTE', 'WES Recognised'],
+    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #3', 'AICTE', 'WES Recognised'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -1908,7 +1912,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
-  rankingBadge: 'NIRF #5 (University 2024)',
+  rankingBadge: 'NIRF #3 (University 2025)',
   enrollments: 500,
   },
   {
@@ -2070,7 +2074,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
-  rankingBadge: 'NIRF #26 (University 2024)',
+  rankingBadge: 'NIRF #32 (Management 2025)',
   enrollments: 500,
   },
   {
@@ -3520,7 +3524,7 @@ export const UNIVERSITIES: University[] = [
     city: 'Chennai',
     state: 'Tamil Nadu',
     region: 'South',
-    nirf: 0,
+    nirf: 999,
     naac: 'A+',
     ugc: true,
     approvals: ['UGC DEB', 'NAAC A+', 'AICTE'],
@@ -3889,7 +3893,7 @@ export const UNIVERSITIES: University[] = [
     nirfEng: 16,
     naac: 'A++',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #11', 'AICTE', 'WES Recognised'],
+    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #14', 'AICTE', 'WES Recognised'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -3929,7 +3933,7 @@ export const UNIVERSITIES: University[] = [
       
     },
     color: '#1B4FBE',
-  rankingBadge: 'NIRF #11 (University 2024)',
+  rankingBadge: 'NIRF #14 (University 2025)',
   enrollments: 500,
   },
   {
@@ -3991,7 +3995,7 @@ export const UNIVERSITIES: University[] = [
     city: 'Kurukshetra',
     state: 'Haryana',
     region: 'North',
-    nirf: 0,
+    nirf: 999,
     naac: 'A++',
     ugc: true,
     approvals: ['UGC DEB', 'NAAC A++', 'AICTE', 'WES Recognised'],
@@ -4065,7 +4069,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
-  rankingBadge: 'NIRF #101 (University 2024)',
+  rankingBadge: 'NIRF 101-150 (University 2025 band — no individual rank)',
   enrollments: 500,
   },
   {
@@ -4108,7 +4112,7 @@ export const UNIVERSITIES: University[] = [
 }
     },
     color: '#1B4FBE',
-  rankingBadge: 'NIRF #42 (University 2024)',
+  rankingBadge: 'NIRF #29 (University 2025)',
   enrollments: 500,
   },
   {
@@ -4122,7 +4126,7 @@ export const UNIVERSITIES: University[] = [
     nirf: 41,
     naac: 'A++',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #47', 'AICTE'],
+    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #41', 'AICTE'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -4163,7 +4167,7 @@ export const UNIVERSITIES: University[] = [
       
     },
     color: '#1B4FBE',
-  rankingBadge: 'NAAC A++ accredited',
+  rankingBadge: 'NIRF #41 (University 2025)',
   enrollments: 500,
   },
   {
@@ -4178,7 +4182,7 @@ export const UNIVERSITIES: University[] = [
     nirfEng: 24,
     naac: 'A++',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A++', 'AICTE'],
+    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #28', 'AICTE'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -4206,7 +4210,7 @@ export const UNIVERSITIES: University[] = [
       },
     },
     color: '#1B4FBE',
-  rankingBadge: 'NIRF #11 (University 2024)',
+  rankingBadge: 'NIRF #28 (Management 2025)',
   enrollments: 500,
   },
   {
@@ -4221,7 +4225,7 @@ export const UNIVERSITIES: University[] = [
     nirfMgt: 57,
     naac: 'A++',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #60', 'AICTE', 'WES Recognised'],
+    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #57', 'AICTE', 'WES Recognised'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -4281,7 +4285,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#1B4FBE',
-  rankingBadge: 'NIRF #63 (University 2024)',
+  rankingBadge: 'NIRF #57 (Management 2025)',
   enrollments: 500,
   },
   {
@@ -4431,7 +4435,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#2563EB',
-  rankingBadge: 'NIRF #81 (University 2024)',
+  rankingBadge: 'NIRF #59 (University 2025)',
   enrollments: 500,
   },
   {
@@ -4442,10 +4446,10 @@ export const UNIVERSITIES: University[] = [
     city: 'Guwahati',
     state: 'Assam',
     region: 'East',
-    nirf: 151,
+    nirf: 999,
     naac: 'A',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A', 'NIRF #151'],
+    approvals: ['UGC DEB', 'NAAC A', 'NIRF not listed 2025'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -4635,11 +4639,11 @@ export const UNIVERSITIES: University[] = [
     city: 'Online',
     state: 'Online',
     region: 'Central',
-    nirf: 0,
+    nirf: 71,
     nirfMgt: 71,
     naac: 'A',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A', 'NIRF #25', 'AICTE', 'WES Recognised'],
+    approvals: ['UGC DEB', 'NAAC A', 'NIRF #71', 'AICTE', 'WES Recognised'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -4686,7 +4690,7 @@ export const UNIVERSITIES: University[] = [
       }
     },
     color: '#0891B2',
-  rankingBadge: 'NIRF #101+ (University 2024)',
+  rankingBadge: 'NIRF #71 (Management 2025)',
   enrollments: 500,
   },
   {
@@ -4959,7 +4963,7 @@ export const UNIVERSITIES: University[] = [
     city: 'Noida',
     state: 'Uttar Pradesh',
     region: 'North',
-    nirf: 0,
+    nirf: 999,
     nirfEng: 83,
     naac: 'A',
     ugc: true,
@@ -5452,7 +5456,7 @@ export const UNIVERSITIES: University[] = [
     city: 'Greater Noida',
     state: 'Uttar Pradesh',
     region: 'North',
-    nirf: 0,
+    nirf: 999,
     naac: 'A',
     ugc: true,
     approvals: ['UGC DEB', 'NAAC A', 'AICTE', 'WES Recognised'],
@@ -5988,9 +5992,10 @@ export const UNIVERSITIES: University[] = [
     region: 'South',
     nirf: 11,
     nirfEng: 14,
+    nirfMgt: 56,
     naac: 'A++',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #18', 'Category 1 University'],
+    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #56', 'Category 1 University'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -6014,7 +6019,7 @@ export const UNIVERSITIES: University[] = [
         avgSalary: '₹4.5L – ₹12L per annum',
         topCompanies: ['Amazon', 'Deloitte', 'Google', 'Microsoft', 'TATA', 'Wipro', 'Infosys'],
         internshipType: 'Mini Project (Sem 3) + Major Project (Sem 4)',
-        careerOutcome: 'UGC DEB approved MBA from SRMIST — NIRF #18, NAAC A++. Category 1 university status with international faculty and global alumni network.',
+        careerOutcome: 'UGC DEB approved MBA from SRMIST — NIRF #56 (Management 2025), NAAC A++. Category 1 university status with international faculty and global alumni network.',
         syllabus: {
           sem1: 'Management Principles & Practices | Organizational Behavior | Managerial Economics | Financial Accounting | Quantitative Techniques for Management',
           sem2: 'Financial Management | Marketing Management | Human Resource Management | Operations Management | Research Methodology for Management',
@@ -6104,7 +6109,7 @@ export const UNIVERSITIES: University[] = [
       },
     },
     color: '#C0392B',
-  rankingBadge: 'NIRF #17 (University 2024)',
+  rankingBadge: 'NIRF #56 (Management 2025)',
   enrollments: 500,
   },  {
     id: 'university-of-madras-online',
@@ -6594,10 +6599,10 @@ export const UNIVERSITIES: University[] = [
     city: 'Jamshedpur',
     state: 'Jharkhand',
     region: 'East',
-    nirf: 52,
+    nirf: 999,
     naac: 'A',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A', 'NIRF #52', 'AICTE', 'WES Recognised'],
+    approvals: ['UGC DEB', 'NAAC A', 'NIRF not listed 2025', 'AICTE', 'WES Recognised'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -8779,7 +8784,7 @@ export const UNIVERSITIES: University[] = [
     city: 'New Delhi',
     state: 'Delhi',
     region: 'North',
-    nirf: 0,
+    nirf: 999,
     naac: 'A++',
     ugc: true,
     approvals: ['UGC DEB', 'NAAC A++', 'AICTE', 'Central University'],

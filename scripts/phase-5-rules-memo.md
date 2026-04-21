@@ -77,6 +77,50 @@ Add new aliases here after adding them to `scripts/sheet-slug-map.json`.
 Use NAMED-KEY format (Batch 2+ standard). Columns: A=key, B=heading, C=content, D=word_count.
 Keys: `tldr`, `intro`, `about_h2/about_body`, `ugc_deb_h2/ugc_deb_body`, `abc_h2/abc_body`, `syllabus_h2/syllabus_body`, `reviews_h2/reviews_body`, `red_flags_h2/red_flags_body`, `faqs_h2`, `faq_1`/`faq_1_a`…`faq_10`/`faq_10_a`.
 
+---
+
+## NIRF DATA INTEGRITY RULE (Phase 4.8 — added 2026-04-21)
+
+### Source Priority for Online MBA Pages
+
+When setting `nirf`, `nirfMgt`, `rankingBadge`, and `approvals` in `lib/data.ts` and JSON content:
+
+1. **Management 2025** (nirfindia.org → Management category) — use first; most relevant for MBA credentials
+2. **University 2025** (nirfindia.org → University category) — fallback when Management rank unavailable
+3. **Overall 2025** — last resort only
+4. **nirf: 999** — when not listed in any NIRF 2025 category or only in a band (101+) with no individual rank
+
+### Badge Format
+
+- `rankingBadge: 'NIRF #X (Management 2025)'` — when Management rank is available
+- `rankingBadge: 'NIRF #X (University 2025)'` — when only University rank is available
+- `rankingBadge: 'NIRF band 101-125 (Management 2025 band — no individual rank)'` — for band-only entries
+- No badge or NAAC-only badge — when not in NIRF 2025 at all
+
+### data.ts Fields
+
+- `nirf` — University category rank (or 999 if not listed)
+- `nirfMgt` — Management category rank (add this field when available, even if nirf is already set)
+- `rankingBadge` — displayed credential; always use the Management rank if available (more relevant to MBA)
+- `approvals` array — update NIRF entry to match the badge (Management first if available)
+
+### Anti-Patterns (Never Do These)
+
+- Do NOT copy a previous uni's rankingBadge when adding a new slug — always fetch fresh from nirfindia.org
+- Do NOT use year-2024 data if 2025 data is published (NIRF publishes annually, usually August)
+- Do NOT set nirf: 0 — use nirf: 999 for unranked
+- Do NOT show a specific rank (e.g., #101) if the university is only in a band (101-125); show the band range
+- Do NOT show NIRF rank in content if the uni dropped out of all 2025 lists — pivot to NAAC/WES credentials
+
+### Constituent Institution Rule
+
+When a ranked constituent institution (e.g., TAPMI inside MAHE, SIBM inside Symbiosis) is ranked separately from the parent university, use the **parent university's** NIRF rank for the online MBA page. Online MBA is offered by the parent, not the constituent. Note the distinction in the about_body if relevant.
+
+### Scripts
+
+- `scripts/nirf-2025-patch.py` — patches `lib/data.ts` for all 34 uni slugs (run once per NIRF cycle)
+- `scripts/nirf-json-patch.py` — patches NIRF mentions in all 34 `lib/data/page-content/*-mba.json` files
+
 NOT the numbered-key format used in Batch 1 (which also works but is legacy).
 
 ---
