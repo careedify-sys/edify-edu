@@ -204,3 +204,16 @@ All spec pages (including future unis NMIMS, Chandigarh, LPU, etc) MUST use:
 5. **Comparisons heading in UniSpecBody**: uses `cleanName` (dynamic) not hardcoded "Amity". Safe for all universities using the specJson path.
 
 6. **NMIMS fee structure** (locked as of Phase 7.2 v2): 3-option template — Annual (Rs 1,05,000/yr = Rs 2,10,000), Semester (Rs 55,000/sem = Rs 2,20,000), Upfront discounted (Rs 1,96,000). Plus Rs 1,200 admission processing, Rs 10,000 registration (counts toward fees), Rs 800 exam fee per subject per attempt. 20% discount for Armed Forces and dependents. DD in favour of 'SVKM's NMIMS' payable at Mumbai.
+
+---
+
+## FIRST-BATCH QA RULE (Phase 7.3+)
+
+The first spec batch for any new uni (MUJ, LPU, Chandigarh, etc) must include a user mobile screenshot review of at least 1 spec page post-deploy, before proceeding to the next uni's spec batch.
+
+This catches:
+- Rendering bugs specific to that uni's data shape
+- Content quality issues the rubric didn't flag
+- Visual/mobile readability issues
+
+Do not fire Batch N+1 until user has confirmed Batch N renders cleanly on mobile.

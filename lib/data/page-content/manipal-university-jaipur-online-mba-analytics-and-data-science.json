@@ -1,0 +1,160 @@
+{
+  "uniSlug": "manipal-university-jaipur-online",
+  "program": "mba",
+  "specSlug": "analytics-and-data-science",
+  "sections": {
+    "hero": {
+      "eyebrow": "MANIPAL UNIVERSITY JAIPUR ONLINE MBA",
+      "headline": "MUJ Online MBA in Analytics and Data Science: Syllabus, Fees and Career Outcomes",
+      "sub": "UGC-DEB approved Super/Dual specialization. 12 spec subjects in Sem 3-4. NAAC A+, NIRF #58."
+    },
+    "tldr": "MUJ Online MBA in Analytics and Data Science covers programming for data science, exploratory data analysis, machine learning, business analytics, unstructured data, and data scraping for analytics professionals targeting data science manager or Chief Data Officer track roles. NAAC A+, NIRF #58 at Rs 1,53,000 upfront (15% off) or Rs 1,80,000. Super/Dual spec — pair with any business domain. Coursera Plus at Rs 3,999 (70% off).",
+    "about": {
+      "body": "Analytics and Data Science is the MBA specialization for professionals who apply data at the intersection of business and technology: data analysts, business intelligence professionals, data scientists, and analytics managers who want to move into Analytics Head, Chief Data Officer, or data product leadership roles. The MUJ Online MBA in Analytics and Data Science covers the full analytics stack from a business management perspective: data programming, exploratory analysis, machine learning, business analytics, unstructured data analysis, and data scraping.\n\nThe Super/Dual specialization structure makes this one of MUJ's most strategically versatile specs. Analytics pairs with virtually every business domain: Analytics plus Finance creates a fintech and quantitative finance profile; Analytics plus HRM creates a people analytics credential; Analytics plus Operations creates an Industry 4.0 and data-driven manufacturing profile; Analytics plus Marketing creates a consumer insights and growth analytics credential. Students effectively get a domain MBA with a data science toolset.\n\nThe Coursera Plus bundle at Rs 3,999 gives Analytics students access to IBM Data Science, Google Data Analytics, and machine learning courses from University of Washington and Johns Hopkins — internationally recognised certifications that pair powerfully with the MUJ analytics curriculum.\n\nManipal University Jaipur Online is NAAC A+ accredited with NIRF #58 University ranking for 2025. EdifyEdu verifies accreditation data independently and does not receive commission from MUJ. Full programme overview at /universities/manipal-university-jaipur-online/mba."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Strategic Management",
+          "description": "Data strategy, analytics-driven competitive advantage, and building data-informed organisational decision-making."
+        },
+        {
+          "name": "Term Paper",
+          "description": "Independent research paper applying analytics methods to a real-world business problem with measurable outcomes."
+        },
+        {
+          "name": "Programming in Data Science",
+          "description": "Python and R fundamentals for data manipulation, statistical computation, and building analytical pipelines."
+        },
+        {
+          "name": "Exploratory Data Analysis",
+          "description": "Data cleaning, feature engineering, statistical summarization, and pattern discovery in structured datasets."
+        },
+        {
+          "name": "Introduction to Machine Learning",
+          "description": "Supervised and unsupervised ML algorithms, model evaluation, and applying ML to classification and regression problems."
+        },
+        {
+          "name": "Visualization",
+          "description": "Data visualization principles, Tableau and Power BI implementation, and communicating insights to non-technical stakeholders."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "International Business Management",
+          "description": "Global data operations, cross-border data governance, and managing analytics teams across geographies."
+        },
+        {
+          "name": "Project",
+          "description": "Major analytics dissertation applying machine learning or business analytics to an original real-world dataset."
+        },
+        {
+          "name": "Advanced Machine Learning",
+          "description": "Deep learning architectures, ensemble methods, NLP fundamentals, and ML model deployment for business applications."
+        },
+        {
+          "name": "Unstructured Data Analysis",
+          "description": "Text mining, sentiment analysis, image data handling, and extracting insights from unstructured enterprise sources."
+        },
+        {
+          "name": "Business Analytics",
+          "description": "Prescriptive and predictive analytics for business decisions, A/B testing, and analytics ROI measurement."
+        },
+        {
+          "name": "Data Scraping",
+          "description": "Web scraping techniques, API data collection, and building automated data acquisition pipelines for business intelligence."
+        }
+      ],
+      "note": "Semester 1 and 2 subjects are shared across all MUJ Online MBA specializations. Full programme structure at /universities/manipal-university-jaipur-online/mba."
+    },
+    "whoHires": {
+      "body": "Analytics and Data Science MBA graduates from Manipal University Jaipur Online are hired across these industries and roles:\n\n**Industries:** Technology and software, BFSI analytics functions, E-commerce, Consulting, Healthcare analytics\n\n**Entry-level roles:** Data Analyst, Business Intelligence Analyst, Machine Learning Engineer, Analytics Consultant\n\n**Mid-level roles (3-5 years experience):** Senior Data Scientist, Analytics Manager, BI Manager, Data Product Manager, Insights Manager\n\n**Senior roles (7+ years):** Head of Analytics, VP Data Science, Chief Data Officer, Director of Business Intelligence\n\n**Top hiring organisations:** TCS, Infosys, Amazon India, Flipkart, HDFC Bank Analytics, PhonePe, Zomato, Swiggy, McKinsey Analytics, EY Analytics"
+    },
+    "skills": {
+      "body": "The Analytics and Data Science specialization builds skills that data-driven employers test at analytics manager and CDO levels:\n\n**Technical skills:**\n- Machine Learning: supervised and unsupervised ML, model selection and evaluation, hyperparameter tuning, and production ML deployment\n- Data Engineering: Python and R for data pipelines, data scraping, API integration, and ETL process management\n- Visualization and BI: Tableau and Power BI dashboard design, data storytelling, and executive-level insight communication\n- Unstructured Data: NLP text mining, sentiment analysis, social media data extraction, and unstructured data governance\n\n**Applied skills:**\n- Business Analytics: A/B testing design, causal inference, prescriptive modelling, and analytics ROI measurement for leadership\n- Data Strategy: building data governance frameworks, analytics team design, and analytics centre of excellence development\n\n**Soft skills:** Translating complex model outputs into business recommendations for non-technical executives, managing cross-functional analytics projects, presenting data strategy and analytics roadmaps to CDOs and CEOs."
+    },
+    "comparisons": {
+      "body": "Comparing MUJ Online MBA Analytics and Data Science against peers:\n\n**vs Amity Online MBA Business Analytics:** Amity is NAAC A+ and NIRF #22 at Rs 2,25,000. Amity Business Analytics covers statistical methods and business intelligence with depth. MUJ Analytics and Data Science covers programming, advanced machine learning, and unstructured data analysis — a more technical analytics profile. For candidates targeting data science leadership, MUJ's more technical curriculum is a better fit. For BI-focused analytics roles, Amity is competitive.\n\n**vs NMIMS Online MBA Operations and Data Sciences:** NMIMS is NAAC A++ and NIRF Management #24 at Rs 1,96,000-2,20,000. NMIMS Operations and Data Sciences combines operations management with data science — a hybrid credential. MUJ Analytics is more purely data science-focused. NMIMS brand is stronger overall. MUJ's lower fee, Super/Dual spec flexibility, and Coursera Plus access are cost-performance advantages.\n\n**vs LPU Online MBA Data Science:** LPU is NAAC A++ at competitive fees. LPU's data science MBA covers analytics and BI. MUJ's Super/Dual spec gives a business domain overlay on the data science credential that LPU does not offer. The ability to pair Analytics with Finance, HR, or Marketing makes MUJ's credential more differentiated for domain-specific analytics roles."
+    },
+    "fees": {
+      "body": "The total program fee for the Manipal University Jaipur Online MBA in Analytics and Data Science can be paid through 2 options:\n\n**Option 1 — Semester-wise payment**: Rs 45,000 per semester, Rs 1,80,000 total across 4 semesters\n**Option 2 — Full upfront payment (discounted)**: Rs 1,53,000 one-time (Rs 1,80,000 standard less 15 percent fee concession)\n\nA one-time registration fee of Rs 500 applies at enrolment. MUJ does not charge separate exam fees per attempt, project evaluation fees, or admission processing fees beyond this.\n\nFor working professionals, MUJ offers a 24-month zero-cost EMI plan at approximately Rs 7,500 per month on the standard fee (Rs 6,375 per month on the discounted fee) through its NBFC lending partners.\n\n**Scholarships available** (non-stackable — pick one based on eligibility):\n- **Divyaang** (persons with disabilities): 20% discount with Divyaang certificate\n- **Defence personnel**: 20% discount with Service/IC number\n- **Manipal University Jaipur alumni** (UG or PG): 20% discount\n- **Government employees**: 10% discount with Govt ID\n- **Merit scholarship**: 10% discount for 80%+ marks in 10+2 or bachelor's\n\n**Coursera Plus bundled access** (MUJ differentiator): Enrolled MUJ students get Coursera Plus at Rs 3,999 (standard Rs 13,999 — a 70 percent discount). This includes 10,000+ courses from University of Virginia, University of Michigan, Johns Hopkins, University of California Irvine, and other top global universities.\n\nEdifyEdu reconfirms fees and scholarships with Manipal University Jaipur each quarter. Please reconfirm current offers and eligibility with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The Manipal University Jaipur degree certificate carries the Manipal University Jaipur name, the MBA designation, and identifies the online learning mode per UGC-DEB 2020 regulations. The Analytics and Data Science specialisation is noted on the marksheet and transcript. Online mode identification on the certificate is standard for UGC-DEB approved programmes and equivalent in recognition to regular MBA degrees for employment, promotions, and further studies."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from MUJ Online MBA Analytics and Data Science alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Priya Joshi",
+          "city": "Bangalore",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Machine learning and Python programming content had good depth — gave me tools I immediately applied in my data science role",
+          "disliked": "Deep learning and neural networks were not covered at the depth needed for senior data scientist roles at product companies",
+          "body": "I paired Analytics with Finance as my dual specialization targeting fintech analytics. The ML, EDA, and advanced machine learning subjects gave me solid Python and model-building skills. The Coursera Plus access was excellent — I completed the IBM Data Science Professional Certificate at Rs 3,999 total, which is listed on my LinkedIn. The Manipal brand was well recognised at HDFC Bank Analytics and Razorpay where I was shortlisted."
+        },
+        {
+          "name": "Sunil Kapoor",
+          "city": "Mumbai",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Business analytics and visualization subjects were the strongest — Power BI and Tableau skills are immediately employable",
+          "disliked": "LMS performance was slow when loading large Jupyter notebook files. Programming exercises were sometimes inaccessible during peak times",
+          "body": "I work in business intelligence at an e-commerce company. The visualization and business analytics subjects were the most applicable. Paired Analytics with Operations for a supply chain analytics profile. The Coursera Plus Google Data Analytics certificate gave me a credential recognised by analytics hiring managers at Amazon and Flipkart. MUJ NAAC A+ was verified without issues in background checks."
+        },
+        {
+          "name": "Kavitha Raman",
+          "city": "Chennai",
+          "year": 2024,
+          "rating": 3,
+          "liked": "Unstructured data analysis and text mining content introduced me to NLP methods I had not previously studied",
+          "disliked": "Career support for data science roles was non-existent. No connections with analytics teams at tech companies or consulting firms",
+          "body": "The analytics content was technically sound. Programming, ML, and visualization subjects had real practical depth. My major criticism is placement — the career portal is not useful for data science roles. There are no structured connections to analytics hiring at technology companies, banks, or consulting firms. I found my current data analyst role at a healthcare company through LinkedIn. Join for the credential and Coursera Plus, not placement support."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Can I choose dual specialization with the MUJ Online MBA in Analytics?",
+        "answer": "Yes. Analytics pairs powerfully with any domain specialization through the Super/Dual model. Recommended combinations: Analytics plus Finance (quantitative finance and fintech analytics), Analytics plus HRM (people analytics and workforce planning), Analytics plus Marketing (consumer insights and growth analytics), Analytics plus Operations (Industry 4.0 and data-driven manufacturing). The dual spec is included in the standard fee and both specializations appear on your marksheet."
+      },
+      {
+        "question": "Is Coursera Plus access included or charged separately?",
+        "answer": "Coursera Plus is available to MUJ students at Rs 3,999 per year (standard Rs 13,999 — 70% off). For Analytics students, Coursera Plus is particularly valuable — IBM Data Science Professional Certificate, Google Data Analytics, Meta Marketing Analytics, and deep learning specializations from deeplearning.ai are accessible at this price. The Rs 3,999 access is one of MUJ's strongest practical differentiators for analytics students."
+      },
+      {
+        "question": "What scholarships are available for the MUJ Online MBA?",
+        "answer": "Five scholarship categories: 20% for Divyaang individuals, 20% for Defence personnel, 20% for MUJ alumni, 10% for Government employees, and 10% merit scholarship for 80%+ marks. These are non-stackable. Plus, full upfront payment gets a 15% fee concession — Rs 1,80,000 becomes Rs 1,53,000."
+      },
+      {
+        "question": "What salary can Analytics and Data Science MBA graduates from MUJ expect?",
+        "answer": "Data scientists and analytics managers with 3-6 years of experience and this MBA earn Rs 12-25 lakh at technology and e-commerce companies. BI managers and data product managers earn Rs 14-28 lakh. Head of Analytics and VP Data Science roles pay Rs 25-50 lakh. The dual specialization with a business domain (Finance, Marketing, Operations) significantly improves earning potential for domain-specific analytics roles."
+      },
+      {
+        "question": "Is this MBA suitable for non-programmers transitioning into data analytics?",
+        "answer": "The Analytics and Data Science spec includes Programming in Data Science (Python/R) from the foundations. Professionals without prior programming experience can complete the programme but should expect a steeper learning curve in Sem 3 subjects. Completing a basic Python course on Coursera (accessible via the Rs 3,999 Coursera Plus access) before Sem 3 is advisable. The management foundation from Sem 1-2 is accessible to all backgrounds."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You are a data analyst, BI professional, or analytics manager wanting a NAAC A+ MBA that includes Python/R, machine learning, and business analytics under Rs 1.8 lakh.",
+        "You want to pair Analytics with a business domain (Finance, Marketing, HRM, Operations) for a domain-specific analytics credential using MUJ's Super/Dual spec.",
+        "You value Coursera Plus at Rs 3,999 to supplement your MBA with IBM Data Science, Google Analytics, or deeplearning.ai certifications at subsidised rates."
+      ],
+      "consider": [
+        "You need a pure data science credential for senior data scientist roles at product companies — PG programmes from IITs or BITS Pilani have stronger brand recognition for pure data science tracks.",
+        "You want the strongest management brand for analytics leadership roles at Tier 1 consulting firms — ISB or NMIMS analytics credentials carry more weight at McKinsey Analytics and BCG Gamma.",
+        "You are an advanced practitioner who needs research-grade ML depth — the MBA analytics curriculum is accessible but not equivalent to a dedicated data science postgraduate."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2050,
+    "generatedAt": "2026-04-21",
+    "batchNumber": 11,
+    "hasSyllabusData": true,
+    "phase72Updated": "2026-04-21"
+  }
+}
