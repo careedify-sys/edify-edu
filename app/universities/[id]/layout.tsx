@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { getUniversityById, formatFee } from '@/lib/data'
-import type { University } from '@/lib/data'
 import { getTitleName } from '@/lib/seo-title'
 
 // ─── Canonical SEO name per university ID (from keyword research doc) ───
@@ -182,29 +181,6 @@ function getSeoName(id: string, fullName: string): string {
   return n
 }
 
-
-// ── Schema helpers for this layout ──────────────────────────────────────
-function buildUniSchema(u: University, formattedFees: string) {
-  const breadcrumb = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home',         item: 'https://edifyedu.in' },
-      { '@type': 'ListItem', position: 2, name: 'Universities', item: 'https://edifyedu.in/universities' },
-      { '@type': 'ListItem', position: 3, name: u.name,         item: `https://edifyedu.in/universities/${u.id}` },
-    ],
-  }
-  const org = {
-    '@context': 'https://schema.org',
-    '@type': 'EducationalOrganization',
-    name: u.name,
-    url: `https://edifyedu.in/universities/${u.id}`,
-    description: u.description,
-    address: { '@type': 'PostalAddress', addressLocality: u.city, addressRegion: u.state, addressCountry: 'IN' },
-    accreditation: u.naac,
-  }
-  return [breadcrumb, org]
-}
 
 // Pre-render all university pages at build time (ISR-compatible)
 // This eliminates per-request cold starts for the 127 most important pages

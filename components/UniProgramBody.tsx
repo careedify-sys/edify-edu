@@ -125,9 +125,19 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
     { q: `What is the EMI for ${cleanName} ${program}?`, a: `EMI starts from ₹${u.emiFrom.toLocaleString()}/month. Multiple tenure options (6, 12, 24 months) available via EdifyEdu-partnered NBFCs: Fibe, GrayQuest, Techfino, and Avanse.` },
   ]
 
+  // Use content JSON FAQs for schema when available — keeps visible content and structured data in sync
+  const schemaFaqs = s?.faqs?.length
+    ? s.faqs.map(f => ({ q: f.question, a: f.answer }))
+    : faqs
+
+  // Use content JSON reviews for schema when available — falls back to UNIVERSITY_REVIEWS
+  const schemaReviews = s?.reviews?.items?.length
+    ? s.reviews.items.map(r => ({ name: r.name, city: r.city, year: r.year, rating: r.rating, body: r.body || r.liked || '' }))
+    : (UNIVERSITY_REVIEWS[u.id] || []).slice(0, 5).map(r => ({ name: r.name, city: r.city, rating: r.rating, body: r.review }))
+
   return (
     <>
-      <SchemaBlock u={u} pd={pd} program={program} programSlug={programSlug} coupon={coupon} faqs={faqs} />
+      <SchemaBlock u={u} pd={pd} program={program} programSlug={programSlug} coupon={coupon} faqs={schemaFaqs} reviews={schemaReviews} />
       <AssuredMarquee />
 
       <div className="page-shell">

@@ -26,7 +26,27 @@ export async function generateMetadata(
     title,
     description,
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/mba` },
-    openGraph: { title, description, type: 'website' },
+    openGraph: {
+      title,
+      description,
+      type: 'website',
+      url: `https://edifyedu.in/universities/${u.id}/mba`,
+      siteName: 'EdifyEdu',
+      images: [
+        {
+          url: 'https://edifyedu.in/og.png',
+          width: 1200,
+          height: 630,
+          alt: `${u.name} Online MBA — EdifyEdu`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['https://edifyedu.in/og.png'],
+    },
     robots: { index: true, follow: true },
   }
 }

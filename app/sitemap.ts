@@ -14,10 +14,20 @@
 //   0.65 everything else
 
 import { MetadataRoute } from 'next'
-import { readFileSync } from 'fs'
+import { readFileSync, statSync } from 'fs'
 import { join } from 'path'
 import { getPublishedPosts } from '@/lib/blog'
 import { GUIDES } from '@/lib/guides'
+
+// Returns the file mtime of a page-content JSON, or now as fallback
+function getContentLastMod(uniSlug: string, program: string): Date {
+  const filePath = join(process.cwd(), 'lib', 'data', 'page-content', `${uniSlug}-${program}.json`)
+  try {
+    return statSync(filePath).mtime
+  } catch {
+    return new Date()
+  }
+}
 
 const BASE = 'https://edifyedu.in'
 
@@ -79,9 +89,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ── Registry pages from valid-urls.json ───────────────────────────────────
   const registryPages: MetadataRoute.Sitemap = loadValidUrls().map(path => {
     const { priority, freq } = urlMeta(path)
+
+    // For /universities/{slug}/mba paths, use content JSON file mtime as lastmod
+    const mbaMatch = path.match(/^\/universities\/([^/]+)\/mba$/)
+    const lastModified = mbaMatch ? getContentLastMod(mbaMatch[1], 'mba') : now
+
     return {
       url: `${BASE}${path}`,
-      lastModified: now,
+      lastModified,
       changeFrequency: freq,
       priority,
     }
