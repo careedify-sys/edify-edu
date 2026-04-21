@@ -232,3 +232,22 @@ Do not fire Batch N+1 until user has confirmed Batch N renders cleanly on mobile
 3. Run `npx tsc --noEmit` — must pass clean before committing.
 4. Run `node scripts/fix-online-online.js --apply` — must show 0 modifications.
 5. Do NOT derive routing slugs from display names at render time. Always use `specSlug(s)` from `lib/data.ts`.
+
+---
+
+## UNIVERSAL EMI LANGUAGE RULE (Phase 7 Batch 12 — 2026-04-21)
+
+**Problem:** Earlier content named specific marketing partners (Jaro Education, upGrad, Online Manipal, etc.) or NBFC partners (Avanse, GrayQuest, Fibe) in EMI sections. This creates legal and reputational risk and is factually unreliable as partner agreements change.
+
+**Rule:** Every Indian online MBA uni routes EMI through external marketing partners, not directly through the university. This is standard practice for online MBA enrolment.
+
+Content must say:
+- For INTEREST-BEARING EMI (SSODL, most unis): "EMI is available through the university's marketing partner. This is interest-bearing EMI, not zero-cost. Contact our counsellor for current EMI tenure options and approval terms."
+- For ZERO-COST EMI (MUJ, NMIMS): "24-month zero-cost EMI is available through the university's marketing partner. Contact our counsellor for current EMI terms and NBFC partner details."
+
+**Do NOT name:**
+- Specific marketing partners: Jaro Education, upGrad, Online Manipal, Emeritus, etc.
+- Specific NBFC partners: Avanse, GrayQuest, Fibe, Propelld, etc.
+- Use generic "marketing partner" / "NBFC partners" only.
+
+**How to apply:** Apply this rule to all new spec pages, all university MBA pages, and any content revision involving fee or EMI sections. Grep new content for partner names before committing.

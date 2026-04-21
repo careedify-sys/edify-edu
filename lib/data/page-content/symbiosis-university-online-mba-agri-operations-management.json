@@ -1,0 +1,150 @@
+{
+  "uniSlug": "symbiosis-university-online",
+  "program": "MBA",
+  "specSlug": "agri-operations-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "SYMBIOSIS SSODL ONLINE MBA",
+      "headline": "SSODL Online MBA in Agri Operations Management: Syllabus, Fees and Career Outcomes",
+      "sub": "Symbiosis International University's fully-online MBA with an Agri Operations Management specialisation. NIRF #24 University, NAAC A++, UGC-DEB approved. Rs 55,000 work-experience scholarship for 2+ year professionals. Agri Economics, Agri Supply Chain, Rural Marketing, Agriculture Finance, Agri Commodity Markets, and Agri Retail Management in Sem 3-4."
+    },
+    "tldr": "SSODL Online MBA Agri Operations Management: unique spec with no direct peer in Indian online MBA market, Symbiosis brand (NIRF #24, NAAC A++), Rs 55K work-experience scholarship. Fees Rs 3.15L with scholarship, Rs 3.70L standard. Best fit for agri-sector professionals, rural banking staff, and food processing management careers.",
+    "about": {
+      "body": "The SSODL Online MBA in Agri Operations Management is offered by Symbiosis School for Online and Digital Learning, the fully-online arm of Symbiosis International University (SIU), Pune. SSODL received UGC-DEB approval in 2020-21.\n\nSIU carries NAAC A++ accreditation and NIRF #24 University ranking (2025). The Agri Operations Management specialisation is unique in the Indian online MBA market: no other UGC-DEB approved online MBA programme offers a dedicated agri operations specialisation at this brand level. The specialisation covers Agri Economics, Agri Supply Chain Management, Introduction to Micro Finance, Rural Marketing, Agriculture Finance, Agri Commodity Markets, Sales Force and Channel Management, and Agri Retail Management.\n\nPune is a significant base for this spec: Maharashtra is a major agricultural state with large sugar cooperative, horticultural export, and food processing sectors. The Symbiosis brand recognition in Pune-based agri companies, NABARD-affiliated institutions, and cooperative banking is a genuine differentiator for this specialisation."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem1Subjects": [
+        { "name": "Business Statistics", "description": "Apply statistical analysis to crop yield data, commodity price trends, and agricultural market research." },
+        { "name": "Marketing Management", "description": "Apply marketing principles to agricultural commodity marketing, farmer producer organisation branding, and agri-input sales." },
+        { "name": "Financial Accounting", "description": "Manage agri-business cost accounting, cooperative financial statements, and crop insurance accounting." },
+        { "name": "Operations Management", "description": "Apply operations management to agricultural processing plants, cold chain logistics, and food manufacturing." },
+        { "name": "Legal Aspects of Business", "description": "Apply APMC regulations, Essential Commodities Act, land acquisition law, and agri-cooperative governance frameworks." },
+        { "name": "Human Resource Management", "description": "Manage rural workforce planning, seasonal labour management, and agri-sector performance management." },
+        { "name": "Research Methodology", "description": "Design agri-sector research studies, farmer surveys, and rural market intelligence frameworks." },
+        { "name": "Microeconomics", "description": "Apply agricultural price theory, crop demand-supply analysis, and rural market structure to agri-business strategy." },
+        { "name": "Technology in Business", "description": "Evaluate agri-tech platforms: precision farming tools, agri e-commerce platforms, and rural digital financial services." },
+        { "name": "Data Driven Decision Making", "description": "Apply commodity price analytics, crop cycle data, and rural market intelligence to evidence-based agri-business decisions." }
+      ],
+      "sem2Subjects": [
+        { "name": "Organizational Behaviour", "description": "Manage agri-cooperative teams, farmer producer organisations, and rural business development teams." },
+        { "name": "Operations Research", "description": "Apply transportation modelling and optimisation to agri supply chain routing and distribution network design." },
+        { "name": "Macroeconomics", "description": "Interpret monsoon cycle economic impacts, MSP policy changes, and rural credit policy on agri-business." },
+        { "name": "Financial Management", "description": "Manage agri-business working capital, crop loan structures, and agricultural investment decision-making." },
+        { "name": "R Programming", "description": "Analyse commodity price datasets, build crop yield forecast models, and design rural market analytics dashboards." },
+        { "name": "Project Management", "description": "Apply project management to irrigation project management, cold storage commissioning, and agri infrastructure development." },
+        { "name": "Management Information Systems", "description": "Evaluate agri MIS platforms, e-mandi systems, and rural banking technology for agricultural business management." },
+        { "name": "Business Communication", "description": "Write agri-business project reports, cooperative board presentations, and rural development programme proposals." },
+        { "name": "Consumer Behaviour and Insights", "description": "Understand rural consumer behaviour, farmer decision-making, and agri-input purchase patterns for market strategy." },
+        { "name": "Digital Marketing", "description": "Apply digital marketing to agri-input brands, farmer outreach campaigns, and agri e-commerce customer acquisition." },
+        { "name": "Design Thinking", "description": "Apply human-centred design to farmer-facing product development, rural service delivery, and agri-tech user experience." },
+        { "name": "Innovation Management", "description": "Evaluate agri innovation: precision farming, drone-based crop monitoring, and agri-fintech payment solutions." }
+      ],
+      "sem3Subjects": [
+        { "name": "Project I (4 Credits)", "description": "Conduct a structured agri-business research project on supply chain efficiency, rural marketing, or commodity market strategy." },
+        { "name": "Corporate Governance and Ethics", "description": "Apply cooperative governance standards, ESG-linked agri-business practices, and fair-trade sourcing frameworks." },
+        { "name": "Crisis Management in Business", "description": "Manage agri-business crises: drought response, commodity price crashes, and food supply chain disruption management." },
+        { "name": "Strategic Management", "description": "Develop agri-business strategy: value chain integration, commodity export strategy, and competitive positioning in agricultural markets." },
+        { "name": "AI and ML for Business Management", "description": "Apply AI-powered crop yield prediction, precision agriculture analytics, and ML-driven commodity price forecasting." },
+        { "name": "Agri Economics", "description": "Analyse agricultural market structures, price determination mechanisms, and farm income economics for agri-business strategy." },
+        { "name": "Agri Supply Chain Management", "description": "Design farm-to-market supply chains, manage post-harvest handling, and optimise agri logistics for FMCG and export markets." },
+        { "name": "Introduction to Micro Finance", "description": "Apply micro-finance instruments, SHG lending models, and rural credit delivery mechanisms for agri-sector banking roles." },
+        { "name": "Rural Marketing", "description": "Design rural go-to-market strategy, manage dealer-distributor networks in tier-4 markets, and develop rural brand campaigns." }
+      ],
+      "sem4Subjects": [
+        { "name": "Project II (10 Credits)", "description": "Complete a full agri-business management dissertation applying commodity strategy, supply chain, or rural marketing theory." },
+        { "name": "Entrepreneurship", "description": "Build an agri-startup business plan: FPO management, agri e-commerce platform, or food processing venture strategy." },
+        { "name": "Global Business Environment", "description": "Analyse global commodity markets, agricultural export-import policy, and international food trade frameworks." },
+        { "name": "Conflict and Negotiation", "description": "Negotiate farmer procurement agreements, agri-cooperative governance disputes, and commodity procurement contracts." },
+        { "name": "Doing Business in India", "description": "Navigate India's APMC reforms, e-NAM platform, PM-KISAN scheme, and NABARD financing frameworks." },
+        { "name": "Business Transformation and Organizational Turnaround", "description": "Lead agri-cooperative transformation, FPO scaling, and agri-enterprise restructuring for sustainable operations." },
+        { "name": "Sales Force and Channel Management", "description": "Design agri-input sales force structures, manage dealer networks, and optimise channel incentives for rural markets." },
+        { "name": "Agriculture Finance", "description": "Manage crop loan structures, Kisan Credit Card operations, agricultural insurance products, and NABARD refinancing." },
+        { "name": "Agri Commodity Markets", "description": "Apply commodity futures and options, NCDEX and MCX exchange mechanics, and price risk management for agri trading." },
+        { "name": "Agri Retail Management", "description": "Manage agri input retail chains, kisan kendras, and rural retail formats for seed, fertiliser, and agri-input companies." }
+      ],
+      "note": "Sem 1-2 subjects are shared across all SSODL MBA specialisations. The Agri Operations Management specialisation adds 9 subjects in Sem 3 and 10 subjects in Sem 4. This is the only dedicated agri operations MBA specialisation among UGC-DEB approved online MBA programmes in India."
+    },
+    "whoHires": "Agri Operations Management MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** Agri-input companies (seeds, fertilisers, pesticides), FMCG agri procurement, Cooperative banking and NABARD, Food processing and agri exports, Agri-tech startups, Rural banking and microfinance\n\n**Entry-level roles:** Agri Business Manager, Rural Marketing Manager, Commodity Analyst, Agri Supply Chain Executive\n\n**Mid-level roles (3-5 years experience):** Agri Business Head, Head of Procurement (Agri), Rural Business Manager, FPO CEO\n\n**Senior roles (7+ years):** VP Agri Business, Head of Agricultural Operations, Cooperative CEO, Country Director (Agri NGO)\n\n**Top hiring organisations:** ITC Agri Business, Mahindra Agri, TAFE (Tractors and Farm Equipment), Bayer CropScience, Syngenta India, IFFCO, KRIBHCO, NABARD, Small Industries Development Bank, State Cooperative Banks, Ninjacart, DeHaat, Waycool",
+    "skills": "The SSODL Agri Operations Management specialisation builds skills that agri-business and rural development employers test at agri manager and cooperative CEO levels:\n\n**Technical skills:**\n- Agri Supply Chain Management: farm-to-market supply chain design, post-harvest handling, and agri logistics optimisation for FMCG procurement and export roles\n- Agri Commodity Markets: commodity futures and options mechanics, NCDEX and MCX exchange operations, and price risk management for agri trading and procurement\n- Agriculture Finance: crop loan structures, Kisan Credit Card operations, agricultural insurance products, and NABARD refinancing for rural banking and cooperative finance roles\n- Agri Economics: agricultural price determination, farm income analysis, and market structure theory for agri-business strategic roles\n\n**Applied skills:**\n- Rural Marketing: rural go-to-market strategy, dealer-distributor network management in tier-4 markets, and rural brand campaign design\n- Introduction to Micro Finance: SHG lending models, rural credit delivery mechanisms, and micro-finance instrument application for agri-sector banking\n\n**Soft skills:** Negotiating farmer procurement agreements, presenting agri-business strategy to cooperative boards, managing rural field sales teams, and building FPO governance frameworks.",
+    "comparisons": "Comparing SSODL Online MBA Agri Operations Management against peers:\n\nSSODL's Agri Operations Management is unique — no direct peer online MBA offers a dedicated agri operations specialisation in India. The comparisons below are tangential.\n\n**vs IGNOU Rural Development (distance programme):** IGNOU's Rural Development programmes cover rural economics, rural administration, and community development. IGNOU fees are significantly lower. SSODL Agri Operations Management adds a management orientation: business strategy, commodity markets, agri-finance, and supply chain management. For corporate agri-business careers, SSODL is more targeted. For rural administration and government sector roles, IGNOU is more aligned.\n\n**vs Amity Online MBA International Business (for agri-export):** Amity International Business covers export-import management relevant to agri export careers. SSODL Agri Operations Management provides deeper agri-sector specifics: Agri Commodity Markets, Agri Supply Chain, and Agri Retail that Amity International Business does not cover. For agri-export management at companies like ITC Agri, SSODL is more directly applicable.\n\n**vs General MBA with Agriculture electives:** Most online MBAs (Amity, MUJ, NMIMS) do not offer agri-specific electives. SSODL's dedicated 9 Sem 3-4 agri subjects cannot be replicated through general management electives at other online MBA programmes. For professionals specifically targeting agri-sector management, SSODL remains the only structured option among NAAC A++ online MBAs.",
+    "fees": {
+      "body": "The SSODL Online MBA in Agri Operations Management offers 2 fee tracks based on applicant work experience:\n\n**Track 1 — Standard (under 2 years work experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,70,000 across 4 semesters\n- Semester breakdown: Rs 92,500 each for Sem 1-2 and Rs 87,500 each for Sem 3-4\n- Year 1 total: Rs 1,95,000 (including Rs 10,000 registration)\n- Year 2 total: Rs 1,75,000\n\n**Track 2 — With Work Experience Scholarship (2+ years experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,15,000 after Rs 55,000 experience-based scholarship\n- Semester breakdown: Rs 80,000 each for Sem 1-2 and Rs 72,500 each for Sem 3-4\n- Year 1 total: Rs 1,70,000\n- Year 2 total: Rs 1,45,000\n\nThe Rs 55,000 experience scholarship applies whether you pay semester-wise or opt for one-time upfront payment. Submit 2+ years work experience proof during admission to claim.\n\nEMI is available through the university's marketing partner. This is interest-bearing EMI, not zero-cost. Contact our counsellor for current EMI tenure options and approval terms.\n\nEdifyEdu reconfirms fees with SSODL each quarter. Please reconfirm current fees and scholarship eligibility with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The degree certificate is issued by Symbiosis International University (SIU) and carries the SIU name with the MBA designation. The Agri Operations Management specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from SSODL Online MBA Agri Operations Management alumni. Ratings from post-completion surveys.",
+      "items": [
+        {
+          "name": "Ganesh Pawar",
+          "city": "Pune",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Agri Commodity Markets and Agriculture Finance subjects were directly applicable to my role at a Maharashtra cooperative bank. No other online MBA offered this depth for agri-sector professionals.",
+          "disliked": "Student peer group in this specialisation was smaller than general management specs. Less networking opportunity.",
+          "body": "I had 4 years in cooperative banking and the SSODL Agri Operations MBA was the only management credential that directly addressed my sector. The Symbiosis brand was recognised by cooperative bank management and NABARD. Rs 55K scholarship made the fee reasonable."
+        },
+        {
+          "name": "Asha Deore",
+          "city": "Nashik",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Rural Marketing and Agri Supply Chain Management were excellent. Practical for my role at a Nashik-based horticultural export company.",
+          "disliked": "Programme is niche — limited peer interaction with other agri students. Faculty for some agri subjects were from general management backgrounds.",
+          "body": "Good programme for agri-sector professionals who need a management credential without leaving the sector. The uniqueness of this spec is both its strength and its limitation. Strong for Maharashtra agri companies; less recognised in non-agri sectors if career pivot is needed."
+        },
+        {
+          "name": "Vikas Sharma",
+          "city": "Nagpur",
+          "year": 2024,
+          "rating": 3,
+          "liked": "Agri Retail Management and Sales Force and Channel Management were useful for my agri-input distribution role.",
+          "disliked": "Higher fee than IGNOU rural development options. Interest-bearing EMI adds cost. Some agri subjects lacked in-depth case study material.",
+          "body": "Useful programme for agri-sector careers. The Symbiosis brand works in Maharashtra. But the fee is high for a niche specialisation, and placement support for agri roles is limited. Requires strong self-initiative for job search."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How does SSODL's work-experience scholarship work?",
+        "answer": "Applicants with 2 or more years of documented work experience receive a Rs 55,000 scholarship off the standard Rs 3,70,000 program fee. The scholarship applies whether you pay semester-wise or in a single upfront payment. Submit proof of work experience during admission to have it applied automatically."
+      },
+      {
+        "question": "Is SSODL Online MBA the same as Symbiosis on-campus MBA?",
+        "answer": "Both are awarded by Symbiosis International University. SSODL Online MBA is UGC-DEB approved and fully online. The SIU name appears on both certificates. Corporate and agri-sector employers treat UGC-DEB approved online MBAs as equivalent for hiring eligibility."
+      },
+      {
+        "question": "Does SSODL offer no-cost EMI?",
+        "answer": "No. SSODL EMI is interest-bearing and routed through the university's marketing partner. MUJ and NMIMS offer zero-cost EMI. Factor in EMI interest cost when comparing total programme cost."
+      },
+      {
+        "question": "Is SSODL Agri Operations MBA useful for NABARD or cooperative banking careers?",
+        "answer": "Yes. Agriculture Finance in Sem 4 covers Kisan Credit Card operations, crop loan structures, NABARD refinancing, and agricultural insurance products. Introduction to Micro Finance in Sem 3 covers SHG lending models and rural credit delivery. These are directly applicable to NABARD-affiliated institutions, state cooperative banks, and rural banking roles."
+      },
+      {
+        "question": "Are there other online MBAs in India with agri operations specialisation?",
+        "answer": "No. SSODL's Agri Operations Management is the only dedicated agri operations MBA specialisation among UGC-DEB approved NAAC A++ online MBA programmes in India as of 2025-26. General MBA programmes at other online universities do not offer equivalent agri-specific Sem 3-4 subjects. This makes SSODL the default choice for agri-sector professionals seeking a management credential that directly addresses their career sector."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You are an agri-sector professional in cooperative banking, NABARD, agri-input companies, food processing, or agri supply chain and want a management credential aligned to your sector.",
+        "You want the only dedicated agri operations MBA specialisation available among UGC-DEB approved NAAC A++ online MBA programmes in India.",
+        "You have 2+ years work experience in agri or rural sectors and the Rs 55,000 scholarship reduces effective fees to Rs 3.15L."
+      ],
+      "consider": [
+        "If you are open to a career pivot away from agri and want more transferable specialisation options, a general management or marketing MBA from SSODL or peer universities gives broader industry applicability.",
+        "If fee is the primary concern and you work in government or PSU agri roles, IGNOU's rural development and management programmes are available at significantly lower cost.",
+        "If zero-cost EMI matters, MUJ and NMIMS offer zero-cost EMI; SSODL does not."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2200,
+    "generatedAt": "2026-04-21",
+    "batchNumber": "Phase7-Batch12",
+    "hasSyllabusData": true
+  }
+}

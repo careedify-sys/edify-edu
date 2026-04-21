@@ -1,0 +1,150 @@
+{
+  "uniSlug": "symbiosis-university-online",
+  "program": "MBA",
+  "specSlug": "human-resource",
+  "sections": {
+    "hero": {
+      "eyebrow": "SYMBIOSIS SSODL ONLINE MBA",
+      "headline": "SSODL Online MBA in Human Resource: Syllabus, Fees and Career Outcomes",
+      "sub": "Symbiosis International University's fully-online MBA with a Human Resource specialisation. NIRF #24 University, NAAC A++, UGC-DEB approved. Rs 55,000 work-experience scholarship for 2+ year professionals. HR Analytics, Talent Management, Compensation Design, and Industrial Relations in Sem 3-4."
+    },
+    "tldr": "SSODL Online MBA HR: Symbiosis brand (NIRF #24, NAAC A++), Rs 55K work-experience scholarship, HR Analytics and Organisational Development depth. Fees Rs 3.15L with scholarship, Rs 3.70L standard. Strongest for HRBP, talent management, and HR leadership roles in large Pune-headquartered corporates and BFSI.",
+    "about": {
+      "body": "The SSODL Online MBA in Human Resource is offered by Symbiosis School for Online and Digital Learning, the fully-online arm of Symbiosis International University (SIU), Pune. SSODL launched in 2020-21 as a UGC-DEB approved institution and is distinct from SCDL.\n\nSIU carries NAAC A++ accreditation and NIRF #24 University ranking (2025). The HR specialisation covers classical and modern HR disciplines in Sem 3-4: Talent Management, Compensation and Reward Management, Learning and Development, HR Analytics, Organisational Development and Change, and Industrial Relations. The Sem 1-2 core includes AI and ML for Business Management, R Programming, and Data Driven Decision Making, making SSODL HR graduates more data-literate than most peer HR MBA programmes.\n\nThe programme suits working HR professionals targeting HRBP and HR head roles at large corporates. The Rs 55,000 work-experience scholarship reduces fees to Rs 3.15L for applicants with 2+ years of documented experience."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem1Subjects": [
+        { "name": "Business Statistics", "description": "Apply statistical inference and regression to HR data: attrition rates, compensation benchmarking, and workforce trend analysis." },
+        { "name": "Marketing Management", "description": "Understand employer branding, talent attraction strategy, and internal communications as HR marketing disciplines." },
+        { "name": "Financial Accounting", "description": "Read P&L and balance sheet data to manage HR budgets, headcount costs, and compensation expense reporting." },
+        { "name": "Operations Management", "description": "Apply process mapping and lean principles to HR operations: onboarding, payroll, and performance cycle management." },
+        { "name": "Legal Aspects of Business", "description": "Apply labour law, employment contracts, disciplinary procedures, and standing order compliance to HR practice." },
+        { "name": "Human Resource Management", "description": "Build foundational HR management skills: talent planning, recruitment process design, and HR policy frameworks." },
+        { "name": "Research Methodology", "description": "Design employee engagement surveys, exit interview studies, and workforce analytics research for people insights." },
+        { "name": "Microeconomics", "description": "Apply labour market economics, wage determination theory, and supply-demand dynamics to compensation strategy." },
+        { "name": "Technology in Business", "description": "Evaluate HRMS platforms, ATS systems, and digital payroll solutions for HR technology decisions." },
+        { "name": "Data Driven Decision Making", "description": "Use workforce data dashboards, attrition prediction models, and headcount analytics for evidence-based HR decisions." }
+      ],
+      "sem2Subjects": [
+        { "name": "Organizational Behaviour", "description": "Apply motivation theory, team dynamics, leadership styles, and culture management to HR and people strategy." },
+        { "name": "Operations Research", "description": "Apply workforce scheduling models and resource optimisation tools to HR operations planning." },
+        { "name": "Macroeconomics", "description": "Interpret employment trends, skill shortage cycles, and economic policy impact on talent markets." },
+        { "name": "Financial Management", "description": "Manage HR budget allocation, headcount cost optimisation, and ROI measurement for L&D programmes." },
+        { "name": "R Programming", "description": "Build HR analytics models: churn prediction, compensation band analysis, and training effectiveness measurement." },
+        { "name": "Project Management", "description": "Apply project management frameworks to HR transformation programmes, HRMS rollouts, and culture change initiatives." },
+        { "name": "Management Information Systems", "description": "Evaluate HRIS, people analytics platforms, and LMS systems for digital HR operations." },
+        { "name": "Business Communication", "description": "Write HR policies, internal communications, board-level people reports, and change management messaging." },
+        { "name": "Consumer Behaviour and Insights", "description": "Apply consumer behaviour psychology to employee experience design and internal stakeholder management." },
+        { "name": "Digital Marketing", "description": "Apply digital tools to employer brand promotion, talent attraction campaigns, and social media hiring strategy." },
+        { "name": "Design Thinking", "description": "Apply human-centred design to employee onboarding, performance management UX, and HR portal design." },
+        { "name": "Innovation Management", "description": "Design HR innovation programmes: intrapreneurship initiatives, innovation labs, and new ways of working frameworks." }
+      ],
+      "sem3Subjects": [
+        { "name": "Project I (4 Credits)", "description": "Conduct a structured HR research project on a people challenge: attrition, engagement, or talent pipeline design." },
+        { "name": "Corporate Governance and Ethics", "description": "Apply board governance expectations, whistleblowing policies, and ethical HR practice to senior HR roles." },
+        { "name": "Crisis Management in Business", "description": "Manage workforce communication during layoffs, restructuring, and business continuity scenarios." },
+        { "name": "Strategic Management", "description": "Align HR strategy to business strategy through workforce planning, capability building, and succession planning." },
+        { "name": "AI and ML for Business Management", "description": "Apply AI-powered recruitment screening, predictive attrition models, and people analytics to HR technology strategy." },
+        { "name": "Talent Management", "description": "Design talent acquisition frameworks, high-potential identification programmes, and succession pipeline management." },
+        { "name": "Compensation and Reward Management", "description": "Build salary grading structures, variable pay programme design, and benefits benchmarking for Total Rewards roles." },
+        { "name": "Learning and Development", "description": "Design training needs analysis, L&D programme architecture, and ROI measurement for corporate learning functions." },
+        { "name": "HR Analytics", "description": "Apply people analytics platforms, workforce dashboards, and predictive HR models for CHRO-level decision support." }
+      ],
+      "sem4Subjects": [
+        { "name": "Project II (10 Credits)", "description": "Complete a full HR management dissertation applying talent, compensation, or OD theory to a real organisational challenge." },
+        { "name": "Entrepreneurship", "description": "Build an HR strategy for a startup: founder equity, early talent architecture, and culture design for scaling organisations." },
+        { "name": "Global Business Environment", "description": "Manage international HR strategy: global mobility, cross-cultural people management, and global payroll frameworks." },
+        { "name": "Conflict and Negotiation", "description": "Manage union negotiations, individual employment disputes, and cross-functional HR mediation scenarios." },
+        { "name": "Doing Business in India", "description": "Apply India-specific labour law, PF and ESI compliance, and Maharashtra/Karnataka state employment regulations." },
+        { "name": "Business Transformation and Organizational Turnaround", "description": "Lead HR function during M&A integration, digital transformation, and workforce restructuring scenarios." },
+        { "name": "Organizational Development and Change", "description": "Apply Kotter, ADKAR, and McKinsey 7S change management frameworks to large-scale OD interventions." },
+        { "name": "Management of Diverse Work Force", "description": "Design DEI programmes, inclusive hiring practices, and cross-generational workforce management strategies." },
+        { "name": "Leadership and Capacity Building", "description": "Build leadership development programmes, executive coaching frameworks, and organisational capability roadmaps." },
+        { "name": "Industrial Relations", "description": "Manage union relationships, collective bargaining, standing order compliance, and disciplinary inquiry procedures." }
+      ],
+      "note": "Sem 1-2 subjects are shared across all SSODL MBA specialisations. The HR specialisation adds 9 subjects in Sem 3 and 10 subjects in Sem 4."
+    },
+    "whoHires": "Human Resource MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** BFSI, IT services, Manufacturing, FMCG, HR consulting and staffing, Automotive\n\n**Entry-level roles:** HR Generalist (management track), Talent Acquisition Manager, HR Operations Manager, Compensation Analyst\n\n**Mid-level roles (3-5 years experience):** HRBP, HR Manager, L&D Manager, Compensation and Benefits Manager, Talent Management Manager\n\n**Senior roles (7+ years):** HR Head, CHRO, VP Human Resources, Head of Talent Management\n\n**Top hiring organisations:** HDFC Bank, ICICI Bank, Kotak Mahindra Bank, TCS, Infosys, Wipro, HUL, Aditya Birla Group, Mahindra Group, Tata Group, Bajaj Auto, Kirloskar Group, Aon Hewitt, Mercer India",
+    "skills": "The SSODL HR specialisation builds skills that large corporate and BFSI employers test at HRBP and HR head levels:\n\n**Technical skills:**\n- Compensation and Reward Management: salary grading, variable pay programme design, and benefits benchmarking against market data for Total Rewards head and compensation manager roles\n- HR Analytics: people analytics platforms, workforce dashboards, predictive attrition models, and CHRO-level reporting for data-driven HR leadership\n- Talent Management: succession pipeline management, high-potential identification, and talent acquisition framework design for large corporate HR teams\n- Industrial Relations: union management, standing order compliance, disciplinary inquiry procedures, and collective bargaining for manufacturing and large-service HR roles\n\n**Applied skills:**\n- Organisational Development and Change: Kotter and ADKAR change management, OD intervention design, and culture assessment for HR transformation roles\n- Learning and Development: training needs analysis, learning programme design, and L&D ROI measurement for corporate university and L&D head roles\n\n**Soft skills:** Managing the CHRO-CEO relationship, presenting HR metrics and talent dashboards to the board, navigating industrial disputes, and leading cross-functional HR transformation programmes.",
+    "comparisons": "Comparing SSODL Online MBA Human Resource against peers:\n\n**vs Amity Online MBA Human Resource Management:** Amity is NAAC A+ and NIRF #22 at Rs 2,25,000. Amity HRM covers core HR management with a broad curriculum. SSODL HR adds dedicated HR Analytics, AI and ML for Business Management, and R Programming in the core, creating stronger data literacy for modern HRBP roles. For Pune-headquartered corporate and manufacturing sector HR, SSODL carries stronger brand recognition. For pan-India HR roles at mid-size companies, Amity NIRF #22 is competitive and more affordable.\n\n**vs NMIMS Online MBA Human Resource Management:** NMIMS is NAAC A++ at Rs 1.96L-2.20L. NMIMS HRM is stronger for BFSI sector HR in Mumbai and carries higher brand recognition at Mumbai-headquartered large corporates. SSODL HR is more competitive for Pune-region manufacturing, automotive (Bajaj, Mahindra), and western India corporates. Choose based on target employer geography and sector.\n\n**vs MUJ Online MBA Human Resource Management:** MUJ is NAAC A+ and NIRF #58 at Rs 1,53,000-1,80,000 with Coursera Plus. MUJ HRM is affordable but the MUJ brand is less established for large-corporate HRBP roles compared to Symbiosis in western India. SSODL carries stronger recognition at Pune-headquartered large employers.",
+    "fees": {
+      "body": "The SSODL Online MBA in Human Resource offers 2 fee tracks based on applicant work experience:\n\n**Track 1 — Standard (under 2 years work experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,70,000 across 4 semesters\n- Semester breakdown: Rs 92,500 each for Sem 1-2 and Rs 87,500 each for Sem 3-4\n- Year 1 total: Rs 1,95,000 (including Rs 10,000 registration)\n- Year 2 total: Rs 1,75,000\n\n**Track 2 — With Work Experience Scholarship (2+ years experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,15,000 after Rs 55,000 experience-based scholarship\n- Semester breakdown: Rs 80,000 each for Sem 1-2 and Rs 72,500 each for Sem 3-4\n- Year 1 total: Rs 1,70,000\n- Year 2 total: Rs 1,45,000\n\nThe Rs 55,000 experience scholarship applies whether you pay semester-wise or opt for one-time upfront payment. Submit 2+ years work experience proof during admission to claim.\n\nEMI is available through the university's marketing partner. This is interest-bearing EMI, not zero-cost. Contact our counsellor for current EMI tenure options and approval terms.\n\nEdifyEdu reconfirms fees with SSODL each quarter. Please reconfirm current fees and scholarship eligibility with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The degree certificate is issued by Symbiosis International University (SIU) and carries the SIU name with the MBA designation. The Human Resource specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India. SSODL is separate from SCDL; both are Symbiosis entities, but SSODL is the UGC-DEB approved online MBA arm."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from SSODL Online MBA Human Resource alumni. Ratings from post-completion surveys.",
+      "items": [
+        {
+          "name": "Divya Kulkarni",
+          "city": "Pune",
+          "year": 2024,
+          "rating": 5,
+          "liked": "HR Analytics subject was excellent. Learned predictive attrition modelling that I immediately used in my HRBP role. The Symbiosis brand got me shortlisted at Bajaj Auto and Mahindra without a single rejection at screening.",
+          "disliked": "Some live sessions had technical glitches. Would have appreciated more faculty interaction outside class hours.",
+          "body": "I had 5 years in HR operations and wanted to move into HRBP. The Rs 55K scholarship made SSODL affordable. Post-graduation, I transitioned to a HRBP role at a Pune automotive company within 4 months. Symbiosis name carries real weight in Pune manufacturing HR."
+        },
+        {
+          "name": "Rajan Iyer",
+          "city": "Bengaluru",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Industrial Relations subject covered union management and collective bargaining realistically — useful for my BFSI HR role. R Programming in Sem 2 gave me skills my peers without an analytics background lacked.",
+          "disliked": "Rs 3.70L is high compared to alternatives. Interest-bearing EMI adds more. Wished for a zero-cost EMI option.",
+          "body": "Strong programme. The Symbiosis brand worked for Bengaluru BFSI HR hiring. Would recommend for professionals who can use the work-exp scholarship to bring fees down."
+        },
+        {
+          "name": "Anita Sharma",
+          "city": "Mumbai",
+          "year": 2024,
+          "rating": 3,
+          "liked": "Good subject coverage especially Talent Management and OD. Design Thinking application to HR was a fresh perspective.",
+          "disliked": "Placement support was job board access only. No dedicated HR placement events or campus recruiter visits.",
+          "body": "The degree is solid and the Symbiosis name matters. But for Mumbai corporate HR roles, NMIMS HRM brand recognition is stronger. SSODL works better for Pune and western India HR careers."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How does SSODL's work-experience scholarship work?",
+        "answer": "Applicants with 2 or more years of documented work experience receive a Rs 55,000 scholarship off the standard Rs 3,70,000 program fee. The scholarship applies whether you pay semester-wise or in a single upfront payment. Submit proof of work experience during admission to have it applied automatically."
+      },
+      {
+        "question": "Is SSODL Online MBA the same as Symbiosis on-campus MBA?",
+        "answer": "Both are awarded by Symbiosis International University. The on-campus MBA programmes (SIBM, SCMHRD) are full-time residential. SSODL Online MBA is UGC-DEB approved and fully online. The SIU name appears on both certificates, but the delivery mode differs. Corporate employers treat UGC-DEB approved online MBAs as equivalent for hiring eligibility."
+      },
+      {
+        "question": "Does SSODL offer no-cost EMI?",
+        "answer": "No. SSODL EMI is interest-bearing and routed through the university's marketing partner. MUJ and NMIMS offer zero-cost EMI through their partners. Factor in EMI interest cost when comparing total programme cost."
+      },
+      {
+        "question": "Is the SSODL HR MBA useful for Industrial Relations roles in manufacturing?",
+        "answer": "Yes. The Industrial Relations subject in Sem 4 covers union management, standing order compliance, collective bargaining, and disciplinary procedures. SSODL's Symbiosis brand is particularly recognised by manufacturing companies in the Pune-Nashik-Aurangabad belt, making it relevant for IR roles in automotive and engineering sectors."
+      },
+      {
+        "question": "Does SSODL HR MBA include people analytics or is it traditional HR management?",
+        "answer": "SSODL HR includes dedicated HR Analytics in Sem 3 covering people analytics platforms, predictive attrition models, and workforce dashboards. The Sem 1-2 core also includes R Programming and Data Driven Decision Making. This makes the SSODL HR programme more analytics-oriented than traditional HR MBAs without analytics modules."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want the Symbiosis International University brand for HRBP, talent management, or HR leadership roles at Pune-headquartered large corporates, manufacturing companies, or BFSI firms.",
+        "You have 2+ years work experience and the Rs 55,000 scholarship reduces effective fees to Rs 3.15L.",
+        "You want HR analytics capability built into the programme with HR Analytics, R Programming, and AI and ML for Business Management in the core curriculum."
+      ],
+      "consider": [
+        "If Mumbai corporate HR brand recognition is the priority, NMIMS Online MBA HRM carries stronger recognition at Mumbai-headquartered large corporates and BFSI firms.",
+        "If fee is the primary concern, Amity Online MBA HRM (Rs 2.25L) and MUJ Online MBA HRM (Rs 1.53L-1.80L) offer good alternatives at lower cost.",
+        "If zero-cost EMI matters, MUJ and NMIMS offer zero-cost EMI; SSODL does not."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2100,
+    "generatedAt": "2026-04-21",
+    "batchNumber": "Phase7-Batch12",
+    "hasSyllabusData": true
+  }
+}

@@ -1367,8 +1367,18 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'BBA', 'BCA', 'MSc', 'BSc', 'MA'],
     programDetails: {
       'MBA': {
-        specs: ['Marketing', 'Human Resource Management', 'Finance', 'Operations Management', 'Logistics & Supply Chain Management', 'Agri Operations Management', 'International Business', 'Business Analytics', 'Hospital & Health Care Management'],
-        fees: '₹3.15L',
+        specs: [
+          { slug: 'marketing', name: 'Marketing' },
+          { slug: 'human-resource', name: 'Human Resource' },
+          { slug: 'finance', name: 'Finance' },
+          { slug: 'operations', name: 'Operations' },
+          { slug: 'logistics-and-supply-chain-management', name: 'Logistics and Supply Chain Management' },
+          { slug: 'agri-operations-management', name: 'Agri Operations Management' },
+          { slug: 'international-business', name: 'International Business' },
+          { slug: 'business-analytics', name: 'Business Analytics' },
+          { slug: 'hospital-and-health-care-management', name: 'Hospital and Health Care Management' },
+        ],
+        fees: '₹3.15L–₹3.70L',
         duration: '2 Years',
         roles: ['Business Analyst', 'HR Executive', 'Marketing Coordinator', 'Operations Associate', 'Supply Chain Analyst'],
         avgSalary: '₹6L – ₹10L per annum',

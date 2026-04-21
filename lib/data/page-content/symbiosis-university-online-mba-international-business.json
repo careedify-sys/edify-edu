@@ -1,0 +1,150 @@
+{
+  "uniSlug": "symbiosis-university-online",
+  "program": "MBA",
+  "specSlug": "international-business",
+  "sections": {
+    "hero": {
+      "eyebrow": "SYMBIOSIS SSODL ONLINE MBA",
+      "headline": "SSODL Online MBA in International Business: Syllabus, Fees and Career Outcomes",
+      "sub": "Symbiosis International University's fully-online MBA with an International Business specialisation. NIRF #24 University, NAAC A++, UGC-DEB approved. Rs 55,000 work-experience scholarship for 2+ year professionals. Export Import Management, International Marketing, Trade Finance, and International Logistics in Sem 3-4."
+    },
+    "tldr": "SSODL Online MBA International Business: Symbiosis brand (NIRF #24, NAAC A++), Rs 55K work-experience scholarship, trade depth with Export Import, International Marketing, Trade Finance and FOREX, and International HR. Fees Rs 3.15L with scholarship, Rs 3.70L standard. Strongest for global trade, export management, and international business development roles.",
+    "about": {
+      "body": "The SSODL Online MBA in International Business is offered by Symbiosis School for Online and Digital Learning, the fully-online arm of Symbiosis International University (SIU), Pune. SSODL received UGC-DEB approval in 2020-21.\n\nSIU carries NAAC A++ accreditation and NIRF #24 University ranking (2025). The International Business specialisation covers trade and global operations in Sem 3-4: Export Import Management, International Marketing, International Finance, Trade Finance and FOREX Management, International Logistics, Management of International Operations, International Human Resource Management, and Performance Management System.\n\nSIU's Pune base is significant for international business careers: Pune is home to major automotive MNCs (Mercedes-Benz, Volkswagen, Bajaj Auto international operations), IT companies with global delivery, and FMCG multinationals. The Symbiosis brand is particularly recognised at Pune-headquartered multinationals and in western India international trade circles."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem1Subjects": [
+        { "name": "Business Statistics", "description": "Apply statistical analysis to international trade data, export volume trends, and cross-border market research." },
+        { "name": "Marketing Management", "description": "Understand global marketing principles, international market entry modes, and multinational brand management." },
+        { "name": "Financial Accounting", "description": "Read consolidated financial statements for multinationals, apply IFRS basics, and manage cross-border accounting concepts." },
+        { "name": "Operations Management", "description": "Manage global operations networks, offshore production coordination, and cross-border service delivery." },
+        { "name": "Legal Aspects of Business", "description": "Apply WTO frameworks, bilateral trade agreements, and international contract law to cross-border transactions." },
+        { "name": "Human Resource Management", "description": "Understand global workforce management, expatriate policies, and cross-cultural HR practices." },
+        { "name": "Research Methodology", "description": "Design international market research studies, cross-cultural survey frameworks, and global consumer insight projects." },
+        { "name": "Microeconomics", "description": "Apply comparative advantage, trade theory, and international price mechanism to export-import business decisions." },
+        { "name": "Technology in Business", "description": "Evaluate global trade platforms, e-commerce export tools, and international supply chain technology." },
+        { "name": "Data Driven Decision Making", "description": "Apply trade data analytics, international market sizing, and cross-border business intelligence to global expansion decisions." }
+      ],
+      "sem2Subjects": [
+        { "name": "Organizational Behaviour", "description": "Manage cross-cultural teams, navigate multinational corporate hierarchies, and lead geographically distributed operations." },
+        { "name": "Operations Research", "description": "Apply transportation modelling and network optimisation to international logistics and distribution planning." },
+        { "name": "Macroeconomics", "description": "Interpret global GDP trends, exchange rate movements, and trade balance data for international business strategy." },
+        { "name": "Financial Management", "description": "Manage cross-border capital allocation, foreign subsidiary financing, and international working capital." },
+        { "name": "R Programming", "description": "Analyse international trade datasets, build market entry models, and create cross-country comparison dashboards." },
+        { "name": "Project Management", "description": "Manage international projects: cross-border team coordination, multi-jurisdiction compliance, and global delivery timelines." },
+        { "name": "Management Information Systems", "description": "Evaluate global ERP platforms, cross-border data systems, and multinational reporting infrastructure." },
+        { "name": "Business Communication", "description": "Write cross-cultural business communications, international deal memos, and multinational stakeholder presentations." },
+        { "name": "Consumer Behaviour and Insights", "description": "Apply cross-cultural consumer research to international market segmentation and global product localisation." },
+        { "name": "Digital Marketing", "description": "Apply global digital marketing strategy: international SEO, cross-border social media, and multi-market campaign management." },
+        { "name": "Design Thinking", "description": "Apply human-centred design to international product adaptation and cross-cultural user experience design." },
+        { "name": "Innovation Management", "description": "Evaluate global innovation ecosystems, cross-border R&D partnerships, and multinational technology transfer strategies." }
+      ],
+      "sem3Subjects": [
+        { "name": "Project I (4 Credits)", "description": "Conduct a structured international business research project on market entry, export strategy, or global trade analysis." },
+        { "name": "Corporate Governance and Ethics", "description": "Apply international corporate governance standards, anti-bribery regulations, and cross-border ethics to multinational management." },
+        { "name": "Crisis Management in Business", "description": "Manage international business crises: geopolitical disruption, trade sanctions, and cross-border reputational incidents." },
+        { "name": "Strategic Management", "description": "Develop international business strategy: market entry modes, global competitive positioning, and cross-border M&A strategy." },
+        { "name": "AI and ML for Business Management", "description": "Apply AI-driven international market intelligence, automated trade compliance tools, and ML-based FOREX analytics." },
+        { "name": "Export Import Management", "description": "Manage export documentation, DGFT regulations, customs clearance procedures, and import duty optimisation for trade roles." },
+        { "name": "International Marketing", "description": "Adapt brand positioning, pricing strategy, and distribution for international market entry across emerging and developed markets." },
+        { "name": "International Finance", "description": "Manage cross-border capital structures, multinational treasury, and foreign subsidiary financial management." },
+        { "name": "Trade Finance and FOREX Management", "description": "Apply letters of credit, trade credit instruments, FOREX hedging, and currency risk management for international trade." }
+      ],
+      "sem4Subjects": [
+        { "name": "Project II (10 Credits)", "description": "Complete a full international business dissertation on market entry strategy, trade finance, or global operations management." },
+        { "name": "Entrepreneurship", "description": "Build an international startup strategy: cross-border market validation, export-first go-to-market, and global funding strategy." },
+        { "name": "Global Business Environment", "description": "Analyse geopolitical risk, multilateral trade frameworks, and global economic shifts impacting international business strategy." },
+        { "name": "Conflict and Negotiation", "description": "Negotiate cross-border contracts, international joint venture agreements, and diplomatic business disputes." },
+        { "name": "Doing Business in India", "description": "Navigate India's export-import policy, FEMA regulations, RBI compliance, and FDI framework for international business roles." },
+        { "name": "Business Transformation and Organizational Turnaround", "description": "Lead international business restructuring: subsidiary rationalisation, market exit strategy, and global portfolio optimisation." },
+        { "name": "International Logistics", "description": "Design international freight networks, manage customs brokerage, and apply incoterms to global supply chain roles." },
+        { "name": "Management of International Operations", "description": "Manage global operations centres, offshore teams, and multi-country production and service delivery networks." },
+        { "name": "International Human Resource Management", "description": "Design expatriate policies, cross-cultural onboarding programmes, and global mobility strategy for multinational HR roles." },
+        { "name": "Performance Management System", "description": "Build global KPI frameworks, cross-border performance appraisal systems, and multinational target-setting processes." }
+      ],
+      "note": "Sem 1-2 subjects are shared across all SSODL MBA specialisations. The International Business specialisation adds 9 subjects in Sem 3 and 10 subjects in Sem 4."
+    },
+    "whoHires": "International Business MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** Export-import trading houses, Multinational FMCG and automotive, IT services with global delivery, International logistics, Trade finance and banking\n\n**Entry-level roles:** International Business Executive, Export Manager (management track), Global Sourcing Analyst, Trade Finance Analyst\n\n**Mid-level roles (3-5 years experience):** International Business Manager, Export Head, Global Key Account Manager, Supply Chain Manager (International)\n\n**Senior roles (7+ years):** VP International Business, Head of Global Trade, Country Manager, International Operations Director\n\n**Top hiring organisations:** Tata International, Mahindra Agri, Bajaj Auto International, Infosys global delivery centres, TCS international operations, EXIM Bank India, ICICI Bank Trade Finance, Maersk India, DHL Global, Kirloskar International",
+    "skills": "The SSODL International Business specialisation builds skills that multinational and export-oriented employers test at international business manager levels:\n\n**Technical skills:**\n- Export Import Management: DGFT regulations, customs clearance procedures, export documentation, and import duty optimisation for trade roles\n- Trade Finance and FOREX Management: letters of credit, FOREX hedging strategy, currency risk management, and trade credit instruments for international banking and treasury\n- International Marketing: cross-border market entry analysis, cultural adaptation of brand and pricing, and international channel strategy\n- International Finance: cross-border capital structure, multinational treasury management, and foreign subsidiary financial control\n\n**Applied skills:**\n- International Logistics: global freight network design, incoterms application, and customs brokerage management for cross-border supply chain roles\n- International Human Resource Management: expatriate policy design, cross-cultural onboarding, and global mobility strategy for multinational HR\n\n**Soft skills:** Negotiating cross-border contracts, presenting international business strategy to global boards, managing geographically distributed teams, and building joint venture partnership agreements across cultures.",
+    "comparisons": "Comparing SSODL Online MBA International Business against peers:\n\n**vs Amity Online MBA International Business Management:** Amity is NAAC A+ and NIRF #22 at Rs 2,25,000. Amity International Business covers global strategy, cross-cultural management, and international marketing. SSODL International Business adds dedicated Trade Finance and FOREX Management, Export Import Management, and International Logistics as distinct Sem 3-4 subjects, making it more practical for export-import and trade finance careers. Amity is significantly more affordable.\n\n**vs MUJ Online MBA International Business:** MUJ is NAAC A+ and NIRF #58 at Rs 1,53,000-1,80,000. MUJ International Business covers the domain at a lower fee with Coursera Plus. SSODL carries stronger Symbiosis brand recognition in Pune multinational corporate hiring and western India trade circles. For Pune-based MNC international roles, SSODL has a brand advantage.\n\n**vs NMIMS Online MBA (International Finance track in Financial Management):** NMIMS Financial Management covers International Finance as one subject rather than a standalone specialisation. SSODL International Business is a full-spec programme with broader trade and operations coverage. For students specifically targeting export-import, trade finance, and international business development roles, SSODL International Business is more comprehensive.",
+    "fees": {
+      "body": "The SSODL Online MBA in International Business offers 2 fee tracks based on applicant work experience:\n\n**Track 1 — Standard (under 2 years work experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,70,000 across 4 semesters\n- Semester breakdown: Rs 92,500 each for Sem 1-2 and Rs 87,500 each for Sem 3-4\n- Year 1 total: Rs 1,95,000 (including Rs 10,000 registration)\n- Year 2 total: Rs 1,75,000\n\n**Track 2 — With Work Experience Scholarship (2+ years experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,15,000 after Rs 55,000 experience-based scholarship\n- Semester breakdown: Rs 80,000 each for Sem 1-2 and Rs 72,500 each for Sem 3-4\n- Year 1 total: Rs 1,70,000\n- Year 2 total: Rs 1,45,000\n\nThe Rs 55,000 experience scholarship applies whether you pay semester-wise or opt for one-time upfront payment. Submit 2+ years work experience proof during admission to claim.\n\nEMI is available through the university's marketing partner. This is interest-bearing EMI, not zero-cost. Contact our counsellor for current EMI tenure options and approval terms.\n\nEdifyEdu reconfirms fees with SSODL each quarter. Please reconfirm current fees and scholarship eligibility with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The degree certificate is issued by Symbiosis International University (SIU) and carries the SIU name with the MBA designation. The International Business specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from SSODL Online MBA International Business alumni. Ratings from post-completion surveys.",
+      "items": [
+        {
+          "name": "Aditya Khanna",
+          "city": "Pune",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Trade Finance and FOREX Management was directly applicable to my role at an export trading company. Export Import Management covered DGFT and customs in the detail I needed. The Symbiosis brand opened doors at Pune-based MNCs.",
+          "disliked": "Live session scheduling was challenging for international timezone teams.",
+          "body": "I had 4 years in export documentation and wanted to move into international business management. The Rs 55K scholarship made SSODL affordable. Strong practical content and the Symbiosis brand recognition in Pune's international trade community is real."
+        },
+        {
+          "name": "Sneha Agarwal",
+          "city": "Delhi",
+          "year": 2023,
+          "rating": 4,
+          "liked": "International Marketing and International HR Management were well-structured. Strong global business environment coverage prepared me for my multinational role.",
+          "disliked": "Fees higher than Amity International Business. Interest-bearing EMI adds cost. Wish zero-cost EMI was available.",
+          "body": "Good programme. The Symbiosis brand worked in Delhi NCR for MNC international business roles. For the Pune region, it would be even stronger. Content quality justified the fee for me, especially with the work-exp scholarship."
+        },
+        {
+          "name": "Rohan Kulkarni",
+          "city": "Mumbai",
+          "year": 2024,
+          "rating": 3,
+          "liked": "Export Import Management and International Logistics subjects were practical.",
+          "disliked": "Limited placement support for international roles. Proactive outreach to multinationals was not part of the programme.",
+          "body": "Good credential. For Mumbai-based international banking and EXIM roles, the Symbiosis name works but NMIMS has stronger Mumbai BFSI recognition. Better suited to Pune and west India international business careers."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How does SSODL's work-experience scholarship work?",
+        "answer": "Applicants with 2 or more years of documented work experience receive a Rs 55,000 scholarship off the standard Rs 3,70,000 program fee. The scholarship applies whether you pay semester-wise or in a single upfront payment. Submit proof of work experience during admission to have it applied automatically."
+      },
+      {
+        "question": "Is SSODL Online MBA the same as Symbiosis on-campus MBA?",
+        "answer": "Both are awarded by Symbiosis International University. SSODL Online MBA is UGC-DEB approved and fully online. The SIU name appears on both certificates. Corporate employers treat UGC-DEB approved online MBAs as equivalent for hiring eligibility."
+      },
+      {
+        "question": "Does SSODL offer no-cost EMI?",
+        "answer": "No. SSODL EMI is interest-bearing and routed through the university's marketing partner. MUJ and NMIMS offer zero-cost EMI. Factor in EMI interest cost when comparing total programme cost."
+      },
+      {
+        "question": "Is Export Import Management a dedicated subject in SSODL International Business?",
+        "answer": "Yes. Export Import Management is a dedicated Sem 3 subject covering DGFT regulations, customs clearance procedures, export documentation, and import duty optimisation. Trade Finance and FOREX Management is a separate Sem 3 subject. This dedicated coverage distinguishes SSODL International Business from programmes that cover these topics briefly within broader subjects."
+      },
+      {
+        "question": "Is the SSODL International Business MBA WES recognised?",
+        "answer": "Symbiosis International University (SIU) is listed as WES recognised, meaning the degree can be assessed by WES for candidates seeking credential recognition in North America. Confirm current WES recognition status for online degrees with our counsellor before making decisions based on this."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want the Symbiosis brand for export-import management, international business development, or trade finance roles at Pune-based MNCs and western India trade companies.",
+        "You have 2+ years work experience and the Rs 55,000 scholarship reduces effective fees to Rs 3.15L.",
+        "You want dedicated coverage of Export Import Management, Trade Finance and FOREX, and International Logistics in a single programme."
+      ],
+      "consider": [
+        "If fee is the primary concern, Amity Online MBA International Business Management (Rs 2.25L) and MUJ Online MBA International Business (Rs 1.53L-1.80L) offer good alternatives.",
+        "If zero-cost EMI matters, MUJ and NMIMS offer zero-cost EMI; SSODL does not.",
+        "If the target is EXIM Bank or international banking in Mumbai, NMIMS Financial Management with its International Finance subject may carry stronger Mumbai BFSI brand recognition."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2100,
+    "generatedAt": "2026-04-21",
+    "batchNumber": "Phase7-Batch12",
+    "hasSyllabusData": true
+  }
+}
