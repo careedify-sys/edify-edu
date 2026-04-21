@@ -14,62 +14,99 @@
     },
     "syllabus": {
       "hasData": true,
-      "sem1Subjects": [
-        { "name": "Business Statistics", "description": "Apply quantitative analysis to demand forecasting, inventory optimisation, and supply chain performance benchmarking." },
-        { "name": "Marketing Management", "description": "Understand demand-side market signals and channel requirements as inputs to supply chain network planning." },
-        { "name": "Financial Accounting", "description": "Manage supply chain cost accounting, logistics cost centres, and inventory valuation in financial reporting." },
-        { "name": "Operations Management", "description": "Build foundational operations and supply chain management skills: inventory control, capacity planning, and process flow design." },
-        { "name": "Legal Aspects of Business", "description": "Apply logistics contract law, customs regulations, 3PL agreement structures, and cross-border trade compliance." },
-        { "name": "Human Resource Management", "description": "Manage warehouse and logistics workforce planning, shift scheduling, and performance management for supply chain operations." },
-        { "name": "Research Methodology", "description": "Design supply chain research studies, logistics benchmarking frameworks, and data collection for operations improvement." },
-        { "name": "Microeconomics", "description": "Apply cost theory, economies of scale, and make-vs-outsource decision frameworks to supply chain strategy." },
-        { "name": "Technology in Business", "description": "Evaluate WMS, TMS, and SCM technology platforms for supply chain digitisation and logistics management." },
-        { "name": "Data Driven Decision Making", "description": "Apply supply chain analytics, inventory dashboards, and logistics KPI tracking to data-driven supply chain decisions." }
-      ],
-      "sem2Subjects": [
-        { "name": "Organizational Behaviour", "description": "Manage cross-functional supply chain teams, 3PL partner relationships, and cross-site coordination." },
-        { "name": "Operations Research", "description": "Apply transportation modelling, vehicle routing, and linear programming to logistics network optimisation." },
-        { "name": "Macroeconomics", "description": "Interpret commodity price cycles, global trade policy, and shipping market trends impacting supply chain costs." },
-        { "name": "Financial Management", "description": "Manage supply chain working capital, vendor payment terms, and logistics capex decisions." },
-        { "name": "R Programming", "description": "Build supply chain analytics models: inventory optimisation, demand forecasting, and route efficiency analysis in R." },
-        { "name": "Project Management", "description": "Apply project management to WMS implementations, 3PL transitions, and supply chain transformation projects." },
-        { "name": "Management Information Systems", "description": "Evaluate integrated supply chain platforms: ERP, WMS, TMS, and supply chain visibility tools." },
-        { "name": "Business Communication", "description": "Write supply chain reports, vendor proposals, and COO-level logistics performance presentations." },
-        { "name": "Consumer Behaviour and Insights", "description": "Translate consumer demand volatility and last-mile delivery expectations into supply chain planning requirements." },
-        { "name": "Digital Marketing", "description": "Apply digital commerce demand patterns and e-commerce fulfillment requirements to logistics network design." },
-        { "name": "Design Thinking", "description": "Apply human-centred design to logistics operations UX: warehouse layout, picker experience, and driver app design." },
-        { "name": "Innovation Management", "description": "Evaluate supply chain innovation: drone delivery, autonomous vehicles, dark stores, and robotic warehouse automation." }
-      ],
       "sem3Subjects": [
-        { "name": "Project I (4 Credits)", "description": "Conduct a structured supply chain research project on inventory optimisation, logistics cost reduction, or 3PL management." },
-        { "name": "Corporate Governance and Ethics", "description": "Apply ESG standards to supply chain sourcing decisions, supplier code of conduct, and responsible logistics practices." },
-        { "name": "Crisis Management in Business", "description": "Manage supply chain disruption: port strikes, raw material shortages, and natural disaster-driven logistics recovery." },
-        { "name": "Strategic Management", "description": "Design supply chain network strategy: sourcing footprint, make-vs-buy, and global distribution network planning." },
-        { "name": "AI and ML for Business Management", "description": "Apply AI-driven demand forecasting, ML-based inventory replenishment, and autonomous supply chain decision-making concepts." },
-        { "name": "Supply Chain Management", "description": "Apply integrated supply chain frameworks: SCOR model, demand-supply synchronisation, and supply chain risk management." },
-        { "name": "Warehouse Management", "description": "Design warehouse layout, manage WMS implementation, and optimise pick-pack-ship operations for e-commerce and manufacturing." },
-        { "name": "Supply Chain Strategy", "description": "Build supply chain network design, sourcing strategy, and long-range supply chain transformation roadmaps." },
-        { "name": "Technology in Supply Chain", "description": "Evaluate RFID, IoT, blockchain, and supply chain visibility platforms for digital supply chain management." }
+        {
+          "name": "Project I (4 Credits)",
+          "description": "Conduct a structured supply chain research project on inventory optimisation, logistics cost reduction, or 3PL management."
+        },
+        {
+          "name": "Corporate Governance and Ethics",
+          "description": "Apply ESG standards to supply chain sourcing decisions, supplier code of conduct, and responsible logistics practices."
+        },
+        {
+          "name": "Crisis Management in Business",
+          "description": "Manage supply chain disruption: port strikes, raw material shortages, and natural disaster-driven logistics recovery."
+        },
+        {
+          "name": "Strategic Management",
+          "description": "Design supply chain network strategy: sourcing footprint, make-vs-buy, and global distribution network planning."
+        },
+        {
+          "name": "AI and ML for Business Management",
+          "description": "Apply AI-driven demand forecasting, ML-based inventory replenishment, and autonomous supply chain decision-making concepts."
+        },
+        {
+          "name": "Supply Chain Management",
+          "description": "Apply integrated supply chain frameworks: SCOR model, demand-supply synchronisation, and supply chain risk management."
+        },
+        {
+          "name": "Warehouse Management",
+          "description": "Design warehouse layout, manage WMS implementation, and optimise pick-pack-ship operations for e-commerce and manufacturing."
+        },
+        {
+          "name": "Supply Chain Strategy",
+          "description": "Build supply chain network design, sourcing strategy, and long-range supply chain transformation roadmaps."
+        },
+        {
+          "name": "Technology in Supply Chain",
+          "description": "Evaluate RFID, IoT, blockchain, and supply chain visibility platforms for digital supply chain management."
+        }
       ],
       "sem4Subjects": [
-        { "name": "Project II (10 Credits)", "description": "Complete a full supply chain management dissertation applying logistics strategy or network design theory to a real case." },
-        { "name": "Entrepreneurship", "description": "Build a logistics startup strategy: last-mile delivery model, 3PL marketplace design, or supply chain SaaS business plan." },
-        { "name": "Global Business Environment", "description": "Analyse global trade disruptions, geopolitical supply chain risks, and international logistics cost drivers." },
-        { "name": "Conflict and Negotiation", "description": "Negotiate 3PL contracts, carrier rate agreements, and vendor SLAs for logistics and supply chain roles." },
-        { "name": "Doing Business in India", "description": "Navigate India's GST impact on logistics, GST e-waybill compliance, warehousing policy, and road freight regulations." },
-        { "name": "Business Transformation and Organizational Turnaround", "description": "Lead supply chain transformation: 3PL consolidation, network redesign, and digital supply chain implementation." },
-        { "name": "International Logistics", "description": "Manage cross-border freight forwarding, customs clearance, incoterms, and international distribution network design." },
-        { "name": "Lean Six Sigma", "description": "Apply Green Belt level DMAIC tools to supply chain waste elimination, process standardisation, and logistics cost reduction." },
-        { "name": "Supply Chain Modeling and Design", "description": "Build supply chain network models, optimise facility locations, and design multi-echelon inventory systems." },
-        { "name": "Sustainable Supply Chain", "description": "Apply ESG principles, carbon footprint reduction, circular supply chain design, and responsible sourcing frameworks." }
+        {
+          "name": "Project II (10 Credits)",
+          "description": "Complete a full supply chain management dissertation applying logistics strategy or network design theory to a real case."
+        },
+        {
+          "name": "Entrepreneurship",
+          "description": "Build a logistics startup strategy: last-mile delivery model, 3PL marketplace design, or supply chain SaaS business plan."
+        },
+        {
+          "name": "Global Business Environment",
+          "description": "Analyse global trade disruptions, geopolitical supply chain risks, and international logistics cost drivers."
+        },
+        {
+          "name": "Conflict and Negotiation",
+          "description": "Negotiate 3PL contracts, carrier rate agreements, and vendor SLAs for logistics and supply chain roles."
+        },
+        {
+          "name": "Doing Business in India",
+          "description": "Navigate India's GST impact on logistics, GST e-waybill compliance, warehousing policy, and road freight regulations."
+        },
+        {
+          "name": "Business Transformation and Organizational Turnaround",
+          "description": "Lead supply chain transformation: 3PL consolidation, network redesign, and digital supply chain implementation."
+        },
+        {
+          "name": "International Logistics",
+          "description": "Manage cross-border freight forwarding, customs clearance, incoterms, and international distribution network design."
+        },
+        {
+          "name": "Lean Six Sigma",
+          "description": "Apply Green Belt level DMAIC tools to supply chain waste elimination, process standardisation, and logistics cost reduction."
+        },
+        {
+          "name": "Supply Chain Modeling and Design",
+          "description": "Build supply chain network models, optimise facility locations, and design multi-echelon inventory systems."
+        },
+        {
+          "name": "Sustainable Supply Chain",
+          "description": "Apply ESG principles, carbon footprint reduction, circular supply chain design, and responsible sourcing frameworks."
+        }
       ],
-      "note": "Sem 1-2 subjects are shared across all SSODL MBA specialisations. The Logistics and Supply Chain Management specialisation adds 9 subjects in Sem 3 and 10 subjects in Sem 4. Sustainable Supply Chain is a differentiator subject not commonly found in peer online MBA logistics specialisations."
+      "note": "Sem 1-2 shared core subjects across all SSODL MBA specialisations. See the main SSODL Online MBA page for core subject list."
     },
-    "whoHires": "Logistics and Supply Chain Management MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** E-commerce and quick-commerce logistics, FMCG supply chain, Manufacturing, 3PL and freight forwarding, Management consulting (supply chain practice)\n\n**Entry-level roles:** Supply Chain Analyst, Logistics Manager, Procurement Manager, Warehouse Manager, 3PL Coordinator\n\n**Mid-level roles (3-5 years experience):** Supply Chain Manager, Head of Logistics, Procurement Head, Distribution Manager\n\n**Senior roles (7+ years):** VP Supply Chain, COO, Head of Procurement, Supply Chain Transformation Director\n\n**Top hiring organisations:** Amazon India Logistics, Flipkart Supply Chain, Reliance Retail Supply Chain, HUL Supply Chain, Nestle Manufacturing, Mahindra Logistics, DHL India, Maersk India, Blue Dart, TCI Freight, Infosys Supply Chain Consulting",
-    "skills": "The SSODL Logistics and SCM specialisation builds skills that supply chain and logistics employers test at manager and director levels:\n\n**Technical skills:**\n- Supply Chain Strategy: SCOR model application, network design, demand-supply synchronisation, and supply chain risk management for strategic SCM roles\n- Technology in Supply Chain: RFID, IoT, blockchain, and supply chain visibility platform evaluation for digital supply chain transformation\n- Supply Chain Modelling and Design: multi-echelon inventory modelling, facility location optimisation, and network design for COO-track roles\n- Sustainable Supply Chain: ESG-linked sourcing frameworks, carbon footprint reduction, and circular supply chain design for responsible procurement roles\n\n**Applied skills:**\n- Warehouse Management: WMS implementation, warehouse layout design, and pick-pack-ship operations optimisation for e-commerce and manufacturing\n- Lean Six Sigma: Green Belt DMAIC application, value stream mapping, and waste elimination for supply chain efficiency projects\n\n**Soft skills:** Negotiating 3PL and carrier contracts, presenting supply chain analytics to the COO, building business cases for logistics technology investment, and managing cross-functional supply chain transformation programmes.",
-    "comparisons": "Comparing SSODL Online MBA Logistics and Supply Chain Management against peers:\n\n**vs MUJ Online MBA Supply Chain Management:** MUJ is NAAC A+ and NIRF #58 at Rs 1,53,000-1,80,000. MUJ Supply Chain covers procurement, logistics, and supply chain strategy with Coursera Plus. SSODL Logistics and SCM adds Sustainable Supply Chain and Technology in Supply Chain as dedicated subjects and carries stronger Symbiosis brand recognition in Pune and western India supply chain hiring. For cost efficiency, MUJ is better. For Symbiosis brand in Maharashtra manufacturing sector, SSODL has an advantage.\n\n**vs Amity Online MBA Production and Operations Management (covers SCM basics):** Amity Production and Operations covers supply chain as part of broader operations management. SSODL Logistics and SCM dedicates 8 Sem 3-4 subjects to supply chain and logistics, including dedicated Warehouse Management, SCM Strategy, Technology in SC, and Sustainable Supply Chain subjects. For specialised supply chain careers, SSODL is significantly more targeted, though Amity is more affordable.\n\n**vs NMIMS Online MBA Operations and Data Sciences Management:** NMIMS Ops and Data Sciences covers supply chain management and operations analytics. SSODL Logistics and SCM is broader in logistics specifics: Warehouse Management, Technology in SC, International Logistics, Supply Chain Modelling, and Sustainable Supply Chain as dedicated subjects. For analytics-led supply chain roles, NMIMS is more targeted. For logistics management breadth, SSODL has more coverage.",
+    "whoHires": {
+      "body": "Logistics and Supply Chain Management MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** E-commerce and quick-commerce logistics, FMCG supply chain, Manufacturing, 3PL and freight forwarding, Management consulting (supply chain practice)\n\n**Entry-level roles:** Supply Chain Analyst, Logistics Manager, Procurement Manager, Warehouse Manager, 3PL Coordinator\n\n**Mid-level roles (3-5 years experience):** Supply Chain Manager, Head of Logistics, Procurement Head, Distribution Manager\n\n**Senior roles (7+ years):** VP Supply Chain, COO, Head of Procurement, Supply Chain Transformation Director\n\n**Top hiring organisations:** Amazon India Logistics, Flipkart Supply Chain, Reliance Retail Supply Chain, HUL Supply Chain, Nestle Manufacturing, Mahindra Logistics, DHL India, Maersk India, Blue Dart, TCI Freight, Infosys Supply Chain Consulting"
+    },
+    "skills": {
+      "body": "The SSODL Logistics and SCM specialisation builds skills that supply chain and logistics employers test at manager and director levels:\n\n**Technical skills:**\n- Supply Chain Strategy: SCOR model application, network design, demand-supply synchronisation, and supply chain risk management for strategic SCM roles\n- Technology in Supply Chain: RFID, IoT, blockchain, and supply chain visibility platform evaluation for digital supply chain transformation\n- Supply Chain Modelling and Design: multi-echelon inventory modelling, facility location optimisation, and network design for COO-track roles\n- Sustainable Supply Chain: ESG-linked sourcing frameworks, carbon footprint reduction, and circular supply chain design for responsible procurement roles\n\n**Applied skills:**\n- Warehouse Management: WMS implementation, warehouse layout design, and pick-pack-ship operations optimisation for e-commerce and manufacturing\n- Lean Six Sigma: Green Belt DMAIC application, value stream mapping, and waste elimination for supply chain efficiency projects\n\n**Soft skills:** Negotiating 3PL and carrier contracts, presenting supply chain analytics to the COO, building business cases for logistics technology investment, and managing cross-functional supply chain transformation programmes."
+    },
+    "comparisons": {
+      "body": "Comparing SSODL Online MBA Logistics and Supply Chain Management against peers:\n\n**vs MUJ Online MBA Supply Chain Management:** MUJ is NAAC A+ and NIRF #58 at Rs 1,53,000-1,80,000. MUJ Supply Chain covers procurement, logistics, and supply chain strategy with Coursera Plus. SSODL Logistics and SCM adds Sustainable Supply Chain and Technology in Supply Chain as dedicated subjects and carries stronger Symbiosis brand recognition in Pune and western India supply chain hiring. For cost efficiency, MUJ is better. For Symbiosis brand in Maharashtra manufacturing sector, SSODL has an advantage.\n\n**vs Amity Online MBA Production and Operations Management (covers SCM basics):** Amity Production and Operations covers supply chain as part of broader operations management. SSODL Logistics and SCM dedicates 8 Sem 3-4 subjects to supply chain and logistics, including dedicated Warehouse Management, SCM Strategy, Technology in SC, and Sustainable Supply Chain subjects. For specialised supply chain careers, SSODL is significantly more targeted, though Amity is more affordable.\n\n**vs NMIMS Online MBA Operations and Data Sciences Management:** NMIMS Ops and Data Sciences covers supply chain management and operations analytics. SSODL Logistics and SCM is broader in logistics specifics: Warehouse Management, Technology in SC, International Logistics, Supply Chain Modelling, and Sustainable Supply Chain as dedicated subjects. For analytics-led supply chain roles, NMIMS is more targeted. For logistics management breadth, SSODL has more coverage."
+    },
     "fees": {
-      "body": "The SSODL Online MBA in Logistics and Supply Chain Management offers 2 fee tracks based on applicant work experience:\n\n**Track 1 — Standard (under 2 years work experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,70,000 across 4 semesters\n- Semester breakdown: Rs 92,500 each for Sem 1-2 and Rs 87,500 each for Sem 3-4\n- Year 1 total: Rs 1,95,000 (including Rs 10,000 registration)\n- Year 2 total: Rs 1,75,000\n\n**Track 2 — With Work Experience Scholarship (2+ years experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,15,000 after Rs 55,000 experience-based scholarship\n- Semester breakdown: Rs 80,000 each for Sem 1-2 and Rs 72,500 each for Sem 3-4\n- Year 1 total: Rs 1,70,000\n- Year 2 total: Rs 1,45,000\n\nThe Rs 55,000 experience scholarship applies whether you pay semester-wise or opt for one-time upfront payment. Submit 2+ years work experience proof during admission to claim.\n\nEMI is available through the university's marketing partner. This is interest-bearing EMI, not zero-cost. Contact our counsellor for current EMI tenure options and approval terms.\n\nEdifyEdu reconfirms fees with SSODL each quarter. Please reconfirm current fees and scholarship eligibility with our counsellor before any payment. Fees listed are indicative."
+      "body": "The SSODL Online MBA in Logistics and Supply Chain Management offers 2 fee tracks based on applicant work experience:\n\n**Track 1 \u00e2\u20ac\u201d Standard (under 2 years work experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,70,000 across 4 semesters\n- Semester breakdown: Rs 92,500 each for Sem 1-2 and Rs 87,500 each for Sem 3-4\n- Year 1 total: Rs 1,95,000 (including Rs 10,000 registration)\n- Year 2 total: Rs 1,75,000\n\n**Track 2 \u00e2\u20ac\u201d With Work Experience Scholarship (2+ years experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,15,000 after Rs 55,000 experience-based scholarship\n- Semester breakdown: Rs 80,000 each for Sem 1-2 and Rs 72,500 each for Sem 3-4\n- Year 1 total: Rs 1,70,000\n- Year 2 total: Rs 1,45,000\n\nThe Rs 55,000 experience scholarship applies whether you pay semester-wise or opt for one-time upfront payment. Submit 2+ years work experience proof during admission to claim.\n\nEMI is available through the university's marketing partner. This is interest-bearing EMI, not zero-cost. Contact our counsellor for current EMI tenure options and approval terms.\n\nEdifyEdu reconfirms fees with SSODL each quarter. Please reconfirm current fees and scholarship eligibility with our counsellor before any payment. Fees listed are indicative."
     },
     "certificate": {
       "body": "The degree certificate is issued by Symbiosis International University (SIU) and carries the SIU name with the MBA designation. The Logistics and Supply Chain Management specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
@@ -145,6 +182,7 @@
     "wordCount": 2150,
     "generatedAt": "2026-04-21",
     "batchNumber": "Phase7-Batch12",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "batch12v2Fixed": "2026-04-21"
   }
 }

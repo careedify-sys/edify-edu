@@ -14,62 +14,99 @@
     },
     "syllabus": {
       "hasData": true,
-      "sem1Subjects": [
-        { "name": "Business Statistics", "description": "Apply statistical analysis to patient outcome data, hospital performance benchmarking, and healthcare quality metrics." },
-        { "name": "Marketing Management", "description": "Apply hospital marketing principles, patient acquisition strategy, and healthcare brand management for hospital management roles." },
-        { "name": "Financial Accounting", "description": "Manage hospital cost accounting, departmental budget reporting, and healthcare financial statements interpretation." },
-        { "name": "Operations Management", "description": "Apply process efficiency concepts to OT scheduling, patient flow management, and healthcare service delivery." },
-        { "name": "Legal Aspects of Business", "description": "Apply healthcare law, patient rights regulations, clinical negligence frameworks, and hospital licensing compliance." },
-        { "name": "Human Resource Management", "description": "Manage hospital workforce planning, clinical staff recruitment, and healthcare team performance management." },
-        { "name": "Research Methodology", "description": "Design clinical outcomes research, patient satisfaction surveys, and healthcare quality improvement studies." },
-        { "name": "Microeconomics", "description": "Apply healthcare pricing theory, insurance market structure, and demand-supply dynamics to hospital pricing decisions." },
-        { "name": "Technology in Business", "description": "Evaluate HIS, EMR systems, telehealth platforms, and healthcare technology infrastructure for hospital management." },
-        { "name": "Data Driven Decision Making", "description": "Apply hospital analytics dashboards, patient outcome data, and healthcare KPI tracking to evidence-based management decisions." }
-      ],
-      "sem2Subjects": [
-        { "name": "Organizational Behaviour", "description": "Manage cross-functional hospital teams, doctor-administrator relationships, and healthcare culture change." },
-        { "name": "Operations Research", "description": "Apply scheduling models, OT utilisation optimisation, and resource allocation to hospital operations management." },
-        { "name": "Macroeconomics", "description": "Interpret health sector investment trends, insurance penetration data, and healthcare policy changes for strategic planning." },
-        { "name": "Financial Management", "description": "Manage hospital capex, insurance reimbursement models, and healthcare working capital." },
-        { "name": "R Programming", "description": "Build hospital performance analytics models, patient outcome visualisations, and clinical data analysis using R." },
-        { "name": "Project Management", "description": "Apply project management to hospital expansion, new department commissioning, and accreditation preparation projects." },
-        { "name": "Management Information Systems", "description": "Evaluate HIS, PACS, and hospital management information systems for clinical and administrative data integration." },
-        { "name": "Business Communication", "description": "Write hospital board reports, clinical quality presentations, and healthcare stakeholder communications." },
-        { "name": "Consumer Behaviour and Insights", "description": "Understand patient decision-making, healthcare seeking behaviour, and patient satisfaction drivers for hospital marketing." },
-        { "name": "Digital Marketing", "description": "Apply digital patient acquisition, hospital website SEO, and online reputation management for healthcare brands." },
-        { "name": "Design Thinking", "description": "Apply patient-centred design to hospital ward layouts, patient journey redesign, and healthcare service innovation." },
-        { "name": "Innovation Management", "description": "Evaluate healthcare innovation: telemedicine, AI diagnostics, remote patient monitoring, and digital health startups." }
-      ],
       "sem3Subjects": [
-        { "name": "Project I (4 Credits)", "description": "Conduct a hospital management research project on quality improvement, patient satisfaction, or clinical operations." },
-        { "name": "Corporate Governance and Ethics", "description": "Apply healthcare governance standards, clinical ethics frameworks, and patient rights compliance to hospital management." },
-        { "name": "Crisis Management in Business", "description": "Manage healthcare crises: epidemic response, mass casualty events, and hospital reputation incident management." },
-        { "name": "Strategic Management", "description": "Develop hospital strategic plans: capacity expansion, specialty development, and competitive positioning in local healthcare markets." },
-        { "name": "AI and ML for Business Management", "description": "Apply AI diagnostics evaluation, ML-based patient triage, and predictive readmission models to hospital management decisions." },
-        { "name": "Fundamentals of Hospital Planning", "description": "Design hospital facility plans: space allocation, department adjacency planning, and healthcare infrastructure development." },
-        { "name": "Management of Hospital Clinical Services", "description": "Manage OT scheduling, ICU capacity, clinical pathway design, and clinical department performance for hospital administrators." },
-        { "name": "Management of Hospital Supportive Services", "description": "Manage hospital housekeeping, dietary, security, and biomedical equipment services as COO-track hospital management." },
-        { "name": "Organisation and Admin of Super Speciality Hospitals", "description": "Administer super speciality departments: organ transplant units, oncology centres, and cardiac surgery administration." }
+        {
+          "name": "Project I (4 Credits)",
+          "description": "Conduct a hospital management research project on quality improvement, patient satisfaction, or clinical operations."
+        },
+        {
+          "name": "Corporate Governance and Ethics",
+          "description": "Apply healthcare governance standards, clinical ethics frameworks, and patient rights compliance to hospital management."
+        },
+        {
+          "name": "Crisis Management in Business",
+          "description": "Manage healthcare crises: epidemic response, mass casualty events, and hospital reputation incident management."
+        },
+        {
+          "name": "Strategic Management",
+          "description": "Develop hospital strategic plans: capacity expansion, specialty development, and competitive positioning in local healthcare markets."
+        },
+        {
+          "name": "AI and ML for Business Management",
+          "description": "Apply AI diagnostics evaluation, ML-based patient triage, and predictive readmission models to hospital management decisions."
+        },
+        {
+          "name": "Fundamentals of Hospital Planning",
+          "description": "Design hospital facility plans: space allocation, department adjacency planning, and healthcare infrastructure development."
+        },
+        {
+          "name": "Management of Hospital Clinical Services",
+          "description": "Manage OT scheduling, ICU capacity, clinical pathway design, and clinical department performance for hospital administrators."
+        },
+        {
+          "name": "Management of Hospital Supportive Services",
+          "description": "Manage hospital housekeeping, dietary, security, and biomedical equipment services as COO-track hospital management."
+        },
+        {
+          "name": "Organisation and Admin of Super Speciality Hospitals",
+          "description": "Administer super speciality departments: organ transplant units, oncology centres, and cardiac surgery administration."
+        }
       ],
       "sem4Subjects": [
-        { "name": "Project II (10 Credits)", "description": "Complete a full hospital management dissertation applying healthcare quality, operations, or finance theory to a real case." },
-        { "name": "Entrepreneurship", "description": "Build a healthcare startup pitch: diagnostics chain, digital health product, or specialty clinic network business plan." },
-        { "name": "Global Business Environment", "description": "Analyse international healthcare systems, medical tourism strategy, and cross-border hospital management models." },
-        { "name": "Conflict and Negotiation", "description": "Manage doctor-management disputes, insurance company negotiations, and vendor contract negotiations in healthcare." },
-        { "name": "Doing Business in India", "description": "Navigate NABH accreditation, Clinical Establishment Act compliance, and PMJAY empanelment for Indian hospitals." },
-        { "name": "Business Transformation and Organizational Turnaround", "description": "Lead hospital transformation: merger integration, department rationalisation, and digital health transformation management." },
-        { "name": "MIS for Hospitals", "description": "Implement hospital information systems: EMR integration, clinical data warehousing, and hospital reporting infrastructure." },
-        { "name": "Quality and Accreditation in Healthcare Sector", "description": "Prepare for NABH, JCI accreditation, and ISO 9001 certification in hospital quality management." },
-        { "name": "IT Applications for Healthcare", "description": "Evaluate telemedicine platforms, EHR systems, PACS, and healthcare IoT for hospital technology management." },
-        { "name": "Community Health", "description": "Design community health programmes, primary health centre management, and public health outreach for hospital systems." }
+        {
+          "name": "Project II (10 Credits)",
+          "description": "Complete a full hospital management dissertation applying healthcare quality, operations, or finance theory to a real case."
+        },
+        {
+          "name": "Entrepreneurship",
+          "description": "Build a healthcare startup pitch: diagnostics chain, digital health product, or specialty clinic network business plan."
+        },
+        {
+          "name": "Global Business Environment",
+          "description": "Analyse international healthcare systems, medical tourism strategy, and cross-border hospital management models."
+        },
+        {
+          "name": "Conflict and Negotiation",
+          "description": "Manage doctor-management disputes, insurance company negotiations, and vendor contract negotiations in healthcare."
+        },
+        {
+          "name": "Doing Business in India",
+          "description": "Navigate NABH accreditation, Clinical Establishment Act compliance, and PMJAY empanelment for Indian hospitals."
+        },
+        {
+          "name": "Business Transformation and Organizational Turnaround",
+          "description": "Lead hospital transformation: merger integration, department rationalisation, and digital health transformation management."
+        },
+        {
+          "name": "MIS for Hospitals",
+          "description": "Implement hospital information systems: EMR integration, clinical data warehousing, and hospital reporting infrastructure."
+        },
+        {
+          "name": "Quality and Accreditation in Healthcare Sector",
+          "description": "Prepare for NABH, JCI accreditation, and ISO 9001 certification in hospital quality management."
+        },
+        {
+          "name": "IT Applications for Healthcare",
+          "description": "Evaluate telemedicine platforms, EHR systems, PACS, and healthcare IoT for hospital technology management."
+        },
+        {
+          "name": "Community Health",
+          "description": "Design community health programmes, primary health centre management, and public health outreach for hospital systems."
+        }
       ],
-      "note": "Sem 1-2 subjects are shared across all SSODL MBA specialisations. The Hospital and Health Care Management specialisation adds 9 subjects in Sem 3 and 10 subjects in Sem 4, with dedicated coverage of clinical services, super speciality administration, NABH accreditation, and Healthcare Analytics."
+      "note": "Sem 1-2 shared core subjects across all SSODL MBA specialisations. See the main SSODL Online MBA page for core subject list."
     },
-    "whoHires": "Hospital and Health Care Management MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** Private hospital chains, Healthcare consulting, Insurance (health), Pharmaceutical companies, Healthcare technology startups, Public health organisations\n\n**Entry-level roles:** Hospital Administrator, Healthcare Operations Manager, Quality Manager (NABH), Business Development Manager (hospital)\n\n**Mid-level roles (3-5 years experience):** Hospital Manager, Head of Operations (hospital), Healthcare Project Manager, COO (clinic network)\n\n**Senior roles (7+ years):** Hospital CEO, VP Healthcare Operations, Head of Medical Affairs, Healthcare Group Director\n\n**Top hiring organisations:** Columbia Asia Hospitals, Jehangir Hospital, Ruby Hall Clinic, Sahyadri Hospitals, Manipal Hospitals, Apollo Hospitals, Fortis Healthcare, Narayana Health, Max Healthcare, Aetna India, Niva Bupa, ICICI Lombard Health",
-    "skills": "The SSODL Hospital and Health Care Management specialisation builds skills that hospital administration and healthcare management employers test at COO-track levels:\n\n**Technical skills:**\n- Hospital Planning and Clinical Services Management: facility planning, OT scheduling, clinical pathway design, and clinical department performance management for hospital administrator roles\n- Quality and Accreditation in Healthcare: NABH and JCI accreditation preparation, ISO 9001 healthcare application, and quality audit management for quality head roles\n- MIS for Hospitals: EMR integration, hospital information system management, and clinical data warehousing for hospital technology administration\n- Healthcare Analytics (Sem 4 Business Analytics overlap): patient outcome analytics, hospital performance benchmarking, and health data analysis for evidence-based management\n\n**Applied skills:**\n- Organisation and Admin of Super Speciality Hospitals: organ transplant unit administration, oncology department management, and cardiac surgery centre operations\n- Community Health: primary health centre management, public health outreach design, and community health programme administration\n\n**Soft skills:** Managing doctor-administrator relationships, presenting hospital performance data to boards, negotiating with insurance companies, and leading hospital accreditation preparation projects.",
-    "comparisons": "Comparing SSODL Online MBA Hospital and Health Care Management against peers:\n\n**vs Amity Online MBA Hospital Healthcare Management (direct peer):** Amity is NAAC A+ and NIRF #22 at Rs 2,25,000. Amity Healthcare covers hospital management comprehensively and is a strong direct peer. SSODL adds dedicated Super Speciality Hospital Administration and Community Health subjects not typically in Amity Healthcare. SSODL carries stronger brand recognition in Pune-based private hospital chains. For all-India healthcare management careers, Amity Healthcare at a lower fee is a strong competitor. For Pune and western India hospitals, SSODL carries a meaningful brand advantage.\n\n**vs MUJ Online MBA Healthcare (if offered):** MUJ offers a healthcare concentration within its MBA programme. SSODL Hospital and Health Care Management is a dedicated full specialisation with 9 Sem 3 and 10 Sem 4 subjects in healthcare. SSODL carries stronger specialisation depth and Symbiosis brand recognition for hospital management roles.\n\n**vs Manipal Jaipur Online MBA (Healthcare if offered):** MUJ's healthcare focus, if available, covers clinical management broadly. SSODL's Symbiosis brand carries stronger recognition in Pune-headquartered private hospital chains and western India healthcare sector compared to MUJ in this geography.",
+    "whoHires": {
+      "body": "Hospital and Health Care Management MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** Private hospital chains, Healthcare consulting, Insurance (health), Pharmaceutical companies, Healthcare technology startups, Public health organisations\n\n**Entry-level roles:** Hospital Administrator, Healthcare Operations Manager, Quality Manager (NABH), Business Development Manager (hospital)\n\n**Mid-level roles (3-5 years experience):** Hospital Manager, Head of Operations (hospital), Healthcare Project Manager, COO (clinic network)\n\n**Senior roles (7+ years):** Hospital CEO, VP Healthcare Operations, Head of Medical Affairs, Healthcare Group Director\n\n**Top hiring organisations:** Columbia Asia Hospitals, Jehangir Hospital, Ruby Hall Clinic, Sahyadri Hospitals, Manipal Hospitals, Apollo Hospitals, Fortis Healthcare, Narayana Health, Max Healthcare, Aetna India, Niva Bupa, ICICI Lombard Health"
+    },
+    "skills": {
+      "body": "The SSODL Hospital and Health Care Management specialisation builds skills that hospital administration and healthcare management employers test at COO-track levels:\n\n**Technical skills:**\n- Hospital Planning and Clinical Services Management: facility planning, OT scheduling, clinical pathway design, and clinical department performance management for hospital administrator roles\n- Quality and Accreditation in Healthcare: NABH and JCI accreditation preparation, ISO 9001 healthcare application, and quality audit management for quality head roles\n- MIS for Hospitals: EMR integration, hospital information system management, and clinical data warehousing for hospital technology administration\n- Healthcare Analytics (Sem 4 Business Analytics overlap): patient outcome analytics, hospital performance benchmarking, and health data analysis for evidence-based management\n\n**Applied skills:**\n- Organisation and Admin of Super Speciality Hospitals: organ transplant unit administration, oncology department management, and cardiac surgery centre operations\n- Community Health: primary health centre management, public health outreach design, and community health programme administration\n\n**Soft skills:** Managing doctor-administrator relationships, presenting hospital performance data to boards, negotiating with insurance companies, and leading hospital accreditation preparation projects."
+    },
+    "comparisons": {
+      "body": "Comparing SSODL Online MBA Hospital and Health Care Management against peers:\n\n**vs Amity Online MBA Hospital Healthcare Management (direct peer):** Amity is NAAC A+ and NIRF #22 at Rs 2,25,000. Amity Healthcare covers hospital management comprehensively and is a strong direct peer. SSODL adds dedicated Super Speciality Hospital Administration and Community Health subjects not typically in Amity Healthcare. SSODL carries stronger brand recognition in Pune-based private hospital chains. For all-India healthcare management careers, Amity Healthcare at a lower fee is a strong competitor. For Pune and western India hospitals, SSODL carries a meaningful brand advantage.\n\n**vs MUJ Online MBA Healthcare (if offered):** MUJ offers a healthcare concentration within its MBA programme. SSODL Hospital and Health Care Management is a dedicated full specialisation with 9 Sem 3 and 10 Sem 4 subjects in healthcare. SSODL carries stronger specialisation depth and Symbiosis brand recognition for hospital management roles.\n\n**vs Manipal Jaipur Online MBA (Healthcare if offered):** MUJ's healthcare focus, if available, covers clinical management broadly. SSODL's Symbiosis brand carries stronger recognition in Pune-headquartered private hospital chains and western India healthcare sector compared to MUJ in this geography."
+    },
     "fees": {
-      "body": "The SSODL Online MBA in Hospital and Health Care Management offers 2 fee tracks based on applicant work experience:\n\n**Track 1 — Standard (under 2 years work experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,70,000 across 4 semesters\n- Semester breakdown: Rs 92,500 each for Sem 1-2 and Rs 87,500 each for Sem 3-4\n- Year 1 total: Rs 1,95,000 (including Rs 10,000 registration)\n- Year 2 total: Rs 1,75,000\n\n**Track 2 — With Work Experience Scholarship (2+ years experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,15,000 after Rs 55,000 experience-based scholarship\n- Semester breakdown: Rs 80,000 each for Sem 1-2 and Rs 72,500 each for Sem 3-4\n- Year 1 total: Rs 1,70,000\n- Year 2 total: Rs 1,45,000\n\nThe Rs 55,000 experience scholarship applies whether you pay semester-wise or opt for one-time upfront payment. Submit 2+ years work experience proof during admission to claim.\n\nEMI is available through the university's marketing partner. This is interest-bearing EMI, not zero-cost. Contact our counsellor for current EMI tenure options and approval terms.\n\nEdifyEdu reconfirms fees with SSODL each quarter. Please reconfirm current fees and scholarship eligibility with our counsellor before any payment. Fees listed are indicative."
+      "body": "The SSODL Online MBA in Hospital and Health Care Management offers 2 fee tracks based on applicant work experience:\n\n**Track 1 \u00e2\u20ac\u201d Standard (under 2 years work experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,70,000 across 4 semesters\n- Semester breakdown: Rs 92,500 each for Sem 1-2 and Rs 87,500 each for Sem 3-4\n- Year 1 total: Rs 1,95,000 (including Rs 10,000 registration)\n- Year 2 total: Rs 1,75,000\n\n**Track 2 \u00e2\u20ac\u201d With Work Experience Scholarship (2+ years experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,15,000 after Rs 55,000 experience-based scholarship\n- Semester breakdown: Rs 80,000 each for Sem 1-2 and Rs 72,500 each for Sem 3-4\n- Year 1 total: Rs 1,70,000\n- Year 2 total: Rs 1,45,000\n\nThe Rs 55,000 experience scholarship applies whether you pay semester-wise or opt for one-time upfront payment. Submit 2+ years work experience proof during admission to claim.\n\nEMI is available through the university's marketing partner. This is interest-bearing EMI, not zero-cost. Contact our counsellor for current EMI tenure options and approval terms.\n\nEdifyEdu reconfirms fees with SSODL each quarter. Please reconfirm current fees and scholarship eligibility with our counsellor before any payment. Fees listed are indicative."
     },
     "certificate": {
       "body": "The degree certificate is issued by Symbiosis International University (SIU) and carries the SIU name with the MBA designation. The Hospital and Health Care Management specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
@@ -145,6 +182,7 @@
     "wordCount": 2200,
     "generatedAt": "2026-04-21",
     "batchNumber": "Phase7-Batch12",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "batch12v2Fixed": "2026-04-21"
   }
 }

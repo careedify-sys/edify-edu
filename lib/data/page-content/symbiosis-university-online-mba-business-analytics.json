@@ -14,62 +14,99 @@
     },
     "syllabus": {
       "hasData": true,
-      "sem1Subjects": [
-        { "name": "Business Statistics", "description": "Apply descriptive statistics, hypothesis testing, and regression analysis as the quantitative foundation for analytics work." },
-        { "name": "Marketing Management", "description": "Understand marketing data structures, campaign performance metrics, and customer acquisition analytics frameworks." },
-        { "name": "Financial Accounting", "description": "Read financial statements and accounting data as inputs for financial analytics and business performance dashboards." },
-        { "name": "Operations Management", "description": "Apply process performance metrics, OEE, and supply chain data concepts to operations analytics." },
-        { "name": "Legal Aspects of Business", "description": "Apply data privacy law, PDPB compliance, and analytics ethics frameworks to business analytics practice." },
-        { "name": "Human Resource Management", "description": "Understand HR data structures and workforce metrics as inputs for people analytics assignments." },
-        { "name": "Research Methodology", "description": "Design research studies, select analytical methods, and structure data collection for business analytics projects." },
-        { "name": "Microeconomics", "description": "Apply demand modelling, price elasticity, and market structure data to economic analytics and pricing research." },
-        { "name": "Technology in Business", "description": "Evaluate analytics platforms: Tableau, Power BI, Google Analytics, and cloud data infrastructure for business intelligence." },
-        { "name": "Data Driven Decision Making", "description": "Build data-driven decision frameworks and analytics governance principles for organisational use." }
-      ],
-      "sem2Subjects": [
-        { "name": "Organizational Behaviour", "description": "Apply behavioural data insights and people analytics to team performance and organisational design." },
-        { "name": "Operations Research", "description": "Apply linear programming, simulation, and optimisation models to business analytics problem-solving." },
-        { "name": "Macroeconomics", "description": "Interpret macroeconomic data series for business forecasting and economic indicator analysis." },
-        { "name": "Financial Management", "description": "Apply financial ratio analysis and capital structure data to financial analytics dashboards." },
-        { "name": "R Programming", "description": "Build statistical models, data cleaning scripts, and visualisation outputs using R for analytics assignments." },
-        { "name": "Project Management", "description": "Manage analytics project timelines, stakeholder deliverables, and data pipeline implementation." },
-        { "name": "Management Information Systems", "description": "Design business intelligence system architecture and evaluate MIS for enterprise analytics." },
-        { "name": "Business Communication", "description": "Present analytics findings to non-technical stakeholders through data storytelling and executive summaries." },
-        { "name": "Consumer Behaviour and Insights", "description": "Apply consumer data analysis, segmentation models, and purchase pattern analytics to marketing decisions." },
-        { "name": "Digital Marketing", "description": "Use digital analytics platforms for campaign performance measurement, SEO data analysis, and attribution modelling." },
-        { "name": "Design Thinking", "description": "Apply human-centred design to analytics dashboard UX, data product development, and insight communication." },
-        { "name": "Innovation Management", "description": "Evaluate analytics innovation: AI-driven product development, data monetisation models, and analytics-led business transformation." }
-      ],
       "sem3Subjects": [
-        { "name": "Project I (4 Credits)", "description": "Conduct an analytics research project applying one or more domain analytics tools to a real business dataset." },
-        { "name": "Corporate Governance and Ethics", "description": "Apply data governance standards, analytics ethics, and responsible AI frameworks to business analytics practice." },
-        { "name": "Crisis Management in Business", "description": "Use analytics to detect early warning signals, monitor KPIs during crises, and support data-driven response." },
-        { "name": "Strategic Management", "description": "Apply competitive intelligence analytics, market sizing data, and strategic KPI frameworks to business strategy." },
-        { "name": "AI and ML for Business Management", "description": "Apply supervised and unsupervised ML models, neural network concepts, and AI product evaluation to management decisions." },
-        { "name": "HR Analytics", "description": "Build attrition prediction models, workforce dashboards, and compensation band analysis using people data." },
-        { "name": "Spreadsheet Modelling", "description": "Build advanced Excel and Google Sheets models for financial, operational, and forecasting analytics." },
-        { "name": "Visual Analytics", "description": "Design Tableau and Power BI dashboards for business performance monitoring and executive reporting." },
-        { "name": "Social Media Analytics", "description": "Measure social media campaign reach, sentiment analysis, influencer ROI, and brand mention tracking using analytics tools." }
+        {
+          "name": "Project I (4 Credits)",
+          "description": "Conduct an analytics research project applying one or more domain analytics tools to a real business dataset."
+        },
+        {
+          "name": "Corporate Governance and Ethics",
+          "description": "Apply data governance standards, analytics ethics, and responsible AI frameworks to business analytics practice."
+        },
+        {
+          "name": "Crisis Management in Business",
+          "description": "Use analytics to detect early warning signals, monitor KPIs during crises, and support data-driven response."
+        },
+        {
+          "name": "Strategic Management",
+          "description": "Apply competitive intelligence analytics, market sizing data, and strategic KPI frameworks to business strategy."
+        },
+        {
+          "name": "AI and ML for Business Management",
+          "description": "Apply supervised and unsupervised ML models, neural network concepts, and AI product evaluation to management decisions."
+        },
+        {
+          "name": "HR Analytics",
+          "description": "Build attrition prediction models, workforce dashboards, and compensation band analysis using people data."
+        },
+        {
+          "name": "Spreadsheet Modelling",
+          "description": "Build advanced Excel and Google Sheets models for financial, operational, and forecasting analytics."
+        },
+        {
+          "name": "Visual Analytics",
+          "description": "Design Tableau and Power BI dashboards for business performance monitoring and executive reporting."
+        },
+        {
+          "name": "Social Media Analytics",
+          "description": "Measure social media campaign reach, sentiment analysis, influencer ROI, and brand mention tracking using analytics tools."
+        }
       ],
       "sem4Subjects": [
-        { "name": "Project II (10 Credits)", "description": "Complete a full analytics dissertation applying multi-domain analytics methodology to a real business problem." },
-        { "name": "Entrepreneurship", "description": "Build an analytics-driven startup pitch: data product design, analytics business model, and go-to-market strategy." },
-        { "name": "Global Business Environment", "description": "Apply international market analytics and cross-border data regulation to global business analytics strategy." },
-        { "name": "Conflict and Negotiation", "description": "Use data in negotiations: analytics-backed proposals, data-driven contract terms, and evidence-based stakeholder persuasion." },
-        { "name": "Doing Business in India", "description": "Apply India-specific data regulations, sector analytics benchmarks, and regional market data to Indian business analytics." },
-        { "name": "Business Transformation and Organizational Turnaround", "description": "Use analytics to support business transformation decisions, track transformation KPIs, and measure organisational change impact." },
-        { "name": "Marketing and Sales Analytics", "description": "Apply attribution modelling, sales funnel analytics, customer lifetime value models, and marketing mix modelling." },
-        { "name": "Financial Analytics", "description": "Build financial performance dashboards, fraud detection models, and investment analytics using financial data." },
-        { "name": "Healthcare Analytics", "description": "Apply patient outcome analytics, hospital performance benchmarking, and health data analysis to healthcare management." },
-        { "name": "Business Forecasting", "description": "Apply time-series models, demand forecasting techniques, and scenario planning analytics to business planning." }
+        {
+          "name": "Project II (10 Credits)",
+          "description": "Complete a full analytics dissertation applying multi-domain analytics methodology to a real business problem."
+        },
+        {
+          "name": "Entrepreneurship",
+          "description": "Build an analytics-driven startup pitch: data product design, analytics business model, and go-to-market strategy."
+        },
+        {
+          "name": "Global Business Environment",
+          "description": "Apply international market analytics and cross-border data regulation to global business analytics strategy."
+        },
+        {
+          "name": "Conflict and Negotiation",
+          "description": "Use data in negotiations: analytics-backed proposals, data-driven contract terms, and evidence-based stakeholder persuasion."
+        },
+        {
+          "name": "Doing Business in India",
+          "description": "Apply India-specific data regulations, sector analytics benchmarks, and regional market data to Indian business analytics."
+        },
+        {
+          "name": "Business Transformation and Organizational Turnaround",
+          "description": "Use analytics to support business transformation decisions, track transformation KPIs, and measure organisational change impact."
+        },
+        {
+          "name": "Marketing and Sales Analytics",
+          "description": "Apply attribution modelling, sales funnel analytics, customer lifetime value models, and marketing mix modelling."
+        },
+        {
+          "name": "Financial Analytics",
+          "description": "Build financial performance dashboards, fraud detection models, and investment analytics using financial data."
+        },
+        {
+          "name": "Healthcare Analytics",
+          "description": "Apply patient outcome analytics, hospital performance benchmarking, and health data analysis to healthcare management."
+        },
+        {
+          "name": "Business Forecasting",
+          "description": "Apply time-series models, demand forecasting techniques, and scenario planning analytics to business planning."
+        }
       ],
-      "note": "Sem 1-2 subjects are shared across all SSODL MBA specialisations. The Business Analytics specialisation adds 9 subjects in Sem 3 and 10 subjects in Sem 4, covering HR, Social Media, Marketing, Finance, Healthcare, and Forecasting analytics domains."
+      "note": "Sem 1-2 shared core subjects across all SSODL MBA specialisations. See the main SSODL Online MBA page for core subject list."
     },
-    "whoHires": "Business Analytics MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** IT services and consulting, BFSI analytics, E-commerce, Healthcare technology, FMCG analytics, Management consulting\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Consultant, BI Analyst, Marketing Analyst\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, Head of Business Intelligence, Senior Data Analyst, Marketing Analytics Manager\n\n**Senior roles (7+ years):** VP Analytics, Head of Data and Analytics, Chief Data Officer, Analytics Practice Head\n\n**Top hiring organisations:** Infosys, TCS, Accenture, Deloitte Analytics, KPMG Data and Analytics, IBM Analytics, Amazon India, Flipkart, HDFC Bank Analytics, Kotak Bank Analytics, Swiggy, Zomato",
-    "skills": "The SSODL Business Analytics specialisation builds multi-domain analytics skills that management consulting and business intelligence employers specifically seek:\n\n**Technical skills:**\n- Visual Analytics: Tableau and Power BI dashboard design, executive reporting, and data visualisation for non-technical audiences\n- Spreadsheet Modelling: advanced Excel and Google Sheets financial, operational, and forecasting model construction\n- Social Media Analytics: campaign reach measurement, sentiment analysis, influencer ROI tracking, and brand mention monitoring\n- Business Forecasting: time-series modelling, demand forecasting, and scenario planning for strategic planning teams\n\n**Applied skills:**\n- Multi-domain Analytics: HR Analytics, Marketing and Sales Analytics, Financial Analytics, and Healthcare Analytics covering four distinct business domains in a single programme\n- AI and ML for Business Management: ML model evaluation, AI product assessment, and analytics platform decision-making for management roles\n\n**Soft skills:** Presenting analytics findings to non-technical boards, translating data insights into business recommendations, managing analytics project stakeholders, and building business cases for analytics investment.",
-    "comparisons": "Comparing SSODL Online MBA Business Analytics against peers:\n\n**vs Amity Online MBA Business Analytics:** Amity is NAAC A+ and NIRF #22 at Rs 2,25,000. Amity Business Analytics focuses on Power BI, supervised ML, and domain analytics across business functions. SSODL Business Analytics covers a broader domain set: HR Analytics, Social Media Analytics, Healthcare Analytics, and Financial Analytics as dedicated Sem 3-4 subjects. Amity is more affordable. SSODL carries stronger Pune-region brand recognition. For pure cost efficiency, Amity is the stronger value.\n\n**vs NMIMS Online MBA Operations and Data Sciences Management:** NMIMS Ops and Data Sciences combines supply chain management depth with analytics. SSODL Business Analytics is purer in analytics focus: no supply chain, but deeper in social media, HR, and healthcare analytics domains. Choose SSODL for cross-domain analytics management; NMIMS for supply chain analytics specifically.\n\n**vs MUJ Online MBA Analytics and Data Science:** MUJ is NAAC A+ and NIRF #58 at Rs 1,53,000-1,80,000. MUJ Analytics covers Python, R, and advanced ML with a more technically deep data science credential. SSODL Business Analytics is broader in domain coverage and more management-oriented. For technical data scientist roles, MUJ Analytics is more targeted. For analytics management across multiple business domains, SSODL is more applicable.",
+    "whoHires": {
+      "body": "Business Analytics MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** IT services and consulting, BFSI analytics, E-commerce, Healthcare technology, FMCG analytics, Management consulting\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Consultant, BI Analyst, Marketing Analyst\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, Head of Business Intelligence, Senior Data Analyst, Marketing Analytics Manager\n\n**Senior roles (7+ years):** VP Analytics, Head of Data and Analytics, Chief Data Officer, Analytics Practice Head\n\n**Top hiring organisations:** Infosys, TCS, Accenture, Deloitte Analytics, KPMG Data and Analytics, IBM Analytics, Amazon India, Flipkart, HDFC Bank Analytics, Kotak Bank Analytics, Swiggy, Zomato"
+    },
+    "skills": {
+      "body": "The SSODL Business Analytics specialisation builds multi-domain analytics skills that management consulting and business intelligence employers specifically seek:\n\n**Technical skills:**\n- Visual Analytics: Tableau and Power BI dashboard design, executive reporting, and data visualisation for non-technical audiences\n- Spreadsheet Modelling: advanced Excel and Google Sheets financial, operational, and forecasting model construction\n- Social Media Analytics: campaign reach measurement, sentiment analysis, influencer ROI tracking, and brand mention monitoring\n- Business Forecasting: time-series modelling, demand forecasting, and scenario planning for strategic planning teams\n\n**Applied skills:**\n- Multi-domain Analytics: HR Analytics, Marketing and Sales Analytics, Financial Analytics, and Healthcare Analytics covering four distinct business domains in a single programme\n- AI and ML for Business Management: ML model evaluation, AI product assessment, and analytics platform decision-making for management roles\n\n**Soft skills:** Presenting analytics findings to non-technical boards, translating data insights into business recommendations, managing analytics project stakeholders, and building business cases for analytics investment."
+    },
+    "comparisons": {
+      "body": "Comparing SSODL Online MBA Business Analytics against peers:\n\n**vs Amity Online MBA Business Analytics:** Amity is NAAC A+ and NIRF #22 at Rs 2,25,000. Amity Business Analytics focuses on Power BI, supervised ML, and domain analytics across business functions. SSODL Business Analytics covers a broader domain set: HR Analytics, Social Media Analytics, Healthcare Analytics, and Financial Analytics as dedicated Sem 3-4 subjects. Amity is more affordable. SSODL carries stronger Pune-region brand recognition. For pure cost efficiency, Amity is the stronger value.\n\n**vs NMIMS Online MBA Operations and Data Sciences Management:** NMIMS Ops and Data Sciences combines supply chain management depth with analytics. SSODL Business Analytics is purer in analytics focus: no supply chain, but deeper in social media, HR, and healthcare analytics domains. Choose SSODL for cross-domain analytics management; NMIMS for supply chain analytics specifically.\n\n**vs MUJ Online MBA Analytics and Data Science:** MUJ is NAAC A+ and NIRF #58 at Rs 1,53,000-1,80,000. MUJ Analytics covers Python, R, and advanced ML with a more technically deep data science credential. SSODL Business Analytics is broader in domain coverage and more management-oriented. For technical data scientist roles, MUJ Analytics is more targeted. For analytics management across multiple business domains, SSODL is more applicable."
+    },
     "fees": {
-      "body": "The SSODL Online MBA in Business Analytics offers 2 fee tracks based on applicant work experience:\n\n**Track 1 — Standard (under 2 years work experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,70,000 across 4 semesters\n- Semester breakdown: Rs 92,500 each for Sem 1-2 and Rs 87,500 each for Sem 3-4\n- Year 1 total: Rs 1,95,000 (including Rs 10,000 registration)\n- Year 2 total: Rs 1,75,000\n\n**Track 2 — With Work Experience Scholarship (2+ years experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,15,000 after Rs 55,000 experience-based scholarship\n- Semester breakdown: Rs 80,000 each for Sem 1-2 and Rs 72,500 each for Sem 3-4\n- Year 1 total: Rs 1,70,000\n- Year 2 total: Rs 1,45,000\n\nThe Rs 55,000 experience scholarship applies whether you pay semester-wise or opt for one-time upfront payment. Submit 2+ years work experience proof during admission to claim.\n\nEMI is available through the university's marketing partner. This is interest-bearing EMI, not zero-cost. Contact our counsellor for current EMI tenure options and approval terms.\n\nEdifyEdu reconfirms fees with SSODL each quarter. Please reconfirm current fees and scholarship eligibility with our counsellor before any payment. Fees listed are indicative."
+      "body": "The SSODL Online MBA in Business Analytics offers 2 fee tracks based on applicant work experience:\n\n**Track 1 \u00e2\u20ac\u201d Standard (under 2 years work experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,70,000 across 4 semesters\n- Semester breakdown: Rs 92,500 each for Sem 1-2 and Rs 87,500 each for Sem 3-4\n- Year 1 total: Rs 1,95,000 (including Rs 10,000 registration)\n- Year 2 total: Rs 1,75,000\n\n**Track 2 \u00e2\u20ac\u201d With Work Experience Scholarship (2+ years experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,15,000 after Rs 55,000 experience-based scholarship\n- Semester breakdown: Rs 80,000 each for Sem 1-2 and Rs 72,500 each for Sem 3-4\n- Year 1 total: Rs 1,70,000\n- Year 2 total: Rs 1,45,000\n\nThe Rs 55,000 experience scholarship applies whether you pay semester-wise or opt for one-time upfront payment. Submit 2+ years work experience proof during admission to claim.\n\nEMI is available through the university's marketing partner. This is interest-bearing EMI, not zero-cost. Contact our counsellor for current EMI tenure options and approval terms.\n\nEdifyEdu reconfirms fees with SSODL each quarter. Please reconfirm current fees and scholarship eligibility with our counsellor before any payment. Fees listed are indicative."
     },
     "certificate": {
       "body": "The degree certificate is issued by Symbiosis International University (SIU) and carries the SIU name with the MBA designation. The Business Analytics specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India. SSODL is the UGC-DEB approved online MBA arm of SIU, distinct from SCDL."
@@ -145,6 +182,7 @@
     "wordCount": 2150,
     "generatedAt": "2026-04-21",
     "batchNumber": "Phase7-Batch12",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "batch12v2Fixed": "2026-04-21"
   }
 }

@@ -14,62 +14,99 @@
     },
     "syllabus": {
       "hasData": true,
-      "sem1Subjects": [
-        { "name": "Business Statistics", "description": "Apply descriptive statistics, probability distributions, and hypothesis testing to marketing data for evidence-based brand decisions." },
-        { "name": "Marketing Management", "description": "Understand the marketing mix, STP framework, and go-to-market strategy for product and service launches." },
-        { "name": "Financial Accounting", "description": "Read balance sheets, P&L statements, and cash flow reports relevant to brand budget management and ROI reporting." },
-        { "name": "Operations Management", "description": "Understand supply chain basics, process efficiency, and service delivery models that support marketing execution." },
-        { "name": "Legal Aspects of Business", "description": "Apply contract law, consumer protection regulations, and advertising standards to marketing campaigns." },
-        { "name": "Human Resource Management", "description": "Manage marketing team structure, incentive design, and talent sourcing for brand and sales functions." },
-        { "name": "Research Methodology", "description": "Design consumer surveys, focus groups, and panel studies for market research assignments." },
-        { "name": "Microeconomics", "description": "Apply price elasticity, demand analysis, and market structure theory to pricing and competitive positioning." },
-        { "name": "Technology in Business", "description": "Evaluate martech stack components: CRM platforms, marketing automation, and analytics dashboards for brand teams." },
-        { "name": "Data Driven Decision Making", "description": "Use data visualisation and basic analytics to support marketing budget allocation and campaign optimisation." }
-      ],
-      "sem2Subjects": [
-        { "name": "Organizational Behaviour", "description": "Manage cross-functional marketing teams, navigate agency relationships, and lead creative briefs effectively." },
-        { "name": "Operations Research", "description": "Apply optimisation models to distribution route planning and sales territory assignment." },
-        { "name": "Macroeconomics", "description": "Interpret GDP trends, inflation cycles, and consumer sentiment shifts for marketing planning." },
-        { "name": "Financial Management", "description": "Manage marketing budgets, calculate brand investment ROI, and present business cases for marketing spend." },
-        { "name": "R Programming", "description": "Run consumer data analysis, segment profiling, and campaign effectiveness models using R." },
-        { "name": "Project Management", "description": "Apply agile and waterfall project frameworks to campaign timelines and agency deliverable management." },
-        { "name": "Management Information Systems", "description": "Evaluate CRM and marketing information systems for customer data capture and campaign tracking." },
-        { "name": "Business Communication", "description": "Write creative briefs, client presentations, and board-level marketing strategy documents." },
-        { "name": "Consumer Behaviour and Insights", "description": "Decode purchase decision drivers, buyer personas, and cultural influences on brand choice." },
-        { "name": "Digital Marketing", "description": "Plan SEO, paid search, social media, and content marketing campaigns for consumer brands." },
-        { "name": "Design Thinking", "description": "Apply human-centred design to packaging, in-store experience, and digital campaign ideation." },
-        { "name": "Innovation Management", "description": "Manage product innovation pipelines, line extension decisions, and new category entry strategies." }
-      ],
       "sem3Subjects": [
-        { "name": "Project I (4 Credits)", "description": "Conduct a structured marketing research project on a live brand or category of the student's choice." },
-        { "name": "Corporate Governance and Ethics", "description": "Apply ESG principles and responsible marketing practices to brand communications and campaign strategy." },
-        { "name": "Crisis Management in Business", "description": "Manage brand reputation crises, product recall communications, and social media incident response." },
-        { "name": "Strategic Management", "description": "Develop competitive strategy, SWOT analysis, and long-range marketing roadmaps for business units." },
-        { "name": "AI and ML for Business Management", "description": "Apply AI-powered personalisation, predictive churn models, and recommendation engine logic to marketing." },
-        { "name": "Brand Management", "description": "Build brand equity through positioning, architecture decisions, brand extension analysis, and brand health metrics." },
-        { "name": "Integrated Marketing Communication", "description": "Plan ATL, BTL, and digital channel mix for unified campaign messaging and media budget allocation." },
-        { "name": "Services Marketing", "description": "Apply the 7Ps model to service brand management in hospitality, BFSI, healthcare, and telecom sectors." },
-        { "name": "Retail Management", "description": "Manage category strategy, planogram design, visual merchandising, and trade marketing for retail channels." }
+        {
+          "name": "Project I (4 Credits)",
+          "description": "Conduct a structured marketing research project on a live brand or category of the student's choice."
+        },
+        {
+          "name": "Corporate Governance and Ethics",
+          "description": "Apply ESG principles and responsible marketing practices to brand communications and campaign strategy."
+        },
+        {
+          "name": "Crisis Management in Business",
+          "description": "Manage brand reputation crises, product recall communications, and social media incident response."
+        },
+        {
+          "name": "Strategic Management",
+          "description": "Develop competitive strategy, SWOT analysis, and long-range marketing roadmaps for business units."
+        },
+        {
+          "name": "AI and ML for Business Management",
+          "description": "Apply AI-powered personalisation, predictive churn models, and recommendation engine logic to marketing."
+        },
+        {
+          "name": "Brand Management",
+          "description": "Build brand equity through positioning, architecture decisions, brand extension analysis, and brand health metrics."
+        },
+        {
+          "name": "Integrated Marketing Communication",
+          "description": "Plan ATL, BTL, and digital channel mix for unified campaign messaging and media budget allocation."
+        },
+        {
+          "name": "Services Marketing",
+          "description": "Apply the 7Ps model to service brand management in hospitality, BFSI, healthcare, and telecom sectors."
+        },
+        {
+          "name": "Retail Management",
+          "description": "Manage category strategy, planogram design, visual merchandising, and trade marketing for retail channels."
+        }
       ],
       "sem4Subjects": [
-        { "name": "Project II (10 Credits)", "description": "Complete a full marketing dissertation applying Sem 3-4 theory to a real brand or market problem." },
-        { "name": "Entrepreneurship", "description": "Build a marketing-led startup pitch: value proposition, channel strategy, and go-to-market plan." },
-        { "name": "Global Business Environment", "description": "Adapt brand and marketing strategy for international market entry, cultural segmentation, and export channels." },
-        { "name": "Conflict and Negotiation", "description": "Negotiate agency fees, media buys, and co-marketing agreements with partners and vendors." },
-        { "name": "Doing Business in India", "description": "Understand regional consumer diversity, tier-2/tier-3 market penetration, and rural distribution in India." },
-        { "name": "Business Transformation and Organizational Turnaround", "description": "Lead marketing function restructuring during brand portfolio rationalisation and corporate transformation." },
-        { "name": "Marketing Analytics", "description": "Apply attribution modelling, marketing mix modelling, and A/B testing frameworks to campaign performance." },
-        { "name": "Sales Force and Channel Management", "description": "Design territory structures, distributor incentive schemes, and secondary sales tracking for FMCG and B2B." },
-        { "name": "Customer Relationship Management", "description": "Implement CRM strategy, loyalty programme design, and customer lifetime value analysis for brand retention." },
-        { "name": "Product Management", "description": "Manage product roadmaps, feature prioritisation, and cross-functional launch execution for consumer products." }
+        {
+          "name": "Project II (10 Credits)",
+          "description": "Complete a full marketing dissertation applying Sem 3-4 theory to a real brand or market problem."
+        },
+        {
+          "name": "Entrepreneurship",
+          "description": "Build a marketing-led startup pitch: value proposition, channel strategy, and go-to-market plan."
+        },
+        {
+          "name": "Global Business Environment",
+          "description": "Adapt brand and marketing strategy for international market entry, cultural segmentation, and export channels."
+        },
+        {
+          "name": "Conflict and Negotiation",
+          "description": "Negotiate agency fees, media buys, and co-marketing agreements with partners and vendors."
+        },
+        {
+          "name": "Doing Business in India",
+          "description": "Understand regional consumer diversity, tier-2/tier-3 market penetration, and rural distribution in India."
+        },
+        {
+          "name": "Business Transformation and Organizational Turnaround",
+          "description": "Lead marketing function restructuring during brand portfolio rationalisation and corporate transformation."
+        },
+        {
+          "name": "Marketing Analytics",
+          "description": "Apply attribution modelling, marketing mix modelling, and A/B testing frameworks to campaign performance."
+        },
+        {
+          "name": "Sales Force and Channel Management",
+          "description": "Design territory structures, distributor incentive schemes, and secondary sales tracking for FMCG and B2B."
+        },
+        {
+          "name": "Customer Relationship Management",
+          "description": "Implement CRM strategy, loyalty programme design, and customer lifetime value analysis for brand retention."
+        },
+        {
+          "name": "Product Management",
+          "description": "Manage product roadmaps, feature prioritisation, and cross-functional launch execution for consumer products."
+        }
       ],
-      "note": "Sem 1-2 subjects are shared across all SSODL MBA specialisations. The Marketing specialisation adds 9 subjects in Sem 3 and 10 subjects in Sem 4."
+      "note": "Sem 1-2 shared core subjects across all SSODL MBA specialisations. See the main SSODL Online MBA page for core subject list."
     },
-    "whoHires": "Marketing MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** FMCG, Consumer technology, Retail, Digital marketing agencies, D2C brands, Media and entertainment\n\n**Entry-level roles:** Brand Executive (management track), Category Analyst, Digital Marketing Manager, Trade Marketing Executive\n\n**Mid-level roles (3-5 years experience):** Brand Manager, Senior Brand Manager, Head of Digital Marketing, Marketing Analytics Manager\n\n**Senior roles (7+ years):** VP Marketing, Marketing Director, CMO, Group Brand Manager\n\n**Top hiring organisations:** HUL, P&G India, Nestle India, Mondelez, Dabur, Marico, Godrej Consumer Products, ITC FMCG, Reckitt, GroupM, Publicis India, Swiggy, Zomato, Reliance Retail",
-    "skills": "The SSODL Marketing specialisation builds skills that FMCG and consumer brand employers test at brand manager and marketing head levels:\n\n**Technical skills:**\n- Brand Management: brand equity measurement, brand funnel analysis, positioning statement development, and brand extension risk assessment\n- Marketing Analytics: attribution modelling, marketing mix modelling, A/B testing, and campaign performance dashboards using digital tools\n- Integrated Marketing Communication: ATL and BTL channel planning, media mix optimisation, and campaign brief writing for unified brand campaigns\n- AI and ML for Business Management: AI-powered personalisation logic, predictive churn models, and recommendation engine concepts for martech-aware brand management\n\n**Applied skills:**\n- Sales Force and Channel Management: territory design, distributor incentive schemes, secondary sales tracking, and trade marketing for FMCG national sales roles\n- Retail Management: category strategy, visual merchandising, and trade marketing for modern and general trade channels\n\n**Soft skills:** Writing creative briefs for external agencies, presenting brand health data to senior management, defending marketing investment against finance teams in P&L reviews, and managing cross-functional campaign execution.",
-    "comparisons": "Comparing SSODL Online MBA Marketing against peers:\n\n**vs Amity Online MBA Marketing and Sales Management:** Amity is NAAC A+ and NIRF #22 at Rs 2,25,000. Amity Marketing and Sales covers brand management, IMC, and sales management with a focus on breadth. SSODL Marketing adds AI and ML for Business Management, R Programming, and Marketing Analytics as dedicated subjects, creating a stronger tech-in-marketing profile. SSODL's Rs 3.15L (with scholarship) is higher than Amity, but the Symbiosis brand carries stronger recognition in Pune and western India FMCG companies.\n\n**vs MUJ Online MBA Marketing:** MUJ is NAAC A+ and NIRF #58 at Rs 1,53,000-1,80,000. MUJ Marketing is more affordable with Coursera Plus included, but the MUJ brand is newer in the FMCG hiring market. SSODL's Symbiosis brand is more established at Pune-headquartered consumer companies. Choose MUJ for cost and Coursera access; choose SSODL for Symbiosis recognition.\n\n**vs NMIMS Online MBA Marketing Management:** NMIMS is NAAC A++ at Rs 1.96L-2.20L. NMIMS Marketing is stronger for Mumbai-headquartered FMCG brand management and carries higher name recognition at HUL, P&G, and Mondelez hiring. SSODL is more competitive for Pune-region FMCG and consumer technology companies.",
+    "whoHires": {
+      "body": "Marketing MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** FMCG, Consumer technology, Retail, Digital marketing agencies, D2C brands, Media and entertainment\n\n**Entry-level roles:** Brand Executive (management track), Category Analyst, Digital Marketing Manager, Trade Marketing Executive\n\n**Mid-level roles (3-5 years experience):** Brand Manager, Senior Brand Manager, Head of Digital Marketing, Marketing Analytics Manager\n\n**Senior roles (7+ years):** VP Marketing, Marketing Director, CMO, Group Brand Manager\n\n**Top hiring organisations:** HUL, P&G India, Nestle India, Mondelez, Dabur, Marico, Godrej Consumer Products, ITC FMCG, Reckitt, GroupM, Publicis India, Swiggy, Zomato, Reliance Retail"
+    },
+    "skills": {
+      "body": "The SSODL Marketing specialisation builds skills that FMCG and consumer brand employers test at brand manager and marketing head levels:\n\n**Technical skills:**\n- Brand Management: brand equity measurement, brand funnel analysis, positioning statement development, and brand extension risk assessment\n- Marketing Analytics: attribution modelling, marketing mix modelling, A/B testing, and campaign performance dashboards using digital tools\n- Integrated Marketing Communication: ATL and BTL channel planning, media mix optimisation, and campaign brief writing for unified brand campaigns\n- AI and ML for Business Management: AI-powered personalisation logic, predictive churn models, and recommendation engine concepts for martech-aware brand management\n\n**Applied skills:**\n- Sales Force and Channel Management: territory design, distributor incentive schemes, secondary sales tracking, and trade marketing for FMCG national sales roles\n- Retail Management: category strategy, visual merchandising, and trade marketing for modern and general trade channels\n\n**Soft skills:** Writing creative briefs for external agencies, presenting brand health data to senior management, defending marketing investment against finance teams in P&L reviews, and managing cross-functional campaign execution."
+    },
+    "comparisons": {
+      "body": "Comparing SSODL Online MBA Marketing against peers:\n\n**vs Amity Online MBA Marketing and Sales Management:** Amity is NAAC A+ and NIRF #22 at Rs 2,25,000. Amity Marketing and Sales covers brand management, IMC, and sales management with a focus on breadth. SSODL Marketing adds AI and ML for Business Management, R Programming, and Marketing Analytics as dedicated subjects, creating a stronger tech-in-marketing profile. SSODL's Rs 3.15L (with scholarship) is higher than Amity, but the Symbiosis brand carries stronger recognition in Pune and western India FMCG companies.\n\n**vs MUJ Online MBA Marketing:** MUJ is NAAC A+ and NIRF #58 at Rs 1,53,000-1,80,000. MUJ Marketing is more affordable with Coursera Plus included, but the MUJ brand is newer in the FMCG hiring market. SSODL's Symbiosis brand is more established at Pune-headquartered consumer companies. Choose MUJ for cost and Coursera access; choose SSODL for Symbiosis recognition.\n\n**vs NMIMS Online MBA Marketing Management:** NMIMS is NAAC A++ at Rs 1.96L-2.20L. NMIMS Marketing is stronger for Mumbai-headquartered FMCG brand management and carries higher name recognition at HUL, P&G, and Mondelez hiring. SSODL is more competitive for Pune-region FMCG and consumer technology companies."
+    },
     "fees": {
-      "body": "The SSODL Online MBA in Marketing offers 2 fee tracks based on applicant work experience:\n\n**Track 1 — Standard (under 2 years work experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,70,000 across 4 semesters\n- Semester breakdown: Rs 92,500 each for Sem 1-2 and Rs 87,500 each for Sem 3-4\n- Year 1 total: Rs 1,95,000 (including Rs 10,000 registration)\n- Year 2 total: Rs 1,75,000\n\n**Track 2 — With Work Experience Scholarship (2+ years experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,15,000 after Rs 55,000 experience-based scholarship\n- Semester breakdown: Rs 80,000 each for Sem 1-2 and Rs 72,500 each for Sem 3-4\n- Year 1 total: Rs 1,70,000\n- Year 2 total: Rs 1,45,000\n\nThe Rs 55,000 experience scholarship applies whether you pay semester-wise or opt for one-time upfront payment. Submit 2+ years work experience proof during admission to claim.\n\nEMI is available through the university's marketing partner. This is interest-bearing EMI, not zero-cost. Contact our counsellor for current EMI tenure options and approval terms.\n\nEdifyEdu reconfirms fees with SSODL each quarter. Please reconfirm current fees and scholarship eligibility with our counsellor before any payment. Fees listed are indicative."
+      "body": "The SSODL Online MBA in Marketing offers 2 fee tracks based on applicant work experience:\n\n**Track 1 \u00e2\u20ac\u201d Standard (under 2 years work experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,70,000 across 4 semesters\n- Semester breakdown: Rs 92,500 each for Sem 1-2 and Rs 87,500 each for Sem 3-4\n- Year 1 total: Rs 1,95,000 (including Rs 10,000 registration)\n- Year 2 total: Rs 1,75,000\n\n**Track 2 \u00e2\u20ac\u201d With Work Experience Scholarship (2+ years experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,15,000 after Rs 55,000 experience-based scholarship\n- Semester breakdown: Rs 80,000 each for Sem 1-2 and Rs 72,500 each for Sem 3-4\n- Year 1 total: Rs 1,70,000\n- Year 2 total: Rs 1,45,000\n\nThe Rs 55,000 experience scholarship applies whether you pay semester-wise or opt for one-time upfront payment. Submit 2+ years work experience proof during admission to claim.\n\nEMI is available through the university's marketing partner. This is interest-bearing EMI, not zero-cost. Contact our counsellor for current EMI tenure options and approval terms.\n\nEdifyEdu reconfirms fees with SSODL each quarter. Please reconfirm current fees and scholarship eligibility with our counsellor before any payment. Fees listed are indicative."
     },
     "certificate": {
       "body": "The degree certificate is issued by Symbiosis International University (SIU) and carries the SIU name with the MBA designation. The Marketing specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India. SSODL is separate from SCDL; both are Symbiosis entities, but SSODL is the UGC-DEB approved online MBA arm."
@@ -92,7 +129,7 @@
           "year": 2023,
           "rating": 4,
           "liked": "AI and ML for Business Management in Sem 2 was unexpectedly strong. Helped me pitch a personalisation project to my manager.",
-          "disliked": "Fees are higher than online MBA peers. Interest-bearing EMI adds to the total cost — I wish zero-cost EMI was available like some other unis.",
+          "disliked": "Fees are higher than online MBA peers. Interest-bearing EMI adds to the total cost \u00e2\u20ac\u201d I wish zero-cost EMI was available like some other unis.",
           "body": "Joined after 3 years in digital marketing. The work-exp scholarship knocked Rs 55K off, which helped. Content quality was solid. One missed expectation: the Symbiosis on-campus MBA alumni network does not fully overlap with SSODL alumni, so networking took more effort than expected."
         },
         {
@@ -101,7 +138,7 @@
           "year": 2024,
           "rating": 3,
           "liked": "Strong brand name on the resume. Consumer Behaviour and Insights was well-designed with real case studies.",
-          "disliked": "Placement support was passive — job board and resume review only. Proactive placement outreach was limited compared to campus MBA expectations.",
+          "disliked": "Placement support was passive \u00e2\u20ac\u201d job board and resume review only. Proactive placement outreach was limited compared to campus MBA expectations.",
           "body": "The degree is legit and the Symbiosis brand does work for Bengaluru consumer brand companies. But if you are expecting active placement like a top B-school, manage expectations. Self-driven job search is essential."
         }
       ]
@@ -145,6 +182,7 @@
     "wordCount": 2050,
     "generatedAt": "2026-04-21",
     "batchNumber": "Phase7-Batch12",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "batch12v2Fixed": "2026-04-21"
   }
 }

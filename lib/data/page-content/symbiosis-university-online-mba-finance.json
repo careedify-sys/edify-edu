@@ -14,62 +14,99 @@
     },
     "syllabus": {
       "hasData": true,
-      "sem1Subjects": [
-        { "name": "Business Statistics", "description": "Apply probability distributions, regression, and statistical inference to financial data analysis and investment research." },
-        { "name": "Marketing Management", "description": "Understand customer value propositions and go-to-market strategy relevant to financial product distribution." },
-        { "name": "Financial Accounting", "description": "Prepare and interpret financial statements, including balance sheets and income statements, for corporate finance analysis." },
-        { "name": "Operations Management", "description": "Apply process efficiency concepts to banking operations, treasury back-office, and financial services delivery." },
-        { "name": "Legal Aspects of Business", "description": "Apply company law, SEBI regulations, and contract frameworks relevant to financial transactions and compliance." },
-        { "name": "Human Resource Management", "description": "Manage finance team structure, analyst recruitment, and performance management for BFSI HR roles." },
-        { "name": "Research Methodology", "description": "Design financial research studies, quantitative analysis frameworks, and data sourcing approaches for investment research." },
-        { "name": "Microeconomics", "description": "Apply price theory, market structure analysis, and demand-supply models to corporate pricing and competitive strategy." },
-        { "name": "Technology in Business", "description": "Evaluate fintech platforms, algorithmic trading concepts, and digital banking technology for finance professionals." },
-        { "name": "Data Driven Decision Making", "description": "Apply data analytics to credit risk assessment, portfolio performance tracking, and financial reporting automation." }
-      ],
-      "sem2Subjects": [
-        { "name": "Organizational Behaviour", "description": "Manage finance and investment teams, build client relationships, and navigate deal team dynamics in BFSI." },
-        { "name": "Operations Research", "description": "Apply linear programming and optimisation models to portfolio construction and resource allocation." },
-        { "name": "Macroeconomics", "description": "Interpret GDP trends, interest rate cycles, and monetary policy impact on equity and bond markets." },
-        { "name": "Financial Management", "description": "Apply capital structure theory, WACC, DCF valuation, and working capital management to corporate finance decisions." },
-        { "name": "R Programming", "description": "Build financial models, run portfolio analysis, and automate return calculation using R." },
-        { "name": "Project Management", "description": "Apply project finance frameworks and timeline management to infrastructure and deal execution." },
-        { "name": "Management Information Systems", "description": "Evaluate banking MIS, treasury management systems, and financial reporting platforms." },
-        { "name": "Business Communication", "description": "Write investment memos, credit notes, valuation reports, and board-level financial presentations." },
-        { "name": "Consumer Behaviour and Insights", "description": "Understand financial product consumer behaviour for retail banking, wealth management, and insurance marketing." },
-        { "name": "Digital Marketing", "description": "Apply digital acquisition strategy for BFSI product cross-sell, fintech customer onboarding, and investment platform growth." },
-        { "name": "Design Thinking", "description": "Apply human-centred design to financial product development, digital banking UX, and payment solution ideation." },
-        { "name": "Innovation Management", "description": "Evaluate fintech innovation trends, open banking frameworks, and digital disruption in financial services." }
-      ],
       "sem3Subjects": [
-        { "name": "Project I (4 Credits)", "description": "Conduct a structured financial research project on a company valuation, sector analysis, or investment thesis." },
-        { "name": "Corporate Governance and Ethics", "description": "Apply board governance standards, ESG reporting frameworks, and financial ethics to corporate finance roles." },
-        { "name": "Crisis Management in Business", "description": "Manage financial distress scenarios, liquidity crisis communication, and restructuring decision frameworks." },
-        { "name": "Strategic Management", "description": "Develop corporate strategy, M&A rationale, and competitive positioning for financial services firms." },
-        { "name": "AI and ML for Business Management", "description": "Apply algorithmic credit scoring, fraud detection models, and robo-advisory concepts to BFSI technology roles." },
-        { "name": "Derivative Markets", "description": "Price options, futures, and swaps; apply hedging strategies for corporate treasury and fund management." },
-        { "name": "Mergers and Acquisitions", "description": "Understand deal sourcing, due diligence, synergy analysis, and post-merger integration for investment banking roles." },
-        { "name": "Corporate Valuation", "description": "Apply DCF, comparable company analysis, and precedent transaction multiples to company valuation for PE and IB." },
-        { "name": "Security Analysis and Portfolio Management", "description": "Build equity research frameworks, screen securities, and construct risk-adjusted portfolios using Modern Portfolio Theory." }
+        {
+          "name": "Project I (4 Credits)",
+          "description": "Conduct a structured financial research project on a company valuation, sector analysis, or investment thesis."
+        },
+        {
+          "name": "Corporate Governance and Ethics",
+          "description": "Apply board governance standards, ESG reporting frameworks, and financial ethics to corporate finance roles."
+        },
+        {
+          "name": "Crisis Management in Business",
+          "description": "Manage financial distress scenarios, liquidity crisis communication, and restructuring decision frameworks."
+        },
+        {
+          "name": "Strategic Management",
+          "description": "Develop corporate strategy, M&A rationale, and competitive positioning for financial services firms."
+        },
+        {
+          "name": "AI and ML for Business Management",
+          "description": "Apply algorithmic credit scoring, fraud detection models, and robo-advisory concepts to BFSI technology roles."
+        },
+        {
+          "name": "Derivative Markets",
+          "description": "Price options, futures, and swaps; apply hedging strategies for corporate treasury and fund management."
+        },
+        {
+          "name": "Mergers and Acquisitions",
+          "description": "Understand deal sourcing, due diligence, synergy analysis, and post-merger integration for investment banking roles."
+        },
+        {
+          "name": "Corporate Valuation",
+          "description": "Apply DCF, comparable company analysis, and precedent transaction multiples to company valuation for PE and IB."
+        },
+        {
+          "name": "Security Analysis and Portfolio Management",
+          "description": "Build equity research frameworks, screen securities, and construct risk-adjusted portfolios using Modern Portfolio Theory."
+        }
       ],
       "sem4Subjects": [
-        { "name": "Project II (10 Credits)", "description": "Complete a full finance dissertation applying valuation, capital markets, or financial strategy theory to a real-world case." },
-        { "name": "Entrepreneurship", "description": "Evaluate startup funding structures, venture capital term sheets, and founder equity management from a finance perspective." },
-        { "name": "Global Business Environment", "description": "Analyse cross-border capital flows, sovereign risk, and international financial market dynamics for global finance roles." },
-        { "name": "Conflict and Negotiation", "description": "Negotiate deal terms, manage client disputes, and structure financial agreements in M&A and lending contexts." },
-        { "name": "Doing Business in India", "description": "Navigate RBI regulations, SEBI guidelines, Companies Act provisions, and India-specific capital market structures." },
-        { "name": "Business Transformation and Organizational Turnaround", "description": "Lead financial restructuring, debt resolution, and capital reallocation for distressed company turnarounds." },
-        { "name": "Investment Banking", "description": "Understand ECM, DCM, and M&A transaction processes including pitch book structure and deal execution mechanics." },
-        { "name": "Financial Engineering and Analytics", "description": "Build structured financial products, apply quantitative models, and use analytics for fixed income and derivatives pricing." },
-        { "name": "International Finance", "description": "Manage FX risk, cross-border treasury operations, and currency hedging strategy for MNC and international banking." },
-        { "name": "Behavioral Finance", "description": "Apply cognitive bias research, investor sentiment analysis, and market anomaly theory to investment decision-making." }
+        {
+          "name": "Project II (10 Credits)",
+          "description": "Complete a full finance dissertation applying valuation, capital markets, or financial strategy theory to a real-world case."
+        },
+        {
+          "name": "Entrepreneurship",
+          "description": "Evaluate startup funding structures, venture capital term sheets, and founder equity management from a finance perspective."
+        },
+        {
+          "name": "Global Business Environment",
+          "description": "Analyse cross-border capital flows, sovereign risk, and international financial market dynamics for global finance roles."
+        },
+        {
+          "name": "Conflict and Negotiation",
+          "description": "Negotiate deal terms, manage client disputes, and structure financial agreements in M&A and lending contexts."
+        },
+        {
+          "name": "Doing Business in India",
+          "description": "Navigate RBI regulations, SEBI guidelines, Companies Act provisions, and India-specific capital market structures."
+        },
+        {
+          "name": "Business Transformation and Organizational Turnaround",
+          "description": "Lead financial restructuring, debt resolution, and capital reallocation for distressed company turnarounds."
+        },
+        {
+          "name": "Investment Banking",
+          "description": "Understand ECM, DCM, and M&A transaction processes including pitch book structure and deal execution mechanics."
+        },
+        {
+          "name": "Financial Engineering and Analytics",
+          "description": "Build structured financial products, apply quantitative models, and use analytics for fixed income and derivatives pricing."
+        },
+        {
+          "name": "International Finance",
+          "description": "Manage FX risk, cross-border treasury operations, and currency hedging strategy for MNC and international banking."
+        },
+        {
+          "name": "Behavioral Finance",
+          "description": "Apply cognitive bias research, investor sentiment analysis, and market anomaly theory to investment decision-making."
+        }
       ],
-      "note": "Sem 1-2 subjects are shared across all SSODL MBA specialisations. The Finance specialisation adds 9 subjects in Sem 3 and 10 subjects in Sem 4."
+      "note": "Sem 1-2 shared core subjects across all SSODL MBA specialisations. See the main SSODL Online MBA page for core subject list."
     },
-    "whoHires": "Finance MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** BFSI, Investment banking, Corporate finance, Asset management, Big Four financial advisory\n\n**Entry-level roles:** Corporate Finance Analyst, Treasury Analyst, Investment Banking Analyst, FP&A Analyst, Equity Research Associate\n\n**Mid-level roles (3-5 years experience):** Corporate Finance Manager, VP Treasury, Portfolio Manager, Head of FP&A, M&A Associate\n\n**Senior roles (7+ years):** CFO, MD (Investment Banking), Fund Manager, Head of Corporate Finance\n\n**Top hiring organisations:** Kotak Mahindra Bank, HDFC Bank Corporate Banking, ICICI Bank Investment Banking, Axis Capital, JM Financial, Deloitte Financial Advisory, EY Transaction Advisory, KPMG Deal Advisory, Motilal Oswal, ICICI Lombard, SBI Life Insurance",
-    "skills": "The SSODL Finance specialisation builds skills that BFSI and capital markets employers test at MBA-level interviews:\n\n**Technical skills:**\n- Corporate Valuation: DCF modelling, comparable company analysis, EV/EBITDA multiples, and M&A acquisition price justification for investment banking and PE fund roles\n- Derivative Markets: options pricing, futures and forwards hedging strategy, and swap application for corporate treasury and risk management desk roles\n- Security Analysis and Portfolio Management: equity research frameworks, portfolio construction, and risk-adjusted return analysis for wealth and asset management\n- Financial Engineering and Analytics: structured product design, quantitative pricing models, and analytics for fixed income and derivatives teams\n\n**Applied skills:**\n- Investment Banking Process: ECM and DCM transaction mechanics, pitch book structure, and M&A deal process for analyst and associate roles\n- Behavioral Finance: cognitive bias application, investor sentiment analysis, and anomaly-based strategy for fund management and wealth advisory\n\n**Soft skills:** Presenting financial models to investment committees, writing credit memos for lending decisions, defending valuation assumptions in M&A negotiations, and structuring complex deal presentations for institutional clients.",
-    "comparisons": "Comparing SSODL Online MBA Finance against peers:\n\n**vs Amity Online MBA Finance and Accounting Management:** Amity is NAAC A+ and NIRF #22 at Rs 2,25,000. Amity Finance covers accounting depth and taxation alongside financial management. SSODL Finance focuses on capital markets: Derivative Markets, Mergers and Acquisitions, Corporate Valuation, Investment Banking, and Financial Engineering. For investment banking and capital markets careers, SSODL Finance is more targeted. Amity is more competitive for CFO-track and accounting-heavy roles and at a lower fee.\n\n**vs NMIMS Online MBA Financial Management:** NMIMS is NAAC A++ at Rs 1.96L-2.20L with stronger Mumbai BFSI brand recognition. NMIMS Financial Management covers similar capital markets subjects. SSODL Finance adds Behavioral Finance as a dedicated subject and carries Symbiosis brand recognition in Pune-region BFSI. For Mumbai investment banking hiring, NMIMS carries a stronger brand advantage. For Pune and western India BFSI, SSODL is competitive.\n\n**vs MUJ Online MBA Finance:** MUJ is NAAC A+ and NIRF #58 at Rs 1,53,000-1,80,000 with Coursera Plus. MUJ Finance covers corporate finance broadly with a more affordable fee. SSODL carries stronger brand recognition in BFSI hiring in western India and the Pune corporate ecosystem.",
+    "whoHires": {
+      "body": "Finance MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** BFSI, Investment banking, Corporate finance, Asset management, Big Four financial advisory\n\n**Entry-level roles:** Corporate Finance Analyst, Treasury Analyst, Investment Banking Analyst, FP&A Analyst, Equity Research Associate\n\n**Mid-level roles (3-5 years experience):** Corporate Finance Manager, VP Treasury, Portfolio Manager, Head of FP&A, M&A Associate\n\n**Senior roles (7+ years):** CFO, MD (Investment Banking), Fund Manager, Head of Corporate Finance\n\n**Top hiring organisations:** Kotak Mahindra Bank, HDFC Bank Corporate Banking, ICICI Bank Investment Banking, Axis Capital, JM Financial, Deloitte Financial Advisory, EY Transaction Advisory, KPMG Deal Advisory, Motilal Oswal, ICICI Lombard, SBI Life Insurance"
+    },
+    "skills": {
+      "body": "The SSODL Finance specialisation builds skills that BFSI and capital markets employers test at MBA-level interviews:\n\n**Technical skills:**\n- Corporate Valuation: DCF modelling, comparable company analysis, EV/EBITDA multiples, and M&A acquisition price justification for investment banking and PE fund roles\n- Derivative Markets: options pricing, futures and forwards hedging strategy, and swap application for corporate treasury and risk management desk roles\n- Security Analysis and Portfolio Management: equity research frameworks, portfolio construction, and risk-adjusted return analysis for wealth and asset management\n- Financial Engineering and Analytics: structured product design, quantitative pricing models, and analytics for fixed income and derivatives teams\n\n**Applied skills:**\n- Investment Banking Process: ECM and DCM transaction mechanics, pitch book structure, and M&A deal process for analyst and associate roles\n- Behavioral Finance: cognitive bias application, investor sentiment analysis, and anomaly-based strategy for fund management and wealth advisory\n\n**Soft skills:** Presenting financial models to investment committees, writing credit memos for lending decisions, defending valuation assumptions in M&A negotiations, and structuring complex deal presentations for institutional clients."
+    },
+    "comparisons": {
+      "body": "Comparing SSODL Online MBA Finance against peers:\n\n**vs Amity Online MBA Finance and Accounting Management:** Amity is NAAC A+ and NIRF #22 at Rs 2,25,000. Amity Finance covers accounting depth and taxation alongside financial management. SSODL Finance focuses on capital markets: Derivative Markets, Mergers and Acquisitions, Corporate Valuation, Investment Banking, and Financial Engineering. For investment banking and capital markets careers, SSODL Finance is more targeted. Amity is more competitive for CFO-track and accounting-heavy roles and at a lower fee.\n\n**vs NMIMS Online MBA Financial Management:** NMIMS is NAAC A++ at Rs 1.96L-2.20L with stronger Mumbai BFSI brand recognition. NMIMS Financial Management covers similar capital markets subjects. SSODL Finance adds Behavioral Finance as a dedicated subject and carries Symbiosis brand recognition in Pune-region BFSI. For Mumbai investment banking hiring, NMIMS carries a stronger brand advantage. For Pune and western India BFSI, SSODL is competitive.\n\n**vs MUJ Online MBA Finance:** MUJ is NAAC A+ and NIRF #58 at Rs 1,53,000-1,80,000 with Coursera Plus. MUJ Finance covers corporate finance broadly with a more affordable fee. SSODL carries stronger brand recognition in BFSI hiring in western India and the Pune corporate ecosystem."
+    },
     "fees": {
-      "body": "The SSODL Online MBA in Finance offers 2 fee tracks based on applicant work experience:\n\n**Track 1 — Standard (under 2 years work experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,70,000 across 4 semesters\n- Semester breakdown: Rs 92,500 each for Sem 1-2 and Rs 87,500 each for Sem 3-4\n- Year 1 total: Rs 1,95,000 (including Rs 10,000 registration)\n- Year 2 total: Rs 1,75,000\n\n**Track 2 — With Work Experience Scholarship (2+ years experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,15,000 after Rs 55,000 experience-based scholarship\n- Semester breakdown: Rs 80,000 each for Sem 1-2 and Rs 72,500 each for Sem 3-4\n- Year 1 total: Rs 1,70,000\n- Year 2 total: Rs 1,45,000\n\nThe Rs 55,000 experience scholarship applies whether you pay semester-wise or opt for one-time upfront payment. Submit 2+ years work experience proof during admission to claim.\n\nEMI is available through the university's marketing partner. This is interest-bearing EMI, not zero-cost. Contact our counsellor for current EMI tenure options and approval terms.\n\nEdifyEdu reconfirms fees with SSODL each quarter. Please reconfirm current fees and scholarship eligibility with our counsellor before any payment. Fees listed are indicative."
+      "body": "The SSODL Online MBA in Finance offers 2 fee tracks based on applicant work experience:\n\n**Track 1 \u00e2\u20ac\u201d Standard (under 2 years work experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,70,000 across 4 semesters\n- Semester breakdown: Rs 92,500 each for Sem 1-2 and Rs 87,500 each for Sem 3-4\n- Year 1 total: Rs 1,95,000 (including Rs 10,000 registration)\n- Year 2 total: Rs 1,75,000\n\n**Track 2 \u00e2\u20ac\u201d With Work Experience Scholarship (2+ years experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,15,000 after Rs 55,000 experience-based scholarship\n- Semester breakdown: Rs 80,000 each for Sem 1-2 and Rs 72,500 each for Sem 3-4\n- Year 1 total: Rs 1,70,000\n- Year 2 total: Rs 1,45,000\n\nThe Rs 55,000 experience scholarship applies whether you pay semester-wise or opt for one-time upfront payment. Submit 2+ years work experience proof during admission to claim.\n\nEMI is available through the university's marketing partner. This is interest-bearing EMI, not zero-cost. Contact our counsellor for current EMI tenure options and approval terms.\n\nEdifyEdu reconfirms fees with SSODL each quarter. Please reconfirm current fees and scholarship eligibility with our counsellor before any payment. Fees listed are indicative."
     },
     "certificate": {
       "body": "The degree certificate is issued by Symbiosis International University (SIU) and carries the SIU name with the MBA designation. The Finance specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India. SSODL is separate from SCDL; both are Symbiosis entities, but SSODL is the UGC-DEB approved online MBA arm."
@@ -92,7 +129,7 @@
           "year": 2023,
           "rating": 4,
           "liked": "Behavioral Finance was genuinely insightful. R Programming in Sem 2 helped me build financial models that impressed interview panels.",
-          "disliked": "The Rs 3.70L standard fee is high compared to alternatives. Interest-bearing EMI adds further cost — zero-cost EMI would have been much better.",
+          "disliked": "The Rs 3.70L standard fee is high compared to alternatives. Interest-bearing EMI adds further cost \u00e2\u20ac\u201d zero-cost EMI would have been much better.",
           "body": "Good programme with strong capital markets depth. The Symbiosis name helped in Chennai BFSI hiring more than I expected. However, if cost is a major factor, Amity or MUJ Finance at lower fees are worth comparing."
         },
         {
@@ -102,7 +139,7 @@
           "rating": 3,
           "liked": "Strong subject coverage, especially Mergers and Acquisitions and Security Analysis.",
           "disliked": "Placement support was limited to a job portal. Active placement outreach for investment banking roles did not happen. Had to self-source interviews.",
-          "body": "The programme content is solid and the Symbiosis name matters. But for investment banking roles in Mumbai, the NMIMS brand carries stronger recognition at top investment banks. Useful programme — just set realistic placement expectations."
+          "body": "The programme content is solid and the Symbiosis name matters. But for investment banking roles in Mumbai, the NMIMS brand carries stronger recognition at top investment banks. Useful programme \u00e2\u20ac\u201d just set realistic placement expectations."
         }
       ]
     },
@@ -145,6 +182,7 @@
     "wordCount": 2080,
     "generatedAt": "2026-04-21",
     "batchNumber": "Phase7-Batch12",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "batch12v2Fixed": "2026-04-21"
   }
 }

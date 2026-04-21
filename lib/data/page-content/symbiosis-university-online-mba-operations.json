@@ -14,62 +14,99 @@
     },
     "syllabus": {
       "hasData": true,
-      "sem1Subjects": [
-        { "name": "Business Statistics", "description": "Apply statistical process control, SPC charts, and quality metrics as quantitative tools for operations management." },
-        { "name": "Marketing Management", "description": "Understand customer demand signals and market requirements as inputs to operations and supply chain planning." },
-        { "name": "Financial Accounting", "description": "Manage operations cost centres, capex decisions, and maintenance budget reporting using financial accounting tools." },
-        { "name": "Operations Management", "description": "Build foundational operations management skills: process flow design, capacity planning, and inventory control." },
-        { "name": "Legal Aspects of Business", "description": "Apply procurement contract law, vendor agreement structures, and regulatory compliance to operations management." },
-        { "name": "Human Resource Management", "description": "Manage operations team workforce planning, shift scheduling, and performance management for plant and service teams." },
-        { "name": "Research Methodology", "description": "Design operations research studies, process benchmarking frameworks, and data collection methods for operations improvement." },
-        { "name": "Microeconomics", "description": "Apply cost theory, economies of scale, and make-or-buy decision frameworks to operations strategy." },
-        { "name": "Technology in Business", "description": "Evaluate ERP platforms, MES systems, and IoT-enabled operations technology for manufacturing and service operations." },
-        { "name": "Data Driven Decision Making", "description": "Apply operations analytics, OEE dashboards, and process performance data to evidence-based operations decisions." }
-      ],
-      "sem2Subjects": [
-        { "name": "Organizational Behaviour", "description": "Manage cross-functional operations teams, shift supervisors, and cross-site coordination in manufacturing organisations." },
-        { "name": "Operations Research", "description": "Apply linear programming, transportation models, and simulation to operations planning and resource allocation." },
-        { "name": "Macroeconomics", "description": "Interpret commodity price cycles, trade policy shifts, and economic indicators impacting operations cost structures." },
-        { "name": "Financial Management", "description": "Manage working capital, capex investment decisions, and operations cost budgeting." },
-        { "name": "R Programming", "description": "Build process analytics models, production data visualisations, and quality control statistical charts using R." },
-        { "name": "Project Management", "description": "Apply project management methodologies to plant expansion, process reengineering, and new line commissioning." },
-        { "name": "Management Information Systems", "description": "Evaluate ERP, SCADA, and operations MIS for manufacturing and service operations data management." },
-        { "name": "Business Communication", "description": "Write operations reports, management presentations, and COO-level performance dashboards." },
-        { "name": "Consumer Behaviour and Insights", "description": "Translate customer demand signals and service expectations into operations capacity and quality requirements." },
-        { "name": "Digital Marketing", "description": "Apply digital channel strategy to operations-adjacent functions: e-procurement platforms and vendor portal management." },
-        { "name": "Design Thinking", "description": "Apply human-centred design to service operations UX, operations workflow redesign, and employee experience improvement." },
-        { "name": "Innovation Management", "description": "Evaluate Industry 4.0 innovation trends: automation, robotics, additive manufacturing, and digital twin applications." }
-      ],
       "sem3Subjects": [
-        { "name": "Project I (4 Credits)", "description": "Conduct an operations research project on a process improvement, quality, or procurement challenge at a real organisation." },
-        { "name": "Corporate Governance and Ethics", "description": "Apply ESG-linked operations standards, responsible sourcing policies, and environmental compliance to operations management." },
-        { "name": "Crisis Management in Business", "description": "Manage supply disruption response, production shutdown recovery, and business continuity planning for operations." },
-        { "name": "Strategic Management", "description": "Align operations strategy to business strategy: capacity roadmaps, make-vs-buy decisions, and global operations network design." },
-        { "name": "AI and ML for Business Management", "description": "Apply predictive maintenance models, AI-driven quality inspection, and ML-based demand forecasting to operations management." },
-        { "name": "Procurement and Materials Management", "description": "Design vendor evaluation frameworks, e-procurement processes, category strategy, and materials requirements planning." },
-        { "name": "Service Operations Management", "description": "Apply the 7Ps service model, service blueprint design, and capacity-demand balancing to service industry operations." },
-        { "name": "Total Quality Management", "description": "Implement Six Sigma DMAIC, ISO 9001 management system design, SPC chart interpretation, and quality audit management." },
-        { "name": "Operations Planning and Scheduling", "description": "Apply master production scheduling, MRP systems, and capacity planning to manufacturing operations environments." }
+        {
+          "name": "Project I (4 Credits)",
+          "description": "Conduct an operations research project on a process improvement, quality, or procurement challenge at a real organisation."
+        },
+        {
+          "name": "Corporate Governance and Ethics",
+          "description": "Apply ESG-linked operations standards, responsible sourcing policies, and environmental compliance to operations management."
+        },
+        {
+          "name": "Crisis Management in Business",
+          "description": "Manage supply disruption response, production shutdown recovery, and business continuity planning for operations."
+        },
+        {
+          "name": "Strategic Management",
+          "description": "Align operations strategy to business strategy: capacity roadmaps, make-vs-buy decisions, and global operations network design."
+        },
+        {
+          "name": "AI and ML for Business Management",
+          "description": "Apply predictive maintenance models, AI-driven quality inspection, and ML-based demand forecasting to operations management."
+        },
+        {
+          "name": "Procurement and Materials Management",
+          "description": "Design vendor evaluation frameworks, e-procurement processes, category strategy, and materials requirements planning."
+        },
+        {
+          "name": "Service Operations Management",
+          "description": "Apply the 7Ps service model, service blueprint design, and capacity-demand balancing to service industry operations."
+        },
+        {
+          "name": "Total Quality Management",
+          "description": "Implement Six Sigma DMAIC, ISO 9001 management system design, SPC chart interpretation, and quality audit management."
+        },
+        {
+          "name": "Operations Planning and Scheduling",
+          "description": "Apply master production scheduling, MRP systems, and capacity planning to manufacturing operations environments."
+        }
       ],
       "sem4Subjects": [
-        { "name": "Project II (10 Credits)", "description": "Complete a full operations management dissertation applying process improvement or supply chain theory to a real case." },
-        { "name": "Entrepreneurship", "description": "Design operations infrastructure for a startup: manufacturing partnerships, production scalability, and cost structure." },
-        { "name": "Global Business Environment", "description": "Manage global operations networks: offshore manufacturing, international vendor management, and cross-border compliance." },
-        { "name": "Conflict and Negotiation", "description": "Negotiate procurement contracts, vendor SLAs, and cross-functional operations agreements." },
-        { "name": "Doing Business in India", "description": "Apply India-specific manufacturing regulations, GST impact on operations, and industrial cluster strategy." },
-        { "name": "Business Transformation and Organizational Turnaround", "description": "Lead operations transformation during restructuring, post-acquisition integration, and business model pivots." },
-        { "name": "Outsourcing and IT Delivery Models", "description": "Design outsourcing strategy, manage third-party operations contracts, and evaluate IT service delivery models." },
-        { "name": "International Logistics", "description": "Manage cross-border freight, customs clearance, incoterms, and international distribution network design." },
-        { "name": "Digital Manufacturing and Analytics", "description": "Apply IoT sensor data, MES analytics, OEE dashboards, and digital twin concepts to smart manufacturing." },
-        { "name": "Lean Six Sigma", "description": "Apply Green Belt level DMAIC tools: value stream mapping, waste elimination, and process capability analysis." }
+        {
+          "name": "Project II (10 Credits)",
+          "description": "Complete a full operations management dissertation applying process improvement or supply chain theory to a real case."
+        },
+        {
+          "name": "Entrepreneurship",
+          "description": "Design operations infrastructure for a startup: manufacturing partnerships, production scalability, and cost structure."
+        },
+        {
+          "name": "Global Business Environment",
+          "description": "Manage global operations networks: offshore manufacturing, international vendor management, and cross-border compliance."
+        },
+        {
+          "name": "Conflict and Negotiation",
+          "description": "Negotiate procurement contracts, vendor SLAs, and cross-functional operations agreements."
+        },
+        {
+          "name": "Doing Business in India",
+          "description": "Apply India-specific manufacturing regulations, GST impact on operations, and industrial cluster strategy."
+        },
+        {
+          "name": "Business Transformation and Organizational Turnaround",
+          "description": "Lead operations transformation during restructuring, post-acquisition integration, and business model pivots."
+        },
+        {
+          "name": "Outsourcing and IT Delivery Models",
+          "description": "Design outsourcing strategy, manage third-party operations contracts, and evaluate IT service delivery models."
+        },
+        {
+          "name": "International Logistics",
+          "description": "Manage cross-border freight, customs clearance, incoterms, and international distribution network design."
+        },
+        {
+          "name": "Digital Manufacturing and Analytics",
+          "description": "Apply IoT sensor data, MES analytics, OEE dashboards, and digital twin concepts to smart manufacturing."
+        },
+        {
+          "name": "Lean Six Sigma",
+          "description": "Apply Green Belt level DMAIC tools: value stream mapping, waste elimination, and process capability analysis."
+        }
       ],
-      "note": "Sem 1-2 subjects are shared across all SSODL MBA specialisations. The Operations specialisation adds 9 subjects in Sem 3 and 10 subjects in Sem 4."
+      "note": "Sem 1-2 shared core subjects across all SSODL MBA specialisations. See the main SSODL Online MBA page for core subject list."
     },
-    "whoHires": "Operations MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** Manufacturing, FMCG supply chain, IT-enabled operations, E-commerce fulfilment, Management consulting (operations practice)\n\n**Entry-level roles:** Operations Analyst, Supply Chain Analyst, Procurement Manager, Project Manager, Quality Manager\n\n**Mid-level roles (3-5 years experience):** Operations Manager, Plant Manager, Supply Chain Manager, Procurement Head, Quality Head\n\n**Senior roles (7+ years):** VP Operations, COO, Head of Procurement, Operations Transformation Director\n\n**Top hiring organisations:** Bajaj Auto, Mahindra Group, Tata Motors, Kirloskar Group, HUL Supply Chain, Nestle Manufacturing, Amazon India Operations, Flipkart Fulfilment, Infosys Operations Consulting, Accenture Operations",
-    "skills": "The SSODL Operations specialisation builds skills that manufacturing and IT-enabled services employers test at operations manager and COO-track levels:\n\n**Technical skills:**\n- Total Quality Management: Six Sigma DMAIC problem-solving, SPC chart interpretation, ISO 9001 management system design, and quality audit management\n- Digital Manufacturing and Analytics: IoT sensor data interpretation, MES analytics, OEE dashboards, and digital twin concepts for smart manufacturing roles\n- Procurement and Materials Management: vendor evaluation, e-procurement platforms, category strategy, and MRP for procurement manager and CPO-track roles\n- Lean Six Sigma: Green Belt level DMAIC application, value stream mapping, waste elimination, and process capability analysis\n\n**Applied skills:**\n- Operations Planning and Scheduling: master production scheduling, MRP systems, and capacity planning for manufacturing environments\n- Outsourcing and IT Delivery Models: outsourcing strategy design, third-party operations contract management, and IT service delivery evaluation\n\n**Soft skills:** Presenting operations analytics to the COO, building business cases for capital investment in automation, managing cross-functional operations transformation projects, and negotiating vendor contracts.",
-    "comparisons": "Comparing SSODL Online MBA Operations against peers:\n\n**vs Amity Online MBA Production and Operations Management:** Amity is NAAC A+ and NIRF #22 at Rs 2,25,000. Amity Production and Operations covers lean manufacturing, TQM, and supply chain fundamentals. SSODL Operations adds Digital Manufacturing and Analytics, AI and ML for Business Management, and Outsourcing and IT Delivery Models, positioning it better for Industry 4.0 and tech-enabled operations roles. Amity is more affordable and better for traditional manufacturing plant management.\n\n**vs NMIMS Online MBA Operations and Data Sciences Management:** NMIMS Ops and Data Sciences combines supply chain management with analytics subjects (IoT, EDA, Operations Analytics). SSODL Operations is stronger on traditional operations breadth: TQM, Procurement, Service Operations, and Lean Six Sigma. For data-driven supply chain roles in e-commerce, NMIMS is more targeted. For operations management breadth across manufacturing and services, SSODL covers more ground.\n\n**vs MUJ Online MBA Operations Management:** MUJ is NAAC A+ and NIRF #58 at Rs 1,53,000-1,80,000. MUJ Operations covers core operations management subjects at a lower fee with Coursera Plus. SSODL carries stronger Symbiosis brand recognition in Pune and western India manufacturing sectors. For Pune-Nashik-Aurangabad manufacturing companies, SSODL carries a meaningful brand advantage.",
+    "whoHires": {
+      "body": "Operations MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** Manufacturing, FMCG supply chain, IT-enabled operations, E-commerce fulfilment, Management consulting (operations practice)\n\n**Entry-level roles:** Operations Analyst, Supply Chain Analyst, Procurement Manager, Project Manager, Quality Manager\n\n**Mid-level roles (3-5 years experience):** Operations Manager, Plant Manager, Supply Chain Manager, Procurement Head, Quality Head\n\n**Senior roles (7+ years):** VP Operations, COO, Head of Procurement, Operations Transformation Director\n\n**Top hiring organisations:** Bajaj Auto, Mahindra Group, Tata Motors, Kirloskar Group, HUL Supply Chain, Nestle Manufacturing, Amazon India Operations, Flipkart Fulfilment, Infosys Operations Consulting, Accenture Operations"
+    },
+    "skills": {
+      "body": "The SSODL Operations specialisation builds skills that manufacturing and IT-enabled services employers test at operations manager and COO-track levels:\n\n**Technical skills:**\n- Total Quality Management: Six Sigma DMAIC problem-solving, SPC chart interpretation, ISO 9001 management system design, and quality audit management\n- Digital Manufacturing and Analytics: IoT sensor data interpretation, MES analytics, OEE dashboards, and digital twin concepts for smart manufacturing roles\n- Procurement and Materials Management: vendor evaluation, e-procurement platforms, category strategy, and MRP for procurement manager and CPO-track roles\n- Lean Six Sigma: Green Belt level DMAIC application, value stream mapping, waste elimination, and process capability analysis\n\n**Applied skills:**\n- Operations Planning and Scheduling: master production scheduling, MRP systems, and capacity planning for manufacturing environments\n- Outsourcing and IT Delivery Models: outsourcing strategy design, third-party operations contract management, and IT service delivery evaluation\n\n**Soft skills:** Presenting operations analytics to the COO, building business cases for capital investment in automation, managing cross-functional operations transformation projects, and negotiating vendor contracts."
+    },
+    "comparisons": {
+      "body": "Comparing SSODL Online MBA Operations against peers:\n\n**vs Amity Online MBA Production and Operations Management:** Amity is NAAC A+ and NIRF #22 at Rs 2,25,000. Amity Production and Operations covers lean manufacturing, TQM, and supply chain fundamentals. SSODL Operations adds Digital Manufacturing and Analytics, AI and ML for Business Management, and Outsourcing and IT Delivery Models, positioning it better for Industry 4.0 and tech-enabled operations roles. Amity is more affordable and better for traditional manufacturing plant management.\n\n**vs NMIMS Online MBA Operations and Data Sciences Management:** NMIMS Ops and Data Sciences combines supply chain management with analytics subjects (IoT, EDA, Operations Analytics). SSODL Operations is stronger on traditional operations breadth: TQM, Procurement, Service Operations, and Lean Six Sigma. For data-driven supply chain roles in e-commerce, NMIMS is more targeted. For operations management breadth across manufacturing and services, SSODL covers more ground.\n\n**vs MUJ Online MBA Operations Management:** MUJ is NAAC A+ and NIRF #58 at Rs 1,53,000-1,80,000. MUJ Operations covers core operations management subjects at a lower fee with Coursera Plus. SSODL carries stronger Symbiosis brand recognition in Pune and western India manufacturing sectors. For Pune-Nashik-Aurangabad manufacturing companies, SSODL carries a meaningful brand advantage."
+    },
     "fees": {
-      "body": "The SSODL Online MBA in Operations offers 2 fee tracks based on applicant work experience:\n\n**Track 1 — Standard (under 2 years work experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,70,000 across 4 semesters\n- Semester breakdown: Rs 92,500 each for Sem 1-2 and Rs 87,500 each for Sem 3-4\n- Year 1 total: Rs 1,95,000 (including Rs 10,000 registration)\n- Year 2 total: Rs 1,75,000\n\n**Track 2 — With Work Experience Scholarship (2+ years experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,15,000 after Rs 55,000 experience-based scholarship\n- Semester breakdown: Rs 80,000 each for Sem 1-2 and Rs 72,500 each for Sem 3-4\n- Year 1 total: Rs 1,70,000\n- Year 2 total: Rs 1,45,000\n\nThe Rs 55,000 experience scholarship applies whether you pay semester-wise or opt for one-time upfront payment. Submit 2+ years work experience proof during admission to claim.\n\nEMI is available through the university's marketing partner. This is interest-bearing EMI, not zero-cost. Contact our counsellor for current EMI tenure options and approval terms.\n\nEdifyEdu reconfirms fees with SSODL each quarter. Please reconfirm current fees and scholarship eligibility with our counsellor before any payment. Fees listed are indicative."
+      "body": "The SSODL Online MBA in Operations offers 2 fee tracks based on applicant work experience:\n\n**Track 1 \u00e2\u20ac\u201d Standard (under 2 years work experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,70,000 across 4 semesters\n- Semester breakdown: Rs 92,500 each for Sem 1-2 and Rs 87,500 each for Sem 3-4\n- Year 1 total: Rs 1,95,000 (including Rs 10,000 registration)\n- Year 2 total: Rs 1,75,000\n\n**Track 2 \u00e2\u20ac\u201d With Work Experience Scholarship (2+ years experience)**:\n- Application fee: Rs 1,000\n- Registration fee: Rs 10,000 (one-time)\n- Total program fee: Rs 3,15,000 after Rs 55,000 experience-based scholarship\n- Semester breakdown: Rs 80,000 each for Sem 1-2 and Rs 72,500 each for Sem 3-4\n- Year 1 total: Rs 1,70,000\n- Year 2 total: Rs 1,45,000\n\nThe Rs 55,000 experience scholarship applies whether you pay semester-wise or opt for one-time upfront payment. Submit 2+ years work experience proof during admission to claim.\n\nEMI is available through the university's marketing partner. This is interest-bearing EMI, not zero-cost. Contact our counsellor for current EMI tenure options and approval terms.\n\nEdifyEdu reconfirms fees with SSODL each quarter. Please reconfirm current fees and scholarship eligibility with our counsellor before any payment. Fees listed are indicative."
     },
     "certificate": {
       "body": "The degree certificate is issued by Symbiosis International University (SIU) and carries the SIU name with the MBA designation. The Operations specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
@@ -145,6 +182,7 @@
     "wordCount": 2080,
     "generatedAt": "2026-04-21",
     "batchNumber": "Phase7-Batch12",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "batch12v2Fixed": "2026-04-21"
   }
 }
