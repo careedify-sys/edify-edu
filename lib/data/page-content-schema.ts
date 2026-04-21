@@ -1,3 +1,58 @@
+// ── Spec page content types ─────────────────────────────────────────────────
+
+export interface SubjectEntry {
+  name: string;
+  description: string;
+}
+
+export interface SpecPageContent {
+  uniSlug: string;
+  program: string;
+  specSlug: string;
+  sections: {
+    hero?: { eyebrow?: string; headline?: string; sub?: string };
+    tldr?: string;
+    about?: { body?: string };
+    syllabus?: {
+      hasData: boolean;
+      sem3Subjects?: SubjectEntry[];
+      sem4Subjects?: SubjectEntry[];
+      note?: string;
+      emptyFallback?: string;
+    };
+    whoHires?: { body?: string };
+    skills?: { body?: string };
+    comparisons?: { body?: string };
+    fees?: { body?: string };
+    certificate?: { body?: string };
+    reviews?: {
+      intro?: string;
+      items?: Array<{
+        name: string;
+        city: string;
+        year: number;
+        rating: number;
+        liked: string;
+        disliked: string;
+        body: string;
+      }>;
+    };
+    faqs?: Array<{ question: string; answer: string }>;
+    chooseAlternatives?: {
+      chooseIf?: string[];
+      consider?: string[];
+    };
+  };
+  metadata: {
+    wordCount?: number;
+    generatedAt: string;
+    batchNumber?: number;
+    hasSyllabusData?: boolean;
+  };
+}
+
+// ── Main program page content types ─────────────────────────────────────────
+
 export interface ReviewItem {
   name: string;
   city: string;
