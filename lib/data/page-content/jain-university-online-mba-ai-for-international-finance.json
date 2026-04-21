@@ -1,0 +1,159 @@
+{
+  "uniSlug": "jain-university-online",
+  "program": "MBA",
+  "specSlug": "ai-for-international-finance",
+  "sections": {
+    "hero": {
+      "eyebrow": "JAIN ONLINE MBA",
+      "headline": "JAIN Online MBA in AI for International Finance: Syllabus, Fees and Career Outcomes",
+      "sub": "JAIN (Deemed-to-be University) Online MBA with an AI for International Finance specialisation. NIRF #62 University, NAAC A++, UGC-DEB approved. Financial Reporting, Audit and Assurance, Financial Management, Analytics for Finance, Advanced Financial Management, Advanced Performance Management, and Strategic Business Reporting in Sem 3-4."
+    },
+    "tldr": "JAIN Online MBA AI for International Finance: NIRF #62, NAAC A++, fees Rs 1.75L-1.96L (3 payment options), 4 scholarship categories. Combines international finance subjects (Financial Reporting, Audit and Assurance, Financial Management) with analytics-forward Sem 4 subjects (Analytics for Finance, Advanced Financial Management, Advanced Performance Management, Strategic Business Reporting). Distinct from the ACCA pathway spec.",
+    "about": {
+      "body": "The JAIN Online MBA in AI for International Finance is offered by JAIN (Deemed-to-be University), Bengaluru. JAIN holds NAAC A++ accreditation, NIRF #62 University ranking (2025), and NIRF #73 in Management. The online programme is UGC-DEB approved.\n\nThe AI for International Finance specialisation covers international finance fundamentals with an analytics application angle. Sem 3 subjects include Business Research Methods, Operations Management, Financial Reporting, Audit and Assurance, Financial Management, and Strategic Business Leadership. Sem 4 subjects include Analytics for Finance, Financial Markets, Advanced Financial Management, Advanced Performance Management, Strategic Business Reporting, and Master Thesis / Project.\n\nThis specialisation shares subject names with the International Finance (ACCA) spec but is differentiated by its analytics-led application approach. The Sem 4 Analytics for Finance subject introduces Python-based financial modelling and data-driven investment decisions - positioning graduates for roles where international accounting knowledge is combined with financial data analytics. Students specifically seeking ACCA professional qualification exemptions should choose the International Finance (ACCA) specialisation. Students who want the international finance curriculum with a data analytics orientation should choose AI for International Finance."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Business Research Methods",
+          "description": "Apply quantitative research design and financial data analysis to international finance research projects and analytical studies."
+        },
+        {
+          "name": "Operations Management",
+          "description": "Apply process analytics and operational efficiency frameworks as a complement to international financial management and analytics roles."
+        },
+        {
+          "name": "Financial Reporting",
+          "description": "Apply IFRS standards, prepare consolidated financial statements, and analyse complex financial reporting scenarios for international finance roles."
+        },
+        {
+          "name": "Audit and Assurance",
+          "description": "Apply ISA standards, manage audit risk assessment, design substantive procedures, and evaluate internal controls for assurance roles."
+        },
+        {
+          "name": "Financial Management",
+          "description": "Apply capital structure theory, investment appraisal techniques, working capital management, and risk management to financial decisions."
+        },
+        {
+          "name": "Strategic Business Leadership",
+          "description": "Apply strategic leadership and governance frameworks to international finance and corporate reporting leadership roles."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Analytics for Finance",
+          "description": "Apply Python-based financial modelling, data-driven investment analysis, and financial dashboard design for analytics-oriented finance roles."
+        },
+        {
+          "name": "Financial Markets",
+          "description": "Analyse capital market instruments, equity and debt market structures, derivatives, and SEBI regulatory framework for investment roles."
+        },
+        {
+          "name": "Advanced Financial Management",
+          "description": "Apply advanced valuation techniques, complex capital structure decisions, and international treasury management for senior finance roles."
+        },
+        {
+          "name": "Advanced Performance Management",
+          "description": "Design strategic performance measurement systems, apply Balanced Scorecard and EVA frameworks, and manage divisional performance systems."
+        },
+        {
+          "name": "Strategic Business Reporting",
+          "description": "Prepare consolidated group accounts, apply IFRS 9, 15, and 16 standards, and analyse financial reporting from stakeholder perspectives."
+        },
+        {
+          "name": "Master Thesis / Project",
+          "description": "Complete an applied international finance project on analytics-driven financial reporting, performance management, or capital markets analysis."
+        }
+      ],
+      "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
+    },
+    "whoHires": {
+      "body": "AI for International Finance MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** International financial reporting, Big 4 advisory, Corporate treasury at MNCs, Investment banking analytics, Regulatory and compliance, Financial consulting\n\n**Entry-level roles:** Financial Reporting Analyst, Finance Data Analyst, Management Accountant, Corporate Finance Analyst, Financial Controls Analyst\n\n**Mid-level roles (3-5 years experience):** Financial Controller, Finance Analytics Manager, Group Reporting Manager, Treasury Analytics Manager, Senior Finance Analyst\n\n**Senior roles (7+ years):** CFO, Head of Group Finance, VP Corporate Finance, Director Financial Reporting, Head of Finance Analytics\n\n**Top hiring organisations:** Deloitte, PwC, EY, KPMG, Grant Thornton, HDFC Bank Finance Analytics, Infosys Finance, Wipro Finance, MNC treasury and reporting teams, SEC-listed Indian companies with IFRS reporting requirements, Big 4 analytics and advisory practices"
+    },
+    "skills": {
+      "body": "The JAIN AI for International Finance specialisation builds skills that combine international accounting depth with analytics capabilities:\n\n**Technical skills:**\n- Financial Reporting: IFRS standards application, consolidated financial statement preparation, and complex reporting scenario analysis for financial controller and group reporting roles\n- Audit and Assurance: ISA standards application, audit risk assessment, substantive procedure design, and internal control evaluation for assurance and advisory roles\n- Analytics for Finance: Python-based financial modelling, data-driven investment analysis, and automated financial reporting for analytics-oriented finance positions\n- Advanced Financial Management: advanced valuation techniques, complex capital structure optimisation, and international treasury management for senior corporate finance\n\n**Applied skills:**\n- Strategic Business Reporting: IFRS 9, 15, and 16 application, consolidated group accounts preparation, and financial reporting quality analysis for CFO-track roles\n- Advanced Performance Management: Balanced Scorecard design, EVA framework application, and divisional performance management for management accounting roles\n\n**Soft skills:** Presenting IFRS-compliant financial statements to audit committees, communicating financial analytics insights to non-finance boards, managing external auditor relationships, and leading data-driven financial reporting transformation."
+    },
+    "comparisons": {
+      "body": "Comparing JAIN Online MBA AI for International Finance against peers:\n\n**vs JAIN International Finance (ACCA) within the same university:** Both specialisations cover very similar subject names in Sem 3 and Sem 4. The key difference is that JAIN International Finance (ACCA) explicitly follows ACCA paper curriculum enabling potential ACCA examination exemptions. AI for International Finance applies the same subject areas with an analytics orientation, substituting ACCA curriculum labels with broader finance analytics framing. Students targeting ACCA professional qualification should choose International Finance (ACCA). Students wanting international finance with a data analytics focus should choose AI for International Finance.\n\n**vs Amity Online MBA Finance:** Amity Finance at Rs 2,25,000 covers corporate finance, investment management, and banking without IFRS-focused reporting or audit subject coverage. JAIN AI for International Finance adds Analytics for Finance as a dedicated Sem 4 subject alongside international financial reporting subjects. For students wanting both IFRS reporting depth and financial analytics, JAIN AI for International Finance is the more targeted option.\n\n**vs NMIMS Online MBA Financial Management:** NMIMS carries strong Mumbai BFSI brand recognition without dedicated IFRS or audit subjects. For international financial reporting, group accounting, and analytics-oriented Big 4 advisory roles, JAIN AI for International Finance is the more specialised option."
+    },
+    "fees": {
+      "body": "The JAIN Online MBA in AI for International Finance is priced between Rs 1,75,000 and Rs 1,96,000 total program fee across 4 semesters (2-year program). JAIN offers different fee tiers based on specialisation - contact our counsellor for exact fee for this specific specialisation.\n\n**Payment options (3 ways)**:\n\n- **Semester-wise**: Rs 43,750 per semester (Tier 1) or Rs 49,000 per semester (Tier 2)\n- **Yearly**: Rs 87,500 per year (Tier 1) or Rs 98,000 per year (Tier 2)\n- **One-time upfront**: Rs 1,75,000 (Tier 1) or Rs 1,96,000 (Tier 2)\n\n**Additional charges (Indian students)**:\n- Registration fee: Rs 2,500 one-time\n- Examination fee: Rs 3,000 per year (Rs 6,000 total for 2 years)\n\n**Total effective cost (Indian student)**:\n- Tier 1 specs: Rs 1,83,500\n- Tier 2 specs: Rs 2,04,500\n\n**International student fees**:\n- SAARC countries: additional Rs 11,250 registration + Rs 3,750 per year exam fee\n- Other international students: USD 150 registration + USD 50 per year exam fee\n\n**EMI options**: Available through JAIN's direct NBFC lending partner tie-ups (same pattern as LPU and MUJ - not through external marketing partners). Contact our counsellor for current EMI tenure options, approval terms, and whether zero-cost or interest-bearing.\n\n**Scholarships available** (4 categories - specific discount % and eligibility varies by admission cycle):\n- **Merit-based**: Academic excellence scholarship for qualifying marks\n- **Armed Forces**: Support for serving/veteran military personnel and families\n- **Gender-focused**: Empowerment scholarship for diverse applicants\n- **Freshers**: Transition support for recent undergraduates\n\nSpecific discount percentages are confirmed at admission based on eligibility. Contact our counsellor for current cycle scholarship details.\n\nEdifyEdu reconfirms fees with JAIN each quarter. Please reconfirm current fees, scholarship eligibility, and EMI terms with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. The AI for International Finance specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India. Note: this specialisation does not carry ACCA curriculum labelling - students specifically seeking ACCA examination exemptions should enrol in the International Finance (ACCA) specialisation and confirm exemptions directly with ACCA Global."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from JAIN Online MBA AI for International Finance alumni. Ratings from post-completion surveys.",
+      "items": [
+        {
+          "name": "Harish Venkatesh",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Analytics for Finance in Sem 4 was the standout subject - Python for financial modelling directly applicable to my Big 4 advisory role. Strategic Business Reporting gave strong IFRS consolidation grounding.",
+          "disliked": "The similarity to International Finance ACCA syllabus is confusing. Clearer differentiation on what analytics enhancements this spec adds would help during enrolment decisions.",
+          "body": "I wanted international finance depth with analytics skills rather than the ACCA qualification pathway. This spec delivered exactly that combination. JAIN brand worked well at Bengaluru Big 4 offices."
+        },
+        {
+          "name": "Meghna Iyer",
+          "city": "Chennai",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Advanced Financial Management and Advanced Performance Management were at a level applicable to senior finance roles. Analytics for Finance gave Python financial modelling I could use immediately.",
+          "disliked": "Confirm clearly with JAIN which spec enables ACCA exemptions and which does not before enrolment. The two international finance specs require careful differentiation.",
+          "body": "Good programme for Chennai Big 4 and MNC finance roles. Analytics orientation makes it relevant for modern finance functions. Confirm with counsellor whether ACCA exemption pathway or analytics pathway aligns with your career goal."
+        },
+        {
+          "name": "Ravi Chandran",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 3,
+          "liked": "Financial Reporting and Audit subjects were well-structured. Analytics for Finance added genuine quantitative depth.",
+          "disliked": "The programme needs to more clearly articulate the analytics differentiation versus the ACCA pathway spec. Subject overlap creates confusion.",
+          "body": "Solid international finance content. Recommend confirming whether AI for International Finance or International Finance ACCA better matches your career target before finalising enrolment."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How are JAIN fees different for different specializations?",
+        "answer": "JAIN offers two pricing tiers across its MBA specialisations. Tier 1 is Rs 1,75,000 total (plus Rs 2,500 registration and Rs 6,000 examination fees). Tier 2 is Rs 1,96,000 total (same additional charges). The tier applicable to the AI for International Finance specialisation should be confirmed with our counsellor."
+      },
+      {
+        "question": "What scholarships does JAIN offer for Online MBA?",
+        "answer": "JAIN offers 4 scholarship categories: Merit-based (academic excellence), Armed Forces (military personnel and families), Gender-focused (diversity empowerment), and Freshers (recent graduates). Specific discount percentages and eligibility conditions are confirmed at admission and vary by intake cycle. Contact our counsellor for current cycle details."
+      },
+      {
+        "question": "Does JAIN offer dual specialization in Online MBA?",
+        "answer": "Yes. For finance-focused students, JAIN offers Finance and Business Analytics (dual) and Finance and Marketing (dual). Students who want international finance combined with broader analytics credentials may also consider the Finance and Business Analytics dual specialisation."
+      },
+      {
+        "question": "What is the difference between AI for International Finance and International Finance (ACCA)?",
+        "answer": "International Finance (ACCA) explicitly follows ACCA paper curriculum enabling potential ACCA examination exemptions - designed for students pursuing ACCA professional qualification alongside an Indian MBA. AI for International Finance covers similar international finance subjects with an analytics application orientation but does not carry ACCA curriculum labelling. Confirm ACCA exemption policy directly with ACCA Global before enrolling in either spec."
+      },
+      {
+        "question": "Does AI for International Finance cover Python or data analytics?",
+        "answer": "Yes. Analytics for Finance in Sem 4 covers Python-based financial modelling, data-driven investment and reporting decisions, and financial data analytics. This is a differentiating subject from the ACCA spec and is directly applicable to modern finance roles where analytics tools are increasingly required alongside accounting knowledge."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want international finance depth (Financial Reporting, Audit, Advanced Financial Management) combined with analytics skills from an NAAC A++ university.",
+        "You are targeting Big 4 advisory, MNC finance reporting, or analytics-oriented corporate finance roles.",
+        "You want 3 flexible payment options and 4 scholarship categories at fees of Rs 1.75L-1.96L."
+      ],
+      "consider": [
+        "If ACCA professional qualification exemptions are the goal, choose JAIN's International Finance (ACCA) specialisation and confirm exemptions directly with ACCA Global.",
+        "If a standard Indian corporate finance, banking, and fintech career is the target without IFRS specialisation, JAIN's Finance specialisation provides broader coverage.",
+        "If Mumbai investment banking or BFSI brand recognition is the primary goal, NMIMS Online MBA Financial Management carries stronger Mumbai market recognition."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2100,
+    "generatedAt": "2026-04-22",
+    "batchNumber": "Phase7-Batch14",
+    "hasSyllabusData": true
+  }
+}

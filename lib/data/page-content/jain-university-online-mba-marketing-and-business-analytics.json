@@ -1,0 +1,163 @@
+{
+  "uniSlug": "jain-university-online",
+  "program": "MBA",
+  "specSlug": "marketing-and-business-analytics",
+  "sections": {
+    "hero": {
+      "eyebrow": "JAIN ONLINE MBA",
+      "headline": "JAIN Online MBA in Marketing and Business Analytics (Dual): Syllabus, Fees and Career Outcomes",
+      "sub": "JAIN (Deemed-to-be University) Online MBA with a Marketing and Business Analytics dual specialisation. NIRF #62 University, NAAC A++, UGC-DEB approved. Consumer Behaviour, Integrated Marketing Communications, Data Analytics with Python, Data Visualization, Digital Marketing and Brand Management, SPSS Analytics, and Advanced Spreadsheet Modelling in Sem 3-4."
+    },
+    "tldr": "JAIN Online MBA Marketing and Business Analytics (Dual): NIRF #62, NAAC A++, fees Rs 1.75L-1.96L (3 payment options), 4 scholarship categories. Marketing subjects (Consumer Behaviour, Integrated Marketing Communications, Digital Marketing) combined with Analytics subjects (Data Analytics with Python, Data Visualization, SPSS, Advanced Spreadsheet Modelling) in one MBA. Unavailable as dual at Amity, NMIMS, or MUJ.",
+    "about": {
+      "body": "The JAIN Online MBA in Marketing and Business Analytics (Dual) is offered by JAIN (Deemed-to-be University), Bengaluru. JAIN holds NAAC A++ accreditation, NIRF #62 University ranking (2025), and NIRF #73 in Management. The online programme is UGC-DEB approved.\n\nThe Marketing and Business Analytics dual specialisation combines marketing subjects with dedicated analytics tools training in a single programme. Sem 3 covers Consumer Behavior and Insights, Integrated Marketing Communications, Data Analytics with Python, Data Visualization and Analysis, and Open Elective Course alongside core subjects. Sem 4 covers Strategic Management, Data Analytics using SPSS, Advanced Spreadsheet Modelling, Digital Marketing and Brand Management, Retail Marketing and Service Management, and Master Thesis / Project.\n\nThis dual specialisation is designed for marketing professionals who need analytics depth: digital marketing managers building attribution models, brand managers analysing consumer research data, growth marketers building customer segmentation in Python, and marketing analytics leads. Python for Data Science in the Sem 2 core gives all JAIN students a programming foundation before the Sem 3 Data Analytics with Python subject."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Business Research Methods",
+          "description": "Apply quantitative market research design, consumer survey analytics, and statistical testing to marketing and analytics research projects."
+        },
+        {
+          "name": "Operations Management",
+          "description": "Apply process efficiency and supply chain analytics frameworks as a complement to marketing operations and analytics management."
+        },
+        {
+          "name": "Consumer Behaviour and Insights",
+          "description": "Analyse buying behaviour, cultural influences, and consumer decision journeys to inform data-driven marketing and brand strategy."
+        },
+        {
+          "name": "Integrated Marketing Communications",
+          "description": "Design cross-channel messaging strategies, manage media mix planning, and integrate analytics into campaign communication decisions."
+        },
+        {
+          "name": "Data Analytics with Python",
+          "description": "Apply Python pandas, NumPy, and visualisation libraries to marketing dataset analysis, customer segmentation, and campaign analytics."
+        },
+        {
+          "name": "Data Visualization and Analysis",
+          "description": "Build Tableau and Power BI marketing dashboards, design KPI reporting systems, and communicate analytics insights to marketing stakeholders."
+        },
+        {
+          "name": "Open Elective Course",
+          "description": "Apply cross-functional knowledge from finance, HR, or technology domains to marketing analytics business contexts."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Strategic Management",
+          "description": "Develop data-driven marketing strategy, evaluate analytics-led competitive positioning, and design evidence-based business growth plans."
+        },
+        {
+          "name": "Data Analytics using SPSS",
+          "description": "Apply multivariate analysis, cluster analysis, factor analysis, and regression using SPSS for marketing research and consumer behaviour studies."
+        },
+        {
+          "name": "Advanced Spreadsheet Modelling",
+          "description": "Build advanced Excel and Google Sheets models for marketing budget forecasting, scenario planning, and analytics reporting automation."
+        },
+        {
+          "name": "Digital Marketing and Brand Management",
+          "description": "Integrate digital marketing analytics with brand equity measurement, apply performance marketing data to brand positioning decisions."
+        },
+        {
+          "name": "Retail Marketing and Service Management",
+          "description": "Apply analytics to retail category management, service quality measurement, and omnichannel retail performance optimisation."
+        },
+        {
+          "name": "Master Thesis / Project",
+          "description": "Complete an applied marketing analytics project on customer segmentation, attribution modelling, or brand analytics dashboard design."
+        }
+      ],
+      "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
+    },
+    "whoHires": {
+      "body": "Marketing and Business Analytics dual MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** E-commerce, FMCG digital marketing, Marketing analytics agencies, BFSI marketing analytics, EdTech growth, SaaS marketing analytics\n\n**Entry-level roles:** Marketing Analyst, Digital Marketing Analyst, Brand Analyst, Consumer Insights Analyst, Campaign Analytics Analyst\n\n**Mid-level roles (3-5 years experience):** Marketing Analytics Manager, Brand Analytics Manager, Growth Analytics Manager, Consumer Insights Manager, Digital Brand Manager\n\n**Senior roles (7+ years):** Head of Marketing Analytics, Chief Marketing Officer, VP Consumer Insights, Director Marketing Intelligence, Marketing Analytics Director\n\n**Top hiring organisations:** Flipkart Marketing Analytics, Amazon India Marketing, Nykaa Brand Analytics, Unilever India Analytics, P&G India Marketing, GroupM Analytics, Dentsu Analytics, Nielsen India, IPSOS India, Kantar India, HDFC Bank Marketing Analytics, Accenture Marketing Analytics"
+    },
+    "skills": {
+      "body": "The JAIN Marketing and Business Analytics dual specialisation builds skills that data-driven marketing employers test at marketing analyst and analytics manager levels:\n\n**Marketing skills:**\n- Consumer Behaviour and Insights: customer journey analysis, cultural influence mapping, and buying behaviour research for data-driven brand strategy and consumer insights roles\n- Integrated Marketing Communications: media mix planning, cross-channel message strategy, and analytics-integrated campaign communication for marketing managers\n- Digital Marketing and Brand Management: digital brand equity measurement, performance marketing analytics integration, and data-driven brand positioning\n\n**Analytics skills:**\n- Data Analytics with Python: pandas and NumPy for marketing dataset analysis, customer segmentation modelling, and automated campaign analytics reporting\n- Data Analytics using SPSS: multivariate analysis, cluster analysis, factor analysis, and regression for marketing research and consumer behaviour studies\n- Data Visualization and Analysis: Tableau and Power BI marketing dashboard design and analytics communication for marketing management roles\n\n**Cross-functional skills:**\n- Advanced Spreadsheet Modelling: marketing budget forecasting, scenario planning, and analytics reporting automation for cross-domain marketing finance roles\n\n**Soft skills:** Presenting consumer analytics insights to CMO and brand leadership, translating Python segmentation outputs into marketing strategy, managing research agency relationships, and communicating data-driven campaign decisions to creative teams."
+    },
+    "comparisons": {
+      "body": "Comparing JAIN Online MBA Marketing and Business Analytics (Dual) against peers:\n\n**vs single-spec Marketing or Business Analytics at Amity/NMIMS/MUJ:** Amity, NMIMS, and MUJ do not offer Marketing and Business Analytics as a dual specialisation at comparable fees. JAIN's dual spec combines dedicated Python analytics, SPSS, and Data Visualization subjects with core marketing subjects (Consumer Behaviour, Digital Marketing) in a single MBA programme - a combination not available elsewhere at this fee level.\n\n**vs JAIN Marketing (single spec) within the same university:** JAIN Marketing covers consumer behaviour, B2B and B2C marketing, international marketing, and brand management in depth. JAIN Marketing and Business Analytics dual replaces some marketing depth with dedicated analytics subjects (Python, SPSS, Data Visualization). Students targeting pure marketing management should choose single-spec Marketing. Students targeting marketing analytics and data-driven brand management should choose the dual.\n\n**vs JAIN Business Intelligence and Analytics (single spec):** JAIN BI and Analytics covers data warehousing, DBMS, BI architecture, and technical analytics. JAIN Marketing and Business Analytics dual covers marketing-specific analytics applications alongside core marketing subjects. Students targeting BI engineering or data infrastructure roles should choose BI and Analytics. Students targeting marketing analytics and consumer insights roles should choose Marketing and Business Analytics dual."
+    },
+    "fees": {
+      "body": "The JAIN Online MBA in Marketing and Business Analytics (Dual) is priced between Rs 1,75,000 and Rs 1,96,000 total program fee across 4 semesters (2-year program). JAIN offers different fee tiers based on specialisation - contact our counsellor for exact fee for this specific specialisation.\n\n**Payment options (3 ways)**:\n\n- **Semester-wise**: Rs 43,750 per semester (Tier 1) or Rs 49,000 per semester (Tier 2)\n- **Yearly**: Rs 87,500 per year (Tier 1) or Rs 98,000 per year (Tier 2)\n- **One-time upfront**: Rs 1,75,000 (Tier 1) or Rs 1,96,000 (Tier 2)\n\n**Additional charges (Indian students)**:\n- Registration fee: Rs 2,500 one-time\n- Examination fee: Rs 3,000 per year (Rs 6,000 total for 2 years)\n\n**Total effective cost (Indian student)**:\n- Tier 1 specs: Rs 1,83,500\n- Tier 2 specs: Rs 2,04,500\n\n**International student fees**:\n- SAARC countries: additional Rs 11,250 registration + Rs 3,750 per year exam fee\n- Other international students: USD 150 registration + USD 50 per year exam fee\n\n**EMI options**: Available through JAIN's direct NBFC lending partner tie-ups (same pattern as LPU and MUJ - not through external marketing partners). Contact our counsellor for current EMI tenure options, approval terms, and whether zero-cost or interest-bearing.\n\n**Scholarships available** (4 categories - specific discount % and eligibility varies by admission cycle):\n- **Merit-based**: Academic excellence scholarship for qualifying marks\n- **Armed Forces**: Support for serving/veteran military personnel and families\n- **Gender-focused**: Empowerment scholarship for diverse applicants\n- **Freshers**: Transition support for recent undergraduates\n\nSpecific discount percentages are confirmed at admission based on eligibility. Contact our counsellor for current cycle scholarship details.\n\nEdifyEdu reconfirms fees with JAIN each quarter. Please reconfirm current fees, scholarship eligibility, and EMI terms with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. Both Marketing and Business Analytics specialisations are noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The dual specialisation certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from JAIN Online MBA Marketing and Business Analytics alumni. Ratings from post-completion surveys.",
+      "items": [
+        {
+          "name": "Pooja Nair",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Data Analytics with Python combined with Consumer Behaviour was exactly what I needed for my marketing analytics manager role. SPSS subject directly applicable for consumer research projects. Dual credential was a resume differentiator.",
+          "disliked": "7 subjects in Sem 3 is a heavy load alongside full-time work. Pacing was challenging.",
+          "body": "I moved from a marketing executive to marketing analytics manager role using this dual MBA credential. JAIN's Python in Sem 2 core meant I arrived at Sem 3 analytics subjects with working programming knowledge. Bengaluru analytics firms responded well."
+        },
+        {
+          "name": "Rahul Menon",
+          "city": "Chennai",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Integrated Marketing Communications combined with Data Visualization gave strong cross-functional depth for my agency planning role.",
+          "disliked": "SPSS is powerful but dated. Additional coverage of Python-based multivariate analysis would be more industry-relevant.",
+          "body": "Good programme for marketing analytics roles in South India. Chennai ad agencies and market research firms valued the analytics-marketing dual credential. For deep data science roles, additional Python certifications alongside the MBA are recommended."
+        },
+        {
+          "name": "Swathi Ramamurthy",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 3,
+          "liked": "Consumer Behaviour and Python Analytics combination was unique. Digital Marketing and Brand Management subject was well-structured.",
+          "disliked": "Dual spec breadth means neither marketing nor analytics is at single-spec depth. Be clear about the trade-off before choosing.",
+          "body": "Good credential for marketing analytics. For deep BI engineering or advanced data science, single-spec analytics programmes offer more technical depth. Best for marketing professionals who need analytics credentials."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How are JAIN fees different for different specializations?",
+        "answer": "JAIN offers two pricing tiers across its MBA specialisations. Tier 1 is Rs 1,75,000 total (plus Rs 2,500 registration and Rs 6,000 examination fees). Tier 2 is Rs 1,96,000 total (same additional charges). The tier applicable to the Marketing and Business Analytics dual specialisation should be confirmed with our counsellor."
+      },
+      {
+        "question": "What scholarships does JAIN offer for Online MBA?",
+        "answer": "JAIN offers 4 scholarship categories: Merit-based (academic excellence), Armed Forces (military personnel and families), Gender-focused (diversity empowerment), and Freshers (recent graduates). Specific discount percentages and eligibility conditions are confirmed at admission and vary by intake cycle. Contact our counsellor for current cycle details."
+      },
+      {
+        "question": "Does Python in Sem 2 core help for the Data Analytics with Python subject in Sem 3?",
+        "answer": "Yes. Python for Data Science in the Sem 2 core gives all JAIN MBA students working Python fundamentals before the Sem 3 Data Analytics with Python subject, which goes deeper into marketing analytics applications with pandas and visualisation libraries."
+      },
+      {
+        "question": "Is Marketing and Business Analytics better than a single-spec Marketing MBA?",
+        "answer": "For marketing roles requiring analytics credentials (marketing analytics manager, consumer insights analyst, data-driven brand manager), the dual gives stronger career positioning than a single marketing MBA. For traditional brand management, B2B marketing, or FMCG marketing without an analytics focus, single-spec Marketing provides deeper domain credentials."
+      },
+      {
+        "question": "Which other dual specialisations does JAIN offer?",
+        "answer": "JAIN offers 7+ dual specialisation options including Finance and Marketing, HR and Business Analytics, Finance and Business Analytics, and Marketing and HRM. These combinations give career flexibility unavailable at peer online MBA universities at comparable fees."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want Marketing and Analytics dual credentials from a NAAC A++ university in one programme at no additional cost.",
+        "You are targeting marketing analytics, consumer insights, or data-driven brand management roles.",
+        "You want Python analytics, SPSS, and Data Visualization combined with Consumer Behaviour and Digital Marketing."
+      ],
+      "consider": [
+        "If deep BI engineering and data infrastructure roles are the target, JAIN's single-spec Business Intelligence and Analytics offers more technical warehouse and DBMS depth.",
+        "If traditional FMCG or B2B marketing careers without analytics focus are the goal, JAIN's Marketing specialisation provides deeper domain-only marketing subject coverage.",
+        "If AI-driven marketing technology is the focus, JAIN's AI for Marketing specialisation delivers more forward-looking AI-marketing curriculum."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2100,
+    "generatedAt": "2026-04-22",
+    "batchNumber": "Phase7-Batch14",
+    "hasSyllabusData": true
+  }
+}

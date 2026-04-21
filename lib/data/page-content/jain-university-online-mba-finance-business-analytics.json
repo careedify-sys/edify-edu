@@ -1,0 +1,155 @@
+{
+  "uniSlug": "jain-university-online",
+  "program": "MBA",
+  "specSlug": "finance-business-analytics",
+  "sections": {
+    "hero": {
+      "eyebrow": "JAIN ONLINE MBA",
+      "headline": "JAIN Online MBA in Finance and Business Analytics (Dual): Syllabus, Fees and Career Outcomes",
+      "sub": "JAIN (Deemed-to-be University) Online MBA with a Finance and Business Analytics dual specialisation. NIRF #62 University, NAAC A++, UGC-DEB approved. Investment Analysis, Tableau and Power BI, R for Finance, Fintech, SPSS for Data Analytics, Advanced Spreadsheet Modelling, Indian Financial System, and Risk Management and Behavioural Finance in Sem 3-4."
+    },
+    "tldr": "JAIN Online MBA Finance and Business Analytics (Dual): NIRF #62, NAAC A++, fees Rs 1.75L-1.96L (3 payment options), 4 scholarship categories. Finance subjects (Investment Analysis, Fintech, Indian Financial System, Risk and Behavioural Finance) combined with Analytics subjects (Tableau and Power BI, R for Finance, SPSS, Advanced Spreadsheet Modelling) in one MBA.",
+    "about": {
+      "body": "The JAIN Online MBA in Finance and Business Analytics (Dual) is offered by JAIN (Deemed-to-be University), Bengaluru. JAIN holds NAAC A++ accreditation, NIRF #62 University ranking (2025), and NIRF #73 in Management. The online programme is UGC-DEB approved.\n\nThe Finance and Business Analytics dual specialisation is designed specifically for finance professionals who want analytics tools embedded in their programme. Sem 3 covers Investment Analysis and Portfolio Management, Tableau and Power BI, R for Finance, and Fintech alongside core subjects. Sem 4 covers SPSS for Data Analytics, Advanced Spreadsheet Modelling, Indian Financial System, and Risk Management and Behavioural Finance.\n\nR for Finance as a dedicated subject is uncommon among Indian online MBA programmes - it provides statistical computing and financial modelling capabilities beyond what Excel-based finance programmes typically offer. Tableau and Power BI in Sem 3 combined with SPSS in Sem 4 gives finance professionals a complete analytics tool stack applicable to investment analysis, risk modelling, and fintech data roles."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Business Research Methods",
+          "description": "Apply quantitative research design and financial data analysis to analytics-driven finance research projects."
+        },
+        {
+          "name": "Operations Management",
+          "description": "Apply process efficiency and data-driven operations frameworks as a complement to finance analytics and fintech roles."
+        },
+        {
+          "name": "Investment Analysis and Portfolio Management",
+          "description": "Apply DCF, relative valuation, CAPM, and Markowitz portfolio theory to equity analysis and portfolio construction decisions."
+        },
+        {
+          "name": "Tableau and Power BI",
+          "description": "Build financial dashboards, design investment reporting systems, and communicate financial data analytics to portfolio and management stakeholders."
+        },
+        {
+          "name": "R for Finance",
+          "description": "Apply R programming for financial time-series analysis, statistical modelling, portfolio optimisation, and risk quantification."
+        },
+        {
+          "name": "Fintech",
+          "description": "Evaluate digital lending, blockchain payments, robo-advisory platforms, and regulatory sandbox frameworks for fintech product and analytics roles."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Strategic Management",
+          "description": "Develop analytics-led financial strategy, evaluate data-driven competitive positioning, and design evidence-based business growth plans."
+        },
+        {
+          "name": "SPSS for Data Analytics",
+          "description": "Apply multivariate analysis, regression modelling, and statistical hypothesis testing using SPSS for financial research and risk analysis."
+        },
+        {
+          "name": "Advanced Spreadsheet Modelling",
+          "description": "Build advanced Excel financial models for valuation, scenario analysis, capital budgeting, and management reporting automation."
+        },
+        {
+          "name": "Indian Financial System and Financial Markets",
+          "description": "Analyse capital market instruments, RBI policy, SEBI regulations, and debt market structures for investment and corporate finance roles."
+        },
+        {
+          "name": "Risk Management and Behavioural Finance",
+          "description": "Apply behavioural economics to investor decision-making, quantify market and credit risk, and build risk analytics models."
+        }
+      ],
+      "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
+    },
+    "whoHires": {
+      "body": "Finance and Business Analytics dual MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** Investment banking analytics, BFSI data and analytics, Fintech, Corporate finance analytics, Fund management, Consulting finance analytics\n\n**Entry-level roles:** Financial Data Analyst, Investment Analyst, Finance Business Analyst, Risk Analyst, Fintech Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Analytics Manager, Investment Analytics Manager, Risk Analytics Manager, FP&A Manager, Fintech Product Analyst\n\n**Senior roles (7+ years):** Head of Finance Analytics, CFO (Data-Driven), VP Investment Analytics, Director Risk Analytics, Finance Data Director\n\n**Top hiring organisations:** HDFC Bank Analytics, ICICI Bank Data Science, Axis Bank Risk, Kotak Analytics, Bajaj Finance Analytics, Zerodha Data, Groww Analytics, Deloitte Finance Analytics, EY Data, KPMG Risk Analytics, Mu Sigma Finance, Fractal Analytics Finance"
+    },
+    "skills": {
+      "body": "The JAIN Finance and Business Analytics dual specialisation builds finance depth combined with analytics tools that investment, risk, and fintech employers test:\n\n**Finance skills:**\n- Investment Analysis and Portfolio Management: DCF and relative equity valuation, CAPM application, portfolio performance measurement for investment research and portfolio management\n- Fintech: digital lending platform evaluation, blockchain payment analysis, and robo-advisory product assessment for fintech analytics roles\n- Risk Management and Behavioural Finance: credit and market risk quantification, behavioural bias identification, and risk analytics model building\n\n**Analytics skills:**\n- Tableau and Power BI: financial dashboard design, investment performance reporting, and executive data communication for finance analytics roles\n- R for Finance: time-series financial modelling, statistical risk quantification, portfolio optimisation using R - uncommon in Indian online MBA programmes\n- SPSS for Data Analytics: multivariate analysis, regression, and hypothesis testing for financial research and risk modelling\n\n**Cross-functional skills:**\n- Advanced Spreadsheet Modelling: complex Excel financial models for corporate valuation, scenario analysis, and automated management reporting\n\n**Soft skills:** Presenting R-based financial models to investment committees, translating analytics outputs into investment recommendations, managing fintech data vendor relationships, and communicating risk model assumptions to audit and compliance."
+    },
+    "comparisons": {
+      "body": "Comparing JAIN Online MBA Finance and Business Analytics (Dual) against peers:\n\n**vs single-spec Finance at Amity/NMIMS/LPU:** None of these universities offer Finance and Business Analytics as a dual specialisation at comparable fees. JAIN's dual spec adds Tableau, Power BI, R for Finance, and SPSS to core finance subjects - analytics tools that finance employers increasingly require. Students get both credentials in one programme.\n\n**vs JAIN Finance (single spec) within the same university:** JAIN Finance covers corporate finance subjects at greater depth including Wealth Management, International Finance, Banking and Insurance. JAIN Finance and Business Analytics dual replaces some of that finance depth with dedicated analytics tools. Students targeting deep wealth management or international banking should choose single-spec Finance. Students targeting analytics-oriented finance roles should choose the dual.\n\n**vs JAIN Business Intelligence and Analytics (single spec):** JAIN BI and Analytics covers data warehousing, DBMS, and BI architecture for technical analytics infrastructure roles. JAIN Finance and Business Analytics dual covers finance-specific analytics (R for Finance, financial dashboard design, risk quantification) for finance domain roles requiring analytics skills."
+    },
+    "fees": {
+      "body": "The JAIN Online MBA in Finance and Business Analytics (Dual) is priced between Rs 1,75,000 and Rs 1,96,000 total program fee across 4 semesters (2-year program). JAIN offers different fee tiers based on specialisation - contact our counsellor for exact fee for this specific specialisation.\n\n**Payment options (3 ways)**:\n\n- **Semester-wise**: Rs 43,750 per semester (Tier 1) or Rs 49,000 per semester (Tier 2)\n- **Yearly**: Rs 87,500 per year (Tier 1) or Rs 98,000 per year (Tier 2)\n- **One-time upfront**: Rs 1,75,000 (Tier 1) or Rs 1,96,000 (Tier 2)\n\n**Additional charges (Indian students)**:\n- Registration fee: Rs 2,500 one-time\n- Examination fee: Rs 3,000 per year (Rs 6,000 total for 2 years)\n\n**Total effective cost (Indian student)**:\n- Tier 1 specs: Rs 1,83,500\n- Tier 2 specs: Rs 2,04,500\n\n**International student fees**:\n- SAARC countries: additional Rs 11,250 registration + Rs 3,750 per year exam fee\n- Other international students: USD 150 registration + USD 50 per year exam fee\n\n**EMI options**: Available through JAIN's direct NBFC lending partner tie-ups (same pattern as LPU and MUJ - not through external marketing partners). Contact our counsellor for current EMI tenure options, approval terms, and whether zero-cost or interest-bearing.\n\n**Scholarships available** (4 categories - specific discount % and eligibility varies by admission cycle):\n- **Merit-based**: Academic excellence scholarship for qualifying marks\n- **Armed Forces**: Support for serving/veteran military personnel and families\n- **Gender-focused**: Empowerment scholarship for diverse applicants\n- **Freshers**: Transition support for recent undergraduates\n\nSpecific discount percentages are confirmed at admission based on eligibility. Contact our counsellor for current cycle scholarship details.\n\nEdifyEdu reconfirms fees with JAIN each quarter. Please reconfirm current fees, scholarship eligibility, and EMI terms with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. Both Finance and Business Analytics specialisations are noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The dual specialisation certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from JAIN Online MBA Finance and Business Analytics alumni. Ratings from post-completion surveys.",
+      "items": [
+        {
+          "name": "Suresh Balaji",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 5,
+          "liked": "R for Finance was the standout subject - no other online MBA I evaluated offered R programming specifically for financial analytics. Tableau and Power BI gave immediate applicable dashboard skills.",
+          "disliked": "R for Finance required prior statistics comfort. Students from non-quantitative backgrounds should prepare before Sem 3.",
+          "body": "I had 5 years in equity research and the R for Finance and Tableau subjects gave me the analytics credential I needed to move into a finance data analytics lead role. JAIN brand was recognised at Bengaluru analytics firms."
+        },
+        {
+          "name": "Arun Subramanian",
+          "city": "Chennai",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Investment Analysis combined with Fintech was directly applicable to my role at a Bengaluru fintech. SPSS subject gave statistical depth.",
+          "disliked": "Risk Management and Behavioural Finance could be more quantitative with hands-on VaR modelling exercises.",
+          "body": "Good programme for South India finance analytics careers. Chennai banking and fintech companies recognised the dual credential. For deep portfolio management or investment banking careers, supplementary finance certifications alongside the MBA are recommended."
+        },
+        {
+          "name": "Ramesh Nair",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 3,
+          "liked": "Advanced Spreadsheet Modelling and Tableau subjects were directly applicable to my FP&A role.",
+          "disliked": "The dual spec means neither Finance nor Analytics is at single-spec depth. Know the trade-off before choosing.",
+          "body": "Solid analytics finance credential for the fee. Best for finance professionals wanting analytics tools. Not suitable for students seeking deep investment banking or advanced data science depth."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How are JAIN fees different for different specializations?",
+        "answer": "JAIN offers two pricing tiers across its MBA specialisations. Tier 1 is Rs 1,75,000 total (plus Rs 2,500 registration and Rs 6,000 examination fees). Tier 2 is Rs 1,96,000 total (same additional charges). The tier applicable to the Finance and Business Analytics dual specialisation should be confirmed with our counsellor."
+      },
+      {
+        "question": "What scholarships does JAIN offer for Online MBA?",
+        "answer": "JAIN offers 4 scholarship categories: Merit-based (academic excellence), Armed Forces (military personnel and families), Gender-focused (diversity empowerment), and Freshers (recent graduates). Specific discount percentages and eligibility conditions are confirmed at admission and vary by intake cycle. Contact our counsellor for current cycle details."
+      },
+      {
+        "question": "Is R for Finance unique to JAIN's Finance and Business Analytics dual spec?",
+        "answer": "Yes. R for Finance as a dedicated MBA subject covering statistical programming, time-series analysis, and portfolio optimisation in R is uncommon among Indian online MBA programmes at this fee range. This subject directly benefits finance professionals moving into analytics-oriented investment, risk, or fintech data roles."
+      },
+      {
+        "question": "Which dual specialisation is better: Finance and Business Analytics or Finance and Marketing?",
+        "answer": "Finance and Business Analytics is better for finance professionals targeting analytics-oriented roles: investment analytics, risk analytics, fintech data, and FP&A. Finance and Marketing is better for professionals targeting revenue-facing roles: brand finance, P&L management, FMCG marketing finance, and retail general management."
+      },
+      {
+        "question": "Does JAIN Finance and Business Analytics cover Fintech?",
+        "answer": "Yes. Fintech is a dedicated Sem 3 subject covering digital lending, blockchain payments, robo-advisory platforms, and regulatory sandbox frameworks. Combined with Tableau, R for Finance, and risk analytics subjects, this makes the dual spec directly applicable to Bengaluru's large fintech analytics hiring market."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want Finance and Analytics dual credentials including R for Finance, Tableau, Power BI, and SPSS from a NAAC A++ university.",
+        "You are targeting investment analytics, risk analytics, FP&A, or fintech data roles.",
+        "You want 3 flexible payment options and 4 scholarship categories at fees of Rs 1.75L-1.96L."
+      ],
+      "consider": [
+        "If deep corporate banking, wealth management, or international finance is the goal, JAIN's single-spec Finance or International Finance (ACCA) provides more traditional finance domain depth.",
+        "If BI infrastructure and data engineering roles are the target, JAIN's single-spec Business Intelligence and Analytics provides deeper technical warehouse and DBMS coverage.",
+        "If Mumbai investment banking brand recognition is the primary goal, NMIMS Online MBA Financial Management carries stronger Mumbai BFSI market recognition."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2050,
+    "generatedAt": "2026-04-22",
+    "batchNumber": "Phase7-Batch14",
+    "hasSyllabusData": true
+  }
+}

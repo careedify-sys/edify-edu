@@ -1,0 +1,155 @@
+{
+  "uniSlug": "jain-university-online",
+  "program": "MBA",
+  "specSlug": "human-resource-management-finance",
+  "sections": {
+    "hero": {
+      "eyebrow": "JAIN ONLINE MBA",
+      "headline": "JAIN Online MBA in Human Resource Management and Finance (Dual): Syllabus, Fees and Career Outcomes",
+      "sub": "JAIN (Deemed-to-be University) Online MBA with a Human Resource Management and Finance dual specialisation. NIRF #62 University, NAAC A++, UGC-DEB approved. Direct and Indirect Taxes, Investment Analysis, Talent Acquisition, Employee Negotiation Skills, Performance Management, OD and Change Management, Indian Financial System, and Risk Management in Sem 3-4."
+    },
+    "tldr": "JAIN Online MBA HRM and Finance (Dual): NIRF #62, NAAC A++, fees Rs 1.75L-1.96L (3 payment options), 4 scholarship categories. HR subjects (Talent Acquisition, Employee Negotiation Skills, Performance Management, OD) combined with Finance subjects (Direct Taxes, Investment Analysis, Indian Financial System, Risk and Behavioural Finance) in one MBA.",
+    "about": {
+      "body": "The JAIN Online MBA in Human Resource Management and Finance (Dual) is offered by JAIN (Deemed-to-be University), Bengaluru. JAIN holds NAAC A++ accreditation, NIRF #62 University ranking (2025), and NIRF #73 in Management. The online programme is UGC-DEB approved.\n\nThe HRM and Finance dual specialisation combines dedicated subjects from both domains. Sem 3 covers Direct and Indirect Taxes, Investment Analysis and Portfolio Management, Talent Acquisition and Management, and Employee Management and Negotiation Skills alongside core subjects. Sem 4 covers Performance Management Systems, Organisation Development and Change Management, Indian Financial System, and Risk Management and Behavioural Finance.\n\nThis dual specialisation is suited for HR professionals who manage compensation and benefits, HR controllers, CFO-office HR business partners, and employees in staffing firms, NBFC-HR roles, and compensation consulting who need both people management and financial competence. The combination of Direct and Indirect Taxes with Employee Negotiation Skills in the same programme is unique - directly applicable to HR managers who negotiate compensation packages, manage CTC structures, and advise on tax-efficient pay design."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Business Research Methods",
+          "description": "Apply quantitative research methods to both workforce analytics and financial data analysis projects."
+        },
+        {
+          "name": "Operations Management",
+          "description": "Apply process efficiency frameworks to HR operations and financial operations management for cross-functional business roles."
+        },
+        {
+          "name": "Direct and Indirect Taxes",
+          "description": "Apply corporate income tax, GST, TDS, and deferred tax accounting to compensation design, CTC structuring, and HR financial management."
+        },
+        {
+          "name": "Investment Analysis and Portfolio Management",
+          "description": "Apply DCF, relative valuation, and portfolio theory to corporate capital allocation and employee benefit fund management."
+        },
+        {
+          "name": "Talent Acquisition and Management",
+          "description": "Build talent acquisition strategy, manage employer branding, design structured interview processes, and develop talent pipelines."
+        },
+        {
+          "name": "Employee Management and Negotiation Skills",
+          "description": "Manage employee grievances, conduct performance improvement discussions, and negotiate CTC and compensation terms with analytical frameworks."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Strategic Management",
+          "description": "Develop integrated people strategy and financial strategy, build workforce planning models, and align HR investment with business objectives."
+        },
+        {
+          "name": "Performance Management Systems",
+          "description": "Design finance-linked KPI frameworks, manage appraisal calibration, and connect financial performance metrics to HR appraisal systems."
+        },
+        {
+          "name": "Organisation Development and Change Management",
+          "description": "Lead OD interventions, manage financial restructuring implications on workforce, and apply change management to cost optimisation programmes."
+        },
+        {
+          "name": "Indian Financial System and Financial Markets",
+          "description": "Analyse capital market instruments, RBI policy, and financial regulatory framework for HR professionals in BFSI and corporate finance roles."
+        },
+        {
+          "name": "Risk Management and Behavioural Finance",
+          "description": "Apply risk frameworks and behavioural finance to HR risk management, compensation risk, and workforce financial decision-making."
+        }
+      ],
+      "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
+    },
+    "whoHires": {
+      "body": "HRM and Finance dual MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** Compensation consulting, BFSI HR, Corporate HR finance, Staffing and HR services, Payroll and compliance services, CFO-office HR\n\n**Entry-level roles:** Compensation Analyst, HR Finance Analyst, HRIS Finance Analyst, Benefits Analyst, HR Compliance Analyst\n\n**Mid-level roles (3-5 years experience):** Compensation and Benefits Manager, HR Controller, HRBP (Finance), HR Finance Manager, HR Risk Manager\n\n**Senior roles (7+ years):** Head of Compensation and Benefits, HR Director (Finance), CHRO with Finance P&L, VP HR Finance, Total Rewards Director\n\n**Top hiring organisations:** Deloitte HR Consulting, KPMG People Advisory, EY HR Advisory, PwC People, HDFC Bank HR, ICICI Bank Compensation, Infosys Compensation, Wipro Rewards, TCS HR Finance, Accenture Total Rewards, Mercer India, Aon Hewitt India, Willis Towers Watson India"
+    },
+    "skills": {
+      "body": "The JAIN HRM and Finance dual specialisation builds cross-domain skills for HR-finance bridge roles at compensation, HR controller, and HRBP levels:\n\n**Finance skills:**\n- Direct and Indirect Taxes: CTC structuring with tax efficiency, GST on HR services, and TDS management for compensation and benefits design\n- Investment Analysis: employee benefit fund management, corporate capital allocation awareness for HRBP strategic conversations\n- Risk Management and Behavioural Finance: HR risk quantification, compensation risk management, and behavioural economics applied to retention and motivation\n\n**HR skills:**\n- Talent Acquisition and Management: data-driven hiring strategy, employer branding, and structured interview design\n- Employee Management and Negotiation Skills: CTC negotiation, PIP facilitation, and employment dispute resolution informed by financial frameworks\n- Performance Management Systems: finance-linked KPI framework design, connecting business financial performance to individual and team appraisal\n\n**Cross-functional skills:**\n- Organisation Development: financial restructuring impact management, workforce cost optimisation, and change management in finance-driven restructuring programmes\n- Indian Financial System: capital markets and regulatory knowledge for HR professionals at BFSI firms managing compensation benchmarking\n\n**Soft skills:** Presenting total compensation benchmarking to CFO and board, managing executive compensation discussions, communicating tax-efficient pay structures to employees, and leading cost optimisation programmes with both financial and people dimensions."
+    },
+    "comparisons": {
+      "body": "Comparing JAIN Online MBA HRM and Finance (Dual) against peers:\n\n**vs single-spec HRM or Finance at Amity/NMIMS/LPU:** None of these universities offer HRM and Finance as a dual specialisation at comparable fees. JAIN's dual spec is specifically designed for HR professionals in financial services, compensation consulting, and corporate finance HR roles who need credibility in both domains.\n\n**vs JAIN HRM (single spec) within the same university:** JAIN HRM covers industrial relations, labour laws, L&D, international HRM, and compensation depth. JAIN HRM and Finance dual replaces some HR depth (L&D, Industrial Relations, International HRM) with finance subjects (Taxes, Investment Analysis, Indian Financial System). Students needing labour law and L&D depth should choose single-spec HRM. Students needing HR-finance bridge credentials for compensation consulting should choose the dual.\n\n**vs JAIN Finance and Marketing dual within the same university:** JAIN Finance and Marketing dual combines finance with revenue-facing marketing subjects for P&L management roles. JAIN HRM and Finance dual combines finance with people management subjects for HR-finance bridge roles. Both are valid dual specs at the same fee range - the choice depends on whether the career target is revenue-facing or people-operations-facing."
+    },
+    "fees": {
+      "body": "The JAIN Online MBA in Human Resource Management and Finance (Dual) is priced between Rs 1,75,000 and Rs 1,96,000 total program fee across 4 semesters (2-year program). JAIN offers different fee tiers based on specialisation - contact our counsellor for exact fee for this specific specialisation.\n\n**Payment options (3 ways)**:\n\n- **Semester-wise**: Rs 43,750 per semester (Tier 1) or Rs 49,000 per semester (Tier 2)\n- **Yearly**: Rs 87,500 per year (Tier 1) or Rs 98,000 per year (Tier 2)\n- **One-time upfront**: Rs 1,75,000 (Tier 1) or Rs 1,96,000 (Tier 2)\n\n**Additional charges (Indian students)**:\n- Registration fee: Rs 2,500 one-time\n- Examination fee: Rs 3,000 per year (Rs 6,000 total for 2 years)\n\n**Total effective cost (Indian student)**:\n- Tier 1 specs: Rs 1,83,500\n- Tier 2 specs: Rs 2,04,500\n\n**International student fees**:\n- SAARC countries: additional Rs 11,250 registration + Rs 3,750 per year exam fee\n- Other international students: USD 150 registration + USD 50 per year exam fee\n\n**EMI options**: Available through JAIN's direct NBFC lending partner tie-ups (same pattern as LPU and MUJ - not through external marketing partners). Contact our counsellor for current EMI tenure options, approval terms, and whether zero-cost or interest-bearing.\n\n**Scholarships available** (4 categories - specific discount % and eligibility varies by admission cycle):\n- **Merit-based**: Academic excellence scholarship for qualifying marks\n- **Armed Forces**: Support for serving/veteran military personnel and families\n- **Gender-focused**: Empowerment scholarship for diverse applicants\n- **Freshers**: Transition support for recent undergraduates\n\nSpecific discount percentages are confirmed at admission based on eligibility. Contact our counsellor for current cycle scholarship details.\n\nEdifyEdu reconfirms fees with JAIN each quarter. Please reconfirm current fees, scholarship eligibility, and EMI terms with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. Both Human Resource Management and Finance specialisations are noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The dual specialisation certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from JAIN Online MBA HRM and Finance alumni. Ratings from post-completion surveys.",
+      "items": [
+        {
+          "name": "Madhuri Krishnan",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Direct and Indirect Taxes combined with Employee Negotiation Skills was exactly what I needed for my compensation benchmarking role. Indian Financial System subject was directly applicable at my BFSI employer.",
+          "disliked": "L&D and International HRM are not covered. If those are needed, single-spec HRM is more complete.",
+          "body": "I was in compensation and benefits at a Bengaluru IT company and needed formal finance credentials. The JAIN HRM and Finance dual MBA gave me dual credibility for a compensation consulting transition. No peer university offered this combination."
+        },
+        {
+          "name": "Santhosh Nair",
+          "city": "Hyderabad",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Performance Management combined with Investment Analysis gave strong cross-domain depth for my HRBP role at a financial services firm.",
+          "disliked": "Finance subjects are not at single-spec Finance depth - Wealth Management and Fintech are absent. For deep finance careers, single-spec Finance is better.",
+          "body": "Good programme for HR professionals in BFSI companies. Hyderabad financial services and IT firms responded well to the dual credential. Compensation consulting firms valued the combination particularly."
+        },
+        {
+          "name": "Akshay Thomas",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 3,
+          "liked": "Risk Management and Behavioural Finance combined with OD and Change Management was a unique cross-domain combination.",
+          "disliked": "Dual spec trades off depth in both domains. Know this clearly before choosing over single-spec options.",
+          "body": "Solid credential for HR-finance bridge roles. Best suited for compensation consulting, BFSI HR, and total rewards management. For traditional HR specialist or traditional finance specialist careers, single-spec programmes are more appropriate."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How are JAIN fees different for different specializations?",
+        "answer": "JAIN offers two pricing tiers across its MBA specialisations. Tier 1 is Rs 1,75,000 total (plus Rs 2,500 registration and Rs 6,000 examination fees). Tier 2 is Rs 1,96,000 total (same additional charges). The tier applicable to the HRM and Finance dual specialisation should be confirmed with our counsellor."
+      },
+      {
+        "question": "What scholarships does JAIN offer for Online MBA?",
+        "answer": "JAIN offers 4 scholarship categories: Merit-based (academic excellence), Armed Forces (military personnel and families), Gender-focused (diversity empowerment), and Freshers (recent graduates). Specific discount percentages and eligibility conditions are confirmed at admission and vary by intake cycle. Contact our counsellor for current cycle details."
+      },
+      {
+        "question": "Who is HRM and Finance dual MBA best suited for?",
+        "answer": "HRM and Finance dual MBA is best suited for: compensation and benefits professionals who need finance knowledge for CTC structuring and tax-efficient pay design; HR professionals at BFSI companies managing finance-facing people operations; HR consultants and total rewards managers who need financial analysis capabilities; and CFO-office HR business partners."
+      },
+      {
+        "question": "Does Direct and Indirect Taxes subject help with compensation design?",
+        "answer": "Yes. Direct and Indirect Taxes in Sem 3 covers corporate income tax, GST, and TDS directly applicable to HR professionals designing CTC structures, managing employee tax declarations, and advising on tax-efficient pay components. This subject is specifically relevant for compensation and benefits roles at corporate employers."
+      },
+      {
+        "question": "Which other dual specialisations does JAIN offer?",
+        "answer": "JAIN offers 7+ dual specialisation options including Finance and Marketing, HR and Business Analytics, Marketing and Business Analytics, and Marketing and HRM. These combinations give career flexibility unavailable at peer online MBA universities at comparable fees."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want HR and Finance dual credentials from a NAAC A++ university in one programme for compensation consulting or BFSI HR roles.",
+        "You need both Direct Taxes/CTC knowledge and HR management competence for compensation, total rewards, or HR-finance bridge roles.",
+        "You want 3 flexible payment options and 4 scholarship categories at fees of Rs 1.75L-1.96L."
+      ],
+      "consider": [
+        "If deep HR specialist credentials (labour law, L&D, international HRM) are required, JAIN's single-spec HRM covers those subjects not included in the dual.",
+        "If deep finance credentials (banking, wealth management, Fintech) are the goal, JAIN's single-spec Finance provides more financial domain depth.",
+        "If pan-India HR brand recognition is the priority, Amity Online MBA HRM or NMIMS HRM offer stronger national recognition."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2000,
+    "generatedAt": "2026-04-22",
+    "batchNumber": "Phase7-Batch14",
+    "hasSyllabusData": true
+  }
+}

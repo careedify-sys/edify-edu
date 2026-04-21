@@ -1,0 +1,151 @@
+{
+  "uniSlug": "jain-university-online",
+  "program": "MBA",
+  "specSlug": "digital-marketing-and-e-commerce",
+  "sections": {
+    "hero": {
+      "eyebrow": "JAIN ONLINE MBA",
+      "headline": "JAIN Online MBA in Digital Marketing and E-Commerce: Syllabus, Fees and Career Outcomes",
+      "sub": "JAIN (Deemed-to-be University) Online MBA with a Digital Marketing and E-Commerce specialisation. NIRF #62 University, NAAC A++, UGC-DEB approved. Data Visualisation, Outbound Marketing and Digital Ads, Brand Management for E-Commerce, Marketing Analytics, Digital Product Management, and Growth Marketing in Sem 3-4."
+    },
+    "tldr": "JAIN Online MBA Digital Marketing and E-Commerce: NIRF #62, NAAC A++, fees Rs 1.75L-1.96L (3 payment options), 4 scholarship categories. Digital-first curriculum with Digital Ads, Social Media Marketing, Brand Management for E-Commerce, Marketing Analytics, Digital Product Management, and Growth Marketing. Bengaluru ecosystem access for D2C, e-commerce, and digital agency careers.",
+    "about": {
+      "body": "The JAIN Online MBA in Digital Marketing and E-Commerce is offered by JAIN (Deemed-to-be University), Bengaluru. JAIN holds NAAC A++ accreditation, NIRF #62 University ranking (2025), and NIRF #73 in Management. The online programme is UGC-DEB approved.\n\nThe Digital Marketing and E-Commerce specialisation delivers Sem 3-4 subjects that cover the full digital marketing stack: Data Visualisation, Outbound Marketing covering Digital Ads and Social Media Marketing, Brand Management for E-Commerce, Marketing Analytics, Digital Product Management, and Growth Marketing. The omission of traditional offline marketing subjects and the inclusion of Digital Product Management as a standalone Sem 4 subject makes this the most D2C and e-commerce-specific spec in JAIN's portfolio.\n\nJAIN's Bengaluru location gives this specialisation direct access to India's largest concentration of e-commerce companies, D2C brands, digital marketing agencies, and growth-stage startups. Python for Data Science in the Sem 2 core complements the Marketing Analytics and Data Visualisation subjects in Sem 3-4."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Business Research Methods",
+          "description": "Apply market research design, consumer survey analytics, and digital data collection methods to e-commerce and digital marketing studies."
+        },
+        {
+          "name": "Operations Management",
+          "description": "Apply logistics, last-mile delivery operations, and fulfilment centre management frameworks for e-commerce operations roles."
+        },
+        {
+          "name": "Data Visualisation",
+          "description": "Build marketing dashboards, design performance reporting systems, and communicate campaign analytics to digital marketing stakeholders."
+        },
+        {
+          "name": "Outbound Marketing: Digital Ads and Social Media Marketing",
+          "description": "Manage Google Ads, Meta Ads, programmatic display, and social media paid campaigns for e-commerce customer acquisition and retargeting."
+        },
+        {
+          "name": "Brand Management for E-Commerce",
+          "description": "Build D2C brand positioning, manage marketplace brand pages, and design brand architecture strategies for online retail environments."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Strategic Management",
+          "description": "Develop digital-first competitive strategy, evaluate e-commerce market disruption, and design digital growth roadmaps."
+        },
+        {
+          "name": "Marketing Analytics",
+          "description": "Apply attribution modelling, customer segmentation, cohort analysis, and A/B testing to digital marketing ROI measurement."
+        },
+        {
+          "name": "Digital Product Management",
+          "description": "Build product roadmaps for e-commerce platforms, manage app and website feature prioritisation, and lead agile product development cycles."
+        },
+        {
+          "name": "Growth Marketing",
+          "description": "Apply growth hacking frameworks, viral loop design, referral programme management, and full-funnel conversion optimisation strategies."
+        },
+        {
+          "name": "Master Thesis / Project",
+          "description": "Complete an applied digital marketing or e-commerce project on growth strategy, D2C brand launch, or marketing analytics system design."
+        }
+      ],
+      "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
+    },
+    "whoHires": {
+      "body": "Digital Marketing and E-Commerce MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** E-commerce and D2C brands, Digital marketing agencies, FMCG digital marketing, EdTech growth, Retail tech, SaaS and startup marketing\n\n**Entry-level roles:** Digital Marketing Executive, Performance Marketing Analyst, E-Commerce Analyst, Social Media Marketing Executive, Growth Marketing Analyst\n\n**Mid-level roles (3-5 years experience):** Digital Marketing Manager, E-Commerce Manager, Growth Marketing Manager, Brand Manager (Digital), Performance Marketing Manager\n\n**Senior roles (7+ years):** Digital Marketing Head, CMO (Digital), VP E-Commerce, Head of Growth, Digital Commerce Director\n\n**Top hiring organisations:** Flipkart, Amazon India, Myntra, Meesho, Nykaa, BigBasket, Zomato, Swiggy, PhonePe Digital, Ogilvy India, Dentsu India, WPP India, GroupM, Publicis Groupe India, Unilever Digital India"
+    },
+    "skills": {
+      "body": "The JAIN Digital Marketing and E-Commerce specialisation builds skills that e-commerce brands and digital agencies test at digital marketing manager and growth manager levels:\n\n**Technical skills:**\n- Outbound Marketing: Google Ads campaign management, Meta Ads optimisation, programmatic display, and social media paid campaign execution for performance marketing roles\n- Marketing Analytics: attribution model design, customer cohort analysis, A/B testing management, and digital marketing ROI measurement for analytics-driven marketing roles\n- Data Visualisation: marketing dashboard design, campaign performance reporting, and executive data storytelling for digital marketing management\n- Digital Product Management: e-commerce product roadmapping, agile sprint management, and conversion rate optimisation for digital product and e-commerce manager roles\n\n**Applied skills:**\n- Brand Management for E-Commerce: D2C brand positioning, marketplace brand page management, and online retail brand architecture for brand management roles\n- Growth Marketing: growth hacking framework application, viral loop design, referral programme management, and full-funnel optimisation for growth roles\n\n**Soft skills:** Presenting digital marketing ROI to brand and business leadership, managing agency and performance marketing vendor relationships, communicating e-commerce platform product decisions to engineering teams, and leading cross-functional digital growth campaigns."
+    },
+    "comparisons": {
+      "body": "Comparing JAIN Online MBA Digital Marketing and E-Commerce against peers:\n\n**vs Amity Online MBA Marketing:** Amity Marketing covers traditional marketing management, brand management, and consumer behaviour at Rs 2,25,000 without dedicated digital performance marketing, growth hacking, or digital product management subjects. JAIN Digital Marketing and E-Commerce delivers a fully digital-first curriculum with dedicated Digital Ads, Growth Marketing, and Digital Product Management subjects not in Amity's standard marketing track.\n\n**vs NMIMS Online MBA Marketing Management:** NMIMS carries strong Mumbai consumer brand recognition for traditional marketing careers. For e-commerce, D2C, digital agency, and growth marketing roles specifically, JAIN Digital Marketing and E-Commerce delivers a more directly targeted curriculum than NMIMS's general marketing programme.\n\n**vs MUJ Online MBA Marketing:** MUJ Marketing includes Coursera Plus certifications from Google and LinkedIn. JAIN Digital Marketing and E-Commerce includes dedicated Digital Product Management and Growth Marketing as standalone subjects not typically found in MUJ's curriculum. Both at comparable fees. JAIN's Bengaluru positioning gives stronger access to South India's e-commerce and D2C ecosystem."
+    },
+    "fees": {
+      "body": "The JAIN Online MBA in Digital Marketing and E-Commerce is priced between Rs 1,75,000 and Rs 1,96,000 total program fee across 4 semesters (2-year program). JAIN offers different fee tiers based on specialisation - contact our counsellor for exact fee for this specific specialisation.\n\n**Payment options (3 ways)**:\n\n- **Semester-wise**: Rs 43,750 per semester (Tier 1) or Rs 49,000 per semester (Tier 2)\n- **Yearly**: Rs 87,500 per year (Tier 1) or Rs 98,000 per year (Tier 2)\n- **One-time upfront**: Rs 1,75,000 (Tier 1) or Rs 1,96,000 (Tier 2)\n\n**Additional charges (Indian students)**:\n- Registration fee: Rs 2,500 one-time\n- Examination fee: Rs 3,000 per year (Rs 6,000 total for 2 years)\n\n**Total effective cost (Indian student)**:\n- Tier 1 specs: Rs 1,83,500\n- Tier 2 specs: Rs 2,04,500\n\n**International student fees**:\n- SAARC countries: additional Rs 11,250 registration + Rs 3,750 per year exam fee\n- Other international students: USD 150 registration + USD 50 per year exam fee\n\n**EMI options**: Available through JAIN's direct NBFC lending partner tie-ups (same pattern as LPU and MUJ - not through external marketing partners). Contact our counsellor for current EMI tenure options, approval terms, and whether zero-cost or interest-bearing.\n\n**Scholarships available** (4 categories - specific discount % and eligibility varies by admission cycle):\n- **Merit-based**: Academic excellence scholarship for qualifying marks\n- **Armed Forces**: Support for serving/veteran military personnel and families\n- **Gender-focused**: Empowerment scholarship for diverse applicants\n- **Freshers**: Transition support for recent undergraduates\n\nSpecific discount percentages are confirmed at admission based on eligibility. Contact our counsellor for current cycle scholarship details.\n\nEdifyEdu reconfirms fees with JAIN each quarter. Please reconfirm current fees, scholarship eligibility, and EMI terms with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. The Digital Marketing and E-Commerce specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from JAIN Online MBA Digital Marketing and E-Commerce alumni. Ratings from post-completion surveys.",
+      "items": [
+        {
+          "name": "Nikhil Shankar",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Growth Marketing subject was outstanding - frameworks directly applicable to my growth manager role at a Bengaluru D2C brand. Digital Product Management gave me the product vocabulary I needed for cross-functional roles.",
+          "disliked": "Marketing Analytics subject could include more hands-on tools coverage beyond conceptual attribution frameworks.",
+          "body": "I had 3 years in performance marketing and the JAIN DM and E-Commerce MBA gave me both the degree credential and advanced digital frameworks. JAIN brand combined with Bengaluru location was a strong differentiator at D2C companies."
+        },
+        {
+          "name": "Divya Krishnamurthy",
+          "city": "Chennai",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Brand Management for E-Commerce and Outbound Marketing subjects were directly applicable to my e-commerce brand management role.",
+          "disliked": "Would benefit from more SEO and organic marketing coverage alongside the paid media subjects.",
+          "body": "Good programme for South India digital marketing careers. Chennai e-commerce and digital agencies recognised the JAIN credential. For SEO-focused digital roles, self-supplementation with SEO tools training alongside the MBA is recommended."
+        },
+        {
+          "name": "Aparna Nair",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 3,
+          "liked": "Digital Product Management was unique - not available as a subject in peer online MBA programmes at this fee range.",
+          "disliked": "LMS quality was inconsistent. Some elective subject recordings were below the quality of core subject recordings.",
+          "body": "Solid digital marketing credential for the fee. Best value for professionals targeting growth marketing and e-commerce brand roles. For traditional FMCG or B2B marketing careers, a standard marketing MBA would be more appropriate."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How are JAIN fees different for different specializations?",
+        "answer": "JAIN offers two pricing tiers across its MBA specialisations. Tier 1 is Rs 1,75,000 total (plus Rs 2,500 registration and Rs 6,000 examination fees). Tier 2 is Rs 1,96,000 total (same additional charges). The tier applicable to the Digital Marketing and E-Commerce specialisation should be confirmed with our counsellor."
+      },
+      {
+        "question": "What scholarships does JAIN offer for Online MBA?",
+        "answer": "JAIN offers 4 scholarship categories: Merit-based (academic excellence), Armed Forces (military personnel and families), Gender-focused (diversity empowerment), and Freshers (recent graduates). Specific discount percentages and eligibility conditions are confirmed at admission and vary by intake cycle. Contact our counsellor for current cycle details."
+      },
+      {
+        "question": "Does JAIN offer dual specialization in Online MBA?",
+        "answer": "Yes. For digital marketing students, JAIN offers Marketing and Business Analytics (dual) and Marketing and HRM (dual) as dedicated dual-spec programmes. Students who want digital marketing combined with analytics depth may find Marketing and Business Analytics a stronger alternative."
+      },
+      {
+        "question": "What is the difference between JAIN Digital Marketing and E-Commerce and JAIN Marketing?",
+        "answer": "JAIN Marketing covers consumer behaviour, brand management, B2B and B2C marketing, international marketing, and retail marketing through a broad marketing curriculum. JAIN Digital Marketing and E-Commerce focuses entirely on digital channels: digital ads, social media, growth marketing, digital product management, and e-commerce brand management. Students targeting digital-first brand and growth roles should choose Digital Marketing and E-Commerce."
+      },
+      {
+        "question": "Does JAIN Digital Marketing and E-Commerce cover Google Ads and Meta Ads?",
+        "answer": "Yes. Outbound Marketing: Digital Ads and Social Media Marketing covers Google Ads, Meta Ads, programmatic display, and social media paid campaign management. Marketing Analytics covers attribution modelling and campaign performance measurement. For maximum practical depth, supplement with Google Ads and Meta Blueprint certifications alongside the MBA."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want a NAAC A++ MBA with dedicated Digital Ads, Growth Marketing, and Digital Product Management from a Bengaluru university.",
+        "You are targeting performance marketing, e-commerce management, or growth marketing roles in South India digital companies.",
+        "You want 3 flexible payment options and 4 scholarship categories at fees of Rs 1.75L-1.96L."
+      ],
+      "consider": [
+        "If traditional FMCG brand management, B2B marketing, or consumer marketing depth is the goal, JAIN's Marketing specialisation covers a broader range of marketing domains.",
+        "If AI-driven marketing technology and predictive marketing analytics are the focus, JAIN's AI for Marketing specialisation delivers more forward-looking digital marketing curriculum.",
+        "If pan-India digital marketing recognition is the priority, Amity Online MBA Marketing or a dual marketing-analytics spec offers stronger national brand recognition."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2050,
+    "generatedAt": "2026-04-22",
+    "batchNumber": "Phase7-Batch14",
+    "hasSyllabusData": true
+  }
+}

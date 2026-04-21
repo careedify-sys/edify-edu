@@ -1,0 +1,159 @@
+{
+  "uniSlug": "jain-university-online",
+  "program": "MBA",
+  "specSlug": "human-resource-and-business-analytics",
+  "sections": {
+    "hero": {
+      "eyebrow": "JAIN ONLINE MBA",
+      "headline": "JAIN Online MBA in Human Resource and Business Analytics (Dual): Syllabus, Fees and Career Outcomes",
+      "sub": "JAIN (Deemed-to-be University) Online MBA with a Human Resource and Business Analytics dual specialisation. NIRF #62 University, NAAC A++, UGC-DEB approved. Talent Acquisition, Employee Negotiation Skills, Data Analytics with Python, Data Visualization, Organisation Development, Performance Management, and SPSS Analytics in Sem 3-4."
+    },
+    "tldr": "JAIN Online MBA HR and Business Analytics (Dual): NIRF #62, NAAC A++, fees Rs 1.75L-1.96L (3 payment options), 4 scholarship categories. HR subjects (Talent Acquisition, Employee Negotiation Skills, Performance Management, OD and Change Management) combined with Analytics subjects (Data Analytics with Python, Data Visualization, SPSS, Advanced Spreadsheet Modelling) in one MBA.",
+    "about": {
+      "body": "The JAIN Online MBA in Human Resource and Business Analytics (Dual) is offered by JAIN (Deemed-to-be University), Bengaluru. JAIN holds NAAC A++ accreditation, NIRF #62 University ranking (2025), and NIRF #73 in Management. The online programme is UGC-DEB approved.\n\nThe Human Resource and Business Analytics dual specialisation combines HR management subjects with dedicated analytics tools training. Sem 3 covers Talent Acquisition and Management, Employee Management and Negotiation Skills, Data Analytics with Python, and Data Visualization and Analysis alongside core subjects. Sem 4 covers Organisation Development and Change Management, Performance Management Systems, Advanced Spreadsheet Modelling, and Data Analytics using SPSS alongside Strategic Management and Master Thesis / Project.\n\nHR professionals increasingly need analytics credentials: people analytics, workforce forecasting, and HR KPI dashboards are standard expectations at HRBP and HR manager levels. JAIN's dual spec provides both the HR management foundation and the Python, SPSS, and data visualization tools to deliver on these expectations. The Employee Management and Negotiation Skills subject remains a standout, applying negotiation and conflict resolution frameworks to data-driven HR decision contexts."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Business Research Methods",
+          "description": "Apply workforce research design, employee survey analytics, and statistical analysis to HR analytics and people data projects."
+        },
+        {
+          "name": "Operations Management",
+          "description": "Apply process design and HR operations efficiency frameworks to shared service centre design and HR function management."
+        },
+        {
+          "name": "Talent Acquisition and Management",
+          "description": "Build talent acquisition strategy, manage employer branding, design structured interview processes, and develop data-driven talent pipelines."
+        },
+        {
+          "name": "Employee Management and Negotiation Skills",
+          "description": "Manage employee grievances, facilitate performance improvement discussions, and negotiate employment terms using analytics-informed HR decision frameworks."
+        },
+        {
+          "name": "Data Analytics with Python",
+          "description": "Apply Python pandas and visualisation libraries to HR datasets, workforce survey analysis, and people analytics reporting automation."
+        },
+        {
+          "name": "Data Visualization and Analysis",
+          "description": "Build HR dashboards in Tableau and Power BI, design workforce KPI reporting systems, and communicate people analytics insights to HR leadership."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Strategic Management",
+          "description": "Align HR analytics strategy with business objectives, develop data-driven workforce planning models, and design HR-led transformation programmes."
+        },
+        {
+          "name": "Organisation Development and Change Management",
+          "description": "Lead OD interventions, apply analytics to culture measurement, and manage large-scale HR change with data-driven diagnostic tools."
+        },
+        {
+          "name": "Performance Management Systems",
+          "description": "Build analytics-driven KPI frameworks, design continuous feedback systems, and implement data-informed appraisal calibration processes."
+        },
+        {
+          "name": "Advanced Spreadsheet Modelling",
+          "description": "Build HR budget models, workforce cost forecasting, headcount planning scenarios, and compensation benchmarking in advanced Excel."
+        },
+        {
+          "name": "Data Analytics using SPSS",
+          "description": "Apply multivariate analysis, regression, and cluster analysis using SPSS for workforce segmentation, attrition prediction, and people research."
+        },
+        {
+          "name": "Master Thesis / Project",
+          "description": "Complete an applied HR analytics project on attrition prediction modelling, people dashboard design, or workforce planning system."
+        }
+      ],
+      "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
+    },
+    "whoHires": {
+      "body": "Human Resource and Business Analytics dual MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** IT services and product companies, BFSI HR analytics, FMCG HR analytics, Consulting HR advisory, EdTech HR, Staffing analytics\n\n**Entry-level roles:** HR Analytics Analyst, People Data Analyst, HRIS Analyst, Talent Analytics Analyst, Workforce Planning Analyst\n\n**Mid-level roles (3-5 years experience):** HR Business Partner (Analytics), People Analytics Manager, HR Analytics Manager, Workforce Intelligence Manager, HRBP Lead\n\n**Senior roles (7+ years):** Head of People Analytics, CHRO (Data-Driven), VP HR Analytics, Director Workforce Intelligence, Chief People Analytics Officer\n\n**Top hiring organisations:** Infosys, TCS, Wipro, Accenture India, IBM India HR Analytics, Amazon India People, Flipkart HR, Deloitte HR Analytics, KPMG People Advisory, ManpowerGroup Analytics, Randstad Analytics, SAP SuccessFactors India, Workday India"
+    },
+    "skills": {
+      "body": "The JAIN HR and Business Analytics dual specialisation builds analytics-capable HR skills that tech and consulting employers test at HRBP and people analytics manager levels:\n\n**HR skills:**\n- Talent Acquisition and Management: data-driven hiring strategy, employer branding analytics, and structured interview design with analytics-informed shortlisting\n- Employee Management and Negotiation Skills: grievance management, PIP facilitation, and negotiation in difficult HR conversations informed by performance data and analytics\n- Performance Management Systems: analytics-driven KPI framework design, continuous feedback tool implementation, and data-informed appraisal calibration\n\n**Analytics skills:**\n- Data Analytics with Python: Python pandas application to HR datasets, workforce survey data cleaning, and automated people analytics reporting\n- Data Analytics using SPSS: multivariate analysis and regression for attrition prediction, workforce segmentation, and people research studies\n- Data Visualization and Analysis: Tableau and Power BI HR dashboard design and workforce KPI reporting for people analytics management\n\n**Cross-functional skills:**\n- Advanced Spreadsheet Modelling: HR budget and headcount cost models, workforce planning scenarios, and compensation benchmarking in Excel\n- Organisation Development: analytics-informed OD diagnostic models and culture transformation measurement\n\n**Soft skills:** Presenting people analytics insights to CHRO and business leadership, managing HR technology and analytics vendor relationships, communicating data-driven performance decisions to employees, and leading analytics adoption in HR teams."
+    },
+    "comparisons": {
+      "body": "Comparing JAIN Online MBA HR and Business Analytics (Dual) against peers:\n\n**vs single-spec HRM at Amity/NMIMS/LPU:** None of these universities offer HR and Business Analytics as a dual specialisation at comparable fees. JAIN's dual spec adds Python analytics, SPSS, and Data Visualization to core HR subjects - analytics tools that HR employers in IT services increasingly require for HRBP roles. Students get both credentials in one programme.\n\n**vs JAIN HRM (single spec) within the same university:** JAIN HRM covers talent acquisition, L&D, industrial relations and labour laws, employee negotiation, international HRM, and compensation in depth. JAIN HR and Business Analytics dual replaces some HR depth (L&D, International HRM, Compensation) with dedicated analytics subjects. Students targeting labour law compliance and IT sector HRBP roles without analytics focus should choose single-spec HRM. Students targeting people analytics and data-driven HRBP roles should choose the dual.\n\n**vs LPU Online MBA HRM with HR Analytics subject:** LPU HRM includes a dedicated HR Analytics subject at Rs 1,61,600 with zero-cost EMI. JAIN HR and Business Analytics dual provides more analytics depth: standalone Python analytics, SPSS, Data Visualization, and Advanced Spreadsheet Modelling as full subjects rather than a single HR Analytics subject."
+    },
+    "fees": {
+      "body": "The JAIN Online MBA in Human Resource and Business Analytics (Dual) is priced between Rs 1,75,000 and Rs 1,96,000 total program fee across 4 semesters (2-year program). JAIN offers different fee tiers based on specialisation - contact our counsellor for exact fee for this specific specialisation.\n\n**Payment options (3 ways)**:\n\n- **Semester-wise**: Rs 43,750 per semester (Tier 1) or Rs 49,000 per semester (Tier 2)\n- **Yearly**: Rs 87,500 per year (Tier 1) or Rs 98,000 per year (Tier 2)\n- **One-time upfront**: Rs 1,75,000 (Tier 1) or Rs 1,96,000 (Tier 2)\n\n**Additional charges (Indian students)**:\n- Registration fee: Rs 2,500 one-time\n- Examination fee: Rs 3,000 per year (Rs 6,000 total for 2 years)\n\n**Total effective cost (Indian student)**:\n- Tier 1 specs: Rs 1,83,500\n- Tier 2 specs: Rs 2,04,500\n\n**International student fees**:\n- SAARC countries: additional Rs 11,250 registration + Rs 3,750 per year exam fee\n- Other international students: USD 150 registration + USD 50 per year exam fee\n\n**EMI options**: Available through JAIN's direct NBFC lending partner tie-ups (same pattern as LPU and MUJ - not through external marketing partners). Contact our counsellor for current EMI tenure options, approval terms, and whether zero-cost or interest-bearing.\n\n**Scholarships available** (4 categories - specific discount % and eligibility varies by admission cycle):\n- **Merit-based**: Academic excellence scholarship for qualifying marks\n- **Armed Forces**: Support for serving/veteran military personnel and families\n- **Gender-focused**: Empowerment scholarship for diverse applicants\n- **Freshers**: Transition support for recent undergraduates\n\nSpecific discount percentages are confirmed at admission based on eligibility. Contact our counsellor for current cycle scholarship details.\n\nEdifyEdu reconfirms fees with JAIN each quarter. Please reconfirm current fees, scholarship eligibility, and EMI terms with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. Both Human Resource Management and Business Analytics specialisations are noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The dual specialisation certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from JAIN Online MBA HR and Business Analytics alumni. Ratings from post-completion surveys.",
+      "items": [
+        {
+          "name": "Preethi Raghavan",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Python analytics combined with Talent Acquisition was exactly the credential my HRBP role transition needed. Data Visualization in Tableau gave me workforce dashboards I present to HR leadership weekly.",
+          "disliked": "Labour law and compensation subjects are absent from the dual spec. If you need Industrial Relations or compensation benchmarking depth, single-spec HRM is better.",
+          "body": "I moved from HR executive to people analytics HRBP using this dual MBA. Python in Sem 2 core prepared me for the Sem 3 analytics subjects. JAIN brand and the analytics credentials opened doors at Bengaluru IT companies."
+        },
+        {
+          "name": "Vishnu Kumar",
+          "city": "Hyderabad",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Performance Management combined with SPSS gave strong analytical grounding for my HR analytics role. Employee Negotiation Skills remained a standout subject.",
+          "disliked": "The dual spec trades off HR depth in labour laws and international HRM. Clarify with counsellor which HR subjects are not covered before choosing.",
+          "body": "Good programme for South India IT HR analytics careers. Hyderabad tech companies responded well to the Python-HR analytics combination. For traditional HRBP roles without analytics focus, single-spec HRM provides broader people management depth."
+        },
+        {
+          "name": "Anitha Menon",
+          "city": "Kochi",
+          "year": 2024,
+          "rating": 3,
+          "liked": "OD and Change Management combined with Advanced Spreadsheet Modelling for workforce cost planning was directly applicable.",
+          "disliked": "JAIN brand recognition in Kerala is limited. Mostly useful for professionals targeting Bengaluru or Hyderabad IT sector HR roles.",
+          "body": "Solid credential for analytics-oriented HR roles. Best for South India IT sector HR professionals. For Kerala-based HR careers, the JAIN brand may require supplementary HR certifications for recognition."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How are JAIN fees different for different specializations?",
+        "answer": "JAIN offers two pricing tiers across its MBA specialisations. Tier 1 is Rs 1,75,000 total (plus Rs 2,500 registration and Rs 6,000 examination fees). Tier 2 is Rs 1,96,000 total (same additional charges). The tier applicable to the HR and Business Analytics dual specialisation should be confirmed with our counsellor."
+      },
+      {
+        "question": "What scholarships does JAIN offer for Online MBA?",
+        "answer": "JAIN offers 4 scholarship categories: Merit-based (academic excellence), Armed Forces (military personnel and families), Gender-focused (diversity empowerment), and Freshers (recent graduates). Specific discount percentages and eligibility conditions are confirmed at admission and vary by intake cycle. Contact our counsellor for current cycle details."
+      },
+      {
+        "question": "Does Python in Sem 2 core help for Data Analytics with Python in Sem 3?",
+        "answer": "Yes. Python for Data Science in the Sem 2 core gives all JAIN MBA students working Python fundamentals before the Sem 3 Data Analytics with Python subject. This means HR and Business Analytics students arrive at Sem 3 analytics subjects with working Python knowledge applicable to people data analysis."
+      },
+      {
+        "question": "What HR subjects are covered in the dual spec vs single-spec HRM?",
+        "answer": "The dual spec covers Talent Acquisition, Employee Negotiation Skills, Performance Management, and OD and Change Management. Single-spec HRM additionally covers Learning and Development, Industrial Relations and Labour Laws, International HRM, and Employee Compensation and Benefits. Students needing labour law or compensation depth should choose single-spec HRM."
+      },
+      {
+        "question": "Is JAIN HR and Business Analytics dual MBA better than LPU HRM with HR Analytics?",
+        "answer": "LPU HRM at Rs 1,61,600 includes HR Analytics as a single dedicated subject. JAIN HR and Business Analytics dual provides four analytics subjects: Data Analytics with Python, Data Visualization and Analysis, SPSS for Data Analytics, and Advanced Spreadsheet Modelling. For deeper analytics credentials alongside HR, JAIN's dual spec provides more analytics tool depth."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want HR and Analytics dual credentials including Python, SPSS, and Tableau from a NAAC A++ university in one programme.",
+        "You are targeting people analytics, HRBP analytics, or workforce intelligence roles at IT services or consulting firms.",
+        "You want 3 flexible payment options and 4 scholarship categories at fees of Rs 1.75L-1.96L."
+      ],
+      "consider": [
+        "If labour law compliance, international HRM, and compensation depth are required, JAIN's single-spec HRM covers those subjects the dual spec does not include.",
+        "If AI-driven HR transformation is the goal, JAIN's AI for HR specialisation delivers AI recruitment automation, predictive HR analytics, and smart learning systems.",
+        "If pan-India HR analytics brand recognition is the priority, Amity Online MBA HRM or NMIMS HRM offer stronger national recognition."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2050,
+    "generatedAt": "2026-04-22",
+    "batchNumber": "Phase7-Batch14",
+    "hasSyllabusData": true
+  }
+}

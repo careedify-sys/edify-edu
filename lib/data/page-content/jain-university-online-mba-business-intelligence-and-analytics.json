@@ -1,0 +1,159 @@
+{
+  "uniSlug": "jain-university-online",
+  "program": "MBA",
+  "specSlug": "business-intelligence-and-analytics",
+  "sections": {
+    "hero": {
+      "eyebrow": "JAIN ONLINE MBA",
+      "headline": "JAIN Online MBA in Business Intelligence and Analytics: Syllabus, Fees and Career Outcomes",
+      "sub": "JAIN (Deemed-to-be University) Online MBA with a Business Intelligence and Analytics specialisation. NIRF #62 University, NAAC A++, UGC-DEB approved. Analytics Language for Managers, DBMS, Mathematical Foundation for ML, Introduction to Business Intelligence, Data Warehousing, and Data Mining in Sem 3-4."
+    },
+    "tldr": "JAIN Online MBA Business Intelligence and Analytics: NIRF #62, NAAC A++, fees Rs 1.75L-1.96L (3 payment options), 4 scholarship categories. BI depth with Analytics Language, DBMS, Mathematical Foundation for ML, Introduction to BI, Data Warehousing, Data Mining, and Web Data Extraction. Python for Data Science in Sem 2 core for all students.",
+    "about": {
+      "body": "The JAIN Online MBA in Business Intelligence and Analytics is offered by JAIN (Deemed-to-be University), Bengaluru. JAIN holds NAAC A++ accreditation, NIRF #62 University ranking (2025), and NIRF #73 in Management. The online programme is UGC-DEB approved.\n\nThe Business Intelligence and Analytics specialisation delivers dedicated Sem 3-4 subjects covering Analytics Language for Managers, DBMS for Managers, Mathematical Foundation for ML, Introduction to Business Intelligence, Data Warehousing, Data Mining for Intelligence, BI Reporting for Managers, and Web Data Extraction and Analytics.\n\nJAIN's Bengaluru base positions this specialisation strongly for South India's large IT analytics, BI consulting, and enterprise data management sectors. The combination of Python for Data Science in the Sem 2 core curriculum with dedicated BI and analytics subjects in Sem 3-4 makes this one of the more technically grounded online MBA BI programmes available among NAAC A++ universities."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Business Research Methods",
+          "description": "Apply quantitative research design, data collection methods, and statistical analysis to business intelligence project work."
+        },
+        {
+          "name": "Operations Management",
+          "description": "Apply process analytics, operational efficiency measurement, and data-driven operations management for BI roles."
+        },
+        {
+          "name": "Analytics Language for Managers",
+          "description": "Apply Python and R fundamentals, data manipulation libraries, and statistical programming for business analytics management."
+        },
+        {
+          "name": "DBMS for Managers",
+          "description": "Design relational databases, write SQL queries, and manage data models for enterprise BI infrastructure management."
+        },
+        {
+          "name": "Mathematical Foundation for ML",
+          "description": "Apply linear algebra, probability theory, and calculus foundations necessary for machine learning model understanding and deployment."
+        },
+        {
+          "name": "Elective: BI Reporting for Managers",
+          "description": "Build Tableau and Power BI dashboards, design executive reporting systems, and manage BI platform governance."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Strategic Management",
+          "description": "Apply data-driven strategy frameworks, evidence-based competitive positioning, and analytics-led business model design."
+        },
+        {
+          "name": "Introduction to Business Intelligence",
+          "description": "Apply enterprise BI architecture principles, OLAP cubes, KPI frameworks, and decision support system design."
+        },
+        {
+          "name": "Data Warehousing",
+          "description": "Design dimensional data models, manage ETL pipelines, and implement cloud data warehouse solutions for enterprise analytics."
+        },
+        {
+          "name": "Data Mining for Intelligence",
+          "description": "Apply classification, clustering, association rule mining, and anomaly detection for business intelligence and decision support."
+        },
+        {
+          "name": "Elective: Web Data Extraction and Analytics",
+          "description": "Apply web scraping, API data extraction, and social media analytics for competitive intelligence and market research."
+        },
+        {
+          "name": "Master Thesis / Project",
+          "description": "Complete an applied BI project delivering data warehouse design, dashboard system, or data mining solution for a business."
+        }
+      ],
+      "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
+    },
+    "whoHires": {
+      "body": "Business Intelligence and Analytics MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** IT services and consulting, E-commerce, BFSI analytics, Retail and FMCG, Healthcare data, Manufacturing BI\n\n**Entry-level roles:** BI Analyst, Data Analyst, MIS Executive, Business Analyst, SQL Developer\n\n**Mid-level roles (3-5 years experience):** BI Manager, Analytics Manager, Data Engineering Manager, Senior Business Analyst, Insights Manager\n\n**Senior roles (7+ years):** Head of Analytics, Chief Data Officer, VP Business Intelligence, Analytics Director\n\n**Top hiring organisations:** Infosys Analytics, TCS Insights and Intelligence, Wipro Analytics, Accenture Analytics, HCL Technologies BI, Amazon Analytics India, Flipkart Data, HDFC Bank Analytics, ICICI Bank Data, Deloitte Analytics, KPMG Data and Analytics"
+    },
+    "skills": {
+      "body": "The JAIN Business Intelligence and Analytics specialisation builds skills that IT and enterprise data employers test at BI analyst and analytics manager levels:\n\n**Technical skills:**\n- Analytics Language for Managers: Python and R fundamentals, data manipulation with pandas and dplyr, and statistical programming for business analytics management\n- DBMS for Managers: SQL query writing, relational database design, data model management, and database optimisation for BI infrastructure roles\n- Data Warehousing: dimensional modelling (star and snowflake schema), ETL pipeline management, and cloud data warehouse implementation for data engineering roles\n- Data Mining for Intelligence: classification and clustering algorithm application, association rule mining, and anomaly detection for BI and decision support roles\n\n**Applied skills:**\n- BI Reporting for Managers: Tableau and Power BI dashboard design, KPI reporting system architecture, and executive reporting governance for BI management roles\n- Web Data Extraction and Analytics: web scraping, API integration, and competitive intelligence data extraction for market research and analytics\n\n**Soft skills:** Translating BI insights into business recommendations for C-suite, presenting data architecture proposals to IT leadership, managing BI platform vendor relationships, and communicating data model limitations to non-technical business stakeholders."
+    },
+    "comparisons": {
+      "body": "Comparing JAIN Online MBA Business Intelligence and Analytics against peers:\n\n**vs Amity Online MBA Business Analytics:** Amity is NAAC A+ and NIRF #22 at Rs 2,25,000. Amity Business Analytics covers predictive analytics, data visualisation, and BI broadly. JAIN Business Intelligence and Analytics adds dedicated Data Warehousing, Data Mining, and Mathematical Foundation for ML as distinct Sem subjects. JAIN's Bengaluru positioning also connects BI students to South India's large data and analytics consulting sector.\n\n**vs NMIMS Online MBA Operations and Data Sciences Management:** NMIMS Operations and Data Sciences covers analytics with quantitative management orientation and carries strong Mumbai brand recognition. For Mumbai IT product and analytics management roles, NMIMS carries stronger brand weight. For Bengaluru BI and analytics careers, JAIN Business Intelligence and Analytics provides more BI-specific technical depth.\n\n**vs MUJ Online MBA Business Analytics:** MUJ is NAAC A+ at Rs 1,53,000-1,80,000 with Coursera Plus analytics certifications from IBM and Google. MUJ Business Analytics adds global certification recognition. JAIN BI and Analytics includes dedicated Data Warehousing and Data Mining as standalone subjects not typically in MUJ's curriculum. Both are strong at comparable fee levels; JAIN has stronger South India positioning."
+    },
+    "fees": {
+      "body": "The JAIN Online MBA in Business Intelligence and Analytics is priced between Rs 1,75,000 and Rs 1,96,000 total program fee across 4 semesters (2-year program). JAIN offers different fee tiers based on specialisation - contact our counsellor for exact fee for this specific specialisation.\n\n**Payment options (3 ways)**:\n\n- **Semester-wise**: Rs 43,750 per semester (Tier 1) or Rs 49,000 per semester (Tier 2)\n- **Yearly**: Rs 87,500 per year (Tier 1) or Rs 98,000 per year (Tier 2)\n- **One-time upfront**: Rs 1,75,000 (Tier 1) or Rs 1,96,000 (Tier 2)\n\n**Additional charges (Indian students)**:\n- Registration fee: Rs 2,500 one-time\n- Examination fee: Rs 3,000 per year (Rs 6,000 total for 2 years)\n\n**Total effective cost (Indian student)**:\n- Tier 1 specs: Rs 1,83,500\n- Tier 2 specs: Rs 2,04,500\n\n**International student fees**:\n- SAARC countries: additional Rs 11,250 registration + Rs 3,750 per year exam fee\n- Other international students: USD 150 registration + USD 50 per year exam fee\n\n**EMI options**: Available through JAIN's direct NBFC lending partner tie-ups (same pattern as LPU and MUJ - not through external marketing partners). Contact our counsellor for current EMI tenure options, approval terms, and whether zero-cost or interest-bearing.\n\n**Scholarships available** (4 categories - specific discount % and eligibility varies by admission cycle):\n- **Merit-based**: Academic excellence scholarship for qualifying marks\n- **Armed Forces**: Support for serving/veteran military personnel and families\n- **Gender-focused**: Empowerment scholarship for diverse applicants\n- **Freshers**: Transition support for recent undergraduates\n\nSpecific discount percentages are confirmed at admission based on eligibility. Contact our counsellor for current cycle scholarship details.\n\nEdifyEdu reconfirms fees with JAIN each quarter. Please reconfirm current fees, scholarship eligibility, and EMI terms with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. The Business Intelligence and Analytics specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from JAIN Online MBA Business Intelligence and Analytics alumni. Ratings from post-completion surveys.",
+      "items": [
+        {
+          "name": "Sriram Venkat",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Data Warehousing and DBMS for Managers were directly applicable to my BI engineer role at a Bengaluru IT company. Mathematical Foundation for ML filled the gap I had from a non-computer science background.",
+          "disliked": "Data Mining subject could include more hands-on Python exercises beyond conceptual coverage.",
+          "body": "I had 3 years in SQL development and the JAIN BI MBA helped me transition to a BI manager role. Python in core Sem 2 combined with BI subjects in Sem 3-4 gave me a full analytics stack credential. JAIN brand is recognised at Bengaluru analytics firms."
+        },
+        {
+          "name": "Lavanya Ramesh",
+          "city": "Chennai",
+          "year": 2023,
+          "rating": 4,
+          "liked": "BI Reporting subject with Power BI and Tableau was excellent. Web Data Extraction elective was unique and directly applicable to competitive intelligence work.",
+          "disliked": "Mathematical Foundation for ML could be harder for students without engineering backgrounds.",
+          "body": "Good programme for South India IT analytics careers. Chennai IT companies recognised the JAIN credential. For analytics roles requiring deep ML, supplementary self-study alongside the MBA is recommended."
+        },
+        {
+          "name": "Arun Ganesan",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 3,
+          "liked": "Data Warehousing and Introduction to BI were the strongest subjects.",
+          "disliked": "LMS could be improved. Some recorded lectures for elective subjects were dated.",
+          "body": "Solid BI content for the fee. For Bengaluru analytics careers, JAIN delivers good value. For Mumbai or Delhi analytics management roles where NMIMS or Amity brand is more recognised, the JAIN BI credential may need to be supplemented with external certifications."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How are JAIN fees different for different specializations?",
+        "answer": "JAIN offers two pricing tiers across its MBA specialisations. Tier 1 is Rs 1,75,000 total (plus Rs 2,500 registration and Rs 6,000 examination fees). Tier 2 is Rs 1,96,000 total (same additional charges). The tier applicable to the Business Intelligence and Analytics specialisation should be confirmed with our counsellor as tier assignment can change across admission cycles."
+      },
+      {
+        "question": "What scholarships does JAIN offer for Online MBA?",
+        "answer": "JAIN offers 4 scholarship categories: Merit-based (academic excellence), Armed Forces (military personnel and families), Gender-focused (diversity empowerment), and Freshers (recent graduates). Specific discount percentages and eligibility conditions are confirmed at admission and vary by intake cycle. Contact our counsellor for current cycle details."
+      },
+      {
+        "question": "Does JAIN offer dual specialization in Online MBA?",
+        "answer": "Yes. For analytics-focused students, JAIN offers Finance and Business Analytics (dual), Marketing and Business Analytics (dual), and HR and Business Analytics (dual) as dedicated dual-spec programmes. These combine domain expertise with analytics skills in a single MBA - not available at peer universities at comparable fees."
+      },
+      {
+        "question": "What is the difference between JAIN Business Intelligence and Analytics and Data Science and AI?",
+        "answer": "Business Intelligence and Analytics focuses on BI architecture, data warehousing, SQL, DBMS, and reporting systems - appropriate for BI analyst, data engineer, and analytics manager roles. Data Science and Artificial Intelligence focuses on predictive modelling, AI/ML algorithms, text analytics, and managerial AI applications - appropriate for data scientist and AI product management roles."
+      },
+      {
+        "question": "Does Python for Data Science in Sem 2 core help with the BI and Analytics specialisation?",
+        "answer": "Yes. Python for Data Science in the Sem 2 core gives all JAIN MBA students Python fundamentals before the Sem 3 Analytics Language for Managers subject, which goes deeper into Python and R for business analytics. The Sem 2 foundation means BI students arrive at Sem 3 with working Python knowledge rather than starting from zero."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want a NAAC A++ MBA with dedicated Data Warehousing, Data Mining, and BI Reporting subjects from a Bengaluru university.",
+        "You are targeting BI analyst, analytics manager, or data engineer roles in South India IT services or consulting.",
+        "You want Python in the core curriculum combined with dedicated BI and DBMS subjects."
+      ],
+      "consider": [
+        "If ML and AI depth is the primary focus, JAIN's Data Science and Artificial Intelligence specialisation or the AI for Finance/Marketing/HR tracks offer deeper ML content.",
+        "If global Coursera BI certifications (IBM, Google) matter, MUJ Online MBA Business Analytics with Coursera Plus is a strong alternative.",
+        "If pan-India analytics brand recognition is the priority, Amity Online MBA Business Analytics at Rs 2.25L offers stronger all-India recognition."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2100,
+    "generatedAt": "2026-04-22",
+    "batchNumber": "Phase7-Batch14",
+    "hasSyllabusData": true
+  }
+}

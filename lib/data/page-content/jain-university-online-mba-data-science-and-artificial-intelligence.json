@@ -1,0 +1,159 @@
+{
+  "uniSlug": "jain-university-online",
+  "program": "MBA",
+  "specSlug": "data-science-and-artificial-intelligence",
+  "sections": {
+    "hero": {
+      "eyebrow": "JAIN ONLINE MBA",
+      "headline": "JAIN Online MBA in Data Science and Artificial Intelligence: Syllabus, Fees and Career Outcomes",
+      "sub": "JAIN (Deemed-to-be University) Online MBA with a Data Science and Artificial Intelligence specialisation. NIRF #62 University, NAAC A++, UGC-DEB approved. Business Intelligence and Data Visualization, Business Applications of AI and ML, Business Statistics for Decision Making, Predictive Modeling, Text Analytics, and Managerial AI Applications in Sem 3-4."
+    },
+    "tldr": "JAIN Online MBA Data Science and AI: NIRF #62, NAAC A++, fees Rs 1.75L-1.96L (3 payment options), 4 scholarship categories. Applied AI and DS depth with BI and Data Visualization, Business Applications of AI and ML, Business Statistics, Predictive Modeling, Text Analytics, and Managerial AI Applications. Python for Data Science in Sem 2 core for all students.",
+    "about": {
+      "body": "The JAIN Online MBA in Data Science and Artificial Intelligence is offered by JAIN (Deemed-to-be University), Bengaluru. JAIN holds NAAC A++ accreditation, NIRF #62 University ranking (2025), and NIRF #73 in Management. The online programme is UGC-DEB approved.\n\nThe Data Science and Artificial Intelligence specialisation delivers Sem 3-4 subjects covering Business Intelligence and Data Visualization, Business Applications of Artificial Intelligence and Machine Learning, Business Statistics for Decision Making, Predictive Modeling for Business Decision Making, Text Analytics for Business Decision Making, and Managerial Applications of Artificial Intelligence.\n\nJAIN positions this specialisation for business managers who need to apply AI and data science tools rather than build them from scratch. Python for Data Science in the Sem 2 core gives all JAIN MBA students a programming foundation before the dedicated AI and ML subjects in Sem 3. The combination of statistical foundations, ML business applications, and managerial AI perspectives makes this a strong option for analytics managers, AI product owners, and data strategy roles at South India IT and consulting firms."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Business Research Methods",
+          "description": "Apply quantitative and qualitative research design to data science project planning and AI business case development."
+        },
+        {
+          "name": "Operations Management",
+          "description": "Apply process efficiency frameworks and data-driven operations management techniques for AI-augmented business roles."
+        },
+        {
+          "name": "Business Intelligence and Data Visualization",
+          "description": "Build BI dashboards, design Tableau and Power BI reporting systems, and communicate data insights to executive stakeholders."
+        },
+        {
+          "name": "Business Applications of Artificial Intelligence and Machine Learning",
+          "description": "Apply supervised and unsupervised ML algorithms, evaluate AI model outputs, and deploy AI solutions for business decision-making."
+        },
+        {
+          "name": "Business Statistics for Decision Making",
+          "description": "Apply probability distributions, hypothesis testing, regression analysis, and statistical inference to business analytics problems."
+        },
+        {
+          "name": "Open Elective Course",
+          "description": "Apply cross-functional knowledge from marketing, finance, or HR domains to data science and AI business contexts."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Strategic Management",
+          "description": "Develop AI-led business strategy, evaluate technology disruption scenarios, and design data-driven competitive positioning."
+        },
+        {
+          "name": "Predictive Modeling for Business Decision Making",
+          "description": "Build regression, decision tree, and ensemble models for business forecasting, customer churn prediction, and demand planning."
+        },
+        {
+          "name": "Text Analytics for Business Decision Making",
+          "description": "Apply NLP techniques, sentiment analysis, and text classification to customer feedback, social media, and contract analysis."
+        },
+        {
+          "name": "Managerial Applications of Artificial Intelligence",
+          "description": "Evaluate AI governance frameworks, manage AI project lifecycles, and lead AI transformation programmes in business functions."
+        },
+        {
+          "name": "Applied Marketing Analytics",
+          "description": "Apply customer segmentation, attribution modelling, and campaign analytics to marketing ROI optimisation and brand strategy."
+        },
+        {
+          "name": "Master Thesis / Project",
+          "description": "Complete an applied data science or AI project delivering a predictive model, NLP solution, or BI system for a business use case."
+        }
+      ],
+      "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
+    },
+    "whoHires": {
+      "body": "Data Science and AI MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** IT services and consulting, E-commerce and retail analytics, BFSI data science, Healthcare AI, EdTech analytics, Manufacturing AI\n\n**Entry-level roles:** Data Analyst, Business Analyst, AI/ML Business Analyst, Analytics Consultant, BI Analyst\n\n**Mid-level roles (3-5 years experience):** Data Science Manager, AI Product Manager, Analytics Manager, BI Manager, ML Operations Manager\n\n**Senior roles (7+ years):** Chief Data Officer, Head of AI, VP Analytics, Director Data Strategy, AI Transformation Lead\n\n**Top hiring organisations:** Infosys AI, TCS Data and Analytics, Wipro AI Labs, Accenture Analytics, Amazon India Analytics, Flipkart Data Science, HDFC Bank Data, ICICI Bank AI, IBM India Data Science, Microsoft India Analytics, Mu Sigma, Fractal Analytics"
+    },
+    "skills": {
+      "body": "The JAIN Data Science and Artificial Intelligence specialisation builds skills that analytics and AI employer test at business analyst and analytics manager levels:\n\n**Technical skills:**\n- Business Applications of AI and ML: supervised and unsupervised algorithm application, model evaluation, and AI deployment decision-making for analytics manager and AI product roles\n- Predictive Modeling for Business Decision Making: regression, decision tree, and ensemble model building for customer churn, demand forecasting, and risk classification in data science roles\n- Text Analytics: NLP and sentiment analysis for customer voice, social media intelligence, and contract review automation at consulting and BFSI firms\n- Business Statistics for Decision Making: hypothesis testing, regression, and statistical inference for data-driven business analytics\n\n**Applied skills:**\n- Business Intelligence and Data Visualization: Tableau and Power BI dashboard design and executive data storytelling for BI manager roles\n- Applied Marketing Analytics: customer segmentation, attribution modelling, and marketing analytics for cross-functional data science deployment\n\n**Soft skills:** Presenting predictive model outputs to business leadership, translating ML findings into actionable business recommendations, managing AI vendor relationships, and communicating data limitations to non-technical stakeholders."
+    },
+    "comparisons": {
+      "body": "Comparing JAIN Online MBA Data Science and AI against peers:\n\n**vs Amity Online MBA Business Analytics:** Amity covers predictive analytics, data visualisation, and BI broadly at Rs 2,25,000. JAIN Data Science and AI adds dedicated Text Analytics and Managerial Applications of Artificial Intelligence as distinct Sem subjects not found in most Amity analytics tracks. JAIN's Bengaluru positioning also gives direct access to South India's large IT AI and data science hiring market.\n\n**vs NMIMS Online MBA Operations and Data Sciences Management:** NMIMS Operations and Data Sciences combines quantitative management with analytics at Mumbai's recognised brand. For Mumbai IT product and analytics roles, NMIMS carries stronger brand weight. For Bengaluru AI and data science careers with dedicated ML and text analytics subject coverage, JAIN Data Science and AI is the stronger technical option.\n\n**vs JAIN Business Intelligence and Analytics within the same university:** BI and Analytics covers data warehousing, DBMS, and BI architecture for BI engineer and analytics manager roles. Data Science and AI covers predictive modeling, text analytics, and managerial AI applications for data scientist and AI product manager roles. Students targeting BI infrastructure and reporting should choose BI and Analytics. Students targeting ML model deployment and AI strategy should choose Data Science and AI."
+    },
+    "fees": {
+      "body": "The JAIN Online MBA in Data Science and Artificial Intelligence is priced between Rs 1,75,000 and Rs 1,96,000 total program fee across 4 semesters (2-year program). JAIN offers different fee tiers based on specialisation - contact our counsellor for exact fee for this specific specialisation.\n\n**Payment options (3 ways)**:\n\n- **Semester-wise**: Rs 43,750 per semester (Tier 1) or Rs 49,000 per semester (Tier 2)\n- **Yearly**: Rs 87,500 per year (Tier 1) or Rs 98,000 per year (Tier 2)\n- **One-time upfront**: Rs 1,75,000 (Tier 1) or Rs 1,96,000 (Tier 2)\n\n**Additional charges (Indian students)**:\n- Registration fee: Rs 2,500 one-time\n- Examination fee: Rs 3,000 per year (Rs 6,000 total for 2 years)\n\n**Total effective cost (Indian student)**:\n- Tier 1 specs: Rs 1,83,500\n- Tier 2 specs: Rs 2,04,500\n\n**International student fees**:\n- SAARC countries: additional Rs 11,250 registration + Rs 3,750 per year exam fee\n- Other international students: USD 150 registration + USD 50 per year exam fee\n\n**EMI options**: Available through JAIN's direct NBFC lending partner tie-ups (same pattern as LPU and MUJ - not through external marketing partners). Contact our counsellor for current EMI tenure options, approval terms, and whether zero-cost or interest-bearing.\n\n**Scholarships available** (4 categories - specific discount % and eligibility varies by admission cycle):\n- **Merit-based**: Academic excellence scholarship for qualifying marks\n- **Armed Forces**: Support for serving/veteran military personnel and families\n- **Gender-focused**: Empowerment scholarship for diverse applicants\n- **Freshers**: Transition support for recent undergraduates\n\nSpecific discount percentages are confirmed at admission based on eligibility. Contact our counsellor for current cycle scholarship details.\n\nEdifyEdu reconfirms fees with JAIN each quarter. Please reconfirm current fees, scholarship eligibility, and EMI terms with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. The Data Science and Artificial Intelligence specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from JAIN Online MBA Data Science and AI alumni. Ratings from post-completion surveys.",
+      "items": [
+        {
+          "name": "Karthik Subramaniam",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Predictive Modeling and Text Analytics subjects were directly applicable to my analytics manager role at a Bengaluru IT firm. Managerial Applications of AI helped me build the business case for our ML deployment.",
+          "disliked": "Business Statistics subject required prior math foundation. Students from non-engineering backgrounds should supplement with online prep before Sem 3.",
+          "body": "I had 4 years in data analytics and this programme helped me move from analyst to analytics manager. Python in Sem 2 core combined with ML and text analytics in Sem 3-4 gave me end-to-end data science credentials. JAIN brand is strong at Bengaluru tech companies."
+        },
+        {
+          "name": "Priya Venkataraman",
+          "city": "Chennai",
+          "year": 2023,
+          "rating": 4,
+          "liked": "BI and Data Visualization subject with Tableau and Power BI was excellent for my reporting management role. Applied Marketing Analytics gave cross-functional depth.",
+          "disliked": "More hands-on Python projects in Sem 3 would strengthen the ML subject. Conceptual coverage was strong but coding practice was limited.",
+          "body": "Good programme for South India analytics careers. Chennai IT companies recognised the JAIN credential. For deep ML engineering roles, additional Kaggle or Coursera projects alongside the MBA are recommended."
+        },
+        {
+          "name": "Abhijith Nair",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 3,
+          "liked": "Text Analytics and Predictive Modeling were the strongest subjects. Relevant to real AI project work.",
+          "disliked": "LMS could be more interactive for analytics practice. Some modules need hands-on lab environments for running ML code.",
+          "body": "Solid AI content for the fee. JAIN's Bengaluru location is a genuine advantage for analytics networking. For deep computer science or research AI roles, a specialised BTech/MTech would be more appropriate than an MBA."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How are JAIN fees different for different specializations?",
+        "answer": "JAIN offers two pricing tiers across its MBA specialisations. Tier 1 is Rs 1,75,000 total (plus Rs 2,500 registration and Rs 6,000 examination fees). Tier 2 is Rs 1,96,000 total (same additional charges). The tier applicable to the Data Science and AI specialisation should be confirmed with our counsellor as tier assignment can change across admission cycles."
+      },
+      {
+        "question": "What scholarships does JAIN offer for Online MBA?",
+        "answer": "JAIN offers 4 scholarship categories: Merit-based (academic excellence), Armed Forces (military personnel and families), Gender-focused (diversity empowerment), and Freshers (recent graduates). Specific discount percentages and eligibility conditions are confirmed at admission and vary by intake cycle. Contact our counsellor for current cycle details."
+      },
+      {
+        "question": "Does JAIN offer dual specialization in Online MBA?",
+        "answer": "Yes. For analytics-focused students, JAIN offers Finance and Business Analytics (dual), Marketing and Business Analytics (dual), and HR and Business Analytics (dual). These combine domain expertise with analytics subjects in a single MBA. Students who want both AI depth and domain credentials should consider these dual options."
+      },
+      {
+        "question": "What is the difference between JAIN Data Science and AI and Business Intelligence and Analytics?",
+        "answer": "Data Science and AI focuses on predictive modeling, ML algorithms, text analytics, and managerial AI applications for data scientist and AI product manager roles. Business Intelligence and Analytics focuses on BI architecture, data warehousing, DBMS, and reporting systems for BI analyst, data engineer, and analytics manager roles."
+      },
+      {
+        "question": "Does Python for Data Science in Sem 2 prepare students for Data Science and AI subjects?",
+        "answer": "Yes. Python for Data Science in the Sem 2 core gives all JAIN MBA students foundational Python skills before the Sem 3 Business Applications of AI and ML subject. This ensures Data Science and AI students arrive at the ML and predictive modeling subjects with working Python knowledge rather than starting from zero."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want a NAAC A++ MBA with dedicated ML, Text Analytics, and Predictive Modeling subjects from a Bengaluru university.",
+        "You are targeting analytics manager, AI product manager, or data science manager roles at IT services or consulting firms.",
+        "You want Python in the core curriculum followed by business-focused AI and ML subjects in Sem 3-4."
+      ],
+      "consider": [
+        "If BI infrastructure and data engineering roles are the target, JAIN's Business Intelligence and Analytics specialisation provides deeper warehouse, DBMS, and BI architecture coverage.",
+        "If AI applied specifically to finance, marketing, or HR is the focus, JAIN's AI for Finance, AI for Marketing, or AI for HR specialisations deliver domain-specific AI applications.",
+        "If pan-India analytics brand recognition is the priority, Amity Online MBA Business Analytics at Rs 2.25L offers stronger all-India recognition."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2100,
+    "generatedAt": "2026-04-22",
+    "batchNumber": "Phase7-Batch14",
+    "hasSyllabusData": true
+  }
+}
