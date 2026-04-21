@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { BookOpen, Star, Users, TrendingUp, ArrowRight } from 'lucide-react'
 import { getSortRank, formatFeeSlim as formatFee } from '@/lib/data-slim'
 import { cleanCareerOutcome } from '@/lib/format'
+import { specName as getSpecName } from '@/lib/data'
 import type { Program, University } from '@/lib/data'
 import EnquiryModal from '@/components/EnquiryModal'
 
@@ -113,7 +114,7 @@ export default function ProgramPageClient({ program, programSlug, universities, 
 
   const filtered = activeSpec
     ? sortedByPriority(universities.filter(u =>
-        u.programDetails?.[program]?.specs?.some(s => normalizeSpec(s) === activeSpec)
+        u.programDetails?.[program]?.specs?.some(s => normalizeSpec(getSpecName(s)) === activeSpec)
       ))
     : sortedByPriority(universities)
 

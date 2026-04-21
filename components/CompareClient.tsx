@@ -12,7 +12,7 @@ import {
   Calendar, ArrowUp
 } from 'lucide-react'
 import { UNIS_SLIM, formatFeeSlim as formatFee } from '@/lib/data-slim'
-import { getUniversityById } from '@/lib/data'
+import { getUniversityById, specName as getSpecName } from '@/lib/data'
 import { getUniversityLogo, getMasterSyllabus } from '@/lib/content'
 import type { University, Program } from '@/lib/data'
 import EnquiryModal from '@/components/EnquiryModal'
@@ -609,7 +609,7 @@ function UniCard({
             <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider block mb-2">{specs.length} Specialisations</span>
             <div className="flex flex-wrap gap-1">
               {specs.slice(0, 5).map(s => (
-                <span key={s} className="px-2 py-1 rounded-md text-[11px] bg-slate-50 border border-slate-200 text-slate-700">{s}</span>
+                <span key={getSpecName(s)} className="px-2 py-1 rounded-md text-[11px] bg-slate-50 border border-slate-200 text-slate-700">{getSpecName(s)}</span>
               ))}
               {specs.length > 5 && (
                 <span className="px-2 py-1 rounded-md text-[11px] bg-amber-50 border border-amber-200 text-amber-700">+{specs.length - 5} more</span>
@@ -770,7 +770,7 @@ function CompareContent() {
         <span className="text-lg font-bold text-slate-700">{specs.length}</span>
         <div className="flex flex-wrap justify-center gap-1">
           {specs.slice(0, 3).map(s => (
-            <span key={s} className="px-1.5 py-0.5 rounded text-[10px] bg-slate-100 text-slate-700">{s}</span>
+            <span key={getSpecName(s)} className="px-1.5 py-0.5 rounded text-[10px] bg-slate-100 text-slate-700">{getSpecName(s)}</span>
           ))}
           {specs.length > 3 && (
             <span className="px-1.5 py-0.5 rounded text-[10px] bg-amber-50 text-amber-700">+{specs.length - 3}</span>

@@ -5,7 +5,7 @@ import { ChevronRight, BookOpen, Award, Users, Briefcase, TrendingUp } from 'luc
 import { formatFeeSlim as formatFee } from '@/lib/data-slim'
 import { getShortUniversityName } from '@/lib/format'
 import { PROGRAM_META } from '@/lib/data-client'
-import { getAllSpecs, getUniversitiesByProgram, UNIVERSITIES } from '@/lib/data'
+import { getAllSpecs, getUniversitiesByProgram, UNIVERSITIES, specName as getSpecName } from '@/lib/data'
 import { getProgramContent, getSpecContent, getSpecFallback } from '@/lib/content'
 import type { Program } from '@/lib/data'
 import ProgramPageClient from '@/components/ProgramPageClient'
@@ -277,7 +277,7 @@ export default async function CatchAllProgramPage(
             {/* About + rich spec content — only shown when a spec is active */}
             {activeSpec && (() => {
               const sc = (specEntry ? getSpecContent(specEntry.contentKey) : null) || getSpecContent(activeSpec) || getSpecFallback(activeSpec, program)
-              const uniWithSpec = universities.find(u => u.programDetails[program]?.specs?.includes(activeSpec))
+              const uniWithSpec = universities.find(u => u.programDetails[program]?.specs?.some(s => getSpecName(s) === activeSpec))
               const uniName = uniWithSpec?.name || `Top UGC DEB Approved Universities`
               return (
                 <>
@@ -396,7 +396,7 @@ export default async function CatchAllProgramPage(
             {activeSpec && (() => {
               const specSlugStr = activeSpec.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'')
               const unisWithSpec = universities
-                .filter(u => u.programDetails[program]?.specs?.some(s => s === activeSpec))
+                .filter(u => u.programDetails[program]?.specs?.some(s => getSpecName(s) === activeSpec))
                 .sort((a,b) => (a.nirf||999) - (b.nirf||999))
                 .slice(0, 8)
               if (!unisWithSpec.length) return null

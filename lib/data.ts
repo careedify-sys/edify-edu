@@ -18,9 +18,12 @@ export interface SyllabusSemester {
   capstone?: string
 }
 
+export type SpecEntry = { slug: string; name: string }
+export type SpecValue = string | SpecEntry
+
 export interface ProgramDetail {
   rankingBadge?: string;
-  specs: string[]
+  specs: SpecValue[]
   fees: string
   roles: string[]
   avgSalary: string
@@ -81,6 +84,13 @@ export interface University {
 }
 
 // Helper
+export function specSlug(s: SpecValue): string {
+  if (typeof s === 'string') return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+  return s.slug
+}
+export function specName(s: SpecValue): string {
+  return typeof s === 'string' ? s : s.name
+}
 export function formatFee(n: number): string {
   if (n >= 100000) return `₹${(n / 100000).toFixed(1)}L`
   return `₹${(n / 1000).toFixed(0)}K`
@@ -97,12 +107,14 @@ export function getAllPrograms(): Program[] {
 export function getAllSpecs(program: Program): string[] {
   const all = new Set<string>()
   UNIVERSITIES.forEach(u => {
-    u.programDetails[program]?.specs.forEach(s => all.add(s))
+    u.programDetails[program]?.specs.forEach(s => all.add(specName(s)))
   })
   return Array.from(all).sort()
 }
 export function getUniversitiesBySpec(program: Program, spec: string) {
-  return UNIVERSITIES.filter(u => u.programDetails[program]?.specs.includes(spec)).sort((a, b) => a.nirf - b.nirf)
+  return UNIVERSITIES.filter(u =>
+    u.programDetails[program]?.specs.some(s => specName(s) === spec)
+  ).sort((a, b) => a.nirf - b.nirf)
 }
 
 export const UNIVERSITIES: University[] = [
@@ -223,7 +235,26 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com'],
     programDetails: {
       'MBA': {
-        specs: ['Hospital & Healthcare Management', 'Business Analytics', 'Data Science', 'Digital Entrepreneurship', 'Digital Marketing Management', 'Entrepreneurship & Leadership Management', 'Finance & Accounting Management', 'Global Finance Market', 'Hospitality Management', 'Human Resource Management', 'Human Resources Analytics', 'Information Technology (IT)', 'Insurance Management', 'International Business Management', 'International Finance (ACCA)', 'Marketing & Sales Management', 'Production & Operations Management', 'Retail Management', 'General Management'],
+        specs: [
+          { slug: 'business-analytics', name: 'Business Analytics' },
+          { slug: 'data-science', name: 'Data Science' },
+          { slug: 'digital-entrepreneurship', name: 'Digital Entrepreneurship' },
+          { slug: 'digital-marketing-management', name: 'Digital Marketing Management' },
+          { slug: 'entrepreneurship-and-leadership-management', name: 'Entrepreneurship and Leadership Management' },
+          { slug: 'finance-and-accounting-management', name: 'Finance and Accounting Management' },
+          { slug: 'general-management', name: 'General Management' },
+          { slug: 'global-finance-market', name: 'Global Finance Market' },
+          { slug: 'hospital-healthcare-management', name: 'Hospital and Healthcare Management' },
+          { slug: 'hospitality-management', name: 'Hospitality Management' },
+          { slug: 'human-resource-analytics', name: 'Human Resource Analytics' },
+          { slug: 'human-resource-management', name: 'Human Resource Management' },
+          { slug: 'information-technology-management', name: 'Information Technology Management' },
+          { slug: 'insurance-management', name: 'Insurance Management' },
+          { slug: 'international-business-management', name: 'International Business Management' },
+          { slug: 'marketing-sales-management', name: 'Marketing and Sales Management' },
+          { slug: 'production-and-operations-management', name: 'Production and Operations Management' },
+          { slug: 'retail-management', name: 'Retail Management' },
+        ],
         fees: '₹2.25L',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Executive'],
@@ -1029,7 +1060,7 @@ export const UNIVERSITIES: University[] = [
     psuEligible: true,
     feeMin: 139500,
     feeMax: 180000,
-    emiFrom: 2500,
+    emiFrom: 7500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     highlight: 'NIRF #58 · NAAC A+',
@@ -1040,8 +1071,22 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com', 'M.Com', 'MSc', 'MA'],
     programDetails: {
       'MBA': {
-        specs: ['Finance', 'Marketing', 'Human Resource Management', 'Analytics and Data Science', 'Digital Marketing', 'Operations Management', 'International Business', 'Project Management', 'Logistics & Supply Chain Management', 'Information System Management', 'IT & FinTech', 'BFSI (Banking, Financial Services and Insurance)', 'Retail Management'],
-        fees: '₹1.8L',
+        specs: [
+          { slug: 'finance', name: 'Finance' },
+          { slug: 'marketing', name: 'Marketing' },
+          { slug: 'human-resource-management', name: 'Human Resource Management' },
+          { slug: 'analytics-and-data-science', name: 'Analytics and Data Science' },
+          { slug: 'digital-marketing', name: 'Digital Marketing' },
+          { slug: 'operations-management', name: 'Operations Management' },
+          { slug: 'international-business', name: 'International Business' },
+          { slug: 'project-management', name: 'Project Management' },
+          { slug: 'supply-chain-management', name: 'Supply Chain Management' },
+          { slug: 'information-system-management', name: 'Information System Management' },
+          { slug: 'it-fintech', name: 'IT and FinTech' },
+          { slug: 'bfsi-banking-financial-services-and-insurance', name: 'BFSI (Banking, Financial Services and Insurance)' },
+          { slug: 'retail-management', name: 'Retail Management' },
+        ],
+        fees: '₹1.53L–₹1.80L',
         duration: '2 Years (4 Semesters)',
         roles: ['Management Trainee', 'Business Analyst', 'Marketing Manager', 'HR Executive', 'Operations Manager', 'Financial Analyst'],
         avgSalary: '₹4L – ₹15L per annum',
@@ -1796,7 +1841,14 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'BBA', 'B.Com'],
     programDetails: {
       'MBA': {
-        specs: ['Business Administration', 'Finance', 'Marketing', 'Human Resource Management', 'Operations Management'],
+        specs: [
+          { slug: 'business-management', name: 'Business Management' },
+          { slug: 'financial-management', name: 'Financial Management' },
+          { slug: 'human-resource-management', name: 'Human Resource Management' },
+          { slug: 'information-technology-management', name: 'Information Technology Management' },
+          { slug: 'marketing-management', name: 'Marketing Management' },
+          { slug: 'operations-and-data-sciences-management', name: 'Operations and Data Sciences Management' },
+        ],
         fees: '₹1.96L–₹2.20L',
         duration: '2 Years (4-year max validity)',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Analyst'],

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { getUniversityById, formatFee } from '@/lib/data'
+import { getUniversityById, formatFee, specName } from '@/lib/data'
 import type { Program } from '@/lib/data'
 import { getTitleName } from '@/lib/seo-title'
 
@@ -117,7 +117,7 @@ export async function generateMetadata({ params }: { params: { id: string; progr
   const progKw = PROG_KW[prog] || `online ${prog.toLowerCase()}`
   const pd = u.programDetails[prog as keyof typeof u.programDetails]
   const fee = pd?.fees || `${formatFee(u.feeMin)}–${formatFee(u.feeMax)}`
-  const specs = pd?.specs?.slice(0, 3).join(', ') || ''
+  const specs = pd?.specs?.slice(0, 3).map(s => specName(s)).join(', ') || ''
   const nirf = u.nirf < 200 ? `NIRF #${u.nirf}` : u.nirfMgt ? `NIRF #${u.nirfMgt} ${u.nirfCategory || 'Mgmt'}` : `NAAC ${u.naac}`
 
   const titleName = getTitleName(u.id, u.name, u.abbr)

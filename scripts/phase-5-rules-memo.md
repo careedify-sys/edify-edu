@@ -217,3 +217,18 @@ This catches:
 - Visual/mobile readability issues
 
 Do not fire Batch N+1 until user has confirmed Batch N renders cleanly on mobile.
+
+---
+
+## SPEC ROUTING RULE (Phase 7.3 — 2026-04-21)
+
+**Problem:** `SpecializationGrid.tsx` previously derived chip `href` by calling a local `toSlug(displayName)` function on the human-readable spec name. This breaks whenever `toSlug(displayName) !== actual-manifest-slug` (e.g., "IT and FinTech" → "it-and-fintech" vs actual "it-fintech"; "Finance & Accounting Management" → "finance-accounting-management" vs "finance-and-accounting-management").
+
+**Rule:** For any university that has spec-level pages (currently Amity, MUJ, NMIMS), the `specs` array in `lib/data.ts` MUST use `{ slug: string; name: string }` tuples, not plain strings. The `slug` value MUST exactly match the JSON filename segment and the `syllabus-manifest.json` key.
+
+**How to add a new spec-page university:**
+1. Add all spec entries as `{ slug, name }` tuples in `lib/data.ts` under that university's `specs` array.
+2. The `slug` must match the JSON file at `lib/data/page-content/{uni-id}-mba-{slug}.json` and the manifest key in `lib/data/programs-manifest.json`.
+3. Run `npx tsc --noEmit` — must pass clean before committing.
+4. Run `node scripts/fix-online-online.js --apply` — must show 0 modifications.
+5. Do NOT derive routing slugs from display names at render time. Always use `specSlug(s)` from `lib/data.ts`.

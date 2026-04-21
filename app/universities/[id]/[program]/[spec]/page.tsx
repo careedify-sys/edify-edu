@@ -1,7 +1,7 @@
 // app/universities/[id]/[program]/[spec]/page.tsx
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
-import { UNIVERSITIES, getUniversityById } from '@/lib/data'
+import { UNIVERSITIES, getUniversityById, specSlug as getSpecSlug, specName as getSpecName } from '@/lib/data'
 import type { Program } from '@/lib/data'
 import { getTitleName } from '@/lib/seo-title'
 import UniSpecBody from '@/components/UniSpecBody'
@@ -14,8 +14,6 @@ const PM: Record<string, Program> = {
   'online-ma': 'MA', 'online-msc': 'MSc',
 }
 
-const toSlug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
-
 export async function generateMetadata(
   { params }: { params: Promise<{ id: string; program: string; spec: string }> }
 ): Promise<Metadata> {
@@ -24,11 +22,12 @@ export async function generateMetadata(
   const program = PM[programSlug?.toLowerCase()]
   if (!u || !program) return { title: 'Not Found' }
 
-  const pd   = u.programDetails[program]
-  const spec = pd?.specs?.find(s => toSlug(s) === specSlug)
-  if (!spec) return { title: 'Not Found' }
+  const pd      = u.programDetails[program]
+  const specVal = pd?.specs?.find(s => getSpecSlug(s) === specSlug)
+  if (!specVal) return { title: 'Not Found' }
 
-  const year      = new Date().getFullYear()
+  const spec     = getSpecName(specVal)
+  const year     = new Date().getFullYear()
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const title     = `${titleName} Online ${program} in ${spec} ${year} — Fees, Syllabus & Admission | EdifyEdu`
   const description = `${titleName} Online ${program} with ${spec} specialisation. ${pd?.duration || '2 Years'}, NAAC ${u.naac} accredited, UGC DEB approved. Fees ${pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`}. Check ${year} admission details.`
@@ -60,16 +59,16 @@ export default async function UniversitySpecPage(
 
   if (!u || !program || !u.programDetails[program]) notFound()
 
-  const pd   = u.programDetails[program]!
-  const spec = pd.specs?.find(s => toSlug(s) === specSlug)
-  if (!spec) notFound()
+  const pd      = u.programDetails[program]!
+  const specVal = pd.specs?.find(s => getSpecSlug(s) === specSlug)
+  if (!specVal) notFound()
 
   return (
     <UniSpecBody
       u={u}
       program={program}
       programSlug={programSlug}
-      spec={spec}
+      spec={getSpecName(specVal)}
       specSlug={specSlug}
       pd={pd}
     />

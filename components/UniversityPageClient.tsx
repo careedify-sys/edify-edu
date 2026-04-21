@@ -367,15 +367,16 @@ export default function UniversityPageClient({ university: u }: Props) {
                     <h3 className="font-semibold text-navy mb-3">Available Specialisations</h3>
                     <div className="flex flex-wrap gap-2">
                       {pd.specs.map(spec => {
-                        const specSlug = spec.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
+                        const slug = typeof spec === 'string' ? spec.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') : spec.slug
+                        const name = typeof spec === 'string' ? spec : spec.name
                         const programSlug = displayProgram.toLowerCase().replace(/\./g, '')
                         return (
                           <Link
-                            key={spec}
-                            href={`/universities/${u.id}/${programSlug}/${specSlug}`}
+                            key={slug}
+                            href={`/universities/${u.id}/${programSlug}/${slug}`}
                             className="px-3 py-1.5 bg-surface-2 border border-border rounded-full text-sm text-ink-2 hover:border-amber hover:text-amber transition-colors"
                           >
-                            {spec}
+                            {name}
                           </Link>
                         )
                       })}
