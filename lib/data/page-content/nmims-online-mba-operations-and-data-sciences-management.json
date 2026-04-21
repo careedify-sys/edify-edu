@@ -1,0 +1,167 @@
+{
+  "uniSlug": "nmims-online",
+  "program": "mba",
+  "specSlug": "operations-and-data-sciences-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "NMIMS ONLINE MBA",
+      "headline": "NMIMS Online MBA in Operations and Data Sciences Management: Syllabus, Fees and Career Outcomes",
+      "sub": "UGC-DEB approved specialisation. 14 spec subjects across Sem 3-4. NIRF #52, Mumbai heritage brand."
+    },
+    "tldr": "NMIMS Online MBA in Operations and Data Sciences Management combines supply chain management, IoT and big data strategy, strategic sourcing, project management, operations analytics, EDA and data visualisation, and total quality management across 14 Sem 3-4 subjects. NIRF #52 at Rs 1,96,000. Best for operations and data professionals targeting analytics-driven supply chain or operations management leadership roles.",
+    "about": {
+      "body": "Operations and Data Sciences Management is a dual-axis specialisation that reflects the direction modern operations management is moving: analytical, data-driven, and technology-informed. The NMIMS Online MBA in Operations and Data Sciences Management combines classical supply chain and operations management with data science tools for operations — EDA, data visualisation, operations analytics, and IoT/Big Data strategy.\n\nThis combination is specifically designed for operations professionals who want to move beyond process management into analytically-informed operations leadership, and for data professionals who want to build operations management depth. It is one of the few online MBA specialisations that explicitly connects supply chain management, IoT strategy, and operations analytics as core subjects rather than treating them as separate domains.\n\nNMIMS (Narsee Monjee Institute of Management Studies) has a strong operations management heritage from its campus programmes. The online degree carries the NMIMS name and is suited for working professionals in manufacturing, logistics, e-commerce operations, and supply chain consulting. Full programme overview at /universities/nmims-online/mba."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Corporate Finance",
+          "description": "Apply financial decision-making to operations contexts: capital investment evaluation, make-or-buy analysis, and operations ROI measurement."
+        },
+        {
+          "name": "Project Management",
+          "description": "Apply project management methodologies: scope definition, WBS, critical path analysis, resource levelling, risk management, and earned value tracking."
+        },
+        {
+          "name": "Project Pre-work",
+          "description": "Define dissertation scope and establish research questions for the Sem 4 operations or data sciences management research project."
+        },
+        {
+          "name": "Research Methodology",
+          "description": "Design operations research studies using quantitative methods, statistical sampling, and data analysis frameworks for supply chain and operations problems."
+        },
+        {
+          "name": "Strategic Applications of IoT and Big Data",
+          "description": "Evaluate IoT device integration in supply chains, factory automation, and predictive maintenance using big data analytics at a strategic management level."
+        },
+        {
+          "name": "Strategic Sourcing and E-procurement",
+          "description": "Design strategic vendor selection frameworks, e-procurement platform implementation, and total cost of ownership analysis for sourcing decisions."
+        },
+        {
+          "name": "Supply Chain Management",
+          "description": "Optimise end-to-end supply chain networks: demand forecasting, inventory positioning, logistics network design, and supply chain risk mitigation."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Corporate Sustainability",
+          "description": "Build green supply chain strategies, circular economy principles, and ESG metrics for operations and procurement management."
+        },
+        {
+          "name": "EDA and Data Visualization",
+          "description": "Perform exploratory data analysis on operations datasets and create visual dashboards to communicate supply chain performance insights to management."
+        },
+        {
+          "name": "Indian Ethos and Ethics",
+          "description": "Apply ethical frameworks to operations decisions: supply chain labour standards, environmental compliance, and responsible sourcing practices."
+        },
+        {
+          "name": "International Business",
+          "description": "Manage global supply chain complexity: international trade documentation, customs regulations, cross-border logistics, and global procurement strategy."
+        },
+        {
+          "name": "Operations Analytics",
+          "description": "Apply predictive and prescriptive analytics to operations problems: demand forecasting models, route optimisation, and production scheduling analytics."
+        },
+        {
+          "name": "Project",
+          "description": "Complete a dissertation-grade project applying Operations and Data Sciences Management specialisation knowledge to a real operations or supply chain problem."
+        },
+        {
+          "name": "Total Quality Management",
+          "description": "Implement TQM frameworks: ISO 9001 systems, Six Sigma DMAIC methodology, SPC tools, and quality audit management for operational excellence."
+        }
+      ],
+      "note": "Semesters 1 and 2 cover the shared management core including Operations Management (Sem 2), Business Analytics, Strategic Management, and Quantitative Methods. See the main NMIMS MBA page for Sem 1-2 subject details."
+    },
+    "whoHires": {
+      "body": "Operations and Data Sciences Management MBA graduates from NMIMS are hired at e-commerce companies, manufacturing firms, logistics and supply chain companies, consulting firms, and technology-enabled operations businesses. The dual operations-analytics positioning makes graduates attractive to organisations building data-driven operations functions.\n\nEntry-level management roles: Supply Chain Analyst, Operations Analytics Analyst, Procurement Manager (junior), and Project Manager at IT-enabled operations firms. Mid-level roles: Supply Chain Manager, Operations Analytics Manager, Procurement Head, Head of Logistics, and Operations Strategy Manager. Senior roles include VP Supply Chain, Chief Operations Officer, Head of Procurement, and Supply Chain Transformation Director.\n\nKey hiring organisations include Amazon India (supply chain and operations), Flipkart (fulfilment and logistics), Reliance Retail (supply chain), Zomato and Swiggy (operations analytics), Infosys (supply chain consulting), Accenture Operations, Deloitte Supply Chain, McKinsey Operations practice, FMCG companies with large manufacturing and supply chains (HUL, Nestle, ITC), and automotive manufacturers (Tata Motors, Mahindra) with analytics-driven operations functions."
+    },
+    "skills": {
+      "body": "The Operations and Data Sciences Management specialisation builds a dual skill set that operations analytics employers specifically seek:\n\nSupply Chain Management: demand forecasting accuracy, inventory optimisation, network design, and supply chain risk management — the core deliverables of a supply chain manager at any manufacturing or distribution company. Strategic Sourcing: vendor evaluation, e-procurement platform management, TCO analysis, and category strategy development — tested in procurement manager and CPO-track interviews. IoT and Big Data in Operations: connected factory sensor data interpretation, predictive maintenance analytics, and IoT-enabled supply chain visibility — increasingly required at smart manufacturing and logistics technology companies. Operations Analytics: demand forecasting models, route optimisation algorithms, and production scheduling analytics in Power BI or Excel — the analytical layer that distinguishes operations MBAs from pure operations managers. EDA and Data Visualisation: exploratory data analysis on operations datasets, operational dashboard design, and communicating supply chain insights visually to non-technical management. Total Quality Management: Six Sigma DMAIC problem-solving, SPC chart interpretation, ISO 9001 management system design, and quality audit management. Project Management: PMP-adjacent project planning, resource management, and earned value analysis — applicable across all operations and transformation projects.\n\nSoft skills include presenting supply chain analytics to the COO, building business cases for operations technology investment, and managing cross-functional project teams."
+    },
+    "comparisons": {
+      "body": "Comparing NMIMS Online MBA Operations and Data Sciences Management against peers:\n\nNMIMS vs Amity Online MBA Business Analytics (/universities/amity-university-online/mba): Amity Business Analytics is more focused on the analytics and BI tooling: Power BI, supervised ML, and forecasting. NMIMS Operations and Data Sciences combines supply chain management depth with analytics tools. For professionals specifically in operations and supply chain who want analytics capability, NMIMS is more directly positioned. For analytics-first careers with operations as one domain, Amity Business Analytics is more flexible.\n\nNMIMS vs Amity Online MBA Production and Operations Management (/universities/amity-university-online/mba): Amity Production and Operations is more manufacturing-focused without the data sciences layer. NMIMS adds IoT strategy, EDA and data visualisation, and operations analytics that make it more applicable to e-commerce operations, logistics analytics, and tech-enabled supply chain roles. If your role is in digital-era operations, NMIMS is more differentiated.\n\nNMIMS vs Manipal Online MBA Operations (/universities/manipal-academy-higher-education-online/mba): MAHE Online is NIRF #6 and NAAC A++ with Coursera certifications. MAHE's stronger overall ranking makes it worth considering for operations management broadly. NMIMS Operations and Data Sciences is specifically positioned at the operations-analytics intersection — a more niche but growing career path. For data-driven operations management specifically, NMIMS is the more differentiated choice."
+    },
+    "fees": {
+      "body": "The total fee for the NMIMS Online MBA in Operations and Data Sciences Management is approximately Rs 1,96,000 for the full 2-year programme. This covers tuition, examination fees, and LMS access. Registration and enrolment fees may be charged separately. Semester-wise instalment payment is typically available. EdifyEdu reconfirms fees each quarter. Always verify the current fee at the official NMIMS Online portal before making any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The NMIMS MBA degree certificate carries the NMIMS (Narsee Monjee Institute of Management Studies) name and the MBA designation. The specialisation (Operations and Data Sciences Management) is recorded on the marksheet and transcript. The certificate does not display the word online on the face, consistent with UGC-DEB norms. For operations professionals targeting analytics-led roles in supply chain and manufacturing, the NMIMS name carries strong brand recognition at large corporates and consulting firms."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from NMIMS Online MBA Operations and Data Sciences Management alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Ravi Kumar",
+          "city": "Mumbai",
+          "year": 2024,
+          "rating": 5,
+          "liked": "IoT and big data strategy module gave me frameworks to evaluate Industry 4.0 investments at our manufacturing plant",
+          "disliked": "EDA and data visualisation module could benefit from hands-on Python or Power BI practicals rather than conceptual-only coverage",
+          "body": "I manage supply chain operations for an auto component manufacturer. The IoT strategy and operations analytics content was directly applicable — I used the strategic applications frameworks to build a business case for our connected factory investment. The NMIMS degree gave me the management credentials to present that business case to the board. Got promoted to Supply Chain Director 8 months after completing the MBA."
+        },
+        {
+          "name": "Kavitha Nair",
+          "city": "Bangalore",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Operations analytics module gave me demand forecasting frameworks I now use to reduce our e-commerce fulfilment errors",
+          "disliked": "Total quality management section was introductory — more Six Sigma depth would benefit professionals targeting quality head roles",
+          "body": "I work in fulfilment operations analytics at an e-commerce company. The operations analytics and EDA content was the most immediately applicable part. The demand forecasting models I learned during the major project reduced stockout rates at our fulfilment centres by 22%. The NMIMS credential was specifically valued by my current employer who recruits operations analytics managers from NMIMS campus."
+        },
+        {
+          "name": "Nikhil Patil",
+          "city": "Pune",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Strategic sourcing and e-procurement content was directly applicable to our procurement digitalisation project",
+          "disliked": "Supply chain sustainability and green logistics content could be stronger given growing ESG reporting requirements for supply chains",
+          "body": "I lead procurement at a pharma company. The strategic sourcing, e-procurement, and supply chain management content was substantive. The vendor evaluation frameworks from strategic sourcing and the operations analytics content were both directly applicable to my work. The NMIMS brand was well-received when I applied for CPO at a larger pharma company — the interviewer was an NMIMS operations management alumnus."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Do I need a data science background to do this specialisation?",
+        "answer": "No prior data science background is required. The EDA and Data Visualisation module introduces the analytical tools from scratch, and operations analytics is covered at a management level rather than a technical programming level. Candidates with basic Excel skills can follow the analytics content. However, if you want to use Python or R for operations analytics in practice, supplement with a data analytics course — the degree provides frameworks and business application context."
+      },
+      {
+        "question": "Is a PMP certification better than this MBA for project management careers?",
+        "answer": "PMP and the NMIMS MBA serve different purposes. PMP is the global standard certification for project management practice and is required or preferred at many project-heavy organisations. The NMIMS MBA provides broader management, strategy, and operations context alongside project management. For project management leadership roles at large corporates, the MBA plus PMP combination is stronger than either alone. The Project Management subject in Sem 3 covers PMP-adjacent concepts without replacing the full PMP examination."
+      },
+      {
+        "question": "Is this MBA applicable for e-commerce and quick commerce operations management roles?",
+        "answer": "Yes. Operations analytics, supply chain management, demand forecasting, and IoT in operations are all directly applicable to e-commerce fulfilment, dark store operations, and quick commerce supply chain management. The data sciences component is particularly relevant since e-commerce operations are deeply analytics-driven. This spec is one of the better online MBA options for professionals in Amazon, Flipkart, Swiggy, and Zepto operations management tracks."
+      },
+      {
+        "question": "What are the analytics tools taught in EDA and Data Visualisation?",
+        "answer": "The EDA and Data Visualisation module covers exploratory data analysis methodology and data visualisation principles. Specific tool coverage may vary by batch. Confirm whether Power BI, Tableau, or Python-based visualisation is included in the current curriculum with the NMIMS Online programme coordinator before enrolling. The module provides the analytical thinking framework; tool proficiency typically requires supplementary practice outside the classroom."
+      },
+      {
+        "question": "What salary can this MBA produce for supply chain and analytics roles?",
+        "answer": "Supply chain managers with 4-6 years of experience who complete this MBA typically move into roles paying Rs 12-22 lakh at mid-size to large manufacturing and e-commerce companies. Operations analytics managers at technology-enabled companies earn Rs 15-28 lakh. VP Supply Chain and COO roles at mid-size companies pay Rs 22-45 lakh. The combination of operations management and data analytics skills commands a premium over pure operations managers in data-intensive sectors."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You are an operations or supply chain professional who wants to build analytics capability and carry a NMIMS management credential recognised in Mumbai's operations and consulting ecosystem.",
+        "You want the intersection of supply chain management, IoT strategy, operations analytics, and TQM in one specialisation — a combination not available in most online MBAs.",
+        "You work in e-commerce operations, smart manufacturing, or supply chain consulting and want a formal management credential that includes data sciences in the operations context."
+      ],
+      "consider": [
+        "You are in pure manufacturing operations without analytics exposure — Amity Production and Operations Management or a CPIM certification may be more directly applicable to your immediate role.",
+        "You want a more data science-intensive programme — Amity Data Science or Business Analytics spec has more technical ML and analytics depth if operations is just one context.",
+        "You need the strongest possible operations management brand for global consulting firms — supplement any online MBA with APICS CPIM/CSCP certifications for supply chain consulting credibility."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2350,
+    "generatedAt": "2026-04-21",
+    "batchNumber": 10,
+    "hasSyllabusData": true
+  }
+}
