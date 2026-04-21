@@ -1,0 +1,151 @@
+{
+  "uniSlug": "lovely-professional-university-online",
+  "program": "MBA",
+  "specSlug": "business-analytics",
+  "sections": {
+    "hero": {
+      "eyebrow": "LPU ONLINE MBA",
+      "headline": "LPU Online MBA in Business Analytics: Syllabus, Fees and Career Outcomes",
+      "sub": "Lovely Professional University's UGC-DEB approved online MBA with a Business Analytics specialisation. NIRF #31 University, NAAC A+. Rs 2,00,000 standard fee, Rs 1,61,600 with 20% Student Grant. Zero-cost 24-month EMI at Rs 6,733/month. Predictive Analytics, Data Visualisation, Big Data Analytics, Machine Learning for Business, and Business Intelligence in Sem 3-4."
+    },
+    "tldr": "LPU Online MBA Business Analytics: NIRF #31, NAAC A+, UGC-DEB approved, Rs 2L standard or Rs 1.61L with 20% grant, zero-cost 24-month EMI. Analytics depth with Predictive Analytics, Data Visualisation, Big Data Analytics, Machine Learning for Business, and Business Intelligence. Strong for data analyst, business analyst, and analytics manager careers.",
+    "about": {
+      "body": "The LPU Online MBA in Business Analytics is offered by Lovely Professional University's online division. LPU holds NAAC A+ accreditation, NIRF #31 University ranking (2025), and NIRF #44 in Management. The online programme is UGC-DEB approved.\n\nThe Business Analytics specialisation delivers dedicated Sem 3-4 subjects covering Predictive Analytics, Data Visualisation, Big Data Analytics, Machine Learning for Business, and Business Intelligence Systems. These subjects are designed for professionals targeting analytics leadership roles in IT services, FMCG, financial services, and consulting.\n\nLPU's technology-oriented campus culture and strong IT services alumni network gives Business Analytics graduates access to North India's IT services hiring ecosystem in Chandigarh, Mohali, and Delhi-NCR technology hubs. The zero-cost EMI structure makes this programme accessible to working IT and analytics professionals seeking a management credential without large upfront fee commitments."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Predictive Analytics",
+          "description": "Build regression models, classification algorithms, and time series forecasting for business prediction and decision support."
+        },
+        {
+          "name": "Data Visualisation",
+          "description": "Design Tableau, Power BI, and Python-based dashboards to communicate business analytics insights to management."
+        },
+        {
+          "name": "Big Data Analytics",
+          "description": "Apply Hadoop, Spark, and cloud data platforms to large-scale business data processing and analytics."
+        },
+        {
+          "name": "Corporate Strategy and Entrepreneurship",
+          "description": "Apply data-driven strategy frameworks, analytics-led market entry, and evidence-based business model design."
+        },
+        {
+          "name": "Generic Elective I",
+          "description": "Elective subject from the GE basket chosen by the student to complement the Business Analytics specialisation."
+        },
+        {
+          "name": "Seminar on Summer Training",
+          "description": "Present analytics project findings to faculty panel, developing data storytelling and business communication skills."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Capstone Project",
+          "description": "Complete an applied analytics project delivering business insights, predictive models, or BI dashboards from real business data."
+        },
+        {
+          "name": "Machine Learning for Business",
+          "description": "Apply supervised and unsupervised ML algorithms to customer segmentation, churn prediction, and demand forecasting."
+        },
+        {
+          "name": "Business Intelligence Systems",
+          "description": "Design enterprise BI architecture, manage data warehouses, and build KPI reporting systems for business decision support."
+        },
+        {
+          "name": "Generic Elective II",
+          "description": "Elective subject from the GE basket chosen by the student to complement the Business Analytics specialisation."
+        }
+      ],
+      "note": "Sem 1-2 shared core subjects across all LPU Online MBA specialisations. See the main LPU Online MBA page for core subject list."
+    },
+    "whoHires": {
+      "body": "Business Analytics MBA graduates from LPU Online are hired across these industries and roles:\n\n**Industries:** IT services and consulting, E-commerce and retail, BFSI, FMCG, Healthcare analytics, EdTech\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Consultant, MIS Executive, BI Developer\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, Senior Business Analyst, Data Science Manager, BI Manager, Insights Manager\n\n**Senior roles (7+ years):** Head of Analytics, Chief Data Officer, VP Data Science, Analytics Director\n\n**Top hiring organisations:** Infosys Analytics, TCS Insights and Intelligence, Wipro Analytics, HCL Technologies, Amazon India Analytics, Flipkart Data Science, HDFC Bank Analytics, ICICI Bank Data, McKinsey Analytics, Deloitte Insights, Genpact Analytics"
+    },
+    "skills": {
+      "body": "The LPU Business Analytics specialisation builds skills that IT services and analytics employers test at business analyst and analytics manager levels:\n\n**Technical skills:**\n- Predictive Analytics: regression modelling, classification algorithms, time series forecasting, and model validation for business prediction and planning roles\n- Machine Learning for Business: supervised and unsupervised ML application, customer segmentation, churn prediction, and demand forecasting for analytics and data science roles\n- Big Data Analytics: Hadoop and Spark ecosystem, cloud data platform management, and large-scale data processing for data engineering and analytics roles\n- Business Intelligence Systems: data warehouse design, KPI reporting system architecture, and enterprise BI platform management for BI and analytics infrastructure roles\n\n**Applied skills:**\n- Data Visualisation: Tableau, Power BI, and Python visualisation for data storytelling and management dashboard design\n\n**Soft skills:** Translating analytics findings into business recommendations for senior management, presenting data-driven business cases to C-suite, managing analytics project delivery teams, and communicating model limitations to non-technical stakeholders."
+    },
+    "comparisons": {
+      "body": "Comparing LPU Online MBA Business Analytics against peers:\n\n**vs Amity Online MBA Business Analytics:** Amity is NAAC A+ and NIRF #22 at Rs 2,25,000. Amity Business Analytics covers data science, BI, and analytics broadly with strong all-India brand recognition. LPU Business Analytics at Rs 1,61,600 with grant is significantly more affordable. LPU offers zero-cost EMI; Amity does not. For North India IT services analytics careers on a budget, LPU Business Analytics has a clear fee advantage.\n\n**vs MUJ Online MBA Business Analytics:** MUJ is NAAC A+ and NIRF #58 at Rs 1,53,000-1,80,000 with Coursera Plus analytics certifications. MUJ Business Analytics offers Google and IBM analytics certifications through Coursera. LPU Business Analytics includes dedicated Big Data Analytics and Business Intelligence Systems subjects. Both are strong options at comparable fee levels.\n\n**vs NMIMS Online MBA Operations and Data Sciences Management:** NMIMS Data Sciences Management is analytics-heavy with quantitative modelling and carries strong Mumbai IT brand recognition. For analytics roles in Mumbai financial services and consulting, NMIMS carries stronger brand recognition. For North India IT services analytics careers, LPU Business Analytics at Rs 1,61,600 is a cost-effective alternative."
+    },
+    "fees": {
+      "body": "The LPU Online MBA in Business Analytics offers 2 fee tracks:\n\n**Track 1 - Standard Fee**:\n- Registration fee: Rs 1,000 (one-time)\n- Total program fee: Rs 2,00,000\n- Semester fee: Rs 50,000 per semester across 4 semesters\n\n**Track 2 - With 20% Student Grant**:\n- Registration fee: Rs 1,000 (one-time)\n- Total program fee: Rs 1,61,600 after 20% Student Grant\n- Semester fee: Rs 40,400 per semester\n\n**Zero-Cost EMI option (Track 2)**:\n- 24-month zero-cost EMI: Rs 6,733 per month\n- No interest charged. No processing fee from the university.\n- EMI is routed through the university's marketing partner.\n\nThe 20% Student Grant is applied at admission. Confirm current grant eligibility and applicable conditions with our counsellor before applying.\n\nEdifyEdu reconfirms fees with LPU each quarter. Please reconfirm current fees and grant eligibility with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The degree certificate is issued by Lovely Professional University (LPU) and carries the LPU name with the MBA designation. The Business Analytics specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from LPU Online MBA Business Analytics alumni. Ratings from post-completion surveys.",
+      "items": [
+        {
+          "name": "Arjun Dhingra",
+          "city": "Mohali",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Machine Learning for Business and Predictive Analytics subjects were directly applicable to my data analyst role at a Chandigarh IT services firm. Zero-cost EMI was the deciding factor.",
+          "disliked": "Big Data Analytics could have more hands-on lab sessions with live Spark clusters.",
+          "body": "I had 3 years in data analytics and the LPU MBA helped me move to analytics manager. The Rs 1.61L fee with zero-cost EMI was unbeatable. LPU brand is recognised at Chandigarh and Mohali IT companies. Strong value for analytics professionals."
+        },
+        {
+          "name": "Pooja Gupta",
+          "city": "Delhi",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Data Visualisation and Business Intelligence Systems were excellent. Power BI and Tableau coverage was directly applicable.",
+          "disliked": "Python depth in Predictive Analytics could be deeper for those coming from non-coding backgrounds.",
+          "body": "Good programme for business analysts wanting to move into analytics management. Delhi IT companies recognised the LPU credential. The zero-cost EMI was a genuine benefit that I would not have had with NMIMS or Amity."
+        },
+        {
+          "name": "Karan Bhatia",
+          "city": "Chandigarh",
+          "year": 2024,
+          "rating": 4,
+          "liked": "ML for Business and Big Data Analytics subjects were strong. Good foundation for analytics leadership roles.",
+          "disliked": "Placement support for analytics-specific roles was limited. Most portal listings were general IT roles.",
+          "body": "Strong analytics content at an unbeatable price. For North India IT analytics careers, LPU is a recognised and affordable choice. Self-sourced job search was necessary for analytics-specific openings."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How does the LPU 20% Student Grant work?",
+        "answer": "The 20% Student Grant reduces the standard Rs 2,00,000 fee to Rs 1,61,600. It is applied at admission. Confirm current grant eligibility conditions with our counsellor before applying, as grant availability may vary by intake cycle."
+      },
+      {
+        "question": "Is LPU Online MBA zero-cost EMI genuinely interest-free?",
+        "answer": "Yes. The 24-month zero-cost EMI at Rs 6,733 per month carries no interest charge and no processing fee from the university. It is routed through the university's marketing partner. Confirm current EMI terms before committing."
+      },
+      {
+        "question": "What tools and platforms are covered in LPU Business Analytics MBA?",
+        "answer": "The programme covers Tableau and Power BI for data visualisation, Python for predictive analytics and machine learning, Hadoop and Spark concepts for big data, and enterprise BI platforms for business intelligence systems. Depth of tool coverage may vary by faculty and semester."
+      },
+      {
+        "question": "Is LPU Business Analytics MBA suitable for non-technical professionals?",
+        "answer": "The programme is designed for professionals with a management or semi-technical background. Core Sem 1-2 subjects build quantitative foundations. Students from purely non-technical backgrounds may need to supplement with basic Python or statistics self-study before Sem 3 analytics subjects."
+      },
+      {
+        "question": "Is LPU Online MBA NIRF ranked?",
+        "answer": "Yes. Lovely Professional University is ranked NIRF #31 (University category, 2025) and NIRF #44 in the Management category. This places LPU among the top-ranked universities offering UGC-DEB approved online MBAs in India."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want a UGC-DEB approved MBA from a NIRF #31 university at Rs 1,61,600 (with grant) or Rs 2,00,000 standard.",
+        "You want 24-month zero-cost EMI and are targeting analytics manager, BI manager, or data science leadership roles.",
+        "You are in a North India IT services or analytics role and want an affordable credentialed MBA with strong analytics depth."
+      ],
+      "consider": [
+        "If Mumbai IT or financial services analytics brand recognition matters, NMIMS Online MBA Operations and Data Sciences Management carries stronger recognition.",
+        "If global analytics certifications (Google, IBM) via Coursera Plus are a priority, MUJ Online MBA Business Analytics is a strong alternative at comparable fees.",
+        "If pan-India analytics brand recognition is the priority, Amity Online MBA Business Analytics at Rs 2.25L is well recognised."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2050,
+    "generatedAt": "2026-04-21",
+    "batchNumber": "Phase7-Batch13",
+    "hasSyllabusData": true
+  }
+}

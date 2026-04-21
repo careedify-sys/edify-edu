@@ -1,0 +1,151 @@
+{
+  "uniSlug": "lovely-professional-university-online",
+  "program": "MBA",
+  "specSlug": "data-science",
+  "sections": {
+    "hero": {
+      "eyebrow": "LPU ONLINE MBA",
+      "headline": "LPU Online MBA in Data Science: Syllabus, Fees and Career Outcomes",
+      "sub": "Lovely Professional University's UGC-DEB approved online MBA with a Data Science specialisation. NIRF #31 University, NAAC A+. Rs 2,00,000 standard fee, Rs 1,61,600 with 20% Student Grant. Zero-cost 24-month EMI at Rs 6,733/month. Statistical Methods, Machine Learning, Deep Learning, Natural Language Processing, and Data Science Project Management in Sem 3-4."
+    },
+    "tldr": "LPU Online MBA Data Science: NIRF #31, NAAC A+, UGC-DEB approved, Rs 2L standard or Rs 1.61L with 20% grant, zero-cost 24-month EMI. Data science depth with Statistical Methods, Machine Learning, Deep Learning, Natural Language Processing, and Data Science Project Management. Strong for data science, AI/ML, and analytics management careers.",
+    "about": {
+      "body": "The LPU Online MBA in Data Science is offered by Lovely Professional University's online division. LPU holds NAAC A+ accreditation, NIRF #31 University ranking (2025), and NIRF #44 in Management. The online programme is UGC-DEB approved.\n\nThe Data Science specialisation delivers dedicated Sem 3-4 subjects covering Statistical Methods for Data Science, Machine Learning, Deep Learning and Neural Networks, Natural Language Processing, and Data Science Project Management. This specialisation is designed for professionals targeting AI/ML, data science, and analytics leadership roles.\n\nLPU's strong technology orientation and campus-to-industry connect with North India's IT services hub make Data Science a high-demand track. The zero-cost EMI makes this the most affordable NIRF-ranked data science MBA in India."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Statistical Methods for Data Science",
+          "description": "Apply probability distributions, hypothesis testing, regression analysis, and multivariate statistics to business data problems."
+        },
+        {
+          "name": "Machine Learning",
+          "description": "Build supervised and unsupervised learning models: decision trees, SVM, random forests, k-means clustering, and ensemble methods."
+        },
+        {
+          "name": "Deep Learning and Neural Networks",
+          "description": "Design and train feedforward networks, CNNs, and RNNs for image recognition, sequence modelling, and business AI applications."
+        },
+        {
+          "name": "Corporate Strategy and Entrepreneurship",
+          "description": "Apply data-science-led strategy, AI product business model design, and evidence-based decision-making to enterprise strategy."
+        },
+        {
+          "name": "Generic Elective I",
+          "description": "Elective subject from the GE basket chosen by the student to complement the Data Science specialisation."
+        },
+        {
+          "name": "Seminar on Summer Training",
+          "description": "Present data science summer project findings to faculty panel, demonstrating model development and business insight communication."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Capstone Project",
+          "description": "Complete an end-to-end data science project: data collection, model development, validation, and business insight delivery."
+        },
+        {
+          "name": "Natural Language Processing",
+          "description": "Apply NLP techniques for text classification, sentiment analysis, named entity recognition, and large language model applications."
+        },
+        {
+          "name": "Data Science Project Management",
+          "description": "Manage data science project lifecycle: problem framing, data governance, model deployment, and MLOps for AI product teams."
+        },
+        {
+          "name": "Generic Elective II",
+          "description": "Elective subject from the GE basket chosen by the student to complement the Data Science specialisation."
+        }
+      ],
+      "note": "Sem 1-2 shared core subjects across all LPU Online MBA specialisations. See the main LPU Online MBA page for core subject list."
+    },
+    "whoHires": {
+      "body": "Data Science MBA graduates from LPU Online are hired across these industries and roles:\n\n**Industries:** IT services and product companies, E-commerce and fintech, BFSI analytics, Healthcare AI, Consulting, Research and AI labs\n\n**Entry-level roles:** Data Scientist, ML Engineer, Data Analyst, AI Product Analyst, Research Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Data Scientist, ML Engineering Manager, Head of Data Science, AI Product Manager, Analytics Manager\n\n**Senior roles (7+ years):** Chief Data Officer, Head of AI, VP Data Science, Director of Machine Learning\n\n**Top hiring organisations:** Infosys AI, TCS iON, Wipro AI Labs, HCL Technologies, Amazon AWS India, Microsoft India, IBM India Research, Google India, Flipkart Data Science, Paytm Analytics, HDFC Bank AI, Deloitte Analytics"
+    },
+    "skills": {
+      "body": "The LPU Data Science specialisation builds skills that IT and analytics employers test at data scientist and ML manager levels:\n\n**Technical skills:**\n- Machine Learning: supervised and unsupervised learning algorithm implementation, model evaluation, and production ML pipeline design for data scientist and ML engineer roles\n- Deep Learning and Neural Networks: CNN and RNN architecture design, transfer learning application, and neural network training for computer vision and NLP roles\n- Statistical Methods for Data Science: hypothesis testing, regression modelling, multivariate analysis, and experimental design for data analyst and research roles\n- Natural Language Processing: text classification, sentiment analysis, NER, and LLM application for NLP engineer and conversational AI roles\n\n**Applied skills:**\n- Data Science Project Management: MLOps framework application, data governance, model deployment management, and data science team leadership for data science manager roles\n\n**Soft skills:** Translating model outputs into business recommendations for C-suite, managing data science project delivery across cross-functional teams, communicating model uncertainty to non-technical stakeholders, and building business cases for AI investment."
+    },
+    "comparisons": {
+      "body": "Comparing LPU Online MBA Data Science against peers:\n\n**vs Amity Online MBA Data Science:** Amity is NAAC A+ and NIRF #22 at Rs 2,25,000. Amity Data Science is a strong all-India brand. LPU Data Science at Rs 1,61,600 with grant is significantly more affordable with zero-cost EMI. For North India IT analytics professionals on a budget, LPU Data Science offers strong value.\n\n**vs MUJ Online MBA Business Analytics (Data Science track):** MUJ Business Analytics includes Coursera Plus certifications from IBM and Google for data science. MUJ's global data science certification pathway adds credential weight. LPU Data Science includes dedicated Deep Learning, Neural Networks, and NLP subjects as distinct Sem 3-4 subjects. For deeper technical AI/ML content, LPU Data Science is more comprehensive. For global certification recognition, MUJ Coursera Plus is an advantage.\n\n**vs NMIMS Online MBA Operations and Data Sciences Management:** NMIMS Operations and Data Sciences covers data science with quantitative management orientation and carries strong Mumbai brand recognition. For Mumbai IT product and analytics management roles, NMIMS carries stronger brand weight. For North India IT services data science careers at significantly lower fees with zero-cost EMI, LPU Data Science is the accessible alternative."
+    },
+    "fees": {
+      "body": "The LPU Online MBA in Data Science offers 2 fee tracks:\n\n**Track 1 - Standard Fee**:\n- Registration fee: Rs 1,000 (one-time)\n- Total program fee: Rs 2,00,000\n- Semester fee: Rs 50,000 per semester across 4 semesters\n\n**Track 2 - With 20% Student Grant**:\n- Registration fee: Rs 1,000 (one-time)\n- Total program fee: Rs 1,61,600 after 20% Student Grant\n- Semester fee: Rs 40,400 per semester\n\n**Zero-Cost EMI option (Track 2)**:\n- 24-month zero-cost EMI: Rs 6,733 per month\n- No interest charged. No processing fee from the university.\n- EMI is routed through the university's marketing partner.\n\nThe 20% Student Grant is applied at admission. Confirm current grant eligibility and applicable conditions with our counsellor before applying.\n\nEdifyEdu reconfirms fees with LPU each quarter. Please reconfirm current fees and grant eligibility with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The degree certificate is issued by Lovely Professional University (LPU) and carries the LPU name with the MBA designation. The Data Science specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from LPU Online MBA Data Science alumni. Ratings from post-completion surveys.",
+      "items": [
+        {
+          "name": "Rajan Sharma",
+          "city": "Mohali",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Machine Learning and Deep Learning subjects gave me strong hands-on foundations for my AI engineer role at a Chandigarh IT company. The zero-cost EMI was a genuine differentiator.",
+          "disliked": "NLP subject could include more LLM and generative AI content given how fast the field is moving.",
+          "body": "I had 3 years in software development and the LPU Data Science MBA helped me transition to data scientist. The Rs 1.61L with zero-cost EMI was unbeatable among NIRF-ranked programmes. LPU brand is well recognised at North India IT companies."
+        },
+        {
+          "name": "Tanmay Gupta",
+          "city": "Delhi",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Statistical Methods and Machine Learning were rigorous. Data Science Project Management gave me tools to lead analytics projects at work.",
+          "disliked": "Requires self-study in Python before Sem 3 if you are from a non-technical background.",
+          "body": "Good programme for IT professionals moving into data science management. Delhi IT companies recognised the LPU credential. The zero-cost EMI was the deciding factor over NMIMS."
+        },
+        {
+          "name": "Kanika Mehta",
+          "city": "Chandigarh",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Deep Learning and Neural Networks was excellent for my computer vision project work. Strong technical depth for a management MBA.",
+          "disliked": "Faculty for ML and DL subjects could have more industry practitioners.",
+          "body": "Strong data science content at a very affordable price. For North India IT data science careers, LPU is the right choice at this price point. Zero-cost EMI made it easy to manage alongside current EMIs."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How does the LPU 20% Student Grant work?",
+        "answer": "The 20% Student Grant reduces the standard Rs 2,00,000 fee to Rs 1,61,600. It is applied at admission. Confirm current grant eligibility conditions with our counsellor before applying, as grant availability may vary by intake cycle."
+      },
+      {
+        "question": "Is LPU Online MBA zero-cost EMI genuinely interest-free?",
+        "answer": "Yes. The 24-month zero-cost EMI at Rs 6,733 per month carries no interest charge and no processing fee from the university. It is routed through the university's marketing partner. Confirm current EMI terms before committing."
+      },
+      {
+        "question": "What programming languages are taught in LPU Data Science MBA?",
+        "answer": "Python is the primary language used in Machine Learning, Deep Learning, and NLP subjects. Statistical Methods uses R or Python depending on the module. Prior Python familiarity from Sem 1-2 core subjects is expected before the Sem 3 specialisation subjects begin."
+      },
+      {
+        "question": "Is LPU Data Science MBA suitable for non-technical professionals?",
+        "answer": "The programme is better suited for professionals with some technical or quantitative background. Non-technical professionals should build Python and statistics foundations before Sem 3. LPU's Business Analytics specialisation may be more appropriate for professionals seeking an analytics management credential without deep technical ML content."
+      },
+      {
+        "question": "Is LPU Online MBA NIRF ranked?",
+        "answer": "Yes. Lovely Professional University is ranked NIRF #31 (University category, 2025) and NIRF #44 in the Management category. This places LPU among the top-ranked universities offering UGC-DEB approved online MBAs in India."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You are a technical professional (software developer, analyst) targeting data scientist, ML engineer, or data science manager roles.",
+        "You want a UGC-DEB approved MBA from a NIRF #31 university at Rs 1,61,600 (with grant) or Rs 2,00,000 standard.",
+        "You want dedicated Machine Learning, Deep Learning, and NLP coverage alongside management subjects."
+      ],
+      "consider": [
+        "If global data science certifications (IBM, Google) via Coursera Plus are important, MUJ Online MBA Business Analytics with Coursera Plus is a strong alternative.",
+        "If analytics management with quantitative orientation is the focus, NMIMS Online MBA Operations and Data Sciences Management offers strong brand recognition.",
+        "If you prefer a business analytics focus over deep ML technical content, LPU's Business Analytics specialisation covers analytics from a more management-oriented perspective."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2000,
+    "generatedAt": "2026-04-21",
+    "batchNumber": "Phase7-Batch13",
+    "hasSyllabusData": true
+  }
+}

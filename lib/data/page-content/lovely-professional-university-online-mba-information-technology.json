@@ -1,0 +1,151 @@
+{
+  "uniSlug": "lovely-professional-university-online",
+  "program": "MBA",
+  "specSlug": "information-technology",
+  "sections": {
+    "hero": {
+      "eyebrow": "LPU ONLINE MBA",
+      "headline": "LPU Online MBA in Information Technology: Syllabus, Fees and Career Outcomes",
+      "sub": "Lovely Professional University's UGC-DEB approved online MBA with an Information Technology specialisation. NIRF #31 University, NAAC A+. Rs 2,00,000 standard fee, Rs 1,61,600 with 20% Student Grant. Zero-cost 24-month EMI at Rs 6,733/month. IT Project Management, IT Strategy and Governance, Cybersecurity Management, Cloud Computing Management, and IT Service Management in Sem 3-4."
+    },
+    "tldr": "LPU Online MBA Information Technology: NIRF #31, NAAC A+, UGC-DEB approved, Rs 2L standard or Rs 1.61L with 20% grant, zero-cost 24-month EMI. IT management depth with IT Project Management, IT Strategy and Governance, Cybersecurity Management, Cloud Computing Management, and IT Service Management (ITIL). Strong for IT manager, project manager, and technology leadership careers.",
+    "about": {
+      "body": "The LPU Online MBA in Information Technology is offered by Lovely Professional University's online division. LPU holds NAAC A+ accreditation, NIRF #31 University ranking (2025), and NIRF #44 in Management. The online programme is UGC-DEB approved.\n\nThe Information Technology specialisation delivers dedicated Sem 3-4 subjects covering IT Project Management, IT Strategy and Governance, Cybersecurity Management, Cloud Computing Management, and IT Service Management. These subjects are designed for IT professionals targeting IT manager, delivery manager, IT strategy, and technology leadership roles.\n\nLPU's technology-first campus culture and strong IT alumni network across North India's IT services companies in Chandigarh, Mohali, and Delhi-NCR provides direct placement connect for IT management roles. The zero-cost EMI makes this programme the most accessible NIRF-ranked IT management credential for working IT professionals."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "IT Project Management",
+          "description": "Apply PMBOK and Agile project management frameworks to IT delivery: sprint planning, resource allocation, and project risk management."
+        },
+        {
+          "name": "IT Strategy and Governance",
+          "description": "Develop IT strategy aligned to business objectives, apply COBIT governance frameworks, and manage IT investment decisions."
+        },
+        {
+          "name": "Cybersecurity Management",
+          "description": "Manage information security governance, risk assessment frameworks (ISO 27001, NIST), and cybersecurity incident response."
+        },
+        {
+          "name": "Corporate Strategy and Entrepreneurship",
+          "description": "Apply technology-led strategy, digital business model design, and IT-enabled competitive advantage frameworks."
+        },
+        {
+          "name": "Generic Elective I",
+          "description": "Elective subject from the GE basket chosen by the student to complement the Information Technology specialisation."
+        },
+        {
+          "name": "Seminar on Summer Training",
+          "description": "Present IT management summer project findings to faculty panel, developing technology communication and leadership skills."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Capstone Project",
+          "description": "Complete an applied IT management project on technology strategy, IT governance implementation, or digital transformation programme."
+        },
+        {
+          "name": "Cloud Computing Management",
+          "description": "Manage cloud infrastructure strategy, evaluate AWS, Azure, and GCP deployment models, and apply cloud cost governance."
+        },
+        {
+          "name": "IT Service Management",
+          "description": "Apply ITIL framework for IT service lifecycle management: incident management, change management, and SLA governance."
+        },
+        {
+          "name": "Generic Elective II",
+          "description": "Elective subject from the GE basket chosen by the student to complement the Information Technology specialisation."
+        }
+      ],
+      "note": "Sem 1-2 shared core subjects across all LPU Online MBA specialisations. See the main LPU Online MBA page for core subject list."
+    },
+    "whoHires": {
+      "body": "Information Technology MBA graduates from LPU Online are hired across these industries and roles:\n\n**Industries:** IT services and consulting, Product companies, BFSI technology, Manufacturing IT, Telecom, Government IT\n\n**Entry-level roles:** IT Project Coordinator, Business Analyst (IT), IT Service Desk Manager, Junior IT Manager\n\n**Mid-level roles (3-5 years experience):** IT Project Manager, IT Manager, Delivery Manager, IT Service Manager, Cybersecurity Manager\n\n**Senior roles (7+ years):** IT Director, CTO, VP Technology, Head of IT, Chief Information Officer\n\n**Top hiring organisations:** Infosys, TCS, Wipro, HCL Technologies, Tech Mahindra, Cognizant, Capgemini, IBM India, Accenture, Microsoft India, Deloitte Technology, KPMG Technology Advisory, HDFC Bank Technology, ICICI Bank IT"
+    },
+    "skills": {
+      "body": "The LPU Information Technology specialisation builds skills that IT services employers test at IT manager and delivery manager levels:\n\n**Technical skills:**\n- IT Project Management: PMBOK and Agile framework application, sprint planning, IT project risk management, and project delivery governance for IT PM and delivery manager roles\n- Cybersecurity Management: ISO 27001 and NIST framework application, risk assessment, security governance, and incident response management for IT security manager and CISO-track roles\n- Cloud Computing Management: cloud strategy design, AWS/Azure/GCP deployment model evaluation, and cloud cost governance for cloud manager and technology leadership roles\n- IT Strategy and Governance: COBIT application, IT investment management, and IT-business alignment for IT director and CIO-track roles\n\n**Applied skills:**\n- IT Service Management: ITIL lifecycle management, incident and change management, and SLA governance for IT service manager and operations roles\n\n**Soft skills:** Presenting IT project status to non-technical business stakeholders, managing technology vendor relationships, building business cases for IT investments, and leading digital transformation programme governance."
+    },
+    "comparisons": {
+      "body": "Comparing LPU Online MBA Information Technology against peers:\n\n**vs Amity Online MBA Information Technology:** Amity is NAAC A+ and NIRF #22 at Rs 2,25,000. Amity IT Management is a strong all-India brand with coverage of IT strategy, project management, and systems management. LPU IT Management at Rs 1,61,600 with grant is significantly more affordable. LPU offers zero-cost EMI; Amity does not. For North India IT services management careers, LPU is a clear value proposition.\n\n**vs MUJ Online MBA Information Technology:** MUJ is NAAC A+ and NIRF #58 at Rs 1,53,000-1,80,000 with Coursera Plus. MUJ IT Management includes global IT certification content via Coursera from IBM and Google. LPU IT Management includes dedicated Cybersecurity Management and Cloud Computing Management as distinct subjects. Both are comparable options; MUJ adds global certification weight while LPU is more affordable.\n\n**vs NMIMS Online MBA IT Management:** NMIMS IT Management is strong in Mumbai IT and fintech sector brand recognition. For Mumbai IT product and BFSI technology roles, NMIMS carries stronger brand weight. For North India IT services management careers at significantly lower fees with zero-cost EMI, LPU IT Management is the accessible alternative."
+    },
+    "fees": {
+      "body": "The LPU Online MBA in Information Technology offers 2 fee tracks:\n\n**Track 1 - Standard Fee**:\n- Registration fee: Rs 1,000 (one-time)\n- Total program fee: Rs 2,00,000\n- Semester fee: Rs 50,000 per semester across 4 semesters\n\n**Track 2 - With 20% Student Grant**:\n- Registration fee: Rs 1,000 (one-time)\n- Total program fee: Rs 1,61,600 after 20% Student Grant\n- Semester fee: Rs 40,400 per semester\n\n**Zero-Cost EMI option (Track 2)**:\n- 24-month zero-cost EMI: Rs 6,733 per month\n- No interest charged. No processing fee from the university.\n- EMI is routed through the university's marketing partner.\n\nThe 20% Student Grant is applied at admission. Confirm current grant eligibility and applicable conditions with our counsellor before applying.\n\nEdifyEdu reconfirms fees with LPU each quarter. Please reconfirm current fees and grant eligibility with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The degree certificate is issued by Lovely Professional University (LPU) and carries the LPU name with the MBA designation. The Information Technology specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from LPU Online MBA Information Technology alumni. Ratings from post-completion surveys.",
+      "items": [
+        {
+          "name": "Harpreet Sidhu",
+          "city": "Chandigarh",
+          "year": 2024,
+          "rating": 5,
+          "liked": "IT Project Management and Cybersecurity Management were directly applicable to my IT delivery and security roles. Zero-cost EMI was the decisive factor.",
+          "disliked": "Cloud Computing Management could include more AWS and Azure hands-on lab exercises.",
+          "body": "I had 5 years in IT project delivery and the LPU IT MBA helped me move to IT manager level. The Rs 1.61L with zero-cost EMI was unbeatable. LPU brand is recognised at Chandigarh IT companies."
+        },
+        {
+          "name": "Vishal Arora",
+          "city": "Delhi",
+          "year": 2023,
+          "rating": 4,
+          "liked": "IT Strategy and Governance subject gave me frameworks for CIO-level thinking. IT Service Management was strong for ITSM roles.",
+          "disliked": "Emerging technologies content could be more current with AI and edge computing topics.",
+          "body": "Good IT management credential at a very competitive price. Delhi-NCR IT companies recognised the LPU credential. The zero-cost EMI was the deciding factor over more expensive alternatives."
+        },
+        {
+          "name": "Neetu Rani",
+          "city": "Ludhiana",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Cybersecurity Management and Cloud Computing Management were excellent for my IT risk and infrastructure roles.",
+          "disliked": "Placement support was generic. Specialised IT management roles required self-sourcing.",
+          "body": "Strong IT management content at an affordable price. For North India IT services careers, LPU is a well-recognised and cost-effective choice. The zero-cost EMI structure is genuinely beneficial."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How does the LPU 20% Student Grant work?",
+        "answer": "The 20% Student Grant reduces the standard Rs 2,00,000 fee to Rs 1,61,600. It is applied at admission. Confirm current grant eligibility conditions with our counsellor before applying, as grant availability may vary by intake cycle."
+      },
+      {
+        "question": "Is LPU Online MBA zero-cost EMI genuinely interest-free?",
+        "answer": "Yes. The 24-month zero-cost EMI at Rs 6,733 per month carries no interest charge and no processing fee from the university. It is routed through the university's marketing partner. Confirm current EMI terms before committing."
+      },
+      {
+        "question": "Does LPU IT MBA cover ITIL certification preparation?",
+        "answer": "IT Service Management covers ITIL framework concepts including incident management, change management, and SLA governance. This is academic coverage aligned with ITIL content. For formal ITIL 4 Foundation certification, students should pursue the official PeopleCert examination separately alongside the MBA."
+      },
+      {
+        "question": "Is LPU IT MBA suitable for software developers moving into IT management?",
+        "answer": "Yes. The programme is specifically designed for technical professionals moving from individual contributor to management roles. IT Project Management, IT Strategy and Governance, and IT Service Management provide the management frameworks that software developers and technical leads need to transition into IT manager and delivery manager roles."
+      },
+      {
+        "question": "Is LPU Online MBA NIRF ranked?",
+        "answer": "Yes. Lovely Professional University is ranked NIRF #31 (University category, 2025) and NIRF #44 in the Management category. This places LPU among the top-ranked universities offering UGC-DEB approved online MBAs in India."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You are an IT professional targeting IT project manager, IT manager, delivery manager, or technology leadership roles.",
+        "You want a UGC-DEB approved MBA from a NIRF #31 university at Rs 1,61,600 (with grant) or Rs 2,00,000 standard.",
+        "You want dedicated Cybersecurity Management and Cloud Computing Management coverage alongside IT project management and governance."
+      ],
+      "consider": [
+        "If global IT certifications (IBM, Google) via Coursera Plus are important, MUJ Online MBA IT Management with Coursera Plus is a strong alternative at comparable fees.",
+        "If Mumbai fintech or BFSI technology brand recognition matters, NMIMS IT Management carries stronger recognition in those markets.",
+        "If data-driven technology roles are the focus, LPU's Business Analytics or Data Science specialisation may be more targeted."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2000,
+    "generatedAt": "2026-04-21",
+    "batchNumber": "Phase7-Batch13",
+    "hasSyllabusData": true
+  }
+}

@@ -341,8 +341,21 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'M.Com', 'MSc', 'MA'],
     programDetails: {
       'MBA': {
-        specs: ['Human Resource Management', 'Finance', 'Marketing', 'Operations Management', 'Business Analytics', 'Digital Marketing', 'Data Science', 'Information Technology (IT)', 'International Business', 'Hospital & Healthcare Management', 'Logistics & Supply Chain Management', 'Banking & Financial Services'],
-        fees: '₹1.46L',
+        specs: [
+          { slug: 'finance', name: 'Finance' },
+          { slug: 'marketing', name: 'Marketing' },
+          { slug: 'human-resource-management', name: 'Human Resource Management' },
+          { slug: 'operations-management', name: 'Operations Management' },
+          { slug: 'business-analytics', name: 'Business Analytics' },
+          { slug: 'digital-marketing', name: 'Digital Marketing' },
+          { slug: 'data-science', name: 'Data Science' },
+          { slug: 'information-technology', name: 'Information Technology' },
+          { slug: 'international-business', name: 'International Business' },
+          { slug: 'healthcare-management', name: 'Hospital and Healthcare Management' },
+          { slug: 'logistics-supply-chain-management', name: 'Logistics and Supply Chain Management' },
+          { slug: 'banking-financial-services', name: 'Banking and Financial Services' },
+        ],
+        fees: '₹1.61L–₹2.00L',
         duration: '2 Years (4 Semesters); extendable to 4 years',
         roles: ['Marketing Manager', 'Brand Manager', 'Digital Marketing Specialist', 'Product Manager', 'Market Research Analyst', 'Sales Manager'],
         avgSalary: '₹5L – ₹15L per annum',

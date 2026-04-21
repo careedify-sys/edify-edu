@@ -251,3 +251,25 @@ Content must say:
 - Use generic "marketing partner" / "NBFC partners" only.
 
 **How to apply:** Apply this rule to all new spec pages, all university MBA pages, and any content revision involving fee or EMI sections. Grep new content for partner names before committing.
+
+---
+
+## JSON SCHEMA VALIDATION LESSON (Phase 7 Batch 13 — 2026-04-21)
+
+**Problem:** Spec JSON generation can silently produce incorrect field types. In Batch 12 SSODL, `whoHires`, `skills`, and `comparisons` were written as plain strings instead of `{body: string}` objects. UniSpecBody.tsx accesses `.body` on these fields, so plain strings rendered as empty sections without errors.
+
+**Pre-commit self-check rubric for every new spec JSON:**
+
+1. `sections.whoHires` must be `{body: string}`, NOT `"string"` directly
+2. `sections.skills` must be `{body: string}`, NOT `"string"` directly
+3. `sections.comparisons` must be `{body: string}`, NOT `"string"` directly
+4. `sections.fees` must be `{body: string}`, NOT `"string"` directly
+5. `sections.about` must be `{body: string}`, NOT `"string"` directly
+6. `sections.certificate` must be `{body: string}`, NOT `"string"` directly
+7. `sections.syllabus` must NOT contain `sem1Subjects` or `sem2Subjects` (Sem 3-4 only for spec pages)
+8. `sections.syllabus.note` must reference the main uni MBA page for core subjects
+
+**Manifest slug alignment:** Always verify spec_slug in programs-manifest.json before writing filename and data.ts tuple. Do NOT assume slugs from display names. For LPU: `healthcare-management` (NOT `hospital-healthcare-management`), `logistics-supply-chain-management` (NOT `logistics-and-supply-chain-management`).
+
+**Zero em dash rule:** Never use U+2014 (—) in any JSON content on Windows. The Write tool double-encodes it to mojibake. Use ` - ` (space-hyphen-space) or rewrite the sentence.
+
