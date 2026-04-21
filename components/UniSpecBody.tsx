@@ -60,12 +60,58 @@ function renderParagraphsWithBold(text: string) {
   if (!text) return null
   return text.split(/\n\n+/).map((para, pi) => {
     const lines = para.split('\n')
-    const nodes: React.ReactNode[] = []
+    const hasBullets = lines.some(l => l.trimStart().startsWith('- '))
+
+    if (!hasBullets) {
+      const nodes: React.ReactNode[] = []
+      lines.forEach((line, li) => {
+        nodes.push(...renderBoldInline(line))
+        if (li < lines.length - 1) nodes.push(<br key={`br-${pi}-${li}`} />)
+      })
+      return <p key={pi} className="mb-2 last:mb-0">{nodes}</p>
+    }
+
+    // Para contains bullet lines — use div wrapper so <ul> is valid
+    const segments: React.ReactNode[] = []
+    const bulletBuffer: string[] = []
+    const headerBuffer: React.ReactNode[] = []
+
+    const flushHeader = (idx: number) => {
+      if (headerBuffer.length > 0) {
+        segments.push(<span key={`hdr-${pi}-${idx}`}>{[...headerBuffer]}</span>)
+        headerBuffer.length = 0
+      }
+    }
+    const flushBullets = (idx: number) => {
+      if (bulletBuffer.length > 0) {
+        segments.push(
+          <ul key={`ul-${pi}-${idx}`} className="list-disc pl-5 my-1 space-y-0.5">
+            {bulletBuffer.map((item, i) => (
+              <li key={i} className="text-sm">{renderBoldInline(item)}</li>
+            ))}
+          </ul>
+        )
+        bulletBuffer.length = 0
+      }
+    }
+
     lines.forEach((line, li) => {
-      nodes.push(...renderBoldInline(line))
-      if (li < lines.length - 1) nodes.push(<br key={`br-${pi}-${li}`} />)
+      if (line.trimStart().startsWith('- ')) {
+        flushHeader(li)
+        bulletBuffer.push(line.trimStart().slice(2))
+      } else {
+        flushBullets(li)
+        headerBuffer.push(...renderBoldInline(line))
+        const nextIsBullet = lines[li + 1]?.trimStart().startsWith('- ')
+        if (li < lines.length - 1 && !nextIsBullet) {
+          headerBuffer.push(<br key={`br-${pi}-${li}`} />)
+        }
+      }
     })
-    return <p key={pi} className="mb-2 last:mb-0">{nodes}</p>
+    flushHeader(lines.length)
+    flushBullets(lines.length)
+
+    return <div key={pi} className="mb-2 last:mb-0">{segments}</div>
   })
 }
 
