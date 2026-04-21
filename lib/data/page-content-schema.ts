@@ -15,6 +15,8 @@ export interface SpecPageContent {
     about?: { body?: string };
     syllabus?: {
       hasData: boolean;
+      sem1Subjects?: SubjectEntry[];
+      sem2Subjects?: SubjectEntry[];
       sem3Subjects?: SubjectEntry[];
       sem4Subjects?: SubjectEntry[];
       note?: string;

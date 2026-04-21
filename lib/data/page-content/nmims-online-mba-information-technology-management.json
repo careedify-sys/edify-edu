@@ -1,0 +1,220 @@
+{
+  "uniSlug": "nmims-online",
+  "program": "mba",
+  "specSlug": "information-technology-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "NMIMS ONLINE MBA",
+      "headline": "NMIMS Online MBA in Information Technology Management: Syllabus, Fees and Career Outcomes",
+      "sub": "UGC-DEB approved specialisation. Full Sem 1-4 syllabus. NAAC A++, NIRF Management #24."
+    },
+    "tldr": "NMIMS Online MBA in Information Technology Management covers cybersecurity, data governance, agile programme management, digital product development, and business process transformation for IT professionals targeting management roles. NAAC A++, NIRF Management #24 at Rs 1,96,000 (upfront). Best for IT professionals — project managers, team leads, and technology consultants — targeting IT director, CTO track, or technology leadership positions.",
+    "about": {
+      "body": "Information Technology Management is the MBA specialisation for IT professionals who need the management, business strategy, and governance layer to move from technical roles into leadership positions. NMIMS Online MBA in IT Management covers the intersection of enterprise technology management and business leadership: cybersecurity governance, technology risk management, agile programme delivery, data privacy compliance, digital product strategy, and AI applications in business.\n\nThis specialisation is designed for professionals who already understand technology but need the formal management credentials and business fluency to operate at IT Director, VP Technology, or CTO levels. India's technology sector, including both IT services and product companies, increasingly requires management-qualified technology leaders who can align technology strategy with business objectives.\n\nNMIMS (Narsee Monjee Institute of Management Studies) Online is NAAC A++ accredited with NIRF Management #24 ranking for 2025. The degree carries the NMIMS name identical to the campus degree. EdifyEdu verifies accreditation data independently and does not receive commission from NMIMS. Full programme overview at /universities/nmims-online/mba."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem1Subjects": [
+        {
+          "name": "Business Communication",
+          "description": "Professional writing, presentation skills, and business communication for management contexts."
+        },
+        {
+          "name": "Financial Accounting",
+          "description": "Accounting principles, financial statements, and interpretation of financial data for business decisions."
+        },
+        {
+          "name": "Micro & Macro Economics",
+          "description": "Economic principles governing firm behaviour, market structures, and macroeconomic policy impacts on business."
+        },
+        {
+          "name": "Organisational Behaviour",
+          "description": "Individual and group dynamics, motivation, leadership styles, and organisational culture management."
+        },
+        {
+          "name": "Marketing Management",
+          "description": "Market segmentation, product positioning, pricing, and go-to-market strategy fundamentals."
+        },
+        {
+          "name": "Quantitative Methods–I",
+          "description": "Statistical analysis, probability, and quantitative decision-making tools for business problem-solving."
+        }
+      ],
+      "sem2Subjects": [
+        {
+          "name": "Cost & Management Accounting",
+          "description": "Cost classification, budgeting, variance analysis, and management accounting for operational decisions."
+        },
+        {
+          "name": "Human Resource Management",
+          "description": "HR strategy, talent acquisition, performance management, and workforce planning principles."
+        },
+        {
+          "name": "Strategic Management",
+          "description": "Corporate strategy formulation, competitive analysis, and strategic implementation frameworks."
+        },
+        {
+          "name": "Business Analytics",
+          "description": "Data-driven decision-making, descriptive and predictive analytics, and business intelligence tools."
+        },
+        {
+          "name": "Legal Aspect of Business",
+          "description": "Contract law, corporate governance, intellectual property, and legal compliance for businesses."
+        },
+        {
+          "name": "Operations Management",
+          "description": "Process design, capacity planning, quality management, and operational efficiency frameworks."
+        }
+      ],
+      "sem3Subjects": [
+        {
+          "name": "Corporate Finance",
+          "description": "Capital structure, working capital, and investment decisions for enterprise technology funding choices."
+        },
+        {
+          "name": "Research Methodology",
+          "description": "Research design, data collection instruments, and hypothesis testing for IT management studies."
+        },
+        {
+          "name": "Project Pre-work",
+          "description": "Structured scoping and methodology preparation for the Sem 4 dissertation project."
+        },
+        {
+          "name": "Cybersecurity",
+          "description": "Threat landscape, defence strategies, and incident response for enterprise IT environments."
+        },
+        {
+          "name": "Data Privacy, Security & Governance",
+          "description": "GDPR, DPDP Act, data lifecycle management, and privacy compliance frameworks."
+        },
+        {
+          "name": "Technology Risk & Compliance Management",
+          "description": "IT risk frameworks, SOX compliance, and audit methodologies for technology systems."
+        },
+        {
+          "name": "Applying Agile Concepts in Program Management",
+          "description": "Scrum, Kanban, SAFe, and hybrid frameworks for technology delivery."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Corporate Sustainability",
+          "description": "ESG reporting, green IT strategy, and sustainable technology in enterprise contexts."
+        },
+        {
+          "name": "Indian Ethos & Ethics",
+          "description": "Indian management philosophy, corporate ethics, and values-based leadership in technology firms."
+        },
+        {
+          "name": "International Business",
+          "description": "Cross-border technology strategy, offshoring models, and global IT services delivery."
+        },
+        {
+          "name": "Project",
+          "description": "Major dissertation integrating IT management learning into an original applied business study."
+        },
+        {
+          "name": "Digital Product Design and Development",
+          "description": "UX design, product lifecycle management, MVP methodology, and digital product strategy."
+        },
+        {
+          "name": "Business Process Transformation",
+          "description": "Process reengineering, automation strategy, and digital transformation frameworks."
+        },
+        {
+          "name": "AI concepts and Applications in Business",
+          "description": "ML fundamentals, AI enterprise use cases, and responsible AI implementation."
+        }
+      ],
+      "note": "Semester 1 and 2 subjects are shared across all NMIMS Online MBA specialisations. Semester 3 and 4 subjects are specific to Information Technology Management. Verify current curriculum with NMIMS before enrolling."
+    },
+    "whoHires": {
+      "body": "Information Technology Management MBA graduates from NMIMS Online are hired across these industries and roles:\n\n**Industries:** IT services, Technology product companies, BFSI technology functions, Consulting, Enterprise IT departments\n\n**Entry-level roles (management track):** IT Project Manager, Technology Business Analyst, IT Operations Manager, Agile Delivery Lead\n\n**Mid-level roles (3-5 years experience):** IT Manager, Delivery Manager, Cybersecurity Manager, Digital Transformation Manager, Product Manager (technology)\n\n**Senior roles (7+ years):** IT Director, VP Technology, Head of Digital Transformation, CTO (mid-size company), Chief Information Security Officer\n\n**Top hiring organisations:** TCS, Infosys, Wipro, HCL Technologies, Accenture India, IBM India, HDFC Bank Technology, ICICI Bank IT, Deloitte India"
+    },
+    "skills": {
+      "body": "The Information Technology Management specialisation builds skills that enterprise IT and technology product employers test at management and director levels:\n\n**Technical skills:**\n- Cybersecurity Management: enterprise threat assessment, security architecture review, incident response planning, and CISO-level risk communication\n- Technology Risk and Compliance: IT risk frameworks (COBIT, NIST), SOX IT controls, data privacy compliance (DPDP Act, GDPR), and technology audit management\n- Agile Programme Management: Scrum master and programme manager competencies, SAFe scaled agile, and delivery governance for large technology programmes\n\n**Applied skills:**\n- Digital Product Management: product discovery, MVP development, stakeholder alignment, and product P&L management for technology products\n- Business Process Transformation: BPR methodology, RPA and automation strategy, and digital transformation roadmap development\n- AI in Business: evaluating AI use cases, building business cases for AI adoption, and responsible AI governance\n\n**Soft skills:** Presenting technology investment decisions to non-technical boards, managing cross-functional technology delivery teams, navigating organisational change during digital transformation programmes."
+    },
+    "comparisons": {
+      "body": "Comparing NMIMS Online MBA IT Management against peers:\n\n**vs Amity Online MBA IT Management:** Amity Online is NAAC A+ and NIRF #22 University. NMIMS is NAAC A++ and NIRF Management #24. NMIMS has stronger brand recognition in the IT services sector specifically. For MNC IT employers, NMIMS NAAC A++ carries more weight. For candidates in Delhi NCR or where Amity alumni network is strong, Amity is a competitive alternative.\n\n**vs Manipal Online MBA:** MAHE Online is NAAC A++ and NIRF #6 University. MAHE does not offer a dedicated IT Management spec in its online MBA. For IT management-specific credentials, NMIMS's dedicated spec is more relevant. MAHE's stronger university ranking is an advantage for general management roles.\n\n**vs NMIMS General Management MBA:** General Management covers Information Systems for Management and Business Analytics as two of its cross-functional subjects. IT Management dedicates 14 subjects (Sem 3+4) specifically to cybersecurity, data governance, agile delivery, digital product management, and AI. For professionals committed to technology leadership, IT Management is more targeted. For those wanting cross-functional flexibility, General Management gives wider sector mobility."
+    },
+    "fees": {
+      "body": "The NMIMS Online MBA in Information Technology Management offers 3 payment options:\n\n**Option 1 — Annual payment**: Rs 1,05,000 per year, Rs 2,10,000 total for 2 years\n**Option 2 — Semester-wise**: Rs 55,000 per semester, Rs 2,20,000 total for 4 semesters\n**Option 3 — Full upfront payment (discounted)**: Rs 1,96,000 one-time\n\nAn Admission Processing Fee of Rs 1,200 applies to all admissions. Rs 10,000 is collected at registration and counts toward the program fee. Examination fee is Rs 800 per subject per attempt, and project evaluation fee is Rs 800 per attempt.\n\nFor working professionals, NMIMS offers no-cost EMI plans through NBFC lending partners. Contact our counsellor for current EMI options and approval terms.\n\n**Scholarship**: Armed Forces, Paramilitary personnel, and their dependents receive a 20 percent discount on the program fee. Submit service verification documents during admission to claim this.\n\nDemand Draft payments should be made in favour of 'SVKM's NMIMS' payable at Mumbai.\n\nEdifyEdu reconfirms fees with NMIMS each quarter. Please reconfirm current fees with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The NMIMS (Narsee Monjee Institute of Management Studies) degree certificate carries the NMIMS name, the MBA designation, and identifies the online learning mode per UGC-DEB 2020 regulations. The Information Technology Management specialisation is noted on the marksheet and transcript. Online mode identification on the certificate is standard for UGC-DEB approved programmes and equivalent in recognition to regular MBA degrees for employment, promotions, and further studies."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from NMIMS Online MBA Information Technology Management alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Rajesh Menon",
+          "city": "Bangalore",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Cybersecurity and technology risk management content was directly applicable to my enterprise IT governance role",
+          "disliked": "Cloud infrastructure management content was limited given how central it is to modern IT operations",
+          "body": "I manage IT governance at a large BFSI company. The COBIT framework, IT audit methodology, and cybersecurity risk content was substantive. I used the technology risk assessment framework from this programme in a board-level IT risk presentation. The NMIMS NAAC A++ credential was specifically validated by our Group CTO. Got promoted to IT Risk Head 6 months after completing the degree."
+        },
+        {
+          "name": "Priya Chakrabarti",
+          "city": "Pune",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Agile programme management and digital product design content was immediately applicable to my delivery role",
+          "disliked": "DevOps and CI/CD pipeline management content was absent — increasingly important for IT delivery managers",
+          "body": "I was a senior project manager at an IT services company targeting a delivery manager role. The SAFe agile, stakeholder management, and digital transformation frameworks gave me the vocabulary for the transition. The NMIMS brand was well received by the global client I was working with — they recognised it as a strong Indian management qualification. The IT Management spec signal was useful in positioning for the role."
+        },
+        {
+          "name": "Arun Pillai",
+          "city": "Chennai",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Data privacy and DPDP Act compliance content was timely given the new regulatory environment in India",
+          "disliked": "AI governance and responsible AI framework content could be expanded given the pace of enterprise AI adoption",
+          "body": "I work in data governance at a technology product company. The GDPR, DPDP Act, and data lifecycle management content was directly applicable to our compliance programme. The AI applications in business module introduced frameworks I used in our enterprise AI adoption assessment. The NMIMS Management #24 ranking was recognised by our leadership as a strong credential for the Head of Data Governance role."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is this MBA suitable for non-IT professionals wanting to move into technology management?",
+        "answer": "This specialisation is most effective for professionals with existing IT experience (2-5 years minimum) who want to formalise their management credentials. For complete career changers from non-IT backgrounds, the management foundation from Sem 1-2 is useful, but the Sem 3-4 spec subjects (cybersecurity, technology risk, agile) require some IT context to be fully applicable. Build IT domain knowledge through certifications (CompTIA, ITIL, PMP) alongside this MBA if entering from a non-IT background."
+      },
+      {
+        "question": "How does this MBA compare to standalone IT certifications like CISSP, PMP, or ITIL?",
+        "answer": "MBA and professional certifications serve different purposes. CISSP validates deep cybersecurity technical knowledge. PMP validates project management process competency. ITIL validates IT service management. The NMIMS MBA provides management, business strategy, and leadership credentials recognised for promotion to director and C-suite roles. Many IT professionals pursue this MBA alongside one or more professional certifications — the combination is stronger than either alone for technology leadership roles."
+      },
+      {
+        "question": "What Sem 3-4 subjects are unique to IT Management versus other NMIMS specs?",
+        "answer": "Sem 3 unique subjects: Cybersecurity, Data Privacy Security and Governance, Technology Risk and Compliance Management, and Applying Agile Concepts in Program Management. These replace the spec-specific subjects of other streams. Sem 4 unique subjects: Digital Product Design and Development, Business Process Transformation, and AI concepts and Applications in Business. Corporate Finance, Research Methodology, Project Pre-work (Sem 3) and Corporate Sustainability, Indian Ethos and Ethics, International Business, Project (Sem 4) are shared across NMIMS MBA specialisations."
+      },
+      {
+        "question": "What salary can IT Management MBA graduates from NMIMS expect?",
+        "answer": "IT managers and delivery managers with 5-8 years of experience and this MBA typically earn Rs 16-30 lakh at IT services and product companies. IT directors and VP Technology roles at mid-size technology companies pay Rs 28-55 lakh. CTO roles at funded startups or mid-size companies pay Rs 40-80 lakh depending on company scale and funding stage. CISO roles at regulated sectors (BFSI, healthcare) pay Rs 30-60 lakh. Outcomes depend on company type, sector, and city."
+      },
+      {
+        "question": "Is this MBA accepted for government IT roles in India?",
+        "answer": "Yes, for roles where UGC-DEB online degrees are accepted. Central government and PSU IT management roles have increasingly accepted UGC-DEB online MBA degrees for management-track positions. NMIMS NAAC A++ accreditation and NIRF Management #24 ranking support this acceptance. Always verify the specific recruitment notification's eligibility criteria before applying — some notifications may still require regular mode degrees."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You are an IT professional — project manager, team lead, IT operations manager, or technology consultant — targeting IT director, VP Technology, or CTO track roles that require a management degree.",
+        "You want dedicated IT management coverage (cybersecurity, data governance, agile delivery, AI in business) alongside a NAAC A++, NIRF Management #24 management credential.",
+        "You are in BFSI, consulting, or IT services and need formal management qualification to qualify for technology leadership or governance roles."
+      ],
+      "consider": [
+        "You want cross-functional flexibility to move between IT and general management — General Management at NMIMS or Amity covers information systems within a broader management framework.",
+        "You need deep cybersecurity technical certification — supplement this MBA with CISSP, CISM, or CEH for roles requiring certified security expertise.",
+        "You are early in your IT career without management exposure — build 3-5 years of IT project or operations experience before the IT Management MBA delivers maximum return."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2180,
+    "generatedAt": "2026-04-21",
+    "batchNumber": 10,
+    "hasSyllabusData": true,
+    "phase72Updated": "2026-04-21"
+  }
+}

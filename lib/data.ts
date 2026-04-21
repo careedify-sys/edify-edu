@@ -1797,7 +1797,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Business Administration', 'Finance', 'Marketing', 'Human Resource Management', 'Operations Management'],
-        fees: '₹1.96L',
+        fees: '₹1.96L–₹2.20L',
         duration: '2 Years (4-year max validity)',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Analyst'],
         avgSalary: '₹5L – ₹10L per annum',

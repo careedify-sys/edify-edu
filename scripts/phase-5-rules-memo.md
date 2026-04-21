@@ -188,3 +188,19 @@ All spec pages (including future unis NMIMS, Chandigarh, LPU, etc) MUST use:
 - Labelled sections, bullets, short paragraphs. No paragraph longer than 3 sentences.
 
 **Violation of these rules requires spec page regeneration before ship.**
+
+---
+
+## SPEC PAGE RENDERING RULES (Phase 7.2 v2+)
+
+1. **Inline bold in JSON content fields** (§3 About, §5 Who Hires, §6 Skills, §7 Comparisons, §8 Fees, §9 Certificate) is rendered via the `renderBoldInline` / `renderParagraphsWithBold` helpers in `UniSpecBody.tsx`. Content can safely use `**text**` syntax. The helpers convert to `<strong>` tags at render time. No `whitespace-pre-line` needed — paragraphs separated by `\n\n` render as `<p>` blocks.
+
+2. **Sample Degree Certificate on spec pages**: `SampleCertificate` component renders first (checks `getSampleDegree(uniId, program)` — image if mapped, `RequestSampleCertCard` fallback). Certificate body text renders below as a small `text-xs` supporting caption. Do NOT use text-only descriptions — users need to see the actual cert where available.
+
+3. **Factual accuracy on degree certificate**: per UGC-DEB 2020 regulations, "online" IS identified on the certificate to denote the learning mode. This is a feature, not a limitation — it validates that the student could hold full-time work during the programme. The template phrase is: "identifies the online learning mode per UGC-DEB 2020 regulations." Never claim "does not display the word online."
+
+4. **New spec additions** (like NMIMS IT Management): when adding a spec that was not previously in the manifest, ALWAYS include full Sem 1-4 structure. Sem 1+2 pulls from `_core` shared subjects, Sem 3+4 from user-provided verbatim data. Never ship a spec page with partial semester data. Set `hasSyllabusData: true` and populate `sem1Subjects` through `sem4Subjects`.
+
+5. **Comparisons heading in UniSpecBody**: uses `cleanName` (dynamic) not hardcoded "Amity". Safe for all universities using the specJson path.
+
+6. **NMIMS fee structure** (locked as of Phase 7.2 v2): 3-option template — Annual (Rs 1,05,000/yr = Rs 2,10,000), Semester (Rs 55,000/sem = Rs 2,20,000), Upfront discounted (Rs 1,96,000). Plus Rs 1,200 admission processing, Rs 10,000 registration (counts toward fees), Rs 800 exam fee per subject per attempt. 20% discount for Armed Forces and dependents. DD in favour of 'SVKM's NMIMS' payable at Mumbai.

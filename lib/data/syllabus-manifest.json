@@ -9899,7 +9899,7 @@
               "Strategic Management",
               "Business Analytics",
               "Legal Aspect of Business",
-              "Operations Management."
+              "Operations Management"
             ]
           }
         ]
@@ -10166,6 +10166,56 @@
         ],
         "websiteUrl": "https://online.nmims.edu/",
         "fees": "Total: ₹1,96,000 (Lumpsum); Sem Fee: ₹55,000; Reg Fee: ₹1,200; Exam Fee: ₹800/subject; EMI: Available (~₹6,111/mo)."
+      },
+      "information-technology-management": {
+        "semesters": [
+          {
+            "sem": 1,
+            "subjects": [
+              "Business Communication",
+              "Financial Accounting",
+              "Micro & Macro Economics",
+              "Organisational Behaviour",
+              "Marketing Management",
+              "Quantitative Methods–I"
+            ]
+          },
+          {
+            "sem": 2,
+            "subjects": [
+              "Cost & Management Accounting",
+              "Human Resource Management",
+              "Strategic Management",
+              "Business Analytics",
+              "Legal Aspect of Business",
+              "Operations Management"
+            ]
+          },
+          {
+            "sem": 3,
+            "subjects": [
+              "Corporate Finance",
+              "Research Methodology",
+              "Project Pre-work",
+              "Cybersecurity",
+              "Data Privacy, Security & Governance",
+              "Technology Risk & Compliance Management",
+              "Applying Agile Concepts in Program Management"
+            ]
+          },
+          {
+            "sem": 4,
+            "subjects": [
+              "Corporate Sustainability",
+              "Indian Ethos & Ethics",
+              "International Business",
+              "Project",
+              "Digital Product Design and Development",
+              "Business Process Transformation",
+              "AI concepts and Applications in Business"
+            ]
+          }
+        ]
       }
     }
   },

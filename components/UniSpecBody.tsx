@@ -1,6 +1,7 @@
 // UniSpecBody.tsx — full template for uni×program×spec pages
 // When a spec-specific page-content JSON exists, renders the 12-section spec layout.
 // Falls back to the generic getSpecContent registry for all other unis/specs.
+import React from 'react'
 import Link from 'next/link'
 import { ChevronRight, CheckCircle } from 'lucide-react'
 
@@ -42,6 +43,33 @@ import QuickFactsCard     from './QuickFactsCard'
 import WhatsAppFloat      from './WhatsAppFloat'
 import AssuredMarquee    from './AssuredMarquee'
 import RequestSyllabusCard from './RequestSyllabusCard'
+
+// ── Inline bold renderer: converts **text** → <strong> at render time ─────────
+
+function renderBoldInline(text: string) {
+  const parts = text.split(/(\*\*[^*]+\*\*)/g)
+  return parts.map((part, i) => {
+    if (part.startsWith('**') && part.endsWith('**') && part.length > 4) {
+      return <strong key={i} className="font-semibold">{part.slice(2, -2)}</strong>
+    }
+    return <span key={i}>{part}</span>
+  })
+}
+
+function renderParagraphsWithBold(text: string) {
+  if (!text) return null
+  return text.split(/\n\n+/).map((para, pi) => {
+    const lines = para.split('\n')
+    const nodes: React.ReactNode[] = []
+    lines.forEach((line, li) => {
+      nodes.push(...renderBoldInline(line))
+      if (li < lines.length - 1) nodes.push(<br key={`br-${pi}-${li}`} />)
+    })
+    return <p key={pi} className="mb-2 last:mb-0">{nodes}</p>
+  })
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 
 interface Props {
   u: University
@@ -88,17 +116,26 @@ function SpecSyllabusSection({
     )
   }
 
+  const hasSem12 = (syllabus.sem1Subjects?.length ?? 0) > 0 || (syllabus.sem2Subjects?.length ?? 0) > 0
+  const semLabel = (sem: number) => `Semester ${sem}`
+  const semGroups = [
+    { label: semLabel(1), subjects: syllabus.sem1Subjects },
+    { label: semLabel(2), subjects: syllabus.sem2Subjects },
+    { label: semLabel(3), subjects: syllabus.sem3Subjects },
+    { label: semLabel(4), subjects: syllabus.sem4Subjects },
+  ].filter(g => g.subjects && g.subjects.length > 0)
+
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-6">
       <h2 className="text-lg font-bold mb-4" style={{ color: '#0B1533' }}>
-        Semester 3 and 4 — {spec} Subjects
+        {hasSem12 ? `Full Programme Syllabus — ${spec}` : `Semester 3 and 4 — ${spec} Subjects`}
       </h2>
 
-      {syllabus.sem3Subjects && syllabus.sem3Subjects.length > 0 && (
-        <div className="mb-5">
-          <h3 className="text-sm font-bold text-slate-700 mb-3">Semester 3</h3>
+      {semGroups.map((group, gi) => (
+        <div key={gi} className="mb-5">
+          <h3 className="text-sm font-bold text-slate-700 mb-3">{group.label}</h3>
           <div className="space-y-2">
-            {syllabus.sem3Subjects.map((s, i) => (
+            {group.subjects!.map((s, i) => (
               <div key={i} className="flex gap-3 text-sm">
                 <span className="shrink-0 font-semibold text-slate-800 w-5">{i + 1}.</span>
                 <div>
@@ -111,26 +148,7 @@ function SpecSyllabusSection({
             ))}
           </div>
         </div>
-      )}
-
-      {syllabus.sem4Subjects && syllabus.sem4Subjects.length > 0 && (
-        <div className="mb-4">
-          <h3 className="text-sm font-bold text-slate-700 mb-3">Semester 4</h3>
-          <div className="space-y-2">
-            {syllabus.sem4Subjects.map((s, i) => (
-              <div key={i} className="flex gap-3 text-sm">
-                <span className="shrink-0 font-semibold text-slate-800 w-5">{i + 1}.</span>
-                <div>
-                  <span className="font-semibold text-slate-800">{s.name}</span>
-                  {s.description && (
-                    <span className="text-slate-500"> — {s.description}</span>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
+      ))}
 
       {syllabus.note && (
         <p className="text-xs text-slate-400 mt-4 italic border-t border-slate-100 pt-3">
@@ -394,8 +412,8 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                       <h2 className="text-lg font-bold mb-3" style={{ color: '#0B1533' }}>
                         About This Specialisation
                       </h2>
-                      <div className="text-sm text-slate-600 leading-relaxed whitespace-pre-line">
-                        {specJson.sections.about.body}
+                      <div className="text-sm text-slate-600 leading-relaxed">
+                        {renderParagraphsWithBold(specJson.sections.about.body)}
                       </div>
                     </section>
                   )}
@@ -417,8 +435,8 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                       <h2 className="text-lg font-bold mb-3" style={{ color: '#0B1533' }}>
                         Who Hires {spec} MBAs
                       </h2>
-                      <div className="text-sm text-slate-600 leading-relaxed whitespace-pre-line">
-                        {specJson.sections.whoHires.body}
+                      <div className="text-sm text-slate-600 leading-relaxed">
+                        {renderParagraphsWithBold(specJson.sections.whoHires.body)}
                       </div>
                     </section>
                   )}
@@ -429,8 +447,8 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                       <h2 className="text-lg font-bold mb-3" style={{ color: '#0B1533' }}>
                         Skills You Develop
                       </h2>
-                      <div className="text-sm text-slate-600 leading-relaxed whitespace-pre-line">
-                        {specJson.sections.skills.body}
+                      <div className="text-sm text-slate-600 leading-relaxed">
+                        {renderParagraphsWithBold(specJson.sections.skills.body)}
                       </div>
                     </section>
                   )}
@@ -439,10 +457,10 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                   {specJson.sections.comparisons?.body && (
                     <section className="rounded-xl border border-slate-200 bg-white p-6">
                       <h2 className="text-lg font-bold mb-3" style={{ color: '#0B1533' }}>
-                        How Amity Compares for {spec}
+                        How {cleanName} Compares for {spec}
                       </h2>
-                      <div className="text-sm text-slate-600 leading-relaxed whitespace-pre-line">
-                        {specJson.sections.comparisons.body}
+                      <div className="text-sm text-slate-600 leading-relaxed">
+                        {renderParagraphsWithBold(specJson.sections.comparisons.body)}
                       </div>
                     </section>
                   )}
@@ -453,22 +471,20 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                       <h2 className="text-lg font-bold mb-3" style={{ color: '#0B1533' }}>
                         Fees and Payment
                       </h2>
-                      <div className="text-sm text-slate-600 leading-relaxed whitespace-pre-line">
-                        {specJson.sections.fees.body}
+                      <div className="text-sm text-slate-600 leading-relaxed">
+                        {renderParagraphsWithBold(specJson.sections.fees.body)}
                       </div>
                     </section>
                   )}
 
-                  {/* §9 Certificate */}
+                  {/* §9 Certificate — image first, supporting text below */}
+                  <SampleCertificate universityId={u.id} program={program} universityName={cleanName} />
                   {specJson.sections.certificate?.body && (
-                    <section className="rounded-xl border border-slate-200 bg-white p-6">
-                      <h2 className="text-lg font-bold mb-3" style={{ color: '#0B1533' }}>
-                        Degree Certificate
-                      </h2>
-                      <div className="text-sm text-slate-600 leading-relaxed whitespace-pre-line">
-                        {specJson.sections.certificate.body}
+                    <div className="rounded-xl border border-slate-200 bg-slate-50 px-6 py-4">
+                      <div className="text-xs text-slate-500 leading-relaxed">
+                        {renderParagraphsWithBold(specJson.sections.certificate.body)}
                       </div>
-                    </section>
+                    </div>
                   )}
 
                   <InlineCTA
