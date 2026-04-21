@@ -147,3 +147,44 @@ The 80/20 EdifyEdu brand cap is MAXIMUM 5 mentions per page, but they MUST be on
 **Before completing any page:** grep the generated content for "EdifyEdu" and confirm all occurrences are in the 5 allowed slots only.
 
 **Historical note:** Batch 4 had 2 rogue mentions (`coupon_body`, `hirers_body`). These shipped as-is but must not repeat in Batch 5+.
+
+---
+
+## SPEC PAGE STRUCTURE RULE (Phase 7.1+)
+
+All spec pages (including future unis NMIMS, Chandigarh, LPU, etc) MUST use:
+
+**1. §5 Who Hires — structured with labelled lines:**
+- Lead sentence: "{Spec} MBA graduates from {uni} are hired across these industries and roles:"
+- **Industries:** {4-6 industries, comma-separated}
+- **Entry-level roles:** {3-4 role titles}
+- **Mid-level roles (3-5 years experience):** {3-4 role titles}
+- **Senior roles (7+ years):** {2-3 role titles}
+- **Top hiring organisations:** {4-6 named companies relevant to spec}
+- NOT dense prose paragraphs. Total 180-220 words.
+
+**2. §6 Skills You Develop — structured with bullets:**
+- Lead sentence: "The {Spec} specialisation builds skills that {industry} employers test in {role type}:"
+- **Technical skills:** 3-4 bullets at 10-15 words each
+- **Applied skills:** 2 bullets at 10-15 words each
+- **Soft skills:** short paragraph covering 2-3 interpersonal skills (~30 words)
+- NOT dense prose. Total 180-220 words.
+
+**3. §7 Comparisons — bold labels, NO inline URL syntax:**
+- Format: `**vs [Peer Uni Name] MBA:** [40-60 word comparison text]`
+- BAD: `Amity vs Manipal Online MBA (/universities/xxx/mba): text`
+- GOOD: `**vs Manipal (MAHE) Online MBA:** text`
+- 2-3 peers per spec. Total 160-200 words.
+
+**4. §8 Fees — correct per-spec data, no registration fee assumption:**
+- Template: "The total program fee for the [Uni] MBA in [Spec] is ₹X,XX,XXX across 4 semesters. Per-semester fee is ₹XX,XXX. [Uni] does not charge a separate registration fee."
+- Include: total fee, per-semester fee, EMI amount and tenure
+- Check if uni actually has a registration fee — do NOT assume. If none, state explicitly.
+- Amity standard specs: ₹2,25,000 total / ₹56,300 sem / ₹8,906 EMI (24 months)
+- Amity Healthcare spec: ₹3,29,000 total / ₹82,300 sem / ₹13,023 EMI (24 months)
+
+**5. Mobile-first principle:**
+- Indian online MBA users are 80% mobile. Every section must be scannable.
+- Labelled sections, bullets, short paragraphs. No paragraph longer than 3 sentences.
+
+**Violation of these rules requires spec page regeneration before ship.**
