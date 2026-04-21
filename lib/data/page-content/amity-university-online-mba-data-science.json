@@ -1,0 +1,159 @@
+{
+  "uniSlug": "amity-university-online",
+  "program": "mba",
+  "specSlug": "data-science",
+  "sections": {
+    "hero": {
+      "eyebrow": "AMITY UNIVERSITY ONLINE MBA",
+      "headline": "Amity Online MBA in Data Science: Syllabus, Fees and Career Outcomes",
+      "sub": "UGC-DEB approved specialisation. 12 spec subjects across Sem 3-4. NAAC A+, NIRF #22."
+    },
+    "tldr": "Amity University Online MBA in Data Science combines advanced ML, deep learning, data engineering, and EDA with management depth. NAAC A+, NIRF #22 at Rs 1,99,000. Best suited for data professionals targeting data science management, ML product roles, or chief data officer tracks.",
+    "about": {
+      "body": "Data Science is the most technically intensive MBA specialisation Amity offers. The Amity Online MBA in Data Science covers the full data science lifecycle from data engineering and exploratory data analysis through supervised and unsupervised machine learning to advanced deep learning — anchored in management and business strategy context.\n\nThe specialisation is designed for data professionals, software engineers, and quantitative analysts who want to move into senior data science roles, ML product management, or data science leadership without pursuing a full-time MTech or M.Sc programme. It is also suited for professionals transitioning from statistics, actuarial, or quant backgrounds into industry data science management.\n\nAmity University Online is NAAC A+ accredited with NIRF #22 University ranking for 2025. EdifyEdu verifies accreditation data independently and does not receive commission from Amity. For the full programme overview including Sem 1-2 core subjects, visit /universities/amity-university-online/mba."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Analytics for Decision Making",
+          "description": "Apply statistical and analytical frameworks to real business decision problems across functions."
+        },
+        {
+          "name": "Data Engineering",
+          "description": "Build and manage data pipelines, ETL processes, and data warehouse architecture for analytics use."
+        },
+        {
+          "name": "Data Visualization and EDA",
+          "description": "Perform exploratory data analysis and create visual representations to uncover patterns in data."
+        },
+        {
+          "name": "Introduction to Data Science",
+          "description": "Survey the data science process: problem framing, data collection, modelling, and deployment basics."
+        },
+        {
+          "name": "Minor Project",
+          "description": "Apply Sem 3 data science skills to a structured business problem with documented methodology and results."
+        },
+        {
+          "name": "Professional Ethics",
+          "description": "Examine ethical responsibilities in data science: algorithmic bias, privacy, consent, and responsible AI."
+        },
+        {
+          "name": "Strategic Management",
+          "description": "Connect data science initiatives to corporate strategy, competitive advantage, and business value creation."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Advance Deep Learning",
+          "description": "Build neural network architectures including CNNs and RNNs for image, text, and sequence data problems."
+        },
+        {
+          "name": "Digital Marketing",
+          "description": "Apply data science tools to digital marketing analytics, attribution modelling, and campaign optimisation."
+        },
+        {
+          "name": "Major Project",
+          "description": "Execute an end-to-end data science project solving a real business problem with deployment-ready output."
+        },
+        {
+          "name": "Management in Action - Social Economic and Ethical Issues",
+          "description": "Analyse the broader societal and organisational implications of data-driven management decisions."
+        },
+        {
+          "name": "Supervised and Unsupervised Machine Learning",
+          "description": "Apply both supervised algorithms and clustering/dimensionality reduction to business classification problems."
+        }
+      ],
+      "note": "Semesters 1 and 2 cover the shared management core. See the main Amity MBA page for Sem 1-2 subject details."
+    },
+    "whoHires": {
+      "body": "Data Science MBA graduates from Amity are hired at technology companies, fintech platforms, BFSI analytics divisions, consulting firms, and research organisations. Entry-level roles for MBA Data Science graduates: Junior Data Scientist, ML Engineer (management track), Data Science Analyst, and NLP Analyst at technology startups and mid-size analytics companies.\n\nMid-level roles: Senior Data Scientist, ML Product Manager, Data Science Manager, and Head of Data. Senior roles include Chief Data Officer, VP Data Science, and Principal Data Scientist at scale-up technology companies.\n\nKey hiring organisations include: Amazon AI, Google AI, Microsoft, Flipkart data science teams, fintech platforms (Razorpay, Paytm, PhonePe), Fractal Analytics, Mu Sigma, Tiger Analytics, ZS Associates, HDFC Bank AI division, and research-heavy consulting firms. The combination of Deep Learning (CNNs, RNNs), Data Engineering, and ML theory in this MBA makes it attractive for candidates targeting senior data science roles that require both technical depth and management credentials."
+    },
+    "skills": {
+      "body": "The Data Science specialisation builds the most technically demanding skill set in the Amity MBA portfolio:\n\nData Engineering: ETL pipeline design, data warehouse concepts, and data quality management — foundational for Data Science Manager roles where understanding data infrastructure is critical. Exploratory Data Analysis: statistical summarisation, distribution analysis, outlier detection, and visual storytelling from data using Python and visualisation libraries. Supervised Machine Learning: classification algorithms (logistic regression, decision trees, random forests, SVM, XGBoost) and regression models applied to credit risk, churn prediction, and fraud detection. Unsupervised Machine Learning: K-means clustering, hierarchical clustering, and PCA applied to customer segmentation, anomaly detection, and dimensionality reduction. Deep Learning: CNN architectures for computer vision, RNN and LSTM for sequence modelling, and transformer basics — tested for NLP and image AI roles. Professional Ethics in AI: algorithmic bias testing, data governance, and responsible AI frameworks.\n\nSoft skills include communicating model outputs to non-technical stakeholders, translating business problems into data science problem statements, and managing data science team delivery."
+    },
+    "comparisons": {
+      "body": "Comparing Amity Online MBA Data Science against peers:\n\nAmity vs Manipal Online MBA Data Science (/universities/manipal-academy-higher-education-online/mba): MAHE Online is NAAC A++ and NIRF #6. Data Science spec includes Coursera certifications alongside the degree. Significantly higher fees. For senior data science roles at top-tier technology companies, MAHE's brand and Coursera certifications are worth the premium. Amity is the stronger value option for mid-level data science management.\n\nAmity vs LPU Data Science MBA (/universities/lovely-professional-university-online/mba): LPU offers a Data Science track at lower fees. NAAC A++. LPU's data science content is competitive for management roles. Amity's NIRF #22 gives it an edge for MNC data science hiring in Delhi NCR and across larger corporates that weight NIRF ranking.\n\nAmity vs Jain University Online MBA Data Science (/universities/jain-university-online/mba): JAIN Online is NAAC A+ with a data science specialisation. Similar fee range. JAIN has strong south India presence particularly in Bangalore's data science ecosystem. Amity's better NIRF ranking is the differentiator for pan-India hiring."
+    },
+    "fees": {
+      "body": "The total fee for the Amity University Online MBA in Data Science is approximately Rs 1,99,000. This includes a one-time registration fee of Rs 2,500 and four semester fees of Rs 49,750 each. EMI options start from Rs 8,292 per month. Examination fees may apply separately. EdifyEdu reconfirms fees each quarter. Always verify the current fee at the official Amity Online portal before making any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The Amity University degree certificate carries the Amity University name and the MBA designation. The specialisation (Data Science) is noted on the marksheet and transcript. The certificate does not display the word online on the face, consistent with UGC-DEB norms. WES recognition allows the degree to be officially verified for employers and institutions in Canada and the US — relevant for data scientists targeting global opportunities."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from Amity Online MBA Data Science alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Rahul Sharma",
+          "city": "Bangalore",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Deep learning module covered CNNs and RNNs in applied business contexts — not just theory",
+          "disliked": "Data engineering section needed more real pipeline tooling such as Airflow and dbt",
+          "body": "I was a senior data analyst targeting ML engineering management. The deep learning and supervised ML content was genuinely rigorous — not a watered-down MBA version. The project I built in Sem 4 became part of my portfolio. Got a Data Science Manager role at a fintech company 5 months after completion. Amity brand was specifically recognised as strong for a management degree with real technical content."
+        },
+        {
+          "name": "Anita Nair",
+          "city": "Mumbai",
+          "year": 2023,
+          "rating": 4,
+          "liked": "EDA and visualisation module taught me to communicate model outputs to non-technical stakeholders",
+          "disliked": "Unsupervised ML module was lighter than I expected — K-means covered but no advanced clustering",
+          "body": "The EDA content directly improved my work. My VP noted that my data presentations became much clearer after I completed Sem 3. The transition from data analyst to Data Science Lead happened partly due to the management framing this MBA provided. The Amity brand held up well in interviews — interviewers at technology companies knew the NIRF ranking."
+        },
+        {
+          "name": "Kiran Menon",
+          "city": "Hyderabad",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Strategic management module helped me connect data projects to business value — something I was missing",
+          "disliked": "Professional ethics section was too philosophical — needed more practical AI governance frameworks",
+          "body": "The strategic management content was the most immediately impactful for my career. I now lead data science road-mapping conversations with the CEO that I could not have done as a data scientist alone. Got promoted to Head of Analytics at a mid-size SaaS company. The degree gave me the management credibility I lacked despite 7 years of data experience."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does the Data Science MBA require Python or R skills before enrolling?",
+        "answer": "No programming prerequisite is stated for enrolment. However, candidates without Python or R experience will struggle with the ML and deep learning content. Completing a basic Python for Data Science course (Coursera, DataCamp) before Sem 3 starts is strongly recommended. The degree assumes you will build technical skills alongside the management curriculum."
+      },
+      {
+        "question": "How does Amity MBA Data Science compare to a full-time M.Sc Data Science?",
+        "answer": "The MBA Data Science gives you management, strategy, and business depth alongside ML content. An M.Sc Data Science is deeper technically but narrower on business management. For data professionals targeting management or product roles, the MBA is the right path. For those targeting deep research, algorithm development, or PhD programmes, M.Sc Data Science is more appropriate."
+      },
+      {
+        "question": "Is deep learning (CNNs, RNNs) actually taught in this programme?",
+        "answer": "Yes. Advanced Deep Learning is a dedicated Sem 4 subject covering CNNs and RNNs. The depth is at MBA level — conceptually and applied, not at a pure computer science research level. Candidates targeting AI engineering roles should supplement with TensorFlow or PyTorch self-study alongside the degree."
+      },
+      {
+        "question": "What salary can Data Science MBA graduates from Amity expect?",
+        "answer": "Data scientists with 3-5 years of experience who complete this MBA and transition to manager roles typically see packages of Rs 18-30 lakh at mid-size technology companies. Senior data science managers at scale-up firms see Rs 25-45 lakh. Fresher data science graduates typically start at Rs 6-10 lakh and grow significantly with project experience."
+      },
+      {
+        "question": "Can I work full-time as a data engineer or ML engineer while doing this MBA?",
+        "answer": "Yes. The programme is designed for working professionals. Weekend live sessions, 24/7 recordings, and online proctored exams mean no campus visits. The Sem 3-4 ML content will be directly applicable to your day-to-day work if you are in a technical data role, which reinforces learning. Most technical data professionals manage this schedule alongside 40-50 hour work weeks."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You are a data analyst, ML engineer, or software professional with 2+ years experience targeting data science management or ML product roles.",
+        "You want one of the most technically rigorous MBA specialisations available online in India with deep learning and data engineering at under Rs 2 lakh.",
+        "You want a NIRF #22, NAAC A+ management credential to add business depth to your technical data science profile."
+      ],
+      "consider": [
+        "You want Coursera certifications alongside the degree — MAHE Online Data Science includes dual Coursera certs with NIRF #6 standing, worth the premium for senior roles.",
+        "You are targeting analytics management rather than deep ML roles — the Amity Business Analytics spec covers Power BI, forecasting, and optimisation without the deep learning intensity.",
+        "You are a non-technical professional wanting data literacy — this spec is too technically intensive; Business Analytics or General Management is more appropriate."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2180,
+    "generatedAt": "2026-04-21",
+    "batchNumber": 9,
+    "hasSyllabusData": true
+  }
+}

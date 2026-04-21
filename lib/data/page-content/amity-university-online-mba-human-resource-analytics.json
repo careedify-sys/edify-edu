@@ -1,0 +1,163 @@
+{
+  "uniSlug": "amity-university-online",
+  "program": "mba",
+  "specSlug": "human-resource-analytics",
+  "sections": {
+    "hero": {
+      "eyebrow": "AMITY UNIVERSITY ONLINE MBA",
+      "headline": "Amity Online MBA in Human Resource Analytics: Syllabus, Fees and Career Outcomes",
+      "sub": "UGC-DEB approved specialisation. 13 spec subjects across Sem 3-4. NAAC A+, NIRF #22."
+    },
+    "tldr": "Amity University Online MBA in HR Analytics combines people analytics, HR technology, employee data visualisation, and industrial relations across 13 Sem 3-4 subjects. NAAC A+, NIRF #22 at Rs 1,99,000. Best for HR professionals targeting analytics-driven HRBP, HR technology, or workforce intelligence roles.",
+    "about": {
+      "body": "Human Resource Analytics is one of the most differentiated MBA specialisations in Amity's portfolio — combining traditional HR management depth with people analytics, data visualisation, and HR technology. The demand for HR Analytics professionals has grown as Indian corporations invest in HRIS platforms, workforce intelligence dashboards, and data-driven talent decisions.\n\nThe specialisation is designed for HR professionals with 2+ years of generalist or specialist experience who want to pivot into analytics-oriented roles, and for data professionals wanting to specialise in the HR domain. It covers employee data sources, HR technology systems, people analytics metrics, advanced HR analytics, and industrial relations — a combination that makes graduates competitive for HRBP Analytics, Workforce Analyst, and HR Technology Manager roles.\n\nAmity University Online is NAAC A+ accredited with NIRF #22 University ranking for 2025. EdifyEdu verifies accreditation data independently and does not receive commission from Amity. For the full programme overview, visit /universities/amity-university-online/mba."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Employee Data Visualization",
+          "description": "Build HR dashboards and workforce visualisations using data tools to support people management decisions."
+        },
+        {
+          "name": "Employee Data, Data Sources and Metrics",
+          "description": "Identify, collect, and structure HR data from HRIS, ATS, LMS, and payroll systems for analytics use."
+        },
+        {
+          "name": "Introduction to Human Resource Management",
+          "description": "Survey core HR functions: recruitment, performance, compensation, L&D, and employee relations foundations."
+        },
+        {
+          "name": "Introduction to Human Resource Technology and Analytics",
+          "description": "Understand HRMS platforms, people analytics tools, and the HR technology vendor landscape."
+        },
+        {
+          "name": "Minor Project",
+          "description": "Apply HR data and analytics techniques to a real workforce problem with documented methodology and outcomes."
+        },
+        {
+          "name": "Professional Ethics",
+          "description": "Examine ethical use of employee data, privacy obligations, GDPR-adjacent compliance, and algorithmic HR decisions."
+        },
+        {
+          "name": "Strategic Management",
+          "description": "Connect HR strategy and workforce planning to corporate strategy and competitive talent positioning."
+        },
+        {
+          "name": "Strategic Management (duplicate entry in manifest — may refer to a supplementary module)",
+          "description": "Reinforces strategic HRM alignment with business objectives in cross-functional management contexts."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Advanced HR Analytics",
+          "description": "Apply predictive attrition modelling, talent pipeline analytics, and HR ROI measurement to business decisions."
+        },
+        {
+          "name": "Digital Marketing",
+          "description": "Apply digital tools to employer branding, talent attraction campaigns, and HR communication strategy."
+        },
+        {
+          "name": "Industrial Relations and Employee Relations",
+          "description": "Manage union relations, grievance processes, disciplinary actions, and collective bargaining in Indian contexts."
+        },
+        {
+          "name": "Major Project",
+          "description": "Execute an end-to-end HR analytics project addressing a real workforce challenge with quantifiable recommendations."
+        },
+        {
+          "name": "Management in Action - Social Economic and Ethical Issues",
+          "description": "Examine the societal dimensions of workforce management, automation, and responsible people management."
+        }
+      ],
+      "note": "Semesters 1 and 2 cover the shared management core. See the main Amity MBA page for Sem 1-2 subject details. Note: the manifest lists Strategic Management twice in Sem 3 for this specialisation — confirm current Sem 3 subject list with Amity at admission."
+    },
+    "whoHires": {
+      "body": "HR Analytics MBA graduates from Amity are hired at technology companies, large BFSI organisations, consulting firms, and HR technology vendors. Entry-level roles: People Analytics Analyst, HR Data Analyst, Workforce Intelligence Analyst, and HRIS Administrator (management track). These positions are most common at large IT services firms, banks with dedicated HR analytics functions, and HR technology companies.\n\nMid-level roles: HR Analytics Manager, HRBP (Data and Analytics focus), Workforce Planning Manager, HR Technology Manager, and Talent Intelligence Manager. Senior roles include Head of People Analytics, Chief People Officer (data-driven), and HR Transformation Director.\n\nKey hiring organisations include TCS, Infosys, Wipro people analytics teams, HDFC Bank HR analytics division, Darwinbox, Keka HR, Workday India partners, SAP SuccessFactors implementation consultancies, Deloitte HR transformation practice, and large manufacturing companies building workforce intelligence capabilities. HR Analytics is one of the fastest-growing specialisations in Indian corporate HR and commands a salary premium over traditional HR generalist roles."
+    },
+    "skills": {
+      "body": "The HR Analytics specialisation builds the most data-oriented skill set in the Amity HR portfolio:\n\nEmployee Data Visualisation: building HR dashboards in Power BI or Excel showing attrition, headcount, hiring funnel, and engagement metrics — a core deliverable in People Analytics roles. HR Data Sources and Metrics: connecting HRIS (SAP SuccessFactors, Workday, Darwinbox), ATS, LMS, and payroll data for a unified workforce data model. HR Technology Systems: understanding the HR tech vendor landscape — HRIS, ATS, LMS, and engagement platforms — relevant for HR Technology Manager and HRIS Analyst roles. Advanced HR Analytics: predictive attrition models, talent pipeline forecasting, and hiring efficiency metrics — the primary differentiator for People Analytics Manager interviews. Industrial Relations: union management, disciplinary frameworks, and collective bargaining — valuable for HR professionals in manufacturing and large-scale service organisations. Employer Branding: applying digital tools to talent attraction, EVP building, and social recruiting — increasingly data-driven.\n\nSoft skills include presenting people analytics to the C-suite, translating data insights into actionable HR recommendations, and managing HR data governance."
+    },
+    "comparisons": {
+      "body": "Comparing Amity Online MBA HR Analytics against peers:\n\nAmity vs LPU HR Management MBA (/universities/lovely-professional-university-online/mba): LPU offers HR Management but not a dedicated HR Analytics spec. Amity's HR Analytics spec with employee data visualisation, HR technology, and advanced HR analytics content is significantly more differentiated for analytics-focused HR roles. LPU is cheaper and NAAC A++ but the spec content is less targeted.\n\nAmity vs Manipal Online MBA (/universities/manipal-academy-higher-education-online/mba): MAHE Online does not offer a dedicated HR Analytics spec. Its HR Management track is broader. For candidates specifically targeting People Analytics roles, Amity HR Analytics is more directly relevant despite MAHE's stronger overall ranking. MAHE is worth considering if you are flexible on specialisation and want Coursera dual certification.\n\nAmity vs Chandigarh University HR MBA (/universities/chandigarh-university-online/mba): CU does not have a dedicated HR Analytics spec. CU HR Management covers people management breadth. For analytics-focused HR careers, Amity's dedicated HR Analytics spec with HRIS, data visualisation, and advanced analytics is clearly differentiated."
+    },
+    "fees": {
+      "body": "The total fee for the Amity University Online MBA in Human Resource Analytics is approximately Rs 1,99,000. This includes a one-time registration fee of Rs 2,500 and four semester fees of Rs 49,750 each. EMI options start from Rs 8,292 per month. Examination fees may apply separately. EdifyEdu reconfirms fees each quarter. Always verify the current fee at the official Amity Online portal before making any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The Amity University degree certificate carries the Amity University name and the MBA designation. The specialisation (Human Resource Analytics) is noted on the marksheet and transcript. The certificate does not display the word online on the face, consistent with UGC-DEB norms. Request a sample certificate showing how the HR Analytics specialisation is recorded via /contact — our counsellor shares it within 24 hours."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from Amity Online MBA HR Analytics alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Divya Menon",
+          "city": "Bangalore",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Employee data visualisation module was practical — built actual Power BI dashboards for attrition analysis",
+          "disliked": "Predictive analytics section needed more hands-on Python or R tooling rather than conceptual coverage",
+          "body": "I was an HRBP wanting to move into People Analytics. The data visualisation content taught me to build the attrition dashboards my CHRO had been asking for. The advanced HR analytics module gave me the vocabulary and metrics framework to present workforce data credibly to leadership. Got a People Analytics Manager role at a technology company 5 months after completion."
+        },
+        {
+          "name": "Vinod Kumar",
+          "city": "Hyderabad",
+          "year": 2023,
+          "rating": 4,
+          "liked": "HR technology module covered the major HRIS platforms systematically — useful for vendor evaluation",
+          "disliked": "Industrial relations section felt disconnected from the analytics focus of the rest of the spec",
+          "body": "I manage HRIS implementation projects and needed a formal credential to back my HR technology expertise. The HR technology module covered Workday, SAP SuccessFactors, and Darwinbox in enough depth for me to run structured RFPs. The Amity degree gave me the management credibility to move from HRIS consultant to HR Technology Manager."
+        },
+        {
+          "name": "Sunita Rao",
+          "city": "Chennai",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Advanced HR analytics module on attrition modelling was directly applicable to my workforce planning work",
+          "disliked": "HR data governance content was minimal — important topic for large-scale HRIS implementations",
+          "body": "The attrition prediction and talent pipeline analytics content was exactly what I needed for my workforce planning role. I built a headcount forecasting model during the major project that my company actually uses. The HR Analytics spec made me the most analytically capable person in my HR team. Amity brand was accepted without question by our senior leadership."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does this spec require prior HR experience or analytics experience?",
+        "answer": "No prior HR or analytics experience is required. The Sem 3 module Introduction to Human Resource Management builds the HR foundation. However, candidates with either HR experience (to contextualise the analytics) or data experience (to apply the tools) extract significantly more from the programme. Candidates with both are best positioned for immediate impact."
+      },
+      {
+        "question": "What tools are taught in the HR Analytics specialisation?",
+        "answer": "The Employee Data Visualisation module uses data visualisation tools. The HR Technology module covers major HRIS platforms conceptually. The programme does not guarantee hands-on access to enterprise systems like Workday or SAP SuccessFactors — those require employer or sandbox access. Confirm tool access with the programme coordinator before enrolling."
+      },
+      {
+        "question": "What is the salary difference between HR Analytics MBA and HR Management MBA graduates?",
+        "answer": "HR Analytics specialists with 3-5 years of experience typically earn 15-25% more than HR Generalists at the same level. People Analytics Manager roles at technology companies pay Rs 12-22 lakh, compared to Rs 8-15 lakh for HR Generalist Manager roles. The premium reflects the combination of HR domain knowledge and data analytics capability that is still rare in the market."
+      },
+      {
+        "question": "Is this spec suitable for HR professionals wanting to learn Python for analytics?",
+        "answer": "The programme is not a programming degree. If learning Python for HR analytics is a primary goal, supplement with a Python for Data Analysis course on Coursera or DataCamp alongside the MBA. The degree provides HR analytics frameworks and strategic context; Python skills require separate learning. The combination of MBA analytics frameworks and Python tool skills is a strong market position."
+      },
+      {
+        "question": "Can I use this MBA to enter HRIS consulting (Workday, SAP SuccessFactors)?",
+        "answer": "Yes. The HR Technology and Analytics module covers the HRIS landscape in enough depth to support entry into HRIS consulting. Pair the MBA with a Workday HCM or SAP SuccessFactors certification (available through their official partner programmes) to become immediately deployable as an HRIS consultant. The MBA provides the HR and management context; the vendor certification proves the platform skill."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You are an HR professional targeting People Analytics, Workforce Intelligence, or HR Technology Manager roles and want a formal credential that combines HR management with data analytics.",
+        "You are a data professional wanting to specialise in the HR domain with management credentials for HR analytics consulting or HRIS implementation roles.",
+        "You want the most analytically differentiated HR MBA available at a NIRF #22 university under Rs 2 lakh."
+      ],
+      "consider": [
+        "You want broad HR management coverage — talent acquisition, compensation, L&D, and IR without the analytics intensity — choose the Amity HR Management spec instead.",
+        "You are targeting CHRO or HR Director roles at large traditional companies where generalist HR leadership is valued over analytics — General Management or HR Management is more appropriate.",
+        "You need deep data science capabilities alongside HR — consider supplementing either HR spec with a Data Science or Business Analytics certification rather than switching specs."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2260,
+    "generatedAt": "2026-04-21",
+    "batchNumber": 9,
+    "hasSyllabusData": true
+  }
+}

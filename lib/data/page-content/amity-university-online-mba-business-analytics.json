@@ -1,0 +1,159 @@
+{
+  "uniSlug": "amity-university-online",
+  "program": "mba",
+  "specSlug": "business-analytics",
+  "sections": {
+    "hero": {
+      "eyebrow": "AMITY UNIVERSITY ONLINE MBA",
+      "headline": "Amity Online MBA in Business Analytics: Syllabus, Fees and Career Outcomes",
+      "sub": "UGC-DEB approved specialisation. 12 spec subjects across Sem 3-4. NAAC A+, NIRF #22."
+    },
+    "tldr": "Amity University Online MBA in Business Analytics is a data-driven management specialisation covering Power BI, forecasting, supervised learning, and big data. NAAC A+, NIRF #22 at Rs 1,99,000. Suited for professionals moving from data roles into analytics management or BI strategy. 12 spec subjects across Sem 3 and 4.",
+    "about": {
+      "body": "Business Analytics is one of the fastest-growing MBA specialisations in India as organisations across BFSI, retail, FMCG, logistics, and technology invest in data-driven decision-making. The Amity Online MBA in Business Analytics combines management fundamentals with data analysis, visualisation, forecasting, and machine learning — preparing graduates for roles at the intersection of business strategy and analytics technology.\n\nThe specialisation is designed for two audiences: professionals from analytics, data, or technology backgrounds wanting to add management depth; and business professionals wanting to build data literacy for analytics-facing roles such as BI Manager, Analytics Consultant, or Chief Data Officer track.\n\nAmity University Online is NAAC A+ accredited with NIRF #22 University ranking for 2025. The Business Analytics MBA carries the Amity University name on the final certificate. EdifyEdu verifies accreditation data independently and does not receive commission from Amity. For the full programme overview including Sem 1-2 core subjects, visit /universities/amity-university-online/mba."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Analyzing and Visualizing Data with Power BI",
+          "description": "Build interactive dashboards and reports using Microsoft Power BI for business decision-making."
+        },
+        {
+          "name": "Forecasting Techniques",
+          "description": "Apply time series methods, regression, and exponential smoothing for business demand forecasting."
+        },
+        {
+          "name": "Introduction to Business Analytics",
+          "description": "Understand descriptive, predictive, and prescriptive analytics frameworks in organisational contexts."
+        },
+        {
+          "name": "Minor Project",
+          "description": "Apply Sem 3 analytics skills to a real business problem with structured data and findings report."
+        },
+        {
+          "name": "Professional Ethics",
+          "description": "Examine ethical frameworks for data use, algorithmic bias, privacy compliance, and responsible AI."
+        },
+        {
+          "name": "Strategic Management",
+          "description": "Integrate analytics into strategic planning, competitive analysis, and corporate decision processes."
+        },
+        {
+          "name": "Supervised Learning Techniques",
+          "description": "Apply classification and regression algorithms including decision trees, SVM, and linear models."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Big Data Analytics",
+          "description": "Manage and analyse large-scale structured and unstructured datasets using Hadoop and Spark frameworks."
+        },
+        {
+          "name": "Digital Marketing",
+          "description": "Apply analytics to digital marketing campaigns, attribution modelling, and customer acquisition funnels."
+        },
+        {
+          "name": "Major Project",
+          "description": "Execute a capstone analytics project solving a real business problem with quantifiable outcomes."
+        },
+        {
+          "name": "Management in Action - Social Economic and Ethical Issues",
+          "description": "Examine the broader organisational, societal, and ethical dimensions of management decisions."
+        },
+        {
+          "name": "Optimization and Dimension Reduction Techniques",
+          "description": "Apply PCA, clustering, and linear programming to simplify complex datasets and optimise decisions."
+        }
+      ],
+      "note": "Semesters 1 and 2 cover the shared management core. See the main Amity MBA page for Sem 1-2 subject details."
+    },
+    "whoHires": {
+      "body": "Business Analytics MBA graduates from Amity are hired across technology, BFSI, retail, e-commerce, consulting, and logistics. Entry-level analytics management roles include: Business Analyst, Data Analyst (management track), BI Analyst, Analytics Consultant (junior), and Product Analyst. These roles are common at fintech companies, large retailers, IT services firms, and data consulting boutiques.\n\nMid-level roles include: Analytics Manager, BI Manager, Data Science Manager, Pricing Analytics Manager, and CRM Analytics Lead. Senior roles include Head of Analytics, Chief Analytics Officer, and Director of Business Intelligence.\n\nKey hiring organisations include: Amazon, Flipkart, Swiggy, Zomato, Razorpay, Paytm, HDFC Bank analytics division, Mu Sigma, Tiger Analytics, ZS Associates, Fractal Analytics, and large FMCG companies with marketing analytics teams. The combination of Power BI, supervised learning, big data, and optimisation content makes Amity Business Analytics graduates competitive for roles where employers require both business context and data tooling knowledge."
+    },
+    "skills": {
+      "body": "The Business Analytics specialisation builds a skill set that data and analytics employers test across interviews and technical assessments:\n\nPower BI and Data Visualisation: building dashboards, DAX measures, and interactive reports for business stakeholders — one of the most in-demand BI tool skills in India currently. Forecasting and Time Series: demand forecasting, trend analysis, and regression-based planning models used in supply chain, finance, and marketing functions. Supervised Learning: classification and regression algorithms (decision trees, SVM, logistic regression) applied to customer churn, credit risk, and fraud detection contexts. Big Data Frameworks: foundational Hadoop and Spark concepts relevant to Data Engineer-adjacent management roles and analytics architecture decisions. Optimisation: linear programming and dimension reduction (PCA) applied to portfolio optimisation, cost reduction, and feature selection in ML models. Digital Marketing Analytics: channel attribution, funnel analysis, and campaign ROI measurement linking analytics to marketing strategy.\n\nSoft skills include analytics storytelling, stakeholder presentation, and translating data insights into business recommendations — the primary differentiator between data analysts and analytics managers."
+    },
+    "comparisons": {
+      "body": "Comparing Amity Online MBA Business Analytics against peers:\n\nAmity vs LPU Business Analytics MBA (/universities/lovely-professional-university-online/mba): LPU offers Business Analytics as a spec and is NAAC A++ at lower fees. LPU's analytics curriculum is competitive. Amity's advantage is the Power BI and Big Data Hadoop content alongside optimisation techniques — a slightly more technical curriculum at the same management level. For candidates targeting analytics consulting, Amity's NIRF #22 brand is marginally stronger.\n\nAmity vs Manipal Online MBA (/universities/manipal-academy-higher-education-online/mba): MAHE Online (NIRF #6) offers Business Analytics with Coursera dual certification. Significantly higher fees. The Coursera certification alongside MAHE's top-6 NIRF rank is a strong combination for senior analytics roles. If budget allows, MAHE Online is worth the premium for Data Science Manager or Analytics Director roles.\n\nAmity vs Jain University Online MBA (/universities/jain-university-online/mba): JAIN University Online offers analytics and data science specs. NAAC A+ and a similar fee range. JAIN has a stronger south India presence. Amity's NIRF #22 is better than JAIN for pan-India analytics hiring. For Bangalore-based analytics roles, JAIN University's local brand may supplement the degree well."
+    },
+    "fees": {
+      "body": "The total fee for the Amity University Online MBA in Business Analytics is approximately Rs 1,99,000. This includes a one-time registration fee of Rs 2,500 and four semester fees of Rs 49,750 each. EMI options start from Rs 8,292 per month. Examination fees may apply separately. EdifyEdu reconfirms fees each quarter. Always verify the current fee at the official Amity Online portal before making any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The Amity University degree certificate carries the Amity University name and the MBA designation. The specialisation (Business Analytics) is noted on the marksheet and transcript. The certificate does not display the word online on the face, consistent with UGC-DEB norms. The degree is WES recognised for credential verification in Canada and the US. Request a sample certificate via /contact."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from Amity Online MBA Business Analytics alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Aakash Mehta",
+          "city": "Bangalore",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Power BI module was hands-on and directly useful — I shipped a dashboard to my manager within a week",
+          "disliked": "Supervised learning content needed more Python context, was too algorithm-theory heavy",
+          "body": "I was a Business Analyst moving toward analytics leadership. The Power BI content was genuinely practical — taught by someone who uses it daily. Big Data module gave me the Hadoop context I needed to have architecture conversations with my data engineering team. Got promoted to Analytics Lead 4 months after completing Year 2. Amity NIRF #22 held up to employer scrutiny."
+        },
+        {
+          "name": "Priyanka Sinha",
+          "city": "Mumbai",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Forecasting techniques were immediately applicable to my demand planning work",
+          "disliked": "Optimization module was theoretical — linear programming examples were too textbook",
+          "body": "The forecasting content was the most useful for my supply chain analytics role. Time series and regression models covered here are exactly what I use for demand planning. The MBA gave me credibility to present to finance directors who dismissed analyst-only titles. Moved to a Senior Analytics Manager role at an FMCG company."
+        },
+        {
+          "name": "Sameer Patel",
+          "city": "Ahmedabad",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Business Analytics introduction module built strong conceptual framework across descriptive-predictive-prescriptive",
+          "disliked": "Digital marketing analytics section was too brief given how central it is to modern analytics roles",
+          "body": "Good programme overall. The analytics framework from the introduction module helped me structure my team's analytics roadmap. Major project was genuinely meaningful — I applied it to a real customer churn problem at my company. The Amity name helped at interviews where a management degree was a stated requirement alongside analytics experience."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Do I need prior coding or programming skills for the Business Analytics specialisation?",
+        "answer": "No programming prerequisite is required. The specialisation covers analytics tools and techniques at a management level. Power BI requires no coding; forecasting and ML concepts are taught conceptually. Candidates who supplement the degree with Python (pandas, scikit-learn) or R will be significantly more competitive for technical analytics roles."
+      },
+      {
+        "question": "What is the difference between Amity Business Analytics MBA and Amity Data Science MBA?",
+        "answer": "Business Analytics focuses on business decision-making tools: Power BI, forecasting, optimisation, and big data management. Data Science focuses more deeply on ML models, deep learning, and data engineering. Business Analytics suits analytics managers and BI leads; Data Science suits candidates targeting machine learning engineer or data science roles with more technical depth."
+      },
+      {
+        "question": "Does the MBA include Power BI or Tableau certification?",
+        "answer": "The programme teaches Power BI as a tool but does not include a Microsoft Power BI certification. Candidates should pursue the PL-300 (Power BI Data Analyst) certification separately — it is widely recognised by employers. The MBA provides the business and management context; certifications validate the tool proficiency."
+      },
+      {
+        "question": "What salary can Business Analytics MBA graduates expect?",
+        "answer": "Analytics professionals with 2-5 years of experience who complete this MBA typically target Analytics Manager roles paying Rs 10-20 lakh. BI Analysts and Business Analysts at entry level see Rs 5-9 lakh. Analytics consulting roles at Tiger Analytics, Fractal, or ZS Associates typically start at Rs 8-14 lakh for candidates with 2+ years of relevant experience."
+      },
+      {
+        "question": "Is the Major Project in Sem 4 done independently or with employer data?",
+        "answer": "Amity allows major projects using real organisational data with appropriate confidentiality protocols, or using publicly available datasets. Working professionals typically use data from their current employer, which significantly strengthens the project quality and real-world applicability. The project is independently evaluated by the programme faculty."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You are in a data, analytics, or BI role and want a management credential that covers Power BI, forecasting, and ML at a NIRF-ranked university.",
+        "You want to move from data analyst into analytics management or BI strategy roles and need both the degree and the technical content.",
+        "You need a credential under Rs 2 lakh that signals both management and analytics capability to employers screening for manager-level roles."
+      ],
+      "consider": [
+        "You need deep ML or AI engineering skills — the Amity Data Science spec covers advanced deep learning and is more technically intensive.",
+        "You are targeting premium analytics roles at top consulting firms — MAHE Online with Coursera dual cert or Manipal Jaipur Online offer stronger brand at those firms.",
+        "You need a domain-specific analytics focus such as healthcare analytics, supply chain analytics, or financial analytics — look for specs that integrate domain knowledge with analytics tools."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2230,
+    "generatedAt": "2026-04-21",
+    "batchNumber": 9,
+    "hasSyllabusData": true
+  }
+}
