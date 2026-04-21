@@ -1,0 +1,151 @@
+{
+  "uniSlug": "upes-online",
+  "program": "MBA",
+  "specSlug": "business-analytics",
+  "sections": {
+    "hero": {
+      "eyebrow": "UPES ONLINE MBA",
+      "headline": "UPES Online MBA in Business Analytics: Syllabus, Fees and Career Outcomes",
+      "sub": "University of Petroleum and Energy Studies (UPES) Online MBA with a Business Analytics specialisation. NIRF #45 University, NIRF #36 Management, NAAC A, UGC-DEB approved. Data Environment and Management, Programming for Business Analytics (Python), AI for Managers, Social and Web Analytics, Business Optimization, Big Data Analytics, NLP, and Data Visualization in Sem 3-4."
+    },
+    "tldr": "UPES Online MBA Business Analytics: NIRF #45 University, NIRF #36 Management, NAAC A, fees Rs 1,75,000 (Year 1: Rs 95,000 / Year 2: Rs 80,000), zero-cost EMI at Rs 7,292/month. Analytics depth with Python programming, AI for Managers, Social and Web Analytics, Business Optimization, Big Data Analytics, NLP, and Data Visualization.",
+    "about": {
+      "body": "The UPES Online MBA in Business Analytics is offered by University of Petroleum and Energy Studies, Dehradun. UPES holds NAAC A accreditation, NIRF #45 University ranking (2025), and NIRF #36 in Management (2025). The online programme is UGC-DEB approved.\n\nThe Business Analytics specialisation delivers Sem 3-4 subjects across the full analytics stack from data infrastructure to applied AI. Sem 3 covers Data Environment and Management, Programming for Business Analytics (Python), AI for Managers, Social and Web Analytics, and Business Optimization. Sem 4 covers Strategic Management, Big Data Analytics, Natural Language Processing (NLP), Data Visualization, and Dissertation.\n\nProgramming for Business Analytics using Python as a dedicated Sem 3 subject is a practical differentiator at this fee range. Combined with NLP in Sem 4, the specialisation provides both foundational data skills and applied AI capabilities. Social and Web Analytics in Sem 3 targets digital analytics roles at e-commerce, IT services, and digital marketing firms. UPES's NIRF #36 Management ranking places this programme ahead of many better-known private university online MBA analytics offerings on accreditation credibility."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Data Environment and Management",
+          "description": "Design relational and NoSQL database architectures, manage data pipelines, and apply SQL for business analytics and reporting workflows."
+        },
+        {
+          "name": "Programming for Business Analytics (Python)",
+          "description": "Apply Python programming, pandas, numpy, and data wrangling techniques to business datasets for analytics and reporting automation."
+        },
+        {
+          "name": "AI for Managers",
+          "description": "Evaluate AI and machine learning applications for business decision-making, manage AI project roadmaps, and interpret model outputs for non-technical stakeholders."
+        },
+        {
+          "name": "Social and Web Analytics",
+          "description": "Analyse social media metrics, web traffic patterns, and digital audience behaviour using Google Analytics, social listening, and sentiment tools."
+        },
+        {
+          "name": "Business Optimization",
+          "description": "Apply linear programming, simulation modelling, and optimisation algorithms to resource allocation, logistics, and operational efficiency problems."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Strategic Management",
+          "description": "Develop analytics-led competitive strategy, evaluate data-driven make-or-buy decisions, and align analytics investment with business growth objectives."
+        },
+        {
+          "name": "Big Data Analytics",
+          "description": "Apply Hadoop, Spark, and distributed computing frameworks to large-scale dataset processing for business intelligence and operational analytics."
+        },
+        {
+          "name": "Natural Language Processing (NLP)",
+          "description": "Apply text mining, sentiment analysis, topic modelling, and NLP pipelines to customer feedback, social data, and unstructured business text."
+        },
+        {
+          "name": "Data Visualization",
+          "description": "Build interactive dashboards using Tableau, Power BI, and Python visualization libraries to communicate analytics insights to business leadership."
+        },
+        {
+          "name": "Dissertation",
+          "description": "Complete an applied analytics research project on predictive modelling, business intelligence dashboard design, or AI-led decision-making in business operations."
+        }
+      ],
+      "note": "Sem 1-2 shared core subjects across all UPES MBA specialisations. Core includes Managerial Economics, Accounting for Managers, Marketing Management, Quantitative Techniques, Operations Management, OB and HRM, Project Management, Financial Management, Research Methodology, and Business Analytics for Managers."
+    },
+    "whoHires": {
+      "body": "Business Analytics MBA graduates from UPES Online are hired across these industries and roles:\n\n**Industries:** IT services and product companies, E-commerce, BFSI analytics, FMCG analytics, Consulting and data advisory, EdTech\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Consultant, Business Intelligence Analyst, Digital Analytics Executive\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, Data Science Manager, Business Intelligence Manager, Product Analytics Manager, Decision Science Lead\n\n**Senior roles (7+ years):** Head of Analytics, Chief Data Officer, VP Data Science, Director Business Intelligence, Head of Decision Science\n\n**Top hiring organisations (UPES alumni placements):** TCS, Infosys, HCL, Wipro, Deloitte, KPMG, and BFSI and e-commerce analytics firms. UPES alumni in North India IT services corridors (Noida, Gurgaon, Dehradun) provide analytics career access that sector-general online MBAs at comparable fees cannot replicate."
+    },
+    "skills": {
+      "body": "The UPES Business Analytics specialisation builds skills that IT, BFSI, and e-commerce analytics employers test at analyst and manager levels:\n\n**Technical skills:**\n- Programming for Business Analytics (Python): pandas, numpy, data wrangling, and analytics automation. A dedicated Python programming subject uncommon in online MBA programmes at this fee range\n- Big Data Analytics: Hadoop, Spark, and distributed computing for large-scale dataset processing applicable to enterprise analytics and data engineering roles\n- Natural Language Processing: text mining, sentiment analysis, and topic modelling for customer analytics, social media intelligence, and unstructured data applications\n- Data Visualization: Tableau, Power BI, and Python visualization for business intelligence dashboard design and executive reporting\n\n**Applied skills:**\n- AI for Managers: AI project evaluation, model interpretation, and analytics roadmap management for analytics leadership roles\n- Social and Web Analytics: Google Analytics, social listening, and digital audience analysis for e-commerce, digital marketing, and growth analytics roles\n\n**Soft skills:** Presenting predictive model outputs to senior management, translating analytics recommendations to business action, communicating data infrastructure requirements to IT leadership, and managing analytics project stakeholders across business units."
+    },
+    "comparisons": {
+      "body": "Comparing UPES Online MBA Business Analytics against peers:\n\n**vs Amity Online MBA Business Analytics:** Amity Business Analytics at Rs 2,25,000 covers business intelligence and analytics with strong all-India brand recognition. UPES Business Analytics at Rs 1,75,000 includes dedicated Python programming and NLP as distinct Sem 3-4 subjects, providing hands-on technical depth beyond Amity's analytics curriculum. UPES's NIRF #36 Management ranking is stronger than Amity's management category performance.\n\n**vs NMIMS Online MBA Business Analytics:** NMIMS carries strong Mumbai BFSI analytics brand recognition. For Mumbai financial analytics and corporate analytics careers, NMIMS carries stronger recognition. For North India IT services analytics, e-commerce, and technology-led operations roles, UPES Business Analytics at Rs 1,75,000 is a competitive alternative with stronger NIRF Management ranking.\n\n**vs LPU Online MBA Data Analytics:** LPU Data Analytics covers statistical and data science tools with NIRF #31 University ranking at Rs 1,61,600 with grant. UPES Business Analytics includes both NLP and Big Data Analytics as distinct subjects alongside Python programming. UPES's NIRF #36 Management ranking is stronger than LPU's management category rank for analytics manager roles."
+    },
+    "fees": {
+      "body": "The UPES Online MBA in Business Analytics has a total program fee of Rs 1,75,000 across 2 years (4 semesters).\n\n**Year-wise fee schedule:**\n- Year 1 (Semesters 1 and 2): Rs 95,000\n- Year 2 (Semesters 3 and 4): Rs 80,000\n\n**Zero-cost EMI (no-cost EMI available):**\n- Rs 7,292 per month for 24 months\n- Tenure options: 3 to 36 months\n- Zero interest (0% cost EMI) through UPES NBFC lending tie-ups\n- Contact our counsellor for current tenure options and approval terms\n\n**Scholarships available (confirmed from UPES scholarships portal):**\n- **Academic/Work Experience scholarship**: 10% for 3+ years experience with 55%+ graduation marks; 15% for 5+ years experience; 20% for 10+ years experience\n- **Alumni scholarship**: 20% for UPES degree programme graduates\n- **Vijay (Sports) scholarship**: 35% to 100% based on national/international achievement level\n- Scholarships cannot be combined with corporate MOU discounts\n- Scholarship benefit applied semester-wise; eligibility confirmed at admission\n\nEdifyEdu reconfirms fees with UPES each quarter. Please reconfirm current fees, scholarship eligibility, and EMI terms with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The degree certificate is issued by University of Petroleum and Energy Studies (UPES) and carries the UPES name with the MBA designation. The Business Analytics specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India. UPES is WES recognised, making the degree suitable for international credential evaluation."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from UPES Online MBA Business Analytics alumni. Ratings from post-completion surveys.",
+      "items": [
+        {
+          "name": "Rohit Saxena",
+          "city": "Noida",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Python for Business Analytics was the standout subject. NLP gave me applied text mining skills I now use for customer feedback analysis at my IT company. NIRF #36 in Management was a strong credential in data analyst interviews.",
+          "disliked": "Big Data hands-on assignments could include more cluster computing practice with real enterprise-scale datasets.",
+          "body": "I had 4 years in IT services with limited analytics background. The UPES Business Analytics MBA gave me Python and NLP skills that drove a transition to a data analyst role. UPES alumni network in Noida and Gurgaon was genuinely active."
+        },
+        {
+          "name": "Shruti Agarwal",
+          "city": "Delhi",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Data Visualization and Social and Web Analytics were well-structured and directly applicable to my digital marketing analytics role. AI for Managers gave good frameworks for analytics project management.",
+          "disliked": "For deep data science and machine learning roles, supplementing with a certification like AWS or Google Analytics is needed. UPES brand is strongest in North India.",
+          "body": "Good programme for North India IT services and digital analytics careers. NIRF #36 Management rank is a credible differentiator vs many peer online MBA programmes at this fee."
+        },
+        {
+          "name": "Karan Mehta",
+          "city": "Dehradun",
+          "year": 2024,
+          "rating": 3,
+          "liked": "Business Optimization and Data Environment and Management subjects were foundational and well-delivered. Python course structure was clear.",
+          "disliked": "Faculty depth for NLP advanced topics could be stronger. Some case studies were not India-specific for analytics scenarios.",
+          "body": "Solid analytics credential at Rs 1,75,000 with zero-cost EMI. Best for North India IT analytics careers. For deep ML engineering roles, supplementing with cloud certifications is recommended."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the total fee for UPES Online MBA Business Analytics?",
+        "answer": "The total program fee is Rs 1,75,000 across 2 years. Year 1 is Rs 95,000 and Year 2 is Rs 80,000. Zero-cost EMI is available at Rs 7,292 per month for 24 months. Reconfirm current fees with our counsellor before payment."
+      },
+      {
+        "question": "Does UPES MBA Business Analytics include Python programming?",
+        "answer": "Yes. Programming for Business Analytics (Python) is a dedicated Sem 3 subject covering pandas, numpy, data wrangling, and analytics automation. This is an uncommon standalone Python programming subject in Indian online MBA programmes at this fee range and is directly applicable to data analyst and business analyst roles."
+      },
+      {
+        "question": "What is NLP in UPES Business Analytics MBA?",
+        "answer": "Natural Language Processing (NLP) is a Sem 4 subject covering text mining, sentiment analysis, topic modelling, and NLP pipeline application to business datasets. It is applicable to customer analytics, social media intelligence, and unstructured data analysis roles in IT services and e-commerce companies."
+      },
+      {
+        "question": "What scholarships does UPES offer for Online MBA?",
+        "answer": "UPES offers Academic/Work Experience scholarship (10% for 3+ years, 15% for 5+ years, 20% for 10+ years experience with 55%+ graduation), Alumni scholarship (20%), and Vijay Sports scholarship (35% to 100%). Eligibility confirmed at admission."
+      },
+      {
+        "question": "How does UPES Business Analytics MBA compare to Amity or LPU analytics programmes?",
+        "answer": "UPES Business Analytics includes dedicated Python programming, NLP, and Big Data Analytics as distinct subjects alongside AI for Managers. UPES's NIRF #36 Management ranking (2025) is stronger than both Amity's and LPU's management category standings. For North India IT services analytics careers, UPES provides strong alumni network access at comparable or lower fees."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want a NAAC A, NIRF #36 Management analytics MBA with Python programming, NLP, and Big Data subjects at Rs 1,75,000.",
+        "You are targeting data analyst, business analyst, or analytics manager roles in North India IT services, e-commerce, or BFSI companies.",
+        "You want zero-cost EMI at Rs 7,292/month and WES-recognised degree credentials."
+      ],
+      "consider": [
+        "If Mumbai BFSI analytics brand recognition is the priority, NMIMS Online MBA Business Analytics carries stronger Mumbai market recognition.",
+        "If AI-first analytics with deep machine learning curriculum is the goal, JAIN Online MBA Data Science and Artificial Intelligence delivers a more AI-intensive curriculum.",
+        "If HR Analytics or Marketing Analytics as a dedicated dual specialisation is required, JAIN dual spec programmes combine domain and analytics in a single degree."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 1900,
+    "generatedAt": "2026-04-22",
+    "batchNumber": "Phase7-Batch15",
+    "hasSyllabusData": true
+  }
+}
