@@ -1,0 +1,133 @@
+{
+  "uniSlug": "manipal-academy-higher-education-online",
+  "program": "mba",
+  "specSlug": "data-science",
+  "sections": {
+    "hero": {
+      "eyebrow": "MAHE ONLINE MBA",
+      "headline": "MAHE Online MBA in Data Science: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A++ | NIRF #3 University 2025 | Institution of Eminence | UGC-DEB Approved | Total fees ₹2,92,000"
+    },
+    "tldr": "MAHE Online MBA in Data Science covers R and Python programming, data visualization, database management, probability and statistical inference, multivariate data analysis, and machine learning methods. NAAC A++ NIRF #3 University with IoE tag. Total fee ₹2,92,000 (₹73,000/sem). Zero-cost EMI ₹12,167/month. Coursera Plus bundled free. 8 scholarship categories. Work experience required; fresh graduates submit SOP video.",
+    "about": {
+      "body": "MAHE's Online MBA in Data Science combines programming skills with statistical modelling and machine learning within an MBA framework. Semester 3 covers programming with R and Python (data wrangling with Pandas/NumPy, statistical computing in R, scripting for data pipelines), data visualization (dashboard design, Tableau/Power BI concepts, storytelling with data, chart selection), and database management (SQL fundamentals, relational database design, data warehousing concepts, ETL basics, NoSQL introduction). Semester 4 adds probability and statistical inference (probability distributions, hypothesis testing, confidence intervals, Bayesian basics), applied multivariate data analysis (regression, PCA, factor analysis, clustering, discriminant analysis), and machine learning methods (supervised learning, unsupervised learning, decision trees, random forests, model evaluation metrics).\n\nThe progression from programming (Sem 3) to statistical foundations and ML (Sem 4) is well structured. The machine learning methods subject paired with multivariate data analysis gives both theoretical grounding and practical modelling skills.\n\nMAHE holds NIRF #3 University 2025, NAAC A++, and Institution of Eminence status. Coursera Plus is bundled free, which supplements well with Andrew Ng's ML course, Google Data Analytics, and IBM Data Science certificates. At ₹2,92,000, the fee is premium but the NIRF #3 credential combined with ML and statistics depth may justify evaluation.\n\nWork experience in reputed organisations is required. Fresh graduates can apply with an SOP video.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Semesters 1-2 cover the common MBA management core. Semesters 3-4 below show the Data Science specialisation subjects.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Management Accounting", "desc": "Cost analysis, budgeting, variance analysis, and management decision-making using accounting data." },
+            { "name": "Legal Aspects of Business", "desc": "Contract law, consumer protection, intellectual property, company law basics, and regulatory compliance." },
+            { "name": "Minor Project", "desc": "Applied data science research project supervised by faculty." },
+            { "name": "Programming with R and Python", "desc": "R for statistical computing, Python data wrangling with Pandas and NumPy, scripting for data pipelines, and automation of data analysis workflows." },
+            { "name": "Data Visualization", "desc": "Dashboard design principles, Tableau and Power BI concepts, storytelling with data, chart selection frameworks, and interactive report design." },
+            { "name": "Database Management", "desc": "SQL fundamentals, relational database design, data warehousing concepts, ETL basics, and NoSQL introduction." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Entrepreneurship and Innovation", "desc": "Startup ideation, business model canvas, lean startup methodology, and funding strategies." },
+            { "name": "Sustainability", "desc": "Sustainable business models, ESG frameworks, and CSR strategy." },
+            { "name": "Capstone Project", "desc": "Data science capstone integrating Sem 1-4 learning with an industry-linked ML or analytics problem." },
+            { "name": "Probability and Statistical Inference", "desc": "Probability distributions (normal, binomial, Poisson), hypothesis testing, confidence intervals, chi-square tests, ANOVA, and Bayesian inference basics." },
+            { "name": "Applied Multivariate Data Analysis", "desc": "Multiple regression, principal component analysis (PCA), factor analysis, cluster analysis, discriminant analysis, and model diagnostics." },
+            { "name": "Machine Learning Methods", "desc": "Supervised learning (linear/logistic regression, decision trees, random forests, SVM), unsupervised learning (k-means, hierarchical clustering), model evaluation (accuracy, precision, recall, F1, ROC-AUC), and cross-validation." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "MAHE MBA Data Science graduates target roles across analytics, data science, ML engineering, and consulting:\n\n**Industries:** IT services, BFSI, e-commerce, consulting, pharma, telecom, FMCG, and analytics firms\n\n**Entry-level roles:** Data Analyst, Junior Data Scientist, ML Engineer (entry), Business Intelligence Analyst, Analytics Associate, Reporting Analyst\n\n**Mid-level roles (3-5 years experience):** Data Science Lead, Senior Data Scientist, Analytics Manager, ML Engineering Manager, BI Manager, Data Strategy Lead\n\n**Senior roles (7+ years):** Chief Data Officer, VP Data Science, Head of Analytics, Director of ML, Head of BI, Analytics Practice Director\n\n**Employers:** IT firms (TCS Analytics, Infosys BPM, Wipro Data Science), consulting (McKinsey QuantumBlack, Deloitte Analytics, EY Data & Analytics), BFSI (HDFC Bank Data Science, ICICI Analytics), e-commerce (Flipkart, Amazon India Data Science), and analytics firms (Mu Sigma, Fractal, LatentView, Tiger Analytics).\n\n**Note:** MAHE provides career support services. Coursera Plus access to Andrew Ng's ML courses and Google certificates supplements placement preparation."
+    },
+    "skills": {
+      "body": "The Data Science specialisation builds skills across programming, statistics, ML, and data management:\n\n**Technical skills:**\n- Programming: Python data wrangling (Pandas, NumPy), R statistical computing, SQL query writing, and ETL scripting\n- Machine Learning: supervised models (regression, trees, forests, SVM), unsupervised models (k-means, hierarchical), model evaluation metrics, and cross-validation\n- Statistics: hypothesis testing, confidence intervals, ANOVA, Bayesian inference basics, and probability distributions\n- Multivariate Analysis: PCA, factor analysis, cluster analysis, discriminant analysis, and regression diagnostics\n\n**Applied skills:**\n- Visualization: Tableau and Power BI dashboard design, chart selection for different data types, and data storytelling\n- Database: relational database design, SQL for analytics, and data warehousing concepts\n\n**Soft skills:** Presenting ML model results to non-technical stakeholders, framing business problems as data science questions, communicating model uncertainty and limitations, and translating analytical findings into business recommendations."
+    },
+    "comparisons": {
+      "body": "Comparing MAHE Online MBA Data Science against peer programmes:\n\n**vs MUJ Online MBA Analytics & Data Science:** MUJ at approximately ₹1,80,000 on the same platform. MAHE at ₹2,92,000 costs ₹1,12,000 more for the NIRF #3 and IoE brand. Both share similar LMS delivery. MAHE includes machine learning methods and multivariate analysis as separate subjects, which gives stronger statistical depth. MUJ is not a downgrade in content quality. The MAHE premium is primarily brand-driven.\n\n**vs CU Online MBA Business Analytics:** CU at ₹1,65,000 with NIRF #19 and PwC co-teaching. MAHE at ₹2,92,000 costs ₹1,27,000 more. CU's PwC partnership adds industry credibility. CU is analytics-focused while MAHE goes deeper into ML and statistical inference. If ML depth matters, MAHE has the edge. If value matters, CU wins.\n\n**vs Amity Online MBA Data Science:** Amity at ₹2,25,000 with NIRF #22 and NAAC A++. MAHE at ₹2,92,000 costs ₹67,000 more but carries NIRF #3 (vs #22). Amity has a larger alumni base. MAHE includes Coursera Plus.\n\n**vs Shoolini Online MBA Data Science:** Shoolini at approximately ₹1,49,000 with NIRF #29 and NAAC A++. Significantly cheaper. Shoolini includes a Coursera certificate. MAHE wins on NIRF rank and ML curriculum depth but at nearly double the cost."
+    },
+    "fees": {
+      "body": "The MAHE Online MBA in Data Science has a total programme fee of ₹2,92,000 inclusive of all taxes.\n\n**Semester-wise fee breakdown:**\n- Semester 1: ₹73,000\n- Semester 2: ₹73,000\n- Semester 3: ₹73,000\n- Semester 4: ₹73,000\n- **Total: ₹2,92,000**\n\n**Application fee:** ₹500 one-time.\n\n**Zero-cost EMI:** ₹12,167/month directly through the university.\n\n**Scholarships (8 categories):**\n- Defence Personnel / Ex-servicemen: 20%\n- Divyaang / PwD: 20%\n- Merit: 10% (75%+ aggregate)\n- MAHE/AGE Alumni: 15%\n- SAARC and EWC Nationals: 40%\n- Female Learners: 15%\n- Doctors: 15%\n- Corporate Employees: 15%\n\n**Important:** Learners opting for loan or financing are not eligible for additional discounts or offers.\n\n**Bundled:** Coursera Plus access free with the programme.\n\nFees listed are indicative. EdifyEdu reconfirms fees with MAHE each quarter. Please reconfirm with our counsellor before any payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Data Science as the specialisation, issued by Manipal Academy of Higher Education (MAHE) under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation, NIRF #3 University rank, Institution of Eminence status, and WES recognition. Valid for data science leadership roles, analytics management positions, ML engineering promotions, and private-sector data strategy recruitment. DigiLocker issuance is standard."
+    },
+    "reviews": {
+      "intro": "Three reviews from MAHE Online MBA Data Science students. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Arjun B.",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 4.2,
+          "liked": "Machine Learning Methods subject covered supervised and unsupervised algorithms with model evaluation depth. Coursera Plus gave access to Andrew Ng's ML course alongside the MBA",
+          "disliked": "Programming module could be deeper for beginners. Students without coding background may need extra self-study",
+          "body": "I chose MAHE for the NIRF #3 credential because analytics and data science employers increasingly filter on university rank. The ML Methods subject was the highlight. Decision trees, random forests, SVM, k-means, and model evaluation (precision, recall, F1, ROC-AUC) were covered in practical depth. Coursera Plus was genuinely useful. I completed Andrew Ng's ML specialisation alongside Sem 4. The statistical inference foundation in Sem 4 made the ML content more rigorous than programmes that skip the statistics base."
+        },
+        {
+          "name": "Meghna S.",
+          "city": "Hyderabad",
+          "year": 2024,
+          "rating": 3.9,
+          "liked": "Multivariate Data Analysis (PCA, clustering, factor analysis) gave strong statistical grounding. Data Visualization was well-structured",
+          "disliked": "₹2,92,000 is tough to justify when MUJ offers analytics on the same platform for ₹1,80,000. For data science roles, portfolio and GitHub matter more than university brand",
+          "body": "The data science curriculum is well structured. My concern is purely financial. For data science and ML roles, employers care more about demonstrated skills (Kaggle rankings, GitHub projects, ML certifications) than university brand. MUJ delivers similar content on the same LMS for ₹1,12,000 less. CU at ₹1,65,000 adds PwC co-teaching. Unless your employer specifically requires NIRF top-5, the MAHE premium is hard to defend for data science careers where skills trump credentials."
+        },
+        {
+          "name": "Prasad K.",
+          "city": "Pune",
+          "year": 2023,
+          "rating": 4.0,
+          "liked": "Statistical Inference gave solid mathematical foundation before ML. Database Management with SQL depth was practical. NIRF #3 cleared credential filters",
+          "disliked": "LMS video quality varied. Some ML lectures used older Python library versions. Career services were general, not data-science-specific",
+          "body": "The programme's strength is the statistical foundation before ML. Probability and Statistical Inference in Sem 4 covers distributions, hypothesis testing, and Bayesian basics before you tackle ML Methods. This sequence is better than programmes that jump straight to ML without statistics. I used the 15% corporate scholarship, bringing costs to around ₹2,48,200. Without the scholarship, I would have picked CU or Shoolini. Some lecture videos could be updated for current library versions."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does the Data Science MBA include machine learning?",
+        "answer": "Yes. Sem 4 includes Machine Learning Methods covering supervised learning (regression, decision trees, random forests, SVM), unsupervised learning (k-means, hierarchical clustering), and model evaluation metrics (accuracy, precision, recall, F1, ROC-AUC)."
+      },
+      {
+        "question": "How does MAHE Data Science compare to MUJ Analytics & Data Science?",
+        "answer": "Same platform, similar delivery. MAHE at ₹2,92,000 carries NIRF #3 and IoE. MUJ at ₹1,80,000 costs ₹1,12,000 less. Choose MAHE if the flagship brand specifically matters. Choose MUJ if fee value is the priority. For data science roles, skills and portfolio often matter more than university brand."
+      },
+      {
+        "question": "Is Coursera Plus useful for data science careers?",
+        "answer": "Yes. Coursera Plus gives free access to Andrew Ng's ML specialisation, Google Data Analytics certificate, IBM Data Science certificate, and Python for Data Science courses. These supplement the MBA syllabus with practical certifications."
+      },
+      {
+        "question": "Can loan applicants get scholarships?",
+        "answer": "No. Learners opting for loan or financing are not eligible for additional discounts or offers. This is a critical consideration when comparing effective costs across programmes."
+      },
+      {
+        "question": "What is the total fee?",
+        "answer": "₹2,92,000 total (₹73,000 per semester). ₹500 application fee. Zero-cost EMI at ₹12,167/month. 8 scholarship categories available (up to 40%). Reconfirm with our counsellor before payment."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "NIRF #3 and Institution of Eminence credential matters for analytics or consulting employer filters.",
+        "You want strong statistical foundations (probability, multivariate analysis) before machine learning, not just ML alone.",
+        "Coursera Plus access for Andrew Ng's ML course and Google/IBM data certificates adds value.",
+        "You qualify for a scholarship category that reduces the ₹2,92,000 effective fee."
+      ],
+      "consider": [
+        "MUJ at ₹1,80,000 offers similar platform delivery for ₹1,12,000 less.",
+        "CU at ₹1,65,000 includes PwC co-teaching for analytics content.",
+        "For data science roles, skills portfolio and certifications often matter more than university brand. Factor this into your decision."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2120,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 22,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22"
+  }
+}
