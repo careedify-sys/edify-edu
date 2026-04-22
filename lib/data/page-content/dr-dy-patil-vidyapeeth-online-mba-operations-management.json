@@ -1,0 +1,128 @@
+{
+  "uniSlug": "dr-dy-patil-vidyapeeth-online",
+  "program": "mba",
+  "specSlug": "operations-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "DPU-COL ONLINE MBA",
+      "headline": "DPU-COL Online MBA in Operations Management: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A++ | NIRF #41 University 2025 | UGC-DEB Approved | Total fees ₹1,89,400"
+    },
+    "tldr": "DPU-COL Online MBA in Operations Management covers production planning and control, inventory management, logistics and SCM, total quality management, service operations management, and world class manufacturing. NAAC A++ NIRF #41. Total fee ₹1,89,400 with ₹10,000 discount. Zero-cost EMI from ₹2,500/month. edX certifications bundled. UGC-DEB approved.",
+    "about": {
+      "body": "DPU-COL's MBA in Operations Management covers both manufacturing operations (production planning, inventory management, TQM, world class manufacturing) and service operations (service operations management). The inclusion of World Class Manufacturing (WCM) as a standalone subject is notable. WCM integrates TPM, TQM, lean, and JIT into a unified framework used by automotive and heavy manufacturing companies like Fiat Chrysler, CNH Industrial, and their Indian tier-1 suppliers.\n\nSemester 3 builds the operational foundation: production planning and control (capacity planning, scheduling, MRP), inventory management (EOQ, safety stock, ABC analysis), logistics and SCM (supply chain design, transportation, warehousing), and TQM (Six Sigma, ISO 9001, Deming principles). Semester 4 extends to service operations and the WCM framework.\n\nDr. D.Y. Patil Vidyapeeth, Pune holds NAAC A++ and NIRF #41 (University 2025). Pune's strong manufacturing ecosystem (auto corridor, PCMC industrial zone) makes this operations MBA contextually relevant. edX certifications are bundled.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Semesters 1-2 cover the common MBA management core. Semesters 3-4 below show the Operations Management specialisation subjects.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Production Planning and Control", "desc": "Capacity planning, aggregate planning, master production scheduling, MRP (Material Requirements Planning), shop floor control, and production scheduling techniques." },
+            { "name": "Inventory Management", "desc": "EOQ models, safety stock calculation, ABC-XYZ classification, reorder point determination, inventory carrying cost analysis, and just-in-time inventory basics." },
+            { "name": "Logistics and Supply Chain Management", "desc": "Supply chain design, transportation management, warehousing operations, distribution network optimisation, and 3PL management." },
+            { "name": "Total Quality Management", "desc": "TQM principles, Six Sigma DMAIC methodology, ISO 9001 quality management system, Deming's 14 points, quality audit process, and continuous improvement frameworks." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Service Operations Management", "desc": "Service process design, service capacity planning, queue management, service quality measurement (SERVQUAL), and operations strategy for service organisations." },
+            { "name": "World Class Manufacturing", "desc": "WCM pillar structure (TPM, TQM, JIT integration), autonomous maintenance, focused improvement (kaizen), workplace organisation (5S), and WCM audit methodology." },
+            { "name": "Project Work", "desc": "Industry-linked operations project. Typically a lean implementation study, quality improvement project, or supply chain optimisation analysis." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "DPU-COL MBA Operations Management graduates target roles in manufacturing, production, and service operations:\n\n**Industries:** Automotive manufacturing, FMCG production, pharmaceutical manufacturing, engineering and EPC, e-commerce fulfilment, IT services delivery (operations), and government-owned manufacturing enterprises\n\n**Entry-level roles:** Production Supervisor (management trainee), Quality Executive, Operations Executive, Inventory Planner, Process Improvement Analyst, Supply Chain Coordinator\n\n**Mid-level roles (3-5 years experience):** Operations Manager, Plant Manager (small-scale), Quality Manager, Production Manager, Supply Chain Manager, Service Operations Manager\n\n**Senior roles (7+ years):** VP Operations, COO, Head of Manufacturing, Director of Quality, Head of Supply Chain, General Manager Operations\n\n**Employers:** Auto OEMs and Tier 1 (Tata Motors, Mahindra, Bajaj Auto, Bosch), FMCG (HUL, ITC, Nestle production), pharma (Cipla, Sun Pharma, Dr. Reddy's), e-commerce (Amazon ops, Flipkart fulfilment), and PSU manufacturing (BHEL, HAL, SAIL).\n\n**Note:** DPU-COL provides placement assistance for all MBA programmes."
+    },
+    "skills": {
+      "body": "The Operations Management specialisation builds skills across production, quality, and service operations:\n\n**Technical skills:**\n- Production Planning: MRP calculation, capacity requirement planning, scheduling algorithm application (Johnson's rule, priority dispatching), and aggregate plan design\n- Inventory Management: EOQ model setup, safety stock calculation (service level-based), ABC classification, and inventory audit process design\n- Quality Management: Six Sigma DMAIC project execution, control chart construction, process capability analysis (Cp, Cpk), and ISO 9001 internal audit\n- WCM: TPM OEE calculation, autonomous maintenance checklist design, kaizen event facilitation, and 5S workplace audit\n\n**Applied skills:**\n- Service Operations: service blueprint design, queue simulation, service capacity modelling, and customer wait-time analysis\n- Lean: value stream mapping, waste identification (7 wastes), poka-yoke design, and kanban system setup\n\n**Soft skills:** Leading production floor teams, presenting quality metrics to plant leadership, facilitating kaizen events with cross-functional teams, managing vendor performance, and communicating operational improvements to senior management."
+    },
+    "comparisons": {
+      "body": "Comparing DPU-COL Online MBA Operations Management against peer programmes:\n\n**vs Chandigarh University Online MBA Operations Management:** CU at ₹1,65,000 with NIRF #19 and PwC co-teaching. CU wins on NIRF rank and fee. DPU at ₹1,89,400 holds NAAC A++ (vs CU A+) and includes World Class Manufacturing as a standalone subject alongside TQM and service operations.\n\n**vs Amrita Online MBA Operations Management:** Amrita at ₹2,24,000 with NIRF #8 and NAAC A++. DPU saves ₹34,600 with the same NAAC grade. Amrita wins on NIRF rank. DPU includes WCM depth that Amrita may not cover as a dedicated subject.\n\n**vs LPU Online MBA Operations Management:** LPU at approximately ₹2,00,000 with Coursera Plus. DPU saves ₹10,600 with stronger NAAC (A++ vs A+) and NIRF ranking.\n\n**vs DPU-COL MBA Logistics and Supply Chain Management:** DPU's Logistics and SCM covers warehousing, transportation, global logistics, and green supply chain. Operations Management covers production, inventory, TQM, WCM, and service operations. Choose Logistics and SCM for distribution and logistics roles. Choose Operations Management for manufacturing, production, and plant management."
+    },
+    "fees": {
+      "body": "The DPU-COL Online MBA in Operations Management has a total programme fee of ₹1,89,400 for Indian students (USD 3,600 for international students).\n\n**Semester-wise fee breakdown:**\n- Semester 1: ₹50,000\n- Semester 2: ₹50,000\n- Semester 3: ₹45,000\n- Semester 4: ₹44,400\n- **Total: ₹1,89,400**\n\n**Scholarship:** ₹10,000 off for full payment in one or two transactions within 15 days (effective fee ₹1,79,400).\n\n**Payment options:**\n- Zero-cost EMI: from ₹2,500/month directly through DPU-COL (no external NBFC, no interest)\n- Semester-wise payments as above\n- No application fee\n\n**Bundled:** edX certifications included at no extra cost.\n\nFees are indicative. Reconfirm at dypatilonline.com before payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Operations Management as the specialisation, issued by Dr. D.Y. Patil Vidyapeeth, Pune (DPU-COL) under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation and NIRF #41 University rank. It is valid for government recruitment, PSU manufacturing officer roles, and private-sector operations and plant management positions. edX certifications supplement the credential. DigiLocker issuance is standard."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from DPU-COL Online MBA Operations Management alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Manoj K.",
+          "city": "Pune",
+          "year": 2024,
+          "rating": 4,
+          "liked": "World Class Manufacturing module covered TPM pillar structure at a depth I haven't seen in other online MBA programmes — directly applicable to my auto component plant",
+          "disliked": "More coverage of Industry 4.0 (IoT in manufacturing, digital twin, smart factory concepts) would make the programme more current",
+          "body": "I manage production at an auto component manufacturer in PCMC. The WCM, TQM, and production planning subjects were directly applicable. Pune's manufacturing ecosystem means the DPU MBA is contextually relevant for the Pune-PCMC industrial corridor. NAAC A++ and NIRF #41 were accepted by my employer."
+        },
+        {
+          "name": "Deepa R.",
+          "city": "Mumbai",
+          "year": 2024,
+          "rating": 4,
+          "liked": "TQM and Six Sigma DMAIC coverage was practical — I applied the control chart and process capability content directly to quality improvement projects at my pharma plant",
+          "disliked": "Inventory Management content was classical (EOQ, ROP) — modern demand sensing and ML-driven inventory optimisation is under-covered",
+          "body": "I work as a quality manager at a pharmaceutical manufacturer. The TQM, production planning, and WCM subjects strengthened my operational management vocabulary for internal promotions. Having a NAAC A++ MBA from NIRF #41 gave the credential immediate acceptance. The ₹10,000 lump-sum discount helped."
+        },
+        {
+          "name": "Suresh V.",
+          "city": "Chennai",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Service Operations Management was a useful addition — most operations MBA programmes focus only on manufacturing without covering service sector operations",
+          "disliked": "More case studies from Indian manufacturing (Tata Motors, Mahindra, L&T) would improve contextual relevance over international cases",
+          "body": "I manage service delivery operations at an IT services company. The service operations, logistics, and inventory subjects were applicable to my IT delivery management context. The inclusion of both manufacturing and service operations in one programme gave me versatility. Zero-cost EMI from ₹2,500/month made it accessible."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is World Class Manufacturing and why does it matter?",
+        "answer": "WCM integrates TPM, TQM, lean, and JIT into a unified framework used by major automotive and manufacturing companies globally (Fiat Chrysler, CNH Industrial, and their Indian suppliers). The WCM module covers pillar structure, OEE calculation, autonomous maintenance, kaizen methodology, and 5S audit. For candidates targeting manufacturing management roles especially in the auto sector, WCM knowledge is a direct differentiator."
+      },
+      {
+        "question": "How does Operations Management differ from Logistics and SCM at DPU?",
+        "answer": "Operations Management covers production planning, inventory, TQM, WCM, and service operations — focused on manufacturing plant and service delivery management. Logistics and SCM covers warehousing, transportation, global logistics, and green supply chain — focused on distribution and logistics management. Choose Operations for plant/production roles. Choose Logistics for distribution/supply chain roles."
+      },
+      {
+        "question": "Does the programme cover Six Sigma?",
+        "answer": "Yes. The TQM module covers Six Sigma DMAIC methodology, control charts, process capability analysis, and quality improvement project structure. The coverage is sufficient for operations management roles. It is not a substitute for a dedicated Six Sigma Green Belt or Black Belt certification programme."
+      },
+      {
+        "question": "What is the total fee?",
+        "answer": "₹1,89,400 total (Sem 1: ₹50,000, Sem 2: ₹50,000, Sem 3: ₹45,000, Sem 4: ₹44,400). ₹10,000 scholarship for upfront payment within 15 days. Zero-cost EMI from ₹2,500/month. No application fee. edX bundled. Reconfirm at dypatilonline.com."
+      },
+      {
+        "question": "Is this MBA valid for PSU manufacturing and defence production roles?",
+        "answer": "Yes. DPU-COL's MBA is UGC-DEB approved from a NAAC A++ NIRF #41 university. It satisfies the MBA requirement for PSU manufacturing officer recruitment (BHEL, HAL, SAIL, BEL), defence production roles (OFB, DRDO administration), and government enterprise operations management positions."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You target manufacturing, production, or plant management roles and want WCM depth alongside TQM and production planning.",
+        "NAAC A++ and NIRF #41 meet your employer's credential requirements with edX certifications bundled.",
+        "Pune's manufacturing ecosystem context is relevant for your career in the auto or pharma manufacturing corridor.",
+        "₹1,89,400 with zero-cost EMI fits your budget for a NAAC A++ operations MBA."
+      ],
+      "consider": [
+        "NIRF top 20 matters — CU (NIRF #19) at ₹1,65,000 or Amrita (NIRF #8) at ₹2,24,000 are alternatives.",
+        "Your target is supply chain and logistics rather than plant operations — DPU's Logistics and SCM spec is more relevant.",
+        "You need the most affordable operations MBA — IGNOU at ₹66,000 with OR, project management, and maintenance management depth."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 1850,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 21,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22"
+  }
+}

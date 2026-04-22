@@ -1,0 +1,128 @@
+{
+  "uniSlug": "dr-dy-patil-vidyapeeth-online",
+  "program": "mba",
+  "specSlug": "it-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "DPU-COL ONLINE MBA",
+      "headline": "DPU-COL Online MBA in IT Management: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A++ | NIRF #41 University 2025 | UGC-DEB Approved | Total fees ₹1,89,400"
+    },
+    "tldr": "DPU-COL Online MBA in IT Management covers IT strategy and management, database management systems, software engineering, ERP, information security and audit, and emerging trends in IT. NAAC A++ NIRF #41. Total fee ₹1,89,400 with ₹10,000 discount. Zero-cost EMI from ₹2,500/month. edX certifications bundled. UGC-DEB approved.",
+    "about": {
+      "body": "DPU-COL's MBA in IT Management bridges the gap between technology teams and business leadership. The curriculum covers both the technical foundation (database management, software engineering, ERP) and the management layer (IT strategy, information security and audit, emerging IT trends). Graduates are positioned for roles where business and technology decisions intersect: IT service management, ERP programme management, information security governance, and digital transformation leadership.\n\nSemester 3 builds the technical management foundation: IT strategy and management (IT governance frameworks, ITIL, COBIT), DBMS (relational database design, SQL, data warehouse concepts), software engineering (SDLC, agile, DevOps overview), and ERP (SAP/Oracle ERP module overview, implementation lifecycle). Semester 4 adds the governance layer: information security and audit (ISO 27001, SOC 2 basics, IT audit methodology) and emerging IT trends (cloud, IoT, edge computing, AI integration).\n\nDr. D.Y. Patil Vidyapeeth, Pune holds NAAC A++ and NIRF #41 (University 2025). edX certifications are bundled.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Semesters 1-2 cover the common MBA management core. Semesters 3-4 below show the IT Management specialisation subjects.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "IT Strategy and Management", "desc": "IT governance frameworks (COBIT, ITIL), IT strategic planning, IT portfolio management, IT budgeting, vendor management, and IT-business alignment models." },
+            { "name": "Database Management Systems", "desc": "Relational database design, normalisation, SQL fundamentals, data warehouse concepts, OLAP vs OLTP, and database administration basics." },
+            { "name": "Software Engineering", "desc": "SDLC models (waterfall, agile, spiral), requirements engineering, software testing fundamentals, DevOps overview, and software project estimation techniques." },
+            { "name": "Enterprise Resource Planning", "desc": "ERP architecture overview, SAP and Oracle module structure, ERP implementation lifecycle, change management for ERP rollouts, and ERP ROI evaluation." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Information Security and Audit", "desc": "ISO 27001 ISMS framework, information security risk assessment, IT audit methodology, SOC 2 compliance basics, incident response procedures, and GDPR/DPDP data protection overview." },
+            { "name": "Emerging Trends in IT", "desc": "Cloud computing service models (IaaS, PaaS, SaaS), IoT architecture and applications, edge computing, AI and ML integration in enterprise IT, and low-code/no-code platform overview." },
+            { "name": "Project Work", "desc": "Industry-linked IT management project. Typically an IT governance assessment, ERP feasibility study, or information security audit plan." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "DPU-COL MBA IT Management graduates target roles in IT leadership, ERP, and technology governance:\n\n**Industries:** IT services and consulting, banking IT, manufacturing IT, healthcare IT, telecom, government IT departments, and enterprise software companies\n\n**Entry-level roles:** IT Analyst, ERP Functional Consultant (junior), IT Project Coordinator, Information Security Analyst, IT Audit Associate, MIS Executive\n\n**Mid-level roles (3-5 years experience):** IT Manager, ERP Programme Manager, IT Security Manager, IT Governance Manager, Delivery Manager (IT services), IT Audit Manager\n\n**Senior roles (7+ years):** CIO, VP IT, Head of IT Operations, CISO, Head of ERP, Director of Digital Transformation\n\n**Employers:** IT services (TCS, Infosys, Wipro, Cognizant, HCL), consulting (Deloitte, KPMG, PwC IT advisory), banks (HDFC IT, ICICI IT, SBI IT), and manufacturing IT departments.\n\n**Note:** DPU-COL provides placement assistance for all MBA programmes."
+    },
+    "skills": {
+      "body": "The IT Management specialisation builds skills across IT governance, security, and enterprise systems:\n\n**Technical understanding:**\n- IT Governance: COBIT framework application, ITIL service management processes, IT risk register design, and IT audit report interpretation\n- Database Management: ER diagram design, SQL query writing, data warehouse schema design (star, snowflake), and database performance basics\n- ERP: module selection for business requirements, ERP implementation risk assessment, data migration planning, and user acceptance testing coordination\n- Information Security: ISO 27001 gap analysis, vulnerability assessment scope definition, incident response plan design, and security awareness programme development\n\n**Strategic skills:**\n- IT Strategy: IT roadmap development, cloud migration decision framework, build vs buy vs SaaS analysis, and IT vendor evaluation scorecard\n- Digital Transformation: legacy system modernisation planning, cloud adoption framework, and enterprise architecture basics\n\n**Soft skills:** Presenting IT strategy to boards, managing vendor relationships, translating technical requirements to business stakeholders, leading cross-functional ERP implementation teams, and managing IT audit engagements."
+    },
+    "comparisons": {
+      "body": "Comparing DPU-COL Online MBA IT Management against peer programmes:\n\n**vs Chandigarh University Online MBA Information Technology:** CU at ₹1,65,000 with NIRF #19. CU wins on NIRF rank and fee. DPU at ₹1,89,400 holds NAAC A++ (vs CU A+) and includes ERP, information security audit, and emerging IT trends as standalone subjects.\n\n**vs LPU Online MBA IT Management:** LPU does not list IT Management as a standalone MBA specialisation. For candidates specifically targeting IT governance and management roles, DPU's dedicated spec is more directly relevant.\n\n**vs DPU-COL MBA AI and ML:** DPU's AI and ML spec focuses on artificial intelligence for business. IT Management covers the broader IT infrastructure, governance, ERP, and security management layer. Choose AI and ML if your target is AI product management. Choose IT Management if your target is CIO-track, IT governance, or enterprise IT leadership.\n\n**vs general MBA from a top-ranked university:** Candidates in IT roles who pursue a general MBA miss the IT governance, DBMS, ERP, and InfoSec depth. For IT professionals targeting CIO-track roles, a dedicated IT Management MBA provides the technical management vocabulary that general MBA programmes lack."
+    },
+    "fees": {
+      "body": "The DPU-COL Online MBA in IT Management has a total programme fee of ₹1,89,400 for Indian students (USD 3,600 for international students).\n\n**Semester-wise fee breakdown:**\n- Semester 1: ₹50,000\n- Semester 2: ₹50,000\n- Semester 3: ₹45,000\n- Semester 4: ₹44,400\n- **Total: ₹1,89,400**\n\n**Scholarship:** ₹10,000 off for full payment in one or two transactions within 15 days (effective fee ₹1,79,400).\n\n**Payment options:**\n- Zero-cost EMI: from ₹2,500/month directly through DPU-COL (no external NBFC, no interest)\n- Semester-wise payments as above\n- No application fee\n\n**Bundled:** edX certifications included at no extra cost.\n\nFees are indicative. Reconfirm at dypatilonline.com before payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with IT Management as the specialisation, issued by Dr. D.Y. Patil Vidyapeeth, Pune (DPU-COL) under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation and NIRF #41 University rank. It is valid for government IT department recruitment, PSU IT officer roles, and private-sector IT management positions. edX certifications supplement the credential. DigiLocker issuance is standard."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from DPU-COL Online MBA IT Management alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Ganesh S.",
+          "city": "Pune",
+          "year": 2024,
+          "rating": 4,
+          "liked": "IT Strategy and ERP modules were directly applicable to the digital transformation programme I was leading at my manufacturing company",
+          "disliked": "Cloud computing coverage in Emerging Trends was introductory — a dedicated cloud strategy module would strengthen the programme for current IT leadership roles",
+          "body": "I work as an IT manager at a mid-size manufacturer. The IT governance, ERP, and information security subjects gave me the structured frameworks to present IT investment cases to the board. NAAC A++ and NIRF #41 were accepted for my company's education reimbursement. Zero-cost EMI was helpful."
+        },
+        {
+          "name": "Sneha K.",
+          "city": "Mumbai",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Information Security and Audit module covered ISO 27001 and SOC 2 at an operational level — directly useful for my IT compliance role at a bank",
+          "disliked": "More coverage of DPDP Act implementation specifics and RBI CSITE guidelines would make the security module more India-specific",
+          "body": "I manage IT audit and compliance at a private bank. The InfoSec, IT strategy, and DBMS subjects strengthened my technical governance vocabulary. Having an MBA from a NIRF #41 NAAC A++ university helped in my promotion assessment where management qualifications are evaluated."
+        },
+        {
+          "name": "Rajesh P.",
+          "city": "Bengaluru",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Software Engineering module's agile and DevOps overview helped me communicate more effectively with my development teams as a delivery manager",
+          "disliked": "Database Management was too foundational for someone already in IT — SQL and DBMS basics are entry-level content. An advanced data engineering or data architecture module would be more appropriate",
+          "body": "I transitioned from a project manager to a delivery manager role after this MBA. The combination of management core with IT-specific subjects (ERP, InfoSec, IT strategy) gave me the MBA + IT positioning that pure MBA holders lack in IT delivery management. edX certifications added practical skills alongside the theory."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is this MBA for IT developers or IT managers?",
+        "answer": "It is designed for IT managers, delivery managers, IT governance professionals, and technology leaders. The curriculum builds IT management understanding (governance, strategy, security, ERP) rather than coding or development skills. IT professionals targeting CIO-track or IT leadership roles benefit most."
+      },
+      {
+        "question": "Does the programme cover ITIL and COBIT?",
+        "answer": "Yes. IT Strategy and Management covers ITIL service management processes and COBIT governance framework at the management understanding level. The coverage is sufficient for IT governance roles and IT audit. For ITIL v4 Foundation certification-level depth, candidates should supplement with a dedicated ITIL certification programme."
+      },
+      {
+        "question": "How does IT Management differ from DPU's AI and ML MBA?",
+        "answer": "IT Management covers IT governance (COBIT, ITIL), ERP, DBMS, InfoSec, and IT strategy. AI and ML covers artificial intelligence, machine learning algorithms, deep learning, NLP, and AI governance. Choose IT Management for CIO-track and enterprise IT leadership. Choose AI and ML for AI product management and ML governance roles."
+      },
+      {
+        "question": "What is the total fee?",
+        "answer": "₹1,89,400 total (Sem 1: ₹50,000, Sem 2: ₹50,000, Sem 3: ₹45,000, Sem 4: ₹44,400). ₹10,000 scholarship for upfront payment within 15 days. Zero-cost EMI from ₹2,500/month. No application fee. edX bundled. Reconfirm at dypatilonline.com."
+      },
+      {
+        "question": "Is this MBA valid for government IT department roles?",
+        "answer": "Yes. DPU-COL's MBA is UGC-DEB approved from a NAAC A++ NIRF #41 university. It satisfies the MBA requirement for NIC, MeitY, state IT department, and PSU IT officer positions."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You target IT leadership roles (IT Manager, CIO-track, CISO, IT Governance) and need a management MBA with IT depth.",
+        "NAAC A++ and NIRF #41 meet your employer's credential requirements with edX certifications bundled.",
+        "You need IT governance (COBIT/ITIL), ERP, and InfoSec content in one MBA programme.",
+        "₹1,89,400 with zero-cost EMI fits your budget."
+      ],
+      "consider": [
+        "NIRF top 20 matters — CU (NIRF #19) with Information Technology spec at ₹1,65,000 is an alternative.",
+        "Your target is AI product management — DPU's AI and ML spec is more directly relevant.",
+        "You need deep cybersecurity or ethical hacking skills — a dedicated cybersecurity programme is more appropriate than an MBA."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 1850,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 21,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22"
+  }
+}

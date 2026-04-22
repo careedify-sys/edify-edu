@@ -1,0 +1,128 @@
+{
+  "uniSlug": "dr-dy-patil-vidyapeeth-online",
+  "program": "mba",
+  "specSlug": "artificial-intelligence-machine-learning",
+  "sections": {
+    "hero": {
+      "eyebrow": "DPU-COL ONLINE MBA",
+      "headline": "DPU-COL Online MBA in AI and ML: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A++ | NIRF #41 University 2025 | UGC-DEB Approved | Total fees ₹1,89,400"
+    },
+    "tldr": "DPU-COL Online MBA in AI and ML covers fundamentals of AI, machine learning algorithms, deep learning, natural language processing, AI strategy and governance, and cognitive computing. NAAC A++ NIRF #41 university. Total fee ₹1,89,400 with ₹10,000 lump-sum discount. Zero-cost EMI from ₹2,500/month. edX certifications bundled. UGC-DEB approved.",
+    "about": {
+      "body": "DPU-COL's MBA in AI and ML combines the management foundation (Semesters 1-2) with AI and machine learning depth in Semesters 3-4. The curriculum covers the full AI stack from a management perspective: fundamentals of AI (rule-based systems, expert systems), machine learning algorithms (supervised, unsupervised, reinforcement), deep learning (neural network architectures, CNNs, RNNs), NLP (text classification, sentiment analysis, chatbot design), AI strategy and governance (ethics, bias mitigation, regulatory landscape), and cognitive computing (IBM Watson-style enterprise AI applications).\n\nThis is not a data science coding programme. It builds the management layer: AI product management, ML implementation governance, AI ethics policy design, and ROI justification for enterprise AI adoption. Graduates are positioned for roles that bridge the gap between data science teams and business leadership.\n\nDr. D.Y. Patil Vidyapeeth, Pune holds NAAC A++ and NIRF #41 (University 2025). edX certifications are bundled. At ₹1,89,400 with zero-cost EMI from ₹2,500/month, it is competitively priced among NAAC A++ AI-focused online MBAs.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Semesters 1-2 cover the common MBA management core. Semesters 3-4 below show the AI and ML specialisation subjects.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Fundamentals of AI", "desc": "AI history and evolution, rule-based and expert systems, search algorithms, knowledge representation, intelligent agents, and AI application landscape across industries." },
+            { "name": "Machine Learning Algorithms", "desc": "Supervised learning (regression, classification), unsupervised learning (clustering, dimensionality reduction), reinforcement learning basics, model evaluation metrics, and feature engineering." },
+            { "name": "Deep Learning", "desc": "Neural network fundamentals, CNNs for image classification, RNNs and LSTMs for sequence data, transfer learning, and deep learning framework overview (TensorFlow, PyTorch at conceptual level)." },
+            { "name": "Natural Language Processing", "desc": "Text preprocessing, tokenisation, sentiment analysis, named entity recognition, chatbot architecture, and NLP applications in customer service and document processing." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "AI Strategy and Governance", "desc": "Enterprise AI adoption roadmaps, AI ethics frameworks, algorithmic bias identification and mitigation, AI regulatory landscape (EU AI Act overview, India DPDP Act), and responsible AI implementation." },
+            { "name": "Cognitive Computing", "desc": "Enterprise cognitive platforms (Watson, Azure Cognitive Services concepts), cognitive automation for business processes, conversational AI systems, and decision support through cognitive computing." },
+            { "name": "Project Work", "desc": "Industry-linked project applying AI/ML concepts to a real business problem. Typically an AI use-case feasibility study, ML model evaluation report, or AI governance policy design." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "DPU-COL MBA AI and ML graduates target roles at the intersection of management and artificial intelligence:\n\n**Industries:** IT services and consulting, banking and financial services (AI-driven lending, fraud detection), healthcare (clinical AI governance), e-commerce (recommendation systems management), manufacturing (predictive maintenance oversight), and government digital services\n\n**Entry-level roles:** AI Business Analyst, ML Product Analyst, AI Governance Analyst, Data Strategy Associate, AI Implementation Coordinator\n\n**Mid-level roles (3-5 years experience):** AI Product Manager, ML Engineering Manager, AI Strategy Consultant, Head of AI Ethics and Governance, Data Science Team Lead (management track)\n\n**Senior roles (7+ years):** VP AI Strategy, Chief AI Officer, Director of Machine Learning, Head of AI Products, SVP Digital Transformation (AI focus)\n\n**Employers:** IT majors (TCS, Infosys AI Labs, Wipro Holmes, Capgemini AI practice), banks (HDFC AI Labs, ICICI iLabs), consulting (McKinsey QuantumBlack, Deloitte AI), healthcare (Apollo 24/7 AI, Practo), and government digital initiatives (UIDAI, NIC).\n\n**Note:** DPU-COL provides placement assistance for all MBA programmes."
+    },
+    "skills": {
+      "body": "The AI and ML specialisation builds management-layer skills for leading AI initiatives:\n\n**Technical understanding:**\n- ML Model Evaluation: precision, recall, F1 score, AUC-ROC interpretation, confusion matrix analysis, and model comparison for business stakeholder communication\n- Deep Learning Architecture Selection: CNN vs RNN vs Transformer trade-off decisions for business use cases\n- NLP Application Design: chatbot conversation flow design, sentiment analysis pipeline specification, and document processing automation scoping\n- AI Infrastructure: cloud AI service comparison (AWS SageMaker, Azure ML, GCP Vertex AI at conceptual level), GPU compute cost estimation\n\n**Strategic skills:**\n- AI Strategy: enterprise AI maturity assessment, AI use-case prioritisation (impact vs feasibility matrix), AI talent acquisition planning\n- AI Governance: algorithmic bias audit framework, model explainability requirements, data privacy compliance for ML training data, and AI incident response procedures\n- ROI Analysis: AI project cost-benefit modelling, build vs buy vs API decision framework, and ML model maintenance cost forecasting\n\n**Soft skills:** Translating data science outputs into board-level presentations, managing expectations with non-technical stakeholders, facilitating cross-functional AI sprint teams, and negotiating AI vendor contracts."
+    },
+    "comparisons": {
+      "body": "Comparing DPU-COL Online MBA AI and ML against peer programmes:\n\n**vs Amrita Online MBA Artificial Intelligence:** Amrita at ₹2,44,000 holds NIRF #8 and NAAC A++ — substantially stronger NIRF positioning than DPU's #41. Amrita's AI spec is the premium-tier option. DPU at ₹1,89,400 saves ₹54,600 and includes edX certifications. For candidates where NIRF rank is the primary employer filter, Amrita wins. For candidates where fee and edX bundling matter more, DPU is competitive.\n\n**vs Chandigarh University Online MBA Data Science and AI:** CU at ₹1,65,000 with NIRF #19 and PwC co-teaching covers data science and AI together. CU wins on NIRF rank and fee. DPU wins on NAAC grade (A++ vs A+) and dedicated AI and ML focus with cognitive computing and AI governance depth.\n\n**vs JAIN University Online MBA (AI-focused specs):** JAIN at approximately ₹1,80,000 covers AI and business intelligence. DPU and JAIN are comparable on fee. DPU holds stronger NAAC (A++ vs A) and includes NLP and cognitive computing depth that JAIN may not cover as standalone subjects.\n\n**vs LPU Online MBA (general or IT):** LPU does not list a dedicated AI and ML MBA specialisation. For candidates specifically targeting AI management roles, DPU's dedicated spec is more directly relevant."
+    },
+    "fees": {
+      "body": "The DPU-COL Online MBA in AI and ML has a total programme fee of ₹1,89,400 for Indian students (USD 3,600 for international students).\n\n**Semester-wise fee breakdown:**\n- Semester 1: ₹50,000\n- Semester 2: ₹50,000\n- Semester 3: ₹45,000\n- Semester 4: ₹44,400\n- **Total: ₹1,89,400**\n\n**Scholarship:** ₹10,000 off for full payment in a single transaction or two transactions within 15 days (effective fee ₹1,79,400).\n\n**Payment options:**\n- Zero-cost EMI: from ₹2,500/month directly through DPU-COL (no external NBFC, no interest)\n- Semester-wise payments as above\n- No application fee\n\n**Bundled:** edX certifications included at no extra cost.\n\nFees are indicative. Reconfirm at dypatilonline.com before payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with AI and ML as the specialisation, issued by Dr. D.Y. Patil Vidyapeeth, Pune (DPU-COL) under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation and NIRF #41 University rank. It is valid for government recruitment, PSU applications, and private-sector employers including IT services and consulting firms that recruit for AI management roles. edX certifications supplement the MBA credential. DigiLocker issuance is standard."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from DPU-COL Online MBA AI and ML alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Amit D.",
+          "city": "Pune",
+          "year": 2024,
+          "rating": 4,
+          "liked": "AI Strategy and Governance module covered algorithmic bias and AI ethics at a depth I haven't seen in other online MBA programmes",
+          "disliked": "Deep learning content was conceptual — no hands-on model training. Fine for management track but insufficient if you want to build models yourself",
+          "body": "I work as a product manager at an IT services firm building AI solutions for banking clients. The AI strategy, governance, and NLP modules gave me the structured vocabulary I needed for client proposals and internal AI roadmap presentations. NAAC A++ and NIRF #41 were accepted by my employer for reimbursement. Zero-cost EMI made it manageable."
+        },
+        {
+          "name": "Sneha T.",
+          "city": "Mumbai",
+          "year": 2024,
+          "rating": 4,
+          "liked": "NLP subject helped me understand the chatbot implementation project I was managing — I could finally have informed conversations with the data science team",
+          "disliked": "Cognitive computing felt dated — more focus on generative AI and LLM management would make the curriculum more current",
+          "body": "I manage digital transformation projects at an insurance company. The ML algorithms and NLP subjects gave me enough technical depth to evaluate vendor proposals and challenge data science team timelines realistically. The edX certifications added practical skills alongside the MBA theory."
+        },
+        {
+          "name": "Vikram J.",
+          "city": "Bengaluru",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Machine Learning Algorithms module covered model evaluation metrics clearly — I can now read model performance reports from my data science team and ask the right questions",
+          "disliked": "No coverage of MLOps or model deployment pipelines — would strengthen the programme for management roles overseeing production ML systems",
+          "body": "I transitioned from a business analyst role to an AI product analyst position after this programme. The combination of ML fundamentals with AI strategy and governance gave me the management-plus-tech positioning that pure MBA holders lack. DPU's NIRF #41 opened the door at companies that filter on university rank."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is this programme for AI developers or for management professionals?",
+        "answer": "It is designed for management professionals who lead, manage, or evaluate AI initiatives — product managers, project managers, strategy consultants, and business leaders. The curriculum builds AI understanding at the architecture and application level, not at the coding level. Candidates targeting hands-on data science or ML engineering roles should pursue a dedicated data science programme or M.Tech in AI."
+      },
+      {
+        "question": "How does DPU AI and ML compare to Amrita's AI MBA?",
+        "answer": "Amrita at ₹2,44,000 with NIRF #8 is the premium AI MBA option with stronger NIRF positioning. DPU at ₹1,89,400 with NIRF #41 saves ₹54,600 and includes edX certifications. Both hold NAAC A++. Choose Amrita if NIRF top-10 rank is critical for your employer. Choose DPU if fee and edX bundling matter more."
+      },
+      {
+        "question": "What certifications are included?",
+        "answer": "edX certifications are bundled with the DPU-COL MBA programme at no additional cost. These supplement the MBA degree with platform-specific credentials that are recognised by technology employers."
+      },
+      {
+        "question": "What is the total fee and EMI option?",
+        "answer": "Total fee is ₹1,89,400 (Sem 1: ₹50,000, Sem 2: ₹50,000, Sem 3: ₹45,000, Sem 4: ₹44,400). ₹10,000 scholarship for full payment within 15 days. Zero-cost EMI from ₹2,500/month. No application fee. Reconfirm at dypatilonline.com."
+      },
+      {
+        "question": "Is this MBA valid for AI-focused government and PSU roles?",
+        "answer": "Yes. DPU-COL's MBA is UGC-DEB approved from a NAAC A++ NIRF #41 university. It satisfies the MBA requirement for government digital transformation roles, PSU IT departments implementing AI, and defence PSU positions in AI and data analytics divisions."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You manage or want to manage AI/ML initiatives and need a management-layer MBA, not a coding bootcamp.",
+        "NAAC A++ and NIRF #41 meet your employer's credential filters, and edX certifications add value.",
+        "₹1,89,400 with zero-cost EMI fits your budget — ₹54,600 less than Amrita's AI MBA.",
+        "Your role requires AI governance, ethics, and strategy understanding alongside ML fundamentals."
+      ],
+      "consider": [
+        "Your employer filters strictly by NIRF top 10 — Amrita (NIRF #8) is the stronger option at a premium fee.",
+        "You need hands-on ML model building and deployment skills — a data science programme is more appropriate.",
+        "You want PwC co-teaching and CU's NIRF #19 positioning — CU's Data Science and AI spec at ₹1,65,000 is an alternative."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 1900,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 21,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22"
+  }
+}

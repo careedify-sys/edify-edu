@@ -4288,7 +4288,7 @@ export const UNIVERSITIES: University[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    highlight: 'NIRF #47 · NAAC A++',
+    highlight: 'NIRF #41 · NAAC A++',
     tagline: 'PMI/PMBOK-aligned curriculum + PwC Data module from NAAC A++ university; growing demand for certified project managers i',
     description: 'UGC DEB approved online programs from Dr. D.Y. Patil Vidyapeeth, Pune – Centre for. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals targeting project management roles', 'engineers wanting PMP-aligned MBA', 'IT professionals managing projects'],
@@ -4297,7 +4297,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       
       'MBA': {
-        specs: ['Project Management', 'Blockchain', 'AI & ML', 'Agri Business', 'Marketing Management', 'Human Resource Management', 'Finance', 'IT Management', 'Operations Management', 'FinTech Management', 'Hospital Administration & Healthcare Management', 'International Business Management', 'Logistics & Supply Chain Management', 'Business Analytics'],
+        specs: ['Project Management', 'Blockchain', 'AI & ML', 'Agri Business', 'Marketing Management', 'Human Resource Management', 'Finance', 'IT Management', 'Operations Management', 'FinTech Management', 'Hospital Administration & Healthcare Management', 'International Business Management', 'Logistics & Supply Chain Management', 'Business Analytics', 'Digital Marketing Management'],
         fees: '₹1.89L',
         duration: '2 Years (4 Semesters)',
         roles: ['Project Coordinator', 'Project Manager', 'Scrum Master', 'PMO Analyst'],

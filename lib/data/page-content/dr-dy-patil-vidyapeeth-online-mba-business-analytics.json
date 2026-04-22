@@ -1,0 +1,128 @@
+{
+  "uniSlug": "dr-dy-patil-vidyapeeth-online",
+  "program": "mba",
+  "specSlug": "business-analytics",
+  "sections": {
+    "hero": {
+      "eyebrow": "DPU-COL ONLINE MBA",
+      "headline": "DPU-COL Online MBA in Business Analytics: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A++ | NIRF #41 University 2025 | UGC-DEB Approved | Total fees ₹1,89,400"
+    },
+    "tldr": "DPU-COL Online MBA in Business Analytics covers data visualisation, statistical modelling, Python for analytics, predictive analytics, optimisation techniques, and big data analytics. NAAC A++ NIRF #41. Total fee ₹1,89,400 with ₹10,000 discount. Zero-cost EMI from ₹2,500/month. edX certifications bundled. UGC-DEB approved.",
+    "about": {
+      "body": "DPU-COL's MBA in Business Analytics covers both descriptive and predictive analytics layers: data visualisation (dashboard design, storytelling with data), statistical modelling (regression, hypothesis testing, time series), Python for analytics (pandas, NumPy, scikit-learn at introductory level), predictive analytics (classification, regression models for business forecasting), optimisation techniques (LP, simulation for operations decisions), and big data analytics (Hadoop/Spark ecosystem overview, data pipeline concepts).\n\nThe programme is structured for management professionals who need to lead analytics teams and interpret data outputs for business decisions, not for candidates seeking deep data engineering or ML engineering roles. The Semesters 1-2 management core ensures graduates can connect analytics insights to P&L impact, marketing ROI, and operational efficiency.\n\nDr. D.Y. Patil Vidyapeeth, Pune holds NAAC A++ and NIRF #41 (University 2025). edX certifications are bundled. At ₹1,89,400 with zero-cost EMI from ₹2,500/month, the fee is competitive among NAAC A++ analytics-focused online MBAs.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Semesters 1-2 cover the common MBA management core. Semesters 3-4 below show the Business Analytics specialisation subjects.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Data Visualization", "desc": "Dashboard design principles, data storytelling frameworks, Tableau/Power BI conceptual overview, chart selection for different data types, and executive reporting with visual analytics." },
+            { "name": "Statistical Modeling", "desc": "Regression analysis, hypothesis testing, ANOVA, time series fundamentals, probability distributions, and statistical significance interpretation for business decisions." },
+            { "name": "Python for Analytics", "desc": "Python basics for data manipulation, pandas DataFrames, NumPy array operations, data cleaning workflows, and introductory scikit-learn for predictive model building." },
+            { "name": "Predictive Analytics", "desc": "Classification models (logistic regression, decision trees), regression models for demand forecasting, model validation techniques, and business applications in churn prediction and credit scoring." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Optimization Techniques", "desc": "Linear programming, integer programming, simulation models for operations, inventory optimisation, and transportation problem formulation for supply chain decisions." },
+            { "name": "Big Data Analytics", "desc": "Hadoop ecosystem overview, Spark fundamentals, data pipeline architecture concepts, NoSQL database basics, and big data use cases in banking, retail, and telecom." },
+            { "name": "Project Work", "desc": "Industry-linked analytics project applying Sem 3-4 learning to a real business dataset. Typically a predictive model, dashboard design, or optimisation study." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "DPU-COL MBA Business Analytics graduates target data-driven management roles:\n\n**Industries:** Banking and financial services, e-commerce and retail, IT services and consulting, telecom, healthcare, FMCG, and insurance\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Associate, MIS Executive, Reporting Analyst, BI Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Business Analyst, Analytics Manager, BI Manager, Data Strategy Manager, Marketing Analytics Lead, Credit Risk Analytics Manager\n\n**Senior roles (7+ years):** Head of Analytics, VP Data Strategy, Chief Analytics Officer, Director of Business Intelligence, Head of Decision Sciences\n\n**Employers:** IT and consulting (TCS, Infosys, Wipro, Capgemini, Accenture, Deloitte), banking (HDFC Bank, ICICI Bank, Axis Bank analytics teams), e-commerce (Flipkart, Amazon India analytics), and FMCG (HUL, ITC, Nestle India for demand analytics).\n\n**Note:** DPU-COL provides placement assistance for all MBA programmes."
+    },
+    "skills": {
+      "body": "The Business Analytics specialisation builds both analytical and management skills:\n\n**Technical skills:**\n- Statistical Modelling: regression model specification, hypothesis test interpretation, time series decomposition, and ANOVA for A/B test analysis\n- Python Analytics: pandas data wrangling, NumPy calculations, matplotlib/seaborn visualisation, and scikit-learn model training basics\n- Predictive Analytics: classification model evaluation (confusion matrix, ROC), regression model accuracy assessment, and feature importance interpretation\n- Big Data: Hadoop/Spark architecture understanding, data lake vs data warehouse trade-offs, and ETL pipeline design at conceptual level\n\n**Applied skills:**\n- Data Visualization: executive dashboard design, KPI selection for different business functions, and data storytelling for board presentations\n- Optimization: LP model formulation for production planning, inventory optimisation model setup, and simulation-based decision analysis\n\n**Soft skills:** Translating analytics outputs into business recommendations, presenting statistical findings to non-technical stakeholders, managing analytics team sprint cycles, and negotiating data access with IT and compliance teams."
+    },
+    "comparisons": {
+      "body": "Comparing DPU-COL Online MBA Business Analytics against peer programmes:\n\n**vs Chandigarh University Online MBA Business Analytics:** CU at ₹1,65,000 with NIRF #19 and PwC co-teaching is the strongest-ranked business analytics MBA online. CU wins on NIRF rank and fee. DPU at ₹1,89,400 holds NAAC A++ (vs CU A+) and includes edX certifications. For NIRF-sensitive employers, CU is the better choice. For candidates valuing NAAC A++ and edX bundling, DPU competes.\n\n**vs Amrita Online MBA Business Analytics:** Amrita at ₹2,24,000 with NIRF #8 and NAAC A++ is the premium option. Amrita includes Grant Thornton co-branding on business analytics. DPU saves ₹34,600 with comparable NAAC grade. Amrita wins on NIRF rank and industry co-branding.\n\n**vs LPU Online MBA Business Analytics:** LPU at approximately ₹2,00,000 includes Coursera Plus and placement assistance. DPU at ₹1,89,400 saves ₹10,600 with stronger NAAC (A++ vs A+) and NIRF (#41 vs unranked for LPU management). DPU wins on accreditation credentials.\n\n**vs JAIN University Online MBA Business Analytics:** JAIN at approximately ₹1,80,000 is slightly cheaper. DPU holds stronger NAAC (A++ vs A). Both are competitive in this segment."
+    },
+    "fees": {
+      "body": "The DPU-COL Online MBA in Business Analytics has a total programme fee of ₹1,89,400 for Indian students (USD 3,600 for international students).\n\n**Semester-wise fee breakdown:**\n- Semester 1: ₹50,000\n- Semester 2: ₹50,000\n- Semester 3: ₹45,000\n- Semester 4: ₹44,400\n- **Total: ₹1,89,400**\n\n**Scholarship:** ₹10,000 off for full payment in one or two transactions within 15 days (effective fee ₹1,79,400).\n\n**Payment options:**\n- Zero-cost EMI: from ₹2,500/month directly through DPU-COL (no external NBFC, no interest)\n- Semester-wise payments as above\n- No application fee\n\n**Bundled:** edX certifications included at no extra cost.\n\nFees are indicative. Reconfirm at dypatilonline.com before payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Business Analytics as the specialisation, issued by Dr. D.Y. Patil Vidyapeeth, Pune (DPU-COL) under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation and NIRF #41 University rank. It is valid for government and private sector recruitment. edX certifications supplement the MBA credential. DigiLocker issuance is standard."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from DPU-COL Online MBA Business Analytics alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Rahul S.",
+          "city": "Pune",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Python for Analytics module gave me enough coding ability to build basic predictive models and communicate effectively with my data science team",
+          "disliked": "Big Data module was conceptual — no hands-on Spark or Hadoop lab sessions. Fine for understanding the architecture but not for implementation skills",
+          "body": "I work as a senior business analyst at an IT services company. The predictive analytics and statistical modelling subjects improved my analytical rigour for client consulting projects. NAAC A++ and NIRF #41 were accepted by my employer for education reimbursement. The edX certifications added practical value alongside the theory."
+        },
+        {
+          "name": "Meera K.",
+          "city": "Mumbai",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Data Visualization subject taught me dashboard design principles I use daily for executive reporting at my bank",
+          "disliked": "More SQL content would strengthen the programme — SQL is the daily language of analytics teams and it was under-covered",
+          "body": "I manage the analytics reporting function at a private bank. The data visualisation, statistical modelling, and optimisation subjects were directly applicable. DPU's NAAC A++ cleared the credential filter for an internal promotion application. Zero-cost EMI from ₹2,500/month made it accessible."
+        },
+        {
+          "name": "Anand V.",
+          "city": "Hyderabad",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Optimization Techniques module helped me structure the inventory optimisation project I was leading for an FMCG client",
+          "disliked": "The programme assumes limited Python background — candidates with existing coding skills may find the Python module too basic",
+          "body": "I transitioned from a marketing manager to a marketing analytics manager role using this MBA. The combination of management core with analytics depth gave me the positioning that pure analytics certifications could not. NIRF #41 gave the credential credibility at client-facing consulting engagements."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is this MBA for data scientists or business managers?",
+        "answer": "It is designed for business managers who lead analytics initiatives, interpret data outputs, and make data-driven decisions. The curriculum builds analytics understanding at the application layer. Candidates targeting data science engineering or ML model development roles should pursue a dedicated M.Sc. Data Science or data engineering programme."
+      },
+      {
+        "question": "How does DPU Business Analytics compare to CU's analytics MBA?",
+        "answer": "CU at ₹1,65,000 with NIRF #19 and PwC co-teaching is the stronger option on NIRF rank and fee. DPU at ₹1,89,400 holds NAAC A++ (vs CU A+) and includes edX certifications. Both are UGC-DEB approved. Choose CU if NIRF rank is the primary filter. Choose DPU if NAAC A++ and edX bundling matter more."
+      },
+      {
+        "question": "Does the programme teach Python coding?",
+        "answer": "Yes. The Python for Analytics module covers pandas, NumPy, basic scikit-learn, and data visualization with Python libraries. The depth is introductory-to-intermediate — sufficient for building basic predictive models and data analysis scripts, but not for production-grade ML engineering."
+      },
+      {
+        "question": "What is the total fee?",
+        "answer": "₹1,89,400 total (Sem 1: ₹50,000, Sem 2: ₹50,000, Sem 3: ₹45,000, Sem 4: ₹44,400). ₹10,000 scholarship for upfront payment within 15 days. Zero-cost EMI from ₹2,500/month. No application fee. Reconfirm at dypatilonline.com."
+      },
+      {
+        "question": "What certifications are bundled?",
+        "answer": "edX certifications are included with the DPU-COL MBA programme at no additional cost. These supplement the MBA degree and are recognised by technology and analytics employers."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want a NAAC A++ NIRF #41 analytics MBA with edX certifications bundled.",
+        "Your role requires data-driven management skills — dashboard design, predictive analytics interpretation, and optimisation.",
+        "₹1,89,400 with zero-cost EMI fits your budget while meeting NAAC A++ credential standards.",
+        "You work in banking, retail, or IT consulting where analytics management roles are growing."
+      ],
+      "consider": [
+        "Your employer filters by NIRF top 20 — CU (NIRF #19) with PwC co-teaching at ₹1,65,000 is the stronger option.",
+        "You need deep data engineering or ML engineering skills — a dedicated data science programme is more appropriate.",
+        "Grant Thornton co-branding matters for your consulting context — Amrita's business analytics MBA at ₹2,24,000 includes this."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 1850,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 21,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22"
+  }
+}

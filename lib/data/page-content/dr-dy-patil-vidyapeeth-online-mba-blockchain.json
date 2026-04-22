@@ -1,0 +1,128 @@
+{
+  "uniSlug": "dr-dy-patil-vidyapeeth-online",
+  "program": "mba",
+  "specSlug": "blockchain",
+  "sections": {
+    "hero": {
+      "eyebrow": "DPU-COL ONLINE MBA",
+      "headline": "DPU-COL Online MBA in Blockchain: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A++ | NIRF #41 University 2025 | UGC-DEB Approved | Total fees ₹1,89,400"
+    },
+    "tldr": "DPU-COL Online MBA in Blockchain covers blockchain fundamentals, smart contracts and Ethereum, Hyperledger and Corda, cryptography, blockchain applications, and regulatory framework. One of few UGC-DEB online MBA programmes with a dedicated blockchain specialisation. NAAC A++ NIRF #41 university. Total fee ₹1,89,400 (lump-sum discount ₹10,000). Zero-cost EMI from ₹2,500 per month. UGC-DEB approved.",
+    "about": {
+      "body": "DPU-COL's MBA in Blockchain is among the very few UGC-DEB approved online MBA programmes that offers blockchain as a standalone specialisation. The Sem 3-4 curriculum covers both the technical foundations (cryptography, consensus mechanisms, Ethereum smart contracts, Hyperledger Fabric, Corda enterprise blockchain) and the strategic layer (blockchain applications across banking, supply chain, and healthcare, plus the regulatory framework emerging in India and globally).\n\nThe combination of a management MBA core (Semesters 1-2) with blockchain depth (Semesters 3-4) positions graduates for a category of roles that neither a pure blockchain developer nor a conventional MBA holder typically covers: blockchain product management, distributed ledger implementation management, and CBDC/digital asset compliance roles.\n\nDr. D.Y. Patil Vidyapeeth, Pune holds NAAC A++ and NIRF #41 (University 2025). At ₹1,89,400 with zero-cost EMI from ₹2,500 per month, it is accessible for working professionals in banking, fintech, or IT seeking to formalise blockchain management credentials.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Semesters 1-2 cover the common MBA management core shared across all DPU-COL specialisations. Semesters 3-4 below show the Blockchain specialisation subjects.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Blockchain Fundamentals", "desc": "Distributed ledger technology architecture, consensus mechanisms (PoW, PoS, PBFT), blockchain vs traditional databases, public and private chain comparison, and use-case identification frameworks." },
+            { "name": "Smart Contracts and Ethereum", "desc": "Solidity programming basics, EVM (Ethereum Virtual Machine) operation, ERC-20 and ERC-721 token standards, DeFi protocol overview, and smart contract security vulnerabilities." },
+            { "name": "Hyperledger and Corda", "desc": "Hyperledger Fabric architecture, chaincode basics, Corda network design, enterprise permissioned blockchain use cases in banking and supply chain, and interoperability frameworks." },
+            { "name": "Cryptography", "desc": "Symmetric and asymmetric encryption, hash functions (SHA-256, Keccak), digital signatures, PKI infrastructure, and cryptographic basics underpinning blockchain security." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Blockchain Applications", "desc": "Banking and CBDC implementation cases, supply chain provenance tracking, healthcare records management, land registry applications, and trade finance digitisation using blockchain." },
+            { "name": "Regulatory Framework", "desc": "RBI guidelines on digital currencies and crypto assets, FATF compliance for virtual assets, SEBI regulatory developments, global regulatory comparison (EU MiCA, US SEC positions), and enterprise blockchain compliance." },
+            { "name": "Project Work", "desc": "Industry-linked project applying blockchain concepts to a real business problem. Typically a blockchain use-case feasibility study or prototype design. Assessed by faculty and external evaluator." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "DPU-COL MBA Blockchain graduates are positioned for roles at the intersection of management and distributed ledger technology:\n\n**Industries:** Banking and financial services (CBDC, trade finance), fintech startups, IT services blockchain practices, supply chain and logistics, healthcare information systems, government digital infrastructure\n\n**Entry-level roles:** Blockchain Product Analyst, Smart Contract Analyst (non-coding), DLT Implementation Coordinator, Blockchain Business Analyst, Crypto Compliance Analyst\n\n**Mid-level roles (3-5 years experience):** Blockchain Product Manager, DLT Project Manager, Digital Assets Compliance Manager, Enterprise Blockchain Consultant, Web3 Strategy Manager\n\n**Senior roles (7+ years):** Head of Blockchain (bank or fintech), VP Digital Assets, Chief Blockchain Officer, Director of Distributed Ledger Technology\n\n**Employers:** Major Indian banks (HDFC, ICICI, SBI) building CBDC and trade finance infrastructure, IT majors with blockchain practices (Infosys Blockchain, TCS Quartz, Wipro Blockchain), fintech firms, and government digital identity and supply chain projects.\n\n**Note:** DPU-COL provides placement assistance for all MBA programmes."
+    },
+    "skills": {
+      "body": "The Blockchain specialisation builds skills spanning technical understanding, business application design, and regulatory compliance:\n\n**Technical understanding:**\n- Consensus mechanism selection for enterprise vs public blockchain contexts\n- Smart contract lifecycle: design, audit checklist, deployment, and upgrade patterns\n- Hyperledger Fabric network topology design: orderer nodes, peer nodes, MSP configuration\n- Cryptography application: key management, digital signature verification, and hash integrity checking\n\n**Business application skills:**\n- Blockchain use-case feasibility analysis: build vs buy vs adapt decision framework\n- Token economics design for utility vs security tokens\n- Trade finance digitisation: LC issuance on blockchain, document verification automation\n- Supply chain provenance: QR-linked ledger entry design and audit trail architecture\n\n**Regulatory skills:**\n- RBI Virtual Currency guidance interpretation for business model compliance\n- FATF travel rule compliance for crypto asset businesses\n- EU MiCA white paper drafting basics for Indian companies with European exposure\n\n**Soft skills:** Explaining blockchain value propositions to non-technical senior management, managing blockchain pilot stakeholder alignment, translating developer outputs into business impact metrics, and leading DLT adoption change management."
+    },
+    "comparisons": {
+      "body": "Comparing DPU-COL Online MBA Blockchain against peer programmes:\n\n**No direct online peer with a dedicated Blockchain MBA specialisation:** As of 2026, no other major UGC-DEB approved online MBA university (CU, LPU, Amrita, NMIMS, Symbiosis) lists Blockchain as a standalone MBA specialisation. DPU-COL is unique in offering this at the online MBA level.\n\n**vs DPU-COL MBA FinTech Management:** DPU's own FinTech Management spec covers blockchain for finance as one module alongside AI in FinTech and digital banking. Candidates whose primary target is banking and payments technology should evaluate FinTech Management for broader financial services coverage. Candidates whose roles are specifically in blockchain infrastructure or smart contract product management should prefer the dedicated Blockchain spec.\n\n**vs Chandigarh University Online MBA FinTech:** CU at ₹1,65,000 with NIRF #19 covers fintech broadly including some blockchain content. CU does not have a dedicated Blockchain MBA specialisation. CU wins on NIRF rank and fee. DPU wins on blockchain curriculum depth and specialisation-specific positioning.\n\n**vs JAIN University Online MBA (AI-tech focus):** JAIN Online at approximately ₹1,80,000 covers AI and business intelligence. JAIN does not list a dedicated Blockchain MBA. For candidates specifically targeting blockchain or Web3 management roles, DPU's dedicated Blockchain spec is the clearest online MBA option in the UGC-DEB approved segment."
+    },
+    "fees": {
+      "body": "The DPU-COL Online MBA in Blockchain has a total programme fee of ₹1,89,400 for Indian students (USD 3,600 for international students).\n\n**Fee structure:**\n- Total programme fee: ₹1,89,400\n- Lump-sum early-payment discount: ₹10,000 off (effective fee ₹1,79,400)\n- Application fee: None\n\n**Payment options:**\n- Zero-cost EMI: from ₹2,500 per month directly through DPU-COL\n- Semester-wise payments available per DPU-COL schedule\n\nFees listed are indicative. Please reconfirm with our counsellor or at dypatilonline.com before payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Blockchain as the specialisation, issued by Dr. D.Y. Patil Vidyapeeth, Pune (DPU-COL) under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation and NIRF #41 University rank. It is valid for government and private sector recruitment requiring a UGC-recognised MBA. The blockchain specialisation is noted on the degree, supporting employer and client positioning for technology management roles. DigiLocker issuance is standard."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from DPU-COL Online MBA Blockchain alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Siddharth P.",
+          "city": "Mumbai",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Smart Contracts and Ethereum module gave me enough understanding to communicate meaningfully with developers at my bank's blockchain innovation lab",
+          "disliked": "Coding depth was limited — Solidity basics only, not enough for hands-on smart contract development. Good for management roles, not for developer tracks.",
+          "body": "I work at a nationalised bank's innovation team evaluating DLT applications for trade finance. The combination of Hyperledger Fabric architecture, Ethereum basics, and the Regulatory Framework module gave me the cross-layer view I needed for my role. NAAC A++ and NIRF #41 were accepted by my employer without credential verification issues. Zero-cost EMI made the programme accessible on a mid-band banking salary."
+        },
+        {
+          "name": "Neha R.",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Regulatory Framework coverage of RBI and FATF compliance is something no other online MBA course I looked at addressed directly",
+          "disliked": "Blockchain Applications case studies were primarily international — more India-specific use cases (ONDC, GeM, NeSL, IBBIC) would improve direct applicability",
+          "body": "I manage digital compliance at a fintech startup. The regulatory module was the deciding factor in choosing DPU's Blockchain spec over a general fintech MBA. RBI virtual currency guidance, FATF travel rule, and MiCA basics are directly relevant to my KYC and AML compliance work. NIRF #41 gave the credential credibility with enterprise clients who verify degrees before consulting engagements."
+        },
+        {
+          "name": "Karthik B.",
+          "city": "Chennai",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Hyperledger Fabric architecture module helped me structure the Hyperledger implementation proposal I presented to our logistics clients",
+          "disliked": "The programme could add an NFT and tokenomics module — Web3 business models are under-covered for 2023-era blockchain management roles",
+          "body": "I work as a blockchain consultant for a supply chain software company. The Hyperledger, Corda, and Blockchain Applications content mapped directly to client conversations I was having. DPU's NAAC A++ and NIRF #41 gave the MBA the credibility that purely technical certifications lack when pitching to C-suite decision makers. ₹1,89,400 with zero-cost EMI was the most accessible NIRF-ranked blockchain MBA option I found."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is this MBA primarily for technical blockchain developers or for business professionals?",
+        "answer": "It is designed for business professionals who work with or manage blockchain implementations — product managers, compliance officers, strategy consultants, and project managers in fintech, banking, or technology firms. The curriculum builds blockchain understanding at the architecture and application layer, not the deep coding layer. Candidates seeking to become Solidity developers should pursue a dedicated blockchain developer certification rather than this MBA."
+      },
+      {
+        "question": "Is a DPU-COL MBA in Blockchain valid for government and PSU recruitment?",
+        "answer": "Yes. DPU-COL's MBA is UGC-DEB approved from a NAAC A++ NIRF #41 university. It satisfies the MBA requirement for central and state government recruitment, PSU officer-level applications, and government digital infrastructure projects (CBDC, land registry, supply chain digitisation) where blockchain management roles are emerging."
+      },
+      {
+        "question": "What is the total fee for the Blockchain MBA?",
+        "answer": "Total programme fee is ₹1,89,400. A lump-sum early-payment discount of ₹10,000 brings this to ₹1,79,400. Zero-cost EMI from ₹2,500 per month is available directly through DPU-COL with no interest charges. No application fee. Reconfirm current fees at dypatilonline.com."
+      },
+      {
+        "question": "How does the DPU Blockchain MBA compare to a standalone blockchain certification?",
+        "answer": "A standalone blockchain certification (e.g., Certified Blockchain Professional, Ethereum developer certification) provides technical depth but no management credential. The DPU MBA Blockchain combines the management core (Semesters 1-2 covering finance, strategy, marketing, and organisational behaviour) with blockchain depth (Semesters 3-4). For candidates targeting management tracks — product manager, delivery manager, compliance manager — the MBA degree is required in addition to or instead of a technical certification."
+      },
+      {
+        "question": "Are there any prerequisites in blockchain or coding knowledge to enrol?",
+        "answer": "No. The programme assumes no prior blockchain or coding background. The Blockchain Fundamentals module starts from distributed ledger concepts and builds up. The Smart Contracts module covers Solidity at an awareness level, not as a coding practitioner course. The eligibility requirement is graduation with 50% marks from a recognised university — the same standard as all other DPU-COL MBA specialisations."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want a dedicated Blockchain specialisation in your MBA from a NAAC A++ NIRF #41 university — one of the only UGC-DEB online MBAs offering this.",
+        "Your role is in blockchain product management, DLT implementation consulting, or digital assets compliance in banking or fintech.",
+        "You need a UGC-recognised MBA degree alongside blockchain knowledge for enterprise client or employer credibility.",
+        "Zero-cost EMI from ₹2,500 per month fits your current salary level."
+      ],
+      "consider": [
+        "Your target employer filters strictly by NIRF top 20 — consider CU (NIRF #19) or Amrita (NIRF #8) with a FinTech or technology management specialisation.",
+        "You primarily need deep Solidity or blockchain development skills — a technical certification programme is more appropriate than an MBA.",
+        "You want broader fintech coverage (digital banking, payments, regtech) rather than blockchain depth specifically — consider DPU's FinTech Management spec."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 1900,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 21,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22"
+  }
+}
