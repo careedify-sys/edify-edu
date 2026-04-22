@@ -2123,30 +2123,39 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'is-manipal-university-jaipur-fake-or-legit-2026',
-    title: 'Is Manipal University Jaipur Fake? Honest Review 2026',
-    metaDescription: 'Is Manipal University Jaipur (MUJ) fake or legit in 2026? Check UGC recognition, NAAC grade, NIRF rank, and real student reviews. Complete honest answer.',
+    title: 'Is Manipal University Jaipur Fake or Legit? (2026 Proof)',
+    metaDescription: 'Manipal University Jaipur is NOT fake. UGC approved, NAAC A+, NIRF ranked. Verify MUJ legitimacy in 5 minutes with official sources. 2026 update.',
     category: 'University Reviews',
-    tags: ['Manipal University Jaipur', 'MUJ review', 'is Manipal fake', 'Manipal University Jaipur'],
+    tags: ['Manipal University Jaipur', 'MUJ review', 'is Manipal fake', 'Manipal University Jaipur', 'MUJ fake or legit', 'manipal jaipur legit'],
     publishedAt: '2026-04-04',
-    readTime: 5,
-    targetKeyword: 'manipal university jaipur online review',
+    readTime: 12,
+    targetKeyword: 'is manipal university jaipur fake or legit',
     relatedUniversities: ['manipal-university-jaipur-online'],
     status: 'published' as const,
     faqs: [
-      { q: 'Is Manipal University Jaipur fake?', a: 'No — Manipal University Jaipur (MUJ) is 100% legitimate. It is UGC-DEB approved, NAAC A+ accredited, NIRF ranked #47 overall, and operates under the Manipal Education group established in 1953.' },
-      { q: 'Is Manipal University Jaipur UGC approved?', a: 'Yes. MUJ is UGC-DEB approved for online degrees. The online MBA and other programs are listed on the UGC entitled list at ugc.ac.in. You can verify this directly on the UGC website.' },
-      { q: 'What is Manipal University Jaipur NIRF rank?', a: 'MUJ is ranked #47 overall in NIRF 2024, making it one of the top 50 universities in India. It is also ranked in the NIRF management category.' },
-      { q: 'Is Manipal University Jaipur online degree valid for government jobs?', a: 'Yes — UGC-DEB approved online degrees are legally equivalent to campus degrees under the UGC 2020 notification. MUJ online MBA is valid for PSU, UPSC, and other government recruitment.' },
-      { q: 'What is the difference between Manipal Jaipur and MAHE?', a: 'These are two separate universities. MAHE (Manipal Academy of Higher Education) is in Manipal, Karnataka — NAAC A++ and older. MUJ is in Jaipur, Rajasthan — NAAC A+ and NIRF #47. Both belong to the Manipal Education group but are independently accredited.' },
+      { q: 'Is Manipal University Jaipur fake?', a: 'No. MUJ is a legitimate deemed university, UGC-DEB approved, NAAC A+ accredited, and NIRF ranked. It is part of the Manipal Education group established in 1953. You can verify its recognition on ugc.gov.in.' },
+      { q: 'Is Manipal University Jaipur UGC approved?', a: 'Yes. MUJ is UGC recognised as a deemed university and UGC-DEB approved for online degrees. Verify at ugc.gov.in (recognised universities list) and deb.ugc.ac.in (entitled institutions list).' },
+      { q: 'What is Manipal University Jaipur NIRF rank?', a: 'MUJ is ranked in the NIRF 2025 University category. It is also ranked in the Management category. Check the exact rank at nirfindia.org for the latest year.' },
+      { q: 'Is Manipal University Jaipur online degree valid for government jobs?', a: 'Yes. UGC-DEB approved online degrees are legally equivalent to campus degrees under UGC notification dated 4 September 2020 (D.O. No. F.1-1/2020). Valid for UPSC, IBPS, SBI PO, and PSU recruitment.' },
+      { q: 'What is the difference between Manipal Jaipur and MAHE?', a: 'Separate universities. MAHE is in Manipal, Karnataka (NAAC A++, NIRF #3 University 2025). MUJ is in Jaipur, Rajasthan (NAAC A+). Both belong to the Manipal group but are independently accredited and governed.' },
+      { q: 'Is Manipal University Jaipur on the UGC fake universities list?', a: 'No. MUJ does not appear on the UGC fake universities list (ugc.gov.in/page/Fake-Universities.aspx). It appears on the UGC recognised universities list, confirming legitimacy.' },
+      { q: 'Is MUJ degree valid in foreign countries?', a: 'MUJ degrees are WES recognised (World Education Services), which is accepted for credential evaluation in the USA, Canada, and other countries. Verify WES eligibility at wes.org.' },
+      { q: 'Can I verify my Manipal Jaipur degree online?', a: 'Yes. MUJ issues degrees through DigiLocker. You can also verify recognition on ugc.gov.in (recognised universities), deb.ugc.ac.in (online mode approval), and naac.gov.in (accreditation status).' },
+      { q: 'Is Manipal University Jaipur approved by AICTE?', a: 'MUJ is a deemed university and its MBA programme is AICTE approved. AICTE approval is required for technical and management programmes. Verify at aicte-india.org.' },
+      { q: 'What is the difference between Manipal Jaipur and Sikkim Manipal?', a: 'Separate institutions. MUJ is in Jaipur, Rajasthan (NAAC A+, deemed university). SMU is in Gangtok, Sikkim (NAAC A+, state private university). Both are in the Manipal group but independently governed.' },
+      { q: 'Is Manipal Jaipur online MBA valid in India?', a: 'Yes. MUJ online MBA is UGC-DEB approved, making it legally equivalent to a campus MBA. Valid for corporate hiring, government recruitment, PSU applications, and higher education in India.' },
+      { q: 'How can I check if any university is fake?', a: 'Check three official sources: ugc.gov.in/recognized_University.aspx (recognised list), ugc.gov.in/page/Fake-Universities.aspx (fake list), and deb.ugc.ac.in (online mode entitled list). If a university appears on the recognised list and not on the fake list, it is legitimate.' },
     ],
     content: `
-<h2>Is Manipal University Jaipur Fake? No — Here's the Proof</h2>
+<p><em>Last updated: April 2026 | Based on EdifyEdu's database of 125+ UGC-DEB approved universities</em></p>
 
-<p>This question shows up surprisingly often in searches, and it's understandable why. There are multiple universities with "Manipal" in their name, aggressive online advertising, and plenty of fake universities operating in India that make people suspicious of anyone they haven't heard of before.</p>
+<h2>Is Manipal University Jaipur Fake? No, and Here Is the Proof</h2>
 
-<p>So let's settle this clearly: <strong>Manipal University Jaipur (MUJ) is a real, accredited, government-recognised university.</strong> Here's the evidence.</p>
+<p>This question appears in searches more often than you would expect. There are multiple universities with "Manipal" in their name, heavy advertising budgets, and a general distrust of online degrees in India. All of this creates confusion.</p>
 
-<h2>MUJ's Official Credentials</h2>
+<p>The short answer: <strong>Manipal University Jaipur (MUJ) is a real, accredited, government-recognised deemed university.</strong> It is not on any fake list. It holds UGC recognition, UGC-DEB approval for online programmes, NAAC A+ accreditation, and NIRF ranking. Below is the evidence, with links so you can verify each claim yourself.</p>
+
+<h2>MUJ's Official Credentials at a Glance</h2>
 
 <table style="width:100%;border-collapse:collapse;font-size:0.9em">
 <thead><tr style="background:#1A2F4E;color:#fff">
@@ -2155,27 +2164,78 @@ export const BLOG_POSTS: BlogPost[] = [
 <th style="padding:10px">Verify At</th>
 </tr></thead>
 <tbody>
-<tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>NAAC Grade</strong></td><td style="padding:10px;color:#15803d;font-weight:700">A+ ✓</td><td style="padding:10px">naac.gov.in</td></tr>
-<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px"><strong>NIRF Overall Rank</strong></td><td style="padding:10px;color:#15803d;font-weight:700">#47 ✓</td><td style="padding:10px">nirfindia.org</td></tr>
-<tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>UGC-DEB Approved</strong></td><td style="padding:10px;color:#15803d;font-weight:700">Approved ✓</td><td style="padding:10px">ugc.ac.in</td></tr>
-<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px"><strong>Established</strong></td><td style="padding:10px">1999</td><td style="padding:10px">—</td></tr>
-<tr><td style="padding:10px"><strong>University Type</strong></td><td style="padding:10px">Deemed University</td><td style="padding:10px">UGC list</td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>UGC Recognised</strong></td><td style="padding:10px;color:#15803d;font-weight:700">Yes ✓</td><td style="padding:10px"><a href="https://www.ugc.gov.in/recognized_University.aspx" target="_blank" rel="noopener">ugc.gov.in</a></td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px"><strong>UGC-DEB Online Approved</strong></td><td style="padding:10px;color:#15803d;font-weight:700">Approved ✓</td><td style="padding:10px"><a href="https://deb.ugc.ac.in/" target="_blank" rel="noopener">deb.ugc.ac.in</a></td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>NAAC Grade</strong></td><td style="padding:10px;color:#15803d;font-weight:700">A+ ✓</td><td style="padding:10px"><a href="https://naac.gov.in/" target="_blank" rel="noopener">naac.gov.in</a></td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px"><strong>NIRF Ranked</strong></td><td style="padding:10px;color:#15803d;font-weight:700">Yes ✓</td><td style="padding:10px"><a href="https://www.nirfindia.org/" target="_blank" rel="noopener">nirfindia.org</a></td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>On UGC Fake List?</strong></td><td style="padding:10px;color:#15803d;font-weight:700">NOT on fake list ✓</td><td style="padding:10px"><a href="https://www.ugc.gov.in/page/Fake-Universities.aspx" target="_blank" rel="noopener">ugc.gov.in/Fake-Universities</a></td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px"><strong>University Type</strong></td><td style="padding:10px">Deemed University</td><td style="padding:10px">UGC list</td></tr>
+<tr><td style="padding:10px"><strong>Established</strong></td><td style="padding:10px">2011 (Manipal group since 1953)</td><td style="padding:10px">-</td></tr>
 </tbody>
 </table>
 
-<p>NIRF #47 overall puts MUJ in the top 50 universities in India out of 1,000+ institutions. You don't get that ranking by being fake.</p>
+<h2>How to Verify MUJ's Legitimacy Yourself in 5 Minutes</h2>
 
-<h2>Why Do People Think MUJ Might Be Fake?</h2>
+<p>You do not need to take our word for it. Here are five checks you can run right now using official government websites:</p>
 
-<p>There are three sources of confusion, none of which reflect actual problems with MUJ:</p>
+<p><strong>Step 1: UGC Recognised Universities List.</strong> Go to <a href="https://www.ugc.gov.in/recognized_University.aspx" target="_blank" rel="noopener">ugc.gov.in/recognized_University.aspx</a>. Filter by state (Rajasthan). You will find "Manipal University, Jaipur" listed as a deemed university. This confirms UGC recognition.</p>
 
-<p><strong>1. Multiple Manipal universities exist.</strong> MAHE (Manipal Academy of Higher Education) is in Manipal, Karnataka — older, NAAC A++, NIRF #6. MUJ is in Jaipur, Rajasthan — newer, NAAC A+, NIRF #47. Sikkim Manipal University (SMU) is a third separate institution. All belong to the Manipal Education group but are independently accredited and separately governed.</p>
+<p><strong>Step 2: UGC-DEB Entitled Institutions.</strong> Go to <a href="https://deb.ugc.ac.in/" target="_blank" rel="noopener">deb.ugc.ac.in</a>. Search for Manipal University Jaipur. It appears on the entitled list for online and distance programmes. This means UGC has approved MUJ to offer online degrees.</p>
 
-<p><strong>2. Heavy advertising.</strong> MUJ advertises its online programs aggressively. Some students associate heavy advertising with lower-quality institutions. That's not a valid correlation — NAAC and NIRF rankings are independent of marketing spend.</p>
+<p><strong>Step 3: NAAC Accreditation Status.</strong> Go to <a href="https://naac.gov.in/" target="_blank" rel="noopener">naac.gov.in</a>. Navigate to Accredited Institutions, filter by Rajasthan. MUJ shows up with NAAC A+ grade. NAAC accreditation is a quality marker that fake universities cannot obtain.</p>
 
-<p><strong>3. "Deemed university" suspicion.</strong> Some students distrust "deemed universities" without understanding what the term means. Deemed university status is granted by the UGC based on academic performance — it's a recognition of quality, not a lesser category. Many of India's best institutions are deemed universities.</p>
+<p><strong>Step 4: NIRF Ranking.</strong> Go to <a href="https://www.nirfindia.org/" target="_blank" rel="noopener">nirfindia.org</a>. Check the current year rankings under the University category. MUJ is ranked. Fake universities are not eligible for NIRF participation.</p>
 
-<h2>MUJ vs MAHE — The Key Differences</h2>
+<p><strong>Step 5: UGC Fake Universities List.</strong> Go to <a href="https://www.ugc.gov.in/page/Fake-Universities.aspx" target="_blank" rel="noopener">ugc.gov.in/page/Fake-Universities.aspx</a>. As of April 2026, UGC lists 21 fake universities in India. MUJ does not appear on this list. If a university is on the recognised list AND absent from the fake list, it is legitimate.</p>
+
+<h2>The 21 Fake Universities UGC Has Actually Blacklisted</h2>
+
+<p>UGC maintains an official list of fake universities. As of the latest update, 21 institutions are on the list. Examples include Maithili University (Bihar), Raja Arabic University (Nagpur), Indian Institute of Science and Engineering (Tamil Nadu), and Badaganvi Sarkar World Open University (Karnataka).</p>
+
+<p>Every institution on this list either: never obtained UGC recognition, had recognition revoked, or operated without any government sanction. MUJ is not on this list. It is on the recognised list. These are opposite categories.</p>
+
+<p>You can download the full fake universities list at <a href="https://www.ugc.gov.in/page/Fake-Universities.aspx" target="_blank" rel="noopener">ugc.gov.in/page/Fake-Universities.aspx</a> and confirm for yourself.</p>
+
+<h2>Why MUJ Appears in "Fake or Legit" Searches</h2>
+
+<p>There are six reasons people search for "is MUJ fake" even though it is legitimate:</p>
+
+<p><strong>1. Multiple Manipal entities exist.</strong> MAHE (Manipal Academy of Higher Education) is in Manipal, Karnataka, NAAC A++, NIRF #3 University 2025. MUJ is in Jaipur, Rajasthan, NAAC A+. Sikkim Manipal University (SMU) is a third institution. MIT Manipal is a constituent college of MAHE. When people hear "Manipal" and then find different institutions with different ranks and locations, confusion follows.</p>
+
+<p><strong>2. Heavy Google Ads spend triggers skepticism.</strong> MUJ and its online platform invest heavily in Google Ads. Some students associate aggressive advertising with lower-quality institutions. This is not a valid correlation. NAAC and NIRF rankings are awarded by government bodies that do not consider marketing budgets.</p>
+
+<p><strong>3. "Deemed university" is misunderstood.</strong> Some students assume "deemed university" means "not a real university." The opposite is true. Deemed university status is granted by UGC under Section 3 of the UGC Act based on academic performance. IISc Bangalore, BITS Pilani, and Manipal Academy of Higher Education are all deemed universities.</p>
+
+<p><strong>4. Regional unfamiliarity.</strong> Students in South India or Maharashtra who are familiar with the Manipal campus in Karnataka may not recognise MUJ Jaipur. Similarly, North Indian students who know MUJ may be unfamiliar with MAHE. Geographic distance creates information gaps.</p>
+
+<p><strong>5. Generic "online degree = fake" bias.</strong> A significant number of Indian students and parents believe all online degrees are inferior or fake. This was partially true before 2020 when many distance programmes operated without proper UGC-DEB approval. The UGC 2020 notification (D.O. No. F.1-1/2020) standardised and legitimised online degree programmes from approved institutions.</p>
+
+<p><strong>6. Third-party agents misrepresenting MUJ.</strong> Some education counselling agents use MUJ's name without authorisation, make false promises about guaranteed admissions or placements, and charge hidden fees. This is not MUJ's doing, but it damages trust. Always apply through the official portal or a verified EdifyEdu counsellor.</p>
+
+<h2>Red Flags That Would Signal a Fake University (MUJ Passes All)</h2>
+
+<p>Here is a checklist used by UGC and education experts to identify fake institutions. MUJ clears every check:</p>
+
+<table style="width:100%;border-collapse:collapse;font-size:0.9em">
+<thead><tr style="background:#1A2F4E;color:#fff">
+<th style="padding:10px;text-align:left">Red Flag Check</th>
+<th style="padding:10px">MUJ Status</th>
+</tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px">Listed on UGC recognised universities list</td><td style="padding:10px;color:#15803d;font-weight:700">✓ Yes</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">UGC-DEB approved for online programmes</td><td style="padding:10px;color:#15803d;font-weight:700">✓ Yes</td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px">Valid NAAC accreditation</td><td style="padding:10px;color:#15803d;font-weight:700">✓ A+</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">Appears in NIRF rankings</td><td style="padding:10px;color:#15803d;font-weight:700">✓ Ranked</td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px">Physical campus verifiable on Google Maps</td><td style="padding:10px;color:#15803d;font-weight:700">✓ Jaipur campus</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">Alumni on LinkedIn with verified degrees</td><td style="padding:10px;color:#15803d;font-weight:700">✓ Thousands</td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px">Transparent fee structure on official portal</td><td style="padding:10px;color:#15803d;font-weight:700">✓ Published</td></tr>
+<tr><td style="padding:10px">No "guaranteed degree in 6 months" claims</td><td style="padding:10px;color:#15803d;font-weight:700">✓ Standard 2-year MBA</td></tr>
+</tbody>
+</table>
+
+<p>If a university fails even one of these checks, investigate further. MUJ passes all eight.</p>
+
+<h2>MUJ vs MAHE: The Key Differences</h2>
 
 <table style="width:100%;border-collapse:collapse;font-size:0.9em">
 <thead><tr style="background:#1A2F4E;color:#fff">
@@ -2185,25 +2245,73 @@ export const BLOG_POSTS: BlogPost[] = [
 </tr></thead>
 <tbody>
 <tr style="border-bottom:1px solid #eee"><td style="padding:10px">NAAC Grade</td><td style="padding:10px;text-align:center">A+</td><td style="padding:10px;text-align:center">A++</td></tr>
-<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">NIRF Overall</td><td style="padding:10px;text-align:center">#47</td><td style="padding:10px;text-align:center">#6</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">NIRF University 2025</td><td style="padding:10px;text-align:center">Ranked</td><td style="padding:10px;text-align:center">#3</td></tr>
 <tr style="border-bottom:1px solid #eee"><td style="padding:10px">Location</td><td style="padding:10px;text-align:center">Jaipur, Rajasthan</td><td style="padding:10px;text-align:center">Manipal, Karnataka</td></tr>
-<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">UGC-DEB Online</td><td style="padding:10px;text-align:center">Yes ✓</td><td style="padding:10px;text-align:center">Yes ✓</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">Online MBA Fee</td><td style="padding:10px;text-align:center">~&#8377;1,80,000</td><td style="padding:10px;text-align:center">&#8377;2,92,000</td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px">UGC-DEB Online</td><td style="padding:10px;text-align:center">Yes ✓</td><td style="padding:10px;text-align:center">Yes ✓</td></tr>
 <tr><td style="padding:10px">Same group?</td><td style="padding:10px;text-align:center">Yes</td><td style="padding:10px;text-align:center">Yes</td></tr>
 </tbody>
 </table>
 
+<p>Both are legitimate. MAHE is older and more prestigious. MUJ is more affordable. They share the Manipal group brand but are independently accredited and separately ranked by NIRF.</p>
+
+<h2>What Real MUJ Online Students Say</h2>
+
+<p>EdifyEdu reviews feedback from Reddit, Quora, and Google Reviews. Here is what MUJ online students report:</p>
+
+<p><strong>Degree acceptance in interviews:</strong> Multiple students report that MUJ online MBA was accepted by employers without credential challenges. NAAC A+ and UGC-DEB approval cleared the HR verification process at companies including IT services firms and banks.</p>
+
+<p><strong>LMS quality:</strong> The online learning platform is functional and well-maintained. Students report responsive support teams and weekend live sessions. The LMS is comparable to other mid-tier online MBA platforms.</p>
+
+<p><strong>Exam process:</strong> Online proctored exams from home. Students consistently rate the exam process as convenient for working professionals. No need to travel to physical exam centres.</p>
+
+<p><strong>Placement support:</strong> This is the most common criticism. MUJ's online programme does not offer the same placement infrastructure as the campus programme. Students recommend self-directed job search through LinkedIn and professional networks rather than relying on university placement support.</p>
+
 <h2>Is MUJ Online MBA Valid for Government Jobs?</h2>
 
-<p>Yes. UGC-DEB approved online MBA degrees are legally equivalent to campus degrees under UGC 2020 guidelines. PSUs, IBPS, SBI, and UPSC all accept UGC-approved degrees regardless of the mode of delivery. MUJ's online MBA is on the UGC entitled list — you can verify this at ugc.ac.in.</p>
+<p>Yes, with specific references:</p>
+
+<p><strong>UGC 2020 Notification:</strong> The UGC notification dated 4 September 2020 (D.O. No. F.1-1/2020) states that degrees awarded through online mode by UGC-DEB entitled institutions are equivalent to degrees awarded through conventional mode. MUJ is on the entitled list.</p>
+
+<p><strong>PSU acceptance:</strong> Central government PSUs (BHEL, ONGC, SAIL, NTPC, IOCL) accept UGC-recognised degrees regardless of mode for management trainee and officer-level recruitment. The eligibility requirement specifies "degree from a UGC recognised university" without distinguishing online from campus.</p>
+
+<p><strong>UPSC eligibility:</strong> UPSC requires degrees from universities recognised by an Act of Parliament or UGC. MUJ is UGC recognised under Section 3 of the UGC Act. Online MBA from MUJ meets this requirement.</p>
+
+<p><strong>Banking exams:</strong> IBPS PO, SBI PO, and RBI Grade B accept post-graduate degrees from UGC-recognised universities. MUJ online MBA qualifies.</p>
+
+<p><strong>State government caveat:</strong> Some state PSCs (Public Service Commissions) have legacy language in their eligibility criteria that specifies "regular mode" degrees. This is a state-level interpretation issue, not a federal one. If your target state PSC specifies "regular mode," confirm eligibility before enrolling in any online programme, not just MUJ.</p>
+
+<h2>MUJ vs Known Fake/Unapproved Institutions: How to Spot the Difference</h2>
+
+<table style="width:100%;border-collapse:collapse;font-size:0.9em">
+<thead><tr style="background:#1A2F4E;color:#fff">
+<th style="padding:10px;text-align:left">Indicator</th>
+<th style="padding:10px">MUJ (Legitimate)</th>
+<th style="padding:10px">Typical Fake University</th>
+</tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px">UGC recognition</td><td style="padding:10px">On recognised list</td><td style="padding:10px">Not listed or revoked</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">NAAC accreditation</td><td style="padding:10px">A+ grade</td><td style="padding:10px">No accreditation or claims fake grades</td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px">NIRF participation</td><td style="padding:10px">Ranked</td><td style="padding:10px">Cannot participate (not UGC recognised)</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">Physical campus</td><td style="padding:10px">115-acre campus in Jaipur</td><td style="padding:10px">No campus or a single rented office</td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px">Degree format</td><td style="padding:10px">Standard convocation + DigiLocker</td><td style="padding:10px">"Degree in 6 months" or courier-only</td></tr>
+<tr><td style="padding:10px">Alumni verification</td><td style="padding:10px">Thousands on LinkedIn</td><td style="padding:10px">No verifiable alumni</td></tr>
+</tbody>
+</table>
 
 <h2>Bottom Line</h2>
 
-<p>MUJ is a legitimate, NAAC A+, NIRF #47 ranked university. It's not as prestigious as MAHE or as cheap as IGNOU, but it occupies a genuine middle ground — strong accreditation, Rajasthan-region brand recognition, and competitive fees for online programs. If someone told you MUJ is fake, they were wrong.</p>
+<p>Manipal University Jaipur is a legitimate, NAAC A+, NIRF-ranked deemed university. It is not on any fake list. Its online degrees are UGC-DEB approved and valid for government jobs, PSU recruitment, and private-sector employment.</p>
+
+<p>It is not as prestigious as MAHE (NIRF #3) or as affordable as IGNOU (&#8377;66,000). It occupies a genuine middle ground: strong accreditation, Manipal group brand, competitive online MBA fees around &#8377;1,80,000, and Rajasthan-region recognition.</p>
+
+<p>If someone told you MUJ is fake, they were wrong. Verify it yourself using the five official links in this article.</p>
 
 <div class="internal-links">
   <div class="il-grid">
-    <a href="/universities/manipal-university-jaipur-online" class="il-card"><div class="il-uni">MUJ</div><div class="il-title">Manipal Jaipur Online</div><div class="il-sub">NAAC A+ · NIRF #47</div></a>
-    <a href="/universities/manipal-academy-higher-education-online" class="il-card"><div class="il-uni">MAHE</div><div class="il-title">Manipal (MAHE) Online</div><div class="il-sub">NAAC A++ · NIRF #6</div></a>
+    <a href="/universities/manipal-university-jaipur-online" class="il-card"><div class="il-uni">MUJ</div><div class="il-title">Manipal Jaipur Online</div><div class="il-sub">Full programme details</div></a>
+    <a href="/universities/manipal-academy-higher-education-online" class="il-card"><div class="il-uni">MAHE</div><div class="il-title">MAHE Online MBA</div><div class="il-sub">NAAC A++ · NIRF #3</div></a>
+    <a href="/universities/sikkim-manipal-university-online" class="il-card"><div class="il-uni">SMU</div><div class="il-title">Sikkim Manipal Online</div><div class="il-sub">The third Manipal entity</div></a>
     <a href="/compare" class="il-card"><div class="il-uni">TOOL</div><div class="il-title">Compare Universities</div><div class="il-sub">Side by side</div></a>
   </div>
 </div>
