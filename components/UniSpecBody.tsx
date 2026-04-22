@@ -583,10 +583,10 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
 
                   <div className="pt-2 flex gap-4 flex-wrap text-sm font-semibold">
                     <Link href={`/universities/${u.id}/${programSlug}`} className="no-underline" style={{ color: '#F4A024' }}>
-                      ← All Amity MBA Specialisations
+                      ← All {cleanName} {program} Specialisations
                     </Link>
                     <Link href={`/universities/${u.id}`} className="no-underline text-slate-500 hover:text-slate-700">
-                      All Amity Programs
+                      All {cleanName} Programs
                     </Link>
                   </div>
                 </>
