@@ -5,6 +5,12 @@ export interface SubjectEntry {
   description: string;
 }
 
+/** Used by Batch 16+ JSONs (semesters array format) */
+export interface SemesterEntry {
+  sem: number;
+  subjects: Array<{ name: string; desc?: string; description?: string }>;
+}
+
 export interface SpecPageContent {
   uniSlug: string;
   program: string;
@@ -15,10 +21,13 @@ export interface SpecPageContent {
     about?: { body?: string };
     syllabus?: {
       hasData: boolean;
+      /** Flat format (legacy/Amity-style) */
       sem1Subjects?: SubjectEntry[];
       sem2Subjects?: SubjectEntry[];
       sem3Subjects?: SubjectEntry[];
       sem4Subjects?: SubjectEntry[];
+      /** Semesters array format (Batch 16+ CU/SMU style) */
+      semesters?: SemesterEntry[];
       note?: string;
       emptyFallback?: string;
     };

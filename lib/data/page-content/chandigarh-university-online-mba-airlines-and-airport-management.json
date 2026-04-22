@@ -19,22 +19,55 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Strategy, Business and Globalization", "desc": "Airline competitive strategy, global aviation alliances, slot management, and airport commercial development." },
-            { "name": "Decision Science", "desc": "Aviation data analytics for route profitability, load factor optimisation, and airport capacity planning." },
-            { "name": "Airline and Airport Operations", "desc": "Flight operations management, ground handling, ATC coordination, turnaround management, and slot coordination." },
-            { "name": "Strategic Airport Planning and Marketing", "desc": "Airport master planning, aeronautical and non-aeronautical revenue streams, terminal commercial strategy, and airline route development." },
-            { "name": "Aircraft Maintenance Management", "desc": "DGCA regulations, MRO operations management, line and base maintenance planning, and airworthiness compliance." },
-            { "name": "Aviation Safety and Security", "desc": "ICAO safety standards, SMS implementation, CISF airport security protocols, and aviation incident investigation." }
+            {
+              "name": "Strategy, Business and Globalization",
+              "desc": "Airline competitive strategy, global aviation alliances, slot management, and airport commercial development."
+            },
+            {
+              "name": "Decision Science",
+              "desc": "Aviation data analytics for route profitability, load factor optimisation, and airport capacity planning."
+            },
+            {
+              "name": "Airline and Airport Operations",
+              "desc": "Flight operations management, ground handling, ATC coordination, turnaround management, and slot coordination."
+            },
+            {
+              "name": "Strategic Airport Planning and Marketing",
+              "desc": "Airport master planning, aeronautical and non-aeronautical revenue streams, terminal commercial strategy, and airline route development."
+            },
+            {
+              "name": "Aircraft Maintenance Management",
+              "desc": "DGCA regulations, MRO operations management, line and base maintenance planning, and airworthiness compliance."
+            },
+            {
+              "name": "Aviation Safety and Security",
+              "desc": "ICAO safety standards, SMS implementation, CISF airport security protocols, and aviation incident investigation."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Project Management", "desc": "Airport expansion project management, terminal construction oversight, and airline fleet integration projects." },
-            { "name": "AI for Managers", "desc": "AI in predictive maintenance, passenger flow optimisation, dynamic pricing models, and ground operations automation." },
-            { "name": "Aviation Resource Management", "desc": "Crew scheduling, ground staff rostering, fleet utilisation optimisation, and aviation HR management." },
-            { "name": "Aviation Legal Environment", "desc": "Chicago Convention, Warsaw and Montreal Conventions, DGCA regulations, air services agreements, and aviation consumer protection." },
-            { "name": "Capstone Project II", "desc": "Applied aviation project: airline operations improvement, airport development proposal, or safety management system design." }
+            {
+              "name": "Project Management",
+              "desc": "Airport expansion project management, terminal construction oversight, and airline fleet integration projects."
+            },
+            {
+              "name": "AI for Managers",
+              "desc": "AI in predictive maintenance, passenger flow optimisation, dynamic pricing models, and ground operations automation."
+            },
+            {
+              "name": "Aviation Resource Management",
+              "desc": "Crew scheduling, ground staff rostering, fleet utilisation optimisation, and aviation HR management."
+            },
+            {
+              "name": "Aviation Legal Environment",
+              "desc": "Chicago Convention, Warsaw and Montreal Conventions, DGCA regulations, air services agreements, and aviation consumer protection."
+            },
+            {
+              "name": "Capstone Project II",
+              "desc": "Applied aviation project: airline operations improvement, airport development proposal, or safety management system design."
+            }
           ]
         }
       ]
@@ -46,7 +79,7 @@
       "body": "The Airlines and Airport Management specialisation builds skills that aviation employers require at manager level:\n\n**Technical skills:**\n- Airport Operations: terminal management KPIs, slot coordination with IATA, OTP (on-time performance) management, and ground handling SLA management\n- Aviation Safety: ICAO Annex 19 SMS framework, safety risk register management, NOTAM interpretation, and incident reporting under DGCA CAR Section 5\n- MRO Management: CAMO vs Part-145 organisation functions, work order management, AOG prioritisation, and maintenance planning\n- Aviation Law: bilateral air services agreement basics, airline liability under Montreal Convention, DGCA enforcement procedures, and consumer protection under DGCA\n\n**Applied skills:**\n- Airport Revenue: aeronautical vs non-aeronautical revenue split management, retail and F&B concession management, and car park revenue optimisation\n- Crew and Resource: FDTL regulations, roster compliance under DGCA, and crew cost management\n\n**Soft skills:** Presenting terminal operations performance to airport board and airline customers, managing CISF and AAI coordination for security compliance, negotiating ground handling SLAs with airline customers, and communicating safety findings to DGCA during audits."
     },
     "comparisons": {
-      "body": "Comparing Chandigarh Online MBA Airlines and Airport Management against peer programmes:\n\n**vs Amity Online MBA Aviation Management:** Amity has a dedicated aviation track with hospitality ties. CU's advantage is NIRF #19, more current aircraft maintenance management and DGCA-specific content, and the PwC Transportation advisory (Tier 2). Fee: CU Rs 1,65,000 Tier 1 vs Amity's higher fee tier.\n\n**vs LPU Online MBA Aviation:** LPU has aviation programme connections through its own aviation academy. CU's differentiation is NIRF #19, more comprehensive aviation legal environment coverage, and PwC co-teaching (Tier 2). Harvard Business Publishing certificate adds external credibility for corporate airline and airport roles.\n\n**vs standalone IATA training:** IATA certifications (Airport Operations, Airline Management) are operational credentials. The CU MBA in Airlines and Airport Management gives the management degree that airline and airport leadership roles require, while covering IATA-aligned content within the academic framework. Both can be held together for maximum career positioning."
+      "body": "Comparing Chandigarh Online MBA Airlines and Airport Management against peer programmes:\n\n**vs Chandigarh Online MBA Logistics and Supply Chain Management:** Logistics and SCM covers freight transport, warehouse management, and supply chain analytics — suited for professionals in road, rail, sea, and multi-modal logistics. Airlines and Airport Management is the right choice for professionals specifically in aviation: airline and airport operations, MRO management, DGCA-regulated organisations, and ground handling. DGCA compliance, ICAO standards, aviation safety, and aviation resource management are exclusive to this specialisation and are not covered in Logistics and SCM.\n\n**vs campus aviation management programmes (NCI, GMR Institute, Indira Gandhi Institute of Aeronautics):** Campus aviation management programmes focus on specific operational aviation competencies. The CU Online MBA in Airlines and Airport Management gives the full management degree that airline and airport director-level roles require, alongside DGCA, ICAO, and aviation legal content within a UGC-DEB entitled framework. NAAC A+ and NIRF #19 credentials carry employer recognition beyond operational aviation certificates. PwC Transportation advisory (Tier 2) adds consulting-grade commercial frameworks.\n\n**vs standalone IATA training:** IATA certifications (Airport Operations, Airline Management) are operational credentials. The CU MBA in Airlines and Airport Management gives the management degree that airline and airport leadership roles require, while covering IATA-aligned content within the academic framework. Both can be held together for maximum career positioning."
     },
     "fees": {
       "body": "The Chandigarh University Online MBA in Airlines and Airport Management offers 2 program tiers based on certification bundle:\n\n**Tier 1 (Primary) - Standard with Harvard ManageMentor Certificate**:\n- Actual program fee: Rs 2,20,000\n- 25% Early Bird Scholarship: Rs 1,65,000 net payable (Rs 55,000 savings)\n- Payment options:\n  - Annual: Rs 82,500 per year x 2 years\n  - Semester-wise: Rs 41,250 per semester x 4 semesters\n  - Full upfront: Rs 1,65,000 one-time\n- Included certification: Harvard Business Publishing certificate\n\n**Tier 2 (Premium Upgrade) - 3-Certificate Bundle**:\n- Actual program fee: Rs 2,20,000 (same base fee)\n- 18% Early Bird Scholarship: Rs 1,80,400 net payable (Rs 39,600 savings)\n- Payment options:\n  - Annual: Rs 90,200 per year x 2 years\n  - Semester-wise: Rs 45,100 per semester x 4 semesters\n  - Full upfront: Rs 1,80,400 one-time\n- Included certifications (3):\n  1. PwC co-created and co-taught MBA modules (unmatched in India)\n  2. CAPM (Certified Associate in Project Management) certification preparation\n  3. Harvard Business Publishing certificate\n\n**Additional charges (both tiers)**:\n- Registration fee: Rs 1,000 (one-time, non-refundable)\n\n**Zero-cost EMI**: Available directly through Chandigarh University (no external marketing partner or NBFC intermediary, a differentiator among Indian online MBAs). Contact our counsellor for current tenure options (6, 12, 18, or 24 months).\n\n**Early Bird Scholarship terms**: Availability varies by admission cycle. The 25% Tier 1 scholarship and 18% Tier 2 scholarship are currently active but subject to timing. Reconfirm eligibility with our counsellor before enrolment.\n\nEdifyEdu reconfirms fees with Chandigarh University each quarter. Please reconfirm current tier options, Early Bird eligibility, and fees with our counsellor before any payment. Fees listed are indicative."

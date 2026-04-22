@@ -162,13 +162,26 @@ function SpecSyllabusSection({
     )
   }
 
-  const hasSem12 = (syllabus.sem1Subjects?.length ?? 0) > 0 || (syllabus.sem2Subjects?.length ?? 0) > 0
+  // Normalize semesters-array format (Batch 16+ CU/SMU) into flat semXSubjects
+  const normalizeSem = (semNum: number) => {
+    const flat = syllabus[`sem${semNum}Subjects` as 'sem1Subjects' | 'sem2Subjects' | 'sem3Subjects' | 'sem4Subjects']
+    if (flat && flat.length > 0) return flat
+    if (!syllabus.semesters) return undefined
+    const entry = syllabus.semesters.find(s => s.sem === semNum)
+    if (!entry) return undefined
+    return entry.subjects.map(s => ({ name: s.name, description: s.desc ?? s.description ?? '' }))
+  }
+  const sem1 = normalizeSem(1)
+  const sem2 = normalizeSem(2)
+  const sem3 = normalizeSem(3)
+  const sem4 = normalizeSem(4)
+  const hasSem12 = (sem1?.length ?? 0) > 0 || (sem2?.length ?? 0) > 0
   const semLabel = (sem: number) => `Semester ${sem}`
   const semGroups = [
-    { label: semLabel(1), subjects: syllabus.sem1Subjects },
-    { label: semLabel(2), subjects: syllabus.sem2Subjects },
-    { label: semLabel(3), subjects: syllabus.sem3Subjects },
-    { label: semLabel(4), subjects: syllabus.sem4Subjects },
+    { label: semLabel(1), subjects: sem1 },
+    { label: semLabel(2), subjects: sem2 },
+    { label: semLabel(3), subjects: sem3 },
+    { label: semLabel(4), subjects: sem4 },
   ].filter(g => g.subjects && g.subjects.length > 0)
 
   return (

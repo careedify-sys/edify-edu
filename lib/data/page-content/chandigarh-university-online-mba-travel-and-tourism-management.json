@@ -19,22 +19,55 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Strategy, Business and Globalization", "desc": "Tourism destination strategy, global travel market positioning, and competitive analysis of tourism brands." },
-            { "name": "Decision Science", "desc": "Data analytics for tourism demand forecasting, visitor behaviour modelling, and occupancy optimisation." },
-            { "name": "Tourism Economics", "desc": "Tourism multiplier effects, demand elasticity, tourism trade balance, and economic impact assessment of destinations." },
-            { "name": "Tourism Marketing", "desc": "Destination branding, digital marketing for tourism, OTA strategy, and international tourist acquisition." },
-            { "name": "Geography and International Tourism", "desc": "Global tourism geography, cultural heritage sites, international travel regulations, and destination development." },
-            { "name": "Tourism Concept and Impact", "desc": "Sustainable tourism frameworks, overtourism management, community impact assessment, and responsible tourism policy." }
+            {
+              "name": "Strategy, Business and Globalization",
+              "desc": "Tourism destination strategy, global travel market positioning, and competitive analysis of tourism brands."
+            },
+            {
+              "name": "Decision Science",
+              "desc": "Data analytics for tourism demand forecasting, visitor behaviour modelling, and occupancy optimisation."
+            },
+            {
+              "name": "Tourism Economics",
+              "desc": "Tourism multiplier effects, demand elasticity, tourism trade balance, and economic impact assessment of destinations."
+            },
+            {
+              "name": "Tourism Marketing",
+              "desc": "Destination branding, digital marketing for tourism, OTA strategy, and international tourist acquisition."
+            },
+            {
+              "name": "Geography and International Tourism",
+              "desc": "Global tourism geography, cultural heritage sites, international travel regulations, and destination development."
+            },
+            {
+              "name": "Tourism Concept and Impact",
+              "desc": "Sustainable tourism frameworks, overtourism management, community impact assessment, and responsible tourism policy."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Project Management", "desc": "Tourism infrastructure project delivery, destination development project management, and event-tourism coordination." },
-            { "name": "AI for Managers", "desc": "AI tools for personalised travel recommendations, dynamic pricing for tours, and digital concierge services." },
-            { "name": "Travel Agency Management", "desc": "Travel agency operations, GDS systems, B2B and B2C travel distribution, and IATA agency management." },
-            { "name": "Tourism Policy Planning and Development", "desc": "Ministry of Tourism policy frameworks, tourism master planning, PPP in tourism, and state tourism board operations." },
-            { "name": "Capstone Project II", "desc": "Applied tourism project: destination development plan, tourism marketing strategy, or travel business model." }
+            {
+              "name": "Project Management",
+              "desc": "Tourism infrastructure project delivery, destination development project management, and event-tourism coordination."
+            },
+            {
+              "name": "AI for Managers",
+              "desc": "AI tools for personalised travel recommendations, dynamic pricing for tours, and digital concierge services."
+            },
+            {
+              "name": "Travel Agency Management",
+              "desc": "Travel agency operations, GDS systems, B2B and B2C travel distribution, and IATA agency management."
+            },
+            {
+              "name": "Tourism Policy Planning and Development",
+              "desc": "Ministry of Tourism policy frameworks, tourism master planning, PPP in tourism, and state tourism board operations."
+            },
+            {
+              "name": "Capstone Project II",
+              "desc": "Applied tourism project: destination development plan, tourism marketing strategy, or travel business model."
+            }
           ]
         }
       ]
@@ -46,7 +79,7 @@
       "body": "The Travel and Tourism Management specialisation builds skills that hospitality and tourism employers require at manager level:\n\n**Technical skills:**\n- Tourism Marketing: OTA partnership management, destination SEO, social media for tourism, and international tourism campaign management\n- Tourism Economics: impact assessment methodology, tourism satellite accounts basics, and economic feasibility for tourism projects\n- Travel Operations: GDS system navigation (Amadeus/Sabre basics), IATA documentation, visa facilitation, and tour costing\n- Policy and Planning: tourism master plan structure, PPP framework basics, and heritage tourism regulatory compliance\n\n**Applied skills:**\n- Sustainable Tourism: GSTC certification basics, carbon footprint for travel products, community benefit mapping, and responsible tourism reporting\n- Destination Development: tourism cluster design, tourist circuit planning, and tourism infrastructure project coordination\n\n**Soft skills:** Presenting destination marketing plans to state tourism boards and hotel investors, managing international tourist complaints across language barriers, building OTA and travel trade partnerships, and communicating sustainability commitments to premium travel market segments."
     },
     "comparisons": {
-      "body": "Comparing Chandigarh Online MBA Travel and Tourism Management against peer programmes:\n\n**vs Amity Online MBA Tourism Management:** Amity has a strong hospitality and tourism brand with NIRF #22. CU's NIRF #19 gives it a marginal ranking advantage. CU Tier 2's PwC Hospitality advisory content adds a consulting and commercial strategy perspective Amity does not offer. Fee: CU Rs 1,65,000 Tier 1 vs Amity's higher fee.\n\n**vs Manipal Jaipur Online MBA Hospitality/Tourism:** MUJ has solid hospitality content with NAAC A+. CU's differentiation is the dedicated Tourism Policy and Economics subjects that MUJ does not offer at this depth, and NIRF #19 ranking. PwC advisory co-teaching in Tier 2 adds consulting-grade frameworks.\n\n**vs standalone tourism management certificates:** Certificates from IATA or state tourism institutes cover operational skills. The CU MBA in Travel and Tourism Management gives both the management credential for corporate and government roles and the sector-specific knowledge that certificates lack. NAAC A+ from a NIRF-ranked university is required for tourism board and government tourism officer roles."
+      "body": "Comparing Chandigarh Online MBA Travel and Tourism Management against peer programmes:\n\n**vs Amity Online MBA Tourism Management:** Amity has a strong hospitality and tourism brand with NIRF #22. CU's NIRF #19 gives it a marginal ranking advantage. CU Tier 2's PwC Hospitality advisory content adds a consulting and commercial strategy perspective Amity does not offer. Fee: CU Rs 1,65,000 Tier 1 vs Amity's higher fee.\n\n**vs UPES Online MBA International Business:** UPES International Business at Rs 1,75,000-2,20,000 covers global trade, international business strategy, and cross-border operations. It includes content relevant to inbound tourism policy and global hospitality management. CU's dedicated Travel and Tourism MBA adds Heritage Tourism Management, Tourism Policy and Economics, and destination marketing subjects not available in a general international business track. For professionals targeting tourism boards, OTAs, and government tourism ministry roles, CU's dedicated specialisation is more appropriate.\n\n**vs standalone tourism management certificates:** Certificates from IATA or state tourism institutes cover operational skills. The CU MBA in Travel and Tourism Management gives both the management credential for corporate and government roles and the sector-specific knowledge that certificates lack. NAAC A+ from a NIRF-ranked university is required for tourism board and government tourism officer roles."
     },
     "fees": {
       "body": "The Chandigarh University Online MBA in Travel and Tourism Management offers 2 program tiers based on certification bundle:\n\n**Tier 1 (Primary) - Standard with Harvard ManageMentor Certificate**:\n- Actual program fee: Rs 2,20,000\n- 25% Early Bird Scholarship: Rs 1,65,000 net payable (Rs 55,000 savings)\n- Payment options:\n  - Annual: Rs 82,500 per year x 2 years\n  - Semester-wise: Rs 41,250 per semester x 4 semesters\n  - Full upfront: Rs 1,65,000 one-time\n- Included certification: Harvard Business Publishing certificate\n\n**Tier 2 (Premium Upgrade) - 3-Certificate Bundle**:\n- Actual program fee: Rs 2,20,000 (same base fee)\n- 18% Early Bird Scholarship: Rs 1,80,400 net payable (Rs 39,600 savings)\n- Payment options:\n  - Annual: Rs 90,200 per year x 2 years\n  - Semester-wise: Rs 45,100 per semester x 4 semesters\n  - Full upfront: Rs 1,80,400 one-time\n- Included certifications (3):\n  1. PwC co-created and co-taught MBA modules (unmatched in India)\n  2. CAPM (Certified Associate in Project Management) certification preparation\n  3. Harvard Business Publishing certificate\n\n**Additional charges (both tiers)**:\n- Registration fee: Rs 1,000 (one-time, non-refundable)\n\n**Zero-cost EMI**: Available directly through Chandigarh University (no external marketing partner or NBFC intermediary, a differentiator among Indian online MBAs). Contact our counsellor for current tenure options (6, 12, 18, or 24 months).\n\n**Early Bird Scholarship terms**: Availability varies by admission cycle. The 25% Tier 1 scholarship and 18% Tier 2 scholarship are currently active but subject to timing. Reconfirm eligibility with our counsellor before enrolment.\n\nEdifyEdu reconfirms fees with Chandigarh University each quarter. Please reconfirm current tier options, Early Bird eligibility, and fees with our counsellor before any payment. Fees listed are indicative."

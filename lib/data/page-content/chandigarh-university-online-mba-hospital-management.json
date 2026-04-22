@@ -19,22 +19,55 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Strategy, Business and Globalization", "desc": "Healthcare strategy, hospital network planning, and competitive positioning in private and public health sectors." },
-            { "name": "Decision Science", "desc": "Data models for patient flow analysis, bed occupancy optimisation, and healthcare resource planning." },
-            { "name": "Hospital Planning and Services", "desc": "Hospital infrastructure design, department planning, OPD and IPD workflow optimisation, and accreditation." },
-            { "name": "AI in Healthcare Operations and Diagnostics", "desc": "AI tools for diagnosis assistance, operational scheduling, predictive readmission models, and AI governance in healthcare." },
-            { "name": "Health Informatics and Digital Health Platforms", "desc": "HIS, EMR systems, Ayushman Bharat Digital Mission (ABDM), and telemedicine platform management." },
-            { "name": "Human Resource Management in Health Care", "desc": "Healthcare staff recruitment, credentialing, retention, and managing clinical and non-clinical teams." }
+            {
+              "name": "Strategy, Business and Globalization",
+              "desc": "Healthcare strategy, hospital network planning, and competitive positioning in private and public health sectors."
+            },
+            {
+              "name": "Decision Science",
+              "desc": "Data models for patient flow analysis, bed occupancy optimisation, and healthcare resource planning."
+            },
+            {
+              "name": "Hospital Planning and Services",
+              "desc": "Hospital infrastructure design, department planning, OPD and IPD workflow optimisation, and accreditation."
+            },
+            {
+              "name": "AI in Healthcare Operations and Diagnostics",
+              "desc": "AI tools for diagnosis assistance, operational scheduling, predictive readmission models, and AI governance in healthcare."
+            },
+            {
+              "name": "Health Informatics and Digital Health Platforms",
+              "desc": "HIS, EMR systems, Ayushman Bharat Digital Mission (ABDM), and telemedicine platform management."
+            },
+            {
+              "name": "Human Resource Management in Health Care",
+              "desc": "Healthcare staff recruitment, credentialing, retention, and managing clinical and non-clinical teams."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Project Management", "desc": "Managing hospital construction, facility expansion, and healthcare digital transformation projects." },
-            { "name": "AI for Managers", "desc": "Strategic AI adoption in hospitals: diagnostic AI governance, AI vendor evaluation, and clinical AI compliance." },
-            { "name": "Ethical and Legal Aspects of Health Care", "desc": "Medical negligence law, patient rights, clinical ethics, PCPNDT Act, and Indian healthcare regulations." },
-            { "name": "Health Care Marketing", "desc": "Hospital brand strategy, patient acquisition, health communication, and medical tourism marketing." },
-            { "name": "Capstone Project II", "desc": "Applied hospital management project addressing a real operational, quality, or strategic healthcare challenge." }
+            {
+              "name": "Project Management",
+              "desc": "Managing hospital construction, facility expansion, and healthcare digital transformation projects."
+            },
+            {
+              "name": "AI for Managers",
+              "desc": "Strategic AI adoption in hospitals: diagnostic AI governance, AI vendor evaluation, and clinical AI compliance."
+            },
+            {
+              "name": "Ethical and Legal Aspects of Health Care",
+              "desc": "Medical negligence law, patient rights, clinical ethics, PCPNDT Act, and Indian healthcare regulations."
+            },
+            {
+              "name": "Health Care Marketing",
+              "desc": "Hospital brand strategy, patient acquisition, health communication, and medical tourism marketing."
+            },
+            {
+              "name": "Capstone Project II",
+              "desc": "Applied hospital management project addressing a real operational, quality, or strategic healthcare challenge."
+            }
           ]
         }
       ]
@@ -46,7 +79,7 @@
       "body": "The Hospital Management specialisation builds skills that healthcare employers test at administrator and operations manager levels:\n\n**Technical skills:**\n- Hospital Operations: OPD and IPD flow optimisation, bed management systems, emergency triage protocols, and clinical audit\n- Health Informatics: EMR implementation, HL7 and FHIR basics, Ayushman Bharat Digital Mission integration, and telemedicine regulation\n- Healthcare Quality: NABH accreditation standards, JCI accreditation basics, quality circles in clinical settings, and clinical outcome metrics\n- AI in Healthcare: diagnostic AI vendor evaluation, AI clinical governance, responsible AI deployment in hospital settings\n\n**Applied skills:**\n- Healthcare HR: medical staff credentialing, nurse-to-bed ratio management, on-call scheduling optimisation, and clinical team conflict resolution\n- Healthcare Marketing: doctor referral network management, online reputation management for hospitals, and medical tourism package design\n\n**Soft skills:** Managing both clinical staff and administrative teams simultaneously, presenting hospital performance dashboards to medical directors and trustees, communicating quality improvement initiatives to clinical staff resistant to change, and managing media and public communication during clinical incidents."
     },
     "comparisons": {
-      "body": "Comparing Chandigarh Online MBA Hospital Management against peer programmes:\n\n**vs Amity Online MBA Hospital Management:** Amity's programme is well-regarded with NIRF #22 and healthcare-specific content. CU offers comparable NAAC A+ at Rs 1,65,000 Tier 1 (Amity is Rs 2,25,000) with the AI in Healthcare Operations subject that Amity's programme may not cover at equivalent depth. PwC Health Industries advisory content (Tier 2) adds consulting-grade frameworks.\n\n**vs Manipal Jaipur Online MBA Healthcare Management:** MUJ has strong brand recognition in South India's healthcare sector. Both are NAAC A+. CU's differentiation is NIRF #19, AI in Healthcare and Health Informatics subjects reflecting digital health adoption, and the PwC partnership. For North India healthcare sector hiring, CU's regional network is stronger.\n\n**vs standalone MHA programmes:** A standalone Master of Hospital Administration is a specialist degree. The Chandigarh MBA in Hospital Management gives both full MBA breadth and hospital-specific specialisation, making graduates eligible for both general management and healthcare-specific roles. The NAAC A+ MBA credential carries broader employer recognition than standalone MHA programmes."
+      "body": "Comparing Chandigarh Online MBA Hospital Management against peer programmes:\n\n**vs Amity Online MBA Hospital Management:** Amity's programme is well-regarded with NIRF #22 and healthcare-specific content. CU offers comparable NAAC A+ at Rs 1,65,000 Tier 1 (Amity is Rs 2,25,000) with the AI in Healthcare Operations subject that Amity's programme may not cover at equivalent depth. PwC Health Industries advisory content (Tier 2) adds consulting-grade frameworks.\n\n**vs SMU Online MBA Healthcare:** SMU's Healthcare MBA at Rs 1,20,000 carries Manipal Group's healthcare institutional heritage and is NAAC A+. SMU covers health education, hospital core services, quality management, and legal aspects in healthcare administration. CU's differentiation is NIRF #19, AI in Healthcare Operations, Health Informatics, and ABDM digital health subjects that SMU's current curriculum does not cover at equivalent depth. PwC Health Industries advisory (Tier 2) adds consulting-grade frameworks. CU is the stronger choice for digital health transformation roles; SMU is the better value for candidates prioritising affordability and Manipal Group healthcare brand specifically.\n\n**vs standalone MHA programmes:** A standalone Master of Hospital Administration is a specialist degree. The Chandigarh MBA in Hospital Management gives both full MBA breadth and hospital-specific specialisation, making graduates eligible for both general management and healthcare-specific roles. The NAAC A+ MBA credential carries broader employer recognition than standalone MHA programmes."
     },
     "fees": {
       "body": "The Chandigarh University Online MBA in Hospital Management offers 2 program tiers based on certification bundle:\n\n**Tier 1 (Primary) - Standard with Harvard ManageMentor Certificate**:\n- Actual program fee: Rs 2,20,000\n- 25% Early Bird Scholarship: Rs 1,65,000 net payable (Rs 55,000 savings)\n- Payment options:\n  - Annual: Rs 82,500 per year x 2 years\n  - Semester-wise: Rs 41,250 per semester x 4 semesters\n  - Full upfront: Rs 1,65,000 one-time\n- Included certification: Harvard Business Publishing certificate\n\n**Tier 2 (Premium Upgrade) - 3-Certificate Bundle**:\n- Actual program fee: Rs 2,20,000 (same base fee)\n- 18% Early Bird Scholarship: Rs 1,80,400 net payable (Rs 39,600 savings)\n- Payment options:\n  - Annual: Rs 90,200 per year x 2 years\n  - Semester-wise: Rs 45,100 per semester x 4 semesters\n  - Full upfront: Rs 1,80,400 one-time\n- Included certifications (3):\n  1. PwC co-created and co-taught MBA modules (unmatched in India)\n  2. CAPM (Certified Associate in Project Management) certification preparation\n  3. Harvard Business Publishing certificate\n\n**Additional charges (both tiers)**:\n- Registration fee: Rs 1,000 (one-time, non-refundable)\n\n**Zero-cost EMI**: Available directly through Chandigarh University (no external marketing partner or NBFC intermediary, a differentiator among Indian online MBAs). Contact our counsellor for current tenure options (6, 12, 18, or 24 months).\n\n**Early Bird Scholarship terms**: Availability varies by admission cycle. The 25% Tier 1 scholarship and 18% Tier 2 scholarship are currently active but subject to timing. Reconfirm eligibility with our counsellor before enrolment.\n\nEdifyEdu reconfirms fees with Chandigarh University each quarter. Please reconfirm current tier options, Early Bird eligibility, and fees with our counsellor before any payment. Fees listed are indicative."

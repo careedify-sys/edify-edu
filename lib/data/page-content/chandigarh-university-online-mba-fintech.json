@@ -19,22 +19,55 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Strategy, Business and Globalization", "desc": "FinTech market strategy, global digital financial services landscape, and competitive positioning." },
-            { "name": "Decision Science", "desc": "Data modelling for credit scoring, fraud detection probability, and financial risk quantification." },
-            { "name": "Digital Payments, UPI and India's Financial Infrastructure", "desc": "India Stack architecture, UPI rails, payment gateway operations, BBPS, and RBI regulatory framework." },
-            { "name": "Blockchain Management", "desc": "Distributed ledger technology, smart contracts, DeFi basics, and enterprise blockchain applications." },
-            { "name": "Machine Learning in FinTech", "desc": "ML models for credit risk, fraud detection, churn prediction, and alternative lending underwriting." },
-            { "name": "Artificial Intelligence in FinTech", "desc": "AI in insurance underwriting, robo-advisory, RegTech automation, and chatbot-based customer service." }
+            {
+              "name": "Strategy, Business and Globalization",
+              "desc": "FinTech market strategy, global digital financial services landscape, and competitive positioning."
+            },
+            {
+              "name": "Decision Science",
+              "desc": "Data modelling for credit scoring, fraud detection probability, and financial risk quantification."
+            },
+            {
+              "name": "Digital Payments, UPI and India's Financial Infrastructure",
+              "desc": "India Stack architecture, UPI rails, payment gateway operations, BBPS, and RBI regulatory framework."
+            },
+            {
+              "name": "Blockchain Management",
+              "desc": "Distributed ledger technology, smart contracts, DeFi basics, and enterprise blockchain applications."
+            },
+            {
+              "name": "Machine Learning in FinTech",
+              "desc": "ML models for credit risk, fraud detection, churn prediction, and alternative lending underwriting."
+            },
+            {
+              "name": "Artificial Intelligence in FinTech",
+              "desc": "AI in insurance underwriting, robo-advisory, RegTech automation, and chatbot-based customer service."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Project Management", "desc": "Agile delivery for FinTech product launches, regulatory submissions, and API integration projects." },
-            { "name": "AI for Managers", "desc": "AI governance in financial services, explainable AI for RBI/SEBI compliance, and AI product strategy." },
-            { "name": "Entrepreneurship in FinTech", "desc": "FinTech startup frameworks, fundraising for BFSI startups, regulatory sandbox applications, and licensing." },
-            { "name": "FinTech: Innovation and Transformation in Financial Services", "desc": "BNPL, embedded finance, open banking, and digital transformation of traditional banking models." },
-            { "name": "Capstone Project II", "desc": "Applied FinTech project solving a real digital payments, lending, or insurance technology problem." }
+            {
+              "name": "Project Management",
+              "desc": "Agile delivery for FinTech product launches, regulatory submissions, and API integration projects."
+            },
+            {
+              "name": "AI for Managers",
+              "desc": "AI governance in financial services, explainable AI for RBI/SEBI compliance, and AI product strategy."
+            },
+            {
+              "name": "Entrepreneurship in FinTech",
+              "desc": "FinTech startup frameworks, fundraising for BFSI startups, regulatory sandbox applications, and licensing."
+            },
+            {
+              "name": "FinTech: Innovation and Transformation in Financial Services",
+              "desc": "BNPL, embedded finance, open banking, and digital transformation of traditional banking models."
+            },
+            {
+              "name": "Capstone Project II",
+              "desc": "Applied FinTech project solving a real digital payments, lending, or insurance technology problem."
+            }
           ]
         }
       ]
@@ -46,7 +79,7 @@
       "body": "The FinTech specialisation builds skills that India's digital financial ecosystem employers demand:\n\n**Technical skills:**\n- Payment Systems: UPI transaction flow, NACH mandate management, payment gateway API integration concepts, and PCI-DSS compliance basics\n- Blockchain: smart contract logic, Hyperledger basics, tokenisation use cases, and DLT for trade finance\n- ML in Finance: credit scorecard development, fraud detection model design, and alternative data underwriting for BNPL\n- AI Compliance: explainable AI for RBI and SEBI regulatory purposes, automated KYC systems, and AI-driven AML monitoring\n\n**Applied skills:**\n- Regulatory Navigation: RBI Payment Aggregator guidelines, NBFC licensing requirements, account aggregator framework, and digital lending circulars\n- FinTech Startup: fundraising pitch preparation, regulatory sandbox strategy, and product-market fit validation for financial products\n\n**Soft skills:** Communicating technical FinTech product decisions to banking partners, managing regulatory relationships during product launch, building trust with credit underwriters for AI-driven decisions, and presenting payment analytics to merchant partners."
     },
     "comparisons": {
-      "body": "Comparing Chandigarh Online MBA FinTech against peer programmes:\n\n**vs NMIMS Online MBA FinTech:** NMIMS has a strong brand in BFSI and Mumbai FinTech ecosystem. Fee is higher. CU's FinTech syllabus is more India-specific with UPI infrastructure and RBI regulatory content. CU Tier 2 adds PwC FinTech advisory co-teaching. For Pan-India FinTech roles, CU's NIRF #19 plus India-specific FinTech content is competitive.\n\n**vs Amity Online MBA FinTech-related tracks:** Amity does not offer a dedicated FinTech specialisation at this depth. CU is the stronger choice for candidates specifically targeting FinTech roles with a dedicated syllabus including UPI, Blockchain, and AI in FinTech.\n\n**vs JAIN Online MBA FinTech:** JAIN offers an AI-and-Finance track but CU's dedicated FinTech specialisation is more comprehensive and comes with a higher NIRF rank (CU #19 vs JAIN's lower position) and NAAC A+ credential. PwC advisory co-teaching (Tier 2) is not available in JAIN's programme."
+      "body": "Comparing Chandigarh Online MBA FinTech against peer programmes:\n\n**vs NMIMS Online MBA Finance:** NMIMS Finance at Rs 1,96,000-2,20,000 covers capital markets, corporate finance, and financial derivatives with strong Mumbai BFSI brand recognition. NMIMS does not offer a dedicated FinTech specialisation. For traditional Mumbai banking and capital markets careers, NMIMS Finance carries stronger brand weight. CU FinTech is the more targeted choice for professionals at RBI-regulated FinTech companies, payment aggregators, NBFC digital lenders, and UPI-layer companies — sectors requiring India-specific regulatory knowledge (RBI sandbox, UPI infrastructure, FEMA digital payments) that NMIMS Finance does not cover at this depth.\n\n**vs Amity Online MBA FinTech-related tracks:** Amity does not offer a dedicated FinTech specialisation at this depth. CU is the stronger choice for candidates specifically targeting FinTech roles with a dedicated syllabus including UPI, Blockchain, and AI in FinTech.\n\n**vs JAIN Online MBA Banking and Finance:** JAIN's Banking and Finance specialisation at Rs 1,75,000-1,96,000 covers commercial banking, investment banking, and risk management. JAIN also offers an AI for Finance track with AI-augmented finance subjects. Neither is a dedicated FinTech programme. CU FinTech's India-specific regulatory content — UPI infrastructure, RBI sandbox framework, NBFC digital regulations, Blockchain in Indian payments — is more targeted for professionals at FinTech startups, payment companies, and digital BFSI roles. NIRF #19 gives CU stronger recognition at corporate FinTech employers."
     },
     "fees": {
       "body": "The Chandigarh University Online MBA in FinTech offers 2 program tiers based on certification bundle:\n\n**Tier 1 (Primary) - Standard with Harvard ManageMentor Certificate**:\n- Actual program fee: Rs 2,20,000\n- 25% Early Bird Scholarship: Rs 1,65,000 net payable (Rs 55,000 savings)\n- Payment options:\n  - Annual: Rs 82,500 per year x 2 years\n  - Semester-wise: Rs 41,250 per semester x 4 semesters\n  - Full upfront: Rs 1,65,000 one-time\n- Included certification: Harvard Business Publishing certificate\n\n**Tier 2 (Premium Upgrade) - 3-Certificate Bundle**:\n- Actual program fee: Rs 2,20,000 (same base fee)\n- 18% Early Bird Scholarship: Rs 1,80,400 net payable (Rs 39,600 savings)\n- Payment options:\n  - Annual: Rs 90,200 per year x 2 years\n  - Semester-wise: Rs 45,100 per semester x 4 semesters\n  - Full upfront: Rs 1,80,400 one-time\n- Included certifications (3):\n  1. PwC co-created and co-taught MBA modules (unmatched in India)\n  2. CAPM (Certified Associate in Project Management) certification preparation\n  3. Harvard Business Publishing certificate\n\n**Additional charges (both tiers)**:\n- Registration fee: Rs 1,000 (one-time, non-refundable)\n\n**Zero-cost EMI**: Available directly through Chandigarh University (no external marketing partner or NBFC intermediary, a differentiator among Indian online MBAs). Contact our counsellor for current tenure options (6, 12, 18, or 24 months).\n\n**Early Bird Scholarship terms**: Availability varies by admission cycle. The 25% Tier 1 scholarship and 18% Tier 2 scholarship are currently active but subject to timing. Reconfirm eligibility with our counsellor before enrolment.\n\nEdifyEdu reconfirms fees with Chandigarh University each quarter. Please reconfirm current tier options, Early Bird eligibility, and fees with our counsellor before any payment. Fees listed are indicative."

@@ -19,22 +19,55 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Strategy, Business and Globalization", "desc": "Multinational strategy frameworks, market entry modes, and competitive positioning in global markets." },
-            { "name": "Decision Science", "desc": "Analytical models for international trade data, exchange rate analysis, and cross-border financial decisions." },
-            { "name": "Export Import Documentation", "desc": "Letters of credit, bill of lading, customs forms, Incoterms, and compliance documentation for trade." },
-            { "name": "International Economics", "desc": "Trade theories, balance of payments, tariff and non-tariff barriers, and WTO framework." },
-            { "name": "International Trade", "desc": "Trade policy, FTA agreements, India's trade relationships, and export promotion frameworks." },
-            { "name": "Financing of International Trade", "desc": "Trade finance instruments including letters of credit, export factoring, and EXIM bank facilities." }
+            {
+              "name": "Strategy, Business and Globalization",
+              "desc": "Multinational strategy frameworks, market entry modes, and competitive positioning in global markets."
+            },
+            {
+              "name": "Decision Science",
+              "desc": "Analytical models for international trade data, exchange rate analysis, and cross-border financial decisions."
+            },
+            {
+              "name": "Export Import Documentation",
+              "desc": "Letters of credit, bill of lading, customs forms, Incoterms, and compliance documentation for trade."
+            },
+            {
+              "name": "International Economics",
+              "desc": "Trade theories, balance of payments, tariff and non-tariff barriers, and WTO framework."
+            },
+            {
+              "name": "International Trade",
+              "desc": "Trade policy, FTA agreements, India's trade relationships, and export promotion frameworks."
+            },
+            {
+              "name": "Financing of International Trade",
+              "desc": "Trade finance instruments including letters of credit, export factoring, and EXIM bank facilities."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Project Management", "desc": "Managing international projects across time zones, cultures, and regulatory environments." },
-            { "name": "AI for Managers", "desc": "AI tools for trade compliance automation, cross-border logistics optimisation, and market intelligence." },
-            { "name": "International Human Resource Management", "desc": "Expatriate management, cross-cultural teams, global compensation, and international labour law basics." },
-            { "name": "International Advertising and Brand Management", "desc": "Global brand architecture, localisation strategy, cross-cultural advertising, and market adaptation." },
-            { "name": "Capstone Project II", "desc": "Applied international business project on a real market entry, trade, or global expansion challenge." }
+            {
+              "name": "Project Management",
+              "desc": "Managing international projects across time zones, cultures, and regulatory environments."
+            },
+            {
+              "name": "AI for Managers",
+              "desc": "AI tools for trade compliance automation, cross-border logistics optimisation, and market intelligence."
+            },
+            {
+              "name": "International Human Resource Management",
+              "desc": "Expatriate management, cross-cultural teams, global compensation, and international labour law basics."
+            },
+            {
+              "name": "International Advertising and Brand Management",
+              "desc": "Global brand architecture, localisation strategy, cross-cultural advertising, and market adaptation."
+            },
+            {
+              "name": "Capstone Project II",
+              "desc": "Applied international business project on a real market entry, trade, or global expansion challenge."
+            }
           ]
         }
       ]
@@ -46,7 +79,7 @@
       "body": "The International Business specialisation builds skills for global trade and multinational management:\n\n**Technical skills:**\n- Trade Documentation: Incoterms application, letter of credit lifecycle, customs tariff classification, and export incentive schemes (MEIS, RoDTEP)\n- Trade Finance: LC negotiation, forfaiting basics, export factoring, and EXIM Bank credit facility usage\n- International Economics: balance of payments interpretation, exchange rate hedging basics, and tariff impact analysis\n- Cross-Border HR: expatriate compensation design, international assignment management, and dual-career couple policies\n\n**Applied skills:**\n- Market Entry Strategy: joint venture, licensing, franchising, and wholly-owned subsidiary trade-offs for India market entry and Indian companies going global\n- FTA Utilisation: identifying applicable Free Trade Agreements for duty reduction and rules of origin compliance\n\n**Soft skills:** Negotiating across cultural communication styles, building relationships with foreign buyers and distributors, presenting trade finance proposals to bankers, and managing teams across time zones and cultural norms."
     },
     "comparisons": {
-      "body": "Comparing Chandigarh Online MBA International Business against peer programmes:\n\n**vs Amity Online MBA International Business Management:** Amity has strong International Business credentials given its global campus network and NIRF #22. Fee is Rs 2,25,000. CU's NIRF #19 and NAAC A+ at Rs 1,65,000 Tier 1 offer comparable credential strength at lower cost. CU's PwC Trade and Customs advisory content (Tier 2) adds a Big 4 consulting lens Amity lacks.\n\n**vs NMIMS Online MBA International Management:** NMIMS carries strong brand for international management in Mumbai financial and trading companies. Fee is Rs 2,05,000-2,10,000. For Mumbai-based export finance or trading company roles, NMIMS brand premium exists. CU is the better value choice for North India professionals in export houses, manufacturing, or trade finance.\n\n**vs Manipal Jaipur Online MBA International Business:** Both are NAAC A+ with similar fee profiles. CU's distinct advantage is NIRF #19 (vs MUJ's lower rank) and PwC's global trade advisory modules. For professionals in Punjab, Haryana, or Rajasthan export sectors, CU's regional network is also stronger."
+      "body": "Comparing Chandigarh Online MBA International Business against peer programmes:\n\n**vs Amity Online MBA International Business Management:** Amity has strong International Business credentials given its global campus network and NIRF #22. Fee is Rs 2,25,000. CU's NIRF #19 and NAAC A+ at Rs 1,65,000 Tier 1 offer comparable credential strength at lower cost. CU's PwC Trade and Customs advisory content (Tier 2) adds a Big 4 consulting lens Amity lacks.\n\n**vs UPES Online MBA International Business:** UPES International Business at Rs 1,75,000-2,20,000 covers international trade, global business strategy, and cross-border operations with NIRF #45 University credentials. CU’s differentiation is NIRF #19 (significantly stronger rank), PwC Trade and Customs advisory modules (Tier 2), and North India’s export cluster proximity for Punjab, Haryana, and UP-based professionals in export houses and manufacturing. For Dehradun energy sector and oil and gas companies, UPES has stronger regional employer connections.\n\n**vs Manipal Jaipur Online MBA International Business:** Both are NAAC A+ with similar fee profiles. CU's distinct advantage is NIRF #19 (vs MUJ's lower rank) and PwC's global trade advisory modules. For professionals in Punjab, Haryana, or Rajasthan export sectors, CU's regional network is also stronger."
     },
     "fees": {
       "body": "The Chandigarh University Online MBA in International Business offers 2 program tiers based on certification bundle:\n\n**Tier 1 (Primary) - Standard with Harvard ManageMentor Certificate**:\n- Actual program fee: Rs 2,20,000\n- 25% Early Bird Scholarship: Rs 1,65,000 net payable (Rs 55,000 savings)\n- Payment options:\n  - Annual: Rs 82,500 per year x 2 years\n  - Semester-wise: Rs 41,250 per semester x 4 semesters\n  - Full upfront: Rs 1,65,000 one-time\n- Included certification: Harvard Business Publishing certificate\n\n**Tier 2 (Premium Upgrade) - 3-Certificate Bundle**:\n- Actual program fee: Rs 2,20,000 (same base fee)\n- 18% Early Bird Scholarship: Rs 1,80,400 net payable (Rs 39,600 savings)\n- Payment options:\n  - Annual: Rs 90,200 per year x 2 years\n  - Semester-wise: Rs 45,100 per semester x 4 semesters\n  - Full upfront: Rs 1,80,400 one-time\n- Included certifications (3):\n  1. PwC co-created and co-taught MBA modules (unmatched in India)\n  2. CAPM (Certified Associate in Project Management) certification preparation\n  3. Harvard Business Publishing certificate\n\n**Additional charges (both tiers)**:\n- Registration fee: Rs 1,000 (one-time, non-refundable)\n\n**Zero-cost EMI**: Available directly through Chandigarh University (no external marketing partner or NBFC intermediary, a differentiator among Indian online MBAs). Contact our counsellor for current tenure options (6, 12, 18, or 24 months).\n\n**Early Bird Scholarship terms**: Availability varies by admission cycle. The 25% Tier 1 scholarship and 18% Tier 2 scholarship are currently active but subject to timing. Reconfirm eligibility with our counsellor before enrolment.\n\nEdifyEdu reconfirms fees with Chandigarh University each quarter. Please reconfirm current tier options, Early Bird eligibility, and fees with our counsellor before any payment. Fees listed are indicative."

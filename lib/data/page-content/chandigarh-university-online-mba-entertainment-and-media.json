@@ -19,22 +19,55 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Strategy, Business and Globalization", "desc": "Media industry strategy, global entertainment market structure, IP monetisation, and platform economics." },
-            { "name": "Decision Science", "desc": "Audience analytics, content performance metrics, subscriber churn modelling, and advertising revenue forecasting." },
-            { "name": "Media Management", "desc": "Media company operations, editorial and commercial P&L, media brand management, and newsroom economics." },
-            { "name": "Entertainment Industry Economics", "desc": "Revenue models in film, music, gaming, OTT, and sports media. Rights valuation and content licensing economics." },
-            { "name": "Digital Content Strategy and OTT Platform Management", "desc": "Content calendar strategy, OTT content commissioning, streaming platform metrics (DAU, ARPU), and recommendation algorithm basics." },
-            { "name": "Talent and Production Management", "desc": "Talent contracts and management, film and series production management, co-production structures, and content delivery." }
+            {
+              "name": "Strategy, Business and Globalization",
+              "desc": "Media industry strategy, global entertainment market structure, IP monetisation, and platform economics."
+            },
+            {
+              "name": "Decision Science",
+              "desc": "Audience analytics, content performance metrics, subscriber churn modelling, and advertising revenue forecasting."
+            },
+            {
+              "name": "Media Management",
+              "desc": "Media company operations, editorial and commercial P&L, media brand management, and newsroom economics."
+            },
+            {
+              "name": "Entertainment Industry Economics",
+              "desc": "Revenue models in film, music, gaming, OTT, and sports media. Rights valuation and content licensing economics."
+            },
+            {
+              "name": "Digital Content Strategy and OTT Platform Management",
+              "desc": "Content calendar strategy, OTT content commissioning, streaming platform metrics (DAU, ARPU), and recommendation algorithm basics."
+            },
+            {
+              "name": "Talent and Production Management",
+              "desc": "Talent contracts and management, film and series production management, co-production structures, and content delivery."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Project Management", "desc": "Film and series production project management, launch campaign management, and media product rollout." },
-            { "name": "AI for Managers", "desc": "AI in content personalisation, automated content moderation, AI-generated media, and algorithmic discovery management." },
-            { "name": "Media Law and Intellectual Property", "desc": "Copyright, performers' rights, defamation, digital media regulations, TRAI broadcasting rules, and OTT content guidelines." },
-            { "name": "Advertising and Brand Communication in Media", "desc": "Digital advertising models, programmatic buying basics, influencer marketing economics, and media planning for brands." },
-            { "name": "Capstone Project II", "desc": "Applied media project: content strategy, OTT product plan, media brand launch, or entertainment business model design." }
+            {
+              "name": "Project Management",
+              "desc": "Film and series production project management, launch campaign management, and media product rollout."
+            },
+            {
+              "name": "AI for Managers",
+              "desc": "AI in content personalisation, automated content moderation, AI-generated media, and algorithmic discovery management."
+            },
+            {
+              "name": "Media Law and Intellectual Property",
+              "desc": "Copyright, performers' rights, defamation, digital media regulations, TRAI broadcasting rules, and OTT content guidelines."
+            },
+            {
+              "name": "Advertising and Brand Communication in Media",
+              "desc": "Digital advertising models, programmatic buying basics, influencer marketing economics, and media planning for brands."
+            },
+            {
+              "name": "Capstone Project II",
+              "desc": "Applied media project: content strategy, OTT product plan, media brand launch, or entertainment business model design."
+            }
           ]
         }
       ]
@@ -46,7 +79,7 @@
       "body": "The Entertainment and Media specialisation builds skills that media employers require at content manager and operations manager levels:\n\n**Technical skills:**\n- OTT Management: subscriber acquisition economics, content cost per view analysis, DAU/MAU metrics, and catalogue management\n- Media Law: copyright clearance processes, talent contract essentials, defamation basics for digital media, and TRAI compliance for broadcasters\n- Entertainment Economics: rights window strategy (theatrical to OTT), music royalty structures, gaming monetisation models, and sports rights valuation\n- Digital Advertising: programmatic advertising basics, video ad formats, CPM and ROAS benchmarks, and influencer contract management\n\n**Applied skills:**\n- Content Strategy: content calendar planning, genre and format selection for target demographics, localisation strategy, and content gap analysis\n- Production Management: above-the-line and below-the-line budgeting, production schedule management, and post-production workflow\n\n**Soft skills:** Pitching content proposals to commissioning editors and streaming executives, managing creative-commercial tensions in production environments, negotiating talent agreements under competitive bidding conditions, and presenting media brand strategy to advertising clients and investors."
     },
     "comparisons": {
-      "body": "Comparing Chandigarh Online MBA Entertainment and Media against peer programmes:\n\n**vs NMIMS Online MBA Media Management:** NMIMS has strong media management content with Mumbai media industry connections. CU's advantage is NIRF #19 plus the PwC Entertainment and Media advisory (Tier 2) - PwC publishes the Global E&M Outlook, making its advisory insights among the most current available. Fee: CU Rs 1,65,000 Tier 1 vs NMIMS at a higher fee.\n\n**vs Amity Online MBA Media Management:** Amity has strong media programme history through Amity School of Communication. CU's differentiation is OTT Platform Management and Digital Content Strategy subjects that reflect the current media landscape, plus NIRF #19 and PwC E&M advisory co-teaching.\n\n**vs MICA or SIMC campus programmes:** These are top-tier specialised communication schools. Their brand is strong for traditional advertising and PR careers. CU's MBA in Entertainment and Media is the right choice for professionals already in media operations, content management, or OTT roles who need a formal management credential while continuing to work."
+      "body": "Comparing Chandigarh Online MBA Entertainment and Media against peer programmes:\n\n**vs Amity Online MBA Digital Marketing Management:** Amity’s Digital Marketing Management programme at Rs 2,25,000 is the closest Amity online equivalent for media-adjacent professionals, covering digital content strategy, brand communication, and social media management. It does not include OTT Platform Management, Entertainment Industry Economics, Talent and Production Management, or Media Law as dedicated subjects. For professionals in broadcast, OTT operations, film production, or entertainment business roles, CU’s dedicated specialisation is more directly applicable. CU’s NIRF #19 and PwC Entertainment and Media advisory (Tier 2) further differentiate.\n\n**vs UPES Online MBA Digital Business:** UPES Digital Business at Rs 1,75,000-2,20,000 covers digital platform economics and e-commerce strategy. It does not include entertainment-specific subjects: OTT content commissioning, media law, talent management, or entertainment industry revenue models. For professionals targeting OTT platforms, media companies, film production, or entertainment business management, CU’s dedicated programme is more appropriate. UPES Digital Business suits general digital platform and e-commerce career paths.\n\n**vs MICA or SIMC campus programmes:** These are top-tier specialised communication schools. Their brand is strong for traditional advertising and PR careers. CU’s MBA in Entertainment and Media is the right choice for professionals already in media operations, content management, or OTT roles who need a formal management credential while continuing to work."
     },
     "fees": {
       "body": "The Chandigarh University Online MBA in Entertainment and Media offers 2 program tiers based on certification bundle:\n\n**Tier 1 (Primary) - Standard with Harvard ManageMentor Certificate**:\n- Actual program fee: Rs 2,20,000\n- 25% Early Bird Scholarship: Rs 1,65,000 net payable (Rs 55,000 savings)\n- Payment options:\n  - Annual: Rs 82,500 per year x 2 years\n  - Semester-wise: Rs 41,250 per semester x 4 semesters\n  - Full upfront: Rs 1,65,000 one-time\n- Included certification: Harvard Business Publishing certificate\n\n**Tier 2 (Premium Upgrade) - 3-Certificate Bundle**:\n- Actual program fee: Rs 2,20,000 (same base fee)\n- 18% Early Bird Scholarship: Rs 1,80,400 net payable (Rs 39,600 savings)\n- Payment options:\n  - Annual: Rs 90,200 per year x 2 years\n  - Semester-wise: Rs 45,100 per semester x 4 semesters\n  - Full upfront: Rs 1,80,400 one-time\n- Included certifications (3):\n  1. PwC co-created and co-taught MBA modules (unmatched in India)\n  2. CAPM (Certified Associate in Project Management) certification preparation\n  3. Harvard Business Publishing certificate\n\n**Additional charges (both tiers)**:\n- Registration fee: Rs 1,000 (one-time, non-refundable)\n\n**Zero-cost EMI**: Available directly through Chandigarh University (no external marketing partner or NBFC intermediary, a differentiator among Indian online MBAs). Contact our counsellor for current tenure options (6, 12, 18, or 24 months).\n\n**Early Bird Scholarship terms**: Availability varies by admission cycle. The 25% Tier 1 scholarship and 18% Tier 2 scholarship are currently active but subject to timing. Reconfirm eligibility with our counsellor before enrolment.\n\nEdifyEdu reconfirms fees with Chandigarh University each quarter. Please reconfirm current tier options, Early Bird eligibility, and fees with our counsellor before any payment. Fees listed are indicative."

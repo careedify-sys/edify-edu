@@ -19,22 +19,55 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Strategy, Business and Globalization", "desc": "Competitive strategy frameworks, industry analysis, and sustainable competitive advantage in global markets." },
-            { "name": "Decision Science", "desc": "Analytical decision-making tools for complex business problems and multi-criteria management decisions." },
-            { "name": "Corporate Strategy and Policy", "desc": "Corporate-level strategy, portfolio management, diversification decisions, and corporate governance." },
-            { "name": "Cross-Cultural Management", "desc": "Managing diverse teams across cultures, Hofstede frameworks, and international leadership." },
-            { "name": "Corporate Social Responsibility and Sustainability", "desc": "CSR strategy, ESG reporting, stakeholder management, and integrating sustainability into business models." },
-            { "name": "Corporate Mergers and Acquisitions", "desc": "M&A strategy, deal valuation, due diligence, integration planning, and post-merger management." }
+            {
+              "name": "Strategy, Business and Globalization",
+              "desc": "Competitive strategy frameworks, industry analysis, and sustainable competitive advantage in global markets."
+            },
+            {
+              "name": "Decision Science",
+              "desc": "Analytical decision-making tools for complex business problems and multi-criteria management decisions."
+            },
+            {
+              "name": "Corporate Strategy and Policy",
+              "desc": "Corporate-level strategy, portfolio management, diversification decisions, and corporate governance."
+            },
+            {
+              "name": "Cross-Cultural Management",
+              "desc": "Managing diverse teams across cultures, Hofstede frameworks, and international leadership."
+            },
+            {
+              "name": "Corporate Social Responsibility and Sustainability",
+              "desc": "CSR strategy, ESG reporting, stakeholder management, and integrating sustainability into business models."
+            },
+            {
+              "name": "Corporate Mergers and Acquisitions",
+              "desc": "M&A strategy, deal valuation, due diligence, integration planning, and post-merger management."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Project Management", "desc": "General management of complex multi-functional projects and strategic initiative delivery." },
-            { "name": "AI for Managers", "desc": "AI strategy for general managers: automation decisions, AI governance, and workforce transition management." },
-            { "name": "Entrepreneurship and Innovation", "desc": "Business model innovation, startup strategy, intrapreneurship frameworks, and venture development." },
-            { "name": "Business Analytics for Managers", "desc": "Data literacy for general managers: interpreting dashboards, analytics-driven decision-making, and KPI design." },
-            { "name": "Capstone Project II", "desc": "Strategic management project applied to a real business challenge with live industry partner." }
+            {
+              "name": "Project Management",
+              "desc": "General management of complex multi-functional projects and strategic initiative delivery."
+            },
+            {
+              "name": "AI for Managers",
+              "desc": "AI strategy for general managers: automation decisions, AI governance, and workforce transition management."
+            },
+            {
+              "name": "Entrepreneurship and Innovation",
+              "desc": "Business model innovation, startup strategy, intrapreneurship frameworks, and venture development."
+            },
+            {
+              "name": "Business Analytics for Managers",
+              "desc": "Data literacy for general managers: interpreting dashboards, analytics-driven decision-making, and KPI design."
+            },
+            {
+              "name": "Capstone Project II",
+              "desc": "Strategic management project applied to a real business challenge with live industry partner."
+            }
           ]
         }
       ]
@@ -46,7 +79,7 @@
       "body": "The General Management specialisation builds broad strategic and leadership capability that general managers and business owners need:\n\n**Technical skills:**\n- Corporate Strategy: Porter's Five Forces, BCG matrix, Blue Ocean strategy, and strategic planning process design\n- M&A Management: deal screening, valuation techniques (EV/EBITDA, DCF), data room management, and integration workstream planning\n- Sustainability and CSR: SEBI BRSR framework, GRI standards, materiality assessment, and stakeholder engagement processes\n- Business Analytics: dashboard interpretation, KPI hierarchy design, and data-driven business review facilitation\n\n**Applied skills:**\n- Cross-Cultural Management: managing multinational teams, adapting communication styles, and building inclusive team cultures\n- Entrepreneurship: business model canvas, lean startup validation, pitch deck structure, and go-to-market planning\n\n**Soft skills:** Running strategic planning offsite workshops with senior leadership, presenting business case proposals to boards, managing P&L accountability for a business unit, and making decisions with incomplete information under time pressure."
     },
     "comparisons": {
-      "body": "Comparing Chandigarh Online MBA General Management against peer programmes:\n\n**vs Amity Online MBA General Management:** Amity's General Management programme is strong with NIRF #22 brand and a well-rounded curriculum. CU offers comparable NAAC A+ at Rs 1,65,000 Tier 1 (Amity is Rs 2,25,000) with the PwC Management Consulting and M&A advisory content (Tier 2) that Amity's programme does not offer at this co-teaching level.\n\n**vs NMIMS Online MBA General Management:** NMIMS carries strong brand for General Management in BFSI and Mumbai-area consulting firms. Fee is higher at Rs 2,05,000-2,10,000. For candidates in Mumbai targeting financial services, NMIMS is the stronger brand. For North India professionals at a lower fee point, CU is the better value with PwC advisory content.\n\n**vs Manipal Jaipur Online MBA General Management:** Both are NAAC A+ with similar fee profiles. CU differentiates through NIRF #19 and PwC Strategy and M&A advisory (Tier 2). For general managers wanting broader career optionality, CU's corporate M&A and sustainability curriculum is more current."
+      "body": "Comparing Chandigarh Online MBA General Management against peer programmes:\n\n**vs NMIMS Online MBA Business Management:** NMIMS Business Management at Rs 1,96,000-2,20,000 covers cross-functional management with a technology-forward orientation: cybersecurity basics, digital product design, AI concepts, and agile. NMIMS carries strong brand recognition in BFSI and Mumbai corporate hiring. CU General Management at Rs 1,65,000 Tier 1 is more affordable with PwC Management Consulting and M&A advisory content (Tier 2) that NMIMS’s programme does not offer at this co-teaching level.\n\n**vs JAIN Online MBA General Management:** JAIN General Management at Rs 1,75,000-1,96,000 covers HR, marketing, and finance subjects in cross-functional breadth with Bengaluru ecosystem access. CU General Management differentiates through NIRF #19 (stronger rank), PwC co-teaching (Tier 2), Harvard Business Publishing certificate, and North India corporate hiring network. For Bengaluru IT sector general management tracks, JAIN is competitive.\n\n**vs Amity Online MBA across specialisations:** Amity’s programme at Rs 2,25,000 with NIRF #22 covers management subjects across various specialisations. Amity does not offer a standalone General Management specialisation. CU’s dedicated General Management spec with Managerial Economics, Corporate Governance, Sustainability, and M&A subjects offers cross-functional breadth at Rs 1,65,000 Tier 1. PwC Strategy advisory co-teaching (Tier 2) adds consulting-grade content Amity’s programme does not provide at this level."
     },
     "fees": {
       "body": "The Chandigarh University Online MBA in General Management offers 2 program tiers based on certification bundle:\n\n**Tier 1 (Primary) - Standard with Harvard ManageMentor Certificate**:\n- Actual program fee: Rs 2,20,000\n- 25% Early Bird Scholarship: Rs 1,65,000 net payable (Rs 55,000 savings)\n- Payment options:\n  - Annual: Rs 82,500 per year x 2 years\n  - Semester-wise: Rs 41,250 per semester x 4 semesters\n  - Full upfront: Rs 1,65,000 one-time\n- Included certification: Harvard Business Publishing certificate\n\n**Tier 2 (Premium Upgrade) - 3-Certificate Bundle**:\n- Actual program fee: Rs 2,20,000 (same base fee)\n- 18% Early Bird Scholarship: Rs 1,80,400 net payable (Rs 39,600 savings)\n- Payment options:\n  - Annual: Rs 90,200 per year x 2 years\n  - Semester-wise: Rs 45,100 per semester x 4 semesters\n  - Full upfront: Rs 1,80,400 one-time\n- Included certifications (3):\n  1. PwC co-created and co-taught MBA modules (unmatched in India)\n  2. CAPM (Certified Associate in Project Management) certification preparation\n  3. Harvard Business Publishing certificate\n\n**Additional charges (both tiers)**:\n- Registration fee: Rs 1,000 (one-time, non-refundable)\n\n**Zero-cost EMI**: Available directly through Chandigarh University (no external marketing partner or NBFC intermediary, a differentiator among Indian online MBAs). Contact our counsellor for current tenure options (6, 12, 18, or 24 months).\n\n**Early Bird Scholarship terms**: Availability varies by admission cycle. The 25% Tier 1 scholarship and 18% Tier 2 scholarship are currently active but subject to timing. Reconfirm eligibility with our counsellor before enrolment.\n\nEdifyEdu reconfirms fees with Chandigarh University each quarter. Please reconfirm current tier options, Early Bird eligibility, and fees with our counsellor before any payment. Fees listed are indicative."

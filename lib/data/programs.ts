@@ -82,7 +82,10 @@ export function getSpecDisplayName(
   specSlug: string
 ): string | null {
   const row = getProgram(slug, program.toLowerCase(), specSlug)
-  return row?.spec_name || null
+  if (!row) return null
+  if (row.spec_name) return row.spec_name
+  // Fallback: convert slug to Title Case when spec_name is empty in manifest
+  return specSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
 }
 
 /**
