@@ -3229,6 +3229,48 @@
   },
   {
     "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "data-science-and-artificial-intelligence",
+    "spec_name": "Data Science and Artificial Intelligence"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "ai-for-finance",
+    "spec_name": "AI for Finance"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "ai-for-marketing",
+    "spec_name": "AI for Marketing"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "ai-for-human-resources",
+    "spec_name": "AI for Human Resources"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "ai-for-international-finance",
+    "spec_name": "AI for International Finance"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "marketing-and-business-analytics",
+    "spec_name": "Marketing and Business Analytics"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-and-business-analytics",
+    "spec_name": "Human Resource and Business Analytics"
+  },
+  {
+    "university_slug": "jain-university-online",
     "program": "mca",
     "spec_slug": "artificial-intelligence",
     "spec_name": "Artificial Intelligence"
@@ -7084,5 +7126,35 @@
     "program": "mcom",
     "spec_slug": "international-business",
     "spec_name": "International Business"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mca",
+    "spec_slug": "artificial-intelligence-machine-learning",
+    "spec_name": "Artificial Intelligence & Machine Learning"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mca",
+    "spec_slug": "blockchain-technology",
+    "spec_name": "Blockchain Technology"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mca",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mca",
+    "spec_slug": "digital-marketing",
+    "spec_name": "Digital Marketing"
+  },
+  {
+    "university_slug": "dr-dy-patil-vidyapeeth-online",
+    "program": "mca",
+    "spec_slug": "fintech",
+    "spec_name": "FinTech"
   }
 ]
