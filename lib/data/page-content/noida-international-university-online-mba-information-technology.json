@@ -1,0 +1,168 @@
+{
+  "uniSlug": "noida-international-university-online",
+  "program": "MBA",
+  "specSlug": "information-technology",
+  "sections": {
+    "hero": {
+      "eyebrow": "NIU ONLINE MBA",
+      "headline": "NIU Online MBA in Information Technology: Syllabus, Fees and Career Outcomes",
+      "sub": "Noida International University's UGC-DEB approved online MBA with an IT Management specialisation. NAAC A+, WES recognised. Total all-in fee Rs 97,600 after 25% Early Bird discount. Managing E-Business, AI and ML for Business, Cloud Computing, Data Analytics, Network Security, and Knowledge Management in Sem 3-4."
+    },
+    "tldr": "NIU Online MBA IT: NAAC A+, UGC-DEB approved, WES recognised, Rs 97,600 all-in after 25% Early Bird. IT depth with E-Business, Business Process Re-Engineering, AI and ML, Cloud Computing, Data Analytics, Network Security, and Knowledge Management. For IT professionals targeting IT manager and technology leadership roles on a budget.",
+    "about": {
+      "body": "The NIU Online MBA in Information Technology is offered by Noida International University, Greater Noida. NIU holds NAAC A+ accreditation and UGC-DEB approval. The degree is WES recognised.\n\nThe IT specialisation covers 10 dedicated Sem 3-4 subjects spanning IT management, digital business, and emerging technologies. Subjects include Managing E-Business, Business Process Re-Engineering, Database Management Systems, AI and ML for Business, Cloud Computing for Business, Data Analytics for Business Decisions, Managing IT-Enabled Services, Network Operations and Security, Business Data Warehousing and Data Mining, and Knowledge Management.\n\nNIU is not NIRF ranked. Its brand recognition in the IT services sector is limited compared to NIRF-ranked institutions. The programme's strength is the Rs 97,600 all-in fee with solid IT subject coverage. For working IT professionals in Delhi-NCR and Noida's IT corridor who want a management credential to transition from technical to IT management roles, NIU offers a budget-friendly path."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Strategic Management",
+          "description": "Apply strategic frameworks, IT strategy alignment, and competitive positioning to technology-driven business contexts."
+        },
+        {
+          "name": "Legal Aspects of Business",
+          "description": "Study IT-relevant business law, cyber law fundamentals, data protection regulations, and technology contract management."
+        },
+        {
+          "name": "Managing E-Business",
+          "description": "Design e-commerce strategy, digital business models, online marketplace management, and B2B/B2C platform operations."
+        },
+        {
+          "name": "Business Process Re-Engineering",
+          "description": "Apply BPR methodologies, process mapping, workflow automation, and IT-driven business transformation frameworks."
+        },
+        {
+          "name": "Database Management Systems",
+          "description": "Design relational databases, write SQL queries, manage data integrity, and optimise database performance for business applications."
+        },
+        {
+          "name": "AI and ML for Business",
+          "description": "Apply artificial intelligence and machine learning concepts to business automation, prediction, and decision-making."
+        },
+        {
+          "name": "Cloud Computing for Business",
+          "description": "Study cloud deployment models (IaaS, PaaS, SaaS), cloud migration strategy, and cost optimisation for enterprise IT."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Entrepreneurship Development",
+          "description": "Study tech startup planning, IT venture models, and technology entrepreneurship fundamentals."
+        },
+        {
+          "name": "Digital Marketing and E-Commerce",
+          "description": "Apply digital channel strategy, e-commerce analytics, and technology marketing to IT product and service businesses."
+        },
+        {
+          "name": "Data Analytics for Business Decisions",
+          "description": "Use data analysis techniques, statistical methods, and visualisation tools for business intelligence and decision support."
+        },
+        {
+          "name": "Managing IT-Enabled Services",
+          "description": "Manage ITES operations, BPO/KPO service delivery, SLA management, and IT outsourcing governance."
+        },
+        {
+          "name": "Network Operations and Security",
+          "description": "Study network infrastructure management, cybersecurity fundamentals, firewall configuration, and IT security compliance."
+        },
+        {
+          "name": "Business Data Warehousing and Data Mining",
+          "description": "Design data warehouse architecture, apply ETL processes, and use data mining techniques for business pattern discovery."
+        },
+        {
+          "name": "Knowledge Management",
+          "description": "Implement knowledge management systems, organisational learning frameworks, and intellectual capital management strategies."
+        }
+      ],
+      "note": "Sem 1-2 shared core subjects across all NIU Online MBA specialisations. Strategic Management and Legal Aspects of Business are common Sem 3 subjects. Entrepreneurship Development and Digital Marketing and E-Commerce are common Sem 4 subjects."
+    },
+    "whoHires": {
+      "body": "IT Management MBA graduates target these industries and roles:\n\n**Industries:** IT services and consulting, E-commerce, BFSI technology, Telecom, Healthcare IT, EdTech, SaaS companies\n\n**Entry-level roles:** IT Business Analyst, Systems Analyst, IT Project Coordinator, ERP Consultant, Technology Analyst\n\n**Mid-level roles (3-5 years):** IT Manager, IT Project Manager, Technology Consultant, Solutions Architect (Business), IT Service Delivery Manager\n\n**Senior roles (7+ years):** CTO, VP Technology, IT Director, Head of Digital Transformation, Chief Information Officer\n\n**Typical hiring organisations in Delhi-NCR:** Infosys, TCS, Wipro, HCL Technologies, Tech Mahindra, Cognizant, Genpact, Accenture India, IBM India, Microsoft India, Oracle India, Paytm"
+    },
+    "skills": {
+      "body": "The NIU IT specialisation builds skills tested by IT services and technology employers:\n\n**Technical management skills:**\n- Cloud Computing for Business: cloud deployment strategy, IaaS/PaaS/SaaS evaluation, migration planning, and cost optimisation for IT infrastructure roles\n- AI and ML for Business: business AI applications, ML model evaluation, and AI-driven automation for technology strategy roles\n- Database Management Systems: SQL, database design, data integrity, and performance tuning for data management and BI roles\n- Network Operations and Security: network infrastructure, cybersecurity, firewall management, and IT security compliance for IT operations roles\n\n**Business IT skills:**\n- Managing E-Business: e-commerce platform strategy, digital business models, and online marketplace management for digital business roles\n- Business Process Re-Engineering: process mapping, workflow automation, and IT-driven transformation for consulting and process improvement roles\n- Data Analytics for Business Decisions: statistical analysis, data visualisation, and business intelligence for analytics and BI roles\n- Business Data Warehousing and Data Mining: ETL design, data warehouse architecture, and pattern discovery for BI and data engineering roles\n\n**Soft skills:** IT project communication, vendor management, cross-functional technology stakeholder alignment, and IT governance reporting."
+    },
+    "comparisons": {
+      "body": "Comparing NIU Online MBA IT against peers:\n\n**vs Galgotias Online MBA (Rs 86,400):** Galgotias is slightly cheaper and NCR-based. NIU IT offers 10 dedicated IT subjects including Cloud Computing, AI/ML, and Network Security. Both lack NIRF ranking. NIU has stronger IT subject depth.\n\n**vs Uttaranchal Online MBA (Rs 94,000-98,000):** Near-identical fee bracket. Both lack NIRF ranking. Compare specific IT subject availability. NIU's AI/ML and Cloud Computing coverage gives it an edge for technology management careers.\n\n**vs IGNOU MBA (Rs 66,000):** IGNOU is cheaper with government brand but has limited IT specialisation depth and no modern cloud/AI subjects. NIU offers dedicated IT subjects at Rs 31,600 more.\n\n**vs Amity Online MBA IT (Rs 2,25,000):** Amity is NIRF #22 with stronger IT services brand recognition at 2.3x the cost. For IT services companies where brand premium drives hiring, Amity justifies the fee. NIU wins on affordability.\n\n**vs CU Online MBA (Rs 1,65,000):** CU is NIRF #19 with PwC partnerships. CU costs Rs 67,400 more. For IT management roles at large companies, CU's brand and industry partnerships add value.\n\n**vs LPU Online MBA IT (Rs 1,61,000):** LPU is NIRF #31 with Coursera Plus and zero-cost EMI. LPU has stronger brand recognition in North India IT. NIU wins purely on affordability."
+    },
+    "fees": {
+      "body": "The NIU Online MBA in Information Technology fee structure:\n\n**After 25% Early Bird Discount (all-in):**\n- Tuition: Rs 88,500\n- Examination fee: Rs 8,000 (Rs 2,000 per semester x 4)\n- Registration fee: Rs 1,100 (one-time, serves as application fee)\n- Total all-in cost: Rs 97,600\n\n**Standard fee (before scholarship):**\n- Semester fee: Rs 29,500 per semester\n- Examination fee: Rs 2,000 per semester\n- Registration fee: Rs 1,100 (one-time)\n\n**EMI option:**\nEMI options are available through financing partners. Zero-cost EMI may not be guaranteed. Confirm the interest rate and EMI terms with the admissions team before committing.\n\n**Scholarships:** No scholarships beyond the 25% Early Bird discount. No bundled perks or certification add-ons.\n\nFees listed are indicative. EdifyEdu reconfirms fees with NIU each quarter. Please reconfirm with our counsellor before any payment."
+    },
+    "certificate": {
+      "body": "The degree certificate is issued by Noida International University (NIU) and carries the MBA designation. The Information Technology specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is WES recognised for international credential evaluation. It is valid for corporate hiring, PSU eligibility, and higher education admission across India."
+    },
+    "reviews": {
+      "intro": "Three reviews from NIU Online MBA IT students. Ratings from post-completion feedback.",
+      "items": [
+        {
+          "name": "Saurabh",
+          "city": "Noida",
+          "year": 2025,
+          "rating": 4.0,
+          "liked": "Cloud Computing for Business and AI and ML for Business subjects were relevant to my IT services career. The Rs 97,600 all-in fee is the lowest I found for a NAAC A+ IT MBA.",
+          "disliked": "NIU brand is not well known at large IT services firms like Infosys or TCS compared to LPU or Amity.",
+          "body": "For IT professionals already working in Noida's IT corridor, NIU provides a management credential at the lowest NAAC A+ fee. The IT subjects cover modern topics including cloud and AI. Brand recognition is limited, so plan to rely on your work experience for job transitions."
+        },
+        {
+          "name": "Pooja",
+          "city": "Greater Noida",
+          "year": 2024,
+          "rating": 4.2,
+          "liked": "Data Analytics for Business Decisions and Database Management Systems were practical. Network Security coverage was a useful addition.",
+          "disliked": "Career services for IT management roles were basic. No industry certifications bundled with the programme.",
+          "body": "Good IT management coverage at an unbeatable price. The 10 IT subjects span both traditional IT management and modern technologies. I used the BPR and Knowledge Management subjects directly in my IT consulting role. Self-sourced job search is necessary."
+        },
+        {
+          "name": "Manish",
+          "city": "Ghaziabad",
+          "year": 2025,
+          "rating": 3.9,
+          "liked": "Managing E-Business and Business Data Warehousing subjects were well-structured. Fee advantage over competing programmes was significant.",
+          "disliked": "EMI terms were not clearly zero-cost. Had to verify interest rates with the financing partner separately.",
+          "body": "At Rs 97,600, the IT subject depth is strong for the price. Managing IT-Enabled Services and Knowledge Management are subjects most budget MBAs skip. Confirm EMI interest rates before enrolling. The degree is valid for IT management roles but brand recognition needs improvement."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does NIU Online MBA IT cover Cloud Computing and AI?",
+        "answer": "Yes. Cloud Computing for Business and AI and ML for Business are dedicated Sem 3 subjects. These cover cloud deployment models, migration strategy, AI business applications, and ML concepts for technology management roles."
+      },
+      {
+        "question": "Is NIU Online MBA IT suitable for IT services professionals?",
+        "answer": "Yes. The programme covers IT service delivery (Managing IT-Enabled Services), network security, cloud computing, and BPR, all directly relevant to IT services and consulting roles. Working IT professionals can apply subjects immediately."
+      },
+      {
+        "question": "What is the total fee for NIU Online MBA IT?",
+        "answer": "Rs 97,600 all-in after the 25% Early Bird discount. This includes Rs 88,500 tuition, Rs 8,000 exam fees, and Rs 1,100 registration fee. No additional charges."
+      },
+      {
+        "question": "Is NIU Online MBA IT NIRF ranked?",
+        "answer": "No. NIU does not have a NIRF ranking. The university holds NAAC A+ accreditation and UGC-DEB approval. If NIRF ranking matters for IT careers, consider LPU (NIRF #31), CU (NIRF #19), or Amity (NIRF #22)."
+      },
+      {
+        "question": "Does NIU Online MBA IT include cybersecurity subjects?",
+        "answer": "Yes. Network Operations and Security is a dedicated Sem 4 subject covering network infrastructure, cybersecurity fundamentals, firewall configuration, and IT security compliance."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want a NAAC A+ IT management MBA with 10 dedicated IT subjects at Rs 97,600 all-in.",
+        "You are a Delhi-NCR IT professional targeting IT manager or technology leadership roles on a tight budget.",
+        "You want cloud computing, AI/ML, and network security subjects alongside traditional IT management at a sub-1-lakh price."
+      ],
+      "consider": [
+        "If IT services brand recognition matters, LPU (Rs 1.61L, NIRF #31) or Amity (Rs 2.25L, NIRF #22) carry stronger recognition at IT companies.",
+        "If industry certifications are a priority, LPU offers Coursera Plus and CU offers PwC certifications. NIU has no bundled certifications.",
+        "If zero-cost EMI is essential, LPU offers guaranteed zero-cost 24-month EMI. NIU's EMI terms may carry interest."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2050,
+    "generatedAt": "2026-04-23",
+    "batchNumber": 26,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-23"
+  }
+}
