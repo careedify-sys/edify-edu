@@ -1,0 +1,132 @@
+{
+  "uniSlug": "uttaranchal-university-online",
+  "program": "mba",
+  "specSlug": "business-analytics",
+  "sections": {
+    "hero": {
+      "eyebrow": "UTTARANCHAL ONLINE MBA",
+      "headline": "Uttaranchal University Online MBA in Business Analytics: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A+ | UGC-DEB Approved | 30% Early Bird Scholarship | Net fee from ₹94,000"
+    },
+    "tldr": "Uttaranchal University Online MBA in Business Analytics covers Big Data Analytics in Business, R Programming for Business, Marketing and Social Media Analytics, Python Programming and Data Visualization, and Financial Statement Analysis. R + Python + Big Data at a net fee from ₹94,000 (one-time) after 30% Early Bird Scholarship. No-cost EMI from ₹3,956/month. No bundled perks. NAAC A+ accredited.",
+    "about": {
+      "body": "Uttaranchal University's Online MBA in Business Analytics includes both R Programming and Python Programming as standalone subjects alongside Big Data Analytics in Business. At a net fee from ₹94,000, this is one of the most affordable online MBA programmes with dual R+Python curriculum coverage.\n\nSemester 3 covers Big Data Analytics in Business (Hadoop/Spark concepts, big data use cases), R Programming for Business (data manipulation with dplyr, visualisation with ggplot2, statistical modelling), and Marketing and Social Media Analytics (campaign ROI, social media metrics, customer segmentation). Semester 4 adds Python Programming and Data Visualization (pandas, matplotlib, seaborn, dashboard design) and financial analysis depth through the common core.\n\nUttaranchal University (UU), Dehradun is a UGC-recognised private university with NAAC A+ accreditation. The 30% Early Bird Scholarship reduces the gross programme fee of ₹1,40,000 to ₹98,000 (semester track) or ₹94,000 (one-time payment with additional concession). Exam fees of ₹2,500 per semester are included in the quoted figures.\n\nNo bundled perks (no Coursera, LinkedIn Learning, or certifications). No-cost EMI from ₹3,956/month directly through the university.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Semesters 1-2 cover the common MBA core (Principles of Management, Accounting, Economics, Business Environment, E-Commerce in Sem 1; Business Law, Research Methods, Marketing, Business Analytics, Operations Management in Sem 2). Semesters 3-4 below show the Business Analytics specialisation subjects.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Strategic Management", "desc": "Corporate strategy frameworks, competitive advantage, strategic planning, and business model analysis." },
+            { "name": "Supply Chain Management", "desc": "Supply chain design, demand planning, inventory optimisation, and logistics coordination." },
+            { "name": "Financial Statement Analysis", "desc": "Ratio analysis, DuPont decomposition, cash flow analysis, and earnings quality assessment." },
+            { "name": "Big Data Analytics in Business", "desc": "Hadoop/Spark ecosystem overview, big data architecture concepts, NoSQL basics, and big data use cases in retail, banking, and telecom." },
+            { "name": "R Programming for Business", "desc": "Statistical computing with R, data manipulation with dplyr/tidyr, visualisation with ggplot2, and predictive model building for business decisions." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Entrepreneurship Development", "desc": "Startup ideation, business plan development, funding strategies, and entrepreneurial risk management." },
+            { "name": "Corporate Governance", "desc": "Board structure, shareholder rights, corporate ethics, regulatory compliance, and governance frameworks." },
+            { "name": "Project Work", "desc": "Applied analytics project using R/Python on a real business dataset. Faculty-supervised with evaluation." },
+            { "name": "Marketing and Social Media Analytics", "desc": "Campaign ROI measurement, social media metrics and KPIs, customer segmentation analytics, sentiment analysis basics, and attribution modelling." },
+            { "name": "Python Programming and Data Visualization", "desc": "Python basics for analytics, pandas DataFrames, matplotlib/seaborn visualisation, dashboard creation, and data storytelling techniques." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "Uttaranchal MBA Business Analytics graduates target data-driven management roles:\n\n**Industries:** IT services, banking, e-commerce, retail, telecom, FMCG, healthcare analytics, and consulting\n\n**Entry-level roles:** Business Analyst, Data Analyst, MIS Executive, Reporting Analyst, Marketing Analytics Associate, BI Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Business Analyst, Analytics Manager, BI Manager, Marketing Analytics Lead, Data Strategy Manager\n\n**Senior roles (7+ years):** Head of Analytics, VP Data Strategy, Director of BI, Chief Analytics Officer\n\n**Employers:** IT services (TCS, Infosys, Wipro, Cognizant), banking (HDFC, ICICI analytics teams), e-commerce (Flipkart, Amazon India), and North India/Uttarakhand regional employers.\n\n**Note:** UU provides career support. Online MBA brand recognition is developing. Dehradun location provides access to Uttarakhand and North India regional recruiters."
+    },
+    "skills": {
+      "body": "The Business Analytics specialisation builds dual-language (R + Python) analytics skills:\n\n**Technical skills:**\n- R Programming: dplyr data wrangling, ggplot2 visualisation, statistical modelling (lm, glm), and time series analysis basics\n- Python Analytics: pandas DataFrames, matplotlib/seaborn charts, data cleaning automation, and basic ML model training with scikit-learn\n- Big Data: Hadoop/Spark architecture understanding, MapReduce concepts, and big data use-case identification\n- Marketing Analytics: campaign ROI calculation, social media KPI tracking, customer segmentation, and attribution model comparison\n\n**Applied skills:**\n- Financial Statement Analysis: ratio trend analysis, DuPont decomposition, and cash flow pattern recognition\n- Data Visualization: dashboard design for executive reporting, chart selection for different audiences, and data storytelling\n\n**Soft skills:** Presenting analytics findings to non-technical stakeholders, managing analytics project timelines, translating data insights into business recommendations."
+    },
+    "comparisons": {
+      "body": "Comparing Uttaranchal Online MBA Business Analytics against peer programmes:\n\n**vs Galgotias Online MBA Business Analytics:** Galgotias at ₹86,400 all-in is ₹7,600 cheaper (one-time track). Galgotias has AI for Business + Python. Uttaranchal has R + Python + Big Data (three tech subjects vs two). Both are in the budget tier. Uttaranchal wins on analytics curriculum depth. Galgotias wins on fee (marginally) and NCR location.\n\n**vs IGNOU Online MBA (no dedicated BA spec):** IGNOU at ₹66,000 does not offer a dedicated Business Analytics specialisation. IGNOU is cheaper but has no Python, R, or big data content. Uttaranchal at ₹94,000 adds genuine analytics depth for ₹28,000 more.\n\n**vs Chandigarh University Online MBA Business Analytics:** CU at ₹1,65,000 with NIRF #19 and PwC co-teaching. CU wins on NIRF rank and PwC brand. Uttaranchal at ₹94,000 is ₹71,000 cheaper with R + Python dual coverage. For budget-constrained candidates, Uttaranchal competes on fee.\n\n**vs JIIT Online MBA IT and Business Analytics:** JIIT at ₹1,82,000 with mandatory internship, blockchain, and AI-in-Business core. JIIT has broader IT+analytics scope. Uttaranchal at ₹94,000 is roughly half the cost with R + Python + Big Data depth. Choose JIIT for IT management breadth. Choose Uttaranchal for analytics depth at budget fee."
+    },
+    "fees": {
+      "body": "The Uttaranchal University Online MBA in Business Analytics has multiple payment tracks. All quoted figures include the 30% Early Bird Scholarship and examination fees.\n\n**Total programme fee before scholarship:** ₹1,40,000\n**After 30% Early Bird Scholarship:** ₹98,000 (semester track) / ₹94,000 (one-time track)\n**Saving:** ₹42,000 for eligible applicants\n\n**Payment options (net after Early Bird):**\n- One-time payment: ₹94,000 (includes ₹4,000 additional concession)\n- Annual payment: ₹47,000 x 2 years = ₹94,000 (includes ₹2,000/year additional concession)\n- Semester payment: ₹24,500 x 4 semesters = ₹98,000 (standard Early Bird, no additional concession)\n\n**Note:** One-time and annual tracks save ₹4,000 compared to the semester track due to additional concession.\n\n**No-cost EMI:** ₹3,956/month directly through the university.\n\n**Exam fee:** ₹2,500 per semester already included in quoted figures. No separate exam charges.\n\n**Application/registration fee:** No separate application fee.\n\n**Scholarships:** 30% Early Bird Scholarship only. Available within the admission window. Confirm current eligibility with our counsellor.\n\n**Bundled perks:** None (no Coursera, LinkedIn Learning, or certifications).\n\nFees listed are indicative. EdifyEdu reconfirms fees with Uttaranchal University each quarter. Please reconfirm with our counsellor before any payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Business Analytics as the specialisation, issued by Uttaranchal University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A+ accreditation and UGC-DEB approval. Valid for government recruitment, PSU applications, and private-sector analytics roles. WES recognised for international credential evaluation. DigiLocker issuance is standard."
+    },
+    "reviews": {
+      "intro": "Three reviews from Uttaranchal University Online MBA Business Analytics students. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Deepak K.",
+          "city": "Dehradun",
+          "year": 2024,
+          "rating": 4,
+          "liked": "R Programming and Python in one MBA at ₹94,000 is genuinely hard to find elsewhere. The dual-language coverage is the main draw",
+          "disliked": "No bundled perks at all. CU at ₹1,65,000 includes PwC co-teaching. Galgotias at ₹86,400 is even cheaper. UU sits in a tight spot between them",
+          "body": "I chose UU because the analytics curriculum has R, Python, and Big Data as standalone subjects. At ₹94,000 one-time, it is the most affordable option with this tech depth. The 30% Early Bird made the fee manageable. The LMS is functional but not polished. The main limitation is brand recognition. UU is known locally in Uttarakhand but not nationally for online MBA."
+        },
+        {
+          "name": "Priya M.",
+          "city": "Lucknow",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Big Data Analytics subject covered Hadoop/Spark concepts at a level useful for my BI analyst role. Marketing Analytics was practical",
+          "disliked": "Career services for online MBA are minimal. Placement support is primarily for on-campus students. Online learners network independently",
+          "body": "The analytics subjects are solid for the price. The Python and R modules are introductory but give enough foundation to build on. The project work forced me to apply what I learned to a real dataset. At ₹94,000 after Early Bird, the ROI is reasonable if you are self-directed about career navigation."
+        },
+        {
+          "name": "Sanjay V.",
+          "city": "Delhi",
+          "year": 2023,
+          "rating": 3.8,
+          "liked": "Exam fee included in semester fee is transparent. No surprise charges unlike some other budget programmes",
+          "disliked": "Early Bird Scholarship has an admission window. Students who miss the window pay ₹1,40,000 gross, which is less competitive",
+          "body": "The programme delivers on its price promise. R + Python + Big Data at ₹94,000 is value. The delivery quality is adequate but not premium. Some recorded lectures need updating. The Early Bird is the key to making this competitive. Without it, the gross fee of ₹1,40,000 is closer to LPU/CU territory where brand recognition is stronger."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does the programme teach both R and Python?",
+        "answer": "Yes. R Programming for Business (Sem 3) covers dplyr, ggplot2, and statistical modelling. Python Programming and Data Visualization (Sem 4) covers pandas, matplotlib/seaborn, and dashboard creation. Both are standalone subjects, not modules within a broader course."
+      },
+      {
+        "question": "What does the 30% Early Bird Scholarship save?",
+        "answer": "₹42,000. Gross fee is ₹1,40,000; net after Early Bird is ₹98,000 (semester) or ₹94,000 (one-time with additional concession). Early Bird is available within the admission window. Confirm eligibility with our counsellor."
+      },
+      {
+        "question": "Is the exam fee separate?",
+        "answer": "No. Exam fee of ₹2,500 per semester is already included in the quoted semester fee of ₹24,500. No separate exam charges. This is a transparency edge over some competing programmes."
+      },
+      {
+        "question": "Is EMI available?",
+        "answer": "Yes. No-cost EMI from ₹3,956/month directly through the university. No external financing partners involved."
+      },
+      {
+        "question": "Are there any bundled perks?",
+        "answer": "No. No Coursera, LinkedIn Learning, edX, or third-party certifications are bundled. The programme is priced to reflect this positioning."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want R + Python + Big Data in one MBA programme at a net fee from ₹94,000.",
+        "The 30% Early Bird Scholarship makes this one of the most affordable analytics MBAs on the platform.",
+        "Exam fee included in semester fee (no hidden charges) matters to you.",
+        "No-cost EMI from ₹3,956/month fits your monthly budget."
+      ],
+      "consider": [
+        "Brand recognition matters. UU is not in the same tier as Amity, MAHE, CU, or LPU for online MBA.",
+        "Galgotias at ₹86,400 is marginally cheaper with AI for Business + Python.",
+        "CU at ₹1,65,000 with NIRF #19 and PwC co-teaching offers stronger credential at a higher fee.",
+        "Without Early Bird, the gross fee of ₹1,40,000 is less competitive against peers with stronger brand."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2100,
+    "generatedAt": "2026-04-23",
+    "batchNumber": 25,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-23"
+  }
+}

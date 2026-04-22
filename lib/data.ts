@@ -3761,8 +3761,8 @@ export const UNIVERSITIES: University[] = [
     govtRecognised: true,
     psuEligible: true,
     feeMin: 94000,
-    feeMax: 120000,
-    emiFrom: 2500,
+    feeMax: 98000,
+    emiFrom: 3956,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     highlight: 'NAAC A+',
@@ -3773,7 +3773,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'BA'],
     programDetails: {
       'MBA': {
-        specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'Business Analytics', 'International Business', 'Digital Marketing', 'Healthcare Management'],
+        specs: ['Marketing Management', 'Financial Management', 'HR Management', 'Logistics & Supply Chain Management', 'Business Analytics', 'International Business', 'Digital Marketing', 'Information Technology'],
         fees: '₹94K',
         duration: '2 Yrs',
         roles: ['Business Analyst', 'Marketing Executive', 'HR Executive', 'Finance Analyst', 'Digital Marketing Executive', 'Supply Chain Analyst'],
