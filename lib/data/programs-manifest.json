@@ -554,74 +554,50 @@
   {
     "university_slug": "amrita-vishwa-vidyapeetham-online",
     "program": "mba",
-    "spec_slug": "",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "amrita-vishwa-vidyapeetham-online",
-    "program": "mba",
     "spec_slug": "artificial-intelligence",
-    "spec_name": ""
+    "spec_name": "Artificial Intelligence"
   },
   {
     "university_slug": "amrita-vishwa-vidyapeetham-online",
     "program": "mba",
     "spec_slug": "business-analytics",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "amrita-vishwa-vidyapeetham-online",
-    "program": "mba",
-    "spec_slug": "environmental-social-and-governance-esg",
-    "spec_name": ""
+    "spec_name": "Business Analytics"
   },
   {
     "university_slug": "amrita-vishwa-vidyapeetham-online",
     "program": "mba",
     "spec_slug": "esg",
-    "spec_name": ""
+    "spec_name": "Environmental, Social and Governance (ESG)"
   },
   {
     "university_slug": "amrita-vishwa-vidyapeetham-online",
     "program": "mba",
     "spec_slug": "finance",
-    "spec_name": ""
+    "spec_name": "Finance"
   },
   {
     "university_slug": "amrita-vishwa-vidyapeetham-online",
     "program": "mba",
     "spec_slug": "fintech",
-    "spec_name": ""
+    "spec_name": "FinTech"
   },
   {
     "university_slug": "amrita-vishwa-vidyapeetham-online",
     "program": "mba",
     "spec_slug": "human-resource-management",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "amrita-vishwa-vidyapeetham-online",
-    "program": "mba",
-    "spec_slug": "international-finance-and-accounting-acca",
-    "spec_name": ""
+    "spec_name": "Human Resource Management"
   },
   {
     "university_slug": "amrita-vishwa-vidyapeetham-online",
     "program": "mba",
     "spec_slug": "marketing",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "amrita-vishwa-vidyapeetham-online",
-    "program": "mba",
-    "spec_slug": "operations",
-    "spec_name": ""
+    "spec_name": "Marketing"
   },
   {
     "university_slug": "amrita-vishwa-vidyapeetham-online",
     "program": "mba",
     "spec_slug": "operations-management",
-    "spec_name": ""
+    "spec_name": "Operations Management"
   },
   {
     "university_slug": "amrita-vishwa-vidyapeetham-online",
@@ -6984,36 +6960,6 @@
     "spec_name": ""
   },
   {
-    "university_slug": "ignou-online",
-    "program": "mba",
-    "spec_slug": "general-management-finance",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "ignou-online",
-    "program": "mba",
-    "spec_slug": "general-management-hr",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "ignou-online",
-    "program": "mba",
-    "spec_slug": "general-management-marketing",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "ignou-online",
-    "program": "mba",
-    "spec_slug": "general-management-operations",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "ignou-online",
-    "program": "mba",
-    "spec_slug": "general-management-strategy",
-    "spec_name": ""
-  },
-  {
     "university_slug": "vtu-online",
     "program": "mba",
     "spec_slug": "human-resource-management",
@@ -7216,5 +7162,47 @@
     "program": "mba",
     "spec_slug": "product-management",
     "spec_name": "Product Management"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mba",
+    "spec_slug": "international-finance-accounting",
+    "spec_name": "International Finance and Accounting"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mba",
+    "spec_slug": "general-management",
+    "spec_name": "General Management"
+  },
+  {
+    "university_slug": "ignou-online",
+    "program": "mba",
+    "spec_slug": "financial-management",
+    "spec_name": "Financial Management"
+  },
+  {
+    "university_slug": "ignou-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "ignou-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "ignou-online",
+    "program": "mba",
+    "spec_slug": "operations-management",
+    "spec_name": "Operations Management"
+  },
+  {
+    "university_slug": "ignou-online",
+    "program": "mba",
+    "spec_slug": "services-management",
+    "spec_name": "Services Management"
   }
 ]
