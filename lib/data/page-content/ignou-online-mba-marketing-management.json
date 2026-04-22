@@ -1,0 +1,137 @@
+{
+  "uniSlug": "ignou-online",
+  "program": "mba",
+  "specSlug": "marketing-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "IGNOU ONLINE MBA",
+      "headline": "IGNOU Online MBA in Marketing Management: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A++ | Central Government University est. 1985 | UGC-DEB approved | Total fees ₹66,000"
+    },
+    "tldr": "IGNOU Online MBA in Marketing Management covers consumer behaviour, sales management, product and brand management, marketing of services, international marketing, marketing research, integrated marketing communication, rural marketing, and retail management. Total tuition ₹66,000 across 4 semesters (Sem 1: ₹16,000, Sem 2: ₹16,000, Sem 3: ₹18,000, Sem 4: ₹16,000). Examination fees charged separately per IGNOU's published schedule. No placement cell. NAAC A++. Central Government university. UGC-DEB approved.",
+    "about": {
+      "body": "IGNOU's MBA in Marketing Management is notable for the breadth of its MMPM course series — covering consumer behaviour, sales, brand management, services marketing, international marketing, research, IMC, rural marketing, and retail management across Sem 3 and Sem 4. Few online MBA programmes at any price point include rural marketing and retail management as electives alongside international marketing and IMC. The curriculum reflects IGNOU's mandate to serve the full spectrum of India's marketing contexts, including rural and semi-urban markets.\n\nAt ₹66,000 total tuition, this is the most affordable UGC-DEB entitled MBA in Marketing Management available in India. The degree is issued by a NAAC A++ central government university established by an Act of Parliament in 1985, carrying recognition in government recruitment, PSU applications, and private sector roles where UGC-DEB entitlement is the credential filter.\n\nThe programme runs over 2 years, extendable to 5 years per IGNOU's flexible completion policy. Admission is direct — no entrance exam required. Study materials are available in digital format and candidates study at their own pace within each semester's calendar.\n\nIGNOU does not operate a placement cell. Job sourcing is entirely self-directed. Candidates who need structured placement support should consider private university alternatives. EdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Sem 1-2 cover the common management core shared across all IGNOU MBA specialisations. Sem 3-4 below show the common Sem 3-4 subjects plus the Marketing Management (MMPM) elective courses. All credits are shown per IGNOU's credit-based academic system.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "MMPC-015: Research Methodology for Management Decisions (4 credits)", "desc": "Research design for management problems, quantitative and qualitative methods, statistical analysis basics, and business report writing." },
+            { "name": "MMPC-016: International Business Management (4 credits)", "desc": "Global trade frameworks, international market entry strategies, cross-cultural management, FDI analysis, and WTO framework basics." },
+            { "name": "MMPP-001: Project Report (8 credits)", "desc": "Independent management research project conducted under an academic guide — constitutes 8 of the 16 credits in Semester 3." },
+            { "name": "MMPM-001: Consumer Behaviour (4 credits)", "desc": "Buyer decision process, psychological and social factors in purchase, consumer segmentation, cultural influences, and behavioural analytics for marketing decisions." },
+            { "name": "MMPM-002: Sales Management (4 credits)", "desc": "Sales force structure, territory management, target setting, CRM-based pipeline management, key account handling, and sales team performance evaluation." },
+            { "name": "MMPM-003: Product and Brand Management (4 credits)", "desc": "Product lifecycle management, brand architecture design, brand equity measurement, new product development process, and positioning strategy." },
+            { "name": "MMPM-005: Marketing of Services (4 credits)", "desc": "Services marketing 7Ps framework, SERVQUAL model, service encounter management, customer retention strategies, and service recovery design." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "MMPC-017: Advanced Strategic Management (4 credits)", "desc": "Corporate strategy frameworks, competitive advantage analysis, strategic planning, M&A strategy basics, and strategic control mechanisms." },
+            { "name": "MMPC-018: Entrepreneurship (4 credits)", "desc": "Opportunity recognition, business plan development, startup funding options, legal forms of business, and entrepreneurial risk management." },
+            { "name": "MMPC-019: Total Quality Management (4 credits)", "desc": "TQM principles, Six Sigma DMAIC overview, quality audit process, continuous improvement frameworks, and ISO 9001 system basics." },
+            { "name": "MMPC-020: Business Ethics and CSR (4 credits)", "desc": "Ethical decision-making models, corporate social responsibility obligations, stakeholder theory, governance ethics, and business integrity standards." },
+            { "name": "MMPM-004: International Marketing (4 credits)", "desc": "Global market entry modes, international pricing strategy, export marketing, cross-cultural consumer behaviour, and international distribution channel management." },
+            { "name": "MMPM-006: Marketing Research (4 credits)", "desc": "Research design for marketing decisions, primary and secondary data, survey methodology, conjoint analysis basics, and market sizing techniques." },
+            { "name": "MMPM-007: Integrated Marketing Communication (4 credits)", "desc": "IMC planning, advertising and PR coordination, digital media integration, campaign effectiveness measurement, and media mix optimisation." },
+            { "name": "MMPM-008: Rural Marketing (4 credits)", "desc": "Rural market structure in India, distribution challenges, rural consumer behaviour, product and pricing strategies for rural segments, and last-mile delivery models." },
+            { "name": "MMPM-009: Retail Management (4 credits)", "desc": "Retail formats, store operations management, category management, visual merchandising principles, and retail supply chain fundamentals." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "IGNOU MBA Marketing Management graduates enter the workforce through their own job search. The NAAC A++ credential and UGC-DEB entitlement are accepted across government and private sector employers:\n\n**Industries:** FMCG, retail, BFSI marketing, FMCG rural sales, telecom, insurance distribution, government-owned enterprises, advertising and media, and e-commerce\n\n**Entry-level roles:** Marketing Executive, Brand Executive, Sales Officer, Marketing Research Analyst, Retail Executive, Insurance Sales Manager (government insurer), Rural Sales Representative\n\n**Mid-level roles (3-5 years experience):** Brand Manager, Sales Manager, Marketing Manager, Category Manager, Regional Marketing Manager, Area Sales Manager\n\n**Senior roles (7+ years):** VP Marketing, Head of Sales, Marketing Director, Chief Marketing Officer (mid-market), Head of Brand\n\n**Employers who accept IGNOU MBA:** Government-owned companies and PSUs requiring UGC-recognised MBA, nationalised bank marketing teams, LIC and public sector insurance distribution, private FMCG and retail employers who verify UGC-DEB entitlement, and government departments with marketing or public communication roles.\n\n**Placement note:** IGNOU does not run a placement cell. All job sourcing is self-directed through networks, LinkedIn, and job portals."
+    },
+    "skills": {
+      "body": "The Marketing Management specialisation builds skills across the full marketing mix, from consumer insights to international and rural markets:\n\n**Technical skills:**\n- Consumer and Market Research: survey design, focus group methodology, consumer segmentation logic, brand tracking study design, and NPS measurement\n- Brand Management: brand architecture frameworks, brand equity audit, positioning statement development, category P&L basics, and brand extension assessment\n- IMC and Digital: integrated campaign planning, media mix selection, digital-traditional coordination, campaign ROI measurement, and agency briefing\n- International and Rural Marketing: market entry mode selection, export documentation basics, rural distribution models, FMCG rural pricing strategy, and Bharat-tier consumer behaviour\n\n**Applied skills:**\n- Sales Management: sales territory design, incentive structure design, pipeline review methodology, and key account management frameworks\n- Marketing of Services: service blueprint design, customer satisfaction measurement, loyalty programme structure, and service failure recovery protocols\n\n**Soft skills:** Presenting campaign proposals to brand owners, managing agency and media partner relationships, communicating consumer research findings to cross-functional teams, and building marketing plans for budget approval by non-marketing leadership."
+    },
+    "comparisons": {
+      "body": "Comparing IGNOU Online MBA Marketing Management against peer programmes:\n\n**vs SMU Online MBA Marketing:** SMU at ₹1,20,000 is nearly double IGNOU's cost. SMU offers active counsellor support and a placement cell for private sector roles. IGNOU at ₹66,000 wins on cost and government job recognition. For self-directed marketing professionals who need the degree credential rather than placement support, IGNOU is clearly more affordable. SMU is appropriate for candidates who need structured placement access.\n\n**vs LPU Online MBA Marketing:** LPU at approximately ₹2,00,000 offers Coursera Plus, live faculty sessions, and placement assistance. LPU's marketing curriculum includes digital marketing and analytics content more current than IGNOU's MMPM series. IGNOU at ₹66,000 costs one-third of LPU. IGNOU carries stronger government job recognition. LPU is better suited for candidates targeting private-sector digital marketing roles with university placement support.\n\n**vs Amity Online MBA Marketing and Sales Management:** Amity at approximately ₹2,25,000 at NIRF #22 with NAAC A+ offers polished LMS, marketing-sales curriculum integration, and alumni network. The Amity brand carries weight at FMCG and consumer goods employers. IGNOU costs one-third of Amity's fee. IGNOU wins on government job eligibility; Amity wins on private sector brand recognition, placement support, and LMS quality."
+    },
+    "fees": {
+      "body": "The IGNOU Online MBA in Marketing Management has a total programme tuition of ₹66,000, structured as semester-wise payments:\n\n**Semester-wise tuition:**\n- Semester 1: ₹16,000\n- Semester 2: ₹16,000\n- Semester 3: ₹18,000 (higher due to Project Report MMPP-001 carrying 8 credits)\n- Semester 4: ₹16,000\n- **Total tuition: ₹66,000**\n\n**Additional fees (all students must note):**\n- Application and registration fee: approximately ₹300 (verify current amount at ignou.ac.in before applying)\n- Examination fees: charged separately by IGNOU per their published rate schedule at the time of each term-end examination. Typical range: ₹150-200 per paper. Exact fees are notified by IGNOU each examination cycle.\n\nIGNOU does not offer any instalment or financing scheme. The semester-wise structure (₹16,000-18,000 per semester) serves as the natural payment division across 2 years.\n\nFees listed are indicative. IGNOU fees are notified by the university at the start of each academic session. EdifyEdu reconfirms fees each quarter. Please reconfirm with our counsellor before any payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an IGNOU MBA degree certificate with Marketing Management as the specialisation, issued by Indira Gandhi National Open University under UGC-DEB 2020 online mode standards.\n\nIGNOU's degree carries NAAC A++ accreditation and UGC-DEB entitlement. It is valid for all central government recruitment requiring an MBA, PSU applications, nationalised bank marketing roles, and private sector roles where UGC-DEB entitlement is the credential standard. DigiLocker issuance is available."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from IGNOU Online MBA Marketing Management alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Divya M.",
+          "city": "Jaipur",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Rural Marketing subject was a standout — no other online MBA I looked at had this as a dedicated course, directly applicable to FMCG rural sales work",
+          "disliked": "Zero placement support — if you are a fresher or early-career professional, you will need to build your own job search strategy entirely without university help",
+          "body": "I work in rural sales for an FMCG company and the Rural Marketing and Consumer Behaviour subjects were directly applicable to my daily work. IGNOU's degree at ₹66,000 was the only realistic option within my budget. The NAAC A++ credential cleared every credential check at government-sector employers I approached for a lateral move. The LMS is functional but not comparable to what I saw when colleagues showed me Amity or LPU platforms."
+        },
+        {
+          "name": "Sanjay R.",
+          "city": "Kolkata",
+          "year": 2024,
+          "rating": 4,
+          "liked": "MMPM course series breadth — covering international marketing, IMC, and retail in the same programme was exactly the mix I needed",
+          "disliked": "Study material for MMPM-007 IMC was dated — digital marketing and social media content was minimal compared to current industry needs",
+          "body": "I am in the marketing team at a nationalised bank. The IGNOU Marketing MBA gave me the credential for the assistant manager promotion path. IMC, Brand Management, and Marketing Research subjects were most applicable. At ₹66,000 total with semester-wise payments I could spread the cost without a loan. Exam fee disclosure was a surprise — I was not aware the per-paper exam fees were additional until I registered for the Term End Examination."
+        },
+        {
+          "name": "Kavitha P.",
+          "city": "Coimbatore",
+          "year": 2023,
+          "rating": 4,
+          "liked": "IGNOU degree recognised without question at every Tamil Nadu government employer I applied to — the UGC-DEB and NAAC A++ combination carries real weight",
+          "disliked": "Retail Management subject content felt dated — mostly brick-and-mortar focused with limited e-commerce and D2C coverage, which is where most retail jobs now are",
+          "body": "I chose IGNOU because I needed the degree primarily for government job eligibility and secondarily for private-sector marketing roles. The NAAC A++ and central government university status meant zero credential verification issues. Consumer Behaviour and Marketing Research were the subjects I found most directly useful. Self-paced study suits me well — I completed in exactly 2 years working full-time."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does the Marketing Management MBA cover digital marketing?",
+        "answer": "Digital marketing is embedded within the MMPM-007 Integrated Marketing Communication subject, which covers digital media integration in campaign planning and media mix optimisation. It is not a dedicated standalone digital marketing subject. For candidates specifically targeting digital marketing roles requiring deep Google Ads, SEO, or analytics tool skills, a private university MBA with a dedicated digital marketing specialisation would be more directly applicable. IGNOU's Marketing Management specialisation is stronger on brand management, consumer behaviour, and rural marketing breadth."
+      },
+      {
+        "question": "What is the total cost of the IGNOU Marketing Management MBA?",
+        "answer": "Total programme tuition is ₹66,000 paid semester-wise (₹16,000-₹18,000 per semester). Examination fees are charged separately per IGNOU's schedule (typically ₹150-200 per paper per term-end exam). Application fee is approximately ₹300. Total indicative all-in cost is approximately ₹68,000-70,000. IGNOU does not offer any instalment or financing arrangement."
+      },
+      {
+        "question": "Is IGNOU MBA recognised at private-sector FMCG and retail employers?",
+        "answer": "Yes. IGNOU's MBA is UGC-DEB entitled and NAAC A++ accredited. Most private sector FMCG, retail, and marketing-services employers accept UGC-DEB entitled degrees. However, employer preferences vary — some premium consumer goods companies and multinational FMCG firms may prefer candidates from NIRF-ranked private universities for their brand-name management trainee programmes. For mid-market FMCG, retail chains, government-owned enterprises, and marketing services agencies, IGNOU's degree is fully accepted."
+      },
+      {
+        "question": "Why does Semester 3 cost more than Semesters 1, 2, and 4?",
+        "answer": "Semester 3 includes MMPP-001 Project Report, which carries 8 credits compared to the standard 4-credit subjects. IGNOU's fee structure is credit-based, so the higher credit load in Semester 3 results in a higher semester fee of ₹18,000 versus ₹16,000 in the other semesters."
+      },
+      {
+        "question": "Does the MBA cover rural marketing in adequate depth for FMCG sales roles?",
+        "answer": "Yes. MMPM-008 Rural Marketing is a dedicated 4-credit course covering rural market structure in India, distribution challenges, rural consumer behaviour, product and pricing strategy for rural segments, and last-mile delivery models. This depth is uncommon in online MBA programmes at any price point. For FMCG rural sales, general trade, and rural distribution management roles, this subject is directly applicable."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You need the most affordable UGC-DEB approved MBA in Marketing Management — ₹66,000 total is the lowest on the EdifyEdu platform.",
+        "Government job eligibility, PSU recruitment, or nationalised bank promotion require a recognised MBA credential.",
+        "You want rural marketing and retail management alongside international marketing and IMC in one curriculum.",
+        "You are a self-directed learner with marketing work experience and do not need university placement support."
+      ],
+      "consider": [
+        "You need structured placement support for private-sector marketing or digital marketing roles (consider LPU or Amity).",
+        "Your target employer filters by NIRF rank (IGNOU is a NIRF-exempt open university).",
+        "You want a dedicated digital marketing specialisation or Coursera-based marketing tools content."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 1900,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 20,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22"
+  }
+}

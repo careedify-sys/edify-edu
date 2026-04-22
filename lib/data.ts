@@ -8947,7 +8947,7 @@ export const UNIVERSITIES: University[] = [
     govtRecognised: true,
     psuEligible: true,
     feeMin: 9600,
-    feeMax: 37800,
+    feeMax: 66000,
     emiFrom: 1500,
     eligibility: "Varies by program (10+2 for UG, Graduation for PG)",
     eligibilityPct: 40,
@@ -8959,8 +8959,8 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'B.Com', 'BCA', 'BA', 'MA', 'M.Com'],
     programDetails: {
       'MBA': {
-        specs: ["General Management \u2013 Finance", "General Management \u2013 Marketing", "General Management \u2013 HR", "General Management \u2013 Operations", "General Management \u2013 Strategy"],
-        fees: '\u20b937,800',
+        specs: ["Financial Management", "Marketing Management", "Human Resource Management", "Operations Management", "Services Management"],
+        fees: '₹66,000',
         duration: '2 Yrs',
         roles: ['Business Analyst', 'Management Trainee', 'Operations Manager', 'Marketing Executive', 'HR Executive'],
         avgSalary: '\u20b94L \u2013 \u20b912L per annum',

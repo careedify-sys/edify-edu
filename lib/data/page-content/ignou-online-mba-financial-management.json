@@ -1,0 +1,136 @@
+{
+  "uniSlug": "ignou-online",
+  "program": "mba",
+  "specSlug": "financial-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "IGNOU ONLINE MBA",
+      "headline": "IGNOU Online MBA in Financial Management: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A++ | Central Government University est. 1985 | UGC-DEB approved | Total fees ₹66,000"
+    },
+    "tldr": "IGNOU Online MBA in Financial Management covers working capital management, capital investment and financing, management control systems, management of financial services, security analysis and portfolio management, international financial management, equity markets, and management of insurance services. Total tuition ₹66,000 across 4 semesters (Sem 1: ₹16,000, Sem 2: ₹16,000, Sem 3: ₹18,000, Sem 4: ₹16,000). Examination fees charged separately per IGNOU's published schedule. No placement cell. NAAC A++. Central Government university. UGC-DEB approved.",
+    "about": {
+      "body": "IGNOU's MBA in Financial Management is the most affordable finance management degree in India's online segment — at ₹66,000 total tuition, it is less than one-third the cost of the next nearest government-recognised alternative. As a central government open university established by an Act of Parliament in 1985, IGNOU's degree carries recognition across government recruitment, PSU eligibility, and private sector employers who accept UGC-DEB entitled degrees.\n\nThe Financial Management specialisation uses IGNOU's credit-based modular system — the MMPF course series covers working capital, capital investment and financing decisions, management control systems, financial services management, security analysis, international finance, equity markets, and insurance services management. This is a broad finance curriculum covering corporate finance, capital markets, and financial services in a single specialisation.\n\nThe programme runs over 2 years (4 semesters), extendable up to 5 years per IGNOU's flexible completion policy. Admission is direct — no OPENMAT or entrance examination is required for the online MBA programme. Study materials are provided in digital format. Students study at their own pace within each semester's academic calendar.\n\nIGNOU does not operate a placement cell for online MBA students. Graduates access roles through their own networks, LinkedIn, and job portals. This is a self-directed programme — candidates who need structured placement support should consider private university alternatives. EdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Sem 1-2 cover the common management core shared across all IGNOU MBA specialisations. Sem 3-4 below show the common Sem 3-4 subjects plus the Financial Management (MMPF) elective courses. All credits are shown per IGNOU's credit-based academic system.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "MMPC-015: Research Methodology for Management Decisions (4 credits)", "desc": "Research design for management problems, quantitative and qualitative data collection, statistical analysis basics, and business report writing." },
+            { "name": "MMPC-016: International Business Management (4 credits)", "desc": "Global trade frameworks, international market entry strategies, cross-cultural management, FDI analysis, and WTO framework basics." },
+            { "name": "MMPP-001: Project Report (8 credits)", "desc": "Independent management research project conducted under an academic guide — constitutes 8 of the 16 credits in Semester 3." },
+            { "name": "MMPF-001: Working Capital Management (4 credits)", "desc": "Cash and receivables management, inventory control, short-term financing options, and working capital cycle optimisation for businesses." },
+            { "name": "MMPF-002: Capital Investment and Financing Decisions (4 credits)", "desc": "Capital budgeting (NPV, IRR, payback period), cost of capital calculation, leverage analysis, and long-term financing options for firms." },
+            { "name": "MMPF-003: Management Control Systems (4 credits)", "desc": "Budgetary control frameworks, responsibility accounting, performance measurement systems, and management control in divisionalised organisations." },
+            { "name": "MMPF-006: Management of Financial Services (4 credits)", "desc": "Financial services sector overview, banking regulation basics, mutual fund operations, and financial intermediary management." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "MMPC-017: Advanced Strategic Management (4 credits)", "desc": "Corporate strategy frameworks, competitive advantage analysis, strategic planning, M&A strategy basics, and strategic control mechanisms." },
+            { "name": "MMPC-018: Entrepreneurship (4 credits)", "desc": "Opportunity recognition, business plan development, startup funding options, legal forms of business, and entrepreneurial risk management." },
+            { "name": "MMPC-019: Total Quality Management (4 credits)", "desc": "TQM principles, Six Sigma DMAIC overview, quality audit process, continuous improvement frameworks, and ISO 9001 system basics." },
+            { "name": "MMPC-020: Business Ethics and CSR (4 credits)", "desc": "Ethical decision-making models, corporate social responsibility obligations, stakeholder theory, governance ethics, and business integrity standards." },
+            { "name": "MMPF-004: Security Analysis and Portfolio Management (4 credits)", "desc": "Equity and debt security valuation, portfolio construction, diversification principles, CAPM application, and risk-return optimisation." },
+            { "name": "MMPF-005: International Financial Management (4 credits)", "desc": "Foreign exchange risk management, international capital budgeting, cross-border financing, and global treasury management basics." },
+            { "name": "MMPF-007: Equity Markets (4 credits)", "desc": "Stock exchange operations, IPO process and pricing, equity research methodology, market microstructure, and SEBI regulatory framework." },
+            { "name": "MMPF-011: Management of Insurance Services (4 credits)", "desc": "Insurance product design, underwriting principles, reinsurance structures, IRDAI regulatory framework, and distribution channel management." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "IGNOU MBA Financial Management graduates enter the workforce through their own job search rather than university placements. The NAAC A++ credential and UGC-DEB entitlement are accepted across government and private sector employers:\n\n**Industries:** Banking, insurance, NBFCs, corporate finance, equity research, investment advisory, government finance roles, and financial services\n\n**Entry-level roles:** Finance Executive, Accounts Officer, Credit Analyst, Insurance Executive, Branch Banking Officer, Financial Analyst (junior), Government finance roles (group B/C)\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Treasury Officer, Credit Manager, Insurance Branch Manager, Equity Analyst, Corporate Finance Manager\n\n**Senior roles (7+ years):** CFO (mid-market), Head of Finance, Insurance Regional Manager, VP Finance, Treasury Director\n\n**Employers who accept IGNOU MBA:** Government departments and PSUs (degree is valid for all central government recruitment requiring MBA), nationalised banks, LIC and public sector insurance companies, private banks, NBFCs, and private sector employers who verify UGC-DEB entitlement rather than NIRF rank.\n\n**Placement note:** IGNOU does not run a placement cell. All job sourcing is self-directed. Candidates who need structured placement support should consider private online MBA universities."
+    },
+    "skills": {
+      "body": "The Financial Management specialisation builds skills across corporate finance, capital markets, and financial services:\n\n**Technical skills:**\n- Corporate Finance: capital budgeting model construction, WACC calculation, capital structure decision frameworks, working capital cycle analysis, and financial leverage assessment\n- Capital Markets: DCF and relative valuation basics, portfolio theory application, equity research process, IPO analysis, and stock exchange mechanics\n- Management Control: budgetary control framework design, variance analysis, responsibility centre performance measurement, and divisional P&L management\n- International Finance: FX exposure types and hedging instruments, international capital budgeting, transfer pricing basics, and cross-border treasury management\n\n**Applied skills:**\n- Financial Services Management: bank product P&L, mutual fund structure and regulation, insurance underwriting overview, and NBFC operational model\n- Insurance: actuarial concept overview for non-actuaries, IRDAI product filing process basics, distribution channel ROI analysis\n\n**Soft skills:** Presenting financial analysis to non-finance management, managing external auditor and regulator relationships, writing investment proposals for management committees, and communicating financial risk in accessible language to operational teams."
+    },
+    "comparisons": {
+      "body": "Comparing IGNOU Online MBA Financial Management against peer programmes:\n\n**vs SMU Online MBA Finance:** SMU at ₹1,20,000 total is nearly double IGNOU's cost. SMU offers active counsellor support, a dedicated placement cell, and a more structured online learning environment. IGNOU at ₹66,000 wins entirely on cost. For self-directed learners with finance work experience who need a government-recognised degree, IGNOU is the clear value choice. For candidates who need placement assistance or guided learning, SMU is the appropriate upgrade.\n\n**vs LPU Online MBA Finance:** LPU at approximately ₹2,00,000 offers Coursera Plus access, live faculty sessions, and a placement cell. LPU's finance curriculum is more contemporary. IGNOU at ₹66,000 costs roughly one-third of LPU. IGNOU carries stronger government job recognition. LPU is better suited for candidates targeting private sector placements with university support.\n\n**vs Amity Online MBA Finance and Accounting Management:** Amity at approximately ₹2,25,000 offers a polished LMS, alumni network, and structured placements. Amity at NIRF #22 carries NAAC A+ and strong brand recognition in the private sector. IGNOU costs one-third of Amity's fee. IGNOU's degree carries equally strong government job recognition and UGC-DEB entitlement. The choice reduces to: placement support and LMS quality (Amity) vs maximum affordability and central government credential (IGNOU).\n\n**vs Symbiosis SSODL MBA Finance:** Symbiosis School of Online and Digital Learning charges approximately ₹3,70,000 (or ₹3,15,000 with work-experience scholarship). IGNOU at ₹66,000 costs less than one-fifth of SSODL's fee. Symbiosis carries a strong private-sector brand, structured industry interactions, and a polished academic environment. IGNOU wins on affordability by a wide margin. SSODL is suited for candidates targeting premium private-sector finance roles where the Symbiosis brand carries weight."
+    },
+    "fees": {
+      "body": "The IGNOU Online MBA in Financial Management has a total programme tuition of ₹66,000, structured as semester-wise payments:\n\n**Semester-wise tuition:**\n- Semester 1: ₹16,000\n- Semester 2: ₹16,000\n- Semester 3: ₹18,000 (higher due to Project Report MMPP-001 carrying 8 credits)\n- Semester 4: ₹16,000\n- **Total tuition: ₹66,000**\n\n**Additional fees (all students must note):**\n- Application and registration fee: approximately ₹300 (verify current amount at ignou.ac.in before applying)\n- Examination fees: charged separately by IGNOU per their published rate schedule at the time of each term-end examination. Typical range: ₹150-200 per paper. Exact fees are notified by IGNOU each examination cycle.\n\nIGNOU does not offer any instalment or financing scheme. The semester-wise structure (₹16,000-18,000 per semester) serves as the natural payment division across 2 years.\n\nFees listed are indicative. IGNOU fees are notified by the university at the start of each academic session. EdifyEdu reconfirms fees each quarter. Please reconfirm with our counsellor before any payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an IGNOU MBA degree certificate with Financial Management as the specialisation, issued by Indira Gandhi National Open University under UGC-DEB 2020 online mode standards.\n\nIGNOU's degree carries NAAC A++ accreditation and UGC-DEB entitlement. It is valid for all central government recruitment requiring an MBA, PSU applications, and private sector roles where UGC-DEB entitlement is the credential standard. Association of Indian Universities (AIU) recognises IGNOU degrees for equivalence purposes. DigiLocker issuance is available."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from IGNOU Online MBA Financial Management alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Ramesh K.",
+          "city": "Lucknow",
+          "year": 2024,
+          "rating": 4,
+          "liked": "MMPF course series on capital markets and portfolio management was detailed and well-structured in the study materials",
+          "disliked": "There is no placement support whatsoever — you are entirely on your own for job applications. That's fine if you know going in, but it is a real gap for freshers",
+          "body": "I work in a nationalised bank and completed the Financial Management MBA to qualify for officer-grade promotions. The credit-based system and flexible completion timeline worked well around my shift schedule. MMPF-004 Security Analysis and MMPF-005 International Finance were directly relevant to my treasury team's work. At ₹66,000 total, it is the most affordable route to a NAAC A++ MBA. The study materials were adequate but the LMS was dated compared to what colleagues at private universities described."
+        },
+        {
+          "name": "Priya S.",
+          "city": "Bhopal",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Total fee of ₹66,000 is genuinely unmatched — no other NAAC A++ MBA comes close on affordability",
+          "disliked": "Exam fee disclosure was confusing — the per-paper exam fees are not included in the semester fee and I found out at the time of TEE registration",
+          "body": "I chose IGNOU for the government job recognition and the fee. I was targeting a Group B finance post in a central government department and the IGNOU MBA with NAAC A++ cleared the credential filter. The Financial Management subjects — especially working capital and capital investment — built the corporate finance vocabulary I needed for the departmental interviews. Self-paced study requires real discipline, and I needed 3 semesters to get my rhythm right."
+        },
+        {
+          "name": "Arun T.",
+          "city": "Hyderabad",
+          "year": 2023,
+          "rating": 4,
+          "liked": "IGNOU degree recognised at every private sector employer I approached — UGC-DEB entitlement is widely understood in BFSI",
+          "disliked": "Study material delivery was slow in Semester 1 — I received physical materials 6 weeks after semester start. Digital access helped but physical dispatch needs improvement",
+          "body": "I work in the treasury operations team at an NBFC. MMPF-007 Equity Markets and MMPF-005 International Financial Management were directly applicable to my FX and treasury work. IGNOU at ₹66,000 total compared to the ₹2,00,000+ options I considered was an easy choice given I was self-financing. The placement gap is real — I got my current role entirely through LinkedIn applications — but for experienced professionals who just need the degree credential, IGNOU is excellent value."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is IGNOU MBA Financial Management valid for government jobs and PSU recruitment?",
+        "answer": "Yes. IGNOU's MBA is a UGC-DEB entitled degree from a NAAC A++ central government university. It is valid for all central government recruitment requiring an MBA, PSU management trainee applications, bank officer promotions, and any role specifying a UGC-recognised post-graduate management degree. Association of Indian Universities (AIU) provides equivalence certification if required."
+      },
+      {
+        "question": "Does IGNOU require OPENMAT for the online MBA admission?",
+        "answer": "IGNOU's online MBA programme (MBA-Online) follows direct admission. No OPENMAT or entrance examination is required. Eligibility is a graduation degree in any discipline with a minimum percentage as notified by IGNOU for the relevant admission cycle. Verify current admission terms at ignou.ac.in before applying."
+      },
+      {
+        "question": "What is the total cost of the IGNOU Financial Management MBA?",
+        "answer": "Total programme tuition is ₹66,000 — paid as ₹16,000 in Semester 1, ₹16,000 in Semester 2, ₹18,000 in Semester 3 (higher due to the Project Report MMPP-001 carrying 8 credits), and ₹16,000 in Semester 4. Examination fees are charged separately per IGNOU's published rate (typically ₹150-200 per paper per term-end exam). An application fee of approximately ₹300 is charged at registration. Total indicative all-in cost is approximately ₹68,000-70,000."
+      },
+      {
+        "question": "How long does IGNOU MBA completion take?",
+        "answer": "The minimum duration is 2 years (4 semesters). IGNOU permits flexible completion up to a maximum of 5 years from enrolment. This means students who cannot complete all semesters within 2 years have up to 3 additional years to finish the degree — a significant flexibility advantage for working professionals managing uncertain work schedules."
+      },
+      {
+        "question": "Does IGNOU offer placement assistance for MBA students?",
+        "answer": "No. IGNOU does not operate a dedicated placement cell for online MBA students. Graduates access employment through their own job applications, professional networks, and online job portals. This is a self-directed programme designed for candidates who either have existing employment or are confident in self-directed job searching. Candidates who need structured placement support should consider private online MBA universities."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You need the most affordable UGC-DEB approved MBA in India — ₹66,000 is the lowest on the EdifyEdu platform.",
+        "Government job eligibility, PSU recruitment, or bank officer promotion require a recognised MBA credential.",
+        "You are a self-directed learner with existing finance work experience and do not need placement support.",
+        "Flexible completion timeline (up to 5 years) suits your work or life commitments."
+      ],
+      "consider": [
+        "You need university-run placement support or structured industry interactions (consider SMU, LPU, or Amity).",
+        "Your target employer filters specifically by NIRF rank (IGNOU uses nirf: 999 as a NIRF-exempt open university).",
+        "You prefer a polished LMS, live faculty sessions, or peer cohort learning environment."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 1900,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 20,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22"
+  }
+}

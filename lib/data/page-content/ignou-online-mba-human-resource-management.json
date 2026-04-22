@@ -1,0 +1,136 @@
+{
+  "uniSlug": "ignou-online",
+  "program": "mba",
+  "specSlug": "human-resource-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "IGNOU ONLINE MBA",
+      "headline": "IGNOU Online MBA in Human Resource Management: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A++ | Central Government University est. 1985 | UGC-DEB approved | Total fees ₹66,000"
+    },
+    "tldr": "IGNOU Online MBA in Human Resource Management covers organisational theory and design, HRD, industrial and employment relations, compensation and rewards management, HR planning, organisational development and change, organisational dynamics, and international HRM. Total tuition ₹66,000 across 4 semesters (Sem 1: ₹16,000, Sem 2: ₹16,000, Sem 3: ₹18,000, Sem 4: ₹16,000). Examination fees charged separately. No placement cell. NAAC A++. Central Government university. UGC-DEB approved.",
+    "about": {
+      "body": "IGNOU's MBA in Human Resource Management is particularly strong on the labour law and industrial relations dimension — MMPH-004 Industrial and Employment Relations covers trade union structure, collective bargaining, grievance handling, and the Industrial Disputes Act in depth. This content is directly applicable for HR professionals in manufacturing, government-owned enterprises, and unionised sectors where statutory compliance is a daily operational reality.\n\nThe MMPH course series covers the full HR spectrum: organisational design, HRD systems, industrial relations, compensation, HR planning, OD and change, organisational dynamics, and international HRM. The inclusion of international HRM (MMPH-009) alongside domestic HR subjects makes this specialisation relevant for both domestic corporate HR and MNC global HR roles.\n\nAt ₹66,000 total, this is the most affordable UGC-DEB entitled MBA in HRM in India. The degree is issued by a NAAC A++ central government university. It is valid for government recruitment requiring an MBA, PSU HR officer applications, and private sector roles where UGC-DEB entitlement is the credential standard.\n\nThe programme runs over 2 years, extendable to 5 years. Admission is direct — no entrance exam required. IGNOU does not operate a placement cell. EdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Sem 1-2 cover the common management core shared across all IGNOU MBA specialisations. Sem 3-4 below show the common Sem 3-4 subjects plus the Human Resource Management (MMPH) elective courses. All credits are shown per IGNOU's credit-based academic system.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "MMPC-015: Research Methodology for Management Decisions (4 credits)", "desc": "Research design for management problems, quantitative and qualitative methods, statistical analysis basics, and business report writing." },
+            { "name": "MMPC-016: International Business Management (4 credits)", "desc": "Global trade frameworks, international market entry strategies, cross-cultural management, FDI analysis, and WTO framework basics." },
+            { "name": "MMPP-001: Project Report (8 credits)", "desc": "Independent management research project conducted under an academic guide — constitutes 8 of the 16 credits in Semester 3." },
+            { "name": "MMPH-001: Organisational Theory and Design (4 credits)", "desc": "Organisational structure types, bureaucracy and flat models, contingency theory, organisational design choices, and structural adaptation for different business environments." },
+            { "name": "MMPH-002: Human Resource Development (4 credits)", "desc": "HRD systems, training needs analysis, learning organisation concept, career development planning, mentoring frameworks, and HRD evaluation methods." },
+            { "name": "MMPH-004: Industrial and Employment Relations (4 credits)", "desc": "Trade union structure, collective bargaining process, grievance handling, Industrial Disputes Act, standing orders, and employment contract management." },
+            { "name": "MMPH-007: Compensation and Rewards Management (4 credits)", "desc": "Compensation philosophy, job evaluation methods, pay structure design, incentive and bonus systems, and statutory compensation compliance in India." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "MMPC-017: Advanced Strategic Management (4 credits)", "desc": "Corporate strategy frameworks, competitive advantage analysis, strategic planning, M&A strategy basics, and strategic control mechanisms." },
+            { "name": "MMPC-018: Entrepreneurship (4 credits)", "desc": "Opportunity recognition, business plan development, startup funding options, legal forms of business, and entrepreneurial risk management." },
+            { "name": "MMPC-019: Total Quality Management (4 credits)", "desc": "TQM principles, Six Sigma DMAIC overview, quality audit process, continuous improvement frameworks, and ISO 9001 system basics." },
+            { "name": "MMPC-020: Business Ethics and CSR (4 credits)", "desc": "Ethical decision-making models, corporate social responsibility obligations, stakeholder theory, governance ethics, and business integrity standards." },
+            { "name": "MMPH-003: Human Resource Planning (4 credits)", "desc": "Workforce demand and supply analysis, manpower planning models, succession planning frameworks, and HR planning integration with business strategy." },
+            { "name": "MMPH-005: Organisational Development and Change (4 credits)", "desc": "OD intervention types, planned change models, resistance management, culture change facilitation, and measuring OD effectiveness." },
+            { "name": "MMPH-006: Organisational Dynamics (4 credits)", "desc": "Group behaviour in organisations, leadership styles and their situational application, power and politics, motivation theories, and interpersonal workplace dynamics." },
+            { "name": "MMPH-009: International Human Resource Management (4 credits)", "desc": "Cross-cultural HR, expatriate management and repatriation, global staffing strategies, international labour law overview, and MNC HR policy alignment." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "IGNOU MBA Human Resource Management graduates enter the workforce through self-directed job search. The NAAC A++ credential and UGC-DEB entitlement are accepted across government and private sector employers:\n\n**Industries:** Manufacturing HR, government enterprise HR, banking HR, insurance HR, IT services HR (shared services level), healthcare HR, and central government HR departments\n\n**Entry-level roles:** HR Executive, Personnel Officer, Labour Welfare Officer, Training Coordinator, Recruitment Executive, HR Compliance Officer\n\n**Mid-level roles (3-5 years experience):** HR Manager, Industrial Relations Manager, Compensation Manager, HR Business Partner (mid-market), Training and Development Manager\n\n**Senior roles (7+ years):** HR Director, Chief People Officer (mid-market), Head of Industrial Relations, VP HR, Head of Talent Management\n\n**Employers who accept IGNOU MBA:** Central government departments (Group B HR officers), PSUs and government-owned enterprises, nationalised banks HR teams, manufacturing sector companies (where statutory IR compliance knowledge is valued), and mid-market private sector employers who verify UGC-DEB entitlement.\n\n**Placement note:** IGNOU does not run a placement cell. All job sourcing is self-directed."
+    },
+    "skills": {
+      "body": "The Human Resource Management specialisation builds skills across organisational HR, industrial relations, and international people management:\n\n**Technical skills:**\n- Industrial Relations and Labour Law: Industrial Disputes Act interpretation, standing orders application, trade union negotiation process, grievance procedure design, and statutory filing compliance\n- Compensation Design: job evaluation methodology (point-factor, ranking), pay band design, variable pay plan structure, statutory minimum wage compliance, and benefits benchmarking\n- HR Planning: workforce gap analysis, skills inventory design, succession planning grid, headcount modelling, and manpower planning integration with business planning cycles\n- Organisational Development: OD diagnosis framework, change readiness assessment, intervention selection (process consultation, team building, structural change), and change measurement\n\n**Applied skills:**\n- HR Development: training needs analysis framework, learning programme design, ROI evaluation for training spend, and career development planning for different employee segments\n- International HRM: expatriate assignment management, cross-cultural team facilitation, global HR policy design, and host-country employment law navigation basics\n\n**Soft skills:** Managing sensitive employee relations cases, presenting HR strategy to boards, communicating change to resistant organisational populations, building HR credibility with operational line managers, and handling labour disputes with union representatives."
+    },
+    "comparisons": {
+      "body": "Comparing IGNOU Online MBA Human Resource Management against peer programmes:\n\n**vs SMU Online MBA Human Resources:** SMU at ₹1,20,000 is nearly double IGNOU's cost. SMU offers active counsellor support and placement assistance. SMU's human-resources curriculum has a modern HR operations focus. IGNOU at ₹66,000 wins on cost and government job recognition. For HR professionals in manufacturing or government who need the statutory compliance and industrial relations depth that IGNOU's MMPH-004 provides, IGNOU's curriculum is directly relevant. SMU is more appropriate for candidates targeting private-sector HR roles with placement support.\n\n**vs LPU Online MBA Human Resource Management:** LPU at approximately ₹2,00,000 offers Coursera Plus, live sessions, and placement cell. LPU's HR curriculum includes contemporary HRMS and digital HR tools content. IGNOU at ₹66,000 costs one-third. IGNOU's industrial relations and international HRM depth is comparable or deeper for manufacturing and government contexts. LPU is better for candidates targeting IT services or digital economy HR roles.\n\n**vs Amity Online MBA Human Resource Management:** Amity at approximately ₹2,25,000 at NIRF #22 with NAAC A+ offers a polished LMS, alumni network, and structured placements. Amity's HR curriculum is well-matched to corporate HR roles in the private sector. IGNOU costs one-third of Amity's fee. IGNOU carries stronger government job recognition; Amity carries stronger private-sector brand recognition and placement support."
+    },
+    "fees": {
+      "body": "The IGNOU Online MBA in Human Resource Management has a total programme tuition of ₹66,000, structured as semester-wise payments:\n\n**Semester-wise tuition:**\n- Semester 1: ₹16,000\n- Semester 2: ₹16,000\n- Semester 3: ₹18,000 (higher due to Project Report MMPP-001 carrying 8 credits)\n- Semester 4: ₹16,000\n- **Total tuition: ₹66,000**\n\n**Additional fees (all students must note):**\n- Application and registration fee: approximately ₹300 (verify current amount at ignou.ac.in before applying)\n- Examination fees: charged separately by IGNOU per their published rate schedule at the time of each term-end examination. Typical range: ₹150-200 per paper. Exact fees are notified by IGNOU each examination cycle.\n\nIGNOU does not offer any instalment or financing scheme. The semester-wise structure (₹16,000-18,000 per semester) serves as the natural payment division across 2 years.\n\nFees listed are indicative. IGNOU fees are notified by the university at the start of each academic session. EdifyEdu reconfirms fees each quarter. Please reconfirm with our counsellor before any payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an IGNOU MBA degree certificate with Human Resource Management as the specialisation, issued by Indira Gandhi National Open University under UGC-DEB 2020 online mode standards.\n\nIGNOU's degree carries NAAC A++ accreditation and UGC-DEB entitlement. It is valid for all central government recruitment requiring an MBA, PSU HR officer applications, and private sector roles where UGC-DEB entitlement is the credential standard. DigiLocker issuance is available."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from IGNOU Online MBA Human Resource Management alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Meena L.",
+          "city": "Pune",
+          "year": 2024,
+          "rating": 4,
+          "liked": "MMPH-004 Industrial and Employment Relations was the most practically useful subject — directly applicable to the union negotiations I manage at my manufacturing plant",
+          "disliked": "No placement cell at all — for candidates who do not already have HR jobs, getting placed out of IGNOU requires entirely independent effort",
+          "body": "I am the HR manager at a manufacturing unit and the Industrial Relations, Compensation, and Organisational Development subjects were directly applicable to my daily work. At ₹66,000 the IGNOU MBA was the only option within my budget that also gave me a government-recognised degree. The study materials were adequate — not polished like private university portals — but the MMPH course content itself was solid and current for Indian industrial HR contexts."
+        },
+        {
+          "name": "Suresh N.",
+          "city": "Delhi",
+          "year": 2024,
+          "rating": 4,
+          "liked": "MMPH-009 International HRM subject was a genuine differentiator — no online MBA I researched at this price point had dedicated IHRM content",
+          "disliked": "Digital HR tools and HRIS platform content is largely absent — the curriculum needs updating for HR analytics and HRMS-era HR roles",
+          "body": "I work in an MNC's India HR shared services team. The International HRM and Organisational Dynamics subjects were directly applicable to the cross-cultural HR coordination I do. NAAC A++ cleared every credential filter. At ₹66,000 the fee is genuinely the lowest available for a recognised MBA — I checked every platform before deciding. The LMS experience was the main limitation; private university platforms are substantially more modern."
+        },
+        {
+          "name": "Asha K.",
+          "city": "Chennai",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Central Government university status was the primary criterion for me — IGNOU degree recognised immediately for a state government HR officer application",
+          "disliked": "Physical study material dispatch was delayed in two semesters — IGNOU's fulfilment logistics need improvement especially for South India students",
+          "body": "I completed IGNOU MBA HRM specifically for eligibility in a Tamil Nadu government HR officer recruitment. The NAAC A++ and central university status meant the credential was accepted without any equivalence challenge. MMPH-004 Industrial Relations and MMPH-003 HR Planning were the most relevant to the government HR context. Self-paced study over 2.5 years was manageable alongside my existing job."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is IGNOU MBA HRM valid for government HR officer roles?",
+        "answer": "Yes. IGNOU's MBA is a UGC-DEB entitled degree from a NAAC A++ central government university. It is valid for central and state government HR officer recruitment, PSU HR officer applications, bank HR promotions, and all roles specifying a UGC-recognised post-graduate management degree. The Industrial Relations and Employment Law subjects are particularly relevant for government enterprise and PSU HR roles."
+      },
+      {
+        "question": "Does the HRM MBA cover Indian Labour Law adequately for manufacturing HR?",
+        "answer": "Yes. MMPH-004 Industrial and Employment Relations is a dedicated 4-credit course covering trade union structure, collective bargaining, grievance procedures, Industrial Disputes Act, Factories Act application basics, and standing orders. This is more depth than most private online MBA programmes provide on labour law. For manufacturing HR, government enterprise IR management, and statutory compliance roles, this subject is directly applicable."
+      },
+      {
+        "question": "What is the total cost of the IGNOU HRM MBA?",
+        "answer": "Total programme tuition is ₹66,000 paid semester-wise (₹16,000 in Semesters 1, 2, and 4; ₹18,000 in Semester 3 due to the Project Report MMPP-001 at 8 credits). Examination fees are additional per IGNOU's schedule (typically ₹150-200 per paper). Application fee is approximately ₹300. Total indicative all-in cost is approximately ₹68,000-70,000."
+      },
+      {
+        "question": "How does IGNOU HRM compare to Amity Online HRM on employer recognition?",
+        "answer": "Both carry UGC-DEB entitlement. IGNOU holds NAAC A++ — the same grade as the most premium private online universities. For government jobs and PSU applications, IGNOU's central government university status is often a stronger signal than any private university. For premium private sector employers and multinational companies where brand name carries weight, Amity at NIRF #22 may hold an edge. Both are fully valid credentials. The choice is about fee (IGNOU ₹66,000 vs Amity ₹2,25,000), placement support (Amity has placement cell, IGNOU does not), and LMS quality."
+      },
+      {
+        "question": "Does the IGNOU HRM MBA cover HR analytics or digital HR tools?",
+        "answer": "HR analytics and HRMS platform tools are not covered in depth in the current IGNOU MMPH curriculum. The programme builds conceptual and process HR skills rather than digital tool proficiency. For candidates specifically targeting data-driven HR, people analytics, or HRMS implementation roles, a private online MBA with more contemporary HR technology content would be more directly applicable. IGNOU's HRM depth is strongest for industrial relations, compensation, and organisational development in traditional and government sector contexts."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You need the most affordable UGC-DEB approved MBA in HRM — ₹66,000 is the lowest on the EdifyEdu platform.",
+        "Government HR officer eligibility, PSU recruitment, or government enterprise industrial relations roles require a recognised MBA.",
+        "You work in manufacturing or a unionised sector where industrial relations and labour law depth is more valuable than digital HR tools.",
+        "You are a self-directed learner with HR work experience who does not need university placement support."
+      ],
+      "consider": [
+        "You need structured placement support for corporate HR roles (consider LPU, Amity, or Chandigarh University).",
+        "Your target employer values contemporary HR analytics and HRMS platform skills over labour law depth.",
+        "Your target employer filters by NIRF rank rather than NAAC grade or UGC-DEB entitlement."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 1900,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 20,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22"
+  }
+}

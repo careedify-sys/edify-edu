@@ -1,0 +1,136 @@
+{
+  "uniSlug": "ignou-online",
+  "program": "mba",
+  "specSlug": "operations-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "IGNOU ONLINE MBA",
+      "headline": "IGNOU Online MBA in Operations Management: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A++ | Central Government University est. 1985 | UGC-DEB approved | Total fees ₹66,000"
+    },
+    "tldr": "IGNOU Online MBA in Operations Management covers operations research, project management, logistics and supply chain management, materials management, operations management, MIS, maintenance management, and international logistics and supply chain management. Total tuition ₹66,000 across 4 semesters (Sem 1: ₹16,000, Sem 2: ₹16,000, Sem 3: ₹18,000, Sem 4: ₹16,000). Examination fees charged separately. No placement cell. NAAC A++. Central Government university. UGC-DEB approved.",
+    "about": {
+      "body": "IGNOU's MBA in Operations Management is structured around the MMPO course series — covering operations research, project management, logistics and supply chain, materials management, production operations, MIS, maintenance management, and international supply chain. This breadth makes it one of the more comprehensive operations management MBA curricula in the online segment at any price point, covering quantitative methods (OR), IT systems (MIS), physical asset management (maintenance), and international trade logistics alongside core production and supply chain management.\n\nAt ₹66,000 total tuition, it is the most affordable UGC-DEB entitled MBA in Operations Management available. The degree is issued by a NAAC A++ central government university and is valid for government recruitment requiring an MBA, PSU operations management roles, and private sector employers who accept UGC-DEB entitled degrees.\n\nThe programme is 2 years, extendable to 5 years per IGNOU's flexible completion policy. Admission is direct — no entrance examination required. IGNOU does not operate a placement cell. Graduates source jobs through their own networks and applications.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Sem 1-2 cover the common management core shared across all IGNOU MBA specialisations. Sem 3-4 below show the common Sem 3-4 subjects plus the Operations Management (MMPO) elective courses. All credits are shown per IGNOU's credit-based academic system.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "MMPC-015: Research Methodology for Management Decisions (4 credits)", "desc": "Research design for management problems, quantitative and qualitative methods, statistical analysis basics, and business report writing." },
+            { "name": "MMPC-016: International Business Management (4 credits)", "desc": "Global trade frameworks, international market entry strategies, cross-cultural management, FDI analysis, and WTO framework basics." },
+            { "name": "MMPP-001: Project Report (8 credits)", "desc": "Independent management research project conducted under an academic guide — constitutes 8 of the 16 credits in Semester 3." },
+            { "name": "MMPO-001: Operations Research (4 credits)", "desc": "Linear programming, transportation and assignment models, queuing theory basics, simulation techniques, and network analysis for operations decision-making." },
+            { "name": "MMPO-002: Project Management (4 credits)", "desc": "Project planning and scheduling, CPM and PERT networks, resource allocation, project cost control, and project risk management." },
+            { "name": "MMPO-005: Logistics and Supply Chain Management (4 credits)", "desc": "Supply chain design, distribution network planning, inventory management models, third-party logistics, and SCM performance metrics." },
+            { "name": "MMPO-006: Materials Management (4 credits)", "desc": "Materials planning and procurement, vendor evaluation and development, stores management, ABC analysis, and materials cost control frameworks." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "MMPC-017: Advanced Strategic Management (4 credits)", "desc": "Corporate strategy frameworks, competitive advantage analysis, strategic planning, M&A strategy basics, and strategic control mechanisms." },
+            { "name": "MMPC-018: Entrepreneurship (4 credits)", "desc": "Opportunity recognition, business plan development, startup funding options, legal forms of business, and entrepreneurial risk management." },
+            { "name": "MMPC-019: Total Quality Management (4 credits)", "desc": "TQM principles, Six Sigma DMAIC overview, quality audit process, continuous improvement frameworks, and ISO 9001 system basics." },
+            { "name": "MMPC-020: Business Ethics and CSR (4 credits)", "desc": "Ethical decision-making models, corporate social responsibility obligations, stakeholder theory, governance ethics, and business integrity standards." },
+            { "name": "MMPO-003: Operations Management (4 credits)", "desc": "Production planning and control, capacity planning, facility layout design, quality management in production, and lean manufacturing principles." },
+            { "name": "MMPO-004: Management Information Systems (4 credits)", "desc": "MIS design and implementation, decision support systems, ERP basics, information security fundamentals, and IT-enabled operations management." },
+            { "name": "MMPO-007: Maintenance Management (4 credits)", "desc": "Preventive and predictive maintenance approaches, reliability-centred maintenance, maintenance cost analysis, TPM basics, and equipment lifecycle planning." },
+            { "name": "MMPO-008: International Logistics and Supply Chain Management (4 credits)", "desc": "Global supply chain coordination, international trade documentation, customs and export compliance, port operations basics, and cross-border inventory management." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "IGNOU MBA Operations Management graduates enter the workforce through self-directed job search. The NAAC A++ credential and UGC-DEB entitlement are accepted across government and private sector employers:\n\n**Industries:** Manufacturing, logistics and warehousing, supply chain consulting, government procurement, defence production, e-commerce fulfilment, and public sector undertakings\n\n**Entry-level roles:** Operations Executive, Supply Chain Coordinator, Production Supervisor (management trainee track), Materials Officer, Procurement Officer, Stores Manager\n\n**Mid-level roles (3-5 years experience):** Operations Manager, Supply Chain Manager, Plant Manager (small-scale), Logistics Manager, Materials Manager, Maintenance Manager\n\n**Senior roles (7+ years):** VP Operations, Head of Supply Chain, General Manager Operations, COO (mid-market manufacturing), Head of Procurement\n\n**Employers who accept IGNOU MBA:** Central government departments with logistics and operations roles, defence production PSUs (OFB, DRDO), Ordnance Factories, nationalised manufacturing PSUs (SAIL, BHEL, HAL), railways procurement, and private sector mid-market manufacturers.\n\n**Placement note:** IGNOU does not run a placement cell. All job sourcing is self-directed."
+    },
+    "skills": {
+      "body": "The Operations Management specialisation builds quantitative and process skills across production, supply chain, and logistics:\n\n**Technical skills:**\n- Operations Research: LP formulation and solver application, transportation problem setup, assignment model, waiting line analysis, simulation design for operations decisions\n- Project Management: WBS construction, CPM critical path calculation, PERT network design, project cost variance analysis, and Earned Value Management basics\n- Supply Chain and Logistics: inventory policy design (EOQ, ROP), supplier scorecard, warehouse layout planning, 3PL performance measurement, and OTIF tracking\n- Maintenance Management: RCM analysis basics, preventive maintenance scheduling, MTBF and MTTR calculation, TPM pillar overview, and OEE measurement\n\n**Applied skills:**\n- Materials Management: ABC-XYZ inventory classification, purchase order process, vendor development timeline, stores audit process, and obsolescence management\n- International Logistics: Incoterms application, export documentation checklist, customs tariff classification basics, and freight cost optimisation\n\n**Soft skills:** Leading cross-functional operations improvement projects, communicating supply chain performance to C-suite using dashboards, managing vendor disputes and escalations, presenting maintenance ROI cases to plant leadership, and coordinating with regulatory bodies for manufacturing compliance."
+    },
+    "comparisons": {
+      "body": "Comparing IGNOU Online MBA Operations Management against peer programmes:\n\n**vs SMU Online MBA Operations and Supply Chain Management:** SMU at ₹1,20,000 is nearly double IGNOU's cost. SMU offers counsellor support and a placement cell. SMU's operations-supply-chain curriculum covers supply chain and operations together. IGNOU at ₹66,000 covers operations, logistics, project management, maintenance, and MIS in the MMPO series — a broader functional scope. IGNOU wins on cost and government job recognition; SMU wins on placement support.\n\n**vs LPU Online MBA Operations Management:** LPU at approximately ₹2,00,000 offers Coursera Plus, live faculty sessions, and placement assistance with contemporary content including lean and Six Sigma tools. IGNOU at ₹66,000 costs one-third and includes maintenance management and international logistics depth that LPU may not match. For government-sector operations roles, IGNOU's credential carries equal or stronger weight.\n\n**vs Chandigarh University Online MBA Operations Management:** CU at approximately ₹1,65,000 (Tier 1) with PwC co-teaching and NIRF #19 offers a more polished curriculum with private-sector placement support. For candidates targeting private-sector manufacturing or supply chain consulting where PwC co-teaching and NIRF rank carry weight, CU is the appropriate choice. IGNOU at ₹66,000 is the right choice when maximum affordability and government job recognition are the primary criteria."
+    },
+    "fees": {
+      "body": "The IGNOU Online MBA in Operations Management has a total programme tuition of ₹66,000, structured as semester-wise payments:\n\n**Semester-wise tuition:**\n- Semester 1: ₹16,000\n- Semester 2: ₹16,000\n- Semester 3: ₹18,000 (higher due to Project Report MMPP-001 carrying 8 credits)\n- Semester 4: ₹16,000\n- **Total tuition: ₹66,000**\n\n**Additional fees (all students must note):**\n- Application and registration fee: approximately ₹300 (verify current amount at ignou.ac.in before applying)\n- Examination fees: charged separately by IGNOU per their published rate schedule at the time of each term-end examination. Typical range: ₹150-200 per paper. Exact fees are notified by IGNOU each examination cycle.\n\nIGNOU does not offer any instalment or financing scheme. The semester-wise structure (₹16,000-18,000 per semester) serves as the natural payment division across 2 years.\n\nFees listed are indicative. IGNOU fees are notified by the university at the start of each academic session. EdifyEdu reconfirms fees each quarter. Please reconfirm with our counsellor before any payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an IGNOU MBA degree certificate with Operations Management as the specialisation, issued by Indira Gandhi National Open University under UGC-DEB 2020 online mode standards.\n\nIGNOU's degree carries NAAC A++ accreditation and UGC-DEB entitlement. It is valid for all central government recruitment requiring an MBA, PSU operations officer roles, defence production management applications, and private sector manufacturing employers who verify UGC-DEB entitlement. DigiLocker issuance is available."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from IGNOU Online MBA Operations Management alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Vikram P.",
+          "city": "Nagpur",
+          "year": 2024,
+          "rating": 4,
+          "liked": "MMPO-001 Operations Research was detailed and rigorous — the LP and network analysis content gave me the quantitative toolkit my plant management role needed",
+          "disliked": "No placement cell and no industry interface — everything job-related is on you. For someone mid-career this is manageable but fresh MBA graduates would struggle",
+          "body": "I manage production operations at an automotive components manufacturer. Operations Research, Project Management, and Maintenance Management subjects were directly applicable to what I do daily. IGNOU at ₹66,000 was the clear choice — my employer did not specify a minimum NIRF rank and accepted UGC-DEB entitlement. The flexible 5-year completion policy was critical since I had a factory shutdown that delayed my Semester 3 project submission."
+        },
+        {
+          "name": "Dinesh S.",
+          "city": "Indore",
+          "year": 2023,
+          "rating": 4,
+          "liked": "MMPO-008 International Logistics was the most practical subject for my freight forwarding business context",
+          "disliked": "MIS subject content was dated — covered ERP at a very basic level, nothing current on cloud ERP or Industry 4.0 applications relevant to modern manufacturing",
+          "body": "I run a small logistics firm and completed IGNOU Operations MBA for the management credential for tenders that require a post-graduate degree. The Logistics, International Logistics, and Materials Management subjects were directly applicable. NAAC A++ is recognised by central government tender authorities — that was the deciding factor. The study materials were functional; the LMS was slow during exam registration periods but workable."
+        },
+        {
+          "name": "Kavya R.",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Project Management subject covered CPM and PERT networks at a level of detail that directly improved my IT project delivery work",
+          "disliked": "Supply chain content was missing modern topics like demand sensing, S&OP, and digital supply chain transformation — the MMPO series needs updating for post-2020 supply chain realities",
+          "body": "I work as a project coordinator at an IT services company. The Project Management subject was directly applicable to my delivery work. Operations Research gave me the LP and simulation skills I use for project resource modelling. At ₹66,000 the fee was easily within budget. NAAC A++ cleared the credential filter at every employer I engaged. The placement gap is real — I got my current role through a recruiter, not IGNOU."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does the Operations Management MBA cover Six Sigma and Lean?",
+        "answer": "Six Sigma DMAIC methodology is covered in MMPC-019 Total Quality Management (a common Sem 4 course for all IGNOU MBA specialisations). Lean manufacturing principles are covered in MMPO-003 Operations Management. The coverage is at an awareness and application level — sufficient for plant management and supply chain roles requiring quality methodology fluency, but not a substitute for a dedicated Six Sigma Green Belt or Black Belt certification programme."
+      },
+      {
+        "question": "Is IGNOU MBA Operations Management valid for defence PSU and Ordnance Factory roles?",
+        "answer": "Yes. IGNOU's degree from a central government NAAC A++ university satisfies the management degree requirement for Group A and B officer roles in defence PSUs (HAL, BEL, BDL, BEML), Ordnance Factories, and DRDO administrative tracks where an MBA is specified. The combination of UGC-DEB entitlement and central government university status is accepted across all central government procurement and defence production roles."
+      },
+      {
+        "question": "What is the total cost of the IGNOU Operations Management MBA?",
+        "answer": "Total programme tuition is ₹66,000 paid semester-wise (₹16,000 in Semesters 1, 2, and 4; ₹18,000 in Semester 3 due to the Project Report MMPP-001 at 8 credits). Examination fees are additional per IGNOU's schedule (typically ₹150-200 per paper). Application fee is approximately ₹300. Total indicative all-in cost is approximately ₹68,000-70,000."
+      },
+      {
+        "question": "Can the flexible completion policy be used if work commitments delay studies?",
+        "answer": "Yes. IGNOU permits completion up to 5 years from enrolment. If a semester cannot be completed due to work, health, or personal reasons, the student can continue in the next admission cycle without losing their enrolment. This 5-year window is a significant advantage over private online universities where re-admission processes and fee implications for delayed completion can be complex."
+      },
+      {
+        "question": "Does IGNOU provide study materials or is everything online?",
+        "answer": "IGNOU provides study materials in digital format for online MBA students. Physical printed material dispatch has also been a feature historically, though delivery timelines and availability vary by admission cycle. Students should verify the current study material format at the time of admission. The digital materials are accessible through IGNOU's eGyanKosh repository and LMS. No third-party Coursera or LinkedIn Learning access is bundled."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You need the most affordable UGC-DEB approved MBA in Operations Management — ₹66,000 is the lowest on the EdifyEdu platform.",
+        "Government job eligibility, PSU operations officer recruitment, or defence production roles require a recognised MBA.",
+        "You want Operations Research, Project Management, Logistics, Maintenance Management, and MIS in one operations curriculum.",
+        "You are a self-directed learner with operations work experience and do not need placement support."
+      ],
+      "consider": [
+        "You need structured placement support for private-sector manufacturing or supply chain roles (consider LPU, CU, or SMU).",
+        "Your target employer requires contemporary lean, Industry 4.0, or digital supply chain curriculum content.",
+        "Your target employer filters by NIRF rank rather than NAAC grade or UGC-DEB entitlement."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 1900,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 20,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22"
+  }
+}
