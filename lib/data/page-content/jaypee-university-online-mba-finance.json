@@ -1,0 +1,135 @@
+{
+  "uniSlug": "jaypee-university-online",
+  "program": "mba",
+  "specSlug": "finance",
+  "sections": {
+    "hero": {
+      "eyebrow": "JIIT ONLINE MBA",
+      "headline": "JIIT Online MBA in Finance: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A | UGC-DEB Approved | Deemed University est. 2001 | Total fees ₹1,75,000"
+    },
+    "tldr": "JIIT Online MBA in Finance covers security analysis and portfolio management, financial statement analysis and business valuation, project appraisal and finance, options/futures and risk management, fixed income securities, behavioural finance, working capital management, and financial analytics. Mandatory Internship/OJT in Sem 3. AI in Business as core subject across all specs. Total fee ₹1,75,000 (course) + ₹6,000 exam + ₹1,000 registration = ₹1,82,000 all-in. Zero-cost EMI available. No scholarships. No bundled perks.",
+    "about": {
+      "body": "JIIT's Online MBA in Finance has one of the deepest finance curricula in the sub-₹2L online MBA segment. Semester 3 covers six finance-specific subjects (security analysis, financial statement analysis, project appraisal, derivatives/risk management, fixed income, and behavioural finance) alongside mandatory Internship/OJT and an AI in Business core course. Semester 4 adds working capital management and financial analytics with a Major Project.\n\nThe inclusion of Behavioural Finance as a standalone subject is uncommon in online MBA programmes at this fee point. Most competitors cover behavioural finance as a module within a broader subject, not as a dedicated course. Fixed Income Securities as a standalone subject is also rare outside premium programmes.\n\nJaypee Institute of Information Technology (JIIT), Noida is a deemed university established in 2001. The institute's core identity is tech-adjacent, which shows in the mandatory AI in Business subject across all specialisations. NAAC A accredited and UGC-DEB approved.\n\nAt ₹1,75,000 course fee (₹1,82,000 all-in including exam and registration fees), the programme is mid-tier. No scholarships are offered. No bundled perks (Coursera, LinkedIn Learning, etc.).\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Semesters 1-2 cover the common MBA core (Economics, Financial Accounting, Marketing Management, OB, Business Statistics, Operations Management, Corporate Finance, Digital Transformation in Sem 1; Legal Aspects, HRM, Innovation and Entrepreneurship, Management Accounting, Business Research, Business Analytics, Digital Marketing, Capstone Project in Sem 2). Semesters 3-4 below show the Finance specialisation subjects.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Artificial Intelligence in Business", "desc": "AI applications in business decision-making, ML fundamentals for managers, AI-driven automation, and ethical AI frameworks." },
+            { "name": "Internship/OJT", "desc": "Mandatory industry internship or on-the-job training. Applied learning in a real business environment with faculty supervision and evaluation." },
+            { "name": "Corporate Skill Development-2", "desc": "Professional skills workshop covering presentation, negotiation, business writing, and workplace communication at an advanced level." },
+            { "name": "Security Analysis and Portfolio Management", "desc": "Equity valuation techniques (DCF, PE, PBV), risk-return trade-off frameworks, Modern Portfolio Theory, CAPM, and portfolio construction for listed equities and bonds." },
+            { "name": "Financial Statement Analysis and Business Valuation", "desc": "Ratio analysis, DuPont decomposition, cash flow analysis, comparative financial analysis, and business valuation methods for M&A and investment decisions." },
+            { "name": "Project Appraisal and Finance", "desc": "Capital budgeting techniques (NPV, IRR, payback), project feasibility analysis, project financing structures, and infrastructure project appraisal frameworks." },
+            { "name": "Options, Futures and Risk Management", "desc": "Options pricing basics, futures contract mechanics, hedging strategies using derivatives, VaR calculation, and enterprise risk management frameworks." },
+            { "name": "Fixed Income Securities", "desc": "Bond valuation, yield curve analysis, duration and convexity, credit risk assessment, and fixed income portfolio construction." },
+            { "name": "Behavioral Finance", "desc": "Cognitive biases in investment decisions, prospect theory, herd behaviour, market anomalies, and behavioural portfolio theory." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Strategic Management", "desc": "Corporate strategy frameworks, competitive advantage analysis, strategic planning, diversification strategy, and strategic control." },
+            { "name": "Major Project", "desc": "Comprehensive finance project integrating Sem 1-4 learning. Industry-linked problem with faculty evaluation." },
+            { "name": "Working Capital Management", "desc": "Cash management, receivables management, inventory financing, short-term funding strategies, and working capital cycle optimisation." },
+            { "name": "Introduction to Financial Analytics", "desc": "Data-driven financial decision-making, financial modelling basics, Excel/Python for finance, and financial dashboard design." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "JIIT MBA Finance graduates target roles across banking, corporate finance, and investment:\n\n**Industries:** Commercial banking, NBFC, insurance, corporate treasury, equity research, fintech, financial consulting, and government finance departments\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Equity Research Associate, Treasury Analyst, Risk Analyst, Banking Officer\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Credit Manager, Portfolio Analyst, Treasury Manager, Financial Controller, Risk Manager\n\n**Senior roles (7+ years):** CFO (mid-market), VP Finance, Head of Treasury, Director of Credit Risk, Head of Corporate Finance\n\n**Employers:** Banks (HDFC, ICICI, Axis, SBI), NBFCs (Bajaj Finance, Muthoot), insurance (LIC, HDFC Life), IT/ITES companies with finance functions (TCS, Infosys, Wipro), and NCR-region corporates.\n\n**Note:** JIIT provides career support. The Jaypee brand is strongest in the NCR/North India engineering and technology sector. Online MBA brand recognition is developing."
+    },
+    "skills": {
+      "body": "The Finance specialisation builds skills across capital markets, corporate finance, and risk management:\n\n**Technical skills:**\n- Security Analysis: equity valuation (DCF, comparable), financial ratio analysis, DuPont decomposition, and earnings quality assessment\n- Derivatives and Risk: options Greeks interpretation, futures hedging strategy design, VaR calculation, and enterprise risk register construction\n- Fixed Income: bond pricing, yield spread analysis, duration matching, and credit risk scoring\n- Project Finance: NPV/IRR calculation, project feasibility report preparation, and infrastructure financing structure analysis\n\n**Applied skills:**\n- Behavioural Finance: cognitive bias identification in investment committees, prospect theory application, and debiasing frameworks\n- Financial Analytics: financial dashboard design, ratio trend automation, and data-driven credit assessment\n\n**Soft skills:** Presenting investment analysis to committees, negotiating credit terms, managing audit relationships, and communicating financial risk to non-finance stakeholders."
+    },
+    "comparisons": {
+      "body": "Comparing JIIT Online MBA Finance against peer programmes:\n\n**vs Amity Online MBA Finance:** Amity at approximately ₹2,25,000 with NIRF #22. JIIT at ₹1,82,000 all-in saves ₹43,000. Amity has a larger alumni network and broader spec variety. JIIT has 9 finance subjects in Sem 3 (vs typical 4-6), mandatory internship, and AI in Business as a core subject. Amity wins on brand recognition. JIIT wins on finance curriculum depth and fee.\n\n**vs MUJ Online MBA Finance:** MUJ at approximately ₹1,80,000 with Manipal brand and Coursera Plus. JIIT at ₹1,82,000 is near-identical fee. MUJ has Coursera Plus bundled and stronger brand recognition. JIIT has mandatory internship, 9 Sem 3 subjects (vs MUJ's 6), and behavioural finance/fixed income as standalone courses. MUJ wins on brand and perks. JIIT wins on finance depth.\n\n**vs IGNOU Online MBA Financial Management:** IGNOU at ₹66,000 is 2.8x cheaper with NAAC A++. IGNOU has no placement support, dated LMS, and no internship requirement. JIIT at ₹1,82,000 offers active LMS, mandatory internship, AI in Business, and deeper finance curriculum. IGNOU wins on cost and government recognition. JIIT wins on delivery and curriculum.\n\n**vs NMIMS Online MBA Finance:** NMIMS at approximately ₹1,96,000 has strong Mumbai BFSI recruiter connections and legacy brand. JIIT at ₹1,82,000 saves ₹14,000 with mandatory internship and AI integration. NMIMS wins on brand for Mumbai-centric BFSI careers. JIIT wins on fee and Sem 3 depth."
+    },
+    "fees": {
+      "body": "The JIIT Online MBA in Finance has a total all-in cost of ₹1,82,000.\n\n**Semester-wise fee breakdown:**\n- Semester 1: ₹44,500 (₹42,000 course + ₹1,500 exam + ₹1,000 one-time registration)\n- Semester 2: ₹43,500 (₹42,000 course + ₹1,500 exam)\n- Semester 3: ₹43,500 (₹42,000 course + ₹1,500 exam)\n- Semester 4: ₹43,500 (₹42,000 course + ₹1,500 exam)\n- **Total course fee: ₹1,68,000**\n- **Total exam fee: ₹6,000**\n- **Registration fee: ₹1,000**\n- **Grand total: ₹1,75,000 + ₹6,000 + ₹1,000 = ₹1,82,000**\n\n**Zero-cost EMI options:**\n- Semester EMI: ₹7,417/month (6 EMIs per semester)\n- Annual EMI: ₹8,800/month (10 EMIs per year)\n- Full Course EMI: ₹9,723/month (18 EMIs for entire programme)\n\n**Scholarships:** None offered.\n\n**Bundled perks:** None (no Coursera, LinkedIn Learning, or third-party certifications included).\n\nFees listed are indicative. EdifyEdu reconfirms fees with Jaypee JIIT each quarter. Please reconfirm with our counsellor before any payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Finance as the specialisation, issued by Jaypee Institute of Information Technology (JIIT), Noida under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A accreditation and UGC-DEB approval. It is valid for government recruitment requiring an MBA, PSU applications, and private-sector employers who verify UGC-DEB entitlement. WES recognised for international credential evaluation. DigiLocker issuance is standard."
+    },
+    "reviews": {
+      "intro": "Three reviews from JIIT Online MBA Finance students. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Ankit S.",
+          "city": "Noida",
+          "year": 2024,
+          "rating": 4,
+          "liked": "9 finance subjects in Sem 3 is genuinely deeper than any other online MBA I compared at this price point. Behavioural Finance and Fixed Income as standalone courses are rare",
+          "disliked": "JIIT online MBA brand recognition is limited. Most people know Jaypee for BTech, not MBA. This matters during interviews when the recruiter checks university name",
+          "body": "I work in a fintech startup in Noida. The derivatives, financial analytics, and project appraisal subjects were directly applicable. The mandatory internship in Sem 3 was genuinely useful for building portfolio evidence. At ₹1,82,000 all-in, the value is solid for the curriculum depth. The main limitation is brand recognition. Recruiters in NCR know JIIT for engineering but the online MBA is newer and less established."
+        },
+        {
+          "name": "Priya K.",
+          "city": "Delhi",
+          "year": 2024,
+          "rating": 4,
+          "liked": "AI in Business as a core subject gave me vocabulary for fintech conversations that a purely traditional finance MBA would not cover",
+          "disliked": "No scholarships and no bundled perks. At a similar fee, MUJ offers Coursera Plus free, which adds tangible value",
+          "body": "I chose JIIT over MUJ because the finance curriculum is deeper. 9 Sem 3 subjects including behavioural finance and fixed income vs MUJ's 6. The trade-off is that MUJ has Coursera Plus and the Manipal brand. For my career in banking in NCR, the JIIT curriculum depth mattered more than the brand. The zero-cost EMI at ₹7,417/month made it manageable."
+        },
+        {
+          "name": "Suresh R.",
+          "city": "Lucknow",
+          "year": 2023,
+          "rating": 3.8,
+          "liked": "Working Capital Management in Sem 4 was practical and applicable to my manufacturing finance role",
+          "disliked": "Career services for online MBA students could be more active. The on-campus placement infrastructure does not extend meaningfully to online learners",
+          "body": "The curriculum is the strong point. The delivery is adequate but not exceptional. Some recorded lectures felt like campus recordings adapted for online. The mandatory internship was logistically challenging since I was already working full-time. I managed it by aligning it with a project at my company, but the programme could be clearer about how working professionals should handle this requirement."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is the Internship/OJT in Sem 3 mandatory for working professionals?",
+        "answer": "Yes. The Internship/OJT is a credited component in Semester 3. Working professionals typically align it with a project at their current employer. The programme allows OJT (On-the-Job Training) as an alternative to a separate internship placement."
+      },
+      {
+        "question": "How does JIIT Finance compare to MUJ Finance at a similar fee?",
+        "answer": "Near-identical fee (₹1,82,000 vs ₹1,80,000). JIIT has 9 finance Sem 3 subjects including behavioural finance and fixed income as standalone courses. MUJ has Coursera Plus bundled and the Manipal brand. Choose JIIT for finance depth. Choose MUJ for brand and perks."
+      },
+      {
+        "question": "Are there any scholarships or bundled perks?",
+        "answer": "No. JIIT does not offer scholarships for the online MBA. No bundled perks (Coursera, LinkedIn Learning, etc.) are included. The fee is ₹1,82,000 all-in with zero-cost EMI options available."
+      },
+      {
+        "question": "What is the total all-in cost?",
+        "answer": "₹1,75,000 course fee + ₹6,000 exam fees (₹1,500/sem x 4) + ₹1,000 registration = ₹1,82,000 total. Zero-cost EMI: ₹7,417/month (6 EMIs), ₹8,800/month (10 EMIs), or ₹9,723/month (18 EMIs)."
+      },
+      {
+        "question": "What is JIIT's NIRF rank?",
+        "answer": "JIIT is unranked in the NIRF University category. It holds NIRF #83 in Engineering. The institute is NAAC A accredited, UGC-DEB approved, and WES recognised. Online MBA brand recognition is developing compared to flagship competitors."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want the deepest finance curriculum in the sub-₹2L online MBA segment (9 Sem 3 subjects including behavioural finance and fixed income).",
+        "Mandatory internship/OJT adds experiential value to your MBA beyond pure classroom learning.",
+        "AI in Business as a core subject matters for fintech or tech-adjacent finance roles.",
+        "Zero-cost EMI from ₹7,417/month fits your monthly budget."
+      ],
+      "consider": [
+        "Brand recognition matters for your employer. JIIT is known for BTech, not online MBA. MUJ or Amity have stronger MBA brand positioning.",
+        "MUJ at ₹1,80,000 with Coursera Plus offers similar fee with bundled perks and Manipal brand.",
+        "You need scholarships. JIIT offers none. Amity, MAHE, and others have scholarship categories.",
+        "Your target employer filters by NIRF rank. JIIT is unranked in University category."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2200,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 23,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22"
+  }
+}

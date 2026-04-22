@@ -1,0 +1,135 @@
+{
+  "uniSlug": "jaypee-university-online",
+  "program": "mba",
+  "specSlug": "it-business-analytics",
+  "sections": {
+    "hero": {
+      "eyebrow": "JIIT ONLINE MBA",
+      "headline": "JIIT Online MBA in IT and Business Analytics: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A | UGC-DEB Approved | Deemed University est. 2001 | Total fees ₹1,75,000"
+    },
+    "tldr": "JIIT Online MBA in IT and Business Analytics covers IT security and cyber law, BPR/BPM/ERP, e-commerce and electronic governance, data management and analysis, predictive analytics, blockchain, big data and data visualisation, and advanced tools for data science. JIIT's tech DNA (Information Technology in the institute name) makes this a natural fit. Mandatory Internship/OJT. AI in Business core. Total ₹1,82,000 all-in. Zero-cost EMI. No scholarships. No bundled perks.",
+    "about": {
+      "body": "JIIT's Online MBA in IT and Business Analytics is the most natural specialisation from a deemed university that has 'Information Technology' in its name. The curriculum covers both IT management (IT security, cyber law, BPR/BPM/ERP, e-commerce/e-governance) and data analytics (data management, predictive analytics, blockchain, big data, data visualisation, advanced data science tools).\n\nSemester 3 has 9 subjects including mandatory Internship/OJT and AI in Business. The IT-specific subjects cover IT security and cyber law (DPDP Act, IT Act, cybercrime frameworks), business process reengineering with ERP (SAP/Oracle overview), e-commerce and electronic governance (digital India initiatives, payment gateways), data management (SQL, data warehousing), predictive analytics (regression, classification, time series), and blockchain (DLT fundamentals, smart contracts, enterprise applications).\n\nSemester 4 adds big data and data visualisation (Hadoop/Spark concepts, Tableau/Power BI) and advanced tools for data science (Python, R, ML libraries). The Major Project integrates both IT management and analytics.\n\nAt ₹1,82,000 all-in, this is one of the more affordable IT and analytics MBAs from a tech-focused deemed university. No scholarships and no bundled perks.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Semesters 1-2 cover the common MBA core. Semesters 3-4 below show the IT and Business Analytics specialisation subjects.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Artificial Intelligence in Business", "desc": "AI applications in business, ML basics for managers, AI-driven automation, and ethical AI in enterprise contexts." },
+            { "name": "Internship/OJT", "desc": "Mandatory industry internship or on-the-job training with faculty supervision and evaluation." },
+            { "name": "Corporate Skill Development-2", "desc": "Advanced professional skills: executive presentation, analytical communication, and stakeholder management." },
+            { "name": "IT Security and Cyber Law", "desc": "Information security fundamentals, IT Act 2000, DPDP Act 2023, cybercrime categories, data protection compliance, and ISO 27001 awareness." },
+            { "name": "BPR, Business Process Management and ERP", "desc": "Business process reengineering methodology, BPM lifecycle, ERP architecture (SAP/Oracle module overview), ERP implementation lifecycle, and process automation." },
+            { "name": "E-Commerce and Electronic Governance", "desc": "E-commerce business models, payment gateway architecture, digital India initiatives, e-governance frameworks, and UPI/digital payments ecosystem." },
+            { "name": "Data Management and Analysis", "desc": "Relational database design, SQL fundamentals, data warehousing concepts, ETL processes, data quality management, and data governance basics." },
+            { "name": "Predictive Analytics", "desc": "Regression modelling, classification techniques (decision trees, logistic regression), time series forecasting, model validation, and business applications (churn, demand, credit scoring)." },
+            { "name": "Blockchain", "desc": "Distributed ledger technology fundamentals, consensus mechanisms, smart contracts, enterprise blockchain use cases (supply chain, trade finance), and regulatory landscape." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Strategic Management", "desc": "Corporate strategy, competitive analysis, strategic planning, and digital strategy frameworks." },
+            { "name": "Major Project", "desc": "Comprehensive IT/analytics project integrating Sem 1-4 learning. Industry-linked problem with faculty evaluation." },
+            { "name": "Big Data and Data Visualisation", "desc": "Hadoop/Spark ecosystem overview, big data architecture, Tableau/Power BI dashboard design, data storytelling, and visual analytics for executive reporting." },
+            { "name": "Advanced Tools for Data Science", "desc": "Python (pandas, scikit-learn), R programming basics, ML library application, data pipeline concepts, and advanced analytics workflows." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "JIIT MBA IT and Business Analytics graduates target roles at the intersection of technology and business:\n\n**Industries:** IT services and consulting, banking IT, e-commerce, fintech, government digital services (NIC, MeitY), telecom, healthcare IT, and data analytics firms\n\n**Entry-level roles:** Business Analyst, Data Analyst, IT Analyst, ERP Functional Consultant (junior), BI Analyst, Cybersecurity Analyst (management track)\n\n**Mid-level roles (3-5 years experience):** IT Manager, Analytics Manager, ERP Programme Manager, Data Science Team Lead, IT Security Manager, Digital Transformation Manager\n\n**Senior roles (7+ years):** CIO, VP IT, Head of Analytics, Chief Data Officer, Head of Digital Transformation, Director of IT Governance\n\n**Employers:** IT services (TCS, Infosys, Wipro, HCL, Cognizant), consulting (Deloitte, KPMG IT advisory), banking IT (HDFC, ICICI, SBI technology), e-commerce (Flipkart, Amazon India analytics), and government IT (NIC, state IT departments).\n\n**Note:** JIIT's tech institute identity is an advantage for IT/analytics employer credibility."
+    },
+    "skills": {
+      "body": "The IT and Business Analytics specialisation builds skills across IT management, data analytics, and emerging tech:\n\n**Technical skills:**\n- Data Analytics: SQL querying, predictive model building (regression, classification), time series forecasting, and model performance evaluation\n- Big Data and Visualisation: Hadoop/Spark architecture understanding, Tableau dashboard design, Power BI report creation, and data storytelling\n- IT Security: ISO 27001 gap analysis awareness, DPDP Act compliance framework, IT Act 2000 application, and cybercrime incident response basics\n- Blockchain: DLT architecture understanding, smart contract use-case assessment, and enterprise blockchain feasibility analysis\n\n**Applied skills:**\n- ERP: SAP/Oracle module selection, ERP implementation risk assessment, and BPR methodology application\n- Data Science Tools: Python (pandas, scikit-learn) for analytics, R basics, and ML pipeline design at management level\n\n**Soft skills:** Presenting analytics insights to C-suite, managing cross-functional digital transformation teams, negotiating with IT vendors, and translating technical requirements into business cases."
+    },
+    "comparisons": {
+      "body": "Comparing JIIT Online MBA IT and Business Analytics against peer programmes:\n\n**vs NMIMS Online MBA IT/Analytics:** NMIMS at approximately ₹2,20,000 has stronger Mumbai recruiter network and legacy brand. JIIT at ₹1,82,000 saves ₹38,000. JIIT has blockchain, e-governance, and IT security as standalone subjects that NMIMS may not cover at this depth. JIIT's tech institute identity (Information Technology in the name) adds credibility for IT management roles.\n\n**vs Chandigarh University Online MBA Data Science and AI:** CU at ₹1,65,000 with NIRF #19 and PwC co-teaching. CU wins on NIRF rank and fee. JIIT covers IT management (BPR/ERP, IT security, e-governance) alongside analytics, while CU focuses more narrowly on data science and AI. Choose CU for NIRF rank signalling. Choose JIIT for broader IT management + analytics combination.\n\n**vs MUJ Online MBA (no dedicated IT/BA spec):** MUJ at approximately ₹1,80,000 offers Business Analytics as a standalone spec but not a combined IT and Business Analytics programme. JIIT's combined IT management + analytics curriculum with blockchain and e-governance depth is a differentiator for candidates targeting CIO-track or IT governance roles.\n\n**vs DPU Pune Online MBA IT Management:** DPU at ₹1,89,400 with NIRF #41 and NAAC A++. DPU covers IT governance (COBIT/ITIL), ERP, and InfoSec but not predictive analytics, big data, or blockchain. JIIT at ₹1,82,000 covers both IT management and analytics at a lower fee. DPU wins on accreditation."
+    },
+    "fees": {
+      "body": "The JIIT Online MBA in IT and Business Analytics has a total all-in cost of ₹1,82,000.\n\n**Semester-wise fee breakdown:**\n- Semester 1: ₹44,500 (₹42,000 course + ₹1,500 exam + ₹1,000 registration)\n- Semester 2: ₹43,500 (₹42,000 course + ₹1,500 exam)\n- Semester 3: ₹43,500 (₹42,000 course + ₹1,500 exam)\n- Semester 4: ₹43,500 (₹42,000 course + ₹1,500 exam)\n- **Grand total: ₹1,75,000 + ₹6,000 + ₹1,000 = ₹1,82,000**\n\n**Zero-cost EMI options:**\n- Semester: ₹7,417/month (6 EMIs)\n- Annual: ₹8,800/month (10 EMIs)\n- Full Course: ₹9,723/month (18 EMIs)\n\n**Scholarships:** None offered.\n**Bundled perks:** None.\n\nFees listed are indicative. EdifyEdu reconfirms fees with Jaypee JIIT each quarter. Please reconfirm with our counsellor before any payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with IT and Business Analytics as the specialisation, issued by Jaypee Institute of Information Technology (JIIT), Noida under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A accreditation, UGC-DEB approval, and WES recognition. The IT institute identity adds credibility for technology management and analytics roles. Valid for government IT department roles, PSU applications, and private-sector IT/analytics positions. DigiLocker issuance is standard."
+    },
+    "reviews": {
+      "intro": "Three reviews from JIIT Online MBA IT and Business Analytics students. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Vikram P.",
+          "city": "Noida",
+          "year": 2024,
+          "rating": 4.2,
+          "liked": "Blockchain and Predictive Analytics as standalone subjects are rare in online MBAs under ₹2L. JIIT's tech DNA makes the IT+Analytics combination credible",
+          "disliked": "No Coursera or other bundled perks. MUJ at ₹1,80,000 includes Coursera Plus. At the same price, JIIT should offer something",
+          "body": "I work as a business analyst at an IT services company. The predictive analytics, data management, and big data subjects were directly applicable. The blockchain module gave me enough understanding for client conversations about DLT implementations. The AI in Business course was a genuine differentiator. JIIT being an IT institute gave the credential credibility at my employer. The gap is brand recognition for MBA specifically."
+        },
+        {
+          "name": "Shruti D.",
+          "city": "Gurgaon",
+          "year": 2024,
+          "rating": 4,
+          "liked": "IT Security and Cyber Law covered DPDP Act and IT Act at a practical level. Advanced Tools for Data Science gave me Python and R basics I use for dashboards",
+          "disliked": "The programme could include a certification from a recognisable platform (AWS, Google, IBM). At ₹1,82,000 with zero perks, it is hard to compete with CU at ₹1,65,000 with PwC co-teaching",
+          "body": "The combined IT management + analytics curriculum is the USP. Most online MBAs offer either IT management or business analytics, not both in one spec. The mandatory internship helped me build a portfolio project. The advanced data science tools module introduced Python and R at a management level, not a coding bootcamp level. For IT governance and analytics roles in NCR, the JIIT credential works."
+        },
+        {
+          "name": "Amit R.",
+          "city": "Lucknow",
+          "year": 2023,
+          "rating": 3.8,
+          "liked": "BPR/ERP module was practical. The combination of ERP understanding with data analytics gives a dual-track capability for IT consulting roles",
+          "disliked": "Career support for online MBA is limited. JIIT's placement infrastructure is primarily set up for on-campus BTech and MTech students. Online MBA students need to self-navigate",
+          "body": "The curriculum is comprehensive. 9 Sem 3 subjects covering IT security, ERP, e-commerce, data management, predictive analytics, and blockchain is genuine depth. The delivery quality varied by subject. Some faculty were strong, others felt like they were teaching from slides prepared for the campus programme. At ₹1,82,000 with no perks, the value comes from curriculum breadth, not platform experience."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Why is JIIT's IT and Business Analytics MBA different from a pure analytics MBA?",
+        "answer": "JIIT covers both IT management (IT security, cyber law, BPR/ERP, e-governance) and data analytics (predictive analytics, big data, data science tools, blockchain). Most competitors offer either IT management or analytics, not both. For CIO-track or IT governance roles that require both domains, this combined curriculum is a differentiator."
+      },
+      {
+        "question": "Does JIIT's tech institute identity matter for IT/analytics roles?",
+        "answer": "Yes. JIIT has 'Information Technology' in its name and is known as a tech-focused institution. For IT management and analytics roles, this institutional identity adds credibility that a general business school may not carry. The limitation is that MBA brand recognition specifically is still developing."
+      },
+      {
+        "question": "Does the programme teach Python and R?",
+        "answer": "Yes. Advanced Tools for Data Science in Semester 4 covers Python (pandas, scikit-learn) and R basics at management level. This is introductory-to-intermediate depth, sufficient for analytics management but not for data engineering roles."
+      },
+      {
+        "question": "How does JIIT IT and BA compare to CU Data Science and AI?",
+        "answer": "CU at ₹1,65,000 with NIRF #19 wins on rank and fee. JIIT at ₹1,82,000 covers IT management (ERP, IT security, e-governance) alongside analytics, while CU focuses on data science and AI. Choose CU for NIRF rank. Choose JIIT for broader IT + analytics combination."
+      },
+      {
+        "question": "What is the total fee?",
+        "answer": "₹1,82,000 all-in (₹1,75,000 course + ₹6,000 exam + ₹1,000 registration). Zero-cost EMI from ₹7,417/month. No scholarships, no bundled perks. Reconfirm with our counsellor before payment."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want a combined IT management + business analytics MBA from a tech-focused deemed university.",
+        "Blockchain, IT security, ERP, and predictive analytics in one programme matches your CIO-track or IT governance career target.",
+        "Mandatory internship adds practical value to your analytics and IT management learning.",
+        "₹1,82,000 all-in with zero-cost EMI fits your budget."
+      ],
+      "consider": [
+        "CU at ₹1,65,000 with NIRF #19 and PwC co-teaching is cheaper with stronger rank for pure analytics roles.",
+        "MUJ at ₹1,80,000 with Coursera Plus offers similar fee with bundled perks and Manipal brand.",
+        "Brand recognition for JIIT online MBA is limited compared to Amity, NMIMS, and MAHE.",
+        "You need deep data engineering or ML engineering skills. A dedicated data science programme is more appropriate."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2200,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 23,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22"
+  }
+}

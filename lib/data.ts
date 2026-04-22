@@ -5137,7 +5137,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'BBA'],
     programDetails: {
       'MBA': {
-        specs: ['Marketing', 'Finance', 'Human Resource Management', 'General Management'],
+        specs: ['Marketing', 'Finance', 'Human Resource Management', 'IT & Business Analytics'],
         fees: '₹1.75L',
         duration: '2 Yrs',
         roles: ['Marketing Executive', 'Brand Trainee', 'Digital Marketing Trainee'],

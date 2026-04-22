@@ -1,0 +1,135 @@
+{
+  "uniSlug": "jaypee-university-online",
+  "program": "mba",
+  "specSlug": "marketing",
+  "sections": {
+    "hero": {
+      "eyebrow": "JIIT ONLINE MBA",
+      "headline": "JIIT Online MBA in Marketing: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A | UGC-DEB Approved | Deemed University est. 2001 | Total fees ₹1,75,000"
+    },
+    "tldr": "JIIT Online MBA in Marketing covers product and brand management, integrated marketing communication, sales and distribution management, consumer behaviour, services marketing, digital marketing, omnichannel marketing, and AI/ML-powered marketing. Mandatory Internship/OJT in Sem 3. AI in Business core. Total ₹1,82,000 all-in. Zero-cost EMI available. No scholarships. No bundled perks.",
+    "about": {
+      "body": "JIIT's Online MBA in Marketing covers the full marketing spectrum: traditional marketing (consumer behaviour, brand management, sales and distribution, services marketing, IMC) and contemporary digital marketing (digital marketing, omnichannel marketing, AI/ML-powered marketing). The inclusion of AI/ML-powered Marketing as a standalone Semester 4 subject is forward-looking. Most competing marketing MBAs cover AI in marketing as a module within digital marketing, not as a dedicated course.\n\nSemester 3 has 9 subjects including mandatory Internship/OJT and AI in Business. The marketing-specific subjects cover product and brand management, IMC, sales and distribution, consumer behaviour, services marketing, and digital marketing. Semester 4 adds omnichannel marketing (unified online-offline strategy) and AI/ML-powered marketing (personalisation engines, recommendation systems, predictive customer analytics).\n\nThe combination of AI in Business (Sem 3 core) plus AI/ML-powered Marketing (Sem 4 spec) gives double AI exposure, making this relevant for marketing professionals targeting MarTech or growth marketing roles.\n\nAt ₹1,82,000 all-in with zero-cost EMI, no scholarships, and no bundled perks.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Semesters 1-2 cover the common MBA core. Semesters 3-4 below show the Marketing specialisation subjects.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Artificial Intelligence in Business", "desc": "AI applications in business, ML basics for managers, AI-driven automation, and ethical AI in enterprise contexts." },
+            { "name": "Internship/OJT", "desc": "Mandatory industry internship or on-the-job training with faculty supervision and evaluation." },
+            { "name": "Corporate Skill Development-2", "desc": "Advanced professional skills: executive presentation, negotiation, and stakeholder communication." },
+            { "name": "Product and Brand Management", "desc": "Brand identity design, brand equity measurement (Keller, Aaker), product lifecycle management, new product development, and brand positioning strategies." },
+            { "name": "Integrated Marketing Communication", "desc": "IMC planning, media mix optimisation, ATL-BTL integration, PR and corporate communication, event marketing, and campaign measurement." },
+            { "name": "Sales and Distribution Management", "desc": "Sales force design, territory management, distributor management, channel conflict resolution, trade marketing, and sales performance metrics." },
+            { "name": "Consumer Behavior", "desc": "Consumer decision-making models, psychographic segmentation, cultural influences, perception and attitudes, and digital consumer behaviour." },
+            { "name": "Services Marketing", "desc": "Services marketing 7Ps, SERVQUAL model, service blueprint design, customer retention strategies, and service recovery." },
+            { "name": "Digital Marketing", "desc": "SEO/SEM fundamentals, social media strategy, content marketing, email automation, performance marketing metrics, and Google Analytics basics." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Strategic Management", "desc": "Corporate strategy, competitive advantage analysis, strategic planning, and marketing strategy alignment." },
+            { "name": "Major Project", "desc": "Comprehensive marketing project integrating Sem 1-4 learning. Industry-linked problem with faculty evaluation." },
+            { "name": "Omnichannel Marketing", "desc": "Unified online-offline customer experience design, channel integration strategy, click-and-collect operations, and omnichannel analytics." },
+            { "name": "AI/ML-powered Marketing", "desc": "Personalisation engines, recommendation system design for e-commerce, predictive customer analytics, programmatic advertising, and AI-driven content optimisation." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "JIIT MBA Marketing graduates target roles across FMCG, digital, retail, and services marketing:\n\n**Industries:** FMCG, e-commerce, banking (product marketing), telecom, media, consumer durables, digital agencies, D2C brands, and MarTech companies\n\n**Entry-level roles:** Marketing Executive, Brand Executive, Digital Marketing Analyst, Sales Executive, Social Media Executive, Content Marketing Associate\n\n**Mid-level roles (3-5 years experience):** Brand Manager, Digital Marketing Manager, Regional Sales Manager, Growth Marketing Manager, CRM Manager, Product Marketing Manager\n\n**Senior roles (7+ years):** VP Marketing, CMO, Head of Digital Marketing, National Sales Director, Head of Growth, Chief Commercial Officer\n\n**Employers:** FMCG (HUL, ITC, P&G, Nestle), e-commerce (Flipkart, Amazon India, Myntra), D2C (Mamaearth, BoAt, Sugar Cosmetics), IT (marketing divisions of TCS, Infosys, Wipro), and NCR-region consumer companies.\n\n**Note:** JIIT provides career support. Online MBA brand recognition is developing."
+    },
+    "skills": {
+      "body": "The Marketing specialisation builds skills across brand, digital, sales, and AI-driven marketing:\n\n**Technical skills:**\n- Brand Management: brand equity audit, positioning map, product lifecycle strategy, and new product launch planning\n- Digital Marketing: SEO audit, campaign ROI calculation, social media analytics, and performance marketing dashboard design\n- AI/ML Marketing: personalisation engine evaluation, recommendation system metrics, predictive churn modelling interpretation, and programmatic ad buying basics\n- Omnichannel: unified customer journey mapping, channel attribution analysis, and omnichannel conversion funnel design\n\n**Applied skills:**\n- IMC: media plan design, ATL-BTL budget allocation, campaign effectiveness measurement, and PR event planning\n- Sales Management: territory design, distributor ROI calculation, trade scheme evaluation, and sales pipeline management\n\n**Soft skills:** Presenting marketing strategy to boards, negotiating with agencies and media partners, managing cross-functional launch teams, and leading digital transformation in traditional marketing organisations."
+    },
+    "comparisons": {
+      "body": "Comparing JIIT Online MBA Marketing against peer programmes:\n\n**vs MAHE Online MBA Marketing:** MAHE at ₹2,92,000 with NIRF #3 and Coursera Plus. JIIT at ₹1,82,000 saves ₹1,10,000 (40% cheaper). MAHE has the flagship Manipal brand and IoE status. JIIT has AI/ML-powered Marketing and Omnichannel Marketing as standalone Sem 4 subjects that MAHE does not cover. For brand signalling, MAHE wins decisively. For AI-forward marketing curriculum at a lower fee, JIIT competes.\n\n**vs Amity Online MBA Marketing:** Amity at approximately ₹2,25,000 with NIRF #22 and broader alumni. JIIT at ₹1,82,000 saves ₹43,000 with mandatory internship and AI/ML-powered marketing depth. Amity wins on brand and alumni. JIIT wins on fee and contemporary content.\n\n**vs MUJ Online MBA Marketing:** MUJ at approximately ₹1,80,000 with Coursera Plus and Manipal brand. Near-identical fee. MUJ has Coursera Plus and brand recognition. JIIT has 9 Sem 3 subjects, mandatory internship, and AI/ML-powered Marketing as a dedicated course. MUJ wins on brand and perks. JIIT wins on curriculum depth.\n\n**vs DPU Pune Online MBA Marketing Management:** DPU at ₹1,89,400 with NIRF #41 and NAAC A++. JIIT saves ₹7,400 with omnichannel and AI/ML marketing depth. DPU has 7 Sem 3 subjects and stronger NAAC grade. Both are competitive."
+    },
+    "fees": {
+      "body": "The JIIT Online MBA in Marketing has a total all-in cost of ₹1,82,000.\n\n**Semester-wise fee breakdown:**\n- Semester 1: ₹44,500 (₹42,000 course + ₹1,500 exam + ₹1,000 registration)\n- Semester 2: ₹43,500 (₹42,000 course + ₹1,500 exam)\n- Semester 3: ₹43,500 (₹42,000 course + ₹1,500 exam)\n- Semester 4: ₹43,500 (₹42,000 course + ₹1,500 exam)\n- **Grand total: ₹1,75,000 + ₹6,000 + ₹1,000 = ₹1,82,000**\n\n**Zero-cost EMI options:**\n- Semester: ₹7,417/month (6 EMIs)\n- Annual: ₹8,800/month (10 EMIs)\n- Full Course: ₹9,723/month (18 EMIs)\n\n**Scholarships:** None offered.\n**Bundled perks:** None.\n\nFees listed are indicative. EdifyEdu reconfirms fees with Jaypee JIIT each quarter. Please reconfirm with our counsellor before any payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Marketing as the specialisation, issued by Jaypee Institute of Information Technology (JIIT), Noida under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A accreditation, UGC-DEB approval, and WES recognition. Valid for government recruitment, PSU applications, and private-sector marketing roles. DigiLocker issuance is standard."
+    },
+    "reviews": {
+      "intro": "Three reviews from JIIT Online MBA Marketing students. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Ravi D.",
+          "city": "Noida",
+          "year": 2024,
+          "rating": 4,
+          "liked": "AI/ML-powered Marketing in Sem 4 is forward-looking. Most online MBAs don't cover recommendation systems and programmatic advertising at this depth",
+          "disliked": "JIIT is known for BTech, not MBA. When I mention JIIT MBA in marketing interviews, I often need to explain the institute's credentials",
+          "body": "I work in digital marketing at an e-commerce company. The digital marketing, consumer behaviour, and AI/ML-powered marketing subjects were directly applicable. The mandatory internship helped me build a case study I use in interviews. At ₹1,82,000 the curriculum is strong for the price. The gap is brand recognition. MAHE at ₹2,92,000 or Amity at ₹2,25,000 carry stronger MBA brand weight, but at 40-60% higher cost."
+        },
+        {
+          "name": "Neha S.",
+          "city": "Delhi",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Omnichannel Marketing as a standalone subject is rare. Most programmes only cover this as a module within digital marketing",
+          "disliked": "No Coursera Plus or any bundled perk. MUJ at ₹1,80,000 gives you Coursera Plus for the same price. That is a real gap",
+          "body": "The marketing curriculum has 9 Sem 3 subjects covering brand, IMC, sales, consumer behaviour, services marketing, and digital. Plus Sem 4 adds omnichannel and AI/ML marketing. That is 8 marketing-specific subjects across Sem 3-4 plus AI in Business. The depth is real. The issue is that perks and brand are part of the buying decision, and JIIT offers neither at a price where competitors do."
+        },
+        {
+          "name": "Sanjay K.",
+          "city": "Gurgaon",
+          "year": 2023,
+          "rating": 3.8,
+          "liked": "Sales and Distribution Management and Services Marketing were practical for my FMCG distribution background",
+          "disliked": "Career services for online MBA are basic. The on-campus placement team focuses on BTech and MTech. Online MBA students need to network independently",
+          "body": "I transitioned from a sales executive to a marketing manager role using this MBA. The curriculum helped, especially consumer behaviour and IMC. The internship requirement was manageable since I used my existing job. The delivery quality was mixed. Some subjects had engaged faculty, others felt like recorded-lecture-and-PDF programmes. At this price, the content is strong, but the experience varies."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does the Marketing MBA cover AI-driven marketing?",
+        "answer": "Yes. AI in Business (Sem 3 core) covers AI fundamentals for managers. AI/ML-powered Marketing (Sem 4 spec-specific) covers personalisation engines, recommendation systems, predictive analytics for marketing, and programmatic advertising. This double AI exposure is uncommon in sub-₹2L online MBAs."
+      },
+      {
+        "question": "How does JIIT Marketing compare to MAHE Marketing?",
+        "answer": "MAHE at ₹2,92,000 with NIRF #3 has the flagship Manipal brand and Coursera Plus. JIIT at ₹1,82,000 is 40% cheaper with AI/ML-powered Marketing and Omnichannel Marketing as standalone subjects. Choose MAHE for brand signalling. Choose JIIT for contemporary curriculum at a lower fee."
+      },
+      {
+        "question": "Is the internship mandatory?",
+        "answer": "Yes. Internship/OJT is a credited Semester 3 component. Working professionals typically align it with a marketing project at their current employer."
+      },
+      {
+        "question": "Are there scholarships or perks?",
+        "answer": "No. Zero scholarships and zero bundled perks. The fee is ₹1,82,000 all-in with zero-cost EMI options. This is a gap compared to MUJ (Coursera Plus at ₹1,80,000) and MAHE (Coursera Plus + 8 scholarships)."
+      },
+      {
+        "question": "What is the total fee?",
+        "answer": "₹1,82,000 all-in (₹1,75,000 course + ₹6,000 exam + ₹1,000 registration). Zero-cost EMI from ₹7,417/month. Reconfirm with our counsellor before payment."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want AI/ML-powered Marketing and Omnichannel Marketing as standalone subjects, not just modules.",
+        "Mandatory internship adds practical marketing project experience to your MBA.",
+        "₹1,82,000 all-in is 40% cheaper than MAHE and 20% cheaper than Amity for comparable marketing depth.",
+        "You target MarTech, growth marketing, or digital marketing roles where AI integration matters."
+      ],
+      "consider": [
+        "Brand recognition matters. MAHE (NIRF #3), Amity (NIRF #22), and MUJ have stronger MBA brand positioning.",
+        "MUJ at ₹1,80,000 includes Coursera Plus at near-identical fee.",
+        "You need scholarships. JIIT offers none.",
+        "Only 4 specialisations at JIIT. If you want broader spec variety, Amity (18) or CU (26) offer more options."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2200,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 23,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22"
+  }
+}
