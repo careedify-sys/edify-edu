@@ -2349,25 +2349,25 @@
     "university_slug": "galgotias-university-online",
     "program": "bba",
     "spec_slug": "finance",
-    "spec_name": ""
+    "spec_name": "Finance"
   },
   {
     "university_slug": "galgotias-university-online",
     "program": "bba",
     "spec_slug": "human-resource-management",
-    "spec_name": ""
+    "spec_name": "Human Resource"
   },
   {
     "university_slug": "galgotias-university-online",
     "program": "bba",
     "spec_slug": "marketing",
-    "spec_name": ""
+    "spec_name": "Marketing"
   },
   {
     "university_slug": "galgotias-university-online",
     "program": "bba",
     "spec_slug": "operations",
-    "spec_name": ""
+    "spec_name": "Operations"
   },
   {
     "university_slug": "galgotias-university-online",
@@ -2379,55 +2379,55 @@
     "university_slug": "galgotias-university-online",
     "program": "ma",
     "spec_slug": "economics",
-    "spec_name": ""
+    "spec_name": "Economics"
   },
   {
     "university_slug": "galgotias-university-online",
     "program": "ma",
     "spec_slug": "english-literature-language",
-    "spec_name": ""
+    "spec_name": "English Literature & Language"
   },
   {
     "university_slug": "galgotias-university-online",
     "program": "mba",
     "spec_slug": "business-analytics",
-    "spec_name": ""
+    "spec_name": "Business Analytics"
   },
   {
     "university_slug": "galgotias-university-online",
     "program": "mba",
     "spec_slug": "finance",
-    "spec_name": ""
+    "spec_name": "Finance Management"
   },
   {
     "university_slug": "galgotias-university-online",
     "program": "mba",
     "spec_slug": "healthcare-management",
-    "spec_name": ""
+    "spec_name": "Healthcare Management"
   },
   {
     "university_slug": "galgotias-university-online",
     "program": "mba",
     "spec_slug": "hr-management",
-    "spec_name": ""
+    "spec_name": "HR Management"
   },
   {
     "university_slug": "galgotias-university-online",
     "program": "mba",
-    "spec_slug": "international-business",
-    "spec_name": ""
+    "spec_slug": "international-business-management",
+    "spec_name": "International Business Management"
   },
   {
     "university_slug": "galgotias-university-online",
     "program": "mba",
     "spec_slug": "marketing-management",
-    "spec_name": ""
+    "spec_name": "Marketing Management"
   },
   {
     "university_slug": "galgotias-university-online",
     "program": "mba",
     "spec_slug": "operations-management",
-    "spec_name": ""
+    "spec_name": "Operations Management"
   },
   {
     "university_slug": "galgotias-university-online",
@@ -2439,13 +2439,13 @@
     "university_slug": "galgotias-university-online",
     "program": "mcom",
     "spec_slug": "accountancy",
-    "spec_name": ""
+    "spec_name": "Accountancy"
   },
   {
     "university_slug": "galgotias-university-online",
     "program": "mcom",
     "spec_slug": "finance",
-    "spec_name": ""
+    "spec_name": "Finance"
   },
   {
     "university_slug": "ganpat-university-online",

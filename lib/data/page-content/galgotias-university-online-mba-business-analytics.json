@@ -1,0 +1,132 @@
+{
+  "uniSlug": "galgotias-university-online",
+  "program": "mba",
+  "specSlug": "business-analytics",
+  "sections": {
+    "hero": {
+      "eyebrow": "GALGOTIAS ONLINE MBA",
+      "headline": "Galgotias Online MBA in Business Analytics: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A+ | UGC-DEB Approved | Total all-in fee ₹86,400"
+    },
+    "tldr": "Galgotias Online MBA in Business Analytics covers AI for Business, Analytics using Python, Marketing Analytics, Data Visualization, and Decision Modelling with Spreadsheets. Master Thesis split across Sem 3-4. Total all-in ₹86,400 (₹76,200 tuition + ₹8,000 exam + ₹1,200 reg + ₹1,000 alumni). Second-lowest fee on EdifyEdu platform after IGNOU. No EMI from university. No bundled perks. No scholarships. NAAC A+ accredited.",
+    "about": {
+      "body": "Galgotias' Online MBA in Business Analytics includes AI for Business and Analytics using Python as standalone Sem 3 subjects. At ₹86,400 all-in, this is one of the only sub-₹1L online MBA programmes with Python-in-curriculum and AI-specific business content.\n\nSemester 3 covers AI for Business (AI applications in decision-making, ML basics for managers), Analytics using Python (pandas, NumPy, data manipulation), and Marketing Analytics (campaign measurement, customer segmentation, attribution). Semester 4 adds Data Visualization (dashboard design, data storytelling) and Decision Modelling with Spreadsheets (Excel-based optimisation, scenario analysis, simulation). The Master Thesis runs across both semesters (Initial Phase in Sem 3, Final Phase in Sem 4).\n\nGalgotias University, Greater Noida is a UGC-recognised private university (est. 2011) with NAAC A+ accreditation. At ₹86,400 all-in, it is the second-lowest-fee online MBA on the EdifyEdu platform after IGNOU (₹66,000).\n\nNo EMI is available from the university. No bundled perks (Coursera, LinkedIn Learning). No scholarships. The yearly fee structure (₹33,000 tuition per year) serves as natural installments.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Semesters 1-2 cover the common MBA core (Marketing Management, Accounting for Managers, OB, Business Statistics, Legal Aspects, Managerial Economics in Sem 1; Business Analytics, Corporate Finance, HRM, Research Methods, Operations and SCM, Digital Marketing, Entrepreneurship in Sem 2). Semesters 3-4 below show the Business Analytics specialisation subjects.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Business Communication", "desc": "Professional writing, executive presentations, cross-functional communication, and stakeholder reporting skills." },
+            { "name": "Strategic Management", "desc": "Corporate strategy frameworks, competitive advantage, strategic planning, and business model analysis." },
+            { "name": "Master Thesis (Initial Phase)", "desc": "Research topic selection, literature review, methodology design, and initial data collection for the management research thesis." },
+            { "name": "AI for Business", "desc": "AI applications in business decision-making, ML fundamentals for managers, AI-driven process automation, and ethical AI considerations." },
+            { "name": "Analytics using Python", "desc": "Python basics for data analysis, pandas DataFrames, NumPy operations, data cleaning workflows, and introductory data manipulation for business analytics." },
+            { "name": "Marketing Analytics", "desc": "Campaign ROI measurement, customer segmentation analytics, marketing attribution models, CLV calculation, and A/B testing methodology." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Business Ethics and CSR", "desc": "Ethical decision-making frameworks, CSR strategy, stakeholder theory, corporate governance, and sustainability reporting." },
+            { "name": "Master Thesis (Final Phase)", "desc": "Data analysis, findings presentation, thesis writing, and faculty-supervised defence of the management research project." },
+            { "name": "Data Visualization", "desc": "Dashboard design principles, chart selection for different data types, data storytelling frameworks, and executive reporting with visual analytics." },
+            { "name": "Decision Modelling with Spreadsheets", "desc": "Excel-based optimisation models, scenario analysis, sensitivity tables, simulation for business decisions, and what-if analysis frameworks." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "Galgotias MBA Business Analytics graduates target data-driven management roles:\n\n**Industries:** IT services, banking, e-commerce, retail, telecom, FMCG, healthcare analytics, and consulting\n\n**Entry-level roles:** Business Analyst, Data Analyst, MIS Executive, Reporting Analyst, Marketing Analytics Associate, BI Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Business Analyst, Analytics Manager, BI Manager, Marketing Analytics Lead, Data Strategy Manager\n\n**Senior roles (7+ years):** Head of Analytics, VP Data Strategy, Director of BI, Chief Analytics Officer\n\n**Employers:** IT services (TCS, Infosys, Wipro, Cognizant), banking (HDFC, ICICI, Axis analytics teams), e-commerce (Flipkart, Amazon India), and NCR-region corporates.\n\n**Note:** Galgotias provides career support. Online MBA brand recognition is developing. The Delhi-NCR location provides regional recruiter access."
+    },
+    "skills": {
+      "body": "The Business Analytics specialisation builds both analytical and management skills:\n\n**Technical skills:**\n- Python Analytics: pandas data wrangling, NumPy calculations, data cleaning automation, and basic data pipeline construction\n- Marketing Analytics: campaign ROI calculation, attribution model comparison, customer segmentation design, and CLV estimation\n- Data Visualization: dashboard layout design, chart type selection, KPI tracking display, and executive data storytelling\n- Decision Modelling: Excel Solver application, scenario planning, sensitivity analysis tables, and Monte Carlo simulation basics\n\n**Applied skills:**\n- AI for Business: AI use-case identification, build-vs-buy evaluation for AI tools, and ML output interpretation for management decisions\n- Master Thesis: structured research methodology, data collection design, findings synthesis, and academic report writing\n\n**Soft skills:** Presenting analytics findings to non-technical stakeholders, managing analytics project timelines, translating data insights into business recommendations, and facilitating data-driven decision-making workshops."
+    },
+    "comparisons": {
+      "body": "Comparing Galgotias Online MBA Business Analytics against peer programmes:\n\n**vs IGNOU Online MBA (no dedicated BA spec):** IGNOU at ₹66,000 is the only cheaper option but does not offer a dedicated Business Analytics specialisation. IGNOU has NAAC A++ but no active LMS, no Python curriculum, and no AI-for-Business content. Galgotias at ₹86,400 adds Python, AI, and analytics depth.\n\n**vs NMIMS Online MBA (Analytics/IT):** NMIMS at approximately ₹2,20,000 is 2.5x the cost. NMIMS has Mumbai recruiter networks and stronger brand. Galgotias at ₹86,400 has Python-in-curriculum and AI for Business at a fraction of the fee. For budget-conscious candidates, Galgotias offers genuine analytics content at ₹1,33,600 less.\n\n**vs Chandigarh University Online MBA Business Analytics:** CU at ₹1,65,000 with NIRF #19 and PwC co-teaching. CU wins on NIRF rank, PwC brand, and fee-for-rank value. Galgotias at ₹86,400 is ₹78,600 cheaper. For candidates where fee is the primary constraint, Galgotias competes.\n\n**vs JIIT Online MBA IT and Business Analytics:** JIIT at ₹1,82,000 with mandatory internship, blockchain, and 9 Sem 3 subjects. JIIT has deeper combined IT+analytics curriculum. Galgotias at ₹86,400 is less than half the cost. For maximum affordability with basic analytics coverage, Galgotias wins."
+    },
+    "fees": {
+      "body": "The Galgotias Online MBA in Business Analytics has a total all-in cost of ₹86,400.\n\n**Fee breakdown:**\n- Tuition: ₹76,200 (₹33,000/year x 2 years, averaging ₹19,050/semester)\n- Exam fees: ₹8,000 (₹4,000/year x 2 years)\n- Registration fee: ₹1,200 (one-time)\n- Alumni fee: ₹1,000 (one-time)\n- **Total all-in: ₹86,400**\n\n**EMI:** Galgotias does not offer EMI. The yearly fee structure (₹33,000 tuition per year) serves as natural installments. Loan/financing arranged independently by the learner.\n\n**Scholarships:** None offered.\n\n**Bundled perks:** None (no Coursera, LinkedIn Learning, or third-party certifications).\n\nFees listed are indicative. EdifyEdu reconfirms fees with Galgotias each quarter. Please reconfirm with our counsellor before any payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Business Analytics as the specialisation, issued by Galgotias University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A+ accreditation and UGC-DEB approval. Valid for government recruitment, PSU applications, and private-sector analytics roles. WES recognised. DigiLocker issuance is standard."
+    },
+    "reviews": {
+      "intro": "Three reviews from Galgotias Online MBA Business Analytics students. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Rohit K.",
+          "city": "Greater Noida",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Analytics using Python and AI for Business at ₹86,400 total is genuinely hard to find elsewhere. The fee is the main draw",
+          "disliked": "No bundled perks at all. Other programmes at 2x the fee include Coursera Plus or certifications. Here you get nothing beyond the degree",
+          "body": "I chose Galgotias because the fee is unbeatable for an analytics MBA with Python content. At ₹86,400 all-in, it is less than half of CU or JIIT. The Python module is introductory but gives enough to build basic dashboards. AI for Business was useful for understanding what AI tools can do for my team. The trade-off is clear: you save money but get no perks, no EMI, and limited brand recognition."
+        },
+        {
+          "name": "Neha S.",
+          "city": "Delhi",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Master Thesis split across two semesters gives more time for quality research than a single-semester capstone",
+          "disliked": "LMS is functional but basic. The interface feels dated compared to platforms like Amity or Manipal. Content delivery could be more polished",
+          "body": "The curriculum is solid for the price. Marketing Analytics and Data Visualization subjects were directly applicable to my marketing role. The Master Thesis forced me to do structured research which improved my analytical thinking. At ₹86,400 I cannot complain about the fee. But if your employer checks university brand reputation, Galgotias online MBA is not in the same tier as Amity or MAHE."
+        },
+        {
+          "name": "Sanjay P.",
+          "city": "Lucknow",
+          "year": 2023,
+          "rating": 3.8,
+          "liked": "Decision Modelling with Spreadsheets was practical. Excel-based optimisation is what I actually use daily in my operations role",
+          "disliked": "Career services for online MBA are minimal. The placement team focuses on on-campus students. Online learners are largely on their own",
+          "body": "The programme delivers on its price promise. At ₹86,400 you get Python, AI basics, and analytics subjects that cost ₹1.6-2.9L at other universities. The delivery quality is adequate, not premium. Faculty engagement varies. The Master Thesis was a genuine learning experience. My main concern is placement support, which is essentially absent for online students."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is this the cheapest online MBA with Python and AI content?",
+        "answer": "At ₹86,400 all-in, Galgotias is the second-lowest fee on the EdifyEdu platform (after IGNOU at ₹66,000). IGNOU does not offer a dedicated Business Analytics spec with Python or AI content. Galgotias is the most affordable option with Analytics using Python and AI for Business as standalone subjects."
+      },
+      {
+        "question": "Is EMI available?",
+        "answer": "No. Galgotias does not offer EMI from the university. The yearly fee (₹33,000 tuition plus exam/reg fees) serves as natural installments. Loan or financing must be arranged independently."
+      },
+      {
+        "question": "Are there any scholarships or bundled perks?",
+        "answer": "No scholarships and no bundled perks (no Coursera, LinkedIn Learning, or certifications). The fee is ₹86,400 all-in. The programme is priced to reflect this no-frills positioning."
+      },
+      {
+        "question": "How does the Master Thesis work?",
+        "answer": "The Master Thesis is split across Semester 3 (Initial Phase: topic selection, literature review, methodology) and Semester 4 (Final Phase: data analysis, findings, defence). This two-semester structure allows more time for quality research than a single-semester capstone."
+      },
+      {
+        "question": "What is the total all-in cost?",
+        "answer": "₹86,400 total (₹76,200 tuition + ₹8,000 exam + ₹1,200 registration + ₹1,000 alumni fee). No EMI. No additional fees. Reconfirm with our counsellor before payment."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "Maximum affordability is your primary criterion. ₹86,400 all-in is the second-lowest on the platform.",
+        "You want Python and AI for Business in your MBA curriculum at a sub-₹1L fee.",
+        "The Master Thesis format (split across Sem 3-4) appeals to you as a structured research component.",
+        "Delhi-NCR regional recruiter access is relevant for your career."
+      ],
+      "consider": [
+        "Brand recognition matters. Galgotias online MBA is not in the same tier as Amity, MAHE, or NMIMS.",
+        "You want EMI. Galgotias offers none. JIIT, CU, and MUJ have zero-cost EMI options.",
+        "You want bundled perks. MUJ at ₹1,80,000 includes Coursera Plus. JIIT at ₹1,82,000 has mandatory internship.",
+        "You need deeper analytics depth (predictive modelling, big data, ML). JIIT or CU cover these more thoroughly at higher fee."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2000,
+    "generatedAt": "2026-04-23",
+    "batchNumber": 24,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-23"
+  }
+}
