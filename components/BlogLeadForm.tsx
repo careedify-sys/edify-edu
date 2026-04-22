@@ -1,11 +1,12 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useId } from 'react'
 import { CheckCircle2, Send, MessageCircle } from 'lucide-react'
 
 const PROGRAMS = ['Online MBA', 'Online MCA', 'Online BBA', 'Online BCA', 'Other Courses']
 
 export default function BlogLeadForm({ title, desc }: { title?: string; desc?: string }) {
+  const uid = useId()
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle')
   const [form, setForm] = useState({ name: '', phone: '', program: '' })
 
@@ -75,8 +76,11 @@ export default function BlogLeadForm({ title, desc }: { title?: string; desc?: s
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
-            required
+            id={`${uid}-name`}
+            name="name"
             type="text"
+            autoComplete="name"
+            required
             placeholder="Full Name"
             value={form.name}
             onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
@@ -85,8 +89,11 @@ export default function BlogLeadForm({ title, desc }: { title?: string; desc?: s
           <div className="relative">
             <span className="absolute left-5 top-1/2 -translate-y-1/2 text-white/50 text-sm font-semibold">+91</span>
             <input
-              required
+              id={`${uid}-phone`}
+              name="phone"
               type="tel"
+              autoComplete="tel"
+              required
               placeholder="Phone Number"
               value={form.phone}
               onChange={e => setForm(f => ({ ...f, phone: e.target.value.replace(/\D/g, '').slice(0, 10) }))}
@@ -94,6 +101,8 @@ export default function BlogLeadForm({ title, desc }: { title?: string; desc?: s
             />
           </div>
           <select
+            id={`${uid}-program`}
+            name="program"
             required
             value={form.program}
             onChange={e => setForm(f => ({ ...f, program: e.target.value }))}

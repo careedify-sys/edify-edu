@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useState, useId } from 'react'
 
 const SPECIALISATIONS = [
   'Marketing',
@@ -26,6 +26,7 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
   const specs = specialisations?.length ? specialisations : SPECIALISATIONS
 
   // ── Alumni card state ────────────────────────────────────────────────────
+  const uid = useId()
   const [alumniDone, setAlumniDone] = useState(false)
   const [alumniName, setAlumniName] = useState('')
   const [alumniPhone, setAlumniPhone] = useState('')
@@ -177,7 +178,10 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
         ) : (
           <form onSubmit={handleAlumniSubmit} style={{ padding: '0 16px 18px', display: 'flex', flexDirection: 'column', gap: 8 }}>
             <input
+              id={`${uid}-alumni-name`}
+              name="name"
               type="text"
+              autoComplete="name"
               placeholder="Your name"
               value={alumniName}
               onChange={e => setAlumniName(e.target.value)}
@@ -191,7 +195,10 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
             <div style={{ display: 'flex', alignItems: 'center', background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: 8, overflow: 'hidden' }}>
               <span style={{ padding: '9px 10px', color: '#94a3b8', fontSize: 12, fontWeight: 600, borderRight: '1px solid rgba(255,255,255,0.1)', whiteSpace: 'nowrap' }}>+91</span>
               <input
+                id={`${uid}-alumni-phone`}
+                name="phone"
                 type="tel"
+                autoComplete="tel"
                 placeholder="Mobile number"
                 value={alumniPhone}
                 onChange={e => setAlumniPhone(e.target.value.replace(/\D/g, '').slice(0, 10))}
@@ -251,7 +258,10 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
         ) : (
           <form onSubmit={handleFormSubmit} style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: 9 }}>
             <input
+              id={`${uid}-details-name`}
+              name="name"
               type="text"
+              autoComplete="name"
               placeholder="Your name"
               value={formName}
               onChange={e => setFormName(e.target.value)}
@@ -265,7 +275,10 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
             <div style={{ display: 'flex', alignItems: 'center', border: '1px solid #e2e8f0', borderRadius: 8, overflow: 'hidden' }}>
               <span style={{ padding: '9px 10px', color: '#64748b', fontSize: 12, fontWeight: 600, borderRight: '1px solid #e2e8f0', background: '#f8fafc', whiteSpace: 'nowrap' }}>+91</span>
               <input
+                id={`${uid}-details-phone`}
+                name="phone"
                 type="tel"
+                autoComplete="tel"
                 placeholder="Mobile number"
                 value={formPhone}
                 onChange={e => setFormPhone(e.target.value.replace(/\D/g, '').slice(0, 10))}
@@ -278,6 +291,8 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
               />
             </div>
             <select
+              id={`${uid}-details-spec`}
+              name="specialisation"
               value={formSpec}
               onChange={e => setFormSpec(e.target.value)}
               style={{

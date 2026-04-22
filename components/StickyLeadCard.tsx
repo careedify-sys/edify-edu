@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useId } from 'react'
 import { CheckCircle, Loader2, Phone, User, Mail, MapPin } from 'lucide-react'
 
 const PROGRAMS = ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'B.Com', 'MA', 'M.Com', 'MSc', 'Not sure yet']
@@ -23,6 +23,7 @@ interface Props {
 }
 
 export default function StickyLeadCard({ universityName, universityId, defaultProgram }: Props) {
+  const uid = useId()
   const [name,      setName]      = useState('')
   const [phone,     setPhone]     = useState('')
   const [email,     setEmail]     = useState('')
@@ -112,7 +113,10 @@ export default function StickyLeadCard({ universityName, universityId, defaultPr
         <div className="relative">
           <User size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
           <input
+            id={`${uid}-name`}
+            name="name"
             type="text"
+            autoComplete="name"
             placeholder="Full name"
             value={name}
             onChange={e => setName(e.target.value)}
@@ -124,7 +128,10 @@ export default function StickyLeadCard({ universityName, universityId, defaultPr
         <div className="relative">
           <Phone size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
           <input
+            id={`${uid}-phone`}
+            name="phone"
             type="tel"
+            autoComplete="tel"
             placeholder="10-digit mobile number"
             value={phone}
             onChange={e => setPhone(e.target.value)}
@@ -137,7 +144,10 @@ export default function StickyLeadCard({ universityName, universityId, defaultPr
         <div className="relative">
           <Mail size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
           <input
+            id={`${uid}-email`}
+            name="email"
             type="email"
+            autoComplete="email"
             placeholder="Email address"
             value={email}
             onChange={e => setEmail(e.target.value)}
@@ -149,6 +159,9 @@ export default function StickyLeadCard({ universityName, universityId, defaultPr
         <div className="relative">
           <MapPin size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
           <select
+            id={`${uid}-state`}
+            name="state"
+            autoComplete="address-level1"
             value={state}
             onChange={e => setState(e.target.value)}
             className="w-full pl-8 pr-3 py-2.5 text-sm border border-slate-200 rounded-lg focus:outline-none focus:border-amber-400 bg-white text-slate-700 appearance-none"
@@ -162,6 +175,8 @@ export default function StickyLeadCard({ universityName, universityId, defaultPr
 
         {/* Program */}
         <select
+          id={`${uid}-program`}
+          name="program"
           value={program}
           onChange={e => setProgram(e.target.value)}
           className="w-full px-3 py-2.5 text-sm border border-slate-200 rounded-lg focus:outline-none focus:border-amber-400 bg-white text-slate-700"
@@ -174,6 +189,8 @@ export default function StickyLeadCard({ universityName, universityId, defaultPr
 
         {showNotes && (
           <textarea
+            id={`${uid}-notes`}
+            name="notes"
             value={notes}
             onChange={e => setNotes(e.target.value)}
             maxLength={140}

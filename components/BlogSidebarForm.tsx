@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useState, useId } from 'react'
 import { CheckCircle, Phone, User, BookOpen, MessageCircle } from 'lucide-react'
 
 const WA_NUMBER = '917061285806'
@@ -15,6 +15,7 @@ interface Props {
 }
 
 export default function BlogSidebarForm({ postTitle, compact = false }: Props) {
+  const uid = useId()
   const [name,      setName]      = useState('')
   const [phone,     setPhone]     = useState('')
   const [program,   setProgram]   = useState('')
@@ -93,8 +94,14 @@ export default function BlogSidebarForm({ postTitle, compact = false }: Props) {
         <div className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 focus-within:border-amber/50 transition-colors">
           <User size={13} className="text-slate-500 shrink-0" />
           <input
-            type="text" placeholder="Your full name" value={name}
-            onChange={e => setName(e.target.value)} required
+            id={`${uid}-name`}
+            name="name"
+            type="text"
+            autoComplete="name"
+            placeholder="Your full name"
+            value={name}
+            onChange={e => setName(e.target.value)}
+            required
             className="flex-1 bg-transparent text-white text-sm placeholder:text-slate-500 focus:outline-none min-w-0"
           />
         </div>
@@ -105,9 +112,15 @@ export default function BlogSidebarForm({ postTitle, compact = false }: Props) {
           <span className="w-px h-4 bg-white/10 shrink-0" />
           <Phone size={13} className="text-slate-500 shrink-0" />
           <input
-            type="tel" placeholder="10-digit mobile" value={phone}
+            id={`${uid}-phone`}
+            name="phone"
+            type="tel"
+            autoComplete="tel"
+            placeholder="10-digit mobile"
+            value={phone}
             onChange={e => setPhone(e.target.value.replace(/\D/g,'').slice(0,10))}
-            maxLength={10} required
+            maxLength={10}
+            required
             className="flex-1 bg-transparent text-white text-sm placeholder:text-slate-500 focus:outline-none min-w-0"
           />
         </div>
@@ -116,7 +129,10 @@ export default function BlogSidebarForm({ postTitle, compact = false }: Props) {
         <div className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 focus-within:border-amber/50 transition-colors">
           <BookOpen size={13} className="text-slate-500 shrink-0" />
           <select
-            value={program} onChange={e => setProgram(e.target.value)}
+            id={`${uid}-program`}
+            name="program"
+            value={program}
+            onChange={e => setProgram(e.target.value)}
             className="flex-1 bg-transparent text-sm focus:outline-none appearance-none cursor-pointer"
             style={{ color: program ? '#fff' : '#6b7280' }}>
             <option value="" style={{ background:'#0B1D35', color:'#9ca3af' }}>I&apos;m interested in…</option>
