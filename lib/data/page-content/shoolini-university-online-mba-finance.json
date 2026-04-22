@@ -14,31 +14,64 @@
     },
     "syllabus": {
       "hasData": true,
-      "note": "Sem 1-2 subjects are common core for all Shoolini MBA specialisations. Sem 3-4 specialisation-specific subjects are provided by Shoolini at the admission stage. Contact our counsellor for the full Financial Management Sem 3-4 curriculum.",
+      "note": "Sem 1-2 subjects are shared across all Shoolini MBA specialisations. Sem 3-4 below are specific to the Finance specialisation.",
       "semesters": [
         {
-          "sem": 1,
+          "sem": 3,
           "subjects": [
-            { "name": "Marketing Management", "desc": "Core marketing principles, market segmentation, consumer decision models, and B2B and B2C strategy fundamentals." },
-            { "name": "Organizational Behaviour", "desc": "Team dynamics, motivation theories, leadership styles, conflict resolution, and organisational culture frameworks." },
-            { "name": "Financial Accounting", "desc": "Preparation of financial statements, accounting standards, ratio analysis, and management reporting basics." },
-            { "name": "Entrepreneurship", "desc": "Business model design, lean startup methodology, venture capital basics, and opportunity identification frameworks." },
-            { "name": "Creativity Decoded", "desc": "Creative problem-solving models, SCAMPER technique, lateral thinking, and innovation culture building." },
-            { "name": "Digital and Technological Solutions", "desc": "Digital transformation frameworks, cloud basics, ERP overview, and technology adoption in business management." },
-            { "name": "Functional English", "desc": "Business writing, email communication, report preparation, and professional oral communication skills." }
+            {
+              "name": "Legal Aspects of Business",
+              "desc": "Business contracts, corporate governance, consumer protection obligations, and regulatory compliance frameworks for managers."
+            },
+            {
+              "name": "Micro Finance for Managers",
+              "desc": "Microfinance institution models, SHG-bank linkage programme, rural credit delivery mechanisms, and MFI regulatory framework."
+            },
+            {
+              "name": "Financial Statements Analysis",
+              "desc": "Ratio analysis, DuPont decomposition, cash flow statement interpretation, and financial health benchmarking techniques."
+            },
+            {
+              "name": "Storytelling with Data",
+              "desc": "Visual communication of data findings, chart selection, and translating analytics into business narratives for non-technical audiences."
+            },
+            {
+              "name": "Acing Interviews through AI",
+              "desc": "AI-assisted mock interview practice, personal brand communication, and job-search strategy frameworks for management graduates."
+            },
+            {
+              "name": "Intro to Editing",
+              "desc": "Professional editing skills for business documents, reports, presentations, and digital content."
+            }
           ]
         },
         {
-          "sem": 2,
+          "sem": 4,
           "subjects": [
-            { "name": "Human Resource Management", "desc": "Recruitment and selection, training and development, performance management, and compensation design." },
-            { "name": "Financial Management", "desc": "Capital structure, working capital management, capital budgeting, and cost of capital analysis." },
-            { "name": "Career and Life Skills", "desc": "Goal setting, personal effectiveness, professional networking, and career planning frameworks." },
-            { "name": "Managerial Economics", "desc": "Demand analysis, pricing strategies, market structures, and business forecasting methods." },
-            { "name": "Statistics for Management", "desc": "Descriptive statistics, probability distributions, hypothesis testing, and regression for business." },
-            { "name": "Functional English - 2", "desc": "Advanced business writing, executive summary preparation, and formal professional correspondence." },
-            { "name": "Presentation and Charts", "desc": "Data visualisation tools, chart selection, slide design principles, and storytelling with data." },
-            { "name": "Fundamentals of Direct Selling", "desc": "Direct selling business models, DSA regulatory framework, ethics in direct sales, and network building." }
+            {
+              "name": "Future Leader's Program",
+              "desc": "Executive presence building, stakeholder influence, high-performance team leadership, and personal effectiveness frameworks for emerging managers."
+            },
+            {
+              "name": "Sales Management",
+              "desc": "Sales force structure, territory planning, pipeline management, forecasting, and sales performance incentive design."
+            },
+            {
+              "name": "Portfolio and Wealth Management",
+              "desc": "Asset allocation strategy, portfolio rebalancing, risk-adjusted return metrics, and HNI client advisory frameworks."
+            },
+            {
+              "name": "Financial Derivatives",
+              "desc": "Options and futures basics, hedging strategies for currency and interest rate risk, and derivative instrument selection."
+            },
+            {
+              "name": "Investment Management and Financial Planning",
+              "desc": "Goal-based financial planning, mutual fund selection, systematic investment planning, and retirement corpus calculation."
+            },
+            {
+              "name": "Capstone Project",
+              "desc": "Applied industry project integrating specialisation knowledge with structured problem-solving for a real-world business challenge."
+            }
           ]
         }
       ]
