@@ -91,6 +91,17 @@ export function specSlug(s: SpecValue): string {
 export function specName(s: SpecValue): string {
   return typeof s === 'string' ? s : s.name
 }
+export function formatSpecList(
+  specs: SpecValue[] | undefined,
+  max?: number
+): string {
+  if (!specs || specs.length === 0) return ''
+  const names = specs.map(s => specName(s))
+  if (max && names.length > max) {
+    return names.slice(0, max).join(', ') + ` and ${names.length - max} more`
+  }
+  return names.join(', ')
+}
 export function formatFee(n: number): string {
   if (n >= 100000) return `₹${(n / 100000).toFixed(1)}L`
   return `₹${(n / 1000).toFixed(0)}K`

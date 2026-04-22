@@ -573,7 +573,7 @@ export default function ExcelImportPage() {
                                       <div style={{fontSize:11,fontWeight:700,color:'var(--amber-text)',marginBottom:5}}>{prog}</div>
                                       <div className="text-[11px] text-ink-2 mb-0.5">💰 {pd.fees}</div>
                                       <div className="text-[11px] text-ink-2 mb-0.5">📊 {pd.avgSalary}</div>
-                                      <div className="text-[11px] text-ink-2 mb-0.5">📋 {pd.specs.slice(0,2).join(', ')}{pd.specs.length>2?` +${pd.specs.length-2}`:''}</div>
+                                      <div className="text-[11px] text-ink-2 mb-0.5">📋 {pd.specs.slice(0,2).map((s: import('@/lib/data').SpecValue) => typeof s === 'string' ? s : s.name).join(', ')}{pd.specs.length>2?` +${pd.specs.length-2}`:''}</div>
                                       {pd.edifySkills?.length > 0 && <div style={{fontSize:10,color:'var(--sage)'}}>✓ {pd.edifySkills.length} Edify skills</div>}
                                     </div>
                                   ) : null

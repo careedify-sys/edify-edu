@@ -10,6 +10,7 @@ import { cleanCareerOutcome, getShortUniversityName } from '@/lib/format'
 import { getProgramContent } from '@/lib/content'
 import { SAMPLE_DEGREES, getSampleDegree } from '@/lib/sample-degrees'
 import type { Program, University } from '@/lib/data'
+import { formatSpecList } from '@/lib/data'
 import EnquiryModal from '@/components/EnquiryModal'
 import ApprovalBadges from '@/components/ApprovalBadges'
 import { StickyBottomBar, ScholarshipPopup } from '@/components/LeadCapture'
@@ -77,7 +78,7 @@ export default function UniversityPageClient({ university: u }: Props) {
     },
     {
       q:`What specialisations are available in ${u.name} ${displayProgram}?`,
-      a:`${u.name} ${displayProgram} offers specialisations including ${pd?.specs?.slice(0,5).join(', ') || 'General, Finance, Marketing, HR'}. ${pd?.specs && pd.specs.length > 5 ? `A total of ${pd.specs.length} specialisations are available.` : ''} Specialisation choice typically happens at the time of application.`
+      a:`${u.name} ${displayProgram} offers specialisations including ${formatSpecList(pd?.specs, 5) || 'General, Finance, Marketing, HR'}. ${pd?.specs && pd.specs.length > 5 ? `A total of ${pd.specs.length} specialisations are available.` : ''} Specialisation choice typically happens at the time of application.`
     },
     {
       q:`What jobs can I get after ${u.name} ${displayProgram}?`,

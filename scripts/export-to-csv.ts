@@ -6,7 +6,7 @@
 import { writeFileSync, mkdirSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { UNIVERSITIES } from '../lib/data'
+import { UNIVERSITIES, specName } from '../lib/data'
 import { BLOG_POSTS } from '../lib/blog'
 import { getMasterSyllabus, getUniversitySyllabus } from '../lib/content'
 
@@ -67,7 +67,7 @@ for (const u of UNIVERSITIES) {
     if (!pd) continue
     progRows.push([
       u.id, prog,
-      (pd.specs || []).join(','),
+      (pd.specs || []).map(specName).join(','),
       pd.fees || '', pd.duration || '', pd.avgSalary || '',
       (pd.roles || []).join(','),
       (pd.topCompanies || []).join(','),

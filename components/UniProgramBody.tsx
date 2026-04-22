@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
 
 import type { University, ProgramDetail } from '@/lib/data'
-import { getUniversitiesByProgram } from '@/lib/data'
+import { getUniversitiesByProgram, formatSpecList } from '@/lib/data'
 import { getShortUniversityName } from '@/lib/format'
 import { UNIVERSITY_REVIEWS } from '@/lib/reviews-data'
 import { COUPONS } from '@/lib/coupons'
@@ -115,7 +115,7 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
   const faqs: { q: string; a: string }[] = [
     { q: `Is the ${program} degree from ${cleanName} valid for jobs?`, a: `Yes. ${cleanName} is UGC DEB approved. The degree is identical to an on-campus ${program} and valid for private sector jobs, government portals where UGC DEB degrees are accepted${u.psuEligible ? ', and PSU recruitment' : ''}.` },
     { q: `What is the total fee for ${program} at ${cleanName}?`, a: `Total fee is ${pd.fees || `₹${Math.round(u.feeMin / 1000)}K+`}. EMI starts from ₹${u.emiFrom.toLocaleString()}/month. Semester-wise payment available.` },
-    ...(specs.length ? [{ q: `What specialisations does ${cleanName} offer in ${program}?`, a: `${specs.length} specialisations: ${specs.join(', ')}.` }] : []),
+    ...(specs.length ? [{ q: `What specialisations does ${cleanName} offer in ${program}?`, a: `${specs.length} specialisations: ${formatSpecList(specs)}.` }] : []),
     { q: `Can I study while working full-time?`, a: `Yes. Live sessions are on weekends with recorded lectures available 24/7. ${u.examMode} assessments. No mandatory daily attendance.` },
     { q: `What placement support does ${cleanName} provide?`, a: `Placement assistance including career workshops, resume building, mock interviews, and a job portal. Alumni network access is provided.` },
     { q: `Is ${cleanName} NAAC accredited?`, a: `Yes. ${cleanName} holds NAAC ${u.naac} accreditation${u.nirf > 0 && u.nirf < 500 ? ` and a NIRF rank of #${u.nirf}` : ''}.` },
