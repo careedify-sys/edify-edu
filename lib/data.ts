@@ -820,9 +820,9 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 140000,
+    feeMin: 176000,
     feeMax: 260000,
-    emiFrom: 2500,
+    emiFrom: 7792,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     highlight: 'NIRF #7 · NAAC A++ · WES Approved',
@@ -833,8 +833,8 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'B.Com', 'BBA', 'BCA', 'M.Com'],
     programDetails: {
       'MBA': {
-        specs: ['Finance', 'Fintech', 'Marketing', 'Business Analytics', 'Operations Management', 'Artificial Intelligence', 'International Finance and Accounting (ACCA)', 'Environmental, Social, and Governance (ESG)'],
-        fees: '₹1.7L – ₹2.6L',
+        specs: ['Artificial Intelligence', 'Business Analytics', 'FinTech', 'Environmental, Social and Governance (ESG)', 'International Finance and Accounting', 'Marketing', 'Finance', 'Operations Management', 'Human Resource Management', 'General Management'],
+        fees: '₹1.76L – ₹2.60L',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',

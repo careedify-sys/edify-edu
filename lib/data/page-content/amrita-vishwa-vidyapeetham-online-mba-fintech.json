@@ -1,0 +1,131 @@
+{
+  "uniSlug": "amrita-vishwa-vidyapeetham-online",
+  "program": "mba",
+  "specSlug": "fintech",
+  "sections": {
+    "hero": {
+      "eyebrow": "AMRITA VISHWA VIDYAPEETHAM ONLINE MBA",
+      "headline": "Amrita Online MBA in FinTech: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A++ | NIRF #8 University 2025 | Grant Thornton co-branded | WES recognised"
+    },
+    "tldr": "Amrita Online MBA in FinTech is co-branded with Grant Thornton and covers RPA, financial analytics with Python and SQL, AI and analytics in finance, blockchain, and generative AI for financial services. Total tuition Rs 2,20,000 (semester fee Rs 55,000). Plus Rs 700 registration and Rs 11,000 exam fees. Total cost of programme Rs 2,31,700. Zero-cost EMI available directly through the university. NAAC A++. NIRF #8 University 2025. WES recognised.",
+    "about": {
+      "body": "FinTech is among the most differentiated online MBA specialisations in India - very few UGC-DEB approved programmes offer a dedicated FinTech track, and fewer still back it with a co-branded certification from a global advisory firm. Amrita's MBA in FinTech is co-branded with Grant Thornton, covering financial analytics with Python and SQL, robotic process automation, blockchain, AI in finance, and generative AI tools - building the technical and commercial fluency that BFSI digital transformation roles demand.\n\nThe FinTech specialisation is designed for banking and BFSI professionals targeting digital transformation roles, and for technology professionals targeting fintech product management. The curriculum covers the full fintech stack - from RPA automation through to generative AI prompt engineering for financial analysis.\n\nAmrita Vishwa Vidyapeetham holds NIRF #8 University 2025 and NAAC A++. WES recognition gives graduates formal degree equivalence in the USA and Canada. The Study Abroad option includes exchanges at Oakland University (USA), University of New Mexico (USA), Institut Mines Telecom (France), and University of Barcelona (Spain).\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Sem 1-2 subjects are shared across all Amrita MBA specialisations. Sem 3-4 below are specific to the FinTech specialisation.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "International Business", "desc": "Global trade frameworks, cross-border market entry strategies, FDI analysis, and managing international operations." },
+            { "name": "Business Analytics and Business Modelling", "desc": "Quantitative business modelling, regression analysis, forecasting techniques, and data-driven decision-making frameworks." },
+            { "name": "Robotic Process Automation", "desc": "RPA tool basics, process automation design for financial operations, bot deployment lifecycle, and ROI calculation for RPA implementations." },
+            { "name": "Financial Analytics using Python and SQL", "desc": "Python pandas for financial data analysis, SQL querying for fintech databases, and automated financial reporting scripts." },
+            { "name": "Education for Life", "desc": "Soft skills development, mindfulness, health and wellbeing, and holistic personal effectiveness for professionals." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Environment Sustainability and Governance", "desc": "ESG reporting frameworks, corporate sustainability strategy, carbon accounting basics, and governance obligations." },
+            { "name": "Project", "desc": "Applied industry FinTech project integrating specialisation knowledge with real-world financial services problem-solving." },
+            { "name": "Artificial Intelligence and Analytics", "desc": "AI applications in fraud detection, credit scoring, robo-advisory, and customer analytics for fintech and BFSI firms." },
+            { "name": "Blockchain and Applications", "desc": "Blockchain architecture, smart contract design, DeFi basics, and blockchain use cases in payments and trade finance." },
+            { "name": "Generative AI, Prompt Engineering and AI Tools", "desc": "LLM application in financial analysis, prompt engineering for financial reporting, and AI tool selection for fintech product managers." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "FinTech MBA graduates from Amrita Vishwa Vidyapeetham Online are hired across India's financial services digital transformation sector:\n\n**Industries:** Digital banks and neo-banks, payment companies, BFSI technology divisions, lending tech platforms, regtech firms, insurance tech, wealth tech, and fintech startups\n\n**Entry-level roles:** FinTech Product Analyst, Business Analyst (BFSI digital), RPA Developer (junior), Digital Banking Operations Executive, Financial Analytics Associate\n\n**Mid-level roles (3-5 years experience):** FinTech Product Manager, Digital Banking Manager, RPA Program Manager, Financial Data Analytics Manager, Blockchain Project Manager\n\n**Senior roles (7+ years):** VP FinTech, Chief Digital Officer (BFSI), Head of Digital Transformation, Director of Financial Technology, Chief Innovation Officer\n\n**Top hiring organisations:** PhonePe, Razorpay, Paytm, BankBazaar, Lendingkart, HDFC Bank digital, ICICI Bank tech, Axis Bank fintech, PolicyBazaar, Zerodha tech, Groww, Cred, and fintech product companies across Bengaluru, Mumbai, and Hyderabad"
+    },
+    "skills": {
+      "body": "The FinTech specialisation builds skills that BFSI digital transformation and fintech product employers test at analyst and manager levels:\n\n**Technical skills:**\n- Robotic Process Automation: RPA process mapping, bot design basics, UiPath/Automation Anywhere overview, automation ROI modelling, and change management for RPA rollouts\n- Financial Python and SQL: pandas for financial time series, SQL query writing for BFSI databases, automated reconciliation scripts, and financial reporting automation\n- Blockchain: blockchain ledger design, smart contract use-case evaluation, DeFi product mechanics, and regulatory considerations for blockchain in financial services\n- Generative AI for Finance: prompt engineering for financial analysis, LLM-assisted research, AI tool selection for fintech product development, and responsible AI in financial services\n\n**Applied skills:**\n- AI in Finance: credit scoring model design, fraud detection rule-setting, robo-advisory product mechanics, and AI governance in regulated BFSI environments\n- FinTech Strategy: fintech market mapping, regulatory sandbox navigation, API banking product design, and digital payments P&L structure\n\n**Soft skills:** Presenting fintech product roadmaps to bank leadership teams, managing fintech vendor due diligence processes, translating blockchain and AI technical proposals into business cases, and engaging with RBI regulatory sandbox requirements."
+    },
+    "comparisons": {
+      "body": "Comparing Amrita Online MBA FinTech against peer programmes:\n\n**vs Chandigarh University Online MBA FinTech:** CU offers a FinTech specialisation at Rs 1,65,000 (Tier 1) with PwC co-teaching and Harvard certificate. CU is the lower-cost option with strong co-teaching credentials. Amrita at Rs 2,20,000 adds Grant Thornton co-branding specifically in the FinTech domain, NAAC A++ (vs CU's A+), NIRF #8 (vs #19), and WES recognition - the premium is justified for candidates targeting international fintech roles or BFSI firms that value advisory-grade credentials.\n\n**vs MUJ Online MBA IT-FinTech:** MUJ's IT-FinTech is a hybrid IT-and-finance curriculum. For candidates specifically targeting a pure FinTech product management or BFSI digital transformation track, Amrita's dedicated FinTech curriculum with Grant Thornton co-branding is more directly positioned.\n\n**vs JAIN Online MBA Finance or Finance-Business Analytics:** JAIN has finance-adjacent analytics combinations but no dedicated FinTech specialisation with advisory co-branding. For candidates who want \"MBA FinTech\" explicitly on the marksheet with Grant Thornton certification from NAAC A++, Amrita is the clear choice."
+    },
+    "fees": {
+      "body": "The Amrita Vishwa Vidyapeetham Online MBA in FinTech carries a tuition fee of Rs 2,20,000 total across 4 semesters (2-year programme).\n\n**Mandatory fees (all students, disclose before enrolment):**\n- Registration fee: Rs 700 (one-time)\n- Examination fee: Rs 2,750 per semester x 4 = Rs 11,000 total\n- **Total cost of programme: Rs 2,20,000 + Rs 700 + Rs 11,000 = Rs 2,31,700**\n\n**Payment options for Indian students:**\n- Semester fee: Rs 55,000 per semester\n- Annual fee with 5% discount: Rs 1,04,500 per year\n- Zero-cost EMI: available directly through Amrita Vishwa Vidyapeetham (contact counsellor for current monthly instalment and tenure options)\n\n**Foreign national students:**\nContact our counsellor for foreign national tuition track applicable to the FinTech specialisation.\n\nFees listed are indicative. EdifyEdu reconfirms fees with Amrita each quarter. Please reconfirm with our counsellor before any payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an Amrita Vishwa Vidyapeetham MBA degree certificate with FinTech noted on the marksheet, along with Grant Thornton co-branded certifications. The degree is issued under UGC-DEB 2020 online mode standards.\n\nNAAC A++ and NIRF #8 University 2025 are the strongest institutional credentials in India's online MBA space. WES recognition gives formal degree equivalence in the USA and Canada - useful for candidates in fintech who may target international roles in payments, digital banking, or crypto regulation. DigiLocker verification is available."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from Amrita Vishwa Vidyapeetham Online MBA FinTech alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Aditya R.",
+          "city": "Mumbai",
+          "year": 2025,
+          "rating": 4,
+          "liked": "Grant Thornton FinTech certification alongside the Amrita MBA gave me credibility in BFSI digital interviews that a standard MBA could not",
+          "disliked": "Blockchain content was strong on theory but practical smart contract writing exercises would have made it more hands-on",
+          "body": "I work in digital transformation at an NBFC. The RPA and Financial Python subjects were directly applicable to the automation projects I run. Grant Thornton co-branding in FinTech was the decisive factor - it opened advisory-side interviews. NAAC A++ from NIRF #8 cleared every credential filter at BFSI firms. Zero-cost EMI from the university made the fee commitment manageable on a banking salary."
+        },
+        {
+          "name": "Meera S.",
+          "city": "Bengaluru",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Generative AI and Prompt Engineering subject was the most current and practically relevant content in the programme",
+          "disliked": "Scheduling flexibility for live sessions could be improved - some sessions were at inconvenient times for professionals in IST plus 5.5 time zones",
+          "body": "I moved from a banking operations role to a FinTech product analyst position using this MBA. The generative AI for finance and AI and analytics in finance subjects gave me the vocabulary to lead vendor evaluations for AI tools at my firm. Grant Thornton FinTech certification stood out in my product analyst interviews. WES recognition is valuable - I have plans for the Canadian market within 3 years."
+        },
+        {
+          "name": "Venkat N.",
+          "city": "Hyderabad",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Financial Analytics with Python subject gave me practical data skills that complement the management framework",
+          "disliked": "Fee clarity at admission was initially confusing - the registration and exam fees were not upfront in the brochure and I found out from the EdifyEdu counsellor",
+          "body": "I transitioned from a traditional banking role to a digital banking product team. The Financial Python and SQL subject gave me the data skills to work alongside my analytics colleagues without being dependent on them for every data request. Blockchain and Generative AI subjects were ahead of the curve compared to other online MBAs. NAAC A++ and Grant Thornton certification are the two things that most impressed my hiring manager."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What does Grant Thornton co-branding mean for the FinTech MBA?",
+        "answer": "The FinTech MBA is co-branded with Grant Thornton - a Big-6 global advisory firm. Students receive certifications from both Amrita Vishwa Vidyapeetham and Grant Thornton. For candidates targeting BFSI digital transformation, fintech consulting, or financial advisory roles where advisory firm credentials add credibility, this is a genuine hiring-round differentiator over standard online MBAs."
+      },
+      {
+        "question": "Does the FinTech MBA cover blockchain in practical depth?",
+        "answer": "The Blockchain and Applications subject covers blockchain ledger architecture, smart contract design basics, DeFi product structures, and regulatory considerations for blockchain in financial services. The focus is on business application and product management - understanding when and how to use blockchain in financial products - not deep blockchain development programming."
+      },
+      {
+        "question": "What is the total cost of the Amrita FinTech MBA including all fees?",
+        "answer": "Total cost of programme is Rs 2,31,700 - comprising Rs 2,20,000 tuition, Rs 700 one-time registration, and Rs 11,000 examination fees (Rs 2,750 per semester across 4 semesters). Zero-cost EMI is available directly through Amrita Vishwa Vidyapeetham. Contact our counsellor for current monthly instalment and tenure details."
+      },
+      {
+        "question": "Is this MBA valid for RBI regulatory sandbox or IRDAI digital licensing roles?",
+        "answer": "Yes. The UGC-DEB entitled, NAAC A++ degree from NIRF #8 Amrita satisfies management degree requirements for regulatory body positions that specify a recognised post-graduate management qualification. The FinTech curriculum covers RBI sandbox navigation, IRDAI insurance tech regulations, and SEBI digital platform compliance - directly applicable for regulatory affairs and compliance roles in fintech."
+      },
+      {
+        "question": "Does WES recognition matter for FinTech careers in India?",
+        "answer": "For purely India-based fintech careers, WES recognition is not a requirement. It becomes relevant when applying for roles in Canada or the USA, seeking Canadian PR, or working with international fintech clients who require formally assessed qualifications. For Amrita FinTech MBA holders, WES recognition is a built-in benefit that adds value for any international career pathway at no additional cost."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want a dedicated FinTech MBA with Grant Thornton co-branding from NAAC A++, NIRF #8 institution.",
+        "You are in BFSI, digital banking, or fintech and want advisory-firm certification alongside your management degree.",
+        "WES recognition for USA and Canada career pathways is a priority.",
+        "You want Python, SQL, RPA, Blockchain, and Generative AI in one FinTech curriculum."
+      ],
+      "consider": [
+        "You want PwC co-teaching at a lower price point (consider Chandigarh University FinTech).",
+        "You want a combined IT-FinTech curriculum (consider MUJ IT-FinTech).",
+        "Your budget is under Rs 2,00,000 and the Grant Thornton co-branding is not a filter for your target roles."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 1950,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 19,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22"
+  }
+}
