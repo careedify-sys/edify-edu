@@ -1,0 +1,132 @@
+{
+  "uniSlug": "chandigarh-university-online",
+  "program": "mba",
+  "specSlug": "fintech",
+  "sections": {
+    "hero": {
+      "eyebrow": "CHANDIGARH UNIVERSITY ONLINE MBA",
+      "headline": "Chandigarh Online MBA in FinTech: Syllabus, Fees and Career Outcomes",
+      "sub": "UGC-DEB approved 2-year programme with Harvard and PwC certification options"
+    },
+    "tldr": "Chandigarh Online MBA in FinTech covers Blockchain, AI and ML in FinTech, UPI and India's financial infrastructure, entrepreneurship in FinTech, PwC-taught modules (premium tier), zero-cost direct university EMI, and 25% Early Bird scholarship at Rs 1,65,000. NIRF #19, NAAC A+. For financial technology and digital payments careers.",
+    "about": {
+      "body": "FinTech is the fastest-growing sector in India's financial services ecosystem, covering digital payments, lending technology, insurance technology, wealth management platforms, and central bank digital currencies. Chandigarh University Online's FinTech MBA is one of the few programmes in India to offer a dedicated FinTech specialisation within a NAAC A+ accredited MBA framework.\n\nThe curriculum covers India's specific FinTech infrastructure including UPI, India Stack, and the RBI's digital payments regulatory framework, alongside global technologies like blockchain, machine learning in credit scoring, and AI-driven compliance automation.\n\nFor Tier 2 enrollees, PwC's Financial Services and FinTech advisory practice is one of the most active globally, advising payment companies, neobanks, and regulatory bodies on digital financial infrastructure. Co-taught modules bring live advisory frameworks directly into the FinTech MBA curriculum.\n\nChandigarh University holds NIRF #19 overall and NIRF #32 in Management 2025, NAAC A+ accredited. EdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Sem 1-2 shared core subjects across all Chandigarh MBA specialisations. See the main Chandigarh Online MBA page for core subject list.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Strategy, Business and Globalization", "desc": "FinTech market strategy, global digital financial services landscape, and competitive positioning." },
+            { "name": "Decision Science", "desc": "Data modelling for credit scoring, fraud detection probability, and financial risk quantification." },
+            { "name": "Digital Payments, UPI and India's Financial Infrastructure", "desc": "India Stack architecture, UPI rails, payment gateway operations, BBPS, and RBI regulatory framework." },
+            { "name": "Blockchain Management", "desc": "Distributed ledger technology, smart contracts, DeFi basics, and enterprise blockchain applications." },
+            { "name": "Machine Learning in FinTech", "desc": "ML models for credit risk, fraud detection, churn prediction, and alternative lending underwriting." },
+            { "name": "Artificial Intelligence in FinTech", "desc": "AI in insurance underwriting, robo-advisory, RegTech automation, and chatbot-based customer service." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Project Management", "desc": "Agile delivery for FinTech product launches, regulatory submissions, and API integration projects." },
+            { "name": "AI for Managers", "desc": "AI governance in financial services, explainable AI for RBI/SEBI compliance, and AI product strategy." },
+            { "name": "Entrepreneurship in FinTech", "desc": "FinTech startup frameworks, fundraising for BFSI startups, regulatory sandbox applications, and licensing." },
+            { "name": "FinTech: Innovation and Transformation in Financial Services", "desc": "BNPL, embedded finance, open banking, and digital transformation of traditional banking models." },
+            { "name": "Capstone Project II", "desc": "Applied FinTech project solving a real digital payments, lending, or insurance technology problem." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "FinTech MBA graduates from Chandigarh University Online are hired across India's rapidly growing digital financial ecosystem:\n\n**Industries:** Payment companies, neobanks, NBFC digital lenders, insurance technology, wealth management platforms, banking FinTech divisions, and FinTech startups\n\n**Entry-level roles:** FinTech Product Analyst, Digital Payments Analyst, RegTech Analyst, Blockchain Business Analyst, Digital Lending Coordinator\n\n**Mid-level roles (3-5 years experience):** FinTech Product Manager, Head of Digital Payments, Credit Analytics Manager, AI/ML Product Manager (FinTech), Open Banking Manager\n\n**Senior roles (7+ years):** Chief Product Officer (FinTech), VP Digital Banking, Head of FinTech Strategy, Co-founder and CTO (FinTech startup)\n\n**Top hiring organisations:** Razorpay, PhonePe, Paytm, BharatPe, Navi, Groww, Zerodha, HDFC FinTech division, ICICI iMobile team, Axis Digital, Google Pay India, and RBI regulatory sandbox participants"
+    },
+    "skills": {
+      "body": "The FinTech specialisation builds skills that India's digital financial ecosystem employers demand:\n\n**Technical skills:**\n- Payment Systems: UPI transaction flow, NACH mandate management, payment gateway API integration concepts, and PCI-DSS compliance basics\n- Blockchain: smart contract logic, Hyperledger basics, tokenisation use cases, and DLT for trade finance\n- ML in Finance: credit scorecard development, fraud detection model design, and alternative data underwriting for BNPL\n- AI Compliance: explainable AI for RBI and SEBI regulatory purposes, automated KYC systems, and AI-driven AML monitoring\n\n**Applied skills:**\n- Regulatory Navigation: RBI Payment Aggregator guidelines, NBFC licensing requirements, account aggregator framework, and digital lending circulars\n- FinTech Startup: fundraising pitch preparation, regulatory sandbox strategy, and product-market fit validation for financial products\n\n**Soft skills:** Communicating technical FinTech product decisions to banking partners, managing regulatory relationships during product launch, building trust with credit underwriters for AI-driven decisions, and presenting payment analytics to merchant partners."
+    },
+    "comparisons": {
+      "body": "Comparing Chandigarh Online MBA FinTech against peer programmes:\n\n**vs NMIMS Online MBA FinTech:** NMIMS has a strong brand in BFSI and Mumbai FinTech ecosystem. Fee is higher. CU's FinTech syllabus is more India-specific with UPI infrastructure and RBI regulatory content. CU Tier 2 adds PwC FinTech advisory co-teaching. For Pan-India FinTech roles, CU's NIRF #19 plus India-specific FinTech content is competitive.\n\n**vs Amity Online MBA FinTech-related tracks:** Amity does not offer a dedicated FinTech specialisation at this depth. CU is the stronger choice for candidates specifically targeting FinTech roles with a dedicated syllabus including UPI, Blockchain, and AI in FinTech.\n\n**vs JAIN Online MBA FinTech:** JAIN offers an AI-and-Finance track but CU's dedicated FinTech specialisation is more comprehensive and comes with a higher NIRF rank (CU #19 vs JAIN's lower position) and NAAC A+ credential. PwC advisory co-teaching (Tier 2) is not available in JAIN's programme."
+    },
+    "fees": {
+      "body": "The Chandigarh University Online MBA in FinTech offers 2 program tiers based on certification bundle:\n\n**Tier 1 (Primary) - Standard with Harvard ManageMentor Certificate**:\n- Actual program fee: Rs 2,20,000\n- 25% Early Bird Scholarship: Rs 1,65,000 net payable (Rs 55,000 savings)\n- Payment options:\n  - Annual: Rs 82,500 per year x 2 years\n  - Semester-wise: Rs 41,250 per semester x 4 semesters\n  - Full upfront: Rs 1,65,000 one-time\n- Included certification: Harvard Business Publishing certificate\n\n**Tier 2 (Premium Upgrade) - 3-Certificate Bundle**:\n- Actual program fee: Rs 2,20,000 (same base fee)\n- 18% Early Bird Scholarship: Rs 1,80,400 net payable (Rs 39,600 savings)\n- Payment options:\n  - Annual: Rs 90,200 per year x 2 years\n  - Semester-wise: Rs 45,100 per semester x 4 semesters\n  - Full upfront: Rs 1,80,400 one-time\n- Included certifications (3):\n  1. PwC co-created and co-taught MBA modules (unmatched in India)\n  2. CAPM (Certified Associate in Project Management) certification preparation\n  3. Harvard Business Publishing certificate\n\n**Additional charges (both tiers)**:\n- Registration fee: Rs 1,000 (one-time, non-refundable)\n\n**Zero-cost EMI**: Available directly through Chandigarh University (no external marketing partner or NBFC intermediary, a differentiator among Indian online MBAs). Contact our counsellor for current tenure options (6, 12, 18, or 24 months).\n\n**Early Bird Scholarship terms**: Availability varies by admission cycle. The 25% Tier 1 scholarship and 18% Tier 2 scholarship are currently active but subject to timing. Reconfirm eligibility with our counsellor before enrolment.\n\nEdifyEdu reconfirms fees with Chandigarh University each quarter. Please reconfirm current tier options, Early Bird eligibility, and fees with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "Graduates receive a Chandigarh University MBA degree certificate with FinTech noted on the marksheet, issued under UGC-DEB 2020 standards. NIRF #19 and NAAC A+ credentials are recognised by FinTech companies, banks, and NBFC employers.\n\nTier 1 graduates receive the Harvard Business Publishing certificate. Tier 2 graduates additionally receive PwC Financial Services and FinTech advisory co-teaching acknowledgement and CAPM certification preparation, strengthening profiles for FinTech product, payment, and digital banking roles. DigiLocker verification is available."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from Chandigarh University Online MBA FinTech alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Rahul P.",
+          "city": "Bangalore",
+          "year": 2024,
+          "rating": 5,
+          "liked": "UPI infrastructure and India Stack content was directly applicable to my payment product role",
+          "disliked": "Blockchain content could go deeper into DeFi protocols for crypto-adjacent roles",
+          "body": "I was a product analyst at a payment gateway company and the UPI, NACH, and India Stack content was exactly what I needed to understand the infrastructure layer I was building on. PwC FinTech advisory modules (Tier 2) gave me strategic frameworks I was missing as a product person. Got promoted to Product Manager. Harvard Business Publishing certificate on my resume was noticed by two FinTech VCs I met."
+        },
+        {
+          "name": "Ananya K.",
+          "city": "Mumbai",
+          "year": 2023,
+          "rating": 4,
+          "liked": "ML in FinTech subject directly applicable to our credit scoring model work",
+          "disliked": "Entrepreneurship in FinTech needed more practical regulatory sandbox application guidance",
+          "body": "The Machine Learning in FinTech subject covered scorecard development and alternative data underwriting that I apply daily in my NBFC lending role. AI in FinTech with RegTech content was timely given RBI's increased AI compliance scrutiny. Zero-cost EMI through CU made the programme financially accessible. Good programme for BFSI professionals wanting FinTech credentials."
+        },
+        {
+          "name": "Nitin G.",
+          "city": "Delhi",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Only NAAC A+, NIRF-ranked MBA with a dedicated FinTech specialisation I could find",
+          "disliked": "LMS experience needs improvement for collaborative project work",
+          "body": "Finding a NAAC A+ MBA with a proper FinTech specialisation - not just a Finance MBA with one FinTech elective - was difficult. CU was the best option I found. The content depth across UPI, Blockchain, ML, and AI is strong. Direct university EMI was smooth. Would recommend for professionals in digital payments, neobanking, or NBFC digital lending roles."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the PwC partnership in Chandigarh Online MBA?",
+        "answer": "Chandigarh University's premium tier includes full MBA modules co-created and co-taught by PwC industry experts. This is unmatched among Indian online MBAs - most offer only generic curriculum. PwC-taught modules are particularly valuable for FinTech professionals seeking roles at consulting firms, Big 4 Financial Services advisory, or corporate FinTech strategy teams. The PwC partnership is included in Tier 2 (premium) at Rs 1,80,400 net."
+      },
+      {
+        "question": "What is the difference between Tier 1 and Tier 2 fee options?",
+        "answer": "Both tiers share the same Rs 2,20,000 base fee and identical curriculum. Tier 1 applies a 25% Early Bird Scholarship at Rs 1,65,000 net with the Harvard Business Publishing certificate. Tier 2 applies an 18% Early Bird Scholarship at Rs 1,80,400 net with three certifications: Harvard, CAPM preparation, and PwC co-taught modules. For FinTech professionals targeting consulting or product strategy, Tier 2 adds strong differentiation."
+      },
+      {
+        "question": "Is zero-cost EMI really available directly through Chandigarh University?",
+        "answer": "Yes. Chandigarh University offers zero-cost EMI through the university's own payment infrastructure, not through an NBFC or external marketing partner. Tenures of 6, 12, 18, and 24 months are typically available. Confirm current options with our counsellor before enrolment."
+      },
+      {
+        "question": "Does the FinTech MBA cover RBI regulations and compliance for digital lending?",
+        "answer": "Yes. The AI in FinTech and FinTech Innovation subjects cover RBI digital lending guidelines, Account Aggregator framework, Payment Aggregator licensing, and AI compliance for financial services. This regulatory content is India-specific and directly applicable to roles at NBFCs, payment companies, and banks navigating RBI's expanding digital finance regulatory framework."
+      },
+      {
+        "question": "Is this MBA suitable for FinTech startup founders?",
+        "answer": "Yes. Entrepreneurship in FinTech in Sem 4 covers startup formation, fundraising for BFSI startups, regulatory sandbox applications, and licensing pathways for FinTech companies. The Capstone Project II in Sem 4 can be applied to a real FinTech business problem. Founders who also want institutional credibility alongside their startup experience will find the NAAC A+ credential useful for bank partnerships, investor introductions, and regulatory engagement."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You work in digital payments, NBFC lending, or banking FinTech and want a NAAC A+ NIRF #19 FinTech MBA.",
+        "You want PwC Financial Services and FinTech advisory content (Tier 2) alongside your degree.",
+        "You are targeting FinTech product management, payment strategy, or digital banking roles.",
+        "You prefer zero-cost EMI directly through the university."
+      ],
+      "consider": [
+        "You need NMIMS brand specifically for Mumbai FinTech or BFSI hiring.",
+        "You want a deep computer science or data engineering degree rather than a FinTech management MBA.",
+        "Your budget is under Rs 1.2 lakh and a lower-fee NAAC A++ alternative is acceptable."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2100,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 16,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22"
+  }
+}

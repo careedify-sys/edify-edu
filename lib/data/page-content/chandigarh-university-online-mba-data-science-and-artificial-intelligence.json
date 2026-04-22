@@ -1,0 +1,132 @@
+{
+  "uniSlug": "chandigarh-university-online",
+  "program": "mba",
+  "specSlug": "data-science-and-artificial-intelligence",
+  "sections": {
+    "hero": {
+      "eyebrow": "CHANDIGARH UNIVERSITY ONLINE MBA",
+      "headline": "Chandigarh Online MBA in Data Science and Artificial Intelligence: Syllabus, Fees and Career Outcomes",
+      "sub": "UGC-DEB approved 2-year programme with Harvard and PwC certification options"
+    },
+    "tldr": "Chandigarh Online MBA in Data Science and AI features GenAI, NLP, RAG Systems, and Agentic AI subjects directly in the syllabus, PwC-taught modules (premium tier), zero-cost direct university EMI, and 25% Early Bird scholarship at Rs 1,65,000. NIRF #19, NAAC A+. Built for AI-era management roles.",
+    "about": {
+      "body": "Data Science and Artificial Intelligence is the highest-growth MBA specialisation of the 2020s. Chandigarh University Online has built one of the most forward-looking AI-focused MBA syllabi in India, with subjects covering GenAI and Prompt Engineering, NLP and Large Language Models, RAG Systems and AI Knowledge Assistants, and Agentic AI and Business Automation.\n\nThe programme is designed for professionals who want to lead AI initiatives in their organisations, not just understand AI at a surface level. The curriculum gives both the technical AI context and the business management frameworks needed to deploy, govern, and scale AI in enterprise settings.\n\nFor Tier 2 enrollees, PwC's AI and Intelligent Automation practice is one of the most active Big 4 practices globally. PwC co-taught modules bring live AI implementation frameworks, responsible AI governance, and enterprise AI strategy into the classroom directly.\n\nChandigarh University holds NIRF #19 overall and NIRF #32 in Management 2025, NAAC A+ accredited. EdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Sem 1-2 shared core subjects across all Chandigarh MBA specialisations. See the main Chandigarh Online MBA page for core subject list.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Strategy, Business and Globalization", "desc": "AI strategy alignment with corporate competitive positioning and global technology trends." },
+            { "name": "Decision Science", "desc": "Statistical foundations and decision models that underpin machine learning and AI business applications." },
+            { "name": "GenAI and Prompt Engineering for Business", "desc": "Large Language Models, prompt design patterns, and practical GenAI deployment for business automation." },
+            { "name": "NLP and LLM Applications for Business", "desc": "Natural language processing fundamentals, transformer models, and LLM API integration for business use cases." },
+            { "name": "RAG Systems and AI Knowledge Assistants", "desc": "Retrieval-Augmented Generation architecture, vector databases, and building domain-specific AI knowledge tools." },
+            { "name": "Agentic AI and Business Automation", "desc": "Multi-agent AI systems, tool-calling frameworks, and designing AI agent workflows for business processes." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Project Management", "desc": "Agile frameworks for managing AI product development and data science project delivery cycles." },
+            { "name": "AI for Managers", "desc": "AI governance, responsible AI principles, AI adoption strategy, and managing AI transformation programmes." },
+            { "name": "Advanced Business Analytics Using R and Python", "desc": "Advanced statistical modelling, predictive analytics, and ML pipeline implementation in R and Python." },
+            { "name": "Advanced Excel for Data Science", "desc": "Power Query, Power Pivot, Excel-based modelling for business analysts who work without dedicated data teams." },
+            { "name": "Capstone Project II", "desc": "Applied AI or Data Science project deployed on a real business problem with a live industry partner." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "Data Science and AI MBA graduates from Chandigarh University Online are hired across AI-intensive sectors:\n\n**Industries:** Technology product companies, BFSI, e-commerce, consulting, healthcare tech, government AI programmes, media and advertising tech\n\n**Entry-level roles:** AI Product Analyst, Data Science Consultant, Machine Learning Business Analyst, AI Programme Coordinator\n\n**Mid-level roles (3-5 years experience):** AI Product Manager, Data Science Manager, Head of AI Operations, AI Strategy Consultant, ML Platform Manager\n\n**Senior roles (7+ years):** Chief AI Officer, VP of Data and AI, AI Practice Head (consulting), Head of Intelligent Automation\n\n**Top hiring organisations:** Microsoft, Google India, Amazon AWS, Accenture AI, Deloitte AI, PwC Intelligent Automation, TCS AI and Cognitive Business, Flipkart AI, HDFC Bank AI teams, and AI-first startups"
+    },
+    "skills": {
+      "body": "The Data Science and AI specialisation builds the rarest skill combination: AI technical literacy plus business management capability:\n\n**Technical skills:**\n- GenAI and Prompt Engineering: designing production-grade prompts, RAG architectures, and LLM evaluation frameworks\n- Agentic AI: building multi-agent systems with tool-calling, orchestration frameworks (LangChain, AutoGen), and workflow automation\n- Machine Learning: supervised and unsupervised learning in Python and R, feature engineering, model selection, and deployment\n- NLP: text preprocessing, transformer fine-tuning concepts, and embedding-based retrieval systems\n\n**Applied skills:**\n- AI Strategy: building business cases for AI investment, selecting build-vs-buy-vs-partner approaches, and managing AI vendor relationships\n- Responsible AI: bias detection, model explainability, AI governance frameworks, and ethical AI deployment documentation\n\n**Soft skills:** Communicating AI capabilities and limitations to boards and business leaders without technical jargon, building stakeholder alignment for AI transformation programmes, and managing data science teams with mixed technical and business backgrounds."
+    },
+    "comparisons": {
+      "body": "Comparing Chandigarh Online MBA Data Science and AI against peer programmes:\n\n**vs Amity Online MBA Data Science:** Amity's programme covers fundamentals well, but CU's AI syllabus is significantly more advanced - GenAI, RAG Systems, Agentic AI, and NLP are explicit subjects at CU. These are not typically in Amity's current MBA syllabus. CU's PwC AI advisory content (Tier 2) further differentiates. Fee: CU Rs 1,65,000 vs Amity Rs 2,25,000.\n\n**vs NMIMS Online MBA Business Analytics and AI:** NMIMS has strong brand recognition. CU's AI specialisation curriculum is more operationally current with Agentic AI and RAG systems. For candidates who prioritise curriculum depth over brand, CU is the stronger AI option. For BFSI hiring where NMIMS brand matters, NMIMS competes.\n\n**vs JAIN Online MBA Data Science and AI:** JAIN's programme is AI-focused but NIRF ranking and brand recognition are lower than CU's NIRF #19 and NAAC A+. CU's PwC partnership and Harvard certificate bundle are not available in JAIN's programme structure. At comparable fees, CU credentials are stronger for most corporate hiring contexts."
+    },
+    "fees": {
+      "body": "The Chandigarh University Online MBA in Data Science and Artificial Intelligence offers 2 program tiers based on certification bundle:\n\n**Tier 1 (Primary) - Standard with Harvard ManageMentor Certificate**:\n- Actual program fee: Rs 2,20,000\n- 25% Early Bird Scholarship: Rs 1,65,000 net payable (Rs 55,000 savings)\n- Payment options:\n  - Annual: Rs 82,500 per year x 2 years\n  - Semester-wise: Rs 41,250 per semester x 4 semesters\n  - Full upfront: Rs 1,65,000 one-time\n- Included certification: Harvard Business Publishing certificate\n\n**Tier 2 (Premium Upgrade) - 3-Certificate Bundle**:\n- Actual program fee: Rs 2,20,000 (same base fee)\n- 18% Early Bird Scholarship: Rs 1,80,400 net payable (Rs 39,600 savings)\n- Payment options:\n  - Annual: Rs 90,200 per year x 2 years\n  - Semester-wise: Rs 45,100 per semester x 4 semesters\n  - Full upfront: Rs 1,80,400 one-time\n- Included certifications (3):\n  1. PwC co-created and co-taught MBA modules (unmatched in India)\n  2. CAPM (Certified Associate in Project Management) certification preparation\n  3. Harvard Business Publishing certificate\n\n**Additional charges (both tiers)**:\n- Registration fee: Rs 1,000 (one-time, non-refundable)\n\n**Zero-cost EMI**: Available directly through Chandigarh University (no external marketing partner or NBFC intermediary, a differentiator among Indian online MBAs). Contact our counsellor for current tenure options (6, 12, 18, or 24 months).\n\n**Early Bird Scholarship terms**: Availability varies by admission cycle. The 25% Tier 1 scholarship and 18% Tier 2 scholarship are currently active but subject to timing. Reconfirm eligibility with our counsellor before enrolment.\n\nEdifyEdu reconfirms fees with Chandigarh University each quarter. Please reconfirm current tier options, Early Bird eligibility, and fees with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "Graduates receive a Chandigarh University MBA degree certificate with Data Science and Artificial Intelligence noted on the marksheet, issued under UGC-DEB 2020 standards. NIRF #19 and NAAC A+ credentials are recognised by technology and consulting employers.\n\nTier 1 graduates receive the Harvard Business Publishing certificate. Tier 2 graduates additionally receive PwC Intelligent Automation co-teaching acknowledgement and CAPM preparation, a strong combination for AI product management and consulting roles. DigiLocker digital verification is available for employer background checks."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from Chandigarh University Online MBA Data Science and AI alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Kartik R.",
+          "city": "Hyderabad",
+          "year": 2024,
+          "rating": 5,
+          "liked": "GenAI, RAG Systems, and Agentic AI subjects are more current than most masters programmes",
+          "disliked": "Advanced Excel for Data Science felt basic compared to the other AI subjects",
+          "body": "I was a data analyst looking for an MBA that would not bore me with 2019-era machine learning content. CU's AI specialisation genuinely surprised me. RAG Systems and Agentic AI in Sem 3 covered tools I was already using at work but now understood architecturally. PwC's AI governance module (Tier 2) gave me the responsible AI framework language my employer's AI team needed. Moved into an AI Product Manager role."
+        },
+        {
+          "name": "Priyanka S.",
+          "city": "Pune",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Combination of NLP, Agentic AI, and business management subjects is unique",
+          "disliked": "Some Sem 1 core subjects felt slow-paced for someone with IT background",
+          "body": "The breadth of the AI subjects is what makes this programme stand out. NLP, RAG, Agentic AI and GenAI are not just name-dropped - they are actually taught with hands-on component. The management core in Sems 1-2 was slower for me as an IT professional but necessary for the business context. Harvard Business Publishing certificate was well received in interviews. Overall strong programme."
+        },
+        {
+          "name": "Saurabh M.",
+          "city": "Mumbai",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Zero-cost EMI through university meant no NBFC credit assessment or interest",
+          "disliked": "LMS needs improvement for collaborative project work",
+          "body": "The AI curriculum depth justified the Rs 1,65,000 Tier 1 investment. GenAI and Prompt Engineering alone covered more than a Rs 30,000 standalone online course I was considering separately. NAAC A+ and NIRF #19 credential for a future-forward AI specialisation at this price point is very competitive. Direct university EMI made payment smooth."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the PwC partnership in Chandigarh Online MBA?",
+        "answer": "Chandigarh University's premium tier includes full MBA modules co-created and co-taught by PwC industry experts. This is unmatched among Indian online MBAs - most offer only generic curriculum. PwC-taught modules are particularly valuable for Data Science and AI professionals seeking roles at consulting firms, Big 4 AI advisory, or enterprise AI transformation practices. The PwC partnership is included in Tier 2 (premium) at Rs 1,80,400 net."
+      },
+      {
+        "question": "What is the difference between Tier 1 and Tier 2 fee options?",
+        "answer": "Both tiers share the same Rs 2,20,000 base fee and identical curriculum. Tier 1 applies a 25% Early Bird Scholarship at Rs 1,65,000 net with the Harvard Business Publishing certificate. Tier 2 applies an 18% Early Bird Scholarship at Rs 1,80,400 net with three certifications: Harvard, CAPM preparation, and PwC co-taught AI and consulting modules. For AI professionals targeting consulting or enterprise AI leadership, Tier 2 adds high-value industry credentials."
+      },
+      {
+        "question": "Is zero-cost EMI really available directly through Chandigarh University?",
+        "answer": "Yes. Chandigarh University offers zero-cost EMI through the university's own payment infrastructure, not through an NBFC or external marketing partner. Tenures of 6, 12, 18, and 24 months are typically available. Confirm current tenure options with our counsellor before enrolment."
+      },
+      {
+        "question": "Does the MBA cover practical coding in Python and R, or just theory?",
+        "answer": "Both. Advanced Business Analytics Using R and Python in Sem 4 covers hands-on implementation including ML pipelines, statistical modelling, and data manipulation. GenAI and Prompt Engineering includes practical API usage. Students who want deeper coding practice should supplement with Kaggle Learn or DataCamp alongside the degree. The MBA teaches applied business usage of these tools rather than computer science fundamentals."
+      },
+      {
+        "question": "What career path does MBA in Data Science and AI open versus a standalone Data Science course?",
+        "answer": "A standalone Data Science course builds technical skills. This MBA builds both technical AI literacy and business management capability, opening paths that pure data science roles do not: AI Product Management, AI Strategy Consulting, Head of Data and AI, and transformation programme leadership. Employers hiring for these roles specifically look for business management credentials alongside AI technical knowledge. The NAAC A+ MBA from NIRF #19 CU adds institutional credibility that standalone certificates cannot provide."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want an MBA with GenAI, NLP, RAG, and Agentic AI explicitly in the syllabus at NIRF #19, NAAC A+.",
+        "You want PwC-taught AI advisory and responsible AI governance content (Tier 2).",
+        "You are targeting AI Product Management, AI consulting, or enterprise AI transformation roles.",
+        "You prefer zero-cost EMI directly through the university."
+      ],
+      "consider": [
+        "You need a deep computer science masters degree rather than an MBA in AI management.",
+        "NMIMS brand recognition in BFSI AI hiring is specifically required for your target roles.",
+        "Your budget is under Rs 1.2 lakh and LPU NAAC A++ at lower fee is acceptable."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2170,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 16,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22"
+  }
+}

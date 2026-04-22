@@ -1,0 +1,132 @@
+{
+  "uniSlug": "chandigarh-university-online",
+  "program": "mba",
+  "specSlug": "product-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "CHANDIGARH UNIVERSITY ONLINE MBA",
+      "headline": "Chandigarh Online MBA in Product Management: Syllabus, Fees and Career Outcomes",
+      "sub": "UGC-DEB approved 2-year programme with Harvard and PwC certification options"
+    },
+    "tldr": "Chandigarh Online MBA in Product Management covers product strategy, product discovery and user research, agile product development, product analytics, go-to-market strategy, B2B product management, PwC-taught modules (premium tier), zero-cost direct university EMI, and 25% Early Bird scholarship at Rs 1,65,000. NIRF #19, NAAC A+. For product managers, product owners, and technology business careers.",
+    "about": {
+      "body": "Product Management is among the most in-demand management specialisations in India's technology sector. Product Manager roles at SaaS companies, consumer internet platforms, and fintech startups command among the highest salaries in Indian tech. The role sits at the intersection of business strategy, user experience, and engineering, requiring both management frameworks and technology product intuition.\n\nChandigarh University Online's Product Management MBA covers product strategy and vision, product discovery and user research, agile product development, product analytics and metrics, go-to-market strategy, and B2B product management. The programme is designed for working technology professionals, engineers, and business analysts who want to transition into or advance within product management.\n\nFor Tier 2 enrollees, PwC's Technology advisory practice advises technology companies and digital transformation clients on product strategy, platform design, and digital operating models. Co-taught modules bring technology product advisory frameworks into the Product Management MBA.\n\nChandigarh University holds NIRF #19 overall and NIRF #32 in Management 2025, NAAC A+ accredited. EdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Sem 1-2 shared core subjects across all Chandigarh MBA specialisations. See the main Chandigarh Online MBA page for core subject list.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Strategy, Business and Globalization", "desc": "Product strategy in technology markets, platform economics, and competitive positioning for software and internet products." },
+            { "name": "Decision Science", "desc": "Quantitative tools for product decisions: A/B testing, statistical significance, funnel analysis, and data-driven prioritisation." },
+            { "name": "Product Strategy and Vision", "desc": "Product vision articulation, market sizing (TAM/SAM/SOM), product roadmap planning, and OKR-based product goal setting." },
+            { "name": "Product Discovery and User Research", "desc": "Jobs-to-be-done framework, user interview techniques, usability testing, customer journey mapping, and opportunity scoring." },
+            { "name": "Agile Product Development", "desc": "Scrum and Kanban for product teams, sprint planning, backlog management, user story writing, and release management." },
+            { "name": "Product Analytics and Metrics", "desc": "North Star metric design, AARRR funnel, cohort analysis, retention modelling, and product analytics tool evaluation." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Project Management", "desc": "Product launch project management, cross-functional coordination, technical dependencies, and milestone-based delivery." },
+            { "name": "AI for Managers", "desc": "AI product features, LLM integration in products, AI-driven personalisation, and responsible AI product design." },
+            { "name": "Go-to-Market Strategy for Products", "desc": "Launch planning, positioning and messaging, channel selection, pricing strategy, and partnership-led GTM for software products." },
+            { "name": "B2B Product Management", "desc": "Enterprise product requirements, buyer vs user distinction, SaaS pricing models, customer success integration, and product-led growth." },
+            { "name": "Capstone Project II", "desc": "Applied product management project: product requirements document, go-to-market strategy, or product metrics framework for a real product." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "Product Management MBA graduates from Chandigarh University Online are hired across India's technology and internet sector:\n\n**Industries:** SaaS companies, consumer internet, fintech, edtech, healthtech, e-commerce platforms, and enterprise software\n\n**Entry-level roles:** Associate Product Manager (APM), Product Analyst, Business Analyst (product), Product Owner, Growth Analyst\n\n**Mid-level roles (3-5 years experience):** Product Manager, Senior Product Manager, Product Lead, Growth Product Manager, Platform Product Manager\n\n**Senior roles (7+ years):** Group Product Manager, VP Product, Director of Product, Chief Product Officer, Co-founder (product-led startup)\n\n**Top hiring organisations:** Flipkart, Meesho, Swiggy, Zomato, PhonePe, Razorpay, CRED, Freshworks, Zoho, Nykaa, Byju's, Unacademy, Practo, InMobi, and the product teams of banks and FMCG companies building digital products"
+    },
+    "skills": {
+      "body": "The Product Management specialisation builds skills that technology employers test in PM interviews and role assessments:\n\n**Technical skills:**\n- Product Discovery: user interview guide design, JTBD analysis, usability test facilitation, opportunity-solution tree mapping, and research synthesis\n- Product Analytics: North Star metric selection, funnel drop-off analysis, cohort retention table interpretation, and A/B test result analysis\n- Agile: sprint ceremony facilitation, user story writing (Given/When/Then), backlog grooming techniques, and velocity tracking\n- GTM: positioning canvas, competitive differentiation matrix, launch checklist, and pricing sensitivity analysis\n\n**Applied skills:**\n- B2B Product: enterprise feature prioritisation under competing customer requests, MRD vs PRD distinction, security and compliance requirements for enterprise products\n- AI Product: prompt design for LLM features, evaluating AI vendor capabilities, responsible AI considerations in product design, and AI product metrics\n\n**Soft skills:** Influencing engineering and design teams without direct authority, presenting product strategy and OKRs to leadership and investors, managing competing stakeholder priorities in roadmap planning, and communicating product decisions to sales and customer success teams."
+    },
+    "comparisons": {
+      "body": "Comparing Chandigarh Online MBA Product Management against peer programmes:\n\n**vs Chandigarh Online MBA IT or Business Analytics:** IT and Business Analytics specialisations have technology overlap but focus on infrastructure management and data analysis. Product Management is the right specialisation for professionals who want to lead product development, define roadmaps, and own product P&L. For PM roles specifically, this dedicated specialisation is stronger.\n\n**vs Amity or NMIMS MBA with Product Management electives:** Neither Amity nor NMIMS offers a dedicated Product Management specialisation at the online MBA level currently. CU's dedicated programme with Product Discovery, Agile, Analytics, and B2B PM subjects fills a significant gap in Indian online MBA offerings at the NAAC A+ level.\n\n**vs product management bootcamps (General Assembly, Product School):** PM bootcamps build practical skills quickly but do not award academic degrees. The CU MBA in Product Management gives both the management credential that employer HR functions require and the product-specific curriculum. Both can be held together for maximum positioning."
+    },
+    "fees": {
+      "body": "The Chandigarh University Online MBA in Product Management offers 2 program tiers based on certification bundle:\n\n**Tier 1 (Primary) - Standard with Harvard ManageMentor Certificate**:\n- Actual program fee: Rs 2,20,000\n- 25% Early Bird Scholarship: Rs 1,65,000 net payable (Rs 55,000 savings)\n- Payment options:\n  - Annual: Rs 82,500 per year x 2 years\n  - Semester-wise: Rs 41,250 per semester x 4 semesters\n  - Full upfront: Rs 1,65,000 one-time\n- Included certification: Harvard Business Publishing certificate\n\n**Tier 2 (Premium Upgrade) - 3-Certificate Bundle**:\n- Actual program fee: Rs 2,20,000 (same base fee)\n- 18% Early Bird Scholarship: Rs 1,80,400 net payable (Rs 39,600 savings)\n- Payment options:\n  - Annual: Rs 90,200 per year x 2 years\n  - Semester-wise: Rs 45,100 per semester x 4 semesters\n  - Full upfront: Rs 1,80,400 one-time\n- Included certifications (3):\n  1. PwC co-created and co-taught MBA modules (unmatched in India)\n  2. CAPM (Certified Associate in Project Management) certification preparation\n  3. Harvard Business Publishing certificate\n\n**Additional charges (both tiers)**:\n- Registration fee: Rs 1,000 (one-time, non-refundable)\n\n**Zero-cost EMI**: Available directly through Chandigarh University (no external marketing partner or NBFC intermediary, a differentiator among Indian online MBAs). Contact our counsellor for current tenure options (6, 12, 18, or 24 months).\n\n**Early Bird Scholarship terms**: Availability varies by admission cycle. The 25% Tier 1 scholarship and 18% Tier 2 scholarship are currently active but subject to timing. Reconfirm eligibility with our counsellor before enrolment.\n\nEdifyEdu reconfirms fees with Chandigarh University each quarter. Please reconfirm current tier options, Early Bird eligibility, and fees with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "Graduates receive a Chandigarh University MBA degree certificate with Product Management noted on the marksheet, issued under UGC-DEB 2020 standards. NIRF #19 and NAAC A+ credentials satisfy management degree requirements for PM roles at technology companies that specify a management degree for APM or Senior PM hiring.\n\nTier 1 graduates receive the Harvard Business Publishing certificate. Tier 2 graduates additionally receive PwC Technology advisory co-teaching acknowledgement and CAPM certification preparation, strengthening profiles for technical product management, platform strategy, and technology consulting roles. DigiLocker verification is available."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from Chandigarh University Online MBA Product Management alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Karan S.",
+          "city": "Bangalore",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Product Discovery and Agile subjects were directly applicable to my PM transition from engineering",
+          "disliked": "Mobile app product management needed a more dedicated module",
+          "body": "I was a senior software engineer trying to transition into product management. Product Discovery covered JTBD framework and user interview techniques I used directly in PM interviews. Agile subject covered sprint planning and backlog management that bridges my engineering background to PM work. PwC Technology advisory modules (Tier 2) gave me strategic product frameworks I was missing. Got placed as Associate Product Manager within 6 months of starting the programme."
+        },
+        {
+          "name": "Sneha M.",
+          "city": "Mumbai",
+          "year": 2023,
+          "rating": 4,
+          "liked": "Product Analytics subject covered North Star metric design and cohort analysis practically",
+          "disliked": "Network effects and platform economics needed more depth for marketplace PM roles",
+          "body": "I work in growth at a fintech startup and the Product Analytics subject covered cohort retention and A/B test interpretation that I use daily. Go-to-Market Strategy was directly applicable to our product launch work. NAAC A+ from NIRF #19 CU satisfied the management degree requirement for my Senior PM promotion. Zero-cost EMI through CU was convenient during the startup phase of my career."
+        },
+        {
+          "name": "Rohan P.",
+          "city": "Hyderabad",
+          "year": 2024,
+          "rating": 4,
+          "liked": "B2B Product Management subject covered enterprise requirements and SaaS pricing model depth",
+          "disliked": "Product operations and PM tooling (Jira, Figma, Amplitude) needed hands-on lab components",
+          "body": "I manage a B2B SaaS product and the B2B Product Management subject covered enterprise feature prioritisation, buyer vs user dynamics, and customer success integration that directly maps to my role. AI for Managers content on LLM product integration was timely and well-structured. CAPM preparation alongside the MBA added a project management credential useful for product roadmap governance with engineering leadership."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the PwC partnership in Chandigarh Online MBA?",
+        "answer": "Chandigarh University's premium tier includes full MBA modules co-created and co-taught by PwC industry experts. This is unmatched among Indian online MBAs - most offer only generic curriculum. PwC-taught modules are particularly valuable for Product Management professionals seeking roles at technology consulting firms, digital product advisory, or technology companies that partner with PwC on platform strategy. The PwC partnership is included in Tier 2 (premium) at Rs 1,80,400 net."
+      },
+      {
+        "question": "What is the difference between Tier 1 and Tier 2 fee options?",
+        "answer": "Both tiers share the same Rs 2,20,000 base fee and identical curriculum. Tier 1 applies a 25% Early Bird Scholarship at Rs 1,65,000 net with the Harvard Business Publishing certificate. Tier 2 applies an 18% Early Bird Scholarship at Rs 1,80,400 net with three certifications: Harvard, CAPM preparation, and PwC co-taught modules. For product professionals targeting platform strategy or technology consulting, Tier 2 adds strong credentialing value."
+      },
+      {
+        "question": "Is zero-cost EMI really available directly through Chandigarh University?",
+        "answer": "Yes. Chandigarh University offers zero-cost EMI through the university's own payment infrastructure, not through an NBFC or external marketing partner. Tenures of 6, 12, 18, and 24 months are typically available. Confirm current options with our counsellor before enrolment."
+      },
+      {
+        "question": "Is this MBA useful for engineering-to-PM career transitions?",
+        "answer": "Yes. The Product Management specialisation is designed for working technology professionals transitioning to product roles. Product Discovery, Agile Product Development, and Product Analytics subjects build the PM-specific skills that engineering backgrounds typically lack. The full MBA curriculum adds the business and strategy frameworks that PM interviewers test. NAAC A+ from NIRF #19 CU satisfies management degree requirements for APM programmes at companies that specify this."
+      },
+      {
+        "question": "Does the programme cover AI product management?",
+        "answer": "Yes. AI for Managers in Sem 4 specifically covers LLM integration in products, AI-driven personalisation, responsible AI in product design, and evaluating AI vendor capabilities. Product Analytics covers the data infrastructure that AI products rely on. The programme reflects India's current technology landscape where most new product development involves AI feature integration, making it directly relevant for PMs in the current market."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You work in technology as an engineer, analyst, or junior PM and want a NIRF #19, NAAC A+ MBA with dedicated product management curriculum.",
+        "You want PwC Technology advisory content and CAPM preparation (Tier 2) for platform strategy or consulting roles.",
+        "You are targeting APM, Senior PM, or VP Product roles in technology companies.",
+        "You prefer zero-cost EMI directly through the university."
+      ],
+      "consider": [
+        "You need IIM brand for consulting-track MBA rather than a product management-specific degree.",
+        "You are targeting a pure data science or machine learning role rather than product management.",
+        "Your budget is under Rs 1.2 lakh and a lower-fee NAAC A++ alternative is acceptable."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2080,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 16,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22"
+  }
+}
