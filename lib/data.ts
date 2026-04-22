@@ -1020,7 +1020,7 @@ export const UNIVERSITIES: University[] = [
     govtRecognised: true,
     psuEligible: true,
     feeMin: 130000,
-    feeMax: 130000,
+    feeMax: 150000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -1032,8 +1032,8 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com', 'MSc', 'MA'],
     programDetails: {
       'MBA': {
-        specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'Business Analytics', 'Digital Marketing', 'International Business', 'Data Science', 'Logistics & Supply Chain Management', 'Healthcare Management', 'IT Management', 'Entrepreneurship', 'Banking & Financial Services', 'Retail Management', 'Tourism & Hospitality Management'],
-        fees: '₹1.3L',
+        specs: ['Marketing Management', 'Finance', 'Human Resource Management', 'Operation and Supply Chain Management', 'Data Science and Business Analytics', 'Digital Marketing', 'Banking and Insurance', 'IT Management', 'Tourism Management', 'Real Estate Management', 'Direct Selling Management', 'Retail Management', 'Pharma and Healthcare Management', 'Agri Business Management', 'Biotechnology Management', 'Food Technology Management'],
+        fees: '₹1.3L – ₹1.5L',
         duration: '2 Years',
         roles: ['Business Analyst', 'Marketing Manager', 'Financial Analyst', 'HR Manager', 'Operations Manager', 'IT Manager'],
         avgSalary: '₹4L – ₹20L per annum',

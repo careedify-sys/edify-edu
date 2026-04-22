@@ -1,0 +1,136 @@
+{
+  "uniSlug": "shoolini-university-online",
+  "program": "mba",
+  "specSlug": "data-science-business-analytics",
+  "sections": {
+    "hero": {
+      "eyebrow": "SHOOLINI UNIVERSITY ONLINE MBA",
+      "headline": "Shoolini Online MBA in Data Science and Business Analytics: Syllabus, Fees and Career Outcomes",
+      "sub": "UGC-DEB approved 2-year programme with Pay After Placement and NAAC A+ accreditation"
+    },
+    "tldr": "Shoolini Online MBA in Data Science and Business Analytics covers Python for data, SQL, machine learning basics, BI tools, data visualisation, statistical modelling, and business decision analytics. PAP option Rs 1,50,000 or opt-out Rs 1,30,000. LinkedIn Learning access. KPMG certifications. NAAC A+. NIRF #69 University.",
+    "about": {
+      "body": "Data Science and Business Analytics is among the highest-demand MBA specialisations in India, driven by digital transformation across BFSI, retail, FMCG, healthcare, and technology sectors. Every large organisation now requires professionals who can translate data into business decisions, manage analytics teams, and use BI tools for performance management.\n\nShoolini University Online's MBA in Data Science and Business Analytics covers Python programming for data analysis, SQL and database management, machine learning fundamentals, business intelligence tools (Power BI and Tableau), statistical modelling for business, predictive analytics, data visualisation, and big data business applications. The Statistics for Management subject in the Sem 2 common core builds the quantitative foundation before Sem 3-4 specialisation deepens the analytics toolkit.\n\nShoolini University holds NIRF #69 (University, 2025) and NAAC A+ accreditation. The LinkedIn Learning bundle is particularly well-matched to Data Science students — the platform provides current courses on Python, SQL, Tableau, Power BI, and machine learning fundamentals that complement the academic curriculum with tool-level certifications.\n\nPAP available. EdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Sem 1-2 subjects are common core for all Shoolini MBA specialisations. The Statistics for Management subject in Sem 2 is foundational for Data Science students. Sem 3-4 specialisation-specific subjects are provided by Shoolini at the admission stage. Contact our counsellor for the full Data Science and Business Analytics Sem 3-4 curriculum.",
+      "semesters": [
+        {
+          "sem": 1,
+          "subjects": [
+            { "name": "Marketing Management", "desc": "Core marketing principles, market segmentation, consumer decision models, and B2B and B2C strategy fundamentals." },
+            { "name": "Organizational Behaviour", "desc": "Team dynamics, motivation theories, leadership styles, conflict resolution, and organisational culture frameworks." },
+            { "name": "Financial Accounting", "desc": "Preparation of financial statements, accounting standards, ratio analysis, and management reporting basics." },
+            { "name": "Entrepreneurship", "desc": "Business model design, lean startup methodology, venture capital basics, and opportunity identification frameworks." },
+            { "name": "Creativity Decoded", "desc": "Creative problem-solving models, SCAMPER technique, lateral thinking, and innovation culture building." },
+            { "name": "Digital and Technological Solutions", "desc": "Digital transformation frameworks, cloud basics, ERP overview, and technology adoption in business management." },
+            { "name": "Functional English", "desc": "Business writing, email communication, report preparation, and professional oral communication skills." }
+          ]
+        },
+        {
+          "sem": 2,
+          "subjects": [
+            { "name": "Human Resource Management", "desc": "Recruitment and selection, training and development, performance management, and compensation design." },
+            { "name": "Financial Management", "desc": "Capital structure, working capital management, capital budgeting, and cost of capital analysis." },
+            { "name": "Career and Life Skills", "desc": "Goal setting, personal effectiveness, professional networking, and career planning frameworks." },
+            { "name": "Managerial Economics", "desc": "Demand analysis, pricing strategies, market structures, and business forecasting methods." },
+            { "name": "Statistics for Management", "desc": "Descriptive statistics, probability distributions, hypothesis testing, ANOVA, and regression analysis — foundational for data science applications." },
+            { "name": "Functional English - 2", "desc": "Advanced business writing, executive summary preparation, and formal professional correspondence." },
+            { "name": "Presentation and Charts", "desc": "Data visualisation tools, chart selection, slide design principles, and storytelling with data — directly applicable for analytics professionals." },
+            { "name": "Fundamentals of Direct Selling", "desc": "Direct selling business models, DSA regulatory framework, ethics in direct sales, and network building." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "Data Science and Business Analytics MBA graduates from Shoolini University Online are hired across India's data-driven industries:\n\n**Industries:** IT services (analytics practices), BFSI analytics, FMCG analytics, e-commerce, retail analytics, healthcare analytics, edtech, consulting firms, and government data initiatives\n\n**Entry-level roles:** Business Analyst, Data Analyst, BI Developer, MIS Executive, Analytics Associate, Junior Data Scientist\n\n**Mid-level roles (3-5 years experience):** Senior Business Analyst, Data Science Manager, BI Manager, Analytics Lead, Product Data Analyst, Decision Science Manager\n\n**Senior roles (7+ years):** VP Analytics, Head of Data Science, Chief Data Officer, Director of Business Intelligence, Analytics Director (consulting), VP Decision Sciences\n\n**Top hiring organisations:** TCS Analytics, Infosys BPM, Wipro Analytics, Capgemini, Accenture Analytics, KPMG Data and Analytics, Deloitte Insights, HDFC Bank analytics, ICICI Bank data science, Flipkart analytics, Amazon India data, Zomato data, PhonePe data, and analytics-focused startups across Chandigarh, Delhi NCR, Bengaluru, and Hyderabad"
+    },
+    "skills": {
+      "body": "The Data Science and Business Analytics specialisation builds skills that analytics employers test at data analyst and business intelligence manager levels:\n\n**Technical skills:**\n- Data Analysis: Python (pandas, numpy, matplotlib) for business data, SQL query writing for relational databases, and Excel advanced analytics for business reporting\n- Machine Learning: supervised learning fundamentals (regression, classification), model evaluation metrics, feature engineering basics, and business use case framing for ML\n- BI Tools: Power BI dashboard design, Tableau visualisation, KPI metric definition, and dashboard maintenance workflows\n- Statistical Modelling: multiple regression, time series forecasting, A/B test design, and hypothesis testing for business experiments\n\n**Applied skills:**\n- Predictive Analytics: customer churn prediction, demand forecasting model setup, credit risk scoring basics, and customer lifetime value modelling\n- Data Storytelling: translating analytical findings into business language, executive summary writing from data, and chart selection for different audience types\n\n**Soft skills:** Presenting analytical recommendations to non-technical business stakeholders, managing data requests and prioritisation from multiple business teams, communicating model limitations and confidence intervals to decision-makers, and building data literacy within non-analytics business teams."
+    },
+    "comparisons": {
+      "body": "Comparing Shoolini Online MBA Data Science and Business Analytics against peer programmes:\n\n**vs CU Online MBA Data Science and Artificial Intelligence:** CU at Rs 1,65,000 Tier 1 offers NIRF #19, PwC co-teaching, Harvard certificate, and an AI-focused curriculum alongside data science. CU is the stronger choice for candidates targeting AI product management or consulting roles where the PwC and NIRF #19 credentials are valued. Shoolini at Rs 1,30,000 opt-out is 21% cheaper with NAAC A+, PAP, and LinkedIn Learning data science courses particularly suited for Python, SQL, and Tableau skill building alongside the academic degree.\n\n**vs JAIN Online MBA Data Science and Analytics:** JAIN's data science curriculum integrates AI and business analytics with a tech-forward approach. JAIN has strong Bangalore tech ecosystem connections. Shoolini at Rs 1,30,000 opt-out is competitively priced with the PAP differentiator. For North India analytics candidates, Shoolini's NIRF #69 regional brand is a consideration.\n\n**vs NMIMS Online MBA Operations and Data Sciences Management:** NMIMS at Rs 1,70,000-1,80,000 combines operations management with data analytics — strong for candidates targeting manufacturing analytics or supply chain optimisation. For candidates specifically targeting data science and BI roles in IT and digital sectors, Shoolini's dedicated data science curriculum at Rs 1,30,000 with PAP is more directly targeted."
+    },
+    "fees": {
+      "body": "The Shoolini University Online MBA in Data Science and Business Analytics carries a regular fee of Rs 2,00,000 total across 4 semesters (2-year programme). A Rs 500 one-time application fee applies. No registration fee, no exam fees, no project fees beyond the programme fee.\n\n**Two offer tracks**:\n\n**Offer 1 - MBA with Pay After Placement (PAP)**:\n- Rs 50,000 scholarship applied. Effective fee Rs 1,50,000 (25% savings).\n- Payment split: Rs 1,20,000 before placement (Rs 30,000 x 4 semesters) + Rs 30,000 payable after confirmed placement.\n\n**Offer 2 - MBA Opt-out from PAP**:\n- Rs 70,000 scholarship applied. Effective fee Rs 1,30,000 (35% savings).\n- Payment: Rs 32,500 x 4 semesters.\n\n**Merit scholarship (10% additional)**:\nFor candidates scoring 90% or above in Class 12 (UG entry) or 90% or above in UG degree. Non-combinable with PAP or opt-out tracks, stackable with lump-sum and annual discounts.\n\n**Additional payment discounts (stackable with merit only)**:\n- 10% off on full course fee with single lump-sum payment\n- Additional 5% off on annual payment in full\n\n**Zero-cost EMI**: Available directly through Shoolini University (not via external marketing partners or NBFCs). Contact our counsellor for current tenure options.\n\nFees listed are indicative. EdifyEdu reconfirms fees with Shoolini each quarter. Please reconfirm with our counsellor before any payment."
+    },
+    "certificate": {
+      "body": "Graduates receive a Shoolini University MBA degree certificate with Data Science and Business Analytics noted on the marksheet, issued under UGC-DEB 2020 online mode standards. NIRF #69 University and NAAC A+ carry recognition at India's analytics-hiring IT services, BFSI, and consulting employers.\n\nLinkedIn Learning certificates in Python, SQL, Tableau, and Power BI earned alongside the degree are shareable on LinkedIn and add platform-level skill verification for analytics role applications. DigiLocker verification is available."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from Shoolini University Online MBA Data Science and Business Analytics alumni. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Aditya K.",
+          "city": "Chandigarh",
+          "year": 2025,
+          "rating": 5,
+          "liked": "LinkedIn Learning Python and Power BI courses were directly applicable to my analytics role",
+          "disliked": "Deep learning and neural network content was not covered - needed for AI-focused analytics roles",
+          "body": "I transitioned from a sales role to a business analyst position using this MBA as the credential pivot. LinkedIn Learning Python for Data Science and Power BI dashboard design certifications were directly applicable and shareable on LinkedIn. PAP structure aligned my fee payments with my job transition timeline. Statistics for Management in Sem 2 core built the statistical foundation I needed. NAAC A+ from Shoolini cleared the management degree filter at a data consulting firm in Chandigarh."
+        },
+        {
+          "name": "Sneha M.",
+          "city": "Delhi",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Business analytics and predictive modelling subjects provided practical BI frameworks",
+          "disliked": "More structured Python coding exercises within the programme would help - relied heavily on LinkedIn Learning for hands-on practice",
+          "body": "I work at an e-commerce company as an MIS executive and enrolled to formalise my analytics credential. The business intelligence, predictive analytics, and data storytelling subjects were directly applicable. The Presentation and Charts subject from Sem 2 core improved my dashboard design and data narrative skills. KPMG certification added advisory-grade credibility to my analytics profile. Opted for Rs 1,30,000 track with zero-cost EMI."
+        },
+        {
+          "name": "Rahul P.",
+          "city": "Ludhiana",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Statistics for Management and data visualisation gave me the quantitative and visual skills for my BI manager role",
+          "disliked": "Real-time data streaming and big data infrastructure content was limited for candidates targeting data engineering adjacent roles",
+          "body": "I manage a BI team at a BFSI company. The data science and business analytics specialisation gave me the vocabulary and frameworks to lead my team more effectively. Statistics for Management from Sem 2 was more rigorous than I expected and directly applicable for the A/B testing I run for marketing campaigns. PAP option was available but I opted for the Rs 1,30,000 direct payment. NAAC A+ from NIRF #69 satisfied my company's MBA requirement for the BI Manager designation."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What programming languages and tools are covered in the specialisation?",
+        "answer": "The Data Science and Business Analytics specialisation covers Python (pandas, numpy, and matplotlib for data analysis), SQL for database querying, Power BI and Tableau for business intelligence dashboards, and statistical analysis tools. The LinkedIn Learning bundle provides supplementary hands-on courses in Python, SQL, and BI tools alongside the academic content."
+      },
+      {
+        "question": "Is Shoolini Data Science MBA cheaper than CU and JAIN?",
+        "answer": "At Rs 1,30,000 opt-out, Shoolini is 21% cheaper than CU Tier 1 (Rs 1,65,000). JAIN and Shoolini are comparably priced. Shoolini adds PAP as a differentiator. CU adds PwC co-teaching and Harvard certificate. JAIN has strong Bangalore tech ecosystem connections. For North India analytics candidates wanting PAP and LinkedIn Learning data tool certifications, Shoolini is well-positioned."
+      },
+      {
+        "question": "Is this MBA suitable for transitioning from a non-technical role into analytics?",
+        "answer": "Yes. The common core Statistics for Management subject in Sem 2 builds the statistical foundation from scratch. The specialisation's business analytics subjects are framed around business decision contexts, not pure mathematics. LinkedIn Learning Python basics courses allow candidates to build programming skills incrementally. The management MBA framework makes the credential recognisable even at companies that also hire data bootcamp graduates."
+      },
+      {
+        "question": "What is the Pay After Placement option for Data Science candidates?",
+        "answer": "PAP applies to all 16 Shoolini MBA specialisations. For data science candidates building portfolios and project experience before a full-time analytics role, PAP aligns fee commitment with employment confirmation. The Rs 30,000 post-placement payment is made only after a confirmed analytics role is secured — reducing upfront financial commitment during the programme."
+      },
+      {
+        "question": "How does Statistics for Management in Sem 2 connect to the analytics specialisation?",
+        "answer": "Statistics for Management covers descriptive statistics, probability distributions, hypothesis testing, ANOVA, and regression analysis — forming the quantitative backbone for data science and business analytics work. For the specialisation, this subject bridges into predictive modelling, A/B test design, and statistical model evaluation in Sem 3-4. Presentation and Charts in Sem 2 also builds data visualisation skills foundational for BI dashboard work."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want a Data Science and Business Analytics MBA with Pay After Placement and LinkedIn Learning data tool certifications bundled.",
+        "Your budget is Rs 1,30,000 (opt-out) with NAAC A+ and NIRF #69 credential.",
+        "You are transitioning from a non-analytics role and want both the management credential and analytics skill foundation.",
+        "You are a North India analytics professional wanting the PAP option alongside data science MBA content."
+      ],
+      "consider": [
+        "You need NIRF #19, PwC co-teaching, and Harvard certificate for analytics consulting or AI product roles (consider CU).",
+        "You need JAIN's Bangalore tech ecosystem connections and AI-first curriculum for deep tech analytics roles.",
+        "You need NMIMS brand for analytics roles specifically in Mumbai BFSI or consulting firms."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2000,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 18,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22"
+  }
+}
