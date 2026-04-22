@@ -3229,48 +3229,6 @@
   },
   {
     "university_slug": "jain-university-online",
-    "program": "mba",
-    "spec_slug": "data-science-and-artificial-intelligence",
-    "spec_name": "Data Science and Artificial Intelligence"
-  },
-  {
-    "university_slug": "jain-university-online",
-    "program": "mba",
-    "spec_slug": "ai-for-finance",
-    "spec_name": "AI for Finance"
-  },
-  {
-    "university_slug": "jain-university-online",
-    "program": "mba",
-    "spec_slug": "ai-for-marketing",
-    "spec_name": "AI for Marketing"
-  },
-  {
-    "university_slug": "jain-university-online",
-    "program": "mba",
-    "spec_slug": "ai-for-human-resources",
-    "spec_name": "AI for Human Resources"
-  },
-  {
-    "university_slug": "jain-university-online",
-    "program": "mba",
-    "spec_slug": "ai-for-international-finance",
-    "spec_name": "AI for International Finance"
-  },
-  {
-    "university_slug": "jain-university-online",
-    "program": "mba",
-    "spec_slug": "marketing-and-business-analytics",
-    "spec_name": "Marketing and Business Analytics"
-  },
-  {
-    "university_slug": "jain-university-online",
-    "program": "mba",
-    "spec_slug": "human-resource-and-business-analytics",
-    "spec_name": "Human Resource and Business Analytics"
-  },
-  {
-    "university_slug": "jain-university-online",
     "program": "mca",
     "spec_slug": "artificial-intelligence",
     "spec_name": "Artificial Intelligence"
@@ -7156,5 +7114,47 @@
     "program": "mca",
     "spec_slug": "fintech",
     "spec_name": "FinTech"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "data-science-and-artificial-intelligence",
+    "spec_name": "Data Science and Artificial Intelligence"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "ai-for-finance",
+    "spec_name": "AI for Finance"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "ai-for-marketing",
+    "spec_name": "AI for Marketing"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "ai-for-human-resources",
+    "spec_name": "AI for Human Resources"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "ai-for-international-finance",
+    "spec_name": "AI for International Finance"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "marketing-and-business-analytics",
+    "spec_name": "Marketing and Business Analytics"
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-and-business-analytics",
+    "spec_name": "Human Resource and Business Analytics"
   }
 ]
