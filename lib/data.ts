@@ -2332,8 +2332,8 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'BCA', 'B.Com', 'BA', 'MA', 'M.Com', 'MSc', 'MCA'],
     programDetails: {
       'MBA': {
-        specs: ['Marketing, Finance, Human Resource Management,'],
-        fees: '₹20K – ₹80K',
+        specs: ['Finance', 'Human Resource Management', 'Marketing', { slug: 'retail-management', name: 'Retail Management' }, { slug: 'investment-management', name: 'Investment Management' }, { slug: 'information-system-management', name: 'Information System Management' }, { slug: 'international-business', name: 'International Business' }],
+        fees: '\u20b91.1L',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -5754,9 +5754,9 @@ export const UNIVERSITIES: University[] = [
     id: 'bits-pilani-online',
     name: 'Birla Institute of Technology (BIT) Mesra Online',
     abbr: 'BITM',
-    city: 'Online',
-    state: 'Online',
-    region: 'Central',
+    city: 'Ranchi',
+    state: 'Jharkhand',
+    region: 'East',
     nirf: 92,
     nirfMgt: 97,
     nirfEng: 54,
@@ -5779,8 +5779,8 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA'],
     programDetails: {
       'MBA': {
-        specs: ['Finance', 'Marketing', 'Human Resource Management', 'Business Analy'],
-        fees: '₹60K – ₹200K',
+        specs: ['Finance', 'Marketing', 'Human Resource Management', { slug: 'business-analytics', name: 'Business Analytics' }],
+        fees: '\u20b91.78L',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
