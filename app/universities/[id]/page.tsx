@@ -113,31 +113,8 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
           { '@type': 'ListItem', position: 3, name: u.name, item: `https://edifyedu.in/universities/${u.id}` },
         ],
       },
-      {
-        '@type': 'FAQPage',
-        mainEntity: [
-          {
-            '@type': 'Question',
-            name: `Is ${u.name} online degree valid?`,
-            acceptedAnswer: { '@type': 'Answer', text: `Yes. ${u.name} is UGC DEB approved for online education. The degree is equivalent to a regular campus degree and is valid for government jobs, private sector employment, and further studies.` },
-          },
-          {
-            '@type': 'Question',
-            name: `What is the fee for ${u.name} online ${u.programs[0]}?`,
-            acceptedAnswer: { '@type': 'Answer', text: `${u.name} online ${u.programs[0]} fees range from ₹${Math.round(u.feeMin/1000)}K to ₹${Math.round(u.feeMax/1000)}K. EMI options are available from ₹${u.emiFrom.toLocaleString()}/month.` },
-          },
-          {
-            '@type': 'Question',
-            name: `Is ${u.name} NAAC accredited?`,
-            acceptedAnswer: { '@type': 'Answer', text: `Yes. ${u.name} is NAAC ${u.naac} accredited, which is one of the highest accreditation grades given by the National Assessment and Accreditation Council.` },
-          },
-          {
-            '@type': 'Question',
-            name: `What programs does ${u.name} offer online for ${year}?`,
-            acceptedAnswer: { '@type': 'Answer', text: `${u.name} offers the following online programs: ${u.programs.join(', ')}. All programs are UGC DEB approved and admissions are open for ${year}.` },
-          },
-        ],
-      },
+      // FAQPage schema removed here — emitted once by UniversityPageClient.tsx
+      // to avoid duplicate FAQPage causing Google rich results errors
     ],
   }
 
