@@ -1246,7 +1246,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'M.Com', 'MA'],
     programDetails: {
       'MBA': {
-        specs: ['Finance Management', 'HR Management', 'Marketing Management', 'Operations Management', 'Business Analytics', 'Healthcare Management', 'International Business Management'],
+        specs: [{ slug: 'finance', name: 'Finance Management' }, 'HR Management', 'Marketing Management', 'Operations Management', 'Business Analytics', 'Healthcare Management', 'International Business Management'],
         fees: '₹76.2K',
         duration: '2 Yrs',
         roles: ['Financial Analyst', 'Investment Analyst Trainee', 'Credit Analyst'],
@@ -3705,7 +3705,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA'],
     programDetails: {
       'MBA': {
-        specs: ['Human Resource Management', 'Finance', 'Marketing Management', 'Operations Management', 'Hospital & Healthcare Management', 'Information Systems'],
+        specs: ['Human Resource Management', 'Finance', 'Marketing Management', 'Operations Management', { slug: 'healthcare-management', name: 'Hospital & Healthcare Management' }, 'Information Systems'],
         fees: '₹1.41L',
         duration: '2 Years (4 Semesters) — extendable up to 4 years',
         roles: [
@@ -4168,7 +4168,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'B.Com', 'M.Com'],
     programDetails: {
       'MBA': {
-        specs: ['Marketing', 'Finance', 'Human Resource', 'Business Analytics', 'IT Management'],
+        specs: ['Marketing', 'Finance', { slug: 'human-resource-management', name: 'Human Resource' }, 'Business Analytics', 'IT Management'],
         fees: '₹1.02L',
         duration: '2 Yrs',
         roles: ['Management Trainee', 'HR Executive', 'Marketing Executive', 'Financial Analyst'],
@@ -4297,7 +4297,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       
       'MBA': {
-        specs: ['Project Management', 'Blockchain', 'AI & ML', 'Agri Business', 'Marketing Management', 'Human Resource Management', 'Finance', 'IT Management', 'Operations Management', 'FinTech Management', 'Hospital Administration & Healthcare Management', 'International Business Management', 'Logistics & Supply Chain Management', 'Business Analytics', 'Digital Marketing Management'],
+        specs: ['Project Management', 'Blockchain', { slug: 'artificial-intelligence-machine-learning', name: 'AI & ML' }, 'Agri Business', 'Marketing Management', 'Human Resource Management', 'Finance', 'IT Management', 'Operations Management', 'FinTech Management', 'Hospital Administration & Healthcare Management', 'International Business Management', 'Logistics & Supply Chain Management', 'Business Analytics', 'Digital Marketing Management'],
         fees: '₹1.89L',
         duration: '2 Years (4 Semesters)',
         roles: ['Project Coordinator', 'Project Manager', 'Scrum Master', 'PMO Analyst'],
@@ -4531,12 +4531,12 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 134000,
+    feeMin: 160000,
     feeMax: 160000,
-    emiFrom: 2500,
+    emiFrom: 0,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    highlight: 'NAAC A+',
+    highlight: 'NIRF #59 University 2025 · NAAC A+',
     tagline: '14 MBA specialisation groups — unique niche tracks: Sports Management, Agribusiness, Event Management, Infrastructure Ma',
     description: 'UGC DEB approved online programs from Bharati Vidyapeeth (Deemed to be University). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Students wanting a wide dual-spec MBA with niche tracks like Sports, Agribusines'],
@@ -4544,7 +4544,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA'],
     programDetails: {
       'MBA': {
-        specs: ['Marketing', 'Finance', 'Human Resource Management', 'International Business', 'Production & Operations', 'Information Technology (IT)', 'Business Analytics', 'Agribusiness', 'Retail', 'Project Management', 'Event Management', 'Hospitality', 'Sports Management', 'Infrastructure Management'],
+        specs: ['Marketing', 'Finance', 'Human Resource Management', 'International Business', 'Production & Operations', 'Information Technology (IT)', 'Business Analytics', 'Agribusiness', { slug: 'retail', name: 'Retail Management' }, 'Project Management', 'Event Management', 'Hospitality', { slug: 'sports', name: 'Sports Management' }, { slug: 'infrastructure', name: 'Infrastructure Management' }],
         fees: '₹1.6L',
         duration: '2 Yrs',
         roles: ['Management Trainee', 'HR Executive', 'Marketing Executive', 'Operations Analyst'],
@@ -4619,7 +4619,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'MA'],
     programDetails: {
       'MBA': {
-        specs: ['Finance Management', 'Human Resource Management', 'Marketing Management', 'Operations Management', 'Project Management', 'Supply Chain Management'],
+        specs: [{ slug: 'finance', name: 'Finance Management' }, 'Human Resource Management', 'Marketing Management', 'Operations Management', 'Project Management', 'Supply Chain Management'],
         fees: '₹60K – ₹200K',
         duration: '2 Yrs (max 4)',
         roles: ['Management Trainee', 'Operations Executive', 'HR Coordinator'],
@@ -5137,7 +5137,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'BBA'],
     programDetails: {
       'MBA': {
-        specs: ['Marketing', 'Finance', 'Human Resource Management', 'IT & Business Analytics'],
+        specs: ['Marketing', 'Finance', { slug: 'human-resource-management', name: 'Human Resource Management' }, 'IT & Business Analytics'],
         fees: '₹1.75L',
         duration: '2 Yrs',
         roles: ['Marketing Executive', 'Brand Trainee', 'Digital Marketing Trainee'],
