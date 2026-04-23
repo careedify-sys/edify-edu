@@ -320,12 +320,6 @@
   {
     "university_slug": "amity-university-online",
     "program": "mba",
-    "spec_slug": "dual-specialization",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "amity-university-online",
-    "program": "mba",
     "spec_slug": "entrepreneurship-and-leadership-management",
     "spec_name": ""
   },
@@ -339,12 +333,6 @@
     "university_slug": "amity-university-online",
     "program": "mba",
     "spec_slug": "global-finance-market",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "amity-university-online",
-    "program": "mba",
-    "spec_slug": "healthcare-management",
     "spec_name": ""
   },
   {
@@ -381,24 +369,6 @@
     "university_slug": "amity-university-online",
     "program": "mba",
     "spec_slug": "insurance-management",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "amity-university-online",
-    "program": "mba",
-    "spec_slug": "international-business",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "amity-university-online",
-    "program": "mba",
-    "spec_slug": "international-finance",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "amity-university-online",
-    "program": "mba",
-    "spec_slug": "international-finance-acca",
     "spec_name": ""
   },
   {
@@ -578,12 +548,6 @@
   {
     "university_slug": "amrita-vishwa-vidyapeetham-online",
     "program": "mba",
-    "spec_slug": "environmental-social-and-governance-esg",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "amrita-vishwa-vidyapeetham-online",
-    "program": "mba",
     "spec_slug": "esg",
     "spec_name": ""
   },
@@ -608,19 +572,7 @@
   {
     "university_slug": "amrita-vishwa-vidyapeetham-online",
     "program": "mba",
-    "spec_slug": "international-finance-and-accounting-acca",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "amrita-vishwa-vidyapeetham-online",
-    "program": "mba",
     "spec_slug": "marketing",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "amrita-vishwa-vidyapeetham-online",
-    "program": "mba",
-    "spec_slug": "operations",
     "spec_name": ""
   },
   {
@@ -1412,18 +1364,6 @@
   {
     "university_slug": "chandigarh-university-online",
     "program": "mba",
-    "spec_slug": "airlines-airport-management",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "chandigarh-university-online",
-    "program": "mba",
-    "spec_slug": "banking-insurance",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "chandigarh-university-online",
-    "program": "mba",
     "spec_slug": "brand-management",
     "spec_name": ""
   },
@@ -1431,12 +1371,6 @@
     "university_slug": "chandigarh-university-online",
     "program": "mba",
     "spec_slug": "business-analytics",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "chandigarh-university-online",
-    "program": "mba",
-    "spec_slug": "data-science-artificial-intelligence",
     "spec_name": ""
   },
   {
@@ -1508,19 +1442,7 @@
   {
     "university_slug": "chandigarh-university-online",
     "program": "mba",
-    "spec_slug": "logistics-supply-chain-management",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "chandigarh-university-online",
-    "program": "mba",
     "spec_slug": "marketing",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "chandigarh-university-online",
-    "program": "mba",
-    "spec_slug": "media-management",
     "spec_name": ""
   },
   {
@@ -1533,12 +1455,6 @@
     "university_slug": "chandigarh-university-online",
     "program": "mba",
     "spec_slug": "retail-management",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "chandigarh-university-online",
-    "program": "mba",
-    "spec_slug": "travel-tourism-management",
     "spec_name": ""
   },
   {
@@ -1742,12 +1658,6 @@
   {
     "university_slug": "chitkara-university-online",
     "program": "mba",
-    "spec_slug": "international-finance-accounting-acca",
-    "spec_name": "International Finance & Accounting (ACCA)"
-  },
-  {
-    "university_slug": "chitkara-university-online",
-    "program": "mba",
     "spec_slug": "marketing",
     "spec_name": "Marketing"
   },
@@ -1756,12 +1666,6 @@
     "program": "mba",
     "spec_slug": "pharmaceutical-management",
     "spec_name": "Pharmaceutical Management"
-  },
-  {
-    "university_slug": "chitkara-university-online",
-    "program": "mba",
-    "spec_slug": "supply-chain-logistics",
-    "spec_name": "Supply Chain & Logistics"
   },
   {
     "university_slug": "christ-university-online",
@@ -3200,37 +3104,13 @@
   {
     "university_slug": "jain-university-online",
     "program": "mba",
-    "spec_slug": "artificial-intelligence",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "jain-university-online",
-    "program": "mba",
-    "spec_slug": "banking-and-finance",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "jain-university-online",
-    "program": "mba",
     "spec_slug": "business-intelligence-and-analytics",
     "spec_name": ""
   },
   {
     "university_slug": "jain-university-online",
     "program": "mba",
-    "spec_slug": "data-science-and-analytics",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "jain-university-online",
-    "program": "mba",
     "spec_slug": "digital-marketing-and-e-commerce",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "jain-university-online",
-    "program": "mba",
-    "spec_slug": "entrepreneurship-and-venture-creation",
     "spec_name": ""
   },
   {
@@ -3266,12 +3146,6 @@
   {
     "university_slug": "jain-university-online",
     "program": "mba",
-    "spec_slug": "information-technology-management",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "jain-university-online",
-    "program": "mba",
     "spec_slug": "international-finance-acca",
     "spec_name": ""
   },
@@ -3285,12 +3159,6 @@
     "university_slug": "jain-university-online",
     "program": "mba",
     "spec_slug": "marketing-human-resource-management",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "jain-university-online",
-    "program": "mba",
-    "spec_slug": "project-management",
     "spec_name": ""
   },
   {
@@ -5036,12 +4904,6 @@
   {
     "university_slug": "nmims-online",
     "program": "mba",
-    "spec_slug": "finance",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "nmims-online",
-    "program": "mba",
     "spec_slug": "human-resource-management",
     "spec_name": ""
   },
@@ -6092,12 +5954,6 @@
   {
     "university_slug": "symbiosis-university-online",
     "program": "mba",
-    "spec_slug": "human-resource-management",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "symbiosis-university-online",
-    "program": "mba",
     "spec_slug": "international-business",
     "spec_name": ""
   },
@@ -6339,12 +6195,6 @@
     "university_slug": "upes-online",
     "program": "mba",
     "spec_slug": "digital-business",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "upes-online",
-    "program": "mba",
-    "spec_slug": "finance",
     "spec_name": ""
   },
   {
@@ -7071,36 +6921,6 @@
     "university_slug": "vtu-online",
     "program": "mba",
     "spec_slug": "finance",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "ignou-online",
-    "program": "mba",
-    "spec_slug": "general-management-finance",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "ignou-online",
-    "program": "mba",
-    "spec_slug": "general-management-hr",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "ignou-online",
-    "program": "mba",
-    "spec_slug": "general-management-marketing",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "ignou-online",
-    "program": "mba",
-    "spec_slug": "general-management-operations",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "ignou-online",
-    "program": "mba",
-    "spec_slug": "general-management-strategy",
     "spec_name": ""
   },
   {
