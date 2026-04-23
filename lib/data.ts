@@ -4986,12 +4986,12 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'amet-university-online',
-    name: 'AMET University (Academy of Maritime Education and Online',
+    name: 'AMET University (Academy of Maritime Education and Training) Online',
     abbr: 'AUME',
-    city: 'Kanathur',
-    state: 'Chennai',
-    region: 'Central',
-    nirf: 0,
+    city: 'Chennai',
+    state: 'Tamil Nadu',
+    region: 'South',
+    nirf: 999,
     naac: 'A',
     ugc: true,
     approvals: ['UGC DEB', 'NAAC A', 'AICTE', 'WES Recognised'],
@@ -5011,7 +5011,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'BBA', 'B.Com'],
     programDetails: {
       'MBA': {
-        specs: ['Shipping & Logistics Management'],
+        specs: [{ slug: 'shipping-logistics', name: 'Shipping & Logistics' }],
         fees: '₹200K – ₹200K',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
