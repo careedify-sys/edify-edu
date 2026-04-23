@@ -4155,7 +4155,7 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 76647,
+    feeMin: 102000,
     feeMax: 102000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
@@ -4168,7 +4168,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'B.Com', 'M.Com'],
     programDetails: {
       'MBA': {
-        specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'General Management'],
+        specs: ['Marketing', 'Finance', 'Human Resource', 'Business Analytics', 'IT Management'],
         fees: '₹1.02L',
         duration: '2 Yrs',
         roles: ['Management Trainee', 'HR Executive', 'Marketing Executive', 'Financial Analyst'],

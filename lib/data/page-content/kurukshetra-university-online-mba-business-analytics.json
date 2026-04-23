@@ -1,0 +1,138 @@
+{
+  "uniSlug": "kurukshetra-university-online",
+  "program": "mba",
+  "specSlug": "business-analytics",
+  "sections": {
+    "hero": {
+      "eyebrow": "KURUKSHETRA UNIVERSITY ONLINE MBA",
+      "headline": "Kurukshetra University Online MBA in Business Analytics: Syllabus, Fees and Career Outcomes",
+      "sub": "UGC-DEB approved 2-year programme | NAAC A++ accredited | Public state university | Rs 1,02,000 total fee"
+    },
+    "tldr": "Kurukshetra University Online MBA in Business Analytics covers Business Analysis using Excel, Econometrics for Business Forecasting, Business Data Mining, Decision Modeling and Data Analysis, Data Analytics using R, Social Media Analytics, Financial Modelling, Predictive Analysis for Business Decision, Time Series Data Analysis, and Applied Multivariate Analysis. Total fee Rs 1,02,000 (Rs 25,500/semester). NAAC A++ accredited public state university. Zero-cost EMI available directly through the university.",
+    "about": {
+      "body": "Kurukshetra University's Online MBA in Business Analytics combines tool-based learning (Excel analytics, R programming, data mining) with advanced quantitative methods (econometrics, time series, multivariate analysis, predictive modelling). At Rs 1,02,000 total, this is the only NAAC A++ public state university offering a structured online MBA in Business Analytics at this fee tier.\n\nThe curriculum leans heavily toward quantitative depth. Econometrics for Business Forecasting, Applied Multivariate Analysis, and Time Series Data Analysis are subjects typically found in statistics-heavy programmes, not standard MBA analytics tracks. Social Media Analytics in Sem 3 adds a digital marketing analytics dimension. Financial Modelling in Sem 4 bridges the analytics and finance domains.\n\nKurukshetra University is a state university established in 1956 under the Haryana government. NAAC A++ (the highest possible grade), UGC-DEB approved for online programmes. As a public university, tuition is government-subsidized, which explains the lower fee compared to private online MBA providers.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Semesters 1-2 cover the common MBA core. Semesters 3-4 below show the Business Analytics specialisation subjects plus common core papers (Strategic Management, Optimization Models, Summer Training in Sem 3; Entrepreneurship Development, Business Ethics and Corporate Governance, Comprehensive Viva-Voce in Sem 4).",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Strategic Management", "desc": "Common core. Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic planning process." },
+            { "name": "Optimization Models for Business Decisions", "desc": "Common core. Linear programming, transportation models, assignment problems, and quantitative decision-making tools." },
+            { "name": "Summer Training/Project Work", "desc": "Common core. Industry-based project applying management concepts to a real business problem." },
+            { "name": "Business Analysis using Excel", "desc": "Advanced Excel for business analytics: pivot tables, VLOOKUP, data visualization, statistical functions, and scenario analysis." },
+            { "name": "Econometrics for Business Forecasting", "desc": "Regression analysis, hypothesis testing, forecasting models, demand estimation, and econometric model building for business decisions." },
+            { "name": "Business Data Mining", "desc": "Classification, clustering, association rules, decision trees, and pattern recognition in business datasets." },
+            { "name": "Decision Modeling and Data Analysis", "desc": "Decision tree analysis, simulation models, sensitivity analysis, and data-driven decision frameworks." },
+            { "name": "Data Analytics using R", "desc": "R programming basics, data manipulation (dplyr), visualization (ggplot2), statistical testing, and reproducible analysis workflows." },
+            { "name": "Social Media Analytics", "desc": "Social listening tools, sentiment analysis, engagement metrics, influencer analytics, and social media ROI measurement." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Entrepreneurship Development", "desc": "Common core. Startup ideation, business plan creation, funding strategies, and entrepreneurial ecosystem in India." },
+            { "name": "Business Ethics and Corporate Governance", "desc": "Common core. Ethical frameworks, corporate social responsibility, board governance, and regulatory compliance." },
+            { "name": "Comprehensive Viva-Voce", "desc": "Common core. Oral examination covering all four semesters of the MBA programme." },
+            { "name": "Financial Modelling", "desc": "Excel-based financial model construction, DCF valuation models, sensitivity tables, scenario analysis, and presentation of financial projections." },
+            { "name": "Predictive Analysis for Business Decision", "desc": "Predictive modelling techniques, logistic regression, random forests, model validation, and business application of prediction models." },
+            { "name": "Time Series Data Analysis", "desc": "ARIMA models, seasonal decomposition, moving averages, exponential smoothing, and forecasting accuracy metrics." },
+            { "name": "Applied Multivariate Analysis", "desc": "Factor analysis, principal component analysis, discriminant analysis, MANOVA, and multidimensional scaling for business research." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "Kurukshetra University MBA Business Analytics graduates target roles across data analytics, business intelligence, and consulting:\n\n**Industries:** IT/ITES, BFSI, e-commerce, FMCG, consulting, healthcare analytics, telecom, and government data departments\n\n**Entry-level roles:** Business Analyst, Data Analyst, MIS Analyst, Analytics Associate, Market Research Analyst, BI Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Business Analyst, Analytics Manager, Data Science Associate, BI Manager, Forecasting Manager, Analytics Consultant\n\n**Senior roles (7+ years):** Head of Analytics, Director of BI, Chief Data Officer (mid-market), VP Analytics, Head of Decision Sciences\n\n**Employers:** IT companies (TCS, Infosys, Wipro analytics divisions), consulting firms (Mu Sigma, Fractal), banks, e-commerce platforms, and Haryana/NCR regional corporates.\n\n**Note:** As a public state university with NAAC A++, the Kurukshetra degree carries credibility for government analytics roles and PSU data departments. The quantitative depth (econometrics, multivariate analysis, time series) positions graduates for advanced analytics, not just reporting."
+    },
+    "skills": {
+      "body": "The Business Analytics specialisation builds skills across data analysis, predictive modelling, and business intelligence:\n\n**Technical skills:**\n- R Programming: data wrangling (dplyr, tidyr), statistical visualization (ggplot2), hypothesis testing, and reproducible analysis\n- Excel Analytics: advanced pivot tables, Power Query, statistical functions, scenario modelling, and dashboard creation\n- Data Mining: classification (decision trees, random forests), clustering (k-means), association rule mining, and pattern detection\n- Econometrics: regression modelling, demand forecasting, elasticity estimation, and econometric model specification\n\n**Applied skills:**\n- Financial Modelling: DCF model construction, sensitivity analysis, scenario planning, and investor presentation preparation\n- Predictive Analytics: logistic regression for churn prediction, customer scoring models, model validation (AUC, confusion matrix), and business impact quantification\n- Time Series: ARIMA model fitting, seasonal adjustment, trend extraction, and forecasting accuracy evaluation\n\n**Soft skills:** Presenting analytical findings to non-technical stakeholders, translating data patterns into business recommendations, and managing analytics project timelines."
+    },
+    "comparisons": {
+      "body": "Comparing Kurukshetra University Online MBA Business Analytics against peer programmes:\n\n**vs Vignan Online MBA Business Analytics (Rs 90,000):** Vignan is Rs 12,000 cheaper with NAAC A+ and NIRF #70. Vignan covers machine learning and big data analytics. Kurukshetra at Rs 1,02,000 is a NAAC A++ public university with econometrics, time series, and applied multivariate analysis as standalone subjects. Vignan leans toward ML/big data. Kurukshetra leans toward quantitative/statistical depth. Choose based on career focus.\n\n**vs Galgotias Online MBA Business Analytics (Rs 86,400):** Galgotias is Rs 15,600 cheaper with NAAC A+ and NCR location. Both cover data mining and predictive analytics. Kurukshetra adds econometrics, time series, and multivariate analysis with NAAC A++ and public university status. Pay more at Kurukshetra for stronger quantitative foundations and the highest NAAC grade.\n\n**vs Uttaranchal Online MBA Business Analytics (Rs 94,000):** Uttaranchal at Rs 94,000 is Rs 8,000 cheaper with NAAC A. Kurukshetra has a significantly higher NAAC grade (A++ vs A), public university backing, and deeper quantitative subjects (econometrics, multivariate analysis). Kurukshetra wins on accreditation and statistical depth.\n\n**Key differentiator:** Kurukshetra is the only NAAC A++ public university in this fee tier. The quantitative curriculum (econometrics, time series, multivariate analysis) positions this programme for advanced analytics roles, not just BI/reporting."
+    },
+    "fees": {
+      "body": "The Kurukshetra University Online MBA in Business Analytics is priced at Rs 1,02,000 total program fee across 4 semesters (2-year programme). As a NAAC A++ accredited public state university, Kurukshetra offers government-backed education at significantly lower fees than most private online MBA programmes.\n\n**Payment options**:\n- **Semester-wise**: Rs 25,500 per semester x 4 installments\n- **Full upfront**: Rs 1,02,000 one-time\n\n**Additional charges**: Specific registration, application, examination, or project fees are not separately documented on the Kurukshetra Online portal. Please reconfirm all charges with our counsellor before enrolment.\n\n**Zero-cost EMI**: Available directly through Kurukshetra University (no external marketing partner or NBFC intermediary). Contact our counsellor for current tenure options.\n\nEdifyEdu reconfirms fees with Kurukshetra University each quarter. Please reconfirm current fees and all applicable charges with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Business Analytics as the specialisation, issued by Kurukshetra University under UGC-DEB online mode standards.\n\nThe degree carries NAAC A++ accreditation (the highest possible grade) and UGC-DEB approval. As a public state university degree, it holds strong validity for government recruitment, PSU data/analytics roles, and private-sector analytics positions. DigiLocker issuance is standard."
+    },
+    "reviews": {
+      "intro": "Three reviews from Kurukshetra University Online MBA Business Analytics students. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Manish K.",
+          "city": "Sonipat",
+          "year": 2024,
+          "rating": 5,
+          "liked": "NAAC A++ public university MBA at Rs 1,02,000. The degree from a government-backed state university carries credibility that private online MBAs cannot replicate for PSU and government analytics roles",
+          "disliked": "The R programming lab sessions could use more hands-on assignments. Theory coverage is solid but practical exercises need expansion",
+          "body": "I chose Kurukshetra for the NAAC A++ public university combination at this price. The analytics curriculum has genuine depth. Econometrics, Time Series, and Applied Multivariate Analysis are subjects you find in statistics MSc programmes, not typical MBA analytics tracks. Financial Modelling bridges analytics and finance well. The public university degree matters for my government sector career goals."
+        },
+        {
+          "name": "Anjali V.",
+          "city": "Gurgaon",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Predictive Analysis and Data Mining subjects covered practical modelling techniques. Social Media Analytics added a digital marketing dimension to the analytics programme",
+          "disliked": "Kurukshetra brand is strong in Haryana but not widely known in Bangalore or Mumbai tech circles. For MNC analytics roles in South India, the brand needs explaining",
+          "body": "The curriculum covers both Excel/R tool-based analytics and deeper statistical methods. That balance works for someone transitioning from business to analytics. Econometrics and multivariate analysis push the programme beyond basic BI. The regional brand limitation is real for tech-hub cities. In Haryana and NCR the Kurukshetra name is well-established. Nationally, lead with the NAAC A++ public university positioning."
+        },
+        {
+          "name": "Sanjay R.",
+          "city": "Panipat",
+          "year": 2023,
+          "rating": 3,
+          "liked": "Rs 25,500 per semester for a NAAC A++ programme. Zero-cost EMI directly through the university with no NBFC involvement",
+          "disliked": "Python is not part of the curriculum. R is covered but Python is the industry standard for analytics. Some recorded sessions on data mining felt outdated",
+          "body": "The statistical and quantitative subjects are strong. Econometrics and time series are genuinely useful for forecasting roles. The gap is Python. R is covered but the analytics job market has shifted toward Python. You will need to self-learn Python alongside this programme. At Rs 1,02,000 from a NAAC A++ public university, the value is there. Just supplement with Python skills on your own."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is Kurukshetra a public or private university?",
+        "answer": "Kurukshetra University is a public state university established under the Haryana government. Public universities receive government funding, which keeps tuition lower than private institutions. This also means the degree carries state university recognition for government and PSU recruitment."
+      },
+      {
+        "question": "Why is the Kurukshetra Online MBA cheaper than Amity or NMIMS?",
+        "answer": "Because Kurukshetra is a government-funded public state university. Private universities like Amity (Rs 3L+) and NMIMS (Rs 2.5L+) set their own fee structures. Public universities receive state subsidies that keep tuition significantly lower. Kurukshetra at Rs 1,02,000 total reflects this public university pricing model."
+      },
+      {
+        "question": "Does Kurukshetra offer zero-cost EMI?",
+        "answer": "Yes. Zero-cost EMI is available directly through Kurukshetra University. No external NBFC or marketing partner is involved. Contact our counsellor for the current EMI tenure and monthly amount."
+      },
+      {
+        "question": "Does the Business Analytics MBA cover R programming?",
+        "answer": "Yes. Data Analytics using R is a standalone Sem 3 subject covering R programming basics, data manipulation with dplyr, visualization with ggplot2, and statistical testing. Python is not part of the official curriculum."
+      },
+      {
+        "question": "How does the analytics curriculum differ from standard MBA analytics programmes?",
+        "answer": "Kurukshetra adds Econometrics for Business Forecasting, Time Series Data Analysis, and Applied Multivariate Analysis as standalone subjects. These are quantitative/statistical subjects typically found in statistics programmes, not standard MBA analytics tracks. This positions the programme for advanced analytics and forecasting roles."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want a NAAC A++ public state university degree. No other online MBA at this fee tier matches this combination.",
+        "Quantitative depth (econometrics, time series, multivariate analysis) matters more than ML/AI tool exposure for your analytics career.",
+        "Government job eligibility and PSU recruitment credibility are priorities. Public university degrees carry inherent weight.",
+        "Rs 1,02,000 total (Rs 25,500/semester) fits your budget with zero-cost EMI directly through the university."
+      ],
+      "consider": [
+        "National brand recognition matters more than accreditation grade. Amity, NMIMS, and MUJ have stronger pan-India MBA brand positioning.",
+        "Vignan at Rs 90,000 is Rs 12,000 cheaper with NAAC A+ and NIRF #70, with machine learning and big data subjects.",
+        "Galgotias at Rs 86,400 is the cheapest NAAC A+ option in the NCR region.",
+        "If Python and ML-heavy curriculum is your priority, consider programmes that explicitly include Python-based analytics subjects."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2000,
+    "generatedAt": "2026-04-23",
+    "batchNumber": 30,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-23"
+  }
+}

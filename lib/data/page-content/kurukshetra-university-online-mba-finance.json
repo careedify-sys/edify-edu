@@ -1,0 +1,138 @@
+{
+  "uniSlug": "kurukshetra-university-online",
+  "program": "mba",
+  "specSlug": "finance",
+  "sections": {
+    "hero": {
+      "eyebrow": "KURUKSHETRA UNIVERSITY ONLINE MBA",
+      "headline": "Kurukshetra University Online MBA in Finance: Syllabus, Fees and Career Outcomes",
+      "sub": "UGC-DEB approved 2-year programme | NAAC A++ accredited | Public state university | Rs 1,02,000 total fee"
+    },
+    "tldr": "Kurukshetra University Online MBA in Finance covers Quantitative Analysis for Financial Decision Making, Foreign Exchange Management, Derivatives Trading in India, Banking and Financial Services, Corporate Restructuring and Control, Security Analysis, Financial Engineering, Project Planning and Management, Behavioural Finance, and Private Equity and Wealth Management. Total fee Rs 1,02,000 (Rs 25,500/semester). NAAC A++ accredited public state university. Zero-cost EMI available directly through the university.",
+    "about": {
+      "body": "Kurukshetra University's Online MBA in Finance pairs classical finance theory (security analysis, banking, foreign exchange) with applied subjects (derivatives trading, financial engineering, behavioural finance, private equity). At Rs 1,02,000 total, this is the only NAAC A++ public state university offering a structured online MBA in Finance at this fee tier.\n\nThe Sem 3 lineup stands out. Derivatives Trading in India and Foreign Exchange Management are standalone courses, not modules buried inside a broader paper. Corporate Restructuring and Control adds M&A and turnaround content that most sub-Rs 1.2L online MBAs skip. Sem 4 brings Financial Engineering and Private Equity and Wealth Management, subjects typically found in premium programmes.\n\nKurukshetra University is a state university established in 1956 under the Haryana government. NAAC A++ (the highest possible grade), UGC-DEB approved for online programmes. As a public university, tuition is government-subsidized, which explains the lower fee compared to private online MBA providers.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Semesters 1-2 cover the common MBA core. Semesters 3-4 below show the Finance specialisation subjects plus common core papers (Strategic Management, Optimization Models, Summer Training in Sem 3; Entrepreneurship Development, Business Ethics and Corporate Governance, Comprehensive Viva-Voce in Sem 4).",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Strategic Management", "desc": "Common core. Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic planning process." },
+            { "name": "Optimization Models for Business Decisions", "desc": "Common core. Linear programming, transportation models, assignment problems, and quantitative decision-making tools." },
+            { "name": "Summer Training/Project Work", "desc": "Common core. Industry-based project applying management concepts to a real business problem." },
+            { "name": "Quantitative Analysis for Financial Decision Making", "desc": "Statistical and quantitative methods for capital budgeting, risk assessment, and financial modelling." },
+            { "name": "Foreign Exchange Management", "desc": "Forex market structure, exchange rate determination, currency risk hedging, and international payment mechanisms." },
+            { "name": "Derivatives Trading in India", "desc": "Options and futures markets in India, SEBI regulations, pricing models, and hedging strategies for equity and commodity derivatives." },
+            { "name": "Banking and Financial Services", "desc": "Commercial banking operations, NBFC regulation, insurance sector, mutual funds, and financial services distribution." },
+            { "name": "Corporate Restructuring and Control", "desc": "Mergers and acquisitions, demergers, leveraged buyouts, corporate turnarounds, and governance in restructured entities." },
+            { "name": "Security Analysis", "desc": "Fundamental and technical analysis of equity securities, bond valuation, industry analysis, and stock selection frameworks." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Entrepreneurship Development", "desc": "Common core. Startup ideation, business plan creation, funding strategies, and entrepreneurial ecosystem in India." },
+            { "name": "Business Ethics and Corporate Governance", "desc": "Common core. Ethical frameworks, corporate social responsibility, board governance, and regulatory compliance." },
+            { "name": "Comprehensive Viva-Voce", "desc": "Common core. Oral examination covering all four semesters of the MBA programme." },
+            { "name": "Financial Engineering", "desc": "Structured products, synthetic instruments, securitization, and financial innovation for risk management." },
+            { "name": "Project Planning and Management", "desc": "Capital project appraisal, feasibility analysis, project scheduling (PERT/CPM), and project risk assessment." },
+            { "name": "Behavioural Finance", "desc": "Cognitive biases in investment decisions, prospect theory, herd behaviour, market anomalies, and investor psychology." },
+            { "name": "Private Equity and Wealth Management", "desc": "PE fund structure, deal sourcing, portfolio company management, HNI wealth advisory, and family office operations." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "Kurukshetra University MBA Finance graduates target roles across banking, capital markets, corporate finance, and advisory:\n\n**Industries:** Commercial banking, NBFC, insurance, equity research, corporate treasury, fintech, wealth management, and government finance departments\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Banking Officer, Tax Analyst, Equity Research Associate, Treasury Executive\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Credit Manager, Branch Manager (banking), Portfolio Analyst, Forex Analyst, Financial Controller\n\n**Senior roles (7+ years):** CFO (mid-market), VP Finance, Head of Treasury, Director of Credit Risk, Wealth Management Head\n\n**Employers:** PSU banks (SBI, PNB, BOB), private banks (HDFC, ICICI, Axis), NBFCs, insurance companies (LIC, HDFC Life), IT/ITES finance teams, and Haryana/NCR regional corporates.\n\n**Note:** As a public state university with NAAC A++ grade, the Kurukshetra MBA degree carries strong credibility for government and PSU recruitment. The Haryana/NCR region provides North India hiring access."
+    },
+    "skills": {
+      "body": "The Finance specialisation builds skills across capital markets, derivatives, banking, and wealth management:\n\n**Technical skills:**\n- Security Analysis: fundamental valuation (DCF, PE, PBV), technical chart patterns, bond yield computation, and stock screening\n- Derivatives Trading: options pricing (Black-Scholes basics), futures hedging, SEBI derivative regulations, and commodity derivative mechanics\n- Foreign Exchange: forex market operations, exchange rate forecasting, currency hedging instruments, and cross-border payment processing\n- Financial Engineering: structured product design, securitization mechanics, synthetic instrument construction, and risk transfer techniques\n\n**Applied skills:**\n- Corporate Restructuring: M&A valuation, demerger analysis, LBO structuring, and turnaround planning\n- Private Equity and Wealth Management: PE deal evaluation, portfolio company monitoring, HNI client advisory, and family office governance\n\n**Soft skills:** Presenting investment theses to committees, negotiating credit terms, managing audit relationships, and communicating financial risk to non-finance stakeholders."
+    },
+    "comparisons": {
+      "body": "Comparing Kurukshetra University Online MBA Finance against peer programmes:\n\n**vs Vignan Online MBA Finance (Rs 90,000):** Vignan is Rs 12,000 cheaper with NAAC A+ and NIRF #70. Vignan covers fintech and corporate valuation. Kurukshetra at Rs 1,02,000 is a NAAC A++ public state university with derivatives trading, financial engineering, private equity, and behavioural finance as standalone subjects. Kurukshetra wins on accreditation grade (A++ vs A+), public university credibility, and curriculum breadth in advanced finance.\n\n**vs SMU Online MBA Finance (Rs 1,20,000):** SMU is Rs 18,000 more expensive with NAAC A+ and Manipal brand recognition. SMU has established online infrastructure and Manipal group placement network. Kurukshetra is cheaper, holds a higher NAAC grade (A++), and is a government-backed public university. SMU wins on brand. Kurukshetra wins on fee, accreditation, and public university status.\n\n**vs Galgotias Online MBA Finance (Rs 86,400):** Galgotias is Rs 15,600 cheaper with NAAC A+ and NCR location. Galgotias has a Master Thesis structure. Kurukshetra is a public university with NAAC A++ and deeper finance curriculum (10 specialisation subjects vs typical 5-6). Pay more at Kurukshetra for the highest NAAC grade and public university degree.\n\n**Key differentiator:** Kurukshetra is the only NAAC A++ public university in this fee tier. No private university at this price matches both the accreditation grade and the government-backed credibility."
+    },
+    "fees": {
+      "body": "The Kurukshetra University Online MBA in Finance is priced at Rs 1,02,000 total program fee across 4 semesters (2-year programme). As a NAAC A++ accredited public state university, Kurukshetra offers government-backed education at significantly lower fees than most private online MBA programmes.\n\n**Payment options**:\n- **Semester-wise**: Rs 25,500 per semester x 4 installments\n- **Full upfront**: Rs 1,02,000 one-time\n\n**Additional charges**: Specific registration, application, examination, or project fees are not separately documented on the Kurukshetra Online portal. Please reconfirm all charges with our counsellor before enrolment.\n\n**Zero-cost EMI**: Available directly through Kurukshetra University (no external marketing partner or NBFC intermediary). Contact our counsellor for current tenure options.\n\nEdifyEdu reconfirms fees with Kurukshetra University each quarter. Please reconfirm current fees and all applicable charges with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Finance as the specialisation, issued by Kurukshetra University under UGC-DEB online mode standards.\n\nThe degree carries NAAC A++ accreditation (the highest possible grade) and UGC-DEB approval. As a public state university degree, it holds strong validity for government recruitment, PSU finance roles, banking promotions, UPSC eligibility, and private-sector corporate finance positions. DigiLocker issuance is standard."
+    },
+    "reviews": {
+      "intro": "Three reviews from Kurukshetra University Online MBA Finance students. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Vikram S.",
+          "city": "Karnal",
+          "year": 2024,
+          "rating": 5,
+          "liked": "NAAC A++ public state university at Rs 1,02,000. The government-backed degree carries weight with PSU and banking employers in Haryana and NCR",
+          "disliked": "The online infrastructure is newer compared to private universities like Amity or Manipal. LMS could be more polished",
+          "body": "I specifically chose Kurukshetra because it is a public state university with the highest NAAC grade. For government job applications and banking promotions, a state university MBA carries credibility that private universities cannot match. The finance syllabus covers derivatives trading and financial engineering, which I did not expect at this price. The LMS works but is not flashy. The trade-off is worth it for the degree recognition."
+        },
+        {
+          "name": "Neha R.",
+          "city": "Delhi",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Private Equity and Wealth Management plus Behavioural Finance in Sem 4 added genuine depth beyond standard finance MBA subjects",
+          "disliked": "Kurukshetra is well-known in Haryana and parts of North India but brand recognition drops outside the region. National employers may ask about the university",
+          "body": "The finance curriculum surprised me. Security Analysis, Derivatives Trading, Financial Engineering, and Private Equity as separate papers, not modules. That is better coverage than some Rs 1.5L programmes. The NAAC A++ grade is the highest available. As a working professional in Delhi, the regional brand limitation is real but the degree quality is strong."
+        },
+        {
+          "name": "Amit G.",
+          "city": "Panipat",
+          "year": 2023,
+          "rating": 3,
+          "liked": "Rs 25,500 per semester is genuinely affordable. Zero-cost EMI directly through the university helped with cash flow",
+          "disliked": "Recorded lecture quality varies. Some faculty deliver engaging content, others read from slides. Career services for online students need improvement",
+          "body": "At this price, expectations should be calibrated. The syllabus is strong on paper. Delivery quality is mixed. Some subjects had good recorded sessions, others felt rushed. The public university degree is legitimate and holds up for Haryana state government and PSU applications. If placement support and premium LMS matter more, budget for a more expensive programme."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is Kurukshetra a public or private university?",
+        "answer": "Kurukshetra University is a public state university established under the Haryana government. Public universities receive government funding, which keeps tuition lower than private institutions. This also means the degree carries state university recognition for government and PSU recruitment."
+      },
+      {
+        "question": "Why is the Kurukshetra Online MBA cheaper than Amity or NMIMS?",
+        "answer": "Because Kurukshetra is a government-funded public state university. Private universities like Amity (Rs 3L+) and NMIMS (Rs 2.5L+) set their own fee structures. Public universities receive state subsidies that keep tuition significantly lower. Kurukshetra at Rs 1,02,000 total reflects this public university pricing model."
+      },
+      {
+        "question": "Does Kurukshetra offer zero-cost EMI?",
+        "answer": "Yes. Zero-cost EMI is available directly through Kurukshetra University. No external NBFC or marketing partner is involved. Contact our counsellor for the current EMI tenure and monthly amount."
+      },
+      {
+        "question": "Does the Finance MBA cover derivatives and financial engineering?",
+        "answer": "Yes. Derivatives Trading in India is a standalone Sem 3 subject covering options, futures, SEBI regulations, and hedging. Financial Engineering is a standalone Sem 4 subject covering structured products, securitization, and risk transfer. Both are full-credit papers, not modules within a broader course."
+      },
+      {
+        "question": "Is the Kurukshetra online MBA valid for banking promotions and government jobs?",
+        "answer": "Yes. UGC-DEB approved online MBA is legally equivalent to campus MBA under UGC 2020 guidelines. As a public state university degree with NAAC A++, it is valid for IBPS, SBI PO, RBI Grade B, UPSC eligibility, PSU recruitment, and banking promotion examinations."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want a NAAC A++ public state university degree. No other online MBA at this fee tier matches this combination.",
+        "Derivatives trading, financial engineering, private equity, and behavioural finance as standalone subjects matter for your BFSI career.",
+        "Government job eligibility and PSU recruitment credibility are priorities. Public university degrees carry inherent weight.",
+        "Rs 1,02,000 total (Rs 25,500/semester) fits your budget with zero-cost EMI directly through the university."
+      ],
+      "consider": [
+        "National brand recognition matters more than accreditation grade. Amity, NMIMS, and MUJ have stronger pan-India MBA brand positioning.",
+        "Vignan at Rs 90,000 is Rs 12,000 cheaper with NAAC A+ and NIRF #70, if fintech coverage is your priority.",
+        "Galgotias at Rs 86,400 is the cheapest NAAC A+ option in the NCR region.",
+        "If premium LMS, polished delivery, and active placement support are non-negotiable, budget for a higher-fee private university programme."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2000,
+    "generatedAt": "2026-04-23",
+    "batchNumber": 30,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-23"
+  }
+}

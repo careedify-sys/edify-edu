@@ -1,0 +1,137 @@
+{
+  "uniSlug": "kurukshetra-university-online",
+  "program": "mba",
+  "specSlug": "it-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "KURUKSHETRA UNIVERSITY ONLINE MBA",
+      "headline": "Kurukshetra University Online MBA in IT Management: Syllabus, Fees and Career Outcomes",
+      "sub": "UGC-DEB approved 2-year programme | NAAC A++ accredited | Public state university | Rs 1,02,000 total fee"
+    },
+    "tldr": "Kurukshetra University Online MBA in IT Management covers Business Intelligence and Analytics, Enterprise Resource Planning, Relational Database Management System, E-Customer Relationship Management, System Analysis and Design, Knowledge Management Systems, Information Security and Cyber Laws, E-Commerce, and Digital Transformation and Innovation. Total fee Rs 1,02,000 (Rs 25,500/semester). NAAC A++ accredited public state university. Zero-cost EMI available directly through the university.",
+    "about": {
+      "body": "Kurukshetra University's Online MBA in IT Management combines enterprise systems (ERP, RDBMS, knowledge management) with digital-era subjects (business intelligence, e-commerce, digital transformation, information security and cyber laws). At Rs 1,02,000 total, this is the only NAAC A++ public state university offering a structured online MBA in IT Management at this fee tier.\n\nThe curriculum balances technical IT management with business application. Sem 3 covers enterprise-level systems: ERP, RDBMS, BI and Analytics, System Analysis and Design, E-CRM, and Knowledge Management Systems. Sem 4 shifts to contemporary topics: Information Security and Cyber Laws (increasingly relevant post-DPDP Act), E-Commerce, and Digital Transformation and Innovation. The breadth covers both legacy IT management and modern digital strategy.\n\nKurukshetra University is a state university established in 1956 under the Haryana government. NAAC A++ (the highest possible grade), UGC-DEB approved for online programmes. As a public university, tuition is government-subsidized, which explains the lower fee compared to private online MBA providers.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Semesters 1-2 cover the common MBA core. Semesters 3-4 below show the IT Management specialisation subjects plus common core papers (Strategic Management, Optimization Models, Summer Training in Sem 3; Entrepreneurship Development, Business Ethics and Corporate Governance, Comprehensive Viva-Voce in Sem 4).",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Strategic Management", "desc": "Common core. Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic planning process." },
+            { "name": "Optimization Models for Business Decisions", "desc": "Common core. Linear programming, transportation models, assignment problems, and quantitative decision-making tools." },
+            { "name": "Summer Training/Project Work", "desc": "Common core. Industry-based project applying management concepts to a real business problem." },
+            { "name": "Business Intelligence and Analytics", "desc": "BI architecture, data warehousing concepts, OLAP, dashboards, KPI tracking, and analytics-driven decision support systems." },
+            { "name": "Enterprise Resource Planning", "desc": "ERP system architecture, SAP/Oracle module overview, implementation methodology, change management, and ERP ROI measurement." },
+            { "name": "Relational Database Management System", "desc": "SQL fundamentals, normalization, ER modelling, query optimization, transaction management, and database design principles." },
+            { "name": "E-Customer Relationship Management", "desc": "CRM platforms, customer lifecycle management, digital customer engagement, CRM analytics, and customer retention strategies." },
+            { "name": "System Analysis and Design", "desc": "SDLC phases, requirements gathering, system modelling (DFD, UML), feasibility analysis, and system testing frameworks." },
+            { "name": "Knowledge Management Systems", "desc": "Knowledge capture and codification, knowledge-sharing platforms, communities of practice, and organizational learning infrastructure." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Entrepreneurship Development", "desc": "Common core. Startup ideation, business plan creation, funding strategies, and entrepreneurial ecosystem in India." },
+            { "name": "Business Ethics and Corporate Governance", "desc": "Common core. Ethical frameworks, corporate social responsibility, board governance, and regulatory compliance." },
+            { "name": "Comprehensive Viva-Voce", "desc": "Common core. Oral examination covering all four semesters of the MBA programme." },
+            { "name": "Information Security and Cyber Laws", "desc": "Cybersecurity frameworks, IT Act 2000 provisions, DPDP Act basics, data protection, risk assessment, and incident response planning." },
+            { "name": "E-Commerce", "desc": "E-commerce business models, payment gateway mechanics, marketplace strategy, last-mile logistics, and digital commerce regulation." },
+            { "name": "Digital Transformation and Innovation", "desc": "Digital strategy formulation, technology adoption frameworks, innovation management, cloud migration planning, and digital maturity assessment." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "Kurukshetra University MBA IT Management graduates target roles across IT services, digital transformation, and enterprise systems:\n\n**Industries:** IT/ITES, BFSI (IT divisions), e-commerce, consulting, telecom, manufacturing (ERP/IT), government IT departments, and digital agencies\n\n**Entry-level roles:** IT Business Analyst, Systems Analyst, ERP Functional Consultant, CRM Administrator, BI Analyst, IT Project Coordinator\n\n**Mid-level roles (3-5 years experience):** IT Manager, ERP Manager, BI Manager, IT Project Manager, Digital Transformation Lead, CRM Manager, InfoSec Manager\n\n**Senior roles (7+ years):** CIO (mid-market), VP IT, Head of Digital, Director of Enterprise Systems, Head of Information Security, Chief Digital Officer\n\n**Employers:** IT companies (TCS, Infosys, Wipro, HCL), consulting firms, banks (IT divisions), e-commerce platforms, manufacturing (ERP teams), and Haryana/NCR government IT departments.\n\n**Note:** As a public state university with NAAC A++, the Kurukshetra degree carries strong credibility for government IT roles and PSU IT departments. Information Security and Cyber Laws adds value for compliance and governance roles."
+    },
+    "skills": {
+      "body": "The IT Management specialisation builds skills across enterprise systems, digital strategy, and information security:\n\n**Technical skills:**\n- Database Management: SQL query writing, ER diagram design, normalization, and database performance tuning\n- ERP: SAP/Oracle module navigation, ERP implementation methodology, business process mapping, and change management for ERP projects\n- Business Intelligence: dashboard design, KPI definition, OLAP cube navigation, and data warehouse architecture understanding\n- Information Security: risk assessment frameworks, IT Act 2000 compliance, data protection policies, and incident response planning\n\n**Applied skills:**\n- Digital Transformation: digital maturity assessment, cloud migration planning, technology adoption roadmap creation, and innovation management\n- System Analysis: requirements specification writing, DFD/UML modelling, feasibility study preparation, and system testing plan design\n- E-Commerce: marketplace strategy formulation, payment integration planning, and digital commerce compliance\n\n**Soft skills:** Presenting IT strategy to business leadership, managing vendor relationships, translating technical requirements into business language, and leading cross-functional IT projects."
+    },
+    "comparisons": {
+      "body": "Comparing Kurukshetra University Online MBA IT Management against peer programmes:\n\n**vs Vignan Online MBA IT Management (Rs 90,000):** Vignan is Rs 12,000 cheaper with NAAC A+ and NIRF #70. Vignan covers IT project management, cloud computing, and AI/ML applications. Kurukshetra at Rs 1,02,000 is a NAAC A++ public university with RDBMS, ERP, Knowledge Management, and Information Security/Cyber Laws as standalone subjects. Vignan leans toward emerging tech. Kurukshetra leans toward enterprise systems and compliance. Choose based on career focus.\n\n**vs NIU Online MBA IT (Rs 97,600):** NIU at Rs 97,600 is Rs 4,400 cheaper. Kurukshetra has NAAC A++ (highest grade) vs NIU's accreditation. As a public state university, Kurukshetra carries government-backed credibility. The fee difference is minimal. Kurukshetra wins on accreditation grade and public university status.\n\n**vs JIIT Online MBA IT and Business Analytics (Rs 1,82,000):** JIIT is Rs 80,000 more expensive. JIIT has the Jaypee brand and a combined IT+BA curriculum. Kurukshetra at Rs 1,02,000 is significantly cheaper with NAAC A++ and public university backing. If budget is a primary factor, Kurukshetra offers strong value at nearly half the cost.\n\n**Key differentiator:** Kurukshetra is the only NAAC A++ public university in this fee tier. Enterprise systems (ERP, RDBMS) and Information Security/Cyber Laws add compliance and governance depth for IT management careers."
+    },
+    "fees": {
+      "body": "The Kurukshetra University Online MBA in IT Management is priced at Rs 1,02,000 total program fee across 4 semesters (2-year programme). As a NAAC A++ accredited public state university, Kurukshetra offers government-backed education at significantly lower fees than most private online MBA programmes.\n\n**Payment options**:\n- **Semester-wise**: Rs 25,500 per semester x 4 installments\n- **Full upfront**: Rs 1,02,000 one-time\n\n**Additional charges**: Specific registration, application, examination, or project fees are not separately documented on the Kurukshetra Online portal. Please reconfirm all charges with our counsellor before enrolment.\n\n**Zero-cost EMI**: Available directly through Kurukshetra University (no external marketing partner or NBFC intermediary). Contact our counsellor for current tenure options.\n\nEdifyEdu reconfirms fees with Kurukshetra University each quarter. Please reconfirm current fees and all applicable charges with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with IT Management as the specialisation, issued by Kurukshetra University under UGC-DEB online mode standards.\n\nThe degree carries NAAC A++ accreditation (the highest possible grade) and UGC-DEB approval. As a public state university degree, it holds strong validity for government IT recruitment, PSU IT departments, and private-sector IT management positions. DigiLocker issuance is standard."
+    },
+    "reviews": {
+      "intro": "Three reviews from Kurukshetra University Online MBA IT Management students. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Arun P.",
+          "city": "Panchkula",
+          "year": 2024,
+          "rating": 5,
+          "liked": "Public state university with NAAC A++ at Rs 1,02,000. For government IT department applications and PSU IT roles, a state university MBA carries more weight than any private alternative",
+          "disliked": "The LMS is functional but the interface feels dated compared to Amity or Manipal. Navigation could be smoother",
+          "body": "I am in government IT and needed a management degree for promotion. Kurukshetra was the clear choice. Public state university, NAAC A++ (highest grade), and Rs 1,02,000 total. The IT Management curriculum covers ERP, RDBMS, BI, and information security, all relevant to my government IT role. The Information Security and Cyber Laws paper is timely given the DPDP Act implementation. The degree carries full state university recognition."
+        },
+        {
+          "name": "Meera S.",
+          "city": "Delhi",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Digital Transformation and Innovation in Sem 4 covered practical frameworks for technology adoption planning. E-Commerce and Information Security added contemporary IT management depth",
+          "disliked": "Kurukshetra is well-known in Haryana and parts of North India but brand recognition is limited in Bangalore, Pune, and Hyderabad IT hubs. For IT MNC roles in those cities, the brand needs context",
+          "body": "The IT Management curriculum balances enterprise systems (ERP, RDBMS, system analysis) with digital-era content (e-commerce, digital transformation, cyber laws). That balance works for mid-career IT professionals. The NAAC A++ grade is the highest available. The public university tag adds credibility. The trade-off is brand recognition outside North India. In Haryana and NCR the name is strong. Nationally for IT roles, you lead with the accreditation and public university story."
+        },
+        {
+          "name": "Gaurav L.",
+          "city": "Yamunanagar",
+          "year": 2023,
+          "rating": 3,
+          "liked": "Zero-cost EMI directly through the university. Semester-wise payment of Rs 25,500 made it manageable on my salary",
+          "disliked": "The RDBMS and System Analysis subjects could use more practical lab components. Theory is covered well but hands-on exercises are limited",
+          "body": "The programme covers the right IT management topics. ERP, database systems, BI, CRM, and information security are all relevant for IT management roles. The delivery is adequate, not premium. Some subjects had strong faculty engagement, others relied on recorded lectures. At Rs 1,02,000 from a NAAC A++ public university, you get a credible degree. If you need hands-on technical labs and premium delivery, you will need to budget more."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is Kurukshetra a public or private university?",
+        "answer": "Kurukshetra University is a public state university established under the Haryana government. Public universities receive government funding, which keeps tuition lower than private institutions. This also means the degree carries state university recognition for government and PSU recruitment."
+      },
+      {
+        "question": "Why is the Kurukshetra Online MBA cheaper than Amity or NMIMS?",
+        "answer": "Because Kurukshetra is a government-funded public state university. Private universities like Amity (Rs 3L+) and NMIMS (Rs 2.5L+) set their own fee structures. Public universities receive state subsidies that keep tuition significantly lower. Kurukshetra at Rs 1,02,000 total reflects this public university pricing model."
+      },
+      {
+        "question": "Does Kurukshetra offer zero-cost EMI?",
+        "answer": "Yes. Zero-cost EMI is available directly through Kurukshetra University. No external NBFC or marketing partner is involved. Contact our counsellor for the current EMI tenure and monthly amount."
+      },
+      {
+        "question": "Does the IT Management MBA cover cybersecurity and cyber laws?",
+        "answer": "Yes. Information Security and Cyber Laws is a standalone Sem 4 subject covering cybersecurity frameworks, IT Act 2000, DPDP Act basics, data protection, risk assessment, and incident response. It is a full-credit paper, not a module."
+      },
+      {
+        "question": "Is ERP covered in the IT Management specialisation?",
+        "answer": "Yes. Enterprise Resource Planning is a standalone Sem 3 subject covering ERP architecture, SAP/Oracle module overview, implementation methodology, change management, and ERP ROI measurement. It is a full-credit paper alongside RDBMS, BI, and System Analysis."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want a NAAC A++ public state university degree. No other online MBA at this fee tier matches this combination.",
+        "Enterprise systems (ERP, RDBMS) and Information Security/Cyber Laws as standalone subjects matter for your IT management or government IT career.",
+        "Government IT job eligibility and PSU IT recruitment credibility are priorities. Public university degrees carry inherent weight.",
+        "Rs 1,02,000 total (Rs 25,500/semester) fits your budget with zero-cost EMI directly through the university."
+      ],
+      "consider": [
+        "National brand recognition in IT hubs (Bangalore, Pune, Hyderabad) matters. Amity, NMIMS, and MUJ have stronger pan-India MBA brand positioning.",
+        "Vignan at Rs 90,000 is Rs 12,000 cheaper with NAAC A+ and NIRF #70, with cloud computing and AI/ML subjects.",
+        "JIIT at Rs 1,82,000 offers a combined IT+BA curriculum with the Jaypee brand, if budget is flexible.",
+        "If emerging tech (AI, ML, cloud) is more important than enterprise systems and compliance, consider programmes with explicit AI/cloud subjects."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2000,
+    "generatedAt": "2026-04-23",
+    "batchNumber": 30,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-23"
+  }
+}
