@@ -14,26 +14,37 @@
     },
     "syllabus": {
       "hasData": true,
-      "sem1Subjects": [
-        { "name": "Business Statistics", "description": "Statistical foundations for managerial decision-making: probability, hypothesis testing, regression analysis." },
-        { "name": "Managerial Accounting", "description": "Cost analysis, budgeting, variance analysis, and financial reporting for management decisions." },
-        { "name": "Managing People and Organisations", "description": "Organisational behaviour, team dynamics, leadership theories, and people management in corporate settings." },
-        { "name": "Marketing Management", "description": "Marketing strategy, segmentation, positioning, consumer behaviour, and brand management fundamentals." }
-      ],
-      "sem2Subjects": [
-        { "name": "Corporate Finance", "description": "Capital budgeting, cost of capital, capital structure decisions, and financial planning for enterprises." },
-        { "name": "Operations Management", "description": "Process design, capacity planning, quality management, and supply chain fundamentals." }
-      ],
       "sem3Subjects": [
-        { "name": "Healthcare Economics", "description": "Economic principles applied to healthcare markets: demand, supply, pricing, insurance models, and government intervention in health systems." },
-        { "name": "Strategic Management of Healthcare Organizations", "description": "Strategy formulation and implementation for hospitals, health networks, and healthcare enterprises." },
-        { "name": "Public Health and Epidemiology", "description": "Population health frameworks, disease surveillance, epidemiological methods, and public health policy." },
-        { "name": "Domain Elective 1", "description": "Choose from 9 healthcare domain electives including AI in Healthcare, Clinical Trials Management, Healthcare Analytics." }
+        {
+          "name": "Healthcare Economics",
+          "description": "Economic principles applied to healthcare markets: demand, supply, pricing, insurance models, and government intervention in health systems."
+        },
+        {
+          "name": "Strategic Management of Healthcare Organizations",
+          "description": "Strategy formulation and implementation for hospitals, health networks, and healthcare enterprises."
+        },
+        {
+          "name": "Public Health and Epidemiology",
+          "description": "Population health frameworks, disease surveillance, epidemiological methods, and public health policy."
+        },
+        {
+          "name": "Domain Elective 1",
+          "description": "Choose from 9 healthcare domain electives including AI in Healthcare, Clinical Trials Management, Healthcare Analytics."
+        }
       ],
       "sem4Subjects": [
-        { "name": "Domain Elective 2", "description": "Second specialisation elective from the Healthcare domain pool." },
-        { "name": "Domain Elective 3 / General Management Elective", "description": "Third elective from either the Healthcare domain pool or the General Management elective pool." },
-        { "name": "Project", "description": "Capstone project applying healthcare management concepts to a real organisational problem, typically from the student's current employer." }
+        {
+          "name": "Domain Elective 2",
+          "description": "Second specialisation elective from the Healthcare domain pool."
+        },
+        {
+          "name": "Domain Elective 3 / General Management Elective",
+          "description": "Third elective from either the Healthcare domain pool or the General Management elective pool."
+        },
+        {
+          "name": "Project",
+          "description": "Capstone project applying healthcare management concepts to a real organisational problem, typically from the student's current employer."
+        }
       ],
       "note": "Domain Elective pool for Hospital and Health Systems Management: AI in Healthcare, Clinical Trials Management, Digital Transformation in Healthcare, Environmental Health, Global Health Systems, Health Insurance and Managed Care, Healthcare Analytics, Healthcare Disaster Management, Medical Laws and Ethics. General Management Elective pool (all specs): Advanced Marketing Management, AI for Competitive Advantage, Business Environment Laws Ethics, Business Research Methods, Data Visualization, Decision Analysis, Entrepreneurship, Entrepreneurial Finance, Enterprise Risk Management, Indian Ethos in Management, International Business and Trade, Leadership and Managing Change, Management Control Systems, Project Management, Strategic HRM, Technology Management. Semesters 1 and 2 cover the shared management core. See the main BITS Pilani WILP MBA page for programme-level details."
     },

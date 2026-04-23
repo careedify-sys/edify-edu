@@ -14,25 +14,33 @@
     },
     "syllabus": {
       "hasData": true,
-      "sem1Subjects": [
-        { "name": "Business Statistics", "description": "Statistical foundations for managerial decision-making: probability, hypothesis testing, regression analysis." },
-        { "name": "Managerial Accounting", "description": "Cost analysis, budgeting, variance analysis, and financial reporting for management decisions." },
-        { "name": "Managing People and Organisations", "description": "Organisational behaviour, team dynamics, leadership theories, and people management in corporate settings." },
-        { "name": "Marketing Management", "description": "Marketing strategy, segmentation, positioning, consumer behaviour, and brand management fundamentals." }
-      ],
-      "sem2Subjects": [
-        { "name": "Corporate Finance", "description": "Capital budgeting, cost of capital, capital structure decisions, and financial planning for enterprises." },
-        { "name": "Operations Management", "description": "Process design, capacity planning, quality management, and supply chain fundamentals." }
-      ],
       "sem3Subjects": [
-        { "name": "Managerial Economics", "description": "Microeconomic theory applied to business: demand analysis, pricing, market structures, and competitive strategy." },
-        { "name": "Strategic Management and Business Policy", "description": "Corporate strategy frameworks, competitive advantage, portfolio analysis, and strategic decision-making." },
-        { "name": "Domain Elective 1", "description": "Choose from 8 Strategy and Consulting domain electives including Digital Business Consulting, M&A Consulting, Strategic Innovation." }
+        {
+          "name": "Managerial Economics",
+          "description": "Microeconomic theory applied to business: demand analysis, pricing, market structures, and competitive strategy."
+        },
+        {
+          "name": "Strategic Management and Business Policy",
+          "description": "Corporate strategy frameworks, competitive advantage, portfolio analysis, and strategic decision-making."
+        },
+        {
+          "name": "Domain Elective 1",
+          "description": "Choose from 8 Strategy and Consulting domain electives including Digital Business Consulting, M&A Consulting, Strategic Innovation."
+        }
       ],
       "sem4Subjects": [
-        { "name": "Domain Elective 2", "description": "Second specialisation elective from the Strategy and Consulting domain pool." },
-        { "name": "Domain Elective 3 / General Management Elective", "description": "Third elective from either the Strategy and Consulting domain pool or the General Management elective pool." },
-        { "name": "Project", "description": "Capstone project applying strategy or consulting frameworks to a real business problem, typically from the student's current employer." }
+        {
+          "name": "Domain Elective 2",
+          "description": "Second specialisation elective from the Strategy and Consulting domain pool."
+        },
+        {
+          "name": "Domain Elective 3 / General Management Elective",
+          "description": "Third elective from either the Strategy and Consulting domain pool or the General Management elective pool."
+        },
+        {
+          "name": "Project",
+          "description": "Capstone project applying strategy or consulting frameworks to a real business problem, typically from the student's current employer."
+        }
       ],
       "note": "Domain Elective pool for Strategy and Consulting: Consulting and People Skills, Consulting for Organisational Change and HR Strategy, Digital Business Consulting, Entrepreneurship in Consulting, Family Business Management, Mergers and Acquisitions Consulting, Strategic Innovation and Business Design, Supply Chain Consulting. General Management Elective pool (all specs): Advanced Marketing Management, AI for Competitive Advantage, Business Environment Laws Ethics, Business Research Methods, Data Visualization, Decision Analysis, Entrepreneurship, Entrepreneurial Finance, Enterprise Risk Management, Indian Ethos in Management, International Business and Trade, Leadership and Managing Change, Management Control Systems, Project Management, Strategic HRM, Technology Management. Semesters 1 and 2 cover the shared management core. See the main BITS Pilani WILP MBA page for programme-level details."
     },
