@@ -4611,7 +4611,7 @@ export const UNIVERSITIES: University[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    highlight: 'NIRF #151 · NAAC A',
+    highlight: 'NAAC A · Don Bosco/Salesian Network',
     tagline: 'Startup Management as dedicated subject in Sem 3 core (very rare) | Computer Applications in Business in Sem 4 | Busines',
     description: 'UGC DEB approved online programs from Assam Don Bosco University – CDOE (dbuniversi. NAAC A accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals, entrepreneurs, graduates seeking flexible leadership trai'],
@@ -4619,7 +4619,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'MA'],
     programDetails: {
       'MBA': {
-        specs: ['Project Management', 'Logistics & Supply Chain Management', 'Operations Management', 'HR Management', 'Finance', 'Marketing Management'],
+        specs: ['Finance Management', 'Human Resource Management', 'Marketing Management', 'Operations Management', 'Project Management', 'Supply Chain Management'],
         fees: '₹60K – ₹200K',
         duration: '2 Yrs (max 4)',
         roles: ['Management Trainee', 'Operations Executive', 'HR Coordinator'],
