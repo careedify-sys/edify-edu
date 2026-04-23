@@ -5771,7 +5771,7 @@ export const UNIVERSITIES: University[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    highlight: 'NIRF #77 · NAAC A',
+    highlight: 'NIRF #92 University · NAAC A',
     tagline: 'NAAC A accredited · UGC DEB approved online programs',
     description: 'UGC DEB approved online programs from Birla Institute of Technology (BIT) Mesra. NAAC A accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
