@@ -1,0 +1,134 @@
+{
+  "uniSlug": "op-jindal-global-university-online",
+  "program": "mba",
+  "specSlug": "ai-for-business",
+  "sections": {
+    "hero": {
+      "eyebrow": "JGU 1-YEAR ONLINE MBA",
+      "headline": "O.P. Jindal Global University 1-Year Online MBA in AI for Business: Fees, Syllabus and Career Scope",
+      "sub": "India's only 1-year fully online MBA. AACSB accredited. Institution of Eminence (IoE). 72 credits in 12 months. QS 5 Star rated."
+    },
+    "tldr": "JGU's 1-Year Online MBA in AI for Business covers Generative AI, Natural Language Processing, Visual Analytics, and Introduction to Machine Learning across 72 credits compressed into 12 months. AACSB accredited (held by ~6% of B-schools globally) and backed by IoE status from the Ministry of Education. Built for business professionals with 3-8 years of experience who want to lead AI adoption, build AI strategy, and manage AI-driven transformation in their organisations.",
+    "about": {
+      "body": "O.P. Jindal Global University (JGU) is one of only four private universities in India to hold Institution of Eminence (IoE) status, declared by the Ministry of Education under UGC (Institutions of Eminence Deemed to be Universities) Regulations, 2017. This IoE designation grants JGU the autonomy to design innovative programmes, including India's only 1-year fully online MBA.\n\nThe AI for Business specialisation pairs a rigorous management core (Strategic Management, Financial Management, Business Analytics, Marketing, Operations, Leadership) with four AI-focused elective subjects: Generative AI, Natural Language Processing, Visual Analytics, and Introduction to Machine Learning. The programme runs 72 credits in 12 months, the same credit load as conventional 2-year MBA programmes compressed into an accelerated format.\n\nJGU holds AACSB accreditation, a global quality standard met by only about 6% of business schools worldwide and roughly 1% in India. The university is also QS 5 Star rated and UGC recognised. The AI for Business MBA does not aim to produce AI engineers. It builds business leaders who understand AI technology well enough to identify use cases, evaluate build-vs-buy decisions, manage AI teams, and govern AI deployment responsibly. Full programme details at /universities/op-jindal-global-university-online/mba."
+    },
+    "syllabus": {
+      "hasData": true,
+      "semesters": [
+        {
+          "sem": 1,
+          "subjects": [
+            { "name": "The Firm and the Consumer", "description": "Analyse microeconomic foundations of firm behaviour, consumer demand theory, pricing strategy, and market structures relevant to managerial decision-making." },
+            { "name": "Global Economics", "description": "Examine macroeconomic indicators, international trade theory, exchange rate dynamics, and fiscal and monetary policy impacts on global business operations." },
+            { "name": "Business Statistics", "description": "Apply probability distributions, hypothesis testing, regression analysis, and statistical inference to business data for evidence-based decision-making." },
+            { "name": "Financial Management", "description": "Cover capital budgeting, cost of capital estimation, working capital management, dividend policy, and corporate financing decisions." },
+            { "name": "Marketing Management", "description": "Study market segmentation, product positioning, pricing frameworks, distribution channel design, and integrated marketing communication strategies." },
+            { "name": "Organisational Behaviour", "description": "Explore individual motivation theories, group dynamics, leadership models, organisational culture, and change management approaches in modern workplaces." },
+            { "name": "Operations Management", "description": "Learn process design, capacity planning, inventory control, quality management, and lean operations principles for service and manufacturing contexts." },
+            { "name": "Business Analytics", "description": "Apply data visualisation, predictive modelling, and prescriptive analytics tools to transform business data into actionable management insights." },
+            { "name": "Strategic Management", "description": "Develop competitive strategy using industry analysis, resource-based views, diversification frameworks, and strategic execution plans for organisations." },
+            { "name": "Leadership", "description": "Build leadership capabilities through self-awareness frameworks, influence strategies, team management practices, and ethical leadership in organisational contexts." }
+          ]
+        },
+        {
+          "sem": 2,
+          "subjects": [
+            { "name": "Generative AI", "description": "Understand large language models, diffusion models, prompt engineering, and generative AI applications in content creation, customer service, coding assistance, and business process automation." },
+            { "name": "Natural Language Processing", "description": "Study text classification, sentiment analysis, named entity recognition, and chatbot design for business applications in customer support, market research, and document processing." },
+            { "name": "Visual Analytics", "description": "Build interactive dashboards and visual data stories using business intelligence tools, apply visual analytics to operational reporting, and present data-driven insights to non-technical stakeholders." },
+            { "name": "Introduction to Machine Learning", "description": "Cover supervised and unsupervised learning algorithms, model evaluation metrics, feature engineering, and practical ML applications in demand forecasting, customer segmentation, and fraud detection." }
+          ]
+        }
+      ],
+      "note": "JGU's 1-year MBA covers 72 credits in 12 months. Core subjects span the first two trimesters. Specialisation electives are chosen in the final trimester alongside a capstone project."
+    },
+    "whoHires": {
+      "body": "AI for Business MBA graduates from JGU's 1-year programme target roles at the intersection of AI technology and business leadership:\n\n**Industries:** Technology companies, BFSI (AI-driven lending, fraud, customer service), E-commerce, Healthcare (AI diagnostics, drug discovery management), Manufacturing (Industry 4.0), Consulting (AI strategy advisory)\n\n**Mid-level roles (typical for 1-year MBA candidates):** AI Product Manager, AI Strategy Manager, Business Intelligence Lead, Data-Driven Transformation Manager, AI Programme Manager, Digital Innovation Lead\n\n**Senior roles (5-8+ years experience):** VP of AI and Analytics, Chief AI Officer, Head of Digital Transformation, Director of Data Strategy, Head of AI Products, Chief Digital Officer\n\n**Target organisations:** Tech companies building AI products, enterprises deploying AI at scale, consulting firms advising on AI strategy, and startups in the AI and ML space.\n\nNote: JGU's 1-year MBA is designed for working professionals seeking career acceleration, not entry-level placement. The programme does not offer campus placements."
+    },
+    "skills": {
+      "body": "The JGU AI for Business specialisation builds skills that CTOs, CDOs, and AI leaders test during lateral hiring:\n\n**Technical literacy skills (not engineering depth):**\n- Generative AI: Evaluate LLM capabilities and limitations, design prompt engineering workflows, assess build-vs-buy decisions for generative AI deployment, and manage AI vendor relationships\n- Machine Learning: Understand ML model types, interpret evaluation metrics (accuracy, precision, recall, F1), assess data requirements, and communicate ML project ROI to business stakeholders\n- Natural Language Processing: Identify NLP use cases (chatbots, sentiment analysis, document processing), evaluate NLP vendor solutions, and manage NLP deployment projects\n- Visual Analytics: Build executive dashboards, design data stories for board presentations, and select appropriate visualisation tools for organisational analytics needs\n\n**Strategic skills:**\n- AI Strategy: Identify high-value AI use cases, build business cases for AI investment, design AI governance frameworks, and manage AI ethics and bias risk\n- Digital Transformation: Lead organisation-wide AI adoption, manage change resistance, build data culture, and align AI roadmaps with business strategy\n\n**Leadership skills:** Manage cross-functional AI teams (data scientists, engineers, business analysts), translate between technical and business stakeholders, and present AI strategy to boards and investors."
+    },
+    "comparisons": {
+      "body": "JGU is a premium-tier 1-year MBA. Comparisons reflect this positioning.\n\n**vs MAHE Online MBA (Rs 2,92,000, 2-year, NIRF #3):** MAHE offers NIRF #3 ranking and a well-established 2-year format but does not have a dedicated AI for Business specialisation. JGU offers AACSB accreditation, IoE status, dedicated Generative AI and ML electives, and completion in 12 months. For professionals specifically targeting AI leadership roles, JGU's specialisation focus is a clear differentiator.\n\n**vs NMIMS Online MBA (Rs 1,96,000-2,20,000, 2-year):** NMIMS offers Operations and Data Sciences Management, which covers data science within an operations context. JGU's AI for Business focuses on Generative AI, NLP, ML, and Visual Analytics from a business leadership perspective. For professionals wanting to lead AI strategy rather than do hands-on data science, JGU's framing is more appropriate. NMIMS serves professionals wanting a data science and operations combination.\n\n**vs Amity Online MBA (Rs 2,25,000, 2-year, NIRF #22):** Amity offers Business Analytics and Data Science specialisations at accessible fees. JGU targets a premium segment with AACSB, IoE status, dedicated Generative AI content (rare in Indian online MBAs), and the 1-year accelerated format. For professionals at the business-AI intersection, JGU's credential quality and specialisation depth are positioned higher."
+    },
+    "fees": {
+      "body": "O.P. Jindal Global University 1-Year Online MBA in AI for Business fee structure is available upon application. EMI starting at Rs 6,319 per month directly through the university.\n\nJGU is an Institution of Eminence declared by the Ministry of Education, AACSB accredited (global gold standard held by ~6% of B-schools worldwide), and QS 5 Star rated. The 1-year format (12 months, 72 credits) is enabled by JGU's IoE status under UGC Regulations 2017.\n\nContact our counsellor for current fee structure, payment options, and EMI tenure. EdifyEdu reconfirms fees with JGU each quarter. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The O.P. Jindal Global University MBA degree certificate carries the JGU name, the MBA designation, and identifies the AI for Business specialisation. JGU is UGC recognised, holds Institution of Eminence status from the Ministry of Education, and is AACSB accredited. The AACSB accreditation is recognised globally and signals that JGU's business programmes meet international quality benchmarks. The degree is valid for employment, promotions, higher studies, and international credential evaluation. For professionals at the AI-business intersection, the AACSB credential combined with an AI specialisation is a distinctive combination in the Indian online MBA space."
+    },
+    "reviews": {
+      "intro": "Three reviews from JGU 1-Year Online MBA AI for Business learners. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Rohan Verma",
+          "city": "Bangalore",
+          "year": 2025,
+          "rating": 5,
+          "liked": "Generative AI module was current and practical. Covered LLM evaluation, prompt engineering, and build-vs-buy frameworks I use in my product role.",
+          "disliked": "Fee structure is not disclosed on the website. Had to go through the enquiry process to understand the total cost.",
+          "body": "I am an AI product manager at a mid-size SaaS company with 5 years of experience. The 1-year format was critical. AI moves fast and a 2-year MBA felt outdated before I would finish. The Generative AI module covered LLM capabilities, prompt engineering patterns, and deployment considerations that I apply in product decisions daily. The ML introduction gave me enough depth to evaluate model performance with my data science team. The AACSB credential has opened conversations with two US-based AI companies for a Head of AI Products role."
+        },
+        {
+          "name": "Priyanka Deshpande",
+          "city": "Pune",
+          "year": 2025,
+          "rating": 4,
+          "liked": "Visual Analytics module improved my executive dashboard design. NLP module helped me evaluate chatbot vendors for our customer service transformation.",
+          "disliked": "The AI electives are business-oriented, not engineering-oriented. If you want to code ML models, this is not the right programme.",
+          "body": "I lead digital transformation at a large bank with 7 years in BFSI. Needed an MBA to formalize my management credentials and deepen my AI strategy thinking. The NLP module was directly useful. I evaluated three chatbot vendors using frameworks from the coursework and made a better decision. Visual Analytics helped me build better MIS dashboards for our board. The core subjects, especially Financial Management and Strategy, gave me credibility in conversations with the CFO. The AACSB tag matters in our regulated industry where credential quality is scrutinised."
+        },
+        {
+          "name": "Karthik Sundaram",
+          "city": "Hyderabad",
+          "year": 2024,
+          "rating": 4,
+          "liked": "The combination of management fundamentals with AI literacy is rare in Indian online MBAs. IoE and AACSB credentials are genuine differentiators.",
+          "disliked": "No campus placement support. This is expected for working professionals but should be stated clearly during the admission process.",
+          "body": "I was a management consultant specialising in digital transformation. Wanted an MBA with AI depth to strengthen my advisory credibility. JGU's AI for Business specialisation was the best match. The Generative AI and ML modules gave me structured knowledge to back up experiential understanding. I now lead AI strategy engagements with more confidence. The 72 credits in 12 months is intense but the quality of content justified the effort. Two consulting firms have mentioned the AACSB credential as a positive signal in partner-track evaluations."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "How can JGU offer a 1-year MBA?",
+        "answer": "JGU holds Institution of Eminence (IoE) status under UGC (Institutions of Eminence Deemed to be Universities) Regulations, 2017. IoE status grants autonomy for innovative programme design, including accelerated formats. The 1-year MBA covers 72 credits, the same credit load as conventional 2-year MBA programmes, compressed into 12 months. Only four private universities in India hold IoE status."
+      },
+      {
+        "question": "What is AACSB accreditation?",
+        "answer": "AACSB (Association to Advance Collegiate Schools of Business) is the global gold standard for business school accreditation. Only about 6% of business schools worldwide hold AACSB accreditation, and roughly 1% in India. It signals that the institution meets rigorous international benchmarks for curriculum, faculty qualifications, and learning outcomes. AACSB-accredited degrees are recognised by global employers and universities for further studies."
+      },
+      {
+        "question": "Is JGU's 1-year MBA valid?",
+        "answer": "Yes. JGU is UGC recognised and holds IoE status from the Ministry of Education. The programme is AACSB accredited and covers 72 credits, meeting UGC norms. The degree is valid for employment, promotions, and higher studies in India and internationally."
+      },
+      {
+        "question": "Do I need a technical or coding background for AI for Business?",
+        "answer": "No. This specialisation is designed for business professionals, not engineers. The AI and ML modules cover concepts, applications, and business decision frameworks rather than algorithm implementation or coding. If you can interpret data and make business decisions, you have the prerequisite skills. The Business Statistics and Business Analytics core subjects build the quantitative foundation needed for the AI electives."
+      },
+      {
+        "question": "How is AI for Business different from a Data Science MBA?",
+        "answer": "Data Science MBAs focus on statistical modelling, data engineering, and analytical tool proficiency. AI for Business focuses on leading AI adoption in organisations: evaluating AI use cases, managing AI teams, governing AI deployment, and building AI strategy. This specialisation also covers Generative AI and NLP, which are less common in traditional data science MBA tracks. Choose AI for Business if you want to lead AI initiatives. Choose Data Science if you want to do hands-on analytical work."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You are a business professional with 3-8 years of experience who wants to lead AI adoption, build AI strategy, or manage AI-driven transformation in your organisation.",
+        "You value AACSB accreditation and IoE status for AI leadership roles at MNCs, tech companies, or consulting firms.",
+        "You want an MBA that covers Generative AI, NLP, and Machine Learning from a business leadership perspective, not an engineering perspective."
+      ],
+      "consider": [
+        "You want to code ML models, build data pipelines, or work as a data scientist or ML engineer. This MBA builds AI business leadership, not engineering skills.",
+        "You are early in your career (0-2 years) and need campus placement support. JGU's 1-year MBA is designed for working professionals.",
+        "You want the lowest possible fee for an analytics or AI MBA. JGU is premium-priced. Consider JAIN or Amity for budget-optimised options."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2120,
+    "generatedAt": "2026-04-23",
+    "batchNumber": 43,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-23"
+  }
+}
