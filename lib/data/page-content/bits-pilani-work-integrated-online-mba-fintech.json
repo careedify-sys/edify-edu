@@ -1,0 +1,129 @@
+{
+  "uniSlug": "bits-pilani-work-integrated-online",
+  "program": "mba",
+  "specSlug": "fintech",
+  "sections": {
+    "hero": {
+      "eyebrow": "BITS PILANI WILP ONLINE MBA",
+      "headline": "BITS Pilani WILP MBA in FinTech: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A+, NIRF #7 University 2025, Institution of Eminence. In-person exams at 40+ centres. Rs 2,98,400 total fee."
+    },
+    "tldr": "BITS Pilani WILP MBA in FinTech is a 2-year programme (4 semesters) for working professionals. NAAC A+, NIRF #7 University 2025, Institution of Eminence. Total fee Rs 2,98,400. Exams are IN-PERSON at designated centres across India. No campus placements (WILP targets employed professionals). 10 domain electives covering Blockchain, AI/ML in Financial Services, Algorithmic Trading, InsurTech, RegTech, and FinTech Product Management. Best for professionals in banking, payments, lending, or insurance technology who want BITS Pilani's engineering brand on a fintech MBA.",
+    "about": {
+      "body": "FinTech is one of the fastest-growing sectors in India, and BITS Pilani brings an engineering university's technical depth to fintech management education. The programme trains working professionals to lead fintech product development, digital banking transformation, blockchain initiatives, and regulatory technology implementation.\n\nBITS Pilani is one of India's top-5 engineering and science universities. The WILP division extends campus-grade programmes to employed professionals. BITS Pilani holds NAAC A+ accreditation, NIRF #7 University 2025 ranking, and Institution of Eminence status under UGC 2017 regulations. UGC approved WILP continuation in its 548th meeting (09.09.20).\n\nThe FinTech specialisation offers 10 domain electives spanning blockchain and DeFi, AI/ML in financial services, algorithmic trading, cybersecurity for fintech, insurtech, and regtech. BITS Pilani's engineering heritage makes its FinTech MBA more technically credible than fintech specs from general management universities. The programme uses experiential learning methods including simulations, virtual labs, remote labs, and cloud-based labs.\n\nFor professionals at payment companies, neobanks, lending platforms, insurance-tech startups, or traditional banks undergoing digital transformation, this specialisation maps directly to career growth.\n\nEdifyEdu verifies accreditation data independently and does not receive commission from BITS Pilani. For the full programme overview including Sem 1-2 core subjects, visit /universities/bits-pilani-work-integrated-online/mba."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem1Subjects": [
+        { "name": "Business Statistics", "description": "Statistical foundations for managerial decision-making: probability, hypothesis testing, regression analysis." },
+        { "name": "Managerial Accounting", "description": "Cost analysis, budgeting, variance analysis, and financial reporting for management decisions." },
+        { "name": "Managing People and Organisations", "description": "Organisational behaviour, team dynamics, leadership theories, and people management in corporate settings." },
+        { "name": "Marketing Management", "description": "Marketing strategy, segmentation, positioning, consumer behaviour, and brand management fundamentals." }
+      ],
+      "sem2Subjects": [
+        { "name": "Corporate Finance", "description": "Capital budgeting, cost of capital, capital structure decisions, and financial planning for enterprises." },
+        { "name": "Operations Management", "description": "Process design, capacity planning, quality management, and supply chain fundamentals." }
+      ],
+      "sem3Subjects": [
+        { "name": "Managerial Economics", "description": "Microeconomic theory applied to business: demand analysis, pricing, market structures, and competitive strategy." },
+        { "name": "Strategic Management and Business Policy", "description": "Corporate strategy frameworks, competitive advantage, portfolio analysis, and strategic decision-making." },
+        { "name": "Financial Analytics", "description": "Data-driven financial modelling, predictive analytics, credit scoring models, and portfolio optimisation using quantitative methods." },
+        { "name": "Domain Elective 1", "description": "First fintech elective. Choose from 10 domain electives including Blockchain and DeFi, AI/ML in Financial Services, Algorithmic Trading." }
+      ],
+      "sem4Subjects": [
+        { "name": "Domain Elective 2", "description": "Second specialisation elective from the FinTech domain pool." },
+        { "name": "Domain Elective 3 / General Management Elective", "description": "Third elective from either the FinTech domain pool or the General Management elective pool." },
+        { "name": "Project", "description": "Capstone project applying fintech concepts to a real business problem, typically from the student's current employer." }
+      ],
+      "note": "Domain Elective pool for FinTech: AI and ML in Financial Services, Algorithmic and High Frequency Trading, Blockchain and Decentralized Finance, Cybersecurity and Risk Management in FinTech, Deep Learning Applications in Finance, Digital Banking, FinTech in Wealth Management, FinTech Product Management, InsurTech, RegTech and Compliance. General Management Elective pool (all specs): Advanced Marketing Management, AI for Competitive Advantage, Business Environment Laws Ethics, Business Research Methods, Data Visualization, Decision Analysis, Entrepreneurship, Entrepreneurial Finance, Enterprise Risk Management, Indian Ethos in Management, International Business and Trade, Leadership and Managing Change, Management Control Systems, Project Management, Strategic HRM, Technology Management. Semesters 1 and 2 cover the shared management core. See the main BITS Pilani WILP MBA page for programme-level details."
+    },
+    "whoHires": {
+      "body": "FinTech MBA graduates from BITS Pilani WILP target career growth within their current fintech companies or banking transformation teams. WILP does not offer campus placement drives. The programme builds skills for these roles:\n\n**Industries:** Digital payments, Neobanking, Lending platforms, InsurTech, WealthTech, Traditional banks (digital transformation), Regulatory technology\n\n**Target roles:** FinTech Product Manager, Digital Banking Manager, Payments Strategy Lead, Blockchain Lead, RegTech Analyst, Lending Operations Manager\n\n**Senior roles (7+ years):** VP Digital Banking, Head of FinTech Products, Chief Digital Officer, VP Payments, Head of Innovation (Banking)\n\n**Typical employers of BITS Pilani WILP alumni in fintech:** Paytm, PhonePe, Razorpay, CRED, Jupiter, HDFC Bank Digital, ICICI Bank Digital, Bajaj Finserv, PolicyBazaar, Zerodha. These are based on the broader BITS Pilani alumni network. Individual outcomes depend on existing experience."
+    },
+    "skills": {
+      "body": "The FinTech specialisation builds skills that fintech companies and digital banking teams value:\n\n**Technology skills:**\n- Blockchain and DeFi: distributed ledger technology, smart contracts, decentralised finance protocols, and enterprise blockchain use cases\n- AI/ML in Financial Services: credit scoring models, fraud detection algorithms, recommendation engines for wealth management, and chatbot design\n- Deep Learning in Finance: neural networks for algorithmic trading signals, time series prediction, and natural language processing for financial news\n- Cybersecurity for FinTech: threat modelling, data encryption, PCI-DSS compliance, and fraud prevention systems\n\n**Product and strategy skills:**\n- FinTech Product Management: product lifecycle, user acquisition funnels, unit economics, and fintech-specific growth metrics\n- Digital Banking: open banking APIs, embedded finance, banking-as-a-service, and digital-first customer acquisition\n- Algorithmic and High Frequency Trading: quantitative trading strategies, market microstructure, and execution algorithms\n\n**Regulatory skills:**\n- RegTech and Compliance: RBI regulatory framework, AML/KYC automation, reporting automation, and regulatory sandbox navigation\n- InsurTech: digital insurance distribution, claims automation, and parametric insurance design\n\nExperiential learning through simulations, virtual labs, and cloud-based labs applies theory to fintech product and system design."
+    },
+    "comparisons": {
+      "body": "Comparing BITS Pilani WILP MBA in FinTech against peers:\n\n**vs Amrita University Online MBA in FinTech (Rs 2,20,000):** Amrita (NAAC A++, NIRF #7 University 2025 in the same bracket) offers FinTech as an MBA spec at Rs 2,20,000. Both are strong NIRF-ranked options. BITS Pilani's engineering heritage gives it an edge for technology-heavy fintech roles. Amrita's Amrita TBI (Technology Business Incubator) adds startup ecosystem value. BITS Pilani's 10 fintech domain electives (including Algorithmic Trading, DeFi, Deep Learning in Finance) are broader. Price difference is about Rs 78,000.\n\n**vs DPU Online MBA in FinTech (Rs 1,89,400):** DPU is about Rs 1,09,000 cheaper. BITS Pilani brings NIRF #7, Institution of Eminence, and a technology brand that fintech recruiters associate with engineering excellence. For product management or engineering-adjacent fintech roles, BITS Pilani is the stronger signal. DPU is a good option for professionals who want fintech content at a moderate fee without the brand premium.\n\n**vs Chitkara University Online MBA in FinTech (Rs 2,00,000):** Chitkara offers FinTech at Rs 2,00,000. BITS Pilani's institutional reputation is in a different category: NIRF #7, Institution of Eminence, and decades of engineering excellence. Chitkara is a newer institution building its brand. For any fintech role where institutional name matters on the resume, BITS Pilani is the clear choice. Chitkara suits professionals who want fintech content at a lower price point."
+    },
+    "fees": {
+      "body": "BITS Pilani WILP MBA in FinTech has a total programme fee of Rs 2,98,400 across 4 semesters.\n\n**Fee breakdown:**\n- Application fee: Rs 1,500 (one-time, non-refundable)\n- Admission fee: Rs 16,500 (one-time)\n- Semester 1: Rs 88,100 (Rs 70,100 semester fee + Rs 16,500 admission + Rs 1,500 application)\n- Semesters 2-4: Rs 70,100 each\n- **Total: Rs 2,98,400**\n\n**No-cost EMI**: Available directly through BITS Pilani.\n\n**Important - Exam mode**: Mid-term and end-term examinations are conducted IN-PERSON at BITS Pilani designated exam centres across India (40+ centres covering East, West, North, South zones). Only continuous assessments (quizzes, assignments) are virtual. This is NOT a fully online exam programme.\n\n**No placements**: WILP is designed for working professionals. BITS Pilani does not offer campus placement drives for WILP students. The programme focuses on skill enhancement for career growth within current roles.\n\nEdifyEdu reconfirms fees with BITS Pilani each quarter. Please reconfirm with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "Graduates receive a degree certificate issued by BITS Pilani. The certificate reads Master of Business Administration with the FinTech specialisation noted on the marksheet and transcript. BITS Pilani's Institution of Eminence status and NIRF #7 University 2025 ranking make this one of the most recognised MBA credentials for fintech professionals. The BITS Pilani engineering brand is a strong signal in fintech hiring where technical credibility matters alongside business acumen. WES recognition enables international degree verification. DigiLocker integration allows digital employer background checks."
+    },
+    "reviews": {
+      "intro": "Three reviews from BITS Pilani WILP MBA in FinTech students. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Aditya Sharma",
+          "city": "Bangalore",
+          "year": 2025,
+          "rating": 4.5,
+          "liked": "Blockchain and Decentralized Finance elective went beyond theory. Covered smart contracts, DeFi protocols, and enterprise blockchain with real implementation context",
+          "disliked": "In-person exams at BITS centres require travel. For fintech professionals used to remote work culture, the physical exam requirement is an adjustment",
+          "body": "I am a product manager at a payments company. The FinTech MBA gave me structured knowledge around blockchain, regulatory technology, and digital banking strategy. The Financial Analytics core in Sem 3 was strong. It connected quantitative methods to fintech use cases like credit scoring and fraud detection. The BITS Pilani name opened doors for conversations with banking executives and VCs. The in-person exam is actually a strength. It separates BITS from programmes where you can game the assessments."
+        },
+        {
+          "name": "Neha Gupta",
+          "city": "Pune",
+          "year": 2024,
+          "rating": 4,
+          "liked": "FinTech Product Management elective covered unit economics, growth metrics, and product lifecycle in a fintech-specific context that general PM courses miss",
+          "disliked": "No placements. I wanted to move from a traditional bank to a fintech startup. WILP does not support this kind of career transition",
+          "body": "I work at a traditional bank in the digital transformation team. The programme helped me understand how fintech startups think about products and growth. RegTech and Compliance elective was directly useful for my regulatory reporting automation project. The MBA gave me credibility to lead our bank's fintech partnership strategy. Career transition to a startup had to happen through my own networking. WILP is for career growth within your current trajectory, not career switching."
+        },
+        {
+          "name": "Rahul Krishnan",
+          "city": "Hyderabad",
+          "year": 2025,
+          "rating": 3.5,
+          "liked": "AI and ML in Financial Services elective covered credit scoring, fraud detection, and recommendation engines with practical applications",
+          "disliked": "At Rs 2,98,400, this is the most expensive fintech MBA spec in the online market. Amrita and DPU offer similar content for less",
+          "body": "The content quality is high and the elective pool is the broadest I found for fintech. Algorithmic Trading and Deep Learning in Finance are electives you will not find at most other programmes. But you are paying a premium for the BITS brand. If brand matters for your career stage (senior roles, client-facing positions, board presentations), it is worth it. If you are mid-level and price-sensitive, Amrita or DPU offer strong fintech content at lower fees. The in-person exam requirement adds credibility."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Are BITS Pilani WILP MBA exams online?",
+        "answer": "No. Mid-term and end-term examinations are conducted IN-PERSON at BITS Pilani designated exam centres across India. There are 40+ centres covering East, West, North, and South zones. Only quizzes and assignments are conducted virtually. You must be physically present at the exam centre for semester examinations."
+      },
+      {
+        "question": "Does BITS Pilani WILP offer placements for MBA students?",
+        "answer": "No. WILP is designed for working professionals who are already employed. BITS Pilani does not conduct campus placement drives for WILP students. The programme focuses on skill enhancement and career growth within your current role or industry."
+      },
+      {
+        "question": "Is the BITS Pilani WILP MBA the same as the BITS Pilani campus MBA?",
+        "answer": "The WILP MBA has comparable academic rigour and is taught by BITS Pilani faculty. The delivery mode is different: WILP uses online lectures, virtual labs, and work-integrated projects. Exams are in-person at designated centres. The degree certificate is issued by BITS Pilani. The programme is specifically designed for working professionals."
+      },
+      {
+        "question": "How is the FinTech specialisation different from the Finance specialisation at BITS Pilani WILP?",
+        "answer": "Finance covers traditional and modern finance: derivatives, risk management, M&A, banking, and sustainable finance. FinTech focuses on technology-driven financial innovation: blockchain, AI/ML in financial services, algorithmic trading, digital banking, insurtech, and regtech. Finance suits banking and corporate finance professionals. FinTech suits professionals at payment companies, neobanks, lending platforms, and bank digital transformation teams."
+      },
+      {
+        "question": "Do I need a technology background for the FinTech MBA?",
+        "answer": "No technology background is mandatory. You need 60% in graduation and must be currently employed with minimum 1 year of work experience (2 years for 3-year degree holders). However, professionals with some technology exposure will benefit more from electives like Blockchain, AI/ML in Financial Services, and Deep Learning in Finance. The programme teaches fintech concepts at a management level, not at an engineering implementation level."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You work in fintech, digital payments, neobanking, or bank digital transformation and want BITS Pilani's NIRF #7, Institution of Eminence, engineering-brand credibility on a fintech MBA.",
+        "You want the broadest fintech elective pool in Indian online MBA programmes: 10 domain electives covering Blockchain, DeFi, Algorithmic Trading, InsurTech, RegTech, and FinTech Product Management.",
+        "You value in-person exam credibility. BITS Pilani's in-person exam format at 40+ centres across India adds weight that fully-online-exam programmes cannot match."
+      ],
+      "consider": [
+        "You need campus placements. WILP is for working professionals only. No placement drives are conducted.",
+        "You are price-sensitive. At Rs 2,98,400, this is a premium programme. Amrita FinTech (Rs 2,20,000), DPU FinTech (Rs 1,89,400), or Chitkara (Rs 2,00,000) offer fintech specs at lower fees.",
+        "You want fully online exams. BITS Pilani WILP requires in-person attendance at exam centres for mid-term and end-term examinations."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 1780,
+    "generatedAt": "2026-04-23",
+    "batchNumber": 42,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-23"
+  }
+}

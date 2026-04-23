@@ -1242,6 +1242,60 @@
     "spec_name": "Marketing"
   },
   {
+    "university_slug": "bits-pilani-work-integrated-online",
+    "program": "mba",
+    "spec_slug": "ai-for-business",
+    "spec_name": "AI for Business"
+  },
+  {
+    "university_slug": "bits-pilani-work-integrated-online",
+    "program": "mba",
+    "spec_slug": "hospital-health-systems-management",
+    "spec_name": "Hospital & Health Systems Management"
+  },
+  {
+    "university_slug": "bits-pilani-work-integrated-online",
+    "program": "mba",
+    "spec_slug": "strategy-consulting",
+    "spec_name": "Strategy & Consulting"
+  },
+  {
+    "university_slug": "bits-pilani-work-integrated-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "bits-pilani-work-integrated-online",
+    "program": "mba",
+    "spec_slug": "fintech",
+    "spec_name": "FinTech"
+  },
+  {
+    "university_slug": "bits-pilani-work-integrated-online",
+    "program": "mba",
+    "spec_slug": "digital-transformation",
+    "spec_name": "Digital Transformation"
+  },
+  {
+    "university_slug": "bits-pilani-work-integrated-online",
+    "program": "mba",
+    "spec_slug": "manufacturing-management",
+    "spec_name": "Manufacturing Management"
+  },
+  {
+    "university_slug": "bits-pilani-work-integrated-online",
+    "program": "mba",
+    "spec_slug": "quality-management",
+    "spec_name": "Quality Management"
+  },
+  {
+    "university_slug": "bits-pilani-work-integrated-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
     "university_slug": "bs-abdur-rahman-university-online",
     "program": "mba",
     "spec_slug": "finance",
@@ -7288,5 +7342,47 @@
     "program": "mba",
     "spec_slug": "product-management",
     "spec_name": "Product Management"
+  },
+  {
+    "university_slug": "op-jindal-global-university-online",
+    "program": "mba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "op-jindal-global-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "op-jindal-global-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "op-jindal-global-university-online",
+    "program": "mba",
+    "spec_slug": "strategy-and-leadership",
+    "spec_name": "Strategy & Leadership"
+  },
+  {
+    "university_slug": "op-jindal-global-university-online",
+    "program": "mba",
+    "spec_slug": "supply-chain-operations-management",
+    "spec_name": "Supply Chain & Operations Management"
+  },
+  {
+    "university_slug": "op-jindal-global-university-online",
+    "program": "mba",
+    "spec_slug": "ai-for-business",
+    "spec_name": "AI for Business"
+  },
+  {
+    "university_slug": "op-jindal-global-university-online",
+    "program": "mba",
+    "spec_slug": "digital-finance",
+    "spec_name": "Digital Finance"
   }
 ]
