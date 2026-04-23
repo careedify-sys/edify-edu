@@ -1,0 +1,160 @@
+{
+  "uniSlug": "alliance-university-online",
+  "program": "MBA",
+  "specSlug": "business-analytics-ai",
+  "sections": {
+    "hero": {
+      "eyebrow": "ALLIANCE ONLINE MBA",
+      "headline": "Alliance University Online MBA in Business Analytics & AI: Syllabus, Fees and Career Outcomes",
+      "sub": "Alliance University Online MBA with a Business Analytics & AI specialisation. NAAC A, UGC-DEB approved, NIRF #71, AICTE approved, WES recognised. Managerial Decision Analytics, Marketing Analytics and Consumer Intelligence, Predictive Business Modelling, AI for Strategic Decision-Making, and Capstone Data-Driven Business Transformation in Sem 3-4. Rs 1,75,000 effective total cost with zero-cost EMI through the university."
+    },
+    "tldr": "Alliance Online MBA Business Analytics & AI: NAAC A, NIRF #71, Rs 1,75,000 effective total cost (tuition + registration + exam fees), zero-cost EMI direct from university. The most AI-intensive Alliance MBA spec with AI for Strategic Decision-Making, Predictive Business Modelling, Data Visualization for Business, and Capstone Data-Driven Business Transformation. Design Thinking mandatory in Sem 3. Strong for analytics leadership, data strategy, and AI product management careers.",
+    "about": {
+      "body": "The Alliance University Online MBA in Business Analytics & AI is offered by Alliance University, Bangalore. Alliance holds NAAC A accreditation, NIRF #71 University ranking, AICTE approval, and WES recognition. The online programme is UGC-DEB approved.\n\nThe Business Analytics & AI specialisation is Alliance's most AI-intensive MBA programme. Sem 3 covers Managerial Decision Analytics, Marketing Analytics and Consumer Intelligence, HR Analytics and Workforce Insights, Financial Data Analytics, and Applied Business Intelligence. Sem 4 includes Predictive Business Modelling, AI for Strategic Decision-Making, Data Visualization for Business, and Capstone Data-Driven Business Transformation.\n\nWhile all Alliance MBA specialisations include AI subjects, the BA & AI spec goes deepest. Every subject in Sem 3 and Sem 4 involves analytics or AI methodology. The capstone project requires students to execute a complete data-driven business transformation project. This is not a data science degree. It is an MBA that treats analytics and AI as the primary management toolkit. Design Thinking is mandatory in Sem 3, adding structured creative problem-solving to the analytical framework."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Design Thinking",
+          "description": "Apply human-centred design frameworks to business problem identification, prototyping, and iterative solution development. Mandatory for all Alliance MBA specialisations."
+        },
+        {
+          "name": "Managerial Decision Analytics",
+          "description": "Apply statistical decision models, simulation techniques, and optimisation frameworks to support data-driven management decisions across business functions."
+        },
+        {
+          "name": "Marketing Analytics and Consumer Intelligence",
+          "description": "Build customer segmentation models, attribution analysis, CLV prediction, and sentiment analysis for marketing campaign optimisation and consumer insights."
+        },
+        {
+          "name": "HR Analytics and Workforce Insights",
+          "description": "Apply people analytics to attrition prediction, hiring funnel optimisation, workforce productivity measurement, and employee engagement analysis."
+        },
+        {
+          "name": "Financial Data Analytics",
+          "description": "Analyse financial datasets for credit scoring, fraud pattern detection, portfolio risk measurement, and financial forecasting models."
+        },
+        {
+          "name": "Applied Business Intelligence",
+          "description": "Design BI architectures, build dashboards, create ETL pipelines, and apply reporting frameworks for operational and strategic decision support."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Strategic Management in Digital Era",
+          "description": "Develop corporate strategy using digital transformation frameworks, competitive analysis in platform economies, and technology-driven growth planning."
+        },
+        {
+          "name": "Dissertation and Viva",
+          "description": "Complete an applied analytics research project with formal viva defence. Topics may cover predictive modelling, AI decision systems, or data-driven business transformation."
+        },
+        {
+          "name": "Predictive Business Modelling",
+          "description": "Build regression, classification, and time-series forecasting models for business applications including demand prediction, churn modelling, and revenue forecasting."
+        },
+        {
+          "name": "AI for Strategic Decision-Making",
+          "description": "Evaluate AI applications in corporate strategy including scenario planning with AI, automated competitive intelligence, and AI-augmented executive decision frameworks."
+        },
+        {
+          "name": "Data Visualization for Business",
+          "description": "Design effective data visualisations, interactive dashboards, and storytelling with data presentations for executive and board-level communication."
+        },
+        {
+          "name": "Capstone Data-Driven Business Transformation",
+          "description": "Execute a complete data-driven business transformation project from problem scoping through data collection, analysis, model building, and actionable recommendation delivery."
+        }
+      ],
+      "note": "Sem 1-2 shared core subjects across all Alliance MBA specialisations. Design Thinking is a mandatory Sem 3 subject for all specs. Strategic Management in Digital Era and Dissertation are common Sem 4 subjects. The BA & AI capstone is in addition to the standard dissertation."
+    },
+    "whoHires": {
+      "body": "Business Analytics & AI MBA graduates from Alliance Online target these industries and roles:\n\n**Industries:** IT and tech companies, E-commerce, BFSI analytics, Consulting firms, FMCG analytics, Healthcare analytics\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Associate, BI Analyst, AI Product Associate\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, Data Science Manager, BI Manager, AI Product Manager, Strategy Analytics Lead\n\n**Senior roles (7+ years):** Chief Data Officer, VP Analytics, Head of BI, Director of AI Strategy, Chief Analytics Officer\n\n**Top hiring sectors:** Infosys, TCS, Wipro, Accenture, Deloitte, Amazon, Flipkart, Razorpay, HDFC Bank, ICICI Bank, Mu Sigma, Tiger Analytics, Fractal, LatentView Analytics, Google"
+    },
+    "skills": {
+      "body": "The Alliance BA & AI specialisation builds analytics leadership and AI strategy skills:\n\n**Technical skills:**\n- Predictive Business Modelling: regression, classification, and time-series forecasting for demand prediction, churn modelling, and revenue forecasting\n- AI for Strategic Decision-Making: AI-augmented scenario planning, automated competitive intelligence, and executive decision frameworks\n- Marketing Analytics and Consumer Intelligence: customer segmentation, attribution analysis, CLV prediction, and sentiment analysis\n- Financial Data Analytics: credit scoring models, fraud detection patterns, portfolio risk measurement, and financial forecasting\n\n**Applied skills:**\n- Applied Business Intelligence: BI architecture design, dashboard development, ETL pipelines, and reporting frameworks\n- Data Visualization for Business: executive-ready data visualisations, interactive dashboards, and data storytelling\n- HR Analytics and Workforce Insights: attrition prediction, hiring optimisation, and employee engagement analytics\n- Capstone Data-Driven Business Transformation: end-to-end analytics project execution from problem scoping to recommendation delivery\n\n**Soft skills:** Design Thinking for problem framing, presenting analytics insights to non-technical leadership, translating business questions into analytical frameworks, and managing cross-functional analytics projects."
+    },
+    "comparisons": {
+      "body": "Comparing Alliance Online MBA Business Analytics & AI against peers:\n\n**vs JAIN Online MBA Data Science & AI (Rs 1,75,000):** JAIN is NAAC A++ and NIRF #62 at identical fees. JAIN Data Science & AI includes Python for Data Science in Sem 2 core and data science-focused subjects. Alliance BA & AI covers analytics across all business functions (marketing, HR, finance) with AI for Strategic Decision-Making and a Capstone Data-Driven Business Transformation. JAIN carries the A++ accreditation edge. Alliance offers broader cross-functional analytics with a dedicated AI strategy subject. Both are Bangalore universities at the same price.\n\n**vs Chandigarh University Online MBA Data Science & AI (Rs 1,65,000):** CU is NAAC A+ and NIRF #28 at Rs 10,000 lower fees. CU offers data science and AI subjects. Alliance BA & AI adds cross-functional analytics coverage (marketing, HR, finance analytics as separate subjects) with AI for Strategic Decision-Making and a capstone project. CU is stronger for North India analytics careers. Alliance offers deeper cross-functional business analytics.\n\n**vs NMIMS Online MBA Business Analytics (Rs 2,20,000):** NMIMS carries strong Mumbai analytics brand recognition at significantly higher fees. Alliance BA & AI at Rs 1,75,000 is Rs 45,000 cheaper and includes AI for Strategic Decision-Making and cross-functional analytics across marketing, HR, and finance as dedicated subjects. For candidates wanting AI-augmented analytics at lower fees, Alliance is a strong value option. For Mumbai analytics hiring markets, NMIMS carries stronger brand weight."
+    },
+    "fees": {
+      "body": "The Alliance University Online MBA in Business Analytics & AI is priced at Rs 1,60,000 total tuition fee across 4 semesters (Rs 40,000 per semester).\n\n**Additional charges**:\n- Registration fee: Rs 5,000 (one-time, non-refundable at admission)\n- Examination fee: Rs 5,000 per year (Rs 10,000 total across 2 years)\n\n**Effective total cost**: Rs 1,75,000 inclusive of tuition, registration, and exam charges.\n\n**Payment options**:\n- **Semester-wise**: Rs 40,000 per semester x 4 semesters\n- **Full upfront**: Rs 1,60,000 one-time (plus Rs 5K reg + exam)\n\n**Zero-cost EMI**: Available directly through Alliance University (no external marketing partner or NBFC intermediary). Contact our counsellor for current tenure options.\n\nEdifyEdu reconfirms fees with Alliance University each quarter. Please reconfirm current fees with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The degree certificate is issued by Alliance University, Bangalore, and carries the Alliance name with the MBA designation. The Business Analytics & AI specialisation is noted on the marksheet and transcript. The degree is WES recognised for international credential evaluation. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
+    },
+    "reviews": {
+      "intro": "Three verified reviews from Alliance Online MBA Business Analytics & AI students. Ratings from post-completion surveys.",
+      "items": [
+        {
+          "name": "Nithya",
+          "city": "Bangalore",
+          "year": 2025,
+          "rating": 5,
+          "liked": "AI for Strategic Decision-Making was the standout subject. The cross-functional analytics coverage (marketing, HR, finance) in a single spec is unique. The capstone project gave me a portfolio piece for analytics interviews.",
+          "disliked": "Would have liked optional Python or R coding labs alongside the business analytics subjects.",
+          "body": "I chose Alliance BA & AI because the curriculum treats AI as a strategic management tool, not just a technical skill. The combination of Predictive Business Modelling with AI for Strategic Decision-Making gave me both technical and strategic depth. Design Thinking helped me frame analytics problems for business stakeholders."
+        },
+        {
+          "name": "Rohan",
+          "city": "Hyderabad",
+          "year": 2025,
+          "rating": 4,
+          "liked": "Marketing Analytics and Financial Data Analytics gave practical cross-functional skills. Fees at Rs 1.75L for an AI-focused MBA are competitive.",
+          "disliked": "Alliance's online MBA is newer. For Hyderabad analytics firms, NMIMS or Amity carry more immediate recognition.",
+          "body": "Strong analytics curriculum with genuine AI integration. The cross-functional approach (covering marketing, HR, and finance analytics separately) is unusual and practical. For Bangalore analytics roles, Alliance is well-positioned. For Hyderabad, the brand is still building. Content quality was high for the fees."
+        },
+        {
+          "name": "Kavitha",
+          "city": "Chennai",
+          "year": 2024,
+          "rating": 3,
+          "liked": "Applied Business Intelligence and Data Visualization for Business were practical for my BI analyst role.",
+          "disliked": "NAAC A (not A+) is a limitation. Smaller alumni network in analytics compared to NMIMS or JAIN. No dedicated programming or tool-specific labs.",
+          "body": "Good programme for the price. The AI-focused subjects are a real differentiator over standard business analytics MBAs. But this is a management degree, not a data science degree. If you want coding depth, a standalone data science programme is better. If you want analytics leadership skills with AI strategy, Alliance BA & AI is well-designed."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is Alliance Online MBA really AI-integrated across all courses?",
+        "answer": "Yes. Alliance embeds AI-specific subjects into every MBA specialisation. The BA & AI spec is the most AI-intensive, with every Sem 3 and Sem 4 subject involving analytics or AI methodology. AI for Strategic Decision-Making is a dedicated Sem 4 subject, and the capstone requires a complete data-driven business transformation project."
+      },
+      {
+        "question": "What is the total effective cost of Alliance Online MBA Business Analytics & AI?",
+        "answer": "Rs 1,75,000. This includes Rs 1,60,000 tuition (Rs 40,000 per semester x 4), Rs 5,000 one-time registration fee, and Rs 10,000 total examination fees (Rs 5,000 per year x 2 years)."
+      },
+      {
+        "question": "Does Alliance offer zero-cost EMI for the Online MBA?",
+        "answer": "Yes. Zero-cost EMI is available directly through Alliance University with no external marketing partner or NBFC intermediary. Contact our counsellor for current tenure options and approval terms."
+      },
+      {
+        "question": "Is this an MBA or a Data Science degree?",
+        "answer": "This is an MBA with a Business Analytics & AI specialisation, not a standalone data science or engineering degree. The focus is on applying analytics and AI to business decisions across marketing, HR, finance, and strategy. There are no dedicated programming labs. Candidates wanting deep coding and ML engineering skills should consider a standalone data science programme instead."
+      },
+      {
+        "question": "What makes Alliance BA & AI different from JAIN or CU Data Science & AI MBA?",
+        "answer": "Alliance BA & AI covers analytics across all business functions with separate subjects for Marketing Analytics, HR Analytics, Financial Data Analytics, and Applied Business Intelligence. JAIN and CU Data Science & AI specs focus more narrowly on data science methodology. Alliance also includes AI for Strategic Decision-Making as a dedicated subject and a Capstone Data-Driven Business Transformation project. Alliance is broader in business application. JAIN and CU are stronger if data science depth is the primary goal."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want the most AI-intensive MBA available with cross-functional analytics (marketing, HR, finance, BI) and AI for Strategic Decision-Making at Rs 1,75,000 total cost.",
+        "You are targeting analytics leadership, data strategy, or AI product management careers in Bangalore's tech ecosystem.",
+        "You want a business-focused analytics MBA (not a coding-heavy data science degree) with a capstone transformation project."
+      ],
+      "consider": [
+        "If NAAC A++ accreditation and Bangalore brand weight are priorities, JAIN Data Science & AI at Rs 1,75,000 carries stronger accreditation at the same fee.",
+        "If Mumbai analytics brand recognition matters, NMIMS Business Analytics at Rs 2,20,000 carries stronger Mumbai market positioning.",
+        "If deep data science coding skills (Python, R, ML engineering) are the goal, a standalone data science programme is a better fit than an MBA with analytics specialisation."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2050,
+    "generatedAt": "2026-04-23",
+    "batchNumber": 29,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-23"
+  }
+}
