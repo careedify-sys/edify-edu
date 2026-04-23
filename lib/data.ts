@@ -1238,7 +1238,7 @@ export const UNIVERSITIES: University[] = [
     emiFrom: 0,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    highlight: 'NAAC A+ · NIRF 101-125 Management band',
+    highlight: 'NIRF Band 101-125 Management 2025 · NAAC A+',
     tagline: 'Financial Technologies as dedicated Sem 3 subject + Financial Modelling & Valuation in Sem 4; Digital Marketing in Sem 2',
     description: 'UGC DEB approved online programs from Galgotias University – Online (galgotiasonlin. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Finance professionals targeting management', 'IB & FinTech aspirants'],

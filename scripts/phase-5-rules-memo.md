@@ -273,3 +273,26 @@ Content must say:
 
 **Zero em dash rule:** Never use U+2014 (—) in any JSON content on Windows. The Write tool double-encodes it to mojibake. Use ` - ` (space-hyphen-space) or rewrite the sentence.
 
+---
+
+## UNIVERSAL EMI LANGUAGE RULE (Phase 7.3+) — expanded banned list per audit 2919b08
+
+Marketing/enrolment partners (never name):
+- Jaro Education
+- upGrad
+- Online Manipal
+
+NBFC/lending partners (never name):
+- Avanse
+- GrayQuest
+- Fibe
+- Propelld
+- Eduvanz
+
+Always use generic phrasing: "the university's marketing partner" OR "NBFC lending partners". Never name specific partners in editorial content.
+
+Pre-commit validation grep (should return zero for all):
+```
+rg 'Jaro|upGrad|Online Manipal|Avanse|GrayQuest|Fibe|Propelld|Eduvanz' lib/data/page-content/
+```
+
