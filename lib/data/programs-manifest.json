@@ -427,6 +427,18 @@
   },
   {
     "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "general-management",
+    "spec_name": "General Management"
+  },
+  {
+    "university_slug": "amity-university-online",
+    "program": "mba",
+    "spec_slug": "international-business-management",
+    "spec_name": "International Business Management"
+  },
+  {
+    "university_slug": "amity-university-online",
     "program": "mca",
     "spec_slug": "",
     "spec_name": ""
@@ -622,6 +634,18 @@
     "program": "mba",
     "spec_slug": "operations-management",
     "spec_name": ""
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mba",
+    "spec_slug": "general-management",
+    "spec_name": "General Management"
+  },
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham-online",
+    "program": "mba",
+    "spec_slug": "international-finance-accounting",
+    "spec_name": "International Finance and Accounting"
   },
   {
     "university_slug": "amrita-vishwa-vidyapeetham-online",
@@ -4986,6 +5010,18 @@
     "spec_name": ""
   },
   {
+    "university_slug": "nmims-online",
+    "program": "mba",
+    "spec_slug": "financial-management",
+    "spec_name": "Financial Management"
+  },
+  {
+    "university_slug": "nmims-online",
+    "program": "mba",
+    "spec_slug": "information-technology-management",
+    "spec_name": "Information Technology Management"
+  },
+  {
     "university_slug": "noida-international-university-online",
     "program": "bba",
     "spec_slug": "",
@@ -6037,6 +6073,12 @@
   },
   {
     "university_slug": "symbiosis-university-online",
+    "program": "mba",
+    "spec_slug": "human-resource",
+    "spec_name": "Human Resource"
+  },
+  {
+    "university_slug": "symbiosis-university-online",
     "program": "msc",
     "spec_slug": "computer-applications",
     "spec_name": ""
@@ -6304,6 +6346,12 @@
     "program": "mba",
     "spec_slug": "power-management",
     "spec_name": ""
+  },
+  {
+    "university_slug": "upes-online",
+    "program": "mba",
+    "spec_slug": "financial-management",
+    "spec_name": "Finance Management"
   },
   {
     "university_slug": "upes-online",
@@ -7008,6 +7056,36 @@
     "spec_name": ""
   },
   {
+    "university_slug": "ignou-online",
+    "program": "mba",
+    "spec_slug": "financial-management",
+    "spec_name": "Financial Management"
+  },
+  {
+    "university_slug": "ignou-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "ignou-online",
+    "program": "mba",
+    "spec_slug": "marketing-management",
+    "spec_name": "Marketing Management"
+  },
+  {
+    "university_slug": "ignou-online",
+    "program": "mba",
+    "spec_slug": "operations-management",
+    "spec_name": "Operations Management"
+  },
+  {
+    "university_slug": "ignou-online",
+    "program": "mba",
+    "spec_slug": "services-management",
+    "spec_name": "Services Management"
+  },
+  {
     "university_slug": "vtu-online",
     "program": "mba",
     "spec_slug": "human-resource-management",
@@ -7150,6 +7228,12 @@
     "program": "mba",
     "spec_slug": "human-resource-and-business-analytics",
     "spec_name": ""
+  },
+  {
+    "university_slug": "jain-university-online",
+    "program": "mba",
+    "spec_slug": "general-management",
+    "spec_name": "General Management"
   },
   {
     "university_slug": "chandigarh-university-online",
