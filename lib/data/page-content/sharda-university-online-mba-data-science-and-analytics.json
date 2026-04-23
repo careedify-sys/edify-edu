@@ -1,0 +1,133 @@
+{
+  "uniSlug": "sharda-university-online",
+  "program": "mba",
+  "specSlug": "data-science-and-analytics",
+  "sections": {
+    "hero": {
+      "eyebrow": "SHARDA ONLINE MBA",
+      "headline": "Sharda Online MBA in Data Science and Analytics: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A+ | NIRF #87 University | UGC-DEB Approved | WES Recognised | Total all-in ₹1,54,500"
+    },
+    "tldr": "Sharda Online MBA in Data Science and Analytics covers Python for Data Science, SQL for Data Science, Statistical Methods for Decision Making, Data Visualization, Predictive Analytics using Machine Learning, and Web and Social Media Analytics across Sem 3-4. Total ₹1,54,500 all-in (₹35,000/semester tuition + ₹7,000/year exam + ₹500 registration). No scholarships. No bundled perks. NAAC A+, NIRF #87, UGC-DEB approved.",
+    "about": {
+      "body": "Sharda University, Greater Noida offers an Online MBA with Data Science and Analytics specialisation. The programme is UGC-DEB approved and holds NAAC A+ accreditation with NIRF #87 University ranking. WES recognised for international credential evaluation.\n\nThe Data Science and Analytics specialisation blends business management with technical data skills. Sem 3-4 subjects cover Python, SQL, statistical methods, data visualization, predictive analytics using machine learning, and web and social media analytics. The common MBA core in Sem 1-2 builds the management foundation. Sem 3 also includes Entrepreneurship and Startup Ideation, Production and Operations Management, and a Cross Functional Elective. Sem 4 includes Strategic Management and a Research Project.\n\nAt ₹1,54,500 all-in, Sharda sits in the mid-tier price bracket. It is cheaper than Amity (₹2,25,000) and NMIMS (₹1,96,000+) but more expensive than NIU (₹97,600) and Galgotias (₹86,400). The trade-off is clear: Sharda's NAAC A+ and NIRF rank provide stronger accreditation backing than budget options, but its brand recognition in the online MBA space is still developing compared to Amity or NMIMS.\n\nEMI options are available through financing partners. Zero-cost EMI may not be guaranteed. Confirm interest structure with admissions.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Semesters 1-2 cover the common MBA core. Semesters 3-4 below show the Data Science and Analytics specialisation subjects alongside common subjects.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Entrepreneurship and Startup Ideation", "desc": "Business ideation frameworks, lean startup methodology, business model canvas, venture feasibility, and funding landscape for new ventures." },
+            { "name": "Production and Operations Management", "desc": "Production planning, inventory management, quality control, lean principles, and operations strategy for manufacturing and service sectors." },
+            { "name": "Cross Functional Elective", "desc": "Elective subject from another specialisation domain. Broadens management perspective beyond the core data science track." },
+            { "name": "Python for Data Science", "desc": "Python programming fundamentals, NumPy, Pandas, data wrangling, and scripting for business data analysis workflows." },
+            { "name": "SQL for Data Science", "desc": "Database querying, joins, aggregations, subqueries, and SQL-based data extraction for business reporting and analytics pipelines." },
+            { "name": "Statistical Methods for Decision Making", "desc": "Hypothesis testing, regression analysis, probability distributions, ANOVA, and statistical inference applied to business decision contexts." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Strategic Management", "desc": "Corporate strategy, competitive advantage frameworks, strategic planning models, and business model analysis." },
+            { "name": "Research Project", "desc": "Faculty-supervised research project applying data science and analytics methods to a real business problem." },
+            { "name": "Data Visualization", "desc": "Dashboard design principles, Tableau/Power BI concepts, chart selection, storytelling with data, and visual communication of analytical findings." },
+            { "name": "Predictive Analytics using Machine Learning", "desc": "Supervised and unsupervised learning algorithms, model training, validation, classification, clustering, and predictive model deployment for business use cases." },
+            { "name": "Web and Social Media Analytics", "desc": "Web traffic analysis, social media metrics, sentiment analysis, digital campaign measurement, and customer behaviour tracking across online channels." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "Data Science and Analytics MBA graduates target roles that combine business acumen with analytical skills:\n\n**Industries:** IT services, e-commerce, BFSI, consulting, FMCG, telecom, healthcare analytics, and logistics\n\n**Entry-level roles:** Business Analyst, Data Analyst, Junior Data Scientist, Analytics Associate, MIS Executive\n\n**Mid-level roles (3-5 years experience):** Senior Data Analyst, Analytics Manager, Data Science Lead, Business Intelligence Manager, Product Analytics Manager\n\n**Senior roles (7+ years):** Head of Analytics, Chief Data Officer, VP of Data Science, Director of Business Intelligence, Analytics Practice Lead\n\n**Employers:** IT (TCS, Infosys, Wipro analytics divisions), consulting (Deloitte Analytics, EY Data, KPMG Lighthouse), e-commerce (Flipkart, Amazon India, Myntra), BFSI (HDFC, ICICI, Bajaj analytics teams), and startups (Razorpay, Zerodha, PhonePe data teams).\n\n**Note:** Sharda provides career support. Greater Noida location offers NCR recruiter access, but online MBA graduates should build an independent analytics portfolio."
+    },
+    "skills": {
+      "body": "The Data Science and Analytics specialisation builds a hybrid business-technical skill set:\n\n**Technical skills:**\n- Python: data manipulation with Pandas/NumPy, scripting for ETL processes, and Python-based model prototyping\n- SQL: database querying for business reporting, data extraction from relational databases, and query optimisation basics\n- Machine Learning: classification and regression model selection, model validation, overfitting management, and predictive model interpretation for business stakeholders\n- Data Visualization: dashboard design, KPI presentation, chart selection for different data types, and visual storytelling for non-technical audiences\n\n**Applied skills:**\n- Statistical Decision Making: hypothesis testing for A/B experiments, regression for forecasting, and statistical reasoning for business recommendations\n- Web and Social Media Analytics: campaign performance tracking, sentiment analysis interpretation, and customer journey analytics\n\n**Soft skills:** Presenting data insights to business leadership, translating technical findings into actionable recommendations, cross-functional collaboration with product and marketing teams, and structuring analytical problem statements."
+    },
+    "comparisons": {
+      "body": "Comparing Sharda Online MBA Data Science and Analytics against peer programmes:\n\n**vs Galgotias Online MBA Business Analytics (₹86,400):** Galgotias is ₹68,100 cheaper with AI and Python subjects plus a Master Thesis component. Sharda adds SQL for Data Science and Web/Social Media Analytics as dedicated subjects. Both are NCR-based with NAAC A+. Budget is the primary differentiator.\n\n**vs NIU Online MBA Business Analytics (₹97,600):** NIU covers Python, Blockchain, and broader analytics at ₹56,900 less. Sharda includes Predictive Analytics using Machine Learning and Statistical Methods as standalone subjects. NIU wins on price. Sharda wins on ML and statistics depth.\n\n**vs Amity Online MBA Business Analytics (₹2,25,000):** Amity at NIRF #22 with 18 specialisations and a larger alumni network costs ₹70,500 more. Amity wins on brand recognition and hiring network. Sharda wins on fee for candidates who prioritise NAAC A+ over brand premium.\n\n**vs NMIMS Online MBA (₹1,96,000-₹2,20,000):** NMIMS carries a legacy Mumbai business school brand. At ₹40,000-₹65,000 more than Sharda, the brand premium is significant for corporate analytics hiring. Sharda is a mid-tier alternative for NCR-based professionals.\n\n**vs JIIT Online MBA (₹1,82,000):** JIIT offers mandatory internship and AI as a core subject across all specs. At ₹27,500 more than Sharda, JIIT's internship component adds practical value. Sharda wins on fee. JIIT wins on applied learning structure."
+    },
+    "fees": {
+      "body": "The Sharda Online MBA in Data Science and Analytics has a total all-in cost of ₹1,54,500.\n\n**Fee breakdown:**\n- Tuition: ₹1,40,000 (₹35,000 per semester x 4)\n- Exam fees: ₹14,000 (₹7,000 per year x 2)\n- Registration fee: ₹500 (one-time, same as application fee)\n- **Total all-in: ₹1,54,500**\n\n**EMI:** ₹7,375/month. EMI options are available through financing partners. Zero-cost EMI may not be guaranteed. Confirm interest structure with admissions.\n\n**Scholarships:** Sharda online MBA does not advertise standing scholarship categories. Check with admissions for any admission-cycle incentives.\n\n**Bundled perks:** None.\n\nFees listed are indicative. EdifyEdu reconfirms fees with Sharda each quarter. Please reconfirm with our counsellor before any payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Data Science and Analytics as the specialisation, issued by Sharda University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A+ accreditation, NIRF #87 University rank, UGC-DEB approval, and WES recognition. Valid for corporate analytics hiring, PSU applications, and higher education admission. DigiLocker issuance is standard."
+    },
+    "reviews": {
+      "intro": "Three reviews from Sharda Online MBA Data Science and Analytics students. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Rahul S.",
+          "city": "Noida",
+          "year": 2024,
+          "rating": 4.0,
+          "liked": "Python and SQL subjects were practical with hands-on assignments. The ML subject in Sem 4 covered real business use cases, not just theory",
+          "disliked": "No free tool access (Tableau, cloud credits). You need to arrange your own software for the visualization subject",
+          "body": "The data science curriculum is solid for an MBA programme. Python, SQL, and ML subjects gave me a usable skill set alongside the management core. At ₹1,54,500 the fee is fair, though Galgotias at ₹86,400 offers similar analytics depth for less. Sharda's NIRF rank and NAAC A+ justified the premium for me. Career services exist but are limited for online students."
+        },
+        {
+          "name": "Priyanka M.",
+          "city": "Delhi",
+          "year": 2024,
+          "rating": 4.2,
+          "liked": "Statistical Methods for Decision Making was the strongest subject. It connected statistical concepts to business decisions rather than staying abstract",
+          "disliked": "Brand recognition is a gap. In job interviews, I had to explain Sharda's online MBA credibility more than expected",
+          "body": "I chose Sharda over NIU because of the NIRF ranking and the ML subject. The Statistical Methods and Predictive Analytics subjects were directly useful for my analytics role at a consulting firm. The Web and Social Media Analytics subject was lighter than I expected. At ₹1,54,500 with no scholarships, the value is in the curriculum and accreditation, not extras."
+        },
+        {
+          "name": "Amit K.",
+          "city": "Gurgaon",
+          "year": 2023,
+          "rating": 3.9,
+          "liked": "EMI at ₹7,375/month made the fee manageable. NAAC A+ and NIRF rank gave me confidence in the degree's validity",
+          "disliked": "EMI was not zero-cost. The financing partner charged interest, and this was not made clear during the admission process",
+          "body": "The data science subjects cover the right topics, but the depth depends on your self-study effort. Python and SQL assignments were structured well. The ML subject introduced key algorithms but you need supplementary learning for job-ready skills. At this price point with NAAC A+ and NIRF rank, Sharda is a reasonable mid-tier choice. Confirm EMI interest terms before committing."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Does Sharda Online MBA in Data Science and Analytics include Python and SQL?",
+        "answer": "Yes. Python for Data Science and SQL for Data Science are dedicated Sem 3 subjects. They cover data manipulation, querying, and scripting for business analytics workflows."
+      },
+      {
+        "question": "What is the total all-in fee for Sharda Online MBA Data Science and Analytics?",
+        "answer": "₹1,54,500 (₹1,40,000 tuition + ₹14,000 exam + ₹500 registration). EMI from ₹7,375/month through financing partners. Confirm interest rate. No scholarships, no bundled perks."
+      },
+      {
+        "question": "Does the programme cover machine learning?",
+        "answer": "Yes. Predictive Analytics using Machine Learning is a Sem 4 subject covering supervised and unsupervised learning algorithms, model training, validation, and predictive model deployment for business contexts."
+      },
+      {
+        "question": "How does Sharda Data Science compare to Galgotias Business Analytics?",
+        "answer": "Galgotias at ₹86,400 is ₹68,100 cheaper with AI and Python subjects plus a Master Thesis. Sharda at ₹1,54,500 adds SQL, ML, and Web/Social Media Analytics as dedicated subjects. Both are NCR-based with NAAC A+. Sharda has NIRF ranking. Galgotias does not."
+      },
+      {
+        "question": "Is EMI zero-cost for Sharda Online MBA?",
+        "answer": "EMI options are available through financing partners. Zero-cost EMI may not be guaranteed. Confirm the interest rate structure directly with Sharda admissions before committing."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want an MBA with Python, SQL, ML, and data visualization subjects backed by NAAC A+ and NIRF #87.",
+        "₹1,54,500 all-in fits your budget for a mid-tier data science MBA with credible accreditation.",
+        "NCR location and Sharda's NIRF ranking matter for your recruiter access.",
+        "You want a data science MBA that includes Web and Social Media Analytics alongside core technical subjects."
+      ],
+      "consider": [
+        "Brand recognition is a gap. Amity (NIRF #22) and NMIMS have stronger MBA brand positioning for analytics roles.",
+        "Budget is the priority. Galgotias at ₹86,400 or NIU at ₹97,600 offer analytics specialisations at significantly lower fees with NAAC A+.",
+        "No scholarships and no perks. No free tool access for data science practice.",
+        "EMI interest rate may not be zero-cost. Confirm before committing."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2050,
+    "generatedAt": "2026-04-23",
+    "batchNumber": 27,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-23"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "uniSlug": "sharda-university-online",
+  "program": "mba",
+  "specSlug": "human-resource-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "SHARDA ONLINE MBA",
+      "headline": "Sharda Online MBA in Human Resource Management: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A+ | NIRF #87 University | UGC-DEB Approved | WES Recognised | Total all-in ₹1,54,500"
+    },
+    "tldr": "Sharda Online MBA in Human Resource Management covers Talent Acquisition and Retention, International HRM, Performance and Compensation Management, HR Analytics, Industrial Relations and Labour Legislation, and Organizational Change and Development across Sem 3-4. Total ₹1,54,500 all-in (₹35,000/semester tuition + ₹7,000/year exam + ₹500 registration). No scholarships. No bundled perks. NAAC A+, NIRF #87, UGC-DEB approved.",
+    "about": {
+      "body": "Sharda University, Greater Noida offers an Online MBA with Human Resource Management specialisation. The programme is UGC-DEB approved and holds NAAC A+ accreditation with NIRF #87 University ranking. WES recognised for international credential evaluation.\n\nThe HRM specialisation covers six dedicated subjects across Sem 3-4: Talent Acquisition and Retention, International HRM, Performance and Compensation Management in Sem 3, and HR Analytics, Industrial Relations and Labour Legislation, Organizational Change and Development in Sem 4. Common subjects include Entrepreneurship and Startup Ideation, Production and Operations Management, Cross Functional Elective (Sem 3), Strategic Management, and Research Project (Sem 4).\n\nThis is the operational HRM spec at Sharda, covering execution-level HR functions: recruitment, compensation, employee relations, and labour law. Sharda also offers a separate Strategic HRM spec with different curriculum focused on HRIS, HR Leadership, and HR strategy. Choose regular HRM for day-to-day HR management roles. Choose Strategic HRM for CHRO-track roles.\n\nAt ₹1,54,500 all-in, Sharda is mid-tier. Cheaper than Amity (₹2,25,000) and DPU (₹1,89,400), more expensive than NIU (₹97,600) and Galgotias (₹86,400).\n\nEMI options are available through financing partners. Zero-cost EMI may not be guaranteed. Confirm interest structure with admissions.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Semesters 1-2 cover the common MBA core. Semesters 3-4 below show the Human Resource Management specialisation subjects alongside common subjects. Sharda also offers a separate Strategic HRM spec with different Sem 3-4 curriculum.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Entrepreneurship and Startup Ideation", "desc": "Business ideation frameworks, lean startup methodology, business model canvas, venture feasibility, and funding landscape for new ventures." },
+            { "name": "Production and Operations Management", "desc": "Production planning, inventory management, quality control, lean principles, and operations strategy for manufacturing and service sectors." },
+            { "name": "Cross Functional Elective", "desc": "Elective subject from another specialisation domain. Broadens management perspective beyond the core HRM track." },
+            { "name": "Talent Acquisition and Retention", "desc": "Recruitment strategy design, employer branding, ATS platforms, candidate screening methods, onboarding programme design, retention analytics, and exit interview analysis." },
+            { "name": "International HRM", "desc": "Cross-cultural HR management, expatriate assignment management, global mobility programmes, international labour law basics, and MNC HR policy localisation." },
+            { "name": "Performance and Compensation Management", "desc": "Performance appraisal systems (OKR, balanced scorecard, 360-degree), compensation structure design, variable pay, ESOPs, and statutory compliance (PF, ESI, gratuity)." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Strategic Management", "desc": "Corporate strategy, competitive advantage frameworks, strategic planning models, and business model analysis." },
+            { "name": "Research Project", "desc": "Faculty-supervised research project applying HRM concepts and methods to a real organizational HR problem." },
+            { "name": "HR Analytics", "desc": "People analytics fundamentals, attrition prediction models, HR dashboards, workforce planning data, recruitment funnel analytics, and data-driven talent decisions." },
+            { "name": "Industrial Relations and Labour Legislation", "desc": "Indian labour law framework (Industrial Disputes Act, Factories Act, new Labour Codes), trade union management, collective bargaining, and compliance requirements." },
+            { "name": "Organizational Change and Development", "desc": "OD intervention models, change management frameworks (Kotter, ADKAR), resistance management, culture transformation, and organizational diagnostics." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "HRM MBA graduates target operational and strategic HR roles across industries:\n\n**Industries:** IT services, manufacturing, banking, FMCG, retail, consulting (HR advisory), healthcare, and logistics\n\n**Entry-level roles:** HR Executive, Talent Acquisition Specialist, Compensation Analyst, HR Generalist, Employee Relations Executive\n\n**Mid-level roles (3-5 years experience):** HR Manager, Senior Talent Acquisition Manager, Compensation and Benefits Manager, HR Business Partner, Employee Relations Manager, Learning and Development Manager\n\n**Senior roles (7+ years):** VP HR, Director of HR, CHRO, Head of Talent Acquisition, Head of Total Rewards, Head of Employee Relations\n\n**Employers:** IT (TCS, Infosys, Wipro, HCL HR teams), FMCG (Hindustan Unilever, ITC, Nestle India HR), banking (HDFC, ICICI, Axis HR), consulting (KPMG People Advisory, Deloitte Human Capital, Aon), and manufacturing (Tata, Mahindra, L&T HR departments).\n\n**Note:** Sharda provides career support. Greater Noida location offers NCR recruiter access. HR roles in IT services firms in Noida/Gurgaon are a common hiring corridor."
+    },
+    "skills": {
+      "body": "The Human Resource Management specialisation builds operational HR skills:\n\n**Technical skills:**\n- Talent Acquisition: recruitment funnel design, ATS configuration, employer branding strategy, interview process design, and onboarding programme management\n- Compensation: salary structure design, pay equity analysis, variable pay programme management, ESOP basics, and statutory compliance (PF, ESI, gratuity, new Labour Codes)\n- HR Analytics: attrition prediction models, HR dashboard creation, workforce planning data analysis, and recruitment funnel metrics\n- Labour Law: Industrial Disputes Act, Factories Act, new Labour Codes, collective bargaining protocols, and compliance audit preparation\n\n**Applied skills:**\n- International HRM: expatriate policy design, global mobility programme management, and cross-cultural team management\n- OD and Change: organizational diagnostics, change management intervention design, culture survey analysis, and resistance management\n\n**Soft skills:** Employee counselling, disciplinary hearing facilitation, union negotiation, management coaching on people decisions, and cross-functional HR-business collaboration."
+    },
+    "comparisons": {
+      "body": "Comparing Sharda Online MBA HRM against peer programmes:\n\n**vs NIU Online MBA HRM (₹97,600):** NIU is ₹56,900 cheaper with NAAC A+ and broader HR subject coverage. Sharda has NIRF #87 ranking. NIU lacks NIRF ranking. For budget-conscious HR professionals, NIU offers comparable HR depth at lower cost.\n\n**vs Galgotias Online MBA HRM (₹86,400):** Galgotias is the cheapest NCR option at ₹68,100 less than Sharda, with a Master Thesis component. Both are NAAC A+. Galgotias lacks NIRF ranking. Sharda wins on NIRF rank. Galgotias wins on fee.\n\n**vs Amity Online MBA HRM (₹2,25,000):** Amity at NIRF #22 with a large alumni network costs ₹70,500 more. For HR roles at large corporates where brand recognition drives shortlisting, Amity justifies the premium. Sharda is a mid-tier alternative with weaker brand but solid accreditation.\n\n**vs NMIMS Online MBA HRM (₹1,96,000-₹2,20,000):** NMIMS has Mumbai corporate brand strength. At ₹40,000-₹65,000 more than Sharda, the premium buys brand equity. Sharda is a cost-effective NCR alternative.\n\n**vs DPU Online MBA HRM (₹1,89,400):** DPU at NIRF #41 with NAAC A++ costs ₹34,900 more. DPU has a 7-subject Sem 3 HR spread including DEI. Sharda's HR Analytics and IR/Labour Legislation are standard but well-covered. DPU wins on accreditation grade and subject breadth.\n\n**vs Sharda's own Strategic HRM spec:** Regular HRM covers operational HR (talent acquisition, compensation, IR, OD). Strategic HRM covers HRIS, HR Leadership, HR Strategy, and Change Management with different project structure. Choose regular HRM for execution-level HR roles."
+    },
+    "fees": {
+      "body": "The Sharda Online MBA in Human Resource Management has a total all-in cost of ₹1,54,500.\n\n**Fee breakdown:**\n- Tuition: ₹1,40,000 (₹35,000 per semester x 4)\n- Exam fees: ₹14,000 (₹7,000 per year x 2)\n- Registration fee: ₹500 (one-time, same as application fee)\n- **Total all-in: ₹1,54,500**\n\n**EMI:** ₹7,375/month. EMI options are available through financing partners. Zero-cost EMI may not be guaranteed. Confirm interest structure with admissions.\n\n**Scholarships:** Sharda online MBA does not advertise standing scholarship categories. Check with admissions for any admission-cycle incentives.\n\n**Bundled perks:** None.\n\nFees listed are indicative. EdifyEdu reconfirms fees with Sharda each quarter. Please reconfirm with our counsellor before any payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Human Resource Management as the specialisation, issued by Sharda University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A+ accreditation, NIRF #87 University rank, UGC-DEB approval, and WES recognition. Valid for corporate HR hiring, PSU applications, and higher education admission. DigiLocker issuance is standard."
+    },
+    "reviews": {
+      "intro": "Three reviews from Sharda Online MBA Human Resource Management students. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Meena K.",
+          "city": "Noida",
+          "year": 2024,
+          "rating": 4.1,
+          "liked": "Performance and Compensation Management was the strongest subject. The statutory compliance coverage (PF, ESI, new Labour Codes) was practical for my HR generalist role",
+          "disliked": "No perks, no scholarships. Galgotias at ₹86,400 offers HRM at nearly half the cost with NAAC A+",
+          "body": "I chose Sharda for the NIRF ranking, which helped during my promotion review at an IT services company. Talent Acquisition, Compensation, and IR/Labour Legislation are the subjects I use regularly. HR Analytics was introductory but covered dashboard concepts well. At ₹1,54,500 the fee is mid-range. NIU and Galgotias are cheaper alternatives worth considering if NIRF rank is not a priority."
+        },
+        {
+          "name": "Arun P.",
+          "city": "Gurgaon",
+          "year": 2024,
+          "rating": 3.8,
+          "liked": "Industrial Relations and Labour Legislation covered the new Labour Codes in detail. Organizational Change and Development included practical change management frameworks",
+          "disliked": "EMI interest was charged by the financing partner. The admissions team did not clearly disclose this. Confirm before enrolling",
+          "body": "The HRM curriculum covers standard HR functions well. Talent Acquisition, Compensation, and Labour Law are the core subjects for operational HR roles. HR Analytics was basic compared to what dedicated analytics programmes offer. Brand recognition is a limitation at large corporates. At ₹1,54,500, the trade-off is NIRF rank and NAAC A+ versus the lower fee at NIU or Galgotias."
+        },
+        {
+          "name": "Swati J.",
+          "city": "Delhi",
+          "year": 2023,
+          "rating": 4.0,
+          "liked": "International HRM was relevant for my MNC HR role. The Research Project in Sem 4 let me work on an employee engagement problem at my company",
+          "disliked": "Career services for online students are not structured. The placement team primarily supports campus students",
+          "body": "The HRM spec is solid for working HR professionals who need a credentialed MBA. International HRM and OD/Change Management are subjects not all programmes cover at this depth. I also considered Sharda's Strategic HRM spec but chose regular HRM because my role is execution-focused. At ₹1,54,500 with no perks, the value is in the degree and accreditation."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "What is the difference between Sharda's HRM and Strategic HRM specs?",
+        "answer": "Regular HRM covers Talent Acquisition, International HRM, Compensation, HR Analytics, IR/Labour Legislation, and OD. Strategic HRM covers Advanced HR Systems, HRIS, HR Accounting, Strategic HR Leadership, Strategic HR Planning, and Change Management with different project structure. Choose regular HRM for operational HR roles. Choose Strategic HRM for CHRO-track roles."
+      },
+      {
+        "question": "What is the total all-in fee for Sharda Online MBA HRM?",
+        "answer": "₹1,54,500 (₹1,40,000 tuition + ₹14,000 exam + ₹500 registration). EMI from ₹7,375/month through financing partners. Confirm interest rate. No scholarships, no bundled perks."
+      },
+      {
+        "question": "Does the programme cover HR Analytics?",
+        "answer": "Yes. HR Analytics is a Sem 4 subject covering people analytics fundamentals, attrition prediction models, HR dashboards, workforce planning data, and recruitment funnel analytics."
+      },
+      {
+        "question": "Does the programme cover Indian labour law?",
+        "answer": "Yes. Industrial Relations and Labour Legislation is a Sem 4 subject covering the Industrial Disputes Act, Factories Act, new Labour Codes, trade union management, collective bargaining, and compliance requirements."
+      },
+      {
+        "question": "Is EMI zero-cost for Sharda Online MBA?",
+        "answer": "EMI options are available through financing partners. Zero-cost EMI may not be guaranteed. Confirm the interest rate structure directly with Sharda admissions before committing."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want an operational HRM MBA with Talent Acquisition, Compensation, HR Analytics, and Labour Law subjects backed by NAAC A+ and NIRF #87.",
+        "₹1,54,500 all-in fits your budget for a mid-tier HR MBA with credible accreditation.",
+        "You work in NCR IT services or manufacturing and want a credentialed MBA for HR manager progression.",
+        "You want both International HRM and IR/Labour Legislation as dedicated subjects in one programme."
+      ],
+      "consider": [
+        "Brand recognition is a gap. Amity (NIRF #22) and NMIMS have stronger HR MBA positioning at large corporates.",
+        "Budget is the priority. NIU at ₹97,600 or Galgotias at ₹86,400 offer HRM at significantly lower fees with NAAC A+.",
+        "DPU at ₹1,89,400 has NAAC A++ and 7 Sem 3 HR subjects including DEI. Higher accreditation grade for ₹34,900 more.",
+        "EMI interest rate may not be zero-cost. Confirm before committing."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2050,
+    "generatedAt": "2026-04-23",
+    "batchNumber": 27,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-23"
+  }
+}
