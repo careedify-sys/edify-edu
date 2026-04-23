@@ -13,6 +13,7 @@ import { getPageContent } from '@/lib/data/page-content'
 import type { PageContent } from '@/lib/data/page-content-schema'
 
 import SchemaBlock       from './SchemaBlock'
+import StickySectionNav  from './StickySectionNav'
 import UniHero           from './UniHero'
 import ApprovalBadges    from './ApprovalBadges'
 import SectionAbout      from './SectionAbout'
@@ -162,6 +163,17 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
         {/* Hero — full width */}
         <UniHero u={u} program={program} pd={pd} cleanName={cleanName} />
 
+        {/* Sticky section navigation */}
+        <StickySectionNav items={[
+          { id: 'about', label: 'About' },
+          { id: 'specialisations', label: 'Specialisations' },
+          { id: 'fees', label: 'Fees' },
+          { id: 'admission', label: 'Admission' },
+          { id: 'placement', label: 'Placement' },
+          { id: 'reviews', label: 'Reviews' },
+          { id: 'faqs', label: 'FAQs' },
+        ]} />
+
         {/* TL;DR block (generated content only) */}
         {s?.tldr && (
           <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-5">
@@ -203,7 +215,9 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
               )}
 
               {/* §4 About */}
-              <SectionAbout u={u} program={program} pd={pd} cleanName={cleanName} />
+              <div id="about">
+                <SectionAbout u={u} program={program} pd={pd} cleanName={cleanName} />
+              </div>
 
               {/* §5 Who Can Apply */}
               <SectionWhoCanApply u={u} program={program} />
@@ -216,6 +230,7 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
 
               {/* §8 Specializations */}
               {specs.length > 0 && (
+                <div id="specialisations">
                 <SpecializationGrid
                   specs={specs}
                   universityId={u.id}
@@ -224,6 +239,7 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
                   fees={pd.fees}
                   duration={pd.duration}
                 />
+                </div>
               )}
 
               {/* §9 Core Subjects */}
@@ -235,7 +251,9 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
               ) : null}
 
               {/* §10 Fees */}
-              <FeeBreakdown u={u} pd={pd} program={program} />
+              <div id="fees">
+                <FeeBreakdown u={u} pd={pd} program={program} />
+              </div>
 
               {/* Inline CTA after fees */}
               <InlineCTA
@@ -256,7 +274,9 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
               />
 
               {/* §13 Admission */}
-              <AdmissionSteps />
+              <div id="admission">
+                <AdmissionSteps />
+              </div>
 
               {/* §13B ABC ID (generated content only) */}
               {s?.abcId?.body && (
@@ -269,7 +289,9 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
               )}
 
               {/* §14 Placements */}
-              <SectionPlacements pd={pd} cleanName={cleanName} program={program} />
+              <div id="placement">
+                <SectionPlacements pd={pd} cleanName={cleanName} program={program} />
+              </div>
 
               {/* §14b Beyond Admission */}
               <BeyondAdmissionSection cleanName={cleanName} />
@@ -278,11 +300,13 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
               <TopHirers pd={pd} program={program} cleanName={cleanName} />
 
               {/* §16 Reviews */}
+              <div id="reviews">
               {s?.reviews?.items?.length ? (
                 <GeneratedReviewsBlock reviews={s.reviews} />
               ) : (
                 <ReviewsBlock universityId={u.id} program={program} />
               )}
+              </div>
 
               {/* §17 Red Flags */}
               {s?.redFlags?.flags?.length ? (
@@ -321,7 +345,9 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
               />
 
               {/* §20 FAQs */}
-              <FAQBlock faqs={s?.faqs?.length ? s.faqs.map(f => ({ q: f.question, a: f.answer })) : faqs} />
+              <div id="faqs">
+                <FAQBlock faqs={s?.faqs?.length ? s.faqs.map(f => ({ q: f.question, a: f.answer })) : faqs} />
+              </div>
 
               {/* §21 Last Updated */}
               <LastUpdatedStamp program={program} universityId={u.id} />

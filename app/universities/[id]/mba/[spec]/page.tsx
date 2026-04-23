@@ -28,8 +28,9 @@ export async function generateMetadata(
   const shortSpec = shortenSpec(spec)
   const pd = u.programDetails['MBA']
   const fee = pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`
-  const title = `${titleName} Online MBA in ${shortSpec} ${year} | EdifyEdu`
-  const description = `${titleName} MBA in ${spec}: fees ${fee}, NAAC ${u.naac}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved. Admissions open ${year}.`
+  const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : (u as any).nirfMgt && (u as any).nirfMgt < 200 ? `, NIRF #${(u as any).nirfMgt} Mgmt` : ''
+  const title = `${titleName} Online MBA in ${shortSpec}: Syllabus, Fees & Career Outcomes ${year} | EdifyEdu`
+  const description = `${titleName} MBA in ${spec} ${year}: fees ${fee}, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Syllabus, career outcomes, reviews at EdifyEdu.`
 
   return {
     title,

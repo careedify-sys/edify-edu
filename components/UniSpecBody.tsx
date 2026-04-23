@@ -16,6 +16,7 @@ import { getSpecPageContent } from '@/lib/data/page-content'
 import type { SpecPageContent } from '@/lib/data/page-content-schema'
 
 import SchemaBlock        from './SchemaBlock'
+import StickySectionNav   from './StickySectionNav'
 import UniHero            from './UniHero'
 import ApprovalBadges     from './ApprovalBadges'
 import SectionAbout       from './SectionAbout'
@@ -433,6 +434,15 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
 
         {/* Hero */}
         <UniHero u={u} program={program} pd={pd} cleanName={cleanName} spec={spec} />
+
+        {/* Sticky section navigation */}
+        <StickySectionNav items={[
+          { id: 'about', label: 'About' },
+          { id: 'syllabus', label: 'Syllabus' },
+          { id: 'fees', label: 'Fees' },
+          { id: 'reviews', label: 'Reviews' },
+          { id: 'faqs', label: 'FAQs' },
+        ]} />
 
         {/* 2-column body */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">

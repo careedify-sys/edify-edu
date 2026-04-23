@@ -19,8 +19,11 @@ export async function generateMetadata(
   const year = new Date().getFullYear()
   const pd   = u.programDetails['MBA']
   const titleName = getTitleName(u.id, u.name, u.abbr)
-  const title = `${titleName} Online MBA — Fees, Syllabus & Specialisations ${year} | EdifyEdu`
-  const description = `${titleName} Online MBA: ${pd?.specs?.length || 5}+ specialisations, fees ${pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`}, NAAC ${u.naac}${u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved. Compare, verify, enrol.`
+  const feeDisplay = pd?.fees || `₹${Math.round(u.feeMin / 1000)}K`
+  const specCount = pd?.specs?.length || 5
+  const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : u.nirfMgt && u.nirfMgt < 200 ? `, NIRF #${u.nirfMgt} Mgmt` : ''
+  const title = `${titleName} Online MBA ${year}: Fees, Placement, Syllabus & Reviews | EdifyEdu`
+  const description = `${titleName} Online MBA ${year}: ${feeDisplay} fees, ${specCount}+ specialisations, UGC-DEB approved, NAAC ${u.naac}${nirfStr}. Compare honest reviews at EdifyEdu.`
 
   return {
     title,
