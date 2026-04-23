@@ -4,6 +4,7 @@ import type { University, ProgramDetail } from '@/lib/data'
 import { cleanCareerOutcome, formatINR, getProgramLevel } from '@/lib/format'
 import { TrendingUp } from 'lucide-react'
 import LOGOS_MANIFEST from '@/lib/data/logos-manifest.json'
+import RankingBadge from './RankingBadge'
 
 interface Props {
   u: University
@@ -18,9 +19,11 @@ export default function UniHero({ u, program, pd, cleanName, spec }: Props) {
   const level  = getProgramLevel(program)
   const logoPath: string | undefined = (LOGOS_MANIFEST as Record<string, string>)[u.id]
 
+  const year = new Date().getFullYear()
+  const nameEndsOnline = cleanName.toLowerCase().endsWith('online')
   const h1 = spec
-    ? `Online ${program} in ${spec} from ${cleanName}`
-    : `${cleanName} Online ${program}: Fees, Syllabus & Specialisations 2026`
+    ? `${nameEndsOnline ? cleanName : cleanName + ' Online'} ${program} in ${spec}: Syllabus, Fees & Career Outcomes ${year}`
+    : `${nameEndsOnline ? cleanName : cleanName + ' Online'} ${program} ${year}: Fees, Placement, Syllabus & Reviews`
 
   const eyebrow = spec
     ? `${level} · ${pd.duration || '2 Years'} · UGC DEB Approved`
@@ -37,7 +40,11 @@ export default function UniHero({ u, program, pd, cleanName, spec }: Props) {
     { label: 'Duration',   value: pd.duration || '2 Years',       highlight: false },
     { label: 'Eligibility', value: eligibilityLabel,              highlight: false },
     { label: 'NAAC',       value: u.naac,                         highlight: false },
-    ...(u.nirf > 0 && u.nirf < 500 ? [{ label: 'NIRF', value: `#${u.nirf}`, highlight: false }] : []),
+    ...((u as any).nirfMgt && (u as any).nirfMgt < 200
+      ? [{ label: 'NIRF Mgmt', value: `#${(u as any).nirfMgt}`, highlight: false }]
+      : u.nirf > 0 && u.nirf < 500
+        ? [{ label: 'NIRF', value: `#${u.nirf}`, highlight: false }]
+        : []),
   ]
 
   const intakeLine = (pd as any).nextIntake
@@ -80,6 +87,9 @@ export default function UniHero({ u, program, pd, cleanName, spec }: Props) {
             {h1}
           </h1>
         </div>
+
+        {/* Ranking badges */}
+        <RankingBadge u={u} />
 
         {/* Sub-headline */}
         <p className="text-slate-400 text-[15px] max-w-2xl mb-5 leading-relaxed">{sub}</p>
