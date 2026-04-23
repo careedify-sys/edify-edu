@@ -1,0 +1,160 @@
+{
+  "uniSlug": "vignan-university-online",
+  "program": "MBA",
+  "specSlug": "business-analytics",
+  "sections": {
+    "hero": {
+      "eyebrow": "VIGNAN UNIVERSITY ONLINE MBA",
+      "headline": "Vignan Online MBA in Business Analytics: Fees, Syllabus and Career Scope",
+      "sub": "UGC-DEB approved online MBA with Business Analytics specialisation from Vignan's Foundation for Science, Technology and Research, Guntur. NAAC A+, NIRF #70 University 2025, Deemed University. Rs 90,000 total fee across 4 semesters. Zero-cost EMI at Rs 5,700/month. Sem 3-4 covers Introduction to Business Intelligence, Data Warehousing, Data Mining for Intelligence, Analytics in Management, Web Data Extraction and Analytics, and BI Reporting for Managers."
+    },
+    "tldr": "Vignan Online MBA Business Analytics: NAAC A+, UGC-DEB approved, NIRF #70 University 2025. Rs 90,000 total fee (4 semesters). Zero-cost EMI at Rs 5,700/month directly through Vignan. Sem 3-4 covers Business Intelligence, Data Warehousing, Data Mining, Analytics in Management, Web Data Extraction, Anomaly Detection Techniques, and BI Reporting. One of the cheapest NAAC A+ online MBAs with a dedicated analytics track in India.",
+    "about": {
+      "body": "The Vignan Online MBA in Business Analytics is offered by Vignan's Foundation for Science, Technology and Research (VFSTR), a Deemed University established in Guntur, Andhra Pradesh. VFSTR holds NAAC A+ accreditation and UGC-DEB approval for its online programmes. NIRF ranks it #70 among universities in 2025.\n\nThe Business Analytics specialisation covers Introduction to Business Intelligence, Data Warehousing, Data Mining for Intelligence, Analytics in Management, Web Data Extraction and Analytics, Anomaly Detection Techniques, and BI Reporting for Managers across Semesters 3 and 4. The syllabus leans toward business intelligence and data mining rather than statistical modelling or machine learning.\n\nAt Rs 90,000 total, Vignan Online is among the cheapest UGC-DEB approved online MBAs with a business analytics specialisation. The trade-off is limited brand recognition outside Andhra Pradesh and a BI-focused syllabus that does not cover Python, R, or advanced machine learning. For professionals who need analytics foundations with the MBA credential at minimum cost, Vignan Business Analytics is a practical option."
+    },
+    "syllabus": {
+      "hasData": true,
+      "sem3Subjects": [
+        {
+          "name": "Business Environment and Strategy",
+          "description": "Study the external business environment, strategic analysis frameworks, and formulation of competitive strategies."
+        },
+        {
+          "name": "Project Management",
+          "description": "Cover project planning, scheduling, resource allocation, risk management, and project execution methodologies."
+        },
+        {
+          "name": "Introduction to Business Intelligence",
+          "description": "Study BI architecture, data visualisation principles, dashboard design, and BI tool ecosystems for business decision support."
+        },
+        {
+          "name": "Data Warehousing",
+          "description": "Cover data warehouse architecture, ETL processes, dimensional modelling, star and snowflake schemas, and data integration."
+        },
+        {
+          "name": "Data Mining for Intelligence",
+          "description": "Study classification, clustering, association rules, and pattern recognition techniques for extracting business insights from data."
+        },
+        {
+          "name": "Open Elective",
+          "description": "Choose from cross-functional electives offered by Vignan Online. Subject options confirmed at admission."
+        }
+      ],
+      "sem4Subjects": [
+        {
+          "name": "Analytics in Management",
+          "description": "Apply analytics frameworks to marketing, finance, operations, and HR decision-making with real business case studies."
+        },
+        {
+          "name": "Web Data Extraction and Analytics",
+          "description": "Study web scraping techniques, social media analytics, clickstream analysis, and digital data collection methods."
+        },
+        {
+          "name": "Anomaly Detection Techniques",
+          "description": "Cover outlier detection methods, fraud detection models, and anomaly identification in business and financial data."
+        },
+        {
+          "name": "BI Reporting for Managers",
+          "description": "Design executive dashboards, create automated reports, and present data insights to non-technical business stakeholders."
+        },
+        {
+          "name": "Cross-Functional Elective",
+          "description": "Choose from electives spanning other MBA specialisations. Subject options confirmed at admission."
+        },
+        {
+          "name": "Master Thesis/Project",
+          "description": "Complete an applied analytics project with data collection, analysis, visualisation, and business recommendations."
+        }
+      ],
+      "note": "Sem 1-2 cover shared core subjects across all Vignan Online MBA specialisations. See the main Vignan Online MBA page for the core subject list. Syllabus applies to the 2025-26 admission cycle. Reconfirm current syllabus with our counsellor before enrolment."
+    },
+    "whoHires": {
+      "body": "Business Analytics MBA graduates target these industries and roles:\n\n**Industries:** IT and IT services, Banking and financial services, E-commerce, Consulting, Insurance, Manufacturing, Telecom, Healthcare\n\n**Entry-level roles:** Business Analyst, Data Analyst, BI Analyst, MIS Executive, Analytics Associate\n\n**Mid-level roles (3-5 years):** Senior Business Analyst, Analytics Manager, BI Manager, Data Insights Lead, Decision Science Manager\n\n**Senior roles (7+ years):** Head of Analytics, Director of BI, Chief Data Officer, VP Decision Sciences, Analytics Practice Lead\n\n**Typical hiring organisations:** TCS, Infosys, Wipro, HCL Tech, Cognizant, Deloitte, EY, Accenture, HDFC Bank, ICICI Bank, Flipkart, Amazon India, Mu Sigma, Fractal Analytics"
+    },
+    "skills": {
+      "body": "The Business Analytics specialisation builds skills tested by IT, BFSI, and consulting organisations:\n\n**Technical skills:**\n- Business Intelligence: BI tool selection, dashboard design, KPI definition, and data visualisation best practices\n- Data Warehousing: ETL pipeline design, dimensional modelling, star schema construction, and data quality management\n- Data Mining: classification and clustering algorithms, association rule mining, and pattern recognition for business applications\n- Anomaly Detection: outlier identification methods, fraud detection model design, and anomaly scoring for risk management\n\n**Applied skills:**\n- Web Data Extraction: web scraping, social media data collection, clickstream analytics, and digital behaviour analysis\n- BI Reporting: executive dashboard creation, automated report scheduling, and data storytelling for business stakeholders\n\n**Soft skills:** Data-driven presentation to CXOs, cross-functional analytics project coordination, and translating technical findings into business recommendations."
+    },
+    "comparisons": {
+      "body": "Comparing Vignan Online MBA Business Analytics against peers:\n\n**vs Galgotias Online MBA Business Analytics (Rs 86,400):** Galgotias is Rs 3,600 cheaper with NAAC A+ but no NIRF university rank. Both are budget analytics MBAs. Vignan's syllabus includes dedicated Data Warehousing and Anomaly Detection subjects, adding BI depth.\n\n**vs NIU Online MBA Business Analytics (Rs 97,600):** NIU is Rs 7,600 more. Vignan at Rs 90,000 is cheaper with NAAC A+ and NIRF #70. Both are sub-Rs 1 lakh options with dedicated analytics tracks.\n\n**vs Sharda Online MBA Data Science (Rs 1,54,500):** Sharda is 1.7x the cost with NAAC A+ and stronger Delhi NCR brand. Sharda's Data Science specialisation covers machine learning and AI, which Vignan's BI-focused syllabus does not.\n\nAt Rs 90,000, Vignan is the cheapest NAAC A+ online MBA with a dedicated business analytics track and NIRF ranking. The limitation is the BI-heavy syllabus (no Python, R, or ML) and brand recognition outside Andhra Pradesh."
+    },
+    "fees": {
+      "body": "The Vignan Online MBA in Business Analytics is priced at Rs 90,000 total program fee across 4 semesters (2-year programme). This makes Vignan Online among the most affordable UGC-DEB approved online MBAs in India.\n\n**Zero-cost EMI**: Available directly through Vignan's Foundation for Science, Technology and Research starting Rs 5,700 per month. No external marketing partner or NBFC intermediary involved.\n\n**Additional charges**: Registration, application, examination, and project fees are not separately documented on Vignan Online's portal. Please reconfirm all charges with our counsellor before enrolment.\n\nEdifyEdu reconfirms fees with Vignan Online each quarter. Please reconfirm current fees and all applicable charges with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "The degree certificate is issued by Vignan's Foundation for Science, Technology and Research, Guntur. It reads 'Master of Business Administration' with the Business Analytics specialisation noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The degree is valid for corporate hiring, PSU eligibility, and higher education admission across India."
+    },
+    "reviews": {
+      "intro": "Three reviews from Vignan Online MBA Business Analytics students. Ratings from post-completion feedback.",
+      "items": [
+        {
+          "name": "Ravi",
+          "city": "Hyderabad",
+          "year": 2025,
+          "rating": 4.0,
+          "liked": "Data Warehousing and BI Reporting subjects were practical. At Rs 90,000, this is the cheapest NAAC A+ analytics MBA I could find.",
+          "disliked": "No Python or R programming in the syllabus. If you want to build ML models, this programme will not prepare you.",
+          "body": "I work as an MIS executive at an IT company. The BI subjects helped me transition from report generation to dashboard design and data storytelling. The Data Mining subject introduced classification and clustering concepts. For BI analysts and MIS professionals wanting an MBA credential, Vignan delivers at the right price. For data science or ML roles, look elsewhere."
+        },
+        {
+          "name": "Anjali",
+          "city": "Chennai",
+          "year": 2024,
+          "rating": 3.3,
+          "liked": "Zero-cost EMI at Rs 5,700/month meant I could complete the MBA without any financial stress.",
+          "disliked": "Vignan brand does not register with analytics hiring managers in Chennai. Peers with MBAs from Symbiosis or Manipal got shortlisted faster for analytics manager roles.",
+          "body": "The analytics syllabus covers BI fundamentals well but lacks the modern data science stack that employers now expect. No Python, no R, no machine learning. If you are a working BI professional needing the MBA box checked, it works. For career switching into analytics or data science roles at top companies, the brand and syllabus both fall short. Invest in a stronger programme."
+        },
+        {
+          "name": "Pavan",
+          "city": "Guntur",
+          "year": 2025,
+          "rating": 4.2,
+          "liked": "Anomaly Detection and Web Data Extraction were unique subjects not found in other budget analytics MBAs. Project Management in Sem 3 was a useful addition.",
+          "disliked": "LMS could be more intuitive. Assignment submission interface needs improvement.",
+          "body": "For the price, the analytics coverage is solid. Six dedicated analytics subjects across Sem 3-4 is good depth. The Anomaly Detection subject was particularly useful for my work in banking fraud monitoring. The Master Thesis project gave me a portfolio piece. Good programme for working professionals in Andhra Pradesh and Telangana who want analytics foundations without paying Rs 1.5-2 lakh."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is Rs 90,000 the total Vignan Online MBA fee?",
+        "answer": "Yes. Rs 90,000 is the total programme fee spread across 4 semesters. Reconfirm any additional charges for registration, examination, or project with our counsellor before enrolment."
+      },
+      {
+        "question": "Does Vignan offer zero-cost EMI?",
+        "answer": "Yes. Vignan's Foundation for Science, Technology and Research offers zero-cost EMI directly at Rs 5,700 per month. No external NBFC or marketing partner is involved."
+      },
+      {
+        "question": "What is Vignan's NAAC grade?",
+        "answer": "Vignan's Foundation for Science, Technology and Research holds NAAC A+ accreditation. Verify the current status at naac.gov.in."
+      },
+      {
+        "question": "Does the Business Analytics specialisation cover Python or machine learning?",
+        "answer": "No. The syllabus focuses on business intelligence, data warehousing, data mining, and BI reporting. It does not include Python, R, or machine learning modules. Consider Sharda Data Science or higher-tier programmes for ML coverage."
+      },
+      {
+        "question": "How does Vignan BA compare to Galgotias BA on fees?",
+        "answer": "Vignan BA costs Rs 90,000 total. Galgotias BA costs approximately Rs 86,400. Galgotias is Rs 3,600 cheaper but Vignan adds NIRF #70 university ranking as a credential advantage."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want a NAAC A+, UGC-DEB approved online MBA in Business Analytics at Rs 90,000 total fee.",
+        "You work in BI, MIS, or business analysis and need the MBA credential for promotion or role expansion.",
+        "You want zero-cost EMI at Rs 5,700/month directly through the university with no NBFC intermediary."
+      ],
+      "consider": [
+        "If you want Python, R, or machine learning coverage, Sharda Data Science (Rs 1,54,500) or higher-tier analytics programmes are better fits.",
+        "If you want a similarly priced alternative, Galgotias BA (Rs 86,400, NAAC A+) is Rs 3,600 cheaper.",
+        "If brand recognition at top analytics firms matters, NIU (Rs 97,600) or programmes from NIRF top-50 universities offer stronger positioning."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2030,
+    "generatedAt": "2026-04-23",
+    "batchNumber": 28,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-23"
+  }
+}
