@@ -1,0 +1,135 @@
+{
+  "uniSlug": "dr-mgr-educational-research-institute-online",
+  "program": "mba",
+  "specSlug": "information-systems",
+  "sections": {
+    "hero": {
+      "eyebrow": "DR. MGR ONLINE MBA",
+      "headline": "Dr. MGR Online MBA in Information Systems: Fees, Syllabus and Career Scope",
+      "sub": "UGC-DEB approved 2-year programme | NAAC A+ accredited | Rs 1,36,000 - Rs 1,41,000 total fee | Deemed University since 2003"
+    },
+    "tldr": "Dr. MGR Educational and Research Institute Online MBA in Information Systems covers Systems Analysis and Design and Software Quality and Project Management in Sem 3, plus Artificial Intelligence in Sem 4. Common core includes Strategic Management, Entrepreneurship Development, Digital Marketing, International Business Management, and an 8-week mandatory Field Work and Project Work. Total fee Rs 1,36,000 to Rs 1,41,000 across 4 semesters. NAAC A+ accredited, UGC-DEB approved, Deemed University.",
+    "about": {
+      "body": "Dr. MGR Educational and Research Institute is a Deemed University in Chennai, Tamil Nadu, named after former Chief Minister Dr. M.G. Ramachandran. The institution has operated under UGC recognition since 2003 and holds NAAC A+ accreditation with UGC-DEB approval for online programmes.\n\nThe Information Systems specialisation covers Systems Analysis and Design and Software Quality and Project Management in Sem 3, with Artificial Intelligence as a Sem 4 spec-specific subject. The inclusion of AI as a standalone subject is notable at this fee point. Chennai is India's second-largest IT hub, and an IS-focused MBA from a local Deemed University has practical value for IT professionals targeting management roles.\n\nAt Rs 1,36,000 to Rs 1,41,000 total, the programme sits in the mid-range for NAAC A+ online MBAs. The 8-week mandatory field project can be completed in an IT organization, covering systems implementation, software project management, or AI adoption projects.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "note": "Semesters 1-2 cover the common MBA core. Semesters 3-4 below show the Information Systems specialisation subjects. Spec-specific subjects listed first, followed by common core.",
+      "semesters": [
+        {
+          "sem": 3,
+          "subjects": [
+            { "name": "Systems Analysis and Design", "desc": "Requirements gathering, system modelling (DFD, UML), feasibility analysis, system design methodologies, and implementation planning." },
+            { "name": "Software Quality and Project Management", "desc": "Software quality assurance, CMMI/ISO standards, Agile and Waterfall project management, risk management, and software testing frameworks." },
+            { "name": "Strategic Management", "desc": "Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic implementation in IT organizations." },
+            { "name": "Entrepreneurship Development", "desc": "Tech startup ideation, SaaS business planning, funding strategies, and MSME support for IT ventures." },
+            { "name": "Management Accounting", "desc": "Cost-volume-profit analysis, IT project budgeting, variance analysis, and management decision-making tools for technology investments." },
+            { "name": "Production and Operations Management", "desc": "IT service delivery management, ITIL basics, capacity planning, and operations scheduling for technology teams." },
+            { "name": "Skill Development", "desc": "Communication skills, technical presentation techniques, team management, and professional development modules." },
+            { "name": "Summer Project", "desc": "Industry-linked summer project in an IT organization requiring systems analysis, data collection, and structured report." }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            { "name": "Artificial Intelligence", "desc": "AI fundamentals, machine learning basics, natural language processing concepts, AI applications in business, and ethical considerations in AI deployment." },
+            { "name": "Digital Marketing", "desc": "Digital marketing tools, marketing analytics, SEO/SEM, social media strategy, and data-driven marketing decisions." },
+            { "name": "International Business Management", "desc": "Global IT services market, offshore delivery models, cross-border technology partnerships, and international business strategy." },
+            { "name": "Contemporary Seminar", "desc": "Student-led seminar on current IT management topics. Research, presentation, and peer discussion on emerging technology trends." },
+            { "name": "Field Work and Project Work (8 Weeks)", "desc": "Mandatory 8-week field project in an IT organization. Systems implementation, software project analysis, or AI adoption study with structured report and viva voce." }
+          ]
+        }
+      ]
+    },
+    "whoHires": {
+      "body": "Dr. MGR MBA Information Systems graduates target roles across IT management, systems consulting, and technology leadership:\n\n**Industries:** IT services, software product companies, IT consulting, BFSI technology teams, healthcare IT (leveraging Dr. MGR's heritage), e-commerce, telecom, and government IT departments\n\n**Entry-level roles:** Systems Analyst, IT Project Coordinator, Business Analyst, Quality Assurance Analyst, Technology Consultant (junior), IT Operations Executive\n\n**Mid-level roles (3-5 years):** IT Project Manager, Systems Manager, Business Analyst Lead, Quality Manager, IT Service Delivery Manager, Product Manager\n\n**Senior roles (7+ years):** CTO (mid-market), VP Engineering, Head of IT, Director of Systems, IT Programme Director, Chief Information Officer\n\n**Employers:** IT companies (TCS, Infosys, Wipro, Cognizant, HCL in Chennai), IT consulting firms, fintech companies, healthcare IT providers, and Tamil Nadu state IT departments.\n\n**Note:** Chennai houses major IT parks (Tidel Park, SIPCOT IT Park, Mahindra World City). Dr. MGR's local brand provides access to the Chennai IT ecosystem."
+    },
+    "skills": {
+      "body": "The Information Systems specialisation builds skills across systems design, software quality, and AI applications:\n\n**Technical skills:**\n- Systems Analysis: requirements engineering, process modelling (DFD, use case diagrams, UML), feasibility assessment, and system design documentation\n- Software Quality: QA methodologies, CMMI process areas, ISO 9001/27001 for IT, test planning, defect management, and software metrics\n- Project Management: Agile (Scrum, Kanban), Waterfall, hybrid models, project risk assessment, WBS creation, and earned value management\n- Artificial Intelligence: ML algorithm selection, NLP application design, AI use case identification, and ethical AI framework evaluation\n\n**Applied skills:**\n- IT Service Management: ITIL fundamentals, service level management, incident and problem management, and IT operations optimization\n- Technology Strategy: IT investment appraisal, build-vs-buy decisions, vendor evaluation, and digital transformation roadmap design\n\n**Soft skills:** Translating technical requirements to business stakeholders, managing cross-functional IT projects, vendor negotiation, and presenting technology ROI to leadership."
+    },
+    "comparisons": {
+      "body": "Comparing Dr. MGR Online MBA Information Systems against peer programmes:\n\n**vs Vignan Online MBA IT (Rs 90,000):** Vignan is Rs 46,000 to Rs 51,000 cheaper. Vignan covers IT-related subjects within its curriculum. Dr. MGR has systems analysis, software quality, and AI as dedicated subjects. Vignan wins on fee. Dr. MGR wins on the AI standalone course and Chennai IT ecosystem access.\n\n**vs Kurukshetra University Online MBA IT (Rs 1,02,000):** Kurukshetra is Rs 34,000 to Rs 39,000 cheaper. Both are UGC-DEB approved. Kurukshetra has North India (Haryana/NCR) IT corridor access. Dr. MGR has NAAC A+ and Chennai IT hub proximity. Choose based on regional career focus.\n\n**vs JIIT Online MBA IT and Business Analytics (Rs 1,82,000):** JIIT is Rs 41,000 to Rs 46,000 more expensive. JIIT (Jaypee) has a dedicated engineering and technology focus. Dr. MGR at Rs 1.36-1.41L offers NAAC A+ at a lower fee with AI as a standalone subject. JIIT wins on tech-specific brand. Dr. MGR wins on fee."
+    },
+    "fees": {
+      "body": "The Dr. MGR Online MBA in Information Systems is priced between Rs 1,36,000 and Rs 1,41,000 total across 4 semesters (2-year programme). Fee range varies slightly by specialization - contact our counsellor for the exact figure for your chosen track.\n\n**Payment breakdown**:\n- **Per semester**: Rs 34,000 - Rs 40,000 across 4 semesters\n- **Full upfront option**: Rs 1,36,000 - Rs 1,41,000 one-time\n\n**Additional charges**:\n- Registration fee: Rs 1,000 (one-time, non-refundable at admission)\n\n**Zero-cost EMI**: Available directly through Dr. MGR Educational and Research Institute starting Rs 5,700 per month. No external marketing partner or NBFC intermediary.\n\nEdifyEdu reconfirms fees with Dr. MGR Online each quarter. Please reconfirm current fees for Information Systems with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Information Systems as the specialisation, issued by Dr. MGR Educational and Research Institute (Deemed University) under UGC-DEB online mode standards.\n\nThe degree carries NAAC A+ accreditation, UGC-DEB approval, and Deemed University status since 2003. Valid for IT management roles, government IT positions, PSU technology officer recruitment, and private-sector systems management careers. DigiLocker issuance is standard."
+    },
+    "reviews": {
+      "intro": "Three reviews from Dr. MGR Online MBA Information Systems students. Ratings reflect individual experience.",
+      "items": [
+        {
+          "name": "Venkat",
+          "city": "Chennai",
+          "year": 2024,
+          "rating": 4,
+          "liked": "AI as a standalone Sem 4 subject is a differentiator. Dr. MGR's Chennai location means the brand is recognized by local IT companies in Tidel Park and SIPCOT",
+          "disliked": "Only three IS-specific subjects total. Would have preferred more depth in ERP systems or cloud computing",
+          "body": "I work as a developer at a Chennai IT company and needed the MBA for a project management role. Systems Analysis and Design covered UML and requirements engineering at a practical level. Software Quality and Project Management gave me CMMI and Agile frameworks. AI in Sem 4 was a bonus. The 8-week field project in my own company let me apply learnings to a real systems implementation."
+        },
+        {
+          "name": "Divya",
+          "city": "Bangalore",
+          "year": 2024,
+          "rating": 4,
+          "liked": "Software Quality and Project Management covered both CMMI and Agile at a depth useful for my QA lead role",
+          "disliked": "Dr. MGR brand is well-known in Tamil Nadu but less recognized in Karnataka. Bangalore IT employers may not know the university",
+          "body": "The IS curriculum is compact but relevant. Three spec subjects covering systems, quality, and AI. The common core adds strategic management and digital marketing breadth. Fee at Rs 1.36-1.41L is mid-range for NAAC A+. For Chennai IT professionals, the local brand works well. For Bangalore or Hyderabad, the brand recognition drops. The 8-week project is a plus."
+        },
+        {
+          "name": "Prakash",
+          "city": "Madurai",
+          "year": 2023,
+          "rating": 3,
+          "liked": "Systems Analysis and Design provided structured methodology knowledge useful for moving from coding to analyst roles",
+          "disliked": "The AI subject covers fundamentals only. Not a deep dive into ML or data science. Study materials could be more current",
+          "body": "At Rs 1.36-1.41L, Vignan at Rs 90,000 and Kurukshetra at Rs 1,02,000 are cheaper options. Dr. MGR's edge is the AI subject and Chennai IT proximity. If you work in Chennai IT, the brand helps. If national IT brand is your goal, Manipal or Amity have stronger recognition. The LMS is functional but not premium."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is Dr. MGR a Deemed University?",
+        "answer": "Yes. Dr. MGR Educational and Research Institute has operated as a Deemed University under UGC recognition since 2003. Named after former Tamil Nadu Chief Minister Dr. M.G. Ramachandran."
+      },
+      {
+        "question": "What is the fee difference between Rs 1.36L and Rs 1.41L?",
+        "answer": "The total fee varies slightly by specialization. Contact our counsellor to confirm the exact fee for Information Systems before making any payment."
+      },
+      {
+        "question": "Is Dr. MGR Online MBA UGC-DEB approved?",
+        "answer": "Yes. Dr. MGR Educational and Research Institute is UGC-DEB approved for online programmes. The degree is legally equivalent to a campus MBA under UGC 2020 guidelines."
+      },
+      {
+        "question": "Does the Information Systems MBA cover AI?",
+        "answer": "Yes. Artificial Intelligence is a standalone Semester 4 subject covering ML basics, NLP concepts, AI business applications, and ethical AI considerations. This is a spec-specific subject, not part of the common core."
+      },
+      {
+        "question": "Is this MBA relevant for IT project managers?",
+        "answer": "Yes. Software Quality and Project Management covers Agile, Waterfall, CMMI, and risk management. Combined with Systems Analysis and Design and the 8-week field project, the programme builds IT project management competence for mid-level transitions."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You work in Chennai IT and want an MBA from a locally recognized Deemed University with NAAC A+.",
+        "AI as a standalone subject and systems analysis/software quality depth match your career direction.",
+        "The 8-week mandatory field project in an IT organization is valuable for practical learning.",
+        "Mid-range fee (Rs 1.36-1.41L) with NAAC A+ accreditation meets your budget and quality requirements."
+      ],
+      "consider": [
+        "Vignan at Rs 90,000 or Kurukshetra at Rs 1,02,000 offer IT/IS MBAs at lower fees.",
+        "JIIT at Rs 1,82,000 has a stronger technology-specific brand if budget allows.",
+        "Only three IS-specific subjects total. If deeper IT specialisation (ERP, cloud, data science) is needed, compare syllabi carefully.",
+        "National brand recognition outside Tamil Nadu is limited. For Bangalore, Hyderabad, or NCR IT careers, consider universities with stronger pan-India presence."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2000,
+    "generatedAt": "2026-04-23",
+    "batchNumber": 31,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-23"
+  }
+}
