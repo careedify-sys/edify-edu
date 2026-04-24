@@ -1042,30 +1042,6 @@ export const BLOG_POSTS: BlogPost[] = [
 </form>
 </div>
 </div>
-
-<h2>Frequently Asked Questions</h2>
-
-<div class="faq-accordion">
-<details><summary>Is NMIMS online MBA UGC approved?</summary><p>Yes. NMIMS holds UGC-DEB Category I status, the highest recognition tier. The online MBA degree is treated as equivalent to a regular on-campus MBA under UGC guidelines. It is valid for government jobs, PSU recruitment, UPSC eligibility, banking exams, and higher education applications across India.</p></details>
-
-<details><summary>What is the total fee for NMIMS online MBA?</summary><p>The standard programme fee is Rs 1,96,000 for two years. Three payment options exist: Rs 55,000 per semester (total Rs 2,20,000), Rs 1,05,000 per year (total Rs 2,10,000), or no-cost EMI for 3 to 12 months through education lending partners. An application fee of Rs 1,200 is also charged and is non-refundable.</p></details>
-
-<details><summary>What specialisations does NMIMS offer?</summary><p>NMIMS offers six specialisations: Finance Management, Marketing Management, Human Resource Management, Operations and Data Sciences Management, Business Management, and Information Technology Management. Core subjects run in semesters one and two. Specialisation subjects begin from semester three.</p></details>
-
-<details><summary>What is NMIMS NIRF rank?</summary><p>NMIMS holds NIRF #17 in the Management category for 2025. It also ranks NIRF #52 in the University category. The institution carries NAAC A++ accreditation with a CGPA of 3.6. It is also one of fewer than six percent of business schools globally with AACSB accreditation.</p></details>
-
-<details><summary>Does NMIMS offer placements for online MBA?</summary><p>NMIMS provides career support including resume review, interview preparation, and access to a recruiter network. There is no guaranteed placement for online MBA students. Outcomes depend on individual work experience, specialisation choice, and how actively students engage with the career services team.</p></details>
-
-<details><summary>Can I do NMIMS online MBA while working?</summary><p>Yes. The programme is designed for working professionals. Live sessions are scheduled on weekends. Recorded lectures remain available through the LMS at all times. All exams are conducted online with no requirement to visit a physical centre. Most students complete the programme alongside full-time employment.</p></details>
-
-<details><summary>How does NMIMS compare to Amity online MBA?</summary><p>NMIMS costs Rs 1.96L with 6 specialisations and holds NIRF #17 in Management. Amity costs Rs 2.25L with 18 specialisations and holds NIRF #22 in the University category. NMIMS is cheaper and carries a stronger management-specific rank. Amity offers more specialisation variety and international recognition.</p></details>
-
-<details><summary>Is NMIMS online MBA degree equivalent to regular MBA?</summary><p>Yes, under the UGC-DEB 2020 notification. The degree certificate does not mention the mode of study. It carries the same legal validity as a regular campus MBA. The degree is accepted for PSU recruitment, UPSC eligibility, banking sector jobs, private sector employment, and higher education admissions.</p></details>
-
-<details><summary>What is the admission process?</summary><p>Apply online at the NMIMS CDOE portal. Upload required documents including graduation certificate, mark sheets, photo ID, and passport-size photo. Pay the Rs 1,200 application fee. No entrance exam is required. Admission is on a first-come-first-served basis. Two intake windows: January and July.</p></details>
-
-<details><summary>Is NMIMS better than Symbiosis for online MBA?</summary><p>NMIMS costs Rs 1.96L and holds NIRF #17 in Management. Symbiosis costs Rs 3.15L and holds NIRF #11 in Management with NAAC A++ accreditation. Symbiosis has a higher NIRF Management rank but is significantly more expensive. NMIMS offers better value if your budget is around Rs 2L.</p></details>
-</div>
     `,
   },
   {
