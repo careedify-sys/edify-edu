@@ -9,13 +9,16 @@ interface Props {
 }
 
 export default function EMIPlans({ u, pd }: Props) {
+  // Don't render EMI section if emiFrom is 0 (uni doesn't offer EMI)
+  if (!u.emiFrom || u.emiFrom <= 0) return null
+
   const totalFeeNum = u.feeMin
   const emi6  = Math.round(totalFeeNum / 6)
   const emi12 = Math.round(totalFeeNum / 12)
   const emi24 = Math.round(totalFeeNum / 24)
 
   const plans = [
-    { label: '6 months', amount: emi6, badge: 'No cost EMI' },
+    { label: '6 months', amount: emi6, badge: 'Short tenure' },
     { label: '12 months', amount: emi12, badge: 'Popular' },
     { label: '24 months', amount: emi24, badge: 'Low monthly' },
   ]
@@ -27,7 +30,7 @@ export default function EMIPlans({ u, pd }: Props) {
         <h2 className="text-lg font-bold" style={{ color: '#0B1533' }}>EMI Plans</h2>
       </div>
       <p className="text-sm text-slate-500 mb-4">
-        Starting at {formatINR(u.emiFrom)}/month. Zero-cost EMI options available directly through the university or education lending partners.
+        Starting at {formatINR(u.emiFrom)}/month. EMI options available through the university or education lending partners. Confirm interest structure with counsellor.
       </p>
 
       <div className="grid grid-cols-3 gap-3 mb-5">

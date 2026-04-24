@@ -18,25 +18,67 @@
         {
           "sem": 1,
           "subjects": [
-            { "name": "The Firm and the Consumer", "description": "Analyse microeconomic foundations of firm behaviour, consumer demand theory, pricing strategy, and market structures relevant to managerial decision-making." },
-            { "name": "Global Economics", "description": "Examine macroeconomic indicators, international trade theory, exchange rate dynamics, and fiscal and monetary policy impacts on global business operations." },
-            { "name": "Business Statistics", "description": "Apply probability distributions, hypothesis testing, regression analysis, and statistical inference to business data for evidence-based decision-making." },
-            { "name": "Financial Management", "description": "Cover capital budgeting, cost of capital estimation, working capital management, dividend policy, and corporate financing decisions." },
-            { "name": "Marketing Management", "description": "Study market segmentation, product positioning, pricing frameworks, distribution channel design, and integrated marketing communication strategies." },
-            { "name": "Organisational Behaviour", "description": "Explore individual motivation theories, group dynamics, leadership models, organisational culture, and change management approaches in modern workplaces." },
-            { "name": "Operations Management", "description": "Learn process design, capacity planning, inventory control, quality management, and lean operations principles for service and manufacturing contexts." },
-            { "name": "Business Analytics", "description": "Apply data visualisation, predictive modelling, and prescriptive analytics tools to transform business data into actionable management insights." },
-            { "name": "Strategic Management", "description": "Develop competitive strategy using industry analysis, resource-based views, diversification frameworks, and strategic execution plans for organisations." },
-            { "name": "Leadership", "description": "Build leadership capabilities through self-awareness frameworks, influence strategies, team management practices, and ethical leadership in organisational contexts." }
+            {
+              "name": "The Firm and the Consumer",
+              "description": "Analyse microeconomic foundations of firm behaviour, consumer demand theory, pricing strategy, and market structures relevant to managerial decision-making."
+            },
+            {
+              "name": "Global Economics",
+              "description": "Examine macroeconomic indicators, international trade theory, exchange rate dynamics, and fiscal and monetary policy impacts on global business operations."
+            },
+            {
+              "name": "Business Statistics",
+              "description": "Apply probability distributions, hypothesis testing, regression analysis, and statistical inference to business data for evidence-based decision-making."
+            },
+            {
+              "name": "Financial Management",
+              "description": "Cover capital budgeting, cost of capital estimation, working capital management, dividend policy, and corporate financing decisions."
+            },
+            {
+              "name": "Marketing Management",
+              "description": "Study market segmentation, product positioning, pricing frameworks, distribution channel design, and integrated marketing communication strategies."
+            },
+            {
+              "name": "Organisational Behaviour",
+              "description": "Explore individual motivation theories, group dynamics, leadership models, organisational culture, and change management approaches in modern workplaces."
+            },
+            {
+              "name": "Operations Management",
+              "description": "Learn process design, capacity planning, inventory control, quality management, and lean operations principles for service and manufacturing contexts."
+            },
+            {
+              "name": "Business Analytics",
+              "description": "Apply data visualisation, predictive modelling, and prescriptive analytics tools to transform business data into actionable management insights."
+            },
+            {
+              "name": "Strategic Management",
+              "description": "Develop competitive strategy using industry analysis, resource-based views, diversification frameworks, and strategic execution plans for organisations."
+            },
+            {
+              "name": "Leadership",
+              "description": "Build leadership capabilities through self-awareness frameworks, influence strategies, team management practices, and ethical leadership in organisational contexts."
+            }
           ]
         },
         {
           "sem": 2,
           "subjects": [
-            { "name": "Financial Modelling and Data Visualisation", "description": "Build financial models using spreadsheet tools and present output through interactive dashboards and data visualisation techniques for stakeholder communication." },
-            { "name": "Project Finance", "description": "Structure project finance transactions including cash flow waterfall modelling, risk allocation, SPV structures, and debt sizing for infrastructure and energy projects." },
-            { "name": "Behavioural Finance", "description": "Examine cognitive biases, heuristics, prospect theory, and market anomalies that challenge efficient market assumptions in investment decision-making." },
-            { "name": "Principles of Financial Regulation", "description": "Study global and Indian regulatory frameworks including Basel norms, SEBI regulations, RBI guidelines, and compliance requirements for financial institutions." }
+            {
+              "name": "Financial Modelling and Data Visualisation",
+              "description": "Build financial models using spreadsheet tools and present output through interactive dashboards and data visualisation techniques for stakeholder communication."
+            },
+            {
+              "name": "Project Finance",
+              "description": "Structure project finance transactions including cash flow waterfall modelling, risk allocation, SPV structures, and debt sizing for infrastructure and energy projects."
+            },
+            {
+              "name": "Behavioural Finance",
+              "description": "Examine cognitive biases, heuristics, prospect theory, and market anomalies that challenge efficient market assumptions in investment decision-making."
+            },
+            {
+              "name": "Principles of Financial Regulation",
+              "description": "Study global and Indian regulatory frameworks including Basel norms, SEBI regulations, RBI guidelines, and compliance requirements for financial institutions."
+            }
           ]
         }
       ],
@@ -52,7 +94,7 @@
       "body": "JGU is a premium-tier 1-year MBA. Comparisons reflect this positioning.\n\n**vs MAHE Online MBA (Rs 2,92,000, 2-year, NIRF #3):** MAHE offers NIRF #3 ranking and a well-established 2-year format. JGU offers AACSB accreditation (global gold standard), IoE status, and completion in 12 months instead of 24. For working professionals who cannot commit to two years, JGU's accelerated format is the differentiator. MAHE's NIRF ranking carries weight in Indian employer perception. JGU's AACSB carries weight internationally.\n\n**vs NMIMS Online MBA (Rs 1,96,000-2,20,000, 2-year):** NMIMS carries strong brand recognition in Mumbai's financial services market. JGU offers AACSB accreditation and 1-year completion. NMIMS Finance is deeper on capital markets and investment banking content. JGU Finance covers project finance and financial regulation, which are less common in online MBA programmes. For professionals targeting international career mobility, JGU's AACSB credential is more portable.\n\n**vs Amity Online MBA (Rs 2,25,000, 2-year, NIRF #22):** Amity offers broad specialisation choices and NIRF #22 at accessible fees. JGU targets a premium segment with AACSB, IoE status, and the 1-year accelerated format. For experienced professionals (5+ years) who value credential quality over fee optimisation, JGU is positioned higher. Amity serves a broader audience including early-career professionals."
     },
     "fees": {
-      "body": "O.P. Jindal Global University 1-Year Online MBA in Finance fee structure is available upon application. EMI starting at Rs 6,319 per month directly through the university.\n\nJGU is an Institution of Eminence declared by the Ministry of Education, AACSB accredited (global gold standard held by ~6% of B-schools worldwide), and QS 5 Star rated. The 1-year format (12 months, 72 credits) is enabled by JGU's IoE status under UGC Regulations 2017.\n\nContact our counsellor for current fee structure, payment options, and EMI tenure. EdifyEdu reconfirms fees with JGU each quarter. Fees listed are indicative."
+      "body": "O.P. Jindal Global University 1-Year Online MBA in Finance total programme fee is Rs 2,00,000 inclusive of taxes. No-cost EMI available starting Rs 6,319 per month. 6-month no-cost EMI option available. Rs 5,000 seat blocking fee at admission.\n\nJGU is an Institution of Eminence declared by the Ministry of Education, AACSB accredited (global gold standard held by ~6% of B-schools worldwide), and QS 5 Star rated. The 1-year format (12 months, 72 credits) is enabled by JGU's IoE status under UGC Regulations 2017.\n\nContact our counsellor for current fee structure, payment options, and EMI tenure. EdifyEdu reconfirms fees with JGU each quarter. Fees listed are indicative."
     },
     "certificate": {
       "body": "The O.P. Jindal Global University MBA degree certificate carries the JGU name, the MBA designation, and identifies the Finance specialisation. JGU is UGC recognised, holds Institution of Eminence status from the Ministry of Education, and is AACSB accredited. The AACSB accreditation is recognised globally and signals that JGU's business programmes meet international quality benchmarks. The degree is valid for employment, promotions, higher studies, and international credential evaluation. JGU's IoE status and AACSB accreditation distinguish this certificate from standard online MBA degrees in India."

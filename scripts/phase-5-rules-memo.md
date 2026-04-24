@@ -304,3 +304,13 @@ Each shipped university has a position in the TRAFFIC_ORDER array in components/
 
 Current order (as of 2026-04-24): Amity > NMIMS > MUJ > SSODL > LPU > JAIN > UPES > CU > SMU > Shoolini > Amrita > IGNOU > DPU > MAHE > JIIT > Galgotias > Uttaranchal > NIU > Sharda (19 traffic-ranked unis, rest appended alphabetically).
 
+---
+
+## DATA CONSISTENCY CASCADE RULE (Phase 7.5+) — Rule #15
+
+Hub pages (e.g., /programs/mba) summarise data from child pages (main MBA + spec pages). Any fact on a hub page MUST match the fact on the corresponding child pages: fees, NIRF rank + category, NAAC grade, UGC-DEB status, scholarships, EMI structure, specialisations list.
+
+Before publishing any hub page, run a four-way consistency audit (hub <> lib/data.ts <> main MBA page JSON <> spec page JSON). Any mismatch: halt and resolve to single source of truth. No hub page ships with internal contradictions.
+
+EMI claims specifically: do NOT claim "zero-cost EMI" unless the university explicitly offers it. Use "EMI options available (confirm interest structure with counsellor)" as the safe default. The EMIPlans component now hides entirely when emiFrom = 0.
+

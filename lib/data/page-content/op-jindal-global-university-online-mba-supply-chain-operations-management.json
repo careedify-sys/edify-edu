@@ -18,25 +18,67 @@
         {
           "sem": 1,
           "subjects": [
-            { "name": "The Firm and the Consumer", "description": "Analyse microeconomic foundations of firm behaviour, consumer demand theory, pricing strategy, and market structures relevant to managerial decision-making." },
-            { "name": "Global Economics", "description": "Examine macroeconomic indicators, international trade theory, exchange rate dynamics, and fiscal and monetary policy impacts on global business operations." },
-            { "name": "Business Statistics", "description": "Apply probability distributions, hypothesis testing, regression analysis, and statistical inference to business data for evidence-based decision-making." },
-            { "name": "Financial Management", "description": "Cover capital budgeting, cost of capital estimation, working capital management, dividend policy, and corporate financing decisions." },
-            { "name": "Marketing Management", "description": "Study market segmentation, product positioning, pricing frameworks, distribution channel design, and integrated marketing communication strategies." },
-            { "name": "Organisational Behaviour", "description": "Explore individual motivation theories, group dynamics, leadership models, organisational culture, and change management approaches in modern workplaces." },
-            { "name": "Operations Management", "description": "Learn process design, capacity planning, inventory control, quality management, and lean operations principles for service and manufacturing contexts." },
-            { "name": "Business Analytics", "description": "Apply data visualisation, predictive modelling, and prescriptive analytics tools to transform business data into actionable management insights." },
-            { "name": "Strategic Management", "description": "Develop competitive strategy using industry analysis, resource-based views, diversification frameworks, and strategic execution plans for organisations." },
-            { "name": "Leadership", "description": "Build leadership capabilities through self-awareness frameworks, influence strategies, team management practices, and ethical leadership in organisational contexts." }
+            {
+              "name": "The Firm and the Consumer",
+              "description": "Analyse microeconomic foundations of firm behaviour, consumer demand theory, pricing strategy, and market structures relevant to managerial decision-making."
+            },
+            {
+              "name": "Global Economics",
+              "description": "Examine macroeconomic indicators, international trade theory, exchange rate dynamics, and fiscal and monetary policy impacts on global business operations."
+            },
+            {
+              "name": "Business Statistics",
+              "description": "Apply probability distributions, hypothesis testing, regression analysis, and statistical inference to business data for evidence-based decision-making."
+            },
+            {
+              "name": "Financial Management",
+              "description": "Cover capital budgeting, cost of capital estimation, working capital management, dividend policy, and corporate financing decisions."
+            },
+            {
+              "name": "Marketing Management",
+              "description": "Study market segmentation, product positioning, pricing frameworks, distribution channel design, and integrated marketing communication strategies."
+            },
+            {
+              "name": "Organisational Behaviour",
+              "description": "Explore individual motivation theories, group dynamics, leadership models, organisational culture, and change management approaches in modern workplaces."
+            },
+            {
+              "name": "Operations Management",
+              "description": "Learn process design, capacity planning, inventory control, quality management, and lean operations principles for service and manufacturing contexts."
+            },
+            {
+              "name": "Business Analytics",
+              "description": "Apply data visualisation, predictive modelling, and prescriptive analytics tools to transform business data into actionable management insights."
+            },
+            {
+              "name": "Strategic Management",
+              "description": "Develop competitive strategy using industry analysis, resource-based views, diversification frameworks, and strategic execution plans for organisations."
+            },
+            {
+              "name": "Leadership",
+              "description": "Build leadership capabilities through self-awareness frameworks, influence strategies, team management practices, and ethical leadership in organisational contexts."
+            }
           ]
         },
         {
           "sem": 2,
           "subjects": [
-            { "name": "Operations Research", "description": "Apply linear programming, transportation models, assignment problems, queuing theory, and simulation techniques to optimise supply chain and operations decisions." },
-            { "name": "Global Logistics", "description": "Design global logistics networks covering freight management, customs and trade compliance, warehouse strategy, last-mile delivery, and cross-border supply chain coordination." },
-            { "name": "Project Management Analytics", "description": "Use data-driven project planning with earned value analysis, risk quantification, schedule optimisation, and resource allocation for complex operations projects." },
-            { "name": "Service Operations Management", "description": "Manage service delivery systems including capacity planning for services, service quality measurement, demand forecasting, and service process redesign." }
+            {
+              "name": "Operations Research",
+              "description": "Apply linear programming, transportation models, assignment problems, queuing theory, and simulation techniques to optimise supply chain and operations decisions."
+            },
+            {
+              "name": "Global Logistics",
+              "description": "Design global logistics networks covering freight management, customs and trade compliance, warehouse strategy, last-mile delivery, and cross-border supply chain coordination."
+            },
+            {
+              "name": "Project Management Analytics",
+              "description": "Use data-driven project planning with earned value analysis, risk quantification, schedule optimisation, and resource allocation for complex operations projects."
+            },
+            {
+              "name": "Service Operations Management",
+              "description": "Manage service delivery systems including capacity planning for services, service quality measurement, demand forecasting, and service process redesign."
+            }
           ]
         }
       ],
@@ -52,7 +94,7 @@
       "body": "JGU is a premium-tier 1-year MBA. Comparisons reflect this positioning.\n\n**vs MAHE Online MBA (Rs 2,92,000, 2-year, NIRF #3):** MAHE offers NIRF #3 ranking and strong operations management faculty. JGU offers AACSB accreditation (global gold standard), IoE status, and completion in 12 months instead of 24. For supply chain professionals managing live logistics networks, taking two years is a significant opportunity cost. JGU's Global Logistics and Operations Research electives address global supply chain complexity. MAHE's NIRF ranking carries strong weight with Indian manufacturing employers.\n\n**vs NMIMS Online MBA (Rs 1,96,000-2,20,000, 2-year):** NMIMS offers Operations and Data Sciences Management as a combined specialisation. JGU's Supply Chain & Operations Management is more focused on logistics, operations research, and service operations. For professionals specifically targeting supply chain leadership roles, JGU's dedicated specialisation and 1-year format offer a more targeted path. NMIMS serves professionals wanting a data science and operations combination.\n\n**vs Amity Online MBA (Rs 2,25,000, 2-year, NIRF #22):** Amity offers Production and Operations Management at accessible fees with NIRF #22 ranking. JGU targets a premium segment with AACSB, IoE status, and the 1-year accelerated format. For experienced supply chain professionals (5+ years) managing global or multi-site operations, JGU's Global Logistics content and AACSB credential add international weight."
     },
     "fees": {
-      "body": "O.P. Jindal Global University 1-Year Online MBA in Supply Chain & Operations Management fee structure is available upon application. EMI starting at Rs 6,319 per month directly through the university.\n\nJGU is an Institution of Eminence declared by the Ministry of Education, AACSB accredited (global gold standard held by ~6% of B-schools worldwide), and QS 5 Star rated. The 1-year format (12 months, 72 credits) is enabled by JGU's IoE status under UGC Regulations 2017.\n\nContact our counsellor for current fee structure, payment options, and EMI tenure. EdifyEdu reconfirms fees with JGU each quarter. Fees listed are indicative."
+      "body": "O.P. Jindal Global University 1-Year Online MBA in Supply Chain & Operations Management total programme fee is Rs 2,00,000 inclusive of taxes. No-cost EMI available starting Rs 6,319 per month. 6-month no-cost EMI option available. Rs 5,000 seat blocking fee at admission.\n\nJGU is an Institution of Eminence declared by the Ministry of Education, AACSB accredited (global gold standard held by ~6% of B-schools worldwide), and QS 5 Star rated. The 1-year format (12 months, 72 credits) is enabled by JGU's IoE status under UGC Regulations 2017.\n\nContact our counsellor for current fee structure, payment options, and EMI tenure. EdifyEdu reconfirms fees with JGU each quarter. Fees listed are indicative."
     },
     "certificate": {
       "body": "The O.P. Jindal Global University MBA degree certificate carries the JGU name, the MBA designation, and identifies the Supply Chain & Operations Management specialisation. JGU is UGC recognised, holds Institution of Eminence status from the Ministry of Education, and is AACSB accredited. The AACSB accreditation is recognised globally and signals that JGU's business programmes meet international quality benchmarks. The degree is valid for employment, promotions, higher studies, and international credential evaluation. For supply chain professionals operating across borders, the AACSB and IoE credentials carry weight with global employers."

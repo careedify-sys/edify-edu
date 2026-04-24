@@ -18,25 +18,67 @@
         {
           "sem": 1,
           "subjects": [
-            { "name": "The Firm and the Consumer", "description": "Analyse microeconomic foundations of firm behaviour, consumer demand theory, pricing strategy, and market structures relevant to managerial decision-making." },
-            { "name": "Global Economics", "description": "Examine macroeconomic indicators, international trade theory, exchange rate dynamics, and fiscal and monetary policy impacts on global business operations." },
-            { "name": "Business Statistics", "description": "Apply probability distributions, hypothesis testing, regression analysis, and statistical inference to business data for evidence-based decision-making." },
-            { "name": "Financial Management", "description": "Cover capital budgeting, cost of capital estimation, working capital management, dividend policy, and corporate financing decisions." },
-            { "name": "Marketing Management", "description": "Study market segmentation, product positioning, pricing frameworks, distribution channel design, and integrated marketing communication strategies." },
-            { "name": "Organisational Behaviour", "description": "Explore individual motivation theories, group dynamics, leadership models, organisational culture, and change management approaches in modern workplaces." },
-            { "name": "Operations Management", "description": "Learn process design, capacity planning, inventory control, quality management, and lean operations principles for service and manufacturing contexts." },
-            { "name": "Business Analytics", "description": "Apply data visualisation, predictive modelling, and prescriptive analytics tools to transform business data into actionable management insights." },
-            { "name": "Strategic Management", "description": "Develop competitive strategy using industry analysis, resource-based views, diversification frameworks, and strategic execution plans for organisations." },
-            { "name": "Leadership", "description": "Build leadership capabilities through self-awareness frameworks, influence strategies, team management practices, and ethical leadership in organisational contexts." }
+            {
+              "name": "The Firm and the Consumer",
+              "description": "Analyse microeconomic foundations of firm behaviour, consumer demand theory, pricing strategy, and market structures relevant to managerial decision-making."
+            },
+            {
+              "name": "Global Economics",
+              "description": "Examine macroeconomic indicators, international trade theory, exchange rate dynamics, and fiscal and monetary policy impacts on global business operations."
+            },
+            {
+              "name": "Business Statistics",
+              "description": "Apply probability distributions, hypothesis testing, regression analysis, and statistical inference to business data for evidence-based decision-making."
+            },
+            {
+              "name": "Financial Management",
+              "description": "Cover capital budgeting, cost of capital estimation, working capital management, dividend policy, and corporate financing decisions."
+            },
+            {
+              "name": "Marketing Management",
+              "description": "Study market segmentation, product positioning, pricing frameworks, distribution channel design, and integrated marketing communication strategies."
+            },
+            {
+              "name": "Organisational Behaviour",
+              "description": "Explore individual motivation theories, group dynamics, leadership models, organisational culture, and change management approaches in modern workplaces."
+            },
+            {
+              "name": "Operations Management",
+              "description": "Learn process design, capacity planning, inventory control, quality management, and lean operations principles for service and manufacturing contexts."
+            },
+            {
+              "name": "Business Analytics",
+              "description": "Apply data visualisation, predictive modelling, and prescriptive analytics tools to transform business data into actionable management insights."
+            },
+            {
+              "name": "Strategic Management",
+              "description": "Develop competitive strategy using industry analysis, resource-based views, diversification frameworks, and strategic execution plans for organisations."
+            },
+            {
+              "name": "Leadership",
+              "description": "Build leadership capabilities through self-awareness frameworks, influence strategies, team management practices, and ethical leadership in organisational contexts."
+            }
           ]
         },
         {
           "sem": 2,
           "subjects": [
-            { "name": "Introduction to Digital Finance", "description": "Study the evolution of digital financial services including digital payments, mobile banking, digital lending, insurtech, and regulatory technology (regtech) in the Indian and global context." },
-            { "name": "Managing Fintech Ecosystems", "description": "Analyse fintech business models, platform economics, API-driven banking, embedded finance, and partnership strategies between banks and fintech companies." },
-            { "name": "Blockchain and Cryptocurrency", "description": "Understand distributed ledger technology, consensus mechanisms, smart contracts, tokenisation, cryptocurrency markets, and central bank digital currency (CBDC) implications for financial systems." },
-            { "name": "Financial Analytics", "description": "Apply data analytics techniques to financial data including credit scoring models, transaction pattern analysis, portfolio analytics, and financial risk quantification using statistical and ML tools." }
+            {
+              "name": "Introduction to Digital Finance",
+              "description": "Study the evolution of digital financial services including digital payments, mobile banking, digital lending, insurtech, and regulatory technology (regtech) in the Indian and global context."
+            },
+            {
+              "name": "Managing Fintech Ecosystems",
+              "description": "Analyse fintech business models, platform economics, API-driven banking, embedded finance, and partnership strategies between banks and fintech companies."
+            },
+            {
+              "name": "Blockchain and Cryptocurrency",
+              "description": "Understand distributed ledger technology, consensus mechanisms, smart contracts, tokenisation, cryptocurrency markets, and central bank digital currency (CBDC) implications for financial systems."
+            },
+            {
+              "name": "Financial Analytics",
+              "description": "Apply data analytics techniques to financial data including credit scoring models, transaction pattern analysis, portfolio analytics, and financial risk quantification using statistical and ML tools."
+            }
           ]
         }
       ],
@@ -52,7 +94,7 @@
       "body": "JGU is a premium-tier 1-year MBA. Comparisons reflect this positioning.\n\n**vs MAHE Online MBA (Rs 2,92,000, 2-year, NIRF #3):** MAHE offers NIRF #3 ranking and a strong IT Fintech specialisation variant at MUJ. JGU offers AACSB accreditation, IoE status, dedicated Blockchain and Fintech Ecosystem modules, and completion in 12 months instead of 24. For fintech professionals in fast-moving digital finance roles, the 1-year format avoids the risk of curriculum becoming outdated during a 2-year programme.\n\n**vs NMIMS Online MBA (Rs 1,96,000-2,20,000, 2-year):** NMIMS does not offer a dedicated Digital Finance specialisation in its online MBA. NMIMS Financial Management covers traditional finance deeply. JGU's Digital Finance covers fintech ecosystems, blockchain, cryptocurrency, and financial analytics, which are absent from NMIMS Finance. For professionals specifically targeting fintech or digital banking careers, JGU's specialisation is more directly applicable.\n\n**vs Amity Online MBA (Rs 2,25,000, 2-year, NIRF #22):** Amity offers a Global Finance Market specialisation but does not cover fintech ecosystems, blockchain, or digital finance as dedicated subjects. JGU targets a premium segment with AACSB, IoE status, and digital-native finance content. For professionals already in fintech or digital banking, JGU's specialisation depth and credential quality are positioned higher."
     },
     "fees": {
-      "body": "O.P. Jindal Global University 1-Year Online MBA in Digital Finance fee structure is available upon application. EMI starting at Rs 6,319 per month directly through the university.\n\nJGU is an Institution of Eminence declared by the Ministry of Education, AACSB accredited (global gold standard held by ~6% of B-schools worldwide), and QS 5 Star rated. The 1-year format (12 months, 72 credits) is enabled by JGU's IoE status under UGC Regulations 2017.\n\nContact our counsellor for current fee structure, payment options, and EMI tenure. EdifyEdu reconfirms fees with JGU each quarter. Fees listed are indicative."
+      "body": "O.P. Jindal Global University 1-Year Online MBA in Digital Finance total programme fee is Rs 2,00,000 inclusive of taxes. No-cost EMI available starting Rs 6,319 per month. 6-month no-cost EMI option available. Rs 5,000 seat blocking fee at admission.\n\nJGU is an Institution of Eminence declared by the Ministry of Education, AACSB accredited (global gold standard held by ~6% of B-schools worldwide), and QS 5 Star rated. The 1-year format (12 months, 72 credits) is enabled by JGU's IoE status under UGC Regulations 2017.\n\nContact our counsellor for current fee structure, payment options, and EMI tenure. EdifyEdu reconfirms fees with JGU each quarter. Fees listed are indicative."
     },
     "certificate": {
       "body": "The O.P. Jindal Global University MBA degree certificate carries the JGU name, the MBA designation, and identifies the Digital Finance specialisation. JGU is UGC recognised, holds Institution of Eminence status from the Ministry of Education, and is AACSB accredited. The AACSB accreditation is recognised globally and signals that JGU's business programmes meet international quality benchmarks. The degree is valid for employment, promotions, higher studies, and international credential evaluation. For fintech and digital banking professionals, the combination of AACSB accreditation with a Digital Finance specialisation is distinctive in the Indian online MBA market."
