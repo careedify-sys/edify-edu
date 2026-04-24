@@ -40,10 +40,14 @@ export default function MBAHubClient() {
   const specWithCounts = useMemo(() => {
     return CANONICAL_SPECS.map(spec => {
       const matchingUnis = mbaUnis.filter(u => {
-        const uniSpecs = (u as any).mbaSpecs || []
-        return spec.variants.some(v =>
-          uniSpecs.some((s: string) => s.toLowerCase().includes(v.toLowerCase()))
-        )
+        const uniSpecs: string[] = (u as any).mbaSpecs || []
+        return spec.variants.some(v => {
+          const vl = v.toLowerCase()
+          return uniSpecs.some((s: string) => {
+            const sl = s.toLowerCase()
+            return sl === vl || sl.startsWith(vl + ' ') || sl.endsWith(' ' + vl) || sl.includes(' ' + vl + ' ')
+          })
+        })
       })
       const fees = matchingUnis.map(u => u.feeMin).filter(f => f > 0)
       const feeMin = fees.length > 0 ? Math.min(...fees) : 0
