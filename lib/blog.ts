@@ -839,7 +839,17 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="cta-box">
 <p><strong>Want honest, no-commission guidance on whether NMIMS fits your career goals?</strong></p>
 <p>EdifyEdu compares public UGC/NAAC/NIRF data only. No paid rankings, no referral fees.</p>
-<p><a href="https://formspree.io/f/mojpvgwz" class="ilink">Talk to a counsellor (free)</a></p>
+<div class="cta-box" style="background:#0C2A55;color:#fff;padding:24px;border-radius:16px;margin:20px 0">
+<h4 style="margin:0 0 8px;font-size:16px">Get Free Counselling</h4>
+<p style="font-size:13px;color:#94a3b8;margin:0 0 14px">No commissions. No spam. Just honest guidance.</p>
+<form action="https://formspree.io/f/mojpvgwz" method="POST" style="display:flex;flex-direction:column;gap:8px">
+<input type="text" name="name" placeholder="Your Name" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="name">
+<input type="tel" name="phone" placeholder="WhatsApp Number" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="tel">
+<input type="email" name="email" placeholder="Email" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="email">
+<input type="hidden" name="source" value="NMIMS Blog CTA">
+<button type="submit" style="padding:12px;border-radius:8px;border:none;background:#f59e0b;color:#0C2A55;font-weight:700;font-size:14px;cursor:pointer">Book My Free Call</button>
+</form>
+</div>
 </div>
 
 <h2>NMIMS Online MBA Fees 2026: Full Breakdown</h2>
@@ -904,7 +914,17 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="cta-box">
 <p><strong>Not sure which specialisation fits your career plan?</strong></p>
 <p>Get a free, no-obligation call with an EdifyEdu counsellor. We do not sell admissions.</p>
-<p><a href="/contact" class="ilink">Book a free call</a></p>
+<div class="cta-box" style="background:#0C2A55;color:#fff;padding:24px;border-radius:16px;margin:20px 0">
+<h4 style="margin:0 0 8px;font-size:16px">Get Free Counselling</h4>
+<p style="font-size:13px;color:#94a3b8;margin:0 0 14px">No commissions. No spam. Just honest guidance.</p>
+<form action="https://formspree.io/f/mojpvgwz" method="POST" style="display:flex;flex-direction:column;gap:8px">
+<input type="text" name="name" placeholder="Your Name" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="name">
+<input type="tel" name="phone" placeholder="WhatsApp Number" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="tel">
+<input type="email" name="email" placeholder="Email" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="email">
+<input type="hidden" name="source" value="NMIMS Blog CTA">
+<button type="submit" style="padding:12px;border-radius:8px;border:none;background:#f59e0b;color:#0C2A55;font-weight:700;font-size:14px;cursor:pointer">Book My Free Call</button>
+</form>
+</div>
 </div>
 
 <h2>Placements, Career Support and NMIMS Alumni Network</h2>
@@ -955,7 +975,17 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="cta-box">
 <p><strong>Want an unbiased second opinion before you commit Rs 2L?</strong></p>
 <p>EdifyEdu is not an admission partner for any university. We compare public data. That is it.</p>
-<p><a href="https://formspree.io/f/mojpvgwz" class="ilink">Get free guidance</a></p>
+<div class="cta-box" style="background:#0C2A55;color:#fff;padding:24px;border-radius:16px;margin:20px 0">
+<h4 style="margin:0 0 8px;font-size:16px">Get Free Counselling</h4>
+<p style="font-size:13px;color:#94a3b8;margin:0 0 14px">No commissions. No spam. Just honest guidance.</p>
+<form action="https://formspree.io/f/mojpvgwz" method="POST" style="display:flex;flex-direction:column;gap:8px">
+<input type="text" name="name" placeholder="Your Name" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="name">
+<input type="tel" name="phone" placeholder="WhatsApp Number" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="tel">
+<input type="email" name="email" placeholder="Email" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="email">
+<input type="hidden" name="source" value="NMIMS Blog CTA">
+<button type="submit" style="padding:12px;border-radius:8px;border:none;background:#f59e0b;color:#0C2A55;font-weight:700;font-size:14px;cursor:pointer">Book My Free Call</button>
+</form>
+</div>
 </div>
 
 <h2>Admission Process, Eligibility and 2026 Timelines</h2>
@@ -1000,7 +1030,17 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="cta-box">
 <p><strong>Still deciding? Get a personalised comparison.</strong></p>
 <p>Tell us your budget, target city, and career goal. We will show you which UGC-DEB approved online MBA fits best. No commissions, no affiliate links.</p>
-<p><a href="https://formspree.io/f/mojpvgwz" class="ilink">Request free comparison</a></p>
+<div class="cta-box" style="background:#0C2A55;color:#fff;padding:24px;border-radius:16px;margin:20px 0">
+<h4 style="margin:0 0 8px;font-size:16px">Get Free Counselling</h4>
+<p style="font-size:13px;color:#94a3b8;margin:0 0 14px">No commissions. No spam. Just honest guidance.</p>
+<form action="https://formspree.io/f/mojpvgwz" method="POST" style="display:flex;flex-direction:column;gap:8px">
+<input type="text" name="name" placeholder="Your Name" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="name">
+<input type="tel" name="phone" placeholder="WhatsApp Number" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="tel">
+<input type="email" name="email" placeholder="Email" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="email">
+<input type="hidden" name="source" value="NMIMS Blog CTA">
+<button type="submit" style="padding:12px;border-radius:8px;border:none;background:#f59e0b;color:#0C2A55;font-weight:700;font-size:14px;cursor:pointer">Book My Free Call</button>
+</form>
+</div>
 </div>
 
 <h2>Frequently Asked Questions</h2>
