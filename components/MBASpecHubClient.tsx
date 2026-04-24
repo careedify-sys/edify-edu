@@ -23,11 +23,14 @@ export default function MBASpecHubClient({ specSlug, specName }: Props) {
         if (!PREFERRED_UNI_IDS.includes(u.id) || !u.programs.includes('MBA')) return false
         const uniSpecs = (u as any).mbaSpecs as string[] | undefined
         if (!uniSpecs || uniSpecs.length === 0) return false
-        return variants.some(v => {
-          const vl = v.toLowerCase()
-          return uniSpecs.some(s => {
-            const sl = s.toLowerCase()
-            return sl === vl || sl.startsWith(vl + ' ') || sl.endsWith(' ' + vl) || sl.includes(' ' + vl + ' ')
+        return uniSpecs.some(s => {
+          const sn = s.toLowerCase().replace(/[^a-z ]/g, '').trim()
+          return variants.some(v => {
+            const vn = v.toLowerCase().replace(/[^a-z ]/g, '').trim()
+            if (sn === vn) return true
+            if (sn.startsWith(vn + ' ') || sn.startsWith(vn + 's')) return true
+            if (vn.startsWith(sn + ' ') || vn.startsWith(sn + 's')) return true
+            return false
           })
         })
       })

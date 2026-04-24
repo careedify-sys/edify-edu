@@ -42,11 +42,15 @@ export default function MBAHubClient() {
       const matchingUnis = mbaUnis.filter(u => {
         const uniSpecs = u.mbaSpecs
         if (!uniSpecs || uniSpecs.length === 0) return false
-        return spec.variants.some(v => {
-          const vl = v.toLowerCase()
-          return uniSpecs.some(s => {
-            const sl = s.toLowerCase()
-            return sl === vl || sl.startsWith(vl + ' ') || sl.endsWith(' ' + vl) || sl.includes(' ' + vl + ' ')
+        return uniSpecs.some(s => {
+          const sn = s.toLowerCase().replace(/[^a-z ]/g, '').trim()
+          return spec.variants.some(v => {
+            const vn = v.toLowerCase().replace(/[^a-z ]/g, '').trim()
+            if (sn === vn) return true
+            // Check if spec starts with variant or variant starts with spec
+            if (sn.startsWith(vn + ' ') || sn.startsWith(vn + 's')) return true
+            if (vn.startsWith(sn + ' ') || vn.startsWith(sn + 's')) return true
+            return false
           })
         })
       })

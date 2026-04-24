@@ -124,7 +124,7 @@ export const CANONICAL_SPECS: CanonicalSpec[] = [
   {
     slug: 'it-management',
     canonicalName: 'Online MBA IT Management',
-    variants: ['it-management', 'information-technology', 'information-technology-management', 'it-business-analytics', 'it-systems-management', 'information-system-management', 'information-systems'],
+    variants: ['IT Management', 'Information Technology', 'Information Technology Management', 'IT Business Analytics', 'IT Systems Management', 'Information System Management', 'Information Systems', 'IT Fintech', 'IT Systems', 'Systems IT Management'],
     careerTag: 'IT Governance - ERP - Digital Transformation',
     icon: Cpu,
     relatedSpecs: ['business-analytics', 'data-science'],
@@ -139,7 +139,7 @@ export const CANONICAL_SPECS: CanonicalSpec[] = [
   {
     slug: 'healthcare-management',
     canonicalName: 'Online MBA Healthcare Management',
-    variants: ['healthcare-management', 'healthcare-and-hospital-administration', 'hospital-administration-healthcare-management', 'hospital-and-health-care-management', 'hospital-health-care-management', 'hospital-health-systems-management', 'hospital-healthcare-management', 'hospital-management', 'healthcare', 'pharma-health-care-management'],
+    variants: ['Healthcare Management', 'Healthcare and Hospital Administration', 'Hospital Administration Healthcare Management', 'Hospital and Health Care Management', 'Hospital Health Care Management', 'Hospital Health Systems Management', 'Hospital Healthcare Management', 'Hospital Management', 'Healthcare', 'Pharma Health Care Management', 'Hospital Administration', 'Hospital Healthcare'],
     careerTag: 'Hospital Admin - Health Systems - Quality',
     icon: Heart,
     relatedSpecs: ['operations-management'],
@@ -154,7 +154,7 @@ export const CANONICAL_SPECS: CanonicalSpec[] = [
   {
     slug: 'logistics-supply-chain-management',
     canonicalName: 'Online MBA Logistics and Supply Chain',
-    variants: ['logistics-supply-chain-management', 'logistics-and-supply-chain-management', 'supply-chain-management', 'supply-chain-operations-management', 'operation-supply-chain-management', 'operations-supply-chain-management'],
+    variants: ['Logistics Supply Chain Management', 'Logistics and Supply Chain Management', 'Logistics SCM', 'Supply Chain Management', 'Supply Chain Operations Management', 'Operation Supply Chain Management', 'Operations Supply Chain Management', 'Shipping Logistics', 'Supply Chain Production and Operations Management'],
     careerTag: 'SCM - Warehousing - Distribution',
     icon: Truck,
     relatedSpecs: ['operations-management', 'international-business'],
@@ -169,7 +169,7 @@ export const CANONICAL_SPECS: CanonicalSpec[] = [
   {
     slug: 'data-science',
     canonicalName: 'Online MBA Data Science',
-    variants: ['data-science', 'data-science-and-analytics', 'data-science-and-artificial-intelligence', 'data-science-artificial-intelligence', 'data-science-business-analytics'],
+    variants: ['Data Science', 'Data Science and Analytics', 'Data Science and Artificial Intelligence', 'Data Science Artificial Intelligence', 'Data Science Business Analytics', 'Analytics and Data Science', 'Data Science AI'],
     careerTag: 'ML - Predictive Analytics - Big Data',
     icon: Database,
     relatedSpecs: ['business-analytics', 'ai-machine-learning'],
