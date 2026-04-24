@@ -16,6 +16,7 @@ import { getUniversityById, specName as getSpecName } from '@/lib/data'
 import { getUniversityLogo, getMasterSyllabus } from '@/lib/content'
 import type { University, Program } from '@/lib/data'
 import EnquiryModal from '@/components/EnquiryModal'
+import SyllabusComparisonNew from '@/components/SyllabusComparison'
 import { clsx } from 'clsx'
 
 // Universities that have actual MBA syllabus data in MASTER_SYLLABUS
@@ -508,6 +509,37 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
           </span>
         </div>
       )}
+
+      {/* Enhanced syllabus view with filter chips + accordions */}
+      {specA && specB && subjectsA.length > 0 && subjectsB.length > 0 && (() => {
+        const allA = new Set(subjectsA.map(s => s.toLowerCase()))
+        const allB = new Set(subjectsB.map(s => s.toLowerCase()))
+        const commonSubjects = subjectsA.filter(s => allB.has(s.toLowerCase()))
+        const uniqueA = subjectsA.filter(s => !allB.has(s.toLowerCase()))
+        const uniqueB = subjectsB.filter(s => !allA.has(s.toLowerCase()))
+        const nameA = MBA_UNIS_WITH_DATA.find(u => u.id === uniAId)?.name?.replace(/ Online$/, '') || 'University A'
+        const nameB = MBA_UNIS_WITH_DATA.find(u => u.id === uniBId)?.name?.replace(/ Online$/, '') || 'University B'
+        const semData = [{
+          sem: 3, title: 'Semester 3-4 Specialisation Subjects',
+          subjects: [
+            ...commonSubjects.map(s => ({ name: s, source: 'common' as const })),
+            ...uniqueA.map(s => ({ name: s, source: 'a-only' as const, uniLabel: nameA })),
+            ...uniqueB.map(s => ({ name: s, source: 'b-only' as const, uniLabel: nameB })),
+          ]
+        }]
+        return (
+          <div className="px-4 pb-4">
+            <SyllabusComparisonNew
+              nameA={nameA}
+              nameB={nameB}
+              specA={specA}
+              specB={specB}
+              semesters={semData}
+              program={program === 'MBA' ? 'mba' : 'mca'}
+            />
+          </div>
+        )
+      })()}
     </div>
   )
 }
@@ -1120,6 +1152,30 @@ function CompareContent() {
         onClose={() => setEnquiryOpen(false)}
         universityName={enquiryUni}
       />
+
+      {/* Sticky bottom bar */}
+      {selectedIds.length >= 2 && (
+        <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-4 py-3 flex gap-3 z-40 shadow-[0_-4px_16px_rgba(15,39,86,0.06)]">
+          <a
+            href="tel:+917061285806"
+            className="flex-1 py-3 rounded-xl font-semibold text-sm text-center no-underline transition-colors"
+            style={{ background: '#f59e0b', color: '#0f2756' }}
+          >
+            Talk to Advisor
+          </a>
+          <button
+            onClick={() => {
+              const url = `${window.location.origin}/compare?a=${selectedIds[0]}&b=${selectedIds[1]}`
+              navigator.clipboard?.writeText(url)
+              alert('Comparison link copied!')
+            }}
+            className="flex-1 py-3 rounded-xl font-semibold text-sm text-center border-none cursor-pointer transition-colors"
+            style={{ background: '#0f2756', color: '#fff' }}
+          >
+            Save Comparison
+          </button>
+        </div>
+      )}
     </div>
   )
 }
