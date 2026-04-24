@@ -272,6 +272,11 @@ const nextConfig = {
       { source: '/online-mca',                 destination: '/programs/mca',  permanent: true },
       { source: '/online-mba-india',           destination: '/programs/mba',  permanent: true },
 
+      // ── Online MCA → Blog redirects (301) ──────────────────────────────
+      { source: '/online-mca/online-mca-course-india',         destination: '/blog/online-mca-course-india',         permanent: true },
+      { source: '/online-mca/amity-online-mca-fees-review',    destination: '/blog/amity-online-mca-fees-review',    permanent: true },
+      { source: '/online-mca/:slug',                           destination: '/blog/:slug',                           permanent: true },
+
       // ── Blog duplicate consolidation (301) ────────────────────────────
       // SMU
       { source: '/blog/smu-online-mba-review-2026',                        destination: '/blog/smu-online-mba-review',                          permanent: true },
