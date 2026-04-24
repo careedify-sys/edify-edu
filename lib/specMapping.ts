@@ -19,7 +19,7 @@ export const CANONICAL_SPECS: CanonicalSpec[] = [
   {
     slug: 'finance',
     canonicalName: 'Online MBA Finance',
-    variants: ['finance', 'financial-management', 'finance-management', 'finance-and-accounting-management', 'global-finance-market'],
+    variants: ['Finance', 'Financial Management', 'Finance Management', 'Finance And Accounting Management', 'Global Finance Market'],
     careerTag: 'Banking - Investment - Corporate Finance',
     icon: DollarSign,
     relatedSpecs: ['fintech', 'international-finance-accounting', 'banking-insurance'],
@@ -34,7 +34,7 @@ export const CANONICAL_SPECS: CanonicalSpec[] = [
   {
     slug: 'human-resource-management',
     canonicalName: 'Online MBA Human Resources',
-    variants: ['human-resource-management', 'hr-management', 'human-resource', 'human-resources', 'strategic-human-resource-management'],
+    variants: ['Human Resource Management', 'HR Management', 'Human Resource', 'Human Resources', 'Strategic Human Resource Management'],
     careerTag: 'HR Strategy - Talent Management - OD',
     icon: Users,
     relatedSpecs: ['operations-management'],
@@ -49,7 +49,7 @@ export const CANONICAL_SPECS: CanonicalSpec[] = [
   {
     slug: 'marketing',
     canonicalName: 'Online MBA Marketing',
-    variants: ['marketing', 'marketing-management', 'marketing-sales-management'],
+    variants: ['Marketing', 'Marketing Management', 'Marketing Sales Management'],
     careerTag: 'Brand - Digital - Sales',
     icon: Megaphone,
     relatedSpecs: ['digital-marketing', 'retail-management'],
@@ -64,7 +64,7 @@ export const CANONICAL_SPECS: CanonicalSpec[] = [
   {
     slug: 'business-analytics',
     canonicalName: 'Online MBA Business Analytics',
-    variants: ['business-analytics', 'business-analytics-ai', 'analytics-and-data-science', 'business-intelligence-and-analytics'],
+    variants: ['Business Analytics', 'Business Analytics AI', 'Analytics and Data Science', 'Business Intelligence And Analytics'],
     careerTag: 'Analytics - BI - Data-Driven Decisions',
     icon: BarChart3,
     relatedSpecs: ['data-science', 'it-management'],
@@ -79,7 +79,7 @@ export const CANONICAL_SPECS: CanonicalSpec[] = [
   {
     slug: 'operations-management',
     canonicalName: 'Online MBA Operations Management',
-    variants: ['operations-management', 'operations', 'production-and-operations-management', 'production-operations', 'production-operations-management'],
+    variants: ['Operations Management', 'Operations', 'Production and Operations Management', 'Production Operations', 'Production Operations Management'],
     careerTag: 'Manufacturing - Quality - Process',
     icon: Settings,
     relatedSpecs: ['logistics-supply-chain-management', 'project-management'],
@@ -94,7 +94,7 @@ export const CANONICAL_SPECS: CanonicalSpec[] = [
   {
     slug: 'digital-marketing',
     canonicalName: 'Online MBA Digital Marketing',
-    variants: ['digital-marketing', 'digital-marketing-management', 'digital-marketing-and-e-commerce'],
+    variants: ['Digital Marketing', 'Digital Marketing Management', 'Digital Marketing And E Commerce'],
     careerTag: 'SEO - Social Media - Performance Marketing',
     icon: Globe,
     relatedSpecs: ['marketing', 'business-analytics'],
@@ -109,7 +109,7 @@ export const CANONICAL_SPECS: CanonicalSpec[] = [
   {
     slug: 'international-business',
     canonicalName: 'Online MBA International Business',
-    variants: ['international-business', 'international-business-management'],
+    variants: ['International Business', 'International Business Management', 'Intl Business'],
     careerTag: 'Trade - Export-Import - MNC Strategy',
     icon: Globe2,
     relatedSpecs: ['finance', 'logistics-supply-chain-management'],
@@ -184,7 +184,7 @@ export const CANONICAL_SPECS: CanonicalSpec[] = [
   {
     slug: 'fintech',
     canonicalName: 'Online MBA FinTech',
-    variants: ['fintech', 'fintech-management', 'financial-management-fintech-focus', 'digital-finance'],
+    variants: ['FinTech', 'Fintech', 'FinTech Management', 'Financial Management FinTech Focus', 'Digital Finance', 'Fintech Management'],
     careerTag: 'Digital Banking - Payments - Blockchain',
     icon: TrendingUp,
     relatedSpecs: ['finance', 'data-science'],
@@ -199,7 +199,7 @@ export const CANONICAL_SPECS: CanonicalSpec[] = [
   {
     slug: 'project-management',
     canonicalName: 'Online MBA Project Management',
-    variants: ['project-management'],
+    variants: ['Project Management', 'Project Mgmt'],
     careerTag: 'PMI - Agile - Delivery',
     icon: Briefcase,
     relatedSpecs: ['operations-management', 'it-management'],
@@ -214,7 +214,7 @@ export const CANONICAL_SPECS: CanonicalSpec[] = [
   {
     slug: 'retail-management',
     canonicalName: 'Online MBA Retail Management',
-    variants: ['retail-management', 'retail'],
+    variants: ['Retail Management', 'Retail'],
     careerTag: 'Retail Ops - Category - Merchandising',
     icon: ShoppingBag,
     relatedSpecs: ['marketing', 'logistics-supply-chain-management'],
@@ -229,7 +229,7 @@ export const CANONICAL_SPECS: CanonicalSpec[] = [
   {
     slug: 'entrepreneurship',
     canonicalName: 'Online MBA Entrepreneurship',
-    variants: ['entrepreneurship', 'entrepreneurship-management', 'digital-entrepreneurship', 'entrepreneurship-and-leadership-management'],
+    variants: ['Entrepreneurship', 'Entrepreneurship Management', 'Digital Entrepreneurship', 'Entrepreneurship And Leadership Management', 'Entrepreneurship and Venture Creation'],
     careerTag: 'Startup - Venture Creation - Innovation',
     icon: Rocket,
     relatedSpecs: ['marketing', 'finance'],
