@@ -11,6 +11,7 @@ import type { Program } from '@/lib/data'
 import ProgramPageClient from '@/components/ProgramPageClient'
 import MBAHubClient from '@/components/MBAHubClient'
 import MBASpecHubClient from '@/components/MBASpecHubClient'
+import ProgramHubClient from '@/components/ProgramHubClient'
 
 const PM: Record<string, Program> = {
   'mba':'MBA','mca':'MCA','bba':'BBA','bca':'BCA','ba':'BA',
@@ -229,8 +230,9 @@ export default async function CatchAllProgramPage(
     )
   }
 
-  // MBA hub page (no spec sub-slug) — use redesigned hub component
-  if (program === 'MBA' && !activeSpec) {
+  // Program hub pages (no spec sub-slug) — redesigned hub components
+  if (!activeSpec) {
+    if (program === 'MBA') {
     return (
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -246,6 +248,16 @@ export default async function CatchAllProgramPage(
           })),
         }) }} />
         <MBAHubClient />
+      </>
+    )
+    }
+
+    // All other programs (MCA, BBA, BCA, B.Com, M.Com, MA, BA, MSc, BSc)
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+        <ProgramHubClient program={program} />
       </>
     )
   }
