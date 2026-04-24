@@ -36,17 +36,19 @@ export default function MBAHubClient() {
   const feeFloor = Math.min(...mbaUnis.map(u => u.feeMin).filter(f => f > 0))
   const feeCeiling = Math.max(...mbaUnis.map(u => u.feeMax).filter(f => f > 0))
 
-  // Compute uni counts per spec
+  // Compute uni counts per spec using real mbaSpecs data
   const specWithCounts = useMemo(() => {
     return CANONICAL_SPECS.map(spec => {
       const matchingUnis = mbaUnis.filter(u => {
-        // Simple check: does this uni's programs include MBA? (all do here)
-        // For more accurate filtering, we'd need spec data per uni
-        return true // Show all unis for now; actual filtering happens on spec page
+        const uniSpecs = (u as any).mbaSpecs || []
+        return spec.variants.some(v =>
+          uniSpecs.some((s: string) => s.toLowerCase().includes(v.toLowerCase()))
+        )
       })
-      const feeMin = Math.min(...matchingUnis.map(u => u.feeMin).filter(f => f > 0))
+      const fees = matchingUnis.map(u => u.feeMin).filter(f => f > 0)
+      const feeMin = fees.length > 0 ? Math.min(...fees) : 0
       return { spec, uniCount: matchingUnis.length, feeFloor: feeMin }
-    }).sort((a, b) => b.uniCount - a.uniCount)
+    }).filter(s => s.uniCount > 0).sort((a, b) => b.uniCount - a.uniCount)
   }, [mbaUnis])
 
   return (

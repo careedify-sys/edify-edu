@@ -16,15 +16,22 @@ export default function MBASpecHubClient({ specSlug, specName }: Props) {
   const canonical = getCanonicalSpec(specSlug)
 
   const mbaUnis = useMemo(() => {
+    const canonical = getCanonicalSpec(specSlug)
+    const variants = canonical?.variants || [specSlug]
     return UNIS_SLIM
-      .filter(u => PREFERRED_UNI_IDS.includes(u.id) && u.programs.includes('MBA'))
+      .filter(u => {
+        if (!PREFERRED_UNI_IDS.includes(u.id) || !u.programs.includes('MBA')) return false
+        const uniSpecs = (u as any).mbaSpecs || []
+        return variants.some(v =>
+          uniSpecs.some((s: string) => s.toLowerCase().includes(v.toLowerCase()))
+        )
+      })
       .sort((a, b) => {
-        // Sort by NIRF ascending (best first), unranked at bottom
         const an = a.nirf > 0 && a.nirf < 200 ? a.nirf : 999
         const bn = b.nirf > 0 && b.nirf < 200 ? b.nirf : 999
         return an - bn
       })
-  }, [])
+  }, [specSlug])
 
   const feeFloor = Math.min(...mbaUnis.map(u => u.feeMin).filter(f => f > 0))
   const feeCeiling = Math.max(...mbaUnis.map(u => u.feeMax).filter(f => f > 0))
