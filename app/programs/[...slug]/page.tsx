@@ -10,6 +10,7 @@ import { getProgramContent, getSpecContent, getSpecFallback } from '@/lib/conten
 import type { Program } from '@/lib/data'
 import ProgramPageClient from '@/components/ProgramPageClient'
 import MBAHubClient from '@/components/MBAHubClient'
+import MBASpecHubClient from '@/components/MBASpecHubClient'
 
 const PM: Record<string, Program> = {
   'mba':'MBA','mca':'MCA','bba':'BBA','bca':'BCA','ba':'BA',
@@ -216,6 +217,17 @@ export default async function CatchAllProgramPage(
       acceptedAnswer: { '@type': 'Answer', text: f.a },
     })),
   } : null
+
+  // MBA spec hub page (e.g., /programs/mba/finance) — dedicated spec comparison
+  if (program === 'MBA' && activeSpec && subSlug) {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+        <MBASpecHubClient specSlug={subSlug} specName={activeSpec} />
+      </>
+    )
+  }
 
   // MBA hub page (no spec sub-slug) — use redesigned hub component
   if (program === 'MBA' && !activeSpec) {
