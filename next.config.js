@@ -343,6 +343,14 @@ const nextConfig = {
       // Online vs Distance
       { source: '/blog/distance-mba-vs-online-mba-india-2026',             destination: '/blog/online-mba-vs-distance-mba-difference-2026',    permanent: true },
       { source: '/blog/difference-online-mba-distance-mba-2026',           destination: '/blog/online-mba-vs-distance-mba-difference-2026',    permanent: true },
+      // Tier 1 consolidations (2026-04-25)
+      { source: '/blog/cheapest-online-mba-india-2026',                    destination: '/blog/affordable-online-mba-india-2026',              permanent: true },
+      { source: '/blog/distance-mba-mumbai-2026',                          destination: '/blog/distance-mba-colleges-mumbai-2026',             permanent: true },
+      { source: '/blog/pgdm-vs-mba-difference-which-is-better-india',      destination: '/blog/mba-vs-pgdm-online-india-2026',                permanent: true },
+      { source: '/blog/best-college-executive-mba-india-2026',             destination: '/blog/top-executive-mba-programs-india-2026',         permanent: true },
+      { source: '/blog/jamia-hamdard-mba-fees-2026',                       destination: '/blog/jamia-hamdard-mba-2026',                       permanent: true },
+      { source: '/blog/advantages-online-mba-manipal-university-2026',     destination: '/blog/online-manipal-mba-review-2026',               permanent: true },
+      { source: '/blog/which-mba-is-best-india-2026',                      destination: '/blog/best-mba-specialization-india-2026',           permanent: true },
 
       // Blog legacy
       { source: '/post/:slug',                 destination: '/blog/:slug',    permanent: true },
