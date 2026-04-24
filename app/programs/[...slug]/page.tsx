@@ -9,6 +9,7 @@ import { getAllSpecs, getUniversitiesByProgram, UNIVERSITIES, specName as getSpe
 import { getProgramContent, getSpecContent, getSpecFallback } from '@/lib/content'
 import type { Program } from '@/lib/data'
 import ProgramPageClient from '@/components/ProgramPageClient'
+import MBAHubClient from '@/components/MBAHubClient'
 
 const PM: Record<string, Program> = {
   'mba':'MBA','mca':'MCA','bba':'BBA','bca':'BCA','ba':'BA',
@@ -80,13 +81,17 @@ export async function generateMetadata(
 
   const title = specContent?.metaTitle
     || (activeSpec
-      ? `Best Online ${program} in ${activeSpec} ${year} — Fees, Colleges, Career | Edify`
-      : `Online ${program} India ${year} — Compare 125+ UGC Approved Universities | Edify`)
+      ? `Best Online ${program} in ${activeSpec} ${year} — Fees, Colleges, Career | EdifyEdu`
+      : program === 'MBA'
+        ? `Online MBA ${year} — ${universities.length}+ UGC-Approved Universities Compared | EdifyEdu`
+        : `Online ${program} India ${year} — Compare UGC Approved Universities | EdifyEdu`)
 
   const description = specContent?.metaDesc
     || (activeSpec
       ? `Compare top UGC DEB approved online ${program} programs with ${activeSpec} specialisation in India ${year}. Check NIRF ranks, fees, career scope, and salary data.`
-      : `Explore all UGC approved online ${program} programs in India. Find real NIRF rankings, NAAC A++ grades, and fees from ₹40K. Verified admissions for ${year}.`)
+      : program === 'MBA'
+        ? `Compare online MBA programmes from ${universities.length} UGC-DEB approved universities in India. Filter by specialisation, fees from ₹66,000. Independent, commission-free rankings by EdifyEdu.`
+        : `Explore all UGC approved online ${program} programs in India. Find real NIRF rankings, NAAC grades, and verified fees. Admissions for ${year}.`)
 
   const canonical = activeSpec
     ? `https://edifyedu.in/programs/${programSlug}/${subSlug}`
@@ -209,6 +214,27 @@ export default async function CatchAllProgramPage(
       acceptedAnswer: { '@type': 'Answer', text: f.a },
     })),
   } : null
+
+  // MBA hub page (no spec sub-slug) — use redesigned hub component
+  if (program === 'MBA' && !activeSpec) {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'ItemList',
+          itemListElement: universities.slice(0, 20).map((u, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            url: `https://edifyedu.in/universities/${u.id}/mba`,
+            name: `${u.name} Online MBA`,
+          })),
+        }) }} />
+        <MBAHubClient />
+      </>
+    )
+  }
 
   return (
     <>
