@@ -47,14 +47,14 @@ export async function generateMetadata(
 
 // Popular comparison pairs — MBA
 const MBA_PAIRS = [
-  { label: 'Amity Online MBA vs NMIMS Online MBA', href: '/compare?a=amity-university-online&b=nmims-online' },
-  { label: 'Symbiosis Online MBA vs Manipal MUJ Online MBA', href: '/compare?a=symbiosis-university-online&b=manipal-university-jaipur-online' },
-  { label: 'JAIN Online MBA vs Chandigarh University Online MBA', href: '/compare?a=jain-university-online&b=chandigarh-university-online' },
-  { label: 'LPU Online MBA vs Amrita Online MBA', href: '/compare?a=lovely-professional-university-online&b=amrita-vishwa-vidyapeetham-online' },
-  { label: 'Sikkim Manipal Online MBA vs Sharda University Online MBA', href: '/compare?a=sikkim-manipal-university-online&b=sharda-university-online' },
-  { label: 'NMIMS Online MBA vs Symbiosis Online MBA', href: '/compare?a=nmims-online&b=symbiosis-university-online' },
-  { label: 'Amity Online MBA vs Manipal MAHE Online MBA', href: '/compare?a=amity-university-online&b=manipal-academy-higher-education-online' },
-  { label: 'LPU Online MBA vs UPES Online MBA', href: '/compare?a=lovely-professional-university-online&b=upes-online' },
+  { label: 'Amity Online MBA vs NMIMS Online MBA', href: '/compare/amity-vs-nmims' },
+  { label: 'Amity Online MBA vs Manipal MUJ Online MBA', href: '/compare/amity-vs-manipal-jaipur' },
+  { label: 'MUJ Online MBA vs NMIMS Online MBA', href: '/compare/manipal-jaipur-vs-nmims' },
+  { label: 'MUJ Online MBA vs MAHE Online MBA', href: '/compare/manipal-jaipur-vs-manipal-mahe' },
+  { label: 'NMIMS Online MBA vs Symbiosis Online MBA', href: '/compare/nmims-vs-symbiosis' },
+  { label: 'Amity Online MBA vs Symbiosis Online MBA', href: '/compare/amity-vs-symbiosis' },
+  { label: 'Sikkim Manipal vs Amity Online MBA', href: '/compare/sikkim-manipal-vs-amity' },
+  { label: 'Amrita vs NMIMS Online MBA', href: '/compare/amrita-vs-nmims' },
 ]
 
 // Popular comparison pairs — MCA
@@ -123,8 +123,8 @@ export default async function ComparePage(
           <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-amber-400/30 bg-amber-500/10 text-amber-300 text-[11px] font-semibold uppercase tracking-wider mb-5">
             Updated for July 2026 Admission Session
           </span>
-          <h1 className="font-display text-2xl sm:text-[2.2rem] font-bold text-white mb-3 leading-tight">
-            Compare Online MBA &amp; MCA Universities 2026
+          <h1 className="text-2xl sm:text-[2.2rem] font-extrabold text-white mb-3 leading-tight" style={{ fontFamily: 'Georgia, serif' }}>
+            Compare Online <em className="text-amber-400 not-italic">MBAs</em> side-by-side.
           </h1>
           <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
             Side-by-side fees, NIRF rankings, NAAC grades and semester-wise syllabus for 125+ UGC DEB approved universities — so you decide with data, not guesswork.
