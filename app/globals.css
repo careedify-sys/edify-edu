@@ -479,6 +479,43 @@ body { overflow-x: hidden; }
 details summary { cursor: pointer; list-style: none; }
 details summary::-webkit-details-marker { display: none; }
 
+/* Blog FAQ accordion styling */
+.faq-accordion details {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.faq-accordion details summary {
+  padding: 14px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f2756;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.4;
+}
+.faq-accordion details summary::after {
+  content: '▼';
+  font-size: 10px;
+  color: #d97706;
+  flex-shrink: 0;
+  margin-left: 10px;
+  transition: transform 0.2s;
+}
+.faq-accordion details[open] summary::after {
+  transform: rotate(180deg);
+}
+.faq-accordion details p {
+  padding: 0 16px 16px;
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
+
 /* ── MOBILE APP-LIKE BOTTOM NAV ──────────────────────────────────── */
 /* Shown on mobile only — feels like a native app */
 @media (max-width: 640px) {
