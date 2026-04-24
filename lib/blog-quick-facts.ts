@@ -28,10 +28,10 @@ export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; gr
   'amity-online-mba-review-2026': [
     { label: 'Duration',          value: '2 Years' },
     { label: 'Mode',              value: '100% Online' },
-    { label: 'Indian Fee',        value: '₹1.99L' },
+    { label: 'Indian Fee',        value: '₹2.07L (one-time) / ₹2.25L' },
     { label: 'Dual Spec Fee',     value: '₹2.99L' },
     { label: 'Intl Fee',          value: 'USD 5,000' },
-    { label: 'Specialisations',   value: '18' },
+    { label: 'Specialisations',   value: '19' },
     { label: 'NAAC Grade',        value: 'A+' },
     { label: 'QS Ranking',        value: 'Asia Top 10', green: true },
     { label: 'Entrance Exam',     value: 'None (40%+)', green: true },

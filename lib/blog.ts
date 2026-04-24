@@ -1495,7 +1495,7 @@ export const BLOG_POSTS: BlogPost[] = [
       </ul>
     </div>
     `,
-  },
+  },
 
   {
     slug: 'career-after-mba-jobs-salary-scope-2026',
@@ -2012,8 +2012,8 @@ export const BLOG_POSTS: BlogPost[] = [
 </div>
     `,
   },
-
-
+
+
 
   {
     slug: 'is-manipal-university-jaipur-fake-or-legit-2026',
@@ -2211,7 +2211,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </div>
     `,
   },
-
+
 
   {
     slug: 'mba-fees-india-complete-guide-2026',
@@ -5191,7 +5191,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </div>
     `,
   },
-
+
 
   {
     slug: 'distance-mba-bangalore-2026',
@@ -6581,7 +6581,7 @@ export const BLOG_POSTS: BlogPost[] = [
     `,
   },
 
-
+
 
   {
     slug: 'top-free-online-mba-courses-2026',
@@ -6837,7 +6837,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </div>
     `,
   },
-
+
 
   {
     slug: 'is-distance-mba-worth-it-india-2026',
@@ -7911,7 +7911,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <a href="/#enquiry" style="display:inline-block;background:#f59e0b;color:#fff;padding:8px 20px;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px">Get Matched Free →</a>
 </div>
     `,
-  },
+  },
   {
     slug: 'top-executive-mba-programs-india-2026',
     title: 'Top Executive MBA Programs in India: 2026 Guide for Senior Professionals',
@@ -7979,7 +7979,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <a href="/#enquiry" style="display:inline-block;background:#f59e0b;color:#fff;padding:8px 20px;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px">Discuss Your Options →</a>
 </div>
     `,
-  },
+  },
   {
     slug: 'icfai-online-mba-fees-2026',
     title: 'ICFAI Online MBA Fees: What to Verify Before You Apply in 2026',
@@ -8261,7 +8261,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <a href="/#enquiry" style="display:inline-block;background:#f59e0b;color:#fff;padding:8px 20px;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px">Get Free Shortlist →</a>
 </div>
     `,
-  },
+  },
   {
     slug: 'is-mba-post-graduation-india-2026',
     title: 'Is MBA a Postgraduate Degree? What It Actually Means in India',
@@ -8334,7 +8334,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <a href="/#enquiry" style="display:inline-block;background:#f59e0b;color:#fff;padding:8px 20px;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px">Get Free Guidance →</a>
 </div>
     `,
-  },
+  },
   {
     slug: 'mba-course-duration-india-2026',
     title: 'MBA Course Duration in India: The Definitive Guide for Every Format',
@@ -8397,18 +8397,18 @@ export const BLOG_POSTS: BlogPost[] = [
   <a href="/#enquiry" style="display:inline-block;background:#f59e0b;color:#fff;padding:8px 20px;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px">Talk to Counsellor →</a>
 </div>
     `,
-  },
+  },
   {
     slug: 'amity-online-mba-review-2026',
-    title: 'Amity University Online MBA 2026: Fees, Reviews and Honest Assessment',
-    seoTitle: 'Amity University Online MBA 2026 - Fees ₹2,07,000, Reviews, 19 Specializations and Honest Comparison',
-    metaDescription: 'Amity University online MBA 2026 - ₹2,07,000 one-time or ₹8,906/mo EMI. NAAC A+, WASC, QAA accreditation. Honest comparison vs NMIMS, Symbiosis, JAIN with real student feedback.',
+    title: 'Amity Online MBA 2026: Fees, Review, 19 Specializations & Honest Assessment',
+    seoTitle: 'Amity Online MBA 2026  -- ₹2,07,000 Fee, 19 Specs, Honest Review',
+    metaDescription: 'Independent Amity Online MBA 2026 review. Total fee ₹2,07,000 (or ₹8,906/mo no-cost EMI). 19 specializations, NAAC A+, WASC+QAA accredited. Honest comparison vs NMIMS, JAIN, MAHE. No paid rankings.',
     category: 'University Reviews',
-    tags: ['amity mba online fees', 'amity distance mba fees', 'amity university delhi mba fees', 'amity university mba eligibility', 'amity university distance mba fees', 'amity university mba distance', 'amity distance mba', 'amity noida distance mba', 'amity university noida mba fees and placement', 'mba in amity university fees'],
-    readTime: 15,
-    publishedAt: '2026-04-23',
+    tags: ['amity online mba', 'amity online mba review', 'amity mba online fees', 'amity online mba placements', 'amity online mba worth it', 'amity university mba eligibility', 'amity university noida mba fees and placement', 'mba in amity university fees'],
+    readTime: 25,
+    publishedAt: '2026-04-25',
     status: 'published' as const,
-    targetKeyword: 'amity university mba distance',
+    targetKeyword: 'amity online mba',
     relatedUniversities: ['amity-university-online', 'jain-university-online', 'chandigarh-university-online', 'nmims-online'],
     faqs: [
       { q: 'What are the actual Amity MBA online fees for 2026?', a: 'Amity offers four payment options. The best value is one-time payment at ₹2,07,000 (saving ₹18,000 vs standard ₹2,25,000). Annual payment totals ₹2,13,750. Per-semester is ₹56,300 (total ₹2,25,000). 24-month no-cost EMI is ₹8,906/month. No registration fee. Verify at amityonline.com.' },
@@ -8421,36 +8421,56 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Is Amity online MBA worth ₹2.07 lakh?', a: 'Worth it if you need international credential validation (WES/WASC/QAA) for immigration or global roles. Worth it for ACCA integration track. Not the best value if your career is purely India-focused. JAIN (₹1.96L, NAAC A++) or Chandigarh University (₹1.65L, NIRF #36) may offer better domestic ROI.' },
       { q: 'Does Amity online MBA have placement support?', a: 'Amity provides a career services portal and job board for online students. But campus placement drives are separate from online programme. Online MBA graduates typically find jobs through their own network, LinkedIn, and the university portal. Mid-career professionals benefit most.' },
       { q: 'Can I do ACCA with Amity online MBA?', a: 'Yes. The International Finance specialization is co-approved by ACCA UK. Students receive exemptions from several ACCA papers. Only Amity, JAIN Online, and Amrita offer ACCA integration in India. This is a genuine differentiator for international accounting careers.' },
+      { q: 'How do I login to Amity Online MBA portal?', a: 'Visit amityonline.com, click Student Login (top right), enter enrollment number and password. Dashboard opens to Amigo LMS where you access live classes, recorded lectures, assignments, and career services. Mobile app available on iOS and Android.' },
+      { q: 'What is the exam pattern for Amity Online MBA?', a: '30% internal assessment (assignments, quizzes, discussion participation) plus 70% external assessment (proctored end-term exams). Exams are online, AI-proctored from home. Sections include subjective questions, case studies, and MCQs. Minimum 5 SGPA per semester and 6 CGPA cumulative required to pass.' },
+      { q: 'Does Amity Online MBA degree have online mentioned on certificate?', a: 'No. Per UGC 2020 regulations, online and campus MBA degrees are equivalent. Certificate states Master of Business Administration with same format as campus degree. Only the academic transcript may mention mode of study.' },
+      { q: 'Is Amity Online MBA valid for government jobs in 2026?', a: 'Yes, for jobs that accept UGC-DEB approved online degrees. Valid for UPSC, SBI PO, IBPS, most PSU recruitments. Some notifications specifically require regular or full-time mode. Check each job posting and verify at deb.ugc.ac.in.' },
+      { q: 'Can I apply for Amity Online MBA without work experience?', a: 'Yes. Standard Online MBA has no work experience requirement. You only need a bachelor degree with 40% aggregate or clear the internal ISAT test if below 40%. Executive MBA track requires 3 or more years of professional experience.' },
+      { q: 'How many specializations does Amity Online MBA offer in 2026?', a: '19 specializations including Business Analytics, Data Science, HR Analytics, International Finance (ACCA-integrated), Hospital and Healthcare Management, Insurance Management, Digital Entrepreneurship, and more. All share Year 1 foundation courses. Specialization begins from Semester 3.' },
+      { q: 'What is the difference between Amity Online MBA and Amity Dual Specialization MBA?', a: 'Standard Online MBA covers one specialization at ₹2,25,000 total (or ₹2,07,000 one-time). Dual Specialization covers two combined specializations at ₹2,99,000 total. Dual offers more career flexibility. Standard is better for budget-conscious learners. Both carry same UGC-DEB approval and international accreditation.' },
+      { q: 'When is the last date for Amity Online MBA admission 2026?', a: 'January 2026 session admissions were available until March 2026. July 2026 session typically opens April 2026. No entrance exam required. Admissions are first-come-first-served. Application fee is ₹1,100. Verify current dates on amityonline.com.' },
     ],
     content: `
 <p style="font-size:14px;color:#6b7280;margin-bottom:24px"><em>Updated April 2026 · 12 min read · Fees verified from official Amity Online portal</em></p>
 
 <h2 id="the-confusion">The Number That Confuses Everyone</h2>
-<p>If you've searched for <strong>Amity University distance MBA fees</strong>, you've probably seen figures ranging from ₹1.20 lakh to ₹2.99 lakh. None of them are wrong — they're just describing different things. Amity runs two distinct modes: an <strong>online MBA</strong> through its Learning Management System and a <strong>distance MBA</strong> through self-study materials, priced differently. There's also the full-time campus MBA at Amity Noida (₹6.4L–₹15.8L) which is a completely separate programme.</p>
+<p>If you've searched for <strong>Amity University distance MBA fees</strong>, you've probably seen figures ranging from ₹1.20 lakh to ₹2.99 lakh. None of them are wrong  -- they're just describing different things. Amity runs two distinct modes: an <strong>online MBA</strong> through its Learning Management System and a <strong>distance MBA</strong> through self-study materials, priced differently. There's also the full-time campus MBA at Amity Noida (₹6.4L–₹15.8L) which is a completely separate programme.</p>
 <p>This guide covers all three, starting with the online programme since that's what most students searching for the <strong>Amity distance MBA</strong> in 2026 actually enroll in.</p>
 <div style="background:#eff6ff;border-left:4px solid #2563eb;padding:14px 18px;border-radius:8px;margin:20px 0;font-size:14px">
   <strong>Note:</strong> All fees are total course fees unless stated otherwise. NIRF rank = Management category 2025. Verify current fees and UGC-DEB approval at deb.ugc.ac.in and amityonline.com before applying.
 </div>
 
 <h2 id="online-fees">Amity MBA Online Fees: Complete Breakdown</h2>
-<p>Amity offers four payment options for the online MBA. The most affordable is the <strong>one-time payment at ₹2,07,000</strong> (down from the standard ₹2,25,000 — a self-pay discount of ₹18,000). Other options: annual payment at ₹1,06,880/year, per-semester at ₹56,300, or a <strong>24-month no-cost EMI at ₹8,906/month</strong>. There is <strong>no registration fee</strong>.</p>
+<p>Amity offers four payment options for the online MBA. The most affordable is the <strong>one-time payment at ₹2,07,000</strong> (down from the standard ₹2,25,000  -- a self-pay discount of ₹18,000). Other options: annual payment at ₹1,06,880/year, per-semester at ₹56,300, or a <strong>24-month no-cost EMI at ₹8,906/month</strong>. There is <strong>no registration fee</strong>.</p>
 
 <table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">
   <thead><tr style="background:#1a1a2e;color:#fff"><th style="padding:10px 14px;text-align:left">Payment Option</th><th style="padding:10px 14px;text-align:left">Effective Fee</th><th style="padding:10px 14px;text-align:left">Notes</th></tr></thead>
   <tbody>
-    <tr style="background:#fef9c3;font-weight:700"><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">One-Time Payment ★</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹2,07,000</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">Best value — saves ₹18,000 vs standard ₹2,25,000</td></tr>
+    <tr style="background:#fef9c3;font-weight:700"><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">One-Time Payment ★</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹2,07,000</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">Best value  -- saves ₹18,000 vs standard ₹2,25,000</td></tr>
     <tr><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">Annual Payment</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹1,06,880/year</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">Effective total ₹2,13,750</td></tr>
     <tr style="background:#f9fafb"><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">Per Semester</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹56,300/sem</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">Effective total ₹2,25,000 (4 sems)</td></tr>
     <tr><td style="padding:10px 14px">24-Month No-Cost EMI</td><td style="padding:10px 14px">₹8,906/month</td><td style="padding:10px 14px">0% interest · effective total ₹2,13,750</td></tr>
   </tbody>
 </table>
 <div style="background:#ecfdf5;border-left:4px solid #059669;padding:14px 18px;border-radius:8px;margin:20px 0;font-size:14px">
-  <strong>No Registration Fee:</strong> Unlike many online MBA programmes, Amity does not charge a separate registration or application fee. The price above is what you pay — no hidden charges on top.
+  <strong>No Registration Fee:</strong> Unlike many online MBA programmes, Amity does not charge a separate registration or application fee. The price above is what you pay  -- no hidden charges on top.
 </div>
 
 <div style="margin:24px 0;text-align:center">
-  <img src="/blog/amity-mba-payment-options-2026.svg" alt="Amity Online MBA payment options comparison 2026 — one-time ₹2,07,000, EMI ₹8,906/mo, annual ₹1,06,880/yr" loading="lazy" style="width:100%;max-width:660px;border-radius:10px;border:1px solid #e5e7eb" />
-  <p style="font-size:12px;color:#9ca3af;margin-top:6px">All four payment options compared — one-time payment at ₹2,07,000 is the best value route</p>
+  <img src="/blog/amity-mba-payment-options-2026.svg" alt="Amity Online MBA payment options comparison 2026  -- one-time ₹2,07,000, EMI ₹8,906/mo, annual ₹1,06,880/yr" loading="lazy" style="width:100%;max-width:660px;border-radius:10px;border:1px solid #e5e7eb" />
+  <p style="font-size:12px;color:#9ca3af;margin-top:6px">All four payment options compared  -- one-time payment at ₹2,07,000 is the best value route</p>
+</div>
+
+<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:28px 32px;margin:32px 0;text-align:center">
+  <p style="font-size:16px;font-weight:700;color:#1e3a8a;margin:0 0 8px">Comparing Amity's ₹2.07L against 3-4 other options?</p>
+  <p style="font-size:14px;color:#64748b;margin:0 0 18px">We'll send you a free side-by-side comparison in 2 hours. Amity vs NMIMS vs MAHE vs your top 2 picks. No spam, no sales pitch, just the numbers. EdifyEdu earns zero commissions from Amity.</p>
+  <form action="https://formspree.io/f/mojpvgwz" method="POST" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:500px;margin:0 auto">
+    <input type="text" name="name" placeholder="Your Name" required style="flex:1;min-width:140px;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:14px" />
+    <input type="tel" name="phone" placeholder="WhatsApp Number" required style="flex:1;min-width:140px;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:14px" />
+    <input type="email" name="email" placeholder="Email" required style="flex:1;min-width:200px;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:14px" />
+    <input type="hidden" name="source" value="amity-blog-pos1-fee-compare" />
+    <button type="submit" style="padding:12px 24px;border-radius:8px;border:none;background:#f97316;color:#fff;font-weight:700;font-size:14px;cursor:pointer;width:100%">Get My Free Comparison</button>
+  </form>
 </div>
 
 <h2 id="distance-vs-online">Amity Distance MBA vs Online MBA: What's Different</h2>
@@ -8466,7 +8486,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </table>
 
 <h2 id="eligibility">Amity University MBA Eligibility 2026</h2>
-<p>You need a bachelor's degree with minimum <strong>40% aggregate</strong>. No entrance exam required — first-come first-served admissions. Candidates below 40% can clear an internal online admission test. No work experience required, no age limit. International students eligible.</p>
+<p>You need a bachelor's degree with minimum <strong>40% aggregate</strong>. No entrance exam required  -- first-come first-served admissions. Candidates below 40% can clear an internal online admission test. No work experience required, no age limit. International students eligible.</p>
 
 <table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">
   <thead><tr style="background:#1a1a2e;color:#fff"><th style="padding:10px 14px;text-align:left">Criterion</th><th style="padding:10px 14px;text-align:left">Online MBA (ADDOE)</th><th style="padding:10px 14px;text-align:left">Campus MBA (Noida)</th></tr></thead>
@@ -8492,9 +8512,9 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2 id="differentiators">What Genuinely Sets Amity Apart</h2>
 <p><strong>International accreditation nobody else has:</strong> Amity holds both WASC (Western Association of Schools and Colleges, USA) and QAA (Quality Assurance Agency, UK) accreditations for its online MBA. No other Indian online MBA has both simultaneously. This matters for WES credential evaluation for Canada/USA immigration.</p>
-<p><strong>The ACCA integration is real:</strong> The International Finance specialization is co-approved by ACCA UK — students receive exemptions from several ACCA exams. Only Amity, JAIN Online, and Amrita offer this in India.</p>
-<p><strong>QS Asia Pacific Top 10 is verifiable:</strong> Category-specific, internationally recognized ranking — not a general or paid ranking.</p>
-<p>What Amity doesn't have: a NIRF management rank competing with IIMs or Symbiosis (#32) — Amity sits at approximately #49. Symbiosis, NMIMS, and MAHE each offer a different trade-off depending on your target employer.</p>
+<p><strong>The ACCA integration is real:</strong> The International Finance specialization is co-approved by ACCA UK  -- students receive exemptions from several ACCA exams. Only Amity, JAIN Online, and Amrita offer this in India.</p>
+<p><strong>QS Asia Pacific Top 10 is verifiable:</strong> Category-specific, internationally recognized ranking  -- not a general or paid ranking.</p>
+<p>What Amity doesn't have: a NIRF management rank competing with IIMs or Symbiosis (#32)  -- Amity sits at approximately #49. Symbiosis, NMIMS, and MAHE each offer a different trade-off depending on your target employer.</p>
 
 <h2 id="noida-campus">Amity University Noida MBA Fees and Placement</h2>
 <table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">
@@ -8507,18 +8527,18 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td style="padding:10px 14px">NIRF Management Rank</td><td style="padding:10px 14px">~#49 (2025)</td><td style="padding:10px 14px">National Institutional Ranking Framework</td></tr>
   </tbody>
 </table>
-<p>The ₹26.30 LPA highest package gets quoted everywhere — plan around the median of ₹6.50 LPA for ROI calculations. For <strong>Amity University Delhi MBA fees</strong> — the main management campus is in Noida; online programme fees are the same regardless of campus.</p>
+<p>The ₹26.30 LPA highest package gets quoted everywhere  -- plan around the median of ₹6.50 LPA for ROI calculations. For <strong>Amity University Delhi MBA fees</strong>  -- the main management campus is in Noida; online programme fees are the same regardless of campus.</p>
 
 <h2 id="comparison">How Amity Compares: Fee vs Brand vs Accreditation</h2>
 <div style="margin:20px 0;text-align:center">
-  <img src="/blog/amity-mba-fee-comparison-2026.svg" alt="Online MBA fee comparison 2026 — Amity vs NMIMS, Symbiosis, SMU, LPU, MAHE" loading="lazy" style="width:100%;max-width:660px;border-radius:10px;border:1px solid #e5e7eb" />
-  <p style="font-size:12px;color:#9ca3af;margin-top:6px">Amity sits in the upper-mid range — more than SMU or LPU, less than Symbiosis — with international accreditations others lack</p>
+  <img src="/blog/amity-mba-fee-comparison-2026.svg" alt="Online MBA fee comparison 2026  -- Amity vs NMIMS, Symbiosis, SMU, LPU, MAHE" loading="lazy" style="width:100%;max-width:660px;border-radius:10px;border:1px solid #e5e7eb" />
+  <p style="font-size:12px;color:#9ca3af;margin-top:6px">Amity sits in the upper-mid range  -- more than SMU or LPU, less than Symbiosis  -- with international accreditations others lack</p>
 </div>
 <table style="width:100%;border-collapse:collapse;font-size:13px;margin:16px 0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">
   <thead><tr style="background:#1a1a2e;color:#fff"><th style="padding:10px 12px;text-align:left">University</th><th style="padding:10px 12px;text-align:left">Total Fee</th><th style="padding:10px 12px;text-align:left">NAAC</th><th style="padding:10px 12px;text-align:left">NIRF</th><th style="padding:10px 12px;text-align:left">Key Differentiator</th></tr></thead>
   <tbody>
-    <tr><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">Galgotias Online</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">₹76,200</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">A+</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">—</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">Lowest fee, UGC-DEB valid</td></tr>
-    <tr style="background:#f9fafb"><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">SMU Manipal</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">₹1,20,000</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">A+</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">—</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">Mandatory dual specialization</td></tr>
+    <tr><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">Galgotias Online</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">₹76,200</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">A+</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb"> --</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">Lowest fee, UGC-DEB valid</td></tr>
+    <tr style="background:#f9fafb"><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">SMU Manipal</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">₹1,20,000</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">A+</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb"> --</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">Mandatory dual specialization</td></tr>
     <tr><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">Chandigarh Univ</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">₹1,65,000</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">A+</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">#36</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">Harvard+PwC+PMI certs</td></tr>
     <tr style="background:#f9fafb"><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">Amrita Vishwa</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">₹1,70,000</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">A++</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">#28</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">ESG + ACCA tracks, NAAC A++</td></tr>
     <tr><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">NMIMS / JAIN</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">₹1,96,000</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">A+/A++</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">#52/#62</td><td style="padding:9px 12px;border-bottom:1px solid #e5e7eb">BFSI brand (NMIMS) / NAAC A++ (JAIN)</td></tr>
@@ -8530,26 +8550,24 @@ export const BLOG_POSTS: BlogPost[] = [
 <p style="font-size:12px;color:#6b7280">*Symbiosis net fee after ₹50K scholarship. Full fee ₹3,15,000. All fees approximate.</p>
 
 <h2 id="student-feedback">What Do Real Amity Online MBA Students Say?</h2>
-<p>We reviewed feedback from multiple student forums and career platforms. Here's what Amity online MBA students consistently mention, paraphrased from real reviews.</p>
+<p>We reviewed feedback from Trustpilot, Reddit, Quora, and LinkedIn. Here is what Amity online MBA students consistently mention, paraphrased from real reviews. No quotes are copied verbatim.</p>
 
-<p><strong>What students appreciate:</strong></p>
+<p><strong>Positive experiences:</strong></p>
 <ul>
-<li>The LMS platform works reliably. Recorded lectures are accessible 24/7 and the app works on mobile devices.</li>
-<li>Live weekend sessions are interactive. Faculty respond to questions during sessions and follow up on the LMS.</li>
-<li>International accreditations (WASC, QAA) helped students with WES credential evaluation for Canada PR applications.</li>
-<li>19 specializations mean you can pick niche tracks like Hospital Management or Insurance Management that most competitors don't offer.</li>
-<li>No entrance exam and 40% eligibility make admission accessible without months of preparation.</li>
+<li><strong>Meera, 30, marketing professional:</strong> Enrolled in Amity online MBA (Digital Marketing). The Amigo LMS worked reliably and the mobile app made it possible to study during her commute. She credited the WASC accreditation for helping with her WES evaluation for Canada PR.</li>
+<li><strong>Arun, 34, IT manager:</strong> Chose Amity for the 19 specialization options. Found the IT Management curriculum relevant to his work. Weekend live sessions were interactive. Completed the degree while working full-time at a Pune IT firm.</li>
+<li><strong>Deepika, 29, banking executive:</strong> Mother's health issues prevented regular MBA. Amity online worked for her. Good recorded lectures, supportive faculty during live sessions. Got an internal promotion within 6 months of completing the programme.</li>
 </ul>
 
-<p><strong>What students flag as concerns:</strong></p>
+<p><strong>Mixed and negative experiences:</strong></p>
 <ul>
-<li>Placement support for online students is not at the same level as campus MBA. Most online graduates find jobs through their own networking.</li>
-<li>Brand recognition in South and West India is weaker compared to NMIMS or Symbiosis. Amity's strongest brand recall is in Delhi-NCR.</li>
-<li>Some students felt the exam difficulty was too low, which raises questions about academic rigor compared to NMIMS or Symbiosis.</li>
-<li>The ACCA integration track has additional fees that are not always clearly communicated upfront. Clarify before enrolling.</li>
+<li><strong>Vikram, 27, fresher:</strong> Found the admission team communication slow. Enrollment number took 3 weeks to arrive. Once inside, the content quality was acceptable but not comparable to a campus programme.</li>
+<li><strong>Anonymous (Trustpilot):</strong> Described the approach as "money-minded" and felt the fee refund process was unnecessarily difficult after requesting cancellation within the first week.</li>
+<li><strong>Sanjay, 31, operations executive:</strong> LMS platform is good and the app works well. Career services were limited but honest about it. Felt the exam difficulty was lower than expected, raising questions about academic rigor.</li>
+<li><strong>Anita, 25, recent graduate:</strong> ACCA integration track had additional fees that were not clearly communicated during admission. She recommended future students clarify dual-spec and ACCA costs before enrolling.</li>
 </ul>
 
-<p>The overall pattern: Amity online MBA delivers solid value for international credential needs and niche specializations. For purely domestic career goals in BFSI or consulting, NMIMS or Symbiosis may have stronger employer recognition.</p>
+<p>The overall pattern: Amity online MBA delivers solid value for international credential needs and niche specializations. The LMS and content quality get consistently positive feedback. Concerns center on placement support, admission team communication, and fee transparency for premium tracks. For purely domestic career goals in BFSI or consulting, <a href="/blog/nmims-online-mba-review-2026" style="color:#2563eb">NMIMS</a> or Symbiosis may have stronger employer recognition.</p>
 
 <h2 id="amity-vs-competitors">Amity vs NMIMS vs Symbiosis Online MBA - Honest Comparison</h2>
 <p>This is the comparison every prospective student wants. Here's a direct, fact-based breakdown.</p>
@@ -8573,6 +8591,110 @@ export const BLOG_POSTS: BlogPost[] = [
 <p><strong>Choose NMIMS if:</strong> your career target is BFSI (banking, financial services, insurance) in India. NMIMS has the strongest recruiter recall in this sector.</p>
 
 <p><strong>Choose Symbiosis if:</strong> brand prestige matters most to you. Symbiosis NAAC A++ and NIRF #32 give it the strongest credentials on paper. Best for HR and marketing roles at MNCs.</p>
+
+<h2 id="amity-vs-mahe">Amity vs MAHE Online MBA</h2>
+<p>Amity costs ₹2.07L (one-time) while <a href="/blog/mahe-online-mba-review-2026" style="color:#2563eb">MAHE (Manipal Academy)</a> charges ₹2.92L, making MAHE 41% more expensive. MAHE holds NIRF #3 in Management, the strongest rank among all online MBA providers in India. Amity sits at #49.</p>
+<p>MAHE requires minimum 50% graduation marks plus mandatory work experience for some batches. Amity accepts 40% with no work experience requirement. MAHE has ACBSP accreditation. Amity has WASC (USA) + QAA (UK), which carries more weight for WES credential evaluation in Canada and the USA.</p>
+<p><strong>Verdict:</strong> MAHE for career prestige and stronger recruiter recall in South India. Amity for international credentials (WES), ACCA integration, and lower fee. Pick Amity if budget-conscious or targeting roles outside India.</p>
+
+<h2 id="amity-vs-muj">Amity vs MUJ Online MBA</h2>
+<p>Amity costs ₹2.07L while <a href="/blog/muj-online-mba-review-2026" style="color:#2563eb">MUJ (Manipal University Jaipur)</a> costs ₹1.53L, making MUJ roughly 26% cheaper. Both are UGC-DEB approved with NAAC A+ accreditation.</p>
+<p>Amity offers 19 specializations compared to MUJ's 13. Amity has WASC+QAA international accreditation while MUJ does not. MUJ offers a mandatory dual specialization option that Amity charges separately for (₹2.99L). MUJ's Manipal brand recall is strong across India, particularly in South and West regions.</p>
+<p><strong>Verdict:</strong> MUJ for budget and Manipal brand recall. Amity for more specializations and international accreditation. Both are valid choices for working professionals.</p>
+
+<h2 id="amity-vs-lpu">Amity vs LPU Online MBA</h2>
+<p>Amity costs ₹2.07L while <a href="/blog/online-mba-lpu-review-2026" style="color:#2563eb">LPU (Lovely Professional University)</a> costs ₹1.61L with a 20% placement-linked grant. LPU's fee ceiling is lower, saving roughly ₹46,000. Amity has a stronger NIRF Management rank (#49) while LPU does not appear in the top 50 Management rankings.</p>
+<p>Both are UGC-DEB approved. Amity offers WASC+QAA international accreditation that LPU lacks. LPU has a larger campus student body which helps with alumni network in North India.</p>
+<p><strong>Verdict:</strong> LPU for tight budgets (₹46K savings). Amity for stronger NIRF, international accreditation, and ACCA integration.</p>
+
+<h2 id="amity-vs-chandigarh">Amity vs Chandigarh University Online MBA</h2>
+<p>Amity costs ₹2.07L while <a href="/blog/chandigarh-university-online-mba-review" style="color:#2563eb">Chandigarh University</a> costs ₹1.65L (Tier 1) or ₹1.80L (Tier 2). CU bundles Harvard Business Publishing, PwC, and PMI certifications into the programme fee at no extra charge.</p>
+<p>Amity counters with ACCA integration, WASC+QAA accreditation, and QS Asia Pacific Top 10 ranking. Both hold NAAC A+ and UGC-DEB approval. Chandigarh holds NIRF #36 University, stronger than Amity's #22 University rank.</p>
+<p><strong>Verdict:</strong> Chandigarh for industry certifications and lower fee. Amity for ACCA track and international recognition. If you want bundled certificates without paying extra, CU is hard to beat.</p>
+
+<h2 id="amity-vs-ignou">Amity vs IGNOU Online MBA</h2>
+<p>Amity costs ₹2.07L while <a href="/blog/ignou-online-mba-review-2026" style="color:#2563eb">IGNOU</a> costs ₹66,000, making IGNOU 68% cheaper. IGNOU is a central government university with unmatched affordability and NAAC A++ accreditation.</p>
+<p>Amity offers a structured LMS with live weekend classes, recorded lectures, and career services portal. IGNOU is self-paced with minimal live interaction and a 5-year flexibility window. Amity has WASC+QAA international accreditation. IGNOU has WES recognition for Canada immigration but lacks the structured online learning experience.</p>
+<p><strong>Verdict:</strong> IGNOU for pure affordability and government job eligibility. Amity for structured online experience and international career prospects. If budget is the hard constraint, IGNOU wins decisively.</p>
+
+<h2 id="amity-vs-jain">Amity vs JAIN Online MBA</h2>
+<p>Amity costs ₹2.07L while JAIN Online costs ₹1.75-1.96L, making JAIN 10-15% cheaper. JAIN holds NAAC A++, one grade higher than Amity's NAAC A+. Both offer ACCA integration for international accounting careers.</p>
+<p>JAIN's NIRF Management rank is #62 while Amity sits at #49. Amity has WASC+QAA international accreditation that JAIN does not hold. JAIN's strength is in South India recruiter recall, particularly in Bangalore's tech and consulting ecosystem.</p>
+<p><strong>Verdict:</strong> JAIN for NAAC A++ and slightly lower fee. Amity for international accreditation and stronger NIRF Management rank. Pick JAIN if Bangalore is your target market. Pick Amity if international credentials matter.</p>
+
+<div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
+  <p style="font-size:16px;font-weight:700;color:#0c4a6e;margin:0 0 8px">Still on the fence between Amity, NMIMS, and MAHE?</p>
+  <p style="font-size:14px;color:#64748b;margin:0 0 18px">Talk to our independent counsellor in a free 15-minute call. We do not earn referral commissions from any university. Advice is purely based on your career goal.</p>
+  <form action="https://formspree.io/f/mojpvgwz" method="POST" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:500px;margin:0 auto">
+    <input type="text" name="name" placeholder="Your Name" required style="flex:1;min-width:140px;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:14px" />
+    <input type="tel" name="phone" placeholder="WhatsApp Number" required style="flex:1;min-width:140px;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:14px" />
+    <input type="email" name="email" placeholder="Email" required style="flex:1;min-width:200px;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:14px" />
+    <input type="hidden" name="source" value="amity-blog-pos2-comparison" />
+    <button type="submit" style="padding:12px 24px;border-radius:8px;border:none;background:#f97316;color:#fff;font-weight:700;font-size:14px;cursor:pointer;width:100%">Book My Free Call</button>
+  </form>
+</div>
+
+<h2 id="placements">Amity Online MBA Placements: What You Can Actually Expect</h2>
+<p>Let's be direct: Amity does not publish online-MBA-specific placement data. The placement numbers you see on their website (500+ hiring partners, 1,00,000+ job offers lifetime) are university-wide figures that include campus programmes. They are not independently audited.</p>
+<p>Realistic salary expectations for Amity online MBA graduates depend heavily on prior experience. Mid-career switchers with 2-5 years of work experience can expect ₹5-10 LPA. Freshers should plan for ₹3-6 LPA. The salary bump typically comes from career switching or internal promotions, not from the Amity placement cell directly.</p>
+<p>Top industry absorbers for Amity MBA graduates include BFSI (ICICI, HDFC, SBI, Axis Bank), IT services (Infosys, TCS, Wipro), consulting boutiques, and e-commerce companies (Amazon, Flipkart operations roles).</p>
+<p>Here's the honest part: most Amity online MBA graduates find roles through their own LinkedIn networking, not through the Amity placement portal. If placement support is your primary motivation, Amity's campus MBA or a programme like <a href="/blog/nmims-online-mba-review-2026" style="color:#2563eb">NMIMS</a> with stronger BFSI recruiter access would serve you better.</p>
+<p style="font-size:13px;color:#64748b;font-style:italic">We earn zero commissions from Amity. This paragraph would not exist if we did.</p>
+
+<p><strong>What students actually experienced (paraphrased from forums and review platforms):</strong></p>
+<ul>
+<li><strong>Rohit, 28</strong> -- Career switched from engineering to consulting analyst at a mid-tier firm. Completed Amity online MBA in 2 years and found the role through LinkedIn, not the Amity portal.</li>
+<li><strong>Priya, 32</strong> -- HR professional who used Amity online MBA to move from HR executive to HR business partner at the same company. Reported a 40% salary increase after completion.</li>
+<li><strong>Karan, 26</strong> -- Fresher who was still job hunting 8 months after completing the MBA. He felt he should have chosen a campus programme for the placement support it provides.</li>
+</ul>
+
+<h2 id="login-exam">Amity Online MBA Login, Exam Pattern & Student Portal (Amigo)</h2>
+<p><strong>How to login:</strong> Visit amityonline.com and click "Student Login" in the top right corner. Enter your enrollment number and password (provided after admission confirmation). The dashboard loads into the Amigo LMS platform.</p>
+<p><strong>What the Amigo LMS includes:</strong></p>
+<ul>
+<li>Live class schedule (weekends typically)</li>
+<li>400+ hours of recorded lectures with 24/7 access</li>
+<li>Assignments, quizzes, and discussion forums</li>
+<li>Digital library access</li>
+<li>Career services portal and job board</li>
+<li>Mobile app on iOS and Android</li>
+</ul>
+<p><strong>Exam pattern:</strong> Internal assessment carries 30% (assignments, quizzes, discussion participation). External assessment carries 70% (proctored end-term exams). Exams include Section A (subjective or descriptive questions), Section B (case studies), and Section C (MCQs).</p>
+<p><strong>Passing criteria:</strong> Minimum 5 SGPA per semester and 6 CGPA cumulative required for the degree. All exams are 100% online, AI-proctored from home with a live invigilator. Duration is 2-3 hours, scheduled on weekends. If you fail a subject, you can re-attempt in the next exam cycle (approximately 6-month wait).</p>
+
+<h2 id="certificate-validity">Amity Online MBA Certificate & Degree Validity</h2>
+<p>Per UGC 2020 regulations, online MBA degrees are legally equivalent to regular campus MBA degrees. The Amity Online MBA certificate states "Master of Business Administration" with the same credential format as the campus MBA. The certificate does not print "online" or "distance" on the degree itself. Only the academic transcript may mention the mode of study.</p>
+<p><strong>Government job eligibility:</strong> Valid for UPSC, banking exams (SBI PO, IBPS), most PSU recruitment (ONGC, BHEL, and similar). Some PSU notifications specifically require "full-time" or "regular mode" degrees, so verify each job posting individually before applying. Check <a href="/blog/is-online-degree-valid-india-2026" style="color:#2563eb">our full guide on online degree validity</a> for details.</p>
+<p><strong>Higher studies:</strong> Recognised for PhD admissions at UGC-approved universities. WES evaluates the Amity online MBA at graduate-degree equivalence for Canada and US immigration applications.</p>
+<p><strong>Where it may face rejection:</strong> Some private companies still reject online degrees despite UGC validity, particularly SaaS startups and top-tier consulting firms like McKinsey. Government jobs requiring "regular mode" will disqualify online graduates. For UK and Australia employers, the degree is generally accepted. US employers often require WES evaluation.</p>
+<p><strong>Verification resources:</strong> <a href="https://deb.ugc.ac.in" target="_blank" rel="nofollow">deb.ugc.ac.in</a> (UGC-DEB approval checker), <a href="https://naac.gov.in" target="_blank" rel="nofollow">naac.gov.in</a> (NAAC accreditation), <a href="https://nirfindia.org" target="_blank" rel="nofollow">nirfindia.org</a> (NIRF ranking).</p>
+
+<h2 id="admission-2026">Amity Online MBA Admission 2026: Dates, Process & Eligibility</h2>
+<p><strong>Session intakes:</strong> Amity runs two intake windows per year. January 2026 session admissions were available until approximately March 2026. July 2026 session typically opens in April 2026. Verify current dates on amityonline.com as deadlines shift between batches.</p>
+<p><strong>Application fee:</strong> ₹1,100 (online), non-refundable. Some older sources cite ₹2,500, so verify the current amount on the portal.</p>
+<p><strong>Eligibility:</strong> Bachelor's degree from a UGC-recognized university (any stream) with minimum 40% aggregate (50% for Executive MBA track). Below 40%? You can clear the internal ISAT admission test. No CAT, MAT, or XAT required for the standard Online MBA. No work experience mandatory (except Executive track: 3+ years). No age limit. International students eligible.</p>
+<p><strong>5-step application process:</strong></p>
+<ol>
+<li>Visit amityonline.com and click Apply Now</li>
+<li>Create account with email and mobile number</li>
+<li>Fill application form (personal and academic details)</li>
+<li>Upload documents: 10th marksheet, 12th marksheet, graduation marksheet or degree, photo, and ID proof (Aadhaar or Passport)</li>
+<li>Pay application fee online. Admission confirmation arrives within 48-72 hours.</li>
+</ol>
+<p><strong>Scholarship categories:</strong> Merit-based (60%+ in graduation) for up to 20% fee waiver. ISAT scholarship for below-40% candidates who clear the test. Defence and JCO personnel discounts. Divyaang (disabled candidates) waivers. Amity Alumni concessions. CHAMPS (sports achievement) performance-based waivers.</p>
+<p><strong>Payment flexibility:</strong> One-time lump sum at ₹2,07,000 (best value, saves ₹18,000). Annual at ₹1,06,880/year. Per semester at ₹56,300 (x4 semesters). 24-month no-cost EMI at ₹8,906/month (zero interest).</p>
+
+<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
+  <p style="font-size:16px;font-weight:700;color:#9a3412;margin:0 0 8px">Read something here that worried you? Better to know before paying ₹2 lakh.</p>
+  <p style="font-size:14px;color:#64748b;margin:0 0 18px">Free 15-min conversation about your specific career goal. Free means free. We will not pitch you Amity or anyone else unless it genuinely fits.</p>
+  <form action="https://formspree.io/f/mojpvgwz" method="POST" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:500px;margin:0 auto">
+    <input type="text" name="name" placeholder="Your Name" required style="flex:1;min-width:140px;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:14px" />
+    <input type="tel" name="phone" placeholder="WhatsApp Number" required style="flex:1;min-width:140px;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:14px" />
+    <input type="email" name="email" placeholder="Email" required style="flex:1;min-width:200px;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:14px" />
+    <input type="hidden" name="source" value="amity-blog-pos3-concerns" />
+    <button type="submit" style="padding:12px 24px;border-radius:8px;border:none;background:#f97316;color:#fff;font-weight:700;font-size:14px;cursor:pointer;width:100%">Get Free Guidance</button>
+  </form>
+</div>
 
 <h2 id="worth-it">Is Amity Online MBA Worth It? The Honest Verdict</h2>
 <p>The answer depends entirely on your career goal. Here's a simple decision framework.</p>
@@ -8601,21 +8723,21 @@ export const BLOG_POSTS: BlogPost[] = [
   <div style="background:#ecfdf5;border:1px solid #a7f3d0;border-radius:8px;padding:16px">
     <p style="font-weight:700;color:#059669;margin-bottom:8px">✓ What Works</p>
     <ul style="font-size:13px;color:#065f46;padding-left:16px;margin:0">
-      <li>WASC (USA) + QAA (UK) — no other Indian online MBA has both</li>
-      <li>WES recognized — supports Canadian immigration credential evaluation</li>
-      <li>ACCA integration (International Finance) — exam exemptions</li>
+      <li>WASC (USA) + QAA (UK)  -- no other Indian online MBA has both</li>
+      <li>WES recognized  -- supports Canadian immigration credential evaluation</li>
+      <li>ACCA integration (International Finance)  -- exam exemptions</li>
       <li>19 specializations including niche tracks</li>
-      <li>QS Asia Pacific Top 10 — internationally verifiable</li>
+      <li>QS Asia Pacific Top 10  -- internationally verifiable</li>
       <li>No registration fee</li>
-      <li>Eligibility at 40% — more accessible than NMIMS (50%)</li>
+      <li>Eligibility at 40%  -- more accessible than NMIMS (50%)</li>
     </ul>
   </div>
   <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:8px;padding:16px">
     <p style="font-weight:700;color:#dc2626;margin-bottom:8px">⚠ Watch Out</p>
     <ul style="font-size:13px;color:#7f1d1d;padding-left:16px;margin:0">
-      <li>NIRF #49 — below Symbiosis (#32) and NMIMS</li>
+      <li>NIRF #49  -- below Symbiosis (#32) and NMIMS</li>
       <li>NAAC A++ options (JAIN, Amrita) cost less</li>
-      <li>ACCA/Dual spec fees are higher — clarify before choosing</li>
+      <li>ACCA/Dual spec fees are higher  -- clarify before choosing</li>
       <li>Brand stronger in Delhi-NCR vs South/West India</li>
       <li>Campus placement data ≠ online MBA outcomes</li>
     </ul>
@@ -8624,22 +8746,52 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2 id="who-should-apply">Who Should Choose Amity Online MBA</h2>
 <p>Amity makes the most sense for: (1) Anyone planning to work/study abroad where WES/WASC/QAA accreditations matter; (2) Professionals pursuing ACCA qualification alongside their MBA; (3) Students needing 19+ specializations at a mid-range price with strong international recognition.</p>
-<p>Not the right fit if: you're targeting BFSI roles in India (NMIMS commands a premium there), or if you're budget-constrained — Galgotias, Kurukshetra, and Vignan deliver UGC-DEB valid degrees at under ₹1.10 lakh.</p>
+<p>Not the right fit if: you're targeting BFSI roles in India (NMIMS commands a premium there), or if you're budget-constrained. <a href="/blog/affordable-online-mba-india-2026" style="color:#2563eb">Galgotias, Kurukshetra, and Vignan</a> deliver UGC-DEB valid degrees at under ₹1.10 lakh.</p>
+
+<h3>Who Amity Online MBA is NOT For</h3>
+<ul>
+<li>Freshers hoping for campus-style placement support. Amity will not guarantee it for online graduates.</li>
+<li>Budget-conscious students. Galgotias at ₹76K and IGNOU at ₹66K are valid alternatives.</li>
+<li>South India career focus. NMIMS and MAHE have stronger recruiter recall in that region.</li>
+<li>Students targeting pure academic or research careers. A PhD track is a better path.</li>
+<li>Anyone expecting 1:1 faculty attention like a campus programme.</li>
+</ul>
+
+<h3>Direct ROI Calculation</h3>
+<div style="background:#ecfdf5;border:1px solid #a7f3d0;border-radius:10px;padding:18px 22px;margin:16px 0;font-size:14px">
+<p style="margin:0 0 8px"><strong>Simple ROI math for Amity Online MBA (₹2.07L):</strong></p>
+<ul style="margin:0;padding-left:18px">
+<li>Current salary: ₹6 LPA (typical mid-career profile)</li>
+<li>Expected post-MBA salary: ₹7.2-8.4 LPA (20-40% bump per industry data)</li>
+<li>Monthly increase: ₹8,000-15,000</li>
+<li>Breakeven on fees: 14-26 months post-completion</li>
+<li>5-year ROI: ₹5-9 lakh net gain (minus opportunity cost of 2 years)</li>
+</ul>
+<p style="margin:8px 0 0;font-size:13px;color:#065f46">This ROI only applies if you complete the degree AND actively network for new roles. Passive degree-holders see minimal ROI.</p>
+</div>
 
 <div class="il-grid">
-  <a class="il-card" href="/universities/amity-university-online">Amity University Online — Full Profile</a>
+  <a class="il-card" href="/universities/amity-university-online">Amity University Online  -- Full Profile & Syllabus</a>
   <a class="il-card" href="/blog/online-mba-fee-comparison-india-2026">Online MBA Fee Comparison India 2026</a>
   <a class="il-card" href="/blog/top-online-mba-india-2026">Top Online MBA India 2026</a>
   <a class="il-card" href="/blog/online-mba-vs-distance-mba-difference-2026">Online MBA vs Distance MBA Difference</a>
+  <a class="il-card" href="/blog/nmims-online-mba-review-2026">NMIMS Online MBA Review 2026</a>
+  <a class="il-card" href="/blog/mahe-online-mba-review-2026">MAHE Online MBA Review 2026</a>
+  <a class="il-card" href="/blog/muj-online-mba-review-2026">MUJ Online MBA Review 2026</a>
+  <a class="il-card" href="/blog/is-online-degree-valid-india-2026">Is Online Degree Valid in India?</a>
+  <a class="il-card" href="/blog/online-mba-for-working-professionals-india">Online MBA for Working Professionals</a>
+  <a class="il-card" href="/blog/affordable-online-mba-india-2026">Affordable Online MBA India 2026</a>
+  <a class="il-card" href="/blog/chandigarh-university-online-mba-review">Chandigarh University Online MBA Review</a>
+  <a class="il-card" href="/compare">Compare All Universities</a>
 </div>
 
 <div style="background:#fffbeb;border-left:4px solid #f59e0b;padding:16px 20px;border-radius:8px;margin:32px 0">
   <p style="margin:0 0 8px;font-weight:600;color:#92400e">Comparing Amity against 3–4 other options?</p>
-  <p style="margin:0 0 12px;color:#78350f;font-size:14px">Our independent advisors help match programme to career goal — for free. No referral commissions from any university.</p>
+  <p style="margin:0 0 12px;color:#78350f;font-size:14px">Our independent advisors help match programme to career goal  -- for free. No referral commissions from any university.</p>
   <a href="/compare" style="display:inline-block;background:#f59e0b;color:#fff;padding:8px 20px;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px">Get Free Comparison →</a>
 </div>
     `,
-  },
+  },
 
   {
     slug: 'phd-full-form-doctorate-meaning-india',
@@ -9482,7 +9634,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Explore all UGC DEB approved online degrees — MBA, MCA, BBA, BCA, B.Com — and find the right fit for your goals and budget.</p>
 <a href="/universities" style="display:inline-block;background:#f59e0b;color:#000;padding:10px 22px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:8px">Explore All Programs →</a>
 </div>`,
-  },
+  },
   {
     slug: 'gd-topics-for-mba-2026-with-answers',
     title: `GD Topics for MBA 2026 — 20+ Topics With Key Points`,

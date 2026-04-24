@@ -285,6 +285,7 @@ export const UNIVERSITIES: University[] = [
           { slug: 'marketing-sales-management', name: 'Marketing and Sales Management' },
           { slug: 'production-and-operations-management', name: 'Production and Operations Management' },
           { slug: 'retail-management', name: 'Retail Management' },
+          { slug: 'international-finance-acca', name: 'International Finance (ACCA)' },
         ],
         fees: '₹2.25L',
         duration: '2 Years',
