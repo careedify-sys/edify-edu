@@ -6,8 +6,7 @@ import { GraduationCap, Layers, Wallet, BadgeCheck } from 'lucide-react'
 import { UNIS_SLIM, formatFeeSlim, type UniSlim } from '@/lib/data-slim'
 import { PREFERRED_UNI_IDS } from '@/lib/data-slim'
 import { uniHasSpec } from '@/lib/specMapping'
-import { specName as getSpecName } from '@/lib/data'
-import type { SpecValue } from '@/lib/data'
+import UniversityCard from '@/components/UniversityCard'
 
 const SPEC_CHIPS = [
   'All', 'Finance', 'Human Resources', 'Marketing', 'Business Analytics',
@@ -30,19 +29,6 @@ const TRAFFIC_ORDER = [
   'sharda-university-online', 'vignan-university-online',
   'alliance-university-online', 'kurukshetra-university-online',
 ]
-
-function nirfBadgeColor(nirf: number): string {
-  if (nirf <= 25) return 'bg-emerald-500'
-  if (nirf <= 75) return 'bg-amber-500'
-  return 'bg-gray-500'
-}
-
-function getNirfLabel(u: UniSlim): { label: string; color: string } | null {
-  const mgt = (u as any).nirfMgt
-  if (mgt && mgt < 200) return { label: `NIRF #${mgt} Management`, color: nirfBadgeColor(mgt) }
-  if (u.nirf > 0 && u.nirf < 200) return { label: `NIRF #${u.nirf} University`, color: nirfBadgeColor(u.nirf) }
-  return null
-}
 
 export default function MBAHubClient() {
   const [selectedSpec, setSelectedSpec] = useState('All')
@@ -160,53 +146,12 @@ export default function MBAHubClient() {
         </p>
       </section>
 
-      {/* Uni Grid */}
+      {/* Uni Grid — reuses same UniversityCard component as /universities page */}
       <section className="max-w-6xl mx-auto px-4 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {(selectedSpec === 'All' ? mbaUnis : filtered).map(u => {
-            const nirfInfo = getNirfLabel(u)
-            const feeRange = u.feeMin === u.feeMax
-              ? formatFeeSlim(u.feeMin)
-              : `${formatFeeSlim(u.feeMin)} - ${formatFeeSlim(u.feeMax)}`
-            return (
-              <Link
-                key={u.id}
-                href={`/universities/${u.id}/mba`}
-                className="group block rounded-xl border border-slate-200 bg-white p-5 no-underline transition-all hover:shadow-lg hover:border-amber-400 hover:-translate-y-0.5"
-              >
-                <div className="flex items-start gap-3 mb-3">
-                  {u.logo ? (
-                    <div className="w-14 h-14 shrink-0 bg-white border border-slate-100 rounded-lg flex items-center justify-center p-1.5">
-                      <img src={u.logo} alt="" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
-                    </div>
-                  ) : (
-                    <div className="w-14 h-14 shrink-0 rounded-lg flex items-center justify-center text-white text-sm font-bold" style={{ backgroundColor: u.color }}>
-                      {u.abbr.slice(0, 4)}
-                    </div>
-                  )}
-                  <div className="min-w-0 flex-1">
-                    <h3 className="text-sm font-bold text-slate-800 group-hover:text-amber-600 transition-colors leading-snug mb-1">
-                      {u.name.replace(/ Online$/, '')}
-                    </h3>
-                    <div className="flex items-center gap-1.5 flex-wrap">
-                      {nirfInfo && (
-                        <span className={`inline-flex px-2 py-0.5 rounded text-[10px] font-bold text-white ${nirfInfo.color}`}>
-                          {nirfInfo.label}
-                        </span>
-                      )}
-                      <span className="inline-flex px-2 py-0.5 rounded text-[10px] font-semibold bg-slate-100 text-slate-600">
-                        NAAC {u.naac}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-100">
-                  <span className="font-semibold text-slate-700">{u.feeMin > 0 ? feeRange : 'Fee on request'}</span>
-                  <span className="text-amber-600 font-semibold group-hover:underline">View Programme →</span>
-                </div>
-              </Link>
-            )
-          })}
+          {(selectedSpec === 'All' ? mbaUnis : filtered).map(u => (
+            <UniversityCard key={u.id} u={u as any} highlightProgram="MBA" />
+          ))}
         </div>
         {filtered.length === 0 && selectedSpec !== 'All' && (
           <div className="text-center py-12 text-slate-500">

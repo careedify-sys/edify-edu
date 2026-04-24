@@ -92,10 +92,10 @@ export default function UniversityCard({ u, highlightProgram }: { u: UniversityC
               </div>
             </div>
             <div className="flex flex-col items-end gap-1 shrink-0">
-              {u.nirf < 200 && <span className="badge-nirf text-[10px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap">NIRF #{u.nirf}</span>}
-              {u.nirfm && (
+              {u.nirf > 0 && u.nirf < 200 && <span className="badge-nirf text-[10px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap">NIRF #{u.nirf} University</span>}
+              {u.nirfm && u.nirfm > 0 && u.nirfm < 200 && (
                 <span className="badge-nirfm text-[10px] font-semibold px-2 py-0.5 rounded-full whitespace-nowrap">
-                  M #{u.nirfm}
+                  NIRF #{u.nirfm} Mgmt
                 </span>
               )}
               {u.qsRank && (
