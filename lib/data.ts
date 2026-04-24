@@ -1902,7 +1902,7 @@ export const UNIVERSITIES: University[] = [
     govtRecognised: true,
     psuEligible: true,
     feeMin: 196000,
-    feeMax: 196000,
+    feeMax: 220000,
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
