@@ -438,7 +438,7 @@ export default function Navbar() {
               </div>
               <div className="brand-scroll">
                 {UNIS_SLIM
-                  .filter(u => FEATURED_IDS.includes(u.id))
+                  .filter(u => TRAFFIC_ORDER.includes(u.id))
                   .sort((a, b) => getSortRank(a) - getSortRank(b))
                   .map(u => (
                     <Link key={u.id} href={`/universities/${u.id}`} className="brand-pill"
