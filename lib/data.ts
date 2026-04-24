@@ -7127,7 +7127,7 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 0,
+    feeMin: 150000,
     feeMax: 0,
     emiFrom: 6319,
     eligibility: 'Graduation with 50% marks from recognized university',
