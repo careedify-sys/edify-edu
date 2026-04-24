@@ -79,18 +79,20 @@ export async function generateMetadata(
     ? (specEntry ? getSpecContent(specEntry.contentKey) : null) || getSpecContent(activeSpec)
     : null
 
+  const uniCount = getUniversitiesByProgram(program).length
+
   const title = specContent?.metaTitle
     || (activeSpec
       ? `Best Online ${program} in ${activeSpec} ${year} — Fees, Colleges, Career | EdifyEdu`
       : program === 'MBA'
-        ? `Online MBA ${year} — ${universities.length}+ UGC-Approved Universities Compared | EdifyEdu`
+        ? `Online MBA ${year} — ${uniCount}+ UGC-Approved Universities Compared | EdifyEdu`
         : `Online ${program} India ${year} — Compare UGC Approved Universities | EdifyEdu`)
 
   const description = specContent?.metaDesc
     || (activeSpec
       ? `Compare top UGC DEB approved online ${program} programs with ${activeSpec} specialisation in India ${year}. Check NIRF ranks, fees, career scope, and salary data.`
       : program === 'MBA'
-        ? `Compare online MBA programmes from ${universities.length} UGC-DEB approved universities in India. Filter by specialisation, fees from ₹66,000. Independent, commission-free rankings by EdifyEdu.`
+        ? `Compare online MBA programmes from ${uniCount} UGC-DEB approved universities in India. Filter by specialisation, fees from Rs 66,000. Independent, commission-free rankings by EdifyEdu.`
         : `Explore all UGC approved online ${program} programs in India. Find real NIRF rankings, NAAC grades, and verified fees. Admissions for ${year}.`)
 
   const canonical = activeSpec
