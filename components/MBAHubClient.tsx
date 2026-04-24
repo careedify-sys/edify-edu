@@ -43,9 +43,9 @@ export default function MBAHubClient() {
         const uniSpecs = u.mbaSpecs
         if (!uniSpecs || uniSpecs.length === 0) return false
         return uniSpecs.some(s => {
-          const sn = s.toLowerCase().replace(/[^a-z ]/g, '').trim()
+          const sn = s.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim()
           return spec.variants.some(v => {
-            const vn = v.toLowerCase().replace(/[^a-z ]/g, '').trim()
+            const vn = v.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim()
             if (sn === vn) return true
             // Check if spec starts with variant or variant starts with spec
             if (sn.startsWith(vn + ' ') || sn.startsWith(vn + 's')) return true

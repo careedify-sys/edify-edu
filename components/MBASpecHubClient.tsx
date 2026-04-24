@@ -24,9 +24,9 @@ export default function MBASpecHubClient({ specSlug, specName }: Props) {
         const uniSpecs = (u as any).mbaSpecs as string[] | undefined
         if (!uniSpecs || uniSpecs.length === 0) return false
         return uniSpecs.some(s => {
-          const sn = s.toLowerCase().replace(/[^a-z ]/g, '').trim()
+          const sn = s.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim()
           return variants.some(v => {
-            const vn = v.toLowerCase().replace(/[^a-z ]/g, '').trim()
+            const vn = v.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim()
             if (sn === vn) return true
             if (sn.startsWith(vn + ' ') || sn.startsWith(vn + 's')) return true
             if (vn.startsWith(sn + ' ') || vn.startsWith(sn + 's')) return true
