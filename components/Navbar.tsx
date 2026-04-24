@@ -8,13 +8,53 @@ import { UNIS_SLIM } from '@/lib/data-slim'
 import { PROGRAM_META } from '@/lib/data-client'
 import type { Program } from '@/lib/data-client'
 
-/* ─── Well-known universities shown in mega menu ────────────────────────────
-   Show only recognised universities, sorted by NIRF, horizontally scrollable.
+/* ─── Universities for mega menu — tier-balanced selection ─────────────────
+   Premium (feeMin >= 250K): MAHE, SSODL, Amrita, NMIMS, BITS WILP
+   Mid (150K-250K): Amity, MUJ, LPU, CU, JAIN, UPES, DPU, Chitkara
+   Budget (<150K): IGNOU, SMU, Galgotias, Uttaranchal, NIU, Vignan, Kurukshetra
    ─────────────────────────────────────────────────────────────────────────── */
 const FEATURED_IDS = [
-  'nmims-online', 'symbiosis-university-online', 'manipal-university-jaipur-online', 'chandigarh-university-online', 'lovely-professional-university-online', 'amity-university-online',
-  'bits-pilani-work-integrated-online', 'srm-institute-science-technology-online', 'jain-university-online', 'dy-patil-university-online',
+  // Premium
+  'manipal-academy-higher-education-online', 'symbiosis-university-online', 'amrita-vishwa-vidyapeetham-online', 'nmims-online', 'bits-pilani-work-integrated-online', 'op-jindal-global-university-online',
+  // Mid
+  'amity-university-online', 'manipal-university-jaipur-online', 'lovely-professional-university-online', 'chandigarh-university-online', 'jain-university-online', 'upes-online', 'dr-dy-patil-vidyapeeth-online', 'chitkara-university-online',
+  // Budget
+  'ignou-online', 'sikkim-manipal-university-online', 'galgotias-university-online', 'uttaranchal-university-online', 'vignan-university-online', 'kurukshetra-university-online',
 ]
+
+function getTierCards(unis: typeof UNIS_SLIM) {
+  const premium = unis.filter(u => u.feeMin >= 250000)
+  const mid = unis.filter(u => u.feeMin >= 150000 && u.feeMin < 250000)
+  const budget = unis.filter(u => u.feeMin > 0 && u.feeMin < 150000)
+  const hour = Math.floor(Date.now() / 3600000)
+  const pick = (arr: typeof unis, n: number) => {
+    if (arr.length <= n) return arr.slice(0, n)
+    const start = hour % arr.length
+    const result = []
+    for (let i = 0; i < n; i++) result.push(arr[(start + i) % arr.length])
+    return result
+  }
+  return [...pick(premium, 1), ...pick(mid, 2), ...pick(budget, 1)]
+}
+
+function formatFeeLakh(n: number): string {
+  if (n >= 100000) return `₹${(n / 100000).toFixed(1)}L`
+  if (n >= 1000) return `₹${Math.round(n / 1000)}K`
+  return `₹${n}`
+}
+
+function nirfBadge(u: { nirf: number; nirfMgt?: number; naac: string }): { label: string; color: string } {
+  const mgt = (u as any).nirfMgt
+  if (mgt && mgt < 200) {
+    const color = mgt <= 25 ? '#10B981' : mgt <= 75 ? '#F59E0B' : '#6B7280'
+    return { label: `NIRF #${mgt} Mgmt`, color }
+  }
+  if (u.nirf > 0 && u.nirf < 200) {
+    const color = u.nirf <= 25 ? '#10B981' : u.nirf <= 75 ? '#F59E0B' : '#6B7280'
+    return { label: `NIRF #${u.nirf} Uni`, color }
+  }
+  return { label: `NAAC ${u.naac}`, color: '#6B7280' }
+}
 
 const PROGRAM_CATEGORIES = {
   'Postgraduate': ['MBA', 'MCA', 'MA', 'M.Com', 'MSc'],
@@ -54,10 +94,11 @@ export default function Navbar() {
       ).slice(0, 5)
     : []
 
-  /* Featured universities for the active program — well-known names only */
-  const featuredForActive = UNIS_SLIM
+  /* Featured universities — tier-balanced (1 premium + 2 mid + 1 budget), rotates hourly */
+  const eligibleFeatured = UNIS_SLIM
     .filter(u => FEATURED_IDS.includes(u.id) && u.programs.includes(activeProgram as Program))
     .sort((a, b) => getSortRank(a) - getSortRank(b))
+  const featuredForActive = getTierCards(eligibleFeatured)
 
   function openMega()       { clearTimeout(closeTimer.current); setMegaOpen(true) }
   function scheduledClose() { closeTimer.current = setTimeout(() => setMegaOpen(false), 180) }
@@ -242,27 +283,50 @@ export default function Navbar() {
                             View all →
                           </Link>
                         </div>
-                        <div className="grid grid-cols-2 gap-2">
-                          {featuredForActive.slice(0, 4).map(u => (
-                            <Link
-                              key={u.id}
-                              href={`/universities/${u.id}`}
-                              className="nav-mega-link"
-                              onClick={() => setMegaOpen(false)}
-                            >
-                              {u.logo ? (
-                                <div className="w-12 h-10 shrink-0 bg-white border border-slate-200 rounded flex items-center justify-center p-1 shadow-sm">
-                                  <img src={u.logo} alt="" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                        <div className="grid grid-cols-2 gap-2.5">
+                          {featuredForActive.slice(0, 4).map(u => {
+                            const badge = nirfBadge(u)
+                            const specCount = (u as any).specCount || 0
+                            const feeRange = u.feeMin === u.feeMax
+                              ? formatFeeLakh(u.feeMin)
+                              : `${formatFeeLakh(u.feeMin)} - ${formatFeeLakh(u.feeMax)}`
+                            return (
+                              <Link
+                                key={u.id}
+                                href={`/universities/${u.id}`}
+                                className="group block rounded-lg border border-slate-200 bg-white p-3 no-underline transition-all hover:shadow-md hover:border-amber-400"
+                                style={{ cursor: 'pointer' }}
+                                onClick={() => setMegaOpen(false)}
+                                role="link"
+                                aria-label={`${u.name} - ${badge.label} - ${feeRange}`}
+                              >
+                                <div className="flex items-start gap-2.5 mb-2">
+                                  {u.logo ? (
+                                    <div className="w-10 h-10 shrink-0 bg-white border border-slate-100 rounded-lg flex items-center justify-center p-1">
+                                      <img src={u.logo} alt="" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                                    </div>
+                                  ) : (
+                                    <div className="w-10 h-10 shrink-0 rounded-lg flex items-center justify-center text-white text-xs font-bold" style={{ backgroundColor: u.color }}>
+                                      {u.abbr.slice(0, 3)}
+                                    </div>
+                                  )}
+                                  <div className="min-w-0">
+                                    <div className="text-xs font-bold text-slate-800 group-hover:text-amber-600 transition-colors" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden', lineHeight: '1.3' }}>
+                                      {u.name.replace(/ Online$/, '')}
+                                    </div>
+                                  </div>
                                 </div>
-                              ) : (
-                                <div className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: u.color }} />
-                              )}
-                              <div>
-                                <div style={{ fontSize: '12px', fontWeight: 600, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{u.name}</div>
-                                <div style={{ fontSize: '11px', color: 'var(--ink-3)', marginTop: '2px' }}>{u.nirf < 200 ? `NIRF #${u.nirf}` : u.naac}</div>
-                              </div>
-                            </Link>
-                          ))}
+                                <div className="flex items-center gap-1.5 flex-wrap">
+                                  <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-bold text-white" style={{ backgroundColor: badge.color }}>
+                                    {badge.label}
+                                  </span>
+                                  {u.feeMin > 0 && (
+                                    <span className="text-[10px] text-slate-500">{feeRange}</span>
+                                  )}
+                                </div>
+                              </Link>
+                            )
+                          })}
                         </div>
                         
                         {/* Trending Specializations */}
