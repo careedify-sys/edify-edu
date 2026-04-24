@@ -117,17 +117,19 @@ export default async function ComparePage(
   return (
     <div className="bg-slate-100">
 
-      {/* ── HERO — clean, focused ──────────────────────────────────────────── */}
-      <div style={{ background: 'linear-gradient(160deg, #0d2240 0%, #1b3454 100%)' }}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-10 pb-10 sm:pt-14 sm:pb-12 text-center">
-          <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-amber-400/30 bg-amber-500/10 text-amber-300 text-[11px] font-semibold uppercase tracking-wider mb-5">
-            Updated for July 2026 Admission Session
+      {/* ── HERO — mockup-matched design ─────────────────────────────────── */}
+      <div style={{ background: 'linear-gradient(180deg, #fff 0%, #fafaf7 100%)' }} className="relative overflow-hidden">
+        <div className="absolute top-[-80px] right-[-60px] w-[200px] h-[200px] bg-gradient-radial from-amber-100 to-transparent opacity-70 rounded-full" />
+        <div className="max-w-4xl mx-auto px-5 sm:px-6 pt-7 pb-2 sm:pt-10 sm:pb-4 relative z-10">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-100 text-amber-700 text-[11px] font-bold uppercase tracking-widest mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-amber-700" />
+            July 2026 Session
           </span>
-          <h1 className="text-2xl sm:text-[2.2rem] font-extrabold text-white mb-3 leading-tight" style={{ fontFamily: 'Georgia, serif' }}>
-            Compare Online <em className="text-amber-400 not-italic">MBAs</em> side-by-side.
+          <h1 className="text-[30px] sm:text-[38px] font-semibold leading-[1.1] mb-3" style={{ fontFamily: 'var(--font-display)', color: '#0f2756', letterSpacing: '-0.02em' }}>
+            Compare Online <em className="italic font-medium" style={{ color: '#d97706' }}>MBAs</em> side-by-side.
           </h1>
-          <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-            Side-by-side fees, NIRF rankings, NAAC grades and semester-wise syllabus for 125+ UGC DEB approved universities — so you decide with data, not guesswork.
+          <p className="text-sm sm:text-[15px] leading-relaxed max-w-xl" style={{ color: '#475569' }}>
+            Fees, NIRF rank, NAAC grade and semester-wise syllabus for <strong style={{ color: '#0f2756' }}>125+ UGC DEB approved</strong> universities. No guesswork.
           </p>
         </div>
       </div>
@@ -213,7 +215,8 @@ export default async function ComparePage(
       {/* ── HOW TO COMPARE — 3 steps ──────────────────────────────────────── */}
       <div className="bg-white border-t border-slate-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
-          <h2 className="font-display text-xl font-bold text-slate-800 text-center mb-8">How the Comparison Tool Works</h2>
+          <p className="text-[11px] font-bold text-amber-700 uppercase tracking-widest mb-2">How it works</p>
+          <h2 className="text-xl font-semibold mb-8" style={{ fontFamily: 'var(--font-display)', color: '#0f2756' }}>3 steps to a smart pick</h2>
           <div className="grid sm:grid-cols-3 gap-6">
             {[
               { step: '1', title: 'Select universities', desc: 'Use the 3 slots to pick any universities you want to compare. Search by name — all 125+ UGC DEB approved programs are available.' },
