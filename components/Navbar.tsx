@@ -8,39 +8,52 @@ import { UNIS_SLIM } from '@/lib/data-slim'
 import { PROGRAM_META } from '@/lib/data-client'
 import type { Program } from '@/lib/data-client'
 
-/* ─── Universities for mega menu — tier-balanced selection ─────────────────
-   Premium (feeMin >= 250K): MAHE, SSODL, Amrita, NMIMS, BITS WILP
-   Mid (150K-250K): Amity, MUJ, LPU, CU, JAIN, UPES, DPU, Chitkara
-   Budget (<150K): IGNOU, SMU, Galgotias, Uttaranchal, NIU, Vignan, Kurukshetra
+/* ─── Shipped universities sorted by traffic rank (GSC-curated) ────────────
+   // trafficRank manually curated. Update monthly from GSC.
+   // See scripts/phase-5-rules-memo.md Rule #14.
    ─────────────────────────────────────────────────────────────────────────── */
-const FEATURED_IDS = [
-  // Premium
-  'manipal-academy-higher-education-online', 'symbiosis-university-online', 'amrita-vishwa-vidyapeetham-online', 'nmims-online', 'bits-pilani-work-integrated-online', 'op-jindal-global-university-online',
-  // Mid
-  'amity-university-online', 'manipal-university-jaipur-online', 'lovely-professional-university-online', 'chandigarh-university-online', 'jain-university-online', 'upes-online', 'dr-dy-patil-vidyapeeth-online', 'chitkara-university-online',
-  // Budget
-  'ignou-online', 'sikkim-manipal-university-online', 'galgotias-university-online', 'uttaranchal-university-online', 'vignan-university-online', 'kurukshetra-university-online',
+const TRAFFIC_ORDER: string[] = [
+  'amity-university-online',                    // 1
+  'nmims-online',                               // 2
+  'manipal-university-jaipur-online',           // 3
+  'symbiosis-university-online',                // 4
+  'lovely-professional-university-online',      // 5
+  'jain-university-online',                     // 6
+  'upes-online',                                // 7
+  'chandigarh-university-online',               // 8
+  'sikkim-manipal-university-online',           // 9
+  'shoolini-university-online',                 // 10
+  'amrita-vishwa-vidyapeetham-online',          // 11
+  'ignou-online',                               // 12
+  'dr-dy-patil-vidyapeeth-online',              // 13
+  'manipal-academy-higher-education-online',    // 14
+  'jaypee-university-online',                   // 15
+  'galgotias-university-online',                // 16
+  'uttaranchal-university-online',              // 17
+  'noida-international-university-online',      // 18
+  'sharda-university-online',                   // 19
+  'vignan-university-online',                   // 20
+  'alliance-university-online',                 // 21
+  'kurukshetra-university-online',              // 22
+  'dr-mgr-educational-research-institute-online', // 23
+  'arka-jain-university-online',                // 24
+  'assam-don-bosco-university-online',          // 25
+  'bharati-vidyapeeth-university-online',       // 26
+  'chitkara-university-online',                 // 27
+  'dayananda-sagar-university-online',          // 28
+  'amet-university-online',                     // 29
+  'bits-pilani-online',                         // 30
+  'icfai-university-online',                    // 31
+  'iift-online',                                // 32
+  'integral-university-online',                 // 33
+  'bits-pilani-work-integrated-online',         // 34
+  'op-jindal-global-university-online',         // 35
 ]
 
-function getTierCards(unis: typeof UNIS_SLIM) {
-  const premium = unis.filter(u => u.feeMin >= 250000)
-  const mid = unis.filter(u => u.feeMin >= 150000 && u.feeMin < 250000)
-  const budget = unis.filter(u => u.feeMin > 0 && u.feeMin < 150000)
-  const hour = Math.floor(Date.now() / 3600000)
-  const pick = (arr: typeof unis, n: number) => {
-    if (arr.length <= n) return arr.slice(0, n)
-    const start = hour % arr.length
-    const result = []
-    for (let i = 0; i < n; i++) result.push(arr[(start + i) % arr.length])
-    return result
-  }
-  return [...pick(premium, 1), ...pick(mid, 2), ...pick(budget, 1)]
-}
-
 function formatFeeLakh(n: number): string {
-  if (n >= 100000) return `₹${(n / 100000).toFixed(1)}L`
-  if (n >= 1000) return `₹${Math.round(n / 1000)}K`
-  return `₹${n}`
+  if (n >= 100000) return `\u20b9${(n / 100000).toFixed(1)}L`
+  if (n >= 1000) return `\u20b9${Math.round(n / 1000)}K`
+  return `\u20b9${n}`
 }
 
 function nirfBadge(u: { nirf: number; nirfMgt?: number; naac: string }): { label: string; color: string } {
@@ -60,16 +73,7 @@ const PROGRAM_CATEGORIES = {
   'Postgraduate': ['MBA', 'MCA', 'MA', 'M.Com', 'MSc'],
   'Undergraduate': ['BBA', 'BCA', 'BA', 'B.Com', 'BSc'],
 }
-
-// Popular specializations to highlight
-const TRENDING_SPECS = [
-  { name: 'AI & Machine Learning', slug: 'artificial-intelligence-machine-learning', program: 'MBA' },
-  { name: 'Data Science', slug: 'data-science', program: 'MBA' },
-  { name: 'Business Analytics', slug: 'business-analytics', program: 'MBA' },
-  { name: 'Digital Marketing', slug: 'digital-marketing', program: 'MBA' },
-  { name: 'Finance', slug: 'finance', program: 'MBA' },
-  { name: 'Human Resource Management', slug: 'human-resource-management', program: 'MBA' },
-]
+// TRENDING_SPECS removed in Phase 7.4 — replaced by full university scroll grid
 
 export default function Navbar() {
   const [megaOpen, setMegaOpen]             = useState(false)
@@ -94,11 +98,14 @@ export default function Navbar() {
       ).slice(0, 5)
     : []
 
-  /* Featured universities — tier-balanced (1 premium + 2 mid + 1 budget), rotates hourly */
-  const eligibleFeatured = UNIS_SLIM
-    .filter(u => FEATURED_IDS.includes(u.id) && u.programs.includes(activeProgram as Program))
-    .sort((a, b) => getSortRank(a) - getSortRank(b))
-  const featuredForActive = getTierCards(eligibleFeatured)
+  /* All shipped universities sorted by traffic rank */
+  const featuredForActive = UNIS_SLIM
+    .filter(u => TRAFFIC_ORDER.includes(u.id) && u.programs.includes(activeProgram as Program))
+    .sort((a, b) => {
+      const ai = TRAFFIC_ORDER.indexOf(a.id)
+      const bi = TRAFFIC_ORDER.indexOf(b.id)
+      return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi)
+    })
 
   function openMega()       { clearTimeout(closeTimer.current); setMegaOpen(true) }
   function scheduledClose() { closeTimer.current = setTimeout(() => setMegaOpen(false), 180) }
@@ -272,19 +279,22 @@ export default function Navbar() {
                       {/* Right: Featured universities + Trending Specs */}
                       <div className="flex-1 p-4">
                         <div className="flex items-center justify-between mb-3">
-                          <div className="text-sm font-bold text-navy">
-                            Top Universities for {activeProgram}
+                          <div>
+                            <div className="text-sm font-bold text-navy">
+                              All Universities
+                            </div>
+                            <div className="text-[10px] text-slate-400">{featuredForActive.length} universities</div>
                           </div>
                           <Link
-                            href={`/programs/${activeProgram.toLowerCase().replace(/[\s().]/g, '')}`}
+                            href="/universities"
                             className="text-xs font-semibold text-amber hover:underline"
                             onClick={() => setMegaOpen(false)}
                           >
-                            View all →
+                            Browse all →
                           </Link>
                         </div>
-                        <div className="grid grid-cols-2 gap-2.5">
-                          {featuredForActive.slice(0, 4).map(u => {
+                        <div className="grid grid-cols-2 gap-2.5 overflow-y-auto pr-1" style={{ maxHeight: '480px', scrollbarWidth: 'thin', scrollbarColor: '#F4A024 #f1f5f9' }}>
+                          {featuredForActive.map(u => {
                             const badge = nirfBadge(u)
                             const specCount = (u as any).specCount || 0
                             const feeRange = u.feeMin === u.feeMax
@@ -328,27 +338,6 @@ export default function Navbar() {
                             )
                           })}
                         </div>
-                        
-                        {/* Trending Specializations */}
-                        {activeProgram === 'MBA' && (
-                          <div className="mt-4 pt-4 border-t border-border">
-                            <div className="text-[10px] font-bold text-ink-3 uppercase tracking-wider mb-2">
-                              Trending Specializations
-                            </div>
-                            <div className="flex flex-wrap gap-1.5">
-                              {TRENDING_SPECS.map(spec => (
-                                <Link
-                                  key={spec.slug}
-                                  href={`/programs/mba/${spec.slug}`}
-                                  className="text-xs px-2.5 py-1 rounded-full bg-amber/10 text-amber font-medium hover:bg-amber/20 transition-colors"
-                                  onClick={() => setMegaOpen(false)}
-                                >
-                                  {spec.name}
-                                </Link>
-                              ))}
-                            </div>
-                          </div>
-                        )}
                         
                         <Link
                           href="/universities"

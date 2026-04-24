@@ -296,3 +296,11 @@ Pre-commit validation grep (should return zero for all):
 rg 'Jaro|upGrad|Online Manipal|Avanse|GrayQuest|Fibe|Propelld|Eduvanz' lib/data/page-content/
 ```
 
+---
+
+## TRAFFIC RANK CURATION RULE (Phase 7.4+) — Rule #14
+
+Each shipped university has a position in the TRAFFIC_ORDER array in components/Navbar.tsx (integer index, ascending = higher traffic). Ranks are manually curated from GSC dashboard and updated monthly. New batches inherit next available rank at bottom; user adjusts after 30 days of traffic data.
+
+Current order (as of 2026-04-24): Amity > NMIMS > MUJ > SSODL > LPU > JAIN > UPES > CU > SMU > Shoolini > Amrita > IGNOU > DPU > MAHE > JIIT > Galgotias > Uttaranchal > NIU > Sharda (19 traffic-ranked unis, rest appended alphabetically).
+
