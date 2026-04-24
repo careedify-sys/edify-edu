@@ -21,10 +21,11 @@ export default function MBASpecHubClient({ specSlug, specName }: Props) {
     return UNIS_SLIM
       .filter(u => {
         if (!PREFERRED_UNI_IDS.includes(u.id) || !u.programs.includes('MBA')) return false
-        const uniSpecs: string[] = (u as any).mbaSpecs || []
+        const uniSpecs = (u as any).mbaSpecs as string[] | undefined
+        if (!uniSpecs || uniSpecs.length === 0) return false
         return variants.some(v => {
           const vl = v.toLowerCase()
-          return uniSpecs.some((s: string) => {
+          return uniSpecs.some(s => {
             const sl = s.toLowerCase()
             return sl === vl || sl.startsWith(vl + ' ') || sl.endsWith(' ' + vl) || sl.includes(' ' + vl + ' ')
           })
