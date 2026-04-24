@@ -326,9 +326,9 @@ const nextConfig = {
       // ── Blog duplicate consolidation (301) ────────────────────────────
       // SMU
       { source: '/blog/smu-online-mba-review-2026',                        destination: '/blog/smu-online-mba-review',                          permanent: true },
-      // Amity
-      { source: '/blog/amity-university-online-mba-fees-courses-review-2026', destination: '/blog/amity-university-mba-distance-2026',          permanent: true },
-      { source: '/blog/amity-online-mba-review-2026',                      destination: '/blog/amity-university-mba-distance-2026',             permanent: true },
+      // Amity — consolidated to single canonical
+      { source: '/blog/amity-university-online-mba-fees-courses-review-2026', destination: '/blog/amity-online-mba-review-2026',               permanent: true },
+      { source: '/blog/amity-university-mba-distance-2026',                   destination: '/blog/amity-online-mba-review-2026',               permanent: true },
       // Chandigarh
       { source: '/blog/chandigarh-university-online-review-2026',          destination: '/blog/chandigarh-university-online-mba-review',        permanent: true },
       // DY Patil
