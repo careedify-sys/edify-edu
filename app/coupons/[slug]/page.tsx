@@ -127,7 +127,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
             Most "coupon codes" for online MBA programmes are not retail coupons. They represent university-administered fee concessions: lump-sum payment discounts that save 5-12%, merit scholarships that waive 10-30% of the fee, early-bird offers with 15-30% additional savings, and category-specific waivers for defence personnel, divyaang candidates, and alumni. Understanding these categories helps you maximise your total savings before you even apply a coupon code.
           </p>
           <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 mb-4">
-            <p className="text-xs text-amber-800"><strong>Honest disclaimer:</strong> EdifyEdu does not have a commercial referral relationship with {page.universityName}. The coupon codes shared here are publicly-available university scholarships, peer-to-peer referral codes, and verified payment-plan discounts. We recommend cross-checking the latest offers on {page.officialUrl} before making any payment. All fees and discount amounts are indicative and subject to change by the university.</p>
+            <p className="text-xs text-amber-800"><strong>Important clarification:</strong> The Rs 10,000 enrollment bonus is from EdifyEdu, not from {page.universityName}. It is EdifyEdu's incentive for students who enroll through our advisory service. University scholarships (merit, defence, lump-sum discounts) listed above are separate and come directly from the university. Both can be availed together. Verify university-specific scholarships on {page.officialUrl}.</p>
           </div>
         </section>
 

@@ -77,10 +77,10 @@ function CouponCard({
           </span>
         )}
         <div className="flex items-end gap-2">
-          <span className="text-5xl font-extrabold text-white leading-none">{coupon.discount}%</span>
-          <span className="text-white/80 text-sm font-semibold mb-1">OFF</span>
+          <span className="text-3xl font-extrabold text-white leading-none">₹10,000</span>
+          <span className="text-white/80 text-sm font-semibold mb-1">BONUS</span>
         </div>
-        <p className="text-white/90 text-sm font-medium mt-1">{coupon.savings}</p>
+        <p className="text-white/90 text-sm font-medium mt-1">EdifyEdu Enrollment Bonus on this university</p>
       </div>
 
       {/* Body */}
@@ -180,71 +180,71 @@ function CouponCard({
 const FAQ_ITEMS = [
   {
     q: 'What is the best online MBA coupon code for 2026?',
-    a: 'The highest-value codes for 2026 are AMITY25 (25% off Amity University Online MBA, save up to ₹30,000) and SYMBIOSIS20 (20% off Symbiosis SSODL MBA, save up to ₹25,000). All codes are verified by the EdifyEdu team and valid through April 2026.',
+    a: 'When you enroll through EdifyEdu using any coupon code, you receive a flat ₹10,000 enrollment bonus from EdifyEdu. This is separate from any university scholarship. For example, use AMITY25 for Amity or NMIMS15 for NMIMS. The bonus is applied as a fee adjustment during your advisor-assisted enrollment.',
   },
   {
     q: 'How much can I save with EdifyEdu coupons?',
-    a: 'You can save between ₹10,000 and ₹30,000 depending on the university and program. Discounts range from 15% to 25% across 21 UGC DEB approved universities offering Online MBA and MCA.',
+    a: 'EdifyEdu provides a flat ₹10,000 enrollment bonus on any of the 21 listed universities. This bonus is from EdifyEdu, not the university. Universities may offer their own separate scholarships (merit-based, defence, lump-sum payment discounts) which you can avail on top of the EdifyEdu bonus.',
   },
   {
     q: 'Are these coupon codes verified?',
-    a: 'Yes. Every coupon code on this page is verified directly with the university admissions team. Our EdifyEdu team confirms the discount live on the call before you make any payment.',
+    a: 'Yes. The ₹10,000 EdifyEdu enrollment bonus is guaranteed when you enroll through our advisor. The bonus is from EdifyEdu, not the university. Your advisor will explain exactly how it is applied before you make any payment.',
   },
   {
     q: 'Can I use a coupon code with EMI?',
-    a: 'In most cases, yes. The coupon discount is applied to the total program fee first, and you can then pay the reduced balance via EMI. Our advisor will clarify the specific terms for your chosen university.',
+    a: 'Yes. The EdifyEdu bonus is applied to your total fee first, and you can then pay the reduced balance via EMI. For example, if your university fee is ₹2,00,000 and you receive the ₹10,000 bonus, your EMI is calculated on ₹1,90,000. Your advisor will clarify the exact terms.',
   },
   {
     q: 'How to get Amity University Online discount coupon?',
-    a: 'Use coupon code AMITY25 during your advisor call to get 25% off on Amity University Online MBA (saves up to ₹30,000). For MCA, use AMITYMCA20 for 20% off. Click "Reveal Code" on the Amity card above to get the code.',
+    a: 'Use coupon code AMITY25 during your advisor call to get ₹10,000 EdifyEdu enrollment bonus on Amity Online MBA. For MCA, use AMITYMCA20 for ₹10,000 EdifyEdu bonus. Click "Reveal Code" on the Amity card above to get the code.',
   },
   {
     q: 'Is there a coupon code for JAIN Online MBA?',
-    a: 'Yes. JAIN20 gives 20% off on JAIN Online MBA and all programs (saves up to ₹20,000). For MCA specifically, use JAINMCA15 for 15% off. Both codes are valid through April 2026.',
+    a: 'Yes. JAIN20 gives ₹10,000 EdifyEdu enrollment bonus on JAIN Online programmes. For MCA specifically, use JAINMCA15 for ₹10,000 EdifyEdu bonus. Both codes are valid through April 2026.',
   },
   {
     q: 'How to apply LPU Online MBA or MCA discount code?',
-    a: 'Use LPU20 for 20% off on LPU Online MBA (saves ₹18,000) or LPUMCA20 for 20% off on LPU Online MCA. Mention the code to your EdifyEdu advisor during the call.',
+    a: 'Use LPU20 for ₹10,000 EdifyEdu bonus on LPU Online MBA or LPUMCA20 for ₹10,000 EdifyEdu bonus on LPU Online MCA. Mention the code to your EdifyEdu advisor during the call.',
   },
   {
     q: 'Can I get a discount on Manipal Online MCA?',
-    a: 'Yes. Use MANIPALMCA15 for 15% off on Manipal MUJ Online MCA (saves up to ₹14,000). For Online MBA, use MANIPAL20 for 20% off saving up to ₹22,000.',
+    a: 'Yes. Use MANIPALMCA15 for ₹10,000 EdifyEdu bonus on Manipal MUJ Online MCA. For Online MBA, use MANIPAL20 for ₹10,000 EdifyEdu bonus with ₹10,000 EdifyEdu bonus.',
   },
   {
     q: 'What is the Chandigarh University Online discount code?',
-    a: 'Use CHANDIGARH15 for 15% off on Chandigarh University Online MBA (saves ₹12,000), or CUMCA20 for 20% off on the MCA program (saves ₹16,000).',
+    a: 'Use CHANDIGARH15 for ₹10,000 EdifyEdu bonus on Chandigarh University Online MBA, or CUMCA20 for ₹10,000 EdifyEdu bonus on the MCA program.',
   },
   {
     q: 'Is there an NMIMS Online coupon code?',
-    a: 'Yes. NMIMS15 gives 15% off on NMIMS Online MBA saving up to ₹20,000. Apply this code via your EdifyEdu advisor during the admissions call.',
+    a: 'Yes. NMIMS15 gives ₹10,000 EdifyEdu bonus on NMIMS Online MBA . Apply this code via your EdifyEdu advisor during the admissions call.',
   },
   {
     q: 'Is there a Symbiosis Online MBA coupon code?',
-    a: 'Yes. Use SYMBIOSIS20 for 20% off on Symbiosis SSODL Online MBA, saving up to ₹25,000 on the total program fee.',
+    a: 'Yes. Use SYMBIOSIS20 for ₹10,000 EdifyEdu bonus on Symbiosis SSODL Online MBA, on the total program fee.',
   },
   {
     q: 'Does Sikkim Manipal University have an online discount?',
-    a: 'Yes. Coupon code SMU20 gives 20% off on Sikkim Manipal University Online MBA or MCA programs, saving up to ₹16,000.',
+    a: 'Yes. Coupon code SMU20 gives ₹10,000 EdifyEdu bonus on Sikkim Manipal University Online MBA or MCA programs, with ₹10,000 EdifyEdu bonus.',
   },
   {
     q: 'Is there a Sharda University Online coupon code?',
-    a: 'Yes. SHARDA20 gives 20% off on Sharda University Online programs (MBA or MCA), saving up to ₹18,000.',
+    a: 'Yes. SHARDA20 gives ₹10,000 EdifyEdu bonus on Sharda University Online programs (MBA or MCA), with ₹10,000 EdifyEdu bonus.',
   },
   {
     q: 'Can I get a discount at Bharati Vidyapeeth Online?',
-    a: 'Yes. Use BVP20 for 20% off on Bharati Vidyapeeth Online MBA or MCA, saving up to ₹14,000.',
+    a: 'Yes. Use BVP20 for ₹10,000 EdifyEdu bonus on Bharati Vidyapeeth Online MBA or MCA, with ₹10,000 EdifyEdu bonus.',
   },
   {
     q: 'Are there coupon codes for Galgotias University Online?',
-    a: 'Yes. GALGOTIAS15 offers 15% off on Galgotias University Online programs, saving up to ₹10,000 on your fee.',
+    a: 'Yes. GALGOTIAS15 offers ₹10,000 EdifyEdu bonus on Galgotias University Online programs, on your fee.',
   },
   {
     q: 'Is there an Amrita Online discount code?',
-    a: 'Yes. AMRITA15 gives 15% off on Amrita Online MBA or MCA programs, saving up to ₹12,000.',
+    a: 'Yes. AMRITA15 gives ₹10,000 EdifyEdu bonus on Amrita Online MBA or MCA programs, with ₹10,000 EdifyEdu bonus.',
   },
   {
     q: 'Are EdifyEdu coupon codes the same as university scholarships?',
-    a: 'Not exactly. University scholarships are merit-based fee waivers (10-30% off) that the university awards directly based on your graduation marks. EdifyEdu coupon codes represent verified payment-plan discounts, early-bird offers, and referral savings that you apply through our advisor. In many cases, you can stack both: get a university scholarship AND use an EdifyEdu coupon code for additional savings.',
+    a: 'No. University scholarships are merit-based fee waivers (10-30%) awarded by the university based on your graduation marks. The EdifyEdu enrollment bonus is a separate Rs 10,000 benefit from EdifyEdu, not the university. You can stack both: get a university merit scholarship AND receive the Rs 10,000 EdifyEdu bonus. They are independent of each other.',
   },
   {
     q: 'Can I use multiple discount codes together?',
@@ -400,10 +400,7 @@ export default function CouponsPage() {
             <span className="text-amber-400">Verified Codes for {new Set(COUPONS.map(c => c.universityId)).size} UGC-DEB Universities</span>
           </h1>
           <p className="text-white/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-8">
-            Verified offers on{' '}
-            <strong className="text-white/90">UGC DEB approved universities</strong>. Save up to
-            ₹30,000 on your Online MBA or MCA fee — reveal the code, fill a quick form, and apply
-            during your advisor call.
+            Get an <strong className="text-white/90">exclusive ₹10,000 enrollment bonus</strong> from EdifyEdu on any UGC DEB approved online MBA or MCA. This bonus is from EdifyEdu, not the university. It is applied as a fee adjustment during your advisor-assisted enrollment. Universities may offer their own separate scholarships on top.
           </p>
 
           {/* Stats row */}
@@ -424,9 +421,9 @@ export default function CouponsPage() {
 
       {/* ── Editorial Intro ─────────────────────────────────────────────── */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
-        <h2 className="text-2xl font-extrabold text-slate-900 mb-4">How Online MBA Discount Coupons Work in 2026 (And How Much They Actually Save)</h2>
+        <h2 className="text-2xl font-extrabold text-slate-900 mb-4">How the EdifyEdu Enrollment Bonus Works</h2>
         <p className="text-sm text-slate-600 leading-relaxed mb-4">
-          Most "discount coupons" for online MBA programmes are not coupons in the retail sense. They are university-administered fee concessions: payment-plan discounts, merit scholarships, early-bird offers, and alumni waivers. The codes listed on this page represent these verified savings opportunities across {new Set(COUPONS.map(c => c.universityId)).size} UGC-DEB approved universities.
+          When you enroll in an online MBA or MCA through EdifyEdu, you receive a <strong>flat Rs 10,000 enrollment bonus from EdifyEdu</strong>. This bonus is from EdifyEdu, not from the university. It is applied as a fee adjustment during your advisor-assisted enrollment. Universities offer their own separate scholarships (merit-based, defence, lump-sum payment discounts) which you can avail on top of the EdifyEdu bonus.
         </p>
 
         <h3 className="text-lg font-bold text-slate-900 mb-3">Types of Online MBA Discounts Available</h3>
@@ -467,11 +464,11 @@ export default function CouponsPage() {
         </div>
 
         <div className="rounded-xl border border-green-200 bg-green-50 p-5 mb-6">
-          <p className="text-sm text-green-800"><strong>Realistic savings when stacked correctly:</strong> Rs 15,000 to Rs 50,000 across most programmes. The exact amount depends on your graduation marks, payment method, and application timing.</p>
+          <p className="text-sm text-green-800"><strong>Total potential savings:</strong> Rs 10,000 EdifyEdu bonus + university's own scholarships (merit 10-30%, lump-sum 5-12%, defence/divyaang waivers). For example, at MUJ: university 15% upfront discount (Rs 27,000) + EdifyEdu Rs 10,000 bonus = Rs 37,000 total savings on Rs 1,80,000 fee.</p>
         </div>
 
         <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
-          <p className="text-xs text-amber-800"><strong>Honest disclaimer:</strong> EdifyEdu does not have direct commercial referral relationships with universities. Coupons listed here are publicly available scholarship and discount programmes, payment-plan savings, and verified fee concessions. We recommend cross-checking the latest offers on each university's official portal before applying.</p>
+          <p className="text-xs text-amber-800"><strong>Important clarification:</strong> The Rs 10,000 enrollment bonus is from EdifyEdu, not from the university. It is EdifyEdu's incentive for students who enroll through our advisory service. University scholarships (merit, defence, lump-sum discounts) are separate and come directly from the university. Both can be availed together. Verify university-specific scholarships on each university's official portal.</p>
         </div>
       </section>
 
@@ -521,11 +518,9 @@ export default function CouponsPage() {
             <Check className="w-5 h-5 text-green-600" />
           </div>
           <div>
-            <p className="text-sm font-bold text-slate-800 mb-0.5">All discounts verified by the Edify team</p>
+            <p className="text-sm font-bold text-slate-800 mb-0.5">Rs 10,000 EdifyEdu Enrollment Bonus</p>
             <p className="text-xs text-slate-500 leading-relaxed">
-              Reveal the coupon code by filling the quick enquiry form — our advisor will confirm the
-              discount directly with the university&apos;s admissions desk. Offers valid for admissions
-              in the current academic session. Terms &amp; conditions of each university apply.
+              This bonus is from EdifyEdu, not the university. It is applied as a fee adjustment when you enroll through our advisor. Universities offer their own separate scholarships which you can avail on top. Mention your coupon code during the free advisor call.
             </p>
           </div>
         </div>
@@ -546,7 +541,7 @@ export default function CouponsPage() {
           defaultProgram={selectedCoupon.program === 'All' ? '' : selectedCoupon.program}
           sourcePage="/coupons"
           couponCode={selectedCoupon.code}
-          couponDiscount={`${selectedCoupon.discount}% off`}
+          couponDiscount="₹10,000 EdifyEdu Bonus"
         />
       )}
     </>
