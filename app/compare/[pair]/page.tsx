@@ -134,8 +134,9 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
             <div className="px-4 py-2.5 text-xs font-bold text-amber-700 uppercase">{nameB}</div>
           </div>
           {[
-            { label: 'Fee Range', vA: uA.feeMin === uA.feeMax ? formatINR(uA.feeMin) : `${formatINR(uA.feeMin)} - ${formatINR(uA.feeMax)}`, vB: uB.feeMin === uB.feeMax ? formatINR(uB.feeMin) : `${formatINR(uB.feeMin)} - ${formatINR(uB.feeMax)}` },
-            { label: 'Per Semester (approx)', vA: `${formatINR(Math.round(uA.feeMin / 4))}/sem`, vB: `${formatINR(Math.round(uB.feeMin / 4))}/sem` },
+            { label: 'One-Time Payment', vA: formatINR(uA.feeMin), vB: formatINR(uB.feeMin) },
+            { label: 'Semester-wise Total', vA: formatINR(uA.feeMax), vB: formatINR(uB.feeMax) },
+            { label: 'Per Semester (x4)', vA: `${formatINR(Math.round(uA.feeMax / 4))}/sem`, vB: `${formatINR(Math.round(uB.feeMax / 4))}/sem` },
             { label: 'Starts from/month', vA: `${formatINR(uA.emiFrom)}/mo`, vB: `${formatINR(uB.emiFrom)}/mo` },
           ].map((row, i) => (
             <div key={i} className={`grid grid-cols-3 ${i > 0 ? 'border-t border-slate-100' : ''}`}>
