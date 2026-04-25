@@ -9,6 +9,7 @@ import BlogLeadForm from '@/components/BlogLeadForm'
 import BlogClientActions from '@/components/BlogClientActions'
 import BlogTOC from '@/components/BlogTOC'
 import BlogSidebarWidgets from '@/components/BlogSidebarWidgets'
+import InlineCTAScript from '@/components/InlineCTAScript'
 
 // ── Server-side helpers ───────────────────────────────────────────────────────
 
@@ -357,6 +358,9 @@ export default async function BlogPostPage({ params }: Props) {
               {/* Mobile TOC */}
               <BlogTOC headings={headings} mobile />
 
+              {/* Inline CTA submit handler — attaches window.submitInlineCTA on mount */}
+              <InlineCTAScript />
+
               {/* Article content */}
               <div className="bg-white rounded-2xl border border-border p-6 sm:p-8 mb-6">
                 <div
@@ -364,34 +368,6 @@ export default async function BlogPostPage({ params }: Props) {
                   dangerouslySetInnerHTML={{ __html: contentWithIds }}
                 />
               </div>
-
-              {/* Inline CTA submit handler — shared by all blog inline forms */}
-              <script dangerouslySetInnerHTML={{ __html: `
-                async function submitInlineCTA(source) {
-                  var nameEl = document.getElementById('cta-' + source + '-name');
-                  var phoneEl = document.getElementById('cta-' + source + '-phone');
-                  var emailEl = document.getElementById('cta-' + source + '-email');
-                  var name = nameEl ? nameEl.value.trim() : '';
-                  var phone = phoneEl ? phoneEl.value.trim() : '';
-                  var email = emailEl ? emailEl.value.trim() : '';
-                  if (!name || !phone) { alert('Please enter your name and WhatsApp number.'); return; }
-                  if (!/^[6-9]\\d{9}$/.test(phone.replace(/\\D/g, '').slice(-10))) { alert('Please enter a valid 10-digit Indian mobile number.'); return; }
-                  var btn = document.querySelector('#cta-' + source + '-form .cta-submit') || document.querySelector('#cta-' + source + '-form button');
-                  if (btn) { btn.textContent = 'Sending...'; btn.disabled = true; }
-                  try {
-                    await fetch('https://formspree.io/f/mojpvgwz', {
-                      method: 'POST',
-                      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                      body: JSON.stringify({ form_type: 'Inline Blog CTA', source: source, page_url: window.location.href, page_title: document.title, name: name, phone: phone, email: email || 'not provided' })
-                    });
-                  } catch(e) {}
-                  var formEl = document.getElementById('cta-' + source + '-form');
-                  var successEl = document.getElementById('cta-' + source + '-success');
-                  if (formEl) formEl.style.display = 'none';
-                  if (successEl) successEl.style.display = 'block';
-                  if (typeof gtag === 'function') { gtag('event', 'generate_lead', { source: source, form_type: 'inline_blog_cta' }); }
-                }
-              ` }} />
 
               {/* In-article lead form */}
               <section className="mb-6">
