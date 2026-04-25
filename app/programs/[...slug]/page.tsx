@@ -44,6 +44,9 @@ const SPEC_SLUG_MAP: Record<string, { display: string; contentKey: string; keywo
   'general-management':           { display: 'General Management', contentKey: 'general management', keywords: ['mba general management india 2026', 'online mba general management', 'mba general management career'] },
   'banking-finance':              { display: 'Banking & Finance', contentKey: 'finance', keywords: ['mba banking finance india 2026', 'online mba banking finance', 'mba banking career salary india'] },
   'logistics-supply-chain':       { display: 'Logistics & Supply Chain', contentKey: 'logistics & supply chain', keywords: ['mba logistics supply chain india 2026', 'online mba logistics', 'mba supply chain career salary'] },
+  'logistics-supply-chain-management': { display: 'Logistics & Supply Chain Management', contentKey: 'logistics & supply chain', keywords: ['mba logistics supply chain management india 2026', 'online mba logistics supply chain', 'mba scm career salary india'] },
+  'logistics-and-supply-chain-management': { display: 'Logistics and Supply Chain Management', contentKey: 'logistics & supply chain', keywords: ['mba logistics and supply chain management', 'online mba logistics india 2026'] },
+  'operations-supply-chain-management': { display: 'Operations & Supply Chain Management', contentKey: 'operations & supply chain', keywords: ['mba operations supply chain india 2026', 'online mba operations scm'] },
 }
 
 function findUniId(slug: string) {
