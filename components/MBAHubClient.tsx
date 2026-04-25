@@ -23,7 +23,7 @@ const TRAFFIC_ORDER = [
 ]
 
 const TOP_10_PICKS = [
-  { id: 'manipal-academy-higher-education-online', bestFor: 'NIRF #3 Management. Strongest brand prestige among all online MBA providers in India. Ideal for South India careers.', fee: '2.92L' },
+  { id: 'manipal-academy-higher-education-online', bestFor: 'NIRF #3 University. Strongest Manipal brand prestige among all online MBA providers in India. NAAC A++. Ideal for South India careers.', fee: '2.92L' },
   { id: 'amity-university-online', bestFor: 'International careers. Only Indian online MBA with both WASC (USA) and QAA (UK) accreditation. WES recognized for Canada/US immigration.', fee: '2.07L' },
   { id: 'nmims-online', bestFor: 'BFSI careers. AACSB member. Strongest recruiter recall in banking, financial services, and insurance sector.', fee: '1.96L' },
   { id: 'jain-university-online', bestFor: 'NAAC A++ at mid-range fee. 19 specializations with ACCA integration. Strong in Bangalore tech ecosystem.', fee: '1.96L' },
