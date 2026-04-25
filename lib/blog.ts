@@ -676,14 +676,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <li>Honest feedback from working professionals already enrolled</li>
     <li>One counsellor, one conversation, done</li>
   </ul>
-  <div class="cta-form" id="cta-mba-professionals-form">
-    <input type="text" id="cta-mba-professionals-name" placeholder="Your Name" />
-    <input type="tel" id="cta-mba-professionals-phone" placeholder="Phone Number" inputmode="numeric" />
-    <input type="email" id="cta-mba-professionals-email" placeholder="Email (optional)" style="display:none" />
-    <button type="button" class="cta-submit" onclick="submitInlineCTA('mba-professionals')">Send Me the List</button>
-  </div>
-  <div id="cta-mba-professionals-success" style="display:none;text-align:center;padding:12px 0">
-    <div style="font-size:24px;margin-bottom:8px">&#10003;</div>
+  <div class="blog-cta-spot" data-variant="counsel"></div>
     <p style="font-weight:700;margin:0 0 4px">Got it. We will call you within 2 hours.</p>
     <p style="font-size:13px;color:#94a3b8;margin:0">Keep your phone handy.</p>
   </div>
@@ -845,14 +838,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="cta-box" style="background:#0C2A55;color:#fff;padding:24px;border-radius:16px;margin:20px 0">
 <h4 style="margin:0 0 8px;font-size:16px">Get Free Counselling</h4>
 <p style="font-size:13px;color:#94a3b8;margin:0 0 14px">No commissions. No spam. Just honest guidance.</p>
-<div class="cta-form" id="cta-nmims-blog-cta-form" style="display:flex;flex-direction:column;gap:8px">
-    <input type="text" id="cta-nmims-blog-cta-name" placeholder="Your Name" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="name">
-    <input type="tel" id="cta-nmims-blog-cta-phone" placeholder="WhatsApp Number" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="tel" inputmode="numeric">
-    <input type="email" id="cta-nmims-blog-cta-email" placeholder="Email" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="email">
-    <button type="button" onclick="submitInlineCTA('nmims-blog-cta')" style="padding:12px;border-radius:8px;border:none;background:#f59e0b;color:#0C2A55;font-weight:700;font-size:14px;cursor:pointer">Book My Free Call</button>
-  </div>
-  <div id="cta-nmims-blog-cta-success" style="display:none;text-align:center;padding:16px 0">
-    <div style="width:48px;height:48px;border-radius:50%;background:#16a34a;color:#fff;font-size:24px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">&#10003;</div>
+<div class="blog-cta-spot" data-variant="counsel"></div>
     <p style="font-size:16px;font-weight:700;color:#fff;margin:0 0 4px">Got it. We will call you within 2 hours.</p>
     <p style="font-size:13px;color:#94a3b8;margin:0">Keep your phone handy.</p>
   </div>
@@ -924,14 +910,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="cta-box" style="background:#0C2A55;color:#fff;padding:24px;border-radius:16px;margin:20px 0">
 <h4 style="margin:0 0 8px;font-size:16px">Get Free Counselling</h4>
 <p style="font-size:13px;color:#94a3b8;margin:0 0 14px">No commissions. No spam. Just honest guidance.</p>
-<div class="cta-form" id="cta-nmims-blog-cta-form" style="display:flex;flex-direction:column;gap:8px">
-    <input type="text" id="cta-nmims-blog-cta-name" placeholder="Your Name" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="name">
-    <input type="tel" id="cta-nmims-blog-cta-phone" placeholder="WhatsApp Number" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="tel" inputmode="numeric">
-    <input type="email" id="cta-nmims-blog-cta-email" placeholder="Email" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="email">
-    <button type="button" onclick="submitInlineCTA('nmims-blog-cta')" style="padding:12px;border-radius:8px;border:none;background:#f59e0b;color:#0C2A55;font-weight:700;font-size:14px;cursor:pointer">Book My Free Call</button>
-  </div>
-  <div id="cta-nmims-blog-cta-success" style="display:none;text-align:center;padding:16px 0">
-    <div style="width:48px;height:48px;border-radius:50%;background:#16a34a;color:#fff;font-size:24px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">&#10003;</div>
+<div class="blog-cta-spot" data-variant="counsel"></div>
     <p style="font-size:16px;font-weight:700;color:#fff;margin:0 0 4px">Got it. We will call you within 2 hours.</p>
     <p style="font-size:13px;color:#94a3b8;margin:0">Keep your phone handy.</p>
   </div>
@@ -989,14 +968,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="cta-box" style="background:#0C2A55;color:#fff;padding:24px;border-radius:16px;margin:20px 0">
 <h4 style="margin:0 0 8px;font-size:16px">Get Free Counselling</h4>
 <p style="font-size:13px;color:#94a3b8;margin:0 0 14px">No commissions. No spam. Just honest guidance.</p>
-<div class="cta-form" id="cta-nmims-blog-cta-form" style="display:flex;flex-direction:column;gap:8px">
-    <input type="text" id="cta-nmims-blog-cta-name" placeholder="Your Name" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="name">
-    <input type="tel" id="cta-nmims-blog-cta-phone" placeholder="WhatsApp Number" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="tel" inputmode="numeric">
-    <input type="email" id="cta-nmims-blog-cta-email" placeholder="Email" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="email">
-    <button type="button" onclick="submitInlineCTA('nmims-blog-cta')" style="padding:12px;border-radius:8px;border:none;background:#f59e0b;color:#0C2A55;font-weight:700;font-size:14px;cursor:pointer">Book My Free Call</button>
-  </div>
-  <div id="cta-nmims-blog-cta-success" style="display:none;text-align:center;padding:16px 0">
-    <div style="width:48px;height:48px;border-radius:50%;background:#16a34a;color:#fff;font-size:24px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">&#10003;</div>
+<div class="blog-cta-spot" data-variant="counsel"></div>
     <p style="font-size:16px;font-weight:700;color:#fff;margin:0 0 4px">Got it. We will call you within 2 hours.</p>
     <p style="font-size:13px;color:#94a3b8;margin:0">Keep your phone handy.</p>
   </div>
@@ -1048,14 +1020,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="cta-box" style="background:#0C2A55;color:#fff;padding:24px;border-radius:16px;margin:20px 0">
 <h4 style="margin:0 0 8px;font-size:16px">Get Free Counselling</h4>
 <p style="font-size:13px;color:#94a3b8;margin:0 0 14px">No commissions. No spam. Just honest guidance.</p>
-<div class="cta-form" id="cta-nmims-blog-cta-form" style="display:flex;flex-direction:column;gap:8px">
-    <input type="text" id="cta-nmims-blog-cta-name" placeholder="Your Name" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="name">
-    <input type="tel" id="cta-nmims-blog-cta-phone" placeholder="WhatsApp Number" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="tel" inputmode="numeric">
-    <input type="email" id="cta-nmims-blog-cta-email" placeholder="Email" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="email">
-    <button type="button" onclick="submitInlineCTA('nmims-blog-cta')" style="padding:12px;border-radius:8px;border:none;background:#f59e0b;color:#0C2A55;font-weight:700;font-size:14px;cursor:pointer">Book My Free Call</button>
-  </div>
-  <div id="cta-nmims-blog-cta-success" style="display:none;text-align:center;padding:16px 0">
-    <div style="width:48px;height:48px;border-radius:50%;background:#16a34a;color:#fff;font-size:24px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">&#10003;</div>
+<div class="blog-cta-spot" data-variant="counsel"></div>
     <p style="font-size:16px;font-weight:700;color:#fff;margin:0 0 4px">Got it. We will call you within 2 hours.</p>
     <p style="font-size:13px;color:#94a3b8;margin:0">Keep your phone handy.</p>
   </div>
@@ -4273,14 +4238,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="cta-block">
   <h3>Considering LPU Online MBA?</h3>
   <p class="sub">Get a personalised fee breakdown, EMI options, and a comparison with 2–3 alternatives at similar price points. One call, no pressure.</p>
-  <div class="cta-form" id="cta-lpu-blog-form">
-    <input type="text" id="cta-lpu-blog-name" placeholder="Your Name" />
-    <input type="tel" id="cta-lpu-blog-phone" placeholder="Phone Number" inputmode="numeric" />
-    <input type="email" id="cta-lpu-blog-email" placeholder="Email (optional)" style="display:none" />
-    <button type="button" class="cta-submit" onclick="submitInlineCTA('lpu-blog')">Get a Free Counselling Call</button>
-  </div>
-  <div id="cta-lpu-blog-success" style="display:none;text-align:center;padding:12px 0">
-    <div style="font-size:24px;margin-bottom:8px">&#10003;</div>
+  <div class="blog-cta-spot" data-variant="counsel"></div>
     <p style="font-weight:700;margin:0 0 4px">Got it. We will call you within 2 hours.</p>
     <p style="font-size:13px;color:#94a3b8;margin:0">Keep your phone handy.</p>
   </div>
@@ -8483,24 +8441,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <p style="font-size:12px;color:#9ca3af;margin-top:6px">All four payment options compared  -- one-time payment at ₹2,07,000 is the best value route</p>
 </div>
 
-<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:28px 32px;margin:32px 0;text-align:center">
-  <p style="font-size:16px;font-weight:700;color:#1e3a8a;margin:0 0 8px">Comparing Amity's ₹2.07L against 3-4 other options?</p>
-  <p style="font-size:14px;color:#64748b;margin:0 0 18px">We'll send you a free side-by-side comparison in 2 hours. Amity vs NMIMS vs MAHE vs your top 2 picks. No spam, no sales pitch, just the numbers. EdifyEdu earns zero commissions from Amity.</p>
-  <div class="cta-form" id="cta-amity-blog-pos1-fee-compare-form">
-    <div class="cta-fields">
-      <input type="text" id="cta-amity-blog-pos1-fee-compare-name" placeholder="Your Name" autocomplete="name" />
-      <input type="tel" id="cta-amity-blog-pos1-fee-compare-phone" placeholder="WhatsApp Number" autocomplete="tel" inputmode="numeric" />
-      <input type="email" id="cta-amity-blog-pos1-fee-compare-email" placeholder="Email (optional)" autocomplete="email" />
-    </div>
-    <button type="button" class="cta-submit" onclick="submitInlineCTA('amity-blog-pos1-fee-compare')">Get My Free Comparison</button>
-    <p class="cta-trust">No spam. No sales pitch. We respond within 2 hours.</p>
-  </div>
-  <div class="cta-success" id="cta-amity-blog-pos1-fee-compare-success" style="display:none">
-    <div class="cta-success-icon">&#10003;</div>
-    <h4>Got it. We will call you within 2 hours.</h4>
-    <p>Keep your phone handy. The call comes from a +91 number.</p>
-  </div>
-</div>
+<div class="blog-cta-spot" data-variant="compare"></div>
 
 <h2 id="distance-vs-online">Amity Distance MBA vs Online MBA: What's Different</h2>
 <table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">
@@ -8651,24 +8592,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>JAIN's NIRF Management rank is #62 while Amity sits at #49. Amity has WASC+QAA international accreditation that JAIN does not hold. JAIN's strength is in South India recruiter recall, particularly in Bangalore's tech and consulting ecosystem.</p>
 <p><strong>Verdict:</strong> JAIN for NAAC A++ and slightly lower fee. Amity for international accreditation and stronger NIRF Management rank. Pick JAIN if Bangalore is your target market. Pick Amity if international credentials matter.</p>
 
-<div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
-  <p style="font-size:16px;font-weight:700;color:#0c4a6e;margin:0 0 8px">Still on the fence between Amity, NMIMS, and MAHE?</p>
-  <p style="font-size:14px;color:#64748b;margin:0 0 18px">Talk to our independent counsellor in a free 15-minute call. We do not earn referral commissions from any university. Advice is purely based on your career goal.</p>
-  <div class="cta-form" id="cta-amity-blog-pos2-comparison-form">
-    <div class="cta-fields">
-      <input type="text" id="cta-amity-blog-pos2-comparison-name" placeholder="Your Name" autocomplete="name" />
-      <input type="tel" id="cta-amity-blog-pos2-comparison-phone" placeholder="WhatsApp Number" autocomplete="tel" inputmode="numeric" />
-      <input type="email" id="cta-amity-blog-pos2-comparison-email" placeholder="Email (optional)" autocomplete="email" />
-    </div>
-    <button type="button" class="cta-submit" onclick="submitInlineCTA('amity-blog-pos2-comparison')">Book My Free Call</button>
-    <p class="cta-trust">No spam. No sales pitch. We respond within 2 hours.</p>
-  </div>
-  <div class="cta-success" id="cta-amity-blog-pos2-comparison-success" style="display:none">
-    <div class="cta-success-icon">&#10003;</div>
-    <h4>Got it. We will call you within 2 hours.</h4>
-    <p>Keep your phone handy. The call comes from a +91 number.</p>
-  </div>
-</div>
+<div class="blog-cta-spot" data-variant="counsel"></div>
 
 <h2 id="placements">Amity Online MBA Placements: What You Can Actually Expect</h2>
 <p>Let's be direct: Amity does not publish online-MBA-specific placement data. The placement numbers you see on their website (500+ hiring partners, 1,00,000+ job offers lifetime) are university-wide figures that include campus programmes. They are not independently audited.</p>
@@ -8720,24 +8644,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p><strong>Scholarship categories:</strong> Merit-based (60%+ in graduation) for up to 20% fee waiver. ISAT scholarship for below-40% candidates who clear the test. Defence and JCO personnel discounts. Divyaang (disabled candidates) waivers. Amity Alumni concessions. CHAMPS (sports achievement) performance-based waivers.</p>
 <p><strong>Payment flexibility:</strong> One-time lump sum at ₹2,07,000 (best value, saves ₹18,000). Annual at ₹1,06,880/year. Per semester at ₹56,300 (x4 semesters). 24-month no-cost EMI at ₹8,906/month (zero interest).</p>
 
-<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
-  <p style="font-size:16px;font-weight:700;color:#9a3412;margin:0 0 8px">Read something here that worried you? Better to know before paying ₹2 lakh.</p>
-  <p style="font-size:14px;color:#64748b;margin:0 0 18px">Free 15-min conversation about your specific career goal. Free means free. We will not pitch you Amity or anyone else unless it genuinely fits.</p>
-  <div class="cta-form" id="cta-amity-blog-pos3-concerns-form">
-    <div class="cta-fields">
-      <input type="text" id="cta-amity-blog-pos3-concerns-name" placeholder="Your Name" autocomplete="name" />
-      <input type="tel" id="cta-amity-blog-pos3-concerns-phone" placeholder="WhatsApp Number" autocomplete="tel" inputmode="numeric" />
-      <input type="email" id="cta-amity-blog-pos3-concerns-email" placeholder="Email (optional)" autocomplete="email" />
-    </div>
-    <button type="button" class="cta-submit" onclick="submitInlineCTA('amity-blog-pos3-concerns')">Get Free Guidance</button>
-    <p class="cta-trust">No spam. No sales pitch. We respond within 2 hours.</p>
-  </div>
-  <div class="cta-success" id="cta-amity-blog-pos3-concerns-success" style="display:none">
-    <div class="cta-success-icon">&#10003;</div>
-    <h4>Got it. We will call you within 2 hours.</h4>
-    <p>Keep your phone handy. The call comes from a +91 number.</p>
-  </div>
-</div>
+<div class="blog-cta-spot" data-variant="verify"></div>
 
 <h2 id="worth-it">Is Amity Online MBA Worth It? The Honest Verdict</h2>
 <p>The answer depends entirely on your career goal. Here's a simple decision framework.</p>

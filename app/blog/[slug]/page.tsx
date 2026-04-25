@@ -9,7 +9,7 @@ import BlogLeadForm from '@/components/BlogLeadForm'
 import BlogClientActions from '@/components/BlogClientActions'
 import BlogTOC from '@/components/BlogTOC'
 import BlogSidebarWidgets from '@/components/BlogSidebarWidgets'
-import InlineCTAScript from '@/components/InlineCTAScript'
+import BlogContentWithCTAs from '@/components/BlogContentWithCTAs'
 
 // ── Server-side helpers ───────────────────────────────────────────────────────
 
@@ -358,15 +358,9 @@ export default async function BlogPostPage({ params }: Props) {
               {/* Mobile TOC */}
               <BlogTOC headings={headings} mobile />
 
-              {/* Inline CTA submit handler — attaches window.submitInlineCTA on mount */}
-              <InlineCTAScript />
-
-              {/* Article content */}
+              {/* Article content — split at CTA tokens to inject React components */}
               <div className="bg-white rounded-2xl border border-border p-6 sm:p-8 mb-6">
-                <div
-                  className="prose-article"
-                  dangerouslySetInnerHTML={{ __html: contentWithIds }}
-                />
+                <BlogContentWithCTAs html={contentWithIds} />
               </div>
 
               {/* In-article lead form */}
