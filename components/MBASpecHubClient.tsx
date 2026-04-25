@@ -34,7 +34,7 @@ export default function MBASpecHubClient({ specSlug, specName }: Props) {
     const variants = canonical?.variants || [specSlug]
     return UNIS_SLIM
       .filter(u => {
-        if (!PREFERRED_UNI_IDS.includes(u.id) || !u.programs.includes('MBA')) return false
+        if (!u.programs.includes('MBA')) return false
         const uniSpecs = (u as any).mbaSpecs as string[] | undefined
         if (!uniSpecs || uniSpecs.length === 0) return false
         return uniSpecs.some(s => {

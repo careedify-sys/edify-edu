@@ -82,8 +82,7 @@ export async function generateMetadata(
     : null
 
   const allUnis = getUniversitiesByProgram(program)
-  // For MBA, use PREFERRED_UNI_IDS count (what the page actually shows)
-  const uniCount = program === 'MBA' ? allUnis.filter(u => PREFERRED_UNI_IDS.includes(u.id)).length : allUnis.length
+  const uniCount = allUnis.length
 
   const title = specContent?.metaTitle
     || (activeSpec

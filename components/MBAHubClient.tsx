@@ -63,7 +63,7 @@ const FAQS = [
 export default function MBAHubClient() {
   const mbaUnis = useMemo(() => {
     return UNIS_SLIM
-      .filter(u => PREFERRED_UNI_IDS.includes(u.id) && u.programs.includes('MBA'))
+      .filter(u => u.programs.includes('MBA'))
       .sort((a, b) => {
         const ai = TRAFFIC_ORDER.indexOf(a.id)
         const bi = TRAFFIC_ORDER.indexOf(b.id)
