@@ -111,7 +111,7 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
               { label: 'University', vA: nameA, vB: nameB },
               { label: 'NIRF Rank', vA: uA.nirf > 0 && uA.nirf < 200 ? `#${uA.nirf}` : 'Unranked', vB: uB.nirf > 0 && uB.nirf < 200 ? `#${uB.nirf}` : 'Unranked' },
               { label: 'NAAC Grade', vA: uA.naac, vB: uB.naac },
-              { label: 'Total Fees', vA: formatINR(uA.feeMin), vB: formatINR(uB.feeMin) },
+              { label: 'Total Fees', vA: `${formatINR(uA.feeMin)} - ${formatINR(uA.feeMax)}`, vB: `${formatINR(uB.feeMin)} - ${formatINR(uB.feeMax)}` },
               { label: 'Duration', vA: pdA?.duration || '2 Years', vB: pdB?.duration || '2 Years' },
               { label: 'Specialisations', vA: `${specCountA}`, vB: `${specCountB}` },
             ].map((row, i) => (
@@ -125,19 +125,25 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
         </div>
 
         {/* Fees */}
-        <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>Fees and EMI</h2>
+        <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>Fees Comparison</h2>
         <p className="text-xs text-slate-400 mb-4">Fees are indicative. Verify with the university before enrolling.</p>
-        <div className="grid md:grid-cols-2 gap-4 mb-8">
-          <div className="rounded-xl border border-slate-200 bg-white p-5">
-            <h3 className="text-sm font-bold mb-2" style={{ color: '#0f2756' }}>{nameA}</h3>
-            <p className="text-2xl font-black" style={{ color: '#0f2756' }}>{formatINR(uA.feeMin)}</p>
-            <p className="text-xs text-slate-500 mt-1">EMI from {formatINR(uA.emiFrom)}/month</p>
+        <div className="rounded-xl border border-slate-200 bg-white overflow-hidden mb-8">
+          <div className="grid grid-cols-3 bg-slate-50 border-b border-slate-200">
+            <div className="px-4 py-2.5 text-xs font-bold text-slate-500 uppercase">Payment Option</div>
+            <div className="px-4 py-2.5 text-xs font-bold uppercase" style={{ color: '#0f2756' }}>{nameA}</div>
+            <div className="px-4 py-2.5 text-xs font-bold text-amber-700 uppercase">{nameB}</div>
           </div>
-          <div className="rounded-xl border border-amber-200 bg-amber-50 p-5">
-            <h3 className="text-sm font-bold mb-2 text-amber-700">{nameB}</h3>
-            <p className="text-2xl font-black text-amber-700">{formatINR(uB.feeMin)}</p>
-            <p className="text-xs text-amber-600 mt-1">EMI from {formatINR(uB.emiFrom)}/month</p>
-          </div>
+          {[
+            { label: 'Fee Range', vA: uA.feeMin === uA.feeMax ? formatINR(uA.feeMin) : `${formatINR(uA.feeMin)} - ${formatINR(uA.feeMax)}`, vB: uB.feeMin === uB.feeMax ? formatINR(uB.feeMin) : `${formatINR(uB.feeMin)} - ${formatINR(uB.feeMax)}` },
+            { label: 'Per Semester (approx)', vA: `${formatINR(Math.round(uA.feeMin / 4))}/sem`, vB: `${formatINR(Math.round(uB.feeMin / 4))}/sem` },
+            { label: 'Starts from/month', vA: `${formatINR(uA.emiFrom)}/mo`, vB: `${formatINR(uB.emiFrom)}/mo` },
+          ].map((row, i) => (
+            <div key={i} className={`grid grid-cols-3 ${i > 0 ? 'border-t border-slate-100' : ''}`}>
+              <div className="px-4 py-2.5 text-xs font-semibold text-slate-600">{row.label}</div>
+              <div className="px-4 py-2.5 text-sm font-bold" style={{ color: '#0f2756' }}>{row.vA}</div>
+              <div className="px-4 py-2.5 text-sm font-bold text-amber-700">{row.vB}</div>
+            </div>
+          ))}
         </div>
 
         {/* NIRF & NAAC */}

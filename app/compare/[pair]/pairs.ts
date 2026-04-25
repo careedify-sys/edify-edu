@@ -8,7 +8,7 @@ export const PAIRS = {
     defaultSpec: 'marketing',
     faqs: [
       { q: 'Is Amity or NMIMS better ranked in NIRF 2025?', a: 'NMIMS holds NIRF #17 Management rank. Amity holds NIRF #22 University rank. Both are strong. NMIMS is better positioned in the Management category specifically.' },
-      { q: 'What is the fee difference between Amity and NMIMS online MBA?', a: 'Amity online MBA costs Rs 2,25,000 (standard) to Rs 3,29,000 (Healthcare/ACCA tracks). NMIMS costs Rs 1,96,000. NMIMS is cheaper for the standard track.' },
+      { q: 'What is the fee difference between Amity and NMIMS online MBA?', a: 'Amity standard MBA costs Rs 2,25,000 (semester-wise, Rs 56,300/sem) or Rs 2,07,000 (one-time payment). NMIMS costs Rs 2,20,000 (semester-wise, Rs 55,000/sem) or Rs 1,96,000 (one-time). On a like-for-like semester basis, both are nearly identical. One-time payment saves Rs 18,000 at Amity and Rs 24,000 at NMIMS.' },
       { q: 'Does Amity offer specialisations that NMIMS does not?', a: 'Yes. Amity offers 19 specialisations including Healthcare, Hospitality, Insurance, and Retail. NMIMS offers 5-6 focused tracks. Amity has broader choice; NMIMS has deeper focus.' },
       { q: 'Which has better placements: Amity or NMIMS?', a: 'NMIMS has stronger Mumbai-centric BFSI recruiter connections. Amity has a larger pan-India alumni network. For Mumbai finance roles, NMIMS. For NCR and broad management, Amity.' },
       { q: 'Is Amity MBA valued more than NMIMS by employers?', a: 'Both are well-recognised. NMIMS carries stronger weight specifically in Mumbai financial services. Amity has broader geographic recognition due to 500+ hiring partners across India.' },
