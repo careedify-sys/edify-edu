@@ -14,7 +14,9 @@ import {
   Eye,
   ChevronDown,
 } from 'lucide-react'
+import Link from 'next/link'
 import { COUPONS, getExpiryDisplay, type Coupon } from '@/lib/coupons'
+import { COUPON_PAGE_SLUGS } from '@/lib/coupon-pages'
 import EnquiryModal from '@/components/EnquiryModal'
 
 // ── Types ──────────────────────────────────────────────────────────────────
@@ -151,7 +153,7 @@ function CouponCard({
       </div>
 
       {/* CTA */}
-      <div className="px-5 pb-5">
+      <div className="px-5 pb-5 space-y-2">
         <button
           onClick={() => onEnquire(coupon)}
           className="w-full flex items-center justify-center gap-2 text-white py-3 rounded-xl font-bold text-sm hover:opacity-90 transition-opacity"
@@ -160,6 +162,14 @@ function CouponCard({
           Apply &amp; Enquire
           <ChevronRight className="w-4 h-4" />
         </button>
+        {COUPON_PAGE_SLUGS.some(s => s.includes(coupon.universityId.split('-')[0])) && (
+          <Link
+            href={`/coupons/${COUPON_PAGE_SLUGS.find(s => s.includes(coupon.universityId.split('-')[0])) || ''}`}
+            className="w-full flex items-center justify-center gap-1 text-amber-700 py-2 rounded-xl text-xs font-semibold hover:bg-amber-50 transition-colors no-underline"
+          >
+            View full discount details
+          </Link>
+        )}
       </div>
     </div>
   )

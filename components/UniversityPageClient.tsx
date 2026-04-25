@@ -654,6 +654,16 @@ export default function UniversityPageClient({ university: u }: Props) {
                   ))}
                 </div>
 
+                {/* Coupon link - only for universities with coupon pages */}
+                <Link href={`/coupons`} className="block bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-300 rounded-xl p-4 no-underline hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-amber-600 text-lg">🏷️</span>
+                    <span className="font-bold text-amber-800 text-sm">Discount Coupon Available</span>
+                  </div>
+                  <p className="text-xs text-amber-700 mb-2">Save up to Rs 30,000 on your fees with verified coupon codes</p>
+                  <span className="text-xs font-bold text-amber-600 flex items-center gap-1">View Coupon Code <ChevronRight size={12} /></span>
+                </Link>
+
                 <div className="bg-white border border-border rounded-xl p-4">
                   <div className="font-bold text-navy text-sm mb-3">Useful Guides</div>
                   {[

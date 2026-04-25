@@ -714,7 +714,9 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     ctaTitle: '',
     ctaDesc: '',
-    content: `
+    content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Save up to Rs 25,000 on Symbiosis Online MBA.</p><a href="/coupons/symbiosis-ssodl-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View Symbiosis Coupon Code</a></div>
+
+
 <p>Searching for a Symbiosis online MBA and not sure where to start? You are not alone. The Symbiosis name covers more than one program and more than one delivery format, and it is easy to end up reading about the wrong one. This page covers the Symbiosis university online MBA through SSODL: what the program is, how it is structured, what it costs, and what students who have actually enrolled tend to say.</p>
 
 <h2>SSODL and SCDL: Not the Same Program</h2>
@@ -810,7 +812,9 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     ctaTitle: '',
     ctaDesc: '',
-    content: `<p><em>Last updated: April 24, 2026 | Verified against NMIMS CDOE portal and NIRF 2025 data</em></p>
+    content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Save up to Rs 24,000 on NMIMS Online MBA.</p><a href="/coupons/nmims-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View NMIMS Coupon Code</a></div>
+
+<p><em>Last updated: April 24, 2026 | Verified against NMIMS CDOE portal and NIRF 2025 data</em></p>
 
 
 <h2>NMIMS Online MBA at a Glance</h2>
@@ -1049,7 +1053,9 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     ctaTitle: '',
     ctaDesc: '',
-    content: `
+    content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">IGNOU has the lowest fee at Rs 66,000. No coupon needed.</p><a href="/coupons/ignou-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View IGNOU Coupon Code</a></div>
+
+
 <p>Rs 58,000. That is the total cost of a two-year MBA from India's largest open university, delivered fully online, with no entrance exam. The people who regret joining IGNOU and the people who found it genuinely valuable went in with very different expectations. This page covers what the program involves, what it costs, and what students on Reddit, Quora, and consumer review platforms have said.</p>
 
 <p>All program details are sourced from the <a href="https://iop.ignouonline.ac.in/programme/p21" target="_blank">official IGNOU IOP program page</a>. Student feedback is drawn from Quora, Reddit, and PissedConsumer, with sources linked at the bottom.</p>
@@ -1236,7 +1242,9 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     ctaTitle: '',
     ctaDesc: '',
-    content: `
+    content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Save up to Rs 20,000 on MAHE Online MBA.</p><a href="/coupons/mahe-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View MAHE Coupon Code</a></div>
+
+
 <p>MAHE is the most expensive of the three Online Manipal campuses and the one most people mean when they say "Manipal MBA". NIRF ranked it third in India overall. It has Institution of Eminence status from the Ministry of Education. It is a NAAC A++ university. All of that matters if your goal is a degree that carries premium corporate recognition. Whether the Rs 2,92,000 fee is worth it compared to MUJ at Rs 1,75,000 depends entirely on which specialisation you want and what employer you are trying to impress.</p>
     <p>All program details are sourced from the <a href="https://www.onlinemanipal.com/online-mba-degree-working-professionals-mahe" target="_blank">official MAHE MBA page on Online Manipal</a>. Student feedback is from Quora and Online Manipal's learner surveys.</p>
 
@@ -1365,7 +1373,9 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     ctaTitle: '',
     ctaDesc: '',
-    content: `
+    content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Save up to Rs 22,000 on MUJ Online MBA.</p><a href="/coupons/manipal-jaipur-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View MUJ Coupon Code</a></div>
+
+
 <p>If you search "online MBA India" on any forum, MUJ comes up most often in the comments. It was one of the first universities in India to offer an online MBA with UGC approval, starting its first batch in April 2021. The Rs 1,75,000 fee sits in a middle ground between MAHE (Rs 2,92,000) and SMU (Rs 1,20,000), but what really distinguishes it is the range of 13 specialisations, including tracks like IT and FinTech, BFSI, and International Business that the other two campuses do not offer.</p>
     <p>All program details are sourced from the <a href="https://www.onlinemanipal.com/online-mba-manipal-university-jaipur" target="_blank">official MUJ MBA page on Online Manipal</a>. Student feedback is from Quora, Shiksha, and College Vidya.</p>
 
@@ -3845,7 +3855,9 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     ctaTitle: '',
     ctaDesc: '',
-    content: `
+    content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Save up to Rs 18,000 on LPU Online MBA.</p><a href="/coupons/lpu-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View LPU Coupon Code</a></div>
+
+
 <!-- Full LPU Online MBA Review 2026 -->
 
 <figure style="text-align:center; margin: 0 0 2em;">
@@ -8410,7 +8422,9 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'What is the difference between Amity Online MBA and Amity Dual Specialization MBA?', a: 'Standard Online MBA covers one specialization at ₹2,25,000 total (or ₹2,07,000 one-time). Dual Specialization covers two combined specializations at ₹2,99,000 total. Dual offers more career flexibility. Standard is better for budget-conscious learners. Both carry same UGC-DEB approval and international accreditation.' },
       { q: 'When is the last date for Amity Online MBA admission 2026?', a: 'January 2026 session admissions were available until March 2026. July 2026 session typically opens April 2026. No entrance exam required. Admissions are first-come-first-served. Application fee is ₹1,100. Verify current dates on amityonline.com.' },
     ],
-    content: `
+    content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Save up to Rs 30,000 on Amity Online MBA.</p><a href="/coupons/amity-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View Amity Coupon Code</a></div>
+
+
 <p style="font-size:14px;color:#6b7280;margin-bottom:24px"><em>Updated April 2026 · 12 min read · Fees verified from official Amity Online portal</em></p>
 
 <h2 id="the-confusion">The Number That Confuses Everyone</h2>
@@ -10465,7 +10479,9 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'How does SMU Online MBA compare to MAHE?', a: 'SMU costs Rs. 1,20,000 vs MAHE at Rs. 2,92,000. MAHE carries a stronger brand (NAAC A++, Rank #3 nationally). SMU offers the same Manipal alumni network access at one-third the cost, with a mandatory dual specialization MAHE does not have.' },
       { q: 'Who should apply for SMU Online MBA?', a: 'SMU is best suited for mid-career professionals who want Manipal brand association at an affordable price and benefit from a dual-domain curriculum. Healthcare professionals are particularly well-served by the Healthcare specialization at Rs. 1,10,000 total.' }
     ],
-    content: `<p>Sikkim Manipal University occupies an interesting position in the online MBA market. It is part of the Manipal Education group, which also offers programs under MAHE (Rs. 2.92 lakhs) and MUJ (Rs. 1.75 lakhs). But SMU sits at Rs. 1,20,000 total and comes with something most programs at this price point do not: a mandatory dual specialization requirement.</p>
+    content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Save up to Rs 16,000 on SMU Online MBA.</p><a href="/coupons/smu-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View SMU Coupon Code</a></div>
+
+<p>Sikkim Manipal University occupies an interesting position in the online MBA market. It is part of the Manipal Education group, which also offers programs under MAHE (Rs. 2.92 lakhs) and MUJ (Rs. 1.75 lakhs). But SMU sits at Rs. 1,20,000 total and comes with something most programs at this price point do not: a mandatory dual specialization requirement.</p>
 
 <p>That one structural difference changes who this program is for. If you pick Finance as your primary track, you are also required to study two subjects from a second specialization. You graduate with competency across two domains, not just one. For a mid-career professional trying to expand their profile, that is a meaningful curriculum design choice.</p>
 
@@ -11865,7 +11881,9 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'What does the edX access in DY Patil MBA actually mean?', a: 'Students get access to elective learning modules on edX from universities like Harvard and MIT. These are supplemental content modules, not degrees or certificates from those universities. The MBA degree itself comes from DY Patil.' },
       { q: 'What is the difference between DY Patil Pune and Navi Mumbai campus for online MBA?', a: 'Pune campus costs Rs 1,89,400 and includes exam fees in the semester fee. Navi Mumbai campus costs Rs 1,70,000 but charges Rs 2,500/semester separately for exams. The edX integration is referenced primarily in Pune campus materials.' },
     ],
-    content: `
+    content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Save up to Rs 12,000 on DPU Online MBA.</p><a href="/coupons/dpu-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View DPU Coupon Code</a></div>
+
+
 <p style="font-size:13px;color:#64748b;margin-bottom:4px">Written by <strong>Komal Srivastava</strong> · 7+ years in higher education counselling · Updated April 2026</p>
 
 <p>DY Patil Online MBA from Pune sits in an interesting price bracket. At Rs 1,89,400, it sits between budget programs like Sharda (Rs 1.40 lakhs) and premium ones like NMIMS (Rs 1.96 lakhs). What makes it noteworthy is two things most online MBAs cannot claim: WES recognition for international career applications, and access to elective courses on edX from universities like Harvard and MIT as part of the program.</p>
@@ -12049,7 +12067,9 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'What does the PwC certification mean in CU Online MBA?', a: 'PwC India co-creates and actually teaches two core MBA subjects: Financial Reporting & Analysis and Financial Management. PwC-branded certificates are issued on completion. This is industry-credible, especially for finance and consulting roles.' },
       { q: 'What is the actual fee for Chandigarh University Online MBA?', a: 'Rs 1,65,000 is after a 25% early-bird scholarship. The standard fee before scholarship is Rs 1,80,400. Verify current scholarship availability before applying at onlinecu.in.' },
     ],
-    content: `
+    content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Save up to Rs 12,000 on Chandigarh Online MBA.</p><a href="/coupons/chandigarh-university-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View Chandigarh Coupon Code</a></div>
+
+
 <p style="font-size:13px;color:#64748b;margin-bottom:4px">Written by <strong>Komal Srivastava</strong> · 7+ years in higher education counselling · Updated April 2026</p>
 
 <p>If you have searched for "online MBA with Harvard certification India" or "online MBA with PwC certification," Chandigarh University Online comes up in most results. The triple certification bundle from Harvard Business Publishing, PwC India, and PMI is the program's headline feature and the primary reason students choose CU Online over cheaper alternatives at the same accreditation level.</p>
