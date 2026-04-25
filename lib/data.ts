@@ -1964,6 +1964,7 @@ export const UNIVERSITIES: University[] = [
     state: 'Karnataka',
     region: 'South',
     nirf: 3,
+    nirfMgt: 3,
     naac: 'A++',
     ugc: true,
     approvals: ['UGC DEB', 'NAAC A++', 'NIRF #3', 'AICTE', 'WES Recognised'],

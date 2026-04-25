@@ -87,14 +87,14 @@ export async function generateMetadata(
     || (activeSpec
       ? `Best Online ${program} in ${activeSpec} ${year} — Fees, Colleges, Career | EdifyEdu`
       : program === 'MBA'
-        ? `Online MBA ${year} — ${uniCount}+ UGC-Approved Universities Compared | EdifyEdu`
+        ? `Best Online MBA in India ${year} — ${uniCount} UGC-Approved Universities | EdifyEdu`
         : `Online ${program} India ${year} — Compare UGC Approved Universities | EdifyEdu`)
 
   const description = specContent?.metaDesc
     || (activeSpec
       ? `Compare top UGC DEB approved online ${program} programs with ${activeSpec} specialisation in India ${year}. Check NIRF ranks, fees, career scope, and salary data.`
       : program === 'MBA'
-        ? `Compare online MBA programmes from ${uniCount} UGC-DEB approved universities in India. Filter by specialisation, fees from Rs 66,000. Independent, commission-free rankings by EdifyEdu.`
+        ? `Compare ${uniCount} UGC-DEB approved online MBAs by NIRF rank, fees (Rs 66K-3.7L), specialisations and placement. Independent reviews. Zero referral commissions. Updated April ${year}.`
         : `Explore all UGC approved online ${program} programs in India. Find real NIRF rankings, NAAC grades, and verified fees. Admissions for ${year}.`)
 
   const canonical = activeSpec

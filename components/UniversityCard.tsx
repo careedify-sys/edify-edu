@@ -194,10 +194,12 @@ export default function UniversityCard({ u, highlightProgram }: { u: UniversityC
                 {formatFee(u.feeMin)} – {formatFee(u.feeMax)}
               </div>
             </div>
+            {u.emiFrom > 0 && (
             <div className="text-right">
               <div className="text-xs mb-0.5 text-[var(--ink-3)]">EMI from</div>
               <div className="font-semibold text-sm" style={{ color:'var(--amber)' }}>₹{u.emiFrom.toLocaleString()}/mo</div>
             </div>
+            )}
           </div>
         </Link>
 
