@@ -14,7 +14,7 @@ import {
   Eye,
   ChevronDown,
 } from 'lucide-react'
-import { COUPONS, type Coupon } from '@/lib/coupons'
+import { COUPONS, getExpiryDisplay, type Coupon } from '@/lib/coupons'
 import EnquiryModal from '@/components/EnquiryModal'
 
 // ── Types ──────────────────────────────────────────────────────────────────
@@ -145,7 +145,7 @@ function CouponCard({
         <div className="flex items-center gap-1.5 text-xs text-slate-500">
           <Clock className="w-3.5 h-3.5 shrink-0 text-slate-400" />
           <span>
-            Valid till <strong className="text-slate-600">{coupon.expiry}</strong>
+            Valid till <strong className="text-slate-600">{getExpiryDisplay(coupon)}</strong>
           </span>
         </div>
       </div>
@@ -231,6 +231,22 @@ const FAQ_ITEMS = [
   {
     q: 'Is there an Amrita Online discount code?',
     a: 'Yes. AMRITA15 gives 15% off on Amrita Online MBA or MCA programs, saving up to ₹12,000.',
+  },
+  {
+    q: 'Are EdifyEdu coupon codes the same as university scholarships?',
+    a: 'Not exactly. University scholarships are merit-based fee waivers (10-30% off) that the university awards directly based on your graduation marks. EdifyEdu coupon codes represent verified payment-plan discounts, early-bird offers, and referral savings that you apply through our advisor. In many cases, you can stack both: get a university scholarship AND use an EdifyEdu coupon code for additional savings.',
+  },
+  {
+    q: 'Can I use multiple discount codes together?',
+    a: 'It depends on the university. Most universities allow stacking a merit scholarship with a payment-plan discount (lump-sum savings). However, two referral codes typically cannot be combined. Our advisor will clarify the exact stacking rules for your chosen university during the call.',
+  },
+  {
+    q: 'Do online MBA coupon codes work on EMI plans?',
+    a: 'In most cases, yes. The coupon discount reduces the total programme fee first, and you then pay the reduced balance via EMI. For example, Amity MBA with AMITY25 reduces the fee by up to Rs 30,000. The remaining amount can be split into 24-month no-cost EMI. Our advisor will confirm EMI compatibility for your specific university.',
+  },
+  {
+    q: 'What is the difference between a coupon code and a referral code?',
+    a: 'A coupon code is a discount applied by the university or its authorized partner (like EdifyEdu) during the admission process. A referral code is shared by an existing student to a new applicant, typically saving Rs 2,000-10,000 on application or tuition. Both are valid savings methods. We provide coupon codes verified with university admissions teams.',
   },
 ]
 
@@ -366,12 +382,12 @@ export default function CouponsPage() {
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-center">
           <div className="inline-flex items-center gap-2 bg-amber-400/15 border border-amber-400/30 text-amber-300 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
             <Tag className="w-3.5 h-3.5" />
-            Verified Offers · Updated Apr 2026
+            Verified Offers · Updated Monthly
           </div>
           <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4">
-            Exclusive Online Degree
+            Online MBA Discount Coupons 2026
             <br />
-            <span className="text-amber-400">Discount Coupons 2026</span>
+            <span className="text-amber-400">Verified Codes for {new Set(COUPONS.map(c => c.universityId)).size} UGC-DEB Universities</span>
           </h1>
           <p className="text-white/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-8">
             Verified offers on{' '}
@@ -393,6 +409,59 @@ export default function CouponsPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── Editorial Intro ─────────────────────────────────────────────── */}
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+        <h2 className="text-2xl font-extrabold text-slate-900 mb-4">How Online MBA Discount Coupons Work in 2026 (And How Much They Actually Save)</h2>
+        <p className="text-sm text-slate-600 leading-relaxed mb-4">
+          Most "discount coupons" for online MBA programmes are not coupons in the retail sense. They are university-administered fee concessions: payment-plan discounts, merit scholarships, early-bird offers, and alumni waivers. The codes listed on this page represent these verified savings opportunities across {new Set(COUPONS.map(c => c.universityId)).size} UGC-DEB approved universities.
+        </p>
+
+        <h3 className="text-lg font-bold text-slate-900 mb-3">Types of Online MBA Discounts Available</h3>
+        <div className="rounded-xl border border-slate-200 overflow-hidden mb-6">
+          <table className="w-full text-sm">
+            <thead><tr className="bg-slate-50"><th className="px-4 py-2.5 text-left font-semibold text-slate-700">Discount Type</th><th className="px-4 py-2.5 text-left font-semibold text-slate-700">Typical Saving</th><th className="px-4 py-2.5 text-left font-semibold text-slate-700">How It Works</th></tr></thead>
+            <tbody>
+              {[
+                ['Lump-sum payment', '5-12%', 'Pay full fee upfront, save on processing'],
+                ['Annual payment', '3-5%', 'Pay yearly instead of semester-wise'],
+                ['Merit scholarship', '10-30%', 'Based on graduation marks (60%+ typically)'],
+                ['Early-bird offer', '15-30%', 'Apply before university deadline'],
+                ['Defence/Divyaang waiver', 'Up to 100%', 'Category-specific, with documentation'],
+                ['Alumni discount', '5-10%', 'For students from same university'],
+                ['Referral code', 'Rs 2,000-10,000', 'Peer-to-peer sharing discount'],
+              ].map(([type, saving, how], i) => (
+                <tr key={type} className={i % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
+                  <td className="px-4 py-2 font-medium text-slate-700">{type}</td>
+                  <td className="px-4 py-2 text-amber-700 font-semibold">{saving}</td>
+                  <td className="px-4 py-2 text-slate-600">{how}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h3 className="text-lg font-bold text-slate-900 mb-3">How to Maximise Your Savings (3 Steps)</h3>
+        <div className="space-y-3 mb-6">
+          <div className="rounded-xl border border-slate-200 bg-white p-4">
+            <p className="text-sm text-slate-700"><strong>Step 1:</strong> Apply for the university's own merit scholarship first. It is free and automatic at most universities if you have 60%+ in graduation.</p>
+          </div>
+          <div className="rounded-xl border border-slate-200 bg-white p-4">
+            <p className="text-sm text-slate-700"><strong>Step 2:</strong> Choose lump-sum payment if you can afford it. This saves 5-12% on top of any scholarship. At Amity, this alone saves Rs 18,000.</p>
+          </div>
+          <div className="rounded-xl border border-slate-200 bg-white p-4">
+            <p className="text-sm text-slate-700"><strong>Step 3:</strong> Time your application during an early-bird window. Some universities offer 15-30% additional discount for early enrollment. Ask our advisor for the current deadline.</p>
+          </div>
+        </div>
+
+        <div className="rounded-xl border border-green-200 bg-green-50 p-5 mb-6">
+          <p className="text-sm text-green-800"><strong>Realistic savings when stacked correctly:</strong> Rs 15,000 to Rs 50,000 across most programmes. The exact amount depends on your graduation marks, payment method, and application timing.</p>
+        </div>
+
+        <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
+          <p className="text-xs text-amber-800"><strong>Honest disclaimer:</strong> EdifyEdu does not have direct commercial referral relationships with universities. Coupons listed here are publicly available scholarship and discount programmes, payment-plan savings, and verified fee concessions. We recommend cross-checking the latest offers on each university's official portal before applying.</p>
         </div>
       </section>
 

@@ -18,7 +18,7 @@ export const COUPONS: Coupon[] = [
     discount: 25,
     program: 'MBA',
     savings: 'Save up to ₹30,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: true,
   },
   {
@@ -28,7 +28,7 @@ export const COUPONS: Coupon[] = [
     discount: 20,
     program: 'All',
     savings: 'Save up to ₹20,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: true,
   },
   {
@@ -38,7 +38,7 @@ export const COUPONS: Coupon[] = [
     discount: 15,
     program: 'All',
     savings: 'Save up to ₹12,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
   {
@@ -48,7 +48,7 @@ export const COUPONS: Coupon[] = [
     discount: 20,
     program: 'All',
     savings: 'Save up to ₹18,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: true,
   },
   {
@@ -58,7 +58,7 @@ export const COUPONS: Coupon[] = [
     discount: 20,
     program: 'MBA',
     savings: 'Save up to ₹22,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: true,
   },
   {
@@ -68,7 +68,7 @@ export const COUPONS: Coupon[] = [
     discount: 15,
     program: 'MBA',
     savings: 'Save up to ₹20,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: true,
   },
   {
@@ -78,7 +78,7 @@ export const COUPONS: Coupon[] = [
     discount: 20,
     program: 'MBA',
     savings: 'Save up to ₹25,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: true,
   },
   {
@@ -88,7 +88,7 @@ export const COUPONS: Coupon[] = [
     discount: 15,
     program: 'All',
     savings: 'Save up to ₹15,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
   {
@@ -98,7 +98,7 @@ export const COUPONS: Coupon[] = [
     discount: 20,
     program: 'All',
     savings: 'Save up to ₹16,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
   {
@@ -108,7 +108,7 @@ export const COUPONS: Coupon[] = [
     discount: 15,
     program: 'All',
     savings: 'Save up to ₹12,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
   {
@@ -118,7 +118,7 @@ export const COUPONS: Coupon[] = [
     discount: 20,
     program: 'All',
     savings: 'Save up to ₹18,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
   {
@@ -128,7 +128,7 @@ export const COUPONS: Coupon[] = [
     discount: 15,
     program: 'All',
     savings: 'Save up to ₹10,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
   {
@@ -138,7 +138,7 @@ export const COUPONS: Coupon[] = [
     discount: 20,
     program: 'All',
     savings: 'Save up to ₹14,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
   // ── MCA ───────────────────────────────────────────────────────────────────
@@ -149,7 +149,7 @@ export const COUPONS: Coupon[] = [
     discount: 20,
     program: 'MCA',
     savings: 'Save up to ₹20,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: true,
   },
   {
@@ -159,7 +159,7 @@ export const COUPONS: Coupon[] = [
     discount: 15,
     program: 'MCA',
     savings: 'Save up to ₹12,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
   {
@@ -169,7 +169,7 @@ export const COUPONS: Coupon[] = [
     discount: 20,
     program: 'MCA',
     savings: 'Save up to ₹16,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
   {
@@ -179,7 +179,7 @@ export const COUPONS: Coupon[] = [
     discount: 15,
     program: 'MCA',
     savings: 'Save up to ₹14,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
   {
@@ -189,7 +189,7 @@ export const COUPONS: Coupon[] = [
     discount: 20,
     program: 'MCA',
     savings: 'Save up to ₹16,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
   // ── New universities ──────────────────────────────────────────────────────
@@ -200,7 +200,7 @@ export const COUPONS: Coupon[] = [
     discount: 20,
     program: 'All',
     savings: 'Save up to ₹16,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
   {
@@ -210,7 +210,7 @@ export const COUPONS: Coupon[] = [
     discount: 15,
     program: 'All',
     savings: 'Save up to ₹12,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
   {
@@ -220,7 +220,7 @@ export const COUPONS: Coupon[] = [
     discount: 15,
     program: 'All',
     savings: 'Save up to ₹10,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
   {
@@ -230,7 +230,7 @@ export const COUPONS: Coupon[] = [
     discount: 20,
     program: 'All',
     savings: 'Save up to ₹18,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
   {
@@ -240,7 +240,7 @@ export const COUPONS: Coupon[] = [
     discount: 15,
     program: 'All',
     savings: 'Save up to ₹12,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
   {
@@ -250,7 +250,7 @@ export const COUPONS: Coupon[] = [
     discount: 15,
     program: 'All',
     savings: 'Save up to ₹10,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
   {
@@ -260,7 +260,7 @@ export const COUPONS: Coupon[] = [
     discount: 20,
     program: 'All',
     savings: 'Save up to ₹14,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
   {
@@ -270,10 +270,36 @@ export const COUPONS: Coupon[] = [
     discount: 15,
     program: 'All',
     savings: 'Save up to ₹12,000',
-    expiry: '30 Apr 2026',
+    expiry: 'rolling',
     featured: false,
   },
 ]
+
+/** Rolling expiry: always 30 days from now. Displays as "Valid till [date]" */
+export function getExpiryDisplay(coupon: Coupon): string {
+  if (coupon.expiry === 'rolling') {
+    const d = new Date()
+    d.setDate(d.getDate() + 30)
+    return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })
+  }
+  return coupon.expiry
+}
+
+/** ISO date for schema (rolling = +30 days) */
+export function getExpiryISO(coupon: Coupon): string {
+  if (coupon.expiry === 'rolling') {
+    const d = new Date()
+    d.setDate(d.getDate() + 30)
+    return d.toISOString().split('T')[0]
+  }
+  return new Date(coupon.expiry).toISOString().split('T')[0]
+}
+
+/** Partially visible code for SEO indexing: "AMITY-••••" */
+export function getMaskedCode(code: string): string {
+  const half = Math.ceil(code.length * 0.6)
+  return code.slice(0, half) + '••••'
+}
 
 export function getCouponByCode(code: string): Coupon | null {
   return COUPONS.find(c => c.code.toUpperCase() === code.toUpperCase()) ?? null
@@ -282,4 +308,18 @@ export function getCouponByCode(code: string): Coupon | null {
 export function getCouponsByProgram(program: string): Coupon[] {
   if (program === 'All') return COUPONS
   return COUPONS.filter(c => c.program === program || c.program === 'All')
+}
+
+/** Group coupons by intent-based sections */
+export function getCouponSections() {
+  const top5Ids = ['amity-university-online', 'nmims-online', 'manipal-university-jaipur-online', 'lovely-professional-university-online', 'chandigarh-university-online']
+  const premiumIds = ['manipal-academy-higher-education-online', 'symbiosis-university-online', 'amrita-vishwa-vidyapeetham-online', 'jain-university-online', 'bits-pilani-online', 'dr-dy-patil-vidyapeeth-online']
+  const mcaPrograms = COUPONS.filter(c => c.program === 'MCA')
+
+  const top5 = COUPONS.filter(c => top5Ids.includes(c.universityId) && c.program !== 'MCA')
+  const premium = COUPONS.filter(c => premiumIds.includes(c.universityId) && c.program !== 'MCA' && !top5Ids.includes(c.universityId))
+  const usedIds = new Set([...top5.map(c => c.code), ...premium.map(c => c.code), ...mcaPrograms.map(c => c.code)])
+  const budget = COUPONS.filter(c => !usedIds.has(c.code))
+
+  return { top5, premium, budget, mca: mcaPrograms }
 }
