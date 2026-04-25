@@ -2,7 +2,7 @@ import { notFound, permanentRedirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ChevronRight, BookOpen, Award, Users, Briefcase, TrendingUp } from 'lucide-react'
-import { formatFeeSlim as formatFee } from '@/lib/data-slim'
+import { formatFeeSlim as formatFee, PREFERRED_UNI_IDS } from '@/lib/data-slim'
 import { getShortUniversityName } from '@/lib/format'
 import { PROGRAM_META } from '@/lib/data-client'
 import { getAllSpecs, getUniversitiesByProgram, UNIVERSITIES, specName as getSpecName } from '@/lib/data'
@@ -81,7 +81,9 @@ export async function generateMetadata(
     ? (specEntry ? getSpecContent(specEntry.contentKey) : null) || getSpecContent(activeSpec)
     : null
 
-  const uniCount = getUniversitiesByProgram(program).length
+  const allUnis = getUniversitiesByProgram(program)
+  // For MBA, use PREFERRED_UNI_IDS count (what the page actually shows)
+  const uniCount = program === 'MBA' ? allUnis.filter(u => PREFERRED_UNI_IDS.includes(u.id)).length : allUnis.length
 
   const title = specContent?.metaTitle
     || (activeSpec
