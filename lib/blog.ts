@@ -676,14 +676,17 @@ export const BLOG_POSTS: BlogPost[] = [
     <li>Honest feedback from working professionals already enrolled</li>
     <li>One counsellor, one conversation, done</li>
   </ul>
-  <form class="cta-form" action="https://formspree.io/f/mojpvgwz" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="tel" name="phone" placeholder="Phone Number" required />
-    <input type="text" name="experience" placeholder="Years of Work Experience" required />
-    <input type="hidden" name="_subject" value="New Lead — Online MBA Working Professionals Blog" />
-    <input type="hidden" name="_next" value="https://edifyedu.in" />
-    <button type="submit">Send Me the List</button>
-  </form>
+  <div class="cta-form" id="cta-mba-professionals-form">
+    <input type="text" id="cta-mba-professionals-name" placeholder="Your Name" />
+    <input type="tel" id="cta-mba-professionals-phone" placeholder="Phone Number" inputmode="numeric" />
+    <input type="email" id="cta-mba-professionals-email" placeholder="Email (optional)" style="display:none" />
+    <button type="button" class="cta-submit" onclick="submitInlineCTA('mba-professionals')">Send Me the List</button>
+  </div>
+  <div id="cta-mba-professionals-success" style="display:none;text-align:center;padding:12px 0">
+    <div style="font-size:24px;margin-bottom:8px">&#10003;</div>
+    <p style="font-weight:700;margin:0 0 4px">Got it. We will call you within 2 hours.</p>
+    <p style="font-size:13px;color:#94a3b8;margin:0">Keep your phone handy.</p>
+  </div>
   <p class="cta-note">We respond within 24 hours. Your number won't be shared or spammed.</p>
 </div>
 
@@ -842,13 +845,17 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="cta-box" style="background:#0C2A55;color:#fff;padding:24px;border-radius:16px;margin:20px 0">
 <h4 style="margin:0 0 8px;font-size:16px">Get Free Counselling</h4>
 <p style="font-size:13px;color:#94a3b8;margin:0 0 14px">No commissions. No spam. Just honest guidance.</p>
-<form action="https://formspree.io/f/mojpvgwz" method="POST" style="display:flex;flex-direction:column;gap:8px">
-<input type="text" name="name" placeholder="Your Name" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="name">
-<input type="tel" name="phone" placeholder="WhatsApp Number" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="tel">
-<input type="email" name="email" placeholder="Email" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="email">
-<input type="hidden" name="source" value="NMIMS Blog CTA">
-<button type="submit" style="padding:12px;border-radius:8px;border:none;background:#f59e0b;color:#0C2A55;font-weight:700;font-size:14px;cursor:pointer">Book My Free Call</button>
-</form>
+<div class="cta-form" id="cta-nmims-blog-cta-form" style="display:flex;flex-direction:column;gap:8px">
+    <input type="text" id="cta-nmims-blog-cta-name" placeholder="Your Name" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="name">
+    <input type="tel" id="cta-nmims-blog-cta-phone" placeholder="WhatsApp Number" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="tel" inputmode="numeric">
+    <input type="email" id="cta-nmims-blog-cta-email" placeholder="Email" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="email">
+    <button type="button" onclick="submitInlineCTA('nmims-blog-cta')" style="padding:12px;border-radius:8px;border:none;background:#f59e0b;color:#0C2A55;font-weight:700;font-size:14px;cursor:pointer">Book My Free Call</button>
+  </div>
+  <div id="cta-nmims-blog-cta-success" style="display:none;text-align:center;padding:16px 0">
+    <div style="width:48px;height:48px;border-radius:50%;background:#16a34a;color:#fff;font-size:24px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">&#10003;</div>
+    <p style="font-size:16px;font-weight:700;color:#fff;margin:0 0 4px">Got it. We will call you within 2 hours.</p>
+    <p style="font-size:13px;color:#94a3b8;margin:0">Keep your phone handy.</p>
+  </div>
 </div>
 </div>
 
@@ -917,13 +924,17 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="cta-box" style="background:#0C2A55;color:#fff;padding:24px;border-radius:16px;margin:20px 0">
 <h4 style="margin:0 0 8px;font-size:16px">Get Free Counselling</h4>
 <p style="font-size:13px;color:#94a3b8;margin:0 0 14px">No commissions. No spam. Just honest guidance.</p>
-<form action="https://formspree.io/f/mojpvgwz" method="POST" style="display:flex;flex-direction:column;gap:8px">
-<input type="text" name="name" placeholder="Your Name" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="name">
-<input type="tel" name="phone" placeholder="WhatsApp Number" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="tel">
-<input type="email" name="email" placeholder="Email" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="email">
-<input type="hidden" name="source" value="NMIMS Blog CTA">
-<button type="submit" style="padding:12px;border-radius:8px;border:none;background:#f59e0b;color:#0C2A55;font-weight:700;font-size:14px;cursor:pointer">Book My Free Call</button>
-</form>
+<div class="cta-form" id="cta-nmims-blog-cta-form" style="display:flex;flex-direction:column;gap:8px">
+    <input type="text" id="cta-nmims-blog-cta-name" placeholder="Your Name" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="name">
+    <input type="tel" id="cta-nmims-blog-cta-phone" placeholder="WhatsApp Number" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="tel" inputmode="numeric">
+    <input type="email" id="cta-nmims-blog-cta-email" placeholder="Email" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="email">
+    <button type="button" onclick="submitInlineCTA('nmims-blog-cta')" style="padding:12px;border-radius:8px;border:none;background:#f59e0b;color:#0C2A55;font-weight:700;font-size:14px;cursor:pointer">Book My Free Call</button>
+  </div>
+  <div id="cta-nmims-blog-cta-success" style="display:none;text-align:center;padding:16px 0">
+    <div style="width:48px;height:48px;border-radius:50%;background:#16a34a;color:#fff;font-size:24px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">&#10003;</div>
+    <p style="font-size:16px;font-weight:700;color:#fff;margin:0 0 4px">Got it. We will call you within 2 hours.</p>
+    <p style="font-size:13px;color:#94a3b8;margin:0">Keep your phone handy.</p>
+  </div>
 </div>
 </div>
 
@@ -978,13 +989,17 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="cta-box" style="background:#0C2A55;color:#fff;padding:24px;border-radius:16px;margin:20px 0">
 <h4 style="margin:0 0 8px;font-size:16px">Get Free Counselling</h4>
 <p style="font-size:13px;color:#94a3b8;margin:0 0 14px">No commissions. No spam. Just honest guidance.</p>
-<form action="https://formspree.io/f/mojpvgwz" method="POST" style="display:flex;flex-direction:column;gap:8px">
-<input type="text" name="name" placeholder="Your Name" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="name">
-<input type="tel" name="phone" placeholder="WhatsApp Number" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="tel">
-<input type="email" name="email" placeholder="Email" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="email">
-<input type="hidden" name="source" value="NMIMS Blog CTA">
-<button type="submit" style="padding:12px;border-radius:8px;border:none;background:#f59e0b;color:#0C2A55;font-weight:700;font-size:14px;cursor:pointer">Book My Free Call</button>
-</form>
+<div class="cta-form" id="cta-nmims-blog-cta-form" style="display:flex;flex-direction:column;gap:8px">
+    <input type="text" id="cta-nmims-blog-cta-name" placeholder="Your Name" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="name">
+    <input type="tel" id="cta-nmims-blog-cta-phone" placeholder="WhatsApp Number" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="tel" inputmode="numeric">
+    <input type="email" id="cta-nmims-blog-cta-email" placeholder="Email" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="email">
+    <button type="button" onclick="submitInlineCTA('nmims-blog-cta')" style="padding:12px;border-radius:8px;border:none;background:#f59e0b;color:#0C2A55;font-weight:700;font-size:14px;cursor:pointer">Book My Free Call</button>
+  </div>
+  <div id="cta-nmims-blog-cta-success" style="display:none;text-align:center;padding:16px 0">
+    <div style="width:48px;height:48px;border-radius:50%;background:#16a34a;color:#fff;font-size:24px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">&#10003;</div>
+    <p style="font-size:16px;font-weight:700;color:#fff;margin:0 0 4px">Got it. We will call you within 2 hours.</p>
+    <p style="font-size:13px;color:#94a3b8;margin:0">Keep your phone handy.</p>
+  </div>
 </div>
 </div>
 
@@ -1033,13 +1048,17 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="cta-box" style="background:#0C2A55;color:#fff;padding:24px;border-radius:16px;margin:20px 0">
 <h4 style="margin:0 0 8px;font-size:16px">Get Free Counselling</h4>
 <p style="font-size:13px;color:#94a3b8;margin:0 0 14px">No commissions. No spam. Just honest guidance.</p>
-<form action="https://formspree.io/f/mojpvgwz" method="POST" style="display:flex;flex-direction:column;gap:8px">
-<input type="text" name="name" placeholder="Your Name" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="name">
-<input type="tel" name="phone" placeholder="WhatsApp Number" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="tel">
-<input type="email" name="email" placeholder="Email" required style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="email">
-<input type="hidden" name="source" value="NMIMS Blog CTA">
-<button type="submit" style="padding:12px;border-radius:8px;border:none;background:#f59e0b;color:#0C2A55;font-weight:700;font-size:14px;cursor:pointer">Book My Free Call</button>
-</form>
+<div class="cta-form" id="cta-nmims-blog-cta-form" style="display:flex;flex-direction:column;gap:8px">
+    <input type="text" id="cta-nmims-blog-cta-name" placeholder="Your Name" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="name">
+    <input type="tel" id="cta-nmims-blog-cta-phone" placeholder="WhatsApp Number" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="tel" inputmode="numeric">
+    <input type="email" id="cta-nmims-blog-cta-email" placeholder="Email" style="padding:10px 12px;border-radius:8px;border:none;font-size:14px" autocomplete="email">
+    <button type="button" onclick="submitInlineCTA('nmims-blog-cta')" style="padding:12px;border-radius:8px;border:none;background:#f59e0b;color:#0C2A55;font-weight:700;font-size:14px;cursor:pointer">Book My Free Call</button>
+  </div>
+  <div id="cta-nmims-blog-cta-success" style="display:none;text-align:center;padding:16px 0">
+    <div style="width:48px;height:48px;border-radius:50%;background:#16a34a;color:#fff;font-size:24px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">&#10003;</div>
+    <p style="font-size:16px;font-weight:700;color:#fff;margin:0 0 4px">Got it. We will call you within 2 hours.</p>
+    <p style="font-size:13px;color:#94a3b8;margin:0">Keep your phone handy.</p>
+  </div>
 </div>
 </div>
     `,
@@ -4254,14 +4273,17 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="cta-block">
   <h3>Considering LPU Online MBA?</h3>
   <p class="sub">Get a personalised fee breakdown, EMI options, and a comparison with 2–3 alternatives at similar price points. One call, no pressure.</p>
-  <form class="cta-form" action="https://formspree.io/f/mojpvgwz" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="tel" name="phone" placeholder="Phone Number" required />
-    <input type="text" name="experience" placeholder="Years of Work Experience" required />
-    <input type="hidden" name="_subject" value="New Lead: LPU Online MBA Review Blog" />
-    <input type="hidden" name="_next" value="https://edifyedu.in" />
-    <button type="submit">Get a Free Counselling Call</button>
-  </form>
+  <div class="cta-form" id="cta-lpu-blog-form">
+    <input type="text" id="cta-lpu-blog-name" placeholder="Your Name" />
+    <input type="tel" id="cta-lpu-blog-phone" placeholder="Phone Number" inputmode="numeric" />
+    <input type="email" id="cta-lpu-blog-email" placeholder="Email (optional)" style="display:none" />
+    <button type="button" class="cta-submit" onclick="submitInlineCTA('lpu-blog')">Get a Free Counselling Call</button>
+  </div>
+  <div id="cta-lpu-blog-success" style="display:none;text-align:center;padding:12px 0">
+    <div style="font-size:24px;margin-bottom:8px">&#10003;</div>
+    <p style="font-weight:700;margin:0 0 4px">Got it. We will call you within 2 hours.</p>
+    <p style="font-size:13px;color:#94a3b8;margin:0">Keep your phone handy.</p>
+  </div>
   <p class="cta-note">We respond within 24 hours. Your number won't be shared or spammed.</p>
 </div>
 
@@ -8464,13 +8486,20 @@ export const BLOG_POSTS: BlogPost[] = [
 <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:28px 32px;margin:32px 0;text-align:center">
   <p style="font-size:16px;font-weight:700;color:#1e3a8a;margin:0 0 8px">Comparing Amity's ₹2.07L against 3-4 other options?</p>
   <p style="font-size:14px;color:#64748b;margin:0 0 18px">We'll send you a free side-by-side comparison in 2 hours. Amity vs NMIMS vs MAHE vs your top 2 picks. No spam, no sales pitch, just the numbers. EdifyEdu earns zero commissions from Amity.</p>
-  <form action="https://formspree.io/f/mojpvgwz" method="POST" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:500px;margin:0 auto">
-    <input type="text" name="name" placeholder="Your Name" required style="flex:1;min-width:140px;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:14px" />
-    <input type="tel" name="phone" placeholder="WhatsApp Number" required style="flex:1;min-width:140px;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:14px" />
-    <input type="email" name="email" placeholder="Email" required style="flex:1;min-width:200px;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:14px" />
-    <input type="hidden" name="source" value="amity-blog-pos1-fee-compare" />
-    <button type="submit" style="padding:12px 24px;border-radius:8px;border:none;background:#f97316;color:#fff;font-weight:700;font-size:14px;cursor:pointer;width:100%">Get My Free Comparison</button>
-  </form>
+  <div class="cta-form" id="cta-amity-blog-pos1-fee-compare-form">
+    <div class="cta-fields">
+      <input type="text" id="cta-amity-blog-pos1-fee-compare-name" placeholder="Your Name" autocomplete="name" />
+      <input type="tel" id="cta-amity-blog-pos1-fee-compare-phone" placeholder="WhatsApp Number" autocomplete="tel" inputmode="numeric" />
+      <input type="email" id="cta-amity-blog-pos1-fee-compare-email" placeholder="Email (optional)" autocomplete="email" />
+    </div>
+    <button type="button" class="cta-submit" onclick="submitInlineCTA('amity-blog-pos1-fee-compare')">Get My Free Comparison</button>
+    <p class="cta-trust">No spam. No sales pitch. We respond within 2 hours.</p>
+  </div>
+  <div class="cta-success" id="cta-amity-blog-pos1-fee-compare-success" style="display:none">
+    <div class="cta-success-icon">&#10003;</div>
+    <h4>Got it. We will call you within 2 hours.</h4>
+    <p>Keep your phone handy. The call comes from a +91 number.</p>
+  </div>
 </div>
 
 <h2 id="distance-vs-online">Amity Distance MBA vs Online MBA: What's Different</h2>
@@ -8625,13 +8654,20 @@ export const BLOG_POSTS: BlogPost[] = [
 <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
   <p style="font-size:16px;font-weight:700;color:#0c4a6e;margin:0 0 8px">Still on the fence between Amity, NMIMS, and MAHE?</p>
   <p style="font-size:14px;color:#64748b;margin:0 0 18px">Talk to our independent counsellor in a free 15-minute call. We do not earn referral commissions from any university. Advice is purely based on your career goal.</p>
-  <form action="https://formspree.io/f/mojpvgwz" method="POST" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:500px;margin:0 auto">
-    <input type="text" name="name" placeholder="Your Name" required style="flex:1;min-width:140px;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:14px" />
-    <input type="tel" name="phone" placeholder="WhatsApp Number" required style="flex:1;min-width:140px;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:14px" />
-    <input type="email" name="email" placeholder="Email" required style="flex:1;min-width:200px;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:14px" />
-    <input type="hidden" name="source" value="amity-blog-pos2-comparison" />
-    <button type="submit" style="padding:12px 24px;border-radius:8px;border:none;background:#f97316;color:#fff;font-weight:700;font-size:14px;cursor:pointer;width:100%">Book My Free Call</button>
-  </form>
+  <div class="cta-form" id="cta-amity-blog-pos2-comparison-form">
+    <div class="cta-fields">
+      <input type="text" id="cta-amity-blog-pos2-comparison-name" placeholder="Your Name" autocomplete="name" />
+      <input type="tel" id="cta-amity-blog-pos2-comparison-phone" placeholder="WhatsApp Number" autocomplete="tel" inputmode="numeric" />
+      <input type="email" id="cta-amity-blog-pos2-comparison-email" placeholder="Email (optional)" autocomplete="email" />
+    </div>
+    <button type="button" class="cta-submit" onclick="submitInlineCTA('amity-blog-pos2-comparison')">Book My Free Call</button>
+    <p class="cta-trust">No spam. No sales pitch. We respond within 2 hours.</p>
+  </div>
+  <div class="cta-success" id="cta-amity-blog-pos2-comparison-success" style="display:none">
+    <div class="cta-success-icon">&#10003;</div>
+    <h4>Got it. We will call you within 2 hours.</h4>
+    <p>Keep your phone handy. The call comes from a +91 number.</p>
+  </div>
 </div>
 
 <h2 id="placements">Amity Online MBA Placements: What You Can Actually Expect</h2>
@@ -8687,13 +8723,20 @@ export const BLOG_POSTS: BlogPost[] = [
 <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
   <p style="font-size:16px;font-weight:700;color:#9a3412;margin:0 0 8px">Read something here that worried you? Better to know before paying ₹2 lakh.</p>
   <p style="font-size:14px;color:#64748b;margin:0 0 18px">Free 15-min conversation about your specific career goal. Free means free. We will not pitch you Amity or anyone else unless it genuinely fits.</p>
-  <form action="https://formspree.io/f/mojpvgwz" method="POST" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:500px;margin:0 auto">
-    <input type="text" name="name" placeholder="Your Name" required style="flex:1;min-width:140px;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:14px" />
-    <input type="tel" name="phone" placeholder="WhatsApp Number" required style="flex:1;min-width:140px;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:14px" />
-    <input type="email" name="email" placeholder="Email" required style="flex:1;min-width:200px;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:14px" />
-    <input type="hidden" name="source" value="amity-blog-pos3-concerns" />
-    <button type="submit" style="padding:12px 24px;border-radius:8px;border:none;background:#f97316;color:#fff;font-weight:700;font-size:14px;cursor:pointer;width:100%">Get Free Guidance</button>
-  </form>
+  <div class="cta-form" id="cta-amity-blog-pos3-concerns-form">
+    <div class="cta-fields">
+      <input type="text" id="cta-amity-blog-pos3-concerns-name" placeholder="Your Name" autocomplete="name" />
+      <input type="tel" id="cta-amity-blog-pos3-concerns-phone" placeholder="WhatsApp Number" autocomplete="tel" inputmode="numeric" />
+      <input type="email" id="cta-amity-blog-pos3-concerns-email" placeholder="Email (optional)" autocomplete="email" />
+    </div>
+    <button type="button" class="cta-submit" onclick="submitInlineCTA('amity-blog-pos3-concerns')">Get Free Guidance</button>
+    <p class="cta-trust">No spam. No sales pitch. We respond within 2 hours.</p>
+  </div>
+  <div class="cta-success" id="cta-amity-blog-pos3-concerns-success" style="display:none">
+    <div class="cta-success-icon">&#10003;</div>
+    <h4>Got it. We will call you within 2 hours.</h4>
+    <p>Keep your phone handy. The call comes from a +91 number.</p>
+  </div>
 </div>
 
 <h2 id="worth-it">Is Amity Online MBA Worth It? The Honest Verdict</h2>

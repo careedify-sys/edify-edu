@@ -1,5 +1,6 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Home, Search, BarChart2, Phone } from 'lucide-react'
@@ -16,6 +17,17 @@ const TABS = [
 
 export default function BottomNav() {
   const path = usePathname()
+  const [hidden, setHidden] = useState(false)
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setHidden(document.body.style.overflow === 'hidden')
+    })
+    observer.observe(document.body, { attributes: true, attributeFilter: ['style'] })
+    return () => observer.disconnect()
+  }, [])
+
+  if (hidden) return null
 
   return (
     <nav

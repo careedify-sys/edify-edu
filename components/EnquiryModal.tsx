@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import { createPortal } from 'react-dom'
 import { X, Send, MessageCircle, CheckCircle, Loader2, Mail, User, BookOpen, Building2, Tag } from 'lucide-react'
 
 interface EnquiryModalProps {
@@ -30,6 +31,9 @@ export default function EnquiryModal({
   couponCode,
   couponDiscount,
 }: EnquiryModalProps) {
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => { setMounted(true) }, [])
+
   const [step, setStep] = useState<Step>('form')
   const [form, setForm] = useState({
     name: '',
@@ -125,12 +129,12 @@ export default function EnquiryModal({
     window.open(`https://wa.me/${wa}?text=${msg}`, '_blank')
   }
 
-  if (!isOpen) return null
+  if (!isOpen || !mounted) return null
 
-  return (
+  const modalContent = (
     <div
       className="fixed inset-0 flex items-end sm:items-center justify-center p-0 sm:p-4"
-      style={{ zIndex: 9999 }}
+      style={{ zIndex: 2147483647 }}
       onClick={e => { if (e.target === e.currentTarget) onClose() }}
     >
       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={onClose} />
@@ -370,4 +374,6 @@ export default function EnquiryModal({
       </div>
     </div>
   )
+
+  return createPortal(modalContent, document.body)
 }
