@@ -331,13 +331,19 @@ export default function UniversityPageClient({ university: u }: Props) {
                     <div className="text-xs text-ink-3 uppercase tracking-wider">NAAC Grade</div>
                     <div className="font-bold text-navy">{u.naac}</div>
                   </div>
-                  {u.nirf > 0 && u.nirf < 200 && (
+                  {u.nirfMgt && u.nirfMgt > 0 && u.nirfMgt < 200 ? (
                     <div className="bg-surface-2 rounded-lg p-4 text-center">
                       <div className="text-2xl mb-2">🏆</div>
-                      <div className="text-xs text-ink-3 uppercase tracking-wider">NIRF Rank</div>
+                      <div className="text-xs text-ink-3 uppercase tracking-wider">NIRF Management</div>
+                      <div className="font-bold text-navy">#{u.nirfMgt}</div>
+                    </div>
+                  ) : u.nirf > 0 && u.nirf < 200 ? (
+                    <div className="bg-surface-2 rounded-lg p-4 text-center">
+                      <div className="text-2xl mb-2">🏆</div>
+                      <div className="text-xs text-ink-3 uppercase tracking-wider">NIRF University</div>
                       <div className="font-bold text-navy">#{u.nirf}</div>
                     </div>
-                  )}
+                  ) : null}
                 </div>
               </section>
               
@@ -591,7 +597,7 @@ export default function UniversityPageClient({ university: u }: Props) {
                       >
                         <div className="font-bold text-navy mb-1">{ou.name}</div>
                         <div className="text-xs text-ink-3 mb-2">
-                          {ou.nirf < 100 ? `NIRF #${ou.nirf} · ` : ''}{ou.naac}
+                          {ou.nirfMgt && ou.nirfMgt > 0 && ou.nirfMgt < 200 ? `NIRF #${ou.nirfMgt} Mgmt · ` : ou.nirf > 0 && ou.nirf < 100 ? `NIRF #${ou.nirf} Univ · ` : ''}{ou.naac}
                         </div>
                         <div className="flex justify-between text-sm">
                           <span className="text-ink-2">Fees: <strong>{formatFee(ou.feeMin)}+</strong></span>

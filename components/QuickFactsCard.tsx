@@ -12,7 +12,7 @@ export default function QuickFactsCard({ u, pd, program }: Props) {
     { icon: Clock, label: 'Duration', value: pd.duration || '2 Years' },
     { icon: Monitor, label: 'Mode', value: '100% Online' },
     { icon: Award, label: 'NAAC Grade', value: u.naac },
-    ...(u.nirf > 0 && u.nirf < 500 ? [{ icon: BarChart2, label: 'NIRF Rank', value: `#${u.nirf}` }] : []),
+    ...((u as any).nirfMgt && (u as any).nirfMgt > 0 && (u as any).nirfMgt < 200 ? [{ icon: BarChart2, label: 'NIRF Management', value: `#${(u as any).nirfMgt}` }] : u.nirf > 0 && u.nirf < 500 ? [{ icon: BarChart2, label: 'NIRF University', value: `#${u.nirf}` }] : []),
     { icon: GraduationCap, label: 'Degree', value: `${program} (Regular)` },
     { icon: CheckCircle, label: 'Approval', value: 'UGC DEB' },
   ]

@@ -342,7 +342,7 @@ export default function AdminPage() {
                 <div className="flex justify-between items-start mb-2">
                   <div className="flex-1 min-w-0 pr-2">
                     <div className="font-bold text-white text-[13px]">{u.name}</div>
-                    <div className="text-[11px] text-ink-3 mt-0.5">{u.city}, {u.state} · NIRF #{u.nirf} · {u.naac}</div>
+                    <div className="text-[11px] text-ink-3 mt-0.5">{u.city}, {u.state} · {u.nirfMgt && u.nirfMgt > 0 && u.nirfMgt < 200 ? `NIRF #${u.nirfMgt} Mgmt` : u.nirf > 0 && u.nirf < 200 ? `NIRF #${u.nirf} Univ` : 'Unranked'} · {u.naac}</div>
                   </div>
                   <button onClick={()=>{setEditUni({...u});setIsNewUni(false)}}
                     style={{background:'rgba(201,146,42,0.1)',border:'1px solid rgba(201,146,42,0.2)',borderRadius:'var(--r-xs)',padding:'5px 10px',color:'var(--amber-text)',cursor:'pointer',fontSize:11,fontWeight:600,flexShrink:0}}>

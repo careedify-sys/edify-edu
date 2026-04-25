@@ -119,10 +119,10 @@ const TOP_10 = [
     rank: 1,
     id: 'manipal-academy-higher-education-online',
     name: 'MAHE Manipal Online',
-    nirf: 3,
+    nirf: 3, nirfLabel: '#3 University',
     naac: 'A++',
-    fee: '₹68K–₹2.75L',
-    emi: '₹2,500/mo',
+    fee: '₹2.92L',
+    emi: '₹12,167/mo',
     bestFor: 'Brand + Ranking',
     specs: ['Finance', 'Marketing', 'Business Analytics', 'Data Science', 'HR'],
     badge: 'QS #32 Asia',
@@ -177,8 +177,8 @@ const TOP_10 = [
     name: 'Amity University Online',
     nirf: 22,
     naac: 'A+',
-    fee: '₹1.99L',
-    emi: '₹2,200/mo',
+    fee: '₹2.07L',
+    emi: '₹8,625/mo',
     bestFor: 'Brand Recognition',
     specs: ['Finance', 'Marketing', 'HR', 'International Business', 'Data Science'],
     badge: 'WES Recognised',
@@ -217,13 +217,13 @@ const TOP_10 = [
     rank: 8,
     id: 'nmims-online',
     name: 'NMIMS Online',
-    nirf: 52,
+    nirf: 17, nirfLabel: '#17 Management',
     naac: 'A++',
     fee: '₹2.2L',
     emi: '₹2,500/mo',
     bestFor: 'Management Depth',
     specs: ['Marketing Management', 'Finance', 'HR', 'Operations & Data Sciences'],
-    badge: 'NIRF Mgmt #24',
+    badge: 'NIRF #17 Mgmt',
     badgeColor: '#1a5f9a',
     badgeBg: '#e8f4fd',
   },
@@ -376,7 +376,7 @@ export default function BestOnlineMBAPage() {
                         </span>
                       </div>
                       <div className="flex flex-wrap gap-3 text-xs text-ink-2 mb-2">
-                        <span className="font-semibold" style={{ color: '#1a5f9a' }}>NIRF #{u.nirf}</span>
+                        <span className="font-semibold" style={{ color: '#1a5f9a' }}>NIRF {(u as any).nirfLabel || `#${u.nirf} University`}</span>
                         <span className="font-semibold" style={{ color: '#16a34a' }}>NAAC {u.naac}</span>
                         <span>Best for: <strong className="text-ink-1">{u.bestFor}</strong></span>
                       </div>
@@ -438,7 +438,7 @@ export default function BestOnlineMBAPage() {
                       <td className="px-4 py-3 font-medium text-navy text-xs">
                         <Link href={`/universities/${u.id}/mba`} className="hover:text-amber no-underline">{u.name}</Link>
                       </td>
-                      <td className="px-4 py-3 text-center text-xs font-bold" style={{ color: '#1a5f9a' }}>#{u.nirf}</td>
+                      <td className="px-4 py-3 text-center text-xs font-bold" style={{ color: '#1a5f9a' }}>{(u as any).nirfLabel || `#${u.nirf} Univ`}</td>
                       <td className="px-4 py-3 text-center text-xs font-bold" style={{ color: '#16a34a' }}>{u.naac}</td>
                       <td className="px-4 py-3 text-center text-xs font-semibold text-navy">{u.fee}</td>
                       <td className="px-4 py-3 text-center"><CheckCircle className="w-4 h-4 text-sage mx-auto" /></td>
