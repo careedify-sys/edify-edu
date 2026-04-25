@@ -129,19 +129,22 @@ export default function EnquiryModal({
 
   return (
     <div
-      className="fixed inset-0 z-[var(--z-modal)] flex items-end sm:items-center justify-center p-0 sm:p-4"
+      className="fixed inset-0 flex items-end sm:items-center justify-center p-0 sm:p-4"
+      style={{ zIndex: 9999 }}
       onClick={e => { if (e.target === e.currentTarget) onClose() }}
     >
       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={onClose} />
 
       <div
         ref={modalRef}
-        className="relative bg-white w-full sm:max-w-lg rounded-t-3xl sm:rounded-2xl shadow-2xl overflow-hidden animate-slide-up"
+        className="relative bg-white w-full sm:max-w-lg rounded-t-3xl sm:rounded-2xl shadow-2xl overflow-hidden animate-slide-up flex flex-col"
+        style={{ maxHeight: '90vh' }}
       >
-        <div className="h-1.5 bg-gradient-to-r from-orange-400 to-orange-600" />
+        {/* Orange accent bar */}
+        <div className="h-1.5 bg-gradient-to-r from-orange-400 to-orange-600 flex-shrink-0" />
 
-        {/* Header */}
-        <div className="flex items-start justify-between px-6 pt-5 pb-4 border-b border-slate-100">
+        {/* Header — does NOT scroll */}
+        <div className="flex items-start justify-between px-6 pt-5 pb-4 border-b border-slate-100 flex-shrink-0">
           <div>
             <h2 className="font-display text-xl font-bold text-slate-900">
               {step === 'success' ? 'Enquiry Received!' : 'Speak with an Advisor'}
@@ -164,7 +167,7 @@ export default function EnquiryModal({
 
         {/* ── FORM ── */}
         {step === 'form' && (
-          <div className="px-6 py-5 space-y-4 max-h-[70vh] overflow-y-auto">
+          <div className="flex-1 overflow-y-auto px-6 py-5 space-y-4">
 
             {/* Full Name */}
             <div>
@@ -344,7 +347,7 @@ export default function EnquiryModal({
 
         {/* ── FOOTER (form step only) ── */}
         {step === 'form' && (
-          <div className="px-6 pb-6 pt-3 border-t border-slate-100 bg-white">
+          <div className="px-6 pb-6 pt-3 border-t border-slate-100 bg-white flex-shrink-0">
             <button
               onClick={handleSubmit}
               className="w-full flex items-center justify-center gap-2 bg-orange-500 text-white py-3.5 rounded-xl font-bold text-sm hover:bg-orange-600 transition-colors shadow-md"
