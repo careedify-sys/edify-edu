@@ -21,7 +21,7 @@ export default function FloatingCTA() {
           <span>Speak with an Advisor</span>
         </button>
       </div>
-      <EnquiryModal isOpen={open} onClose={() => setOpen(false)} />
+      <EnquiryModal isOpen={open} onClose={() => setOpen(false)} sourcePage={typeof window!=="undefined"?window.location.pathname:"website"} />
     </>
   )
 }

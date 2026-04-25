@@ -49,7 +49,7 @@ export function EntryPopup() {
           </button>
         </div>
       </div>
-      <EnquiryModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+      <EnquiryModal isOpen={modalOpen} onClose={() => setModalOpen(false)} sourcePage={typeof window!=="undefined"?window.location.pathname:"website"} />
     </>
   )
 }
@@ -102,7 +102,7 @@ export function ExitIntentPopup() {
           </button>
         </div>
       </div>
-      <EnquiryModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+      <EnquiryModal isOpen={modalOpen} onClose={() => setModalOpen(false)} sourcePage={typeof window!=="undefined"?window.location.pathname:"website"} />
     </>
   )
 }
@@ -150,7 +150,7 @@ export function MidScrollPopup({ universityName }: { universityName?: string }) 
         </div>
       </div>
       <style>{`@keyframes slideUp{from{opacity:0;transform:translate(-50%,20px)}to{opacity:1;transform:translate(-50%,0)}}`}</style>
-      <EnquiryModal isOpen={modalOpen} onClose={() => setModalOpen(false)} universityName={universityName} />
+      <EnquiryModal isOpen={modalOpen} onClose={() => setModalOpen(false)} universityName={universityName} sourcePage={typeof window!=="undefined"?window.location.pathname:"website"} />
     </>
   )
 }
@@ -215,7 +215,7 @@ export function ScholarshipPopup({ universityName }: { universityName?: string }
         </div>
       </div>
       <style>{`@keyframes slideInRight{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:translateX(0)}}`}</style>
-      <EnquiryModal isOpen={modalOpen} onClose={() => setModalOpen(false)} universityName={universityName} />
+      <EnquiryModal isOpen={modalOpen} onClose={() => setModalOpen(false)} universityName={universityName} sourcePage={typeof window!=="undefined"?window.location.pathname:"website"} />
     </>
   )
 }
@@ -255,7 +255,7 @@ export function StickyBottomBar({ label, universityName }: { label?: string; uni
           🎓 {label || (universityName ? `Speak with an ${universityName.split(' ')[0]} Advisor` : 'Speak with an Advisor')}
         </button>
       </div>
-      <EnquiryModal isOpen={modalOpen} onClose={() => setModalOpen(false)} universityName={universityName} />
+      <EnquiryModal isOpen={modalOpen} onClose={() => setModalOpen(false)} universityName={universityName} sourcePage={typeof window!=="undefined"?window.location.pathname:"website"} />
     </>
   )
 }

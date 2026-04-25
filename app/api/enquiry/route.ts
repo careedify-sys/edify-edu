@@ -44,7 +44,7 @@ export async function POST(req: NextRequest) {
       resend.emails.send({
         from: 'EdifyEdu Leads <leads@edifyedu.in>',
         to: ['hello@edifyedu.in', 'rishiupadhyay4787@gmail.com'],
-        subject: `🎓 New Lead — ${name} | ${programValue} @ ${universityValue}`,
+        subject: `🎓 New Lead — ${name} | ${programValue} @ ${universityValue} | from: ${sourceValue}`,
         html: `
           <div style="font-family:sans-serif;max-width:500px">
             <h2 style="color:#0f172a">New Enquiry — EdifyEdu</h2>

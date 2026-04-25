@@ -57,7 +57,7 @@ export default function EdifyTrust({ compact = false }: { compact?: boolean }) {
             Start Your Free Evaluation →
           </button>
         </div>
-        <EnquiryModal isOpen={open} onClose={() => setOpen(false)} />
+        <EnquiryModal isOpen={open} onClose={() => setOpen(false)} sourcePage={typeof window!=="undefined"?window.location.pathname:"website"} />
       </>
     )
   }
@@ -108,7 +108,7 @@ export default function EdifyTrust({ compact = false }: { compact?: boolean }) {
           </div>
         </div>
       </section>
-      <EnquiryModal isOpen={open} onClose={() => setOpen(false)} />
+      <EnquiryModal isOpen={open} onClose={() => setOpen(false)} sourcePage={typeof window!=="undefined"?window.location.pathname:"website"} />
     </>
   )
 }

@@ -1147,9 +1147,7 @@ function CompareContent() {
       </div>
 
 
-      <EnquiryModal
-        isOpen={enquiryOpen}
-        onClose={() => setEnquiryOpen(false)}
+      <EnquiryModal isOpen={enquiryOpen} onClose={() => setEnquiryOpen(false)} sourcePage={typeof window!=="undefined"?window.location.pathname+" (compare)":"compare"}
         universityName={enquiryUni}
       />
 
