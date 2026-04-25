@@ -57,7 +57,7 @@ function getApprovalEntry(tag: string) {
   return null
 }
 
-export default function UniversityCard({ u, highlightProgram }: { u: UniversityCardData; highlightProgram?: string }) {
+export default function UniversityCard({ u, highlightProgram, specSlug }: { u: UniversityCardData; highlightProgram?: string; specSlug?: string }) {
   const [enquiryOpen, setEnquiryOpen] = useState(false)
 
   const location = u.city || u.region || 'India'
@@ -76,7 +76,7 @@ export default function UniversityCard({ u, highlightProgram }: { u: UniversityC
         {/* Color bar */}
         <div className="h-1 w-full shrink-0" style={{ background: u.color }} />
 
-        <Link href={`/universities/${u.id}`} aria-label={`View ${u.name} online programs`} className="block p-5 flex-1">
+        <Link href={specSlug ? `/universities/${u.id}/mba/${specSlug}` : `/universities/${u.id}`} aria-label={`View ${u.name} online programs`} className="block p-5 flex-1">
           {/* Header */}
           <div className="flex items-start justify-between mb-3">
             <div className="flex-1 min-w-0 pr-3">
@@ -211,7 +211,7 @@ export default function UniversityCard({ u, highlightProgram }: { u: UniversityC
 
         {/* Action buttons */}
         <div className="px-5 pb-4 flex gap-2">
-          <Link href={`/universities/${u.id}`}
+          <Link href={specSlug ? `/universities/${u.id}/mba/${specSlug}` : `/universities/${u.id}`}
             className="flex-1 text-center py-2.5 rounded-[var(--r-sm)] text-sm font-bold btn-primary">
             View Details →
           </Link>

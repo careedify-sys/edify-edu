@@ -190,7 +190,7 @@ export default function MBASpecHubClient({ specSlug, specName }: Props) {
         <p className="text-sm text-slate-500 mb-6">Sorted by NIRF 2025 rank. Click any university for detailed fees, syllabus, and programme information.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {mbaUnis.map(u => (
-            <UniversityCard key={u.id} u={u as any} highlightProgram="MBA" />
+            <UniversityCard key={u.id} u={u as any} highlightProgram="MBA" specSlug={specSlug} />
           ))}
         </div>
       </section>

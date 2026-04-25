@@ -251,7 +251,14 @@ export function uniHasSpec(specSlugs: string[], chipSlug: string): boolean {
 }
 
 export function getCanonicalSpec(slug: string): CanonicalSpec | undefined {
-  return CANONICAL_SPECS.find(s => s.slug === slug || s.variants.includes(slug))
+  // Exact match first
+  const exact = CANONICAL_SPECS.find(s => s.slug === slug)
+  if (exact) return exact
+  // Variant match
+  const variant = CANONICAL_SPECS.find(s => s.variants.includes(slug))
+  if (variant) return variant
+  // Partial slug match: e.g. "logistics-supply-chain" matches "logistics-supply-chain-management"
+  return CANONICAL_SPECS.find(s => s.slug.startsWith(slug) || slug.startsWith(s.slug))
 }
 
 export function getAllCanonicalSlugs(): string[] {
