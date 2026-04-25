@@ -3,7 +3,7 @@
 import { useMemo } from 'react'
 import Link from 'next/link'
 import { BadgeCheck, TrendingUp, BookOpen, Shield } from 'lucide-react'
-import { UNIS_SLIM, formatFeeSlim, PREFERRED_UNI_IDS } from '@/lib/data-slim'
+import { UNIS_SLIM, formatFeeSlim } from '@/lib/data-slim'
 import { getCanonicalSpec, type CanonicalSpec } from '@/lib/specMapping'
 import UniversityCard from '@/components/UniversityCard'
 
