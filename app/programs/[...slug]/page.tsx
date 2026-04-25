@@ -92,16 +92,28 @@ export async function generateMetadata(
   const allUnis = getUniversitiesByProgram(program)
   const uniCount = allUnis.length
 
+  // Get top 3 university brand names for SEO (sorted by NIRF)
+  const topBrands = activeSpec && program === 'MBA'
+    ? UNIVERSITIES.filter(u => u.programs.includes('MBA') && u.programDetails?.['MBA']?.specs?.some((s: any) => {
+        const name = typeof s === 'string' ? s : s.name
+        return name.toLowerCase().includes(activeSpec.toLowerCase().slice(0, 8))
+      })).sort((a, b) => (a.nirf < 200 ? a.nirf : 999) - (b.nirf < 200 ? b.nirf : 999)).slice(0, 3).map(u => u.abbr).join(', ')
+    : ''
+
   const title = specContent?.metaTitle
     || (activeSpec
-      ? `Best Online ${program} in ${activeSpec} ${year} — Fees, Colleges, Career | EdifyEdu`
+      ? program === 'MBA'
+        ? `Best Online MBA in ${activeSpec} ${year} — Fees, Colleges, Placements, Discounts | EdifyEdu`
+        : `Best Online ${program} in ${activeSpec} ${year} — Fees, Colleges, Career | EdifyEdu`
       : program === 'MBA'
         ? `Best Online MBA in India ${year} — ${uniCount} UGC-Approved Universities | EdifyEdu`
         : `Online ${program} India ${year} — Compare UGC Approved Universities | EdifyEdu`)
 
   const description = specContent?.metaDesc
     || (activeSpec
-      ? `Compare top UGC DEB approved online ${program} programs with ${activeSpec} specialisation in India ${year}. Check NIRF ranks, fees, career scope, and salary data.`
+      ? program === 'MBA'
+        ? `Compare online MBA in ${activeSpec} from ${topBrands || 'top universities'} and more. Fees, NIRF ranks, syllabus, career scope, salary data. ${uniCount}+ UGC approved. Independent comparison ${year}.`
+        : `Compare top UGC DEB approved online ${program} programs with ${activeSpec} specialisation in India ${year}. Check NIRF ranks, fees, career scope, and salary data.`
       : program === 'MBA'
         ? `Compare ${uniCount} UGC-DEB approved online MBAs by NIRF rank, fees (Rs 66K-3.7L), specialisations and placement. Independent reviews. Zero referral commissions. Updated April ${year}.`
         : `Explore all UGC approved online ${program} programs in India. Find real NIRF rankings, NAAC grades, and verified fees. Admissions for ${year}.`)
