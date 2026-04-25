@@ -1,3 +1,6 @@
+// ⚠️ DO NOT overwrite this file with CMS sync scripts.
+// Guide data lives in lib/guides.ts — this page imports from there.
+// If this file is regenerated with an empty local array, /guides will show blank.
 import Link from 'next/link'
 import { GUIDES } from '@/lib/guides'
 import type { Metadata } from 'next'
