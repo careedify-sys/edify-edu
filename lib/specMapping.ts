@@ -241,6 +241,21 @@ export const CANONICAL_SPECS: CanonicalSpec[] = [
     },
     watchOut: 'Recruiter network is narrower. Self-employment is the primary outcome.',
   },
+  {
+    slug: 'artificial-intelligence',
+    canonicalName: 'Online MBA AI & Machine Learning',
+    variants: ['Artificial Intelligence', 'AI & ML', 'AI and ML', 'AI for Business', 'AI for Finance', 'AI for Human Resources', 'AI for International Finance', 'AI for Marketing', 'Business Analytics & AI', 'Data Science & AI', 'Data Science and Artificial Intelligence', 'Machine Learning', 'AI & Machine Learning'],
+    careerTag: 'AI Strategy - ML Ops - AI Product Management',
+    icon: Brain,
+    relatedSpecs: ['data-science', 'business-analytics', 'it-management'],
+    domainDescription: 'Online MBA in AI and Machine Learning combines business strategy with artificial intelligence technology. Core areas include machine learning fundamentals, natural language processing, computer vision, AI ethics, and AI-driven business transformation. This specialisation suits professionals targeting AI product manager, ML strategy lead, or Chief AI Officer roles in technology, BFSI, healthcare, and e-commerce sectors.',
+    typicalRoles: {
+      entry: ['AI Analyst', 'ML Business Analyst', 'AI Product Associate', 'Data Science Trainee'],
+      mid: ['AI Product Manager', 'ML Strategy Lead', 'AI Transformation Manager', 'Chief AI Officer track'],
+      industries: ['Technology', 'BFSI', 'Healthcare AI', 'E-commerce', 'Consulting', 'Manufacturing AI'],
+    },
+    watchOut: 'Heavy technical overlap with data science. Verify if the curriculum is business-focused AI strategy or technical ML engineering.',
+  },
 ]
 
 export function uniHasSpec(specSlugs: string[], chipSlug: string): boolean {

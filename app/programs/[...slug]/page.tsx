@@ -47,6 +47,9 @@ const SPEC_SLUG_MAP: Record<string, { display: string; contentKey: string; keywo
   'logistics-supply-chain-management': { display: 'Logistics & Supply Chain Management', contentKey: 'logistics & supply chain', keywords: ['mba logistics supply chain management india 2026', 'online mba logistics supply chain', 'mba scm career salary india'] },
   'logistics-and-supply-chain-management': { display: 'Logistics and Supply Chain Management', contentKey: 'logistics & supply chain', keywords: ['mba logistics and supply chain management', 'online mba logistics india 2026'] },
   'operations-supply-chain-management': { display: 'Operations & Supply Chain Management', contentKey: 'operations & supply chain', keywords: ['mba operations supply chain india 2026', 'online mba operations scm'] },
+  'artificial-intelligence':       { display: 'AI & Machine Learning', contentKey: 'artificial intelligence', keywords: ['mba artificial intelligence india 2026', 'online mba ai ml', 'mba ai career salary', 'mba machine learning india'] },
+  'ai-ml':                         { display: 'AI & ML', contentKey: 'artificial intelligence', keywords: ['mba ai ml india 2026', 'online mba ai machine learning'] },
+  'ai-and-ml':                     { display: 'AI and ML', contentKey: 'artificial intelligence', keywords: ['mba ai and ml india 2026'] },
 }
 
 function findUniId(slug: string) {
@@ -79,8 +82,10 @@ export async function generateMetadata(
 
   const year = new Date().getFullYear()
 
-  // Use spec-specific metadata from content.ts when available
-  const specContent = activeSpec
+  // Use spec-specific metadata from content.ts — but ONLY for non-MBA programs
+  // MBA spec pages use specMapping.ts data via MBASpecHubClient, not content.ts
+  // content.ts maps MBA keys like 'it management' to MCA content ('cloud computing') which is wrong
+  const specContent = activeSpec && program !== 'MBA'
     ? (specEntry ? getSpecContent(specEntry.contentKey) : null) || getSpecContent(activeSpec)
     : null
 
