@@ -109,7 +109,7 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
           <div className="grid grid-cols-2 divide-x divide-slate-100">
             {[
               { label: 'University', vA: nameA, vB: nameB },
-              { label: 'NIRF Rank', vA: uA.nirf > 0 && uA.nirf < 200 ? `#${uA.nirf}` : 'Unranked', vB: uB.nirf > 0 && uB.nirf < 200 ? `#${uB.nirf}` : 'Unranked' },
+              { label: 'NIRF Management', vA: uA.nirfMgt && uA.nirfMgt > 0 && uA.nirfMgt < 200 ? `#${uA.nirfMgt} Management` : (uA.nirf > 0 && uA.nirf < 200 ? `#${uA.nirf} University` : 'Unranked'), vB: uB.nirfMgt && uB.nirfMgt > 0 && uB.nirfMgt < 200 ? `#${uB.nirfMgt} Management` : (uB.nirf > 0 && uB.nirf < 200 ? `#${uB.nirf} University` : 'Unranked') },
               { label: 'NAAC Grade', vA: uA.naac, vB: uB.naac },
               { label: 'Total Fees', vA: `${formatINR(uA.feeMin)} - ${formatINR(uA.feeMax)}`, vB: `${formatINR(uB.feeMin)} - ${formatINR(uB.feeMax)}` },
               { label: 'Duration', vA: pdA?.duration || '2 Years', vB: pdB?.duration || '2 Years' },
@@ -158,13 +158,13 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
           <div className="rounded-xl border border-slate-200 bg-white p-4">
             <p className="text-xs text-slate-400 mb-1">{nameA}</p>
             <p className="text-lg font-bold" style={{ color: '#0f2756' }}>
-              {uA.nirf > 0 && uA.nirf < 200 ? `NIRF #${uA.nirf}` : 'Not individually ranked'} · NAAC {uA.naac}
+              {uA.nirfMgt && uA.nirfMgt > 0 && uA.nirfMgt < 200 ? `NIRF #${uA.nirfMgt} Management` : (uA.nirf > 0 && uA.nirf < 200 ? `NIRF #${uA.nirf} University` : 'Not ranked')} · NAAC {uA.naac}
             </p>
           </div>
           <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
             <p className="text-xs text-amber-500 mb-1">{nameB}</p>
             <p className="text-lg font-bold text-amber-700">
-              {uB.nirf > 0 && uB.nirf < 200 ? `NIRF #${uB.nirf}` : 'Not individually ranked'} · NAAC {uB.naac}
+              {uB.nirfMgt && uB.nirfMgt > 0 && uB.nirfMgt < 200 ? `NIRF #${uB.nirfMgt} Management` : (uB.nirf > 0 && uB.nirf < 200 ? `NIRF #${uB.nirf} University` : 'Not ranked')} · NAAC {uB.naac}
             </p>
           </div>
         </div>

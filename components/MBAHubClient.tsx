@@ -171,7 +171,12 @@ export default function MBAHubClient() {
                       <h3 className="font-bold text-base" style={{ color: '#0B1533' }}>{uni.name.replace(/\s+Online$/i, '')}</h3>
                       <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-green-100 text-green-800">Rs {pick.fee}</span>
                       {uni.naac && <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">NAAC {uni.naac}</span>}
-                      {uni.nirf > 0 && uni.nirf < 200 && <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">NIRF #{uni.nirf}</span>}
+                      {(() => {
+                        const mgt = (uni as any).nirfMgt
+                        if (mgt && mgt > 0 && mgt < 200) return <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">NIRF #{mgt} Mgmt</span>
+                        if (uni.nirf > 0 && uni.nirf < 200) return <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">NIRF #{uni.nirf} Univ</span>
+                        return null
+                      })()}
                     </div>
                     <p className="text-sm text-slate-600">{pick.bestFor}</p>
                   </div>

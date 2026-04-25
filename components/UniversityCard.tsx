@@ -28,6 +28,7 @@ interface UniversityCardData extends Omit<UniSlim, 'city'> {
   city?: string
   state?: string
   nirfm?: number
+  nirfMgt?: number
   approvals?: string[]
   qsRank?: number
 }
@@ -92,12 +93,17 @@ export default function UniversityCard({ u, highlightProgram }: { u: UniversityC
               </div>
             </div>
             <div className="flex flex-col items-end gap-1 shrink-0">
-              {u.nirf > 0 && u.nirf < 200 && <span className="badge-nirf text-[10px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap">NIRF #{u.nirf} University</span>}
-              {u.nirfm && u.nirfm > 0 && u.nirfm < 200 && (
-                <span className="badge-nirfm text-[10px] font-semibold px-2 py-0.5 rounded-full whitespace-nowrap">
-                  NIRF #{u.nirfm} Mgmt
-                </span>
-              )}
+              {(() => {
+                const mgtRank = u.nirfMgt || u.nirfm
+                const hasMgt = mgtRank && mgtRank > 0 && mgtRank < 200
+                const hasUni = u.nirf > 0 && u.nirf < 200
+                return (
+                  <>
+                    {hasMgt && <span className="badge-nirfm text-[10px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap">NIRF #{mgtRank} Management</span>}
+                    {hasUni && <span className="badge-nirf text-[10px] font-semibold px-2 py-0.5 rounded-full whitespace-nowrap">NIRF #{u.nirf} University</span>}
+                  </>
+                )
+              })()}
               {u.qsRank && (
                 <span style={{fontSize:9,fontWeight:700,color:'#6B21A8',background:'#F3E8FF',border:'1px solid #D8B4FE',padding:'2px 6px',borderRadius:999,whiteSpace:'nowrap'}}>QS #{u.qsRank}</span>
               )}

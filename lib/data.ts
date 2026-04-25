@@ -1894,7 +1894,7 @@ export const UNIVERSITIES: University[] = [
     state: 'Maharashtra',
     region: 'West',
     nirf: 52,
-    nirfMgt: 24,
+    nirfMgt: 17,
     nirfEng: 55,
     naac: 'A++',
     ugc: true,
