@@ -13600,5 +13600,161 @@
     "program": "mcom",
     "spec_slug": "e-commerce",
     "spec_name": "E-Commerce"
+  },
+  {
+    "university_slug": "srm-institute-science-technology-online",
+    "program": "mca",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "srm-institute-science-technology-online",
+    "program": "mca",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "srm-institute-science-technology-online",
+    "program": "mca",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "srm-institute-science-technology-online",
+    "program": "mca",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "srm-institute-science-technology-online",
+    "program": "mca",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "srm-institute-science-technology-online",
+    "program": "bba",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "srm-institute-science-technology-online",
+    "program": "bba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "srm-institute-science-technology-online",
+    "program": "bca",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "srm-institute-science-technology-online",
+    "program": "bca",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "srm-institute-science-technology-online",
+    "program": "bca",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "srm-institute-science-technology-online",
+    "program": "bca",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
+    "university_slug": "srm-university-sikkim-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "srm-university-sikkim-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "srm-university-sikkim-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "srm-university-sikkim-online",
+    "program": "bca",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "srm-university-sikkim-online",
+    "program": "bca",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "srm-university-sikkim-online",
+    "program": "bca",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "yenepoya-university-online",
+    "program": "mca",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "yenepoya-university-online",
+    "program": "mca",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "yenepoya-university-online",
+    "program": "mca",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "yenepoya-university-online",
+    "program": "bba",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "yenepoya-university-online",
+    "program": "bba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "yenepoya-university-online",
+    "program": "bba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "yenepoya-university-online",
+    "program": "bca",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "yenepoya-university-online",
+    "program": "bca",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "yenepoya-university-online",
+    "program": "bca",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
   }
 ]
