@@ -251,6 +251,156 @@ export default async function CatchAllProgramPage(
     )
   }
 
+  // Non-MBA spec hub page (e.g., /programs/mca/data-science)
+  // Render the same generic template but with a safety fallback
+  if (program !== 'MBA' && activeSpec && subSlug) {
+    // Safely get spec content — never crash
+    let sc
+    try {
+      sc = (specEntry ? getSpecContent(specEntry.contentKey) : null)
+        || getSpecContent(activeSpec)
+        || getSpecFallback(activeSpec, program)
+    } catch {
+      sc = getSpecFallback(activeSpec, program)
+    }
+    if (!sc) sc = { overview: '', whyChoose: [], skills: [], careerBeginner: [], careerMid: [], careerSenior: [], salaryRange: '', certifications: [], topCompanies: [] }
+
+    const specSlugStr = activeSpec.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
+    const unisWithSpec = universities
+      .filter(u => u.programDetails[program]?.specs?.some(s => getSpecName(s) === activeSpec))
+      .sort((a, b) => (a.nirf || 999) - (b.nirf || 999))
+      .slice(0, 8)
+
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+        <div className="bg-surface-1 min-h-screen pt-4 pb-20">
+          <div className="container-custom">
+            <div className="flex items-center gap-2 py-4 text-xs text-ink-3">
+              <Link href="/" className="hover:text-navy">Home</Link>
+              <ChevronRight size={12}/>
+              <Link href="/programs" className="hover:text-navy">Programs</Link>
+              <ChevronRight size={12}/>
+              <Link href={`/programs/${programSlug}`} className="hover:text-navy">{program}</Link>
+              <ChevronRight size={12}/>
+              <span className="text-amber font-bold">{activeSpec}</span>
+            </div>
+
+            <div className="flex flex-col lg:flex-row gap-8 mt-4 relative">
+              <div className="flex-1">
+                <div className="card p-6 md:p-8 overflow-hidden relative">
+                  <div className="relative z-10">
+                    <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-amber/10 text-amber-text text-[10px] font-bold tracking-wider uppercase rounded-full mb-4">
+                      <TrendingUp size={12}/> UGC DEB Approved 2026
+                    </div>
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-navy leading-tight">
+                      Online {program}{' '}
+                      <span className="text-amber-text">in {activeSpec}</span>
+                    </h1>
+                    <p className="mt-4 text-lg text-ink-2 max-w-2xl leading-relaxed">
+                      Compare {unisWithSpec.length || universities.length} top-ranked universities offering online {program} in {activeSpec} in India.
+                      UGC approved degrees valid for govt and private jobs.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                  {[
+                    { icon: BookOpen, label: 'Universities', value: `${unisWithSpec.length || universities.length}` },
+                    { icon: Award, label: 'Min Fee', value: formatFee(feeMin) },
+                    { icon: Users, label: 'Duration', value: program.startsWith('B') ? '3 Years' : '2 Years' },
+                    { icon: Briefcase, label: 'Salary Range', value: sc.salaryRange || '₹3L – ₹15L' },
+                  ].map(stat => (
+                    <div key={stat.label} className="bg-white rounded-xl p-5 border border-slate-200 flex flex-col gap-3">
+                      <div className="w-5 h-5 text-amber-text"><stat.icon size={20}/></div>
+                      <div>
+                        <div className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-0.5">{stat.label}</div>
+                        <div className="text-2xl lg:text-3xl font-bold text-slate-900">{stat.value}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {sc.overview && (
+                  <section className="card p-6 md:p-8 mt-6">
+                    <h2 className="text-xl font-bold text-navy mb-4">About Online {program} in {activeSpec}</h2>
+                    <div className="text-[15px] text-ink-2 leading-relaxed space-y-3">
+                      <p>{sc.overview}</p>
+                      <p>Online degrees from UGC DEB approved universities are accepted by government and private sector employers across India.</p>
+                    </div>
+                  </section>
+                )}
+
+                {(sc.whyChoose?.length || sc.skills?.length) ? (
+                  <section className="grid md:grid-cols-2 gap-4 mt-4">
+                    {sc.whyChoose?.length ? (
+                      <div className="card p-6">
+                        <h3 className="text-base font-bold text-navy mb-3">Why {activeSpec}?</h3>
+                        <ul className="space-y-2">
+                          {sc.whyChoose.map((w: string, i: number) => (
+                            <li key={i} className="flex items-start gap-2 text-sm text-ink-2">
+                              <span className="text-green-500 font-bold mt-0.5 shrink-0">✓</span><span>{w}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
+                    {sc.skills?.length ? (
+                      <div className="card p-6">
+                        <h3 className="text-base font-bold text-navy mb-3">Skills You Will Build</h3>
+                        <ul className="space-y-2">
+                          {sc.skills.map((s: string, i: number) => (
+                            <li key={i} className="flex items-start gap-2 text-sm text-ink-2">
+                              <span className="text-amber-text font-bold mt-0.5 shrink-0">→</span><span>{s}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
+                  </section>
+                ) : null}
+
+                {unisWithSpec.length > 0 && (
+                  <section className="card p-6 md:p-8 mt-6">
+                    <h2 className="text-xl font-bold text-navy mb-1">Top Universities for {program} in {activeSpec}</h2>
+                    <p className="text-sm text-ink-3 mb-5">UGC DEB approved universities sorted by NIRF rank</p>
+                    <div className="grid sm:grid-cols-2 gap-3">
+                      {unisWithSpec.map(u => {
+                        const upd = u.programDetails[program]
+                        return (
+                          <Link key={u.id} href={`/universities/${u.id}/${programSlug}/${specSlugStr}`}
+                            className="flex items-center gap-3 p-4 bg-white border border-border rounded-xl hover:border-amber hover:shadow-md transition-all no-underline group">
+                            <div className="w-9 h-9 rounded-lg border border-border bg-white flex items-center justify-center overflow-hidden shrink-0">
+                              {u.logo
+                                ? <img src={u.logo} alt={u.name} className="max-w-full max-h-full object-contain p-0.5" onError={e => { (e.target as HTMLImageElement).style.display='none' }} />
+                                : <span style={{ fontSize:9, fontWeight:800, color:'#fff', background:u.color, width:'100%', height:'100%', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:6 }}>{u.abbr?.slice(0,2)}</span>}
+                            </div>
+                            <div className="flex-1 min-w-0">
+                              <div className="text-sm font-bold text-navy group-hover:text-amber transition-colors leading-snug truncate">{getShortUniversityName(u.name)}</div>
+                              <div className="text-xs text-ink-3">NAAC {u.naac}{u.nirf < 200 ? ` · NIRF #${u.nirf}` : ''} · {upd?.fees || formatFee(u.feeMin)}</div>
+                            </div>
+                            <ChevronRight size={14} className="text-amber shrink-0" />
+                          </Link>
+                        )
+                      })}
+                    </div>
+                    <div className="mt-4 pt-4 border-t border-border flex flex-wrap gap-3">
+                      <Link href={`/programs/${programSlug}`} className="text-sm text-amber font-semibold hover:underline no-underline">← All {program} Universities</Link>
+                      <Link href="/compare" className="text-sm text-ink-2 font-semibold hover:text-amber no-underline">Compare Side-by-Side →</Link>
+                    </div>
+                  </section>
+                )}
+
+                <ProgramPageClient program={program} programSlug={programSlug} universities={universities} allSpecs={allSpecs} initialSpec={activeSpec ?? undefined} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    )
+  }
+
   // Program hub pages (no spec sub-slug) — redesigned hub components
   if (!activeSpec) {
     if (program === 'MBA') {
