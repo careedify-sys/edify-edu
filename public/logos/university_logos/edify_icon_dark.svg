@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <!-- Dark square background -->
-  <rect width="64" height="64" rx="12" fill="#0F1117"/>
-  <!-- Magnifying glass circle -->
-  <circle cx="27" cy="26" r="13" fill="none" stroke="#D4A843" stroke-width="3" stroke-linecap="round"/>
-  <!-- Handle -->
-  <line x1="36.2" y1="35.2" x2="46" y2="46" stroke="#D4A843" stroke-width="3" stroke-linecap="round"/>
-  <!-- List lines inside lens -->
-  <line x1="20" y1="22" x2="34" y2="22" stroke="#D4A843" stroke-width="2.2" stroke-linecap="round"/>
-  <line x1="20" y1="26" x2="32" y2="26" stroke="#D4A843" stroke-width="2.2" stroke-linecap="round"/>
-  <line x1="20" y1="30" x2="34" y2="30" stroke="#D4A843" stroke-width="2.2" stroke-linecap="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><rect width="64" height="64" fill="#0f1117" rx="12"/><circle cx="27" cy="26" r="13" fill="none" stroke="#d4a843" stroke-linecap="round" stroke-width="3"/><path stroke="#d4a843" stroke-linecap="round" stroke-width="3" d="M36.2 35.2 46 46"/><path stroke="#d4a843" stroke-linecap="round" stroke-width="2.2" d="M20 22h14m-14 4h12m-12 4h14"/></svg>

@@ -806,7 +806,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'amrita-vishwa-vidyapeetham-online',
-    logo: '/logos/university_logos/amrita-online-logo.svg',
+    logo: '/logos/university_logos/amrita-online-logo.png',
     name: 'Amrita Vishwa Vidyapeetham Online',
     abbr: 'AVVA',
     city: 'Online',
@@ -2233,7 +2233,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'vtu-online',
-    logo: '/logos/university_logos/visvesvaraya-tchnological-university.svg',
+    logo: '/logos/university_logos/visvesvaraya-tchnological-university.webp',
     name: 'Visvesvaraya Technological University (VTU) Online',
     abbr: 'VTU',
     city: 'Online',
@@ -3444,7 +3444,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'maharishi-markandeshwar-university-online',
-    logo: '/logos/university_logos/maharishi-markandeshwar.svg',
+    logo: '/logos/university_logos/maharishi-markandeshwar.webp',
     name: 'Maharishi Markandeshwar (Deemed to be University) Online',
     abbr: 'MMU',
     city: 'Online',
@@ -3887,7 +3887,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'sgt-university-online',
-    logo: '/logos/university_logos/sgt.svg',
+    logo: '/logos/university_logos/sgt.webp',
     name: 'SGT University Online',
     abbr: 'SUDO',
     city: 'Online',
@@ -4370,7 +4370,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'christ-university-online',
-    logo: '/logos/university_logos/christ-deemed-to-be-university.svg',
+    logo: '/logos/university_logos/christ-deemed-to-be-university.png',
     name: 'Christ (Deemed to be University) Online',
     abbr: 'CUO',
     city: 'Online',
@@ -5049,7 +5049,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'guru-nanak-dev-university-online',
-    logo: '/logos/university_logos/guru-nanak-dev-logo.svg',
+    logo: '/logos/university_logos/guru-nanak-dev-logo.png',
     name: 'Guru Nanak Dev University Online',
     abbr: 'GNDUO',
     city: 'Amritsar',
@@ -5987,7 +5987,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'guru-kashi-university-online',
-    logo: '/logos/university_logos/guru-kashi-university.svg',
+    logo: '/logos/university_logos/guru-kashi-university.webp',
     name: 'Guru Kashi University Online',
     abbr: 'GKUO',
     city: '',
@@ -6030,7 +6030,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'jaipur-national-university-online',
-    logo: '/logos/university_logos/jaipur-nataional-univesity.svg',
+    logo: '/logos/university_logos/jaipur-nataional-univesity.webp',
     name: 'Jaipur National University Online',
     abbr: 'JNUJ',
     city: 'Jaipur',
@@ -6085,7 +6085,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'bs-abdur-rahman-university-online',
-    logo: '/logos/university_logos/crescent-logo.svg',
+    logo: '/logos/university_logos/crescent-logo.png',
     name: 'B.S. Abdur Rahman Crescent Institute of Science and Online',
     abbr: 'BARCI',
     city: 'Vandalur',
@@ -6140,7 +6140,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'srm-institute-science-technology-online',
-    logo: '/logos/university_logos/srm-institue-tamil-nadu-logo.svg',
+    logo: '/logos/university_logos/srm-institue-tamil-nadu-logo.webp',
     name: 'SRM Institute of Science and Technology Online',
     abbr: 'SRMIST',
     city: 'Kattankulathur',
@@ -6550,7 +6550,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'gla-university-online',
-    logo: '/logos/university_logos/gla-mathura-online-logo.svg',
+    logo: '/logos/university_logos/gla-mathura-online-logo.webp',
     name: 'GLA University Online',
     abbr: 'GUO',
     city: 'Mathura',
@@ -6793,7 +6793,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'jawaharlal-nehru-university-online',
-    logo: '/logos/university_logos/jnu-logo-final.svg',
+    logo: '/logos/university_logos/jnu-logo-final.webp',
     name: 'JAWAHARLAL NEHRU UNIVERSITY Online',
     abbr: 'JNU',
     city: 'New Delhi',
@@ -8228,7 +8228,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'guru-jambheshwar-university-online',
-    logo: '/logos/university_logos/guru-jambeshwar-university-of-science-and-technology.svg',
+    logo: '/logos/university_logos/guru-jambeshwar-university-of-science-and-technology.webp',
     name: 'GURU JAMBHESHWAR UNIVERSITY OF SCIENCE AND TECHNOLOGY Online',
     abbr: 'GJUOS',
     city: 'Rohtak',
@@ -8423,7 +8423,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'mats-university-online',
-    logo: '/logos/university_logos/mats-university.svg',
+    logo: '/logos/university_logos/mats-university.webp',
     name: 'MATS UNIVERSITY Online',
     abbr: 'MU',
     city: 'Raipur',
@@ -8672,7 +8672,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'sage-university-online',
-    logo: '/logos/university_logos/sage-university-logo.svg',
+    logo: '/logos/university_logos/sage-university-logo.webp',
     name: 'SAGE UNIVERSITY Online',
     abbr: 'SU',
     city: 'Bhopal',
@@ -8755,7 +8755,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'shree-guru-gobind-singh-tricentenary-university-online',
-    logo: '/logos/university_logos/sgt.svg',
+    logo: '/logos/university_logos/sgt.webp',
     name: 'SHREE GURU GOBIND SINGH TRICENTENARY UNIVERSITY Online',
     abbr: 'SGGST',
     city: 'Rohtak',
