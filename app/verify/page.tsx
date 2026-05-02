@@ -33,14 +33,33 @@ export const metadata = {
 export const dynamic = 'force-dynamic';
 
 export default async function VerifyHomePage() {
-  const supabase = await createSupabaseServerClient();
-  const { data: universities } = await supabase
-    .from('universities')
-    .select('slug, name, short_name, city, state, is_ioe, programme_count, brand_slug, aliases, university_type')
-    .eq('ugc_deb_status', 'approved')
-    .order('name');
+  let list: any[] = [];
 
-  const list = universities ?? [];
+  // Try Supabase first, fallback to local data if it fails
+  try {
+    const supabase = await createSupabaseServerClient();
+    const { data: universities } = await supabase
+      .from('universities')
+      .select('slug, name, short_name, city, state, is_ioe, programme_count, brand_slug, aliases, university_type')
+      .eq('ugc_deb_status', 'approved')
+      .order('name');
+    list = universities ?? [];
+  } catch {
+    // Supabase unavailable — fallback to local university data
+    const { UNIVERSITIES } = await import('@/lib/data');
+    list = UNIVERSITIES.map(u => ({
+      slug: u.id,
+      name: u.name,
+      short_name: u.abbr || null,
+      city: null,
+      state: null,
+      is_ioe: false,
+      programme_count: u.programs?.length || 0,
+      brand_slug: null,
+      aliases: null,
+      university_type: null,
+    }));
+  }
 
   const seenBrands = new Set<string>();
   let dedupedCount = 0;
