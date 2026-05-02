@@ -1,4 +1,3 @@
-import { createSupabaseServerClient } from '@/lib/supabase/server';
 import { VerifySearch } from '@/components/verify/VerifySearch';
 import { HeroSection } from '@/components/verify/HeroSection';
 import { TrustSignalsCards } from '@/components/verify/TrustSignalsCards';
@@ -37,6 +36,7 @@ export default async function VerifyHomePage() {
 
   // Try Supabase first, fallback to local data if it fails
   try {
+    const { createSupabaseServerClient } = await import('@/lib/supabase/server');
     const supabase = await createSupabaseServerClient();
     const { data: universities } = await supabase
       .from('universities')
