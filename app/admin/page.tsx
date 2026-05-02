@@ -205,7 +205,7 @@ export default function AdminPage() {
       <div className="flex flex-col gap-6">
         <div>
           <h2 className="text-[1.3rem] font-extrabold text-white mb-1">Welcome back 👋</h2>
-          <p className="text-[13px] text-ink-3">Edify Admin Panel — manage universities, blogs, and SEO.</p>
+          <p className="text-[13px] text-ink-3">edifyedu.in Admin Panel — manage universities, blogs, and SEO.</p>
         </div>
 
         {/* Stats grid */}
@@ -953,7 +953,7 @@ export default function AdminPage() {
       {/* Sidebar */}
       <div style={{width:200,flexShrink:0,background:'var(--navy)',borderRight:'1px solid #1e2f45',position:'sticky',top:0,height:'100vh',overflowY:'auto'}} className="hidden md:block">
         <div style={{padding:'20px 16px',borderBottom:'1px solid #1e2f45'}}>
-          <div style={{fontFamily:"'Fraunces',serif",fontSize:18,fontWeight:800,color:'#fff'}}>Edify</div>
+          <div style={{fontFamily:"'Fraunces',serif",fontSize:18,fontWeight:800,color:'#fff'}}>edifyedu.in</div>
           <div style={{fontSize:10,color:'var(--ink-2)',marginTop:2}}>Admin Panel</div>
         </div>
         <nav style={{padding:'12px 8px',display:'flex',flexDirection:'column',gap:2}}>

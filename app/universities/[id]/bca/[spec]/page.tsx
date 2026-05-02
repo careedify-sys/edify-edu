@@ -59,5 +59,5 @@ export default async function BCASpecPage(
   )
 }
 
-export const revalidate = 21600
+export const revalidate = false
 export const dynamicParams = true

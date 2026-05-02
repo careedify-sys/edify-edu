@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2 shrink-0 mb-4 inline-flex no-underline">
-              <img src="/logos/university_logos/edify_logo_transparent_ondark.svg" alt="Edify" style={{ height: '36px', width: 'auto' }} />
+              <img src="/logos/university_logos/edify_logo_transparent_ondark.svg" alt="edifyedu.in" style={{ height: '36px', width: 'auto' }} />
             </Link>
             <p className="text-sm leading-relaxed mb-5" style={{ color:'rgba(255,255,255,0.45)', lineHeight:'1.7' }}>
               India&apos;s independent guide to UGC DEB approved online degrees. No paid rankings. No university affiliations.
@@ -30,7 +30,7 @@ export default function Footer() {
             {/* Social links */}
             <div className="flex items-center gap-3 mt-5">
               <a href="https://youtube.com/@edify_edu?si=WEtJnuyFvY3j0Im3" target="_blank" rel="noopener noreferrer"
-                aria-label="Edify on YouTube"
+                aria-label="edifyedu.in on YouTube"
                 className="w-8 h-8 rounded-lg flex items-center justify-center transition-opacity hover:opacity-100"
                 style={{ background:'rgba(255,255,255,0.08)', opacity:0.6 }}>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -38,7 +38,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a href="https://www.instagram.com/_edifyeducation?igsh=MXhhYzZmYzVvaHM5OQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"
-                aria-label="Edify on Instagram"
+                aria-label="edifyedu.in on Instagram"
                 className="w-8 h-8 rounded-lg flex items-center justify-center transition-opacity hover:opacity-100"
                 style={{ background:'rgba(255,255,255,0.08)', opacity:0.6 }}>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -46,7 +46,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a href="https://www.linkedin.com/company/edifyeducation/" target="_blank" rel="noopener noreferrer"
-                aria-label="Edify on LinkedIn"
+                aria-label="edifyedu.in on LinkedIn"
                 className="w-8 h-8 rounded-lg flex items-center justify-center transition-opacity hover:opacity-100"
                 style={{ background:'rgba(255,255,255,0.08)', opacity:0.6 }}>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">

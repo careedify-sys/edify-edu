@@ -1,0 +1,180 @@
+{
+  "_metadata": {
+    "purpose": "Edify verification tool - factual descriptions for top universities",
+    "rule": "Only verifiable facts: founding year, location, university type, what they were originally founded for. No subjective claims, no rankings, no 'top X', no fabricated specifics.",
+    "universities_skipped": "IGNOU, BITS Pilani, OP Jindal, Annamalai, IKGPTU, SRM - not currently in database. Add to Excel master and re-sync, then add descriptions in a follow-up.",
+    "last_updated": "2026-05-01",
+    "count": 24,
+    "note": "26 universities filtered to 24 verified entries. Universities present in DB but without descriptions yet (skipped to avoid hallucination): Birla Institute of Technology (Mesra), D.Y. Patil (Navi Mumbai). To be added later when verified."
+  },
+  "descriptions": [
+    {
+      "slug": "manipal-academy-of-higher-education-online",
+      "name": "Manipal Academy of Higher Education",
+      "about": "Founded in 1953 in Manipal, Karnataka. Granted Deemed-to-be University status. Granted Institution of Eminence status by the Government of India in 2018.",
+      "known_for": "Originally established as a medical college (Kasturba Medical College). Programmes have since expanded to include engineering, management, and life sciences.",
+      "online_context": "Online programmes are delivered through the Online Manipal platform, alongside Manipal University Jaipur and Sikkim Manipal University. Each is a legally separate UGC-DEB approved university."
+    },
+    {
+      "slug": "amity-online",
+      "name": "Amity (brand-merged)",
+      "about": "Amity offers online programmes through two separate UGC-DEB approved universities: Amity University Uttar Pradesh (Noida), founded in 2005, and Amity University Rajasthan (Jaipur). Both are State Private Universities.",
+      "known_for": "The Amity Education Group operates multiple universities across Indian states, established by the Ritnand Balved Education Foundation.",
+      "online_context": "Different online programmes are approved by different Amity entities. The approving entity issues your degree certificate. Confirm which Amity entity approves your specific programme before enrolling."
+    },
+    {
+      "slug": "narsee-monjee-institute-of-management-studies-nmims-online",
+      "name": "NMIMS",
+      "about": "Founded in 1981 in Mumbai. Granted Deemed-to-be University status in 2003. Operates as SVKM's Narsee Monjee Institute of Management Studies under the Shri Vile Parle Kelavani Mandal trust.",
+      "known_for": "Originally established as a management institute, with the School of Business Management as its founding school.",
+      "online_context": "Online programmes are delivered through NMIMS Global Access School. As a Deemed-to-be University, AICTE approval applies to online MBA and MCA programmes per regulation."
+    },
+    {
+      "slug": "symbiosis-international-online",
+      "name": "Symbiosis International",
+      "about": "Granted Deemed-to-be University status in 2002. Located in Pune. The Symbiosis Society itself was established in 1971.",
+      "known_for": "Operates multiple constituent institutes across India.",
+      "online_context": "Online programmes are delivered through Symbiosis Centre for Distance Learning (SCDL) and Symbiosis Centre for Online and Digital Learning. As a Deemed-to-be University, AICTE approval applies to online MBA and MCA per regulation."
+    },
+    {
+      "slug": "lovely-professional-university-online",
+      "name": "Lovely Professional University",
+      "about": "Founded in 2005 in Punjab as a State Private University, established under an Act of the Punjab state legislature.",
+      "known_for": "Programmes span engineering, management, agriculture, design, and pharmacy.",
+      "online_context": "Online programmes are delivered through LPU Online. As a State Private University, AICTE approval is not legally required for online MBA and MCA per UGC guidelines."
+    },
+    {
+      "slug": "chandigarh-university-online",
+      "name": "Chandigarh University",
+      "about": "Founded in 2012 in Mohali, Punjab. State Private University, established under the Punjab State Legislative Assembly. Part of the broader CU Group.",
+      "known_for": "Programmes span engineering, management, law, computer applications, and pharmacy.",
+      "online_context": "Online programmes are delivered through CU Online. As a State Private University, AICTE approval is not legally required for online MBA and MCA per UGC guidelines."
+    },
+    {
+      "slug": "jain-deemed-to-be-university-online",
+      "name": "Jain (Deemed-to-be University)",
+      "about": "Granted Deemed-to-be University status in 2009. Located in Bengaluru. Evolved from Sri Bhagawan Mahaveer Jain College, established in 1990.",
+      "known_for": "Operates multiple constituent schools across business, engineering, sciences, and humanities.",
+      "online_context": "Online programmes are delivered through Online JAIN. As a Deemed-to-be University, AICTE approval applies to online MBA and MCA programmes per regulation."
+    },
+    {
+      "slug": "jamia-hamdard-online",
+      "name": "Jamia Hamdard",
+      "about": "Granted Deemed-to-be University status in 1989. Located in New Delhi. Evolved from the Hamdard Foundation established by Hakim Abdul Hameed.",
+      "known_for": "Originally established with a focus on Unani medicine and pharmacy education. Programmes have since expanded to include management, computer applications, and Islamic studies.",
+      "online_context": "Online programmes are governed under UGC-DEB. As a Deemed-to-be University, AICTE approval applies to online MBA and MCA programmes per regulation."
+    },
+    {
+      "slug": "manipal-university-online",
+      "name": "Manipal University Jaipur",
+      "about": "Founded in 2011 in Rajasthan as a State Private University, established under the Rajasthan state legislature Act. Part of the Manipal Education Group but a legally separate entity from Manipal Academy of Higher Education in Karnataka.",
+      "known_for": "Operates as the Rajasthan campus of the Manipal brand.",
+      "online_context": "Online programmes are delivered through Online Manipal alongside MAHE and Sikkim Manipal. As a State Private University, AICTE is not legally required for online MBA per UGC guidelines."
+    },
+    {
+      "slug": "sikkim-manipal-university-online",
+      "name": "Sikkim Manipal University",
+      "about": "Founded in 1995 in Sikkim as a State Private University. Established as a public-private partnership between the Government of Sikkim and the Manipal Group.",
+      "known_for": "First public-private partnership university model in India. Operates Sikkim Manipal Institute of Medical Sciences alongside engineering and management programmes.",
+      "online_context": "Online programmes are delivered through Online Manipal. As a State Private University, AICTE is not legally required for online MBA per UGC guidelines, though SMU's online MCA programme holds explicit AICTE approval."
+    },
+    {
+      "slug": "university-of-petroleum-and-energy-studies-online",
+      "name": "University of Petroleum and Energy Studies",
+      "about": "Founded in 2003 in Dehradun, Uttarakhand. State Private University, established by an Act of the Uttarakhand State Legislature.",
+      "known_for": "Originally founded with a focus on the energy and petroleum sector. Programmes have since expanded to include engineering, management, design, and law.",
+      "online_context": "Online programmes are delivered through UPES Online. As a State Private University, AICTE is not legally required for online MBA per UGC guidelines."
+    },
+    {
+      "slug": "galgotias-university-online",
+      "name": "Galgotias University",
+      "about": "Founded in 2011 in Greater Noida, Uttar Pradesh, as a State Private University, established by an Act of the Uttar Pradesh state legislature. Evolved from Galgotias Educational Institutions.",
+      "known_for": "Programmes span engineering, computer applications, and management.",
+      "online_context": "Online programmes are delivered through Galgotias Online. As a State Private University, AICTE is not legally required for online MBA per UGC guidelines."
+    },
+    {
+      "slug": "bharati-vidyapeeth-online",
+      "name": "Bharati Vidyapeeth",
+      "about": "Granted Deemed-to-be University status in 1996. Headquartered in Pune, Maharashtra. Evolved from Bharati Vidyapeeth, an educational society founded in 1964 by Patangrao Kadam.",
+      "known_for": "Operates constituent institutes across medicine, dentistry, engineering, management, and computer applications.",
+      "online_context": "Online programmes include MBA, MCA, BBA, BCA, and BCom. As a Deemed-to-be University, AICTE approval applies to online MBA and MCA per regulation."
+    },
+    {
+      "slug": "dr-dy-patil-vidyapeeth-pune-online",
+      "name": "Dr. D.Y. Patil Vidyapeeth (Pune)",
+      "about": "Founded in 2003. Located in Pune as a Deemed-to-be University. Part of the broader D.Y. Patil education family, which includes multiple legally distinct institutions across Pune, Mumbai, and Navi Mumbai.",
+      "known_for": "Originally established with a focus on medicine and dentistry. Programmes have since expanded to include biotechnology, management, and computer applications.",
+      "online_context": "Online programmes include MBA and MCA at the postgraduate level. As a Deemed-to-be University, AICTE approval applies to online MBA and MCA per regulation."
+    },
+    {
+      "slug": "vellore-institute-of-technology-online",
+      "name": "Vellore Institute of Technology",
+      "about": "Founded in 1984 as Vellore Engineering College. Granted Deemed-to-be University status in 2001. Operates campuses in Vellore, Chennai, Bhopal, Amaravati, and Andhra Pradesh.",
+      "known_for": "Originally established as an engineering college. Admissions to on-campus engineering programmes are conducted through the VITEEE entrance exam.",
+      "online_context": "Online programmes are delivered through VIT Online (VITOL). As a Deemed-to-be University, AICTE approval applies to online MBA and MCA per regulation."
+    },
+    {
+      "slug": "christ-deemed-to-be-university-online",
+      "name": "Christ (Deemed to be University)",
+      "about": "Granted Deemed-to-be University status in 2008. Located in Bengaluru. Evolved from Christ College, established in 1969 by the Carmelites of Mary Immaculate (CMI).",
+      "known_for": "Operates multiple campuses across Bengaluru, Delhi NCR, and Pune. Programmes span commerce, management, humanities, and sciences.",
+      "online_context": "As a Deemed-to-be University, AICTE approval applies to online MBA and MCA programmes per regulation."
+    },
+    {
+      "slug": "amrita-vishwa-vidyapeetham-university-online",
+      "name": "Amrita Vishwa Vidyapeetham University",
+      "about": "Founded in 2003 with headquarters in Coimbatore, Tamil Nadu, as a Deemed-to-be University. Granted Institution of Eminence status by the Government of India. Operates campuses in Coimbatore, Bengaluru, Kochi, Mysore, Amritapuri, Chennai, and Faridabad.",
+      "known_for": "Established with engineering, medical sciences, and Sanskrit-related programmes.",
+      "online_context": "Online programmes are delivered through Amrita Online. As a Deemed-to-be University, AICTE approval applies to online MBA and MCA per regulation."
+    },
+    {
+      "slug": "shoolini-university-of-biotechnology-and-management-sciences-online",
+      "name": "Shoolini University of Biotechnology and Management Sciences",
+      "about": "Founded in 2009 in Solan, Himachal Pradesh, as a State Private University, established under the Himachal Pradesh state Act.",
+      "known_for": "Originally established with a focus on biotechnology, pharmacy, and applied life sciences.",
+      "online_context": "Online programmes are delivered through Shoolini Online. As a State Private University, AICTE is not legally required for online MBA per UGC guidelines."
+    },
+    {
+      "slug": "andhra-university-online",
+      "name": "Andhra University",
+      "about": "Founded in 1926 in Visakhapatnam by an Act of the Madras Presidency. State Public University. One of the older universities in southern India, predating Indian independence.",
+      "known_for": "A teaching, residential, and affiliating university with constituent colleges across coastal Andhra Pradesh.",
+      "online_context": "Online programmes are delivered through the Directorate of Distance Education. As a State Public University, AICTE is not legally required for online MBA per UGC guidelines."
+    },
+    {
+      "slug": "alagappa-university-online",
+      "name": "Alagappa University",
+      "about": "Founded in 1985 in Karaikudi, Tamil Nadu, by an Act of the Tamil Nadu state legislature. State Public University.",
+      "known_for": "Operates as a teaching and affiliating university with a distance education programme.",
+      "online_context": "Online programmes are delivered through the Directorate of Distance Education. As a State Public University, AICTE is not legally required for online MBA per UGC guidelines."
+    },
+    {
+      "slug": "bharathiar-university-online",
+      "name": "Bharathiar University",
+      "about": "Founded in 1982 in Coimbatore, Tamil Nadu, by an Act of the Tamil Nadu state legislature. Named after the Tamil poet Subramania Bharati. State Public University.",
+      "known_for": "Affiliates colleges across western Tamil Nadu and runs a distance education programme.",
+      "online_context": "Online programmes are delivered through the School of Distance Education. As a State Public University, AICTE is not legally required for online MBA per UGC guidelines."
+    },
+    {
+      "slug": "kurukshetra-university-online",
+      "name": "Kurukshetra University",
+      "about": "Founded in 1956 in Kurukshetra, Haryana, by an Act of the Punjab state legislature. Became part of Haryana following state reorganisation in 1966. State Public University.",
+      "known_for": "Affiliates colleges across northern Haryana and runs a distance education centre.",
+      "online_context": "Online programmes are delivered through the Directorate of Distance Education. As a State Public University, AICTE is not legally required for online MBA per UGC guidelines."
+    },
+    {
+      "slug": "university-of-madras-online",
+      "name": "University of Madras",
+      "about": "Founded in 1857 in Chennai, Tamil Nadu. State Public University. One of the three oldest universities in India, established alongside the Universities of Calcutta and Bombay.",
+      "known_for": "Affiliates colleges across northern Tamil Nadu. Operates the Institute of Distance Education.",
+      "online_context": "Online programmes are delivered through the Institute of Distance Education. As a State Public University, AICTE is not legally required for online MBA per UGC guidelines."
+    },
+    {
+      "slug": "mangalayatan-university-online",
+      "name": "Mangalayatan University",
+      "about": "Founded in 2006 in Aligarh, Uttar Pradesh, as a State Private University, established under the Uttar Pradesh state legislature.",
+      "known_for": "Operates with a wide range of UG and PG programmes including online and distance learning.",
+      "online_context": "Online programmes are delivered through Mangalayatan Online. As a State Private University, AICTE is not legally required for online MBA per UGC guidelines."
+    }
+  ]
+}

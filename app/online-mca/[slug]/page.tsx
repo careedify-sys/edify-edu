@@ -67,7 +67,7 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
 }
 
 export const dynamicParams = false
-export const revalidate = 3600
+export const revalidate = false
 
 export async function generateStaticParams() {
   return ONLINE_MCA_SLUGS.map((slug) => ({ slug }))
@@ -110,7 +110,7 @@ export default async function OnlineMcaPostPage({ params }: Props) {
     author: { '@type': 'Person', name: 'Rishi Kumar', url: 'https://edifyedu.in/about' },
     publisher: {
       '@type': 'Organization',
-      name: 'Edify',
+      name: 'edifyedu.in',
       url: 'https://edifyedu.in',
       logo: { '@type': 'ImageObject', url: 'https://edifyedu.in/logos/edify_logo_192.png', width: 192, height: 192 },
     },

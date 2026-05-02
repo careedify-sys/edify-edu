@@ -477,11 +477,11 @@ export default function UniversityPageClient({ university: u }: Props) {
                 </ul>
               </section>
 
-              {/* Edify Recommends - Skills & Projects */}
+              {/* edifyedu.in Recommends - Skills & Projects */}
               <section className="card-lg p-6" style={{background:'linear-gradient(135deg, rgba(31,107,82,0.05), rgba(31,107,82,0.02))', border:'1px solid rgba(31,107,82,0.15)'}}>
                 <div className="flex items-center gap-2 mb-4">
                   <span className="text-xl">✦</span>
-                  <h2 className="font-display text-xl font-bold text-navy">Edify Recommends — Build These Alongside</h2>
+                  <h2 className="font-display text-xl font-bold text-navy">edifyedu.in Recommends — Build These Alongside</h2>
                 </div>
                 <p className="text-sm text-ink-3 mb-6">
                   Your degree gets you the credential. These are the things that get you the job — and the raise after that.

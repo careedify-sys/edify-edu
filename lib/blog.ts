@@ -12953,7 +12953,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <!-- CTA Box -->
 <div class="cta-box">
   <strong>Compare MBA Programs on Edify</strong><br>
-  Edify compares public UGC/NAAC/NIRF data across online MBA programs. No paid rankings. No referral commissions. Just verified data to help you decide.<br><br>
+  edifyedu.in compares public UGC/NAAC/NIRF data across online MBA programs. No paid rankings. No referral commissions. Just verified data to help you decide.<br><br>
   <a href="/compare" class="ilink" style="background: #f97316; color: #fff; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: 700;">Compare Universities Now</a>
 </div>
 
@@ -13501,7 +13501,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <!-- CTA Box -->
 <div class="cta-box">
   <strong style="font-size:1.15rem;color:#ffffff;">Not sure if BCA is right for you?</strong><br><br>
-  <span style="color:#cbd5e1;">Edify compares public UGC, NAAC, and NIRF data across universities. No paid rankings. No referral commissions. Just transparent information to help you decide.</span><br><br>
+  <span style="color:#cbd5e1;">edifyedu.in compares public UGC, NAAC, and NIRF data across universities. No paid rankings. No referral commissions. Just transparent information to help you decide.</span><br><br>
   <a href="/compare" class="ilink" style="background:#f97316;color:#ffffff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600;">Compare BCA Programmes</a>
   &nbsp;&nbsp;
   <a href="/contact" class="ilink" style="background:transparent;color:#f97316;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600;border:1px solid #f97316;">Talk to a Counsellor</a>
@@ -14263,7 +14263,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <!-- CTA Box -->
 <div class="cta-box" style="background:#0f172a;color:#fff;padding:28px 32px;border-radius:10px;margin:32px 0;text-align:center;">
   <h3 style="color:#f97316;margin-bottom:10px;">Not sure which BBA program to pick?</h3>
-  <p style="margin-bottom:16px;">Edify compares public UGC, NAAC, and NIRF data across universities. No paid rankings. No referral commissions. Just verified facts.</p>
+  <p style="margin-bottom:16px;">edifyedu.in compares public UGC, NAAC, and NIRF data across universities. No paid rankings. No referral commissions. Just verified facts.</p>
   <a href="/contact" class="ilink" style="background:#f97316;color:#fff;padding:12px 28px;border-radius:6px;text-decoration:none;font-weight:bold;display:inline-block;">Talk to a Free Counsellor</a>
 </div>
 
@@ -14790,7 +14790,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <!-- CTA Box -->
 <div class="cta-box" style="background:#0f172a;color:#fff;padding:28px 24px;border-radius:10px;margin:36px 0;">
   <strong style="font-size:1.15rem;">Compare MCA Programmes on Edify</strong><br><br>
-  <span style="color:#94a3b8;">Edify compares public UGC, NAAC, and NIRF data across universities. No paid rankings. No referral commissions. Just transparent data to help you decide.</span><br><br>
+  <span style="color:#94a3b8;">edifyedu.in compares public UGC, NAAC, and NIRF data across universities. No paid rankings. No referral commissions. Just transparent data to help you decide.</span><br><br>
   <a href="/compare" class="ilink" style="background:#f97316;color:#fff;padding:10px 22px;border-radius:6px;text-decoration:none;font-weight:600;">Compare Universities</a>&nbsp;&nbsp;
   <a href="/contact" class="ilink" style="border:1px solid #f97316;color:#f97316;padding:10px 22px;border-radius:6px;text-decoration:none;font-weight:600;">Talk to a Counsellor</a>
 </div>
@@ -15357,7 +15357,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <div class="cta-box" style="background:#0f172a;color:#fff;padding:32px;border-radius:12px;margin:32px 0;text-align:center;">
   <h3 style="color:#fff;margin-top:0;">Not Sure Which B.Com Program Fits You?</h3>
   <p style="color:#cbd5e1;max-width:600px;margin:12px auto;">
-    Edify compares public UGC, NAAC, and NIRF data across universities. No paid rankings. No referral commissions. Just facts.
+    edifyedu.in compares public UGC, NAAC, and NIRF data across universities. No paid rankings. No referral commissions. Just facts.
   </p>
   <a href="/contact" class="ilink" style="display:inline-block;background:#f97316;color:#fff;padding:12px 32px;border-radius:8px;text-decoration:none;font-weight:600;margin-top:12px;">Talk to a Free Counsellor</a>
 </div>
@@ -15946,7 +15946,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <!-- CTA Box -->
 <div class="cta-box">
   <strong style="font-size:1.15rem;color:#ffffff;">Planning your engineering career?</strong><br><br>
-  <span style="color:#cbd5e1;">Edify compares public UGC, NAAC, and NIRF data across universities. No paid rankings. No referral commissions. Just transparent information to help you make the right choice.</span><br><br>
+  <span style="color:#cbd5e1;">edifyedu.in compares public UGC, NAAC, and NIRF data across universities. No paid rankings. No referral commissions. Just transparent information to help you make the right choice.</span><br><br>
   <a href="/compare" class="ilink" style="background:#f97316;color:#ffffff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600;">Compare B.Tech Colleges</a>
   &nbsp;&nbsp;
   <a href="/contact" class="ilink" style="background:transparent;color:#f97316;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600;border:1px solid #f97316;">Talk to a Counsellor</a>
@@ -16585,7 +16585,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>Want to <a href="/guides/is-online-degree-valid-india" class="ilink">understand online degree validity in India</a>? That guide covers the full legal framework, UGC regulations, and how employers view online degrees.</p>
 
-<p>Edify <a href="/compare" class="ilink">compares public UGC, NAAC, and NIRF data</a> across universities. No paid rankings, no referral commissions. Just verified facts to help you decide.</p>
+<p>edifyedu.in <a href="/compare" class="ilink">compares public UGC, NAAC, and NIRF data</a> across universities. No paid rankings, no referral commissions. Just verified facts to help you decide.</p>
 
 <!-- H2: FAQs -->
 <h2>Frequently Asked Questions About BSc</h2>
@@ -16686,7 +16686,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <!-- CTA Box -->
 <div class="cta-box" style="background:#0f172a;color:#fff;padding:28px 24px;border-radius:10px;margin-top:32px;text-align:center;">
   <strong style="font-size:1.15rem;">Still confused about which BSc branch to pick?</strong><br><br>
-  <span style="color:#cbd5e1;">Edify compares public UGC, NAAC, and NIRF data across universities. No paid rankings. No referral commissions.</span><br><br>
+  <span style="color:#cbd5e1;">edifyedu.in compares public UGC, NAAC, and NIRF data across universities. No paid rankings. No referral commissions.</span><br><br>
   <a href="/compare" class="ilink" style="background:#f97316;color:#fff;padding:10px 28px;border-radius:6px;text-decoration:none;font-weight:600;display:inline-block;">Compare Universities</a>
   &nbsp;&nbsp;
   <a href="/contact" class="ilink" style="background:transparent;color:#f97316;padding:10px 28px;border-radius:6px;text-decoration:none;font-weight:600;border:1px solid #f97316;display:inline-block;">Talk to a Counsellor</a>
@@ -16716,7 +16716,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
       { q: 'Which MA specialization has the highest salary?', a: 'MA Economics and MA Psychology offer the strongest private-sector salary potential (4-8 LPA entry, 10-15 LPA mid-career). For government sector earnings, any MA subject paired with UGC NET (for teaching) or UPSC (for civil services) leads to 8-18 LPA. The specialization matters less than the competitive exam you clear after MA.' },
       { q: 'Is online MA from IGNOU valid?', a: 'Yes. IGNOU is a central university established by an Act of Parliament, recognized by UGC, and accredited NAAC A++. Its MA degrees (distance and online modes) are valid for all government jobs, higher education, and competitive exams across India.' },
       { q: 'Can I do PhD after MA?', a: 'Yes. MA is the standard qualification for PhD admission in Arts and Humanities. You need to clear UGC NET (for JRF fellowship of INR 37,000/month) or a university-level entrance exam. Most universities require a minimum of 55% marks in your MA.' },
-      { q: 'Comparing Online MA Programs?', a: 'Edify compares public UGC, NAAC, and NIRF data across universities. No paid rankings. No referral commissions. Just verified facts to help you decide.' },
+      { q: 'Comparing Online MA Programs?', a: 'edifyedu.in compares public UGC, NAAC, and NIRF data across universities. No paid rankings. No referral commissions. Just verified facts to help you decide.' },
     ],
     content: `<!-- TLDR Box -->
 <div style="background: #f1f5f9; border-left: 4px solid #f97316; padding: 20px 24px; border-radius: 8px; margin-bottom: 28px;">
@@ -17379,7 +17379,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <!-- CTA Box -->
 <div class="cta-box" style="background: #0f172a; color: #fff; padding: 28px 32px; border-radius: 10px; margin: 32px 0; text-align: center;">
   <h3 style="color: #f97316; margin-top: 0;">Comparing Online MA Programs?</h3>
-  <p style="color: #f1f5f9; margin-bottom: 16px;">Edify compares public UGC, NAAC, and NIRF data across universities. No paid rankings. No referral commissions. Just verified facts to help you decide.</p>
+  <p style="color: #f1f5f9; margin-bottom: 16px;">edifyedu.in compares public UGC, NAAC, and NIRF data across universities. No paid rankings. No referral commissions. Just verified facts to help you decide.</p>
   <a href="/compare" class="ilink" style="background: #f97316; color: #fff; padding: 12px 28px; border-radius: 6px; text-decoration: none; font-weight: 600; display: inline-block;">Compare Universities</a>
   <br><br>
   <a href="/contact" class="ilink" style="color: #f97316; text-decoration: underline;">Talk to a free counsellor</a>

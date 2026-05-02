@@ -6,7 +6,7 @@ import { getCouponPage, COUPON_PAGE_SLUGS, type CouponPageData } from '@/lib/cou
 import { getExpiryISO } from '@/lib/coupons'
 import CouponPageCTA from '@/components/CouponPageCTA'
 
-export const revalidate = 3600
+export const revalidate = 86400
 
 export function generateStaticParams() {
   return COUPON_PAGE_SLUGS.map(slug => ({ slug }))

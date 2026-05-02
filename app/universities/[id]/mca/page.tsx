@@ -47,4 +47,4 @@ export default async function OnlineMCAPage(
   return <UniProgramBody u={u} program="MCA" programSlug="mca" pd={pd} />
 }
 
-export const revalidate = 21600
+export const revalidate = false

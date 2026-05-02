@@ -43,4 +43,4 @@ export default async function OnlineBCAPage(
   return <UniProgramBody u={u} program="BCA" programSlug="bca" pd={pd} />
 }
 
-export const revalidate = 21600
+export const revalidate = false

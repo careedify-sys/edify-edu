@@ -7,7 +7,7 @@ import { getTitleName } from '@/lib/seo-title'
 import { formatINR } from '@/lib/format'
 import { PAIRS, PAIR_SLUGS, type PairSlug } from './pairs'
 
-export const revalidate = 3600
+export const revalidate = false
 
 export function generateStaticParams() {
   return PAIR_SLUGS.map(pair => ({ pair }))

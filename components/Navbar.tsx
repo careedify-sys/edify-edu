@@ -3,7 +3,7 @@ import { getSortRank } from '@/lib/data-slim'
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
-import { Search, ChevronDown, X, Menu, GraduationCap, Phone } from 'lucide-react'
+import { Search, ChevronDown, X, Menu, GraduationCap, Phone, ShieldCheck } from 'lucide-react'
 import { UNIS_SLIM } from '@/lib/data-slim'
 import { PROGRAM_META } from '@/lib/data-client'
 import type { Program } from '@/lib/data-client'
@@ -186,7 +186,7 @@ export default function Navbar() {
 
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2.5 shrink-0 no-underline">
-              <img src="/logos/university_logos/edify_logo_transparent_onlight.svg" alt="Edify" width={120} height={40} className="h-8 sm:h-10 lg:h-12 w-auto object-contain" fetchPriority="high" />
+              <img src="/logos/university_logos/edify_logo_transparent_onlight.svg" alt="edifyedu.in" width={120} height={40} className="h-8 sm:h-10 lg:h-12 w-auto object-contain" fetchPriority="high" />
             </Link>
 
             {/* Desktop search */}
@@ -356,6 +356,7 @@ export default function Navbar() {
                 { label: 'Universities', href: '/universities' },
                 { label: 'Compare', href: '/compare' },
                 { label: 'Guides', href: '/guides' },
+                { label: 'Verify', href: '/verify' },
               ].map(item => (
                 <Link
                   key={item.href}
@@ -374,10 +375,11 @@ export default function Navbar() {
                 <Phone style={{ width: '13px', height: '13px', color: 'var(--sage)' }} />
                 +91 70612 85806
               </a>
-              <Link href="/universities"
-                className="hidden sm:inline-flex items-center gap-2 btn-primary"
-                style={{ padding: '9px 18px', borderRadius: '10px', fontSize: '13px', textDecoration: 'none' }}>
-                Browse Universities
+              <Link href="/verify"
+                className="hidden sm:inline-flex items-center gap-2"
+                style={{ padding: '9px 18px', borderRadius: '10px', fontSize: '13px', textDecoration: 'none', fontWeight: 700, background: '#10b981', color: '#fff' }}>
+                <ShieldCheck style={{ width: '14px', height: '14px' }} />
+                Verify University
               </Link>
               <button
                 className="lg:hidden p-2.5 rounded-xl transition-colors"
@@ -491,6 +493,7 @@ export default function Navbar() {
                 { label: 'All Universities', href: '/universities' },
                 { label: 'Compare Programs', href: '/compare' },
                 { label: 'Guides', href: '/guides' },
+                { label: 'Verify University', href: '/verify' },
               ].map(item => (
                 <Link key={item.href} href={item.href} className="mob-link"
                   onClick={() => setMobileOpen(false)}>
@@ -506,11 +509,15 @@ export default function Navbar() {
                 Call: +91 70612 85806
               </a>
 
-              <Link href="/universities"
-                style={{ display: 'block', textAlign: 'center', padding: '15px', borderRadius: '12px', fontWeight: 800, fontSize: '15px', textDecoration: 'none', background: 'var(--amber)', color: '#fff' }}
+              <Link href="/verify"
+                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '15px', borderRadius: '12px', fontWeight: 800, fontSize: '15px', textDecoration: 'none', background: '#10b981', color: '#fff' }}
                 onClick={() => setMobileOpen(false)}>
-                Browse Universities →
+                <ShieldCheck style={{ width: '18px', height: '18px' }} />
+                Verify University →
               </Link>
+              <p style={{ textAlign: 'center', fontSize: '11px', color: 'var(--ink-3)', margin: '4px 0 0', lineHeight: 1.5 }}>
+                Check UGC-DEB, NAAC, NIRF and AICTE approvals from official sources. Only on edifyedu.in.
+              </p>
             </div>
           </div>
         )}

@@ -1,0 +1,90 @@
+---
+name: seo-blog-writer
+description: |
+  Research and write a fully SEO-optimized, 100% humanized blog post on any topic.
+  Use when the user gives a topic and wants a blog post, article, or web content written.
+  Triggers: "write a blog on", "create an article about", "write a post on", "SEO blog",
+  "research and write", or any topic where blog/article content is expected.
+  Performs live web research first, then writes. Produces human-sounding content with
+  SEO title, meta description, focus keyword, tags, internal links, and body.
+---
+
+# SEO Blog Writer Skill
+
+## Purpose
+Generate SEO-optimized, human-sounding long-form content for EdifyEdu and similar
+editorial sites. Focus on ranking in Indian education SERP while sounding like a
+real editor, not a content farm.
+
+## Output structure for every blog
+
+Every generated post includes:
+
+1. **SEO Title** (50-60 chars, includes focus keyword, year 2026 when relevant)
+2. **Meta Description** (150-160 chars, compelling CTA, focus keyword in first 100 chars)
+3. **Focus Keyword** (primary term we target)
+4. **LSI Keywords** (3-5 related terms to sprinkle naturally)
+5. **Tags** (5-8 categorical tags)
+6. **Internal CTAs** (2-3 links to relevant EdifyEdu pages)
+7. **Body content** (prose sections, no excessive headers)
+
+## Writing rules
+
+### Tone
+- Confident editorial voice, not promotional
+- Write like a human with opinions who happens to know the subject
+- Reader is a working Indian adult considering an online degree
+- Assume intelligence; do not over-explain basic concepts
+
+### Forbidden patterns
+- Em dashes (—) use hyphens or restructure
+- "In this article we will explore"
+- "Let's dive into"
+- "Here are some key points"
+- "It's important to note that"
+- "Stay tuned"
+- "Without further ado"
+- Rule of three listicles when prose works better
+- Perfect parallel structure in every paragraph
+
+### Structure
+- Open with a specific, concrete observation, not a generic definition
+- Second paragraph addresses the reader's actual question
+- Use subheads sparingly — only where they earn their place
+- Vary sentence length: mix 6-word punches with 22-word explanations
+- Paragraph length: 2-5 sentences, never walls of text
+
+### SEO hygiene
+- Focus keyword in H1, first paragraph, and one H2
+- LSI keywords appear naturally in body
+- No keyword stuffing
+- Internal links use descriptive anchor text, not "click here"
+- Images must have alt text describing the image, not the keyword
+
+### Honesty markers (EdifyEdu specific)
+- Fees always marked "indicative, confirm with counsellor"
+- No fabricated statistics
+- Sources cited when making claims (deb.ugc.ac.in, nirfindia.org, university official sites)
+- Red flags stated honestly, not buried
+- EdifyEdu's commission-free position mentioned once, not repeatedly
+
+## Research step
+
+Before writing, do a quick SERP scan for the focus keyword. Look at:
+- Top 3 ranking pages (what they cover, what they miss)
+- People Also Ask box (common follow-up questions)
+- Related searches (intent variants)
+
+Use this research to identify a gap or angle competitors miss. Write to fill that gap.
+
+## Length targets
+
+- Short blog: 800-1200 words
+- Standard blog: 1500-2000 words
+- Pillar content: 2500-3500 words
+- University review: 2500-3000 words
+
+## Apply humanizer skill after drafting
+
+Every blog generated with this skill must be run through the humanizer skill before
+finalizing. The humanizer catches AI tell-tale patterns and replaces them.

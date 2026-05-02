@@ -840,8 +840,8 @@ function CompareContent() {
           headline:`${universities[0]?.name} vs ${universities[1]?.name} Online ${program} — Comparison 2026`,
           description:`Detailed comparison of ${universities[0]?.name} and ${universities[1]?.name} Online ${program} — fees, NIRF rank, NAAC grade and syllabus.`,
           url:`https://edifyedu.in/compare?a=${universities[0]?.id}&b=${universities[1]?.id}`,
-          author:{'@type':'Organization',name:'Edify',url:'https://edifyedu.in'},
-          publisher:{'@type':'Organization',name:'Edify',logo:{'@type':'ImageObject',url:'https://edifyedu.in/logo.png'}},
+          author:{'@type':'Organization',name:'edifyedu.in',url:'https://edifyedu.in'},
+          publisher:{'@type':'Organization',name:'edifyedu.in',logo:{'@type':'ImageObject',url:'https://edifyedu.in/logo.png'}},
           dateModified:'2026-04-16',
         })}} />
       )}

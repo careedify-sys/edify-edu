@@ -4,7 +4,7 @@ import { Shield, Award, Users, Phone, Mail, CheckCircle, XCircle, Database, BarC
 
 export const metadata: Metadata = {
   title: 'About Edify — India\'s Independent Online Education Guide',
-  description: 'Edify is India\'s independent guide to UGC DEB approved online degrees. No paid rankings. No university affiliations. We help students compare 125+ universities honestly.',
+  description: 'edifyedu.in is India\'s independent guide to UGC DEB approved online degrees. No paid rankings. No university affiliations. We help students compare 125+ universities honestly.',
   keywords: 'about edify, independent education guide india, ugc deb approved universities, honest online degree comparison, best online mba colleges in india, online mba india, nirf ranked online universities, naac a++ online university, online mba for working professionals, top 10 mba colleges in india',
   alternates: { canonical: 'https://edifyedu.in/about' },
   openGraph: {
@@ -27,7 +27,7 @@ const teamSchema = [
     '@type': 'Person',
     name: 'Rishi Kumar',
     jobTitle: 'Founder & Lead Researcher',
-    worksFor: { '@type': 'Organization', name: 'Edify', url: 'https://edifyedu.in' },
+    worksFor: { '@type': 'Organization', name: 'edifyedu.in', url: 'https://edifyedu.in' },
     url: 'https://edifyedu.in/about#team',
     description: 'Education researcher and data analyst focused on India\'s online higher education sector. Tracks UGC DEB approvals, NIRF rankings, and fee structures across 125+ universities. 7+ years advising students on degree choices.',
     knowsAbout: ['UGC DEB approved universities', 'Online MBA India 2026', 'NIRF rankings', 'NAAC accreditation', 'Online degree validity India'],
@@ -37,7 +37,7 @@ const teamSchema = [
     '@type': 'Person',
     name: 'Komal Srivastava',
     jobTitle: 'Senior Education Counsellor',
-    worksFor: { '@type': 'Organization', name: 'Edify', url: 'https://edifyedu.in' },
+    worksFor: { '@type': 'Organization', name: 'edifyedu.in', url: 'https://edifyedu.in' },
     url: 'https://edifyedu.in/about#team',
     description: '7+ years in higher education counselling. Specialises in reviewing online MBA programs, AI-integrated curricula, and helping working professionals choose programs aligned with their career goals.',
     knowsAbout: ['Online MBA program review', 'Higher education counselling India', 'UGC DEB approved programs', 'MBA specializations India'],

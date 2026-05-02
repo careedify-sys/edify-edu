@@ -1,0 +1,207 @@
+---
+name: university-review-writer
+description: |
+  Research and write SEO-optimised, humanised, CMS-ready university review blogs for
+  edifyedu.in. Triggers when the user provides a university name or live EdifyEdu blog
+  URL and says "review", "rewrite", "improve", "research competitors for", "SMU review",
+  "Amity review", "NMIMS review", "rank this page", or similar. Performs live SERP
+  research, extracts unique angles competitors miss, enforces the EdifyEdu house style,
+  outputs HTML-ready content plus a QA checklist. Always cross-verifies fees against the
+  official university portal. Never links to commercial competitors (CollegeVidya,
+  Shiksha, Careers360, Jaro, padhaao, admissiondiy, samarthedu, kollegeapply).
+---
+
+# University Review Writer Skill
+
+## Purpose
+Generate review-style content for specific Indian universities and their online programs.
+The reader is a prospective student deciding between 3-5 universities. The content's job
+is to help them decide, not to upsell.
+
+## The 80/20 information-to-brand rule [NON-NEGOTIABLE]
+
+**80% of content is information. 20% (maximum) is EdifyEdu branding.**
+
+Information includes:
+- University facts (fees, eligibility, duration, rankings, approvals)
+- Program details (syllabus, specialisations, electives)
+- Honest limits (red flags, who this does not suit)
+- Comparative context (how this compares to 2-3 peer unis)
+- Practical guidance (admission process, documents, exam pattern)
+- Career outcomes (placement data, salary ranges, hirers)
+
+EdifyEdu branding is limited to:
+- One "commission-free" disclosure (once per page, in About section)
+- One "how EdifyEdu helps" block (the Beyond Admission section)
+- CTA buttons (counsellor call, coupon reveal, sample cert request)
+- That's it. No "EdifyEdu believes," "EdifyEdu recommends," "EdifyEdu assures" sprinkled
+  throughout body content.
+
+**Voice calibration check before publishing:**
+- Read the draft. Count how many times "EdifyEdu" appears.
+- If more than 5 times on a 2,500 word page, cut until it is 3-5 total.
+- If the reader cannot learn anything useful without EdifyEdu branded phrasing, the
+  content has failed.
+
+**Model to emulate:** A knowledgeable friend. They know the subject. They give you
+information. They mention where they work only when relevant. They do not pitch.
+
+## Research workflow (always run first)
+
+Before writing any university review:
+
+1. **Fetch official university site** for fees, eligibility, syllabus, faculty, approvals
+2. **Fetch UGC-DEB portal** (deb.ugc.ac.in) to verify approval status and date
+3. **Fetch NIRF rankings** (nirfindia.org) for the latest year
+4. **Fetch NAAC grade** from the official NAAC site
+5. **SERP scan** on "{university name} online MBA" to see what top 3 competitors cover
+6. **Identify gaps** — what do competitors miss that students actually care about?
+
+If any of the above cannot be verified, the statistic is not used. Do not fabricate.
+
+## Content structure (21 sections for a full uni × program page)
+
+Follow the Amity_MBA_Example template in data/EdifyEdu_Page_Blueprint_v3.xlsx.
+
+Each section has a word count target. Hit within ±15% of target.
+
+1. Hero introduction (85 words)
+2. About the program (110 words)
+3. Approvals and rankings (120 words)
+4. Who can apply (75 words)
+5. Class schedule and delivery (135 words)
+6. Exams and evaluation (95 words)
+7. Specialisations overview (105 words, for program pages; for spec pages this is curriculum depth)
+8. Syllabus semester-wise (115 words intro; actual syllabus is structured data)
+9. Fees and payment (130 words)
+10. Coupon and discount (90 words)
+11. EMI plans (100 words)
+12. Sample certificate (55 words)
+13. Admission process (120 words)
+14. Placements (125 words)
+15. Top hirers (85 words)
+16. Beyond Admission: EdifyEdu Network (90 words — this is THE branded section)
+17. Student reviews (structured data; intro 60 words)
+18. Red Flags (170 words, 4 flags x ~40 words each)
+19. Comparisons (140 words, vs 2-3 peers)
+20. Honest Verdict (155 words — who this suits / who should look elsewhere)
+21. FAQs (10 Q&A, 40-60 words per answer)
+
+Total: 2,500-3,000 words.
+
+## Writing rules specific to university reviews
+
+### Honesty markers
+- Fees always marked "indicative, confirm with counsellor"
+- Rankings always dated (NIRF 2024, not just NIRF)
+- Placement data cited with source year
+- Red Flags section never softened — the honest limits are the moat
+
+### Red Flags rules (critical)
+- Exactly 4 flags per page (not 5, not 3)
+- Each flag is 2 sentences:
+  - Sentence 1: the honest limit
+  - Sentence 2: constructive context (who this suits, what it really means, or an alternative)
+- No fragment bullets ("Students wanting campus life")
+- No extreme statements ("This program is useless for investment banking")
+- Tone: a senior friend being direct, not a critic trying to tear down
+
+### Comparisons section
+- Compare to 2-3 real peer universities by NIRF band
+- Table format: Fees, NIRF rank, NAAC, Flexibility, Placement strength, Specialisation count
+- Never link to competitors
+- Use actual numbers. If data is missing for a peer, mark "Not publicly available"
+
+### Honest Verdict
+- Two subsections: "Choose this if..." and "Look elsewhere if..."
+- 3-4 bullet points each, each 10-15 words
+- Specific, not generic
+- Do not recommend EdifyEdu counselling in this section — that's what the sidebar CTA does
+
+### FAQs
+- 10 questions that a real prospective student asks
+- Answers 40-60 words each
+- Include at least 2 questions about limitations or concerns
+- Include 1 question about "is this UGC approved" (answered factually)
+- Never include "Why choose EdifyEdu" or self-promotional questions
+
+## Editorial voice (EdifyEdu house style)
+
+### Who the writer sounds like
+A former admissions counsellor who now runs an independent comparison platform. Has
+opinions. Does not mince words. Respects the reader's intelligence.
+
+### What the writer does NOT sound like
+- A brochure writer
+- An SEO farm
+- An affiliate reviewer
+- A promotional copywriter
+
+### Examples of correct tone
+
+Wrong: "Amity University Online offers a world-class MBA program that empowers students
+to unlock their potential in today's dynamic business landscape."
+
+Right: "Amity's online MBA is UGC-DEB approved and runs on the same curriculum as its
+Noida campus program. The degree is legally identical. Whether it delivers the same
+career outcomes depends on your field — for corporate mid-management, yes; for
+investment banking targeting IIM brands, no."
+
+### Branding insertions (exact rules)
+
+Only 3 places to mention EdifyEdu in body content:
+
+1. **In the About section, once:** "EdifyEdu verifies these figures independently. We do
+   not take commission from Amity or any university, which means this page reflects the
+   numbers we can actually stand behind."
+
+2. **In the Beyond Admission section, naturally:** "EdifyEdu connects enrolled students
+   with 2-3 alumni from {uni} working in the student's target industry, runs a free
+   30-minute career transition call, and shares monthly job referrals curated to the
+   student's profile."
+
+3. **In the Honest Verdict, optionally:** (Not required) "If you're still undecided,
+   our counsellor call is free. No commission, no pressure."
+
+That's it. Nowhere else does "EdifyEdu" appear in body prose.
+
+## Apply humanizer skill after drafting
+
+Every review generated must be run through the humanizer skill before finalizing:
+- Removes em dashes
+- Removes AI vocabulary
+- Fixes rule-of-three patterns
+- Varies paragraph length
+- Replaces promotional inflation with specific facts
+
+## Forbidden patterns [hard rules]
+
+- Links to CollegeVidya, Shiksha, Careers360, Jaro, padhaao, admissiondiy, samarthedu,
+  kollegeapply or any commercial competitor
+- Fabricated statistics
+- "Book your free demo class now"
+- "Limited seats available"
+- "Don't miss this opportunity"
+- Any urgency manufactured by the writer (urgency is fine when the university has a real
+  deadline; making one up is not)
+- Fake student testimonials
+- Guarantees about placements or salary
+- Promotional adjectives (world-class, premier, elite, best-in-class)
+
+## Output format
+
+Every review generated returns:
+1. Full HTML body (or Excel sheet for batch generation, one sheet per uni)
+2. Meta title (50-60 chars)
+3. Meta description (150-160 chars)
+4. Focus keyword
+5. 3-5 LSI keywords
+6. Internal link targets (EdifyEdu tools, related universities, related specializations)
+7. QA checklist result:
+   - Word count ✓
+   - Fees verified against official portal ✓
+   - Rankings cited with year ✓
+   - Red Flags: 4 flags with 2 sentences each ✓
+   - EdifyEdu mentions: 3-5 total ✓
+   - No competitor links ✓
+   - Humanizer applied ✓

@@ -100,7 +100,7 @@ export async function generateMetadata(
 }
 
 export const dynamicParams = true
-export const revalidate = 3600
+export const revalidate = false
 
 export async function generateStaticParams() {
   const posts = getPublishedPosts()
@@ -173,7 +173,7 @@ export default async function BlogPostPage({ params }: Props) {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Edify',
+      name: 'edifyedu.in',
       url: 'https://edifyedu.in',
       logo: {
         '@type': 'ImageObject',

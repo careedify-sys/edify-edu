@@ -61,16 +61,16 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
-    title: 'Edify',
+    title: 'edifyedu.in',
   },
   openGraph: {
-    siteName: 'Edify — edifyedu.in',
+    siteName: 'edifyedu.in',
     type: 'website',
     locale: 'en_IN',
     title: 'Online Universities in India 2026 | Compare Fees & Programs | EdifyEdu',
     description: 'Compare 125+ UGC DEB approved online universities in India 2026. Check NIRF ranks, fees & placements. Zero paid rankings. Free expert guidance.',
     url: 'https://edifyedu.in',
-    images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: "Edify — India's honest guide to online degrees" }],
+    images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: "edifyedu.in — India's honest guide to online degrees" }],
   },
   twitter: { card: 'summary_large_image', site: '@edifyedu', title: 'Online Universities in India 2026 | Compare Fees & Programs | EdifyEdu', description: 'Compare 100+ UGC-DEB approved online universities in India. Check fees, syllabus, placements and choose the best program for you.' },
   robots: {
@@ -99,7 +99,7 @@ export const metadata: Metadata = {
 const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Edify',
+  name: 'edifyedu.in',
   url: 'https://edifyedu.in',
   logo: {
     '@type': 'ImageObject',
@@ -107,7 +107,7 @@ const orgSchema = {
     width: 192,
     height: 192,
   },
-  description: 'Independent guide to UGC DEB approved online degrees in India',
+  description: 'Independent guide to UGC DEB approved online degrees in India. edifyedu.in',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Delhi',
@@ -130,7 +130,7 @@ const orgSchema = {
 const siteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Edify',
+  name: 'edifyedu.in',
   url: 'https://edifyedu.in',
   potentialAction: {
     '@type': 'SearchAction',
@@ -151,9 +151,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="manifest" href="/manifest.json" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="apple-mobile-web-app-title" content="Edify" />
+        <meta name="apple-mobile-web-app-title" content="edifyedu.in" />
         <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="application-name" content="Edify" />
+        <meta name="application-name" content="edifyedu.in" />
         {/* Structured data */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }} />

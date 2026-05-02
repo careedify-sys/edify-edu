@@ -105,7 +105,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Edify',
+    name: 'edifyedu.in',
     url: 'https://edifyedu.in',
     logo: { '@type': 'ImageObject', url: 'https://edifyedu.in/logos/edify_logo_192.png', width: 192, height: 192 },
   },

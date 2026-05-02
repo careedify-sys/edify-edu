@@ -64,7 +64,7 @@ export default async function GuidePage({ params }: Props) {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Edify',
+      name: 'edifyedu.in',
       url: 'https://edifyedu.in',
       logo: { '@type': 'ImageObject', url: 'https://edifyedu.in/logos/edify_logo_192.png', width: 192, height: 192 },
     },
@@ -108,7 +108,7 @@ export default async function GuidePage({ params }: Props) {
               </div>
               <div>
                 <div className="text-sm font-semibold text-navy leading-none mb-0.5">Rishi Kumar</div>
-                <div className="text-xs text-ink-3">Edify Admissions Research · {guide.readTime} · Updated April 2026</div>
+                <div className="text-xs text-ink-3">edifyedu.in Admissions Research · {guide.readTime} · Updated April 2026</div>
               </div>
             </div>
           </div>
@@ -182,4 +182,4 @@ export default async function GuidePage({ params }: Props) {
   )
 }
 
-export const revalidate = 86400
+export const revalidate = 604800

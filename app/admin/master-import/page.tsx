@@ -411,7 +411,7 @@ export default function MasterImportPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           files: filesToPush,
-          commitMessage: `📊 Edify Master Update — ${new Date().toLocaleDateString('en-IN')} — ${uniRows.length} unis, ${blogRows.length} posts`,
+          commitMessage: `📊 edifyedu.in Master Update — ${new Date().toLocaleDateString('en-IN')} — ${uniRows.length} unis, ${blogRows.length} posts`,
         }),
       })
 
@@ -472,7 +472,7 @@ export default function MasterImportPage() {
         <div style={{background:'var(--surface)',border:'1px solid var(--border)',borderRadius:'var(--r-sm)',padding:'16px 20px',marginBottom:16,display:'flex',alignItems:'center',gap:12,flexWrap:'wrap'}}>
           <FileSpreadsheet size={20} color="var(--sage)"/>
           <div className="flex-1">
-            <div className="text-[13px] font-bold text-navy">Edify Master Update Sheet</div>
+            <div className="text-[13px] font-bold text-navy">edifyedu.in Master Update Sheet</div>
             <div className="text-[11px] text-ink-3">127 universities, 516 programs, syllabus, blogs, guides — all pre-filled</div>
           </div>
           <a href="/university-data/Edify_Master_Update.xlsx" download

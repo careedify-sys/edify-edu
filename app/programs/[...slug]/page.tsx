@@ -209,7 +209,7 @@ export default async function CatchAllProgramPage(
     description: activeSpec
       ? `UGC DEB approved online ${program} with ${activeSpec} specialisation. Compare ${universities.length} top-ranked universities in India.`
       : `UGC DEB approved online ${program} programs in India. Compare ${universities.length} top-ranked universities. Fees from ₹${Math.round(feeMin/1000)}K.`,
-    provider: { '@type': 'Organization', name: 'Edify', sameAs: 'https://edifyedu.in' },
+    provider: { '@type': 'Organization', name: 'edifyedu.in', sameAs: 'https://edifyedu.in' },
     educationalLevel: program.startsWith('M') ? 'Postgraduate' : 'Undergraduate',
     offers: {
       '@type': 'Offer',

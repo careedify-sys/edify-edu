@@ -2,7 +2,7 @@
 // Edit values in the "🌐 Site Config" Google Sheet, then sync
 
 export const SITE_CONFIG = {
-  "site_name": "Edify",
+  "site_name": "edifyedu.in",
   "tagline": "Best Online Degrees India 2026",
   "admissions_batch": "2026-06-30T18:30:00.000Z",
   "admissions_deadline": "October 15–30, 2026",

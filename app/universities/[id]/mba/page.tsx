@@ -66,4 +66,4 @@ export default async function OnlineMBAPage(
   return <UniProgramBody u={u} program="MBA" programSlug="mba" pd={pd} />
 }
 
-export const revalidate = 21600
+export const revalidate = false

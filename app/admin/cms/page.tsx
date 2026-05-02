@@ -555,7 +555,7 @@ export default function CMSDashboard() {
             {[
               {
                 n: '1', title: 'Create your Google Sheet',
-                body: 'Go to sheets.google.com → New blank spreadsheet → name it "Edify CMS". This sheet will be the single source of truth for all your website content.',
+                body: 'Go to sheets.google.com → New blank spreadsheet → name it "edifyedu.in CMS". This sheet will be the single source of truth for all your website content.',
               },
               {
                 n: '2', title: 'Add the Apps Script',

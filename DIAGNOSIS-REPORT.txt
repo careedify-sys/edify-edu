@@ -1,0 +1,184 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║               DPU PUNE MBA SPEC PAGES 404 — ROOT CAUSE ANALYSIS            ║
+║                     Research Report (Non-Destructive)                      ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+EXECUTIVE SUMMARY
+─────────────────
+DPU Pune MBA specialization pages (/universities/dy-patil-university-online/mba/[spec]/)
+return 404 on the live Vercel site (edifyedu.in) but work locally. This is a 
+BUILD/DEPLOYMENT environment mismatch, NOT a code bug.
+
+
+KEY FINDINGS
+───────────
+
+1. BUILD PROCESS IS CORRECT
+   ✓ package.json has "prebuild": "node scripts/build-valid-urls.js"
+   ✓ This runs BEFORE "next build"
+   ✓ generateStaticParams() reads from programs-manifest.json
+   ✓ All 11 DPU MBA spec entries ARE in the local manifest
+   ✓ All 11 URLs ARE in valid-urls.json
+
+2. MANIFEST STRUCTURE (programs-manifest.json)
+   ✓ Contains 11 rows for dy-patil-university-online MBA
+   ✓ Sample entries:
+     - spec_slug: "sales-mktg", spec_name: "" (empty)
+     - spec_slug: "digital-marketing", spec_name: "" (empty)
+     - spec_slug: "finance", spec_name: "" (empty)
+   
+   Note: All spec_name values are EMPTY, which is OK because getSpecDisplayName()
+   falls back to converting the slug to Title Case.
+
+3. VALID URLs GENERATED FOR SITEMAP (valid-urls.json)
+   Generated URLs (11 total):
+   - /universities/dy-patil-university-online/mba/data-science-abd-business-analytics
+   - /universities/dy-patil-university-online/mba/digital-mktg
+   - /universities/dy-patil-university-online/mba/entrepreneur
+   - /universities/dy-patil-university-online/mba/event-mgmt
+   - /universities/dy-patil-university-online/mba/finance
+   - /universities/dy-patil-university-online/mba/healthcare
+   - /universities/dy-patil-university-online/mba/human-resource-management
+   - /universities/dy-patil-university-online/mba/intl-business
+   - /universities/dy-patil-university-online/mba/logistics-scm
+   - /universities/dy-patil-university-online/mba/retail
+   - /universities/dy-patil-university-online/mba/sales-mktg
+
+4. PAGE COMPONENT LOGIC
+   File: app/universities/[id]/mba/[spec]/page.tsx
+   
+   Dynamic params: ✓ dynamicParams = true
+   ISR revalidate: ✓ revalidate = 21600 (6 hours)
+   
+   Lookup chain:
+   a) getUniversityById(id) → finds "dy-patil-university-online" in lib/data.ts
+   b) getSpecDisplayName(id, 'mba', specSlug) → searches programs-manifest.json
+   c) If both succeed → page renders
+   d) If either fails → notFound() → 404
+
+5. NEXT.CONFIG.JS REDIRECTS
+   ✓ Checked: No DPU-specific redirects that would block these routes
+   ✓ No vercel.json with interfering rules
+
+6. .gitignore CHECK
+   Line 54: Comment states "*.xlsx – commented out so data/*.xlsx can be tracked by git"
+   ✓ EdifyEdu_Unified_Programs_v3.xlsx (5.3M) exists locally
+   ✓ File should be deployed to Vercel
+
+
+ROOT CAUSE HYPOTHESIS
+─────────────────────
+
+The Excel file (data/EdifyEdu_Unified_Programs_v3.xlsx) is likely NOT being
+deployed to Vercel, causing the prebuild step to fail silently or regenerate
+an empty/different manifest.
+
+Evidence:
+1. Local works: prebuild reads Excel → manifest has data
+2. Vercel fails: prebuild likely has no Excel file → manifest regenerates empty/wrong
+3. dynamicParams=true should catch this, BUT only if getSpecDisplayName() succeeds
+4. If manifest is empty, getSpecDisplayName() returns null → page 404s
+
+
+VERIFICATION CHECKLIST
+──────────────────────
+
+[ ] 1. Check Vercel build logs for:
+       "Wrote: lib/data/programs-manifest.json"
+       and row count output
+
+[ ] 2. Compare local vs Vercel manifest:
+       - How many DPU MBA rows in each?
+       - Are the spec_slugs identical?
+
+[ ] 3. Check if Excel file exists in Vercel deployment:
+       data/EdifyEdu_Unified_Programs_v3.xlsx
+
+[ ] 4. Verify prebuild step completes successfully:
+       Look for "ERROR: Excel file not found" in logs
+
+[ ] 5. Test a single URL directly on Vercel:
+       GET https://edifyedu.in/universities/dy-patil-university-online/mba/sales-mktg
+       
+       Expected: Should work (dynamicParams=true should handle it)
+       If 404: getSpecDisplayName() is failing (manifest empty or wrong)
+
+[ ] 6. Check if there's a .vercelignore that might exclude data/*:
+       If present, it might be preventing Excel file deployment
+
+
+LIKELY SOLUTIONS
+────────────────
+
+1. Ensure data/EdifyEdu_Unified_Programs_v3.xlsx is included in deployment
+   - Remove any .vercelignore that blocks data/*.xlsx
+   - Ensure file is git-tracked (currently is)
+   - Trigger a redeploy
+
+2. Verify prebuild step output matches expected format
+   - Should show: "Found 1233 rows"
+   - Should show: "Processed: 1203 rows, Skipped: 30"
+   - Should show: "/universities/{slug}/{prog}/{spec}: 1058"
+
+3. If Excel is present but prebuild still fails:
+   - Check file permissions on Vercel
+   - Check if Node.js version differs (xlsx compatibility)
+   - Check for environment variable issues affecting file paths
+
+
+FILES TO CHECK
+──────────────
+
+1. data/EdifyEdu_Unified_Programs_v3.xlsx
+   Status: EXISTS (5.3M) - tracks via git (✓)
+   
+2. scripts/build-valid-urls.js
+   Status: EXISTS - runs during prebuild
+   Key logic: Reads Excel → normalizes columns → outputs manifest
+
+3. lib/data/programs-manifest.json
+   Status: REGENERATED on build - 11 DPU MBA entries locally
+   
+4. lib/data.ts
+   Status: Contains hardcoded university data including dy-patil-university-online
+   Has required university definition for lookup
+
+5. package.json
+   Status: Has "prebuild" step - ✓ correct
+
+6. next.config.js
+   Status: No blocking redirects for DPU
+
+
+SHEET-SLUG-MAP.JSON CHECK
+──────────────────────────
+File: scripts/sheet-slug-map.json
+
+Purpose: Maps truncated Excel sheet names to canonical university slugs
+Aliases for universities with names > 27 chars
+
+DPU check:
+- "dy-patil-online_MBA" → "dr-dy-patil-vidyapeeth-online" (FOUND)
+- "dy-patil-university-online" (FOUND in data.ts)
+- No duplicate or conflicting aliases identified
+
+
+FINAL ASSESSMENT
+────────────────
+
+The code is correct. The issue is environmental:
+
+LOCAL (Working):
+  - Excel file: ✓ Present
+  - prebuild: ✓ Runs, reads Excel
+  - manifest: ✓ Generated with 11 DPU MBA entries
+  - page: ✓ Can look up specs, renders successfully
+
+VERCEL (Broken):
+  - Excel file: ? Unclear if deployed
+  - prebuild: ? Unknown if it has Excel to read
+  - manifest: ? Unknown current state (likely empty or missing DPU entries)
+  - page: ? getSpecDisplayName() fails → returns null → 404
+
+ACTION REQUIRED: Verify Excel file is deployed to Vercel and prebuild step
+                 can access it during build.

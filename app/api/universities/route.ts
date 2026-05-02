@@ -9,7 +9,7 @@ const progSlug = (p: string) =>
   p.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
 
 // Cached at Edge for 1 hour — revalidates on next build
-export const revalidate = 3600
+export const revalidate = 86400
 
 export function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url)
@@ -49,7 +49,7 @@ export function GET(req: NextRequest) {
 
   return NextResponse.json(result, {
     headers: {
-      'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
+      'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=86400',
     },
   })
 }

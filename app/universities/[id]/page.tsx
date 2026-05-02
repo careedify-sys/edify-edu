@@ -64,7 +64,7 @@ export async function generateMetadata(
       description,
       url: `https://edifyedu.in/universities/${u.id}`,
       type: 'website',
-      siteName: 'Edify',
+      siteName: 'edifyedu.in',
       images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: `${u.name} Online Programs` }],
     },
     twitter: {
@@ -155,7 +155,7 @@ export default async function UniversityPage(
 }
 
 // ── ISR Configuration — revalidate every 6 hours ──
-export const revalidate = 21600
+export const revalidate = false
 
 // ── Allow dynamic params for new universities added via CMS ──
 export const dynamicParams = true
