@@ -35,9 +35,44 @@ function loadManifest(): ProgramRow[] {
   return _rows
 }
 
+// Spec slug aliases: different names for the same specialization
+// e.g. "financial-management" and "finance" are the same spec
+const SPEC_ALIASES: Record<string, string[]> = {
+  'finance': ['financial-management', 'finance-management', 'finance-and-accounting'],
+  'marketing': ['marketing-management', 'sales-and-marketing'],
+  'human-resource-management': ['hr-management', 'hrm', 'hr'],
+  'operations-management': ['operations', 'production-and-operations-management', 'production-management'],
+  'business-analytics': ['analytics', 'business-analytics-and-ai', 'data-analytics'],
+  'digital-marketing': ['digital-marketing-management', 'digital-mktg'],
+  'international-business': ['international-business-management', 'intl-business', 'ib'],
+  'healthcare-management': ['hospital-management', 'hospital-administration', 'hospital-healthcare-management', 'hospital-and-healthcare-management'],
+  'information-technology': ['it-management', 'information-technology-management', 'it'],
+  'supply-chain-management': ['logistics-and-supply-chain-management', 'logistics-supply-chain-management', 'logistics-scm', 'logistics-supply-chain', 'supply-chain-logistics'],
+  'entrepreneurship': ['entrepreneurship-and-leadership-management', 'entrepreneur'],
+  'data-science': ['data-science-and-analytics', 'data-science-analytics', 'data-science--ai'],
+  'general-management': ['general'],
+  'cyber-security': ['cybersecurity', 'cyber-security-and-forensics', 'cyber-security-forensics'],
+  'artificial-intelligence-and-machine-learning': ['ai-ml', 'ai-and-ml', 'artificial-intelligence-machine-learning', 'artificial-intelligence'],
+  'blockchain-technology': ['blockchain', 'blockchain-technologies'],
+  'cloud-computing': ['cloud-computing-and-internet-of-things', 'cloud-technology'],
+  'full-stack-development': ['full-stack-web-development', 'full-stack-development-and-devops', 'full-stack'],
+  'project-management': ['project-management-and-leadership'],
+  'retail-management': ['retail', 'retail-ops'],
+  'banking-and-insurance': ['banking-insurance', 'banking-finance', 'banking-and-financial-services', 'bfsi-banking-financial-services-and-insurance'],
+}
+
+// Build reverse map: alias -> canonical
+const _aliasToCanonical: Record<string, string> = {}
+for (const [canonical, aliases] of Object.entries(SPEC_ALIASES)) {
+  for (const alias of aliases) {
+    _aliasToCanonical[alias] = canonical
+  }
+}
+
 /**
  * Look up a single row by (university_slug, program[, spec_slug]).
- * Returns null if the Excel has no matching row.
+ * Falls back to alias matching if exact slug not found.
+ * Returns null if no matching row exists.
  */
 export function getProgram(
   slug: string,
@@ -47,9 +82,33 @@ export function getProgram(
   const prog = program.toLowerCase()
   const rows = loadManifest()
   if (specSlug) {
-    return rows.find(
+    // 1. Exact match
+    const exact = rows.find(
       r => r.university_slug === slug && r.program === prog && r.spec_slug === specSlug
-    ) ?? null
+    )
+    if (exact) return exact
+
+    // 2. Try alias: specSlug might be an alias for a canonical slug
+    const canonical = _aliasToCanonical[specSlug]
+    if (canonical) {
+      const aliasMatch = rows.find(
+        r => r.university_slug === slug && r.program === prog && r.spec_slug === canonical
+      )
+      if (aliasMatch) return aliasMatch
+    }
+
+    // 3. Try reverse: specSlug might be a canonical, check if any alias exists in manifest
+    const aliases = SPEC_ALIASES[specSlug]
+    if (aliases) {
+      for (const alias of aliases) {
+        const rev = rows.find(
+          r => r.university_slug === slug && r.program === prog && r.spec_slug === alias
+        )
+        if (rev) return rev
+      }
+    }
+
+    return null
   }
   return rows.find(r => r.university_slug === slug && r.program === prog) ?? null
 }

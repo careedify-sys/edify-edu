@@ -10,13 +10,15 @@ export default function ContactPage() {
     e.preventDefault()
     setStatus('sending')
     try {
-      const res = await fetch('https://api.web3forms.com/submit', {
+      const res = await fetch('/api/enquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '',
-          subject: 'Contact Form — Edify',
-          ...form,
+          name: form.name,
+          phone: form.phone,
+          email: form.email,
+          sourcePage: '/contact',
+          preferredUniversity: `Contact Form — ${form.message.slice(0, 100)}`,
         }),
       })
       if (res.ok) setStatus('sent')

@@ -32,7 +32,15 @@ export async function generateMetadata(
   const feeMax = Math.round(u.feeMax / 1000)
   const feeStr = feeMin === feeMax ? `₹${feeMin}K` : `₹${feeMin}K–₹${feeMax}K`
   const mainProg = u.programs[0] || 'MBA'
-  const description = `${titleName} online ${progStr}: fees ${feeStr}, NAAC ${u.naac}${u.nirf && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved. Admissions open ${year}.`
+  const specCount = Object.values(u.programDetails || {}).reduce((sum, pd) => sum + (pd?.specs?.length || 0), 0)
+  const nirfStr = u.nirf && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
+  const specStr = specCount > 3 ? ` ${specCount}+ specialisations available.` : ''
+  const cityStr = u.city && u.city !== 'Online' ? ` Based in ${u.city}.` : ''
+  let description = `${cleanName} online ${progStr}: fees ${feeStr}, NAAC ${u.naac}${nirfStr}. UGC DEB approved.${specStr}${cityStr} Compare fees, syllabus, placements. Admissions open ${year}.`
+  // Ensure 150+ chars
+  if (description.length < 150) {
+    description = `${cleanName} offers UGC DEB approved online ${progStr} programs. Fees from ${feeStr}. NAAC ${u.naac} accredited${nirfStr}.${specStr}${cityStr} Independent comparison of fees, syllabus and career outcomes at EdifyEdu. Admissions ${year}.`
+  }
 
   const keywords = [
     `${u.name} online ${mainProg} fees`,

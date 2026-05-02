@@ -63,6 +63,26 @@ const OLD_SLUG_REDIRECTS: Record<string, string> = {
   'jain': 'jain-university-online',
   'lpu': 'lovely-professional-university-online',
   'sikkim-manipal': 'sikkim-manipal-university-online',
+  'manipal-jaipur': 'manipal-university-jaipur-online',
+  'manipal': 'manipal-academy-higher-education-online',
+  'ignou': 'ignou-online',
+  'maharish-markande-universi': 'maharishi-markandeshwar-university-online',
+  'chatrapa-shahuji-maharaj-unive': 'chhatrapati-shahu-ji-maharaj-university-online',
+  'universi-of-petroleu-and': 'upes-online',
+  'uttaranc-universi': 'uttaranchal-university-online',
+  'madurai-kamaraj-universi': 'madurai-kamaraj-university-online',
+  'aligarh-muslim-universi': 'aligarh-muslim-university-online',
+  'guru-nanak-dev-universi': 'guru-nanak-dev-university-online',
+  'adichunc-universi': 'adichunchanagiri-university-online',
+  'centurio-universi-of-technolo': 'centurion-university-online',
+  'jamia-hamdard': 'jamia-hamdard-online',
+  'graphic-era-universi': 'graphic-era-university-online',
+  'shree-guru-gobind-singh': 'shree-guru-gobind-singh-tricentenary-university-online',
+  'kiit-universi': 'kiit-university-online',
+  'sage-universi': 'sage-university-online',
+  'iift': 'iift-online',
+  'guru-jambhesh-universi-of': 'guru-jambheshwar-university-online',
+  'bharati-vidyapee-universi': 'bharati-vidyapeeth-university-online',
 }
 
 const PROTECTED_PATHS = ['/admin', '/admin/cms', '/blog/write']
@@ -113,6 +133,51 @@ export function middleware(req: NextRequest) {
         : `/universities/${newSlug}${rest}`
       const url = req.nextUrl.clone()
       url.pathname = target
+      return NextResponse.redirect(url, 308)
+    }
+  }
+
+  // ── 2a0. online-X program prefix redirect (online-mcom → mcom, online-mba → mba) ───
+  const onlineProgMatch = pathname.match(/^\/universities\/([^/]+)\/(online-)(mba|mca|bba|bca|bcom|mcom|ma|ba|msc|bsc)(\/.*)?$/)
+  if (onlineProgMatch) {
+    const url = req.nextUrl.clone()
+    url.pathname = `/universities/${onlineProgMatch[1]}/${onlineProgMatch[3]}${onlineProgMatch[4] || ''}`
+    return NextResponse.redirect(url, 308)
+  }
+
+  // ── 2a. /programs/ spec slug redirects (Google-indexed bad slugs → correct ones) ───
+  const PROGRAM_SPEC_REDIRECTS: Record<string, string> = {
+    '/programs/mba/hospital-healthcare': '/programs/mba/healthcare-management',
+    '/programs/mba/digital-marketing-sales': '/programs/mba/digital-marketing',
+    '/programs/mba/tourism-event-management': '/programs/mba/entrepreneurship',
+    '/programs/mba/media--communication': '/programs/mba/digital-marketing',
+    '/programs/mca/cyber-security-cyber-forensics': '/programs/mca/cyber-security',
+    '/programs/bcom/gls-university-online': '/universities/gls-university-online/bcom',
+  }
+  if (PROGRAM_SPEC_REDIRECTS[pathname]) {
+    const url = req.nextUrl.clone()
+    url.pathname = PROGRAM_SPEC_REDIRECTS[pathname]
+    return NextResponse.redirect(url, 308)
+  }
+
+  // ── 2a2. Double-dash cleanup in any URL (media--communication → media-communication) ───
+  if (pathname.includes('--')) {
+    const url = req.nextUrl.clone()
+    url.pathname = pathname.replace(/--+/g, '-')
+    return NextResponse.redirect(url, 308)
+  }
+
+  // ── 2b. Program slug normalization (b-com → bcom, m-com → mcom, etc.) ───
+  const progFixMap: Record<string, string> = {
+    'b-com': 'bcom', 'm-com': 'mcom', 'b-sc': 'bsc', 'm-sc': 'msc',
+    'b-ba': 'bba', 'b-ca': 'bca', 'm-ba': 'mba', 'm-ca': 'mca',
+  }
+  const progMatch = pathname.match(/^\/universities\/([^/]+)\/([^/]+)(\/.*)?$/)
+  if (progMatch) {
+    const fixedProg = progFixMap[progMatch[2]]
+    if (fixedProg) {
+      const url = req.nextUrl.clone()
+      url.pathname = `/universities/${progMatch[1]}/${fixedProg}${progMatch[3] || ''}`
       return NextResponse.redirect(url, 308)
     }
   }

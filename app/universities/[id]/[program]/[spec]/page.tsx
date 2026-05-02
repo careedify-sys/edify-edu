@@ -60,7 +60,18 @@ export default async function UniversitySpecPage(
   if (!u || !program || !u.programDetails[program]) notFound()
 
   const pd      = u.programDetails[program]!
-  const specVal = pd.specs?.find(s => getSpecSlug(s) === specSlug)
+  let specVal = pd.specs?.find(s => getSpecSlug(s) === specSlug)
+  // Fallback: try manifest lookup which has alias support
+  if (!specVal) {
+    const { getSpecDisplayName } = require('@/lib/data/programs')
+    const aliasName = getSpecDisplayName(id, programSlug, specSlug)
+    if (aliasName) {
+      specVal = pd.specs?.find(s => {
+        const name = typeof s === 'string' ? s : s.name
+        return name === aliasName
+      })
+    }
+  }
   if (!specVal) notFound()
 
   return (

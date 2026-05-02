@@ -47,19 +47,7 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
     if (!n || p.length < 10) return
     setAlumniLoading(true)
 
-    await fetch('https://formspree.io/f/mojpvgwz', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        form_type: 'talk_to_alumnus',
-        name: n,
-        phone: p,
-        source: postTitle || 'blog',
-      }),
-    }).catch(() => {})
-
-    // Also log to internal leads API
-    fetch('/api/enquiry', {
+    await fetch('/api/enquiry', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -82,19 +70,7 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
     if (!n || p.length < 10) return
     setFormLoading(true)
 
-    await fetch('https://formspree.io/f/mojpvgwz', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        form_type: 'program_details',
-        name: n,
-        phone: p,
-        specialisation: formSpec || 'Not specified',
-        source: postTitle || 'blog',
-      }),
-    }).catch(() => {})
-
-    fetch('/api/enquiry', {
+    await fetch('/api/enquiry', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

@@ -7,6 +7,7 @@ import { EntryPopup, ExitIntentPopup } from '@/components/LeadCapture'
 import Footer from '@/components/Footer'
 import FloatingCTA from '@/components/FloatingCTA'
 import BottomNav from '@/components/BottomNav'
+import MobileLeadNudge from '@/components/MobileLeadNudge'
 
 // ── Fonts loaded via next/font (auto-optimised, no layout shift) ─────────
 const plusJakarta = Plus_Jakarta_Sans({
@@ -187,6 +188,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <FloatingCTA />
         <BottomNav />
+        <MobileLeadNudge />
         {/* ── Google Analytics 4 + Google Ads (afterInteractive = non-blocking) ── */}
         {process.env.NEXT_PUBLIC_GA4_ID && (
           <>

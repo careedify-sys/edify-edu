@@ -13,22 +13,25 @@ interface Props {
 export default function FAQBlock({ faqs, title = 'Frequently Asked Questions' }: Props) {
   const [open, setOpen] = useState<number | null>(0)
 
-  const faqSchema = {
+  const validFaqs = faqs.filter(f => f.q?.trim() && f.a?.trim())
+  const faqSchema = validFaqs.length > 0 ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: faqs.map(f => ({
+    mainEntity: validFaqs.map(f => ({
       '@type': 'Question',
-      name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
+      name: f.q.trim(),
+      acceptedAnswer: { '@type': 'Answer', text: f.a.trim() },
     })),
-  }
+  } : null
 
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-6">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <div className="flex items-center gap-2 mb-5">
         <HelpCircle size={16} className="text-slate-400" />
         <h2 className="text-lg font-bold" style={{ color: '#0B1533' }}>{title}</h2>

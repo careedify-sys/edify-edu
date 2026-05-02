@@ -31,17 +31,15 @@ export default function InlineCTAScript() {
       }
 
       try {
-        await fetch('https://formspree.io/f/mojpvgwz', {
+        await fetch('/api/enquiry', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            form_type: 'Inline Blog CTA',
-            source: source,
-            page_url: window.location.href,
-            page_title: document.title,
             name: name,
             phone: phone,
-            email: email || 'not provided',
+            email: email || '',
+            sourcePage: window.location.pathname,
+            preferredUniversity: 'Inline Blog CTA — ' + source,
           }),
         })
       } catch (e) {

@@ -32,6 +32,17 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
     }
 
+    // Validate phone: 10-digit Indian mobile
+    const cleanPhone = phone.replace(/\D/g, '').slice(-10)
+    if (!/^[6-9]\d{9}$/.test(cleanPhone)) {
+      return NextResponse.json({ error: 'Invalid phone number' }, { status: 400 })
+    }
+
+    // Validate email if provided
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      return NextResponse.json({ error: 'Invalid email format' }, { status: 400 })
+    }
+
     const timestamp = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })
     const universityValue = university || preferredUniversity || 'Not specified'
     const programValue = program || 'Not specified'
@@ -43,7 +54,7 @@ export async function POST(req: NextRequest) {
       const resend = new Resend(process.env.RESEND_API_KEY)
       resend.emails.send({
         from: 'EdifyEdu Leads <leads@edifyedu.in>',
-        to: ['hello@edifyedu.in', 'rishiupadhyay4787@gmail.com'],
+        to: [process.env.LEAD_EMAIL_PRIMARY || 'hello@edifyedu.in', ...(process.env.LEAD_EMAIL_SECONDARY ? [process.env.LEAD_EMAIL_SECONDARY] : [])],
         subject: `🎓 New Lead — ${name} | ${programValue} @ ${universityValue} | from: ${sourceValue}`,
         html: `
           <div style="font-family:sans-serif;max-width:500px">

@@ -240,6 +240,12 @@ export default async function CatchAllProgramPage(
     })),
   } : null
 
+  // If a sub-slug was provided but didn't resolve to any spec or university, 404
+  // This prevents duplicate content with the base program page canonical
+  if (subSlug && !activeSpec) {
+    notFound()
+  }
+
   // MBA spec hub page (e.g., /programs/mba/finance) — dedicated spec comparison
   if (program === 'MBA' && activeSpec && subSlug) {
     return (

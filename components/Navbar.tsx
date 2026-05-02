@@ -237,7 +237,7 @@ export default function Navbar() {
                 {megaOpen && (
                   <div
                     className="absolute top-full left-0 mt-2 bg-white rounded-2xl border border-border shadow-xl"
-                    style={{ width: '680px', zIndex: 9999 }}
+                    style={{ width: 'min(680px, calc(100vw - 32px))', zIndex: 9999 }}
                     onMouseEnter={openMega}
                     onMouseLeave={scheduledClose}
                   >
@@ -313,7 +313,7 @@ export default function Navbar() {
                                 <div className="flex items-start gap-2.5 mb-2">
                                   {u.logo ? (
                                     <div className="w-10 h-10 shrink-0 bg-white border border-slate-100 rounded-lg flex items-center justify-center p-1">
-                                      <img src={u.logo} alt="" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                                      <img src={u.logo} alt={u.name} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
                                     </div>
                                   ) : (
                                     <div className="w-10 h-10 shrink-0 rounded-lg flex items-center justify-center text-white text-xs font-bold" style={{ backgroundColor: u.color }}>
@@ -445,7 +445,7 @@ export default function Navbar() {
                       onClick={() => setMobileOpen(false)}>
                       {u.logo ? (
                         <div className="w-7 h-7 shrink-0 bg-white border border-slate-200 rounded flex items-center justify-center p-0.5 shadow-sm">
-                          <img src={u.logo} alt="" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                          <img src={u.logo} alt={u.name} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
                         </div>
                       ) : (
                         <div className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: u.color }} />

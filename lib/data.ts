@@ -295,7 +295,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Amity University Online — recognised for corporate hiring.'},
       'MCA': {
-        specs: ['general', 'Artificial Intelligence and Machine Learning', 'Financial Technology and AI', 'Cyber Security', 'Software Engineering', 'Blockchain Technology'],
+        specs: ['General', 'Artificial Intelligence and Machine Learning', 'Financial Technology and AI', 'Cyber Security', 'Software Engineering', 'Blockchain Technology'],
         fees: '₹1.7L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -1931,7 +1931,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from NMIMS (Narsee Monjee Institute of M — recognised for corporate hiring.'},
       'BBA': {
-        specs: ['Marketing', 'Finance', 'Business Analytics (student\'s choice)'],
+        specs: ['Marketing', 'Finance', 'Business Analytics'],
         fees: '₹60K – ₹200K',
         duration: '3 Years (6-year max validity)',
         roles: ['Sales Executive', 'Marketing Trainee', 'Business Analyst Trainee'],
@@ -2259,7 +2259,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA'],
     programDetails: {
       'MBA': {
-        specs: ['Digital Marketing', 'Human Resource Management, Marketing Management, F', 'Business Analytics'],
+        specs: ['Digital Marketing', 'Human Resource Management', 'Marketing Management', 'Financial Management', 'Business Analytics'],
         fees: '₹141K – ₹141K',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -2365,7 +2365,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved B.Com from Integral University (Integral Onlin — recognised for corporate hiring.',
       },
       'BA': {
-        specs: ['English, Urdu, Hindi, History, Political Science,'],
+        specs: ['English', 'Urdu', 'Hindi', 'History', 'Political Science'],
         fees: '₹36K – ₹36K',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -2425,7 +2425,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'M.Com', 'BA', 'B.Com', 'BBA', 'BCA', 'MA'],
     programDetails: {
       'MBA': {
-        specs: ['Marketing, Finance, Human Resource Management,'],
+        specs: ['Marketing', 'Finance', 'Human Resource Management'],
         fees: '₹160K – ₹160K',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -2448,7 +2448,7 @@ export const UNIVERSITIES: University[] = [
       
 
       'BBA': {
-        specs: ['General, Banking and Financial Services, Digital'],
+        specs: ['Banking and Financial Services', 'Digital Marketing'],
         fees: '₹180K – ₹180K',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -2458,7 +2458,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved BBA from Manav Rachna Centre for Distance an — recognised for corporate hiring.',
       },
       'BCA': {
-        specs: ['Cyber Security, Data Science and Big Data Analytic'],
+        specs: ['Cyber Security', 'Data Science and Big Data Analytics'],
         fees: '₹150K – ₹150K',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -2568,7 +2568,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved B.Com from Karnataka State Open University (KS — recognised for corporate hiring.',
       },
       'BA': {
-        specs: ['History, Economics, Political Science, Sociology,'],
+        specs: ['History', 'Economics', 'Political Science', 'Sociology'],
         fees: '₹10K – ₹30K',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -2578,7 +2578,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved BA from Karnataka State Open University (KS — recognised for corporate hiring.',
       },
       'M.Com': {
-        specs: ['Accounting and Finance, Marketing Management and H'],
+        specs: ['Accounting and Finance', 'Marketing Management', 'Human Resource Management'],
         fees: '₹40K – ₹40K',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -2744,7 +2744,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Guru Ghasidas Vishwavidyalaya (GGU) — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: [],
+        specs: ['General'],
         fees: '₹1.3L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -2829,7 +2829,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Dr. Babasaheb Ambedkar Open Univers — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: [],
+        specs: ['General'],
         fees: '₹50K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -2903,7 +2903,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'B.Com', 'BBA', 'BCA', 'MA', 'MSc'],
     programDetails: {
       'MBA': {
-        specs: ['Finance, Marketing, Human Resource Management,'],
+        specs: ['Finance', 'Marketing', 'Human Resource Management'],
         fees: '₹30K – ₹120K',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -2926,7 +2926,7 @@ export const UNIVERSITIES: University[] = [
       
 
       'BBA': {
-        specs: ['Marketing, Finance, Human Resource Management'],
+        specs: ['Marketing', 'Finance', 'Human Resource Management'],
         fees: '₹0.2L – ₹1.2L',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -2997,7 +2997,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'BBA', 'M.Com', 'BCA', 'MA', 'MSc'],
     programDetails: {
       'MBA': {
-        specs: ['General, Hospital Administration, International'],
+        specs: ['Hospital Administration', 'International Business'],
         fees: '₹32K – ₹130K',
         duration: '2 Years',
         roles: ['Management Trainee', 'Operations Executive', 'Supply'],
@@ -3335,7 +3335,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from CHARUSAT (Charotar University of Sc — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: [],
+        specs: ['General'],
         fees: '₹1.5L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -3480,7 +3480,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Maharishi Markandeshwar (Deemed to — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: [],
+        specs: ['General'],
         fees: '₹1.0L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -3493,7 +3493,7 @@ export const UNIVERSITIES: University[] = [
       
 
       'BBA': {
-        specs: ['General, Digital Marketing, Business Analytics, Ba'],
+        specs: ['General', 'Digital Marketing', 'Business Analytics', 'Banking and Finance'],
         fees: '₹108K – ₹108K',
         duration: '3 Years (Honours: 4 Years)',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -3629,7 +3629,7 @@ export const UNIVERSITIES: University[] = [
       
       
       'BBA': {
-        specs: ['General, Digital Marketing, Retail Management, Fin'],
+        specs: ['General', 'Digital Marketing', 'Retail Management', 'Finance'],
         fees: '₹132K – ₹132K',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -3639,7 +3639,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved BBA from Vivekananda Global University (VGU — recognised for corporate hiring.',
       },
       'BCA': {
-        specs: ['UX, Data Science, CTIS (Cloud Tech & Info Security'],
+        specs: ['General', 'UX Design', 'Data Science', 'Cloud Technology and Information Security'],
         fees: '₹132K – ₹132K',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -3649,7 +3649,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved BCA from Vivekananda Global University (VGU — recognised for corporate hiring.',
       },
       'BA': {
-        specs: ['Economics, Political Science, English, History, Co'],
+        specs: ['General', 'Economics', 'Political Science', 'English', 'History', 'Commerce'],
         fees: '₹72K – ₹72K',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -4180,7 +4180,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Kurukshetra University – Online (ku — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: [],
+        specs: ['General'],
         fees: '₹76.6K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -4406,7 +4406,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Christ (Deemed to be University) On — recognised for corporate hiring.'},
       'MCA': {
-        specs: [],
+        specs: ['General'],
         fees: '₹2.3L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -4471,7 +4471,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA', 'MCA', 'BBA', 'BCA'],
     programDetails: {
       'MBA': {
-        specs: ['Marketing Management, Financial Management, Human'],
+        specs: ['Marketing Management', 'Financial Management', 'Human Resource Management'],
         fees: '₹120K – ₹120K',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -4824,7 +4824,7 @@ export const UNIVERSITIES: University[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Alliance University (Online) — recognised for corporate hiring.'},
       'BBA': {
-        specs: ['Finance, Marketing, Human Resource Management,'],
+        specs: ['Finance', 'Marketing', 'Human Resource Management'],
         fees: '₹0.2L – ₹1.1L',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -4959,7 +4959,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Ganpat University — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: [],
+        specs: ['General'],
         fees: '₹97K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -5085,7 +5085,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Guru Nanak Dev University – ODL (gn — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['general'],
+        specs: ['General'],
         fees: '₹0K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -5189,7 +5189,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MCA', 'BBA', 'BCA'],
     programDetails: {
       'MCA': {
-        specs: ['general'],
+        specs: ['General'],
         fees: '₹1.6L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -5873,7 +5873,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Datta Meghe Institute of Higher Edu — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['general'],
+        specs: ['General'],
         fees: '₹70K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -5971,7 +5971,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from Centurion University of Technology — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['general'],
+        specs: ['General'],
         fees: '₹1K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -6013,7 +6013,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MCA'],
     programDetails: {
       'MCA': {
-        specs: ['general'],
+        specs: ['General'],
         fees: '₹1K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -6056,7 +6056,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MCA', 'BBA'],
     programDetails: {
       'MCA': {
-        specs: ['general'],
+        specs: ['General'],
         fees: '₹0K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -6069,7 +6069,7 @@ export const UNIVERSITIES: University[] = [
       
       
       'BBA': {
-        specs: ['Fintech, Digital Marketing, Aviation Management'],
+        specs: ['Fintech', 'Digital Marketing', 'Aviation Management'],
         fees: '₹104K – ₹104K',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -6122,7 +6122,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'UGC DEB approved MBA from B.S. Abdur Rahman Crescent Institut — recognised for corporate hiring.',
       },
       'MCA': {
-        specs: ['general'],
+        specs: ['General'],
         fees: '₹1K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -6535,7 +6535,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA'],
     programDetails: {
       'MBA': {
-        specs: ['Data Science and Analytics, Digital Finance, Marke'],
+        specs: ['Data Science and Analytics', 'Digital Finance', 'Marketing'],
         fees: '₹500K – ₹500K',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -6699,7 +6699,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA'],
     programDetails: {
       'MBA': {
-        specs: ['Finance, Human Resource Management, Marketing,'],
+        specs: ['Finance', 'Human Resource Management', 'Marketing'],
         fees: '₹20K – ₹80K',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -6738,7 +6738,7 @@ export const UNIVERSITIES: University[] = [
     programs: ['MBA'],
     programDetails: {
       'MBA': {
-        specs: ['Marketing Management, Financial Management, Human'],
+        specs: ['Marketing Management', 'Financial Management', 'Human Resource Management'],
         fees: '₹80K – ₹80K',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
@@ -6911,7 +6911,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'MBA from JAMIA HAMDARD is UGC DEB approved and valid for corporate hiring and government roles across India.',
       },
       'MCA': {
-        specs: [],
+        specs: ['General'],
         fees: '₹87.5K',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -8489,7 +8489,7 @@ export const UNIVERSITIES: University[] = [
         careerOutcome: 'MBA from MATS UNIVERSITY is UGC DEB approved and valid for corporate hiring and government roles across India.',
       },
       'MCA': {
-        specs: [],
+        specs: ['General'],
         fees: '₹TBD',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],

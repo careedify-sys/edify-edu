@@ -127,5 +127,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.70,
   }))
 
+  // ── Verify pages (from Supabase) ──────────────────────────────────────────
+  // Disabled at build time — Supabase dynamic import causes SWC syntax errors
+  // in the sitemap metadata route. Verify pages will be added once Supabase
+  // env vars are configured on Vercel and the import issue is resolved.
+
   return [...registryPages, ...toolPages, ...blogPages, ...guidePages]
 }

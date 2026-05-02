@@ -51,7 +51,15 @@ export async function generateMetadata(
   const cleanName = u.name.replace(/\s+online\s*$/i, '')
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const title = `${titleName} Online ${program} — Fees & Syllabus ${year} | EdifyEdu`
-  const description = `${titleName} online ${program}: fees ${pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`}, ${pd?.duration || '2 Yrs'}${pd?.specs?.length ? `, ${pd.specs.length}+ specialisations` : ''}. NAAC ${u.naac}${u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved.`
+  const fees = pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`
+  const duration = pd?.duration || '2 Yrs'
+  const specCount = pd?.specs?.length || 0
+  const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
+  const specStr = specCount > 0 ? ` ${specCount}+ specialisations available.` : ''
+  let description = `${cleanName} online ${program}: fees ${fees}, ${duration}${nirfStr}. NAAC ${u.naac}. UGC DEB approved.${specStr} Compare syllabus, placements and career outcomes. Admissions ${year}.`
+  if (description.length < 150) {
+    description = `${cleanName} offers UGC DEB approved online ${program} program. Fees ${fees}, duration ${duration}. NAAC ${u.naac} accredited${nirfStr}.${specStr} Independent comparison at EdifyEdu. Admissions open ${year}.`
+  }
 
   const keywords = [
     `${u.name} online ${program} fees`,

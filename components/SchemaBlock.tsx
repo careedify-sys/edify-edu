@@ -101,23 +101,13 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
     } : {}),
   }
 
-  const faqSchema = faqs?.length ? {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map(f => ({
-      '@type': 'Question',
-      name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
-    })),
-  } : null
+  // FAQPage schema removed — rendered once by FAQBlock.tsx to avoid duplicate
+  // rich result errors in Google Search Console
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
-      {faqSchema && (
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      )}
     </>
   )
 }

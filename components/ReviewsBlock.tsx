@@ -28,21 +28,18 @@ export default function ReviewsBlock({ universityId, program }: Props) {
   const avgRating = reviews.reduce((s, r) => s + r.rating, 0) / reviews.length
   const rounded   = Math.round(avgRating * 10) / 10
 
-  const aggregateSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'AggregateRating',
-    ratingValue: rounded.toFixed(1),
-    reviewCount: reviews.length,
-    bestRating: '5',
-    worstRating: '1',
-  }
+  // AggregateRating removed as standalone — Google requires itemReviewed.
+  // Rating is already nested inside Course schema in SchemaBlock.tsx.
+  const aggregateSchema = null
 
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-6">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateSchema) }}
-      />
+      {aggregateSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateSchema) }}
+        />
+      )}
 
       <div className="flex items-center gap-3 mb-5">
         <h2 className="text-lg font-bold" style={{ color: '#0B1533' }}>Student Reviews</h2>

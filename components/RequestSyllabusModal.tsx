@@ -23,8 +23,9 @@ export default function RequestSyllabusModal({ universityId, universityName, pro
 
   useEffect(() => {
     setMounted(true)
+    const prev = document.body.style.overflow
     document.body.style.overflow = 'hidden'
-    return () => { document.body.style.overflow = '' }
+    return () => { document.body.style.overflow = prev }
   }, [])
 
   useEffect(() => {

@@ -10,7 +10,7 @@ import { MetadataRoute } from 'next'
 
 // /compare? blocks all /compare?a=X&b=Y query-param variants from crawling.
 // The canonical for /compare is always https://edifyedu.in/compare (no params).
-const BLOCKED = ['/admin/', '/api/', '/blog/write', '/blog/new', '/admin/excel-import/', '/university-data/', '/compare?']
+const BLOCKED = ['/admin/', '/api/', '/blog/write', '/blog/new', '/admin/excel-import/', '/university-data/', '/compare?', '/dashboard/']
 const ADMIN_BLOCKED = ['/admin/', '/api/', '/admin/excel-import/', '/compare?']
 const API_BLOCKED = ['/admin/', '/api/', '/compare?']
 

@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { cookies } from 'next/headers'
 
 function isAuthed(req: NextRequest) {
-  const cookie = req.cookies.get('edify_session')?.value
+  const cookie = req.cookies.get('edify_admin_session')?.value
   const sessionToken = process.env.ADMIN_SESSION_TOKEN
   return cookie && cookie === sessionToken
 }

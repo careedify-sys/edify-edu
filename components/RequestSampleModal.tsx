@@ -23,9 +23,10 @@ export default function RequestSampleModal({ universityId, universityName, progr
 
   useEffect(() => {
     setMounted(true)
-    // Body scroll lock
+    // Body scroll lock — save previous value to avoid conflicts with other modals
+    const prev = document.body.style.overflow
     document.body.style.overflow = 'hidden'
-    return () => { document.body.style.overflow = '' }
+    return () => { document.body.style.overflow = prev }
   }, [])
 
   // Focus trap + Escape key
