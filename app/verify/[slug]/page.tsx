@@ -1,5 +1,4 @@
-import { notFound } from 'next/navigation';
-import { createSupabaseServerClient } from '@/lib/supabase/server';
+import { notFound, redirect } from 'next/navigation';
 import { brand } from '@/lib/brand';
 import { VerifyHero } from '@/components/verify/VerifyHero';
 import { ProReportCTAPlaceholder } from '@/components/verify/ProReportCTAPlaceholder';
@@ -22,9 +21,22 @@ const BRAND_SLUGS: Record<string, string> = {
   'amity-online': 'amity',
 };
 
+async function getSupabase() {
+  try {
+    const { createClient } = await import('@supabase/supabase-js');
+    return createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    );
+  } catch {
+    return null;
+  }
+}
+
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
-  const supabase = await createSupabaseServerClient();
+  const supabase = await getSupabase();
+  if (!supabase) return { title: `Verify ${slug} — edifyedu.in` };
 
   const brandSlug = BRAND_SLUGS[slug];
 
@@ -62,7 +74,8 @@ export async function generateMetadata({ params }: PageProps) {
 
 export default async function VerifyPage({ params }: PageProps) {
   const { slug } = await params;
-  const supabase = await createSupabaseServerClient();
+  const supabase = await getSupabase();
+  if (!supabase) redirect('/verify');
 
   // Check if this is a brand-merged page
   const brandSlug = BRAND_SLUGS[slug];

@@ -34,10 +34,13 @@ export const dynamic = 'force-dynamic';
 export default async function VerifyHomePage() {
   let list: any[] = [];
 
-  // Try Supabase first, fallback to local data if it fails
+  // Use simple Supabase client (no cookies needed for public read-only page)
   try {
-    const { createSupabaseServerClient } = await import('@/lib/supabase/server');
-    const supabase = await createSupabaseServerClient();
+    const { createClient } = await import('@supabase/supabase-js');
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    );
     const { data: universities } = await supabase
       .from('universities')
       .select('slug, name, short_name, city, state, is_ioe, programme_count, brand_slug, aliases, university_type')
