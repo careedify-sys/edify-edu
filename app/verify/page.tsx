@@ -35,20 +35,28 @@ export default async function VerifyHomePage() {
   let list: any[] = [];
 
   // Use simple Supabase client (no cookies needed for public read-only page)
-  try {
-    const { createClient } = await import('@supabase/supabase-js');
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL!,
-      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-    );
-    const { data: universities } = await supabase
-      .from('universities')
-      .select('slug, name, short_name, city, state, is_ioe, programme_count, brand_slug, aliases, university_type')
-      .eq('ugc_deb_status', 'approved')
-      .order('name');
-    list = universities ?? [];
-  } catch {
-    // Supabase unavailable — fallback to local university data
+  const supaUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const supaKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+  if (supaUrl && supaKey) {
+    try {
+      const { createClient } = await import('@supabase/supabase-js');
+      const supabase = createClient(supaUrl, supaKey);
+      const { data: universities, error } = await supabase
+        .from('universities')
+        .select('slug, name, short_name, city, state, is_ioe, programme_count, brand_slug, aliases, university_type')
+        .eq('ugc_deb_status', 'approved')
+        .order('name');
+      if (!error && universities && universities.length > 0) {
+        list = universities;
+      }
+    } catch {
+      // Supabase failed — will use fallback below
+    }
+  }
+
+  // Fallback to local data if Supabase returned nothing
+  if (list.length === 0) {
     const { UNIVERSITIES } = await import('@/lib/data');
     list = UNIVERSITIES.map(u => ({
       slug: u.id,
