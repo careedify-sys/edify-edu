@@ -3588,7 +3588,6 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <ul>
   <li><strong>Amity University Online</strong> — NAAC A+, one of the earliest to get DEB approval for online MBA</li>
-  <li><strong>Symbiosis Centre for Distance Learning (SCDL)</strong> — long-standing approval, strong employer recognition</li>
   <li><strong>Manipal Academy of Higher Education (MAHE)</strong> — NAAC A++, broad program approval</li>
   <li><strong>NMIMS Global Access School</strong> — consistently approved, strong Mumbai brand</li>
   <li><strong>JAIN Online</strong> — NAAC A++, approval for most management programs</li>
