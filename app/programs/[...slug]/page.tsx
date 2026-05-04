@@ -430,10 +430,21 @@ export default async function CatchAllProgramPage(
     }
 
     // All other programs (MCA, BBA, BCA, B.Com, M.Com, MA, BA, MSc, BSc)
+    const itemListSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      itemListElement: universities.slice(0, 20).map((u, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        url: `https://edifyedu.in/universities/${u.id}/${programSlug}`,
+        name: `${u.name} Online ${program}`,
+      })),
+    }
     return (
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
         <ProgramHubClient program={program} />
       </>
     )

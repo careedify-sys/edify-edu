@@ -88,6 +88,7 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
         '@id': `https://edifyedu.in/universities/${u.id}#university`,
         name: u.name,
         url: `https://edifyedu.in/universities/${u.id}`,
+        telephone: '+91-7061285806',
         description: `${u.name} is a UGC DEB approved university offering online degrees. NAAC ${u.naac} accredited.${u.nirf < 200 ? ` NIRF ranked #${u.nirf}.` : ''}`,
         address: {
           '@type': 'PostalAddress',

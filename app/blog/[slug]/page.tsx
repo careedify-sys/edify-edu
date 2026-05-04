@@ -184,6 +184,22 @@ export default async function BlogPostPage({ params }: Props) {
     },
     keywords: post.tags.join(', '),
     mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', '.blog-body h2', '.blog-body p:first-of-type'],
+    },
+  }
+
+  const webPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    url: postUrl,
+    name: post.title,
+    description: post.metaDescription,
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', '.blog-body h2'],
+    },
   }
 
   const breadcrumbSchema = {
@@ -206,6 +222,10 @@ export default async function BlogPostPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
       <script
         type="application/ld+json"

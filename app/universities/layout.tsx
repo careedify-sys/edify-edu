@@ -1,6 +1,7 @@
 // app/universities/layout.tsx
 // SEO metadata for the Universities Listing page
 import type { Metadata } from 'next'
+import { UNIVERSITIES } from '@/lib/data'
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -32,10 +33,41 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 }
 
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'UGC DEB Approved Online Universities in India 2026',
+  numberOfItems: UNIVERSITIES.length,
+  itemListElement: UNIVERSITIES
+    .filter(u => u.nirf < 200)
+    .sort((a, b) => a.nirf - b.nirf)
+    .slice(0, 30)
+    .map((u, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `https://edifyedu.in/universities/${u.id}`,
+      name: u.name,
+    })),
+}
+
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  url: 'https://edifyedu.in/universities',
+  name: '125+ UGC Approved Online Universities India 2026',
+  description: 'Compare UGC DEB approved online universities in India. NIRF rankings, NAAC grades, fees from 40K.',
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', 'h2'],
+  },
+}
+
 export default function UniversitiesLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       {children}
     </>
   )
