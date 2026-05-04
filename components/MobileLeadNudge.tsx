@@ -3,8 +3,68 @@
 import { useState, useEffect } from 'react'
 import { X, Phone, User, MessageCircle } from 'lucide-react'
 
-const DELAY_MS = 15_000 // show after 15 seconds
+const DELAY_MS = 12_000 // show after 12 seconds
 const SESSION_KEY = 'edify_nudge_shown'
+
+/** Parse the current URL to auto-detect university and program context */
+function getPageContext(): { university: string; program: string } {
+  const path = window.location.pathname
+  const parts = path.split('/').filter(Boolean)
+
+  let university = ''
+  let program = ''
+
+  // /universities/amity-university-online/mba/finance
+  if (parts[0] === 'universities' && parts[1]) {
+    university = parts[1]
+      .replace(/-online$/, '')
+      .replace(/-/g, ' ')
+      .replace(/\b\w/g, c => c.toUpperCase())
+    if (parts[2]) program = parts[2].toUpperCase()
+  }
+
+  // /programs/mba or /programs/mba/finance
+  if (parts[0] === 'programs' && parts[1]) {
+    program = parts[1].toUpperCase()
+  }
+
+  // /blog/amity-online-mba-review-2026
+  if (parts[0] === 'blog' && parts[1]) {
+    const slug = parts[1]
+    if (slug.includes('mba')) program = 'MBA'
+    else if (slug.includes('bba')) program = 'BBA'
+    else if (slug.includes('mca')) program = 'MCA'
+    else if (slug.includes('bca')) program = 'BCA'
+
+    // Try to extract university from slug
+    const uniPatterns = [
+      ['amity', 'Amity University'],
+      ['jain', 'JAIN University'],
+      ['bits-pilani', 'BITS Pilani'],
+      ['imt-ghaziabad', 'IMT Ghaziabad'],
+      ['upes', 'UPES'],
+      ['xlri', 'XLRI'],
+      ['nmims', 'NMIMS'],
+      ['manipal', 'Manipal University'],
+      ['symbiosis', 'Symbiosis'],
+      ['lpu', 'LPU'],
+      ['chandigarh', 'Chandigarh University'],
+    ]
+    for (const [key, name] of uniPatterns) {
+      if (slug.includes(key)) { university = name; break }
+    }
+  }
+
+  // /coupons/amity-university-online
+  if (parts[0] === 'coupons' && parts[1]) {
+    university = parts[1]
+      .replace(/-online$/, '')
+      .replace(/-/g, ' ')
+      .replace(/\b\w/g, c => c.toUpperCase())
+  }
+
+  return { university, program }
+}
 
 export default function MobileLeadNudge() {
   const [visible, setVisible] = useState(false)
@@ -13,17 +73,17 @@ export default function MobileLeadNudge() {
   const [phone, setPhone] = useState('')
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [context, setContext] = useState({ university: '', program: '' })
 
   useEffect(() => {
-    // Only on mobile-width screens
-    if (window.innerWidth > 768) return
     // Only once per session
     if (sessionStorage.getItem(SESSION_KEY)) return
 
     const timer = setTimeout(() => {
-      // Don't show if an enquiry modal is already open
+      // Don't show if a modal is already open
       if (document.body.style.overflow === 'hidden') return
       setVisible(true)
+      setContext(getPageContext())
       sessionStorage.setItem(SESSION_KEY, '1')
     }, DELAY_MS)
 
@@ -49,16 +109,19 @@ export default function MobileLeadNudge() {
         body: JSON.stringify({
           name: n,
           phone: p,
+          program: context.program || undefined,
+          preferredUniversity: context.university || undefined,
           sourcePage: window.location.pathname,
-          source: 'mobile_nudge',
+          source: 'smart_nudge',
         }),
       })
     } catch { /* show success anyway */ }
 
     if (typeof (window as any).gtag === 'function') {
       (window as any).gtag('event', 'generate_lead', {
-        source: 'mobile_nudge',
-        form_type: 'mobile_nudge',
+        source: 'smart_nudge',
+        university: context.university || 'none',
+        program: context.program || 'none',
       })
     }
 
@@ -69,33 +132,52 @@ export default function MobileLeadNudge() {
 
   if (!visible) return null
 
+  // Build a contextual headline
+  const headline = context.university && context.program
+    ? `Interested in ${context.program} from ${context.university}?`
+    : context.program
+      ? `Exploring ${context.program} options?`
+      : context.university
+        ? `Interested in ${context.university}?`
+        : 'Have questions? Talk to a real counsellor.'
+
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768
+
   return (
     <div
-      className={`fixed bottom-0 left-0 right-0 z-[500] transition-transform duration-300 ${closing ? 'translate-y-full' : 'translate-y-0'}`}
-      style={{ animation: closing ? undefined : 'slideUp 0.4s ease-out' }}
+      className={`fixed z-[500] transition-all duration-300 ${closing ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}
+      style={{
+        bottom: isMobile ? 0 : 24,
+        right: isMobile ? 0 : 24,
+        left: isMobile ? 0 : 'auto',
+        width: isMobile ? '100%' : 400,
+        animation: closing ? undefined : 'slideUp 0.4s ease-out',
+      }}
     >
-      {/* Backdrop tap to close */}
-      <div className="absolute inset-0 -top-[100vh] bg-black/20" onClick={dismiss} />
+      {/* Backdrop on mobile */}
+      {isMobile && (
+        <div className="absolute inset-0 -top-[100vh] bg-black/20" onClick={dismiss} />
+      )}
 
-      <div className="relative bg-white rounded-t-2xl shadow-[0_-4px_24px_rgba(0,0,0,0.12)] border-t border-slate-100 px-5 pb-6 pt-4">
-        {/* Drag handle */}
-        <div className="w-10 h-1 bg-slate-200 rounded-full mx-auto mb-4" />
+      <div
+        className="relative bg-white shadow-[0_-4px_30px_rgba(0,0,0,0.15)] border-t border-slate-100"
+        style={{
+          borderRadius: isMobile ? '16px 16px 0 0' : 16,
+          padding: isMobile ? '16px 20px 24px' : '20px 24px',
+        }}
+      >
+        {/* Drag handle on mobile */}
+        {isMobile && <div className="w-10 h-1 bg-slate-200 rounded-full mx-auto mb-3" />}
 
-        {/* Close button */}
-        <button
-          onClick={dismiss}
-          className="absolute top-3 right-3 p-1.5 rounded-full hover:bg-slate-100"
-          aria-label="Close"
-        >
+        {/* Close */}
+        <button onClick={dismiss} className="absolute top-3 right-3 p-1.5 rounded-full hover:bg-slate-100" aria-label="Close">
           <X size={16} className="text-slate-400" />
         </button>
 
         {submitted ? (
-          <div className="text-center py-3">
+          <div className="text-center py-2">
             <div className="text-2xl mb-2">Done!</div>
-            <p className="text-sm font-bold text-slate-800">
-              Our counsellor will reach you within 1 hour.
-            </p>
+            <p className="text-sm font-bold text-slate-800">Our counsellor will reach you within 1 hour.</p>
             <p className="text-xs text-slate-400 mt-1">Free call. No obligation. Real advice.</p>
           </div>
         ) : (
@@ -106,25 +188,28 @@ export default function MobileLeadNudge() {
                 <MessageCircle size={18} className="text-orange-500" />
               </div>
               <div>
-                <p className="text-[13px] font-bold text-slate-800 leading-snug">
-                  Have questions? Talk to a real counsellor.
-                </p>
-                <p className="text-[11px] text-slate-400 mt-0.5">
-                  Free call within 1 hour. No sales pitch. Just honest advice.
-                </p>
+                <p className="text-[13px] font-bold text-slate-800 leading-snug">{headline}</p>
+                <p className="text-[11px] text-slate-400 mt-0.5">Free call within 1 hour. No sales pitch.</p>
               </div>
             </div>
 
-            {/* Social proof line */}
+            {/* Auto-detected context badge */}
+            {(context.university || context.program) && (
+              <div className="flex items-center gap-1.5 mb-3 px-1">
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-green-50 text-green-600 font-semibold border border-green-100">
+                  {[context.program, context.university].filter(Boolean).join(' from ')} detected from this page
+                </span>
+              </div>
+            )}
+
+            {/* Social proof */}
             <div className="flex items-center gap-1.5 mb-3 px-1">
               <div className="flex -space-x-1.5">
                 {['#f97316', '#10b981', '#6366f1'].map((c, i) => (
                   <div key={i} className="w-5 h-5 rounded-full border-2 border-white" style={{ background: c }} />
                 ))}
               </div>
-              <span className="text-[10px] text-slate-400">
-                230+ students spoke with our counsellors this week
-              </span>
+              <span className="text-[10px] text-slate-400">230+ students spoke with our counsellors this week</span>
             </div>
 
             {/* Form */}
@@ -167,7 +252,7 @@ export default function MobileLeadNudge() {
             </form>
 
             <p className="text-[9px] text-slate-300 text-center mt-2.5">
-              No spam. No commission. Your data stays with EdifyEdu only.
+              No spam. No commission. Your data stays with edifyedu.in only.
             </p>
           </>
         )}
@@ -175,8 +260,8 @@ export default function MobileLeadNudge() {
 
       <style jsx global>{`
         @keyframes slideUp {
-          from { transform: translateY(100%); }
-          to   { transform: translateY(0); }
+          from { transform: translateY(100%); opacity: 0; }
+          to   { transform: translateY(0); opacity: 1; }
         }
       `}</style>
     </div>
