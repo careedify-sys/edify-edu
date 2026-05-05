@@ -21,17 +21,18 @@ const TRAFFIC_ORDER = [
   'alliance-university-online', 'kurukshetra-university-online',
 ]
 
+// Sorted by NIRF Management rank 2025 (primary sort criterion)
 const TOP_10_PICKS = [
-  { id: 'manipal-academy-higher-education-online', bestFor: 'NIRF #3 University. Strongest Manipal brand prestige among all online MBA providers in India. NAAC A++. Ideal for South India careers.', fee: '2.92L' },
-  { id: 'amity-university-online', bestFor: 'International careers. Only Indian online MBA with both WASC (USA) and QAA (UK) accreditation. WES recognized for Canada/US immigration.', fee: '2.07L' },
-  { id: 'nmims-online', bestFor: 'BFSI careers. AACSB member. Strongest recruiter recall in banking, financial services, and insurance sector.', fee: '1.96L' },
-  { id: 'jain-university-online', bestFor: 'NAAC A++ at mid-range fee. 19 specializations with ACCA integration. Strong in Bangalore tech ecosystem.', fee: '1.96L' },
-  { id: 'symbiosis-university-online', bestFor: 'HR and marketing brand prestige. NAAC A++, NIRF #32 Management. Premium positioning among MNC recruiters.', fee: '3.15L' },
-  { id: 'chandigarh-university-online', bestFor: 'Bundled certifications. Harvard Business Publishing, PwC, and PMI certifications included at no extra cost.', fee: '1.65L' },
-  { id: 'lovely-professional-university-online', bestFor: 'Tech-driven LMS with NAAC A++ at affordable fee. Strong North India alumni network.', fee: '1.61L' },
-  { id: 'manipal-university-jaipur-online', bestFor: 'Manipal brand at lower price. 13 specializations. Mandatory dual-spec option available.', fee: '1.53L' },
-  { id: 'amrita-vishwa-vidyapeetham-online', bestFor: 'NIRF #8 University. Grant Thornton co-branded Analytics/FinTech/ESG tracks. NAAC A++.', fee: '2.60L' },
-  { id: 'ignou-online', bestFor: 'Lowest fee at Rs 66,000. Central government university. NAAC A++. Strongest government job eligibility.', fee: '0.66L' },
+  { id: 'symbiosis-university-online', bestFor: 'NIRF #11 Management. NAAC A++. Strongest HR and marketing brand among online MBAs. Premium MNC recruiter recall.', fee: '3.15L' },
+  { id: 'nmims-online', bestFor: 'NIRF #17 Management. AACSB member institution. Strongest brand for BFSI, finance, and analytics careers.', fee: '1.96L' },
+  { id: 'amrita-vishwa-vidyapeetham-online', bestFor: 'NIRF #26 Management. NAAC A++. Grant Thornton co-branded Analytics, FinTech, and ESG tracks.', fee: '2.60L' },
+  { id: 'chandigarh-university-online', bestFor: 'NIRF #32 Management. NAAC A+. Bundled Harvard Business Publishing, PwC, and PMI certifications at no extra cost.', fee: '1.65L' },
+  { id: 'upes-online', bestFor: 'NIRF #36 Management. Strong in Oil and Gas, Energy, and Logistics specialisations. Industry-integrated curriculum.', fee: '2.45L' },
+  { id: 'lovely-professional-university-online', bestFor: 'NIRF #44 Management. NAAC A++. Tech-driven LMS at affordable price. Strong North India alumni network.', fee: '1.61L' },
+  { id: 'amity-university-online', bestFor: 'NIRF #49 Management. WASC (USA) + QAA (UK) + WES recognized. Best for international career mobility.', fee: '2.07L' },
+  { id: 'manipal-academy-higher-education-online', bestFor: 'NIRF #4 University. NAAC A++. Strongest Manipal brand prestige. Ideal for South India and healthcare careers.', fee: '2.92L' },
+  { id: 'jain-university-online', bestFor: 'NIRF #73 Management. NAAC A++. 19 specialisations with ACCA integration. Strong Bangalore tech ecosystem.', fee: '1.96L' },
+  { id: 'ignou-online', bestFor: 'Central government university. NAAC A++. Lowest fee at Rs 66,000. Strongest government job eligibility.', fee: '0.66L' },
 ]
 
 const SALARY_DATA = [
