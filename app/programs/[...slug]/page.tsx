@@ -22,6 +22,49 @@ const PM: Record<string, Program> = {
 }
 
 // Maps URL slugs → display name, content key, and target keywords for SEO
+// Redirect mis-crawled or aliased spec slugs to canonical versions
+const SPEC_REDIRECTS: Record<string, string> = {
+  'hospital-healthcare-management': 'healthcare-management',
+  'hospital-management': 'healthcare-management',
+  'hospital-and-healthcare-management': 'healthcare-management',
+  'hospital-administration': 'healthcare-management',
+  'data-science-ai': 'data-science',
+  'data-science--ai': 'data-science',
+  'operations--data-science': 'operations-management',
+  'it-fintech': 'it-management',
+  'logistics': 'logistics-supply-chain-management',
+  'hotel-management': 'healthcare-management',
+  'luxury-brand-management': 'marketing',
+  'marketing--human-resource-management': 'marketing',
+  'advanced-business-commerce': 'general-management',
+  'hrm': 'human-resource-management',
+  'hr': 'human-resource-management',
+  'analytics': 'business-analytics',
+  'operations': 'operations-management',
+  'cybersecurity': 'cyber-security',
+  'blockchain': 'blockchain-technology',
+  'full-stack': 'full-stack-development',
+  'retail': 'retail-management',
+  'intl-business': 'international-business',
+  'production-management': 'operations-management',
+  'production-and-operations-management': 'operations-management',
+  'financial-management': 'finance',
+  'finance-management': 'finance',
+  'sales-and-marketing': 'marketing',
+  'digital-marketing-management': 'digital-marketing',
+  'logistics-scm': 'supply-chain-management',
+  'banking-insurance': 'banking-finance',
+  'banking-and-financial-services': 'banking-finance',
+  'bfsi-banking-financial-services-and-insurance': 'banking-finance',
+  'cloud-computing-and-internet-of-things': 'cloud-computing',
+  'artificial-intelligence-machine-learning': 'artificial-intelligence',
+  'ai-and-ml': 'artificial-intelligence',
+  'entrepreneur': 'entrepreneurship',
+  'entrepreneurship-and-leadership-management': 'entrepreneurship',
+  'project-management-and-leadership': 'project-management',
+  'general': 'general-management',
+}
+
 const SPEC_SLUG_MAP: Record<string, { display: string; contentKey: string; keywords: string[] }> = {
   'marketing':                    { display: 'Marketing', contentKey: 'marketing', keywords: ['mba marketing', 'online mba marketing india 2026', 'mba marketing career salary', 'best mba marketing specialisation'] },
   'marketing-management':         { display: 'Marketing Management', contentKey: 'marketing', keywords: ['mba marketing management', 'online mba marketing management india 2026', 'mba marketing management career', 'mba marketing salary india'] },
@@ -75,6 +118,13 @@ export async function generateMetadata(
   const subSlug = slugArray[1]?.toLowerCase()
   
   if (!program) return { title: 'Program Not Found' }
+
+  // Redirect alias spec slugs in metadata too
+  if (subSlug && SPEC_REDIRECTS[subSlug]) {
+    return {
+      alternates: { canonical: `https://edifyedu.in/programs/${programSlug}/${SPEC_REDIRECTS[subSlug]}` },
+    }
+  }
 
   // Check if subSlug is a specialization
   const allSpecs = getAllSpecs(program)
@@ -172,6 +222,12 @@ export default async function CatchAllProgramPage(
     const uId = findUniId(subSlug)
     if (uId) {
       permanentRedirect(`/universities/${uId}/${programSlug}`)
+    }
+
+    // Redirect alias spec slugs to canonical versions (fixes GSC "alternative page with canonical" errors)
+    const canonicalSpec = SPEC_REDIRECTS[subSlug]
+    if (canonicalSpec) {
+      permanentRedirect(`/programs/${programSlug}/${canonicalSpec}`)
     }
   }
 
