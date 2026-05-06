@@ -14,6 +14,12 @@ const nextConfig = {
       { protocol: 'https', hostname: 'edifyedu.in' },
     ],
     formats: ['image/avif', 'image/webp'],
+    // Most university logos are SVG. Next/image refuses SVG sources unless
+    // explicitly allowed. Combined with strict CSP and contentDispositionType,
+    // this avoids the foot-gun of SVG-with-embedded-script.
+    dangerouslyAllowSVG: true,
+    contentDispositionType: 'attachment',
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
   // ── Compiler tweaks ─────────────────────────────────────────────────

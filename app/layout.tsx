@@ -115,7 +115,7 @@ const orgSchema = {
   },
   sameAs: [
     'https://www.linkedin.com/company/edifyeducation',
-    'https://www.instagram.com/_edifyeducation',
+    'https://www.instagram.com/edifyedu.in/',
     'https://youtube.com/@edify_edu',
   ],
   contactPoint: {
@@ -138,6 +138,34 @@ const siteSchema = {
   },
 }
 
+// Author Person schema — anchors E-E-A-T signals for AI citation. Articles
+// and blog posts can reference this Person via { author: { '@id': '...' } }
+// without redefining bio/credentials per page.
+const authorSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': 'https://edifyedu.in/#rishi-kumar',
+  name: 'Rishi Kumar',
+  url: 'https://edifyedu.in/about',
+  image: 'https://edifyedu.in/authors/rishi-avatar-md.svg',
+  jobTitle: 'Senior Education Researcher',
+  worksFor: { '@type': 'Organization', name: 'EdifyEdu', url: 'https://edifyedu.in' },
+  affiliation: { '@type': 'Organization', name: 'EdifyEdu', url: 'https://edifyedu.in' },
+  description: 'Founder of EdifyEdu and senior education researcher focused on UGC-DEB approved online degrees in India. Independent comparisons, no paid rankings.',
+  knowsAbout: [
+    'Online MBA in India',
+    'UGC DEB approved online degrees',
+    'NAAC accreditation',
+    'NIRF rankings',
+    'Distance education',
+    'Online MCA, BBA, BCA, B.Com programmes',
+  ],
+  sameAs: [
+    'https://www.linkedin.com/company/edifyeducation',
+    'https://www.instagram.com/edifyedu.in/',
+  ],
+}
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" dir="ltr" className={`${plusJakarta.variable} ${fraunces.variable}`}>
@@ -156,6 +184,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Structured data */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
 
         {/* Microsoft Clarity — heatmaps & session recordings */}
         <Script

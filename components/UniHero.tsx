@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import type { University, ProgramDetail } from '@/lib/data'
 import { cleanCareerOutcome, formatINR, getProgramLevel } from '@/lib/format'
 import { TrendingUp } from 'lucide-react'
@@ -70,11 +71,14 @@ export default function UniHero({ u, program, pd, cleanName, spec }: Props) {
         {/* Logo (if available) + H1 block */}
         <div className="flex items-center gap-4 mb-4">
           {logoPath && (
-            <img
+            <Image
               src={logoPath}
               alt={`${cleanName} logo`}
+              width={64}
+              height={64}
+              priority
               style={{
-                width: 64, height: 64, objectFit: 'contain',
+                objectFit: 'contain',
                 background: '#fff', borderRadius: 14, padding: 8,
                 flexShrink: 0,
               }}

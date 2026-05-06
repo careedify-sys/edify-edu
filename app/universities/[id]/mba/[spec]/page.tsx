@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 import { getUniversityById } from '@/lib/data'
 import { getProgramSpecParams, resolveSpecName } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
-import { getTitleName, shortenSpec } from '@/lib/seo-title'
+import { getTitleName, shortenSpec, clampTitle, clampDescription } from '@/lib/seo-title'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
 export async function generateStaticParams() {
@@ -29,8 +29,8 @@ export async function generateMetadata(
   const pd = u.programDetails['MBA']
   const fee = pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : (u as any).nirfMgt && (u as any).nirfMgt < 200 ? `, NIRF #${(u as any).nirfMgt} Mgmt` : ''
-  const title = `${titleName} Online MBA in ${shortSpec}: Syllabus, Fees & Career Outcomes ${year} | EdifyEdu`
-  const description = `${titleName} MBA in ${spec} ${year}: fees ${fee}, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Syllabus, career outcomes, reviews at EdifyEdu.`
+  const title = clampTitle(`${titleName} Online MBA in ${shortSpec}: Syllabus, Fees & Career Outcomes ${year} | EdifyEdu`)
+  const description = clampDescription(`${titleName} MBA in ${spec} ${year}: fees ${fee}, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Syllabus, career outcomes, reviews at EdifyEdu.`)
 
   return {
     title,

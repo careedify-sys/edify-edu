@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import type { Program } from '@/lib/data'
 import UniProgramBody from '@/components/UniProgramBody'
-import { getTitleName } from '@/lib/seo-title'
+import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
 
 // Program slug to Program type mapping
 const PM: Record<string, Program> = {
@@ -71,16 +71,19 @@ export async function generateMetadata(
     `${u.name} ${program} fees syllabus placements reviews`,
   ].join(', ')
 
+  const t = clampTitle(title)
+  const d = clampDescription(description)
+
   return {
-    title,
-    description,
+    title: t,
+    description: d,
     keywords,
     alternates: {
       canonical: `https://edifyedu.in/universities/${u.id}/${programSlug}`,
     },
     openGraph: {
-      title,
-      description,
+      title: t,
+      description: d,
       url: `https://edifyedu.in/universities/${u.id}/${programSlug}`,
       type: 'website',
       siteName: 'edifyedu.in',
@@ -88,8 +91,8 @@ export async function generateMetadata(
     },
     twitter: {
       card: 'summary_large_image',
-      title,
-      description,
+      title: t,
+      description: d,
       images: ['https://edifyedu.in/og.webp'],
     },
     robots: { index: true, follow: true },

@@ -2,7 +2,7 @@
 import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
-import { getTitleName } from '@/lib/seo-title'
+import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
 import { getMasterSyllabus } from '@/lib/content'
 import UniProgramBody from '@/components/UniProgramBody'
 
@@ -21,9 +21,9 @@ export async function generateMetadata(
   const pd   = u.programDetails['MCA']
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const syllabus = getMasterSyllabus(u.id, 'MCA') as any
-  const description = syllabus?.metaDesc ||
-    `${titleName} Online MCA: ${pd?.specs?.length || 3}+ specialisations, fees ${pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`}, NAAC ${u.naac}${u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved.`
-  const title = `${titleName} Online MCA — Fees, Syllabus & Specialisations ${year} | EdifyEdu`
+  const description = clampDescription(syllabus?.metaDesc ||
+    `${titleName} Online MCA: ${pd?.specs?.length || 3}+ specialisations, fees ${pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`}, NAAC ${u.naac}${u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved.`)
+  const title = clampTitle(`${titleName} Online MCA — Fees, Syllabus & Specialisations ${year} | EdifyEdu`)
 
   return {
     title,

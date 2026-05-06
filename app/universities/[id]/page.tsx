@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import UniversityPageClient from '@/components/UniversityPageClient'
-import { getTitleName } from '@/lib/seo-title'
+import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
 
 // ── Static Params (SSG) — pre-render all university pages at build time ──
 export async function generateStaticParams() {
@@ -52,16 +52,19 @@ export async function generateMetadata(
     `${u.abbr} online ${mainProg}`,
   ].join(', ')
 
+  const t = clampTitle(title)
+  const d = clampDescription(description)
+
   return {
-    title,
-    description,
+    title: t,
+    description: d,
     keywords,
     alternates: {
       canonical: `https://edifyedu.in/universities/${u.id}`,
     },
     openGraph: {
-      title,
-      description,
+      title: t,
+      description: d,
       url: `https://edifyedu.in/universities/${u.id}`,
       type: 'website',
       siteName: 'edifyedu.in',
@@ -69,8 +72,8 @@ export async function generateMetadata(
     },
     twitter: {
       card: 'summary_large_image',
-      title,
-      description,
+      title: t,
+      description: d,
       images: ['https://edifyedu.in/og.webp'],
     },
     robots: { index: true, follow: true },

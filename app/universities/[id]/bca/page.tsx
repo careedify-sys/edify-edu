@@ -2,7 +2,7 @@
 import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
-import { getTitleName } from '@/lib/seo-title'
+import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
 import UniProgramBody from '@/components/UniProgramBody'
 
 export async function generateStaticParams() {
@@ -19,8 +19,8 @@ export async function generateMetadata(
   const year = new Date().getFullYear()
   const pd   = u.programDetails['BCA']
   const titleName = getTitleName(u.id, u.name, u.abbr)
-  const title = `${titleName} Online BCA — Fees, Syllabus & Specialisations ${year} | EdifyEdu`
-  const description = `${titleName} Online BCA: fees ${pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`}, NAAC ${u.naac}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved 3-year degree.`
+  const title = clampTitle(`${titleName} Online BCA — Fees, Syllabus & Specialisations ${year} | EdifyEdu`)
+  const description = clampDescription(`${titleName} Online BCA: fees ${pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`}, NAAC ${u.naac}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved 3-year degree.`)
 
   return {
     title,

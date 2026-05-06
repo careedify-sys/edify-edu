@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { getUniversityById } from '@/lib/data'
 import { getProgramSpecParams, resolveSpecName } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
-import { getTitleName, shortenSpec } from '@/lib/seo-title'
+import { getTitleName, shortenSpec, clampTitle, clampDescription } from '@/lib/seo-title'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
 export async function generateStaticParams() {
@@ -26,8 +26,8 @@ export async function generateMetadata(
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const shortSpec = shortenSpec(spec)
   return {
-    title: `${titleName} BCA in ${shortSpec} — Fees ${year} | EdifyEdu`,
-    description: `${u.name} BCA in ${spec} — fees, syllabus, eligibility & career scope. NAAC ${u.naac}. UGC DEB approved. 3-year program, admissions open ${year}.`,
+    title: clampTitle(`${titleName} BCA in ${shortSpec} — Fees ${year} | EdifyEdu`),
+    description: clampDescription(`${u.name} BCA in ${spec} — fees, syllabus, eligibility & career scope. NAAC ${u.naac}. UGC DEB approved. 3-year program, admissions open ${year}.`),
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/bca/${specSlug}` },
     robots: { index: true, follow: true },
   }

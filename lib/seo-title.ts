@@ -189,3 +189,33 @@ export function shortenSpec(spec: string): string {
   if (spec.length <= 22) return spec
   return spec.substring(0, 22).replace(/\s+\S*$/, '').trim()
 }
+
+/**
+ * Clamp a page <title> to ≤60 chars at a word boundary so Google doesn't
+ * truncate it in SERPs. If the title already fits, returns it unchanged.
+ * Trailing pipe-separated suffix ("| EdifyEdu") is dropped before truncating
+ * substantive content, then re-appended only if it fits within the budget.
+ */
+export function clampTitle(title: string, max = 60): string {
+  if (title.length <= max) return title
+  // If "| Brand" suffix is present, prefer dropping it over substantive text
+  const sepIdx = title.lastIndexOf(' | ')
+  if (sepIdx > 0) {
+    const head = title.slice(0, sepIdx)
+    if (head.length <= max) return head
+    return clampTitle(head, max)
+  }
+  return title.substring(0, max).replace(/\s+\S*$/, '').trim()
+}
+
+/**
+ * Clamp a meta description to ≤160 chars at a sentence/word boundary.
+ * Google truncates around 155-160 chars on desktop. If the description already
+ * fits, returns it unchanged.
+ */
+export function clampDescription(desc: string, max = 158): string {
+  if (desc.length <= max) return desc
+  const truncated = desc.substring(0, max).replace(/\s+\S*$/, '').trim()
+  // Strip trailing punctuation if the last visible char is a comma/dash
+  return truncated.replace(/[,\-]\s*$/, '').trim()
+}

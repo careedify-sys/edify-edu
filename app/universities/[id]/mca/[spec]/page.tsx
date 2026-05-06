@@ -5,7 +5,7 @@ import { getUniversityById } from '@/lib/data'
 import { getMasterSyllabus } from '@/lib/content'
 import { getProgramSpecParams, resolveSpecName } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
-import { getTitleName, shortenSpec } from '@/lib/seo-title'
+import { getTitleName, shortenSpec, clampTitle, clampDescription } from '@/lib/seo-title'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
 export async function generateStaticParams() {
@@ -27,10 +27,10 @@ export async function generateMetadata(
   const syllabus = getMasterSyllabus(u.id, 'MCA') as any
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const shortSpec = shortenSpec(spec)
-  const title = `${titleName} MCA in ${shortSpec} — Fees ${year} | EdifyEdu`
-  const description = syllabus?.metaDesc
+  const title = clampTitle(`${titleName} MCA in ${shortSpec} — Fees ${year} | EdifyEdu`)
+  const description = clampDescription(syllabus?.metaDesc
     ? `${u.name} MCA in ${spec}. ${syllabus.metaDesc}`
-    : `${u.name} MCA in ${spec} — fees, syllabus, eligibility & career scope. NAAC ${u.naac}. UGC DEB approved. Admissions open ${year}.`
+    : `${u.name} MCA in ${spec} — fees, syllabus, eligibility & career scope. NAAC ${u.naac}. UGC DEB approved. Admissions open ${year}.`)
 
   return {
     title,

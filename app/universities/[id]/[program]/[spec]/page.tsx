@@ -3,7 +3,7 @@ import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById, specSlug as getSpecSlug, specName as getSpecName } from '@/lib/data'
 import type { Program } from '@/lib/data'
-import { getTitleName } from '@/lib/seo-title'
+import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
 import UniSpecBody from '@/components/UniSpecBody'
 
 const PM: Record<string, Program> = {
@@ -29,8 +29,8 @@ export async function generateMetadata(
   const spec     = getSpecName(specVal)
   const year     = new Date().getFullYear()
   const titleName = getTitleName(u.id, u.name, u.abbr)
-  const title     = `${titleName} Online ${program} in ${spec} ${year} — Fees, Syllabus & Admission | EdifyEdu`
-  const description = `${titleName} Online ${program} with ${spec} specialisation. ${pd?.duration || '2 Years'}, NAAC ${u.naac} accredited, UGC DEB approved. Fees ${pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`}. Check ${year} admission details.`
+  const title     = clampTitle(`${titleName} Online ${program} in ${spec} ${year} — Fees, Syllabus & Admission | EdifyEdu`)
+  const description = clampDescription(`${titleName} Online ${program} with ${spec} specialisation. ${pd?.duration || '2 Years'}, NAAC ${u.naac} accredited, UGC DEB approved. Fees ${pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`}. Check ${year} admission details.`)
 
   return {
     title,
