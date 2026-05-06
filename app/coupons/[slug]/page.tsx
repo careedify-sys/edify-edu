@@ -108,6 +108,93 @@ export default async function CouponDetailPage({ params }: { params: any }) {
           </div>
         </div>
 
+        {/* Fee Breakdown Calculator */}
+        <section className="mb-8">
+          <h2 className="text-xl font-bold mb-4" style={{ color: '#0f2756' }}>Your Fee Breakdown: See Exactly What You Pay</h2>
+          <div className="rounded-2xl border border-slate-200 bg-white overflow-hidden">
+            {/* Step 1: Published Fee */}
+            <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100">
+              <div>
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">Published Fee</span>
+                <p className="text-sm text-slate-600 mt-0.5">Official programme fee on {page.shortName} portal</p>
+              </div>
+              <span className="text-2xl font-extrabold" style={{ color: '#0f2756' }}>{page.totalFee}</span>
+            </div>
+
+            {/* Step 2: Upfront/Lump-sum Discount */}
+            {page.discounts.find(d => d.type.toLowerCase().includes('upfront') || d.type.toLowerCase().includes('lump') || d.type.toLowerCase().includes('one-time')) && (() => {
+              const upfrontDiscount = page.discounts.find(d => d.type.toLowerCase().includes('upfront') || d.type.toLowerCase().includes('lump') || d.type.toLowerCase().includes('one-time'))!
+              return (
+                <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 bg-green-50/50">
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <span className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-700 text-xs font-bold">1</span>
+                      <span className="text-sm font-bold text-green-800">{upfrontDiscount.type}</span>
+                    </div>
+                    <p className="text-xs text-green-600 mt-1 ml-7">{upfrontDiscount.eligibility}</p>
+                  </div>
+                  <span className="text-lg font-bold text-green-700">- {upfrontDiscount.saving.match(/Rs\s*[\d,]+/)?.[0] || upfrontDiscount.saving}</span>
+                </div>
+              )
+            })()}
+
+            {/* Step 3: Merit Scholarship */}
+            {page.discounts.find(d => d.type.toLowerCase().includes('merit')) && (() => {
+              const merit = page.discounts.find(d => d.type.toLowerCase().includes('merit'))!
+              return (
+                <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 bg-green-50/30">
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <span className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-700 text-xs font-bold">2</span>
+                      <span className="text-sm font-bold text-green-800">{merit.type}</span>
+                    </div>
+                    <p className="text-xs text-green-600 mt-1 ml-7">{merit.eligibility}</p>
+                  </div>
+                  <span className="text-lg font-bold text-green-700">- {merit.saving}</span>
+                </div>
+              )
+            })()}
+
+            {/* Step 4: EdifyEdu Bonus */}
+            {page.discounts.find(d => d.type.toLowerCase().includes('edify')) && (() => {
+              const edify = page.discounts.find(d => d.type.toLowerCase().includes('edify'))!
+              return (
+                <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 bg-amber-50/50">
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <span className="w-5 h-5 rounded-full bg-amber-100 flex items-center justify-center text-amber-700 text-xs font-bold">3</span>
+                      <span className="text-sm font-bold text-amber-800">{edify.type}</span>
+                    </div>
+                    <p className="text-xs text-amber-600 mt-1 ml-7">Mention code {page.couponCode} during advisor call</p>
+                  </div>
+                  <span className="text-lg font-bold text-amber-700">- Rs 10,000</span>
+                </div>
+              )
+            })()}
+
+            {/* Final Fee */}
+            <div className="flex items-center justify-between px-6 py-5" style={{ background: '#0f2756' }}>
+              <div>
+                <span className="text-xs font-bold text-amber-300 uppercase tracking-wider">You Pay (After All Discounts)</span>
+                <p className="text-sm text-white/60 mt-0.5">All discounts stacked for maximum savings</p>
+              </div>
+              <div className="text-right">
+                <span className="text-xs text-white/40 line-through mr-2">{page.totalFee}</span>
+                <span className="text-2xl font-extrabold text-white">{page.finalFee}</span>
+              </div>
+            </div>
+
+            {/* Savings badge */}
+            <div className="px-6 py-3 bg-green-600 text-center">
+              <span className="text-sm font-bold text-white">You save {page.maxSavings} on this programme. That is money you keep.</span>
+            </div>
+          </div>
+
+          <p className="text-xs text-slate-400 mt-3 text-center">
+            Savings depend on your eligibility. Merit scholarship requires 60%+ in graduation. Upfront discount requires one-time payment. Verify on {page.officialUrl}.
+          </p>
+        </section>
+
         {/* CTA - Reveal code */}
         <CouponPageCTA page={page} />
 
