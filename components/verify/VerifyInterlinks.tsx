@@ -10,6 +10,22 @@ interface Props {
   nirfRank?: number
 }
 
+// Map site universityId -> coupon page slug (only universities with dedicated coupon pages)
+const COUPON_SLUGS: Record<string, string> = {
+  'amity-university-online': 'amity-online-mba-discount-coupon-2026',
+  'nmims-online': 'nmims-online-mba-discount-coupon-2026',
+  'manipal-university-jaipur-online': 'manipal-jaipur-online-mba-discount-coupon-2026',
+  'lovely-professional-university-online': 'lpu-online-mba-discount-coupon-2026',
+  'chandigarh-university-online': 'chandigarh-university-online-mba-discount-coupon-2026',
+  'sikkim-manipal-university-online': 'smu-online-mba-discount-coupon-2026',
+  'manipal-academy-higher-education-online': 'mahe-online-mba-discount-coupon-2026',
+  'jain-university-online': 'jain-online-mba-discount-coupon-2026',
+  'symbiosis-university-online': 'symbiosis-ssodl-online-mba-discount-coupon-2026',
+  'ignou-online': 'ignou-online-mba-discount-coupon-2026',
+  'dr-dy-patil-vidyapeeth-online': 'dpu-online-mba-discount-coupon-2026',
+  'amrita-vishwa-vidyapeetham-online': 'amrita-online-mba-discount-coupon-2026',
+}
+
 export function VerifyInterlinks({ universityName, universitySlug, siteSlug, programmes, naacGrade, nirfRank }: Props) {
   // Derive program slugs from programmes
   const programSlugs = new Set<string>()
@@ -54,8 +70,8 @@ export function VerifyInterlinks({ universityName, universitySlug, siteSlug, pro
   // Coupon page (if likely exists)
   links.push({
     label: `${universityName.split(' ')[0]} discount and coupons`,
-    href: `/coupons/${siteSlug}`,
-    desc: 'Check if a fee discount is available',
+    href: COUPON_SLUGS[siteSlug] ? `/coupons/${COUPON_SLUGS[siteSlug]}` : '/coupons',
+    desc: COUPON_SLUGS[siteSlug] ? 'View verified discount code and fee breakdown' : 'Check if a fee discount is available',
   })
 
   // Relevant guides
