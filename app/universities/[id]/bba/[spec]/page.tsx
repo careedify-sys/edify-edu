@@ -1,5 +1,5 @@
 // app/universities/[id]/bba/[spec]/page.tsx
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getUniversityById } from '@/lib/data'
 import { getProgramSpecParams, resolveSpecName } from '@/lib/data/programs'
@@ -41,11 +41,10 @@ export default async function BBASpecPage(
   const u = getUniversityById(id)
   if (!u) notFound()
 
-  const spec = resolveSpecName(id, 'BBA', 'bba', specSlug)
-  if (!spec) notFound()
-
   const pd = u.programDetails['BBA']
-  if (!pd) notFound()
+  if (!pd) redirect(`/universities/${u.id}`)
+  const spec = resolveSpecName(id, 'BBA', 'bba', specSlug)
+  if (!spec) redirect(`/universities/${u.id}/bba`)
 
   return (
     <UniSpecBody

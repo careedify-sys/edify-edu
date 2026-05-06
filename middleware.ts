@@ -16,6 +16,7 @@
 // external modules via @/ path aliases. Keeping it in sync with
 // lib/redirects-old-slugs.ts is a manual step when adding new entries.
 import { NextRequest, NextResponse } from 'next/server'
+import CANONICAL_SLUGS from './lib/canonical-slugs.json'
 
 // Old/truncated university slugs indexed by Google → current slugs
 // Verified against lib/data.ts UNIVERSITIES array (2026-04-17)
@@ -135,12 +136,93 @@ const OLD_SLUG_REDIRECTS: Record<string, string> = {
   'yenepoya-online': 'yenepoya-university-online',
   'amity-university-rajasthan-online': 'amity-university-online',
   'birla-institute-of-technology-online': 'bits-pilani-online',
+  'birla-institut-of-technolo': 'bits-pilani-online',
   'international-institute-of-information-technology-online': 'iiit-bangalore-online',
+  'internat-institut-of-informat': 'iiit-bangalore-online',
+  'dypatil': 'dy-patil-university-online',
+  'dy-patil': 'dy-patil-university-online',
+  'sathyaba-institut-of-science': 'sathyabama-university-online',
 
 }
 
 const PROTECTED_PATHS = ['/admin', '/admin/cms', '/blog/write']
 const LOGIN_COOKIE = 'edify_admin_session'
+
+// ── Self-healing slug resolver ──────────────────────────────────────────────
+// Any unknown /universities/{slug} that isn't a canonical slug AND isn't in
+// OLD_SLUG_REDIRECTS gets matched to the closest canonical slug by token
+// overlap. This makes new redirects automatic — when Google or external sites
+// reference a truncated or aliased slug we have not catalogued, the resolver
+// finds it. Stop-words and short tokens are filtered to avoid false positives.
+
+// Tokens shared by most university slugs — filtered before fuzzy matching so
+// the resolver leans on the genuinely-distinguishing tokens. Domain-specific
+// words like "institute", "academy", "educational" are NOT here because they
+// often ARE the discriminator (e.g. "dr-mgr-educational-research-institute"
+// vs "dr-mgr-college"). Keep this list tight.
+const STOP_TOKENS = new Set([
+  'university', 'universi', 'uni', 'online', 'of', 'the', 'and', 'for',
+  'in', 'on', 'at', 'an', 'edu', 'be', 'to',
+  'deemed', 'higher', 'research', 'studies',
+])
+
+function tokensOf(slug: string): string[] {
+  return slug
+    .split('-')
+    .filter(t => t.length >= 3 && !STOP_TOKENS.has(t))
+}
+
+function fuzzyResolveSlug(unknown: string): string | null {
+  const want = tokensOf(unknown)
+  if (want.length === 0) return null
+  // Tiered scoring: exact-token match outranks prefix-match outranks no
+  // match. The tie-break preference for "exact" stops e.g. "shivaji-universi"
+  // from picking "shiv-nadar-university-online" over "shivaji-university-online".
+  let best: { slug: string; exact: number; prefix: number } | null = null
+  for (const canonical of CANONICAL_SLUGS as string[]) {
+    const have = tokensOf(canonical)
+    if (have.length === 0) continue
+    let exact = 0
+    let prefix = 0
+    for (const w of want) {
+      if (have.includes(w)) {
+        exact++
+        continue
+      }
+      const matched = have.some(h => {
+        const shorter = h.length < w.length ? h : w
+        const longer = h.length < w.length ? w : h
+        // Prefix overlap with ≥4 char shared and ≥0.5 length ratio. Catches
+        // truncations like "internat" vs "international" or "shiv" vs
+        // "shivaji" without letting tiny prefixes stand in for whole names.
+        return shorter.length >= 4
+          && longer.startsWith(shorter)
+          && shorter.length / longer.length >= 0.5
+      })
+      if (matched) prefix++
+    }
+    if (exact + prefix === 0) continue
+    const total = exact + prefix
+    const bestTotal = best ? best.exact + best.prefix : -1
+    // Prefer higher total coverage; tie-break by more exact matches. This
+    // way "dayal-bagh-educatio-institut" picks "dayalbagh-educational-
+    // institute-online" (3 prefixes) over "deen-dayal-..." (1 exact only).
+    if (
+      !best
+      || total > bestTotal
+      || (total === bestTotal && exact > best!.exact)
+    ) {
+      best = { slug: canonical, exact, prefix }
+    }
+  }
+  if (!best) return null
+  // Need ≥66% of distinguishing want-tokens covered (exact + prefix). Combined
+  // with the ≤2-char and stop-word filtering in tokensOf() this prevents
+  // stray matches but still rescues single-token truncations like "kurukshe".
+  const need = Math.ceil(want.length * 0.66)
+  if (best.exact + best.prefix >= Math.max(1, need)) return best.slug
+  return null
+}
 
 export function middleware(req: NextRequest) {
   const host = req.headers.get('host') ?? ''
@@ -233,6 +315,25 @@ export function middleware(req: NextRequest) {
       const url = req.nextUrl.clone()
       url.pathname = `/universities/${progMatch[1]}/${fixedProg}${progMatch[3] || ''}`
       return NextResponse.redirect(url, 308)
+    }
+  }
+
+  // ── 2c. Self-healing fallback for unknown university slugs ───────────────
+  // Runs only for /universities/{slug}/... paths where the slug is neither
+  // a canonical match nor an explicit OLD_SLUG_REDIRECTS entry. Token-overlap
+  // resolver picks the closest canonical and 308s. This way, future renames,
+  // truncations and external mis-slugs do not 404 without us cataloguing them.
+  if (uniMatch) {
+    const oldSlug = uniMatch[1]
+    const isCanonical = (CANONICAL_SLUGS as string[]).includes(oldSlug)
+    if (!isCanonical && !OLD_SLUG_REDIRECTS[oldSlug]) {
+      const resolved = fuzzyResolveSlug(oldSlug)
+      if (resolved) {
+        const rest = uniMatch[2] || ''
+        const url = req.nextUrl.clone()
+        url.pathname = `/universities/${resolved}${rest}`
+        return NextResponse.redirect(url, 308)
+      }
     }
   }
 

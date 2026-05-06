@@ -215,7 +215,7 @@ export default async function CatchAllProgramPage(
   const program = PM[programSlug]
   const subSlug = slugArray[1]?.toLowerCase()
 
-  if (!program) notFound()
+  if (!program) permanentRedirect('/programs')
 
   // SEO Redirection: If slug[1] is a university, redirect to /universities/[id]/[program]
   if (subSlug) {
@@ -296,10 +296,11 @@ export default async function CatchAllProgramPage(
     })),
   } : null
 
-  // If a sub-slug was provided but didn't resolve to any spec or university, 404
-  // This prevents duplicate content with the base program page canonical
+  // If a sub-slug was provided but didn't resolve to any spec or university,
+  // redirect to the program hub instead of 404. The hub already lists all
+  // valid specs and universities, so it's the most useful landing page.
   if (subSlug && !activeSpec) {
-    notFound()
+    permanentRedirect(`/programs/${programSlug}`)
   }
 
   // MBA spec hub page (e.g., /programs/mba/finance) — dedicated spec comparison

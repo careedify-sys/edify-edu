@@ -1,5 +1,5 @@
 // app/universities/[id]/bca/page.tsx
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import { getTitleName } from '@/lib/seo-title'
@@ -36,9 +36,9 @@ export default async function OnlineBCAPage(
 ) {
   const { id } = await params
   const u = getUniversityById(id)
-  if (!u || !u.programs.includes('BCA')) notFound()
+  if (!u) notFound()
   const pd = u.programDetails['BCA']
-  if (!pd) notFound()
+  if (!u.programs.includes('BCA') || !pd) redirect(`/universities/${u.id}`)
 
   return <UniProgramBody u={u} program="BCA" programSlug="bca" pd={pd} />
 }

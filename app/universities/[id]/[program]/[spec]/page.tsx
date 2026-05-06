@@ -1,5 +1,5 @@
 // app/universities/[id]/[program]/[spec]/page.tsx
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById, specSlug as getSpecSlug, specName as getSpecName } from '@/lib/data'
 import type { Program } from '@/lib/data'
@@ -57,7 +57,9 @@ export default async function UniversitySpecPage(
   const u = getUniversityById(id)
   const program = PM[programSlug?.toLowerCase()]
 
-  if (!u || !program || !u.programDetails[program]) notFound()
+  if (!u) notFound()
+  if (!program) redirect(`/universities/${u.id}`)
+  if (!u.programDetails[program]) redirect(`/universities/${u.id}`)
 
   const pd      = u.programDetails[program]!
   let specVal = pd.specs?.find(s => getSpecSlug(s) === specSlug)
@@ -72,7 +74,10 @@ export default async function UniversitySpecPage(
       })
     }
   }
-  if (!specVal) notFound()
+  // If still no spec match, redirect to the program page rather than 404 —
+  // the user clicked something we no longer have an exact spec for, so the
+  // closest valid landing is the program listing for this university.
+  if (!specVal) redirect(`/universities/${u.id}/${programSlug}`)
 
   return (
     <UniSpecBody

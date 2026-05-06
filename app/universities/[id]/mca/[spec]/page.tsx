@@ -1,5 +1,5 @@
 // app/universities/[id]/mca/[spec]/page.tsx
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getUniversityById } from '@/lib/data'
 import { getMasterSyllabus } from '@/lib/content'
@@ -50,11 +50,10 @@ export default async function MCASpecPage(
   const u = getUniversityById(id)
   if (!u) notFound()
 
-  const spec = resolveSpecName(id, 'MCA', 'mca', specSlug)
-  if (!spec) notFound()
-
   const pd = u.programDetails['MCA']
-  if (!pd) notFound()
+  if (!pd) redirect(`/universities/${u.id}`)
+  const spec = resolveSpecName(id, 'MCA', 'mca', specSlug)
+  if (!spec) redirect(`/universities/${u.id}/mca`)
 
   return (
     <UniSpecBody

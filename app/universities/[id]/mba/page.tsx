@@ -1,5 +1,5 @@
 // app/universities/[id]/mba/page.tsx
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import { getTitleName } from '@/lib/seo-title'
@@ -59,9 +59,11 @@ export default async function OnlineMBAPage(
 ) {
   const { id } = await params
   const u = getUniversityById(id)
-  if (!u || !u.programs.includes('MBA')) notFound()
+  if (!u) notFound()
+  // Programs listed in u.programs but missing from programDetails (data drift)
+  // would 404 — redirect to the university page instead of breaking the URL.
   const pd = u.programDetails['MBA']
-  if (!pd) notFound()
+  if (!u.programs.includes('MBA') || !pd) redirect(`/universities/${u.id}`)
 
   return <UniProgramBody u={u} program="MBA" programSlug="mba" pd={pd} />
 }

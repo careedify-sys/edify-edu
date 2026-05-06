@@ -1,6 +1,6 @@
 // app/universities/[id]/mba/[spec]/page.tsx
 // University MBA Specialization Page - e.g., /universities/amity-university-online/mba/marketing
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getUniversityById } from '@/lib/data'
 import { getProgramSpecParams, resolveSpecName } from '@/lib/data/programs'
@@ -58,11 +58,10 @@ export default async function SpecializationPage(
   const u = getUniversityById(id)
   if (!u) notFound()
 
-  const spec = resolveSpecName(id, 'MBA', 'mba', specSlug)
-  if (!spec) notFound()
-
   const pd = u.programDetails['MBA']
-  if (!pd) notFound()
+  if (!pd) redirect(`/universities/${u.id}`)
+  const spec = resolveSpecName(id, 'MBA', 'mba', specSlug)
+  if (!spec) redirect(`/universities/${u.id}/mba`)
 
   return (
     <UniSpecBody
