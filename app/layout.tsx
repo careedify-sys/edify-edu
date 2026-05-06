@@ -5,7 +5,6 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import { EntryPopup, ExitIntentPopup } from '@/components/LeadCapture'
 import Footer from '@/components/Footer'
-import FloatingCTA from '@/components/FloatingCTA'
 import BottomNav from '@/components/BottomNav'
 import MobileLeadNudge from '@/components/MobileLeadNudge'
 
@@ -186,7 +185,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </main>
         <Footer />
-        <FloatingCTA />
         <BottomNav />
         <MobileLeadNudge />
         {/* ── Google Analytics 4 + Google Ads (afterInteractive = non-blocking) ── */}

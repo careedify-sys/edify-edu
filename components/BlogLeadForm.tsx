@@ -24,6 +24,7 @@ export default function BlogLeadForm({ title, desc }: { title?: string; desc?: s
           phone: form.phone,
           program: form.program,
           sourcePage: typeof window !== 'undefined' ? window.location.pathname : 'blog',
+          source: 'blog_lead_form',
         }),
       })
     } catch {

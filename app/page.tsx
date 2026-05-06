@@ -3,7 +3,6 @@ import { getSortRank } from '@/lib/data-slim'
 import { useState, useEffect } from 'react'
 import type { CSSProperties } from 'react'
 import EdifyTrust from '@/components/EdifyTrust'
-import { StickyBottomBar } from '@/components/LeadCapture'
 import EnquiryModal from '@/components/EnquiryModalDynamic'
 
 import Link from 'next/link'
@@ -50,7 +49,6 @@ export default function HomePage() {
 
   return (
     <>
-      <StickyBottomBar label='Speak with an Advisor — 2 min' />
       {/* ── July 2026 Admission Banner ── */}
       <div style={{ background: 'linear-gradient(135deg, #0B1D35, #1a3a5c)', borderBottom: '3px solid #C8811A', padding: '10px 0', textAlign: 'center', }}>
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-center gap-3 flex-wrap">

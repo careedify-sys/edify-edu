@@ -41,6 +41,7 @@ export default function BlogSidebarForm({ postTitle, compact = false }: Props) {
         phone: p,
         program: program || 'General',
         sourcePage,
+        source: 'blog_sidebar_form',
         preferredUniversity: postTitle ? `Blog: ${postTitle}` : '',
       }),
     }).catch(() => {})

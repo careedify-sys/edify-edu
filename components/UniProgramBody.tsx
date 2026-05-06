@@ -39,7 +39,6 @@ import LastUpdatedStamp  from './LastUpdatedStamp'
 import StickyLeadCard    from './StickyLeadCard'
 import CouponCard        from './CouponCard'
 import QuickFactsCard    from './QuickFactsCard'
-import WhatsAppFloat     from './WhatsAppFloat'
 import AssuredMarquee   from './AssuredMarquee'
 import RequestSyllabusCard from './RequestSyllabusCard'
 import { hasSyllabusData } from '@/lib/syllabus'
@@ -376,7 +375,6 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
         </div>
       </div>
 
-      <WhatsAppFloat />
     </>
   )
 }

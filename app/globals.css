@@ -1,3 +1,13 @@
+/* Z-INDEX HIERARCHY — do not exceed without updating this list
+   ExitIntentPopup / modals    : 1000
+   CompareBar (compare page)   : 400
+   BottomNav                   : 300
+   MobileLeadNudge             : 250
+   Top nav (sticky)            : 200
+   Admissions banner           : 100
+   Page content                : auto
+*/
+
 /* ================================================================
    DARK BACKGROUND TEXT COLOR RULES — read before editing
    ================================================================

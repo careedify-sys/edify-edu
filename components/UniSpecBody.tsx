@@ -41,7 +41,6 @@ import LastUpdatedStamp   from './LastUpdatedStamp'
 import StickyLeadCard     from './StickyLeadCard'
 import CouponCard         from './CouponCard'
 import QuickFactsCard     from './QuickFactsCard'
-import WhatsAppFloat      from './WhatsAppFloat'
 import AssuredMarquee    from './AssuredMarquee'
 import RequestSyllabusCard from './RequestSyllabusCard'
 
@@ -694,7 +693,6 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
         </div>
       </div>
 
-      <WhatsAppFloat />
     </>
   )
 }

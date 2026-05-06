@@ -13,7 +13,7 @@ import type { Program, University } from '@/lib/data'
 import { formatSpecList } from '@/lib/data'
 import EnquiryModal from '@/components/EnquiryModal'
 import ApprovalBadges from '@/components/ApprovalBadges'
-import { StickyBottomBar, ScholarshipPopup } from '@/components/LeadCapture'
+import { ScholarshipPopup } from '@/components/LeadCapture'
 import EdifyTrust from '@/components/EdifyTrust'
 import GatedContent from '@/components/GatedContent'
 import AssuredMarquee from '@/components/AssuredMarquee'
@@ -93,7 +93,6 @@ export default function UniversityPageClient({ university: u }: Props) {
   return (
     <>
       {/* ── Lead Capture Triggers ── */}
-      <StickyBottomBar universityName={u.name} label={`Apply to ${u.abbr} — Speak with an Advisor`} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
         '@context':'https://schema.org','@type':'FAQPage',

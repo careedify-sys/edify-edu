@@ -18,7 +18,8 @@ export default function ContactPage() {
           phone: form.phone,
           email: form.email,
           sourcePage: '/contact',
-          preferredUniversity: `Contact Form — ${form.message.slice(0, 100)}`,
+          source: 'contact_page',
+          preferredUniversity: `Contact Form: ${form.message.slice(0, 100)}`,
         }),
       })
       if (res.ok) setStatus('sent')

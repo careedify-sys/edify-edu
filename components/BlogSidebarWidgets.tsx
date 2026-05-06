@@ -54,7 +54,8 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
         name: n,
         phone: p,
         sourcePage: typeof window !== 'undefined' ? window.location.pathname : 'blog',
-        preferredUniversity: postTitle ? `Talk to Alumni — ${postTitle}` : 'Talk to Alumni',
+        source: 'blog_sidebar_alumni',
+        preferredUniversity: postTitle ? `Talk to Alumni: ${postTitle}` : 'Talk to Alumni',
       }),
     }).catch(() => {})
 
@@ -78,7 +79,8 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
         phone: p,
         program: formSpec || 'General',
         sourcePage: typeof window !== 'undefined' ? window.location.pathname : 'blog',
-        preferredUniversity: postTitle ? `Program Details — ${postTitle}` : 'Program Details',
+        source: 'blog_sidebar_details',
+        preferredUniversity: postTitle ? `Program Details: ${postTitle}` : 'Program Details',
       }),
     }).catch(() => {})
 

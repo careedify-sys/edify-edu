@@ -101,6 +101,7 @@ export default function EnquiryModal({
           program: form.program,
           preferredUniversity: form.preferredUniversity || universityName || 'Not specified',
           sourcePage: sourceFinal,
+          source: sourcePage || 'enquiry_modal',
           ...(form.couponCode.trim() ? { couponCode: form.couponCode.trim().toUpperCase() } : {}),
         }),
       })

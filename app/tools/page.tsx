@@ -5,7 +5,6 @@ type ToolMode = 'emi' | 'roi' | 'salary' | 'unit' | 'percent' | 'age' | 'gpa' | 
 import { useState } from 'react'
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
-import { StickyBottomBar } from '@/components/LeadCapture'
 import { formatINR, formatNumber } from '@/lib/format'
 
 // ── EMI Calculator ──────────────────────────────────────────────
@@ -431,7 +430,6 @@ export default function ToolsPage() {
 
   return (
     <>
-      <StickyBottomBar label="Free University Counselling — 2 min"/>
       <div className="page-shell">
         {/* Breadcrumb */}
         <div className="bg-white border-b border-border">

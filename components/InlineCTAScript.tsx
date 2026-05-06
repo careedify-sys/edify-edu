@@ -39,7 +39,8 @@ export default function InlineCTAScript() {
             phone: phone,
             email: email || '',
             sourcePage: window.location.pathname,
-            preferredUniversity: 'Inline Blog CTA — ' + source,
+            source: 'blog_inline',
+            preferredUniversity: 'Inline Blog CTA: ' + source,
           }),
         })
       } catch (e) {
