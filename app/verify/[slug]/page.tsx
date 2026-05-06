@@ -1,5 +1,7 @@
 import { notFound, redirect } from 'next/navigation';
 import { brand } from '@/lib/brand';
+import { VerifyLeadForm } from '@/components/verify/VerifyLeadForm';
+import { VerifyInterlinks } from '@/components/verify/VerifyInterlinks';
 import { VerifyHero } from '@/components/verify/VerifyHero';
 import { ProReportCTAPlaceholder } from '@/components/verify/ProReportCTAPlaceholder';
 import { ProgrammeFinder } from '@/components/verify/ProgrammeFinder';
@@ -191,9 +193,24 @@ export default async function VerifyPage({ params }: PageProps) {
             <div style={{ background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: `1px solid ${brand.creamBorder}` }}>
               <DataFreshnessBadge updatedAt={university.data_updated_at} />
             </div>
+            {/* Interlinks to university profile, programs, compare, guides */}
+            <div style={{ background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: `1px solid ${brand.creamBorder}` }}>
+              <VerifyInterlinks
+                universityName={university.name}
+                universitySlug={slug}
+                siteSlug={university.slug}
+                programmes={programmes}
+                naacGrade={accreditations.find((a: any) => a.body === 'NAAC')?.grade}
+                nirfRank={accreditations.find((a: any) => a.body === 'NIRF' && a.category === 'Overall')?.rank}
+              />
+            </div>
           </div>
 
           <aside className="verify-sidebar" style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+            {/* Lead capture form — auto-fills university name */}
+            <div style={{ background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: `1px solid ${brand.creamBorder}` }}>
+              <VerifyLeadForm universityName={university.name} universitySlug={slug} />
+            </div>
             <div style={{ background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: `1px solid ${brand.creamBorder}` }}>
               <HelpdeskTeaser variant="sidebar" prefilledUniversity={university.name} spotsRemaining={73} />
             </div>

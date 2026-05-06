@@ -53,12 +53,12 @@ export async function POST(req: NextRequest) {
     if (process.env.RESEND_API_KEY) {
       const resend = new Resend(process.env.RESEND_API_KEY)
       resend.emails.send({
-        from: 'EdifyEdu Leads <leads@edifyedu.in>',
+        from: 'edifyedu.in Leads <leads@edifyedu.in>',
         to: [process.env.LEAD_EMAIL_PRIMARY || 'hello@edifyedu.in', ...(process.env.LEAD_EMAIL_SECONDARY ? [process.env.LEAD_EMAIL_SECONDARY] : [])],
         subject: `🎓 New Lead — ${name} | ${programValue} @ ${universityValue} | from: ${sourceValue}`,
         html: `
           <div style="font-family:sans-serif;max-width:500px">
-            <h2 style="color:#0f172a">New Enquiry — EdifyEdu</h2>
+            <h2 style="color:#0f172a">New Enquiry: edifyedu.in</h2>
             <table style="width:100%;border-collapse:collapse;font-size:14px">
               <tr><td style="padding:8px;background:#f8fafc;font-weight:600;width:40%">Name</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${name}</td></tr>
               <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Phone</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">+91 ${phone}</td></tr>
