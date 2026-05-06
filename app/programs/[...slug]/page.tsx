@@ -436,7 +436,7 @@ export default async function CatchAllProgramPage(
                             className="flex items-center gap-3 p-4 bg-white border border-border rounded-xl hover:border-amber hover:shadow-md transition-all no-underline group">
                             <div className="w-9 h-9 rounded-lg border border-border bg-white flex items-center justify-center overflow-hidden shrink-0">
                               {u.logo
-                                ? <img src={u.logo} alt={u.name} className="max-w-full max-h-full object-contain p-0.5" onError={e => { (e.target as HTMLImageElement).style.display='none' }} />
+                                ? <img src={u.logo} alt={u.name} className="max-w-full max-h-full object-contain p-0.5" />
                                 : <span style={{ fontSize:9, fontWeight:800, color:'#fff', background:u.color, width:'100%', height:'100%', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:6 }}>{u.abbr?.slice(0,2)}</span>}
                             </div>
                             <div className="flex-1 min-w-0">
@@ -716,7 +716,7 @@ export default async function CatchAllProgramPage(
                         >
                           <div className="w-9 h-9 rounded-lg border border-border bg-white flex items-center justify-center overflow-hidden shrink-0">
                             {u.logo
-                              ? <img src={u.logo} alt={u.name} className="max-w-full max-h-full object-contain p-0.5" onError={e => { (e.target as HTMLImageElement).style.display='none' }} />
+                              ? <img src={u.logo} alt={u.name} className="max-w-full max-h-full object-contain p-0.5" />
                               : <span style={{ fontSize:9, fontWeight:800, color:'#fff', background:u.color, width:'100%', height:'100%', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:6 }}>{u.abbr?.slice(0,2)}</span>
                             }
                           </div>
