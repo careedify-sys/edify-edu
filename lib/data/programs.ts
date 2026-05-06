@@ -8,6 +8,7 @@
 
 import { readFileSync } from 'fs'
 import { join } from 'path'
+import { UNIVERSITIES, getUniversityById, specSlug as toSlug, specName as toName } from '@/lib/data'
 
 export interface ProgramRow {
   university_slug: string
@@ -148,22 +149,89 @@ export function getSpecDisplayName(
 }
 
 /**
+ * Resolve a spec for a (university, program, specSlug) triple by checking
+ * the manifest first, then falling back to lib/data.ts programDetails.
+ *
+ * Why both: the program-listing page (UniProgramBody → SpecializationGrid)
+ * generates href slugs from `lib/data.ts` programDetails specs via specSlug().
+ * The manifest is built from a separate Excel sheet that has drifted out of
+ * sync. When a user clicks a listing link, we should always render content,
+ * even if the manifest is missing that spec — otherwise the page 404s.
+ *
+ * Returns the canonical display name when found, null otherwise.
+ */
+export function resolveSpecName(
+  uniId: string,
+  programLabel: string,
+  programSlug: string,
+  specSlug: string
+): string | null {
+  // 1. Manifest path (preserves Excel-sourced display names + alias resolution)
+  const fromManifest = getSpecDisplayName(uniId, programSlug, specSlug)
+  if (fromManifest) return fromManifest
+
+  const u = getUniversityById(uniId)
+  if (!u) return null
+  const pd = (u.programDetails as Record<string, { specs?: unknown[] } | undefined>)[programLabel]
+  const specs = (pd?.specs ?? []) as Array<string | { slug: string; name: string }>
+  const match = specs.find(s => toSlug(s as never) === specSlug)
+  if (match) return toName(match as never)
+
+  // 3. Last-resort: title-case the slug so we still render something readable
+  // when a sitemap/external link points at a spec we know nothing about.
+  // We only do this when the slug is at least plausible (alphanumeric + dashes).
+  if (/^[a-z0-9][a-z0-9-]*$/.test(specSlug)) {
+    return specSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+  }
+  return null
+}
+
+/**
  * All (id, spec) param pairs for a program — used in generateStaticParams.
- * Replaces iterating over UNIVERSITIES from lib/data.ts for spec pages.
+ *
+ * Sources both the Excel manifest AND lib/data.ts programDetails so that
+ * every spec linked from a /universities/{id}/{program} listing page also
+ * gets statically generated. Without the data.ts source, ~1k spec links
+ * 404 because the Excel manifest has drifted out of sync.
  */
 export function getProgramSpecParams(
   program: string
 ): Array<{ id: string; spec: string }> {
   const prog = program.toLowerCase()
-  // Deduplicate: manifest may have duplicate (slug, spec_slug) from multiple Excel rows
   const seen = new Set<string>()
   const out: Array<{ id: string; spec: string }> = []
+
   for (const r of loadManifest()) {
     if (r.program !== prog || !r.spec_slug) continue
     const key = `${r.university_slug}|${r.spec_slug}`
     if (!seen.has(key)) {
       seen.add(key)
       out.push({ id: r.university_slug, spec: r.spec_slug })
+    }
+  }
+
+  // Also include slugs derived from lib/data.ts programDetails. Map lowercase
+  // program slug to the case used in programDetails keys (MBA, MCA, BBA, BCA,
+  // B.Com, M.Com, BA, MA, MSc, BSc).
+  const PROG_LABEL: Record<string, string> = {
+    mba: 'MBA', mca: 'MCA', bba: 'BBA', bca: 'BCA',
+    bcom: 'B.Com', mcom: 'M.Com',
+    ba: 'BA', ma: 'MA', msc: 'MSc', bsc: 'BSc',
+  }
+  const label = PROG_LABEL[prog]
+  if (label) {
+    for (const u of UNIVERSITIES) {
+      const pd = (u.programDetails as Record<string, { specs?: unknown[] } | undefined>)[label]
+      const specs = (pd?.specs ?? []) as Array<string | { slug: string; name: string }>
+      for (const s of specs) {
+        const slug = toSlug(s as never)
+        if (!slug) continue
+        const key = `${u.id}|${slug}`
+        if (!seen.has(key)) {
+          seen.add(key)
+          out.push({ id: u.id, spec: slug })
+        }
+      }
     }
   }
   return out

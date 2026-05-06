@@ -3,7 +3,7 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getUniversityById } from '@/lib/data'
-import { getProgramSpecParams, getSpecDisplayName } from '@/lib/data/programs'
+import { getProgramSpecParams, resolveSpecName } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
 import { getTitleName, shortenSpec } from '@/lib/seo-title'
 
@@ -20,7 +20,7 @@ export async function generateMetadata(
   const u = getUniversityById(id)
   if (!u) return { title: 'Not Found' }
 
-  const spec = getSpecDisplayName(id, 'mba', specSlug)
+  const spec = resolveSpecName(id, 'MBA', 'mba', specSlug)
   if (!spec) return { title: 'Not Found' }
 
   const year = new Date().getFullYear()
@@ -58,7 +58,7 @@ export default async function SpecializationPage(
   const u = getUniversityById(id)
   if (!u) notFound()
 
-  const spec = getSpecDisplayName(id, 'mba', specSlug)
+  const spec = resolveSpecName(id, 'MBA', 'mba', specSlug)
   if (!spec) notFound()
 
   const pd = u.programDetails['MBA']
