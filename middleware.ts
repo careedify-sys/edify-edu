@@ -296,6 +296,19 @@ export function middleware(req: NextRequest) {
     return NextResponse.redirect(url, 308)
   }
 
+  // ── 2a1. Legacy static URL redirects (Wix/HTML-era leftovers indexed by Google) ───
+  const LEGACY_STATIC_REDIRECTS: Record<string, string> = {
+    '/courses.html': '/programs',
+    '/thankyou.html': '/',
+    '/index.html': '/',
+    '/ugc-approved-online-universities': '/blog/ugc-deb-approved-online-universities-india',
+  }
+  if (LEGACY_STATIC_REDIRECTS[pathname]) {
+    const url = req.nextUrl.clone()
+    url.pathname = LEGACY_STATIC_REDIRECTS[pathname]
+    return NextResponse.redirect(url, 308)
+  }
+
   // ── 2a2. Double-dash cleanup in any URL (media--communication → media-communication) ───
   if (pathname.includes('--')) {
     const url = req.nextUrl.clone()
