@@ -257,12 +257,12 @@ export default async function CouponDetailPage({ params }: { params: any }) {
           <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>How to Apply the Coupon Code</h2>
           <div className="space-y-3">
             {[
-              `Visit the official ${page.shortName} portal at ${page.officialUrl}`,
-              'Click Apply Now and fill your basic details',
-              'Complete the application and pay the application fee',
-              `Contact your EdifyEdu advisor and mention code ${page.couponCode}`,
-              'Advisor coordinates with university admissions to apply the discount',
-              'You receive the reduced fee invoice before making payment',
+              'Connect with our EdifyEdu counsellor on a free call or WhatsApp',
+              `Mention the discount coupon code you received: ${page.couponCode}`,
+              'Share your basic details (name, contact, eligibility) with the counsellor',
+              `Counsellor verifies your eligibility and coordinates with ${page.shortName} admissions to apply the discount`,
+              'You receive the reduced fee invoice before making any payment',
+              'Complete the enrollment at the discounted fee, fully guided by your counsellor',
             ].map((step, i) => (
               <div key={i} className="flex gap-3 items-start">
                 <span className="flex-shrink-0 w-6 h-6 rounded-full bg-amber-100 flex items-center justify-center text-amber-700 text-xs font-bold">{i + 1}</span>
