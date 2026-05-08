@@ -8,6 +8,9 @@ import { PROGRAM_META } from '@/lib/data-client'
 import { getAllSpecs, getUniversitiesByProgram, UNIVERSITIES, specName as getSpecName } from '@/lib/data'
 import { getProgramContent, getSpecContent, getSpecFallback } from '@/lib/content'
 import type { Program } from '@/lib/data'
+import { formatFeeSlim, UNIS_SLIM } from '@/lib/data-slim'
+import { getSpecFAQs } from '@/lib/specFaqs'
+import { getCanonicalSpec } from '@/lib/specMapping'
 import ProgramPageClient from '@/components/ProgramPageClient'
 import MBAHubClient from '@/components/MBAHubClient'
 import MBASpecHubClient from '@/components/MBASpecHubClient'
@@ -305,10 +308,39 @@ export default async function CatchAllProgramPage(
 
   // MBA spec hub page (e.g., /programs/mba/finance) — dedicated spec comparison
   if (program === 'MBA' && activeSpec && subSlug) {
+    // Compute spec FAQ schema so Google can pull rich results. The same
+    // getSpecFAQs() drives the visual accordion inside MBASpecHubClient.
+    const specCanonical = getCanonicalSpec(subSlug)
+    const variants = specCanonical?.variants || [activeSpec]
+    const specMbaUnis = UNIS_SLIM.filter(u => {
+      if (!u.programs.includes('MBA')) return false
+      const uniSpecs = (u as any).mbaSpecs as string[] | undefined
+      if (!uniSpecs?.length) return false
+      return uniSpecs.some(s => {
+        const sn = s.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim()
+        return variants.some(v => {
+          const vn = v.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim()
+          return sn === vn || sn.startsWith(vn + ' ') || vn.startsWith(sn + ' ')
+        })
+      })
+    })
+    const specFeeMin = specMbaUnis.length ? Math.min(...specMbaUnis.map(u => u.feeMin).filter(f => f > 0)) : feeMin
+    const specFeeMax = specMbaUnis.length ? Math.max(...specMbaUnis.map(u => u.feeMax).filter(f => f > 0)) : feeMax
+    const specFAQs = getSpecFAQs(activeSpec, specMbaUnis.length || universities.length, formatFeeSlim(specFeeMin), formatFeeSlim(specFeeMax))
+    const specFaqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: specFAQs.map(f => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    }
     return (
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(specFaqSchema) }} />
         <MBASpecHubClient specSlug={subSlug} specName={activeSpec} />
       </>
     )

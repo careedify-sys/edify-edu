@@ -5,25 +5,12 @@ import Link from 'next/link'
 import { BadgeCheck, TrendingUp, BookOpen, Shield } from 'lucide-react'
 import { UNIS_SLIM, formatFeeSlim } from '@/lib/data-slim'
 import { getCanonicalSpec, type CanonicalSpec } from '@/lib/specMapping'
+import { getSpecFAQs } from '@/lib/specFaqs'
 import UniversityCard from '@/components/UniversityCard'
 
 interface Props {
   specSlug: string
   specName: string
-}
-
-// Generate spec-specific FAQs dynamically
-function getSpecFAQs(specName: string, uniCount: number, feeFloor: string, feeCeiling: string) {
-  return [
-    { q: `Is online MBA in ${specName} valid for jobs in India?`, a: `Yes. An online MBA in ${specName} from any UGC-DEB approved university is legally equivalent to a campus MBA under UGC 2020 regulations. The degree certificate does not mention "online" mode. Valid for UPSC, banking exams, PSU recruitment, and all private-sector employment. Verify your university's approval status at deb.ugc.ac.in.` },
-    { q: `How much does online MBA in ${specName} cost?`, a: `Fees range from ${feeFloor} to ${feeCeiling} across ${uniCount} UGC-approved universities. Most programmes fall between Rs 1,50,000 and Rs 2,50,000. One-time payment discounts of Rs 10,000-20,000 are common. Zero-cost EMI options are available at many universities.` },
-    { q: `What jobs can I get after online MBA in ${specName}?`, a: `Career options depend on your prior experience and the industry you target. Entry-level roles include management trainees, analysts, and executives. Mid-career professionals can move into manager, team lead, and senior specialist positions. The MBA credential is most valuable when combined with domain experience and active networking.` },
-    { q: `What is the salary after online MBA in ${specName}?`, a: `Freshers can expect Rs 3-6 LPA. Mid-career professionals (2-5 years experience) typically earn Rs 6-12 LPA after the MBA. Senior professionals (5+ years) can reach Rs 10-25 LPA. Salary growth depends on your university brand, work experience, and how actively you pursue new opportunities.` },
-    { q: `Which university is best for online MBA in ${specName}?`, a: `The best university depends on your priorities. For brand prestige, consider MAHE (NIRF #3) or Symbiosis (NAAC A++). For international credentials, Amity (WASC+QAA) is strong. For affordability, IGNOU (Rs 66K) or Galgotias (Rs 76K) offer UGC-valid options. Compare all ${uniCount} universities on this page.` },
-    { q: `Can I do online MBA in ${specName} while working full-time?`, a: `Yes. All online MBA programmes listed here are designed for working professionals. Live sessions are scheduled on weekends. Recorded lectures are available 24/7. Exams are online and AI-proctored from home. Most students complete the 2-year programme alongside full-time employment.` },
-    { q: `When does ${specName} specialisation start in the MBA programme?`, a: `Most universities follow a common structure: Year 1 (Semesters 1-2) covers core MBA subjects like Accounting, Economics, Marketing, and Statistics. Specialisation in ${specName} begins from Semester 3. You choose your specialisation at the end of Year 1 or during admission depending on the university.` },
-    { q: `Is online MBA in ${specName} accepted for PhD admission?`, a: `Yes. UGC-DEB approved online MBA degrees are recognized for PhD admissions at any UGC-approved university in India. You will need to clear NET/JRF or the university entrance exam. The specialisation in ${specName} can also support research in that domain area.` },
-  ]
 }
 
 export default function MBASpecHubClient({ specSlug, specName }: Props) {

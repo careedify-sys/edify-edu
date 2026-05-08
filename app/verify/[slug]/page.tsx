@@ -11,6 +11,7 @@ import { DataFreshnessBadge } from '@/components/verify/DataFreshnessBadge';
 import { TrackPageView } from '@/components/verify/TrackPageView';
 import { AboutUniversity } from '@/components/verify/AboutUniversity';
 import { HelpdeskTeaser } from '@/components/verify/HelpdeskTeaser';
+import { VerifyFAQ, getVerifyFAQs } from '@/components/verify/VerifyFAQ';
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -125,6 +126,24 @@ export default async function VerifyPage({ params }: PageProps) {
   const programmes = progRes.data || [];
   const accreditations = accRes.data || [];
 
+  const verifyFaqs = getVerifyFAQs({
+    universityName: university.name,
+    city: university.city,
+    state: university.state,
+    ugcStatus: university.ugc_deb_status,
+    ugcValidTill: university.ugc_deb_valid_till,
+    programmeCount: programmes.length,
+  });
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": verifyFaqs.map(f => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a },
+    })),
+  };
+
   return (
     <main style={{ background: brand.cream, minHeight: '100vh' }}>
       <TrackPageView universityId={university.id} universitySlug={slug} />
@@ -145,6 +164,10 @@ export default async function VerifyPage({ params }: PageProps) {
             "foundingDate": university.established_year ? `${university.established_year}-01-01` : undefined,
           }),
         }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '24px 20px 60px' }}>
@@ -193,6 +216,15 @@ export default async function VerifyPage({ params }: PageProps) {
             <div style={{ background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: `1px solid ${brand.creamBorder}` }}>
               <DataFreshnessBadge updatedAt={university.data_updated_at} />
             </div>
+            {/* SEO body + FAQ section — adds rich content and FAQPage schema */}
+            <VerifyFAQ
+              universityName={university.name}
+              city={university.city}
+              state={university.state}
+              ugcStatus={university.ugc_deb_status}
+              ugcValidTill={university.ugc_deb_valid_till}
+              programmeCount={programmes.length}
+            />
             {/* Interlinks to university profile, programs, compare, guides */}
             <div style={{ background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: `1px solid ${brand.creamBorder}` }}>
               <VerifyInterlinks
