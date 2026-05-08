@@ -2,6 +2,18 @@
 // Run after a full deploy to notify IndexNow of all URLs in the sitemap.
 // Usage: npm run indexnow:notify-all
 
+import * as fs from 'node:fs'
+import * as path from 'node:path'
+
+// Load .env.local manually — tsx doesn't pick it up like next does
+const envPath = path.join(process.cwd(), '.env.local')
+if (fs.existsSync(envPath)) {
+  for (const line of fs.readFileSync(envPath, 'utf8').split(/\r?\n/)) {
+    const m = line.match(/^([A-Z0-9_]+)=(.*)$/)
+    if (m && !process.env[m[1]]) process.env[m[1]] = m[2].replace(/^["']|["']$/g, '')
+  }
+}
+
 import { notifyIndexNow } from '../lib/indexnow'
 
 async function main() {
