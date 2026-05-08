@@ -17,14 +17,25 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
   const page = getCouponPage(slug)
   if (!page) return { title: 'Not Found' }
 
-  const title = `${page.shortName} Online MBA Coupon Code 2026 -- Save ${page.maxSavings} | EdifyEdu`
-  const description = `Verified ${page.shortName} Online MBA discount coupon for 2026. Save up to ${page.maxSavings} with merit scholarship + lump-sum payment. NAAC ${page.naac}. Independent recommendations.`
+  const year = new Date().getFullYear()
+  const title = `${page.shortName} Online MBA Coupon Code ${year} — Save ${page.maxSavings} (Code: ${page.couponCode}) | EdifyEdu`
+  const description = `${page.shortName} Online MBA fee is ${page.totalFee}. With code ${page.couponCode} plus stackable scholarships, save up to ${page.maxSavings} and pay ${page.finalFee}. Verified for ${year}. NAAC ${page.naac} accredited. Zero referral commissions.`
 
   return {
-    title,
+    title: { absolute: title },
     description,
+    keywords: [
+      `${page.shortName} online MBA coupon`,
+      `${page.shortName} MBA discount code ${year}`,
+      `${page.couponCode} coupon`,
+      `${page.shortName} online MBA fees`,
+      `${page.shortName} online MBA scholarship`,
+      `online MBA discount India ${year}`,
+      `${page.universityName} fee discount`,
+    ],
     alternates: { canonical: `https://edifyedu.in/coupons/${page.slug}` },
     openGraph: { title, description, url: `https://edifyedu.in/coupons/${page.slug}`, type: 'article' },
+    twitter: { card: 'summary_large_image', title, description },
   }
 }
 
@@ -67,11 +78,65 @@ export default async function CouponDetailPage({ params }: { params: any }) {
     })),
   }
 
+  const applicationSteps = [
+    'Connect with our EdifyEdu counsellor on a free call or WhatsApp',
+    `Mention the discount coupon code you received: ${page.couponCode}`,
+    'Share your basic details (name, contact, eligibility) with the counsellor',
+    `Counsellor verifies your eligibility and coordinates with ${page.shortName} admissions to apply the discount`,
+    'You receive the reduced fee invoice before making any payment',
+    'Complete the enrollment at the discounted fee, fully guided by your counsellor',
+  ]
+
+  // HowTo schema — strong AEO signal for "how to apply X coupon" queries.
+  // Mirrors the visible 6-step section so AI search engines pull verbatim.
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: `How to Apply ${page.couponCode} Coupon for ${page.shortName} Online MBA ${year}`,
+    description: `Six-step application flow to claim the verified ${page.couponCode} discount on ${page.universityName} Online MBA, save up to ${page.maxSavings}, and pay ${page.finalFee}.`,
+    totalTime: 'P3D',
+    estimatedCost: { '@type': 'MonetaryAmount', currency: 'INR', value: 0 },
+    supply: [{ '@type': 'HowToSupply', name: 'Graduation marksheets and ID proof' }],
+    step: applicationSteps.map((s, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: `Step ${i + 1}`,
+      text: s,
+      url: `https://edifyedu.in/coupons/${page.slug}#step-${i + 1}`,
+    })),
+  }
+
+  // Course schema — describes the underlying MBA programme so search engines
+  // tie the coupon to the actual product.
+  const courseSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Course',
+    name: `${page.universityName} Online MBA`,
+    description: `UGC-DEB approved 2-year online MBA from ${page.universityName} (NAAC ${page.naac}). Programme fee ${page.totalFee}. With ${page.couponCode} plus scholarships, save up to ${page.maxSavings}.`,
+    provider: { '@type': 'CollegeOrUniversity', name: page.universityName, sameAs: page.officialUrl },
+    offers: {
+      '@type': 'Offer',
+      price: page.totalFeeNum - page.maxSavingsNum,
+      priceCurrency: 'INR',
+      validThrough: expiryISO,
+      url: `https://edifyedu.in/coupons/${page.slug}`,
+      availability: 'https://schema.org/InStock',
+    },
+    educationalLevel: 'Postgraduate',
+    hasCourseInstance: {
+      '@type': 'CourseInstance',
+      courseMode: 'Online',
+      courseWorkload: 'PT2Y',
+    },
+  }
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {offerSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerSchema) }} />}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Breadcrumb */}
@@ -254,17 +319,11 @@ export default async function CouponDetailPage({ params }: { params: any }) {
 
         {/* Application steps */}
         <section className="mb-8">
-          <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>How to Apply the Coupon Code</h2>
+          <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>How to Apply the {page.couponCode} Coupon Code</h2>
+          <p className="text-sm text-slate-600 mb-4">Apply the {page.couponCode} discount to your {page.shortName} Online MBA admission in six steps. Average time: 1-3 working days from first call to discounted invoice.</p>
           <div className="space-y-3">
-            {[
-              'Connect with our EdifyEdu counsellor on a free call or WhatsApp',
-              `Mention the discount coupon code you received: ${page.couponCode}`,
-              'Share your basic details (name, contact, eligibility) with the counsellor',
-              `Counsellor verifies your eligibility and coordinates with ${page.shortName} admissions to apply the discount`,
-              'You receive the reduced fee invoice before making any payment',
-              'Complete the enrollment at the discounted fee, fully guided by your counsellor',
-            ].map((step, i) => (
-              <div key={i} className="flex gap-3 items-start">
+            {applicationSteps.map((step, i) => (
+              <div key={i} id={`step-${i + 1}`} className="flex gap-3 items-start">
                 <span className="flex-shrink-0 w-6 h-6 rounded-full bg-amber-100 flex items-center justify-center text-amber-700 text-xs font-bold">{i + 1}</span>
                 <p className="text-sm text-slate-600">{step}</p>
               </div>
@@ -275,14 +334,28 @@ export default async function CouponDetailPage({ params }: { params: any }) {
         {/* Scholarship details */}
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>Scholarships Available at {page.shortName} for Online MBA {year}</h2>
-          <p className="text-sm text-slate-600 leading-relaxed mb-4">
+          <p className="text-sm text-slate-600 leading-relaxed mb-5">
             Beyond coupon codes, {page.universityName} offers several scholarship categories that can significantly reduce your fee. These scholarships are administered by the university directly and do not require an EdifyEdu code. However, in many cases, you can stack a university scholarship with an EdifyEdu code for maximum savings.
           </p>
+
+          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>1. Merit-Based Scholarship (10-20% Fee Waiver)</h3>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
             Merit-based scholarships are the most common. If you scored 60% or above in your graduation, you likely qualify for a 10-20% fee waiver at most universities including {page.shortName}. The scholarship is evaluated automatically during the admission process. You do not need to apply separately. Simply upload your graduation marksheets and the university admissions team will assess your eligibility.
           </p>
+
+          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>2. Defence Personnel Waiver (15-20% Fee Waiver)</h3>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            Defence personnel (serving and retired), JCOs, and their dependents typically receive 15-20% fee waivers. Divyaang (differently-abled) candidates may receive up to 100% fee waiver with valid documentation. Sports achievers at national or state level may receive performance-based waivers. Alumni of the same university group often receive 5-10% additional discounts. Check with the {page.shortName} admissions team for the complete list of active scholarship categories.
+            Defence personnel (serving and retired), JCOs, and their dependents typically receive 15-20% fee waivers at {page.shortName}. Documentation required: defence ID card or service record. The waiver applies once and stacks with the EdifyEdu enrollment bonus.
+          </p>
+
+          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>3. Divyaang Candidate Waiver (Up to 100% Fee Waiver)</h3>
+          <p className="text-sm text-slate-600 leading-relaxed mb-4">
+            Divyaang (differently-abled) candidates with 40% or higher disability certificate may receive up to 100% fee waiver. {page.shortName} reviews the disability certificate during admission. This waiver is non-stackable but covers the full programme fee for qualifying candidates.
+          </p>
+
+          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>4. Sports Achiever and Alumni Discount (5-10%)</h3>
+          <p className="text-sm text-slate-600 leading-relaxed mb-4">
+            Sports achievers at national or state level may receive performance-based waivers. Alumni of the same university group often receive 5-10% additional discounts. Check with the {page.shortName} admissions team for the complete list of active scholarship categories for the {year} batch.
           </p>
         </section>
 
@@ -334,12 +407,23 @@ export default async function CouponDetailPage({ params }: { params: any }) {
         {/* When to apply */}
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>Best Time to Apply for {page.shortName} Online MBA Discount</h2>
+
+          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>January Intake — Apply in November to December</h3>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            Most online MBA universities including {page.shortName} run two intake windows per year: January and July. Early-bird discounts, when available, are typically highest 4-6 weeks before the intake deadline. If you are planning to enrol in the July {year} batch, applying in May or June gives you the best chance of securing maximum discounts.
+            {page.shortName} runs a January intake each year. Early-bird discounts, when available, are typically highest 4-6 weeks before the intake deadline. Applying between mid-November and mid-December gives you the best chance of securing the maximum January-batch discount.
           </p>
+
+          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>July Intake — Apply in May to June</h3>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            However, do not wait for a better discount if the current offer is already strong. University fee structures change between batches, and a discount available today may not be available next month. The EdifyEdu advisor will tell you honestly whether the current discount is the best available or if waiting makes sense for your specific university and batch.
+            The July {year} intake is the larger of the two batches. Early-bird windows usually open in May and tighten in late June. Applying between mid-May and mid-June ensures you lock in the early-bird scholarship plus the active EdifyEdu coupon code.
           </p>
+
+          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>Do Not Wait if the Current Offer is Already Strong</h3>
+          <p className="text-sm text-slate-600 leading-relaxed mb-4">
+            University fee structures change between batches, and a discount available today may not be available next month. The EdifyEdu advisor will tell you honestly whether the current discount is the best available or if waiting makes sense for your specific university and batch.
+          </p>
+
+          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>Stacking Order for Maximum Savings</h3>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
             To maximise your savings, follow this order: (1) check if you qualify for merit scholarship based on graduation marks, (2) decide between lump-sum and semester-wise payment, (3) ask about any active early-bird or seasonal offer, (4) apply the EdifyEdu verified code on top. This four-step stacking approach consistently delivers the highest savings across all universities we work with.
           </p>
