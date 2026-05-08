@@ -32,7 +32,7 @@ export function getVerifyFAQs({ universityName, city, state, ugcStatus, ugcValid
     {
       q: `Is the online degree from ${universityName} valid for government jobs?`,
       a: isApproved
-        ? `Yes. Online degrees from ${universityName} are accepted for central government jobs (UPSC, SSC, banking, PSU, defence civilian roles), state government jobs, teaching positions, and judicial services where the eligibility specifies a recognised degree. The degree certificate does not mention "online" or "distance" mode. UGC public notice (April 2020) clarified that online degrees from UGC-DEB approved universities have the same legal status as on-campus degrees.`
+        ? `Yes. Online degrees from ${universityName} are accepted for central government jobs (UPSC, SSC, banking, PSU, defence civilian roles), state government jobs, teaching positions, and judicial services where the eligibility specifies a recognised degree. Per UGC (Online Programmes) Regulations 2018, the degree certificate clearly identifies the programme as "Online" mode — and the UGC public notice of April 2020 confirms that online degrees from UGC-DEB approved universities carry the same legal status and employment rights as on-campus degrees.`
         : `Eligibility for government jobs requires a UGC-recognised degree. Verify ${universityName}'s current UGC-DEB approval status on this page and at deb.ugc.ac.in before applying. If approval has lapsed for the relevant academic year, the degree may not qualify for that year's intake.`,
     },
     {
@@ -76,7 +76,7 @@ export function VerifyFAQ(props: Props) {
         {universityName} is one of the Indian online universities tracked by EdifyEdu. This page consolidates approval, accreditation, and ranking data from the UGC Distance Education Bureau (deb.ugc.ac.in), AICTE, NAAC (naac.gov.in), and NIRF (nirfindia.org) so you can verify the legal validity of any online degree from {universityName} before paying admission fees.
       </p>
       <p style={{ fontSize: 13, color: brand.textBody, lineHeight: 1.6, margin: '0 0 18px' }}>
-        Online degrees from UGC-DEB approved universities are legally equivalent to on-campus degrees under the UGC public notice of April 2020. They are accepted for UPSC, banking exams, PSU recruitment, state government jobs, private-sector employment, and PhD admissions. The degree certificate carries no mention of "online" or "distance" mode. EdifyEdu earns zero referral commissions from {universityName}, which is why this verification page presents both strengths and gaps without favouritism.
+        Online degrees from UGC-DEB approved universities are legally equivalent to on-campus degrees under the UGC public notice of April 2020. They are accepted for UPSC, banking exams, PSU recruitment, state government jobs, private-sector employment, and PhD admissions. Per UGC (Online Programmes) Regulations 2018, the degree certificate clearly identifies the programme as "Online" mode — this is by design and does not affect legal validity. EdifyEdu earns zero referral commissions from {universityName}, which is why this verification page presents both strengths and gaps without favouritism.
       </p>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 24, marginBottom: 12 }}>

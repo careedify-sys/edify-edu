@@ -39,7 +39,7 @@ export const GUIDES: Guide[] = [
 
 <h2>Is It Equivalent to a Regular Degree?</h2>
 <p>Yes. The UGC circular dated April 2020 explicitly states that online degrees from approved universities are <em>at par</em> with conventional degrees for all purposes — employment, promotion, higher studies, and eligibility for competitive exams including UPSC, state PSCs, and bank exams.</p>
-<p>The degree certificate itself does not say "online." It reads the same as a regular degree from that university.</p>
+<p>Per UGC (Online Programmes) Regulations 2018, the degree certificate clearly identifies the programme as Online mode — by regulator design. This does not affect legal validity. It carries the same university seal, Vice-Chancellor signature, and academic structure as a regular degree from that university.</p>
 
 <h2>How to Verify a University is UGC DEB Approved</h2>
 <ol>
