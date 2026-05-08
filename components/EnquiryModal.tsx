@@ -84,7 +84,8 @@ export default function EnquiryModal({
     return Object.keys(e).length === 0
   }
 
-  async function handleSubmit() {
+  async function handleSubmit(e?: React.FormEvent) {
+    if (e) e.preventDefault()
     if (!validate()) return
     setStep('submitting')
 
@@ -171,18 +172,36 @@ export default function EnquiryModal({
         </div>
 
         {/* ── FORM ── */}
+        {/*
+          Wrapped in a real <form> with onSubmit so iOS Safari and Chrome
+          for Android trigger autofill from saved Contacts. Each input has
+          name, autoComplete, inputMode and enterKeyHint set so the mobile
+          keyboard advances correctly and the password manager / contact
+          autofill suggestions appear above the keyboard.
+        */}
         {step === 'form' && (
-          <div className="flex-1 overflow-y-auto px-6 py-5 space-y-4">
+          <form
+            id="enquiry-form"
+            onSubmit={handleSubmit}
+            autoComplete="on"
+            className="flex-1 overflow-y-auto px-6 py-5 space-y-4"
+          >
 
             {/* Full Name */}
             <div>
-              <label className="text-xs font-bold text-slate-500 uppercase tracking-wide block mb-1.5">
+              <label htmlFor="enquiry-name" className="text-xs font-bold text-slate-500 uppercase tracking-wide block mb-1.5">
                 Full Name *
               </label>
               <div className="relative">
                 <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
                 <input
+                  id="enquiry-name"
+                  name="name"
                   type="text"
+                  autoComplete="name"
+                  autoCapitalize="words"
+                  spellCheck={false}
+                  enterKeyHint="next"
                   placeholder="Your full name"
                   aria-label="Full name"
                   value={form.name}
@@ -195,13 +214,20 @@ export default function EnquiryModal({
 
             {/* Phone */}
             <div>
-              <label className="text-xs font-bold text-slate-500 uppercase tracking-wide block mb-1.5">
+              <label htmlFor="enquiry-phone" className="text-xs font-bold text-slate-500 uppercase tracking-wide block mb-1.5">
                 Mobile Number * (+91)
               </label>
               <div className="relative">
                 <div className="absolute left-3 top-1/2 -translate-y-1/2 text-sm font-semibold text-slate-500">+91</div>
                 <input
+                  id="enquiry-phone"
+                  name="phone"
                   type="tel"
+                  autoComplete="tel-national"
+                  inputMode="numeric"
+                  pattern="[6-9][0-9]{9}"
+                  maxLength={10}
+                  enterKeyHint="next"
                   placeholder="10-digit mobile number"
                   aria-label="Phone number"
                   value={form.phone}
@@ -212,15 +238,22 @@ export default function EnquiryModal({
               {errors.phone && <p className="text-xs text-red-500 mt-1">{errors.phone}</p>}
             </div>
 
-            {/* Email — optional */}
+            {/* Email — optional but autofilled */}
             <div>
-              <label className="text-xs font-bold text-slate-500 uppercase tracking-wide block mb-1.5">
+              <label htmlFor="enquiry-email" className="text-xs font-bold text-slate-500 uppercase tracking-wide block mb-1.5">
                 Email Address <span className="font-normal text-slate-400">(optional)</span>
               </label>
               <div className="relative">
                 <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
                 <input
+                  id="enquiry-email"
+                  name="email"
                   type="email"
+                  autoComplete="email"
+                  inputMode="email"
+                  spellCheck={false}
+                  autoCapitalize="off"
+                  enterKeyHint="next"
                   placeholder="your@email.com"
                   aria-label="Email address"
                   value={form.email}
@@ -232,12 +265,14 @@ export default function EnquiryModal({
 
             {/* Interested In */}
             <div>
-              <label className="text-xs font-bold text-slate-500 uppercase tracking-wide block mb-1.5">
+              <label htmlFor="enquiry-program" className="text-xs font-bold text-slate-500 uppercase tracking-wide block mb-1.5">
                 Interested In *
               </label>
               <div className="relative">
                 <BookOpen className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
                 <select
+                  id="enquiry-program"
+                  name="program"
                   value={form.program}
                   onChange={e => setForm(f => ({ ...f, program: e.target.value }))}
                   className={`w-full pl-10 pr-8 py-3 rounded-xl border text-sm transition-all outline-none appearance-none cursor-pointer ${errors.program ? 'border-red-300 bg-red-50' : 'border-slate-200 bg-slate-50 focus:border-orange-400 focus:bg-white'}`}
@@ -252,13 +287,17 @@ export default function EnquiryModal({
 
             {/* Preferred University */}
             <div>
-              <label className="text-xs font-bold text-slate-500 uppercase tracking-wide block mb-1.5">
+              <label htmlFor="enquiry-university" className="text-xs font-bold text-slate-500 uppercase tracking-wide block mb-1.5">
                 Preferred University <span className="font-normal text-slate-400">(optional)</span>
               </label>
               <div className="relative">
                 <Building2 className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
                 <input
+                  id="enquiry-university"
+                  name="preferredUniversity"
                   type="text"
+                  autoComplete="organization"
+                  enterKeyHint="next"
                   placeholder="e.g. Amity, NMIMS, or Not sure"
                   aria-label="Preferred university"
                   value={form.preferredUniversity}
@@ -270,7 +309,7 @@ export default function EnquiryModal({
 
             {/* Coupon Code */}
             <div>
-              <label className="text-xs font-bold text-slate-500 uppercase tracking-wide block mb-1.5">
+              <label htmlFor="enquiry-coupon" className="text-xs font-bold text-slate-500 uppercase tracking-wide block mb-1.5">
                 Coupon Code <span className="font-normal text-slate-400">(optional)</span>
               </label>
 
@@ -287,7 +326,13 @@ export default function EnquiryModal({
               <div className="relative">
                 <Tag className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
                 <input
+                  id="enquiry-coupon"
+                  name="couponCode"
                   type="text"
+                  autoComplete="off"
+                  autoCapitalize="characters"
+                  spellCheck={false}
+                  enterKeyHint="done"
                   placeholder="e.g. AMITY25"
                   aria-label="Coupon code"
                   value={form.couponCode}
@@ -303,7 +348,13 @@ export default function EnquiryModal({
               <span className="text-green-500 text-base shrink-0">🔒</span>
               <span>Your details are safe. We never spam or share your number without your consent.</span>
             </div>
-          </div>
+
+            {/* Hidden submit so the browser knows this is a real submittable form
+                (improves autofill heuristics on iOS) and Enter on the last field
+                triggers handleSubmit even though the visible button is in the
+                footer outside the <form>. */}
+            <button type="submit" style={{ display: 'none' }} aria-hidden="true" tabIndex={-1}>Submit</button>
+          </form>
         )}
 
         {/* ── SUBMITTING ── */}
@@ -354,7 +405,8 @@ export default function EnquiryModal({
         {step === 'form' && (
           <div className="px-6 pb-6 pt-3 border-t border-slate-100 bg-white flex-shrink-0">
             <button
-              onClick={handleSubmit}
+              type="submit"
+              form="enquiry-form"
               className="w-full flex items-center justify-center gap-2 bg-orange-500 text-white py-3.5 rounded-xl font-bold text-sm hover:bg-orange-600 transition-colors shadow-md"
             >
               <Send className="w-4 h-4" />

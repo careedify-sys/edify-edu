@@ -94,29 +94,33 @@ export default function ContactPage() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-semibold text-ink-2 mb-1.5">Your Name *</label>
+                      <label htmlFor="contact-name" className="block text-xs font-semibold text-ink-2 mb-1.5">Your Name *</label>
                       <input required value={form.name} onChange={e => setForm(f => ({...f, name: e.target.value}))}
+                        id="contact-name" name="name" type="text" autoComplete="name" autoCapitalize="words" enterKeyHint="next"
                         placeholder="Rahul Sharma"
                         className="w-full px-4 py-3 rounded-xl border border-border bg-surface-2 text-sm focus:outline-none focus:border-amber focus:ring-2 focus:ring-amber/20" />
                     </div>
                     <div>
-                      <label className="block text-xs font-semibold text-ink-2 mb-1.5">Phone Number *</label>
+                      <label htmlFor="contact-phone" className="block text-xs font-semibold text-ink-2 mb-1.5">Phone Number *</label>
                       <input required value={form.phone} onChange={e => setForm(f => ({...f, phone: e.target.value}))}
-                        placeholder="+91 98765 43210" type="tel"
+                        id="contact-phone" name="phone" type="tel" autoComplete="tel" inputMode="tel" enterKeyHint="next"
+                        placeholder="+91 98765 43210"
                         className="w-full px-4 py-3 rounded-xl border border-border bg-surface-2 text-sm focus:outline-none focus:border-amber focus:ring-2 focus:ring-amber/20" />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-ink-2 mb-1.5">Email Address *</label>
+                    <label htmlFor="contact-email" className="block text-xs font-semibold text-ink-2 mb-1.5">Email Address *</label>
                     <input required value={form.email} onChange={e => setForm(f => ({...f, email: e.target.value}))}
-                      placeholder="rahul@example.com" type="email"
+                      id="contact-email" name="email" type="email" autoComplete="email" inputMode="email" autoCapitalize="off" spellCheck={false} enterKeyHint="next"
+                      placeholder="rahul@example.com"
                       className="w-full px-4 py-3 rounded-xl border border-border bg-surface-2 text-sm focus:outline-none focus:border-amber focus:ring-2 focus:ring-amber/20" />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-ink-2 mb-1.5">Your Question / Message *</label>
+                    <label htmlFor="contact-message" className="block text-xs font-semibold text-ink-2 mb-1.5">Your Question / Message *</label>
                     <textarea required value={form.message} onChange={e => setForm(f => ({...f, message: e.target.value}))}
+                      id="contact-message" name="message" enterKeyHint="send"
                       placeholder="e.g. I want to compare MBA fees between NMIMS and Amity. My budget is ₹1.5L..."
                       rows={4}
                       className="w-full px-4 py-3 rounded-xl border border-border bg-surface-2 text-sm focus:outline-none focus:border-amber focus:ring-2 focus:ring-amber/20 resize-none" />
