@@ -160,7 +160,7 @@ export function VerifyHero({ university, accreditations = [] }: Props) {
         )}
       </div>
 
-      {/* University name */}
+      {/* Keyword-rich H1 mirrors the meta title for ranking signal */}
       <h1
         style={{
           fontSize: 28,
@@ -171,7 +171,7 @@ export function VerifyHero({ university, accreditations = [] }: Props) {
           margin: '0 0 10px',
         }}
       >
-        {university.name}
+        Is {university.name} UGC-DEB Approved? Verification {new Date().getFullYear()}
       </h1>
 
       {/* Verdict sentence */}
@@ -185,8 +185,8 @@ export function VerifyHero({ university, accreditations = [] }: Props) {
         }}
       >
         {isApproved
-          ? 'This university is approved to offer online degrees in India.'
-          : 'This university is not currently approved to offer online degrees.'}
+          ? `Yes — ${university.name} is approved to offer online degrees in India under UGC-DEB regulations.`
+          : `${university.name} is not currently approved to offer online degrees under UGC-DEB.`}
       </p>
 
       {/* Inline stats row */}

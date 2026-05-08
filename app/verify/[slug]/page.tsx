@@ -43,12 +43,14 @@ export async function generateMetadata({ params }: PageProps) {
 
   const brandSlug = BRAND_SLUGS[slug];
 
+  const year = new Date().getFullYear();
+
   if (brandSlug) {
     return {
-      title: `Is Amity online MBA / MCA UGC-DEB approved? · Edify`,
-      description: `Independent verification of Amity online programmes. Different programmes are approved through Amity University Uttar Pradesh (Noida) and Amity University Rajasthan (Jaipur) — see exactly which entity issues each degree.`,
+      title: { absolute: `Is Amity Online MBA / MCA UGC-DEB Approved? Verification ${year} | EdifyEdu` },
+      description: `Independent verification of Amity online programmes ${year}. Different programmes are approved through Amity University Uttar Pradesh (Noida) and Amity University Rajasthan (Jaipur) — see exactly which entity issues each online degree.`,
       openGraph: {
-        title: `Amity online programmes — UGC-DEB verification`,
+        title: `Amity Online Programmes — UGC-DEB Verification ${year}`,
         description: 'See which Amity entity (Noida or Jaipur) approves each online programme.',
         type: 'article',
       },
@@ -61,15 +63,17 @@ export async function generateMetadata({ params }: PageProps) {
     .eq('slug', slug)
     .single();
 
-  if (!uni) return { title: 'University not found · Edify' };
+  if (!uni) return { title: { absolute: 'University Not Found | EdifyEdu' } };
 
   const location = [uni.city, uni.state].filter(Boolean).join(', ');
   return {
-    title: `Is ${uni.name} UGC-DEB approved? · Edify`,
-    description: `Verify ${uni.name}${location ? ' (' + location + ')' : ''} — UGC-DEB approval, AICTE, NAAC grade, NIRF rank — all from official sources.`,
+    title: { absolute: `Is ${uni.name} UGC-DEB Approved? Verification ${year} | EdifyEdu` },
+    description: `Verify ${uni.name}${location ? ' (' + location + ')' : ''} UGC-DEB approval, AICTE, NAAC grade and NIRF rank — sourced from official UGC, NAAC and NIRF portals. Independent verification, ${year}.`,
+    alternates: { canonical: `https://edifyedu.in/verify/${slug}` },
     openGraph: {
-      title: `Is ${uni.name} UGC-DEB approved?`,
+      title: `Is ${uni.name} UGC-DEB Approved? Verification ${year}`,
       description: `Independent verification of ${uni.name} from UGC, AICTE, NAAC and NIRF official sources.`,
+      url: `https://edifyedu.in/verify/${slug}`,
       type: 'article',
     },
   };
