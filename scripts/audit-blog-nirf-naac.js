@@ -9,11 +9,27 @@
 const fs = require('fs')
 const path = require('path')
 
-const blogPath = path.join(__dirname, '..', 'lib', 'blog.ts')
 const dataPath = path.join(__dirname, '..', 'lib', 'data.ts')
 const nirfPath = path.join(__dirname, '..', 'nirf_2025_map.json')
 
-const blog = fs.readFileSync(blogPath, 'utf8')
+// Sources to scan: { label, path, content }
+const sources = []
+function add(label, p) {
+  if (fs.existsSync(p)) sources.push({ label, path: p, content: fs.readFileSync(p, 'utf8') })
+}
+add('lib/blog.ts',         path.join(__dirname, '..', 'lib', 'blog.ts'))
+add('lib/content.ts',      path.join(__dirname, '..', 'lib', 'content.ts'))
+add('lib/guides.ts',       path.join(__dirname, '..', 'lib', 'guides.ts'))
+add('lib/coupon-pages.ts', path.join(__dirname, '..', 'lib', 'coupon-pages.ts'))
+add('lib/mba-data.ts',     path.join(__dirname, '..', 'lib', 'mba-data.ts'))
+add('lib/improved-specs.ts', path.join(__dirname, '..', 'lib', 'improved-specs.ts'))
+const jsonDir = path.join(__dirname, '..', 'lib', 'data', 'page-content')
+if (fs.existsSync(jsonDir)) {
+  for (const f of fs.readdirSync(jsonDir).filter(f => f.endsWith('.json'))) {
+    add(`lib/data/page-content/${f}`, path.join(jsonDir, f))
+  }
+}
+
 const data = fs.readFileSync(dataPath, 'utf8')
 const nirfRaw = JSON.parse(fs.readFileSync(nirfPath, 'utf8'))
 
@@ -77,15 +93,15 @@ const NAAC_BY_SLUG = {}
   }
 }
 
-// ── Scan blog.ts for NIRF claims ──────────────────────────────────────────
-// Pattern: alias name within ~120 chars of "NIRF #N" or "#N mgmt" or "#N overall"
-// Report when blog claim disagrees with truth
+// ── Scan all sources for NIRF claims ──────────────────────────────────────
 const issues = []
 
-const blogLower = blog.toLowerCase()
+for (const src of sources) {
+  const blog = src.content
+  const blogLower = blog.toLowerCase()
 
-for (const { tokens, ranks, official } of NIRF_ALIASES) {
-  for (const token of tokens) {
+  for (const { tokens, ranks, official } of NIRF_ALIASES) {
+   for (const token of tokens) {
     let from = 0
     while (true) {
       const idx = blogLower.indexOf(token, from)
@@ -109,6 +125,7 @@ for (const { tokens, ranks, official } of NIRF_ALIASES) {
         if (ranks.mgt === 0) {
           issues.push({
             type: 'NIRF Management — claimed but NOT RANKED',
+            file: src.label,
             token, official, claimed, truth: 'not in NIRF Management 2025',
             context: win.replace(/\s+/g, ' ').slice(0, 200),
             offset: winStart + win.search(/#\s*\d/),
@@ -116,6 +133,7 @@ for (const { tokens, ranks, official } of NIRF_ALIASES) {
         } else if (ranks.mgt !== claimed) {
           issues.push({
             type: 'NIRF Management — wrong rank',
+            file: src.label,
             token, official, claimed, truth: `#${ranks.mgt}`,
             context: win.replace(/\s+/g, ' ').slice(0, 200),
             offset: winStart + win.search(/#\s*\d/),
@@ -127,6 +145,7 @@ for (const { tokens, ranks, official } of NIRF_ALIASES) {
         if (ranks.uni === 0) {
           issues.push({
             type: 'NIRF University — claimed but NOT RANKED',
+            file: src.label,
             token, official, claimed, truth: 'not in NIRF University 2025',
             context: win.replace(/\s+/g, ' ').slice(0, 200),
             offset: winStart + win.search(/#\s*\d/),
@@ -134,6 +153,7 @@ for (const { tokens, ranks, official } of NIRF_ALIASES) {
         } else if (ranks.uni !== claimed) {
           issues.push({
             type: 'NIRF University — wrong rank',
+            file: src.label,
             token, official, claimed, truth: `#${ranks.uni}`,
             context: win.replace(/\s+/g, ' ').slice(0, 200),
             offset: winStart + win.search(/#\s*\d/),
@@ -149,6 +169,7 @@ for (const { tokens, ranks, official } of NIRF_ALIASES) {
         const matches = looksLikeUni ? 'matches University' : looksLikeMgt ? 'matches Mgmt' : 'NEITHER'
         issues.push({
           type: 'NIRF — category missing (house-style violation)',
+          file: src.label,
           token, official, claimed,
           truth: `uni=${ranks.uni || '—'}, mgt=${ranks.mgt || '—'} (${matches})`,
           context: win.replace(/\s+/g, ' ').slice(0, 200),
@@ -156,13 +177,14 @@ for (const { tokens, ranks, official } of NIRF_ALIASES) {
         })
       }
     }
+   }
   }
 }
 
-// Group + dedupe
+// Group + dedupe (now keyed on file too)
 const grouped = {}
 for (const i of issues) {
-  const key = `${i.type} || ${i.token} || ${i.context.slice(0,80)}`
+  const key = `${i.file} || ${i.type} || ${i.token} || ${i.context.slice(0,80)}`
   if (!grouped[key]) grouped[key] = i
 }
 const dedup = Object.values(grouped)
@@ -180,9 +202,9 @@ for (const i of dedup) {
 
 for (const [type, list] of Object.entries(byType)) {
   console.log(`\n=== ${type} (${list.length}) ===`)
-  for (const i of list.slice(0, 30)) {
-    console.log(`  • ${i.token}  claimed:${i.claimed}  truth:${i.truth}`)
+  for (const i of list.slice(0, 60)) {
+    console.log(`  • [${i.file}] ${i.token}  claimed:${i.claimed}  truth:${i.truth}`)
     console.log(`    "${i.context.slice(0, 150)}..."`)
   }
-  if (list.length > 30) console.log(`  ...and ${list.length - 30} more`)
+  if (list.length > 60) console.log(`  ...and ${list.length - 60} more`)
 }
