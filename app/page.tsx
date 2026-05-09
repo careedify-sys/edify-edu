@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import type { CSSProperties } from 'react'
 import EdifyTrust from '@/components/EdifyTrust'
 import EnquiryModal from '@/components/EnquiryModalDynamic'
+import PressStrip from '@/components/PressStrip'
 
 import Link from 'next/link'
 import { ArrowRight, CheckCircle, XCircle, Shield, TrendingUp, Star, Award, BookOpen } from 'lucide-react'
@@ -147,6 +148,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* PRESS & MENTIONS — credibility strip */}
+      <PressStrip />
 
       {/* FEATURED BRANDS — social proof */}
       <FeaturedUniversitiesMarquee brands={FEATURED_BRANDS} totalUnis={totalUnis} />
