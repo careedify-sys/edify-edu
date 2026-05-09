@@ -4378,7 +4378,7 @@ export const UNIVERSITIES: University[] = [
     region: 'Central',
     nirf: 63,
     nirfMgt: 57,
-    naac: 'B+',
+    naac: 'A+',
     ugc: true,
     approvals: ['UGC DEB', 'NAAC A++', 'NIRF #57', 'AICTE', 'WES Recognised'],
     examMode: 'Online',
