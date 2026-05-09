@@ -39,6 +39,22 @@ const SUPA_TO_SITE_SLUG = {
   'jain-deemed-to-be-university-online': 'jain-university-online',
 }
 
+// ── NAAC grade ↔ score validator ──────────────────────────────────────────
+// Official NAAC grading thresholds (CGPA on a 4-point scale).
+// A++ ≥ 3.51, A+ 3.26-3.50, A 3.01-3.25, B++ 2.76-3.00, B+ 2.51-2.75,
+// B 2.01-2.50, C 1.51-2.00. Used to flag typos in the source TSV where
+// the grade letter doesn't match the CGPA range — e.g. score 3.27 with
+// grade "A" would be flagged because 3.27 falls in the A+ range.
+function expectedGradeForScore(cgpa) {
+  if (cgpa >= 3.51) return 'A++'
+  if (cgpa >= 3.26) return 'A+'
+  if (cgpa >= 3.01) return 'A'
+  if (cgpa >= 2.76) return 'B++'
+  if (cgpa >= 2.51) return 'B+'
+  if (cgpa >= 2.01) return 'B'
+  return 'C'
+}
+
 // ── Parse official NAAC TSV ───────────────────────────────────────────────
 function parseTSV(filePath) {
   const raw = fs.readFileSync(filePath, 'utf8')
@@ -63,6 +79,14 @@ function parseTSV(filePath) {
     let isoDate = null
     const dm = dateStr.match(/(\d{2})-(\d{2})-(\d{4})/)
     if (dm) isoDate = `${dm[3]}-${dm[2]}-${dm[1]}`
+    // Validate: grade letter must match the CGPA range. Mismatches are
+    // almost always TSV transcription errors. Warn but don't drop —
+    // operator can decide whether to trust the score (preferred) or grade.
+    const expected = expectedGradeForScore(cgpa)
+    if (grade !== expected) {
+      console.warn(`  ⚠ Row ${slNo} ${name}: grade "${grade}" but CGPA ${cgpa} is in "${expected}" range. Using "${expected}" (score-derived).`)
+      grade = expected
+    }
     out.push({ slNo, name, trackId, aisheId, addr, cycle, cgpa, grade, declaredOn: isoDate })
   }
   return out
