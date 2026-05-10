@@ -10472,11 +10472,11 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaTitle: 'Compare SMU Against Other Online MBA Programs',
     ctaDesc: 'See how SMU Online MBA stacks up against MAHE, MUJ and 20+ other UGC-approved programs — fees, dual specialization, accreditation side by side.',
     faqs: [
-      { q: 'What is the total fee for SMU Online MBA?', a: 'The total fee is Rs. 1,10,000 for the full two-year program, paid as Rs. 27,500 per semester. No entrance exam is required. Verify current fees at onlinemanipal.com before applying.' },
+      { q: 'What is the total fee for SMU Online MBA?', a: 'The total programme fee is Rs. 1,20,000 for the full 2-year programme, paid as Rs. 30,000 per semester. EMI from Rs 5,000/month available. No entrance exam is required. Verify current fees at onlinemanipal.com before applying.' },
       { q: 'What is the dual specialization in SMU Online MBA?', a: 'SMU mandates that all students choose a primary and a secondary specialization. In semesters 3 and 4, you study core subjects from your primary track plus 2 subjects from a secondary specialization. Both appear on your degree transcript.' },
       { q: 'Is SMU Online MBA UGC approved?', a: 'Yes. Sikkim Manipal University holds NAAC A+ accreditation and UGC-DEB entitlement for online degrees. The degree is legally equivalent to a regular campus MBA.' },
       { q: 'How does SMU Online MBA compare to MAHE?', a: 'SMU costs Rs. 1,20,000 vs MAHE at Rs. 2,92,000. MAHE carries a stronger brand (NAAC A++, Rank #3 nationally). SMU offers the same Manipal alumni network access at one-third the cost, with a mandatory dual specialization MAHE does not have.' },
-      { q: 'Who should apply for SMU Online MBA?', a: 'SMU is best suited for mid-career professionals who want Manipal brand association at an affordable price and benefit from a dual-domain curriculum. Healthcare professionals are particularly well-served by the Healthcare specialization at Rs. 1,10,000 total.' }
+      { q: 'Who should apply for SMU Online MBA?', a: 'SMU is best suited for mid-career professionals who want Manipal brand association at an affordable price and benefit from a dual-domain curriculum. Healthcare professionals are particularly well-served by the Healthcare specialization at Rs. 1,20,000 total.' }
     ],
     content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Save up to Rs 16,000 on SMU Online MBA.</p><a href="/coupons/smu-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View SMU Coupon Code</a></div>
 
@@ -10487,8 +10487,8 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>This review is based on publicly available data. EdifyEdu does not accept referral fees. All details should be verified at <a href="https://www.onlinemanipal.com/institution/sikkim-manipal-university" target="_blank" rel="noopener">onlinemanipal.com</a>.</p>
 
 <div style="background:#f8fafc;border:1px solid #e2e8f0;border-left:5px solid #f97316;border-radius:10px;padding:24px 28px;margin:32px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px">
-  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Total Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 1,10,000</div></div>
-  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Per Semester</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 27,500</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Total Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 1,20,000</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Per Semester</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 30,000</div></div>
   <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">NAAC Grade</div><div style="font-size:17px;font-weight:700;color:#0f172a">A+</div></div>
   <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">UGC Status</div><div style="font-size:17px;font-weight:700;color:#0f172a">UGC-Entitled</div></div>
   <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Specializations</div><div style="font-size:17px;font-weight:700;color:#0f172a">6 tracks</div></div>
@@ -10504,6 +10504,12 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Is SMU Online MBA Legitimate?</h2>
 
+
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:14px 18px;margin:16px 0 24px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;font-size:13px;color:#475569"><div style="display:flex;align-items:center;gap:8px"><strong style="color:#0f172a">By Rishi Kumar</strong><span>·</span><span>Senior Education Researcher · Founder, edifyedu.in</span></div><div style="display:flex;align-items:center;gap:8px"><span>·</span><span>Updated 10 May 2026</span></div><div style="display:flex;align-items:center;gap:8px"><span>·</span><span style="color:#16a34a;font-weight:600">Verified against UGC-DEB, NAAC, official Manipal portal</span></div></div>
+
+<div style="background:#fffbeb;border-left:4px solid #f59e0b;padding:14px 18px;border-radius:0 10px 10px 0;margin:0 0 24px;font-size:13px;color:#78350f"><strong>Why trust this review:</strong> EdifyEdu earns zero referral commissions from Sikkim Manipal University or any Manipal Education entity. Fees and accreditations are cross-checked against the official onlinemanipal.com portal, the UGC-DEB approved list at <a href="https://deb.ugc.ac.in" rel="nofollow" style="color:#0369a1">deb.ugc.ac.in</a>, and the NAAC IIQA database at <a href="https://naac.gov.in" rel="nofollow" style="color:#0369a1">naac.gov.in</a>. Every claim about NAAC A+ accreditation, fee structure, and dual specialisation is traceable to a public source. Last verified 10 May 2026.</div>
+
 <p>Yes. Sikkim Manipal University is a government-recognized university established under a state act. Its online programs run through the OnlineManipal platform — Manipal Education's dedicated online learning infrastructure. The university holds NAAC A+ accreditation and UGC-DEB entitlement for online degrees.</p>
 
 <p>Being part of the Manipal Group gives SMU access to infrastructure, faculty, and alumni networks that most standalone universities at this price point cannot match. Verify UGC-DEB approval at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a> before paying any fees.</p>
@@ -10514,14 +10520,14 @@ export const BLOG_POSTS: BlogPost[] = [
 <table style="width:100%;border-collapse:collapse;font-size:15px">
   <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Fee Component</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Amount</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Notes</th></tr></thead>
   <tbody>
-    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Semester Fee (x4)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 27,500 per semester</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Payable at start of each semester</td></tr>
-    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Total Program Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,10,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">2-year full program</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Semester Fee (x4)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 30,000 per semester</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Payable at start of each semester</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Total Program Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,20,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">2-year full program</td></tr>
     <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Entrance Exam</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Not Required</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Merit-based admission</td></tr>
   </tbody>
 </table>
 </div>
 
-<p>At Rs. 1,10,000 total, SMU is the most affordable track within the Manipal education group. Compare it with MUJ at Rs. 1,75,000 or MAHE at Rs. 2,92,000. You get the Manipal brand association at roughly one-third the cost of MAHE.</p>
+<p>At Rs. 1,20,000 total, SMU is the most affordable track within the Manipal education group. Compare it with MUJ at Rs. 1,75,000 or MAHE at Rs. 2,92,000. You get the Manipal brand association at roughly one-third the cost of MAHE.</p>
 
 <div style="margin:32px 0;text-align:center">
   <svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,sans-serif" style="max-width:100%;height:auto">
@@ -10604,7 +10610,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <h3 style="color:#166534;margin:0 0 12px;font-size:16px">What Works</h3>
     <ul style="list-style:none;padding:0;margin:0">
       <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Mandatory dual specialization — two domains on one degree</li>
-      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Most affordable Manipal Group track at Rs. 1,10,000</li>
+      <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">Most affordable Manipal Group track at Rs. 1,20,000</li>
       <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">NAAC A+ and UGC-entitled</li>
       <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">5 lakh+ Manipal alumni network access</li>
       <li style="font-size:14px;margin-bottom:8px;padding-left:18px;position:relative">No entrance exam required</li>
@@ -10626,9 +10632,9 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>SMU Online MBA fits a mid-career professional who wants Manipal brand association at the lowest possible price, and who benefits from dual-domain study. If you are in a company where Finance + Operations, or Marketing + HR, or IT + Finance is a realistic cross-functional role, the dual specialization genuinely changes what you study.</p>
 
-<p>The Healthcare specialization is worth highlighting separately. At Rs. 1,10,000 total, this is one of the cheapest ways to get a Manipal-branded healthcare management MBA. If you are a nurse, pharmacist, or hospital administrator looking to move into management, SMU Healthcare at this price is hard to argue against.</p>
+<p>The Healthcare specialization is worth highlighting separately. At Rs. 1,20,000 total, this is one of the cheapest ways to get a Manipal-branded healthcare management MBA. If you are a nurse, pharmacist, or hospital administrator looking to move into management, SMU Healthcare at this price is hard to argue against.</p>
 
-<blockquote style="border-left:4px solid #f97316;padding:14px 20px;background:#f8fafc;margin:24px 0;border-radius:0 8px 8px 0;font-style:italic;color:#64748b;font-size:15px">The dual specialization is SMU Online MBA's most distinctive feature. At Rs. 1,10,000, you get two functional domains on your degree rather than one — a curriculum design choice most budget online MBAs have not made.</blockquote>
+<blockquote style="border-left:4px solid #f97316;padding:14px 20px;background:#f8fafc;margin:24px 0;border-radius:0 8px 8px 0;font-style:italic;color:#64748b;font-size:15px">The dual specialization is SMU Online MBA's most distinctive feature. At Rs. 1,20,000, you get two functional domains on your degree rather than one — a curriculum design choice most budget online MBAs have not made.</blockquote>
 
 <h2>SMU vs Other Manipal Group Online MBAs</h2>
 
@@ -10636,7 +10642,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <table style="width:100%;border-collapse:collapse;font-size:15px">
   <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Program</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Total Fee</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">NAAC</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Key Differentiator</th></tr></thead>
   <tbody>
-    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">SMU Online MBA</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,10,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Dual spec mandatory, cheapest Manipal</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">SMU Online MBA</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,20,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Dual spec mandatory, cheapest Manipal</td></tr>
     <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">MUJ Online MBA</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,75,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Coursera integration, 13+ specs</td></tr>
     <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">MAHE Online MBA</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rs. 2,92,000</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">A++</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rank #3 India, IoE status</td></tr>
   </tbody>
@@ -10647,7 +10653,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Final Word</h2>
 
-<p>Sikkim Manipal University Online MBA at Rs. 1,10,000 punches above its price. The mandatory dual specialization, Manipal alumni network, NAAC A+ accreditation, and Healthcare specialization make this worth serious consideration. It is not MAHE — the brand is softer, the specialization list shorter. But for the right candidate, the value equation is genuinely strong.</p>
+<p>Sikkim Manipal University Online MBA at Rs. 1,20,000 punches above its price. The mandatory dual specialization, Manipal alumni network, NAAC A+ accreditation, and Healthcare specialization make this worth serious consideration. It is not MAHE — the brand is softer, the specialization list shorter. But for the right candidate, the value equation is genuinely strong.</p>
 
 <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
   <p style="font-size:16px;font-weight:700;color:#9a3412;margin:0 0 8px">Not sure if SMU is right for you?</p>
