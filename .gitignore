@@ -4,6 +4,9 @@ audit-summary.md
 scripts/broken-pages-report.md
 scripts/phase-2-verification.md
 
+# Claude Code local settings (do not commit)
+.claude/settings.local.json
+
 # Next.js
 .next/
 .next2/
@@ -51,7 +54,7 @@ update_rankings.js
 update_sort.js
 
 # Data files not needed on server
-# *.xlsx — commented out so data/*.xlsx can be tracked by git
+# *.xlsx ï¿½ commented out so data/*.xlsx can be tracked by git
 *.zip
 extracted_rankings/
 nirf_2025_map.json

@@ -85,6 +85,24 @@ const nextConfig = {
       { source: '/programs/mba-wx/:path*',     destination: '/programs/mba',   permanent: true },
       { source: '/universities/:id/mba-wx',    destination: '/universities/:id/mba', permanent: true },
 
+      // ── Sprint 2 (2026-05-10): defensive 301s for BCA/MCA programs not offered ──
+      // None of these URLs are emitted in current valid-urls.json. Redirects exist
+      // as safety net for any historical Google index that cached old paths.
+      // - NMIMS:        no online BCA or MCA
+      // - MAHE:         no online BCA (only MCA)
+      // - Symbiosis SSODL: no online MCA (only BCA)
+      // - Sikkim Manipal: no online BCA (only MCA)
+      { source: '/universities/nmims-online/bca',                                       destination: '/universities/nmims-online',                                       permanent: true },
+      { source: '/universities/nmims-online/bca/:spec*',                                destination: '/universities/nmims-online',                                       permanent: true },
+      { source: '/universities/nmims-online/mca',                                       destination: '/universities/nmims-online',                                       permanent: true },
+      { source: '/universities/nmims-online/mca/:spec*',                                destination: '/universities/nmims-online',                                       permanent: true },
+      { source: '/universities/manipal-academy-higher-education-online/bca',            destination: '/universities/manipal-academy-higher-education-online',            permanent: true },
+      { source: '/universities/manipal-academy-higher-education-online/bca/:spec*',     destination: '/universities/manipal-academy-higher-education-online',            permanent: true },
+      { source: '/universities/symbiosis-university-online/mca',                        destination: '/universities/symbiosis-university-online',                        permanent: true },
+      { source: '/universities/symbiosis-university-online/mca/:spec*',                 destination: '/universities/symbiosis-university-online',                        permanent: true },
+      { source: '/universities/sikkim-manipal-university-online/bca',                   destination: '/universities/sikkim-manipal-university-online',                   permanent: true },
+      { source: '/universities/sikkim-manipal-university-online/bca/:spec*',            destination: '/universities/sikkim-manipal-university-online',                   permanent: true },
+
       // Dot-slug normalisation
       { source: '/programs/m.com',             destination: '/programs/mcom',  permanent: true },
       { source: '/programs/m.com/:path*',      destination: '/programs/mcom',  permanent: true },

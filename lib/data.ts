@@ -75,7 +75,24 @@ export interface University {
   description: string
   forWho: string[]
   notFor: string[]
+  /**
+   * UGC categorization. Drives the AICTE branch in title / description builders:
+   * - 'private'        — UGC-recognized Private University (no AICTE for online MCA/MBA)
+   * - 'state-private'  — Private university under a state act
+   * - 'central'        — Central University
+   * - 'state-public'   — State Public University
+   * - 'deemed'         — Deemed-to-be University under Section 3 (AICTE required for online tech)
+   * - 'open'           — Open University (e.g. IGNOU; both UGC-DEB + AICTE)
+   * Unset → builder treats as 'private' for safety (no AICTE claim).
+   */
+  uniType?: 'private' | 'deemed' | 'state-private' | 'central' | 'state-public' | 'open'
   programs: Program[]
+  /**
+   * Program-specific fee overrides. Builder reads this first (via getDisplayFee)
+   * and falls back to feeMin / feeMax. Lowercase keys to match runtime
+   * `program.toLowerCase()` lookup. Sprint 2 data fix.
+   */
+  programFees?: Partial<Record<'mba' | 'bba' | 'mca' | 'bca' | 'mcom' | 'bcom' | 'btech' | 'mtech', { fee: number }>>
   programDetails: Partial<Record<Program, ProgramDetail>>
   specialFeatures?: UniFeature[]
   color: string
@@ -236,6 +253,8 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'amity-university-online',
+    uniType: 'private',
+    programFees: { bca: { fee: 175000 }, mca: { fee: 199000 } },
     logo: '/logos/university_logos/amity-online-university-logo_2.svg',
     name: 'Amity University Online',
     abbr: 'AUO',
@@ -344,6 +363,8 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'lovely-professional-university-online',
+    uniType: 'private',
+    programFees: { bca: { fee: 122400 }, mca: { fee: 129600 } },
     logo: '/logos/university_logos/lpu-logo.svg',
     name: 'Lovely Professional University Online',
     abbr: 'LPUO',
@@ -1101,6 +1122,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'manipal-university-jaipur-online',
+    programFees: { bca: { fee: 139500 }, mca: { fee: 158000 } },
     logo: '/logos/university_logos/muj-logo.svg',
     name: 'Manipal University Jaipur (MUJ) Online',
     abbr: 'MUJOM',
@@ -1220,6 +1242,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'galgotias-university-online',
+    programFees: { bca: { fee: 69000 }, mca: { fee: 74000 } }, // tuition only — excludes ₹1,200 reg + ₹4,000/yr exam + ₹1,000 alumni
     logo: '/logos/university_logos/galgotias-university-logo.svg',
     name: 'Galgotias University Online',
     abbr: 'GUO',
@@ -1305,6 +1328,8 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'sikkim-manipal-university-online',
+    uniType: 'state-private',
+    programFees: { mca: { fee: 110000 } },
     logo: '/logos/university_logos/sikkim-manipal-university-logo.svg',
     name: 'Sikkim Manipal University Online',
     abbr: 'SMUOM',
@@ -1403,6 +1428,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'symbiosis-university-online',
+    programFees: { bca: { fee: 157500 } }, // MCA not offered online by SSODL
     logo: '/logos/university_logos/SSODL.svg',
     name: 'Symbiosis School for Online and Digital Learning (SSODL), Pune Online',
     abbr: 'SSODL',
@@ -1652,6 +1678,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'sharda-university-online',
+    programFees: { bca: { fee: 120000 }, mca: { fee: 120000 } },
     logo: '/logos/university_logos/sharda-university.svg',
     name: 'Sharda University Online',
     abbr: 'SUO',
@@ -1746,6 +1773,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'vignan-university-online',
+    programFees: { bca: { fee: 108000 }, mca: { fee: 90000 } },
     name: "Vignan's Foundation for Science, Technology & Research Online",
     abbr: 'VFSTR',
     city: 'Guntur',
@@ -1887,6 +1915,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'nmims-online',
+    uniType: 'deemed',
     logo: '/logos/university_logos/nmims-online-logo.svg',
     name: 'NMIMS (Narsee Monjee Institute of Management Studies) Online',
     abbr: 'NMIMS',
@@ -1957,6 +1986,8 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'manipal-academy-higher-education-online',
+    uniType: 'deemed',
+    programFees: { mca: { fee: 220000 } },
     logo: '/logos/university_logos/mahe-manipal-online-logo.svg',
     name: 'Manipal Academy of Higher Education (MAHE) Online',
     abbr: 'MAHEO',
@@ -2120,6 +2151,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'chandigarh-university-online',
+    programFees: { bca: { fee: 177000 }, mca: { fee: 155000 } },
     logo: '/logos/university_logos/cu-online.svg',
     name: 'Chandigarh University Online',
     abbr: 'CUO',
@@ -5606,6 +5638,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'noida-international-university-online',
+    programFees: { mca: { fee: 118000 } }, // BCA fee deferred — no project source confirms BCA exists; see audits/sprint-2-data-fixes-2026-05-10.md
     logo: '/logos/university_logos/noida-international-university.svg',
     name: 'Noida International University Online',
     abbr: 'NIUO',
@@ -8977,6 +9010,8 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'ignou-online',
+    uniType: 'open',
+    programFees: { bca: { fee: 49800 }, mca: { fee: 50800 } },
     logo: '/logos/university_logos/ignou-logo.svg',
     name: 'Indira Gandhi National Open University (IGNOU) Online',
     abbr: 'IGNOU',
