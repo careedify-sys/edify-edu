@@ -193,18 +193,38 @@ export function shortenSpec(spec: string): string {
 /**
  * Clamp a page <title> to ≤60 chars at a word boundary so Google doesn't
  * truncate it in SERPs. If the title already fits, returns it unchanged.
- * Trailing pipe-separated suffix ("| EdifyEdu") is dropped before truncating
- * substantive content, then re-appended only if it fits within the budget.
+ *
+ * Policy: preserve the trailing " | Brand" suffix and trim the body instead
+ * of dropping the brand. Brand recall is the largest CTR lever over time.
+ * If the body cannot be word-boundary-trimmed while staying ≥ (max - 12)
+ * chars, fall back to the old behaviour (drop brand) and log a console
+ * warning tagged with the page slug.
  */
-export function clampTitle(title: string, max = 60): string {
+export function clampTitle(title: string, max = 60, slug?: string): string {
   if (title.length <= max) return title
-  // If "| Brand" suffix is present, prefer dropping it over substantive text
+
   const sepIdx = title.lastIndexOf(' | ')
   if (sepIdx > 0) {
-    const head = title.slice(0, sepIdx)
-    if (head.length <= max) return head
-    return clampTitle(head, max)
+    const body = title.slice(0, sepIdx)
+    const brandSuffix = title.slice(sepIdx) // includes leading " | "
+    const minBodyLen = max - 12 // 48 when max = 60
+    const maxBodyLen = max - brandSuffix.length
+
+    if (maxBodyLen >= minBodyLen) {
+      const trimmedBody = body.length <= maxBodyLen
+        ? body
+        : body.substring(0, maxBodyLen).replace(/\s+\S*$/, '').trim()
+      if (trimmedBody.length >= minBodyLen) {
+        return trimmedBody + brandSuffix
+      }
+    }
+
+    // eslint-disable-next-line no-console
+    console.warn(`[clampTitle] dropped brand suffix; body cannot fit within ${max} chars (slug=${slug ?? 'unknown'})`)
+    if (body.length <= max) return body
+    return clampTitle(body, max, slug)
   }
+
   return title.substring(0, max).replace(/\s+\S*$/, '').trim()
 }
 
