@@ -2,7 +2,7 @@
 // Short university names (≤25 chars) for use in page <title> tags to stay within Google's ~600px/65-char limit.
 
 export const TITLE_NAME: Record<string, string> = {
-  'amity-university-online': 'Amity University',
+  'amity-university-online': 'Amity',
   'chandigarh-university-online': 'Chandigarh University',
   'jain-university-online': 'JAIN University',
   'lovely-professional-university-online': 'LPU',
@@ -10,7 +10,7 @@ export const TITLE_NAME: Record<string, string> = {
   'nmims-online': 'NMIMS',
   'symbiosis-university-online': 'Symbiosis',
   'manipal-academy-higher-education-online': 'MAHE',
-  'sikkim-manipal-university-online': 'Sikkim Manipal Univ',
+  'sikkim-manipal-university-online': 'Sikkim Manipal',
   'sharda-university-online': 'Sharda University',
   'amrita-vishwa-vidyapeetham-online': 'Amrita University',
   'chitkara-university-online': 'Chitkara University',
@@ -67,7 +67,7 @@ export const TITLE_NAME: Record<string, string> = {
   'shivaji-university-online': 'Shivaji University',
   'savitribai-phule-pune-university-online': 'SPPU',
   'mizoram-university-online': 'Mizoram University',
-  'kalinga-institute-industrial-technology-online': 'KIIT Online',
+  'kalinga-institute-industrial-technology-online': 'KIIT',
   'centurion-university-online': 'Centurion University',
   'kiit-university-online': 'KIIT University',
   'guru-nanak-dev-university-online': 'Guru Nanak Dev Univ',
@@ -131,6 +131,8 @@ export const TITLE_NAME: Record<string, string> = {
   'shri-ramasamy-memorial-university-online': 'Shri Ramasamy Univ',
   'guru-jambheshwar-university-online': 'Guru Jambheshwar',
   'assam-down-town-university-online': 'Assam Down Town Univ',
+  'op-jindal-global-university-online': 'Jindal Global',
+  'ignou-online': 'IGNOU',
 }
 
 /**
