@@ -125,7 +125,7 @@ export const GUIDES: Guide[] = [
 <p><strong>Distance MBA is better if:</strong> budget is the primary constraint, you're completing a degree mainly for government job eligibility, or you're self-motivated and don't need live classes (IGNOU MBA is ₹31,500 total and fully valid).</p>
 
 <h2>Does the Degree Certificate Look Different?</h2>
-<p>No. Both modes issue the same degree certificate — it doesn't say "online" or "distance" on it. The mode of study is not printed on the degree.</p>
+<p>No. Both modes issue the same degree certificate — it clearly identifies the programme as Online mode (per UGC 2018 Regulations) on it. The mode of study is not printed on the degree.</p>
 
 <h2>Can You Switch Between Modes?</h2>
 <p>No. You enrol in one mode and complete it. If you start a distance MBA and want to switch to an online MBA from another university, you'd have to re-enrol (credit transfer between institutions and modes is not standard in India yet).</p>
