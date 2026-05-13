@@ -18,6 +18,7 @@ import { readFileSync, statSync } from 'fs'
 import { join } from 'path'
 import { getPublishedPosts } from '@/lib/blog'
 import { GUIDES } from '@/lib/guides'
+import { CGPA_VALUES } from './tools/cgpa-calculator/[value]/data'
 
 // Returns the file mtime of a page-content JSON, or now as fallback
 function getContentLastMod(uniSlug: string, program: string): Date {
@@ -109,6 +110,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/tools/cgpa-calculator`,   lastModified: now, changeFrequency: 'monthly', priority: 0.75 },
     { url: `${BASE}/tools/percentage-to-gpa`, lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
     { url: `${BASE}/best-online-mba-india`,   lastModified: now, changeFrequency: 'monthly', priority: 0.90 },
+    // CGPA value pages: long-tail "X.X cgpa in percentage" search targets.
+    ...CGPA_VALUES.map(entry => ({
+      url: `${BASE}/tools/cgpa-calculator/${entry.slug}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.70,
+    })),
   ]
 
   // ── Blog posts ────────────────────────────────────────────────────────────
