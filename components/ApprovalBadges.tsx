@@ -190,7 +190,11 @@ export default function ApprovalBadges({
   const isColumn = layout === 'column'
 
   // Determine which badges to show
-  const hasAICTE = approvals.some(a => a.startsWith('AICTE')) || true // always show for UGC unis
+  // AICTE applies only to deemed-to-be universities running online management programmes
+  // under AICTE regulations. Most state private universities (e.g. Dayananda Sagar) are
+  // NOT AICTE-approved for online MBA — UGC-DEB is the relevant regulator. Show this
+  // badge only when 'AICTE' is explicitly present in the approvals array.
+  const hasAICTE = approvals.some(a => a.startsWith('AICTE'))
   const hasWES   = approvals.some(a => a.startsWith('WES')) || (highlight?.includes('WES') ?? false)
   const hasAIU   = approvals.some(a => a.startsWith('AIU'))
   const hasQS    = approvals.some(a => a === 'QS')
@@ -216,7 +220,7 @@ export default function ApprovalBadges({
       {/* Always: UGC DEB */}
       <ApprovalPill def={ugcDef} column={isColumn} />
 
-      {/* Always: AICTE */}
+      {/* AICTE — only if explicitly approved (deemed-to-be unis with AICTE oversight) */}
       {hasAICTE && <ApprovalPill def={aicteDef} column={isColumn} />}
 
       {/* NAAC with grade */}

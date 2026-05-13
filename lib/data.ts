@@ -494,12 +494,12 @@ export const UNIVERSITIES: University[] = [
     nirf: 999,
     naac: 'A+',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A++', 'AICTE', 'WES Recognised'],
+    approvals: ['UGC DEB', 'NAAC A++', 'WES Recognised'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 120000,
-    feeMax: 120000,
+    feeMin: 130000,
+    feeMax: 130000,
     emiFrom: 5000,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -512,7 +512,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: [{ slug: 'artificial-intelligence', name: 'Artificial Intelligence' }, { slug: 'business-analytics', name: 'Business Analytics' }, { slug: 'entrepreneurship-management', name: 'Entrepreneurship Management' }, { slug: 'financial-management-fintech-focus', name: 'Financial Management (FinTech Focus)' }, 'Human Resource Management', { slug: 'it-systems-management', name: 'IT & Systems Management' }, { slug: 'marketing-management', name: 'Marketing Management' }, { slug: 'supply-chain-management', name: 'Supply Chain Management' }],
-        fees: '₹1.2L',
+        fees: '₹1.3L',
         duration: '2 Years',
         roles: ['HR Executive', 'Recruiter', 'Training Coordinator.'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -522,7 +522,7 @@ export const UNIVERSITIES: University[] = [
       },
       'MCA': {
         specs: ['Artificial Intelligence & Machine Learning', 'Data Science', 'Cybersecurity', 'Internet of Things (IoT)', 'Cloud Computing', 'Full Stack Development', 'Blockchain Technology', 'Business Analytics', 'Data Engineering', 'DevOps', 'Digital Marketing Technology', 'Game Development', 'UI/UX Design', 'General'],
-        fees: '₹1.2L',
+        fees: '₹1.3L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -535,7 +535,7 @@ export const UNIVERSITIES: University[] = [
 
       'BBA': {
         specs: ['Digital Marketing', 'Logistics & Supply Chain Management', 'Business Analytics'],
-        fees: '₹0.2L – ₹1.2L',
+        fees: '₹1.3L',
         duration: '3 Years',
         roles: ['Logistics Coordinator', 'Procurement Specialist'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -545,7 +545,7 @@ export const UNIVERSITIES: University[] = [
       },
       'BCA': {
         specs: ['General Management'],
-        fees: '₹0.2L – ₹1.2L',
+        fees: '₹1.3L',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -555,7 +555,7 @@ export const UNIVERSITIES: University[] = [
       },
       'B.Com': {
         specs: ['FinTech', 'Logistics & Supply Chain Management', 'Business Analytics'],
-        fees: '₹105K – ₹105K',
+        fees: '₹1.3L',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
