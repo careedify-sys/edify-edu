@@ -99,6 +99,20 @@ const FALLBACK_COLORS = [
   '#880E4F','#827717','#1A237E','#33691E','#BF360C','#4E342E',
 ]
 
+// LOCKED_SLUGS: blogs whose lib/blog.ts entry is the source of truth, NOT the Google Sheet.
+// When the sync runs, these slugs are NEVER regenerated from sheet rows. The existing block
+// in lib/blog.ts (fetched from GitHub raw) is preserved verbatim instead.
+// Reason: these blogs were manually rewritten for SEO (seoTitle, metaDescription, FAQs) and
+// the sheet does not yet carry that data.
+// To remove a slug from this list, first ensure the corresponding sheet row carries the
+// final desired values, then delete the slug from this array.
+const LOCKED_SLUGS = [
+  'mba-vs-pgdm-online-india-2026',
+  'cat-exam-syllabus-2026-complete-guide',
+  'imt-ghaziabad-online-mba-review-2026',
+  'ma-full-form-course-details-eligibility-fees-2026',
+]
+
 function generateDataTS(
   unis: Record<string, any>[],
   programs: Record<string, any>[]
@@ -265,6 +279,57 @@ function extractExistingDates(blogTS: string): Record<string, string> {
   return dates
 }
 
+// Locates a single BlogPost object literal by slug in the existing blog.ts string
+// and returns it verbatim, including its leading two-space indent and closing brace
+// but excluding any trailing comma. Returns null if the slug is not found.
+// Handles both TS-style (slug: 'X') and JSON-style ("slug": "X") entries.
+// Walks braces with awareness of single quotes, double quotes, and template literals
+// so that braces inside the content string do not throw off the depth count.
+function extractPostBlock(blogTS: string, slug: string): string | null {
+  const escaped = slug.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  const slugLine = new RegExp(`["']?slug["']?\\s*:\\s*["']${escaped}["']`)
+  const m = slugLine.exec(blogTS)
+  if (!m) return null
+
+  const openIdx = blogTS.lastIndexOf('{', m.index)
+  if (openIdx === -1) return null
+
+  // Extend back to the start of the line so leading indentation is preserved.
+  let lineStart = openIdx
+  while (lineStart > 0 && blogTS[lineStart - 1] !== '\n' && /[ \t]/.test(blogTS[lineStart - 1])) {
+    lineStart--
+  }
+
+  let depth = 0
+  let inString = false
+  let stringChar = ''
+  let escapeNext = false
+
+  for (let i = openIdx; i < blogTS.length; i++) {
+    const c = blogTS[i]
+
+    if (escapeNext) { escapeNext = false; continue }
+    if (inString) {
+      if (c === '\\') { escapeNext = true; continue }
+      if (c === stringChar) { inString = false }
+      continue
+    }
+    if (c === "'" || c === '"' || c === '`') {
+      inString = true
+      stringChar = c
+      continue
+    }
+    if (c === '{') depth++
+    else if (c === '}') {
+      depth--
+      if (depth === 0) {
+        return blogTS.slice(lineStart, i + 1)
+      }
+    }
+  }
+  return null
+}
+
 // Extracts manually-added post blocks from existing blog.ts that are NOT in the Google Sheet.
 // Preserves posts written directly in code so CMS sync never deletes them.
 function extractManualPostBlocks(existingBlogTS: string, sheetSlugs: Set<string>): string[] {
@@ -348,6 +413,19 @@ function generateBlogTS(
   )
 
   const postBlocks = posts.map(p => {
+    const slug = String(p['Slug (URL)'] ?? '').trim().replace(/^\/+/, '').replace(/^blog\//, '')
+
+    // LOCKED_SLUGS short-circuit: preserve the existing block from GitHub verbatim,
+    // so manual SEO edits in lib/blog.ts survive sync runs.
+    if (LOCKED_SLUGS.includes(slug)) {
+      const existingBlock = extractPostBlock(existingBlogTS, slug)
+      if (existingBlock) {
+        console.log('[CMS Sync] LOCKED (preserving manual edits):', slug)
+        return existingBlock
+      }
+      console.warn(`[CMS Sync] LOCKED_SLUGS includes "${slug}" but block not found in existing blog.ts. Falling through to regenerate from sheet row.`)
+    }
+
     const faqs: { q: string; a: string }[] = []
     try {
       const raw = p['FAQs (JSON array)']
@@ -360,14 +438,19 @@ function generateBlogTS(
     const content = sanitizeBlogContent(String(p['Content (HTML)'] ?? '<p>Content coming soon.</p>'))
       .replace(/`/g, '\\`').replace(/\\/g, '\\\\')
 
-    const slug = String(p['Slug (URL)'] ?? '').trim().replace(/^\/+/, '').replace(/^blog\//, '')
     // Preserve original publish date: sheet value wins if set, otherwise keep existing date, else use today
     const sheetDate = String(p['Published Date'] ?? '').trim()
     const publishedAt = sheetDate || existingDates[slug] || now
+
+    // Optional seoTitle column: only emit the line when the sheet row has a non-empty value.
+    // Allows the SERP title to diverge from the visible H1 (post.title) without forcing every row to populate it.
+    const seoTitleVal = String(p['seoTitle'] ?? '').trim()
+    const seoTitleLine = seoTitleVal ? `    seoTitle: '${ts(seoTitleVal, 120)}',\n` : ''
+
     return `  {
     slug: '${ts(slug, 80)}',
     title: '${ts(p['Title'], 120)}',
-    metaDescription: '${ts(p['Meta Description'], 160)}',
+${seoTitleLine}    metaDescription: '${ts(p['Meta Description'], 160)}',
     category: '${ts(p['Category'], 50)}',
     tags: [${tags.map(t => `'${ts(t, 50)}'`).join(', ')}],
     publishedAt: '${ts(publishedAt, 20)}',
