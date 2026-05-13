@@ -305,6 +305,17 @@ const nextConfig = {
       { source: '/programs/mba/hospital-healthcare-management',          destination: '/programs/mba/healthcare-management',                                permanent: true },
       { source: '/programs/mba/hospital-and-health-care-management',     destination: '/programs/mba/healthcare-management',                                permanent: true },
 
+      // Marketing cannibalization: collapse the verbose variant onto /programs/mba/marketing
+      // (the higher-impressions GSC URL). Digital marketing is a distinct specialty
+      // with separate per-university programmes and is intentionally NOT redirected here.
+      { source: '/programs/mba/marketing-management',                    destination: '/programs/mba/marketing',                                            permanent: true },
+
+      // Operations cannibalization: collapse the verbose supply-chain variants onto
+      // the canonical /programs/mba/operations-management. The bare /programs/mba/operations
+      // is already handled by SPEC_REDIRECTS in app/programs/[...slug]/page.tsx.
+      { source: '/programs/mba/operations-supply-chain-management',      destination: '/programs/mba/operations-management',                                permanent: true },
+      { source: '/programs/mba/operations-and-supply-chain-management',  destination: '/programs/mba/operations-management',                                permanent: true },
+
       // Program slugs with double-hyphens (CMS generation artifact)
       { source: '/programs/mba/hospital--health-care-management',        destination: '/programs/mba/healthcare-management',                                permanent: true },
       { source: '/programs/mba/data-science--ai',                        destination: '/programs/mba/data-science-ai',                                      permanent: true },

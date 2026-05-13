@@ -120,8 +120,15 @@ const urls = [
 // University-level variants under /universities/* are scoped separately and
 // remain in the sitemap as their own spec pages.
 const REDIRECTED_PROGRAM_URLS = new Set([
+  // Healthcare consolidation -> /programs/mba/healthcare-management
   '/programs/mba/hospital-healthcare-management',
   '/programs/mba/hospital-and-health-care-management',
+  // Marketing consolidation -> /programs/mba/marketing
+  '/programs/mba/marketing-management',
+  // Operations consolidation -> /programs/mba/operations-management
+  '/programs/mba/operations',
+  '/programs/mba/operations-supply-chain-management',
+  '/programs/mba/operations-and-supply-chain-management',
 ])
 const uniqueUrls = [...new Set(urls)].filter(u => !REDIRECTED_PROGRAM_URLS.has(u))
 fs.writeFileSync(URLS_PATH, JSON.stringify(uniqueUrls, null, 2))
