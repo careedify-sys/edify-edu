@@ -11,6 +11,8 @@ import { getProgramContent } from '@/lib/content'
 import { SAMPLE_DEGREES, getSampleDegree } from '@/lib/sample-degrees'
 import type { Program, University } from '@/lib/data'
 import { formatSpecList } from '@/lib/data'
+import { COUPONS, TIER_AMOUNTS } from '@/lib/coupons'
+import { COUPON_PAGES } from '@/lib/coupon-pages'
 import EnquiryModal from '@/components/EnquiryModal'
 import ApprovalBadges from '@/components/ApprovalBadges'
 import { ScholarshipPopup } from '@/components/LeadCapture'
@@ -38,6 +40,15 @@ export default function UniversityPageClient({ university: u }: Props) {
   const otherUnis = getUniversitiesByProgram(displayProgram).filter(x=>x.id!==u.id).slice(0,4)
   const compareUrl = `/compare?a=${u.id}${compareList.map(i=>`&b=${i}`).join('')}`
   const cleanName = getShortUniversityName(u.name)
+
+  // Match this university to its tiered edifyedu.in enrollment bonus.
+  // Falls back to "standard" tier amounts when the uni is on /coupons but
+  // not explicitly in COUPONS, and is hidden entirely when neither applies.
+  const couponEntry = COUPONS.find(c => c.universityId === u.id)
+  const couponPageEntry = COUPON_PAGES.find(p => p.universityId === u.id)
+  const bonusTier = couponEntry?.tier ?? couponPageEntry?.tier ?? null
+  const bonusAmounts = bonusTier ? TIER_AMOUNTS[bonusTier] : null
+  const couponPageHref = couponPageEntry ? `/coupons/${couponPageEntry.slug}` : '/coupons'
 
   function addToCompare(uniId: string) {
     if (compareList.includes(uniId)) return
@@ -653,15 +664,19 @@ export default function UniversityPageClient({ university: u }: Props) {
                   ))}
                 </div>
 
-                {/* Coupon link - only for universities with coupon pages */}
-                <Link href={`/coupons`} className="block bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-300 rounded-xl p-4 no-underline hover:shadow-md transition-shadow">
-                  <div className="flex items-center gap-2 mb-1">
-                    <span className="text-amber-600 text-lg">🏷️</span>
-                    <span className="font-bold text-amber-800 text-sm">Discount Coupon Available</span>
-                  </div>
-                  <p className="text-xs text-amber-700 mb-2">Save up to Rs 30,000 on your fees with verified coupon codes</p>
-                  <span className="text-xs font-bold text-amber-600 flex items-center gap-1">View Coupon Code <ChevronRight size={12} /></span>
-                </Link>
+                {/* edifyedu.in enrollment bonus — tier-aware per university */}
+                {bonusAmounts && (
+                  <Link href={couponPageHref} className="block bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-300 rounded-xl p-4 no-underline hover:shadow-md transition-shadow">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="text-amber-600 text-lg">🏷️</span>
+                      <span className="font-bold text-amber-800 text-sm">edifyedu.in Enrollment Bonus</span>
+                    </div>
+                    <p className="text-xs text-amber-700 mb-2">
+                      Up to <strong>Rs {bonusAmounts.max.toLocaleString('en-IN')}</strong> on Tuesday and Saturday in IST, <strong>Rs {bonusAmounts.base.toLocaleString('en-IN')}</strong> on other days. Stack with the university's own scholarships on top.
+                    </p>
+                    <span className="text-xs font-bold text-amber-600 flex items-center gap-1">View Bonus &amp; Code <ChevronRight size={12} /></span>
+                  </Link>
+                )}
 
                 <div className="bg-white border border-border rounded-xl p-4">
                   <div className="font-bold text-navy text-sm mb-3">Useful Guides</div>
