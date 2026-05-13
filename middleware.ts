@@ -284,6 +284,7 @@ export function middleware(req: NextRequest) {
   // ── 2a. /programs/ spec slug redirects (Google-indexed bad slugs → correct ones) ───
   const PROGRAM_SPEC_REDIRECTS: Record<string, string> = {
     '/programs/mba/hospital-healthcare': '/programs/mba/healthcare-management',
+    '/programs/mba/hospital--healthcare-management': '/programs/mba/healthcare-management',
     '/programs/mba/digital-marketing-sales': '/programs/mba/digital-marketing',
     '/programs/mba/tourism-event-management': '/programs/mba/entrepreneurship',
     '/programs/mba/media--communication': '/programs/mba/digital-marketing',

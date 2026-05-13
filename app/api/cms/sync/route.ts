@@ -122,6 +122,7 @@ const LOCKED_SLUGS = [
   'jain-online-mba-review-2026',
   'ignou-online-mba-review-2026',
   'dy-patil-online-mba-review',
+  'is-manipal-university-jaipur-fake-or-legit-2026',
 ]
 
 function generateDataTS(

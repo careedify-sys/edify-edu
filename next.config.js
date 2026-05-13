@@ -299,8 +299,14 @@ const nextConfig = {
       // CU BBA business-analytics truncated suffix
       { source: '/universities/chandigarh-university-online/bba/business-analytics-specialization-with-data-focuse', destination: '/universities/chandigarh-university-online/bba/business-analytics', permanent: true },
 
+      // Healthcare cannibalization consolidation: collapse all hospital/healthcare
+      // program variants to the canonical /programs/mba/healthcare-management
+      // (the GSC ranker at position 2.84, 200 impressions / 28 days)
+      { source: '/programs/mba/hospital-healthcare-management',          destination: '/programs/mba/healthcare-management',                                permanent: true },
+      { source: '/programs/mba/hospital-and-health-care-management',     destination: '/programs/mba/healthcare-management',                                permanent: true },
+
       // Program slugs with double-hyphens (CMS generation artifact)
-      { source: '/programs/mba/hospital--health-care-management',        destination: '/programs/mba/hospital-healthcare-management',                       permanent: true },
+      { source: '/programs/mba/hospital--health-care-management',        destination: '/programs/mba/healthcare-management',                                permanent: true },
       { source: '/programs/mba/data-science--ai',                        destination: '/programs/mba/data-science-ai',                                      permanent: true },
       { source: '/programs/mba/tourism--event-management',               destination: '/programs/mba/tourism-event-management',                             permanent: true },
 

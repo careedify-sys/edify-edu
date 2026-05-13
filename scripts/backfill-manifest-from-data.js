@@ -115,6 +115,14 @@ const urls = [
   ...[...programs].sort().map(p => '/programs/' + p),
   ...[...programSpecs].sort().map(s => '/programs/' + s),
 ]
-const uniqueUrls = [...new Set(urls)]
+// Program-level URLs that 301 redirect to a canonical (per next.config.js and
+// middleware.ts). Keep them out of the sitemap so we only ship canonicals.
+// University-level variants under /universities/* are scoped separately and
+// remain in the sitemap as their own spec pages.
+const REDIRECTED_PROGRAM_URLS = new Set([
+  '/programs/mba/hospital-healthcare-management',
+  '/programs/mba/hospital-and-health-care-management',
+])
+const uniqueUrls = [...new Set(urls)].filter(u => !REDIRECTED_PROGRAM_URLS.has(u))
 fs.writeFileSync(URLS_PATH, JSON.stringify(uniqueUrls, null, 2))
 console.log('Rebuilt valid-urls.json — total unique URLs:', uniqueUrls.length)

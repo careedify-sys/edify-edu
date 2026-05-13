@@ -22,7 +22,7 @@ const already = new Set([
   '/blog/mba-data-science-analytics-career-2026','/universities/amity-university-online/bba',
   '/universities/jain-university-online/mba','/blog/online-mba-delhi-ncr-2026',
   '/programs/bcom','/blog/mba-fees-india-complete-guide-2026',
-  '/blog/jobs-after-mca-salary-career-2026','/blog/amity-online-mba-review-2026',
+  '/blog/amity-online-mba-review-2026',
   '/blog/pgdm-vs-mba-difference-which-is-better-india','/blog/mba-finance-career-salary-scope-2026',
   '/universities/lovely-professional-university-online/mca','/blog/online-mba-salary-india-2026',
   '/blog/distance-mba-bangalore-2026','/programs/mcom','/blog',
