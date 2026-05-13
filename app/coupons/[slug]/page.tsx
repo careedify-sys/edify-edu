@@ -1,10 +1,15 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ChevronRight, BadgeCheck, Tag, Clock, ExternalLink } from 'lucide-react'
+import { ChevronRight, BadgeCheck, Tag, Clock, ExternalLink, Phone } from 'lucide-react'
 import { getCouponPage, COUPON_PAGE_SLUGS, type CouponPageData } from '@/lib/coupon-pages'
-import { getExpiryISO } from '@/lib/coupons'
+import { getExpiryISO, getTodaysBonus, TIER_AMOUNTS } from '@/lib/coupons'
 import CouponPageCTA from '@/components/CouponPageCTA'
+import CouponCountdown from '@/components/CouponCountdown'
+import CouponScarcityBanner from '@/components/CouponScarcityBanner'
+
+const COUNSELLOR_TEL = '+917061285806'
+const COUNSELLOR_TEL_DISPLAY = '+91 70612 85806'
 
 export const revalidate = 86400
 
@@ -18,20 +23,26 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
   if (!page) return { title: 'Not Found' }
 
   const year = new Date().getFullYear()
-  const title = `${page.shortName} Online MBA Coupon Code ${year} — Save ${page.maxSavings} (Code: ${page.couponCode}) | EdifyEdu`
-  const description = `${page.shortName} Online MBA fee is ${page.totalFee}. With code ${page.couponCode} plus stackable scholarships, save up to ${page.maxSavings} and pay ${page.finalFee}. Verified for ${year}. NAAC ${page.naac} accredited. Zero referral commissions.`
+  const tierMax = TIER_AMOUNTS[page.tier].max
+  const tierLabel = `Rs ${tierMax.toLocaleString('en-IN')}`
+  const title = page.couponCode === 'N/A'
+    ? `${page.shortName} Online MBA Fee ${year} — Rs ${page.totalFeeNum.toLocaleString('en-IN')} (Lowest in India) | edifyedu.in`
+    : `${page.shortName} Online MBA Enrollment Bonus ${year} — Up to ${tierLabel} via edifyedu.in (${page.couponCode})`
+  const description = page.couponCode === 'N/A'
+    ? `${page.shortName} Online MBA fee is ${page.totalFee} — the lowest base fee from a NAAC A++ university. No enrollment bonus needed. Stack with SC/ST or category concessions. Verified for ${year}.`
+    : `${page.shortName} Online MBA fee is ${page.totalFee}. Mention code ${page.couponCode} on your edifyedu.in advisor call for up to ${tierLabel} enrollment bonus (Tuesday and Saturday IST). University scholarships remain available on top. NAAC ${page.naac} accredited.`
 
   return {
     title: { absolute: title },
     description,
     keywords: [
-      `${page.shortName} online MBA coupon`,
-      `${page.shortName} MBA discount code ${year}`,
-      `${page.couponCode} coupon`,
+      `${page.shortName} online MBA enrollment bonus`,
+      `${page.shortName} MBA fee ${year}`,
+      `${page.couponCode} edifyedu`,
       `${page.shortName} online MBA fees`,
       `${page.shortName} online MBA scholarship`,
-      `online MBA discount India ${year}`,
-      `${page.universityName} fee discount`,
+      `online MBA enrollment bonus India ${year}`,
+      `${page.universityName} fee adjustment`,
     ],
     alternates: { canonical: `https://edifyedu.in/coupons/${page.slug}` },
     openGraph: { title, description, url: `https://edifyedu.in/coupons/${page.slug}`, type: 'article' },
@@ -49,6 +60,9 @@ export default async function CouponDetailPage({ params }: { params: any }) {
   expiryDate.setDate(expiryDate.getDate() + 30)
   const expiryStr = expiryDate.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })
   const expiryISO = expiryDate.toISOString().split('T')[0]
+  const tierMax = TIER_AMOUNTS[page.tier].max
+  const tierBase = TIER_AMOUNTS[page.tier].base
+  const liveBonus = getTodaysBonus(page.tier)
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org', '@type': 'BreadcrumbList',
@@ -150,8 +164,18 @@ export default async function CouponDetailPage({ params }: { params: any }) {
 
         {/* H1 + Hero */}
         <h1 className="text-2xl md:text-3xl font-extrabold mb-4" style={{ color: '#0f2756' }}>
-          {page.universityName} MBA Discount Coupon Code {year} -- Save {page.maxSavings} (Verified)
+          {page.couponCode === 'N/A'
+            ? `${page.universityName} Online MBA Fee ${year} - ${page.totalFee} (Lowest Base Fee)`
+            : `${page.universityName} Online MBA Enrollment Bonus ${year} - Up to Rs ${tierMax.toLocaleString('en-IN')} via edifyedu.in`}
         </h1>
+
+        {/* Scarcity banner + countdown */}
+        {page.couponCode !== 'N/A' && (
+          <div className="grid sm:grid-cols-[1fr_auto] gap-3 items-center mb-6">
+            <CouponScarcityBanner tier={page.tier} fullWidth />
+            <CouponCountdown tier={page.tier} variant="card" />
+          </div>
+        )}
 
         {/* Hero stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
@@ -214,16 +238,20 @@ export default async function CouponDetailPage({ params }: { params: any }) {
               )
             })()}
 
-            {/* Row 3: edifyedu.in Extra Bonus */}
+            {/* Row 3: edifyedu.in Tier-based Bonus */}
             <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 bg-amber-50/50">
               <div>
                 <div className="flex items-center gap-2">
                   <span className="w-6 h-6 rounded-full bg-amber-500 flex items-center justify-center text-white text-xs font-bold">2</span>
-                  <span className="text-sm font-bold text-amber-800">Extra Rs 10,000 edifyedu.in enrollment bonus</span>
+                  <span className="text-sm font-bold text-amber-800">
+                    Rs {liveBonus.amount.toLocaleString('en-IN')} edifyedu.in enrollment bonus {liveBonus.isMaxWindow ? '(max window active)' : '(base amount today)'}
+                  </span>
                 </div>
-                <p className="text-xs text-amber-600 mt-1 ml-8">Mention code <strong>{page.couponCode}</strong> when you speak with our advisor</p>
+                <p className="text-xs text-amber-600 mt-1 ml-8">
+                  Mention code <strong>{page.couponCode}</strong> on the advisor call. Up to Rs {tierMax.toLocaleString('en-IN')} on Tuesday and Saturday in IST, Rs {tierBase.toLocaleString('en-IN')} on other days.
+                </p>
               </div>
-              <span className="text-lg font-bold text-amber-700">- Rs 10,000</span>
+              <span className="text-lg font-bold text-amber-700">- Rs {liveBonus.amount.toLocaleString('en-IN')}</span>
             </div>
 
             {/* Final Fee */}
@@ -252,6 +280,19 @@ export default async function CouponDetailPage({ params }: { params: any }) {
         {/* CTA - Reveal code */}
         <CouponPageCTA page={page} />
 
+        {/* Phone CTA - direct counsellor call */}
+        {page.couponCode !== 'N/A' && (
+          <div className="mb-8 -mt-2 text-center">
+            <a
+              href={`tel:${COUNSELLOR_TEL}`}
+              className="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-amber-300 font-bold px-6 py-3 rounded-xl no-underline transition-colors"
+            >
+              <Phone className="w-4 h-4" />
+              Or call edifyedu.in counsellor: {COUNSELLOR_TEL_DISPLAY}
+            </a>
+          </div>
+        )}
+
         {/* Editorial intro - substantial for SEO */}
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>What Discount Opportunities Actually Exist at {page.shortName} in {year}</h2>
@@ -265,10 +306,10 @@ export default async function CouponDetailPage({ params }: { params: any }) {
             {page.universityName} holds NAAC {page.naac} accreditation and is UGC-DEB approved for online degree programmes. The online MBA degree is legally equivalent to a campus MBA under UGC 2020 regulations. Per UGC (Online Programmes) Regulations 2018, the degree certificate clearly identifies the programme as "Online" mode — this is the regulator's design and does not affect legal validity. It is valid for UPSC, banking exams, PSU recruitment, and all private-sector employment.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            Most "coupon codes" for online MBA programmes are not retail coupons. They represent university-administered fee concessions: lump-sum payment discounts that save 5-12%, merit scholarships that waive 10-30% of the fee, early-bird offers with 15-30% additional savings, and category-specific waivers for defence personnel, divyaang candidates, and alumni. Understanding these categories helps you maximise your total savings before you even apply a coupon code.
+            Most "coupon codes" for online MBA programmes are not retail coupons. They represent university-administered fee concessions: lump-sum payment discounts that save 5-12%, merit scholarships that waive 10-30% of the fee, early-bird offers with 15-30% additional savings, and category-specific waivers for defence personnel, divyaang candidates, and alumni. Understanding these categories helps you maximise your total savings before you even claim the edifyedu.in enrollment bonus.
           </p>
           <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 mb-4">
-            <p className="text-xs text-amber-800"><strong>Important clarification:</strong> The Rs 10,000 enrollment bonus is from EdifyEdu, not from {page.universityName}. It is EdifyEdu's incentive for students who enroll through our advisory service. University scholarships (merit, defence, lump-sum discounts) listed above are separate and come directly from the university. Both can be availed together. Verify university-specific scholarships on {page.officialUrl}.</p>
+            <p className="text-xs text-amber-800"><strong>Important clarification:</strong> the enrollment bonus shown on this page is from edifyedu.in, not from {page.universityName}. It is a tiered amount (this university is in the <strong>{page.tier}</strong> tier — up to Rs {tierMax.toLocaleString('en-IN')} on Tuesday and Saturday, Rs {tierBase.toLocaleString('en-IN')} on other days, IST). University scholarships (merit, defence, lump-sum discounts) listed above are separate and come directly from the university. Both can be availed together. Verify university-specific scholarships on {page.officialUrl}.</p>
           </div>
         </section>
 

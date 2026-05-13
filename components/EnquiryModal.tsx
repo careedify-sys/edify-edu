@@ -15,6 +15,12 @@ interface EnquiryModalProps {
   couponCode?: string
   /** Human-readable discount label shown in the applied badge (e.g. "25% off") */
   couponDiscount?: string
+  /**
+   * Fired only after a successful form submission. Used by /coupons to gate
+   * the "reveal code" action behind a real lead capture — onClose must NOT
+   * trigger the reveal because the user can dismiss without submitting.
+   */
+  onSuccess?: () => void
 }
 
 const PROGRAMS = ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'B.Com', 'MA', 'M.Com', 'MSc', 'BSc', 'Not sure yet']
@@ -30,6 +36,7 @@ export default function EnquiryModal({
   sourcePage,
   couponCode,
   couponDiscount,
+  onSuccess,
 }: EnquiryModalProps) {
   const [mounted, setMounted] = useState(false)
   useEffect(() => { setMounted(true) }, [])
@@ -117,9 +124,14 @@ export default function EnquiryModal({
       }
 
       setStep('success')
+      onSuccess?.()
     } catch {
-      // Show success anyway — partial saves may have occurred
+      // Show success anyway — partial saves may have occurred. Fire onSuccess
+      // here too so the caller's gated UI (e.g. coupon code reveal) unlocks,
+      // since the lead was attempted in good faith and the API may have saved
+      // it before the network error surfaced.
       setStep('success')
+      onSuccess?.()
     }
   }
 

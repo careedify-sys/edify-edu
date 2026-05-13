@@ -13,11 +13,18 @@ import {
   Lock,
   Eye,
   ChevronDown,
+  Phone,
 } from 'lucide-react'
 import Link from 'next/link'
-import { COUPONS, getExpiryDisplay, type Coupon } from '@/lib/coupons'
+import { COUPONS, getExpiryDisplay, getTodaysBonus, type Coupon } from '@/lib/coupons'
 import { COUPON_PAGE_SLUGS } from '@/lib/coupon-pages'
 import EnquiryModal from '@/components/EnquiryModal'
+import CouponCountdown from '@/components/CouponCountdown'
+import CouponScarcityBanner from '@/components/CouponScarcityBanner'
+import { COUPONS_HUB_FAQS } from './faqs'
+
+const COUNSELLOR_TEL = '+917061285806'
+const COUNSELLOR_TEL_DISPLAY = '+91 70612 85806'
 
 // ── Types ──────────────────────────────────────────────────────────────────
 
@@ -67,6 +74,8 @@ function CouponCard({
     setTimeout(() => setCopied(false), 2000)
   }, [coupon.code])
 
+  const todayBonus = getTodaysBonus(coupon.tier)
+
   return (
     <div className="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
       {/* Discount banner */}
@@ -77,10 +86,16 @@ function CouponCard({
           </span>
         )}
         <div className="flex items-end gap-2">
-          <span className="text-3xl font-extrabold text-white leading-none">₹10,000</span>
-          <span className="text-white/80 text-sm font-semibold mb-1">BONUS</span>
+          <span className="text-3xl font-extrabold text-white leading-none">
+            Rs {todayBonus.amount.toLocaleString('en-IN')}
+          </span>
+          <span className="text-white/80 text-sm font-semibold mb-1">
+            {todayBonus.isMaxWindow ? 'MAX TODAY' : 'BONUS'}
+          </span>
         </div>
-        <p className="text-white/90 text-sm font-medium mt-1">EdifyEdu Enrollment Bonus on this university</p>
+        <p className="text-white/90 text-sm font-medium mt-1">
+          edifyedu.in enrollment bonus on this university
+        </p>
       </div>
 
       {/* Body */}
@@ -143,6 +158,9 @@ function CouponCard({
           )}
         </div>
 
+        {/* Countdown to next max window */}
+        <CouponCountdown tier={coupon.tier} variant="card" />
+
         {/* Expiry */}
         <div className="flex items-center gap-1.5 text-xs text-slate-500">
           <Clock className="w-3.5 h-3.5 shrink-0 text-slate-400" />
@@ -162,6 +180,13 @@ function CouponCard({
           Apply &amp; Enquire
           <ChevronRight className="w-4 h-4" />
         </button>
+        <a
+          href={`tel:${COUNSELLOR_TEL}`}
+          className="w-full flex items-center justify-center gap-2 text-slate-700 border border-slate-200 hover:border-amber-300 hover:bg-amber-50 py-2.5 rounded-xl text-xs font-bold no-underline transition-colors"
+        >
+          <Phone className="w-3.5 h-3.5 text-amber-600" />
+          Or call counsellor: {COUNSELLOR_TEL_DISPLAY}
+        </a>
         {COUPON_PAGE_SLUGS.some(s => s.includes(coupon.universityId.split('-')[0])) && (
           <Link
             href={`/coupons/${COUPON_PAGE_SLUGS.find(s => s.includes(coupon.universityId.split('-')[0])) || ''}`}
@@ -176,89 +201,11 @@ function CouponCard({
 }
 
 // ── FAQ Accordion ──────────────────────────────────────────────────────────
+// Visible FAQ list is imported from layout.tsx so the JSON-LD schema and the
+// rendered accordion are guaranteed to match. Edit both by editing the
+// COUPONS_HUB_FAQS export in layout.tsx.
 
-const FAQ_ITEMS = [
-  {
-    q: 'What is the best online MBA coupon code for 2026?',
-    a: 'When you enroll through EdifyEdu using any coupon code, you receive a flat ₹10,000 enrollment bonus from EdifyEdu. This is separate from any university scholarship. For example, use AMITY25 for Amity or NMIMS15 for NMIMS. The bonus is applied as a fee adjustment during your advisor-assisted enrollment.',
-  },
-  {
-    q: 'How much can I save with EdifyEdu coupons?',
-    a: 'EdifyEdu provides a flat ₹10,000 enrollment bonus on any of the 21 listed universities. This bonus is from EdifyEdu, not the university. Universities may offer their own separate scholarships (merit-based, defence, lump-sum payment discounts) which you can avail on top of the EdifyEdu bonus.',
-  },
-  {
-    q: 'Are these coupon codes verified?',
-    a: 'Yes. The ₹10,000 EdifyEdu enrollment bonus is guaranteed when you enroll through our advisor. The bonus is from EdifyEdu, not the university. Your advisor will explain exactly how it is applied before you make any payment.',
-  },
-  {
-    q: 'Can I use a coupon code with EMI?',
-    a: 'Yes. The EdifyEdu bonus is applied to your total fee first, and you can then pay the reduced balance via EMI. For example, if your university fee is ₹2,00,000 and you receive the ₹10,000 bonus, your EMI is calculated on ₹1,90,000. Your advisor will clarify the exact terms.',
-  },
-  {
-    q: 'How to get Amity University Online discount coupon?',
-    a: 'Use coupon code AMITY25 during your advisor call to get ₹10,000 EdifyEdu enrollment bonus on Amity Online MBA. For MCA, use AMITYMCA20 for ₹10,000 EdifyEdu bonus. Click "Reveal Code" on the Amity card above to get the code.',
-  },
-  {
-    q: 'Is there a coupon code for JAIN Online MBA?',
-    a: 'Yes. JAIN20 gives ₹10,000 EdifyEdu enrollment bonus on JAIN Online programmes. For MCA specifically, use JAINMCA15 for ₹10,000 EdifyEdu bonus. Both codes are valid through April 2026.',
-  },
-  {
-    q: 'How to apply LPU Online MBA or MCA discount code?',
-    a: 'Use LPU20 for ₹10,000 EdifyEdu bonus on LPU Online MBA or LPUMCA20 for ₹10,000 EdifyEdu bonus on LPU Online MCA. Mention the code to your EdifyEdu advisor during the call.',
-  },
-  {
-    q: 'Can I get a discount on Manipal Online MCA?',
-    a: 'Yes. Use MANIPALMCA15 for ₹10,000 EdifyEdu bonus on Manipal MUJ Online MCA. For Online MBA, use MANIPAL20 for ₹10,000 EdifyEdu bonus with ₹10,000 EdifyEdu bonus.',
-  },
-  {
-    q: 'What is the Chandigarh University Online discount code?',
-    a: 'Use CHANDIGARH15 for ₹10,000 EdifyEdu bonus on Chandigarh University Online MBA, or CUMCA20 for ₹10,000 EdifyEdu bonus on the MCA program.',
-  },
-  {
-    q: 'Is there an NMIMS Online coupon code?',
-    a: 'Yes. NMIMS15 gives ₹10,000 EdifyEdu bonus on NMIMS Online MBA . Apply this code via your EdifyEdu advisor during the admissions call.',
-  },
-  {
-    q: 'Is there a Symbiosis Online MBA coupon code?',
-    a: 'Yes. Use SYMBIOSIS20 for ₹10,000 EdifyEdu bonus on Symbiosis SSODL Online MBA, on the total program fee.',
-  },
-  {
-    q: 'Does Sikkim Manipal University have an online discount?',
-    a: 'Yes. Coupon code SMU20 gives ₹10,000 EdifyEdu bonus on Sikkim Manipal University Online MBA or MCA programs, with ₹10,000 EdifyEdu bonus.',
-  },
-  {
-    q: 'Is there a Sharda University Online coupon code?',
-    a: 'Yes. SHARDA20 gives ₹10,000 EdifyEdu bonus on Sharda University Online programs (MBA or MCA), with ₹10,000 EdifyEdu bonus.',
-  },
-  {
-    q: 'Can I get a discount at Bharati Vidyapeeth Online?',
-    a: 'Yes. Use BVP20 for ₹10,000 EdifyEdu bonus on Bharati Vidyapeeth Online MBA or MCA, with ₹10,000 EdifyEdu bonus.',
-  },
-  {
-    q: 'Are there coupon codes for Galgotias University Online?',
-    a: 'Yes. GALGOTIAS15 offers ₹10,000 EdifyEdu bonus on Galgotias University Online programs, on your fee.',
-  },
-  {
-    q: 'Is there an Amrita Online discount code?',
-    a: 'Yes. AMRITA15 gives ₹10,000 EdifyEdu bonus on Amrita Online MBA or MCA programs, with ₹10,000 EdifyEdu bonus.',
-  },
-  {
-    q: 'Are EdifyEdu coupon codes the same as university scholarships?',
-    a: 'No. University scholarships are merit-based fee waivers (10-30%) awarded by the university based on your graduation marks. The EdifyEdu enrollment bonus is a separate Rs 10,000 benefit from EdifyEdu, not the university. You can stack both: get a university merit scholarship AND receive the Rs 10,000 EdifyEdu bonus. They are independent of each other.',
-  },
-  {
-    q: 'Can I use multiple discount codes together?',
-    a: 'It depends on the university. Most universities allow stacking a merit scholarship with a payment-plan discount (lump-sum savings). However, two referral codes typically cannot be combined. Our advisor will clarify the exact stacking rules for your chosen university during the call.',
-  },
-  {
-    q: 'Do online MBA coupon codes work on EMI plans?',
-    a: 'In most cases, yes. The coupon discount reduces the total programme fee first, and you then pay the reduced balance via EMI. For example, Amity MBA with AMITY25 reduces the fee by up to Rs 30,000. The remaining amount can be split into 24-month no-cost EMI. Our advisor will confirm EMI compatibility for your specific university.',
-  },
-  {
-    q: 'What is the difference between a coupon code and a referral code?',
-    a: 'A coupon code is a discount applied by the university or its authorized partner (like EdifyEdu) during the admission process. A referral code is shared by an existing student to a new applicant, typically saving Rs 2,000-10,000 on application or tuition. Both are valid savings methods. We provide coupon codes verified with university admissions teams.',
-  },
-]
+const FAQ_ITEMS = COUPONS_HUB_FAQS
 
 function FaqAccordion() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
@@ -276,10 +223,10 @@ function FaqAccordion() {
           Frequently Asked Questions
         </span>
         <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-snug">
-          Everything about Online MBA &amp; MCA<br className="hidden sm:block" /> Discount Coupons 2026
+          Everything about the edifyedu.in<br className="hidden sm:block" /> Enrollment Bonus 2026
         </h2>
         <p className="mt-3 text-slate-500 text-sm sm:text-base max-w-xl mx-auto">
-          Common questions about coupon codes, savings, and how to apply discounts on your
+          Tier rules, Tuesday and Saturday max windows, and how to claim the bonus on your
           UGC DEB approved online degree.
         </p>
       </div>
@@ -358,15 +305,25 @@ export default function CouponsPage() {
   }
 
   function handleModalClose() {
+    // Plain close (ESC, X, backdrop click, "Done" after success). Does NOT
+    // reveal the code — reveal is gated to handleModalSuccess so dismissing
+    // the form without submitting cannot leak any coupon.
     setModalOpen(false)
-    // If modal was opened via "Reveal Code", mark that code as revealed
+    setRevealPending(null)
+  }
+
+  function handleModalSuccess() {
+    // Fired only by EnquiryModal after a successful POST to /api/enquiry.
+    // If the modal was opened via "Reveal Code", unlock that specific code
+    // now. The modal stays on its success screen until the user dismisses.
     if (revealPending) {
+      const code = revealPending.code
       setRevealedCodes(prev => {
+        if (prev.has(code)) return prev
         const next = new Set(prev)
-        next.add(revealPending.code)
+        next.add(code)
         return next
       })
-      setRevealPending(null)
     }
   }
 
@@ -392,22 +349,38 @@ export default function CouponsPage() {
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-center">
           <div className="inline-flex items-center gap-2 bg-amber-400/15 border border-amber-400/30 text-amber-300 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
             <Tag className="w-3.5 h-3.5" />
-            Verified Offers · Updated Monthly
+            Verified · Tuesday and Saturday Max Bonus
           </div>
           <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4">
-            Online MBA Discount Coupons 2026
+            Online MBA Enrollment Bonus 2026
             <br />
-            <span className="text-amber-400">Verified Codes for {new Set(COUPONS.map(c => c.universityId)).size} UGC-DEB Universities</span>
+            <span className="text-amber-400">
+              Up to Rs 7,500 from edifyedu.in across {new Set(COUPONS.map(c => c.universityId)).size} UGC DEB universities
+            </span>
           </h1>
-          <p className="text-white/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-8">
-            Get an <strong className="text-white/90">exclusive ₹10,000 enrollment bonus</strong> from EdifyEdu on any UGC DEB approved online MBA or MCA. This bonus is from EdifyEdu, not the university. It is applied as a fee adjustment during your advisor-assisted enrollment. Universities may offer their own separate scholarships on top.
+          <p className="text-white/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-6">
+            Enroll through edifyedu.in and receive a <strong className="text-white/90">tiered enrollment bonus from edifyedu.in</strong> on any UGC DEB approved online MBA or MCA. The maximum amount unlocks every Tuesday and Saturday in IST. University scholarships (merit, defence, lump-sum) remain available on top.
           </p>
+
+          {/* Live countdown to next max window */}
+          <div className="flex justify-center mb-8">
+            <CouponCountdown tier="premium" variant="hero" />
+          </div>
+
+          {/* Phone CTA — hero placement */}
+          <a
+            href={`tel:${COUNSELLOR_TEL}`}
+            className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold px-6 py-3 rounded-xl no-underline transition-colors mb-8"
+          >
+            <Phone className="w-4 h-4" />
+            Call counsellor: {COUNSELLOR_TEL_DISPLAY}
+          </a>
 
           {/* Stats row */}
           <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
             {[
               { icon: <BadgePercent className="w-5 h-5" />, label: `${COUPONS.length} Active Coupons` },
-              { icon: <GraduationCap className="w-5 h-5" />, label: '21 Universities' },
+              { icon: <GraduationCap className="w-5 h-5" />, label: `${new Set(COUPONS.map(c => c.universityId)).size} Universities` },
               { icon: <Sparkles className="w-5 h-5" />, label: 'UGC DEB Approved Only' },
             ].map(s => (
               <div key={s.label} className="flex items-center gap-2 text-amber-300/80 text-sm font-semibold">
@@ -421,10 +394,40 @@ export default function CouponsPage() {
 
       {/* ── Editorial Intro ─────────────────────────────────────────────── */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
-        <h2 className="text-2xl font-extrabold text-slate-900 mb-4">How the EdifyEdu Enrollment Bonus Works</h2>
+        <div className="mb-6">
+          <CouponScarcityBanner tier="premium" fullWidth />
+        </div>
+
+        <h2 className="text-2xl font-extrabold text-slate-900 mb-4">How the edifyedu.in Enrollment Bonus Works</h2>
         <p className="text-sm text-slate-600 leading-relaxed mb-4">
-          When you enroll in an online MBA or MCA through EdifyEdu, you receive a <strong>flat Rs 10,000 enrollment bonus from EdifyEdu</strong>. This bonus is from EdifyEdu, not from the university. It is applied as a fee adjustment during your advisor-assisted enrollment. Universities offer their own separate scholarships (merit-based, defence, lump-sum payment discounts) which you can avail on top of the EdifyEdu bonus.
+          When you enroll in an online MBA or MCA through edifyedu.in, you receive a <strong>tiered enrollment bonus from edifyedu.in</strong>. Three tiers are active: premium universities up to Rs 7,500, standard universities up to Rs 5,000, budget universities up to Rs 4,000. The maximum amount in each tier is live every Tuesday and Saturday in IST. Outside that window, the base amount applies. The bonus is from edifyedu.in, not from the university, and is applied as a fee adjustment during your advisor-assisted enrollment.
         </p>
+
+        <div className="rounded-xl border border-slate-200 overflow-hidden mb-6">
+          <table className="w-full text-sm">
+            <thead><tr className="bg-slate-50"><th className="px-4 py-2.5 text-left font-semibold text-slate-700">Tier</th><th className="px-4 py-2.5 text-left font-semibold text-slate-700">Tue and Sat (Max)</th><th className="px-4 py-2.5 text-left font-semibold text-slate-700">Other Days (Base)</th><th className="px-4 py-2.5 text-left font-semibold text-slate-700">Example Universities</th></tr></thead>
+            <tbody>
+              <tr className="bg-white">
+                <td className="px-4 py-2 font-medium text-slate-700">Premium</td>
+                <td className="px-4 py-2 text-amber-700 font-semibold">Rs 7,500</td>
+                <td className="px-4 py-2 text-slate-600">Rs 5,000</td>
+                <td className="px-4 py-2 text-slate-600">Symbiosis SSODL, MAHE</td>
+              </tr>
+              <tr className="bg-slate-50">
+                <td className="px-4 py-2 font-medium text-slate-700">Standard</td>
+                <td className="px-4 py-2 text-amber-700 font-semibold">Rs 5,000</td>
+                <td className="px-4 py-2 text-slate-600">Rs 4,000</td>
+                <td className="px-4 py-2 text-slate-600">Amity, NMIMS, LPU, Chandigarh, JAIN, DPU</td>
+              </tr>
+              <tr className="bg-white">
+                <td className="px-4 py-2 font-medium text-slate-700">Budget</td>
+                <td className="px-4 py-2 text-amber-700 font-semibold">Rs 4,000</td>
+                <td className="px-4 py-2 text-slate-600">Rs 3,000</td>
+                <td className="px-4 py-2 text-slate-600">SMU, MUJ, IGNOU</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         <h3 className="text-lg font-bold text-slate-900 mb-3">Types of Online MBA Discounts Available</h3>
         <div className="rounded-xl border border-slate-200 overflow-hidden mb-6">
@@ -464,11 +467,11 @@ export default function CouponsPage() {
         </div>
 
         <div className="rounded-xl border border-green-200 bg-green-50 p-5 mb-6">
-          <p className="text-sm text-green-800"><strong>Total potential savings:</strong> Rs 10,000 EdifyEdu bonus + university's own scholarships (merit 10-30%, lump-sum 5-12%, defence/divyaang waivers). For example, at MUJ: university 15% upfront discount (Rs 27,000) + EdifyEdu Rs 10,000 bonus = Rs 37,000 total savings on Rs 1,80,000 fee.</p>
+          <p className="text-sm text-green-800"><strong>Total potential savings:</strong> tiered edifyedu.in enrollment bonus (Rs 3,000 to Rs 7,500 depending on tier and day) plus the university's own scholarships (merit 10-30%, lump-sum 5-12%, defence and divyaang waivers). For example, at MUJ: university 15% upfront discount (Rs 27,000) plus a Rs 4,000 edifyedu.in bonus on Tuesday or Saturday brings effective savings to Rs 31,000 on a Rs 1,80,000 fee.</p>
         </div>
 
         <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
-          <p className="text-xs text-amber-800"><strong>Important clarification:</strong> The Rs 10,000 enrollment bonus is from EdifyEdu, not from the university. It is EdifyEdu's incentive for students who enroll through our advisory service. University scholarships (merit, defence, lump-sum discounts) are separate and come directly from the university. Both can be availed together. Verify university-specific scholarships on each university's official portal.</p>
+          <p className="text-xs text-amber-800"><strong>Important clarification:</strong> the tiered enrollment bonus is from edifyedu.in, not from the university. It is applied as a fee adjustment when you enroll through our advisor. University scholarships (merit, defence, lump-sum discounts) are separate and come directly from the university. Both can be availed together. Verify university-specific scholarships on each university's official portal.</p>
         </div>
       </section>
 
@@ -476,7 +479,7 @@ export default function CouponsPage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
 
         {/* Filter tabs */}
-        <div className="flex items-center gap-2 mb-8 flex-wrap">
+        <div className="flex items-center gap-2 mb-6 flex-wrap">
           <span className="text-sm text-slate-500 font-medium mr-1 hidden sm:inline">Filter by program:</span>
           {TABS.map(tab => (
             <button
@@ -518,9 +521,9 @@ export default function CouponsPage() {
             <Check className="w-5 h-5 text-green-600" />
           </div>
           <div>
-            <p className="text-sm font-bold text-slate-800 mb-0.5">Rs 10,000 EdifyEdu Enrollment Bonus</p>
+            <p className="text-sm font-bold text-slate-800 mb-0.5">Tiered edifyedu.in enrollment bonus</p>
             <p className="text-xs text-slate-500 leading-relaxed">
-              This bonus is from EdifyEdu, not the university. It is applied as a fee adjustment when you enroll through our advisor. Universities offer their own separate scholarships which you can avail on top. Mention your coupon code during the free advisor call.
+              The bonus is from edifyedu.in, not the university. Amount depends on the university's tier and the day of the week (Tuesday and Saturday unlock the maximum amount). It is applied as a fee adjustment when you enroll through our advisor. Universities offer their own separate scholarships on top. Mention your coupon code during the free advisor call.
             </p>
           </div>
         </div>
@@ -536,14 +539,26 @@ export default function CouponsPage() {
         <EnquiryModal
           isOpen={modalOpen}
           onClose={handleModalClose}
+          onSuccess={handleModalSuccess}
           universityName={selectedCoupon.university}
           universityId={selectedCoupon.universityId}
           defaultProgram={selectedCoupon.program === 'All' ? '' : selectedCoupon.program}
           sourcePage="/coupons"
           couponCode={selectedCoupon.code}
-          couponDiscount="₹10,000 EdifyEdu Bonus"
+          couponDiscount={selectedCoupon.savings}
         />
       )}
+
+      {/* ── Sticky phone CTA bar (mobile-first) ─────────────────────────── */}
+      <div className="fixed bottom-0 inset-x-0 z-40 md:hidden bg-slate-900 border-t border-amber-500/40 shadow-lg">
+        <a
+          href={`tel:${COUNSELLOR_TEL}`}
+          className="flex items-center justify-center gap-2 px-4 py-3 text-amber-300 font-bold text-sm no-underline"
+        >
+          <Phone className="w-4 h-4" />
+          Call edifyedu.in counsellor: {COUNSELLOR_TEL_DISPLAY}
+        </a>
+      </div>
     </>
   )
 }
