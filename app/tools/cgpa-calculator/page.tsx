@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import CgpaCalculatorClient from './CgpaCalculatorClient'
+import CgpaQuickConversions from '@/components/cgpa/CgpaQuickConversions'
 
 export const metadata: Metadata = {
   title: 'CGPA to Percentage Calculator — How to Convert CGPA Instantly | Edify',
@@ -271,6 +272,7 @@ export default function CgpaCalculatorPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <CgpaCalculatorClient />
+      <CgpaQuickConversions />
     </>
   )
 }
