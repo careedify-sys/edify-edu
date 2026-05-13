@@ -111,6 +111,17 @@ const LOCKED_SLUGS = [
   'cat-exam-syllabus-2026-complete-guide',
   'imt-ghaziabad-online-mba-review-2026',
   'ma-full-form-course-details-eligibility-fees-2026',
+  'amity-online-mba-review-2026',
+  'smu-online-mba-review',
+  'mahe-online-mba-review-2026',
+  'muj-online-mba-review-2026',
+  'nmims-online-mba-review-2026',
+  'symbiosis-online-mba-review-2026',
+  'online-mba-lpu-review-2026',
+  'chandigarh-university-online-mba-review',
+  'jain-online-mba-review-2026',
+  'ignou-online-mba-review-2026',
+  'dy-patil-online-mba-review',
 ]
 
 function generateDataTS(
