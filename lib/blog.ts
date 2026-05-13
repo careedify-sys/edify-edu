@@ -745,7 +745,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Eligibility and Admission</h2>
 
-<p>You need a bachelor's degree from a recognised university with at least 50 percent marks (unsure of your score? <a href="/tools/cgpa-calculator" style="color:inherit;text-decoration:underline;text-underline-offset:2px">convert your CGPA to percentage</a> in one click). For SC and ST applicants the minimum is 45 percent. There is no age limit and no entrance exam. Admissions are first-come-first-served after eligibility is confirmed. The non-refundable application fee is Rs 1,500. Each intake session accepts up to 3,000 students.</p>
+<p>You need a bachelor's degree from a recognised university with at least 50 percent marks (unsure of your score? <a href="/tools/cgpa-calculator" style="color:inherit;text-decoration:underline;text-underline-offset:2px">convert your CGPA to percentage</a> in one click). For SC and ST applicants the minimum is 45 percent. There is no age limit and no entrance exam. Admissions are first-come-first-served after eligibility is confirmed. The non-refundable application fee is ₹1,000.</p>
 
 <h2>Fees</h2>
 
