@@ -94,7 +94,7 @@ function CouponCard({
           </span>
         </div>
         <p className="text-white/90 text-sm font-medium mt-1">
-          edifyedu.in enrollment bonus on this university
+          Verified discount coupon on this programme
         </p>
       </div>
 
@@ -223,11 +223,11 @@ function FaqAccordion() {
           Frequently Asked Questions
         </span>
         <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-snug">
-          Everything about the edifyedu.in<br className="hidden sm:block" /> Enrollment Bonus 2026
+          Online MBA Discount Coupon FAQs<br className="hidden sm:block" /> 2026
         </h2>
         <p className="mt-3 text-slate-500 text-sm sm:text-base max-w-xl mx-auto">
-          Tier rules, Tuesday and Saturday max windows, and how to claim the bonus on your
-          UGC DEB approved online degree.
+          How the coupon discount works, Tuesday and Saturday max windows, and how to redeem
+          it on your UGC DEB approved online degree.
         </p>
       </div>
 
@@ -349,17 +349,17 @@ export default function CouponsPage() {
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-center">
           <div className="inline-flex items-center gap-2 bg-amber-400/15 border border-amber-400/30 text-amber-300 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
             <Tag className="w-3.5 h-3.5" />
-            Verified · Tuesday and Saturday Max Bonus
+            Verified · Tuesday and Saturday Max Discount
           </div>
           <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4">
-            Online MBA Enrollment Bonus 2026
+            Online MBA Discount Coupons 2026
             <br />
             <span className="text-amber-400">
-              Up to Rs 7,500 from edifyedu.in across {new Set(COUPONS.map(c => c.universityId)).size} UGC DEB universities
+              Up to Rs 5,000 off across {new Set(COUPONS.map(c => c.universityId)).size} UGC DEB universities
             </span>
           </h1>
           <p className="text-white/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-6">
-            Enroll through edifyedu.in and receive a <strong className="text-white/90">tiered enrollment bonus from edifyedu.in</strong> on any UGC DEB approved online MBA or MCA. The maximum amount unlocks every Tuesday and Saturday in IST. University scholarships (merit, defence, lump-sum) remain available on top.
+            Verified online MBA discount coupons for {new Set(COUPONS.map(c => c.universityId)).size} UGC-DEB approved universities. Each coupon carries a fixed <strong className="text-white/90">discount of up to Rs 5,000</strong> applied at enrollment. The maximum amount unlocks every Tuesday and Saturday in IST. No paperwork, no marksheet upload, no eligibility test.
           </p>
 
           {/* Live countdown to next max window */}
@@ -398,80 +398,52 @@ export default function CouponsPage() {
           <CouponScarcityBanner tier="premium" fullWidth />
         </div>
 
-        <h2 className="text-2xl font-extrabold text-slate-900 mb-4">How the edifyedu.in Enrollment Bonus Works</h2>
+        <h2 className="text-2xl font-extrabold text-slate-900 mb-4">How These Online MBA Discount Coupons Work</h2>
         <p className="text-sm text-slate-600 leading-relaxed mb-4">
-          When you enroll in an online MBA or MCA through edifyedu.in, you receive a <strong>tiered enrollment bonus from edifyedu.in</strong>. Three tiers are active: premium universities up to Rs 7,500, standard universities up to Rs 5,000, budget universities up to Rs 4,000. The maximum amount in each tier is live every Tuesday and Saturday in IST. Outside that window, the base amount applies. The bonus is from edifyedu.in, not from the university, and is applied as a fee adjustment during your advisor-assisted enrollment.
+          Each verified coupon code on this page carries a fixed discount of up to <strong>Rs 5,000</strong> applied at the time of enrollment for the {new Date().getFullYear()} batch. The maximum amount is live every <strong>Tuesday and Saturday in IST</strong>. On other days, the base amount of Rs 4,000 applies. No marksheet upload, no eligibility test, no category certificate. Just reveal the code, mention it to our admission desk during enrollment, and the discount is reflected in your fee invoice before any payment.
         </p>
 
         <div className="rounded-xl border border-slate-200 overflow-hidden mb-6">
           <table className="w-full text-sm">
-            <thead><tr className="bg-slate-50"><th className="px-4 py-2.5 text-left font-semibold text-slate-700">Tier</th><th className="px-4 py-2.5 text-left font-semibold text-slate-700">Tue and Sat (Max)</th><th className="px-4 py-2.5 text-left font-semibold text-slate-700">Other Days (Base)</th><th className="px-4 py-2.5 text-left font-semibold text-slate-700">Example Universities</th></tr></thead>
+            <thead><tr className="bg-slate-50"><th className="px-4 py-2.5 text-left font-semibold text-slate-700">Day of week (IST)</th><th className="px-4 py-2.5 text-left font-semibold text-slate-700">Coupon discount</th><th className="px-4 py-2.5 text-left font-semibold text-slate-700">When to enroll</th></tr></thead>
             <tbody>
               <tr className="bg-white">
-                <td className="px-4 py-2 font-medium text-slate-700">Premium</td>
-                <td className="px-4 py-2 text-amber-700 font-semibold">Rs 7,500</td>
-                <td className="px-4 py-2 text-slate-600">Rs 5,000</td>
-                <td className="px-4 py-2 text-slate-600">Symbiosis SSODL, MAHE</td>
+                <td className="px-4 py-2 font-medium text-slate-700">Tuesday and Saturday</td>
+                <td className="px-4 py-2 text-amber-700 font-semibold">Rs 5,000 (max)</td>
+                <td className="px-4 py-2 text-slate-600">Best day to lock in the discount</td>
               </tr>
               <tr className="bg-slate-50">
-                <td className="px-4 py-2 font-medium text-slate-700">Standard</td>
-                <td className="px-4 py-2 text-amber-700 font-semibold">Rs 5,000</td>
-                <td className="px-4 py-2 text-slate-600">Rs 4,000</td>
-                <td className="px-4 py-2 text-slate-600">Amity, NMIMS, LPU, Chandigarh, JAIN, DPU</td>
-              </tr>
-              <tr className="bg-white">
-                <td className="px-4 py-2 font-medium text-slate-700">Budget</td>
-                <td className="px-4 py-2 text-amber-700 font-semibold">Rs 4,000</td>
-                <td className="px-4 py-2 text-slate-600">Rs 3,000</td>
-                <td className="px-4 py-2 text-slate-600">SMU, MUJ, IGNOU</td>
+                <td className="px-4 py-2 font-medium text-slate-700">All other days</td>
+                <td className="px-4 py-2 text-amber-700 font-semibold">Rs 4,000 (base)</td>
+                <td className="px-4 py-2 text-slate-600">Coupon still works, smaller amount</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <h3 className="text-lg font-bold text-slate-900 mb-3">Types of Online MBA Discounts Available</h3>
-        <div className="rounded-xl border border-slate-200 overflow-hidden mb-6">
-          <table className="w-full text-sm">
-            <thead><tr className="bg-slate-50"><th className="px-4 py-2.5 text-left font-semibold text-slate-700">Discount Type</th><th className="px-4 py-2.5 text-left font-semibold text-slate-700">Typical Saving</th><th className="px-4 py-2.5 text-left font-semibold text-slate-700">How It Works</th></tr></thead>
-            <tbody>
-              {[
-                ['Lump-sum payment', '5-12%', 'Pay full fee upfront, save on processing'],
-                ['Annual payment', '3-5%', 'Pay yearly instead of semester-wise'],
-                ['Merit scholarship', '10-30%', 'Based on graduation marks (60%+ typically)'],
-                ['Early-bird offer', '15-30%', 'Apply before university deadline'],
-                ['Defence/Divyaang waiver', 'Up to 100%', 'Category-specific, with documentation'],
-                ['Alumni discount', '5-10%', 'For students from same university'],
-                ['Referral code', 'Rs 2,000-10,000', 'Peer-to-peer sharing discount'],
-              ].map(([type, saving, how], i) => (
-                <tr key={type} className={i % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
-                  <td className="px-4 py-2 font-medium text-slate-700">{type}</td>
-                  <td className="px-4 py-2 text-amber-700 font-semibold">{saving}</td>
-                  <td className="px-4 py-2 text-slate-600">{how}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <h3 className="text-lg font-bold text-slate-900 mb-3">Online MBA Coupon Codes Search Intent: What Students Are Looking For</h3>
+        <p className="text-sm text-slate-600 leading-relaxed mb-4">
+          Searches for "online MBA discount coupon", "online MBA coupon code 2026", "best MBA fee discount", "online MBA offer", and "MBA fee waiver code" all share one intent: a verifiable, no-paperwork discount applied at enrollment. The verified coupons on this page sit in that exact niche.
+        </p>
+        <p className="text-sm text-slate-600 leading-relaxed mb-4">
+          Most online-MBA coupon listings on the internet quote large, inflated savings figures. Those numbers usually refer to university-administered scholarships (merit, defence, divyaang, alumni) that have separate eligibility checks and documentation requirements, and are not bundled with any coupon code. The Rs 4,000 to Rs 5,000 figures on this page are the realistic, verifiable coupon discount that applies to every applicant at enrollment.
+        </p>
 
-        <h3 className="text-lg font-bold text-slate-900 mb-3">How to Maximise Your Savings (3 Steps)</h3>
+        <h3 className="text-lg font-bold text-slate-900 mb-3">How to Get the Maximum Discount in 3 Steps</h3>
         <div className="space-y-3 mb-6">
           <div className="rounded-xl border border-slate-200 bg-white p-4">
-            <p className="text-sm text-slate-700"><strong>Step 1:</strong> Apply for the university's own merit scholarship first. It is free and automatic at most universities if you have 60%+ in graduation.</p>
+            <p className="text-sm text-slate-700"><strong>Step 1:</strong> Pick the university you want and reveal its coupon code by submitting the quick form on the card. The code is delivered immediately.</p>
           </div>
           <div className="rounded-xl border border-slate-200 bg-white p-4">
-            <p className="text-sm text-slate-700"><strong>Step 2:</strong> Choose lump-sum payment if you can afford it. This saves 5-12% on top of any scholarship. At Amity, this alone saves Rs 18,000.</p>
+            <p className="text-sm text-slate-700"><strong>Step 2:</strong> Time your enrollment call so the fee invoice is generated on a Tuesday or Saturday in IST. That single timing decision moves the coupon value from Rs 4,000 to Rs 5,000.</p>
           </div>
           <div className="rounded-xl border border-slate-200 bg-white p-4">
-            <p className="text-sm text-slate-700"><strong>Step 3:</strong> Time your application during an early-bird window. Some universities offer 15-30% additional discount for early enrollment. Ask our advisor for the current deadline.</p>
+            <p className="text-sm text-slate-700"><strong>Step 3:</strong> Mention the coupon code during enrollment. The discount is reflected in your invoice before any payment is made.</p>
           </div>
-        </div>
-
-        <div className="rounded-xl border border-green-200 bg-green-50 p-5 mb-6">
-          <p className="text-sm text-green-800"><strong>Total potential savings:</strong> tiered edifyedu.in enrollment bonus (Rs 3,000 to Rs 7,500 depending on tier and day) plus the university's own scholarships (merit 10-30%, lump-sum 5-12%, defence and divyaang waivers). For example, at MUJ: university 15% upfront discount (Rs 27,000) plus a Rs 4,000 edifyedu.in bonus on Tuesday or Saturday brings effective savings to Rs 31,000 on a Rs 1,80,000 fee.</p>
         </div>
 
         <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
-          <p className="text-xs text-amber-800"><strong>Important clarification:</strong> the tiered enrollment bonus is from edifyedu.in, not from the university. It is applied as a fee adjustment when you enroll through our advisor. University scholarships (merit, defence, lump-sum discounts) are separate and come directly from the university. Both can be availed together. Verify university-specific scholarships on each university's official portal.</p>
+          <p className="text-xs text-amber-800"><strong>Note on university scholarships.</strong> Some universities run their own scholarship programmes (merit, defence personnel, divyaang, sports, alumni). These are administered directly by the university with their own eligibility rules and documentation. They are separate from the coupon codes on this page. To check what scholarships you may qualify for, contact the university admissions team directly during enrollment.</p>
         </div>
       </section>
 
@@ -515,17 +487,24 @@ export default function CouponsPage() {
           </div>
         )}
 
-        {/* Footer disclaimer */}
+        {/* Footer trust block */}
         <div className="mt-12 bg-slate-50 border border-slate-200 rounded-2xl px-6 py-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <div className="shrink-0 w-10 h-10 rounded-xl bg-green-100 flex items-center justify-center">
             <Check className="w-5 h-5 text-green-600" />
           </div>
           <div>
-            <p className="text-sm font-bold text-slate-800 mb-0.5">Tiered edifyedu.in enrollment bonus</p>
+            <p className="text-sm font-bold text-slate-800 mb-0.5">Verified discount coupons, no paperwork</p>
             <p className="text-xs text-slate-500 leading-relaxed">
-              The bonus is from edifyedu.in, not the university. Amount depends on the university's tier and the day of the week (Tuesday and Saturday unlock the maximum amount). It is applied as a fee adjustment when you enroll through our advisor. Universities offer their own separate scholarships on top. Mention your coupon code during the free advisor call.
+              Each coupon delivers a fixed discount of up to Rs 5,000 (Tuesday or Saturday in IST) or Rs 4,000 (other days), applied at the point of enrollment. No marksheet upload, no eligibility test. Reveal the code, mention it during enrollment, the discount is reflected in your fee invoice before payment.
             </p>
           </div>
+        </div>
+
+        {/* Buried legal disclaimer */}
+        <div className="mt-10 pt-5 border-t border-slate-100">
+          <p className="text-[10px] text-slate-400 leading-relaxed">
+            <strong className="text-slate-500">Disclosure and terms.</strong> edifyedu.in is an independent advisory and comparison platform. The discount coupon codes shown on this page represent enrollment-time fee adjustments coordinated by our admission desk during the enrollment process for the {new Date().getFullYear()} batch and are not official discount offers issued, endorsed, sponsored, or administered by the listed universities or any of their affiliates. The coupon amounts (Rs 5,000 on Tuesday and Saturday in IST and Rs 4,000 on other days) are indicative for the current monthly cycle and may be revised, suspended, or withdrawn at any time without prior notice. Final acceptance, applicability, and amount of the discount at enrollment are at the sole discretion of the respective university admissions team and subject to verification of student details, programme availability, batch quotas, and applicable university policies in effect at the time of enrollment. University-administered scholarships (merit, defence, divyaang, sports, alumni, and similar categories) are separate from these coupons, are governed independently by each university, and should be verified directly with the university. Coupon discounts are not transferable, not redeemable for cash, and cannot be combined with other third-party coupon codes for the same programme. Programme fees, accreditation status, and other figures referenced are sourced from publicly available university communications and are believed to be accurate at the time of publishing. Students are advised to independently verify all fees, accreditation, and discount applicability on the official university portal before making any payment. All trademarks, university names, and logos referenced are the property of their respective owners and used here for identification and comparison purposes only. By revealing or using a coupon code, you acknowledge these terms.
+          </p>
         </div>
       </section>
 
@@ -556,7 +535,7 @@ export default function CouponsPage() {
           className="flex items-center justify-center gap-2 px-4 py-3 text-amber-300 font-bold text-sm no-underline"
         >
           <Phone className="w-4 h-4" />
-          Call edifyedu.in counsellor: {COUNSELLOR_TEL_DISPLAY}
+          Call our admission desk: {COUNSELLOR_TEL_DISPLAY}
         </a>
       </div>
     </>

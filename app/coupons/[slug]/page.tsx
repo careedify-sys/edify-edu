@@ -26,23 +26,28 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
   const tierMax = TIER_AMOUNTS[page.tier].max
   const tierLabel = `Rs ${tierMax.toLocaleString('en-IN')}`
   const title = page.couponCode === 'N/A'
-    ? `${page.shortName} Online MBA Fee ${year} — Rs ${page.totalFeeNum.toLocaleString('en-IN')} (Lowest in India) | edifyedu.in`
-    : `${page.shortName} Online MBA Enrollment Bonus ${year} — Up to ${tierLabel} via edifyedu.in (${page.couponCode})`
+    ? `${page.shortName} Online MBA ${year} - UGC-DEB Approved, NAAC ${page.naac}`
+    : `${page.shortName} Online MBA Discount Coupon ${year} - ${page.couponCode} (Up to ${tierLabel} Off)`
   const description = page.couponCode === 'N/A'
-    ? `${page.shortName} Online MBA fee is ${page.totalFee} — the lowest base fee from a NAAC A++ university. No enrollment bonus needed. Stack with SC/ST or category concessions. Verified for ${year}.`
-    : `${page.shortName} Online MBA fee is ${page.totalFee}. Mention code ${page.couponCode} on your edifyedu.in advisor call for up to ${tierLabel} enrollment bonus (Tuesday and Saturday IST). University scholarships remain available on top. NAAC ${page.naac} accredited.`
+    ? `${page.shortName} Online MBA ${year}: UGC-DEB approved, NAAC ${page.naac} accredited. ${page.nirf}.`
+    : `${page.shortName} Online MBA discount coupon ${year}: use code ${page.couponCode} for up to ${tierLabel} off your fees. Max on Tuesday and Saturday IST. NAAC ${page.naac}, UGC-DEB approved.`
 
   return {
     title: { absolute: title },
     description,
     keywords: [
-      `${page.shortName} online MBA enrollment bonus`,
+      `${page.shortName} online MBA discount coupon ${year}`,
+      `${page.shortName} online MBA coupon code`,
       `${page.shortName} MBA fee ${year}`,
-      `${page.couponCode} edifyedu`,
+      `${page.couponCode}`,
       `${page.shortName} online MBA fees`,
-      `${page.shortName} online MBA scholarship`,
-      `online MBA enrollment bonus India ${year}`,
-      `${page.universityName} fee adjustment`,
+      `${page.shortName} online MBA offer`,
+      `online MBA discount coupon ${year}`,
+      `online MBA coupon code India`,
+      `online MBA fee discount`,
+      `online MBA offer ${year}`,
+      `best online MBA discount`,
+      `${page.universityName} discount code`,
     ],
     alternates: { canonical: `https://edifyedu.in/coupons/${page.slug}` },
     openGraph: { title, description, url: `https://edifyedu.in/coupons/${page.slug}`, type: 'article' },
@@ -75,9 +80,8 @@ export default async function CouponDetailPage({ params }: { params: any }) {
 
   const offerSchema = page.couponCode !== 'N/A' ? {
     '@context': 'https://schema.org', '@type': 'Offer',
-    name: `${page.universityName} Online MBA ${year} Discount`,
-    description: `Up to ${page.maxSavings} off via verified discount code and stackable scholarships`,
-    price: page.totalFeeNum - page.maxSavingsNum,
+    name: `${page.universityName} Online MBA ${year} Discount Coupon`,
+    description: `Verified discount coupon ${page.couponCode}: up to ${page.maxSavings} off, applied at enrollment.`,
     priceCurrency: 'INR',
     validThrough: expiryISO,
     availability: 'https://schema.org/InStock',
@@ -93,12 +97,12 @@ export default async function CouponDetailPage({ params }: { params: any }) {
   }
 
   const applicationSteps = [
-    'Connect with our EdifyEdu counsellor on a free call or WhatsApp',
-    `Mention the discount coupon code you received: ${page.couponCode}`,
-    'Share your basic details (name, contact, eligibility) with the counsellor',
-    `Counsellor verifies your eligibility and coordinates with ${page.shortName} admissions to apply the discount`,
-    'You receive the reduced fee invoice before making any payment',
-    'Complete the enrollment at the discounted fee, fully guided by your counsellor',
+    'Reveal the coupon code by submitting the quick form on this page',
+    `Mention coupon ${page.couponCode} to our admission desk during your enrollment call`,
+    'Share your basic details (name, contact, programme preference) to start the enrollment',
+    `The admission desk coordinates with ${page.shortName} to apply the coupon discount at enrollment`,
+    'You receive a fee invoice with the coupon discount applied before any payment',
+    'Complete the enrollment in your preferred payment plan',
   ]
 
   // HowTo schema — strong AEO signal for "how to apply X coupon" queries.
@@ -107,7 +111,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
     name: `How to Apply ${page.couponCode} Coupon for ${page.shortName} Online MBA ${year}`,
-    description: `Six-step application flow to claim the verified ${page.couponCode} discount on ${page.universityName} Online MBA, save up to ${page.maxSavings}, and pay ${page.finalFee}.`,
+    description: `Six-step application flow to claim the verified ${page.couponCode} discount coupon on ${page.universityName} Online MBA and save up to ${page.maxSavings}.`,
     totalTime: 'P3D',
     estimatedCost: { '@type': 'MonetaryAmount', currency: 'INR', value: 0 },
     supply: [{ '@type': 'HowToSupply', name: 'Graduation marksheets and ID proof' }],
@@ -126,11 +130,10 @@ export default async function CouponDetailPage({ params }: { params: any }) {
     '@context': 'https://schema.org',
     '@type': 'Course',
     name: `${page.universityName} Online MBA`,
-    description: `UGC-DEB approved 2-year online MBA from ${page.universityName} (NAAC ${page.naac}). Programme fee ${page.totalFee}. With ${page.couponCode} plus scholarships, save up to ${page.maxSavings}.`,
+    description: `UGC-DEB approved 2-year online MBA from ${page.universityName} (NAAC ${page.naac}). Verified discount coupon ${page.couponCode} saves up to ${page.maxSavings} at enrollment.`,
     provider: { '@type': 'CollegeOrUniversity', name: page.universityName, sameAs: page.officialUrl },
     offers: {
       '@type': 'Offer',
-      price: page.totalFeeNum - page.maxSavingsNum,
       priceCurrency: 'INR',
       validThrough: expiryISO,
       url: `https://edifyedu.in/coupons/${page.slug}`,
@@ -165,8 +168,8 @@ export default async function CouponDetailPage({ params }: { params: any }) {
         {/* H1 + Hero */}
         <h1 className="text-2xl md:text-3xl font-extrabold mb-4" style={{ color: '#0f2756' }}>
           {page.couponCode === 'N/A'
-            ? `${page.universityName} Online MBA Fee ${year} - ${page.totalFee} (Lowest Base Fee)`
-            : `${page.universityName} Online MBA Enrollment Bonus ${year} - Up to Rs ${tierMax.toLocaleString('en-IN')} via edifyedu.in`}
+            ? `${page.universityName} Online MBA ${year} - UGC-DEB Approved`
+            : `${page.universityName} Online MBA Discount Coupon ${year} - ${page.couponCode}`}
         </h1>
 
         {/* Scarcity banner + countdown */}
@@ -177,105 +180,66 @@ export default async function CouponDetailPage({ params }: { params: any }) {
           </div>
         )}
 
-        {/* Hero stats */}
+        {/* Grab-the-coupon hero */}
+        {page.couponCode !== 'N/A' && (
+          <div className="rounded-2xl overflow-hidden mb-6 shadow-md" style={{ background: 'linear-gradient(135deg, #0f2756 0%, #1e3a8a 100%)' }}>
+            <div className="px-6 py-7 text-center">
+              <p className="text-xs font-bold uppercase tracking-widest text-amber-300 mb-2">Discount waiting on your fees</p>
+              <p className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-2">
+                You have <span className="text-amber-300">Rs {tierMax.toLocaleString('en-IN')}</span> off
+              </p>
+              <p className="text-sm text-white/80 max-w-md mx-auto">
+                Available on your {page.shortName} Online MBA enrollment. Grab it before today&apos;s window closes.
+              </p>
+            </div>
+          </div>
+        )}
+
+        {/* Programme info tiles - no fees, only details */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
           <div className="rounded-xl border border-slate-200 bg-white p-4 text-center">
-            <p className="text-xs text-slate-500 mb-1">Total Fee</p>
-            <p className="text-lg font-extrabold" style={{ color: '#0f2756' }}>{page.totalFee}</p>
-          </div>
-          <div className="rounded-xl border border-green-200 bg-green-50 p-4 text-center">
-            <p className="text-xs text-green-600 mb-1">Max Savings</p>
-            <p className="text-lg font-extrabold text-green-700">{page.maxSavings}</p>
-          </div>
-          <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-center">
-            <p className="text-xs text-amber-600 mb-1">Final Fee</p>
-            <p className="text-lg font-extrabold text-amber-700">{page.finalFee}</p>
+            <p className="text-xs text-slate-500 mb-1">Accreditation</p>
+            <p className="text-base font-extrabold" style={{ color: '#0f2756' }}>NAAC {page.naac}</p>
           </div>
           <div className="rounded-xl border border-slate-200 bg-white p-4 text-center">
-            <p className="text-xs text-slate-500 mb-1">Accreditation</p>
-            <p className="text-sm font-bold" style={{ color: '#0f2756' }}>NAAC {page.naac} · {page.nirf}</p>
+            <p className="text-xs text-slate-500 mb-1">NIRF Standing</p>
+            <p className="text-base font-extrabold" style={{ color: '#0f2756' }}>{page.nirf}</p>
+          </div>
+          <div className="rounded-xl border border-slate-200 bg-white p-4 text-center">
+            <p className="text-xs text-slate-500 mb-1">Recognition</p>
+            <p className="text-base font-extrabold" style={{ color: '#0f2756' }}>UGC-DEB</p>
+          </div>
+          <div className="rounded-xl border border-slate-200 bg-white p-4 text-center">
+            <p className="text-xs text-slate-500 mb-1">Programme Mode</p>
+            <p className="text-base font-extrabold" style={{ color: '#0f2756' }}>2-Yr Online</p>
           </div>
         </div>
 
-        {/* Fee Breakdown Calculator */}
-        <section className="mb-8">
-          <h2 className="text-xl font-bold mb-4" style={{ color: '#0f2756' }}>Your Fee Breakdown: See Exactly What You Pay</h2>
-          <div className="rounded-2xl border border-slate-200 bg-white overflow-hidden">
-
-            {/* Row 1: Published Fee */}
-            <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100">
-              <div>
-                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">Published Fee</span>
-                <p className="text-sm text-slate-600 mt-0.5">Official programme fee on {page.shortName} portal</p>
-              </div>
-              <span className="text-2xl font-extrabold" style={{ color: '#0f2756' }}>{page.totalFee}</span>
-            </div>
-
-            {/* Row 2: University's Own Discount */}
-            {(() => {
-              const uniDiscount = page.discounts.find(d =>
-                !d.type.toLowerCase().includes('edify') &&
-                !d.type.toLowerCase().includes('defence') &&
-                !d.type.toLowerCase().includes('divyaang') &&
-                !d.type.toLowerCase().includes('merit') &&
-                !d.type.toLowerCase().includes('alumni')
-              )
-              if (!uniDiscount) return null
-              const savingText = uniDiscount.saving.match(/Rs\s*[\d,]+/)?.[0] || uniDiscount.saving
-              const afterText = uniDiscount.saving.match(/pay\s*(Rs\s*[\d,]+)/i)?.[1]
-              return (
-                <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 bg-green-50/50">
-                  <div>
-                    <div className="flex items-center gap-2">
-                      <span className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white text-xs font-bold">1</span>
-                      <span className="text-sm font-bold text-green-800">{page.shortName} gives you {uniDiscount.type}</span>
-                    </div>
-                    {afterText && <p className="text-xs text-green-600 mt-1 ml-8">Fee drops to {afterText}</p>}
-                    {!afterText && <p className="text-xs text-green-600 mt-1 ml-8">{uniDiscount.eligibility}</p>}
-                  </div>
-                  <span className="text-lg font-bold text-green-700">- {savingText}</span>
+        {/* Coupon snapshot - discount only, no fees */}
+        {page.couponCode !== 'N/A' && (
+          <section className="mb-8">
+            <div className="rounded-2xl border-2 border-amber-300 bg-gradient-to-br from-amber-50 via-orange-50 to-white p-6 sm:p-8">
+              <div className="flex items-start gap-4">
+                <div className="shrink-0 w-12 h-12 rounded-xl bg-amber-500 flex items-center justify-center">
+                  <Tag className="w-6 h-6 text-white" />
                 </div>
-              )
-            })()}
-
-            {/* Row 3: edifyedu.in Tier-based Bonus */}
-            <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 bg-amber-50/50">
-              <div>
-                <div className="flex items-center gap-2">
-                  <span className="w-6 h-6 rounded-full bg-amber-500 flex items-center justify-center text-white text-xs font-bold">2</span>
-                  <span className="text-sm font-bold text-amber-800">
-                    Rs {liveBonus.amount.toLocaleString('en-IN')} edifyedu.in enrollment bonus {liveBonus.isMaxWindow ? '(max window active)' : '(base amount today)'}
-                  </span>
+                <div className="flex-1">
+                  <p className="text-xs font-bold uppercase tracking-wider text-amber-700 mb-1">Coupon Discount Available</p>
+                  <p className="text-lg font-extrabold text-slate-900 mb-2">Up to Rs {tierMax.toLocaleString('en-IN')} off with coupon {page.couponCode}</p>
+                  <ul className="text-sm text-slate-700 space-y-1.5">
+                    <li className="flex items-start gap-2"><BadgeCheck className="w-4 h-4 text-amber-600 mt-0.5 shrink-0" /> Rs {tierMax.toLocaleString('en-IN')} on Tuesday and Saturday in IST</li>
+                    <li className="flex items-start gap-2"><BadgeCheck className="w-4 h-4 text-amber-600 mt-0.5 shrink-0" /> Rs {tierBase.toLocaleString('en-IN')} on all other days</li>
+                    <li className="flex items-start gap-2"><BadgeCheck className="w-4 h-4 text-amber-600 mt-0.5 shrink-0" /> No marksheet upload, no eligibility test, no paperwork</li>
+                    <li className="flex items-start gap-2"><BadgeCheck className="w-4 h-4 text-amber-600 mt-0.5 shrink-0" /> Applied directly during enrollment by our admission desk</li>
+                  </ul>
                 </div>
-                <p className="text-xs text-amber-600 mt-1 ml-8">
-                  Mention code <strong>{page.couponCode}</strong> on the advisor call. Up to Rs {tierMax.toLocaleString('en-IN')} on Tuesday and Saturday in IST, Rs {tierBase.toLocaleString('en-IN')} on other days.
-                </p>
-              </div>
-              <span className="text-lg font-bold text-amber-700">- Rs {liveBonus.amount.toLocaleString('en-IN')}</span>
-            </div>
-
-            {/* Final Fee */}
-            <div className="flex items-center justify-between px-6 py-5" style={{ background: '#0f2756' }}>
-              <div>
-                <span className="text-xs font-bold text-amber-300 uppercase tracking-wider">You Actually Pay</span>
-                <p className="text-sm text-white/60 mt-0.5">University discount + edifyedu.in bonus applied</p>
-              </div>
-              <div className="text-right">
-                <span className="text-sm text-white/40 line-through mr-2">{page.totalFee}</span>
-                <span className="text-3xl font-extrabold text-white">{page.finalFee}</span>
               </div>
             </div>
-
-            {/* Savings badge */}
-            <div className="px-6 py-3 bg-green-600 text-center">
-              <span className="text-sm font-bold text-white">Total savings: {page.maxSavings}. That is money you keep.</span>
-            </div>
-          </div>
-
-          <p className="text-xs text-slate-400 mt-3 text-center">
-            University discount requires one-time payment. edifyedu.in bonus applied during enrollment. Verify fees on {page.officialUrl}.
-          </p>
-        </section>
+            <p className="text-xs text-slate-400 mt-3 text-center">
+              Reveal the coupon code below. Our admission desk confirms the active amount and applies the discount during enrollment.
+            </p>
+          </section>
+        )}
 
         {/* CTA - Reveal code */}
         <CouponPageCTA page={page} />
@@ -288,73 +252,85 @@ export default async function CouponDetailPage({ params }: { params: any }) {
               className="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-amber-300 font-bold px-6 py-3 rounded-xl no-underline transition-colors"
             >
               <Phone className="w-4 h-4" />
-              Or call edifyedu.in counsellor: {COUNSELLOR_TEL_DISPLAY}
+              Or call our admission desk: {COUNSELLOR_TEL_DISPLAY}
             </a>
           </div>
         )}
 
         {/* Editorial intro - substantial for SEO */}
         <section className="mb-8">
-          <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>What Discount Opportunities Actually Exist at {page.shortName} in {year}</h2>
+          <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>{page.shortName} Online MBA Discount Coupon {year}: What You Get</h2>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            {page.shortName} offers multiple fee concession pathways for online MBA students in {year}. These include payment-plan discounts, merit-based scholarships, category-specific waivers, and verified EdifyEdu codes. The savings listed below are based on publicly available university scholarship programmes and verified fee structures from the official {page.shortName} portal.
+            The verified {page.shortName} online MBA discount coupon for {year} is <strong>{page.couponCode}</strong>. It carries an additional discount of up to Rs {tierMax.toLocaleString('en-IN')} on Tuesday and Saturday in IST, and Rs {tierBase.toLocaleString('en-IN')} on other days. The coupon is applied at the time of enrollment by our admission desk.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            The total programme fee for {page.universityName} Online MBA is {page.totalFee}. However, very few students actually pay this full amount. Through a combination of payment-plan optimisation, merit scholarships, and verified discount codes, most students reduce their effective fee by {page.maxSavings} or more. The key is understanding which discounts you qualify for and how to stack them correctly.
+            The coupon redemption is straightforward: no marksheet upload, no eligibility test, no paperwork beyond the standard enrollment process. Reveal the code below by submitting a short form, mention it on your enrollment call, and the discount is reflected in your invoice before any payment is made.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            {page.universityName} holds NAAC {page.naac} accreditation and is UGC-DEB approved for online degree programmes. The online MBA degree is legally equivalent to a campus MBA under UGC 2020 regulations. Per UGC (Online Programmes) Regulations 2018, the degree certificate clearly identifies the programme as "Online" mode — this is the regulator's design and does not affect legal validity. It is valid for UPSC, banking exams, PSU recruitment, and all private-sector employment.
+            {page.universityName} holds NAAC {page.naac} accreditation and is UGC-DEB approved for online degree programmes. The online MBA degree is legally equivalent to a campus MBA under UGC 2020 regulations. Per UGC (Online Programmes) Regulations 2018, the degree certificate clearly identifies the programme as "Online" mode. It is valid for UPSC, banking exams, PSU recruitment, and all private-sector employment.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            Most "coupon codes" for online MBA programmes are not retail coupons. They represent university-administered fee concessions: lump-sum payment discounts that save 5-12%, merit scholarships that waive 10-30% of the fee, early-bird offers with 15-30% additional savings, and category-specific waivers for defence personnel, divyaang candidates, and alumni. Understanding these categories helps you maximise your total savings before you even claim the edifyedu.in enrollment bonus.
+            Most students searching for "{page.shortName} online MBA coupon code" or "{page.shortName} MBA discount {year}" land on inflated coupon claims that turn out to be university-administered scholarships with separate eligibility checks and documentation requirements. This page lists only the verified, no-paperwork coupon discount of up to Rs {tierMax.toLocaleString('en-IN')}. For programme fee details and any university-administered scholarships, contact {page.universityName} admissions directly.
           </p>
           <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 mb-4">
-            <p className="text-xs text-amber-800"><strong>Important clarification:</strong> the enrollment bonus shown on this page is from edifyedu.in, not from {page.universityName}. It is a tiered amount (this university is in the <strong>{page.tier}</strong> tier — up to Rs {tierMax.toLocaleString('en-IN')} on Tuesday and Saturday, Rs {tierBase.toLocaleString('en-IN')} on other days, IST). University scholarships (merit, defence, lump-sum discounts) listed above are separate and come directly from the university. Both can be availed together. Verify university-specific scholarships on {page.officialUrl}.</p>
+            <p className="text-xs text-amber-800"><strong>How the coupon discount works:</strong> the coupon amount is tiered by day of week. On Tuesday and Saturday in IST it is Rs {tierMax.toLocaleString('en-IN')}, on other days it is Rs {tierBase.toLocaleString('en-IN')}. The amount is applied as a fee adjustment when you complete enrollment with code <strong>{page.couponCode}</strong>. The live amount and countdown to the next Tuesday or Saturday max window are shown at the top of this page.</p>
           </div>
         </section>
 
         {/* Why discounts matter */}
         <section className="mb-8">
-          <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>Why {page.shortName} Online MBA Fee Discounts Matter</h2>
+          <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>Why the {page.couponCode} Coupon Code Matters</h2>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            An online MBA is a significant investment. At {page.totalFee}, {page.shortName} is positioned in the {page.totalFeeNum > 250000 ? 'premium' : page.totalFeeNum > 150000 ? 'mid-range' : 'affordable'} segment of online MBA pricing in India. For context, online MBA fees across UGC-DEB approved universities range from Rs 66,000 (IGNOU) to Rs 3,70,000 (Symbiosis without scholarship). Every rupee saved on fees is a rupee that improves your MBA return on investment.
+            An online MBA is a significant investment. Every rupee saved at enrollment is a rupee that improves the return on your degree. The {page.couponCode} verified discount coupon is one of the few savings that students actually receive without paperwork or eligibility checks.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            The average mid-career professional investing in an online MBA expects a 20-40% salary increase over 3-5 years post-completion. At {page.shortName}, with a {page.maxSavings} discount reducing your effective investment to {page.finalFee}, your breakeven period shortens by 3-6 months. This makes the financial case for the MBA stronger and reduces the risk of the investment not paying off.
+            The coupon is independent of marksheet thresholds, category certificates, payment-plan choices, and intake-specific early-bird windows. Whether you pay lump-sum or via EMI, the coupon discount applies at the time of enrollment. Reveal the code, mention it on your enrollment call, and the discount is reflected in your invoice before any payment.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            There are three types of students who benefit most from coupon codes: working professionals who can pay lump-sum and save on processing fees, recent graduates with 60%+ marks who qualify for automatic merit scholarships, and defence personnel or divyaang candidates who qualify for category-specific waivers of 20-100%. If you fall into any of these categories, the savings are real and worth pursuing.
+            The Tuesday and Saturday max-window design exists for one reason: it gives applicants a fixed, predictable date to plan around. If you enroll on a Tuesday or Saturday in IST, the coupon pays the maximum Rs {tierMax.toLocaleString('en-IN')}. If you enroll any other day, it pays Rs {tierBase.toLocaleString('en-IN')}. There is no hidden small print, no minimum batch fill, no application count gate.
           </p>
         </section>
 
-        {/* All discount types table */}
+        {/* Quick facts card - replaces the discounts table */}
         <section className="mb-8">
-          <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>All Discount Types Available at {page.shortName}</h2>
+          <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>{page.couponCode} Coupon at a Glance</h2>
           <div className="rounded-xl border border-slate-200 overflow-hidden">
             <table className="w-full text-sm">
-              <thead><tr className="bg-slate-50">
-                <th className="px-4 py-2.5 text-left font-semibold text-slate-700">Discount Type</th>
-                <th className="px-4 py-2.5 text-left font-semibold text-slate-700">Eligibility</th>
-                <th className="px-4 py-2.5 text-left font-semibold text-slate-700">Saving</th>
-              </tr></thead>
               <tbody>
-                {page.discounts.map((d, i) => (
-                  <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
-                    <td className="px-4 py-2 font-medium text-slate-700">{d.type}</td>
-                    <td className="px-4 py-2 text-slate-600">{d.eligibility}</td>
-                    <td className="px-4 py-2 text-amber-700 font-semibold">{d.saving}</td>
-                  </tr>
-                ))}
+                <tr className="bg-white border-b border-slate-100">
+                  <td className="px-4 py-3 font-semibold text-slate-700 w-1/2">Coupon code</td>
+                  <td className="px-4 py-3 text-slate-700 font-mono font-bold">{page.couponCode}</td>
+                </tr>
+                <tr className="bg-slate-50 border-b border-slate-100">
+                  <td className="px-4 py-3 font-semibold text-slate-700">Discount value (Tue/Sat IST)</td>
+                  <td className="px-4 py-3 text-amber-700 font-bold">Rs {tierMax.toLocaleString('en-IN')}</td>
+                </tr>
+                <tr className="bg-white border-b border-slate-100">
+                  <td className="px-4 py-3 font-semibold text-slate-700">Discount value (other days)</td>
+                  <td className="px-4 py-3 text-amber-700 font-bold">Rs {tierBase.toLocaleString('en-IN')}</td>
+                </tr>
+                <tr className="bg-slate-50 border-b border-slate-100">
+                  <td className="px-4 py-3 font-semibold text-slate-700">Programme</td>
+                  <td className="px-4 py-3 text-slate-600">{page.universityName} Online MBA {year}</td>
+                </tr>
+                <tr className="bg-white border-b border-slate-100">
+                  <td className="px-4 py-3 font-semibold text-slate-700">Programme duration</td>
+                  <td className="px-4 py-3 text-slate-600">2 years (4 semesters)</td>
+                </tr>
+                <tr className="bg-slate-50 border-b border-slate-100">
+                  <td className="px-4 py-3 font-semibold text-slate-700">Coupon validity</td>
+                  <td className="px-4 py-3 text-slate-600">Rolling, refreshed monthly</td>
+                </tr>
+                <tr className="bg-white border-b border-slate-100">
+                  <td className="px-4 py-3 font-semibold text-slate-700">Accreditation</td>
+                  <td className="px-4 py-3 text-slate-600">NAAC {page.naac}, UGC-DEB approved</td>
+                </tr>
+                <tr className="bg-slate-50">
+                  <td className="px-4 py-3 font-semibold text-slate-700">NIRF standing</td>
+                  <td className="px-4 py-3 text-slate-600">{page.nirf}</td>
+                </tr>
               </tbody>
             </table>
-          </div>
-        </section>
-
-        {/* How to stack */}
-        <section className="mb-8">
-          <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>How to Stack Discounts for Maximum Savings</h2>
-          <div className="rounded-xl border border-green-200 bg-green-50 p-5">
-            <p className="text-sm text-green-800 leading-relaxed">{page.stackExample}</p>
           </div>
         </section>
 
@@ -372,43 +348,68 @@ export default async function CouponDetailPage({ params }: { params: any }) {
           </div>
         </section>
 
-        {/* Scholarship details */}
+        {/* University scholarships note */}
         <section className="mb-8">
-          <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>Scholarships Available at {page.shortName} for Online MBA {year}</h2>
-          <p className="text-sm text-slate-600 leading-relaxed mb-5">
-            Beyond coupon codes, {page.universityName} offers several scholarship categories that can significantly reduce your fee. These scholarships are administered by the university directly and do not require an EdifyEdu code. However, in many cases, you can stack a university scholarship with an EdifyEdu code for maximum savings.
+          <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>What About {page.shortName} Scholarships and Other Waivers?</h2>
+          <p className="text-sm text-slate-600 leading-relaxed mb-4">
+            {page.universityName} runs its own scholarship programmes for merit, defence personnel, divyaang candidates, sports achievers, alumni, and other categories. The eligibility, percentage, and documentation requirements for each category are set by the university directly and change between batches. We do not administer these scholarships and we cannot quote their current values on this page.
+          </p>
+          <p className="text-sm text-slate-600 leading-relaxed mb-4">
+            If you think you qualify for any of these categories, ask the {page.shortName} admissions team directly during enrollment. They will confirm whether the scholarship is active for the {year} batch, what documents you need, and whether it can be combined with the {page.couponCode} coupon discount. Information about university scholarships should be verified on {page.officialUrl} or by speaking with {page.shortName} admissions.
+          </p>
+        </section>
+
+        {/* SEO content section - targets all "online mba discount coupon" intent keywords */}
+        <section className="mb-8">
+          <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>Online MBA Discount Coupons in India {year}: Buyer&apos;s Guide</h2>
+          <p className="text-sm text-slate-600 leading-relaxed mb-4">
+            Online MBA discount coupons are one of the most searched queries on Google in the Indian online-education space. Search volumes for "online MBA coupon code", "online MBA discount {year}", "best online MBA offer", and "MBA fee discount India" run into tens of thousands of monthly queries each. The reason is simple: every applicant wants to confirm they are getting a genuine, verifiable saving before enrolling.
+          </p>
+          <p className="text-sm text-slate-600 leading-relaxed mb-4">
+            However, most "online MBA coupon" listings on the internet are inflated. They show large savings that are actually university-administered scholarships, not coupon discounts. The applicant then arrives at the enrollment desk and discovers the promised discount has eligibility rules, marksheet thresholds, or batch quotas that do not match what was advertised.
           </p>
 
-          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>1. Merit-Based Scholarship (10-20% Fee Waiver)</h3>
+          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>How a Real MBA Coupon Code Differs from a Scholarship</h3>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            Merit-based scholarships are the most common. If you scored 60% or above in your graduation, you likely qualify for a 10-20% fee waiver at most universities including {page.shortName}. The scholarship is evaluated automatically during the admission process. You do not need to apply separately. Simply upload your graduation marksheets and the university admissions team will assess your eligibility.
+            A coupon code is a fixed, no-paperwork discount that any applicant can redeem at enrollment. A scholarship is a university-administered concession with eligibility rules (marksheets, category certificates, defence ID, sports achievements, alumni status). Most students search for "coupon" but receive scholarship-style answers that do not match the search intent.
+          </p>
+          <p className="text-sm text-slate-600 leading-relaxed mb-4">
+            The {page.couponCode} coupon on this page is the former. It is a fixed Rs {tierMax.toLocaleString('en-IN')} (Tue/Sat IST) or Rs {tierBase.toLocaleString('en-IN')} (other days) discount applied at enrollment. There is no marksheet check, no category certificate, no application essay. If you can complete the {page.shortName} online MBA enrollment, you can redeem the coupon.
           </p>
 
-          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>2. Defence Personnel Waiver (15-20% Fee Waiver)</h3>
+          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>What "Online MBA Offer {year}" Searches Usually Mean</h3>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            Defence personnel (serving and retired), JCOs, and their dependents typically receive 15-20% fee waivers at {page.shortName}. Documentation required: defence ID card or service record. The waiver applies once and stacks with the EdifyEdu enrollment bonus.
+            High-volume queries like "online MBA offer {year}", "online MBA special offer India", "online MBA fee waiver code", and "best online MBA discount" all refer to the same underlying intent: a verifiable, no-strings discount at the point of enrollment. The Rs {tierMax.toLocaleString('en-IN')} max coupon on this page sits in that exact niche across UGC-DEB approved universities.
+          </p>
+          <p className="text-sm text-slate-600 leading-relaxed mb-4">
+            Across the UGC-DEB approved online MBA universities we work with, coupon discounts settle into a narrow band. The bulk of programmes carry coupon savings in the Rs 4,000 to Rs 5,000 range, similar to what {page.shortName} offers via {page.couponCode}. Larger advertised savings on other sites usually refer to scholarships that are not bundled with any coupon.
           </p>
 
-          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>3. Divyaang Candidate Waiver (Up to 100% Fee Waiver)</h3>
+          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>Tuesday and Saturday Max Window: Why It Matters</h3>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            Divyaang (differently-abled) candidates with 40% or higher disability certificate may receive up to 100% fee waiver. {page.shortName} reviews the disability certificate during admission. This waiver is non-stackable but covers the full programme fee for qualifying candidates.
+            The {page.couponCode} coupon pays its maximum value of Rs {tierMax.toLocaleString('en-IN')} only on Tuesday and Saturday in IST. On other days the coupon still works but at the base value of Rs {tierBase.toLocaleString('en-IN')}. The difference of Rs {(tierMax - tierBase).toLocaleString('en-IN')} is small in absolute terms but becomes meaningful if you are deciding between three or four programmes and trying to compare like-for-like.
+          </p>
+          <p className="text-sm text-slate-600 leading-relaxed mb-4">
+            Practical advice: time your enrollment call so the fee invoice is generated on a Tuesday or Saturday. The countdown timer at the top of this page tracks the next max window so you can plan around it. If you have already started enrollment on a base-amount day, ask the admission desk to schedule the final invoice generation on the next Tuesday or Saturday.
           </p>
 
-          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>4. Sports Achiever and Alumni Discount (5-10%)</h3>
+          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>Coupon Validity, Refreshes, and Stacking Rules</h3>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            Sports achievers at national or state level may receive performance-based waivers. Alumni of the same university group often receive 5-10% additional discounts. Check with the {page.shortName} admissions team for the complete list of active scholarship categories for the {year} batch.
+            The {page.couponCode} coupon is on a rolling 30-day validity that refreshes each month. The amount values (Rs {tierBase.toLocaleString('en-IN')} base, Rs {tierMax.toLocaleString('en-IN')} max) are reviewed and republished at the start of each calendar month based on the active enrollment cycle.
+          </p>
+          <p className="text-sm text-slate-600 leading-relaxed mb-4">
+            The coupon cannot be combined with other third-party coupon codes from other websites for the same university. If the university you choose has its own merit, defence, or divyaang scholarship and you qualify, ask the {page.shortName} admissions team whether the scholarship and this coupon can be combined. The university makes the final call.
           </p>
         </section>
 
         {/* EMI compatibility */}
         <section className="mb-8">
-          <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>EMI + Discount Compatibility at {page.shortName}</h2>
-          <p className="text-sm text-slate-600 leading-relaxed mb-4">{page.emiCompatible}</p>
+          <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>EMI and Coupon Discount Compatibility at {page.shortName}</h2>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            Most students wonder whether coupon discounts work with EMI plans. The answer at most universities is yes. The discount reduces your total programme fee first, and the reduced amount is then split into monthly EMI instalments. This means you benefit from both: a lower total fee AND the convenience of monthly payments.
+            The {page.couponCode} coupon discount works with EMI payment plans at {page.shortName}. The coupon is applied at enrollment and the resulting balance can then be split into monthly EMI instalments. Whether the no-cost EMI window applies to the reduced balance is set by the university and confirmed at enrollment.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed">
-            However, verify the specific terms with {page.shortName} admissions before enrolling. Some universities apply the discount to the lump-sum option only, not to the semester-wise or EMI plans. Our EdifyEdu advisor will clarify the exact EMI terms for your chosen university during the free counselling call.
+            Verify the specific EMI terms with {page.shortName} admissions before enrolling. Some universities apply coupon discounts to lump-sum payment only, not to semester-wise or EMI plans. Our admission desk will clarify the exact terms for the {year} batch during your free enrollment call.
           </p>
         </section>
 
@@ -431,12 +432,12 @@ export default async function CouponDetailPage({ params }: { params: any }) {
               </tr></thead>
               <tbody>
                 <tr className="bg-amber-50">
-                  <td className="px-4 py-2 font-bold text-amber-700">{page.shortName} ({page.totalFee})</td>
+                  <td className="px-4 py-2 font-bold text-amber-700">{page.shortName}</td>
                   <td className="px-4 py-2 font-bold text-amber-700">{page.maxSavings} via {page.couponCode}</td>
                 </tr>
                 {page.peerComparisons.map((p, i) => (
                   <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
-                    <td className="px-4 py-2 text-slate-700">{p.uni}</td>
+                    <td className="px-4 py-2 text-slate-700">{p.uni.replace(/\s*\(Rs\s*[\d,.+L]+\)/, '')}</td>
                     <td className="px-4 py-2 text-slate-600">{p.savings}</td>
                   </tr>
                 ))}
@@ -447,26 +448,21 @@ export default async function CouponDetailPage({ params }: { params: any }) {
 
         {/* When to apply */}
         <section className="mb-8">
-          <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>Best Time to Apply for {page.shortName} Online MBA Discount</h2>
+          <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>Best Time to Apply the {page.couponCode} Coupon Code</h2>
 
-          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>January Intake — Apply in November to December</h3>
+          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>January Intake: Enroll in November or December</h3>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            {page.shortName} runs a January intake each year. Early-bird discounts, when available, are typically highest 4-6 weeks before the intake deadline. Applying between mid-November and mid-December gives you the best chance of securing the maximum January-batch discount.
+            {page.shortName} runs a January intake each year. To redeem the {page.couponCode} coupon for the January batch, complete enrollment between mid-November and mid-December. The coupon refresh cycle aligns with the start of each calendar month, so the same Rs {tierMax.toLocaleString('en-IN')} max value applies across both months.
           </p>
 
-          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>July Intake — Apply in May to June</h3>
+          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>July Intake: Enroll in May or June</h3>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            The July {year} intake is the larger of the two batches. Early-bird windows usually open in May and tighten in late June. Applying between mid-May and mid-June ensures you lock in the early-bird scholarship plus the active EdifyEdu coupon code.
+            The July {year} intake is the larger of the two batches at {page.shortName}. Time your enrollment so the fee invoice is generated on a Tuesday or Saturday in May or June to lock in the Rs {tierMax.toLocaleString('en-IN')} maximum coupon value.
           </p>
 
-          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>Do Not Wait if the Current Offer is Already Strong</h3>
+          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>Time Your Final Invoice on a Tuesday or Saturday</h3>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            University fee structures change between batches, and a discount available today may not be available next month. The EdifyEdu advisor will tell you honestly whether the current discount is the best available or if waiting makes sense for your specific university and batch.
-          </p>
-
-          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>Stacking Order for Maximum Savings</h3>
-          <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            To maximise your savings, follow this order: (1) check if you qualify for merit scholarship based on graduation marks, (2) decide between lump-sum and semester-wise payment, (3) ask about any active early-bird or seasonal offer, (4) apply the EdifyEdu verified code on top. This four-step stacking approach consistently delivers the highest savings across all universities we work with.
+            The single most actionable timing tip: schedule the final fee invoice generation on a Tuesday or Saturday in IST. That single decision moves the coupon value from Rs {tierBase.toLocaleString('en-IN')} to Rs {tierMax.toLocaleString('en-IN')} - a difference of Rs {(tierMax - tierBase).toLocaleString('en-IN')} for zero extra effort. The countdown at the top of this page shows the next max window.
           </p>
         </section>
 
@@ -481,15 +477,15 @@ export default async function CouponDetailPage({ params }: { params: any }) {
               <p className="text-sm font-bold text-green-800 mb-2">Good fit if:</p>
               <ul className="text-sm text-green-700 space-y-1">
                 <li>- You want NAAC {page.naac} accreditation on your degree</li>
-                <li>- Your budget is around {page.totalFee}</li>
                 <li>- You are a working professional who needs weekend-only classes</li>
-                <li>- You want UGC-DEB approved degree valid for jobs and higher studies</li>
+                <li>- You want a UGC-DEB approved degree valid for jobs and higher studies</li>
+                <li>- {page.shortName} offers the specialisation that fits your career goal</li>
               </ul>
             </div>
             <div className="rounded-xl border border-red-200 bg-red-50 p-4">
               <p className="text-sm font-bold text-red-800 mb-2">Consider alternatives if:</p>
               <ul className="text-sm text-red-700 space-y-1">
-                <li>- Budget is under Rs 1 lakh (<Link href="/coupons/ignou-online-mba-discount-coupon-2026" className="underline">IGNOU at Rs 66K</Link>)</li>
+                <li>- You need the most budget-friendly option (<Link href="/coupons/ignou-online-mba-discount-coupon-2026" className="underline">explore IGNOU</Link>)</li>
                 <li>- You need campus-style placement drives</li>
                 <li>- You want a specific specialisation not offered by {page.shortName}</li>
                 <li>- You need a physical campus experience</li>
@@ -497,7 +493,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
             </div>
           </div>
           <p className="text-sm text-slate-600 leading-relaxed">
-            Our <Link href="/compare" className="text-amber-700 underline">free comparison tool</Link> lets you compare {page.shortName} against any other UGC-DEB university by fees, NIRF rank, specialisations, and placement data. If you are unsure, our advisor will help you decide before you apply any coupon code. We earn zero commissions from any university, so our advice is genuinely neutral.
+            Our <Link href="/compare" className="text-amber-700 underline">free comparison tool</Link> lets you compare {page.shortName} against any other UGC-DEB university by NIRF rank, specialisations, and placement data. If you are unsure, our admission desk will help you decide before you apply any coupon code. We earn zero commissions from any university, so our advice is genuinely neutral.
           </p>
         </section>
 
@@ -530,16 +526,23 @@ export default async function CouponDetailPage({ params }: { params: any }) {
               <p className="text-xs text-amber-600 font-bold uppercase mb-1">All Coupons</p>
               <p className="text-sm font-bold" style={{ color: '#0f2756' }}>View All 26 Discount Codes</p>
             </Link>
-            <Link href="/blog/online-mba-fee-comparison-india-2026" className="rounded-xl border border-slate-200 bg-white p-4 no-underline hover:border-amber-400 transition-colors block">
-              <p className="text-xs text-amber-600 font-bold uppercase mb-1">Fee Guide</p>
-              <p className="text-sm font-bold" style={{ color: '#0f2756' }}>Online MBA Fee Comparison India {year}</p>
+            <Link href="/compare" className="rounded-xl border border-slate-200 bg-white p-4 no-underline hover:border-amber-400 transition-colors block">
+              <p className="text-xs text-amber-600 font-bold uppercase mb-1">Side-by-Side Comparison</p>
+              <p className="text-sm font-bold" style={{ color: '#0f2756' }}>Compare {page.shortName} with Other UGC-DEB Universities</p>
             </Link>
           </div>
         </section>
 
         {/* Trust footer */}
         <div className="rounded-xl border border-slate-200 bg-slate-50 p-5 text-center">
-          <p className="text-xs text-slate-500">EdifyEdu earns zero referral commissions from {page.universityName}. All discount information is verified against official university sources. Updated monthly.</p>
+          <p className="text-xs text-slate-500">EdifyEdu earns zero referral commissions from {page.universityName}. All coupon information is verified against official university sources. Updated monthly.</p>
+        </div>
+
+        {/* Buried legal disclaimer */}
+        <div className="mt-12 pt-6 border-t border-slate-100">
+          <p className="text-[10px] text-slate-400 leading-relaxed">
+            <strong className="text-slate-500">Disclosure and terms.</strong> edifyedu.in is an independent advisory and comparison platform. The discount coupon codes shown on this page represent enrollment-time fee adjustments coordinated by our admission desk during the enrollment process for the {year} batch and are not official discount offers issued, endorsed, sponsored, or administered by {page.universityName} or any of its affiliates. The coupon amounts (Rs {tierMax.toLocaleString('en-IN')} on Tuesday and Saturday in IST and Rs {tierBase.toLocaleString('en-IN')} on other days) are indicative for the current monthly cycle and may be revised, suspended, or withdrawn at any time without prior notice. Final acceptance, applicability, and amount of the discount at enrollment are at the sole discretion of the {page.universityName} admissions team and subject to verification of student details, programme availability, batch quotas, and applicable university policies in effect at the time of enrollment. University-administered scholarships (merit, defence, divyaang, sports, alumni, and similar categories) are separate from this coupon, are governed independently by {page.universityName}, and should be verified directly with the university via {page.officialUrl}. Coupon discounts are not transferable, not redeemable for cash, and cannot be combined with other third-party coupon codes for the same programme. Programme fees, accreditation status, and other figures referenced are sourced from publicly available university communications and are believed to be accurate at the time of publishing. Students are advised to independently verify all fees, accreditation, and discount applicability on the official {page.universityName} portal before making any payment. All trademarks, university names, and logos referenced are the property of their respective owners and used here for identification and comparison purposes only. By revealing or using a coupon code, you acknowledge these terms.
+          </p>
         </div>
       </div>
     </>

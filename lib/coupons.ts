@@ -1,13 +1,15 @@
-// lib/coupons.ts — Per-university enrollment-bonus catalogue.
+// lib/coupons.ts — Per-university online MBA discount-coupon catalogue.
 //
-// Bonus tiers (all amounts in INR, paid as fee adjustment at enrollment via edifyedu.in):
-//   premium  → Rs 7,500 on Tue/Sat (IST), Rs 5,000 on other days
-//   standard → Rs 5,000 on Tue/Sat (IST), Rs 4,000 on other days
-//   budget   → Rs 4,000 on Tue/Sat (IST), Rs 3,000 on other days
+// Flat coupon rate (all amounts in INR, applied as a fee adjustment during
+// counsellor-assisted enrolment):
+//   Tuesday and Saturday (IST) → up to Rs 5,000 off
+//   Other 5 days (IST)          → up to Rs 4,000 off
 //
 // The Tue/Sat "max window" creates a recurring scarcity signal across the
-// /coupons hub and per-university pages. getTodaysBonus(tier) is the single
-// source of truth for the live amount — never hard-code Rs 10,000 anywhere.
+// /coupons hub and per-university pages. The Tier type is kept for future
+// flexibility (e.g. premium universities running larger campaigns), but all
+// three tiers currently point to the same {max:5000, base:4000} values.
+// getTodaysBonus(tier) is the single source of truth for the live amount.
 
 export type Tier = 'premium' | 'standard' | 'budget'
 
@@ -24,15 +26,15 @@ export type Coupon = {
 }
 
 export const TIER_AMOUNTS: Record<Tier, { max: number; base: number }> = {
-  premium:  { max: 7500, base: 5000 },
+  premium:  { max: 5000, base: 4000 },
   standard: { max: 5000, base: 4000 },
-  budget:   { max: 4000, base: 3000 },
+  budget:   { max: 5000, base: 4000 },
 }
 
 export const TIER_SAVINGS_LABEL: Record<Tier, string> = {
-  premium:  'edifyedu.in Enrollment Bonus: up to Rs 7,500 (Tue/Sat)',
-  standard: 'edifyedu.in Enrollment Bonus: up to Rs 5,000 (Tue/Sat)',
-  budget:   'edifyedu.in Enrollment Bonus: up to Rs 4,000 (Tue/Sat)',
+  premium:  'Verified Coupon: up to Rs 5,000 off (Tue/Sat IST)',
+  standard: 'Verified Coupon: up to Rs 5,000 off (Tue/Sat IST)',
+  budget:   'Verified Coupon: up to Rs 5,000 off (Tue/Sat IST)',
 }
 
 export const COUPONS: Coupon[] = [
