@@ -232,11 +232,14 @@ function buildInlineFigureJSON(d) {
 // ─── Patch a block ──────────────────────────────────────────────────────────
 
 function patchBlockSingle(block, heroData, inlineData) {
+  // Match BOTH `status: 'published',` and `status: 'published' as const,`
   let out = block.replace(
-    /^(    status: '(?:published|draft)',)\n/m,
+    /^(    status: '(?:published|draft)'(?:\s+as\s+const)?,)\n/m,
     `$1\n${buildHeroLinesSingle(heroData)}\n`
   )
   out = out.replace(/^(    content: `)([\s\S]*?)(`,?\s*\n  \},?)/m, (_, before, content, after) => {
+    // Skip inline injection if a Pexels figure was already injected previously
+    if (content.includes('images.pexels.com')) return before + content + after
     const h2 = [...content.matchAll(/<h2[^>]*>[\s\S]*?<\/h2>/gi)]
     let at
     if (h2.length >= 2)       at = h2[1].index + h2[1][0].length
@@ -252,10 +255,8 @@ function patchBlockJSON(block, heroData, inlineData) {
     /^(  "status":\s*"(?:published|draft)",)\n/m,
     `$1\n${buildHeroLinesJSON(heroData)}\n`
   )
-  // content value is a JSON string. Find it and inject after the 2nd </h2> (in the escaped string).
   out = out.replace(/^(  "content":\s*")((?:[^"\\]|\\.)*)("(?:,\s*\n  \},?|\s*\n  \},?))/m, (_, before, content, after) => {
-    // content here is the raw escaped string (still contains \" and \n as 2-char sequences)
-    // Find </h2> occurrences in the literal string.
+    if (content.includes('images.pexels.com')) return before + content + after
     const re = /<\/h2>/gi
     const positions = []
     let m
