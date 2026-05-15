@@ -7,9 +7,10 @@ import Link from 'next/link'
 import {
   ArrowLeft, Copy, CheckCircle, Save, Eye, FileText,
   Bold, Italic, List, Heading2, Quote, Link2, Code,
-  Plus, Trash2, Tag, Clock, Hash
+  Plus, Trash2, Tag, Clock, Hash, Image as ImageIcon
 } from 'lucide-react'
 import type { BlogPost } from '@/lib/blog'
+import PexelsPicker from '@/components/admin/PexelsPicker'
 
 /* ── CATEGORIES & HELPERS ─────────────────────────────────────────── */
 const CATEGORIES = [
@@ -80,6 +81,10 @@ export default function BlogWritePage() {
   const [aiGenerating, setAiGenerating] = useState(false)
   const [aiLog, setAiLog] = useState('')
   const [saved, setSaved] = useState(false)
+  const [heroImage, setHeroImage] = useState('')
+  const [heroAttribution, setHeroAttribution] = useState('')
+  const [heroAlt, setHeroAlt] = useState('')
+  const [pexelsOpen, setPexelsOpen] = useState(false)
 
   // Auto-generate slug from title
   function handleTitleChange(val: string) {
@@ -105,6 +110,10 @@ export default function BlogWritePage() {
       status,
     }
 
+    const heroLines = heroImage
+      ? `    heroImage: '${heroImage.replace(/'/g, "\\'")}',\n    heroImageAttribution: \`${heroAttribution.replace(/`/g, '\\`')}\`,\n    heroImageAlt: '${heroAlt.replace(/'/g, "\\'")}',\n`
+      : ''
+
     const code = `  {
     slug: '${post.slug}',
     title: '${post.title.replace(/'/g, "\\'")}',
@@ -116,7 +125,7 @@ export default function BlogWritePage() {
     targetKeyword: '${post.targetKeyword}',
     relatedUniversities: [],
     status: '${post.status}',
-    faqs: [\n${post.faqs.map(f => `      { q: '${f.q.replace(/'/g, "\\'")}', a: '${f.a.replace(/'/g, "\\'")}' }`).join(',\n')}\n    ],
+${heroLines}    faqs: [\n${post.faqs.map(f => `      { q: '${f.q.replace(/'/g, "\\'")}', a: '${f.a.replace(/'/g, "\\'")}' }`).join(',\n')}\n    ],
     content: \`\n${post.content}\n    \`,
   },`
 
@@ -217,6 +226,22 @@ export default function BlogWritePage() {
                   <h1 style={{ fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 800, color: 'var(--ink)', lineHeight: 1.25, marginBottom: 12 }}>{title || 'Your Title Here'}</h1>
                   <p style={{ fontSize: 14, color: 'var(--ink-3)', lineHeight: 1.7, marginBottom: 16 }}>{metaDesc || 'Meta description preview...'}</p>
                   <div style={{ fontSize: 12, color: 'var(--ink-4)', marginBottom: 24 }}>⏱ {readTime} min read · {wordCount} words</div>
+                  {heroImage && (
+                    <figure style={{ margin: '0 0 20px 0' }}>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={heroImage}
+                        alt={heroAlt || title || 'Hero image'}
+                        style={{ width: '100%', aspectRatio: '1200 / 630', objectFit: 'cover', borderRadius: 12, border: '1px solid #E2E8F4' }}
+                      />
+                      {heroAttribution && (
+                        <figcaption
+                          style={{ fontSize: 11, color: '#64788A', marginTop: 6, textAlign: 'center' }}
+                          dangerouslySetInnerHTML={{ __html: heroAttribution }}
+                        />
+                      )}
+                    </figure>
+                  )}
                   <div
                     style={{ fontSize: 15, color: 'var(--ink-2)', lineHeight: 1.8 }}
                     dangerouslySetInnerHTML={{ __html: content || '<p style="color:#94a3b8">Your content will appear here...</p>' }}
@@ -275,6 +300,60 @@ export default function BlogWritePage() {
                   <div style={{ marginTop: 6, fontSize: 11, color: 'var(--ink-4)' }}>
                     💡 Start with the primary keyword. E.g. &quot;Compare online MBA fees at NMIMS, Manipal and LPU. Honest 2025 guide with salary data and real reviews.&quot;
                   </div>
+                </div>
+
+                {/* Hero Image */}
+                <div className="bg-white border border-border rounded-2xl p-5">
+                  <label style={{ fontSize: 11, fontWeight: 700, color: 'var(--amber-text)', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: 8 }}>
+                    Hero Image
+                  </label>
+                  <div style={{ display: 'flex', gap: 10, alignItems: 'flex-start' }}>
+                    {heroImage && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={heroImage}
+                        alt={heroAlt || 'Hero preview'}
+                        style={{ width: 80, height: 80, objectFit: 'cover', borderRadius: 8, border: '1px solid #E2E8F4', flexShrink: 0 }}
+                      />
+                    )}
+                    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 8 }}>
+                      <div style={{ display: 'flex', gap: 8 }}>
+                        <input
+                          value={heroImage}
+                          onChange={e => setHeroImage(e.target.value)}
+                          placeholder="https://images.pexels.com/photos/... (or any image URL)"
+                          style={{ flex: 1, padding: '10px 12px', borderRadius: 10, border: '1px solid #E2E8F4', fontSize: 13, color: 'var(--ink)', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }}
+                        />
+                        <button
+                          type="button"
+                          onClick={() => setPexelsOpen(true)}
+                          style={{ padding: '10px 14px', borderRadius: 10, background: 'linear-gradient(135deg,#c9922a,#e0a93a)', color: '#fff', fontSize: 12, fontWeight: 700, border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6, whiteSpace: 'nowrap' }}>
+                          <ImageIcon size={14} /> Search Pexels
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <label style={{ fontSize: 11, fontWeight: 700, color: 'var(--ink-3)', display: 'block', marginTop: 14, marginBottom: 6 }}>
+                    Image Attribution (HTML)
+                  </label>
+                  <textarea
+                    value={heroAttribution}
+                    onChange={e => setHeroAttribution(e.target.value)}
+                    rows={2}
+                    placeholder='Auto-filled when you pick from Pexels. E.g. Photo by <a href="...">Name</a> on <a href="https://pexels.com">Pexels</a>'
+                    style={{ width: '100%', padding: '8px 12px', borderRadius: 10, border: '1px solid #E2E8F4', fontSize: 12, color: 'var(--ink-2)', outline: 'none', fontFamily: 'monospace', resize: 'vertical', lineHeight: 1.6, boxSizing: 'border-box' }}
+                  />
+
+                  <label style={{ fontSize: 11, fontWeight: 700, color: 'var(--ink-3)', display: 'block', marginTop: 12, marginBottom: 6 }}>
+                    Image Alt Text
+                  </label>
+                  <input
+                    value={heroAlt}
+                    onChange={e => setHeroAlt(e.target.value)}
+                    placeholder="Describe the image for screen readers and SEO"
+                    style={{ width: '100%', padding: '8px 12px', borderRadius: 10, border: '1px solid #E2E8F4', fontSize: 13, color: 'var(--ink)', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }}
+                  />
                 </div>
 
                 {/* Content Editor */}
@@ -468,6 +547,17 @@ export default function BlogWritePage() {
           </div>
         </div>
       </div>
+
+      <PexelsPicker
+        open={pexelsOpen}
+        onClose={() => setPexelsOpen(false)}
+        initialQuery={targetKeyword || title}
+        onSelect={({ url, attribution, alt }) => {
+          setHeroImage(url)
+          setHeroAttribution(attribution)
+          setHeroAlt(alt)
+        }}
+      />
     </div>
   )
 }

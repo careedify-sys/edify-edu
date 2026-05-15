@@ -12,6 +12,7 @@ const nextConfig = {
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'edifyedu.in' },
+      { protocol: 'https', hostname: 'images.pexels.com' },
     ],
     formats: ['image/avif', 'image/webp'],
     // Most university logos are SVG. Next/image refuses SVG sources unless

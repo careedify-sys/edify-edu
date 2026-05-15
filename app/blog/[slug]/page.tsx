@@ -1,5 +1,6 @@
 import { notFound, permanentRedirect } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Metadata, ResolvingMetadata } from 'next'
 import { Clock, Calendar, ChevronRight, Hash, BookOpen } from 'lucide-react'
 import { getBlogPost, getPublishedPosts } from '@/lib/blog'
@@ -69,6 +70,8 @@ export async function generateMetadata(
   }
 
   const previousImages = (await parent).openGraph?.images || []
+  const heroImage = post.heroImage || ''
+  const heroAlt = post.heroImageAlt || post.title
 
   return {
     title: { absolute: post.seoTitle || post.title },
@@ -83,7 +86,9 @@ export async function generateMetadata(
       modifiedTime: post.publishedAt,
       authors: [post.author || 'Rishi Kumar'],
       images: [
-        { url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: post.title },
+        heroImage
+          ? { url: heroImage, width: 1200, height: 630, alt: heroAlt }
+          : { url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: post.title },
         ...previousImages,
       ],
     },
@@ -91,7 +96,7 @@ export async function generateMetadata(
       card: 'summary_large_image',
       title: post.title,
       description: post.metaDescription,
-      images: ['https://edifyedu.in/og.webp'],
+      images: [heroImage || 'https://edifyedu.in/og.webp'],
     },
     alternates: {
       canonical: `https://edifyedu.in/blog/${post.slug}`,
@@ -158,7 +163,7 @@ export default async function BlogPostPage({ params }: Props) {
     dateModified: post.publishedAt,
     image: {
       '@type': 'ImageObject',
-      url: 'https://edifyedu.in/og.webp',
+      url: post.heroImage || 'https://edifyedu.in/og.webp',
       width: 1200,
       height: 630,
     },
@@ -338,6 +343,33 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           </div>
         </div>
+
+        {/* ── Hero image (optional, from CMS) ───────────────────────────── */}
+        {post.heroImage && (
+          <div className="bg-white">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-6">
+              <figure className="m-0">
+                <div className="relative w-full overflow-hidden rounded-2xl border border-border" style={{ aspectRatio: '1200 / 630' }}>
+                  <Image
+                    src={post.heroImage}
+                    alt={post.heroImageAlt || post.title}
+                    width={1200}
+                    height={630}
+                    sizes="(max-width: 768px) 100vw, 896px"
+                    priority
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {post.heroImageAttribution && (
+                  <figcaption
+                    className="text-xs text-gray-500 mt-2 max-w-3xl mx-auto text-center"
+                    dangerouslySetInnerHTML={{ __html: post.heroImageAttribution }}
+                  />
+                )}
+              </figure>
+            </div>
+          </div>
+        )}
 
         {/* ── Main content area ─────────────────────────────────────────── */}
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
