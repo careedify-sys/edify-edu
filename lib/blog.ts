@@ -2885,13 +2885,13 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: '1-year-mba-india-executive-mba-2026',
     title: '1 Year MBA India 2026: The Degree vs Diploma Distinction and Real Tier Picker',
     seoTitle: '1 Year MBA India 2026: PGPX vs PGP vs Online, Real Tier Picker | Edify',
-    metaDescription: '1 year MBA India 2026: IIMA PGPX Rs 35L, ISB Rs 38L, IIMB EPGP Rs 33.71L, BITS WILP Rs 3.5L, online MBA Rs 2L alternative. Degree vs diploma.',
+    metaDescription: '1 year MBA India 2026: IIMA PGPX Rs 35L, ISB Rs 38L, IIMB EPGP Rs 33.71L, BITS WILP Rs 3.5L, JGU 1-year online MBA Rs 2L (AACSB, IoE).',
     category: 'MBA Guides',
     tags: ['1 year MBA', 'executive MBA', 'MBA for working professionals', 'IIM executive MBA'],
     publishedAt: '2026-04-04',
     readTime: 7,
     targetKeyword: '1 year mba india',
-    relatedUniversities: ['nmims-online', 'symbiosis-university-online'],
+    relatedUniversities: ['nmims-online', 'symbiosis-university-online', 'op-jindal-global-university-online'],
     status: 'published' as const,
     heroImage: 'https://images.pexels.com/photos/4308099/pexels-photo-4308099.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@ketut-subiyanto" target="_blank" rel="noopener nofollow">Ketut Subiyanto</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
@@ -2911,7 +2911,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Written for: senior professionals 5-plus years into career evaluating IIM PGPX or ISB PGP, mid-career professionals weighing executive MBA tier, working professionals confused by online MBA marketing as "fast-track".</p>
 
-<div class="callout-key"><strong>One-line frame for 1-year MBA India 2026:</strong> Real 1-year MBAs are premium residential at IIM A PGPX, IIM B EPGP, ISB PGP, XLRI 1-year EMBA. All cost Rs 30 lakh-plus and require 5-plus years of work experience. For working professionals not ready for that investment, 2-year online MBA from NAAC A+ university (Rs 2 lakh) is the practical alternative.</div>
+<div class="callout-key"><strong>One-line frame for 1-year MBA India 2026:</strong> Real 1-year residential MBAs are premium at IIM A PGPX, IIM B EPGP, ISB PGP, XLRI 1-year EMBA, all costing Rs 30 lakh-plus and requiring 5-plus years of work experience. The only 1-year fully online UGC-recognised MBA is O.P. Jindal Global University (Rs 2 lakh, AACSB accredited, Institution of Eminence). For working professionals not chasing IIM brand, 2-year online MBAs from NAAC A+ universities (Rs 2 lakh) are the practical alternative.</div>
 
 <h2>What "1 Year MBA" Actually Means in India 2026</h2>
 
@@ -2944,6 +2944,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>1-year EMBA</td><td>XLRI Jamshedpur</td><td>Rs 27 to 30 lakh</td><td>1 year</td><td>5-plus years</td><td>Fully residential</td></tr>
     <tr><td>PGCM</td><td>MICA Ahmedabad</td><td>Rs 13 to 16 lakh</td><td>15 months</td><td>3-plus years</td><td>Blended</td></tr>
     <tr><td>WILP MBA</td><td>BITS Pilani</td><td>Rs 3.5 to 5 lakh</td><td>2 years (not 1)</td><td>Must be employed</td><td>Work-integrated weekends</td></tr>
+    <tr><td>1-Year Online MBA</td><td><a href="/universities/op-jindal-global-university-online" class="ilink">O.P. Jindal Global University</a></td><td>Rs 2,00,000 (EMI from Rs 6,319/mo)</td><td>1 year</td><td>None (graduation 50%)</td><td>Fully online live</td></tr>
   </tbody>
 </table>
 
@@ -2985,6 +2986,43 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Format:</strong> Weekend live sessions plus self-paced study. Designed for tech, engineering, and management professionals in full-time roles.</li>
   <li><strong>Best for:</strong> Mid-career professionals at IT services, manufacturing, BFSI tech wanting strong brand without IIM-tier fees.</li>
 </ul>
+
+<h2>O.P. Jindal Global 1-Year Online MBA: The Only 1-Year Fully Online Option</h2>
+
+<div class="callout-key"><strong>India's only 1-year fully online UGC-recognised MBA.</strong> O.P. Jindal Global University (JGU) Sonipat is the single Indian university offering a complete 12-month online MBA with degree (not diploma) status. AACSB accredited, Institution of Eminence, NAAC A, QS 5 Star rated. Total fee Rs 2,00,000.</div>
+
+<p>This is the structural gap-filler in the 1-year MBA market. Every other 1-year programme above is residential, requires 4 to 5 years of work experience, and costs Rs 25 to 45 lakh. JGU offers a 12-month online MBA at Rs 2 lakh, with no work-experience requirement, and the degree carries the same brand weight as the on-campus programme (Institution of Eminence + AACSB accreditation places JGU's business school in the top 5% globally).</p>
+
+<p>Verify the live programme details at <a href="https://jgu.edu.in" target="_blank" rel="noopener">jgu.edu.in</a> and the current Edify university page at <a href="/universities/op-jindal-global-university-online" class="ilink">edifyedu.in/universities/op-jindal-global-university-online</a>.</p>
+
+<table>
+  <caption>O.P. Jindal Global Online MBA 2026 (data from edifyedu.in live records)</caption>
+  <tbody>
+    <tr><th>Programme</th><td>1-Year Online MBA (12 months)</td></tr>
+    <tr><th>University</th><td>O.P. Jindal Global University, Sonipat, Haryana</td></tr>
+    <tr><th>Total fee</th><td>Rs 2,00,000 (indicative). EMI from Rs 6,319/month.</td></tr>
+    <tr><th>Accreditation</th><td>UGC Recognised, NAAC A, AACSB Accredited, Institution of Eminence (MoE), QS 5 Star.</td></tr>
+    <tr><th>Eligibility</th><td>Graduation with 50% marks from a recognised university. No mandatory work experience.</td></tr>
+    <tr><th>Specialisations</th><td>Finance, Human Resource Management, Marketing, Strategy & Leadership, Supply Chain & Operations Management, AI for Business, Digital Finance.</td></tr>
+    <tr><th>Delivery</th><td>Fully online with live sessions plus recorded lectures. Capstone project and Global Immersion Programme included.</td></tr>
+    <tr><th>Career outcomes</th><td>Roles include Strategy Consultant, Business Manager, Product Manager, Finance Manager, Marketing Manager. Average salary range Rs 8 to 25 LPA. Companies hiring JGU alumni include McKinsey, BCG, Deloitte, Amazon, Google, HDFC Bank, Reliance.</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Why JGU sits between the 1-year residential tier and the 2-year online tier:</strong></p>
+<ul>
+  <li>Same 12-month duration as IIM PGPX/EPGP, ISB PGP, XLRI 1-year EMBA.</li>
+  <li>Same online-degree model as NMIMS, JAIN, Amity, MUJ. But all those are 2-year programmes.</li>
+  <li>One-tenth the cost of IIM residential 1-year programmes (Rs 2L vs Rs 30 to 45L).</li>
+  <li>AACSB accreditation places JGU's business school globally on par with top international B-schools, an accreditation no other Indian online MBA currently holds.</li>
+  <li>No work experience requirement, unlike all IIM 1-year programmes which need 4 to 5-plus years.</li>
+</ul>
+
+<p><strong>Best for:</strong> Career switchers wanting an accelerated MBA without quitting work, entrepreneurs needing a globally recognised credential fast, working professionals wanting AACSB on the degree without IIM-tier fees, candidates with less than 4 years of experience locked out of IIM 1-year programmes.</p>
+
+<p><strong>Not for:</strong> Candidates needing campus placement drives, those who specifically want the 2-year MBA pace, professionals targeting IIM brand exclusively.</p>
+
+<div class="callout-warning"><strong>Verify before applying:</strong> Fees and intake dates change every cycle. Confirm the current 2026-27 intake fee, scholarship windows, and specialisation availability directly on the JGU online admissions portal before payment.</div>
 
 <h2>Is 1-Year MBA Worth the Rs 25 to 45 Lakh Investment?</h2>
 
@@ -3039,6 +3077,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td><a href="/universities/amity-university-online" class="ilink">Amity University Online</a></td><td>A+</td><td>49</td><td>Rs 2.07L to 2.25L</td></tr>
     <tr><td><a href="/universities/manipal-university-jaipur-online" class="ilink">Manipal University Jaipur Online</a></td><td>A+</td><td>81</td><td>Rs 1.53L to 1.80L</td></tr>
     <tr><td><a href="/universities/chandigarh-university-online" class="ilink">Chandigarh University Online</a></td><td>A+</td><td>32</td><td>Rs 1.65L to 2.20L</td></tr>
+    <tr><td><a href="/universities/op-jindal-global-university-online" class="ilink">O.P. Jindal Global Online (1 year)</a></td><td>A</td><td>IoE · AACSB</td><td>Rs 2,00,000</td></tr>
   </tbody>
 </table>
 
