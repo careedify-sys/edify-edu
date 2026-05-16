@@ -21,6 +21,8 @@ import { COUPON_PAGE_SLUGS } from '@/lib/coupon-pages'
 import EnquiryModal from '@/components/EnquiryModal'
 import CouponCountdown from '@/components/CouponCountdown'
 import CouponScarcityBanner from '@/components/CouponScarcityBanner'
+import CouponsHubTopCta from '@/components/coupons/CouponsHubTopCta'
+import CouponsHubBottomCta from '@/components/coupons/CouponsHubBottomCta'
 import { COUPONS_HUB_FAQS } from './faqs'
 
 const COUNSELLOR_TEL = '+917061285806'
@@ -447,6 +449,9 @@ export default function CouponsPage() {
         </div>
       </section>
 
+      {/* ── CTA #1 — Top decision helper (above coupon listings) ─────────── */}
+      <CouponsHubTopCta />
+
       {/* ── Filter tabs + Grid ────────────────────────────────────────────── */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
 
@@ -486,6 +491,9 @@ export default function CouponsPage() {
             ))}
           </div>
         )}
+
+        {/* CTA #2 — Bottom lead form (after listings, before footer trust block) */}
+        <CouponsHubBottomCta />
 
         {/* Footer trust block */}
         <div className="mt-12 bg-slate-50 border border-slate-200 rounded-2xl px-6 py-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
