@@ -5,7 +5,19 @@ import { CheckCircle2, Send, MessageCircle } from 'lucide-react'
 
 const PROGRAMS = ['Online MBA', 'Online MCA', 'Online BBA', 'Online BCA', 'Other Courses']
 
-export default function BlogLeadForm({ title, desc }: { title?: string; desc?: string }) {
+export default function BlogLeadForm({
+  title,
+  desc,
+  submitLabel,
+  source,
+}: {
+  title?: string
+  desc?: string
+  /** Custom submit button label. Defaults to "Connect with an Advisor". */
+  submitLabel?: string
+  /** Analytics source tag. Defaults to "blog_lead_form". */
+  source?: string
+}) {
   const uid = useId()
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle')
   const [form, setForm] = useState({ name: '', phone: '', program: '' })
@@ -24,7 +36,7 @@ export default function BlogLeadForm({ title, desc }: { title?: string; desc?: s
           phone: form.phone,
           program: form.program,
           sourcePage: typeof window !== 'undefined' ? window.location.pathname : 'blog',
-          source: 'blog_lead_form',
+          source: source || 'blog_lead_form',
         }),
       })
     } catch {
@@ -124,7 +136,7 @@ export default function BlogLeadForm({ title, desc }: { title?: string; desc?: s
               <span className="w-5 h-5 border-2 border-navy/30 border-t-navy rounded-full animate-spin" />
             ) : (
               <>
-                Connect with an Advisor
+                {submitLabel || 'Connect with an Advisor'}
                 <Send size={18} className="group-hover:translate-x-1 transition-transform" />
               </>
             )}

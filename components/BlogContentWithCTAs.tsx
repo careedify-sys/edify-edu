@@ -2,11 +2,14 @@
 
 import { useState } from 'react'
 import BlogCTACard from './BlogCTACard'
+import MujMidArticle from './muj/MujMidArticle'
 
 type Variant = 'compare' | 'counsel' | 'verify' | 'shortlist'
+type MidVariant = 'muj-verdict-mid'
 
 const CTA_TOKEN_RE = /<div class="blog-cta-spot" data-variant="(\w+)"><\/div>/g
 const CTA_BOX_RE = /<div class="cta-box"[\s\S]*?<\/div>/g
+const MID_CTA_RE = /<div class="blog-mid-cta-spot" data-variant="([\w-]+)"><\/div>/g
 
 function InlineLeadForm() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'done'>('idle')
@@ -116,12 +119,20 @@ function InlineLeadForm() {
 
 export default function BlogContentWithCTAs({ html }: { html: string }) {
   // Split HTML at CTA tokens AND cta-box divs
-  type Part = { type: 'html' | 'cta' | 'inline-form'; content: string; variant?: Variant }
+  type Part = {
+    type: 'html' | 'cta' | 'inline-form' | 'mid-cta'
+    content: string
+    variant?: Variant
+    midVariant?: MidVariant
+  }
   const parts: Part[] = []
   let lastIndex = 0
 
-  // Combine both patterns
-  const combined = new RegExp(`${CTA_TOKEN_RE.source}|${CTA_BOX_RE.source}`, 'g')
+  // Combine all three patterns: blog-cta-spot tokens, cta-box divs, mid-cta tokens
+  const combined = new RegExp(
+    `${CTA_TOKEN_RE.source}|${CTA_BOX_RE.source}|${MID_CTA_RE.source}`,
+    'g'
+  )
   let match: RegExpExecArray | null
 
   while ((match = combined.exec(html)) !== null) {
@@ -129,8 +140,11 @@ export default function BlogContentWithCTAs({ html }: { html: string }) {
       parts.push({ type: 'html', content: html.slice(lastIndex, match.index) })
     }
     if (match[1]) {
-      // blog-cta-spot token
+      // blog-cta-spot token (existing variants)
       parts.push({ type: 'cta', content: '', variant: match[1] as Variant })
+    } else if (match[2]) {
+      // blog-mid-cta-spot token (slug-conditional mid-article CTAs)
+      parts.push({ type: 'mid-cta', content: '', midVariant: match[2] as MidVariant })
     } else {
       // cta-box div — replace with inline form
       parts.push({ type: 'inline-form', content: '' })
@@ -153,6 +167,8 @@ export default function BlogContentWithCTAs({ html }: { html: string }) {
           <div key={i} dangerouslySetInnerHTML={{ __html: part.content }} />
         ) : part.type === 'inline-form' ? (
           <InlineLeadForm key={i} />
+        ) : part.type === 'mid-cta' ? (
+          part.midVariant === 'muj-verdict-mid' ? <MujMidArticle key={i} /> : null
         ) : (
           <BlogCTACard key={i} variant={part.variant || 'counsel'} />
         )

@@ -2,6 +2,8 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { ChevronRight, GraduationCap, CheckCircle, BookOpen, ArrowRightLeft } from 'lucide-react'
+import EnquiryModal from '@/components/EnquiryModal'
+import BlogLeadForm from '@/components/BlogLeadForm'
 
 // CGPA → Percentage: multiply by 9.5 (standard UGC / Anna University / most Indian universities)
 // Percentage → CGPA: divide by 9.5
@@ -48,6 +50,8 @@ export default function CgpaCalculatorClient() {
   const [tab, setTab] = useState<'cgpa_to_pct' | 'pct_to_cgpa'>('cgpa_to_pct')
   // Table visible
   const [tableVisible, setTableVisible] = useState(false)
+  // Counsellor modal (triggered from post-result CTA when score is below 50%)
+  const [counsellorOpen, setCounsellorOpen] = useState(false)
 
   const cgpaVal = parseFloat(cgpaInput)
   const pctVal  = parseFloat(pctInput)
@@ -103,6 +107,30 @@ export default function CgpaCalculatorClient() {
             Trusted by students at Anna University, VTU, Mumbai University, and 800+ Indian universities.
           </p>
         </div>
+
+        {/* ── CTA #1 — PRE-CALCULATOR TRUST BANNER ───────────────────────── */}
+        <Link
+          href="/compare"
+          data-cta="cgpa_pre_calc_banner"
+          className="block mb-6 rounded-2xl no-underline transition-opacity hover:opacity-95"
+          style={{
+            background: 'linear-gradient(135deg,#0B1D35 0%,#142540 100%)',
+            border: '1px solid rgba(212,146,42,0.25)',
+            boxShadow: '0 4px 20px rgba(11,29,53,0.12)',
+          }}
+        >
+          <div className="flex items-center gap-3 px-4 py-3 sm:px-5 sm:py-4">
+            <div className="text-2xl shrink-0 leading-none">📊</div>
+            <div className="min-w-0 flex-1">
+              <div className="text-sm leading-snug" style={{ color: 'rgba(255,255,255,0.92)' }}>
+                Most online MBA &amp; MCA programs in India require <strong style={{ color: '#fff' }}>50% aggregate</strong> (45% for reserved category). Not sure if your CGPA qualifies?{' '}
+                <span className="font-bold whitespace-nowrap" style={{ color: '#e0a93a' }}>
+                  Compare 125+ UGC-DEB approved online universities →
+                </span>
+              </div>
+            </div>
+          </div>
+        </Link>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Calculator Card */}
@@ -276,6 +304,98 @@ export default function CgpaCalculatorClient() {
             </div>
           </div>
         </div>
+
+        {/* ── CTA #2 — POST-RESULT CONDITIONAL BLOCK ─────────────────────── */}
+        {resultPct != null && (
+          <div
+            key={`cta-${resultPct >= 50 ? 'qualifies' : 'low'}-${resultPct}`}
+            className="mt-8 animate-in fade-in slide-in-from-bottom-4 duration-500"
+          >
+            {resultPct >= 50 ? (
+              <div
+                className="rounded-2xl p-6 sm:p-8"
+                style={{
+                  background: 'linear-gradient(135deg, rgba(31,107,82,0.06), rgba(212,146,42,0.07))',
+                  border: '1px solid rgba(31,107,82,0.2)',
+                }}
+              >
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="text-3xl shrink-0 leading-none mt-0.5">✅</div>
+                  <div>
+                    <h2 className="font-display text-xl sm:text-2xl font-bold text-navy mb-2 leading-tight">
+                      Your CGPA qualifies you for India's top online universities
+                    </h2>
+                    <p className="text-sm text-ink-2 leading-relaxed">
+                      Working professional or final-year student? Compare online MBA, BBA, MCA &amp; BCA programs from Symbiosis, MAHE, NMIMS, Amity, LPU and 120+ UGC-DEB approved universities.
+                    </p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-5">
+                  <Link
+                    href="/programs/mba"
+                    data-cta="cgpa_post_result_qualifies_mba"
+                    className="text-center px-4 py-3 rounded-xl bg-navy text-white text-sm font-bold no-underline hover:bg-navy/90 transition-colors"
+                  >
+                    Compare Top Online MBAs →
+                  </Link>
+                  <Link
+                    href="/programs/bba"
+                    data-cta="cgpa_post_result_qualifies_bba"
+                    className="text-center px-4 py-3 rounded-xl bg-white border-2 border-navy text-navy text-sm font-bold no-underline hover:bg-navy/5 transition-colors"
+                  >
+                    Browse BBA / BCA Programs →
+                  </Link>
+                  <Link
+                    href="/coupons"
+                    data-cta="cgpa_post_result_qualifies_coupons"
+                    className="text-center px-4 py-3 rounded-xl text-sm font-bold no-underline transition-opacity hover:opacity-90"
+                    style={{ background: 'linear-gradient(135deg,#c9922a,#e0a93a)', color: '#0B1D35' }}
+                  >
+                    See Admission Discounts →
+                  </Link>
+                </div>
+              </div>
+            ) : (
+              <div
+                className="rounded-2xl p-6 sm:p-8"
+                style={{
+                  background: 'linear-gradient(135deg, rgba(212,146,42,0.07), rgba(11,29,53,0.04))',
+                  border: '1px solid rgba(212,146,42,0.3)',
+                }}
+              >
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="text-3xl shrink-0 leading-none mt-0.5">💡</div>
+                  <div>
+                    <h2 className="font-display text-xl sm:text-2xl font-bold text-navy mb-2 leading-tight">
+                      Looking at next steps after your degree?
+                    </h2>
+                    <p className="text-sm text-ink-2 leading-relaxed">
+                      125+ UGC-DEB approved online universities in India offer flexible MBA, MCA, BBA &amp; BCA programs. Many have relaxed eligibility for working professionals.
+                    </p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5">
+                  <Link
+                    href="/compare"
+                    data-cta="cgpa_post_result_low_compare"
+                    className="text-center px-4 py-3 rounded-xl bg-navy text-white text-sm font-bold no-underline hover:bg-navy/90 transition-colors"
+                  >
+                    See Online Programs →
+                  </Link>
+                  <button
+                    type="button"
+                    onClick={() => setCounsellorOpen(true)}
+                    data-cta="cgpa_post_result_low_counsellor"
+                    className="text-center px-4 py-3 rounded-xl text-sm font-bold border-0 cursor-pointer transition-opacity hover:opacity-90"
+                    style={{ background: 'linear-gradient(135deg,#c9922a,#e0a93a)', color: '#0B1D35' }}
+                  >
+                    Talk to Our Counsellor (Free) →
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
 
         {/* CGPA Table */}
         <div className="mt-8 bg-white rounded-2xl border border-border overflow-hidden">
@@ -479,7 +599,40 @@ export default function CgpaCalculatorClient() {
             </div>
           ))}
         </div>
+
+        {/* ── CTA #3 — BOTTOM INLINE LEAD FORM ───────────────────────────── */}
+        <section id="cgpa-lead-form" className="mt-10">
+          <BlogLeadForm
+            title="Planning to use this CGPA for online MBA, MCA or BBA admission?"
+            desc="Get a free personalised shortlist of universities matching your profile, budget, and career goals. Zero commission. Zero pushy sales calls."
+            submitLabel="Get My Shortlist"
+            source="cgpa_bottom_lead_form"
+          />
+          <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+            {[
+              '125+ UGC-DEB verified universities',
+              'Real fees, no hidden charges',
+              "Independent advice. We don't sell admissions",
+            ].map((t) => (
+              <div
+                key={t}
+                className="flex items-start gap-2 px-3 py-2.5 rounded-xl text-xs sm:text-[13px] font-medium"
+                style={{ background: 'rgba(31,107,82,0.06)', border: '1px solid rgba(31,107,82,0.2)', color: '#1f6b52' }}
+              >
+                <CheckCircle size={14} className="shrink-0 mt-0.5" style={{ color: '#1f6b52' }} />
+                <span style={{ color: '#0B1D35' }}>{t}</span>
+              </div>
+            ))}
+          </div>
+        </section>
       </div>
+
+      {/* Enquiry modal — triggered from CTA #2 (low-score path) */}
+      <EnquiryModal
+        isOpen={counsellorOpen}
+        onClose={() => setCounsellorOpen(false)}
+        sourcePage="cgpa_post_result_low"
+      />
     </div>
   )
 }

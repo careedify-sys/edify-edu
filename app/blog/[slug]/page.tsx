@@ -11,6 +11,25 @@ import BlogClientActions from '@/components/BlogClientActions'
 import BlogTOC from '@/components/BlogTOC'
 import BlogSidebarWidgets from '@/components/BlogSidebarWidgets'
 import BlogContentWithCTAs from '@/components/BlogContentWithCTAs'
+import MujVerdictTop from '@/components/muj/MujVerdictTop'
+import MujEndOfArticle from '@/components/muj/MujEndOfArticle'
+
+// Slug-conditional CTAs for high-traffic blogs. Component-injected at the
+// template level so the content body in lib/blog.ts stays clean.
+const MUJ_FAKE_OR_LEGIT_SLUG = 'is-manipal-university-jaipur-fake-or-legit-2026'
+
+// Inject a mid-article CTA marker right before the next <h2> after a given
+// heading ID. BlogContentWithCTAs picks up the marker and renders the right
+// React component in its place.
+function injectMidCtaMarker(html: string, afterHeadingId: string, variant: string): string {
+  const idAttr = `id="${afterHeadingId}"`
+  const idIdx = html.indexOf(idAttr)
+  if (idIdx === -1) return html
+  const nextH2 = html.indexOf('<h2', idIdx + idAttr.length)
+  const marker = `<div class="blog-mid-cta-spot" data-variant="${variant}"></div>`
+  if (nextH2 === -1) return html + marker
+  return html.slice(0, nextH2) + marker + html.slice(nextH2)
+}
 
 // ── Server-side helpers ───────────────────────────────────────────────────────
 
@@ -131,8 +150,17 @@ export default async function BlogPostPage({ params }: Props) {
     .filter((p) => p.slug !== slug)
     .slice(0, 3)
 
-  const contentWithIds = addHeadingIds(post.content)
+  let contentWithIds = addHeadingIds(post.content)
   const headings = extractHeadings(post.content)
+
+  // Inject slug-conditional mid-article CTAs (component-driven, not in content body)
+  if (slug === MUJ_FAKE_OR_LEGIT_SLUG) {
+    contentWithIds = injectMidCtaMarker(
+      contentWithIds,
+      'is-manipal-university-jaipur-fake-no-and-here-is-the-proof',
+      'muj-verdict-mid'
+    )
+  }
 
   const postUrl = `https://edifyedu.in/blog/${post.slug}`
 
@@ -378,6 +406,9 @@ export default async function BlogPostPage({ params }: Props) {
             {/* ── LEFT: article ─────────────────────────────────────────── */}
             <article className="flex-1 min-w-0">
 
+              {/* Slug-conditional top CTA — MUJ "fake or legit" verdict callout */}
+              {slug === MUJ_FAKE_OR_LEGIT_SLUG && <MujVerdictTop />}
+
               {/* Key Highlights box */}
               {post.faqs.length > 0 && (
                 <div
@@ -446,6 +477,9 @@ export default async function BlogPostPage({ params }: Props) {
                 postTitle={post.title}
                 postUrl={postUrl}
               />
+
+              {/* Slug-conditional end-of-article hard close — MUJ "fake or legit" lead form */}
+              {slug === MUJ_FAKE_OR_LEGIT_SLUG && <MujEndOfArticle />}
 
               {/* From Our Guides — links to /guides/* pages to break content silo */}
               <div className="mt-6 bg-white rounded-2xl border border-border p-5">
