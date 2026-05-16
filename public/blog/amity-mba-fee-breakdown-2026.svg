@@ -1,0 +1,85 @@
+<svg viewBox="0 0 660 380" xmlns="http://www.w3.org/2000/svg" width="660" height="380" role="img" aria-label="Amity Online MBA 2026 complete fee breakdown: list price Rs 2,25,000 minus Rs 18,000 discount equals Rs 2,07,000 final fee. Payment options: one-time Rs 2,07,000, annual Rs 1,06,880, per semester Rs 56,300, EMI Rs 8,906 per month for 24 months.">
+  <defs>
+    <linearGradient id="amty-navy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B1D35"/>
+      <stop offset="100%" stop-color="#142540"/>
+    </linearGradient>
+    <linearGradient id="amty-amber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c9922a"/>
+      <stop offset="100%" stop-color="#e0a93a"/>
+    </linearGradient>
+    <style>
+      .h { font: 700 18px system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #ffffff; }
+      .sub { font: 400 12px system-ui, sans-serif; fill: #cbd5e1; }
+      .lbl { font: 700 11px system-ui, sans-serif; fill: #64748b; text-transform: uppercase; letter-spacing: 0.06em; }
+      .num-big { font: 800 26px system-ui, sans-serif; fill: #0B1D35; }
+      .num-mid { font: 700 18px system-ui, sans-serif; fill: #0B1D35; }
+      .num-discount { font: 700 16px system-ui, sans-serif; fill: #16a34a; }
+      .meta { font: 500 12px system-ui, sans-serif; fill: #475569; }
+      .pill { font: 700 10px system-ui, sans-serif; fill: #ffffff; }
+      .opt-lbl { font: 700 12px system-ui, sans-serif; fill: #0B1D35; }
+      .opt-fee { font: 700 16px system-ui, sans-serif; fill: #c9922a; }
+      .opt-sub { font: 500 10px system-ui, sans-serif; fill: #64748b; }
+    </style>
+  </defs>
+
+  <rect width="660" height="380" fill="#f8fafc"/>
+  <rect width="660" height="74" fill="url(#amty-navy)"/>
+  <text x="24" y="32" class="h">Amity Online MBA 2026: Complete Fee Breakdown</text>
+  <text x="24" y="54" class="sub">List price, discount applied, and the four payment options. Indicative figures.</text>
+
+  <!-- Headline waterfall: list price - discount = final -->
+  <g transform="translate(24, 96)">
+    <text x="0" y="0" class="lbl">List Price</text>
+    <text x="0" y="32" class="num-big">Rs 2,25,000</text>
+
+    <text x="220" y="0" class="lbl">Discount Applied</text>
+    <rect x="220" y="14" width="120" height="24" rx="12" fill="#dcfce7"/>
+    <text x="280" y="31" text-anchor="middle" class="num-discount">- Rs 18,000</text>
+
+    <text x="380" y="0" class="lbl">You Pay (One-Time)</text>
+    <rect x="380" y="14" width="220" height="44" rx="10" fill="url(#amty-amber)"/>
+    <text x="490" y="46" text-anchor="middle" style="font: 800 22px system-ui, sans-serif; fill: #0B1D35;">Rs 2,07,000</text>
+  </g>
+
+  <!-- divider -->
+  <line x1="24" y1="172" x2="636" y2="172" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="24" y="194" class="lbl">Or Choose A Payment Plan (Same Programme, Same Degree)</text>
+
+  <!-- 4 payment option cards -->
+  <g transform="translate(24, 208)">
+    <!-- One-time -->
+    <rect x="0" y="0" width="146" height="120" rx="10" fill="#ffffff" stroke="#16a34a" stroke-width="1.5"/>
+    <rect x="0" y="0" width="146" height="22" rx="10" fill="#16a34a"/>
+    <text x="73" y="16" text-anchor="middle" class="pill">BEST VALUE</text>
+    <text x="12" y="44" class="opt-lbl">One-Time</text>
+    <text x="12" y="74" class="opt-fee">Rs 2,07,000</text>
+    <text x="12" y="92" class="opt-sub">Paid upfront</text>
+    <text x="12" y="108" class="opt-sub">Save Rs 18,000</text>
+
+    <!-- Annual -->
+    <rect x="156" y="0" width="146" height="120" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+    <text x="168" y="20" class="opt-lbl">Annual</text>
+    <text x="168" y="50" class="opt-fee">Rs 1,06,880</text>
+    <text x="168" y="68" class="opt-sub">Per year x 2 years</text>
+    <text x="168" y="86" class="opt-sub">Total Rs 2,13,760</text>
+    <text x="168" y="104" class="opt-sub">2 instalments</text>
+
+    <!-- Semester -->
+    <rect x="312" y="0" width="146" height="120" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+    <text x="324" y="20" class="opt-lbl">Per Semester</text>
+    <text x="324" y="50" class="opt-fee">Rs 56,300</text>
+    <text x="324" y="68" class="opt-sub">Per sem x 4 sems</text>
+    <text x="324" y="86" class="opt-sub">Total Rs 2,25,200</text>
+    <text x="324" y="104" class="opt-sub">4 instalments</text>
+
+    <!-- EMI -->
+    <rect x="468" y="0" width="146" height="120" rx="10" fill="#ffffff" stroke="#c9922a" stroke-width="1.5"/>
+    <rect x="468" y="0" width="146" height="22" rx="10" fill="url(#amty-amber)"/>
+    <text x="541" y="16" text-anchor="middle" class="pill" style="fill:#0B1D35;">NO-COST EMI</text>
+    <text x="480" y="44" class="opt-lbl">EMI</text>
+    <text x="480" y="74" class="opt-fee">Rs 8,906 / mo</text>
+    <text x="480" y="92" class="opt-sub">24-month tenure</text>
+    <text x="480" y="108" class="opt-sub">Zero interest</text>
+  </g>
+</svg>

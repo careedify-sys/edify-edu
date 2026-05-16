@@ -18710,9 +18710,9 @@ export const BLOG_POSTS: BlogPost[] = [
 </div>
 
 <h2 id="online-fees">Amity MBA Online Fees: Complete Breakdown</h2>
-<figure style="margin: 28px 0;">
-  <img src="https://images.pexels.com/photos/4386325/pexels-photo-4386325.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="From above of crop anonymous financier counting profit while writing down information on notepad near pile of paper money on table" loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
-  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@karola-g" target="_blank" rel="noopener nofollow">www.kaboompics.com</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+<figure class="svg-figure" style="margin: 28px 0;">
+  <img src="/blog/amity-mba-fee-breakdown-2026.svg" alt="Amity Online MBA 2026 complete fee breakdown: list price Rs 2,25,000, Rs 18,000 discount, you pay Rs 2,07,000 one-time. Or pay annually Rs 1,06,880, per semester Rs 56,300, or no-cost EMI Rs 8,906 per month for 24 months." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4; background:#f8fafc;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Indicative fee structure for the 2026 intake. Verify the current 2026-27 fee with our counsellor before payment.</figcaption>
 </figure>
 
 <p>Amity offers four payment options for the online MBA. The most affordable is the <strong>one-time payment at ₹2,07,000</strong> (down from the standard ₹2,25,000  -- a self-pay discount of ₹18,000). Other options: annual payment at ₹1,06,880/year, per-semester at ₹56,300, or a <strong>24-month no-cost EMI at ₹8,906/month</strong>. There is <strong>no registration fee</strong>.</p>
