@@ -1084,9 +1084,9 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="callout-key">If you need a recognised MBA degree for government jobs, further studies, or corporate roles, the program you want is SSODL. SCDL is a separate diploma option at a lower cost. This page covers SSODL only.</div>
 
 <h2>About Symbiosis International University</h2>
-<figure style="margin: 28px 0;">
-  <img src="https://images.pexels.com/photos/14907452/pexels-photo-14907452.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Close-up shot of Indian currency notes and coins, highlighting economic themes." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
-  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@ravi-roshan-2875998" target="_blank" rel="noopener nofollow">Ravi Roshan</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+<figure class="svg-figure" style="margin: 28px 0;">
+  <img src="/blog/symbiosis-credentials-snapshot-2026.svg" alt="Symbiosis SSODL Pune Online credentials snapshot 2026: NIRF Management rank 11, NAAC A++, NIRF University rank 24. UGC-DEB approved, AICTE approved, WES recognised, valid for government jobs." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4; background:#f8fafc;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Source: edifyedu.in live university record. NIRF India Rankings 2025 release.</figcaption>
 </figure>
 
 
