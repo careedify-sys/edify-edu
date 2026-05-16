@@ -18686,9 +18686,9 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 25,
     publishedAt: '2026-04-25',
     status: 'published' as const,
-    heroImage: 'https://images.pexels.com/photos/8068770/pexels-photo-8068770.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@a-darmel" target="_blank" rel="noopener nofollow">Alena Darmel</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
-    heroImageAlt: 'Indian businessman working on a laptop in a professional office setting, representing online MBA for working professionals.',
+    heroImage: 'https://images.pexels.com/photos/4308093/pexels-photo-4308093.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@ketut-subiyanto" target="_blank" rel="noopener nofollow">Ketut Subiyanto</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Indian working professionals studying together on a laptop with notebooks at a home desk, representing online MBA learning at Amity University.',
     targetKeyword: 'amity online mba',
     relatedUniversities: ['amity-university-online', 'jain-university-online', 'chandigarh-university-online', 'nmims-online'],
     faqs: [
