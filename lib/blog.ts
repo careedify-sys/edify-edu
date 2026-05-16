@@ -1914,8 +1914,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
     <h2>Program Structure</h2>
 <figure style="margin: 28px 0;">
-  <img src="https://images.pexels.com/photos/18012459/pexels-photo-18012459.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Two Indian children in school uniforms concentrating on their studies." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
-  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@swastikarora" target="_blank" rel="noopener nofollow">Swastik Arora</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+  <img src="https://images.pexels.com/photos/31770771/pexels-photo-31770771.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Two business professionals collaborating during a presentation, representing MAHE Online MBA peer learning and live cohort sessions." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@rdnestockproject" target="_blank" rel="noopener nofollow">RDNE Stock project</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
 </figure>
 
     <p>The MAHE online MBA runs for two years across four semesters. The first two semesters cover core management subjects. Specialisation begins in semester three. The program requires work experience from applicants, or fresh graduates must submit a Statement of Purpose video. This makes it slightly more selective than MUJ and SMU.</p>
@@ -12854,9 +12854,9 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Tamil Nadu-based UGC-DEB approved distance MBA universities</h2>
 
-<figure style="margin: 28px 0;">
-  <img src="https://images.pexels.com/photos/34260202/pexels-photo-34260202.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Colorful fishing boats on the sandy beach at sunrise in Chennai, India." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
-  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@sudipto-chakrabarty-2152424918" target="_blank" rel="noopener nofollow">Sudipto Chakrabarty</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+<figure class="svg-figure" style="margin: 28px 0;">
+  <img src="/blog/distance-mba-chennai-universities-2026.svg" alt="Distance MBA Chennai 2026 comparison: Anna University Rs 32,500, Madras University Rs 18,400, Annamalai Rs 22,260, Alagappa Rs 12,500, SRM Online Rs 90,000. All UGC-DEB approved with NAAC A+ or A++." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4; background:#f8fafc;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Indicative annual fees. Source: official university distance education portals.</figcaption>
 </figure>
 
 <p>Tamil Nadu hosts several UGC-DEB approved universities offering distance and online MBA options. Ranked by NAAC, NIRF, and cluster fit.</p>
@@ -22441,9 +22441,9 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>The term MCA online just means the same degree completed through distance/online mode. When the university is UGC-DEB listed, that MCA online degree carries identical weight for private jobs, government exams, and higher studies. The certificate itself clearly identifies the programme as Online mode (per UGC 2018 Regulations) or offline — that distinction matters to nobody hiring you.</p>
 <div style="background:rgba(16,185,129,0.07);border:1.5px solid rgba(16,185,129,0.22);border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0"><p style="margin:0 0 0.5rem;font-weight:700;color:#0B1D35">✅ Eligibility in one line:</p><p style="margin:0;color:#3B5068">Bachelor's degree with 45-50% marks. BCA, B.Sc. Computer Science, B.Tech, or any graduation with Maths at 10+2 or graduation level qualifies. Several universities run bridge courses for non-maths backgrounds.</p></div>
 <h2>Online MCA Course Fees: What You'll Actually Pay</h2>
-<figure style="margin: 28px 0;">
-  <img src="https://images.pexels.com/photos/10638075/pexels-photo-10638075.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Children engaged in learning at computers in a modern classroom setting, promoting digital literacy." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
-  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@ron-lach" target="_blank" rel="noopener nofollow">Ron Lach</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+<figure class="svg-figure" style="margin: 28px 0;">
+  <img src="/blog/online-mca-fee-comparison-india-2026.svg" alt="Online MCA total fee comparison 2026: IGNOU Rs 54,000, Chandigarh Rs 1,25,000, JAIN Rs 1,30,000, LPU Rs 1,42,000, Manipal Jaipur Rs 1,55,000, Amity Rs 1,71,800. All UGC-DEB approved." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4; background:#f8fafc;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Total fee for the full 2-year online MCA. Source: official university online portals.</figcaption>
 </figure>
 
 <p><strong>Online MCA course fees</strong> vary more than most comparison sites admit. Here's a realistic range based on actual published data from UGC-approved universities — no marketing averages:</p>
@@ -23554,8 +23554,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>SMU Online MBA Fee Structure</h2>
 <figure style="margin: 28px 0;">
-  <img src="https://images.pexels.com/photos/10172966/pexels-photo-10172966.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Two schoolgirls in uniform walking along a busy street in Amritsar, India." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
-  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@visualkamikaze" target="_blank" rel="noopener nofollow">Peter Chirkov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+  <img src="https://images.pexels.com/photos/9623654/pexels-photo-9623654.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Working professional multitasking on phone and laptop, representing an SMU online MBA learner balancing studies with a full-time job." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mart-production" target="_blank" rel="noopener nofollow">MART PRODUCTION</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
 </figure>
 
 
@@ -24855,8 +24855,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Is Noida International University Online MBA Legitimate?</h2>
 <figure style="margin: 28px 0;">
-  <img src="https://images.pexels.com/photos/30170871/pexels-photo-30170871.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Children in Mathura, India celebrating Independence Day with Indian flags." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
-  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@jatin-chaudhary-820545799" target="_blank" rel="noopener nofollow">Jatin  Chaudhary</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+  <img src="https://images.pexels.com/photos/7875856/pexels-photo-7875856.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Focused businesswoman working on a laptop in a professional office, representing a Noida International University online MBA learner." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@anna-shvets" target="_blank" rel="noopener nofollow">Anna Shvets</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
 </figure>
 
 
