@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { CheckCircle2, Send, MessageCircle, Clock } from 'lucide-react'
+import type { UniversityBlogCtaConfig } from '@/lib/university-blog-cta'
 
 const TIME_OPTIONS = [
   { value: 'morning', label: 'Morning (9 AM – 12 PM)' },
@@ -11,24 +12,13 @@ const TIME_OPTIONS = [
   { value: 'anytime', label: 'Anytime' },
 ]
 
-const TRUST_BULLETS = [
-  "We'll tell you if MUJ is actually your best option (sometimes it isn't)",
-  "We'll share current admission discounts and scholarship eligibility",
-  "Zero commission. We don't take a cut from any university",
-  "Zero pushy sales calls. You ask, we answer, you decide",
-]
-
-const SECONDARY_LINKS = [
-  { href: '/universities/manipal-university-jaipur-online/mba', label: 'MUJ Online MBA Programmes' },
-  { href: '/universities/manipal-university-jaipur-online/bba', label: 'MUJ Online BBA Programmes' },
-  { href: '/universities/manipal-university-jaipur-online/bca', label: 'MUJ Online BCA Programmes' },
-]
-
-export default function MujEndOfArticle() {
+export default function UniversityEndCta({ config }: { config: UniversityBlogCtaConfig }) {
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
   const [bestTime, setBestTime] = useState('')
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle')
+
+  const tagBase = config.sourceNamespace ? `${config.sourceNamespace}_end_close` : 'end_close'
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -42,17 +32,17 @@ export default function MujEndOfArticle() {
           name: name.trim(),
           phone: phone.trim(),
           program: 'MBA',
-          preferredUniversity: 'Manipal University Jaipur Online',
+          preferredUniversity: config.universityName,
           bestTimeToCall: bestTime || 'anytime',
-          sourcePage: 'muj_blog_end_close',
-          source: 'muj_blog_end_close',
+          sourcePage: tagBase,
+          source: tagBase,
         }),
       })
       if (typeof window !== 'undefined' && (window as any).gtag) {
         (window as any).gtag('event', 'generate_lead', {
-          university: 'Manipal University Jaipur Online',
+          university: config.universityName,
           program: 'MBA',
-          source: 'muj_blog_end_close',
+          source: tagBase,
         })
       }
     } catch { /* show success anyway */ }
@@ -61,7 +51,7 @@ export default function MujEndOfArticle() {
 
   return (
     <div
-      id="muj-end-close"
+      id={`${config.shortName.toLowerCase()}-end-close`}
       className="rounded-2xl my-6 overflow-hidden"
       style={{
         background: 'linear-gradient(135deg, #0B1D35 0%, #142540 100%)',
@@ -75,14 +65,14 @@ export default function MujEndOfArticle() {
           className="font-display font-extrabold text-white leading-tight mb-2"
           style={{ fontSize: 'clamp(1.4rem, 3.2vw, 2rem)' }}
         >
-          Ready to apply to MUJ Online?
+          {config.endHeading}
         </h2>
         <p className="text-sm sm:text-base mb-5" style={{ color: 'rgba(255,255,255,0.72)' }}>
-          Before you click 'Apply Now' on the official portal, talk to us first.
+          {config.endSubheading}
         </p>
 
         <ul className="space-y-2.5 mb-6">
-          {TRUST_BULLETS.map((t) => (
+          {config.endTrustBullets.map((t) => (
             <li key={t} className="flex items-start gap-2.5 text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.88)' }}>
               <CheckCircle2 size={16} className="shrink-0 mt-0.5" style={{ color: '#22c55e' }} />
               <span>{t}</span>
@@ -103,7 +93,7 @@ export default function MujEndOfArticle() {
               An Edify counsellor will call you {bestTime ? `during ${TIME_OPTIONS.find((o) => o.value === bestTime)?.label.split(' (')[0].toLowerCase()}` : 'within 1 hour'}. Zero spam, promise.
             </p>
             <a
-              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'}?text=${encodeURIComponent(`Hi! I'm ${name} and I'm considering MUJ Online MBA. Please call me.`)}`}
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'}?text=${encodeURIComponent(`Hi! I'm ${name} and I'm considering ${config.shortName} Online MBA. Please call me.`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-xs mt-3 no-underline hover:underline"
@@ -114,7 +104,7 @@ export default function MujEndOfArticle() {
             </a>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-3" data-cta="muj_blog_end_close_form">
+          <form onSubmit={handleSubmit} className="space-y-3" data-cta={`${tagBase}_form`}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <input
                 type="text"
@@ -162,7 +152,7 @@ export default function MujEndOfArticle() {
                     border: '1px solid rgba(255,255,255,0.12)',
                     color: bestTime ? '#fff' : 'rgba(255,255,255,0.4)',
                   }}
-                  data-cta="muj_blog_end_close_besttime"
+                  data-cta={`${tagBase}_besttime`}
                 >
                   <option value="">Best time to call (optional)</option>
                   {TIME_OPTIONS.map((o) => (
@@ -178,13 +168,13 @@ export default function MujEndOfArticle() {
                 disabled={status === 'submitting'}
                 className="flex items-center justify-center gap-1.5 px-6 py-3 rounded-xl text-sm font-bold transition-opacity hover:opacity-90 disabled:opacity-50 cursor-pointer"
                 style={{ background: 'linear-gradient(135deg,#c9922a,#e0a93a)', color: '#0B1D35' }}
-                data-cta="muj_blog_end_close_submit"
+                data-cta={`${tagBase}_submit`}
               >
                 {status === 'submitting' ? (
                   <span className="w-4 h-4 border-2 border-navy/30 border-t-navy rounded-full animate-spin" />
                 ) : (
                   <>
-                    Talk to Counsellor
+                    {config.endSubmitLabel}
                     <Send size={14} />
                   </>
                 )}
@@ -199,14 +189,14 @@ export default function MujEndOfArticle() {
 
         <div className="mt-7 pt-5" style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}>
           <div className="text-[10px] font-bold uppercase tracking-widest mb-3" style={{ color: 'rgba(255,255,255,0.45)' }}>
-            Or explore MUJ programmes directly
+            {`Or explore ${config.shortName} programmes directly`}
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
-            {SECONDARY_LINKS.map((l) => (
+            {config.secondaryLinks.map((l) => (
               <Link
-                key={l.href}
-                href={l.href}
-                data-cta={`muj_blog_end_close_link_${l.href.split('/').pop()}`}
+                key={l.program}
+                href={`/universities/${config.universityId}/${l.program}`}
+                data-cta={`${tagBase}_link_${l.program}`}
                 className="text-center px-3 py-2.5 rounded-xl text-xs sm:text-[13px] font-semibold no-underline transition-colors hover:bg-white/[0.12]"
                 style={{ background: 'rgba(255,255,255,0.06)', color: '#fff', border: '1px solid rgba(255,255,255,0.12)' }}
               >

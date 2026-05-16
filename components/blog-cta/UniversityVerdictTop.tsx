@@ -4,9 +4,14 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { CheckCircle2 } from 'lucide-react'
 import EnquiryModal from '../EnquiryModal'
+import type { UniversityBlogCtaConfig } from '@/lib/university-blog-cta'
 
-export default function MujVerdictTop() {
+export default function UniversityVerdictTop({ config }: { config: UniversityBlogCtaConfig }) {
   const [modalOpen, setModalOpen] = useState(false)
+
+  const couponHref = config.couponSlug ? `/coupons/${config.couponSlug}` : '/coupons'
+  const compareHref = `/compare?a=${config.universityId}`
+  const tagBase = config.sourceNamespace ? `${config.sourceNamespace}_verdict_top` : 'verdict_top'
 
   return (
     <>
@@ -35,39 +40,39 @@ export default function MujVerdictTop() {
                 Verified
               </div>
               <h2 className="font-bold text-white leading-tight mb-1.5" style={{ fontSize: 'clamp(1rem, 2.6vw, 1.25rem)' }}>
-                Manipal University Jaipur is UGC-DEB approved and 100% legitimate
+                {config.verdictHeadline}
               </h2>
               <p className="text-sm" style={{ color: 'rgba(255,255,255,0.72)' }}>
-                Considering MUJ Online for your degree?
+                {config.verdictSubheading}
               </p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 mt-4">
             <Link
-              href="/coupons/manipal-jaipur-online-mba-discount-coupon-2026"
-              data-cta="muj_blog_verdict_top_discount"
+              href={couponHref}
+              data-cta={`${tagBase}_discount`}
               className="text-center px-3 py-2.5 rounded-xl text-xs sm:text-[13px] font-bold no-underline transition-opacity hover:opacity-90"
               style={{ background: 'linear-gradient(135deg,#c9922a,#e0a93a)', color: '#0B1D35' }}
             >
-              💰 See July 2026 Discount
+              {config.verdictDiscountLabel}
             </Link>
             <Link
-              href="/compare?a=manipal-university-jaipur-online"
-              data-cta="muj_blog_verdict_top_compare"
+              href={compareHref}
+              data-cta={`${tagBase}_compare`}
               className="text-center px-3 py-2.5 rounded-xl text-xs sm:text-[13px] font-bold no-underline transition-colors hover:bg-white/[0.13]"
               style={{ background: 'rgba(255,255,255,0.07)', color: '#fff', border: '1px solid rgba(255,255,255,0.15)' }}
             >
-              📊 Compare MUJ vs Others
+              {config.verdictCompareLabel}
             </Link>
             <button
               type="button"
               onClick={() => setModalOpen(true)}
-              data-cta="muj_blog_verdict_top_counsellor"
+              data-cta={`${tagBase}_counsellor`}
               className="text-center px-3 py-2.5 rounded-xl text-xs sm:text-[13px] font-bold cursor-pointer transition-colors hover:bg-white/[0.13]"
               style={{ background: 'rgba(255,255,255,0.07)', color: '#fff', border: '1px solid rgba(255,255,255,0.15)' }}
             >
-              📞 Talk to Counsellor (Free)
+              {config.verdictCounsellorLabel}
             </button>
           </div>
         </div>
@@ -76,10 +81,10 @@ export default function MujVerdictTop() {
       <EnquiryModal
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
-        universityName="Manipal University Jaipur Online"
-        universityId="manipal-university-jaipur-online"
+        universityName={config.universityName}
+        universityId={config.universityId}
         defaultProgram="MBA"
-        sourcePage="muj_blog_verdict_top"
+        sourcePage={tagBase}
       />
     </>
   )

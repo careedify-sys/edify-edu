@@ -4,30 +4,12 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { ArrowRight, FileText } from 'lucide-react'
 import EnquiryModal from '../EnquiryModal'
+import type { UniversityBlogCtaConfig } from '@/lib/university-blog-cta'
 
-const COMPARISONS = [
-  {
-    href: '/compare?a=manipal-university-jaipur-online&b=lovely-professional-university-online',
-    title: 'MUJ vs LPU Online',
-    desc: 'Which is better for working professionals?',
-    slug: 'lpu',
-  },
-  {
-    href: '/compare?a=manipal-university-jaipur-online&b=amity-university-online',
-    title: 'MUJ vs Amity Online',
-    desc: 'Fees, placement, and recognition compared',
-    slug: 'amity',
-  },
-  {
-    href: '/compare?a=manipal-university-jaipur-online&b=chandigarh-university-online',
-    title: 'MUJ vs Chandigarh University',
-    desc: 'Specialisations and student support',
-    slug: 'cu',
-  },
-]
-
-export default function MujMidArticle() {
+export default function UniversityMidCompare({ config }: { config: UniversityBlogCtaConfig }) {
   const [modalOpen, setModalOpen] = useState(false)
+
+  const tagBase = config.sourceNamespace ? `${config.sourceNamespace}_mid_compare` : 'mid_compare'
 
   return (
     <>
@@ -41,28 +23,31 @@ export default function MujMidArticle() {
         <div style={{ height: 2, background: 'linear-gradient(90deg,#c9922a,#e0a93a)' }} />
         <div className="p-5 sm:p-6">
           <h3 className="font-bold leading-snug mb-2" style={{ fontSize: 'clamp(1.05rem, 2.4vw, 1.25rem)', color: '#0B1D35' }}>
-            Now that you know MUJ Online is legit. The real question is whether it's the right fit for you.
+            {config.midHeading}
           </h3>
           <p className="text-sm mb-5" style={{ color: '#3B5068' }}>
-            Here's how MUJ stacks up against other Tier-2 online universities:
+            {config.midSubheading}
           </p>
 
           <div className="space-y-2 mb-5">
-            {COMPARISONS.map((c) => (
-              <Link
-                key={c.href}
-                href={c.href}
-                data-cta={`muj_blog_mid_compare_${c.slug}`}
-                className="flex items-center gap-3 px-4 py-3 rounded-xl no-underline transition-colors hover:bg-white"
-                style={{ background: '#fff', border: '1px solid #E2E8F4' }}
-              >
-                <div className="flex-1 min-w-0">
-                  <div className="text-sm font-bold" style={{ color: '#0B1D35' }}>{c.title}</div>
-                  <div className="text-xs mt-0.5" style={{ color: '#64788A' }}>{c.desc}</div>
-                </div>
-                <ArrowRight size={16} className="shrink-0" style={{ color: '#c9922a' }} />
-              </Link>
-            ))}
+            {config.comparisons.map((c) => {
+              const href = `/compare?a=${config.universityId}&b=${c.otherId}`
+              return (
+                <Link
+                  key={c.slug}
+                  href={href}
+                  data-cta={`${tagBase}_${c.slug}`}
+                  className="flex items-center gap-3 px-4 py-3 rounded-xl no-underline transition-colors hover:bg-white"
+                  style={{ background: '#fff', border: '1px solid #E2E8F4' }}
+                >
+                  <div className="flex-1 min-w-0">
+                    <div className="text-sm font-bold" style={{ color: '#0B1D35' }}>{c.title}</div>
+                    <div className="text-xs mt-0.5" style={{ color: '#64788A' }}>{c.desc}</div>
+                  </div>
+                  <ArrowRight size={16} className="shrink-0" style={{ color: '#c9922a' }} />
+                </Link>
+              )
+            })}
           </div>
 
           <div
@@ -78,7 +63,7 @@ export default function MujMidArticle() {
             <button
               type="button"
               onClick={() => setModalOpen(true)}
-              data-cta="muj_blog_mid_compare_report"
+              data-cta={`${tagBase}_report`}
               className="flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl text-xs sm:text-[13px] font-bold whitespace-nowrap transition-opacity hover:opacity-90 cursor-pointer shrink-0"
               style={{ background: 'linear-gradient(135deg,#c9922a,#e0a93a)', color: '#0B1D35' }}
             >
@@ -92,10 +77,10 @@ export default function MujMidArticle() {
       <EnquiryModal
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
-        universityName="Manipal University Jaipur Online"
-        universityId="manipal-university-jaipur-online"
+        universityName={config.universityName}
+        universityId={config.universityId}
         defaultProgram="MBA"
-        sourcePage="muj_blog_mid_compare_report"
+        sourcePage={`${tagBase}_report`}
       />
     </>
   )

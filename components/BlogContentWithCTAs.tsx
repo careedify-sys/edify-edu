@@ -2,10 +2,11 @@
 
 import { useState } from 'react'
 import BlogCTACard from './BlogCTACard'
-import MujMidArticle from './muj/MujMidArticle'
+import UniversityMidCompare from './blog-cta/UniversityMidCompare'
+import type { UniversityBlogCtaConfig } from '@/lib/university-blog-cta'
 
 type Variant = 'compare' | 'counsel' | 'verify' | 'shortlist'
-type MidVariant = 'muj-verdict-mid'
+type MidVariant = 'university-mid-cta'
 
 const CTA_TOKEN_RE = /<div class="blog-cta-spot" data-variant="(\w+)"><\/div>/g
 const CTA_BOX_RE = /<div class="cta-box"[\s\S]*?<\/div>/g
@@ -117,7 +118,13 @@ function InlineLeadForm() {
   )
 }
 
-export default function BlogContentWithCTAs({ html }: { html: string }) {
+export default function BlogContentWithCTAs({
+  html,
+  midCtaConfig,
+}: {
+  html: string
+  midCtaConfig?: UniversityBlogCtaConfig
+}) {
   // Split HTML at CTA tokens AND cta-box divs
   type Part = {
     type: 'html' | 'cta' | 'inline-form' | 'mid-cta'
@@ -168,7 +175,9 @@ export default function BlogContentWithCTAs({ html }: { html: string }) {
         ) : part.type === 'inline-form' ? (
           <InlineLeadForm key={i} />
         ) : part.type === 'mid-cta' ? (
-          part.midVariant === 'muj-verdict-mid' ? <MujMidArticle key={i} /> : null
+          part.midVariant === 'university-mid-cta' && midCtaConfig
+            ? <UniversityMidCompare key={i} config={midCtaConfig} />
+            : null
         ) : (
           <BlogCTACard key={i} variant={part.variant || 'counsel'} />
         )

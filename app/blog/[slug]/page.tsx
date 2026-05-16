@@ -11,12 +11,9 @@ import BlogClientActions from '@/components/BlogClientActions'
 import BlogTOC from '@/components/BlogTOC'
 import BlogSidebarWidgets from '@/components/BlogSidebarWidgets'
 import BlogContentWithCTAs from '@/components/BlogContentWithCTAs'
-import MujVerdictTop from '@/components/muj/MujVerdictTop'
-import MujEndOfArticle from '@/components/muj/MujEndOfArticle'
-
-// Slug-conditional CTAs for high-traffic blogs. Component-injected at the
-// template level so the content body in lib/blog.ts stays clean.
-const MUJ_FAKE_OR_LEGIT_SLUG = 'is-manipal-university-jaipur-fake-or-legit-2026'
+import UniversityVerdictTop from '@/components/blog-cta/UniversityVerdictTop'
+import UniversityEndCta from '@/components/blog-cta/UniversityEndCta'
+import { BLOG_CTA_BUNDLES } from '@/lib/university-blog-cta'
 
 // Inject a mid-article CTA marker right before the next <h2> after a given
 // heading ID. BlogContentWithCTAs picks up the marker and renders the right
@@ -153,12 +150,14 @@ export default async function BlogPostPage({ params }: Props) {
   let contentWithIds = addHeadingIds(post.content)
   const headings = extractHeadings(post.content)
 
-  // Inject slug-conditional mid-article CTAs (component-driven, not in content body)
-  if (slug === MUJ_FAKE_OR_LEGIT_SLUG) {
+  // Slug-conditional CTA bundle (component-driven, not in content body).
+  // See lib/university-blog-cta.ts for config entries.
+  const ctaConfig = BLOG_CTA_BUNDLES[slug]
+  if (ctaConfig) {
     contentWithIds = injectMidCtaMarker(
       contentWithIds,
-      'is-manipal-university-jaipur-fake-no-and-here-is-the-proof',
-      'muj-verdict-mid'
+      ctaConfig.midCtaAnchorHeadingId,
+      'university-mid-cta'
     )
   }
 
@@ -406,8 +405,8 @@ export default async function BlogPostPage({ params }: Props) {
             {/* ── LEFT: article ─────────────────────────────────────────── */}
             <article className="flex-1 min-w-0">
 
-              {/* Slug-conditional top CTA — MUJ "fake or legit" verdict callout */}
-              {slug === MUJ_FAKE_OR_LEGIT_SLUG && <MujVerdictTop />}
+              {/* Slug-conditional top verdict callout (config-driven) */}
+              {ctaConfig && <UniversityVerdictTop config={ctaConfig} />}
 
               {/* Key Highlights box */}
               {post.faqs.length > 0 && (
@@ -443,7 +442,7 @@ export default async function BlogPostPage({ params }: Props) {
 
               {/* Article content — split at CTA tokens to inject React components */}
               <div className="bg-white rounded-2xl border border-border p-6 sm:p-8 mb-6">
-                <BlogContentWithCTAs html={contentWithIds} />
+                <BlogContentWithCTAs html={contentWithIds} midCtaConfig={ctaConfig} />
               </div>
 
               {/* In-article lead form */}
@@ -478,8 +477,8 @@ export default async function BlogPostPage({ params }: Props) {
                 postUrl={postUrl}
               />
 
-              {/* Slug-conditional end-of-article hard close — MUJ "fake or legit" lead form */}
-              {slug === MUJ_FAKE_OR_LEGIT_SLUG && <MujEndOfArticle />}
+              {/* Slug-conditional end-of-article hard close (config-driven) */}
+              {ctaConfig && <UniversityEndCta config={ctaConfig} />}
 
               {/* From Our Guides — links to /guides/* pages to break content silo */}
               <div className="mt-6 bg-white rounded-2xl border border-border p-5">
