@@ -7,6 +7,13 @@ import { getExpiryISO, getTodaysBonus, TIER_AMOUNTS } from '@/lib/coupons'
 import CouponPageCTA from '@/components/CouponPageCTA'
 import CouponCountdown from '@/components/CouponCountdown'
 import CouponScarcityBanner from '@/components/CouponScarcityBanner'
+import MujCouponTopUrgency from '@/components/coupons/MujCouponTopUrgency'
+import MujCouponMidReassurance from '@/components/coupons/MujCouponMidReassurance'
+import MujCouponEndCta from '@/components/coupons/MujCouponEndCta'
+
+// Slug-conditional CTAs for high-CTR coupon pages. Component-injected so
+// the data layer in lib/coupon-pages.ts stays clean.
+const MUJ_COUPON_SLUG = 'manipal-jaipur-online-mba-discount-coupon-2026'
 
 const COUNSELLOR_TEL = '+917061285806'
 const COUNSELLOR_TEL_DISPLAY = '+91 70612 85806'
@@ -244,6 +251,9 @@ export default async function CouponDetailPage({ params }: { params: any }) {
         {/* CTA - Reveal code */}
         <CouponPageCTA page={page} />
 
+        {/* Slug-conditional top urgency CTA — MUJ coupon */}
+        {slug === MUJ_COUPON_SLUG && <MujCouponTopUrgency />}
+
         {/* Phone CTA - direct counsellor call */}
         {page.couponCode !== 'N/A' && (
           <div className="mb-8 -mt-2 text-center">
@@ -333,6 +343,9 @@ export default async function CouponDetailPage({ params }: { params: any }) {
             </table>
           </div>
         </section>
+
+        {/* Slug-conditional mid-page reassurance CTA — MUJ coupon */}
+        {slug === MUJ_COUPON_SLUG && <MujCouponMidReassurance />}
 
         {/* Application steps */}
         <section className="mb-8">
@@ -509,6 +522,9 @@ export default async function CouponDetailPage({ params }: { params: any }) {
             ))}
           </div>
         </section>
+
+        {/* Slug-conditional end-of-page hard close — MUJ coupon */}
+        {slug === MUJ_COUPON_SLUG && <MujCouponEndCta />}
 
         {/* Related content */}
         <section className="mb-8">

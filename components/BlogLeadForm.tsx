@@ -1,15 +1,25 @@
 'use client'
 
 import { useState, useId } from 'react'
-import { CheckCircle2, Send, MessageCircle } from 'lucide-react'
+import { CheckCircle2, Send, MessageCircle, Clock } from 'lucide-react'
 
 const PROGRAMS = ['Online MBA', 'Online MCA', 'Online BBA', 'Online BCA', 'Other Courses']
+
+const TIME_OPTIONS = [
+  { value: 'morning', label: 'Morning (9 AM – 12 PM)' },
+  { value: 'afternoon', label: 'Afternoon (12 PM – 4 PM)' },
+  { value: 'evening', label: 'Evening (4 PM – 8 PM)' },
+  { value: 'anytime', label: 'Anytime' },
+]
 
 export default function BlogLeadForm({
   title,
   desc,
   submitLabel,
   source,
+  defaultProgram,
+  bestTimeField,
+  couponCode,
 }: {
   title?: string
   desc?: string
@@ -17,10 +27,21 @@ export default function BlogLeadForm({
   submitLabel?: string
   /** Analytics source tag. Defaults to "blog_lead_form". */
   source?: string
+  /** Pre-select a program in the dropdown (e.g. "Online MBA"). */
+  defaultProgram?: string
+  /** Render an additional "Best time to call" dropdown. Submitted as bestTimeToCall. */
+  bestTimeField?: boolean
+  /** Tag the lead with a coupon code (for /coupons/[slug] CTAs). */
+  couponCode?: string
 }) {
   const uid = useId()
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle')
-  const [form, setForm] = useState({ name: '', phone: '', program: '' })
+  const [form, setForm] = useState({
+    name: '',
+    phone: '',
+    program: defaultProgram || '',
+    bestTime: '',
+  })
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -37,6 +58,8 @@ export default function BlogLeadForm({
           program: form.program,
           sourcePage: typeof window !== 'undefined' ? window.location.pathname : 'blog',
           source: source || 'blog_lead_form',
+          ...(bestTimeField && form.bestTime ? { bestTimeToCall: form.bestTime } : {}),
+          ...(couponCode ? { couponCode } : {}),
         }),
       })
     } catch {
@@ -87,7 +110,7 @@ export default function BlogLeadForm({
           {desc || 'Get a free 1-on-1 session with our experts to find your perfect university match.'}
         </p>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4" data-cta={source ? `${source}_form` : undefined}>
           <input
             id={`${uid}-name`}
             name="name"
@@ -127,9 +150,29 @@ export default function BlogLeadForm({
             ))}
           </select>
 
+          {bestTimeField && (
+            <div className="relative">
+              <Clock size={16} className="absolute left-5 top-1/2 -translate-y-1/2 pointer-events-none text-white/40" />
+              <select
+                id={`${uid}-besttime`}
+                name="bestTime"
+                value={form.bestTime}
+                onChange={e => setForm(f => ({ ...f, bestTime: e.target.value }))}
+                data-cta={source ? `${source}_besttime` : undefined}
+                className="w-full pl-12 pr-5 py-4 bg-white/5 border border-white/10 rounded-xl text-white appearance-none focus:outline-none focus:ring-2 focus:ring-amber/50 transition-all font-medium"
+              >
+                <option value="" className="bg-navy">Best time to call (optional)</option>
+                {TIME_OPTIONS.map(o => (
+                  <option key={o.value} value={o.value} className="bg-navy">{o.label}</option>
+                ))}
+              </select>
+            </div>
+          )}
+
           <button
             type="submit"
             disabled={status === 'submitting'}
+            data-cta={source ? `${source}_submit` : undefined}
             className="w-full py-4 bg-gradient-to-r from-amber to-amber-bright text-navy font-bold rounded-xl shadow-lg shadow-amber/20 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 group disabled:opacity-50 disabled:scale-100"
           >
             {status === 'submitting' ? (
