@@ -12,6 +12,7 @@ import CgpaValueHero from '@/components/cgpa/CgpaValueHero'
 import CgpaGradeTable from '@/components/cgpa/CgpaGradeTable'
 import CgpaInlineCalculator from '@/components/cgpa/CgpaInlineCalculator'
 import CgpaFaq, { type CgpaFaqItem } from '@/components/cgpa/CgpaFaq'
+import CgpaEligibilityBanner from '@/components/cgpa/CgpaEligibilityBanner'
 
 export const dynamic = 'force-static'
 export const dynamicParams = false
@@ -200,6 +201,8 @@ export default function CgpaValuePage({
 
         <div className="max-w-4xl mx-auto px-4 py-8 md:py-12 space-y-10">
           <CgpaValueHero label={label} percentage={percentage} />
+
+          <CgpaEligibilityBanner percentage={percentage} />
 
           {/* How we calculated */}
           <section className="bg-white rounded-2xl border border-border p-6 md:p-8">

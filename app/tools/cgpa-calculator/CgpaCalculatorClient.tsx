@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { ChevronRight, GraduationCap, CheckCircle, BookOpen, ArrowRightLeft } from 'lucide-react'
 import EnquiryModal from '@/components/EnquiryModal'
 import BlogLeadForm from '@/components/BlogLeadForm'
+import CgpaEligibilityBanner from '@/components/cgpa/CgpaEligibilityBanner'
 
 // CGPA → Percentage: multiply by 9.5 (standard UGC / Anna University / most Indian universities)
 // Percentage → CGPA: divide by 9.5
@@ -179,21 +180,24 @@ export default function CgpaCalculatorClient() {
                 <p className="text-xs text-ink-3 mt-1.5">Enter a value between 0.1 and 10.0</p>
 
                 {cgpaResult && (
-                  <div className="mt-6 p-5 bg-gradient-to-br from-navy to-[#142540] rounded-xl text-white">
-                    <div className="text-xs text-white/60 mb-1">Your Percentage</div>
-                    <div className="text-4xl font-bold mb-2">{cgpaResult}%</div>
-                    <div className="text-sm text-white/70 mb-3">
-                      {cgpaInput} × 9.5 = {cgpaResult}%
-                    </div>
-                    {grade && (
-                      <div
-                        className="inline-block px-3 py-1 rounded-full text-xs font-bold"
-                        style={{ background: grade.color + '33', color: grade.color === '#1f6b52' ? '#34d399' : grade.color === '#c9922a' ? '#fbbf24' : '#aaa' }}
-                      >
-                        {grade.label}
+                  <>
+                    <div className="mt-6 p-5 bg-gradient-to-br from-navy to-[#142540] rounded-xl text-white">
+                      <div className="text-xs text-white/60 mb-1">Your Percentage</div>
+                      <div className="text-4xl font-bold mb-2">{cgpaResult}%</div>
+                      <div className="text-sm text-white/70 mb-3">
+                        {cgpaInput} × 9.5 = {cgpaResult}%
                       </div>
-                    )}
-                  </div>
+                      {grade && (
+                        <div
+                          className="inline-block px-3 py-1 rounded-full text-xs font-bold"
+                          style={{ background: grade.color + '33', color: grade.color === '#1f6b52' ? '#34d399' : grade.color === '#c9922a' ? '#fbbf24' : '#aaa' }}
+                        >
+                          {grade.label}
+                        </div>
+                      )}
+                    </div>
+                    <CgpaEligibilityBanner percentage={cgpaResult} />
+                  </>
                 )}
 
                 {cgpaInput && !cgpaResult && (
