@@ -230,6 +230,7 @@ export async function generateMetadata(
       title,
       description,
     },
+    robots: subSlug ? { index: false, follow: true } : undefined,
   }
 }
 
@@ -537,6 +538,14 @@ export default async function CatchAllProgramPage(
             name: `${u.name} Online MBA`,
           })),
         }) }} />
+        <div className="bg-white border-b border-border">
+          <div className="max-w-7xl mx-auto px-4 py-2 flex items-center gap-2 text-xs text-ink-2">
+            <span>Compare total fees across universities:</span>
+            <Link href="/fees?program=MBA" className="text-amber font-semibold hover:underline">
+              Compare all MBA fees →
+            </Link>
+          </div>
+        </div>
         <MBAHubClient />
       </>
     )
@@ -558,6 +567,14 @@ export default async function CatchAllProgramPage(
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+        <div className="bg-white border-b border-border">
+          <div className="max-w-7xl mx-auto px-4 py-2 flex items-center gap-2 text-xs text-ink-2">
+            <span>Compare total fees across universities:</span>
+            <Link href={`/fees?program=${encodeURIComponent(program)}`} className="text-amber font-semibold hover:underline">
+              Compare all {program} fees →
+            </Link>
+          </div>
+        </div>
         <ProgramHubClient program={program} />
       </>
     )

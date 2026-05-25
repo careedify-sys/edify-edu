@@ -2,23 +2,26 @@
 // Source of truth: data/EdifyEdu_Unified_Programs_v3.xlsx (Programs sheet)
 // Regenerate: npm run build:urls
 //
-// Priority tiers:
-//   1.0  /                          (homepage)
-//   0.92 /universities, /programs, /compare, /universities/{slug}/{prog}
-//   0.90 /programs/{prog}           (program listing pages)
-//   0.84 /universities/{slug}       (university hubs)
-//   0.80 /universities/{slug}/{prog}/{spec}
-//   0.78 /programs/{prog}/{spec}
-//   0.75 /blog/{slug}
-//   0.70 /guides/{slug}
-//   0.65 everything else
+// Priority tiers (post-indexation-cleanup 2026-05-25):
+//   1.0  /                               (homepage)
+//   0.92 /universities, /programs, /compare, /best-online-mba-india
+//   0.90 /programs/{prog}               (program hub pages — 100% indexed)
+//   0.85 /blog/{slug}, /coupons/{slug}, /fees
+//   0.80 /universities/{slug}            (uni hubs — 64.9% indexed, need enrichment)
+//   0.75 /universities/{slug}/{prog}     (uni+program money pages)
+//   0.70 /universities/{slug}/{prog}/{spec} WITH spec JSON  (rich pages only)
+//
+// EXCLUDED from sitemap (noindexed in page metadata too):
+//   /programs/{prog}/{spec}             — 598 pages, 7.9% index rate, removed entirely
+//   /universities/{id}/{prog}/{spec} without spec JSON — 1,819 thin pages
 
 import { MetadataRoute } from 'next'
-import { readFileSync, statSync } from 'fs'
+import { readFileSync, statSync, existsSync } from 'fs'
 import { join } from 'path'
 import { getPublishedPosts } from '@/lib/blog'
 import { GUIDES } from '@/lib/guides'
 import { CGPA_VALUES } from './tools/cgpa-calculator/[value]/data'
+import { COUPON_PAGE_SLUGS } from '@/lib/coupon-pages'
 
 // Returns the file mtime of a page-content JSON, or now as fallback
 function getContentLastMod(uniSlug: string, program: string): Date {
@@ -28,6 +31,13 @@ function getContentLastMod(uniSlug: string, program: string): Date {
   } catch {
     return new Date()
   }
+}
+
+// Returns true when a spec-specific rich JSON file exists for this page
+function hasSpecJson(uniSlug: string, prog: string, specSlug: string): boolean {
+  return existsSync(
+    join(process.cwd(), 'lib', 'data', 'page-content', `${uniSlug}-${prog}-${specSlug}.json`)
+  )
 }
 
 const BASE = 'https://edifyedu.in'
@@ -56,30 +66,26 @@ function urlMeta(path: string): { priority: number; freq: Freq } {
     return { priority: 0.82, freq: 'daily' }
 
   if (path === '/coupons')
-    return { priority: 0.65, freq: 'weekly' }
+    return { priority: 0.85, freq: 'weekly' }
 
   if (path === '/about' || path === '/contact' || path === '/privacy-policy')
     return { priority: 0.50, freq: 'yearly' }
 
-  // /programs/{prog}  (exactly 2 segments)
+  // /programs/{prog}  (exactly 2 segments) — 100% indexed, keep high
   if (/^\/programs\/[^/]+$/.test(path))
     return { priority: 0.90, freq: 'weekly' }
 
-  // /programs/{prog}/{spec}  (3 segments)
-  if (/^\/programs\/[^/]+\/[^/]+$/.test(path))
-    return { priority: 0.78, freq: 'monthly' }
-
   // /universities/{slug}  (2 segments)
   if (/^\/universities\/[^/]+$/.test(path))
-    return { priority: 0.84, freq: 'monthly' }
+    return { priority: 0.80, freq: 'monthly' }
 
   // /universities/{slug}/{prog}  (3 segments) — money pages
   if (/^\/universities\/[^/]+\/[^/]+$/.test(path))
-    return { priority: 0.92, freq: 'monthly' }
+    return { priority: 0.75, freq: 'monthly' }
 
-  // /universities/{slug}/{prog}/{spec}  (4 segments)
+  // /universities/{slug}/{prog}/{spec}  (4 segments) — only rich pages reach here
   if (/^\/universities\/[^/]+\/[^/]+\/[^/]+$/.test(path))
-    return { priority: 0.80, freq: 'monthly' }
+    return { priority: 0.70, freq: 'monthly' }
 
   return { priority: 0.65, freq: 'monthly' }
 }
@@ -88,23 +94,41 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
 
   // ── Registry pages from valid-urls.json ───────────────────────────────────
-  const registryPages: MetadataRoute.Sitemap = loadValidUrls().map(path => {
-    const { priority, freq } = urlMeta(path)
+  // Filter out thin pages before building sitemap entries:
+  //   1. /programs/{prog}/{spec} — all 598 removed (noindexed, 7.9% index rate)
+  //   2. /universities/{id}/{prog}/{spec} without a spec JSON — 1,819 thin pages removed
+  const registryPages: MetadataRoute.Sitemap = loadValidUrls()
+    .filter(path => {
+      // Remove /programs/{prog}/{spec} (3-segment program paths)
+      if (/^\/programs\/[^/]+\/[^/]+$/.test(path)) return false
 
-    // For /universities/{slug}/mba paths, use content JSON file mtime as lastmod
-    const mbaMatch = path.match(/^\/universities\/([^/]+)\/mba$/)
-    const lastModified = mbaMatch ? getContentLastMod(mbaMatch[1], 'mba') : now
+      // For uni-prog-spec pages, only include when rich spec JSON exists
+      const specMatch = path.match(/^\/universities\/([^/]+)\/([^/]+)\/([^/]+)$/)
+      if (specMatch) {
+        const [, uniSlug, prog, specSlug] = specMatch
+        return hasSpecJson(uniSlug, prog, specSlug)
+      }
 
-    return {
-      url: `${BASE}${path}`,
-      lastModified,
-      changeFrequency: freq,
-      priority,
-    }
-  })
+      return true
+    })
+    .map(path => {
+      const { priority, freq } = urlMeta(path)
+
+      // For /universities/{slug}/mba paths, use content JSON file mtime as lastmod
+      const mbaMatch = path.match(/^\/universities\/([^/]+)\/mba$/)
+      const lastModified = mbaMatch ? getContentLastMod(mbaMatch[1], 'mba') : now
+
+      return {
+        url: `${BASE}${path}`,
+        lastModified,
+        changeFrequency: freq,
+        priority,
+      }
+    })
 
   // ── Tool pages (not in registry — hardcoded static) ───────────────────────
   const toolPages: MetadataRoute.Sitemap = [
+    { url: `${BASE}/fees`,                     lastModified: now, changeFrequency: 'weekly',  priority: 0.85 },
     { url: `${BASE}/tools`,                   lastModified: now, changeFrequency: 'monthly', priority: 0.80 },
     { url: `${BASE}/tools/emi-calculator`,    lastModified: now, changeFrequency: 'monthly', priority: 0.78 },
     { url: `${BASE}/tools/cgpa-calculator`,   lastModified: now, changeFrequency: 'monthly', priority: 0.75 },
@@ -123,8 +147,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogPages: MetadataRoute.Sitemap = getPublishedPosts().map(post => ({
     url: `${BASE}/blog/${post.slug}`,
     lastModified: new Date(post.publishedAt),
-    changeFrequency: 'yearly' as const,
-    priority: 0.75,
+    changeFrequency: 'monthly' as const,
+    priority: 0.85,
+  }))
+
+  // ── Coupon pages ──────────────────────────────────────────────────────────
+  const couponPages: MetadataRoute.Sitemap = COUPON_PAGE_SLUGS.map(slug => ({
+    url: `${BASE}/coupons/${slug}`,
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
+    priority: 0.85,
   }))
 
   // ── Guides ────────────────────────────────────────────────────────────────
@@ -140,5 +172,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // in the sitemap metadata route. Verify pages will be added once Supabase
   // env vars are configured on Vercel and the import issue is resolved.
 
-  return [...registryPages, ...toolPages, ...blogPages, ...guidePages]
+  return [...registryPages, ...toolPages, ...blogPages, ...couponPages, ...guidePages]
 }

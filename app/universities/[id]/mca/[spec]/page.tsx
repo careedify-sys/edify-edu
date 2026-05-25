@@ -6,6 +6,7 @@ import { getMasterSyllabus } from '@/lib/content'
 import { getProgramSpecParams, resolveSpecName } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
 import { getTitleName, shortenSpec, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
+import { getSpecPageContent } from '@/lib/data/page-content'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
 export async function generateStaticParams() {
@@ -42,7 +43,9 @@ export async function generateMetadata(
     keywords: syllabus?.metaKeywords || undefined,
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/mca/${specSlug}` },
     openGraph: { title, description, type: 'website' },
-    robots: { index: true, follow: true },
+    robots: getSpecPageContent(id, 'mca', specSlug)
+      ? { index: true, follow: true }
+      : { index: false, follow: true },
   }
 }
 

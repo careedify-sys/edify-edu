@@ -5,6 +5,7 @@ import { UNIVERSITIES, getUniversityById, specSlug as getSpecSlug, specName as g
 import type { Program } from '@/lib/data'
 import { getTitleName, clampTitle, clampDescription, compactFee, shortenSpec } from '@/lib/seo-title'
 import UniSpecBody from '@/components/UniSpecBody'
+import { getSpecPageContent } from '@/lib/data/page-content'
 
 const PM: Record<string, Program> = {
   'mba': 'MBA', 'mca': 'MCA', 'bba': 'BBA', 'bca': 'BCA', 'ba': 'BA',
@@ -51,7 +52,9 @@ export async function generateMetadata(
       title, description, type: 'website',
       images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630 }],
     },
-    robots: { index: true, follow: true },
+    robots: getSpecPageContent(id, program.toLowerCase(), specSlug)
+      ? { index: true, follow: true }
+      : { index: false, follow: true },
   }
 }
 

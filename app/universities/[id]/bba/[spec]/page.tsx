@@ -5,6 +5,7 @@ import { getUniversityById } from '@/lib/data'
 import { getProgramSpecParams, resolveSpecName } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
 import { getTitleName, shortenSpec, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
+import { getSpecPageContent } from '@/lib/data/page-content'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
 export async function generateStaticParams() {
@@ -33,7 +34,9 @@ export async function generateMetadata(
     title: clampTitle(`${titleName} BBA ${shortSpec} ${year}: ${fee}, NAAC ${u.naac} | EdifyEdu`),
     description: clampDescription(`${u.name} Online BBA in ${spec} ${year}: ${fee} fees, NAAC ${u.naac}${nirfStr}. UGC-DEB approved 3-year degree. Check syllabus, eligibility & career scope free.`),
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/bba/${specSlug}` },
-    robots: { index: true, follow: true },
+    robots: getSpecPageContent(id, 'bba', specSlug)
+      ? { index: true, follow: true }
+      : { index: false, follow: true },
   }
 }
 
