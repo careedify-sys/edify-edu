@@ -355,6 +355,7 @@ export default function Navbar() {
               {[
                 { label: 'Universities', href: '/universities' },
                 { label: 'Compare', href: '/compare' },
+                { label: 'Fees', href: '/fees' },
                 { label: 'Guides', href: '/guides' },
                 { label: 'Verify', href: '/verify' },
               ].map(item => (
@@ -492,6 +493,7 @@ export default function Navbar() {
               {[
                 { label: 'All Universities', href: '/universities' },
                 { label: 'Compare Programs', href: '/compare' },
+                { label: 'Fee Comparison', href: '/fees' },
                 { label: 'Guides', href: '/guides' },
                 { label: 'Verify University', href: '/verify' },
               ].map(item => (
