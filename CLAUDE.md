@@ -4,6 +4,8 @@ You are working on **EdifyEdu** (edifyedu.in), an independent, commission-free o
 
 **Every response you produce must follow the rules in this file.** No exceptions.
 
+> **Before starting any coding task**, read `CODEBASE_MAP.md` in the project root. It maps every URL to its file, every data source to its location, and every common fix to where to make it. Do not guess file locations — look them up there first.
+
 ---
 
 ## Project Facts (Never Fabricate These)
