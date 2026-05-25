@@ -1,0 +1,2571 @@
+[
+  {
+    "id": "jain-university-online",
+    "name": "JAIN (Deemed-to-be University) Online",
+    "abbr": "JUJOD",
+    "naac": "A++",
+    "nirf": 62,
+    "nirfMgt": 73,
+    "feeMin": 160000,
+    "feeMax": 196000,
+    "emiFrom": 6667,
+    "feeStr": "₹1.60L – ₹1.96L",
+    "emiStr": "₹7K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA",
+      "M.Com",
+      "MA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "amity-university-online",
+    "name": "Amity University Online",
+    "abbr": "AUO",
+    "naac": "A+",
+    "nirf": 22,
+    "nirfMgt": 49,
+    "feeMin": 207000,
+    "feeMax": 225000,
+    "emiFrom": 8625,
+    "feeStr": "₹2.07L – ₹2.25L",
+    "emiStr": "₹9K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA",
+      "B.Com"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "chandigarh-university-online",
+    "name": "Chandigarh University Online",
+    "abbr": "CUO",
+    "naac": "A+",
+    "nirf": 19,
+    "nirfMgt": 32,
+    "feeMin": 165000,
+    "feeMax": 220000,
+    "emiFrom": 6875,
+    "feeStr": "₹1.65L – ₹2.20L",
+    "emiStr": "₹7K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA",
+      "MSc",
+      "MA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "srm-institute-science-technology-online",
+    "name": "SRM Institute of Science and Technology Online",
+    "abbr": "SRMIST",
+    "naac": "A++",
+    "nirf": 11,
+    "nirfMgt": null,
+    "feeMin": 150000,
+    "feeMax": 189000,
+    "emiFrom": 6250,
+    "feeStr": "₹1.50L – ₹1.89L",
+    "emiStr": "₹6K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "M.Com",
+      "BBA",
+      "BCA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "lovely-professional-university-online",
+    "name": "Lovely Professional University Online",
+    "abbr": "LPUO",
+    "naac": "A++",
+    "nirf": 31,
+    "nirfMgt": 44,
+    "feeMin": 161000,
+    "feeMax": 200000,
+    "emiFrom": 6708,
+    "feeStr": "₹1.61L – ₹2L",
+    "emiStr": "₹7K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA",
+      "BA",
+      "M.Com",
+      "MSc",
+      "MA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "dayananda-sagar-university-online",
+    "name": "Dayananda Sagar University Online",
+    "abbr": "DSUO",
+    "naac": "A",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 130000,
+    "feeMax": 130000,
+    "emiFrom": 5000,
+    "feeStr": "₹1.30L",
+    "emiStr": "₹5K/mo",
+    "programs": [
+      "MBA",
+      "BCA",
+      "B.Com",
+      "BBA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "dy-patil-university-online",
+    "name": "D.Y. Patil University, Navi Mumbai Online",
+    "abbr": "DPUNM",
+    "naac": "A",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA"
+    ],
+    "region": "West"
+  },
+  {
+    "id": "upes-online",
+    "name": "University of Petroleum & Energy Studies (UPES) Online",
+    "abbr": "UOPES",
+    "naac": "A",
+    "nirf": 45,
+    "nirfMgt": 36,
+    "feeMin": 175000,
+    "feeMax": 220000,
+    "emiFrom": 7292,
+    "feeStr": "₹1.75L – ₹2.20L",
+    "emiStr": "₹7K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "parul-university-online",
+    "name": "Parul University Online",
+    "abbr": "PUO",
+    "naac": "A++",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA",
+      "B.Com",
+      "BA",
+      "M.Com",
+      "MA"
+    ],
+    "region": "West"
+  },
+  {
+    "id": "amrita-vishwa-vidyapeetham-online",
+    "name": "Amrita Vishwa Vidyapeetham Online",
+    "abbr": "AVVA",
+    "naac": "A++",
+    "nirf": 8,
+    "nirfMgt": 26,
+    "feeMin": 176000,
+    "feeMax": 260000,
+    "emiFrom": 7333,
+    "feeStr": "₹1.76L – ₹2.60L",
+    "emiStr": "₹7K/mo",
+    "programs": [
+      "MBA",
+      "B.Com",
+      "BBA",
+      "BCA",
+      "M.Com"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "mangalayatan-university-online",
+    "name": "Mangalayatan University Online",
+    "abbr": "MUO",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA",
+      "MA",
+      "M.Com",
+      "MSc",
+      "BA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "shoolini-university-online",
+    "name": "Shoolini University Online",
+    "abbr": "SUSO",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 110000,
+    "feeMax": 110000,
+    "emiFrom": 2500,
+    "feeStr": "₹1.10L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA",
+      "B.Com",
+      "MSc",
+      "MA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "manipal-university-jaipur-online",
+    "name": "Manipal University Jaipur (MUJ) Online",
+    "abbr": "MUJOM",
+    "naac": "A+",
+    "nirf": 58,
+    "nirfMgt": 81,
+    "feeMin": 153000,
+    "feeMax": 180000,
+    "emiFrom": 6375,
+    "feeStr": "₹1.53L – ₹1.80L",
+    "emiStr": "₹6K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA",
+      "B.Com",
+      "M.Com",
+      "MSc",
+      "MA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "galgotias-university-online",
+    "name": "Galgotias University Online",
+    "abbr": "GUO",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": 101,
+    "feeMin": 76200,
+    "feeMax": 86400,
+    "emiFrom": 3175,
+    "feeStr": "₹76K – ₹86K",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA",
+      "M.Com",
+      "MA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "sikkim-manipal-university-online",
+    "name": "Sikkim Manipal University Online",
+    "abbr": "SMUOM",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 120000,
+    "feeMax": 120000,
+    "emiFrom": 2500,
+    "feeStr": "₹1.20L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "B.Com",
+      "BA",
+      "M.Com",
+      "MA"
+    ],
+    "region": "East"
+  },
+  {
+    "id": "symbiosis-university-online",
+    "name": "Symbiosis School for Online and Digital Learning (SSODL), Pune Online",
+    "abbr": "SSODL",
+    "naac": "A++",
+    "nirf": 24,
+    "nirfMgt": 11,
+    "feeMin": 315000,
+    "feeMax": 370000,
+    "emiFrom": 13125,
+    "feeStr": "₹3.15L – ₹3.70L",
+    "emiStr": "₹13K/mo",
+    "programs": [
+      "MBA",
+      "BBA",
+      "BCA",
+      "MSc",
+      "BSc",
+      "MA"
+    ],
+    "region": "West"
+  },
+  {
+    "id": "chitkara-university-online",
+    "name": "Chitkara University Online",
+    "abbr": "CUCDO",
+    "naac": "A+",
+    "nirf": 54,
+    "nirfMgt": null,
+    "feeMin": 200000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "BBA",
+      "BCA",
+      "B.Com"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "yenepoya-university-online",
+    "name": "Yenepoya (Deemed to be University) Online",
+    "abbr": "YUO",
+    "naac": "A+",
+    "nirf": 85,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "B.Com",
+      "BBA",
+      "BCA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "sharda-university-online",
+    "name": "Sharda University Online",
+    "abbr": "SUO",
+    "naac": "A+",
+    "nirf": 87,
+    "nirfMgt": null,
+    "feeMin": 150000,
+    "feeMax": 150000,
+    "emiFrom": 2500,
+    "feeStr": "₹1.50L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "BCA",
+      "M.Com",
+      "BA",
+      "BBA",
+      "MCA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "vignan-university-online",
+    "name": "Vignan's Foundation for Science, Technology & Research Online",
+    "abbr": "VFSTR",
+    "naac": "A+",
+    "nirf": 75,
+    "nirfMgt": null,
+    "feeMin": 110000,
+    "feeMax": 110000,
+    "emiFrom": 2500,
+    "feeStr": "₹1.10L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "manonmaniam-sundaranar-university-online",
+    "name": "Manonmaniam Sundaranar University Online",
+    "abbr": "MSUO",
+    "naac": "A",
+    "nirf": 151,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MA",
+      "BA",
+      "B.Com",
+      "BBA",
+      "M.Com"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "nmims-online",
+    "name": "NMIMS (Narsee Monjee Institute of Management Studies) Online",
+    "abbr": "NMIMS",
+    "naac": "A++",
+    "nirf": 52,
+    "nirfMgt": 17,
+    "feeMin": 196000,
+    "feeMax": 220000,
+    "emiFrom": 8167,
+    "feeStr": "₹1.96L – ₹2.20L",
+    "emiStr": "₹8K/mo",
+    "programs": [
+      "MBA",
+      "BBA",
+      "B.Com"
+    ],
+    "region": "West"
+  },
+  {
+    "id": "manipal-academy-higher-education-online",
+    "name": "Manipal Academy of Higher Education (MAHE) Online",
+    "abbr": "MAHEO",
+    "naac": "A++",
+    "nirf": 3,
+    "nirfMgt": 999,
+    "feeMin": 292000,
+    "feeMax": 292000,
+    "emiFrom": 12167,
+    "feeStr": "₹2.92L",
+    "emiStr": "₹12K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "B.Com",
+      "MSc"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "kl-university-online",
+    "name": "Koneru Lakshmaiah Education Foundation (KL University) Online",
+    "abbr": "KLEFU",
+    "naac": "A++",
+    "nirf": 26,
+    "nirfMgt": 70,
+    "feeMin": 65500,
+    "feeMax": 65500,
+    "emiFrom": 2729,
+    "feeStr": "₹66K",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "vtu-online",
+    "name": "Visvesvaraya Technological University (VTU) Online",
+    "abbr": "VTU",
+    "naac": "A+",
+    "nirf": 100,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "integral-university-online",
+    "name": "Integral University Online",
+    "abbr": "IUO",
+    "naac": "A+",
+    "nirf": 101,
+    "nirfMgt": null,
+    "feeMin": 110000,
+    "feeMax": 110000,
+    "emiFrom": 2500,
+    "feeStr": "₹1.10L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "BCA",
+      "B.Com",
+      "BA",
+      "MA",
+      "M.Com",
+      "MSc",
+      "MCA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "manav-rachna-online",
+    "name": "Manav Rachna Online",
+    "abbr": "MRCDO",
+    "naac": "A++",
+    "nirf": 71,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "M.Com",
+      "BA",
+      "B.Com",
+      "BBA",
+      "BCA",
+      "MA",
+      "MCA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "karnataka-state-open-university-online",
+    "name": "Karnataka State Open University (KSOU) Online",
+    "abbr": "KSOU",
+    "naac": "A++",
+    "nirf": 68,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "B.Com",
+      "BA",
+      "BBA",
+      "BCA",
+      "MA",
+      "M.Com",
+      "MCA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "bharathidasan-university-online",
+    "name": "Bharathidasan University Online",
+    "abbr": "BUO",
+    "naac": "A+",
+    "nirf": 36,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "BBA",
+      "BA",
+      "MA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "hindustan-institute-technology-online",
+    "name": "Hindustan Institute of Technology and Science (CODE) Online",
+    "abbr": "HITS",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": 101,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "BCA",
+      "B.Com",
+      "BBA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "guru-ghasidas-vishwavidyalaya-online",
+    "name": "Guru Ghasidas Vishwavidyalaya (GGU) Online",
+    "abbr": "GGV",
+    "naac": "A++",
+    "nirf": 107,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "B.Com",
+      "MA",
+      "M.Com",
+      "BCA",
+      "MCA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "dr-babasaheb-ambedkar-open-university-online",
+    "name": "Dr. Babasaheb Ambedkar Open University Online",
+    "abbr": "DBAOU",
+    "naac": "A++",
+    "nirf": 3,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BCA",
+      "B.Com",
+      "MA",
+      "M.Com"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "marwadi-university-online",
+    "name": "Marwadi University Online",
+    "abbr": "MU",
+    "naac": "A+",
+    "nirf": 100,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "B.Com",
+      "BBA",
+      "BCA",
+      "MA",
+      "MSc",
+      "MCA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "pp-savani-university-online",
+    "name": "P P Savani University Online",
+    "abbr": "PPSU",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "BBA",
+      "M.Com",
+      "BCA",
+      "MA",
+      "MSc"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "university-of-mysore-online",
+    "name": "University of Mysore Online",
+    "abbr": "UM",
+    "naac": "A",
+    "nirf": 71,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA",
+      "B.Com",
+      "M.Com"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "aligarh-muslim-university-online",
+    "name": "Aligarh Muslim University Online",
+    "abbr": "AMUD",
+    "naac": "A+",
+    "nirf": 9,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "BA",
+      "B.Com",
+      "MA",
+      "M.Com"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "gujarat-university-online",
+    "name": "Gujarat University Online",
+    "abbr": "GUDO",
+    "naac": "A+",
+    "nirf": 74,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "B.Com",
+      "BA",
+      "M.Com",
+      "BCA",
+      "MA",
+      "MSc"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "charusat-university-online",
+    "name": "CHARUSAT (Charotar University of Science and Online",
+    "abbr": "CUS",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BCA",
+      "BBA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "gls-university-online",
+    "name": "GLS University Online",
+    "abbr": "GUDO",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "BBA",
+      "BCA",
+      "B.Com",
+      "M.Com",
+      "MCA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "maharishi-markandeshwar-university-online",
+    "name": "Maharishi Markandeshwar (Deemed to be University) Online",
+    "abbr": "MMU",
+    "naac": "A++",
+    "nirf": 85,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BCA",
+      "B.Com",
+      "BBA",
+      "MSc"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "mizoram-university-online",
+    "name": "Mizoram University (MZU) Online",
+    "abbr": "MU",
+    "naac": "A",
+    "nirf": 82,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MA"
+    ],
+    "region": "East"
+  },
+  {
+    "id": "vivekananda-global-university-online",
+    "name": "Vivekananda Global University Online",
+    "abbr": "VGUO",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "BBA",
+      "BCA",
+      "BA",
+      "MSc",
+      "MA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "dr-mgr-educational-research-institute-online",
+    "name": "Dr. MGR Educational and Research Institute Online",
+    "abbr": "DMERI",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 136000,
+    "feeMax": 141000,
+    "emiFrom": 5667,
+    "feeStr": "₹1.36L – ₹1.41L",
+    "emiStr": "₹6K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "uttaranchal-university-online",
+    "name": "Uttaranchal University Online",
+    "abbr": "UUUDO",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 110000,
+    "feeMax": 110000,
+    "emiFrom": 2500,
+    "feeStr": "₹1.10L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA",
+      "BA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "andhra-university-online",
+    "name": "Andhra University Online",
+    "abbr": "AUOA",
+    "naac": "A++",
+    "nirf": 23,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "MA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "sgt-university-online",
+    "name": "SGT University Online",
+    "abbr": "SUDO",
+    "naac": "A+",
+    "nirf": 101,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "B.Com",
+      "BBA",
+      "BCA",
+      "MCA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "central-university-himachal-pradesh-online",
+    "name": "Central University of Himachal Pradesh Online",
+    "abbr": "CUHP",
+    "naac": "A+",
+    "nirf": 151,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MA",
+      "MCA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "mahatma-gandhi-university-online",
+    "name": "Mahatma Gandhi University Online",
+    "abbr": "MGU",
+    "naac": "A",
+    "nirf": 43,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "vit-university-online",
+    "name": "Vellore Institute of Science and Technology (VIT Online",
+    "abbr": "VIST",
+    "naac": "A++",
+    "nirf": 14,
+    "nirfMgt": null,
+    "feeMin": 160000,
+    "feeMax": 160000,
+    "emiFrom": 6667,
+    "feeStr": "₹1.60L",
+    "emiStr": "₹7K/mo",
+    "programs": [
+      "MBA",
+      "MSc"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "karunya-university-online",
+    "name": "Karunya Institute of Technology and Sciences (KCODE) Online",
+    "abbr": "KITS",
+    "naac": "A++",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "B.Com"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "kurukshetra-university-online",
+    "name": "Kurukshetra University Online",
+    "abbr": "KUO",
+    "naac": "A++",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 102000,
+    "feeMax": 102000,
+    "emiFrom": 4250,
+    "feeStr": "₹1.02L",
+    "emiStr": "₹4K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "B.Com",
+      "M.Com"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "sastra-university-online",
+    "name": "SASTRA Deemed University Online",
+    "abbr": "SDUO",
+    "naac": "A++",
+    "nirf": 29,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "dr-dy-patil-vidyapeeth-online",
+    "name": "Dr. D.Y. Patil Vidyapeeth, Pune – Centre for Online Learning (DPU-COL) Online",
+    "abbr": "DDPVP",
+    "naac": "A++",
+    "nirf": 41,
+    "nirfMgt": null,
+    "feeMin": 189400,
+    "feeMax": 189400,
+    "emiFrom": 7892,
+    "feeStr": "₹1.89L",
+    "emiStr": "₹8K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "West"
+  },
+  {
+    "id": "jamia-millia-islamia-online",
+    "name": "Jamia Millia Islamia (JMI) Online",
+    "abbr": "JMI",
+    "naac": "A++",
+    "nirf": 4,
+    "nirfMgt": 28,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "christ-university-online",
+    "name": "Christ (Deemed to be University) Online",
+    "abbr": "CUO",
+    "naac": "A++",
+    "nirf": 63,
+    "nirfMgt": 57,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "B.Com",
+      "BBA",
+      "MCA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "shobhit-university-online",
+    "name": "Shobhit Institute of Engineering & Technology (Shobhit Online",
+    "abbr": "SIET",
+    "naac": "A",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "bharati-vidyapeeth-university-online",
+    "name": "Bharati Vidyapeeth (Deemed to be University) Online",
+    "abbr": "BVUO",
+    "naac": "A+",
+    "nirf": 59,
+    "nirfMgt": null,
+    "feeMin": 160000,
+    "feeMax": 160000,
+    "emiFrom": 6667,
+    "feeStr": "₹1.60L",
+    "emiStr": "₹7K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA"
+    ],
+    "region": "West"
+  },
+  {
+    "id": "assam-don-bosco-university-online",
+    "name": "Assam Don Bosco University Online",
+    "abbr": "ADBUC",
+    "naac": "A",
+    "nirf": 151,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA",
+      "MA"
+    ],
+    "region": "East"
+  },
+  {
+    "id": "university-of-lucknow-online",
+    "name": "University of Lucknow Online",
+    "abbr": "ULCDO",
+    "naac": "A++",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "BBA",
+      "B.Com",
+      "M.Com"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "jss-university-online",
+    "name": "JSS Academy of Higher Education & Research (JSS AHER) Online",
+    "abbr": "JAHER",
+    "naac": "A++",
+    "nirf": 21,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "BBA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "alliance-university-online",
+    "name": "Alliance University Online",
+    "abbr": "AU",
+    "naac": "A",
+    "nirf": 71,
+    "nirfMgt": 71,
+    "feeMin": 160000,
+    "feeMax": 175000,
+    "emiFrom": 6667,
+    "feeStr": "₹1.60L – ₹1.75L",
+    "emiStr": "₹7K/mo",
+    "programs": [
+      "MBA",
+      "B.Com",
+      "BBA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "desh-bhagat-university-online",
+    "name": "Desh Bhagat University Online",
+    "abbr": "DBUO",
+    "naac": "A",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "BBA",
+      "B.Com"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "ganpat-university-online",
+    "name": "Ganpat University Online",
+    "abbr": "GU",
+    "naac": "A",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA"
+    ],
+    "region": "West"
+  },
+  {
+    "id": "amet-university-online",
+    "name": "AMET University (Academy of Maritime Education and Online",
+    "abbr": "AUME",
+    "naac": "A",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "BBA",
+      "B.Com"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "guru-nanak-dev-university-online",
+    "name": "Guru Nanak Dev University Online",
+    "abbr": "GNDUO",
+    "naac": "A++",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "M.Com"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "jaypee-university-online",
+    "name": "Jaypee Institute of Information Technology Online",
+    "abbr": "JIITO",
+    "naac": "A",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 175000,
+    "feeMax": 175000,
+    "emiFrom": 7292,
+    "feeStr": "₹1.75L",
+    "emiStr": "₹7K/mo",
+    "programs": [
+      "MBA",
+      "BBA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "savitribai-phule-pune-university-online",
+    "name": "Savitribai Phule Pune University (SPPU) Online",
+    "abbr": "SPPUC",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "BBA",
+      "BCA"
+    ],
+    "region": "West"
+  },
+  {
+    "id": "srm-university-sikkim-online",
+    "name": "SRM University Sikkim Online",
+    "abbr": "SRMUS",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 117000,
+    "feeMax": 170000,
+    "emiFrom": 4875,
+    "feeStr": "₹1.17L – ₹1.70L",
+    "emiStr": "₹5K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA"
+    ],
+    "region": "East"
+  },
+  {
+    "id": "sathyabama-university-online",
+    "name": "Sathyabama Institute of Science and Technology (Centre Online",
+    "abbr": "SIST",
+    "naac": "A++",
+    "nirf": 53,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MSc",
+      "BBA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "vit-vellore-online",
+    "name": "Vellore Institute of Technology Online",
+    "abbr": "VITO",
+    "naac": "A++",
+    "nirf": 11,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MCA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "karunya-kcode-online",
+    "name": "Karunya Institute of Technology and Sciences (KCODE Online",
+    "abbr": "KITS",
+    "naac": "A++",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "B.Com"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "anna-university-online",
+    "name": "Anna University Online",
+    "abbr": "AUDE",
+    "naac": "A++",
+    "nirf": 13,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "vels-university-online",
+    "name": "Vels Institute of Science, Technology & Advanced Online",
+    "abbr": "VISTA",
+    "naac": "A",
+    "nirf": 101,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "BBA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "northcap-university-online",
+    "name": "The NorthCap University Online",
+    "abbr": "TNUO",
+    "naac": "A",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "BBA",
+      "B.Com"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "noida-international-university-online",
+    "name": "Noida International University Online",
+    "abbr": "NIUO",
+    "naac": "A",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 88500,
+    "feeMax": 97600,
+    "emiFrom": 3688,
+    "feeStr": "₹89K – ₹98K",
+    "emiStr": "₹4K/mo",
+    "programs": [
+      "MBA",
+      "BBA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "iift-online",
+    "name": "Indian Institute of Foreign Trade (IIFT) Online",
+    "abbr": "IIFT",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": 17,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "gujarat-technological-university-online",
+    "name": "Gujarat Technological University (GTU) Online",
+    "abbr": "GTU",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "bits-pilani-online",
+    "name": "Birla Institute of Technology (BIT) Mesra Online",
+    "abbr": "BITM",
+    "naac": "A",
+    "nirf": 92,
+    "nirfMgt": 97,
+    "feeMin": 178000,
+    "feeMax": 178000,
+    "emiFrom": 7417,
+    "feeStr": "₹1.78L",
+    "emiStr": "₹7K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "alvas-college-online",
+    "name": "Alva's College - ACU Online",
+    "abbr": "ACAO",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "datta-meghe-university-online",
+    "name": "Datta Meghe Institute of Higher Education & Research Online",
+    "abbr": "DMIHE",
+    "naac": "A++",
+    "nirf": 49,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "West"
+  },
+  {
+    "id": "kiit-university-online",
+    "name": "KIIT Deemed to be University Online",
+    "abbr": "KDU",
+    "naac": "A++",
+    "nirf": 17,
+    "nirfMgt": 68,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "M.Com",
+      "B.Com",
+      "MA"
+    ],
+    "region": "East"
+  },
+  {
+    "id": "centurion-university-online",
+    "name": "Centurion University of Technology and Management Online",
+    "abbr": "CUTM",
+    "naac": "A+",
+    "nirf": 151,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "East"
+  },
+  {
+    "id": "guru-kashi-university-online",
+    "name": "Guru Kashi University Online",
+    "abbr": "GKUO",
+    "naac": "A",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MCA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "jaipur-national-university-online",
+    "name": "Jaipur National University Online",
+    "abbr": "JNUJ",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "BBA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "bs-abdur-rahman-university-online",
+    "name": "B.S. Abdur Rahman Crescent Institute of Science and Online",
+    "abbr": "BARCI",
+    "naac": "A+",
+    "nirf": 102,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "srm-institute-science-technology-online",
+    "name": "SRM Institute of Science and Technology Online",
+    "abbr": "SRMIST",
+    "naac": "A++",
+    "nirf": 18,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 189000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹1.89L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "M.Com",
+      "BBA",
+      "BCA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "university-of-madras-online",
+    "name": "University of Madras Online",
+    "abbr": "UMDE",
+    "naac": "A++",
+    "nirf": 64,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "kalasalingam-university-online",
+    "name": "Kalasalingam Academy of Research and Education (KARE) Online",
+    "abbr": "KARE",
+    "naac": "A++",
+    "nirf": 28,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "alagappa-university-online",
+    "name": "Alagappa University Online",
+    "abbr": "AUOP",
+    "naac": "A",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "B.Com"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "bharathiar-university-online",
+    "name": "Bharathiar University Online",
+    "abbr": "BUDE",
+    "naac": "A++",
+    "nirf": 44,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "BBA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "sri-ramachandra-university-online",
+    "name": "Sri Ramachandra Institute of Higher Education and Online",
+    "abbr": "SRIHE",
+    "naac": "A++",
+    "nirf": 60,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "BSc"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "icfai-university-online",
+    "name": "ICFAI Foundation for Higher Education Online",
+    "abbr": "IFHEO",
+    "naac": "A++",
+    "nirf": 39,
+    "nirfMgt": null,
+    "feeMin": 120000,
+    "feeMax": 120000,
+    "emiFrom": 2500,
+    "feeStr": "₹1.20L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "shiv-nadar-university-online",
+    "name": "Shiv Nadar University Online",
+    "abbr": "SNUE",
+    "naac": "A",
+    "nirf": 62,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "gla-university-online",
+    "name": "GLA University Online",
+    "abbr": "GUO",
+    "naac": "A+",
+    "nirf": 101,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA",
+      "B.Com"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "jagannath-university-online",
+    "name": "Jagan Nath University Online",
+    "abbr": "JNU",
+    "naac": "A",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "teerthanker-mahaveer-university-online",
+    "name": "Teerthanker Mahaveer University Online",
+    "abbr": "TMUO",
+    "naac": "A",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "subharti-university-online",
+    "name": "Swami Vivekanand Subharti University Online",
+    "abbr": "SVSUO",
+    "naac": "A",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 200000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "arka-jain-university-online",
+    "name": "ARKA JAIN University – JGI Online (arkajain.edu.in) Online",
+    "abbr": "AJUJO",
+    "naac": "A",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 108500,
+    "feeMax": 108500,
+    "emiFrom": 4521,
+    "feeStr": "₹1.08L",
+    "emiStr": "₹5K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "East"
+  },
+  {
+    "id": "jawaharlal-nehru-university-online",
+    "name": "JAWAHARLAL NEHRU UNIVERSITY Online",
+    "abbr": "JNU",
+    "naac": "A++",
+    "nirf": 2,
+    "nirfMgt": null,
+    "feeMin": 90000,
+    "feeMax": 200000,
+    "emiFrom": 4500,
+    "feeStr": "₹90K – ₹2L",
+    "emiStr": "₹5K/mo",
+    "programs": [
+      "MA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "jamia-hamdard-online",
+    "name": "JAMIA HAMDARD Online",
+    "abbr": "JH",
+    "naac": "A+",
+    "nirf": 47,
+    "nirfMgt": 87,
+    "feeMin": 75000,
+    "feeMax": 180000,
+    "emiFrom": 3125,
+    "feeStr": "₹75K – ₹1.80L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "B.Com",
+      "BBA",
+      "BCA",
+      "MA",
+      "MBA",
+      "MCA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "kalinga-institute-industrial-technology-online",
+    "name": "KALINGA INSTITUTE OF INDUSTRIAL TECHNOLOGY Online",
+    "abbr": "KIOIT",
+    "naac": "A++",
+    "nirf": 15,
+    "nirfMgt": null,
+    "feeMin": 90000,
+    "feeMax": 200000,
+    "emiFrom": 4500,
+    "feeStr": "₹90K – ₹2L",
+    "emiStr": "₹5K/mo",
+    "programs": [
+      "BA",
+      "B.Com",
+      "MA",
+      "M.Com"
+    ],
+    "region": "East"
+  },
+  {
+    "id": "university-of-kerala-online",
+    "name": "UNIVERSITY OF KERALA Online",
+    "abbr": "UOK",
+    "naac": "A++",
+    "nirf": 21,
+    "nirfMgt": null,
+    "feeMin": 90000,
+    "feeMax": 200000,
+    "emiFrom": 3750,
+    "feeStr": "₹90K – ₹2L",
+    "emiStr": "₹4K/mo",
+    "programs": [
+      "B.Com",
+      "BBA",
+      "M.Com",
+      "MBA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "bits-pilani-work-integrated-online",
+    "name": "BITS Pilani Work Integrated Learning Programmes (WILP) Online",
+    "abbr": "BPWIL",
+    "naac": "A+",
+    "nirf": 7,
+    "nirfMgt": null,
+    "feeMin": 298400,
+    "feeMax": 298400,
+    "emiFrom": 12433,
+    "feeStr": "₹2.98L",
+    "emiStr": "₹12K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "graphic-era-university-online",
+    "name": "GRAPHIC ERA UNIVERSITY Online",
+    "abbr": "GEU",
+    "naac": "A+",
+    "nirf": 48,
+    "nirfMgt": 52,
+    "feeMin": 75000,
+    "feeMax": 180000,
+    "emiFrom": 3125,
+    "feeStr": "₹75K – ₹1.80L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "B.Com",
+      "BBA",
+      "BCA",
+      "MBA",
+      "MCA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "devi-ahilya-vishwavidyalaya-online",
+    "name": "DEVI AHILYA VISHWAVIDYALAYA Online",
+    "abbr": "DAV",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 75000,
+    "feeMax": 180000,
+    "emiFrom": 3125,
+    "feeStr": "₹75K – ₹1.80L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MA",
+      "MBA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "madurai-kamaraj-university-online",
+    "name": "MADURAI KAMARAJ UNIVERSITY Online",
+    "abbr": "MKU",
+    "naac": "A+",
+    "nirf": 85,
+    "nirfMgt": null,
+    "feeMin": 75000,
+    "feeMax": 180000,
+    "emiFrom": 3125,
+    "feeStr": "₹75K – ₹1.80L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "BA",
+      "B.Com",
+      "BBA",
+      "MA",
+      "M.Com",
+      "BCA",
+      "MBA",
+      "MCA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "shanmugha-arts-science-technology-research-online",
+    "name": "SHANMUGHA ARTS, SCIENCE, TECHNOLOGY & RESEARCH ACADEMY Online",
+    "abbr": "SASTR",
+    "naac": "A+",
+    "nirf": 57,
+    "nirfMgt": null,
+    "feeMin": 75000,
+    "feeMax": 200000,
+    "emiFrom": 3125,
+    "feeStr": "₹75K – ₹2L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "B.Com",
+      "BBA",
+      "BCA",
+      "MA",
+      "M.Com",
+      "MBA",
+      "MCA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "university-of-mumbai-online",
+    "name": "UNIVERSITY OF MUMBAI Online",
+    "abbr": "UOM",
+    "naac": "A++",
+    "nirf": 54,
+    "nirfMgt": null,
+    "feeMin": 90000,
+    "feeMax": 200000,
+    "emiFrom": 3750,
+    "feeStr": "₹90K – ₹2L",
+    "emiStr": "₹4K/mo",
+    "programs": [
+      "MA",
+      "BBA",
+      "BCA",
+      "MBA",
+      "MCA"
+    ],
+    "region": "West"
+  },
+  {
+    "id": "university-of-jammu-online",
+    "name": "UNIVERSITY OF JAMMU Online",
+    "abbr": "UOJ",
+    "naac": "A+",
+    "nirf": 51,
+    "nirfMgt": null,
+    "feeMin": 75000,
+    "feeMax": 180000,
+    "emiFrom": 4000,
+    "feeStr": "₹75K – ₹1.80L",
+    "emiStr": "₹4K/mo",
+    "programs": [
+      "MA",
+      "M.Com"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "shivaji-university-online",
+    "name": "SHIVAJI UNIVERSITY Online",
+    "abbr": "SU",
+    "naac": "A++",
+    "nirf": 65,
+    "nirfMgt": null,
+    "feeMin": 90000,
+    "feeMax": 200000,
+    "emiFrom": 3750,
+    "feeStr": "₹90K – ₹2L",
+    "emiStr": "₹4K/mo",
+    "programs": [
+      "M.Com",
+      "MBA"
+    ],
+    "region": "West"
+  },
+  {
+    "id": "banasthali-vidyapith-online",
+    "name": "BANASTHALI VIDYAPITH Online",
+    "abbr": "BV",
+    "naac": "A++",
+    "nirf": 66,
+    "nirfMgt": null,
+    "feeMin": 90000,
+    "feeMax": 200000,
+    "emiFrom": 3750,
+    "feeStr": "₹90K – ₹2L",
+    "emiStr": "₹4K/mo",
+    "programs": [
+      "BA",
+      "B.Com",
+      "MA",
+      "M.Com",
+      "MBA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "guru-gobind-singh-indraprastha-university-online",
+    "name": "GURU GOBIND SINGH INDRAPRASTHA VISHWAVIDYALAYA Online",
+    "abbr": "GGSIV",
+    "naac": "A++",
+    "nirf": 93,
+    "nirfMgt": 76,
+    "feeMin": 90000,
+    "feeMax": 200000,
+    "emiFrom": 4500,
+    "feeStr": "₹90K – ₹2L",
+    "emiStr": "₹5K/mo",
+    "programs": [
+      "B.Com",
+      "BBA",
+      "MA",
+      "MCA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "bangalore-university-online",
+    "name": "BANGALORE UNIVERSITY Online",
+    "abbr": "BU",
+    "naac": "A",
+    "nirf": 65,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 150000,
+    "emiFrom": 3000,
+    "feeStr": "₹60K – ₹1.50L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "B.Com",
+      "MA",
+      "M.Com"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "iiit-bangalore-online",
+    "name": "INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY Online",
+    "abbr": "IIOIT",
+    "naac": "A",
+    "nirf": 55,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 150000,
+    "emiFrom": 3000,
+    "feeStr": "₹60K – ₹1.50L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MCA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "dayalbagh-educational-institute-online",
+    "name": "DAYAL BAGH EDUCATIONAL INSTITUTE Online",
+    "abbr": "DBEI",
+    "naac": "A+",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 75000,
+    "feeMax": 180000,
+    "emiFrom": 4000,
+    "feeStr": "₹75K – ₹1.80L",
+    "emiStr": "₹4K/mo",
+    "programs": [
+      "BA",
+      "B.Com",
+      "BBA",
+      "MA",
+      "M.Com"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "adichunchanagiri-university-online",
+    "name": "ADICHUNCHANAGIRI UNIVERSITY Online",
+    "abbr": "AU",
+    "naac": "A+",
+    "nirf": 99,
+    "nirfMgt": null,
+    "feeMin": 75000,
+    "feeMax": 180000,
+    "emiFrom": 3125,
+    "feeStr": "₹75K – ₹1.80L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "bharath-university-online",
+    "name": "BHARATH INSTITUTE OF HIGHER EDUCATION AND RESEARCH Online",
+    "abbr": "BIOHE",
+    "naac": "A+",
+    "nirf": 76,
+    "nirfMgt": null,
+    "feeMin": 75000,
+    "feeMax": 180000,
+    "emiFrom": 4000,
+    "feeStr": "₹75K – ₹1.80L",
+    "emiStr": "₹4K/mo",
+    "programs": [
+      "BA",
+      "B.Com",
+      "M.Com"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "chhatrapati-shahu-ji-maharaj-university-online",
+    "name": "CHATRAPATI SHAHUJI MAHARAJ UNIVERSITY Online",
+    "abbr": "CSMU",
+    "naac": "B++",
+    "nirf": 99,
+    "nirfMgt": null,
+    "feeMin": 50000,
+    "feeMax": 120000,
+    "emiFrom": 2083,
+    "feeStr": "₹50K – ₹1.20L",
+    "emiStr": "₹2K/mo",
+    "programs": [
+      "B.Com",
+      "BBA",
+      "BCA",
+      "M.Com",
+      "MBA",
+      "MCA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "deen-dayal-upadhyay-gorakhpur-university-online",
+    "name": "DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY Online",
+    "abbr": "DDUGU",
+    "naac": "A",
+    "nirf": 99,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 150000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹1.50L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "B.Com",
+      "BBA",
+      "MA",
+      "M.Com",
+      "MBA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "guru-jambheshwar-university-online",
+    "name": "GURU JAMBHESHWAR UNIVERSITY OF SCIENCE AND TECHNOLOGY Online",
+    "abbr": "GJUOS",
+    "naac": "A",
+    "nirf": 999,
+    "nirfMgt": 101,
+    "feeMin": 60000,
+    "feeMax": 150000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹1.50L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "B.Com",
+      "MA",
+      "M.Com",
+      "MBA",
+      "MCA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "maharshi-dayanand-university-online",
+    "name": "MAHARSHI DAYANAND UNIVERSITY Online",
+    "abbr": "MDU",
+    "naac": "A+",
+    "nirf": 99,
+    "nirfMgt": null,
+    "feeMin": 75000,
+    "feeMax": 180000,
+    "emiFrom": 4000,
+    "feeStr": "₹75K – ₹1.80L",
+    "emiStr": "₹4K/mo",
+    "programs": [
+      "BA",
+      "MA",
+      "M.Com"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "mahatma-jyotiba-phule-rohilkhand-university-online",
+    "name": "MAHATMA JYOTIBA PHULE ROHILKHAND UNIVERSITY Online",
+    "abbr": "MJPRU",
+    "naac": "A+",
+    "nirf": 99,
+    "nirfMgt": null,
+    "feeMin": 75000,
+    "feeMax": 180000,
+    "emiFrom": 4000,
+    "feeStr": "₹75K – ₹1.80L",
+    "emiStr": "₹4K/mo",
+    "programs": [
+      "BA",
+      "MA",
+      "M.Com"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "mats-university-online",
+    "name": "MATS UNIVERSITY Online",
+    "abbr": "MU",
+    "naac": "A",
+    "nirf": 99,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 150000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹1.50L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "B.Com",
+      "BBA",
+      "BCA",
+      "MBA",
+      "MCA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "meenakshi-academy-higher-education-online",
+    "name": "MEENAKSHI ACADEMY OF HIGHER EDUCATION AND RESEARCH Online",
+    "abbr": "MAOHE",
+    "naac": "A+",
+    "nirf": 99,
+    "nirfMgt": null,
+    "feeMin": 75000,
+    "feeMax": 180000,
+    "emiFrom": 4000,
+    "feeStr": "₹75K – ₹1.80L",
+    "emiStr": "₹4K/mo",
+    "programs": [
+      "BA",
+      "B.Com",
+      "MA"
+    ],
+    "region": "South"
+  },
+  {
+    "id": "mody-university-online",
+    "name": "MODY UNIVERSITY OF SCIENCE AND TECHNOLOGY Online",
+    "abbr": "MUOSA",
+    "naac": "A+",
+    "nirf": 99,
+    "nirfMgt": null,
+    "feeMin": 75000,
+    "feeMax": 180000,
+    "emiFrom": 3125,
+    "feeStr": "₹75K – ₹1.80L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "BA",
+      "B.Com",
+      "BCA",
+      "MA",
+      "M.Com",
+      "MBA",
+      "MCA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "sage-university-online",
+    "name": "SAGE UNIVERSITY Online",
+    "abbr": "SU",
+    "naac": "A",
+    "nirf": 99,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 150000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹1.50L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "BBA",
+      "BCA",
+      "MA",
+      "M.Com",
+      "MBA",
+      "MCA"
+    ],
+    "region": "Central"
+  },
+  {
+    "id": "shree-guru-gobind-singh-tricentenary-university-online",
+    "name": "SHREE GURU GOBIND SINGH TRICENTENARY UNIVERSITY Online",
+    "abbr": "SGGST",
+    "naac": "A",
+    "nirf": 99,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 150000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹1.50L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "B.Com",
+      "BBA",
+      "BCA",
+      "MBA",
+      "MCA"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "shri-ramasamy-memorial-university-online",
+    "name": "SHRI RAMASAMY MEMORIAL UNIVERSITY Online",
+    "abbr": "SRMU",
+    "naac": "A",
+    "nirf": 99,
+    "nirfMgt": null,
+    "feeMin": 60000,
+    "feeMax": 150000,
+    "emiFrom": 2500,
+    "feeStr": "₹60K – ₹1.50L",
+    "emiStr": "₹3K/mo",
+    "programs": [
+      "B.Com",
+      "BBA",
+      "BCA",
+      "M.Com",
+      "MBA",
+      "MCA"
+    ],
+    "region": "East"
+  },
+  {
+    "id": "ignou-online",
+    "name": "Indira Gandhi National Open University (IGNOU) Online",
+    "abbr": "IGNOU",
+    "naac": "A++",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 9600,
+    "feeMax": 66000,
+    "emiFrom": 400,
+    "feeStr": "₹10K – ₹66K",
+    "emiStr": "₹400/mo",
+    "programs": [
+      "MBA",
+      "MCA",
+      "B.Com",
+      "BCA",
+      "BA",
+      "MA",
+      "M.Com"
+    ],
+    "region": "North"
+  },
+  {
+    "id": "op-jindal-global-university-online",
+    "name": "O.P. Jindal Global University Online",
+    "abbr": "JGU",
+    "naac": "A",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 200000,
+    "feeMax": 200000,
+    "emiFrom": 8333,
+    "feeStr": "₹2L",
+    "emiStr": "₹8K/mo",
+    "programs": [
+      "MBA"
+    ],
+    "region": "North"
+  }
+]
