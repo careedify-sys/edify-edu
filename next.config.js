@@ -297,6 +297,16 @@ const nextConfig = {
       { source: '/universities/jamia-hamdard',                           destination: '/universities/jamia-hamdard-online',                                permanent: true },
       { source: '/universities/jamia-hamdard/:path*',                    destination: '/universities/jamia-hamdard-online/:path*',                         permanent: true },
 
+      // 2026-05-25 GSC BrokenSlugs batch — gaps found in coverage audit.
+      // These slugs are ranking on the old broken URL per GSC; ensure both
+      // middleware and next.config cover them so all redirect surfaces agree.
+      { source: '/universities/desh-bhagat-universi',                    destination: '/universities/desh-bhagat-university-online',                       permanent: true },
+      { source: '/universities/desh-bhagat-universi/:path*',             destination: '/universities/desh-bhagat-university-online/:path*',                permanent: true },
+      { source: '/universities/gla-universi',                            destination: '/universities/gla-university-online',                               permanent: true },
+      { source: '/universities/gla-universi/:path*',                     destination: '/universities/gla-university-online/:path*',                        permanent: true },
+      { source: '/universities/noida-internat-universi',                 destination: '/universities/noida-international-university-online',               permanent: true },
+      { source: '/universities/noida-internat-universi/:path*',          destination: '/universities/noida-international-university-online/:path*',        permanent: true },
+
       // CU BBA business-analytics truncated suffix
       { source: '/universities/chandigarh-university-online/bba/business-analytics-specialization-with-data-focuse', destination: '/universities/chandigarh-university-online/bba/business-analytics', permanent: true },
 

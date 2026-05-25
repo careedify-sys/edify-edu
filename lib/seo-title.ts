@@ -193,6 +193,24 @@ export function shortenSpec(spec: string): string {
 }
 
 /**
+ * Collapse a CMS-supplied fee string when min and max are identical, so titles
+ * read "₹77K" instead of "₹77K – ₹77K" or "₹77K - ₹77K". Idempotent for fee
+ * strings that already have a single value, ranges with different min/max, or
+ * non-currency strings. Strips trailing "+" since the leading "from" word is
+ * usually clearer in title context.
+ */
+export function compactFee(fee: string): string {
+  if (!fee) return fee
+  // Match "₹XX – ₹XX" / "₹XX-₹XX" / "₹XX — ₹XX" with same value on both sides
+  const m = fee.match(/^(\s*₹\s*[\d.]+\s*[KLlk]?)\s*[–—\-]\s*(₹\s*[\d.]+\s*[KLlk]?)\s*\+?\s*$/)
+  if (m && m[1].replace(/\s+/g, '') === m[2].replace(/\s+/g, '')) {
+    return m[1].trim()
+  }
+  // Replace en/em dash inside fee range with hyphen for consistency with brand style
+  return fee.replace(/\s*[–—]\s*/g, '-')
+}
+
+/**
  * Clamp a page <title> to ≤60 chars at a word boundary so Google doesn't
  * truncate it in SERPs. If the title already fits, returns it unchanged.
  *

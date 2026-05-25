@@ -3,7 +3,7 @@ import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById, specSlug as getSpecSlug, specName as getSpecName } from '@/lib/data'
 import type { Program } from '@/lib/data'
-import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
+import { getTitleName, clampTitle, clampDescription, compactFee, shortenSpec } from '@/lib/seo-title'
 import UniSpecBody from '@/components/UniSpecBody'
 
 const PM: Record<string, Program> = {
@@ -27,10 +27,15 @@ export async function generateMetadata(
   if (!specVal) return { title: 'Not Found' }
 
   const spec     = getSpecName(specVal)
+  const shortSpec = shortenSpec(spec)
   const year     = new Date().getFullYear()
   const titleName = getTitleName(u.id, u.name, u.abbr)
-  const title     = clampTitle(`${titleName} Online ${program} in ${spec} ${year} — Fees, Syllabus & Admission | EdifyEdu`)
-  const description = clampDescription(`${titleName} Online ${program} with ${spec} specialisation. ${pd?.duration || '2 Years'}, NAAC ${u.naac} accredited, UGC DEB approved. Fees ${pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`}. Check ${year} admission details.`)
+  const fees = compactFee(pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`)
+  const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
+  // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
+  // Uses shortenSpec so long names like "Healthcare Management" stay clampable.
+  const title     = clampTitle(`${titleName} ${program} ${shortSpec} ${year}: ${fees}, NAAC ${u.naac} | EdifyEdu`)
+  const description = clampDescription(`${titleName} Online ${program} in ${spec} ${year}: ${fees} fees, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. See syllabus, career data & honest review free.`)
 
   return {
     title,

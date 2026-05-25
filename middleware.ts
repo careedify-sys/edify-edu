@@ -143,6 +143,29 @@ const OLD_SLUG_REDIRECTS: Record<string, string> = {
   'dy-patil': 'dy-patil-university-online',
   'sathyaba-institut-of-science': 'sathyabama-university-online',
 
+  // 2026-05-25 GSC BrokenSlugs batch — slugs previously handled only by
+  // next.config redirects. Inlining here so www→apex + old-slug collapses
+  // to a single 308 hop instead of two, and so the resolver path skips
+  // the fuzzy fallback on these known cases.
+  'amity': 'amity-university-online',
+  'assam-down-town-universi': 'assam-don-bosco-university-online',
+  'chandigarh': 'chandigarh-university-online',
+  'charotar-universi-of-science': 'charusat-university-online',
+  'galgotia-universi': 'galgotias-university-online',
+  'gujarat-universi': 'gujarat-university-online',
+  'integral-universi': 'integral-university-online',
+  'karunya-institut-of-technolo': 'karunya-university-online',
+  'kurukshe-universi': 'kurukshetra-university-online',
+  'mahatma-gandhi-universi': 'mahatma-gandhi-university-online',
+  'mizoram-universi': 'mizoram-university-online',
+  'mody-universi-of-science': 'mody-university-online',
+  'noida-internat-universi': 'noida-international-university-online',
+  'parul-universi': 'parul-university-online',
+  'sgt-universi': 'sgt-university-online',
+  'sharda-universi': 'sharda-university-online',
+  'shoolini': 'shoolini-university-online',
+  'vignans-foundati-for-science': 'vignan-university-online',
+  'visveswa-technolo-universi': 'vtu-online',
 }
 
 const PROTECTED_PATHS = ['/admin', '/admin/cms', '/blog/write']

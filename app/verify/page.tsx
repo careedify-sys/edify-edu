@@ -6,8 +6,10 @@ import { HelpdeskTeaser } from '@/components/verify/HelpdeskTeaser';
 import { LoginPlaceholder } from '@/components/verify/LoginPlaceholder';
 
 export const metadata = {
-  title: 'Verify University Approvals: UGC-DEB, NAAC, NIRF, AICTE Status Check | edifyedu.in',
-  description: 'Cross-check any online university approval and accreditation status from 5 official sources. UGC-DEB, NAAC grade, NIRF rank, AICTE and AACSB verified for 122+ universities. Free, no login needed. Only on edifyedu.in.',
+  // CTR-tuned (2026-05-25): no em dash, lead with the count and bracket Free hook.
+  // absolute disables the root layout "%s | EdifyEdu" template (we already include the suffix).
+  title: { absolute: 'UGC-DEB, NAAC, NIRF Approval Checker [Free 2026] | EdifyEdu' },
+  description: '122+ online universities cross-checked across 5 official sources (UGC-DEB, NAAC, NIRF, AICTE, AACSB). Verify any approval in 10 seconds. Free, no login at EdifyEdu.',
   keywords: [
     'verify university ugc deb approval',
     'check naac grade university',
@@ -19,8 +21,8 @@ export const metadata = {
     'aicte approval check',
   ],
   openGraph: {
-    title: 'Verify University Approvals: UGC-DEB, NAAC, NIRF Check | edifyedu.in',
-    description: 'The only platform where you can cross-check any online university approval from 5 official sources. Free. No login. 122+ universities tracked.',
+    title: 'UGC-DEB, NAAC, NIRF Approval Checker [Free 2026] | EdifyEdu',
+    description: '122+ online universities cross-checked across 5 official sources (UGC-DEB, NAAC, NIRF, AICTE, AACSB). Verify any approval in 10 seconds. Free, no login.',
     type: 'website',
     url: 'https://edifyedu.in/verify',
   },

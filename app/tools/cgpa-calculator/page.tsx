@@ -3,9 +3,9 @@ import CgpaCalculatorClient from './CgpaCalculatorClient'
 import CgpaQuickConversions from '@/components/cgpa/CgpaQuickConversions'
 
 export const metadata: Metadata = {
-  title: 'CGPA to Percentage Calculator — How to Convert CGPA Instantly | Edify',
+  title: 'CGPA to Percentage Calculator (UGC ×9.5): Free 2026 | EdifyEdu',
   description:
-    'Free CGPA to percentage calculator using UGC formula (CGPA × 9.5). Instant results for all CGPA values. SGPA conversion, grade table & full classification.',
+    '1 click: enter CGPA, get percentage via UGC formula (×9.5). Free, no login. 6.0-10.0 grade table, SGPA conversion & Mumbai Univ variant. Check eligibility.',
   keywords: [
     'cgpa to percentage',
     'cgpa to percentage calculator',
@@ -152,9 +152,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://edifyedu.in/tools/cgpa-calculator' },
   openGraph: {
-    title: 'CGPA to Percentage Calculator 2026 — Convert Instantly | Edify',
+    title: 'CGPA to Percentage Calculator (UGC ×9.5): Free 2026 | EdifyEdu',
     description:
-      'Free CGPA ↔ Percentage converter using UGC formula (CGPA × 9.5). Includes full table for 6.0 to 10.0 CGPA and grade classification.',
+      '1 click: enter CGPA, get percentage via UGC formula (×9.5). Free, no login. 6.0-10.0 grade table, SGPA conversion & Mumbai Univ variant. Check eligibility.',
     url: 'https://edifyedu.in/tools/cgpa-calculator',
     type: 'website',
     images: [
@@ -162,15 +162,15 @@ export const metadata: Metadata = {
         url: 'https://edifyedu.in/og.webp',
         width: 1200,
         height: 630,
-        alt: 'CGPA to Percentage Calculator — Edify',
+        alt: 'CGPA to Percentage Calculator | EdifyEdu',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CGPA to Percentage Calculator 2026 | Edify',
+    title: 'CGPA to Percentage Calculator (UGC ×9.5) 2026 | EdifyEdu',
     description:
-      'Convert any CGPA to percentage using the UGC formula. Free, instant, no login required.',
+      'Free CGPA to percentage converter. UGC formula (×9.5), instant result, no login. Includes 6.0-10.0 grade table and Mumbai University variant.',
   },
 }
 

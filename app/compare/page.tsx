@@ -22,10 +22,13 @@ export async function generateMetadata(
       const nameA = getTitleName(uA.id, uA.name, uA.abbr)
       const nameB = getTitleName(uB.id, uB.name, uB.abbr)
       const canonicalUrl = `https://edifyedu.in/compare?a=${a}&b=${b}`
-      const title = `${nameA} vs ${nameB} Online MBA 2026 — Fees, Rank & Syllabus | EdifyEdu`
-      const description = `Compare ${nameA} and ${nameB} online MBA side by side. See fees, NIRF rank, NAAC grade, specialisations and semester-wise syllabus for both universities.`
+      // CTR-tuned (2026-05-25): pair-first hook, year + bracket review tag, no em dash.
+      const title = `${nameA} vs ${nameB} Online MBA 2026: Fees, NIRF [Review] | EdifyEdu`
+      const description = `${nameA} vs ${nameB} online MBA 2026: side-by-side fees, NIRF rank, NAAC grade, specialisations and semester-wise syllabus. See which fits your budget free.`
       return {
-        title,
+        // absolute disables the root layout's "%s | EdifyEdu" template so the
+        // brand suffix is not duplicated when titles already contain it.
+        title: { absolute: title },
         description,
         alternates: { canonical: canonicalUrl },
         openGraph: { title, description, url: canonicalUrl, type: 'website' },
@@ -34,12 +37,14 @@ export async function generateMetadata(
   }
 
   return {
-    title: 'Compare Online MBA & MCA Universities 2026 — Fees, Syllabus & Rankings | EdifyEdu',
-    description: 'Compare online MBA and MCA universities side by side. Check fees, NAAC grade, NIRF rank, specialisations and semester-wise syllabus for 125+ UGC DEB approved universities.',
+    // CTR-tuned (2026-05-25): no em dash, no "Compare" lead in desc, bracket hook.
+    // absolute disables the root layout "%s | EdifyEdu" template (we already include the suffix).
+    title: { absolute: 'Online MBA vs MCA Comparison 2026: 125+ Universities | EdifyEdu' },
+    description: '125+ UGC-DEB online MBA & MCA programmes side by side: fees, NAAC grade, NIRF rank, specialisations, syllabus. Pick your fit in 60 seconds, free at EdifyEdu.',
     alternates: { canonical: 'https://edifyedu.in/compare' },
     openGraph: {
-      title: 'Compare Online MBA & MCA Universities 2026 | EdifyEdu',
-      description: 'Side-by-side comparison of fees, NIRF rankings, NAAC grades and syllabus for 125+ UGC DEB approved online programs.',
+      title: 'Online MBA vs MCA Comparison 2026: 125+ Universities | EdifyEdu',
+      description: '125+ UGC-DEB online MBA & MCA programmes side by side: fees, NAAC grade, NIRF rank, syllabus. Pick your fit in 60 seconds, free.',
       type: 'website',
     },
   }

@@ -26,6 +26,25 @@ function normalizeKey(k) {
 // Valid programs accepted by the site
 const VALID_PROGRAMS = new Set(['mba', 'bba', 'bca', 'mca', 'bcom', 'mcom', 'ba', 'ma', 'msc', 'bsc'])
 
+// Denylist: slugs that are redirect SOURCES in middleware.ts must never appear
+// in the sitemap, even if the Excel still carries stale rows for them. Parsed
+// from middleware.ts so the two stay in sync (no second source of truth).
+// 2026-05-25: added after GSC BrokenSlugs audit found 11 /yenepoya-online URLs
+// leaking into the sitemap despite middleware 308-redirecting them.
+function loadRedirectSourceDenylist() {
+  try {
+    const mw = fs.readFileSync(path.join(ROOT, 'middleware.ts'), 'utf8')
+    const section = mw.match(/OLD_SLUG_REDIRECTS[\s\S]+?^\}/m)
+    if (!section) return new Set()
+    const keys = new Set()
+    for (const m of section[0].matchAll(/'([a-z0-9-]+)':\s*'/g)) keys.add(m[1])
+    return keys
+  } catch {
+    return new Set()
+  }
+}
+const REDIRECT_SOURCES = loadRedirectSourceDenylist()
+
 // Static pages always in sitemap
 const STATIC_URLS = [
   '/',
@@ -128,6 +147,7 @@ for (const row of rows) {
 
   if (!uniSlug || !program) { skipped++; continue }
   if (!VALID_PROGRAMS.has(program)) { skipped++; continue }
+  if (REDIRECT_SOURCES.has(uniSlug)) { skipped++; continue }
 
   processed++
   uniSlugs.add(uniSlug)

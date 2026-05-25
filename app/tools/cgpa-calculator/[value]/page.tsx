@@ -31,8 +31,10 @@ export function generateMetadata({
   const entry = getEntryBySlug(params.value)
   if (!entry) return {}
 
-  const title = `${entry.label} CGPA in Percentage | ${entry.label} CGPA = ${entry.percentage}% (2026)`
-  const description = `${entry.label} CGPA equals ${entry.percentage}% using UGC formula (CGPA × 9.5). See grade table, online MBA eligibility, and Mumbai University variant. Free 2026 guide.`
+  // Title leads with the answer itself ("X CGPA = Y%") so the searcher
+  // sees their answer in the SERP. Bracket hook = year stamp + UGC trust mark.
+  const title = `${entry.label} CGPA = ${entry.percentage}% in Percentage [UGC 2026] | EdifyEdu`
+  const description = `${entry.label} CGPA = ${entry.percentage}% via UGC formula (×9.5). Mumbai Univ variant: ${entry.mumbaiPct}%. Check MBA eligibility, 6.0-10.0 grade table & SGPA conversion.`
   const url = `${BASE}/tools/cgpa-calculator/${entry.slug}`
 
   return {

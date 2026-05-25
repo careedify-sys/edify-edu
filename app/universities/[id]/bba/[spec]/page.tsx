@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { getUniversityById } from '@/lib/data'
 import { getProgramSpecParams, resolveSpecName } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
-import { getTitleName, shortenSpec, clampTitle, clampDescription } from '@/lib/seo-title'
+import { getTitleName, shortenSpec, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
 export async function generateStaticParams() {
@@ -25,9 +25,13 @@ export async function generateMetadata(
   const year = new Date().getFullYear()
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const shortSpec = shortenSpec(spec)
+  const pd = u.programDetails['BBA']
+  const fee = compactFee(pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`)
+  const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
+  // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
   return {
-    title: clampTitle(`${titleName} BBA in ${shortSpec} — Fees ${year} | EdifyEdu`),
-    description: clampDescription(`${u.name} BBA in ${spec} — fees, syllabus, eligibility & career scope. NAAC ${u.naac}. UGC DEB approved. 3-year program, admissions open ${year}.`),
+    title: clampTitle(`${titleName} BBA ${shortSpec} ${year}: ${fee}, NAAC ${u.naac} | EdifyEdu`),
+    description: clampDescription(`${u.name} Online BBA in ${spec} ${year}: ${fee} fees, NAAC ${u.naac}${nirfStr}. UGC-DEB approved 3-year degree. Check syllabus, eligibility & career scope free.`),
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/bba/${specSlug}` },
     robots: { index: true, follow: true },
   }

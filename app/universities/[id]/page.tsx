@@ -27,19 +27,22 @@ export async function generateMetadata(
   const cleanName = u.name.replace(/\s+online\s*$/i, '')
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const progStr = u.programs.slice(0, 3).join(', ')
-  const title = `${titleName} Online (${progStr}, Fees ${year}) | EdifyEdu`
   const feeMin = Math.round(u.feeMin / 1000)
   const feeMax = Math.round(u.feeMax / 1000)
-  const feeStr = feeMin === feeMax ? `₹${feeMin}K` : `₹${feeMin}K–₹${feeMax}K`
+  const feeStr = feeMin === feeMax ? `₹${feeMin}K` : `₹${feeMin}K-${feeMax}K`
   const mainProg = u.programs[0] || 'MBA'
   const specCount = Object.values(u.programDetails || {}).reduce((sum, pd) => sum + (pd?.specs?.length || 0), 0)
   const nirfStr = u.nirf && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
-  const specStr = specCount > 3 ? ` ${specCount}+ specialisations available.` : ''
+  const nirfHook = u.nirf && u.nirf < 100 ? ` NIRF #${u.nirf},` : ''
+  // CTR-tuned title (2026-05-25): lead with brand, fee number first, NAAC + bracket year hook.
+  // Pattern: "{Uni} Online: ₹{fee} Fees, NAAC {grade} [{year} Review] | EdifyEdu"
+  const title = `${titleName} Online ${year}: Fees ${feeStr}, NAAC ${u.naac} [Review] | EdifyEdu`
+  const specStr = specCount > 3 ? ` ${specCount}+ specialisations.` : ''
   const cityStr = u.city && u.city !== 'Online' ? ` Based in ${u.city}.` : ''
-  let description = `${cleanName} online ${progStr}: fees ${feeStr}, NAAC ${u.naac}${nirfStr}. UGC DEB approved.${specStr}${cityStr} Compare fees, syllabus, placements. Admissions open ${year}.`
-  // Ensure 150+ chars
+  // CTR-tuned description: numeric facts first, no "Compare/Explore" lead, micro-CTA at end.
+  let description = `${cleanName} online ${progStr}: fees ${feeStr},${nirfHook} NAAC ${u.naac}. UGC-DEB approved.${specStr}${cityStr} Check ${year} eligibility, syllabus & placement data free.`
   if (description.length < 150) {
-    description = `${cleanName} offers UGC DEB approved online ${progStr} programs. Fees from ${feeStr}. NAAC ${u.naac} accredited${nirfStr}.${specStr}${cityStr} Independent comparison of fees, syllabus and career outcomes at EdifyEdu. Admissions ${year}.`
+    description = `${cleanName} online ${progStr} ${year}: fees ${feeStr}, NAAC ${u.naac} accredited${nirfStr}.${specStr}${cityStr} See verified fees, syllabus & honest placement data. Check eligibility free.`
   }
 
   const keywords = [

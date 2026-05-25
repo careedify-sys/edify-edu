@@ -5,7 +5,7 @@ import { getUniversityById } from '@/lib/data'
 import { getMasterSyllabus } from '@/lib/content'
 import { getProgramSpecParams, resolveSpecName } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
-import { getTitleName, shortenSpec, clampTitle, clampDescription } from '@/lib/seo-title'
+import { getTitleName, shortenSpec, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
 export async function generateStaticParams() {
@@ -27,10 +27,14 @@ export async function generateMetadata(
   const syllabus = getMasterSyllabus(u.id, 'MCA') as any
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const shortSpec = shortenSpec(spec)
-  const title = clampTitle(`${titleName} MCA in ${shortSpec} — Fees ${year} | EdifyEdu`)
+  const pd = u.programDetails['MCA']
+  const fee = compactFee(pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`)
+  const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
+  // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
+  const title = clampTitle(`${titleName} MCA ${shortSpec} ${year}: ${fee}, NAAC ${u.naac} | EdifyEdu`)
   const description = clampDescription(syllabus?.metaDesc
-    ? `${u.name} MCA in ${spec}. ${syllabus.metaDesc}`
-    : `${u.name} MCA in ${spec} — fees, syllabus, eligibility & career scope. NAAC ${u.naac}. UGC DEB approved. Admissions open ${year}.`)
+    ? `${u.name} Online MCA in ${spec} ${year}. ${syllabus.metaDesc}`
+    : `${u.name} Online MCA in ${spec} ${year}: ${fee} fees, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Check syllabus, eligibility & career scope free.`)
 
   return {
     title,

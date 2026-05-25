@@ -2,7 +2,7 @@
 import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
-import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
+import { getTitleName, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
 import UniProgramBody from '@/components/UniProgramBody'
 
 export async function generateStaticParams() {
@@ -19,8 +19,12 @@ export async function generateMetadata(
   const year = new Date().getFullYear()
   const pd   = u.programDetails['BCA']
   const titleName = getTitleName(u.id, u.name, u.abbr)
-  const title = clampTitle(`${titleName} Online BCA — Fees, Syllabus & Specialisations ${year} | EdifyEdu`)
-  const description = clampDescription(`${titleName} Online BCA: fees ${pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`}, NAAC ${u.naac}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}. UGC DEB approved 3-year degree.`)
+  const feeDisplay = compactFee(pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`)
+  const specCount = pd?.specs?.length || 4
+  const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
+  // CTR-tuned title (2026-05-25): fee + NAAC + bracket review hook, year first.
+  const title = clampTitle(`${titleName} Online BCA ${year}: ${feeDisplay} Fees, NAAC ${u.naac} [Review] | EdifyEdu`)
+  const description = clampDescription(`${titleName} Online BCA ${year}: ${feeDisplay} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved 3-year degree. Check syllabus & eligibility free.`)
 
   return {
     title,

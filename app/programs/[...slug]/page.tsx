@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { ChevronRight, BookOpen, Award, Users, Briefcase, TrendingUp } from 'lucide-react'
 import { formatFeeSlim as formatFee, PREFERRED_UNI_IDS } from '@/lib/data-slim'
 import { getShortUniversityName } from '@/lib/format'
+import { clampTitle, clampDescription, getTitleName } from '@/lib/seo-title'
 import { PROGRAM_META } from '@/lib/data-client'
 import { getAllSpecs, getUniversitiesByProgram, UNIVERSITIES, specName as getSpecName } from '@/lib/data'
 import { getProgramContent, getSpecContent, getSpecFallback } from '@/lib/content'
@@ -158,31 +159,41 @@ export async function generateMetadata(
   const allUnis = getUniversitiesByProgram(program)
   const uniCount = allUnis.length
 
-  // Get top 3 university brand names for SEO (sorted by NIRF)
+  // Get top 3 university brand names for SEO (sorted by NIRF).
+  // Use getTitleName (e.g. "MAHE", "NMIMS") instead of u.abbr ("MAHEO", "AUO") —
+  // the abbr values include the "O" for Online which reads as gibberish in metas.
   const topBrands = activeSpec && program === 'MBA'
     ? UNIVERSITIES.filter(u => u.programs.includes('MBA') && u.programDetails?.['MBA']?.specs?.some((s: any) => {
         const name = typeof s === 'string' ? s : s.name
         return name.toLowerCase().includes(activeSpec.toLowerCase().slice(0, 8))
-      })).sort((a, b) => (a.nirf < 200 ? a.nirf : 999) - (b.nirf < 200 ? b.nirf : 999)).slice(0, 3).map(u => u.abbr).join(', ')
+      })).sort((a, b) => (a.nirf < 200 ? a.nirf : 999) - (b.nirf < 200 ? b.nirf : 999)).slice(0, 3).map(u => getTitleName(u.id, u.name, u.abbr)).join(', ')
     : ''
 
-  const title = specContent?.metaTitle
+  // CTR-tuned title pattern (2026-05-25): lead with concrete number, year-in-
+  // brackets hook, no em dashes, no "Compare/Explore" lead. clampTitle below
+  // preserves the | EdifyEdu brand suffix and trims the body if it overflows
+  // Google's 60-char SERP cap.
+  const rawTitle = specContent?.metaTitle
     || (activeSpec
       ? program === 'MBA'
-        ? `Best Online MBA in ${activeSpec} ${year} — Fees, Colleges, Placements, Discounts | EdifyEdu`
-        : `Best Online ${program} in ${activeSpec} ${year} — Fees, Colleges, Career | EdifyEdu`
+        ? `Online MBA ${activeSpec} ${year}: ${uniCount}+ Colleges, Fees | EdifyEdu`
+        : `Online ${program} ${activeSpec} ${year}: ${uniCount}+ Colleges | EdifyEdu`
       : program === 'MBA'
-        ? `Best Online MBA in India ${year} — ${uniCount} UGC-Approved Universities | EdifyEdu`
-        : `Online ${program} India ${year} — Compare UGC Approved Universities | EdifyEdu`)
+        ? `Online MBA India ${year}: ${uniCount}+ Colleges, NIRF Ranked | EdifyEdu`
+        : `Online ${program} India ${year}: ${uniCount}+ UGC-DEB Colleges | EdifyEdu`)
+  const title = clampTitle(rawTitle)
 
-  const description = specContent?.metaDesc
+  // CTR-tuned description: lead with most specific number, micro-CTA at end,
+  // never start with "Compare" or "Explore".
+  const rawDescription = specContent?.metaDesc
     || (activeSpec
       ? program === 'MBA'
-        ? `Compare online MBA in ${activeSpec} from ${topBrands || 'top universities'} and more. Fees, NIRF ranks, syllabus, career scope, salary data. ${uniCount}+ UGC approved. Independent comparison ${year}.`
-        : `Compare top UGC DEB approved online ${program} programs with ${activeSpec} specialisation in India ${year}. Check NIRF ranks, fees, career scope, and salary data.`
+        ? `${uniCount}+ UGC-DEB online MBAs offer ${activeSpec}: ${topBrands || 'top NIRF-ranked colleges'}. Fees, syllabus, salary data, placements. Check eligibility free.`
+        : `${uniCount}+ UGC-DEB online ${program} programs in ${activeSpec} ${year}. NIRF ranks, fees, syllabus, career outcomes and salary data. Check eligibility free.`
       : program === 'MBA'
-        ? `Compare ${uniCount} UGC-DEB approved online MBAs by NIRF rank, fees (Rs 66K-3.7L), specialisations and placement. Independent reviews. Zero referral commissions. Updated April ${year}.`
-        : `Explore all UGC approved online ${program} programs in India. Find real NIRF rankings, NAAC grades, and verified fees. Admissions for ${year}.`)
+        ? `${uniCount} UGC-DEB online MBAs ranked by NIRF: fees ₹66K-3.7L, ${year} placements, specialisations. Zero paid rankings, zero referral fees. See fee data free.`
+        : `${uniCount}+ UGC-DEB approved online ${program} programs in India: real NIRF ranks, NAAC grades, verified fees, syllabus. Admissions ${year} open. Check eligibility.`)
+  const description = clampDescription(rawDescription)
 
   const canonical = activeSpec
     ? `https://edifyedu.in/programs/${programSlug}/${subSlug}`

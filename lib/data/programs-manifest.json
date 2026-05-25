@@ -6690,45 +6690,9 @@
     "spec_name": ""
   },
   {
-    "university_slug": "yenepoya-online",
-    "program": "bba",
-    "spec_slug": "",
-    "spec_name": ""
-  },
-  {
     "university_slug": "vtu-online",
     "program": "bba",
     "spec_slug": "digital-marketing",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "yenepoya-online",
-    "program": "bba",
-    "spec_slug": "healthcare-management",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "yenepoya-online",
-    "program": "bba",
-    "spec_slug": "logistics-and-supply-chain-management",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "yenepoya-online",
-    "program": "bca",
-    "spec_slug": "animation-and-graphic-design",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "yenepoya-online",
-    "program": "bca",
-    "spec_slug": "cloud-computing-and-cyber-security",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "yenepoya-online",
-    "program": "bca",
-    "spec_slug": "computer-science-and-it",
     "spec_name": ""
   },
   {
@@ -6750,21 +6714,9 @@
     "spec_name": ""
   },
   {
-    "university_slug": "yenepoya-online",
-    "program": "bca",
-    "spec_slug": "data-science-and-artificial-intelligence",
-    "spec_name": ""
-  },
-  {
     "university_slug": "ignou-online",
     "program": "bcom",
     "spec_slug": "",
-    "spec_name": ""
-  },
-  {
-    "university_slug": "yenepoya-online",
-    "program": "bcom",
-    "spec_slug": "accounting-and-finance",
     "spec_name": ""
   },
   {

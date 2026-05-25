@@ -2,7 +2,7 @@
 import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
-import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
+import { getTitleName, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
 import UniProgramBody from '@/components/UniProgramBody'
 
 export async function generateStaticParams() {
@@ -19,11 +19,13 @@ export async function generateMetadata(
   const year = new Date().getFullYear()
   const pd   = u.programDetails['MBA']
   const titleName = getTitleName(u.id, u.name, u.abbr)
-  const feeDisplay = pd?.fees || `₹${Math.round(u.feeMin / 1000)}K`
+  const feeDisplay = compactFee(pd?.fees || `₹${Math.round(u.feeMin / 1000)}K`)
   const specCount = pd?.specs?.length || 5
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : u.nirfMgt && u.nirfMgt < 200 ? `, NIRF #${u.nirfMgt} Mgmt` : ''
-  const title = clampTitle(`${titleName} Online MBA ${year}: Fees, Placement, Syllabus & Reviews | EdifyEdu`)
-  const description = clampDescription(`${titleName} Online MBA ${year}: ${feeDisplay} fees, ${specCount}+ specialisations, UGC-DEB approved, NAAC ${u.naac}${nirfStr}. Compare honest reviews at EdifyEdu.`)
+  // CTR-tuned title (2026-05-25): fee number leads, NAAC + bracket review hook.
+  const title = clampTitle(`${titleName} Online MBA ${year}: ${feeDisplay} Fees, NAAC ${u.naac} [Review] | EdifyEdu`)
+  // Description: fee + spec count + accreditation up front, micro-CTA at end, no "Compare" lead.
+  const description = clampDescription(`${titleName} Online MBA ${year}: ${feeDisplay} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. See honest review, syllabus & placement data.`)
 
   return {
     title,

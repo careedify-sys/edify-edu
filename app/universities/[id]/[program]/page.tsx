@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import type { Program } from '@/lib/data'
 import UniProgramBody from '@/components/UniProgramBody'
-import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
+import { getTitleName, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
 
 // Program slug to Program type mapping
 const PM: Record<string, Program> = {
@@ -48,18 +48,19 @@ export async function generateMetadata(
 
   const year = new Date().getFullYear()
   const pd = u.programDetails[program]
-  const cleanName = u.name.replace(/\s+online\s*$/i, '')
   const titleName = getTitleName(u.id, u.name, u.abbr)
-  const title = `${titleName} Online ${program} — Fees & Syllabus ${year} | EdifyEdu`
-  const fees = pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`
-  const duration = pd?.duration || '2 Yrs'
+  const fees = compactFee(pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`)
   const specCount = pd?.specs?.length || 0
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
-  const specStr = specCount > 0 ? ` ${specCount}+ specialisations available.` : ''
-  let description = `${cleanName} online ${program}: fees ${fees}, ${duration}${nirfStr}. NAAC ${u.naac}. UGC DEB approved.${specStr} Compare syllabus, placements and career outcomes. Admissions ${year}.`
+  // CTR-tuned title (2026-05-25): short uni name, fee number, NAAC, bracket review hook.
+  // titleName (not full name) keeps room for the brand suffix inside the 60-char SERP cap.
+  const title = clampTitle(`${titleName} Online ${program} ${year}: ${fees} Fees, NAAC ${u.naac} [Review] | EdifyEdu`)
+  // Description: short uni name + numeric facts first, micro-CTA at end. No "Compare/Explore" lead.
+  let description = `${titleName} Online ${program} ${year}: ${fees} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. See honest review, syllabus & placement data free.`
   if (description.length < 150) {
-    description = `${cleanName} offers UGC DEB approved online ${program} program. Fees ${fees}, duration ${duration}. NAAC ${u.naac} accredited${nirfStr}.${specStr} Independent comparison at EdifyEdu. Admissions open ${year}.`
+    description = `${titleName} Online ${program} ${year}: ${fees} fees, ${specCount}+ specs, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Check verified syllabus, placement data & honest review free at EdifyEdu.`
   }
+  description = clampDescription(description)
 
   const keywords = [
     `${u.name} online ${program} fees`,
@@ -71,8 +72,8 @@ export async function generateMetadata(
     `${u.name} ${program} fees syllabus placements reviews`,
   ].join(', ')
 
-  const t = clampTitle(title)
-  const d = clampDescription(description)
+  const t = title
+  const d = description
 
   return {
     title: t,
