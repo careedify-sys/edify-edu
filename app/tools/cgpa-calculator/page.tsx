@@ -235,7 +235,7 @@ const webAppSchema = {
   name: 'CGPA to Percentage Calculator',
   description:
     'Free online CGPA to percentage calculator using the UGC standard formula (CGPA × 9.5). Supports both CGPA to percentage and percentage to CGPA conversion.',
-  applicationCategory: 'EducationApplication',
+  applicationCategory: 'EducationalApplication',
   operatingSystem: 'Web',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' },
   url: 'https://edifyedu.in/tools/cgpa-calculator',

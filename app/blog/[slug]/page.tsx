@@ -171,15 +171,17 @@ export default async function BlogPostPage({ params }: Props) {
 
   // ── JSON-LD schemas ─────────────────────────────────────────────────────────
 
-  const faqSchema = {
+  // Dedup by question text, guard against empty array (empty FAQPage fails Google validation)
+  const uniqueFaqs = Array.from(new Map(post.faqs.map(f => [f.q, f])).values())
+  const faqSchema = uniqueFaqs.length > 0 ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: post.faqs.map((faq) => ({
+    mainEntity: uniqueFaqs.map((faq) => ({
       '@type': 'Question',
       name: faq.q,
       acceptedAnswer: { '@type': 'Answer', text: faq.a },
     })),
-  }
+  } : null
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -247,10 +249,12 @@ export default async function BlogPostPage({ params }: Props) {
   return (
     <>
       {/* ── JSON-LD ────────────────────────────────────────────────────── */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}

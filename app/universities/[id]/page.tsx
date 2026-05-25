@@ -83,14 +83,24 @@ export async function generateMetadata(
   }
 }
 
+// NAAC letter grade → numeric score on NAAC 4-point scale (midpoint of each band)
+const NAAC_SCORE_MAP: Record<string, string> = {
+  'A++': '3.88', 'A+': '3.63', 'A': '3.38',
+  'B++': '3.13', 'B+': '2.88', 'B': '2.63', 'C': '2.26',
+}
+function naacRatingValue(naac: string, naacScore?: string): string {
+  if (naacScore && parseFloat(naacScore) > 0) return naacScore
+  return NAAC_SCORE_MAP[naac] || '3.0'
+}
+
 // ── JSON-LD Structured Data ──
 function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversityById>> }) {
-  const year = new Date().getFullYear()
+  const ratingValue = naacRatingValue(u.naac, u.naacScore)
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': ['CollegeOrUniversity', 'LocalBusiness'],
+        '@type': ['CollegeOrUniversity', 'EducationalOrganization'],
         '@id': `https://edifyedu.in/universities/${u.id}#university`,
         name: u.name,
         url: `https://edifyedu.in/universities/${u.id}`,
@@ -102,7 +112,29 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
           addressRegion: u.state !== 'Online' ? u.state : 'India',
           addressCountry: 'IN',
         },
-        sameAs: [],
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue,
+          bestRating: '4',
+          worstRating: '1',
+          reviewCount: 1,
+          description: `NAAC Accreditation Grade ${u.naac}`,
+        },
+        review: {
+          '@type': 'Review',
+          author: {
+            '@type': 'Organization',
+            name: 'National Assessment and Accreditation Council (NAAC)',
+            url: 'https://naac.gov.in',
+          },
+          reviewRating: {
+            '@type': 'Rating',
+            ratingValue,
+            bestRating: '4',
+            worstRating: '1',
+          },
+          reviewBody: `${u.name} has been accredited by NAAC with Grade ${u.naac}.${u.naacScore ? ` Institutional score: ${u.naacScore}/4.` : ''}`,
+        },
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
           name: `${u.name} Online Programs`,
