@@ -210,6 +210,80 @@ const SPECS: Record<string, SpecDef> = {
       { q: 'Is MBA FinTech useful for PSU bank jobs?', a: 'PSU banks are actively hiring digital transformation managers. An online MBA from a UGC-DEB approved university qualifies candidates for these roles. Direct BFSI experience plus the MBA credential is the strongest profile combination.' },
     ],
   },
+
+  'logistics-management': {
+    displayName: 'Logistics Management',
+    canonicalName: 'Online MBA Logistics Management',
+    targetKeyword: 'online MBA logistics management India 2026',
+    intro: `An Online MBA in Logistics Management develops expertise in transport network design, last-mile execution, warehouse operations, fleet management, and freight costing. The UGC-DEB approved 2-year programme suits professionals in 3PL companies, e-commerce fulfilment, port operations, and cold-chain logistics who want to move into operations leadership without pausing their careers. It is distinct from Supply Chain Management, which focuses on upstream procurement and vendor networks; Logistics Management addresses the physical movement and storage layer.`,
+    why2026: [
+      'PM Gati Shakti National Master Plan is investing over ₹100 lakh crore in logistics infrastructure, generating large-scale management hiring.',
+      'India\'s logistics cost as a share of GDP is dropping from 14% toward 8%, driven by formalisation that demands qualified logistics managers.',
+      'E-commerce same-day and next-day delivery requirements have created a tier of logistics operations management roles that did not exist before 2020.',
+      'DPIIT Logistics Division and port authorities are hiring logistics managers with formal MBA credentials at scale through structured recruitment.',
+    ],
+    salaryRange: '₹5L to ₹22L per annum depending on sector and seniority',
+    entryRoles: ['Logistics Executive', 'Transport Coordinator', 'Warehouse Operations Executive', 'Fleet Coordinator'],
+    midRoles: ['Logistics Manager', 'Transport Manager', 'Warehouse Manager', 'Regional Logistics Head'],
+    industries: ['3PL', 'E-commerce', 'FMCG', 'Auto', 'Pharma Cold Chain', 'Government Logistics'],
+    eligibility: `Minimum 50% marks in any bachelor's degree. Work experience in logistics, transport, or warehouse operations is an advantage. No specific stream or entrance exam is required at most UGC-DEB approved online programmes.`,
+    admission: `Applications open January-February and July-August. Required documents include graduation marksheets, ID proof, and a statement of purpose. Most universities offer semester-wise fee payment and 0% EMI options.`,
+    specVariantMatch: (s: string) => {
+      const n = s.toLowerCase()
+      return (n.includes('logistics') && !n.includes('supply chain')) || n.includes('transport management') || n.includes('warehousing') || n === 'logistics management'
+    },
+    supportingBlogs: [
+      { slug: 'online-mba-logistics-management-india-2026', title: 'Online MBA Logistics Management India 2026', desc: 'Compares universities, fees, curriculum, and career outcomes for the MBA Logistics Management specialisation.' },
+      { slug: 'online-mba-supply-chain-management-india-2026', title: 'Online MBA Supply Chain Management India 2026', desc: 'Related programme covering upstream procurement and vendor networks — cross-reference for career direction.' },
+    ],
+    careerBlogSlug: 'online-mba-logistics-management-india-2026',
+    faqs: [
+      { q: 'Is Online MBA Logistics Management different from MBA Supply Chain Management?', a: 'Yes. Logistics Management focuses on the physical movement of goods: transport, warehousing, last-mile delivery, and fleet operations. Supply Chain Management covers the broader network including procurement, vendor management, and inventory strategy. Both are complementary but target different job roles.' },
+      { q: 'Which online universities offer MBA Logistics Management?', a: 'UPES (ranked #45 NIRF, NAAC A), Chandigarh University, MUJ, Parul University, and select UGC-DEB approved universities offer MBA with Logistics or Transport Management specialisation. Always verify the exact specialisation name on the university portal.' },
+      { q: 'What is the salary after an Online MBA Logistics Management?', a: 'Entry-level logistics roles pay ₹5L to ₹8L per annum. Logistics Managers with 3-5 years of experience earn ₹10L to ₹15L. Regional Heads and VP Logistics roles at large 3PL and e-commerce firms command ₹18L to ₹28L.' },
+      { q: 'Is UPES good for MBA Logistics Management?', a: 'UPES has a domain specialisation in energy, logistics, and infrastructure. Its MBA Logistics curriculum integrates petroleum logistics, port operations, and cold-chain management, making it distinct from generalist logistics programmes. NIRF #45, NAAC A, WES approved.' },
+      { q: 'What certifications complement MBA Logistics Management?', a: 'APICS CSCP, Certified Logistics Professional (CLP), Six Sigma Green Belt, and AWS supply chain certifications are valued by 3PL, FMCG, and e-commerce logistics recruiters.' },
+      { q: 'Can I get government logistics jobs with an Online MBA Logistics Management?', a: 'Yes. UGC-DEB approved online MBA degrees qualify candidates for DPIIT logistics roles, port authority management positions, and PSU infrastructure management cadres.' },
+      { q: 'Should I choose MBA Logistics or MBA Supply Chain Management?', a: 'Choose Logistics if you are already working in 3PL, transport, or warehouse operations and want to move up within that domain. Choose SCM if your work involves procurement, vendor negotiations, or multi-tier supply network management.' },
+    ],
+  },
+
+  'hospitality-management': {
+    displayName: 'Hospitality Management',
+    canonicalName: 'Online MBA Hospitality Management',
+    targetKeyword: 'online MBA hospitality management India 2026',
+    intro: `An Online MBA in Hospitality Management prepares professionals for leadership roles in hotels, food and beverage chains, event management companies, aviation ground services, and tourism organisations. The UGC-DEB approved 2-year programme covers hotel operations, revenue management, food and beverage cost control, guest experience design, and hospitality marketing. It suits working professionals in hotel operations, F&B, and travel who want to transition into general management without taking a career break.`,
+    why2026: [
+      'India\'s hospitality sector is adding over 100,000 hotel rooms between 2024 and 2027 across mid-scale and budget categories, creating sustained GM and operations management demand.',
+      'Post-COVID travel recovery pushed RevPAR (revenue per available room) to all-time highs in 2024, prompting chains to invest in trained operations managers.',
+      'The rise of experience tourism, MICE, and branded service apartments is creating hybrid hospitality-management roles that require formal MBA credentials.',
+      'Quick-service restaurant (QSR) chains are expanding aggressively in tier-2 and tier-3 cities, generating cluster and regional manager openings.',
+    ],
+    salaryRange: '₹4L to ₹20L per annum depending on role and property tier',
+    entryRoles: ['Hotel Operations Executive', 'F&B Manager (Junior)', 'Guest Relations Manager', 'Revenue Analyst'],
+    midRoles: ['Hotel Manager', 'F&B Director', 'Revenue Manager', 'Area Operations Manager'],
+    industries: ['Hotels', 'F&B Chains', 'Aviation Ground Services', 'Event Management', 'Tourism'],
+    eligibility: `Minimum 50% marks in any bachelor's degree. A hotel management diploma or BHM degree is an advantage but not mandatory. Work experience in hospitality, F&B, or travel roles strengthens the application. No entrance exam is required at most UGC-DEB approved online programmes.`,
+    admission: `Applications open January-February and July-August. Required documents include graduation marksheets, ID proof, and a statement of purpose. Most universities offer semester-wise fee payment and 0% EMI options. Hospitality-background applicants may receive priority admission at some universities.`,
+    specVariantMatch: (s: string) => {
+      const n = s.toLowerCase()
+      return n.includes('hospitality') || n.includes('hotel management') || n.includes('tourism management') || n.includes('travel and tourism') || n.includes('hotel and tourism')
+    },
+    supportingBlogs: [
+      { slug: 'online-mba-hospitality-management-india-2026', title: 'Online MBA Hospitality Management India 2026', desc: 'Compares universities, fees, curriculum, and career outcomes for the MBA Hospitality Management specialisation.' },
+      { slug: 'online-mba-hospital-healthcare-management-india-2026', title: 'Online MBA Hospital and Healthcare Management India 2026', desc: 'Related programme for healthcare roles — cross-reference for candidates choosing between hospitality and healthcare management.' },
+    ],
+    careerBlogSlug: 'online-mba-hospitality-management-india-2026',
+    faqs: [
+      { q: 'Is Online MBA Hospitality Management valid for hotel chain jobs?', a: 'Yes. UGC-DEB approved online MBA degrees are accepted by hotel chains, F&B companies, and hospitality groups across India. Taj, ITC, Oberoi, and Marriott India have hired online MBA graduates for operations and management roles.' },
+      { q: 'Which online universities offer MBA Hospitality Management?', a: 'Parul University, Chandigarh University, Galgotias University, Jain University, and select UGC-DEB approved universities offer MBA with Hospitality or Tourism Management specialisation. Always verify the specialisation name on the official portal.' },
+      { q: 'What is the salary after an Online MBA Hospitality Management?', a: 'Entry-level hotel management roles pay ₹4L to ₹7L per annum. Hotel Managers and F&B Directors with 3-5 years of experience earn ₹9L to ₹15L. Area Operations Managers and GMs at premium properties command ₹18L to ₹28L.' },
+      { q: 'Can I do an MBA Hospitality Management without a hotel management degree?', a: 'Yes. Most universities accept graduates from any stream. A background in commerce, BBA, or even engineering is acceptable. Prior work experience in any service industry (retail, aviation, events) is treated favourably.' },
+      { q: 'MBA Hospitality Management vs MBA Healthcare Management: which is better?', a: 'Both are niche MBA tracks with strong career paths. Hospitality suits you if your career is in hotels, F&B, or tourism. Healthcare suits you if you are in hospitals, pharma, or health insurance. Both have similar salary ranges at entry level; healthcare mid-tier salaries are slightly higher.' },
+      { q: 'What certifications complement MBA Hospitality Management?', a: 'Certified Hotel Administrator (CHA), Revenue Management Certification (Cornell), and Google Digital Marketing certification are valued by hotel chains and hospitality groups for management roles.' },
+      { q: 'Is MBA Hospitality Management useful for QSR and F&B chains?', a: 'Yes. Quick-service restaurant chains and organised F&B businesses actively hire cluster managers and area operations executives with MBA credentials. The curriculum covers F&B cost control, quality management, and multi-outlet operations.' },
+    ],
+  },
 }
 
 // ── Static params ────────────────────────────────────────────────────────────
