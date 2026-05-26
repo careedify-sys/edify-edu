@@ -34,7 +34,10 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 8,
     targetKeyword: 'amity university online mba hr',
     relatedUniversities: [],
-    status: 'draft',
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/4342125/pexels-photo-4342125.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@edmond-dantes" target="_blank" rel="noopener nofollow">Edmond DantÃ¨s</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Professional business meeting with diverse team members in an office setting.',
     faqs: [
 
     ],
@@ -33361,6 +33364,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: "amity online bba fees",
     relatedUniversities: ["amity-university-online"],
     status: 'published',
+    heroImage: 'https://images.pexels.com/photos/10744384/pexels-photo-10744384.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@peter-chikubula-157991289" target="_blank" rel="noopener nofollow">Peter Chikubula</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Focused group of adults studying in a library, fostering education and collaboration.',
     faqs: [
       { q: "What are the Amity Online BBA fees in 2026?", a: "Amity Online BBA offers four payment options: One-Time Payment at ₹1,75,120 (cheapest), Annual Payment at ₹63,020/year × 3 years (effective ₹1,89,050), 24-month 0% EMI at ₹7,877/month (effective ₹1,89,050), and Semester-wise at ₹33,200/sem × 6 semesters (₹1,99,000 total). Application fee is ₹1,100 and one-time registration fee is approximately ₹2,500. Verify the latest details on the official university portal and on UGC-DEB before applying." },
       { q: "Which Amity BBA payment option is cheapest?", a: "One-Time Payment at ₹1,75,120 is the cheapest, saving ₹23,880 versus Semester-wise (₹1,99,000) and ₹13,930 versus Annual or 0% EMI (both ₹1,89,050 effective). The sticker price is ₹1,99,000, reduced to ₹1,75,120 with the self-pay benefit. If cash flow allows, One-Time is the rational choice. Verify the latest details on the official university portal and on UGC-DEB before applying." },
@@ -33590,6 +33596,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: "amity online bba",
     relatedUniversities: ["amity-university-online"],
     status: 'published',
+    heroImage: 'https://images.pexels.com/photos/7972324/pexels-photo-7972324.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@george-pak" target="_blank" rel="noopener nofollow">George Pak</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Group of young students walking on campus sidewalk on a bright day, showcasing casual university life.',
     faqs: [
       { q: "What is the fee for Amity Online BBA in 2026?", a: "Amity Online BBA offers four payment options: One-Time Payment at ₹1,75,120 (cheapest), 24-month 0% EMI at ₹7,877/month (effective ₹1,89,050), Annual Payment at ₹63,020/year × 3 years (effective ₹1,89,050), and Semester-wise at ₹33,200/sem × 6 semesters (₹1,99,000 total). Application fee is ₹1,100 and one-time registration fee is approximately ₹2,500. Verify the latest details on the official university portal and on UGC-DEB before applying." },
       { q: "Which payment option is cheapest for Amity Online BBA?", a: "One-Time Payment at ₹1,75,120 is the cheapest option, saving ₹23,880 versus Semester-wise payment and ₹13,930 versus Annual or 0% EMI options. The sticker price is ₹1,99,000, reduced to ₹1,75,120 with the self-pay benefit. For students needing monthly cash flow flexibility, the 0% EMI at ₹7,877/month for 24 months is the next best path with effective fee ₹1,89,050." },
@@ -33832,6 +33841,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: "bits pilani online mba",
     relatedUniversities: ["bits-pilani-online"],
     status: 'published',
+    heroImage: 'https://images.pexels.com/photos/33904722/pexels-photo-33904722.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@mba-classroom-2155665220" target="_blank" rel="noopener nofollow">MBA  Classroom</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'A young female student reading a business research book in a library setting.',
     faqs: [
       { q: "Is BITS Pilani WILP Online MBA UGC approved?", a: "Yes. BITS Pilani is a deemed-to-be university approved by UGC under Section 3 of the UGC Act. The WILP MBA is UGC-recognised and AICTE approved with NAAC A++ accreditation (highest grade). The degree carries the same legal recognition as a regular on-campus MBA for both private corporate hiring and government recruitment." },
       { q: "What is the fee for BITS Pilani WILP Online MBA in 2026?", a: "Total programme fee is ₹2,97,000 across 4 semesters (₹70,100 per semester). Add ₹1,500 application fee and ₹16,500 admission fee for an effective total of ₹3,15,000. No-cost EMI options available from approximately ₹13,000-15,000 per month at 0% interest. The fee has incremented from ₹2,84,000 in 2024 to ₹2,97,000 in 2025 (about 4-5% annual increase)." },
@@ -34041,6 +34053,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: "imt ghaziabad online mba",
     relatedUniversities: [],
     status: 'published',
+    heroImage: 'https://images.pexels.com/photos/34947115/pexels-photo-34947115.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@mba-classroom-2155665220" target="_blank" rel="noopener nofollow">MBA  Classroom</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Focused students taking notes during a classroom seminar indoors.',
     faqs: [
       { q: "Is IMT Ghaziabad CDL Online MBA UGC approved?", a: "Not directly UGC-DEB approved. IMT CDL is an AICTE-approved standalone institute awarding a PGDM (Postgraduate Diploma in Management) through Open and Distance Learning mode under UGC's ODL framework. UGC's 2018 gazette notification recognises AICTE-approved ODL diplomas for central government employment. For private corporate jobs and most government recruitment, the PGDM is accepted as MBA-equivalent. State government jobs requiring 'UGC-DEB approved MBA' wording may not accept it." },
       { q: "What is the fee for IMT Ghaziabad CDL Online MBA in 2026?", a: "Most recent 2026 sources indicate ₹2,20,000 total (₹55,000 per semester across 4 semesters), though older sources show ₹1,60,000 (₹40,000 per semester). Application fee is ₹1,500. Exam fee, project fee, and alumni portal registration are additional. Verify the exact current fee directly with IMT CDL admissions before paying. Verify the latest details on the official university portal and on UGC-DEB before applying." },
@@ -34269,6 +34284,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: "jain university mba fees",
     relatedUniversities: ["jain-university-online"],
     status: 'published',
+    heroImage: 'https://images.pexels.com/photos/33845767/pexels-photo-33845767.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@mba-classroom-2155665220" target="_blank" rel="noopener nofollow">MBA  Classroom</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Three male students studying in a library, focused on business books, at Nepal university.',
     faqs: [
       { q: "Is JAIN University Online MBA UGC approved?", a: "Yes. JAIN (Deemed-to-be University) is UGC-DEB entitled and AICTE approved. The online MBA degree carries the same legal recognition as a regular on-campus MBA for both private corporate hiring and government recruitment. NAAC has graded the university A++, the highest NAAC rating. Verify the latest details on the official university portal and on UGC-DEB before applying." },
       { q: "What is the fee for JAIN Online MBA in 2026?", a: "Total fees range from ₹1,96,000 to ₹2,98,000 depending on specialisation. Most standard specialisations cost ₹1,96,000 (₹49,000 per semester). MBA in AI is ₹2,00,000, Banking and Finance is ₹2,20,000, and International Finance with ACCA accreditation is ₹2,98,000. Additional ₹2,500 registration plus ₹3,000 yearly exam fee applies. Verify the latest details on the official university portal and on UGC-DEB before applying." },
@@ -34473,6 +34491,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: "mba in hr management online",
     relatedUniversities: [],
     status: 'published',
+    heroImage: 'https://images.pexels.com/photos/36733300/pexels-photo-36733300.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@silverkblack" target="_blank" rel="noopener nofollow">Vitaly Gariev</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Diverse group of business professionals in an office setting representing corporate teamwork.',
     faqs: [
       { q: "Which universities offer an online MBA in HR Management in India?", a: "More than 25 UGC-DEB approved universities offer HR Management in 2026, making it the most-offered online MBA specialisation in India. The practical shortlist includes Galgotias (₹76,200), NIU (₹88,500), Vignan (₹90,000), Kurukshetra (₹1,02,000), ARKA JAIN (₹1,08,500), SMU (₹1,10,000), DSU (₹1,20,000), Sharda (₹1,40,000), MUJ (~₹1,48,750), BVP and Alliance (₹1,60,000), Chandigarh (₹1,65,000), UPES and JIIT (₹1,75,000), DPU (₹1,89,400), NMIMS and JAIN (₹1,96,000), Amity (₹1,99,000), Chitkara (₹2,00,000), Symbiosis (₹2,65,000 net), and MAHE (₹2,92,000)." },
       { q: "How much does an online MBA in HR Management cost in 2026?", a: "Total fees range from ₹76,200 at Galgotias University Online to ₹3,70,000 standard at Symbiosis SSODL. Four price tiers exist: affordable (₹76,200-₹1,20,000), mid-tier (₹1,30,000-₹1,75,000), upper-mid (₹1,89,400-₹2,00,000), and premium (₹2,65,000-₹2,92,000). Verify the latest details on the official university portal and on UGC-DEB before applying. Verify the latest details on the official university portal and on UGC-DEB before applying." },
@@ -34683,6 +34704,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: "mba pharmaceutical management online",
     relatedUniversities: [],
     status: 'published',
+    heroImage: 'https://images.pexels.com/photos/15831822/pexels-photo-15831822.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@jonathanborba" target="_blank" rel="noopener nofollow">Jonathan Borba</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'A scientist wearing protective gear performs a meticulous experiment in a laboratory setting.',
     faqs: [
       { q: "Which universities offer an online MBA in Pharmaceutical Management in India?", a: "Three UGC-DEB approved universities offer a dedicated Pharmaceutical Management track in 2026: Shoolini University Online (Pharma & Health Care Management at ₹1,30,000 net after scholarship), Chitkara University Online (Pharmaceutical Management at ₹2,00,000), and MAHE Manipal (Pharmaceutical Management within Healthcare Management at ₹2,92,000). Verify the latest details on the official university portal and on UGC-DEB before applying." },
       { q: "How much does an online MBA in Pharmaceutical Management cost in 2026?", a: "Total fees range from ₹1,30,000 net at Shoolini University (after scholarship) to ₹2,92,000 at MAHE Manipal. Chitkara sits in the middle at ₹2,00,000. Per-semester fees range from ₹30,000 to ₹73,000 depending on the university. Verify the latest details on the official university portal and on UGC-DEB before applying. Verify the latest details on the official university portal and on UGC-DEB before applying." },
@@ -34847,6 +34871,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: "online bba degree in india",
     relatedUniversities: [],
     status: 'published',
+    heroImage: 'https://images.pexels.com/photos/15093007/pexels-photo-15093007.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@uddab-bogati-419073263" target="_blank" rel="noopener nofollow">Uddab Bogati</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Smiling graduate in cap and gown holds diploma outdoors, celebrating academic achievement.',
     faqs: [
       { q: "Is an online BBA degree valid in India?", a: "Yes. UGC's 2020 notification confirmed legal parity between online and on-campus degrees from UGC-DEB approved universities. The degree certificate is identical to an on-campus BBA from the same university; it does not say 'online' or 'distance' on it. Valid for private-sector employment, MBA admissions, central government recruitment, and most international higher education applications." },
       { q: "How do I verify if an online BBA is UGC-DEB approved?", a: "Visit deb.ugc.ac.in, search for the university, and confirm that the specific BBA programme is currently approved. Approval is granted programme by programme, year by year, so always confirm current academic year status before paying any fees. Verify the latest details on the official university portal and on UGC-DEB before applying." },
@@ -35105,6 +35132,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: "online bba in india",
     relatedUniversities: [],
     status: 'published',
+    heroImage: 'https://images.pexels.com/photos/5965526/pexels-photo-5965526.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@charlotte-may" target="_blank" rel="noopener nofollow">Charlotte May</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'From above of crop anonymous multiethnic female students working together on assignment using laptop ant taking notes at round table in campus',
     faqs: [
       { q: "Which universities offer an online BBA in India?", a: "More than 20 UGC-DEB approved universities offer online BBA in 2026. The practical shortlist includes IGNOU (₹30,900), Sharda University (₹1,20,000), Chandigarh University (₹1,31,250 net), JAIN Online (₹1,35,000), MUJ Online Manipal (₹1,39,500), NMIMS Online (₹1,41,000 std / ₹1,69,200 BA), Symbiosis SSODL (₹1,65,000), Amity Online (₹1,75,120 One-Time), DPU Pune (₹1,92,400), and LPU Online (₹20,400/sem with 20% Student Grant)." },
       { q: "How much does an online BBA cost in India in 2026?", a: "Total fees range from ₹30,900 at IGNOU (BBA in Retailing) to ₹1,99,000 at Amity Online (Semester-wise option). The mainstream UGC-DEB approved options cluster between ₹1,20,000 (Sharda) and ₹1,75,120 (Amity One-Time), with most working students choosing programmes between ₹1,20,000 and ₹1,65,000. Verify the latest details on the official university portal and on UGC-DEB before applying." },
@@ -35309,6 +35339,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: "online bba programs",
     relatedUniversities: [],
     status: 'published',
+    heroImage: 'https://images.pexels.com/photos/7256351/pexels-photo-7256351.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@mart-production" target="_blank" rel="noopener nofollow">MART  PRODUCTION</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Close-up of hands typing on a laptop keyboard with documents on a desk, brown long sleeves visible.',
     faqs: [
       { q: "What are the different online BBA programs available in India?", a: "Online BBA programs in India in 2026 cover 10+ specialisations: General Management, Marketing, Finance, HR Management, Business Analytics, Data Analytics, Digital Marketing, International Business, Entrepreneurship and Family Business Management, Retail and E-Commerce, Hospital Management, Travel and Tourism Management, and BFSI (Banking, Insurance, Financial Services). More than 20 UGC-DEB approved universities offer these programs." },
       { q: "Which online BBA program has the most specialisations?", a: "MUJ Online Manipal at ₹1,39,500 offers 8 specialisations (General Management, HR, Marketing, Finance & Accounting, Entrepreneurship & Family Business, Data Analytics, Retail and E-Commerce, Digital Marketing). JAIN Online at ₹1,35,000 also offers multiple specialisations including Finance, Marketing, Data Analytics, and Digital Marketing. Verify the latest details on the official university portal and on UGC-DEB before applying." },
@@ -35546,6 +35579,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: "mba in aviation management online",
     relatedUniversities: [],
     status: 'published',
+    heroImage: 'https://images.pexels.com/photos/35453774/pexels-photo-35453774.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@patricia-bozan-2151752743" target="_blank" rel="noopener nofollow">Patricia Bozan</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Two individuals conversing by a small aircraft in a hangar, suggesting aviation and teamwork.',
     faqs: [
       { q: "Which universities offer an online MBA in Aviation Management in India?", a: "Only Chandigarh University Online offers a dedicated online MBA in Airlines & Airport Management in 2026. It is UGC-DEB entitled and NAAC A+ rated. There are currently no other UGC-DEB approved universities in India offering a standalone online MBA in Aviation, Airlines, or Airport Management. Verify the latest details on the official university portal and on UGC-DEB before applying." },
       { q: "How much does an online MBA in Aviation Management cost in 2026?", a: "The Chandigarh University Online programme fee is ₹2,20,000, reduced to ₹1,65,000 net after the 25% Early Bird scholarship. Per-semester fee is ₹41,250 across 4 semesters. The Premium tier with three certifications (Harvard, PwC, PMI CAPM) costs ₹1,80,400 net after an 18% scholarship. Verify the latest details on the official university portal and on UGC-DEB before applying." },
@@ -35726,6 +35762,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: "online mba in business analytics in india",
     relatedUniversities: [],
     status: 'published',
+    heroImage: 'https://images.pexels.com/photos/97080/pexels-photo-97080.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@negativespace" target="_blank" rel="noopener nofollow">Negative Space</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Abstract visualization of data analytics with graphs and charts showing dynamic growth.',
     faqs: [
       { q: "Which universities offer an online MBA in Business Analytics or Data Analytics in India?", a: "Over 15 UGC-DEB approved universities offer this in 2026. The shortlist includes Galgotias (₹76,200), Vignan (₹90,000), Kurukshetra (₹1,02,000), DSU (₹1,20,000), Shoolini Data Science (₹1,30,000), BVP and Alliance Business Analytics & AI (₹1,60,000), Chandigarh (₹1,65,000), Amrita (₹1,70,000), UPES and JIIT IT & Business Analytics (₹1,75,000), DPU (₹1,89,400), JAIN Finance & Business Analytics (₹1,96,000), Amity (₹1,99,000), MAHE (₹2,92,000), and Symbiosis SSODL (₹2,65,000-₹3,15,000)." },
       { q: "What is the difference between Business Analytics and Data Analytics MBA?", a: "Data Analytics or Data Science tracks lean slightly more technical with deeper coverage of statistics, ML, and tooling (Shoolini, Alliance, JIIT). Business Analytics tracks lean toward business decision frameworks and management application. Both lead to similar entry-level outcomes. Data Analytics leans toward technical analytics leadership at senior level; Business Analytics leans toward analytics-driven general management." },
@@ -35943,6 +35982,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: "online mba entrepreneurship",
     relatedUniversities: [],
     status: 'published',
+    heroImage: 'https://images.pexels.com/photos/7413872/pexels-photo-7413872.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@rdne" target="_blank" rel="noopener nofollow">RDNE Stock project</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Two young entrepreneurs brainstorm ideas in a modern office setting, fostering innovation and collaboration.',
     faqs: [
       { q: "Which universities offer an online MBA in Entrepreneurship in India?", a: "Four UGC-DEB approved universities offer a dedicated Entrepreneurship specialisation: Dayananda Sagar University (₹1,20,000), Chandigarh University (₹1,65,000 net), JAIN Online (₹1,75,000–₹1,96,000), and Amity University Online (₹2,25,000). All four are 4-semester programmes spanning 2 years. Verify the latest details on the official university portal and on UGC-DEB before applying. Verify the latest details on the official university portal and on UGC-DEB before applying." },
       { q: "How much does an online MBA in Entrepreneurship cost in 2026?", a: "Total fees range from ₹1,20,000 at Dayananda Sagar University Online to ₹2,25,000 at Amity University Online. Mid-range options at Chandigarh and JAIN sit between ₹1,65,000 and ₹1,96,000. Per-semester fees range from ₹30,000 to ₹56,300. Verify the latest details on the official university portal and on UGC-DEB before applying. Verify the latest details on the official university portal and on UGC-DEB before applying." },
@@ -36131,6 +36173,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: "mba in event management online",
     relatedUniversities: [],
     status: 'published',
+    heroImage: 'https://images.pexels.com/photos/6949886/pexels-photo-6949886.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@werner-pfennig" target="_blank" rel="noopener nofollow">Werner Pfennig</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'A conference room setup with tablets, microphones, and water bottles for a professional meeting.',
     faqs: [
       { q: "Which universities offer an online MBA in Event Management in India?", a: "Two UGC-DEB approved universities currently offer a dedicated online MBA in Event Management: Bharati Vidyapeeth (BVP) Online with a total fee of ₹1,76,000 and Chandigarh University Online with a net fee of ₹1,65,000 after the 25% Early Bird scholarship. Verify the latest details on the official university portal and on UGC-DEB before applying." },
       { q: "How much does an online MBA in Event Management cost in 2026?", a: "The total fee ranges from ₹1,65,000 to ₹1,76,000 across the two available programmes, with per-semester fees between ₹41,250 and ₹44,000. EMI options are available at both universities. Verify the latest details on the official university portal and on UGC-DEB before applying. Verify the latest details on the official university portal and on UGC-DEB before applying." },
@@ -36311,6 +36356,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: "online mba hospital administration",
     relatedUniversities: [],
     status: 'published',
+    heroImage: 'https://images.pexels.com/photos/6129119/pexels-photo-6129119.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@rdne" target="_blank" rel="noopener nofollow">RDNE Stock project</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'A doctor in a white lab coat checks his wristwatch in a hospital hallway, conveying professionalism.',
     faqs: [
       { q: "Which universities offer online MBA in Hospital Administration or Healthcare Management in India?", a: "Eight UGC-DEB approved universities offer this specialisation in 2026: SMU (₹1,20,000 with current discount), Sharda University (₹1,40,000), Chandigarh University (₹1,65,000 net), DPU Pune (₹1,89,400), LPU (₹2,00,000), Amity University (₹2,25,000), MAHE Manipal (₹2,92,000), and Symbiosis SSODL (₹3,15,000 net with experience scholarship). Verify the latest details on the official university portal and on UGC-DEB before applying." },
       { q: "What is the difference between Hospital Administration and Healthcare Management?", a: "Hospital Administration tracks (Sharda, DPU) lean toward hospital operations: planning, NABH/JCI quality, hospital finance, hospital HR. Healthcare Management tracks (MAHE, Symbiosis, Amity, Chandigarh, LPU, SMU) cover the broader healthcare sector including pharma-hospital interface, public health, health insurance, and consulting. Choose Hospital Administration for hospital-operations careers; Healthcare Management for broader sector flexibility." },
@@ -36510,6 +36558,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: "mba supply chain management online",
     relatedUniversities: [],
     status: 'published',
+    heroImage: 'https://images.pexels.com/photos/4487383/pexels-photo-4487383.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@tiger-lily" target="_blank" rel="noopener nofollow">Tiger Lily</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Two workers handle a package in a spacious warehouse surrounded by shelves stocked with boxes and products.',
     faqs: [
       { q: "Which universities offer an online MBA in Supply Chain Management in India?", a: "Ten UGC-DEB approved universities offer this specialisation in 2026: MAHE, Symbiosis SSODL Pune, JAIN Online, DPU Pune, UPES Online, MUJ, Chandigarh University Online, LPU Online, SMU, and Uttaranchal University (UU Doon). Programme titles vary slightly (Logistics & SCM, Operations & SCM, Supply Chain Production and Operations) but core curriculum overlaps substantially." },
       { q: "How much does an online MBA in Supply Chain Management cost in 2026?", a: "Total fees range from ₹94,000 at UU Doon to ₹3,70,000 standard at Symbiosis SSODL. The affordable tier (UU Doon, SMU) sits between ₹94,000 and ₹1,20,000. The mid-tier (LPU, Chandigarh, UPES, MUJ, DPU Pune, JAIN) ranges from ₹1,46,240 to ₹1,96,000. The premium tier (MAHE, Symbiosis) ranges from ₹2,92,000 to ₹3,70,000. Verify the latest details on the official university portal and on UGC-DEB before applying." },
@@ -36696,6 +36747,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: "upes online mba",
     relatedUniversities: ["upes-online"],
     status: 'published',
+    heroImage: 'https://images.pexels.com/photos/37589838/pexels-photo-37589838.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@dimas-rachmadan-2160357195" target="_blank" rel="noopener nofollow">Dimas Rachmadan</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Modern gas plant operations with engineers in Lampung, Indonesia.',
     faqs: [
       { q: "Is UPES Online MBA UGC-DEB approved?", a: "Yes. UPES (University of Petroleum and Energy Studies) is UGC-DEB entitled and AICTE approved. The university was established in 2003 by an Act of the Uttarakhand State Legislature and is recognised under Section 2(f) of the UGC Act. NAAC has graded the university A. The Online MBA degree carries the same legal recognition as a regular on-campus MBA for both private corporate hiring and government recruitment including PSU energy companies." },
       { q: "What is the fee for UPES Online MBA in 2026?", a: "The total programme fee is ₹1,75,000, payable as ₹95,000 in Year 1 and ₹80,000 in Year 2. Application fee is ₹1,500 non-refundable. No-cost EMI options are available starting at ₹7,955 per month at 0% interest. Merit Scholarship of up to 20% off Year 1 tuition is available for candidates with 80%+ marks in undergraduate degree." },
@@ -36920,6 +36974,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: "xlri online mba",
     relatedUniversities: [],
     status: 'published',
+    heroImage: 'https://images.pexels.com/photos/7433840/pexels-photo-7433840.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@vlada-karpovich" target="_blank" rel="noopener nofollow">Vlada Karpovich</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Business professionals discussing documents in a modern meeting room.',
     faqs: [
       { q: "Is XLRI Online MBA UGC-DEB approved?", a: "Technically no. XLRI is an autonomous AICTE Category-1 institute that awards a Postgraduate Diploma in Management (PGDM), not a UGC-DEB approved MBA degree. The PGDM is recognised as MBA-equivalent by AIU, AICTE, and most employers. UGC's 2018 notification recognises AICTE-approved diplomas for central government employment. For private-sector jobs, the difference is functional, not substantive." },
       { q: "How much does XLRI Online MBA cost in 2026?", a: "The total fee for XLRI Online PGDM is ₹14,40,000, payable in 6 instalments across the 2-year programme. Application fee is ₹2,000 (non-refundable). Scholarships up to ₹1,00,000 are available for women, SC/ST, PwD, and Northeast Domicile candidates. Academic excellence scholarship of ₹50,000 is awarded to top performers at end of Year 1." },
