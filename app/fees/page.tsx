@@ -8,8 +8,8 @@ const BASE = 'https://edifyedu.in'
 const year = new Date().getFullYear()
 
 export const metadata: Metadata = {
-  title: `Online University Fees ${year}: Compare 130+ UGC-DEB Approved Programs | EdifyEdu`,
-  description: `Compare total fees and EMI for 130+ UGC-DEB approved online MBA, MCA, BBA and BCA programs. Filter by NAAC grade, program type and region. Free, no login.`,
+  title: `Online University Fees ${year}: Compare 125+ UGC-DEB Approved Programs | EdifyEdu`,
+  description: `Compare total fees and EMI for 125+ UGC-DEB approved online MBA, MCA, BBA and BCA programs. Filter by NAAC grade, program type and region. Free, no login.`,
   keywords: [
     'online mba fees india 2026',
     'online degree fees comparison',
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   ].join(', '),
   alternates: { canonical: `${BASE}/fees` },
   openGraph: {
-    title: `Online University Fees ${year}: Compare 130+ Programs | EdifyEdu`,
-    description: `Compare fees and EMI for 130+ UGC-DEB approved online degrees. Filter by NAAC, program and region.`,
+    title: `Online University Fees ${year}: Compare 125+ Programs | EdifyEdu`,
+    description: `Compare fees and EMI for 125+ UGC-DEB approved online degrees. Filter by NAAC, program and region.`,
     url: `${BASE}/fees`,
     type: 'website',
     siteName: 'edifyedu.in',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: `Online University Fees ${year} | EdifyEdu`,
-    description: `Compare fees for 130+ UGC-DEB approved online MBAs and degrees. Filter by NAAC, program and region.`,
+    description: `Compare fees for 125+ UGC-DEB approved online MBAs and degrees. Filter by NAAC, program and region.`,
   },
   robots: { index: true, follow: true },
 }
@@ -67,7 +67,7 @@ function buildSchemas() {
   const webpage = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: `Online University Fees ${year}: Compare 130+ Programs`,
+    name: `Online University Fees ${year}: Compare 125+ Programs`,
     description: `Compare fees and EMI for ${feesData.length} UGC-DEB approved online degree programs`,
     url: `${BASE}/fees`,
     breadcrumb: { '@type': 'BreadcrumbList', itemListElement: breadcrumb.itemListElement },

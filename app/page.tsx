@@ -38,7 +38,7 @@ const FEATURED_BRANDS = [
 
 export default function HomePage() {
   const topUnis = [...UNIS_SLIM].sort((a, b) => getSortRank(a) - getSortRank(b)).slice(0, 6)
-  const totalUnis = UNIS_SLIM.length
+  const totalUnis = 125
   const [enquiryOpen, setEnquiryOpen] = useState(false)
 
   // Listen for openEnquiry event from buttons
