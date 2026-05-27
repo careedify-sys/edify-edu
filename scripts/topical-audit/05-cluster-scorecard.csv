@@ -1,0 +1,43 @@
+cluster_id,cluster_name,total_pages,has_hub,hub_url,supporting_post_count,avg_wc,inbound_links_to_hub,status
+A1,"Online MBA in India",46,Yes,/best-online-mba-india,45,2220,2,STRONG
+A2,"Online MCA in India",4,Yes,/programs/mca,3,2333,1,DEVELOPING
+A3,"Online BBA in India",15,Yes,/programs/bba,14,2900,9,STRONG
+A4,"Online BCA in India",3,Yes,/programs/bca,2,2250,0,WEAK
+A5,"Online MA in India",3,Yes,/programs/ma,2,2350,0,WEAK
+A6,"Online MCom in India",1,Yes,/programs/mcom,0,0,0,WEAK
+A7,"Online BA in India",1,Yes,/programs/ba,0,0,0,WEAK
+A8,"Online BCom in India",3,Yes,/programs/bcom,2,3000,0,WEAK
+B1,"MBA HR / Talent Management",3,Yes,/programs/mba/specializations/hr-management,2,3100,3,DEVELOPING
+B2,"MBA Finance / FinTech",3,Yes,/programs/mba/specializations/fintech,2,2700,3,DEVELOPING
+B3,"MBA Marketing / Digital Marketing",3,No,,3,2900,0,WEAK
+B4,"MBA Operations / SCM / Logistics",4,Yes,/programs/mba/specializations/supply-chain-management,3,3050,3,DEVELOPING
+B5,"MBA Data Science / Business Analytics / AI",3,Yes,/programs/mba/specializations/business-analytics,2,3100,3,DEVELOPING
+B6,"MBA Healthcare / Hospital / Hospitality",5,Yes,/programs/mba/specializations/healthcare-management,4,3650,3,DEVELOPING
+B7,"MCA AI/ML, Cybersecurity, Cloud, Full Stack",0,No,,0,0,0,MISSING
+C-symbiosis,"Symbiosis University Cluster",3,Yes,/universities/symbiosis-university-online,2,1700,2,WEAK
+C-nmims,"NMIMS University Cluster",3,Yes,/universities/nmims-online,2,3700,1,WEAK
+C-amrita,"Amrita University Cluster",2,Yes,/universities/amrita-vishwa-vidyapeetham-online,1,0,0,WEAK
+C-amity,"Amity University Cluster",4,Yes,/universities/amity-university-online,3,2200,1,WEAK
+C-lpu,"LPU Cluster",4,Yes,/universities/lovely-professional-university-online,3,2200,1,WEAK
+C-manipal,"Manipal Group Cluster (MAHE/MUJ/SMU)",9,Yes,/universities/manipal-academy-higher-education-online,8,2200,1,STRONG
+C-chandigarh,"Chandigarh University Cluster",3,Yes,/universities/chandigarh-university-online,2,2000,0,WEAK
+C-ignou,"IGNOU Cluster",3,Yes,/universities/ignou-online,2,1700,1,WEAK
+C-jain,"JAIN University Cluster",3,Yes,/universities/jain-university-online,2,3900,0,WEAK
+C-upes,"UPES University Cluster",2,Yes,/universities/upes-online,1,3700,0,WEAK
+C-du,"Delhi University (DU/SOL) Cluster",1,No,,1,2500,0,MISSING
+C-icfai,"ICFAI University Cluster",4,Yes,/universities/icfai-university-online,3,1700,0,DEVELOPING
+C-other,"Other University Reviews",13,No,,13,2369,0,WEAK
+D1,"University vs University Comparisons",4,Yes,/compare,3,2233,6,DEVELOPING
+D2,"Online vs Distance vs Regular MBA",4,No,,4,2225,0,WEAK
+D3,"UGC-DEB Approval + Accreditation Explainers",7,Yes,/guides/how-to-check-ugc-deb-approval,6,1950,2,DEVELOPING
+D4,"Fees / Scholarships / EMI / Loans",1,Yes,/fees,0,0,1,WEAK
+D5,"Admission Process / Entrance Exams / Eligibility",8,Yes,/guides/online-mba-eligibility-india,7,1986,7,DEVELOPING
+D6,"Placements / ROI / Career Outcomes",1,No,,1,2200,0,MISSING
+D7,"Validity / Recognition / Job Prospects",2,Yes,/guides/is-online-degree-valid-india,1,2000,1,WEAK
+E1,"Career Paths After Each Program",15,No,,15,2327,0,WEAK
+E2,"Salary Data and Trends",7,No,,7,2500,0,WEAK
+E3,"Resume / Interview / Job-Search Resources",1,No,,1,2000,0,MISSING
+F1,"How to Choose an Online University",0,No,,0,0,0,MISSING
+F2,"Application Timeline / Calendar",0,No,,0,0,0,MISSING
+F3,"Documents / Verification Process",1,Yes,/verify,0,0,0,WEAK
+F4,"Study Tips / Online Learning Success",0,No,,0,0,0,MISSING
