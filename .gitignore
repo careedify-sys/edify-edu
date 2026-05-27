@@ -4,6 +4,17 @@ audit-summary.md
 scripts/broken-pages-report.md
 scripts/phase-2-verification.md
 
+# Topical audit scratch CSVs (generated, not deliverables)
+scripts/seo-audit/*.csv
+scripts/topical-audit/0*.csv
+
+# GSC data exports (downloaded manually, not source-controlled)
+scripts/gsc/*.xlsx
+scripts/gsc/*.csv
+
+# Codex scratch directory
+.codex/
+
 # Claude Code local settings (do not commit)
 .claude/settings.local.json
 
