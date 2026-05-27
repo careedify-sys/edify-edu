@@ -284,7 +284,193 @@ export const GUIDES: Guide[] = [
 <h2>Special Cases</h2>
 <p><strong>Diploma holders:</strong> Generally not eligible unless the diploma is a 3-year lateral entry degree-level program. A standard ITI or polytechnic diploma does not qualify.</p>
 <p><strong>Distance graduation:</strong> A graduation degree from UGC recognised distance/ODL university is valid for online MBA admission.</p>
-<p><strong>Foreign degrees:</strong> Recognised by AIU (Association of Indian Universities) — get an AIU equivalency certificate before applying.</p>
+<p><strong>Foreign degrees:</strong> Recognised by AIU (Association of Indian Universities). Get an AIU equivalency certificate before applying.</p>
+    `,
+  },
+  {
+    id: 'salary-after-mba-india',
+    icon: '💰',
+    tag: 'Salary and Careers',
+    title: 'MBA Salary in India 2026: What to Realistically Expect',
+    seoTitle: 'MBA Salary India 2026 — Online vs Campus, by Specialisation',
+    desc: 'Average MBA salaries in India by specialisation, university tier, and years of experience. Honest numbers drawn from university placement disclosures.',
+    metaDescription: 'MBA salary India 2026: Rs 5-10 LPA for online MBA freshers, Rs 12-25 LPA for top campus programs. Salary by specialisation, university tier, and 10-year trajectory.',
+    readTime: '6 min read',
+    targetKeyword: 'mba salary india 2026',
+    content: `
+<div class="callout-key">
+  <strong>Key figures (indicative):</strong> Online MBA freshers typically start at Rs 5-10 LPA. With 5 years of experience, the range widens to Rs 12-25 LPA. Verify current placement data on each university's official portal before making financial decisions.
+</div>
+
+<h2>Average MBA Salary in India in 2026</h2>
+<p>The average starting salary after an online MBA from a UGC-DEB approved university ranges from Rs 5 LPA to Rs 10 LPA for fresh graduates. For candidates with 2-4 years of prior work experience, starting packages typically rise to Rs 8-15 LPA.</p>
+<p>Campus MBA salaries sit higher. Graduates from IIMs report median domestic placements of Rs 25-35 LPA. Premium private B-schools such as XLRI, Symbiosis, and NMIMS report campus medians in the Rs 12-20 LPA range, per their official placement reports.</p>
+<p>Online MBA graduates from the same universities start lower, which reflects the difference in placement infrastructure and employer perception at hiring time. The gap narrows significantly after 3-5 years of post-MBA employment.</p>
+<p class="pull">All salary figures here are indicative ranges drawn from university placement disclosures and NIRF data. Actual offers vary by city, industry, and individual performance.</p>
+
+<h2>Salary by Specialisation</h2>
+<p>Specialisation affects starting salary more than the online vs campus distinction for most mid-career candidates. Choosing the right track at enrolment has a direct impact on your first three pay grades.</p>
+<div style="overflow-x:auto;margin:24px 0">
+<table style="width:100%;border-collapse:collapse;font-size:14px">
+<thead><tr style="background:#0f172a;color:#fff">
+<th style="padding:10px;text-align:left">Specialisation</th>
+<th style="padding:10px;text-align:left">Entry Level (0-2 yr)</th>
+<th style="padding:10px;text-align:left">Mid Level (5 yr)</th>
+<th style="padding:10px;text-align:left">Notes</th>
+</tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">Business Analytics / Data Science</td><td style="padding:10px">Rs 7-14 LPA</td><td style="padding:10px">Rs 18-30 LPA</td><td style="padding:10px">Highest demand; technical skill premium</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc"><td style="padding:10px">Finance and FinTech</td><td style="padding:10px">Rs 6-12 LPA</td><td style="padding:10px">Rs 15-25 LPA</td><td style="padding:10px">BFSI sector drives consistent demand</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">Operations and SCM</td><td style="padding:10px">Rs 5-9 LPA</td><td style="padding:10px">Rs 10-20 LPA</td><td style="padding:10px">Strong in manufacturing and e-commerce</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc"><td style="padding:10px">Marketing and Digital</td><td style="padding:10px">Rs 5-9 LPA</td><td style="padding:10px">Rs 10-18 LPA</td><td style="padding:10px">Variable by industry; digital skills command premium</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">HR and People Analytics</td><td style="padding:10px">Rs 5-8 LPA</td><td style="padding:10px">Rs 10-18 LPA</td><td style="padding:10px">CHRO roles pay Rs 30-60 LPA at large firms</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc"><td style="padding:10px">Hospitality Management</td><td style="padding:10px">Rs 4-7 LPA</td><td style="padding:10px">Rs 9-16 LPA</td><td style="padding:10px">Lower start; faster growth in luxury segment</td></tr>
+</tbody>
+</table>
+</div>
+<p>Analytics and data science commands a consistent salary premium across all university tiers. Candidates who combine an <a href="/programs/mba/specializations/business-analytics" class="ilink">MBA in Business Analytics</a> with SQL, Python, or Power BI skills report notably higher starting offers than non-technical MBA candidates.</p>
+
+<h2>Salary by University Tier</h2>
+<p>University tier affects salary in two ways: the employer brand signal at hiring time, and the strength of the alumni network for referrals later. The effect is strongest in the first 2 years and fades over time.</p>
+<p><strong>Tier 1 (IIMs, IITs, top-10 NIRF):</strong> Campus MBA median Rs 25-35 LPA. Peer group, recruiter access, and brand signal are unmatched for direct-entry roles at consulting firms and investment banks.</p>
+<p><strong>Tier 2 campus (XLRI, NMIMS, Symbiosis, MDI):</strong> Campus median Rs 12-20 LPA. Active placement cells and strong alumni networks in BFSI and FMCG. Check official placement reports on each university portal for current figures.</p>
+<p><strong>Tier 3 online MBA (NMIMS Online, Amity Online, Manipal Online, LPU, Chandigarh):</strong> Starting range Rs 5-10 LPA for fresh hires. All are UGC-DEB approved and NAAC graded. Salary progression depends primarily on job performance and functional upskilling, not the brand.</p>
+<p>For a detailed comparison of programs across tiers, see our <a href="/compare" class="ilink">online MBA comparison tool</a>, which lists NAAC grade, NIRF rank, fees, and placement data side by side.</p>
+
+<h2>10-Year Salary Trajectory</h2>
+<p>The long-term salary curve shows that the starting point matters less than specialisation choice and employer quality by years 3-5.</p>
+<p><strong>0-2 years (Entry):</strong> Business analyst, assistant manager, management trainee. Online MBA fresh start: Rs 5-10 LPA. Campus MBA (Tier 2): Rs 12-18 LPA. The gap is real and driven by placement infrastructure.</p>
+<p><strong>3-5 years (Manager):</strong> Strong performers at both online and campus MBA programs converge around Rs 12-20 LPA. Function matters more than degree mode at this stage. Finance and analytics leads earn more than general management candidates.</p>
+<p><strong>5-10 years (Senior Manager / Director):</strong> Candidates with the right specialisation and measurable outcomes reach Rs 20-40 LPA. At this stage, P&L ownership and team leadership record drive salary reviews more than academic credentials.</p>
+<p><strong>10+ years (VP, Director, CXO):</strong> The original MBA mode is irrelevant. Salary varies from Rs 40 LPA to Rs 2 crore depending on company size, industry, and leadership scope. Read the full <a href="/guides/career-after-mba-india" class="ilink">career after MBA India guide</a> for role-by-role progression maps.</p>
+
+<h2>Online MBA Salary vs Campus MBA Salary</h2>
+<p>The salary gap between online and campus MBA is real at entry level and narrows over time. Understanding why it exists helps you plan around it.</p>
+<p><strong>Why the gap exists at entry:</strong> Campus MBA programs include structured internships, live projects with recruiters, and direct placement cells. These improve initial job quality and starting salary. Online MBA students typically study while employed and do not access the same placement drives.</p>
+<p><strong>What closes the gap:</strong> Work experience before the online MBA, strong functional skills (data tools, financial modelling, coding), and professional certifications alongside the degree. Candidates who add a CFA Level 1, Google Analytics, or AWS certification to an online MBA consistently report faster salary progression.</p>
+<p>By year 5, no consistent salary difference exists between online and campus MBA holders in the same function and industry, based on NIRF placement trend data. The employer reviews output, not degree mode. See the <a href="/blog/online-mba-salary-india-2026" class="ilink">online MBA salary report</a> for specialisation-level detail.</p>
+
+<div class="callout-key">
+  <strong>The practical takeaway:</strong> Online MBA from a UGC-DEB approved, NAAC A or above university is a viable path to Rs 10-20 LPA within 5 years of completing the program. The route requires deliberate functional upskilling alongside the degree, not just the credential.
+</div>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>What is the highest MBA salary in India in 2026?</h3>
+<p>The highest reported MBA placements come from IIM Ahmedabad, IIM Bangalore, and IIM Calcutta, where median domestic salaries reach Rs 30-35 LPA and top international offers exceed Rs 70 LPA. These figures are for full-time, two-year campus programs. Verify current data on each IIM's official placement report.</p>
+
+<h3>Can an online MBA fresher earn Rs 10 LPA?</h3>
+<p>Yes, in analytics, FinTech, and e-commerce roles. Candidates with prior technical experience (IT, engineering) and an online MBA in <a href="/blog/data-science-salary-india-2026-scope-jobs" class="ilink">data science or analytics</a> regularly report offers in the Rs 8-12 LPA range in Bengaluru, Mumbai, and Hyderabad. This is not typical for all online MBA graduates without technical backgrounds.</p>
+
+<h3>Does NMIMS online MBA salary match the campus MBA?</h3>
+<p>No, not at entry level. NMIMS campus MBA (Mumbai) has a significantly higher median placement salary than the online program. The online program offers schedule flexibility and brand recognition but operates with different placement infrastructure. Check the NMIMS official placement reports for current figures before comparing.</p>
+
+<h3>Is online MBA salary worth the investment?</h3>
+<p>Compare the total program cost (typically Rs 80,000 to Rs 3 lakh for online MBA from approved universities) against the salary increment expected over 3-5 years. Most working professionals targeting a promotion or function switch report a positive return within 2-3 years. Freshers with no prior experience typically take longer to see a salary premium.</p>
+
+<h3>How does MBA HR salary compare to MBA Finance?</h3>
+<p>MBA Finance typically starts Rs 1-3 LPA higher than <a href="/blog/mba-hr-career-salary-scope-2026" class="ilink">MBA HR salary</a> at entry level, due to demand in BFSI. At the senior level (10+ years), CHRO roles at large firms pay Rs 30-60 LPA, comparable to senior Finance roles outside investment banking. Specialisation fit with your prior experience matters more than the salary differential at entry.</p>
+
+<div class="cta-box">
+  <p style="font-size:18px;font-weight:700;margin:0 0 8px">Compare MBA programs before you enrol</p>
+  <p style="margin:0 0 16px;font-size:14px;opacity:0.9">Every UGC-DEB approved online MBA on Edify shows NAAC grade, NIRF rank, fees, and placement data. No paid rankings.</p>
+  <a href="/compare" class="ilink" style="display:inline-block;background:#f97316;color:#fff;padding:10px 24px;border-radius:8px;font-weight:700;text-decoration:none">Compare All Online MBA</a>
+</div>
+    `,
+  },
+  {
+    id: 'career-after-mba-india',
+    icon: '🎯',
+    tag: 'Career Paths',
+    title: 'Career After MBA India 2026: Top Jobs, Salary and Scope',
+    seoTitle: 'Career After MBA India 2026 — Top Jobs, Salary and Scope',
+    desc: 'Top 10 jobs after MBA in India, career paths by specialisation, government options, and realistic salary milestones at 2, 5, and 10 years.',
+    metaDescription: 'Career after MBA India 2026: top 10 jobs, salary by function, government career options, and what online vs campus MBA means for employers. Realistic trajectories.',
+    readTime: '7 min read',
+    targetKeyword: 'career after MBA India 2026',
+    content: `
+<div class="callout-key">
+  <strong>Quick summary:</strong> An MBA opens roles in finance, analytics, consulting, marketing, operations, and HR. Starting salary depends heavily on specialisation and university tier. The online vs campus distinction matters most in the first 2 years and fades after that.
+</div>
+
+<h2>Top 10 Jobs After MBA in India 2026</h2>
+<p>The most common roles taken by MBA graduates in India span finance, consulting, operations, marketing, and data functions. Salary figures below are indicative and based on university placement disclosures.</p>
+<div style="overflow-x:auto;margin:24px 0">
+<table style="width:100%;border-collapse:collapse;font-size:14px">
+<thead><tr style="background:#0f172a;color:#fff">
+<th style="padding:10px;text-align:left">Job Title</th>
+<th style="padding:10px;text-align:left">Typical Entry Salary</th>
+<th style="padding:10px;text-align:left">Growth Path</th>
+</tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">Business Analyst</td><td style="padding:10px">Rs 6-12 LPA</td><td style="padding:10px">Senior analyst, product manager, strategy head</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc"><td style="padding:10px">Financial Analyst / Associate</td><td style="padding:10px">Rs 6-12 LPA</td><td style="padding:10px">CFA track, VP Finance, CFO</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">Management Trainee</td><td style="padding:10px">Rs 4-8 LPA</td><td style="padding:10px">Functional manager in 2-3 years</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc"><td style="padding:10px">Marketing Manager</td><td style="padding:10px">Rs 5-10 LPA</td><td style="padding:10px">Brand head, CMO track</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">HR Business Partner</td><td style="padding:10px">Rs 5-9 LPA</td><td style="padding:10px">HR Director, CHRO track</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc"><td style="padding:10px">Operations Manager</td><td style="padding:10px">Rs 5-9 LPA</td><td style="padding:10px">Plant head, VP Ops, COO track</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">Data Analyst / BI Analyst</td><td style="padding:10px">Rs 7-14 LPA</td><td style="padding:10px">Analytics lead, CDO track</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc"><td style="padding:10px">Sales Manager</td><td style="padding:10px">Rs 5-10 LPA + incentives</td><td style="padding:10px">Regional head, VP Sales</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px">Consultant (Big 4 / MBB)</td><td style="padding:10px">Rs 7-14 LPA</td><td style="padding:10px">Senior consultant, partner track</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc"><td style="padding:10px">Investment Banking Analyst</td><td style="padding:10px">Rs 7-15 LPA</td><td style="padding:10px">Associate, VP, MD track (7-10 years)</td></tr>
+</tbody>
+</table>
+</div>
+<p>Campus MBAs from top B-schools access these roles through placement drives. Online MBA graduates apply independently through job portals, LinkedIn, and alumni referrals. Both paths lead to the same roles; the access method differs. For a detailed look at specific roles, see <a href="/blog/career-after-mba-jobs-salary-scope-2026" class="ilink">MBA jobs, salary and scope 2026</a>.</p>
+
+<h2>Career Paths by Specialisation</h2>
+<p><strong>Finance and FinTech:</strong> The most structured career ladder in MBA. Roles start as financial analysts at banks, NBFCs, and investment firms. With 5-7 years and a CFA or FRM qualification, candidates move into portfolio management, M&amp;A advisory, or corporate treasury. See the <a href="/blog/mba-finance-career-salary-scope-2026" class="ilink">MBA Finance career guide</a> for the full progression map.</p>
+<p><strong>Business Analytics and Data Science:</strong> The highest-growth MBA career path in 2026. Roles combine SQL, Python, and visualisation tools with business strategy. FinTech, e-commerce, healthcare analytics, and consulting firms actively recruit analytics MBA candidates. Entry salaries start Rs 2-5 LPA above non-technical MBA peers.</p>
+<p><strong>HR and People Analytics:</strong> HR business partner roles at large IT and BFSI firms. The shift toward people analytics has created demand for MBA HR candidates who can work with HRIS tools and data dashboards. Senior HRBP and CHRO roles at large firms pay Rs 30-60 LPA after 12-15 years.</p>
+<p><strong>Operations and Supply Chain:</strong> Manufacturing, logistics, and e-commerce sectors. Amazon, Flipkart, Delhivery, and Maersk hire operations MBAs regularly. After 3-5 years in supply chain, candidates with a track record in cost reduction or delivery optimisation move into plant head or VP Ops roles.</p>
+<p><strong>Marketing and Digital Marketing:</strong> Brand management and digital marketing roles at FMCG, EdTech, FinTech, and D2C brands. Digital marketing candidates with SEO, performance marketing, and analytics skills have stronger prospects in 2026 than pure brand management candidates.</p>
+<p><strong>Entrepreneurship:</strong> Most MBA entrepreneurs spend 3-5 years in corporate roles first to build domain knowledge, capital, and a professional network. MBA programs at MAHE, Amity, and NMIMS support startups through incubator programs, but a stable first job after graduation is the more common path.</p>
+
+<h2>Career After Online MBA vs Campus MBA: Does It Matter to Employers?</h2>
+<p>The honest answer: it matters at the first hiring decision, less so after 2 years.</p>
+<p><strong>At hiring:</strong> Top consulting firms, investment banks, and FMCG companies run exclusive campus placement drives at IIMs and premium B-schools. Online MBA graduates do not enter these drives. This creates an access gap at the initial job search stage.</p>
+<p><strong>After 2 years:</strong> Promotion reviews and lateral hiring decisions are based on output. A candidate with an online MBA who has delivered measurable results gets evaluated on those results, not on how they earned their degree.</p>
+<p><strong>What online MBA graduates can do to compete:</strong> Build domain expertise through certifications (CFA, PMP, Google Analytics, AWS). Use LinkedIn actively to demonstrate expertise and connect with hiring managers. Apply to companies that hire through job portals rather than exclusively through campus drives. Most mid-size and growing companies in India recruit this way.</p>
+
+<h2>Government Jobs After MBA</h2>
+<p>MBA graduates have strong government sector options through two main pathways: competitive exams and lateral entry recruitment.</p>
+<p><strong>Competitive exam entry:</strong> Bank PO and Bank Specialist Officer exams (IBPS, SBI), PSU management trainee programs (ONGC, BHEL, NTPC, NALCO), and UPSC CSE (where MBA counts as the qualifying degree for specialist posts) are the main routes. An online MBA from a UGC-DEB approved university qualifies for all these exams.</p>
+<p><strong>Lateral entry:</strong> NITI Aayog, PSUs, and central government ministries recruit MBA professionals directly at Joint Secretary-equivalent levels for policy, strategy, and operations roles. These openings are advertised on the official UPSC and DoPT portals.</p>
+<p>Salary for government MBA roles ranges from Rs 50,000 to Rs 1.5 lakh per month at entry, with structured increments, DA revisions, and pension benefits. For the complete exam guide, see <a href="/blog/govt-jobs-after-mba-india-2026" class="ilink">government jobs after MBA 2026</a>.</p>
+
+<h2>Career Trajectories: 0-2 Years, 5 Years, 10 Years</h2>
+<p><strong>0-2 years (Entry):</strong> Most MBA freshers start as management trainees, junior analysts, or assistant managers. Salary range: Rs 4-10 LPA depending on specialisation, city, and university. The key priority at this stage is picking a function and building one measurable result to own — a project delivered, a process improved, a team led. That evidence matters more than your MBA grade at your first review.</p>
+<p><strong>3-5 years (Manager):</strong> Promotion to manager or senior analyst is typical with strong performance. By year 5, MBA graduates in finance, analytics, or consulting who have stayed focused on one function reach Rs 12-20 LPA. Cross-functional exposure within a sector (finance and analytics, or marketing and data) tends to accelerate progression.</p>
+<p><strong>5-10 years (Senior Manager / Director):</strong> Candidates with the right specialisation choice and demonstrated leadership are approaching Rs 20-40 LPA. At this level, companies evaluate P&amp;L ownership, team size managed, and board-level visibility. The original MBA mode (online vs campus) carries no weight at this stage.</p>
+<p><strong>10+ years (CXO / Partner / Entrepreneur):</strong> MBA graduates who built domain depth and a leadership track record access CXO, partner, or board-level roles. Salary range is wide: Rs 40 LPA to Rs 2 crore depending on company size and sector. Most people at this level have added post-MBA qualifications (CFA, CPA, executive education) to their profile.</p>
+<p>For salary benchmarks at each stage, see the full <a href="/guides/salary-after-mba-india" class="ilink">MBA salary India guide</a>.</p>
+
+<div class="callout-key">
+  <strong>The 5-year rule:</strong> Pick a specialisation in year 1 and build depth in it for 5 years. Switching functions too early (year 1 or 2) is the most common career mistake MBA graduates in India make. Domain credibility, not the degree, drives salary beyond year 5.
+</div>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>What is the best career after MBA in India?</h3>
+<p>Business analytics, investment banking, and management consulting offer the highest salary ceilings in 2026. For stable growth with structured promotion ladders, operations management at large manufacturers and HR business partner roles at IT firms offer consistent progression. The best career is the one that aligns with your prior background and the function you want to build depth in over 10 years.</p>
+
+<h3>Can I switch careers after an online MBA?</h3>
+<p>Yes, but the switch is easier within related fields. A sales professional switching to marketing after an MBA in marketing is common. A software engineer switching to product management or data analytics after an MBA is well-documented. Switching from, say, medicine to investment banking with just an MBA is rare and typically requires a campus program with IB placement access.</p>
+
+<h3>How long does it take to get a job after online MBA?</h3>
+<p>For working professionals: most report a salary revision or promotion within 6-18 months of completing the degree. For freshers entering the job market after an online MBA: 2-4 months of active job search is typical for roles in the Rs 5-8 LPA range in Bengaluru, Mumbai, Pune, or Hyderabad.</p>
+
+<h3>Does online MBA help for career change from engineering?</h3>
+<p>Yes. Engineers moving into product management, data analytics, FinTech, or consulting use MBA as the formal business qualification that gets their CV past initial filters. An <a href="/blog/mba-after-engineering-india-2026" class="ilink">MBA after engineering</a> in a data or finance specialisation is one of the more predictable high-salary career paths in India's job market.</p>
+
+<h3>Which MBA specialisation has the most government job opportunities?</h3>
+<p>General Management and HR specialisations have the broadest access to government sector roles. Finance MBA qualifies for specialist banking officer roles. Operations and SCM MBAs qualify for PSU management trainee positions at manufacturing and energy companies. Check specific recruitment notifications for the exact specialisation requirement before applying.</p>
+
+<div class="cta-box">
+  <p style="font-size:18px;font-weight:700;margin:0 0 8px">Find the right MBA for your career goal</p>
+  <p style="margin:0 0 16px;font-size:14px;opacity:0.9">Compare every UGC-DEB approved online MBA in India by specialisation, NAAC grade, fees, and placement outcomes. No paid rankings, no referral commissions.</p>
+  <a href="/programs/mba" class="ilink" style="display:inline-block;background:#f97316;color:#fff;padding:10px 24px;border-radius:8px;font-weight:700;text-decoration:none">Browse MBA Programs</a>
+</div>
     `,
   },
 ]
