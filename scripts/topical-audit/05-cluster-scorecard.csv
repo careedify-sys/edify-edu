@@ -34,8 +34,8 @@ D4,"Fees / Scholarships / EMI / Loans",1,Yes,/fees,0,0,1,WEAK
 D5,"Admission Process / Entrance Exams / Eligibility",8,Yes,/guides/online-mba-eligibility-india,7,1986,7,DEVELOPING
 D6,"Placements / ROI / Career Outcomes",1,No,,1,2200,0,MISSING
 D7,"Validity / Recognition / Job Prospects",2,Yes,/guides/is-online-degree-valid-india,1,2000,1,WEAK
-E1,"Career Paths After Each Program",15,No,,15,2327,0,WEAK
-E2,"Salary Data and Trends",7,No,,7,2500,0,WEAK
+E1,"Career Paths After Each Program",16,Yes,/guides/career-after-mba-india,15,2327,8,DEVELOPING
+E2,"Salary Data and Trends",8,Yes,/guides/salary-after-mba-india,7,2500,7,DEVELOPING
 E3,"Resume / Interview / Job-Search Resources",1,No,,1,2000,0,MISSING
 F1,"How to Choose an Online University",0,No,,0,0,0,MISSING
 F2,"Application Timeline / Calendar",0,No,,0,0,0,MISSING

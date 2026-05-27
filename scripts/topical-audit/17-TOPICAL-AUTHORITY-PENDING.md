@@ -62,7 +62,7 @@ E2, E1 each need a new hub page (~1,800 words). D5 needs only link wiring (hub a
 
 ---
 
-### 2A — E2 Salary Data Hub *(new page)*
+### 2A — E2 Salary Data Hub *(new page)* ✓ DONE (2026-05-27)
 | Field | Value |
 |---|---|
 | Recommended URL | `/guides/salary-after-mba-india` |
@@ -91,7 +91,7 @@ E2, E1 each need a new hub page (~1,800 words). D5 needs only link wiring (hub a
 
 ---
 
-### 2B — E1 Career After Programs Hub *(new page)*
+### 2B — E1 Career After Programs Hub *(new page)* ✓ DONE (2026-05-27)
 | Field | Value |
 |---|---|
 | Recommended URL | `/guides/career-after-mba-india` |
@@ -220,4 +220,4 @@ Affected: `amity-online-bba-fees-2026`, `amity-online-bba-review-2026`, `bits-pi
 
 ---
 
-**Sprint A complete (2026-05-27): Bucket 1 (3 injections) + D5 wiring (7 injections) + 6 double-space fixes. Next: wait until ~2026-06-10 for GSC CTR data, then decide on E1/E2 hub builds.**
+**Sprint A+B complete (2026-05-27): Bucket 1 (3 injections) + D5 wiring (7 injections) + 6 double-space fixes + E1/E2 hub pages built + 15 inbound links wired. Next: check GSC impressions for new guide pages ~2026-06-10. Then Bucket 3 (WEAK university clusters) once any cluster hits 500+ impressions/month.**
