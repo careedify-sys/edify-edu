@@ -3,15 +3,6 @@
 import type { Metadata } from 'next'
 import { UNIVERSITIES } from '@/lib/data'
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://edifyedu.in' },
-    { '@type': 'ListItem', position: 2, name: 'Universities', item: 'https://edifyedu.in/universities' },
-  ],
-}
-
 export const metadata: Metadata = {
   title: '125+ UGC Approved Online Universities India 2026',
   description: 'Compare 125+ UGC DEB approved online universities in India 2026. Filter by NIRF rank, NAAC grade, program, fees & region. All independently verified.',
@@ -65,7 +56,6 @@ const webPageSchema = {
 export default function UniversitiesLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       {children}

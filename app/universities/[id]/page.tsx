@@ -112,14 +112,6 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
           addressRegion: u.state !== 'Online' ? u.state : 'India',
           addressCountry: 'IN',
         },
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue,
-          bestRating: '4',
-          worstRating: '1',
-          reviewCount: 1,
-          description: `NAAC Accreditation Grade ${u.naac}`,
-        },
         review: {
           '@type': 'Review',
           author: {
@@ -147,8 +139,6 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
               description: `${u.name} Online ${prog} program`,
               provider: { '@type': 'CollegeOrUniversity', name: u.name },
             },
-            price: u.programDetails[prog]?.fees || `₹${Math.round(u.feeMin/1000)}K+`,
-            priceCurrency: 'INR',
           })),
         },
       },

@@ -119,14 +119,7 @@ export default function UniversityPageClient({ university: u }: Props) {
         courseMode:'online',
         offers:{'@type':'Offer',priceCurrency:'INR',lowPrice:u.feeMin,highPrice:u.feeMax,availability:'https://schema.org/InStock'},
         timeRequired: displayProgram==='MBA'||displayProgram==='MCA'?'P2Y':'P3Y',
-      })}}/>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
-        '@context':'https://schema.org','@type':'BreadcrumbList',
-        itemListElement:[
-          {'@type':'ListItem',position:1,name:'Home',item:'https://edifyedu.in'},
-          {'@type':'ListItem',position:2,name:'Universities',item:'https://edifyedu.in/universities'},
-          {'@type':'ListItem',position:3,name:`${u.name} ${displayProgram}`,item:`https://edifyedu.in/universities/${u.id}`},
-        ]
+      hasCourseInstance:{'@type':'CourseInstance',courseMode:'online',courseWorkload:displayProgram==='MBA'||displayProgram==='MCA'?'P2Y':'P3Y'},
       })}}/>
 
       <AssuredMarquee />
