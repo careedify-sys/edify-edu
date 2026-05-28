@@ -7149,7 +7149,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'op-jindal-global-university-online',
-    logo: null,
+    logo: undefined,
     name: 'O.P. Jindal Global University Online',
     abbr: 'JGU',
     city: 'Sonipat',
