@@ -404,6 +404,13 @@ const nextConfig = {
       { source: '/blog/advantages-online-mba-manipal-university-2026',     destination: '/blog/online-manipal-mba-review-2026',               permanent: true },
       { source: '/blog/which-mba-is-best-india-2026',                      destination: '/blog/best-mba-specialization-india-2026',           permanent: true },
 
+      // ── Ad-hoc / vanity redirects ────────────────────────────────────
+      { source: '/how-to-choose-online-mba-university',              destination: '/blog/how-to-choose-online-mba-university-india-2026', permanent: true },
+      { source: '/is-online-mba-worth-it-2026',                      destination: '/blog/is-online-mba-worth-it-2026',                    permanent: true },
+      { source: '/scholarships',                                     destination: '/compare',                                             permanent: true },
+      { source: '/verify/nmims-online',                              destination: '/universities/nmims-online',                           permanent: true },
+      { source: '/verify/symbiosis-university-online',               destination: '/verify/symbiosis-international-online',               permanent: true },
+
       // Blog legacy
       { source: '/post/:slug',                 destination: '/blog/:slug',    permanent: true },
       { source: '/article/:slug',              destination: '/blog/:slug',    permanent: true },

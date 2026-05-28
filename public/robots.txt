@@ -3,6 +3,7 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /_next/
+Disallow: /cdn-cgi/
 
 # AI crawlers — site owner explicitly allows
 User-agent: GPTBot
