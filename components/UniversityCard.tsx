@@ -43,7 +43,7 @@ interface UniversityCardData extends Omit<UniSlim, 'city'> {
 
 // Approval logo icon map — show these as visual SVG logos, not text
 const APPROVAL_LOGOS: Record<string, { src: string; label: string; bg: string }> = {
-  'AICTE':   { src: '/logos/university_logos/Aicte.svg',            label: 'AICTE',   bg: '#fff8f0' },
+  'AICTE':   { src: '/logos/university_logos/Aicte.webp',           label: 'AICTE',   bg: '#fff8f0' },
   'AIU':     { src: '/logos/university_logos/aiu.svg',              label: 'AIU',     bg: '#f0f8ff' },
   'NAAC':    { src: '/logos/university_logos/NAAC.svg',             label: 'NAAC',    bg: '#f0fff4' },
   'WES':     { src: '/logos/university_logos/WES.svg',              label: 'WES',     bg: '#f8f0ff' },
