@@ -8,7 +8,7 @@ const BASE = 'https://edifyedu.in'
 const year = new Date().getFullYear()
 
 export const metadata: Metadata = {
-  title: `Online University Fees ${year}: Compare 125+ UGC-DEB Approved Programs | EdifyEdu`,
+  title: { absolute: `Online University Fees ${year}: Compare 125+ UGC-DEB Approved Programs | EdifyEdu` },
   description: `Compare total fees and EMI for 125+ UGC-DEB approved online MBA, MCA, BBA and BCA programs. Filter by NAAC grade, program type and region. Free, no login.`,
   keywords: [
     'online mba fees india 2026',
