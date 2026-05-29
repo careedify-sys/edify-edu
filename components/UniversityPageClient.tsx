@@ -116,8 +116,7 @@ export default function UniversityPageClient({ university: u }: Props) {
         url:`https://edifyedu.in/universities/${u.id}`,
         provider:{'@type':'EducationalOrganization',name:u.name},
         educationalLevel:'Postgraduate',
-        courseMode:'online',
-        offers:{'@type':'Offer',priceCurrency:'INR',lowPrice:u.feeMin,highPrice:u.feeMax,availability:'https://schema.org/InStock'},
+        offers:{'@type':'Offer',category:'Online Education',priceCurrency:'INR',lowPrice:u.feeMin,highPrice:u.feeMax,availability:'https://schema.org/InStock'},
         timeRequired: displayProgram==='MBA'||displayProgram==='MCA'?'P2Y':'P3Y',
       hasCourseInstance:{'@type':'CourseInstance',courseMode:'online',courseWorkload:displayProgram==='MBA'||displayProgram==='MCA'?'P2Y':'P3Y'},
       })}}/>

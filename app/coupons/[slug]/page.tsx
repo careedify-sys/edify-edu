@@ -89,6 +89,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
     '@context': 'https://schema.org', '@type': 'Offer',
     name: `${page.universityName} Online MBA ${year} Discount Coupon`,
     description: `Verified discount coupon ${page.couponCode}: up to ${page.maxSavings} off, applied at enrollment.`,
+    category: 'Online Education Coupon',
     priceCurrency: 'INR',
     validThrough: expiryISO,
     availability: 'https://schema.org/InStock',
@@ -141,6 +142,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
     provider: { '@type': 'CollegeOrUniversity', name: page.universityName, sameAs: page.officialUrl },
     offers: {
       '@type': 'Offer',
+      category: 'Online Education',
       priceCurrency: 'INR',
       validThrough: expiryISO,
       url: `https://edifyedu.in/coupons/${page.slug}`,

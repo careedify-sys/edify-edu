@@ -132,9 +132,10 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
           name: `${u.name} Online Programs`,
           itemListElement: u.programs.map((prog, i) => ({
             '@type': 'Offer',
+            category: 'Online Education',
             position: i + 1,
             itemOffered: {
-              '@type': 'Course',
+              '@type': 'Service',
               name: `Online ${prog}`,
               description: `${u.name} Online ${prog} program`,
               provider: { '@type': 'CollegeOrUniversity', name: u.name },

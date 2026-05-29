@@ -297,6 +297,7 @@ export default async function CatchAllProgramPage(
     educationalLevel: program.startsWith('M') ? 'Postgraduate' : 'Undergraduate',
     offers: {
       '@type': 'Offer',
+      category: 'Online Education',
       price: feeMin,
       priceCurrency: 'INR',
       priceSpecification: {

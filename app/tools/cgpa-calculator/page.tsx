@@ -229,18 +229,6 @@ const faqSchema = {
   ],
 }
 
-const webAppSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'WebApplication',
-  name: 'CGPA to Percentage Calculator',
-  description:
-    'Free online CGPA to percentage calculator using the UGC standard formula (CGPA × 9.5). Supports both CGPA to percentage and percentage to CGPA conversion.',
-  applicationCategory: 'EducationalApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' },
-  url: 'https://edifyedu.in/tools/cgpa-calculator',
-}
-
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -262,10 +250,6 @@ export default function CgpaCalculatorPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }}
       />
       <script
         type="application/ld+json"
