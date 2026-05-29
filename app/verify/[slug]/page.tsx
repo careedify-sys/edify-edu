@@ -12,6 +12,8 @@ import { TrackPageView } from '@/components/verify/TrackPageView';
 import { AboutUniversity } from '@/components/verify/AboutUniversity';
 import { HelpdeskTeaser } from '@/components/verify/HelpdeskTeaser';
 import { VerifyFAQ, getVerifyFAQs } from '@/components/verify/VerifyFAQ';
+import { getTitleName } from '@/lib/seo-title';
+import { getUniversityById } from '@/lib/data';
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -65,9 +67,13 @@ export async function generateMetadata({ params }: PageProps) {
 
   if (!uni) return { title: { absolute: 'University Not Found | EdifyEdu' } };
 
+  const libUni = getUniversityById(slug);
+  const displayName = uni.name.length > 28 && libUni
+    ? getTitleName(libUni.id, libUni.name, libUni.abbr)
+    : uni.name;
   const location = [uni.city, uni.state].filter(Boolean).join(', ');
   return {
-    title: { absolute: `Is ${uni.name} UGC-DEB Approved? Verification ${year} | EdifyEdu` },
+    title: { absolute: `${displayName} UGC-DEB Verification ${year} | EdifyEdu` },
     description: `Verify ${uni.name}${location ? ' (' + location + ')' : ''} UGC-DEB approval, AICTE, NAAC grade and NIRF rank — sourced from official UGC, NAAC and NIRF portals. Independent verification, ${year}.`,
     alternates: { canonical: `https://edifyedu.in/verify/${slug}` },
     openGraph: {
