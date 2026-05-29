@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 280" width="720" height="280" role="img" aria-label="Tier 2 Online BBA monthly EMI comparison 2026">
+  <title>Tier 2 Online BBA: Monthly EMI Comparison 2026</title>
+  <rect width="720" height="280" fill="#f1f5f9" rx="10"/>
+  <!-- Title -->
+  <text x="360" y="36" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="15" font-weight="700" fill="#0f172a">Tier 2 Online BBA: Monthly EMI Comparison 2026</text>
+  <text x="360" y="56" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#64748b">EMI terms and conditions apply · Verify before paying</text>
+
+  <!-- Grid lines (scale 0 to 9000, width 480px from x=190 to x=670) -->
+  <line x1="190" y1="72" x2="190" y2="245" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="350" y1="72" x2="350" y2="245" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="510" y1="72" x2="510" y2="245" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="670" y1="72" x2="670" y2="245" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- X-axis labels -->
+  <text x="190" y="260" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">₹0</text>
+  <text x="350" y="260" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">₹3,000</text>
+  <text x="510" y="260" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">₹6,000</text>
+  <text x="670" y="260" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">₹9,000</text>
+
+  <!-- Row 1: MUJ ₹3,875 → 3875/9000*480 = 206.7 → green highlight (lowest) -->
+  <text x="180" y="104" text-anchor="end" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#10b981">MUJ Online</text>
+  <rect x="190" y="82" width="207" height="40" fill="#10b981" rx="4"/>
+  <text x="403" y="105" text-anchor="start" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#0f172a" dx="6">₹3,875/mo</text>
+  <text x="403" y="118" text-anchor="start" font-family="system-ui,sans-serif" font-size="10" fill="#64748b" dx="6">Lowest in Tier 2</text>
+  <!-- "Lowest EMI" badge -->
+  <rect x="190" y="78" width="75" height="16" fill="#0f172a" rx="3"/>
+  <text x="227" y="90" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#10b981">LOWEST EMI ★</text>
+
+  <!-- Row 2: LPU ₹4,080 → 4080/9000*480 = 217.6 -->
+  <text x="180" y="158" text-anchor="end" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#334155">LPU Online</text>
+  <rect x="190" y="136" width="218" height="40" fill="#94a3b8" rx="4"/>
+  <text x="414" y="160" text-anchor="start" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#334155" dx="6">₹4,080/mo</text>
+  <text x="414" y="172" text-anchor="start" font-family="system-ui,sans-serif" font-size="10" fill="#64748b" dx="6">With 20% grant</text>
+
+  <!-- Row 3: Amity ₹7,877 → 7877/9000*480 = 419.9 -->
+  <text x="180" y="212" text-anchor="end" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#334155">Amity Online</text>
+  <rect x="190" y="190" width="420" height="40" fill="#cbd5e1" rx="4"/>
+  <text x="616" y="214" text-anchor="start" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#334155" dx="6">₹7,877/mo</text>
+  <text x="616" y="226" text-anchor="start" font-family="system-ui,sans-serif" font-size="10" fill="#64748b" dx="6">0% 24-month</text>
+
+  <!-- Footer note -->
+  <text x="360" y="270" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#94a3b8">Source: Official university portals, May 2026. EMI subject to terms. Verify at edifyedu.in.</text>
+</svg>
