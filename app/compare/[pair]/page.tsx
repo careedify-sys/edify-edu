@@ -28,13 +28,13 @@ export async function generateMetadata(
   const nameB = getTitleName(uB.id, uB.name, uB.abbr)
   const year = new Date().getFullYear()
 
-  const title = `${nameA} vs ${nameB} Online MBA ${year} - Fees, Syllabus & Rankings Compared | EdifyEdu`
+  const title = `${nameA} vs ${nameB}: Online MBA ${year} Fees & Rankings | EdifyEdu`
   const feeA = formatINR(uA.feeMin)
   const feeB = formatINR(uB.feeMin)
   const description = `${nameA} or ${nameB} for Online MBA in ${year}? Compare NIRF rank, NAAC grade, total fees (${feeA} vs ${feeB}), specialisations and placements. Independent verdict.`
 
   return {
-    title,
+    title: { absolute: title },
     description: description.length > 160 ? description.slice(0, 157) + '...' : description,
     alternates: { canonical: `https://edifyedu.in/compare/${pair}` },
     openGraph: { title, description, url: `https://edifyedu.in/compare/${pair}`, type: 'article' },
