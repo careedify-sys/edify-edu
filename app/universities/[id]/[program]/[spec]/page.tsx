@@ -21,11 +21,11 @@ export async function generateMetadata(
   const { id, program: programSlug, spec: specSlug } = await params
   const u = getUniversityById(id)
   const program = PM[programSlug?.toLowerCase()]
-  if (!u || !program) return { title: 'Not Found' }
+  if (!u || !program) return { title: 'Not Found', robots: { index: false, follow: false } }
 
   const pd      = u.programDetails[program]
   const specVal = pd?.specs?.find(s => getSpecSlug(s) === specSlug)
-  if (!specVal) return { title: 'Not Found' }
+  if (!specVal) return { title: 'Not Found', robots: { index: false, follow: false } }
 
   const spec     = getSpecName(specVal)
   const shortSpec = shortenSpec(spec)
@@ -85,7 +85,7 @@ export default async function UniversitySpecPage(
   // If still no spec match, redirect to the program page rather than 404 —
   // the user clicked something we no longer have an exact spec for, so the
   // closest valid landing is the program listing for this university.
-  if (!specVal) redirect(`/universities/${u.id}/${programSlug}`)
+  if (!specVal) notFound()
 
   return (
     <UniSpecBody

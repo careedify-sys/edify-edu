@@ -19,10 +19,10 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { id, spec: specSlug } = await params
   const u = getUniversityById(id)
-  if (!u) return { title: 'Not Found' }
+  if (!u) return { title: 'Not Found', robots: { index: false, follow: false } }
 
   const spec = resolveSpecName(id, 'MCA', 'mca', specSlug)
-  if (!spec) return { title: 'Not Found' }
+  if (!spec) return { title: 'Not Found', robots: { index: false, follow: false } }
 
   const year = new Date().getFullYear()
   const syllabus = getMasterSyllabus(u.id, 'MCA') as any
@@ -60,7 +60,7 @@ export default async function MCASpecPage(
   const pd = u.programDetails['MCA']
   if (!pd) redirect(`/universities/${u.id}`)
   const spec = resolveSpecName(id, 'MCA', 'mca', specSlug)
-  if (!spec) redirect(`/universities/${u.id}/mca`)
+  if (!spec) notFound()
 
   return (
     <UniSpecBody

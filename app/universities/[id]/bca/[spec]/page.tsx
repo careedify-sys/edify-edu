@@ -18,10 +18,10 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { id, spec: specSlug } = await params
   const u = getUniversityById(id)
-  if (!u) return { title: 'Not Found' }
+  if (!u) return { title: 'Not Found', robots: { index: false, follow: false } }
 
   const spec = resolveSpecName(id, 'BCA', 'bca', specSlug)
-  if (!spec) return { title: 'Not Found' }
+  if (!spec) return { title: 'Not Found', robots: { index: false, follow: false } }
 
   const year = new Date().getFullYear()
   const titleName = getTitleName(u.id, u.name, u.abbr)
@@ -51,7 +51,7 @@ export default async function BCASpecPage(
   const pd = u.programDetails['BCA']
   if (!pd) redirect(`/universities/${u.id}`)
   const spec = resolveSpecName(id, 'BCA', 'bca', specSlug)
-  if (!spec) redirect(`/universities/${u.id}/bca`)
+  if (!spec) notFound()
 
   return (
     <UniSpecBody

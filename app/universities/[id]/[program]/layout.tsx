@@ -109,9 +109,9 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: { id: string; program: string } }): Promise<Metadata> {
   const u = getUniversityById(params.id)
-  if (!PM[params.program?.toLowerCase()]) return { title: 'Not Found' }
+  if (!PM[params.program?.toLowerCase()]) return { title: 'Not Found', robots: { index: false, follow: false } }
   const prog = PM[params.program?.toLowerCase()] || params.program?.toUpperCase()
-  if (!u || !prog) return { title: 'Program Not Found' }
+  if (!u || !prog) return { title: 'Program Not Found', robots: { index: false, follow: false } }
 
   const seoName = getSeoName(u.id, u.name)
   const progTitle = PROG_TITLE[prog] || `Online ${prog}`

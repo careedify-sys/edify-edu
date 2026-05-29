@@ -1,6 +1,6 @@
 // app/universities/[id]/[program]/page.tsx
 // ✅ Server Component — enables SSG, per-page metadata, and optimal Lighthouse scores
-import { notFound, redirect } from 'next/navigation'
+import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import type { Program } from '@/lib/data'
@@ -43,7 +43,7 @@ export async function generateMetadata(
   const program = PM[programSlug?.toLowerCase()]
 
   if (!u || !program || !u.programs.includes(program)) {
-    return { title: 'Program Not Found' }
+    return { title: 'Program Not Found', robots: { index: false, follow: false } }
   }
 
   const year = new Date().getFullYear()
@@ -110,9 +110,9 @@ export default async function UniversityProgramPage(
   const program = PM[programSlug?.toLowerCase()]
 
   if (!university) notFound()
-  if (!program) redirect(`/universities/${university.id}`)
+  if (!program) notFound()
   if (!university.programs.includes(program) || !university.programDetails[program]) {
-    redirect(`/universities/${university.id}`)
+    notFound()
   }
 
   const pd = university.programDetails[program]!
