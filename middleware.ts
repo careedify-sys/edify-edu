@@ -251,6 +251,17 @@ export function middleware(req: NextRequest) {
   const host = req.headers.get('host') ?? ''
   const { pathname } = req.nextUrl
 
+  // ── 0. /programmes/ legacy path → canonical university page (308) ───────
+  // Fires before ISR cache lookup, so a frozen revalidate:false 200 cannot
+  // win. Catches /universities/:id/programmes/:uuid and any deeper variants
+  // left in Google's index from the old CMS URL scheme.
+  const programmesMatch = pathname.match(/^\/universities\/([^/]+)\/programmes(\/.*)?$/)
+  if (programmesMatch) {
+    const url = req.nextUrl.clone()
+    url.pathname = `/universities/${programmesMatch[1]}`
+    return NextResponse.redirect(url, 308)
+  }
+
   // ── 1. www → non-www permanent redirect (308) ────────────────────────────
   // Runs first — collapse any www request to apex before further processing.
   // This handles the case where www is an alias (not a Vercel redirect domain).
