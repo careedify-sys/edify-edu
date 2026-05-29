@@ -1,5 +1,5 @@
 // app/universities/[id]/[program]/[spec]/page.tsx
-import { notFound, redirect } from 'next/navigation'
+import { notFound, redirect, permanentRedirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById, specSlug as getSpecSlug, specName as getSpecName } from '@/lib/data'
 import type { Program } from '@/lib/data'
@@ -66,7 +66,7 @@ export default async function UniversitySpecPage(
   const program = PM[programSlug?.toLowerCase()]
 
   if (!u) notFound()
-  if (!program) redirect(`/universities/${u.id}`)
+  if (!program) permanentRedirect(`/universities/${u.id}`)
   if (!u.programDetails[program]) redirect(`/universities/${u.id}`)
 
   const pd      = u.programDetails[program]!
