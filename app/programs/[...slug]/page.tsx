@@ -12,6 +12,7 @@ import type { Program } from '@/lib/data'
 import { formatFeeSlim, UNIS_SLIM } from '@/lib/data-slim'
 import { getSpecFAQs } from '@/lib/specFaqs'
 import { getCanonicalSpec } from '@/lib/specMapping'
+import { RESCUED_PROGRAM_PATHS } from '@/lib/seo/rescued-pages'
 import ProgramPageClient from '@/components/ProgramPageClient'
 import MBAHubClient from '@/components/MBAHubClient'
 import MBASpecHubClient from '@/components/MBASpecHubClient'
@@ -230,7 +231,9 @@ export async function generateMetadata(
       title,
       description,
     },
-    robots: subSlug ? { index: false, follow: true } : undefined,
+    robots: subSlug && !RESCUED_PROGRAM_PATHS.includes(`/programs/${programSlug}/${subSlug}`)
+      ? { index: false, follow: true }
+      : undefined,
   }
 }
 

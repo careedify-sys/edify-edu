@@ -403,6 +403,8 @@ const nextConfig = {
       { source: '/blog/jamia-hamdard-mba-fees-2026',                       destination: '/blog/jamia-hamdard-mba-2026',                       permanent: true },
       { source: '/blog/advantages-online-mba-manipal-university-2026',     destination: '/blog/online-manipal-mba-review-2026',               permanent: true },
       { source: '/blog/which-mba-is-best-india-2026',                      destination: '/blog/best-mba-specialization-india-2026',           permanent: true },
+      // MCA jobs/salary post — slug never existed in blog.ts, redirect to canonical
+      { source: '/blog/jobs-after-mca-salary-career-2026',                 destination: '/blog/career-after-mca-india-2026',                  permanent: true },
 
       // ── Ad-hoc / vanity redirects ────────────────────────────────────
       { source: '/how-to-choose-online-mba-university',              destination: '/blog/how-to-choose-online-mba-university-india-2026', permanent: true },

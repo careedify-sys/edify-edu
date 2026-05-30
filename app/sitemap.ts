@@ -9,10 +9,13 @@
 //   0.85 /blog/{slug}, /coupons/{slug}, /fees
 //   0.80 /universities/{slug}            (uni hubs — 64.9% indexed, need enrichment)
 //   0.75 /universities/{slug}/{prog}     (uni+program money pages)
+//   0.75 /verify/{slug}                 (university verify pages — index,follow)
+//   0.75 /programs/{prog}/{spec}        (rescued GSC ranking spec pages only)
 //   0.70 /universities/{slug}/{prog}/{spec} WITH spec JSON  (rich pages only)
 //
 // EXCLUDED from sitemap (noindexed in page metadata too):
 //   /programs/{prog}/{spec}             — 598 pages, 7.9% index rate, removed entirely
+//                                         EXCEPTION: RESCUED_PROGRAM_PATHS are force-added
 //   /universities/{id}/{prog}/{spec} without spec JSON — 1,819 thin pages
 
 import { MetadataRoute } from 'next'
@@ -22,6 +25,19 @@ import { getPublishedPosts } from '@/lib/blog'
 import { GUIDES } from '@/lib/guides'
 import { CGPA_VALUES } from './tools/cgpa-calculator/[value]/data'
 import { COUPON_PAGE_SLUGS } from '@/lib/coupon-pages'
+import { RESCUED_PROGRAM_PATHS } from '@/lib/seo/rescued-pages'
+
+// Verify slugs: static list pre-built from Supabase (run: npx tsx scripts/build-verify-slugs.ts)
+// Falls back to empty array when JSON is absent — never breaks the build.
+function loadVerifySlugs(): string[] {
+  try {
+    return JSON.parse(
+      readFileSync(join(process.cwd(), 'lib', 'data', 'verify-slugs.json'), 'utf8')
+    ) as string[]
+  } catch {
+    return []
+  }
+}
 
 // Returns the file mtime of a page-content JSON, or now as fallback
 function getContentLastMod(uniSlug: string, program: string): Date {
@@ -167,10 +183,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.70,
   }))
 
-  // ── Verify pages (from Supabase) ──────────────────────────────────────────
-  // Disabled at build time — Supabase dynamic import causes SWC syntax errors
-  // in the sitemap metadata route. Verify pages will be added once Supabase
-  // env vars are configured on Vercel and the import issue is resolved.
+  // ── Verify pages (static JSON built from Supabase — no dynamic import) ──────
+  // Source: lib/data/verify-slugs.json (update with: npx tsx scripts/build-verify-slugs.ts)
+  const verifyPages: MetadataRoute.Sitemap = loadVerifySlugs().map(slug => ({
+    url: `${BASE}/verify/${slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.75,
+  }))
 
-  return [...registryPages, ...toolPages, ...blogPages, ...couponPages, ...guidePages]
+  // ── Rescued program-spec pages (force-added, bypasses the registry filter) ──
+  // These are /programs/{prog}/{spec} pages that were GSC-ranking before the
+  // May 2026 noindex sweep. Their metadata is updated to output index,follow.
+  const rescuedPages: MetadataRoute.Sitemap = RESCUED_PROGRAM_PATHS.map(path => ({
+    url: `${BASE}${path}`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.75,
+  }))
+
+  return [...registryPages, ...toolPages, ...blogPages, ...couponPages, ...guidePages, ...verifyPages, ...rescuedPages]
 }
