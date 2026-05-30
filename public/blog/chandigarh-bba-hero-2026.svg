@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Chandigarh University Online BBA 2026 Review">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1"/>
+      <stop offset="60%" style="stop-color:#1e3a5f;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#f97316;stop-opacity:1"/>
+      <stop offset="70%" style="stop-color:#f97316;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1050" cy="120" r="200" fill="#f97316" opacity="0.04" filter="url(#blur)"/>
+  <circle cx="150" cy="500" r="180" fill="#3b82f6" opacity="0.04" filter="url(#blur)"/>
+
+  <!-- Grid dots pattern -->
+  <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#ffffff" opacity="0.04"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Orange accent line -->
+  <rect x="0" y="304" width="1200" height="2" fill="url(#accentLine)" opacity="0.15"/>
+
+  <!-- EdifyEdu badge top-left -->
+  <rect x="60" y="50" width="130" height="32" rx="6" fill="#f97316" opacity="0.15"/>
+  <text x="125" y="71" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" letter-spacing="1" fill="#f97316">EDIFYEDU REVIEW</text>
+
+  <!-- Category label -->
+  <text x="60" y="140" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" letter-spacing="2" fill="#f97316" opacity="0.9">ONLINE BBA · 2026</text>
+
+  <!-- University name -->
+  <text x="60" y="210" font-family="system-ui,-apple-system,sans-serif" font-size="56" font-weight="900" fill="#ffffff" letter-spacing="-1">Chandigarh</text>
+  <text x="60" y="270" font-family="system-ui,-apple-system,sans-serif" font-size="56" font-weight="900" fill="#f97316" letter-spacing="-1">University Online</text>
+  <text x="60" y="330" font-family="system-ui,-apple-system,sans-serif" font-size="40" font-weight="700" fill="rgba(255,255,255,0.75)">BBA Review 2026</text>
+
+  <!-- Tagline -->
+  <text x="60" y="385" font-family="system-ui,-apple-system,sans-serif" font-size="18" fill="rgba(255,255,255,0.5)">Verified fees · NIRF ranking · Honest verdict</text>
+
+  <!-- Divider -->
+  <rect x="60" y="415" width="500" height="1" fill="rgba(255,255,255,0.1)"/>
+
+  <!-- Stat cards -->
+  <!-- Card 1: NIRF Rank -->
+  <rect x="60" y="440" width="160" height="88" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(249,115,22,0.3)" stroke-width="1"/>
+  <text x="140" y="476" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#f97316">#28</text>
+  <text x="140" y="496" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">NIRF University Rank</text>
+  <text x="140" y="514" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="rgba(249,115,22,0.8)">Highest in Tier 2</text>
+
+  <!-- Card 2: Net Fee -->
+  <rect x="240" y="440" width="185" height="88" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="332" y="476" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="900" fill="#ffffff">&#8377;1,31,250</text>
+  <text x="332" y="496" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">Net Programme Fee</text>
+  <text x="332" y="514" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#10b981">Saves &#8377;43,750 (25% Early Bird)</text>
+
+  <!-- Card 3: NAAC -->
+  <rect x="445" y="440" width="130" height="88" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="510" y="476" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#ffffff">A+</text>
+  <text x="510" y="496" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">NAAC Grade</text>
+  <text x="510" y="514" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="rgba(255,255,255,0.4)">UGC-DEB Approved</text>
+
+  <!-- Card 4: ACCA -->
+  <rect x="595" y="440" width="130" height="88" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="660" y="476" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" font-weight="900" fill="#ffffff">ACCA</text>
+  <text x="660" y="496" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">Tie-up Available</text>
+  <text x="660" y="514" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="rgba(255,255,255,0.4)">UK Accounting Body</text>
+
+  <!-- Right side: Watermark university icon -->
+  <text x="1100" y="350" text-anchor="middle" font-family="system-ui,sans-serif" font-size="160" fill="rgba(255,255,255,0.03)" font-weight="900">CU</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="600" width="1200" height="30" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="620" font-family="system-ui,sans-serif" font-size="11" fill="rgba(255,255,255,0.35)">edifyedu.in · Independent · No paid rankings · No referral commissions · Data from UGC/NAAC/NIRF public sources</text>
+</svg>
