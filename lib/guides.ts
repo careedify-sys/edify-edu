@@ -129,6 +129,8 @@ export const GUIDES: Guide[] = [
 
 <h2>Can You Switch Between Modes?</h2>
 <p>No. You enrol in one mode and complete it. If you start a distance MBA and want to switch to an online MBA from another university, you'd have to re-enrol (credit transfer between institutions and modes is not standard in India yet).</p>
+
+<p>For a complete breakdown of distance MBA including fees, all top universities ranked by cost, exam formats, and ROI analysis, read <a href="/blog/distance-mba-meaning-what-is-it-2026" class="ilink">our complete distance MBA guide</a>.</p>
     `,
   },
   {
