@@ -459,6 +459,7 @@ const nextConfig = {
               "font-src 'self' https://fonts.gstatic.com",
               "img-src 'self' data: https:",
               "connect-src 'self' https://api.web3forms.com https://api.anthropic.com https://api.github.com https://www.google-analytics.com",
+              "frame-src https://www.youtube.com https://www.youtube-nocookie.com",
               "frame-ancestors 'none'",
             ].join('; '),
           },
