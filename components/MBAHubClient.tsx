@@ -150,6 +150,13 @@ export default function MBAHubClient() {
         <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
           <strong>Note:</strong> All fees shown are total programme fees (not per-semester) and are indicative. NIRF ranks are from the Management category 2025 unless stated otherwise. Verify current fees and UGC-DEB approval at <a href="https://deb.ugc.ac.in" target="_blank" rel="nofollow" className="text-amber-700 underline">deb.ugc.ac.in</a> and the university portal before applying.
         </div>
+        <p className="text-sm text-slate-600 mt-4">
+          For a side-by-side comparison of the top 15 universities by NIRF, NAAC, and fees, see our{' '}
+          <Link href="/blog/best-online-mba-colleges-india-2026" className="text-amber-700 font-semibold underline">
+            best online MBA colleges ranked
+          </Link>{' '}
+          guide.
+        </p>
       </section>
 
       {/* Top 10 Quick Picks */}

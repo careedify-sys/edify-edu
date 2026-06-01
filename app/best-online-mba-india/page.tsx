@@ -630,9 +630,12 @@ export default function BestOnlineMBAPage() {
                 </div>
               ))}
             </div>
-            <div className="mt-5 pt-4 border-t border-border">
+            <div className="mt-5 pt-4 border-t border-border flex flex-col gap-2">
               <Link href="/blog/how-to-choose-online-mba-university-india-2026" className="text-sm font-bold text-amber hover:underline flex items-center gap-1">
                 Read the full 2026 guide: How to Choose the Right Online MBA University in India <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link href="/blog/best-online-mba-colleges-india-2026" className="text-sm font-bold text-amber hover:underline flex items-center gap-1">
+                See our detailed ranking of best online MBA colleges <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
           </section>
