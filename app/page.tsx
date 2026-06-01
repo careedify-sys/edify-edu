@@ -512,7 +512,7 @@ export default function HomePage() {
           <div style={{ textAlign:'center', marginBottom:'32px' }}>
             <div className="section-label">Watch First</div>
             <h2 style={{ fontFamily:"'Fraunces',serif", fontSize:'clamp(1.4rem,3vw,2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
-              What is EdifyEdu? A 2-Minute Explainer
+              What is EdifyEdu? Watch the Explainer
             </h2>
             <p style={{ fontSize:'14px', color:'var(--ink-3)', marginTop:'10px', lineHeight:1.7 }}>
               Compare 125+ UGC approved online universities honestly. No paid rankings. No referral commissions.
