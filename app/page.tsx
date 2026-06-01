@@ -426,6 +426,111 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Trustpilot Reviews ── */}
+      <section style={{ padding:'64px 0', background:'var(--bg)' }}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div style={{ textAlign:'center', marginBottom:'40px' }}>
+            <div style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'6px 16px', borderRadius:'var(--r-pill)', background:'#00b67a', marginBottom:14 }}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <span style={{ fontSize:12, fontWeight:800, color:'#fff', letterSpacing:'0.04em' }}>TRUSTPILOT · Verified Reviews</span>
+            </div>
+            <h2 style={{ fontFamily:"'Fraunces',serif", fontSize:'clamp(1.4rem,3vw,2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
+              Students Who Found the Right University
+            </h2>
+            <p style={{ fontSize:'14px', color:'var(--ink-3)', marginTop:10, lineHeight:1.7 }}>
+              Real reviews from students Edify guided to UGC DEB approved programmes. No incentives, no edits.
+            </p>
+          </div>
+
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(300px,1fr))', gap:20 }}>
+            {[
+              {
+                name:'Sejal Agarwal',
+                program:'BBA · DY Patil University Pune · 2026',
+                review:'Thank you for your constant support and guidance throughout the admission process. You explained every detail clearly, helped us analyze the best college options, and made the whole journey much easier. Your patience, honest advice, and dedication truly meant a lot.',
+              },
+              {
+                name:'Subham Rana',
+                program:'Online MBA',
+                review:'My experience was outstanding with Edify Learning. They provide the best college options and mentorship to help you make the right decision.',
+              },
+              {
+                name:'Sree Vardhan',
+                program:'Online Programme',
+                review:'My experience with Edify Learning was excellent and fully transparent. There was no bias toward any university, ensuring honest guidance. The team provided clear, personalized support throughout the process. Their interview preparation significantly boosted my confidence.',
+              },
+              {
+                name:'AD Photography',
+                program:'Online Programme',
+                review:'Got almost all the major information on the website itself. When I connected with them, they also shared all the details very transparently.',
+              },
+              {
+                name:'Kanishka Kumari',
+                program:'MBA · Symbiosis SSODL',
+                review:'They are truly an outstanding mentor and guide. I was very confused about college selection and they made it stress-free. Truly grateful. Should definitely go for it.',
+              },
+              {
+                name:'Deepak Chauhan',
+                program:'Online Programme',
+                review:'Got the right information I needed, and the overall support experience was very good.',
+              },
+              {
+                name:'Gargee Sharma',
+                program:'MBA · NMIMS Online · 2025',
+                review:'Your support was part of the equation. You helped me a lot.',
+              },
+            ].map((r) => (
+              <div key={r.name} style={{ background:'var(--surface)', border:'1px solid var(--border)', borderRadius:'var(--r-md)', padding:'22px 24px', boxShadow:'var(--shadow-sm)', display:'flex', flexDirection:'column', gap:12 }}>
+                <div style={{ display:'flex', gap:3 }}>
+                  {[1,2,3,4,5].map(i => (
+                    <svg key={i} width="14" height="14" viewBox="0 0 24 24" fill="#00b67a"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  ))}
+                </div>
+                <p style={{ fontSize:'13.5px', color:'var(--ink-2)', lineHeight:1.75, margin:0, fontStyle:'italic' }}>
+                  &ldquo;{r.review}&rdquo;
+                </p>
+                <div style={{ marginTop:'auto', paddingTop:10, borderTop:'1px solid var(--border-light)' }}>
+                  <div style={{ fontSize:13, fontWeight:700, color:'var(--navy)' }}>{r.name}</div>
+                  <div style={{ fontSize:11, color:'var(--ink-3)', marginTop:2 }}>{r.program}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ textAlign:'center', marginTop:32 }}>
+            <a href="https://www.trustpilot.com/review/edifyedu.in" target="_blank" rel="noopener noreferrer"
+              style={{ fontSize:13, fontWeight:600, color:'#00b67a', textDecoration:'none' }}>
+              Read all reviews on Trustpilot →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── YouTube Intro Video ── */}
+      <section style={{ padding:'64px 0', background:'var(--surface)' }}>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div style={{ textAlign:'center', marginBottom:'32px' }}>
+            <div className="section-label">Watch First</div>
+            <h2 style={{ fontFamily:"'Fraunces',serif", fontSize:'clamp(1.4rem,3vw,2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
+              What is EdifyEdu? A 2-Minute Explainer
+            </h2>
+            <p style={{ fontSize:'14px', color:'var(--ink-3)', marginTop:'10px', lineHeight:1.7 }}>
+              Compare 125+ UGC approved online universities honestly. No paid rankings. No referral commissions.
+            </p>
+          </div>
+          <div style={{ position:'relative', paddingBottom:'56.25%', height:0, borderRadius:'var(--r-md)', overflow:'hidden', boxShadow:'0 8px 32px rgba(15,23,42,0.12)', border:'1px solid var(--border)' }}>
+            <iframe
+              src="https://www.youtube.com/embed/Waj6Ph6baVg?si=6Ih8EfV5jUTEH6X9"
+              title="What is EdifyEdu.in? Compare 125+ UGC Approved Online Universities India 2026"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              style={{ position:'absolute', top:0, left:0, width:'100%', height:'100%', border:'none' }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* ── Popular Guides ── */}
       <section style={{ padding:'64px 0', background:'var(--surface)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
