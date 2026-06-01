@@ -414,6 +414,7 @@ export default function BestOnlineMBAPage() {
 
             <div className="mt-5 p-4 rounded-xl text-xs text-ink-2 leading-relaxed" style={{ background: 'var(--surface-2)', border: '1px solid var(--border)' }}>
               <strong className="text-navy">Ranking methodology:</strong> Universities are ordered by their overall NIRF rank published by the Ministry of Education, India (nirfindia.org). NAAC grade sourced from naac.gov.in. Fees are from official university websites as of March 2026 and may change. <strong>No university paid to appear or rank higher on this list.</strong>
+              <p className="mt-2">MAHE ranks #1 on this list. Read the full <Link href="/blog/mahe-online-mba-review-2026" className="font-semibold text-amber hover:underline">MAHE online MBA review</Link> for a deeper look at fees, NAAC A++, and specialisations.</p>
             </div>
           </section>
 
@@ -636,6 +637,9 @@ export default function BestOnlineMBAPage() {
               </Link>
               <Link href="/blog/best-online-mba-colleges-india-2026" className="text-sm font-bold text-amber hover:underline flex items-center gap-1">
                 See our detailed ranking of best online MBA colleges <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link href="/blog/online-manipal-mba-review-2026" className="text-sm font-bold text-amber hover:underline flex items-center gap-1">
+                MAHE vs MUJ vs SMU compared <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
           </section>
