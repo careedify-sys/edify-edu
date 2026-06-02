@@ -93,7 +93,11 @@ export async function generateMetadata(
     title: { absolute: post.seoTitle || post.title },
     description: post.metaDescription,
     keywords: post.tags,
-    robots: { index: true, follow: true },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+    },
     openGraph: {
       title: post.title,
       description: post.metaDescription,
