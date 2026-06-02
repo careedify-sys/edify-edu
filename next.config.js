@@ -405,6 +405,21 @@ const nextConfig = {
       { source: '/blog/which-mba-is-best-india-2026',                      destination: '/blog/best-mba-specialization-india-2026',           permanent: true },
       // MCA jobs/salary post — slug never existed in blog.ts, redirect to canonical
       { source: '/blog/jobs-after-mca-salary-career-2026',                 destination: '/blog/career-after-mca-india-2026',                  permanent: true },
+      // Review blogs: year-less short form → canonical -2026 slug
+      // Google indexed these without the -2026 suffix via old sitemaps/backlinks
+      { source: '/blog/jain-online-mba-review',           destination: '/blog/jain-online-mba-review-2026',           permanent: true },
+      { source: '/blog/nmims-online-mba-review',          destination: '/blog/nmims-online-mba-review-2026',          permanent: true },
+      { source: '/blog/symbiosis-online-mba-review',      destination: '/blog/symbiosis-online-mba-review-2026',      permanent: true },
+      { source: '/blog/mahe-online-mba-review',           destination: '/blog/mahe-online-mba-review-2026',           permanent: true },
+      { source: '/blog/muj-online-mba-review',            destination: '/blog/muj-online-mba-review-2026',            permanent: true },
+      { source: '/blog/amity-online-mba-review',          destination: '/blog/amity-online-mba-review-2026',          permanent: true },
+      { source: '/blog/bits-pilani-online-mba-review',    destination: '/blog/bits-pilani-online-mba-review-2026',    permanent: true },
+      { source: '/blog/imt-ghaziabad-online-mba-review',  destination: '/blog/imt-ghaziabad-online-mba-review-2026',  permanent: true },
+      { source: '/blog/upes-online-mba-review',           destination: '/blog/upes-online-mba-review-2026',           permanent: true },
+      { source: '/blog/xlri-online-mba-review',           destination: '/blog/xlri-online-mba-review-2026',           permanent: true },
+      { source: '/blog/ignou-online-mba-review',          destination: '/blog/ignou-online-mba-review-2026',          permanent: true },
+      { source: '/blog/online-manipal-mba-review',        destination: '/blog/online-manipal-mba-review-2026',        permanent: true },
+      { source: '/blog/lpu-online-mba-review',            destination: '/blog/online-mba-lpu-review-2026',            permanent: true },
 
       // ── Ad-hoc / vanity redirects ────────────────────────────────────
       { source: '/how-to-choose-online-mba-university',              destination: '/blog/how-to-choose-online-mba-university-india-2026', permanent: true },
