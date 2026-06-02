@@ -211,6 +211,14 @@ export default function MBAHubClient() {
         </div>
       </section>
 
+      {/* MBA Courses List — SEO anchor for "mba courses list" keyword */}
+      <section className="max-w-3xl mx-auto px-4 pb-6">
+        <h2 className="text-2xl font-bold mb-3" style={{ color: '#0B1533' }}>Complete MBA Courses List: All Specializations in India 2026</h2>
+        <p className="text-sm text-slate-600 leading-relaxed">
+          Below is the full list of UGC-DEB approved online MBA programmes across all specializations offered by Indian universities in 2026. Use the filters above to narrow by fee range, NAAC grade, or specialization. All universities listed are verified against the official UGC-DEB portal.
+        </p>
+      </section>
+
       {/* Universities Grid */}
       <section id="universities" className="max-w-6xl mx-auto px-4 py-12">
         <h2 className="text-2xl font-bold mb-1" style={{ color: '#0B1533' }}>All {mbaUnis.length} Online MBA Universities</h2>
