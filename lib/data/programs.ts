@@ -201,8 +201,24 @@ export function getProgramSpecParams(
   const seen = new Set<string>()
   const out: Array<{ id: string; spec: string }> = []
 
+  // Map lowercase program slug to the programDetails key used in lib/data.ts
+  const PROG_LABEL: Record<string, string> = {
+    mba: 'MBA', mca: 'MCA', bba: 'BBA', bca: 'BCA',
+    bcom: 'B.Com', mcom: 'M.Com',
+    ba: 'BA', ma: 'MA', msc: 'MSc', bsc: 'BSc',
+  }
+  const label = PROG_LABEL[prog]
+
   for (const r of loadManifest()) {
     if (r.program !== prog || !r.spec_slug) continue
+    // If the university has no programDetails for this program, the spec page
+    // calls redirect() during static generation. Next.js encodes that as a
+    // meta-refresh HTML file instead of an HTTP 301. Skip those params so the
+    // pages are never pre-rendered with meta-refresh behavior.
+    if (label) {
+      const u = getUniversityById(r.university_slug)
+      if (u && !(u.programDetails as Record<string, unknown>)[label]) continue
+    }
     const key = `${r.university_slug}|${r.spec_slug}`
     if (!seen.has(key)) {
       seen.add(key)
@@ -210,15 +226,7 @@ export function getProgramSpecParams(
     }
   }
 
-  // Also include slugs derived from lib/data.ts programDetails. Map lowercase
-  // program slug to the case used in programDetails keys (MBA, MCA, BBA, BCA,
-  // B.Com, M.Com, BA, MA, MSc, BSc).
-  const PROG_LABEL: Record<string, string> = {
-    mba: 'MBA', mca: 'MCA', bba: 'BBA', bca: 'BCA',
-    bcom: 'B.Com', mcom: 'M.Com',
-    ba: 'BA', ma: 'MA', msc: 'MSc', bsc: 'BSc',
-  }
-  const label = PROG_LABEL[prog]
+  // Also include slugs derived from lib/data.ts programDetails.
   if (label) {
     for (const u of UNIVERSITIES) {
       const pd = (u.programDetails as Record<string, { specs?: unknown[] } | undefined>)[label]

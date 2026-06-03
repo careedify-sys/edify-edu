@@ -104,6 +104,26 @@ const nextConfig = {
       { source: '/universities/sikkim-manipal-university-online/bca',                   destination: '/universities/sikkim-manipal-university-online',                   permanent: true },
       { source: '/universities/sikkim-manipal-university-online/bca/:spec*',            destination: '/universities/sikkim-manipal-university-online',                   permanent: true },
 
+      // ── Sprint 3 (2026-06-03): meta-refresh → 301 for MKU and UOM MBA spec pages ──
+      // MKU and UOM have MBA listed in programs[] but no programDetails.MBA, so the
+      // spec page calls redirect() during static generation. Next.js encodes that as
+      // a meta-refresh HTML file rather than an HTTP 301. These edge redirects run
+      // before the page renders and return a proper 301 for all 14 affected URLs.
+      { source: '/universities/madurai-kamaraj-university-online/mba/finance',                    destination: '/universities/madurai-kamaraj-university-online', permanent: true },
+      { source: '/universities/madurai-kamaraj-university-online/mba/human-resource-management', destination: '/universities/madurai-kamaraj-university-online', permanent: true },
+      { source: '/universities/madurai-kamaraj-university-online/mba/it-management',              destination: '/universities/madurai-kamaraj-university-online', permanent: true },
+      { source: '/universities/madurai-kamaraj-university-online/mba/marketing',                  destination: '/universities/madurai-kamaraj-university-online', permanent: true },
+      { source: '/universities/madurai-kamaraj-university-online/mba/operations-management',      destination: '/universities/madurai-kamaraj-university-online', permanent: true },
+      { source: '/universities/university-of-mumbai-online/mba/artificial-intelligence',          destination: '/universities/university-of-mumbai-online',         permanent: true },
+      { source: '/universities/university-of-mumbai-online/mba/data-science',                     destination: '/universities/university-of-mumbai-online',         permanent: true },
+      { source: '/universities/university-of-mumbai-online/mba/data-science-analytics',           destination: '/universities/university-of-mumbai-online',         permanent: true },
+      { source: '/universities/university-of-mumbai-online/mba/digital-marketing',                destination: '/universities/university-of-mumbai-online',         permanent: true },
+      { source: '/universities/university-of-mumbai-online/mba/finance',                          destination: '/universities/university-of-mumbai-online',         permanent: true },
+      { source: '/universities/university-of-mumbai-online/mba/human-resource-management',        destination: '/universities/university-of-mumbai-online',         permanent: true },
+      { source: '/universities/university-of-mumbai-online/mba/international-business',           destination: '/universities/university-of-mumbai-online',         permanent: true },
+      { source: '/universities/university-of-mumbai-online/mba/marketing',                        destination: '/universities/university-of-mumbai-online',         permanent: true },
+      { source: '/universities/university-of-mumbai-online/mba/operations-management',            destination: '/universities/university-of-mumbai-online',         permanent: true },
+
       // Dot-slug normalisation
       { source: '/programs/m.com',             destination: '/programs/mcom',  permanent: true },
       { source: '/programs/m.com/:path*',      destination: '/programs/mcom',  permanent: true },
