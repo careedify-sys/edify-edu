@@ -57,7 +57,6 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
       sameAs: `${baseUrl}/universities/${u.id}`,
     },
     educationalLevel: ['MBA', 'MCA', 'M.Com', 'MA', 'MSc'].includes(program) ? 'Postgraduate' : 'Undergraduate',
-    courseMode: 'Online',
     url: pageUrl,
     offers: u.feeMin ? (u.feeMax && u.feeMax !== u.feeMin ? {
       '@type': 'AggregateOffer',
@@ -66,11 +65,13 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
       priceCurrency: 'INR',
       offerCount: '2',
       availability: 'https://schema.org/InStock',
+      category: 'Online Education',
     } : {
       '@type': 'Offer',
       price: String(u.feeMin),
       priceCurrency: 'INR',
       availability: 'https://schema.org/InStock',
+      category: 'Online Education',
       ...(coupon ? {
         priceValidUntil: `${year}-12-31`,
         description: `EdifyEdu Coupon: ${coupon.code} - ${coupon.savings}`,

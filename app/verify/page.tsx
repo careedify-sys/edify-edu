@@ -84,26 +84,6 @@ export default async function VerifyHomePage() {
     dedupedCount++;
   }
 
-  const verifyPageSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'WebApplication',
-    name: 'edifyedu.in University Verification Tool',
-    url: 'https://edifyedu.in/verify',
-    applicationCategory: 'EducationalApplication',
-    description: 'Free tool to cross-check any online university approval and accreditation status from 5 official Indian government sources.',
-    operatingSystem: 'All',
-    offers: {
-      '@type': 'Offer',
-      price: '0',
-      priceCurrency: 'INR',
-    },
-    provider: {
-      '@type': 'Organization',
-      name: 'edifyedu.in',
-      url: 'https://edifyedu.in',
-    },
-  };
-
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -133,7 +113,6 @@ export default async function VerifyHomePage() {
 
   return (
     <main style={{ background: 'var(--bg, #F6F8FB)', minHeight: '100vh' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(verifyPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Login */}
