@@ -28,6 +28,8 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
     ? `${baseUrl}/universities/${u.id}/${programSlug}/${specSlug}`
     : `${baseUrl}/universities/${u.id}/${programSlug}`
 
+  const durationYears = parseInt(pd.duration?.replace(/[^0-9]/g, '') || '2', 10) || 2
+
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -57,6 +59,8 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
       sameAs: `${baseUrl}/universities/${u.id}`,
     },
     educationalLevel: ['MBA', 'MCA', 'M.Com', 'MA', 'MSc'].includes(program) ? 'Postgraduate' : 'Undergraduate',
+    courseMode: 'Online',
+    timeRequired: `P${durationYears}Y`,
     url: pageUrl,
     offers: u.feeMin ? (u.feeMax && u.feeMax !== u.feeMin ? {
       '@type': 'AggregateOffer',
@@ -65,12 +69,14 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
       priceCurrency: 'INR',
       offerCount: '2',
       availability: 'https://schema.org/InStock',
+      url: pageUrl,
       category: 'Online Education',
     } : {
       '@type': 'Offer',
       price: String(u.feeMin),
       priceCurrency: 'INR',
       availability: 'https://schema.org/InStock',
+      url: pageUrl,
       category: 'Online Education',
       ...(coupon ? {
         priceValidUntil: `${year}-12-31`,
@@ -81,7 +87,7 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
       '@type': 'CourseInstance',
       courseMode: 'Online',
       startDate: `${year}-07-01`,
-      courseWorkload: `PT${pd.duration?.replace(/[^0-9]/g, '') || '2'}Y`,
+      courseWorkload: `P${durationYears}Y`,
     },
     // AggregateRating nested inside Course — required by Google for star snippet eligibility
     ...(avgRating && reviews?.length ? {

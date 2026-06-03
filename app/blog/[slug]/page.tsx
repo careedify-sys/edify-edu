@@ -225,6 +225,17 @@ export default async function BlogPostPage({ params }: Props) {
     },
     keywords: post.tags.join(', '),
     mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
+    ...(uniFromBlog ? {
+      about: {
+        '@type': 'Course',
+        name: `${uniFromBlog.links.universityName} Online ${uniFromBlog.program.toUpperCase()}`,
+        provider: {
+          '@type': 'CollegeOrUniversity',
+          name: uniFromBlog.links.universityName,
+          sameAs: `https://edifyedu.in/universities/${uniFromBlog.universityId}`,
+        },
+      },
+    } : {}),
     speakable: {
       '@type': 'SpeakableSpecification',
       cssSelector: ['h1', '.blog-body h2', '.blog-body p:first-of-type'],
