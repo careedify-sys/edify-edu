@@ -14,6 +14,8 @@ import BlogContentWithCTAs from '@/components/BlogContentWithCTAs'
 import UniversityVerdictTop from '@/components/blog-cta/UniversityVerdictTop'
 import UniversityEndCta from '@/components/blog-cta/UniversityEndCta'
 import { BLOG_CTA_BUNDLES } from '@/lib/university-blog-cta'
+import { getUniversityFromBlog } from '@/lib/internal-links'
+import BlogRelatedLinks from '@/components/BlogRelatedLinks'
 
 // Inject a mid-article CTA marker right before the next <h2> after a given
 // heading ID. BlogContentWithCTAs picks up the marker and renders the right
@@ -157,6 +159,7 @@ export default async function BlogPostPage({ params }: Props) {
   // Slug-conditional CTA bundle (component-driven, not in content body).
   // See lib/university-blog-cta.ts for config entries.
   const ctaConfig = BLOG_CTA_BUNDLES[slug]
+  const uniFromBlog = getUniversityFromBlog(slug)
   if (ctaConfig) {
     contentWithIds = injectMidCtaMarker(
       contentWithIds,
@@ -487,6 +490,11 @@ export default async function BlogPostPage({ params }: Props) {
 
               {/* Slug-conditional end-of-article hard close (config-driven) */}
               {ctaConfig && <UniversityEndCta config={ctaConfig} />}
+
+              {/* University program page links — passes authority from blog to spec pages */}
+              {uniFromBlog && (
+                <BlogRelatedLinks links={uniFromBlog.links} program={uniFromBlog.program} />
+              )}
 
               {/* From Our Guides — links to /guides/* pages to break content silo */}
               <div className="mt-6 bg-white rounded-2xl border border-border p-5">

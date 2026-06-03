@@ -42,6 +42,8 @@ import QuickFactsCard    from './QuickFactsCard'
 import AssuredMarquee   from './AssuredMarquee'
 import RequestSyllabusCard from './RequestSyllabusCard'
 import { hasSyllabusData } from '@/lib/syllabus'
+import { getProgramLinks } from '@/lib/internal-links'
+import ProgramBlogLinks from './ProgramBlogLinks'
 
 interface Props {
   u: University
@@ -113,6 +115,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
 
   const content = getPageContent(u.id, program.toLowerCase())
   const s = content?.sections
+  const programBlogLinks = getProgramLinks(u.id, program.toLowerCase())
 
   const faqs: { q: string; a: string }[] = [
     { q: `Is the ${program} degree from ${cleanName} valid for jobs?`, a: `Yes. ${cleanName} is UGC DEB approved. The degree is identical to an on-campus ${program} and valid for private sector jobs, government portals where UGC DEB degrees are accepted${u.psuEligible ? ', and PSU recruitment' : ''}.` },
@@ -352,6 +355,11 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
 
               {/* §21 Last Updated */}
               <LastUpdatedStamp program={program} universityId={u.id} />
+
+              {/* Blog review links — pulls editorial authority into programme page */}
+              {programBlogLinks && (
+                <ProgramBlogLinks links={programBlogLinks} program={program.toLowerCase()} />
+              )}
 
               {/* Back link */}
               <div className="pt-2">
