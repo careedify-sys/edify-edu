@@ -81,6 +81,7 @@ const SPEC_REDIRECTS: Record<string, string> = {
   'entrepreneurship-and-leadership-management': 'entrepreneurship',
   'project-management-and-leadership': 'project-management',
   'general': 'general-management',
+  'commerce-finance-focus': 'finance',
 }
 
 const SPEC_SLUG_MAP: Record<string, { display: string; contentKey: string; keywords: string[] }> = {

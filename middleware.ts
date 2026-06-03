@@ -324,6 +324,7 @@ export function middleware(req: NextRequest) {
     '/programs/mba/media--communication': '/programs/mba/digital-marketing',
     '/programs/mca/cyber-security-cyber-forensics': '/programs/mca/cyber-security',
     '/programs/bcom/gls-university-online': '/universities/gls-university-online/bcom',
+    '/programs/mba/commerce--finance-focus': '/programs/mba/finance',
   }
   if (PROGRAM_SPEC_REDIRECTS[pathname]) {
     const url = req.nextUrl.clone()

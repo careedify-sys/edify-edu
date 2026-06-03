@@ -351,6 +351,8 @@ const nextConfig = {
       { source: '/programs/mba/hospital--health-care-management',        destination: '/programs/mba/healthcare-management',                                permanent: true },
       { source: '/programs/mba/data-science--ai',                        destination: '/programs/mba/data-science-ai',                                      permanent: true },
       { source: '/programs/mba/tourism--event-management',               destination: '/programs/mba/tourism-event-management',                             permanent: true },
+      { source: '/programs/mba/commerce--finance-focus',                 destination: '/programs/mba/finance',                                              permanent: true },
+      { source: '/programs/mba/commerce-finance-focus',                  destination: '/programs/mba/finance',                                              permanent: true },
 
       // Program slugs with trailing noise suffix
       { source: '/programs/msc/data-science-focus-no-sub-specializations-80-cre', destination: '/programs/msc/data-science',                               permanent: true },
