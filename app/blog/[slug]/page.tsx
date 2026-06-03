@@ -324,7 +324,7 @@ export default async function BlogPostPage({ params }: Props) {
               className="font-display font-extrabold leading-tight tracking-tight mb-4"
               style={{ fontSize: 'clamp(1.6rem, 4vw, 2.5rem)', color: '#0B1D35' }}
             >
-              {post.title}
+              {post.h1Title || post.title}
             </h1>
 
             {/* Subtitle / meta description */}
