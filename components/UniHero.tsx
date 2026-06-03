@@ -13,18 +13,20 @@ interface Props {
   pd: ProgramDetail
   cleanName: string
   spec?: string
+  customH1?: string
 }
 
-export default function UniHero({ u, program, pd, cleanName, spec }: Props) {
+export default function UniHero({ u, program, pd, cleanName, spec, customH1 }: Props) {
   const specs  = pd.specs || []
   const level  = getProgramLevel(program)
   const logoPath: string | undefined = (LOGOS_MANIFEST as Record<string, string>)[u.id]
 
   const year = new Date().getFullYear()
   const nameEndsOnline = cleanName.toLowerCase().endsWith('online')
-  const h1 = spec
+  const generatedH1 = spec
     ? `${nameEndsOnline ? cleanName : cleanName + ' Online'} ${program} in ${spec}: Syllabus, Fees & Career Outcomes ${year}`
     : `${nameEndsOnline ? cleanName : cleanName + ' Online'} ${program} ${year}: Fees, Placement, Syllabus & Reviews`
+  const h1 = customH1 || generatedH1
 
   const eyebrow = spec
     ? `${level} · ${pd.duration || '2 Years'} · UGC DEB Approved`

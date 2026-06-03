@@ -48,6 +48,8 @@ interface Props {
   program: Program
   programSlug: string
   pd: ProgramDetail
+  customH1?: string
+  customIntro?: string
 }
 
 // ── Inline generated-content components ─────────────────────────────────────
@@ -103,7 +105,7 @@ function GeneratedRedFlagsBlock({ redFlags }: { redFlags: NonNullable<PageConten
 
 // ── Main component ───────────────────────────────────────────────────────────
 
-export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
+export default function UniProgramBody({ u, program, programSlug, pd, customH1, customIntro }: Props) {
   const cleanName  = getShortUniversityName(u.name)
   const specs      = pd.specs || []
   const peers      = getUniversitiesByProgram(program).filter(x => x.id !== u.id).slice(0, 3)
@@ -160,7 +162,7 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
         </nav>
 
         {/* Hero — full width */}
-        <UniHero u={u} program={program} pd={pd} cleanName={cleanName} />
+        <UniHero u={u} program={program} pd={pd} cleanName={cleanName} customH1={customH1} />
 
         {/* Sticky section navigation */}
         <StickySectionNav items={[
@@ -215,7 +217,7 @@ export default function UniProgramBody({ u, program, programSlug, pd }: Props) {
 
               {/* §4 About */}
               <div id="about">
-                <SectionAbout u={u} program={program} pd={pd} cleanName={cleanName} />
+                <SectionAbout u={u} program={program} pd={pd} cleanName={cleanName} customIntro={customIntro} />
               </div>
 
               {/* §5 Who Can Apply */}

@@ -7,9 +7,10 @@ interface Props {
   pd: ProgramDetail
   cleanName: string
   spec?: string
+  customIntro?: string
 }
 
-export default function SectionAbout({ u, program, pd, cleanName, spec }: Props) {
+export default function SectionAbout({ u, program, pd, cleanName, spec, customIntro }: Props) {
   const heading = spec
     ? `About Online ${program} in ${spec}`
     : `About the Online ${program} at ${cleanName}`
@@ -33,9 +34,13 @@ export default function SectionAbout({ u, program, pd, cleanName, spec }: Props)
           </>
         ) : (
           <>
-            <p>
-              {cleanName} runs an Online {program} program recognised by UGC DEB, designed for working professionals and fresh graduates aiming for careers in {isIT ? 'software development, data science, and IT management' : 'business management, finance, and leadership'}. The {yearsText} program is delivered through live and recorded sessions on an online platform, with no mandatory campus visits.
-            </p>
+            {customIntro ? (
+              <p>{customIntro}</p>
+            ) : (
+              <p>
+                {cleanName} runs an Online {program} program recognised by UGC DEB, designed for working professionals and fresh graduates aiming for careers in {isIT ? 'software development, data science, and IT management' : 'business management, finance, and leadership'}. The {yearsText} program is delivered through live and recorded sessions on an online platform, with no mandatory campus visits.
+              </p>
+            )}
             <p>
               The university holds NAAC {u.naac} accreditation
               {u.nirf > 0 && u.nirf < 500 ? ` and a NIRF rank of #${u.nirf}` : ''}, giving the {program} degree strong institutional credibility with employers.
