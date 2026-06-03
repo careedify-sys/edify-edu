@@ -239,9 +239,30 @@ export async function generateMetadata(
       title,
       description,
     },
-    robots: subSlug && !RESCUED_PROGRAM_PATHS.includes(`/programs/${programSlug}/${subSlug}`)
-      ? { index: false, follow: true }
-      : undefined,
+    robots: (() => {
+      if (!subSlug) return undefined
+      const isRescued = RESCUED_PROGRAM_PATHS.includes(`/programs/${programSlug}/${subSlug}`)
+      if (!isRescued) return { index: false, follow: true }
+      // Guard: even rescued MBA spec pages get noindexed when 0 universities match
+      if (program === 'MBA') {
+        const specCanonical = getCanonicalSpec(subSlug)
+        const variants = specCanonical?.variants || [activeSpec || subSlug]
+        const specUniCount = UNIS_SLIM.filter(u => {
+          if (!u.programs.includes('MBA')) return false
+          const uniSpecs = (u as any).mbaSpecs as string[] | undefined
+          if (!uniSpecs?.length) return false
+          return uniSpecs.some(s => {
+            const sn = s.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim()
+            return variants.some(v => {
+              const vn = v.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim()
+              return sn === vn || sn.startsWith(vn + ' ') || sn.startsWith(vn + 's') || vn.startsWith(sn + ' ') || vn.startsWith(sn + 's')
+            })
+          })
+        }).length
+        if (specUniCount === 0) return { index: false, follow: true }
+      }
+      return undefined
+    })(),
   }
 }
 
