@@ -36,7 +36,7 @@ const BADGE_DEFS: BadgeDef[] = [
   },
   {
     key: 'AICTE',
-    logo: '/logos/university_logos/Aicte.svg',
+    logo: '/logos/university_logos/Aicte.webp',
     name: 'AICTE',
     sub: 'Tech Council',
     accentColor: '#D97706',
