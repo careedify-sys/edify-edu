@@ -11,9 +11,11 @@ import UniversityCard from '@/components/UniversityCard'
 interface Props {
   specSlug: string
   specName: string
+  customH1?: string
+  customIntro?: string
 }
 
-export default function MBASpecHubClient({ specSlug, specName }: Props) {
+export default function MBASpecHubClient({ specSlug, specName, customH1, customIntro }: Props) {
   const canonical = getCanonicalSpec(specSlug)
 
   const mbaUnis = useMemo(() => {
@@ -42,11 +44,14 @@ export default function MBASpecHubClient({ specSlug, specName }: Props) {
       })
   }, [specSlug])
 
-  const feeFloor = Math.min(...mbaUnis.map(u => u.feeMin).filter(f => f > 0))
-  const feeCeiling = Math.max(...mbaUnis.map(u => u.feeMax).filter(f => f > 0))
+  const feeMinVals = mbaUnis.map(u => u.feeMin).filter(f => f > 0)
+  const feeMaxVals = mbaUnis.map(u => u.feeMax).filter(f => f > 0)
+  const hasFees = feeMinVals.length > 0
+  const feeFloor = hasFees ? Math.min(...feeMinVals) : 0
+  const feeCeiling = hasFees ? Math.max(...feeMaxVals) : 0
   const uniCount = mbaUnis.length
-  const feeFloorStr = formatFeeSlim(feeFloor)
-  const feeCeilingStr = formatFeeSlim(feeCeiling)
+  const feeFloorStr = hasFees ? formatFeeSlim(feeFloor) : 'Contact our counsellor for current fee details'
+  const feeCeilingStr = hasFees ? formatFeeSlim(feeCeiling) : ''
   const faqs = getSpecFAQs(specName, uniCount, feeFloorStr, feeCeilingStr)
 
   return (
@@ -62,18 +67,20 @@ export default function MBASpecHubClient({ specSlug, specName }: Props) {
             <span className="text-amber-400">{specName}</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-extrabold leading-tight mb-3">
-            Best Online MBA in {specName} 2026 -- {uniCount} Universities Compared
+            {customH1 || `Best Online MBA in ${specName} 2026 -- ${uniCount} Universities Compared`}
           </h1>
           <p className="text-slate-400 text-base max-w-xl mx-auto mb-6">
-            UGC-approved programmes from {feeFloorStr} to {feeCeilingStr}. NIRF 2025 verified. Independent comparison.
+            {hasFees ? `UGC-approved programmes from ${feeFloorStr} to ${feeCeilingStr}.` : feeFloorStr} NIRF 2025 verified. Independent comparison.
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-6">
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm">
               {uniCount} Universities
             </span>
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm">
-              {feeFloorStr} - {feeCeilingStr}
-            </span>
+            {hasFees && (
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm">
+                {feeFloorStr} - {feeCeilingStr}
+              </span>
+            )}
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm">
               <BadgeCheck size={14} className="text-amber-400" /> NIRF 2025 Verified
             </span>
@@ -88,22 +95,23 @@ export default function MBASpecHubClient({ specSlug, specName }: Props) {
             <div className="space-y-2 text-sm">
               <p>Best for: <strong>{canonical.careerTag}</strong></p>
               <p>Watch out: {canonical.watchOut}</p>
-              <p>Fee range: <strong>{feeFloorStr} - {feeCeilingStr}</strong></p>
+              <p>Fee range: <strong>{hasFees ? `${feeFloorStr} - ${feeCeilingStr}` : feeFloorStr}</strong></p>
             </div>
           </div>
         </section>
       )}
 
       {/* About this Specialisation */}
-      {canonical && (
+      {(canonical || customIntro) && (
         <section className="max-w-3xl mx-auto px-4 pb-8">
           <h2 className="text-2xl font-bold mb-3" style={{ color: '#0B1533' }}>What is Online MBA in {specName}?</h2>
-          <p className="text-sm text-slate-600 leading-relaxed mb-4">{canonical.domainDescription}</p>
+          {customIntro && <p className="text-sm text-slate-600 leading-relaxed mb-4">{customIntro}</p>}
+          {canonical && <p className="text-sm text-slate-600 leading-relaxed mb-4">{canonical.domainDescription}</p>}
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
             An online MBA in {specName} from a UGC-DEB approved university is legally equivalent to a campus MBA. The specialisation typically begins from Semester 3 after completing core MBA foundation courses in Year 1 (Accounting for Managers, Managerial Economics, Marketing Management, Statistics, Financial Management, HR Management, and Business Research Methods).
           </p>
           <p className="text-sm text-slate-600 leading-relaxed">
-            Currently, {uniCount} UGC-approved universities offer this specialisation with fees ranging from {feeFloorStr} to {feeCeilingStr}. All programmes listed below have been verified against official UGC-DEB and university portals. EdifyEdu earns zero referral commissions from any university.
+            {uniCount > 0 ? <>Currently, {uniCount} UGC-approved universities offer this specialisation with fees ranging from {feeFloorStr} to {feeCeilingStr}. All programmes listed below have been verified against official UGC-DEB and university portals.</> : <>Contact our counsellor for current fee details for this specialisation. All data is verified against official UGC-DEB and university portals.</>} EdifyEdu earns zero referral commissions from any university.
           </p>
         </section>
       )}

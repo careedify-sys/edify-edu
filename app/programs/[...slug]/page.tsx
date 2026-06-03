@@ -13,6 +13,7 @@ import { formatFeeSlim, UNIS_SLIM } from '@/lib/data-slim'
 import { getSpecFAQs } from '@/lib/specFaqs'
 import { getCanonicalSpec } from '@/lib/specMapping'
 import { RESCUED_PROGRAM_PATHS } from '@/lib/seo/rescued-pages'
+import { MBA_SPEC_SEO_OVERRIDES } from '@/lib/mba-spec-seo-overrides'
 import ProgramPageClient from '@/components/ProgramPageClient'
 import MBAHubClient from '@/components/MBAHubClient'
 import MBASpecHubClient from '@/components/MBASpecHubClient'
@@ -171,11 +172,16 @@ export async function generateMetadata(
       })).sort((a, b) => (a.nirf < 200 ? a.nirf : 999) - (b.nirf < 200 ? b.nirf : 999)).slice(0, 3).map(u => getTitleName(u.id, u.name, u.abbr)).join(', ')
     : ''
 
+  // Keyword-targeted overrides for MBA spec hub pages (2026-06-04).
+  // When present, these replace the generic template entirely.
+  const specOverride = program === 'MBA' && subSlug ? MBA_SPEC_SEO_OVERRIDES[subSlug] : null
+
   // CTR-tuned title pattern (2026-05-25): lead with concrete number, year-in-
   // brackets hook, no em dashes, no "Compare/Explore" lead. clampTitle below
   // preserves the | EdifyEdu brand suffix and trims the body if it overflows
   // Google's 60-char SERP cap.
-  const rawTitle = specContent?.metaTitle
+  const rawTitle = specOverride?.title
+    || specContent?.metaTitle
     || (activeSpec
       ? program === 'MBA'
         ? `Online MBA ${activeSpec} ${year}: ${uniCount}+ Colleges, Fees | EdifyEdu`
@@ -187,7 +193,8 @@ export async function generateMetadata(
 
   // CTR-tuned description: lead with most specific number, micro-CTA at end,
   // never start with "Compare" or "Explore".
-  const rawDescription = specContent?.metaDesc
+  const rawDescription = specOverride?.description
+    || specContent?.metaDesc
     || (activeSpec
       ? program === 'MBA'
         ? `${uniCount}+ UGC-DEB online MBAs offer ${activeSpec}: ${topBrands || 'top NIRF-ranked colleges'}. Fees, syllabus, salary data, placements. Check eligibility free.`
@@ -338,6 +345,8 @@ export default async function CatchAllProgramPage(
 
   // MBA spec hub page (e.g., /programs/mba/finance) — dedicated spec comparison
   if (program === 'MBA' && activeSpec && subSlug) {
+    const mbaSpecOverride = MBA_SPEC_SEO_OVERRIDES[subSlug]
+
     // Compute spec FAQ schema so Google can pull rich results. The same
     // getSpecFAQs() drives the visual accordion inside MBASpecHubClient.
     const specCanonical = getCanonicalSpec(subSlug)
@@ -354,8 +363,11 @@ export default async function CatchAllProgramPage(
         })
       })
     })
-    const specFeeMin = specMbaUnis.length ? Math.min(...specMbaUnis.map(u => u.feeMin).filter(f => f > 0)) : feeMin
-    const specFeeMax = specMbaUnis.length ? Math.max(...specMbaUnis.map(u => u.feeMax).filter(f => f > 0)) : feeMax
+    const specFeeMinVals = specMbaUnis.map(u => u.feeMin).filter(f => f > 0)
+    const specFeeMaxVals = specMbaUnis.map(u => u.feeMax).filter(f => f > 0)
+    const hasSpecFees = specFeeMinVals.length > 0
+    const specFeeMin = hasSpecFees ? Math.min(...specFeeMinVals) : (feeMin > 0 ? feeMin : 0)
+    const specFeeMax = hasSpecFees ? Math.max(...specFeeMaxVals) : (feeMax > 0 ? feeMax : 0)
     const specFAQs = getSpecFAQs(activeSpec, specMbaUnis.length || universities.length, formatFeeSlim(specFeeMin), formatFeeSlim(specFeeMax))
     const specFaqSchema = {
       '@context': 'https://schema.org',
@@ -371,7 +383,12 @@ export default async function CatchAllProgramPage(
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(specFaqSchema) }} />
-        <MBASpecHubClient specSlug={subSlug} specName={activeSpec} />
+        <MBASpecHubClient
+          specSlug={subSlug}
+          specName={activeSpec}
+          customH1={mbaSpecOverride?.h1}
+          customIntro={mbaSpecOverride?.intro}
+        />
       </>
     )
   }
