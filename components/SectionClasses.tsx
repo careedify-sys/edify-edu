@@ -4,6 +4,7 @@ import { Wifi, Video, Clock, Monitor, FileText } from 'lucide-react'
 interface Props {
   u: University
   program: string
+  cleanName: string
 }
 
 const PROGRAM_HOURS: Record<string, string> = {
@@ -12,7 +13,7 @@ const PROGRAM_HOURS: Record<string, string> = {
   MSc: '10–12 hours/week', BSc: '8–10 hours/week',
 }
 
-export default function SectionClasses({ u, program }: Props) {
+export default function SectionClasses({ u, program, cleanName }: Props) {
   const hours = PROGRAM_HOURS[program] || '8–10 hours/week'
 
   const items = [
@@ -25,7 +26,7 @@ export default function SectionClasses({ u, program }: Props) {
 
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-6">
-      <h2 className="text-lg font-bold mb-4" style={{ color: '#0B1533' }}>Class Schedule &amp; Delivery</h2>
+      <h2 className="text-lg font-bold mb-4" style={{ color: '#0B1533' }}>{cleanName} {program}: Class Schedule and Delivery</h2>
       <div className="space-y-4">
         {items.map(item => (
           <div key={item.label} className="flex gap-3">

@@ -578,7 +578,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                   />
 
                   {/* §11 FAQs */}
-                  <FAQBlock faqs={schemaFaqs} />
+                  <FAQBlock faqs={schemaFaqs} title={`${cleanName} Online ${program} FAQs`} />
 
                   {/* §12 Choose / Alternatives */}
                   {specJson.sections.chooseAlternatives && (
@@ -614,9 +614,9 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                     />
                   </div>
                   <SectionAbout u={u} program={program} pd={pd} cleanName={cleanName} spec={spec} />
-                  <SectionWhoCanApply u={u} program={program} />
-                  <SectionClasses u={u} program={program} />
-                  <SectionExams u={u} program={program} />
+                  <SectionWhoCanApply u={u} program={program} cleanName={cleanName} />
+                  <SectionClasses u={u} program={program} cleanName={cleanName} />
+                  <SectionExams u={u} program={program} cleanName={cleanName} />
 
                   {/* §8 — Curriculum Deep Dive (replaces SpecializationGrid) */}
                   <CurriculumDive />
@@ -627,7 +627,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                     <RequestSyllabusCard uniId={u.id} uniName={cleanName} program={program} />
                   )}
 
-                  <FeeBreakdown u={u} pd={pd} program={program} />
+                  <FeeBreakdown u={u} pd={pd} program={program} cleanName={cleanName} />
 
                   <InlineCTA
                     text="Not sure if this fits your budget? Our counsellor compares EMI plans across universities for free."
@@ -642,7 +642,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                   <SectionPlacements pd={pd} cleanName={cleanName} program={program} />
                   <BeyondAdmissionSection cleanName={cleanName} />
                   <TopHirers pd={pd} program={program} cleanName={cleanName} />
-                  <ReviewsBlock universityId={u.id} program={program} />
+                  <ReviewsBlock universityId={u.id} program={program} cleanName={cleanName} />
                   <RedFlagsBlock u={u} program={program} cleanName={cleanName} />
 
                   <InlineCTA
@@ -665,7 +665,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                     variant="primary"
                   />
 
-                  <FAQBlock faqs={faqs} />
+                  <FAQBlock faqs={faqs} title={`${cleanName} Online ${program} FAQs`} />
                   <LastUpdatedStamp program={program} universityId={u.id} />
 
                   <div className="pt-2 flex gap-4 flex-wrap text-sm font-semibold">

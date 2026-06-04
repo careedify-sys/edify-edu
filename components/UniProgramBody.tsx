@@ -56,11 +56,11 @@ interface Props {
 
 // ── Inline generated-content components ─────────────────────────────────────
 
-function GeneratedReviewsBlock({ reviews }: { reviews: NonNullable<PageContent['sections']['reviews']> }) {
+function GeneratedReviewsBlock({ reviews, cleanName, program }: { reviews: NonNullable<PageContent['sections']['reviews']>; cleanName: string; program: string }) {
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-6">
       <h2 className="text-lg font-bold mb-2" style={{ color: '#0B1533' }}>
-        {reviews.heading || 'Student Reviews'}
+        {reviews.heading || `${cleanName} Online ${program} Student Reviews`}
       </h2>
       {reviews.intro && <p className="text-sm text-slate-500 mb-4">{reviews.intro}</p>}
       <div className="space-y-4">
@@ -212,7 +212,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
               {s?.ugcDeb?.body && (
                 <section className="rounded-xl border border-slate-200 bg-white p-6">
                   <h2 className="text-lg font-bold mb-3" style={{ color: '#0B1533' }}>
-                    {s.ugcDeb.heading || 'UGC-DEB Approval and Degree Validity'}
+                    {s.ugcDeb.heading || `${cleanName} Online ${program}: UGC-DEB Approval Status`}
                   </h2>
                   <div className="text-sm text-slate-600 leading-relaxed whitespace-pre-line">{s.ugcDeb.body}</div>
                 </section>
@@ -224,13 +224,13 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
               </div>
 
               {/* §5 Who Can Apply */}
-              <SectionWhoCanApply u={u} program={program} />
+              <SectionWhoCanApply u={u} program={program} cleanName={cleanName} />
 
               {/* §6 Class Schedule */}
-              <SectionClasses u={u} program={program} />
+              <SectionClasses u={u} program={program} cleanName={cleanName} />
 
               {/* §7 Exams */}
-              <SectionExams u={u} program={program} />
+              <SectionExams u={u} program={program} cleanName={cleanName} />
 
               {/* §8 Specializations */}
               {specs.length > 0 && (
@@ -242,6 +242,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
                   program={program}
                   fees={pd.fees}
                   duration={pd.duration}
+                  cleanName={cleanName}
                 />
                 </div>
               )}
@@ -256,7 +257,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
 
               {/* §10 Fees */}
               <div id="fees">
-                <FeeBreakdown u={u} pd={pd} program={program} />
+                <FeeBreakdown u={u} pd={pd} program={program} cleanName={cleanName} />
               </div>
 
               {/* Inline CTA after fees */}
@@ -306,9 +307,9 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
               {/* §16 Reviews */}
               <div id="reviews">
               {s?.reviews?.items?.length ? (
-                <GeneratedReviewsBlock reviews={s.reviews} />
+                <GeneratedReviewsBlock reviews={s.reviews} cleanName={cleanName} program={program} />
               ) : (
-                <ReviewsBlock universityId={u.id} program={program} />
+                <ReviewsBlock universityId={u.id} program={program} cleanName={cleanName} />
               )}
               </div>
 
@@ -350,7 +351,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
 
               {/* §20 FAQs */}
               <div id="faqs">
-                <FAQBlock faqs={s?.faqs?.length ? s.faqs.map(f => ({ q: f.question, a: f.answer })) : faqs} />
+                <FAQBlock faqs={s?.faqs?.length ? s.faqs.map(f => ({ q: f.question, a: f.answer })) : faqs} title={`${cleanName} Online ${program} FAQs`} />
               </div>
 
               {/* §21 Last Updated */}

@@ -14,7 +14,7 @@ export default function SectionPlacements({ pd, cleanName, program }: Props) {
     <section className="rounded-xl border border-slate-200 bg-white p-6">
       <div className="flex items-center gap-2 mb-1">
         <Briefcase size={16} className="text-slate-400" />
-        <h2 className="text-lg font-bold" style={{ color: '#0B1533' }}>Placements &amp; Career Outcomes</h2>
+        <h2 className="text-lg font-bold" style={{ color: '#0B1533' }}>{cleanName} Online {program} Placement Support</h2>
       </div>
 
       <p className="text-sm text-slate-500 mb-4">

@@ -4,6 +4,7 @@ import { Star } from 'lucide-react'
 interface Props {
   universityId: string
   program: string
+  cleanName?: string
 }
 
 function StarRow({ rating }: { rating: number }) {
@@ -20,7 +21,7 @@ function StarRow({ rating }: { rating: number }) {
   )
 }
 
-export default function ReviewsBlock({ universityId, program }: Props) {
+export default function ReviewsBlock({ universityId, program, cleanName }: Props) {
   const allReviews = UNIVERSITY_REVIEWS[universityId] || GENERIC_REVIEWS || []
   const reviews = allReviews.slice(0, 5)
   if (!reviews.length) return null
@@ -42,7 +43,7 @@ export default function ReviewsBlock({ universityId, program }: Props) {
       )}
 
       <div className="flex items-center gap-3 mb-5">
-        <h2 className="text-lg font-bold" style={{ color: '#0B1533' }}>Student Reviews</h2>
+        <h2 className="text-lg font-bold" style={{ color: '#0B1533' }}>{cleanName ? `${cleanName} Online ${program} Student Reviews` : 'Student Reviews'}</h2>
         <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-100">
           <Star size={12} className="text-amber-500 fill-amber-500" />
           <span className="text-xs font-bold text-amber-700">{rounded} / 5</span>

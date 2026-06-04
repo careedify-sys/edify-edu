@@ -4,9 +4,10 @@ import { ClipboardList, BookOpen, Briefcase } from 'lucide-react'
 interface Props {
   u: University
   program: string
+  cleanName: string
 }
 
-export default function SectionExams({ u, program }: Props) {
+export default function SectionExams({ u, program, cleanName }: Props) {
   const isOnline = u.examMode === 'Online'
   const isAssignment = u.examMode === 'Assignment-based'
 
@@ -34,7 +35,7 @@ export default function SectionExams({ u, program }: Props) {
 
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-6">
-      <h2 className="text-lg font-bold mb-4" style={{ color: '#0B1533' }}>Exams &amp; Evaluation</h2>
+      <h2 className="text-lg font-bold mb-4" style={{ color: '#0B1533' }}>{cleanName} {program}: Exams and Evaluation</h2>
       <div className="space-y-4">
         {items.map(item => (
           <div key={item.label} className="flex gap-3">

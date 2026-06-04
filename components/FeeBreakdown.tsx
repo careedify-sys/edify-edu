@@ -6,9 +6,10 @@ interface Props {
   u: University
   pd: ProgramDetail
   program: string
+  cleanName: string
 }
 
-export default function FeeBreakdown({ u, pd, program }: Props) {
+export default function FeeBreakdown({ u, pd, program, cleanName }: Props) {
   const isPostgrad  = ['MBA', 'MCA', 'M.Com', 'MA', 'MSc'].includes(program)
   const semesters   = isPostgrad ? 4 : 6
   const perSem      = Math.round(u.feeMin / semesters)
@@ -27,7 +28,7 @@ export default function FeeBreakdown({ u, pd, program }: Props) {
     <section className="rounded-xl border border-slate-200 bg-white p-6">
       <div className="flex items-center gap-2 mb-1">
         <IndianRupee size={16} className="text-slate-400" />
-        <h2 className="text-lg font-bold" style={{ color: '#0B1533' }}>Fees &amp; Payment</h2>
+        <h2 className="text-lg font-bold" style={{ color: '#0B1533' }}>{cleanName} Online {program} Fees 2026</h2>
       </div>
       <p className="text-sm text-slate-500 mb-4">
         Fee structure for {program}. Payment is accepted semester-wise or in full. EMI available through lending partners.

@@ -12,8 +12,8 @@ interface Props {
 
 export default function SectionAbout({ u, program, pd, cleanName, spec, customIntro }: Props) {
   const heading = spec
-    ? `About Online ${program} in ${spec}`
-    : `About the Online ${program} at ${cleanName}`
+    ? `${cleanName} Online ${program} in ${spec}: Programme Overview`
+    : `${cleanName} Online ${program}: Programme Overview`
 
   const isPostgrad = ['MBA', 'MCA', 'M.Com', 'MA', 'MSc'].includes(program)
   const isIT       = ['MCA', 'BCA'].includes(program)

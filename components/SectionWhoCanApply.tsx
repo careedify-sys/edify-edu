@@ -4,6 +4,7 @@ import { CheckCircle, XCircle } from 'lucide-react'
 interface Props {
   u: University
   program: string
+  cleanName: string
 }
 
 const PROGRAM_DEFAULTS: Record<string, { eligibility: string; forWho: string[]; notFor: string[] }> = {
@@ -29,7 +30,7 @@ const PROGRAM_DEFAULTS: Record<string, { eligibility: string; forWho: string[]; 
   },
 }
 
-export default function SectionWhoCanApply({ u, program }: Props) {
+export default function SectionWhoCanApply({ u, program, cleanName }: Props) {
   const defaults = PROGRAM_DEFAULTS[program] || PROGRAM_DEFAULTS['MBA']
   const eligibility = u.eligibility || defaults.eligibility
   const forWho = u.forWho?.length ? u.forWho : defaults.forWho
@@ -37,7 +38,7 @@ export default function SectionWhoCanApply({ u, program }: Props) {
 
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-6">
-      <h2 className="text-lg font-bold mb-4" style={{ color: '#0B1533' }}>Who Can Apply</h2>
+      <h2 className="text-lg font-bold mb-4" style={{ color: '#0B1533' }}>{cleanName} Online {program} Eligibility 2026</h2>
 
       <div className="p-3 rounded-lg bg-blue-50 border border-blue-100 text-sm text-blue-800 mb-5">
         <strong>Eligibility:</strong> {eligibility}

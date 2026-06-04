@@ -12,15 +12,16 @@ interface Props {
   program: string
   fees?: string
   duration?: string
+  cleanName: string
 }
 
-export default function SpecializationGrid({ specs, universityId, programSlug, program, fees, duration }: Props) {
+export default function SpecializationGrid({ specs, universityId, programSlug, program, fees, duration, cleanName }: Props) {
   if (!specs.length) return null
 
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-6">
       <h2 className="text-lg font-bold mb-1" style={{ color: '#0B1533' }}>
-        {program} Specialisations 2026
+        {cleanName} Online {program} Specialisations 2026
       </h2>
       <p className="text-sm text-slate-500 mb-5">
         Select a specialisation below for detailed syllabus, career scope, and salary data.
