@@ -102,7 +102,7 @@ export default function MBAHubClient() {
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-12 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl font-extrabold leading-tight mb-3">
-            Best Online MBA in India 2026 -- {mbaUnis.length} UGC-Approved Universities Compared
+            Online MBA in India 2026: {mbaUnis.length} UGC-Approved Universities Compared
           </h1>
           <p className="text-slate-400 text-base max-w-xl mx-auto mb-6">
             Independent comparison by EdifyEdu. No paid rankings. No referral commissions. NIRF 2025 data verified.
@@ -137,6 +137,14 @@ export default function MBAHubClient() {
 
       {/* Editorial Intro */}
       <section className="max-w-3xl mx-auto px-4 py-10">
+        <p className="text-base text-slate-700 leading-relaxed mb-6">
+          Choosing an online MBA in India means navigating {mbaUnis.length}+ UGC-DEB approved universities with fees ranging from
+          {' '}&#8377;10,000 to &#8377;3.70 lakh. This page compares every approved online MBA programme by NIRF rank, NAAC grade,
+          total fees, specializations offered, and student reviews. Whether you are looking for the cheapest online MBA, the
+          highest-ranked option, or a specific specialization like Finance or Healthcare, use the filters below to narrow your
+          search. edifyedu.in earns zero commissions from any university. Our rankings are based on verified data from UGC-DEB,
+          NAAC, and NIRF, refreshed every 45 days.
+        </p>
         <h2 className="text-2xl font-bold mb-4" style={{ color: '#0B1533' }}>How We Ranked the Best Online MBA Programmes in India 2026</h2>
         <p className="text-sm text-slate-600 leading-relaxed mb-4">
           EdifyEdu is independent. We earn zero commissions from any university listed here. Every fee, NIRF rank, and accreditation you see has been verified against official UGC-DEB, NAAC, and university portals. Our ranking methodology prioritises data you can verify yourself, not marketing claims.

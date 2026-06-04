@@ -319,9 +319,16 @@ export function middleware(req: NextRequest) {
   const PROGRAM_SPEC_REDIRECTS: Record<string, string> = {
     '/programs/mba/hospital-healthcare': '/programs/mba/healthcare-management',
     '/programs/mba/hospital--healthcare-management': '/programs/mba/healthcare-management',
+    // hospital-health-care-management is what --  cleanup produces from hospital--health-care-management
+    '/programs/mba/hospital-health-care-management': '/programs/mba/healthcare-management',
+    '/programs/mba/hospital-and-health-care-management': '/programs/mba/healthcare-management',
     '/programs/mba/digital-marketing-sales': '/programs/mba/digital-marketing',
     '/programs/mba/tourism-event-management': '/programs/mba/entrepreneurship',
-    '/programs/mba/media--communication': '/programs/mba/digital-marketing',
+    // media--communication: canonical is media-management, not digital-marketing
+    '/programs/mba/media--communication': '/programs/mba/media-management',
+    '/programs/mba/marketing-management': '/programs/mba/marketing',
+    // data-science-ai is what -- cleanup produces from data-science--ai
+    '/programs/mba/data-science-ai': '/programs/mba/data-science',
     '/programs/mca/cyber-security-cyber-forensics': '/programs/mca/cyber-security',
     '/programs/bcom/gls-university-online': '/universities/gls-university-online/bcom',
     '/programs/mba/commerce--finance-focus': '/programs/mba/finance',
@@ -345,7 +352,22 @@ export function middleware(req: NextRequest) {
     return NextResponse.redirect(url, 308)
   }
 
-  // ── 2a2. Double-dash cleanup in any URL (media--communication → media-communication) ───
+  // ── 2a2. Blog/guide 308 redirects (canonicalise cannibalising pages) ───────
+  // mba-course-duration: one slug only in GSC, redirect to the existing post
+  // executive-mba: best-college variant never published; redirect to the stronger post
+  // online-mba-vs-distance-mba: guide is canonical; blog post is the duplicate
+  const BLOG_REDIRECTS: Record<string, string> = {
+    '/blog/mba-course-duration-how-many-years-2026': '/blog/mba-course-duration-india-2026',
+    '/blog/best-college-executive-mba-india-2026': '/blog/top-executive-mba-programs-india-2026',
+    '/blog/online-mba-vs-distance-mba-difference-2026': '/guides/online-mba-vs-distance-mba',
+  }
+  if (BLOG_REDIRECTS[pathname]) {
+    const url = req.nextUrl.clone()
+    url.pathname = BLOG_REDIRECTS[pathname]
+    return NextResponse.redirect(url, 308)
+  }
+
+  // ── 2a3. Double-dash cleanup in any URL (media--communication → media-communication) ───
   if (pathname.includes('--')) {
     const url = req.nextUrl.clone()
     url.pathname = pathname.replace(/--+/g, '-')

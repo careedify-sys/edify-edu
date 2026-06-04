@@ -187,7 +187,7 @@ export async function generateMetadata(
         ? `Online MBA ${activeSpec} ${year}: ${uniCount}+ Colleges, Fees | EdifyEdu`
         : `Online ${program} ${activeSpec} ${year}: ${uniCount}+ Colleges | EdifyEdu`
       : program === 'MBA'
-        ? `Online MBA India ${year}: ${uniCount}+ Colleges, NIRF Ranked | EdifyEdu`
+        ? `Online MBA in India ${year}: ${uniCount} Colleges, Fees | edifyedu.in`
         : `Online ${program} India ${year}: ${uniCount}+ UGC-DEB Colleges | EdifyEdu`)
   const title = clampTitle(rawTitle)
 
@@ -200,7 +200,7 @@ export async function generateMetadata(
         ? `${uniCount}+ UGC-DEB online MBAs offer ${activeSpec}: ${topBrands || 'top NIRF-ranked colleges'}. Fees, syllabus, salary data, placements. Check eligibility free.`
         : `${uniCount}+ UGC-DEB online ${program} programs in ${activeSpec} ${year}. NIRF ranks, fees, syllabus, career outcomes and salary data. Check eligibility free.`
       : program === 'MBA'
-        ? `${uniCount} UGC-DEB online MBAs ranked by NIRF: fees ₹66K-3.7L, ${year} placements, specialisations. Zero paid rankings, zero referral fees. See fee data free.`
+        ? `Compare ${uniCount} UGC-DEB approved online MBA universities in India. Fees from ₹10K to ₹3.7L. NIRF ranked. NAAC graded. Filter by specialization, fee, location. Zero-commission comparison by edifyedu.in.`
         : `${uniCount}+ UGC-DEB approved online ${program} programs in India: real NIRF ranks, NAAC grades, verified fees, syllabus. Admissions ${year} open. Check eligibility.`)
   const description = clampDescription(rawDescription)
 
@@ -574,12 +574,19 @@ export default async function CatchAllProgramPage(
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'ItemList',
-          itemListElement: universities.slice(0, 20).map((u, i) => ({
-            '@type': 'ListItem',
-            position: i + 1,
-            url: `https://edifyedu.in/universities/${u.id}/mba`,
-            name: `${u.name} Online MBA`,
-          })),
+          name: `Online MBA Universities in India ${year}`,
+          description: `Compare ${universities.length} UGC-DEB approved online MBA universities in India`,
+          numberOfItems: universities.length,
+          url: 'https://edifyedu.in/programs/mba',
+          itemListElement: [...universities]
+            .sort((a, b) => (a.nirf > 0 && a.nirf < 200 ? a.nirf : 999) - (b.nirf > 0 && b.nirf < 200 ? b.nirf : 999))
+            .slice(0, 12)
+            .map((u, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              url: `https://edifyedu.in/universities/${u.id}/mba`,
+              name: `${u.name} Online MBA`,
+            })),
         }) }} />
         <div className="bg-white border-b border-border">
           <div className="max-w-7xl mx-auto px-4 py-2 flex items-center gap-2 text-xs text-ink-2">
