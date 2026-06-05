@@ -56,10 +56,10 @@ export default function PressStrip() {
               <Image
                 src={item.logo}
                 alt={item.alt}
-                width={320}
-                height={100}
-                className="rounded-lg max-h-20 md:max-h-24 w-auto object-contain"
-                sizes="(max-width: 640px) 240px, 320px"
+                width={640}
+                height={200}
+                className="rounded-lg max-h-40 md:max-h-48 w-auto object-contain"
+                sizes="(max-width: 640px) 480px, 640px"
                 priority={false}
               />
             </a>
