@@ -7,14 +7,18 @@ type PressItem = {
   alt: string
 }
 
-// Add a new object here to feature additional press placements. The
-// component will render every entry without further code changes.
 const pressItems: PressItem[] = [
   {
     publication: 'Tech Bullion',
     logo: '/press/techbullion.png',
     url: 'https://techbullion.com/25-strategies-for-successful-software-adoption-in-business/',
     alt: 'Tech Bullion',
+  },
+  {
+    publication: 'Boss Moves Magazine',
+    logo: '/press/boss-moves-badge.png',
+    url: 'https://www.sherisesstudios.com/product-page/boss-moves-magazine-june-2026-edition',
+    alt: 'Boss Moves Magazine — June 2026',
   },
 ]
 
@@ -36,7 +40,7 @@ export default function PressStrip() {
           className="section-label"
           style={{ textAlign: 'center', marginBottom: '24px', color: 'var(--ink-3)' }}
         >
-          Press &amp; Mentions
+          As Seen In
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">

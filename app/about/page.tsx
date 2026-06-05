@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Shield, Award, Users, Phone, Mail, CheckCircle, XCircle, Database, BarChart2 } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -294,6 +295,38 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Press */}
+        <div className="card p-8 mb-8">
+          <h2 className="text-2xl font-bold text-navy mb-6">In the Press</h2>
+          <a
+            href="https://www.sherisesstudios.com/product-page/boss-moves-magazine-june-2026-edition"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col sm:flex-row gap-6 items-start no-underline group"
+          >
+            <div className="shrink-0 rounded-xl overflow-hidden border border-border shadow-sm" style={{ width: 120 }}>
+              <Image
+                src="/images/boss-moves-cover-june-2026.jpeg"
+                alt="Boss Moves Magazine June 2026 Cover"
+                width={120}
+                height={160}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div>
+              <div className="text-xs font-bold uppercase tracking-wider mb-2" style={{ color: 'var(--amber-text)' }}>
+                Boss Moves Magazine · June 2026
+              </div>
+              <p className="text-ink-2 leading-relaxed text-sm mb-3">
+                Founder Rishi Kumar was featured in the June 2026 edition of Boss Moves Magazine, discussing what building edifyedu.in solo taught him about leading under pressure.
+              </p>
+              <span className="text-sm font-semibold group-hover:underline" style={{ color: 'var(--amber-text)' }}>
+                Read the digital edition →
+              </span>
+            </div>
+          </a>
         </div>
 
         {/* Contact CTA */}
