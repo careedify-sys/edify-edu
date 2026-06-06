@@ -1,14 +1,11 @@
 import type { Metadata, Viewport } from 'next'
 import { Plus_Jakarta_Sans, Fraunces } from 'next/font/google'
-import Script from 'next/script'
-import { Suspense } from 'react'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import { EntryPopup, ExitIntentPopup } from '@/components/LeadCapture'
 import Footer from '@/components/Footer'
 import BottomNav from '@/components/BottomNav'
 import MobileLeadNudge from '@/components/MobileLeadNudge'
-import MetaPixelEvents from '@/components/MetaPixelEvents'
 
 // ── Fonts loaded via next/font (auto-optimised, no layout shift) ─────────
 const plusJakarta = Plus_Jakarta_Sans({
@@ -189,21 +186,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
 
         {/* Microsoft Clarity — heatmaps & session recordings */}
-        <Script
-          id="microsoft-clarity"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "wh450hu192");`,
-          }}
-        />
+        <script dangerouslySetInnerHTML={{ __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "wh450hu192");` }} />
         {/* Meta Pixel */}
-        <Script
-          id="meta-pixel"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1006417241759882');fbq('track','PageView');`,
-          }}
-        />
+        <script dangerouslySetInnerHTML={{ __html: `!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1006417241759882');fbq('track','PageView');` }} />
+        {/* Google Analytics 4 + Google Ads */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QG3G3VLPX5" />
+        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QG3G3VLPX5');gtag('config','AW-17380291250');` }} />
       </head>
       <body>
         {/* Skip-navigation for keyboard / screen-reader users */}
@@ -226,25 +214,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <BottomNav />
         <MobileLeadNudge />
-        <Suspense fallback={null}>
-          <MetaPixelEvents />
-        </Suspense>
-        {/* ── Google Analytics 4 + Google Ads (afterInteractive = non-blocking) ── */}
-        {process.env.NEXT_PUBLIC_GA4_ID && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA4_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script id="ga4-init" strategy="afterInteractive">{`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${process.env.NEXT_PUBLIC_GA4_ID}', { page_path: window.location.pathname });
-              gtag('config', 'AW-17380291250');
-            `}</Script>
-          </>
-        )}
       </body>
     </html>
   )
