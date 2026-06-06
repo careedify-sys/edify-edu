@@ -1,12 +1,14 @@
 import type { Metadata, Viewport } from 'next'
 import { Plus_Jakarta_Sans, Fraunces } from 'next/font/google'
 import Script from 'next/script'
+import { Suspense } from 'react'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import { EntryPopup, ExitIntentPopup } from '@/components/LeadCapture'
 import Footer from '@/components/Footer'
 import BottomNav from '@/components/BottomNav'
 import MobileLeadNudge from '@/components/MobileLeadNudge'
+import MetaPixelEvents from '@/components/MetaPixelEvents'
 
 // ── Fonts loaded via next/font (auto-optimised, no layout shift) ─────────
 const plusJakarta = Plus_Jakarta_Sans({
@@ -216,6 +218,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <BottomNav />
         <MobileLeadNudge />
+        <Suspense fallback={null}>
+          <MetaPixelEvents />
+        </Suspense>
+        {/* ── Meta Pixel (afterInteractive = non-blocking) ── */}
+        {process.env.NEXT_PUBLIC_META_PIXEL_ID && (
+          <Script
+            id="meta-pixel"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','${process.env.NEXT_PUBLIC_META_PIXEL_ID}');fbq('track','PageView');`,
+            }}
+          />
+        )}
         {/* ── Google Analytics 4 + Google Ads (afterInteractive = non-blocking) ── */}
         {process.env.NEXT_PUBLIC_GA4_ID && (
           <>
