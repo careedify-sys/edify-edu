@@ -7,6 +7,7 @@ import { getProgramSpecParams, resolveSpecName } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
 import { getTitleName, shortenSpec, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
 import { getSpecPageContent } from '@/lib/data/page-content'
+import { pageKeywords } from '@/lib/page-keywords'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
 export async function generateStaticParams() {
@@ -62,6 +63,8 @@ export default async function MCASpecPage(
   const spec = resolveSpecName(id, 'MCA', 'mca', specSlug)
   if (!spec) notFound()
 
+  const kw = pageKeywords[`${u.id}-mca`]?.join(', ') || undefined
+
   return (
     <UniSpecBody
       u={u}
@@ -70,6 +73,7 @@ export default async function MCASpecPage(
       spec={spec}
       specSlug={specSlug}
       pd={pd}
+      keywords={kw}
     />
   )
 }

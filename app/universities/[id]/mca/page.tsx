@@ -2,9 +2,11 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
+import type { ProgramDetail } from '@/lib/data'
 import { getTitleName, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
 import { getMasterSyllabus } from '@/lib/content'
 import UniProgramBody from '@/components/UniProgramBody'
+import { pageKeywords } from '@/lib/page-keywords'
 
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('MCA')).map(u => ({ id: u.id }))
@@ -29,14 +31,94 @@ export async function generateMetadata(
   const description = clampDescription(syllabus?.metaDesc ||
     `${titleName} Online MCA ${year}: ${feeDisplay} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Check syllabus, placement & eligibility free.`)
 
+  const dynamicKw = [
+    `${u.name} online MCA fees`,
+    `${u.name} online MCA syllabus`,
+    `${u.name} online MCA placements`,
+    `${u.name} online MCA reviews`,
+    `${u.name} online MCA admission ${year}`,
+    `${u.abbr} online MCA`,
+  ].join(', ')
+
   return {
     title,
     description,
-    keywords: syllabus?.metaKeywords || undefined,
+    keywords: syllabus?.metaKeywords || dynamicKw,
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/mca` },
     openGraph: { title, description, type: 'website' },
     robots: { index: true, follow: true },
   }
+}
+
+function MCAProgramSchema({
+  u,
+  pd,
+}: {
+  u: NonNullable<ReturnType<typeof getUniversityById>>
+  pd: ProgramDetail
+}) {
+  const baseUrl = 'https://edifyedu.in'
+  const pageUrl = `${baseUrl}/universities/${u.id}/mca`
+  const durationYears = parseInt(pd.duration?.replace(/[^0-9]/g, '') || '2', 10) || 2
+  const kw = pageKeywords[`${u.id}-mca`]?.join(', ') || ''
+
+  const programSchema: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'EducationalOccupationalProgram',
+    name: `${u.name} Online MCA`,
+    description: `UGC-DEB approved Online MCA from ${u.name}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations, fees ${pd.fees || `from ₹${Math.round(u.feeMin / 1000)}K`}.`,
+    url: pageUrl,
+    provider: {
+      '@type': 'CollegeOrUniversity',
+      name: u.name,
+      sameAs: `${baseUrl}/universities/${u.id}`,
+    },
+    educationalProgramMode: 'Online',
+    timeToComplete: `P${durationYears}Y`,
+  }
+
+  if (u.feeMin) {
+    programSchema.offers = u.feeMax && u.feeMax !== u.feeMin
+      ? {
+          '@type': 'AggregateOffer',
+          lowPrice: String(u.feeMin),
+          highPrice: String(u.feeMax),
+          priceCurrency: 'INR',
+          availability: 'https://schema.org/InStock',
+        }
+      : {
+          '@type': 'Offer',
+          price: String(u.feeMin),
+          priceCurrency: 'INR',
+          availability: 'https://schema.org/InStock',
+        }
+  }
+
+  if (kw) programSchema.keywords = kw
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
+      { '@type': 'ListItem', position: 2, name: 'Universities', item: `${baseUrl}/universities` },
+      { '@type': 'ListItem', position: 3, name: u.name, item: `${baseUrl}/universities/${u.id}` },
+      { '@type': 'ListItem', position: 4, name: 'Online MCA', item: pageUrl },
+    ],
+  }
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(programSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+    </>
+  )
 }
 
 export default async function OnlineMCAPage(
@@ -48,7 +130,12 @@ export default async function OnlineMCAPage(
   const pd = u.programDetails['MCA']
   if (!u.programs.includes('MCA') || !pd) notFound()
 
-  return <UniProgramBody u={u} program="MCA" programSlug="mca" pd={pd} />
+  return (
+    <>
+      <MCAProgramSchema u={u} pd={pd} />
+      <UniProgramBody u={u} program="MCA" programSlug="mca" pd={pd} />
+    </>
+  )
 }
 
 export const revalidate = false

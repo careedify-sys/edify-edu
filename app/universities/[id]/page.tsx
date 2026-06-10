@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import UniversityPageClient from '@/components/UniversityPageClient'
 import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
+import { pageKeywords } from '@/lib/page-keywords'
 
 // ── Static Params (SSG) — pre-render all university pages at build time ──
 export async function generateStaticParams() {
@@ -96,6 +97,7 @@ function naacRatingValue(naac: string, naacScore?: string): string {
 // ── JSON-LD Structured Data ──
 function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversityById>> }) {
   const ratingValue = naacRatingValue(u.naac, u.naacScore)
+  const kw = pageKeywords[u.id]?.join(', ') || ''
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -106,6 +108,7 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
         url: `https://edifyedu.in/universities/${u.id}`,
         telephone: '+91-7061285806',
         description: `${u.name} is a UGC DEB approved university offering online degrees. NAAC ${u.naac} accredited.${u.nirf < 200 ? ` NIRF ranked #${u.nirf}.` : ''}`,
+        ...(kw ? { keywords: kw } : {}),
         address: {
           '@type': 'PostalAddress',
           addressLocality: u.city !== 'Online' ? u.city : u.name.split(' ')[0],

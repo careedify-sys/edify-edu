@@ -2,9 +2,11 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
+import type { ProgramDetail } from '@/lib/data'
 import { getTitleName, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
 import { MBA_SEO_OVERRIDES } from '@/lib/mba-seo-overrides'
 import UniProgramBody from '@/components/UniProgramBody'
+import { pageKeywords } from '@/lib/page-keywords'
 
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('MBA')).map(u => ({ id: u.id }))
@@ -19,9 +21,17 @@ export async function generateMetadata(
 
   const override = MBA_SEO_OVERRIDES[id]
   if (override) {
+    const kw = [
+      `${u.name} online MBA fees`,
+      `${u.name} online MBA syllabus`,
+      `${u.name} online MBA placements`,
+      `${u.name} online MBA reviews`,
+      `${u.abbr} online MBA`,
+    ].join(', ')
     return {
       title: override.title,
       description: override.description,
+      keywords: kw,
       alternates: { canonical: `https://edifyedu.in/universities/${u.id}/mba` },
       openGraph: {
         title: override.title,
@@ -47,9 +57,20 @@ export async function generateMetadata(
   // Description: fee + spec count + accreditation up front, micro-CTA at end, no "Compare" lead.
   const description = clampDescription(`${titleName} Online MBA ${year}: ${feeDisplay} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. See honest review, syllabus & placement data.`)
 
+  const keywords = [
+    `${u.name} online MBA fees`,
+    `${u.name} online MBA syllabus`,
+    `${u.name} online MBA placements`,
+    `${u.name} online MBA reviews`,
+    `${u.name} online MBA admission ${year}`,
+    `${u.abbr} online MBA`,
+    `${u.name} MBA fees syllabus placements reviews`,
+  ].join(', ')
+
   return {
     title,
     description,
+    keywords,
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/mba` },
     openGraph: {
       title,
@@ -76,6 +97,78 @@ export async function generateMetadata(
   }
 }
 
+// ── MBA JSON-LD (EducationalOccupationalProgram + BreadcrumbList) ──
+function MBAProgramSchema({
+  u,
+  pd,
+}: {
+  u: NonNullable<ReturnType<typeof getUniversityById>>
+  pd: ProgramDetail
+}) {
+  const baseUrl = 'https://edifyedu.in'
+  const pageUrl = `${baseUrl}/universities/${u.id}/mba`
+  const durationYears = parseInt(pd.duration?.replace(/[^0-9]/g, '') || '2', 10) || 2
+  const kw = pageKeywords[`${u.id}-mba`]?.join(', ') || ''
+
+  const programSchema: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'EducationalOccupationalProgram',
+    name: `${u.name} Online MBA`,
+    description: `UGC-DEB approved Online MBA from ${u.name}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations, fees ${pd.fees || `from ₹${Math.round(u.feeMin / 1000)}K`}.`,
+    url: pageUrl,
+    provider: {
+      '@type': 'CollegeOrUniversity',
+      name: u.name,
+      sameAs: `${baseUrl}/universities/${u.id}`,
+    },
+    educationalProgramMode: 'Online',
+    timeToComplete: `P${durationYears}Y`,
+  }
+
+  if (u.feeMin) {
+    programSchema.offers = u.feeMax && u.feeMax !== u.feeMin
+      ? {
+          '@type': 'AggregateOffer',
+          lowPrice: String(u.feeMin),
+          highPrice: String(u.feeMax),
+          priceCurrency: 'INR',
+          availability: 'https://schema.org/InStock',
+        }
+      : {
+          '@type': 'Offer',
+          price: String(u.feeMin),
+          priceCurrency: 'INR',
+          availability: 'https://schema.org/InStock',
+        }
+  }
+
+  if (kw) programSchema.keywords = kw
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
+      { '@type': 'ListItem', position: 2, name: 'Universities', item: `${baseUrl}/universities` },
+      { '@type': 'ListItem', position: 3, name: u.name, item: `${baseUrl}/universities/${u.id}` },
+      { '@type': 'ListItem', position: 4, name: 'Online MBA', item: pageUrl },
+    ],
+  }
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(programSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+    </>
+  )
+}
+
 export default async function OnlineMBAPage(
   { params }: { params: Promise<{ id: string }> }
 ) {
@@ -89,14 +182,17 @@ export default async function OnlineMBAPage(
 
   const override = MBA_SEO_OVERRIDES[id]
   return (
-    <UniProgramBody
-      u={u}
-      program="MBA"
-      programSlug="mba"
-      pd={pd}
-      customH1={override?.h1}
-      customIntro={override?.intro}
-    />
+    <>
+      <MBAProgramSchema u={u} pd={pd} />
+      <UniProgramBody
+        u={u}
+        program="MBA"
+        programSlug="mba"
+        pd={pd}
+        customH1={override?.h1}
+        customIntro={override?.intro}
+      />
+    </>
   )
 }
 

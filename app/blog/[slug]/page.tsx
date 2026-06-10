@@ -16,6 +16,7 @@ import UniversityEndCta from '@/components/blog-cta/UniversityEndCta'
 import { BLOG_CTA_BUNDLES } from '@/lib/university-blog-cta'
 import { getUniversityFromBlog } from '@/lib/internal-links'
 import BlogRelatedLinks from '@/components/BlogRelatedLinks'
+import { pageKeywords } from '@/lib/page-keywords'
 
 // Inject a mid-article CTA marker right before the next <h2> after a given
 // heading ID. BlogContentWithCTAs picks up the marker and renders the right
@@ -223,7 +224,7 @@ export default async function BlogPostPage({ params }: Props) {
         height: 192,
       },
     },
-    keywords: post.tags.join(', '),
+    keywords: pageKeywords[post.slug]?.join(', ') || post.tags.join(', '),
     mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
     ...(uniFromBlog ? {
       about: {

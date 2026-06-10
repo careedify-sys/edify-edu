@@ -124,6 +124,7 @@ interface Props {
   spec: string
   specSlug: string
   pd: ProgramDetail
+  keywords?: string
 }
 
 // ── Spec JSON section renderers ──────────────────────────────────────────────
@@ -306,7 +307,7 @@ function SpecChooseSection({
 
 // ── Main component ───────────────────────────────────────────────────────────
 
-export default function UniSpecBody({ u, program, programSlug, spec, specSlug, pd }: Props) {
+export default function UniSpecBody({ u, program, programSlug, spec, specSlug, pd, keywords }: Props) {
   const cleanName  = getShortUniversityName(u.name)
   const syllabus   = getSyllabus(u.id, program, specSlug)
   const peers      = getUniversitiesByProgram(program).filter(x => x.id !== u.id).slice(0, 3)
@@ -408,7 +409,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
 
   return (
     <>
-      <SchemaBlock u={u} pd={pd} program={program} programSlug={programSlug} spec={spec} specSlug={specSlug} coupon={coupon} faqs={schemaFaqs} reviews={schemaReviews} />
+      <SchemaBlock u={u} pd={pd} program={program} programSlug={programSlug} spec={spec} specSlug={specSlug} coupon={coupon} faqs={schemaFaqs} reviews={schemaReviews} keywords={keywords} />
       <AssuredMarquee />
 
       <div className="page-shell">

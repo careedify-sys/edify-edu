@@ -3,9 +3,10 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
-import type { Program } from '@/lib/data'
+import type { Program, ProgramDetail } from '@/lib/data'
 import UniProgramBody from '@/components/UniProgramBody'
 import { getTitleName, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
+import { pageKeywords } from '@/lib/page-keywords'
 
 // Program slug to Program type mapping
 const PM: Record<string, Program> = {
@@ -100,6 +101,82 @@ export async function generateMetadata(
   }
 }
 
+// ── Program JSON-LD (EducationalOccupationalProgram + BreadcrumbList) ──
+function ProgramSchema({
+  u,
+  program,
+  programSlug,
+  pd,
+}: {
+  u: NonNullable<ReturnType<typeof getUniversityById>>
+  program: Program
+  programSlug: string
+  pd: ProgramDetail
+}) {
+  const baseUrl = 'https://edifyedu.in'
+  const pageUrl = `${baseUrl}/universities/${u.id}/${programSlug}`
+  const durationYears = parseInt(pd.duration?.replace(/[^0-9]/g, '') || '2', 10) || 2
+  const kw = pageKeywords[`${u.id}-${programSlug}`]?.join(', ') || ''
+
+  const programSchema: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'EducationalOccupationalProgram',
+    name: `${u.name} Online ${program}`,
+    description: `UGC-DEB approved Online ${program} from ${u.name}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations, fees ${pd.fees || `from ₹${Math.round(u.feeMin / 1000)}K`}.`,
+    url: pageUrl,
+    provider: {
+      '@type': 'CollegeOrUniversity',
+      name: u.name,
+      sameAs: `${baseUrl}/universities/${u.id}`,
+    },
+    educationalProgramMode: 'Online',
+    timeToComplete: `P${durationYears}Y`,
+  }
+
+  if (u.feeMin) {
+    programSchema.offers = u.feeMax && u.feeMax !== u.feeMin
+      ? {
+          '@type': 'AggregateOffer',
+          lowPrice: String(u.feeMin),
+          highPrice: String(u.feeMax),
+          priceCurrency: 'INR',
+          availability: 'https://schema.org/InStock',
+        }
+      : {
+          '@type': 'Offer',
+          price: String(u.feeMin),
+          priceCurrency: 'INR',
+          availability: 'https://schema.org/InStock',
+        }
+  }
+
+  if (kw) programSchema.keywords = kw
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
+      { '@type': 'ListItem', position: 2, name: 'Universities', item: `${baseUrl}/universities` },
+      { '@type': 'ListItem', position: 3, name: u.name, item: `${baseUrl}/universities/${u.id}` },
+      { '@type': 'ListItem', position: 4, name: `Online ${program}`, item: pageUrl },
+    ],
+  }
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(programSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+    </>
+  )
+}
+
 // ── Page Component (Server Component) ──
 export default async function UniversityProgramPage(
   { params }: { params: any }
@@ -118,12 +195,15 @@ export default async function UniversityProgramPage(
   const pd = university.programDetails[program]!
 
   return (
-    <UniProgramBody
-      u={university}
-      program={program}
-      programSlug={programSlug}
-      pd={pd}
-    />
+    <>
+      <ProgramSchema u={university} program={program} programSlug={programSlug} pd={pd} />
+      <UniProgramBody
+        u={university}
+        program={program}
+        programSlug={programSlug}
+        pd={pd}
+      />
+    </>
   )
 }
 

@@ -19,9 +19,10 @@ interface Props {
   coupon?: Coupon | null
   faqs?: { q: string; a: string }[]
   reviews?: SchemaReview[]
+  keywords?: string
 }
 
-export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlug, coupon, faqs, reviews }: Props) {
+export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlug, coupon, faqs, reviews, keywords }: Props) {
   const year     = new Date().getFullYear()
   const baseUrl  = 'https://edifyedu.in'
   const pageUrl  = spec
@@ -89,6 +90,7 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
       startDate: `${year}-07-01`,
       courseWorkload: `P${durationYears}Y`,
     },
+    ...(keywords ? { keywords } : {}),
     // AggregateRating nested inside Course — required by Google for star snippet eligibility
     ...(avgRating && reviews?.length ? {
       aggregateRating: {
