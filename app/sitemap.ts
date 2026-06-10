@@ -2,7 +2,7 @@
 // Source of truth: data/EdifyEdu_Unified_Programs_v3.xlsx (Programs sheet)
 // Regenerate: npm run build:urls
 //
-// Priority tiers (post-indexation-cleanup 2026-05-25):
+// Priority tiers (post-indexation-cleanup 2026-05-25, crawl-fix 2026-06-10):
 //   1.0  /                               (homepage)
 //   0.92 /universities, /programs, /compare, /best-online-mba-india
 //   0.90 /programs/{prog}               (program hub pages — 100% indexed)
@@ -11,15 +11,14 @@
 //   0.75 /universities/{slug}/{prog}     (uni+program money pages)
 //   0.75 /verify/{slug}                 (university verify pages — index,follow)
 //   0.75 /programs/{prog}/{spec}        (rescued GSC ranking spec pages only)
-//   0.70 /universities/{slug}/{prog}/{spec} WITH spec JSON  (rich pages only)
+//   0.70 /universities/{slug}/{prog}/{spec} (all ~2,123 spec pages — now index,follow)
 //
 // EXCLUDED from sitemap (noindexed in page metadata too):
 //   /programs/{prog}/{spec}             — 598 pages, 7.9% index rate, removed entirely
 //                                         EXCEPTION: RESCUED_PROGRAM_PATHS are force-added
-//   /universities/{id}/{prog}/{spec} without spec JSON — 1,819 thin pages
 
 import { MetadataRoute } from 'next'
-import { readFileSync, statSync, existsSync } from 'fs'
+import { readFileSync, statSync } from 'fs'
 import { join } from 'path'
 import { getPublishedPosts } from '@/lib/blog'
 import { GUIDES } from '@/lib/guides'
@@ -49,12 +48,6 @@ function getContentLastMod(uniSlug: string, program: string): Date {
   }
 }
 
-// Returns true when a spec-specific rich JSON file exists for this page
-function hasSpecJson(uniSlug: string, prog: string, specSlug: string): boolean {
-  return existsSync(
-    join(process.cwd(), 'lib', 'data', 'page-content', `${uniSlug}-${prog}-${specSlug}.json`)
-  )
-}
 
 const BASE = 'https://edifyedu.in'
 
@@ -112,18 +105,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ── Registry pages from valid-urls.json ───────────────────────────────────
   // Filter out thin pages before building sitemap entries:
   //   1. /programs/{prog}/{spec} — all 598 removed (noindexed, 7.9% index rate)
-  //   2. /universities/{id}/{prog}/{spec} without a spec JSON — 1,819 thin pages removed
+  //   2. /universities/{id}/{prog}/{spec} — all ~2,123 included (index,follow since 2026-06-10)
   const registryPages: MetadataRoute.Sitemap = loadValidUrls()
     .filter(path => {
       // Remove /programs/{prog}/{spec} (3-segment program paths)
       if (/^\/programs\/[^/]+\/[^/]+$/.test(path)) return false
-
-      // For uni-prog-spec pages, only include when rich spec JSON exists
-      const specMatch = path.match(/^\/universities\/([^/]+)\/([^/]+)\/([^/]+)$/)
-      if (specMatch) {
-        const [, uniSlug, prog, specSlug] = specMatch
-        return hasSpecJson(uniSlug, prog, specSlug)
-      }
 
       return true
     })

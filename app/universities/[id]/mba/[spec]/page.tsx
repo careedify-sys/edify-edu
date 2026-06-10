@@ -6,7 +6,6 @@ import { getUniversityById } from '@/lib/data'
 import { getProgramSpecParams, resolveSpecName } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
 import { getTitleName, shortenSpec, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
-import { getSpecPageContent } from '@/lib/data/page-content'
 import { pageKeywords } from '@/lib/page-keywords'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
@@ -49,9 +48,7 @@ export async function generateMetadata(
       images: [{ url: '/og.webp', width: 1200, height: 630 }],
     },
     twitter: { card: 'summary_large_image', title, description },
-    robots: getSpecPageContent(id, 'mba', specSlug)
-      ? { index: true, follow: true }
-      : { index: false, follow: true },
+    robots: { index: true, follow: true },
   }
 }
 
