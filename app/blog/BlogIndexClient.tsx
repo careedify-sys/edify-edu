@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
-import type { BlogPost } from '@/lib/blog'
+import type { BlogListing } from '@/lib/blog'
 
 const CAT_COLORS: Record<string, string> = {
   'MBA Guides':         '#c9922a',
@@ -14,7 +14,7 @@ export function categoryColor(cat: string) {
   return CAT_COLORS[cat] || '#607B96'
 }
 
-export function PostCard({ post }: { post: BlogPost }) {
+export function PostCard({ post }: { post: BlogListing }) {
   const color = categoryColor(post.category)
   return (
     <Link href={`/blog/${post.slug}`} className="block no-underline group h-full">
@@ -60,7 +60,7 @@ export function PostCard({ post }: { post: BlogPost }) {
 }
 
 interface Props {
-  posts: BlogPost[]
+  posts: BlogListing[]
   categories: string[]
 }
 

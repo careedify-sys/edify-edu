@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { getPublishedPosts, BLOG_CATEGORIES } from '@/lib/blog'
+import { getPublishedListings, BLOG_CATEGORIES } from '@/lib/blog'
+import type { BlogListing } from '@/lib/blog'
 import BlogIndexClient from './BlogIndexClient'
 import BlogSidebarForm from '@/components/BlogSidebarForm'
 
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
 }
 
 // ── Featured post ─────────────────────────────────────────────────────────────
-function FeaturedPost({ post }: { post: ReturnType<typeof getPublishedPosts>[0] }) {
+function FeaturedPost({ post }: { post: BlogListing }) {
   return (
     <Link href={`/blog/${post.slug}`} className="block no-underline group">
       <div className="rounded-2xl overflow-hidden border border-border bg-white hover:border-amber hover:shadow-md transition-all"
@@ -123,7 +124,7 @@ const blogBreadcrumbSchema = {
 
 // ── Main page ─────────────────────────────────────────────────────────────────
 export default function BlogPage() {
-  const allPosts = getPublishedPosts()
+  const allPosts = getPublishedListings()
   const featured  = allPosts[0]
   const restPosts = allPosts.slice(1)
 
