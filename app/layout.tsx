@@ -192,6 +192,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Google Analytics 4 + Google Ads */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-QG3G3VLPX5" />
         <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QG3G3VLPX5');gtag('config','AW-17380291250');` }} />
+        {/* Tawk.to live chat */}
+        <script dangerouslySetInnerHTML={{ __html: `var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();(function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];s1.async=true;s1.src='https://embed.tawk.to/6a2a752d135ef41c3064d54e/1jqqtjf74';s1.charset='UTF-8';s1.setAttribute('crossorigin','*');s0.parentNode.insertBefore(s1,s0);})();` }} />
       </head>
       <body>
         {/* Skip-navigation for keyboard / screen-reader users */}
