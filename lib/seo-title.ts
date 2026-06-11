@@ -189,6 +189,20 @@ const SPEC_MAP: Record<string, string> = {
 export function shortenSpec(spec: string): string {
   if (SPEC_MAP[spec]) return SPEC_MAP[spec]
   if (spec.length <= 22) return spec
+
+  // BCA specs follow the pattern "Computer Applications – Data Science".
+  // Strip the common prefix so each specialization page gets a distinct token.
+  // "Computer Applications – Data Science" → "Data Science"
+  // "Computer Applications – Financial Technology & AI" → "Financial Technology & AI"
+  // No-dash variants (e.g. "Computer Applications 4 Specialisations Available") are
+  // left to the fallback, which returns "Computer Applications" as the base label.
+  const caMatch = spec.match(/^Computer Applications\s*[–—-]\s*(.+)$/)
+  if (caMatch) {
+    const suffix = caMatch[1].trim()
+    if (suffix.length <= 30) return suffix
+    return suffix.substring(0, 30).replace(/\s+\S*$/, '').trim()
+  }
+
   return spec.substring(0, 22).replace(/\s+\S*$/, '').trim()
 }
 

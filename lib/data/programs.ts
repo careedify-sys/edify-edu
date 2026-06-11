@@ -144,8 +144,10 @@ export function getSpecDisplayName(
   const row = getProgram(slug, program.toLowerCase(), specSlug)
   if (!row) return null
   if (row.spec_name) return row.spec_name
-  // Fallback: convert slug to Title Case when spec_name is empty in manifest
-  return specSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+  // Empty spec_name means the Excel source had no display name for this slug.
+  // Return null so resolveSpecName can fall through to the lib/data.ts lookup,
+  // which carries the correct display name (e.g. "Computer Applications – Data Science").
+  return null
 }
 
 /**
