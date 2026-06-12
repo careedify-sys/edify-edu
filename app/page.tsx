@@ -508,6 +508,21 @@ export default function HomePage() {
 
       {/* ── YouTube Intro Video ── */}
       <section style={{ padding:'64px 0', background:'var(--surface)' }}>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'VideoObject',
+          'name': 'What is EdifyEdu.in? Compare 125+ UGC Approved Online Universities India 2026',
+          'description': 'EdifyEdu compares 125+ UGC DEB approved online universities in India. No paid rankings. All data sourced from official NIRF, NAAC, and UGC portals.',
+          'thumbnailUrl': 'https://img.youtube.com/vi/Waj6Ph6baVg/maxresdefault.jpg',
+          'uploadDate': '2026-05-27',
+          'embedUrl': 'https://www.youtube.com/embed/Waj6Ph6baVg',
+          'contentUrl': 'https://www.youtube.com/watch?v=Waj6Ph6baVg',
+          'publisher': {
+            '@type': 'Organization',
+            'name': 'EdifyEdu',
+            'url': 'https://edifyedu.in',
+          },
+        })}}/>
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div style={{ textAlign:'center', marginBottom:'32px' }}>
             <div className="section-label">Watch First</div>
