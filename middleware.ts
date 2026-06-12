@@ -315,6 +315,14 @@ export function middleware(req: NextRequest) {
     return NextResponse.redirect(url, 308)
   }
 
+  // ── 2a0b. /programs/online-X prefix redirect (online-ba → ba, online-mba → mba) ───
+  const onlineProgramsMatch = pathname.match(/^\/programs\/(online-)(mba|mca|bba|bca|bcom|mcom|ma|ba|msc|bsc)(\/.*)?$/)
+  if (onlineProgramsMatch) {
+    const url = req.nextUrl.clone()
+    url.pathname = `/programs/${onlineProgramsMatch[2]}${onlineProgramsMatch[3] || ''}`
+    return NextResponse.redirect(url, 308)
+  }
+
   // ── 2a. /programs/ spec slug redirects (Google-indexed bad slugs → correct ones) ───
   const PROGRAM_SPEC_REDIRECTS: Record<string, string> = {
     '/programs/mba/hospital-healthcare': '/programs/mba/healthcare-management',
