@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { COUPONS } from '@/lib/coupons'
-import { COUPONS_HUB_FAQS } from './faqs'
 
 const universityCount = new Set(COUPONS.map(c => c.universityId)).size
 
@@ -29,27 +28,6 @@ export const metadata: Metadata = {
   },
 }
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: COUPONS_HUB_FAQS.map(f => ({
-    '@type': 'Question',
-    name: f.q,
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: f.a,
-    },
-  })),
-}
-
 export default function CouponsLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      {children}
-    </>
-  )
+  return <>{children}</>
 }

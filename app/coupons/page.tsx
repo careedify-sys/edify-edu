@@ -28,6 +28,16 @@ import { COUPONS_HUB_FAQS } from './faqs'
 const COUNSELLOR_TEL = '+917061285806'
 const COUNSELLOR_TEL_DISPLAY = '+91 70612 85806'
 
+const hubFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: COUPONS_HUB_FAQS.map(f => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+}
+
 // ── Types ──────────────────────────────────────────────────────────────────
 
 type FilterTab = 'All' | 'MBA' | 'MCA'
@@ -331,6 +341,7 @@ export default function CouponsPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(hubFaqSchema) }} />
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section
         className="relative overflow-hidden"
