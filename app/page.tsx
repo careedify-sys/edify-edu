@@ -410,7 +410,7 @@ export default function HomePage() {
 
                 <div style={{ marginTop: 16, padding: '10px 14px', background: '#f0fdf4', borderRadius: 10, border: '1px solid rgba(16,185,129,0.15)' }}>
                   <p style={{ fontSize: 11, color: '#059669', margin: 0, lineHeight: 1.5, fontWeight: 600 }}>
-                    All data sourced from ugc.ac.in, naac.gov.in and nirfindia.org. Last verified: April 2026.
+                    All data sourced from ugc.ac.in, naac.gov.in and nirfindia.org. Last verified: June 2026.
                   </p>
                 </div>
               </div>
