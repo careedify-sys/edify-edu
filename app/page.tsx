@@ -514,7 +514,7 @@ export default function HomePage() {
           'name': 'What is EdifyEdu.in? Compare 125+ UGC Approved Online Universities India 2026',
           'description': 'EdifyEdu compares 125+ UGC DEB approved online universities in India. No paid rankings. All data sourced from official NIRF, NAAC, and UGC portals.',
           'thumbnailUrl': 'https://img.youtube.com/vi/Waj6Ph6baVg/maxresdefault.jpg',
-          'uploadDate': '2026-05-27',
+          'uploadDate': '2026-05-27T00:00:00+05:30',
           'embedUrl': 'https://www.youtube.com/embed/Waj6Ph6baVg',
           'contentUrl': 'https://www.youtube.com/watch?v=Waj6Ph6baVg',
           'publisher': {
