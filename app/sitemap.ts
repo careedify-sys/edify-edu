@@ -77,7 +77,7 @@ function urlMeta(path: string): { priority: number; freq: Freq } {
   if (path === '/coupons')
     return { priority: 0.85, freq: 'weekly' }
 
-  if (path === '/about' || path === '/contact' || path === '/privacy-policy')
+  if (path === '/about' || path === '/contact' || path === '/privacy-policy' || path === '/terms')
     return { priority: 0.50, freq: 'yearly' }
 
   // /programs/{prog}  (exactly 2 segments) — 100% indexed, keep high

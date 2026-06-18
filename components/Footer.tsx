@@ -128,6 +128,7 @@ export default function Footer() {
               { label:'About Us',              href:'/about' },
               { label:'Contact Us',            href:'/contact' },
               { label:'Privacy Policy',        href:'/privacy-policy' },
+              { label:'Terms of Use',          href:'/terms' },
             ].map(l => (
               <Link key={l.label} href={l.href} className="footer-link">{l.label}</Link>
             ))}
