@@ -142,6 +142,7 @@ const OLD_SLUG_REDIRECTS: Record<string, string> = {
   'dypatil': 'dy-patil-university-online',
   'dy-patil': 'dy-patil-university-online',
   'sathyaba-institut-of-science': 'sathyabama-university-online',
+  'srm-university-online': 'srm-institute-science-technology-online',
 
   // 2026-05-25 GSC BrokenSlugs batch — slugs previously handled only by
   // next.config redirects. Inlining here so www→apex + old-slug collapses
