@@ -14,7 +14,7 @@ export const RESCUED_PROGRAM_PATHS: string[] = [
   '/programs/mba/operations-management',
   '/programs/mba/business-analytics',
   '/programs/mba/entrepreneurship',
-  '/programs/ma/psychology',
+  // '/programs/ma/psychology' — removed: redirects to /programs/ma
   '/programs/bba/aviation',
 
   // June 2026: MBA spec pages with keyword-targeted SEO overrides

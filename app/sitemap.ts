@@ -171,12 +171,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   // ── Blog posts ────────────────────────────────────────────────────────────
-  const blogPages: MetadataRoute.Sitemap = getPublishedPosts().map(post => ({
-    url: `${BASE}/blog/${post.slug}`,
-    lastModified: new Date(post.publishedAt),
-    changeFrequency: 'monthly' as const,
-    priority: 0.85,
-  }))
+  // Blog slugs that redirect via middleware/next.config (canonical lives elsewhere)
+  const BLOG_REDIRECT_SLUGS = new Set([
+    'online-mba-vs-distance-mba-difference-2026',
+  ])
+  const blogPages: MetadataRoute.Sitemap = getPublishedPosts()
+    .filter(post => !BLOG_REDIRECT_SLUGS.has(post.slug))
+    .map(post => ({
+      url: `${BASE}/blog/${post.slug}`,
+      lastModified: new Date(post.publishedAt),
+      changeFrequency: 'monthly' as const,
+      priority: 0.85,
+    }))
 
   // ── Coupon pages ──────────────────────────────────────────────────────────
   const couponPages: MetadataRoute.Sitemap = COUPON_PAGE_SLUGS.map(slug => ({
