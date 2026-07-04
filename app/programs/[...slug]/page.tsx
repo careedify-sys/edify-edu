@@ -176,11 +176,24 @@ export async function generateMetadata(
   // When present, these replace the generic template entirely.
   const specOverride = program === 'MBA' && subSlug ? MBA_SPEC_SEO_OVERRIDES[subSlug] : null
 
+  const PROGRAM_HUB_SEO: Record<string, { title: string; description: string }> = {
+    'mba': {
+      title: 'Best Online MBA Colleges in India 2026: Fees Compared',
+      description: 'Compare online MBA colleges side by side: fees, accreditation, placement reality. Independent comparison, zero commission.',
+    },
+    'bba': {
+      title: 'Best Online BBA Colleges in India 2026: Fees Compared',
+      description: 'Compare online BBA colleges: fees, NAAC grades, UGC-DEB approval. Symbiosis, Amity, LPU, Galgotias and more. Real student feedback, zero commission.',
+    },
+  }
+  const hubOverride = !activeSpec ? PROGRAM_HUB_SEO[programSlug] : null
+
   // CTR-tuned title pattern (2026-05-25): lead with concrete number, year-in-
   // brackets hook, no em dashes, no "Compare/Explore" lead. clampTitle below
   // preserves the | EdifyEdu brand suffix and trims the body if it overflows
   // Google's 60-char SERP cap.
-  const rawTitle = specOverride?.title
+  const rawTitle = hubOverride?.title
+    || specOverride?.title
     || specContent?.metaTitle
     || (activeSpec
       ? program === 'MBA'
@@ -193,7 +206,8 @@ export async function generateMetadata(
 
   // CTR-tuned description: lead with most specific number, micro-CTA at end,
   // never start with "Compare" or "Explore".
-  const rawDescription = specOverride?.description
+  const rawDescription = hubOverride?.description
+    || specOverride?.description
     || specContent?.metaDesc
     || (activeSpec
       ? program === 'MBA'

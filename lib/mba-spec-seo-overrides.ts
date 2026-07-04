@@ -29,8 +29,8 @@ export const MBA_SPEC_SEO_OVERRIDES: Record<string, MBASpecSeoOverride> = {
     intro: 'An online MBA in Human Resource Management is ideal for professionals in talent acquisition, L&D, compensation, and people operations. This page covers every UGC-DEB approved online MBA HR programme in India with fee breakdowns and honest reviews. edifyedu.in is commission-free and ranks no university based on payments.',
   },
   'healthcare-management': {
-    title: 'Online MBA in Healthcare Management 2026: Fees, Top Universities | edifyedu.in',
-    description: 'Online MBA in Healthcare and Hospital Management. Compare Amity, Symbiosis, MAHE, Manipal, LPU. Fees from ₹80K. UGC-DEB approved. Independent comparison.',
+    title: 'Best Online MBA in Healthcare Management 2026: Fees',
+    description: 'Compare online MBA in Healthcare & Hospital Management: Amity, MAHE, DY Patil, LPU. Fees from ₹80K, UGC-DEB approved. Independent, zero commission.',
     h1: 'Online MBA in Healthcare Management 2026: Fees, Universities, and Career Scope',
     intro: 'An online MBA in Healthcare Management or Hospital Administration is one of the fastest-growing specializations in India. From hospital chains to health-tech startups, this degree opens diverse career paths. Compare all UGC-DEB approved programmes here with verified fees and accreditation data. edifyedu.in earns zero commissions.',
   },
