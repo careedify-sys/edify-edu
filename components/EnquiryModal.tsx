@@ -169,10 +169,10 @@ export default function EnquiryModal({
             </h2>
             <p className="text-sm text-slate-500 mt-0.5">
               {step === 'success'
-                ? 'Our advisor will call you within 1 hour'
+                ? 'Details on WhatsApp within 1 hour'
                 : universityName
                   ? `Enquiring about ${universityName}`
-                  : 'Our team will call you within 1 hour. Free.'}
+                  : 'Details on WhatsApp within 1 hour. Free.'}
             </p>
           </div>
           <button
@@ -388,7 +388,7 @@ export default function EnquiryModal({
               Thank you, {form.name.split(' ')[0]}!
             </h3>
             <p className="text-sm text-slate-500 mb-2 leading-relaxed">
-              Our advisor will call you within <strong className="text-slate-700">1 hour</strong>. We've also sent details to your WhatsApp.
+              Details on WhatsApp within <strong className="text-slate-700">1 hour</strong>. No spam, no pushy calls.
             </p>
             <p className="text-xs text-slate-400 mb-6">
               We've noted your interest in <strong>{form.program}</strong>

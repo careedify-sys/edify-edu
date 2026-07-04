@@ -40,7 +40,7 @@ export function VerifyLeadForm({ universityName, universitySlug }: Props) {
     return (
       <div style={{ padding: '24px 28px', textAlign: 'center' }}>
         <div style={{ fontSize: 28, marginBottom: 8 }}>Done!</div>
-        <p style={{ fontSize: 14, fontWeight: 700, color: '#059669', marginBottom: 4 }}>Our counsellor will call you within 1 hour.</p>
+        <p style={{ fontSize: 14, fontWeight: 700, color: '#059669', marginBottom: 4 }}>Details on WhatsApp within 1 hour.</p>
         <p style={{ fontSize: 12, color: '#64748b' }}>Free call about {universityName}. No obligation.</p>
       </div>
     )

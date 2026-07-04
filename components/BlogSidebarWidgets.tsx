@@ -20,9 +20,10 @@ interface Props {
   postTitle?: string
   specialisations?: string[]
   quickFacts?: QuickFact[]
+  hideAlumni?: boolean
 }
 
-export default function BlogSidebarWidgets({ postTitle, specialisations, quickFacts }: Props) {
+export default function BlogSidebarWidgets({ postTitle, specialisations, quickFacts, hideAlumni }: Props) {
   const specs = specialisations?.length ? specialisations : SPECIALISATIONS
 
   // ── Alumni card state ────────────────────────────────────────────────────
@@ -110,8 +111,8 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
         </div>
       )}
 
-      {/* ── Card 1: Talk to an Alumnus ─────────────────────────────────── */}
-      <div
+      {/* ── Card 1: Talk to an Alumnus (hidden on review pages) ────────── */}
+      {!hideAlumni && <div
         style={{
           background: 'linear-gradient(135deg,#0B1D35,#142540)',
           border: '1px solid rgba(201,146,42,0.25)',
@@ -204,7 +205,7 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
             </button>
           </form>
         )}
-      </div>
+      </div>}
 
       {/* ── Card 2: Get Full Program Details ──────────────────────────────── */}
       <div

@@ -16,6 +16,7 @@ import UniversityEndCta from '@/components/blog-cta/UniversityEndCta'
 import { BLOG_CTA_BUNDLES } from '@/lib/university-blog-cta'
 import { getUniversityFromBlog } from '@/lib/internal-links'
 import BlogRelatedLinks from '@/components/BlogRelatedLinks'
+import WhatsAppSticky from '@/components/WhatsAppSticky'
 import { pageKeywords } from '@/lib/page-keywords'
 
 // Inject a mid-article CTA marker right before the next <h2> after a given
@@ -468,10 +469,12 @@ export default async function BlogPostPage({ params }: Props) {
                 <BlogContentWithCTAs html={contentWithIds} midCtaConfig={ctaConfig} />
               </div>
 
-              {/* In-article lead form */}
-              <section className="mb-6">
-                <BlogLeadForm title={post.ctaTitle} desc={post.ctaDesc} />
-              </section>
+              {/* In-article lead form (hidden on review pages with university CTA bundle) */}
+              {!ctaConfig && (
+                <section className="mb-6">
+                  <BlogLeadForm title={post.ctaTitle} desc={post.ctaDesc} />
+                </section>
+              )}
 
               {/* Tags strip */}
               <div className="bg-white rounded-2xl border border-border p-5 mb-6 flex flex-wrap gap-2 items-center">
@@ -583,7 +586,7 @@ export default async function BlogPostPage({ params }: Props) {
 
               {/* Talk to Alumnus + Program Details — hidden on mobile (in-article form handles mobile) */}
               <div className="hidden lg:contents">
-                <BlogSidebarWidgets postTitle={post.title} quickFacts={BLOG_QUICK_FACTS[post.slug]} />
+                <BlogSidebarWidgets postTitle={post.title} quickFacts={BLOG_QUICK_FACTS[post.slug]} hideAlumni={!!ctaConfig} />
               </div>
 
               {/* Related universities */}
@@ -669,6 +672,9 @@ export default async function BlogPostPage({ params }: Props) {
 
           </div>
         </div>
+
+        {/* WhatsApp sticky on review pages */}
+        {ctaConfig && <WhatsAppSticky universityName={ctaConfig.universityName} />}
 
         {/* ── Footer CTA ────────────────────────────────────────────────── */}
         <footer className="bg-white border-t border-border mt-8">

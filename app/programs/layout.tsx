@@ -1,6 +1,7 @@
 // app/programs/layout.tsx
 // SEO metadata for the Programs Index page
 import type { Metadata } from 'next'
+import WhatsAppSticky from '@/components/WhatsAppSticky'
 
 export const metadata: Metadata = {
   // Note: root layout template appends ' | Edify' — do NOT add it here
@@ -19,5 +20,10 @@ export const metadata: Metadata = {
 }
 
 export default function ProgramsLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
+  return (
+    <>
+      {children}
+      <WhatsAppSticky />
+    </>
+  )
 }

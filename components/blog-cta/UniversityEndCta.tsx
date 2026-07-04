@@ -2,20 +2,12 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { CheckCircle2, Send, MessageCircle, Clock } from 'lucide-react'
+import { CheckCircle2, Send, MessageCircle } from 'lucide-react'
 import type { UniversityBlogCtaConfig } from '@/lib/university-blog-cta'
-
-const TIME_OPTIONS = [
-  { value: 'morning', label: 'Morning (9 AM – 12 PM)' },
-  { value: 'afternoon', label: 'Afternoon (12 PM – 4 PM)' },
-  { value: 'evening', label: 'Evening (4 PM – 8 PM)' },
-  { value: 'anytime', label: 'Anytime' },
-]
 
 export default function UniversityEndCta({ config }: { config: UniversityBlogCtaConfig }) {
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
-  const [bestTime, setBestTime] = useState('')
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle')
 
   const tagBase = config.sourceNamespace ? `${config.sourceNamespace}_end_close` : 'end_close'
@@ -33,7 +25,6 @@ export default function UniversityEndCta({ config }: { config: UniversityBlogCta
           phone: phone.trim(),
           program: 'MBA',
           preferredUniversity: config.universityName,
-          bestTimeToCall: bestTime || 'anytime',
           sourcePage: tagBase,
           source: tagBase,
         }),
@@ -90,7 +81,7 @@ export default function UniversityEndCta({ config }: { config: UniversityBlogCta
             </div>
             <h3 className="text-white font-bold text-lg mb-1.5">Thanks {name.split(' ')[0] || 'there'}, got it.</h3>
             <p className="text-sm" style={{ color: 'rgba(255,255,255,0.7)' }}>
-              An Edify counsellor will call you {bestTime ? `during ${TIME_OPTIONS.find((o) => o.value === bestTime)?.label.split(' (')[0].toLowerCase()}` : 'within 1 hour'}. Zero spam, promise.
+              Details on WhatsApp within 1 hour. Zero spam, promise.
             </p>
             <a
               href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'}?text=${encodeURIComponent(`Hi! I'm ${name} and I'm considering ${config.shortName} Online MBA. Please call me.`)}`}
@@ -140,49 +131,25 @@ export default function UniversityEndCta({ config }: { config: UniversityBlogCta
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-3">
-              <div className="relative">
-                <Clock size={16} className="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: 'rgba(255,255,255,0.4)' }} />
-                <select
-                  value={bestTime}
-                  onChange={(e) => setBestTime(e.target.value)}
-                  className="w-full pl-10 pr-8 py-3 rounded-xl text-sm appearance-none focus:outline-none focus:ring-2 focus:ring-amber/40 cursor-pointer"
-                  style={{
-                    background: 'rgba(255,255,255,0.06)',
-                    border: '1px solid rgba(255,255,255,0.12)',
-                    color: bestTime ? '#fff' : 'rgba(255,255,255,0.4)',
-                  }}
-                  data-cta={`${tagBase}_besttime`}
-                >
-                  <option value="">Best time to call (optional)</option>
-                  {TIME_OPTIONS.map((o) => (
-                    <option key={o.value} value={o.value} style={{ color: '#0B1D35' }}>
-                      {o.label}
-                    </option>
-                  ))}
-                </select>
-                <span className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-xs" style={{ color: 'rgba(255,255,255,0.4)' }}>▼</span>
-              </div>
-              <button
-                type="submit"
-                disabled={status === 'submitting'}
-                className="flex items-center justify-center gap-1.5 px-6 py-3 rounded-xl text-sm font-bold transition-opacity hover:opacity-90 disabled:opacity-50 cursor-pointer"
-                style={{ background: 'linear-gradient(135deg,#c9922a,#e0a93a)', color: '#0B1D35' }}
-                data-cta={`${tagBase}_submit`}
-              >
-                {status === 'submitting' ? (
-                  <span className="w-4 h-4 border-2 border-navy/30 border-t-navy rounded-full animate-spin" />
-                ) : (
-                  <>
-                    {config.endSubmitLabel}
-                    <Send size={14} />
-                  </>
-                )}
-              </button>
-            </div>
+            <button
+              type="submit"
+              disabled={status === 'submitting'}
+              className="w-full flex items-center justify-center gap-1.5 px-6 py-3 rounded-xl text-sm font-bold transition-opacity hover:opacity-90 disabled:opacity-50 cursor-pointer"
+              style={{ background: 'linear-gradient(135deg,#c9922a,#e0a93a)', color: '#0B1D35' }}
+              data-cta={`${tagBase}_submit`}
+            >
+              {status === 'submitting' ? (
+                <span className="w-4 h-4 border-2 border-navy/30 border-t-navy rounded-full animate-spin" />
+              ) : (
+                <>
+                  Get My Fee Sheet + Discount Code
+                  <Send size={14} />
+                </>
+              )}
+            </button>
 
             <p className="text-[11px] text-center pt-1" style={{ color: 'rgba(255,255,255,0.4)' }}>
-              Free · No spam · Edify earns zero commission from any university
+              Free. No spam. Edify earns zero commission from any university.
             </p>
           </form>
         )}

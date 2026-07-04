@@ -114,7 +114,7 @@ export const MUJ_CONFIG: UniversityBlogCtaConfig = {
     },
   ],
 
-  endHeading: 'Ready to apply to MUJ Online?',
+  endHeading: 'Deciding on MUJ Online?',
   endSubheading: "Before you click 'Apply Now' on the official portal, talk to us first.",
   endSubmitLabel: 'Talk to Counsellor',
   endTrustBullets: [
@@ -168,7 +168,7 @@ export const AMITY_CONFIG: UniversityBlogCtaConfig = {
     },
   ],
 
-  endHeading: 'Ready to apply to Amity Online?',
+  endHeading: 'Deciding on Amity Online?',
   endSubheading: "Before you click 'Apply Now' on the official portal, talk to us first.",
   endSubmitLabel: 'Talk to Counsellor',
   endTrustBullets: [

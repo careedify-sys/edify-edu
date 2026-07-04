@@ -57,7 +57,7 @@ export default function BlogSidebarForm({ postTitle, compact = false }: Props) {
         <CheckCircle className="w-8 h-8 text-green-500 mx-auto mb-2" />
         <div className="font-bold text-navy text-sm mb-1">Thank you, {name.trim()}!</div>
         <p className="text-xs text-ink-3 leading-relaxed mb-3">
-          Our advisor will call you within <strong>1 hour</strong>.
+          Details on WhatsApp within <strong>1 hour</strong>.
         </p>
         <a
           href={`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(`Hi! I'm ${name.trim()}, interested in ${program || 'online degrees'}. Please guide me.`)}`}
@@ -155,7 +155,7 @@ export default function BlogSidebarForm({ postTitle, compact = false }: Props) {
         </button>
 
         <p className="text-[9px] text-slate-500 text-center leading-relaxed">
-          Free · No spam · Counsellor replies within 1 hour
+          Free · No spam · Details on WhatsApp within 1 hour
         </p>
       </form>
 

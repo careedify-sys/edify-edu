@@ -77,7 +77,7 @@ export default function BlogLeadForm({
         </div>
         <h3 className="text-xl font-bold text-navy mb-2">Enquiry Received!</h3>
         <p className="text-ink-3 text-sm mb-4">
-          Our advisor will reach out within <strong>1 hour</strong> to guide you.
+          Details on WhatsApp within <strong>1 hour</strong>.
         </p>
         <a
           href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'}?text=${encodeURIComponent(`Hi! I'm ${form.name}, interested in ${form.program}. Please guide me.`)}`}
@@ -186,7 +186,7 @@ export default function BlogLeadForm({
           </button>
 
           <p className="text-center text-[10px] text-white/40">
-            Free · No spam · Advisor responds within 1 hour
+            Free · No spam · Details on WhatsApp within 1 hour
           </p>
         </form>
       </div>

@@ -42,7 +42,7 @@ function InlineLeadForm() {
     return (
       <div className="my-8 rounded-2xl bg-green-50 border border-green-200 p-8 text-center">
         <div className="text-3xl mb-3">Done!</div>
-        <p className="text-sm font-bold text-green-800 mb-1">Our counsellor will call you within 1 hour.</p>
+        <p className="text-sm font-bold text-green-800 mb-1">Details on WhatsApp within 1 hour.</p>
         <p className="text-xs text-green-600">Free call. No obligation. No spam.</p>
       </div>
     )

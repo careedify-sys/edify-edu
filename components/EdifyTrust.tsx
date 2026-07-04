@@ -100,7 +100,7 @@ export default function EdifyTrust({ compact = false }: { compact?: boolean }) {
           {/* Bottom CTA */}
           <div className="text-center">
             <div className="text-xs mb-3.5" style={{ color:'rgba(255,255,255,0.65)' }}>
-              ✓ Free · No spam &nbsp;·&nbsp; ✓ Advisor responds within 1 hour &nbsp;·&nbsp; ✓ No obligation
+              ✓ Free · No spam &nbsp;·&nbsp; ✓ Details on WhatsApp within 1 hour &nbsp;·&nbsp; ✓ No obligation
             </div>
             <button onClick={() => setOpen(true)} style={{ padding:'14px 32px',borderRadius:'var(--r-sm)', background:'linear-gradient(135deg,#c9922a,#e0a93a)', color:'#fff',fontWeight:700,fontSize:14,border:'none',cursor:'pointer', boxShadow:'0 4px 24px rgba(201,146,42,0.4)' }}>
               Speak with an Advisor →
