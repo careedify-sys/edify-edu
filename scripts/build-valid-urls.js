@@ -45,6 +45,33 @@ function loadRedirectSourceDenylist() {
 }
 const REDIRECT_SOURCES = loadRedirectSourceDenylist()
 
+// MBA spec slugs that redirect to canonical shorter slugs (Sprint 4, next.config.js).
+// When the Excel carries a verbose slug, replace it with the canonical target so the
+// sitemap emits only 200-status URLs. Map values are the canonical spec slug.
+const SPEC_SLUG_CANONICAL = {
+  'marketing-management': 'marketing',
+  'data-science-analytics': 'data-science',
+  'financial-management': 'finance',
+  'international-business-management': 'international-business',
+  'entrepreneurship-management': 'entrepreneurship',
+  'entrepreneurship-innovation-management': 'entrepreneurship',
+  'human-resource-management': 'hr-management',
+  'information-technology-it': 'it-management',
+  'information-technology': 'it-management',
+  'digital-marketing-management': 'digital-marketing',
+  'digital-marketing-sales': 'digital-marketing',
+  'hospital-healthcare-management': 'healthcare-management',
+  'operations-management': 'operations',
+  'retail-management': 'retail',
+  'logistics-supply-chain-management': 'supply-chain-management',
+}
+
+// Universities whose MBA spec pages redirect (no programDetails.MBA in data.ts).
+const NO_MBA_DATA_UNIS = new Set([
+  'madurai-kamaraj-university-online',
+  'university-of-mumbai-online',
+])
+
 // Static pages always in sitemap
 const STATIC_URLS = [
   '/',
@@ -149,6 +176,15 @@ for (const row of rows) {
   if (!VALID_PROGRAMS.has(program)) { skipped++; continue }
   if (REDIRECT_SOURCES.has(uniSlug)) { skipped++; continue }
 
+  // Skip MBA spec pages for universities without MBA data (pages redirect)
+  if (program === 'mba' && specSlug && NO_MBA_DATA_UNIS.has(uniSlug)) { skipped++; continue }
+
+  // Canonicalize verbose MBA spec slugs that are redirect sources
+  let finalSpecSlug = specSlug
+  if (program === 'mba' && specSlug && SPEC_SLUG_CANONICAL[specSlug]) {
+    finalSpecSlug = SPEC_SLUG_CANONICAL[specSlug]
+  }
+
   processed++
   uniSlugs.add(uniSlug)
   uniProgPairs.add(`${uniSlug}/${program}`)
@@ -157,13 +193,13 @@ for (const row of rows) {
   manifest.push({
     university_slug: uniSlug,
     program,
-    spec_slug: specSlug,
+    spec_slug: finalSpecSlug,
     spec_name: specName,
   })
 
-  if (specSlug) {
-    uniSpecTriples.add(`${uniSlug}/${program}/${specSlug}`)
-    programSpecs.add(`${program}/${specSlug}`)
+  if (finalSpecSlug) {
+    uniSpecTriples.add(`${uniSlug}/${program}/${finalSpecSlug}`)
+    programSpecs.add(`${program}/${finalSpecSlug}`)
   }
 }
 

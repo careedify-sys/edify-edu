@@ -26,6 +26,24 @@ import { CGPA_VALUES } from './tools/cgpa-calculator/[value]/data'
 import { COUPON_PAGE_SLUGS } from '@/lib/coupon-pages'
 import { RESCUED_PROGRAM_PATHS } from '@/lib/seo/rescued-pages'
 
+// MBA spec slugs that are redirect sources (Sprint 4, next.config.js).
+// Safety net: even if valid-urls.json contains stale entries, the sitemap
+// will not emit URLs that return 3xx.
+const REDIRECT_SPEC_SLUGS = new Set([
+  'marketing-management', 'data-science-analytics', 'financial-management',
+  'international-business-management', 'entrepreneurship-management',
+  'entrepreneurship-innovation-management', 'human-resource-management',
+  'information-technology-it', 'information-technology',
+  'digital-marketing-management', 'digital-marketing-sales',
+  'hospital-healthcare-management', 'operations-management',
+  'retail-management', 'logistics-supply-chain-management',
+])
+
+const NO_MBA_DATA_UNIS = new Set([
+  'madurai-kamaraj-university-online',
+  'university-of-mumbai-online',
+])
+
 // Verify slugs: static list pre-built from Supabase (run: npx tsx scripts/build-verify-slugs.ts)
 // Falls back to empty array when JSON is absent — never breaks the build.
 function loadVerifySlugs(): string[] {
@@ -110,6 +128,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .filter(path => {
       // Remove /programs/{prog}/{spec} (3-segment program paths)
       if (/^\/programs\/[^/]+\/[^/]+$/.test(path)) return false
+
+      // Remove MBA spec pages whose spec slug is a redirect source
+      const specMatch = path.match(/^\/universities\/([^/]+)\/mba\/([^/]+)$/)
+      if (specMatch) {
+        if (NO_MBA_DATA_UNIS.has(specMatch[1])) return false
+        if (REDIRECT_SPEC_SLUGS.has(specMatch[2])) return false
+      }
 
       return true
     })
