@@ -510,11 +510,11 @@ const nextConfig = {
             key: 'Content-Security-Policy',
             value: [
               "default-src 'self'",
-              `script-src 'self' 'unsafe-inline' ${process.env.NODE_ENV === 'development' ? "'unsafe-eval'" : ""} https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://connect.facebook.net https://api.web3forms.com https://cdnjs.cloudflare.com https://embed.tawk.to https://*.tawk.to`,
+              `script-src 'self' 'unsafe-inline' ${process.env.NODE_ENV === 'development' ? "'unsafe-eval'" : ""} https://www.googletagmanager.com https://www.google-analytics.com https://*.clarity.ms https://connect.facebook.net https://static.cloudflareinsights.com https://api.web3forms.com https://cdnjs.cloudflare.com https://embed.tawk.to https://*.tawk.to`,
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.tawk.to",
               "font-src 'self' https://fonts.gstatic.com https://*.tawk.to",
               "img-src 'self' data: https:",
-              "connect-src 'self' https://api.web3forms.com https://api.anthropic.com https://api.github.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net https://www.clarity.ms https://www.facebook.com https://*.tawk.to wss://*.tawk.to",
+              "connect-src 'self' https://api.web3forms.com https://api.anthropic.com https://api.github.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net https://*.clarity.ms https://cloudflareinsights.com https://*.cloudflareinsights.com https://www.facebook.com https://*.tawk.to wss://*.tawk.to",
               "frame-src https://www.youtube.com https://www.youtube-nocookie.com https://*.tawk.to",
               "frame-ancestors 'none'",
             ].join('; '),
