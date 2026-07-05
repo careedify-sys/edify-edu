@@ -190,8 +190,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Meta Pixel */}
         <script dangerouslySetInnerHTML={{ __html: `!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1006417241759882');fbq('track','PageView');` }} />
         {/* Google Analytics 4 + Google Ads */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QG3G3VLPX5" />
-        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QG3G3VLPX5');gtag('config','AW-17380291250');` }} />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MN1BR40RT9" />
+        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MN1BR40RT9');gtag('config','AW-17380291250');` }} />
         {/* Tawk.to live chat */}
         <script dangerouslySetInnerHTML={{ __html: `var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();(function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];s1.async=true;s1.src='https://embed.tawk.to/6a2a752d135ef41c3064d54e/1jqqtjf74';s1.charset='UTF-8';s1.setAttribute('crossorigin','*');s0.parentNode.insertBefore(s1,s0);})();` }} />
       </head>
