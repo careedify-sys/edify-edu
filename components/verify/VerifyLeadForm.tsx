@@ -10,7 +10,7 @@ interface Props {
 export function VerifyLeadForm({ universityName, universitySlug }: Props) {
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
-  const [status, setStatus] = useState<'idle' | 'sending' | 'done'>('idle')
+  const [status, setStatus] = useState<'idle' | 'sending' | 'done' | 'error'>('idle')
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -20,7 +20,7 @@ export function VerifyLeadForm({ universityName, universitySlug }: Props) {
     setStatus('sending')
 
     try {
-      await fetch('/api/enquiry', {
+      const res = await fetch('/api/enquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -31,9 +31,11 @@ export function VerifyLeadForm({ universityName, universitySlug }: Props) {
           source: 'verify_page_form',
         }),
       })
-    } catch { /* show success */ }
-
-    setStatus('done')
+      if (!res.ok) { setStatus('error'); return }
+      setStatus('done')
+    } catch {
+      setStatus('error')
+    }
   }
 
   if (status === 'done') {
@@ -42,6 +44,22 @@ export function VerifyLeadForm({ universityName, universitySlug }: Props) {
         <div style={{ fontSize: 28, marginBottom: 8 }}>Done!</div>
         <p style={{ fontSize: 14, fontWeight: 700, color: '#059669', marginBottom: 4 }}>Details on WhatsApp within 1 hour.</p>
         <p style={{ fontSize: 12, color: '#64748b' }}>Free call about {universityName}. No obligation.</p>
+      </div>
+    )
+  }
+
+  if (status === 'error') {
+    return (
+      <div style={{ padding: '24px 28px', textAlign: 'center' }}>
+        <p style={{ fontSize: 14, fontWeight: 700, color: '#0f172a', marginBottom: 8 }}>Couldn&apos;t submit right now</p>
+        <p style={{ fontSize: 12, color: '#64748b', marginBottom: 12 }}>Message us directly on WhatsApp instead.</p>
+        <a
+          href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'}?text=${encodeURIComponent(`Hi, I tried the form on edifyedu.in but it didn't go through. I want the fee sheet for ${universityName}.`)}`}
+          target="_blank" rel="noopener noreferrer"
+          style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '10px 18px', borderRadius: 10, fontSize: 13, fontWeight: 700, color: '#fff', background: '#25D366', textDecoration: 'none', border: 'none' }}
+        >
+          WhatsApp Us
+        </a>
       </div>
     )
   }

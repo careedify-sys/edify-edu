@@ -155,22 +155,30 @@ function UnlockModal({
     setError('')
     setLoading(true)
 
-    fetch('/api/enquiry', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: n, phone: p, email: em, state,
-        program: prog,
-        preferredUniversity: universityName,
-        universityId,
-        source: 'coupon_unlock',
-        timestamp: new Date().toISOString(),
-      }),
-    }).catch(() => {})
-
-    await new Promise(r => setTimeout(r, 700))
-    setLoading(false)
-    onSuccess()
+    try {
+      const res = await fetch('/api/enquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: n, phone: p, email: em, state,
+          program: prog,
+          preferredUniversity: universityName,
+          universityId,
+          source: 'coupon_unlock',
+          timestamp: new Date().toISOString(),
+        }),
+      })
+      if (!res.ok) {
+        setLoading(false)
+        setError(`Couldn't submit. WhatsApp us instead.`)
+        return
+      }
+      setLoading(false)
+      onSuccess()
+    } catch {
+      setLoading(false)
+      setError(`Couldn't submit. WhatsApp us instead.`)
+    }
   }
 
   const content = (
@@ -246,7 +254,20 @@ function UnlockModal({
             </select>
           </div>
 
-          {error && <p style={{ fontSize: 12, color: '#ef4444', margin: 0 }}>{error}</p>}
+          {error && (
+            <div style={{ textAlign: 'center', padding: '10px 12px', borderRadius: 10, background: '#fef2f2', border: '1px solid #fecaca' }}>
+              <p style={{ fontSize: 12, color: '#ef4444', margin: '0 0 8px', fontWeight: 600 }}>{error}</p>
+              {error.includes('WhatsApp') && (
+                <a
+                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'}?text=${encodeURIComponent(`Hi, I tried the form on edifyedu.in but it didn't go through. I want the fee sheet for ${universityName}.`)}`}
+                  target="_blank" rel="noopener noreferrer"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: 5, padding: '7px 14px', borderRadius: 8, fontSize: 12, fontWeight: 700, color: '#fff', background: '#25D366', textDecoration: 'none' }}
+                >
+                  WhatsApp Us
+                </a>
+              )}
+            </div>
+          )}
 
           <button
             type="submit"

@@ -19,9 +19,8 @@ export default function BlogSidebarForm({ postTitle, compact = false }: Props) {
   const [name,      setName]      = useState('')
   const [phone,     setPhone]     = useState('')
   const [program,   setProgram]   = useState('')
-  const [submitted, setSubmitted] = useState(false)
-  const [loading,   setLoading]   = useState(false)
-  const [error,     setError]     = useState('')
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+  const [error,  setError]  = useState('')
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -30,28 +29,30 @@ export default function BlogSidebarForm({ postTitle, compact = false }: Props) {
     if (!n) { setError('Please enter your name.'); return }
     if (p.length < 10) { setError('Please enter a valid 10-digit number.'); return }
     setError('')
-    setLoading(true)
+    setStatus('loading')
 
     const sourcePage = typeof window !== 'undefined' ? window.location.pathname : 'blog'
-    fetch('/api/enquiry', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: n,
-        phone: p,
-        program: program || 'General',
-        sourcePage,
-        source: 'blog_sidebar_form',
-        preferredUniversity: postTitle ? `Blog: ${postTitle}` : '',
-      }),
-    }).catch(() => {})
-
-    await new Promise(r => setTimeout(r, 600))
-    setLoading(false)
-    setSubmitted(true)
+    try {
+      const res = await fetch('/api/enquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: n,
+          phone: p,
+          program: program || 'General',
+          sourcePage,
+          source: 'blog_sidebar_form',
+          preferredUniversity: postTitle ? `Blog: ${postTitle}` : '',
+        }),
+      })
+      if (!res.ok) { setStatus('error'); return }
+      setStatus('success')
+    } catch {
+      setStatus('error')
+    }
   }
 
-  if (submitted) {
+  if (status === 'success') {
     return (
       <div className="rounded-2xl border border-green-200 bg-green-50 p-5 text-center">
         <CheckCircle className="w-8 h-8 text-green-500 mx-auto mb-2" />
@@ -65,6 +66,23 @@ export default function BlogSidebarForm({ postTitle, compact = false }: Props) {
           className="inline-flex items-center gap-1.5 text-xs text-ink-3 hover:text-green-600 transition-colors no-underline"
         >
           <MessageCircle size={12} /> Or chat on WhatsApp
+        </a>
+      </div>
+    )
+  }
+
+  if (status === 'error') {
+    return (
+      <div className="rounded-2xl border border-red-200 bg-red-50 p-5 text-center">
+        <div className="font-bold text-navy text-sm mb-2">Couldn&apos;t submit right now</div>
+        <p className="text-xs text-ink-3 leading-relaxed mb-3">Message us directly on WhatsApp instead.</p>
+        <a
+          href={`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(`Hi, I tried the form on edifyedu.in but it didn't go through. I want the fee sheet for ${program || 'online degrees'}.`)}`}
+          target="_blank" rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold text-white no-underline"
+          style={{ background: '#25D366' }}
+        >
+          <MessageCircle size={14} /> WhatsApp Us
         </a>
       </div>
     )
@@ -145,10 +163,10 @@ export default function BlogSidebarForm({ postTitle, compact = false }: Props) {
 
         {error && <p className="text-xs text-red-400 font-medium">{error}</p>}
 
-        <button type="submit" disabled={loading}
+        <button type="submit" disabled={status === 'loading'}
           className="w-full py-3 rounded-xl font-bold text-navy text-sm flex items-center justify-center gap-2 transition-all"
-          style={{ background: loading ? 'rgba(200,129,26,0.5)' : 'linear-gradient(135deg,#c9922a,#e0a93a)', cursor: loading ? 'not-allowed' : 'pointer' }}>
-          {loading
+          style={{ background: status === 'loading' ? 'rgba(200,129,26,0.5)' : 'linear-gradient(135deg,#c9922a,#e0a93a)', cursor: status === 'loading' ? 'not-allowed' : 'pointer' }}>
+          {status === 'loading'
             ? <><span className="w-4 h-4 border-2 border-navy/30 border-t-navy rounded-full animate-spin" />Sending…</>
             : <>Connect with an Advisor →</>
           }

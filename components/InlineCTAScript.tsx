@@ -31,7 +31,7 @@ export default function InlineCTAScript() {
       }
 
       try {
-        await fetch('/api/enquiry', {
+        const res = await fetch('/api/enquiry', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -43,8 +43,26 @@ export default function InlineCTAScript() {
             preferredUniversity: 'Inline Blog CTA: ' + source,
           }),
         })
+        if (!res.ok) throw new Error('API error')
       } catch (e) {
-        // Show success anyway — submission usually goes through
+        if (btn) { btn.textContent = 'Try Again'; btn.disabled = false }
+        const errorEl = document.getElementById('cta-' + source + '-error')
+        if (errorEl) {
+          errorEl.style.display = 'block'
+        } else {
+          const formEl = document.getElementById('cta-' + source + '-form')
+          if (formEl) {
+            const div = document.createElement('div')
+            div.id = 'cta-' + source + '-error'
+            div.style.cssText = 'text-align:center;padding:12px;margin-top:8px;border-radius:10px;background:#fef2f2;border:1px solid #fecaca'
+            div.innerHTML = '<p style="font-size:13px;font-weight:600;color:#0f172a;margin:0 0 8px">Couldn\'t submit right now</p>'
+              + '<a href="https://wa.me/' + (process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806')
+              + '?text=' + encodeURIComponent('Hi, I tried the form on edifyedu.in but it didn\'t go through. I want the fee sheet.')
+              + '" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:5px;padding:8px 16px;border-radius:8px;font-size:12px;font-weight:700;color:#fff;background:#25D366;text-decoration:none">WhatsApp Us</a>'
+            formEl.appendChild(div)
+          }
+        }
+        return
       }
 
       const formEl = document.getElementById('cta-' + source + '-form')

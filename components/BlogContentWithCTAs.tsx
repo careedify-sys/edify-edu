@@ -13,7 +13,7 @@ const CTA_BOX_RE = /<div class="cta-box"[\s\S]*?<\/div>/g
 const MID_CTA_RE = /<div class="blog-mid-cta-spot" data-variant="([\w-]+)"><\/div>/g
 
 function InlineLeadForm() {
-  const [status, setStatus] = useState<'idle' | 'sending' | 'done'>('idle')
+  const [status, setStatus] = useState<'idle' | 'sending' | 'done' | 'error'>('idle')
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
   const [program, setProgram] = useState('')
@@ -23,7 +23,7 @@ function InlineLeadForm() {
     if (!name.trim() || !phone.trim()) return
     setStatus('sending')
     try {
-      await fetch('/api/enquiry', {
+      const res = await fetch('/api/enquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -34,8 +34,11 @@ function InlineLeadForm() {
           source: 'blog_inline_form',
         }),
       })
-    } catch { /* show success anyway */ }
-    setStatus('done')
+      if (!res.ok) { setStatus('error'); return }
+      setStatus('done')
+    } catch {
+      setStatus('error')
+    }
   }
 
   if (status === 'done') {
@@ -44,6 +47,22 @@ function InlineLeadForm() {
         <div className="text-3xl mb-3">Done!</div>
         <p className="text-sm font-bold text-green-800 mb-1">Details on WhatsApp within 1 hour.</p>
         <p className="text-xs text-green-600">Free call. No obligation. No spam.</p>
+      </div>
+    )
+  }
+
+  if (status === 'error') {
+    return (
+      <div className="my-8 rounded-2xl bg-red-50 border border-red-200 p-8 text-center">
+        <p className="text-sm font-bold text-slate-800 mb-3">Couldn&apos;t submit right now. Message us directly on WhatsApp instead.</p>
+        <a
+          href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'}?text=${encodeURIComponent(`Hi, I tried the form on edifyedu.in but it didn't go through. I want the fee sheet for ${program || 'online degrees'}.`)}`}
+          target="_blank" rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold text-white no-underline"
+          style={{ background: '#25D366' }}
+        >
+          WhatsApp Us
+        </a>
       </div>
     )
   }

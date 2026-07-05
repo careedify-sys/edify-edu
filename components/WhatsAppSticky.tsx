@@ -13,10 +13,10 @@ export default function WhatsAppSticky({ universityName }: { universityName?: st
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
-      className="fixed z-50 flex items-center gap-2 rounded-full shadow-xl transition-transform hover:scale-105 active:scale-95 no-underline"
+      className="fixed z-40 flex items-center gap-2 rounded-full shadow-xl transition-transform hover:scale-105 active:scale-95 no-underline"
       style={{
-        bottom: 24,
-        right: 24,
+        bottom: 16,
+        left: 16,
         background: '#25D366',
         padding: '12px 18px',
       }}

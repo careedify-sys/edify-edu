@@ -35,7 +35,7 @@ export default function BlogLeadForm({
   couponCode?: string
 }) {
   const uid = useId()
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle')
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
   const [form, setForm] = useState({
     name: '',
     phone: '',
@@ -49,7 +49,7 @@ export default function BlogLeadForm({
     setStatus('submitting')
 
     try {
-      await fetch('/api/enquiry', {
+      const res = await fetch('/api/enquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -62,11 +62,11 @@ export default function BlogLeadForm({
           ...(couponCode ? { couponCode } : {}),
         }),
       })
+      if (!res.ok) { setStatus('error'); return }
+      setStatus('success')
     } catch {
-      // show success regardless
+      setStatus('error')
     }
-
-    setStatus('success')
   }
 
   if (status === 'success') {
@@ -87,6 +87,24 @@ export default function BlogLeadForm({
         >
           <MessageCircle size={13} />
           Or chat on WhatsApp for faster reply
+        </a>
+      </div>
+    )
+  }
+
+  if (status === 'error') {
+    return (
+      <div className="bg-red-50 border border-red-200 rounded-2xl p-8 text-center">
+        <h3 className="text-lg font-bold text-navy mb-2">Couldn&apos;t submit right now</h3>
+        <p className="text-ink-3 text-sm mb-4">Message us directly on WhatsApp instead.</p>
+        <a
+          href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'}?text=${encodeURIComponent(`Hi, I tried the form on edifyedu.in but it didn't go through. I want the fee sheet for ${form.program || 'online degrees'}.`)}`}
+          target="_blank" rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold text-white no-underline"
+          style={{ background: '#25D366' }}
+        >
+          <MessageCircle size={15} />
+          WhatsApp Us
         </a>
       </div>
     )

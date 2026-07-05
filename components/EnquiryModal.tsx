@@ -25,7 +25,7 @@ interface EnquiryModalProps {
 
 const PROGRAMS = ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'B.Com', 'MA', 'M.Com', 'MSc', 'BSc', 'Not sure yet']
 
-type Step = 'form' | 'submitting' | 'success'
+type Step = 'form' | 'submitting' | 'success' | 'error'
 
 export default function EnquiryModal({
   isOpen,
@@ -99,7 +99,7 @@ export default function EnquiryModal({
     const sourceFinal = sourcePage || (typeof window !== 'undefined' ? window.location.pathname : 'website')
 
     try {
-      await fetch('/api/enquiry', {
+      const res = await fetch('/api/enquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -113,8 +113,8 @@ export default function EnquiryModal({
           ...(form.couponCode.trim() ? { couponCode: form.couponCode.trim().toUpperCase() } : {}),
         }),
       })
+      if (!res.ok) { setStep('error'); return }
 
-      // GA4 tracking
       if (typeof window !== 'undefined' && (window as any).gtag) {
         ;(window as any).gtag('event', 'generate_lead', {
           university: form.preferredUniversity || universityName || 'Not specified',
@@ -126,12 +126,7 @@ export default function EnquiryModal({
       setStep('success')
       onSuccess?.()
     } catch {
-      // Show success anyway — partial saves may have occurred. Fire onSuccess
-      // here too so the caller's gated UI (e.g. coupon code reveal) unlocks,
-      // since the lead was attempted in good faith and the API may have saved
-      // it before the network error surfaced.
-      setStep('success')
-      onSuccess?.()
+      setStep('error')
     }
   }
 
@@ -402,13 +397,43 @@ export default function EnquiryModal({
               Done
             </button>
 
-            {/* Optional WhatsApp link */}
             <button
               onClick={openWhatsApp}
               className="flex items-center justify-center gap-1.5 text-xs text-slate-400 hover:text-green-600 transition-colors mx-auto"
             >
               <MessageCircle className="w-3.5 h-3.5" />
               Or chat on WhatsApp for faster reply
+            </button>
+          </div>
+        )}
+
+        {/* ── ERROR ── */}
+        {step === 'error' && (
+          <div className="px-6 py-8 text-center">
+            <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <X className="w-9 h-9 text-red-500" />
+            </div>
+            <h3 className="font-display text-lg font-bold text-slate-900 mb-2">
+              Couldn&apos;t submit right now
+            </h3>
+            <p className="text-sm text-slate-500 mb-6 leading-relaxed">
+              Message us directly on WhatsApp instead.
+            </p>
+            <a
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'}?text=${encodeURIComponent(`Hi, I tried the form on edifyedu.in but it didn't go through. I want the fee sheet for ${form.preferredUniversity || universityName || 'online degrees'}${form.program ? ` ${form.program}` : ''}.`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-bold text-sm text-white no-underline mb-3"
+              style={{ background: '#25D366' }}
+            >
+              <MessageCircle className="w-4 h-4" />
+              WhatsApp Us
+            </a>
+            <button
+              onClick={() => setStep('form')}
+              className="text-xs text-slate-400 hover:text-slate-600 transition-colors"
+            >
+              Try again
             </button>
           </div>
         )}

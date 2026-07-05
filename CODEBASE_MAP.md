@@ -132,7 +132,7 @@ lib/data/page-content/
 | `Navbar` | Top nav. Desktop + mobile. Links: Universities, Compare, Fees, Guides, Verify |
 | `Footer` | Site footer |
 | `BottomNav` | Mobile sticky bottom nav |
-| `WhatsAppFloat` | WhatsApp floating button |
+| `WhatsAppSticky` | WhatsApp floating button (bottom-left) |
 
 ---
 

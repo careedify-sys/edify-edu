@@ -50,6 +50,7 @@ export default function MobileLeadNudge() {
   const [phone, setPhone] = useState('')
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [submitError, setSubmitError] = useState(false)
   const [context, setContext] = useState({ university: '', program: '' })
 
   useEffect(() => {
@@ -115,7 +116,7 @@ export default function MobileLeadNudge() {
     setLoading(true)
 
     try {
-      await fetch('/api/enquiry', {
+      const res = await fetch('/api/enquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -127,7 +128,10 @@ export default function MobileLeadNudge() {
           source: 'mobile_nudge',
         }),
       })
-    } catch { /* show success */ }
+      if (!res.ok) { setLoading(false); setSubmitError(true); return }
+    } catch {
+      setLoading(false); setSubmitError(true); return
+    }
 
     if (typeof (window as any).gtag === 'function') {
       (window as any).gtag('event', 'generate_lead', { source: 'mobile_nudge' })
@@ -172,6 +176,19 @@ export default function MobileLeadNudge() {
             <div className="text-2xl mb-2">Done!</div>
             <p className="text-sm font-bold text-slate-800">Our counsellor will reach you within 1 hour.</p>
             <p className="text-xs text-slate-400 mt-1">Free call. No obligation. Real advice.</p>
+          </div>
+        ) : submitError ? (
+          <div className="text-center py-2">
+            <p className="text-sm font-bold text-slate-800 mb-2">Couldn&apos;t submit right now</p>
+            <a
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'}?text=${encodeURIComponent(`Hi, I tried the form on edifyedu.in but it didn't go through. I want the fee sheet for ${context.university || context.program || 'online degrees'}.`)}`}
+              target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold text-white no-underline"
+              style={{ background: '#25D366' }}
+            >
+              <MessageCircle size={14} />
+              WhatsApp Us instead
+            </a>
           </div>
         ) : (
           <>

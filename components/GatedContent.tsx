@@ -28,6 +28,7 @@ export default function GatedContent({
   hints = DEFAULT_HINTS, feeMin, feeMax, emiFrom,
 }: GatedContentProps) {
   const [unlocked, setUnlocked] = useState(false)
+  const [submitError, setSubmitError] = useState(false)
   const [form, setForm] = useState({ name: '', phone: '', email: '' })
   const [submitting, setSubmitting] = useState(false)
   const [errors, setErrors] = useState<Record<string,string>>({})
@@ -44,9 +45,9 @@ export default function GatedContent({
   async function handleSubmit() {
     const e = validate()
     if (Object.keys(e).length) { setErrors(e); return }
-    setSubmitting(true); setErrors({})
+    setSubmitting(true); setErrors({}); setSubmitError(false)
     try {
-      await fetch('/api/enquiry', {
+      const res = await fetch('/api/enquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -54,9 +55,13 @@ export default function GatedContent({
           program: programName, source: 'gated_scholarship',
         }),
       })
-    } catch {}
-    setSubmitting(false)
-    setUnlocked(true)
+      if (!res.ok) { setSubmitting(false); setSubmitError(true); return }
+      setSubmitting(false)
+      setUnlocked(true)
+    } catch {
+      setSubmitting(false)
+      setSubmitError(true)
+    }
   }
 
   return (
@@ -151,6 +156,19 @@ export default function GatedContent({
               >
                 {submitting ? 'Checking...' : <><Tag size={13}/> Reveal Scholarship Details →</>}
               </button>
+
+              {submitError && (
+                <div style={{ textAlign: 'center', marginTop: 10, padding: '10px 14px', borderRadius: 10, background: '#fef2f2', border: '1px solid #fecaca' }}>
+                  <div style={{ fontSize: 12, fontWeight: 600, color: '#0f172a', marginBottom: 6 }}>Couldn&apos;t submit right now</div>
+                  <a
+                    href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'}?text=${encodeURIComponent(`Hi, I tried the form on edifyedu.in but it didn't go through. I want the fee sheet for ${universityName} ${programName}.`)}`}
+                    target="_blank" rel="noopener noreferrer"
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: 5, padding: '8px 14px', borderRadius: 8, fontSize: 12, fontWeight: 700, color: '#fff', background: '#25D366', textDecoration: 'none' }}
+                  >
+                    WhatsApp Us instead
+                  </a>
+                </div>
+              )}
 
               <div style={{ textAlign: 'center', marginTop: 8, fontSize: 10, color: 'var(--ink-4)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 }}>
                 <Shield size={10}/> Your details are shared only with your advisor — never sold

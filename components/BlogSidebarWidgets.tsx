@@ -29,12 +29,14 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
   // ── Alumni card state ────────────────────────────────────────────────────
   const uid = useId()
   const [alumniDone, setAlumniDone] = useState(false)
+  const [alumniError, setAlumniError] = useState(false)
   const [alumniName, setAlumniName] = useState('')
   const [alumniPhone, setAlumniPhone] = useState('')
   const [alumniLoading, setAlumniLoading] = useState(false)
 
   // ── Program details form state ───────────────────────────────────────────
   const [formDone, setFormDone] = useState(false)
+  const [formError, setFormError] = useState(false)
   const [formName, setFormName] = useState('')
   const [formPhone, setFormPhone] = useState('')
   const [formSpec, setFormSpec] = useState('')
@@ -47,21 +49,27 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
     const p = alumniPhone.trim().replace(/\D/g, '')
     if (!n || p.length < 10) return
     setAlumniLoading(true)
+    setAlumniError(false)
 
-    await fetch('/api/enquiry', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: n,
-        phone: p,
-        sourcePage: typeof window !== 'undefined' ? window.location.pathname : 'blog',
-        source: 'blog_sidebar_alumni',
-        preferredUniversity: postTitle ? `Talk to Alumni: ${postTitle}` : 'Talk to Alumni',
-      }),
-    }).catch(() => {})
-
-    setAlumniLoading(false)
-    setAlumniDone(true)
+    try {
+      const res = await fetch('/api/enquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: n,
+          phone: p,
+          sourcePage: typeof window !== 'undefined' ? window.location.pathname : 'blog',
+          source: 'blog_sidebar_alumni',
+          preferredUniversity: postTitle ? `Talk to Alumni: ${postTitle}` : 'Talk to Alumni',
+        }),
+      })
+      setAlumniLoading(false)
+      if (!res.ok) { setAlumniError(true); return }
+      setAlumniDone(true)
+    } catch {
+      setAlumniLoading(false)
+      setAlumniError(true)
+    }
   }
 
   // ── Program details submit ───────────────────────────────────────────────
@@ -71,22 +79,28 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
     const p = formPhone.trim().replace(/\D/g, '')
     if (!n || p.length < 10) return
     setFormLoading(true)
+    setFormError(false)
 
-    await fetch('/api/enquiry', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: n,
-        phone: p,
-        program: formSpec || 'General',
-        sourcePage: typeof window !== 'undefined' ? window.location.pathname : 'blog',
-        source: 'blog_sidebar_details',
-        preferredUniversity: postTitle ? `Program Details: ${postTitle}` : 'Program Details',
-      }),
-    }).catch(() => {})
-
-    setFormLoading(false)
-    setFormDone(true)
+    try {
+      const res = await fetch('/api/enquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: n,
+          phone: p,
+          program: formSpec || 'General',
+          sourcePage: typeof window !== 'undefined' ? window.location.pathname : 'blog',
+          source: 'blog_sidebar_details',
+          preferredUniversity: postTitle ? `Program Details: ${postTitle}` : 'Program Details',
+        }),
+      })
+      setFormLoading(false)
+      if (!res.ok) { setFormError(true); return }
+      setFormDone(true)
+    } catch {
+      setFormLoading(false)
+      setFormError(true)
+    }
   }
 
   return (
@@ -153,6 +167,17 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
             <div style={{ color: '#94a3b8', fontSize: 12, lineHeight: 1.6 }}>
               We will connect you with a graduate on WhatsApp shortly.
             </div>
+          </div>
+        ) : alumniError ? (
+          <div style={{ padding: '12px 20px 18px', textAlign: 'center' }}>
+            <div style={{ color: '#fff', fontWeight: 700, fontSize: 13, marginBottom: 8 }}>Couldn&apos;t submit right now</div>
+            <a
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'}?text=${encodeURIComponent(`Hi, I tried the form on edifyedu.in but it didn't go through. I want to talk to an alumni.`)}`}
+              target="_blank" rel="noopener noreferrer"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 5, padding: '8px 14px', borderRadius: 8, fontSize: 12, fontWeight: 700, color: '#fff', background: '#25D366', textDecoration: 'none' }}
+            >
+              WhatsApp Us instead
+            </a>
           </div>
         ) : (
           <form onSubmit={handleAlumniSubmit} style={{ padding: '0 16px 18px', display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -233,6 +258,17 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
             <div style={{ color: '#64748b', fontSize: 12, lineHeight: 1.6 }}>
               We will reach out on WhatsApp shortly with full fee structure and syllabus.
             </div>
+          </div>
+        ) : formError ? (
+          <div style={{ padding: '20px', textAlign: 'center' }}>
+            <div style={{ color: '#0B1D35', fontWeight: 700, fontSize: 13, marginBottom: 8 }}>Couldn&apos;t submit right now</div>
+            <a
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'}?text=${encodeURIComponent(`Hi, I tried the form on edifyedu.in but it didn't go through. I want program details.`)}`}
+              target="_blank" rel="noopener noreferrer"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 5, padding: '8px 14px', borderRadius: 8, fontSize: 12, fontWeight: 700, color: '#fff', background: '#25D366', textDecoration: 'none' }}
+            >
+              WhatsApp Us instead
+            </a>
           </div>
         ) : (
           <form onSubmit={handleFormSubmit} style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: 9 }}>

@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
 
   try {
     const body = await req.json()
-    const { name, phone, email, state, program, university, preferredUniversity, sourcePage, source, couponCode } = body
+    const { name, phone, email, state, program, university, preferredUniversity, sourcePage, source, couponCode, bestTimeToCall, notes, universityId } = body
 
     if (!name || !phone) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
@@ -68,6 +68,8 @@ export async function POST(req: NextRequest) {
               <tr><td style="padding:8px;background:#f8fafc;font-weight:600">University</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${universityValue}</td></tr>
               <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Source</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${sourceValue}</td></tr>
               ${couponCode ? `<tr><td style="padding:8px;background:#f8fafc;font-weight:600">Coupon</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${couponCode}</td></tr>` : ''}
+              ${bestTimeToCall ? `<tr><td style="padding:8px;background:#f8fafc;font-weight:600">Best Time</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${bestTimeToCall}</td></tr>` : ''}
+              ${notes ? `<tr><td style="padding:8px;background:#f8fafc;font-weight:600">Notes</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${notes}</td></tr>` : ''}
               <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Submitted At</td><td style="padding:8px">${timestamp}</td></tr>
             </table>
           </div>
@@ -91,6 +93,8 @@ export async function POST(req: NextRequest) {
           university: universityValue,
           sourcePage: sourceValue,
           couponCode: couponCode || '',
+          bestTimeToCall: bestTimeToCall || '',
+          notes: notes || '',
         }),
       }).catch(() => {}) // Non-blocking
     }

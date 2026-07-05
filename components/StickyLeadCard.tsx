@@ -64,26 +64,34 @@ export default function StickyLeadCard({ universityName, universityId, defaultPr
     setError('')
     setLoading(true)
 
-    fetch('/api/enquiry', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: n,
-        phone: p,
-        email: em,
-        state,
-        program: program || defaultProgram || 'General',
-        preferredUniversity: universityName,
-        universityId,
-        notes: notes.trim() || undefined,
-        source: 'sticky_card',
-        timestamp: new Date().toISOString(),
-      }),
-    }).catch(() => {})
-
-    await new Promise(r => setTimeout(r, 600))
-    setLoading(false)
-    setSubmitted(true)
+    try {
+      const res = await fetch('/api/enquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: n,
+          phone: p,
+          email: em,
+          state,
+          program: program || defaultProgram || 'General',
+          preferredUniversity: universityName,
+          universityId,
+          notes: notes.trim() || undefined,
+          source: 'sticky_card',
+          timestamp: new Date().toISOString(),
+        }),
+      })
+      if (!res.ok) {
+        setLoading(false)
+        setError(`Couldn't submit. WhatsApp us instead.`)
+        return
+      }
+      setLoading(false)
+      setSubmitted(true)
+    } catch {
+      setLoading(false)
+      setError(`Couldn't submit. WhatsApp us instead.`)
+    }
   }
 
   if (submitted) {
@@ -200,7 +208,21 @@ export default function StickyLeadCard({ universityName, universityId, defaultPr
           />
         )}
 
-        {error && <p className="text-xs text-red-500">{error}</p>}
+        {error && (
+          <div className="text-center p-2.5 rounded-xl bg-red-50 border border-red-200">
+            <p className="text-xs text-red-500 font-semibold mb-1.5">{error}</p>
+            {error.includes('WhatsApp') && (
+              <a
+                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'}?text=${encodeURIComponent(`Hi, I tried the form on edifyedu.in but it didn't go through. I want the fee sheet for ${universityName} ${program || defaultProgram || ''}.`.trim())}`}
+                target="_blank" rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white no-underline"
+                style={{ background: '#25D366' }}
+              >
+                WhatsApp Us
+              </a>
+            )}
+          </div>
+        )}
 
         <button
           type="submit"

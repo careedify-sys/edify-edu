@@ -8,7 +8,7 @@ import type { UniversityBlogCtaConfig } from '@/lib/university-blog-cta'
 export default function UniversityEndCta({ config }: { config: UniversityBlogCtaConfig }) {
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle')
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
 
   const tagBase = config.sourceNamespace ? `${config.sourceNamespace}_end_close` : 'end_close'
 
@@ -17,7 +17,7 @@ export default function UniversityEndCta({ config }: { config: UniversityBlogCta
     if (!name.trim() || !/^[6-9]\d{9}$/.test(phone)) return
     setStatus('submitting')
     try {
-      await fetch('/api/enquiry', {
+      const res = await fetch('/api/enquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -29,6 +29,7 @@ export default function UniversityEndCta({ config }: { config: UniversityBlogCta
           source: tagBase,
         }),
       })
+      if (!res.ok) { setStatus('error'); return }
       if (typeof window !== 'undefined' && (window as any).gtag) {
         (window as any).gtag('event', 'generate_lead', {
           university: config.universityName,
@@ -36,8 +37,10 @@ export default function UniversityEndCta({ config }: { config: UniversityBlogCta
           source: tagBase,
         })
       }
-    } catch { /* show success anyway */ }
-    setStatus('success')
+      setStatus('success')
+    } catch {
+      setStatus('error')
+    }
   }
 
   return (
@@ -92,6 +95,25 @@ export default function UniversityEndCta({ config }: { config: UniversityBlogCta
             >
               <MessageCircle size={13} />
               Or chat on WhatsApp for faster reply
+            </a>
+          </div>
+        ) : status === 'error' ? (
+          <div
+            className="rounded-xl p-5 text-center"
+            style={{ background: 'rgba(239,68,68,0.12)', border: '1px solid rgba(239,68,68,0.35)' }}
+          >
+            <p className="text-sm font-semibold text-white mb-3">
+              Couldn&apos;t submit right now. Message us directly on WhatsApp instead.
+            </p>
+            <a
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'}?text=${encodeURIComponent(`Hi, I tried the form on edifyedu.in but it didn't go through. I want the fee sheet for ${config.universityName} MBA.`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold no-underline"
+              style={{ background: '#25D366', color: '#fff' }}
+            >
+              <MessageCircle size={16} />
+              WhatsApp Us
             </a>
           </div>
         ) : (
