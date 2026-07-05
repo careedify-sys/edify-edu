@@ -1,5 +1,6 @@
 'use client'
-import { useState, useId } from 'react'
+import { useState, useId, useRef, useEffect } from 'react'
+import { trackEvent } from '@/lib/analytics'
 
 const SPECIALISATIONS = [
   'Marketing',
@@ -41,6 +42,25 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
   const [formPhone, setFormPhone] = useState('')
   const [formSpec, setFormSpec] = useState('')
   const [formLoading, setFormLoading] = useState(false)
+
+  // ── Analytics ────────────────────────────────────────────────────────────
+  const detailsFormRef = useRef<HTMLFormElement>(null)
+  const detailsViewTracked = useRef(false)
+  const detailsStartTracked = useRef(false)
+
+  useEffect(() => {
+    const el = detailsFormRef.current
+    if (!el) return
+    const obs = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting && !detailsViewTracked.current) {
+        detailsViewTracked.current = true
+        trackEvent('form_view', { form_component: 'BlogSidebarWidgets' })
+        obs.disconnect()
+      }
+    }, { threshold: 0.3 })
+    obs.observe(el)
+    return () => obs.disconnect()
+  }, [])
 
   // ── Alumni submit ────────────────────────────────────────────────────────
   async function handleAlumniSubmit(e: React.FormEvent) {
@@ -95,11 +115,13 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
         }),
       })
       setFormLoading(false)
-      if (!res.ok) { setFormError(true); return }
+      if (!res.ok) { setFormError(true); trackEvent('form_error', { form_component: 'BlogSidebarWidgets' }); return }
+      trackEvent('form_submit', { form_component: 'BlogSidebarWidgets' })
       setFormDone(true)
     } catch {
       setFormLoading(false)
       setFormError(true)
+      trackEvent('form_error', { form_component: 'BlogSidebarWidgets' })
     }
   }
 
@@ -271,7 +293,7 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
             </a>
           </div>
         ) : (
-          <form onSubmit={handleFormSubmit} style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: 9 }}>
+          <form ref={detailsFormRef} onSubmit={handleFormSubmit} onFocus={() => { if (!detailsStartTracked.current) { detailsStartTracked.current = true; trackEvent('form_start', { form_component: 'BlogSidebarWidgets' }) } }} style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: 9 }}>
             <input
               id={`${uid}-details-name`}
               name="name"

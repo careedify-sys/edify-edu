@@ -1,14 +1,32 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { CheckCircle2, Send, MessageCircle } from 'lucide-react'
 import type { UniversityBlogCtaConfig } from '@/lib/university-blog-cta'
+import { trackEvent } from '@/lib/analytics'
 
 export default function UniversityEndCta({ config }: { config: UniversityBlogCtaConfig }) {
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
+  const containerRef = useRef<HTMLDivElement>(null)
+  const viewTracked = useRef(false)
+  const startTracked = useRef(false)
+
+  useEffect(() => {
+    const el = containerRef.current
+    if (!el) return
+    const obs = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting && !viewTracked.current) {
+        viewTracked.current = true
+        trackEvent('form_view', { form_component: 'UniversityEndCta' })
+        obs.disconnect()
+      }
+    }, { threshold: 0.3 })
+    obs.observe(el)
+    return () => obs.disconnect()
+  }, [])
 
   const tagBase = config.sourceNamespace ? `${config.sourceNamespace}_end_close` : 'end_close'
 
@@ -29,7 +47,11 @@ export default function UniversityEndCta({ config }: { config: UniversityBlogCta
           source: tagBase,
         }),
       })
-      if (!res.ok) { setStatus('error'); return }
+      if (!res.ok) {
+        setStatus('error')
+        trackEvent('form_error', { form_component: 'UniversityEndCta' })
+        return
+      }
       if (typeof window !== 'undefined' && (window as any).gtag) {
         (window as any).gtag('event', 'generate_lead', {
           university: config.universityName,
@@ -37,14 +59,24 @@ export default function UniversityEndCta({ config }: { config: UniversityBlogCta
           source: tagBase,
         })
       }
+      trackEvent('form_submit', { form_component: 'UniversityEndCta' })
       setStatus('success')
     } catch {
       setStatus('error')
+      trackEvent('form_error', { form_component: 'UniversityEndCta' })
+    }
+  }
+
+  function handleFormStart() {
+    if (!startTracked.current) {
+      startTracked.current = true
+      trackEvent('form_start', { form_component: 'UniversityEndCta' })
     }
   }
 
   return (
     <div
+      ref={containerRef}
       id={`${config.shortName.toLowerCase()}-end-close`}
       className="rounded-2xl my-6 overflow-hidden"
       style={{
@@ -92,6 +124,7 @@ export default function UniversityEndCta({ config }: { config: UniversityBlogCta
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-xs mt-3 no-underline hover:underline"
               style={{ color: 'rgba(255,255,255,0.65)' }}
+              onClick={() => trackEvent('whatsapp_click', { page_path: typeof window !== 'undefined' ? window.location.pathname : '/', university: config.universityName, source: 'form_fallback' })}
             >
               <MessageCircle size={13} />
               Or chat on WhatsApp for faster reply
@@ -111,13 +144,14 @@ export default function UniversityEndCta({ config }: { config: UniversityBlogCta
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold no-underline"
               style={{ background: '#25D366', color: '#fff' }}
+              onClick={() => trackEvent('whatsapp_click', { page_path: typeof window !== 'undefined' ? window.location.pathname : '/', university: config.universityName, source: 'form_fallback' })}
             >
               <MessageCircle size={16} />
               WhatsApp Us
             </a>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-3" data-cta={`${tagBase}_form`}>
+          <form onSubmit={handleSubmit} className="space-y-3" data-cta={`${tagBase}_form`} onFocus={handleFormStart}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <input
                 type="text"

@@ -1,4 +1,7 @@
+'use client'
+
 import Link from 'next/link'
+import { trackEvent } from '@/lib/analytics'
 
 const LINKS = [
   { href: '/blog/phd-full-form-doctorate-meaning-india', label: 'PhD Full Form & Eligibility' },
@@ -19,6 +22,7 @@ export default function NextStepLinks() {
           <Link
             key={href}
             href={href}
+            onClick={() => trackEvent('calculator_bridge_click', { target_path: href })}
             className="flex items-center gap-3 bg-white border border-border rounded-xl p-4 hover:border-amber transition-colors"
           >
             <span className="shrink-0 w-2 h-2 rounded-full bg-amber" />

@@ -1,5 +1,7 @@
 'use client'
 
+import { trackEvent } from '@/lib/analytics'
+
 const WA_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'
 
 export default function WhatsAppSticky({ universityName }: { universityName?: string }) {
@@ -13,6 +15,7 @@ export default function WhatsAppSticky({ universityName }: { universityName?: st
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
+      onClick={() => trackEvent('whatsapp_click', { page_path: typeof window !== 'undefined' ? window.location.pathname : '/', university: universityName, source: 'sticky' })}
       className="fixed z-40 flex items-center gap-2 rounded-full shadow-xl transition-transform hover:scale-105 active:scale-95 no-underline"
       style={{
         bottom: 16,

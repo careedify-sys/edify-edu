@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import { X, Send, MessageCircle, CheckCircle, Loader2, Mail, User, BookOpen, Building2, Tag } from 'lucide-react'
+import { trackEvent } from '@/lib/analytics'
 
 interface EnquiryModalProps {
   isOpen: boolean
@@ -52,17 +53,24 @@ export default function EnquiryModal({
   })
   const [errors, setErrors] = useState<Partial<Record<keyof typeof form, string>>>({})
   const modalRef = useRef<HTMLDivElement>(null)
+  const startTracked = useRef(false)
+  const viewTracked = useRef(false)
 
   useEffect(() => {
     if (isOpen) {
       setStep('form')
       setErrors({})
+      startTracked.current = false
       setForm(f => ({
         ...f,
         program: defaultProgram || '',
         preferredUniversity: universityName || '',
         couponCode: couponCode || '',
       }))
+      if (!viewTracked.current) {
+        viewTracked.current = true
+        trackEvent('form_view', { form_component: 'EnquiryModal' })
+      }
     }
   }, [isOpen, defaultProgram, universityName, couponCode])
 
@@ -113,7 +121,11 @@ export default function EnquiryModal({
           ...(form.couponCode.trim() ? { couponCode: form.couponCode.trim().toUpperCase() } : {}),
         }),
       })
-      if (!res.ok) { setStep('error'); return }
+      if (!res.ok) {
+        setStep('error')
+        trackEvent('form_error', { form_component: 'EnquiryModal' })
+        return
+      }
 
       if (typeof window !== 'undefined' && (window as any).gtag) {
         ;(window as any).gtag('event', 'generate_lead', {
@@ -123,14 +135,28 @@ export default function EnquiryModal({
         })
       }
 
+      trackEvent('form_submit', { form_component: 'EnquiryModal' })
       setStep('success')
       onSuccess?.()
     } catch {
       setStep('error')
+      trackEvent('form_error', { form_component: 'EnquiryModal' })
+    }
+  }
+
+  function handleFormStart() {
+    if (!startTracked.current) {
+      startTracked.current = true
+      trackEvent('form_start', { form_component: 'EnquiryModal' })
     }
   }
 
   function openWhatsApp() {
+    trackEvent('whatsapp_click', {
+      page_path: typeof window !== 'undefined' ? window.location.pathname : '/',
+      university: form.preferredUniversity || universityName,
+      source: 'form_fallback',
+    })
     const wa = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'
     const msg = encodeURIComponent(
       `Hi! I'm ${form.name || 'interested'} and I want to enquire about ${form.program || 'online degrees'}${form.preferredUniversity ? ` from ${form.preferredUniversity}` : ''}. My phone: +91 ${form.phone || ''}`
@@ -190,6 +216,7 @@ export default function EnquiryModal({
           <form
             id="enquiry-form"
             onSubmit={handleSubmit}
+            onFocus={handleFormStart}
             autoComplete="on"
             className="flex-1 overflow-y-auto px-6 py-5 space-y-4"
           >
