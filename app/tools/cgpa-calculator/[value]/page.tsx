@@ -13,6 +13,7 @@ import CgpaGradeTable from '@/components/cgpa/CgpaGradeTable'
 import CgpaInlineCalculator from '@/components/cgpa/CgpaInlineCalculator'
 import CgpaFaq, { type CgpaFaqItem } from '@/components/cgpa/CgpaFaq'
 import CgpaEligibilityBanner from '@/components/cgpa/CgpaEligibilityBanner'
+import NextStepLinks from '@/components/cgpa/NextStepLinks'
 
 export const dynamic = 'force-static'
 export const dynamicParams = false
@@ -283,6 +284,8 @@ export default function CgpaValuePage({
             </h2>
             <CgpaInlineCalculator defaultValue={label} />
           </section>
+
+          <NextStepLinks />
 
           {/* FAQs */}
           <section>
