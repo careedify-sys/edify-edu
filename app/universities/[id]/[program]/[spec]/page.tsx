@@ -35,7 +35,7 @@ export async function generateMetadata(
   // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
   // Uses shortenSpec so long names like "Healthcare Management" stay clampable.
   const title     = clampTitle(`${titleName} ${program} ${shortSpec} ${year}: ${fees}, NAAC ${u.naac} | EdifyEdu`)
-  const description = clampDescription(`${titleName} Online ${program} in ${spec} ${year}: ${fees} fees, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. See syllabus, career data & honest review free.`)
+  const description = clampDescription(`Online ${program} in ${spec} from ${titleName}: ${fees} fees, eligibility, syllabus and admission ${year}. NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Compare before you enrol.`)
 
   return {
     title,

@@ -32,7 +32,7 @@ export async function generateMetadata(
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : (u as any).nirfMgt && (u as any).nirfMgt < 200 ? `, NIRF #${(u as any).nirfMgt} Mgmt` : ''
   // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
   const title = clampTitle(`${titleName} MBA ${shortSpec} ${year}: ${fee}, NAAC ${u.naac} | EdifyEdu`)
-  const description = clampDescription(`${titleName} Online MBA in ${spec} ${year}: ${fee} fees, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. See syllabus, career data & honest review free.`)
+  const description = clampDescription(`Online MBA in ${spec} from ${titleName}: ${fee} fees, eligibility, syllabus and admission ${year}. NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Compare before you enrol.`)
 
   return {
     title,

@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { getGuideById, GUIDES } from '@/lib/guides'
+import { getGuideById, GUIDES, type Guide } from '@/lib/guides'
 
 type Props = { params: Promise<{ id: string }> | { id: string } }
 
@@ -35,6 +35,39 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: ['https://edifyedu.in/og.webp'],
     },
   }
+}
+
+function extractGuideFaqs(guide: Guide): { q: string; a: string }[] {
+  const html = guide.content
+  const faqHeaderIdx = html.indexOf('<h2>Frequently Asked Questions</h2>')
+  if (faqHeaderIdx === -1) {
+    const h2Re = /<h2>(.*?\?.*?)<\/h2>\s*<p>([\s\S]*?)<\/p>/g
+    const results: { q: string; a: string }[] = []
+    let m: RegExpExecArray | null
+    while ((m = h2Re.exec(html)) !== null) {
+      const q = m[1].replace(/<[^>]+>/g, '').trim()
+      const a = m[2].replace(/<[^>]+>/g, '').trim()
+      if (q && a) results.push({ q, a })
+    }
+    if (results.length > 0) return results.slice(0, 5)
+    const strongQRe = /<p><strong>(.*?\?)<\/strong>\s*([\s\S]*?)<\/p>/g
+    while ((m = strongQRe.exec(html)) !== null) {
+      const q = m[1].replace(/<[^>]+>/g, '').trim()
+      const a = m[2].replace(/<[^>]+>/g, '').trim()
+      if (q && a) results.push({ q, a })
+    }
+    return results.slice(0, 5)
+  }
+  const faqSection = html.slice(faqHeaderIdx)
+  const h3Re = /<h3>(.*?)<\/h3>\s*<p>([\s\S]*?)(?=<h3>|<div|<h2>|$)/g
+  const results: { q: string; a: string }[] = []
+  let m: RegExpExecArray | null
+  while ((m = h3Re.exec(faqSection)) !== null) {
+    const q = m[1].replace(/<[^>]+>/g, '').trim()
+    const a = m[2].replace(/<[^>]+>/g, '').replace(/<\/p>/g, ' ').trim()
+    if (q && a) results.push({ q, a })
+  }
+  return results.slice(0, 10)
 }
 
 export default async function GuidePage({ params }: Props) {
@@ -81,10 +114,22 @@ export default async function GuidePage({ params }: Props) {
     ],
   }
 
+  const faqs = extractGuideFaqs(guide)
+  const faqSchema = faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(f => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  } : null
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       <div className="page-shell">
 
         {/* ── Header ──────────────────────────────────────────── */}

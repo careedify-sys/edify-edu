@@ -584,6 +584,20 @@ export default function UniversityPageClient({ university: u }: Props) {
                 </div>
               </section>
 
+              {/* Verify Accreditation Link */}
+              <div className="rounded-xl border border-amber/30 bg-amber/5 p-4 flex items-center justify-between gap-4">
+                <div>
+                  <div className="font-semibold text-navy text-sm">Check accreditation, NAAC grade and UGC-DEB approval status</div>
+                  <p className="text-xs text-ink-3 m-0 mt-1">Independent verification powered by edifyedu.in</p>
+                </div>
+                <Link
+                  href={`/verify/${u.id}`}
+                  className="shrink-0 px-4 py-2 rounded-lg text-xs font-bold text-amber border border-amber/40 no-underline hover:bg-amber/10 transition-colors"
+                >
+                  Verify {getShortUniversityName(u.name)} accreditation status
+                </Link>
+              </div>
+
               {/* Other Universities */}
               {otherUnis.length > 0 && (
                 <section>
