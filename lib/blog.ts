@@ -1273,7 +1273,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'nmims-online-mba-review-2026',
     title: 'NMIMS Online MBA Fees 2026: ₹1.96L to ₹2.2L Review and Honest Verdict',
-    seoTitle: 'NMIMS Online MBA Review 2026: Fees, Real Verdict',
+    seoTitle: 'NMIMS Online MBA Review 2026: Best Value for Mumbai BFSI Roles',
     metaDescription: 'NMIMS Online MBA honest review: fees, specialisations, placement reality. Based on real student feedback. Zero commission, no sales pitch.',
     category: 'University Reviews',
     tags: ['nmims online mba', 'nmims online mba fees', 'nmims online mba review', 'nmims mba specializations', 'nmims online mba placements', 'nmims cdoe', 'nmims distance mba', 'nmims online mba admission 2026', 'Narsee Monjee Online MBA Fees', 'NMIMS CDOE MBA Review'],
@@ -1547,7 +1547,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'ignou-online-mba-review-2026',
     title: 'IGNOU Online MBA: Is It Still Worth It in 2026?',
-    seoTitle: 'IGNOU Online MBA Fees 2026: ₹58,000, Still Worth It?',
+    seoTitle: 'IGNOU Online MBA Review 2026: Rs 58K Fees, Zero Placement Cell',
     metaDescription: 'IGNOU Online MBA costs ₹58,000 total. But is it still worth it in 2026? Validity, placement reality, honest verdict.',
     category: 'University Review',
     tags: ['online mba ignou', 'ignou distance mba', 'ignou mba correspondence', 'mba distance learning ignou', 'ignou mbaol', 'ignou mba 2026'],
@@ -1724,7 +1724,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>IGNOU MBAOL:</strong> Rs 58,000. Central open university. Pan-India recognition. NAAC A plus plus.</li>
   <li><strong>NSOU MBA (West Bengal):</strong> Rs 20-30K. State open university. Strong in WB plus East India.</li>
   <li><strong>YCMOU MBA (Maharashtra):</strong> Rs 25-35K. State open university. Strong in Maharashtra.</li>
-  <li><strong>KSOU MBA (Karnataka):</strong> Rs 25-40K. State open university. Strong in Karnataka. Verify current UGC-DEB approval.</li>
+  <li><strong><a href="/universities/karnataka-state-open-university-online">KSOU MBA (Karnataka)</a>:</strong> Rs 25-40K. State open university. Strong in Karnataka. Verify current UGC-DEB approval.</li>
   <li><strong>BRAOU MBA (Telangana):</strong> Rs 20-30K. State open university. Strong in Telangana plus AP.</li>
   <li><strong>DU SOL MBA (Delhi):</strong> Rs 20-25K. School of Open Learning. Strong in Delhi NCR.</li>
 </ul>
@@ -3266,7 +3266,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'is-manipal-university-jaipur-fake-or-legit-2026',
     title: 'Is Manipal University Jaipur Fake or Legit? 2026',
-    seoTitle: 'Is Manipal University Jaipur Fake or Legit? 2026 Verdict',
+    seoTitle: 'Is Manipal University Jaipur Fake? No. NAAC A+, UGC Approved',
     metaDescription: 'Manipal University Jaipur is NOT fake. UGC-recognised since 2011, NAAC A+ accredited, NIRF Management rank 81. Degree validity confirmed, red flags checked.',
     category: 'University Reviews',
     tags: ['Manipal University Jaipur', 'MUJ review', 'is Manipal fake', 'Manipal University Jaipur', 'MUJ fake or legit', 'manipal jaipur legit'],
@@ -4981,7 +4981,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <li>3 years instead of 4 (vs B.Tech). You enter the job market a full year faster.</li>
 <li>BCA + MCA is equivalent to B.Tech + M.Tech in many IT companies' hiring criteria. See our guide on <a href="/blog/mca-vs-btech-which-is-better-2026" class="ilink">MCA vs B.Tech</a> for a detailed salary and career comparison.</li>
 <li>BCA + MBA (Data Science/Analytics) creates a business-tech hybrid profile with a higher ceiling.</li>
-<li>Online BCA from UGC-approved universities costs ₹60K-₹1.2L vs ₹3L-₹8L for private B.Tech. Programmes like the <a href="/universities/integral-university-online/bca">Integral University Online BCA</a> and the <a href="/universities/gla-university-online/bca">GLA University Online BCA</a> sit at the affordable end with UGC-DEB approval and flexible weekend live classes.</li>
+<li>Online BCA from UGC-approved universities costs ₹60K-₹1.2L vs ₹3L-₹8L for private B.Tech. Programmes like the <a href="/universities/integral-university-online/bca">Integral University Online BCA</a> and the <a href="/universities/gla-university-online">GLA University</a> Online BCA sit at the affordable end with UGC-DEB approval and flexible weekend live classes.</li>
 </ul>
 
 <p>The BCA graduate who learns Python, SQL, and data analysis during the degree and follows up with an <a href="/programs/mca">MCA</a> or <a href="/programs/mba">MBA in Analytics</a> can realistically target ₹8L-₹15L within 4-5 years of starting the degree. That's comparable to most B.Tech graduates from private colleges.</p>
@@ -7152,7 +7152,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'online-mba-lpu-review-2026',
     title: 'LPU Online MBA Fees 2026: Lovely Professional University Review and Honest Take',
-    seoTitle: 'Lovely Professional University Online MBA Fees 2026: ₹1.46L (LPU Review)',
+    seoTitle: 'LPU Online MBA Review 2026: Dual Specialisation, NAAC A++ at Rs 1.46L',
     metaDescription: 'Lovely Professional University (LPU) online MBA fees ₹1,46,240 lumpsum or ₹40,400/semester. 12 specializations, NAAC A++, NIRF Management #44. Honest review with placement data. Zero commission.',
     category: 'Online MBA University Reviews',
     tags: ['LPU Online MBA', 'LPU MBA Review 2026', 'LPU Online MBA Fees', 'UGC DEB Approved MBA', 'NAAC A++ Online MBA', 'LPU MBA Salary', 'LPU MBA Specialisations', 'Lovely Professional University MBA Fees', 'Lovely Professional University Online MBA'],
@@ -19004,7 +19004,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'amity-online-mba-review-2026',
     title: 'Amity University Online MBA Fees 2026: ₹2.07L Review and Honest Assessment',
-    seoTitle: 'Amity Online MBA Review 2026: Pros, Cons & Verdict',
+    seoTitle: 'Amity Online MBA Review 2026: Best Pick for International Careers?',
     metaDescription: 'Amity Online MBA honest review: ₹2.07L to ₹4.49L fees, 14 specialisations, placement reality from real student feedback. Zero commission.',
     category: 'University Reviews',
     tags: ['amity online mba', 'amity online mba review', 'amity mba online fees', 'amity online mba placements', 'amity online mba worth it', 'amity university mba eligibility', 'amity university noida mba fees and placement', 'mba in amity university fees'],
@@ -22847,7 +22847,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
             "q": "Which online MCA course is cheapest in India?",
-            "a": "Yenepoya University and Dr. Babasaheb Ambedkar Open University offer programs at around Rs.50,000 total. KL University (~Rs.65,500) and Mangalayatan University (~Rs.67,000) are also among the most affordable UGC-approved options."
+            "a": "<a href=\"/universities/yenepoya-university-online\">Yenepoya University</a> and Dr. Babasaheb Ambedkar Open University offer programs at around Rs.50,000 total. KL University (~Rs.65,500) and Mangalayatan University (~Rs.67,000) are also among the most affordable UGC-approved options."
       },
       {
             "q": "Can I complete an online MCA while working full-time?",
@@ -22887,8 +22887,8 @@ export const BLOG_POSTS: BlogPost[] = [
 <ul>
 <li><strong>Best brand value:</strong> Manipal MAHE, Amrita Vishwa Vidyapeetham, VIT, <a href="/blog/amity-online-mca-fees-review" style="color:inherit;text-decoration:underline;text-underline-offset:2px">Amity University</a>, all with strong alumni networks and NIRF rankings.</li>
 <li><strong>Best value for money:</strong> KL University (Rs.65,500), Vignan's (Rs.90,000), HITS Hindustan (Rs.90,000), UGC-approved with decent syllabi at under Rs.1L total.</li>
-<li><strong>Best for specialisations:</strong> Jain University (10+ specialisations), <a href="/universities/dayananda-sagar-university-online">Dayananda Sagar University</a> (12 specialisations including Quantum Computing), SGT University, Chandigarh University.</li>
-<li><strong>Best government university option:</strong> Kurukshetra University (NAAC A++, Rs.76,647), <a href="/universities/guru-nanak-dev-university-online">Guru Nanak Dev University</a> (Rs.90,600), VTU Karnataka, valid degrees at government pricing.</li>
+<li><strong>Best for specialisations:</strong> Jain University (10+ specialisations), <a href="/universities/dayananda-sagar-university-online">Dayananda Sagar University</a> (12 specialisations including Quantum Computing), <a href="/universities/sgt-university-online">SGT University</a>, Chandigarh University.</li>
+<li><strong>Best government university option:</strong> Kurukshetra University (NAAC A++, Rs.76,647), <a href="/universities/guru-nanak-dev-university-online">Guru Nanak Dev University</a> (Rs.90,600), <a href="/universities/vtu-online">VTU Karnataka</a>, valid degrees at government pricing.</li>
 </ul>
 <h2>Which Specialisation Should You Pick?</h2>
 <p>This is the most important decision in any online MCA program. The chart below maps specialisations to 2026 career outcomes:</p>
@@ -22913,7 +22913,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <li>Confirm the university has an established physical campus</li>
 <li>Cross-check with NIRF rankings for independent quality signals</li>
 </ul>
-<p>An online MCA program from Manipal, Amrita, VIT, Jain, Chandigarh University, <a href="/blog/amity-online-mca-fees-review" style="color:inherit;text-decoration:underline;text-underline-offset:2px">Amity</a>, or KL University will clear most employer verification checks. Government universities (Kurukshetra, Guru Ghasidas, VTU, Guru Nanak Dev) are equally valid, often cheaper.</p>
+<p>An online MCA program from Manipal, Amrita, VIT, Jain, Chandigarh University, <a href="/blog/amity-online-mca-fees-review" style="color:inherit;text-decoration:underline;text-underline-offset:2px">Amity</a>, or KL University will clear most employer verification checks. Government universities (Kurukshetra, <a href="/universities/guru-ghasidas-vishwavidyalaya-online">Guru Ghasidas</a>, VTU, Guru Nanak Dev) are equally valid, often cheaper.</p>
 <h2>How to Choose: 5 Things That Actually Matter</h2>
 <ul>
 <li><strong>Accreditation.</strong> UGC-DEB approved + NAAC A+ or above. Non-negotiable.</li>
@@ -23039,7 +23039,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'amity-online-mca-fees-review',
     title: 'Amity Online MCA: Fees, Specialisations and Honest Review 2026',
-    seoTitle: 'Amity Online MCA Fees and Review 2026: Is It Worth Rs 1.7 Lakh?',
+    seoTitle: 'Amity Online MCA Review 2026: Worth Rs 1.7L for FinTech and Cyber?',
     metaDescription: 'Amity Online MCA fees Rs 1.7L total (Rs 42,500 per semester). Review of all 6 specialisations, HCLTech and Paytm tie-ups and comparison with alternatives.',
     category: 'Online MCA Programs',
     tags: ["amity online mca","amity online mca fees","amity mca online","amity university online mca","amity university online mca fees"],
@@ -23928,7 +23928,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'smu-online-mba-review',
     title: 'Sikkim Manipal (SMU) Online MBA Review 2026: Fees and Honest Verdict',
-    seoTitle: 'SMU Online MBA Review 2026: Fees, What Changed',
+    seoTitle: 'SMU Online MBA Review 2026: Rs 1.2L That Punches Above Its Price',
     metaDescription: 'Old SMU reviews say avoid. The 2026 UGC-DEB online MBA is a different programme. ₹1.20L fee, NAAC A+, honest verdict from real student feedback.',
     category: 'Online MBA Programs',
     tags: ['smu online mba', 'sikkim manipal university online mba', 'smu online mba fees', 'manipal online mba', 'dual specialization mba india', 'online mba manipal group', 'Sikkim Manipal University online MBA', 'Manipal online MBA fees'],
@@ -24564,7 +24564,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'galgotias-online-mba-review',
     author: 'Rishi Kumar',
     title: 'Galgotias University Online MBA Fees 2026: ₹76,200 Review and Honest Rating',
-    seoTitle: 'Galgotias University Online MBA Fees 2026: ₹76,200, NAAC A+ Review',
+    seoTitle: 'Galgotias Online MBA Review 2026: Cheapest NAAC A+ at Rs 76K',
     metaDescription: 'Galgotias Online MBA total fee ₹76,200 but the exam fee and one cost most sites skip changes the maths. Full breakdown, honest verdict, zero commission.',
     category: 'Online MBA Programs',
     tags: ['galgotias university mba fees', 'Galgotias University Online MBA', 'Galgotias University Distance Education', 'Galgotias MBA Fees 2026', 'cheapest online mba india', 'galgotias online mba fees', 'online mba greater noida'],
@@ -25573,7 +25573,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'shoolini-online-mba-review',
     title: 'Shoolini Online MBA Fees 2026: ₹1.18L Review and Honest Rating',
-    seoTitle: 'Shoolini University Online MBA Fees 2026: ₹1.18L to ₹1.30L Review',
+    seoTitle: 'Shoolini Online MBA Review 2026: Best for Pharma and Biotech Careers',
     metaDescription: 'Shoolini University online MBA fees ₹1,18,000 to ₹1,30,000. NAAC A+, NIRF University #69, 16 specializations. QS #1 private. Honest review, zero commission.',
     category: 'Online MBA Programs',
     tags: ['shoolini online mba', 'shoolini university online mba', 'shoolini mba fees', 'online mba pharma', 'online mba biotechnology', 'pay after placement mba india', 'Shoolini University MBA Fees', 'Shoolini University Online MBA', 'Shoolini MBA Review 2026'],
@@ -25949,7 +25949,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'dy-patil-online-mba-review',
     title: 'DY Patil Online MBA Fees 2026: ₹1,89,400 Review and Honest Verdict',
-    seoTitle: 'DY Patil Online MBA Review 2026: ₹1.89L & Verdict',
+    seoTitle: 'DY Patil Online MBA Review 2026: WES-Recognised, Tech-Forward Specs',
     metaDescription: 'DY Patil Online MBA reviewed: ₹1,89,400 total fee, most affordable WES-recognised online MBA. Real student feedback, pros, cons. Zero commission.',
     category: 'Online MBA Programs',
     tags: ['dy patil online mba', 'dy patil online mba review', 'wes recognized mba india', 'dy patil mba fees', 'online mba pune', 'Dr DY Patil Vidyapeeth MBA Fees', 'DY Patil Pune Online MBA', 'DY Patil Navi Mumbai vs Pune'],
@@ -26233,7 +26233,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'chandigarh-university-online-mba-review',
     title: 'Chandigarh University Online MBA Fees 2026: ₹1.65L Review and Honest Verdict',
-    seoTitle: 'Chandigarh University Online MBA Review 2026: Verdict',
+    seoTitle: 'Chandigarh University Online MBA Review 2026: 23 Specs, PwC Tie-Up',
     metaDescription: 'Chandigarh University Online MBA reviewed: fees after Early Bird scholarship, pros, cons, who it suits. Real student feedback, zero commission.',
     category: 'Online MBA Programs',
     tags: ['chandigarh university online mba', 'cu online mba review', 'online mba with harvard certification india', 'online mba with pwc certification', 'chandigarh university mba fees', 'Chandigarh University MBA Fees 2026', 'CU Online MBA Review'],
@@ -31742,7 +31742,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   <li><strong>UPES Online</strong> - MA in English, Political Science</li>
   <li><strong>Uttarakhand Open University</strong> - Multiple MA specializations</li>
   <li><strong>Nalanda Open University</strong> - MA in Hindi, English, Economics, History</li>
-  <li><strong><a href="/universities/mahatma-jyotiba-phule-rohilkha/ma">MJP Rohilkhand University Online</a></strong> - UP state university with affordable MA in humanities subjects</li>
+  <li><strong><a href="/universities/mahatma-jyotiba-phule-rohilkhand-university-online">MJP Rohilkhand University Online</a></strong> - UP state university with affordable MA in humanities subjects</li>
   <li><strong><a href="/universities/deen-dayal-upadhyay-gorakhpur-university-online/ma">DDU Gorakhpur University Online</a></strong> - State university option for budget-conscious learners in UP</li>
 </ul>
 
@@ -34678,7 +34678,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 </thead>
 <tbody>
 <tr><td>Galgotias University Online</td><td>HR Management</td><td>₹76,200</td><td>~₹19,050 avg</td><td>NAAC A+, UGC-DEB</td></tr>
-<tr><td>Noida International University Online</td><td>Human Resource Management</td><td>₹88,500 (after 25% Early Bird)</td><td>₹29,500 std</td><td>NAAC A+, UGC-DEB</td></tr>
+<tr><td><a href="/universities/noida-international-university-online">Noida International University Online</a></td><td>Human Resource Management</td><td>₹88,500 (after 25% Early Bird)</td><td>₹29,500 std</td><td>NAAC A+, UGC-DEB</td></tr>
 <tr><td>Vignan Online</td><td>Human Resource Management</td><td>₹90,000</td><td>~₹22,500</td><td>NAAC A+, UGC-DEB</td></tr>
 <tr><td>Kurukshetra University Online</td><td>Human Resource</td><td>₹1,02,000</td><td>₹25,500</td><td>NAAC A++, UGC-DEB</td></tr>
 <tr><td><a href="/universities/arka-jain-university-online">ARKA JAIN University</a></td><td>Human Resource Management</td><td>₹1,08,500</td><td>₹25,000</td><td>UGC-DEB</td></tr>
