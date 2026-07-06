@@ -4,9 +4,9 @@ import CgpaQuickConversions from '@/components/cgpa/CgpaQuickConversions'
 import NextStepLinks from '@/components/cgpa/NextStepLinks'
 
 export const metadata: Metadata = {
-  title: 'CGPA to Percentage Calculator (UGC ×9.5): Free 2026 | EdifyEdu',
+  title: 'CGPA to Percentage Calculator | All Universities, Instant Result',
   description:
-    '1 click: enter CGPA, get percentage via UGC formula (×9.5). Free, no login. 6.0-10.0 grade table, SGPA conversion & Mumbai Univ variant. Check eligibility.',
+    'Convert CGPA to percentage for any Indian university. Supports UGC (x9.5), Mumbai, VTU and Anna scales. Reverse conversion, SGPA mode, downloadable result. Free, no login.',
   keywords: [
     'cgpa to percentage',
     'cgpa to percentage calculator',

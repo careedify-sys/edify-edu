@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import PercentageToGpaClient from './PercentageToGpaClient'
 
 export const metadata: Metadata = {
-  title: 'Percentage to GPA Calculator 2026 — Convert Instantly (4.0 & 10-Point Scale) | Edify',
+  title: 'Percentage to GPA Converter | Free, Works for Any Scale',
   description:
-    'Free percentage to GPA calculator for India. Convert to 4.0 GPA scale or 10-point CGPA instantly. Full grade conversion table & results for all percentages.',
+    'Convert Indian percentage to 4.0 GPA or 10-point CGPA instantly. Covers UGC, US and UK scales. Full grade conversion table, reverse lookup and downloadable result. Free, no login.',
   keywords: [
     'percentage to gpa',
     'percentage to gpa calculator',
@@ -24,12 +24,12 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://edifyedu.in/tools/percentage-to-gpa' },
   openGraph: {
-    title: 'Percentage to GPA Calculator 2026 — 4.0 & 10-Point Scale | Edify',
+    title: 'Percentage to GPA Converter | Free, Works for Any Scale',
     description:
       'Convert Indian percentage to GPA instantly. 4.0 scale for international applications, 10-point CGPA for Indian universities. Free, no login.',
     url: 'https://edifyedu.in/tools/percentage-to-gpa',
     type: 'website',
-    images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: 'Percentage to GPA Calculator — Edify' }],
+    images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: 'Percentage to GPA Converter, Free for Any Scale' }],
   },
   twitter: {
     card: 'summary_large_image',
