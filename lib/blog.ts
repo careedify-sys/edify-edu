@@ -41987,7 +41987,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <tr style="background:#f8fafc"><td style="padding:10px"><a href="/universities/manipal-academy-higher-education-online">MAHE Online</a></td><td>Manipal</td><td style="text-align:center">A++</td><td style="text-align:center">#3</td><td style="text-align:right">₹2.92L</td><td>Marketing, Finance, HR, Analytics, Operations, Logistics, Healthcare, Pharma, Data Science</td></tr>
 <tr><td style="padding:10px"><a href="/universities/jain-university-online">JAIN Online</a></td><td>Bengaluru</td><td style="text-align:center">A++</td><td style="text-align:center">#62</td><td style="text-align:right">₹1.75L to ₹1.96L</td><td>Marketing, Finance, HR, General, AI for Finance/Marketing/HR, Data Science and AI, Digital Marketing, Supply Chain + 9 more</td></tr>
 <tr style="background:#f8fafc"><td style="padding:10px"><a href="/universities/jss-university-online">JSS AHER Online</a></td><td>Mysore</td><td style="text-align:center">A++</td><td style="text-align:center">#21</td><td style="text-align:right">₹1L to ₹2L</td><td>Hospital Administration, Pharmacy Administration</td></tr>
-<tr><td style="padding:10px"><a href="/universities/alliance-university-online">Alliance University Online</a></td><td>Bangalore</td><td style="text-align:center">A</td><td style="text-align:center">N/A</td><td style="text-align:right">₹1.60L</td><td>Finance, HR, Marketing, Operations, Business Analytics and AI</td></tr>
+<tr><td style="padding:10px"><a href="/universities/alliance-university-online">Alliance University Online</a></td><td>Bangalore</td><td style="text-align:center">A+</td><td style="text-align:center">N/A</td><td style="text-align:right">₹1.60L</td><td>Finance, HR, Marketing, Operations, Business Analytics and AI</td></tr>
 <tr style="background:#f8fafc"><td style="padding:10px"><a href="/universities/university-of-mysore-online">University of Mysore Online</a></td><td>Mysore</td><td style="text-align:center">A</td><td style="text-align:center">#71</td><td style="text-align:right">₹1.60L</td><td>Logistics, Operations, HR, Finance, Marketing, Project Management</td></tr>
 <tr><td style="padding:10px"><a href="/universities/vtu-online">VTU Online</a></td><td>Belgaum</td><td style="text-align:center">B+</td><td style="text-align:center">N/A</td><td style="text-align:right">₹1.41L</td><td>Digital Marketing, HR, Marketing, Finance, Business Analytics</td></tr>
 <tr style="background:#f8fafc"><td style="padding:10px"><a href="/universities/dayananda-sagar-university-online">DSU Online</a></td><td>Bangalore</td><td style="text-align:center">A+</td><td style="text-align:center">N/A</td><td style="text-align:right">₹1.30L</td><td>AI, Analytics, Entrepreneurship, FinTech, HR, IT Systems, Marketing, Supply Chain</td></tr>
@@ -42038,7 +42038,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <h3>Alliance University Online, Bangalore</h3>
 
-<p>Alliance University holds NAAC A accreditation and NIRF #71 in the Management category (2025). The online MBA offers 5 specialisations including Business Analytics and AI, the only Karnataka university with a dedicated AI-integrated MBA track alongside core specs. The curriculum includes Design Thinking as a core component.</p>
+<p>Alliance University holds NAAC A+ accreditation and NIRF #71 in the Management category (2025). The online MBA offers 5 specialisations including Business Analytics and AI, the only Karnataka university with a dedicated AI-integrated MBA track alongside core specs. The curriculum includes Design Thinking as a core component.</p>
 
 <p>Total fee: ₹1,60,000. EMI from ₹6,667 per month. Alliance is a private university (not deemed), Bangalore-based, and positions itself for corporate hiring in the Bangalore tech corridor. The NIRF #71 Management rank gives it credibility that some competitors in this price range lack.</p>
 
@@ -42126,12 +42126,12 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <h2>NAAC Grade Comparison: How Karnataka Stacks Up</h2>
 
-<p>Karnataka has three NAAC A++ universities offering online MBA: MAHE, JAIN, and JSS AHER. Five hold NAAC A+: DSU, KSOU, Yenepoya, Adichunchanagiri, and Alva's. Two hold NAAC A: Alliance and University of Mysore. One holds NAAC B+: VTU. Christ University holds NAAC A+.</p>
+<p>Karnataka has three NAAC A++ universities offering online MBA: MAHE, JAIN, and JSS AHER. Six hold NAAC A+: DSU, KSOU, Yenepoya, Adichunchanagiri, Alva's, and Alliance. One holds NAAC A: University of Mysore. One holds NAAC B+: VTU. Christ University holds NAAC A+.</p>
 
 <ul>
 <li><strong>NAAC A++ (3):</strong> MAHE, JAIN, JSS AHER</li>
-<li><strong>NAAC A+ (5):</strong> DSU, Christ, KSOU, Yenepoya, Adichunchanagiri, Alva's</li>
-<li><strong>NAAC A (2):</strong> Alliance, University of Mysore</li>
+<li><strong>NAAC A+ (7):</strong> DSU, Christ, KSOU, Yenepoya, Adichunchanagiri, Alva's, Alliance</li>
+<li><strong>NAAC A (1):</strong> University of Mysore</li>
 <li><strong>NAAC B+ (1):</strong> VTU</li>
 </ul>
 
