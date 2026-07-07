@@ -189,7 +189,7 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
             ))}
           </div>
         </div>
-        <p className="text-xs text-slate-400 mb-8">Fees are indicative. Verify with the official university portal before enrolling.</p>
+        <p className="text-xs text-slate-400 mb-8">Fees are indicative and change by intake. Confirm the current fee with our counsellor before enrolling.</p>
 
         {/* Who Should Pick Which */}
         <h2 className="text-xl font-bold mb-4" style={{ color: '#0f172a' }}>Who Should Pick Which?</h2>
