@@ -4780,7 +4780,7 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     metaDesc: 'Online MCA from Shree Guru Gobind Singh Tricentenary University. specialisations in Artificial Intelligence & Machine Learning, Data Science +2 more. Rs. 98K...',
     metaKeywords: 'Shree Guru Gobind Singh Tricentenary University online MCA, Shree Guru Gobind Singh Tricentenary University MCA fees, Shree Guru Gobind Singh Tricentenary University MCA syllabus, Shree Guru Gobind Singh Tricentenary University MCA admission 2026, Shree Guru Gobind Singh Tricentenary University MCA specialisations, online MCA artificial intelligence & machine learning, online MCA data science, online MCA cyber security, online MCA shree guru gobind singh tricentenary university, Shree Guru Gobind Singh Tricentenary University MCA UGC approved',
   },
-  'shri-ramasamy-memorial-university-online||MCA': {
+  'srm-university-sikkim-online||MCA': {
     sem1: 'Basic Mathematics | Fundamentals of Computer | Programming in Java | Operating System | Database Technology | Computer Networks | Programming in Java Practical | Operating System and Database Technology Practical',
     sem2: 'Python Programming | Advanced Data Structure and Algorithms | Advanced Web Application Development | Optimization Techniques | Advanced Data Structure and Algorithms Practical | Advanced Web Application Development Practical',
     specSyllabus: {

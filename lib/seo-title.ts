@@ -128,7 +128,6 @@ export const TITLE_NAME: Record<string, string> = {
   'bits-pilani-work-integrated-online': 'BITS Pilani WILP',
   'sgt-university-online': 'SGT University',
   'alvas-college-online': "Alva's College",
-  'shri-ramasamy-memorial-university-online': 'Shri Ramasamy Univ',
   'guru-jambheshwar-university-online': 'Guru Jambheshwar',
   'assam-down-town-university-online': 'Assam Down Town Univ',
   'op-jindal-global-university-online': 'Jindal Global',

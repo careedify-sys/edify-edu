@@ -500,7 +500,10 @@ const nextConfig = {
 
       // Legacy /programs/{program}/{university} pattern indexed by Google
       { source: '/programs/mcom/maharshi-dayanand-university-online', destination: '/universities/maharshi-dayanand-university-online', permanent: true },
-      { source: '/programs/bca/shri-ramasamy-memorial-university-online', destination: '/universities/shri-ramasamy-memorial-university-online', permanent: true },
+      { source: '/programs/bca/shri-ramasamy-memorial-university-online', destination: '/universities/srm-university-sikkim-online', permanent: true },
+      { source: '/universities/shri-ramasamy-memorial-university-online/:path*', destination: '/universities/srm-university-sikkim-online/:path*', permanent: true },
+      { source: '/universities/shri-ramasamy-memorial-university-online', destination: '/universities/srm-university-sikkim-online', permanent: true },
+      { source: '/verify/shri-ramasamy-memorial-university-online', destination: '/verify/srm-university-sikkim-online', permanent: true },
       { source: '/programs/mca/chandigarh-university-online', destination: '/universities/chandigarh-university-online/mca', permanent: true },
       { source: '/programs/ba/gujarat-university-online', destination: '/universities/gujarat-university-online', permanent: true },
       { source: '/programs/mba/graphic-era-university-online', destination: '/universities/graphic-era-university-online/mba', permanent: true },

@@ -98,7 +98,6 @@ const SEO_NAME: Record<string, string> = {
   // Sikkim
   'sikkim-manipal-university-online': 'Sikkim Manipal University',
   'srm-university-sikkim-online': 'SRM University Sikkim',
-  'shri-ramasamy-memorial-university-online': 'Shri Ramasamy Memorial University',
   // Tamil Nadu
   'bharathidasan-university-online': 'Bharathidasan University',
   'bharath-university-online': 'Bharath Institute of Higher Education and Research',

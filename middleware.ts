@@ -52,7 +52,7 @@ const OLD_SLUG_REDIRECTS: Record<string, string> = {
   'meenaksh-academy-of-higher': 'meenakshi-academy-higher-education-online',
   'pp-savani-universi': 'pp-savani-university-online',
   'shanmugh-arts-science-technolo': 'shanmugha-arts-science-technology-research-online',
-  'shri-ramasamy-memorial-univers': 'shri-ramasamy-memorial-university-online',
+  'shri-ramasamy-memorial-univers': 'srm-university-sikkim-online',
   'sri-ramachandra-universi': 'sri-ramachandra-university-online',
   'teerthanker-universi': 'teerthanker-mahaveer-university-online',
   'universi-of-mysore': 'university-of-mysore-online',

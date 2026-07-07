@@ -2507,28 +2507,6 @@
     "region": "North"
   },
   {
-    "id": "shri-ramasamy-memorial-university-online",
-    "name": "SHRI RAMASAMY MEMORIAL UNIVERSITY Online",
-    "abbr": "SRMU",
-    "naac": "A",
-    "nirf": 99,
-    "nirfMgt": null,
-    "feeMin": 60000,
-    "feeMax": 150000,
-    "emiFrom": 2500,
-    "feeStr": "₹60K – ₹1.50L",
-    "emiStr": "₹3K/mo",
-    "programs": [
-      "B.Com",
-      "BBA",
-      "BCA",
-      "M.Com",
-      "MBA",
-      "MCA"
-    ],
-    "region": "East"
-  },
-  {
     "id": "ignou-online",
     "name": "Indira Gandhi National Open University (IGNOU) Online",
     "abbr": "IGNOU",

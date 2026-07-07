@@ -772,7 +772,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>What am I actually trying to achieve with this degree in the next two years?</p>
 
-<p>If the answer is a government job promotion, IGNOU or Mizoram University is your answer. If it's a private sector management role, go for Chandigarh University or LPU. If it's a domain switch into analytics or tech management, look at dual specialization programs specifically. If you are based in Uttar Pradesh, see our <a href="/blog/online-mba-uttar-pradesh-2026">online MBA Uttar Pradesh guide</a> for 14 UP-based options starting at ₹28,000 (AMU). If you are in Tamil Nadu, our <a href="/blog/online-mba-tamil-nadu-2026">online MBA Tamil Nadu guide</a> covers 16 TN universities from ₹20,000 (University of Madras). If you are in the Northeast, our <a href="/blog/online-mba-northeast-india-2026">online MBA Northeast India guide</a> covers 5 NE-based universities from ₹54,000 (Mizoram University, a Central University).</p>
+<p>If the answer is a government job promotion, IGNOU or Mizoram University is your answer. If it's a private sector management role, go for Chandigarh University or LPU. If it's a domain switch into analytics or tech management, look at dual specialization programs specifically. If you are based in Uttar Pradesh, see our <a href="/blog/online-mba-uttar-pradesh-2026">online MBA Uttar Pradesh guide</a> for 14 UP-based options starting at ₹28,000 (AMU). If you are in Tamil Nadu, our <a href="/blog/online-mba-tamil-nadu-2026">online MBA Tamil Nadu guide</a> covers 16 TN universities from ₹20,000 (University of Madras). If you are in the Northeast, our <a href="/blog/online-mba-northeast-india-2026">online MBA Northeast India guide</a> covers 4 NE-based universities from ₹54,000 (Mizoram University, a Central University).</p>
 
 <p>Picking based on price alone, without knowing what you're picking it for, is where most people go wrong. The cheapest affordable online MBA is the one that matches your goal, not just the one with the lowest number on the fee page.</p>
 
@@ -8521,7 +8521,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <a href="/blog/online-mba-salary-india-2026" class="il-card"><div class="il-uni">SALARY</div><div class="il-title">Online MBA Salary in India</div><div class="il-sub">What graduates actually earn</div></a>
   <a href="/blog/online-mba-vs-distance-mba-difference-2026" class="il-card"><div class="il-uni">COMPARE</div><div class="il-title">Distance MBA vs Online MBA</div><div class="il-sub">Key differences explained</div></a>
   <a href="/universities" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Approved Universities</div><div class="il-sub">125-plus UGC-DEB verified</div></a>
-  <a href="/blog/online-mba-northeast-india-2026" class="il-card"><div class="il-uni">REGION</div><div class="il-title">Online MBA Northeast India</div><div class="il-sub">5 NE universities incl. Central Uni</div></a>
+  <a href="/blog/online-mba-northeast-india-2026" class="il-card"><div class="il-uni">REGION</div><div class="il-title">Online MBA Northeast India</div><div class="il-sub">4 NE universities incl. Central Uni</div></a>
 </div>
 </div>
     `,
@@ -24143,7 +24143,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Sikkim Manipal University Online MBA at Rs. 1,20,000 punches above its price. The mandatory dual specialization, Manipal alumni network, NAAC A+ accreditation, and Healthcare specialization make this worth serious consideration. It is not MAHE, the brand is softer, the specialization list shorter. But for the right candidate, the value equation is genuinely strong.</p>
 
-<p>SMU is based in Gangtok, Sikkim, and is one of five NE-based universities offering UGC-DEB approved online MBA programmes. For the full region breakdown covering Mizoram University (Central University, ₹54K), Assam Don Bosco, SRM Sikkim, and SRMU alongside SMU, see our <a href="/blog/online-mba-northeast-india-2026">online MBA Northeast India 2026 guide</a>.</p>
+<p>SMU is based in Gangtok, Sikkim, and is one of four NE-based universities offering UGC-DEB approved online MBA programmes. For the full region breakdown covering Mizoram University (Central University, ₹54K), Assam Don Bosco, and SRM Sikkim alongside SMU, see our <a href="/blog/online-mba-northeast-india-2026">online MBA Northeast India 2026 guide</a>.</p>
 
 <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:28px 32px;margin:40px 0;text-align:center">
   <p style="font-size:16px;font-weight:700;color:#9a3412;margin:0 0 8px">Not sure if SMU is right for you?</p>
@@ -42193,29 +42193,29 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   {
     slug: 'online-mba-northeast-india-2026',
     title: 'Best Online MBA Universities in Northeast India 2026',
-    h1Title: 'Best Online MBA in Northeast India: 5 Universities Across 3 States Compared',
-    seoTitle: 'Best Online MBA in NE India 2026: 5 Unis, Fees ₹54K to ₹1.70L | Edify',
-    metaDescription: 'Online MBA in Northeast India 2026: 5 UGC-DEB approved universities across Sikkim, Assam, Mizoram compared. Fees from ₹54,000 (Central Uni) to ₹1,70,000.',
+    h1Title: 'Best Online MBA in Northeast India: 4 Universities Across 3 States Compared',
+    seoTitle: 'Best Online MBA in NE India 2026: 4 Unis, Fees ₹54K to ₹1.70L | Edify',
+    metaDescription: 'Online MBA in Northeast India 2026: 4 UGC-DEB approved universities across Sikkim, Assam, Mizoram compared. Fees from ₹54,000 (Central Uni) to ₹1,70,000.',
     category: 'City Guides',
     tags: ['online mba northeast india', 'online mba assam', 'online mba sikkim', 'online university northeast india', 'sikkim manipal online mba', 'assam don bosco online mba', 'mizoram university online mba', 'online mba northeast 2026'],
     publishedAt: '2026-07-07',
     readTime: 14,
     targetKeyword: 'online mba northeast india 2026',
-    relatedUniversities: ['sikkim-manipal-university-online', 'srm-university-sikkim-online', 'mizoram-university-online', 'assam-don-bosco-university-online', 'shri-ramasamy-memorial-university-online'],
+    relatedUniversities: ['sikkim-manipal-university-online', 'srm-university-sikkim-online', 'mizoram-university-online', 'assam-don-bosco-university-online'],
     status: 'published' as const,
     heroImage: 'https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@fauxels" target="_blank" rel="noopener nofollow">fauxels</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     heroImageAlt: 'Professionals collaborating around a modern office table with laptops and documents.',
     quickFacts: [
-      { label: 'Region', value: 'Northeast India (5 universities, 3 states)' },
+      { label: 'Region', value: 'Northeast India (4 universities, 3 states)' },
       { label: 'Fee Range', value: '₹54,000 to ₹1,70,000' },
       { label: 'Best Value', value: 'Mizoram University (₹54K, Central Uni, NAAC A)' },
       { label: 'Duration', value: '2 years' },
     ],
     faqs: [
       { q: 'Is Sikkim Manipal University online MBA valid across India?', a: 'Yes. Sikkim Manipal University (SMU) is UGC-DEB entitled and holds NAAC A+ accreditation. UGC Notification 2020 gives online degrees from entitled institutions the same legal standing as regular on-campus degrees. The SMU online MBA is valid for UPSC, SSC, banking exams, corporate hiring, and higher education across all Indian states, not just Sikkim. SMU is part of the Manipal Education group, which also operates MAHE (Karnataka) and MUJ (Rajasthan). All three are separate universities with separate accreditations. For a detailed review, see our SMU online MBA review at edifyedu.in.' },
-      { q: 'Which is the cheapest online MBA in Northeast India in 2026?', a: 'Mizoram University (MZU) Online offers the cheapest UGC-DEB approved online MBA in Northeast India at approximately ₹54,000 to ₹56,000 total for the 2-year programme. MZU is a Central University established by an Act of Parliament, which gives it extra credibility for government job applications. It holds NAAC A accreditation and NIRF University rank #82. The next most affordable NE option is Assam Don Bosco University at ₹60,000 to ₹2,00,000 and SRMU at ₹60,000 to ₹1,50,000. All fees are indicative. Confirm with our counsellor on edifyedu.in before paying.' },
-      { q: 'Are Northeast India online MBA universities approved by UGC-DEB?', a: 'Yes. All five NE universities listed in this guide are UGC-DEB entitled for online MBA programmes: Sikkim Manipal University, SRM University Sikkim, Mizoram University, Assam Don Bosco University, and Shri Ramasamy Memorial University. Mizoram University is also a Central University funded by the Government of India, which adds an extra layer of institutional credibility. Verify current entitlement status at deb.ugc.ac.in before applying.' },
+      { q: 'Which is the cheapest online MBA in Northeast India in 2026?', a: 'Mizoram University (MZU) Online offers the cheapest UGC-DEB approved online MBA in Northeast India at approximately ₹54,000 to ₹56,000 total for the 2-year programme. MZU is a Central University established by an Act of Parliament, which gives it extra credibility for government job applications. It holds NAAC A accreditation and NIRF University rank #82. The next most affordable NE option is Assam Don Bosco University at ₹60,000 to ₹2,00,000. All fees are indicative. Confirm with our counsellor on edifyedu.in before paying.' },
+      { q: 'Are Northeast India online MBA universities approved by UGC-DEB?', a: 'Yes. All four NE universities listed in this guide are UGC-DEB entitled for online MBA programmes: Sikkim Manipal University, SRM University Sikkim (formally Shri Ramasamy Memorial University), Mizoram University, and Assam Don Bosco University. Mizoram University is also a Central University funded by the Government of India, which adds an extra layer of institutional credibility. Verify current entitlement status at deb.ugc.ac.in before applying.' },
       { q: 'Can I do an online MBA from Assam while working in Guwahati?', a: 'Yes. Assam Don Bosco University (Guwahati) offers UGC-DEB approved online MBA with 6 specialisations including Project Management and Supply Chain Management. The programme is delivered through LMS with live and recorded classes. Physical presence is typically needed only for proctored exams. If you prefer a university outside Assam but still in the Northeast, Sikkim Manipal University and Mizoram University also serve learners in Guwahati through fully online delivery.' },
       { q: 'Is Mizoram University a Central University?', a: 'Yes. Mizoram University was established in 2001 by an Act of Parliament (Central Universities Act) and is funded by the Government of India through UGC. It is one of the few Central Universities in Northeast India offering UGC-DEB approved online MBA. Central University status means the degree carries strong recognition for UPSC, central government jobs, PSU recruitment, and DPC promotions. At ₹54,000 to ₹56,000 total, it is also among the cheapest online MBA options in India.' },
     ],
@@ -42223,20 +42223,20 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 7 July 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. University data sourced from official portals, UGC-DEB entitlement list, NAAC accreditation database, and current edifyedu.in university profiles.</em></p>
 
 <div class="callout-answer">
-<p><strong>Short answer:</strong> Northeast India has 5 UGC-DEB entitled universities offering online MBA programmes in 2026, spread across Sikkim, Assam, and Mizoram. If you want the cheapest option from a Central University, <a href="/universities/mizoram-university-online">Mizoram University Online</a> (NAAC A, NIRF #82, ₹54K to ₹56K total) is the standout. If the Manipal brand matters, <a href="/universities/sikkim-manipal-university-online">Sikkim Manipal University Online</a> (NAAC A+, ₹1.20L, mandatory dual specialisation) is the region's strongest brand. For the widest specialisation menu at a mid-range price, <a href="/universities/shri-ramasamy-memorial-university-online">SRMU Online</a> (NAAC A+, ₹60K to ₹1.50L, 7 specialisations) fills the gap. Below is the full comparison.</p>
+<p><strong>Short answer:</strong> Northeast India has 4 UGC-DEB entitled universities offering online MBA programmes in 2026, spread across Sikkim, Assam, and Mizoram. If you want the cheapest option from a Central University, <a href="/universities/mizoram-university-online">Mizoram University Online</a> (NAAC A, NIRF #82, ₹54K to ₹56K total) is the standout. If the Manipal brand matters, <a href="/universities/sikkim-manipal-university-online">Sikkim Manipal University Online</a> (NAAC A+, ₹1.20L, mandatory dual specialisation) is the region's strongest brand. For the SRM Group name with Coursera integration, <a href="/universities/srm-university-sikkim-online">SRM University Sikkim Online</a> (NAAC A+, ₹1.70L) fills the premium tier. Below is the full comparison.</p>
 </div>
 
 <h2>Why Northeast India Needs Its Own Online MBA Guide</h2>
 
 <p>The eight states of Northeast India (Assam, Sikkim, Meghalaya, Mizoram, Manipur, Nagaland, Tripura, and Arunachal Pradesh) share a problem that most "best online MBA" lists ignore: quality B-schools are physically scarce in the region. IIM Shillong is the only top-tier management institute in the entire Northeast. For a working professional in Guwahati, Gangtok, or Aizawl, the on-campus MBA path typically means relocating to Delhi, Bangalore, or Mumbai.</p>
 
-<p>Online MBA solves that access problem directly. Five NE-based universities now offer UGC-DEB approved online MBA programmes. The fee range runs from ₹54,000 (Mizoram University, a Central University) to ₹1,70,000 (SRM Sikkim). That is a 3x difference for the same two-year degree format.</p>
+<p>Online MBA solves that access problem directly. Four NE-based universities now offer UGC-DEB approved online MBA programmes. The fee range runs from ₹54,000 (Mizoram University, a Central University) to ₹1,70,000 (SRM Sikkim). That is a 3x difference for the same two-year degree format.</p>
 
 <p>This guide serves two audiences. If you are a learner IN the Northeast, these are your home-region universities with local credibility and alumni networks. If you are a learner OUTSIDE the Northeast, Mizoram University and Sikkim Manipal are pan-India budget options with government or heritage credibility that compete directly with universities charging 2x to 5x more.</p>
 
 <p>If you are specifically researching Sikkim Manipal University in depth, see our dedicated <a href="/blog/smu-online-mba-review">SMU online MBA review 2026</a> with fee breakdown, dual specialisation analysis, and honest verdict.</p>
 
-<h2>All 5 NE Universities Offering Online MBA: Fee and NAAC Comparison</h2>
+<h2>All 4 NE Universities Offering Online MBA: Fee and NAAC Comparison</h2>
 
 <div style="overflow-x:auto">
 <table style="width:100%;border-collapse:collapse;font-size:14px">
@@ -42268,14 +42268,6 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <td style="padding:8px">Finance, HR, Marketing, Ops, Project Mgmt, SCM</td>
 </tr>
 <tr style="background:#f8fafc">
-<td style="padding:8px"><a href="/universities/shri-ramasamy-memorial-university-online">SRMU Online</a></td>
-<td style="padding:8px">Gangtok, Sikkim</td>
-<td style="padding:8px;text-align:center">A+</td>
-<td style="padding:8px;text-align:center">Not ranked</td>
-<td style="padding:8px;text-align:right">₹60K to ₹1.50L</td>
-<td style="padding:8px">Finance, Marketing, HR, Ops, Data Science, Digital Marketing, Intl Business</td>
-</tr>
-<tr>
 <td style="padding:8px"><a href="/universities/sikkim-manipal-university-online">Sikkim Manipal University (SMU) Online</a></td>
 <td style="padding:8px">Gangtok, Sikkim</td>
 <td style="padding:8px;text-align:center">A+</td>
@@ -42309,7 +42301,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>If your primary goal is a government job or PSU eligibility, also see our guide on <a href="/blog/is-online-degree-valid-india-2026">online degree validity in India 2026</a> covering UGC-DEB rules, Supreme Court rulings, and UPSC eligibility.</p>
 
-<h2>Budget Tier: Assam Don Bosco and SRMU</h2>
+<h2>Budget Tier: Assam Don Bosco University</h2>
 
 <h3>Assam Don Bosco University Online, Guwahati</h3>
 
@@ -42319,15 +42311,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>ADBU is based in Guwahati, the commercial hub of Northeast India. For candidates working in Assam's tea, oil, or logistics sectors, the local alumni network and institutional familiarity carry practical value that pan-India universities may not match.</p>
 
-<h3>Shri Ramasamy Memorial University (SRMU) Online, Gangtok</h3>
-
-<p>SRMU is a Sikkim-based university with NAAC A+ accreditation. The online MBA offers 7 specialisations, the widest menu among NE universities. This includes Data Science, Digital Marketing, and International Business, tracks that most NE competitors do not offer.</p>
-
-<p>Fee range: ₹60,000 to ₹1,50,000. At the lower end, SRMU competes directly with Mizoram University on price while offering nearly triple the specialisation options. The trade-off: SRMU is a newer institution with a smaller alumni base compared to SMU or MZU. Brand recognition outside Sikkim is limited.</p>
-
-<p>For candidates who want a broad specialisation menu at a budget price and are less concerned about brand prestige, SRMU fills a gap that other NE universities leave open.</p>
-
-<h2>Manipal Brand Tier: SMU and SRM Sikkim</h2>
+<h2>Branded Tier: SMU and SRM Sikkim</h2>
 
 <h3>Sikkim Manipal University (SMU) Online, Gangtok</h3>
 
@@ -42339,7 +42323,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <h3>SRM University Sikkim Online, Gangtok</h3>
 
-<p>SRM University Sikkim operates under the SRM Group brand, the same network as SRM IST Chennai (NAAC A++, NIRF #11). The Sikkim campus is a separate institution with its own NAAC A+ accreditation and UGC-DEB entitlement. The online MBA offers 3 specialisations: Finance, Marketing, and HR.</p>
+<p>SRM University Sikkim (formally Shri Ramasamy Memorial University) operates under the SRM Group brand, the same network as SRM IST Chennai (NAAC A++, NIRF #11). The Sikkim campus is a separate institution with its own NAAC A+ accreditation and UGC-DEB entitlement. The online MBA offers 3 specialisations: Finance, Marketing, and HR.</p>
 
 <p>Total fee: ₹1,70,000. The programme includes Coursera certifications bundled into the curriculum and placement support through a 3000+ company network. SRM Sikkim's differentiator is the SRM Group brand, which carries recognition in southern and western India that other NE universities do not.</p>
 
@@ -42349,7 +42333,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p><strong>Assam Down Town University (AdtU)</strong> is UGC-DEB entitled and holds NAAC A+ accreditation, but its online programme currently offers only MCA (Master of Computer Applications). No online MBA is available from AdtU as of July 2026. If AdtU launches an online MBA in a future intake, it would be a strong addition given its NAAC A+ grade and Guwahati base.</p>
 
-<p><strong>Universities from Meghalaya, Manipur, Nagaland, Tripura, and Arunachal Pradesh</strong> do not appear in the UGC-DEB entitled list for online MBA programmes as of July 2026. The Northeast's online MBA options are currently concentrated in Sikkim (3 universities), Assam (1), and Mizoram (1). This may change as UGC expands online education entitlements.</p>
+<p><strong>Universities from Meghalaya, Manipur, Nagaland, Tripura, and Arunachal Pradesh</strong> do not appear in the UGC-DEB entitled list for online MBA programmes as of July 2026. The Northeast's online MBA options are currently concentrated in Sikkim (2 universities), Assam (1), and Mizoram (1). This may change as UGC expands online education entitlements.</p>
 
 <h2>The Career Break Question: Why Online MBA Fits the Northeast</h2>
 
@@ -42361,7 +42345,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <div class="cta-box" style="background:#0f172a;color:#fff;border-radius:12px;padding:24px;margin:32px 0;text-align:center">
   <p style="font-size:18px;font-weight:700;margin:0 0 8px">Working professional in the Northeast ready to compare online MBA options?</p>
-  <p style="margin:0 0 12px">Our counsellors help you pick between MZU, SMU, SRM Sikkim, Don Bosco, and SRMU based on your budget and career goals. Free, no pressure.</p>
+  <p style="margin:0 0 12px">Our counsellors help you pick between MZU, SMU, SRM Sikkim, and Don Bosco based on your budget and career goals. Free, no pressure.</p>
   <a href="/contact" style="display:inline-block;background:#f97316;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px">Talk to a Counsellor</a>
   <p style="font-size:12px;margin:8px 0 0;opacity:0.7">No paid rankings. No referral commissions. Just data.</p>
 </div>

@@ -1130,7 +1130,7 @@ export const PROGRAMS_DATA: Record<string, Record<string, ProgramData>> = {
     
     
   },
-  'shri-ramasamy-memorial-university-online': {
+  'srm-university-sikkim-online': {
     'MCA': {
       specs: ['Data Science and Machine Learning', 'Cyber Security & Cyber Forensics', 'Artificial Intelligence & Gen AI'],
       syllabus: {
