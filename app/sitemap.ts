@@ -89,6 +89,9 @@ function urlMeta(path: string): { priority: number; freq: Freq } {
   if (path === '/universities' || path === '/programs' || path === '/compare')
     return { priority: 0.92, freq: 'weekly' }
 
+  if (path.startsWith('/compare/'))
+    return { priority: 0.80, freq: 'monthly' }
+
   if (path === '/blog' || path === '/guides')
     return { priority: 0.82, freq: 'daily' }
 

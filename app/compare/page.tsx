@@ -52,24 +52,40 @@ export async function generateMetadata(
 
 // Popular comparison pairs — MBA
 const MBA_PAIRS = [
-  { label: 'Amity Online MBA vs NMIMS Online MBA', href: '/compare/amity-vs-nmims' },
-  { label: 'Amity Online MBA vs Manipal MUJ Online MBA', href: '/compare/amity-vs-manipal-jaipur' },
-  { label: 'MUJ Online MBA vs NMIMS Online MBA', href: '/compare/manipal-jaipur-vs-nmims' },
-  { label: 'MUJ Online MBA vs MAHE Online MBA', href: '/compare/manipal-jaipur-vs-manipal-mahe' },
-  { label: 'NMIMS Online MBA vs Symbiosis Online MBA', href: '/compare/nmims-vs-symbiosis' },
-  { label: 'Amity Online MBA vs Symbiosis Online MBA', href: '/compare/amity-vs-symbiosis' },
+  { label: 'NMIMS vs Symbiosis Online MBA', href: '/compare/nmims-vs-symbiosis' },
+  { label: 'Amity vs Manipal MUJ Online MBA', href: '/compare/amity-vs-manipal-jaipur' },
+  { label: 'Amity vs NMIMS Online MBA', href: '/compare/amity-vs-nmims' },
   { label: 'Sikkim Manipal vs Amity Online MBA', href: '/compare/sikkim-manipal-vs-amity' },
   { label: 'Amrita vs NMIMS Online MBA', href: '/compare/amrita-vs-nmims' },
+  { label: 'MUJ vs NMIMS Online MBA', href: '/compare/manipal-jaipur-vs-nmims' },
+  { label: 'Amity vs LPU Online MBA', href: '/compare/amity-vs-lpu' },
+  { label: 'LPU vs Manipal MUJ Online MBA', href: '/compare/lpu-vs-manipal-jaipur' },
+  { label: 'Chandigarh University vs LPU Online MBA', href: '/compare/chandigarh-vs-lpu' },
+  { label: 'Amity vs Chandigarh University Online MBA', href: '/compare/amity-vs-chandigarh' },
+  { label: 'MUJ vs Chandigarh University Online MBA', href: '/compare/manipal-jaipur-vs-chandigarh' },
+  { label: 'JAIN vs LPU Online MBA', href: '/compare/jain-vs-lpu' },
+  { label: 'Amity vs JAIN Online MBA', href: '/compare/amity-vs-jain' },
+  { label: 'Amity vs Symbiosis Online MBA', href: '/compare/amity-vs-symbiosis' },
+  { label: 'MUJ vs MAHE Online MBA', href: '/compare/manipal-jaipur-vs-manipal-mahe' },
+  { label: 'IGNOU vs LPU Online MBA', href: '/compare/ignou-vs-lpu' },
 ]
 
 // Popular comparison pairs — MCA
 const MCA_PAIRS = [
+  { label: 'Amity vs LPU Online MCA', href: '/compare/amity-vs-lpu-mca' },
+  { label: 'MUJ vs Chandigarh University Online MCA', href: '/compare/manipal-jaipur-vs-chandigarh-mca' },
   { label: 'Amity Online MCA vs JAIN Online MCA', href: '/compare?a=amity-university-online&b=jain-university-online' },
-  { label: 'LPU Online MCA vs Chandigarh University Online MCA', href: '/compare?a=lovely-professional-university-online&b=chandigarh-university-online' },
-  { label: 'Manipal MUJ Online MCA vs Sikkim Manipal Online MCA', href: '/compare?a=manipal-university-jaipur-online&b=sikkim-manipal-university-online' },
-  { label: 'UPES Online MCA vs Galgotias University Online MCA', href: '/compare?a=upes-online&b=galgotias-university-online' },
-  { label: 'VIT Online MCA vs SRM Institute Online MCA', href: '/compare?a=vit-vellore-online&b=srm-institute-science-technology-online' },
-  { label: 'Amity Online MCA vs Manipal MUJ Online MCA', href: '/compare?a=amity-university-online&b=manipal-university-jaipur-online' },
+  { label: 'LPU vs Chandigarh University Online MCA', href: '/compare?a=lovely-professional-university-online&b=chandigarh-university-online' },
+  { label: 'MUJ vs Sikkim Manipal Online MCA', href: '/compare?a=manipal-university-jaipur-online&b=sikkim-manipal-university-online' },
+  { label: 'Amity vs MUJ Online MCA', href: '/compare?a=amity-university-online&b=manipal-university-jaipur-online' },
+]
+
+// Popular comparison pairs — BBA & BCA
+const BBA_BCA_PAIRS = [
+  { label: 'Symbiosis vs NMIMS Online BBA', href: '/compare/symbiosis-vs-nmims-bba' },
+  { label: 'Amity vs LPU Online BBA', href: '/compare/amity-vs-lpu-bba' },
+  { label: 'Sharda vs Galgotias Online BBA', href: '/compare/sharda-vs-galgotias-bba' },
+  { label: 'Amity vs LPU Online BCA', href: '/compare/amity-vs-lpu-bca' },
 ]
 
 const FAQS = [
@@ -166,6 +182,20 @@ export default async function ComparePage(
               <div className="w-8 h-0.5 bg-orange-500 mb-4" />
               <div className="space-y-2">
                 {MCA_PAIRS.map(pair => (
+                  <Link
+                    key={pair.href}
+                    href={pair.href}
+                    className="flex items-center justify-between px-4 py-3.5 rounded-xl border border-slate-200 hover:border-orange-300 hover:bg-orange-50/30 transition-all group no-underline"
+                  >
+                    <span className="text-sm font-medium text-slate-700 group-hover:text-slate-900">{pair.label}</span>
+                    <ChevronRight size={14} className="text-slate-300 group-hover:text-orange-500 flex-shrink-0 ml-2 transition-colors" />
+                  </Link>
+                ))}
+              </div>
+              <p className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-1 mt-8">Online BBA & BCA</p>
+              <div className="w-8 h-0.5 bg-orange-500 mb-4" />
+              <div className="space-y-2">
+                {BBA_BCA_PAIRS.map(pair => (
                   <Link
                     key={pair.href}
                     href={pair.href}
