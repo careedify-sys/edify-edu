@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
+import { validateBody } from '@/lib/validate-body'
+
+const escHtml = (s: string = '') => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;')
 
 // Simple in-memory rate limiter (resets on cold start — good enough for edge)
 const RATE_LIMIT_WINDOW = 60_000 // 1 minute
@@ -25,8 +28,25 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const body = await req.json()
-    const { name, phone, email, state, program, university, preferredUniversity, sourcePage, source, couponCode, bestTimeToCall, notes, universityId } = body
+    const raw = await req.json()
+    const check = validateBody(raw, 10000)
+    if (!check.ok) {
+      return NextResponse.json({ error: check.error }, { status: check.status })
+    }
+
+    const cap = (v: unknown, max: number) => typeof v === 'string' ? v.slice(0, max) : ''
+    const name = cap(raw.name, 200)
+    const phone = cap(raw.phone, 20)
+    const email = cap(raw.email, 200)
+    const state = cap(raw.state, 200)
+    const program = cap(raw.program, 200)
+    const university = cap(raw.university, 200)
+    const preferredUniversity = cap(raw.preferredUniversity, 200)
+    const sourcePage = cap(raw.sourcePage, 500)
+    const source = cap(raw.source, 200)
+    const couponCode = cap(raw.couponCode, 100)
+    const bestTimeToCall = cap(raw.bestTimeToCall, 200)
+    const notes = cap(raw.notes, 5000)
 
     if (!name || !phone) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
@@ -55,22 +75,22 @@ export async function POST(req: NextRequest) {
       resend.emails.send({
         from: 'edifyedu.in Leads <leads@edifyedu.in>',
         to: [process.env.LEAD_EMAIL_PRIMARY || 'hello@edifyedu.in', ...(process.env.LEAD_EMAIL_SECONDARY ? [process.env.LEAD_EMAIL_SECONDARY] : [])],
-        subject: `🎓 New Lead — ${name} | ${programValue} @ ${universityValue} | from: ${sourceValue}`,
+        subject: `New Lead: ${name.slice(0, 50)} | ${programValue.slice(0, 50)} @ ${universityValue.slice(0, 50)}`,
         html: `
           <div style="font-family:sans-serif;max-width:500px">
             <h2 style="color:#0f172a">New Enquiry: edifyedu.in</h2>
             <table style="width:100%;border-collapse:collapse;font-size:14px">
-              <tr><td style="padding:8px;background:#f8fafc;font-weight:600;width:40%">Name</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${name}</td></tr>
-              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Phone</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">+91 ${phone}</td></tr>
-              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Email</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${email || 'Not provided'}</td></tr>
-              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">State</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${stateValue}</td></tr>
-              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Interested In</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${programValue}</td></tr>
-              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">University</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${universityValue}</td></tr>
-              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Source</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${sourceValue}</td></tr>
-              ${couponCode ? `<tr><td style="padding:8px;background:#f8fafc;font-weight:600">Coupon</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${couponCode}</td></tr>` : ''}
-              ${bestTimeToCall ? `<tr><td style="padding:8px;background:#f8fafc;font-weight:600">Best Time</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${bestTimeToCall}</td></tr>` : ''}
-              ${notes ? `<tr><td style="padding:8px;background:#f8fafc;font-weight:600">Notes</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${notes}</td></tr>` : ''}
-              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Submitted At</td><td style="padding:8px">${timestamp}</td></tr>
+              <tr><td style="padding:8px;background:#f8fafc;font-weight:600;width:40%">Name</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${escHtml(name)}</td></tr>
+              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Phone</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">+91 ${escHtml(phone)}</td></tr>
+              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Email</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${escHtml(email || 'Not provided')}</td></tr>
+              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">State</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${escHtml(stateValue)}</td></tr>
+              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Interested In</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${escHtml(programValue)}</td></tr>
+              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">University</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${escHtml(universityValue)}</td></tr>
+              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Source</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${escHtml(sourceValue)}</td></tr>
+              ${couponCode ? `<tr><td style="padding:8px;background:#f8fafc;font-weight:600">Coupon</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${escHtml(couponCode)}</td></tr>` : ''}
+              ${bestTimeToCall ? `<tr><td style="padding:8px;background:#f8fafc;font-weight:600">Best Time</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${escHtml(bestTimeToCall)}</td></tr>` : ''}
+              ${notes ? `<tr><td style="padding:8px;background:#f8fafc;font-weight:600">Notes</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${escHtml(notes)}</td></tr>` : ''}
+              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Submitted At</td><td style="padding:8px">${escHtml(timestamp)}</td></tr>
             </table>
           </div>
         `,

@@ -6,7 +6,7 @@ export async function POST(req: NextRequest) {
   // Simple API auth — must pass X-Admin-Token header matching ADMIN_API_SECRET env var
   const adminSecret = process.env.ADMIN_API_SECRET
   const providedToken = req.headers.get('X-Admin-Token')
-  if (adminSecret && providedToken !== adminSecret) {
+  if (!adminSecret || providedToken !== adminSecret) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
