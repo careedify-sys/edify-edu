@@ -3,15 +3,15 @@ import { NextRequest, NextResponse } from 'next/server'
 // GET /api/leads/test?url=<webhookUrl>
 // Verifies the Google Apps Script is live — called from admin Settings tab
 export async function GET(req: NextRequest) {
-  const cookie = req.cookies.get('edify_session')?.value
+  const cookie = req.cookies.get('edify_admin_session')?.value
   const sessionToken = process.env.ADMIN_SESSION_TOKEN
-  if (!cookie || cookie !== sessionToken) {
+  if (!cookie || !sessionToken || cookie !== sessionToken) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
   const url = req.nextUrl.searchParams.get('url')
-  if (!url) {
-    return NextResponse.json({ error: 'Missing url parameter' }, { status: 400 })
+  if (!url || !url.startsWith('https://script.google.com/macros/')) {
+    return NextResponse.json({ error: 'URL not allowed' }, { status: 400 })
   }
 
   try {
