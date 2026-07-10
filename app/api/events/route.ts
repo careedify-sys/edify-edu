@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createSupabaseServiceClient, createSupabaseServerClient } from '@/lib/supabase/server';
+import { createSupabaseServerClient } from '@/lib/supabase/server';
 
 const RATE_LIMIT_WINDOW = 60_000
 const RATE_LIMIT_MAX = 30 // events fire more frequently
@@ -25,11 +25,10 @@ export async function POST(req: NextRequest) {
 
   try {
     const body = await req.json();
-    const supabase = createSupabaseServiceClient();
-    const ssrClient = await createSupabaseServerClient();
-    const { data: { user } } = await ssrClient.auth.getUser();
+    const supabase = await createSupabaseServerClient();
+    const { data: { user } } = await supabase.auth.getUser();
 
-    await supabase.from('events').insert({
+    const { error } = await supabase.from('events').insert({
       user_id: user?.id ?? null,
       anon_session_id: body.anon_session_id ?? null,
       event_type: body.event_type,
@@ -37,6 +36,11 @@ export async function POST(req: NextRequest) {
       metadata: body.metadata ?? null,
       page_path: body.page_path ?? null,
     });
+
+    if (error) {
+      console.error('Event insert failed (check RLS policy)', error);
+      return NextResponse.json({ error: 'Insert failed' }, { status: 500 });
+    }
 
     return NextResponse.json({ ok: true });
   } catch (e) {

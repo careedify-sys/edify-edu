@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createSupabaseServiceClient, createSupabaseServerClient } from '@/lib/supabase/server';
+import { createSupabaseServerClient } from '@/lib/supabase/server';
 
 const RATE_LIMIT_WINDOW = 60_000
 const RATE_LIMIT_MAX = 15
@@ -25,14 +25,13 @@ export async function POST(req: NextRequest) {
 
   try {
     const body = await req.json();
-    const supabase = createSupabaseServiceClient();
-    const ssrClient = await createSupabaseServerClient();
-    const { data: { user } } = await ssrClient.auth.getUser();
+    const supabase = await createSupabaseServerClient();
+    const { data: { user } } = await supabase.auth.getUser();
 
     const ua = req.headers.get('user-agent') || '';
     const deviceType = /Mobile/i.test(ua) ? 'mobile' : /Tablet/i.test(ua) ? 'tablet' : 'desktop';
 
-    await supabase.from('verifications').insert({
+    const { error } = await supabase.from('verifications').insert({
       user_id: user?.id ?? null,
       anon_session_id: body.anon_session_id,
       university_id: body.university_id,
@@ -41,6 +40,11 @@ export async function POST(req: NextRequest) {
       user_agent: ua,
       device_type: deviceType,
     });
+
+    if (error) {
+      console.error('Verify log insert failed (check RLS policy)', error);
+      return NextResponse.json({ error: 'Insert failed' }, { status: 500 });
+    }
 
     return NextResponse.json({ ok: true });
   } catch (e) {
