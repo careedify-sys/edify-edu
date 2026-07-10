@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createSupabaseServerClient } from '@/lib/supabase/server';
+import { validateBody } from '@/lib/validate-body';
 
 const RATE_LIMIT_WINDOW = 60_000
 const RATE_LIMIT_MAX = 15
@@ -24,7 +25,13 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const body = await req.json();
+    const raw = await req.json();
+    const check = validateBody(raw);
+    if (!check.ok) {
+      return NextResponse.json({ error: check.error }, { status: check.status });
+    }
+    const body = check.body;
+
     const supabase = await createSupabaseServerClient();
     const { data: { user } } = await supabase.auth.getUser();
 
@@ -33,10 +40,10 @@ export async function POST(req: NextRequest) {
 
     const { error } = await supabase.from('verifications').insert({
       user_id: user?.id ?? null,
-      anon_session_id: body.anon_session_id,
-      university_id: body.university_id,
-      source: body.source ?? null,
-      referrer_url: body.referrer_url ?? null,
+      anon_session_id: typeof body.anon_session_id === 'string' ? body.anon_session_id : null,
+      university_id: typeof body.university_id === 'string' ? body.university_id : null,
+      source: typeof body.source === 'string' ? body.source.slice(0, 200) : null,
+      referrer_url: typeof body.referrer_url === 'string' ? body.referrer_url.slice(0, 2000) : null,
       user_agent: ua,
       device_type: deviceType,
     });

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
+import { validateBody } from '@/lib/validate-body'
 
 // Simple in-memory rate limiter (resets on cold start — good enough for edge)
 const RATE_LIMIT_WINDOW = 60_000 // 1 minute
@@ -25,8 +26,25 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const body = await req.json()
-    const { name, phone, email, state, program, university, preferredUniversity, sourcePage, source, couponCode, bestTimeToCall, notes, universityId } = body
+    const raw = await req.json()
+    const check = validateBody(raw, 10000)
+    if (!check.ok) {
+      return NextResponse.json({ error: check.error }, { status: check.status })
+    }
+
+    const cap = (v: unknown, max: number) => typeof v === 'string' ? v.slice(0, max) : ''
+    const name = cap(raw.name, 200)
+    const phone = cap(raw.phone, 20)
+    const email = cap(raw.email, 200)
+    const state = cap(raw.state, 200)
+    const program = cap(raw.program, 200)
+    const university = cap(raw.university, 200)
+    const preferredUniversity = cap(raw.preferredUniversity, 200)
+    const sourcePage = cap(raw.sourcePage, 500)
+    const source = cap(raw.source, 200)
+    const couponCode = cap(raw.couponCode, 100)
+    const bestTimeToCall = cap(raw.bestTimeToCall, 200)
+    const notes = cap(raw.notes, 5000)
 
     if (!name || !phone) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })

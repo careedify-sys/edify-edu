@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createSupabaseServerClient } from '@/lib/supabase/server';
+import { validateBody } from '@/lib/validate-body';
 
 const RATE_LIMIT_WINDOW = 60_000
 const RATE_LIMIT_MAX = 5
@@ -24,21 +25,31 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const body = await req.json();
-    const { name, whatsapp, email, university, question } = body;
+    const raw = await req.json();
+    const check = validateBody(raw, 10000);
+    if (!check.ok) {
+      return NextResponse.json({ error: check.error }, { status: check.status });
+    }
 
-    if (!name?.trim() || !whatsapp?.trim() || !question?.trim()) {
+    const cap = (v: unknown, max: number) => typeof v === 'string' ? v.trim().slice(0, max) : '';
+    const name = cap(raw.name, 200);
+    const whatsapp = cap(raw.whatsapp, 20);
+    const email = cap(raw.email, 200);
+    const university = cap(raw.university, 200);
+    const question = cap(raw.question, 5000);
+
+    if (!name || !whatsapp || !question) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
     const supabase = await createSupabaseServerClient();
 
     const { error } = await supabase.from('pro_report_requests').insert({
-      name: name.trim(),
-      whatsapp: whatsapp.trim(),
-      email: email?.trim() || null,
-      university_interest: university?.trim() || null,
-      question: question.trim(),
+      name,
+      whatsapp,
+      email: email || null,
+      university_interest: university || null,
+      question,
       status: 'new',
     });
 
