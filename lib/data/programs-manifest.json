@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "university_slug": "alagappa-university-online",
     "program": "bcom",
@@ -7203,7 +7203,7 @@
     "university_slug": "amity-university-online",
     "program": "bca",
     "spec_slug": "computer-applications-financial-technology-ai",
-    "spec_name": "Computer Applications â€“ Financial Technology & AI"
+    "spec_name": "Computer Applications – Financial Technology & AI"
   },
   {
     "university_slug": "lovely-professional-university-online",
@@ -9069,7 +9069,7 @@
     "university_slug": "uttaranchal-university-online",
     "program": "ba",
     "spec_slug": "general-sociology",
-    "spec_name": "General â€“ Sociology"
+    "spec_name": "General – Sociology"
   },
   {
     "university_slug": "andhra-university-online",
@@ -9537,7 +9537,7 @@
     "university_slug": "university-of-lucknow-online",
     "program": "mba",
     "spec_slug": "human-resources-dual-specialisation-choose-any",
-    "spec_name": "Human Resources (Dual Specialisation â€” choose any"
+    "spec_name": "Human Resources (Dual Specialisation — choose any"
   },
   {
     "university_slug": "university-of-lucknow-online",
@@ -10251,13 +10251,13 @@
     "university_slug": "gla-university-online",
     "program": "bca",
     "spec_slug": "computer-applications-data-science",
-    "spec_name": "Computer Applications â€“ Data Science"
+    "spec_name": "Computer Applications – Data Science"
   },
   {
     "university_slug": "gla-university-online",
     "program": "bca",
     "spec_slug": "computer-applications-financial-technology-ai",
-    "spec_name": "Computer Applications â€“ Financial Technology & AI"
+    "spec_name": "Computer Applications – Financial Technology & AI"
   },
   {
     "university_slug": "gla-university-online",
@@ -13978,197 +13978,5 @@
     "program": "mca",
     "spec_slug": "blockchain-technology",
     "spec_name": "Blockchain Technology"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "bcom",
-    "spec_slug": "finance",
-    "spec_name": "Finance"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "bcom",
-    "spec_slug": "accounting",
-    "spec_name": "Accounting"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "bcom",
-    "spec_slug": "taxation",
-    "spec_name": "Taxation"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "bcom",
-    "spec_slug": "e-commerce",
-    "spec_name": "E-Commerce"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "bcom",
-    "spec_slug": "banking-insurance",
-    "spec_name": "Banking & Insurance"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "bba",
-    "spec_slug": "finance",
-    "spec_name": "Finance"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "bba",
-    "spec_slug": "marketing",
-    "spec_name": "Marketing"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "bba",
-    "spec_slug": "human-resource-management",
-    "spec_name": "Human Resource Management"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "bba",
-    "spec_slug": "entrepreneurship",
-    "spec_name": "Entrepreneurship"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "bba",
-    "spec_slug": "digital-marketing",
-    "spec_name": "Digital Marketing"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "bba",
-    "spec_slug": "retail-management",
-    "spec_name": "Retail Management"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "bca",
-    "spec_slug": "data-science",
-    "spec_name": "Data Science"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "bca",
-    "spec_slug": "web-development",
-    "spec_name": "Web Development"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "bca",
-    "spec_slug": "cloud-computing",
-    "spec_name": "Cloud Computing"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "bca",
-    "spec_slug": "cybersecurity",
-    "spec_name": "Cybersecurity"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "bca",
-    "spec_slug": "ai-ml",
-    "spec_name": "AI & ML"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "bca",
-    "spec_slug": "mobile-development",
-    "spec_name": "Mobile Development"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "mcom",
-    "spec_slug": "finance",
-    "spec_name": "Finance"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "mcom",
-    "spec_slug": "accounting",
-    "spec_name": "Accounting"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "mcom",
-    "spec_slug": "taxation",
-    "spec_name": "Taxation"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "mcom",
-    "spec_slug": "business-studies",
-    "spec_name": "Business Studies"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "mcom",
-    "spec_slug": "e-commerce",
-    "spec_name": "E-Commerce"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "mba",
-    "spec_slug": "finance",
-    "spec_name": "Finance"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "mba",
-    "spec_slug": "marketing",
-    "spec_name": "Marketing"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "mba",
-    "spec_slug": "human-resource-management",
-    "spec_name": "Human Resource Management"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "mba",
-    "spec_slug": "operations-management",
-    "spec_name": "Operations Management"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "mba",
-    "spec_slug": "data-science",
-    "spec_name": "Data Science"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "mba",
-    "spec_slug": "digital-marketing",
-    "spec_name": "Digital Marketing"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "mba",
-    "spec_slug": "international-business",
-    "spec_name": "International Business"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "mca",
-    "spec_slug": "data-science-and-machine-learning",
-    "spec_name": "Data Science and Machine Learning"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "mca",
-    "spec_slug": "cyber-security-cyber-forensics",
-    "spec_name": "Cyber Security & Cyber Forensics"
-  },
-  {
-    "university_slug": "srm-university-sikkim-online",
-    "program": "mca",
-    "spec_slug": "artificial-intelligence-gen-ai",
-    "spec_name": "Artificial Intelligence & Gen AI"
   }
 ]
