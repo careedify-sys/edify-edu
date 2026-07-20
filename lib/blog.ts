@@ -322,7 +322,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <tbody>
     <tr><td>Government employee plus PSU promotion</td><td>IGNOU MBAOL Rs 58K</td><td>Lowest cost UGC-DEB recognised</td></tr>
     <tr><td>IT services upgrade (TCS, Infosys)</td><td>NMIMS Online MBA Rs 2.10 lakh</td><td>Brand pull plus career service</td></tr>
-    <tr><td>BFSI Mumbai plus Delhi NCR</td><td>NMIMS or Symbiosis SCDL</td><td>Strong BFSI alumni network</td></tr>
+    <tr><td>BFSI Mumbai plus Delhi NCR</td><td>NMIMS or Symbiosis SSODL</td><td>Strong BFSI alumni network</td></tr>
     <tr><td>Tech plus FinTech Bengaluru</td><td><a href="/blog/jain-online-mba-review-2026" class="ilink">Jain University online MBA review</a> (Rs 1.50 lakh)</td><td>Bengaluru ecosystem plus FinTech spec</td></tr>
     <tr><td>HR plus Marketing function</td><td>Amity Online MBA Rs 1.99 lakh</td><td>19-plus specialisations plus alumni</td></tr>
     <tr><td>Healthcare plus Pharma</td><td>NMIMS Healthcare Mgmt or DY Patil</td><td>Healthcare placement network</td></tr>
@@ -569,7 +569,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <tbody>
     <tr><td>BFSI consulting senior track</td><td>NMIMS Online or MAHE Online</td><td>Strongest BFSI alumni plus brand pull</td></tr>
     <tr><td>Tech plus AI plus FinTech career</td><td>JAIN Online or Chandigarh University</td><td>Cloud, AI specialisations strong</td></tr>
-    <tr><td>HR functional growth</td><td>Symbiosis SCDL or Amity Online</td><td>SHRM-aligned curriculum</td></tr>
+    <tr><td>HR functional growth</td><td>Symbiosis SSODL or Amity Online</td><td>NAAC A++ HR specialisation plus Symbiosis brand pull</td></tr>
     <tr><td>Healthcare management</td><td>NMIMS or DY Patil Pune</td><td>Healthcare placement network</td></tr>
     <tr><td>Govt plus PSU eligibility</td><td>IGNOU MBAOL or <a href="/blog/du-online-mba-delhi-university-2026" class="ilink">DU SOL</a></td><td>Cheapest plus universal recognition</td></tr>
     <tr><td>International career</td><td>UWA-IIMK Global MBA or MAHE</td><td>AACSB plus IoE plus WES recognised</td></tr>
