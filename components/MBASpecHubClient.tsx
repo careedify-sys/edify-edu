@@ -7,6 +7,7 @@ import { UNIS_SLIM, formatFeeSlim } from '@/lib/data-slim'
 import { getCanonicalSpec, type CanonicalSpec } from '@/lib/specMapping'
 import { getSpecFAQs } from '@/lib/specFaqs'
 import UniversityCard from '@/components/UniversityCard'
+import { SPEC_HUB_EDITORIAL } from '@/lib/data/spec-hub-editorial'
 
 interface Props {
   specSlug: string
@@ -17,6 +18,7 @@ interface Props {
 
 export default function MBASpecHubClient({ specSlug, specName, customH1, customIntro }: Props) {
   const canonical = getCanonicalSpec(specSlug)
+  const editorial = SPEC_HUB_EDITORIAL[specSlug]
 
   const mbaUnis = useMemo(() => {
     const canonical = getCanonicalSpec(specSlug)
@@ -52,7 +54,8 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
   const uniCount = mbaUnis.length
   const feeFloorStr = hasFees ? formatFeeSlim(feeFloor) : 'Contact our counsellor for current fee details'
   const feeCeilingStr = hasFees ? formatFeeSlim(feeCeiling) : ''
-  const faqs = getSpecFAQs(specName, uniCount, feeFloorStr, feeCeilingStr)
+  const templateFaqs = getSpecFAQs(specName, uniCount, feeFloorStr, feeCeilingStr)
+  const faqs = editorial ? [...editorial.faqs, ...templateFaqs] : templateFaqs
 
   return (
     <>
@@ -111,8 +114,53 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
             An online MBA in {specName} from a UGC-DEB approved university is legally equivalent to a campus MBA. The specialisation typically begins from Semester 3 after completing core MBA foundation courses in Year 1 (Accounting for Managers, Managerial Economics, Marketing Management, Statistics, Financial Management, HR Management, and Business Research Methods).
           </p>
           <p className="text-sm text-slate-600 leading-relaxed">
-            {uniCount > 0 ? <>Currently, {uniCount} UGC-approved universities offer this specialisation with fees ranging from {feeFloorStr} to {feeCeilingStr}. All programmes listed below have been verified against official UGC-DEB and university portals.</> : <>Contact our counsellor for current fee details for this specialisation. All data is verified against official UGC-DEB and university portals.</>} EdifyEdu earns zero referral commissions from any university.
+            {uniCount > 0 ? <>Currently, {uniCount} UGC-approved universities offer this specialisation with fees ranging from {feeFloorStr} to {feeCeilingStr}. All programmes listed below have been verified against official UGC-DEB and university portals.</> : <>Contact our counsellor for current fee details for this specialisation. All data is verified against official UGC-DEB and university portals.</>} edifyedu.in earns zero referral commissions from any university.
           </p>
+        </section>
+      )}
+
+      {/* Spec Comparison Table (editorial pages only) */}
+      {editorial && mbaUnis.length > 0 && (
+        <section className="max-w-5xl mx-auto px-4 pb-8">
+          <h2 className="text-2xl font-bold mb-4" style={{ color: '#0B1533' }}>Compare Universities for Online MBA in {specName}</h2>
+          <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-slate-50 text-left text-slate-500">
+                  <th className="px-4 py-3 font-semibold">University</th>
+                  <th className="px-4 py-3 font-semibold">NIRF</th>
+                  <th className="px-4 py-3 font-semibold">NAAC</th>
+                  <th className="px-4 py-3 font-semibold">Total Fees</th>
+                </tr>
+              </thead>
+              <tbody>
+                {mbaUnis.slice(0, 10).map(u => (
+                  <tr key={u.id} className="border-t border-slate-100">
+                    <td className="px-4 py-3">
+                      <Link href={`/universities/${u.id}/mba`} className="font-medium text-blue-700 hover:underline">{u.name}</Link>
+                    </td>
+                    <td className="px-4 py-3">{u.nirfMgt ? `#${u.nirfMgt} (Mgmt)` : u.nirf > 0 && u.nirf < 200 ? `#${u.nirf}` : 'Not ranked'}</td>
+                    <td className="px-4 py-3">{u.naac || 'NA'}</td>
+                    <td className="px-4 py-3">{u.feeMin > 0 ? `${formatFeeSlim(u.feeMin)}${u.feeMax > u.feeMin ? ' - ' + formatFeeSlim(u.feeMax) : ''}` : 'Ask our counsellor'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-slate-400 mt-2">Fees are indicative totals for the full programme, drawn from our verified dataset. Fee structures change each admission cycle. <Link href="/contact" className="underline">Talk to our counsellor</Link> for the current structure.</p>
+          <p className="text-sm text-slate-600 leading-relaxed mt-4">
+            {hasFees ? `Total fees for an online MBA in ${specName} currently run from ${feeFloorStr} to ${feeCeilingStr} across ${uniCount} UGC-DEB approved universities.` : `Fee details vary by university for this specialisation.`} Approval and accreditation claims can be cross-checked on <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener" className="underline">deb.ugc.ac.in</a>, <a href="https://naac.gov.in" target="_blank" rel="noopener" className="underline">naac.gov.in</a> and <a href="https://nirfindia.org" target="_blank" rel="noopener" className="underline">nirfindia.org</a>.
+          </p>
+        </section>
+      )}
+
+      {/* Who Should Choose (editorial pages only) */}
+      {editorial && (
+        <section className="max-w-3xl mx-auto px-4 pb-8">
+          <h2 className="text-2xl font-bold mb-3" style={{ color: '#0B1533' }}>Who Should Choose an Online MBA in {specName}?</h2>
+          {editorial.whoShouldChoose.map((t, i) => (
+            <p key={i} className="text-sm text-slate-600 leading-relaxed mb-4">{t}</p>
+          ))}
         </section>
       )}
 
@@ -145,9 +193,15 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
               </ul>
             </div>
           </div>
-          <p className="text-sm text-slate-600 leading-relaxed">
-            Salary growth after an online MBA in {specName} depends on your prior experience, target industry, and active career management. Most online MBA graduates advance through internal promotions or self-directed job search rather than university placement cells. LinkedIn networking and domain-specific certifications amplify the MBA credential significantly.
-          </p>
+          {editorial ? (
+            editorial.careerOutcomes.map((t, i) => (
+              <p key={i} className="text-sm text-slate-600 leading-relaxed mb-3">{t}</p>
+            ))
+          ) : (
+            <p className="text-sm text-slate-600 leading-relaxed">
+              Salary growth after an online MBA in {specName} depends on your prior experience, target industry, and active career management. Most online MBA graduates advance through internal promotions or self-directed job search rather than university placement cells. LinkedIn networking and domain-specific certifications amplify the MBA credential significantly.
+            </p>
+          )}
         </section>
       )}
 
@@ -197,7 +251,7 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
             <Shield size={18} className="text-amber-500" /> Why Trust This Comparison?
           </h3>
           <p className="text-sm text-slate-600 leading-relaxed">
-            EdifyEdu earns zero referral commissions from any university. Every fee, NIRF rank, and accreditation is verified against official UGC-DEB, NAAC, and university portals. We can recommend a Rs 66,000 IGNOU MBA over a Rs 3 lakh programme when it genuinely fits your career goal. Independence is our business model, not a marketing claim.
+            edifyedu.in earns zero referral commissions from any university. Every fee, NIRF rank, and accreditation is verified against official UGC-DEB, NAAC, and university portals. We can recommend a Rs 66,000 IGNOU MBA over a Rs 3 lakh programme when it genuinely fits your career goal. Independence is our business model, not a marketing claim.
           </p>
         </div>
       </section>
@@ -214,6 +268,18 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
           ))}
         </div>
       </section>
+
+      {/* Further Reading (editorial pages only) */}
+      {editorial && editorial.relatedBlogs.length > 0 && (
+        <section className="max-w-3xl mx-auto px-4 pb-8">
+          <h3 className="text-lg font-bold mb-3" style={{ color: '#0B1533' }}>Further Reading</h3>
+          <ul className="text-sm text-slate-600 space-y-2 list-disc pl-5">
+            {editorial.relatedBlogs.map(b => (
+              <li key={b.slug}><Link href={`/blog/${b.slug}`} className="text-blue-700 hover:underline">{b.label}</Link></li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {/* Related Specialisations */}
       {canonical && canonical.relatedSpecs.length > 0 && (

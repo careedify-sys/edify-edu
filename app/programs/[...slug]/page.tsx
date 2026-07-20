@@ -14,6 +14,7 @@ import { getSpecFAQs } from '@/lib/specFaqs'
 import { getCanonicalSpec } from '@/lib/specMapping'
 import { RESCUED_PROGRAM_PATHS } from '@/lib/seo/rescued-pages'
 import { MBA_SPEC_SEO_OVERRIDES } from '@/lib/mba-spec-seo-overrides'
+import { SPEC_HUB_EDITORIAL } from '@/lib/data/spec-hub-editorial'
 import ProgramPageClient from '@/components/ProgramPageClient'
 import MBAHubClient from '@/components/MBAHubClient'
 import MBASpecHubClient from '@/components/MBASpecHubClient'
@@ -404,20 +405,37 @@ export default async function CatchAllProgramPage(
     const specFeeMin = hasSpecFees ? Math.min(...specFeeMinVals) : (feeMin > 0 ? feeMin : 0)
     const specFeeMax = hasSpecFees ? Math.max(...specFeeMaxVals) : (feeMax > 0 ? feeMax : 0)
     const specFAQs = getSpecFAQs(activeSpec, specMbaUnis.length || universities.length, formatFeeSlim(specFeeMin), formatFeeSlim(specFeeMax))
+    const specEditorial = SPEC_HUB_EDITORIAL[subSlug]
+    const allSpecFAQs = specEditorial ? [...specEditorial.faqs, ...specFAQs] : specFAQs
     const specFaqSchema = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      mainEntity: specFAQs.map(f => ({
+      mainEntity: allSpecFAQs.map(f => ({
         '@type': 'Question',
         name: f.q,
         acceptedAnswer: { '@type': 'Answer', text: f.a },
       })),
     }
+    const specItemListSchema = specEditorial ? {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: `Universities offering Online MBA in ${activeSpec}`,
+      itemListElement: [...specMbaUnis]
+        .sort((a, b) => ((a.nirf > 0 && a.nirf < 200 ? a.nirf : 999) - (b.nirf > 0 && b.nirf < 200 ? b.nirf : 999)))
+        .slice(0, 10)
+        .map((u, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: u.name,
+          url: `https://edifyedu.in/universities/${u.id}/mba`,
+        })),
+    } : null
     return (
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(specFaqSchema) }} />
+        {specItemListSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(specItemListSchema) }} />}
         <MBASpecHubClient
           specSlug={subSlug}
           specName={activeSpec}
