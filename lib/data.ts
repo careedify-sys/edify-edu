@@ -1041,8 +1041,8 @@ export const UNIVERSITIES: University[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 130000,
-    feeMax: 150000,
+    feeMin: 118000,
+    feeMax: 130000,
     emiFrom: 5417,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -1055,7 +1055,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing Management', 'Finance', 'Human Resource Management', 'Operation and Supply Chain Management', 'Data Science and Business Analytics', 'Digital Marketing', 'Banking and Insurance', 'IT Management', 'Tourism Management', 'Real Estate Management', 'Direct Selling Management', 'Retail Management', 'Pharma and Healthcare Management', 'Agri Business Management', 'Biotechnology Management', 'Food Technology Management'],
-        fees: '₹1.3L – ₹1.5L',
+        fees: '₹1.18L – ₹1.3L',
         duration: '2 Years',
         roles: ['Business Analyst', 'Marketing Manager', 'Financial Analyst', 'HR Manager', 'Operations Manager', 'IT Manager'],
         avgSalary: '₹4L – ₹20L per annum',
