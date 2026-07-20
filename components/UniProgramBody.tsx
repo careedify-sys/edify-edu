@@ -109,6 +109,16 @@ function GeneratedRedFlagsBlock({ redFlags }: { redFlags: NonNullable<PageConten
 
 export default function UniProgramBody({ u, program, programSlug, pd, customH1, customIntro }: Props) {
   const cleanName  = getShortUniversityName(u.name)
+
+  // GSC striking-distance fee pages (July 2026): fee table renders right after
+  // the About section for these MBA pages, matching "fees"-intent queries.
+  // Value is an optional H2 override for the fee block.
+  const FEE_PROMINENT_MBA_UNIS: Record<string, string | undefined> = {
+    'galgotias-university-online': undefined,
+    'shoolini-university-online': undefined,
+    'symbiosis-university-online': 'Symbiosis Online MBA Fees 2026 (SSODL)',
+  }
+  const feeProminent = program === 'MBA' && u.id in FEE_PROMINENT_MBA_UNIS
   const specs      = pd.specs || []
   const peers      = getUniversitiesByProgram(program).filter(x => x.id !== u.id).slice(0, 3)
   const coupon     = COUPONS.find(c => c.universityId === u.id && (c.program === program || c.program === 'All')) || null
@@ -223,6 +233,13 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
                 <SectionAbout u={u} program={program} pd={pd} cleanName={cleanName} customIntro={customIntro} />
               </div>
 
+              {/* §4B Fees first for fee-intent search pages */}
+              {feeProminent && (
+                <div id="fees">
+                  <FeeBreakdown u={u} pd={pd} program={program} cleanName={cleanName} headingOverride={FEE_PROMINENT_MBA_UNIS[u.id]} />
+                </div>
+              )}
+
               {/* §5 Who Can Apply */}
               <SectionWhoCanApply u={u} program={program} cleanName={cleanName} />
 
@@ -255,10 +272,12 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
                 <RequestSyllabusCard uniId={u.id} uniName={cleanName} program={program} />
               ) : null}
 
-              {/* §10 Fees */}
-              <div id="fees">
-                <FeeBreakdown u={u} pd={pd} program={program} cleanName={cleanName} />
-              </div>
+              {/* §10 Fees (skipped when already shown above) */}
+              {!feeProminent && (
+                <div id="fees">
+                  <FeeBreakdown u={u} pd={pd} program={program} cleanName={cleanName} />
+                </div>
+              )}
 
               {/* Inline CTA after fees */}
               <InlineCTA
