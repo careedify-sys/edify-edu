@@ -258,33 +258,24 @@ export const pageKeywords: Record<string, string[]> = {
   // ── Symbiosis Online ────────────────────────────────────────────────────────
   'symbiosis-university-online-mba': [
     'Symbiosis online MBA fees 2026',
-    'SCDL online MBA syllabus',
     'Symbiosis distance MBA India review',
     'Symbiosis online MBA admission 2026',
     'Symbiosis online MBA NAAC A',
-    'SCDL MBA UGC DEB approved',
-    'Symbiosis Centre Distance Learning MBA',
   ],
   'symbiosis-university-online-mca': [
     'Symbiosis online MCA fees 2026',
-    'SCDL online MCA syllabus',
     'Symbiosis distance MCA India',
     'Symbiosis online MCA admission 2026',
-    'SCDL MCA UGC DEB approved',
   ],
   'symbiosis-university-online-bba': [
     'Symbiosis online BBA fees 2026',
-    'SCDL online BBA syllabus',
     'Symbiosis distance BBA India',
     'Symbiosis online BBA admission 2026',
-    'SCDL BBA UGC DEB approved',
   ],
   'symbiosis-university-online-bca': [
     'Symbiosis online BCA fees 2026',
-    'SCDL online BCA syllabus',
     'Symbiosis distance BCA India',
     'Symbiosis online BCA admission 2026',
-    'SCDL BCA UGC DEB approved',
   ],
 
   // ── DY Patil University Online ──────────────────────────────────────────────
