@@ -369,6 +369,8 @@ export function middleware(req: NextRequest) {
     '/blog/mba-course-duration-how-many-years-2026': '/blog/mba-course-duration-india-2026',
     '/blog/best-college-executive-mba-india-2026': '/blog/top-executive-mba-programs-india-2026',
     '/blog/online-mba-vs-distance-mba-difference-2026': '/guides/online-mba-vs-distance-mba',
+    '/blog/online-bba-in-india-2026': '/blog/best-online-bba-colleges-india-2026',
+    '/blog/online-bba-india-2026': '/blog/best-online-bba-colleges-india-2026',
   }
   if (BLOG_REDIRECTS[pathname]) {
     const url = req.nextUrl.clone()
