@@ -1,4 +1,30 @@
 {
-  "_note": "Universities whose MBA fee data needs official-portal verification. Empty — all entries verified 2026-07-21.",
-  "pending": []
+  "_note": "Universities whose data needs official-portal verification. Fee entries cleared 2026-07-21. Data mismatches added 2026-07-21 from consolidation 2 cross-check.",
+  "pending": [],
+  "data_mismatches": [
+    {
+      "university": "dy-patil-university-online",
+      "field": "naac",
+      "issue": "lib/data.ts naac field says A++ but approvals array and highlight both say NAAC A. Internal inconsistency.",
+      "verify_at": "naac.gov.in",
+      "flagged": "2026-07-21",
+      "status": "pending portal verification"
+    },
+    {
+      "university": "nmims-online",
+      "field": "approvals",
+      "issue": "NMIMS holds AACSB institutionally but the approvals array in lib/data.ts does not include AACSB. Blog content references AACSB accreditation.",
+      "verify_at": "nmims.edu official portal, aacsb.edu directory",
+      "flagged": "2026-07-21",
+      "status": "pending portal verification"
+    },
+    {
+      "university": "bits-pilani-work-integrated-online",
+      "field": "naac, nirfRank, fee",
+      "issue": "Blog (best-online-mba-colleges-india-2026 use-case table) says NAAC A++, NIRF #16, Rs 2.97L. data.ts says NAAC A+, NIRF #7 University, Rs 2.98L (298400). Three discrepancies.",
+      "verify_at": "nirfindia.org, naac.gov.in, bits-pilani-wilp.ac.in",
+      "flagged": "2026-07-21",
+      "status": "pending portal verification"
+    }
+  ]
 }
