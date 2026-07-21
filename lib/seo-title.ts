@@ -98,7 +98,6 @@ export const TITLE_NAME: Record<string, string> = {
   'hindustan-institute-technology-online': 'Hindustan Institute',
   'hindusta-institut-of-technolo-2': 'Hindustan Institute',
   'karunya-university-online': 'Karunya University',
-  'karunya-kcode-online': 'Karunya KCODE',
   'meenakshi-academy-higher-education-online': 'MAHER Online',
   'anna-university-online': 'Anna University',
   'vels-university-online': 'VISTAS Online',

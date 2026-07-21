@@ -1141,10 +1141,9 @@
     "feeStr": "₹60K – ₹2L",
     "emiStr": "₹3K/mo",
     "programs": [
-      "MBA",
+      "MCA",
       "B.Com",
-      "BBA",
-      "MCA"
+      "BBA"
     ],
     "region": "Central"
   },
@@ -1431,24 +1430,6 @@
     "emiStr": "₹3K/mo",
     "programs": [
       "MCA"
-    ],
-    "region": "South"
-  },
-  {
-    "id": "karunya-kcode-online",
-    "name": "Karunya Institute of Technology and Sciences (KCODE Online",
-    "abbr": "KITS",
-    "naac": "A++",
-    "nirf": 999,
-    "nirfMgt": null,
-    "feeMin": 60000,
-    "feeMax": 200000,
-    "emiFrom": 2500,
-    "feeStr": "₹60K – ₹2L",
-    "emiStr": "₹3K/mo",
-    "programs": [
-      "MBA",
-      "B.Com"
     ],
     "region": "South"
   },

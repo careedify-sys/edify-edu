@@ -245,6 +245,8 @@ const nextConfig = {
       { source: '/universities/jamia-millia-islamia-universi/:path*', destination: '/universities/jamia-millia-islamia-online/:path*',       permanent: true },
       { source: '/universities/christ-deemed-to-be',            destination: '/universities/christ-university-online',                        permanent: true },
       { source: '/universities/christ-deemed-to-be/:path*',     destination: '/universities/christ-university-online/:path*',                permanent: true },
+      { source: '/universities/christ-university-online/mba/:path*', destination: '/universities/christ-university-online', permanent: false },
+      { source: '/universities/christ-university-online/mba',        destination: '/universities/christ-university-online', permanent: false },
       { source: '/universities/shobhit-universi',               destination: '/universities/shobhit-university-online',                      permanent: true },
       { source: '/universities/shobhit-universi/:path*',        destination: '/universities/shobhit-university-online/:path*',               permanent: true },
       { source: '/universities/bharati-vidyapee-universi',      destination: '/universities/bharati-vidyapeeth-university-online',           permanent: true },
@@ -515,7 +517,7 @@ const nextConfig = {
       { source: '/universities/:university/mba/human-resource', destination: '/universities/:university/mba/hr-management', permanent: true },
 
       // Truncated university slug with sub-path: shanmugha online-bcom
-      { source: '/universities/karunya-kcode-online/b-com/:path*', destination: '/universities/karunya-kcode-online/bcom', permanent: true },
+      { source: '/universities/karunya-kcode-online/:path*', destination: '/universities/karunya-university-online/:path*', permanent: true },
       { source: '/universities/marwadi-university-online/b-com/:path*', destination: '/universities/marwadi-university-online/bcom', permanent: true },
 
       // LPU/Jain short-slug MCA/MCom spec patterns

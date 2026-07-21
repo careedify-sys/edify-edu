@@ -4019,14 +4019,6 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
     sem5: 'Management Accounting | Income Tax Law and Practice | Auditing | Financial Management | Entrepreneurship Development',
     sem6: 'Practical Auditing | Financial Markets and Services | E-Commerce | Human Resource Management | Project Work',
   },
-  'karunya-kcode-online||B.Com': {
-    sem1: 'English for Communication | Financial Accounting - I | Business Organization | Business Economics | Principles of Marketing',
-    sem2: 'Professional English | Financial Accounting - II | Banking Theory Law and Practice | Company Law and Secretarial Practice | Business Statistics With R',
-    sem3: 'Business Law | Advanced Accounting | Income Tax | Business',
-    sem4: 'Corporate Accounting-I | Principles of Auditing | Cost Accounting -I | Indirect Taxes | Management Accounting',
-    sem5: 'Corporate Accounting-II | Cost Accounting-II | Financial Management | Indian Financial System | International Business',
-    sem6: 'Fundamentals of Advertising | New Venture Creation | Portfolio Management | Value Education',
-  },
   'aligarh-muslim-university-online||BA': {
     sem1: 'English Language I | Ethics and Culture/Sunni Theology/Shia Theology | Compulsory Urdu/Elementary Urdu | Introduction to English Literature-I | Indian Writing in English-I',
     sem2: 'English Language II | Ethics and Culture/Sunni Theology/Shia Theology | Compulsory Urdu/Elementary Urdu | Introduction to English Literature-II | Indian Writing in English-II',

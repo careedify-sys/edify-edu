@@ -191,6 +191,14 @@ export default function UniversityPageClient({ university: u }: Props) {
                       {prog}
                     </button>
                   ))}
+                  {u.comingSoon?.map(prog => (
+                    <span
+                      key={prog}
+                      className="px-4 py-2 rounded-lg text-sm font-semibold bg-white/5 text-slate-500 cursor-default"
+                    >
+                      {prog} <span className="text-xs text-orange ml-1">Coming Soon</span>
+                    </span>
+                  ))}
                 </div>
 
                 {/* Quick Stats */}
@@ -667,6 +675,12 @@ export default function UniversityPageClient({ university: u }: Props) {
                       <span className="text-ink-2 font-medium">{prog}</span>
                       <span className="text-amber text-xs">{u.programDetails[prog]?.fees || formatFee(u.feeMin)}</span>
                     </Link>
+                  ))}
+                  {u.comingSoon?.map(prog => (
+                    <div key={prog} className="flex justify-between items-center py-2 border-b border-border text-sm">
+                      <span className="text-ink-3 font-medium">{prog}</span>
+                      <span className="text-orange text-xs font-semibold">Coming Soon</span>
+                    </div>
                   ))}
                 </div>
 

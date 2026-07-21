@@ -52,7 +52,6 @@ const SEO_NAME: Record<string, string> = {
   'hindustan-institute-technology-online': 'Hindustan Institute of Technology and Science',
   'hindusta-institut-of-technolo-2': 'Hindustan Institute of Technology and Science',
   'karunya-university-online': 'Karunya Institute of Technology and Sciences',
-  'karunya-kcode-online': 'Karunya Institute of Technology and Sciences',
   'anna-university-online': 'Anna University', 'vels-university-online': 'VISTAS Online',
   'sri-ramachandra-university-online': 'Sri Ramachandra Institute', 'amet-university-online': 'AMET University',
   'icfai-university-online': 'ICFAI Foundation for Higher Education',
