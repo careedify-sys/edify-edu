@@ -2662,7 +2662,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/universities/amity-university-online/mba" class="il-card"><div class="il-uni">AMITY</div><div class="il-title">Amity Online MBA</div><div class="il-sub">₹1,45,000 - NAAC A+</div></a>
     <a href="/compare" class="il-card"><div class="il-uni">COMPARE</div><div class="il-title">Compare Online MBAs</div><div class="il-sub">Side-by-side analysis</div></a>
     <a href="/programs/mba" class="il-card"><div class="il-uni">PROGRAM</div><div class="il-title">All Online MBAs</div><div class="il-sub">125+ universities</div></a>
-    <a href="/blog/online-mba-fee-comparison-india-2026" class="il-card"><div class="il-uni">BLOG</div><div class="il-title">MBA Fee Comparison 2026</div><div class="il-sub">Fees side by side</div></a>
+    <a href="/blog/mba-fees-india-complete-guide-2026" class="il-card"><div class="il-uni">BLOG</div><div class="il-title">MBA Fees Complete Guide</div><div class="il-sub">All fees compared</div></a>
   </div>
 </div>
     `,
@@ -3522,11 +3522,11 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'mba-fees-india-complete-guide-2026',
     title: 'MBA Fees India 2026: All Programs Compared with Costs',
     seoTitle: 'MBA Fees India 2026: IIM Rs 27L to Online Rs 31K Complete Guide | Edify',
-    metaDescription: 'MBA fees India 2026 complete guide: IIM Rs 27L, ISB Rs 45L, private Rs 8-25L, online Rs 31K-2.25L. Hidden costs, ROI math, payback timelines.',
+    metaDescription: 'MBA fees India 2026 complete guide: IIM Rs 27L, ISB Rs 45L, private Rs 8-25L, online Rs 31K-2.25L. Hidden costs, ROI math, payback timelines, EMI options.',
     category: 'MBA Guides',
-    tags: ['MBA fees', 'MBA cost India', 'MBA fees in India', 'online MBA fees', 'mba fees in india', 'mba fees india 2026'],
+    tags: ['MBA fees', 'MBA cost India', 'MBA fees in India', 'online MBA fees', 'mba fees in india', 'mba fees india 2026', 'online mba courses fees', 'online mba fee comparison', 'online mba fees india 2026', 'cheapest online mba india'],
     publishedAt: '2026-04-04',
-    readTime: 7,
+    readTime: 14,
     targetKeyword: 'mba fees in india',
     relatedUniversities: ['symbiosis-university-online', 'nmims-online', 'amity-university-online'],
     status: 'published' as const,
@@ -3540,7 +3540,11 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Is online MBA cheaper than regular MBA?', a: 'Yes, significantly. Online MBA from NAAC A+ university (NMIMS, JAIN, Amity, Manipal Jaipur): Rs 1.53L to 2.25L. Regular campus tier-1 (IIM, ISB): Rs 28 to 45 lakh. The 10x to 20x cost gap is real. Online MBA additionally saves opportunity cost (you keep working) of Rs 10 to 25 lakh over 2 years. Net difference often Rs 35 to 55 lakh in your favour for online MBA route.' },
       { q: 'What are the hidden costs of campus MBA?', a: 'Hostel and accommodation Rs 1.5 to 3 lakh per year. Mess and food Rs 50K to 1 lakh per year. Books, study materials Rs 30K to 60K. Travel and miscellaneous Rs 30K. Lost salary and PF contributions during 2-year programme Rs 10 to 25 lakh. International immersion (some IIMs) Rs 1.5 to 3 lakh. Total hidden costs add Rs 5 to 8 lakh on top of the headline tuition fee.' },
       { q: 'What is the MBA fee payback period in 2026?', a: 'Online MBA (Rs 1.5 to 2.2 lakh): 6 to 14 months from salary increase. Tier-2 private MBA (Rs 8 to 15 lakh including hidden costs Rs 12 to 22 lakh real total): 3 to 5 years. Tier-1 private MBA (Rs 18 to 25 lakh, real Rs 30 to 40 lakh): 3 to 6 years. IIM A/B/C (Rs 30 lakh, real Rs 45 to 55 lakh): 2 to 4 years given high placement salaries. ISB PGP: 3 to 5 years.' },
-      { q: 'What is the MBA fee in government colleges in 2026?', a: 'FMS Delhi (University of Delhi): Rs 2.32 lakh for 2-year MBA - the highest ROI MBA in India. JBIMS Mumbai (Mumbai University): Rs 7 to 9 lakh approximately. IIT DMS (IIT Delhi MBA): Rs 8 to 11 lakh. IIM, despite being government institutions, charge Rs 20 to 30 lakh. State university MBA (Mumbai, Pune, Anna): Rs 50K to Rs 2 lakh range. IGNOU distance MBA: Rs 31,500.' }
+      { q: 'What is the MBA fee in government colleges in 2026?', a: 'FMS Delhi (University of Delhi): Rs 2.32 lakh for 2-year MBA - the highest ROI MBA in India. JBIMS Mumbai (Mumbai University): Rs 7 to 9 lakh approximately. IIT DMS (IIT Delhi MBA): Rs 8 to 11 lakh. IIM, despite being government institutions, charge Rs 20 to 30 lakh. State university MBA (Mumbai, Pune, Anna): Rs 50K to Rs 2 lakh range. IGNOU distance MBA: Rs 31,500.' },
+      { q: 'Which online MBA has the best fee-to-quality ratio in India?', a: 'Dayananda Sagar (Rs 1,30,000, NAAC A++) and JAIN Online (Rs 1,75,000 to Rs 1,96,000, NAAC A++, 19 specialisations with 0% EMI) offer the strongest credential-to-cost ratios. Galgotias (Rs 76,200) is the strongest pure-budget option.' },
+      { q: 'Do online MBA fees increase between semesters?', a: 'Some universities have uniform semester fees; others vary. UPES Online charges Rs 95,000 in Year 1 and Rs 80,000 in Year 2. Confirm the per-semester breakdown before enrolling.' },
+      { q: 'Is the cheapest online MBA the best value?', a: 'No. Match fee tier to career target sector. Galgotias at Rs 76K is excellent for budget-constrained learners. NMIMS at Rs 1.96 lakh is the right choice for tier-1 BFSI and consulting careers. Universities charging Rs 1.5L to Rs 2.5L offer stronger alumni networks and employer brand recognition.' },
+      { q: 'Is 0 percent EMI really 0 percent?', a: 'Usually includes 4 to 8 percent processing fee. Verify total payable amount before opting. JAIN Online offers the most transparent 0% EMI terms.' }
     ],
     content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Fee data sourced from official IIM, ISB, IIT, FMS Delhi admissions pages 2026-27 plus current edifyedu.in university profiles for online MBA programmes.</em></p>
 
@@ -3664,7 +3668,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>FMS Delhi:</strong> Rs 2.32 lakh. Highest ROI tier-1 if you can get in (CAT 99-plus).</li>
   <li><strong>Galgotias University Online:</strong> Rs 76,200. UGC-DEB approved. Affordable private online MBA.</li>
   <li><strong>Mumbai University, Anna University campus MBA:</strong> Rs 50K to 2 lakh. Strong regional brand.</li>
-  <li><strong>JAIN Online plus other NAAC A+ online:</strong> Rs 1.53L to 1.96L. Best value for working professionals.</li>
+  <li><strong>JAIN Online plus other NAAC A++ online:</strong> Rs 1.75L to 1.96L. Best value for working professionals.</li>
 </ol>
 
 <h2>EMI and Financing Options 2026</h2>
@@ -3769,13 +3773,109 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>The biggest fee gap in Indian management education is between campus and online MBA at the same university. NMIMS campus MBA costs Rs 18L to Rs 20L while NMIMS online MBA costs Rs 1.96L to Rs 2.20L. Amity campus MBA at Noida costs Rs 6.4L to Rs 15.8L while Amity online MBA costs Rs 2.07L to Rs 2.25L. Symbiosis SIBM Pune campus MBA costs Rs 25L-plus while Symbiosis SSODL online MBA costs Rs 3.15L to Rs 3.70L. The online degree is UGC-DEB equivalent to the campus degree. The fee difference funds campus infrastructure, placement cells, and in-person faculty that online students do not use.</p>
 
+<h2>Standardised Online MBA Fee Breakdown: All Major Universities</h2>
+
+<p>A Rs 1,60,000 total fee from one university and a Rs 1,65,000 total fee from another are not automatically comparable. One may include exam fees; the other may not. The only reliable comparison is the <strong>all-in cost</strong>, the amount you will have paid by the time you hold your degree. For a sortable overview, use the <a href="/fees" class="ilink">full university fee comparison</a> on EdifyEdu.</p>
+
+<h3>Under Rs 1 Lakh</h3>
+<p><strong><a href="/blog/galgotias-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">Galgotias University</a></strong> | Total: Rs 76,200 | Yearly fee: Rs 33,000 | Exam fee: Rs 4,000/year | Registration: Rs 1,200 | NAAC: UGC-DEB approved. Specialisations: Business Analytics, Finance, HR, Healthcare, International Business, Marketing, Operations. Most affordable credible option.</p>
+<p><strong>Vignan Online</strong> | Total: Rs 90,000 | EMI: ~Rs 5,700/month | NAAC: A+. Specialisations: Business Analytics, Finance, Healthcare, HR, IT, Logistics and SCM, Marketing.</p>
+
+<h3>Rs 1 Lakh to Rs 1.5 Lakh</h3>
+<p><strong>Shoolini University Online</strong> | Total: Rs 1,18,000 to Rs 1,30,000 | QS Ranked #1 Private University in India. Niche specialisations: Agri Business, Biotechnology, Food Technology, Pharma. Pay-After-Placement model available.</p>
+<p><strong>Sikkim Manipal University Online</strong> | Total: Rs 1,20,000 | Per semester: Rs 30,000 | NAAC: A+. Mandatory dual specialisation model.</p>
+<p><strong><a href="/universities/dayananda-sagar-university-online">Dayananda Sagar University</a> Online</strong> | Total: Rs 1,30,000 | Per semester: Rs 32,500 avg | NAAC: A++. Specialisations include AI, Business Analytics, Entrepreneurship, HR, IT and Systems, Marketing, Supply Chain.</p>
+
+<h3>Rs 1.5 Lakh to Rs 2 Lakh</h3>
+<p><strong><a href="/universities/chandigarh-university-online" class="ilink">Chandigarh University Online</a></strong> | Total: Rs 1,65,000 | Per semester: Rs 41,250 | Registration: Rs 1,000 | EMI: Rs 6,875/month | NAAC: A+. 25+ specialisations. Includes Harvard Business Publishing + PwC India + PMI certifications.</p>
+<p><strong><a href="/universities/dy-patil-university-online" class="ilink">D.Y. Patil University, Navi Mumbai Online</a></strong> | Total: Rs 1,75,000 | Per semester: Rs 43,750 | NAAC: A. 11 specialisations including Sales and Marketing, Healthcare, Digital Marketing, Data Science. Exam fees included in semester fee.</p>
+<p><strong><a href="/universities/manipal-university-jaipur-online" class="ilink">Manipal University Jaipur Online</a></strong> | Total: Rs 1,75,000 (15% discount available) | EMI: Rs 7,292/month | NAAC: A+. Specialisations: Finance, Marketing, HR, Analytics and Data Science, Digital Marketing, BFSI, Retail.</p>
+<p><strong>JAIN Online</strong> | Total: Rs 1,75,000 to Rs 1,96,000 (standard) | Per semester: Rs 49,000 | Admission fee: Rs 2,500 | Exam fee: Rs 3,000/year | EMI: <strong>0% interest</strong> (from Rs 12,781/month) | NAAC: A++. 19 specialisations including AI, Data Science, Digital Marketing. International Finance (ACCA) track at higher fee tier.</p>
+<p><strong><a href="/universities/dr-dy-patil-vidyapeeth-online" class="ilink">Dr. D.Y. Patil Vidyapeeth, Pune (DPU-COL) Online</a></strong> | Total: Rs 1,89,400 | Per semester: Rs 47,350 | EMI: ~Rs 7,890/month | NAAC: A++ | NIRF #41 University. 15 specialisations including AI and ML, Blockchain, FinTech, Hospital Administration.</p>
+<p><strong><a href="/universities/nmims-online" class="ilink">NMIMS Online</a></strong> | Total: Rs 1,96,000 | Per semester: ~Rs 55,000 | Exam fee: Rs 800/subject | EMI: ~Rs 6,111/month. Specialisations: Business Management, Financial Management, HR, Marketing, Operations and Data Sciences. Strong national brand.</p>
+
+<h3>Above Rs 2 Lakh</h3>
+<p><strong><a href="/universities/amity-university-online" class="ilink">Amity University Online</a></strong> | Total: Rs 2,07,000 (lumpsum) / Rs 2,25,000 (sticker) | Registration: Rs 2,500 | Per semester: Rs 49,750 | EMI: Rs 8,292/month | NAAC: A+. 19 specialisations including HR Analytics, Insurance Management, Hospital and Healthcare, ACCA track. WES recognised.</p>
+<p><strong>Symbiosis SSODL</strong> | Total: Rs 3,70,000 (gross) / Rs 3,15,000 (after Rs 55,000 scholarship for 2+ years experience). 9 specialisations including Business Analytics, Finance, HR, International Business. NIRF Management #11.</p>
+<p><strong>MAHE (Manipal Academy of Higher Education):</strong> Total Rs 2,92,000. Per semester Rs 73,000. NAAC A++. NIRF #3 University 2025. Requires 1-year work experience. 9 specialisations including Healthcare, Pharmaceutical, Data Science.</p>
+
+<div class="callout-warning"><strong>Verify before paying:</strong> Fees are indicative as of July 2026. Confirm current pricing, exam fees, and EMI terms directly with the university portal.</div>
+
+<h2>Online MBA EMI and Payment Plan Options 2026</h2>
+
+<table>
+  <caption>Online MBA EMI and payment plan comparison 2026</caption>
+  <thead><tr><th>University</th><th>EMI Tenure</th><th>Interest Rate</th><th>Provider</th></tr></thead>
+  <tbody>
+    <tr><td>JAIN Online MBA</td><td>12 to 24 months</td><td>0 percent</td><td>Direct university plus Eduvanz</td></tr>
+    <tr><td>NMIMS Online MBA</td><td>12 to 24 months</td><td>10 to 13 percent</td><td>Eduvanz, Propelld, Bajaj Finserv</td></tr>
+    <tr><td>Amity Online MBA</td><td>12 to 36 months</td><td>0 percent on select offers, otherwise 11 to 14 percent</td><td>Bajaj, Eduvanz, in-house</td></tr>
+    <tr><td>Manipal University Jaipur Online</td><td>12 to 24 months</td><td>0 percent for first 12 months</td><td>Propelld, in-house</td></tr>
+    <tr><td>UPES Online MBA</td><td>12 to 18 months</td><td>10 to 12 percent</td><td>Eduvanz, Propelld</td></tr>
+    <tr><td>Chandigarh University Online MBA</td><td>12 to 24 months</td><td>10 to 13 percent</td><td>Bajaj, Eduvanz, in-house</td></tr>
+    <tr><td>D.Y. Patil Navi Mumbai Online MBA</td><td>12 to 24 months</td><td>11 to 14 percent</td><td>Eduvanz, Propelld</td></tr>
+    <tr><td>D.Y. Patil Pune (DPU-COL) Online MBA</td><td>12 to 24 months</td><td>11 to 14 percent</td><td>Eduvanz, Propelld</td></tr>
+    <tr><td>Symbiosis SCDL MBA</td><td>Semester-wise instalments</td><td>0 percent</td><td>Direct university payment</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-warning"><strong>Verify EMI terms carefully:</strong> "0 percent EMI" often includes processing fees that effectively make rate 4 to 8 percent. Read fine print and ask for written breakdown before paying.</div>
+
+<h2>Online MBA Fees by Payment Mode</h2>
+
+<p>Most universities offer multiple payment options that change the effective total fee. Lumpsum one-time payment typically offers 8 to 15 percent savings over semester-wise payments.</p>
+
+<table>
+  <thead><tr><th>University</th><th>Lumpsum</th><th>Semester-wise</th><th>EMI (24mo)</th></tr></thead>
+  <tbody>
+    <tr><td>LPU</td><td>Rs 1,46,240</td><td>Rs 1,61,600</td><td>Rs 6,733 per month</td></tr>
+    <tr><td>Amity (Standard)</td><td>Rs 2,07,000</td><td>Rs 2,25,000</td><td>Rs 8,906 per month</td></tr>
+    <tr><td>NMIMS</td><td>Rs 1,96,000 (EMI)</td><td>Rs 2,20,000</td><td>Rs 16,333 per month</td></tr>
+  </tbody>
+</table>
+
+<h2>Online MBA Per-Specialisation Fee Variations 2026</h2>
+
+<p>Some specialisations cost more even within the same university:</p>
+
+<ul>
+  <li><strong>NMIMS Online MBA Finance and Banking:</strong> Standard Rs 1.96 lakh. Banking and Capital Markets specialisation Rs 2.20 lakh.</li>
+  <li><strong>JAIN Online MBA International Finance (ACCA):</strong> Standard Rs 1.75 lakh to Rs 1.96 lakh. ACCA track at higher fee tier.</li>
+  <li><strong>Chandigarh University MBA Data Science and AI:</strong> Standard Rs 1.50 lakh. Premium spec with Harvard plus PwC bundle Rs 1.75 lakh.</li>
+  <li><strong>Amity Online MBA Healthcare Management:</strong> Standard Rs 2.07 lakh. Premium plus internship support Rs 2.40 lakh.</li>
+</ul>
+
+<h2>Hidden Costs in Online MBA Fee Listings 2026</h2>
+
+<ul>
+  <li><strong>Application fee:</strong> Rs 500 to Rs 2,500 (non-refundable). One-time at admission.</li>
+  <li><strong>Registration fee:</strong> Rs 1,000 to Rs 5,000. Often separate from semester fee.</li>
+  <li><strong>Exam fee per semester:</strong> Rs 2,000 to Rs 7,000. Some universities include in semester fee (DY Patil Navi Mumbai includes it), others charge separately.</li>
+  <li><strong>Backlog or supplementary exam fees:</strong> Rs 500 to Rs 1,500 per subject.</li>
+  <li><strong>Convocation plus degree certificate fee:</strong> Rs 1,000 to Rs 3,000 at programme completion.</li>
+  <li><strong>Optional campus immersion fees:</strong> Rs 8,000 to Rs 25,000 for optional 1-2 week campus visits.</li>
+  <li><strong>Late fee penalty:</strong> 1 to 2 percent per month for missed instalments. Verify before opting for EMI.</li>
+  <li><strong>No-refund policies after semester 2:</strong> Most universities offer pro-rata refund only in semester 1.</li>
+</ul>
+
+<h2>Before You Pay: Online MBA Checklist</h2>
+<ul>
+  <li>Programme verified on deb.ugc.ac.in or ugc.ac.in</li>
+  <li>Specialisation explicitly confirmed as approved</li>
+  <li>Full fee breakup (all components) received in writing</li>
+  <li>EMI terms confirmed: 0% or interest-bearing</li>
+  <li>NAAC grade and year verified on naac.gov.in</li>
+  <li>LinkedIn alumni research done for your target industry</li>
+  <li>Refund policy understood before registration payment</li>
+</ul>
+
 <h2>How to Pick the Right MBA Based on Budget</h2>
 
 <p>Under Rs 1L budget: IGNOU distance (Rs 31,500) or Galgotias online (Rs 76,200). Both UGC-DEB approved, both NAAC accredited. Limited career support.</p>
 
-<p>Rs 1L to Rs 2L: LPU (Rs 1.46L lumpsum), CU (Rs 1.65L with Harvard and PwC certifications), MUJ (Rs 1.75L), DY Patil Pune (Rs 1.89L with WES recognition), NMIMS (Rs 1.96L with NIRF Management 24).</p>
+<p>Rs 1L to Rs 2L: LPU (Rs 1.46L lumpsum), Shoolini (Rs 1.18L to Rs 1.30L, QS #1 private), Sikkim Manipal (Rs 1.20L, mandatory dual specialisation), CU (Rs 1.65L with Harvard and PwC certifications), DY Patil Navi Mumbai (Rs 1.75L, NAAC A), MUJ (Rs 1.75L), DY Patil Pune / DPU-COL (Rs 1.89L, NAAC A++, NIRF #41), JAIN (Rs 1.75L to Rs 1.96L, NAAC A++), NMIMS (Rs 1.96L with NIRF Management 24).</p>
 
-<p>Rs 2L to Rs 4L: Amity (Rs 2.07L to Rs 4.49L depending on specialization), Symbiosis SSODL (Rs 3.15L to Rs 3.70L with NIRF Management 11). Premium tier.</p>
+<p>Rs 2L to Rs 4L: Amity (Rs 2.07L lumpsum to Rs 2.25L sticker, NAAC A+, WES recognised), Symbiosis SSODL (Rs 3.15L to Rs 3.70L with NIRF Management 11). Premium tier.</p>
 
 <p>Above Rs 10L: Campus MBA at IIMs, ISB, XLRI, SIBM. Full-time commitment required. Highest placement outcomes but 20x to 100x the cost of online options.</p>
 
@@ -16922,7 +17022,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <a class="il-card" href="/blog/distance-mba-meaning-what-is-it-2026">Distance MBA Meaning Explained</a>
   <a class="il-card" href="/blog/correspondence-mba-meaning-2026">Correspondence MBA Meaning</a>
   <a class="il-card" href="/blog/is-distance-mba-worth-it-india-2026">Is Distance MBA Worth It</a>
-  <a class="il-card" href="/blog/online-mba-fee-comparison-india-2026">Online MBA Fee Comparison</a>
+  <a class="il-card" href="/blog/mba-fees-india-complete-guide-2026">Online MBA Fee Comparison</a>
   <a class="il-card" href="/blog/ugc-deb-approved-universities-list-2026">UGC-DEB Approved Universities</a>
 </div>`,
   },
@@ -17571,7 +17671,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="il-grid">
   <a class="il-card" href="/blog/icfai-distance-mba-2026">ICFAI Distance MBA Review</a>
-  <a class="il-card" href="/blog/online-mba-fee-comparison-india-2026">Online MBA Fee Comparison 2026</a>
+  <a class="il-card" href="/blog/mba-fees-india-complete-guide-2026">Online MBA Fee Comparison 2026</a>
   <a class="il-card" href="/blog/best-online-mba-colleges-india-2026">Best Online MBA Colleges India</a>
   <a class="il-card" href="/blog/ugc-deb-approved-universities-list-2026">UGC-DEB Approved List 2026</a>
   <a class="il-card" href="/blog/affordable-online-mba-india-2026">Affordable Online MBA Under Rs 2L</a>
@@ -17822,6 +17922,8 @@ export const BLOG_POSTS: BlogPost[] = [
   <a class="il-card" href="/blog/ugc-deb-approved-universities-list-2026">UGC-DEB Approved List 2026</a>
 </div>`,
   },
+  // online-mba-fee-comparison-india-2026 merged into mba-fees-india-complete-guide-2026 (consolidation 3, 2026-07-21)
+  // 301 redirect configured in next.config.js
   {
     slug: 'online-mba-fee-comparison-india-2026',
     title: 'Online MBA Courses Fees 2026: Complete Fee Comparison Across India',
@@ -17831,7 +17933,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tags: ['online mba courses fees', 'online mba fee comparison', 'online mba fees india 2026', 'online mba fee comparison india', 'cheapest online mba india', 'mba for working professionals'],
     readTime: 12,
     publishedAt: '2026-04-05',
-    status: 'published' as const,
+    status: 'draft' as const,
     heroImage: 'https://images.pexels.com/photos/6325984/pexels-photo-6325984.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@vanessa-garcia" target="_blank" rel="noopener nofollow">Vanessa Garcia</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     heroImageAlt: 'A professional having a video conference on a laptop from a home office, engaging in online communication.',
@@ -18309,7 +18411,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="il-grid">
   <a class="il-card" href="/universities/jamia-hamdard-online">Jamia Hamdard Online University Page</a>
-  <a class="il-card" href="/blog/online-mba-fee-comparison-india-2026">Online MBA Fee Comparison 2026</a>
+  <a class="il-card" href="/blog/mba-fees-india-complete-guide-2026">Online MBA Fee Comparison 2026</a>
   <a class="il-card" href="/blog/best-online-mba-colleges-india-2026">Best Online MBA Colleges India</a>
   <a class="il-card" href="/blog/affordable-online-mba-india-2026">Affordable Online MBA Under Rs 2L</a>
   <a class="il-card" href="/blog/online-mba-delhi-ncr-2026">Online MBA Delhi NCR 2026</a>
@@ -19150,7 +19252,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="il-grid">
   <a class="il-card" href="/universities/amity-university-online">Amity University Online  -- Full Profile & Syllabus</a>
-  <a class="il-card" href="/blog/online-mba-fee-comparison-india-2026">Online MBA Fee Comparison India 2026</a>
+  <a class="il-card" href="/blog/mba-fees-india-complete-guide-2026">Online MBA Fee Comparison India 2026</a>
   <a class="il-card" href="/blog/best-online-mba-colleges-india-2026">Best Online MBA Colleges India</a>
   <a class="il-card" href="/blog/online-mba-vs-distance-mba-difference-2026">Online MBA vs Distance MBA Difference</a>
   <a class="il-card" href="/blog/nmims-online-mba-review-2026">NMIMS Online MBA Review 2026</a>
@@ -40631,7 +40733,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p><a href="/universities/shobhit-university-online">Shobhit Online</a> (Meerut, ₹1.2L) is a deemed university offering three MBA specialisations. Standard NAAC A with UGC-DEB entitlement.</p>
 
-<p><a href="/universities/shiv-nadar-university-online">Shiv Nadar University Online</a> (Greater Noida, ₹5L) is the most expensive option in this list by a wide margin. NIRF #57 University and NAAC A. The ₹5 lakh fee puts it in premium territory alongside national options like Symbiosis (₹3.15L) and NMIMS (₹1.5L to ₹3.7L). At this price with NAAC A (not A+ or A++), you should compare Shiv Nadar against the national premium picks on our <a href="/blog/online-mba-fee-comparison-india-2026">fee comparison guide</a> before deciding.</p>
+<p><a href="/universities/shiv-nadar-university-online">Shiv Nadar University Online</a> (Greater Noida, ₹5L) is the most expensive option in this list by a wide margin. NIRF #57 University and NAAC A. The ₹5 lakh fee puts it in premium territory alongside national options like Symbiosis (₹3.15L) and NMIMS (₹1.5L to ₹3.7L). At this price with NAAC A (not A+ or A++), you should compare Shiv Nadar against the national premium picks on our <a href="/blog/mba-fees-india-complete-guide-2026">fee comparison guide</a> before deciding.</p>
 
 <h2>Government vs Private: The Real Trade-Off</h2>
 

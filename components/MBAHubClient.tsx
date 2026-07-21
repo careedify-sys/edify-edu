@@ -339,7 +339,7 @@ export default function MBAHubClient() {
 
           <div className="rounded-xl border border-slate-200 bg-white p-5">
             <h3 className="font-bold text-base mb-2" style={{ color: '#0B1533' }}>Step 3: Check Fee Structure Carefully</h3>
-            <p className="text-sm text-slate-600">Compare total programme fee, not per-semester cost. Watch for hidden charges: registration fee, exam fee, application fee, alumni membership. Check if one-time payment offers a discount. Verify EMI terms directly with the university. <Link href="/blog/online-mba-fee-comparison-india-2026" className="text-blue-600 underline">See our full fee comparison</Link>.</p>
+            <p className="text-sm text-slate-600">Compare total programme fee, not per-semester cost. Watch for hidden charges: registration fee, exam fee, application fee, alumni membership. Check if one-time payment offers a discount. Verify EMI terms directly with the university. <Link href="/blog/mba-fees-india-complete-guide-2026" className="text-blue-600 underline">See our full fee comparison</Link>.</p>
           </div>
 
           <div className="rounded-xl border border-slate-200 bg-white p-5">
