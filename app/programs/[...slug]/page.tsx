@@ -6,7 +6,7 @@ import { formatFeeSlim as formatFee, PREFERRED_UNI_IDS } from '@/lib/data-slim'
 import { getShortUniversityName } from '@/lib/format'
 import { clampTitle, clampDescription, getTitleName } from '@/lib/seo-title'
 import { PROGRAM_META } from '@/lib/data-client'
-import { getAllSpecs, getUniversitiesByProgram, UNIVERSITIES, specName as getSpecName } from '@/lib/data'
+import { getAllSpecs, getUniversitiesByProgram, UNIVERSITIES, specName as getSpecName, getUniversityById } from '@/lib/data'
 import { getProgramContent, getSpecContent, getSpecFallback } from '@/lib/content'
 import type { Program } from '@/lib/data'
 import { formatFeeSlim, UNIS_SLIM } from '@/lib/data-slim'
@@ -19,6 +19,45 @@ import ProgramPageClient from '@/components/ProgramPageClient'
 import MBAHubClient from '@/components/MBAHubClient'
 import MBASpecHubClient from '@/components/MBASpecHubClient'
 import ProgramHubClient from '@/components/ProgramHubClient'
+
+// Universities whose fee string contains per-semester min, not a total.
+// Display only the max (total). Remove an ID after portal-verifying its real total.
+const SEMESTER_TO_TOTAL_IDS = new Set([
+  'srm-institute-science-technology-online',
+  'dy-patil-university-online',
+  'parul-university-online',
+  'mangalayatan-university-online',
+  'marwadi-university-online',
+  'pp-savani-university-online',
+  'andhra-university-online',
+  'karunya-university-online',
+  'sastra-university-online',
+  'karunya-kcode-online',
+  'vels-university-online',
+  'alvas-college-online',
+  'kalasalingam-university-online',
+  'teerthanker-mahaveer-university-online',
+])
+
+function parseMbaFeeString(s: string, uniId?: string): { min: number; max: number } | null {
+  if (/emi|\/mo|per\s*month/i.test(s)) return null
+  const nums: number[] = []
+  const re = /([\d,.]+)\s*([LlKk])?/g
+  let m: RegExpExecArray | null
+  while ((m = re.exec(s)) !== null) {
+    let v = parseFloat(m[1].replace(/,/g, ''))
+    if (isNaN(v)) continue
+    const unit = (m[2] || '').toUpperCase()
+    if (unit === 'L') v *= 100000
+    else if (unit === 'K') v *= 1000
+    if (v > 0) nums.push(v)
+  }
+  if (nums.length === 0) return null
+  const lo = Math.min(...nums)
+  const hi = Math.max(...nums)
+  if (uniId && SEMESTER_TO_TOTAL_IDS.has(uniId)) return { min: hi, max: hi }
+  return { min: lo, max: hi }
+}
 
 const PM: Record<string, Program> = {
   'mba':'MBA','mca':'MCA','bba':'BBA','bca':'BCA','ba':'BA',
@@ -399,8 +438,24 @@ export default async function CatchAllProgramPage(
         })
       })
     })
-    const specFeeMinVals = specMbaUnis.map(u => u.feeMin).filter(f => f > 0)
-    const specFeeMaxVals = specMbaUnis.map(u => u.feeMax).filter(f => f > 0)
+    // Build MBA-specific fee map from programDetails / programFees
+    const mbaFeeMap: Record<string, { min: number; max: number }> = {}
+    for (const slim of specMbaUnis) {
+      const full = getUniversityById(slim.id)
+      if (!full) continue
+      const mbaFeeOverride = full.programFees?.mba?.fee
+      if (mbaFeeOverride && mbaFeeOverride > 0) {
+        mbaFeeMap[slim.id] = { min: mbaFeeOverride, max: mbaFeeOverride }
+        continue
+      }
+      const feeStr = full.programDetails?.MBA?.fees
+      if (!feeStr) continue
+      const parsed = parseMbaFeeString(feeStr, slim.id)
+      if (parsed) mbaFeeMap[slim.id] = parsed
+    }
+    const mbaFeeVals = Object.values(mbaFeeMap)
+    const specFeeMinVals = mbaFeeVals.map(f => f.min).filter(f => f > 0)
+    const specFeeMaxVals = mbaFeeVals.map(f => f.max).filter(f => f > 0)
     const hasSpecFees = specFeeMinVals.length > 0
     const specFeeMin = hasSpecFees ? Math.min(...specFeeMinVals) : (feeMin > 0 ? feeMin : 0)
     const specFeeMax = hasSpecFees ? Math.max(...specFeeMaxVals) : (feeMax > 0 ? feeMax : 0)
@@ -441,6 +496,7 @@ export default async function CatchAllProgramPage(
           specName={activeSpec}
           customH1={mbaSpecOverride?.h1}
           customIntro={mbaSpecOverride?.intro}
+          mbaFeeMap={mbaFeeMap}
         />
       </>
     )

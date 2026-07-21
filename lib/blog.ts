@@ -4763,9 +4763,9 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>Finance</td><td>NMIMS Global Online or MUJ Online</td><td>Rs 1.66 to 2.40 lakh</td><td>Strong CFA-aligned curriculum, BFSI placement network</td></tr>
     <tr><td>Marketing</td><td>JAIN Online or NMIMS Online</td><td>Rs 1.50 to 2.40 lakh</td><td>Brand management plus digital integrated, FMCG focus</td></tr>
     <tr><td>Digital Marketing</td><td>Amity Online or LPU Online</td><td>Rs 1.45 to 1.99 lakh</td><td>HubSpot plus Google Ads certification bundled</td></tr>
-    <tr><td>Human Resources</td><td>Symbiosis SCDL or Amity Online</td><td>Rs 1.10 to 1.99 lakh</td><td>SHRM-aligned curriculum, strong corporate HR network</td></tr>
+    <tr><td>Human Resources</td><td>Symbiosis SSODL or Amity Online</td><td>Rs 1.99 to 3.70 lakh</td><td>NAAC A++ HR specialisation, strong corporate HR network</td></tr>
     <tr><td>Operations and Supply Chain</td><td>NMIMS or MUJ Online</td><td>Rs 1.66 to 2.40 lakh</td><td>Lean Six Sigma certifications integrated</td></tr>
-    <tr><td>International Business</td><td>Amity Online or Symbiosis SCDL</td><td>Rs 1.10 to 1.99 lakh</td><td>WES-recognised, global business case studies</td></tr>
+    <tr><td>International Business</td><td>Amity Online or Symbiosis SSODL</td><td>Rs 1.99 to 3.70 lakh</td><td>WES-recognised, global business case studies</td></tr>
     <tr><td>Business Analytics</td><td>JAIN Online or Chandigarh University Online</td><td>Rs 1.50 lakh</td><td>SQL plus Tableau plus Power BI projects, capstone</td></tr>
   </tbody>
 </table>
@@ -15950,9 +15950,9 @@ export const BLOG_POSTS: BlogPost[] = [
 <ul>
   <li><strong>Finance:</strong> Available at all top distance MBA programmes. CFA-aligned at NMIMS plus MUJ.</li>
   <li><strong>Marketing:</strong> All programmes. Strong digital marketing track at Amity, JAIN, LPU.</li>
-  <li><strong>Human Resources:</strong> All programmes. SHRM-aligned at NMIMS plus Symbiosis SCDL.</li>
+  <li><strong>Human Resources:</strong> All programmes. NAAC A++ HR specialisation at NMIMS plus Symbiosis SSODL.</li>
   <li><strong>Operations:</strong> All programmes. Lean Six Sigma at NMIMS plus MUJ.</li>
-  <li><strong>International Business:</strong> Amity, Chandigarh University, Symbiosis SCDL.</li>
+  <li><strong>International Business:</strong> Amity, Chandigarh University, Symbiosis SSODL.</li>
   <li><strong>Business Analytics:</strong> JAIN, NMIMS, Chandigarh University, MUJ. Strongest at JAIN plus NMIMS.</li>
   <li><strong>Data Science and AI:</strong> Chandigarh University, NMIMS, JAIN. Cutting-edge spec.</li>
   <li><strong>FinTech:</strong> JAIN, Chandigarh University. Growing 2026 spec.</li>

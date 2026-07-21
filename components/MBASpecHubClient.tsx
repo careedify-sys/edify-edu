@@ -14,9 +14,10 @@ interface Props {
   specName: string
   customH1?: string
   customIntro?: string
+  mbaFeeMap?: Record<string, { min: number; max: number }>
 }
 
-export default function MBASpecHubClient({ specSlug, specName, customH1, customIntro }: Props) {
+export default function MBASpecHubClient({ specSlug, specName, customH1, customIntro, mbaFeeMap }: Props) {
   const canonical = getCanonicalSpec(specSlug)
   const editorial = SPEC_HUB_EDITORIAL[specSlug]
 
@@ -40,14 +41,18 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
         })
       })
       .sort((a, b) => {
-        const an = a.nirf > 0 && a.nirf < 200 ? a.nirf : 999
-        const bn = b.nirf > 0 && b.nirf < 200 ? b.nirf : 999
-        return an - bn
+        const ar = (a.nirfMgt && a.nirfMgt < 500) ? a.nirfMgt : (a.nirf > 0 && a.nirf < 500) ? a.nirf : 9999
+        const br = (b.nirfMgt && b.nirfMgt < 500) ? b.nirfMgt : (b.nirf > 0 && b.nirf < 500) ? b.nirf : 9999
+        return ar - br
       })
   }, [specSlug])
 
-  const feeMinVals = mbaUnis.map(u => u.feeMin).filter(f => f > 0)
-  const feeMaxVals = mbaUnis.map(u => u.feeMax).filter(f => f > 0)
+  const feeMinVals = mbaFeeMap
+    ? Object.values(mbaFeeMap).map(f => f.min).filter(f => f > 0)
+    : mbaUnis.map(u => u.feeMin).filter(f => f > 0)
+  const feeMaxVals = mbaFeeMap
+    ? Object.values(mbaFeeMap).map(f => f.max).filter(f => f > 0)
+    : mbaUnis.map(u => u.feeMax).filter(f => f > 0)
   const hasFees = feeMinVals.length > 0
   const feeFloor = hasFees ? Math.min(...feeMinVals) : 0
   const feeCeiling = hasFees ? Math.max(...feeMaxVals) : 0
@@ -139,9 +144,13 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
                     <td className="px-4 py-3">
                       <Link href={`/universities/${u.id}/mba`} className="font-medium text-blue-700 hover:underline">{u.name}</Link>
                     </td>
-                    <td className="px-4 py-3">{u.nirfMgt ? `#${u.nirfMgt} (Mgmt)` : u.nirf > 0 && u.nirf < 200 ? `#${u.nirf}` : 'Not ranked'}</td>
+                    <td className="px-4 py-3">{u.nirfMgt && u.nirfMgt < 500 ? `#${u.nirfMgt} (Mgmt)` : u.nirf > 0 && u.nirf < 500 ? `#${u.nirf}` : 'Not ranked (Mgmt)'}</td>
                     <td className="px-4 py-3">{u.naac || 'NA'}</td>
-                    <td className="px-4 py-3">{u.feeMin > 0 ? `${formatFeeSlim(u.feeMin)}${u.feeMax > u.feeMin ? ' - ' + formatFeeSlim(u.feeMax) : ''}` : 'Ask our counsellor'}</td>
+                    <td className="px-4 py-3">{(() => {
+                      const mf = mbaFeeMap?.[u.id]
+                      if (!mf) return '—'
+                      return mf.min === mf.max ? formatFeeSlim(mf.min) : `${formatFeeSlim(mf.min)} - ${formatFeeSlim(mf.max)}`
+                    })()}</td>
                   </tr>
                 ))}
               </tbody>
