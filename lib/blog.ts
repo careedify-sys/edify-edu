@@ -360,7 +360,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Stronger employer recognition in tier-1 cities.</strong> NMIMS Online versus IGNOU MBA shows up differently in a Mumbai BFSI lateral hire.</li>
 </ol>
 
-<p>For working professionals in tier-1 cities with Rs 1.5 to 2.2 lakh budget, online MBA usually wins. For budget-constrained candidates or government-job aspirants, distance MBA remains the right call. Read our full breakdown at <a href="/blog/online-mba-vs-distance-mba-difference-2026" class="ilink">online MBA vs distance MBA</a>.</p>
+<p>For working professionals in tier-1 cities with Rs 1.5 to 2.2 lakh budget, online MBA usually wins. For budget-constrained candidates or government-job aspirants, distance MBA remains the right call. Read our full breakdown at <a href="/guides/online-mba-vs-distance-mba" class="ilink">online MBA vs distance MBA</a>.</p>
 
 <h2>The Bottom Line</h2>
 
@@ -8689,7 +8689,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="il-grid">
   <a href="/blog/ugc-deb-approved-universities-list-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">UGC DEB Approved Universities List</div><div class="il-sub">Full verified list 2026</div></a>
   <a href="/blog/online-mba-salary-india-2026" class="il-card"><div class="il-uni">SALARY</div><div class="il-title">Online MBA Salary in India</div><div class="il-sub">What graduates actually earn</div></a>
-  <a href="/blog/online-mba-vs-distance-mba-difference-2026" class="il-card"><div class="il-uni">COMPARE</div><div class="il-title">Distance MBA vs Online MBA</div><div class="il-sub">Key differences explained</div></a>
+  <a href="/guides/online-mba-vs-distance-mba" class="il-card"><div class="il-uni">COMPARE</div><div class="il-title">Distance MBA vs Online MBA</div><div class="il-sub">Key differences explained</div></a>
   <a href="/universities" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Approved Universities</div><div class="il-sub">125-plus UGC-DEB verified</div></a>
   <a href="/blog/online-mba-northeast-india-2026" class="il-card"><div class="il-uni">REGION</div><div class="il-title">Online MBA Northeast India</div><div class="il-sub">4 NE universities incl. Central Uni</div></a>
 </div>
@@ -14915,7 +14915,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </div>
 
 <div class="il-grid">
-  <a class="il-card" href="/blog/online-mba-vs-distance-mba-difference-2026">Online MBA vs Distance MBA</a>
+  <a class="il-card" href="/guides/online-mba-vs-distance-mba">Online MBA vs Distance MBA</a>
   <a class="il-card" href="/blog/ugc-deb-approved-universities-list-2026">UGC-DEB Approved Universities</a>
   <a class="il-card" href="/blog/is-online-mba-worth-it-2026">Is Online MBA Worth It</a>
   <a class="il-card" href="/blog/affordable-online-mba-india-2026">Affordable Online MBA Under Rs 2L</a>
@@ -15418,7 +15418,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <strong>Related Guides</strong>
 <div class="il-grid">
   <a href="/blog/online-mba-delhi-ncr-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Online MBA Delhi NCR</div><div class="il-sub">All programs in Delhi</div></a>
-  <a href="/blog/online-mba-vs-distance-mba-difference-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Online vs Distance MBA</div><div class="il-sub">Which is better?</div></a>
+  <a href="/guides/online-mba-vs-distance-mba" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Online vs Distance MBA</div><div class="il-sub">Which is better?</div></a>
   <a href="/blog/ugc-deb-approved-universities-list-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">UGC DEB Universities</div><div class="il-sub">Full approved list</div></a>
   <a href="/compare" class="il-card"><div class="il-uni">COMPARE</div><div class="il-title">Compare Universities</div><div class="il-sub">Fees and features</div></a>
 </div>
@@ -16006,7 +16006,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="internal-links">
 <strong>Related Guides</strong>
 <div class="il-grid">
-  <a href="/blog/online-mba-vs-distance-mba-difference-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Online vs Distance MBA</div><div class="il-sub">Full comparison</div></a>
+  <a href="/guides/online-mba-vs-distance-mba" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Online vs Distance MBA</div><div class="il-sub">Full comparison</div></a>
   <a href="/blog/is-online-mba-worth-it-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Is Online MBA Worth It?</div><div class="il-sub">ROI and honest analysis</div></a>
   <a href="/blog/ugc-deb-approved-universities-list-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">UGC DEB Universities List</div><div class="il-sub">Full 2026 approved list</div></a>
   <a href="/compare" class="il-card"><div class="il-uni">COMPARE</div><div class="il-title">Compare Universities</div><div class="il-sub">All fees side by side</div></a>
@@ -16826,7 +16826,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="il-grid">
   <a class="il-card" href="/blog/distance-mba-meaning-what-is-it-2026">Distance MBA Meaning</a>
   <a class="il-card" href="/blog/correspondence-mba-meaning-2026">Correspondence MBA Meaning</a>
-  <a class="il-card" href="/blog/online-mba-vs-distance-mba-difference-2026">Online MBA vs Distance MBA</a>
+  <a class="il-card" href="/guides/online-mba-vs-distance-mba">Online MBA vs Distance MBA</a>
   <a class="il-card" href="/blog/best-online-mba-colleges-india-2026">Best Online MBA Colleges India</a>
   <a class="il-card" href="/blog/ugc-deb-approved-universities-list-2026">UGC-DEB Approved List</a>
 </div>`,
@@ -16840,7 +16840,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tags: ['online mba vs distance mba', 'correspondence mba', 'ugc deb approved', 'odl mba'],
     readTime: 9,
     publishedAt: '2026-04-05',
-    status: 'published' as const,
+    status: 'draft' as const,
     heroImage: 'https://images.pexels.com/photos/6325970/pexels-photo-6325970.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@vanessa-garcia" target="_blank" rel="noopener nofollow">Vanessa Garcia</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     heroImageAlt: 'Man using laptop and smartphone for a video call in an office setting.',
@@ -17321,7 +17321,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="il-grid">
   <a class="il-card" href="/blog/distance-mba-meaning-what-is-it-2026">Distance MBA Meaning Explained</a>
-  <a class="il-card" href="/blog/online-mba-vs-distance-mba-difference-2026">Online MBA vs Distance MBA</a>
+  <a class="il-card" href="/guides/online-mba-vs-distance-mba">Online MBA vs Distance MBA</a>
   <a class="il-card" href="/blog/top-correspondence-mba-colleges-india-2026">Top Correspondence MBA Colleges</a>
   <a class="il-card" href="/blog/is-online-mba-worth-it-2026">Is Online MBA Worth It</a>
   <a class="il-card" href="/blog/ugc-deb-approved-universities-list-2026">UGC-DEB Approved Universities List</a>
@@ -17987,7 +17987,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="il-grid">
   <a class="il-card" href="/blog/icfai-online-mba-fees-2026">ICFAI Online MBA Fees</a>
   <a class="il-card" href="/blog/top-correspondence-mba-colleges-india-2026">Top Correspondence MBA Colleges</a>
-  <a class="il-card" href="/blog/online-mba-vs-distance-mba-difference-2026">Online MBA vs Distance MBA</a>
+  <a class="il-card" href="/guides/online-mba-vs-distance-mba">Online MBA vs Distance MBA</a>
   <a class="il-card" href="/blog/is-online-mba-worth-it-2026">Is Online MBA Worth It</a>
   <a class="il-card" href="/blog/ugc-deb-approved-universities-list-2026">UGC-DEB Approved List 2026</a>
 </div>`,
@@ -18151,7 +18151,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="il-grid">
   <a class="il-card" href="/blog/best-online-mba-colleges-india-2026">Best Online MBA Colleges India</a>
   <a class="il-card" href="/blog/top-correspondence-mba-colleges-india-2026">Top Correspondence MBA Colleges India</a>
-  <a class="il-card" href="/blog/online-mba-vs-distance-mba-difference-2026">Online MBA vs Distance MBA Difference</a>
+  <a class="il-card" href="/guides/online-mba-vs-distance-mba">Online MBA vs Distance MBA Difference</a>
   <a class="il-card" href="/blog/mba-course-duration-india-2026">MBA Course Duration, How Many Years?</a>
 </div>
 
@@ -18918,7 +18918,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <a class="il-card" href="/blog/online-mba-for-working-professionals-india">Online MBA for Working Professionals</a>
   <a class="il-card" href="/blog/top-executive-mba-programs-india-2026">Top Executive MBA Programs</a>
   <a class="il-card" href="/blog/affordable-online-mba-india-2026">Affordable Online MBA</a>
-  <a class="il-card" href="/blog/online-mba-vs-distance-mba-difference-2026">Online vs Distance MBA</a>
+  <a class="il-card" href="/guides/online-mba-vs-distance-mba">Online vs Distance MBA</a>
   <a class="il-card" href="/blog/is-online-mba-worth-it-2026">Is Online MBA Worth It</a>
 </div>`,
   },
@@ -19324,7 +19324,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <a class="il-card" href="/universities/amity-university-online">Amity University Online  -- Full Profile & Syllabus</a>
   <a class="il-card" href="/blog/mba-fees-india-complete-guide-2026">Online MBA Fee Comparison India 2026</a>
   <a class="il-card" href="/blog/best-online-mba-colleges-india-2026">Best Online MBA Colleges India</a>
-  <a class="il-card" href="/blog/online-mba-vs-distance-mba-difference-2026">Online MBA vs Distance MBA Difference</a>
+  <a class="il-card" href="/guides/online-mba-vs-distance-mba">Online MBA vs Distance MBA Difference</a>
   <a class="il-card" href="/blog/nmims-online-mba-review-2026">NMIMS Online MBA Review 2026</a>
   <a class="il-card" href="/blog/mahe-online-mba-review-2026">MAHE Online MBA Review 2026</a>
   <a class="il-card" href="/blog/muj-online-mba-review-2026">MUJ Online MBA Review 2026</a>

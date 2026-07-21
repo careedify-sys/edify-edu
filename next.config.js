@@ -417,8 +417,8 @@ const nextConfig = {
       // MBA Postgrad
       { source: '/blog/mba-graduate-or-postgraduate-india-2026',           destination: '/blog/is-mba-post-graduation-india-2026',             permanent: true },
       // Online vs Distance
-      { source: '/blog/distance-mba-vs-online-mba-india-2026',             destination: '/blog/online-mba-vs-distance-mba-difference-2026',    permanent: true },
-      { source: '/blog/difference-online-mba-distance-mba-2026',           destination: '/blog/online-mba-vs-distance-mba-difference-2026',    permanent: true },
+      { source: '/blog/distance-mba-vs-online-mba-india-2026',             destination: '/guides/online-mba-vs-distance-mba',                 permanent: true },
+      { source: '/blog/difference-online-mba-distance-mba-2026',           destination: '/guides/online-mba-vs-distance-mba',                 permanent: true },
       // Tier 1 consolidations (2026-04-25)
       { source: '/blog/cheapest-online-mba-india-2026',                    destination: '/blog/affordable-online-mba-india-2026',              permanent: true },
       { source: '/blog/distance-mba-mumbai-2026',                          destination: '/blog/distance-mba-colleges-mumbai-2026',             permanent: true },
