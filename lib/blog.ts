@@ -37415,7 +37415,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <tr><td>Tier 1 Premium</td><td>Symbiosis Online (SSODL)</td><td>#19</td><td>A++</td><td>₹1,65,000</td></tr>
 <tr><td>Tier 1 Premium</td><td>MAHE Online</td><td>#7</td><td>A++</td><td>₹1,80,000 / ₹2,40,000 (Honors)</td></tr>
 <tr><td>Tier 1 Premium</td><td>Amrita Online (AHEAD)</td><td>Top tier</td><td>A++</td><td>₹1,41,000</td></tr>
-<tr><td>Tier 1 Premium</td><td>NMIMS Online</td><td>Top 100</td><td>A+</td><td>₹1,50,000 / ₹1,80,000 (BA)</td></tr>
+<tr><td>Tier 1 Premium</td><td>NMIMS Online</td><td>Top 100</td><td>A++</td><td>₹1,50,000 / ₹1,80,000 (BA)</td></tr>
 <tr><td>Tier 2 Mid-Premium</td><td>Amity Online</td><td>#51</td><td>A+</td><td>₹1,75,120 one-time</td></tr>
 <tr><td>Tier 2 Mid-Premium</td><td>LPU Online</td><td>#38</td><td>A++</td><td>₹1,22,400 net</td></tr>
 <tr><td>Tier 2 Mid-Premium</td><td>Manipal University Jaipur</td><td>#101-150</td><td>A+</td><td>₹1,39,500</td></tr>
