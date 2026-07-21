@@ -228,7 +228,7 @@ const internalLinks = [
   ['pgdm-vs-mba-difference-which-is-better-india',
     [
       ['IIM', '/blog/iim-ranking-india-2026-all-iims-list', 'IIM'],
-      ['online MBA', '/blog/top-online-mba-india-2026', 'top online MBA programs'],
+      ['online MBA', '/blog/best-online-mba-colleges-india-2026', 'best online MBA colleges'],
     ]
   ],
 

@@ -465,7 +465,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     nirf: '#8 University',
     couponCode: 'AMR2026-5K',
     couponDiscount: 'Up to Rs 5,000 verified discount coupon (Tue/Sat IST)',
-    blogSlug: 'top-online-mba-india-2026',
+    blogSlug: 'best-online-mba-colleges-india-2026',
     officialUrl: 'amritaonline.com',
     discounts: [
       { type: 'Defence scholarship', eligibility: 'Serving/retired defence', saving: '20% fee waiver', howToApply: 'Submit defence ID' },
