@@ -430,6 +430,7 @@ const nextConfig = {
       // Blog content consolidations (SEO merge)
       { source: '/blog/top-online-mba-india-2026',                         destination: '/blog/best-online-mba-colleges-india-2026',           permanent: true },
       { source: '/blog/online-mba-fee-comparison-india-2026',              destination: '/blog/mba-fees-india-complete-guide-2026',            permanent: true },
+      { source: '/blog/is-distance-mba-worth-it-india-2026',              destination: '/blog/is-online-mba-worth-it-2026',                   permanent: true },
       // MCA jobs/salary post — slug never existed in blog.ts, redirect to canonical
       { source: '/blog/jobs-after-mca-salary-career-2026',                 destination: '/blog/career-after-mca-india-2026',                  permanent: true },
       // Review blogs: year-less short form → canonical -2026 slug
