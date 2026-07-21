@@ -87,6 +87,7 @@ export interface University {
    */
   uniType?: 'private' | 'deemed' | 'state-private' | 'central' | 'state-public' | 'open'
   programs: Program[]
+  comingSoon?: Program[]
   /**
    * Program-specific fee overrides. Builder reads this first (via getDisplayFee)
    * and falls back to feeMin / feeMax. Lowercase keys to match runtime
@@ -597,7 +598,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Sales & Marketing', 'Human Resource Management', 'Hospital & Healthcare Management', 'Finance', 'Retail Management', 'Logistics & Supply Chain Management', 'International Business', 'Entrepreneurship Management', 'Event Management', 'Digital Marketing', 'Data Science & Business Analytics'],
-        fees: '₹41K – ₹169K',
+        fees: '₹1,75,000',
         duration: '2 Years',
         roles: ['Sales Executive', 'Marketing Executive', 'Brand Associate', 'Market Research Analyst'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -749,7 +750,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Agribusiness Management', 'Banking & Financial Services', 'Business Analytics', 'Digital Marketing & Sales', 'Entrepreneurship & Innovation Management', 'Family Managed Business', 'Finance', 'Forensic Accounting & Corporate Fraud Investigation', 'Healthcare Management', 'Human Resource Management', 'Information Technology (IT)', 'International Trade & Business', 'Logistics & Supply Chain Management', 'Marketing', 'Operations Management', 'Pharmaceutical Management', 'Project Management', 'Public Policy', 'Retail Management', 'Tourism & Event Management'],
-        fees: '₹37K – ₹150K',
+        fees: '₹1,50,000',
         duration: '2 Yrs',
         roles: ['Marketing Executive', 'Brand Trainee', 'Digital Marketing Executive', 'Sales Trainee'],
         avgSalary: '₹5L – ₹15L per annum',
@@ -950,7 +951,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing Management', 'Finance', 'Human Resource Management', 'Business Analytics', 'Operations Management', 'Logistics & Supply Chain Management', 'International Business', 'Digital Marketing'],
-        fees: '₹67K – ₹241K',
+        fees: '₹67,000',
         duration: '2 Yrs',
         roles: ['HR Executive', 'IR Executive', 'L&D Coordinator', 'Talent Acquisition Trainee'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -2936,7 +2937,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management'],
-        fees: '₹30K – ₹120K',
+        fees: '₹99,000',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -3030,7 +3031,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Hospital Administration', 'International Business'],
-        fees: '₹32K – ₹130K',
+        fees: '₹1,20,000',
         duration: '2 Years',
         roles: ['Management Trainee', 'Operations Executive', 'Supply'],
         avgSalary: '₹3.5 LPA -- ₹9 LPA',
@@ -3892,7 +3893,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management'],
-        fees: '₹14K – ₹62K',
+        fees: '₹62,200',
         duration: '2 Yrs',
         roles: ['Marketing Executive', 'Brand Trainee', 'Sales Trainee', 'Market Research Analyst'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -4152,13 +4153,13 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Finance'],
-        fees: '₹35K – ₹140K',
+        fees: '₹1,40,000',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Karunya Institute of Technology and — recognised for corporate hiring.'},
+        careerOutcome: 'UGC DEB approved MBA from Karunya Institute of Technology and Sciences. Recognised for corporate hiring.'},
       'B.Com': {
         specs: ['General Management'],
         fees: '₹0.1L – ₹0.9L',
@@ -4167,7 +4168,7 @@ export const UNIVERSITIES: University[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved B.Com from Karunya Institute of Technology and — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved B.Com from Karunya Institute of Technology and Sciences. Recognised for corporate hiring.',
       }
     },
     color: '#1B4FBE',
@@ -4286,16 +4287,17 @@ export const UNIVERSITIES: University[] = [
     forWho: ['Marketing aspirants targeting Phygital Retailing, Startup Marketing, Digital Soc'],
     notFor: ['Deep finance/tech seekers'],
     programs: ['MBA'],
+    programFees: { mba: { fee: 180000 } },
     programDetails: {
       'MBA': {
         specs: ['Marketing Management', 'Financial Management', 'Human Resource Management', 'General Management'],
-        fees: '₹60K – ₹240K',
+        fees: '₹1,80,000 (MRP ₹2,80,000)',
         duration: '2 Yrs',
         roles: ['Marketing Executive', 'Brand Trainee', 'Digital Marketing Executive', 'Retail Trainee'],
         avgSalary: '₹5L – ₹14L per annum',
         topCompanies: ['Accenture', 'Amazon', 'Infosys', 'TATA', 'Wipro', 'Top MNCs'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from SASTRA Deemed University – Online ( — recognised for corporate hiring.'
+        careerOutcome: 'UGC DEB approved MBA from SASTRA Deemed University. Recognised for corporate hiring.'
 }
     },
     color: '#1B4FBE',
@@ -4426,17 +4428,9 @@ export const UNIVERSITIES: University[] = [
     description: 'UGC DEB approved online programs from Christ (Deemed to be University) Online. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'MCA', 'B.Com', 'BBA'],
+    programs: ['MCA', 'B.Com', 'BBA'],
+    comingSoon: ['MBA'],
     programDetails: {
-      'MBA': {
-        specs: ['Business Analytics'],
-        fees: '',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Christ (Deemed to be University) On — recognised for corporate hiring.'},
       'MCA': {
         specs: ['General'],
         fees: '₹2.3L',
@@ -5444,57 +5438,6 @@ export const UNIVERSITIES: University[] = [
     color: '#1B4FBE',
   },
   {
-    id: 'karunya-kcode-online',
-    name: 'Karunya Institute of Technology and Sciences (KCODE Online',
-    abbr: 'KITS',
-    city: 'Coimbatore',
-    state: 'Tamil Nadu',
-    region: 'South',
-    nirf: 999,
-    naac: 'A++',
-    ugc: true,
-    approvals: ['UGC DEB', 'NAAC A++', 'AICTE', 'WES Recognised'],
-    examMode: 'Online',
-    govtRecognised: true,
-    psuEligible: true,
-    feeMin: 60000,
-    feeMax: 200000,
-    emiFrom: 2500,
-    eligibility: 'Graduation with 50% marks from recognized university',
-    eligibilityPct: 50,
-    highlight: 'NAAC A++',
-    tagline: 'NAAC A++ accredited · UGC DEB approved online programs',
-    description: 'UGC DEB approved online programs from Karunya Institute of Technology and Sciences. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
-    forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
-    notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
-    programs: ['MBA', 'B.Com'],
-    programDetails: {
-      'MBA': {
-        specs: ['Finance'],
-        fees: '₹35K – ₹140K',
-        duration: '2 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Karunya Institute of Technology and — recognised for corporate hiring.',
-      },
-      'B.Com': {
-        specs: ['General Management'],
-        fees: '₹0.1L – ₹0.9L',
-        duration: '3 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved B.Com from Karunya Institute of Technology and — recognised for corporate hiring.',
-      }
-    },
-    color: '#1B4FBE',
-  rankingBadge: 'NAAC A++ accredited',
-  enrollments: 500,
-  },
-  {
     id: 'anna-university-online',
     name: 'Anna University Online',
     abbr: 'AUDE',
@@ -5564,7 +5507,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing Management', 'Finance', 'Human Re'],
-        fees: '₹35K – ₹140K',
+        fees: '₹1,50,000',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -5856,7 +5799,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Business Analytics Pathway'],
-        fees: '₹30K – ₹120K',
+        fees: '₹1,40,000',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -6369,7 +6312,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management', 'Systems', 'Business Analytics'],
-        fees: '₹30K – ₹120K',
+        fees: '₹1,30,000',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -6733,7 +6676,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Finance', 'Human Resource Management', 'Marketing'],
-        fees: '₹20K – ₹80K',
+        fees: '₹87,800',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -7176,7 +7119,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: [{ slug: 'finance', name: 'Finance' }, { slug: 'human-resource-management', name: 'Human Resource Management' }, { slug: 'marketing', name: 'Marketing' }, { slug: 'strategy-and-leadership', name: 'Strategy & Leadership' }, { slug: 'supply-chain-operations-management', name: 'Supply Chain & Operations Management' }, { slug: 'ai-for-business', name: 'AI for Business' }, { slug: 'digital-finance', name: 'Digital Finance' }],
-        fees: 'EMI from \u20b96,319/mo',
+        fees: '\u20b92,00,000',
         duration: '1 Year (12 Months)',
         roles: ['Strategy Consultant', 'Business Manager', 'Product Manager', 'Finance Manager', 'Marketing Manager'],
         avgSalary: '\u20b98L \u2013 \u20b925L per annum',

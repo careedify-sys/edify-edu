@@ -20,24 +20,7 @@ import MBAHubClient from '@/components/MBAHubClient'
 import MBASpecHubClient from '@/components/MBASpecHubClient'
 import ProgramHubClient from '@/components/ProgramHubClient'
 
-// Universities whose fee string contains per-semester min, not a total.
-// Display only the max (total). Remove an ID after portal-verifying its real total.
-const SEMESTER_TO_TOTAL_IDS = new Set([
-  'srm-institute-science-technology-online',
-  'dy-patil-university-online',
-  'parul-university-online',
-  'mangalayatan-university-online',
-  'marwadi-university-online',
-  'pp-savani-university-online',
-  'andhra-university-online',
-  'karunya-university-online',
-  'sastra-university-online',
-  'karunya-kcode-online',
-  'vels-university-online',
-  'alvas-college-online',
-  'kalasalingam-university-online',
-  'teerthanker-mahaveer-university-online',
-])
+const SEMESTER_TO_TOTAL_IDS = new Set<string>([])
 
 function parseMbaFeeString(s: string, uniId?: string): { min: number; max: number } | null {
   if (/emi|\/mo|per\s*month/i.test(s)) return null
