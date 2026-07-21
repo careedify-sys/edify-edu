@@ -4291,7 +4291,7 @@ export const UNIVERSITIES: University[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing Management', 'Financial Management', 'Human Resource Management', 'General Management'],
-        fees: '₹1,80,000 (MRP ₹2,80,000)',
+        fees: '₹1,80,000',
         duration: '2 Yrs',
         roles: ['Marketing Executive', 'Brand Trainee', 'Digital Marketing Executive', 'Retail Trainee'],
         avgSalary: '₹5L – ₹14L per annum',
