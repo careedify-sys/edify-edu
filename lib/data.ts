@@ -1243,7 +1243,7 @@ export const UNIVERSITIES: University[] = [
   },
   {
     id: 'galgotias-university-online',
-    programFees: { bca: { fee: 69000 }, mca: { fee: 74000 } }, // tuition only — excludes ₹1,200 reg + ₹4,000/yr exam + ₹1,000 alumni
+    programFees: { bca: { fee: 83200 }, mca: { fee: 74000 } }, // BCA all-in: ₹69K tuition + ₹1,200 reg + ₹12K exam (₹4K/yr × 3) + ₹1K alumni
     logo: '/logos/university_logos/galgotias-university-logo.svg',
     name: 'Galgotias University Online',
     abbr: 'GUO',
