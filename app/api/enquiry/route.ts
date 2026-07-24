@@ -119,13 +119,42 @@ export async function POST(req: NextRequest) {
     const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
 
     if (resend) {
+      const leadDigits = phone.replace(/\D/g, '')
+      const leadWaNumber = leadDigits.startsWith('91') ? leadDigits : `91${leadDigits}`
+      const leadFirstName = name.split(' ')[0]
+      const waMsgParts = [`Hi ${leadFirstName}, this is Rishi from edifyedu.in. Thanks for your enquiry`]
+      if (programValue !== 'Not specified' && universityValue !== 'Not specified') {
+        waMsgParts.push(` about ${programValue} at ${universityValue}`)
+      } else if (programValue !== 'Not specified') {
+        waMsgParts.push(` about ${programValue}`)
+      } else if (universityValue !== 'Not specified') {
+        waMsgParts.push(` about ${universityValue}`)
+      }
+      waMsgParts.push(`. I have the fee structure and eligibility details ready for you. Is now a good time to share them?`)
+      const waMsg = encodeURIComponent(waMsgParts.join(''))
+      const waLink = `https://wa.me/${leadWaNumber}?text=${waMsg}`
+      const telLink = `tel:+${leadWaNumber}`
+
       resend.emails.send({
         from: 'edifyedu.in Leads <leads@edifyedu.in>',
         to: [process.env.LEAD_EMAIL_PRIMARY || 'hello@edifyedu.in', ...(process.env.LEAD_EMAIL_SECONDARY ? [process.env.LEAD_EMAIL_SECONDARY] : [])],
         subject: `New Lead: ${name.slice(0, 50)} | ${programValue.slice(0, 50)} @ ${universityValue.slice(0, 50)}`,
         html: `
-          <div style="font-family:sans-serif;max-width:500px">
-            <h2 style="color:#0f172a">New Enquiry: edifyedu.in</h2>
+          <div style="font-family:Arial,Helvetica,sans-serif;max-width:500px">
+            <h2 style="color:#0f172a;margin:0 0 16px">New Enquiry: ${escHtml(leadFirstName)} — ${escHtml(programValue)}</h2>
+
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:0 0 12px"><tr><td>
+              <a href="${waLink}" target="_blank" style="display:block;background:#25D366;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:bold;text-align:center;text-decoration:none;padding:14px 24px;border-radius:8px">
+                Message ${escHtml(leadFirstName)} on WhatsApp
+              </a>
+            </td></tr></table>
+
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:0 0 20px"><tr><td style="text-align:center">
+              <a href="${telLink}" style="color:#0f172a;font-size:14px;text-decoration:none">
+                Call +91 ${escHtml(cleanPhone)}
+              </a>
+            </td></tr></table>
+
             <table style="width:100%;border-collapse:collapse;font-size:14px">
               <tr><td style="padding:8px;background:#f8fafc;font-weight:600;width:40%">Name</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${escHtml(name)}</td></tr>
               <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Phone</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">+91 ${escHtml(phone)}</td></tr>
