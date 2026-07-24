@@ -70,8 +70,9 @@ export async function POST(req: NextRequest) {
     const stateValue = state || 'Not specified'
 
     // ── 1. EMAIL via Resend ─────────────────────────────────────────────────
-    if (process.env.RESEND_API_KEY) {
-      const resend = new Resend(process.env.RESEND_API_KEY)
+    const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
+
+    if (resend) {
       resend.emails.send({
         from: 'edifyedu.in Leads <leads@edifyedu.in>',
         to: [process.env.LEAD_EMAIL_PRIMARY || 'hello@edifyedu.in', ...(process.env.LEAD_EMAIL_SECONDARY ? [process.env.LEAD_EMAIL_SECONDARY] : [])],
@@ -94,7 +95,112 @@ export async function POST(req: NextRequest) {
             </table>
           </div>
         `,
-      }).catch(() => {}) // Non-blocking
+      }).catch(() => {})
+    }
+
+    // ── 1b. CONFIRMATION EMAIL to lead ─────────────────────────────────────
+    if (resend && email) {
+      const firstName = name.split(' ')[0]
+      const hasProgram = programValue !== 'Not specified'
+      const hasUniversity = universityValue !== 'Not specified'
+      const aboutProgram = hasProgram ? ` about ${escHtml(programValue)}` : ''
+      const atUniversity = hasUniversity ? ` at ${escHtml(universityValue)}` : ''
+      const wa = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'
+
+      const programSlug = hasProgram ? programValue.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') : ''
+      let helpLink = 'https://edifyedu.in/universities'
+      let helpText = 'While you wait, here are the universities we track with verified fee and ranking data'
+      if (hasProgram) {
+        helpLink = `https://edifyedu.in/programs/${programSlug}`
+        helpText = `While you wait, here's the verified fee and ranking comparison for ${escHtml(programValue)}`
+      } else if (hasUniversity) {
+        helpLink = 'https://edifyedu.in/universities'
+        helpText = `While you wait, here are all the universities we compare with verified data`
+      }
+
+      const subjectLine = hasProgram
+        ? `Your ${programValue} options, ${firstName}`
+        : `About your enquiry, ${firstName}`
+
+      resend.emails.send({
+        from: 'Rishi Kumar <rishi@edifyedu.in>',
+        replyTo: 'rishi@edifyedu.in',
+        to: [email],
+        subject: subjectLine,
+        text: [
+          `Hi ${firstName},`,
+          '',
+          `Thanks for reaching out${hasProgram ? ` about ${programValue}` : ''}${hasUniversity ? ` at ${universityValue}` : ''}. I'm Rishi, the founder of edifyedu.in.`,
+          '',
+          `Here's what happens next: someone from our team will reach out to you on WhatsApp within 24 hours with the fee sheet, eligibility details, and any coupon savings that apply. No sales pressure, no spam calls.`,
+          '',
+          `${helpText}:`,
+          helpLink,
+          '',
+          `A quick note on how we work: edifyedu.in is independent. We don't take commissions from universities and we don't push paid rankings. The comparison data you see on our site comes from UGC-DEB, NAAC, and NIRF records. So when we recommend something, it's because the numbers back it up.`,
+          '',
+          `One quick question so I can point you in the right direction: are you working right now, or looking to study straight after graduation? Just reply to this email.`,
+          '',
+          `Talk soon,`,
+          `Rishi`,
+          '',
+          `---`,
+          `Rishi Kumar | Founder`,
+          `edifyedu.in - https://edifyedu.in`,
+          `WhatsApp: +91 70612 85806 - https://wa.me/${wa}`,
+          `125+ UGC-DEB approved universities compared. Independent, commission-free.`,
+          `YouTube: https://youtube.com/@edify_edu`,
+          `Instagram: https://www.instagram.com/edifyedu.in/`,
+          `LinkedIn: https://www.linkedin.com/company/edifyeducation/`,
+        ].join('\n'),
+        html: [
+          `<table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:560px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.6;color:#1e293b">`,
+          `<tr><td style="padding:0">`,
+
+          `<p style="margin:0 0 16px">Hi ${escHtml(firstName)},</p>`,
+
+          `<p style="margin:0 0 16px">Thanks for reaching out${aboutProgram}${atUniversity}. I'm Rishi, the founder of edifyedu.in.</p>`,
+
+          `<p style="margin:0 0 16px">Here's what happens next: someone from our team will reach out to you on WhatsApp within 24 hours with the fee sheet, eligibility details, and any coupon savings that apply. No sales pressure, no spam calls.</p>`,
+
+          `<p style="margin:0 0 16px"><a href="${helpLink}" style="color:#f97316;text-decoration:underline">${helpText}</a>.</p>`,
+
+          `<p style="margin:0 0 16px">A quick note on how we work: edifyedu.in is independent. We don't take commissions from universities and we don't push paid rankings. The comparison data you see on our site comes from UGC-DEB, NAAC, and NIRF records. So when we recommend something, it's because the numbers back it up.</p>`,
+
+          `<p style="margin:0 0 16px">One quick question so I can point you in the right direction: are you working right now, or looking to study straight after graduation? Just reply to this email.</p>`,
+
+          `<p style="margin:0 0 24px">Talk soon,<br>Rishi</p>`,
+
+          // Signature divider
+          `<table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-top:1px solid #e2e8f0;padding-top:20px;margin-top:8px"><tr><td style="padding-top:20px">`,
+
+          // Logo
+          `<img src="https://edifyedu.in/logos/edify_logo_192px.png" alt="edifyedu.in" width="140" style="display:block;width:140px;height:auto;margin-bottom:12px" />`,
+
+          // Name and role
+          `<p style="margin:0 0 4px;font-size:14px;font-weight:bold;color:#0f172a">Rishi Kumar <span style="font-weight:normal;color:#64748b">| Founder</span></p>`,
+
+          // Site link and WhatsApp
+          `<p style="margin:0 0 4px;font-size:13px">`,
+          `<a href="https://edifyedu.in" style="color:#f97316;text-decoration:none">edifyedu.in</a>`,
+          `<span style="color:#cbd5e1;margin:0 6px">&#183;</span>`,
+          `<a href="https://wa.me/${escHtml(wa)}" style="color:#64748b;text-decoration:none">WhatsApp +91 70612 85806</a>`,
+          `</p>`,
+
+          // Credibility line
+          `<p style="margin:8px 0 10px;font-size:12px;color:#64748b;line-height:1.4">125+ UGC-DEB approved universities compared. Independent, commission-free.</p>`,
+
+          // Social links
+          `<p style="margin:0;font-size:12px">`,
+          `<a href="https://youtube.com/@edify_edu" style="color:#64748b;text-decoration:none;margin-right:12px">YouTube</a>`,
+          `<a href="https://www.instagram.com/edifyedu.in/" style="color:#64748b;text-decoration:none;margin-right:12px">Instagram</a>`,
+          `<a href="https://www.linkedin.com/company/edifyeducation/" style="color:#64748b;text-decoration:none">LinkedIn</a>`,
+          `</p>`,
+
+          `</td></tr></table>`,
+          `</td></tr></table>`,
+        ].join('\n'),
+      }).catch(() => {})
     }
 
     // ── 2. GOOGLE SHEETS — Leads Webhook ───────────────────────────────────
