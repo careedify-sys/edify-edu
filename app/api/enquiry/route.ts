@@ -1,8 +1,54 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import { validateBody } from '@/lib/validate-body'
+import { UNIVERSITIES } from '@/lib/data'
+import type { University, Program } from '@/lib/data'
 
 const escHtml = (s: string = '') => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;')
+
+function normalizeForMatch(s: string): string {
+  return s.toLowerCase()
+    .replace(/\b(online|university|deemed|to be|school|institute|academy|foundation)\b/g, '')
+    .replace(/[^a-z0-9\s]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+function matchUniversity(input: string): University | null {
+  const trimmed = input.trim()
+  if (trimmed.length < 3) return null
+  const norm = normalizeForMatch(trimmed)
+  if (!norm) return null
+
+  let bestScore = 0
+  let bestMatch: University | null = null
+  let tied = false
+
+  for (const uni of UNIVERSITIES) {
+    let score = 0
+    const normName = normalizeForMatch(uni.name)
+    const normAbbr = uni.abbr.toLowerCase().replace(/[^a-z0-9]/g, '')
+    const normId = uni.id.replace(/-/g, ' ').replace(/\bonline\b/, '').trim()
+
+    if (norm === normAbbr || normAbbr.includes(norm) || norm.includes(normAbbr)) {
+      score = 3
+    } else if (normName.includes(norm)) {
+      score = 2
+    } else if (normId.includes(norm)) {
+      score = 1
+    }
+
+    if (score > bestScore) {
+      bestScore = score
+      bestMatch = uni
+      tied = false
+    } else if (score > 0 && score === bestScore && uni.id !== bestMatch?.id) {
+      tied = true
+    }
+  }
+
+  return tied ? null : bestMatch
+}
 
 // Simple in-memory rate limiter (resets on cold start — good enough for edge)
 const RATE_LIMIT_WINDOW = 60_000 // 1 minute
@@ -103,53 +149,106 @@ export async function POST(req: NextRequest) {
       const firstName = name.split(' ')[0]
       const hasProgram = programValue !== 'Not specified'
       const hasUniversity = universityValue !== 'Not specified'
-      const aboutProgram = hasProgram ? ` about ${escHtml(programValue)}` : ''
-      const atUniversity = hasUniversity ? ` at ${escHtml(universityValue)}` : ''
       const wa = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'
 
+      const matchedUni = hasUniversity ? matchUniversity(universityValue) : null
+      const uniDisplayName = matchedUni ? matchedUni.name.replace(/\s*Online\s*$/i, '') : null
+
+      const programAsType = hasProgram ? programValue as Program : null
+      const progDetail = matchedUni && programAsType
+        ? matchedUni.programDetails?.[programAsType] : null
+      const duration = progDetail?.duration || null
+
+      const naacGrade = matchedUni?.naac || null
+      const nirfRank = matchedUni
+        ? (programAsType === 'MBA' && matchedUni.nirfMgt != null && matchedUni.nirfMgt < 500
+            ? { value: matchedUni.nirfMgt, label: 'NIRF Management' }
+            : matchedUni.nirf != null && matchedUni.nirf < 500
+              ? { value: matchedUni.nirf, label: 'NIRF University' }
+              : null)
+        : null
+      const ugcApproved = matchedUni?.ugc === true
+
+      const hasDataLines = !!(naacGrade || nirfRank || ugcApproved || duration)
+      const showDataBlock = !!matchedUni && hasDataLines
+
       const programSlug = hasProgram ? programValue.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') : ''
-      let helpLink = 'https://edifyedu.in/universities'
-      let helpText = 'While you wait, here are the universities we track with verified fee and ranking data'
+      let compareLink = 'https://edifyedu.in/universities'
+      let compareLinkText = 'Compare all universities we track'
       if (hasProgram) {
-        helpLink = `https://edifyedu.in/programs/${programSlug}`
-        helpText = `While you wait, here's the verified fee and ranking comparison for ${escHtml(programValue)}`
-      } else if (hasUniversity) {
-        helpLink = 'https://edifyedu.in/universities'
-        helpText = `While you wait, here are all the universities we compare with verified data`
+        compareLink = `https://edifyedu.in/programs/${programSlug}`
+        compareLinkText = `Compare ${escHtml(programValue)} programs across universities`
       }
 
-      const subjectLine = hasProgram
-        ? `Your ${programValue} options, ${firstName}`
-        : `About your enquiry, ${firstName}`
+      let subjectLine: string
+      if (hasUniversity && hasProgram) {
+        subjectLine = `${uniDisplayName || universityValue} ${programValue} — verified details and next steps`
+      } else if (hasProgram) {
+        subjectLine = `Your ${programValue} enquiry — what happens next`
+      } else {
+        subjectLine = `Your enquiry — what happens next`
+      }
+
+      // ── Plain-text data block ──
+      const textDataLines: string[] = []
+      if (showDataBlock) {
+        textDataLines.push(`${uniDisplayName} — ${hasProgram ? programValue : 'Online Programs'}`)
+        if (naacGrade) textDataLines.push(`  NAAC: ${naacGrade}`)
+        if (nirfRank) textDataLines.push(`  ${nirfRank.label}: #${nirfRank.value}`)
+        if (ugcApproved) textDataLines.push(`  UGC-DEB approved: Yes`)
+        if (duration) textDataLines.push(`  Duration: ${duration}`)
+        textDataLines.push('')
+      }
+
+      // ── HTML data block ──
+      let htmlDataBlock = ''
+      if (showDataBlock) {
+        const rows: string[] = []
+        if (naacGrade) rows.push(`<tr><td style="padding:6px 12px;font-size:13px;color:#64748b;border-bottom:1px solid #f1f5f9">NAAC</td><td style="padding:6px 12px;font-size:13px;font-weight:bold;color:#0f172a;border-bottom:1px solid #f1f5f9">${escHtml(naacGrade)}</td></tr>`)
+        if (nirfRank) rows.push(`<tr><td style="padding:6px 12px;font-size:13px;color:#64748b;border-bottom:1px solid #f1f5f9">${escHtml(nirfRank.label)}</td><td style="padding:6px 12px;font-size:13px;font-weight:bold;color:#0f172a;border-bottom:1px solid #f1f5f9">#${nirfRank.value}</td></tr>`)
+        if (ugcApproved) rows.push(`<tr><td style="padding:6px 12px;font-size:13px;color:#64748b;border-bottom:1px solid #f1f5f9">UGC-DEB approved</td><td style="padding:6px 12px;font-size:13px;font-weight:bold;color:#10b981;border-bottom:1px solid #f1f5f9">Yes</td></tr>`)
+        if (duration) rows.push(`<tr><td style="padding:6px 12px;font-size:13px;color:#64748b">Duration</td><td style="padding:6px 12px;font-size:13px;font-weight:bold;color:#0f172a">${escHtml(duration)}</td></tr>`)
+
+        htmlDataBlock = [
+          `<table cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;margin:0 0 20px">`,
+          `<tr><td colspan="2" style="padding:10px 12px;font-size:14px;font-weight:bold;color:#0f172a;border-bottom:1px solid #e2e8f0">${escHtml(uniDisplayName!)} ${hasProgram ? `— ${escHtml(programValue)}` : ''}</td></tr>`,
+          ...rows,
+          `</table>`,
+        ].join('\n')
+      }
 
       resend.emails.send({
-        from: 'Rishi Kumar <rishi@edifyedu.in>',
-        replyTo: 'rishi@edifyedu.in',
+        from: 'Rishi Kumar <hello@edifyedu.in>',
+        replyTo: 'hello@edifyedu.in',
         to: [email],
         subject: subjectLine,
         text: [
           `Hi ${firstName},`,
           '',
-          `Thanks for reaching out${hasProgram ? ` about ${programValue}` : ''}${hasUniversity ? ` at ${universityValue}` : ''}. I'm Rishi, the founder of edifyedu.in.`,
+          `Here's what you asked about, checked against official records:`,
           '',
-          `Here's what happens next: someone from our team will reach out to you on WhatsApp within 24 hours with the fee sheet, eligibility details, and any coupon savings that apply. No sales pressure, no spam calls.`,
+          ...textDataLines,
+          `Fee structures change with every admission cycle, so our representative will confirm the current fee with you directly, including the charges that are easy to miss.`,
           '',
-          `${helpText}:`,
-          helpLink,
+          `WHAT HAPPENS NEXT`,
+          `Our team will message you on WhatsApp within 24 hours with the confirmed fee structure, an eligibility check for your profile, and any scholarships you qualify for.`,
+          `No sales pressure, no repeated calls. If we think this is not the right fit for you, we will say so.`,
           '',
-          `A quick note on how we work: edifyedu.in is independent. We don't take commissions from universities and we don't push paid rankings. The comparison data you see on our site comes from UGC-DEB, NAAC, and NIRF records. So when we recommend something, it's because the numbers back it up.`,
+          `COMPARE BEFORE YOU DECIDE`,
+          `${compareLinkText}: ${compareLink}`,
           '',
-          `One quick question so I can point you in the right direction: are you working right now, or looking to study straight after graduation? Just reply to this email.`,
+          `These details come from UGC-DEB, NAAC and NIRF records. edifyedu.in takes zero commission from universities, so there is nothing in it for us either way.`,
           '',
-          `Talk soon,`,
+          `One question so I can point you right: are you working right now, or studying full time? Just reply, I read these myself.`,
+          '',
           `Rishi`,
+          `edifyedu.in`,
           '',
           `---`,
           `Rishi Kumar | Founder`,
           `edifyedu.in - https://edifyedu.in`,
           `WhatsApp: +91 70612 85806 - https://wa.me/${wa}`,
           `125+ UGC-DEB approved universities compared. Independent, commission-free.`,
-          `YouTube: https://youtube.com/@edify_edu`,
           `Instagram: https://www.instagram.com/edifyedu.in/`,
           `LinkedIn: https://www.linkedin.com/company/edifyeducation/`,
         ].join('\n'),
@@ -159,45 +258,47 @@ export async function POST(req: NextRequest) {
 
           `<p style="margin:0 0 16px">Hi ${escHtml(firstName)},</p>`,
 
-          `<p style="margin:0 0 16px">Thanks for reaching out${aboutProgram}${atUniversity}. I'm Rishi, the founder of edifyedu.in.</p>`,
+          `<p style="margin:0 0 20px">Here's what you asked about, checked against official records:</p>`,
 
-          `<p style="margin:0 0 16px">Here's what happens next: someone from our team will reach out to you on WhatsApp within 24 hours with the fee sheet, eligibility details, and any coupon savings that apply. No sales pressure, no spam calls.</p>`,
+          htmlDataBlock,
 
-          `<p style="margin:0 0 16px"><a href="${helpLink}" style="color:#f97316;text-decoration:underline">${helpText}</a>.</p>`,
+          `<p style="margin:0 0 20px;font-size:14px;color:#64748b">Fee structures change with every admission cycle, so our representative will confirm the current fee with you directly, including the charges that are easy to miss.</p>`,
 
-          `<p style="margin:0 0 16px">A quick note on how we work: edifyedu.in is independent. We don't take commissions from universities and we don't push paid rankings. The comparison data you see on our site comes from UGC-DEB, NAAC, and NIRF records. So when we recommend something, it's because the numbers back it up.</p>`,
+          `<p style="margin:0 0 8px;font-size:15px;font-weight:bold;color:#0f172a">What happens next</p>`,
+          `<p style="margin:0 0 6px">Our team will message you on WhatsApp within 24 hours with the confirmed fee structure, an eligibility check for your profile, and any scholarships you qualify for.</p>`,
+          `<p style="margin:0 0 20px">No sales pressure, no repeated calls. If we think this is not the right fit for you, we will say so.</p>`,
 
-          `<p style="margin:0 0 16px">One quick question so I can point you in the right direction: are you working right now, or looking to study straight after graduation? Just reply to this email.</p>`,
+          `<p style="margin:0 0 8px;font-size:15px;font-weight:bold;color:#0f172a">Compare before you decide</p>`,
+          `<p style="margin:0 0 20px"><a href="${compareLink}" style="color:#f97316;text-decoration:underline">${compareLinkText}</a></p>`,
 
-          `<p style="margin:0 0 24px">Talk soon,<br>Rishi</p>`,
+          `<p style="margin:0 0 20px;font-size:13px;color:#64748b">These details come from UGC-DEB, NAAC and NIRF records. edifyedu.in takes zero commission from universities, so there is nothing in it for us either way.</p>`,
 
-          // Signature divider
-          `<table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-top:1px solid #e2e8f0;padding-top:20px;margin-top:8px"><tr><td style="padding-top:20px">`,
+          `<p style="margin:0 0 20px">One question so I can point you right: are you working right now, or studying full time? Just reply, I read these myself.</p>`,
 
-          // Logo
-          `<img src="https://edifyedu.in/logos/edify_logo_192px.png" alt="edifyedu.in" width="140" style="display:block;width:140px;height:auto;margin-bottom:12px" />`,
+          `<p style="margin:0 0 0">Rishi<br><span style="font-size:13px;color:#64748b">edifyedu.in</span></p>`,
 
-          // Name and role
-          `<p style="margin:0 0 4px;font-size:14px;font-weight:bold;color:#0f172a">Rishi Kumar <span style="font-weight:normal;color:#64748b">| Founder</span></p>`,
+          // ── Signature ──
+          `<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:24px"><tr><td style="border-top:1px solid #e2e8f0;padding-top:20px">`,
 
-          // Site link and WhatsApp
-          `<p style="margin:0 0 4px;font-size:13px">`,
-          `<a href="https://edifyedu.in" style="color:#f97316;text-decoration:none">edifyedu.in</a>`,
-          `<span style="color:#cbd5e1;margin:0 6px">&#183;</span>`,
+          `<img src="https://edifyedu.in/logos/edify_logo_512px.png" alt="edifyedu.in" width="140" height="47" style="display:block;width:140px;height:47px;border:0;outline:none;text-decoration:none;margin-bottom:14px" />`,
+
+          `<p style="margin:0 0 2px;font-size:16px;font-weight:bold;color:#0f172a">Rishi Kumar</p>`,
+          `<p style="margin:0 0 10px;font-size:13px;color:#64748b">Founder, <a href="https://edifyedu.in" style="color:#f97316;text-decoration:none">edifyedu.in</a></p>`,
+
+          `<p style="margin:0 0 10px;font-size:13px;color:#64748b">`,
           `<a href="https://wa.me/${escHtml(wa)}" style="color:#64748b;text-decoration:none">WhatsApp +91 70612 85806</a>`,
           `</p>`,
 
-          // Credibility line
-          `<p style="margin:8px 0 10px;font-size:12px;color:#64748b;line-height:1.4">125+ UGC-DEB approved universities compared. Independent, commission-free.</p>`,
+          `<p style="margin:0 0 12px;font-size:12px;color:#94a3b8;line-height:1.5">125+ UGC-DEB approved universities compared. Independent, commission-free.</p>`,
 
-          // Social links
           `<p style="margin:0;font-size:12px">`,
-          `<a href="https://youtube.com/@edify_edu" style="color:#64748b;text-decoration:none;margin-right:12px">YouTube</a>`,
-          `<a href="https://www.instagram.com/edifyedu.in/" style="color:#64748b;text-decoration:none;margin-right:12px">Instagram</a>`,
-          `<a href="https://www.linkedin.com/company/edifyeducation/" style="color:#64748b;text-decoration:none">LinkedIn</a>`,
+          `<a href="https://www.instagram.com/edifyedu.in/" style="color:#94a3b8;text-decoration:none">Instagram</a>`,
+          `<span style="color:#e2e8f0;margin:0 6px">|</span>`,
+          `<a href="https://www.linkedin.com/company/edifyeducation/" style="color:#94a3b8;text-decoration:none">LinkedIn</a>`,
           `</p>`,
 
           `</td></tr></table>`,
+
           `</td></tr></table>`,
         ].join('\n'),
       }).catch(() => {})
