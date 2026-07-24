@@ -274,12 +274,17 @@ export async function POST(req: NextRequest) {
           `edifyedu.in`,
           '',
           `---`,
-          `Rishi Kumar | Founder`,
-          `edifyedu.in - https://edifyedu.in`,
+          `edifyedu.in`,
+          `India's commission-free university comparison platform`,
+          `125+ UGC-DEB approved universities compared`,
+          ``,
           `WhatsApp: +91 70612 85806 - https://wa.me/${wa}`,
-          `125+ UGC-DEB approved universities compared. Independent, commission-free.`,
+          `Email: hello@edifyedu.in`,
+          `Web: https://edifyedu.in`,
+          ``,
           `Instagram: https://www.instagram.com/edifyedu.in/`,
           `LinkedIn: https://www.linkedin.com/company/edifyeducation/`,
+          `YouTube: https://youtube.com/@edify_edu`,
         ].join('\n'),
         html: [
           `<table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:560px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.6;color:#1e293b">`,
@@ -306,24 +311,27 @@ export async function POST(req: NextRequest) {
 
           `<p style="margin:0 0 0">Rishi<br><span style="font-size:13px;color:#64748b">edifyedu.in</span></p>`,
 
-          // ── Signature ──
+          // ── Signature (organisational) ──
           `<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:24px"><tr><td style="border-top:1px solid #e2e8f0;padding-top:20px">`,
 
-          `<img src="https://edifyedu.in/logos/edify_logo_512px.png" alt="edifyedu.in" width="140" height="47" style="display:block;width:140px;height:47px;border:0;outline:none;text-decoration:none;margin-bottom:14px" />`,
+          `<p style="margin:0 0 2px;font-size:15px;font-weight:bold;color:#0f172a"><a href="https://edifyedu.in" style="color:#0f172a;text-decoration:none">edifyedu.in</a></p>`,
+          `<p style="margin:0 0 6px;font-size:13px;color:#64748b;line-height:1.4">India's commission-free university comparison platform</p>`,
+          `<p style="margin:0 0 14px;font-size:12px;color:#94a3b8;line-height:1.4">125+ UGC-DEB approved universities compared</p>`,
 
-          `<p style="margin:0 0 2px;font-size:16px;font-weight:bold;color:#0f172a">Rishi Kumar</p>`,
-          `<p style="margin:0 0 10px;font-size:13px;color:#64748b">Founder, <a href="https://edifyedu.in" style="color:#f97316;text-decoration:none">edifyedu.in</a></p>`,
-
-          `<p style="margin:0 0 10px;font-size:13px;color:#64748b">`,
+          `<p style="margin:0 0 8px;font-size:12px;color:#64748b">`,
           `<a href="https://wa.me/${escHtml(wa)}" style="color:#64748b;text-decoration:none">WhatsApp +91 70612 85806</a>`,
+          `<span style="color:#e2e8f0;margin:0 6px">|</span>`,
+          `<a href="mailto:hello@edifyedu.in" style="color:#64748b;text-decoration:none">hello@edifyedu.in</a>`,
+          `<span style="color:#e2e8f0;margin:0 6px">|</span>`,
+          `<a href="https://edifyedu.in" style="color:#f97316;text-decoration:none">edifyedu.in</a>`,
           `</p>`,
-
-          `<p style="margin:0 0 12px;font-size:12px;color:#94a3b8;line-height:1.5">125+ UGC-DEB approved universities compared. Independent, commission-free.</p>`,
 
           `<p style="margin:0;font-size:12px">`,
           `<a href="https://www.instagram.com/edifyedu.in/" style="color:#94a3b8;text-decoration:none">Instagram</a>`,
           `<span style="color:#e2e8f0;margin:0 6px">|</span>`,
           `<a href="https://www.linkedin.com/company/edifyeducation/" style="color:#94a3b8;text-decoration:none">LinkedIn</a>`,
+          `<span style="color:#e2e8f0;margin:0 6px">|</span>`,
+          `<a href="https://youtube.com/@edify_edu" style="color:#94a3b8;text-decoration:none">YouTube</a>`,
           `</p>`,
 
           `</td></tr></table>`,
