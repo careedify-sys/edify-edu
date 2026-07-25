@@ -42924,6 +42924,355 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 </div>`,
   },
   {
+    slug: 'lpu-vs-chandigarh-university-online-mba-2026',
+    title: 'LPU vs Chandigarh University Online MBA 2026: Fees, NAAC, Syllabus Compared',
+    seoTitle: 'LPU vs Chandigarh University Online MBA 2026: NAAC A++ vs NIRF #19 Compared',
+    metaDescription: 'LPU vs Chandigarh University online MBA compared: fees ₹1.61L to ₹2.20L, NAAC A++ vs A+, NIRF Management #44 vs #32, 12 vs 26 specialisations, syllabus, honest verdict.',
+    category: 'Comparisons',
+    tags: ['lpu vs chandigarh university online mba', 'lpu online mba fees', 'chandigarh university online mba fees', 'lpu online mba review', 'chandigarh university online mba review', 'punjab online mba', 'naac a++ online mba', 'online mba comparison 2026'],
+    readTime: 20,
+    publishedAt: '2026-07-25',
+    status: 'published' as const,
+    heroImage: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@fauxels" target="_blank" rel="noopener nofollow">fauxels</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Two management professionals reviewing programme documents side by side, representing a like-for-like MBA comparison.',
+    targetKeyword: 'lpu vs chandigarh university online mba',
+    relatedUniversities: ['lovely-professional-university-online', 'chandigarh-university-online', 'amity-university-online', 'manipal-university-jaipur-online'],
+    faqs: [
+      { q: 'Is LPU or Chandigarh University better for online MBA?', a: 'Both are UGC-DEB approved and sit in the same ₹1.6L to ₹2.2L fee band. LPU is NAAC A++ and NIRF University #31 (Management #44). Chandigarh is NAAC A+ and NIRF University #19 (Management #32). LPU is stronger on accreditation grade and adds AICTE and WES on the approvals list, which help for government, PSU, PhD and abroad recognition. Chandigarh is stronger on NIRF rank and stacks Harvard Business Publishing, PwC India and PMI certifications into the programme. Twelve specialisations at LPU versus twenty-six at Chandigarh. Pick LPU for accreditation depth. Pick Chandigarh for ranking and industry certifications.' },
+      { q: 'What is the fee difference between LPU and Chandigarh online MBA?', a: 'Fee ranges recorded on edifyedu.in from official portal data: LPU online MBA ₹1.61L to ₹2.00L total. Chandigarh online MBA ₹1.65L to ₹1.80L total for the standard specialisation band, with the wider university fee ceiling reaching ₹2.20L. Both universities apply scholarship or grant discounts that bring effective fees lower, and both quote different numbers for different specialisations. The ranges above are the totals that appear on edifyedu.in and should be treated as indicative until you speak with a counsellor for your specific specialisation.' },
+      { q: 'Which has better NAAC accreditation, LPU or Chandigarh University?', a: 'LPU holds NAAC A++, which is the highest grade NAAC awards. Chandigarh University holds NAAC A+, one grade below. The one-grade gap matters most for government job screening, PSU eligibility, PhD admissions in central universities, and international credential evaluation where the grade is read literally. For private sector corporate hiring, both grades clear the screening bar comfortably.' },
+      { q: 'Which has better NIRF ranking, LPU or Chandigarh?', a: 'Chandigarh ranks higher in NIRF 2025. Chandigarh University is #19 in the University category and #32 in Management. LPU is #31 in the University category and #44 in Management. Both ranks are strong. The Management rank is the one that carries most weight for MBA employability signalling.' },
+      { q: 'How many specialisations does each offer in online MBA?', a: 'LPU online MBA offers 12 specialisations covering Finance, Marketing, HRM, Operations, Business Analytics, Digital Marketing, Data Science, IT, International Business, Healthcare Management, Logistics and Supply Chain, and Banking and Financial Services. Chandigarh University online MBA offers 26 specialisations, including all mainstream tracks plus niche ones like Airlines and Airport Management, Disaster Management, Event Management, Travel and Tourism, Family Business, and Product Management. Chandigarh has the wider catalogue. LPU has the deeper syllabus in each core track.' },
+      { q: 'Does LPU or Chandigarh have AICTE approval for online MBA?', a: 'Edifyedu.in records AICTE approval for LPU online MBA. UGC-DEB is the primary regulator for online MBA programmes in India, and both universities are UGC-DEB approved, which is what makes the degree legally valid. For confirmation of AICTE status on any specific specialisation before enrolment, speak with our counsellor.' },
+      { q: 'Which is better for working professionals, LPU or Chandigarh online MBA?', a: 'Both are built for working professionals. LPU adds one practical edge: the two-year MBA is extendable up to four years, which helps if you need to pause the programme for personal or work reasons without losing enrolment. Chandigarh runs a strict two-year timeline but adds industry certification credits from PwC and PMI that appear on your programme transcript. Choose based on whether flexibility or credential density matters more.' },
+      { q: 'Which online MBA has stronger syllabus for analytics roles?', a: 'LPU offers two distinct specialisations, Business Analytics and Data Science, with sem-3 and sem-4 covering Predictive Analytics, Machine Learning, Big Data Technologies, and Advanced Data Visualization. Chandigarh consolidates this into one specialisation called Data Science and Artificial Intelligence, covering Machine Learning using Python, SQL for Data Science, Big Data Visualization, and Advanced Business Analytics using R and Python. The two are adjacent but framed differently. LPU splits the analytics and data-science skill stacks into separate degrees. Chandigarh bundles them under one AI-forward label. Pick LPU if you want the analytics-versus-data-science distinction to appear on your degree. Pick Chandigarh if you want the AI framing on the credential.' },
+    ],
+    content: `<p style="font-size:14px;color:#6b7280;margin-bottom:24px"><em>Updated July 2026 · 20 min read · Fees and rankings verified from data on edifyedu.in, sourced from official university portals</em></p>
+
+<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px">
+  <p style="font-size:15px;color:#78350f;margin:0"><strong>Two Punjab universities, one fee band, two different degree strategies.</strong> LPU is NAAC A++ with 12 tightly focused specialisations. Chandigarh University is NIRF #19 with 26 specialisations and three co-branded industry certifications. Both cost between ₹1.61L and ₹2.20L. This post is a real like-for-like on fees, accreditation, syllabus, and who should pick which.</p>
+</div>
+
+<h2 id="the-real-question">Same State, Same Price, Different Bets</h2>
+
+<p>If you are shortlisting an online MBA in the ₹1.5L to ₹2.2L range from a mainstream Indian university, LPU Online and Chandigarh University Online almost always show up together. Both are Punjab-headquartered. Both are UGC-DEB approved. Both target the same working professional. The tuition slips look nearly identical.</p>
+
+<p>The temptation is to pick on brand familiarity or on whichever counsellor called first. That is a mistake. Under the surface these two programmes are optimised for different career strategies. This post is the honest breakdown.</p>
+
+<p>For where these two sit against the wider market, see our <a href="/blog/best-online-mba-colleges-india-2026" class="ilink">2026 ranking of India's best online MBA programmes</a>. If you are also weighing premium options, our <a href="/blog/nmims-vs-symbiosis-online-mba-2026" class="ilink">NMIMS vs Symbiosis comparison</a> covers the ₹2L to ₹3.7L tier.</p>
+
+<h2 id="snapshot">Side-by-Side Snapshot: LPU vs Chandigarh Online MBA</h2>
+
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">
+  <thead><tr style="background:#0f172a;color:#fff"><th style="padding:10px 14px;text-align:left">Parameter</th><th style="padding:10px 14px;text-align:left">LPU Online</th><th style="padding:10px 14px;text-align:left">Chandigarh University Online</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-top:1px solid #e5e7eb"><strong>Location</strong></td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">Phagwara, Punjab</td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">Mohali, Punjab</td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px"><strong>NAAC Grade</strong></td><td style="padding:10px 14px"><strong>A++</strong> (highest grade)</td><td style="padding:10px 14px">A+</td></tr>
+    <tr><td style="padding:10px 14px;border-top:1px solid #e5e7eb"><strong>NIRF University 2025</strong></td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">#31</td><td style="padding:10px 14px;border-top:1px solid #e5e7eb"><strong>#19</strong></td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px"><strong>NIRF Management 2025</strong></td><td style="padding:10px 14px">#44</td><td style="padding:10px 14px"><strong>#32</strong></td></tr>
+    <tr><td style="padding:10px 14px;border-top:1px solid #e5e7eb"><strong>UGC-DEB Approved</strong></td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">Yes</td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">Yes</td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px"><strong>Approvals recorded on edifyedu.in</strong></td><td style="padding:10px 14px">UGC-DEB, NAAC A++, <strong>AICTE, WES Recognised</strong>, QS Ranked</td><td style="padding:10px 14px">UGC-DEB, NAAC A+, QS Ranked</td></tr>
+    <tr><td style="padding:10px 14px;border-top:1px solid #e5e7eb"><strong>Total MBA Fee Range</strong></td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">₹1.61L – ₹2.00L</td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">₹1.65L – ₹1.80L core band (up to ₹2.20L)</td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px"><strong>EMI From</strong></td><td style="padding:10px 14px">₹6,708/month</td><td style="padding:10px 14px">₹6,875/month</td></tr>
+    <tr><td style="padding:10px 14px;border-top:1px solid #e5e7eb"><strong>Duration</strong></td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">2 years, 4 semesters (<strong>extendable to 4 years</strong>)</td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">2 years, 4 semesters</td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px"><strong>Exam Mode</strong></td><td style="padding:10px 14px">Online</td><td style="padding:10px 14px">Online</td></tr>
+    <tr><td style="padding:10px 14px;border-top:1px solid #e5e7eb"><strong>MBA Specialisations</strong></td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">12</td><td style="padding:10px 14px;border-top:1px solid #e5e7eb"><strong>26</strong></td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px"><strong>Programme Identity</strong></td><td style="padding:10px 14px">Dual specialisation option; QS Asia ranked institution</td><td style="padding:10px 14px">Triple Certification: Harvard Business Publishing, PwC India, PMI</td></tr>
+  </tbody>
+</table>
+
+<h2 id="accreditation">Accreditation and Rankings: What the Difference Actually Means</h2>
+
+<p>This is where the two programmes genuinely differ, and it is worth spending time on because the difference is not cosmetic.</p>
+
+<h3>NAAC: A++ vs A+</h3>
+
+<p><strong>LPU holds NAAC A++.</strong> That is the highest grade NAAC awards, and it is not a common grade for online-first universities. <strong>Chandigarh University holds NAAC A+</strong>, one grade below.</p>
+
+<p>For most private sector hiring, both grades clear the screening bar comfortably. HR systems typically check for "NAAC accredited" as a binary and do not weigh the grade further at the shortlisting stage. Where the grade matters:</p>
+
+<ul>
+  <li><strong>Government and PSU screening.</strong> Job notifications increasingly specify NAAC grade thresholds. A++ candidates face no friction; A+ is generally accepted but occasionally sits at the lower end of eligibility for premium roles.</li>
+  <li><strong>PhD admissions in central universities.</strong> Grade is read literally.</li>
+  <li><strong>WES and international credential evaluation.</strong> A++ evaluations tend to move faster and with less back-and-forth.</li>
+  <li><strong>Long-term degree signalling.</strong> Ten years from now, the grade printed alongside your university name will not change. A++ carries a small but real premium.</li>
+</ul>
+
+<h3>NIRF: #19 vs #31 (University) and #32 vs #44 (Management)</h3>
+
+<p><strong>Chandigarh University ranks higher on NIRF 2025.</strong> #19 university and #32 management. LPU is at #31 university and #44 management. Both are strong ranks. In the Management category, which is the one MBA employers actually reference, the gap of 12 places is meaningful but not decisive.</p>
+
+<p>NIRF is a composite that weights research output, faculty quality, perception, and outreach. For a working professional, it functions as a shorthand credibility signal in interviews. Chandigarh's #32 Management rank reads slightly stronger than LPU's #44 in that context.</p>
+
+<h3>Extra approvals</h3>
+
+<p>Our data.ts entry for LPU records <strong>AICTE approval and WES recognition</strong> on the approvals list. Both matter. AICTE historically governed management programmes and is still referenced in some corporate and government job criteria. WES (World Education Services) recognition helps if you plan to migrate or apply for higher education abroad. For confirmation of the specific approvals attached to your chosen specialisation at either university, <a href="/contact" class="ilink">speak with our counsellor</a>.</p>
+
+<div class="callout-key" style="background:#fef3c7;border-left:4px solid #f59e0b;border-radius:8px;padding:16px 20px;margin:24px 0">
+<strong>Rank vs grade, plain read:</strong> Chandigarh is ranked higher. LPU is graded higher. If you value the accreditation grade printed on your degree, pick LPU. If you value the ranking number recruiters recognise faster, pick Chandigarh.
+</div>
+
+<h2 id="fees">Fees: Honest Like-for-Like</h2>
+
+<p>Both programmes sit in the same ₹1.6L to ₹2.2L total-cost band. That looks like a small difference. It is not. Here is what the honest breakdown looks like.</p>
+
+<h3>The recorded ranges</h3>
+
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">
+  <thead><tr style="background:#0f172a;color:#fff"><th style="padding:10px 14px;text-align:left">Fee element</th><th style="padding:10px 14px;text-align:left">LPU</th><th style="padding:10px 14px;text-align:left">Chandigarh</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-top:1px solid #e5e7eb"><strong>MBA total fee range (recorded)</strong></td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">₹1.61L – ₹2.00L</td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">₹1.65L – ₹1.80L core band</td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px"><strong>Wider university fee ceiling</strong></td><td style="padding:10px 14px">₹2.00L</td><td style="padding:10px 14px">₹2.20L (some specialisations)</td></tr>
+    <tr><td style="padding:10px 14px;border-top:1px solid #e5e7eb"><strong>Indicative per-semester</strong></td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">~₹40,400 to ₹50,000</td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">~₹41,250 to ₹55,000</td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px"><strong>EMI starting from</strong></td><td style="padding:10px 14px">₹6,708/month</td><td style="padding:10px 14px">₹6,875/month</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-warning" style="background:#fee2e2;border-left:4px solid #ef4444;border-radius:8px;padding:16px 20px;margin:24px 0">
+<strong>Scholarship note, read this before you compare offers.</strong> Both LPU and Chandigarh publicly apply scholarship, grant, or early-bird discounts that lower the sticker fee. The ranges above are what edifyedu.in records from official portal data and should be treated as indicative totals. Do not compare one university's scholarship-adjusted quote against another's full sticker quote when offers land in your inbox. If a counsellor from either institution quotes a number that sounds different from the range above, ask them plainly: is this the standard fee or the scholarship-adjusted fee, and what is the condition to hold that discount. <a href="/contact" class="ilink">Talk to our counsellor</a> if you want a like-for-like reading of both offers.</div>
+
+<p>For a wider view of what to budget across the online MBA market, our <a href="/blog/mba-fees-india-complete-guide-2026" class="ilink">complete MBA fees guide 2026</a> covers the full spectrum. For ways to lower either university's effective fee, see our <a href="/coupons" class="ilink">coupons and offers page</a>.</p>
+
+<h2 id="specialisations">Specialisations: 12 vs 26, and Why the Number Alone Misleads</h2>
+
+<p>Chandigarh University offers 26 online MBA specialisations. LPU offers 12. On the surface Chandigarh looks like the obvious pick if you want choice. But it is worth breaking the catalogue down before you conclude.</p>
+
+<h3>LPU's 12 specialisations</h3>
+
+<p>Finance, Marketing, Human Resource Management, Operations Management, Business Analytics, Digital Marketing, Data Science, Information Technology, International Business, Hospital and Healthcare Management, Logistics and Supply Chain Management, Banking and Financial Services.</p>
+
+<p>Every one of these is a mainstream track that a working professional is likely to actually choose. LPU has chosen depth over breadth. The syllabus for each track is denser than the equivalent at most peer universities. LPU also splits Business Analytics and Data Science into <strong>two distinct specialisations</strong>, which few universities do.</p>
+
+<h3>Chandigarh's 26 specialisations</h3>
+
+<p>All the LPU tracks plus: Airlines and Airport Management, Banking and Insurance, Brand Management, Disaster Management, Entertainment and Media, Event Management, Family Business, FinTech, Foreign Exchange Management, General Management, International Relations, Product Management, Retail Management, Travel and Tourism Management, Data Science and Artificial Intelligence, Entrepreneurship.</p>
+
+<p>The extra 14 are a mix of high-demand emerging fields (FinTech, Product Management, Brand Management, Data Science and AI) and niche verticals (Airlines, Disaster, Event, Travel). If your career target is one of the emerging fields, Chandigarh's catalogue is a genuine advantage. If your target is a mainstream track, the extra specialisations do not add value; you would still enrol in Finance or HRM.</p>
+
+<div class="pull" style="background:#f1f5f9;border-left:4px solid #f97316;border-radius:8px;padding:16px 20px;margin:24px 0;font-size:16px;font-style:italic;color:#0f172a">
+The specialisation count is a marketing number. The one that matters is whether the specific track you plan to enrol in has a strong syllabus. Below we compare the syllabus semester by semester.
+</div>
+
+<h2 id="syllabus">Syllabus Comparison: What Each Actually Teaches</h2>
+
+<p>This is the section that most comparison posts skip. It is also the one that matters most once you have narrowed to two similar-priced programmes. All content below is drawn from the semester-wise curriculum recorded on edifyedu.in from official university sources.</p>
+
+<h3>Core semesters (Sem 1 and Sem 2): the foundation</h3>
+
+<p>Both programmes share a broadly similar MBA foundation in the first year, but the framing and specific subjects diverge in ways that hint at each programme's philosophy.</p>
+
+<table style="width:100%;border-collapse:collapse;font-size:13px;margin:16px 0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">
+  <thead><tr style="background:#0f172a;color:#fff"><th style="padding:10px 14px;text-align:left;width:12%">Semester</th><th style="padding:10px 14px;text-align:left">LPU (Sem 1 and Sem 2)</th><th style="padding:10px 14px;text-align:left">Chandigarh (Sem 1 and Sem 2)</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-top:1px solid #e5e7eb"><strong>Sem 1</strong></td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">Managerial Economics, Financial Reporting and Statements Analysis, Marketing Management, OB and HRM, Quantitative Techniques</td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">Business Society and Law, Financial Reporting and Analysis, Leadership and Organization Behavior, Managerial Economics, Marketing Management</td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px"><strong>Sem 2</strong></td><td style="padding:10px 14px">Corporate Strategy and Entrepreneurship, Corporate Finance, Business Research Methods, Operations Management, Information Systems for Business</td><td style="padding:10px 14px">People Management, Consumer Behaviour, Business Research Methods, Financial Management, Operations and Quality Management</td></tr>
+  </tbody>
+</table>
+
+<p>The Sem 1 overlap is heavy. Both cover Managerial Economics, Marketing Management, and a foundation in accounting and organisational behaviour. In Sem 2, LPU pushes into <strong>Corporate Strategy and Entrepreneurship early</strong> and adds <strong>Information Systems for Business</strong>, a tech-forward subject that most peer programmes leave to specialisation semesters. Chandigarh puts <strong>Consumer Behaviour</strong> upfront in Sem 2, which reads more traditional marketing-first, and consolidates operations with quality management into a single subject.</p>
+
+<p>Neither is inherently better. LPU's Sem 2 signals a slight tilt toward tech and strategy. Chandigarh's signals a stronger marketing-and-operations base.</p>
+
+<h3>Shared specialisations, Sem 3 and Sem 4 divergence</h3>
+
+<p>The specialisation semesters are where the real comparison lives. Below are the four mainstream specialisations both universities offer, with syllabus drawn from edifyedu.in records for each.</p>
+
+<h4>Finance</h4>
+
+<table style="width:100%;border-collapse:collapse;font-size:13px;margin:12px 0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">
+  <thead><tr style="background:#0f172a;color:#fff"><th style="padding:10px 14px;text-align:left;width:12%">Sem</th><th style="padding:10px 14px;text-align:left">LPU Finance</th><th style="padding:10px 14px;text-align:left">Chandigarh Finance</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-top:1px solid #e5e7eb"><strong>Sem 3</strong></td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">Strategic Management, Business Ethics and Corporate Governance, Summer Training or Project, International Financial Management, Security Analysis and Portfolio Management</td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">Strategy, Business and Globalization, Digital Marketing, Decision Science, Banking and Financial Services Management, Project Finance and Financial Modeling, Tax Planning and Management, International Finance</td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px"><strong>Sem 4</strong></td><td style="padding:10px 14px">Entrepreneurship Development, Comprehensive Viva, International Banking and Forex Management, Management of Financial Services</td><td style="padding:10px 14px">Project Management, Values and Ethics, Academic Research Writing, Investment Management, Mergers and Acquisitions</td></tr>
+  </tbody>
+</table>
+
+<p><strong>What it means for you.</strong> LPU's Finance is built around <strong>capital markets and investment analysis</strong>: Security Analysis and Portfolio Management in Sem 3, Forex and Financial Services in Sem 4. It suits candidates targeting equity research, portfolio management, or BFSI treasury roles. Chandigarh's Finance is broader and more corporate-finance-first: <strong>Project Finance and Financial Modeling, Tax Planning, Mergers and Acquisitions</strong>. It suits candidates targeting corporate finance, deal advisory, or CFO-track roles inside operating companies. Read <a href="/blog/mba-finance-career-salary-scope-2026" class="ilink">MBA Finance career and salary scope</a> for how these translate into roles.</p>
+
+<h4>Human Resource Management</h4>
+
+<table style="width:100%;border-collapse:collapse;font-size:13px;margin:12px 0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">
+  <thead><tr style="background:#0f172a;color:#fff"><th style="padding:10px 14px;text-align:left;width:12%">Sem</th><th style="padding:10px 14px;text-align:left">LPU HRM</th><th style="padding:10px 14px;text-align:left">Chandigarh HRM</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-top:1px solid #e5e7eb"><strong>Sem 3</strong></td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">Training and Development, Industrial Relations and Labour Laws, Human Resource Metrics and Analytics, Corporate Strategy and Entrepreneurship</td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">Strategy, Business and Globalization, Digital Marketing, Decision Science, Human Resource Analytics, Organisation Change and Development, Cross Cultural Management, Compensation Management</td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px"><strong>Sem 4</strong></td><td style="padding:10px 14px">Talent Acquisition and Workforce Planning, Performance Management Systems, Compensation Management, Capstone Project</td><td style="padding:10px 14px">Project Management, Values and Ethics, Academic Research Writing, Performance Management: Systems and strategies, Methodology of Training and Development</td></tr>
+  </tbody>
+</table>
+
+<p><strong>What it means for you.</strong> LPU's HRM leans <strong>operational and legal</strong>: Industrial Relations and Labour Laws in Sem 3, Talent Acquisition and Workforce Planning in Sem 4. It fits candidates targeting HR generalist, HRBP, or talent acquisition roles inside Indian companies where labour law fluency matters. Chandigarh's HRM leans <strong>strategic and cross-cultural</strong>: Organisation Change and Development, Cross Cultural Management, and a stronger Compensation Management thread. It fits candidates targeting HR roles in MNCs or in organisational development consulting. See <a href="/blog/mba-hr-career-salary-scope-2026" class="ilink">MBA HR career and salary scope</a> for role mapping.</p>
+
+<h4>Marketing</h4>
+
+<table style="width:100%;border-collapse:collapse;font-size:13px;margin:12px 0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">
+  <thead><tr style="background:#0f172a;color:#fff"><th style="padding:10px 14px;text-align:left;width:12%">Sem</th><th style="padding:10px 14px;text-align:left">LPU Marketing</th><th style="padding:10px 14px;text-align:left">Chandigarh Marketing</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-top:1px solid #e5e7eb"><strong>Sem 3</strong></td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">Strategic Management, Business Ethics and Corporate Governance, Summer Training, Consumer Behaviour, Digital and Social Media Marketing</td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">Strategy, Business and Globalization, Digital Marketing, Decision Science, Marketing Analytics, Advertising and Brand Management, Marketing of Services, Service Marketing and CRM</td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px"><strong>Sem 4</strong></td><td style="padding:10px 14px">Entrepreneurship Development, Comprehensive Viva, Customer Relationship Management, Sales and Distribution Management</td><td style="padding:10px 14px">Project Management, Values and Ethics, Academic Research Writing, Integrated Marketing Communication, Industrial Marketing</td></tr>
+  </tbody>
+</table>
+
+<p><strong>What it means for you.</strong> LPU's Marketing is <strong>tighter and sales-execution focused</strong>: Digital and Social Media, CRM, Sales and Distribution. It suits candidates who will run field or channel operations, or lead sales-marketing hybrid teams. Chandigarh's Marketing is <strong>broader and more analytics-led</strong>: Marketing Analytics, Service Marketing, Integrated Marketing Communication, Industrial Marketing. It suits candidates targeting brand management, B2B marketing, or marketing consulting roles.</p>
+
+<h4>Information Technology</h4>
+
+<table style="width:100%;border-collapse:collapse;font-size:13px;margin:12px 0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">
+  <thead><tr style="background:#0f172a;color:#fff"><th style="padding:10px 14px;text-align:left;width:12%">Sem</th><th style="padding:10px 14px;text-align:left">LPU IT</th><th style="padding:10px 14px;text-align:left">Chandigarh IT</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-top:1px solid #e5e7eb"><strong>Sem 3</strong></td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">Database Management Systems, Managing Information Systems, Data Analytics with Python, Corporate Strategy and Entrepreneurship</td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">Strategy, Business and Globalization, Digital Marketing, Decision Science, Business Intelligence, System Analysis and Design, Managing IT-Enabled Services, Knowledge Management</td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px"><strong>Sem 4</strong></td><td style="padding:10px 14px">Advance Data Visualization, Information Security and Privacy, Planning Enterprise Resources, Capstone Project</td><td style="padding:10px 14px">Project Management, Values and Ethics, Academic Research Writing, Business Process Re-Engineering, Database Management</td></tr>
+  </tbody>
+</table>
+
+<p><strong>What it means for you.</strong> LPU's IT is <strong>hands-on and tools-driven</strong>: Python, ERP planning, data visualisation, information security. It reads like a technical MBA and suits candidates working in or moving into IT services, data engineering, or product-analytics roles. Chandigarh's IT is <strong>process-and-strategy-first</strong>: Business Intelligence, System Analysis and Design, Business Process Re-Engineering. It suits candidates targeting IT consulting, business analyst, or IT project management roles.</p>
+
+<h4>Digital Marketing</h4>
+
+<table style="width:100%;border-collapse:collapse;font-size:13px;margin:12px 0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">
+  <thead><tr style="background:#0f172a;color:#fff"><th style="padding:10px 14px;text-align:left;width:12%">Sem</th><th style="padding:10px 14px;text-align:left">LPU (via Marketing spec)</th><th style="padding:10px 14px;text-align:left">Chandigarh Digital Marketing</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-top:1px solid #e5e7eb"><strong>Sem 3</strong></td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">LPU offers Digital Marketing as one of its 12 MBA specialisations. The specialisation covers the digital and social media marketing components taught alongside Marketing core in Sem 3.</td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">Strategy, Business and Globalization, Digital Marketing, Decision Science, Search Engine Optimization, Content Marketing, Social Media Marketing, Digital Entrepreneurship</td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px"><strong>Sem 4</strong></td><td style="padding:10px 14px">Detailed Sem 4 syllabus for LPU's Digital Marketing specialisation is not separately documented on edifyedu.in beyond the shared Sem 4 core (Entrepreneurship Development, Comprehensive Viva, and specialisation electives). <a href="/contact" class="ilink">Talk to our counsellor</a> for the current subject list.</td><td style="padding:10px 14px">Project Management, Values and Ethics, Academic Research Writing, Affiliate Marketing and Google AdSense, Performance Marketing</td></tr>
+  </tbody>
+</table>
+
+<p><strong>What it means for you.</strong> Chandigarh's Digital Marketing is a <strong>fully separated specialisation</strong> with dedicated SEO, Content Marketing, Social Media Marketing, and Performance Marketing subjects across Sem 3 and Sem 4. LPU offers Digital Marketing as one of its 12 tracks, but the semester-level detail we have on file is thinner. If Digital Marketing is your target specialisation, Chandigarh has the more deeply documented syllabus.</p>
+
+<h4>Logistics and Supply Chain Management</h4>
+
+<table style="width:100%;border-collapse:collapse;font-size:13px;margin:12px 0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">
+  <thead><tr style="background:#0f172a;color:#fff"><th style="padding:10px 14px;text-align:left;width:12%">Sem</th><th style="padding:10px 14px;text-align:left">LPU Logistics and SCM</th><th style="padding:10px 14px;text-align:left">Chandigarh Logistics and SCM</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-top:1px solid #e5e7eb"><strong>Sem 3</strong></td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">Corporate Strategy and Entrepreneurship, Seminar on Summer Training, Generic Elective, Logistics and Supply Chain Management, Total Quality Management, Project Management</td><td style="padding:10px 14px;border-top:1px solid #e5e7eb">Strategy, Business and Globalization, Digital Marketing, Decision Science, Logistic Management, Quality Management and Quality Techniques, Logistics and Supply Chain Management, Quantitative Techniques for Management</td></tr>
+    <tr style="background:#f8fafc"><td style="padding:10px 14px"><strong>Sem 4</strong></td><td style="padding:10px 14px">Strategic Supply Chain Management, Logistics Management, Global Supply Chain, Capstone Project</td><td style="padding:10px 14px">Project Management, Values and Ethics, Academic Research Writing, Retail Store and Visual Merchandising, Operations Management</td></tr>
+  </tbody>
+</table>
+
+<p><strong>What it means for you.</strong> LPU's Logistics and SCM Sem 4 explicitly covers <strong>Strategic SCM and Global Supply Chain</strong>, which fits candidates targeting supply chain roles in global manufacturing or e-commerce. Chandigarh's Sem 4 pairs SCM with <strong>Retail Store and Visual Merchandising</strong>, which slants the specialisation toward retail operations and merchandising careers rather than pure supply chain strategy.</p>
+
+<h3>Adjacent but different: analytics tracks</h3>
+
+<p>This is a case where the specialisation names look similar but the framing is different, and it is worth calling out because career outcomes diverge.</p>
+
+<p><strong>LPU splits analytics into two distinct specialisations.</strong></p>
+
+<ul>
+  <li><strong>Business Analytics</strong> (Sem 3): Spreadsheet Modelling, Predictive Analytics, Web and Social Media Analytics. Sem 4: Financial Analytics, Marketing Analytics, HR Analytics.</li>
+  <li><strong>Data Science</strong> (Sem 3): Probability and Statistics, Data Science Toolbox, Advanced Data Visualization. Sem 4: Machine Learning, Big Data Technologies, Statistics for Decision Making.</li>
+</ul>
+
+<p><strong>Chandigarh consolidates into one AI-forward specialisation.</strong></p>
+
+<ul>
+  <li><strong>Data Science and Artificial Intelligence</strong> (Sem 3): Machine Learning using Python, Big Data Visualization Basics, SQL for Data Science, Excel for Data Science. Sem 4: Advanced Business Analytics using R and Python, Advanced Excel for Data Science.</li>
+</ul>
+
+<p>These are <strong>adjacent tracks, not equivalents</strong>. LPU treats analytics-for-business and data-science-as-a-discipline as two separate degrees. Chandigarh bundles them into one AI-forward credential. If you want the "Business Analytics" or "Data Science" label to appear on your degree independently, pick LPU. If you want the "Data Science and AI" label on the credential, pick Chandigarh. The actual skill overlap is roughly 60 to 70 percent; the packaging is what differs.</p>
+
+<h3>Where Chandigarh offers what LPU does not</h3>
+
+<p>Fourteen of Chandigarh's specialisations do not appear on LPU's list. Rather than fabricate LPU columns for these, we are calling them out plainly as a differentiator:</p>
+
+<p>Airlines and Airport Management, Banking and Insurance (LPU has Banking and Financial Services, which is a different framing), Brand Management, Disaster Management, Entertainment and Media, Event Management, Family Business, FinTech, Foreign Exchange Management, General Management, International Relations, Product Management, Retail Management, Travel and Tourism Management.</p>
+
+<p>If your target is <strong>FinTech, Product Management, or Brand Management</strong>, Chandigarh's dedicated specialisation is a genuine advantage; you will not find the same on LPU's shortlist. If your target is a niche vertical like Airlines, Disaster, or Event Management, Chandigarh is one of the few UGC-DEB online MBAs that runs a proper syllabus for it.</p>
+
+<h2 id="global-certifications">The Chandigarh Triple Certification: What It Adds</h2>
+
+<p>Chandigarh University's online MBA includes co-taught modules and industry certificates from three global bodies:</p>
+
+<ul>
+  <li><strong>Harvard Business Publishing.</strong> Strategy and Leadership case content is drawn from Harvard's business case library.</li>
+  <li><strong>PwC India.</strong> Two subjects are co-taught with PwC and carry a PwC certificate on completion.</li>
+  <li><strong>PMI (Project Management Institute).</strong> Project Management module is aligned to PMI's certification framework.</li>
+</ul>
+
+<p>This is real credential density. Two years of coursework at Chandigarh leaves you with the MBA degree plus recognisable industry certificates you can list separately on your resume and LinkedIn. LPU's equivalent value proposition is the dual specialisation option, which lets you formally combine two of the 12 specialisations on the same degree. Both are valuable. Which one matters more depends on whether you want <strong>third-party industry stamps</strong> (Chandigarh) or a <strong>broader specialisation profile on your degree</strong> (LPU).</p>
+
+<h2 id="flexibility">Flexibility: The Extendable Duration at LPU</h2>
+
+<p>One practical difference that rarely appears in comparison posts. LPU's two-year MBA is <strong>extendable up to four years</strong>. If life gets in the way, a job change with relocation, a family responsibility, a health issue, you can pause the programme and complete it within the four-year window without losing enrolment. This is not a small feature.</p>
+
+<p>Chandigarh runs a strict two-year timeline. If you know you will finish on schedule, this makes no difference. If you are not sure, the LPU flexibility is worth weighing.</p>
+
+<div class="callout-key" style="background:#fef3c7;border-left:4px solid #f59e0b;border-radius:8px;padding:16px 20px;margin:24px 0">
+<strong>Career-break returners and parents:</strong> the extendable duration at LPU is a genuinely useful feature. See our <a href="/blog/online-mba-after-career-break-2026" class="ilink">online MBA after career break guide</a> for how to sequence a return-to-education plan.
+</div>
+
+<h2 id="who-should-pick">Who Should Pick Which</h2>
+
+<h3>Pick LPU if:</h3>
+
+<ul>
+  <li>You want the highest NAAC grade (A++) printed on your degree. This matters if government, PSU, PhD, or international paths are on your future roadmap.</li>
+  <li>Our data.ts entry for LPU records AICTE and WES on the approvals list. If either is on your evaluation checklist, LPU is the one where we have that recorded.</li>
+  <li>You want depth over breadth. Twelve well-defined specialisations with denser syllabus per track.</li>
+  <li>You want the analytics-versus-data-science distinction on your degree (LPU splits them; Chandigarh bundles them under AI).</li>
+  <li>You value duration flexibility. The programme is extendable to four years.</li>
+  <li>You want dual-specialisation on the same degree.</li>
+  <li>Your target roles are equity research, portfolio management, HR generalist with labour-law depth, sales and distribution, or IT roles with hands-on Python and ERP.</li>
+</ul>
+
+<h3>Pick Chandigarh University if:</h3>
+
+<ul>
+  <li>You want the higher NIRF rank on your degree (#19 University, #32 Management). This reads faster in interviews than a grade explanation.</li>
+  <li>You want industry certificates from PwC India and PMI, plus Harvard case content, appearing on your credential and resume.</li>
+  <li>Your target specialisation is one of the emerging fields (FinTech, Product Management, Brand Management, Data Science and AI) or a niche vertical (Airlines, Disaster, Event, Travel).</li>
+  <li>You want the broader catalogue of specialisation choices even if you will end up picking one of the mainstream tracks.</li>
+  <li>Your target roles are corporate finance, deal advisory, HR business partner in an MNC, brand management, B2B marketing, or IT consulting.</li>
+  <li>You will complete the programme on the standard two-year timeline and do not need extension flexibility.</li>
+</ul>
+
+<h3>Toss-up cases</h3>
+
+<p>For mainstream tracks like Finance, HRM, or Marketing at a working professional in the ₹5L to ₹12L salary band, both universities deliver a comparable degree at comparable cost. The differentiator becomes personal fit: whether the accreditation grade or the ranking number matters more to how you see your own credential, and whether you want the certification stack (Chandigarh) or the duration flexibility (LPU).</p>
+
+<h2 id="verify">How to Verify Before You Enrol</h2>
+
+<p>Both universities are UGC-DEB approved and both hold NAAC accreditation. The recognition risk is low. But before you enrol, three checks are worth doing:</p>
+
+<ol>
+  <li><strong>Confirm your specialisation is on the current session's list.</strong> Both universities open and close specialisations by intake. The 26 or 12 count is the catalogue, not necessarily what is running for your admission cycle.</li>
+  <li><strong>Get the fee quote in writing.</strong> Sticker versus scholarship-adjusted quotes vary by intake and by lead-source. Ask the counsellor plainly what the discount is conditional on, and whether it holds if you extend the programme duration.</li>
+  <li><strong>Cross-check the NAAC and NIRF status.</strong> Both are refreshed annually. Our data reflects the 2025 NIRF cycle; verify the current cycle before you make the final call. Use our <a href="/verify" class="ilink">verify-a-university page</a> for a quick UGC-DEB and NAAC lookup.</li>
+</ol>
+
+<p>Not sure which fits your profile? <a href="/contact" class="ilink">Talk to our counsellor</a>. Edify does not receive referral commissions from either university. Comparison is based on public UGC, NAAC, and NIRF data.</p>
+
+<h2 id="also-consider">Also Consider Before You Decide</h2>
+
+<p>If you are in the Punjab or North India cluster, the LPU and Chandigarh comparison is the obvious first shortlist. Before you commit, three adjacent options are worth a look:</p>
+
+<ul>
+  <li><strong>Amity Online.</strong> Higher fees (₹1.99L to ₹2.60L), NAAC A+, stronger international brand recognition through WASC and QAA. See <a href="/blog/amity-vs-manipal-online-mba-2026" class="ilink">Amity vs Manipal comparison</a>.</li>
+  <li><strong>JAIN Online.</strong> Lower fees, NAAC A++, NIRF University #62. Read the <a href="/blog/jain-vs-amity-online-mba-2026" class="ilink">JAIN vs Amity comparison</a>.</li>
+  <li><strong>Manipal University Jaipur.</strong> Similar fee band, NAAC A+, Coursera-integrated programme. Covered in our university reviews.</li>
+</ul>
+
+<p>For the wider decision on whether an online MBA even fits your career, our <a href="/guides/online-mba-vs-distance-mba" class="ilink">online MBA vs distance MBA guide</a> covers the format-level question. Our <a href="/blog/is-online-mba-worth-it-2026" class="ilink">is online MBA worth it in 2026</a> analysis covers ROI by industry.</p>
+
+<h2 id="verdict">The Honest Verdict</h2>
+
+<p>LPU and Chandigarh are both credible online MBA options in the same fee band from the same state. Neither is a bad choice. The comparison decides on a small number of variables:</p>
+
+<ul>
+  <li>If <strong>accreditation grade on the degree</strong> matters more to you, LPU (NAAC A++, and edifyedu.in records AICTE and WES for LPU).</li>
+  <li>If <strong>NIRF rank and third-party industry certifications</strong> matter more to you, Chandigarh (#19 University, #32 Management, PwC and PMI stack).</li>
+  <li>If your target specialisation is <strong>Business Analytics or Data Science as separately-named tracks</strong>, LPU.</li>
+  <li>If your target specialisation is <strong>FinTech, Product Management, Brand Management, or a niche vertical</strong>, Chandigarh.</li>
+  <li>If <strong>duration flexibility</strong> matters, LPU (extendable to four years).</li>
+</ul>
+
+<p>Both programmes are UGC-DEB approved. Both are legally identical to on-campus degrees from the same universities. Both will get you through corporate HR screening at any mainstream Indian employer. The choice is about which flavour of MBA credential fits the career you are trying to build.</p>
+
+<div class="cta-box" style="background:#0f172a;color:#fff;border-radius:12px;padding:24px;margin:32px 0;text-align:center">
+  <p style="font-size:18px;font-weight:700;margin:0 0 8px">Still deciding between LPU and Chandigarh?</p>
+  <p style="margin:0 0 16px;font-size:14px;opacity:0.9">Get a like-for-like reading of both offers, fees, NIRF rank, specialisation fit, and syllabus depth. Free, independent, no commission from either university.</p>
+  <a href="/contact" class="ilink" style="display:inline-block;background:#f97316;color:#fff;padding:10px 24px;border-radius:8px;font-weight:700;text-decoration:none">Talk to Our Counsellor</a>
+</div>`,
+  },
+  {
     slug: 'do-employers-accept-online-mba-india-2026',
     title: 'How to Present Your Online MBA to Employers: Resume, Interview, LinkedIn (2026)',
     seoTitle: 'Do Employers Accept Online MBA in India 2026? How to Present It Right',
