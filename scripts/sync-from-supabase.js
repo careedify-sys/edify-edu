@@ -26,6 +26,7 @@ const { createClient } = require('@supabase/supabase-js')
 const DRY = process.argv.includes('--dry')
 const ROOT = path.join(__dirname, '..')
 const DATA_TS = path.join(ROOT, 'lib', 'data.ts')
+const DATA_SLIM_TS = path.join(ROOT, 'lib', 'data-slim.ts')
 
 const supa = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL, process.env.SUPABASE_SERVICE_ROLE_KEY)
 
@@ -221,7 +222,93 @@ function toSiteSlug(supabaseSlug) {
     fs.writeFileSync(DATA_TS, dataSrc, 'utf8')
     console.log(`\nWrote lib/data.ts`)
   } else if (DRY) {
-    console.log(`\n[DRY RUN] No file written. Re-run without --dry to apply.`)
+    console.log(`\n[DRY RUN] lib/data.ts not written. Re-run without --dry to apply.`)
+  }
+
+  // 4b. Same treatment for lib/data-slim.ts. Slim entries are single-line objects
+  //     containing the same fields (nirf, nirfMgt, naac). This keeps slim from
+  //     drifting from Supabase — root cause of the highlight regression fix.
+  let slimSrc = fs.readFileSync(DATA_SLIM_TS, 'utf8')
+  const slimOriginal = slimSrc
+  const slimChanges = []
+  const slimIdRe = /id:\s*'([a-z0-9-]+)'/g
+  const slimPositions = []
+  let sm
+  while ((sm = slimIdRe.exec(slimOriginal)) !== null) {
+    let depth = 0, start = sm.index
+    for (let i = sm.index; i >= 0; i--) {
+      const c = slimOriginal[i]
+      if (c === '}') depth++
+      else if (c === '{') { if (depth === 0) { start = i; break } depth-- }
+    }
+    depth = 1
+    let end = sm.index
+    for (let i = start + 1; i < slimOriginal.length; i++) {
+      const c = slimOriginal[i]
+      if (c === '{') depth++
+      else if (c === '}') { depth--; if (depth === 0) { end = i; break } }
+    }
+    slimPositions.push({ id: sm[1], start, end })
+  }
+  // Walk in reverse so index-based edits stay valid.
+  for (let i = slimPositions.length - 1; i >= 0; i--) {
+    const { id, start, end } = slimPositions[i]
+    const truth = TRUTH[id]
+    if (!truth) continue
+    const block = slimSrc.slice(start, end + 1)
+    let newBlock = block
+    const rowChanges = []
+    if (truth.naac) {
+      newBlock = newBlock.replace(/(naac:\s*')([^']*)(')/g, (full, pre, val, post) => {
+        if (val !== truth.naac) { rowChanges.push(`slim naac: '${val}' → '${truth.naac}'`); return pre + truth.naac + post }
+        return full
+      })
+    }
+    if (truth.nirfUni !== null && truth.nirfUni > 0) {
+      newBlock = newBlock.replace(/(nirf:\s*)(\d+)/, (full, pre, val) => {
+        const cur = parseInt(val, 10)
+        if (cur !== truth.nirfUni) { rowChanges.push(`slim nirf: ${cur} → ${truth.nirfUni}`); return pre + truth.nirfUni }
+        return full
+      })
+    } else if (truth.nirfUni === null) {
+      newBlock = newBlock.replace(/(nirf:\s*)(\d+)/, (full, pre, val) => {
+        const cur = parseInt(val, 10)
+        if (cur > 0 && cur < 200) { rowChanges.push(`slim nirf: ${cur} → 999`); return pre + '999' }
+        return full
+      })
+    }
+    if (truth.nirfMgt !== null && truth.nirfMgt > 0) {
+      if (/nirfMgt:\s*\d+/.test(newBlock)) {
+        newBlock = newBlock.replace(/(nirfMgt:\s*)(\d+)/, (full, pre, val) => {
+          const cur = parseInt(val, 10)
+          if (cur !== truth.nirfMgt) { rowChanges.push(`slim nirfMgt: ${cur} → ${truth.nirfMgt}`); return pre + truth.nirfMgt }
+          return full
+        })
+      }
+    } else if (truth.nirfMgt === null && /nirfMgt:\s*\d+/.test(newBlock)) {
+      newBlock = newBlock.replace(/(nirfMgt:\s*)(\d+)/, (full, pre, val) => {
+        const cur = parseInt(val, 10)
+        if (cur > 0 && cur < 200) { rowChanges.push(`slim nirfMgt: ${cur} → 999`); return pre + '999' }
+        return full
+      })
+    }
+    if (rowChanges.length) {
+      slimChanges.push({ id, rowChanges })
+      slimSrc = slimSrc.slice(0, start) + newBlock + slimSrc.slice(end + 1)
+    }
+  }
+
+  console.log(`\n=== Diff vs lib/data-slim.ts ===`)
+  console.log(`Slim universities with at least one correction: ${slimChanges.length}\n`)
+  for (const c of slimChanges) {
+    console.log(`• ${c.id}`)
+    c.rowChanges.forEach(x => console.log(`    ${x}`))
+  }
+  if (!DRY && slimSrc !== slimOriginal) {
+    fs.writeFileSync(DATA_SLIM_TS, slimSrc, 'utf8')
+    console.log(`\nWrote lib/data-slim.ts`)
+  } else if (DRY) {
+    console.log(`\n[DRY RUN] lib/data-slim.ts not written.`)
   }
 
   // 5. Universities in Supabase but not matched (slug mismatch)
