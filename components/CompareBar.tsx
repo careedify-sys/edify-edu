@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { X, BarChart2, Plus } from 'lucide-react'
+import { formatRank } from '@/lib/highlight'
 import { getCompareList, removeFromCompare, clearCompare, MAX_COMPARE } from '@/lib/compare-store'
 import { getSlimById as getUniversityById } from '@/lib/data-slim'
 
@@ -36,7 +37,7 @@ export default function CompareBar() {
           }}>
             <div style={{ width: '8px', height: '8px', borderRadius: 'var(--r-pill)', background: u.color }} />
             <span style={{ fontSize: '13px', fontWeight: '600', color: 'var(--surface)' }}>{u.abbr}</span>
-            <span className="text-[11px] text-ink-2">{u.nirf < 200 ? `NIRF #${u.nirf}` : u.naac}</span>
+            <span className="text-[11px] text-ink-2">{formatRank(u, 'auto').shortLabel || u.naac}</span>
             <button onClick={() => removeFromCompare(u.id)}
               style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--ink-2)', padding: '0', display: 'flex', alignItems: 'center' }}>
               <X size={13} />

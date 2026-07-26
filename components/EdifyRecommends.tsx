@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircle } from 'lucide-react'
 import { UNIS_SLIM, getSortRank, formatFeeSlim as formatFee } from '@/lib/data-slim'
 import type { Program } from '@/lib/data-client'
+import { formatRank, preferForProgram } from '@/lib/highlight'
 
 interface Props {
   program: Program
@@ -66,7 +67,8 @@ export default function EdifyRecommends({ program, currentId, programSlug }: Pro
 
       <div className="flex flex-col gap-3">
         {picks.map(u => {
-          const why = WHY[u.id] || `${u.naac} · ${u.nirf > 0 && u.nirf < 900 ? `NIRF #${u.nirf}` : 'UGC Approved'}`
+          const rank = formatRank(u, preferForProgram(program))
+          const why = WHY[u.id] || `${u.naac} · ${rank.label || 'UGC Approved'}`
           return (
             <Link
               key={u.id}

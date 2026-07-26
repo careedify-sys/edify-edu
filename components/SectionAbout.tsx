@@ -1,5 +1,6 @@
 import type { University, ProgramDetail } from '@/lib/data'
 import { formatSpecList } from '@/lib/data'
+import { formatRank, preferForProgram } from '@/lib/highlight'
 
 interface Props {
   u: University
@@ -43,7 +44,7 @@ export default function SectionAbout({ u, program, pd, cleanName, spec, customIn
             )}
             <p>
               The university holds NAAC {u.naac} accreditation
-              {u.nirf > 0 && u.nirf < 500 ? ` and a NIRF rank of #${u.nirf}` : ''}, giving the {program} degree strong institutional credibility with employers.
+              {(() => { const r = formatRank(u, preferForProgram(program)); return r.rank !== null ? ` and a ${r.label} rank` : '' })()}, giving the {program} degree strong institutional credibility with employers.
               {u.psuEligible ? ' The degree is also eligible for PSU recruitment portals.' : ''}
             </p>
             {pd.specs && pd.specs.length > 0 && (

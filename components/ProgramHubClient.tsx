@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { GraduationCap, Layers, Wallet, BadgeCheck } from 'lucide-react'
 import { UNIS_SLIM, formatFeeSlim, PREFERRED_UNI_IDS } from '@/lib/data-slim'
 import UniversityCard from '@/components/UniversityCard'
+import { formatRank, preferForProgram } from '@/lib/highlight'
 
 const PROGRAM_INFO: Record<string, { title: string; level: string; duration: string; description: string }> = {
   MBA: {
@@ -77,15 +78,16 @@ export default function ProgramHubClient({ program }: Props) {
   const info = PROGRAM_INFO[program] || { title: `Online ${program} in India`, level: 'Degree', duration: '2-3 Years', description: `UGC-DEB approved online ${program} programmes.` }
 
   const unis = useMemo(() => {
+    const prefer = preferForProgram(program)
     return UNIS_SLIM
       .filter(u => u.programs.includes(program))
       .sort((a, b) => {
-        // Preferred unis first, then by NIRF
+        // Preferred unis first, then by the right NIRF category for this program
+        // (Management rank on MBA/management surfaces, University elsewhere).
+        // Unranked (999) sorts last via formatRank's sortKey of 9999.
         const aPref = PREFERRED_UNI_IDS.includes(a.id) ? -1000 : 0
         const bPref = PREFERRED_UNI_IDS.includes(b.id) ? -1000 : 0
-        const aNirf = a.nirf > 0 && a.nirf < 200 ? a.nirf : 500
-        const bNirf = b.nirf > 0 && b.nirf < 200 ? b.nirf : 500
-        return (aPref + aNirf) - (bPref + bNirf)
+        return (aPref + formatRank(a, prefer).sortKey) - (bPref + formatRank(b, prefer).sortKey)
       })
   }, [program])
 

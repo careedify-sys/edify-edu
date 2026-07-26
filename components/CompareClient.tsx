@@ -13,6 +13,8 @@ import {
 } from 'lucide-react'
 import { UNIS_SLIM, formatFeeSlim as formatFee } from '@/lib/data-slim'
 import { getUniversityById, specName as getSpecName } from '@/lib/data'
+import { formatRank, preferForProgram } from '@/lib/highlight'
+import { NIRF_EDITION_YEAR } from '@/lib/constants'
 import { getUniversityLogo, getMasterSyllabus } from '@/lib/content'
 import type { University, Program } from '@/lib/data'
 import EnquiryModal from '@/components/EnquiryModal'
@@ -153,19 +155,22 @@ function UniSlot({
             <p className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold mb-0.5">NAAC</p>
             <NaacBadge grade={fullU.naac} />
           </div>
-          {fullU.nirf && fullU.nirf < 300 ? (
-            <div>
-              <p className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold mb-0.5">NIRF Rank</p>
-              <p className="text-sm font-bold text-slate-800">#{fullU.nirf}</p>
-            </div>
-          ) : (
-            <div>
-              <p className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold mb-0.5">Approval</p>
-              <span className="text-xs font-semibold text-green-700 flex items-center gap-1">
-                <CheckCircle size={11} className="text-green-500" /> UGC DEB
-              </span>
-            </div>
-          )}
+          {(() => {
+            const r = formatRank(fullU, preferForProgram(program))
+            return r.rank !== null ? (
+              <div>
+                <p className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold mb-0.5">NIRF {r.category} {r.year}</p>
+                <p className="text-sm font-bold text-slate-800">#{r.rank}</p>
+              </div>
+            ) : (
+              <div>
+                <p className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold mb-0.5">Approval</p>
+                <span className="text-xs font-semibold text-green-700 flex items-center gap-1">
+                  <CheckCircle size={11} className="text-green-500" /> UGC DEB
+                </span>
+              </div>
+            )
+          })()}
         </div>
         <div className="px-4 py-3 flex items-center justify-between">
           <div>
@@ -608,7 +613,7 @@ function UniCard({
         <div className="flex-1 min-w-0">
           <p className="text-sm font-bold text-slate-800 leading-snug">{u.name}</p>
           <div className="flex items-center gap-2 mt-1 flex-wrap">
-            {u.nirf && u.nirf < 300 && <span className="text-xs font-bold text-slate-700">#{u.nirf} NIRF</span>}
+            {(() => { const r = formatRank(u, preferForProgram(program)); return r.rank !== null && <span className="text-xs font-bold text-slate-700">{r.shortLabel}</span> })()}
             <NaacBadge grade={u.naac} />
           </div>
         </div>
@@ -946,7 +951,7 @@ function CompareContent() {
                       <p className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Highest Rank</p>
                     </div>
                     <p className="text-sm font-bold text-slate-900 leading-snug mb-1">{verdict.bestNirf.name}</p>
-                    <p className="text-xs font-semibold text-slate-500">NIRF #{verdict.bestNirf.nirf}</p>
+                    <p className="text-xs font-semibold text-slate-500">{formatRank(verdict.bestNirf, preferForProgram(program)).label || 'Not currently ranked'}</p>
                   </div>
                   <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-sm" style={{ borderTop: '3px solid #16a34a' }}>
                     <div className="flex items-center gap-2 mb-2">
@@ -1040,8 +1045,13 @@ function CompareContent() {
                 </div>
 
                 <SectionDivider label="Academic Credibility" icon={<Award size={13} />} />
-                <ComparisonRow label="NIRF Rank" icon={<BarChart2 size={12} className="text-amber-500" />} unis={universities}
-                  fn={(u) => u.nirf && u.nirf < 300 ? <span className="text-lg font-bold text-slate-800">#{u.nirf}</span> : <span className="text-slate-400">—</span>}
+                <ComparisonRow label={`NIRF Rank (${NIRF_EDITION_YEAR})`} icon={<BarChart2 size={12} className="text-amber-500" />} unis={universities}
+                  fn={(u) => {
+                    const r = formatRank(u, preferForProgram(program))
+                    return r.rank !== null
+                      ? <span className="text-lg font-bold text-slate-800">#{r.rank}<span className="ml-1 text-[10px] font-semibold text-slate-500 uppercase">{r.category === 'Management' ? 'Mgt' : 'Univ'}</span></span>
+                      : <span className="text-slate-400">Not ranked</span>
+                  }}
                 />
                 <ComparisonRow label="NAAC Grade" icon={<ShieldCheck size={12} className="text-slate-500" />} unis={universities}
                   fn={(u) => <NaacBadge grade={u.naac} />}
