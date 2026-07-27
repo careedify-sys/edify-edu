@@ -7,6 +7,7 @@ import { MapPin } from 'lucide-react'
 import type { UniSlim } from '@/lib/data-slim'
 import { formatFeeSlim as formatFee } from '@/lib/data-slim'
 import { getUniversityLogo } from '@/lib/content'
+import { buildHighlight, preferForProgram } from '@/lib/highlight'
 import EnquiryModal from './EnquiryModalDynamic'
 
 function UniLogo({ src, name, abbr, color }: { src?: string | null; name: string; abbr: string; color: string }) {
@@ -179,7 +180,7 @@ export default function UniversityCard({ u, highlightProgram, specSlug }: { u: U
           {/* Highlight badge */}
           <div style={{ padding: '6px 12px', marginBottom: 10, borderRadius: 'var(--r-xs)', background: 'linear-gradient(135deg, rgba(200,129,26,0.08), rgba(200,129,26,0.04))', border: '1px solid rgba(200,129,26,0.2)', fontSize: 11, fontWeight: 700, color: 'var(--amber-text)', display: 'flex', alignItems: 'center', gap: 6, }}>
             <span className="text-sm">✦</span>
-            {u.highlight}
+            {highlightProgram ? buildHighlight(u, preferForProgram(highlightProgram)) : u.highlight}
           </div>
 
           {/* Programs */}
