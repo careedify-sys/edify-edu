@@ -81,7 +81,7 @@ const SLUG_MAP: Record<string, string> = {
   'visvesvaraya-technological-university-online': 'vtu-online',
   'yenepoya-online': 'yenepoya-university-online',
   'amity-university-rajasthan-online': 'amity-university-online',
-  'birla-institute-of-technology-online': 'bits-pilani-online',
+  'birla-institute-of-technology-online': 'bit-mesra-online',
   'international-institute-of-information-technology-online': 'iiit-bangalore-online',
 };
 

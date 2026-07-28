@@ -43,7 +43,7 @@ const SEO_NAME: Record<string, string> = {
   // Jammu & Kashmir
   'university-of-jammu-online': 'University of Jammu',
   // Jharkhand
-  'bits-pilani-online': 'Birla Institute of Technology Mesra',
+  'bit-mesra-online': 'Birla Institute of Technology Mesra',
   'arka-jain-university-online': 'Arka Jain University',
   // Karnataka
   'jain-university-online': 'JAIN University',

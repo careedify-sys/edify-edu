@@ -72,6 +72,17 @@ const NO_MBA_DATA_UNIS = new Set([
   'university-of-mumbai-online',
 ])
 
+// Slug remap: when the Excel carries a legacy slug that has been renamed in
+// data.ts, translate here so the emitted sitemap uses the current slug. The
+// middleware handles the corresponding 301/308 for any legacy URL that still
+// gets requested. Update this map when renaming a university slug so the
+// Excel does not have to be edited in the same commit.
+const SLUG_REMAP = {
+  // 2026-07-26: `bits-pilani-online` was misleadingly named — the entry is
+  // BIT Mesra Ranchi, not BITS Pilani. Renamed to `bit-mesra-online`.
+  'bits-pilani-online': 'bit-mesra-online',
+}
+
 // Static pages always in sitemap
 const STATIC_URLS = [
   '/',
@@ -166,7 +177,8 @@ let skipped = 0
 let processed = 0
 
 for (const row of rows) {
-  const uniSlug = row[uniCol]
+  const rawUniSlug = row[uniCol]
+  const uniSlug = SLUG_REMAP[rawUniSlug] || rawUniSlug
   const rawProg = row[progCol]
   const program = rawProg.toLowerCase().trim()
   const specSlug = specCol ? (row[specCol] || '').toLowerCase().trim() : ''

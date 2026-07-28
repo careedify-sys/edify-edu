@@ -5659,7 +5659,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   enrollments: 500,
   },
   {
-    id: 'bits-pilani-online',
+    id: 'bit-mesra-online',
     name: 'Birla Institute of Technology (BIT) Mesra Online',
     abbr: 'BITM',
     city: 'Ranchi',

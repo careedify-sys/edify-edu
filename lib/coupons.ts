@@ -424,7 +424,7 @@ export function getTodaysBonus(tier: Tier): { amount: number; isMaxWindow: boole
 /** Group coupons by intent-based sections */
 export function getCouponSections() {
   const top5Ids = ['amity-university-online', 'nmims-online', 'manipal-university-jaipur-online', 'lovely-professional-university-online', 'chandigarh-university-online']
-  const premiumIds = ['manipal-academy-higher-education-online', 'symbiosis-university-online', 'amrita-vishwa-vidyapeetham-online', 'jain-university-online', 'bits-pilani-online', 'dr-dy-patil-vidyapeeth-online']
+  const premiumIds = ['manipal-academy-higher-education-online', 'symbiosis-university-online', 'amrita-vishwa-vidyapeetham-online', 'jain-university-online', 'bit-mesra-online', 'dr-dy-patil-vidyapeeth-online']
   const mcaPrograms = COUPONS.filter(c => c.program === 'MCA')
 
   const top5 = COUPONS.filter(c => top5Ids.includes(c.universityId) && c.program !== 'MCA')

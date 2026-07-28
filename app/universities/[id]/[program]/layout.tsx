@@ -19,7 +19,7 @@ const SEO_NAME: Record<string, string> = {
   'maharishi-markandeshwar-university-online': 'Maharishi Markandeshwar University', 'manav-rachna-online': 'Manav Rachna University',
   'northcap-university-online': 'NorthCap University', 'shoolini-university-online': 'Shoolini University',
   'central-university-himachal-pradesh-online': 'Central University of Himachal Pradesh', 'university-of-jammu-online': 'University of Jammu',
-  'bits-pilani-online': 'Birla Institute of Technology Mesra', 'arka-jain-university-online': 'Arka Jain University',
+  'bit-mesra-online': 'Birla Institute of Technology Mesra', 'arka-jain-university-online': 'Arka Jain University',
   'jain-university-online': 'JAIN University', 'jss-university-online': 'JSS Academy of Higher Education',
   'manipal-academy-higher-education-online': 'Manipal Academy of Higher Education', 'bangalore-university-online': 'Bangalore University',
   'university-of-mysore-online': 'University of Mysore', 'yenepoya-university-online': 'Yenepoya University',

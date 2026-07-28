@@ -42,7 +42,7 @@ const TRAFFIC_ORDER: string[] = [
   'chitkara-university-online',                 // 27
   'dayananda-sagar-university-online',          // 28
   'amet-university-online',                     // 29
-  'bits-pilani-online',                         // 30
+  'bit-mesra-online',                         // 30
   'icfai-university-online',                    // 31
   'iift-online',                                // 32
   'integral-university-online',                 // 33

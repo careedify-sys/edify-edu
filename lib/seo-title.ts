@@ -44,7 +44,7 @@ export const TITLE_NAME: Record<string, string> = {
   'shoolini-university-online': 'Shoolini University',
   'central-university-himachal-pradesh-online': 'Central Univ HP',
   'university-of-jammu-online': 'University of Jammu',
-  'bits-pilani-online': 'BIT Mesra',
+  'bit-mesra-online': 'BIT Mesra',
   'arka-jain-university-online': 'Arka Jain University',
   'jss-university-online': 'JSS Academy',
   'bangalore-university-online': 'Bangalore University',
