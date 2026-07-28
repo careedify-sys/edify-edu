@@ -1116,7 +1116,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>FMCG plus Marketing (HUL, ITC, Marico):</strong> JAIN Marketing or NMIMS Marketing. Rs 12-22 LPA at year 3.</li>
   <li><strong>HR (any sector):</strong> Symbiosis SCDL HR or NMIMS HR. Rs 12-22 LPA at year 3.</li>
   <li><strong>Manufacturing plus Operations:</strong> NMIMS Operations or MUJ Operations. Rs 14-25 LPA at year 3.</li>
-  <li><strong>Engineering plus tech management (IT, manufacturing, pharma):</strong> <a href="/blog/bits-pilani-online-mba-review-2026" class="ilink">BITS Pilani online MBA review</a>. NAAC A++, NIRF #16, purpose-built for engineers with 60% graduation marks, Rs 2.97L.</li>
+  <li><strong>Engineering plus tech management (IT, manufacturing, pharma):</strong> <a href="/blog/bits-pilani-online-mba-review-2026" class="ilink">BITS Pilani online MBA review</a>. NAAC A++, NIRF #16 Overall 2025, purpose-built for engineers with 60% graduation marks, Rs 2.97L.</li>
   <li><strong>Govt plus PSU upgrade:</strong> IGNOU plus IGNOU Banking. Rs 12-16 LPA at year 3.</li>
   <li><strong>Healthcare plus Pharma:</strong> NMIMS Healthcare or DY Patil. Rs 12-22 LPA at year 3.</li>
 </ol>
@@ -32889,7 +32889,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     <tr><td>South India brand recognition</td><td>JAIN Online (Bengaluru)</td><td>NMIMS Online (Mumbai but pan-South)</td><td>Strong Karnataka and South India alumni</td></tr>
     <tr><td>Healthcare and pharma career</td><td><a href="/blog/dy-patil-online-mba-review" class="ilink">DY Patil online MBA fees and review</a></td><td>Amity Online (Hospital Mgmt spec)</td><td>Healthcare lineage, Mumbai network</td></tr>
     <tr><td>International accreditation</td><td>NMIMS Online</td><td>(no strong alternatives)</td><td>Only Indian online MBA with AACSB</td></tr>
-    <tr><td>Engineering plus tech management</td><td><a href="/blog/bits-pilani-online-mba-review-2026" class="ilink">BITS Pilani WILP fees and review</a></td><td>NMIMS Online</td><td>NAAC A++, NIRF #16, purpose-built for engineers, Rs 2.97L</td></tr>
+    <tr><td>Engineering plus tech management</td><td><a href="/blog/bits-pilani-online-mba-review-2026" class="ilink">BITS Pilani WILP fees and review</a></td><td>NMIMS Online</td><td>NAAC A++, NIRF #16 Overall 2025, purpose-built for engineers, Rs 2.97L</td></tr>
   </tbody>
 </table>
 
@@ -33905,7 +33905,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     slug: 'bits-pilani-online-mba-review-2026',
     title: "BITS Pilani Online MBA Review 2026: WILP Fees & Honest Take",
     seoTitle: "BITS Pilani Online MBA (WILP) Fees 2026: ₹2.97L, NIRF #16 Review",
-    metaDescription: "Bits Pilani Online MBA 2026: BITS Pilani WILP Online MBA 2026 review: ₹2.97L total fee. NAAC A++, NIRF #16, 8 specs incl. FinTech, Analytics, Manufacturing. Engin...",
+    metaDescription: "Bits Pilani Online MBA 2026: BITS Pilani WILP Online MBA 2026 review: ₹2.97L total fee. NAAC A++, NIRF #16 Overall 2025, 8 specs incl. FinTech, Analytics, Manufacturing. Engin...",
     category: 'University Reviews',
     tags: ["bits pilani online mba","bits pilani wilp mba","bits pilani online mba fees","bits pilani mba online","BITS Pilani WILP MBA fees","BITS Pilani online MBA review","BITS MBA worth it"],
     publishedAt: '2026-05-04',
