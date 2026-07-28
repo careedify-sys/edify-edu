@@ -59,6 +59,11 @@ const OLD_SLUG_REDIRECTS: Record<string, string> = {
   'vellore-institut-of-technolo': 'vit-vellore-online',
   'yenepoya-universi': 'yenepoya-university-online',
   'symbiosis': 'symbiosis-university-online',
+  // 2026-07-26: bits-pilani-online was misleadingly named — the entry is BIT
+  // Mesra Ranchi, not BITS Pilani. Renamed to bit-mesra-online at truthful
+  // slug; the 7 legacy URLs (main page + 6 MBA program/spec pages) redirect
+  // to the corresponding bit-mesra-online URLs.
+  'bits-pilani-online': 'bit-mesra-online',
   'nmims': 'nmims-online',
   'mahe-manipal': 'manipal-academy-higher-education-online',
   'jain': 'jain-university-online',
