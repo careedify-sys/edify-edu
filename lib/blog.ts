@@ -3755,13 +3755,16 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Beyond official scholarships, some online MBA universities offer time-limited discount coupons. Check the <a href="/coupons" class="ilink">edifyedu.in discount coupon page</a> for currently active offers before paying full fee.</p>
 
+<p>Structurally, government and category-linked fee support at Indian MBA programmes falls into a few consistent buckets, listed below. Specific amounts and eligibility cut-offs change every intake and vary by institution, so the numbers below are not stated here. For the current live figure for your profile, see the structural walkthrough in our <a href="/blog/online-mba-scholarship-india-2026" class="ilink">online MBA scholarship guide</a> or <a href="/contact" class="ilink">talk to our counsellor</a>.</p>
+
 <ul>
-  <li><strong>Reservation-based fee reductions:</strong> Most government institutions (FMS Delhi, JBIMS, IIT DMS) offer 50 percent or more fee reduction for SC, ST, OBC, EWS categories per government norms.</li>
-  <li><strong>Single parent and women returnee waivers:</strong> Some universities (Symbiosis, Amity) offer 10 to 20 percent fee reduction.</li>
-  <li><strong>Armed forces dependents:</strong> NDA, AFA, Naval Academy dependents get tuition fee waivers at central universities. Verify with Defence Welfare Department.</li>
-  <li><strong>Specific state government scholarships:</strong> Tamil Nadu, Kerala, West Bengal, Karnataka offer state-resident MBA scholarships at IIM Tiruchi, IIM Kozhikode, IIM Calcutta respectively.</li>
-  <li><strong>Need-based scholarships at IIMs:</strong> Family income below Rs 4.5 lakh annual: up to 100 percent tuition waiver at all IIMs.</li>
+  <li><strong>Reservation-based fee policies at government institutions:</strong> FMS Delhi, JBIMS, IIT DMS, and central-university MBAs operate reservation policies for SC, ST, OBC-NCL, and EWS categories per government norms. Whether these translate to a fee reduction, and by how much, is set institution by institution. Confirm with the specific institution.</li>
+  <li><strong>Single parent and women returnee waivers:</strong> Some universities run structured waivers in these categories. Ask the counsellor whether the programme is currently open for your intake.</li>
+  <li><strong>Armed forces dependents:</strong> NDA, AFA, and Naval Academy dependents may qualify for tuition fee waivers at central universities. Verify with the Defence Welfare Department and the specific institution.</li>
+  <li><strong>State government scholarships:</strong> Tamil Nadu, Kerala, West Bengal, and Karnataka run state-resident MBA scholarships tied to specific institutions such as IIM Tiruchi, IIM Kozhikode, and IIM Calcutta. Apply through the relevant state portal.</li>
 </ul>
+
+<div class="callout-key"><strong>Eligibility relaxation is not a fee benefit.</strong> The 45 percent versus 50 percent graduation marks rule under UGC norms decides whether you qualify to enrol. It does not by itself reduce your fee. Any category-linked fee reduction is a separate institutional policy that has to be confirmed directly.</div>
 
 <h2>EMI and Education Loan Strategy</h2>
 
@@ -3778,24 +3781,37 @@ export const BLOG_POSTS: BlogPost[] = [
   </tbody>
 </table>
 
-<h2>Scholarships for MBA Programmes India 2026</h2>
+<h2>Scholarships for Online MBA: How to Read the Structure</h2>
 
-<p>A range of merit-based and need-based options can reduce total outgo. You can also review <a href="/scholarships" class="ilink">scholarship options for online MBA</a> programmes consolidated on EdifyEdu.</p>
+<p>A range of merit-based, category-linked, and need-based scholarships can reduce total online MBA outgo. Because specific rupee values and eligibility cut-offs change every admission cycle, this section describes the structure. For a live figure that applies to your profile, our dedicated <a href="/blog/online-mba-scholarship-india-2026" class="ilink">online MBA scholarship guide</a> walks through the seven scholarship types, how waivers actually apply, and an 8-point counsellor checklist.</p>
 
 <table>
-  <caption>MBA scholarship options India 2026</caption>
-  <thead><tr><th>Programme</th><th>Scholarship</th><th>Eligibility</th></tr></thead>
+  <caption>Online MBA scholarship categories India 2026 (amounts vary by university and intake, confirm in writing)</caption>
+  <thead><tr><th>Category</th><th>Typical eligibility signal</th><th>How it applies</th></tr></thead>
   <tbody>
-    <tr><td>IIM Need-based</td><td>Up to 100 percent fee waiver</td><td>Family income proof, merit threshold</td></tr>
-    <tr><td>IIM Merit-based</td><td>Rs 1 to 5 lakh waiver</td><td>Top 5 to 10 percent of admitted batch</td></tr>
-    <tr><td>ISB YLP plus YLPP</td><td>Variable</td><td>Strong undergraduate profile, leadership signal</td></tr>
-    <tr><td>FMS Delhi</td><td>Already subsidised (govt institute)</td><td>CAT 99-plus admission</td></tr>
-    <tr><td>XLRI Scholarships</td><td>Rs 1 to 4 lakh</td><td>Merit plus need basis</td></tr>
-    <tr><td>Amity Online merit waiver</td><td>Rs 25K to Rs 35K</td><td>60-plus percent graduation aggregate</td></tr>
-    <tr><td>Chandigarh University Online</td><td>Rs 20K to Rs 30K</td><td>Sliding scale based on graduation marks</td></tr>
-    <tr><td>OBC SC ST waivers</td><td>10 to 25 percent fee reduction</td><td>Caste certificate, applies across most universities</td></tr>
+    <tr><td>Merit scholarship</td><td>Graduation aggregate, proprietary entrance test, or CAT/MAT/CMAT score</td><td>Fee waiver against sticker; ask which semesters it covers</td></tr>
+    <tr><td>Early-bird scholarship</td><td>Application and payment before an intake-specific cut-off</td><td>Fee waiver; deadline moves every cycle</td></tr>
+    <tr><td>Defence, PwD, serving personnel</td><td>Service certificate, ID card, or PwD certificate</td><td>Fee waiver at most major online MBAs</td></tr>
+    <tr><td>Corporate tie-up</td><td>Employment at a partner company on the current list</td><td>Fee waiver or cashback; confirm partner status</td></tr>
+    <tr><td>Alumni or referral</td><td>Referral by an existing student or prior degree from the same institution</td><td>Fee waiver; usually needs to be flagged before application</td></tr>
+    <tr><td>Women-specific programmes</td><td>Category open in the current intake</td><td>Fee waiver; ask about stacking with merit or early-bird</td></tr>
+    <tr><td>Group enrolment</td><td>Minimum group size from the same employer or cohort</td><td>Fee waiver or cashback; mechanic varies</td></tr>
   </tbody>
 </table>
+
+<p>Verify each of these with the specific university before paying. Confirm the mechanic (waiver, cashback, or instalment relief), the semesters covered, and any withdrawal condition. The <a href="/blog/online-mba-scholarship-india-2026" class="ilink">scholarship structure guide</a> covers the checklist in detail.</p>
+
+<h3>Campus MBA scholarships: different reader intent</h3>
+
+<p>The scholarships below apply to <strong>residential campus MBA programmes</strong> (IIMs, ISB, XLRI, FMS Delhi). These are structurally different from online MBA scholarships and are included here for readers cross-shopping tiers. If you are only comparing online MBA options, skip this section.</p>
+
+<ul>
+  <li><strong>IIM need-based scholarships:</strong> Every IIM operates a need-based financial aid scheme with a family income threshold and a merit component. Waiver quantum is decided institution by institution; verify with the specific IIM.</li>
+  <li><strong>IIM merit-based scholarships:</strong> Top-of-batch merit awards at most IIMs. Eligibility is typically a percentile within the admitted cohort.</li>
+  <li><strong>ISB YLP and YLPP:</strong> Selection-linked scholarships for candidates admitted via the Young Leaders Programme routes. Awards vary; strong undergraduate profile and leadership signal are the eligibility screens.</li>
+  <li><strong>XLRI scholarships:</strong> Merit and need-based scholarships across XLRI programmes. Verify current terms on the XLRI admissions page.</li>
+  <li><strong>FMS Delhi:</strong> Already deeply subsidised as a government institution. Admission via CAT is the primary filter.</li>
+</ul>
 
 <h2>The 3-Year ROI Calculator: Which Tier Pays Back Fastest</h2>
 
@@ -18190,15 +18206,17 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Online MBA Scholarships and Fee Waivers 2026</h2>
 
+<p>Scholarship categories at online MBA programmes are structurally consistent across universities. The specific rupee value and eligibility cut-off for each category change every admission cycle. For the current live figure that applies to your profile, see our <a href="/blog/online-mba-scholarship-india-2026" class="ilink">online MBA scholarship guide</a>, which walks through the seven scholarship types, how waivers actually apply, and an 8-point counsellor checklist to run before you pay.</p>
+
 <ul>
-  <li><strong>Merit-based scholarships:</strong> 5 to 15 percent fee reduction for graduation marks above 75 percent. Available at NMIMS, MUJ, Amity, Chandigarh.</li>
-  <li><strong>Women in Management scholarships:</strong> 5 to 10 percent fee reduction at NMIMS, MUJ, Symbiosis.</li>
-  <li><strong>Defence personnel plus families:</strong> 10 to 25 percent fee reduction at most online MBAs.</li>
-  <li><strong>Differently-abled (PwBD):</strong> 25 to 50 percent fee reduction at most programmes.</li>
-  <li><strong>SC plus ST plus OBC scholarships:</strong> State government plus central government scholarships available. Apply through state portal.</li>
-  <li><strong>Corporate sponsorship discounts:</strong> Tata, Infosys, TCS, Wipro, Accenture employees get 10 to 20 percent discount at partner online MBAs.</li>
-  <li><strong>Early-bird discounts:</strong> 5 to 10 percent fee reduction for applications submitted 2 months before deadline.</li>
-  <li><strong>Group enrolment discount:</strong> 5 to 10 percent if 3-plus colleagues enrol from same employer.</li>
+  <li><strong>Merit-based scholarships:</strong> Awarded on graduation aggregate, a proprietary entrance test, or CAT/MAT/CMAT scores. Available at NMIMS, MUJ, Amity, Chandigarh among others.</li>
+  <li><strong>Women-specific scholarships:</strong> A number of universities including NMIMS, MUJ, and Symbiosis run scholarships targeted at women applicants, sometimes framed as Women in Management or Women in Leadership programmes. Ask whether the programme is open for your intake.</li>
+  <li><strong>Defence personnel and dependents:</strong> Fee waivers available at most major online MBAs for defence personnel and their spouse or children. Documentation is a service certificate or ID card.</li>
+  <li><strong>Differently-abled (PwBD):</strong> Fee waivers available at most programmes on presentation of a valid PwBD certificate from a competent medical authority.</li>
+  <li><strong>Reserved category scholarships:</strong> Central and state government scholarships may be available for SC, ST, and OBC-NCL candidates. Apply through the relevant state portal. Note that this is separate from the UGC admission eligibility relaxation, which is not itself a fee benefit.</li>
+  <li><strong>Corporate tie-up discounts:</strong> Employees of partner companies get scholarship rates at partner online MBAs. Ask the counsellor for the current partner list rather than relying on old logo grids.</li>
+  <li><strong>Early-bird discounts:</strong> Awarded for applying and paying before a cut-off within the current intake. The cut-off moves every cycle.</li>
+  <li><strong>Group enrolment discount:</strong> Available when a minimum number of colleagues from the same employer enrol together. Minimum group size varies by university.</li>
 </ul>
 
 <p>Before committing, it is worth checking whether any university has active seasonal discounts. You can <a href="/coupons" class="ilink">check current discount coupons</a> on EdifyEdu to see if any university coupon is live for your chosen programme.</p>
@@ -43430,7 +43448,7 @@ The specialisation count is a marketing number. The one that matters is whether 
 
 <ol>
   <li><strong>Confirm your specialisation is on the current session's list.</strong> Both universities open and close specialisations by intake. The 26 or 12 count is the catalogue, not necessarily what is running for your admission cycle.</li>
-  <li><strong>Get the fee quote in writing.</strong> Sticker versus scholarship-adjusted quotes vary by intake and by lead-source. Ask the counsellor plainly what the discount is conditional on, and whether it holds if you extend the programme duration.</li>
+  <li><strong>Get the fee quote in writing.</strong> Sticker versus scholarship-adjusted quotes vary by intake and by lead-source. Ask the counsellor plainly what the discount is conditional on, whether it applies to all semesters or only the first, and whether it holds if you extend the programme duration. Our <a href="/blog/online-mba-scholarship-india-2026" class="ilink">online MBA scholarship guide</a> covers the full 8-point checklist to run before you pay.</li>
   <li><strong>Cross-check the NAAC and NIRF status.</strong> Both are refreshed annually. Our data reflects the 2025 NIRF cycle; verify the current cycle before you make the final call. Use our <a href="/verify" class="ilink">verify-a-university page</a> for a quick UGC-DEB and NAAC lookup.</li>
 </ol>
 
@@ -44490,6 +44508,209 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 </div>
 
 <p class="disclaimer"><em>Disclaimer: All regulatory information is based on publicly available data from the UGC-DEB portal (deb.ugc.ac.in), UGC-DEB FAQ, and UGC (Open and Distance Learning Programmes and Online Programmes) Regulations 2020 and amendments, as of July 2026. The UGC-DEB portal interface is in beta and may change. Regulatory frameworks, approval statuses, and excluded programme lists are subject to revision by UGC. Always verify current information directly on the official portal. EdifyEdu does not earn referral commission from any university mentioned. This guide is for informational purposes and does not constitute legal advice.</em></p>
+    `,
+  },
+  {
+    slug: 'online-mba-scholarship-india-2026',
+    title: 'The Online MBA Scholarship Guide for India: What Actually Exists and How to Verify (2026)',
+    seoTitle: 'Online MBA Scholarship India 2026: Types, Structure, and Verification Guide',
+    h1Title: 'The Online MBA Scholarship Guide for India (2026): Structure, Not Numbers',
+    metaDescription: 'Online MBA scholarship guide India 2026: the seven scholarship types, how waivers actually apply, common traps to confirm before paying, and an 8-point counsellor checklist.',
+    category: 'Fees',
+    tags: ['online mba scholarship', 'mba scholarship india', 'online mba fee waiver', 'online mba discount', 'women in management scholarship', 'defence scholarship mba', 'mba early bird discount', 'corporate scholarship mba'],
+    publishedAt: '2026-07-28',
+    readTime: 12,
+    targetKeyword: 'online mba scholarship india',
+    relatedUniversities: ['amity-university-online', 'jain-university-online', 'lovely-professional-university-online', 'manipal-university-jaipur-online', 'chandigarh-university-online'],
+    status: 'published',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'How much can I save with an online MBA scholarship?', a: 'There is no single answer, and any guide that gives you one is guessing. Scholarship amounts change every intake, vary by university, and depend on your profile. What is stable is the structure: merit, early-bird, defence and PwD, corporate tie-up, alumni or referral, women-specific, and group enrolment. Get the exact number in writing from the university counsellor before you plan around it.' },
+      { q: 'Do all UGC-DEB approved online MBA programmes offer scholarships?', a: 'Most do, but not all offer every category and not in every intake. Availability changes each admission cycle. Ask the counsellor which categories are currently open for your intake, not which have ever existed.' },
+      { q: 'Is the merit scholarship based on my graduation marks or an entrance test?', a: 'It varies. Some universities use graduation aggregate, some use their own entrance test, some use CAT or MAT scores if you have them, and some combine two of these. The eligibility rule is what matters, not the label. Ask the counsellor exactly which number decides your bracket.' },
+      { q: 'If a university advertises a scholarship, does it apply automatically when I pay?', a: 'Not always. Some scholarships are auto-applied against your quoted fee, others require a separate scholarship application form, a document upload, and internal approval before the discount reflects on your invoice. Confirm the application step in writing before you pay.' },
+      { q: 'Do reservation-based fee relaxations count as scholarships?', a: 'No. The 45 percent versus 50 percent graduation marks rule is an admission eligibility relaxation under UGC norms. It affects whether you qualify to enrol. It does not by itself reduce your fee. Fee reductions for reserved categories at any specific university are a separate policy that you have to ask about directly.' },
+      { q: 'Are online MBA scholarships the same as the coupon codes on your coupons page?', a: 'No. Institutional scholarships are set by the university and follow published eligibility rules. Coupons and seasonal offers are limited-window promotional discounts that come and go. Both can reduce your outgo. They are distinct mechanisms and can sometimes stack, sometimes cannot. Check the terms.' },
+      { q: 'Can I lose a scholarship after I enrol?', a: 'Yes, some are conditional. Merit continuation may require you to maintain a semester grade threshold. Some employer or defence-linked waivers require you to remain in that employment or service. Some first-semester waivers do not extend to later semesters. Read the withdrawal condition on the scholarship letter before you accept.' },
+      { q: 'Which online MBA university offers the largest scholarship?', a: 'This is exactly the question we do not answer with a number here, because the number changes every cycle. Give our counsellor your profile (graduation marks, current employer, defence or PwD status, target intake), and we will point you to the current live scholarships you actually qualify for.' }
+    ],
+    ctaTitle: '',
+    ctaDesc: '',
+    content: `
+<p class="byline"><em>By Rishi Kumar, Senior Education Researcher and Founder of edifyedu.in. Published 28 July 2026.</em></p>
+
+<div class="callout-key">
+<strong>How to read this guide:</strong> Scholarships for online MBA in India are real and the categories are structurally consistent across universities. The amounts, cut-offs, and application windows change every intake. This guide covers the structure. For a live figure that applies to your profile, <a href="/contact" class="ilink">talk to our counsellor</a>. We do not take referral commissions from universities, so the number you get is the number the university actually quoted.
+</div>
+
+<p>If you have searched for online MBA scholarships in India, you have probably noticed that most pages either give you a table of exact rupee amounts (usually out of date within a quarter) or refuse to give you anything specific. Neither is useful.</p>
+
+<p>Here is the honest position. Scholarship amounts move every admission cycle. What is stable is the underlying structure: the seven categories of scholarship that recur across UGC-DEB approved online MBA programmes, how those scholarships actually apply to your fee, and the traps that catch enrollees who do not confirm the fine print. That is what this guide covers.</p>
+
+<h2>Why Scholarship Information Is Hard to Find (and Why That Is Not an Accident)</h2>
+
+<p>Most online MBA university websites publish a fee page and a separate scholarship page. The scholarship page is often shorter than the fee page. It lists categories but rarely commits to a specific number, an eligibility cut-off, or a deadline in writing.</p>
+
+<p>The actual scholarship offer usually comes during the counsellor call. This is not because universities are hiding anything. It is because scholarship budgets are decided intake by intake, sometimes in response to enrolment targets, sometimes seasonally, sometimes based on your lead source. The counsellor is the person who knows what is currently open for your admission cycle.</p>
+
+<p>That has two implications. First, any generic online article that quotes an exact rupee figure is quoting a number that was true for one intake and may or may not be true for yours. Second, the value of doing your homework before the counsellor call is not to arrive with a target number in mind. It is to arrive knowing what to ask and what to verify.</p>
+
+<h2>The Seven Scholarship Types in Online MBA</h2>
+
+<p>Across the main UGC-DEB approved online MBA programmes, scholarships tend to fall into seven structural categories. The names vary. Some universities offer four of these, some offer six. Almost none offer all seven.</p>
+
+<h3>1. Merit scholarships</h3>
+
+<p>Awarded on the basis of your academic profile. The measuring stick varies. Some universities use graduation aggregate marks. Some use a proprietary entrance test. Some accept CAT, MAT, or CMAT scores if you have them. Some combine two of these. What matters when you are comparing is which number decides the bracket, not the label on the scholarship.</p>
+
+<h3>2. Early-bird scholarships</h3>
+
+<p>Awarded for applying and paying before a cut-off within the current intake. The cut-off moves every cycle, sometimes by weeks. There is no permanent early-bird deadline for any university. The category is real; the specific deadline is only valid for the intake you are applying to.</p>
+
+<h3>3. Defence, PwD, and serving personnel scholarships</h3>
+
+<p>Available at most major online MBA programmes for defence personnel, their dependents (spouse, children), and candidates with a valid PwD certificate. Some universities extend this to central armed police forces and state police. Documentation is a service certificate, ID card, or the PwD certificate from a competent medical authority.</p>
+
+<h3>4. Corporate tie-up scholarships</h3>
+
+<p>For employees of specific companies that the university has partnered with. If your employer is on the partner list, you qualify. If not, you do not. Ask the counsellor for the current partner list. Do not rely on a partner logo grid that may be years old.</p>
+
+<h3>5. Alumni and referral scholarships</h3>
+
+<p>For candidates referred by an existing student or alumnus of the same university, or in some cases for those who already hold a prior degree from the same institution. The referral typically has to be submitted before you apply, not after.</p>
+
+<h3>6. Women-specific scholarships</h3>
+
+<p>A number of online MBA programmes run scholarships targeted at women applicants, sometimes framed as Women in Management or Women in Leadership programmes. These exist. The eligibility and application process are like any other category-specific scholarship. Ask the counsellor whether a women-specific programme is currently active for your intake, what the eligibility rule is, and whether it can stack with a merit or early-bird waiver.</p>
+
+<h3>7. Group enrolment scholarships</h3>
+
+<p>Available when a minimum number of candidates from the same employer, professional body, or cohort enrol together for the same intake. The minimum group size and the discount mechanic both vary by university.</p>
+
+<h2>How Scholarships Actually Apply to Your Fee</h2>
+
+<p>The category is only half the picture. The other half is the mechanic, meaning how the discount actually shows up on your invoice. There are three common ones. Confirm which one applies to your quoted scholarship, because the effective saving is very different across them.</p>
+
+<h3>Fee waiver</h3>
+
+<p>A direct reduction in the fee you pay. This is the cleanest mechanic. The important sub-question is whether the waiver applies only to your first semester or to the entire programme fee. First-semester-only waivers are common and are not always disclosed as such upfront.</p>
+
+<h3>Cashback</h3>
+
+<p>You pay the full fee, and the scholarship amount is refunded after enrolment, after a specified semester, or after you complete the programme. Cashback tied to programme completion is contingent on you actually finishing on the standard timeline. If you extend, defer, or drop out, the cashback may not apply.</p>
+
+<h3>Instalment relief</h3>
+
+<p>The total fee stays the same, but the payment schedule becomes more forgiving: interest-free EMI, a longer window, or deferred first payment. This is a cashflow benefit, not a discount. It matters if you need it, but treating it as a scholarship inflates the apparent saving.</p>
+
+<h2>Common Traps: Things to Confirm, Not Things to Panic About</h2>
+
+<p>None of what follows means universities are cheating you. It means scholarship offers have fine print, and the fine print is where the effective value lives. Confirm each of these in writing before you pay.</p>
+
+<p><strong>First-semester-only waivers.</strong> A "40 percent scholarship" on a headline is not the same as a 40 percent reduction on your total programme fee if it only applies to the first semester. Ask which semesters the waiver covers.</p>
+
+<p><strong>Waivers contingent on lumpsum payment.</strong> Some scholarships apply only if you pay the full programme fee upfront. If you split into semester payments or take EMI, the scholarship shrinks or disappears. This is a legitimate offer, but the effective discount versus your intended payment mode is what you need to compare.</p>
+
+<p><strong>"Auto-applied" claims that actually need a form.</strong> Some scholarships are described as automatic but require you to submit a scholarship application, upload proof, and get internal approval before the invoice reflects the reduced amount. If you pay the sticker fee expecting a later adjustment, the paperwork can slip.</p>
+
+<p><strong>Discounts pitched against an unverifiable sticker price.</strong> A rupee-value discount is only meaningful against a sticker price you can verify. Ask for the published fee for your intake on the university portal, and calculate the effective fee against that, not against a verbal quote.</p>
+
+<p><strong>Time-boxed urgency pressure.</strong> Genuine early-bird deadlines are real and worth respecting. A "book today or lose the scholarship" pitch that is not tied to a published cut-off should be verified. If it is real, the university will confirm it in writing.</p>
+
+<h2>The 8-Point Counsellor Checklist</h2>
+
+<p>Before you accept any scholarship offer, run through this list on the call and get every answer in writing (email is fine).</p>
+
+<ol>
+  <li><strong>What is the exact rupee value of the scholarship for my profile, and against which sticker fee?</strong> Ask for both numbers, not the percentage.</li>
+  <li><strong>Which semesters does the waiver cover?</strong> First semester only, all semesters, or a specific subset.</li>
+  <li><strong>Is it a fee waiver, cashback, or instalment relief?</strong> If cashback, when is it refunded and under what completion condition.</li>
+  <li><strong>Is it conditional on lumpsum payment, or does it hold across semester payments and EMI?</strong></li>
+  <li><strong>Is a separate scholarship application form required?</strong> If yes, when is it due and what documents.</li>
+  <li><strong>Can I stack multiple scholarships?</strong> For example, a merit waiver plus a defence waiver, or a corporate discount plus an early-bird.</li>
+  <li><strong>What is the withdrawal condition?</strong> If I drop out, defer, or extend the programme, does the scholarship reverse.</li>
+  <li><strong>Can I have all of this on university letterhead or in an email from a verifiable university address before I pay?</strong> A written record is the only version that matters if there is a dispute later.</li>
+</ol>
+
+<h2>Eligibility Relaxation Is Not a Fee Benefit</h2>
+
+<p>This one is worth stating plainly, because it is a source of consistent confusion.</p>
+
+<p>Under UGC norms, the minimum graduation aggregate for admission to a Master's programme is 50 percent, with a 45 percent relaxation for candidates from reserved categories (SC, ST, OBC-NCL where applicable, PwD). This is an <strong>admission eligibility rule</strong>. It decides whether you can enrol.</p>
+
+<p>It is not by itself a fee reduction. Whether a particular online MBA programme offers a fee waiver to reserved-category candidates is a separate institutional policy. Some do, some do not, and the amount and mechanic vary. If a scholarship page or counsellor conflates the two, ask them to separate the eligibility rule from the fee waiver and confirm each independently.</p>
+
+<h2>How to Verify a Scholarship Claim Before Paying</h2>
+
+<p>Three checks. All of them take under an hour.</p>
+
+<p><strong>Get the offer in writing.</strong> Not a screenshot of a website. An email from a verifiable university domain, or a scholarship letter on university letterhead, that names the scholarship, the amount, the mechanic (waiver, cashback, or instalment), the semesters it applies to, and the withdrawal condition.</p>
+
+<p><strong>Cross-check the sticker fee.</strong> Look up the current published fee for your intake on the university's official admissions page, or <a href="/contact" class="ilink">ask our counsellor to confirm it with you</a>. The discount is only meaningful if the sticker matches what the counsellor quoted.</p>
+
+<p><strong>Confirm the payment path.</strong> Ask exactly which fee amount will hit your invoice after the scholarship is applied, and confirm you are paying that reduced number, not the sticker with a promise of later adjustment.</p>
+
+<p>If any of these three checks are refused or delayed past your payment deadline, that is a signal to slow down rather than pay.</p>
+
+<h2>Coupons Versus Scholarships</h2>
+
+<p>These are different and worth keeping separate in your head.</p>
+
+<p><strong>Institutional scholarships</strong> are university-set programmes with published eligibility categories and internal approval. They are the subject of this guide.</p>
+
+<p><strong>Coupons and seasonal offers</strong> are limited-window promotional discounts, sometimes issued by the university and sometimes by aggregator platforms. They come and go quickly. We track currently live offers on the <a href="/coupons" class="ilink">edifyedu.in coupons page</a>. Both mechanisms can reduce your outgo. Whether they stack depends on the university's terms. Ask.</p>
+
+<h2>The Honest Verdict</h2>
+
+<p>Online MBA scholarships are real, meaningful, and worth pursuing. They are also messier than most guides admit. The structure is stable across universities. The specifics change every intake. Anyone who tells you the exact rupee value of a scholarship without knowing your profile and your target intake is guessing.</p>
+
+<p>The right approach is to arrive at the counsellor call knowing the categories, the mechanics, and the questions to ask. Then get the answer specific to your profile in writing, in the current cycle. That is the version of the number that will actually be on your invoice.</p>
+
+<p>Related reading if you are still deciding: our <a href="/blog/mba-fees-india-complete-guide-2026" class="ilink">MBA fees India complete guide</a> covers total-cost breakdowns across tiers. The <a href="/blog/affordable-online-mba-india-2026" class="ilink">affordable online MBA guide</a> ranks programmes by verified fee. If you are still comparing shortlists, see <a href="/blog/best-online-mba-colleges-india-2026" class="ilink">best online MBA colleges in India</a>, and if the decision itself is still open, <a href="/blog/is-online-mba-worth-it-2026" class="ilink">is online MBA worth it in 2026</a> and <a href="/blog/online-mba-for-working-professionals-india" class="ilink">online MBA for working professionals</a> cover the fit question. Returning to work after a gap? <a href="/blog/online-mba-after-career-break-2026" class="ilink">Online MBA after a career break</a> covers the re-entry angle. For accreditation ground-truth, see <a href="/blog/naac-accreditation-explained-grades-india-2026" class="ilink">NAAC accreditation explained</a>.</p>
+
+<div class="cta-box" style="background:#0f172a;color:#fff;border-radius:12px;padding:24px;margin:32px 0;text-align:center">
+  <p style="font-size:18px;font-weight:700;margin:0 0 8px">Get the current scholarship number for your profile</p>
+  <p style="margin:0 0 16px;font-size:14px;opacity:0.9">Share your graduation marks, current employer, and target intake. Our counsellor will point you to the live scholarships you actually qualify for, in writing. No referral commissions. No paid rankings.</p>
+  <a href="/contact" class="ilink" style="display:inline-block;background:#f97316;color:#fff;padding:10px 24px;border-radius:8px;font-weight:700;text-decoration:none">Talk to Our Counsellor</a>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>How much can I save with an online MBA scholarship?</h3>
+<p>There is no single answer, and any guide that gives you one is guessing. Scholarship amounts change every intake, vary by university, and depend on your profile. What is stable is the structure: merit, early-bird, defence and PwD, corporate tie-up, alumni or referral, women-specific, and group enrolment. Get the exact number in writing from the university counsellor before you plan around it.</p>
+
+<h3>Do all UGC-DEB approved online MBA programmes offer scholarships?</h3>
+<p>Most do, but not all offer every category and not in every intake. Availability changes each admission cycle. Ask the counsellor which categories are currently open for your intake, not which have ever existed.</p>
+
+<h3>Is the merit scholarship based on my graduation marks or an entrance test?</h3>
+<p>It varies. Some universities use graduation aggregate, some use their own entrance test, some use CAT or MAT scores if you have them, and some combine two of these. The eligibility rule is what matters, not the label. Ask the counsellor exactly which number decides your bracket.</p>
+
+<h3>If a university advertises a scholarship, does it apply automatically when I pay?</h3>
+<p>Not always. Some scholarships are auto-applied against your quoted fee, others require a separate scholarship application form, a document upload, and internal approval before the discount reflects on your invoice. Confirm the application step in writing before you pay.</p>
+
+<h3>Do reservation-based fee relaxations count as scholarships?</h3>
+<p>No. The 45 percent versus 50 percent graduation marks rule is an admission eligibility relaxation under UGC norms. It affects whether you qualify to enrol. It does not by itself reduce your fee. Fee reductions for reserved categories at any specific university are a separate policy that you have to ask about directly.</p>
+
+<h3>Are online MBA scholarships the same as the coupon codes on your coupons page?</h3>
+<p>No. Institutional scholarships are set by the university and follow published eligibility rules. Coupons and seasonal offers are limited-window promotional discounts that come and go. Both can reduce your outgo. They are distinct mechanisms and can sometimes stack, sometimes cannot. Check the terms.</p>
+
+<h3>Can I lose a scholarship after I enrol?</h3>
+<p>Yes, some are conditional. Merit continuation may require you to maintain a semester grade threshold. Some employer or defence-linked waivers require you to remain in that employment or service. Some first-semester waivers do not extend to later semesters. Read the withdrawal condition on the scholarship letter before you accept.</p>
+
+<h3>Which online MBA university offers the largest scholarship?</h3>
+<p>This is exactly the question we do not answer with a number here, because the number changes every cycle. Give our counsellor your profile (graduation marks, current employer, defence or PwD status, target intake), and we will point you to the current live scholarships you actually qualify for.</p>
+
+<h2>Related Reading</h2>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin:16px 0">
+  <a class="il-card" href="/blog/mba-fees-india-complete-guide-2026">MBA Fees India Complete Guide</a>
+  <a class="il-card" href="/blog/affordable-online-mba-india-2026">Affordable Online MBA India</a>
+  <a class="il-card" href="/blog/best-online-mba-colleges-india-2026">Best Online MBA Colleges</a>
+  <a class="il-card" href="/blog/is-online-mba-worth-it-2026">Is Online MBA Worth It?</a>
+  <a class="il-card" href="/blog/naac-accreditation-explained-grades-india-2026">NAAC Accreditation Explained</a>
+  <a class="il-card" href="/verify">Verify a University</a>
+</div>
+
+<p class="disclaimer"><em>Disclaimer: This guide covers the structure of online MBA scholarships in India as of July 2026. Specific scholarship amounts, eligibility cut-offs, and application windows change every admission cycle and vary by university. All figures should be confirmed with the university in writing before payment. edifyedu.in does not receive referral commissions from any university mentioned. Always verify UGC-DEB approval at deb.ugc.ac.in and talk to our counsellor to confirm current fees before making any payment.</em></p>
     `,
   },
 ]
