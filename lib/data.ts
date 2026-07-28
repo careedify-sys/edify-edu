@@ -307,7 +307,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
           { slug: 'retail-management', name: 'Retail Management' },
           { slug: 'international-finance-acca', name: 'International Finance (ACCA)' },
         ],
-        fees: '₹2.25L',
+        fees: '₹2.07L–₹2.25L',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Executive'],
         avgSalary: '₹5L – ₹12L per annum',
