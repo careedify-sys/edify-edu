@@ -1,4 +1,4 @@
-# Ticket: Blog drift scanner v3 — filter noise, handle entity aliases
+# Ticket: Blog drift scanner v3 — context-word filters + entity disambiguation
 
 **Status:** Open (deferred improvement)
 **Created:** 2026-07-26
