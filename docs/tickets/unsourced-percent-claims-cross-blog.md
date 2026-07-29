@@ -48,24 +48,29 @@ and the **UGC "179% jump 2020-2022" enrolment stat**.
    rather than factual claims; keeping those in scope only if we decide the
    post needs a broader re-audit.)
 
-## Reported propagation to verify (not confirmed on 2026-07-29)
+## Provenance (why this claim has no source)
 
-User reported during the mechanics-pillar review that the completion-rate
-claim from claim (1) above was folded into
-`online-mba-after-career-break-2026` during an earlier consolidation today.
-A grep of that post on 2026-07-29 did **not** find the 60-75/50-60/35-45/25-40
-figures. Every percentage in `online-mba-after-career-break-2026` is
-attributed (Ashoka 49%, GMAC 90%/57%, UGC 45/50 admission cutoff). Two
-possibilities:
-- The claim was staged during consolidation and not landed.
-- The claim landed and was subsequently stripped in a later commit.
+The completion-rate claim in `is-online-mba-worth-it-2026` (claim 1 above)
+was not authored fresh in that post. It was inherited from
+`is-distance-mba-worth-it-india-2026` during consolidation 4 on 2026-07-29,
+which folded the distance-MBA post's content into the online-MBA post. The
+claim carried its lack of sourcing across the merge.
 
-Re-verify propagation before scoping the fix. If the claim is genuinely
-absent from the career-break post, the fix scope is the two posts listed
-above. If it did propagate somewhere the grep missed (different phrasing,
-paraphrase), extend the fix scope accordingly. The pattern of once-drifted
-claims re-appearing in other posts is the underlying reason this ticket
-exists; do not treat the absence of a grep hit as final.
+This is a class of failure worth naming: **consolidation merges can carry
+unsourced claims from weaker posts into stronger ones**, and the stronger
+post inherits the credibility of its new home. A merged claim reads as if
+the merged post authored and vetted it, when in fact neither post ever did.
+
+Add to the consolidation checklist for future merges: for every numeric
+claim in the source post that is not attributed to a named study or dataset,
+either find a source, rewrite qualitatively, or drop before the merge lands.
+Do not let the merge itself be the moment an unsourced claim gets promoted.
+
+An earlier iteration of this ticket speculated the same claim may have
+propagated to `online-mba-after-career-break-2026`. That was incorrect; the
+career-break post's percentages are all attributed (Ashoka 49%, GMAC 90%/57%,
+UGC 45/50). No propagation to that post to fix. The two posts listed above
+are the current fix scope.
 
 ## Fix options
 
