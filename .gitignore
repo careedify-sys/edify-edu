@@ -73,3 +73,7 @@ uni_approvals.json
 ts_errors.txt
 tsc_errors.txt
 .vercel
+
+# CRM lead imports (contain real PII — never commit)
+scripts/leads-import.csv
+scripts/leads-import.*.csv

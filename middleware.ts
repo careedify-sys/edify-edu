@@ -174,7 +174,7 @@ const OLD_SLUG_REDIRECTS: Record<string, string> = {
   'visveswa-technolo-universi': 'vtu-online',
 }
 
-const PROTECTED_PATHS = ['/admin', '/admin/cms', '/blog/write']
+const PROTECTED_PATHS = ['/admin', '/admin/cms', '/blog/write', '/leads']
 const LOGIN_COOKIE = 'edify_admin_session'
 
 // ── Self-healing slug resolver ──────────────────────────────────────────────

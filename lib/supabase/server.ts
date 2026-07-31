@@ -1,6 +1,8 @@
 import { createServerClient } from '@supabase/ssr';
-import { createClient } from '@supabase/supabase-js';
 import { cookies } from 'next/headers';
+
+// Service-role client moved to ./service.ts (server-only) so it can't be
+// bundled into the browser by accident. Import it there directly.
 
 export async function createSupabaseServerClient() {
   const cookieStore = await cookies();
@@ -22,10 +24,3 @@ export async function createSupabaseServerClient() {
   );
 }
 
-export function createSupabaseServiceClient() {
-  return createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.SUPABASE_SERVICE_ROLE_KEY!,
-    { auth: { persistSession: false, autoRefreshToken: false } }
-  );
-}

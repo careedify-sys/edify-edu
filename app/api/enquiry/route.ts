@@ -3,6 +3,7 @@ import { Resend } from 'resend'
 import { validateBody } from '@/lib/validate-body'
 import { UNIVERSITIES } from '@/lib/data'
 import type { University, Program } from '@/lib/data'
+import { createSupabaseServiceClient } from '@/lib/supabase/service'
 
 const escHtml = (s: string = '') => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;')
 
@@ -339,6 +340,75 @@ export async function POST(req: NextRequest) {
           `</td></tr></table>`,
         ].join('\n'),
       }).catch(() => {})
+    }
+
+    // ── 1c. SUPABASE — CRM leads table (source of truth for /leads) ────────
+    // Non-blocking: any Supabase failure is logged but never breaks the
+    // response. Google Sheet write below still runs as a backup.
+    try {
+      const sb = createSupabaseServiceClient()
+      // Canonical phone: 10-digit Indian number → prefix 91.
+      const digits = phone.replace(/\D/g, '')
+      const canonical =
+        digits.length === 10 && /^[6-9]/.test(digits) ? `91${digits}` : digits
+
+      const universityForCrm = universityValue === 'Not specified' ? null : universityValue
+      const programForCrm    = programValue    === 'Not specified' ? null : programValue
+
+      // Try to find an existing lead by canonical phone. If the row was
+      // imported with a different formatting the unique index on
+      // regexp_replace(phone,'[^0-9]','','g') will still block a duplicate
+      // insert — we catch that below and treat it as "already exists".
+      const { data: existing } = await sb
+        .from('leads')
+        .select('id')
+        .eq('phone', canonical)
+        .maybeSingle()
+
+      const leadPayload = {
+        name,
+        phone: canonical,
+        email: email || null,
+        program: programForCrm,
+        university: universityForCrm,
+        source: sourceValue,
+        message: notes || null,
+        preferred_time: bestTimeToCall || null,
+      }
+
+      let leadId: string | null = null
+      if (existing?.id) {
+        leadId = existing.id
+        // Refresh mutable fields on repeat submission. Don't touch stage,
+        // next_call_date, or created_at — those belong to the CRM operator.
+        await sb.from('leads').update(leadPayload).eq('id', existing.id)
+      } else {
+        const { data: inserted, error: insErr } = await sb
+          .from('leads')
+          .insert(leadPayload)
+          .select('id')
+          .single()
+        if (insErr) {
+          // 23505 = unique_violation from the phone-digits index — a row
+          // with a differently formatted phone already exists.
+          if ((insErr as { code?: string }).code !== '23505') {
+            console.error('Supabase insert failed:', insErr)
+          }
+        } else {
+          leadId = inserted?.id ?? null
+        }
+      }
+
+      // Seed the activity timeline with the enquiry note.
+      if (leadId && notes) {
+        await sb.from('lead_activity').insert({
+          lead_id: leadId,
+          type: 'note',
+          remark: `Enquiry: ${notes}`,
+        })
+      }
+    } catch (sbErr) {
+      console.error('Supabase CRM write failed:', sbErr)
     }
 
     // ── 2. GOOGLE SHEETS — Leads Webhook ───────────────────────────────────
