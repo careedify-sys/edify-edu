@@ -110,7 +110,7 @@ export async function GET(req: NextRequest) {
     .join('\n');
 
   const listHtml = due.map(l => {
-    const bits = [l.program, l.university].filter(Boolean).map(escHtml).join(' · ');
+    const bits = [l.program, l.university].filter((x): x is string => !!x).map(escHtml).join(' · ');
     return `<tr>
       <td style="padding:8px 10px;border-bottom:1px solid #e2e8f0;font-size:14px"><b>${escHtml(l.name)}</b><br><span style="color:#64748b;font-size:12px">${escHtml(fmtPhone(l.phone))}</span></td>
       <td style="padding:8px 10px;border-bottom:1px solid #e2e8f0;font-size:13px;color:#334155">${bits || '<span style="color:#94a3b8">—</span>'}</td>

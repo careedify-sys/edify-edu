@@ -161,7 +161,7 @@ async function main() {
   if (dryRun) {
     console.log('Dry run — no writes. Sample first 5 unique leads:')
     let n = 0
-    for (const [phone, rows] of groups) {
+    for (const [phone, rows] of Array.from(groups)) {
       if (n++ >= 5) break
       rows.sort((a, b) => a.timestamp.getTime() - b.timestamp.getTime())
       const first = rows[0]
@@ -176,7 +176,7 @@ async function main() {
   let activityDeduped = 0
   const failures: string[] = []
 
-  for (const [canonical, rows] of groups) {
+  for (const [canonical, rows] of Array.from(groups)) {
     rows.sort((a, b) => a.timestamp.getTime() - b.timestamp.getTime())
     const first = rows[0]
     const last = rows[rows.length - 1]
