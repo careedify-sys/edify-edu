@@ -425,7 +425,10 @@ export function middleware(req: NextRequest) {
   }
 
   // ── 3. Admin auth guard ───────────────────────────────────────────────────
-  const isProtected = PROTECTED_PATHS.some(p => pathname.startsWith(p))
+  // Path-boundary check, not raw startsWith. Without the "/" suffix,
+  // startsWith('/admin') matches /admin-login too, which then redirects to
+  // /admin-login?from=/admin-login and loops forever.
+  const isProtected = PROTECTED_PATHS.some(p => pathname === p || pathname.startsWith(p + '/'))
   if (!isProtected) return NextResponse.next()
 
   if (pathname === '/api/admin-auth') return NextResponse.next()
