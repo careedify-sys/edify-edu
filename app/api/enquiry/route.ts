@@ -365,6 +365,7 @@ export async function POST(req: NextRequest) {
         .eq('phone', canonical)
         .maybeSingle()
 
+      const nowISO = new Date().toISOString()
       const leadPayload = {
         name,
         phone: canonical,
@@ -374,6 +375,9 @@ export async function POST(req: NextRequest) {
         source: sourceValue,
         message: notes || null,
         preferred_time: bestTimeToCall || null,
+        // Always bump last_submitted_at on any /api/enquiry hit so the
+        // "New" tab in the CRM surfaces repeat submissions immediately.
+        last_submitted_at: nowISO,
       }
 
       let leadId: string | null = null

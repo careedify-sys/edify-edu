@@ -61,6 +61,8 @@ export type Lead = {
   next_call_time: string | null;
   created_at: string;
   updated_at: string;
+  last_submitted_at: string;
+  imported: boolean;
 };
 
 // ── saveOutcome ────────────────────────────────────────────────────────────

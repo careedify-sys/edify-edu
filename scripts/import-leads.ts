@@ -186,17 +186,21 @@ async function main() {
       [...rows].reverse().find(r => r[k])?.[k] ?? null
 
     const merged = {
-      name:           last.name,
-      phone:          canonical,
-      email:          pickLatest('email'),
-      program:        pickLatest('program'),
-      university:     pickLatest('university'),
-      source:         first.source ?? null,
-      message:        pickLatest('message'),
-      preferred_time: pickLatest('preferredTime'),
-      stage:          'Fresh' as const,
-      created_at:     first.timestamp.toISOString(),
-      updated_at:     last.timestamp.toISOString(),
+      name:              last.name,
+      phone:             canonical,
+      email:             pickLatest('email'),
+      program:           pickLatest('program'),
+      university:        pickLatest('university'),
+      source:            first.source ?? null,
+      message:           pickLatest('message'),
+      preferred_time:    pickLatest('preferredTime'),
+      stage:             'Fresh' as const,
+      created_at:        first.timestamp.toISOString(),
+      updated_at:        last.timestamp.toISOString(),
+      last_submitted_at: last.timestamp.toISOString(),
+      // CSV imports are the historical backlog — always flagged so the
+      // CRM's New/Fresh working views can exclude them.
+      imported:          true,
     }
 
     const { data: ins, error: insErr } = await sb

@@ -44,7 +44,10 @@
 .leads-scope .tab-accent:hover{background:var(--accent-soft)}
 .leads-scope .tab-accent.on{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent)}
 .leads-scope .tab-accent .c,.leads-scope .tab-accent.on .c{color:var(--accent)}
-/* Divider between the "recency" tabs (New/Today) and the stage tabs */
+/* Backlog tab: muted, sits apart from the working views */
+.leads-scope .tab-muted{color:var(--text-3)}
+.leads-scope .tab-muted.on{background:var(--soft-2);color:var(--text-2);border-color:var(--border-2)}
+/* Divider between tab groups */
 .leads-scope .tab-sep{display:inline-block;width:1px;height:20px;background:var(--border-2);margin:0 4px;align-self:center}
 
 /* NEW badge on rows created in the last 7 days */
