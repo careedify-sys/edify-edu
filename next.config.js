@@ -544,6 +544,9 @@ const nextConfig = {
           { key: 'X-Frame-Options',           value: 'SAMEORIGIN' },
           { key: 'Referrer-Policy',           value: 'strict-origin-when-cross-origin' },
           { key: 'Permissions-Policy',        value: 'camera=(), microphone=(), geolocation=()' },
+          // HSTS: lock browsers to HTTPS for 2 years, include subdomains.
+          // Safe here — edifyedu.in has been HTTPS-only since launch.
+          { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
           {
             key: 'Content-Security-Policy',
             value: [
@@ -564,6 +567,58 @@ const nextConfig = {
         headers: [
           { key: 'X-Robots-Tag',   value: 'noindex' },
           { key: 'Cache-Control',  value: 'no-store' },
+        ],
+      },
+      // ── Admin surfaces: hardest lockdown ────────────────────────────────
+      // X-Frame-Options: DENY  → strictly no framing anywhere (belt to CSP's
+      //   frame-ancestors 'none' braces).
+      // X-Robots-Tag: noindex, nofollow, noarchive → search engines never
+      //   index or cache these pages, even if the meta tag is stripped.
+      // Cache-Control: no-store → prevents shared caches (CDNs, browser
+      //   back-forward, ISP proxies) from holding lead PII or admin state.
+      {
+        source: '/leads',
+        headers: [
+          { key: 'X-Frame-Options',   value: 'DENY' },
+          { key: 'X-Robots-Tag',      value: 'noindex, nofollow, noarchive' },
+          { key: 'Cache-Control',     value: 'no-store, no-cache, must-revalidate, max-age=0' },
+          { key: 'Pragma',            value: 'no-cache' },
+        ],
+      },
+      {
+        source: '/leads/:path*',
+        headers: [
+          { key: 'X-Frame-Options',   value: 'DENY' },
+          { key: 'X-Robots-Tag',      value: 'noindex, nofollow, noarchive' },
+          { key: 'Cache-Control',     value: 'no-store, no-cache, must-revalidate, max-age=0' },
+          { key: 'Pragma',            value: 'no-cache' },
+        ],
+      },
+      {
+        source: '/admin',
+        headers: [
+          { key: 'X-Frame-Options',   value: 'DENY' },
+          { key: 'X-Robots-Tag',      value: 'noindex, nofollow, noarchive' },
+          { key: 'Cache-Control',     value: 'no-store, no-cache, must-revalidate, max-age=0' },
+          { key: 'Pragma',            value: 'no-cache' },
+        ],
+      },
+      {
+        source: '/admin/:path*',
+        headers: [
+          { key: 'X-Frame-Options',   value: 'DENY' },
+          { key: 'X-Robots-Tag',      value: 'noindex, nofollow, noarchive' },
+          { key: 'Cache-Control',     value: 'no-store, no-cache, must-revalidate, max-age=0' },
+          { key: 'Pragma',            value: 'no-cache' },
+        ],
+      },
+      {
+        source: '/admin-login',
+        headers: [
+          { key: 'X-Frame-Options',   value: 'DENY' },
+          { key: 'X-Robots-Tag',      value: 'noindex, nofollow, noarchive' },
+          { key: 'Cache-Control',     value: 'no-store, no-cache, must-revalidate, max-age=0' },
+          { key: 'Pragma',            value: 'no-cache' },
         ],
       },
       {

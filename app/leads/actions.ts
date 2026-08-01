@@ -1,11 +1,31 @@
 'use server';
 // Server actions for the /leads CRM.
-// All mutations go through the service-role client. Auth is already gated
-// by middleware.ts (PROTECTED_PATHS includes /leads), which validates the
-// admin cookie on every action POST as well as page loads.
+// Auth is gated at TWO layers:
+//   1) middleware.ts protects /leads (which is where server actions POST to);
+//   2) requireAdmin() below is called at the top of every action as
+//      defense-in-depth, so a middleware misconfiguration can never leak
+//      lead data or accept mutations.
 
 import { createSupabaseServiceClient } from '@/lib/supabase/service';
 import { revalidatePath } from 'next/cache';
+import { cookies } from 'next/headers';
+import crypto from 'node:crypto';
+
+const SESSION_COOKIE = 'edify_admin_session';
+
+// Returns null on success, or an {ok:false} object that actions can return
+// as-is. Timing-safe compare against ADMIN_SESSION_TOKEN.
+async function requireAdmin(): Promise<{ ok: false; error: string } | null> {
+  const expected = process.env.ADMIN_SESSION_TOKEN;
+  if (!expected) return { ok: false, error: 'Server misconfigured' };
+  const got = (await cookies()).get(SESSION_COOKIE)?.value;
+  if (!got) return { ok: false, error: 'Unauthorized' };
+  const a = Buffer.from(got);
+  const b = Buffer.from(expected);
+  if (a.length !== b.length) return { ok: false, error: 'Unauthorized' };
+  if (!crypto.timingSafeEqual(a, b)) return { ok: false, error: 'Unauthorized' };
+  return null;
+}
 
 export type Stage = 'Fresh' | 'Follow-up' | 'Interested' | 'Next session' | 'Converted' | 'Not interested';
 export type OutcomeKey =
@@ -55,6 +75,7 @@ export async function saveOutcome(input: {
   date: string | null;   // YYYY-MM-DD
   time: string | null;   // HH:MM
 }): Promise<{ ok: true; lead: Lead; activity: Activity } | { ok: false; error: string }> {
+  const guard = await requireAdmin(); if (guard) return guard;
   const sb = createSupabaseServiceClient();
 
   const { data: current, error: readErr } = await sb
@@ -128,6 +149,7 @@ export async function quickSchedule(input: {
   leadId: string;
   chip: 'tomorrow' | 'in3' | 'nextweek' | 'nextsession' | 'none';
 }): Promise<{ ok: true; lead: Lead } | { ok: false; error: string }> {
+  const guard = await requireAdmin(); if (guard) return guard;
   const sb = createSupabaseServiceClient();
   const { data: current, error: readErr } = await sb
     .from('leads').select('*').eq('id', input.leadId).single();
@@ -164,6 +186,7 @@ export async function setNextCall(input: {
   date: string | null;
   time: string | null;
 }): Promise<{ ok: true; lead: Lead } | { ok: false; error: string }> {
+  const guard = await requireAdmin(); if (guard) return guard;
   const sb = createSupabaseServiceClient();
   const patch: Partial<Lead> = { next_call_date: input.date, next_call_time: input.time };
   const { data, error } = await sb.from('leads').update(patch).eq('id', input.leadId).select('*').single();
@@ -178,6 +201,7 @@ export async function updateLeadFields(input: {
   leadId: string;
   patch: Partial<Pick<Lead, 'name' | 'email' | 'city' | 'program' | 'university'>>;
 }): Promise<{ ok: true; lead: Lead } | { ok: false; error: string }> {
+  const guard = await requireAdmin(); if (guard) return guard;
   const sb = createSupabaseServiceClient();
   const { data, error } = await sb.from('leads').update(input.patch).eq('id', input.leadId).select('*').single();
   if (error) return { ok: false, error: error.message };
