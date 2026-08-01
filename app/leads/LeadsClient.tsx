@@ -206,8 +206,9 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
     for (const a of initialActivity) (m[a.lead_id] ||= []).push(a);
     return m;
   });
-  const [filter, setFilter] = useState<'today' | 'all' | Stage>('today');
+  const [filter, setFilter] = useState<'new' | 'today' | 'all' | Stage>('new');
   const [search, setSearch] = useState('');
+  const [page, setPage] = useState(0);
   const [selId, setSelId] = useState<string | null>(initialLeads[0]?.id ?? null);
   const [waMode, setWaMode] = useState<TplKey | null>(null);
   const [capture, setCapture] = useState<OutcomeKey | null>(null);
@@ -224,17 +225,27 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
   }, []);
 
   // ── derived ────────────────────────────────────────────────────────────
+  // "Today" is now strictly the call queue — active leads with a scheduled
+  // next-call date that's today or earlier. Dropped the old "Fresh with no
+  // calls → Today" branch because it flooded Today with the 214 imported
+  // leads. Those now surface via the New tab (last 7 days by created_at).
   const isTodayLead = useCallback((l: Lead) => {
     if (l.stage === 'Converted' || l.stage === 'Not interested' || l.stage === 'Next session') return false;
-    const calls = (activityByLead[l.id] || []).filter(a => a.type === 'call').length;
-    if (calls === 0) return true;                                    // Fresh with no calls → today
     if (!l.next_call_date) return false;
-    return daysUntil(l.next_call_date) <= 0;                          // due today or overdue
-  }, [activityByLead]);
+    return daysUntil(l.next_call_date) <= 0;
+  }, []);
+
+  // "New" = created within the last 7 days. Catches website-form submissions
+  // and separates them from the old backlog. Also drives the NEW badge on rows.
+  const NEW_WINDOW_MS = 7 * 86400000;
+  const isNewLead = useCallback((l: Lead) => {
+    return Date.now() - new Date(l.created_at).getTime() <= NEW_WINDOW_MS;
+  }, [NEW_WINDOW_MS]);
 
   const visible = useMemo(() => {
     let v = leads.slice();
-    if (filter === 'today') v = v.filter(isTodayLead);
+    if (filter === 'new') v = v.filter(isNewLead);
+    else if (filter === 'today') v = v.filter(isTodayLead);
     else if (filter !== 'all') v = v.filter(l => l.stage === filter);
     const q = search.trim().toLowerCase();
     if (q) {
@@ -243,10 +254,25 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
         l.phone.replace(/\D/g, '').includes(q.replace(/\D/g, ''))
       );
     }
-    const sortKey = (l: Lead) => l.next_call_date ? daysUntil(l.next_call_date) : 999;
-    v.sort((a, b) => sortKey(a) - sortKey(b));
+    if (filter === 'new') {
+      // Newest first for the New tab.
+      v.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
+    } else {
+      const sortKey = (l: Lead) => l.next_call_date ? daysUntil(l.next_call_date) : 999;
+      v.sort((a, b) => sortKey(a) - sortKey(b));
+    }
     return v;
-  }, [leads, filter, search, isTodayLead]);
+  }, [leads, filter, search, isTodayLead, isNewLead]);
+
+  // Pagination: 50 per page. Reset to page 0 whenever the filter or search
+  // changes so we don't show an empty page after narrowing the list.
+  const PAGE_SIZE = 50;
+  useEffect(() => { setPage(0); }, [filter, search]);
+  const totalPages = Math.max(1, Math.ceil(visible.length / PAGE_SIZE));
+  const currentPage = Math.min(page, totalPages - 1);
+  const pageStart = currentPage * PAGE_SIZE;
+  const pageEnd = Math.min(pageStart + PAGE_SIZE, visible.length);
+  const pageSlice = visible.slice(pageStart, pageEnd);
 
   const selLead = useMemo(() => leads.find(l => l.id === selId) || null, [leads, selId]);
   const selActivity = useMemo(
@@ -256,6 +282,7 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
 
   const stageCount = useCallback((s: Stage) => leads.filter(l => l.stage === s).length, [leads]);
   const todayCount = useMemo(() => leads.filter(isTodayLead).length, [leads, isTodayLead]);
+  const newCount = useMemo(() => leads.filter(isNewLead).length, [leads, isNewLead]);
   const convPct = leads.length ? Math.round((stageCount('Converted') / leads.length) * 100) : 0;
 
   // ── keyboard ───────────────────────────────────────────────────────────
@@ -367,7 +394,9 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
       </div>
 
       <div className="tabs">
+        <TabBtn label="New"            count={newCount}                  on={filter==='new'}           onClick={()=>setFilter('new')} accent />
         <TabBtn label="Today"          count={todayCount}                on={filter==='today'}         onClick={()=>setFilter('today')} />
+        <span className="tab-sep" aria-hidden />
         <TabBtn label="All"            count={leads.length}              on={filter==='all'}           onClick={()=>setFilter('all')} />
         <TabBtn label="Fresh"          count={stageCount('Fresh')}       on={filter==='Fresh'}         onClick={()=>setFilter('Fresh')} />
         <TabBtn label="Follow-up"      count={stageCount('Follow-up')}   on={filter==='Follow-up'}     onClick={()=>setFilter('Follow-up')} />
@@ -389,10 +418,11 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
           {visible.length === 0 ? (
             <div className="empty">No leads here. Try another filter.</div>
           ) : (
-            visible.map(l => {
+            pageSlice.map(l => {
               const di = dueInfo(l);
               const nx = l.stage === 'Next session' ? 'Next yr' : di.t;
               const sel = l.id === selId;
+              const isNew = isNewLead(l);
               return (
                 <div
                   key={l.id}
@@ -402,7 +432,10 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
                   <div className="c-name">
                     <span className="dot" style={{ background: DOT[l.stage] }} />
                     <div className="nm">
-                      <div className="n1">{l.name}</div>
+                      <div className="n1">
+                        {l.name}
+                        {isNew && <span className="new-badge" title="Created in the last 7 days">NEW</span>}
+                      </div>
                       <div className="n2 num">{fmtPhone(l.phone)}</div>
                     </div>
                   </div>
@@ -417,8 +450,30 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
           )}
 
           <div className="pager">
-            <span>{visible.length} shown</span>
-            <span>Sorted by next call</span>
+            <span>
+              {visible.length === 0
+                ? '0 shown'
+                : `${pageStart + 1}–${pageEnd} of ${visible.length}`}
+              {' · '}
+              {filter === 'new' ? 'Sorted by newest' : 'Sorted by next call'}
+            </span>
+            {totalPages > 1 && (
+              <span className="page-nav">
+                <button
+                  className="page-btn"
+                  onClick={() => setPage(p => Math.max(0, p - 1))}
+                  disabled={currentPage === 0}
+                  aria-label="Previous page"
+                >← Prev</button>
+                <span className="page-of">Page {currentPage + 1} of {totalPages}</span>
+                <button
+                  className="page-btn"
+                  onClick={() => setPage(p => Math.min(totalPages - 1, p + 1))}
+                  disabled={currentPage >= totalPages - 1}
+                  aria-label="Next page"
+                >Next →</button>
+              </span>
+            )}
           </div>
         </div>
 
@@ -732,9 +787,9 @@ function CaptureForm({ lead, outcome, onSave, onCancel }: {
   );
 }
 
-function TabBtn({ label, count, on, onClick }: { label: string; count: number; on: boolean; onClick: () => void }) {
+function TabBtn({ label, count, on, onClick, accent }: { label: string; count: number; on: boolean; onClick: () => void; accent?: boolean }) {
   return (
-    <button className={`tab${on ? ' on' : ''}`} onClick={onClick} style={{ background: 'transparent', border: 'none', font: 'inherit' }}>
+    <button className={`tab${on ? ' on' : ''}${accent ? ' tab-accent' : ''}`} onClick={onClick} style={{ background: 'transparent', border: 'none', font: 'inherit' }}>
       {label} <span className="c num">· {count}</span>
     </button>
   );
