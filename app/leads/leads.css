@@ -31,6 +31,12 @@
 .leads-scope .search svg{color:var(--text-3);flex-shrink:0}
 .leads-scope .secure{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text-3);margin-left:auto}
 .leads-scope .secure svg{color:var(--accent)}
+.leads-scope .logout-btn{
+  font:inherit;font-size:12px;padding:5px 11px;border-radius:8px;
+  border:1px solid var(--border-2);background:var(--surface);color:var(--text-2);cursor:pointer;
+}
+.leads-scope .logout-btn:hover:not(:disabled){background:var(--soft);color:var(--text);border-color:var(--text-3)}
+.leads-scope .logout-btn:disabled{opacity:.5;cursor:default}
 
 .leads-scope .tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
 .leads-scope .tab{font-size:13px;padding:6px 13px;border-radius:20px;color:var(--text-2);cursor:pointer;

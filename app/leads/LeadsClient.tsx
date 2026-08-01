@@ -224,6 +224,19 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
     toastTimer.current = setTimeout(() => setToast(null), 3200);
   }, []);
 
+  const [loggingOut, setLoggingOut] = useState(false);
+  const handleLogout = useCallback(async () => {
+    setLoggingOut(true);
+    try {
+      // Server-side cookie clear (both session + any pending OTP).
+      await fetch('/api/admin-auth', { method: 'DELETE' });
+    } catch {
+      /* even on network failure we redirect — middleware will re-gate */
+    }
+    // Hard redirect so the page refetches without stale in-memory state.
+    window.location.href = '/admin-login';
+  }, []);
+
   // ── derived ────────────────────────────────────────────────────────────
   // "Today" is now strictly the call queue — active leads with a scheduled
   // next-call date that's today or earlier. Dropped the old "Fresh with no
@@ -399,6 +412,14 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
           />
         </div>
         <span className="secure">{iLock} Secure · Rishi</span>
+        <button
+          className="logout-btn"
+          onClick={handleLogout}
+          disabled={loggingOut}
+          title="Sign out and clear session"
+        >
+          {loggingOut ? 'Signing out…' : 'Log out'}
+        </button>
       </div>
 
       <div className="tabs">
