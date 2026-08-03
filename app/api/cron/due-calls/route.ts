@@ -49,11 +49,12 @@ export async function GET(req: NextRequest) {
   const sb = createSupabaseServiceClient();
 
   // Pull every "active" lead (small enough set to filter in memory).
-  // Active = not Converted, not Not-interested, not Next-session.
+  // Active = not Enrolled, not Not-interested, not Next-session. Registered
+  // stays active because payment often needs a follow-up call.
   const { data: leadsData, error: leadsErr } = await sb
     .from('leads')
     .select('id,name,phone,program,university,stage,next_call_date,next_call_time,created_at')
-    .not('stage', 'in', '("Converted","Not interested","Next session")');
+    .not('stage', 'in', '("Enrolled","Not interested","Next session")');
   if (leadsErr) {
     return NextResponse.json({ error: `leads query: ${leadsErr.message}` }, { status: 500 });
   }

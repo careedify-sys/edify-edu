@@ -40,7 +40,10 @@ const DOT: Record<Stage, string> = {
   'Fresh':          '#9AA0A6',
   'Follow-up':      'var(--amber-dot)',
   'Interested':     'var(--accent)',
-  'Converted':      'var(--accent)',
+  // Registered = form filled, fees pending. Softer green than Enrolled.
+  'Registered':     '#4d9d7f',
+  // Enrolled = paid, real conversion. The strongest green in the palette.
+  'Enrolled':       'var(--accent)',
   'Next session':   'var(--blue)',
   'Not interested': '#B7BCC3',
 };
@@ -75,8 +78,12 @@ const OUT: Record<OutcomeKey, OutcomeDef> = {
                       noteLbl: 'Follow-up remarks', place: "what's still pending" },
   'Next session':   { kind: 'talk', stage: 'Next session', intake: true, chipCls: 'session',
                       noteLbl: 'Note — which intake & why', place: 'e.g. wants Jan 2027, needs time' },
-  'Converted':      { kind: 'talk', stage: 'Converted', none: true, chipCls: 'good',
-                      noteLbl: 'Remarks — university, payment, etc.', place: 'how it closed' },
+  'Registered':     { kind: 'talk', stage: 'Registered', keepSched: true, chipCls: 'good',
+                      noteLbl: 'Registered — note & any next step',
+                      place: 'e.g. admission form done, payment pending until Aug 15' },
+  'Enrolled':       { kind: 'talk', stage: 'Enrolled', none: true, chipCls: 'good',
+                      noteLbl: 'Enrolled — university, amount, date',
+                      place: 'e.g. Amity MBA · ₹1.2L paid on 2026-08-05' },
   'Not interested': { kind: 'talk', stage: 'Not interested', none: true, reason: true, chipCls: 'bad',
                       noteLbl: 'Remarks', place: 'anything to remember' },
   'Add note':       { kind: 'note', keepSched: true, noAdvance: true, noteLbl: 'Your note', place: 'jot anything about this lead' },
@@ -89,7 +96,7 @@ function addDaysISO(n: number) {
 }
 
 function dueInfo(l: Lead): { t: string; sub: string; over: boolean; none?: boolean } {
-  if (l.stage === 'Converted' || l.stage === 'Not interested') return { t: '—', sub: '', over: false, none: true };
+  if (l.stage === 'Enrolled' || l.stage === 'Not interested') return { t: '—', sub: '', over: false, none: true };
   if (l.stage === 'Next session') return { t: 'Next session', sub: l.next_call_date ? fmtNice(l.next_call_date) : 'next cycle', over: false };
   if (!l.next_call_date) return { t: 'Not scheduled', sub: '', over: false, none: true };
   const d = daysUntil(l.next_call_date);
@@ -243,7 +250,7 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
   // calls → Today" branch because it flooded Today with the 214 imported
   // leads. Those now surface via the New tab (last 7 days by created_at).
   const isTodayLead = useCallback((l: Lead) => {
-    if (l.stage === 'Converted' || l.stage === 'Not interested' || l.stage === 'Next session') return false;
+    if (l.stage === 'Enrolled' || l.stage === 'Not interested' || l.stage === 'Next session') return false;
     if (!l.next_call_date) return false;
     return daysUntil(l.next_call_date) <= 0;
   }, []);
@@ -304,7 +311,10 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
   const todayCount   = useMemo(() => leads.filter(isTodayLead).length, [leads, isTodayLead]);
   const newCount     = useMemo(() => leads.filter(isNewLead).length, [leads, isNewLead]);
   const backlogCount = useMemo(() => leads.filter(l => l.imported).length, [leads]);
-  const convPct = leads.length ? Math.round((stageCount('Converted') / leads.length) * 100) : 0;
+  // "Conversion" is fees-paid = Enrolled. Registered doesn't count — that's
+  // deliberate; the tab count next to Registered surfaces the partial-win
+  // pipeline separately.
+  const convPct = leads.length ? Math.round((stageCount('Enrolled') / leads.length) * 100) : 0;
 
   // ── keyboard ───────────────────────────────────────────────────────────
   useEffect(() => {
@@ -328,7 +338,7 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
       const map: Record<string, OutcomeKey> = {
         '1': 'Interested', '2': 'Follow-up', '3': 'No answer', '4': 'Callback', '5': 'Not interested',
       };
-      if (map[e.key] && selLead && selLead.stage !== 'Converted' && selLead.stage !== 'Not interested') {
+      if (map[e.key] && selLead && selLead.stage !== 'Enrolled' && selLead.stage !== 'Not interested') {
         setCapture(prev => prev === map[e.key] ? null : map[e.key]);
       }
     };
@@ -431,7 +441,8 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
         <TabBtn label="Follow-up"      count={stageCount('Follow-up')}   on={filter==='Follow-up'}     onClick={()=>setFilter('Follow-up')} />
         <TabBtn label="Interested"     count={stageCount('Interested')}  on={filter==='Interested'}    onClick={()=>setFilter('Interested')} />
         <TabBtn label="Next session"   count={stageCount('Next session')}on={filter==='Next session'}  onClick={()=>setFilter('Next session')} />
-        <TabBtn label="Converted"      count={stageCount('Converted')}   on={filter==='Converted'}     onClick={()=>setFilter('Converted')} />
+        <TabBtn label="Registered"     count={stageCount('Registered')}  on={filter==='Registered'}    onClick={()=>setFilter('Registered')} />
+        <TabBtn label="Enrolled"       count={stageCount('Enrolled')}    on={filter==='Enrolled'}      onClick={()=>setFilter('Enrolled')} />
         <TabBtn label="Not interested" count={stageCount('Not interested')} on={filter==='Not interested'} onClick={()=>setFilter('Not interested')} />
         <span className="tab-sep" aria-hidden />
         <TabBtn label="Backlog"        count={backlogCount}              on={filter==='backlog'}       onClick={()=>setFilter('backlog')} muted />
@@ -564,11 +575,14 @@ function DetailPane(props: {
 }) {
   const { lead: l, activity, progUnis, waMode, setWaMode, capture, setCapture, showUniSel, setShowUniSel } = props;
   const stageCls = l.stage === 'Interested' ? 'interested'
-    : l.stage === 'Converted' ? 'converted'
+    : l.stage === 'Enrolled' ? 'enrolled'
+    : l.stage === 'Registered' ? 'registered'
     : l.stage === 'Next session' ? 'session' : '';
   const di = dueInfo(l);
   const tpl = templates(l);
-  const canCall = l.stage !== 'Converted' && l.stage !== 'Not interested';
+  // Registered leads can still be called (chasing payment). Only Enrolled
+  // and Not interested truly close the line.
+  const canCall = l.stage !== 'Enrolled' && l.stage !== 'Not interested';
   const wa = waDigits(l.phone);
   const lastNote = [...activity].reverse().find(a => a.remark)?.remark || l.message;
 
@@ -702,7 +716,8 @@ function DetailPane(props: {
           <button className={`chip good${capture==='Interested'?' on':''}`}       onClick={() => setCapture(capture==='Interested'?null:'Interested')}>Interested</button>
           <button className={`chip${capture==='Follow-up'?' on':''}`}             onClick={() => setCapture(capture==='Follow-up'?null:'Follow-up')}>Follow-up</button>
           <button className={`chip session${capture==='Next session'?' on':''}`}  onClick={() => setCapture(capture==='Next session'?null:'Next session')}>Next session</button>
-          <button className={`chip good${capture==='Converted'?' on':''}`}        onClick={() => setCapture(capture==='Converted'?null:'Converted')}>Converted ✓</button>
+          <button className={`chip good${capture==='Registered'?' on':''}`}       onClick={() => setCapture(capture==='Registered'?null:'Registered')}>Registered</button>
+          <button className={`chip good${capture==='Enrolled'?' on':''}`}         onClick={() => setCapture(capture==='Enrolled'?null:'Enrolled')}>Enrolled ✓</button>
           <button className={`chip bad${capture==='Not interested'?' on':''}`}    onClick={() => setCapture(capture==='Not interested'?null:'Not interested')}>Not interested</button>
         </div>
         <button className="addnote" onClick={() => setCapture(capture==='Add note'?null:'Add note')}>{iPlus} Add a note without a call</button>
@@ -715,7 +730,7 @@ function DetailPane(props: {
           ? <div style={{ fontSize: 12, color: 'var(--text-3)' }}>Nothing logged yet.</div>
           : activity.map(a => {
               const isNote = a.type === 'note';
-              const ok = a.outcome && ['Interested','Converted','Follow-up'].includes(a.outcome);
+              const ok = a.outcome && ['Interested','Registered','Enrolled','Follow-up'].includes(a.outcome);
               const bad = a.outcome === 'Not interested';
               const blue = a.outcome === 'Next session';
               const cl = isNote ? 'n' : ok ? 'g' : bad ? 'r' : blue ? 'b' : 'm';

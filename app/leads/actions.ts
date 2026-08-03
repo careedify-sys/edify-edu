@@ -27,10 +27,10 @@ async function requireAdmin(): Promise<{ ok: false; error: string } | null> {
   return null;
 }
 
-export type Stage = 'Fresh' | 'Follow-up' | 'Interested' | 'Next session' | 'Converted' | 'Not interested';
+export type Stage = 'Fresh' | 'Follow-up' | 'Interested' | 'Next session' | 'Registered' | 'Enrolled' | 'Not interested';
 export type OutcomeKey =
   | 'No answer' | 'Busy' | 'Callback'
-  | 'Interested' | 'Follow-up' | 'Next session' | 'Converted' | 'Not interested'
+  | 'Interested' | 'Follow-up' | 'Next session' | 'Registered' | 'Enrolled' | 'Not interested'
   | 'Add note';
 
 export type Activity = {
@@ -111,7 +111,8 @@ export async function saveOutcome(input: {
     'Interested':     'Interested',
     'Follow-up':      'Follow-up',
     'Next session':   'Next session',
-    'Converted':      'Converted',
+    'Registered':     'Registered',
+    'Enrolled':       'Enrolled',
     'Not interested': 'Not interested',
   };
   if (STAGE_FROM_OUTCOME[input.outcome]) {
@@ -122,9 +123,16 @@ export async function saveOutcome(input: {
   }
 
   // Next-call update.
-  if (input.outcome === 'Converted' || input.outcome === 'Not interested') {
+  // Final states clear the next call. Enrolled + Not interested are final.
+  // Registered is not final — student may still need follow-up for payment,
+  // so leave existing next_call_date alone unless the user picked a new one.
+  if (input.outcome === 'Enrolled' || input.outcome === 'Not interested') {
     patch.next_call_date = null;
     patch.next_call_time = null;
+  } else if (input.outcome === 'Registered') {
+    // keepSched: touch next_call only if user set one in the capture form
+    if (input.date) patch.next_call_date = input.date;
+    if (input.time) patch.next_call_time = input.time;
   } else if (isNote) {
     // note-only: leave next_call untouched, unless date was explicitly set.
     if (input.date) patch.next_call_date = input.date;
