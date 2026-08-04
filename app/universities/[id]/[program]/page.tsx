@@ -60,8 +60,8 @@ export async function generateMetadata(
   let description = fee.ok
     ? `${titleName} Online ${program} ${year}: ${fee.compact} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. See honest review and syllabus.`
     : `${titleName} Online ${program} ${year}: ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved.`
-  if (description.length < 150) {
-    description = `${titleName} Online ${program} ${year}: ${fees} fees, ${specCount}+ specs, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Check verified syllabus, placement data & honest review free at EdifyEdu.`
+  if (fee.ok && description.length < 150) {
+    description = `${titleName} Online ${program} ${year}: ${fee.compact} fees, ${specCount}+ specs, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Check verified syllabus, placement data and honest review free at edifyedu.in.`
   }
   description = clampDescription(description)
 
