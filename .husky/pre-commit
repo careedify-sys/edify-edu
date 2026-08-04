@@ -1,0 +1,18 @@
+#!/bin/sh
+# Pre-commit checks for edifyedu.in. Committed to the repo so hooks survive a
+# fresh clone. Activated by "npm install" via the package.json prepare script,
+# which sets: git config core.hooksPath .husky
+
+echo "pre-commit: verify-fees"
+node scripts/verify-fees.js || exit 1
+
+echo "pre-commit: check-em-dash"
+node scripts/check-em-dash.js || exit 1
+
+# Sprint 2 Phase A: rising-count gate on getDisplayFee suppressions.
+# Blocks any commit that raises the mismatch total above the baseline in
+# data/fee-mismatch-baseline.json. Baseline is auto-updated on decrease.
+echo "pre-commit: check-fee-baseline"
+node scripts/check-fee-baseline.mjs || exit 1
+
+echo "pre-commit: all checks passed"
