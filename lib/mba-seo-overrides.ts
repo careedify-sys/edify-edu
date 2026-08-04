@@ -17,11 +17,14 @@ export interface MBASeoOverride {
 }
 
 export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
+  // Amity: data.ts:276 feeMin=207000, data.ts:277 feeMax=225000
+  // Sprint 1 FIX 5: previous title (87 chars) overflowed SERP cap. Rewritten
+  // to the fee-led pattern used for the other Sprint 1 overrides, under 60c.
   'amity-university-online': {
-    title: 'Amity Online MBA 2026: Fees ₹2,07,000, 19 Specializations, NAAC A+ Review | edifyedu.in',
-    description: 'Amity University online MBA fees start at ₹2,07,000 total (₹8,906/mo EMI). 19 specializations. WASC + QAA accredited. Honest comparison vs NMIMS and Symbiosis. No commission advice.',
+    title: 'Amity Online MBA Fees 2026: ₹2.07L-₹2.25L | edifyedu.in',
+    description: 'Amity University online MBA fees ₹2,07,000 to ₹2,25,000 total (₹8,906/mo EMI). 19 specializations, NAAC A+, WASC and QAA accredited. UGC-DEB approved. Zero-commission, verified fee data.',
     h1: 'Amity University Online MBA 2026: Fees, Specializations, and Honest Review',
-    intro: 'Amity University online MBA is among India\'s most recognized distance programs, with fees of ₹2,07,000 total over two years. The program holds NAAC A+ accreditation and UGC-DEB approval, covering 19 specializations from Finance to Business Analytics. Amity online MBA fees are payable in semester installments, with EMI from ₹8,906 per month. International accreditations from WASC and QAA strengthen the degree for candidates targeting global employers. edifyedu.in compares Amity online MBA fees against NMIMS, Symbiosis, and other approved universities using public data only.',
+    intro: 'Amity University online MBA total fees range from ₹2,07,000 to ₹2,25,000 over two years, with EMI from ₹8,906 per month. The programme holds NAAC A+ accreditation and UGC-DEB approval, covering 19 specializations from Finance to Business Analytics. International accreditations from WASC and QAA strengthen the degree for candidates targeting global employers. edifyedu.in compares Amity online MBA fees against NMIMS, Symbiosis, and other approved universities using public data only.',
   },
   'lovely-professional-university-online': {
     title: 'LPU Online MBA 2026: Fees, Specializations, NAAC A++ Review | edifyedu.in',
