@@ -39,7 +39,7 @@ export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; gr
   ],
   'ignou-online-mba-review-2026': [
     { label: 'Total Fee',         value: '₹66,000' },
-    { label: 'Per Semester',      value: '₹14–16K' },
+    { label: 'Per Semester',      value: 'Confirmed by counsellor' },
     { label: 'Duration',          value: '2 to 4 Years' },
     { label: 'Mode',              value: 'Online (MBAOL)' },
     { label: 'Specialisations',   value: '5' },

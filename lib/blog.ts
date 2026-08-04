@@ -1632,12 +1632,12 @@ export const BLOG_POSTS: BlogPost[] = [
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     heroImageAlt: 'Young woman using laptop for studying, displaying focused expression and engaged posture.',
     faqs: [
-      { q: 'What are IGNOU Online MBA fees 2026?', a: 'IGNOU Online MBA total fee for 2026 is ₹66,000 for the full programme, paid as ₹14,000 each for semesters 1, 2, and 4, plus ₹16,000 for semester 3. Examination fees are charged separately. IGNOU is among the most affordable online MBAs in India by a wide margin.' },
+      { q: 'What are IGNOU Online MBA fees 2026?', a: 'IGNOU Online MBA total fee for 2026 is ₹66,000 for the full programme. Examination fees are charged separately. Semester-wise payment structure confirmed by our counsellor. IGNOU is among the most affordable online MBAs in India by a wide margin.' },
       { q: 'Is IGNOU Online MBA AICTE approved?', a: 'Yes. IGNOU\'s Online MBA is AICTE recognised. IGNOU itself is a central open university established by an Act of Parliament, and is funded by the UGC and Ministry of Education. The online MBA degree is fully recognised for jobs, higher education, and competitive exams.' },
       { q: 'What is the eligibility for IGNOU Online MBA?', a: 'Bachelor\'s degree in any discipline from a recognised university with minimum 50 percent aggregate (45 percent for reserved category). The programme is open to both fresh graduates and working professionals.' },
       { q: 'How long does IGNOU Online MBA take?', a: 'IGNOU Online MBA can be completed in a minimum of 2 years and a maximum of 4 years. This flexible window is one of the key advantages for working professionals who may need extra time to balance studies with their job.' },
       { q: 'Is online MBA from IGNOU valid?', a: 'Yes. IGNOU is a central university and its online MBA is UGC-DEB approved, making the degree valid for government jobs, higher studies, and private sector roles across India.' },
-      { q: 'What is the fee structure of IGNOU online MBA?', a: 'Total fee is ₹66,000 for the full programme: ₹14,000 each for semesters 1, 2, and 4, plus ₹16,000 for semester 3. This makes it the cheapest UGC-approved online MBA in India. Talk to our counsellor to confirm the current cycle\'s schedule.' },
+      { q: 'What is the fee structure of IGNOU online MBA?', a: 'Total fee is ₹66,000 for the full programme. Semester-wise payment structure confirmed by our counsellor. This makes it the cheapest UGC-approved online MBA in India.' },
       { q: 'Which MBA specialisation is best in IGNOU?', a: 'There is no single best. Finance and Marketing have the widest job market, HR suits people-facing roles, and Operations fits manufacturing and logistics careers. Choose based on your current experience and target role, not popularity.' }
     ],
     ctaTitle: '',
@@ -1673,7 +1673,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Fees</h2>
 
-<p>Total fee is Rs 66,000 for the full two-year program. Semester 1, 2, and 4 cost Rs 14,000 each. Semester 3 costs Rs 16,000 as it includes the project course. Exam fees are charged separately each semester and are not included in this total.</p>
+<p>Total fee is Rs 66,000 for the full two-year program. Semester-wise payment structure confirmed by our counsellor. Exam fees are charged separately each semester and are not included in this total.</p>
 
 <div class="emi-block">No EMI or scholarship schemes are available for IGNOU MBAOL. The low fee itself is the benefit. Exam fees charged separately each semester. Re-registration fee is Rs 300 per cycle. For comparison: Amity charges ₹2,07,000 (one-time) or ₹8,906/mo EMI. NMIMS charges Rs 1,96,000. Symbiosis charges ₹3,70,000.</div>
 
