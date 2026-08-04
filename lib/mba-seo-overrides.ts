@@ -42,12 +42,13 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
   // Sprint 1: fee-led rewrites for the 5 fee-stripping overrides + CU MBA reconciliation.
   // Fee numbers below come from lib/data.ts feeMin/feeMax as annotated.
 
-  // Galgotias: data.ts:1252 feeMin=76200, data.ts:1253 feeMax=86400
+  // Galgotias: data.ts:1252 feeMin=76200 (backed by pd.fees "₹76.2K"),
+  // feeMax=86400 (NOT backed by pd.fees, therefore "From" framing).
   'galgotias-university-online': {
-    title: 'Galgotias MBA Fees 2026: ₹76K-₹86K Total | edifyedu.in',
-    description: 'Galgotias University online MBA fees ₹76,200 to ₹86,400 total (₹3,175/mo EMI). NAAC A+, UGC-DEB approved. Zero-commission, verified fee data. Compare vs Sharda, LPU, Chandigarh before you enrol.',
+    title: 'Galgotias Online MBA Fees 2026: From ₹76,200 | edifyedu.in',
+    description: 'Galgotias University online MBA fees from ₹76,200 (₹3,175/mo EMI). NAAC A+, UGC-DEB approved. Zero-commission, verified fee data. Compare vs Sharda, LPU, Chandigarh before you enrol.',
     h1: 'Galgotias University Online MBA 2026: Fees, Review, and Specializations',
-    intro: 'Galgotias University online MBA total fees range from ₹76,200 to ₹86,400 across two years, one of the more affordable options for candidates comparing online MBA programs in North India. The program is UGC-DEB approved and NAAC A+ accredited, delivered from Greater Noida with EMI plans from ₹3,175 per month. Specializations span Finance, Marketing, HR, Operations, and Business Analytics. edifyedu.in compares Galgotias MBA fees and accreditation status against Sharda, LPU, and Chandigarh University using public UGC-DEB data only, with no paid rankings.',
+    intro: 'Galgotias University online MBA total fees start from ₹76,200, one of the more affordable options for candidates comparing online MBA programs in North India. The programme is UGC-DEB approved and NAAC A+ accredited, delivered from Greater Noida with EMI plans from ₹3,175 per month. Specialisations span Finance, Marketing, HR, Operations, and Business Analytics. edifyedu.in compares Galgotias MBA fees and accreditation status against Sharda, LPU, and Chandigarh University using public UGC-DEB data only.',
   },
 
   // JAIN: data.ts:168 feeMin=160000, data.ts:169 feeMax=196000
@@ -59,16 +60,17 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
     intro: 'Jain (Deemed-to-be) University online MBA total fees range from ₹1,60,000 to ₹1,96,000 depending on specialization, spread across four semesters with EMI options through NBFC partners. The programme is NAAC A++ accredited with UGC-DEB approval for its distance format. Specializations include Finance, Marketing, HR, and Business Analytics, plus dual-specialisation tracks that combine two domains in one degree. edifyedu.in reviews Jain University online MBA fees using only public regulatory and NIRF data, with no paid ranking influence.',
   },
 
-  // Chandigarh: data.ts:2151 feeMin=165000, data.ts:2152 feeMax=220000
-  // Sprint 1 Task 4: previous title said "Fees ₹1,31,250 After Scholarship", that
-  // number is the BBA net (BBA sticker ₹1,75,000 minus 25% Early Bird). MBA base
-  // range is ₹1.65L-₹2.2L per data.ts. Scholarship kept as a description hook only.
-  // NEEDS-VERIFICATION: does the 25% Early Bird apply to MBA, and what is the correct MBA net?
+  // Chandigarh: data.ts:2151 feeMin=165000, data.ts:2152 feeMax=220000.
+  // pd.fees (data.ts:2191) is the narrower "₹1.65L-₹1.80L" — that is the
+  // verified programme range. Reference (feeMax=₹2.2L) is NOT backed by
+  // pd.fees, so we display the narrower BACKED range per rule 3.
+  // NEEDS-VERIFICATION: does the 25% Early Bird apply to MBA, and what is
+  // the correct MBA net?
   'chandigarh-university-online': {
-    title: 'Chandigarh MBA Fees 2026: ₹1.65L-₹2.2L Total | edifyedu.in',
-    description: 'Chandigarh University online MBA fees ₹1,65,000 to ₹2,20,000 total. NAAC A+, NIRF #19, UGC-DEB approved. 25% Early Bird Scholarship available. Zero-commission, verified fee data.',
+    title: 'Chandigarh MBA Fees 2026: ₹1.65L-₹1.8L | edifyedu.in',
+    description: 'Chandigarh University online MBA fees ₹1,65,000 to ₹1,80,000. NAAC A+, NIRF #19, UGC-DEB approved. 25% Early Bird Scholarship available. Zero-commission, verified fee data.',
     h1: 'Chandigarh University Online MBA 2026: Fees, Scholarships, and Review',
-    intro: 'Chandigarh University online MBA total fees range from ₹1,65,000 to ₹2,20,000 depending on specialization, across four semesters. The programme is UGC-DEB approved and NAAC A+ accredited, with a NIRF University rank of #19. Chandigarh University runs a 25% Early Bird Scholarship for eligible early applicants, verifiable on the University Grants Commission and NAAC public registers. Live classes are delivered on weekends via the CUOnline platform. edifyedu.in compares Chandigarh University MBA fees using public university data, not paid rankings.',
+    intro: 'Chandigarh University online MBA total fees range from ₹1,65,000 to ₹1,80,000 across four semesters. The programme is UGC-DEB approved and NAAC A+ accredited, with a NIRF University rank of #19. Chandigarh University runs a 25% Early Bird Scholarship for eligible early applicants, verifiable on the UGC-DEB and NAAC public registers. Live classes are delivered on weekends via the CUOnline platform. edifyedu.in compares Chandigarh University MBA fees using public university data, not paid rankings.',
   },
 
   'dy-patil-university-online': {

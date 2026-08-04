@@ -1,24 +1,42 @@
 // lib/fees.ts
-// Sprint 1 FIX 2. Single canonical fee source for BOTH the title/meta
-// generator AND on-page fee blocks (FeeBreakdown, hero, etc.).
+// Single canonical fee source for both hub metadata and on-page fee blocks.
+// No component reads pd.fees or feeMin/feeMax directly; everything goes
+// through getDisplayFee(uni, program).
 //
-// Rule: no component reads pd.fees or feeMin/feeMax directly for display.
-// Everything goes through getDisplayFee(uni, program).
+// Correction sprint (post FIX 2): getDisplayFee now resolves via a 4-rule
+// hierarchy that prefers a narrower BACKED number over blanket suppression.
+// A missing fee is worse for CTR than a slightly wider or "from ₹X" fee,
+// so we only suppress when the data really cannot back any number.
 //
-// The helper returns { ok: false } when pd.fees for the requested program
-// diverges materially from feeMin/feeMax on the same University object.
-// Callers must interpret ok=false as "suppress the fee everywhere; show
-// counsellor CTA instead" (Kurukshetra BBA is the current known case).
+//   Rule 1 (`range`)  : pd.fees and reference agree within 10% tolerance.
+//                       Display pd.fees range as-is.
+//   Rule 2 (`from`)   : pd.fees is single value, reference is a wider range,
+//                       single value is within 25% of ref lower bound.
+//                       Display "From ₹X" using the pd.fees value. Never
+//                       print the unbacked upper bound.
+//   Rule 3 (`narrower`): pd.fees is a narrower range that sits inside the
+//                       reference range (within tolerance on both bounds).
+//                       Display pd.fees range. Never print the wider ref max.
+//   Rule 4 (suppress) : Fires only when
+//                       4a. pd.fees range spans more than 3x (placeholder),
+//                       4b. pd.fees and reference diverge by more than 25%
+//                           with no way to tell which is right (single vs
+//                           single mismatch, or both ranges with big drift).
+//                       Caller shows counsellor CTA, no number.
 
 import type { University, Program, ProgramDetail } from './data'
 
+export type FeeMode = 'range' | 'from' | 'narrower'
+
 export interface FeeDisplay {
   ok: boolean
-  compact?: string   // for titles: "₹76K-₹86K" or "₹1.2L"
-  range?: string     // for on-page copy: "₹76,200 to ₹86,400"
+  mode?: FeeMode
+  compact?: string      // for titles: "₹76K-₹86K" / "From ₹76,200" / "₹1.2L"
+  range?: string        // for body copy: "₹76,200 to ₹86,400" / "from ₹76,200"
   min?: number
   max?: number
-  reason?: string    // populated on ok=false with the specific mismatch
+  rule?: 1 | 2 | 3 | '4a' | '4b'
+  reason?: string
 }
 
 export interface FeeMismatch {
@@ -30,19 +48,20 @@ export interface FeeMismatch {
   feeMax: number
   parsedMin: number
   parsedMax: number
+  rule: '4a' | '4b'
   reason: string
 }
 
-const TOLERANCE_ABS = 5000    // ₹5,000 absolute tolerance for rounding
-const TOLERANCE_PCT = 0.10    // 10% relative tolerance
+const TOLERANCE_ABS = 5000
+const TOLERANCE_PCT = 0.10
+const DIVERGENCE_PCT = 0.25
+const SUSPICIOUS_RANGE_RATIO = 3.0
 
-// Parse a pd.fees string like "₹76.2K", "₹1.18L - ₹1.3L", "₹66,000" into
-// {min, max} in rupees. Returns null if the string cannot be parsed.
+// Parse "₹76.2K", "₹1.18L - ₹1.3L", "₹66,000" into {min, max}. Returns null
+// when the input is not a recognisable fee string.
 export function parseFeeStr(s: string): { min: number; max: number } | null {
   if (!s) return null
-  // Normalise: drop ₹, whitespace, commas, trailing +.
   const cleaned = s.replace(/₹|Rs\.?|\s|,|\+/gi, '')
-  // Split on en/em/hyphen dash.
   const parts = cleaned.split(/[–—-]/)
   if (parts.length === 0 || parts.length > 2) return null
   const parseOne = (p: string): number | null => {
@@ -65,112 +84,10 @@ function tol(n: number): number {
   return Math.max(TOLERANCE_ABS, n * TOLERANCE_PCT)
 }
 
-// True if pd.fees for `program` on `u` agrees with the program's canonical
-// numeric source within tolerance. The canonical source is:
-//   - u.programFees[program].fee when present (per-program authoritative)
-//   - u.feeMin / u.feeMax otherwise (uni-wide, MBA-anchored on most rows)
-//
-// Because feeMin/feeMax is MBA-anchored on almost every University row,
-// cross-checking non-MBA pd.fees against feeMin/feeMax produces a flood
-// of false positives (BBA/BCA legitimately cost less than MBA). We only
-// enforce consistency in two scenarios:
-//   1. program === 'MBA' — pd.fees vs feeMin/feeMax must agree
-//   2. programFees[program].fee present — pd.fees must agree with that
-//
-// Everything else returns ok:true and defers to pd.fees as authoritative.
-const SUSPICIOUS_RANGE_RATIO = 3.0
-
-export function checkFeeConsistency(u: University, program: Program):
-  { ok: true } | { ok: false; reason: string; parsedMin: number; parsedMax: number }
-{
-  const pd = u.programDetails[program] as ProgramDetail | undefined
-  if (!pd?.fees) return { ok: true }
-  const parsed = parseFeeStr(pd.fees)
-  if (!parsed) return { ok: true }
-
-  // Width sanity check catches ranges like "₹60K - ₹200K" where the
-  // authored max is more than 3x the authored min. Real online-degree
-  // fee ranges rarely span >3x within one programme; wider ranges are
-  // usually stale or wrong data (e.g. Kurukshetra BBA case). Flag so
-  // the display suppresses the number rather than shipping the range.
-  if (parsed.min > 0 && parsed.max / parsed.min > SUSPICIOUS_RANGE_RATIO) {
-    return {
-      ok: false,
-      reason: `pd.fees "${pd.fees}" spans ${(parsed.max / parsed.min).toFixed(1)}x (>${SUSPICIOUS_RANGE_RATIO}x), suspicious`,
-      parsedMin: parsed.min,
-      parsedMax: parsed.max,
-    }
-  }
-
-  const pf = (u as unknown as { programFees?: Record<string, { fee?: number }> }).programFees
-  const perProgram = pf?.[program.toLowerCase()]?.fee
-
-  // A large group of state/central-university rows in data.ts carries the
-  // default placeholder feeMin=60000 / feeMax=200000 for MBA. That is not
-  // a per-programme figure and should not be cross-checked against
-  // pd.fees. Detect and skip.
-  const isPlaceholderMBAFee = u.feeMin === 60000 && (u.feeMax || u.feeMin) === 200000
-
-  let refMin: number
-  let refMax: number
-  let refLabel: string
-  if (typeof perProgram === 'number' && perProgram > 0) {
-    refMin = perProgram
-    refMax = perProgram
-    refLabel = `programFees.${program.toLowerCase()} ${perProgram}`
-  } else if (program === 'MBA' && !isPlaceholderMBAFee) {
-    refMin = u.feeMin
-    refMax = u.feeMax || u.feeMin
-    refLabel = `feeMin/feeMax ${refMin}-${refMax}`
-  } else {
-    return { ok: true }
-  }
-
-  // Final-sprint FIX 2: never display a fee whose upper bound is not
-  // backed by pd.fees. If pd.fees is a single value but the reference
-  // source is a range (e.g. Galgotias MBA pd.fees "₹76.2K" vs feeMin/
-  // feeMax 76200-86400), suppress regardless of tolerance.
-  if (parsed.min === parsed.max && refMax > refMin) {
-    return {
-      ok: false,
-      reason: `pd.fees "${pd.fees}" is single value ${parsed.min} but ${refLabel} is a range; upper bound unbacked`,
-      parsedMin: parsed.min,
-      parsedMax: parsed.max,
-    }
-  }
-
-  // Also suppress when the two sources differ by more than 25%, even
-  // within the width-sanity threshold. Catches IGNOU MCA ₹27,000 vs
-  // programFees.mca 50,800 (47%) and BCA ₹21,600 vs 49,800 (57%).
-  const minRatio = Math.abs(parsed.min - refMin) / Math.max(refMin, 1)
-  const maxRatio = Math.abs(parsed.max - refMax) / Math.max(refMax, 1)
-  if (minRatio > 0.25 || maxRatio > 0.25) {
-    return {
-      ok: false,
-      reason: `pd.fees "${pd.fees}" (${parsed.min}-${parsed.max}) differs from ${refLabel} by >25%`,
-      parsedMin: parsed.min,
-      parsedMax: parsed.max,
-    }
-  }
-
-  const minDiff = Math.abs(parsed.min - refMin)
-  const maxDiff = Math.abs(parsed.max - refMax)
-  if (minDiff > tol(refMin) || maxDiff > tol(refMax)) {
-    return {
-      ok: false,
-      reason: `pd.fees "${pd.fees}" (${parsed.min}-${parsed.max}) vs ${refLabel}`,
-      parsedMin: parsed.min,
-      parsedMax: parsed.max,
-    }
-  }
-  return { ok: true }
-}
-
 function fmtIndianShort(n: number): string {
   if (n >= 100000) {
     const l = n / 100000
     const rounded = Math.round(l * 100) / 100
-    // Trim trailing zeros: 1.20 -> 1.2, 3.00 -> 3
     return `₹${String(rounded).replace(/\.?0+$/, '')}L`
   }
   if (n >= 1000) return `₹${Math.round(n / 1000)}K`
@@ -189,69 +106,136 @@ function makeFullRange(min: number, max: number): string {
   return min === max ? fmtIndianFull(min) : `${fmtIndianFull(min)} to ${fmtIndianFull(max)}`
 }
 
-// The one canonical fee source. All display code must call this.
-//
-// Resolution order:
-//   1. If checkFeeConsistency fails, ok:false (caller must suppress display).
-//   2. u.programFees[program].fee (per-program authoritative).
-//   3. For MBA: u.feeMin / u.feeMax (uni-wide, MBA-anchored).
-//   4. For other programs: parse pd.fees (per-program authoritative fallback).
-//   5. Nothing usable: ok:false.
-export function getDisplayFee(u: University, program: Program): FeeDisplay {
-  const check = checkFeeConsistency(u, program)
-  if (!check.ok) return { ok: false, reason: check.reason }
+interface Ref { min: number; max: number; label: string }
 
+function getReference(u: University, program: Program): Ref | null {
   const pf = (u as unknown as { programFees?: Record<string, { fee?: number }> }).programFees
   const perProgram = pf?.[program.toLowerCase()]?.fee
   if (typeof perProgram === 'number' && perProgram > 0) {
-    return {
-      ok: true,
-      compact: fmtIndianShort(perProgram),
-      range: fmtIndianFull(perProgram),
-      min: perProgram,
-      max: perProgram,
-    }
+    return { min: perProgram, max: perProgram, label: `programFees.${program.toLowerCase()} ${perProgram}` }
   }
-
   if (program === 'MBA') {
-    const isPlaceholderMBAFee = u.feeMin === 60000 && (u.feeMax || u.feeMin) === 200000
-    if (!isPlaceholderMBAFee) {
-      const min = u.feeMin
-      const max = u.feeMax || u.feeMin
-      return {
-        ok: true,
-        compact: makeCompactRange(min, max),
-        range: makeFullRange(min, max),
-        min,
-        max,
-      }
-    }
-    // Placeholder MBA feeMin/feeMax: fall through to pd.fees parse below.
-  }
-
-  const pd = u.programDetails[program]
-  const parsed = pd?.fees ? parseFeeStr(pd.fees) : null
-  if (parsed) {
-    return {
-      ok: true,
-      compact: makeCompactRange(parsed.min, parsed.max),
-      range: makeFullRange(parsed.min, parsed.max),
-      min: parsed.min,
-      max: parsed.max,
+    // Skip the MBA placeholder feeMin=60000 / feeMax=200000 which appears on
+    // dozens of state/central-university rows; that isn't per-programme data.
+    const isPlaceholder = u.feeMin === 60000 && (u.feeMax || u.feeMin) === 200000
+    if (!isPlaceholder) {
+      return { min: u.feeMin, max: u.feeMax || u.feeMin, label: `feeMin/feeMax ${u.feeMin}-${u.feeMax || u.feeMin}` }
     }
   }
-  return { ok: false, reason: 'no per-program fee source available' }
+  return null
 }
 
-// Return every uni x program where pd.fees disagrees with feeMin/feeMax.
+// The one canonical fee source. See file header for rule hierarchy.
+export function getDisplayFee(u: University, program: Program): FeeDisplay {
+  const pd = u.programDetails[program] as ProgramDetail | undefined
+  const parsed = pd?.fees ? parseFeeStr(pd.fees) : null
+
+  // Rule 4a: width sanity — pd.fees range spans > 3x → suppress.
+  if (parsed && parsed.min > 0 && parsed.max / parsed.min > SUSPICIOUS_RANGE_RATIO) {
+    return {
+      ok: false,
+      rule: '4a',
+      reason: `pd.fees "${pd?.fees}" spans ${(parsed.max / parsed.min).toFixed(1)}x, placeholder or stale range`,
+    }
+  }
+
+  const ref = getReference(u, program)
+
+  // No parseable pd.fees.
+  if (!parsed) {
+    if (ref) {
+      return {
+        ok: true, mode: 'range', rule: 1,
+        compact: makeCompactRange(ref.min, ref.max),
+        range: makeFullRange(ref.min, ref.max),
+        min: ref.min, max: ref.max,
+      }
+    }
+    if (pd?.fees) {
+      // Pass through unparseable but presumably-authored copy.
+      return { ok: true, mode: 'range', rule: 1, compact: pd.fees, range: pd.fees }
+    }
+    return { ok: false, rule: '4b', reason: 'no pd.fees, no reference source' }
+  }
+
+  // pd.fees parsed but no reference — trust pd.fees.
+  if (!ref) {
+    return {
+      ok: true, mode: 'range', rule: 1,
+      compact: makeCompactRange(parsed.min, parsed.max),
+      range: makeFullRange(parsed.min, parsed.max),
+      min: parsed.min, max: parsed.max,
+    }
+  }
+
+  const minDiffPct = Math.abs(parsed.min - ref.min) / Math.max(ref.min, 1)
+  const maxDiffPct = Math.abs(parsed.max - ref.max) / Math.max(ref.max, 1)
+
+  // Rule 1: agreement within 10% tolerance → display pd.fees range.
+  if (minDiffPct <= TOLERANCE_PCT && maxDiffPct <= TOLERANCE_PCT) {
+    return {
+      ok: true, mode: 'range', rule: 1,
+      compact: makeCompactRange(parsed.min, parsed.max),
+      range: makeFullRange(parsed.min, parsed.max),
+      min: parsed.min, max: parsed.max,
+    }
+  }
+
+  // Rule 2: pd.fees single + ref range + single within 25% of ref lower.
+  if (parsed.min === parsed.max && ref.min !== ref.max) {
+    const singleDiffPct = Math.abs(parsed.min - ref.min) / Math.max(ref.min, 1)
+    if (singleDiffPct <= DIVERGENCE_PCT) {
+      return {
+        ok: true, mode: 'from', rule: 2,
+        compact: `From ${fmtIndianShort(parsed.min)}`,
+        range: `from ${fmtIndianFull(parsed.min)}`,
+        min: parsed.min, max: parsed.min,
+      }
+    }
+  }
+
+  // Rule 3: pd.fees is a narrower range that sits inside the reference range.
+  const parsedIsRange = parsed.min !== parsed.max
+  const insideRefLower = parsed.min >= ref.min - tol(ref.min)
+  const insideRefUpper = parsed.max <= ref.max + tol(ref.max)
+  const narrowerThanRef = parsed.min > ref.min || parsed.max < ref.max
+  if (parsedIsRange && insideRefLower && insideRefUpper && narrowerThanRef) {
+    return {
+      ok: true, mode: 'narrower', rule: 3,
+      compact: makeCompactRange(parsed.min, parsed.max),
+      range: makeFullRange(parsed.min, parsed.max),
+      min: parsed.min, max: parsed.max,
+    }
+  }
+
+  // Rule 4b: bigger than 25% divergence with no rule 1/2/3 fit → suppress.
+  if (minDiffPct > DIVERGENCE_PCT || maxDiffPct > DIVERGENCE_PCT) {
+    return {
+      ok: false, rule: '4b',
+      reason: `pd.fees "${pd?.fees}" (${parsed.min}-${parsed.max}) diverges from ${ref.label} by >25%`,
+    }
+  }
+
+  // 10-25% drift with no rule 2/3 fit — per-programme pd.fees is more
+  // reliable than uni-wide reference, so trust it.
+  return {
+    ok: true, mode: 'range', rule: 1,
+    compact: makeCompactRange(parsed.min, parsed.max),
+    range: makeFullRange(parsed.min, parsed.max),
+    min: parsed.min, max: parsed.max,
+  }
+}
+
+// Return every uni x program where getDisplayFee fell through to suppression
+// (rules 4a or 4b), plus per-rule totals for reporting.
 export function findAllFeeMismatches(universities: University[]): FeeMismatch[] {
   const mismatches: FeeMismatch[] = []
   for (const u of universities) {
     for (const program of u.programs) {
       const pd = u.programDetails[program]
       if (!pd?.fees) continue
-      const check = checkFeeConsistency(u, program)
-      if (check.ok) continue
+      const display = getDisplayFee(u, program)
+      if (display.ok) continue
       const parsed = parseFeeStr(pd.fees)
       mismatches.push({
         universityId: u.id,
@@ -262,9 +246,30 @@ export function findAllFeeMismatches(universities: University[]): FeeMismatch[] 
         feeMax: u.feeMax || u.feeMin,
         parsedMin: parsed?.min ?? 0,
         parsedMax: parsed?.max ?? 0,
-        reason: check.reason,
+        rule: (display.rule as '4a' | '4b'),
+        reason: display.reason ?? '',
       })
     }
   }
   return mismatches
+}
+
+// Bucket counts across the whole dataset (for the sprint verification report).
+export function tallyFeeRules(universities: University[]) {
+  const buckets = { rule1: 0, rule2: 0, rule3: 0, rule4a: 0, rule4b: 0, noData: 0 }
+  for (const u of universities) {
+    for (const program of u.programs) {
+      const display = getDisplayFee(u, program)
+      if (!display.ok) {
+        if (display.rule === '4a') buckets.rule4a++
+        else if (display.rule === '4b') buckets.rule4b++
+        else buckets.noData++
+      } else {
+        if (display.rule === 1) buckets.rule1++
+        else if (display.rule === 2) buckets.rule2++
+        else if (display.rule === 3) buckets.rule3++
+      }
+    }
+  }
+  return buckets
 }

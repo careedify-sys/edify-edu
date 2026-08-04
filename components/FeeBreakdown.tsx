@@ -49,10 +49,15 @@ export default function FeeBreakdown({ u, pd, program, cleanName, headingOverrid
   const semesters   = isPostgrad ? 4 : 6
   const totalMin    = fee.min ?? u.feeMin
   const perSem      = Math.round(totalMin / semesters)
+  // "From ₹X" framing when only the lower bound is backed by pd.fees; the
+  // per-semester row uses the same "from" language so title, body, and
+  // fee table all speak the same fee.
+  const totalLabel  = fee.mode === 'from' ? 'Total Program Fee (from)' : 'Total Program Fee'
+  const perSemValue = fee.mode === 'from' ? `from ${formatINR(perSem)}` : formatINR(perSem)
 
   const rows = [
-    { label: 'Total Program Fee', value: fee.range || fee.compact || '', highlight: true },
-    { label: 'Per Semester (approx.)', value: formatINR(perSem) },
+    { label: totalLabel, value: fee.range || fee.compact || '', highlight: true },
+    { label: 'Per Semester (approx.)', value: perSemValue },
     { label: 'EMI starts from', value: `${formatINR(u.emiFrom)}/month` },
     { label: 'Registration / Admission Fee', value: 'Included in total' },
     { label: 'Exam Fee', value: 'Included in total (usually)' },
