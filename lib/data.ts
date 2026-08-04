@@ -6981,7 +6981,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programDetails: {
       'MBA': {
         specs: [{ slug: 'ai-for-business', name: 'AI for Business' }, { slug: 'hospital-health-systems-management', name: 'Hospital & Health Systems Management' }, { slug: 'strategy-consulting', name: 'Strategy & Consulting' }, 'Finance', { slug: 'fintech', name: 'FinTech' }, { slug: 'digital-transformation', name: 'Digital Transformation' }, { slug: 'manufacturing-management', name: 'Manufacturing Management' }, { slug: 'quality-management', name: 'Quality Management' }, { slug: 'business-analytics', name: 'Business Analytics' }],
-        fees: '\u20b975K \u2013 \u20b9180K',
+        // Sprint 1 Task 3: previous value '\u20b975K \u2013 \u20b9180K' conflicted with feeMin/feeMax=298400 above.
+        // Aligned to the single-value form matching feeMin/feeMax so title, hero, and fee block agree.
+        // NEEDS-VERIFICATION: confirm BITS Pilani WILP MBA \u20b92,98,400 against the official portal.
+        fees: '\u20b92,98,400',
         duration: '2 Years',
         roles: ['Business Manager','Strategy Consultant','Operations Lead','Business Analyst','Product Manager'],
         avgSalary: '\u20b94L \u2013 \u20b914L per annum',
