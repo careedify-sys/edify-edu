@@ -141,13 +141,12 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
     ? `₹${u.feeMin.toLocaleString('en-IN')} to ₹${u.feeMax.toLocaleString('en-IN')}`
     : `₹${u.feeMin.toLocaleString('en-IN')}`
   const nirfSuffix = u.nirf > 0 && u.nirf < 500 ? ` and a NIRF rank of #${u.nirf}` : ''
-  const psuSuffix  = u.psuEligible ? ', and PSU recruitment where UGC-DEB degrees are accepted' : ''
 
   const faqs: { q: string; a: string }[] = [
     { q: `What is the total fee for ${program} at ${cleanName}?`,
       a: `Total programme fee is ${feeStr} across ${pd.duration || '2 years'}. EMI starts from ₹${u.emiFrom.toLocaleString()}/month.` },
-    { q: `Is the ${program} degree from ${cleanName} valid for jobs?`,
-      a: `Yes. ${cleanName} is UGC-DEB approved. UGC-DEB approved online degrees are legally equivalent to on-campus degrees and valid for private sector employment${psuSuffix}.` },
+    { q: `Is the ${program} degree from ${cleanName} valid?`,
+      a: `Yes. ${cleanName} is UGC-DEB approved. UGC-DEB approved online degrees are recognised as equivalent to on-campus degrees for higher education and government recruitment.` },
     ...(specs.length ? [{ q: `What specialisations does ${cleanName} offer in ${program}?`,
       a: `${specs.length} specialisations: ${formatSpecList(specs)}.` }] : []),
     { q: `Is ${cleanName} NAAC accredited?`,
