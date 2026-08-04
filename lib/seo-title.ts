@@ -305,12 +305,25 @@ export function clampTitle(title: string, max = 60, _slug?: string): string {
 }
 
 /**
- * Meta description clamp. Prefer a sentence boundary (. ! ?) within the
- * budget, fall back to a word boundary. Strip any trailing comma/hyphen
- * or opening bracket so the description never ends mid-thought.
+ * Meta description clamp. Final-sprint FIX 3.
+ *
+ * Contract: never cut mid-sentence. Aim for 140-160 visible chars where
+ * content is available. `max` (default 160) is a soft target; a hard
+ * ceiling of `max + HARD_CEILING_TOLERANCE` (default 175) lets us keep
+ * a complete final sentence when it overruns the soft target by a small
+ * amount rather than truncating to a shorter fragment. Any description
+ * beyond the hard ceiling is clamped at the last sentence boundary
+ * inside the soft target, or (fallback only) at a word boundary.
  */
-export function clampDescription(desc: string, max = 158): string {
+const HARD_CEILING_TOLERANCE = 15  // 160 soft + 15 = 175 hard
+
+export function clampDescription(desc: string, max = 160): string {
   if (desc.length <= max) return desc
+  // Within soft-target + ceiling tolerance: keep the full desc rather
+  // than dropping a trailing sentence that would land us in the 100-120c
+  // "under-filled" zone.
+  if (desc.length <= max + HARD_CEILING_TOLERANCE) return desc
+
   const slice = desc.substring(0, max)
   const lastDot  = slice.lastIndexOf('.')
   const lastExcl = slice.lastIndexOf('!')
