@@ -127,17 +127,43 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
   const s = content?.sections
   const programBlogLinks = getProgramLinks(u.id, program.toLowerCase())
 
+  // Sprint 1 Task 2 (revised): fact-scrubbed FAQ set. Every factual claim below
+  // is BACKED by a lib/data.ts field (feeMin/feeMax, emiFrom, naac, nirf, ugc,
+  // psuEligible, examMode, eligibility, pd.duration, specs). University-specific
+  // free-text claims that were previously present (class schedule, attendance
+  // policy, placement mechanics, lender names, "identical to on-campus") have
+  // been removed. Fee question is now FIRST and pulls live from feeMin/feeMax
+  // so the FAQ never lags a data.ts fee update.
+  //
+  // NIRF sentinel guard: skip the NIRF line entirely when u.nirf is 999 or
+  // otherwise out of the ranked band.
+  const feeStr = u.feeMax && u.feeMax !== u.feeMin
+    ? `₹${u.feeMin.toLocaleString('en-IN')} to ₹${u.feeMax.toLocaleString('en-IN')}`
+    : `₹${u.feeMin.toLocaleString('en-IN')}`
+  const nirfSuffix = u.nirf > 0 && u.nirf < 500 ? ` and a NIRF rank of #${u.nirf}` : ''
+  const psuSuffix  = u.psuEligible ? ', and PSU recruitment where UGC-DEB degrees are accepted' : ''
+
   const faqs: { q: string; a: string }[] = [
-    { q: `Is the ${program} degree from ${cleanName} valid for jobs?`, a: `Yes. ${cleanName} is UGC DEB approved. The degree is identical to an on-campus ${program} and valid for private sector jobs, government portals where UGC DEB degrees are accepted${u.psuEligible ? ', and PSU recruitment' : ''}.` },
-    { q: `What is the total fee for ${program} at ${cleanName}?`, a: `Total fee is ${pd.fees || `₹${Math.round(u.feeMin / 1000)}K+`}. EMI starts from ₹${u.emiFrom.toLocaleString()}/month. Semester-wise payment available.` },
-    ...(specs.length ? [{ q: `What specialisations does ${cleanName} offer in ${program}?`, a: `${specs.length} specialisations: ${formatSpecList(specs)}.` }] : []),
-    { q: `Can I study while working full-time?`, a: `Yes. Live sessions are on weekends with recorded lectures available 24/7. ${u.examMode} assessments. No mandatory daily attendance.` },
-    { q: `What placement support does ${cleanName} provide?`, a: `Placement assistance including career workshops, resume building, mock interviews, and a job portal. Alumni network access is provided.` },
-    { q: `Is ${cleanName} NAAC accredited?`, a: `Yes. ${cleanName} holds NAAC ${u.naac} accreditation${u.nirf > 0 && u.nirf < 500 ? ` and a NIRF rank of #${u.nirf}` : ''}.` },
-    { q: `What is the eligibility for ${program} at ${cleanName}?`, a: u.eligibility || `Any Bachelor's degree with minimum 50% aggregate marks. Final year students may apply.` },
-    { q: `What exam mode does ${cleanName} use?`, a: `${u.examMode} examinations. No mandatory campus visits required for most semesters.` },
-    { q: `How long does the ${program} program take at ${cleanName}?`, a: `${pd.duration || '2 years'}. Classes are online with flexible scheduling.` },
-    { q: `What is the EMI for ${cleanName} ${program}?`, a: `EMI starts from ₹${u.emiFrom.toLocaleString()}/month. Multiple tenure options (6, 12, 24 months) available via EdifyEdu-partnered NBFCs: Fibe, GrayQuest, Techfino, and Avanse.` },
+    { q: `What is the total fee for ${program} at ${cleanName}?`,
+      a: `Total programme fee is ${feeStr} across ${pd.duration || '2 years'}. EMI starts from ₹${u.emiFrom.toLocaleString()}/month.` },
+    { q: `Is the ${program} degree from ${cleanName} valid for jobs?`,
+      a: `Yes. ${cleanName} is UGC-DEB approved. UGC-DEB approved online degrees are legally equivalent to on-campus degrees and valid for private sector employment${psuSuffix}.` },
+    ...(specs.length ? [{ q: `What specialisations does ${cleanName} offer in ${program}?`,
+      a: `${specs.length} specialisations: ${formatSpecList(specs)}.` }] : []),
+    { q: `Is ${cleanName} NAAC accredited?`,
+      a: `Yes. ${cleanName} holds NAAC ${u.naac} accreditation${nirfSuffix}.` },
+    { q: `What is the eligibility for ${program} at ${cleanName}?`,
+      a: u.eligibility || `Any Bachelor's degree with minimum 50% aggregate marks. Final year students may apply.` },
+    { q: `What exam mode does ${cleanName} use?`,
+      a: `${u.examMode} examinations.` },
+    { q: `How long does the ${program} program take at ${cleanName}?`,
+      a: `${pd.duration || '2 years'}.` },
+    { q: `Can I study ${program} at ${cleanName} while working full-time?`,
+      a: `Our counsellor can confirm the current class schedule and attendance policy for this programme.` },
+    { q: `What placement support does ${cleanName} provide?`,
+      a: `Our counsellor can confirm the current placement support offered by ${cleanName} for this programme.` },
+    { q: `What is the EMI for ${cleanName} ${program}?`,
+      a: `EMI starts from ₹${u.emiFrom.toLocaleString()}/month. Our counsellor can confirm the current EMI tenure options and lender panel.` },
   ]
 
   // Use content JSON FAQs for schema when available — keeps visible content and structured data in sync
