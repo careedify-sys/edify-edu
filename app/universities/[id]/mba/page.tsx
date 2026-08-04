@@ -3,7 +3,8 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import type { ProgramDetail } from '@/lib/data'
-import { getTitleName, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
+import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
+import { getDisplayFee } from '@/lib/fees'
 import { MBA_SEO_OVERRIDES } from '@/lib/mba-seo-overrides'
 import UniProgramBody from '@/components/UniProgramBody'
 import { pageKeywords } from '@/lib/page-keywords'
@@ -49,13 +50,18 @@ export async function generateMetadata(
   const year = new Date().getFullYear()
   const pd   = u.programDetails['MBA']
   const titleName = getTitleName(u.id, u.name, u.abbr)
-  const feeDisplay = compactFee(pd?.fees || `₹${Math.round(u.feeMin / 1000)}K`)
+  const fee = getDisplayFee(u, 'MBA')
   const specCount = pd?.specs?.length || 5
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : u.nirfMgt && u.nirfMgt < 200 ? `, NIRF #${u.nirfMgt} Mgmt` : ''
-  // CTR-tuned title (2026-05-25): fee number leads, NAAC + bracket review hook.
-  const title = clampTitle(`${titleName} Online MBA ${year}: ${feeDisplay} Fees, NAAC ${u.naac} [Review] | edifyedu.in`)
-  // Description: fee + spec count + accreditation up front, micro-CTA at end, no "Compare" lead.
-  const description = clampDescription(`${titleName} Online MBA ${year}: ${feeDisplay} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. See honest review, syllabus & placement data.`)
+  // Sprint 1 FIX 2: fee comes from getDisplayFee (one canonical source).
+  // When fee.ok === false the fee is suppressed everywhere; user sees
+  // "Fee structure verified by our counsellor" and the lead CTA instead.
+  const title = fee.ok
+    ? clampTitle(`${titleName} Online MBA Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`)
+    : clampTitle(`${titleName} Online MBA ${year}: NAAC ${u.naac} [Review] | edifyedu.in`)
+  const description = fee.ok
+    ? clampDescription(`${titleName} Online MBA ${year}: ${fee.compact} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. See honest review, syllabus and placement data.`)
+    : clampDescription(`${titleName} Online MBA ${year}: ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved.`)
 
   const keywords = [
     `${u.name} online MBA fees`,

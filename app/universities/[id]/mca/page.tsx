@@ -3,7 +3,8 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import type { ProgramDetail } from '@/lib/data'
-import { getTitleName, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
+import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
+import { getDisplayFee } from '@/lib/fees'
 import { getMasterSyllabus } from '@/lib/content'
 import UniProgramBody from '@/components/UniProgramBody'
 import { pageKeywords } from '@/lib/page-keywords'
@@ -23,13 +24,15 @@ export async function generateMetadata(
   const pd   = u.programDetails['MCA']
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const syllabus = getMasterSyllabus(u.id, 'MCA') as any
-  const feeDisplay = compactFee(pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`)
+  const fee = getDisplayFee(u, 'MCA')
   const specCount = pd?.specs?.length || 3
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
-  // CTR-tuned title (2026-05-25): fee + NAAC + bracket review hook, year first.
-  const title = clampTitle(`${titleName} Online MCA ${year}: ${feeDisplay} Fees, NAAC ${u.naac} [Review] | edifyedu.in`)
-  const description = clampDescription(syllabus?.metaDesc ||
-    `${titleName} Online MCA ${year}: ${feeDisplay} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Check syllabus, placement & eligibility free.`)
+  const title = fee.ok
+    ? clampTitle(`${titleName} Online MCA Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`)
+    : clampTitle(`${titleName} Online MCA ${year}: NAAC ${u.naac} [Review] | edifyedu.in`)
+  const description = clampDescription(syllabus?.metaDesc || (fee.ok
+    ? `${titleName} Online MCA ${year}: ${fee.compact} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Check syllabus and eligibility free.`
+    : `${titleName} Online MCA ${year}: ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved.`))
 
   const dynamicKw = [
     `${u.name} online MCA fees`,
