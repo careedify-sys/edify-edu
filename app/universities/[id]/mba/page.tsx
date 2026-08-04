@@ -53,7 +53,7 @@ export async function generateMetadata(
   const specCount = pd?.specs?.length || 5
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : u.nirfMgt && u.nirfMgt < 200 ? `, NIRF #${u.nirfMgt} Mgmt` : ''
   // CTR-tuned title (2026-05-25): fee number leads, NAAC + bracket review hook.
-  const title = clampTitle(`${titleName} Online MBA ${year}: ${feeDisplay} Fees, NAAC ${u.naac} [Review] | EdifyEdu`)
+  const title = clampTitle(`${titleName} Online MBA ${year}: ${feeDisplay} Fees, NAAC ${u.naac} [Review] | edifyedu.in`)
   // Description: fee + spec count + accreditation up front, micro-CTA at end, no "Compare" lead.
   const description = clampDescription(`${titleName} Online MBA ${year}: ${feeDisplay} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. See honest review, syllabus & placement data.`)
 

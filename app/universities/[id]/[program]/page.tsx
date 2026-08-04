@@ -55,7 +55,7 @@ export async function generateMetadata(
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
   // CTR-tuned title (2026-05-25): short uni name, fee number, NAAC, bracket review hook.
   // titleName (not full name) keeps room for the brand suffix inside the 60-char SERP cap.
-  const title = clampTitle(`${titleName} Online ${program} ${year}: ${fees} Fees, NAAC ${u.naac} [Review] | EdifyEdu`)
+  const title = clampTitle(`${titleName} Online ${program} ${year}: ${fees} Fees, NAAC ${u.naac} [Review] | edifyedu.in`)
   // Description: short uni name + numeric facts first, micro-CTA at end. No "Compare/Explore" lead.
   let description = `${titleName} Online ${program} ${year}: ${fees} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. See honest review, syllabus & placement data free.`
   if (description.length < 150) {

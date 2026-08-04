@@ -27,7 +27,7 @@ export async function generateMetadata(
   const specCount = pd?.specs?.length || 3
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
   // CTR-tuned title (2026-05-25): fee + NAAC + bracket review hook, year first.
-  const title = clampTitle(`${titleName} Online MCA ${year}: ${feeDisplay} Fees, NAAC ${u.naac} [Review] | EdifyEdu`)
+  const title = clampTitle(`${titleName} Online MCA ${year}: ${feeDisplay} Fees, NAAC ${u.naac} [Review] | edifyedu.in`)
   const description = clampDescription(syllabus?.metaDesc ||
     `${titleName} Online MCA ${year}: ${feeDisplay} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Check syllabus, placement & eligibility free.`)
 
