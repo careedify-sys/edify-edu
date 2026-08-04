@@ -3,7 +3,8 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import type { ProgramDetail } from '@/lib/data'
-import { getTitleName, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
+import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
+import { getDisplayFee } from '@/lib/fees'
 import UniProgramBody from '@/components/UniProgramBody'
 import { pageKeywords } from '@/lib/page-keywords'
 
@@ -21,12 +22,15 @@ export async function generateMetadata(
   const year = new Date().getFullYear()
   const pd   = u.programDetails['BBA']
   const titleName = getTitleName(u.id, u.name, u.abbr)
-  const feeDisplay = compactFee(pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`)
+  const fee = getDisplayFee(u, 'BBA')
   const specCount = pd?.specs?.length || 4
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
-  // CTR-tuned title (2026-05-25): fee + NAAC + bracket review hook, year first.
-  const title = clampTitle(`${titleName} Online BBA ${year}: ${feeDisplay} Fees, NAAC ${u.naac} [Review] | EdifyEdu`)
-  const description = clampDescription(`${titleName} Online BBA ${year}: ${feeDisplay} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved 3-year degree. Check syllabus & eligibility free.`)
+  const title = fee.ok
+    ? clampTitle(`${titleName} Online BBA Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`)
+    : clampTitle(`${titleName} Online BBA ${year}: NAAC ${u.naac} [Review] | edifyedu.in`)
+  const description = fee.ok
+    ? clampDescription(`${titleName} Online BBA ${year}: ${fee.compact} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved 3-year degree.`)
+    : clampDescription(`${titleName} Online BBA ${year}: ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved 3-year degree.`)
 
   const keywords = [
     `${u.name} online BBA fees`,

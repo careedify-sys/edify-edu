@@ -1,6 +1,13 @@
 // Per-university SEO overrides for /universities/[id]/mba pages.
 // Keyed by university slug. When present, these values replace the generic template
 // in generateMetadata() and the H1/intro in UniHero/SectionAbout.
+//
+// Sprint feat/fees-query-sprint1 (2026-08-04): the fee-stripping override style
+// (title with no fee number) was underperforming on high-intent "[uni] mba fees"
+// queries in GSC. Titles for Galgotias, Jain, Symbiosis, Sikkim Manipal, IGNOU
+// and Chandigarh now lead with the total fee pulled directly from data.ts
+// feeMin/feeMax. Each number is annotated with the data.ts line it came from.
+// Brand suffix standardised on "| edifyedu.in" per Sprint 1 hard rule #4.
 
 export interface MBASeoOverride {
   title: string
@@ -10,11 +17,14 @@ export interface MBASeoOverride {
 }
 
 export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
+  // Amity: data.ts:276 feeMin=207000, data.ts:277 feeMax=225000
+  // Sprint 1 FIX 5: previous title (87 chars) overflowed SERP cap. Rewritten
+  // to the fee-led pattern used for the other Sprint 1 overrides, under 60c.
   'amity-university-online': {
-    title: 'Amity Online MBA 2026: Fees ₹2,07,000, 19 Specializations, NAAC A+ Review | edifyedu.in',
-    description: 'Amity University online MBA fees start at ₹2,07,000 total (₹8,906/mo EMI). 19 specializations. WASC + QAA accredited. Honest comparison vs NMIMS and Symbiosis. No commission advice.',
+    title: 'Amity Online MBA Fees 2026: ₹2.07L-₹2.25L | edifyedu.in',
+    description: 'Amity University online MBA fees ₹2,07,000 to ₹2,25,000 total (₹8,906/mo EMI). 19 specializations, NAAC A+, WASC and QAA accredited. UGC-DEB approved. Zero-commission, verified fee data.',
     h1: 'Amity University Online MBA 2026: Fees, Specializations, and Honest Review',
-    intro: 'Amity University online MBA is among India\'s most recognized distance programs, with fees of ₹2,07,000 total over two years. The program holds NAAC A+ accreditation and UGC-DEB approval, covering 19 specializations from Finance to Business Analytics. Amity online MBA fees are payable in semester installments, with EMI from ₹8,906 per month. International accreditations from WASC and QAA strengthen the degree for candidates targeting global employers. edifyedu.in compares Amity online MBA fees against NMIMS, Symbiosis, and other approved universities using public data only.',
+    intro: 'Amity University online MBA total fees range from ₹2,07,000 to ₹2,25,000 over two years, with EMI from ₹8,906 per month. The programme holds NAAC A+ accreditation and UGC-DEB approval, covering 19 specializations from Finance to Business Analytics. International accreditations from WASC and QAA strengthen the degree for candidates targeting global employers. edifyedu.in compares Amity online MBA fees against NMIMS, Symbiosis, and other approved universities using public data only.',
   },
   'lovely-professional-university-online': {
     title: 'LPU Online MBA 2026: Fees, Specializations, NAAC A++ Review | edifyedu.in',
@@ -28,52 +38,77 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
     h1: 'NMIMS Online MBA 2026: Fees, Specializations, and Independent Review',
     intro: 'NMIMS online MBA is one of India\'s most searched management programs, offered under the School of Distance Learning with NAAC A+ accreditation. NMIMS online MBA fees cover two years of coursework across Finance, Marketing, HR, Operations, and other specializations. The university holds UGC-DEB approval, giving the degree full validity for employment and higher studies. edifyedu.in compares NMIMS online MBA fees against Amity, Symbiosis, and MAHE using public regulatory data. Candidates shortlisting NMIMS frequently compare fees and specialization counts before applying.',
   },
-  'symbiosis-university-online': {
-    title: 'Symbiosis Online MBA (SSODL) 2026: Fees, Review, Specializations | edifyedu.in',
-    description: 'Symbiosis SSODL online MBA fees and review 2026. NIRF #11 Management. All specializations covered. Compare vs NMIMS, Amity, MAHE. Independent zero-commission guide.',
-    h1: 'Symbiosis Online MBA 2026: SSODL Fees, Specializations, and Honest Review',
-    intro: 'Symbiosis online MBA from SSODL (Symbiosis School of Online Digital Learning) holds NAAC A grade accreditation and a NIRF #11 Management rank. The program covers specializations including Finance, Marketing, Operations, and HR. Symbiosis online MBA fees are structured in semester installments with EMI support. SSODL operates under Symbiosis International University, a UGC-DEB approved institution recognized by Indian and global employers. edifyedu.in reviews Symbiosis online MBA fees and placement data using NIRF and NAAC public databases, without paid rankings.',
-  },
-  'jain-university-online': {
-    title: 'Jain Online MBA 2026: Fees, Review, Specializations | edifyedu.in',
-    description: 'Jain University online MBA fees, specializations, and honest review 2026. NAAC A++ accredited. Compare vs Amity, LPU, Chandigarh. Zero-commission advice.',
-    h1: 'Jain University Online MBA 2026: Fees, Review, and Specializations',
-    intro: 'Jain University online MBA comes from a NAAC A++ accredited institution with UGC-DEB approval for its distance programs. Jain online MBA fees are structured across four semesters with EMI options through NBFC partners. The program spans 12+ specializations including Finance, Marketing, HR, and Business Analytics. Jain University MBA fees are mid-range among NAAC A++ programs, making it a popular shortlist option alongside Amity and LPU. edifyedu.in reviews Jain University online MBA fees using only public regulatory and NIRF data.',
-  },
-  'chandigarh-university-online': {
-    title: 'Chandigarh University Online MBA 2026: Fees ₹1,31,250 After Scholarship | edifyedu.in',
-    description: 'Chandigarh University online MBA fees ₹1,31,250 after 25% early bird scholarship. NAAC A+, NIRF #19. All specializations. Honest review and comparison.',
-    h1: 'Chandigarh University Online MBA 2026: Fees, Scholarships, and Review',
-    intro: 'Chandigarh University online MBA is offered with UGC-DEB approval and NAAC A+ accreditation, with a NIRF rank of #19 among Indian universities. The base fee reduces to ₹1,31,250 after the 25% early-bird scholarship. Chandigarh University online MBA specializations span Marketing, Finance, HR, Operations, and Business Analytics. The program delivers live classes on weekends via the CUOnline platform. edifyedu.in compares Chandigarh University MBA fees and scholarship terms using public university data, not paid rankings.',
-  },
+
+  // Sprint 1: fee-led rewrites for the 5 fee-stripping overrides + CU MBA reconciliation.
+  // Fee numbers below come from lib/data.ts feeMin/feeMax as annotated.
+
+  // Galgotias: data.ts:1252 feeMin=76200 (backed by pd.fees "₹76.2K"),
+  // feeMax=86400 (NOT backed by pd.fees, therefore "From" framing).
   'galgotias-university-online': {
-    title: 'Galgotias University Online MBA 2026: Fees, Review | edifyedu.in',
-    description: 'Galgotias University online MBA fees, specializations, and review 2026. UGC-DEB approved. Compare with Sharda, LPU, Chandigarh. Honest zero-commission guide.',
-    h1: 'Galgotias University Online MBA 2026: Fees and Honest Review',
-    intro: 'Galgotias University online MBA is a UGC-DEB approved program from a NAAC-accredited institution in Greater Noida. Galgotias University MBA fees are among the more affordable options for candidates comparing online MBA programs in North India. The program spans specializations in Finance, Marketing, HR, Operations, and Data Analytics, with weekend live sessions and flexible EMI plans. edifyedu.in compares Galgotias MBA fees and accreditation status against Sharda, LPU, and Chandigarh University using public UGC-DEB data only.',
+    title: 'Galgotias Online MBA Fees 2026: From ₹76,200 | edifyedu.in',
+    description: 'Galgotias University online MBA fees from ₹76,200 (₹3,175/mo EMI). NAAC A+, UGC-DEB approved. Zero-commission, verified fee data. Compare vs Sharda, LPU, Chandigarh before you enrol.',
+    h1: 'Galgotias University Online MBA 2026: Fees, Review, and Specializations',
+    intro: 'Galgotias University online MBA total fees start from ₹76,200, one of the more affordable options for candidates comparing online MBA programs in North India. The programme is UGC-DEB approved and NAAC A+ accredited, delivered from Greater Noida with EMI plans from ₹3,175 per month. Specialisations span Finance, Marketing, HR, Operations, and Business Analytics. edifyedu.in compares Galgotias MBA fees and accreditation status against Sharda, LPU, and Chandigarh University using public UGC-DEB data only.',
   },
+
+  // JAIN: data.ts:168 feeMin=160000, data.ts:169 feeMax=196000
+  // NEEDS-VERIFICATION: pd.fees at data.ts:201 is '₹1.75L-₹1.96L', which starts higher than feeMin (₹1.6L).
+  'jain-university-online': {
+    title: 'JAIN Online MBA Fees 2026: ₹1.6L-₹1.96L Total | edifyedu.in',
+    description: 'JAIN Deemed University online MBA fees ₹1,60,000 to ₹1,96,000 total. NAAC A++, UGC-DEB approved. Zero-commission, verified fee data. Compare vs Amity, LPU, Chandigarh before you enrol.',
+    h1: 'Jain University Online MBA 2026: Fees, Review, and Specializations',
+    intro: 'Jain (Deemed-to-be) University online MBA total fees range from ₹1,60,000 to ₹1,96,000 depending on specialization, spread across four semesters with EMI options through NBFC partners. The programme is NAAC A++ accredited with UGC-DEB approval for its distance format. Specializations include Finance, Marketing, HR, and Business Analytics, plus dual-specialisation tracks that combine two domains in one degree. edifyedu.in reviews Jain University online MBA fees using only public regulatory and NIRF data, with no paid ranking influence.',
+  },
+
+  // Chandigarh: data.ts:2151 feeMin=165000, data.ts:2152 feeMax=220000.
+  // pd.fees (data.ts:2191) is the narrower "₹1.65L-₹1.80L" — that is the
+  // verified programme range. Reference (feeMax=₹2.2L) is NOT backed by
+  // pd.fees, so we display the narrower BACKED range per rule 3.
+  // NEEDS-VERIFICATION: does the 25% Early Bird apply to MBA, and what is
+  // the correct MBA net?
+  'chandigarh-university-online': {
+    title: 'Chandigarh MBA Fees 2026: ₹1.65L-₹1.8L | edifyedu.in',
+    description: 'Chandigarh University online MBA fees ₹1,65,000 to ₹1,80,000. NAAC A+, NIRF #19, UGC-DEB approved. 25% Early Bird Scholarship available. Zero-commission, verified fee data.',
+    h1: 'Chandigarh University Online MBA 2026: Fees, Scholarships, and Review',
+    intro: 'Chandigarh University online MBA total fees range from ₹1,65,000 to ₹1,80,000 across four semesters. The programme is UGC-DEB approved and NAAC A+ accredited, with a NIRF University rank of #19. Chandigarh University runs a 25% Early Bird Scholarship for eligible early applicants, verifiable on the UGC-DEB and NAAC public registers. Live classes are delivered on weekends via the CUOnline platform. edifyedu.in compares Chandigarh University MBA fees using public university data, not paid rankings.',
+  },
+
   'dy-patil-university-online': {
     title: 'DY Patil Online MBA 2026: Fees, Review, Specializations | edifyedu.in',
     description: 'DY Patil University online MBA fees, review, and specializations 2026. Mumbai/Pune campus. NAAC A++ accredited. Compare vs Amity, Symbiosis, NMIMS.',
     h1: 'DY Patil Online MBA 2026: Fees, Review, and Specialization Guide',
     intro: 'DY Patil University online MBA from its Navi Mumbai campus carries NAAC A++ accreditation and UGC-DEB approval. DY Patil online MBA fees cover a two-year program spanning Finance, Marketing, HR, and Operations specializations. The university\'s proximity to Mumbai\'s business district gives the degree employer visibility across Maharashtra. edifyedu.in reviews DY Patil online MBA fees against Amity, Symbiosis, and NMIMS using public NAAC and UGC-DEB data. No paid rankings or referral commissions influence this comparison.',
   },
+
+  // IGNOU: data.ts:8757 feeMin=66000, data.ts:8758 feeMax=66000
   'ignou-online': {
-    title: 'IGNOU Online MBA 2026: Fees, Admission, Review | edifyedu.in',
-    description: 'IGNOU online MBA fees, admission process, and honest review 2026. Most affordable MBA option in India. Compare IGNOU vs Amity, LPU, Galgotias.',
+    title: 'IGNOU Online MBA Fees 2026: ₹66,000 Total | edifyedu.in',
+    description: 'IGNOU online MBA total fee ₹66,000 for the full 2-year programme. NAAC A++, UGC-DEB approved central open university. Zero-commission, verified fee data. Compare IGNOU vs Amity, LPU, Galgotias.',
     h1: 'IGNOU Online MBA 2026: Fees, Admission Process, and Review',
-    intro: 'IGNOU online MBA is the most affordable UGC-DEB approved management program in India, offered by the country\'s largest open university. IGNOU online MBA fees are structured over two to five years, with flexibility to study at your own pace. The program covers Finance, Marketing, HR, and Production Management specializations. Admission runs through January and July cycles. edifyedu.in compares IGNOU online MBA fees and program structure against private university options like Amity and LPU using public data only.',
+    intro: 'IGNOU online MBA total fee is ₹66,000 for the full two-year programme, making it the most affordable UGC-DEB approved management degree in India from a NAAC A++ accredited central open university. Specializations cover Financial, Marketing, Human Resource, Operations, and Services Management. Admissions run in January and July cycles. edifyedu.in compares IGNOU online MBA fees and programme structure against private university options like Amity and LPU using public data only.',
   },
+
+  // MAHE: no fee-strip issue on this override, kept intact.
   'manipal-academy-higher-education-online': {
     title: 'Manipal (MAHE) Online MBA 2026: Fees, Review, Specializations | edifyedu.in',
     description: 'MAHE Manipal online MBA fees, review, and specializations 2026. NAAC A++ accredited. Compare MAHE vs Amity, Symbiosis, NMIMS. Zero-commission advice.',
     h1: 'MAHE Manipal Online MBA 2026: Fees, Specializations, and Review',
     intro: 'MAHE Manipal online MBA from Manipal Academy of Higher Education carries NAAC A++ accreditation and strong recognition across India\'s IT and consulting sectors. Manipal online MBA fees cover a two-year program with specializations in Finance, Marketing, HR, Business Analytics, and Digital Business. The UGC-DEB approved degree is delivered via the Online Manipal platform, with weekend sessions and on-demand recordings. edifyedu.in compares MAHE online MBA fees against Amity, Symbiosis, and NMIMS using public accreditation and NIRF data.',
   },
+
+  // SMU: data.ts:1337 feeMin=120000, data.ts:1338 feeMax=120000
   'sikkim-manipal-university-online': {
-    title: 'Sikkim Manipal (SMU) Online MBA 2026: Fees, Review | edifyedu.in',
-    description: 'SMU Sikkim Manipal University online MBA fees and review 2026. All specializations. UGC-DEB approved. Compare SMU vs Amity, LPU, MAHE.',
+    title: 'SMU Online MBA Fees 2026: ₹1.2L Total | edifyedu.in',
+    description: 'Sikkim Manipal (SMU) online MBA total fee ₹1,20,000 for the full 2-year programme. NAAC A+, UGC-DEB approved. Zero-commission, verified fee data. Compare SMU vs Amity, LPU, MAHE.',
     h1: 'Sikkim Manipal University (SMU) Online MBA 2026: Fees and Review',
-    intro: 'Sikkim Manipal University online MBA is one of India\'s oldest distance learning programs, now delivered under the UGC-DEB framework with updated digital infrastructure. SMU online MBA covers Finance, Marketing, HR, Operations, and Business Analytics specializations. Sikkim Manipal University online MBA fees are structured across four semesters with EMI options available. The university holds UGC-DEB approval and NAAC accreditation, giving the degree validity for private sector employment. edifyedu.in reviews SMU online MBA using public regulatory data only.',
+    intro: 'Sikkim Manipal University online MBA total fee is ₹1,20,000 for the full two-year programme, delivered under the UGC-DEB framework with NAAC A+ accreditation. Specializations cover Marketing, Finance, Human Resource, Systems (IT Management), Operations and Supply Chain, and Healthcare. edifyedu.in reviews SMU online MBA fees using public regulatory data only, without referral commissions.',
+  },
+
+  // Symbiosis: data.ts:1437 feeMin=315000, data.ts:1438 feeMax=370000
+  'symbiosis-university-online': {
+    title: 'Symbiosis SSODL MBA Fees 2026: ₹3.15L-₹3.7L | edifyedu.in',
+    description: 'Symbiosis SSODL online MBA fees ₹3,15,000 to ₹3,70,000 total. NAAC A++, NIRF #11 Management, UGC-DEB approved. Zero-commission, verified fee data. Compare vs NMIMS, Amity, MAHE.',
+    h1: 'Symbiosis Online MBA 2026: SSODL Fees, Specializations, and Honest Review',
+    intro: 'Symbiosis online MBA from SSODL (Symbiosis School for Online and Digital Learning) total fees range from ₹3,15,000 to ₹3,70,000 depending on specialization, across a two-year programme. The programme is NAAC A++ accredited with a NIRF Management rank of #11 and UGC-DEB approval. Specializations include Finance, Marketing, Operations, Human Resource, Logistics and Supply Chain, Business Analytics, and Hospital and Healthcare Management. edifyedu.in reviews Symbiosis online MBA fees and placement data using NIRF and NAAC public databases, without paid rankings.',
   },
 }

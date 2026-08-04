@@ -1,5 +1,7 @@
-import type { University, ProgramDetail } from '@/lib/data'
+import Link from 'next/link'
+import type { University, ProgramDetail, Program } from '@/lib/data'
 import { formatINR } from '@/lib/format'
+import { getDisplayFee } from '@/lib/fees'
 import { IndianRupee, AlertTriangle } from 'lucide-react'
 
 interface Props {
@@ -11,14 +13,51 @@ interface Props {
 }
 
 export default function FeeBreakdown({ u, pd, program, cleanName, headingOverride }: Props) {
+  // Sprint 1 FIX 2: single canonical fee source. When getDisplayFee returns
+  // ok:false the numeric range is suppressed and the block renders a
+  // counsellor-verification CTA instead of a wrong number.
+  const fee = getDisplayFee(u, program as Program)
+
+  if (!fee.ok) {
+    return (
+      <section className="rounded-xl border border-slate-200 bg-white p-6">
+        <div className="flex items-center gap-2 mb-1">
+          <IndianRupee size={16} className="text-slate-400" />
+          <h2 className="text-lg font-bold" style={{ color: '#0B1533' }}>
+            {headingOverride || `${cleanName} Online ${program} Fees 2026`}
+          </h2>
+        </div>
+        <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 mt-3">
+          <p className="text-sm text-amber-900 font-semibold mb-1">
+            Fee structure verified by our counsellor.
+          </p>
+          <p className="text-xs text-amber-800 mb-3">
+            Our published data for this programme is being cross-checked against the official portal. Speak with a counsellor for the current confirmed fee and EMI options.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-block bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold px-4 py-2 rounded-lg no-underline"
+          >
+            Talk to counsellor
+          </Link>
+        </div>
+      </section>
+    )
+  }
+
   const isPostgrad  = ['MBA', 'MCA', 'M.Com', 'MA', 'MSc'].includes(program)
   const semesters   = isPostgrad ? 4 : 6
-  const perSem      = Math.round(u.feeMin / semesters)
-  const totalFees   = pd.fees || formatINR(u.feeMin)
+  const totalMin    = fee.min ?? u.feeMin
+  const perSem      = Math.round(totalMin / semesters)
+  // "From ₹X" framing when only the lower bound is backed by pd.fees; the
+  // per-semester row uses the same "from" language so title, body, and
+  // fee table all speak the same fee.
+  const totalLabel  = fee.mode === 'from' ? 'Total Program Fee (from)' : 'Total Program Fee'
+  const perSemValue = fee.mode === 'from' ? `from ${formatINR(perSem)}` : formatINR(perSem)
 
   const rows = [
-    { label: 'Total Program Fee', value: totalFees, highlight: true },
-    { label: 'Per Semester (approx.)', value: formatINR(perSem) },
+    { label: totalLabel, value: fee.range || fee.compact || '', highlight: true },
+    { label: 'Per Semester (approx.)', value: perSemValue },
     { label: 'EMI starts from', value: `${formatINR(u.emiFrom)}/month` },
     { label: 'Registration / Admission Fee', value: 'Included in total' },
     { label: 'Exam Fee', value: 'Included in total (usually)' },

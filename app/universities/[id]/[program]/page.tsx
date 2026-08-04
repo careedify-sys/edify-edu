@@ -5,7 +5,8 @@ import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import type { Program, ProgramDetail } from '@/lib/data'
 import UniProgramBody from '@/components/UniProgramBody'
-import { getTitleName, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
+import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
+import { getDisplayFee } from '@/lib/fees'
 import { pageKeywords } from '@/lib/page-keywords'
 
 // Program slug to Program type mapping
@@ -50,16 +51,17 @@ export async function generateMetadata(
   const year = new Date().getFullYear()
   const pd = u.programDetails[program]
   const titleName = getTitleName(u.id, u.name, u.abbr)
-  const fees = compactFee(pd?.fees || `₹${Math.round(u.feeMin/1000)}K+`)
+  const fee = getDisplayFee(u, program)
   const specCount = pd?.specs?.length || 0
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
-  // CTR-tuned title (2026-05-25): short uni name, fee number, NAAC, bracket review hook.
-  // titleName (not full name) keeps room for the brand suffix inside the 60-char SERP cap.
-  const title = clampTitle(`${titleName} Online ${program} ${year}: ${fees} Fees, NAAC ${u.naac} [Review] | EdifyEdu`)
-  // Description: short uni name + numeric facts first, micro-CTA at end. No "Compare/Explore" lead.
-  let description = `${titleName} Online ${program} ${year}: ${fees} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. See honest review, syllabus & placement data free.`
-  if (description.length < 150) {
-    description = `${titleName} Online ${program} ${year}: ${fees} fees, ${specCount}+ specs, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Check verified syllabus, placement data & honest review free at EdifyEdu.`
+  const title = fee.ok
+    ? clampTitle(`${titleName} Online ${program} Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`)
+    : clampTitle(`${titleName} Online ${program} ${year}: NAAC ${u.naac} [Review] | edifyedu.in`)
+  let description = fee.ok
+    ? `${titleName} Online ${program} ${year}: ${fee.compact} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. See honest review and syllabus.`
+    : `${titleName} Online ${program} ${year}: ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved.`
+  if (fee.ok && description.length < 150) {
+    description = `${titleName} Online ${program} ${year}: ${fee.compact} fees, ${specCount}+ specs, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Check verified syllabus, placement data and honest review free at edifyedu.in.`
   }
   description = clampDescription(description)
 

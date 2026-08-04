@@ -223,51 +223,115 @@ export function compactFee(fee: string): string {
 }
 
 /**
- * Clamp a page <title> to ≤60 chars at a word boundary so Google doesn't
- * truncate it in SERPs. If the title already fits, returns it unchanged.
+ * Segment-aware title clamp. Sprint 1 FIX 1 rewrite.
  *
- * Policy: preserve the trailing " | Brand" suffix and trim the body instead
- * of dropping the brand. Brand recall is the largest CTR lever over time.
- * If the body cannot be word-boundary-trimmed while staying ≥ (max - 12)
- * chars, fall back to the old behaviour (drop brand) and log a console
- * warning tagged with the page slug.
+ * Invariants:
+ *   1. The trailing " | brand" suffix is RESERVED first and never dropped.
+ *   2. Body segments are dropped as WHOLE units (never split mid-segment).
+ *      A segment is anything between two ", " separators after the first
+ *      ": ". Segments to the right (lower priority) drop before segments
+ *      to the left. Callers are expected to compose titles in priority
+ *      order so that the fee-bearing segment sits leftmost.
+ *   3. The clamped title never ends on a trailing comma, ampersand,
+ *      opening bracket, or partial word.
+ *
+ * If the whole title already fits inside `max`, it is returned unchanged.
+ * If even the anchor plus brand overflows, the anchor is trimmed at a
+ * word boundary and any orphan trailing punctuation is stripped.
  */
-export function clampTitle(title: string, max = 60, slug?: string): string {
+const TRAILING_PUNCT_RE = /[,&(\[\-]+\s*$/
+const HAS_OPEN_BRACKET_UNCLOSED = /\[[^\]]*$/
+
+function stripTrailingJunk(s: string): string {
+  let out = s.trim()
+  // Repeatedly strip commas/ampersands/hyphens/opening brackets from tail
+  while (TRAILING_PUNCT_RE.test(out)) {
+    out = out.replace(TRAILING_PUNCT_RE, '').trim()
+  }
+  // If we left an unclosed "[" (e.g. "[Review" without the closing "]"),
+  // strip that partial token so the title never ends mid-hook.
+  if (HAS_OPEN_BRACKET_UNCLOSED.test(out)) {
+    out = out.replace(HAS_OPEN_BRACKET_UNCLOSED, '').trim()
+    out = out.replace(TRAILING_PUNCT_RE, '').trim()
+  }
+  return out
+}
+
+export function clampTitle(title: string, max = 60, _slug?: string): string {
   if (title.length <= max) return title
 
   const sepIdx = title.lastIndexOf(' | ')
-  if (sepIdx > 0) {
-    const body = title.slice(0, sepIdx)
-    const brandSuffix = title.slice(sepIdx) // includes leading " | "
-    const minBodyLen = max - 12 // 48 when max = 60
-    const maxBodyLen = max - brandSuffix.length
+  const brand  = sepIdx > 0 ? title.slice(sepIdx) : ''
+  const body   = sepIdx > 0 ? title.slice(0, sepIdx) : title
+  const bodyBudget = max - brand.length
 
-    if (maxBodyLen >= minBodyLen) {
-      const trimmedBody = body.length <= maxBodyLen
-        ? body
-        : body.substring(0, maxBodyLen).replace(/\s+\S*$/, '').trim()
-      if (trimmedBody.length >= minBodyLen) {
-        return trimmedBody + brandSuffix
-      }
-    }
-
-    // eslint-disable-next-line no-console
-    console.warn(`[clampTitle] dropped brand suffix; body cannot fit within ${max} chars (slug=${slug ?? 'unknown'})`)
-    if (body.length <= max) return body
-    return clampTitle(body, max, slug)
+  // Pathological: brand alone exceeds max. Return brand-less body trimmed.
+  if (bodyBudget <= 0) {
+    return stripTrailingJunk(body.substring(0, max).replace(/\s+\S*$/, ''))
   }
 
-  return title.substring(0, max).replace(/\s+\S*$/, '').trim()
+  // Split body into anchor (everything before the first ": ") + segments.
+  const colonIdx = body.indexOf(': ')
+  const anchor   = colonIdx > 0 ? body.slice(0, colonIdx) : body
+  const tailRaw  = colonIdx > 0 ? body.slice(colonIdx + 2) : ''
+
+  if (!tailRaw) {
+    // No tail to drop; word-trim the anchor.
+    const trimmed = body.length <= bodyBudget
+      ? body
+      : body.substring(0, bodyBudget).replace(/\s+\S*$/, '').trim()
+    return stripTrailingJunk(trimmed) + brand
+  }
+
+  // Segments are comma-delimited. Tokens like "[Review]" that follow a
+  // space (not a comma) travel with the preceding segment.
+  const segments = tailRaw.split(/,\s*/)
+
+  // Greedy drop from the RIGHT until the assembly fits.
+  for (let n = segments.length; n >= 1; n--) {
+    const chosen   = segments.slice(0, n)
+    const assembled = `${anchor}: ${chosen.join(', ')}`
+    if (assembled.length <= bodyBudget) {
+      return stripTrailingJunk(assembled) + brand
+    }
+  }
+
+  // Not even one segment fits. Fall back to anchor alone (word-trimmed).
+  let anchorOnly = anchor
+  if (anchorOnly.length > bodyBudget) {
+    anchorOnly = anchorOnly.substring(0, bodyBudget).replace(/\s+\S*$/, '').trim()
+  }
+  return stripTrailingJunk(anchorOnly) + brand
 }
 
 /**
- * Clamp a meta description to ≤160 chars at a sentence/word boundary.
- * Google truncates around 155-160 chars on desktop. If the description already
- * fits, returns it unchanged.
+ * Meta description clamp. Final-sprint FIX 3.
+ *
+ * Contract: never cut mid-sentence. Aim for 140-160 visible chars where
+ * content is available. `max` (default 160) is a soft target; a hard
+ * ceiling of `max + HARD_CEILING_TOLERANCE` (default 175) lets us keep
+ * a complete final sentence when it overruns the soft target by a small
+ * amount rather than truncating to a shorter fragment. Any description
+ * beyond the hard ceiling is clamped at the last sentence boundary
+ * inside the soft target, or (fallback only) at a word boundary.
  */
-export function clampDescription(desc: string, max = 158): string {
+const HARD_CEILING_TOLERANCE = 15  // 160 soft + 15 = 175 hard
+
+export function clampDescription(desc: string, max = 160): string {
   if (desc.length <= max) return desc
-  const truncated = desc.substring(0, max).replace(/\s+\S*$/, '').trim()
-  // Strip trailing punctuation if the last visible char is a comma/dash
-  return truncated.replace(/[,\-]\s*$/, '').trim()
+  // Within soft-target + ceiling tolerance: keep the full desc rather
+  // than dropping a trailing sentence that would land us in the 100-120c
+  // "under-filled" zone.
+  if (desc.length <= max + HARD_CEILING_TOLERANCE) return desc
+
+  const slice = desc.substring(0, max)
+  const lastDot  = slice.lastIndexOf('.')
+  const lastExcl = slice.lastIndexOf('!')
+  const lastQ    = slice.lastIndexOf('?')
+  const boundary = Math.max(lastDot, lastExcl, lastQ)
+  if (boundary >= Math.floor(max * 0.6)) {
+    return slice.substring(0, boundary + 1).trim()
+  }
+  const wordTrimmed = slice.replace(/\s+\S*$/, '').trim()
+  return stripTrailingJunk(wordTrimmed)
 }

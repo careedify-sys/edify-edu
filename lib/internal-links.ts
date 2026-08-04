@@ -98,6 +98,18 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       ],
     },
   },
+  // Sprint 1 Task 5: added so the Jamia Hamdard MBA hub links back to the review blog.
+  'jamia-hamdard-online': {
+    mba: {
+      universityName: 'JAMIA HAMDARD Online',
+      shortName: 'Jamia Hamdard',
+      programPage: '/universities/jamia-hamdard-online/mba',
+      verifyPage: '/verify/jamia-hamdard-online',
+      blogs: [
+        { slug: 'jamia-hamdard-mba-2026', label: 'Jamia Hamdard Online MBA Review 2026: Worth It or Skip It?' },
+      ],
+    },
+  },
   'sikkim-manipal-university-online': {
     mba: {
       universityName: 'Sikkim Manipal University Online',

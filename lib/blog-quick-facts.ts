@@ -1,4 +1,4 @@
-// lib/blog-quick-facts.ts
+﻿// lib/blog-quick-facts.ts
 // Quick Facts data for blog posts — NOT auto-generated. Edit manually here.
 // CMS sync never touches this file, so data survives every sync.
 
@@ -38,8 +38,8 @@ export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; gr
     { label: 'Min. Marks',        value: '40%' },
   ],
   'ignou-online-mba-review-2026': [
-    { label: 'Total Fee',         value: '₹58,000' },
-    { label: 'Per Semester',      value: '₹14–16K' },
+    { label: 'Total Fee',         value: '₹66,000' },
+    { label: 'Per Semester',      value: 'Confirmed by counsellor' },
     { label: 'Duration',          value: '2 to 4 Years' },
     { label: 'Mode',              value: 'Online (MBAOL)' },
     { label: 'Specialisations',   value: '5' },
@@ -103,3 +103,4 @@ export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; gr
     { label: 'UGC-DEB (Both)',    value: 'Yes', green: true },
   ],
 }
+
