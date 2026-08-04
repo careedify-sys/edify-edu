@@ -1616,12 +1616,11 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'ignou-online-mba-review-2026',
-    // Sprint 1 Task 5: blog owns the "review" intent, hub page owns "fees" intent.
-    // Fee amount removed from seoTitle so the review blog stops competing with the fee-led hub title.
-    // NEEDS-VERIFICATION: blog body FAQ still quotes ₹58,000 whereas lib/data.ts:8757 has ₹66,000.
+    // Sprint 1 revert: title/seoTitle/metaDescription reverted to pre-Sprint values
+    // pending a separate A/B test. Cross-link callout at top of content field kept.
     title: 'IGNOU Online MBA: Is It Still Worth It in 2026?',
-    seoTitle: 'IGNOU Online MBA Review 2026: Honest Verdict, Placement Reality | edifyedu.in',
-    metaDescription: 'IGNOU Online MBA in 2026: validity, placement reality, honest verdict for working professionals. Full verified fee structure on the programme page.',
+    seoTitle: 'IGNOU Online MBA Review 2026: Rs 66K Fees, Zero Placement Cell',
+    metaDescription: 'IGNOU Online MBA costs ₹66,000 total. But is it still worth it in 2026? Validity, placement reality, honest verdict.',
     category: 'University Review',
     tags: ['online mba ignou', 'ignou distance mba', 'ignou mba correspondence', 'mba distance learning ignou', 'ignou mbaol', 'ignou mba 2026'],
     publishedAt: '2026-03-29',
@@ -18949,11 +18948,11 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'amity-online-mba-review-2026',
-    // Sprint 1 Task 5: blog owns the "review" intent, hub page owns "fees" intent.
-    // Word "Fees" removed from title; verified fee data lives on the hub page.
-    title: 'Amity Online MBA Review 2026: Worth It for International Careers?',
-    seoTitle: 'Amity Online MBA Review 2026: Honest Verdict, Placement Reality | edifyedu.in',
-    metaDescription: 'Amity Online MBA honest review: 14 specialisations, WASC and QAA accreditation, placement reality from real student feedback. Zero commission, verified data.',
+    // Sprint 1 revert: title/seoTitle/metaDescription reverted to pre-Sprint values
+    // pending a separate A/B test. Cross-link callout at top of content field kept.
+    title: 'Amity University Online MBA Fees 2026: ₹2.07L Review and Honest Assessment',
+    seoTitle: 'Amity Online MBA Review 2026: Best Pick for International Careers?',
+    metaDescription: 'Amity Online MBA honest review: ₹2.07L to ₹4.49L fees, 14 specialisations, placement reality from real student feedback. Zero commission.',
     category: 'University Reviews',
     tags: ['amity online mba', 'amity online mba review', 'amity mba online fees', 'amity online mba placements', 'amity online mba worth it', 'amity university mba eligibility', 'amity university noida mba fees and placement', 'mba in amity university fees'],
     readTime: 25,
