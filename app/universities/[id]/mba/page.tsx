@@ -20,7 +20,15 @@ export async function generateMetadata(
   const u = getUniversityById(id)
   if (!u || !u.programs.includes('MBA')) return { title: 'Not Found', robots: { index: false, follow: false } }
 
-  const override = MBA_SEO_OVERRIDES[id]
+  // Final-sprint FIX 2: overrides bypassed when getDisplayFee flags the
+  // data as inconsistent. This prevents a static override string from
+  // shipping a fee number that the canonical fee source cannot back
+  // (e.g. Galgotias MBA override said ₹76K-₹86K while pd.fees only
+  // backs ₹76.2K; Chandigarh MBA override said ₹1.65L-₹2.2L while
+  // pd.fees caps at ₹1.80L). When suppressed we fall through to the
+  // generic template which renders the counsellor-CTA path.
+  const feePreCheck = getDisplayFee(u, 'MBA')
+  const override = feePreCheck.ok ? MBA_SEO_OVERRIDES[id] : undefined
   if (override) {
     const kw = [
       `${u.name} online MBA fees`,
@@ -186,7 +194,11 @@ export default async function OnlineMBAPage(
   const pd = u.programDetails['MBA']
   if (!u.programs.includes('MBA') || !pd) notFound()
 
-  const override = MBA_SEO_OVERRIDES[id]
+  // Same override bypass as generateMetadata: when the fee suppression
+  // fires, drop the override so the H1/intro also route through the
+  // generic template rather than displaying an unbacked fee number.
+  const bodyFee = getDisplayFee(u, 'MBA')
+  const override = bodyFee.ok ? MBA_SEO_OVERRIDES[id] : undefined
   return (
     <>
       <MBAProgramSchema u={u} pd={pd} />

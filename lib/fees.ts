@@ -126,6 +126,33 @@ export function checkFeeConsistency(u: University, program: Program):
     return { ok: true }
   }
 
+  // Final-sprint FIX 2: never display a fee whose upper bound is not
+  // backed by pd.fees. If pd.fees is a single value but the reference
+  // source is a range (e.g. Galgotias MBA pd.fees "₹76.2K" vs feeMin/
+  // feeMax 76200-86400), suppress regardless of tolerance.
+  if (parsed.min === parsed.max && refMax > refMin) {
+    return {
+      ok: false,
+      reason: `pd.fees "${pd.fees}" is single value ${parsed.min} but ${refLabel} is a range; upper bound unbacked`,
+      parsedMin: parsed.min,
+      parsedMax: parsed.max,
+    }
+  }
+
+  // Also suppress when the two sources differ by more than 25%, even
+  // within the width-sanity threshold. Catches IGNOU MCA ₹27,000 vs
+  // programFees.mca 50,800 (47%) and BCA ₹21,600 vs 49,800 (57%).
+  const minRatio = Math.abs(parsed.min - refMin) / Math.max(refMin, 1)
+  const maxRatio = Math.abs(parsed.max - refMax) / Math.max(refMax, 1)
+  if (minRatio > 0.25 || maxRatio > 0.25) {
+    return {
+      ok: false,
+      reason: `pd.fees "${pd.fees}" (${parsed.min}-${parsed.max}) differs from ${refLabel} by >25%`,
+      parsedMin: parsed.min,
+      parsedMax: parsed.max,
+    }
+  }
+
   const minDiff = Math.abs(parsed.min - refMin)
   const maxDiff = Math.abs(parsed.max - refMax)
   if (minDiff > tol(refMin) || maxDiff > tol(refMax)) {
