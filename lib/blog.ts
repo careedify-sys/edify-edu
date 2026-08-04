@@ -1616,9 +1616,12 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'ignou-online-mba-review-2026',
+    // Sprint 1 Task 5: blog owns the "review" intent, hub page owns "fees" intent.
+    // Fee amount removed from seoTitle so the review blog stops competing with the fee-led hub title.
+    // NEEDS-VERIFICATION: blog body FAQ still quotes ₹58,000 whereas lib/data.ts:8757 has ₹66,000.
     title: 'IGNOU Online MBA: Is It Still Worth It in 2026?',
-    seoTitle: 'IGNOU Online MBA Review 2026: Rs 58K Fees, Zero Placement Cell',
-    metaDescription: 'IGNOU Online MBA costs ₹58,000 total. But is it still worth it in 2026? Validity, placement reality, honest verdict.',
+    seoTitle: 'IGNOU Online MBA Review 2026: Honest Verdict, Placement Reality | edifyedu.in',
+    metaDescription: 'IGNOU Online MBA in 2026: validity, placement reality, honest verdict for working professionals. Full verified fee structure on the programme page.',
     category: 'University Review',
     tags: ['online mba ignou', 'ignou distance mba', 'ignou mba correspondence', 'mba distance learning ignou', 'ignou mbaol', 'ignou mba 2026'],
     publishedAt: '2026-03-29',
@@ -1640,7 +1643,8 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     ctaTitle: '',
     ctaDesc: '',
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. IGNOU MBAOL programme data verified from iop.ignouonline.ac.in, ignou.ac.in, UGC-DEB approved list (deb.ugc.ac.in), AICTE approval list, NAAC database, plus student feedback from Quora, Reddit, plus PissedConsumer aggregated reviews.</em></p>
+    content: `<div style="background:#fef3c7;border-left:4px solid #f97316;border-radius:6px;padding:12px 16px;margin:0 0 20px;font-size:14px;color:#78350f"><strong>Looking for the current fee?</strong> The full verified fee structure, semester-wise breakdown, and EMI options live on the <a href="/universities/ignou-online/mba" style="color:#0f172a;font-weight:700;text-decoration:underline">IGNOU Online MBA programme page</a>.</div>
+<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. IGNOU MBAOL programme data verified from iop.ignouonline.ac.in, ignou.ac.in, UGC-DEB approved list (deb.ugc.ac.in), AICTE approval list, NAAC database, plus student feedback from Quora, Reddit, plus PissedConsumer aggregated reviews.</em></p>
 
 <div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">IGNOU has the lowest fee at Rs 58,000. No coupon needed.</p><a href="/coupons/ignou-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View IGNOU Coupon Code</a></div>
 
@@ -18250,9 +18254,11 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'jamia-hamdard-mba-2026',
-    title: 'Jamia Hamdard Online MBA Fees 2026: ₹1.03L Review and Honest Take',
-    seoTitle: 'Jamia Hamdard Online MBA Fees 2026: ₹1.03L, NAAC A+ Review',
-    metaDescription: 'Jamia Hamdard online MBA 2026: ~Rs 1.03L total, NAAC A+, NIRF 47 (University), Hospital and Healthcare Management edge nobody else offers online.',
+    // Sprint 1 Task 5: blog owns the "review" intent, hub page owns "fees" intent.
+    // Word "Fees" removed from title/seoTitle; verified fee data lives on the hub page.
+    title: 'Jamia Hamdard Online MBA Review 2026: Worth It or Skip It?',
+    seoTitle: 'Jamia Hamdard Online MBA Review 2026: Honest Verdict | edifyedu.in',
+    metaDescription: 'Jamia Hamdard online MBA 2026 review: NAAC A+, NIRF 47 (University), Hospital and Healthcare Management edge nobody else offers online. Honest verdict, zero commission.',
     category: 'University Reviews',
     tags: ['jamia hamdard mba', 'online mba delhi', 'jamia hamdard online mba', 'ugc deb mba delhi', 'affordable mba india', 'Jamia Hamdard MBA Fees', 'Jamia Hamdard Online MBA Review', 'Jamia Hamdard MBA 2026'],
     readTime: 8,
@@ -18272,7 +18278,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Is Jamia Hamdard online MBA worth it compared to Amity or NMIMS?', a: 'For Delhi NCR working professionals with budget under Rs 1.5 lakh, Jamia Hamdard is among the strongest value options. NAAC A+ at Rs 1.03 lakh undercuts most alternatives. The trade-off: 4 standard specialisations versus 19 at Amity or 8-plus at NMIMS. Choose Jamia Hamdard for value, Delhi NCR brand, and traditional specialisations. Choose Amity or NMIMS for broader specialisation choice and stronger pan-India brand recognition.' },
       { q: 'Can I do the Jamia Hamdard online MBA while working full time?', a: 'Yes. The LMS-based format with live weekend sessions and recorded lectures is designed for working professionals. Physical presence at the campus is required only for semester-end exams (typically 1-2 days twice a year). Most students complete in 2 years working alongside full-time jobs. Extension to 3-4 years is allowed for those needing extra time.' }
     ],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Programme data verified from jamiahamdardonline.in, deb.ugc.ac.in, naac.gov.in, NIRF 2025 rankings, and the current edifyedu.in Jamia Hamdard university profile.</em></p>
+    content: `<div style="background:#fef3c7;border-left:4px solid #f97316;border-radius:6px;padding:12px 16px;margin:0 0 20px;font-size:14px;color:#78350f"><strong>Looking for the current fee?</strong> The full verified fee structure, semester-wise breakdown, and EMI options live on the <a href="/universities/jamia-hamdard-online/mba" style="color:#0f172a;font-weight:700;text-decoration:underline">Jamia Hamdard Online MBA programme page</a>.</div>
+<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Programme data verified from jamiahamdardonline.in, deb.ugc.ac.in, naac.gov.in, NIRF 2025 rankings, and the current edifyedu.in Jamia Hamdard university profile.</em></p>
 
 <p>Most "Jamia Hamdard MBA" articles either confuse the university with <a href="/universities/jamia-millia-islamia-online">Jamia Millia Islamia</a>, or skip the most important question: should you pick Jamia Hamdard's online MBA over Amity, NMIMS, or Manipal University Jaipur at a similar price point. This guide answers that with the live fee, NAAC, and NIRF data on edifyedu.in, plus the Delhi NCR network advantage that competitor blogs ignore.</p>
 
@@ -18942,9 +18949,11 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'amity-online-mba-review-2026',
-    title: 'Amity University Online MBA Fees 2026: ₹2.07L Review and Honest Assessment',
-    seoTitle: 'Amity Online MBA Review 2026: Best Pick for International Careers?',
-    metaDescription: 'Amity Online MBA honest review: ₹2.07L to ₹4.49L fees, 14 specialisations, placement reality from real student feedback. Zero commission.',
+    // Sprint 1 Task 5: blog owns the "review" intent, hub page owns "fees" intent.
+    // Word "Fees" removed from title; verified fee data lives on the hub page.
+    title: 'Amity Online MBA Review 2026: Worth It for International Careers?',
+    seoTitle: 'Amity Online MBA Review 2026: Honest Verdict, Placement Reality | edifyedu.in',
+    metaDescription: 'Amity Online MBA honest review: 14 specialisations, WASC and QAA accreditation, placement reality from real student feedback. Zero commission, verified data.',
     category: 'University Reviews',
     tags: ['amity online mba', 'amity online mba review', 'amity mba online fees', 'amity online mba placements', 'amity online mba worth it', 'amity university mba eligibility', 'amity university noida mba fees and placement', 'mba in amity university fees'],
     readTime: 25,
@@ -18961,7 +18970,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'What is the difference between Amity Online MBA and distance MBA?', a: 'Amity Online MBA is delivered through live interactive sessions on the AMIGO learning platform with real-time faculty interaction. The earlier distance MBA format used self-study material with limited contact sessions. The current online format is the one Amity offers for 2026 admissions.' },
       { q: 'Which specialisations does Amity Online MBA offer in 2026?', a: 'Amity offers 14 specialisations: Business Analytics, Data Science, Digital Marketing Management, Entrepreneurship and Leadership Management, Finance and Accounting Management, HR Management, IT Management, International Business Management, International Finance (ACCA), Marketing and Sales Management, Production and Operations Management, Hospital and Healthcare Management, Construction Project Management, and General Management.' }
     ],
-    content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Verified coupon: up to Rs 5,000 off Amity Online MBA. Max amount unlocks every Tuesday and Saturday (IST).</p><a href="/coupons/amity-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View Amity Coupon Code</a></div>
+    content: `<div style="background:#fef3c7;border-left:4px solid #f97316;border-radius:6px;padding:12px 16px;margin:0 0 20px;font-size:14px;color:#78350f"><strong>Looking for the current fee?</strong> The full verified fee structure, semester-wise breakdown, and EMI options live on the <a href="/universities/amity-university-online/mba" style="color:#0f172a;font-weight:700;text-decoration:underline">Amity Online MBA programme page</a>.</div>
+<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Verified coupon: up to Rs 5,000 off Amity Online MBA. Max amount unlocks every Tuesday and Saturday (IST).</p><a href="/coupons/amity-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View Amity Coupon Code</a></div>
 
 
 <p style="font-size:14px;color:#6b7280;margin-bottom:24px"><em>Updated April 2026 · 12 min read · Fees verified from official Amity Online portal</em></p>

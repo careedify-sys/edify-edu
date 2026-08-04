@@ -24,7 +24,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       comparePage: '/compare?a=amity-university-online&b=nmims-online',
       verifyPage: '/verify/amity-university-online',
       blogs: [
-        { slug: 'amity-online-mba-review-2026', label: 'Amity Online MBA Review 2026: Fees, Specialisations and Honest Verdict' },
+        { slug: 'amity-online-mba-review-2026', label: 'Amity Online MBA Review 2026: Worth It for International Careers?' },
         { slug: 'amity-online-mba-hr-worth-it', label: 'Is Amity Online MBA in HR Worth It? Honest Verdict 2026' },
       ],
     },
@@ -94,7 +94,20 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       programPage: '/universities/ignou-online/mba',
       verifyPage: '/verify/ignou-online',
       blogs: [
-        { slug: 'ignou-online-mba-review-2026', label: 'IGNOU Online MBA Review 2026: Fees, Admission and Honest Verdict' },
+        // Sprint 1 Task 5: label updated to match revised blog title (review intent).
+        { slug: 'ignou-online-mba-review-2026', label: 'IGNOU Online MBA: Is It Still Worth It in 2026?' },
+      ],
+    },
+  },
+  // Sprint 1 Task 5: added so the Jamia Hamdard MBA hub links back to the review blog.
+  'jamia-hamdard-online': {
+    mba: {
+      universityName: 'JAMIA HAMDARD Online',
+      shortName: 'Jamia Hamdard',
+      programPage: '/universities/jamia-hamdard-online/mba',
+      verifyPage: '/verify/jamia-hamdard-online',
+      blogs: [
+        { slug: 'jamia-hamdard-mba-2026', label: 'Jamia Hamdard Online MBA Review 2026: Worth It or Skip It?' },
       ],
     },
   },
