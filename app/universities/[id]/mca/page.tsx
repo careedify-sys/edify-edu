@@ -6,6 +6,7 @@ import type { ProgramDetail } from '@/lib/data'
 import { getTitleName, getShortTitleName, clampTitle, clampTitleFeeLed, clampDescription } from '@/lib/seo-title'
 import { getDisplayFee } from '@/lib/fees'
 import { shouldIndexProgrammeHub } from '@/lib/seo/should-index'
+import { getProgramSchemaOffer, getProgramSchemaFeeFragment } from '@/lib/seo/program-schema'
 import { getMasterSyllabus } from '@/lib/content'
 import UniProgramBody from '@/components/UniProgramBody'
 import { pageKeywords } from '@/lib/page-keywords'
@@ -75,7 +76,7 @@ function MCAProgramSchema({
     '@context': 'https://schema.org',
     '@type': 'EducationalOccupationalProgram',
     name: `${u.name} Online MCA`,
-    description: `UGC-DEB approved Online MCA from ${u.name}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations, fees ${pd.fees || `from ₹${Math.round(u.feeMin / 1000)}K`}.`,
+    description: `UGC-DEB approved Online MCA from ${u.name}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'MCA')}.`,
     url: pageUrl,
     provider: {
       '@type': 'CollegeOrUniversity',
@@ -86,22 +87,8 @@ function MCAProgramSchema({
     timeToComplete: `P${durationYears}Y`,
   }
 
-  if (u.feeMin) {
-    programSchema.offers = u.feeMax && u.feeMax !== u.feeMin
-      ? {
-          '@type': 'AggregateOffer',
-          lowPrice: String(u.feeMin),
-          highPrice: String(u.feeMax),
-          priceCurrency: 'INR',
-          availability: 'https://schema.org/InStock',
-        }
-      : {
-          '@type': 'Offer',
-          price: String(u.feeMin),
-          priceCurrency: 'INR',
-          availability: 'https://schema.org/InStock',
-        }
-  }
+  const offer = getProgramSchemaOffer(u, 'MCA')
+  if (offer) programSchema.offers = offer
 
   if (kw) programSchema.keywords = kw
 

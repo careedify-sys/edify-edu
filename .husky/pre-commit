@@ -9,6 +9,13 @@ node scripts/verify-fees.js || exit 1
 echo "pre-commit: check-em-dash"
 node scripts/check-em-dash.js || exit 1
 
+# Sprint 3 Fix 2b: per-file em-dash baseline across app/**/*.tsx and
+# components/**/*.tsx. Mirrors the fee-mismatch baseline mechanic.
+# Blocks any commit that raises a file above its allowed count. Auto-drops
+# the baseline (and stages it) when counts fall.
+echo "pre-commit: check-em-dash-baseline"
+node scripts/check-em-dash-baseline.mjs || exit 1
+
 # Sprint 2 Phase A: rising-count gate on getDisplayFee suppressions.
 # Blocks any commit that raises the mismatch total above the baseline in
 # data/fee-mismatch-baseline.json. Baseline is auto-updated on decrease.
