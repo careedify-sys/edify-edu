@@ -1,5 +1,15 @@
 {
-  "_note": "Universities whose data needs official-portal verification. Fee entries cleared 2026-07-21. Data mismatches added 2026-07-21 from consolidation 2 cross-check.",
+  "_note": "Universities whose data needs official-portal verification. Fee entries cleared 2026-07-21. Data mismatches added 2026-07-21 from consolidation 2 cross-check. .allow entries added 2026-08-04 (Sprint 2 Phase A): known lib/data.ts vs fees-hub-data.json drift pending fees-hub-data.json sync; verify-fees.js warns instead of blocking so the ported hook doesn't block every commit before the hub JSON is resynced.",
+  "allow": [
+    { "id": "lovely-professional-university-online", "reason": "data.ts corrected to 161600-200000 (verified). fees-hub-data.json still shows 161000-200000. Pending hub sync." },
+    { "id": "shoolini-university-online", "reason": "data.ts corrected to 118000-130000 (verified). fees-hub-data.json still shows 110000-110000. Pending hub sync." },
+    { "id": "sharda-university-online", "reason": "data.ts corrected to 140000-154500 (verified). fees-hub-data.json still shows 150000-150000. Pending hub sync." },
+    { "id": "vignan-university-online", "reason": "data.ts corrected to 90000-90000 (verified). fees-hub-data.json still shows 110000-110000. Pending hub sync." },
+    { "id": "uttaranchal-university-online", "reason": "data.ts corrected to 94000-98000 (verified). fees-hub-data.json still shows 110000-110000. Pending hub sync." },
+    { "id": "srm-institute-science-technology-online", "reason": "data.ts corrected to 150000-189000 (verified). fees-hub-data.json still shows 60000-189000. Pending hub sync." },
+    { "id": "gla-university-online", "reason": "data.ts corrected to 140000-220000 (verified). fees-hub-data.json still shows 60000-200000. Pending hub sync." },
+    { "id": "ignou-online", "reason": "data.ts corrected to 66000-66000 (verified). fees-hub-data.json still shows 9600-66000. Pending hub sync." }
+  ],
   "pending": [],
   "data_mismatches": [
     {

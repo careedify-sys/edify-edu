@@ -10,6 +10,8 @@
     "lint": "next lint",
     "build:urls": "node scripts/build-valid-urls.js",
     "check:fees": "tsx scripts/check-fee-mismatches.mjs",
+    "prepare": "git config core.hooksPath .husky || exit 0",
+    "verify:fees": "node scripts/verify-fees.js",
     "indexnow:notify-all": "tsx scripts/notify-sitemap-to-indexnow.ts",
     "audit": "node scripts/audit-site.js"
   },

@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import type { Program, ProgramDetail } from '@/lib/data'
 import UniProgramBody from '@/components/UniProgramBody'
-import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
+import { getTitleName, getShortTitleName, clampTitle, clampTitleFeeLed, clampDescription } from '@/lib/seo-title'
 import { getDisplayFee } from '@/lib/fees'
 import { pageKeywords } from '@/lib/page-keywords'
 
@@ -51,11 +51,16 @@ export async function generateMetadata(
   const year = new Date().getFullYear()
   const pd = u.programDetails[program]
   const titleName = getTitleName(u.id, u.name, u.abbr)
+  const shortName = getShortTitleName(u.id, u.shortName, u.name, u.abbr)
   const fee = getDisplayFee(u, program)
   const specCount = pd?.specs?.length || 0
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
   const title = fee.ok
-    ? clampTitle(`${titleName} Online ${program} Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`)
+    ? clampTitleFeeLed(
+        `${titleName} Online ${program} Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`,
+        `${shortName} Online ${program} Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`,
+        fee.compact ?? null,
+      )
     : clampTitle(`${titleName} Online ${program} ${year}: NAAC ${u.naac} [Review] | edifyedu.in`)
   let description = fee.ok
     ? `${titleName} Online ${program} ${year}: ${fee.compact} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. See honest review and syllabus.`

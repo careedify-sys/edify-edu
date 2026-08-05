@@ -72,6 +72,15 @@ const NO_MBA_DATA_UNIS = new Set([
   'university-of-mumbai-online',
 ])
 
+// Removed uni x programme pairs. The Excel still has rows for them, but the
+// programme no longer exists in data.ts and its URLs are permanently 301'd in
+// lib/data/redirects.json. Skip so they never appear in valid-urls.json or
+// sitemap. Add to this set any time a phantom programme is retired.
+const REMOVED_UNI_PROG = new Set([
+  'chitkara-university-online/bca',  // 2026-08-05: Chitkara Online never offered BCA
+  'chitkara-university-online/bcom', // 2026-08-05: Chitkara Online never offered B.Com
+])
+
 // Slug remap: when the Excel carries a legacy slug that has been renamed in
 // data.ts, translate here so the emitted sitemap uses the current slug. The
 // middleware handles the corresponding 301/308 for any legacy URL that still
@@ -187,6 +196,7 @@ for (const row of rows) {
   if (!uniSlug || !program) { skipped++; continue }
   if (!VALID_PROGRAMS.has(program)) { skipped++; continue }
   if (REDIRECT_SOURCES.has(uniSlug)) { skipped++; continue }
+  if (REMOVED_UNI_PROG.has(`${uniSlug}/${program}`)) { skipped++; continue }
 
   // Skip MBA spec pages for universities without MBA data (pages redirect)
   if (program === 'mba' && specSlug && NO_MBA_DATA_UNIS.has(uniSlug)) { skipped++; continue }

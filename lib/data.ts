@@ -48,6 +48,13 @@ export interface UniFeature {
 export interface University {
   id: string
   name: string
+  /**
+   * Optional short form the university brands itself with (e.g. how it's
+   * signed in its own logo or domain). Used only when the full name would
+   * push the fee segment out of a title. Never invent an abbreviation;
+   * only add when a real brand form is shorter than the legal name.
+   */
+  shortName?: string
   logo?: string
   abbr: string
   city: string
@@ -569,6 +576,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'dy-patil-university-online',
+    programFees: { bba: { fee: 130000 }, bca: { fee: 132000 } }, // Sprint 2 verified 2026-08-04: BBA 130000, BCA 132000 (per-sem 22000)
     logo: '/logos/university_logos/dy-patil-university-navi-mumbai-logo.svg',
     name: 'D.Y. Patil University, Navi Mumbai Online',
     abbr: 'DPUNM',
@@ -606,7 +614,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['General Management', 'Aviation', 'Travel & Tourism', 'Marketing', 'Logistics', 'Event Mgmt', 'Sports Mgmt', 'Retail Ops', 'Hospital Mgmt', 'Invest Bank'],
-        fees: '₹60K – ₹200K',
+        fees: '₹1,30,000',
         duration: '3 Years',
         roles: ['Management Trainee', 'Sales Executive', 'HR Executive', 'Operations Coordinator'],
         avgSalary: '₹2.5L – ₹6L per annum',
@@ -616,7 +624,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ['Web Development', 'Data Science', 'Cloud Technology & Information Security', 'Artificial Intelligence', 'Full Stack Development'],
-        fees: '₹60K – ₹200K',
+        fees: '₹1,32,000',
         duration: '3 Years',
         roles: ['Software Developer', 'Web Developer', 'Database Administrator', 'IT Support', 'Data Analyst'],
         avgSalary: '₹3L – ₹8L per annum',
@@ -1234,7 +1242,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'galgotias-university-online',
-    programFees: { bca: { fee: 83200 }, mca: { fee: 74000 } }, // BCA all-in: ₹69K tuition + ₹1,200 reg + ₹12K exam (₹4K/yr × 3) + ₹1K alumni
+    shortName: 'Galgotias', // uses "Galgotias" in its own domain galgotias.edu.in
+    programFees: { bba: { fee: 77200 }, bca: { fee: 83200 }, mca: { fee: 74000 } }, // Sprint 2 verified 2026-08-04: BBA 77200 (yearly tuition 21000 + reg 1200 + exam 12000). BCA all-in: 83200 (yearly tuition 23000 + reg 1200 + exam 12000)
     logo: '/logos/university_logos/galgotias-university-logo.svg',
     name: 'Galgotias University Online',
     abbr: 'GUO',
@@ -1284,7 +1293,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Operations Management'],
-        fees: '₹77K – ₹77K',
+        fees: '₹77,200',
         duration: '3 Yrs',
         roles: ['Marketing Trainee', 'Brand Assistant', 'Digital Marketing Executive'],
         avgSalary: '₹3L – ₹8L per annum',
@@ -1294,7 +1303,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ['General Management', 'Elective-based (Generative AI', 'IoT', 'Blockchain)'],
-        fees: '₹83K – ₹83K',
+        fees: '₹83,200',
         duration: '3 Yrs',
         roles: ['Web Developer Trainee', 'Java Developer', 'Software Tester', 'ML Trainee'],
         avgSalary: '₹3L – ₹10L per annum',
@@ -1534,7 +1543,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     description: 'UGC DEB approved online programs from Chitkara University – Centre for Distance and. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Finance professionals targeting senior roles', 'BFSI aspirants', 'CFA/CFP study'],
     notFor: ['Non-quantitative learners', 'Campus experience seekers'],
-    programs: ['MBA', 'BBA', 'BCA', 'B.Com'],
+    programs: ['MBA', 'BBA'],
     programDetails: {
       'MBA': {
         specs: ['Finance', 'Marketing', 'Pharmaceutical Management', 'Human Resource Management', { slug: 'international-finance-accounting', name: 'International Finance & Accounting' }, { slug: 'cyber-security', name: 'Cyber Security' }, { slug: 'data-science-artificial-intelligence', name: 'Data Science & AI' }, { slug: 'global-accounting', name: 'Global Accounting' }],
@@ -1555,26 +1564,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BBA from Chitkara University – Centre for Di — recognised for corporate hiring.',
       },
-      'BCA': {
-        specs: ['AI & Machine Learning', 'Cyber Security', 'Data Science'],
-        fees: '₹60K – ₹200K',
-        duration: '3 Yrs',
-        roles: ['ML Analyst', 'Junior Data Scientist', 'AI Developer Trainee', 'NLP Engineer Trainee'],
-        avgSalary: '₹3L – ₹10L per annum',
-        topCompanies: ['Google', 'Amazon', 'Deloitte', 'Adobe', 'Microsoft', 'PolicyBazaar', 'Accenture', 'Kohler', 'Electrolux', '500+ recruiters'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Chitkara University – Centre for Di — recognised for corporate hiring.',
-      },
-      'B.Com': {
-        specs: ['Applied Finance'],
-        fees: '₹60K – ₹200K',
-        duration: '3 Yrs',
-        roles: ['Accounts Executive', 'Tax Trainee', 'Banking Trainee', 'Audit Trainee'],
-        avgSalary: '₹2.5L – ₹7L per annum',
-        topCompanies: ['Google', 'Amazon', 'Deloitte', 'Adobe', 'Microsoft', 'PolicyBazaar', 'Accenture', 'Kohler', 'Electrolux', '500+ recruiters'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved B.Com from Chitkara University – Centre for Di — recognised for corporate hiring.',
-      }
     },
       rankingBadge: 'NIRF #78 (Management 2025)',
   color: '#2563EB',
@@ -1759,7 +1748,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'vignan-university-online',
-    programFees: { bca: { fee: 108000 }, mca: { fee: 90000 } },
+    programFees: { bca: { fee: 121000 }, mca: { fee: 90000 } }, // Sprint 2 verified 2026-08-04: BCA 121000 (tuition 108000 + 3 yrs x 4000 exam + reg 1000)
     name: "Vignan's Foundation for Science, Technology & Research Online",
     abbr: 'VFSTR',
     city: 'Guntur',
@@ -1807,7 +1796,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       
       'BCA': {
         specs: ['Data Science'],
-        fees: '₹150K – ₹150K',
+        fees: '₹1,21,000',
         duration: '3 Years',
         roles: ['Data Analyst Trainee', 'Python Developer Trainee', 'ML Analyst Trainee', 'Cloud Support Trainee'],
         avgSalary: '₹3L – ₹9L per annum',
@@ -2057,6 +2046,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'kl-university-online',
+    programFees: { mba: { fee: 73500 } }, // Sprint 2 verified 2026-08-04: MBA all-in 73500 (tuition 64000 over 4 sems + exam 2000 + LMS 6000 + reg 1000)
     logo: '/logos/university_logos/kl-university-online-logo.svg',
     name: 'Koneru Lakshmaiah Education Foundation (KL University) Online',
     abbr: 'KLEFU',
@@ -2072,9 +2062,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 65500,
-    feeMax: 65500,
-    emiFrom: 2729,
+    feeMin: 73500,
+    feeMax: 73500,
+    emiFrom: 3063,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     tagline: 'UGC Category-1 institution — one of highest autonomy status | Design Thinking & Innovation across multiple semesters (un',
@@ -2085,7 +2075,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programDetails: {
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Logistics & SCM', 'Data Science', 'Digital Marketing', 'Entrepreneurship'],
-        fees: '₹65K – ₹85K',
+        fees: '₹73,500',
         duration: '2 Yrs',
         roles: ['Financial Analyst', 'Investment Analyst', 'Credit Analyst', 'Risk Analyst'],
         avgSalary: '₹5L – ₹12L per annum',
@@ -2132,6 +2122,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'chandigarh-university-online',
+    shortName: 'Chandigarh', // uses "Chandigarh" in cuchd.in and on its own logo
     programFees: { bca: { fee: 177000 }, mca: { fee: 155000 } },
     logo: '/logos/university_logos/cu-online.svg',
     name: 'Chandigarh University Online',
@@ -2220,7 +2211,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ['General Management'],
-        fees: '₹60K – ₹200K',
+        fees: '₹1,77,000',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -4131,6 +4122,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'kurukshetra-university-online',
+    shortName: 'Kurukshetra', // uses "Kurukshetra" in kuk.ac.in and on its own logo
+    programFees: { bba: { fee: 72661 } }, // Sprint 2 verified 2026-08-04: BBA first-sem 12661 + 5 sems x 12000 = 72661
     logo: '/logos/university_logos/kurukshetra-university-logo.svg',
     name: 'Kurukshetra University Online',
     abbr: 'KUO',
@@ -4180,7 +4173,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['General Management'],
-        fees: '₹60K – ₹200K',
+        fees: '₹72,661',
         duration: '3 Yrs',
         roles: ['Management Trainee', 'Finance Executive', 'HR Trainee', 'Marketing Executive'],
         avgSalary: '₹3L – ₹8L per annum',
@@ -4303,8 +4296,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from Dr. D.Y. Patil Vidyapeeth (Pune) — recognised for corporate hiring.',
       },
-      
-      
     },
     color: '#1B4FBE',
   rankingBadge: 'NIRF #41 (University 2025)',
@@ -6440,6 +6431,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'gla-university-online',
+    programFees: { bba: { fee: 99800 }, bca: { fee: 99800 }, mca: { fee: 94300 } }, // Sprint 2 verified 2026-08-04: BBA/BCA 99800 (tuition 88500 + exam 9000 + alumni 1800 + reg 500). MCA 94300 (tuition 86000 + exam 6000 + alumni 1800 + reg 500)
     logo: '/logos/university_logos/gla-mathura-online-logo.webp',
     name: 'GLA University Online',
     abbr: 'GUO',
@@ -6476,7 +6468,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved MBA from GLA University (GLA Online) — recognised for corporate hiring.'},
       'MCA': {
         specs: ['General', 'Data Science & AI', 'Cybersecurity', 'Cloud Computing'],
-        fees: '₹1.4L',
+        fees: '₹94,300',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -6489,7 +6481,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['General Business Administration (option for Data A', 'Travel & Tourism Management', 'Data Analytics'],
-        fees: '₹60K – ₹200K',
+        fees: '₹99,800',
         duration: '3 Years',
         roles: ['Sales Executive', 'Marketing Trainee', 'Business Development Executive'],
         avgSalary: '₹3L – ₹6L per annum',
@@ -6499,7 +6491,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ['Computer Applications (4 specialisations available', 'Computer Applications – Data Science', 'Computer Applications – Financial Technology & AI'],
-        fees: '₹60K – ₹200K',
+        fees: '₹99,800',
         duration: '3 Years',
         roles: ['Junior Developer', 'Software Trainee', 'IT Support'],
         avgSalary: '₹3L – ₹7L per annum',

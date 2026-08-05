@@ -77,7 +77,32 @@
     },
     {
       "source": "/universities/chitkara-university-online/b-com",
-      "destination": "/universities/chitkara-university-online/bcom",
+      "destination": "/universities/chitkara-university-online",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chitkara-university-online/bcom",
+      "destination": "/universities/chitkara-university-online",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chitkara-university-online/bcom/:spec*",
+      "destination": "/universities/chitkara-university-online",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chitkara-university-online/bca",
+      "destination": "/universities/chitkara-university-online",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chitkara-university-online/bca/:spec*",
+      "destination": "/universities/chitkara-university-online",
+      "permanent": true
+    },
+    {
+      "source": "/universities/chitkara-university-online/b-ca",
+      "destination": "/universities/chitkara-university-online",
       "permanent": true
     },
     {
@@ -1117,7 +1142,7 @@
     },
     {
       "source": "/universities/chitkara-university-online/b-com/applied-finance",
-      "destination": "/universities/chitkara-university-online/bcom/applied-finance",
+      "destination": "/universities/chitkara-university-online",
       "permanent": true
     },
     {

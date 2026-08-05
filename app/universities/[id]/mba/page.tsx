@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import type { ProgramDetail } from '@/lib/data'
-import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
+import { getTitleName, getShortTitleName, clampTitle, clampTitleFeeLed, clampDescription } from '@/lib/seo-title'
 import { getDisplayFee } from '@/lib/fees'
 import { MBA_SEO_OVERRIDES } from '@/lib/mba-seo-overrides'
 import UniProgramBody from '@/components/UniProgramBody'
@@ -58,6 +58,7 @@ export async function generateMetadata(
   const year = new Date().getFullYear()
   const pd   = u.programDetails['MBA']
   const titleName = getTitleName(u.id, u.name, u.abbr)
+  const shortName = getShortTitleName(u.id, u.shortName, u.name, u.abbr)
   const fee = getDisplayFee(u, 'MBA')
   const specCount = pd?.specs?.length || 5
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : u.nirfMgt && u.nirfMgt < 200 ? `, NIRF #${u.nirfMgt} Mgmt` : ''
@@ -65,7 +66,11 @@ export async function generateMetadata(
   // When fee.ok === false the fee is suppressed everywhere; user sees
   // "Fee structure verified by our counsellor" and the lead CTA instead.
   const title = fee.ok
-    ? clampTitle(`${titleName} Online MBA Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`)
+    ? clampTitleFeeLed(
+        `${titleName} Online MBA Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`,
+        `${shortName} Online MBA Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`,
+        fee.compact ?? null,
+      )
     : clampTitle(`${titleName} Online MBA ${year}: NAAC ${u.naac} [Review] | edifyedu.in`)
   const description = fee.ok
     ? clampDescription(`${titleName} Online MBA ${year}: ${fee.compact} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. See honest review, syllabus and placement data.`)

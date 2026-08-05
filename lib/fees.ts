@@ -99,7 +99,13 @@ function fmtIndianFull(n: number): string {
 }
 
 function makeCompactRange(min: number, max: number): string {
-  return min === max ? fmtIndianShort(min) : `${fmtIndianShort(min)}-${fmtIndianShort(max)}`
+  // Single-value fees keep precision: full comma format for sub-lakh (e.g.
+  // "₹83,200"), L-suffix for lakhs and above (e.g. "₹1.77L"). Range fees
+  // stay in the shorter K/L notation on both sides so ranges never overflow.
+  if (min === max) {
+    return min >= 100000 ? fmtIndianShort(min) : fmtIndianFull(min)
+  }
+  return `${fmtIndianShort(min)}-${fmtIndianShort(max)}`
 }
 
 function makeFullRange(min: number, max: number): string {
@@ -227,21 +233,21 @@ export function getDisplayFee(u: University, program: Program): FeeDisplay {
 }
 
 // Return every uni x program where getDisplayFee fell through to suppression
-// (rules 4a or 4b), plus per-rule totals for reporting.
+// (rules 4a or 4b), including rows without any pd.fees value. Matches the
+// tallyFeeRules totals used by the pre-commit baseline check.
 export function findAllFeeMismatches(universities: University[]): FeeMismatch[] {
   const mismatches: FeeMismatch[] = []
   for (const u of universities) {
     for (const program of u.programs) {
-      const pd = u.programDetails[program]
-      if (!pd?.fees) continue
       const display = getDisplayFee(u, program)
       if (display.ok) continue
-      const parsed = parseFeeStr(pd.fees)
+      const pd = u.programDetails[program]
+      const parsed = pd?.fees ? parseFeeStr(pd.fees) : null
       mismatches.push({
         universityId: u.id,
         universityName: u.name,
         program,
-        pdFees: pd.fees,
+        pdFees: pd?.fees ?? '',
         feeMin: u.feeMin,
         feeMax: u.feeMax || u.feeMin,
         parsedMin: parsed?.min ?? 0,
