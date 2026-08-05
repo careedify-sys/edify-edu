@@ -1535,7 +1535,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     description: 'UGC DEB approved online programs from Chitkara University – Centre for Distance and. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Finance professionals targeting senior roles', 'BFSI aspirants', 'CFA/CFP study'],
     notFor: ['Non-quantitative learners', 'Campus experience seekers'],
-    programs: ['MBA', 'BBA', 'BCA', 'B.Com'],
+    programs: ['MBA', 'BBA'],
     programDetails: {
       'MBA': {
         specs: ['Finance', 'Marketing', 'Pharmaceutical Management', 'Human Resource Management', { slug: 'international-finance-accounting', name: 'International Finance & Accounting' }, { slug: 'cyber-security', name: 'Cyber Security' }, { slug: 'data-science-artificial-intelligence', name: 'Data Science & AI' }, { slug: 'global-accounting', name: 'Global Accounting' }],
@@ -1556,26 +1556,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BBA from Chitkara University – Centre for Di — recognised for corporate hiring.',
       },
-      'BCA': {
-        specs: ['AI & Machine Learning', 'Cyber Security', 'Data Science'],
-        fees: '₹60K – ₹200K',
-        duration: '3 Yrs',
-        roles: ['ML Analyst', 'Junior Data Scientist', 'AI Developer Trainee', 'NLP Engineer Trainee'],
-        avgSalary: '₹3L – ₹10L per annum',
-        topCompanies: ['Google', 'Amazon', 'Deloitte', 'Adobe', 'Microsoft', 'PolicyBazaar', 'Accenture', 'Kohler', 'Electrolux', '500+ recruiters'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Chitkara University – Centre for Di — recognised for corporate hiring.',
-      },
-      'B.Com': {
-        specs: ['Applied Finance'],
-        fees: '₹60K – ₹200K',
-        duration: '3 Yrs',
-        roles: ['Accounts Executive', 'Tax Trainee', 'Banking Trainee', 'Audit Trainee'],
-        avgSalary: '₹2.5L – ₹7L per annum',
-        topCompanies: ['Google', 'Amazon', 'Deloitte', 'Adobe', 'Microsoft', 'PolicyBazaar', 'Accenture', 'Kohler', 'Electrolux', '500+ recruiters'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved B.Com from Chitkara University – Centre for Di — recognised for corporate hiring.',
-      }
     },
       rankingBadge: 'NIRF #78 (Management 2025)',
   color: '#2563EB',
