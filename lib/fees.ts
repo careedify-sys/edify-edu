@@ -227,21 +227,21 @@ export function getDisplayFee(u: University, program: Program): FeeDisplay {
 }
 
 // Return every uni x program where getDisplayFee fell through to suppression
-// (rules 4a or 4b), plus per-rule totals for reporting.
+// (rules 4a or 4b), including rows without any pd.fees value. Matches the
+// tallyFeeRules totals used by the pre-commit baseline check.
 export function findAllFeeMismatches(universities: University[]): FeeMismatch[] {
   const mismatches: FeeMismatch[] = []
   for (const u of universities) {
     for (const program of u.programs) {
-      const pd = u.programDetails[program]
-      if (!pd?.fees) continue
       const display = getDisplayFee(u, program)
       if (display.ok) continue
-      const parsed = parseFeeStr(pd.fees)
+      const pd = u.programDetails[program]
+      const parsed = pd?.fees ? parseFeeStr(pd.fees) : null
       mismatches.push({
         universityId: u.id,
         universityName: u.name,
         program,
-        pdFees: pd.fees,
+        pdFees: pd?.fees ?? '',
         feeMin: u.feeMin,
         feeMax: u.feeMax || u.feeMin,
         parsedMin: parsed?.min ?? 0,
