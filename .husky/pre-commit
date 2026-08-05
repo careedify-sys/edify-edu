@@ -27,4 +27,11 @@ npx tsx scripts/check-blog-fees.mjs || exit 1
 echo "pre-commit: check-duplicate-slugs"
 npx tsx scripts/check-duplicate-slugs.mjs || exit 1
 
+# Sprint 3 Task 1: never-both invariant for the hub thin-page gate.
+# Blocks any commit where a hub URL is listed in valid-urls.json AND would
+# emit robots noindex from shouldIndexProgrammeHub. See
+# scripts/prune-noindex-hub-urls.mjs for the fix.
+echo "pre-commit: check-sitemap-noindex-drift"
+npx tsx scripts/prune-noindex-hub-urls.mjs --check || exit 1
+
 echo "pre-commit: all checks passed"

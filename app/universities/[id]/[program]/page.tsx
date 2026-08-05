@@ -7,6 +7,7 @@ import type { Program, ProgramDetail } from '@/lib/data'
 import UniProgramBody from '@/components/UniProgramBody'
 import { getTitleName, getShortTitleName, clampTitle, clampTitleFeeLed, clampDescription } from '@/lib/seo-title'
 import { getDisplayFee } from '@/lib/fees'
+import { shouldIndexProgrammeHub } from '@/lib/seo/should-index'
 import { pageKeywords } from '@/lib/page-keywords'
 
 // Program slug to Program type mapping
@@ -104,7 +105,7 @@ export async function generateMetadata(
       description: d,
       images: ['https://edifyedu.in/og.webp'],
     },
-    robots: { index: true, follow: true },
+    robots: { index: shouldIndexProgrammeHub(u, program).shouldIndex, follow: true },
   }
 }
 

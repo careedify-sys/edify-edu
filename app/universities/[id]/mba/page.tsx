@@ -5,6 +5,7 @@ import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import type { ProgramDetail } from '@/lib/data'
 import { getTitleName, getShortTitleName, clampTitle, clampTitleFeeLed, clampDescription } from '@/lib/seo-title'
 import { getDisplayFee } from '@/lib/fees'
+import { shouldIndexProgrammeHub } from '@/lib/seo/should-index'
 import { MBA_SEO_OVERRIDES } from '@/lib/mba-seo-overrides'
 import UniProgramBody from '@/components/UniProgramBody'
 import { pageKeywords } from '@/lib/page-keywords'
@@ -51,7 +52,7 @@ export async function generateMetadata(
         images: [{ url: 'https://edifyedu.in/og.png', width: 1200, height: 630, alt: `${u.name} Online MBA — EdifyEdu` }],
       },
       twitter: { card: 'summary_large_image', title: override.title, description: override.description, images: ['https://edifyedu.in/og.png'] },
-      robots: { index: true, follow: true },
+      robots: { index: shouldIndexProgrammeHub(u, 'MBA').shouldIndex, follow: true },
     }
   }
 
@@ -112,7 +113,7 @@ export async function generateMetadata(
       description,
       images: ['https://edifyedu.in/og.png'],
     },
-    robots: { index: true, follow: true },
+    robots: { index: shouldIndexProgrammeHub(u, 'MBA').shouldIndex, follow: true },
   }
 }
 

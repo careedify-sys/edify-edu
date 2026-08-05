@@ -84,10 +84,21 @@ lib/data/page-content/
 **Schema:** `lib/data/page-content-schema.ts`
 **Reader:** `lib/data/page-content.ts` → `getSpecPageContent(uniSlug, program, specSlug)`
 
-- File exists → page renders rich 12-section layout + `robots: index`
-- File missing → page renders generic fallback + `robots: noindex, follow`
+- File exists → `UniSpecBody.tsx` renders the rich 12-section layout (TL;DR, spec-aware about / hiring / skills / comparisons / verdict / FAQ).
+- File missing → `UniSpecBody.tsx` renders the generic fallback branch (approvals + about + eligibility + fees + EMI + generic placements + generic FAQ + comparison table).
 
-**This check runs in every spec page's `generateMetadata()`. Never remove it.**
+**Robots policy for spec pages:** as of 2026-06-10, `app/sitemap.ts` declares
+every `/universities/{u}/{p}/{s}` path (all ~2,180 of them, including the
+~1,881 with no page-content JSON) as `index, follow`, and every spec-page
+`generateMetadata()` emits `robots: { index: true, follow: true }` unconditionally.
+There is no per-page JSON-based robots gate on spec pages today. See
+`audits/spec-page-index-audit-2026-08-05.md` for the full picture; policy
+revisit is scheduled after the 18 August GSC read.
+
+**Robots policy for programme HUB pages** (`/universities/{u}/{p}`, five templates):
+since Sprint 3 Task 1 (2026-08-05), a hub page emits `robots: { index: false, follow: true }`
+when it has neither a page-content JSON nor a resolvable fee. Helper:
+`lib/seo/should-index.ts` → `shouldIndexProgrammeHub(u, program)`.
 
 ---
 
