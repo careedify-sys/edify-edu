@@ -134,6 +134,52 @@ export const TITLE_NAME: Record<string, string> = {
 }
 
 /**
+ * Returns the shortest usable brand form for this university. Used only
+ * when the standard clampTitle output has dropped the fee segment. Prefers
+ * the University.shortName field (source-of-truth, added Sprint 2), then
+ * falls back to stripping "University" / "Univ" off the TITLE_NAME entry,
+ * then to getTitleName. Never invents an abbreviation.
+ */
+export function getShortTitleName(
+  id: string,
+  shortName: string | undefined,
+  name: string,
+  abbr: string,
+): string {
+  if (shortName && shortName.trim()) return shortName.trim()
+  const full = TITLE_NAME[id] ?? getTitleName(id, name, abbr)
+  const stripped = full.replace(/\s+(University|Univ)$/i, '').trim()
+  return stripped.length >= 3 ? stripped : full
+}
+
+/**
+ * Fee-led title builder. Builds a title with the full university name first;
+ * if clampTitle drops the fee segment, retries with the shortName. Priority
+ * order the caller must respect when composing `full` and `short`:
+ *   brand suffix (reserved by clampTitle) >
+ *   programme + "Fees {year}" (part of the anchor before ": ") >
+ *   fee (leftmost segment after ": ") >
+ *   NAAC (next segment) >
+ *   NIRF (last segment).
+ *
+ * The retry with `short` fires only when the greedy right-to-left segment
+ * drop couldn't keep the fee. That way Sprint 1 titles that already fit
+ * with the full name never regress.
+ */
+export function clampTitleFeeLed(
+  full: string,
+  short: string,
+  feeToken: string | null,
+  max = 60,
+): string {
+  const clamped = clampTitle(full, max)
+  if (!feeToken || clamped.includes(feeToken)) return clamped
+  if (short === full) return clamped
+  const retry = clampTitle(short, max)
+  return retry.includes(feeToken) ? retry : clamped
+}
+
+/**
  * Returns a short university name (≤25 chars) suitable for page titles.
  * Falls back to a cleaned/truncated version of the full name, or the abbreviation.
  */
@@ -283,9 +329,13 @@ export function clampTitle(title: string, max = 60, _slug?: string): string {
     return stripTrailingJunk(trimmed) + brand
   }
 
-  // Segments are comma-delimited. Tokens like "[Review]" that follow a
-  // space (not a comma) travel with the preceding segment.
-  const segments = tailRaw.split(/,\s*/)
+  // Segments are comma-delimited by a comma FOLLOWED BY WHITESPACE. The
+  // whitespace requirement is deliberate. Fee values like "₹72,661" or
+  // "₹1,45,400" carry a comma inside them with no space, and must stay
+  // as a single atomic token instead of being split into ["₹72", "661"].
+  // Tokens like "[Review]" that follow a space (not a comma) still travel
+  // with the preceding segment.
+  const segments = tailRaw.split(/,\s+/)
 
   // Greedy drop from the RIGHT until the assembly fits.
   for (let n = segments.length; n >= 1; n--) {

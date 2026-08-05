@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import type { ProgramDetail } from '@/lib/data'
-import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
+import { getTitleName, getShortTitleName, clampTitle, clampTitleFeeLed, clampDescription } from '@/lib/seo-title'
 import { getDisplayFee } from '@/lib/fees'
 import UniProgramBody from '@/components/UniProgramBody'
 import { pageKeywords } from '@/lib/page-keywords'
@@ -22,11 +22,16 @@ export async function generateMetadata(
   const year = new Date().getFullYear()
   const pd   = u.programDetails['BBA']
   const titleName = getTitleName(u.id, u.name, u.abbr)
+  const shortName = getShortTitleName(u.id, u.shortName, u.name, u.abbr)
   const fee = getDisplayFee(u, 'BBA')
   const specCount = pd?.specs?.length || 4
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
   const title = fee.ok
-    ? clampTitle(`${titleName} Online BBA Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`)
+    ? clampTitleFeeLed(
+        `${titleName} Online BBA Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`,
+        `${shortName} Online BBA Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`,
+        fee.compact ?? null,
+      )
     : clampTitle(`${titleName} Online BBA ${year}: NAAC ${u.naac} [Review] | edifyedu.in`)
   const description = fee.ok
     ? clampDescription(`${titleName} Online BBA ${year}: ${fee.compact} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved 3-year degree.`)

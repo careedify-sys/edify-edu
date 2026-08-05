@@ -99,7 +99,13 @@ function fmtIndianFull(n: number): string {
 }
 
 function makeCompactRange(min: number, max: number): string {
-  return min === max ? fmtIndianShort(min) : `${fmtIndianShort(min)}-${fmtIndianShort(max)}`
+  // Single-value fees keep precision: full comma format for sub-lakh (e.g.
+  // "₹83,200"), L-suffix for lakhs and above (e.g. "₹1.77L"). Range fees
+  // stay in the shorter K/L notation on both sides so ranges never overflow.
+  if (min === max) {
+    return min >= 100000 ? fmtIndianShort(min) : fmtIndianFull(min)
+  }
+  return `${fmtIndianShort(min)}-${fmtIndianShort(max)}`
 }
 
 function makeFullRange(min: number, max: number): string {

@@ -48,6 +48,13 @@ export interface UniFeature {
 export interface University {
   id: string
   name: string
+  /**
+   * Optional short form the university brands itself with (e.g. how it's
+   * signed in its own logo or domain). Used only when the full name would
+   * push the fee segment out of a title. Never invent an abbreviation;
+   * only add when a real brand form is shorter than the legal name.
+   */
+  shortName?: string
   logo?: string
   abbr: string
   city: string
@@ -1235,6 +1242,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'galgotias-university-online',
+    shortName: 'Galgotias', // uses "Galgotias" in its own domain galgotias.edu.in
     programFees: { bba: { fee: 77200 }, bca: { fee: 83200 }, mca: { fee: 74000 } }, // Sprint 2 verified 2026-08-04: BBA 77200 (yearly tuition 21000 + reg 1200 + exam 12000). BCA all-in: 83200 (yearly tuition 23000 + reg 1200 + exam 12000)
     logo: '/logos/university_logos/galgotias-university-logo.svg',
     name: 'Galgotias University Online',
@@ -2114,6 +2122,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'chandigarh-university-online',
+    shortName: 'Chandigarh', // uses "Chandigarh" in cuchd.in and on its own logo
     programFees: { bca: { fee: 177000 }, mca: { fee: 155000 } },
     logo: '/logos/university_logos/cu-online.svg',
     name: 'Chandigarh University Online',
@@ -4113,6 +4122,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'kurukshetra-university-online',
+    shortName: 'Kurukshetra', // uses "Kurukshetra" in kuk.ac.in and on its own logo
     programFees: { bba: { fee: 72661 } }, // Sprint 2 verified 2026-08-04: BBA first-sem 12661 + 5 sems x 12000 = 72661
     logo: '/logos/university_logos/kurukshetra-university-logo.svg',
     name: 'Kurukshetra University Online',
