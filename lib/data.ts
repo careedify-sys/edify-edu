@@ -4241,7 +4241,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'dr-dy-patil-vidyapeeth-online',
-    programFees: { bba: { fee: 145400 } }, // Sprint 2 verified 2026-08-04: BBA 145400 (35000/35000/30000/30000/15400)
     logo: '/logos/university_logos/dpu-online.svg',
     name: 'Dr. D.Y. Patil Vidyapeeth, Pune – Centre for Online Learning (DPU-COL) Online',
     abbr: 'DDPVP',
@@ -4264,7 +4263,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     description: 'UGC DEB approved online programs from Dr. D.Y. Patil Vidyapeeth, Pune – Centre for. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals targeting project management roles', 'engineers wanting PMP-aligned MBA', 'IT professionals managing projects'],
     notFor: ['Those wanting fully on-campus experience', 'students not meeting 50% UG marks', 'those requiring entrance exam pathway'],
-    programs: ['MBA', 'MCA', 'BBA'],
+    programs: ['MBA', 'MCA'],
     programDetails: {
       
       'MBA': {
@@ -4286,16 +4285,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from Dr. D.Y. Patil Vidyapeeth (Pune) — recognised for corporate hiring.',
-      },
-      'BBA': {
-        specs: ['General Management'],
-        fees: '₹1,45,400',
-        duration: '3 Years',
-        roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
-        avgSalary: '₹3L – ₹8L per annum',
-        topCompanies: ['ITC', 'HDFC Bank', 'Capgemini', 'Infosys', 'TCS', 'Wipro', 'Accenture', 'IBM', 'HCL', 'Cognizant'],
-        internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Dr. D.Y. Patil Vidyapeeth (Pune) recognised for corporate hiring.',
       },
     },
     color: '#1B4FBE',
