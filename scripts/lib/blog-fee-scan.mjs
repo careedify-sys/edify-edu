@@ -338,7 +338,12 @@ function tryParenthetical(html, pos, rawLen) {
   const before = html.slice(0, pos)
   const openIdx = before.lastIndexOf('(')
   if (openIdx < 0) return null
-  // Nothing between ( and pos except commas, spaces, "NAAC ...", digits.
+  // Containment: the figure must be INSIDE this parenthetical. If any ')'
+  // appears between openIdx and pos, the paren we found closed before the
+  // figure and the figure sits in free prose after it — reject. Without
+  // this, "Uttaranchal (UU Doon) at ₹3,70,000" mis-attributes ₹3,70,000
+  // to Uttaranchal via the already-closed (UU Doon) paren.
+  if (before.slice(openIdx + 1).includes(')')) return null
   const closeIdx = html.indexOf(')', pos + rawLen)
   if (closeIdx < 0) return null
   // Sanity: parenthetical shouldn't span more than 200 chars.
@@ -351,6 +356,26 @@ function tryParenthetical(html, pos, rawLen) {
   // Must actually be adjacent — allow up to 3 chars between end-of-alias and "(".
   if (uniZone.length - (last.index + last.alias.length) > 3) return null
   return { uid: last.uid, confidence: 'high', rule: 'parenthetical' }
+}
+
+// Bucket-header: a range like "Rs X to Rs Y:" that opens a paragraph of
+// enumerated universities. X and Y are bucket bounds, not any single uni's
+// fee. Detected when a ':' immediately follows the consumed range (forward
+// case), or when the figure is the tail endpoint of a "Rs X to <figure>:"
+// header that the range-parser did not fold into one record (backward case).
+const BUCKET_TAIL_BACK_RE = new RegExp(
+  String.raw`(?:₹|Rs\.?|INR)\s*[\d.,]+\s*(?:L(?:akhs?|acs?)?|K|Cr(?:ore)?s?)?\s*(?:-|–|—|to|and)\s*(?:(?:₹|Rs\.?|INR)\s*)?$`,
+  'i',
+)
+function isBucketRange(combined, matchStart, consumedLen) {
+  const after = combined.slice(matchStart + consumedLen, matchStart + consumedLen + 8)
+  if (/^\s*(?:L(?:akhs?|acs?)?|K|Cr(?:ore)?s?)?\s*:/.test(after)) return true
+  const before = combined.slice(Math.max(0, matchStart - 60), matchStart)
+  if (BUCKET_TAIL_BACK_RE.test(before)) {
+    const afterLong = combined.slice(matchStart + consumedLen, matchStart + consumedLen + 20)
+    if (/^\s*(?:L(?:akhs?|acs?)?|K|Cr(?:ore)?s?)?\s*:/.test(afterLong)) return true
+  }
+  return false
 }
 
 // -- Attribution ----------------------------------------------------------
@@ -575,7 +600,7 @@ export function scanAllPosts() {
       const cellForNonFee = findRow(tables, matchStart)
       const rowLabel = cellForNonFee?.row?.firstText || ''
       const colHeader = cellForNonFee?.columnHeader || ''
-      if (isNonFee(tightCtx) || isRowHeaderNonFee(rowLabel) || isRowHeaderNonFee(colHeader)) {
+      if (isNonFee(tightCtx) || isRowHeaderNonFee(rowLabel) || isRowHeaderNonFee(colHeader) || isBucketRange(combined, matchStart, consumedLen)) {
         rows.push({
           slug: post.slug, publishedAt: post.publishedAt, raw: rawFull,
           value, valueMin: vMin, valueMax: vMax,
