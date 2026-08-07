@@ -33,7 +33,6 @@ import AdmissionSteps     from './AdmissionSteps'
 import SectionPlacements  from './SectionPlacements'
 import BeyondAdmissionSection from './BeyondAdmissionSection'
 import TopHirers          from './TopHirers'
-import ReviewsBlock       from './ReviewsBlock'
 import RedFlagsBlock      from './RedFlagsBlock'
 import ComparisonTable    from './ComparisonTable'
 import HonestVerdict      from './HonestVerdict'
@@ -220,48 +219,6 @@ function SpecSyllabusSection({
   )
 }
 
-function SpecReviewsSection({
-  reviews,
-  spec,
-}: {
-  reviews: NonNullable<SpecPageContent['sections']['reviews']>
-  spec: string
-}) {
-  if (!reviews.items?.length) return null
-  return (
-    <section className="rounded-xl border border-slate-200 bg-white p-6">
-      <h2 className="text-lg font-bold mb-2" style={{ color: '#0B1533' }}>
-        Student Reviews — {spec}
-      </h2>
-      {reviews.intro && (
-        <p className="text-sm text-slate-500 mb-4">{reviews.intro}</p>
-      )}
-      <div className="space-y-4">
-        {reviews.items.map((r, i) => (
-          <div key={i} className="border border-slate-100 rounded-lg p-4">
-            <div className="flex items-center justify-between mb-2">
-              <span className="font-semibold text-sm text-slate-800">{r.name}</span>
-              <span className="text-xs text-slate-500">{r.city} · {r.year}</span>
-            </div>
-            <div className="flex items-center gap-1 mb-2">
-              {Array.from({ length: 5 }).map((_, j) => (
-                <span key={j} style={{ color: j < r.rating ? '#F4A024' : '#CBD5E1', fontSize: 14 }}>★</span>
-              ))}
-            </div>
-            <p className="text-sm text-slate-700">{r.body || r.liked}</p>
-            {r.liked && r.body && (
-              <p className="text-xs text-green-700 mt-1">Liked: {r.liked}</p>
-            )}
-            {r.disliked && (
-              <p className="text-xs text-red-600 mt-1">Disliked: {r.disliked}</p>
-            )}
-          </div>
-        ))}
-      </div>
-    </section>
-  )
-}
-
 function SpecChooseSection({
   data,
   spec,
@@ -334,17 +291,6 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
     ? specJson.sections.faqs.map(f => ({ q: f.question, a: f.answer }))
     : faqs
 
-  // Use spec JSON reviews for schema when available
-  const schemaReviews = specJson?.sections.reviews?.items?.length
-    ? specJson.sections.reviews.items.map(r => ({
-        name: r.name,
-        city: r.city,
-        year: r.year,
-        rating: r.rating,
-        body: r.body || r.liked || '',
-      }))
-    : undefined
-
   // Curriculum deep dive section (generic path only)
   const CurriculumDive = () => {
     if (!specContent) return null
@@ -410,7 +356,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
 
   return (
     <>
-      <SchemaBlock u={u} pd={pd} program={program} programSlug={programSlug} spec={spec} specSlug={specSlug} coupon={coupon} faqs={schemaFaqs} reviews={schemaReviews} keywords={keywords} />
+      <SchemaBlock u={u} pd={pd} program={program} programSlug={programSlug} spec={spec} specSlug={specSlug} coupon={coupon} faqs={schemaFaqs} keywords={keywords} />
       <AssuredMarquee />
 
       <div className="page-shell">
@@ -564,13 +510,20 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                     variant="primary"
                   />
 
-                  {/* §10 Reviews */}
-                  {specJson.sections.reviews && (
-                    <SpecReviewsSection
-                      reviews={specJson.sections.reviews}
-                      spec={spec}
-                    />
-                  )}
+                  {/* §10 Reviews. CTA only until first-party rows exist */}
+                  <section className="rounded-xl border border-slate-200 bg-white p-6">
+                    <h2 className="text-lg font-bold mb-2" style={{ color: '#0B1533' }}>Studied here?</h2>
+                    <p className="text-sm text-slate-600 mb-4">
+                      Share your experience and help the next student decide.
+                    </p>
+                    <Link
+                      href={`/review/${u.id}`}
+                      className="inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold text-white no-underline"
+                      style={{ background: '#0B1533' }}
+                    >
+                      Write a review
+                    </Link>
+                  </section>
 
                   <InlineCTA
                     text={`Compare ${spec} MBA at other universities.`}
@@ -644,7 +597,19 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                   <SectionPlacements pd={pd} cleanName={cleanName} program={program} />
                   <BeyondAdmissionSection cleanName={cleanName} />
                   <TopHirers pd={pd} program={program} cleanName={cleanName} />
-                  <ReviewsBlock universityId={u.id} program={program} cleanName={cleanName} />
+                  <section className="rounded-xl border border-slate-200 bg-white p-6">
+                    <h2 className="text-lg font-bold mb-2" style={{ color: '#0B1533' }}>Studied here?</h2>
+                    <p className="text-sm text-slate-600 mb-4">
+                      Share your experience and help the next student decide.
+                    </p>
+                    <Link
+                      href={`/review/${u.id}`}
+                      className="inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold text-white no-underline"
+                      style={{ background: '#0B1533' }}
+                    >
+                      Write a review
+                    </Link>
+                  </section>
                   <RedFlagsBlock u={u} program={program} cleanName={cleanName} />
 
                   <InlineCTA
