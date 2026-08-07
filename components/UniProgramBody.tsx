@@ -29,7 +29,6 @@ import AdmissionSteps    from './AdmissionSteps'
 import SectionPlacements from './SectionPlacements'
 import BeyondAdmissionSection from './BeyondAdmissionSection'
 import TopHirers         from './TopHirers'
-import ReviewsBlock      from './ReviewsBlock'
 import RedFlagsBlock     from './RedFlagsBlock'
 import ComparisonTable   from './ComparisonTable'
 import HonestVerdict     from './HonestVerdict'
@@ -54,36 +53,6 @@ interface Props {
 }
 
 // ── Inline generated-content components ─────────────────────────────────────
-
-function GeneratedReviewsBlock({ reviews, cleanName, program }: { reviews: NonNullable<PageContent['sections']['reviews']>; cleanName: string; program: string }) {
-  return (
-    <section className="rounded-xl border border-slate-200 bg-white p-6">
-      <h2 className="text-lg font-bold mb-2" style={{ color: '#0B1533' }}>
-        {reviews.heading || `${cleanName} Online ${program} Student Reviews`}
-      </h2>
-      {reviews.intro && <p className="text-sm text-slate-500 mb-4">{reviews.intro}</p>}
-      <div className="space-y-4">
-        {reviews.items?.map((r, i) => (
-          <div key={i} className="border border-slate-100 rounded-lg p-4">
-            <div className="flex items-center justify-between mb-2">
-              <span className="font-semibold text-sm text-slate-800">{r.name}</span>
-              <span className="text-xs text-slate-500">{r.city}{r.year ? ` · ${r.year}` : ''}</span>
-            </div>
-            <div className="flex items-center gap-1 mb-2">
-              {Array.from({ length: 5 }).map((_, j) => (
-                <span key={j} style={{ color: j < r.rating ? '#F4A024' : '#CBD5E1', fontSize: 14 }}>★</span>
-              ))}
-            </div>
-            <p className="text-sm text-slate-700">{r.body || r.liked}</p>
-            {r.liked && r.body && <p className="text-xs text-green-700 mt-1">Liked: {r.liked}</p>}
-            {r.disliked && <p className="text-xs text-red-600 mt-1">Disliked: {r.disliked}</p>}
-          </div>
-        ))}
-      </div>
-      {reviews.closer && <p className="text-xs text-slate-400 mt-4 italic">{reviews.closer}</p>}
-    </section>
-  )
-}
 
 function GeneratedRedFlagsBlock({ redFlags }: { redFlags: NonNullable<PageContent['sections']['redFlags']> }) {
   return (
@@ -342,13 +311,21 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
               {/* §15 Top Hirers */}
               <TopHirers pd={pd} program={program} cleanName={cleanName} />
 
-              {/* §16 Reviews */}
+              {/* §16 Reviews. CTA only until first-party rows exist. */}
               <div id="reviews">
-              {s?.reviews?.items?.length ? (
-                <GeneratedReviewsBlock reviews={s.reviews} cleanName={cleanName} program={program} />
-              ) : (
-                <ReviewsBlock universityId={u.id} program={program} cleanName={cleanName} />
-              )}
+                <section className="rounded-xl border border-slate-200 bg-white p-6">
+                  <h2 className="text-lg font-bold mb-2" style={{ color: '#0B1533' }}>Studied here?</h2>
+                  <p className="text-sm text-slate-600 mb-4">
+                    Share your experience and help the next student decide.
+                  </p>
+                  <Link
+                    href={`/review/${u.id}`}
+                    className="inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold text-white no-underline"
+                    style={{ background: '#0B1533' }}
+                  >
+                    Write a review
+                  </Link>
+                </section>
               </div>
 
               {/* §17 Red Flags */}
