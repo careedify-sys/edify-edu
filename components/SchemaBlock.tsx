@@ -1,14 +1,6 @@
 import type { University, ProgramDetail } from '@/lib/data'
 import type { Coupon } from '@/lib/coupons'
 
-interface SchemaReview {
-  name: string
-  city?: string
-  year?: number
-  rating: number
-  body: string
-}
-
 interface Props {
   u: University
   pd: ProgramDetail
@@ -18,11 +10,10 @@ interface Props {
   specSlug?: string
   coupon?: Coupon | null
   faqs?: { q: string; a: string }[]
-  reviews?: SchemaReview[]
   keywords?: string
 }
 
-export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlug, coupon, faqs, reviews, keywords }: Props) {
+export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlug, coupon, faqs, keywords }: Props) {
   const year     = new Date().getFullYear()
   const baseUrl  = 'https://edifyedu.in'
   const pageUrl  = spec
@@ -42,10 +33,6 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
       ...(spec && specSlug ? [{ '@type': 'ListItem', position: 5, name: spec, item: pageUrl }] : []),
     ],
   }
-
-  const avgRating = reviews?.length
-    ? (reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length).toFixed(1)
-    : null
 
   const courseSchema = {
     '@context': 'https://schema.org',
@@ -91,23 +78,9 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
       courseWorkload: `P${durationYears}Y`,
     },
     ...(keywords ? { keywords } : {}),
-    // AggregateRating nested inside Course — required by Google for star snippet eligibility
-    ...(avgRating && reviews?.length ? {
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: avgRating,
-        reviewCount: reviews.length,
-        bestRating: '5',
-        worstRating: '1',
-      },
-      review: reviews.map(r => ({
-        '@type': 'Review',
-        author: { '@type': 'Person', name: r.name },
-        datePublished: r.year ? `${r.year}-01-01` : `${year}-01-01`,
-        reviewRating: { '@type': 'Rating', ratingValue: String(r.rating) },
-        reviewBody: r.body,
-      })),
-    } : {}),
+    // aggregateRating + review[] removed 2026-08-07: markup was fed by
+    // hand-authored review copy, not first-party collected reviews. Will be
+    // re-added once real verified rows exist in the reviews table.
   }
 
   // FAQPage schema removed — rendered once by FAQBlock.tsx to avoid duplicate

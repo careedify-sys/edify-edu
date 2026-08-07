@@ -6,7 +6,6 @@ import { ChevronRight } from 'lucide-react'
 import type { University, ProgramDetail } from '@/lib/data'
 import { getUniversitiesByProgram, formatSpecList } from '@/lib/data'
 import { getShortUniversityName } from '@/lib/format'
-import { UNIVERSITY_REVIEWS } from '@/lib/reviews-data'
 import { COUPONS } from '@/lib/coupons'
 import type { Program } from '@/lib/data'
 import { getPageContent } from '@/lib/data/page-content'
@@ -170,14 +169,9 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
     ? s.faqs.map(f => ({ q: f.question, a: f.answer }))
     : faqs
 
-  // Use content JSON reviews for schema when available — falls back to UNIVERSITY_REVIEWS
-  const schemaReviews = s?.reviews?.items?.length
-    ? s.reviews.items.map(r => ({ name: r.name, city: r.city, year: r.year, rating: r.rating, body: r.body || r.liked || '' }))
-    : (UNIVERSITY_REVIEWS[u.id] || []).slice(0, 5).map(r => ({ name: r.name, city: r.city, rating: r.rating, body: r.review }))
-
   return (
     <>
-      <SchemaBlock u={u} pd={pd} program={program} programSlug={programSlug} coupon={coupon} faqs={schemaFaqs} reviews={schemaReviews} />
+      <SchemaBlock u={u} pd={pd} program={program} programSlug={programSlug} coupon={coupon} faqs={schemaFaqs} />
       <AssuredMarquee />
 
       <div className="page-shell">

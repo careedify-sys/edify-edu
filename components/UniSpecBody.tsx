@@ -334,17 +334,6 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
     ? specJson.sections.faqs.map(f => ({ q: f.question, a: f.answer }))
     : faqs
 
-  // Use spec JSON reviews for schema when available
-  const schemaReviews = specJson?.sections.reviews?.items?.length
-    ? specJson.sections.reviews.items.map(r => ({
-        name: r.name,
-        city: r.city,
-        year: r.year,
-        rating: r.rating,
-        body: r.body || r.liked || '',
-      }))
-    : undefined
-
   // Curriculum deep dive section (generic path only)
   const CurriculumDive = () => {
     if (!specContent) return null
@@ -410,7 +399,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
 
   return (
     <>
-      <SchemaBlock u={u} pd={pd} program={program} programSlug={programSlug} spec={spec} specSlug={specSlug} coupon={coupon} faqs={schemaFaqs} reviews={schemaReviews} keywords={keywords} />
+      <SchemaBlock u={u} pd={pd} program={program} programSlug={programSlug} spec={spec} specSlug={specSlug} coupon={coupon} faqs={schemaFaqs} keywords={keywords} />
       <AssuredMarquee />
 
       <div className="page-shell">
