@@ -4,7 +4,7 @@
  * into lib/data/page-content/{uniSlug}-mba.json
  *
  * Handles two sheet formats:
- *   A) Named-key format:  section_key = about_body, reviews_body, faq_1, faq_1_a, ...
+ *   A) Named-key format:  section_key = about_body, faq_1, faq_1_a, ...
  *   B) Numbered-key format: section_key = 2_body, 17_r1, faq1, faq2, ...
  *
  * Uses the `xlsx` npm package (confirmed available).
@@ -73,7 +73,6 @@ const NAMED_HEADING_KEY_MAP = {
   'placements_h2':      'placements',
   'hirers_h2':          'topHirers',
   'beyond_h2':          'beyondAdmission',
-  'reviews_h2':         'reviews',
   'red_flags_h2':       'redFlags',
   'comparisons_h2':     'comparisons',
   'verdict_h2':         'honestVerdict',
@@ -119,7 +118,6 @@ const NUMBERED_SECTION_MAP = {
   '15_h2':      { heading: 'topHirers' },
   '16_body':    'beyondAdmission',
   '16_h2':      { heading: 'beyondAdmission' },
-  '17_h2':      { heading: 'reviews' },
   '18_body':    'redFlags',
   '18_h2':      { heading: 'redFlags' },
   '19_body':    'comparisons',
@@ -130,171 +128,12 @@ const NUMBERED_SECTION_MAP = {
 
 // ── Parsers ───────────────────────────────────────────────────────────────────
 
-/**
- * Parse named-format reviews block text.
- *
- * Handles two inline formats:
- *
- * Format A (Batch 2): rating-first
- *   5/5 - Arjun M., Pune, 2024
- *   Liked: ...
- *   Disliked: ...
- *
- * Format B (Batch 3): name-first
- *   Arjun M., Pune, 2024, 5 stars: body text here
- *   (no separate Liked/Disliked lines)
- *
- * Closer: last non-review line (e.g., "Reviews aggregated from...")
- */
-function parseReviewsFromBody(rawText, sheetName) {
-  try {
-    const lines = rawText.split('\n');
-
-    // Format A: "5/5 - Name, City, Year"
-    const patternA = /^(\d)\/5\s*-\s*(.+?),\s*(.+?),\s*(\d{4})\s*$/;
-    // Format B: "Name, City, Year, N stars: body..."
-    const patternB = /^(.+?),\s*([^,]+?),\s*(\d{4}),\s*(\d)\s+stars?:\s*(.*)$/i;
-
-    // Detect which format
-    let format = null;
-    for (const line of lines) {
-      if (patternA.test(line.trim())) { format = 'A'; break; }
-      if (patternB.test(line.trim())) { format = 'B'; break; }
-    }
-    if (!format) return { rawBody: rawText };
-
-    const items = [];
-    const introLines = [];
-    let closer = '';
-    let seenFirstReview = false;
-    let firstRatingLine = -1;
-    const activePattern = format === 'A' ? patternA : patternB;
-
-    for (let i = 0; i < lines.length; i++) {
-      if (activePattern.test(lines[i].trim())) { firstRatingLine = i; break; }
-    }
-
-    for (let i = 0; i < firstRatingLine; i++) {
-      if (lines[i].trim()) introLines.push(lines[i].trim());
-    }
-
-    if (format === 'A') {
-      // Format A: rating header line + Liked:/Disliked: lines
-      let currentReview = null;
-      for (let i = firstRatingLine; i < lines.length; i++) {
-        const line = lines[i].trim();
-        const match = patternA.exec(line);
-        if (match) {
-          if (currentReview) items.push(currentReview);
-          currentReview = {
-            rating: parseInt(match[1], 10),
-            name: match[2].trim(),
-            city: match[3].trim(),
-            year: parseInt(match[4], 10),
-            liked: '', disliked: '', body: '',
-          };
-          seenFirstReview = true;
-        } else if (seenFirstReview && currentReview) {
-          if (line.startsWith('Liked:')) {
-            currentReview.liked = line.replace(/^Liked:\s*/, '').trim();
-          } else if (line.startsWith('Disliked:')) {
-            currentReview.disliked = line.replace(/^Disliked:\s*/, '').trim();
-          }
-        }
-      }
-      if (currentReview) items.push(currentReview);
-      items.forEach(r => { r.body = r.liked || ''; });
-
-      // Find closer
-      for (let j = lines.length - 1; j >= firstRatingLine; j--) {
-        const l = lines[j].trim();
-        if (l && !patternA.test(l) && !l.startsWith('Liked:') && !l.startsWith('Disliked:')) {
-          closer = l; break;
-        }
-      }
-    } else {
-      // Format B: each review is one paragraph starting with "Name, City, Year, N stars: body"
-      // Reviews separated by blank lines; body may span multiple lines before next review header
-      let currentReview = null;
-      for (let i = firstRatingLine; i < lines.length; i++) {
-        const line = lines[i].trim();
-        const match = patternB.exec(line);
-        if (match) {
-          if (currentReview) items.push(currentReview);
-          currentReview = {
-            name: match[1].trim(),
-            city: match[2].trim(),
-            year: parseInt(match[3], 10),
-            rating: parseInt(match[4], 10),
-            liked: '', disliked: '',
-            body: match[5].trim(),
-          };
-          seenFirstReview = true;
-        } else if (seenFirstReview && currentReview && line) {
-          // Continuation of review body
-          currentReview.body += ' ' + line;
-        }
-      }
-      if (currentReview) items.push(currentReview);
-      items.forEach(r => { r.body = r.body.trim(); r.liked = r.liked || r.body; });
-
-      // Closer: last line not matching a review pattern
-      const lastNonReview = lines.slice().reverse().find(
-        l => l.trim() && !patternB.test(l.trim())
-      );
-      closer = lastNonReview ? lastNonReview.trim() : '';
-    }
-
-    return {
-      intro: introLines.join(' ') || undefined,
-      items: items.length > 0 ? items : undefined,
-      closer: closer || undefined,
-    };
-  } catch (err) {
-    console.warn(`  [WARN] ${sheetName}: reviews parse error — storing rawBody. ${err.message}`);
-    return { rawBody: rawText };
-  }
-}
-
-/**
- * Parse numbered-format review rows (17_r1, 17_r2, ...).
- * Each row content format: "Name | City | Year | N stars\n{body text}"
- * or: "Name. City. Year. N stars\n{body text}"
- */
-function parseReviewsFromNumberedRows(sectionMap, sheetName) {
-  try {
-    const items = [];
-    for (let n = 1; n <= 10; n++) {
-      const key = `17_r${n}`;
-      if (!sectionMap[key]) continue;
-      const raw = sectionMap[key];
-      // Format: "Priya M. | Hyderabad | 2024 | 5 stars\nBody text..."
-      const firstLine = raw.split('\n')[0];
-      const bodyLines = raw.split('\n').slice(1).join(' ').trim();
-
-      // Try pipe-separated
-      const pipeParts = firstLine.split('|').map(s => s.trim());
-      if (pipeParts.length >= 3) {
-        const name = pipeParts[0];
-        const city = pipeParts[1];
-        const yearStr = pipeParts[2];
-        const starsStr = pipeParts[3] || '';
-        const year = parseInt(yearStr) || 0;
-        const ratingMatch = starsStr.match(/(\d)/);
-        const rating = ratingMatch ? parseInt(ratingMatch[1]) : 4;
-        items.push({ name, city, year, rating, liked: '', disliked: '', body: bodyLines });
-        continue;
-      }
-      // Fallback
-      items.push({ name: firstLine, city: '', year: 0, rating: 4, liked: '', disliked: '', body: bodyLines });
-    }
-
-    return items.length > 0 ? { items } : null;
-  } catch (err) {
-    console.warn(`  [WARN] ${sheetName}: numbered reviews parse error. ${err.message}`);
-    return null;
-  }
-}
+// Removed 2026-08-07: parseReviewsFromBody and parseReviewsFromNumberedRows.
+// The Excel source treated review copy as authored content, which the sync
+// then wrote as sections.reviews.items into 154 page JSONs. That output was
+// consumed as first-party reviews. First-party reviews now come from the
+// Supabase reviews table via /api/reviews, not from this sync. The Excel
+// columns reviews_body, 17_intro, 17_r1..17_r10 and 17_source are ignored.
 
 /**
  * Parse red flags from named-format body text.
@@ -441,10 +280,10 @@ function parseFaqsNumbered(sectionMap, sheetName) {
 
 // ── Detect sheet format ───────────────────────────────────────────────────────
 function detectFormat(sectionMap) {
-  // Named format has keys like 'about_body', 'reviews_body', 'faq_1'
-  const namedKeys = ['about_body', 'reviews_body', 'faq_1', 'faq_1_a'];
-  // Numbered format has keys like '2_body', '17_r1', 'faq1'
-  const numberedKeys = ['2_body', '17_r1', '1_intro', 'faq1'];
+  // Named format has keys like 'about_body', 'faq_1'
+  const namedKeys = ['about_body', 'faq_1', 'faq_1_a'];
+  // Numbered format has keys like '2_body', '1_intro', 'faq1'
+  const numberedKeys = ['2_body', '1_intro', 'faq1'];
 
   const hasNamed = namedKeys.some(k => sectionMap[k] !== undefined);
   const hasNumbered = numberedKeys.some(k => sectionMap[k] !== undefined);
@@ -492,20 +331,8 @@ function processNamedFormat(sectionMap, sheetName) {
     }
   }
 
-  // Reviews
-  const reviewsRaw = sectionMap['reviews_body'];
-  const reviewsHeading = sectionMap['reviews_h2'];
-  if (reviewsRaw) {
-    const parsed = parseReviewsFromBody(reviewsRaw, sheetName);
-    sections.reviews = {};
-    if (reviewsHeading) sections.reviews.heading = reviewsHeading;
-    Object.assign(sections.reviews, parsed);
-    if (parsed.items) {
-      console.log(`  Reviews: parsed ${parsed.items.length} items`);
-    } else {
-      console.warn(`  Reviews: stored as rawBody`);
-    }
-  }
+  // Reviews: no longer written by sync. Excel reviews_body / reviews_h2 columns
+  // are ignored. First-party reviews live in the Supabase reviews table.
 
   // Red Flags
   const redFlagsRaw = sectionMap['red_flags_body'];
@@ -558,21 +385,8 @@ function processNumberedFormat(sectionMap, sheetName) {
     }
   }
 
-  // Reviews: parse from 17_intro + 17_r1..17_r5 + 17_source
-  const reviewsHeading = sectionMap['17_h2'];
-  const reviewsIntro = sectionMap['17_intro'];
-  const reviewsSource = sectionMap['17_source'];
-  const parsedReviews = parseReviewsFromNumberedRows(sectionMap, sheetName);
-  if (parsedReviews || reviewsIntro || reviewsSource) {
-    sections.reviews = {};
-    if (reviewsHeading) sections.reviews.heading = reviewsHeading;
-    if (reviewsIntro) sections.reviews.intro = reviewsIntro;
-    if (parsedReviews && parsedReviews.items) {
-      sections.reviews.items = parsedReviews.items;
-      console.log(`  Reviews: parsed ${parsedReviews.items.length} items (numbered format)`);
-    }
-    if (reviewsSource) sections.reviews.closer = reviewsSource;
-  }
+  // Reviews: no longer written by sync. Excel 17_h2 / 17_intro / 17_r1..17_r10
+  // / 17_source columns are ignored. First-party reviews live in Supabase.
 
   // Red Flags: parse from 18_body
   const redFlagsRaw = sectionMap['18_body'];
