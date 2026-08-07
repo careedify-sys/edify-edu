@@ -1,51 +1,73 @@
 # Blog fee crossref summary — 2026-08-07
 
-Total ₹ figures extracted: **10978**
+Extractor v2 (structural attribution + range parsing + expanded NON_FEE).
+
+Total figures: **9883**
 
 ## By classification
 
 | Class | Count |
 |---|---:|
-| MATCH | 1189 |
-| MISMATCH | 3396 |
-| SUPPRESSED | 774 |
-| ORPHAN | 78 |
-| UNRESOLVED | 1346 |
-| NON_FEE | 4195 |
+| MATCH | 1050 |
+| MISMATCH | 758 |
+| SUPPRESSED | 6 |
+| ORPHAN | 67 |
+| UNRESOLVED | 1831 |
+| NON_FEE | 6171 |
+
+## By class × confidence
+
+| Class / Confidence | Count |
+|---|---:|
+| MATCH/high | 635 |
+| MATCH/low | 56 |
+| MATCH/medium | 359 |
+| MISMATCH/high | 389 |
+| MISMATCH/low | 106 |
+| MISMATCH/medium | 263 |
+| NON_FEE/- | 6171 |
+| ORPHAN/high | 53 |
+| ORPHAN/low | 2 |
+| ORPHAN/medium | 12 |
+| SUPPRESSED/high | 5 |
+| SUPPRESSED/medium | 1 |
+| UNRESOLVED/high | 16 |
+| UNRESOLVED/low | 1811 |
+| UNRESOLVED/medium | 4 |
 
 ## Top 30 slugs by figure count
 
 | slug | total | MATCH | MISMATCH | SUPPRESSED | ORPHAN | UNRESOLVED | NON_FEE |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| amity-online-bba-fees-2026 | 379 | 14 | 148 | 122 | 4 | 0 | 91 |
-| mba-hr-management-online-india-2026 | 379 | 66 | 258 | 0 | 1 | 14 | 40 |
-| mba-fees-india-complete-guide-2026 | 312 | 24 | 115 | 1 | 4 | 28 | 140 |
-| online-bba-programs-india-2026 | 302 | 12 | 44 | 214 | 2 | 2 | 28 |
-| online-mba-business-data-analytics-india-2026 | 292 | 57 | 187 | 0 | 0 | 16 | 32 |
-| online-mba-supply-chain-management-india-2026 | 220 | 50 | 145 | 0 | 0 | 11 | 14 |
-| career-after-bcom-jobs-salary-courses-2026 | 202 | 4 | 19 | 0 | 0 | 124 | 55 |
-| amity-online-bba-review-2026 | 188 | 8 | 62 | 40 | 0 | 0 | 78 |
-| career-after-12th-science-courses-jobs-2026 | 181 | 0 | 2 | 14 | 0 | 112 | 53 |
-| online-bba-fees-india-2026 | 181 | 8 | 50 | 52 | 9 | 13 | 49 |
-| career-after-mba-jobs-salary-scope-2026 | 173 | 1 | 2 | 0 | 0 | 107 | 63 |
-| online-mba-entrepreneurship-india-2026 | 157 | 34 | 97 | 0 | 2 | 14 | 10 |
-| best-online-bba-colleges-india-2026 | 141 | 11 | 27 | 49 | 7 | 6 | 41 |
-| amity-online-mba-review-2026 | 140 | 37 | 64 | 0 | 0 | 0 | 39 |
-| mba-pharmaceutical-management-online-india-2026 | 130 | 27 | 56 | 0 | 2 | 11 | 34 |
-| online-mba-tamil-nadu-2026 | 130 | 43 | 54 | 4 | 0 | 29 | 0 |
-| online-mba-salary-india-2026 | 105 | 0 | 0 | 0 | 0 | 5 | 100 |
-| best-online-mba-colleges-india-2026 | 102 | 34 | 48 | 0 | 0 | 3 | 17 |
-| bsc-career-options-scope-salary-india-2026 | 100 | 2 | 2 | 0 | 0 | 6 | 90 |
-| arts-stream-jobs-career-options-salary-india | 99 | 0 | 6 | 0 | 4 | 0 | 89 |
-| online-mba-hospital-healthcare-management-india-2026 | 99 | 23 | 56 | 1 | 0 | 5 | 14 |
-| 1-year-mba-india-executive-mba-2026 | 97 | 10 | 19 | 0 | 0 | 24 | 44 |
-| top-correspondence-mba-colleges-india-2026 | 97 | 21 | 73 | 1 | 0 | 0 | 2 |
-| ias-officer-salary-india-2026-pay-scale-perks | 94 | 0 | 0 | 0 | 0 | 42 | 52 |
-| online-mba-event-management-india-2026 | 88 | 19 | 27 | 0 | 0 | 16 | 26 |
-| nmims-online-bba-review-2026 | 87 | 1 | 5 | 66 | 5 | 0 | 10 |
-| online-mba-uttar-pradesh-2026 | 86 | 24 | 43 | 0 | 0 | 19 | 0 |
-| nmims-vs-symbiosis-online-mba-2026 | 86 | 21 | 39 | 0 | 0 | 0 | 26 |
-| distance-mba-bangalore-2026 | 85 | 5 | 8 | 0 | 2 | 4 | 66 |
-| online-mba-karnataka-2026 | 85 | 18 | 43 | 0 | 4 | 2 | 18 |
+| amity-online-bba-fees-2026 | 349 | 20 | 28 | 0 | 2 | 16 | 283 |
+| mba-hr-management-online-india-2026 | 333 | 80 | 38 | 0 | 0 | 74 | 141 |
+| online-bba-programs-india-2026 | 292 | 84 | 26 | 0 | 34 | 105 | 43 |
+| mba-fees-india-complete-guide-2026 | 278 | 19 | 25 | 1 | 0 | 50 | 183 |
+| online-mba-business-data-analytics-india-2026 | 254 | 64 | 20 | 0 | 0 | 75 | 95 |
+| online-mba-supply-chain-management-india-2026 | 192 | 34 | 10 | 0 | 0 | 20 | 128 |
+| amity-online-bba-review-2026 | 174 | 18 | 12 | 0 | 0 | 9 | 135 |
+| online-bba-fees-india-2026 | 170 | 3 | 3 | 0 | 0 | 55 | 109 |
+| online-mba-entrepreneurship-india-2026 | 133 | 25 | 9 | 0 | 0 | 22 | 77 |
+| amity-online-mba-review-2026 | 130 | 10 | 9 | 0 | 0 | 23 | 88 |
+| best-online-bba-colleges-india-2026 | 122 | 8 | 3 | 0 | 2 | 26 | 83 |
+| career-after-bcom-jobs-salary-courses-2026 | 120 | 4 | 3 | 0 | 0 | 36 | 77 |
+| career-after-mba-jobs-salary-scope-2026 | 112 | 0 | 0 | 0 | 0 | 23 | 89 |
+| career-after-12th-science-courses-jobs-2026 | 109 | 0 | 1 | 0 | 0 | 35 | 73 |
+| mba-pharmaceutical-management-online-india-2026 | 106 | 19 | 0 | 0 | 0 | 12 | 75 |
+| online-mba-salary-india-2026 | 105 | 0 | 0 | 0 | 0 | 4 | 101 |
+| bsc-career-options-scope-salary-india-2026 | 100 | 1 | 3 | 0 | 0 | 2 | 94 |
+| arts-stream-jobs-career-options-salary-india | 98 | 0 | 3 | 0 | 1 | 5 | 89 |
+| 1-year-mba-india-executive-mba-2026 | 96 | 5 | 5 | 0 | 0 | 30 | 56 |
+| ias-officer-salary-india-2026-pay-scale-perks | 92 | 0 | 0 | 0 | 0 | 33 | 59 |
+| online-mba-tamil-nadu-2026 | 90 | 18 | 16 | 0 | 0 | 50 | 6 |
+| best-online-mba-colleges-india-2026 | 89 | 16 | 3 | 0 | 0 | 45 | 25 |
+| top-correspondence-mba-colleges-india-2026 | 84 | 22 | 20 | 1 | 0 | 30 | 11 |
+| commerce-jobs-list-salary-india-2026 | 84 | 0 | 0 | 0 | 0 | 5 | 79 |
+| online-mba-hospital-healthcare-management-india-2026 | 84 | 21 | 4 | 0 | 0 | 9 | 50 |
+| distance-mba-bangalore-2026 | 82 | 5 | 4 | 0 | 2 | 3 | 68 |
+| mba-scope-india-2026 | 80 | 4 | 3 | 0 | 0 | 1 | 72 |
+| llm-course-duration-fees-scope-india-2026 | 79 | 0 | 0 | 0 | 0 | 24 | 55 |
+| mba-after-bsc-is-it-good-2026 | 78 | 2 | 3 | 0 | 3 | 11 | 59 |
+| galgotias-online-mba-review | 78 | 15 | 12 | 0 | 0 | 4 | 47 |
 
 CSV: audits/blog-fee-crossref-2026-08-07.csv

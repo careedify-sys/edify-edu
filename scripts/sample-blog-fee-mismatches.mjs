@@ -52,7 +52,10 @@ const records = raw.slice(1).filter(r => r.length >= header.length).map(r => {
   return o
 })
 
-const mismatches = records.filter(r => r.class === 'MISMATCH')
+// v2: sample only high-confidence rows so we measure precision of the
+// tightened attribution rules, not the fallbacks. Low-confidence rows are
+// UNRESOLVED-adjacent and expected to be noisier.
+const mismatches = records.filter(r => r.class === 'MISMATCH' && r.confidence === 'high')
 const primary = mismatches.filter(r => r.primary_or_competitor === 'primary')
 const competitor = mismatches.filter(r => r.primary_or_competitor === 'competitor')
 
