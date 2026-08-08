@@ -45492,7 +45492,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 </tbody>
 </table>
 
-<p>Panjab University in Chandigarh is one of the oldest universities in India. Its historical footprint sits with a public, largely state-funded institution that draws faculty and students from across northern India. The University Grants Commission funds a large share of its budget. Panjab University also runs its own Centre for Distance and Online Education at <a href="https://cdoe.puchd.ac.in/" target="_blank" rel="noopener">cdoe.puchd.ac.in</a>, with approved programmes across UG, PG, diploma, and certificate courses. This is the sharper point in the whole page: both institutions offer their own online and distance programmes through separate directorates. That is exactly why misreading the name can land a student in the wrong programme at the wrong university, paying a different fee for a different degree from a different institution.</p>
+<p>Panjab University in Chandigarh is one of the oldest universities in India. Its historical footprint sits with a public, largely state-funded institution that draws faculty and students from across northern India. The University Grants Commission funds a large share of its budget. Panjab University also runs its own Centre for Distance and Online Education (CDOE, at cdoe.puchd.ac.in) with approved programmes across UG, PG, diploma, and certificate courses. This is the sharper point in the whole page: both institutions offer their own online and distance programmes through separate directorates. That is exactly why misreading the name can land a student in the wrong programme at the wrong university, paying a different fee for a different degree from a different institution.</p>
 
 <p>Chandigarh University at Gharuan was established under Punjab State Legislature Act No. 15 of 2012 and admitted its first cohort the same year. It is privately promoted, operates a large residential campus in Mohali, and its online arm, Chandigarh University Online, is separately approved by UGC-DEB for online mode. The online arm is what this article is about.</p>
 
@@ -45500,13 +45500,13 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 
 <p>If you take one thing away from this page, take this. Read the name twice. If it says Chandigarh University, it is the Mohali private university established in 2012. If it says Panjab University, it is the Chandigarh public university established in 1882.</p>
 
-<h2>Why Chandigarh University Online MBA Is Quoted at Two Very Different Prices</h2>
+<h2>Why Chandigarh University Online MBA Is Quoted at Three Very Different Prices</h2>
 
-<p>Search "Chandigarh University Online MBA fee" and two very different numbers come back. One site says Rs 1,65,000. Another says Rs 1,80,400. A third quotes the Rs 2,20,000 list price. That is roughly a Rs 55,000 swing across the same programme, and it is the second-most-common reason people suspect something shady.</p>
+<p>Search "Chandigarh University Online MBA fee" and three very different numbers come back. One site says Rs 1,65,000. Another says Rs 1,80,400. A third quotes the Rs 2,20,000 list price. That is roughly a Rs 55,000 swing across the same programme, and it is the second-most-common reason people suspect something shady.</p>
 
 <p>Nothing is shady. Chandigarh University Online publishes one Rs 2,20,000 list price across all MBA variants. It then applies one of two early-bird concession rates depending on which MBA variant a student picks. The Standard Online MBA carries an 18 percent early-bird concession that brings the total to Rs 1,80,400. The Online MBA with Harvard Business Publishing certification and the Online MBA Business Analytics both carry a 25 percent early-bird concession that brings the total to Rs 1,65,000. Same list price, different concession rate. Whichever number an aggregator quotes depends on which variant they show and whether they show the list or the early-bird figure.</p>
 
-<div class="callout-warning"><strong>Verify before you pay:</strong> the numbers below reflect the 2026 intake as verified against the official portal at <a href="https://www.onlinecu.in/" target="_blank" rel="noopener">https://www.onlinecu.in/</a>. Fees are indicative and can change intake to intake. Confirm the current fee for your specific variant and payment plan on the official portal before making any payment.</div>
+<div class="callout-warning"><strong>Verify before you pay:</strong> the numbers below reflect the 2026 intake as recorded against the onlinecu.in portal at the time of writing. Fees are indicative and can change intake to intake. Confirm the current fee for your specific variant and payment plan by asking an independent counsellor first: <a href="/contact">speak to an EdifyEdu counsellor</a> before you make any payment.</div>
 
 <table style="width:100%;border-collapse:collapse;font-size:0.9em">
 <thead><tr style="background:#0f172a;color:#fff">
@@ -45527,7 +45527,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 
 <p><strong>What triggers each concession.</strong> Both early-bird tiers apply to students who complete admission within the current-year enrolment window. Chandigarh University Online typically opens two intakes per year. If you enrol inside the window, you pay the concession-adjusted total for your variant. If you enrol after the window closes, the concession does not apply and the fee reverts to the Rs 2,20,000 list. There is no counsellor negotiation involved; each concession is a published tier and either you qualify or you do not.</p>
 
-<p><strong>What a student actually pays.</strong> A student on the Standard MBA in the current window pays Rs 1,80,400. A student on the Harvard-certified MBA or the Business Analytics variant in the same window pays Rs 1,65,000. The Rs 10,000 booking amount is charged at admission and adjusted against the total. All variants include the two-year semester structure with four semesters of coursework. If you enrol outside the concession window, the early-bird rate does not apply, so verify the enrolment cut-off on <a href="https://www.onlinecu.in/" target="_blank" rel="noopener">https://www.onlinecu.in/</a> before you pay.</p>
+<p><strong>What a student actually pays.</strong> A student on the Standard MBA in the current window pays Rs 1,80,400. A student on the Harvard-certified MBA or the Business Analytics variant in the same window pays Rs 1,65,000. The Rs 10,000 booking amount is charged at admission and adjusted against the total. All variants include the two-year semester structure with four semesters of coursework. If you enrol outside the concession window, the early-bird rate does not apply, so verify the enrolment cut-off with an independent counsellor before you pay.</p>
 
 <p>For a full side-by-side against other UGC-DEB approved online MBAs, the <a href="/universities/chandigarh-university-online/mba">Chandigarh University Online MBA programme page</a> shows the fee, specialisation lineup, and eligibility in the same table format used across every university on EdifyEdu.</p>
 
@@ -45547,7 +45547,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">Appears in NIRF rankings (parent institution)</td><td style="padding:10px;color:#15803d;font-weight:700">Chandigarh University: University 19, Management 32, Engineering 31</td></tr>
 <tr style="border-bottom:1px solid #eee"><td style="padding:10px">Physical campus verifiable on Google Maps</td><td style="padding:10px;color:#15803d;font-weight:700">Gharuan, Mohali; large residential campus</td></tr>
 <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">Alumni on LinkedIn with verified degrees</td><td style="padding:10px;color:#15803d;font-weight:700">Tens of thousands</td></tr>
-<tr style="border-bottom:1px solid #eee"><td style="padding:10px">Transparent fee structure on official portal</td><td style="padding:10px;color:#15803d;font-weight:700">Published at https://www.onlinecu.in/</td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px">Transparent fee structure on official portal</td><td style="padding:10px;color:#15803d;font-weight:700">Published on the onlinecu.in portal</td></tr>
 <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">Standard programme duration (no "MBA in 6 months")</td><td style="padding:10px;color:#15803d;font-weight:700">2-year MBA, 3-year BBA/BCA, 2-year MCA/MSc</td></tr>
 <tr><td style="padding:10px">Convocation and DigiLocker degree upload</td><td style="padding:10px;color:#15803d;font-weight:700">Yes</td></tr>
 </tbody>
@@ -45601,7 +45601,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
   <li><a href="https://www.ugc.gov.in/page/Fake-Universities.aspx" target="_blank" rel="noopener">UGC fake universities list</a> to confirm Chandigarh does not appear</li>
 </ul>
 
-<p style="font-size:13px;color:#64748b;margin:24px 0 20px"><em>Last updated 9 August 2026 by Rishi Kumar, Founder, EdifyEdu. Credential status cross-checked against ugc.gov.in, deb.ugc.ac.in, naac.gov.in, and nirfindia.org. Fee data confirmed with Chandigarh University Online admissions for the 2026-27 intake and cross-checked against the official portal at https://www.onlinecu.in/. If any figure in this article differs from what Chandigarh University Online confirms in writing on your offer letter, treat the offer letter as authoritative and let us know so we can update the page.</em></p>
+<p style="font-size:13px;color:#64748b;margin:24px 0 20px"><em>Last updated 9 August 2026 by Rishi Kumar, Founder, EdifyEdu. Credential status cross-checked against ugc.gov.in, deb.ugc.ac.in, naac.gov.in, and nirfindia.org. Fee data confirmed with Chandigarh University Online admissions for the 2026-27 intake and cross-checked against the onlinecu.in portal. If any figure in this article differs from what Chandigarh University Online confirms in writing on your offer letter, treat the offer letter as authoritative and let us know so we can update the page.</em></p>
 
 <div class="internal-links">
   <div class="il-grid">
@@ -45612,7 +45612,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
   </div>
 </div>
 
-<p class="disclaimer"><em>Disclaimer: EdifyEdu does not receive referral commissions from Chandigarh University or any university mentioned. This article compares public UGC, NAAC, and NIRF data, and cross-checks fees against university admissions teams for the current intake. Fees are indicative and can change intake to intake. Always confirm the current fee for your specific specialisation and payment plan on the official portal at https://www.onlinecu.in/ before making any payment.</em></p>
+<p class="disclaimer"><em>Disclaimer: EdifyEdu does not receive referral commissions from Chandigarh University or any university mentioned. This article compares public UGC, NAAC, and NIRF data, and cross-checks fees against university admissions teams for the current intake. Fees are indicative and can change intake to intake. Always confirm the current fee for your specific specialisation and payment plan with an independent counsellor before making any payment.</em></p>
     `,
   },
 ]
