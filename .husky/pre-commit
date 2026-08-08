@@ -15,4 +15,9 @@ node scripts/check-em-dash.js || exit 1
 echo "pre-commit: check-fee-baseline"
 node scripts/check-fee-baseline.mjs || exit 1
 
+# Blog fee ratchet. Blocks any per-slug increase in unverified blog fee
+# figures and any fee figure in a brand-new post. See scripts/check-blog-fees.mjs.
+echo "pre-commit: check-blog-fees"
+npx tsx scripts/check-blog-fees.mjs || exit 1
+
 echo "pre-commit: all checks passed"
