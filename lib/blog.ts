@@ -45387,7 +45387,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
     slug: 'is-chandigarh-university-online-fake-or-legit-2026',
     title: 'Is Chandigarh University Online Fake or Legit? 2026',
     seoTitle: 'Is Chandigarh University Online Fake? No, NAAC A+ UGC-DEB',
-    metaDescription: 'Chandigarh University Online is not fake. UGC-DEB approved, NAAC A+ accredited. Degrees valid for PSU and government jobs. MBA fees Rs 1.65L to 2.20L explained.',
+    metaDescription: 'Chandigarh University Online is not fake. UGC-DEB approved, NAAC A+ accredited. MBA lists at Rs 2.20L with a Rs 1.65L early-bird price. Full breakdown.',
     category: 'University Reviews',
     tags: ['Chandigarh University Online', 'is Chandigarh University fake', 'Chandigarh University Online legit', 'Chandigarh vs Panjab University', 'Chandigarh Online UGC', 'Chandigarh Online degree government job'],
     publishedAt: '2026-08-09',
@@ -45600,7 +45600,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
   <li><a href="https://www.ugc.gov.in/page/Fake-Universities.aspx" target="_blank" rel="noopener">UGC fake universities list</a> to confirm Chandigarh does not appear</li>
 </ul>
 
-<p style="font-size:13px;color:#64748b;margin:24px 0 20px"><em>Last updated 9 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Credential status cross-checked against ugc.gov.in, deb.ugc.ac.in, naac.gov.in, and nirfindia.org. Fee data confirmed with Chandigarh University Online admissions for the 2026-27 intake and cross-checked against the official portal at onlinecu.in. If any figure in this article differs from what Chandigarh University Online confirms in writing on your offer letter, treat the offer letter as authoritative and let us know so we can update the page.</em></p>
+<p style="font-size:13px;color:#64748b;margin:24px 0 20px"><em>Last updated 9 August 2026 by Rishi Kumar, Founder, EdifyEdu. Credential status cross-checked against ugc.gov.in, deb.ugc.ac.in, naac.gov.in, and nirfindia.org. Fee data confirmed with Chandigarh University Online admissions for the 2026-27 intake and cross-checked against the official portal at onlinecu.in. If any figure in this article differs from what Chandigarh University Online confirms in writing on your offer letter, treat the offer letter as authoritative and let us know so we can update the page.</em></p>
 
 <div class="internal-links">
   <div class="il-grid">
