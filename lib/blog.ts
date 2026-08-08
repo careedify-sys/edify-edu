@@ -45387,7 +45387,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
     slug: 'is-chandigarh-university-online-fake-or-legit-2026',
     title: 'Is Chandigarh University Online Fake or Legit? 2026',
     seoTitle: 'Is Chandigarh University Online Fake? No, NAAC A+ UGC-DEB',
-    metaDescription: 'Chandigarh University Online is not fake. UGC-DEB approved, NAAC A+ accredited. MBA lists at Rs 2.20L with a Rs 1.65L early-bird price. Full breakdown.',
+    metaDescription: 'Chandigarh University Online is not fake. UGC-DEB, NAAC A+. MBA list price Rs 2.20L; early-bird price Rs 1.65L (25% concession). Degrees are PSU-valid.',
     category: 'University Reviews',
     tags: ['Chandigarh University Online', 'is Chandigarh University fake', 'Chandigarh University Online legit', 'Chandigarh vs Panjab University', 'Chandigarh Online UGC', 'Chandigarh Online degree government job'],
     publishedAt: '2026-08-09',
@@ -45517,7 +45517,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 <tbody>
 <tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>Online MBA list price (full 2-year programme)</strong></td><td style="padding:10px">Rs 2,20,000</td><td style="padding:10px">Published sticker fee before any early-bird concession applies</td></tr>
 <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px"><strong>Online MBA general specialisations, early-bird price</strong></td><td style="padding:10px">Rs 1,65,000</td><td style="padding:10px">25 percent early-bird concession applied to the list fee for confirmed enrolments in the current window</td></tr>
-<tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>Online MBA Business Analytics, early-bird price</strong></td><td style="padding:10px">Rs 1,80,000</td><td style="padding:10px">Same list fee; 10 percent early-bird concession on this specialisation tier because content and industry integrations cost more</td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>Online MBA Business Analytics, early-bird price</strong></td><td style="padding:10px">Rs 1,80,000</td><td style="padding:10px">Same list fee; smaller early-bird concession applied to this specialisation tier</td></tr>
 <tr><td style="padding:10px"><strong>Booking amount at admission</strong></td><td style="padding:10px">Rs 10,000</td><td style="padding:10px">One-time deposit to secure the seat, adjusted against total fee</td></tr>
 </tbody>
 </table>
