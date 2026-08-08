@@ -1,7 +1,7 @@
 {
   "updatedAt": "2026-08-08",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
-  "totalUnverified": 2681,
+  "totalUnverified": 2665,
   "perSlug": {
     "amity-online-mba-hr-worth-it": 2,
     "is-online-mba-worth-it-2026": 8,
@@ -34,7 +34,7 @@
     "ugc-deb-approved-universities-list-2026": 2,
     "mba-vs-pgdm-online-india-2026": 5,
     "online-mba-salary-india-2026": 4,
-    "online-mba-lpu-review-2026": 6,
+    "online-mba-lpu-review-2026": 5,
     "distance-mba-kolkata-top-programs-2026": 16,
     "online-mba-pune-university-2026": 25,
     "distance-mba-kerala-programs-2026": 19,
@@ -164,8 +164,8 @@
     "do-employers-accept-online-mba-india-2026": 1,
     "best-online-bca-colleges-india-2026": 33,
     "online-mba-after-career-break-2026": 4,
-    "is-amity-university-online-fake-or-legit-2026": 2,
+    "is-amity-university-online-fake-or-legit-2026": 0,
     "career-after-mca-india-2026": 0,
-    "is-chandigarh-university-online-fake-or-legit-2026": 13
+    "is-chandigarh-university-online-fake-or-legit-2026": 0
   }
 }
