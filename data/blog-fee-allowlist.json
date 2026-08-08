@@ -1,0 +1,24 @@
+{
+  "updatedAt": "2026-08-08",
+  "note": "Owner-verified fee figures that have no counterpart in lib/data.ts and therefore cannot resolve to MATCH via getDisplayFee. Only for figures a university's admissions team has confirmed in writing for a specific specialisation-tier or payment-mode variant that the fees hub does not model yet. Prefer the FeeVariant schema when implemented (see audits/fee-model-proposal-2026-08-07.md). Adding an entry here is a source-of-truth commitment: someone will re-verify at each intake.",
+  "entries": [
+    {
+      "slug": "is-amity-university-online-fake-or-legit-2026",
+      "figure": 449000,
+      "university": "amity-university-online",
+      "programme": "MBA",
+      "source": "Owner-verified with Amity Online admissions",
+      "verified_date": "2026-08-08",
+      "note": "MBA Construction Management specialisation tier. General MBA is Rs 2.07L-2.25L (that range does match lib/data.ts feeMin/feeMax). This 4.49L figure is a specialisation-only variant not modelled in lib/data.ts."
+    },
+    {
+      "slug": "is-amity-university-online-fake-or-legit-2026",
+      "figure": 175120,
+      "university": "amity-university-online",
+      "programme": "BBA",
+      "source": "Owner-verified with Amity Online admissions",
+      "verified_date": "2026-08-08",
+      "note": "BBA one-time-payment discounted total. Semester-wise BBA is Rs 1,99,000 (matches lib/data.ts). This 1,75,120 figure is a payment-mode variant not modelled in lib/data.ts."
+    }
+  ]
+}
