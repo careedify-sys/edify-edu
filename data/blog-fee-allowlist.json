@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08",
+  "updatedAt": "2026-08-10",
   "note": "Owner-verified fee figures that have no counterpart in lib/data.ts and therefore cannot resolve to MATCH via getDisplayFee. Only for figures a university's admissions team has confirmed in writing for a specific specialisation-tier or payment-mode variant that the fees hub does not model yet. Prefer the FeeVariant schema when implemented (see audits/fee-model-proposal-2026-08-07.md). Adding an entry here is a source-of-truth commitment: someone will re-verify at each intake.",
   "entries": [
     {
@@ -19,6 +19,60 @@
       "source": "Owner-verified with Amity Online admissions",
       "verified_date": "2026-08-08",
       "note": "BBA one-time-payment discounted total. Semester-wise BBA is Rs 1,99,000 (matches lib/data.ts). This 1,75,120 figure is a payment-mode variant not modelled in lib/data.ts."
+    },
+    {
+      "slug": "is-chandigarh-university-online-fake-or-legit-2026",
+      "figure": 165000,
+      "university": "chandigarh-university-online",
+      "programme": "MBA",
+      "source": "Owner-verified with Chandigarh University Online admissions and cross-checked against onlinecu.in",
+      "verified_date": "2026-08-09",
+      "note": "MBA early-bird price for general specialisations (25% concession off the Rs 2,20,000 list). Matches the lower bound of getDisplayFee range Rs 1.65L-1.80L; allowlisted here to cover prose occurrences whose 200-char attribution window does not attach to CU MBA cleanly."
+    },
+    {
+      "slug": "is-chandigarh-university-online-fake-or-legit-2026",
+      "figure": 180000,
+      "university": "chandigarh-university-online",
+      "programme": "MBA",
+      "source": "Owner-verified with Chandigarh University Online admissions and cross-checked against onlinecu.in",
+      "verified_date": "2026-08-09",
+      "note": "MBA Business Analytics early-bird price (10% concession off the Rs 2,20,000 list). Matches the upper bound of getDisplayFee range Rs 1.65L-1.80L; allowlisted here to cover prose occurrences whose attribution window does not attach to CU MBA cleanly."
+    },
+    {
+      "slug": "is-chandigarh-university-online-fake-or-legit-2026",
+      "figure": 180400,
+      "university": "chandigarh-university-online",
+      "programme": "MBA",
+      "source": "Verbatim from https://www.onlinecu.in/online-mba.php",
+      "verified_date": "2026-08-10",
+      "note": "Standard Online MBA after 18% early-bird concession (Rs 2,20,000 x 0.82). The pd.fees range Rs 1.65L-1.80L in lib/data.ts is a rounded display of this figure alongside the 25% variant at Rs 1,65,000; the exact Rs 1,80,400 is the un-rounded portal figure."
+    },
+    {
+      "slug": "is-chandigarh-university-online-fake-or-legit-2026",
+      "figure": 220000,
+      "university": "chandigarh-university-online",
+      "programme": "MBA",
+      "source": "Owner-verified with Chandigarh University Online admissions and cross-checked against onlinecu.in",
+      "verified_date": "2026-08-09",
+      "note": "MBA list price before the 25% early-bird concession. lib/data.ts pd.fees is Rs 1.65L-1.80L (early-bird range). The Rs 2,20,000 list is the sticker before concession; not a separate programme, just the un-discounted tier."
+    },
+    {
+      "slug": "is-chandigarh-university-online-fake-or-legit-2026",
+      "figure": 55000,
+      "university": "chandigarh-university-online",
+      "programme": "MBA",
+      "source": "Owner-verified with Chandigarh University Online admissions",
+      "verified_date": "2026-08-09",
+      "note": "Delta between the Rs 2,20,000 list fee and the Rs 1,65,000 early-bird fee (25% of 2,20,000). Referenced in prose to explain the aggregator price swing. Not a separate fee, just the arithmetic gap."
+    },
+    {
+      "slug": "is-chandigarh-university-online-fake-or-legit-2026",
+      "figure": 10000,
+      "university": "chandigarh-university-online",
+      "programme": "MBA",
+      "source": "Owner-verified with Chandigarh University Online admissions and cross-checked against onlinecu.in",
+      "verified_date": "2026-08-09",
+      "note": "One-time booking amount at admission, adjusted against total fee. Not a separate programme fee, just the seat-hold deposit."
     }
   ]
 }

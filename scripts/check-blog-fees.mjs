@@ -27,18 +27,20 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const BASELINE_PATH = join(ROOT, 'data', 'blog-fee-baseline.json')
 const ALLOWLIST_PATH = join(ROOT, 'data', 'blog-fee-allowlist.json')
 
-const rows = scanAllPosts()
-const current = perSlugUnverifiedCounts(rows)
-const currentTotal = Object.values(current).reduce((a, b) => a + b, 0)
-
 // Allowlist — owner-verified figures with no lib/data.ts counterpart.
-// Consumed only by the NEW-post rule below; existing posts ignore it.
+// Consumed by both the NEW-post rule and the EXISTING-post loose count.
+// Allowlisted figures are treated as verified, so they don't inflate the
+// per-slug ratchet just because the content phrasing repeats them.
 const allowlistData = existsSync(ALLOWLIST_PATH)
   ? JSON.parse(readFileSync(ALLOWLIST_PATH, 'utf8'))
   : { entries: [] }
 const allowSet = new Set(
   (allowlistData.entries || []).map(e => `${e.slug}::${e.figure}`),
 )
+
+const rows = scanAllPosts()
+const current = perSlugUnverifiedCounts(rows, allowSet)
+const currentTotal = Object.values(current).reduce((a, b) => a + b, 0)
 function isAllowlisted(slug, r) {
   for (const v of [r.value, r.valueMin, r.valueMax]) {
     if (v != null && allowSet.has(`${slug}::${v}`)) return true

@@ -163,7 +163,12 @@ function firstUniInText(text) {
 // Node 18+ supports lookbehind.
 const CURR = String.raw`(?:₹|(?<![A-Za-z])Rs\.?\s*|(?<![A-Za-z])INR\s+)`
 const NUM = String.raw`([\d]+(?:[.,]\d+)*)`
-const SUF = String.raw`(\s*(?:L(?:akhs?|acs?)?|K|Cr(?:ore)?s?))?`
+// v3 fix (2026-08-10): trailing (?![A-Za-z]) so the suffix letters L/K/Cr
+// only match at a word boundary. Prior /gi + optional suffix meant "Rs
+// 2,20,000 list" parsed as Rs 2,20,000L = Rs 22B; "Rs 5 lecture" as Rs
+// 5L = 500K; etc. The negative lookahead sits inside the optional group,
+// so no-suffix numbers still match cleanly.
+const SUF = String.raw`(\s*(?:L(?:akhs?|acs?)?|K|Cr(?:ore)?s?)(?![A-Za-z]))?`
 const RUPEE_RE = new RegExp(CURR + NUM + SUF, 'gi')
 
 // Range continuation: - / – / — / "to" between two numbers, optionally
@@ -647,13 +652,23 @@ export function scanAllPosts() {
   return rows
 }
 
-// Per-slug count of NON-verified fee figures. Verified = MATCH.
-// NON_FEE is excluded. UNRESOLVED, MISMATCH, SUPPRESSED, ORPHAN count.
-export function perSlugUnverifiedCounts(rows) {
+// Per-slug count of NON-verified fee figures. Verified = MATCH or
+// allowlisted. NON_FEE is excluded. UNRESOLVED, MISMATCH, SUPPRESSED,
+// ORPHAN count only when the figure is not in the allowlist.
+//
+// allowSet is a Set of `${slug}::${value}` keys built from
+// data/blog-fee-allowlist.json. Pass an empty Set (or omit) to fall back
+// to the pre-2026-08-10 behaviour where the allowlist did not affect the
+// existing-post loose-count ratchet.
+export function perSlugUnverifiedCounts(rows, allowSet = new Set()) {
   const counts = {}
   for (const r of rows) {
     if (r.klass === 'NON_FEE') continue
     if (r.klass === 'MATCH') continue
+    const vs = [r.value, r.valueMin, r.valueMax]
+    let allowed = false
+    for (const v of vs) if (v != null && allowSet.has(`${r.slug}::${v}`)) { allowed = true; break }
+    if (allowed) continue
     counts[r.slug] = (counts[r.slug] || 0) + 1
   }
   return counts

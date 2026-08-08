@@ -127,7 +127,9 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       shortName: 'CU Online',
       programPage: '/universities/chandigarh-university-online/mba',
       comparePage: '/compare?a=chandigarh-university-online&b=amity-university-online',
-      blogs: [],
+      blogs: [
+        { slug: 'is-chandigarh-university-online-fake-or-legit-2026', label: 'Is Chandigarh University Online Fake or Legit? 2026' },
+      ],
     },
   },
   'jain-university-online': {
