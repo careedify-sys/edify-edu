@@ -26,6 +26,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       blogs: [
         { slug: 'amity-online-mba-review-2026', label: 'Amity Online MBA Review 2026: Fees, Specialisations and Honest Verdict' },
         { slug: 'amity-online-mba-hr-worth-it', label: 'Is Amity Online MBA in HR Worth It? Honest Verdict 2026' },
+        { slug: 'is-amity-university-online-fake-or-legit-2026', label: 'Is Amity University Online Fake or Legit? 2026' },
       ],
     },
   },
