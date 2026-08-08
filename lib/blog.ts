@@ -45154,6 +45154,235 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 <p class="disclaimer"><em>Disclaimer: This guide describes the pattern across UGC-DEB approved online MBA programmes in India as of July 2026. Delivery mechanics, LMS design, semester calendars, assessment weightings, and exam modes vary by university and by intake. All specifics should be confirmed with the specific university in writing before payment. edifyedu.in does not receive referral commissions from any university mentioned. Always verify UGC-DEB approval at deb.ugc.ac.in and talk to our counsellor to confirm current fees and mechanics before making any payment.</em></p>
     `,
   },
+
+  {
+    slug: 'is-amity-university-online-fake-or-legit-2026',
+    title: 'Is Amity University Online Fake or Legit? 2026',
+    seoTitle: 'Is Amity University Online Fake? No. NAAC A+, UGC Approved',
+    metaDescription: 'Amity University Online is not fake. UGC-DEB approved, NAAC A+, NIRF Management rank 49. Valid for PSU and government jobs. All four Amity fee quotes explained.',
+    category: 'University Reviews',
+    tags: ['Amity University Online', 'is Amity fake', 'Amity Online legit', 'Amity Online UGC', 'Amity Online degree valid', 'Amity Online government job'],
+    publishedAt: '2026-08-08',
+    readTime: 13,
+    targetKeyword: 'is amity university online fake',
+    relatedUniversities: ['amity-university-online'],
+    status: 'published' as const,
+    heroImage: 'https://images.pexels.com/photos/159490/yale-university-landscape-universities-schools-159490.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@pixabay" target="_blank" rel="noopener nofollow">Pixabay</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Wide-angle daytime shot of a modern university campus building, symbolising formal higher education.',
+    faqs: [
+      { q: 'Is Amity University Online fake?', a: 'No. Amity University Online is the online arm of Amity University Uttar Pradesh, a private state university established under U.P. Act No. 11 of 2005. It is UGC recognised under Section 2(f) of the UGC Act, holds UGC-DEB entitlement for online programmes, is NAAC A+ accredited, and appears in NIRF Management rank 49 (2025). It is not on the UGC list of fake universities. Both on-campus and online degrees are valid for jobs, PSU recruitment, higher education, and competitive exams.' },
+      { q: 'Is Amity Online degree valid for government jobs?', a: 'Yes. UGC notification dated 4 September 2020 (D.O. No. F.1-1/2020) confirms that degrees awarded through online mode by UGC-DEB entitled institutions are equivalent to conventional-mode degrees. Central PSUs such as BHEL, ONGC, SAIL, NTPC and IOCL accept Amity Online degrees for management trainee and officer-level recruitment. UPSC eligibility requires a UGC recognised degree, which Amity Online meets. Some state PSCs still specify regular-mode degrees, so verify with your target commission before enrolling.' },
+      { q: 'Is Amity Online UGC approved?', a: 'Yes. Amity University Uttar Pradesh is recognised by UGC under Section 2(f). For online programmes specifically, the university holds UGC-DEB entitlement for the current academic year. You can verify the current status at deb.ugc.ac.in by searching Amity University Uttar Pradesh.' },
+      { q: 'Is Amity Online same as Amity Noida on-campus?', a: 'No. Amity operates many entities. The Noida campus offers full-time on-campus programmes. Amity University Online is a separate delivery format under the same parent university, with UGC-DEB approval specifically for the online mode. Fees, class delivery, exam format, and placement infrastructure differ.' },
+      { q: 'Is Amity University blacklisted?', a: 'No. Amity University Uttar Pradesh is not on the UGC list of fake universities. It appears on the UGC recognised universities list under Section 2(f) and on the UGC-DEB entitled institutions list for online mode. You can confirm both at ugc.gov.in and deb.ugc.ac.in.' },
+      { q: 'Why do I see different fees quoted for Amity Online MBA?', a: 'Amity publishes multiple valid fee tiers depending on payment mode and specialisation. The general online MBA is around Rs 2,07,000 for the one-time payment and Rs 2,25,000 across four semesters. Specialisations with heavier content such as Construction Management carry a higher tier close to Rs 4,49,000 across 4 semesters. Different aggregator sites quote whichever number matches the plan they show, which creates the impression of hidden pricing. There is no hidden fee, only different payment plans and specialisation tiers.' },
+      { q: 'Is Amity Online MBA valid for PSU recruitment?', a: 'Yes for central PSUs where eligibility is a UGC recognised MBA. Amity Online MBA is UGC-DEB approved and NAAC A+ accredited. State PSU recruitment sometimes has legacy language requiring regular-mode degrees; that is a state-level policy and applies to any online MBA, not Amity specifically. Confirm the exact language in your target PSU notification before applying.' },
+      { q: 'Can I pursue PhD after Amity Online MBA?', a: 'Yes. A UGC-DEB entitled Amity Online MBA is eligible for PhD admissions in India. Most Indian universities require a post-graduate degree from a UGC recognised institution, which Amity Online MBA satisfies. Individual programmes may have additional entrance test and interview requirements.' }
+    ],
+    content: `
+<p><em>Last updated: August 2026 | Based on EdifyEdu's independent audit of 125+ UGC-DEB approved universities in India</em></p>
+
+<h2>Is Amity University Online Fake? No, and Here Is the Proof</h2>
+
+<p>This question turns up in Indian search boxes more often than most people would guess. Amity operates many entities. The advertising is everywhere on YouTube and LinkedIn. Working professionals are already sceptical of online degrees. Put those three together and "is Amity Online fake" starts to trend.</p>
+
+<p>The short answer: <strong>Amity University Online is a real, UGC recognised, NAAC A+ accredited online arm of Amity University Uttar Pradesh, established under U.P. Act No. 11 of 2005.</strong> It is not on any fake list. It holds UGC recognition under Section 2(f), UGC-DEB entitlement for online programmes, NAAC A+ accreditation, NIRF Management rank 49 in 2025, and QS World University ranking. The evidence sits below with government links so you can verify each claim yourself.</p>
+
+<p>I am not going to pretend Amity Online is perfect. It has real limitations that the marketing does not mention, and they are covered later in this post. But the fake-or-real question has a clear answer, and it deserves to be at the top of the page.</p>
+
+<h2>Amity Online's Official Credentials at a Glance</h2>
+
+<table style="width:100%;border-collapse:collapse;font-size:0.9em">
+<thead><tr style="background:#0f172a;color:#fff">
+<th style="padding:10px;text-align:left">Credential</th>
+<th style="padding:10px">Status</th>
+<th style="padding:10px">Verify At</th>
+</tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>UGC Recognised (Section 2(f))</strong></td><td style="padding:10px;color:#15803d;font-weight:700">Yes</td><td style="padding:10px"><a href="https://www.ugc.gov.in/recognized_University.aspx" target="_blank" rel="noopener">ugc.gov.in</a></td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px"><strong>UGC-DEB Online Entitled</strong></td><td style="padding:10px;color:#15803d;font-weight:700">Approved</td><td style="padding:10px"><a href="https://deb.ugc.ac.in/" target="_blank" rel="noopener">deb.ugc.ac.in</a></td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>NAAC Grade</strong></td><td style="padding:10px;color:#15803d;font-weight:700">A+</td><td style="padding:10px"><a href="https://naac.gov.in/" target="_blank" rel="noopener">naac.gov.in</a></td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px"><strong>NIRF Ranked (Management)</strong></td><td style="padding:10px;color:#15803d;font-weight:700">Rank 49 (2025)</td><td style="padding:10px"><a href="https://www.nirfindia.org/" target="_blank" rel="noopener">nirfindia.org</a></td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>NIRF Ranked (University)</strong></td><td style="padding:10px;color:#15803d;font-weight:700">Rank 22 (2025)</td><td style="padding:10px"><a href="https://www.nirfindia.org/" target="_blank" rel="noopener">nirfindia.org</a></td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px"><strong>On UGC Fake List?</strong></td><td style="padding:10px;color:#15803d;font-weight:700">Not on fake list</td><td style="padding:10px"><a href="https://www.ugc.gov.in/page/Fake-Universities.aspx" target="_blank" rel="noopener">ugc.gov.in fake list</a></td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>University Type</strong></td><td style="padding:10px">Private State University</td><td style="padding:10px">U.P. Act No. 11 of 2005</td></tr>
+<tr><td style="padding:10px"><strong>Established</strong></td><td style="padding:10px">2005 (Amity group since 1995)</td><td style="padding:10px">-</td></tr>
+</tbody>
+</table>
+
+<div class="callout-key"><strong>Quick verdict:</strong> Amity University Online is a UGC recognised private state university with NAAC A plus grade, NIRF Management rank 49, and current UGC-DEB entitlement for online programmes. It is not fake, not blacklisted, and its degree is fully valid across India for jobs, higher study, and competitive exams.</div>
+
+<h2>Verify It Yourself in 5 Minutes</h2>
+
+<p>You do not need to take my word for it. Here are five checks you can run right now using government portals. The whole exercise costs 5 minutes and settles the question permanently.</p>
+
+<p><strong>Step 1: UGC Recognised Universities List.</strong> Go to <a href="https://www.ugc.gov.in/recognized_University.aspx" target="_blank" rel="noopener">ugc.gov.in/recognized_University.aspx</a>. Filter by state (Uttar Pradesh). You will find "Amity University" listed as a private state university. This confirms UGC recognition under Section 2(f) of the UGC Act.</p>
+
+<p><strong>Step 2: UGC-DEB Entitled Institutions.</strong> Go to <a href="https://deb.ugc.ac.in/" target="_blank" rel="noopener">deb.ugc.ac.in</a>. Search for Amity University Uttar Pradesh. It appears on the entitled list for online mode. Print or screenshot the entry so you have the current-year evidence.</p>
+
+<p><strong>Step 3: NAAC Accreditation.</strong> Go to <a href="https://naac.gov.in/" target="_blank" rel="noopener">naac.gov.in</a>. Open the Accredited Institutions section, filter by Uttar Pradesh. Amity University shows up with NAAC A+ grade. NAAC accreditation is a quality marker that fake universities cannot obtain.</p>
+
+<p><strong>Step 4: NIRF Ranking.</strong> Go to <a href="https://www.nirfindia.org/" target="_blank" rel="noopener">nirfindia.org</a>. Check Management category 2025. Amity University appears at rank 49. In the University category, rank 22. Fake universities are not eligible for NIRF participation, so a ranking is by itself proof of legitimacy.</p>
+
+<p><strong>Step 5: UGC Fake Universities List.</strong> Go to <a href="https://www.ugc.gov.in/page/Fake-Universities.aspx" target="_blank" rel="noopener">ugc.gov.in/page/Fake-Universities.aspx</a>. As of the latest update, UGC lists 21 fake universities in India. Amity does not appear. If an institution is on the recognised list and absent from the fake list, the answer is settled.</p>
+
+<p>If you would rather see all five checks pre-collated for Amity in one place, EdifyEdu's <a href="/verify/amity-university-online">Amity Online verification page</a> pulls the current status of each credential from the government sources above and shows the current entitlement year. Nothing on that page is our opinion. It is a mirror of the government records.</p>
+
+<h2>The 21 Universities UGC Has Actually Blacklisted</h2>
+
+<p>UGC maintains an official list of institutions operating illegally. As of the latest update, 21 institutions are on that list. Examples include Maithili University (Bihar), Raja Arabic University (Nagpur), Indian Institute of Science and Engineering (Tamil Nadu), and Badaganvi Sarkar World Open University (Karnataka). Each one either never obtained UGC recognition, had recognition revoked, or operated without any government sanction.</p>
+
+<p>Amity University Uttar Pradesh is not on this list. It is on the opposite list, the recognised universities list, and the UGC-DEB entitled list for online mode. Being on the recognised list and absent from the fake list are the two independent conditions that together mark a genuine institution. Amity meets both.</p>
+
+<p>You can download the full fake universities list directly at <a href="https://www.ugc.gov.in/page/Fake-Universities.aspx" target="_blank" rel="noopener">ugc.gov.in/page/Fake-Universities.aspx</a> and confirm for yourself. The list is updated as new institutions are added or removed, so the latest version is the one to rely on, not any second-hand summary.</p>
+
+<h2>Why Amity Online Shows Up in "Fake or Legit" Searches</h2>
+
+<p>There are six reasons the question exists at all, even though the credentials are in order:</p>
+
+<p><strong>1. Amity operates many entities under one brand.</strong> Amity University Uttar Pradesh is the flagship, based in Noida. Then there is Amity University Rajasthan, Amity University Mumbai, Amity University Gwalior, Amity University Chhattisgarh, Amity University Haryana, and so on. Each state entity is a separate legal institution with its own state Act and its own UGC recognition status. Amity University Online is the online arm of Amity University Uttar Pradesh specifically, with UGC-DEB approval for online mode. When a search result mixes up two different Amity entities, the confusion looks like an accreditation gap.</p>
+
+<p><strong>2. Aggressive advertising triggers suspicion.</strong> Amity spends heavily on Google Ads, YouTube pre-roll, and LinkedIn sponsorship. Some students associate marketing intensity with a quality problem. It is not a valid correlation for accreditation. NAAC and NIRF are awarded by government bodies that do not consider marketing budgets. But the association is real in the search behaviour, and it is why the question shows up.</p>
+
+<p><strong>3. "Private state university" is misunderstood.</strong> Some students assume anything that is not a central government university or a deemed university is somehow less real. That is wrong. A private state university established under a state Legislative Assembly Act and recognised by UGC under Section 2(f) is a full-status Indian university. Amity University UP was created by U.P. Act No. 11 of 2005. That is the same statutory category as most large private universities in India, including Manipal University Jaipur, Chandigarh University, and Sharda University.</p>
+
+<p><strong>4. Founder-linked historical media coverage.</strong> The Chauhan family that founded Amity has been the subject of Indian media coverage over the years, some of which is unrelated to the university's academic standing. Search results surface older articles and mix them with academic queries. The academic status is set by UGC, NAAC, and NIRF, and it is independent of any founder-related coverage.</p>
+
+<p><strong>5. Scale drives "degree mill" suspicion.</strong> Amity Online enrols large cohorts across 19 MBA specialisations, one of the widest lineups in Indian online education. Volume by itself makes some people suspicious. The regulator's view is different. UGC-DEB entitlement is renewed based on programme quality checks, not enrolment count, and Amity has retained entitlement year on year.</p>
+
+<p><strong>6. Third-party agents misrepresenting Amity.</strong> Some counselling agencies use Amity's name without authorisation, promise guaranteed admission, and add hidden fees. This is not Amity's doing but it damages trust. The only safe path is to apply through the official amity.edu portal or through a counsellor who can show you the exact application URL.</p>
+
+<h2>Why You Will See Four Different Fees Quoted for Amity Online</h2>
+
+<p>This is the single biggest reason people suspect something shady. Search "Amity Online MBA fees" and four different numbers come back from four different sites. So which one is real?</p>
+
+<p>All of them are real. Amity publishes multiple fee tiers, and the tier you see depends on which payment mode and which specialisation the aggregator picked. The pricing is transparent on the official portal, but nobody explains why the numbers differ. Here is the actual breakdown, cross-checked against Amity Online's admissions team as of August 2026.</p>
+
+<div class="callout-warning"><strong>Verify before you pay:</strong> the numbers below reflect the 2026 intake as verified with Amity Online's admissions team. Fees are indicative and can change intake to intake. Confirm the current fee for your specific specialisation and payment plan on the official portal at online.amity.edu before making any payment.</div>
+
+<table style="width:100%;border-collapse:collapse;font-size:0.9em">
+<thead><tr style="background:#0f172a;color:#fff">
+<th style="padding:10px;text-align:left">Amity Online programme and plan</th>
+<th style="padding:10px">Fee</th>
+<th style="padding:10px;text-align:left">Why this number</th>
+</tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>Online MBA, general specialisations, one-time payment</strong></td><td style="padding:10px">Rs 2,07,000</td><td style="padding:10px">Full programme fee paid upfront at admission</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px"><strong>Online MBA, general specialisations, semester-wise total</strong></td><td style="padding:10px">Rs 2,25,000</td><td style="padding:10px">Four-semester instalment plan totalled across the programme</td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>Online MBA Construction Management (highest specialisation tier)</strong></td><td style="padding:10px">Rs 4,49,000 across 4 semesters</td><td style="padding:10px">Elevated specialisation with industry content and certification bundled</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px"><strong>Online BBA, semester-wise total</strong></td><td style="padding:10px">Rs 1,99,000</td><td style="padding:10px">Six-semester instalment plan totalled across the programme</td></tr>
+<tr><td style="padding:10px"><strong>Online BBA, one-time payment (discount for full upfront)</strong></td><td style="padding:10px">Rs 1,75,120</td><td style="padding:10px">Discount off the semester-wise price for full advance payment</td></tr>
+</tbody>
+</table>
+
+<p>Now read that table again. Nothing is hidden. The MBA has a general track and a Construction Management track, and the two are priced differently because the syllabus and industry tie-ups are different. The BBA has a semester plan and a one-time-payment plan, and the second is discounted because the university receives the money upfront. Every aggregator picks whichever number matches the plan they are recommending. When four aggregators pick four different plans, you see four different numbers, and it looks like a mystery.</p>
+
+<p>If you want the current fee for your specific case, ask Amity directly for the offer letter. It states the specialisation, the payment plan, the semester schedule, and the total. That single document resolves every online conflict about Amity fees. For a side-by-side view of Amity Online MBA against other UGC-DEB approved online MBAs, the <a href="/universities/amity-university-online/mba">Amity Online MBA programme page</a> shows the fee, specialisation lineup, and eligibility in the same table format used across every university on EdifyEdu.</p>
+
+<h2>Red Flags a Genuinely Fake University Would Show, and How Amity Passes Each</h2>
+
+<p>Here is the checklist that UGC and education experts use to spot fake institutions. Amity clears every check:</p>
+
+<table style="width:100%;border-collapse:collapse;font-size:0.9em">
+<thead><tr style="background:#0f172a;color:#fff">
+<th style="padding:10px;text-align:left">Red flag check</th>
+<th style="padding:10px">Amity Online status</th>
+</tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px">Listed on UGC recognised universities list</td><td style="padding:10px;color:#15803d;font-weight:700">Yes</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">UGC-DEB entitled for online mode</td><td style="padding:10px;color:#15803d;font-weight:700">Yes</td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px">Valid NAAC accreditation</td><td style="padding:10px;color:#15803d;font-weight:700">A+</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">Appears in NIRF rankings</td><td style="padding:10px;color:#15803d;font-weight:700">Ranked (Management 49, University 22)</td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px">Physical campus verifiable on Google Maps</td><td style="padding:10px;color:#15803d;font-weight:700">Noida campus, 60-plus acres</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">Alumni on LinkedIn with verified degrees</td><td style="padding:10px;color:#15803d;font-weight:700">Tens of thousands</td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px">Transparent fee structure on official portal</td><td style="padding:10px;color:#15803d;font-weight:700">Published at online.amity.edu</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">Standard programme duration (no "degree in 6 months")</td><td style="padding:10px;color:#15803d;font-weight:700">2-year MBA, 3-year BBA/BCA</td></tr>
+<tr><td style="padding:10px">Convocation and DigiLocker degree upload</td><td style="padding:10px;color:#15803d;font-weight:700">Yes</td></tr>
+</tbody>
+</table>
+
+<p>If a university fails even one of these checks, walk away. Amity passes all nine. If you want to run the same checklist against any other online university before you commit money, the framework in <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> walks through the exact portal steps in the order I use them.</p>
+
+<h2>Is Amity Online MBA Valid for Government Jobs, PSUs, and Higher Study?</h2>
+
+<p>Yes, with a small caveat for state PSCs. Here are the specifics:</p>
+
+<p><strong>UGC 2020 notification.</strong> The UGC notification dated 4 September 2020 (D.O. No. F.1-1/2020) states clearly that degrees awarded through online mode by UGC-DEB entitled institutions are equivalent to degrees awarded through conventional mode. Amity is on the entitled list. This is the single most important document to keep on hand when an HR team questions online mode.</p>
+
+<p><strong>Central PSUs.</strong> BHEL, ONGC, SAIL, NTPC, IOCL, GAIL, and other central PSUs accept UGC recognised degrees regardless of delivery mode for management trainee and officer-level recruitment. The eligibility notification specifies "degree from a UGC recognised university" and does not distinguish online from campus. Amity Online meets this bar cleanly.</p>
+
+<p><strong>UPSC eligibility.</strong> UPSC accepts degrees from universities recognised by an Act of Parliament or by UGC. Amity University UP is recognised under Section 2(f) via the U.P. state Act. Amity Online MBA satisfies UPSC eligibility for services that require a post-graduate qualification.</p>
+
+<p><strong>Banking exams.</strong> IBPS PO, SBI PO, and RBI Grade B accept post-graduate degrees from UGC recognised universities. Amity Online MBA qualifies.</p>
+
+<p><strong>PhD admission.</strong> Amity Online MBA is a full post-graduate degree eligible for PhD applications in India. Individual PhD programmes may require additional entrance tests and interviews, and that requirement applies to any post-graduate degree regardless of mode.</p>
+
+<p><strong>State PSC caveat.</strong> Some state PSCs still carry legacy language specifying "regular mode" degrees in their eligibility criteria. This is a state-level policy issue and applies to any online degree, not just Amity. If your target state PSC uses this language, confirm with them in writing before enrolling in any online programme. A full breakdown of the online-degree validity landscape sits in <a href="/guides/is-online-degree-valid-india">is an online degree valid in India</a>.</p>
+
+<h2>Where Amity Online Genuinely Falls Short</h2>
+
+<p>Three honest limitations that the marketing does not mention. If any of these matter to you, weigh them before you enrol.</p>
+
+<p><strong>1. Placement infrastructure is thinner than the on-campus programme.</strong> Amity's on-campus MBA at Noida has a large placement cell, corporate visit calendar, and structured recruitment drives. The online programme runs on virtual industry projects, alumni networking sessions, and self-directed job search. Students consistently report that the placement support is present but not comparable to the on-campus experience. If you are switching careers and need heavy placement support, budget for external job-search effort in parallel.</p>
+
+<p><strong>2. Nineteen MBA specialisations is a lot to police.</strong> The lineup is genuinely wide, from Business Analytics and Data Science to Insurance Management and International Finance ACCA. Wide lineup means the depth of any single specialisation cannot match a specialised institution. If you want a deep quant curriculum, an IIM or ISB will teach more; if you want a deep finance track, XLRI or SPJIMR will teach more. Amity Online is optimised for breadth and flexibility, which is the right trade for many working professionals but not for everyone.</p>
+
+<p><strong>3. Live-session attendance for working professionals is optional and mostly recorded.</strong> This is a strength for most students because it fits work schedules. It becomes a limitation if you learn better in live discussion. The live-recorded split at Amity Online is heavily recorded, and self-discipline matters more than the marketing suggests. Your call whether that is worth it for your learning style.</p>
+
+<p>None of these three make Amity Online fake. They are the honest trade-offs of any large online MBA programme.</p>
+
+<h2>Amity Online vs Other Amity Entities: Quick Clarification</h2>
+
+<table style="width:100%;border-collapse:collapse;font-size:0.9em">
+<thead><tr style="background:#0f172a;color:#fff">
+<th style="padding:10px;text-align:left">Entity</th>
+<th style="padding:10px">Delivery</th>
+<th style="padding:10px">Status</th>
+</tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px">Amity University Uttar Pradesh (Noida)</td><td style="padding:10px">On-campus</td><td style="padding:10px">Private state university, U.P. Act 2005, NAAC A+, NIRF Uni 22</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">Amity University Online</td><td style="padding:10px">Online (UGC-DEB approved)</td><td style="padding:10px">Online arm of Amity UP, NAAC A+, UGC-DEB entitled</td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px">Amity University Rajasthan (Jaipur)</td><td style="padding:10px">On-campus</td><td style="padding:10px">Separate state Act, separate NAAC assessment</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">Amity University Mumbai</td><td style="padding:10px">On-campus</td><td style="padding:10px">Maharashtra private state university</td></tr>
+<tr><td style="padding:10px">Amity Institute of Distance Learning</td><td style="padding:10px">Distance mode (legacy)</td><td style="padding:10px">Distinct from online mode; different approvals</td></tr>
+</tbody>
+</table>
+
+<p>All are legitimate. Each has its own UGC status, its own NAAC file, and its own fee structure. If you enrol in Amity University Online, you enrol in the online arm of the Uttar Pradesh institution. The degree is issued in that university's name.</p>
+
+<h2>Bottom Line</h2>
+
+<p>Amity University Online is a legitimate NAAC A+ private state university with UGC recognition, UGC-DEB online entitlement, NIRF Management rank 49, and NIRF University rank 22. It is not on any fake list. Its online degrees are valid for private-sector employment, central PSU recruitment, most state PSCs, UPSC, banking exams, and PhD admission.</p>
+
+<p>It is not as prestigious as an IIM or ISB, and the placement infrastructure is thinner than the on-campus programme. It is genuinely priced in the range of Rs 2,07,000 to Rs 2,25,000 for the general MBA and up to Rs 4,49,000 for the Construction Management specialisation, with a discounted one-time-payment option on most programmes. That is the whole picture.</p>
+
+<p>If someone told you Amity Online is fake, they were wrong. Use the five verification steps in this article to confirm the current status, and read the four-fee section above the next time an aggregator quotes a number you do not recognise. For the same fake-or-legit treatment on the largest peer group, EdifyEdu's <a href="/blog/is-manipal-university-jaipur-fake-or-legit-2026">MUJ fake or legit review</a> uses the exact same government-portal method.</p>
+
+<h2>Sources to Consult</h2>
+
+<ul>
+  <li><a href="https://www.ugc.gov.in/recognized_University.aspx" target="_blank" rel="noopener">UGC recognised universities list</a> for the Section 2(f) status</li>
+  <li><a href="https://deb.ugc.ac.in/" target="_blank" rel="noopener">UGC-DEB entitled institutions portal</a> for the current-year online entitlement</li>
+  <li><a href="https://naac.gov.in/" target="_blank" rel="noopener">NAAC accredited institutions database</a> for the A+ grade and validity window</li>
+  <li><a href="https://www.nirfindia.org/" target="_blank" rel="noopener">NIRF India Rankings 2025</a> for the Management and University category ranks</li>
+  <li><a href="https://www.ugc.gov.in/page/Fake-Universities.aspx" target="_blank" rel="noopener">UGC fake universities list</a> to confirm Amity does not appear</li>
+</ul>
+
+<p style="font-size:13px;color:#64748b;margin:24px 0 20px"><em>Last updated 8 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Credential status cross-checked against ugc.gov.in, deb.ugc.ac.in, naac.gov.in, and nirfindia.org. Fee data confirmed with Amity Online admissions for the 2026-27 intake. If any figure in this article differs from what Amity confirms in writing on your offer letter, treat the offer letter as authoritative and let us know so we can update the page.</em></p>
+
+<div class="internal-links">
+  <div class="il-grid">
+    <a href="/universities/amity-university-online" class="il-card"><div class="il-uni">AUO</div><div class="il-title">Amity University Online</div><div class="il-sub">Full programme lineup</div></a>
+    <a href="/universities/amity-university-online/bba" class="il-card"><div class="il-uni">BBA</div><div class="il-title">Amity Online BBA</div><div class="il-sub">Fees, specs, eligibility</div></a>
+    <a href="/verify/amity-university-online" class="il-card"><div class="il-uni">VERIFY</div><div class="il-title">Verify Amity Credentials</div><div class="il-sub">Live UGC + NAAC status</div></a>
+    <a href="/contact" class="il-card"><div class="il-uni">TALK</div><div class="il-title">Speak to a counsellor</div><div class="il-sub">Ask before you pay</div></a>
+  </div>
+</div>
+
+<p class="disclaimer"><em>Disclaimer: EdifyEdu does not receive referral commissions from Amity or any university mentioned. This article compares public UGC, NAAC, and NIRF data, and cross-checks fees against university admissions teams for the current intake. Fees are indicative and can change intake to intake. Always confirm the current fee for your specific specialisation and payment plan on the official portal at online.amity.edu before making any payment.</em></p>
+    `,
+  },
 ]
 
 export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))
