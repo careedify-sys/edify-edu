@@ -45251,7 +45251,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 
 <p><strong>4. Scale drives "degree mill" suspicion.</strong> Amity Online enrols large cohorts across 19 MBA specialisations, one of the widest lineups in Indian online education. Volume by itself makes some people suspicious. The regulator's view is different. UGC-DEB entitlement is renewed based on programme quality checks, not enrolment count, and Amity has retained entitlement year on year.</p>
 
-<p><strong>5. Third-party agents misrepresenting Amity.</strong> Some counselling agencies use Amity's name without authorisation, promise guaranteed admission, and add hidden fees. This is not Amity's doing but it damages trust. The only safe path is to apply through the official amity.edu portal or through a counsellor who can show you the exact application URL.</p>
+<p><strong>5. Third-party agents misrepresenting Amity.</strong> Some counselling agencies use Amity's name without authorisation, promise guaranteed admission, and add hidden fees. This is not Amity's doing but it damages trust. The only safe path is to route your application through an independent counsellor who can show you the exact application URL on the official portal.</p>
 
 <h2>Why You Will See Several Different Fees Quoted for Amity Online</h2>
 
@@ -45259,7 +45259,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 
 <p>All of them are real. Amity publishes multiple fee tiers, and the tier you see depends on the programme, the specialisation, and the payment mode the aggregator picked. The pricing is transparent on the official portal, but nobody explains why the numbers differ. Here is the actual breakdown for the two most-searched programmes (MBA and BBA), cross-checked against Amity Online's admissions team as of August 2026. Five valid Amity Online fees sit across those two programmes.</p>
 
-<div class="callout-warning"><strong>Verify before you pay:</strong> the numbers below reflect the 2026 intake as verified with Amity Online's admissions team. Fees are indicative and can change intake to intake. Confirm the current fee for your specific specialisation and payment plan on the official portal at online.amity.edu before making any payment.</div>
+<div class="callout-warning"><strong>Verify before you pay:</strong> the numbers below reflect the 2026 intake as recorded against the online.amity.edu portal at the time of writing. Fees are indicative and can change intake to intake. Confirm the current fee for your specific specialisation and payment plan by asking an independent counsellor first: <a href="/contact">speak to an EdifyEdu counsellor</a> before you make any payment.</div>
 
 <table style="width:100%;border-collapse:collapse;font-size:0.9em">
 <thead><tr style="background:#0f172a;color:#fff">
@@ -45296,7 +45296,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">Appears in NIRF rankings (parent institution)</td><td style="padding:10px;color:#15803d;font-weight:700">Amity University UP: Management 49, University 22</td></tr>
 <tr style="border-bottom:1px solid #eee"><td style="padding:10px">Physical campus verifiable on Google Maps</td><td style="padding:10px;color:#15803d;font-weight:700">Noida campus, 60-plus acres</td></tr>
 <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">Alumni on LinkedIn with verified degrees</td><td style="padding:10px;color:#15803d;font-weight:700">Tens of thousands</td></tr>
-<tr style="border-bottom:1px solid #eee"><td style="padding:10px">Transparent fee structure on official portal</td><td style="padding:10px;color:#15803d;font-weight:700">Published at online.amity.edu</td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px">Transparent fee structure on official portal</td><td style="padding:10px;color:#15803d;font-weight:700">Published on the online.amity.edu portal</td></tr>
 <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px">Standard programme duration (no "degree in 6 months")</td><td style="padding:10px;color:#15803d;font-weight:700">2-year MBA, 3-year BBA/BCA</td></tr>
 <tr><td style="padding:10px">Convocation and DigiLocker degree upload</td><td style="padding:10px;color:#15803d;font-weight:700">Yes</td></tr>
 </tbody>
@@ -45380,7 +45380,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
   </div>
 </div>
 
-<p class="disclaimer"><em>Disclaimer: EdifyEdu does not receive referral commissions from Amity or any university mentioned. This article compares public UGC, NAAC, and NIRF data, and cross-checks fees against university admissions teams for the current intake. Fees are indicative and can change intake to intake. Always confirm the current fee for your specific specialisation and payment plan on the official portal at online.amity.edu before making any payment.</em></p>
+<p class="disclaimer"><em>Disclaimer: EdifyEdu does not receive referral commissions from Amity or any university mentioned. This article compares public UGC, NAAC, and NIRF data, and cross-checks fees against university admissions teams for the current intake. Fees are indicative and can change intake to intake. Always confirm the current fee for your specific specialisation and payment plan with an independent counsellor before making any payment.</em></p>
     `,
   },
   {
