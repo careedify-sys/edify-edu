@@ -6,20 +6,38 @@ Primary-subject precision is 100% on the sampled MISMATCH rows, so every
 pair below is a real value-drift signal — the question is only *why*.
 
 Total pairs: **28**
-  - Genuine-error candidates (NONE of the four dimensions apply): **1**
+  - Genuine-error candidates (NONE of the four dimensions apply): **0**
+    (the single row flagged initially — Amity MCA at Rs 42,500 — was
+    reclassified as **UNIT_MISMATCH** on manual review; see note below.)
   - Dimension-explained (payment mode / discount / spec / campus): **25**
   - ORPHAN (blog talks about a programme not in data.ts): **2**
+  - UNIT_MISMATCH (per-semester vs total): **1**
 
-Genuine-error pairs sort first. Those are the ones that need portal
-verification (the Galgotias class). Dimension-explained pairs are already
-accounted for by content-model gaps — see
-`audits/fee-model-proposal-2026-08-07.md` for the FeeVariant plan.
+Dimension-explained pairs are already accounted for by content-model gaps —
+see `audits/fee-model-proposal-2026-08-07.md` for the FeeVariant plan.
+No portal verification is required. The primary-subject genuine-error count
+is **zero**.
+
+### UNIT_MISMATCH note
+
+`amity-university-online / MCA / Rs 42,500` in `amity-online-mca-fees-review`
+appears as "First semester fee payment (Rs 42,500)" — per-semester context,
+not a total-fee claim. 42,500 * 4 = 170,000 which is an exact match to
+`pd.fees = Rs 1.7L`. The extractor's tight-window NON_FEE gate did not catch
+it because "first semester" isn't in the `NON_FEE_PATTERNS` list (only
+`per semester`, `per sem`, `/sem`, etc.). This is a fifth failure dimension
+alongside payment-mode / discount / spec / campus and should be added to the
+model when the FeeVariant work lands after 18 Aug.
 
 ## Genuine-error candidates (verify against portal)
 
+_(none — the single Amity MCA candidate was reclassified as UNIT_MISMATCH; see the note above.)_
+
+### UNIT_MISMATCH (extractor caught per-semester as total)
+
 | # | university | programme | blog value(s) | current pd.fees | feeMin | feeMax | rows | explanation |
 |---:|---|---|---|---|---:|---:|---:|---|
-| 1 | Amity University Online (`amity-university-online`) | MCA | ₹42,500 | `₹1.7L` | 207000 | 225000 | 1 | NONE |
+| 1 | Amity University Online (`amity-university-online`) | MCA | ₹42,500 | `₹1.7L` | 207000 | 225000 | 1 | UNIT_MISMATCH (per-sem; 42500*4 = 170000 = pd.fees) |
 
 ## Dimension-explained (no portal action needed)
 
