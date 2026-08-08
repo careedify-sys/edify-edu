@@ -45187,7 +45187,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 
 <p>This question turns up in Indian search boxes more often than most people would guess. Amity operates many entities. The advertising is everywhere on YouTube and LinkedIn. Working professionals are already sceptical of online degrees. Put those three together and "is Amity Online fake" starts to trend.</p>
 
-<p>The short answer: <strong>Amity University Online is a real, UGC recognised, NAAC A+ accredited online arm of Amity University Uttar Pradesh, established under U.P. Act No. 11 of 2005.</strong> It is not on any fake list. It holds UGC recognition under Section 2(f), UGC-DEB entitlement for online programmes, NAAC A+ accreditation, NIRF Management rank 49 in 2025, and QS World University ranking. The evidence sits below with government links so you can verify each claim yourself.</p>
+<p>The short answer: <strong>Amity University Online is a real, UGC recognised, NAAC A+ accredited online arm of Amity University Uttar Pradesh, established under U.P. Act No. 11 of 2005.</strong> It is not on any fake list. It holds UGC recognition under Section 2(f), UGC-DEB entitlement for online programmes, NAAC A+ accreditation, and its parent institution Amity University Uttar Pradesh at NIRF Management rank 49 and NIRF University rank 22 in 2025. The evidence sits below with government links so you can verify each claim yourself.</p>
 
 <p>I am not going to pretend Amity Online is perfect. It has real limitations that the marketing does not mention, and they are covered later in this post. But the fake-or-real question has a clear answer, and it deserves to be at the top of the page.</p>
 
@@ -45357,7 +45357,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 
 <p>It is not as prestigious as an IIM or ISB, and the placement infrastructure is thinner than the on-campus programme. It is genuinely priced in the range of Rs 2,07,000 to Rs 2,25,000 for the general MBA and up to Rs 4,49,000 for the Construction Management specialisation, with a discounted one-time-payment option on most programmes. That is the whole picture.</p>
 
-<p>If someone told you Amity Online is fake, they were wrong. Use the five verification steps in this article to confirm the current status, and read the four-fee section above the next time an aggregator quotes a number you do not recognise. For the same fake-or-legit treatment on the largest peer group, EdifyEdu's <a href="/blog/is-manipal-university-jaipur-fake-or-legit-2026">MUJ fake or legit review</a> uses the exact same government-portal method.</p>
+<p>If someone told you Amity Online is fake, they were wrong. Use the five verification steps in this article to confirm the current status, and read the five-fee section above the next time an aggregator quotes a number you do not recognise. For the same fake-or-legit treatment on the largest peer group, EdifyEdu's <a href="/blog/is-manipal-university-jaipur-fake-or-legit-2026">MUJ fake or legit review</a> uses the exact same government-portal method.</p>
 
 <h2>Sources to Consult</h2>
 
