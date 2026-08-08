@@ -1,7 +1,7 @@
 {
   "updatedAt": "2026-08-08",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
-  "totalUnverified": 2679,
+  "totalUnverified": 2681,
   "perSlug": {
     "amity-online-mba-hr-worth-it": 2,
     "is-online-mba-worth-it-2026": 8,
@@ -166,6 +166,6 @@
     "online-mba-after-career-break-2026": 4,
     "is-amity-university-online-fake-or-legit-2026": 2,
     "career-after-mca-india-2026": 0,
-    "is-chandigarh-university-online-fake-or-legit-2026": 11
+    "is-chandigarh-university-online-fake-or-legit-2026": 13
   }
 }
