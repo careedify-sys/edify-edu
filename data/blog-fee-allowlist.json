@@ -181,6 +181,15 @@
       "source": "arithmetic gap between DPU-COL Pune list Rs 1,89,400 and Navi Mumbai MBA Rs 1,75,000",
       "verified_date": "2026-08-09",
       "note": "Not a fee. Rs 1,89,400 minus Rs 1,75,000 = Rs 14,400. Referenced in prose to warn that the two separate D.Y. Patil universities can look like a discount when they are actually two different institutions."
+    },
+    {
+      "slug": "is-dy-patil-online-fake-or-legit-2026",
+      "figure": 132000,
+      "university": "dy-patil-university-online",
+      "programme": "BCA",
+      "source": "lib/data.ts programFees.bca.fee for dy-patil-university-online (line 579): {fee: 132000}, cross-checked with D.Y. Patil University Navi Mumbai admissions on 9 August 2026",
+      "verified_date": "2026-08-09",
+      "note": "Navi Mumbai online BCA total. This matches the BCA fee in lib/data.ts exactly and is the correct programme. Allowlisted because the current scanner picks BBA over BCA for enum-order reasons when both tokens are in the 200-char window (the disambiguation-table cell contains 'BBA Rs 1,30,000; BCA Rs 1,32,000'), so Rs 1,32,000 would otherwise MATCH against the BBA fee at 130000 via 2 percent tolerance, which is a cross-programme false pass. Follow-up branch should add nearest-token programme detection to scripts/lib/blog-fee-scan.mjs and remove this entry along with reconciling the four BBA-review-post regressions the change surfaces (amity-online-bba-review-2026 +4, amrita-online-bba-review-2026 +1, mahe-online-bba-review-2026 +2, symbiosis-online-bba-review-2026 +2)."
     }
   ]
 }
