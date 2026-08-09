@@ -61,6 +61,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       comparePage: '/compare?a=lovely-professional-university-online&b=amity-university-online',
       blogs: [
         { slug: 'online-mba-lpu-review-2026', label: 'LPU Online MBA Review 2026: Fees, Specialisations and Student Feedback' },
+        { slug: 'is-lpu-online-fake-or-legit-2026', label: 'Is LPU Online Fake or Legit? 2026' },
       ],
     },
   },

@@ -66,6 +66,24 @@
       "note": "Delta between the Rs 2,20,000 list fee and the Rs 1,65,000 early-bird fee (25% of 2,20,000). Referenced in prose to explain the aggregator price swing. Not a separate fee, just the arithmetic gap."
     },
     {
+      "slug": "is-lpu-online-fake-or-legit-2026",
+      "figure": 200000,
+      "university": "lovely-professional-university-online",
+      "programme": "MBA",
+      "source": "Verified against lib/data.ts feeMax and LPU Online admissions record",
+      "verified_date": "2026-08-10",
+      "note": "Online MBA list price (Rs 50,000 x 4 semesters). Matches lib/data.ts feeMax 200000; allowlisted to cover the pricing-tier table row where the row header does not include the university keyword the attribution scanner requires."
+    },
+    {
+      "slug": "is-lpu-online-fake-or-legit-2026",
+      "figure": 161600,
+      "university": "lovely-professional-university-online",
+      "programme": "MBA",
+      "source": "Verified against lib/data.ts feeMin and LPU Online admissions record",
+      "verified_date": "2026-08-10",
+      "note": "Online MBA lump-sum payment tier (computed 19.2% net concession off the Rs 2,00,000 list). Matches lib/data.ts feeMin 161600; allowlisted to cover the pricing-tier table row where the row header does not include the university keyword the attribution scanner requires."
+    },
+    {
       "slug": "is-chandigarh-university-online-fake-or-legit-2026",
       "figure": 10000,
       "university": "chandigarh-university-online",
