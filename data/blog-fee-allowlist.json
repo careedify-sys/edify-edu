@@ -175,39 +175,12 @@
     },
     {
       "slug": "is-dy-patil-online-fake-or-legit-2026",
-      "figure": 175000,
-      "university": "dy-patil-university-online",
-      "programme": "MBA",
-      "source": "D.Y. Patil University, Navi Mumbai online admissions cross-checked 9 August 2026",
-      "verified_date": "2026-08-09",
-      "note": "Navi Mumbai online MBA total; matches lib/data.ts pd.fees for dy-patil-university-online MBA. Allowlisted so the disambiguation-table cell and the prose warning about aggregators quoting this figure in a DPU-COL context both clear the ratchet."
-    },
-    {
-      "slug": "is-dy-patil-online-fake-or-legit-2026",
-      "figure": 130000,
-      "university": "dy-patil-university-online",
-      "programme": "BBA",
-      "source": "D.Y. Patil University, Navi Mumbai online admissions cross-checked 9 August 2026",
-      "verified_date": "2026-08-09",
-      "note": "Navi Mumbai online BBA total; matches lib/data.ts programFees.bba.fee for dy-patil-university-online. Allowlisted because the fee appears in a combined BBA/BCA cell where 200-char programme detection falls back to MBA."
-    },
-    {
-      "slug": "is-dy-patil-online-fake-or-legit-2026",
-      "figure": 132000,
-      "university": "dy-patil-university-online",
-      "programme": "BCA",
-      "source": "D.Y. Patil University, Navi Mumbai online admissions cross-checked 9 August 2026",
-      "verified_date": "2026-08-09",
-      "note": "Navi Mumbai online BCA total; matches lib/data.ts programFees.bca.fee for dy-patil-university-online. Allowlisted because the fee appears in a combined BBA/BCA cell where 200-char programme detection falls back to MBA."
-    },
-    {
-      "slug": "is-dy-patil-online-fake-or-legit-2026",
-      "figure": 14000,
+      "figure": 14400,
       "university": "dy-patil-university-online",
       "programme": "MBA",
       "source": "arithmetic gap between DPU-COL Pune list Rs 1,89,400 and Navi Mumbai MBA Rs 1,75,000",
       "verified_date": "2026-08-09",
-      "note": "Not a fee. Referenced in prose to warn that the two separate D.Y. Patil universities can look like a discount when they are actually two different institutions."
+      "note": "Not a fee. Rs 1,89,400 minus Rs 1,75,000 = Rs 14,400. Referenced in prose to warn that the two separate D.Y. Patil universities can look like a discount when they are actually two different institutions."
     }
   ]
 }
