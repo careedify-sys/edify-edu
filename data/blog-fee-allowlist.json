@@ -70,18 +70,45 @@
       "figure": 200000,
       "university": "lovely-professional-university-online",
       "programme": "MBA",
-      "source": "Verified against lib/data.ts feeMax and LPU Online admissions record",
+      "source": "LPU Online portal fee widget, captured 10 Aug 2026",
       "verified_date": "2026-08-10",
-      "note": "Online MBA list price (Rs 50,000 x 4 semesters). Matches lib/data.ts feeMax 200000; allowlisted to cover the pricing-tier table row where the row header does not include the university keyword the attribution scanner requires."
+      "note": "Online MBA Actual list total shown on both the Semester and Lumpsum toggles of the portal fee widget (Rs 50,000 per sem x 4 = Rs 2,00,000). Matches lib/data.ts feeMax 200000; allowlisted so the pricing-tier table rows resolve without needing the university keyword in the row header."
     },
     {
       "slug": "is-lpu-online-fake-or-legit-2026",
       "figure": 161600,
       "university": "lovely-professional-university-online",
       "programme": "MBA",
-      "source": "Verified against lib/data.ts feeMin and LPU Online admissions record",
+      "source": "LPU Online portal fee widget, captured 10 Aug 2026",
       "verified_date": "2026-08-10",
-      "note": "Online MBA lump-sum payment tier (computed 19.2% net concession off the Rs 2,00,000 list). Matches lib/data.ts feeMin 161600; allowlisted to cover the pricing-tier table row where the row header does not include the university keyword the attribution scanner requires."
+      "note": "Online MBA Semester plan Applicable full-course total: Rs 40,400 Applicable per sem x 4 semesters. This is the per-semester scholarship rolled up across four semesters, NOT a lump-sum tier. Matches lib/data.ts feeMin 161600."
+    },
+    {
+      "slug": "is-lpu-online-fake-or-legit-2026",
+      "figure": 50000,
+      "university": "lovely-professional-university-online",
+      "programme": "MBA",
+      "source": "LPU Online portal fee widget, captured 10 Aug 2026",
+      "verified_date": "2026-08-10",
+      "note": "Online MBA Actual per-semester fee on the Semester toggle of the portal fee widget. Scanner normally treats per-sem figures as NON_FEE; entry recorded here for source traceability alongside the other four widget figures."
+    },
+    {
+      "slug": "is-lpu-online-fake-or-legit-2026",
+      "figure": 40400,
+      "university": "lovely-professional-university-online",
+      "programme": "MBA",
+      "source": "LPU Online portal fee widget, captured 10 Aug 2026",
+      "verified_date": "2026-08-10",
+      "note": "Online MBA Applicable per-semester fee on the Semester toggle of the portal fee widget under the 20% Student Grant valid until 14 August 2026. 20% off Rs 50,000 would be Rs 40,000; the portal bills Rs 40,400, giving an effective 19.2% concession rather than the advertised 20%."
+    },
+    {
+      "slug": "is-lpu-online-fake-or-legit-2026",
+      "figure": 146240,
+      "university": "lovely-professional-university-online",
+      "programme": "MBA",
+      "source": "LPU Online portal fee widget, captured 10 Aug 2026",
+      "verified_date": "2026-08-10",
+      "note": "Online MBA Applicable full-course lumpsum on the Lumpsum toggle of the portal fee widget under the 20% + 10% grant valid until 14 August 2026. Compounding 20% then 10% off Rs 2,00,000 would be Rs 1,44,000; the portal bills Rs 1,46,240, giving an effective 26.88% concession rather than the advertised 30%."
     },
     {
       "slug": "is-chandigarh-university-online-fake-or-legit-2026",
