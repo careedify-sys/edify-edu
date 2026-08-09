@@ -53,6 +53,18 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       ],
     },
   },
+  'dr-dy-patil-vidyapeeth-online': {
+    mba: {
+      universityName: 'Dr. D.Y. Patil Vidyapeeth, Pune Online (DPU-COL)',
+      shortName: 'DPU-COL',
+      programPage: '/universities/dr-dy-patil-vidyapeeth-online/mba',
+      comparePage: '/compare?a=dr-dy-patil-vidyapeeth-online&b=dy-patil-university-online',
+      verifyPage: '/verify/dr-dy-patil-vidyapeeth-pune-online',
+      blogs: [
+        { slug: 'is-dy-patil-online-fake-or-legit-2026', label: 'Is DY Patil Online Fake or Legit? 2026 (DPU-COL vs Navi Mumbai)' },
+      ],
+    },
+  },
   'lovely-professional-university-online': {
     mba: {
       universityName: 'LPU Online',
