@@ -2,38 +2,38 @@
 
 Extractor v2 (structural attribution + range parsing + expanded NON_FEE).
 
-Total figures: **9893**
+Total figures: **9946**
 
 ## By classification
 
 | Class | Count |
 |---|---:|
-| MATCH | 1036 |
-| MISMATCH | 739 |
+| MATCH | 1053 |
+| MISMATCH | 749 |
 | SUPPRESSED | 6 |
 | ORPHAN | 65 |
-| UNRESOLVED | 1856 |
-| NON_FEE | 6191 |
+| UNRESOLVED | 1867 |
+| NON_FEE | 6206 |
 
 ## By class × confidence
 
 | Class / Confidence | Count |
 |---|---:|
-| MATCH/high | 613 |
-| MATCH/low | 59 |
-| MATCH/medium | 364 |
+| MATCH/high | 614 |
+| MATCH/low | 73 |
+| MATCH/medium | 366 |
 | MISMATCH/high | 369 |
-| MISMATCH/low | 107 |
-| MISMATCH/medium | 263 |
-| NON_FEE/- | 6191 |
+| MISMATCH/low | 114 |
+| MISMATCH/medium | 266 |
+| NON_FEE/- | 6206 |
 | ORPHAN/high | 51 |
 | ORPHAN/low | 2 |
 | ORPHAN/medium | 12 |
 | SUPPRESSED/high | 5 |
 | SUPPRESSED/medium | 1 |
 | UNRESOLVED/high | 16 |
-| UNRESOLVED/low | 1836 |
-| UNRESOLVED/medium | 4 |
+| UNRESOLVED/low | 1846 |
+| UNRESOLVED/medium | 5 |
 
 ## Top 30 slugs by figure count
 
