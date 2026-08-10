@@ -5696,7 +5696,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td><a href="/universities/chandigarh-university-online" class="ilink">Chandigarh University Online</a></td><td>A+</td><td>32</td><td>Rs 1.65L to 2.20L</td><td>BSc CS: MBA Data Science and AI specialisation</td></tr>
     <tr><td><a href="/universities/amity-university-online" class="ilink">Amity University Online</a></td><td>A+</td><td>49</td><td>Rs 2.07L to 2.25L</td><td>BSc Biotech: Hospital and Healthcare Management spec</td></tr>
     <tr><td><a href="/universities/manipal-university-jaipur-online" class="ilink">Manipal University Jaipur Online</a></td><td>A+</td><td>81</td><td>Rs 1.53L to 1.80L</td><td>BSc any: IT FinTech or Analytics dual</td></tr>
-    <tr><td><a href="/universities/dy-patil-university-online" class="ilink">DY Patil University Online</a></td><td>A++</td><td>n/a Univ 91</td><td>Rs 60K to 2.00L</td><td>BSc Nursing or Biotech: Healthcare specialisation</td></tr>
+    <tr><td><a href="/universities/dy-patil-university-online" class="ilink">DY Patil University Online</a></td><td>A++</td><td>n/a Univ 91</td><td>Rs 1.75L</td><td>BSc Nursing or Biotech: Healthcare specialisation</td></tr>
   </tbody>
 </table>
 
@@ -5874,7 +5874,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td><a href="/universities/manipal-university-jaipur-online" class="ilink">Manipal University Jaipur Online</a></td><td>A+</td><td>81</td><td>Rs 1.53L to 1.80L</td><td>7</td><td>None</td></tr>
     <tr><td><a href="/universities/chandigarh-university-online" class="ilink">Chandigarh University Online</a></td><td>A+</td><td>32</td><td>Rs 1.65L to 2.20L</td><td>25-plus</td><td>None</td></tr>
     <tr><td><a href="/universities/lovely-professional-university-online" class="ilink">LPU Online</a></td><td>A++</td><td>44</td><td>Rs 1.62L to 2.00L</td><td>10-plus</td><td>None</td></tr>
-    <tr><td><a href="/universities/dy-patil-university-online" class="ilink">DY Patil University Online</a></td><td>A++</td><td>n/a (91 Univ)</td><td>Rs 0.60L to 2.00L</td><td>5-plus</td><td>None</td></tr>
+    <tr><td><a href="/universities/dy-patil-university-online" class="ilink">DY Patil University Online</a></td><td>A++</td><td>n/a (91 Univ)</td><td>Rs 1.75L</td><td>5-plus</td><td>None</td></tr>
     <tr><td><a href="/universities/jamia-hamdard-online" class="ilink">Jamia Hamdard Online</a></td><td>A+</td><td>87</td><td>Rs 0.75L to 1.80L</td><td>4-plus</td><td>None</td></tr>
   </tbody>
 </table>
@@ -8266,7 +8266,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <a href="/blog/mba-vs-pgdm-online-india-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">MBA vs PGDM, Which Is Better?</div><div class="il-sub">Degree vs diploma explained</div></a>
     <a href="/blog/online-mba-for-working-professionals-india" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Online MBA for Working Professionals</div><div class="il-sub">7 things to check before you pay</div></a>
     <a href="/programs/mba" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All Online MBA Programs</div><div class="il-sub">125+ UGC-DEB approved options</div></a>
-    <a href="/blog/online-mba-maharashtra-2026" class="il-card"><div class="il-uni">STATE</div><div class="il-title">Online MBA Maharashtra</div><div class="il-sub">8 universities, ₹41K to ₹3.70L</div></a>
+    <a href="/blog/online-mba-maharashtra-2026" class="il-card"><div class="il-uni">STATE</div><div class="il-title">Online MBA Maharashtra</div><div class="il-sub">8 universities, ₹80K to ₹3.70L</div></a>
   </div>
 </div>
     `,
@@ -11898,7 +11898,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td><a href="/universities/manipal-university-jaipur-online" class="ilink">Manipal University Jaipur (MUJ) Online</a></td><td>A+</td><td>81 (Management), 58 (University)</td><td>Rs 1.53L to 1.80L</td><td>Dual specialisation flexibility</td></tr>
     <tr><td><a href="/universities/chandigarh-university-online" class="ilink">Chandigarh University Online</a></td><td>A+</td><td>32 (Management), 19 (University)</td><td>Rs 1.65L to 2.20L</td><td>North India network, Triple Industry Cert</td></tr>
     <tr><td><a href="/universities/lovely-professional-university-online" class="ilink">LPU Online</a></td><td>A++</td><td>44 (Management), 31 (University)</td><td>Rs 1.62L to 2.00L</td><td>Dual specialisation, QS-ranked</td></tr>
-    <tr><td><a href="/universities/dy-patil-university-online" class="ilink">DY Patil University Online</a></td><td>A++</td><td>91 (University)</td><td>Rs 0.60L to 2.00L</td><td>Navi Mumbai network, edX integration</td></tr>
+    <tr><td><a href="/universities/dy-patil-university-online" class="ilink">DY Patil University Online</a></td><td>A++</td><td>91 (University)</td><td>Rs 1.75L</td><td>Navi Mumbai network, edX integration</td></tr>
   </tbody>
 </table>
 
@@ -15100,7 +15100,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="internal-links">
 <strong>Related Guides</strong>
 <div class="il-grid">
-  <a href="/blog/online-mba-maharashtra-2026" class="il-card"><div class="il-uni">STATE</div><div class="il-title">Online MBA Maharashtra</div><div class="il-sub">8 universities, ₹41K to ₹3.70L</div></a>
+  <a href="/blog/online-mba-maharashtra-2026" class="il-card"><div class="il-uni">STATE</div><div class="il-title">Online MBA Maharashtra</div><div class="il-sub">8 universities, ₹80K to ₹3.70L</div></a>
   <a href="/blog/distance-mba-bangalore-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Distance MBA Bangalore</div><div class="il-sub">Top options in Bangalore</div></a>
   <a href="/blog/distance-mba-chennai-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Distance MBA Chennai</div><div class="il-sub">Top options in Chennai</div></a>
   <a href="/blog/is-online-mba-worth-it-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Is Online MBA Worth It?</div><div class="il-sub">ROI and honest answer</div></a>
@@ -15836,7 +15836,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>Sikkim Manipal (SMU)</td><td>Online</td><td>₹1,20,000</td><td>A+</td><td>Not ranked</td></tr>
     <tr><td>LPU Online</td><td>Online</td><td>₹1,46,240 to ₹1,61,600</td><td>A++</td><td>#44</td></tr>
     <tr><td>Chandigarh University</td><td>Online</td><td>₹1,65,000</td><td>A+</td><td>#32</td></tr>
-    <tr><td>DY Patil Navi Mumbai</td><td>Online</td><td>₹1,70,000</td><td>A++</td><td>#91 Univ</td></tr>
+    <tr><td>DY Patil Navi Mumbai</td><td>Online</td><td>₹1,75,000</td><td>A++</td><td>#91 Univ</td></tr>
     <tr><td>MUJ Online</td><td>Online</td><td>₹1,75,000</td><td>A+</td><td>Not ranked</td></tr>
     <tr><td>DY Patil Pune</td><td>Online</td><td>₹1,89,400</td><td>A++</td><td>#41 Univ</td></tr>
     <tr><td>NMIMS Online</td><td>Online</td><td>₹1,96,000 to ₹2,20,000</td><td>A++</td><td>#24</td></tr>
@@ -16619,7 +16619,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td><a href="/universities/chandigarh-university-online" class="ilink">Chandigarh University Online</a></td><td>A+</td><td>32</td><td>Rs 1.65L to 2.20L</td><td>Triple Industry Cert (Harvard, PwC, PMI)</td></tr>
     <tr><td><a href="/universities/manipal-university-jaipur-online" class="ilink">Manipal University Jaipur Online</a></td><td>A+</td><td>81</td><td>Rs 1.53L to 1.80L</td><td>Affordable A+, dual specialisation</td></tr>
     <tr><td><a href="/universities/lovely-professional-university-online" class="ilink">LPU Online</a></td><td>A++</td><td>44</td><td>Rs 1.62L to 2.00L</td><td>NAAC A++ at affordable price</td></tr>
-    <tr><td><a href="/universities/dy-patil-university-online" class="ilink">DY Patil University Online</a></td><td>A++</td><td>n/a (Univ 91)</td><td>Rs 60K to 2.00L</td><td>Healthcare specs, Navi Mumbai network</td></tr>
+    <tr><td><a href="/universities/dy-patil-university-online" class="ilink">DY Patil University Online</a></td><td>A++</td><td>n/a (Univ 91)</td><td>Rs 1.75L</td><td>Healthcare specs, Navi Mumbai network</td></tr>
   </tbody>
 </table>
 
@@ -16812,7 +16812,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>LPU Online</td><td>Online</td><td>Rs 1,46,240 to Rs 1,61,600</td><td>A++</td></tr>
     <tr><td>CU Online</td><td>Online</td><td>Rs 1,65,000</td><td>A+</td></tr>
     <tr><td>MUJ Online</td><td>Online</td><td>Rs 1,75,000</td><td>A+</td></tr>
-    <tr><td>DY Patil Navi Mumbai</td><td>Online</td><td>Rs 1,70,000</td><td>A++</td></tr>
+    <tr><td>DY Patil Navi Mumbai</td><td>Online</td><td>Rs 1,75,000</td><td>A++</td></tr>
     <tr><td>DY Patil Pune</td><td>Online</td><td>Rs 1,89,400</td><td>A++</td></tr>
     <tr><td>NMIMS Online</td><td>Online</td><td>Rs 1,96,000 to Rs 2,20,000</td><td>A++</td></tr>
     <tr><td>Amity Online</td><td>Online</td><td>Rs 2,07,000 to Rs 2,25,000</td><td>A+</td></tr>
@@ -25934,7 +25934,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p style="font-size:13px;color:#64748b;margin-bottom:4px">Written by <strong>Rishi Kumar</strong> · Senior Education Researcher, Founder EdifyEdu · Updated May 2026</p>
 
-<p>If you searched "dy patil mba fees", note that multiple DY Patil institutions exist with very different fee structures. The full-time campus MBA at <a href="/universities/dr-dy-patil-vidyapeeth-online">DY Patil Vidyapeeth</a> Pune costs approximately ₹8L to ₹12L total. The online MBA reviewed on this page costs ₹1,89,400 total. There is also DY Patil University Navi Mumbai which offers its own online MBA at ₹1,70,000. This review covers Dr. DY Patil Vidyapeeth Pune (NAAC A++ 3.64, NIRF University #41). The Navi Mumbai entity (NAAC A++ 3.59, NIRF #91) is a separate institution with a separate fee table shown below for comparison.</p>
+<p>If you searched "dy patil mba fees", note that multiple DY Patil institutions exist with very different fee structures. The full-time campus MBA at <a href="/universities/dr-dy-patil-vidyapeeth-online">DY Patil Vidyapeeth</a> Pune costs approximately ₹8L to ₹12L total. The online MBA reviewed on this page costs ₹1,89,400 total. There is also DY Patil University Navi Mumbai which offers its own online MBA at ₹1,75,000. This review covers Dr. DY Patil Vidyapeeth Pune (NAAC A++ 3.64, NIRF University #41). The Navi Mumbai entity (NAAC A++ 3.59, NIRF #91) is a separate institution with a separate fee table shown below for comparison.</p>
 
 <p>DY Patil Online MBA from Pune sits in an interesting price bracket. At Rs 1,89,400, it sits between budget programs like Sharda (Rs 1.40 lakhs) and premium ones like NMIMS (Rs 1.96 lakhs). What makes it noteworthy is two things most online MBAs cannot claim: WES recognition for international career applications, and access to elective courses on edX from universities like Harvard and MIT as part of the program.</p>
 
@@ -25979,7 +25979,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Semester Fee x4</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 47,350/sem</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 42,500/sem</td></tr>
     <tr style="background:#f8fafc"><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Registration Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,500</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 500</td></tr>
     <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Exam Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Included in sem fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 2,500/semester extra</td></tr>
-    <tr style="font-weight:700;background:#fef9f0;color:#0f172a"><td style="padding:10px 14px">Total Program Fee</td><td style="padding:10px 14px">Rs. 1,89,400</td><td style="padding:10px 14px">Rs. 1,70,000</td></tr>
+    <tr style="font-weight:700;background:#fef9f0;color:#0f172a"><td style="padding:10px 14px">Total Program Fee</td><td style="padding:10px 14px">Rs. 1,89,400</td><td style="padding:10px 14px">Rs. 1,75,000</td></tr>
   </tbody>
 </table>
 
@@ -26107,7 +26107,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <thead><tr><th>University</th><th>NAAC plus NIRF</th><th>Total Fees</th><th>USP</th></tr></thead>
   <tbody>
     <tr><td>DY Patil Pune Online</td><td>NAAC A plus plus (3.64), NIRF Uni 41</td><td>Rs 1,89,400</td><td>WES plus edX Harvard MIT plus 15 specs</td></tr>
-    <tr><td>DY Patil Navi Mumbai Online</td><td>NAAC A plus plus (3.59), NIRF Uni 91</td><td>Rs 1,70,000</td><td>Different university plus brand</td></tr>
+    <tr><td>DY Patil Navi Mumbai Online</td><td>NAAC A plus plus (3.59), NIRF Uni 91</td><td>Rs 1,75,000</td><td>Different university plus brand</td></tr>
     <tr><td>NMIMS Online MBA</td><td>NAAC A plus plus, NIRF Mgmt 24</td><td>Rs 1.96L to Rs 2.20L</td><td>Strongest BFSI plus Mumbai brand</td></tr>
     <tr><td>Amity Online MBA</td><td>NAAC A plus</td><td>Rs 1.99 lakh</td><td>14 specialisations</td></tr>
     <tr><td>JAIN Online MBA</td><td>NAAC A plus plus, NIRF Uni 73</td><td>Rs 1.50 lakh</td><td>Cloud plus AI plus FinTech specs</td></tr>
