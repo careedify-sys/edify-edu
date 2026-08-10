@@ -136,6 +136,15 @@
       "source": "Owner-verified with Chandigarh University Online admissions and cross-checked against onlinecu.in",
       "verified_date": "2026-08-09",
       "note": "One-time booking amount at admission, adjusted against total fee. Not a separate programme fee, just the seat-hold deposit."
+    },
+    {
+      "slug": "online-bba-programs-india-2026",
+      "figure": 145400,
+      "university": "dr-dy-patil-vidyapeeth-online",
+      "programme": "BBA",
+      "source": "Owner-verified with DPU-COL admissions, Aug 2026",
+      "verified_date": "2026-08-11",
+      "note": "DPU-COL Pune online BBA total. lib/data.ts does not currently list BBA under dr-dy-patil-vidyapeeth-online (programs array is MBA/MCA only) so this figure cannot resolve via getDisplayFee. Do NOT add BBA to the data.ts entry: that would spawn a new indexable hub URL and Sprint 2 already reverted the record once for unsourced fields. Sprint-3 held branch feat/thin-page-gating means any new hub URL would appear in the sitemap before the 18 Aug measurement."
     }
   ]
 }
