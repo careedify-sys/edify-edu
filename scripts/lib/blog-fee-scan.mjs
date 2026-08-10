@@ -252,17 +252,58 @@ function stripTags(s) {
   return s.replace(/<[^>]+>/g, ' ')
 }
 
+// Return true if the '.' at dotIdx is part of a single-letter initial
+// ("D.Y.", "U.S.", "B.R.", "C.V.") or a common English honorific abbreviation
+// ("Dr.", "Mr.", "Ms.", "Mrs.", "St.", "Sr.", "Jr.", "Fr.", "Rev.", "Prof.").
+// Sentence-splitter must not treat these dots as sentence terminators, or
+// prose like "D.Y. Patil Vidyapeeth" gets chopped in half and later fee
+// figures lose their preceding university-alias context.
+const ABBRS = ['Prof', 'Mrs', 'Rev', 'Dr', 'Mr', 'Ms', 'St', 'Sr', 'Jr', 'Fr']
+function isInitialLikeDot(text, dotIdx) {
+  if (dotIdx < 1) return false
+  const prev = text[dotIdx - 1]
+  // Single-letter initial: [A-Z] preceded by start, whitespace, or another '.'.
+  // Handles the second dot of "D.Y." because prev2 is the first dot.
+  if (/[A-Z]/.test(prev)) {
+    if (dotIdx === 1) return true
+    const prev2 = text[dotIdx - 2]
+    if (/[\s.]/.test(prev2)) return true
+  }
+  // Honorifics ordered longest-first so "Prof" wins over the "of" that would
+  // otherwise never match anyway.
+  for (const abbr of ABBRS) {
+    if (dotIdx >= abbr.length && text.slice(dotIdx - abbr.length, dotIdx) === abbr) {
+      const startIdx = dotIdx - abbr.length
+      if (startIdx === 0 || /\s/.test(text[startIdx - 1])) return true
+    }
+  }
+  return false
+}
+
+// Like `before.lastIndexOf(marker)` but skips positions where the leading
+// char is a '.' that isInitialLikeDot flags as part of an abbreviation.
+function lastBoundaryIndex(before, marker) {
+  const skipDots = marker[0] === '.'
+  let searchFrom = before.length
+  while (true) {
+    const idx = before.lastIndexOf(marker, searchFrom - 1)
+    if (idx < 0) return -1
+    if (!skipDots || !isInitialLikeDot(before, idx)) return idx
+    searchFrom = idx
+  }
+}
+
 function sentenceAround(text, pos) {
   const before = text.slice(0, pos)
   const after = text.slice(pos)
   const startCandidates = [
-    before.lastIndexOf('. '),
-    before.lastIndexOf('! '),
-    before.lastIndexOf('? '),
-    before.lastIndexOf('.\n'),
-    before.lastIndexOf('!\n'),
-    before.lastIndexOf('?\n'),
-    before.lastIndexOf('. <'),
+    lastBoundaryIndex(before, '. '),
+    lastBoundaryIndex(before, '! '),
+    lastBoundaryIndex(before, '? '),
+    lastBoundaryIndex(before, '.\n'),
+    lastBoundaryIndex(before, '!\n'),
+    lastBoundaryIndex(before, '?\n'),
+    lastBoundaryIndex(before, '. <'),
     -1,
   ]
   const start = Math.max(...startCandidates) + 1
