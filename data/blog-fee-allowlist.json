@@ -184,6 +184,15 @@
     },
     {
       "slug": "is-dy-patil-online-fake-or-legit-2026",
+      "figure": 145400,
+      "university": "dr-dy-patil-vidyapeeth-online",
+      "programme": "BBA",
+      "source": "Owner-verified with DPU-COL admissions, Aug 2026",
+      "verified_date": "2026-08-11",
+      "note": "DPU-COL Pune online BBA total. lib/data.ts programs array on dr-dy-patil-vidyapeeth-online is MBA/MCA only, so this figure cannot resolve via getDisplayFee. Do NOT add BBA to that data.ts entry: it would spawn a new indexable hub URL and Sprint 3's thin-page gate is held pending the 18 Aug GSC measurement (feat/thin-page-gating). Referenced in the three-DY-Patil disambiguation table row 'Online BBA / BCA fee' for the Pune column."
+    },
+    {
+      "slug": "is-dy-patil-online-fake-or-legit-2026",
       "figure": 132000,
       "university": "dy-patil-university-online",
       "programme": "BCA",
