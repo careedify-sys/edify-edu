@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-09",
+  "updatedAt": "2026-08-10",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
-  "totalUnverified": 2664,
+  "totalUnverified": 2662,
   "perSlug": {
     "amity-online-mba-hr-worth-it": 2,
     "is-online-mba-worth-it-2026": 8,
@@ -152,7 +152,7 @@
     "chandigarh-online-bba-review-2026": 5,
     "muj-online-bba-review-2026": 4,
     "online-mba-uttar-pradesh-2026": 35,
-    "online-mba-tamil-nadu-2026": 63,
+    "online-mba-tamil-nadu-2026": 61,
     "online-mba-maharashtra-2026": 19,
     "online-mba-karnataka-2026": 25,
     "online-mba-northeast-india-2026": 9,

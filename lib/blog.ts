@@ -41202,7 +41202,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>Hindustan (HITS) offers online MBA with Finance as the listed specialisation. The institute is Chennai-based and holds NAAC A+ accreditation with WES recognition for international credential evaluation.</p>
 
-<p>At ₹1.2 lakh, HITS sits between MSU (₹80K) and Dr. MGR (₹1.41L). The WES recognition may matter if you plan to work abroad or pursue international certifications. The single-specialisation limitation means HITS works best for candidates already committed to a Finance career path. <a href="/universities/hindustan-institute-technology-online" class="ilink">Compare HITS Online</a>.</p>
+<p>HITS lists its Online MBA at ₹1.2 lakh. Manonmaniam Sundaranar University Online is cheaper at ₹80,000. Dr. MGR Educational and Research Institute Online sits at ₹1.41L. HITS therefore falls mid-tier on price among these three. The WES recognition may matter if you plan to work abroad or pursue international certifications. The single-specialisation limitation means HITS works best for candidates already committed to a Finance career path. <a href="/universities/hindustan-institute-technology-online" class="ilink">Compare HITS Online</a>.</p>
 
 <h3>B.S. Abdur Rahman Crescent Institute Online</h3>
 <p><strong>NAAC A+ | MBA ₹1,60,000 | Vandalur (Chennai)</strong></p>
