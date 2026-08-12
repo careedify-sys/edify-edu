@@ -19,7 +19,10 @@ const TODAY = '2026-08-07'
 const CSV_PATH = join(ROOT, 'audits', `blog-fee-crossref-${TODAY}.csv`)
 const OUT_PATH = join(ROOT, 'audits', `blog-fee-precision-sample-${TODAY}.md`)
 
-const POST_BY_SLUG = new Map(BLOG_POSTS.map(p => [p.slug, p]))
+// first-wins to match runtime getPostBySlug's .find() resolution. See the
+// same fix in scripts/build-blog-fee-triage.mjs for the full rationale.
+const POST_BY_SLUG = new Map()
+for (const p of BLOG_POSTS) if (!POST_BY_SLUG.has(p.slug)) POST_BY_SLUG.set(p.slug, p)
 const UNI_BY_ID = new Map(UNIVERSITIES.map(u => [u.id, u]))
 
 function parseCsv(text) {

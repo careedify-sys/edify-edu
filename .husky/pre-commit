@@ -20,4 +20,11 @@ node scripts/check-fee-baseline.mjs || exit 1
 echo "pre-commit: check-blog-fees"
 npx tsx scripts/check-blog-fees.mjs || exit 1
 
+# Duplicate-slug gate. Blocks any commit that introduces a slug collision
+# in BLOG_POSTS. Runtime .find() picks the first match and would render
+# only one of the entries, so a duplicate is always a bug. See
+# audits/duplicate-blog-slugs-2026-08-11.md.
+echo "pre-commit: check-duplicate-slugs"
+npx tsx scripts/check-duplicate-slugs.mjs || exit 1
+
 echo "pre-commit: all checks passed"
