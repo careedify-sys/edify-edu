@@ -36,7 +36,13 @@ const TARGET_UNIS = new Set([
   'galgotias-university-online',
 ])
 
-const POST_BY_SLUG = new Map(BLOG_POSTS.map(p => [p.slug, p]))
+// first-wins to match runtime getPostBySlug's .find() resolution. new Map()
+// silently kept the LAST duplicate, so this script analysed content the site
+// did not serve for the 12 slugs duplicated by commit a78ec2e. After
+// fix/dedupe-blog-slugs the corpus has no duplicates, but keep the first-wins
+// build so any future regression stays aligned with runtime.
+const POST_BY_SLUG = new Map()
+for (const p of BLOG_POSTS) if (!POST_BY_SLUG.has(p.slug)) POST_BY_SLUG.set(p.slug, p)
 const UNI_BY_ID = new Map(UNIVERSITIES.map(u => [u.id, u]))
 
 // -- CSV read --------------------------------------------------------------
