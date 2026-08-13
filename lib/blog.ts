@@ -3962,7 +3962,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Under Rs 1L budget: IGNOU distance (Rs 31,500) or Galgotias online (Rs 76,200). Both UGC-DEB approved, both NAAC accredited. Limited career support.</p>
 
-<p>Rs 1L to Rs 2L: LPU (Rs 1.46L lumpsum), Shoolini (Rs 1.18L to Rs 1.30L, QS #1 private), Sikkim Manipal (Rs 1.20L, mandatory dual specialisation), CU (Rs 1.65L with Harvard and PwC certifications), DY Patil Navi Mumbai (Rs 1.75L, NAAC A), MUJ (Rs 1.75L), DY Patil Pune / DPU-COL (Rs 1.89L, NAAC A++, NIRF #41), JAIN (Rs 1.75L to Rs 1.96L, NAAC A++), NMIMS (Rs 1.96L with NIRF Management 24).</p>
+<p>Rs 1L to Rs 2L: LPU (Rs 1.46L lumpsum), Shoolini (Rs 1.30L full payment, QS #1 private), Sikkim Manipal (Rs 1.20L, mandatory dual specialisation), CU (Rs 1.65L with Harvard and PwC certifications), DY Patil Navi Mumbai (Rs 1.75L, NAAC A), MUJ (Rs 1.75L), DY Patil Pune / DPU-COL (Rs 1.89L, NAAC A++, NIRF #41), JAIN (Rs 1.75L to Rs 1.96L, NAAC A++), NMIMS (Rs 1.96L with NIRF Management 24).</p>
 
 <p>Rs 2L to Rs 4L: Amity (Rs 2.07L lumpsum to Rs 2.25L sticker, NAAC A+, WES recognised), Symbiosis SSODL (Rs 3.15L to Rs 3.70L with NIRF Management 11). Premium tier.</p>
 
@@ -4765,7 +4765,6 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <ul>
   <li><strong>NMIMS Global Online MBA Finance (NAAC A plus plus):</strong> Best for RBI Grade B, SEBI, banking PO preparation. Rs 2.10 to 2.40 lakh.</li>
-  <li><strong>JAIN Online MBA Finance plus Banking (NAAC A plus plus):</strong> Affordable, strong BFSI alignment. Rs 1.50 lakh.</li>
   <li><strong>IGNOU MBA Banking and Finance:</strong> Lowest cost. Rs 33,000 total for govt aspirants on tight budget.</li>
   <li><strong>Amity Online MBA HR (NAAC A plus):</strong> Strong for IBPS SO HR plus PSU HR trainee roles. Rs 1.99 lakh.</li>
   <li><strong>Symbiosis SCDL MBA Finance:</strong> Pune corporate plus govt placement network. Rs 1.65 lakh.</li>
@@ -9093,7 +9092,6 @@ export const BLOG_POSTS: BlogPost[] = [
   <thead><tr><th>University</th><th>NAAC / NIRF</th><th>Fees (2 years)</th><th>USP</th></tr></thead>
   <tbody>
     <tr><td>NMIMS Global Online</td><td>NAAC A plus plus, NIRF Mgmt 24</td><td>Rs 2.10 to 2.40 lakh</td><td>Strongest BFSI alumni network, Mumbai brand pull</td></tr>
-    <tr><td>JAIN Online MBA Banking and Finance</td><td>NAAC A plus plus, NIRF University 73</td><td>Rs 1.50 lakh</td><td>ACCA pathway available, FinTech specialisation</td></tr>
     <tr><td>Manipal University Jaipur Online</td><td>NAAC A plus</td><td>Rs 1.66 to 1.80 lakh</td><td>CFA-aligned curriculum, MeritShine career service</td></tr>
     <tr><td>Amity University Online</td><td>NAAC A plus</td><td>Rs 1.99 lakh</td><td>Multiple finance specs (Insurance, Banking, Investment Banking)</td></tr>
     <tr><td>Symbiosis SCDL MBA Finance</td><td>NAAC A plus</td><td>Rs 1.65 lakh</td><td>Strong Pune-Mumbai BFSI placement</td></tr>
@@ -16828,7 +16826,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Under Rs 1L: IGNOU (Rs 31,500) and Galgotias (Rs 76,200) are the only NAAC accredited options. IGNOU has the stronger brand but limited career support. Galgotias offers live classes and a structured LMS.</p>
 
-<p>Rs 1L to Rs 1.5L: Shoolini (Rs 1,18,000), SMU (Rs 1,20,000), and LPU (Rs 1,46,240 lumpsum) offer good value with NAAC A+ or A++ accreditation and reasonable specialization choices.</p>
+<p>Rs 1L to Rs 1.5L: Shoolini (Rs 1,30,000 full payment), SMU (Rs 1,20,000), and LPU (Rs 1,46,240 lumpsum) offer good value with NAAC A+ or A++ accreditation and reasonable specialization choices.</p>
 
 <p>Rs 1.5L to Rs 2.5L: CU (Rs 1,65,000 with Harvard and PwC certifications), MUJ (Rs 1,75,000 with Manipal brand), DY Patil Pune (Rs 1,89,400 with WES recognition), NMIMS (Rs 1,96,000 with NIRF Management 24), and Amity (Rs 2,07,000 with 14 specializations).</p>
 
@@ -18062,7 +18060,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p><strong><a href="/universities/chandigarh-university-online" class="ilink">Chandigarh University Online</a></strong> | Total: Rs 1,65,000 | Per semester: Rs 41,250 | Registration: Rs 1,000 | EMI: Rs 6,875/month | NAAC: A+. 25+ specialisations. Includes Harvard Business Publishing + PwC India + PMI certifications.</p>
 <p><strong><a href="/universities/manipal-university-jaipur-online" class="ilink">Manipal University Jaipur Online</a></strong> | Total: Rs 1,75,000 (15% discount available) | EMI: Rs 7,292/month | NAAC: A+. Specialisations: Finance, Marketing, HR, Analytics &amp; Data Science, Digital Marketing, BFSI, Retail.</p>
 <p><strong><a href="/universities/dy-patil-university-online" class="ilink">Dr. DY Patil Vidyapeeth Online</a></strong> | Total: Rs 1,89,400 | Per semester: Rs 47,350 | EMI: ~Rs 7,890/month | Exam fee: Included. 15 specialisations including AI &amp; ML, Blockchain, FinTech, Hospital Administration. Includes edX certification access.</p>
-<p><strong><a href="/universities/jain-university-online" class="ilink">JAIN Online</a></strong> | Total: Rs 1,96,000 (standard) / Rs 2,20,000 (Banking &amp; Finance) | Per semester: Rs 49,000 | Admission fee: Rs 2,500 | Exam fee: Rs 3,000/year | EMI: <strong>0% interest</strong> (from Rs 12,781/month) | NAAC: A++. 20+ specialisations including AI, Data Science, Digital Marketing, ACCA track.</p>
+<p><strong><a href="/universities/jain-university-online" class="ilink">JAIN Online</a></strong> | Total: Rs 1,96,000 | Per semester: Rs 49,000 | Admission fee: Rs 2,500 | Exam fee: Rs 3,000/year | EMI: <strong>0% interest</strong> (from Rs 12,781/month) | NAAC: A++. 20+ specialisations including AI, Data Science, Digital Marketing, ACCA track.</p>
 <p><strong><a href="/universities/nmims-online" class="ilink">NMIMS Online</a></strong> | Total: Rs 1,96,000 | Per semester: ~Rs 55,000 | Exam fee: Rs 800/subject | EMI: ~Rs 6,111/month. Specialisations: Business Management, Financial Management, HR, Marketing, Operations &amp; Data Sciences. Strong national brand.</p>
 <p><strong><a href="/universities/amity-university-online" class="ilink">Amity University Online</a></strong> | Total: Rs 1,99,000 | Registration: Rs 2,500 | Per semester: Rs 49,750 | EMI: Rs 8,292/month | NAAC: A+. 19 specialisations including HR Analytics, Insurance Management, Hospital &amp; Healthcare, ACCA track.</p>
 
@@ -18114,7 +18112,6 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <ul>
   <li><strong>NMIMS Online MBA Finance and Banking:</strong> Standard Rs 2.10 lakh. Banking and Capital Markets specialisation Rs 2.20 lakh.</li>
-  <li><strong>JAIN Online MBA Banking and Finance:</strong> Standard Rs 1.96 lakh. With ACCA track Rs 2.20 lakh.</li>
   <li><strong>Chandigarh University MBA Data Science and AI:</strong> Standard Rs 1.50 lakh. Premium spec with Harvard plus PwC bundle Rs 1.75 lakh.</li>
   <li><strong>Amity Online MBA Healthcare Management:</strong> Standard Rs 1.99 lakh. Premium plus internship support Rs 2.40 lakh.</li>
 </ul>
@@ -24589,7 +24586,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Why Galgotias Is the Cheapest NAAC A+ Online MBA</h2>
 
-<p>At ₹76,200 total, Galgotias University offers the lowest-fee online MBA among all NAAC A+ or higher accredited universities in India. For comparison: IGNOU's MBAOL costs ₹31,500 but IGNOU does not have NAAC A+ (it has A++, but the programme structure is distance, not online with live classes). Shoolini at ₹1,18,000 and SMU at ₹1,20,000 are the next cheapest NAAC A+ options. Galgotias undercuts both by 35% to 40%.</p>
+<p>At ₹76,200 total, Galgotias University offers the lowest-fee online MBA among all NAAC A+ or higher accredited universities in India. For comparison: IGNOU's MBAOL costs ₹31,500 but IGNOU does not have NAAC A+ (it has A++, but the programme structure is distance, not online with live classes). Shoolini at ₹1,30,000 (full payment) and SMU at ₹1,20,000 are the next cheapest NAAC A+ options. Galgotias undercuts both by 35% to 45%.</p>
 
 <p>The trade-off is clear: Galgotias does not have a NIRF Management rank in the top 100 (it sits in Band 101-125), its campus placement track record is weaker than universities like NMIMS or Symbiosis, and its online programme is relatively new compared to established players. But for someone who needs a legitimate, UGC-DEB approved, NAAC A+ MBA degree at the absolute lowest cost, Galgotias is the strongest option in 2026. See the full guide on <a href="/blog/affordable-online-mba-india-2026" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">affordable online MBA options compared</a> for a wider budget-tier view.</p>
 

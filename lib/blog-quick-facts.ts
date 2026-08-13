@@ -53,7 +53,7 @@ export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; gr
     { label: 'Type',              value: 'Comparison' },
     { label: 'NAAC (Both)',       value: 'A++', green: true },
     { label: 'NMIMS Fee',         value: '₹1.96L (standard)' },
-    { label: 'Symbiosis Fee',     value: '₹3.15L (standard)' },
+    { label: 'Symbiosis Fee',     value: '₹3.70L (₹3.15L after 2+ yrs exp concession)' },
     { label: 'NMIMS NIRF Mgt',    value: '#24' },
     { label: 'Symbiosis NIRF Mgt', value: '#11' },
     { label: 'NMIMS Specs',       value: '6' },

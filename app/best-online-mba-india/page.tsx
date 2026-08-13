@@ -489,7 +489,7 @@ export default function BestOnlineMBAPage() {
                   picks: [
                     { name: 'MAHE Manipal Online', fee: '₹2.75L', note: 'NIRF #3, NAAC A++, QS #32', id: 'manipal-academy-higher-education-online' },
                     { name: 'NMIMS Online', fee: '₹2.2L', note: 'NIRF #52, NAAC A++', id: 'nmims-online' },
-                    { name: 'Symbiosis SSODL', fee: '₹3.15L', note: 'NIRF #24, NAAC A++', id: 'symbiosis-university-online' },
+                    { name: 'Symbiosis SSODL', fee: '₹3.70L', note: 'NIRF #24, NAAC A++. ₹3.15L after 2+ yrs exp concession', id: 'symbiosis-university-online' },
                   ],
                   note: 'Premium programs with strongest brand recognition for corporate hiring.',
                 },

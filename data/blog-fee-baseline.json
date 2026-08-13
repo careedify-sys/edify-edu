@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-12",
+  "updatedAt": "2026-08-13",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
-  "totalUnverified": 2357,
+  "totalUnverified": 2355,
   "perSlug": {
     "amity-online-mba-hr-worth-it": 2,
     "is-online-mba-worth-it-2026": 8,
@@ -22,7 +22,7 @@
     "iim-online-mba-india-2026": 34,
     "career-after-12th-arts-courses-jobs-2026": 16,
     "mba-after-bca-is-it-good-career-2026": 7,
-    "govt-jobs-after-mba-india-2026": 5,
+    "govt-jobs-after-mba-india-2026": 4,
     "best-mba-specialization-india-2026": 8,
     "career-after-12th-science-courses-jobs-2026": 36,
     "career-after-12th-commerce-courses-jobs-2026": 11,
@@ -40,7 +40,7 @@
     "distance-mba-kerala-programs-2026": 19,
     "is-online-degree-valid-india-2026": 1,
     "mba-after-engineering-india-2026": 11,
-    "mba-finance-career-salary-scope-2026": 8,
+    "mba-finance-career-salary-scope-2026": 7,
     "mba-hr-career-salary-scope-2026": 6,
     "mba-marketing-career-salary-jobs-2026": 7,
     "distance-mba-bangalore-2026": 9,

@@ -125,8 +125,8 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MBA',
     defaultSpec: 'marketing',
     faqs: [
-      { q: 'Is Amity or Symbiosis better for online MBA?', a: 'Symbiosis has NAAC A++ and deeper academic rigour. Amity has 19 specialisations and QS ranking. Symbiosis costs Rs 90,000 more. Choose based on budget and spec variety needs.' },
-      { q: 'What is the fee difference?', a: 'Amity costs Rs 2,07,000 (one-time) to Rs 2,25,000 (standard). Symbiosis costs Rs 3,15,000. Symbiosis is Rs 90,000 more expensive.' },
+      { q: 'Is Amity or Symbiosis better for online MBA?', a: 'Symbiosis has NAAC A++ and deeper academic rigour. Amity has 19 specialisations and QS ranking. Symbiosis costs Rs 1,45,000 more at sticker (Rs 90,000 more after Symbiosis 2+ years experience concession). Choose based on budget and spec variety needs.' },
+      { q: 'What is the fee difference?', a: 'Amity costs Rs 2,07,000 (one-time) to Rs 2,25,000 (standard). Symbiosis costs Rs 3,70,000 sticker (Rs 3,15,000 after the 2+ years experience concession). Difference: Rs 1,45,000 at sticker, or Rs 90,000 after the concession.' },
       { q: 'Which has more specialisations?', a: 'Amity offers 19 specialisations. Symbiosis offers 9. Amity has broader choice including niche tracks.' },
       { q: 'Is Symbiosis worth the premium?', a: 'If NAAC A++ and Pune academic heritage matter for your career, yes. If you want broader spec choice at lower fee, Amity wins on value.' },
       { q: 'Do both offer scholarships?', a: 'Amity offers Defence, Divyaang, Alumni, Merit, and Sports scholarships. Symbiosis offers a work-experience scholarship (Rs 55,000 off for 2+ years experience).' },

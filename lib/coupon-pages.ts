@@ -121,7 +121,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     ],
     peerComparisons: [
       { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
-      { uni: 'Symbiosis (Rs 3,15,000)', savings: 'Up to Rs 5,000 via SYMB2026-7500' },
+      { uni: 'Symbiosis (Rs 3,70,000; Rs 3,15,000 after 2+ yrs exp concession)', savings: 'Up to Rs 5,000 via SYMB2026-7500' },
       { uni: 'JAIN (Rs 1,96,000)', savings: 'Up to Rs 5,000 via JAIN2026-5K' },
       { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
     ],
@@ -308,7 +308,7 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Is MAHE the same as MUJ?', a: 'No. MAHE (Karnataka) and MUJ (Jaipur) are separate universities under the Manipal group.' },
     ],
     peerComparisons: [
-      { uni: 'Symbiosis (Rs 3,15,000)', savings: 'Up to Rs 5,000 via SYMB2026-7500' },
+      { uni: 'Symbiosis (Rs 3,70,000; Rs 3,15,000 after 2+ yrs exp concession)', savings: 'Up to Rs 5,000 via SYMB2026-7500' },
       { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
     ],
   },
