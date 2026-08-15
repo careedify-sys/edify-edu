@@ -1219,7 +1219,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Fees</h2>
 
-<p>The total programme fee for Indian students is ₹3,70,000. Working professional candidates with 2+ years of full-time experience after graduation receive a ₹55,000 scholarship automatically, making the effective fee ₹3,15,000. You can also pay semester by semester or through EMI. The fee is the same regardless of which specialisation you choose.</p>
+<p>The total programme fee for Indian students is ₹3,70,000. Working professional candidates with 2+ years of full-time experience after graduation receive a ₹55,000 scholarship automatically, making the effective fee ₹3,15,000. You can also pay semester by semester or through EMI. The fee is the same regardless of which specialisation you choose. For a broader look at <a href="/blog/why-online-mba-fees-differ-india-2026" class="ilink">why online MBA fees differ between sites</a>, and how conditional concessions like this get quoted as the standard number, see the fee-quoting explainer.</p>
 
 <p>For international students the fee is approximately USD 4,065. A separate lower fee category exists for students from conflict-affected regions.</p>
 
@@ -25543,8 +25543,8 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaTitle: 'Compare Shoolini Against Other Online MBA Programs',
     ctaDesc: 'See how Shoolini stacks up against DSU, SMU, JAIN and 20+ other UGC-approved programs, fees, niche specializations, Pay After Placement explained.',
     faqs: [
-      { q: 'What is the total fee for Shoolini Online MBA?', a: 'Standard fee after 35% scholarship is Rs. 1,30,000. The Pay After Placement (PAP) option costs Rs. 1,18,000 total (80% paid during the course at Rs. 19,750/semester, 20% after placement). A 10% lumpsum discount is also available. Verify current fees at shoolini.online.' },
-      { q: 'What is the Pay After Placement model at Shoolini?', a: 'Under PAP, you pay Rs. 19,750 per semester during the program (80% of fee). The remaining 20% (Rs. 39,000) is payable after placement or admission to a foreign university. This is not a loan, read the PAP terms carefully with Shoolini before opting in.' },
+      { q: 'What is the total fee for Shoolini Online MBA?', a: 'Sticker fee is Rs. 2,00,000. Full-payment option after 35% scholarship is Rs. 1,30,000 (Rs. 32,500 x 4 semesters). Pay After Placement (PAP) option after 21% scholarship is Rs. 1,58,000 total (Rs. 31,600 per semester x 4 during the course, plus Rs. 31,600 payable after placement). Verify current fees at shoolini.online.' },
+      { q: 'What is the Pay After Placement model at Shoolini?', a: 'Under PAP, you pay Rs. 31,600 per semester across the four semesters of the programme (80% of fee, or Rs. 1,26,400). The remaining 20% (Rs. 31,600) is payable after placement or admission to a foreign university. This is not a loan, read the PAP terms carefully with Shoolini before opting in.' },
       { q: 'What makes Shoolini Online MBA unique?', a: 'Shoolini offers 16 specializations including Pharma & Healthcare Management, Biotechnology Management, Food Technology Management, and Direct Selling Management, tracks unavailable at any other UGC-DEB approved online MBA at this price. QS ranked Shoolini #1 Private University in India (2025).' },
       { q: 'Is Shoolini Online MBA UGC approved?', a: 'Yes. Shoolini University is NAAC A+ accredited, UGC-DEB approved for online programs, and NIRF University Rank #69 (2025). Verify at deb.ugc.ac.in.' },
       { q: 'Who should apply for Shoolini Online MBA?', a: 'Primarily suited for professionals in pharma, biotech, food technology, agribusiness, or life sciences who want a dedicated MBA track in their domain. For standard Finance/HR/Marketing tracks, Shoolini competes with DSU, SMU, and JAIN Online on price but the niche value is its core differentiator.' }
@@ -25559,7 +25559,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div style="background:#f8fafc;border:1px solid #e2e8f0;border-left:5px solid #f97316;border-radius:10px;padding:24px 28px;margin:32px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px">
   <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Fee (After Scholarship)</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 1,30,000</div></div>
-  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">PAP Option Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 1,18,000*</div></div>
+  <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">PAP Option Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 1,58,000*</div></div>
   <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Per Semester</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 30,000–32,500</div></div>
   <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">Reg Fee</div><div style="font-size:17px;font-weight:700;color:#0f172a">Rs. 500</div></div>
   <div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:4px">NAAC Grade</div><div style="font-size:17px;font-weight:700;color:#0f172a">A+</div></div>
@@ -25590,7 +25590,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Payment Option</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Total Fee</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">How It Works</th></tr></thead>
   <tbody>
     <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Standard (35% Scholarship)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,30,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Pay full fee across 4 semesters</td></tr>
-    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">PAP Option (25% Scholarship)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,18,000*</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 19,750/sem during course; Rs. 39,000 after placement</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">PAP Option (21% Scholarship)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,58,000*</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 31,600/sem x 4 during course; Rs. 31,600 after placement</td></tr>
     <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Lumpsum (10% extra discount)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">~Rs. 1,17,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Pay full upfront for additional 10% off</td></tr>
     <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Registration Fee</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rs. 500</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Non-refundable</td></tr>
   </tbody>
@@ -25599,12 +25599,12 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:20px 24px;margin:24px 0">
   <h3 style="color:#1e40af;margin:0 0 10px;font-size:16px">What is the Pay After Placement Model?</h3>
-  <p style="margin:0;font-size:14px;color:#374151">Under PAP, you pay Rs. 19,750 per semester during the 2-year program (80% of fee). The remaining Rs. 39,000 (20%) is payable only after you get a placement or admission to a foreign university. This is not an education loan. Read the PAP terms carefully with Shoolini directly before opting in, verify current PAP terms at <a href="https://shoolini.online/mba.php" target="_blank" rel="noopener">shoolini.online</a>.</p>
+  <p style="margin:0;font-size:14px;color:#374151">Under PAP, you pay Rs. 31,600 per semester across the four semesters of the 2-year programme (80% of fee, or Rs. 1,26,400 total during the course). The remaining Rs. 31,600 (20%) is payable only after you get a placement or admission to a foreign university. This is not an education loan. Read the PAP terms carefully with Shoolini directly before opting in, verify current PAP terms at <a href="https://shoolini.online/mba.php" target="_blank" rel="noopener">shoolini.online</a>.</p>
 </div>
 
 <h2>Shoolini Online MBA Fee Structure 2026: All Payment Options</h2>
 
-<p>Shoolini University offers multiple fee tracks for its online MBA. The standard programme fee after the 35% institutional scholarship is ₹1,30,000. Students choosing the Pay After Placement (PAP) option pay ₹1,18,000 total. A lumpsum one-time payment with an additional 10% discount brings the effective fee to approximately ₹1,17,000. Registration fee is ₹500 (one-time, non-refundable). Track the current <a href="/universities/shoolini-university-online/mba" class="ilink">Shoolini University online MBA fees</a> and semester-wise breakdown on the programme page.</p>
+<p>Shoolini University offers multiple fee tracks for its online MBA. The full-payment programme fee after the 35% institutional scholarship is ₹1,30,000 (₹32,500 x 4 semesters). Students choosing the Pay After Placement (PAP) option pay ₹1,58,000 total after a 21% scholarship (₹31,600 per semester x 4 during the course, plus ₹31,600 payable after placement). A lumpsum one-time payment with an additional 10% discount brings the effective fee to approximately ₹1,17,000. Application fee is ₹500 (one-time, non-refundable). For a wider view of why the same online MBA is quoted at different totals across sites, read <a href="/blog/why-online-mba-fees-differ-india-2026" class="ilink">how online MBA fees get quoted across India</a>. Track the current <a href="/universities/shoolini-university-online/mba" class="ilink">Shoolini University online MBA fees</a> and semester-wise breakdown on the programme page.</p>
 
 <p>For context, here is how Shoolini compares to other affordable online MBA programmes:</p>
 
@@ -25613,7 +25613,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">University</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Total Fee</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">NAAC</th></tr></thead>
   <tbody>
     <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">IGNOU</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">₹31,500</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A++</td></tr>
-    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Shoolini (PAP)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">₹1,18,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">A+</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Shoolini (PAP)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">₹1,58,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">A+</td></tr>
     <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">SMU (Sikkim Manipal)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">₹1,20,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A+</td></tr>
     <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">LPU Online</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">₹1,46,240 to ₹1,61,600</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">A++</td></tr>
     <tr><td style="padding:10px 14px">Chandigarh University</td><td style="padding:10px 14px">₹1,65,000</td><td style="padding:10px 14px">A+</td></tr>
@@ -25764,7 +25764,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">University</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Total Fee</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">NAAC</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Key USP</th></tr></thead>
   <tbody>
     <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Shoolini Online (Std)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,30,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">16 specs, QS #1 Private India</td></tr>
-    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Shoolini Online (PAP)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,18,000*</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Pay 80% now, 20% after placement</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Shoolini Online (PAP)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,58,000*</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Pay 80% now, 20% after placement</td></tr>
     <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0"><a href="/blog/dsu-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">DSU Online</a></td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,30,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A++</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">A++ grade, Bengaluru brand</td></tr>
     <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc"><a href="/blog/smu-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">SMU Online</a></td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,10,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Manipal brand, dual spec</td></tr>
     <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a"><a href="/blog/arka-jain-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">ARKA JAIN Online</a></td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rs. 1,08,500</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">.</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">GenAI Sem 1, JGI Group</td></tr>
@@ -25878,7 +25878,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Who Should Choose Shoolini Online MBA</h2>
 
-<p>Shoolini Online MBA works best for three profiles. First, budget-conscious professionals who want a legitimate MBA under ₹1.3L from a NAAC A+ university without compromising on UGC-DEB validity. The PAP option at ₹1.18L makes it one of the cheapest accredited online MBAs in India. Second, healthcare and pharma professionals. Shoolini offers specializations in Biotechnology Management, Pharmaceutical Management, and Food Technology Management that most other online MBA universities do not have. If your career is in pharma, biotech, or food processing, Shoolini is one of very few options with domain-specific specializations. Third, professionals in Himachal Pradesh, Punjab, and North India who want a regionally recognized university brand with national accreditation.</p>
+<p>Shoolini Online MBA works best for three profiles. First, budget-conscious professionals who want a legitimate MBA under ₹1.3L from a NAAC A+ university without compromising on UGC-DEB validity. The full-payment option at ₹1.30L makes it one of the cheaper accredited online MBAs in India. Second, healthcare and pharma professionals. Shoolini offers specializations in Biotechnology Management, Pharmaceutical Management, and Food Technology Management that most other online MBA universities do not have. If your career is in pharma, biotech, or food processing, Shoolini is one of very few options with domain-specific specializations. Third, professionals in Himachal Pradesh, Punjab, and North India who want a regionally recognized university brand with national accreditation.</p>
 
 <p>Shoolini is NOT the best fit if you prioritize placement assistance (career support is limited compared to NMIMS or Amity), if you need a NIRF Management ranked university (Shoolini is ranked in the University category only, not Management), or if employer brand recognition outside North India matters for your career goals.</p>
 
@@ -33965,7 +33965,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <li>Total add-on: ₹8,500</li>
 </ul>
 
-<p>Effective total cost for the standard ₹1,96,000 specialisations works out to <strong>₹2,04,500</strong> over the full 2-year programme. EMI options are available from approximately ₹12,781 per month at 0% interest for the standard tier.</p>
+<p>Effective total cost for the standard ₹1,96,000 specialisations works out to <strong>₹2,04,500</strong> over the full 2-year programme. EMI options are available from approximately ₹12,781 per month at 0% interest for the standard tier. Because different sites often quote only JAIN's ₹1,60,000 starting tier without flagging the specialisation-driven range, read <a href="/blog/why-online-mba-fees-differ-india-2026" class="ilink">why online MBA fees differ between sites</a> before you compare JAIN against other programmes on a single sticker number.</p>
 
 <p class="callout-warning"><strong>Verify before paying:</strong> JAIN's specialisation pricing tiers shift between intakes. The ₹2,200 to ₹3,000 specialisation fee gap can change without notice. Confirm current fee, intake date, and EMI partner on the official portal at <a href="https://onlinejain.com" rel="nofollow">onlinejain.com</a> and on <a href="https://deb.ugc.ac.in" rel="nofollow">deb.ugc.ac.in</a> before paying.</p>
 
@@ -43534,6 +43534,188 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 </div>
 
 <p class="disclaimer"><em>Disclaimer: EdifyEdu does not receive referral commissions from Dr. D.Y. Patil Vidyapeeth or any university mentioned. This article compares public UGC, NAAC, and NIRF data, and cross-checks fees against university admissions teams for the current intake. Fees are indicative and can change intake to intake. Always confirm the current fee for your specific specialisation and payment plan with an independent counsellor before making any payment.</em></p>
+    `,
+  },
+  {
+    slug: 'why-online-mba-fees-differ-india-2026',
+    title: 'Online MBA Fees India 2026: Why Every Site Says Different',
+    seoTitle: 'Online MBA Fees India 2026: Why Every Site Says Different',
+    h1Title: 'Online MBA Fees India 2026: Why Every Site Quotes a Different Number',
+    metaDescription: 'Three universities, three fee structures, and every comparison site quoting the lowest number. Here is how online MBA pricing actually works in India.',
+    category: 'Online MBA Guides',
+    tags: ['Online MBA Fees', 'Fee Transparency', 'Scholarships', 'UGC-DEB', 'Student Guidance', 'Online Education India'],
+    publishedAt: '2026-08-13',
+    readTime: 8,
+    targetKeyword: 'online mba fees india',
+    relatedUniversities: ['symbiosis-online', 'shoolini-university-online', 'jain-university-online'],
+    status: 'published',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'Why do different websites show different fees for the same online MBA?', a: 'Because a single programme has several true prices: a sticker fee, a concession fee, an instalment total and sometimes a deferred-payment total. Most sites publish the lowest one without the conditions attached to it.' },
+      { q: 'Which fee should I use for budgeting?', a: 'The sticker fee plus registration and application charges. Treat any concession as a reduction you confirm in writing, not as your starting number.' },
+      { q: 'Is the registration fee part of the programme fee?', a: 'Usually not. It is commonly charged separately, which is why instalment totals and headline fees often appear not to add up.' },
+      { q: 'Are pay-after-placement schemes cheaper?', a: 'Generally no. They typically cost more in total and defer only a portion of the fee. Calculate both totals before choosing one.' },
+      { q: 'Do online MBA fees change between intakes?', a: 'Yes. Universities revise fees and scholarship terms at intake boundaries, so a figure verified six months ago may no longer hold. Always check the date any published fee was verified.' },
+      { q: 'What charges are usually left out of published fees?', a: 'Registration, application, examination and convocation charges. The first two are usually published. The last two often are not, so ask about them explicitly.' },
+      { q: 'Can a counsellor confirm my scholarship eligibility?', a: 'They can indicate it, but only a written confirmation from the university against your stated profile is binding. Get it in email before paying anything.' },
+      { q: 'How do I compare two universities fairly?', a: 'Ask both for the total payable from enrolment to degree assuming you qualify for no concessions. Compare those two numbers.' },
+    ],
+    ctaTitle: '',
+    ctaDesc: '',
+    content: `<p class="subtitle">You checked four websites for the same online MBA and got four different fees. None of them lied. All of them left something out.</p>
+
+<p>You are trying to budget for an online MBA and you cannot get a straight number. One site says Rs 3.15 lakh, another says Rs 3.7 lakh, a third quotes a per-semester figure that multiplies into neither. So you cannot compare universities, you cannot plan your EMI, and you start wondering whether anyone is telling you the truth. I spent three days checking published fees against official university portals. Here is what is actually going on.</p>
+
+<div class="callout-key">
+<strong>The four ways an online MBA fee gets quoted</strong>
+<ul>
+<li><strong>Sticker fee:</strong> the university's own published programme fee, before any concession</li>
+<li><strong>Concession fee:</strong> the sticker minus a scholarship you may or may not qualify for</li>
+<li><strong>Instalment total:</strong> the semester amounts added up, which often excludes registration</li>
+<li><strong>Deferred-payment total:</strong> a pay-later scheme that usually costs more overall</li>
+</ul>
+<p><em>All four are real numbers for the same programme. Most sites publish only the lowest one.</em></p>
+</div>
+
+<h2>The pattern, in one sentence</h2>
+
+<p>Comparison sites earn when you enrol. A lower number gets more clicks and more enquiries. So the incentive runs entirely in one direction: quote the smallest defensible figure, and leave the conditions out.</p>
+
+<p class="pull">Nobody has to lie. They just have to pick which true number to print.</p>
+
+<p>I want to be fair here. Universities publish these structures openly on their own portals. The information is not hidden. It gets simplified as it travels, and each simplification drops the inconvenient half.</p>
+
+<h2>Case one: the concession that is not automatic</h2>
+
+<p>Symbiosis SSODL publishes its online MBA at Rs 3,70,000. That is the figure on the university's own fee schedule.</p>
+
+<p>Almost every site quotes Rs 3,15,000. That number is also real. It is the fee after a Rs 55,000 concession, and the concession applies to candidates who bring two or more years of work experience.</p>
+
+<table>
+<thead><tr><th>What you see</th><th>What it means</th></tr></thead>
+<tbody>
+<tr><td>Rs 3,15,000</td><td>Your fee if you have 2+ years of work experience</td></tr>
+<tr><td>Rs 3,70,000</td><td>Your fee if you do not</td></tr>
+<tr><td>Rs 10,000</td><td>Registration, charged separately either way</td></tr>
+<tr><td>Rs 1,000</td><td>Application fee, non-refundable, charged before you enrol</td></tr>
+</tbody>
+</table>
+
+<p>If you are a fresh graduate who budgeted on the number you found in search results, you are short by Rs 66,000 once registration and application are counted. That is not a rounding error. That is the entire fee of some other accredited online MBAs.</p>
+
+<h2>Case two: pay after placement, which is neither</h2>
+
+<p>Shoolini University publishes a sticker fee of Rs 2,00,000 for its online MBA, then offers two routes below it.</p>
+
+<table>
+<thead><tr><th>Route</th><th>Structure</th><th>Total</th></tr></thead>
+<tbody>
+<tr><td>Full payment</td><td>Rs 32,500 per semester across four semesters</td><td>Rs 1,30,000</td></tr>
+<tr><td>Pay After Placement</td><td>Rs 31,600 four times during the programme, plus Rs 31,600 deferred</td><td>Rs 1,58,000</td></tr>
+</tbody>
+</table>
+
+<p>Read the second row carefully. Under the pay-after-placement route, you pay Rs 1,26,400 on the normal semester schedule whether or not you are placed. Only the final Rs 31,600 waits.</p>
+
+<p>So the scheme defers a fifth of the fee, and choosing it costs Rs 28,000 more than simply paying the full-payment amount. You are paying Rs 28,000 to postpone Rs 31,600 by about two years.</p>
+
+<p>Nothing here is concealed. The numbers sit on the university's own page. But "pay after placement" as a phrase suggests you pay nothing until you are placed, and that is not what the structure does. Very few applicants will sit down and do this arithmetic.</p>
+
+<h2>Case three: one fee, nineteen prices</h2>
+
+<p>Jain University's online MBA does not have a single fee at all. The published cost varies by specialisation, starting at Rs 1,60,000 and rising substantially depending on which track you pick.</p>
+
+<p>Most sites print the starting figure and move on. If you enrol expecting Rs 1,60,000 and choose a premium track, your actual cost can be far higher. The number you were quoted was true for a programme you did not select.</p>
+
+<h2>What this costs you in practice</h2>
+
+<p>These are not academic distinctions. Three concrete consequences follow.</p>
+
+<p><strong>Your comparison is wrong.</strong> If you compare University A's concession fee against University B's sticker fee, you have made a decision on a difference that does not exist. Two programmes that look Rs 80,000 apart may be nearly identical in cost, or the gap may run the other way.</p>
+
+<p><strong>Your EMI is wrong.</strong> Loan and no-cost EMI applications are built on the total. A number that turns out to be Rs 66,000 short means either a shortfall mid-programme or a second loan on worse terms.</p>
+
+<p><strong>Your dropout risk goes up.</strong> The most expensive outcome in online education is not an expensive degree. It is an unfinished one. Students who discover the real cost in semester two are the ones who stop attending in semester three, having paid for half a qualification that counts for nothing.</p>
+
+<h2>How to get the real number in ten minutes</h2>
+
+<p>Do this before you speak to any counsellor, including ours.</p>
+
+<ol>
+<li><strong>Go to the university's own portal.</strong> Not a comparison site, not an aggregator. The official domain, and specifically its fee page.</li>
+<li><strong>Find the sticker fee first.</strong> Ignore every discounted number until you know what the programme costs before concessions.</li>
+<li><strong>List every concession and its condition.</strong> Work experience, merit, upfront payment, early bird. Write down which ones you actually qualify for today, not which ones you might.</li>
+<li><strong>Add the separate charges.</strong> Registration and application fees usually sit outside the tuition figure. Examination and convocation charges often are not published at all, so ask directly.</li>
+<li><strong>If a deferred scheme is offered, calculate both totals.</strong> Deferral almost always costs more. Work out how much more, and how much is genuinely deferred.</li>
+<li><strong>Get it in writing.</strong> A counsellor's verbal assurance that you qualify for a concession is not a fee waiver. Ask for it in an email, against your stated profile.</li>
+</ol>
+
+<div class="callout-warning">
+<strong>The one question that cuts through everything</strong>
+<p>Ask the university this, in writing: <em>"What is the total amount I will pay from today until I receive my degree, assuming I qualify for nothing?"</em></p>
+<p>That single number is comparable across universities. Nothing else is.</p>
+</div>
+
+<h2>Why we publish the higher number</h2>
+
+<p>I should be straight about our own position, because you have every reason to be sceptical of a comparison site writing this article.</p>
+
+<p>edifyedu.in does not charge students. We are not paid more for pointing you at an expensive programme than a cheap one, and we do not sell placement in our rankings. That is the only reason we can afford to lead with Rs 3,70,000 when every commercial incentive in this industry points at Rs 3,15,000.</p>
+
+<p>We also get it wrong sometimes. In the past week we found three fee figures on our own pages that did not match the universities' published schedules, and we corrected them. Every fee we publish now carries the date we verified it against the official portal. If you find one that is out of date, tell us and we will fix it.</p>
+
+<p>You can check any university's approval status yourself through our <a href="/verify" class="ilink">verification tool</a>, and our <a href="/guides/how-to-check-ugc-deb-approval" class="ilink">guide to UGC-DEB approval</a> shows you how to confirm entitlement directly on the government portal without trusting us at all.</p>
+
+<h2>Final word</h2>
+
+<p>The Indian online MBA market is not dishonest so much as selectively quoted. Universities publish complete information. It gets compressed as it moves through the ecosystem, and every compression drops the part that costs you money.</p>
+
+<p>You do not need to distrust everyone. You need one habit: always ask for the sticker fee, then work down. If the first number someone gives you is the lowest possible number, you are talking to someone whose interests are not aligned with yours.</p>
+
+<div class="cta-box">
+<h3>Want the real total for the programme you are considering?</h3>
+<p>Tell us which universities you are weighing and we will give you the full fee picture, sticker first, with the conditions attached to every concession.</p>
+<p><a href="/contact" class="ilink">Ask us directly</a> or <a href="/compare" class="ilink">compare programmes side by side</a> on public UGC, NAAC and NIRF data.</p>
+</div>
+
+<h2>Frequently asked questions</h2>
+
+<div class="faq">
+<p><strong>Why do different websites show different fees for the same online MBA?</strong><br>
+Because a single programme has several true prices: a sticker fee, a concession fee, an instalment total and sometimes a deferred-payment total. Most sites publish the lowest one without the conditions attached to it.</p>
+
+<p><strong>Which fee should I use for budgeting?</strong><br>
+The sticker fee plus registration and application charges. Treat any concession as a reduction you confirm in writing, not as your starting number.</p>
+
+<p><strong>Is the registration fee part of the programme fee?</strong><br>
+Usually not. It is commonly charged separately, which is why instalment totals and headline fees often appear not to add up.</p>
+
+<p><strong>Are pay-after-placement schemes cheaper?</strong><br>
+Generally no. They typically cost more in total and defer only a portion of the fee. Calculate both totals before choosing one.</p>
+
+<p><strong>Do online MBA fees change between intakes?</strong><br>
+Yes. Universities revise fees and scholarship terms at intake boundaries, so a figure verified six months ago may no longer hold. Always check the date any published fee was verified.</p>
+
+<p><strong>What charges are usually left out of published fees?</strong><br>
+Registration, application, examination and convocation charges. The first two are usually published. The last two often are not, so ask about them explicitly.</p>
+
+<p><strong>Can a counsellor confirm my scholarship eligibility?</strong><br>
+They can indicate it, but only a written confirmation from the university against your stated profile is binding. Get it in email before paying anything.</p>
+
+<p><strong>How do I compare two universities fairly?</strong><br>
+Ask both for the total payable from enrolment to degree assuming you qualify for no concessions. Compare those two numbers.</p>
+</div>
+
+<h2>Sources to consult</h2>
+<ul>
+<li>Symbiosis SSODL fee schedule: ssodl.edu.in/ug-pg-fees</li>
+<li>Shoolini online MBA fee page: shoolini.online/mba.php</li>
+<li>Jain University online MBA: onlinejain.com/online-mba</li>
+<li>UGC-DEB entitled programme list: deb.ugc.ac.in</li>
+<li>NAAC accreditation database: naac.gov.in</li>
+</ul>
+
+<p class="disclaimer"><em>All fee figures in this article were verified against the respective universities' official portals on 13 August 2026 and are indicative only. Universities revise fees and scholarship terms between intakes without notice. Confirm the current fee, the concession conditions and any examination or convocation charges directly with the university in writing before making a payment. edifyedu.in does not charge students, does not accept payment for rankings, and compares programmes only on publicly available UGC, NAAC and NIRF data.</em></p>
     `,
   },
 ]
