@@ -3871,7 +3871,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p><strong>Vignan Online</strong> | Total: Rs 90,000 | EMI: ~Rs 5,700/month | NAAC: A+. Specialisations: Business Analytics, Finance, Healthcare, HR, IT, Logistics and SCM, Marketing.</p>
 
 <h3>Rs 1 Lakh to Rs 1.5 Lakh</h3>
-<p><strong>Shoolini University Online</strong> | Total: Rs 1,18,000 to Rs 1,30,000 | QS Ranked #1 Private University in India. Niche specialisations: Agri Business, Biotechnology, Food Technology, Pharma. Pay-After-Placement model available.</p>
+<p><strong>Shoolini University Online</strong> | Total: Rs 1,30,000 (opt-out) to Rs 1,58,000 (PAP) | QS Ranked #1 Private University in India. Niche specialisations: Agri Business, Biotechnology, Food Technology, Pharma. Pay-After-Placement model available.</p>
 <p><strong>Sikkim Manipal University Online</strong> | Total: Rs 1,20,000 | Per semester: Rs 30,000 | NAAC: A+. Mandatory dual specialisation model.</p>
 <p><strong><a href="/universities/dayananda-sagar-university-online">Dayananda Sagar University</a> Online</strong> | Total: Rs 1,30,000 | Per semester: Rs 32,500 avg | NAAC: A++. Specialisations include AI, Business Analytics, Entrepreneurship, HR, IT and Systems, Marketing, Supply Chain.</p>
 
@@ -15830,7 +15830,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>IGNOU</td><td>Distance</td><td>₹31,500</td><td>A++</td><td>Not ranked</td></tr>
     <tr><td><a href="/blog/galgotias-online-mba-review" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px">Galgotias MBA review (₹76K)</a></td><td>Online</td><td>₹76,200</td><td>A+</td><td>Band 101-125</td></tr>
     <tr><td><a href="/blog/jamia-hamdard-mba-2026" class="ilink">Jamia Hamdard MBA (₹1.03L)</a></td><td>Online</td><td>₹1,03,000</td><td>A+</td><td>#87</td></tr>
-    <tr><td>Shoolini University</td><td>Online</td><td>₹1,18,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Shoolini University</td><td>Online</td><td>₹1,30,000</td><td>A+</td><td>Not ranked</td></tr>
     <tr><td>Sikkim Manipal (SMU)</td><td>Online</td><td>₹1,20,000</td><td>A+</td><td>Not ranked</td></tr>
     <tr><td>LPU Online</td><td>Online</td><td>₹1,46,240 to ₹1,61,600</td><td>A++</td><td>#44</td></tr>
     <tr><td>Chandigarh University</td><td>Online</td><td>₹1,65,000</td><td>A+</td><td>#32</td></tr>
@@ -16805,7 +16805,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <tbody>
     <tr><td>IGNOU MBAOL</td><td>Distance</td><td>Rs 31,500</td><td>A++</td></tr>
     <tr><td>Galgotias University</td><td>Online</td><td>Rs 76,200</td><td>UGC-DEB approved</td></tr>
-    <tr><td>Shoolini University</td><td>Online</td><td>Rs 1,18,000</td><td>A+</td></tr>
+    <tr><td>Shoolini University</td><td>Online</td><td>Rs 1,30,000</td><td>A+</td></tr>
     <tr><td>SMU (Sikkim Manipal)</td><td>Online</td><td>Rs 1,20,000</td><td>A+</td></tr>
     <tr><td>LPU Online</td><td>Online</td><td>Rs 1,46,240 to Rs 1,61,600</td><td>A++</td></tr>
     <tr><td>CU Online</td><td>Online</td><td>Rs 1,65,000</td><td>A+</td></tr>
@@ -25549,7 +25549,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Is Shoolini Online MBA UGC approved?', a: 'Yes. Shoolini University is NAAC A+ accredited, UGC-DEB approved for online programs, and NIRF University Rank #69 (2025). Verify at deb.ugc.ac.in.' },
       { q: 'Who should apply for Shoolini Online MBA?', a: 'Primarily suited for professionals in pharma, biotech, food technology, agribusiness, or life sciences who want a dedicated MBA track in their domain. For standard Finance/HR/Marketing tracks, Shoolini competes with DSU, SMU, and JAIN Online on price but the niche value is its core differentiator.' }
     ],
-    content: `<p style="font-size:13px;color:#64748b;margin-bottom:4px">Written by <strong>Rishi Kumar</strong> · Senior Education Researcher, EdifyEdu · Updated May 2026</p>
+    content: `<p style="font-size:13px;color:#64748b;margin-bottom:4px">Written by <strong>Rishi Kumar</strong> · Senior Education Researcher, EdifyEdu · Updated 15 August 2026</p>
 
 <p>Shoolini Online MBA is unusual in two ways. First, it offers 16 specialization tracks, more than almost any other online MBA in India. Several cover domains like Pharma and Healthcare Management, Biotechnology Management, Food Technology Management, and Direct Selling Management that you simply cannot find at most UGC-DEB approved universities at this price. Second, it has a Pay After Placement model that lets you defer 20% of fees until after you land a job.</p>
 
@@ -25584,14 +25584,58 @@ export const BLOG_POSTS: BlogPost[] = [
   <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@rdne" target="_blank" rel="noopener nofollow">RDNE Stock project</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
 </figure>
 
+<p style="font-size:13px;color:#64748b;margin:0 0 18px"><em>Fees updated 15 August 2026, verified from <a href="https://shoolini.online/mba.php" target="_blank" rel="noopener">shoolini.online/mba.php</a>. Verify current rates before you apply.</em></p>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:20px 0 28px">
+  <div style="background:#fff;border:1px solid #e2e8f0;border-top:4px solid #f97316;border-radius:12px;padding:22px 24px">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#f97316;margin-bottom:4px">Offer 1</div>
+    <h3 style="margin:0 0 14px;font-size:17px;color:#0f172a">MBA with Pay After Placement (PAP)</h3>
+    <table style="width:100%;font-size:14px;border-collapse:collapse">
+      <tbody>
+        <tr><td style="padding:6px 0;color:#64748b">Regular Fee</td><td style="padding:6px 0;text-align:right;font-weight:600;color:#0f172a">Rs. 2,00,000</td></tr>
+        <tr><td style="padding:6px 0;color:#64748b">Scholarship Amount</td><td style="padding:6px 0;text-align:right;font-weight:600;color:#0f172a">Rs. 42,000</td></tr>
+        <tr><td style="padding:6px 0;color:#64748b;border-top:1px solid #e2e8f0">Fee After Scholarship</td><td style="padding:6px 0;text-align:right;font-weight:700;color:#0f172a;border-top:1px solid #e2e8f0">Rs. 1,58,000</td></tr>
+        <tr><td style="padding:6px 0;color:#10b981;font-weight:600">You save</td><td style="padding:6px 0;text-align:right;font-weight:700;color:#10b981">21%</td></tr>
+        <tr><td style="padding:6px 0;color:#64748b">Fee per semester</td><td style="padding:6px 0;text-align:right;font-weight:600;color:#0f172a">Rs. 31,600</td></tr>
+        <tr><td style="padding:6px 0;color:#64748b">Payable before placement</td><td style="padding:6px 0;text-align:right;font-weight:600;color:#0f172a">Rs. 1,26,400 (31,600 x 4)</td></tr>
+        <tr><td style="padding:6px 0;color:#64748b">Pay After Placement</td><td style="padding:6px 0;text-align:right;font-weight:600;color:#0f172a">Rs. 31,600</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="background:#fff;border:1px solid #e2e8f0;border-top:4px solid #0f172a;border-radius:12px;padding:22px 24px">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#0f172a;margin-bottom:4px">Offer 2</div>
+    <h3 style="margin:0 0 14px;font-size:17px;color:#0f172a">MBA (Opt-out from PAP)</h3>
+    <table style="width:100%;font-size:14px;border-collapse:collapse">
+      <tbody>
+        <tr><td style="padding:6px 0;color:#64748b">Regular Fee</td><td style="padding:6px 0;text-align:right;font-weight:600;color:#0f172a">Rs. 2,00,000</td></tr>
+        <tr><td style="padding:6px 0;color:#64748b">Scholarship Amount</td><td style="padding:6px 0;text-align:right;font-weight:600;color:#0f172a">Rs. 70,000</td></tr>
+        <tr><td style="padding:6px 0;color:#64748b;border-top:1px solid #e2e8f0">Fee After Scholarship</td><td style="padding:6px 0;text-align:right;font-weight:700;color:#0f172a;border-top:1px solid #e2e8f0">Rs. 1,30,000</td></tr>
+        <tr><td style="padding:6px 0;color:#10b981;font-weight:600">You save</td><td style="padding:6px 0;text-align:right;font-weight:700;color:#10b981">35%</td></tr>
+        <tr><td style="padding:6px 0;color:#64748b">Fee per semester</td><td style="padding:6px 0;text-align:right;font-weight:600;color:#0f172a">Rs. 32,500</td></tr>
+        <tr><td style="padding:6px 0;color:#64748b">Payment schedule</td><td style="padding:6px 0;text-align:right;font-weight:600;color:#0f172a">Per Semester (32,500 x 4)</td></tr>
+        <tr><td style="padding:6px 0;color:#64748b">Pay After Placement</td><td style="padding:6px 0;text-align:right;font-weight:600;color:#0f172a">N/A</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="callout-key" style="margin:0 0 20px"><strong>Special Merit Scholarship:</strong> Additional 10% scholarship if you scored more than 90% in Class 12 (for UG entry) or more than 90% in your UG degree (for PG admission).</div>
+
+<div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:18px 22px;margin:0 0 24px">
+  <h3 style="color:#166534;margin:0 0 10px;font-size:15px">Additional Discount Opportunities</h3>
+  <ul style="margin:0;padding-left:20px;color:#374151;font-size:14px;line-height:1.7">
+    <li>Flexible payment: No-Interest EMI and loan options apply to all payment modes (semester, annual, or full fee).</li>
+    <li>Opting out of PAP unlocks an 18% scholarship variant on the standard track (verify current combination directly with Shoolini as scholarship % can stack with merit).</li>
+    <li>Application fee: Rs. 500 (one-time, non-refundable).</li>
+  </ul>
+</div>
 
 <div style="overflow-x:auto;margin:20px 0 32px">
 <table style="width:100%;border-collapse:collapse;font-size:15px">
-  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Payment Option</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Total Fee</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">How It Works</th></tr></thead>
+  <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Summary</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Total Fee</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">How It Works</th></tr></thead>
   <tbody>
-    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Standard (35% Scholarship)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,30,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Pay full fee across 4 semesters</td></tr>
-    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">PAP Option (21% Scholarship)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,58,000*</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 31,600/sem x 4 during course; Rs. 31,600 after placement</td></tr>
-    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Lumpsum (10% extra discount)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">~Rs. 1,17,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Pay full upfront for additional 10% off</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Standard (35% Scholarship)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,30,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 32,500 x 4 semesters</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">PAP Option (21% Scholarship)</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 1,58,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc">Rs. 31,600 x 4 during course + Rs. 31,600 after placement</td></tr>
     <tr><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Registration Fee</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Rs. 500</td><td style="padding:10px 14px;font-weight:700;background:#fef9f0;color:#0f172a">Non-refundable</td></tr>
   </tbody>
 </table>
@@ -25604,7 +25648,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Shoolini Online MBA Fee Structure 2026: All Payment Options</h2>
 
-<p>Shoolini University offers multiple fee tracks for its online MBA. The full-payment programme fee after the 35% institutional scholarship is ₹1,30,000 (₹32,500 x 4 semesters). Students choosing the Pay After Placement (PAP) option pay ₹1,58,000 total after a 21% scholarship (₹31,600 per semester x 4 during the course, plus ₹31,600 payable after placement). A lumpsum one-time payment with an additional 10% discount brings the effective fee to approximately ₹1,17,000. Application fee is ₹500 (one-time, non-refundable). For a wider view of why the same online MBA is quoted at different totals across sites, read <a href="/blog/why-online-mba-fees-differ-india-2026" class="ilink">how online MBA fees get quoted across India</a>. Track the current <a href="/universities/shoolini-university-online/mba" class="ilink">Shoolini University online MBA fees</a> and semester-wise breakdown on the programme page.</p>
+<p>Shoolini University offers two fee tracks for its online MBA. Offer 1 (Pay After Placement): ₹1,58,000 total after a 21% scholarship on the ₹2,00,000 sticker fee, structured as ₹31,600 per semester x 4 during the course (₹1,26,400) plus ₹31,600 payable after placement. Offer 2 (Opt-out from PAP): ₹1,30,000 total after a 35% scholarship, paid as ₹32,500 x 4 semesters. Application fee is ₹500 (one-time, non-refundable). No-Interest EMI and loan options apply to both tracks. For a wider view of why the same online MBA is quoted at different totals across sites, read <a href="/blog/why-online-mba-fees-differ-india-2026" class="ilink">how online MBA fees get quoted across India</a>. Track the current <a href="/universities/shoolini-university-online/mba" class="ilink">Shoolini University online MBA fees</a> and semester-wise breakdown on the programme page.</p>
 
 <p>For context, here is how Shoolini compares to other affordable online MBA programmes:</p>
 
@@ -25788,7 +25832,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Shoolini Online MBA 2026 EEAT Notes</h2>
 
-<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Shoolini Online MBA data verified from shoolini.online, UGC-DEB approval list, NAAC database, QS India rankings.</em></p>
+<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 15 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Shoolini Online MBA fees re-verified from shoolini.online/mba.php (both PAP and opt-out offers), UGC-DEB approval list, NAAC database, QS India rankings.</em></p>
 
 <div class="callout-key"><strong>One-line frame for Shoolini Online MBA 2026:</strong> Rs 1,30,000-1,50,000. QS Ranked top private university in India. UGC-DEB approved. Niche specialisations: Agri Business, Biotechnology, Food Technology, Pharma. Best for working professionals in pharma plus biotech plus agri sectors.</div>
 
