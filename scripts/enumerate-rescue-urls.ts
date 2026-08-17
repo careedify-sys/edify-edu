@@ -87,9 +87,7 @@ for (const p of PROGRAMS) {
 }
 
 // Union: what the site actually renders under mba/bba/bca/mca
-const union = new Set<string>()
-sitemapTriples.forEach(t => union.add(t))
-staticTriples.forEach(t => union.add(t))
+const union = new Set<string>([...sitemapTriples, ...staticTriples])
 
 // Mirror of getSpecDisplayName minus the rescue.
 function manifestNameOrNull(uni: string, program: string, slug: string): string | null {
@@ -126,24 +124,24 @@ function titleCase(slug: string): string {
 
 const rescueRows: Array<{ url: string; uni: string; programme: string; slug: string; name: string }> = []
 
-union.forEach(key => {
+for (const key of union) {
   const [uni, program, slug] = key.split('|')
-  if (!/^[a-z0-9][a-z0-9-]*$/.test(slug)) return // rescue itself skips these
+  if (!/^[a-z0-9][a-z0-9-]*$/.test(slug)) continue // rescue itself skips these
 
   const u = getUniversityById(uni)
-  if (!u) return
+  if (!u) continue
   const label = PROG_LABEL[program]
   const pd = (u.programDetails as Record<string, unknown>)[label]
-  if (!pd) return // page redirect()s away, not a rescue candidate
+  if (!pd) continue // page redirect()s away, not a rescue candidate
 
   const fromManifest = manifestNameOrNull(uni, program, slug)
-  if (fromManifest) return
+  if (fromManifest) continue
   const fromPd = programDetailsNameOrNull(uni, program, slug)
-  if (fromPd) return
+  if (fromPd) continue
 
   // Sanity: production resolver should return the title-cased value on this triple.
   const resolved = resolveSpecName(uni, label, program, slug)
-  if (resolved !== titleCase(slug)) return
+  if (resolved !== titleCase(slug)) continue
 
   rescueRows.push({
     url: `/universities/${uni}/${program}/${slug}`,
@@ -152,7 +150,7 @@ union.forEach(key => {
     slug,
     name: titleCase(slug),
   })
-})
+}
 
 rescueRows.sort((a, b) => a.url.localeCompare(b.url))
 

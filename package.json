@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "typecheck:scripts": "tsc --noEmit -p tsconfig.scripts.json",
     "build:urls": "node scripts/build-valid-urls.js",
     "check:fees": "tsx scripts/check-fee-mismatches.mjs",
     "prepare": "git config core.hooksPath .husky || exit 0",
