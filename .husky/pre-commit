@@ -41,4 +41,11 @@ npx tsx scripts/check-duplicate-slugs.mjs || exit 1
 echo "pre-commit: check-sitemap-noindex-drift"
 node scripts/prune-noindex-hub-urls.js --check || exit 1
 
+# Spec rescue gate. Blocks any commit that lets a /universities/*/{mba|bba|bca|mca}/*
+# sitemap URL resolve to null (would 404 in production), or any commit that
+# re-widens the resolveSpecName rescue so nonsense slugs render as fabricated
+# 200 pages. See audits/fabricated-spec-urls-2026-08-17.csv.
+echo "pre-commit: check-spec-rescue"
+npx tsx scripts/check-spec-rescue.ts || exit 1
+
 echo "pre-commit: all checks passed"
