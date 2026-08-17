@@ -179,13 +179,29 @@ export function resolveSpecName(
   const match = specs.find(s => toSlug(s as never) === specSlug)
   if (match) return toName(match as never)
 
-  // 3. Last-resort: title-case the slug so we still render something readable
-  // when a sitemap/external link points at a spec we know nothing about.
-  // We only do this when the slug is at least plausible (alphanumeric + dashes).
-  if (/^[a-z0-9][a-z0-9-]*$/.test(specSlug)) {
-    return specSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+  // 3. Last-resort title-case: only when the manifest carries a row for this
+  // exact (uni, program, specSlug) triple but its spec_name is empty. Those
+  // are the 238 rows enumerated in audits/fabricated-spec-urls-2026-08-17.csv
+  // and audits/empty-spec-names-2026-08-17.csv. Any slug with no manifest row
+  // returns null so the page 404s. The manifest is the allowlist.
+  const prog = programSlug.toLowerCase()
+  if (loadManifest().some(r => r.university_slug === uniId && r.program === prog && r.spec_slug === specSlug)) {
+    return titleCaseSlug(specSlug)
   }
   return null
+}
+
+// Preserve casing of common acronyms that title-casing would otherwise mangle
+// ("hr-management" → "Hr Management" instead of "HR Management"). Extend when
+// a new acronym appears in a manifest slug.
+const ACRONYMS = new Set(['HR', 'IT', 'AI', 'ML', 'ESG', 'MBA', 'BFSI', 'HRM', 'UI', 'UX'])
+
+function titleCaseSlug(slug: string): string {
+  return slug.split('-').map(w => {
+    const up = w.toUpperCase()
+    if (ACRONYMS.has(up)) return up
+    return w.charAt(0).toUpperCase() + w.slice(1)
+  }).join(' ')
 }
 
 /**
