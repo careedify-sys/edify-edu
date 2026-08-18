@@ -1,4 +1,14 @@
 // app/universities/[id]/mba/page.tsx
+//
+// Task 3 slice 3 (2026-08-18): metadata and page component both branch on
+// resolveProgramme(). Prior to this, metadata guarded on
+// !u.programs.includes('MBA') only, while the body ALSO required
+// u.programDetails['MBA']. The 2 class-A MBA hubs (madurai-kamaraj-
+// university-online, university-of-mumbai-online) rendered a full metadata
+// title with noindex,follow while the body threw notFound() and served the
+// bare-noindex shell. Both now agree on the same resolver result.
+// Edge middleware /mba path (section 2d) is what actually turns those into
+// real HTTP 404s; this file just makes the app-side branching consistent.
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
@@ -10,6 +20,7 @@ import { getProgramSchemaOffer, getProgramSchemaFeeFragment } from '@/lib/seo/pr
 import { MBA_SEO_OVERRIDES } from '@/lib/mba-seo-overrides'
 import UniProgramBody from '@/components/UniProgramBody'
 import { pageKeywords } from '@/lib/page-keywords'
+import { resolveProgramme } from '@/lib/seo/resolve-programme'
 
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('MBA')).map(u => ({ id: u.id }))
@@ -19,8 +30,9 @@ export async function generateMetadata(
   { params }: { params: Promise<{ id: string }> }
 ): Promise<Metadata> {
   const { id } = await params
-  const u = getUniversityById(id)
-  if (!u || !u.programs.includes('MBA')) return { title: 'Not Found', robots: { index: false, follow: false } }
+  const r = resolveProgramme(id, 'mba')
+  if (r.kind === 'not-found') return { title: 'Not Found', robots: { index: false, follow: false } }
+  const u = r.university
 
   // Final-sprint FIX 2: overrides bypassed when getDisplayFee flags the
   // data as inconsistent. This prevents a static override string from
@@ -180,12 +192,10 @@ export default async function OnlineMBAPage(
   { params }: { params: Promise<{ id: string }> }
 ) {
   const { id } = await params
-  const u = getUniversityById(id)
-  if (!u) notFound()
-  // Programs listed in u.programs but missing from programDetails (data drift)
-  // would 404. Redirect to the university page instead of breaking the URL.
-  const pd = u.programDetails['MBA']
-  if (!u.programs.includes('MBA') || !pd) notFound()
+  const r = resolveProgramme(id, 'mba')
+  if (r.kind === 'not-found') notFound()
+  const u = r.university
+  const pd = r.pd
 
   // Same override bypass as generateMetadata: when the fee suppression
   // fires, drop the override so the H1/intro also route through the

@@ -20,6 +20,7 @@ import CANONICAL_SLUGS from './lib/canonical-slugs.json'
 import MA_ALLOWLIST from './lib/data/programme-allowlist-ma.json'
 import BCOM_ALLOWLIST from './lib/data/programme-allowlist-bcom.json'
 import MCOM_ALLOWLIST from './lib/data/programme-allowlist-mcom.json'
+import MBA_ALLOWLIST from './lib/data/programme-allowlist-mba.json'
 
 // Old/truncated university slugs indexed by Google → current slugs
 // Verified against lib/data.ts UNIVERSITIES array (2026-04-17)
@@ -436,11 +437,13 @@ export function middleware(req: NextRequest) {
   // scripts/build-programme-allowlist.js in the prebuild chain, invariance
   // enforced by scripts/check-programme-allowlist-resolver.ts on pre-commit.
   // Slice 1 (2026-08-18): MA. Slice 2 (2026-08-18): + B.Com, M.Com.
+  // Slice 3 (2026-08-18): + MBA (first specialised route).
   // Extend by adding a new allowlist import + row to PROGRAMME_HUB_ALLOWLISTS.
   const PROGRAMME_HUB_ALLOWLISTS: { slug: string; allowlist: string[] }[] = [
     { slug: 'ma', allowlist: MA_ALLOWLIST as string[] },
     { slug: 'bcom', allowlist: BCOM_ALLOWLIST as string[] },
     { slug: 'mcom', allowlist: MCOM_ALLOWLIST as string[] },
+    { slug: 'mba', allowlist: MBA_ALLOWLIST as string[] },
   ]
   for (const { slug: progSlug, allowlist } of PROGRAMME_HUB_ALLOWLISTS) {
     const re = new RegExp(`^/universities/([^/]+)/${progSlug}/?$`)
