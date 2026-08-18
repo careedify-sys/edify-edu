@@ -27,7 +27,8 @@ const OUT = path.join(ROOT, 'lib', 'data', 'programme-allowlist-ma.json')
 // + resolver-check + hub route wiring) when extending Task 3 to other routes.
 // Slice 1 (2026-08-18): 'MA'.
 // Slice 2 (2026-08-18): + 'B.Com', 'M.Com'.
-const SCOPE_PROGRAMS = ['MA', 'B.Com', 'M.Com']
+// Slice 3 (2026-08-18): + 'MBA' (specialised route).
+const SCOPE_PROGRAMS = ['MA', 'B.Com', 'M.Com', 'MBA']
 
 const src = fs.readFileSync(DATA_TS, 'utf8')
 // Truncate at end of UNIVERSITIES export so trailing PROGRAM_META (same 'MBA'

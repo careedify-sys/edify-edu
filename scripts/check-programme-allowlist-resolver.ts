@@ -21,6 +21,7 @@ const SCOPE: { program: Program; allowlistPath: string }[] = [
   { program: 'MA', allowlistPath: path.join(ROOT, 'lib', 'data', 'programme-allowlist-ma.json') },
   { program: 'B.Com', allowlistPath: path.join(ROOT, 'lib', 'data', 'programme-allowlist-bcom.json') },
   { program: 'M.Com', allowlistPath: path.join(ROOT, 'lib', 'data', 'programme-allowlist-mcom.json') },
+  { program: 'MBA', allowlistPath: path.join(ROOT, 'lib', 'data', 'programme-allowlist-mba.json') },
 ]
 
 let hardFail = false
