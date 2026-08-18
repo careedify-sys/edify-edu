@@ -18,6 +18,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import CANONICAL_SLUGS from './lib/canonical-slugs.json'
 import MA_ALLOWLIST from './lib/data/programme-allowlist-ma.json'
+import BCOM_ALLOWLIST from './lib/data/programme-allowlist-bcom.json'
+import MCOM_ALLOWLIST from './lib/data/programme-allowlist-mcom.json'
 
 // Old/truncated university slugs indexed by Google → current slugs
 // Verified against lib/data.ts UNIVERSITIES array (2026-04-17)
@@ -425,20 +427,29 @@ export function middleware(req: NextRequest) {
     }
   }
 
-  // ── 2d. MA hub allowlist (Task 3 slice 1) ────────────────────────────────
-  // Return real HTTP 404 at the edge for /universities/{slug}/ma paths whose
-  // (slug, MA) combination is absent from the pre-generated allowlist. Runs
-  // before Next's App Router so the ISR pin can't seal a 200 on the not-found
-  // shell (revalidate=false + dynamicParams=true).
+  // ── 2d. Programme hub allowlist (Task 3 generic-route slices) ────────────
+  // Return real HTTP 404 at the edge for /universities/{slug}/{prog} paths
+  // whose (slug, prog) combination is absent from the pre-generated allowlist.
+  // Runs before Next's App Router so the ISR pin can't seal a 200 on the
+  // not-found shell (revalidate=false + dynamicParams=true).
   // Allowlist source: lib/seo/resolve-programme.ts, materialised by
   // scripts/build-programme-allowlist.js in the prebuild chain, invariance
   // enforced by scripts/check-programme-allowlist-resolver.ts on pre-commit.
-  // Scope: MA only for this slice; extend to other programmes in later slices.
-  const maHubMatch = pathname.match(/^\/universities\/([^/]+)\/ma\/?$/)
-  if (maHubMatch) {
-    const slug = maHubMatch[1]
-    if (!(MA_ALLOWLIST as string[]).includes(slug)) {
-      return new NextResponse(null, { status: 404 })
+  // Slice 1 (2026-08-18): MA. Slice 2 (2026-08-18): + B.Com, M.Com.
+  // Extend by adding a new allowlist import + row to PROGRAMME_HUB_ALLOWLISTS.
+  const PROGRAMME_HUB_ALLOWLISTS: { slug: string; allowlist: string[] }[] = [
+    { slug: 'ma', allowlist: MA_ALLOWLIST as string[] },
+    { slug: 'bcom', allowlist: BCOM_ALLOWLIST as string[] },
+    { slug: 'mcom', allowlist: MCOM_ALLOWLIST as string[] },
+  ]
+  for (const { slug: progSlug, allowlist } of PROGRAMME_HUB_ALLOWLISTS) {
+    const re = new RegExp(`^/universities/([^/]+)/${progSlug}/?$`)
+    const match = pathname.match(re)
+    if (match) {
+      if (!allowlist.includes(match[1])) {
+        return new NextResponse(null, { status: 404 })
+      }
+      break
     }
   }
 
