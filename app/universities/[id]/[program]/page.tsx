@@ -1,5 +1,11 @@
 // app/universities/[id]/[program]/page.tsx
 // Server Component. Enables SSG, per-page metadata, and optimal Lighthouse scores.
+//
+// Task 3 slice 1 (2026-08-18): both generateMetadata and the page component
+// branch on the same resolveProgramme() result. Prior to this the two paths
+// used slightly different predicates (metadata: !u.programs.includes(program);
+// page: also !u.programDetails[program]), which let class-A phantom hubs emit
+// metadata + notFound() shell simultaneously. The single resolver closes that.
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
@@ -10,12 +16,7 @@ import { getDisplayFee } from '@/lib/fees'
 import { shouldIndexProgrammeHub } from '@/lib/seo/should-index'
 import { getProgramSchemaOffer, getProgramSchemaFeeFragment } from '@/lib/seo/program-schema'
 import { pageKeywords } from '@/lib/page-keywords'
-
-// Program slug to Program type mapping
-const PM: Record<string, Program> = {
-  'mba': 'MBA', 'mca': 'MCA', 'bba': 'BBA', 'bca': 'BCA', 'ba': 'BA',
-  'bcom': 'B.Com', 'mcom': 'M.Com', 'ma': 'MA', 'msc': 'MSc', 'bsc': 'BSc', 'mba-wx': 'MBA (WX)',
-}
+import { resolveProgramme } from '@/lib/seo/resolve-programme'
 
 // Static Params (SSG). Pre-render top university+program combinations only.
 // Others are served via ISR (dynamicParams = true) on first request, then cached.
@@ -43,15 +44,15 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const resolvedParams = params instanceof Promise ? await params : params
   const { id, program: programSlug } = resolvedParams
-  const u = getUniversityById(id)
-  const program = PM[programSlug?.toLowerCase()]
-
-  if (!u || !program || !u.programs.includes(program)) {
+  const r = resolveProgramme(id, programSlug)
+  if (r.kind === 'not-found') {
     return { title: 'Program Not Found', robots: { index: false, follow: false } }
   }
+  const u = r.university
+  const program = r.program
+  const pd: ProgramDetail = r.pd
 
   const year = new Date().getFullYear()
-  const pd = u.programDetails[program]
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const shortName = getShortTitleName(u.id, u.shortName, u.name, u.abbr)
   const fee = getDisplayFee(u, program)
@@ -178,16 +179,9 @@ export default async function UniversityProgramPage(
 ) {
   const resolvedParams = params instanceof Promise ? await params : params
   const { id, program: programSlug } = resolvedParams
-  const university = getUniversityById(id)
-  const program = PM[programSlug?.toLowerCase()]
-
-  if (!university) notFound()
-  if (!program) notFound()
-  if (!university.programs.includes(program) || !university.programDetails[program]) {
-    notFound()
-  }
-
-  const pd = university.programDetails[program]!
+  const r = resolveProgramme(id, programSlug)
+  if (r.kind === 'not-found') notFound()
+  const { university, program, pd } = r
 
   return (
     <>

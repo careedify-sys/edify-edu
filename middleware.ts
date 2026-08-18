@@ -17,6 +17,7 @@
 // lib/redirects-old-slugs.ts is a manual step when adding new entries.
 import { NextRequest, NextResponse } from 'next/server'
 import CANONICAL_SLUGS from './lib/canonical-slugs.json'
+import MA_ALLOWLIST from './lib/data/programme-allowlist-ma.json'
 
 // Old/truncated university slugs indexed by Google → current slugs
 // Verified against lib/data.ts UNIVERSITIES array (2026-04-17)
@@ -421,6 +422,23 @@ export function middleware(req: NextRequest) {
         url.pathname = `/universities/${resolved}${rest}`
         return NextResponse.redirect(url, 308)
       }
+    }
+  }
+
+  // ── 2d. MA hub allowlist (Task 3 slice 1) ────────────────────────────────
+  // Return real HTTP 404 at the edge for /universities/{slug}/ma paths whose
+  // (slug, MA) combination is absent from the pre-generated allowlist. Runs
+  // before Next's App Router so the ISR pin can't seal a 200 on the not-found
+  // shell (revalidate=false + dynamicParams=true).
+  // Allowlist source: lib/seo/resolve-programme.ts, materialised by
+  // scripts/build-programme-allowlist.js in the prebuild chain, invariance
+  // enforced by scripts/check-programme-allowlist-resolver.ts on pre-commit.
+  // Scope: MA only for this slice; extend to other programmes in later slices.
+  const maHubMatch = pathname.match(/^\/universities\/([^/]+)\/ma\/?$/)
+  if (maHubMatch) {
+    const slug = maHubMatch[1]
+    if (!(MA_ALLOWLIST as string[]).includes(slug)) {
+      return new NextResponse(null, { status: 404 })
     }
   }
 

@@ -48,6 +48,14 @@ node scripts/prune-noindex-hub-urls.js --check || exit 1
 echo "pre-commit: check-spec-rescue"
 npx tsx scripts/check-spec-rescue.ts || exit 1
 
+# Task 3 slice 1: middleware allowlist ↔ resolver invariant. Blocks any commit
+# where the pre-generated lib/data/programme-allowlist-*.json disagrees with
+# lib/seo/resolve-programme.ts on any (uni, programme) in scope. Without this,
+# the middleware becomes a second independent source of truth and can either
+# 404 legitimate unis or let class-A phantom hubs through the edge.
+echo "pre-commit: check-programme-allowlist-resolver"
+npx tsx scripts/check-programme-allowlist-resolver.ts || exit 1
+
 # Typecheck scripts/ so they don't rot. next build excludes this directory
 # (see tsconfig.json exclude), so the only place scripts get typechecked is
 # here. Uses tsconfig.scripts.json which sets target: es2020.
