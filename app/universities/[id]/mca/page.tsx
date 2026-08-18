@@ -1,4 +1,12 @@
 // app/universities/[id]/mca/page.tsx
+//
+// Task 3 slice 3b (2026-08-18): metadata and page component both branch on
+// resolveProgramme('mca'). See MBA route for the full class-A defect this
+// closes. Resolver short-circuits BEFORE getMasterSyllabus() and schema render,
+// so class-A hubs skip the syllabus lookup entirely.
+// Edge middleware /mca path (section 2d) turns class-A into HTTP 404.
+// andhra-university-online/mca is in this slice's class-A set. Same URL
+// that showed 200-shell double-robots in every acceptance run since Gate 0.
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
@@ -10,6 +18,7 @@ import { getProgramSchemaOffer, getProgramSchemaFeeFragment } from '@/lib/seo/pr
 import { getMasterSyllabus } from '@/lib/content'
 import UniProgramBody from '@/components/UniProgramBody'
 import { pageKeywords } from '@/lib/page-keywords'
+import { resolveProgramme } from '@/lib/seo/resolve-programme'
 
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('MCA')).map(u => ({ id: u.id }))
@@ -19,11 +28,12 @@ export async function generateMetadata(
   { params }: { params: Promise<{ id: string }> }
 ): Promise<Metadata> {
   const { id } = await params
-  const u = getUniversityById(id)
-  if (!u || !u.programs.includes('MCA')) return { title: 'Not Found', robots: { index: false, follow: false } }
+  const r = resolveProgramme(id, 'mca')
+  if (r.kind === 'not-found') return { title: 'Not Found', robots: { index: false, follow: false } }
+  const u = r.university
+  const pd: ProgramDetail = r.pd
 
   const year = new Date().getFullYear()
-  const pd   = u.programDetails['MCA']
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const shortName = getShortTitleName(u.id, u.shortName, u.name, u.abbr)
   const syllabus = getMasterSyllabus(u.id, 'MCA') as any
@@ -121,10 +131,9 @@ export default async function OnlineMCAPage(
   { params }: { params: Promise<{ id: string }> }
 ) {
   const { id } = await params
-  const u = getUniversityById(id)
-  if (!u) notFound()
-  const pd = u.programDetails['MCA']
-  if (!u.programs.includes('MCA') || !pd) notFound()
+  const r = resolveProgramme(id, 'mca')
+  if (r.kind === 'not-found') notFound()
+  const { university: u, pd } = r
 
   return (
     <>

@@ -1,4 +1,8 @@
 // app/universities/[id]/bca/page.tsx
+//
+// Task 3 slice 3b (2026-08-18): metadata and page component both branch on
+// resolveProgramme('bca'). See MBA route for the full class-A defect this
+// closes. Edge middleware /bca path (section 2d) turns class-A into HTTP 404.
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
@@ -9,6 +13,7 @@ import { shouldIndexProgrammeHub } from '@/lib/seo/should-index'
 import { getProgramSchemaOffer, getProgramSchemaFeeFragment } from '@/lib/seo/program-schema'
 import UniProgramBody from '@/components/UniProgramBody'
 import { pageKeywords } from '@/lib/page-keywords'
+import { resolveProgramme } from '@/lib/seo/resolve-programme'
 
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('BCA')).map(u => ({ id: u.id }))
@@ -18,11 +23,12 @@ export async function generateMetadata(
   { params }: { params: Promise<{ id: string }> }
 ): Promise<Metadata> {
   const { id } = await params
-  const u = getUniversityById(id)
-  if (!u || !u.programs.includes('BCA')) return { title: 'Not Found', robots: { index: false, follow: false } }
+  const r = resolveProgramme(id, 'bca')
+  if (r.kind === 'not-found') return { title: 'Not Found', robots: { index: false, follow: false } }
+  const u = r.university
+  const pd: ProgramDetail = r.pd
 
   const year = new Date().getFullYear()
-  const pd   = u.programDetails['BCA']
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const shortName = getShortTitleName(u.id, u.shortName, u.name, u.abbr)
   const fee = getDisplayFee(u, 'BCA')
@@ -119,10 +125,9 @@ export default async function OnlineBCAPage(
   { params }: { params: Promise<{ id: string }> }
 ) {
   const { id } = await params
-  const u = getUniversityById(id)
-  if (!u) notFound()
-  const pd = u.programDetails['BCA']
-  if (!u.programs.includes('BCA') || !pd) notFound()
+  const r = resolveProgramme(id, 'bca')
+  if (r.kind === 'not-found') notFound()
+  const { university: u, pd } = r
 
   return (
     <>

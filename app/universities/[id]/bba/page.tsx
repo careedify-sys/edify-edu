@@ -1,4 +1,11 @@
 // app/universities/[id]/bba/page.tsx
+//
+// Task 3 slice 3b (2026-08-18): metadata and page component both branch on
+// resolveProgramme('bba'). Prior metadata guarded on !u.programs.includes('BBA')
+// only; body ALSO required u.programDetails['BBA']. Class-A hubs emitted a
+// full metadata title with noindex,follow while the body threw notFound() and
+// served the bare-noindex shell. Both now agree on the same resolver result.
+// Edge middleware /bba path (section 2d) is what turns them into real HTTP 404.
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
@@ -9,6 +16,7 @@ import { shouldIndexProgrammeHub } from '@/lib/seo/should-index'
 import { getProgramSchemaOffer, getProgramSchemaFeeFragment } from '@/lib/seo/program-schema'
 import UniProgramBody from '@/components/UniProgramBody'
 import { pageKeywords } from '@/lib/page-keywords'
+import { resolveProgramme } from '@/lib/seo/resolve-programme'
 
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('BBA')).map(u => ({ id: u.id }))
@@ -18,11 +26,12 @@ export async function generateMetadata(
   { params }: { params: Promise<{ id: string }> }
 ): Promise<Metadata> {
   const { id } = await params
-  const u = getUniversityById(id)
-  if (!u || !u.programs.includes('BBA')) return { title: 'Not Found', robots: { index: false, follow: false } }
+  const r = resolveProgramme(id, 'bba')
+  if (r.kind === 'not-found') return { title: 'Not Found', robots: { index: false, follow: false } }
+  const u = r.university
+  const pd: ProgramDetail = r.pd
 
   const year = new Date().getFullYear()
-  const pd   = u.programDetails['BBA']
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const shortName = getShortTitleName(u.id, u.shortName, u.name, u.abbr)
   const fee = getDisplayFee(u, 'BBA')
@@ -119,10 +128,9 @@ export default async function OnlineBBAPage(
   { params }: { params: Promise<{ id: string }> }
 ) {
   const { id } = await params
-  const u = getUniversityById(id)
-  if (!u) notFound()
-  const pd = u.programDetails['BBA']
-  if (!u.programs.includes('BBA') || !pd) notFound()
+  const r = resolveProgramme(id, 'bba')
+  if (r.kind === 'not-found') notFound()
+  const { university: u, pd } = r
 
   return (
     <>
