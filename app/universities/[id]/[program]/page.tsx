@@ -1,5 +1,5 @@
 // app/universities/[id]/[program]/page.tsx
-// ✅ Server Component — enables SSG, per-page metadata, and optimal Lighthouse scores
+// Server Component. Enables SSG, per-page metadata, and optimal Lighthouse scores.
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
@@ -7,6 +7,8 @@ import type { Program, ProgramDetail } from '@/lib/data'
 import UniProgramBody from '@/components/UniProgramBody'
 import { getTitleName, getShortTitleName, clampTitle, clampTitleFeeLed, clampDescription } from '@/lib/seo-title'
 import { getDisplayFee } from '@/lib/fees'
+import { shouldIndexProgrammeHub } from '@/lib/seo/should-index'
+import { getProgramSchemaOffer, getProgramSchemaFeeFragment } from '@/lib/seo/program-schema'
 import { pageKeywords } from '@/lib/page-keywords'
 
 // Program slug to Program type mapping
@@ -15,7 +17,7 @@ const PM: Record<string, Program> = {
   'bcom': 'B.Com', 'mcom': 'M.Com', 'ma': 'MA', 'msc': 'MSc', 'bsc': 'BSc', 'mba-wx': 'MBA (WX)',
 }
 
-// ── Static Params (SSG) — pre-render top university+program combinations only ──
+// Static Params (SSG). Pre-render top university+program combinations only.
 // Others are served via ISR (dynamicParams = true) on first request, then cached.
 export async function generateStaticParams() {
   const TOP_UNI_IDS = [
@@ -35,7 +37,7 @@ export async function generateStaticParams() {
   return params
 }
 
-// ── Per-page Metadata — targets "[University Name] online mba fees syllabus placements reviews" ──
+// Per-page Metadata. Targets "[University Name] online mba fees syllabus placements reviews".
 export async function generateMetadata(
   { params }: { params: any }
 ): Promise<Metadata> {
@@ -104,7 +106,7 @@ export async function generateMetadata(
       description: d,
       images: ['https://edifyedu.in/og.webp'],
     },
-    robots: { index: true, follow: true },
+    robots: { index: shouldIndexProgrammeHub(u, program).shouldIndex, follow: true },
   }
 }
 
@@ -129,7 +131,7 @@ function ProgramSchema({
     '@context': 'https://schema.org',
     '@type': 'EducationalOccupationalProgram',
     name: `${u.name} Online ${program}`,
-    description: `UGC-DEB approved Online ${program} from ${u.name}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations, fees ${pd.fees || `from ₹${Math.round(u.feeMin / 1000)}K`}.`,
+    description: `UGC-DEB approved Online ${program} from ${u.name}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, program)}.`,
     url: pageUrl,
     provider: {
       '@type': 'CollegeOrUniversity',
@@ -140,22 +142,8 @@ function ProgramSchema({
     timeToComplete: `P${durationYears}Y`,
   }
 
-  if (u.feeMin) {
-    programSchema.offers = u.feeMax && u.feeMax !== u.feeMin
-      ? {
-          '@type': 'AggregateOffer',
-          lowPrice: String(u.feeMin),
-          highPrice: String(u.feeMax),
-          priceCurrency: 'INR',
-          availability: 'https://schema.org/InStock',
-        }
-      : {
-          '@type': 'Offer',
-          price: String(u.feeMin),
-          priceCurrency: 'INR',
-          availability: 'https://schema.org/InStock',
-        }
-  }
+  const offer = getProgramSchemaOffer(u, program)
+  if (offer) programSchema.offers = offer
 
   if (kw) programSchema.keywords = kw
 
@@ -214,7 +202,7 @@ export default async function UniversityProgramPage(
   )
 }
 
-// ── ISR Configuration — revalidate every 6 hours ──
+// ISR Configuration. Revalidate every 6 hours.
 export const revalidate = false
 
 // ── Allow dynamic params for new programs added via CMS ──

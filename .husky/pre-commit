@@ -9,6 +9,13 @@ node scripts/verify-fees.js || exit 1
 echo "pre-commit: check-em-dash"
 node scripts/check-em-dash.js || exit 1
 
+# Sprint 3 Fix 2b: per-file em-dash baseline across app/**/*.tsx and
+# components/**/*.tsx. Mirrors the fee-mismatch baseline mechanic.
+# Blocks any commit that raises a file above its allowed count. Auto-drops
+# the baseline (and stages it) when counts fall.
+echo "pre-commit: check-em-dash-baseline"
+node scripts/check-em-dash-baseline.mjs || exit 1
+
 # Sprint 2 Phase A: rising-count gate on getDisplayFee suppressions.
 # Blocks any commit that raises the mismatch total above the baseline in
 # data/fee-mismatch-baseline.json. Baseline is auto-updated on decrease.
@@ -26,5 +33,12 @@ npx tsx scripts/check-blog-fees.mjs || exit 1
 # audits/duplicate-blog-slugs-2026-08-11.md.
 echo "pre-commit: check-duplicate-slugs"
 npx tsx scripts/check-duplicate-slugs.mjs || exit 1
+
+# Sprint 3 Task 1: never-both invariant for the hub thin-page gate.
+# Blocks any commit where a hub URL is listed in valid-urls.json AND would
+# emit robots noindex from shouldIndexProgrammeHub. See
+# scripts/prune-noindex-hub-urls.mjs for the fix.
+echo "pre-commit: check-sitemap-noindex-drift"
+node scripts/prune-noindex-hub-urls.js --check || exit 1
 
 echo "pre-commit: all checks passed"

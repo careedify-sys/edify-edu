@@ -5,6 +5,8 @@ import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import type { ProgramDetail } from '@/lib/data'
 import { getTitleName, getShortTitleName, clampTitle, clampTitleFeeLed, clampDescription } from '@/lib/seo-title'
 import { getDisplayFee } from '@/lib/fees'
+import { shouldIndexProgrammeHub } from '@/lib/seo/should-index'
+import { getProgramSchemaOffer, getProgramSchemaFeeFragment } from '@/lib/seo/program-schema'
 import { MBA_SEO_OVERRIDES } from '@/lib/mba-seo-overrides'
 import UniProgramBody from '@/components/UniProgramBody'
 import { pageKeywords } from '@/lib/page-keywords'
@@ -47,11 +49,11 @@ export async function generateMetadata(
         description: override.description,
         type: 'website',
         url: `https://edifyedu.in/universities/${u.id}/mba`,
-        siteName: 'EdifyEdu',
-        images: [{ url: 'https://edifyedu.in/og.png', width: 1200, height: 630, alt: `${u.name} Online MBA — EdifyEdu` }],
+        siteName: 'edifyedu.in',
+        images: [{ url: 'https://edifyedu.in/og.png', width: 1200, height: 630, alt: `${u.name} Online MBA | edifyedu.in` }],
       },
       twitter: { card: 'summary_large_image', title: override.title, description: override.description, images: ['https://edifyedu.in/og.png'] },
-      robots: { index: true, follow: true },
+      robots: { index: shouldIndexProgrammeHub(u, 'MBA').shouldIndex, follow: true },
     }
   }
 
@@ -96,13 +98,13 @@ export async function generateMetadata(
       description,
       type: 'website',
       url: `https://edifyedu.in/universities/${u.id}/mba`,
-      siteName: 'EdifyEdu',
+      siteName: 'edifyedu.in',
       images: [
         {
           url: 'https://edifyedu.in/og.png',
           width: 1200,
           height: 630,
-          alt: `${u.name} Online MBA — EdifyEdu`,
+          alt: `${u.name} Online MBA | edifyedu.in`,
         },
       ],
     },
@@ -112,7 +114,7 @@ export async function generateMetadata(
       description,
       images: ['https://edifyedu.in/og.png'],
     },
-    robots: { index: true, follow: true },
+    robots: { index: shouldIndexProgrammeHub(u, 'MBA').shouldIndex, follow: true },
   }
 }
 
@@ -133,7 +135,7 @@ function MBAProgramSchema({
     '@context': 'https://schema.org',
     '@type': 'EducationalOccupationalProgram',
     name: `${u.name} Online MBA`,
-    description: `UGC-DEB approved Online MBA from ${u.name}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations, fees ${pd.fees || `from ₹${Math.round(u.feeMin / 1000)}K`}.`,
+    description: `UGC-DEB approved Online MBA from ${u.name}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'MBA')}.`,
     url: pageUrl,
     provider: {
       '@type': 'CollegeOrUniversity',
@@ -144,22 +146,8 @@ function MBAProgramSchema({
     timeToComplete: `P${durationYears}Y`,
   }
 
-  if (u.feeMin) {
-    programSchema.offers = u.feeMax && u.feeMax !== u.feeMin
-      ? {
-          '@type': 'AggregateOffer',
-          lowPrice: String(u.feeMin),
-          highPrice: String(u.feeMax),
-          priceCurrency: 'INR',
-          availability: 'https://schema.org/InStock',
-        }
-      : {
-          '@type': 'Offer',
-          price: String(u.feeMin),
-          priceCurrency: 'INR',
-          availability: 'https://schema.org/InStock',
-        }
-  }
+  const offer = getProgramSchemaOffer(u, 'MBA')
+  if (offer) programSchema.offers = offer
 
   if (kw) programSchema.keywords = kw
 
@@ -195,7 +183,7 @@ export default async function OnlineMBAPage(
   const u = getUniversityById(id)
   if (!u) notFound()
   // Programs listed in u.programs but missing from programDetails (data drift)
-  // would 404 — redirect to the university page instead of breaking the URL.
+  // would 404. Redirect to the university page instead of breaking the URL.
   const pd = u.programDetails['MBA']
   if (!u.programs.includes('MBA') || !pd) notFound()
 
