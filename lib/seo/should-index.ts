@@ -42,15 +42,24 @@ export function shouldIndexProgrammeHub(
   }
 }
 
-// Task 5 (2026-08-19). GSC audit of /programs/*: 25 pages, 45,336 impressions,
-// 125 clicks, avg position 27.2. Only two paths carry their weight:
-//   /programs/mba                          (23 clicks, pos 7.51)
-//   /programs/mba/healthcare-management    (11,412 impressions, pos 6.46)
-// Everything else under /programs noindexes. Sitemap and per-page robots meta
-// both read this same allowlist so the two signals cannot drift apart.
+// Task 5 (2026-08-19, revised). The family's avg pos 27.2 is dragged down by
+// deep MBA spec pages ranking 25-66; the programme hubs themselves rank 8-18
+// and convert. Keep every hub that lands a click, plus the two spec pages that
+// actually rank. Noindex the 14 low-rank MBA specs. /programs root stays out.
+// Sitemap and per-page robots meta both read this allowlist so the two signals
+// cannot drift apart.
 export const PROGRAMS_INDEX_ALLOWLIST: readonly string[] = [
-  '/programs/mba',
-  '/programs/mba/healthcare-management',
+  '/programs/mba',                        // 23 clicks, pos 7.51
+  '/programs/bca',                        // 18 clicks, pos 10.74
+  '/programs/ma',                         // 13 clicks, 1.40% CTR, pos 8.74
+  '/programs/bba',                        // 12 clicks, pos 17.89
+  '/programs/mca',                        // 10 clicks, pos 17.76
+  '/programs/mba/healthcare-management',  //  8 clicks, pos 6.46
+  '/programs/bba/aviation',               //  5 clicks, 4.46% CTR, pos 7.83
+  '/programs/mcom',                       //  4 clicks, pos 12.30
+  '/programs/msc',                        //  2 clicks, 2.06% CTR, pos 11.05
+  '/programs/bcom',                       //  2 clicks, pos 10.45
+  '/programs/bsc',                        //  1 click,  pos 8.39
 ]
 
 export function shouldIndexProgramsPath(pathname: string): boolean {

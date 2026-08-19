@@ -299,7 +299,9 @@ export async function generateMetadata(
         }).length
         if (specUniCount === 0) return { index: false, follow: true }
       }
-      return undefined
+      // Must be explicit: the /programs layout sets index:false, and Next
+      // metadata merges parent robots into any page that returns undefined.
+      return { index: true, follow: true }
     })(),
   }
 }
