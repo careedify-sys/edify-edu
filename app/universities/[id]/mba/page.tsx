@@ -21,6 +21,7 @@ import { MBA_SEO_OVERRIDES } from '@/lib/mba-seo-overrides'
 import UniProgramBody from '@/components/UniProgramBody'
 import { pageKeywords } from '@/lib/page-keywords'
 import { resolveProgramme } from '@/lib/seo/resolve-programme'
+import { formatUniversityDisplayName } from '@/lib/format'
 
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('MBA')).map(u => ({ id: u.id }))
@@ -143,11 +144,17 @@ function MBAProgramSchema({
   const durationYears = parseInt(pd.duration?.replace(/[^0-9]/g, '') || '2', 10) || 2
   const kw = pageKeywords[`${u.id}-mba`]?.join(', ') || ''
 
+  // Sprint 3 Task 6: strip trailing " Online" from u.name before composing
+  // schema strings. Raw u.name for universities that end in "Online" (e.g.
+  // "Galgotias University Online") produces double-word artefacts like
+  // "Galgotias University Online Online MBA" in every schema payload.
+  const brand = formatUniversityDisplayName(u.name)
+
   const programSchema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'EducationalOccupationalProgram',
-    name: `${u.name} Online MBA`,
-    description: `UGC-DEB approved Online MBA from ${u.name}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'MBA')}.`,
+    name: `${brand} Online MBA`,
+    description: `UGC-DEB approved Online MBA from ${brand}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'MBA')}.`,
     url: pageUrl,
     provider: {
       '@type': 'CollegeOrUniversity',

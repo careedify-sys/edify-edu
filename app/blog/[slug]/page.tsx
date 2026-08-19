@@ -230,7 +230,10 @@ export default async function BlogPostPage({ params }: Props) {
     ...(uniFromBlog ? {
       about: {
         '@type': 'Course',
-        name: `${uniFromBlog.links.universityName} Online ${uniFromBlog.program.toUpperCase()}`,
+        // Strip trailing " Online" from universityName so brands like
+        // "Galgotias University Online" don't compose into
+        // "Galgotias University Online Online MBA".
+        name: `${uniFromBlog.links.universityName.replace(/\s+Online\s*$/i, '').trim()} Online ${uniFromBlog.program.toUpperCase()}`,
         provider: {
           '@type': 'CollegeOrUniversity',
           name: uniFromBlog.links.universityName,

@@ -1258,9 +1258,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 76200,
+    feeMin: 80200,
     feeMax: 86400,
-    emiFrom: 3175,
+    emiFrom: 3342,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     tagline: 'Financial Technologies as dedicated Sem 3 subject + Financial Modelling & Valuation in Sem 4; Digital Marketing in Sem 2',
@@ -1271,7 +1271,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programDetails: {
       'MBA': {
         specs: [{ slug: 'finance', name: 'Finance Management' }, 'HR Management', 'Marketing Management', 'Operations Management', 'Business Analytics', 'Healthcare Management', 'International Business Management'],
-        fees: '₹76.2K',
+        fees: '₹80,200',
         duration: '2 Yrs',
         roles: ['Financial Analyst', 'Investment Analyst Trainee', 'Credit Analyst'],
         avgSalary: '₹5L – ₹15L per annum',

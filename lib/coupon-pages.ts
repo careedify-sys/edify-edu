@@ -201,7 +201,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     ],
     peerComparisons: [
       { uni: 'Chandigarh (Rs 1,65,000)', savings: 'Up to Rs 5,000 via CU2026-5K' },
-      { uni: 'Galgotias (Rs 76,200)', savings: 'Up to Rs 5,000 via GALG2026-5K' },
+      { uni: 'Galgotias (Rs 80,200)', savings: 'Up to Rs 5,000 via GALG2026-5K' },
       { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
     ],
   },
@@ -273,7 +273,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     ],
     peerComparisons: [
       { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
-      { uni: 'Galgotias (Rs 76,200)', savings: 'Up to Rs 5,000 via GALG2026-5K' },
+      { uni: 'Galgotias (Rs 80,200)', savings: 'Up to Rs 5,000 via GALG2026-5K' },
     ],
   },
   {
@@ -413,7 +413,7 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Should I choose IGNOU or Amity?', a: 'IGNOU for pure affordability and government job eligibility. Amity for structured LMS, live sessions, international accreditation (WASC+QAA), and 19 specialisations.' },
     ],
     peerComparisons: [
-      { uni: 'Galgotias (Rs 76,200)', savings: 'Up to Rs 5,000 via GALG2026-5K' },
+      { uni: 'Galgotias (Rs 80,200)', savings: 'Up to Rs 5,000 via GALG2026-5K' },
       { uni: 'SMU (Rs 1,20,000)', savings: 'Up to Rs 5,000 via SMU2026-4K' },
     ],
   },

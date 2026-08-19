@@ -42,13 +42,17 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
   // Sprint 1: fee-led rewrites for the 5 fee-stripping overrides + CU MBA reconciliation.
   // Fee numbers below come from lib/data.ts feeMin/feeMax as annotated.
 
-  // Galgotias: data.ts:1252 feeMin=76200 (backed by pd.fees "₹76.2K"),
-  // feeMax=86400 (NOT backed by pd.fees, therefore "From" framing).
+  // Galgotias: data.ts:1261 feeMin=80200 (backed by pd.fees "₹80,200",
+  // 2026-27 revised fee confirmed by Rishi against galgotiasonline.edu.in).
+  // feeMax=86400 is the wider uni-range upper bound; getDisplayFee rule 1
+  // fires with parsed 80,200 single vs ref 80,200-86,400 (7.17% max drift,
+  // within the 10% tolerance), producing compact "₹80,200".
+  // Description clamped to ~155 chars so Google does not truncate.
   'galgotias-university-online': {
-    title: 'Galgotias Online MBA Fees 2026: From ₹76,200 | edifyedu.in',
-    description: 'Galgotias University online MBA fees from ₹76,200 (₹3,175/mo EMI). NAAC A+, UGC-DEB approved. Zero-commission, verified fee data. Compare vs Sharda, LPU, Chandigarh before you enrol.',
+    title: 'Galgotias Online MBA Fees 2026: ₹80,200 Total | edifyedu.in',
+    description: 'Galgotias University online MBA fees ₹80,200 total (₹3,342/mo EMI). NAAC A+, UGC-DEB approved. Zero commission, verified data. Compare vs Sharda, LPU, CU.',
     h1: 'Galgotias University Online MBA 2026: Fees, Review, and Specializations',
-    intro: 'Galgotias University online MBA total fees start from ₹76,200, one of the more affordable options for candidates comparing online MBA programs in North India. The programme is UGC-DEB approved and NAAC A+ accredited, delivered from Greater Noida with EMI plans from ₹3,175 per month. Specialisations span Finance, Marketing, HR, Operations, and Business Analytics. edifyedu.in compares Galgotias MBA fees and accreditation status against Sharda, LPU, and Chandigarh University using public UGC-DEB data only.',
+    intro: 'Galgotias University online MBA total fees are ₹80,200 for the two-year programme, one of the more affordable options for candidates comparing online MBA programs in North India. The programme is UGC-DEB approved and NAAC A+ accredited, delivered from Greater Noida with EMI plans from ₹3,342 per month. Specialisations span Finance, Marketing, HR, Operations, and Business Analytics. edifyedu.in compares Galgotias MBA fees and accreditation status against Sharda, LPU, and Chandigarh University using public UGC-DEB data only.',
   },
 
   // JAIN: data.ts:168 feeMin=160000, data.ts:169 feeMax=196000
