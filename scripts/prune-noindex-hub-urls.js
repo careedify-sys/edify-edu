@@ -7,21 +7,35 @@
 //   For every hub URL in valid-urls.json, shouldIndexProgrammeHub must be
 //   true. Predicate: hasContentJson(uni, prog) OR feeOk(uni, prog).
 //
-// Invariant (b), never-both-404 (Task 3 slice 3c extension):
-//   For every hub URL in valid-urls.json whose programme slug is in the
-//   middleware allowlist scope (ma/bcom/mcom/mba/bba/bca/mca), the uni slug
-//   must be in the corresponding lib/data/programme-allowlist-*.json. The
-//   allowlists are the resolver's decision materialised (see
+// Invariant (b), never-both-404-or-redirect (Task 3 slice 3c + slice 4):
+//   For every HUB or SPEC URL in valid-urls.json whose programme slug is in
+//   the middleware allowlist scope (ma/bcom/mcom/mba/bba/bca/mca), the uni
+//   slug must be in the corresponding lib/data/programme-allowlist-*.json.
+//   The allowlists are the resolver's decision materialised (see
 //   lib/seo/resolve-programme.ts and scripts/build-programme-allowlist.js),
-//   so this collapses THREE distinct defect classes into one hub-level check:
+//   so this collapses THREE distinct defect classes into one membership
+//   check:
 //     class-A  program in u.programs but no programDetails[program]
 //     class-B  has programDetails but feeOk() false (mostly covered by (a))
 //     class-C  program absent from u.programs entirely (Excel-only rows,
 //              e.g. /universities/christ-university-online/mba (Christ
 //              never had an entry for MBA in data.ts)
 //   The Excel is the only route through which class-C URLs enter, and it
-//   does not know about data.ts. Without this pruner extension the sitemap
-//   ships class-C URLs that middleware immediately 404s at request time.
+//   does not know about data.ts.
+//
+//   Slice 3c (2026-08-18): 5 HUB URLs pruned. Middleware 404s them at edge.
+//   Slice 4  (2026-08-19): 92 SPEC URLs beneath allowlist-out hubs pruned.
+//                          91 of 92 already 404 via the spec route
+//                          (resolveProgramme short-circuits on
+//                          program-not-in-uni). The 1 exception
+//                          (christ-university-online/mba/business-analytics)
+//                          307s via next.config.js. Both fates are invalid
+//                          sitemap contents. GSC intersection cleared:
+//                          zero clicks, zero impressions on the 91.
+//                          business-analytics earned 1 click / 162 imps
+//                          but was already 307ing, so out-of-sitemap loses
+//                          nothing new and stops the "Page with redirect"
+//                          drift.
 //
 // Modes:
 //   default : prune valid-urls.json in place, write it back
@@ -276,10 +290,15 @@ for (const prog of ALLOWLIST_PROGRAMMES) {
   programmeAllowlists.set(prog, new Set(arr))
 }
 
-// Build the set of 404-shape hub URLs: any hub URL whose (uni, prog) is not
-// in the allowlist. Hub-only (3-segment); the middleware only 404s hubs.
-function is404Hub(url) {
-  const m = url.match(/^\/universities\/([^/]+)\/([^/]+)\/?$/)
+// Build the set of allowlist-out URLs: any HUB or SPEC whose (uni, prog) is
+// missing from the corresponding programme allowlist. Slice 4 widened this
+// to 4-segment because 91/92 specs beneath allowlist-out hubs already 404 at
+// the spec route (resolveProgramme short-circuits on program-not-in-uni) and
+// the 1 that 307s (christ-university-online/mba/business-analytics via
+// next.config.js) produces "Page with redirect" in GSC. Both fates are
+// invalid sitemap contents; strip them at source.
+function is404OrRedirectByAllowlist(url) {
+  const m = url.match(/^\/universities\/([^/]+)\/([^/]+)(?:\/[^/]+)?\/?$/)
   if (!m) return false
   const [, slug, prog] = m
   const allow = programmeAllowlists.get(prog)
@@ -290,10 +309,14 @@ function is404Hub(url) {
 const urls = JSON.parse(fs.readFileSync(VALID_URLS, 'utf8'))
 const before = urls.length
 const removedNoindex = urls.filter(u => noindexHubUrls.has(u))
-const removed404 = urls.filter(u => !noindexHubUrls.has(u) && is404Hub(u))
+const removed404 = urls.filter(u => !noindexHubUrls.has(u) && is404OrRedirectByAllowlist(u))
 const removed = [...removedNoindex, ...removed404]
 const removedSet = new Set(removed)
 const kept = urls.filter(u => !removedSet.has(u))
+
+// Break down the 4xx/307 removals by shape for the report.
+const removedHubs = removed404.filter(u => u.match(/^\/universities\/[^/]+\/[^/]+\/?$/))
+const removedSpecs = removed404.filter(u => u.match(/^\/universities\/[^/]+\/[^/]+\/[^/]+\/?$/))
 
 if (CHECK_ONLY) {
   if (removedNoindex.length > 0) {
@@ -304,10 +327,13 @@ if (CHECK_ONLY) {
   }
   if (removed404.length > 0) {
     if (removedNoindex.length > 0) console.error('')
-    console.error(`FAIL: ${removed404.length} hub URL(s) are in valid-urls.json AND would 404 at the edge:`)
+    console.error(`FAIL: ${removed404.length} URL(s) are in valid-urls.json AND allowlist-out (${removedHubs.length} hub(s), ${removedSpecs.length} spec(s)):`)
     for (const u of removed404) console.error(`  - ${u}`)
     console.error('')
-    console.error('Middleware (programme allowlist) would return HTTP 404 for these.')
+    console.error('Hubs: middleware returns HTTP 404 at the edge.')
+    console.error('Specs: 91 of 92 return 404 via the spec route resolver; 1 (Christ MBA')
+    console.error('       business-analytics) returns 307 via next.config.js. Both fates')
+    console.error('       are invalid sitemap contents.')
     console.error('Class-A/B/C: uni is not in the corresponding programme-allowlist-*.json.')
   }
   if (removedNoindex.length + removed404.length > 0) {
@@ -316,14 +342,15 @@ if (CHECK_ONLY) {
     console.error('     or let the prebuild chain do it on the next `npm run build`.')
     process.exit(1)
   }
-  console.log(`OK. valid-urls.json (${before} URLs) contains no hub URL that would noindex or 404.`)
+  console.log(`OK. valid-urls.json (${before} URLs) contains no URL that would noindex, 404, or 307 via the programme allowlist.`)
   process.exit(0)
 }
 
 fs.writeFileSync(VALID_URLS, JSON.stringify(kept, null, 2) + '\n', 'utf8')
-console.log(`Pruned ${removed.length} hub URL(s) from valid-urls.json (${before} -> ${kept.length}).`)
+console.log(`Pruned ${removed.length} URL(s) from valid-urls.json (${before} -> ${kept.length}).`)
 console.log(`  noindex hubs (invariant a): ${removedNoindex.length}`)
-console.log(`  404-shape hubs (invariant b, class-A/B/C): ${removed404.length}`)
+console.log(`  allowlist-out hubs (invariant b, class-A/B/C): ${removedHubs.length}`)
+console.log(`  allowlist-out specs (invariant b, slice 4): ${removedSpecs.length}`)
 if (removed.length && removed.length <= 25) {
   for (const u of removed) console.log(`  - ${u}`)
 } else if (removed.length > 25) {

@@ -1,0 +1,177 @@
+# Slice 4 candidate list: 92 spec URLs beneath the 5 class-C hubs.
+# All still in post-3c prod sitemap (specs not pruned in slice 3c, hub-only scope).
+# Fate on production today:
+#   91 return 404 at edge (no middleware spec-allowlist yet, but the parent hub
+#      404's block anything shell-level, and the spec route resolveProgramme
+#      short-circuits on program-not-in-uni)
+#   1  returns 307 (christ MBA business-analytics, via next.config.js lines 248-249)
+#
+# Groupings shown for GSC intersection convenience:
+#   5 hubs x N specs each = 92 total
+
+# amity-university-online/ma  (2 specs)
+https://edifyedu.in/universities/amity-university-online/ma/journalism-mass-communication
+https://edifyedu.in/universities/amity-university-online/ma/public-policy-governance
+
+# amity-university-online/mcom  (2 specs)
+https://edifyedu.in/universities/amity-university-online/mcom/finance
+https://edifyedu.in/universities/amity-university-online/mcom/financial-management
+
+# christ-university-online/mba  (1 specs)
+https://edifyedu.in/universities/christ-university-online/mba/business-analytics
+
+# dy-patil-university-online/mca  (1 specs)
+https://edifyedu.in/universities/dy-patil-university-online/mca/mca
+
+# sastra-university-online/mca  (3 specs)
+https://edifyedu.in/universities/sastra-university-online/mca/artificial-intelligence-data-science
+https://edifyedu.in/universities/sastra-university-online/mca/cyber-security
+https://edifyedu.in/universities/sastra-university-online/mca/full-stack-development
+
+# aligarh-muslim-university-online/ma  (5 specs)
+https://edifyedu.in/universities/aligarh-muslim-university-online/ma/english
+https://edifyedu.in/universities/aligarh-muslim-university-online/ma/hindi
+https://edifyedu.in/universities/aligarh-muslim-university-online/ma/history
+https://edifyedu.in/universities/aligarh-muslim-university-online/ma/political-science
+https://edifyedu.in/universities/aligarh-muslim-university-online/ma/urdu
+
+# assam-don-bosco-university-online/ma  (3 specs)
+https://edifyedu.in/universities/assam-don-bosco-university-online/ma/governance
+https://edifyedu.in/universities/assam-don-bosco-university-online/ma/public-administration
+https://edifyedu.in/universities/assam-don-bosco-university-online/ma/public-policy
+
+# bharathidasan-university-online/ma  (1 specs)
+https://edifyedu.in/universities/bharathidasan-university-online/ma/economics
+
+# central-university-himachal-pradesh-online/ma  (3 specs)
+https://edifyedu.in/universities/central-university-himachal-pradesh-online/ma/economics
+https://edifyedu.in/universities/central-university-himachal-pradesh-online/ma/history
+https://edifyedu.in/universities/central-university-himachal-pradesh-online/ma/political-science
+
+# central-university-himachal-pradesh-online/mca  (1 specs)
+https://edifyedu.in/universities/central-university-himachal-pradesh-online/mca/computer-applications
+
+# chandigarh-university-online/ma  (3 specs)
+https://edifyedu.in/universities/chandigarh-university-online/ma/economics
+https://edifyedu.in/universities/chandigarh-university-online/ma/english
+https://edifyedu.in/universities/chandigarh-university-online/ma/focus-on-digital-journalism-pr-corporate-communication
+
+# dr-babasaheb-ambedkar-open-university-online/ma  (5 specs)
+https://edifyedu.in/universities/dr-babasaheb-ambedkar-open-university-online/ma/economics
+https://edifyedu.in/universities/dr-babasaheb-ambedkar-open-university-online/ma/english-literature
+https://edifyedu.in/universities/dr-babasaheb-ambedkar-open-university-online/ma/gujarati-literature
+https://edifyedu.in/universities/dr-babasaheb-ambedkar-open-university-online/ma/hindi-literature
+https://edifyedu.in/universities/dr-babasaheb-ambedkar-open-university-online/ma/history
+
+# galgotias-university-online/ma  (2 specs)
+https://edifyedu.in/universities/galgotias-university-online/ma/economics
+https://edifyedu.in/universities/galgotias-university-online/ma/english-literature-language
+
+# gls-university-online/mca  (1 specs)
+https://edifyedu.in/universities/gls-university-online/mca/computer-science-and-it
+
+# gls-university-online/mcom  (3 specs)
+https://edifyedu.in/universities/gls-university-online/mcom/accounting
+https://edifyedu.in/universities/gls-university-online/mcom/finance
+https://edifyedu.in/universities/gls-university-online/mcom/taxation
+
+# gujarat-university-online/ma  (1 specs)
+https://edifyedu.in/universities/gujarat-university-online/ma/english-literature
+
+# guru-ghasidas-vishwavidyalaya-online/ma  (2 specs)
+https://edifyedu.in/universities/guru-ghasidas-vishwavidyalaya-online/ma/english-literature
+https://edifyedu.in/universities/guru-ghasidas-vishwavidyalaya-online/ma/political-science
+
+# integral-university-online/ma  (8 specs)
+https://edifyedu.in/universities/integral-university-online/ma/community-development
+https://edifyedu.in/universities/integral-university-online/ma/english
+https://edifyedu.in/universities/integral-university-online/ma/hindi
+https://edifyedu.in/universities/integral-university-online/ma/history
+https://edifyedu.in/universities/integral-university-online/ma/medical-psychiatric-social
+https://edifyedu.in/universities/integral-university-online/ma/pol-science
+https://edifyedu.in/universities/integral-university-online/ma/sociology
+https://edifyedu.in/universities/integral-university-online/ma/urdu
+
+# integral-university-online/mca  (1 specs)
+https://edifyedu.in/universities/integral-university-online/mca/computer-science
+
+# jain-university-online/ma  (3 specs)
+https://edifyedu.in/universities/jain-university-online/ma/economics
+https://edifyedu.in/universities/jain-university-online/ma/english
+https://edifyedu.in/universities/jain-university-online/ma/public-policy
+
+# karnataka-state-open-university-online/ma  (1 specs)
+https://edifyedu.in/universities/karnataka-state-open-university-online/ma/english-literature
+
+# karnataka-state-open-university-online/mca  (1 specs)
+https://edifyedu.in/universities/karnataka-state-open-university-online/mca/computer-science-and-it
+
+# kiit-university-online/ma  (3 specs)
+https://edifyedu.in/universities/kiit-university-online/ma/econometrics
+https://edifyedu.in/universities/kiit-university-online/ma/financial-economics
+https://edifyedu.in/universities/kiit-university-online/ma/public-policy
+
+# lovely-professional-university-online/ma  (5 specs)
+https://edifyedu.in/universities/lovely-professional-university-online/ma/economics-focus
+https://edifyedu.in/universities/lovely-professional-university-online/ma/english-language-literature-focus
+https://edifyedu.in/universities/lovely-professional-university-online/ma/history-focus-research-oriented
+https://edifyedu.in/universities/lovely-professional-university-online/ma/political-science
+https://edifyedu.in/universities/lovely-professional-university-online/ma/sociology
+
+# madurai-kamaraj-university-online/bca  (6 specs)
+https://edifyedu.in/universities/madurai-kamaraj-university-online/bca/general
+https://edifyedu.in/universities/madurai-kamaraj-university-online/bca/general-ai
+https://edifyedu.in/universities/madurai-kamaraj-university-online/bca/general-data-structures
+https://edifyedu.in/universities/madurai-kamaraj-university-online/bca/general-dbms
+https://edifyedu.in/universities/madurai-kamaraj-university-online/bca/general-java
+https://edifyedu.in/universities/madurai-kamaraj-university-online/bca/general-python
+
+# madurai-kamaraj-university-online/mca  (3 specs)
+https://edifyedu.in/universities/madurai-kamaraj-university-online/mca/general-big-data-analytics
+https://edifyedu.in/universities/madurai-kamaraj-university-online/mca/general-cloud-computing
+https://edifyedu.in/universities/madurai-kamaraj-university-online/mca/general-machine-learning
+
+# manav-rachna-online/ma  (1 specs)
+https://edifyedu.in/universities/manav-rachna-online/ma/english-literature
+
+# manonmaniam-sundaranar-university-online/ma  (3 specs)
+https://edifyedu.in/universities/manonmaniam-sundaranar-university-online/ma/economics
+https://edifyedu.in/universities/manonmaniam-sundaranar-university-online/ma/history
+https://edifyedu.in/universities/manonmaniam-sundaranar-university-online/ma/journalism-and-mass-communication
+
+# marwadi-university-online/ma  (1 specs)
+https://edifyedu.in/universities/marwadi-university-online/ma/english-literature
+
+# mizoram-university-online/ma  (1 specs)
+https://edifyedu.in/universities/mizoram-university-online/ma/education
+
+# parul-university-online/ma  (2 specs)
+https://edifyedu.in/universities/parul-university-online/ma/english-language-teaching
+https://edifyedu.in/universities/parul-university-online/ma/journalism-mass-communication
+
+# pp-savani-university-online/ma  (2 specs)
+https://edifyedu.in/universities/pp-savani-university-online/ma/english-literature
+https://edifyedu.in/universities/pp-savani-university-online/ma/french-language
+
+# sgt-university-online/mca  (6 specs)
+https://edifyedu.in/universities/sgt-university-online/mca/artificial-intelligence-machine-learning
+https://edifyedu.in/universities/sgt-university-online/mca/blockchain-technology
+https://edifyedu.in/universities/sgt-university-online/mca/cyber-security
+https://edifyedu.in/universities/sgt-university-online/mca/cybersecurity
+https://edifyedu.in/universities/sgt-university-online/mca/data-analytics
+https://edifyedu.in/universities/sgt-university-online/mca/data-science
+
+# shoolini-university-online/ma  (2 specs)
+https://edifyedu.in/universities/shoolini-university-online/ma/ma-english
+https://edifyedu.in/universities/shoolini-university-online/ma/ma-jmc
+
+# symbiosis-university-online/ma  (1 specs)
+https://edifyedu.in/universities/symbiosis-university-online/ma/mass-communication
+
+# vignan-university-online/bba  (2 specs)
+https://edifyedu.in/universities/vignan-university-online/bba/marketing-analytics
+https://edifyedu.in/universities/vignan-university-online/bba/marketing-human-resources
+
+# vivekananda-global-university-online/ma  (1 specs)
+https://edifyedu.in/universities/vivekananda-global-university-online/ma/english
+
