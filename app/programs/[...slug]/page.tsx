@@ -12,7 +12,7 @@ import type { Program } from '@/lib/data'
 import { formatFeeSlim, UNIS_SLIM } from '@/lib/data-slim'
 import { getSpecFAQs } from '@/lib/specFaqs'
 import { getCanonicalSpec } from '@/lib/specMapping'
-import { RESCUED_PROGRAM_PATHS } from '@/lib/seo/rescued-pages'
+import { shouldIndexProgramsPath } from '@/lib/seo/should-index'
 import { MBA_SPEC_SEO_OVERRIDES } from '@/lib/mba-spec-seo-overrides'
 import { SPEC_HUB_EDITORIAL } from '@/lib/data/spec-hub-editorial'
 import ProgramPageClient from '@/components/ProgramPageClient'
@@ -277,11 +277,12 @@ export async function generateMetadata(
       description,
     },
     robots: (() => {
-      if (!subSlug) return undefined
-      const isRescued = RESCUED_PROGRAM_PATHS.includes(`/programs/${programSlug}/${subSlug}`)
-      if (!isRescued) return { index: false, follow: true }
-      // Guard: even rescued MBA spec pages get noindexed when 0 universities match
-      if (program === 'MBA') {
+      const pathname = subSlug
+        ? `/programs/${programSlug}/${subSlug}`
+        : `/programs/${programSlug}`
+      if (!shouldIndexProgramsPath(pathname)) return { index: false, follow: true }
+      // Guard: an allowlisted MBA spec still noindexes when 0 universities match
+      if (subSlug && program === 'MBA') {
         const specCanonical = getCanonicalSpec(subSlug)
         const variants = specCanonical?.variants || [activeSpec || subSlug]
         const specUniCount = UNIS_SLIM.filter(u => {

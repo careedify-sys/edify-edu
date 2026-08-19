@@ -16,7 +16,10 @@ export const metadata: Metadata = {
     type: 'website',
     images: [{ url: '/og.webp', width: 1200, height: 630 }],
   },
-  robots: { index: true, follow: true },
+  // Task 5 (2026-08-19). /programs is not in PROGRAMS_INDEX_ALLOWLIST. The hub
+  // itself carries no ranking traffic and dilutes crawl budget. Individual
+  // program hubs and spec pages set their own robots in generateMetadata.
+  robots: { index: false, follow: true },
 }
 
 export default function ProgramsLayout({ children }: { children: React.ReactNode }) {

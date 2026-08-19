@@ -41,3 +41,18 @@ export function shouldIndexProgrammeHub(
     feeOk,
   }
 }
+
+// Task 5 (2026-08-19). GSC audit of /programs/*: 25 pages, 45,336 impressions,
+// 125 clicks, avg position 27.2. Only two paths carry their weight:
+//   /programs/mba                          (23 clicks, pos 7.51)
+//   /programs/mba/healthcare-management    (11,412 impressions, pos 6.46)
+// Everything else under /programs noindexes. Sitemap and per-page robots meta
+// both read this same allowlist so the two signals cannot drift apart.
+export const PROGRAMS_INDEX_ALLOWLIST: readonly string[] = [
+  '/programs/mba',
+  '/programs/mba/healthcare-management',
+]
+
+export function shouldIndexProgramsPath(pathname: string): boolean {
+  return PROGRAMS_INDEX_ALLOWLIST.includes(pathname)
+}

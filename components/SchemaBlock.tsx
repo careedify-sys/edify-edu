@@ -1,5 +1,6 @@
 import type { University, ProgramDetail } from '@/lib/data'
 import type { Coupon } from '@/lib/coupons'
+import { formatUniversityDisplayName } from '@/lib/format'
 
 interface Props {
   u: University
@@ -34,13 +35,18 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
     ],
   }
 
+  // Strip trailing " Online" from u.name before composing schema strings.
+  // Universities named "... University Online" otherwise produce double-word
+  // artefacts like "Galgotias University Online Online MBA".
+  const brand = formatUniversityDisplayName(u.name)
+
   const courseSchema = {
     '@context': 'https://schema.org',
     '@type': 'Course',
-    name: spec ? `${u.name} Online ${program} — ${spec} Specialisation` : `${u.name} Online ${program}`,
+    name: spec ? `${brand} Online ${program}: ${spec} Specialisation` : `${brand} Online ${program}`,
     description: spec
-      ? `Online ${program} with ${spec} specialisation from ${u.name}. NAAC ${u.naac} accredited, UGC DEB approved. Admissions open for ${year}.`
-      : `UGC DEB approved Online ${program} from ${u.name}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations, fees ${pd.fees || `from ₹${Math.round(u.feeMin / 1000)}K`}.`,
+      ? `Online ${program} with ${spec} specialisation from ${brand}. NAAC ${u.naac} accredited, UGC DEB approved. Admissions open for ${year}.`
+      : `UGC DEB approved Online ${program} from ${brand}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations, fees ${pd.fees || `from ₹${Math.round(u.feeMin / 1000)}K`}.`,
     provider: {
       '@type': 'CollegeOrUniversity',
       name: u.name,

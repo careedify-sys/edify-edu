@@ -25,6 +25,7 @@ import { GUIDES } from '@/lib/guides'
 import { CGPA_VALUES } from './tools/cgpa-calculator/[value]/data'
 import { COUPON_PAGE_SLUGS } from '@/lib/coupon-pages'
 import { RESCUED_PROGRAM_PATHS } from '@/lib/seo/rescued-pages'
+import { PROGRAMS_INDEX_ALLOWLIST, shouldIndexProgramsPath } from '@/lib/seo/should-index'
 
 // MBA spec slugs that are redirect sources (Sprint 4, next.config.js).
 // Safety net: even if valid-urls.json contains stale entries, the sitemap
@@ -131,6 +132,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .filter(path => {
       // Remove /programs/{prog}/{spec} (3-segment program paths)
       if (/^\/programs\/[^/]+\/[^/]+$/.test(path)) return false
+
+      // Task 5 (2026-08-19). /programs/{prog} hubs come in via valid-urls.json,
+      // but only /programs/mba earns its slot; every other program hub noindexes,
+      // as does the /programs index itself. Drop them here so the sitemap matches
+      // the per-page robots meta.
+      if (path === '/programs') return false
+      if (/^\/programs\/[^/]+$/.test(path) && !shouldIndexProgramsPath(path)) return false
 
       // Remove MBA spec pages whose spec slug is a redirect source
       const specMatch = path.match(/^\/universities\/([^/]+)\/mba\/([^/]+)$/)

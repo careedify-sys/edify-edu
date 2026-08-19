@@ -321,6 +321,10 @@ export async function generateMetadata(
       images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: `Online MBA ${def.displayName} India 2026` }],
     },
     twitter: { card: 'summary_large_image', title, description },
+    // Task 5 (2026-08-19). None of /programs/mba/specializations/{spec} is on
+    // PROGRAMS_INDEX_ALLOWLIST. The canonical spec landing lives at
+    // /programs/mba/{spec} (see [...slug]/page.tsx).
+    robots: { index: false, follow: true },
   }
 }
 
