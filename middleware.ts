@@ -431,17 +431,30 @@ export function middleware(req: NextRequest) {
     }
   }
 
-  // ── 2d. Programme hub allowlist (Task 3 generic-route slices) ────────────
-  // Return real HTTP 404 at the edge for /universities/{slug}/{prog} paths
-  // whose (slug, prog) combination is absent from the pre-generated allowlist.
+  // ── 2d. Programme hub + subtree allowlist (Task 3 generic-route slices) ──
+  // Return real HTTP 404 at the edge for /universities/{slug}/{prog}(/...)?
+  // paths whose (slug, prog) is absent from the pre-generated allowlist.
   // Runs before Next's App Router so the ISR pin can't seal a 200 on the
   // not-found shell (revalidate=false + dynamicParams=true).
+  //
+  // Slice 5 (2026-08-19): match widened from hub-only to hub + subtree.
+  // Rationale: if the (slug, prog) hub is not real, nothing beneath it is
+  // real either, so 404ing the whole subtree costs zero bundle (one regex
+  // change, no new allowlist) and closes the 91 spec-shell 200s that slice
+  // 4 pruned from the sitemap but did not stop the spec route from
+  // rendering. Rejected the alternative spec-level allowlist because a
+  // materialised list of ~1,992 specs would be ~10x the seven hub
+  // allowlists.
+  // "Valid hub, invalid spec" is a separate case, already closed by the
+  // fabrication hotfix's exact-manifest-membership gate; do not re-solve
+  // it here.
+  //
   // Allowlist source: lib/seo/resolve-programme.ts, materialised by
   // scripts/build-programme-allowlist.js in the prebuild chain, invariance
   // enforced by scripts/check-programme-allowlist-resolver.ts on pre-commit.
   // Slice 1 (2026-08-18): MA. Slice 2 (2026-08-18): + B.Com, M.Com.
   // Slice 3a (2026-08-18): + MBA. Slice 3b (2026-08-18): + BBA, BCA, MCA.
-  // All 7 generic + specialised hub programme routes now covered.
+  // Slice 5 (2026-08-19): widen match from hub-only to subtree.
   // Extend by adding a new allowlist import + row to PROGRAMME_HUB_ALLOWLISTS.
   const PROGRAMME_HUB_ALLOWLISTS: { slug: string; allowlist: string[] }[] = [
     { slug: 'ma', allowlist: MA_ALLOWLIST as string[] },
@@ -453,7 +466,11 @@ export function middleware(req: NextRequest) {
     { slug: 'mca', allowlist: MCA_ALLOWLIST as string[] },
   ]
   for (const { slug: progSlug, allowlist } of PROGRAMME_HUB_ALLOWLISTS) {
-    const re = new RegExp(`^/universities/([^/]+)/${progSlug}/?$`)
+    // Match hub OR any subtree beneath it. The optional /.* after the
+    // programme slug is what widens slice 5 from hub-only to hub + subtree.
+    // The trailing (?:/.*)?$ is anchored so /uni/foo/mbatest is NOT matched
+    // as the mba programme.
+    const re = new RegExp(`^/universities/([^/]+)/${progSlug}(?:/.*)?$`)
     const match = pathname.match(re)
     if (match) {
       if (!allowlist.includes(match[1])) {
