@@ -1,28 +1,33 @@
 // scripts/check-sitemap-vs-404.ts
 //
-// Task 3 slice 3c pre-commit gate. Two invariants, on the ACTUAL sitemap the
-// app would emit (not just lib/data/valid-urls.json):
+// Task 3 slice 3c + slice 4 pre-commit gate. Two invariants, on the ACTUAL
+// sitemap the app would emit (not just lib/data/valid-urls.json):
 //
-//   1. NEVER-BOTH-404. No HUB sitemap URL is one that middleware would
-//      return HTTP 404 on. Concretely: for every /universities/{slug}/{prog}
-//      URL (exactly 3 segments) in the sitemap, {slug} must be in the
-//      {prog} allowlist. If it is not, the middleware (section 2d) would
-//      404 that URL, and Google would report "Submitted URL not found (404)"
-//      in Search Console.
+//   1. NEVER-BOTH-404. No sitemap URL, hub OR spec, resolves to a
+//      middleware / spec-route 404. Concretely: for every
+//      /universities/{slug}/{prog}(/{spec})? URL in the sitemap (3 OR 4
+//      segments), {slug} must be in the {prog} allowlist. If it is not,
+//      the hub is 404'd by middleware (section 2d) and any spec beneath
+//      it is 404'd by the spec-route resolver (program-not-in-uni
+//      short-circuit). Google would report either as "Submitted URL not
+//      found (404)" in Search Console.
 //
-//      Hub-only by design: middleware currently 404s only 3-segment hubs.
-//      Spec URLs (4-segment /universities/{slug}/{prog}/{spec}) have their
-//      own resolution path and are covered by scripts/check-spec-rescue.ts.
-//      When a future slice starts 404ing specs beneath class-A hubs, extend
-//      the regex here to accept 4-segment paths too.
+//      Slice 3c (2026-08-18): hub-only. Slice 4 (2026-08-19): widened to
+//      4-segment after GSC intersection cleared the 91 that 404 (zero
+//      earning) plus the 1 that 307s via next.config.js
+//      (christ-university-online/mba/business-analytics, already
+//      no-longer-earning-what-it-was-in-the-sitemap-for).
 //
-//   2. NEVER-BOTH-REDIRECT. No sitemap URL (hub or spec) is an exact source
-//      in lib/data/redirects.json. A sitemap URL that 308s produces "Page
-//      with redirect" in Search Console. Two instances found before this
-//      gate existed: chitkara-university-online/bcom (not in sitemap, safe)
-//      and chandigarh-university-online/bba/business-analytics-
-//      specialization-with-data-focuse (IS in sitemap, drift, Task 4 fix
-//      pending).
+//   2. NEVER-BOTH-REDIRECT. No sitemap URL is an exact redirect source.
+//      Redirect catalogues Vercel actually serves:
+//        - lib/data/redirects.json (323 exact-path sources)
+//        - next.config.js redirects() (382 exact-path sources)
+//      Slice 3c read only the first, missed the Christ MBA case that
+//      redirects via the second. Slice 4 unions both. Same-source-
+//      different-destination between the two is a separate concern
+//      (Task 4 catalogue reconciliation), not gated here.
+//
+//      A sitemap URL that redirects produces "Page with redirect" in GSC.
 //
 // Defect classes the 404-check catches (all resolve to "uni not in the
 // programme allowlist"):
@@ -84,18 +89,45 @@ async function loadSitemapPaths(): Promise<string[]> {
     .filter((p: string) => p.startsWith('/'))
 }
 
-function loadRedirectSources(): Set<string> {
-  const raw = JSON.parse(fs.readFileSync(path.join(ROOT, 'lib', 'data', 'redirects.json'), 'utf8'))
-  const list: any[] = Array.isArray(raw) ? raw : (raw.redirects || [])
+// Load exact-path redirect sources from BOTH catalogues Vercel serves:
+//   1. lib/data/redirects.json (323 exact-path entries, read by many other
+//      scripts; the historical single source of truth for slice 3c)
+//   2. next.config.js redirects() (382 inline entries plus the 323 above
+//      spread in via _phase3Redirects; total ~705)
+// Calling the async redirects() function unions everything Vercel actually
+// serves at the edge, so a next.config.js-only entry cannot silently shadow
+// a sitemap URL the way christ-university-online/mba/... did in slice 3c.
+// Same-source-different-destination between the two catalogues is a
+// separate concern (Task 4 reconciliation), not gated here.
+async function loadRedirectSources(): Promise<Set<string>> {
   const s = new Set<string>()
-  for (const r of list) {
-    const src = String(r.source || '')
-    // Only exact-path sources (no :param, no *) can be matched directly.
-    // Parameterised sources are handled by Next at request time and cannot be
-    // pre-materialised into an exact URL list here.
-    if (src && !src.includes(':') && !src.includes('*')) s.add(src)
+  // Catalogue 1: redirects.json (kept as a defensive fallback if next.config
+  // ever drops the spread. The union is a no-op in the normal case.)
+  try {
+    const raw = JSON.parse(fs.readFileSync(path.join(ROOT, 'lib', 'data', 'redirects.json'), 'utf8'))
+    const list: any[] = Array.isArray(raw) ? raw : (raw.redirects || [])
+    for (const r of list) addExactPathSource(s, r?.source)
+  } catch { /* ignore, catalogue 2 will still fire */ }
+  // Catalogue 2: next.config.js redirects()
+  try {
+    const cfg: any = await import('../next.config.js' as any)
+    const nc = cfg?.default ?? cfg
+    if (typeof nc?.redirects === 'function') {
+      const list: any[] = await nc.redirects()
+      for (const r of list) addExactPathSource(s, r?.source)
+    }
+  } catch (e) {
+    throw new Error('check-sitemap-vs-404: failed to load next.config.js redirects(): ' + (e as Error).message)
   }
   return s
+}
+
+// Only exact-path sources (no :param, no *) can be matched directly against
+// a sitemap URL. Parameterised sources are handled by Next at request time
+// and cannot be pre-materialised into an exact URL list here.
+function addExactPathSource(set: Set<string>, source: unknown): void {
+  const src = String(source || '')
+  if (src && !src.includes(':') && !src.includes('*')) set.add(src)
 }
 
 function loadAllowlists(): Map<string, Set<string>> {
@@ -114,29 +146,47 @@ function loadAllowlists(): Map<string, Set<string>> {
 
 ;(async () => {
   const paths = await loadSitemapPaths()
-  const redirects = loadRedirectSources()
+  const redirects = await loadRedirectSources()
   const allowlists = loadAllowlists()
   const programmeSlugs = new Set(PROGRAMME_ALLOWLIST_FILES.map(p => p.slug))
 
   const violations404: { url: string; programme: string; slug: string }[] = []
   const violationsRedirect: { url: string; destination?: string }[] = []
 
-  // Load redirect map for helpful destination reporting
-  const redirectsRaw = JSON.parse(fs.readFileSync(path.join(ROOT, 'lib', 'data', 'redirects.json'), 'utf8'))
-  const redirectsList: any[] = Array.isArray(redirectsRaw) ? redirectsRaw : (redirectsRaw.redirects || [])
+  // Build destination map from BOTH catalogues so failure reports show
+  // where each source would redirect to. Same-source-different-destination
+  // conflicts across catalogues are not this gate's concern; last-write-wins
+  // matches how Vercel serves them (next.config.js order).
   const redirectDest = new Map<string, string>()
-  for (const r of redirectsList) {
-    const src = String(r.source || '')
-    if (src && !src.includes(':') && !src.includes('*')) redirectDest.set(src, String(r.destination || ''))
-  }
+  try {
+    const raw = JSON.parse(fs.readFileSync(path.join(ROOT, 'lib', 'data', 'redirects.json'), 'utf8'))
+    const list: any[] = Array.isArray(raw) ? raw : (raw.redirects || [])
+    for (const r of list) {
+      const src = String(r?.source || '')
+      if (src && !src.includes(':') && !src.includes('*')) redirectDest.set(src, String(r?.destination || ''))
+    }
+  } catch { /* ignored */ }
+  try {
+    const cfg: any = await import('../next.config.js' as any)
+    const nc = cfg?.default ?? cfg
+    if (typeof nc?.redirects === 'function') {
+      const list: any[] = await nc.redirects()
+      for (const r of list) {
+        const src = String(r?.source || '')
+        if (src && !src.includes(':') && !src.includes('*')) redirectDest.set(src, String(r?.destination || ''))
+      }
+    }
+  } catch { /* loadRedirectSources will have already thrown if fatal */ }
 
   for (const url of paths) {
     // Redirect-source check
     if (redirects.has(url)) {
       violationsRedirect.push({ url, destination: redirectDest.get(url) })
     }
-    // 404-shape check, HUB URLs only (3 segments). Middleware only 404s hubs.
-    const m = url.match(/^\/universities\/([^/]+)\/([^/]+)\/?$/)
+    // 404-shape check, HUB (3-seg) or SPEC (4-seg) beneath an allowlist-out
+    // (slug, prog). Middleware 404s the hub; the spec route resolver 404s
+    // any spec beneath it via program-not-in-uni short-circuit.
+    const m = url.match(/^\/universities\/([^/]+)\/([^/]+)(?:\/[^/]+)?\/?$/)
     if (!m) continue
     const [, slug, prog] = m
     if (!programmeSlugs.has(prog)) continue
@@ -150,7 +200,7 @@ function loadAllowlists(): Map<string, Set<string>> {
 
   console.log(`sitemap URLs scanned:   ${paths.length}`)
   console.log(`programme allowlists:   ${PROGRAMME_ALLOWLIST_FILES.map(p => p.slug).join(', ')}`)
-  console.log(`redirect sources loaded: ${redirects.size} exact-path entries`)
+  console.log(`redirect sources loaded: ${redirects.size} exact-path entries (redirects.json + next.config.js redirects())`)
   console.log('')
 
   if (violations404.length > 0) {
