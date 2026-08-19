@@ -1,23 +1,41 @@
 // scripts/prune-noindex-hub-urls.js
 // Sprint 3 Task 1 sitemap sync. Keeps lib/data/valid-urls.json aligned with
-// the shouldIndexProgrammeHub() decision so a URL is never listed in the
-// sitemap AND emitting noindex at the same time. Never-both is the invariant:
-//   - Published: in valid-urls.json AND robots.index === true
-//   - Not published: NOT in valid-urls.json AND robots.index === false
+// two independent hub-level invariants so a URL never lands in the sitemap
+// AND (a) emits robots noindex, or (b) would get a hard 404 at the edge.
+//
+// Invariant (a), never-both-noindex (original scope):
+//   For every hub URL in valid-urls.json, shouldIndexProgrammeHub must be
+//   true. Predicate: hasContentJson(uni, prog) OR feeOk(uni, prog).
+//
+// Invariant (b), never-both-404 (Task 3 slice 3c extension):
+//   For every hub URL in valid-urls.json whose programme slug is in the
+//   middleware allowlist scope (ma/bcom/mcom/mba/bba/bca/mca), the uni slug
+//   must be in the corresponding lib/data/programme-allowlist-*.json. The
+//   allowlists are the resolver's decision materialised (see
+//   lib/seo/resolve-programme.ts and scripts/build-programme-allowlist.js),
+//   so this collapses THREE distinct defect classes into one hub-level check:
+//     class-A  program in u.programs but no programDetails[program]
+//     class-B  has programDetails but feeOk() false (mostly covered by (a))
+//     class-C  program absent from u.programs entirely (Excel-only rows,
+//              e.g. /universities/christ-university-online/mba (Christ
+//              never had an entry for MBA in data.ts)
+//   The Excel is the only route through which class-C URLs enter, and it
+//   does not know about data.ts. Without this pruner extension the sitemap
+//   ships class-C URLs that middleware immediately 404s at request time.
 //
 // Modes:
 //   default : prune valid-urls.json in place, write it back
-//   --check : assert no drift; exit 1 if any hub URL in valid-urls.json would
-//             emit noindex. Does not write.
+//   --check : assert no drift on EITHER invariant; exit 1 if any hub URL in
+//             valid-urls.json would emit noindex OR would 404 at the edge.
+//             Does not write.
 //
-// This script runs in the prebuild chain so a fresh Excel regeneration is
-// always followed by an automatic re-prune. The --check flag is what
-// pre-commit calls.
+// Prebuild chain order: build-programme-allowlist MUST run before this
+// script so the *-allowlist.json files exist. See package.json prebuild.
+// The --check flag is what pre-commit calls.
 //
 // Runs against every hub URL of the shape /universities/{u}/{p}. Spec URLs
-// (/universities/{u}/{p}/{s}) are OUT OF SCOPE for this task, their policy
-// stays as-is until the 18 August GSC read (see audits/spec-page-index-
-// audit-2026-08-05.md).
+// (/universities/{u}/{p}/{s}) are OUT OF SCOPE for this task; the middleware
+// only 404s hubs and specs get their own resolution path.
 //
 // Plain CommonJS to match verify-fees.js and backfill-manifest-from-data.js.
 // Reads lib/data.ts as text and regex-parses only the fields shouldIndex
@@ -230,7 +248,7 @@ for (let i = 0; i < idHits.length; i++) {
   universities.push({ id, programs, feeMin, feeMax, programFees, programDetails })
 }
 
-// Build the set of noindex hub URLs from the parsed state.
+// Build the set of noindex hub URLs from the parsed state. (Invariant a)
 const noindexHubUrls = new Set()
 for (const u of universities) {
   for (const program of u.programs) {
@@ -240,27 +258,72 @@ for (const u of universities) {
   }
 }
 
+// Load programme allowlists, the middleware-404 truth. (Invariant b) Empty
+// map if any allowlist is missing; the prebuild chain (package.json) runs
+// build-programme-allowlist.js before this script, so missing files here mean
+// the chain is broken and we should not silently pass.
+// Keep in sync with the middleware.ts PROGRAMME_HUB_ALLOWLISTS list and with
+// scripts/build-programme-allowlist.js SCOPE_PROGRAMS.
+const ALLOWLIST_PROGRAMMES = ['ma', 'bcom', 'mcom', 'mba', 'bba', 'bca', 'mca']
+const programmeAllowlists = new Map()
+for (const prog of ALLOWLIST_PROGRAMMES) {
+  const p = path.join(ROOT, 'lib', 'data', `programme-allowlist-${prog}.json`)
+  if (!fs.existsSync(p)) {
+    console.error(`FAIL: ${path.relative(ROOT, p)} missing. Run: node scripts/build-programme-allowlist.js`)
+    process.exit(1)
+  }
+  const arr = JSON.parse(fs.readFileSync(p, 'utf8'))
+  programmeAllowlists.set(prog, new Set(arr))
+}
+
+// Build the set of 404-shape hub URLs: any hub URL whose (uni, prog) is not
+// in the allowlist. Hub-only (3-segment); the middleware only 404s hubs.
+function is404Hub(url) {
+  const m = url.match(/^\/universities\/([^/]+)\/([^/]+)\/?$/)
+  if (!m) return false
+  const [, slug, prog] = m
+  const allow = programmeAllowlists.get(prog)
+  if (!allow) return false // out-of-scope programme (ba/msc/bsc): no allowlist governs it
+  return !allow.has(slug)
+}
+
 const urls = JSON.parse(fs.readFileSync(VALID_URLS, 'utf8'))
 const before = urls.length
-const kept = urls.filter(u => !noindexHubUrls.has(u))
-const removed = urls.filter(u => noindexHubUrls.has(u))
+const removedNoindex = urls.filter(u => noindexHubUrls.has(u))
+const removed404 = urls.filter(u => !noindexHubUrls.has(u) && is404Hub(u))
+const removed = [...removedNoindex, ...removed404]
+const removedSet = new Set(removed)
+const kept = urls.filter(u => !removedSet.has(u))
 
 if (CHECK_ONLY) {
-  if (removed.length > 0) {
-    console.error(`FAIL: ${removed.length} URL(s) are in valid-urls.json AND would emit robots noindex:`)
-    for (const u of removed) console.error(`  - ${u}`)
+  if (removedNoindex.length > 0) {
+    console.error(`FAIL: ${removedNoindex.length} URL(s) are in valid-urls.json AND would emit robots noindex:`)
+    for (const u of removedNoindex) console.error(`  - ${u}`)
     console.error('')
     console.error('The sitemap must not declare a URL that emits noindex on the page.')
-    console.error('Fix: run `node scripts/build-valid-urls.js && node scripts/prune-noindex-hub-urls.js`')
+  }
+  if (removed404.length > 0) {
+    if (removedNoindex.length > 0) console.error('')
+    console.error(`FAIL: ${removed404.length} hub URL(s) are in valid-urls.json AND would 404 at the edge:`)
+    for (const u of removed404) console.error(`  - ${u}`)
+    console.error('')
+    console.error('Middleware (programme allowlist) would return HTTP 404 for these.')
+    console.error('Class-A/B/C: uni is not in the corresponding programme-allowlist-*.json.')
+  }
+  if (removedNoindex.length + removed404.length > 0) {
+    console.error('')
+    console.error('Fix: run `node scripts/build-valid-urls.js && node scripts/build-programme-allowlist.js && node scripts/prune-noindex-hub-urls.js`')
     console.error('     or let the prebuild chain do it on the next `npm run build`.')
     process.exit(1)
   }
-  console.log(`OK. valid-urls.json (${before} URLs) contains no hub URL that would emit noindex.`)
+  console.log(`OK. valid-urls.json (${before} URLs) contains no hub URL that would noindex or 404.`)
   process.exit(0)
 }
 
 fs.writeFileSync(VALID_URLS, JSON.stringify(kept, null, 2) + '\n', 'utf8')
-console.log(`Pruned ${removed.length} noindex hub URL(s) from valid-urls.json (${before} -> ${kept.length}).`)
+console.log(`Pruned ${removed.length} hub URL(s) from valid-urls.json (${before} -> ${kept.length}).`)
+console.log(`  noindex hubs (invariant a): ${removedNoindex.length}`)
+console.log(`  404-shape hubs (invariant b, class-A/B/C): ${removed404.length}`)
 if (removed.length && removed.length <= 25) {
   for (const u of removed) console.log(`  - ${u}`)
 } else if (removed.length > 25) {

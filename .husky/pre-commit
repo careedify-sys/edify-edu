@@ -56,6 +56,14 @@ npx tsx scripts/check-spec-rescue.ts || exit 1
 echo "pre-commit: check-programme-allowlist-resolver"
 npx tsx scripts/check-programme-allowlist-resolver.ts || exit 1
 
+# Task 3 slice 3c: never-both-404 and never-both-redirect invariants on the
+# actual sitemap() output. Blocks any commit where a HUB URL in the sitemap
+# would be 404'd by the middleware allowlist (class-A/B/C), or where any
+# sitemap URL is an exact source in lib/data/redirects.json. Reads
+# app/sitemap.ts so force-adds (RESCUED_PROGRAM_PATHS) are covered too.
+echo "pre-commit: check-sitemap-vs-404"
+npx tsx scripts/check-sitemap-vs-404.ts || exit 1
+
 # Typecheck scripts/ so they don't rot. next build excludes this directory
 # (see tsconfig.json exclude), so the only place scripts get typechecked is
 # here. Uses tsconfig.scripts.json which sets target: es2020.
