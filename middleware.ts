@@ -66,11 +66,16 @@ const OLD_SLUG_REDIRECTS: Record<string, string> = {
   'vellore-institut-of-technolo': 'vit-vellore-online',
   'yenepoya-universi': 'yenepoya-university-online',
   'symbiosis': 'symbiosis-university-online',
-  // 2026-07-26: bits-pilani-online was misleadingly named — the entry is BIT
-  // Mesra Ranchi, not BITS Pilani. Renamed to bit-mesra-online at truthful
-  // slug; the 7 legacy URLs (main page + 6 MBA program/spec pages) redirect
-  // to the corresponding bit-mesra-online URLs.
-  'bits-pilani-online': 'bit-mesra-online',
+  // 2026-08-20: repoint bits-pilani-online → bits-pilani-work-integrated-online.
+  // Google indexed /universities/bits-pilani-online/mba with BITS Pilani intent
+  // (1,692 impr, pos 12.56 in the 16-May-15-Aug-2026 GSC window). The prior
+  // target bit-mesra-online is a *different* institution (Birla Institute of
+  // Technology, Ranchi, Jharkhand, NAAC A, NIRF #77), not BITS Pilani (Rajasthan,
+  // NAAC A+, NIRF #7 University 2025), so the redirect was landing searchers on
+  // the wrong university. bits-pilani-work-integrated-online is the canonical
+  // BITS Pilani WILP entry in lib/data.ts:6948. BIT Mesra continues to serve
+  // directly at /universities/bit-mesra-online/.
+  'bits-pilani-online': 'bits-pilani-work-integrated-online',
   'nmims': 'nmims-online',
   'mahe-manipal': 'manipal-academy-higher-education-online',
   'jain': 'jain-university-online',
@@ -147,8 +152,11 @@ const OLD_SLUG_REDIRECTS: Record<string, string> = {
   'visvesvaraya-technological-university-online': 'vtu-online',
   'yenepoya-online': 'yenepoya-university-online',
   'amity-university-rajasthan-online': 'amity-university-online',
-  'birla-institute-of-technology-online': 'bits-pilani-online',
-  'birla-institut-of-technolo': 'bits-pilani-online',
+  // Birla Institute of Technology (BIT) aliases → BIT Mesra Ranchi, not BITS
+  // Pilani. Previously chained through bits-pilani-online, but as of 2026-08-20
+  // that slug points at BITS Pilani WILP, so these must resolve directly.
+  'birla-institute-of-technology-online': 'bit-mesra-online',
+  'birla-institut-of-technolo': 'bit-mesra-online',
   'international-institute-of-information-technology-online': 'iiit-bangalore-online',
   'internat-institut-of-informat': 'iiit-bangalore-online',
   'dypatil': 'dy-patil-university-online',
