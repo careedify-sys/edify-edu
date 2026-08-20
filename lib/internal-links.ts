@@ -29,6 +29,15 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
         { slug: 'is-amity-university-online-fake-or-legit-2026', label: 'Is Amity University Online Fake or Legit? 2026' },
       ],
     },
+    mca: {
+      universityName: 'Amity University Online',
+      shortName: 'Amity',
+      programPage: '/universities/amity-university-online/mca',
+      verifyPage: '/verify/amity-university-online',
+      blogs: [
+        { slug: 'amity-online-mca-fees-review', label: 'Amity Online MCA: Fees, Specialisations and Honest Review 2026' },
+      ],
+    },
   },
   'nmims-online': {
     mba: {
@@ -141,6 +150,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       programPage: '/universities/chandigarh-university-online/mba',
       comparePage: '/compare?a=chandigarh-university-online&b=amity-university-online',
       blogs: [
+        { slug: 'chandigarh-university-online-mba-review', label: 'Chandigarh University Online MBA Fees 2026: ₹1.65L Review and Honest Verdict' },
         { slug: 'is-chandigarh-university-online-fake-or-legit-2026', label: 'Is Chandigarh University Online Fake or Legit? 2026' },
       ],
     },
@@ -150,7 +160,9 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Jain University Online',
       shortName: 'Jain',
       programPage: '/universities/jain-university-online/mba',
-      blogs: [],
+      blogs: [
+        { slug: 'jain-online-mba-review-2026', label: 'Jain Online MBA Fees 2026: ₹1.96L to ₹2.98L Review and Honest Take' },
+      ],
     },
   },
   'galgotias-university-online': {
@@ -158,7 +170,9 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Galgotias University Online',
       shortName: 'Galgotias',
       programPage: '/universities/galgotias-university-online/mba',
-      blogs: [],
+      blogs: [
+        { slug: 'galgotias-online-mba-review', label: 'Galgotias University Online MBA Fees 2026: ₹80,200 Review and Honest Rating' },
+      ],
     },
   },
   'dy-patil-university-online': {
@@ -166,7 +180,29 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'DY Patil University Online',
       shortName: 'DY Patil',
       programPage: '/universities/dy-patil-university-online/mba',
-      blogs: [],
+      blogs: [
+        { slug: 'dy-patil-online-mba-review', label: 'DY Patil Online MBA Fees 2026: ₹1,89,400 Review and Honest Verdict' },
+      ],
+    },
+  },
+  'bits-pilani-work-integrated-online': {
+    mba: {
+      universityName: 'BITS Pilani WILP Online',
+      shortName: 'BITS Pilani WILP',
+      programPage: '/universities/bits-pilani-work-integrated-online/mba',
+      blogs: [
+        { slug: 'bits-pilani-online-mba-review-2026', label: 'BITS Pilani Online MBA Review 2026: WILP Fees & Honest Take' },
+      ],
+    },
+  },
+  'shoolini-university-online': {
+    mba: {
+      universityName: 'Shoolini University Online',
+      shortName: 'Shoolini',
+      programPage: '/universities/shoolini-university-online/mba',
+      blogs: [
+        { slug: 'shoolini-online-mba-review', label: 'Shoolini Online MBA Fees 2026: ₹1.18L Review and Honest Rating' },
+      ],
     },
   },
 }
