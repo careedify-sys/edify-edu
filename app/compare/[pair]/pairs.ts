@@ -240,12 +240,12 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'BBA',
     defaultSpec: 'general',
     faqs: [
-      { q: 'Is Symbiosis or NMIMS better for online BBA?', a: 'Symbiosis SSODL BBA costs Rs 1,66,000 total. NMIMS BBA fees should be confirmed with a counsellor. Both are NAAC A++ and UGC-DEB approved. Symbiosis has stronger Pune academic heritage; NMIMS has Mumbai brand value.' },
-      { q: 'What is the Symbiosis SSODL BBA fee?', a: 'Symbiosis SSODL BBA total fee is Rs 1,66,000 across 3 years (6 semesters). Fees are indicative and change by intake. Confirm the current fee with our counsellor before enrolling.' },
+      { q: 'Is Symbiosis or NMIMS better for online BBA?', a: 'Symbiosis SSODL BBA costs Rs 1,65,000 total (+ Rs 1,000 registration, separate). NMIMS BBA fees should be confirmed with a counsellor. Both are NAAC A++ and UGC-DEB approved. Symbiosis has stronger Pune academic heritage; NMIMS has Mumbai brand value.' },
+      { q: 'What is the Symbiosis SSODL BBA fee?', a: 'Symbiosis SSODL BBA total fee is Rs 1,65,000 across 3 years (6 semesters), plus Rs 1,000 one-time registration billed separately. Fees are indicative and change by intake. Confirm the current fee with our counsellor before enrolling.' },
       { q: 'Does NMIMS offer online BBA?', a: 'Yes. NMIMS offers online BBA. Confirm current fees with our counsellor or the NMIMS online portal directly.' },
       { q: 'Which has a higher NIRF Management rank?', a: 'NMIMS holds NIRF #11 Management and Symbiosis also holds NIRF #11 Management. Both are equally ranked in the Management category.' },
     ],
-    verdictA: ['You want the Symbiosis/Pune academic brand at Rs 1,66,000', 'Your career target is Pune or Maharashtra', 'NAAC A++ and deep academic rigour matter most'],
+    verdictA: ['You want the Symbiosis/Pune academic brand at Rs 1,65,000', 'Your career target is Pune or Maharashtra', 'NAAC A++ and deep academic rigour matter most'],
     verdictB: ['Your career target is Mumbai or the BFSI sector', 'You prefer the NMIMS brand for Mumbai financial services', 'Confirm current NMIMS BBA fees with our counsellor before deciding'],
   },
 

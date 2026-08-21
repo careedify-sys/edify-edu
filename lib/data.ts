@@ -1475,7 +1475,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved MBA from Symbiosis School for Online and Dig — recognised for corporate hiring.'},
       'BBA': {
         specs: ['General Management'],
-        fees: '₹0.2L – ₹1.5L',
+        fees: '₹1,65,000',
         duration: '3 Years (6 Semesters)',
         roles: ['Business Analyst', 'Marketing Manager', 'HR Executive', 'Operations Manager', 'Sales Manager', 'Entrepreneur'],
         avgSalary: '₹3L – ₹8L per annum',
