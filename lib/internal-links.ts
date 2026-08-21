@@ -61,6 +61,15 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
         { slug: 'symbiosis-online-mba-review-2026', label: 'Symbiosis Online MBA Review 2026: SSODL Fees, Scholarship and Honest Verdict' },
       ],
     },
+    bba: {
+      universityName: 'Symbiosis Online (SSODL)',
+      shortName: 'Symbiosis',
+      programPage: '/universities/symbiosis-university-online/bba',
+      verifyPage: '/verify/symbiosis-university-online',
+      blogs: [
+        { slug: 'symbiosis-online-bba-review-2026', label: 'Symbiosis Online BBA Review 2026: Fees, SSODL, Honest Take' },
+      ],
+    },
   },
   'dr-dy-patil-vidyapeeth-online': {
     mba: {
