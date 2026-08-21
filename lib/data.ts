@@ -1485,7 +1485,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ['General Management'],
-        fees: '₹0.2L – ₹1.2L',
+        fees: '₹1,57,500',
         duration: '3 Years (6 Semesters)',
         roles: ['Software Developer', 'Web Developer', 'System Administrator', 'Data Analyst', 'IT Support Engineer', 'Database Administrator'],
         avgSalary: '₹3L – ₹7L per annum',
