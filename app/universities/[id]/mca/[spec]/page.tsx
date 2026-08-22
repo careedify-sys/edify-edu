@@ -3,7 +3,7 @@ import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getUniversityById } from '@/lib/data'
 import { getMasterSyllabus } from '@/lib/content'
-import { getProgramSpecParams, resolveSpecName } from '@/lib/data/programs'
+import { getProgramSpecParams, resolveSpec } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
 import { getTitleName, shortenSpec, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
 import { pageKeywords } from '@/lib/page-keywords'
@@ -21,8 +21,10 @@ export async function generateMetadata(
   const u = getUniversityById(id)
   if (!u) return { title: 'Not Found', robots: { index: false, follow: false } }
 
-  const spec = resolveSpecName(id, 'MCA', 'mca', specSlug)
-  if (!spec) return { title: 'Not Found', robots: { index: false, follow: false } }
+  const resolved = resolveSpec(id, 'MCA', 'mca', specSlug)
+  if (!resolved) return { title: 'Not Found', robots: { index: false, follow: false } }
+  const spec = resolved.name
+  const canonicalSlug = resolved.slug
 
   const year = new Date().getFullYear()
   const syllabus = getMasterSyllabus(u.id, 'MCA') as any
@@ -41,7 +43,7 @@ export async function generateMetadata(
     title,
     description,
     keywords: syllabus?.metaKeywords || undefined,
-    alternates: { canonical: `https://edifyedu.in/universities/${u.id}/mca/${specSlug}` },
+    alternates: { canonical: `https://edifyedu.in/universities/${u.id}/mca/${canonicalSlug}` },
     openGraph: { title, description, type: 'website' },
     robots: { index: true, follow: true },
   }
@@ -57,8 +59,9 @@ export default async function MCASpecPage(
 
   const pd = u.programDetails['MCA']
   if (!pd) redirect(`/universities/${u.id}`)
-  const spec = resolveSpecName(id, 'MCA', 'mca', specSlug)
-  if (!spec) notFound()
+  const resolved = resolveSpec(id, 'MCA', 'mca', specSlug)
+  if (!resolved) notFound()
+  if (resolved.slug !== specSlug) redirect(`/universities/${u.id}/mca/${resolved.slug}`)
 
   const kw = pageKeywords[`${u.id}-mca`]?.join(', ') || undefined
 
@@ -67,8 +70,8 @@ export default async function MCASpecPage(
       u={u}
       program="MCA"
       programSlug="mca"
-      spec={spec}
-      specSlug={specSlug}
+      spec={resolved.name}
+      specSlug={resolved.slug}
       pd={pd}
       keywords={kw}
     />

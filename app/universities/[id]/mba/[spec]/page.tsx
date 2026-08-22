@@ -3,7 +3,7 @@
 import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getUniversityById } from '@/lib/data'
-import { getProgramSpecParams, resolveSpecName } from '@/lib/data/programs'
+import { getProgramSpecParams, resolveSpec } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
 import { getTitleName, shortenSpec, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
 import { pageKeywords } from '@/lib/page-keywords'
@@ -21,8 +21,10 @@ export async function generateMetadata(
   const u = getUniversityById(id)
   if (!u) return { title: 'Not Found', robots: { index: false, follow: false } }
 
-  const spec = resolveSpecName(id, 'MBA', 'mba', specSlug)
-  if (!spec) return { title: 'Not Found', robots: { index: false, follow: false } }
+  const resolved = resolveSpec(id, 'MBA', 'mba', specSlug)
+  if (!resolved) return { title: 'Not Found', robots: { index: false, follow: false } }
+  const spec = resolved.name
+  const canonicalSlug = resolved.slug
 
   const year = new Date().getFullYear()
   const titleName = getTitleName(u.id, u.name, u.abbr)
@@ -38,12 +40,12 @@ export async function generateMetadata(
     title,
     description,
     alternates: {
-      canonical: `https://edifyedu.in/universities/${u.id}/mba/${specSlug}`,
+      canonical: `https://edifyedu.in/universities/${u.id}/mba/${canonicalSlug}`,
     },
     openGraph: {
       title,
       description,
-      url: `https://edifyedu.in/universities/${u.id}/mba/${specSlug}`,
+      url: `https://edifyedu.in/universities/${u.id}/mba/${canonicalSlug}`,
       type: 'website',
       images: [{ url: '/og.webp', width: 1200, height: 630 }],
     },
@@ -62,8 +64,9 @@ export default async function SpecializationPage(
 
   const pd = u.programDetails['MBA']
   if (!pd) redirect(`/universities/${u.id}`)
-  const spec = resolveSpecName(id, 'MBA', 'mba', specSlug)
-  if (!spec) notFound()
+  const resolved = resolveSpec(id, 'MBA', 'mba', specSlug)
+  if (!resolved) notFound()
+  if (resolved.slug !== specSlug) redirect(`/universities/${u.id}/mba/${resolved.slug}`)
 
   const kw = pageKeywords[`${u.id}-mba`]?.join(', ') || undefined
 
@@ -72,8 +75,8 @@ export default async function SpecializationPage(
       u={u}
       program="MBA"
       programSlug="mba"
-      spec={spec}
-      specSlug={specSlug}
+      spec={resolved.name}
+      specSlug={resolved.slug}
       pd={pd}
       keywords={kw}
     />

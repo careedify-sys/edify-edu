@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19",
+  "updatedAt": "2026-08-22",
   "note": "Per-file em-dash baseline for app/**/*.tsx and components/**/*.tsx. Mirrors data/fee-mismatch-baseline.json: check-em-dash-baseline.mjs blocks any commit that raises a file above its allowed count. Files not listed are allowed zero. Count can only ratchet DOWN. See audits/em-dash-cleanup-components-2026-08-05.md for the planned cleanup.",
   "files": {
     "app/about/page.tsx": 14,
@@ -40,7 +40,6 @@
     "app/tools/percentage-to-gpa/PercentageToGpaClient.tsx": 4,
     "app/tools/program-fit/page.tsx": 2,
     "app/tools/university-comparison/page.tsx": 1,
-    "app/universities/[id]/[program]/[spec]/page.tsx": 1,
     "app/universities/[id]/[program]/layout.tsx": 4,
     "app/universities/[id]/bba/[spec]/page.tsx": 1,
     "app/universities/[id]/bca/[spec]/page.tsx": 1,

@@ -3,6 +3,7 @@ import { notFound, redirect, permanentRedirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById, specSlug as getSpecSlug, specName as getSpecName } from '@/lib/data'
 import type { Program } from '@/lib/data'
+import { resolveSpec } from '@/lib/data/programs'
 import { getTitleName, clampTitle, clampDescription, compactFee, shortenSpec } from '@/lib/seo-title'
 import UniSpecBody from '@/components/UniSpecBody'
 
@@ -23,10 +24,12 @@ export async function generateMetadata(
   if (!u || !program) return { title: 'Not Found', robots: { index: false, follow: false } }
 
   const pd      = u.programDetails[program]
-  const specVal = pd?.specs?.find(s => getSpecSlug(s) === specSlug)
-  if (!specVal) return { title: 'Not Found', robots: { index: false, follow: false } }
+  if (!pd) return { title: 'Not Found', robots: { index: false, follow: false } }
+  const resolved = resolveSpec(id, program, programSlug.toLowerCase(), specSlug)
+  if (!resolved) return { title: 'Not Found', robots: { index: false, follow: false } }
+  const spec = resolved.name
+  const canonicalSlug = resolved.slug
 
-  const spec     = getSpecName(specVal)
   const shortSpec = shortenSpec(spec)
   const year     = new Date().getFullYear()
   const titleName = getTitleName(u.id, u.name, u.abbr)
@@ -46,7 +49,7 @@ export async function generateMetadata(
       `${u.name} ${program} ${spec} syllabus`,
       `online ${program} ${spec} india ${year}`,
     ].join(', '),
-    alternates: { canonical: `https://edifyedu.in/universities/${u.id}/${programSlug}/${specSlug}` },
+    alternates: { canonical: `https://edifyedu.in/universities/${u.id}/${programSlug}/${canonicalSlug}` },
     openGraph: {
       title, description, type: 'website',
       images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630 }],
@@ -67,30 +70,17 @@ export default async function UniversitySpecPage(
   if (!u.programDetails[program]) redirect(`/universities/${u.id}`)
 
   const pd      = u.programDetails[program]!
-  let specVal = pd.specs?.find(s => getSpecSlug(s) === specSlug)
-  // Fallback: try manifest lookup which has alias support
-  if (!specVal) {
-    const { getSpecDisplayName } = require('@/lib/data/programs')
-    const aliasName = getSpecDisplayName(id, programSlug, specSlug)
-    if (aliasName) {
-      specVal = pd.specs?.find(s => {
-        const name = typeof s === 'string' ? s : s.name
-        return name === aliasName
-      })
-    }
-  }
-  // If still no spec match, redirect to the program page rather than 404 —
-  // the user clicked something we no longer have an exact spec for, so the
-  // closest valid landing is the program listing for this university.
-  if (!specVal) notFound()
+  const resolved = resolveSpec(id, program, programSlug.toLowerCase(), specSlug)
+  if (!resolved) notFound()
+  if (resolved.slug !== specSlug) redirect(`/universities/${u.id}/${programSlug}/${resolved.slug}`)
 
   return (
     <UniSpecBody
       u={u}
       program={program}
       programSlug={programSlug}
-      spec={getSpecName(specVal)}
-      specSlug={specSlug}
+      spec={resolved.name}
+      specSlug={resolved.slug}
       pd={pd}
     />
   )

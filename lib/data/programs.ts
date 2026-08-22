@@ -37,19 +37,22 @@ function loadManifest(): ProgramRow[] {
 }
 
 // Spec slug aliases: different names for the same specialization
-// e.g. "financial-management" and "finance" are the same spec
+// e.g. "financial-management" and "finance" are the same spec.
+// Extensions in the "New from 2026-08-22 slug drift audit" block group
+// slug variants that mean the same thing across universities (audit lives at
+// audits/slug-drift-2026-08-22.md).
 const SPEC_ALIASES: Record<string, string[]> = {
   'finance': ['financial-management', 'finance-management', 'finance-and-accounting'],
   'marketing': ['marketing-management', 'sales-and-marketing'],
-  'human-resource-management': ['hr-management', 'hrm', 'hr'],
-  'operations-management': ['operations', 'production-and-operations-management', 'production-management'],
+  'human-resource-management': ['hr-management', 'hrm', 'hr', 'human-resource', 'human-resources', 'human-resources-management'],
+  'operations-management': ['operations', 'production-and-operations-management', 'production-management', 'production-operations', 'production-operations-management'],
   'business-analytics': ['analytics', 'business-analytics-and-ai', 'data-analytics'],
   'digital-marketing': ['digital-marketing-management', 'digital-mktg'],
   'international-business': ['international-business-management', 'intl-business', 'ib'],
-  'healthcare-management': ['hospital-management', 'hospital-administration', 'hospital-healthcare-management', 'hospital-and-healthcare-management'],
-  'information-technology': ['it-management', 'information-technology-management', 'it'],
-  'supply-chain-management': ['logistics-and-supply-chain-management', 'logistics-supply-chain-management', 'logistics-scm', 'logistics-supply-chain', 'supply-chain-logistics'],
-  'entrepreneurship': ['entrepreneurship-and-leadership-management', 'entrepreneur'],
+  'healthcare-management': ['hospital-management', 'hospital-administration', 'hospital-healthcare-management', 'hospital-and-healthcare-management', 'healthcare', 'hospital-and-health-care-management', 'hospital-health-care-management'],
+  'information-technology': ['it-management', 'information-technology-management', 'it', 'it-systems', 'it-systems-management'],
+  'supply-chain-management': ['logistics-and-supply-chain-management', 'logistics-supply-chain-management', 'logistics-scm', 'logistics-supply-chain', 'supply-chain-logistics', 'operations-and-supply-chain-management', 'operations-supply-chain-management'],
+  'entrepreneurship': ['entrepreneurship-and-leadership-management', 'entrepreneur', 'entrepreneurship-management'],
   'data-science': ['data-science-and-analytics', 'data-science-analytics', 'data-science--ai'],
   'general-management': ['general'],
   'cyber-security': ['cybersecurity', 'cyber-security-and-forensics', 'cyber-security-forensics'],
@@ -60,6 +63,26 @@ const SPEC_ALIASES: Record<string, string[]> = {
   'project-management': ['project-management-and-leadership'],
   'retail-management': ['retail', 'retail-ops'],
   'banking-and-insurance': ['banking-insurance', 'banking-finance', 'banking-and-financial-services', 'bfsi-banking-financial-services-and-insurance'],
+  // New from 2026-08-22 slug drift audit. Each group ties slugs with the
+  // same semantic. Do not merge distinct concepts here.
+  'accounting-and-finance': ['accounting-finance'],
+  'fintech': ['fintech-management'],
+  'travel-and-tourism-management': ['travel-tourism-management', 'travel-tourism'],
+  'cloud-technology-and-information-security': ['cloud-technology-information-security'],
+  'data-science-and-artificial-intelligence': ['data-science-artificial-intelligence'],
+  'computer-science-and-it': ['computer-science-it'],
+  'agri-business-management': ['agri-business', 'agribusiness', 'agribusiness-management'],
+  'artificial-intelligence-and-data-science': ['artificial-intelligence-data-science', 'ai-data-science', 'ai-and-data-science'],
+  'finance-and-accounting-management': ['finance-accounting'],
+  'hospitality-management': ['hospitality'],
+  'marketing-and-sales-management': ['marketing-sales-management', 'marketing-sales'],
+  'data-science-and-business-analytics': ['data-science-business-analytics'],
+  'aviation-management': ['aviation'],
+  'oil-and-gas-management': ['oil-gas-management'],
+  'infrastructure-management': ['infrastructure'],
+  'cloud-computing-and-cyber-security': ['cloud-computing-cyber-security'],
+  'international-finance-and-accounting': ['international-finance-accounting'],
+  'general-commerce-and-management': ['general-commerce'],
 }
 
 // Build reverse map: alias -> canonical
@@ -168,16 +191,51 @@ export function resolveSpecName(
   programSlug: string,
   specSlug: string
 ): string | null {
-  // 1. Manifest path (preserves Excel-sourced display names + alias resolution)
-  const fromManifest = getSpecDisplayName(uniId, programSlug, specSlug)
-  if (fromManifest) return fromManifest
+  return resolveSpec(uniId, programLabel, programSlug, specSlug)?.name ?? null
+}
 
+/**
+ * Same lookup as resolveSpecName but returns both the display name AND the
+ * actual matched slug (from data.ts or manifest). When the requested
+ * `specSlug` resolves via an alias, the returned `slug` is the canonical
+ * one the university uses in its programDetails / manifest. Route pages
+ * should 301-redirect when `resolved.slug !== specSlug` so aliased URLs
+ * consolidate onto one indexable URL per programme instead of creating
+ * duplicate-content pairs.
+ *
+ * Slug-drift audit that motivated this: audits/slug-drift-2026-08-22.md
+ * (43 drift groups, 28 uncovered before this pass).
+ */
+export function resolveSpec(
+  uniId: string,
+  programLabel: string,
+  programSlug: string,
+  specSlug: string
+): { slug: string; name: string } | null {
+  // 1. Manifest path via getProgram (already handles aliases in both directions)
+  const row = getProgram(uniId, programSlug, specSlug)
+  if (row && row.spec_name) return { slug: row.spec_slug, name: row.spec_name }
+
+  // 2. data.ts programDetails, with alias fanout matching manifest semantics
   const u = getUniversityById(uniId)
   if (!u) return null
   const pd = (u.programDetails as Record<string, { specs?: unknown[] } | undefined>)[programLabel]
   const specs = (pd?.specs ?? []) as Array<string | { slug: string; name: string }>
-  const match = specs.find(s => toSlug(s as never) === specSlug)
-  if (match) return toName(match as never)
+
+  const candidates = [specSlug]
+  const canonical = _aliasToCanonical[specSlug]
+  if (canonical) {
+    candidates.push(canonical)
+    const siblings = SPEC_ALIASES[canonical]
+    if (siblings) candidates.push(...siblings)
+  }
+  const directAliases = SPEC_ALIASES[specSlug]
+  if (directAliases) candidates.push(...directAliases)
+
+  for (const cand of candidates) {
+    const match = specs.find(s => toSlug(s as never) === cand)
+    if (match) return { slug: toSlug(match as never), name: toName(match as never) }
+  }
 
   // 3. Last-resort title-case: only when the manifest carries a row for this
   // exact (uni, program, specSlug) triple but its spec_name is empty. Those
@@ -186,7 +244,7 @@ export function resolveSpecName(
   // returns null so the page 404s. The manifest is the allowlist.
   const prog = programSlug.toLowerCase()
   if (loadManifest().some(r => r.university_slug === uniId && r.program === prog && r.spec_slug === specSlug)) {
-    return titleCaseSlug(specSlug)
+    return { slug: specSlug, name: titleCaseSlug(specSlug) }
   }
   return null
 }
