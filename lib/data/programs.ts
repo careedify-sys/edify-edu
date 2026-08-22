@@ -212,16 +212,16 @@ export function resolveSpec(
   programSlug: string,
   specSlug: string
 ): { slug: string; name: string } | null {
-  // 1. Manifest path via getProgram (already handles aliases in both directions)
-  const row = getProgram(uniId, programSlug, specSlug)
-  if (row && row.spec_name) return { slug: row.spec_slug, name: row.spec_name }
-
-  // 2. data.ts programDetails, with alias fanout matching manifest semantics
   const u = getUniversityById(uniId)
   if (!u) return null
   const pd = (u.programDetails as Record<string, { specs?: unknown[] } | undefined>)[programLabel]
   const specs = (pd?.specs ?? []) as Array<string | { slug: string; name: string }>
 
+  // 1. data.ts programDetails with alias fanout. data.ts is the source of
+  // truth for which spec slug the uni actually offers, so we check it first.
+  // Cross-verify audit (2026-08-22) caught 19 unis where checking manifest
+  // first caused a canonical slug like `human-resource-management` to
+  // redirect to the manifest's short form `hr-management`.
   const candidates = [specSlug]
   const canonical = _aliasToCanonical[specSlug]
   if (canonical) {
@@ -232,17 +232,31 @@ export function resolveSpec(
   const directAliases = SPEC_ALIASES[specSlug]
   if (directAliases) candidates.push(...directAliases)
 
+  const prog = programSlug.toLowerCase()
   for (const cand of candidates) {
     const match = specs.find(s => toSlug(s as never) === cand)
-    if (match) return { slug: toSlug(match as never), name: toName(match as never) }
+    if (match) {
+      const resolvedSlug = toSlug(match as never)
+      // Prefer the manifest's Excel-sourced display name when it has one
+      // for this exact triple, else fall back to the data.ts name.
+      const manifestRow = loadManifest().find(
+        r => r.university_slug === uniId && r.program === prog && r.spec_slug === resolvedSlug
+      )
+      const name = manifestRow?.spec_name || toName(match as never)
+      return { slug: resolvedSlug, name }
+    }
   }
+
+  // 2. Manifest-only path for specs that live in the Excel manifest but not
+  // in data.ts programDetails (Excel-only additions).
+  const row = getProgram(uniId, programSlug, specSlug)
+  if (row && row.spec_name) return { slug: row.spec_slug, name: row.spec_name }
 
   // 3. Last-resort title-case: only when the manifest carries a row for this
   // exact (uni, program, specSlug) triple but its spec_name is empty. Those
   // are the 238 rows enumerated in audits/fabricated-spec-urls-2026-08-17.csv
   // and audits/empty-spec-names-2026-08-17.csv. Any slug with no manifest row
   // returns null so the page 404s. The manifest is the allowlist.
-  const prog = programSlug.toLowerCase()
   if (loadManifest().some(r => r.university_slug === uniId && r.program === prog && r.spec_slug === specSlug)) {
     return { slug: specSlug, name: titleCaseSlug(specSlug) }
   }
