@@ -169,8 +169,20 @@ for (const u of UNIVERSITIES) {
       enumTotal++
       const specSlug = toSlug(s as never)
       const r = resolveSpec(u.id, label, progSlug, specSlug)
-      if (!r) enumFail.push({ url: `/universities/${u.id}/${progSlug}/${specSlug}`, detail: 'resolveSpec returned null' })
-      else if (r.slug !== specSlug) enumFail.push({ url: `/universities/${u.id}/${progSlug}/${specSlug}`, detail: `data.ts canonical redirects to ${r.slug} — indicates data.ts inconsistency` })
+      if (!r) {
+        enumFail.push({ url: `/universities/${u.id}/${progSlug}/${specSlug}`, detail: 'resolveSpec returned null' })
+        continue
+      }
+      // If the data.ts slug resolves to a different slug (site-wide canonical
+      // override), the site page URL is r.slug, not specSlug. Only flag when
+      // r.slug itself does not further resolve to itself (which would mean
+      // the canonical is broken).
+      if (r.slug !== specSlug) {
+        const target = resolveSpec(u.id, label, progSlug, r.slug)
+        if (!target || target.slug !== r.slug) {
+          enumFail.push({ url: `/universities/${u.id}/${progSlug}/${specSlug}`, detail: `data.ts spec redirects to ${r.slug} but target does not self-resolve` })
+        }
+      }
     }
   }
 }

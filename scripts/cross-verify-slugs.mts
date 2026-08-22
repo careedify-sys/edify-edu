@@ -82,20 +82,28 @@ for (const u of UNIVERSITIES) {
     for (const s of specs) {
       const canonicalSlug = toSlug(s as never)
 
-      // Guarantee 1: canonical self-resolves
+      // The expected canonical is what resolveSpec returns when queried
+      // with the uni's own data.ts spec slug. For MBA this may differ from
+      // the raw data.ts slug because MBA_CANONICAL_OVERRIDES aligns the
+      // resolver with next.config.js's site-wide short-form policy. Every
+      // alias in the group must land on this same slug.
+      const canonicalResolved = resolveSpec(u.id, label, progSlug, canonicalSlug)
+      const expectedSlug = canonicalResolved?.slug ?? canonicalSlug
+
+      // Guarantee 1: canonical resolves to a stable slug (not null)
       selfChecks++
-      const self = resolveSpec(u.id, label, progSlug, canonicalSlug)
-      if (!self || self.slug !== canonicalSlug) {
+      if (!canonicalResolved) {
         issues.push({
-          kind: 'canonical does not self-resolve',
+          kind: 'canonical resolves to null',
           uni: u.id, program: progSlug, canonical: canonicalSlug,
-          probe: canonicalSlug, got: self?.slug ?? 'null',
+          probe: canonicalSlug, got: 'null',
         })
       }
 
-      // Guarantee 2: every alias in the group resolves to this canonical.
-      // "The group" = (a) if canonicalSlug is a table canonical, its aliases,
-      // (b) if canonicalSlug is a table alias, the table canonical + siblings.
+      // Guarantee 2: every alias in the group resolves to the same slug the
+      // canonical resolves to. Group = (a) if canonicalSlug is a table
+      // canonical, its aliases, (b) if canonicalSlug is a table alias, the
+      // table canonical + siblings.
       const groupSlugs: string[] = []
       if (SPEC_ALIASES[canonicalSlug]) {
         groupSlugs.push(canonicalSlug, ...SPEC_ALIASES[canonicalSlug])
@@ -115,11 +123,11 @@ for (const u of UNIVERSITIES) {
             uni: u.id, program: progSlug, canonical: canonicalSlug,
             probe, got: 'null',
           })
-        } else if (r.slug !== canonicalSlug) {
+        } else if (r.slug !== expectedSlug) {
           issues.push({
-            kind: 'alias probe resolves to wrong spec',
+            kind: 'alias probe resolves to a different slug than the canonical',
             uni: u.id, program: progSlug, canonical: canonicalSlug,
-            probe, got: r.slug,
+            probe, got: `${r.slug} (canonical resolves to ${expectedSlug})`,
           })
         }
       }

@@ -93,6 +93,31 @@ for (const [canonical, aliases] of Object.entries(SPEC_ALIASES)) {
   }
 }
 
+// MBA site-wide canonical overrides. Sprint 4 (2026-06-12, next.config.js
+// lines 483-497) established these short-form slugs as the canonical for
+// MBA via wildcard 301 redirects. Some universities still carry the long
+// form in data.ts programDetails. Without this override, resolveSpec would
+// return the long form for those unis and the route's own 301 would
+// redirect the canonical short-form URL back to the long form, which
+// next.config.js then redirects again to the short form: infinite loop.
+// The override forces resolveSpec to report the short-form slug for MBA
+// even when data.ts has the long form, matching next.config.js and
+// keeping the response as a single 200 render.
+const MBA_CANONICAL_OVERRIDES: Record<string, string> = {
+  'human-resource-management': 'hr-management',
+  'information-technology': 'it-management',
+  'operations-management': 'operations',
+  'retail-management': 'retail',
+  'marketing-management': 'marketing',
+  'financial-management': 'finance',
+  'international-business-management': 'international-business',
+  'entrepreneurship-management': 'entrepreneurship',
+  'digital-marketing-management': 'digital-marketing',
+  'hospital-healthcare-management': 'healthcare-management',
+  'data-science-analytics': 'data-science',
+  'logistics-supply-chain-management': 'supply-chain-management',
+}
+
 /**
  * Look up a single row by (university_slug, program[, spec_slug]).
  * Falls back to alias matching if exact slug not found.
@@ -236,7 +261,12 @@ export function resolveSpec(
   for (const cand of candidates) {
     const match = specs.find(s => toSlug(s as never) === cand)
     if (match) {
-      const resolvedSlug = toSlug(match as never)
+      let resolvedSlug = toSlug(match as never)
+      // Apply MBA site-wide canonical override so the returned slug agrees
+      // with next.config.js redirects. See MBA_CANONICAL_OVERRIDES above.
+      if (prog === 'mba' && MBA_CANONICAL_OVERRIDES[resolvedSlug]) {
+        resolvedSlug = MBA_CANONICAL_OVERRIDES[resolvedSlug]
+      }
       // Prefer the manifest's Excel-sourced display name when it has one
       // for this exact triple, else fall back to the data.ts name.
       const manifestRow = loadManifest().find(
