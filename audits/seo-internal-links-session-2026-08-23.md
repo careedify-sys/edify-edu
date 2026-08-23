@@ -258,10 +258,80 @@ Also unresolved: **B.Com has a live page pulling 1,177 impressions but appears
 in neither the official portal nor the Supabase programme list.** Worth checking
 whether the programme actually exists.
 
-### 5e. Bangalore University advertises two MA subjects it does not offer (OPEN, needs a decision)
+### 5g. 65% of stored fees are shared template strings (OPEN, systemic)
+
+Found 2026-08-23 while researching DDU Gorakhpur, whose fee ranges turned out to
+be byte-identical to Bangalore University's.
+
+`lib/data.ts` holds **436 programme fee strings but only 223 distinct values**.
+**285 of the 436 entries share their fee string with at least one other
+university.**
+
+| Fee string | Universities using it |
+|---|---|
+| `₹60K – ₹200K` | **25** |
+| `₹48K – ₹117K` | 10 |
+| `₹80K – ₹80K` | 9 |
+| `₹45K – ₹108K` | 9 |
+| `₹120K – ₹120K` | 8 |
+| `₹41K – ₹99K` | 8 |
+| `₹52K – ₹125K` | 8 |
+| `₹TBD` | 7 |
+
+Most of these **pass** `getDisplayFee` rule 1 and render as real fees, because
+rule 4a only rejects ranges wider than `SUSPICIOUS_RANGE_RATIO`. A templated
+range that happens to sit under 3x is displayed to users as though it were
+verified. The thin-page gate cannot catch this, by design.
+
+Practical consequence: a fee on a programme hub is not evidence the fee was ever
+checked. Before citing any fee in content, confirm it is not one of these shared
+strings, and verify against the university's own portal.
+
+Note also that `lib/data.ts` stores these as escaped unicode literals
+(`₹33K – ₹82K`), so grepping for `₹33K – ₹82K` silently returns
+zero. Match on the escaped form or decode first.
+
+### 5f. DDU Gorakhpur (BLOCKED on unverifiable fees, and same spec problem)
+
+Attempted 2026-08-23, **not written**. Two independent blockers.
+
+**No official fee exists anywhere.** DDU's online arm is at `ddugucdoe.com`
+(reached via `onlineddugu.com`, linked from `ddugu.ac.in`). The portal confirms
+the programmes, NAAC A++ and UGC-entitled status, but **publishes no fees at
+all**. Search results quoting BBA ₹25,000/year and MBA ₹80,000/year describe the
+**campus** programmes admitted through the DDU entrance exam, which is a
+different offering. The fees currently in `lib/data.ts` are template strings
+shared with four other universities (see 5g), so they cannot be cited.
+
+Publishing a wrong fee is worse than listing an unavailable subject, because a
+reader budgets against it. Blocked until someone gets the fee sheet in writing
+from the university.
+
+**Same fabricated-MA problem as Bangalore.** The official CDOE portal lists MA in
+Political Science, English, Education, Economics and Sociology. The site's MA
+spec list is the shared 7-subject template: English, Political Science,
+Sociology, **Psychology**, Economics, **History**, **Public Administration**. So
+three subjects are advertised that are not offered, and **Education is missing**.
+`/deen-dayal-upadhyay-gorakhpur-university-online/ma/psychology` carries 513
+impressions at position 7.82.
+
+Also worth noting: the official portal lists **10** online programmes including
+M.Sc Mathematics and three MA subjects the site does not carry. `lib/data.ts`
+has 5.
+
+**Data error found in passing:** DDU's `city` is set to `Lucknow`. The university
+is in Gorakhpur. Not fixed, since it sits inside the same entry that needs a
+full reconciliation.
+
+### 5e. Bangalore University advertises two MA subjects it does not offer (DECIDED: leave live)
 
 Found 2026-08-23 while researching the Bangalore University review. **Blocked
 the blog rather than writing on top of it.**
+
+> **Founder decision 2026-08-23: leave the pages live.** They rank and convert,
+> and enquirers will be told directly that the subject is not available. Do not
+> delete, redirect or "fix" these pages in a later session without asking.
+> The record below stays for context.
 
 `lib/data.ts` lists 7 MA specialisations for `bangalore-university-online`:
 English, Political Science, Sociology, **Psychology**, Economics, History,
@@ -330,7 +400,8 @@ Mody is the standout: 7 leads from 9 impressions means real demand against an em
 |---|---|---|
 | Parul | 13 | **PUBLISHED** `3add85a` + `2456461`. QA 20/20, 1,955 words. All 8 programme fees corrected, missing MA programme added. |
 | Bharati Vidyapeeth | 11 | **PUBLISHED** `171e9d5`. QA 20/20, 1,618 words. All 4 programme fees corrected, stale aggregates fixed. |
-| Bangalore University | 11 | **BLOCKED**, see 5e. Two advertised MA subjects do not exist. |
+| Bangalore University | 11 | **Not writing.** Founder chose to leave the two non-existent MA pages live (see 5e). |
+| DDU Gorakhpur | 10 | **BLOCKED**, see 5f. No official fee published anywhere; stored fees are shared templates. |
 | DDU Gorakhpur | 10 | Not started |
 | Amrita (MBA) | 9 | Not started |
 | SPPU | 8 | Not started |
