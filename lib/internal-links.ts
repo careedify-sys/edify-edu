@@ -45,7 +45,6 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       shortName: 'NMIMS',
       programPage: '/universities/nmims-online/mba',
       comparePage: '/compare?a=nmims-online&b=amity-university-online',
-      verifyPage: '/verify/nmims-online',
       blogs: [
         { slug: 'nmims-online-mba-review-2026', label: 'NMIMS Online MBA Review 2026: Fees, Accreditation and Placement Data' },
       ],
@@ -56,7 +55,6 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Symbiosis Online (SSODL)',
       shortName: 'Symbiosis',
       programPage: '/universities/symbiosis-university-online/mba',
-      verifyPage: '/verify/symbiosis-university-online',
       blogs: [
         { slug: 'symbiosis-online-mba-review-2026', label: 'Symbiosis Online MBA Review 2026: SSODL Fees, Scholarship and Honest Verdict' },
       ],
@@ -65,7 +63,6 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Symbiosis Online (SSODL)',
       shortName: 'Symbiosis',
       programPage: '/universities/symbiosis-university-online/bba',
-      verifyPage: '/verify/symbiosis-university-online',
       blogs: [
         { slug: 'symbiosis-online-bba-review-2026', label: 'Symbiosis Online BBA Review 2026: Fees, SSODL, Honest Take' },
       ],
@@ -101,7 +98,6 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       shortName: 'MUJ',
       programPage: '/universities/manipal-university-jaipur-online/mba',
       comparePage: '/compare?a=manipal-university-jaipur-online&b=amity-university-online',
-      verifyPage: '/verify/manipal-university-jaipur-online',
       blogs: [
         { slug: 'is-manipal-university-jaipur-fake-or-legit-2026', label: 'Is Manipal University Jaipur Fake or Legit? 2026 Fact Check' },
         { slug: 'muj-online-mba-review-2026', label: 'MUJ Online MBA Review 2026: Fees, NAAC and Honest Verdict' },
@@ -111,7 +107,6 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Manipal University Jaipur Online',
       shortName: 'MUJ',
       programPage: '/universities/manipal-university-jaipur-online/bba',
-      verifyPage: '/verify/manipal-university-jaipur-online',
       blogs: [
         { slug: 'muj-online-bba-review-2026', label: 'MUJ Online BBA Review 2026: Fees, EMI, Honest Take' },
       ],
@@ -141,7 +136,6 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'IGNOU Online',
       shortName: 'IGNOU',
       programPage: '/universities/ignou-online/mba',
-      verifyPage: '/verify/ignou-online',
       blogs: [
         { slug: 'ignou-online-mba-review-2026', label: 'IGNOU Online MBA Review 2026: Fees, Admission and Honest Verdict' },
       ],

@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import UniversityPageClient from '@/components/UniversityPageClient'
-import { getResolvableProgrammes } from '@/lib/seo/safe-internal-links'
+import { getResolvableProgrammes, getVerifyPage } from '@/lib/seo/safe-internal-links'
 import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
 import { pageKeywords } from '@/lib/page-keywords'
 
@@ -186,6 +186,7 @@ export default async function UniversityPage(
       <UniversityPageClient
         university={university}
         linkableProgrammes={getResolvableProgrammes(university)}
+        verifyHref={getVerifyPage(university.id)}
       />
     </>
   )

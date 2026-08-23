@@ -6,6 +6,11 @@ import { getUniversityById } from '@/lib/data'
 import { getTitleName } from '@/lib/seo-title'
 import { formatINR } from '@/lib/format'
 import { PAIRS, PAIR_SLUGS, type PairSlug } from './pairs'
+// These two gate the outbound links so this page cannot emit a 404.
+// The /verify route keys off Supabase university slugs, which differ from
+// lib/data.ts ids for 63 of 128 universities, so building the href from the id
+// produced the 404 wave Search Console reported on 2026-08-23.
+import { hubResolves, getVerifyPage } from '@/lib/seo/safe-internal-links'
 
 export const revalidate = false
 
@@ -121,6 +126,8 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
   }).slice(0, 4)
 
   const progSlug = prog.toLowerCase()
+  const verifyA = getVerifyPage(uA.id)
+  const verifyB = getVerifyPage(uB.id)
 
   return (
     <>
@@ -226,16 +233,16 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
             <p className="text-xs text-slate-400 mb-2">{nameA}</p>
             <div className="flex flex-wrap gap-2">
               <Link href={`/universities/${uA.id}`} className="px-3 py-1.5 text-xs font-medium rounded-full bg-slate-100 text-slate-700 no-underline hover:bg-amber-50 hover:text-amber-700">{nameA} Review</Link>
-              {prog !== 'MBA' && <Link href={`/universities/${uA.id}/${progSlug}`} className="px-3 py-1.5 text-xs font-medium rounded-full bg-slate-100 text-slate-700 no-underline hover:bg-amber-50 hover:text-amber-700">{nameA} {prog}</Link>}
-              <Link href={`/verify/${uA.id}`} className="px-3 py-1.5 text-xs font-medium rounded-full bg-slate-100 text-slate-700 no-underline hover:bg-amber-50 hover:text-amber-700">Verify {nameA}</Link>
+              {prog !== 'MBA' && hubResolves(uA.id, prog) && <Link href={`/universities/${uA.id}/${progSlug}`} className="px-3 py-1.5 text-xs font-medium rounded-full bg-slate-100 text-slate-700 no-underline hover:bg-amber-50 hover:text-amber-700">{nameA} {prog}</Link>}
+              {verifyA && <Link href={verifyA} className="px-3 py-1.5 text-xs font-medium rounded-full bg-slate-100 text-slate-700 no-underline hover:bg-amber-50 hover:text-amber-700">Verify {nameA}</Link>}
             </div>
           </div>
           <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
             <p className="text-xs text-amber-500 mb-2">{nameB}</p>
             <div className="flex flex-wrap gap-2">
               <Link href={`/universities/${uB.id}`} className="px-3 py-1.5 text-xs font-medium rounded-full bg-white text-amber-700 no-underline hover:bg-amber-100">{nameB} Review</Link>
-              {prog !== 'MBA' && <Link href={`/universities/${uB.id}/${progSlug}`} className="px-3 py-1.5 text-xs font-medium rounded-full bg-white text-amber-700 no-underline hover:bg-amber-100">{nameB} {prog}</Link>}
-              <Link href={`/verify/${uB.id}`} className="px-3 py-1.5 text-xs font-medium rounded-full bg-white text-amber-700 no-underline hover:bg-amber-100">Verify {nameB}</Link>
+              {prog !== 'MBA' && hubResolves(uB.id, prog) && <Link href={`/universities/${uB.id}/${progSlug}`} className="px-3 py-1.5 text-xs font-medium rounded-full bg-white text-amber-700 no-underline hover:bg-amber-100">{nameB} {prog}</Link>}
+              {verifyB && <Link href={verifyB} className="px-3 py-1.5 text-xs font-medium rounded-full bg-white text-amber-700 no-underline hover:bg-amber-100">Verify {nameB}</Link>}
             </div>
           </div>
         </div>

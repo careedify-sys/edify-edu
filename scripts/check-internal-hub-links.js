@@ -39,12 +39,28 @@ function walk(dir, out = []) {
   return out
 }
 
+// /verify/{slug} keys off Supabase university slugs, which differ from
+// lib/data.ts ids for 63 of 128 universities. Search Console reported ~60 of
+// these as Not found on 2026-08-23. Only slugs in verify-slugs.json resolve.
+const verifySlugs = new Set(
+  JSON.parse(fs.readFileSync(path.join(ROOT, 'lib', 'data', 'verify-slugs.json'), 'utf8')),
+)
+
 const files = walk(APP)
 const HUB = /href="(\/universities\/([^/"]+)\/([a-z]+))"/g
+const VERIFY = /href="(\/verify\/([^/"]+))"/g
 
 let broken = 0
 let checked = 0
+let verifyChecked = 0
 const offenders = new Map()
+
+function flag(f, href) {
+  broken++
+  const page = path.relative(APP, f)
+  if (!offenders.has(page)) offenders.set(page, new Set())
+  offenders.get(page).add(href)
+}
 
 for (const f of files) {
   const html = fs.readFileSync(f, 'utf8')
@@ -53,17 +69,18 @@ for (const f of files) {
     const [, href, uni, prog] = m
     if (!GATED.includes(prog)) continue
     checked++
-    if (!allow[prog].has(uni)) {
-      broken++
-      const page = path.relative(APP, f)
-      if (!offenders.has(page)) offenders.set(page, new Set())
-      offenders.get(page).add(href)
-    }
+    if (!allow[prog].has(uni)) flag(f, href)
+  }
+  while ((m = VERIFY.exec(html))) {
+    const [, href, slug] = m
+    verifyChecked++
+    if (!verifySlugs.has(slug)) flag(f, href)
   }
 }
 
 console.log(`pages scanned      : ${files.length}`)
 console.log(`gated hub links    : ${checked}`)
+console.log(`verify links       : ${verifyChecked}`)
 console.log(`broken (would 404) : ${broken}`)
 
 if (broken > 0) {
@@ -75,4 +92,4 @@ if (broken > 0) {
   process.exit(1)
 }
 
-console.log('\nPASS: no prerendered page links to a hub that middleware would 404.')
+console.log('\nPASS: no prerendered page links to a hub or verify URL that would 404.')

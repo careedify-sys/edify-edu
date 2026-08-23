@@ -31,6 +31,8 @@ import MBA_ALLOWLIST from '@/lib/data/programme-allowlist-mba.json'
 import BBA_ALLOWLIST from '@/lib/data/programme-allowlist-bba.json'
 import BCA_ALLOWLIST from '@/lib/data/programme-allowlist-bca.json'
 import MCA_ALLOWLIST from '@/lib/data/programme-allowlist-mca.json'
+import VERIFY_SLUG_LIST from '@/lib/data/verify-slugs.json'
+import VERIFY_OVERRIDE_FILE from '@/lib/data/verify-slug-overrides.json'
 import type { University, Program } from '@/lib/data'
 import { programmeSlug } from '@/lib/seo/resolve-programme'
 
@@ -78,6 +80,34 @@ export function hubResolves(uniId: string, program: Program): boolean {
 /** Programmes of `u` whose hub returns 200. Safe for navigation menus. */
 export function getResolvableProgrammes(u: University): Program[] {
   return u.programs.filter(p => hubResolves(u.id, p))
+}
+
+// ── /verify/{slug} ──────────────────────────────────────────────────────────
+// The verify route keys off Supabase university slugs, not lib/data.ts ids,
+// and the two disagree for 63 of 128 universities. Linking to /verify/{u.id}
+// therefore 404s for roughly half the catalogue, which is what Search Console
+// reported on 2026-08-23.
+//
+// VERIFY_SLUG_OVERRIDES maps id -> the slug that actually exists, built by
+// exact normalised name match against the Supabase universities table. Never
+// extend it by fuzzy or token matching: that approach mapped
+// jain-university-online onto arka-jain-university-online, a different
+// institution.
+const VERIFY_SLUGS = new Set(VERIFY_SLUG_LIST as string[])
+const VERIFY_OVERRIDES = (VERIFY_OVERRIDE_FILE as { map: Record<string, string> }).map
+
+/**
+ * The verify URL for a university, or null when no verify page exists.
+ *
+ * Returning null is the correct outcome for 24 universities that Supabase has
+ * no verify record for. Render the link conditionally rather than falling back
+ * to `/verify/${u.id}`, which is the bug this replaces.
+ */
+export function getVerifyPage(uniId: string): string | null {
+  if (VERIFY_SLUGS.has(uniId)) return `/verify/${uniId}`
+  const mapped = VERIFY_OVERRIDES[uniId]
+  if (mapped && VERIFY_SLUGS.has(mapped)) return `/verify/${mapped}`
+  return null
 }
 
 export interface SiblingLink {

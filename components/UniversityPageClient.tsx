@@ -33,9 +33,17 @@ interface Props {
    * this list; u.programs stays fine for non-link UI such as the tab strip.
    */
   linkableProgrammes: Program[]
+  /**
+   * Verify page URL, or null when this university has no verify record.
+   * Computed on the server by getVerifyPage(). The /verify route keys off
+   * Supabase university slugs, which differ from lib/data.ts ids for 63 of
+   * 128 universities, so building the href from u.id 404d for about half the
+   * catalogue. Render the link conditionally on this value.
+   */
+  verifyHref: string | null
 }
 
-export default function UniversityPageClient({ university: u, linkableProgrammes }: Props) {
+export default function UniversityPageClient({ university: u, linkableProgrammes, verifyHref }: Props) {
   const [enquiryOpen, setEnquiryOpen] = useState(false)
   const [activeProgram, setActiveProgram] = useState<Program | null>(null)
   const [compareList, setCompareList] = useState<string[]>([])
@@ -600,19 +608,22 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                 </div>
               </section>
 
-              {/* Verify Accreditation Link */}
-              <div className="rounded-xl border border-amber/30 bg-amber/5 p-4 flex items-center justify-between gap-4">
-                <div>
-                  <div className="font-semibold text-navy text-sm">Check accreditation, NAAC grade and UGC-DEB approval status</div>
-                  <p className="text-xs text-ink-3 m-0 mt-1">Independent verification powered by edifyedu.in</p>
+              {/* Verify Accreditation Link. Hidden when no verify page exists
+                  for this university, rather than linking to a 404. */}
+              {verifyHref && (
+                <div className="rounded-xl border border-amber/30 bg-amber/5 p-4 flex items-center justify-between gap-4">
+                  <div>
+                    <div className="font-semibold text-navy text-sm">Check accreditation, NAAC grade and UGC-DEB approval status</div>
+                    <p className="text-xs text-ink-3 m-0 mt-1">Independent verification powered by edifyedu.in</p>
+                  </div>
+                  <Link
+                    href={verifyHref}
+                    className="shrink-0 px-4 py-2 rounded-lg text-xs font-bold text-amber border border-amber/40 no-underline hover:bg-amber/10 transition-colors"
+                  >
+                    Verify {getShortUniversityName(u.name)} accreditation status
+                  </Link>
                 </div>
-                <Link
-                  href={`/verify/${u.id}`}
-                  className="shrink-0 px-4 py-2 rounded-lg text-xs font-bold text-amber border border-amber/40 no-underline hover:bg-amber/10 transition-colors"
-                >
-                  Verify {getShortUniversityName(u.name)} accreditation status
-                </Link>
-              </div>
+              )}
 
               {/* Other Universities */}
               {otherUnis.length > 0 && (

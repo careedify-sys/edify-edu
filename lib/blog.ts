@@ -2074,7 +2074,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Degree Recognition</h2>
 
-<p>The Symbiosis university online MBA from SSODL is UGC-DEB entitled. Under the 2020 UGC notification, degrees from UGC-DEB approved universities are legally equivalent to regular campus degrees. The degree is valid for government job applications including UPSC, SSC, state PSC exams, banking, and railways. It is also valid for PhD admission in India and recognised abroad for further study, subject to the requirements of each institution. Verify current approval status and accreditation details on the <a href="/verify/symbiosis-university-online" class="ilink">Symbiosis University Online verification page</a>.</p>
+<p>The Symbiosis university online MBA from SSODL is UGC-DEB entitled. Under the 2020 UGC notification, degrees from UGC-DEB approved universities are legally equivalent to regular campus degrees. The degree is valid for government job applications including UPSC, SSC, state PSC exams, banking, and railways. It is also valid for PhD admission in India and recognised abroad for further study, subject to the requirements of each institution. Verify current approval status and accreditation details on the <a href="/verify" class="ilink">EdifyEdu UGC-DEB verification tool</a>.</p>
 
 <h2>Who This Program Tends to Suit</h2>
 
@@ -2218,7 +2218,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </tbody>
 </table>
 
-<p>NMIMS is one of a handful of private universities in India where the brand name alone opens doors. NIRF #24 Management 2025, NAAC A++, AACSB accredited. The online MBA costs Rs 1.96L at base price, offers six focused specialisations, and runs entirely online with weekend live sessions. For working professionals targeting Mumbai's BFSI corridor or private sector management roles, it is a strong pick. But it is not cheap, it is not perfect, and there are things NMIMS will not tell you upfront. This review covers all of it. Verify current accreditation and UGC-DEB status on the <a href="/verify/nmims-online" class="ilink">NMIMS Online verification page</a>.</p>
+<p>NMIMS is one of a handful of private universities in India where the brand name alone opens doors. NIRF #24 Management 2025, NAAC A++, AACSB accredited. The online MBA costs Rs 1.96L at base price, offers six focused specialisations, and runs entirely online with weekend live sessions. For working professionals targeting Mumbai's BFSI corridor or private sector management roles, it is a strong pick. But it is not cheap, it is not perfect, and there are things NMIMS will not tell you upfront. This review covers all of it. Verify current accreditation and UGC-DEB status on the <a href="/verify" class="ilink">EdifyEdu UGC-DEB verification tool</a>.</p>
 
 <div class="cta-box">
 <p><strong>Want honest, no-commission guidance on whether NMIMS fits your career goals?</strong></p>
