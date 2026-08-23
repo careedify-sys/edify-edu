@@ -107,6 +107,15 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
         { slug: 'muj-online-mba-review-2026', label: 'MUJ Online MBA Review 2026: Fees, NAAC and Honest Verdict' },
       ],
     },
+    bba: {
+      universityName: 'Manipal University Jaipur Online',
+      shortName: 'MUJ',
+      programPage: '/universities/manipal-university-jaipur-online/bba',
+      verifyPage: '/verify/manipal-university-jaipur-online',
+      blogs: [
+        { slug: 'muj-online-bba-review-2026', label: 'MUJ Online BBA Review 2026: Fees, EMI, Honest Take' },
+      ],
+    },
   },
   'manipal-academy-higher-education-online': {
     mba: {
@@ -116,6 +125,14 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       blogs: [
         { slug: 'online-manipal-mba-review-2026', label: 'Online Manipal MBA Review 2026: Fees, Accreditation and Placement' },
         { slug: 'mahe-online-mba-review-2026', label: 'MAHE Online MBA Review 2026: Full Programme Details and Honest Verdict' },
+      ],
+    },
+    bba: {
+      universityName: 'Manipal Academy of Higher Education Online',
+      shortName: 'MAHE',
+      programPage: '/universities/manipal-academy-higher-education-online/bba',
+      blogs: [
+        { slug: 'mahe-online-bba-review-2026', label: 'MAHE Online BBA Review 2026: Fees, Honors Track, Honest Take' },
       ],
     },
   },
@@ -211,6 +228,92 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       programPage: '/universities/shoolini-university-online/mba',
       blogs: [
         { slug: 'shoolini-online-mba-review', label: 'Shoolini Online MBA Fees 2026: ₹1.18L Review and Honest Rating' },
+      ],
+    },
+  },
+
+  // ── Added 2026-08-23 ──────────────────────────────────────────────────────
+  // 22 of 40 review blogs had no entry here, so BlogRelatedLinks never rendered
+  // and those blogs passed nothing back to their programme hub. The 9 below are
+  // the single-university reviews whose hub is present in valid-urls.json, i.e.
+  // resolves and is indexable.
+  //
+  // Deliberately NOT added:
+  //   imt-ghaziabad-online-mba-review-2026, xlri-online-mba-review-2026
+  //     no such university in lib/data.ts, so there is no hub to point at.
+  //   lpu-online-bba-review-2026, nmims-online-bba-review-2026,
+  //   chandigarh-online-bba-review-2026
+  //     hub exists but is noindex (fails shouldIndexProgrammeHub: no page
+  //     content JSON and no verified fee). Add once the fee data lands.
+  //   the four "x-vs-y" comparison posts and the topic posts
+  //     no single university owns them.
+  'vignan-university-online': {
+    mba: {
+      universityName: "Vignan's Foundation for Science, Technology & Research Online",
+      shortName: 'Vignan',
+      programPage: '/universities/vignan-university-online/mba',
+      blogs: [
+        { slug: 'vignan-online-mba-review', label: 'Vignan Online MBA 2026: Fees, Syllabus, Honest Review' },
+      ],
+    },
+  },
+  'dayananda-sagar-university-online': {
+    mba: {
+      universityName: 'Dayananda Sagar University Online',
+      shortName: 'DSU',
+      programPage: '/universities/dayananda-sagar-university-online/mba',
+      blogs: [
+        { slug: 'dsu-online-mba-review', label: 'DSU Online MBA Review 2026: Fees and Honest Rating' },
+      ],
+    },
+  },
+  'uttaranchal-university-online': {
+    mba: {
+      universityName: 'Uttaranchal University Online',
+      shortName: 'Uttaranchal',
+      programPage: '/universities/uttaranchal-university-online/mba',
+      blogs: [
+        { slug: 'uu-doon-online-mba-review', label: 'Uttaranchal University Online MBA Review 2026: Fees' },
+      ],
+    },
+  },
+  'arka-jain-university-online': {
+    mba: {
+      universityName: 'ARKA JAIN University Online',
+      shortName: 'ARKA JAIN',
+      programPage: '/universities/arka-jain-university-online/mba',
+      blogs: [
+        { slug: 'arka-jain-online-mba-review', label: 'ARKA JAIN Online MBA Review 2026: Fees and GenAI Spec' },
+      ],
+    },
+  },
+  'noida-international-university-online': {
+    mba: {
+      universityName: 'Noida International University Online',
+      shortName: 'NIU',
+      programPage: '/universities/noida-international-university-online/mba',
+      blogs: [
+        { slug: 'noida-international-university-online-mba-review', label: 'NIU Online MBA Review 2026: Fees and Honest Rating' },
+      ],
+    },
+  },
+  'jaypee-university-online': {
+    mba: {
+      universityName: 'Jaypee Institute of Information Technology Online',
+      shortName: 'Jaypee JIIT',
+      programPage: '/universities/jaypee-university-online/mba',
+      blogs: [
+        { slug: 'jaypee-jiit-online-mba-review', label: 'Jaypee JIIT Online MBA Review 2026: Fees and IT Track' },
+      ],
+    },
+  },
+  'amrita-vishwa-vidyapeetham-online': {
+    bba: {
+      universityName: 'Amrita Vishwa Vidyapeetham Online',
+      shortName: 'Amrita',
+      programPage: '/universities/amrita-vishwa-vidyapeetham-online/bba',
+      blogs: [
+        { slug: 'amrita-online-bba-review-2026', label: 'Amrita Online BBA Review 2026: AHEAD Fees, Honest Take' },
       ],
     },
   },
