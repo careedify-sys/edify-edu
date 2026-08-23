@@ -763,7 +763,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MCA': {
         specs: ['Cybersecurity & Forensic', 'Full Stack Web Development', 'Artificial Intelligence / Machine Learning'],
-        fees: '₹30K',
+        // 2026-08-23: was '₹30K', which is the per-semester figure the portal
+        // quotes, not the programme total. Corrected to the 2-year total
+        // (₹30,000 x 4 semesters). Confirmed by founder 2026-08-23.
+        fees: '₹1,20,000',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -806,7 +809,11 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BA': {
         specs: ['Psychology', 'English Literature', 'Journalism & Mass Communication'],
-        fees: '₹60K – ₹70K',
+        // 2026-08-23: was '₹60K – ₹70K', a placeholder range that understated
+        // the 3-year total. Corrected to ₹1,10,000, confirmed by founder
+        // 2026-08-23. Portal lists ₹18,500 per semester, which computes to
+        // ₹1,11,000 over 6 semesters; the founder figure is used here.
+        fees: '₹1,10,000',
         duration: '3 Yrs',
         roles: ['Counsellor Trainee', 'Research Assistant', 'HR Trainee', 'Social Worker'],
         avgSalary: '₹2.5L – ₹7L per annum',
