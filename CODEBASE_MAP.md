@@ -4,6 +4,13 @@ Stack: Next.js 14 App Router · TypeScript · Tailwind · Vercel
 
 > **CMS is not in use. Do not touch anything in `app/admin/`, `app/api/cms/`, `app/api/generate-blog/`, `app/api/publish-to-github/`, or `app/blog/write/`. Ignore them completely.**
 
+> **Internal links, programme hubs, `valid-urls.json`, middleware allowlists:** read
+> [`audits/seo-internal-links-session-2026-08-23.md`](audits/seo-internal-links-session-2026-08-23.md) first.
+> It covers the two gates that decide whether a hub URL is safe to link, the four-step
+> `valid-urls.json` regeneration that no npm script does in full, the GSC baseline to
+> compare exports against, and what is still open. Deciding linkability from
+> `u.programs` is what caused the last two defect waves.
+
 ---
 
 ## 1. URL → File Map (every live route)
