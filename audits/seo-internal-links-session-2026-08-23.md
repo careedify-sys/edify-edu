@@ -324,22 +324,35 @@ Universities sending leads with **no review blog**. All 128 universities already
 
 Mody is the standout: 7 leads from 9 impressions means real demand against an empty SERP.
 
-**Progress: 1 of 7 written.**
+**Progress: 2 of 7 published.**
 
 | University | Leads | Status |
 |---|---|---|
-| Parul | 13 | **Draft written** 2026-08-23, commit `3add85a`. `content/blogs/parul-online-mba-review/`. QA 20/20. Held at `status: draft` pending a human re-check of the ₹1,50,000 fee on the live portal. |
-| Bharati Vidyapeeth | 11 | Not started |
-| Bangalore University | 11 | Not started |
+| Parul | 13 | **PUBLISHED** `3add85a` + `2456461`. QA 20/20, 1,955 words. All 8 programme fees corrected, missing MA programme added. |
+| Bharati Vidyapeeth | 11 | **PUBLISHED** `171e9d5`. QA 20/20, 1,618 words. All 4 programme fees corrected, stale aggregates fixed. |
+| Bangalore University | 11 | **BLOCKED**, see 5e. Two advertised MA subjects do not exist. |
 | DDU Gorakhpur | 10 | Not started |
 | Amrita (MBA) | 9 | Not started |
 | SPPU | 8 | Not started |
 | Mody | 7 | Not started |
 
-**To publish Parul:** add the post object to `lib/blog.ts` with
-`status: 'published'`, and add a `parul-university-online` entry to
-`UNIVERSITY_PROGRAM_LINKS` in `lib/internal-links.ts` so `BlogRelatedLinks`
-renders and the blog feeds authority back to the hub (see 5c).
+**Publishing checklist, proven twice.** Write the three files under
+`content/blogs/{slug}/`, then add the post object to `lib/blog.ts` with
+`status: 'published'`, then add a `UNIVERSITY_PROGRAM_LINKS` entry in
+`lib/internal-links.ts` so `BlogRelatedLinks` renders and the post feeds the
+hub (see 5c). `lib/blog.ts` is CRLF, so match line endings when inserting.
+
+**Two gates will fight you and both are right.** `check-blog-fees` treats every
+figure in a new post as a fee claim, so any competitor number you quote in order
+to debunk it must be added to `data/blog-fee-allowlist.json` with its source
+recorded as NOT official. `verify-fees` requires `lib/data.ts` and
+`data/fees-hub-data.json` to move together, including the derived `feeStr` and
+`emiStr`.
+
+**Watch the aggregates.** Fixing programme fees leaves `feeMin`, `feeMax` and
+`emiFrom` stale on the university record. The convention across the file is
+`emiFrom = feeMin / 24`. These drive `/compare` and `/fees`, so stale values
+show a wrong EMI next to a correct fee.
 
 **Reusable method, proven on Parul.** The strongest angle came from research,
 not invention. Competitors published four different fee totals (₹99,000,
