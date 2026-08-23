@@ -575,9 +575,12 @@ const nextConfig = {
       { source: '/universities/shri-ramasamy-memorial-university-online/bcom', destination: '/universities/srm-university-sikkim-online', permanent: true },
       { source: '/universities/shri-ramasamy-memorial-university-online/:path*', destination: '/universities/srm-university-sikkim-online/:path*', permanent: true },
       { source: '/universities/shri-ramasamy-memorial-university-online', destination: '/universities/srm-university-sikkim-online', permanent: true },
-      // Supabase has no verify record for SRM Sikkim, so the old target 404d.
-      // Send it to the verify search tool instead.
-      { source: '/verify/shri-ramasamy-memorial-university-online', destination: '/verify', permanent: true },
+      // 2026-08-24: no redirect here on purpose. The old target
+      // /verify/srm-university-sikkim-online 404s, but Supabase has since added
+      // shri-ramasamy-memorial-university-online as a real university row, so
+      // /verify/shri-ramasamy-memorial-university-online now renders a genuine
+      // page. verify-slugs.json had been stale since 2026-07-07 and did not
+      // know about it. Redirecting this would throw away a working page.
       { source: '/programs/mca/chandigarh-university-online', destination: '/universities/chandigarh-university-online/mca', permanent: true },
       { source: '/programs/ba/gujarat-university-online', destination: '/universities/gujarat-university-online', permanent: true },
       { source: '/programs/mba/graphic-era-university-online', destination: '/universities/graphic-era-university-online/mba', permanent: true },
