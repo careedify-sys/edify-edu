@@ -1,0 +1,125 @@
+{
+  "$schema": "https://edifyedu.in/schemas/university-review-input.v1.json",
+  "_comment": "Built 2026-08-23. Accreditation from Supabase (universities + accreditations tables). Fees from the official portal https://paruluniversity.online. Nothing here is estimated. Fields the portal does not state are left null rather than guessed.",
+
+  "university_slug": "parul-university-online",
+  "university_name": "Parul University",
+  "university_short_name": "Parul",
+
+  "programme": "Online MBA",
+  "programme_full_name": "Parul University Online MBA",
+
+  "target_keyword": "Parul University online MBA review",
+  "secondary_keywords": [
+    "parul university online mba fees",
+    "parul university online mba specialisations",
+    "parul university mba pharmaceutical management fees",
+    "is parul university online mba valid",
+    "parul university naac grade"
+  ],
+
+  "official_portal_url": "https://paruluniversity.online",
+  "current_blog_url": null,
+
+  "verified_facts": {
+    "_source_accreditation": "Supabase universities + accreditations tables, queried 2026-08-23",
+    "naac_grade": "A++",
+    "naac_cgpa": 3.55,
+    "naac_cycle": "1",
+    "naac_valid_till": "2030-02-20",
+    "naac_note": "Cycle 1 awarded 2023-02-20. Synced from official NAAC IIQA list 2026-05-10.",
+    "nirf_ranks": [
+      { "category": "Pharmacy", "rank": 41, "total_ranked": 100 }
+    ],
+    "nirf_management_rank": null,
+    "nirf_overall_rank": null,
+    "nirf_warning": "Parul has NO NIRF Management rank and NO NIRF Overall/University rank. The only Supabase-verified NIRF entry is Pharmacy #41. The official portal separately claims 'NIRF Top 50 (Innovation)'. Never present either as an MBA or university-wide ranking. Always state the category.",
+    "ugc_deb_status": "approved",
+    "university_type": "Private University",
+    "state": "Gujarat",
+    "city": "Waghodia",
+    "aicte_listed": false,
+    "aicte_note": "All 10 online programmes carry aicte_listed=false in Supabase. Do not claim AICTE approval.",
+    "ugc_notice_ref": "Notice 1 (Jan 2026)",
+    "online_programme_count": 10
+  },
+
+  "fees_override": {
+    "_source": "https://paruluniversity.online, fetched 2026-08-23",
+    "_basis": "Portal states a per-semester figure only. Total is per-sem x 4 semesters over 2 years. Portal does not state a lump-sum price, an application fee, or an EMI figure, so those are null.",
+    "sticker_per_sem": 37500,
+    "sticker_total": 150000,
+    "duration_years": 2,
+    "semesters": 4,
+    "effective_total": null,
+    "effective_per_sem": null,
+    "emi_per_month": null,
+    "application_fee": null,
+    "scholarship_categories": [],
+    "_discrepancy_note": "Third-party aggregator pages claim a Rs 99,000 lump-sum price. That figure does not appear on the official portal and is NOT to be published. lib/data.ts already carries Rs 1,50,000 for MBA, which matches the portal exactly.",
+    "_sibling_programme_fees_verified": {
+      "_comment": "Captured while verifying MBA. Recorded for the fee-correction task, NOT for use in this blog.",
+      "BBA": { "per_sem": 18500, "years": 3, "total": 111000 },
+      "BCA": { "per_sem": 18500, "years": 3, "total": 111000 },
+      "BA":  { "per_sem": 18500, "years": 3, "total": 111000 },
+      "MCA": { "per_sem": 30000, "years": 2, "total": 120000 },
+      "M.Com": { "per_sem": 15000, "years": 2, "total": 60000 },
+      "MA": { "per_sem": 15000, "years": 2, "total": 60000 },
+      "B.Com": null
+    }
+  },
+
+  "category": "Online MBA Programs",
+  "target_word_count": 2000,
+  "published_date": "2026-08-23",
+
+  "mba_specialisations_from_portal": [
+    "Marketing Management",
+    "Finance Management",
+    "Human Resource Management",
+    "Information Technology",
+    "Agri-Business Management",
+    "Business Analytics",
+    "Banking and Financial Services",
+    "Digital Marketing and Sales",
+    "Entrepreneurship and Innovation Management",
+    "Family Managed Business",
+    "Healthcare Management",
+    "International Trade and Business",
+    "Logistics and Supply Chain Management",
+    "Operations Management",
+    "Pharmaceutical Management",
+    "Project Management",
+    "Public Policy",
+    "Retail Management",
+    "Tourism and Event Management",
+    "Forensic Accounting and Corporate Fraud Investigation"
+  ],
+
+  "unique_angles_to_prioritise": [
+    "Pharmaceutical Management backed by a real NIRF Pharmacy #41 rank. Parul is a pharmacy-strong institution, so this one specialisation has institutional substance behind it rather than being a marketing label. GSC already shows /mba/pharmaceutical-management at 778 impressions and 0.9% CTR, the best-performing Parul page.",
+    "The NIRF category trap. Parul markets 'NIRF Top 50 Innovation' and has a verified Pharmacy #41, but has no Management rank at all. Competitor pages cite 'NIRF ranked' without the category. Show the reader how to read a NIRF claim.",
+    "Forensic Accounting and Corporate Fraud Investigation is a genuinely rare online MBA specialisation in India, and Parul's page for it already converts at 2.39% CTR.",
+    "Per-semester pricing vs total cost. The portal quotes Rs 37,500 per semester and never shows the Rs 1,50,000 total, which is how a two-year cost gets under-read at first glance.",
+    "Who should NOT apply. No AICTE listing on any online programme, and no NIRF Management rank, so anyone whose employer screens on either should look elsewhere."
+  ],
+
+  "internal_links_to_include": [
+    "/universities/parul-university-online/mba",
+    "/universities/parul-university-online/mba/pharmaceutical-management",
+    "/universities/parul-university-online/mca",
+    "/verify/parul-university-online",
+    "/compare",
+    "/contact",
+    "/guides/is-online-degree-valid-india",
+    "/blog/naac-accreditation-explained-grades-india-2026",
+    "/blog/ugc-deb-approved-universities-list-2026"
+  ],
+
+  "skip_sections": [
+    "campus-immersion",
+    "foundation-courses",
+    "scholarships"
+  ],
+  "_skip_reason": "The official portal states no scholarship categories, no campus immersion for online students, and no bundled foundation courses. Writing those sections would require inventing facts."
+}
