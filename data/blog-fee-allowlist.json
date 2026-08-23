@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10",
+  "updatedAt": "2026-08-23",
   "note": "Owner-verified fee figures that have no counterpart in lib/data.ts and therefore cannot resolve to MATCH via getDisplayFee. Only for figures a university's admissions team has confirmed in writing for a specific specialisation-tier or payment-mode variant that the fees hub does not model yet. Prefer the FeeVariant schema when implemented (see audits/fee-model-proposal-2026-08-07.md). Adding an entry here is a source-of-truth commitment: someone will re-verify at each intake.",
   "entries": [
     {
@@ -226,6 +226,78 @@
       "source": "portal-verified 13 Aug 2026 on onlinejain.com",
       "verified_date": "2026-08-13",
       "note": "JAIN Online MBA specialisation-wise starting tier. Portal-verified range is Rs 1,60,000 to Rs 2,98,000 across 18+ specialisations. Falls below the getDisplayFee range Rs 1.75L-Rs 1.96L in lib/data.ts, so the scanner classifies as MISMATCH. Introduced by a single cross-link paragraph that contrasts JAIN's starting tier against the standard-tier fee to explain why comparison sites often quote different JAIN figures."
+    },
+    {
+      "slug": "parul-online-mba-review",
+      "figure": 150000,
+      "university": "parul-university-online",
+      "programme": "MBA",
+      "source": "Official portal https://paruluniversity.online/postgraduate/online-mba-program/, fetched 23 Aug 2026",
+      "verified_date": "2026-08-23",
+      "note": "Parul Online MBA total programme fee as printed on the official programme page, and cross-checked against the portal index which lists Rs 37,500 per semester (37,500 x 4 = 1,50,000). This equals lib/data.ts pd.fees exactly; allowlisted only because the scanner’s attribution window does not bind it to Parul MBA in every occurrence, including the SVG label and the comparison-chart row."
+    },
+    {
+      "slug": "parul-online-mba-review",
+      "figure": 37500,
+      "university": "parul-university-online",
+      "programme": "MBA",
+      "source": "Official portal https://paruluniversity.online/postgraduate/online-mba-program/, fetched 23 Aug 2026",
+      "verified_date": "2026-08-23",
+      "note": "Parul Online MBA per-semester fee from the portal index page. Per-semester figures are normally classified NON_FEE; recorded here for source traceability alongside the Rs 1,50,000 total it derives."
+    },
+    {
+      "slug": "parul-online-mba-review",
+      "figure": 99000,
+      "university": "parul-university-online",
+      "programme": "MBA",
+      "source": "Third-party listing sites, surveyed 23 Aug 2026. NOT an official figure.",
+      "verified_date": "2026-08-23",
+      "note": "Incorrect total published by third-party aggregators. Quoted in the blog specifically to be corrected against the portal’s Rs 1,50,000. Do not treat as a Parul fee. This figure appears on no official Parul source."
+    },
+    {
+      "slug": "parul-online-mba-review",
+      "figure": 100000,
+      "university": "parul-university-online",
+      "programme": "MBA",
+      "source": "Third-party listing sites, surveyed 23 Aug 2026. NOT an official figure.",
+      "verified_date": "2026-08-23",
+      "note": "Incorrect total published by third-party aggregators (quoted as \"Rs 1 lakh\"). Cited in the blog’s fee-comparison chart as one of four wrong figures in circulation. Not a Parul fee."
+    },
+    {
+      "slug": "parul-online-mba-review",
+      "figure": 90000,
+      "university": "parul-university-online",
+      "programme": "MBA",
+      "source": "Third-party listing sites, surveyed 23 Aug 2026. NOT an official figure.",
+      "verified_date": "2026-08-23",
+      "note": "Incorrect total published by third-party aggregators as a \"Limited Period Offer\". Cited in the blog to be corrected. Not a Parul fee."
+    },
+    {
+      "slug": "parul-online-mba-review",
+      "figure": 80000,
+      "university": "parul-university-online",
+      "programme": "MBA",
+      "source": "Third-party listing sites, surveyed 23 Aug 2026. NOT an official figure.",
+      "verified_date": "2026-08-23",
+      "note": "Incorrect one-time-payment total published by third-party aggregators. Cited in the blog to be corrected. Not a Parul fee."
+    },
+    {
+      "slug": "parul-online-mba-review",
+      "figure": 25000,
+      "university": "parul-university-online",
+      "programme": "MBA",
+      "source": "Third-party listing sites, surveyed 23 Aug 2026. NOT an official figure.",
+      "verified_date": "2026-08-23",
+      "note": "Incorrect per-semester figure published by a third-party aggregator. The portal states Rs 37,500 per semester. Cited in the blog intro to be corrected. Not a Parul fee."
+    },
+    {
+      "slug": "parul-online-mba-review",
+      "figure": 160000,
+      "university": "parul-university-online",
+      "programme": "MBA",
+      "source": "Not a quoted fee. Editorial threshold used in the decision matrix.",
+      "verified_date": "2026-08-23",
+      "note": "Appears as \"Rs 1.6 lakh\" in the apply/do-not-apply SVG, describing a reader budget ceiling against the Rs 1,50,000 fee. Not a price Parul quotes and not attached to any programme tier."
     }
   ]
 }

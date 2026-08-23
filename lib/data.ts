@@ -779,7 +779,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management'],
-        fees: '₹18K – ₹70K',
+        // 2026-08-23: was '₹18K – ₹70K', a placeholder range suppressed by fee
+        // rule 4a. Corrected to the 3-year total, confirmed by founder.
+        // Portal lists ₹18,500 per semester over 6 semesters.
+        fees: '₹1,10,000',
         duration: '3 Yrs',
         roles: ['Finance Trainee', 'Accounts Executive', 'Business Development Trainee'],
         avgSalary: '₹3L – ₹8L per annum',
@@ -789,7 +792,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ['General (AI', 'Machine Learning', 'Deep Learning', 'Mobile App Dev', 'Data Mining)'],
-        fees: '₹0.1L – ₹0.9L',
+        // 2026-08-23: was '₹0.1L – ₹0.9L', a placeholder spanning 9x and
+        // suppressed by fee rule 4a. Corrected to the 3-year total, confirmed
+        // by founder. Portal lists ₹18,500 per semester over 6 semesters.
+        fees: '₹1,10,000',
         duration: '3 Yrs',
         roles: ['Web Developer', 'Java Developer', 'Python Developer', 'Software Tester', 'ML Trainee'],
         avgSalary: '₹3L – ₹12L per annum',
@@ -823,13 +829,34 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'M.Com': {
         specs: ['General (Accountancy', 'Finance', 'Elective-based)'],
-        fees: '₹15K – ₹60K',
+        // 2026-08-23: was '₹15K – ₹60K', a placeholder suppressed by fee rule
+        // 4a. Corrected to ₹40,000, confirmed by founder. Note the portal
+        // lists ₹15,000 per semester, which would compute to ₹60,000 over 4
+        // semesters; the founder figure is used. Worth re-checking.
+        fees: '₹40,000',
         duration: '2 Yrs',
         roles: ['Accounts Executive', 'Tax Analyst', 'Audit Trainee', 'Finance Analyst'],
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['Reliance Digital', 'TCS (Tata Consultancy Services)', 'Amazon', 'L&T (Larsen & Toubro)', 'Capgemini', 'UltraTech Cement', 'Deloitte', 'Apple', 'Tesla', 'Google'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved M.Com from Parul University – Online (paruluni — recognised for corporate hiring.',
+      },
+      // 2026-08-23: MA was listed in `programs` but had no programDetails
+      // block, so resolveProgramme() returned not-found, the middleware
+      // allowlist excluded it, and /universities/parul-university-online/ma
+      // returned a hard 404 while the university overview page linked to it.
+      // Specialisations are the two MA programmes Parul actually runs online
+      // per the Supabase programmes table. Fee confirmed by founder and
+      // consistent with the portal's ₹15,000 per semester over 4 semesters.
+      'MA': {
+        specs: ['English Language Teaching', 'Journalism & Mass Communication'],
+        fees: '₹60,000',
+        duration: '2 Yrs',
+        roles: ['Content Writer', 'Copy Editor', 'Language Trainer', 'Communications Executive'],
+        avgSalary: '₹3L – ₹8L per annum',
+        topCompanies: ['Reliance Digital', 'TCS (Tata Consultancy Services)', 'Amazon', 'L&T (Larsen & Toubro)', 'Capgemini', 'UltraTech Cement', 'Deloitte', 'Apple', 'Tesla', 'Google'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MA from Parul University Online, recognised for corporate hiring.',
       }
     },
     color: '#1B4FBE',

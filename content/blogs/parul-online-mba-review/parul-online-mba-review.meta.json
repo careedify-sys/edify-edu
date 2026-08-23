@@ -17,7 +17,7 @@
   "readTime": 9,
   "targetKeyword": "Parul University online MBA review",
   "relatedUniversities": ["parul-university-online"],
-  "status": "draft",
+  "status": "published",
   "author": "Rishi Kumar",
   "ctaTitle": "Compare Parul Against Other Online MBA Programmes",
   "ctaDesc": "See how Parul's Rs 1,50,000 fee and 20 specialisations stack up against other UGC-DEB approved online MBAs. Public UGC, NAAC and NIRF data only, no paid rankings.",
@@ -66,6 +66,6 @@
     "nirf_management_rank": null,
     "aicte_listed": false,
     "ugc_deb_status": "approved",
-    "status_note": "Set to draft. Flip to published only after a human has re-checked the Rs 1,50,000 figure on the live portal, since fee pages change per intake cycle."
+    "status_note": "Published 2026-08-23 after the founder confirmed the fee figures. Post object lives in lib/blog.ts; this file is the provenance record. Re-verify the Rs 1,50,000 figure at the start of each intake cycle."
   }
 }

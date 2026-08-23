@@ -41,6 +41,293 @@ export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'parul-online-mba-review',
+    title: 'Parul University Online MBA Review 2026: The Real Fee, the NIRF Category Trap, and Who Should Skip It',
+    seoTitle: 'Parul Online MBA Review 2026: The Real Fee and NIRF Truth',
+    metaDescription: 'Parul University online MBA fees are Rs 1,50,000 on the official portal, not the Rs 99,000 quoted elsewhere. NAAC A++, 20 specialisations, honest review.',
+    category: 'Online MBA Programs',
+    tags: ['parul university online mba', 'parul university online mba fees', 'parul online mba review', 'parul university mba pharmaceutical management', 'parul university naac grade', 'online mba forensic accounting india', 'Parul University Online MBA Fees 2026'],
+    publishedAt: '2026-08-23',
+    readTime: 9,
+    targetKeyword: 'Parul University online MBA review',
+    relatedUniversities: ['parul-university-online'],
+    status: 'published',
+    author: 'Rishi Kumar',
+    ctaTitle: 'Compare Parul Against Other Online MBA Programmes',
+    ctaDesc: 'See how Parul\'s Rs 1,50,000 fee and 20 specialisations stack up against other UGC-DEB approved online MBAs. Public UGC, NAAC and NIRF data only, no paid rankings.',
+    faqs: [
+      { q: 'What is the total fee for the Parul University Online MBA?', a: 'The official Parul online portal states a total programme fee of Rs 1,50,000 for the two-year online MBA, which works out to Rs 37,500 per semester across four semesters. Several third-party sites quote lower totals such as Rs 99,000, Rs 90,000 or Rs 80,000. None of those figures appear on the official portal. Verify the current fee at paruluniversity.online and get it in writing before you pay.' },
+      { q: 'Is the Parul University online MBA UGC approved?', a: 'Yes. Parul University is UGC-DEB approved for online delivery, and is a UGC Category 1 university with graded autonomy. You can confirm the current approval status yourself on the UGC-DEB portal at deb.ugc.ac.in before enrolling.' },
+      { q: 'What is Parul University\'s NIRF rank for MBA?', a: 'Parul has no NIRF Management rank. Its verified NIRF entry is a rank of 41 in the Pharmacy category out of 100 ranked institutions, and the university separately promotes a Top 50 placement for Innovation Achievements in the NIRF 2023 rankings. Neither is a business school ranking. If a page tells you Parul is NIRF ranked without naming the category, treat it as marketing.' },
+      { q: 'What is Parul University\'s NAAC grade?', a: 'Parul holds NAAC A++ with a CGPA of 3.55, awarded in its first assessment cycle and valid until 20 February 2030. That is a genuinely strong grade, and Parul was the youngest university to achieve A++ in a first cycle.' },
+      { q: 'Is the Parul online MBA AICTE approved?', a: 'AICTE approval is not mentioned on the official Parul online MBA page, and our records list no AICTE listing against any of Parul\'s ten online programmes. Some third-party pages claim AICTE approval. If AICTE matters for your employer or for a government recruitment rule, ask Parul to confirm it in writing before you enrol rather than relying on a listing site.' },
+      { q: 'How many specialisations does the Parul online MBA offer?', a: 'The official portal lists 20 specialisations. Two are unusual for an Indian online MBA: Pharmaceutical Management, which is backed by a pharmacy faculty ranked 41 nationally by NIRF, and Forensic Accounting and Corporate Fraud Investigation, which very few online programmes offer at all.' },
+      { q: 'What is the eligibility for the Parul online MBA?', a: 'The official page states you need a bachelor\'s degree from a recognised university with a minimum of 50 percent marks for the General category, or 45 percent for reserved categories. The portal also states there is no age restriction on the programme.' },
+      { q: 'Does Parul guarantee placement for online MBA students?', a: 'No. The portal advertises 700 plus hiring partners and 100 percent placement assistance. Placement assistance is support with the job search, not a job guarantee. Parul publishes no median salary, no placement percentage and no recruiter list specific to the online MBA cohort. Ask for online-cohort figures specifically, since campus placement data does not transfer to online students.' },
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 23 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Fee and specialisation data verified against the official Parul University online portal on 23 August 2026. Accreditation data cross-checked against our internal NAAC and NIRF records. EdifyEdu accepts no referral commission from any university.</em></p>
+
+<p>Search for Parul University online MBA fees and you will get five different numbers. One site says Rs 99,000. Another says Rs 80,000 as a one-time offer. A third quotes Rs 25,000 per semester.</p>
+
+<p>The official Parul portal states something else entirely, and the gap is wide enough to change whether you can actually afford this programme. This review uses the portal figure throughout, and shows you what else the popular pages get wrong about the ranking and the approvals.</p>
+
+<div class="callout-key">
+  <strong>Parul University Online MBA at a glance</strong>
+  <ul>
+    <li><strong>Total fee:</strong> Rs 1,50,000 for the full programme (official portal, August 2026)</li>
+    <li><strong>Duration:</strong> 2 years, 4 semesters</li>
+    <li><strong>NAAC:</strong> A++ , CGPA 3.55, Cycle 1, valid to 20 February 2030</li>
+    <li><strong>UGC-DEB:</strong> Approved. Also a UGC Category 1 university with graded autonomy</li>
+    <li><strong>NIRF:</strong> Pharmacy rank 41. No Management rank and no Overall university rank</li>
+    <li><strong>Specialisations:</strong> 20 listed on the official portal</li>
+  </ul>
+</div>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Parul University Online MBA snapshot: total fee Rs 1,50,000 across 2 years and 4 semesters, NAAC A plus plus with CGPA 3.55, UGC-DEB approved, 20 specialisations available" style="width:100%;height:auto">
+  <rect width="720" height="320" rx="14" fill="#0f172a"/>
+  <rect x="0" y="0" width="720" height="5" rx="2" fill="#f97316"/>
+  <text x="32" y="52" fill="#f1f5f9" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700">Parul University Online MBA</text>
+  <text x="32" y="76" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="13">Waghodia, Gujarat  ·  Private University  ·  Verified 23 Aug 2026</text>
+
+  <rect x="32" y="102" width="200" height="86" rx="10" fill="#1e293b"/>
+  <text x="48" y="128" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1.2">TOTAL PROGRAMME FEE</text>
+  <text x="48" y="162" fill="#f97316" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700">Rs 1,50,000</text>
+  <text x="48" y="180" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="11">Rs 37,500 per semester</text>
+
+  <rect x="252" y="102" width="200" height="86" rx="10" fill="#1e293b"/>
+  <text x="268" y="128" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1.2">ACCREDITATION</text>
+  <text x="268" y="162" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700">NAAC A++</text>
+  <text x="268" y="180" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="11">CGPA 3.55, Cycle 1, to Feb 2030</text>
+
+  <rect x="472" y="102" width="216" height="86" rx="10" fill="#1e293b"/>
+  <text x="488" y="128" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1.2">DURATION</text>
+  <text x="488" y="162" fill="#f1f5f9" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700">2 years</text>
+  <text x="488" y="180" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="11">4 semesters, 20 specialisations</text>
+
+  <rect x="32" y="208" width="656" height="80" rx="10" fill="#B8892A" fill-opacity="0.12" stroke="#B8892A" stroke-opacity="0.35"/>
+  <text x="52" y="236" fill="#B8892A" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="1">READ THE RANKING CAREFULLY</text>
+  <text x="52" y="258" fill="#e2e8f0" font-family="Arial,Helvetica,sans-serif" font-size="13">Parul holds a NIRF Pharmacy rank of 41. It holds no NIRF Management rank</text>
+  <text x="52" y="276" fill="#e2e8f0" font-family="Arial,Helvetica,sans-serif" font-size="13">and no Overall university rank. Category matters when you compare MBAs.</text>
+</svg>
+<p class="svg-caption">Sources: official Parul online portal for fees and duration, internal NAAC and NIRF records for accreditation. Verified 23 August 2026.</p>
+</div>
+
+<h2>Fee Structure 2026, and Why Other Sites Show a Lower Number</h2>
+
+<p>The official Parul University online MBA page states a total programme fee of <strong>Rs 1,50,000</strong> with EMI options available. The main online portal lists the MBA at <strong>Rs 37,500 per semester</strong>. Four semesters at Rs 37,500 gives you Rs 1,50,000, so the two official figures agree.</p>
+
+<p>That is not what most pages ranking for this query will tell you. During research for this review I found four separate totals in circulation, none of which match the portal.</p>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bar chart comparing the official Parul online MBA fee of Rs 1,50,000 against four lower figures circulating on third-party sites: Rs 1,00,000, Rs 99,000, Rs 90,000 and Rs 80,000" style="width:100%;height:auto">
+  <rect width="720" height="280" rx="12" fill="#f1f5f9"/>
+  <text x="28" y="34" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">What the internet says vs what the portal says</text>
+  <text x="28" y="54" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="12">Total programme fee, Parul University Online MBA</text>
+
+  <rect x="150" y="76" width="440" height="30" rx="5" fill="#f97316"/>
+  <text x="28" y="96" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">Official portal</text>
+  <text x="602" y="96" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">Rs 1,50,000</text>
+
+  <rect x="150" y="118" width="293" height="26" rx="5" fill="#94a3b8"/>
+  <text x="28" y="136" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="12">Third-party A</text>
+  <text x="455" y="136" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="12">Rs 1,00,000</text>
+
+  <rect x="150" y="156" width="290" height="26" rx="5" fill="#94a3b8"/>
+  <text x="28" y="174" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="12">Third-party B</text>
+  <text x="452" y="174" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="12">Rs 99,000</text>
+
+  <rect x="150" y="194" width="264" height="26" rx="5" fill="#94a3b8"/>
+  <text x="28" y="212" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="12">Third-party C</text>
+  <text x="426" y="212" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="12">Rs 90,000</text>
+
+  <rect x="150" y="232" width="235" height="26" rx="5" fill="#94a3b8"/>
+  <text x="28" y="250" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="12">Third-party D</text>
+  <text x="397" y="250" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="12">Rs 80,000</text>
+</svg>
+<p class="svg-caption">The orange bar is the only figure printed on paruluniversity.online. The grey bars are totals published by third-party listing sites in August 2026. We do not link to them.</p>
+</div>
+
+<table>
+  <thead>
+    <tr><th>Component</th><th>Official portal figure</th><th>What to check</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Total programme fee</td><td>Rs 1,50,000</td><td>Confirm in writing before paying</td></tr>
+    <tr><td>Per semester</td><td>Rs 37,500</td><td>Four semesters over two years</td></tr>
+    <tr><td>Per year</td><td>Not stated on the portal</td><td>Ask if you want annual billing</td></tr>
+    <tr><td>Application fee</td><td>Not stated on the portal</td><td>Ask before you submit</td></tr>
+    <tr><td>Lump sum discount</td><td>Not stated on the portal</td><td>Third-party offers are not official</td></tr>
+    <tr><td>Scholarships</td><td>Not stated on the portal</td><td>Ask the admissions team directly</td></tr>
+  </tbody>
+</table>
+
+<div class="emi-block">
+  <strong>On the EMI question.</strong> The official page says EMI options are available but prints no monthly figure, no tenure and no lender name. Treat any specific EMI number you see elsewhere as unverified. Ask the admissions team for the tenure, the interest rate and the lender in writing before you commit.
+</div>
+
+<div class="callout-warning">
+  <strong>All fees here are indicative.</strong> They reflect what the official Parul University online portal displayed on 23 August 2026. Fee structures change by intake cycle. Verify the current figure at <a href="https://paruluniversity.online/postgraduate/online-mba-program/" target="_blank" rel="noopener">paruluniversity.online</a> and get it in writing before you pay anything.
+</div>
+
+<h2>The NIRF Category Trap, and How to Read Parul's Ranking Claims</h2>
+
+<p>This is the part most Parul pages get wrong, and it matters more than the fee.</p>
+
+<p>Parul holds a NIRF rank of <strong>41 in the Pharmacy category</strong>, out of 100 ranked institutions. The official portal separately promotes a place in the <strong>Top 50 for Innovation Achievements</strong> in the NIRF 2023 rankings. Both are real. Neither is a Management ranking.</p>
+
+<p>Parul has <strong>no NIRF Management rank and no NIRF Overall university rank</strong>. If you are choosing an online MBA, the Management category is the one that describes business school quality. A Pharmacy rank tells you about the pharmacy faculty. An Innovation placement tells you about patents and incubation activity.</p>
+
+<p class="pull">A ranking without its category attached is marketing, not information.</p>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chart of Parul University ranking claims by category. Verified: NAAC A plus plus at CGPA 3.55, NIRF Pharmacy rank 41, UGC-DEB approved, UGC Category 1 with graded autonomy. Not held: NIRF Management rank and NIRF Overall university rank. Also unverified: AICTE listing." style="width:100%;height:auto">
+  <rect width="720" height="240" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="26" y="32" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Which credentials Parul actually holds</text>
+  <text x="26" y="52" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="12">Category matters. Verified against NAAC, NIRF and UGC-DEB records, August 2026.</text>
+
+  <circle cx="36" cy="80" r="5" fill="#10b981"/>
+  <text x="52" y="85" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700">NAAC A++</text>
+  <text x="190" y="85" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="13">CGPA 3.55, Cycle 1, valid to Feb 2030</text>
+
+  <circle cx="36" cy="110" r="5" fill="#10b981"/>
+  <text x="52" y="115" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700">UGC-DEB</text>
+  <text x="190" y="115" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="13">Approved for online delivery</text>
+
+  <circle cx="36" cy="140" r="5" fill="#10b981"/>
+  <text x="52" y="145" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700">NIRF Pharmacy</text>
+  <text x="190" y="145" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="13">Rank 41 of 100. Real, but not a business rank.</text>
+
+  <circle cx="36" cy="176" r="5" fill="#ef4444"/>
+  <text x="52" y="181" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700">NIRF Management</text>
+  <text x="190" y="181" fill="#ef4444" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700">Not ranked. This is the one an MBA is judged on.</text>
+
+  <circle cx="36" cy="206" r="5" fill="#ef4444"/>
+  <text x="52" y="211" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700">AICTE listing</text>
+  <text x="190" y="211" fill="#ef4444" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700">Not stated officially. Get it in writing if you need it.</text>
+</svg>
+<p class="svg-caption">Green means independently verified. Red means the credential is absent from official sources, whatever third-party pages claim.</p>
+</div>
+
+<p>You will see plenty of pages write "NIRF ranked university" next to an MBA fee table. That phrasing is technically true and practically useless. When you compare Parul against another online MBA, compare Management rank to Management rank, and accept that Parul does not have one to offer. Our <a href="/blog/naac-accreditation-explained-grades-india-2026">guide to NAAC grades and what they actually measure</a> covers the same trap on the accreditation side.</p>
+
+<h2>Where Parul Genuinely Has an Edge: Pharmaceutical Management</h2>
+
+<p>Here is the flip side of that Pharmacy rank, and it is the most interesting thing about this programme.</p>
+
+<p>Most online MBAs offer a healthcare or pharma specialisation as a label with generic content behind it. Parul is different in one specific way. The NIRF Pharmacy rank of 41 means the university has a pharmacy faculty that has been independently assessed and placed in the national top 50 for its discipline.</p>
+
+<p>That gives the <a href="/universities/parul-university-online/mba/pharmaceutical-management">MBA in Pharmaceutical Management</a> something most competitors cannot claim, which is a subject department with measured standing behind the specialisation. If you already work in pharma sales, regulatory affairs, clinical operations or medical devices, this is the strongest reason on the page to look at Parul rather than a generic option.</p>
+
+<p>I want to be careful here. A strong pharmacy faculty does not automatically mean a strong pharma MBA curriculum, and the university publishes no separate placement data for that specialisation. What it does mean is that the subject expertise exists inside the institution. Ask the admissions team which faculty teach the specialisation papers, and whether any of them sit in the ranked pharmacy department.</p>
+
+<h2>The 20 Specialisations, and the One That Is Genuinely Rare</h2>
+
+<p>The official portal lists 20 specialisations. Most are standard: Marketing, Finance, Human Resource Management, Information Technology, Operations Management, Business Analytics, Banking and Financial Services, Digital Marketing and Sales, Healthcare Management, International Trade and Business, Logistics and Supply Chain Management, Project Management, Retail Management, Entrepreneurship and Innovation Management, Agri-Business Management, Family Managed Business, Public Policy, Tourism and Event Management.</p>
+
+<p>Two are worth calling out. <strong>Pharmaceutical Management</strong> for the reason above. And <strong>Forensic Accounting and Corporate Fraud Investigation</strong>, which is close to unheard of in Indian online MBA catalogues.</p>
+
+<p>Forensic accounting sits at the intersection of audit, law and investigation. Demand comes from Big Four forensic practices, internal audit teams at banks and NBFCs, and the compliance functions of listed companies. If that path interests you, the shortage of comparable online options is itself the argument. Check the syllabus papers before you commit, because the specialisation is only worth the premium if the papers go past standard audit content.</p>
+
+<h2>Eligibility and Approval Status</h2>
+
+<p>The official page states the requirement plainly. You need a bachelor's degree from a recognised university with a minimum of 50% marks for the General category, or 45% for reserved categories. The portal also states there is no age restriction, and lists a January intake with admissions open.</p>
+
+<p>On approvals, Parul is UGC-DEB approved for online delivery, holds NAAC A++ at CGPA 3.55 from its first assessment cycle valid to February 2030, and is a UGC Category 1 university with graded autonomy. Those are solid credentials, and you can confirm them yourself on our <a href="/verify/parul-university-online">Parul verification page</a>.</p>
+
+<div class="callout-warning">
+  <strong>On the AICTE claim.</strong> Several third-party pages state that this programme is "approved by UGC-DEB and AICTE". AICTE approval is <strong>not mentioned anywhere on the official Parul online MBA page</strong>, and our internal records list no AICTE listing against any of Parul's ten online programmes. If AICTE approval matters to your employer or to a government recruitment rule, ask Parul for it in writing before you enrol. Do not rely on a third-party page for that claim. Check the UGC-DEB position yourself at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>.
+</div>
+
+<div class="cta-box">
+  <strong>Not sure Parul is the right fit?</strong>
+  <p>Edify compares public UGC, NAAC and NIRF data across 128 universities. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/compare">Compare online MBA programmes</a>
+  <a class="ilink" href="/tools/emi-calculator">Work out the EMI on Rs 1,50,000</a>
+</div>
+
+<h2>Where It Falls Short</h2>
+
+<p><strong>No Management ranking to stand on.</strong> Covered above, and it is the single biggest gap. Against an online MBA from a university with a NIRF Management rank, Parul has to win on fee, specialisation choice or flexibility instead. It cannot win on business school standing, because that number does not exist.</p>
+
+<p><strong>The portal publishes very little fee detail.</strong> No application fee, no annual option, no scholarship categories, no EMI terms. For a programme costing Rs 1,50,000 that is thin. It also explains why so many wrong numbers circulate, since the vacuum gets filled by whoever guesses loudest.</p>
+
+<p><strong>Placement claims are unverifiable.</strong> The portal advertises "700+ hiring partners" and "100% Placement Assistance". Placement assistance is not placement, and the wording is doing a lot of work there.</p>
+
+<p>No median salary, no placement percentage for online students and no recruiter list specific to the online MBA appears anywhere official. Ask for online-cohort numbers specifically, because campus figures do not transfer.</p>
+
+<h2>Who Should Apply and Who Should Not</h2>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Decision matrix. Apply if you work in pharma or healthcare, want forensic accounting, need a NAAC A plus plus degree under Rs 1.6 lakh, or need flexible online study with no age limit. Do not apply if your employer screens on NIRF Management rank, you need AICTE approval in writing, you are relying on guaranteed placement, or you were quoting the Rs 99,000 figure as your budget." style="width:100%;height:auto">
+  <rect width="720" height="360" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+
+  <rect x="16" y="16" width="336" height="328" rx="10" fill="#10b981" fill-opacity="0.07" stroke="#10b981" stroke-opacity="0.3"/>
+  <text x="40" y="48" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing="1">APPLY IF</text>
+  <text x="40" y="82" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You work in pharma, healthcare or</text>
+  <text x="40" y="100" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">medical devices already</text>
+  <text x="40" y="134" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">Forensic accounting is the career</text>
+  <text x="40" y="152" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">you are actually aiming at</text>
+  <text x="40" y="186" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You want a NAAC A++ degree and</text>
+  <text x="40" y="204" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">your ceiling is around Rs 1.6 lakh</text>
+  <text x="40" y="238" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You need genuine flexibility and</text>
+  <text x="40" y="256" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">there is no age limit to worry about</text>
+  <text x="40" y="290" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You value breadth: 20 specs is</text>
+  <text x="40" y="308" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">wider than most online MBAs</text>
+
+  <rect x="368" y="16" width="336" height="328" rx="10" fill="#ef4444" fill-opacity="0.07" stroke="#ef4444" stroke-opacity="0.3"/>
+  <text x="392" y="48" fill="#ef4444" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing="1">DO NOT APPLY IF</text>
+  <text x="392" y="82" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">Your employer screens on NIRF</text>
+  <text x="392" y="100" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">Management rank. Parul has none.</text>
+  <text x="392" y="134" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You need AICTE approval and</text>
+  <text x="392" y="152" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">cannot get it confirmed in writing</text>
+  <text x="392" y="186" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You are counting on placement</text>
+  <text x="392" y="204" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">rather than placement assistance</text>
+  <text x="392" y="238" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">Your budget was built on the</text>
+  <text x="392" y="256" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">Rs 99,000 figure you read elsewhere</text>
+  <text x="392" y="290" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You want a brand that opens doors</text>
+  <text x="392" y="308" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">on the name alone</text>
+</svg>
+<p class="svg-caption">Decision matrix based on official portal data and verified accreditation records, August 2026.</p>
+</div>
+
+<h3>Apply if the specialisation is the point</h3>
+
+<p>Parul makes most sense when you want something specific from it. Pharmaceutical Management with a ranked pharmacy department behind it. Forensic Accounting when almost nobody else offers it online.</p>
+
+<p>Agri-Business or Family Managed Business work the same way when they match the business you are already in. Buy the specialisation, not the brand.</p>
+
+<h3>Skip it if you are buying signalling</h3>
+
+<p>If the reason for the MBA is to put a recognisable name on your CV and let it do the talking, Parul is not the efficient way to spend Rs 1,50,000. You would do better comparing programmes that hold a Management rank. Our <a href="/guides/is-online-degree-valid-india">guide on whether an online degree is valid in India</a> explains which signals employers actually check.</p>
+
+<h2>Final Word</h2>
+
+<p>Parul is a legitimate, well accredited university offering a wide online MBA catalogue at a mid-market price. NAAC A++ at CGPA 3.55 is a genuinely strong grade, UGC-DEB approval is current, and Category 1 status with graded autonomy is not handed out casually. The degree will be valid, and for the right candidate the Pharmaceutical Management and Forensic Accounting options are the most interesting things in this price band.</p>
+
+<p>My reservation is about the information quality around the programme rather than the programme itself. A university charging Rs 1,50,000 should publish its application fee, its EMI terms, its scholarship rules and its online placement data. Until it does, go in with written confirmation of every number, and ignore any page quoting a fee that the portal does not print. Start with the <a href="/universities/parul-university-online/mba">full Parul online MBA breakdown</a>, and if computing is more your direction, the <a href="/universities/parul-university-online/mca">Parul online MCA page</a> covers that side.</p>
+
+<div class="cta-box">
+  <strong>Get the current Parul fee sheet in writing</strong>
+  <p>We will pull the live figures and walk you through what to confirm before you pay. Edify compares public UGC, NAAC and NIRF data only. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/contact">Request a free counselling call</a>
+</div>
+
+<h2>Sources to Consult</h2>
+
+<ul>
+  <li><a href="https://paruluniversity.online/postgraduate/online-mba-program/" target="_blank" rel="noopener">Parul University Online MBA official programme page</a> for fees, eligibility, duration and the specialisation list</li>
+  <li><a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">UGC-DEB approved institutions list</a> to confirm current online delivery approval</li>
+  <li><a href="https://naac.gov.in" target="_blank" rel="noopener">NAAC accreditation database</a> to confirm the A++ grade, CGPA and validity window</li>
+  <li><a href="https://nirfindia.org" target="_blank" rel="noopener">NIRF India Rankings</a> to check which categories Parul appears in, and which it does not</li>
+</ul>
+
+<div class="disclaimer">
+  All fees, specialisations and eligibility criteria in this review reflect what the official Parul University online portal displayed on 23 August 2026. Accreditation data was cross-checked against our internal NAAC and NIRF records on the same date. Fee structures and approval status change between intake cycles, so confirm every figure directly with the university before making a payment. EdifyEdu accepts no referral commission from Parul University or from any other institution mentioned, and no university pays for placement or ranking on this site. Read our <a href="/blog/ugc-deb-approved-universities-list-2026">UGC-DEB approved universities list</a> for the wider approval picture.
+</div>
+`,
+  },
+  {
     slug: 'amity-online-mba-hr-worth-it',
     title: 'Is Amity Online MBA HR Worth It? Honest Verdict 2026',
     h1Title: 'Is Amity Online MBA in HR Actually Worth It?',

@@ -307,6 +307,17 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       ],
     },
   },
+  'parul-university-online': {
+    mba: {
+      universityName: 'Parul University Online',
+      shortName: 'Parul',
+      programPage: '/universities/parul-university-online/mba',
+      verifyPage: '/verify/parul-university-online',
+      blogs: [
+        { slug: 'parul-online-mba-review', label: 'Parul University Online MBA Review 2026: Real Fee and the NIRF Category Trap' },
+      ],
+    },
+  },
   'amrita-vishwa-vidyapeetham-online': {
     bba: {
       universityName: 'Amrita Vishwa Vidyapeetham Online',
