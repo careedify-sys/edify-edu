@@ -104,37 +104,127 @@ npx tsx scripts/normalize-valid-urls.mts
 
 Correct output is ~1,780 entries. A plain `npm run build` leaves it at ~3,189. Never hand-edit the file.
 
+**This four-step chain is for committing, not for production.** It exists to satisfy the pre-commit gates. Vercel runs `prebuild` only, so the deployed sitemap is the ~3,189-entry version, and per 5a below that is the **correct** production behaviour. Do not "fix" the pipeline to match the committed file.
+
 ---
 
 ## 5. Still open
 
-### 5a. Sitemap ships ~1,400 redirecting URLs (not fixed, deliberately)
+### 5a. Sitemap normalize — FALSE ALARM, verified against production, do nothing
 
-Vercel runs only `prebuild`, which skips normalize. So production's sitemap is the un-normalized ~3,189-entry version, carrying roughly 1,400 non-canonical spec URLs that 301. Shows in GSC as "Page with redirect".
+An earlier draft of this file claimed production's sitemap carried ~1,400
+non-canonical spec URLs that 301, and recommended adding
+`normalize-valid-urls.mts` to `prebuild`. **That was wrong. Do not do it.**
 
-The obvious fix is adding normalize to `prebuild`. **Do not do this blind.** `scripts/build-programme-allowlist.js:16` documents a tsx-hook loader race under Vercel's Node-24 prebuild that broke an earlier branch, and normalize is a `.mts` requiring tsx. Test on a branch with a real deploy.
+Checked against the live site on 2026-08-23:
 
-### 5b. 35 hubs are noindex while still earning traffic
+- Live `https://edifyedu.in/sitemap.xml` serves **2,756 URLs**. The normalized
+  committed file would produce **1,663**.
+- Sampled the ~1,400 URLs present live but absent from the normalized file.
+  Every one returned **HTTP 200**, `<meta name="robots" content="index, follow">`,
+  and a self-referencing canonical. They are legitimate indexable pages.
 
-35 hubs, 36,310 impressions, 88 clicks. They fail `shouldIndexProgrammeHub` (needs page-content JSON **or** a verified fee, they have neither). Mostly BCA/BBA/B.Com. Biggest: `pp-savani/bca` 4,506 impressions, `integral/bca` 3,164, `gls/bba` 3,111, `sppu/bba` 2,157.
+So `normalize-valid-urls.mts` is **over-pruning**: it drops roughly 1,000 valid
+pages because `resolveSpec` returns null for slugs that nonetheless render. The
+current production behaviour is the correct one. Adding normalize to `prebuild`
+would delete about 1,000 real pages from the sitemap.
 
-Fixing the fee data flips them to indexable. Ties into the parked 125-row placeholder-fee cluster.
+Related check while testing: a fabricated spec slug
+(`/universities/.../mba/underwater-basket-weaving`) returns 200, but with
+`noindex, nofollow` and a canonical back to the university page. That is a soft
+404, so there is no unbounded indexable URL space. GSC may report it under
+"Soft 404". Acceptable, not urgent.
 
-> An earlier figure of "87 hubs / 77,376 impressions" was computed from a stale `valid-urls.json` and is **wrong**. 35 / 36,310 is correct.
+**Consequence for the repo:** the committed `valid-urls.json` (normalized, ~1,780)
+is *more conservative* than what production generates. `prebuild` overwrites it on
+every deploy, so this only affects local dev, where `isLinkable()` returns false
+for some hubs that are live. That is fail-safe, never fail-open, so it is fine.
 
-### 5c. Blog vs hub cannibalisation (analysed, not actioned)
+### 5b. 33 hubs are noindex because their fees are placeholders (BLOCKED on research)
 
-55 hub/programme combos have a competing review blog. The blog wins position, the hub gets buried, sometimes badly: `chandigarh/mba` 40.05, `jamia-hamdard/mba` 36.95, `shoolini/mba` 27.40.
+35 hubs, 36,310 impressions, 88 clicks are noindex in production. Root cause is
+now precisely identified, and it is not a code defect. `getDisplayFee()` is
+correctly rejecting placeholder fee ranges:
 
-**The hub is the better page** and should be the one to win: `UniProgramBody` renders ~24 sections (FeeBreakdown, EMIPlans, Placements, TopHirers, ComparisonTable, RedFlags, SampleCertificate, CouponCard, StickyLeadCard, Course/Offer schema) against roughly 1,300 words and 7 H2s in a typical review blog.
+| Hub | pd.fees | Rule | Why |
+|---|---|---|---|
+| `pp-savani/bca` | `₹0.2L – ₹1.5L` | 4a | spans 7.5x |
+| `integral/bca` | `₹0.1L – ₹0.6L` | 4a | spans 6.0x |
+| `gls/bba`, `sppu/bba` | `₹60K – ₹200K` | 4a | spans 3.3x |
+| `lpu/bca` | `₹0.2L – ₹1.2L` | 4a | spans 6.0x |
+| `ignou/bca` | `₹21,600` | 4b | diverges from `programFees.bca` 49,800 by >25% |
 
-Recommended approach, in risk order:
-1. **Do not redirect anything.** An earlier draft of this plan suggested 301-ing hubs into blogs. That was wrong and would discard the better page.
-2. Differentiate intent: hub owns `{uni} mba fees`, blog owns `{uni} mba review` / `is it worth it`.
-3. Repoint the **33 fee-intent anchors that currently point at review blogs** (found in `lib/blog.ts`, e.g. `"Galgotias online MBA fees" -> /blog/galgotias-online-mba-review`) to the hub instead.
-4. Leave pairs that already sit close alone (`vignan/mba` hub 7.24 vs blog 6.74, `jamia-hamdard/ma` hub 6.67 vs blog 7.45). They are not being harmed.
+Rule 4a suppresses any range wider than `SUSPICIOUS_RANGE_RATIO`. These are
+placeholders, not real fees, so the gate is doing its job. 33 of the 35 have
+neither a page-content JSON nor a usable fee.
 
-Also noted while scanning: two anchors render duplicated tokens, `"MUJMUJ MBA Review 2026..."` and `"SMUSMU MBA Review..."`. Separate cosmetic bug in the link builder.
+**This cannot be fixed from inside the codebase.** It needs real fees from
+official university portals. Per `CLAUDE.md`, never invent a fee.
+
+Worklist with current values, gate rule, and blank columns for verified figures:
+`audits/noindex-hub-fee-worklist-2026-08-23.csv` (35 rows, ranked by impressions).
+
+This is the same blocker as the parked 125-row placeholder-fee cluster.
+
+> An earlier figure of "87 hubs / 77,376 impressions" came from a stale
+> `valid-urls.json` and is **wrong**. 35 / 36,310 is correct.
+
+### 5c. Blog vs hub cannibalisation (PARTLY DONE 2026-08-23, commit `34bbbfa`)
+
+**Done:** 22 of 40 review blogs had no entry in `UNIVERSITY_PROGRAM_LINKS`, so
+`getUniversityFromBlog()` returned null, `BlogRelatedLinks` never rendered, and
+those blogs passed nothing back to their hub. Only 2 of 40 (MUJ, Amity) have a
+full CTA bundle, so for the rest that map is the only blog-to-hub link there is.
+Nine were added after validating each target against `valid-urls.json`. Verified:
+gated hub links 3,801 to 3,810, zero broken.
+
+Five were deliberately left out: `imt-ghaziabad` and `xlri` have no university in
+`lib/data.ts`; `lpu/bba`, `nmims/bba` and `chandigarh/bba` resolve but are
+noindex (see 5b). Add those once their fee data lands.
+
+**Not done, and mostly should not be:** repointing existing fee anchors. Of 73
+fee-matching anchors, 43 belong on blogs (multi-university roundups such as
+"Online BBA fees comparison across 11 universities"). Of the remaining 30, most
+say "review and fees" or are blog-card titles, where the anchor promises a
+review and repointing would break that promise. Only a handful are pure fee
+anchors worth moving, and the value is marginal now that the mapping is fixed.
+
+> An earlier note here claimed a duplicated-token anchor bug
+> (`"MUJMUJ MBA Review 2026"`). **That was wrong.** The markup is
+> `<div class="il-uni">MUJ</div><div class="il-title">MUJ MBA Review 2026</div>`,
+> a badge above a title. It renders correctly; only naive tag-stripping
+> concatenates it. No fix needed.
+
+### 5c-bis. Blog cards link to truncated university slugs (minor)
+
+Some blog cards link to `/universities/manipal-university-jaipur` and
+`/universities/amrita-vishwa-vidyapeetham`, without the `-online` suffix. These
+are in neither `valid-urls.json` nor `OLD_SLUG_REDIRECTS`, but
+`middleware.ts:427` `fuzzyResolveSlug()` catches them, so they redirect rather
+than 404. Costs a hop, not a page. Worth cleaning up eventually.
+
+Note `scripts/check-internal-hub-links.js` does **not** catch these: it only
+inspects two-segment `/universities/{uni}/{prog}` paths, not one-segment
+university URLs. Extend it if this class matters.
+
+The underlying cannibalisation picture, for reference: 55 hub/programme combos
+have a competing review blog. The blog wins position, the hub gets buried,
+sometimes badly (`chandigarh/mba` 40.05, `jamia-hamdard/mba` 36.95,
+`shoolini/mba` 27.40).
+
+**The hub is the better page** and should be the one to win. `UniProgramBody`
+renders ~24 sections (FeeBreakdown, EMIPlans, Placements, TopHirers,
+ComparisonTable, RedFlags, SampleCertificate, CouponCard, StickyLeadCard,
+Course/Offer schema) against roughly 1,300 words and 7 H2s in a typical review
+blog.
+
+Remaining approach, in risk order:
+1. **Do not redirect anything.** An earlier draft suggested 301-ing hubs into
+   blogs. That was wrong and would discard the better page.
+2. Differentiate intent: hub owns `{uni} mba fees`, blog owns
+   `{uni} mba review` / `is it worth it`.
+3. Leave pairs that already sit close alone (`vignan/mba` hub 7.24 vs blog 6.74,
+   `jamia-hamdard/ma` hub 6.67 vs blog 7.45). They are not being harmed.
 
 ### 5d. Content gap, ranked by proven CRM demand
 
@@ -169,7 +259,15 @@ Rankings wobble for two to four weeks after link-graph changes. **Judge at week 
 
 ---
 
-## 7. Files touched (commit `563926f`)
+## 7. Files touched
+
+### Commit `34bbbfa` — blog to hub mapping
+
+| File | Change |
+|---|---|
+| `lib/internal-links.ts` | +9 validated blog to hub mappings; skip reasons recorded inline |
+
+### Commit `563926f` — 404 fix and sibling mesh
 
 | File | Change |
 |---|---|
