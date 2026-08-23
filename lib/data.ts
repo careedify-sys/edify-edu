@@ -4545,7 +4545,12 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'International Business', 'Production & Operations', 'Information Technology (IT)', 'Business Analytics', 'Agribusiness', { slug: 'retail', name: 'Retail Management' }, 'Project Management', 'Event Management', 'Hospitality', { slug: 'sports', name: 'Sports Management' }, { slug: 'infrastructure', name: 'Infrastructure Management' }],
-        fees: '₹1.6L',
+        // 2026-08-23: was '₹1.6L'. The official programme page at
+        // bharatividyapeethonline.com/courses/mba/ prints ₹1,76,000 as tuition
+        // plus exam fees. Registration ₹1,000 and admission ₹1,000 are both
+        // non-refundable and charged separately, so the all-in figure is
+        // ₹1,78,000. Backlog exams are ₹400 per subject. Confirmed by founder.
+        fees: '₹1,76,000',
         duration: '2 Yrs',
         roles: ['Management Trainee', 'HR Executive', 'Marketing Executive', 'Operations Analyst'],
         avgSalary: '₹5L – ₹14L per annum',

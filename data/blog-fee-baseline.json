@@ -1,7 +1,7 @@
 {
   "updatedAt": "2026-08-23",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
-  "totalUnverified": 2365,
+  "totalUnverified": 2364,
   "perSlug": {
     "amity-online-mba-hr-worth-it": 2,
     "is-online-mba-worth-it-2026": 8,
@@ -123,7 +123,7 @@
     "online-mba-aviation-management-india-2026": 3,
     "online-mba-business-data-analytics-india-2026": 47,
     "online-mba-entrepreneurship-india-2026": 14,
-    "online-mba-event-management-india-2026": 6,
+    "online-mba-event-management-india-2026": 5,
     "online-mba-supply-chain-management-india-2026": 17,
     "upes-online-mba-review-2026": 10,
     "best-online-mba-colleges-india-2026": 48,
