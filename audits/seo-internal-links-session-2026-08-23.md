@@ -226,6 +226,38 @@ Remaining approach, in risk order:
 3. Leave pairs that already sit close alone (`vignan/mba` hub 7.24 vs blog 6.74,
    `jamia-hamdard/ma` hub 6.67 vs blog 7.45). They are not being harmed.
 
+### 5b-bis. Parul fee corrections (DONE 2026-08-23, commit `5c4cce7`)
+
+Found while researching the Parul MBA review. Two stored fees were wrong on
+live pages, both confirmed by the founder and corrected:
+
+| Programme | Was | Now | Why it was wrong |
+|---|---|---|---|
+| MCA | `₹30K` | `₹1,20,000` | `₹30,000` is the per-semester figure, not the 2-year total. Page understated cost 4x. |
+| BA | `₹60K – ₹70K` | `₹1,10,000` | Placeholder range understating the 3-year total. |
+| MBA | `₹1,50,000` | unchanged | Already matched the portal exactly. |
+
+**Neither was gated before.** Both old values parsed cleanly under fee rule 1,
+so the pages were indexable and simply displaying wrong numbers. These were
+accuracy fixes, not indexability fixes. Do not expect an index change from them.
+
+Portal lists ₹18,500 per semester for BA, which computes to ₹1,11,000 over six
+semesters against the founder's ₹1,10,000. The ₹1,000 gap is noted inline in
+`lib/data.ts` for a later check.
+
+Still placeholders at Parul, left alone pending confirmation:
+
+| Programme | Stored | Gate | Portal implies |
+|---|---|---|---|
+| BBA | `₹18K – ₹70K` | 4a, spans 3.9x | ₹1,11,000 |
+| BCA | `₹0.1L – ₹0.9L` | 4a, spans 9.0x | ₹1,11,000 |
+| M.Com | `₹15K – ₹60K` | 4a, spans 4.0x | ₹60,000 |
+| MA | none | 4b | ₹60,000 |
+
+Also unresolved: **B.Com has a live page pulling 1,177 impressions but appears
+in neither the official portal nor the Supabase programme list.** Worth checking
+whether the programme actually exists.
+
 ### 5d. Content gap, ranked by proven CRM demand
 
 Universities sending leads with **no review blog**. All 128 universities already exist in `lib/data.ts`, so this is a content gap, not a coverage gap. Only 40 have review blogs.
@@ -241,6 +273,32 @@ Universities sending leads with **no review blog**. All 128 universities already
 | Mody | 7 | 9 | 6.44 |
 
 Mody is the standout: 7 leads from 9 impressions means real demand against an empty SERP.
+
+**Progress: 1 of 7 written.**
+
+| University | Leads | Status |
+|---|---|---|
+| Parul | 13 | **Draft written** 2026-08-23, commit `3add85a`. `content/blogs/parul-online-mba-review/`. QA 20/20. Held at `status: draft` pending a human re-check of the ₹1,50,000 fee on the live portal. |
+| Bharati Vidyapeeth | 11 | Not started |
+| Bangalore University | 11 | Not started |
+| DDU Gorakhpur | 10 | Not started |
+| Amrita (MBA) | 9 | Not started |
+| SPPU | 8 | Not started |
+| Mody | 7 | Not started |
+
+**To publish Parul:** add the post object to `lib/blog.ts` with
+`status: 'published'`, and add a `parul-university-online` entry to
+`UNIVERSITY_PROGRAM_LINKS` in `lib/internal-links.ts` so `BlogRelatedLinks`
+renders and the blog feeds authority back to the hub (see 5c).
+
+**Reusable method, proven on Parul.** The strongest angle came from research,
+not invention. Competitors published four different fee totals (₹99,000,
+₹1,00,000, ₹90,000, ₹80,000) and none matched the portal's ₹1,50,000; at least
+one asserted AICTE approval that no official source supports; several cited
+"NIRF ranked" beside MBA content when Parul's only verified NIRF entry is
+Pharmacy #41 with no Management rank at all. Run the same three checks on every
+remaining university: portal fee vs circulating fees, claimed approvals vs
+Supabase, and NIRF claims vs actual category.
 
 Programme mix from CRM: MBA 125, BBA 36, MA 35, MCA 26, BCA 26, B.Com 20, BA 19, BSc 7. **BBA + BCA + MA together are 28% of leads** and have almost no review content, while their hubs already rank 8 to 10.
 
