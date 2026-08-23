@@ -8052,9 +8052,17 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'deen-dayal-upadhyay-gorakhpur-university-online',
+    // 2026-08-23: programFees gives getDisplayFee a per-programme reference.
+    // Without it, getReference() falls back to university-wide feeMin/feeMax
+    // for MBA, and DDU's catalogue spans Rs 30,500 (MA) to Rs 57,500 (BBA), so
+    // the MBA at Rs 52,500 read as 72% divergent from feeMin and tripped rule
+    // 4b. All figures founder-confirmed 2026-08-23.
+    // ma and msc are both Rs 30,500 but the programFees key union does not
+    // include them, so they rely on pd.fees alone.
+    programFees: { mba: { fee: 52500 }, bba: { fee: 57500 }, bcom: { fee: 56500 } },
     name: 'DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY Online',
     abbr: 'DDUGU',
-    city: 'Lucknow',
+    city: 'Gorakhpur',
     state: 'UTTAR PRADESH',
     region: 'North',
     nirf: 999,
@@ -8064,20 +8072,23 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 60000,
-    feeMax: 150000,
-    emiFrom: 2500,
+    feeMin: 30500,
+    feeMax: 57500,
+    emiFrom: 1271,
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Uttar Pradesh university with online programs',
     description: 'DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Lucknow and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
-    programs: ['B.Com', 'BBA', 'MA', 'M.Com', 'MBA'],
+    programs: ['B.Com', 'BBA', 'MA', 'M.Com', 'MBA', 'MSc'],
     programDetails: {
       'B.Com': {
         specs: ['Finance','Accounting','Taxation','E-Commerce','Banking & Insurance'],
-        fees: '\u20b933K \u2013 \u20b982K',
+                // 2026-08-23: the portal publishes no fees, so the previous value was
+        // a template string shared with other universities. Replaced with the
+        // founder-confirmed figure.
+        fees: '\u20b956,500',
         duration: '3 Years',
         roles: ['Accountant','Finance Executive','Tax Analyst','Banking Officer','Audit Associate'],
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
@@ -8087,7 +8098,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BBA': {
         specs: ['Finance','Marketing','Human Resource Management','Entrepreneurship','Digital Marketing','Retail Management'],
-        fees: '\u20b936K \u2013 \u20b990K',
+                // 2026-08-23: the portal publishes no fees, so the previous value was
+        // a template string shared with other universities. Replaced with the
+        // founder-confirmed figure.
+        fees: '\u20b957,500',
         duration: '3 Years',
         roles: ['Business Analyst','Sales Executive','Marketing Executive','HR Assistant','Entrepreneur'],
         avgSalary: '\u20b92.5L \u2013 \u20b98L per annum',
@@ -8097,7 +8111,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MA': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
-        fees: '\u20b939K \u2013 \u20b997K',
+                // 2026-08-23: the portal publishes no fees, so the previous value was
+        // a template string shared with other universities. Replaced with the
+        // founder-confirmed figure.
+        fees: '\u20b930,500',
         duration: '2 Years',
         roles: ['Research Analyst','Civil Services Officer (path)','Journalist','HR Executive','Educator','Policy Researcher'],
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
@@ -8117,13 +8134,30 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Operations Management', 'Data Science', 'Digital Marketing', 'International Business'],
-        fees: '\u20b960K \u2013 \u20b9150K',
+                // 2026-08-23: the portal publishes no fees, so the previous value was
+        // a template string shared with other universities. Replaced with the
+        // founder-confirmed figure.
+        fees: '\u20b952,500',
         duration: '2 Years',
         roles: ['Business Manager','Strategy Consultant','Operations Lead','Business Analyst','Product Manager'],
         avgSalary: '\u20b94L \u2013 \u20b914L per annum',
         topCompanies: ['TCS','Infosys','Wipro','HDFC Bank','Deloitte','Amazon'],
         internshipType: 'Virtual industry project',
         careerOutcome: 'MBA from DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY is UGC DEB approved and valid for corporate hiring and government roles across India.',
+      },
+      // 2026-08-23: MSc added. The official CDOE portal at ddugucdoe.com lists
+      // M.Sc Mathematics among DDU's online programmes, but it was absent from
+      // programDetails, so resolveProgramme() returned not-found and the hub
+      // did not exist. Fee confirmed by founder.
+      'MSc': {
+        specs: ['Mathematics'],
+        fees: '₹30,500',
+        duration: '2 Yrs',
+        roles: ['Data Analyst', 'Statistician', 'Research Assistant', 'Lecturer'],
+        avgSalary: '₹3L – ₹8L per annum',
+        topCompanies: ['TCS (Tata Consultancy Services)', 'Infosys', 'Wipro', 'HCL Technologies', 'Cognizant'],
+        internshipType: 'Virtual industry project',
+        careerOutcome: 'MSc from DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY is UGC DEB approved and valid for corporate hiring and government roles across India.',
       }
     },
     color: '#4f46e5',

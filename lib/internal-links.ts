@@ -307,6 +307,17 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       ],
     },
   },
+  'deen-dayal-upadhyay-gorakhpur-university-online': {
+    mba: {
+      universityName: 'DDU Gorakhpur University Online',
+      shortName: 'DDU Gorakhpur',
+      programPage: '/universities/deen-dayal-upadhyay-gorakhpur-university-online/mba',
+      verifyPage: '/verify/deen-dayal-upadhyay-gorakhpur-university-online',
+      blogs: [
+        { slug: 'ddu-gorakhpur-online-mba-review', label: 'DDU Gorakhpur Online MBA Review 2026: Rs 52,500 From a NAAC A++ University' },
+      ],
+    },
+  },
   'bharati-vidyapeeth-university-online': {
     mba: {
       universityName: 'Bharati Vidyapeeth Online',

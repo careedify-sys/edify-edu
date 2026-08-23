@@ -41,6 +41,278 @@ export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'ddu-gorakhpur-online-mba-review',
+    title: 'DDU Gorakhpur Online MBA Review 2026: Rs 52,500 From a NAAC A++ University, and What That Price Does Not Buy',
+    seoTitle: 'DDU Gorakhpur Online MBA Review 2026: Rs 52,500 Verdict',
+    metaDescription: 'DDU Gorakhpur online MBA costs Rs 52,500 for the full two years, from a NAAC A++ state university. An honest review of what that low price does not buy.',
+    category: 'Online MBA Programs',
+    tags: ['ddu gorakhpur online mba', 'ddu gorakhpur online mba fees', 'deen dayal upadhyay gorakhpur university online', 'cheapest online mba naac a++', 'state university online mba india', 'ddu gorakhpur online ma fees', 'DDU Gorakhpur Online MBA Fees 2026'],
+    publishedAt: '2026-08-23',
+    readTime: 7,
+    targetKeyword: 'DDU Gorakhpur online MBA review',
+    relatedUniversities: ['deen-dayal-upadhyay-gorakhpur-university-online'],
+    status: 'published',
+    author: 'Rishi Kumar',
+    ctaTitle: 'Compare DDU Gorakhpur Against Other Online MBA Programmes',
+    ctaDesc: 'See how a Rs 52,500 state university MBA compares against private online MBAs at three times the price. Public UGC and NAAC data only, no paid rankings.',
+    faqs: [
+      { q: 'What is the total fee for the DDU Gorakhpur online MBA?', a: 'Rs 52,500 for the full two-year programme, confirmed directly with the university on 23 August 2026. DDU publishes no fee table on its online portal, so this figure came from the university rather than a published page. Fees at state universities change with government notification, so confirm the current number in writing before you pay.' },
+      { q: 'Is the DDU Gorakhpur online MBA valid?', a: 'Yes. Deen Dayal Upadhyay Gorakhpur University is UGC-DEB approved for online delivery and its portal describes it as a UGC-entitled institution. It holds NAAC A++ at CGPA 3.78. The degree is valid nationally for employment and for further study. You can confirm the current approval status yourself at deb.ugc.ac.in.' },
+      { q: 'Why is the DDU online MBA so much cheaper than private options?', a: 'Because it is a state university. State universities price online degrees on a different basis from private institutions. The trade is in services rather than standing: no AICTE listing, no published placement support, and much less published information. The accreditation itself is strong, with a NAAC CGPA of 3.78 that is higher than several private universities charging three times as much.' },
+      { q: 'Is the DDU online MBA AICTE approved?', a: 'No. None of DDU\'s online programmes carry an AICTE listing in our records. For most private-sector hiring this changes nothing, since UGC-DEB approval establishes the degree\'s validity. If your employer or a specific government recruitment rule asks for AICTE, look at a programme that carries it and confirm in writing before enrolling.' },
+      { q: 'What other online programmes does DDU Gorakhpur offer?', a: 'The official portal lists B.Com Honours, BBA, MBA, M.Com, M.Sc Mathematics, and MA in Political Science, English, Education, Economics and Sociology. Confirmed fees are MBA Rs 52,500, BBA Rs 57,500, B.Com Honours Rs 56,500, MA Rs 30,500 and M.Sc Rs 30,500. The M.Com fee was not confirmed at the time of writing.' },
+      { q: 'Is the DDU online MBA the same as the campus MBA?', a: 'No, and this catches a lot of people out. DDU runs regular on-campus degrees admitted through the DDU entrance exam, with a separate fee structure, alongside online degrees through its Centre for Distance and Online Education. Most search results quoting DDU MBA fees describe the campus programme. If you are looking at the online degree, the campus fee is not comparable.' },
+      { q: 'What is DDU Gorakhpur\'s NAAC grade?', a: 'NAAC A++ at CGPA 3.78, awarded in the university\'s second assessment cycle and valid until 17 January 2030. That CGPA is higher than Bharati Vidyapeeth at 3.60 and Parul at 3.55, both of which charge substantially more for an online MBA.' },
+      { q: 'Does DDU Gorakhpur offer placement support for online students?', a: 'The portal makes no placement claim. That is more honest than an unbacked guarantee, but it means you should plan to run your own job search. At Rs 52,500 that is a reasonable trade. If placement support is essential to your decision, budget for a programme that publishes what it actually provides.' },
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 23 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Programme list verified against the official DDU Centre for Distance and Online Education portal on 23 August 2026, and fees confirmed directly with the university because the portal publishes none. Accreditation cross-checked against our internal NAAC records. EdifyEdu accepts no referral commission from any university.</em></p>
+
+<p>An online MBA from a NAAC A++ university for Rs 52,500 sounds like a typo. It is not.</p>
+
+<p>Deen Dayal Upadhyay Gorakhpur University is a state university in Uttar Pradesh, and state universities price online degrees on a completely different logic from private ones. The catch is not the fee. It is what the fee does not buy, and the fact that DDU publishes no fee list at all.</p>
+
+<div class="callout-key">
+  <strong>DDU Gorakhpur Online MBA at a glance</strong>
+  <ul>
+    <li><strong>MBA fee:</strong> Rs 52,500 for the full two-year programme</li>
+    <li><strong>NAAC:</strong> A++ , CGPA 3.78, Cycle 2, valid to 17 January 2030</li>
+    <li><strong>Type:</strong> State university, Gorakhpur, Uttar Pradesh, founded 1950</li>
+    <li><strong>UGC-DEB:</strong> Approved. The portal describes DDU as a UGC-entitled institution</li>
+    <li><strong>AICTE:</strong> Not listed against any online programme</li>
+    <li><strong>Other online fees:</strong> BBA Rs 57,500, B.Com Hons Rs 56,500, MA Rs 30,500, M.Sc Rs 30,500</li>
+  </ul>
+</div>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DDU Gorakhpur Online MBA snapshot: total fee Rs 52,500 for two years, NAAC A plus plus at CGPA 3.78 cycle 2 valid to January 2030, state university in Uttar Pradesh founded 1950, UGC-DEB approved but not AICTE listed" style="width:100%;height:auto">
+  <rect width="720" height="300" rx="14" fill="#0f172a"/>
+  <rect x="0" y="0" width="720" height="5" rx="2" fill="#f97316"/>
+  <text x="32" y="52" fill="#f1f5f9" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700">DDU Gorakhpur University Online MBA</text>
+  <text x="32" y="76" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="13">Gorakhpur, Uttar Pradesh  ·  State University since 1950  ·  Verified 23 Aug 2026</text>
+
+  <rect x="32" y="102" width="212" height="86" rx="10" fill="#1e293b"/>
+  <text x="48" y="128" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1.2">TOTAL PROGRAMME FEE</text>
+  <text x="48" y="162" fill="#f97316" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700">Rs 52,500</text>
+  <text x="48" y="180" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="11">Two years, full programme</text>
+
+  <rect x="256" y="102" width="212" height="86" rx="10" fill="#1e293b"/>
+  <text x="272" y="128" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1.2">ACCREDITATION</text>
+  <text x="272" y="162" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700">NAAC A++</text>
+  <text x="272" y="180" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="11">CGPA 3.78, Cycle 2</text>
+
+  <rect x="480" y="102" width="208" height="86" rx="10" fill="#1e293b"/>
+  <text x="496" y="128" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1.2">APPROVAL</text>
+  <text x="496" y="162" fill="#f1f5f9" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700">UGC-DEB</text>
+  <text x="496" y="180" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="11">No AICTE listing</text>
+
+  <rect x="32" y="208" width="656" height="64" rx="10" fill="#10b981" fill-opacity="0.12" stroke="#10b981" stroke-opacity="0.35"/>
+  <text x="52" y="234" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="1">THE HEADLINE NUMBER</text>
+  <text x="52" y="256" fill="#e2e8f0" font-family="Arial,Helvetica,sans-serif" font-size="13">Rs 52,500 is roughly a third of what comparable private online MBAs charge, and DDU's NAAC CGPA is higher than both.</text>
+</svg>
+<p class="svg-caption">Sources: official DDU CDOE portal for the programme list, university-confirmed figures for fees, internal NAAC records for accreditation. Verified 23 August 2026.</p>
+</div>
+
+<h2>What Rs 52,500 Looks Like Next to the Private Options</h2>
+
+<p>The number only means something in context. Here it is against the two private online MBAs we reviewed most recently, both of which also hold NAAC A++.</p>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bar chart comparing total online MBA fees: DDU Gorakhpur Rs 52,500, Parul University Rs 1,50,000, Bharati Vidyapeeth Rs 1,78,000. All three hold NAAC A plus plus, with DDU holding the highest CGPA at 3.78." style="width:100%;height:auto">
+  <rect width="720" height="250" rx="12" fill="#f1f5f9"/>
+  <text x="28" y="34" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Three NAAC A++ online MBAs, three very different prices</text>
+  <text x="28" y="54" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="12">Total programme fee, verified against each university</text>
+
+  <rect x="215" y="78" width="130" height="32" rx="5" fill="#10b981"/>
+  <text x="28" y="99" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">DDU Gorakhpur</text>
+  <text x="357" y="99" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">Rs 52,500</text>
+  <text x="452" y="99" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11">CGPA 3.78, state university</text>
+
+  <rect x="215" y="124" width="372" height="32" rx="5" fill="#94a3b8"/>
+  <text x="28" y="145" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="12">Parul University</text>
+  <text x="599" y="145" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="12">Rs 1,50,000</text>
+
+  <rect x="215" y="170" width="441" height="32" rx="5" fill="#94a3b8"/>
+  <text x="28" y="191" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="12">Bharati Vidyapeeth</text>
+  <text x="668" y="191" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="12" text-anchor="end">Rs 1,78,000</text>
+
+  <text x="28" y="228" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11">DDU costs about a third of Parul and under a third of Bharati Vidyapeeth, on a higher NAAC score than either.</text>
+</svg>
+<p class="svg-caption">All three hold NAAC A++. DDU's CGPA of 3.78 is above Bharati Vidyapeeth at 3.60 and Parul at 3.55.</p>
+</div>
+
+<p>Read that carefully, because the obvious conclusion is the wrong one. A higher NAAC score at a third of the price does not make DDU strictly better. It makes it a different kind of purchase, and the next two sections explain what you trade away.</p>
+
+<table>
+  <thead>
+    <tr><th>Programme</th><th>Duration</th><th>Total fee</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>MBA</td><td>2 years</td><td>Rs 52,500</td></tr>
+    <tr><td>BBA</td><td>3 years</td><td>Rs 57,500</td></tr>
+    <tr><td>B.Com (Hons.)</td><td>4 years</td><td>Rs 56,500</td></tr>
+    <tr><td>MA</td><td>2 years</td><td>Rs 30,500</td></tr>
+    <tr><td>M.Sc (Mathematics)</td><td>2 years</td><td>Rs 30,500</td></tr>
+    <tr><td>M.Com</td><td>2 years</td><td>Confirm with the university</td></tr>
+  </tbody>
+</table>
+
+<div class="emi-block">
+  <strong>On EMI.</strong> At Rs 52,500 for two years the question mostly goes away, which is the quiet advantage of a state university. If you still want to spread it, ask admissions what instalment schedule they run. The portal states no EMI terms and no lender.
+</div>
+
+<div class="callout-warning">
+  <strong>All fees here are indicative, and the portal publishes none.</strong> DDU's online portal lists the programmes but prints no fee table anywhere. The figures above were confirmed directly with the university and are accurate as of 23 August 2026. Fees at state universities move with government notifications, so confirm the current number in writing before you pay. Verify the university's approval status at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>.
+</div>
+
+<h2>Do Not Confuse the Online Programme With the Campus One</h2>
+
+<p>This trips up most people researching DDU, and it is worth two minutes.</p>
+
+<p>DDU runs regular on-campus degrees admitted through the DDU entrance exam, with their own separate fee structure. It also runs online degrees through its Centre for Distance and Online Education, which is a different route with different pricing and no entrance exam.</p>
+
+<p>Search for DDU MBA fees and you will mostly find the campus numbers. Those figures are real, but they describe a programme you would attend in Gorakhpur. If you are looking at the online degree, the campus fee tells you nothing useful.</p>
+
+<p class="pull">Same university, two different products. Check which one a page is quoting before you compare anything.</p>
+
+<h2>What the Low Fee Does Not Buy</h2>
+
+<p><strong>No AICTE listing.</strong> None of DDU's online programmes carry an AICTE listing in our records. For most private-sector hiring that changes nothing, since UGC-DEB approval is what establishes the degree's validity. If your employer or a specific government recruitment rule asks for AICTE, this is where a programme like <a href="/blog/bharati-vidyapeeth-online-mba-review">Bharati Vidyapeeth's online MBA</a> earns its higher price.</p>
+
+<p><strong>No published placement support.</strong> The portal makes no placement claim at all. That is more honest than an unbacked guarantee, but it means you should plan on running your own job search.</p>
+
+<p>At this price that is a reasonable trade. At Rs 1,78,000 it would not be.</p>
+
+<p><strong>Thinner information generally.</strong> No fee table, no semester breakdown, no eligibility detail, no scholarship rules published online. You will be doing more asking than you would with a private university whose entire operation is built around online admissions.</p>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparison of what each price buys. DDU Gorakhpur at Rs 52,500 has NAAC A plus plus and UGC-DEB but no AICTE, no placement support and no published fee table. Parul at Rs 1,50,000 adds 20 specialisations but has no AICTE. Bharati Vidyapeeth at Rs 1,78,000 adds AICTE listing, NBA accreditation and a NIRF University rank." style="width:100%;height:auto">
+  <rect width="720" height="250" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="26" y="30" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">What the extra money actually buys</text>
+  <text x="26" y="49" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="12">Same NAAC A++ grade on all three. The difference is everything around the degree.</text>
+
+  <text x="26"  y="82" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1">FEATURE</text>
+  <text x="300" y="82" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="1">DDU 52.5K</text>
+  <text x="440" y="82" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1">PARUL 1.5L</text>
+  <text x="580" y="82" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1">BVDU 1.78L</text>
+  <line x1="26" y1="92" x2="694" y2="92" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="26" y="116" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">UGC-DEB approved</text>
+  <text x="316" y="116" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Yes</text>
+  <text x="456" y="116" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Yes</text>
+  <text x="596" y="116" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Yes</text>
+
+  <text x="26" y="146" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">AICTE listed</text>
+  <text x="316" y="146" fill="#ef4444" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">No</text>
+  <text x="456" y="146" fill="#ef4444" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">No</text>
+  <text x="596" y="146" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Yes</text>
+
+  <text x="26" y="176" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">NIRF University rank</text>
+  <text x="316" y="176" fill="#ef4444" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">No</text>
+  <text x="456" y="176" fill="#ef4444" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">No</text>
+  <text x="596" y="176" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">59</text>
+
+  <text x="26" y="206" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">Specialisations offered</text>
+  <text x="316" y="206" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="14">7</text>
+  <text x="456" y="206" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="14">20</text>
+  <text x="596" y="206" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="14">14</text>
+
+  <text x="26" y="236" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">Fee table published online</text>
+  <text x="316" y="236" fill="#ef4444" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">No</text>
+  <text x="456" y="236" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Yes</text>
+  <text x="596" y="236" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Yes</text>
+</svg>
+<p class="svg-caption">Verified against each university's official portal and our accreditation records, August 2026. Specialisation counts are as listed by each university for its online MBA.</p>
+</div>
+
+<h2>The Other Programmes Are Where It Gets Interesting</h2>
+
+<p>The MBA gets the searches, but look at the rest of the catalogue.</p>
+
+<p><a href="/universities/deen-dayal-upadhyay-gorakhpur-university-online/ma">MA at Rs 30,500</a> and M.Sc Mathematics at the same price are among the cheapest postgraduate degrees from a NAAC A++ institution you will find anywhere in India. The official portal lists MA in Political Science, English, Education, Economics and Sociology.</p>
+
+<p>The <a href="/universities/deen-dayal-upadhyay-gorakhpur-university-online/bcom">B.Com Honours</a> is a four-year degree at Rs 56,500, which works out cheaper per year than the three-year BBA at Rs 57,500. If you are choosing between them on cost alone, the Honours route is better value and the extra year carries NEP credit weight.</p>
+
+<p>For a teaching or research path, or for a candidate who needs a recognised postgraduate qualification without a large outlay, the MA and M.Sc are the strongest things on this page.</p>
+
+<div class="cta-box">
+  <strong>Comparing DDU against a private online MBA?</strong>
+  <p>Edify compares public UGC and NAAC data across 128 universities. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/compare">Compare online MBA programmes</a>
+  <a class="ilink" href="/tools/emi-calculator">Work out the monthly cost</a>
+</div>
+
+<h2>Who Should Apply and Who Should Not</h2>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Decision matrix. Apply if budget is the binding constraint, if you want a NAAC A plus plus postgraduate degree under Rs 60,000, if you are self-directed about job search, or if you want the MA or M.Sc at Rs 30,500. Do not apply if your employer requires AICTE, if you need placement support, if you need a recognisable private brand, or if you expect responsive online-first admissions service." style="width:100%;height:auto">
+  <rect width="720" height="340" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+
+  <rect x="16" y="16" width="336" height="308" rx="10" fill="#10b981" fill-opacity="0.07" stroke="#10b981" stroke-opacity="0.3"/>
+  <text x="40" y="48" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing="1">APPLY IF</text>
+  <text x="40" y="82" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">Budget is the binding constraint</text>
+  <text x="40" y="100" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">and you still want NAAC A++</text>
+  <text x="40" y="134" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You need a valid UGC-DEB degree</text>
+  <text x="40" y="152" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">for eligibility or a promotion</text>
+  <text x="40" y="186" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You will run your own job search</text>
+  <text x="40" y="204" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">and do not need placement help</text>
+  <text x="40" y="238" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">The MA or M.Sc at Rs 30,500 is</text>
+  <text x="40" y="256" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">what you actually want</text>
+  <text x="40" y="290" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">A state university degree suits</text>
+  <text x="40" y="308" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">your sector</text>
+
+  <rect x="368" y="16" width="336" height="308" rx="10" fill="#ef4444" fill-opacity="0.07" stroke="#ef4444" stroke-opacity="0.3"/>
+  <text x="392" y="48" fill="#ef4444" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing="1">DO NOT APPLY IF</text>
+  <text x="392" y="82" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">Your employer or a recruitment</text>
+  <text x="392" y="100" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">rule asks for AICTE</text>
+  <text x="392" y="134" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You are counting on placement</text>
+  <text x="392" y="152" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">support to change jobs</text>
+  <text x="392" y="186" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You want a private brand name</text>
+  <text x="392" y="204" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">on the certificate</text>
+  <text x="392" y="238" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You expect fast, online-first</text>
+  <text x="392" y="256" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">admissions and support</text>
+  <text x="392" y="290" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You need a wide specialisation</text>
+  <text x="392" y="308" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">menu to pick from</text>
+</svg>
+<p class="svg-caption">Decision matrix based on the official portal, university-confirmed fees and verified accreditation records, August 2026.</p>
+</div>
+
+<h3>Apply if the degree is the point</h3>
+
+<p>The clearest case is a candidate who needs a valid, well accredited postgraduate qualification and is paying for it themselves. A promotion that requires a master's. An eligibility bar for a government application.</p>
+
+<p>A career change where you will do the networking yourself fits the same pattern. On all of those, Rs 52,500 from a NAAC A++ university is hard to argue with.</p>
+
+<h3>Skip it if you are buying the wrapper</h3>
+
+<p>If what you actually want is placement support, a recognisable private brand, a wide specialisation menu and a slick student experience, this is not that product and the low price is telling you so. Compare against the <a href="/blog/parul-online-mba-review">Parul online MBA</a> at Rs 1,50,000 before deciding, and be honest about which one you are really buying.</p>
+
+<h2>Final Word</h2>
+
+<p>DDU Gorakhpur is the best pure value online MBA covered on this site so far. A NAAC A++ state university with a CGPA of 3.78, UGC-DEB approved, charging Rs 52,500 for a full two-year degree. The MA and M.Sc at Rs 30,500 are arguably better still. Nothing about the accreditation is weak, and the degree is valid nationally.</p>
+
+<p>What you are giving up is service, not standing. No AICTE listing, no placement support, no published fee table and a portal that will not answer most of your questions. Go in expecting to phone the university and get things in writing, and the price makes complete sense. Start with the <a href="/universities/deen-dayal-upadhyay-gorakhpur-university-online/mba">full DDU online MBA breakdown</a>, and check the approval status yourself on our <a href="/verify/deen-dayal-upadhyay-gorakhpur-university-online">DDU verification page</a>.</p>
+
+<div class="cta-box">
+  <strong>Get the current DDU fee sheet in writing</strong>
+  <p>The university publishes no fee table online. We will help you get the current figures confirmed before you pay. Edify compares public UGC and NAAC data only. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/contact">Request a free counselling call</a>
+</div>
+
+<h2>Sources to Consult</h2>
+
+<ul>
+  <li><a href="https://ddugucdoe.com/" target="_blank" rel="noopener">DDU Centre for Distance and Online Education portal</a> for the official online programme list</li>
+  <li><a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">UGC-DEB approved institutions list</a> to confirm current online delivery approval</li>
+  <li><a href="https://naac.gov.in" target="_blank" rel="noopener">NAAC accreditation database</a> to confirm the A++ grade, CGPA and validity window</li>
+  <li><a href="https://nirfindia.org" target="_blank" rel="noopener">NIRF India Rankings</a> to check which categories a university appears in, and which it does not</li>
+</ul>
+
+<div class="disclaimer">
+  The programme list in this review reflects the official DDU Centre for Distance and Online Education portal as of 23 August 2026. The university publishes no fee table, so the figures here were confirmed directly with the university on that date and should be re-checked before any payment. Accreditation data was cross-checked against our internal NAAC records. Fees at state universities change with government notification, and approval status changes between intake cycles. EdifyEdu accepts no referral commission from DDU Gorakhpur or any other institution mentioned, and no university pays for placement or ranking on this site.
+</div>
+`,
+  },
+  {
     slug: 'bharati-vidyapeeth-online-mba-review',
     title: 'Bharati Vidyapeeth Online MBA Review 2026: The Real Fee, the AICTE Advantage, and Who Should Skip It',
     seoTitle: 'Bharati Vidyapeeth Online MBA Review 2026: Real Fee, AICTE',

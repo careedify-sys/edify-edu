@@ -1,0 +1,73 @@
+{
+  "slug": "ddu-gorakhpur-online-mba-review",
+  "title": "DDU Gorakhpur Online MBA Review 2026: Rs 52,500 From a NAAC A++ University, and What That Price Does Not Buy",
+  "seoTitle": "DDU Gorakhpur Online MBA Review 2026: Rs 52,500 Verdict",
+  "metaDescription": "DDU Gorakhpur online MBA costs Rs 52,500 for the full two years, from a NAAC A++ state university. An honest review of what that low price does not buy.",
+  "category": "Online MBA Programs",
+  "tags": [
+    "ddu gorakhpur online mba",
+    "ddu gorakhpur online mba fees",
+    "deen dayal upadhyay gorakhpur university online",
+    "cheapest online mba naac a++",
+    "state university online mba india",
+    "ddu gorakhpur online ma fees",
+    "DDU Gorakhpur Online MBA Fees 2026"
+  ],
+  "publishedAt": "2026-08-23",
+  "readTime": 7,
+  "targetKeyword": "DDU Gorakhpur online MBA review",
+  "relatedUniversities": ["deen-dayal-upadhyay-gorakhpur-university-online"],
+  "status": "published",
+  "author": "Rishi Kumar",
+  "ctaTitle": "Compare DDU Gorakhpur Against Other Online MBA Programmes",
+  "ctaDesc": "See how a Rs 52,500 state university MBA compares against private online MBAs at three times the price. Public UGC and NAAC data only, no paid rankings.",
+  "faqs": [
+    {
+      "q": "What is the total fee for the DDU Gorakhpur online MBA?",
+      "a": "Rs 52,500 for the full two-year programme, confirmed directly with the university on 23 August 2026. DDU publishes no fee table on its online portal, so this figure came from the university rather than a published page. Fees at state universities change with government notification, so confirm the current number in writing before you pay."
+    },
+    {
+      "q": "Is the DDU Gorakhpur online MBA valid?",
+      "a": "Yes. Deen Dayal Upadhyay Gorakhpur University is UGC-DEB approved for online delivery and its portal describes it as a UGC-entitled institution. It holds NAAC A++ at CGPA 3.78. The degree is valid nationally for employment and for further study. You can confirm the current approval status yourself at deb.ugc.ac.in."
+    },
+    {
+      "q": "Why is the DDU online MBA so much cheaper than private options?",
+      "a": "Because it is a state university. State universities price online degrees on a different basis from private institutions. The trade is in services rather than standing: no AICTE listing, no published placement support, and much less published information. The accreditation itself is strong, with a NAAC CGPA of 3.78 that is higher than several private universities charging three times as much."
+    },
+    {
+      "q": "Is the DDU online MBA AICTE approved?",
+      "a": "No. None of DDU's online programmes carry an AICTE listing in our records. For most private-sector hiring this changes nothing, since UGC-DEB approval establishes the degree's validity. If your employer or a specific government recruitment rule asks for AICTE, look at a programme that carries it and confirm in writing before enrolling."
+    },
+    {
+      "q": "What other online programmes does DDU Gorakhpur offer?",
+      "a": "The official portal lists B.Com Honours, BBA, MBA, M.Com, M.Sc Mathematics, and MA in Political Science, English, Education, Economics and Sociology. Confirmed fees are MBA Rs 52,500, BBA Rs 57,500, B.Com Honours Rs 56,500, MA Rs 30,500 and M.Sc Rs 30,500. The M.Com fee was not confirmed at the time of writing."
+    },
+    {
+      "q": "Is the DDU online MBA the same as the campus MBA?",
+      "a": "No, and this catches a lot of people out. DDU runs regular on-campus degrees admitted through the DDU entrance exam, with a separate fee structure, alongside online degrees through its Centre for Distance and Online Education. Most search results quoting DDU MBA fees describe the campus programme. If you are looking at the online degree, the campus fee is not comparable."
+    },
+    {
+      "q": "What is DDU Gorakhpur's NAAC grade?",
+      "a": "NAAC A++ at CGPA 3.78, awarded in the university's second assessment cycle and valid until 17 January 2030. That CGPA is higher than Bharati Vidyapeeth at 3.60 and Parul at 3.55, both of which charge substantially more for an online MBA."
+    },
+    {
+      "q": "Does DDU Gorakhpur offer placement support for online students?",
+      "a": "The portal makes no placement claim. That is more honest than an unbacked guarantee, but it means you should plan to run your own job search. At Rs 52,500 that is a reasonable trade. If placement support is essential to your decision, budget for a programme that publishes what it actually provides."
+    }
+  ],
+  "_provenance": {
+    "generated": "2026-08-23",
+    "programme_list_source": "https://ddugucdoe.com/ fetched 2026-08-23, reached via onlineddugu.com linked from ddugu.ac.in",
+    "fee_source": "Founder-confirmed 2026-08-23. The official portal publishes no fee table.",
+    "accreditation_source": "Supabase universities + accreditations tables, queried 2026-08-23",
+    "fees_confirmed": { "MBA": 52500, "BBA": 57500, "B.Com": 56500, "MA": 30500, "MSc": 30500 },
+    "fees_unconfirmed": ["M.Com"],
+    "naac": { "grade": "A++", "cgpa": 3.78, "cycle": "2", "valid_till": "2030-01-17" },
+    "nirf": [],
+    "aicte_listed": false,
+    "ugc_deb_status": "approved",
+    "university_type": "State University",
+    "open_issue": "lib/data.ts carries rankingBadge 'NIRF #96 (University 2024)' for this university while nirf is 999 and Supabase holds no NIRF row. This blog makes no NIRF claim at all to avoid contradicting the badge. Resolve the badge before adding any NIRF statement here.",
+    "status_note": "Published 2026-08-23. Re-verify all fees at the start of each intake cycle, since none are published online."
+  }
+}
