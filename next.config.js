@@ -507,6 +507,54 @@ const nextConfig = {
       // /privacy-policy.html and 404d at the end of the redirect chain. These
       // map the suffix to the real route so the chain terminates on a 200.
       { source: '/privacy-policy.html', destination: '/privacy-policy', permanent: true },
+      // 2026-08-24: /verify/{slug} keys off Supabase university slugs, while
+      // every internal link used to be built from the lib/data.ts id. Those
+      // disagree for 63 of 128 universities, which is what produced the GSC
+      // Not-found wave. The links are fixed at source (getVerifyPage), and
+      // these 301s retire the URLs Google already indexed so they resolve
+      // now rather than waiting to be dropped. Built by exact name match
+      // against the Supabase universities table; see
+      // lib/data/verify-slug-overrides.json. 24 further ids have no verify
+      // record at all, so there is nothing to redirect them to.
+      { source: '/verify/jain-university-online', destination: '/verify/jain-deemed-to-be-university-online', permanent: true },
+      { source: '/verify/upes-online', destination: '/verify/university-of-petroleum-and-energy-studies-online', permanent: true },
+      { source: '/verify/amrita-vishwa-vidyapeetham-online', destination: '/verify/amrita-vishwa-vidyapeetham-university-online', permanent: true },
+      { source: '/verify/yenepoya-university-online', destination: '/verify/yenepoya-online', permanent: true },
+      { source: '/verify/vignan-university-online', destination: '/verify/vignans-foundation-for-science-technology-and-research-online', permanent: true },
+      { source: '/verify/manipal-academy-higher-education-online', destination: '/verify/manipal-academy-of-higher-education-online', permanent: true },
+      { source: '/verify/kl-university-online', destination: '/verify/koneru-lakshmaiah-education-foundation-online', permanent: true },
+      { source: '/verify/vtu-online', destination: '/verify/visvesvaraya-technological-university-online', permanent: true },
+      { source: '/verify/hindustan-institute-technology-online', destination: '/verify/hindustan-institute-of-technology-and-science-hits-online', permanent: true },
+      { source: '/verify/maharishi-markandeshwar-university-online', destination: '/verify/maharishi-markandeshwar-online', permanent: true },
+      { source: '/verify/dr-mgr-educational-research-institute-online', destination: '/verify/dr-mgr-educational-and-research-institute-online', permanent: true },
+      { source: '/verify/central-university-himachal-pradesh-online', destination: '/verify/central-university-of-himachal-pradesh-online', permanent: true },
+      { source: '/verify/karunya-university-online', destination: '/verify/karunya-institute-of-technology-and-sciences-online', permanent: true },
+      { source: '/verify/jamia-millia-islamia-online', destination: '/verify/jamia-millia-islamia-university-online', permanent: true },
+      { source: '/verify/christ-university-online', destination: '/verify/christ-deemed-to-be-university-online', permanent: true },
+      { source: '/verify/bharati-vidyapeeth-university-online', destination: '/verify/bharati-vidyapeeth-online', permanent: true },
+      { source: '/verify/jss-university-online', destination: '/verify/jss-academy-of-education-and-research-online', permanent: true },
+      { source: '/verify/jaypee-university-online', destination: '/verify/jaypee-institute-of-information-technology-online', permanent: true },
+      { source: '/verify/vit-vellore-online', destination: '/verify/vellore-institute-of-technology-online', permanent: true },
+      { source: '/verify/vels-university-online', destination: '/verify/vels-institute-of-science-technology-advanced-studies-vistas-online', permanent: true },
+      { source: '/verify/northcap-university-online', destination: '/verify/the-northcap-university-online', permanent: true },
+      { source: '/verify/iift-online', destination: '/verify/indian-institute-of-foreign-trade-online', permanent: true },
+      { source: '/verify/datta-meghe-university-online', destination: '/verify/datta-meghe-institute-of-higher-education-and-research-online', permanent: true },
+      { source: '/verify/centurion-university-online', destination: '/verify/centurion-university-of-technology-and-management-online', permanent: true },
+      { source: '/verify/srm-institute-science-technology-online', destination: '/verify/srm-institute-of-sciences-and-technology-online', permanent: true },
+      { source: '/verify/kalasalingam-university-online', destination: '/verify/kalasalingam-academy-of-research-and-higher-education-online', permanent: true },
+      { source: '/verify/sri-ramachandra-university-online', destination: '/verify/sri-ramachandra-institute-of-higher-education-and-research-online', permanent: true },
+      { source: '/verify/icfai-university-online', destination: '/verify/icfai-foundation-for-higher-education-online', permanent: true },
+      { source: '/verify/subharti-university-online', destination: '/verify/swami-vivekanand-subharti-university-online', permanent: true },
+      { source: '/verify/kalinga-institute-industrial-technology-online', destination: '/verify/kalinga-institute-of-industrial-technology-online', permanent: true },
+      { source: '/verify/graphic-era-university-online', destination: '/verify/graphic-era-online', permanent: true },
+      { source: '/verify/shanmugha-arts-science-technology-research-online', destination: '/verify/shanmugha-arts-science-technology-research-academy-online', permanent: true },
+      { source: '/verify/guru-gobind-singh-indraprastha-university-online', destination: '/verify/guru-gobind-singh-indraprastha-vishwavidyalaya-online', permanent: true },
+      { source: '/verify/iiit-bangalore-online', destination: '/verify/international-institute-of-information-technology-online', permanent: true },
+      { source: '/verify/bharath-university-online', destination: '/verify/bharath-institute-of-higher-education-and-research-online', permanent: true },
+      { source: '/verify/chhatrapati-shahu-ji-maharaj-university-online', destination: '/verify/chatrapati-shahuji-maharaj-university-online', permanent: true },
+      { source: '/verify/guru-jambheshwar-university-online', destination: '/verify/guru-jambheshwar-university-of-science-and-technology-online', permanent: true },
+      { source: '/verify/meenakshi-academy-higher-education-online', destination: '/verify/meenakshi-academy-of-higher-education-and-research-online', permanent: true },
+      { source: '/verify/mody-university-online', destination: '/verify/mody-university-of-science-and-technology-online', permanent: true },
       { source: '/about.html',          destination: '/about',          permanent: true },
       { source: '/contact.html',        destination: '/contact',        permanent: true },
       { source: '/blog.html',           destination: '/blog',           permanent: true },
@@ -518,9 +566,18 @@ const nextConfig = {
       // Legacy /programs/{program}/{university} pattern indexed by Google
       { source: '/programs/mcom/maharshi-dayanand-university-online', destination: '/universities/maharshi-dayanand-university-online', permanent: true },
       { source: '/programs/bca/shri-ramasamy-memorial-university-online', destination: '/universities/srm-university-sikkim-online', permanent: true },
+      // 2026-08-24: these two rules used to end in a 404 and were both in the
+      // GSC Not-found export. SRM Sikkim has no B.Com hub, so the :path*
+      // wildcard below forwarded /b-com and /bcom onto a hub that does not
+      // exist. Send them to the university overview, which returns 200. Must
+      // stay ABOVE the wildcard, since redirects are evaluated in order.
+      { source: '/universities/shri-ramasamy-memorial-university-online/b-com', destination: '/universities/srm-university-sikkim-online', permanent: true },
+      { source: '/universities/shri-ramasamy-memorial-university-online/bcom', destination: '/universities/srm-university-sikkim-online', permanent: true },
       { source: '/universities/shri-ramasamy-memorial-university-online/:path*', destination: '/universities/srm-university-sikkim-online/:path*', permanent: true },
       { source: '/universities/shri-ramasamy-memorial-university-online', destination: '/universities/srm-university-sikkim-online', permanent: true },
-      { source: '/verify/shri-ramasamy-memorial-university-online', destination: '/verify/srm-university-sikkim-online', permanent: true },
+      // Supabase has no verify record for SRM Sikkim, so the old target 404d.
+      // Send it to the verify search tool instead.
+      { source: '/verify/shri-ramasamy-memorial-university-online', destination: '/verify', permanent: true },
       { source: '/programs/mca/chandigarh-university-online', destination: '/universities/chandigarh-university-online/mca', permanent: true },
       { source: '/programs/ba/gujarat-university-online', destination: '/universities/gujarat-university-online', permanent: true },
       { source: '/programs/mba/graphic-era-university-online', destination: '/universities/graphic-era-university-online/mba', permanent: true },
