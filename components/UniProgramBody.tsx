@@ -42,6 +42,8 @@ import RequestSyllabusCard from './RequestSyllabusCard'
 import { hasSyllabusData } from '@/lib/syllabus'
 import { getProgramLinks } from '@/lib/internal-links'
 import ProgramBlogLinks from './ProgramBlogLinks'
+import SiblingProgrammes from './SiblingProgrammes'
+import { getSiblingProgrammes, getUniversityOverviewLink } from '@/lib/seo/safe-internal-links'
 
 interface Props {
   u: University
@@ -94,6 +96,12 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
   const content = getPageContent(u.id, program.toLowerCase())
   const s = content?.sections
   const programBlogLinks = getProgramLinks(u.id, program.toLowerCase())
+
+  // Internal-link mesh (2026-08-23). Both helpers gate on valid-urls.json, so
+  // they only ever return hubs that resolve AND are indexable. See
+  // lib/seo/safe-internal-links.ts for why u.programs is not used directly.
+  const siblingProgrammes = getSiblingProgrammes(u, program)
+  const overviewHref      = getUniversityOverviewLink(u)
 
   // Sprint 1 Task 2 (revised): fact-scrubbed FAQ set. Every factual claim below
   // is BACKED by a lib/data.ts field (feeMin/feeMax, emiFrom, naac, nirf, ugc,
@@ -376,6 +384,14 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
               {programBlogLinks && (
                 <ProgramBlogLinks links={programBlogLinks} program={program.toLowerCase()} />
               )}
+
+              {/* Sibling programme hubs. Closes the orphan-hub gap found in the
+                  2026-08-23 GSC read: 229/242 hubs had zero inbound links. */}
+              <SiblingProgrammes
+                links={siblingProgrammes}
+                cleanName={cleanName}
+                overviewHref={overviewHref}
+              />
 
               {/* Back link */}
               <div className="pt-2">

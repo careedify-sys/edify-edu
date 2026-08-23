@@ -25,9 +25,17 @@ const progSlug = (p: Program) => p.toLowerCase().replace(/\s+/g,'-').replace(/[^
 
 interface Props {
   university: University
+  /**
+   * Programmes whose hub URL actually returns 200, computed on the server by
+   * getResolvableProgrammes(). Rendering links straight from u.programs used
+   * to emit 45 hard 404s across 33 university pages, because middleware.ts
+   * 404s any hub missing from its programme allowlist. Keep link rendering on
+   * this list; u.programs stays fine for non-link UI such as the tab strip.
+   */
+  linkableProgrammes: Program[]
 }
 
-export default function UniversityPageClient({ university: u }: Props) {
+export default function UniversityPageClient({ university: u, linkableProgrammes }: Props) {
   const [enquiryOpen, setEnquiryOpen] = useState(false)
   const [activeProgram, setActiveProgram] = useState<Program | null>(null)
   const [compareList, setCompareList] = useState<string[]>([])
@@ -666,7 +674,7 @@ export default function UniversityPageClient({ university: u }: Props) {
 
                 <div className="bg-white border border-border rounded-xl p-4">
                   <div className="font-bold text-navy text-sm mb-3">All Programs</div>
-                  {u.programs.map(prog => (
+                  {linkableProgrammes.map(prog => (
                     <Link
                       key={prog}
                       href={`/universities/${u.id}/${progSlug(prog)}`}
