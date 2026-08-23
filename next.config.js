@@ -501,6 +501,17 @@ const nextConfig = {
       // /thankyou.html → homepage
       { source: '/thankyou.html', destination: '/', permanent: true },
 
+      // 2026-08-24: legacy .html URLs from the pre-Next site. GSC reported
+      // www.edifyedu.in/privacy-policy.html as Not found. The www rule above
+      // strips the host but keeps the .html suffix, so the request landed on
+      // /privacy-policy.html and 404d at the end of the redirect chain. These
+      // map the suffix to the real route so the chain terminates on a 200.
+      { source: '/privacy-policy.html', destination: '/privacy-policy', permanent: true },
+      { source: '/about.html',          destination: '/about',          permanent: true },
+      { source: '/contact.html',        destination: '/contact',        permanent: true },
+      { source: '/blog.html',           destination: '/blog',           permanent: true },
+      { source: '/universities.html',   destination: '/universities',   permanent: true },
+
       // Double-hyphen program slug (CMS artifact)
       { source: '/programs/mba/media--communication', destination: '/programs/mba', permanent: true },
 
