@@ -394,14 +394,14 @@ Universities sending leads with **no review blog**. All 128 universities already
 
 Mody is the standout: 7 leads from 9 impressions means real demand against an empty SERP.
 
-**Progress: 2 of 7 published.**
+**Progress: 3 of 7 published.**
 
 | University | Leads | Status |
 |---|---|---|
 | Parul | 13 | **PUBLISHED** `3add85a` + `2456461`. QA 20/20, 1,955 words. All 8 programme fees corrected, missing MA programme added. |
 | Bharati Vidyapeeth | 11 | **PUBLISHED** `171e9d5`. QA 20/20, 1,618 words. All 4 programme fees corrected, stale aggregates fixed. |
 | Bangalore University | 11 | **Not writing.** Founder chose to leave the two non-existent MA pages live (see 5e). |
-| DDU Gorakhpur | 10 | **BLOCKED**, see 5f. No official fee published anywhere; stored fees are shared templates. |
+| DDU Gorakhpur | 10 | **PUBLISHED** `e5ccb3f`. QA 20/20, 1,416 words. 4 template fees replaced, MSc programme added, city corrected. |
 | DDU Gorakhpur | 10 | Not started |
 | Amrita (MBA) | 9 | Not started |
 | SPPU | 8 | Not started |
