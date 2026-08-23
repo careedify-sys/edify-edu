@@ -1,0 +1,77 @@
+{
+  "slug": "bharati-vidyapeeth-online-mba-review",
+  "title": "Bharati Vidyapeeth Online MBA Review 2026: The Real Fee, the AICTE Advantage, and Who Should Skip It",
+  "seoTitle": "Bharati Vidyapeeth Online MBA Review 2026: Real Fee, AICTE",
+  "metaDescription": "Bharati Vidyapeeth online MBA fees are Rs 1,76,000 plus Rs 2,000 non-refundable, not the Rs 1,60,000 quoted elsewhere. AICTE listed, NAAC A++ honest review.",
+  "category": "Online MBA Programs",
+  "tags": [
+    "bharati vidyapeeth online mba",
+    "bharati vidyapeeth online mba fees",
+    "bharati vidyapeeth mba review",
+    "bvdu online mba",
+    "online mba sports management india",
+    "online mba aicte approved",
+    "Bharati Vidyapeeth Online MBA Fees 2026"
+  ],
+  "publishedAt": "2026-08-23",
+  "readTime": 8,
+  "targetKeyword": "Bharati Vidyapeeth online MBA review",
+  "relatedUniversities": ["bharati-vidyapeeth-university-online"],
+  "status": "published",
+  "author": "Rishi Kumar",
+  "ctaTitle": "Compare Bharati Vidyapeeth Against Other Online MBA Programmes",
+  "ctaDesc": "See how Bharati Vidyapeeth's Rs 1,78,000 all-in cost and its UGC-DEB plus AICTE plus NBA approval stack compare against other online MBAs. Public UGC, NAAC and NIRF data only, no paid rankings.",
+  "faqs": [
+    {
+      "q": "What is the total fee for the Bharati Vidyapeeth Online MBA?",
+      "a": "The official programme page states Rs 1,76,000 for tuition plus exam fees. Registration of Rs 1,000 and admission of Rs 1,000 are charged on top and both are non-refundable, so the figure to budget against is Rs 1,78,000. Backlog exams cost Rs 400 per subject. Many listing sites quote Rs 1,60,000, which does not appear on the university's own page. Verify the current fee at bharatividyapeethonline.com before paying."
+    },
+    {
+      "q": "Is the Bharati Vidyapeeth online MBA AICTE approved?",
+      "a": "Yes. Bharati Vidyapeeth is a Deemed-to-be University and its online programmes are AICTE listed, alongside UGC-DEB approval for online delivery and NBA accreditation. This matters if your employer, a PSU recruitment rule or a government job notification asks for AICTE specifically, since many online MBAs in this price band carry UGC-DEB approval and nothing more."
+    },
+    {
+      "q": "What is Bharati Vidyapeeth's NIRF rank?",
+      "a": "Bharati Vidyapeeth holds a NIRF University rank of 59 out of 200 ranked institutions. It holds no NIRF Management rank, which is the category that assesses business programmes specifically. Treat the University rank as evidence the wider institution is credible, not as a ranking of the online MBA."
+    },
+    {
+      "q": "What is Bharati Vidyapeeth's NAAC grade?",
+      "a": "NAAC A++ at CGPA 3.60, awarded in the university's fourth assessment cycle and valid until 8 November 2031. A fourth-cycle A++ means the institution has been assessed four times and held the top grade, which is a different signal from a first-cycle A++ at a younger university."
+    },
+    {
+      "q": "How many specialisations does the Bharati Vidyapeeth online MBA offer?",
+      "a": "Fourteen: Marketing, Finance, Human Resource, International Business, Production and Operations, Information Technology, Business Analytics, Agribusiness, Retail, Project, Event, Hospitality, Sports and Infrastructure. The last seven are unusual for an Indian online MBA, and Sports Management in particular is offered by very few universities online."
+    },
+    {
+      "q": "What is the eligibility for the Bharati Vidyapeeth online MBA?",
+      "a": "A graduate degree on the 10+2+3 pattern from a recognised university with at least 50 percent in aggregate, or 45 percent for SC and ST candidates. The programme runs 24 months across four semesters. No entrance exam is mentioned on the official programme page."
+    },
+    {
+      "q": "Does Bharati Vidyapeeth publish placement data for online MBA students?",
+      "a": "No. The official programme page makes no placement claim, which is more honest than an unbacked guarantee but still leaves you without numbers. Ask admissions for online-cohort outcomes specifically, since campus placement figures cover a different student population and do not transfer to online learners."
+    },
+    {
+      "q": "Is Bharati Vidyapeeth better than Parul for an online MBA?",
+      "a": "They suit different candidates. Bharati Vidyapeeth costs more at Rs 1,78,000 all-in but carries AICTE listing, NBA accreditation and a NIRF University rank of 59. Parul is cheaper at Rs 1,50,000 with NAAC A++ but has no AICTE listing and no NIRF University or Management rank. If you will be screened on approvals, Bharati Vidyapeeth is the stronger paperwork. If price is the binding constraint, Parul is the cheaper credible option."
+    }
+  ],
+  "_provenance": {
+    "generated": "2026-08-23",
+    "fee_source": "https://bharatividyapeethonline.com/courses/mba/ fetched 2026-08-23",
+    "accreditation_source": "Supabase universities + accreditations + programmes tables, queried 2026-08-23",
+    "fee_tuition_plus_exam": 176000,
+    "fee_registration": 1000,
+    "fee_admission": 1000,
+    "fee_all_in": 178000,
+    "backlog_exam_per_subject": 400,
+    "naac": { "grade": "A++", "cgpa": 3.6, "cycle": "4", "valid_till": "2031-11-08" },
+    "nirf": [{ "category": "University", "rank": 59, "total_ranked": 200 }],
+    "nirf_management_rank": null,
+    "aicte_listed": true,
+    "nba_accredited": true,
+    "ugc_deb_status": "approved",
+    "university_type": "Deemed-to-be University",
+    "specialisation_count": 14,
+    "status_note": "Published 2026-08-23. Fee confirmed by founder and cross-checked against the official programme page. Re-verify Rs 1,76,000 at the start of each intake cycle."
+  }
+}

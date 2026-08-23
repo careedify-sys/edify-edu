@@ -740,9 +740,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 60000,
-    feeMax: 200000,
-    emiFrom: 2500,
+    feeMin: 40000,
+    feeMax: 150000,
+    emiFrom: 1667,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     tagline: 'Digital Marketing + Strategic Brand Management + Services Marketing + Sales & Distribution Management + Consumer Behavio',
@@ -4532,9 +4532,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 160000,
-    feeMax: 160000,
-    emiFrom: 6667,
+    feeMin: 129000,
+    feeMax: 176000,
+    emiFrom: 5375,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     tagline: '14 MBA specialisation groups — unique niche tracks: Sports Management, Agribusiness, Event Management, Infrastructure Ma',
@@ -4560,7 +4560,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MCA': {
         specs: ['Cloud Computing', 'Data Science', 'Linux', 'Open-Source Technologies', 'Mobile Computing', 'Dot Net Technologies', 'Net Centric Technologies', 'Information Systems', 'Big Data', 'IOT', 'Cyber Security', 'Data Management'],
-        fees: '₹1.34L',
+        // 2026-08-23: portal-verified total, confirmed by founder. Replaces
+        // the earlier ₹1.34L, which did not match the current intake.
+        fees: '₹1,46,000',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -4573,7 +4575,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['Marketing', 'Financial Management', 'Business Analytics', 'International Business', 'Production & Operations', 'Agribusiness', 'Retail', 'Project Mgmt', 'Event Mgmt', 'Hospitality', 'Sports'],
-        fees: '₹60K – ₹200K',
+        // 2026-08-23: portal-verified total, confirmed by founder. Replaces
+        // a ₹60K-₹200K placeholder that fee rule 4a suppressed as noindex.
+        fees: '₹1,29,000',
         duration: '3 Yrs',
         roles: ['Management Trainee', 'Marketing Executive', 'HR Trainee', 'Finance Trainee'],
         avgSalary: '₹3L – ₹8L per annum',
@@ -4583,7 +4587,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ['Data Analysis', 'Information Security', 'Data Science', 'Information Systems'],
-        fees: '₹60K – ₹200K',
+        // 2026-08-23: portal-verified total, confirmed by founder. Replaces
+        // a ₹60K-₹200K placeholder that fee rule 4a suppressed as noindex.
+        fees: '₹1,29,000',
         duration: '3 Yrs',
         roles: ['Software Developer', 'Data Analyst', 'IT Support', 'Business Analyst Trainee'],
         avgSalary: '₹3L – ₹10L per annum',

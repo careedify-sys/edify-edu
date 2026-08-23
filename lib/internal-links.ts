@@ -307,6 +307,17 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       ],
     },
   },
+  'bharati-vidyapeeth-university-online': {
+    mba: {
+      universityName: 'Bharati Vidyapeeth Online',
+      shortName: 'Bharati Vidyapeeth',
+      programPage: '/universities/bharati-vidyapeeth-university-online/mba',
+      verifyPage: '/verify/bharati-vidyapeeth-online',
+      blogs: [
+        { slug: 'bharati-vidyapeeth-online-mba-review', label: 'Bharati Vidyapeeth Online MBA Review 2026: Real Fee and the AICTE Advantage' },
+      ],
+    },
+  },
   'parul-university-online': {
     mba: {
       universityName: 'Parul University Online',
