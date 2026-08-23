@@ -258,6 +258,56 @@ Also unresolved: **B.Com has a live page pulling 1,177 impressions but appears
 in neither the official portal nor the Supabase programme list.** Worth checking
 whether the programme actually exists.
 
+### 5e. Bangalore University advertises two MA subjects it does not offer (OPEN, needs a decision)
+
+Found 2026-08-23 while researching the Bangalore University review. **Blocked
+the blog rather than writing on top of it.**
+
+`lib/data.ts` lists 7 MA specialisations for `bangalore-university-online`:
+English, Political Science, Sociology, **Psychology**, Economics, History,
+**Public Administration**.
+
+Three independent sources agree the real list is different:
+
+| Source | MA subjects |
+|---|---|
+| Supabase `programmes` | Economics, English, Hindi, History, Kannada, Political Science, Sociology |
+| Official CDOE portal `ddebubonline.in` | Economics, English, History, Sociology, Political Science, Hindi, Kannada |
+| Web search of CDOE prospectus | same seven |
+
+So **Psychology and Public Administration are not offered**, and **Hindi and
+Kannada are missing from the site**.
+
+This matters because those two are the best-performing Bangalore pages:
+
+| URL | Impr. | Clicks | CTR | Pos |
+|---|---|---|---|---|
+| `/bangalore-university-online/ma/psychology` | 673 | 28 | **4.16%** | 6.52 |
+| `/bangalore-university-online/ma/public-administration` | 193 | 7 | **3.63%** | 5.92 |
+
+Bangalore University sent **11 CRM leads, all MA**. Some may have come from
+these two pages, meaning people enquired about a course they cannot enrol in.
+
+Two related problems in the same entry:
+
+- **B.Com and M.Com specialisations look fabricated too.** The site lists
+  Finance, Accounting, Taxation, E-Commerce, Banking & Insurance for B.Com and
+  a similar set for M.Com. The portal offers both only as "(General)" with no
+  specialisations. `/mcom/taxation` ranks at 5.71% CTR and `/mcom/finance` at
+  3.51%, so the same pattern applies.
+- **M.Sc (Mathematics) is missing.** Both Supabase and the portal list it;
+  `lib/data.ts` has only B.Com, MA and M.Com.
+
+Do not simply delete the pages. They rank and convert, so the options are to
+redirect them to the MA hub, replace them with the real subjects (Hindi,
+Kannada), or verify with the university whether these run under a different
+name. That is a founder decision, not a code fix.
+
+**Worth checking whether this pattern repeats at other universities.** The spec
+lists in `lib/data.ts` have not been reconciled against Supabase or the portals
+anywhere, and a spec page for a non-existent course is a trust problem as well
+as a refund-request problem.
+
 ### 5d. Content gap, ranked by proven CRM demand
 
 Universities sending leads with **no review blog**. All 128 universities already exist in `lib/data.ts`, so this is a content gap, not a coverage gap. Only 40 have review blogs.
