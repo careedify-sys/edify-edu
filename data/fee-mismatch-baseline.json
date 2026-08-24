@@ -1,7 +1,7 @@
 {
-  "totalSuppressed": 118,
+  "totalSuppressed": 116,
   "rule4a": 71,
-  "rule4b": 47,
+  "rule4b": 45,
   "updatedAt": "2026-08-24",
   "note": "Baseline captured on feat/fee-backfill-sprint2 cut from main (merge commit ee62e00). scripts/check-fee-baseline.mjs blocks any commit that raises totalSuppressed above this number. Backfill work (see data/fee-backfill-worklist.csv) drops the count; the hook auto-updates this file when the count falls."
 }

@@ -8871,7 +8871,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MCA': {
         specs: ["Software Development", "Computer Applications", "IT Management"],
-        fees: '\u20b927,000',
+        fees: '₹50,800',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'System Analyst', 'IT Consultant', 'Data Analyst'],
         avgSalary: '\u20b93L \u2013 \u20b910L per annum',
@@ -8891,7 +8891,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ["Computing & Information Technology Foundation"],
-        fees: '\u20b921,600',
+        fees: '₹49,800',
         duration: '3 Yrs',
         roles: ['Junior Developer', 'Web Designer', 'IT Support', 'Software Tester', 'Data Entry Specialist'],
         avgSalary: '\u20b92.5L \u2013 \u20b98L per annum',
