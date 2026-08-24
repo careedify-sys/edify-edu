@@ -2381,7 +2381,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BCA': {
         specs: ['General Management'],
-        fees: '₹0.1L – ₹0.6L',
+        fees: '₹75,300',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -3045,7 +3045,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ['Computer Applications'],
-        fees: '₹0.2L – ₹1.5L',
+        fees: '₹1,00,000',
         duration: '3 Years',
         roles: ['Junior Developer', 'Web Designer', 'IT Support.'],
         avgSalary: '₹3 LPA -- ₹6 LPA',
@@ -3950,7 +3950,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BBA': {
         specs: ['FinTech & AI', 'Digital Sciences & Business Management', 'Logistics & Supply Chain Management', 'Data Science & AI'],
-        fees: '₹60K – ₹200K',
+        fees: '₹1,39,000',
         duration: '3 Yrs',
         roles: ['FinTech Analyst', 'Blockchain Trainee', 'Digital Payments Executive', 'Banking Tech Trainee'],
         avgSalary: '₹3L – ₹8L per annum',
@@ -3960,7 +3960,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ['AI & Machine Learning', 'Cyber Security', 'Data Science'],
-        fees: '₹60K – ₹200K',
+        fees: '₹1,39,000',
         duration: '3 Yrs',
         roles: ['ML Analyst', 'Junior Data Scientist', 'AI Developer Trainee', 'NLP Engineer Trainee'],
         avgSalary: '₹3L – ₹10L per annum',
@@ -5223,7 +5223,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       
       'BBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management'],
-        fees: '₹60K – ₹200K',
+        fees: '₹1,25,160',
         duration: '3 Yrs',
         roles: ['Management Trainee', 'Marketing Executive', 'Finance Trainee', 'HR Executive', 'Operations Trainee'],
         avgSalary: '₹4L – ₹10L per annum',
@@ -5233,7 +5233,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ['General (C', 'C++', 'Java', 'Python', 'Web', 'DBMS', 'Android', 'Dot Net', 'Software Testing)'],
-        fees: '₹60K – ₹200K',
+        fees: '₹1,31,160',
         duration: '3 Yrs',
         roles: ['Java Developer', 'Python Developer', 'Web Developer', 'Android Developer Trainee', 'Software Tester'],
         avgSalary: '₹4L – ₹12L per annum',
