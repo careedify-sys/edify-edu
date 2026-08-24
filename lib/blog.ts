@@ -41,6 +41,221 @@ export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "sppu-online-mba-review",
+    title: "SPPU Online MBA Review 2026: The Rs 1.61 Lakh State-University Degree That Does Not Say Online",
+    seoTitle: "SPPU Online MBA Review 2026: Rs 1.61L, NAAC A++",
+    metaDescription: "SPPU's online MBA costs Rs 1,60,880 tuition plus Rs 1,000 registration, from a NAAC A++ state university. An honest review of the fee, the certificate, and who it suits.",
+    category: "Online MBA Programs",
+    tags: ["sppu online mba","sppu online mba fees","savitribai phule pune university online mba","sppu mba review","state university online mba india","naac a++ online mba","sppu online mba specialisations","SPPU Online MBA Fees 2026"],
+    publishedAt: "2026-08-24",
+    readTime: 7,
+    targetKeyword: "SPPU online MBA review",
+    relatedUniversities: ["savitribai-phule-pune-university-online"],
+    status: "published",
+    author: "Rishi Kumar",
+    ctaTitle: "Compare SPPU Against Other Online MBA Programmes",
+    ctaDesc: "See how a NAAC A++ state-university MBA at Rs 1.61L compares against private online MBAs. Public UGC and NAAC data only, no paid rankings.",
+    faqs: [
+      { q: "What is the total fee for the SPPU online MBA?", a: "Rs 1,60,880 in tuition for the full two years, billed as Rs 40,220 per semester across four semesters, plus a one-time Rs 1,000 registration fee. That is about Rs 1,61,880 all-in. Fees were confirmed for the 2026 intake and can change by notification, so confirm the current number in writing before you pay." },
+      { q: "Is the SPPU online MBA valid?", a: "Yes. Savitribai Phule Pune University is a state university, UGC-DEB approved for online delivery, and the degree is valid nationally for employment and further study. You can confirm the current approval status yourself at deb.ugc.ac.in." },
+      { q: "Is the SPPU online degree the same as the on-campus degree?", a: "SPPU states that its online degree is the same qualification as the on-campus one, with no distance or online wording on the certificate. UGC rules already treat an online degree from an entitled university as equivalent to a conventional degree. Confirm the exact certificate wording with the online centre in writing before you enrol, as this is the feature most worth verifying." },
+      { q: "Is the SPPU online MBA AICTE approved?", a: "The online MBA does not carry an AICTE listing in our records. For most private-sector hiring this changes nothing, since UGC-DEB approval establishes the degree validity. If your employer or a specific government rule asks for AICTE, look at a programme that carries it and confirm in writing first." },
+      { q: "What specialisations does the SPPU online MBA offer?", a: "Six: Finance, Marketing, Operations Management, Human Resource Management, Business Analytics and International Business. The core two years are the same across all six, so pick the specialisation for the role you want next." },
+      { q: "How is the SPPU MBA fee paid?", a: "By semester. You pay Rs 40,220 four times across the two years rather than one large upfront sum, plus a one-time Rs 1,000 registration fee. Ask the online centre whether any further monthly EMI is available for your intake." },
+      { q: "Does SPPU offer placement support for online students?", a: "Plan to run your own job search. A large state university does not build its online programme around placement the way some private universities do. At this fee, and with the SPPU name locally in Pune, that is a reasonable trade for many candidates." },
+      { q: "Is SPPU NAAC A++?", a: "The NAAC A++ grade in this review is stated as advised by the university. Because grades and validity windows change between assessment cycles, verify the current grade yourself at naac.gov.in before you rely on it for any decision." },
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 24 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Fees confirmed directly for the SPPU online MBA on 24 August 2026: Rs 40,220 per semester across four semesters, plus a one-time Rs 1,000 registration fee. Accreditation reflects SPPU's NAAC grade as advised by the university; verify the current grade and validity at naac.gov.in before you rely on it. EdifyEdu accepts no referral commission from any university.</em></p>
+
+<p>Savitribai Phule Pune University is not a private online brand. It is a 75-year-old state university, the one people call the Oxford of the East, and it now runs an online MBA for Rs 1,60,880.</p>
+
+<p>That fee sits between the cheap state options and the premium privates. The reason to look closely is not the price. It is what the certificate says, and what the programme quietly leaves out.</p>
+
+<div class="callout-key">
+  <strong>SPPU Online MBA at a glance</strong>
+  <ul>
+    <li><strong>Tuition:</strong> Rs 1,60,880 for the full two years, billed as Rs 40,220 per semester</li>
+    <li><strong>Registration:</strong> Rs 1,000 one-time, so about Rs 1,61,880 all-in</li>
+    <li><strong>NAAC:</strong> A++ , as advised by the university. Confirm at naac.gov.in</li>
+    <li><strong>Type:</strong> State university, Pune, Maharashtra, founded 1949</li>
+    <li><strong>UGC-DEB:</strong> Approved for online delivery through the SPPU online centre</li>
+    <li><strong>AICTE:</strong> Not listed against the online MBA in our records</li>
+  </ul>
+</div>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SPPU online MBA snapshot: total tuition Rs 1,60,880 for two years plus Rs 1,000 registration, NAAC A plus plus state university in Pune founded 1949, UGC-DEB approved for online delivery but not AICTE listed." style="width:100%;height:auto">
+  <rect width="720" height="300" rx="14" fill="#0f172a"/>
+  <rect x="0" y="0" width="720" height="5" rx="2" fill="#f97316"/>
+  <text x="32" y="52" fill="#f1f5f9" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700">SPPU Pune Online MBA</text>
+  <text x="32" y="76" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="13">Savitribai Phule Pune University  ·  State University since 1949  ·  Verified 24 Aug 2026</text>
+
+  <rect x="32" y="102" width="212" height="86" rx="10" fill="#1e293b"/>
+  <text x="48" y="128" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1.2">TOTAL TUITION</text>
+  <text x="48" y="162" fill="#f97316" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">Rs 1.61L</text>
+  <text x="48" y="180" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="11">Two years, plus Rs 1,000 reg</text>
+
+  <rect x="256" y="102" width="212" height="86" rx="10" fill="#1e293b"/>
+  <text x="272" y="128" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1.2">ACCREDITATION</text>
+  <text x="272" y="162" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700">NAAC A++</text>
+  <text x="272" y="180" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="11">State university, Pune</text>
+
+  <rect x="480" y="102" width="208" height="86" rx="10" fill="#1e293b"/>
+  <text x="496" y="128" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1.2">APPROVAL</text>
+  <text x="496" y="162" fill="#f1f5f9" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700">UGC-DEB</text>
+  <text x="496" y="180" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="11">No AICTE listing</text>
+
+  <rect x="32" y="208" width="656" height="64" rx="10" fill="#f97316" fill-opacity="0.12" stroke="#f97316" stroke-opacity="0.35"/>
+  <text x="52" y="234" fill="#f97316" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="1">THE POINT</text>
+  <text x="52" y="256" fill="#e2e8f0" font-family="Arial,Helvetica,sans-serif" font-size="13">A recognised state-university degree, at a price that undercuts most private online MBAs of the same grade.</text>
+</svg>
+<p class="svg-caption">Sources: university-confirmed figures for fees, SPPU-advised NAAC grade, official online centre for the programme. Verified 24 August 2026.</p>
+</div>
+
+<h2>What Rs 1,60,880 Is Made Of</h2>
+
+<p>SPPU bills the MBA by semester, not as one upfront sum. That is easier on cash flow than a single lakh-plus payment.</p>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fee breakdown. Four semesters at Rs 40,220 each total Rs 1,60,880 in tuition. A one-time registration fee of Rs 1,000 brings the all-in cost to Rs 1,61,880." style="width:100%;height:auto">
+  <rect width="720" height="240" rx="12" fill="#f1f5f9"/>
+  <text x="28" y="34" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">How the fee is built</text>
+  <text x="28" y="54" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="12">Billed per semester across the two-year programme</text>
+
+  <rect x="28" y="74" width="150" height="60" rx="8" fill="#1e293b"/>
+  <text x="103" y="100" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="11" text-anchor="middle">PER SEMESTER</text>
+  <text x="103" y="122" fill="#f1f5f9" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">Rs 40,220</text>
+
+  <text x="196" y="112" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700">x 4</text>
+
+  <rect x="250" y="74" width="180" height="60" rx="8" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.4"/>
+  <text x="340" y="100" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">TUITION TOTAL</text>
+  <text x="340" y="122" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">Rs 1,60,880</text>
+
+  <text x="448" y="112" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700">+</text>
+
+  <rect x="472" y="74" width="216" height="60" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="580" y="100" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">ONE-TIME REGISTRATION</text>
+  <text x="580" y="122" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" text-anchor="middle">Rs 1,000</text>
+
+  <rect x="28" y="158" width="660" height="52" rx="10" fill="#0f172a"/>
+  <text x="48" y="182" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1">ALL-IN COST, TWO YEARS</text>
+  <text x="48" y="200" fill="#f97316" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">Rs 1,61,880</text>
+</svg>
+<p class="svg-caption">Four semesters of Rs 40,220 plus a one-time Rs 1,000 registration. Figures confirmed 24 August 2026; verify at the point of admission.</p>
+</div>
+
+<div class="emi-block">
+  <strong>On paying it.</strong> The per-semester structure is itself a soft instalment plan, so you pay Rs 40,220 four times rather than a lakh upfront. Ask the online centre whether any further monthly EMI is offered, and model the cost against your income with our <a href="/tools/emi-calculator">EMI calculator</a> before you enrol.
+</div>
+
+<h2>The Certificate Is the Real Selling Point</h2>
+
+<p>This is what separates a state university like SPPU from a distance-education label.</p>
+
+<p>SPPU states that its online degree is the same qualification as the on-campus one, with no "distance" or "online" wording printed on the certificate. UGC rules already back the principle: an online degree from a UGC-entitled university is equivalent to a conventional degree for employment and for further study.</p>
+
+<p class="pull">For a government job application or a competitive-exam eligibility check, a certificate that reads like any other SPPU degree is worth more than a flashy private brand.</p>
+
+<p>Confirm the exact wording with the online centre in writing before you enrol, because this is the single feature most worth verifying for your own situation.</p>
+
+<h2>What the Fee Does Not Include</h2>
+
+<p><strong>No AICTE listing.</strong> The online MBA does not carry an AICTE listing in our records. For most private-sector hiring this changes nothing, since UGC-DEB approval is what establishes validity. If your employer or a specific government rule asks for AICTE, look at a programme that carries it and confirm in writing first.</p>
+
+<p><strong>A tighter specialisation set.</strong> SPPU lists six MBA specialisations. That covers the core of what most candidates need, but it is narrower than the ten-plus menus some private universities advertise.</p>
+
+<p><strong>State-university admin pace.</strong> A large public university does not run online admissions with the same speed as a business built around it. Expect to follow up, and to get things in writing rather than assume.</p>
+
+<div class="callout-warning">
+  <strong>All fees here are indicative, and the NAAC grade should be verified.</strong> The Rs 40,220 per semester and Rs 1,000 registration figures were confirmed for the 2026 intake and can change by notification, so confirm the current numbers in writing before you pay. Treat the NAAC A++ grade as advised by the university and check the current grade and validity at <a href="https://naac.gov.in" target="_blank" rel="noopener">naac.gov.in</a>. Confirm online-delivery approval at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>.
+</div>
+
+<h2>The Six Specialisations</h2>
+
+<p>The menu is built around the streams that hire in the Pune corridor and beyond.</p>
+
+<p><a href="/universities/savitribai-phule-pune-university-online/mba/finance">Finance</a> and <a href="/universities/savitribai-phule-pune-university-online/mba/marketing">Marketing</a> are the classic anchors. <a href="/universities/savitribai-phule-pune-university-online/mba/business-analytics">Business Analytics</a> is the one to look at if you want a data-facing role, and Operations, Human Resource Management and International Business round out the set.</p>
+
+<p>Pick the specialisation for the job you want next, not the one that sounds most impressive. The core two years are the same across all six.</p>
+
+<div class="cta-box">
+  <strong>Comparing SPPU against other online MBAs?</strong>
+  <p>Edify compares public UGC and NAAC data across universities. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/compare">Compare online MBA programmes</a>
+  <a class="ilink" href="/universities/savitribai-phule-pune-university-online/mba">See the full SPPU MBA breakdown</a>
+</div>
+
+<h2>Who Should Apply and Who Should Not</h2>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Decision matrix. Apply if you want a recognised state-university degree, if the certificate wording matters for a government job or exam eligibility, if you are in the Pune ecosystem, or if you want a mid-priced MBA billed by semester. Do not apply if your employer requires AICTE, if you need a wide specialisation menu, if you want fast online-first admissions service, or if you are buying a private brand name." style="width:100%;height:auto">
+  <rect width="720" height="340" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+
+  <rect x="16" y="16" width="336" height="308" rx="10" fill="#10b981" fill-opacity="0.07" stroke="#10b981" stroke-opacity="0.3"/>
+  <text x="40" y="48" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing="1">APPLY IF</text>
+  <text x="40" y="82" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You want a recognised state</text>
+  <text x="40" y="100" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">university degree, not a label</text>
+  <text x="40" y="134" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">The certificate wording matters</text>
+  <text x="40" y="152" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">for a government job or exam</text>
+  <text x="40" y="186" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You are in the Pune ecosystem</text>
+  <text x="40" y="204" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">or value that brand locally</text>
+  <text x="40" y="238" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">A mid-priced MBA billed by</text>
+  <text x="40" y="256" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">semester suits your cash flow</text>
+  <text x="40" y="290" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You will do your own job</text>
+  <text x="40" y="308" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">search</text>
+
+  <rect x="368" y="16" width="336" height="308" rx="10" fill="#ef4444" fill-opacity="0.07" stroke="#ef4444" stroke-opacity="0.3"/>
+  <text x="392" y="48" fill="#ef4444" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing="1">DO NOT APPLY IF</text>
+  <text x="392" y="82" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">Your employer or a recruitment</text>
+  <text x="392" y="100" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">rule asks for AICTE</text>
+  <text x="392" y="134" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You need a wide specialisation</text>
+  <text x="392" y="152" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">menu to choose from</text>
+  <text x="392" y="186" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You expect fast, online-first</text>
+  <text x="392" y="204" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">admissions and support</text>
+  <text x="392" y="238" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You are buying a private brand</text>
+  <text x="392" y="256" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">name for its own sake</text>
+  <text x="392" y="290" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You want a cheaper A++ degree</text>
+  <text x="392" y="308" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">and nothing more</text>
+</svg>
+<p class="svg-caption">Decision matrix based on university-confirmed fees, the SPPU online centre and verified approval records, August 2026.</p>
+</div>
+
+<h3>Apply if the degree needs to read like a real university degree</h3>
+
+<p>The strongest case is a candidate who needs a credible, well accredited MBA for a government role, a promotion, or an eligibility bar, and who cares that the certificate carries no distance marking. A state university with a strong grade does that job well.</p>
+
+<p>If you are already working in or around Pune, the local recognition of the SPPU name is a genuine, if soft, advantage.</p>
+
+<h3>Skip it if you are buying speed or a wide menu</h3>
+
+<p>If you want a slick online-first experience, a long specialisation list and responsive admissions, a private university is built for that and SPPU is not. If pure price is the deciding factor, a cheaper state option like the <a href="/blog/ddu-gorakhpur-online-mba-review">DDU Gorakhpur online MBA</a> exists, and if a NIRF rank and AICTE matter to you, compare against the <a href="/blog/amrita-online-mba-review">Amrita online MBA</a> before deciding.</p>
+
+<h2>Final Word</h2>
+
+<p>The SPPU online MBA is a credible state-university degree at Rs 1,60,880 in tuition, plus Rs 1,000 to register. The NAAC grade is strong, the Pune name carries weight, and the certificate reads like any other SPPU degree, which is the part most people underrate.</p>
+
+<p>What you give up is service and breadth, not standing. No AICTE listing, a tighter set of six specialisations, and a public-university pace of admissions. If the degree itself is the point, that trade is easy. Read the <a href="/universities/savitribai-phule-pune-university-online">full SPPU university profile</a> to see how the online centre frames it, and the <a href="/universities/savitribai-phule-pune-university-online/mba/operations">Operations Management page</a> for a sample specialisation.</p>
+
+<div class="cta-box">
+  <strong>Want the current SPPU fee and certificate wording confirmed?</strong>
+  <p>Tell us your goal and we will help you get the fee sheet and certificate details in writing before you pay. Edify compares public UGC and NAAC data only. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/contact">Request a free counselling call</a>
+</div>
+
+<h2>Sources to Consult</h2>
+
+<ul>
+  <li><a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">UGC-DEB approved institutions list</a> to confirm current online delivery approval</li>
+  <li><a href="https://naac.gov.in" target="_blank" rel="noopener">NAAC accreditation database</a> to confirm the current grade, CGPA and validity window</li>
+  <li><a href="https://nirfindia.org" target="_blank" rel="noopener">NIRF India Rankings</a> to check which categories the university appears in</li>
+</ul>
+
+<div class="disclaimer">
+  The fee figures in this review were confirmed for the SPPU online MBA on 24 August 2026 and should be re-checked at the point of admission, as state-university fees change by notification. The NAAC grade is stated as advised by the university and should be verified at naac.gov.in. This review makes no NIRF ranking claim for the programme. EdifyEdu accepts no referral commission from SPPU or any other institution mentioned, and no university pays for placement or ranking on this site.
+</div>`,
+  },
+  {
     slug: "amrita-online-mba-review",
     title: "Amrita Online MBA Review 2026: Is the Rs 1.76 Lakh Premium Worth It?",
     seoTitle: "Amrita Online MBA Review 2026: Is the Premium Worth It?",

@@ -343,6 +343,24 @@
       "source": "lib/data.ts Bharati Vidyapeeth MBA and the published /blog/bharati-vidyapeeth-online-mba-review",
       "verified_date": "2026-08-24",
       "note": "Comparison figure cited in the fee bar chart. Matches Bharati Vidyapeeth getDisplayFee; cross-reference, not an Amrita fee."
+    },
+    {
+      "slug": "sppu-online-mba-review",
+      "figure": 40220,
+      "university": "savitribai-phule-pune-university-online",
+      "programme": "MBA",
+      "source": "Owner-confirmed SPPU online MBA fee structure (Rishi Kumar), Rs 40,220 per semester",
+      "verified_date": "2026-08-24",
+      "note": "Per-semester tuition component (x4 = Rs 1,60,880 total, which matches getDisplayFee). Allowlisted because the per-semester figure attributes to SPPU MBA via slug fallback and reads as a MISMATCH against the full-programme total."
+    },
+    {
+      "slug": "sppu-online-mba-review",
+      "figure": 1000,
+      "university": "savitribai-phule-pune-university-online",
+      "programme": "MBA",
+      "source": "Owner-confirmed SPPU online MBA fee structure (Rishi Kumar), one-time registration",
+      "verified_date": "2026-08-24",
+      "note": "One-time registration fee, not tuition. Allowlisted because it attributes to SPPU MBA via slug fallback and reads as a MISMATCH against the tuition total."
     }
   ]
 }
