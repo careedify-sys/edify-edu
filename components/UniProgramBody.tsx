@@ -9,6 +9,7 @@ import { getShortUniversityName } from '@/lib/format'
 import { COUPONS } from '@/lib/coupons'
 import type { Program } from '@/lib/data'
 import { getPageContent } from '@/lib/data/page-content'
+import { getDisplayFee } from '@/lib/fees'
 import type { PageContent } from '@/lib/data/page-content-schema'
 
 import SchemaBlock       from './SchemaBlock'
@@ -253,7 +254,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
                   universityId={u.id}
                   programSlug={programSlug}
                   program={program}
-                  fees={pd.fees}
+                  fees={getDisplayFee(u, program).ok ? (getDisplayFee(u, program).compact || pd.fees) : 'On request'}
                   duration={pd.duration}
                   cleanName={cleanName}
                 />

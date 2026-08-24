@@ -1,6 +1,7 @@
-import type { University, ProgramDetail } from '@/lib/data'
+import type { University, ProgramDetail, Program } from '@/lib/data'
 import type { Coupon } from '@/lib/coupons'
 import { formatUniversityDisplayName } from '@/lib/format'
+import { getDisplayFee } from '@/lib/fees'
 
 interface Props {
   u: University
@@ -40,13 +41,17 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
   // artefacts like "Galgotias University Online Online MBA".
   const brand = formatUniversityDisplayName(u.name)
 
+  // Canonical fee source. When getDisplayFee suppresses (no verified fee), the
+  // schema must not assert a fee fragment or an Offer price. See lib/fees.ts.
+  const fee = getDisplayFee(u, program as Program)
+
   const courseSchema = {
     '@context': 'https://schema.org',
     '@type': 'Course',
     name: spec ? `${brand} Online ${program}: ${spec} Specialisation` : `${brand} Online ${program}`,
     description: spec
       ? `Online ${program} with ${spec} specialisation from ${brand}. NAAC ${u.naac} accredited, UGC DEB approved. Admissions open for ${year}.`
-      : `UGC DEB approved Online ${program} from ${brand}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations, fees ${pd.fees || `from ₹${Math.round(u.feeMin / 1000)}K`}.`,
+      : `UGC DEB approved Online ${program} from ${brand}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations${fee.ok ? `, fees ${fee.compact}` : ''}.`,
     provider: {
       '@type': 'CollegeOrUniversity',
       name: u.name,
@@ -56,10 +61,10 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
     courseMode: 'Online',
     timeRequired: `P${durationYears}Y`,
     url: pageUrl,
-    offers: u.feeMin ? (u.feeMax && u.feeMax !== u.feeMin ? {
+    offers: (fee.ok && fee.min) ? (fee.max && fee.max !== fee.min ? {
       '@type': 'AggregateOffer',
-      lowPrice: String(u.feeMin),
-      highPrice: String(u.feeMax),
+      lowPrice: String(fee.min),
+      highPrice: String(fee.max),
       priceCurrency: 'INR',
       offerCount: '2',
       availability: 'https://schema.org/InStock',
@@ -67,7 +72,7 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
       category: 'Online Education',
     } : {
       '@type': 'Offer',
-      price: String(u.feeMin),
+      price: String(fee.min),
       priceCurrency: 'INR',
       availability: 'https://schema.org/InStock',
       url: pageUrl,

@@ -1,8 +1,9 @@
 'use client'
 
 import Image from 'next/image'
-import type { University, ProgramDetail } from '@/lib/data'
+import type { University, ProgramDetail, Program } from '@/lib/data'
 import { cleanCareerOutcome, formatINR, getProgramLevel } from '@/lib/format'
+import { getDisplayFee } from '@/lib/fees'
 import { TrendingUp } from 'lucide-react'
 import LOGOS_MANIFEST from '@/lib/data/logos-manifest.json'
 import RankingBadge from './RankingBadge'
@@ -38,8 +39,13 @@ export default function UniHero({ u, program, pd, cleanName, spec, customH1 }: P
 
   const eligibilityLabel = ['MBA', 'MCA'].includes(program) ? 'Grad + 50%' : '10+2 + 50%'
 
+  const feeDisplay = getDisplayFee(u, program as Program)
+  const feeValue = feeDisplay.ok
+    ? (feeDisplay.compact || pd.fees || formatINR(u.feeMin))
+    : 'On request'
+
   const stats = [
-    { label: 'Total Fees', value: pd.fees || formatINR(u.feeMin), highlight: true },
+    { label: 'Total Fees', value: feeValue, highlight: true },
     { label: 'Duration',   value: pd.duration || '2 Years',       highlight: false },
     { label: 'Eligibility', value: eligibilityLabel,              highlight: false },
     { label: 'NAAC',       value: u.naac,                         highlight: false },

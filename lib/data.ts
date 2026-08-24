@@ -447,7 +447,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ['Cyber Security', 'Data Science', 'Full Stack Web Development'],
-        fees: '₹0.2L – ₹1.2L',
+        fees: '₹1,22,400',
         duration: '3 Years (6 Semesters)',
         roles: ['Software Developer', 'Web Developer', 'System Administrator', 'Data Analyst', 'IT Support Engineer', 'Database Administrator'],
         avgSalary: '₹3L – ₹7L per annum',
@@ -3421,9 +3421,19 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     notFor: ['Non-quantitative learners', 'Campus experience seekers'],
     programs: ['MBA', 'BBA', 'BCA', 'B.Com', 'M.Com', 'MCA'],
     programDetails: {
+      'MCA': {
+        specs: ['General'],
+        fees: '₹1,60,000',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from GLS University. Recognised for corporate hiring in software and IT roles.',
+      },
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Data Science & AI', 'International Finance & Accounting (ACCA)', 'Supply Chain & Logistics', 'Cyber Security', 'Pharmaceutical Management'],
-        fees: '₹0.5L – ₹3.0L',
+        fees: '₹1,90,000',
         duration: '2 Yrs',
         roles: ['Financial Analyst', 'Credit Analyst', 'IB Trainee', 'Tax Analyst'],
         avgSalary: '₹5L – ₹14L per annum',

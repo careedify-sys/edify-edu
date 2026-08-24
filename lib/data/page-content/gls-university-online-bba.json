@@ -1,0 +1,72 @@
+{
+  "uniSlug": "gls-university-online",
+  "program": "bba",
+  "sections": {
+    "tldr": "TL;DR: The GLS University online BBA is a UGC-DEB approved three-year Bachelor of Business Administration, delivered fully online. GLS University holds NAAC A+ accreditation. Specialisations include FinTech & AI, Digital Sciences & Business Management, Logistics & Supply Chain Management, Data Science & AI. It suits students who have finished 10+2 and want a recognised BBA they can complete online. For the current confirmed fee and EMI options, speak with our counsellor, since the fee for this programme is verified case by case rather than published as a fixed table.",
+    "hero": {
+      "eyebrow": "Online BBA",
+      "headline": "GLS University Online BBA",
+      "sub": "A UGC-DEB approved, NAAC A+ Bachelor of Business Administration, delivered online."
+    },
+    "ugcDeb": {
+      "heading": "GLS University Online BBA: UGC-DEB Approval and Validity",
+      "body": "The UGC Distance Education Bureau regulates every online degree in India. GLS University is UGC-DEB entitled for online delivery, which means this BBA is valid for government and PSU recruitment, for private-sector employment, and for higher study at recognised Indian universities. GLS University also holds NAAC A+ accreditation. Always confirm the current entitlement for your admission year at deb.ugc.ac.in before you enrol."
+    },
+    "abcId": {
+      "heading": "Academic Bank of Credits (ABC ID)",
+      "body": "Every student in a UGC-approved online programme needs an Academic Bank of Credits (ABC) ID. You create it free on the ABC portal at abc.gov.in, usually through your DigiLocker account. As you clear each semester of the GLS University online BBA, your credits are deposited against this ID, which makes it easier to carry credits forward or move to an MBA or a specialised master's later. Keep the same ABC ID through the whole three-year programme."
+    },
+    "redFlags": {
+      "heading": "What to Check Before You Enrol",
+      "flags": [
+        {
+          "sentence1": "GLS University does not publish a single fixed fee table for this online BBA.",
+          "sentence2": "Get the current fee and any EMI terms confirmed in writing before you pay, rather than relying on a figure quoted elsewhere."
+        },
+        {
+          "sentence1": "This is a fully online programme with no on-campus classes.",
+          "sentence2": "If you want in-person teaching or a campus experience, this is not the right format for you."
+        },
+        {
+          "sentence1": "Online study is self-driven and career support is not guaranteed.",
+          "sentence2": "Plan to build your own study routine, and expect to run your own job search after you graduate."
+        },
+        {
+          "sentence1": "UGC-DEB entitlement is granted intake by intake.",
+          "sentence2": "Confirm that GLS University is on the current approved list at deb.ugc.ac.in for your admission year before you enrol."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Is the GLS University online BBA valid?",
+        "answer": "Yes. GLS University is UGC-DEB entitled for online delivery and holds NAAC A+. The BBA is valid for employment, for government and PSU recruitment, and for higher study at recognised Indian universities. Confirm the current status at deb.ugc.ac.in."
+      },
+      {
+        "question": "Who can apply for the GLS University online BBA?",
+        "answer": "You need a pass in 10+2 (any stream) from a recognised board. The online format lets you study from anywhere on your own schedule. Confirm the exact cut-off with the university before applying."
+      },
+      {
+        "question": "How long is the GLS University online BBA?",
+        "answer": "It is a three-year programme delivered fully online, which lets you study around work or other commitments."
+      },
+      {
+        "question": "What specialisations does the GLS University online BBA offer?",
+        "answer": "Current specialisations include FinTech & AI, Digital Sciences & Business Management, Logistics & Supply Chain Management, Data Science & AI. The core curriculum, covering the fundamentals of management, marketing, finance, human resources and operations, is the same across all of them, so choose the one that matches the role you want next. Confirm the live list with the university."
+      },
+      {
+        "question": "Who should consider the GLS University online BBA?",
+        "answer": "It suits students who have finished 10+2 and want a recognised BBA they can complete online. For the BBA you would study the fundamentals of management, marketing, finance, human resources and operations, and typical early roles include management trainee, marketing executive, sales executive. Many graduates go on to an MBA or a specialised master's."
+      },
+      {
+        "question": "What is the fee for the GLS University online BBA?",
+        "answer": "The current confirmed fee is verified case by case rather than published as a fixed table. Speak with our counsellor for the latest fee and EMI options, and confirm the figure with the university in writing before you pay."
+      }
+    ]
+  },
+  "metadata": {
+    "generatedAt": "2026-08-24",
+    "source": "gen-hidden-hub-content",
+    "note": "Factual hub content to index a no-fee hidden page; fee shown via counsellor CTA."
+  }
+}
