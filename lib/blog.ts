@@ -41,6 +41,267 @@ export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "amrita-online-mba-review",
+    title: "Amrita Online MBA Review 2026: Is the Rs 1.76 Lakh Premium Worth It?",
+    seoTitle: "Amrita Online MBA Review 2026: Is the Premium Worth It?",
+    metaDescription: "Amrita online MBA fees run Rs 1.76L to Rs 2.6L by specialisation. An honest review of what the premium buys: NAAC A++, NIRF Management rank, AICTE and WES.",
+    category: "Online MBA Programs",
+    tags: ["amrita online mba","amrita online mba fees","amrita vishwa vidyapeetham online mba","amrita ahead online mba","amrita online mba review","naac a++ online mba","nirf ranked online mba","Amrita Online MBA Fees 2026"],
+    publishedAt: "2026-08-24",
+    readTime: 8,
+    targetKeyword: "Amrita online MBA review",
+    relatedUniversities: ["amrita-vishwa-vidyapeetham-online"],
+    status: "published",
+    author: "Rishi Kumar",
+    ctaTitle: "Compare Amrita Against Other Online MBA Programmes",
+    ctaDesc: "See how a NIRF-ranked, AICTE-approved online MBA compares against cheaper NAAC A++ options. Public UGC, NAAC and NIRF data only, no paid rankings.",
+    faqs: [
+      { q: "What is the total fee for the Amrita online MBA?", a: "Rs 1,76,000 to Rs 2,60,000 for the full two-year programme, with the exact figure depending on the specialisation you choose. The advanced technology tracks such as AI and Business Analytics sit near the top of that band. Fees are indicative, so confirm the current figure for your chosen specialisation on the official Amrita AHEAD portal before you pay." },
+      { q: "Is the Amrita online MBA valid?", a: "Yes. Amrita Vishwa Vidyapeetham is UGC-DEB approved for online delivery, and the online MBA also carries AICTE approval. The university holds NAAC A++. The degree is valid nationally for employment and further study. You can confirm the current approval status yourself at deb.ugc.ac.in." },
+      { q: "Is the Amrita online MBA AICTE approved?", a: "Yes. AICTE approval applies to the online MBA, which several cheaper NAAC A++ options do not carry. For most private hiring this changes nothing, since UGC-DEB approval already establishes validity, but it matters if your employer or a specific government rule asks for AICTE." },
+      { q: "Does Amrita have a NIRF rank?", a: "Yes. Amrita Vishwa Vidyapeetham holds NIRF Management rank 26 for 2025, and the parent university ranks 8th in the University category. NIRF does not rank online programmes separately, so the rank belongs to the university that grants your degree rather than to the online mode. Almost no online-MBA provider carries a NIRF rank at all, which is part of what the premium buys." },
+      { q: "Is the Amrita online degree WES recognised?", a: "Yes. Amrita degrees are assessed by World Education Services, which smooths credential evaluation if you plan to study or work abroad in a WES-using system such as Canada. A cheaper degree that no foreign evaluator recognises can cost you more later." },
+      { q: "Is the Amrita online MBA the same as the campus MBA?", a: "No. Amrita runs full-time campus MBAs across Coimbatore, Bengaluru, Kochi and other centres, admitted separately with their own fees. The programme reviewed here is the online MBA delivered through Amrita AHEAD, a different product with different pricing and no campus attendance. The NIRF rank and NAAC grade apply to the university as a whole, so they cover both routes." },
+      { q: "What specialisations does the Amrita online MBA offer?", a: "Ten. Artificial Intelligence, Business Analytics, FinTech and an ESG track sit alongside the classic streams: Finance, Marketing, Operations Management, Human Resource Management, International Finance and Accounting, and General Management. The tech-facing tracks tend to sit at the top of the fee band." },
+      { q: "Is the Amrita online MBA worth the premium?", a: "It depends on what you will use. If you need AICTE on the certificate, plan to work or study abroad and want WES recognition, want a NIRF-ranked institution, or want a tech specialisation, the premium is justified. If you only need a valid, well accredited MBA, a NAAC A++ degree from DDU Gorakhpur costs a third as much and carries the same UGC-DEB validity." },
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 24 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Programme list and specialisations verified against the official Amrita AHEAD online portal on 24 August 2026. Fees are indicative and vary by specialisation, so confirm the current figure for your chosen track on the portal before you pay. Accreditation reflects Amrita Vishwa Vidyapeetham's NAAC A++ grade and its NIRF 2025 standing. EdifyEdu accepts no referral commission from any university.</em></p>
+
+<p>Most online MBAs that cost this much are selling you a brand that has no independent ranking to back it up. Amrita is the rare exception, and that is the whole story here.</p>
+
+<p>Amrita Vishwa Vidyapeetham runs its online degrees through Amrita AHEAD. The MBA costs Rs 1,76,000 to Rs 2,60,000 depending on the specialisation. That is premium-private pricing, in the same band as Bharati Vidyapeeth. The question this review answers is simple: does the premium buy something real, or just a name?</p>
+
+<div class="callout-key">
+  <strong>Amrita Online MBA at a glance</strong>
+  <ul>
+    <li><strong>MBA fee:</strong> Rs 1,76,000 to Rs 2,60,000 for the full two years, by specialisation</li>
+    <li><strong>NAAC:</strong> A++ , awarded to Amrita Vishwa Vidyapeetham</li>
+    <li><strong>NIRF 2025:</strong> Management rank 26. The parent university also ranks 8th in the University category</li>
+    <li><strong>Approvals:</strong> UGC-DEB approved for online delivery. AICTE approval applies to the online MBA</li>
+    <li><strong>WES:</strong> Recognised, which matters if you plan to study or work abroad</li>
+    <li><strong>Specialisations:</strong> 10, including AI, Business Analytics, FinTech and ESG</li>
+  </ul>
+</div>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Amrita online MBA snapshot: total fee Rs 1,76,000 to Rs 2,60,000 for two years by specialisation, NAAC A plus plus with NIRF Management rank 26 for 2025, UGC-DEB approved with AICTE and WES recognition." style="width:100%;height:auto">
+  <rect width="720" height="300" rx="14" fill="#0f172a"/>
+  <rect x="0" y="0" width="720" height="5" rx="2" fill="#f97316"/>
+  <text x="32" y="52" fill="#f1f5f9" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700">Amrita Vishwa Vidyapeetham Online MBA</text>
+  <text x="32" y="76" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="13">Amrita AHEAD  ·  Deemed-to-be University  ·  Verified 24 Aug 2026</text>
+
+  <rect x="32" y="102" width="212" height="86" rx="10" fill="#1e293b"/>
+  <text x="48" y="128" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1.2">TOTAL PROGRAMME FEE</text>
+  <text x="48" y="162" fill="#f97316" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">Rs 1.76L–2.6L</text>
+  <text x="48" y="180" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="11">Two years, by specialisation</text>
+
+  <rect x="256" y="102" width="212" height="86" rx="10" fill="#1e293b"/>
+  <text x="272" y="128" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1.2">ACCREDITATION</text>
+  <text x="272" y="162" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700">NAAC A++</text>
+  <text x="272" y="180" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="11">NIRF Management #26, 2025</text>
+
+  <rect x="480" y="102" width="208" height="86" rx="10" fill="#1e293b"/>
+  <text x="496" y="128" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1.2">APPROVAL</text>
+  <text x="496" y="162" fill="#f1f5f9" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700">UGC-DEB</text>
+  <text x="496" y="180" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="11">AICTE + WES recognised</text>
+
+  <rect x="32" y="208" width="656" height="64" rx="10" fill="#f97316" fill-opacity="0.12" stroke="#f97316" stroke-opacity="0.35"/>
+  <text x="52" y="234" fill="#f97316" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="1">THE HEADLINE</text>
+  <text x="52" y="256" fill="#e2e8f0" font-family="Arial,Helvetica,sans-serif" font-size="13">You pay premium-private prices, but here the ranking, AICTE approval and WES recognition are real.</text>
+</svg>
+<p class="svg-caption">Sources: official Amrita AHEAD portal for programmes and fees, NIRF 2025 for the Management rank, university disclosures for NAAC A++. Verified 24 August 2026.</p>
+</div>
+
+<h2>Where Rs 1.76 Lakh Sits Against the Rest</h2>
+
+<p>The fee only means something in context. Here it is against three online MBAs reviewed recently on this site, all four holding NAAC A++.</p>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bar chart of total online MBA fees. DDU Gorakhpur Rs 52,500, Parul Rs 1,50,000, Bharati Vidyapeeth Rs 1,78,000, and Amrita Rs 1,76,000 rising to Rs 2,60,000 by specialisation. Amrita is the priciest at the top of its range and the only one with a NIRF rank." style="width:100%;height:auto">
+  <rect width="720" height="250" rx="12" fill="#f1f5f9"/>
+  <text x="28" y="34" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Four NAAC A++ online MBAs, priced very differently</text>
+  <text x="28" y="54" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="12">Total programme fee, verified against each university</text>
+
+  <rect x="215" y="78" width="93" height="26" rx="5" fill="#94a3b8"/>
+  <text x="28" y="96" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="12">DDU Gorakhpur</text>
+  <text x="316" y="96" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="12">Rs 52,500</text>
+
+  <rect x="215" y="114" width="265" height="26" rx="5" fill="#94a3b8"/>
+  <text x="28" y="132" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="12">Parul University</text>
+  <text x="488" y="132" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="12">Rs 1,50,000</text>
+
+  <rect x="215" y="150" width="315" height="26" rx="5" fill="#94a3b8"/>
+  <text x="28" y="168" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="12">Bharati Vidyapeeth</text>
+  <text x="538" y="168" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="12">Rs 1,78,000</text>
+
+  <rect x="215" y="186" width="311" height="26" rx="5" fill="#f97316"/>
+  <rect x="526" y="186" width="149" height="26" rx="5" fill="#f97316" fill-opacity="0.35"/>
+  <text x="28" y="204" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">Amrita (this review)</text>
+  <text x="215" y="230" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">Rs 1.76L rising to Rs 2.6L by specialisation</text>
+</svg>
+<p class="svg-caption">All four hold NAAC A++. Amrita sits at the top of the price band, and is the only one of the four carrying a NIRF rank.</p>
+</div>
+
+<p>Read the chart honestly. Amrita is the most expensive of the four, and at the top of its range it costs five times what DDU charges. The accreditation grade is identical. So the premium is not buying the NAAC letter, it is buying the four things in the next section.</p>
+
+<div class="callout-warning">
+  <strong>All fees here are indicative and vary by specialisation.</strong> Amrita prices its online MBA on a band from Rs 1,76,000 to Rs 2,60,000, and the exact figure depends on the specialisation you pick. The numbers above are accurate as of 24 August 2026. Confirm the current fee for your chosen track on the official Amrita AHEAD portal before you pay. Verify the university's online-delivery approval at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>.
+</div>
+
+<h2>What the Premium Actually Buys</h2>
+
+<p>Set Amrita next to DDU Gorakhpur, the cheapest NAAC A++ online MBA on this site at Rs 52,500. Both are UGC-DEB approved. Both hold the same NAAC grade. Everything below the second line is what your extra money pays for.</p>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparison of Amrita at Rs 1.76 lakh and above against DDU Gorakhpur at Rs 52,500. Both are UGC-DEB approved and NAAC A plus plus. Amrita adds AICTE listing, a NIRF Management rank of 26, WES recognition, ten specialisations against seven, and dedicated online-first admissions." style="width:100%;height:auto">
+  <rect width="720" height="330" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="26" y="30" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">What the Amrita premium actually buys</text>
+  <text x="26" y="49" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="12">Both are UGC-DEB and NAAC A++. The premium buys everything below the second line.</text>
+
+  <text x="26"  y="82" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1">FEATURE</text>
+  <text x="430" y="82" fill="#f97316" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="1">AMRITA 1.76L+</text>
+  <text x="590" y="82" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1">DDU 52.5K</text>
+  <line x1="26" y1="92" x2="694" y2="92" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="26" y="116" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">UGC-DEB approved</text>
+  <text x="440" y="116" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Yes</text>
+  <text x="600" y="116" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Yes</text>
+
+  <text x="26" y="146" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">NAAC grade</text>
+  <text x="440" y="146" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">A++</text>
+  <text x="600" y="146" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">A++</text>
+  <line x1="26" y1="160" x2="694" y2="160" stroke="#0f172a" stroke-width="1.5"/>
+
+  <text x="26" y="184" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">AICTE approved</text>
+  <text x="440" y="184" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Yes</text>
+  <text x="600" y="184" fill="#ef4444" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">No</text>
+
+  <text x="26" y="214" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">NIRF 2025 rank</text>
+  <text x="440" y="214" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">Management #26</text>
+  <text x="600" y="214" fill="#ef4444" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">None</text>
+
+  <text x="26" y="244" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">WES recognised (for abroad)</text>
+  <text x="440" y="244" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Yes</text>
+  <text x="600" y="244" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="13">Not stated</text>
+
+  <text x="26" y="274" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">MBA specialisations</text>
+  <text x="440" y="274" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="14">10</text>
+  <text x="600" y="274" fill="#475569" font-family="Arial,Helvetica,sans-serif" font-size="14">7</text>
+
+  <text x="26" y="304" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">Online-first admissions and support</text>
+  <text x="440" y="304" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Yes</text>
+  <text x="600" y="304" fill="#f97316" font-family="Arial,Helvetica,sans-serif" font-size="13">Limited</text>
+</svg>
+<p class="svg-caption">Verified against each university's official portal, NIRF 2025 and accreditation disclosures, August 2026. WES status shown only where the university states it.</p>
+</div>
+
+<p><strong>A NIRF-ranked institution.</strong> This is the rarest thing on the list. Amrita Vishwa Vidyapeetham holds NIRF Management rank 26 for 2025, and the parent university ranks 8th in the University category. Almost no online-MBA provider in India carries a NIRF rank at all. NIRF does not rank online programmes on their own, so the rank belongs to the university that grants your degree, not to the online mode. That is still a genuine signal, and most competitors at this price cannot show one.</p>
+
+<p><strong>AICTE approval.</strong> The online MBA carries AICTE approval, which DDU and several cheaper options do not. For most private hiring this changes nothing, since UGC-DEB approval already establishes validity. If your employer or a specific government rule asks for AICTE, this is where the premium pays for itself.</p>
+
+<p><strong>WES recognition.</strong> If you plan to study or work abroad, Amrita degrees are assessed by World Education Services. That smooths credential evaluation for Canada and other WES-using systems. A cheaper degree that no foreign evaluator recognises can cost you far more later.</p>
+
+<p class="pull">The premium is not buying the NAAC letter. It is buying a ranking, AICTE, WES and a wider specialisation menu.</p>
+
+<h2>The Specialisations Are the Modern Part</h2>
+
+<p>Amrita lists 10 MBA specialisations, and the tech-facing ones are stronger than most online catalogues.</p>
+
+<p><a href="/universities/amrita-vishwa-vidyapeetham-online/mba/artificial-intelligence">Artificial Intelligence</a>, <a href="/universities/amrita-vishwa-vidyapeetham-online/mba/business-analytics">Business Analytics</a> and <a href="/universities/amrita-vishwa-vidyapeetham-online/mba/fintech">FinTech</a> sit alongside an ESG track, which few Indian online MBAs offer yet. The classic streams are all present too: Finance, Marketing, Operations, HR, International Finance and Accounting, and General Management.</p>
+
+<p>The advanced technology tracks tend to sit at the top of the fee band. If you want AI or Analytics, budget closer to Rs 2,60,000 and confirm the exact figure before you enrol. If a classic stream like Marketing or HR is what you need, you will pay nearer the Rs 1,76,000 base.</p>
+
+
+<div class="emi-block">
+  <strong>On EMI.</strong> At this fee level EMI matters. Amrita AHEAD runs instalment options rather than one upfront payment. Ask admissions for the exact schedule and whether any no-cost EMI applies to your intake, and work the monthly number yourself with our <a href="/tools/emi-calculator">EMI calculator</a> before you commit.
+</div>
+
+<h2>Do Not Confuse the Online MBA With the Campus One</h2>
+
+<p>This catches people out with Amrita, the same way it does with any large multi-campus university.</p>
+
+<p>Amrita Vishwa Vidyapeetham runs full-time campus MBAs across Coimbatore, Bengaluru, Kochi and other centres, admitted on a separate basis with their own fees. The programme reviewed here is the online MBA delivered through Amrita AHEAD. It is a different product with different pricing and no campus attendance.</p>
+
+<p>The NIRF rank and the NAAC grade belong to the university as a whole, so they apply to both. The teaching format, the fee and the student experience do not. If a page quotes an Amrita MBA fee, check whether it is describing the campus or the online route before you compare anything.</p>
+
+<h2>Who Should Apply and Who Should Not</h2>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Decision matrix. Apply if you need AICTE approval, if you plan to study or work abroad and want WES recognition, if you want a NIRF-ranked institution, or if you want a tech specialisation like AI, Analytics or FinTech. Do not apply if budget is the binding constraint, if you only need a valid UGC-DEB degree, if you will not use the ranking, AICTE or WES, or if you want the on-campus Amrita experience." style="width:100%;height:auto">
+  <rect width="720" height="340" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+
+  <rect x="16" y="16" width="336" height="308" rx="10" fill="#10b981" fill-opacity="0.07" stroke="#10b981" stroke-opacity="0.3"/>
+  <text x="40" y="48" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing="1">APPLY IF</text>
+  <text x="40" y="82" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">Your employer or a government rule</text>
+  <text x="40" y="100" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">asks for AICTE approval</text>
+  <text x="40" y="134" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You plan to study or work abroad</text>
+  <text x="40" y="152" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">and want WES recognition</text>
+  <text x="40" y="186" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You want a NIRF-ranked institution</text>
+  <text x="40" y="204" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">granting the degree</text>
+  <text x="40" y="238" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You want a tech specialisation:</text>
+  <text x="40" y="256" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">AI, Analytics, FinTech or ESG</text>
+  <text x="40" y="290" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">The brand will carry weight in</text>
+  <text x="40" y="308" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">your sector</text>
+
+  <rect x="368" y="16" width="336" height="308" rx="10" fill="#ef4444" fill-opacity="0.07" stroke="#ef4444" stroke-opacity="0.3"/>
+  <text x="392" y="48" fill="#ef4444" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing="1">DO NOT APPLY IF</text>
+  <text x="392" y="82" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">Budget is the binding constraint</text>
+  <text x="392" y="100" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">and a cheaper A++ degree will do</text>
+  <text x="392" y="134" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You only need a valid UGC-DEB</text>
+  <text x="392" y="152" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">degree, nothing more</text>
+  <text x="392" y="186" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You will not use the ranking,</text>
+  <text x="392" y="204" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">AICTE or WES in practice</text>
+  <text x="392" y="238" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You want the on-campus Amrita</text>
+  <text x="392" y="256" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">experience, not the online route</text>
+  <text x="392" y="290" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You are comparing on price</text>
+  <text x="392" y="308" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">alone</text>
+</svg>
+<p class="svg-caption">Decision matrix based on the official Amrita AHEAD portal, NIRF 2025 and verified accreditation disclosures, August 2026.</p>
+</div>
+
+<h3>Apply if you will use what the premium buys</h3>
+
+<p>The clearest case is a candidate who needs AICTE on the certificate, plans to work or study abroad, or wants a genuinely ranked institution behind the degree. On all three, Amrita gives you something the cheaper options cannot.</p>
+
+<p>The tech specialisations are the other strong reason. If you want an AI, Analytics or FinTech MBA and you will actually build a career on that track, the specialised curriculum is worth paying for.</p>
+
+<h3>Skip it if you only need the degree</h3>
+
+<p>If what you need is a valid, well accredited MBA and nothing more, the premium is hard to justify. A <a href="/blog/ddu-gorakhpur-online-mba-review">NAAC A++ degree from DDU Gorakhpur</a> costs a third of Amrita's base and carries the same UGC-DEB validity. Compare against the <a href="/blog/bharati-vidyapeeth-online-mba-review">Bharati Vidyapeeth online MBA</a> too, which sits at almost the same price and also carries AICTE.</p>
+
+<div class="cta-box">
+  <strong>Comparing Amrita against other online MBAs?</strong>
+  <p>Edify compares public UGC, NAAC and NIRF data across universities. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/compare">Compare online MBA programmes</a>
+  <a class="ilink" href="/universities/amrita-vishwa-vidyapeetham-online/mba">See the full Amrita MBA breakdown</a>
+</div>
+
+<h2>Final Word</h2>
+
+<p>Amrita is the premium online MBA that mostly earns its premium. A NAAC A++ university with a NIRF Management rank of 26, AICTE approval on the online MBA, WES recognition and a modern specialisation menu. At Rs 1,76,000 to Rs 2,60,000 it is priced with the top private options, but unlike many of them it has independent standing to point to.</p>
+
+<p>The honest caveat is the same one as always. If you will not use the ranking, the AICTE listing or the WES route, you are paying for signals you do not need, and a cheaper A++ degree does the same job. Decide which of the four things above you will actually use, and the price makes sense or it does not. Start with the <a href="/universities/amrita-vishwa-vidyapeetham-online">full Amrita profile</a>, then work the monthly cost before you commit.</p>
+
+<div class="cta-box">
+  <strong>Not sure the premium is worth it for you?</strong>
+  <p>Tell us your goal and budget, and we will compare Amrita against the cheaper A++ options honestly. Edify compares public UGC, NAAC and NIRF data only. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/contact">Request a free counselling call</a>
+</div>
+
+<h2>Sources to Consult</h2>
+
+<ul>
+  <li><a href="https://onlineamrita.com/" target="_blank" rel="noopener">Amrita AHEAD online portal</a> for the official programme list, specialisations and current fees</li>
+  <li><a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">UGC-DEB approved institutions list</a> to confirm current online delivery approval</li>
+  <li><a href="https://naac.gov.in" target="_blank" rel="noopener">NAAC accreditation database</a> to confirm the A++ grade and validity window</li>
+  <li><a href="https://nirfindia.org" target="_blank" rel="noopener">NIRF India Rankings</a> to check Amrita's Management and University category positions</li>
+</ul>
+
+<div class="disclaimer">
+  The programme list and specialisations in this review reflect the official Amrita AHEAD portal as of 24 August 2026. Fees are indicative, vary by specialisation, and should be re-checked on the portal before any payment. Accreditation reflects Amrita Vishwa Vidyapeetham's NAAC A++ grade and its NIRF 2025 standing, which apply to the university that grants the degree rather than to the online mode specifically. Approval status can change between intake cycles. EdifyEdu accepts no referral commission from Amrita or any other institution mentioned, and no university pays for placement or ranking on this site.
+</div>`,
+  },
+  {
     slug: 'ddu-gorakhpur-online-mba-review',
     title: 'DDU Gorakhpur Online MBA Review 2026: Rs 52,500 From a NAAC A++ University, and What That Price Does Not Buy',
     seoTitle: 'DDU Gorakhpur Online MBA Review 2026: Rs 52,500 Verdict',

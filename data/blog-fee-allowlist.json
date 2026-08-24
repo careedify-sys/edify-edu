@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23",
+  "updatedAt": "2026-08-24",
   "note": "Owner-verified fee figures that have no counterpart in lib/data.ts and therefore cannot resolve to MATCH via getDisplayFee. Only for figures a university's admissions team has confirmed in writing for a specific specialisation-tier or payment-mode variant that the fees hub does not model yet. Prefer the FeeVariant schema when implemented (see audits/fee-model-proposal-2026-08-07.md). Adding an entry here is a source-of-truth commitment: someone will re-verify at each intake.",
   "entries": [
     {
@@ -298,6 +298,51 @@
       "source": "Not a quoted fee. Editorial threshold used in the decision matrix.",
       "verified_date": "2026-08-23",
       "note": "Appears as \"Rs 1.6 lakh\" in the apply/do-not-apply SVG, describing a reader budget ceiling against the Rs 1,50,000 fee. Not a price Parul quotes and not attached to any programme tier."
+    },
+    {
+      "slug": "amrita-online-mba-review",
+      "figure": 176000,
+      "university": "amrita-vishwa-vidyapeetham-online",
+      "programme": "MBA",
+      "source": "lib/data.ts (getDisplayFee resolves MBA to Rs 1.76L-2.6L), owner-confirmed with Rishi Kumar",
+      "verified_date": "2026-08-24",
+      "note": "MBA base fee. Resolves to MATCH in prose; allowlisted only to cover SVG-chart and aria-label occurrences the scanner cannot attribute (SVG <text> has no in-window university alias)."
+    },
+    {
+      "slug": "amrita-online-mba-review",
+      "figure": 260000,
+      "university": "amrita-vishwa-vidyapeetham-online",
+      "programme": "MBA",
+      "source": "lib/data.ts (getDisplayFee resolves MBA to Rs 1.76L-2.6L), owner-confirmed with Rishi Kumar",
+      "verified_date": "2026-08-24",
+      "note": "MBA top-of-band fee for advanced specialisations. Resolves to MATCH in prose; allowlisted only to cover SVG-chart and aria-label occurrences the scanner cannot attribute."
+    },
+    {
+      "slug": "amrita-online-mba-review",
+      "figure": 52500,
+      "university": "deen-dayal-upadhyay-gorakhpur-university-online",
+      "programme": "MBA",
+      "source": "lib/data.ts DDU MBA and the published /blog/ddu-gorakhpur-online-mba-review",
+      "verified_date": "2026-08-24",
+      "note": "Comparison figure cited in the fee bar chart and the Amrita-vs-DDU premium table. Matches DDU getDisplayFee; appears here as a cross-reference, not an Amrita fee."
+    },
+    {
+      "slug": "amrita-online-mba-review",
+      "figure": 150000,
+      "university": "parul-university-online",
+      "programme": "MBA",
+      "source": "lib/data.ts Parul MBA and the published /blog/parul-online-mba-review",
+      "verified_date": "2026-08-24",
+      "note": "Comparison figure cited in the fee bar chart. Matches Parul getDisplayFee; cross-reference, not an Amrita fee."
+    },
+    {
+      "slug": "amrita-online-mba-review",
+      "figure": 178000,
+      "university": "bharati-vidyapeeth-university-online",
+      "programme": "MBA",
+      "source": "lib/data.ts Bharati Vidyapeeth MBA and the published /blog/bharati-vidyapeeth-online-mba-review",
+      "verified_date": "2026-08-24",
+      "note": "Comparison figure cited in the fee bar chart. Matches Bharati Vidyapeeth getDisplayFee; cross-reference, not an Amrita fee."
     }
   ]
 }

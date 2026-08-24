@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23",
+  "updatedAt": "2026-08-24",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
   "totalUnverified": 2416,
   "perSlug": {
@@ -172,6 +172,7 @@
     "why-online-mba-fees-differ-india-2026": 16,
     "parul-online-mba-review": 0,
     "bharati-vidyapeeth-online-mba-review": 13,
-    "ddu-gorakhpur-online-mba-review": 39
+    "ddu-gorakhpur-online-mba-review": 39,
+    "amrita-online-mba-review": 0
   }
 }
