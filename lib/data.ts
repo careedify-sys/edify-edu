@@ -1009,7 +1009,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management'],
-        fees: '₹31K – ₹103K',
+        fees: '₹64,000',
         duration: '3 Yrs',
         roles: ['Marketing Executive', 'Finance Trainee', 'HR Trainee', 'Business Development Trainee'],
         avgSalary: '₹3L – ₹8L per annum',
@@ -1113,7 +1113,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Retail Management', 'Entrepreneurship'],
-        fees: '₹0.1L – ₹1.2L',
+        fees: '₹96,000',
         duration: '3 Years',
         roles: ['Management Trainee', 'Sales Executive', 'Marketing Executive', 'HR Executive', 'Finance Associate', 'Business Development Executive'],
         avgSalary: '₹2.5L – ₹7L per annum',
@@ -1241,7 +1241,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'B.Com': {
         specs: ['General Management'],
-        fees: '₹0.2L – ₹1.0L',
+        fees: '₹99,000',
         duration: '3 Years (6 Semesters)',
         roles: ['Accountant', 'Tax Assistant', 'Financial Analyst', 'Auditor', 'Banking Officer', 'Commerce Executive'],
         avgSalary: '₹3L – ₹6L per annum',
@@ -1428,7 +1428,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'B.Com': {
         specs: ['General Management'],
-        fees: '₹0.1L – ₹0.8L',
+        fees: '₹75,000',
         duration: '3 Years (6 Semesters)',
         roles: ['Accountant', 'Tax Executive', 'Audit Assistant', 'Finance Executive', 'Banking Officer'],
         avgSalary: '₹2.5L – ₹5L per annum',
@@ -1738,7 +1738,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['General Management'],
-        fees: '₹0.2L – ₹1.5L',
+        fees: '₹1,35,000',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -1967,7 +1967,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved MBA from NMIMS (Narsee Monjee Institute of M — recognised for corporate hiring.'},
       'BBA': {
         specs: ['Marketing', 'Finance', 'Business Analytics'],
-        fees: '₹60K – ₹200K',
+        fees: '₹1,41,000',
         duration: '3 Years (6-year max validity)',
         roles: ['Sales Executive', 'Marketing Trainee', 'Business Analyst Trainee'],
         avgSalary: '₹3L – ₹6L per annum',
@@ -1977,7 +1977,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'B.Com': {
         specs: ['Commerce', 'Accountancy', 'Finance'],
-        fees: '₹60K – ₹200K',
+        fees: '₹99,000',
         duration: '3 Years (6-year max validity)',
         roles: ['Accounts Executive', 'Accounts Process Executive', 'Junior Financial Analyst'],
         avgSalary: '₹3L – ₹6L per annum',
@@ -2055,7 +2055,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'B.Com': {
         specs: ['General Management'],
-        fees: '₹0.3L – ₹1.7L',
+        fees: '₹2,94,000',
         duration: '3 Years',
         roles: ['Trainee Accountant', 'Tax Assistant', 'Audit Junior', 'Finance Executive'],
         avgSalary: '₹4L – ₹15L per annum',
@@ -2235,7 +2235,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['Business Analytics specialization with data-focuse'],
-        fees: '₹0.3L – ₹1.9L',
+        fees: '₹1,31,250',
         duration: '3 Years',
         roles: ['Business Analyst', 'Data Analyst', 'Machine Learning Engineer', 'Statistician', 'BI Developer', 'Market Research Analyst'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -2652,7 +2652,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programDetails: {
       'MBA': {
         specs: ['Finance', 'Human Resource Management', 'Marketing', 'Operations Management', 'Systems'],
-        fees: '₹60K – ₹200K',
+        fees: '₹91,000',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: 'Not Mentioned',
@@ -2965,7 +2965,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ['Computer Applications'],
-        fees: '₹0.2L – ₹1.2L',
+        fees: '₹79,000',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -3828,7 +3828,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management'],
-        fees: '₹0.2L – ₹1.0L',
+        fees: '₹1,02,000',
         duration: '3 Yrs',
         roles: ['Marketing Executive', 'Sales Trainee', 'Finance Trainee', 'HR Trainee', 'Business Development Trainee'],
         avgSalary: '₹3L – ₹8L per annum',
@@ -3970,7 +3970,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'B.Com': {
         specs: ['Applied Finance'],
-        fees: '₹60K – ₹200K',
+        fees: '₹1,24,000',
         duration: '3 Yrs',
         roles: ['Accounts Executive', 'Tax Trainee', 'Banking Trainee', 'Audit Trainee'],
         avgSalary: '₹2.5L – ₹7L per annum',
@@ -4227,7 +4227,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'B.Com': {
         specs: ['General Commerce'],
-        fees: '₹60K – ₹200K',
+        fees: '₹72,661',
         duration: '3 Yrs',
         roles: ['Accounts Executive', 'Tax Trainee', 'Finance Assistant'],
         avgSalary: '₹3L – ₹6L per annum',
@@ -4237,7 +4237,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'M.Com': {
         specs: ['General Commerce (Taxation', 'Finance', 'International Business)'],
-        fees: '₹60K – ₹200K',
+        fees: '₹60,000',
         duration: '2 Yrs',
         roles: ['Accounts Executive', 'Tax Analyst', 'Finance Analyst'],
         avgSalary: '₹4L – ₹10L per annum',
@@ -4915,7 +4915,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       
       'BBA': {
         specs: ['General Management'],
-        fees: '₹60K – ₹200K',
+        fees: '₹1,14,000',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -6327,7 +6327,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programDetails: {
       'B.Com': {
         specs: ['General Management'],
-        fees: '₹0.1L – ₹0.6L',
+        fees: '₹60,100',
         duration: '3 Years (6 Semesters)',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -6566,7 +6566,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'B.Com': {
         specs: ['Commerce', 'Accounting', 'Commerce Honours (Advanced Accounting & Finance)'],
-        fees: '₹60K – ₹200K',
+        fees: '₹60,000',
         duration: '3 Years',
         roles: ['Accounts Executive', 'Tax Assistant', 'Audit Trainee'],
         avgSalary: '₹3L – ₹6L per annum',
