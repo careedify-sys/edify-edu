@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26",
+  "updatedAt": "2026-08-27",
   "note": "Owner-verified fee figures that have no counterpart in lib/data.ts and therefore cannot resolve to MATCH via getDisplayFee. Only for figures a university's admissions team has confirmed in writing for a specific specialisation-tier or payment-mode variant that the fees hub does not model yet. Prefer the FeeVariant schema when implemented (see audits/fee-model-proposal-2026-08-07.md). Adding an entry here is a source-of-truth commitment: someone will re-verify at each intake.",
   "entries": [
     {
@@ -883,6 +883,33 @@
       "source": "lib/data.ts MBA fee for Bharati Vidyapeeth, verified against EdifyEdu university records",
       "verified_date": "2026-08-26",
       "note": "Bharati Vidyapeeth online MBA total fee, cited as a comparison anchor for the private NAAC A++ price band. Allowlisted because the sentence names no university, so the scanner cannot attribute it."
+    },
+    {
+      "slug": "is-parul-university-online-fake-or-legit-2026",
+      "figure": 40000,
+      "university": "parul-university-online",
+      "programme": "M.Com",
+      "source": "lib/data.ts programDetails['M.Com'].fees for Parul University Online, verified against EdifyEdu university records",
+      "verified_date": "2026-08-27",
+      "note": "Parul online M.Com total fee. Correct for that programme; allowlisted because the sentence lists several Parul programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
+    },
+    {
+      "slug": "is-parul-university-online-fake-or-legit-2026",
+      "figure": 110000,
+      "university": "parul-university-online",
+      "programme": "BCA",
+      "source": "lib/data.ts programDetails['BCA'].fees for Parul University Online, verified against EdifyEdu university records",
+      "verified_date": "2026-08-27",
+      "note": "Parul online BCA total fee. Correct for that programme; allowlisted because the sentence lists several Parul programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
+    },
+    {
+      "slug": "is-parul-university-online-fake-or-legit-2026",
+      "figure": 120000,
+      "university": "parul-university-online",
+      "programme": "MCA",
+      "source": "lib/data.ts programDetails['MCA'].fees for Parul University Online, verified against EdifyEdu university records",
+      "verified_date": "2026-08-27",
+      "note": "Parul online MCA total fee. Correct for that programme; allowlisted because the sentence lists several Parul programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
     }
   ]
 }

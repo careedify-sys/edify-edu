@@ -41,6 +41,161 @@ export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "is-parul-university-online-fake-or-legit-2026",
+    title: "Is Parul University Online Fake or Legit? The NAAC A++ Is Real, the Ranking Is Not What It Looks Like",
+    seoTitle: "Is Parul University Online Fake? No. NAAC A++, UGC-DEB",
+    metaDescription: "Parul University is a recognised Gujarat private university, UGC-DEB approved, NAAC A++, AICTE and WES. It holds a NIRF Pharmacy rank but none for University.",
+    category: "University Reviews",
+    tags: ["is parul university fake","parul university online legit","parul university ugc approved","parul university nirf rank","parul university naac grade","parul online mba valid","Parul University Fake or Legit 2026"],
+    publishedAt: "2026-08-27",
+    readTime: 7,
+    targetKeyword: "is Parul University online fake or legit",
+    relatedUniversities: ["parul-university-online"],
+    status: "published",
+    author: "Rishi Kumar",
+    ctaTitle: "Compare Parul Against Other Online Universities",
+    ctaDesc: "See accreditation, NIRF category ranks and fees side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
+    faqs: [
+      { q: "Is Parul University fake?", a: "No. Parul University is a recognised private university in Gujarat, UGC-DEB approved for online delivery and NAAC accredited at A++, the top band India awards. It appears on the UGC recognised universities list and not on the UGC list of institutions declared fake. Confirm both yourself at ugc.gov.in." },
+      { q: "Is the Parul University online degree valid?", a: "Yes. Parul is UGC-DEB entitled for online delivery, and UGC rules treat an online degree from an entitled university as equivalent to a conventional one for employment, government recruitment and further study. Entitlement is granted intake by intake, so confirm it covers your admission year and programme at deb.ugc.ac.in." },
+      { q: "Does Parul University have a NIRF rank?", a: "Yes, but only in the Pharmacy category, where it ranks 41st for 2025. It holds no rank in the University category. So if you are considering the online MBA, BCA or B.Com, Parul has no NIRF position that applies to your programme. Check both categories separately at nirfindia.org." },
+      { q: "Is Parul University NAAC A++?", a: "Yes. A++ is the top accreditation band India awards, and it is the strongest thing on Parul record. Verify the grade, the CGPA behind it and the validity window yourself at naac.gov.in, since grades are awarded for a defined period and change between assessment cycles." },
+      { q: "Is Parul University AICTE approved?", a: "Yes, and it also holds WES recognition. AICTE matters where a government or PSU recruitment rule asks for it by name, and WES matters if you plan to have the degree evaluated abroad. For most private-sector hiring neither changes anything, since UGC-DEB approval already establishes validity." },
+      { q: "How many specialisations does the Parul online MBA offer?", a: "Twenty, which is more than almost any university we track. Breadth is not automatically an advantage. Ask how many papers across the four semesters actually belong to your chosen track, because a long list can mean a shared core with one or two distinguishing electives." },
+      { q: "How much do Parul University online programmes cost?", a: "The online MBA is Rs 1,50,000 for the full two years, the MCA Rs 1,20,000, the BCA Rs 1,10,000 and the M.Com Rs 40,000. All figures are indicative, cover the full programme and change between intakes, so confirm before you pay." },
+      { q: "Is a Parul University degree valid for government jobs?", a: "Yes, on the same basis as any other UGC-recognised degree. Confirm that UGC-DEB entitlement covered your admission year for your specific programme, and read the recruitment notification you are targeting, since individual employers can set conditions beyond the UGC baseline." },
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 27 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Legal status, UGC-DEB entitlement, accreditation and ranking cross-checked against our Supabase university records on 27 August 2026. Every claim below can be confirmed on the official portals linked in this page. EdifyEdu accepts no referral commission from any university.</em></p>
+
+<p>Parul University is not fake. It is a recognised private university in Gujarat, UGC-DEB approved for online delivery, and it holds NAAC A++, the top accreditation band India awards.</p>
+
+<p>The A++ is the headline, and it is genuine. The part worth reading past the headline is what Parul does not have, because its size and its advertising both invite the assumption that it has everything.</p>
+
+<div class="callout-key">
+  <strong>Parul University Online: the verification summary</strong>
+  <ul>
+    <li><strong>Legal status:</strong> Private university, Gujarat</li>
+    <li><strong>UGC-DEB:</strong> Approved for online delivery</li>
+    <li><strong>NAAC:</strong> A++ accredited</li>
+    <li><strong>NIRF 2025:</strong> ranked 41st in the <em>Pharmacy</em> category</li>
+    <li><strong>NIRF University category:</strong> not ranked</li>
+    <li><strong>Also holds:</strong> AICTE approval and WES recognition</li>
+    <li><strong>Location:</strong> Waghodia, Gujarat</li>
+  </ul>
+</div>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 295" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Verification checklist for Parul University Online. Recognised private university: yes. UGC-DEB entitled for online delivery: yes. NAAC accredited at A plus plus: yes. AICTE approved: yes. WES recognised: yes. On the UGC fake institutions list: no. NIRF Pharmacy category rank 41. NIRF University category: not ranked in 2025." style="width:100%;height:auto">
+  <rect width="720" height="295" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="26" y="32" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">The checks that separate real from fake</text>
+  <text x="26" y="51" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="12">Parul University Online, verified 27 August 2026</text>
+  <line x1="26" y1="64" x2="694" y2="64" stroke="#e2e8f0" stroke-width="1"/>
+
+  <g font-family="Arial,Helvetica,sans-serif" font-size="13">
+    <text x="26" y="90" fill="#0f172a">Recognised private university</text>
+    <text x="556" y="90" fill="#10b981" font-size="14" font-weight="700">YES</text>
+
+    <text x="26" y="120" fill="#0f172a">UGC-DEB entitled for online delivery</text>
+    <text x="556" y="120" fill="#10b981" font-size="14" font-weight="700">YES</text>
+
+    <text x="26" y="150" fill="#0f172a">NAAC accredited</text>
+    <text x="556" y="150" fill="#10b981" font-size="14" font-weight="700">A++</text>
+
+    <text x="26" y="180" fill="#0f172a">AICTE approved</text>
+    <text x="556" y="180" fill="#10b981" font-size="14" font-weight="700">YES</text>
+
+    <text x="26" y="210" fill="#0f172a">On the UGC fake institutions list</text>
+    <text x="556" y="210" fill="#10b981" font-size="14" font-weight="700">NO</text>
+
+    <text x="26" y="240" fill="#0f172a">NIRF rank, Pharmacy category</text>
+    <text x="556" y="240" fill="#10b981" font-size="14" font-weight="700">#41</text>
+
+    <text x="26" y="270" fill="#0f172a">NIRF rank, University category</text>
+    <text x="514" y="270" fill="#B8892A" font-size="13" font-weight="700">NOT RANKED</text>
+  </g>
+</svg>
+<p class="svg-caption">Every line is checkable on a government portal. The last two are different categories, and only one of them applies to a management or computing degree.</p>
+</div>
+
+<h2>The Ranking Claim to Watch For</h2>
+
+<p>Parul appears in NIRF 2025 in the Pharmacy category at rank 41. That is real, and it says something about its pharmacy school.</p>
+
+<p>It does not appear in the University category. So if you are looking at the online MBA, BCA or B.Com, Parul has no NIRF position that applies to what you would be studying.</p>
+
+<p class="pull">A Pharmacy rank is not a University rank. Check which category any number refers to before you let it influence your shortlist.</p>
+
+<p>Our own records carried a "NIRF #101+ (University 2024)" badge for Parul until we cross-checked it against our verified accreditation data and removed it. If our data drifted, treat every ranking claim you see, ours included, as something to confirm at the source rather than accept.</p>
+
+<h2>Verify It Yourself in Five Minutes</h2>
+
+<p><strong>Check online-delivery entitlement</strong> at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>. Entitlement is granted intake by intake and programme by programme, so last year's approval does not settle this year's.</p>
+
+<p><strong>Check the accreditation</strong> at <a href="https://naac.gov.in" target="_blank" rel="noopener">naac.gov.in</a>, including the CGPA behind the A++ and the date it expires.</p>
+
+<p><strong>Check the ranking</strong> at <a href="https://nirfindia.org" target="_blank" rel="noopener">nirfindia.org</a>. Search the University category and the Pharmacy category separately and you will see the difference for yourself.</p>
+
+<p><strong>Check recognition and the fake list</strong> at <a href="https://ugc.gov.in" target="_blank" rel="noopener">ugc.gov.in</a>. Parul appears on the recognised universities list and not on the list of institutions declared fake.</p>
+
+<p>Our <a href="/verify/parul-university-online">Parul verification page</a> collects the same public records in one place.</p>
+
+<h2>The Honest Limitations</h2>
+
+<p><strong>No University-category NIRF rank.</strong> Covered above, and the single most misrepresented thing about this university.</p>
+
+<p><strong>A very large specialisation menu.</strong> Parul lists 20 MBA specialisations, more than almost any university on our site. Breadth is not automatically good. Ask how many papers across the four semesters actually belong to your chosen track, because a long list can mean a common core with one or two distinguishing electives.</p>
+
+<p><strong>Advertising volume invites scrutiny.</strong> Parul markets heavily, which is a large part of why the fake question gets asked about it at all. Heavy promotion is not evidence of a problem, but it does mean you should verify claims rather than absorb them.</p>
+
+<h2>Is the Degree Valid for Government Jobs?</h2>
+
+<p>Yes, on the same basis as any other UGC-recognised degree. UGC rules treat an online degree from an entitled university as equivalent to a conventional one for employment, government recruitment and further study.</p>
+
+<p>Confirm that entitlement covered your admission year for your specific programme, and read the recruitment notification you are targeting, since employers occasionally set conditions beyond the UGC baseline. The AICTE approval helps where a rule asks for it by name, and the WES recognition matters if you plan to have the degree evaluated abroad.</p>
+
+<h2>What It Costs</h2>
+
+<p>Parul sits in the mid range for a private university, and cheaper than several NAAC A++ peers.</p>
+
+<p>The <a href="/universities/parul-university-online/mba">online MBA costs Rs 1,50,000</a> for the full two years. The <a href="/universities/parul-university-online/mca">MCA is Rs 1,20,000</a>, the <a href="/universities/parul-university-online/bca">BCA Rs 1,10,000</a>, and the <a href="/universities/parul-university-online/mcom">M.Com Rs 40,000</a>, which is the cheapest thing on its list.</p>
+
+<div class="callout-warning">
+  <strong>Verify before you pay.</strong> All fees are indicative and change between intakes, and early-bird pricing expires. Accreditation grades and UGC-DEB entitlement are granted for defined periods and also change, so confirm the current position for your admission year and your specific programme. Start at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>.
+</div>
+
+<div class="cta-box">
+  <strong>Comparing Parul against other online universities?</strong>
+  <p>Edify compares public UGC, NAAC and NIRF data across universities. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/compare">Compare online programmes</a>
+  <a class="ilink" href="/blog/parul-online-mba-review">Read the full Parul MBA review</a>
+</div>
+
+<h2>The Verdict</h2>
+
+<p>Parul University Online is legitimate, and its NAAC A++ is the real thing. Recognised private university, UGC-DEB entitled, AICTE approved, WES recognised, and absent from the UGC fake list.</p>
+
+<p>Judge it on fit. The accreditation is as strong as anything in Indian higher education, the fees are reasonable for that band, and the honest gap is that it has no ranking signal applying to a business or computing degree. If a NIRF position matters to your plans, compare against a university that holds one in the right category. If accreditation and price are what you are weighing, Parul competes well. For the wider picture, read our <a href="/guides/is-online-degree-valid-india">guide to online degree validity in India</a>.</p>
+
+<div class="cta-box">
+  <strong>Not sure Parul fits your goal?</strong>
+  <p>Tell us the role or exam you are targeting and we will tell you honestly whether this degree clears it. Edify compares public UGC and NAAC data only. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/contact">Request a free counselling call</a>
+</div>
+
+<h2>Sources to Consult</h2>
+
+<ul>
+  <li><a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">UGC-DEB approved institutions list</a> to confirm entitlement for your programme and admission year</li>
+  <li><a href="https://naac.gov.in" target="_blank" rel="noopener">NAAC accreditation database</a> to confirm the current grade, CGPA and validity window</li>
+  <li><a href="https://nirfindia.org" target="_blank" rel="noopener">NIRF India Rankings</a> to check the Pharmacy and University categories separately</li>
+  <li><a href="https://ugc.gov.in" target="_blank" rel="noopener">UGC official notifications</a> for the recognised universities list and the list of institutions declared fake</li>
+</ul>
+
+<div class="disclaimer">
+  Legal status, accreditation and ranking details in this review reflect EdifyEdu's verified university records as of 27 August 2026, cross-checked against our Supabase accreditation data. The NIRF position quoted is a Pharmacy category rank for 2025 and belongs to the institution rather than to any online programme; Parul holds no University category rank. Accreditation grades and UGC-DEB entitlement are granted for defined periods and change between cycles, so verify the current position on the official portals before making any decision or payment. Fees are indicative and change between intakes. EdifyEdu accepts no referral commission from Parul University or any other institution mentioned, and no university pays for placement or ranking on this site.
+</div>`,
+  },
+  {
     slug: "is-ddu-gorakhpur-online-fake-or-legit-2026",
     title: "Is DDU Gorakhpur Online Fake or Legit? A NAAC A++ Degree at a Price That Makes People Doubt It",
     seoTitle: "Is DDU Gorakhpur Online Fake? No. NAAC A++, CGPA 3.78",

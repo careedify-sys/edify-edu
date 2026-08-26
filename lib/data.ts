@@ -726,6 +726,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'parul-university-online',
+    programFees: { mba: { fee: 150000 } },
     logo: '/logos/university_logos/online_parul_university_logo.svg',
     name: 'Parul University Online',
     abbr: 'PUO',
@@ -859,7 +860,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       }
     },
     color: '#1B4FBE',
-  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -2732,7 +2732,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       
     },
     color: '#2563EB',
-  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -3387,7 +3386,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       }
     },
     color: '#2563EB',
-  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -4543,6 +4541,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'bharati-vidyapeeth-university-online',
+    programFees: { mba: { fee: 176000 } },
     logo: '/logos/university_logos/bvdu-logo.svg',
     name: 'Bharati Vidyapeeth (Deemed to be University) Online',
     abbr: 'BVUO',
@@ -5953,7 +5952,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
     },
     color: '#2563EB',
-  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -7566,7 +7564,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       }
     },
     color: '#15803d',
-  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -7768,7 +7765,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       }
     },
     color: '#312e81',
-  rankingBadge: 'NIRF #101+ (University 2024)',
+  rankingBadge: 'NIRF #65 (University)',
   enrollments: 500,
   },
   {
@@ -7888,7 +7885,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       }
     },
     color: '#0891b2',
-  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -8266,7 +8262,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
     },
     color: '#065f46',
-  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
@@ -8529,7 +8524,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       }
     },
     color: '#4f46e5',
-  rankingBadge: 'NIRF #101+ (University 2024)',
   enrollments: 500,
   },
   {
