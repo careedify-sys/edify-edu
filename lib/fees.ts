@@ -35,7 +35,7 @@ export interface FeeDisplay {
   range?: string        // for body copy: "₹76,200 to ₹86,400" / "from ₹76,200"
   min?: number
   max?: number
-  rule?: 1 | 2 | 3 | '4a' | '4b'
+  rule?: 1 | 2 | 3 | '4a' | '4b' | '4c'
   reason?: string
 }
 
@@ -48,7 +48,7 @@ export interface FeeMismatch {
   feeMax: number
   parsedMin: number
   parsedMax: number
-  rule: '4a' | '4b'
+  rule: '4a' | '4b' | '4c'
   reason: string
 }
 
@@ -56,6 +56,13 @@ const TOLERANCE_ABS = 5000
 const TOLERANCE_PCT = 0.10
 const DIVERGENCE_PCT = 0.25
 const SUSPICIOUS_RANGE_RATIO = 3.0
+
+// Rule 4c floor. No UGC-DEB programme in our data costs less than this for a
+// full degree (the cheapest verified is a state-university B.Com at ₹12,000),
+// so anything under it is an authoring placeholder such as "₹0K" or "₹1K"
+// rather than a real fee. Suppressing sends the page to the counsellor CTA
+// instead of publishing "₹0" as the price.
+const MIN_CREDIBLE_FEE = 5000
 
 // Parse "₹76.2K", "₹1.18L - ₹1.3L", "₹66,000" into {min, max}. Returns null
 // when the input is not a recognisable fee string.
@@ -135,6 +142,18 @@ function getReference(u: University, program: Program): Ref | null {
 export function getDisplayFee(u: University, program: Program): FeeDisplay {
   const pd = u.programDetails[program] as ProgramDetail | undefined
   const parsed = pd?.fees ? parseFeeStr(pd.fees) : null
+
+  // Rule 4c: plausibility. Catches authoring placeholders that would otherwise
+  // reach the page as a real price: "₹TBD" (no digits, previously passed
+  // through verbatim) and "₹0K" / "₹1K" (parse cleanly to an absurd number).
+  if (pd?.fees) {
+    if (!/\d/.test(pd.fees)) {
+      return { ok: false, rule: '4c', reason: `pd.fees "${pd.fees}" contains no number, authoring placeholder` }
+    }
+    if (parsed && parsed.min < MIN_CREDIBLE_FEE) {
+      return { ok: false, rule: '4c', reason: `pd.fees "${pd.fees}" is below the credible floor of ₹${MIN_CREDIBLE_FEE}` }
+    }
+  }
 
   // Rule 4a: width sanity — pd.fees range spans > 3x → suppress.
   if (parsed && parsed.min > 0 && parsed.max / parsed.min > SUSPICIOUS_RANGE_RATIO) {
@@ -252,7 +271,7 @@ export function findAllFeeMismatches(universities: University[]): FeeMismatch[] 
         feeMax: u.feeMax || u.feeMin,
         parsedMin: parsed?.min ?? 0,
         parsedMax: parsed?.max ?? 0,
-        rule: (display.rule as '4a' | '4b'),
+        rule: (display.rule as '4a' | '4b' | '4c'),
         reason: display.reason ?? '',
       })
     }
