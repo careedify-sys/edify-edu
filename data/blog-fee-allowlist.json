@@ -739,6 +739,60 @@
       "source": "lib/data.ts programDetails['MCA'].fees for Galgotias University Online, verified against EdifyEdu university records",
       "verified_date": "2026-08-26",
       "note": "Galgotias online MCA total fee. Correct for that programme; allowlisted because the surrounding sentence lists all four Galgotias programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
+    },
+    {
+      "slug": "is-ignou-fake-or-legit-2026",
+      "figure": 9600,
+      "university": "ignou-online",
+      "programme": "BA",
+      "source": "lib/data.ts programDetails['BA'].fees for IGNOU, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "IGNOU online BA total fee. Correct for that programme; allowlisted because this post discusses seven IGNOU programmes together, so the scanner attributes the university correctly but pairs each figure with the wrong programme."
+    },
+    {
+      "slug": "is-ignou-fake-or-legit-2026",
+      "figure": 14400,
+      "university": "ignou-online",
+      "programme": "B.Com",
+      "source": "lib/data.ts programDetails['B.Com'].fees for IGNOU, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "IGNOU online B.Com total fee. Correct for that programme; allowlisted because this post discusses seven IGNOU programmes together, so the scanner attributes the university correctly but pairs each figure with the wrong programme."
+    },
+    {
+      "slug": "is-ignou-fake-or-legit-2026",
+      "figure": 18000,
+      "university": "ignou-online",
+      "programme": "M.Com",
+      "source": "lib/data.ts programDetails['M.Com'].fees for IGNOU (also the MA at the same fee), verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "IGNOU (also the MA at the same fee) online M.Com total fee. Correct for that programme; allowlisted because this post discusses seven IGNOU programmes together, so the scanner attributes the university correctly but pairs each figure with the wrong programme."
+    },
+    {
+      "slug": "is-ignou-fake-or-legit-2026",
+      "figure": 49800,
+      "university": "ignou-online",
+      "programme": "BCA",
+      "source": "lib/data.ts programDetails['BCA'].fees for IGNOU, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "IGNOU online BCA total fee. Correct for that programme; allowlisted because this post discusses seven IGNOU programmes together, so the scanner attributes the university correctly but pairs each figure with the wrong programme."
+    },
+    {
+      "slug": "is-ignou-fake-or-legit-2026",
+      "figure": 50800,
+      "university": "ignou-online",
+      "programme": "MCA",
+      "source": "lib/data.ts programDetails['MCA'].fees for IGNOU, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "IGNOU online MCA total fee. Correct for that programme; allowlisted because this post discusses seven IGNOU programmes together, so the scanner attributes the university correctly but pairs each figure with the wrong programme."
+    },
+    {
+      "slug": "is-ignou-fake-or-legit-2026",
+      "figure": 294000,
+      "university": "manipal-academy-higher-education-online",
+      "programme": "B.Com",
+      "source": "lib/data.ts programDetails['B.Com'].fees for Manipal Academy of Higher Education, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Manipal Academy of Higher Education online B.Com total fee. Correct for that programme; allowlisted because this post discusses seven IGNOU programmes together, so the scanner attributes the university correctly but pairs each figure with the wrong programme."
     }
   ]
 }

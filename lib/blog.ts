@@ -41,6 +41,161 @@ export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "is-ignou-fake-or-legit-2026",
+    title: "Is IGNOU Fake or Legit? The Real Question Is Not the One You Are Asking",
+    seoTitle: "Is IGNOU Fake? No. Central University, NAAC A++",
+    metaDescription: "IGNOU is a central university with NAAC A++ and UGC-DEB approval. The real question is whether a Rs 14,400 degree is respected. An honest answer, with the limitations.",
+    category: "University Reviews",
+    tags: ["is ignou fake","is ignou degree valid","ignou ugc approved","ignou degree valid for government jobs","ignou naac grade","is ignou online degree respected","IGNOU Fake or Legit 2026"],
+    publishedAt: "2026-08-26",
+    readTime: 7,
+    targetKeyword: "is IGNOU fake or legit",
+    relatedUniversities: ["ignou-online"],
+    status: "published",
+    author: "Rishi Kumar",
+    ctaTitle: "Compare IGNOU Against Private Online Universities",
+    ctaDesc: "See accreditation, approval status and fees side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
+    faqs: [
+      { q: "Is IGNOU fake?", a: "No. IGNOU is a central university, established and funded by the central government, which is the strongest recognition category India has. It holds NAAC A++, the top accreditation band, and is UGC-DEB approved for online delivery. It has never appeared on the UGC list of institutions declared fake, which you can check yourself at ugc.gov.in." },
+      { q: "Is an IGNOU degree valid for government jobs?", a: "Yes. UGC rules treat a degree from a recognised university delivered under DEB entitlement as equivalent to a conventional one, and IGNOU is a central university. Confirm that entitlement covered your admission year for your specific programme, and read the recruitment notification you are targeting, since individual employers can set conditions beyond the UGC baseline." },
+      { q: "Is an IGNOU degree respected by employers?", a: "The degree is legally equivalent to any conventional degree and carries NAAC A++ accreditation, the same band as several universities charging many times more. Some employers still associate distance and online study with the pre-2020 era, before UGC tightened the regulations. Your work history and skills carry more weight in that conversation than the fee you paid." },
+      { q: "Why is IGNOU so cheap?", a: "Because it is a central university funded by the central government, so its fees reflect public funding rather than market positioning. The low price is not a signal of weak quality: a Rs 14,400 B.Com from IGNOU carries the same NAAC A++ band and the same legal validity as a B.Com costing Rs 2,94,000 elsewhere." },
+      { q: "How much does an IGNOU online degree cost?", a: "Full-programme fees range from Rs 9,600 for a BA to Rs 66,000 for an MBA. The B.Com is Rs 14,400, the MA and M.Com are Rs 18,000 each, the BCA is Rs 49,800 and the MCA is Rs 50,800. All figures are indicative and change between intakes, so confirm before you pay." },
+      { q: "Is IGNOU NAAC accredited?", a: "Yes, at NAAC A++, which is the top band. That is the same grade held by Amrita, NMIMS and Manipal Academy of Higher Education. Verify the current grade, the CGPA behind it and its validity window at naac.gov.in before you rely on it." },
+      { q: "Does IGNOU offer placement support?", a: "Placement support is minimal, so plan to run your own job search. At these fee levels that is a reasonable trade, but it is a genuine trade. If placement assistance is central to your plan, budget for a private university that publishes what it actually provides." },
+      { q: "Who should not choose IGNOU?", a: "Look elsewhere if you need structured teaching with scheduled live classes to stay on track, if placement support is central to your plan, or if a specific private brand carries weight in your sector. Those are legitimate reasons to pay more. IGNOU suits self-directed students who need a recognised degree at the lowest cost." },
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 26 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Recognition status, accreditation and fees cross-checked against our internal university records on 26 August 2026. Every claim below is something you can confirm yourself on the official portals linked in this page. EdifyEdu accepts no referral commission from any university.</em></p>
+
+<p>IGNOU is a central university. Asking whether it is fake is a bit like asking whether Delhi University is fake, and the answer carries the same weight.</p>
+
+<p>So if that is genuinely your question, you can stop here: no. But almost nobody searching this phrase actually doubts IGNOU exists. What they are really asking is whether a degree that costs Rs 14,400 will be taken as seriously as one that costs Rs 2,94,000. That question deserves a real answer, and this page gives it.</p>
+
+<div class="callout-key">
+  <strong>IGNOU Online: the verification summary</strong>
+  <ul>
+    <li><strong>Status:</strong> Central university, funded and recognised by the central government</li>
+    <li><strong>UGC-DEB:</strong> Approved for online delivery</li>
+    <li><strong>NAAC:</strong> A++ accredited, the top band</li>
+    <li><strong>AICTE:</strong> Approved</li>
+    <li><strong>Valid for:</strong> Government and PSU recruitment, private employment, and postgraduate study</li>
+    <li><strong>Location:</strong> New Delhi</li>
+    <li><strong>Fees:</strong> from Rs 9,600 for a BA to Rs 66,000 for an MBA, full programme</li>
+  </ul>
+</div>
+
+<h2>The Credential Nobody Disputes</h2>
+
+<p>Central universities are established and funded by the central government, which puts them in the strongest recognition category India has. IGNOU sits in that category, holds NAAC A++, and is UGC-DEB approved to deliver its degrees online.</p>
+
+<p>NAAC A++ is the top accreditation band. It is the same grade held by Amrita, NMIMS and Manipal Academy of Higher Education, all of which charge many times more for comparable programmes.</p>
+
+<p class="pull">A Rs 14,400 B.Com from IGNOU and a Rs 2,94,000 B.Com from a NAAC A++ private university carry the same accreditation band and the same legal validity.</p>
+
+<h2>Verify It Yourself in Five Minutes</h2>
+
+<p>Do not take our word for it, and do not take a university's word either. Confirm the position for your own admission year before you pay anything.</p>
+
+<p><strong>Check online-delivery entitlement</strong> at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>. This is the check that matters most, because UGC-DEB entitlement is granted intake by intake and programme by programme rather than permanently.</p>
+
+<p><strong>Check the accreditation</strong> at <a href="https://naac.gov.in" target="_blank" rel="noopener">naac.gov.in</a>, where you can see the current grade, the CGPA behind it and the validity window.</p>
+
+<p><strong>Check the recognition and the fake list</strong> at <a href="https://ugc.gov.in" target="_blank" rel="noopener">ugc.gov.in</a>, which publishes both the recognised universities list and the list of institutions UGC has declared fake.</p>
+
+<p>Our <a href="/verify/ignou-online">IGNOU verification page</a> collects the same public records in one place if you want a starting point.</p>
+
+<h2>Why People Still Doubt It</h2>
+
+<p>The doubt is real, and it is worth naming honestly rather than dismissing.</p>
+
+<p><strong>Distance education carried a reputation problem for years.</strong> Before UGC tightened the online regulations in 2020, the distance sector included operators with genuinely weak oversight. IGNOU was never one of them, but the whole category absorbed the suspicion.</p>
+
+<p><strong>The price triggers it.</strong> People assume cheap means low quality, because in most markets it does. In Indian higher education, a central university's fee reflects public funding rather than the value of the qualification.</p>
+
+<p><strong>Scale invites stories.</strong> IGNOU enrols students at a size no private university approaches, and at that scale administrative delays and inconsistent local support are genuinely common complaints. Those are service problems, not validity problems, and the next section takes them seriously.</p>
+
+<h2>Is an IGNOU Degree Valid for Government Jobs?</h2>
+
+<p>Yes. UGC rules treat a degree from a recognised university delivered under DEB entitlement as equivalent to a conventional one, and IGNOU's central university status puts its recognition beyond dispute.</p>
+
+<p>Two practical points still apply. Confirm that entitlement covered your admission year for the specific programme you enrolled in, because that is where genuine problems occur. And read the recruitment notification you are targeting, since individual employers can set conditions beyond the UGC baseline.</p>
+
+<p>The AICTE approval matters here too. Some government and PSU rules ask for it explicitly, and a number of cheaper private online programmes do not carry it.</p>
+
+<h2>The Honest Limitations</h2>
+
+<p>A page that only reassures you is not doing its job. Three things are worth knowing before you enrol.</p>
+
+<p><strong>You drive your own learning.</strong> IGNOU provides study material and a structure, but not the scheduled live classes, reminders and chasing that private online universities build their operation around. If you know you drift without that, budget for the private premium or build your own discipline deliberately.</p>
+
+<p><strong>Placement support is minimal.</strong> Plan to run your own job search. At these fees that is a reasonable trade, but it is a trade.</p>
+
+<p><strong>Administration operates at scale.</strong> Expect to follow up, keep your own records, and get things in writing. This is the most common source of frustration among students, and going in expecting it removes most of the sting.</p>
+
+<h2>What It Actually Costs</h2>
+
+<p>This is where the value case stops being abstract. All figures are for the full programme.</p>
+
+<table>
+  <thead>
+    <tr><th>Programme</th><th>Total fee</th><th>Duration</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>IGNOU online BA</td><td>Rs 9,600</td><td>3 years</td></tr>
+    <tr><td>IGNOU online B.Com</td><td>Rs 14,400</td><td>3 years</td></tr>
+    <tr><td>IGNOU online MA</td><td>Rs 18,000</td><td>2 years</td></tr>
+    <tr><td>IGNOU online M.Com</td><td>Rs 18,000</td><td>2 years</td></tr>
+    <tr><td>IGNOU online BCA</td><td>Rs 49,800</td><td>3 years</td></tr>
+    <tr><td>IGNOU online MCA</td><td>Rs 50,800</td><td>2 years</td></tr>
+    <tr><td>IGNOU online MBA</td><td>Rs 66,000</td><td>2 years</td></tr>
+  </tbody>
+</table>
+
+<p>The <a href="/universities/ignou-online/ba">BA at Rs 9,600</a> and the <a href="/universities/ignou-online/bcom">B.Com at Rs 14,400</a> are the cheapest verified degrees of their kind in our records. The <a href="/universities/ignou-online/mba">MBA at Rs 66,000</a> undercuts most private online MBAs by a wide margin while carrying a higher NAAC grade than several of them.</p>
+
+<div class="callout-warning">
+  <strong>Verify before you pay.</strong> All fees are indicative and change between intakes. Accreditation grades and UGC-DEB entitlement are granted for defined periods and also change, so confirm the current position for your admission year and your specific programme rather than relying on any page, including this one. Start at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>.
+</div>
+
+<div class="cta-box">
+  <strong>Comparing IGNOU against a private online university?</strong>
+  <p>Edify compares public UGC, NAAC and NIRF data across universities. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/compare">Compare online programmes</a>
+  <a class="ilink" href="/universities/ignou-online/mca">See the IGNOU MCA breakdown</a>
+</div>
+
+<h2>Who Should Choose IGNOU, and Who Should Not</h2>
+
+<p><strong>Choose it</strong> if you need a recognised degree for an eligibility bar, a promotion or a government application, if budget is a real constraint, and if you are comfortable managing your own study. On those terms nothing in India competes with it.</p>
+
+<p><strong>Look elsewhere</strong> if you need structured teaching to stay on track, if placement support is central to your plan, or if a private brand carries specific weight in your sector. Those are legitimate reasons to pay more, and this page is not arguing otherwise.</p>
+
+<h2>The Verdict</h2>
+
+<p>IGNOU is a central university with NAAC A++ accreditation, UGC-DEB approval and AICTE approval. The degree is valid for employment, for government recruitment and for further study, and the accreditation band is the highest India awards.</p>
+
+<p>The low fee is not a warning sign. It reflects public funding, and it buys the same legal standing as a degree costing ten times more. What you give up is service, structure and brand, so the honest question is whether you need those. If you do not, IGNOU is the strongest value in Indian higher education. For the wider picture on the format, read our <a href="/guides/is-online-degree-valid-india">guide to online degree validity in India</a>.</p>
+
+<div class="cta-box">
+  <strong>Not sure IGNOU fits your goal?</strong>
+  <p>Tell us the role or exam you are targeting and we will tell you honestly whether this degree clears it. Edify compares public UGC and NAAC data only. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/contact">Request a free counselling call</a>
+</div>
+
+<h2>Sources to Consult</h2>
+
+<ul>
+  <li><a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">UGC-DEB approved institutions list</a> to confirm online-delivery entitlement for your programme and admission year</li>
+  <li><a href="https://naac.gov.in" target="_blank" rel="noopener">NAAC accreditation database</a> to confirm the current grade, CGPA and validity window</li>
+  <li><a href="https://ugc.gov.in" target="_blank" rel="noopener">UGC official notifications</a> for the recognised universities list and the list of institutions declared fake</li>
+  <li><a href="https://nirfindia.org" target="_blank" rel="noopener">NIRF India Rankings</a> to check which categories any university appears in, and which it does not</li>
+</ul>
+
+<div class="disclaimer">
+  Recognition status, accreditation and fee details in this review reflect EdifyEdu's verified university records as of 26 August 2026. Fees are indicative, cover the full programme and change between intakes. NAAC grades and UGC-DEB entitlement are granted for defined periods and can change between cycles, so verify the current position on the official portals before making any decision or payment. EdifyEdu accepts no referral commission from IGNOU or any other institution mentioned, and no university pays for placement or ranking on this site.
+</div>`,
+  },
+  {
     slug: "is-galgotias-university-online-fake-or-legit-2026",
     title: "Is Galgotias University Online Fake or Legit? The 2026 Verification",
     seoTitle: "Is Galgotias University Online Fake? No. Here Is the Proof",
