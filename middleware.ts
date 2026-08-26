@@ -28,6 +28,10 @@ import MCA_ALLOWLIST from './lib/data/programme-allowlist-mca.json'
 // Old/truncated university slugs indexed by Google → current slugs
 // Verified against lib/data.ts UNIVERSITIES array (2026-04-17)
 const OLD_SLUG_REDIRECTS: Record<string, string> = {
+  'vit-vellore-online': 'vit-university-online',
+  'kiit-university-online': 'kalinga-institute-industrial-technology-online',
+  'shanmugha-arts-science-technology-research-online': 'sastra-university-online',
+  'shree-guru-gobind-singh-tricentenary-university-online': 'sgt-university-online',
   'alagappa-universi': 'alagappa-university-online',
   'amrita-vishwa-vidyapee': 'amrita-vishwa-vidyapeetham-online',
   'andhra-universi': 'andhra-university-online',

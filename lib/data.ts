@@ -3933,6 +3933,16 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     notFor: ['Non-quantitative learners', 'Campus experience seekers'],
     programs: ['MBA', 'B.Com', 'BBA', 'BCA', 'MCA'],
     programDetails: {
+      'MCA': {
+        specs: ['Artificial Intelligence & Machine Learning', 'Data Science', 'Cyber Security', 'Blockchain Technology'],
+        fees: '₹98,000',
+        duration: '2 Yrs',
+        roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
+        avgSalary: '₹4L – ₹14L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved MCA from SGT University. Recognised for corporate hiring in software and IT roles.',
+      },
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Data Science & AI', 'International Finance & Accounting (ACCA)', 'Supply Chain & Logistics', 'Cyber Security', 'Pharmaceutical Management'],
         fees: '₹0.5L – ₹3.0L',
@@ -4082,6 +4092,16 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
     programs: ['MBA', 'MCA', 'MSc'],
     programDetails: {
+      'MSc': {
+        specs: ['Data Science'],
+        fees: '₹1,50,000',
+        duration: '2 Years',
+        roles: ['Data Analyst', 'Data Scientist', 'Business Analyst', 'ML Engineer'],
+        avgSalary: '₹4L – ₹12L per annum',
+        topCompanies: ['TCS', 'Infosys', 'Wipro', 'Cognizant'],
+        internshipType: 'Industry project and virtual internship',
+        careerOutcome: 'UGC DEB approved M.Sc from Vellore Institute of Technology. Recognised for corporate hiring in data and analytics roles.',
+      },
       'MBA': {
         specs: ['General Management', 'Marketing', 'Operations and supply chain management', 'Finance', 'HRM'],
         fees: '₹160K – ₹160K',
@@ -4706,7 +4726,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programs: ['MBA', 'BBA', 'B.Com', 'M.Com'],
     programDetails: {
       'MBA': {
-        specs: ['Marketing', 'Finance', 'Human Resources (Dual Specialisation — choose any'],
+        specs: ['Marketing', 'Finance', 'Human Resources'],
         fees: '₹80K – ₹80K',
         duration: '2 Yrs',
         roles: ['Management Trainee', 'HR Executive', 'Marketing Executive'],
@@ -6869,6 +6889,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     state: 'ODISHA',
     region: 'East',
     nirf: 17,
+    nirfEng: 36,
     nirfMgt: 68,
     naac: 'A++',
     ugc: true,

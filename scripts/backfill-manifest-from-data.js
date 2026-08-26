@@ -16,6 +16,38 @@ const MANIFEST_PATH = path.join(ROOT, 'lib', 'data', 'programs-manifest.json')
 const URLS_PATH = path.join(ROOT, 'lib', 'data', 'valid-urls.json')
 const DATA_TS = path.join(ROOT, 'lib', 'data.ts')
 
+// University slugs that 308-redirect in middleware.ts must never reach the
+// sitemap. build-valid-urls.js already applies this denylist, but this script
+// rebuilds valid-urls.json from the manifest afterwards, so without the same
+// filter a redirect source that still has a record in lib/data.ts gets added
+// straight back. Parsed from middleware.ts so there is one source of truth.
+function loadRedirectSourceDenylist() {
+  try {
+    const mw = fs.readFileSync(path.join(ROOT, 'middleware.ts'), 'utf8')
+    const section = mw.match(/OLD_SLUG_REDIRECTS[\s\S]+?^\}/m)
+    if (!section) return new Set()
+    const keys = new Set()
+    for (const m of section[0].matchAll(/'([a-z0-9-]+)':\s*'/g)) keys.add(m[1])
+    return keys
+  } catch {
+    return new Set()
+  }
+}
+const REDIRECT_SOURCE_SLUGS = loadRedirectSourceDenylist()
+
+// Full-path redirect sources from the generated rule set. Any URL that 301s
+// must stay out of the sitemap, or Search Console reports it as "Page with
+// redirect". Covers spec-level rules that the slug denylist above cannot see.
+function loadRedirectSourcePaths() {
+  try {
+    const raw = require(path.join(ROOT, 'lib', 'data', 'redirects.json'))
+    return new Set((raw.redirects || []).map(r => r.source))
+  } catch {
+    return new Set()
+  }
+}
+const REDIRECT_SOURCE_PATHS = loadRedirectSourcePaths()
+
 function specSlugify(s) {
   if (typeof s === 'string') return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
   return s.slug
@@ -99,6 +131,7 @@ const uniSpecTriples = new Set()
 const programs = new Set()
 const programSpecs = new Set()
 for (const r of manifest) {
+  if (REDIRECT_SOURCE_SLUGS.has(r.university_slug)) continue
   uniSlugs.add(r.university_slug)
   uniProgPairs.add(r.university_slug + '/' + r.program)
   programs.add(r.program)
@@ -130,6 +163,6 @@ const REDIRECTED_PROGRAM_URLS = new Set([
   '/programs/mba/operations-supply-chain-management',
   '/programs/mba/operations-and-supply-chain-management',
 ])
-const uniqueUrls = [...new Set(urls)].filter(u => !REDIRECTED_PROGRAM_URLS.has(u))
+const uniqueUrls = [...new Set(urls)].filter(u => !REDIRECTED_PROGRAM_URLS.has(u) && !REDIRECT_SOURCE_PATHS.has(u))
 fs.writeFileSync(URLS_PATH, JSON.stringify(uniqueUrls, null, 2))
 console.log('Rebuilt valid-urls.json — total unique URLs:', uniqueUrls.length)

@@ -831,7 +831,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>Marwadi University</td><td>Rs 89,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>GLA University</td><td>Rs 94,300</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Ganpat University</td><td>Rs 97,000</td><td>A</td><td>Not ranked in NIRF 2025</td></tr>
-    <tr><td>Shree Guru Gobind Singh Tricentenary University</td><td>Rs 98,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>SGT University</td><td>Rs 98,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Maharishi Markandeshwar University</td><td>Rs 1,00,000</td><td>A++</td><td>#85</td></tr>
     <tr><td>Lovely Professional University</td><td>Rs 1,08,000</td><td>A++</td><td>#31</td></tr>
     <tr><td>Noida International University</td><td>Rs 1,18,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
