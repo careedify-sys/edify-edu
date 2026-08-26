@@ -41,6 +41,158 @@ export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "is-integral-university-online-fake-or-legit-2026",
+    title: "Is Integral University Online Fake or Legit? And the NIRF Rank That Does Not Apply to You",
+    seoTitle: "Is Integral University Online Fake? No. NAAC A+, UGC-DEB",
+    metaDescription: "Integral University is a recognised UP private university, UGC-DEB approved and NAAC A+. It holds a NIRF Pharmacy rank but none in the University category.",
+    category: "University Reviews",
+    tags: ["is integral university fake","integral university online legit","integral university ugc approved","integral university nirf rank","integral university naac grade","integral university online degree valid","Integral University Fake or Legit 2026"],
+    publishedAt: "2026-08-26",
+    readTime: 7,
+    targetKeyword: "is Integral University online fake or legit",
+    relatedUniversities: ["integral-university-online"],
+    status: "published",
+    author: "Rishi Kumar",
+    ctaTitle: "Compare Integral Against Other Online Universities",
+    ctaDesc: "See accreditation, NIRF category ranks and fees side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
+    faqs: [
+      { q: "Is Integral University fake?", a: "No. Integral University is a recognised private university in Uttar Pradesh, UGC-DEB approved for online delivery and NAAC accredited at A+. It appears on the UGC recognised universities list and not on the UGC list of institutions declared fake. You can confirm both yourself at ugc.gov.in." },
+      { q: "Is the Integral University online degree valid?", a: "Yes. Integral is UGC-DEB entitled for online delivery, and UGC rules treat an online degree from an entitled university as equivalent to a conventional one for employment, government recruitment and further study. Entitlement is granted intake by intake, so confirm it covers your admission year and programme at deb.ugc.ac.in." },
+      { q: "Does Integral University have a NIRF rank?", a: "Yes, but only in the Pharmacy category, where it ranks 40th for 2025. It holds no rank in the University category. So if you are considering the online MBA, BCA or B.Com, Integral has no NIRF position that applies to your programme. Check both categories separately at nirfindia.org." },
+      { q: "Why do some pages quote a different Integral NIRF rank?", a: "Because ranking claims drift and are rarely checked. Our own records carried an unexplained \"NIRF #101\" for Integral until we cross-checked it against our verified accreditation data and removed it. Treat any ranking claim, including ours, as something to verify at nirfindia.org rather than accept." },
+      { q: "Is Integral University NAAC accredited?", a: "Yes, at NAAC A+. That is a solid grade clearing the bar most employers apply, though it is one band below the top A++ level. Several universities charging similar or lower fees hold A++, so compare if accreditation is what decides your shortlist. Verify the grade and validity window at naac.gov.in." },
+      { q: "Is Integral University AICTE approved?", a: "Our records carry no AICTE listing for Integral. For most private-sector hiring this changes nothing, since UGC-DEB approval is what establishes the degree validity. If your employer or a specific government recruitment rule asks for AICTE by name, confirm the position with the university in writing before enrolling." },
+      { q: "How much do Integral University online programmes cost?", a: "The online B.Com is Rs 36,000 and the M.Sc Rs 30,000, both among the cheapest verified figures in our records for a private university. The BCA is Rs 75,300 and the MBA Rs 1,10,000. Our records carry no confirmed fee for the online MA or MCA, so ask admissions for those in writing." },
+      { q: "Is an Integral University degree valid for government jobs?", a: "Yes, on the same basis as any other UGC-recognised degree. Confirm that UGC-DEB entitlement covered your admission year for your specific programme, and read the recruitment notification you are targeting, since individual employers can set conditions beyond the UGC baseline." },
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 26 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Legal status, UGC-DEB entitlement, accreditation and ranking cross-checked against our Supabase university records on 26 August 2026. Every claim below can be confirmed on the official portals linked in this page. EdifyEdu accepts no referral commission from any university.</em></p>
+
+<p>Integral University is not fake. It is a recognised private university in Uttar Pradesh, UGC-DEB approved to deliver its degrees online, and NAAC accredited at A+.</p>
+
+<p>It also holds a NIRF rank, which is unusual for a university selling online degrees. The catch is that it is not the rank you will see quoted, and the difference matters enough that it is the main thing this page exists to explain.</p>
+
+<div class="callout-key">
+  <strong>Integral University Online: the verification summary</strong>
+  <ul>
+    <li><strong>Legal status:</strong> Private university, Uttar Pradesh</li>
+    <li><strong>UGC-DEB:</strong> Approved for online delivery</li>
+    <li><strong>NAAC:</strong> A+ accredited</li>
+    <li><strong>NIRF 2025:</strong> ranked 40th in the <em>Pharmacy</em> category</li>
+    <li><strong>NIRF University category:</strong> not ranked</li>
+    <li><strong>Location:</strong> Lucknow, Uttar Pradesh</li>
+    <li><strong>Fees:</strong> from Rs 30,000 for an M.Sc or M.Com to Rs 1,10,000 for the MBA</li>
+  </ul>
+</div>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 265" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Verification checklist for Integral University Online. Recognised private university: yes. UGC-DEB entitled for online delivery: yes. NAAC accredited at A plus: yes. On the UGC fake institutions list: no. NIRF Pharmacy category rank 40. NIRF University category: not ranked in 2025." style="width:100%;height:auto">
+  <rect width="720" height="265" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="26" y="32" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">The checks that separate real from fake</text>
+  <text x="26" y="51" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="12">Integral University Online, verified 26 August 2026</text>
+  <line x1="26" y1="64" x2="694" y2="64" stroke="#e2e8f0" stroke-width="1"/>
+
+  <g font-family="Arial,Helvetica,sans-serif" font-size="13">
+    <text x="26" y="90" fill="#0f172a">Recognised private university</text>
+    <text x="560" y="90" fill="#10b981" font-size="14" font-weight="700">YES</text>
+
+    <text x="26" y="120" fill="#0f172a">UGC-DEB entitled for online delivery</text>
+    <text x="560" y="120" fill="#10b981" font-size="14" font-weight="700">YES</text>
+
+    <text x="26" y="150" fill="#0f172a">NAAC accredited</text>
+    <text x="560" y="150" fill="#10b981" font-size="14" font-weight="700">A+</text>
+
+    <text x="26" y="180" fill="#0f172a">On the UGC fake institutions list</text>
+    <text x="560" y="180" fill="#10b981" font-size="14" font-weight="700">NO</text>
+
+    <text x="26" y="210" fill="#0f172a">NIRF rank, Pharmacy category</text>
+    <text x="560" y="210" fill="#10b981" font-size="14" font-weight="700">#40</text>
+
+    <text x="26" y="240" fill="#0f172a">NIRF rank, University category</text>
+    <text x="518" y="240" fill="#B8892A" font-size="13" font-weight="700">NOT RANKED</text>
+  </g>
+</svg>
+<p class="svg-caption">Every line is checkable on a government portal. The two NIRF lines are different categories, and only one of them applies to a business or computing degree.</p>
+</div>
+
+<h2>The Ranking Detail Most Pages Get Wrong</h2>
+
+<p>NIRF ranks institutions in separate categories, and a university can appear in one while being absent from another entirely.</p>
+
+<p>Integral appears in the Pharmacy category at rank 40. That is a genuine, verifiable achievement, and it says something real about the university's pharmacy school.</p>
+
+<p>It does not appear in the University category at all. So if you are looking at the online MBA, BCA or B.Com, Integral has no NIRF rank that applies to your programme.</p>
+
+<p class="pull">A Pharmacy rank is not a University rank. If a page quotes Integral's NIRF position while selling you a management degree, it is using the wrong number.</p>
+
+<p>We had this wrong ourselves until recently. Our own records carried an unexplained "NIRF #101" for Integral, which we removed after checking it against our verified accreditation data. If our data drifted, treat anyone else's ranking claim with the same suspicion and check the source.</p>
+
+<h2>Verify It Yourself in Five Minutes</h2>
+
+<p>Confirm the position for your own admission year rather than relying on any page, including this one.</p>
+
+<p><strong>Check online-delivery entitlement</strong> at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>. Entitlement is granted intake by intake and programme by programme, so last year's approval does not settle this year's.</p>
+
+<p><strong>Check the accreditation</strong> at <a href="https://naac.gov.in" target="_blank" rel="noopener">naac.gov.in</a>, including the CGPA behind the grade and the date it expires.</p>
+
+<p><strong>Check the ranking claim</strong> at <a href="https://nirfindia.org" target="_blank" rel="noopener">nirfindia.org</a>. Search the University category and the Pharmacy category separately, and you will see the difference described above for yourself.</p>
+
+<p><strong>Check recognition and the fake list</strong> at <a href="https://ugc.gov.in" target="_blank" rel="noopener">ugc.gov.in</a>, which publishes both the recognised universities list and the list of institutions UGC has declared fake. Integral appears on the first and not the second.</p>
+
+<p>Our <a href="/verify/integral-university-online">Integral verification page</a> collects the same public records in one place.</p>
+
+<h2>The Honest Limitations</h2>
+
+<p><strong>NAAC A+, not A++.</strong> A+ is a solid grade that clears the bar most employers apply, but it sits one band below the top. Several universities charging similar or lower fees hold A++, so compare if accreditation is what decides it for you.</p>
+
+<p><strong>No University-category NIRF rank.</strong> Covered above. For a management or computing degree, Integral has no ranking signal to offer, which puts it behind the better-ranked options at similar prices.</p>
+
+<p><strong>No AICTE listing in our records.</strong> For most private-sector hiring this changes nothing, since UGC-DEB approval is what establishes validity. If your employer or a specific government recruitment rule asks for AICTE by name, check before you enrol.</p>
+
+<p><strong>Two programmes have no published fee.</strong> Our records carry no confirmed figure for the online MA or MCA, so ask admissions for those in writing.</p>
+
+<h2>Is the Degree Valid for Government Jobs?</h2>
+
+<p>Yes, on the same basis as any other UGC-recognised degree. UGC rules treat an online degree from an entitled university as equivalent to a conventional one for employment, government recruitment and further study.</p>
+
+<p>Confirm entitlement covered your admission year for your specific programme, and read the recruitment notification you are targeting, since employers occasionally set conditions beyond the UGC baseline.</p>
+
+<h2>What It Costs</h2>
+
+<p>Integral is priced at the affordable end for a private university, which is a large part of its appeal.</p>
+
+<p>The <a href="/universities/integral-university-online/bcom">online B.Com costs Rs 36,000</a> and the <a href="/universities/integral-university-online/msc">M.Sc Rs 30,000</a>, both among the cheapest verified figures in our records for a private institution. The <a href="/universities/integral-university-online/bca">BCA is Rs 75,300</a> and the <a href="/universities/integral-university-online/mba">MBA Rs 1,10,000</a>.</p>
+
+<div class="callout-warning">
+  <strong>Verify before you pay.</strong> All fees are indicative and change between intakes. Accreditation grades and UGC-DEB entitlement are granted for defined periods and also change, so confirm the current position for your admission year and your specific programme. Start at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>.
+</div>
+
+<div class="cta-box">
+  <strong>Comparing Integral against other online universities?</strong>
+  <p>Edify compares public UGC, NAAC and NIRF data across universities. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/compare">Compare online programmes</a>
+  <a class="ilink" href="/contact">Request a free counselling call</a>
+</div>
+
+<h2>The Verdict</h2>
+
+<p>Integral University Online is legitimate. A recognised private university, UGC-DEB entitled for online delivery, NAAC A+, absent from the UGC fake list, and priced at the affordable end.</p>
+
+<p>Judge it on fit rather than legitimacy. The honest weaknesses are an A+ rather than A++ grade and no ranking signal that applies to a business or computing degree, since its only NIRF position is in Pharmacy. If accreditation band or ranking is what decides your shortlist, compare before committing. If a recognised degree at a low fee is what you need, Integral does that job. For the wider picture, read our <a href="/guides/is-online-degree-valid-india">guide to online degree validity in India</a>.</p>
+
+<h2>Sources to Consult</h2>
+
+<ul>
+  <li><a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">UGC-DEB approved institutions list</a> to confirm entitlement for your programme and admission year</li>
+  <li><a href="https://naac.gov.in" target="_blank" rel="noopener">NAAC accreditation database</a> to confirm the current grade, CGPA and validity window</li>
+  <li><a href="https://nirfindia.org" target="_blank" rel="noopener">NIRF India Rankings</a> to check the Pharmacy and University categories separately</li>
+  <li><a href="https://ugc.gov.in" target="_blank" rel="noopener">UGC official notifications</a> for the recognised universities list and the list of institutions declared fake</li>
+</ul>
+
+<div class="disclaimer">
+  Legal status, accreditation and ranking details in this review reflect EdifyEdu's verified university records as of 26 August 2026, cross-checked against our Supabase accreditation data. The NIRF position quoted is a Pharmacy category rank for 2025 and belongs to the institution rather than to any online programme; Integral holds no University category rank. Accreditation grades and UGC-DEB entitlement are granted for defined periods and change between cycles, so verify the current position on the official portals before making any decision or payment. Fees are indicative and change between intakes. EdifyEdu accepts no referral commission from Integral University or any other institution mentioned, and no university pays for placement or ranking on this site.
+</div>`,
+  },
+  {
     slug: "is-jamia-hamdard-online-fake-or-legit-2026",
     title: "Is Jamia Hamdard Online Fake or Legit? And the Ranking Number Nobody Shows You",
     seoTitle: "Is Jamia Hamdard Online Fake? No. NIRF #47, NAAC A+",

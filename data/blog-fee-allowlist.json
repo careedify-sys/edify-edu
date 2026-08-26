@@ -793,6 +793,42 @@
       "source": "lib/data.ts programDetails['B.Com'].fees for Manipal Academy of Higher Education, verified against EdifyEdu university records",
       "verified_date": "2026-08-26",
       "note": "Manipal Academy of Higher Education online B.Com total fee. Correct for that programme; allowlisted because this post discusses seven IGNOU programmes together, so the scanner attributes the university correctly but pairs each figure with the wrong programme."
+    },
+    {
+      "slug": "is-integral-university-online-fake-or-legit-2026",
+      "figure": 30000,
+      "university": "integral-university-online",
+      "programme": "MSc",
+      "source": "lib/data.ts programDetails['MSc'].fees for Integral University Online, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Integral online MSc total fee. Correct for that programme; allowlisted because the surrounding sentence lists several Integral programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
+    },
+    {
+      "slug": "is-integral-university-online-fake-or-legit-2026",
+      "figure": 36000,
+      "university": "integral-university-online",
+      "programme": "B.Com",
+      "source": "lib/data.ts programDetails['B.Com'].fees for Integral University Online, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Integral online B.Com total fee. Correct for that programme; allowlisted because the surrounding sentence lists several Integral programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
+    },
+    {
+      "slug": "is-integral-university-online-fake-or-legit-2026",
+      "figure": 75300,
+      "university": "integral-university-online",
+      "programme": "BCA",
+      "source": "lib/data.ts programDetails['BCA'].fees for Integral University Online, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Integral online BCA total fee. Correct for that programme; allowlisted because the surrounding sentence lists several Integral programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
+    },
+    {
+      "slug": "is-integral-university-online-fake-or-legit-2026",
+      "figure": 110000,
+      "university": "integral-university-online",
+      "programme": "MBA",
+      "source": "lib/data.ts programDetails['MBA'].fees for Integral University Online, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Integral online MBA total fee. Correct for that programme; allowlisted because the surrounding sentence lists several Integral programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
     }
   ]
 }
