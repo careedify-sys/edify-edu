@@ -568,6 +568,42 @@
       "source": "lib/data.ts programDetails['BCA'].fees for Chandigarh University, verified against EdifyEdu university records",
       "verified_date": "2026-08-26",
       "note": "Chandigarh University online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
+    },
+    {
+      "slug": "online-mca-fees-india-2026-compared",
+      "figure": 50800,
+      "university": "ignou-online",
+      "programme": "MCA",
+      "source": "lib/data.ts programDetails['MCA'].fees for IGNOU, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "IGNOU online MCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the opening comparison, the SVG and multi-university sentences where attribution picks the wrong institution."
+    },
+    {
+      "slug": "online-mca-fees-india-2026-compared",
+      "figure": 65500,
+      "university": "kl-university-online",
+      "programme": "MCA",
+      "source": "lib/data.ts programDetails['MCA'].fees for Koneru Lakshmaiah Education Foundation, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Koneru Lakshmaiah Education Foundation online MCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the opening comparison, the SVG and multi-university sentences where attribution picks the wrong institution."
+    },
+    {
+      "slug": "online-mca-fees-india-2026-compared",
+      "figure": 200000,
+      "university": "shanmugha-arts-science-technology-research-academy-online",
+      "programme": "MCA",
+      "source": "lib/data.ts programDetails['MCA'].fees for Shanmugha Arts, Science, Technology and Research Academy, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Shanmugha Arts, Science, Technology and Research Academy online MCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the opening comparison, the SVG and multi-university sentences where attribution picks the wrong institution."
+    },
+    {
+      "slug": "online-mca-fees-india-2026-compared",
+      "figure": 230000,
+      "university": "christ-university-online",
+      "programme": "MCA",
+      "source": "lib/data.ts programDetails['MCA'].fees for Christ University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Christ University online MCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the opening comparison, the SVG and multi-university sentences where attribution picks the wrong institution."
     }
   ]
 }
