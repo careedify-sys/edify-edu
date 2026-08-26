@@ -639,7 +639,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>Vivekananda Global University</td><td>Rs 1,32,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Sharda University</td><td>Rs 1,35,000</td><td>A+</td><td>#87</td></tr>
     <tr><td>Manipal University Jaipur</td><td>Rs 1,39,000</td><td>A+</td><td>#58</td></tr>
-    <tr><td>SGT University</td><td>Rs 1,39,000</td><td>A+</td><td>#101</td></tr>
+    <tr><td>SGT University</td><td>Rs 1,39,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>NMIMS</td><td>Rs 1,41,000</td><td>A++</td><td>#52</td></tr>
     <tr><td>AMET University</td><td>Rs 1,50,000</td><td>A</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Amrita Vishwa Vidyapeetham</td><td>Rs 1,65,000</td><td>A++</td><td>#8</td></tr>
@@ -1030,7 +1030,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>Vivekananda Global University</td><td>Rs 1,32,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>JAIN University</td><td>Rs 1,35,000</td><td>A++</td><td>#62</td></tr>
     <tr><td>Manipal University Jaipur</td><td>Rs 1,39,000</td><td>A+</td><td>#58</td></tr>
-    <tr><td>SGT University</td><td>Rs 1,39,000</td><td>A+</td><td>#101</td></tr>
+    <tr><td>SGT University</td><td>Rs 1,39,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Guru Ghasidas Vishwavidyalaya</td><td>Rs 1,47,000</td><td>A++</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Manav Rachna University</td><td>Rs 1,50,000</td><td>A++</td><td>#96</td></tr>
     <tr><td>Symbiosis School for Online and Digital Learning</td><td>Rs 1,57,500</td><td>A++</td><td>#24</td></tr>
@@ -1239,7 +1239,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>NMIMS</td><td>Rs 99,000</td><td>A++</td><td>#52</td></tr>
     <tr><td>Amity University</td><td>Rs 1,15,000</td><td>A+</td><td>#22</td></tr>
     <tr><td>AMET University</td><td>Rs 1,20,000</td><td>A</td><td>Not ranked in NIRF 2025</td></tr>
-    <tr><td>SGT University</td><td>Rs 1,24,000</td><td>A+</td><td>#101</td></tr>
+    <tr><td>SGT University</td><td>Rs 1,24,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Dayananda Sagar University</td><td>Rs 1,30,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Amrita Vishwa Vidyapeetham</td><td>Rs 1,50,000</td><td>A++</td><td>#8</td></tr>
     <tr><td>Manipal Academy of Higher Education</td><td>Rs 2,94,000</td><td>A++</td><td>#3</td></tr>
