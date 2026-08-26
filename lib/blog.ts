@@ -41,6 +41,243 @@ export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "online-bcom-fees-india-2026-compared",
+    title: "Online B.Com Fees in India 2026: 24 Universities Compared, Rs 12,000 to Rs 2.94 Lakh",
+    seoTitle: "Online B.Com Fees 2026: 24 Universities Compared",
+    metaDescription: "Online B.Com fees in India range from Rs 12,000 to Rs 2,94,000 for the same valid degree. 24 UGC-DEB universities compared on fee, NAAC grade and NIRF rank.",
+    category: "Online B.Com Programs",
+    tags: ["online bcom fees","online b.com fees india","cheapest online bcom","best online bcom india 2026","online bcom colleges india","ugc deb approved bcom","online bcom fees comparison","Online B.Com Fees 2026"],
+    publishedAt: "2026-08-26",
+    readTime: 8,
+    targetKeyword: "online B.Com fees India",
+    relatedUniversities: ["ignou-online","deen-dayal-upadhyay-gorakhpur-university-online","alagappa-university-online","nmims-online","manipal-academy-higher-education-online"],
+    status: "published",
+    author: "Rishi Kumar",
+    ctaTitle: "Compare Online B.Com Programmes Side by Side",
+    ctaDesc: "See fees, NAAC grades and NIRF ranks for every UGC-DEB approved online B.Com. Public data only, no paid rankings, no referral commissions.",
+    faqs: [
+      { q: "What is the cheapest online B.Com in India?", a: "Gujarat University at Rs 12,000 for the full three-year degree is the cheapest verified figure in our records, followed by IGNOU at Rs 14,400 and Dr. Babasaheb Ambedkar Open University at Rs 16,000. All three are UGC-DEB approved, and IGNOU holds NAAC A++. Fees change between intakes, so confirm the current figure with the university before you pay." },
+      { q: "Is a cheap online B.Com less valid than an expensive one?", a: "No. Every university in this comparison is UGC-DEB approved for online delivery, which is what establishes the degree validity for employment, government recruitment and postgraduate study. A Rs 14,400 degree from IGNOU carries the same legal standing as a Rs 2,94,000 degree. What the higher fee buys is brand, ranking and support, not validity." },
+      { q: "Why do online B.Com fees vary so much?", a: "Because of who runs the university. State, central and open universities price online degrees on a public-funding basis, so they land between Rs 12,000 and Rs 85,000. Private universities build their whole operation around online delivery and charge for the platform, admissions support, placement services and brand, which puts them between Rs 99,000 and Rs 2,94,000." },
+      { q: "Which online B.Com offers the best value?", a: "IGNOU at Rs 14,400 is the outright value pick given it holds NAAC A++. DDU Gorakhpur at Rs 56,500 gives you a NAAC A++ state university with a CGPA of 3.78, and Alagappa University at Rs 60,100 combines NAAC A++ with an NIRF University rank of 44, which is rare in that price band." },
+      { q: "How long does an online B.Com take?", a: "Three years across six semesters at every university in this comparison. DDU Gorakhpur runs a four-year B.Com Honours instead, which carries additional NEP credit weight. Most universities allow a longer maximum duration if you need to spread the programme out." },
+      { q: "Is an online B.Com valid for government jobs?", a: "Yes, provided the university is UGC-DEB entitled for online delivery in your admission year. UGC rules treat an online degree from an entitled university as equivalent to a conventional one. Entitlement is granted intake by intake, so check the current list at deb.ugc.ac.in before you enrol rather than relying on a university claim." },
+      { q: "Does the fee include exam and registration charges?", a: "Not always. Several universities quote tuition only and bill examination or registration fees separately, which can add several thousand rupees across the programme. Ask for a full fee breakdown in writing, covering tuition, registration, examination and any alumni or convocation charge, before you pay the first instalment." },
+      { q: "Can I do an M.Com or MBA after an online B.Com?", a: "Yes. A UGC-DEB approved online B.Com qualifies you for postgraduate study at recognised Indian universities on the same basis as a conventional degree. It also serves as a foundation for professional routes such as CA or CMA, though those carry their own entrance and eligibility rules." },
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 26 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Every fee below was checked against our verified university records on 26 August 2026, and universities whose fee we could not confirm to a single figure were left out rather than estimated. Accreditation reflects our NAAC and NIRF records. EdifyEdu accepts no referral commission from any university.</em></p>
+
+<p>The same online B.Com costs Rs 12,000 at one UGC-approved university and Rs 2,94,000 at another. Both degrees are equally valid.</p>
+
+<p>That is a 24 times price gap for a qualification that carries identical legal standing. This page lists what 24 universities actually charge, with the accreditation each one holds, so you can see exactly what the extra money buys and decide whether you need it.</p>
+
+<div class="callout-key">
+  <strong>Online B.Com fees in India 2026, at a glance</strong>
+  <ul>
+    <li><strong>Cheapest verified:</strong> Rs 12,000 for the full degree at Gujarat University</li>
+    <li><strong>Most expensive:</strong> Rs 2,94,000 at Manipal Academy of Higher Education</li>
+    <li><strong>Typical state university:</strong> Rs 30,000 to Rs 84,000</li>
+    <li><strong>Typical private university:</strong> Rs 99,000 to Rs 1,50,000</li>
+    <li><strong>Duration:</strong> 3 years, 6 semesters, for every programme listed</li>
+    <li><strong>Validity:</strong> Every university here is UGC-DEB approved for online delivery</li>
+  </ul>
+</div>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bar chart of online B.Com total fees. Gujarat University Rs 12,000, IGNOU Rs 14,400, University of Lucknow Rs 30,000, DDU Gorakhpur Rs 56,500, Alagappa Rs 60,100, Kurukshetra Rs 72,661, NMIMS Rs 99,000, Amity Rs 1,15,000, SGT Rs 1,24,000, Manipal Academy of Higher Education Rs 2,94,000." style="width:100%;height:auto">
+  <rect width="720" height="260" rx="12" fill="#f1f5f9"/>
+  <text x="26" y="30" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">The same degree, ten very different prices</text>
+  <text x="26" y="49" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="12">Total programme fee for a three-year online B.Com, verified August 2026</text>
+
+  <g font-family="Arial,Helvetica,sans-serif" font-size="11">
+    <text x="26" y="76" fill="#475569">Gujarat University</text>
+    <rect x="188" y="66" width="19" height="13" rx="3" fill="#10b981"/>
+    <text x="215" y="76" fill="#0f172a" font-weight="700">Rs 12,000</text>
+
+    <text x="26" y="96" fill="#475569">IGNOU</text>
+    <rect x="188" y="86" width="23" height="13" rx="3" fill="#10b981"/>
+    <text x="219" y="96" fill="#0f172a" font-weight="700">Rs 14,400</text>
+
+    <text x="26" y="116" fill="#475569">University of Lucknow</text>
+    <rect x="188" y="106" width="48" height="13" rx="3" fill="#10b981"/>
+    <text x="244" y="116" fill="#0f172a">Rs 30,000</text>
+
+    <text x="26" y="136" fill="#475569">DDU Gorakhpur</text>
+    <rect x="188" y="126" width="90" height="13" rx="3" fill="#B8892A"/>
+    <text x="286" y="136" fill="#0f172a">Rs 56,500</text>
+
+    <text x="26" y="156" fill="#475569">Alagappa University</text>
+    <rect x="188" y="146" width="96" height="13" rx="3" fill="#B8892A"/>
+    <text x="292" y="156" fill="#0f172a">Rs 60,100</text>
+
+    <text x="26" y="176" fill="#475569">Kurukshetra University</text>
+    <rect x="188" y="166" width="116" height="13" rx="3" fill="#B8892A"/>
+    <text x="312" y="176" fill="#0f172a">Rs 72,661</text>
+
+    <text x="26" y="196" fill="#475569">NMIMS</text>
+    <rect x="188" y="186" width="158" height="13" rx="3" fill="#f97316"/>
+    <text x="354" y="196" fill="#0f172a">Rs 99,000</text>
+
+    <text x="26" y="216" fill="#475569">Amity University</text>
+    <rect x="188" y="206" width="184" height="13" rx="3" fill="#f97316"/>
+    <text x="380" y="216" fill="#0f172a">Rs 1,15,000</text>
+
+    <text x="26" y="236" fill="#475569">SGT University</text>
+    <rect x="188" y="226" width="198" height="13" rx="3" fill="#f97316"/>
+    <text x="394" y="236" fill="#0f172a">Rs 1,24,000</text>
+
+    <text x="26" y="256" fill="#0f172a" font-weight="700">Manipal (MAHE)</text>
+    <rect x="188" y="246" width="470" height="13" rx="3" fill="#ef4444"/>
+    <text x="666" y="256" fill="#0f172a" font-weight="700" text-anchor="end">Rs 2,94,000</text>
+  </g>
+</svg>
+<p class="svg-caption">Bars are to scale. Manipal Academy of Higher Education costs roughly 24 times Gujarat University for the same three-year qualification.</p>
+</div>
+
+<h2>Every Verified Online B.Com Fee, Cheapest First</h2>
+
+<p>These are the universities whose B.Com fee we could confirm to a single figure. Where a university publishes only a vague range, we left it off this table rather than guess.</p>
+
+<table>
+  <thead>
+    <tr><th>University</th><th>Total fee</th><th>NAAC</th><th>NIRF (University)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Gujarat University</td><td>Rs 12,000</td><td>A+</td><td>#74</td></tr>
+    <tr><td>IGNOU</td><td>Rs 14,400</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>Dr. Babasaheb Ambedkar Open University</td><td>Rs 16,000</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>Aligarh Muslim University</td><td>Rs 28,000</td><td>A+</td><td>#10</td></tr>
+    <tr><td>University of Lucknow</td><td>Rs 30,000</td><td>A++</td><td>#98</td></tr>
+    <tr><td>Integral University</td><td>Rs 36,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Manonmaniam Sundaranar University</td><td>Rs 45,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>The NorthCap University</td><td>Rs 48,000</td><td>A</td><td>Not ranked</td></tr>
+    <tr><td>DDU Gorakhpur University</td><td>Rs 56,500</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>GLA University</td><td>Rs 60,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Alagappa University</td><td>Rs 60,100</td><td>A++</td><td>#44</td></tr>
+    <tr><td>Kurukshetra University</td><td>Rs 72,661</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>Sikkim Manipal University</td><td>Rs 75,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Yenepoya University</td><td>Rs 75,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Guru Ghasidas Vishwavidyalaya</td><td>Rs 81,000</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>University of Mysore</td><td>Rs 84,000</td><td>A</td><td>#71</td></tr>
+    <tr><td>Manipal University Jaipur</td><td>Rs 99,000</td><td>A+</td><td>#58</td></tr>
+    <tr><td>NMIMS</td><td>Rs 99,000</td><td>A++</td><td>#52</td></tr>
+    <tr><td>Amity University</td><td>Rs 1,15,000</td><td>A+</td><td>#22</td></tr>
+    <tr><td>AMET University</td><td>Rs 1,20,000</td><td>A</td><td>Not ranked</td></tr>
+    <tr><td>SGT University</td><td>Rs 1,24,000</td><td>A+</td><td>#101</td></tr>
+    <tr><td>Dayananda Sagar University</td><td>Rs 1,30,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Amrita Vishwa Vidyapeetham</td><td>Rs 1,50,000</td><td>A++</td><td>#8</td></tr>
+    <tr><td>Manipal Academy of Higher Education</td><td>Rs 2,94,000</td><td>A++</td><td>#3</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-warning">
+  <strong>All fees are indicative and change between intakes.</strong> The figures above reflect our verified records as of 26 August 2026 and cover the full three-year programme unless a university bills annually. Universities revise fees each admission cycle, and scholarships or early-bird discounts can move the number substantially. Confirm the current fee in writing with the university before you pay. Check the university's online-delivery approval yourself at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a> and its accreditation at <a href="https://naac.gov.in" target="_blank" rel="noopener">naac.gov.in</a>.
+</div>
+
+<h2>Why the Gap Is So Wide</h2>
+
+<p>The price difference is not a quality difference in the degree itself. It comes down to who runs the university.</p>
+
+<p><strong>State and central universities</strong> price online degrees on a public-funding basis. Gujarat University, the University of Lucknow and Aligarh Muslim University all sit under Rs 30,000 because the fee is set by policy, not by market positioning.</p>
+
+<p><strong>Open universities</strong> go lower still. IGNOU charges Rs 14,400 for the full degree, and it holds NAAC A++. For a student who needs a recognised commerce degree and nothing more, that is difficult to argue with.</p>
+
+<p><strong>Private universities</strong> build the whole operation around online delivery, so you are paying for the platform, the admissions support, the placement services and the brand. Whether that is worth three to ten times the fee depends entirely on which of those you will actually use.</p>
+
+<p class="pull">Accreditation does not track price. IGNOU at Rs 14,400 holds NAAC A++. So does Manipal at Rs 2,94,000.</p>
+
+<h2>The Best Value Options</h2>
+
+<p>Three universities stand out once you weigh accreditation against fee.</p>
+
+<p><strong><a href="/universities/ignou-online/bcom">IGNOU at Rs 14,400</a></strong> is the outright value pick. NAAC A++, the largest open university in the country, and a degree every employer and government recruiter recognises. The trade is service: expect to manage your own study schedule and do your own follow-up.</p>
+
+<p><strong><a href="/universities/deen-dayal-upadhyay-gorakhpur-university-online/bcom">DDU Gorakhpur at Rs 56,500</a></strong> gives you a NAAC A++ state university with a CGPA of 3.78, which is higher than several private universities charging three times as much. This is the four-year B.Com Honours, so it also carries NEP credit weight.</p>
+
+<p><strong><a href="/universities/alagappa-university-online/bcom">Alagappa University at Rs 60,100</a></strong> combines NAAC A++ with an NIRF University rank of 44, which very few universities in this price band can show.</p>
+
+<h2>What the Expensive Options Actually Give You</h2>
+
+<p>Paying more is not automatically wasteful. It buys specific things, and you should know which ones matter to you.</p>
+
+<p><a href="/universities/manipal-academy-higher-education-online/bcom">Manipal Academy of Higher Education at Rs 2,94,000</a> holds NIRF University rank 3, one of the highest in India, along with NAAC A++. If you plan to apply abroad or into a brand-sensitive employer, that standing is real and it is not something a Rs 14,400 degree can replicate.</p>
+
+<p><a href="/universities/nmims-online/bcom">NMIMS at Rs 99,000</a> and <a href="/universities/amity-university-online/bcom">Amity at Rs 1,15,000</a> sit in the middle, both with recognised brands in corporate hiring and established online-first support.</p>
+
+<p>What none of them change is the legal standing of the degree. A UGC-DEB approved online B.Com is valid for employment, for government recruitment and for postgraduate study regardless of what you paid.</p>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Decision guide. Choose a state or open university if budget is the main constraint, if you need the degree for eligibility, or if you will do your own job search. Choose a private university if you need brand recognition, plan to study or work abroad, want structured online support, or need placement services." style="width:100%;height:auto">
+  <rect width="720" height="300" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+
+  <rect x="16" y="16" width="336" height="268" rx="10" fill="#10b981" fill-opacity="0.07" stroke="#10b981" stroke-opacity="0.3"/>
+  <text x="40" y="46" fill="#10b981" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="1">GO STATE OR OPEN (RS 12K TO 84K)</text>
+  <text x="40" y="80" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">Budget is the main constraint and you</text>
+  <text x="40" y="98" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">still want strong accreditation</text>
+  <text x="40" y="130" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You need the degree for an eligibility</text>
+  <text x="40" y="148" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">bar, a promotion or a govt application</text>
+  <text x="40" y="180" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You will run your own job search and</text>
+  <text x="40" y="198" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">do not need placement support</text>
+  <text x="40" y="230" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You plan to go on to M.Com, an MBA</text>
+  <text x="40" y="248" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">or a professional route like CA</text>
+
+  <rect x="368" y="16" width="336" height="268" rx="10" fill="#f97316" fill-opacity="0.07" stroke="#f97316" stroke-opacity="0.3"/>
+  <text x="392" y="46" fill="#c2410c" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="1">GO PRIVATE (RS 99K AND ABOVE)</text>
+  <text x="392" y="80" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">The brand carries weight in your</text>
+  <text x="392" y="98" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">sector or with your employer</text>
+  <text x="392" y="130" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You plan to study or work abroad and</text>
+  <text x="392" y="148" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">want a high NIRF-ranked institution</text>
+  <text x="392" y="180" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">You want structured online support</text>
+  <text x="392" y="198" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">and responsive admissions</text>
+  <text x="392" y="230" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">Placement assistance is part of what</text>
+  <text x="392" y="248" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="13">you are buying</text>
+</svg>
+<p class="svg-caption">Both routes produce a UGC-DEB approved degree with identical legal standing. The difference is service, brand and ranking, not validity.</p>
+</div>
+
+<div class="cta-box">
+  <strong>Not sure which B.Com fits your budget?</strong>
+  <p>Edify compares public UGC, NAAC and NIRF data across universities. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/compare">Compare online B.Com programmes</a>
+  <a class="ilink" href="/tools/emi-calculator">Work out the monthly cost</a>
+</div>
+
+<h2>What to Check Before You Pay</h2>
+
+<p><strong>Confirm UGC-DEB approval for your admission year.</strong> Entitlement is granted intake by intake, not permanently. The list at deb.ugc.ac.in is the only source that settles it.</p>
+
+<p><strong>Ask what the fee includes.</strong> Several universities quote tuition and bill examination or registration fees separately. A tuition-only quote can rise by several thousand rupees once those are added.</p>
+
+<p><strong>Check whether the price is a discounted one.</strong> Early-bird and scholarship pricing is common and often expires. Get the figure that applies to your intake in writing.</p>
+
+<p><strong>Do not pay for a specialisation you will not use.</strong> The core B.Com curriculum is largely the same everywhere. If a cheaper university teaches the same subjects, the specialisation label rarely justifies a large premium on its own.</p>
+
+<h2>Final Word</h2>
+
+<p>An online B.Com is one of the few qualifications where the cheapest option is genuinely competitive. IGNOU at Rs 14,400 carries the same NAAC A++ grade as Manipal at Rs 2,94,000, and the same legal validity.</p>
+
+<p>Pay more only when you can name what the premium buys you: a NIRF rank you will actually cite, a brand your sector recognises, or support you know you will use. If you cannot name it, the state and open universities at the top of the table do the same job for a fraction of the money. Start by reading the <a href="/guides/is-online-degree-valid-india">guide to online degree validity in India</a> if you are still deciding whether an online B.Com suits you.</p>
+
+<div class="cta-box">
+  <strong>Get the current fee confirmed before you enrol</strong>
+  <p>Fees move between intakes and discounts expire. We will help you get the figure that applies to you in writing. Edify compares public UGC and NAAC data only. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/contact">Request a free counselling call</a>
+</div>
+
+<h2>Sources to Consult</h2>
+
+<ul>
+  <li><a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">UGC-DEB approved institutions list</a> to confirm a university is entitled to deliver this degree online</li>
+  <li><a href="https://naac.gov.in" target="_blank" rel="noopener">NAAC accreditation database</a> to confirm the grade, CGPA and validity window</li>
+  <li><a href="https://nirfindia.org" target="_blank" rel="noopener">NIRF India Rankings</a> to check the University category positions quoted above</li>
+  <li><a href="https://ugc.gov.in" target="_blank" rel="noopener">UGC official notifications</a> for the rules on equivalence between online and conventional degrees</li>
+</ul>
+
+<div class="disclaimer">
+  Fees in this comparison reflect EdifyEdu's verified university records as of 26 August 2026 and are indicative. Universities that publish only a broad range, rather than a confirmed figure, were excluded rather than estimated. Accreditation and ranking data reflect our NAAC and NIRF records; NIRF positions quoted are University category. Fees, approval status and accreditation all change between intake cycles, so verify current figures with the university and on the official portals before paying. EdifyEdu accepts no referral commission from any institution named here, and no university pays for placement or ranking on this site.
+</div>`,
+  },
+  {
     slug: "sppu-online-mba-review",
     title: "SPPU Online MBA Review 2026: The Rs 1.61 Lakh State-University Degree That Does Not Say Online",
     seoTitle: "SPPU Online MBA Review 2026: Rs 1.61L, NAAC A++",

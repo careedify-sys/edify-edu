@@ -1,0 +1,491 @@
+<title>Stuck at Position Eight</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+
+<style>
+  :root{
+    --navy:#0f172a; --orange:#f97316; --amber:#B8892A;
+    --green:#10b981; --red:#ef4444;
+
+    --ground:#f4f6f9;
+    --surface:#ffffff;
+    --surface-2:#eef1f6;
+    --line:#dde3ec;
+    --ink:#0f172a;
+    --ink-2:#3d4a5f;
+    --ink-3:#697489;
+    --accent:#f97316;
+    --accent-ink:#c2410c;
+    --good:#0f8a63;
+    --bad:#c8342f;
+    --shadow:0 1px 2px rgba(15,23,42,.05), 0 8px 24px -12px rgba(15,23,42,.18);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#0b1220;
+      --surface:#121b2c;
+      --surface-2:#18233a;
+      --line:#26324a;
+      --ink:#eef2f8;
+      --ink-2:#b9c4d6;
+      --ink-3:#8593aa;
+      --accent:#fb923c;
+      --accent-ink:#fdba74;
+      --good:#34d399;
+      --bad:#f87171;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.7);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#0b1220;
+    --surface:#121b2c;
+    --surface-2:#18233a;
+    --line:#26324a;
+    --ink:#eef2f8;
+    --ink-2:#b9c4d6;
+    --ink-3:#8593aa;
+    --accent:#fb923c;
+    --accent-ink:#fdba74;
+    --good:#34d399;
+    --bad:#f87171;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.7);
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--ground); color:var(--ink);
+    font-family:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    font-size:16px; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:48px 24px 96px}
+  h1,h2,h3{font-family:Archivo,ui-sans-serif,system-ui,sans-serif;text-wrap:balance;margin:0}
+  h1{font-size:clamp(34px,5.2vw,54px);font-weight:800;letter-spacing:-.028em;line-height:1.03}
+  h2{font-size:clamp(21px,2.6vw,27px);font-weight:700;letter-spacing:-.018em;line-height:1.15}
+  h3{font-size:17px;font-weight:700;letter-spacing:-.01em}
+  p{margin:0}
+  .mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+  .eyebrow{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);
+  }
+
+  header.head{display:flex;flex-direction:column;gap:18px;padding-bottom:34px;border-bottom:3px solid var(--navy)}
+  :root[data-theme="dark"] header.head{border-bottom-color:var(--accent)}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) header.head{border-bottom-color:var(--accent)}}
+  .meta{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:baseline}
+  .verdict{
+    font-size:clamp(17px,2.1vw,21px);line-height:1.5;color:var(--ink-2);max-width:64ch;
+  }
+  .verdict strong{color:var(--ink);font-weight:600}
+
+  section{margin-top:56px;display:flex;flex-direction:column;gap:18px}
+  .lede{max-width:68ch;color:var(--ink-2)}
+
+  /* KPI */
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+  .kpi{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 18px 16px;box-shadow:var(--shadow)}
+  .kpi .lab{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3)}
+  .kpi .val{font-family:Archivo,sans-serif;font-size:30px;font-weight:800;letter-spacing:-.03em;margin-top:6px;font-variant-numeric:tabular-nums}
+  .kpi .sub{font-size:12.5px;color:var(--ink-3);margin-top:3px}
+  .kpi.flag{border-color:var(--accent);box-shadow:var(--shadow),inset 3px 0 0 var(--accent)}
+
+  /* split table */
+  .split{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+  .split-row{display:grid;grid-template-columns:1.5fr repeat(4,1fr);gap:10px;padding:13px 18px;align-items:center;border-top:1px solid var(--line)}
+  .split-row:first-child{border-top:none;background:var(--surface-2)}
+  .split-row .h{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3)}
+  .split-row .name{font-weight:600;font-size:14.5px}
+  .split-row .n{font-family:"IBM Plex Mono",monospace;font-size:14.5px;font-variant-numeric:tabular-nums;text-align:right}
+  .split-row.hi{background:color-mix(in srgb,var(--accent) 9%,transparent)}
+  .split-row .note{font-size:12px;color:var(--ink-3);font-weight:400}
+
+  /* band chart */
+  .bands{display:flex;flex-direction:column;gap:9px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px;box-shadow:var(--shadow)}
+  .band{display:grid;grid-template-columns:132px 1fr 128px;gap:14px;align-items:center}
+  .band .bl{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink-2)}
+  .band .track{position:relative;height:26px;background:var(--surface-2);border-radius:4px;overflow:hidden}
+  .band .fill{position:absolute;inset:0 auto 0 0;border-radius:4px}
+  .band .rt{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink-3);text-align:right;font-variant-numeric:tabular-nums}
+  .legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12.5px;color:var(--ink-3);margin-top:4px}
+  .swatch{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:6px;vertical-align:middle}
+
+  /* callout */
+  .call{border-left:3px solid var(--accent);background:var(--surface);padding:16px 20px;border-radius:0 8px 8px 0;box-shadow:var(--shadow)}
+  .call.warn{border-left-color:var(--bad)}
+  .call.good{border-left-color:var(--good)}
+  .call p+p{margin-top:8px}
+
+  /* data table */
+  .tw{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}
+  table{border-collapse:collapse;width:100%;min-width:540px}
+  th,td{padding:11px 16px;text-align:left;border-top:1px solid var(--line);font-size:14px}
+  thead th{
+    border-top:none;background:var(--surface-2);
+    font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);font-weight:600;
+  }
+  td.n,th.n{text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
+  tbody tr:hover{background:var(--surface-2)}
+  .zero{color:var(--bad);font-weight:600}
+
+  /* actions */
+  .acts{display:flex;flex-direction:column;gap:14px}
+  .act{display:grid;grid-template-columns:52px 1fr;gap:18px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px;box-shadow:var(--shadow)}
+  .act .rank{
+    font-family:Archivo,sans-serif;font-size:26px;font-weight:800;color:var(--accent);
+    letter-spacing:-.03em;line-height:1;padding-top:2px
+  }
+  .act h3{margin-bottom:7px}
+  .act .body{color:var(--ink-2);font-size:14.5px}
+  .act .body p+p{margin-top:8px}
+  .tag{
+    display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.1em;
+    text-transform:uppercase;padding:3px 8px;border-radius:3px;margin-left:8px;vertical-align:middle;
+    background:var(--surface-2);color:var(--ink-3);border:1px solid var(--line)
+  }
+  .tag.now{background:color-mix(in srgb,var(--good) 15%,transparent);color:var(--good);border-color:transparent}
+  .tag.done{background:color-mix(in srgb,var(--accent) 15%,transparent);color:var(--accent-ink);border-color:transparent}
+
+  ul.tight{margin:8px 0 0;padding-left:19px;color:var(--ink-2);font-size:14.5px}
+  ul.tight li{margin-top:5px}
+
+  footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--line);color:var(--ink-3);font-size:12.5px}
+  @media (max-width:720px){
+    .band{grid-template-columns:96px 1fr;gap:10px}
+    .band .rt{grid-column:2;text-align:left}
+    .split-row{grid-template-columns:1fr 1fr;gap:6px}
+    .split-row .h:nth-child(n+2){display:none}
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="head">
+    <div class="meta">
+      <span class="eyebrow">EdifyEdu · Search Console diagnosis</span>
+      <span class="eyebrow" style="color:var(--accent)">27 Jul – 23 Aug 2026 · 28 days</span>
+    </div>
+    <h1>Stuck at position eight</h1>
+    <p class="verdict">
+      Average position slipped 7.75 → 8.91 this month, but <strong>nothing is broken and there is no penalty.</strong>
+      Impressions held flat. The blended number is misleading because more than half of it comes from
+      calculator queries that Google answers on the results page itself. Strip those out and the real
+      figure appears: <strong>the business pages sit at position 10.2, and only 0.7% of all impressions
+      reach the top three.</strong> The site ranks. It does not get clicked.
+    </p>
+  </header>
+
+  <section>
+    <span class="eyebrow">The 28 days</span>
+    <div class="kpis">
+      <div class="kpi">
+        <div class="lab">Impressions</div>
+        <div class="val">947K</div>
+        <div class="sub">flat vs. previous weeks</div>
+      </div>
+      <div class="kpi">
+        <div class="lab">Clicks</div>
+        <div class="val">3,884</div>
+        <div class="sub">down ~10% across the month</div>
+      </div>
+      <div class="kpi flag">
+        <div class="lab">Click-through rate</div>
+        <div class="val">0.41%</div>
+        <div class="sub">roughly a quarter of normal</div>
+      </div>
+      <div class="kpi">
+        <div class="lab">Avg. position</div>
+        <div class="val">8.12</div>
+        <div class="sub">7.75 → 8.91 week 1 to week 4</div>
+      </div>
+    </div>
+
+    <p class="lede">
+      Clicks fell while impressions stayed level, so the drop is a conversion problem, not a visibility
+      problem. The next table explains why the headline position number cannot be trusted on its own.
+    </p>
+  </section>
+
+  <section>
+    <span class="eyebrow">The split that changes everything</span>
+    <h2>Half the site's search footprint is a calculator</h2>
+    <p class="lede">
+      The CGPA and percentage converters pull 502K impressions on their own. They rank
+      <em>better</em> than everything else, which quietly lifts the site-wide average and hides how the
+      commercial pages are really doing.
+    </p>
+
+    <div class="split">
+      <div class="split-row">
+        <div class="h">Segment</div><div class="h n">Impressions</div><div class="h n">Clicks</div><div class="h n">CTR</div><div class="h n">Avg pos</div>
+      </div>
+      <div class="split-row">
+        <div class="name">Everything <span class="note">(what the dashboard shows)</span></div>
+        <div class="n">947,124</div><div class="n">3,884</div><div class="n">0.41%</div><div class="n">8.12</div>
+      </div>
+      <div class="split-row">
+        <div class="name">Calculator tools <span class="note">/tools/cgpa, /percentage</span></div>
+        <div class="n">501,760</div><div class="n">1,396</div><div class="n">0.28%</div><div class="n">6.30</div>
+      </div>
+      <div class="split-row hi">
+        <div class="name">The actual business <span class="note">everything except /tools/</span></div>
+        <div class="n">445,364</div><div class="n">2,488</div><div class="n">0.56%</div><div class="n">10.17</div>
+      </div>
+    </div>
+
+    <div class="call warn">
+      <p><strong>These queries can never convert.</strong> "7.9 cgpa in percentage" ranked at position 3.7,
+      earned 2,251 impressions and <span class="zero">zero clicks</span>. "8.2 cgpa in percentage" at position
+      5.9: 4,602 impressions, 3 clicks. Google prints the answer directly in the results, so the user has no
+      reason to visit. These 541 queries are 78% of query-level impressions and produce a 0.40% CTR.</p>
+      <p>They are not a ranking problem to solve. They are a measurement distortion to exclude.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">Where the impressions actually sit</span>
+    <h2>Almost nothing reaches the top three</h2>
+
+    <div class="bands">
+      <div class="band">
+        <div class="bl">Position 1–3</div>
+        <div class="track"><div class="fill" style="width:0.9%;background:var(--good)"></div></div>
+        <div class="rt">0.7% · 6,719</div>
+      </div>
+      <div class="band">
+        <div class="bl">Position 3–5</div>
+        <div class="track"><div class="fill" style="width:12.1%;background:var(--amber)"></div></div>
+        <div class="rt">12.1% · 114,370</div>
+      </div>
+      <div class="band">
+        <div class="bl">Position 5–10</div>
+        <div class="track"><div class="fill" style="width:78.6%;background:var(--accent)"></div></div>
+        <div class="rt">78.6% · 744,362</div>
+      </div>
+      <div class="band">
+        <div class="bl">Position 10–20</div>
+        <div class="track"><div class="fill" style="width:5.7%;background:var(--ink-3)"></div></div>
+        <div class="rt">5.7% · 53,891</div>
+      </div>
+      <div class="band">
+        <div class="bl">Position 20+</div>
+        <div class="track"><div class="fill" style="width:2.9%;background:var(--ink-3);opacity:.5"></div></div>
+        <div class="rt">2.9% · 27,782</div>
+      </div>
+      <div class="legend">
+        <span><span class="swatch" style="background:var(--good)"></span>converts well</span>
+        <span><span class="swatch" style="background:var(--accent)"></span>the trap: ranks, rarely clicked</span>
+        <span><span class="swatch" style="background:var(--ink-3)"></span>effectively invisible</span>
+      </div>
+    </div>
+
+    <p class="lede">
+      Nearly four-fifths of the site's visibility is parked in positions 5 to 10. On a modern results page
+      that band sits under the AI overview, the "people also ask" box and the ads, so it collects
+      impressions and very few clicks. Only five pages on the entire site average a top-three position.
+    </p>
+  </section>
+
+  <section>
+    <span class="eyebrow">The commercial cost</span>
+    <h2>Fee queries earn 73 clicks from 25,000 impressions</h2>
+    <p class="lede">
+      These are the queries that turn into leads. They are the reason the fee data exists. Right now they
+      rank at position 8.7 and convert at 0.29%.
+    </p>
+
+    <div class="tw">
+      <table>
+        <thead>
+          <tr><th>Query</th><th class="n">Impressions</th><th class="n">Clicks</th><th class="n">Position</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>galgotias university mba fees</td><td class="n">3,534</td><td class="n">2</td><td class="n">9.1</td></tr>
+          <tr><td>bits pilani mba fees</td><td class="n">2,552</td><td class="n zero">0</td><td class="n">9.3</td></tr>
+          <tr><td>jain university mba fees</td><td class="n">1,300</td><td class="n">2</td><td class="n">7.0</td></tr>
+          <tr><td>uttaranchal university mba fees</td><td class="n">944</td><td class="n zero">0</td><td class="n">9.7</td></tr>
+          <tr><td>jamia hamdard mba fees</td><td class="n">713</td><td class="n zero">0</td><td class="n">7.7</td></tr>
+          <tr><td>integral university bca fees</td><td class="n">534</td><td class="n zero">0</td><td class="n">7.7</td></tr>
+          <tr><td colspan="4" style="color:var(--ink-3);font-size:13px">116 fee queries in total · 25,183 impressions · 73 clicks · avg position 8.7</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="call warn">
+      <p><strong>The wrong page is ranking.</strong> For "galgotias university mba fees" the blog review holds
+      position 8 with 16,854 impressions, while the Galgotias MBA hub, the page built to answer exactly that
+      question, does not surface at all. BITS repeats the pattern: the blog sits at 7.7 with 11,670
+      impressions, the MBA hub at 16.3 with 394.</p>
+      <p>The blog and the hub are competing for the same query, and the weaker-converting one is winning.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">What already works here</span>
+    <h2>Specific pages beat broad ones, three to one</h2>
+    <p class="lede">
+      Specialisation pages and programme hubs rank in the same place. The specific ones convert more than
+      three times better. That is the clearest signal in the whole dataset about what to build next.
+    </p>
+
+    <div class="tw">
+      <table>
+        <thead>
+          <tr><th>Page type</th><th class="n">Pages</th><th class="n">Impressions</th><th class="n">Clicks</th><th class="n">CTR</th><th class="n">Position</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Specialisation pages</strong></td><td class="n">386</td><td class="n">42,950</td><td class="n">525</td><td class="n" style="color:var(--good);font-weight:600">1.22%</td><td class="n">11.7</td></tr>
+          <tr><td>Programme hubs</td><td class="n">237</td><td class="n">61,690</td><td class="n">229</td><td class="n">0.37%</td><td class="n">11.5</td></tr>
+          <tr><td>Blog</td><td class="n">162</td><td class="n">283,041</td><td class="n">1,285</td><td class="n">0.45%</td><td class="n">8.1</td></tr>
+          <tr><td>Coupon pages</td><td class="n">—</td><td class="n">1,126</td><td class="n">30</td><td class="n" style="color:var(--good);font-weight:600">2.66%</td><td class="n">11.2</td></tr>
+          <tr><td>Verify pages</td><td class="n">—</td><td class="n">~900</td><td class="n">19</td><td class="n" style="color:var(--good);font-weight:600">2.06%</td><td class="n">5.3</td></tr>
+          <tr><td>/programs listing</td><td class="n">30</td><td class="n">13,929</td><td class="n">29</td><td class="n">0.21%</td><td class="n zero">43.7</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="call good">
+      <p><strong>The pattern is narrow intent.</strong> A page answering one precise question ("MBA in Business
+      Analytics at Andhra University", "is this university UGC approved", "coupon for MUJ") converts. A page
+      answering a broad one competes with Shiksha and Careers360 and loses. The /programs listing pages, the
+      broadest on the site, average position 43.7.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">Also worth knowing</span>
+    <h2>Desktop ranks five positions worse than mobile</h2>
+    <div class="kpis">
+      <div class="kpi">
+        <div class="lab">Mobile</div>
+        <div class="val">6.96</div>
+        <div class="sub">700,393 impressions · 0.42% CTR</div>
+      </div>
+      <div class="kpi flag">
+        <div class="lab">Desktop</div>
+        <div class="val">12.23</div>
+        <div class="sub">250,334 impressions · 0.35% CTR</div>
+      </div>
+      <div class="kpi">
+        <div class="lab">Tablet</div>
+        <div class="val">6.88</div>
+        <div class="sub">7,842 impressions · 0.38% CTR</div>
+      </div>
+    </div>
+    <p class="lede">
+      A five-position gap between mobile and desktop is wide enough to be worth a look on its own. It usually
+      points at desktop page speed, layout shift, or a heavier above-the-fold render rather than at content.
+    </p>
+  </section>
+
+  <section>
+    <span class="eyebrow">What to do, in order</span>
+    <h2>The plan</h2>
+
+    <div class="acts">
+      <div class="act">
+        <div class="rank">1</div>
+        <div>
+          <h3>Stop tracking blended average position <span class="tag now">do today</span></h3>
+          <div class="body">
+            <p>It is not a health metric for this site. Half the input is calculator traffic that ranks well and
+            never clicks, so the number moves for reasons that have nothing to do with the business.</p>
+            <p>In Search Console, filter out pages containing <span class="mono">/tools/</span> and save that as
+            your default view. The honest baseline is <strong>445K impressions, 2,488 clicks, 0.56% CTR,
+            position 10.2</strong>. Judge every future change against that, and watch clicks from fee queries
+            rather than position.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="act">
+        <div class="rank">2</div>
+        <div>
+          <h3>Settle the blog-versus-hub fight on fee queries <span class="tag done">partly shipped</span></h3>
+          <div class="body">
+            <p>Pick one canonical page per "university + programme + fees" question, and it should be the hub,
+            because that is where the current fee, the EMI split and the lead form live.</p>
+            <p>The 31 hubs given real fees this week already switched from a generic title to a fee-led one
+            carrying the actual number, which is exactly what these searches want. What remains: point the
+            matching blog review at its hub with a prominent link, and make sure the blog is not out-titling
+            the hub for the same phrase. Start with Galgotias, BITS Pilani, Jain and Uttaranchal, worth about
+            9,000 impressions of misdirected demand between them.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="act">
+        <div class="rank">3</div>
+        <div>
+          <h3>Feed the page type that already converts</h3>
+          <div class="body">
+            <p>Specialisation pages return 1.22% against the hubs' 0.37% from the same position. They are the
+            site's most efficient asset and they are under-linked.</p>
+            <p>Push internal links from hubs and blogs down into the specialisation pages, and give them the
+            same care in title and description that the hubs just received. Bringing the 237 programme hubs up
+            to specialisation-level CTR alone is worth roughly <strong>+520 clicks a month</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="act">
+        <div class="rank">4</div>
+        <div>
+          <h3>Work the striking-distance shortlist</h3>
+          <div class="body">
+            <p>67 non-tool pages hold 242,014 impressions at positions 5 to 12 and convert at 0.46%. They are
+            already on page one; they are simply not being chosen.</p>
+            <p>At a modest 1.5% CTR that pool is worth <strong>+2,500 clicks a month</strong> with no new
+            ranking required. Titles are already strong, so the lever is matching the page to the intent behind
+            the query and earning the rich result, not rewriting copy. Biggest single items: the Galgotias
+            review (16,854 impressions at 0.18%), the NAAC grades explainer (13,504 at 0.19%) and the MA full
+            form guide (12,053 at 0.15%).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="act">
+        <div class="rank">5</div>
+        <div>
+          <h3>Stop investing in calculator content</h3>
+          <div class="body">
+            <p>It looks like half the site's traffic and is worth 1,396 clicks. Every additional CGPA variant
+            adds impressions that will never convert and pushes the blended metrics further from reality.</p>
+            <p>Keep what exists, since it costs nothing to serve and earns some brand recall. Add nothing new.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">Already in flight</span>
+    <h2>What shipped this week that this report cannot see yet</h2>
+    <p class="lede">
+      This data window closes 23 August. The following went live on the 24th to 26th, so its effect lands in
+      the next reporting period.
+    </p>
+    <ul class="tight">
+      <li><strong>35 hidden hub pages un-hidden</strong>, carrying about 36,000 monthly impressions that were
+      previously set to noindex and therefore unrankable.</li>
+      <li><strong>31 of them now publish a real fee</strong>, which flips their page title to the fee-led
+      format that targets the "university + fees" queries analysed above.</li>
+      <li><strong>A site-wide fee display fix</strong>: the hero, specialisation cards and structured data were
+      showing a placeholder range like "60K–200K" on pages with no verified fee. They now show "On request",
+      and the schema no longer publishes a fabricated price.</li>
+      <li><strong>Four pages remain on the counsellor form</strong> by design, where no published fee exists.</li>
+    </ul>
+    <div class="call">
+      <p>Expect impressions on those hubs to appear first and clicks to follow a few weeks later. Judge them on
+      fee-query clicks, not on average position.</p>
+    </div>
+  </section>
+
+  <footer>
+    Source: Google Search Console performance export for edifyedu.in, web search, 27 July to 23 August 2026.
+    Query-level figures cover the top 1,000 queries (273,079 impressions); page-level figures cover the top
+    1,000 pages (947,124 impressions). Segment splits and striking-distance pools computed from that export.
+  </footer>
+
+</div>

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24",
+  "updatedAt": "2026-08-26",
   "note": "Owner-verified fee figures that have no counterpart in lib/data.ts and therefore cannot resolve to MATCH via getDisplayFee. Only for figures a university's admissions team has confirmed in writing for a specific specialisation-tier or payment-mode variant that the fees hub does not model yet. Prefer the FeeVariant schema when implemented (see audits/fee-model-proposal-2026-08-07.md). Adding an entry here is a source-of-truth commitment: someone will re-verify at each intake.",
   "entries": [
     {
@@ -361,6 +361,123 @@
       "source": "Owner-confirmed SPPU online MBA fee structure (Rishi Kumar), one-time registration",
       "verified_date": "2026-08-24",
       "note": "One-time registration fee, not tuition. Allowlisted because it attributes to SPPU MBA via slug fallback and reads as a MISMATCH against the tuition total."
+    },
+    {
+      "slug": "online-bcom-fees-india-2026-compared",
+      "figure": 12000,
+      "university": "gujarat-university-online",
+      "programme": "B.Com",
+      "source": "lib/data.ts programDetails['B.Com'].fees for Gujarat University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Gujarat University online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
+    },
+    {
+      "slug": "online-bcom-fees-india-2026-compared",
+      "figure": 14400,
+      "university": "ignou-online",
+      "programme": "B.Com",
+      "source": "lib/data.ts programDetails['B.Com'].fees for IGNOU, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "IGNOU online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
+    },
+    {
+      "slug": "online-bcom-fees-india-2026-compared",
+      "figure": 16000,
+      "university": "dr-babasaheb-ambedkar-open-university-online",
+      "programme": "B.Com",
+      "source": "lib/data.ts programDetails['B.Com'].fees for Dr. Babasaheb Ambedkar Open University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Dr. Babasaheb Ambedkar Open University online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
+    },
+    {
+      "slug": "online-bcom-fees-india-2026-compared",
+      "figure": 30000,
+      "university": "university-of-lucknow-online",
+      "programme": "B.Com",
+      "source": "lib/data.ts programDetails['B.Com'].fees for University of Lucknow, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "University of Lucknow online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
+    },
+    {
+      "slug": "online-bcom-fees-india-2026-compared",
+      "figure": 56500,
+      "university": "deen-dayal-upadhyay-gorakhpur-university-online",
+      "programme": "B.Com",
+      "source": "lib/data.ts programDetails['B.Com'].fees for DDU Gorakhpur University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "DDU Gorakhpur University online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
+    },
+    {
+      "slug": "online-bcom-fees-india-2026-compared",
+      "figure": 60000,
+      "university": "gla-university-online",
+      "programme": "B.Com",
+      "source": "lib/data.ts programDetails['B.Com'].fees for GLA University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "GLA University online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
+    },
+    {
+      "slug": "online-bcom-fees-india-2026-compared",
+      "figure": 60100,
+      "university": "alagappa-university-online",
+      "programme": "B.Com",
+      "source": "lib/data.ts programDetails['B.Com'].fees for Alagappa University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Alagappa University online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
+    },
+    {
+      "slug": "online-bcom-fees-india-2026-compared",
+      "figure": 72661,
+      "university": "kurukshetra-university-online",
+      "programme": "B.Com",
+      "source": "lib/data.ts programDetails['B.Com'].fees for Kurukshetra University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Kurukshetra University online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
+    },
+    {
+      "slug": "online-bcom-fees-india-2026-compared",
+      "figure": 99000,
+      "university": "nmims-online",
+      "programme": "B.Com",
+      "source": "lib/data.ts programDetails['B.Com'].fees for NMIMS (also Manipal University Jaipur), verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "NMIMS (also Manipal University Jaipur) online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
+    },
+    {
+      "slug": "online-bcom-fees-india-2026-compared",
+      "figure": 115000,
+      "university": "amity-university-online",
+      "programme": "B.Com",
+      "source": "lib/data.ts programDetails['B.Com'].fees for Amity University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Amity University online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
+    },
+    {
+      "slug": "online-bcom-fees-india-2026-compared",
+      "figure": 124000,
+      "university": "sgt-university-online",
+      "programme": "B.Com",
+      "source": "lib/data.ts programDetails['B.Com'].fees for SGT University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "SGT University online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
+    },
+    {
+      "slug": "online-bcom-fees-india-2026-compared",
+      "figure": 150000,
+      "university": "amrita-vishwa-vidyapeetham-online",
+      "programme": "B.Com",
+      "source": "lib/data.ts programDetails['B.Com'].fees for Amrita Vishwa Vidyapeetham, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Amrita Vishwa Vidyapeetham online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
+    },
+    {
+      "slug": "online-bcom-fees-india-2026-compared",
+      "figure": 294000,
+      "university": "manipal-academy-higher-education-online",
+      "programme": "B.Com",
+      "source": "lib/data.ts programDetails['B.Com'].fees for Manipal Academy of Higher Education, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Manipal Academy of Higher Education online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
     }
   ]
 }
