@@ -712,6 +712,33 @@
       "source": "lib/data.ts programDetails['BBA'].fees for Amity University, verified against EdifyEdu university records",
       "verified_date": "2026-08-26",
       "note": "Amity University online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
+    },
+    {
+      "slug": "is-galgotias-university-online-fake-or-legit-2026",
+      "figure": 77200,
+      "university": "galgotias-university-online",
+      "programme": "BBA",
+      "source": "lib/data.ts programDetails['BBA'].fees for Galgotias University Online, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Galgotias online BBA total fee. Correct for that programme; allowlisted because the surrounding sentence lists all four Galgotias programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
+    },
+    {
+      "slug": "is-galgotias-university-online-fake-or-legit-2026",
+      "figure": 83200,
+      "university": "galgotias-university-online",
+      "programme": "BCA",
+      "source": "lib/data.ts programDetails['BCA'].fees for Galgotias University Online, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Galgotias online BCA total fee. Correct for that programme; allowlisted because the surrounding sentence lists all four Galgotias programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
+    },
+    {
+      "slug": "is-galgotias-university-online-fake-or-legit-2026",
+      "figure": 84200,
+      "university": "galgotias-university-online",
+      "programme": "MCA",
+      "source": "lib/data.ts programDetails['MCA'].fees for Galgotias University Online, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Galgotias online MCA total fee. Correct for that programme; allowlisted because the surrounding sentence lists all four Galgotias programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
     }
   ]
 }
