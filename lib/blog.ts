@@ -611,37 +611,37 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><th>University</th><th>Total fee</th><th>NAAC</th><th>NIRF (University)</th></tr>
   </thead>
   <tbody>
-    <tr><td>Karnataka State Open University</td><td>Rs 39,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Karnataka State Open University</td><td>Rs 39,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Bharathiar University</td><td>Rs 43,000</td><td>A++</td><td>#46</td></tr>
-    <tr><td>Manonmaniam Sundaranar University</td><td>Rs 45,000</td><td>A+</td><td>Not ranked</td></tr>
-    <tr><td>DDU Gorakhpur University</td><td>Rs 57,500</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>Manonmaniam Sundaranar University</td><td>Rs 45,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>DDU Gorakhpur University</td><td>Rs 57,500</td><td>A++</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>University of Lucknow</td><td>Rs 60,000</td><td>A++</td><td>#98</td></tr>
-    <tr><td>Mangalayatan University</td><td>Rs 64,000</td><td>A+</td><td>Not ranked</td></tr>
-    <tr><td>The NorthCap University</td><td>Rs 72,000</td><td>A</td><td>Not ranked</td></tr>
-    <tr><td>Kurukshetra University</td><td>Rs 72,661</td><td>A++</td><td>Not ranked</td></tr>
-    <tr><td>Visvesvaraya Technological University</td><td>Rs 77,000</td><td>B+</td><td>Not ranked</td></tr>
-    <tr><td>Galgotias University</td><td>Rs 77,200</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Mangalayatan University</td><td>Rs 64,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>The NorthCap University</td><td>Rs 72,000</td><td>A</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Kurukshetra University</td><td>Rs 72,661</td><td>A++</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Visvesvaraya Technological University</td><td>Rs 77,000</td><td>B+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Galgotias University</td><td>Rs 77,200</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Koneru Lakshmaiah Education Foundation</td><td>Rs 79,000</td><td>A++</td><td>#26</td></tr>
-    <tr><td>Sikkim Manipal University</td><td>Rs 90,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Sikkim Manipal University</td><td>Rs 90,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Shoolini University</td><td>Rs 96,000</td><td>A+</td><td>#69</td></tr>
-    <tr><td>GLA University</td><td>Rs 99,800</td><td>A+</td><td>Not ranked</td></tr>
-    <tr><td>Uttaranchal University</td><td>Rs 1,02,000</td><td>A+</td><td>Not ranked</td></tr>
-    <tr><td>Jaipur National University</td><td>Rs 1,04,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>GLA University</td><td>Rs 99,800</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Uttaranchal University</td><td>Rs 1,02,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Jaipur National University</td><td>Rs 1,04,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Maharishi Markandeshwar University</td><td>Rs 1,08,000</td><td>A++</td><td>#85</td></tr>
-    <tr><td>Parul University</td><td>Rs 1,10,000</td><td>A++</td><td>Not ranked</td></tr>
-    <tr><td>Desh Bhagat University</td><td>Rs 1,14,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Parul University</td><td>Rs 1,10,000</td><td>A++</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Desh Bhagat University</td><td>Rs 1,14,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>University of Mysore</td><td>Rs 1,20,000</td><td>A</td><td>#71</td></tr>
     <tr><td>Savitribai Phule Pune University</td><td>Rs 1,25,160</td><td>A++</td><td>#56</td></tr>
     <tr><td>Bharati Vidyapeeth</td><td>Rs 1,29,000</td><td>A++</td><td>#59</td></tr>
-    <tr><td>Dayananda Sagar University</td><td>Rs 1,30,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Dayananda Sagar University</td><td>Rs 1,30,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>D.Y. Patil University, Navi Mumbai</td><td>Rs 1,30,000</td><td>A++</td><td>#91</td></tr>
     <tr><td>Chandigarh University</td><td>Rs 1,31,250</td><td>A+</td><td>#19</td></tr>
-    <tr><td>Vivekananda Global University</td><td>Rs 1,32,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Vivekananda Global University</td><td>Rs 1,32,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Sharda University</td><td>Rs 1,35,000</td><td>A+</td><td>#87</td></tr>
     <tr><td>Manipal University Jaipur</td><td>Rs 1,39,000</td><td>A+</td><td>#58</td></tr>
     <tr><td>SGT University</td><td>Rs 1,39,000</td><td>A+</td><td>#101</td></tr>
     <tr><td>NMIMS</td><td>Rs 1,41,000</td><td>A++</td><td>#52</td></tr>
-    <tr><td>AMET University</td><td>Rs 1,50,000</td><td>A</td><td>Not ranked</td></tr>
+    <tr><td>AMET University</td><td>Rs 1,50,000</td><td>A</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Amrita Vishwa Vidyapeetham</td><td>Rs 1,65,000</td><td>A++</td><td>#8</td></tr>
     <tr><td>Symbiosis School for Online and Digital Learning</td><td>Rs 1,65,000</td><td>A++</td><td>#24</td></tr>
     <tr><td>University of Petroleum and Energy Studies</td><td>Rs 1,69,000</td><td>A</td><td>#45</td></tr>
@@ -822,25 +822,25 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><th>University</th><th>Total fee</th><th>NAAC</th><th>NIRF (University)</th></tr>
   </thead>
   <tbody>
-    <tr><td>IGNOU</td><td>Rs 50,800</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>IGNOU</td><td>Rs 50,800</td><td>A++</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Koneru Lakshmaiah Education Foundation</td><td>Rs 65,500</td><td>A++</td><td>#26</td></tr>
-    <tr><td>Mangalayatan University</td><td>Rs 67,000</td><td>A+</td><td>Not ranked</td></tr>
-    <tr><td>Kurukshetra University</td><td>Rs 76,600</td><td>A++</td><td>Not ranked</td></tr>
-    <tr><td>Galgotias University</td><td>Rs 84,200</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Mangalayatan University</td><td>Rs 67,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Kurukshetra University</td><td>Rs 76,600</td><td>A++</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Galgotias University</td><td>Rs 84,200</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Jamia Hamdard</td><td>Rs 87,500</td><td>A+</td><td>#47</td></tr>
-    <tr><td>Marwadi University</td><td>Rs 89,000</td><td>A+</td><td>Not ranked</td></tr>
-    <tr><td>GLA University</td><td>Rs 94,300</td><td>A+</td><td>Not ranked</td></tr>
-    <tr><td>Ganpat University</td><td>Rs 97,000</td><td>A</td><td>Not ranked</td></tr>
-    <tr><td>Shree Guru Gobind Singh Tricentenary University</td><td>Rs 98,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Marwadi University</td><td>Rs 89,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>GLA University</td><td>Rs 94,300</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Ganpat University</td><td>Rs 97,000</td><td>A</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Shree Guru Gobind Singh Tricentenary University</td><td>Rs 98,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Maharishi Markandeshwar University</td><td>Rs 1,00,000</td><td>A++</td><td>#85</td></tr>
     <tr><td>Lovely Professional University</td><td>Rs 1,08,000</td><td>A++</td><td>#31</td></tr>
-    <tr><td>Noida International University</td><td>Rs 1,18,000</td><td>A+</td><td>Not ranked</td></tr>
-    <tr><td>Parul University</td><td>Rs 1,20,000</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>Noida International University</td><td>Rs 1,18,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Parul University</td><td>Rs 1,20,000</td><td>A++</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Amrita Vishwa Vidyapeetham</td><td>Rs 1,40,000</td><td>A++</td><td>#8</td></tr>
     <tr><td>Bharati Vidyapeeth</td><td>Rs 1,46,000</td><td>A++</td><td>#59</td></tr>
     <tr><td>Chandigarh University</td><td>Rs 1,55,000</td><td>A+</td><td>#19</td></tr>
     <tr><td>Manipal University Jaipur</td><td>Rs 1,58,000</td><td>A+</td><td>#58</td></tr>
-    <tr><td>GLS University</td><td>Rs 1,60,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>GLS University</td><td>Rs 1,60,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Amity University</td><td>Rs 1,70,000</td><td>A+</td><td>#22</td></tr>
     <tr><td>Dr. D.Y. Patil Vidyapeeth, Pune</td><td>Rs 1,90,000</td><td>A++</td><td>#41</td></tr>
     <tr><td>Shanmugha Arts, Science, Technology and Research Academy</td><td>Rs 2,00,000</td><td>A+</td><td>#57</td></tr>
@@ -1007,31 +1007,31 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><th>University</th><th>Total fee</th><th>NAAC</th><th>NIRF (University)</th></tr>
   </thead>
   <tbody>
-    <tr><td>Dr. Babasaheb Ambedkar Open University</td><td>Rs 45,000</td><td>A++</td><td>Not ranked</td></tr>
-    <tr><td>IGNOU</td><td>Rs 49,800</td><td>A++</td><td>Not ranked</td></tr>
-    <tr><td>Karnataka State Open University</td><td>Rs 52,000</td><td>A+</td><td>Not ranked</td></tr>
-    <tr><td>Integral University</td><td>Rs 75,300</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Dr. Babasaheb Ambedkar Open University</td><td>Rs 45,000</td><td>A++</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>IGNOU</td><td>Rs 49,800</td><td>A++</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Karnataka State Open University</td><td>Rs 52,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Integral University</td><td>Rs 75,300</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Koneru Lakshmaiah Education Foundation</td><td>Rs 79,000</td><td>A++</td><td>#26</td></tr>
-    <tr><td>Marwadi University</td><td>Rs 79,000</td><td>A+</td><td>Not ranked</td></tr>
-    <tr><td>Galgotias University</td><td>Rs 83,200</td><td>A+</td><td>Not ranked</td></tr>
-    <tr><td>Shobhit Institute of Engineering and Technology</td><td>Rs 90,000</td><td>A</td><td>Not ranked</td></tr>
-    <tr><td>GLA University</td><td>Rs 99,800</td><td>A+</td><td>Not ranked</td></tr>
-    <tr><td>P P Savani University</td><td>Rs 1,00,000</td><td>A+</td><td>Not ranked</td></tr>
-    <tr><td>Visvesvaraya Technological University</td><td>Rs 1,01,000</td><td>B+</td><td>Not ranked</td></tr>
+    <tr><td>Marwadi University</td><td>Rs 79,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Galgotias University</td><td>Rs 83,200</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Shobhit Institute of Engineering and Technology</td><td>Rs 90,000</td><td>A</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>GLA University</td><td>Rs 99,800</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>P P Savani University</td><td>Rs 1,00,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Visvesvaraya Technological University</td><td>Rs 1,01,000</td><td>B+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Maharishi Markandeshwar University</td><td>Rs 1,08,000</td><td>A++</td><td>#85</td></tr>
-    <tr><td>Parul University</td><td>Rs 1,10,000</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>Parul University</td><td>Rs 1,10,000</td><td>A++</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>University of Mysore</td><td>Rs 1,20,000</td><td>A</td><td>#71</td></tr>
     <tr><td>Vignan's Foundation for Science and Technology</td><td>Rs 1,21,000</td><td>A++</td><td>#70</td></tr>
     <tr><td>Lovely Professional University</td><td>Rs 1,22,400</td><td>A++</td><td>#31</td></tr>
     <tr><td>Bharati Vidyapeeth</td><td>Rs 1,29,000</td><td>A++</td><td>#59</td></tr>
-    <tr><td>Dayananda Sagar University</td><td>Rs 1,30,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Dayananda Sagar University</td><td>Rs 1,30,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Savitribai Phule Pune University</td><td>Rs 1,31,160</td><td>A++</td><td>#56</td></tr>
     <tr><td>D.Y. Patil University, Navi Mumbai</td><td>Rs 1,32,000</td><td>A++</td><td>#91</td></tr>
-    <tr><td>Vivekananda Global University</td><td>Rs 1,32,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Vivekananda Global University</td><td>Rs 1,32,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>JAIN University</td><td>Rs 1,35,000</td><td>A++</td><td>#62</td></tr>
     <tr><td>Manipal University Jaipur</td><td>Rs 1,39,000</td><td>A+</td><td>#58</td></tr>
     <tr><td>SGT University</td><td>Rs 1,39,000</td><td>A+</td><td>#101</td></tr>
-    <tr><td>Guru Ghasidas Vishwavidyalaya</td><td>Rs 1,47,000</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>Guru Ghasidas Vishwavidyalaya</td><td>Rs 1,47,000</td><td>A++</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Manav Rachna University</td><td>Rs 1,50,000</td><td>A++</td><td>#96</td></tr>
     <tr><td>Symbiosis School for Online and Digital Learning</td><td>Rs 1,57,500</td><td>A++</td><td>#24</td></tr>
     <tr><td>Amrita Vishwa Vidyapeetham</td><td>Rs 1,65,000</td><td>A++</td><td>#8</td></tr>
@@ -1220,27 +1220,27 @@ export const BLOG_POSTS: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td>Gujarat University</td><td>Rs 12,000</td><td>A+</td><td>#74</td></tr>
-    <tr><td>IGNOU</td><td>Rs 14,400</td><td>A++</td><td>Not ranked</td></tr>
-    <tr><td>Dr. Babasaheb Ambedkar Open University</td><td>Rs 16,000</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>IGNOU</td><td>Rs 14,400</td><td>A++</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Dr. Babasaheb Ambedkar Open University</td><td>Rs 16,000</td><td>A++</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Aligarh Muslim University</td><td>Rs 28,000</td><td>A+</td><td>#10</td></tr>
     <tr><td>University of Lucknow</td><td>Rs 30,000</td><td>A++</td><td>#98</td></tr>
-    <tr><td>Integral University</td><td>Rs 36,000</td><td>A+</td><td>Not ranked</td></tr>
-    <tr><td>Manonmaniam Sundaranar University</td><td>Rs 45,000</td><td>A+</td><td>Not ranked</td></tr>
-    <tr><td>The NorthCap University</td><td>Rs 48,000</td><td>A</td><td>Not ranked</td></tr>
-    <tr><td>DDU Gorakhpur University</td><td>Rs 56,500</td><td>A++</td><td>Not ranked</td></tr>
-    <tr><td>GLA University</td><td>Rs 60,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Integral University</td><td>Rs 36,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Manonmaniam Sundaranar University</td><td>Rs 45,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>The NorthCap University</td><td>Rs 48,000</td><td>A</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>DDU Gorakhpur University</td><td>Rs 56,500</td><td>A++</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>GLA University</td><td>Rs 60,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Alagappa University</td><td>Rs 60,100</td><td>A++</td><td>#44</td></tr>
-    <tr><td>Kurukshetra University</td><td>Rs 72,661</td><td>A++</td><td>Not ranked</td></tr>
-    <tr><td>Sikkim Manipal University</td><td>Rs 75,000</td><td>A+</td><td>Not ranked</td></tr>
-    <tr><td>Yenepoya University</td><td>Rs 75,000</td><td>A+</td><td>Not ranked</td></tr>
-    <tr><td>Guru Ghasidas Vishwavidyalaya</td><td>Rs 81,000</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>Kurukshetra University</td><td>Rs 72,661</td><td>A++</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Sikkim Manipal University</td><td>Rs 75,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Yenepoya University</td><td>Rs 75,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
+    <tr><td>Guru Ghasidas Vishwavidyalaya</td><td>Rs 81,000</td><td>A++</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>University of Mysore</td><td>Rs 84,000</td><td>A</td><td>#71</td></tr>
     <tr><td>Manipal University Jaipur</td><td>Rs 99,000</td><td>A+</td><td>#58</td></tr>
     <tr><td>NMIMS</td><td>Rs 99,000</td><td>A++</td><td>#52</td></tr>
     <tr><td>Amity University</td><td>Rs 1,15,000</td><td>A+</td><td>#22</td></tr>
-    <tr><td>AMET University</td><td>Rs 1,20,000</td><td>A</td><td>Not ranked</td></tr>
+    <tr><td>AMET University</td><td>Rs 1,20,000</td><td>A</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>SGT University</td><td>Rs 1,24,000</td><td>A+</td><td>#101</td></tr>
-    <tr><td>Dayananda Sagar University</td><td>Rs 1,30,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Dayananda Sagar University</td><td>Rs 1,30,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Amrita Vishwa Vidyapeetham</td><td>Rs 1,50,000</td><td>A++</td><td>#8</td></tr>
     <tr><td>Manipal Academy of Higher Education</td><td>Rs 2,94,000</td><td>A++</td><td>#3</td></tr>
   </tbody>
