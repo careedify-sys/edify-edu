@@ -604,6 +604,114 @@
       "source": "lib/data.ts programDetails['MCA'].fees for Christ University, verified against EdifyEdu university records",
       "verified_date": "2026-08-26",
       "note": "Christ University online MCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the opening comparison, the SVG and multi-university sentences where attribution picks the wrong institution."
+    },
+    {
+      "slug": "online-bba-fees-india-2026-compared",
+      "figure": 39000,
+      "university": "karnataka-state-open-university-online",
+      "programme": "BBA",
+      "source": "lib/data.ts programDetails['BBA'].fees for Karnataka State Open University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Karnataka State Open University online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
+    },
+    {
+      "slug": "online-bba-fees-india-2026-compared",
+      "figure": 43000,
+      "university": "bharathiar-university-online",
+      "programme": "BBA",
+      "source": "lib/data.ts programDetails['BBA'].fees for Bharathiar University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Bharathiar University online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
+    },
+    {
+      "slug": "online-bba-fees-india-2026-compared",
+      "figure": 57500,
+      "university": "deen-dayal-upadhyay-gorakhpur-university-online",
+      "programme": "BBA",
+      "source": "lib/data.ts programDetails['BBA'].fees for DDU Gorakhpur University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "DDU Gorakhpur University online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
+    },
+    {
+      "slug": "online-bba-fees-india-2026-compared",
+      "figure": 60000,
+      "university": "university-of-lucknow-online",
+      "programme": "BBA",
+      "source": "lib/data.ts programDetails['BBA'].fees for University of Lucknow, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "University of Lucknow online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
+    },
+    {
+      "slug": "online-bba-fees-india-2026-compared",
+      "figure": 72661,
+      "university": "kurukshetra-university-online",
+      "programme": "BBA",
+      "source": "lib/data.ts programDetails['BBA'].fees for Kurukshetra University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Kurukshetra University online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
+    },
+    {
+      "slug": "online-bba-fees-india-2026-compared",
+      "figure": 77000,
+      "university": "vtu-online",
+      "programme": "BBA",
+      "source": "lib/data.ts programDetails['BBA'].fees for Visvesvaraya Technological University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Visvesvaraya Technological University online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
+    },
+    {
+      "slug": "online-bba-fees-india-2026-compared",
+      "figure": 79000,
+      "university": "kl-university-online",
+      "programme": "BBA",
+      "source": "lib/data.ts programDetails['BBA'].fees for Koneru Lakshmaiah Education Foundation, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Koneru Lakshmaiah Education Foundation online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
+    },
+    {
+      "slug": "online-bba-fees-india-2026-compared",
+      "figure": 80000,
+      "university": "(none - editorial threshold)",
+      "programme": "BBA",
+      "source": "Derived from the verified fee table in this post, not a university-published fee",
+      "verified_date": "2026-08-26",
+      "note": "Editorial threshold. Used as \"NAAC A++ under Rs 80,000\", the spine of the article. All five universities named under it are verified below this figure; the number itself is a band boundary, not a fee any university charges."
+    },
+    {
+      "slug": "online-bba-fees-india-2026-compared",
+      "figure": 100000,
+      "university": "(none - editorial threshold)",
+      "programme": "BBA",
+      "source": "Derived from the verified fee table in this post, not a university-published fee",
+      "verified_date": "2026-08-26",
+      "note": "Editorial threshold. Used to describe where private universities cluster (\"above Rs 1,00,000\"). Not a fee any university charges."
+    },
+    {
+      "slug": "online-bba-fees-india-2026-compared",
+      "figure": 150000,
+      "university": "amet-university-online",
+      "programme": "BBA",
+      "source": "lib/data.ts programDetails['BBA'].fees for AMET University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "AMET University online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
+    },
+    {
+      "slug": "online-bba-fees-india-2026-compared",
+      "figure": 169000,
+      "university": "university-of-petroleum-energy-studies-online",
+      "programme": "BBA",
+      "source": "lib/data.ts programDetails['BBA'].fees for University of Petroleum and Energy Studies, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "University of Petroleum and Energy Studies online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
+    },
+    {
+      "slug": "online-bba-fees-india-2026-compared",
+      "figure": 199000,
+      "university": "amity-university-online",
+      "programme": "BBA",
+      "source": "lib/data.ts programDetails['BBA'].fees for Amity University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Amity University online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
     }
   ]
 }

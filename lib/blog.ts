@@ -41,6 +41,217 @@ export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "online-bba-fees-india-2026-compared",
+    title: "Online BBA Fees in India 2026: 37 Universities Compared, and Where NAAC A++ Is Cheapest",
+    seoTitle: "Online BBA Fees 2026: 37 Universities Compared",
+    metaDescription: "Online BBA fees in India run Rs 39,000 to Rs 1,99,000. Five NAAC A++ universities charge under Rs 80,000, while the priciest is graded A+. Full fee table.",
+    category: "Online BBA Programs",
+    tags: ["online bba fees","online bba fees india","cheapest online bba","best online bba india 2026","online bba colleges india","ugc deb approved bba","naac a++ online bba","Online BBA Fees 2026"],
+    publishedAt: "2026-08-26",
+    readTime: 9,
+    targetKeyword: "online BBA fees India",
+    relatedUniversities: ["bharathiar-university-online","deen-dayal-upadhyay-gorakhpur-university-online","kl-university-online","amrita-vishwa-vidyapeetham-online","bharati-vidyapeeth-university-online"],
+    status: "published",
+    author: "Rishi Kumar",
+    ctaTitle: "Compare Online BBA Programmes Side by Side",
+    ctaDesc: "See fees, NAAC grades and NIRF ranks for every UGC-DEB approved online BBA. Public data only, no paid rankings, no referral commissions.",
+    faqs: [
+      { q: "What is the cheapest online BBA in India?", a: "Karnataka State Open University at Rs 39,000 is the cheapest verified figure in our records, followed by Bharathiar University at Rs 43,000. Bharathiar is the stronger pick of the two because it holds NAAC A++ and an NIRF University rank of 46. Confirm the current fee with the university before you pay." },
+      { q: "Can I get a NAAC A++ online BBA cheaply?", a: "Yes. Five universities in our comparison hold NAAC A++ and charge under Rs 80,000: Bharathiar at Rs 43,000, DDU Gorakhpur at Rs 57,500, University of Lucknow at Rs 60,000, Kurukshetra at Rs 72,661 and Koneru Lakshmaiah at Rs 79,000. The most expensive BBA on the table costs Rs 1,99,000 and is graded A+, one band lower." },
+      { q: "How much does an online BBA cost in India?", a: "Verified fees run from Rs 39,000 to Rs 1,99,000 for the full three-year programme. State and central universities dominate the value end, while private universities cluster above Rs 1,00,000 and charge for ranking, specialisation breadth and student support." },
+      { q: "Why are state university online BBA fees so much lower?", a: "State and central universities price online degrees on a public-funding basis rather than a market one. Their NAAC grade reflects decades of conventional teaching, research and infrastructure, and that does not change because the delivery moved online. What you trade is service: fewer live sessions, lighter placement support and slower admissions." },
+      { q: "Is an expensive online BBA better?", a: "Not in accreditation terms. The premium buys a higher NIRF position, a wider specialisation menu and more structured support, which are real things if you will use them. It does not buy a more valid degree, and on our table it does not reliably buy a better NAAC grade either." },
+      { q: "Is an online BBA valid in India?", a: "Yes, provided the university is UGC-DEB entitled for online delivery in your admission year. UGC rules treat an online degree from an entitled university as equivalent to a conventional one for employment, government recruitment and postgraduate study. Check the current list at deb.ugc.ac.in before enrolling." },
+      { q: "How long is an online BBA?", a: "Three years across six semesters at every university in this comparison. Most universities allow a longer maximum duration if you need to spread the programme out, which suits students working alongside their studies." },
+      { q: "Can I do an MBA after an online BBA?", a: "Yes. A UGC-DEB approved online BBA qualifies you for an MBA and other postgraduate management programmes at recognised Indian universities on the same basis as a conventional degree. Entrance requirements vary by university, so check whether your target MBA asks for a specific entrance exam." },
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 26 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Every fee below was checked against our verified university records on 26 August 2026. Universities that publish only a broad range, rather than a single confirmed figure, were left out rather than estimated. Accreditation reflects our NAAC and NIRF records. EdifyEdu accepts no referral commission from any university.</em></p>
+
+<p>Five universities on this page offer a NAAC A++ online BBA for under Rs 80,000. The most expensive BBA in the comparison costs Rs 1,99,000 and is graded A+.</p>
+
+<p>That is worth sitting with before you shortlist anything. NAAC A++ is the top accreditation band in India, and in the online BBA market it is concentrated at the cheap end of the table rather than the expensive one.</p>
+
+<div class="callout-key">
+  <strong>Online BBA fees in India 2026, at a glance</strong>
+  <ul>
+    <li><strong>Cheapest verified:</strong> Bharathiar University, NAAC A++ and NIRF University rank 46</li>
+    <li><strong>Most expensive:</strong> Amity University, graded NAAC A+</li>
+    <li><strong>NAAC A++ under Rs 80,000:</strong> five universities</li>
+    <li><strong>Duration:</strong> 3 years, 6 semesters, at every university listed</li>
+    <li><strong>Validity:</strong> every university here is UGC-DEB approved for online delivery</li>
+    <li><strong>What varies most:</strong> accreditation and specialisation count, not teaching format</li>
+  </ul>
+</div>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparison of five NAAC A plus plus online BBA programmes priced under 80,000 rupees: Bharathiar University at 43,000 with NIRF rank 46, Deen Dayal Upadhyay Gorakhpur at 57,500, University of Lucknow at 60,000 with rank 98, Kurukshetra University at 72,661, and Koneru Lakshmaiah at 79,000 with rank 26. All hold the top NAAC band." style="width:100%;height:auto">
+  <rect width="720" height="250" rx="12" fill="#f1f5f9"/>
+  <text x="26" y="30" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Five NAAC A++ online BBAs under Rs 80,000</text>
+  <text x="26" y="49" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="12">Top accreditation band, verified total programme fee, three years</text>
+
+  <g font-family="Arial,Helvetica,sans-serif" font-size="12">
+    <text x="26" y="82" fill="#475569">Bharathiar University</text>
+    <rect x="250" y="70" width="108" height="17" rx="3" fill="#10b981"/>
+    <text x="368" y="83" fill="#0f172a" font-weight="700">Rs 43,000</text>
+    <text x="470" y="83" fill="#64748b" font-size="11">A++ · NIRF #46</text>
+
+    <text x="26" y="112" fill="#475569">DDU Gorakhpur</text>
+    <rect x="250" y="100" width="144" height="17" rx="3" fill="#10b981"/>
+    <text x="404" y="113" fill="#0f172a" font-weight="700">Rs 57,500</text>
+    <text x="506" y="113" fill="#64748b" font-size="11">A++</text>
+
+    <text x="26" y="142" fill="#475569">University of Lucknow</text>
+    <rect x="250" y="130" width="150" height="17" rx="3" fill="#10b981"/>
+    <text x="410" y="143" fill="#0f172a" font-weight="700">Rs 60,000</text>
+    <text x="512" y="143" fill="#64748b" font-size="11">A++ · NIRF #98</text>
+
+    <text x="26" y="172" fill="#475569">Kurukshetra University</text>
+    <rect x="250" y="160" width="182" height="17" rx="3" fill="#10b981"/>
+    <text x="442" y="173" fill="#0f172a" font-weight="700">Rs 72,661</text>
+    <text x="544" y="173" fill="#64748b" font-size="11">A++</text>
+
+    <text x="26" y="202" fill="#475569">Koneru Lakshmaiah</text>
+    <rect x="250" y="190" width="198" height="17" rx="3" fill="#10b981"/>
+    <text x="458" y="203" fill="#0f172a" font-weight="700">Rs 79,000</text>
+    <text x="560" y="203" fill="#64748b" font-size="11">A++ · NIRF #26</text>
+  </g>
+
+  <line x1="26" y1="218" x2="694" y2="218" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="26" y="238" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11">For comparison, the most expensive BBA in this review costs Rs 1,99,000 and holds NAAC A+, one band lower.</text>
+</svg>
+<p class="svg-caption">Verified against our university records, August 2026. NIRF positions are University category and belong to the institution, not to the online programme specifically.</p>
+</div>
+
+<h2>Every Verified Online BBA Fee, Cheapest First</h2>
+
+<p>These are the universities whose BBA fee we could confirm to a single figure for the full three-year programme.</p>
+
+<table>
+  <thead>
+    <tr><th>University</th><th>Total fee</th><th>NAAC</th><th>NIRF (University)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Karnataka State Open University</td><td>Rs 39,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Bharathiar University</td><td>Rs 43,000</td><td>A++</td><td>#46</td></tr>
+    <tr><td>Manonmaniam Sundaranar University</td><td>Rs 45,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>DDU Gorakhpur University</td><td>Rs 57,500</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>University of Lucknow</td><td>Rs 60,000</td><td>A++</td><td>#98</td></tr>
+    <tr><td>Mangalayatan University</td><td>Rs 64,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>The NorthCap University</td><td>Rs 72,000</td><td>A</td><td>Not ranked</td></tr>
+    <tr><td>Kurukshetra University</td><td>Rs 72,661</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>Visvesvaraya Technological University</td><td>Rs 77,000</td><td>B+</td><td>Not ranked</td></tr>
+    <tr><td>Galgotias University</td><td>Rs 77,200</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Koneru Lakshmaiah Education Foundation</td><td>Rs 79,000</td><td>A++</td><td>#26</td></tr>
+    <tr><td>Sikkim Manipal University</td><td>Rs 90,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Shoolini University</td><td>Rs 96,000</td><td>A+</td><td>#69</td></tr>
+    <tr><td>GLA University</td><td>Rs 99,800</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Uttaranchal University</td><td>Rs 1,02,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Jaipur National University</td><td>Rs 1,04,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Maharishi Markandeshwar University</td><td>Rs 1,08,000</td><td>A++</td><td>#85</td></tr>
+    <tr><td>Parul University</td><td>Rs 1,10,000</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>Desh Bhagat University</td><td>Rs 1,14,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>University of Mysore</td><td>Rs 1,20,000</td><td>A</td><td>#71</td></tr>
+    <tr><td>Savitribai Phule Pune University</td><td>Rs 1,25,160</td><td>A++</td><td>#56</td></tr>
+    <tr><td>Bharati Vidyapeeth</td><td>Rs 1,29,000</td><td>A++</td><td>#59</td></tr>
+    <tr><td>Dayananda Sagar University</td><td>Rs 1,30,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>D.Y. Patil University, Navi Mumbai</td><td>Rs 1,30,000</td><td>A++</td><td>#91</td></tr>
+    <tr><td>Chandigarh University</td><td>Rs 1,31,250</td><td>A+</td><td>#19</td></tr>
+    <tr><td>Vivekananda Global University</td><td>Rs 1,32,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Sharda University</td><td>Rs 1,35,000</td><td>A+</td><td>#87</td></tr>
+    <tr><td>Manipal University Jaipur</td><td>Rs 1,39,000</td><td>A+</td><td>#58</td></tr>
+    <tr><td>SGT University</td><td>Rs 1,39,000</td><td>A+</td><td>#101</td></tr>
+    <tr><td>NMIMS</td><td>Rs 1,41,000</td><td>A++</td><td>#52</td></tr>
+    <tr><td>AMET University</td><td>Rs 1,50,000</td><td>A</td><td>Not ranked</td></tr>
+    <tr><td>Amrita Vishwa Vidyapeetham</td><td>Rs 1,65,000</td><td>A++</td><td>#8</td></tr>
+    <tr><td>Symbiosis School for Online and Digital Learning</td><td>Rs 1,65,000</td><td>A++</td><td>#24</td></tr>
+    <tr><td>University of Petroleum and Energy Studies</td><td>Rs 1,69,000</td><td>A</td><td>#45</td></tr>
+    <tr><td>Christ University</td><td>Rs 1,75,000</td><td>A+</td><td>#63</td></tr>
+    <tr><td>Manav Rachna University</td><td>Rs 1,80,000</td><td>A++</td><td>#96</td></tr>
+    <tr><td>Amity University</td><td>Rs 1,99,000</td><td>A+</td><td>#22</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-warning">
+  <strong>All fees are indicative and change between intakes.</strong> The figures reflect our verified records as of 26 August 2026 for the full three-year programme. Universities revise fees each admission cycle, and early-bird or scholarship pricing often expires. Confirm the current figure in writing before you pay. Check online-delivery approval yourself at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a> and accreditation at <a href="https://naac.gov.in" target="_blank" rel="noopener">naac.gov.in</a>.
+</div>
+
+<div class="callout-warning">
+  <strong>One accreditation flag worth knowing.</strong> Visvesvaraya Technological University holds NAAC B+, which is below the B++ threshold we treat as the floor for a confident recommendation. Its degree remains valid if the university is UGC-DEB entitled for your intake, but at Rs 77,000 you can buy NAAC A++ from Koneru Lakshmaiah for a similar sum. Verify the current grade at naac.gov.in before deciding.
+</div>
+
+<h2>Why the Cheap End Is So Strong Here</h2>
+
+<p>Look at who sits under Rs 80,000. Bharathiar, DDU Gorakhpur, Lucknow and Kurukshetra are all state or central universities, and all four hold NAAC A++.</p>
+
+<p>These institutions price online degrees on a public-funding basis rather than a market one. Their accreditation reflects decades of conventional teaching, research and infrastructure, none of which changes because the delivery moved online.</p>
+
+<p class="pull">The grade belongs to the university, not to the delivery format. That is why a state university can charge a quarter of the price and still outrank a private one on accreditation.</p>
+
+<p>What you trade is service. Expect fewer live sessions, lighter placement support, thinner published information and slower admissions than a private university whose entire operation is built around online students.</p>
+
+<h2>The Standouts</h2>
+
+<p><a href="/universities/bharathiar-university-online/bba">Bharathiar University charges Rs 43,000</a>, holds NAAC A++ and sits at NIRF University rank 46. It is the second cheapest programme in this comparison and better accredited than every option above Rs 1,50,000 except two.</p>
+
+<p><a href="/universities/deen-dayal-upadhyay-gorakhpur-university-online/bba">DDU Gorakhpur at Rs 57,500</a> is the other clear value pick, with NAAC A++ at a CGPA of 3.78 and six specialisations, which is a wide menu for a state university.</p>
+
+<p><a href="/universities/kl-university-online/bba">Koneru Lakshmaiah at Rs 79,000</a> is the best-ranked option in the value band at NIRF 26, and it is a private university, so the online support is stronger than at the state options.</p>
+
+<h2>When the Premium Is Worth It</h2>
+
+<p>Three things justify paying at the top of this table, and none of them is the degree's validity.</p>
+
+<p><strong>A high NIRF position.</strong> <a href="/universities/amrita-vishwa-vidyapeetham-online/bba">Amrita Vishwa Vidyapeetham at Rs 1,65,000</a> holds NIRF University rank 8. If you plan to study abroad or apply to brand-sensitive employers, that standing is real.</p>
+
+<p><strong>A wide specialisation menu.</strong> <a href="/universities/bharati-vidyapeeth-university-online/bba">Bharati Vidyapeeth at Rs 1,29,000</a> lists eleven specialisations, and D.Y. Patil Navi Mumbai lists ten. Most state universities offer one.</p>
+
+<p><strong>Structured support.</strong> Private universities generally run responsive admissions, scheduled live classes and some placement assistance. If you know you need that structure to finish a three-year degree, it is worth paying for.</p>
+
+<p>What the premium does not buy is a more valid degree. Every programme here is UGC-DEB approved and legally equivalent for employment, government recruitment and postgraduate study.</p>
+
+<div class="cta-box">
+  <strong>Comparing online BBA programmes?</strong>
+  <p>Edify compares public UGC, NAAC and NIRF data across universities. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/compare">Compare online BBA programmes</a>
+  <a class="ilink" href="/tools/emi-calculator">Work out the monthly cost</a>
+</div>
+
+<h2>How to Shortlist Without Overpaying</h2>
+
+<p><strong>Set the accreditation floor before you look at fees.</strong> If NAAC A++ matters to you, five options under Rs 80,000 already clear it. Filtering in that order stops a high price from implying quality it does not carry.</p>
+
+<p><strong>Count the specialisations you would actually use.</strong> A menu of eleven is only worth paying for if one of them matches the career you want. Otherwise the core three years are much the same everywhere.</p>
+
+<p><strong>Be honest about support.</strong> A BBA is three years. If you know you will drift without live classes and reminders, the private premium buys something real for you specifically.</p>
+
+<p><strong>Confirm entitlement for your intake.</strong> UGC-DEB approval is granted intake by intake, and the list at deb.ugc.ac.in settles it rather than a university claim.</p>
+
+<h2>Final Word</h2>
+
+<p>The online BBA market rewards students who check accreditation before price. You can hold NAAC A++ for Rs 43,000, and the most expensive programme in this comparison sits a full band lower at A+.</p>
+
+<p>That does not make the expensive options bad. It means the premium buys ranking, specialisation breadth and support rather than a better-accredited degree, so pay it only when you can name which of those three you need. If you are still deciding whether an online BBA suits you at all, read the <a href="/guides/is-online-degree-valid-india">guide to online degree validity in India</a> first.</p>
+
+<div class="cta-box">
+  <strong>Get the current BBA fee confirmed before you enrol</strong>
+  <p>Fees move between intakes and early-bird pricing expires. We will help you get the figure that applies to you in writing. Edify compares public UGC and NAAC data only. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/contact">Request a free counselling call</a>
+</div>
+
+<h2>Sources to Consult</h2>
+
+<ul>
+  <li><a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">UGC-DEB approved institutions list</a> to confirm a university may deliver this degree online in your admission year</li>
+  <li><a href="https://naac.gov.in" target="_blank" rel="noopener">NAAC accreditation database</a> to confirm the grade, CGPA and validity window</li>
+  <li><a href="https://nirfindia.org" target="_blank" rel="noopener">NIRF India Rankings</a> to check the University category positions quoted above</li>
+  <li><a href="https://ugc.gov.in" target="_blank" rel="noopener">UGC official notifications</a> for the rules on equivalence between online and conventional degrees</li>
+</ul>
+
+<div class="disclaimer">
+  Fees in this comparison reflect EdifyEdu's verified university records as of 26 August 2026 and are indicative. Universities publishing only a broad range, rather than a confirmed single figure, were excluded rather than estimated, so this table is not a complete list of every online BBA in India. Accreditation and ranking data reflect our NAAC and NIRF records; NIRF positions quoted are University category and belong to the institution rather than to the online programme specifically. Fees, approval status and accreditation change between intake cycles. EdifyEdu accepts no referral commission from any institution named here, and no university pays for placement or ranking on this site.
+</div>`,
+  },
+  {
     slug: "online-mca-fees-india-2026-compared",
     title: "Online MCA Fees in India 2026: 24 Universities Compared, and Why the Expensive One Is Not Always Better",
     seoTitle: "Online MCA Fees 2026: 24 Universities Compared",
