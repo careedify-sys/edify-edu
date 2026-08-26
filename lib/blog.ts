@@ -41,6 +41,158 @@ export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "is-jamia-hamdard-online-fake-or-legit-2026",
+    title: "Is Jamia Hamdard Online Fake or Legit? And the Ranking Number Nobody Shows You",
+    seoTitle: "Is Jamia Hamdard Online Fake? No. NIRF #47, NAAC A+",
+    metaDescription: "Jamia Hamdard is a Deemed-to-be University since 1989, NIRF #47 University, NAAC A+, AICTE approved. Plus the Management rank of #87 that applies to its MBA.",
+    category: "University Reviews",
+    tags: ["is jamia hamdard fake","jamia hamdard online legit","jamia hamdard ugc approved","jamia hamdard nirf rank","jamia hamdard online mba valid","jamia hamdard naac grade","Jamia Hamdard Fake or Legit 2026"],
+    publishedAt: "2026-08-26",
+    readTime: 7,
+    targetKeyword: "is Jamia Hamdard online fake or legit",
+    relatedUniversities: ["jamia-hamdard-online"],
+    status: "published",
+    author: "Rishi Kumar",
+    ctaTitle: "Compare Jamia Hamdard Against Other Online Universities",
+    ctaDesc: "See accreditation, NIRF category ranks and fees side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
+    faqs: [
+      { q: "Is Jamia Hamdard fake?", a: "No. Jamia Hamdard has held Deemed-to-be University status since 1989, granted by the central government on the recommendation of UGC, which carries full degree-awarding authority. It appears on the UGC recognised universities list and has never appeared on the UGC list of institutions declared fake. You can confirm both at ugc.gov.in." },
+      { q: "Is the Jamia Hamdard online degree valid?", a: "Yes. Jamia Hamdard is UGC-DEB entitled for online delivery, and UGC rules treat an online degree from an entitled university as equivalent to a conventional one for employment, government recruitment and further study. Entitlement is granted intake by intake, so confirm it covers your admission year and programme at deb.ugc.ac.in." },
+      { q: "What is Jamia Hamdard NIRF rank?", a: "It holds two different positions for 2025. In the University category it ranks 47, and in the Management category it ranks 87. The University rank describes the institution across every discipline; the Management rank describes its business education specifically and is the relevant number if you are considering the online MBA." },
+      { q: "Which NIRF rank applies to the Jamia Hamdard MBA?", a: "The Management category rank of 87, not the University rank of 47. They measure different things and are forty places apart. Any page quoting only the University rank when discussing the MBA is telling you half the story. Check both categories yourself at nirfindia.org." },
+      { q: "Is Jamia Hamdard NAAC accredited?", a: "Yes, at NAAC A+. That is a strong grade and clears the bar most employers apply, but it is one band below the top A++ level. Several universities charging comparable fees hold A++, so compare if accreditation is your deciding factor. Verify the grade and its validity window at naac.gov.in." },
+      { q: "Is Jamia Hamdard AICTE approved?", a: "Yes. That matters where a government or PSU recruitment rule asks for AICTE specifically, and a number of cheaper online programmes do not carry it. For most private-sector hiring it changes nothing, since UGC-DEB approval already establishes the degree validity." },
+      { q: "How much do Jamia Hamdard online programmes cost?", a: "Our records carry a verified figure for the online MCA at Rs 87,500. The other programmes appear as broad ranges that we do not treat as confirmed, so ask admissions for a written fee breakdown covering tuition, examination and registration charges before you pay anything." },
+      { q: "Is a Jamia Hamdard degree valid for government jobs?", a: "Yes, on the same basis as any other UGC-recognised degree. Confirm that UGC-DEB entitlement covered your admission year for your specific programme, and read the recruitment notification you are targeting, since individual employers can set conditions beyond the UGC baseline." },
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 26 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Legal status cross-checked against our internal university records on 26 August 2026, and accreditation and ranking claims reflect our NAAC and NIRF records. Every claim below can be confirmed on the official portals linked in this page. EdifyEdu accepts no referral commission from any university.</em></p>
+
+<p>Jamia Hamdard is not fake. It has held Deemed-to-be University status since 1989, and it ranks 47th in the NIRF University category for 2025, which puts it inside India's top fifty.</p>
+
+<p>That ranking is the part worth pausing on. Most universities selling online degrees carry no NIRF position at all, and a top-fifty placement is not something a prospectus can manufacture. But there is a second ranking number here that matters more if you are looking at the MBA, and most pages will not tell you about it.</p>
+
+<div class="callout-key">
+  <strong>Jamia Hamdard Online: the verification summary</strong>
+  <ul>
+    <li><strong>Legal status:</strong> Deemed-to-be University, status granted in 1989</li>
+    <li><strong>UGC-DEB:</strong> Approved for online delivery</li>
+    <li><strong>NAAC:</strong> A+ accredited</li>
+    <li><strong>NIRF 2025:</strong> #47 in the University category</li>
+    <li><strong>NIRF 2025 Management:</strong> #87, which is the number that applies to the MBA</li>
+    <li><strong>AICTE:</strong> Approved</li>
+    <li><strong>Location:</strong> New Delhi</li>
+  </ul>
+</div>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Verification checklist for Jamia Hamdard Online. Deemed-to-be University status since 1989: yes. Listed by UGC as recognised: yes. UGC-DEB entitled for online delivery: yes. NAAC accredited at A plus: yes. AICTE approved: yes. NIRF University category rank 47. NIRF Management category rank 87." style="width:100%;height:auto">
+  <rect width="720" height="270" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="26" y="32" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">The checks that separate real from fake</text>
+  <text x="26" y="51" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="12">Jamia Hamdard Online, verified 26 August 2026</text>
+  <line x1="26" y1="64" x2="694" y2="64" stroke="#e2e8f0" stroke-width="1"/>
+
+  <g font-family="Arial,Helvetica,sans-serif" font-size="13">
+    <text x="26" y="90" fill="#0f172a">Deemed-to-be University status since 1989</text>
+    <text x="580" y="90" fill="#10b981" font-size="14" font-weight="700">YES</text>
+
+    <text x="26" y="120" fill="#0f172a">UGC-DEB entitled for online delivery</text>
+    <text x="580" y="120" fill="#10b981" font-size="14" font-weight="700">YES</text>
+
+    <text x="26" y="150" fill="#0f172a">NAAC accredited</text>
+    <text x="580" y="150" fill="#10b981" font-size="14" font-weight="700">A+</text>
+
+    <text x="26" y="180" fill="#0f172a">AICTE approved</text>
+    <text x="580" y="180" fill="#10b981" font-size="14" font-weight="700">YES</text>
+
+    <text x="26" y="210" fill="#0f172a">NIRF rank, University category</text>
+    <text x="580" y="210" fill="#10b981" font-size="14" font-weight="700">#47</text>
+
+    <text x="26" y="240" fill="#0f172a">NIRF rank, Management category</text>
+    <text x="580" y="240" fill="#B8892A" font-size="14" font-weight="700">#87</text>
+  </g>
+</svg>
+<p class="svg-caption">Every line is checkable on a government portal. The two NIRF numbers are different categories, and the difference matters depending on which programme you want.</p>
+</div>
+
+<h2>The Two Ranking Numbers, and Which One Applies to You</h2>
+
+<p>NIRF ranks institutions in separate categories, and a university can sit high in one and lower in another. Jamia Hamdard is a good example.</p>
+
+<p>The University category rank of 47 describes the institution as a whole, taking in its teaching, research, graduation outcomes and perception across every discipline. It is the number you will see quoted most often.</p>
+
+<p>The Management category rank of 87 describes how its management education specifically compares against other business schools. If you are considering the <a href="/universities/jamia-hamdard-online/mba">online MBA</a>, that is the more relevant figure, and it is forty places lower.</p>
+
+<p class="pull">A university rank and a management rank are not interchangeable. Any page quoting only the better one for an MBA is telling you half the story.</p>
+
+<p>Neither number is bad. A management rank inside the top hundred still places it above the large majority of Indian business schools, and above almost every university selling an online MBA. The point is to compare like with like.</p>
+
+<h2>What "Deemed-to-be University" Means</h2>
+
+<p>This is the status that settles the fake question, and it is worth understanding rather than taking on trust.</p>
+
+<p>An institution in India can only award degrees if it was created by an Act of Parliament, created by an Act of a state legislature, or granted deemed-to-be-university status by the central government on the recommendation of UGC. Jamia Hamdard holds the third of those, granted in 1989.</p>
+
+<p>Deemed status is not a lesser category. It is how many of India's strongest institutions are constituted, and it carries full degree-awarding authority. An institution that holds none of the three routes and still issues degrees is what UGC means by fake, and it publishes that list openly.</p>
+
+<h2>Verify It Yourself in Five Minutes</h2>
+
+<p>Check the position for your own admission year rather than relying on any page, this one included.</p>
+
+<p><strong>Confirm online-delivery entitlement</strong> at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>. UGC-DEB entitlement is granted intake by intake and programme by programme, so a university being entitled last year does not settle this year.</p>
+
+<p><strong>Confirm the accreditation</strong> at <a href="https://naac.gov.in" target="_blank" rel="noopener">naac.gov.in</a>, including the CGPA behind the grade and the date it expires.</p>
+
+<p><strong>Confirm both ranking numbers</strong> at <a href="https://nirfindia.org" target="_blank" rel="noopener">nirfindia.org</a>. Look up the University category and the Management category separately, and you will see the gap described above for yourself.</p>
+
+<p><strong>Confirm recognition and check the fake list</strong> at <a href="https://ugc.gov.in" target="_blank" rel="noopener">ugc.gov.in</a>, which publishes the recognised universities list and the list of institutions declared fake.</p>
+
+<h2>The Honest Limitations</h2>
+
+<p><strong>NAAC A+, not A++.</strong> A+ is a strong grade and clears the bar most employers apply, but it is one band below the top. Several universities charging comparable fees hold A++, so compare if accreditation is your deciding factor.</p>
+
+<p><strong>The management rank sits well below the university rank.</strong> Covered above, and worth repeating because it is the single most misleading thing in how this university gets marketed.</p>
+
+<p><strong>Programme fees are not published as single confirmed figures.</strong> Our records carry a verified fee for the <a href="/universities/jamia-hamdard-online/mca">online MCA at Rs 87,500</a>, but the other programmes appear as broad ranges that we do not treat as confirmed. Ask admissions for a written fee breakdown covering tuition, examination and registration charges before you pay anything.</p>
+
+<h2>Is the Degree Valid for Government Jobs?</h2>
+
+<p>Yes, on the same basis as any other UGC-recognised degree. UGC rules treat an online degree from an entitled university as equivalent to a conventional one for employment and for further study.</p>
+
+<p>Confirm that entitlement covered your admission year for your specific programme, and read the recruitment notification you are targeting, since employers occasionally set conditions beyond the UGC baseline. The AICTE approval helps where a rule asks for it by name.</p>
+
+<div class="cta-box">
+  <strong>Comparing Jamia Hamdard against other online universities?</strong>
+  <p>Edify compares public UGC, NAAC and NIRF data across universities. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/compare">Compare online programmes</a>
+  <a class="ilink" href="/universities/jamia-hamdard-online/bba">See the Jamia Hamdard BBA breakdown</a>
+</div>
+
+<h2>The Verdict</h2>
+
+<p>Jamia Hamdard Online is legitimate. Deemed-to-be University status since 1989, UGC recognition, UGC-DEB entitlement for online delivery, NAAC A+ and AICTE approval. The degree is valid for employment, government recruitment and further study.</p>
+
+<p>It is also better ranked than most of its online competition, which is a genuine advantage. Just make sure you are comparing the right number: if you want the MBA, the Management rank of 87 is your benchmark, not the University rank of 47. Get the fee in writing before you commit, since the published figures are not specific enough to rely on. For the wider picture, read our <a href="/guides/is-online-degree-valid-india">guide to online degree validity in India</a>.</p>
+
+<div class="cta-box">
+  <strong>Want the Jamia Hamdard fee confirmed in writing?</strong>
+  <p>We will help you get a written breakdown covering tuition, examination and registration before you pay. Edify compares public UGC and NAAC data only. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/contact">Request a free counselling call</a>
+</div>
+
+<h2>Sources to Consult</h2>
+
+<ul>
+  <li><a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">UGC-DEB approved institutions list</a> to confirm entitlement for your programme and admission year</li>
+  <li><a href="https://naac.gov.in" target="_blank" rel="noopener">NAAC accreditation database</a> to confirm the current grade, CGPA and validity window</li>
+  <li><a href="https://nirfindia.org" target="_blank" rel="noopener">NIRF India Rankings</a> to check the University and Management category positions separately</li>
+  <li><a href="https://ugc.gov.in" target="_blank" rel="noopener">UGC official notifications</a> for the recognised universities list and the list of institutions declared fake</li>
+</ul>
+
+<div class="disclaimer">
+  Legal status, accreditation and ranking details in this review reflect EdifyEdu's verified university records as of 26 August 2026. NIRF positions quoted are for 2025 and belong to the institution rather than to the online programme specifically; the University and Management category ranks are separate measures and are stated separately here for that reason. Accreditation grades and UGC-DEB entitlement are granted for defined periods and change between cycles, so verify the current position on the official portals before making any decision or payment. Programme fees other than the MCA are not published by the university as single confirmed figures and should be obtained in writing. EdifyEdu accepts no referral commission from Jamia Hamdard or any other institution mentioned, and no university pays for placement or ranking on this site.
+</div>`,
+  },
+  {
     slug: "is-ignou-fake-or-legit-2026",
     title: "Is IGNOU Fake or Legit? The Real Question Is Not the One You Are Asking",
     seoTitle: "Is IGNOU Fake? No. Central University, NAAC A++",
