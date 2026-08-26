@@ -478,6 +478,96 @@
       "source": "lib/data.ts programDetails['B.Com'].fees for Manipal Academy of Higher Education, verified against EdifyEdu university records",
       "verified_date": "2026-08-26",
       "note": "Manipal Academy of Higher Education online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
+    },
+    {
+      "slug": "online-bca-fees-india-2026-compared",
+      "figure": 45000,
+      "university": "dr-babasaheb-ambedkar-open-university-online",
+      "programme": "BCA",
+      "source": "lib/data.ts programDetails['BCA'].fees for Dr. Babasaheb Ambedkar Open University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Dr. Babasaheb Ambedkar Open University online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
+    },
+    {
+      "slug": "online-bca-fees-india-2026-compared",
+      "figure": 49800,
+      "university": "ignou-online",
+      "programme": "BCA",
+      "source": "lib/data.ts programDetails['BCA'].fees for IGNOU, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "IGNOU online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
+    },
+    {
+      "slug": "online-bca-fees-india-2026-compared",
+      "figure": 52000,
+      "university": "karnataka-state-open-university-online",
+      "programme": "BCA",
+      "source": "lib/data.ts programDetails['BCA'].fees for Karnataka State Open University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Karnataka State Open University online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
+    },
+    {
+      "slug": "online-bca-fees-india-2026-compared",
+      "figure": 90000,
+      "university": "shobhit-university-online",
+      "programme": "BCA",
+      "source": "lib/data.ts programDetails['BCA'].fees for Shobhit Institute of Engineering and Technology, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Shobhit Institute of Engineering and Technology online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
+    },
+    {
+      "slug": "online-bca-fees-india-2026-compared",
+      "figure": 99800,
+      "university": "gla-university-online",
+      "programme": "BCA",
+      "source": "lib/data.ts programDetails['BCA'].fees for GLA University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "GLA University online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
+    },
+    {
+      "slug": "online-bca-fees-india-2026-compared",
+      "figure": 101000,
+      "university": "vtu-online",
+      "programme": "BCA",
+      "source": "lib/data.ts programDetails['BCA'].fees for Visvesvaraya Technological University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Visvesvaraya Technological University online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
+    },
+    {
+      "slug": "online-bca-fees-india-2026-compared",
+      "figure": 129000,
+      "university": "bharati-vidyapeeth-university-online",
+      "programme": "BCA",
+      "source": "lib/data.ts programDetails['BCA'].fees for Bharati Vidyapeeth, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Bharati Vidyapeeth online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
+    },
+    {
+      "slug": "online-bca-fees-india-2026-compared",
+      "figure": 139000,
+      "university": "sgt-university-online",
+      "programme": "BCA",
+      "source": "lib/data.ts programDetails['BCA'].fees for SGT University (also Manipal University Jaipur), verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "SGT University (also Manipal University Jaipur) online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
+    },
+    {
+      "slug": "online-bca-fees-india-2026-compared",
+      "figure": 147000,
+      "university": "guru-ghasidas-vishwavidyalaya-online",
+      "programme": "BCA",
+      "source": "lib/data.ts programDetails['BCA'].fees for Guru Ghasidas Vishwavidyalaya, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Guru Ghasidas Vishwavidyalaya online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
+    },
+    {
+      "slug": "online-bca-fees-india-2026-compared",
+      "figure": 177000,
+      "university": "chandigarh-university-online",
+      "programme": "BCA",
+      "source": "lib/data.ts programDetails['BCA'].fees for Chandigarh University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Chandigarh University online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
     }
   ]
 }

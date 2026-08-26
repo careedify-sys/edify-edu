@@ -41,6 +41,201 @@ export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "online-bca-fees-india-2026-compared",
+    title: "Online BCA Fees in India 2026: 30 Universities Compared, and Why Price Should Not Decide It",
+    seoTitle: "Online BCA Fees 2026: 30 Universities Compared",
+    metaDescription: "Online BCA fees in India run Rs 45,000 to Rs 1,77,000, but 16 of 30 universities cluster in one band. Full fee table with NAAC grades and NIRF ranks.",
+    category: "Online BCA Programs",
+    tags: ["online bca fees","online bca fees india","cheapest online bca","best online bca india 2026","online bca colleges india","ugc deb approved bca","online bca fees comparison","Online BCA Fees 2026"],
+    publishedAt: "2026-08-26",
+    readTime: 8,
+    targetKeyword: "online BCA fees India",
+    relatedUniversities: ["ignou-online","kl-university-online","integral-university-online","lovely-professional-university-online","amrita-vishwa-vidyapeetham-online"],
+    status: "published",
+    author: "Rishi Kumar",
+    ctaTitle: "Compare Online BCA Programmes Side by Side",
+    ctaDesc: "See fees, NAAC grades and NIRF ranks for every UGC-DEB approved online BCA. Public data only, no paid rankings, no referral commissions.",
+    faqs: [
+      { q: "What is the cheapest online BCA in India?", a: "Dr. Babasaheb Ambedkar Open University at Rs 45,000 for the full three-year degree is the cheapest verified figure in our records, followed by IGNOU at Rs 49,800 and Karnataka State Open University at Rs 52,000. All three are UGC-DEB approved, and the first two hold NAAC A++. Confirm the current fee with the university before you pay." },
+      { q: "How much does an online BCA cost in India?", a: "Verified fees run from Rs 45,000 to Rs 1,77,000 for the full three-year programme, but the market is clustered. Sixteen of the thirty universities we verified charge between Rs 99,800 and Rs 1,39,000, so most options sit within about forty thousand rupees of each other." },
+      { q: "Which online BCA offers the best value?", a: "Koneru Lakshmaiah Education Foundation at Rs 79,000 is the standout. It holds NAAC A++ and sits at NIRF University rank 26, yet twenty-one of the thirty universities on our table cost more, and every university ranked above it costs at least twice as much." },
+      { q: "Is an online BCA valid in India?", a: "Yes, provided the university is UGC-DEB entitled for online delivery in your admission year. UGC rules treat an online degree from an entitled university as equivalent to a conventional one for employment, government recruitment and postgraduate study. Entitlement is granted intake by intake, so check the current list at deb.ugc.ac.in." },
+      { q: "Should I choose an online BCA on price?", a: "Usually not. Because just over half the market sits in one narrow band, the fee rarely separates the options. Set the accreditation level you want, decide whether a NIRF rank matters for your plans, confirm the specialisation is genuinely taught, and compare fees only among the programmes that clear those tests." },
+      { q: "How long is an online BCA?", a: "Three years across six semesters at every university in this comparison. Most universities allow a longer maximum duration if you need to spread the programme out, which suits students who are working alongside their studies." },
+      { q: "Can I do an MCA after an online BCA?", a: "Yes. A UGC-DEB approved online BCA qualifies you for an MCA and other postgraduate computing programmes at recognised Indian universities on the same basis as a conventional degree. Some MCA programmes ask for mathematics at 10+2 or graduation level, so check that requirement before you enrol." },
+      { q: "Which online BCA has the best ranking?", a: "Amrita Vishwa Vidyapeetham at NIRF University rank 8 is the highest-ranked option on our table, at Rs 1,65,000. Symbiosis follows at rank 24 and Koneru Lakshmaiah at rank 26. NIRF does not rank online programmes separately, so a rank belongs to the university granting the degree rather than to the online mode." },
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 26 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Every fee below was checked against our verified university records on 26 August 2026. Universities that publish only a broad range, rather than a single confirmed figure, were left out rather than estimated. Accreditation reflects our NAAC and NIRF records. EdifyEdu accepts no referral commission from any university.</em></p>
+
+<p>Half the online BCA market charges roughly the same thing. Sixteen of the thirty universities below sit between Rs 99,800 and Rs 1,39,000, which is a narrow band for a three-year degree.</p>
+
+<p>That changes how you should choose. With an online MBA or B.Com the fee separates the options. With a BCA it mostly does not, so accreditation, ranking and the specialisation on offer are what actually differ.</p>
+
+<div class="callout-key">
+  <strong>Online BCA fees in India 2026, at a glance</strong>
+  <ul>
+    <li><strong>Cheapest verified:</strong> Dr. Babasaheb Ambedkar Open University, a NAAC A++ university</li>
+    <li><strong>Most expensive:</strong> Chandigarh University</li>
+    <li><strong>Where most sit:</strong> 16 of 30 universities fall in a single band close to Rs 1.2 lakh</li>
+    <li><strong>Duration:</strong> 3 years, 6 semesters, at every university listed</li>
+    <li><strong>Validity:</strong> Every university here is UGC-DEB approved for online delivery</li>
+    <li><strong>Best value on the table:</strong> a NAAC A++ university ranked in the NIRF top 30, at well under the median fee</li>
+  </ul>
+</div>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Histogram of online BCA total programme fees across thirty universities. Three universities charge under 75 thousand rupees, six charge between 75 thousand and one lakh, seven charge between one lakh and 1.25 lakh, nine charge between 1.25 and 1.5 lakh, and five charge above 1.5 lakh. The distribution clusters heavily in the middle." style="width:100%;height:auto">
+  <rect width="720" height="250" rx="12" fill="#f1f5f9"/>
+  <text x="26" y="30" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Where the 30 universities actually sit</text>
+  <text x="26" y="49" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="12">Number of universities per fee band. Total programme fee in rupees, three years.</text>
+
+  <g font-family="Arial,Helvetica,sans-serif" font-size="12">
+    <text x="26" y="82" fill="#475569">Under 75K</text>
+    <rect x="150" y="70" width="90" height="18" rx="3" fill="#10b981"/>
+    <text x="250" y="83" fill="#0f172a" font-weight="700">3</text>
+
+    <text x="26" y="112" fill="#475569">75K to 1L</text>
+    <rect x="150" y="100" width="180" height="18" rx="3" fill="#10b981"/>
+    <text x="340" y="113" fill="#0f172a" font-weight="700">6</text>
+
+    <text x="26" y="142" fill="#475569">1L to 1.25L</text>
+    <rect x="150" y="130" width="210" height="18" rx="3" fill="#f97316"/>
+    <text x="370" y="143" fill="#0f172a" font-weight="700">7</text>
+
+    <text x="26" y="172" fill="#475569">1.25L to 1.5L</text>
+    <rect x="150" y="160" width="270" height="18" rx="3" fill="#f97316"/>
+    <text x="430" y="173" fill="#0f172a" font-weight="700">9</text>
+
+    <text x="26" y="202" fill="#475569">Above 1.5L</text>
+    <rect x="150" y="190" width="150" height="18" rx="3" fill="#B8892A"/>
+    <text x="310" y="203" fill="#0f172a" font-weight="700">5</text>
+  </g>
+
+  <line x1="150" y1="216" x2="694" y2="216" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="26" y="236" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11">Just over half the market lands in the two orange bands, so price alone rarely settles the decision.</text>
+</svg>
+<p class="svg-caption">Distribution of verified total programme fees across 30 UGC-DEB approved online BCA programmes, August 2026.</p>
+</div>
+
+<h2>Every Verified Online BCA Fee, Cheapest First</h2>
+
+<p>These are the universities whose BCA fee we could confirm to a single figure for the full three-year programme.</p>
+
+<table>
+  <thead>
+    <tr><th>University</th><th>Total fee</th><th>NAAC</th><th>NIRF (University)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Dr. Babasaheb Ambedkar Open University</td><td>Rs 45,000</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>IGNOU</td><td>Rs 49,800</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>Karnataka State Open University</td><td>Rs 52,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Integral University</td><td>Rs 75,300</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Koneru Lakshmaiah Education Foundation</td><td>Rs 79,000</td><td>A++</td><td>#26</td></tr>
+    <tr><td>Marwadi University</td><td>Rs 79,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Galgotias University</td><td>Rs 83,200</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Shobhit Institute of Engineering and Technology</td><td>Rs 90,000</td><td>A</td><td>Not ranked</td></tr>
+    <tr><td>GLA University</td><td>Rs 99,800</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>P P Savani University</td><td>Rs 1,00,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Visvesvaraya Technological University</td><td>Rs 1,01,000</td><td>B+</td><td>Not ranked</td></tr>
+    <tr><td>Maharishi Markandeshwar University</td><td>Rs 1,08,000</td><td>A++</td><td>#85</td></tr>
+    <tr><td>Parul University</td><td>Rs 1,10,000</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>University of Mysore</td><td>Rs 1,20,000</td><td>A</td><td>#71</td></tr>
+    <tr><td>Vignan's Foundation for Science and Technology</td><td>Rs 1,21,000</td><td>A++</td><td>#70</td></tr>
+    <tr><td>Lovely Professional University</td><td>Rs 1,22,400</td><td>A++</td><td>#31</td></tr>
+    <tr><td>Bharati Vidyapeeth</td><td>Rs 1,29,000</td><td>A++</td><td>#59</td></tr>
+    <tr><td>Dayananda Sagar University</td><td>Rs 1,30,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>Savitribai Phule Pune University</td><td>Rs 1,31,160</td><td>A++</td><td>#56</td></tr>
+    <tr><td>D.Y. Patil University, Navi Mumbai</td><td>Rs 1,32,000</td><td>A++</td><td>#91</td></tr>
+    <tr><td>Vivekananda Global University</td><td>Rs 1,32,000</td><td>A+</td><td>Not ranked</td></tr>
+    <tr><td>JAIN University</td><td>Rs 1,35,000</td><td>A++</td><td>#62</td></tr>
+    <tr><td>Manipal University Jaipur</td><td>Rs 1,39,000</td><td>A+</td><td>#58</td></tr>
+    <tr><td>SGT University</td><td>Rs 1,39,000</td><td>A+</td><td>#101</td></tr>
+    <tr><td>Guru Ghasidas Vishwavidyalaya</td><td>Rs 1,47,000</td><td>A++</td><td>Not ranked</td></tr>
+    <tr><td>Manav Rachna University</td><td>Rs 1,50,000</td><td>A++</td><td>#96</td></tr>
+    <tr><td>Symbiosis School for Online and Digital Learning</td><td>Rs 1,57,500</td><td>A++</td><td>#24</td></tr>
+    <tr><td>Amrita Vishwa Vidyapeetham</td><td>Rs 1,65,000</td><td>A++</td><td>#8</td></tr>
+    <tr><td>Amity University</td><td>Rs 1,75,000</td><td>A+</td><td>#22</td></tr>
+    <tr><td>Chandigarh University</td><td>Rs 1,77,000</td><td>A+</td><td>#19</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-warning">
+  <strong>All fees are indicative and change between intakes.</strong> The figures reflect our verified records as of 26 August 2026 for the full three-year programme. Universities revise fees each admission cycle, and early-bird or scholarship pricing often expires. Confirm the current figure in writing before you pay. Check online-delivery approval yourself at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a> and accreditation at <a href="https://naac.gov.in" target="_blank" rel="noopener">naac.gov.in</a>.
+</div>
+
+<div class="callout-warning">
+  <strong>One accreditation flag worth knowing.</strong> Visvesvaraya Technological University holds NAAC B+, which is below the B++ threshold we consider the floor for a confident recommendation. Its degree is still valid if the university is UGC-DEB entitled for your intake, but at Rs 1,01,000 you can buy a NAAC A++ programme for less. Verify the current grade at naac.gov.in before deciding.
+</div>
+
+<h2>Why Price Is Not the Deciding Factor Here</h2>
+
+<p>Look at the middle of the table. Nine universities charge between Rs 1,29,000 and Rs 1,47,000, and their accreditation ranges from NAAC A+ with no ranking to NAAC A++ inside the NIRF top 60.</p>
+
+<p>You are paying similar money for meaningfully different institutions. That is the opposite of the online B.Com market, where the cheapest option costs a fraction of the most expensive one and the choice really is about budget.</p>
+
+<p class="pull">When thirty programmes cost about the same, the fee stops being information. Accreditation and ranking start doing the work.</p>
+
+<h2>The Standout on This Table</h2>
+
+<p><a href="/universities/kl-university-online/bca">Koneru Lakshmaiah Education Foundation charges Rs 79,000</a>. It holds NAAC A++ and sits at NIRF University rank 26.</p>
+
+<p>Twenty-one of the thirty universities here cost more. Of the four ranked above it, every one costs at least twice as much. If you want a well-ranked, well-accredited BCA without paying premium-private prices, that combination is the strongest thing on this page.</p>
+
+<p>Two others deserve a mention for different reasons. <a href="/universities/lovely-professional-university-online/bca">Lovely Professional University at Rs 1,22,400</a> pairs NAAC A++ with NIRF rank 31 and a wide specialisation menu. <a href="/universities/amrita-vishwa-vidyapeetham-online/bca">Amrita Vishwa Vidyapeetham at Rs 1,65,000</a> is the highest-ranked option at NIRF 8, which matters if you plan to study abroad later.</p>
+
+<h2>The Genuinely Cheap Options</h2>
+
+<p>Three universities sit well below the pack, and none of them is a compromise on validity.</p>
+
+<p><a href="/universities/ignou-online/bca">IGNOU charges Rs 49,800</a> for the full degree and holds NAAC A++. For a student who needs a recognised computer applications degree and will drive their own learning, nothing on this table beats it on cost.</p>
+
+<p>Dr. Babasaheb Ambedkar Open University comes in lower still at Rs 45,000, also with NAAC A++. <a href="/universities/integral-university-online/bca">Integral University at Rs 75,300</a> is the cheapest option here that is not an open university, which suits students who want more structured teaching.</p>
+
+<p>What you give up at this end is service rather than standing. Expect fewer live sessions, lighter placement support and slower admissions than a private university built around online delivery.</p>
+
+<h2>What to Look At Instead of Price</h2>
+
+<p><strong>The specialisation actually offered.</strong> BCA is where AI, data science and cybersecurity tracks have appeared fastest. If you want one of those, check that the university teaches it as a real specialisation rather than a single elective.</p>
+
+<p><strong>NAAC grade, with the CGPA.</strong> A++ is not a marketing phrase, it is a scored assessment. Two universities on this table charge similar fees with a full grade between them.</p>
+
+<p><strong>Whether a NIRF rank exists at all.</strong> Most online providers carry none. A rank belongs to the university that grants your degree, not to the online mode, but it is still an independent signal that a brochure cannot manufacture.</p>
+
+<p><strong>What happens after.</strong> If you intend to go on to an MCA or a developer role, ask what the capstone project involves and whether the university runs any placement support at all.</p>
+
+<div class="cta-box">
+  <strong>Comparing online BCA programmes?</strong>
+  <p>Edify compares public UGC, NAAC and NIRF data across universities. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/compare">Compare online BCA programmes</a>
+  <a class="ilink" href="/tools/emi-calculator">Work out the monthly cost</a>
+</div>
+
+<h2>Final Word</h2>
+
+<p>The online BCA market has converged on a price. Just over half of these thirty universities charge within about forty thousand rupees of each other, so paying more does not reliably buy you a better institution.</p>
+
+<p>Work the other way round instead. Decide the accreditation floor you want, check whether a NIRF rank matters for your plans, confirm the specialisation is real, and only then compare fees among the programmes that pass. On this table that approach points at a small number of universities, and several of them are not the expensive ones. If you are still weighing the format itself, read the <a href="/guides/is-online-degree-valid-india">guide to online degree validity in India</a> first.</p>
+
+<div class="cta-box">
+  <strong>Get the current BCA fee confirmed before you enrol</strong>
+  <p>Fees move between intakes and early-bird pricing expires. We will help you get the figure that applies to you in writing. Edify compares public UGC and NAAC data only. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/contact">Request a free counselling call</a>
+</div>
+
+<h2>Sources to Consult</h2>
+
+<ul>
+  <li><a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">UGC-DEB approved institutions list</a> to confirm a university may deliver this degree online in your admission year</li>
+  <li><a href="https://naac.gov.in" target="_blank" rel="noopener">NAAC accreditation database</a> to confirm the grade, CGPA and validity window</li>
+  <li><a href="https://nirfindia.org" target="_blank" rel="noopener">NIRF India Rankings</a> to check the University category positions quoted above</li>
+  <li><a href="https://ugc.gov.in" target="_blank" rel="noopener">UGC official notifications</a> for the rules on equivalence between online and conventional degrees</li>
+</ul>
+
+<div class="disclaimer">
+  Fees in this comparison reflect EdifyEdu's verified university records as of 26 August 2026 and are indicative. Universities publishing only a broad range, rather than a confirmed single figure, were excluded rather than estimated, so this table is not a complete list of every online BCA in India. Accreditation and ranking data reflect our NAAC and NIRF records; NIRF positions quoted are University category and belong to the institution rather than to the online programme specifically. Fees, approval status and accreditation change between intake cycles. EdifyEdu accepts no referral commission from any institution named here, and no university pays for placement or ranking on this site.
+</div>`,
+  },
+  {
     slug: "online-bcom-fees-india-2026-compared",
     title: "Online B.Com Fees in India 2026: 24 Universities Compared, Rs 12,000 to Rs 2.94 Lakh",
     seoTitle: "Online B.Com Fees 2026: 24 Universities Compared",
