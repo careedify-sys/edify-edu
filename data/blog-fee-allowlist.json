@@ -829,6 +829,60 @@
       "source": "lib/data.ts programDetails['MBA'].fees for Integral University Online, verified against EdifyEdu university records",
       "verified_date": "2026-08-26",
       "note": "Integral online MBA total fee. Correct for that programme; allowlisted because the surrounding sentence lists several Integral programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
+    },
+    {
+      "slug": "is-ddu-gorakhpur-online-fake-or-legit-2026",
+      "figure": 30500,
+      "university": "deen-dayal-upadhyay-gorakhpur-university-online",
+      "programme": "MA",
+      "source": "lib/data.ts programDetails['MA'].fees for DDU Gorakhpur, confirmed directly with the university (its portal publishes no fee table)",
+      "verified_date": "2026-08-26",
+      "note": "DDU online MA total fee. Correct for that programme; allowlisted because this post lists several DDU programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
+    },
+    {
+      "slug": "is-ddu-gorakhpur-online-fake-or-legit-2026",
+      "figure": 52500,
+      "university": "deen-dayal-upadhyay-gorakhpur-university-online",
+      "programme": "MBA",
+      "source": "lib/data.ts programDetails['MBA'].fees for DDU Gorakhpur, confirmed directly with the university (its portal publishes no fee table)",
+      "verified_date": "2026-08-26",
+      "note": "DDU online MBA total fee. Correct for that programme; allowlisted because this post lists several DDU programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
+    },
+    {
+      "slug": "is-ddu-gorakhpur-online-fake-or-legit-2026",
+      "figure": 56500,
+      "university": "deen-dayal-upadhyay-gorakhpur-university-online",
+      "programme": "B.Com",
+      "source": "lib/data.ts programDetails['B.Com'].fees for DDU Gorakhpur, confirmed directly with the university (its portal publishes no fee table)",
+      "verified_date": "2026-08-26",
+      "note": "DDU online B.Com total fee. Correct for that programme; allowlisted because this post lists several DDU programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
+    },
+    {
+      "slug": "is-ddu-gorakhpur-online-fake-or-legit-2026",
+      "figure": 57500,
+      "university": "deen-dayal-upadhyay-gorakhpur-university-online",
+      "programme": "BBA",
+      "source": "lib/data.ts programDetails['BBA'].fees for DDU Gorakhpur, confirmed directly with the university (its portal publishes no fee table)",
+      "verified_date": "2026-08-26",
+      "note": "DDU online BBA total fee. Correct for that programme; allowlisted because this post lists several DDU programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
+    },
+    {
+      "slug": "is-ddu-gorakhpur-online-fake-or-legit-2026",
+      "figure": 150000,
+      "university": "parul-university-online",
+      "programme": "MBA",
+      "source": "lib/data.ts MBA fee for Parul University, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Parul University online MBA total fee, cited as a comparison anchor for the private NAAC A++ price band. Allowlisted because the sentence names no university, so the scanner cannot attribute it."
+    },
+    {
+      "slug": "is-ddu-gorakhpur-online-fake-or-legit-2026",
+      "figure": 178000,
+      "university": "bharati-vidyapeeth-university-online",
+      "programme": "MBA",
+      "source": "lib/data.ts MBA fee for Bharati Vidyapeeth, verified against EdifyEdu university records",
+      "verified_date": "2026-08-26",
+      "note": "Bharati Vidyapeeth online MBA total fee, cited as a comparison anchor for the private NAAC A++ price band. Allowlisted because the sentence names no university, so the scanner cannot attribute it."
     }
   ]
 }

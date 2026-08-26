@@ -41,6 +41,175 @@ export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "is-ddu-gorakhpur-online-fake-or-legit-2026",
+    title: "Is DDU Gorakhpur Online Fake or Legit? A NAAC A++ Degree at a Price That Makes People Doubt It",
+    seoTitle: "Is DDU Gorakhpur Online Fake? No. NAAC A++, CGPA 3.78",
+    metaDescription: "DDU Gorakhpur is a 1950 state university with NAAC A++ at CGPA 3.78 and UGC-DEB approval. Why a Rs 52,500 MBA is not a warning sign, and what it does lack.",
+    category: "University Reviews",
+    tags: ["is ddu gorakhpur fake","ddu gorakhpur online legit","ddu gorakhpur ugc approved","ddu gorakhpur naac grade","ddu gorakhpur online degree valid","deen dayal upadhyay gorakhpur university online","DDU Gorakhpur Fake or Legit 2026"],
+    publishedAt: "2026-08-26",
+    readTime: 7,
+    targetKeyword: "is DDU Gorakhpur online fake or legit",
+    relatedUniversities: ["deen-dayal-upadhyay-gorakhpur-university-online"],
+    status: "published",
+    author: "Rishi Kumar",
+    ctaTitle: "Compare DDU Gorakhpur Against Other Online Universities",
+    ctaDesc: "See accreditation, approval status and fees side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
+    faqs: [
+      { q: "Is DDU Gorakhpur University fake?", a: "No. Deen Dayal Upadhyay Gorakhpur University is a state university in Uttar Pradesh, founded in 1950, and it holds NAAC A++ at a CGPA of 3.78. It appears on the UGC recognised universities list and not on the UGC list of institutions declared fake. You can confirm both yourself at ugc.gov.in." },
+      { q: "Is the DDU Gorakhpur online degree valid?", a: "Yes. DDU is UGC-DEB entitled for online delivery, and UGC rules treat an online degree from an entitled university as equivalent to a conventional one for employment, government recruitment and further study. Entitlement is granted intake by intake, so confirm it covers your admission year and programme at deb.ugc.ac.in." },
+      { q: "Why is DDU Gorakhpur so much cheaper than private universities?", a: "Because it is a state university, so its fees reflect public funding rather than market positioning. The MBA costs Rs 52,500 against Rs 1,50,000 to Rs 2,00,000 at private universities holding the same NAAC band. The accreditation is not weaker for it: DDU CGPA of 3.78 is higher than several universities charging three times more." },
+      { q: "What is DDU Gorakhpur NAAC grade?", a: "NAAC A++ at a CGPA of 3.78, awarded in the university second assessment cycle and valid to 17 January 2030. A++ is the top accreditation band India awards. Verify the grade, the CGPA and the validity date yourself at naac.gov.in." },
+      { q: "Is DDU Gorakhpur AICTE approved?", a: "No. DDU does not hold AICTE approval, and does not need it for the programmes it offers online, which are management, commerce, arts and science rather than technical degrees. For most private-sector hiring this changes nothing, since UGC-DEB approval establishes validity. If a government recruitment rule asks for AICTE by name, check before enrolling." },
+      { q: "Does DDU Gorakhpur have a NIRF rank?", a: "No. DDU holds no NIRF position in any category for 2025. Several universities at similar fees do hold one, so if a ranking matters to your plans this is where DDU is weakest. Check for yourself at nirfindia.org." },
+      { q: "How much do DDU Gorakhpur online programmes cost?", a: "The MA and M.Sc are Rs 30,500 each, the MBA is Rs 52,500, the B.Com Honours is Rs 56,500 and the BBA is Rs 57,500, all for the full programme. Our records carry no confirmed figure for the online M.Com. DDU publishes no fee table, so every figure came from the university directly and should be re-confirmed for your intake." },
+      { q: "Does DDU Gorakhpur offer placement support for online students?", a: "The portal makes no placement claim. That is more honest than an unbacked guarantee, but it means you should plan to run your own job search. At these fee levels that is a reasonable trade, though it is a genuine one." },
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 26 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Legal status, UGC-DEB entitlement and accreditation cross-checked against our Supabase university records on 26 August 2026. Fees were confirmed directly with the university, because its portal publishes none. Every claim below can be confirmed on the official portals linked in this page. EdifyEdu accepts no referral commission from any university.</em></p>
+
+<p>Deen Dayal Upadhyay Gorakhpur University is not fake. It is a state university in Uttar Pradesh, founded in 1950, and it holds NAAC A++ at a CGPA of 3.78.</p>
+
+<p>That grade is worth sitting with. A++ is the top accreditation band India awards, and DDU's CGPA is higher than several private universities charging three times as much for the same degree. The reason people ask whether it is real has nothing to do with the university and everything to do with the price.</p>
+
+<div class="callout-key">
+  <strong>DDU Gorakhpur Online: the verification summary</strong>
+  <ul>
+    <li><strong>Legal status:</strong> State university, Uttar Pradesh, founded 1950</li>
+    <li><strong>UGC-DEB:</strong> Approved for online delivery</li>
+    <li><strong>NAAC:</strong> A++ at CGPA 3.78, Cycle 2, valid to 17 January 2030</li>
+    <li><strong>AICTE:</strong> Not held, and not required for the programmes it offers online</li>
+    <li><strong>NIRF:</strong> Not ranked in NIRF 2025</li>
+    <li><strong>Fees:</strong> from Rs 30,500 for an MA or M.Sc to Rs 57,500 for the BBA</li>
+    <li><strong>Location:</strong> Gorakhpur, Uttar Pradesh</li>
+  </ul>
+</div>
+
+<div class="svg-figure">
+<svg viewBox="0 0 720 265" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Verification checklist for DDU Gorakhpur University Online. State university established 1950: yes. UGC-DEB entitled for online delivery: yes. NAAC accredited at A plus plus with CGPA 3.78: yes. On the UGC fake institutions list: no. AICTE: not held. NIRF: not ranked in 2025." style="width:100%;height:auto">
+  <rect width="720" height="265" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="26" y="32" fill="#0f172a" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">The checks that separate real from fake</text>
+  <text x="26" y="51" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="12">DDU Gorakhpur University Online, verified 26 August 2026</text>
+  <line x1="26" y1="64" x2="694" y2="64" stroke="#e2e8f0" stroke-width="1"/>
+
+  <g font-family="Arial,Helvetica,sans-serif" font-size="13">
+    <text x="26" y="90" fill="#0f172a">State university, established 1950</text>
+    <text x="556" y="90" fill="#10b981" font-size="14" font-weight="700">YES</text>
+
+    <text x="26" y="120" fill="#0f172a">UGC-DEB entitled for online delivery</text>
+    <text x="556" y="120" fill="#10b981" font-size="14" font-weight="700">YES</text>
+
+    <text x="26" y="150" fill="#0f172a">NAAC accredited</text>
+    <text x="556" y="150" fill="#10b981" font-size="14" font-weight="700">A++</text>
+
+    <text x="26" y="180" fill="#0f172a">NAAC CGPA</text>
+    <text x="556" y="180" fill="#10b981" font-size="14" font-weight="700">3.78</text>
+
+    <text x="26" y="210" fill="#0f172a">On the UGC fake institutions list</text>
+    <text x="556" y="210" fill="#10b981" font-size="14" font-weight="700">NO</text>
+
+    <text x="26" y="240" fill="#0f172a">NIRF rank</text>
+    <text x="514" y="240" fill="#B8892A" font-size="13" font-weight="700">NOT RANKED</text>
+  </g>
+</svg>
+<p class="svg-caption">Every line is checkable on a government portal. The NAAC grade is the strongest thing here and the ranking is the weakest, and both are stated plainly.</p>
+</div>
+
+<h2>Why the Price Triggers the Question</h2>
+
+<p>DDU charges Rs 52,500 for a two-year online MBA. Private universities with the same NAAC band charge between Rs 1,50,000 and Rs 1,78,000 for theirs, based on the Parul and Bharati Vidyapeeth fees we verified.</p>
+
+<p>People see a gap that large and assume something is missing. In most markets that instinct is right. In Indian higher education it is not, because a state university's fee reflects public funding rather than the value of the qualification.</p>
+
+<p class="pull">The accreditation is not cheaper because the degree is cheaper. DDU's CGPA of 3.78 is higher than universities charging three times more.</p>
+
+<p>What you actually give up at this price is service, and the section below is specific about it.</p>
+
+<h2>Verify It Yourself in Five Minutes</h2>
+
+<p>Confirm the position for your own admission year rather than relying on any page, this one included.</p>
+
+<p><strong>Check online-delivery entitlement</strong> at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>. This is the check that matters most, because entitlement is granted intake by intake and programme by programme.</p>
+
+<p><strong>Check the accreditation</strong> at <a href="https://naac.gov.in" target="_blank" rel="noopener">naac.gov.in</a>, where you can confirm the A++ grade, the 3.78 CGPA behind it and the January 2030 validity date.</p>
+
+<p><strong>Check recognition and the fake list</strong> at <a href="https://ugc.gov.in" target="_blank" rel="noopener">ugc.gov.in</a>. DDU appears on the recognised universities list and not on the list of institutions declared fake.</p>
+
+<p>Our <a href="/verify/deen-dayal-upadhyay-gorakhpur-university-online">DDU verification page</a> collects the same public records in one place.</p>
+
+<h2>The Honest Limitations</h2>
+
+<p>A page that only reassures you is not doing its job, and DDU has real gaps.</p>
+
+<p><strong>No AICTE.</strong> DDU does not hold AICTE approval, and does not need it for the programmes it offers online, which are management, commerce, arts and science rather than technical degrees. For most private-sector hiring this changes nothing, since UGC-DEB approval establishes validity. If a specific government recruitment rule asks for AICTE by name, check before you enrol.</p>
+
+<p><strong>Not ranked in NIRF 2025.</strong> DDU holds no NIRF position in any category. Several universities at similar fees do, so if a ranking matters to your plans this is where DDU loses.</p>
+
+<p><strong>The portal publishes no fee table.</strong> This is the most practical problem. The fees in this review were confirmed directly with the university because there is nothing published to check them against. Get your figure in writing before you pay, and expect to make a phone call to do it.</p>
+
+<p><strong>No published placement support.</strong> The portal makes no placement claim. That is more honest than an unbacked guarantee, but it means you should plan to run your own job search.</p>
+
+<h2>Is the Degree Valid for Government Jobs?</h2>
+
+<p>Yes. UGC rules treat a degree from a recognised university delivered under DEB entitlement as equivalent to a conventional one, and DDU is a state university whose recognition is not in question.</p>
+
+<p>Confirm that entitlement covered your admission year for your specific programme, and read the recruitment notification you are targeting, since employers occasionally set conditions beyond the UGC baseline.</p>
+
+<h2>What It Costs</h2>
+
+<p>All figures are for the full programme and were confirmed directly with the university.</p>
+
+<table>
+  <thead>
+    <tr><th>Programme</th><th>Total fee</th><th>Duration</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>DDU Gorakhpur online MA</td><td>Rs 30,500</td><td>2 years</td></tr>
+    <tr><td>DDU Gorakhpur online M.Sc</td><td>Rs 30,500</td><td>2 years</td></tr>
+    <tr><td>DDU Gorakhpur online MBA</td><td>Rs 52,500</td><td>2 years</td></tr>
+    <tr><td>DDU Gorakhpur online B.Com Honours</td><td>Rs 56,500</td><td>4 years</td></tr>
+    <tr><td>DDU Gorakhpur online BBA</td><td>Rs 57,500</td><td>3 years</td></tr>
+  </tbody>
+</table>
+
+<p>The <a href="/universities/deen-dayal-upadhyay-gorakhpur-university-online/ma">MA at Rs 30,500</a> and the M.Sc at the same price are among the cheapest postgraduate degrees from a NAAC A++ institution anywhere in India. Our records carry no confirmed figure for the online M.Com, so ask admissions for that in writing.</p>
+
+<div class="callout-warning">
+  <strong>Verify before you pay.</strong> DDU publishes no fee table, so every figure here came from the university directly and should be re-confirmed for your intake. Fees at state universities move with government notification. Accreditation and UGC-DEB entitlement are granted for defined periods and also change, so check the current position at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a> before committing.
+</div>
+
+<div class="cta-box">
+  <strong>Comparing DDU against a private online university?</strong>
+  <p>Edify compares public UGC, NAAC and NIRF data across universities. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/compare">Compare online programmes</a>
+  <a class="ilink" href="/blog/ddu-gorakhpur-online-mba-review">Read the full DDU MBA review</a>
+</div>
+
+<h2>The Verdict</h2>
+
+<p>DDU Gorakhpur Online is legitimate, and better accredited than most of what it competes against. A state university since 1950, UGC-DEB entitled, NAAC A++ at a CGPA of 3.78 valid to 2030, and absent from the UGC fake list.</p>
+
+<p>The low fee is not a warning sign, it is what a state university costs. What you give up is service: no published fee table, no placement support, no ranking, and a portal that will not answer most of your questions. If you are self-directed and need a well accredited degree without a large outlay, that trade is easy. If you need structure and support to finish, pay for a university built around providing it. For the wider picture, read our <a href="/guides/is-online-degree-valid-india">guide to online degree validity in India</a>.</p>
+
+<div class="cta-box">
+  <strong>Want the current DDU fee in writing?</strong>
+  <p>The university publishes no fee table. We will help you get the figures confirmed before you pay. Edify compares public UGC and NAAC data only. No paid rankings, no referral commissions.</p>
+  <a class="ilink" href="/contact">Request a free counselling call</a>
+</div>
+
+<h2>Sources to Consult</h2>
+
+<ul>
+  <li><a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">UGC-DEB approved institutions list</a> to confirm entitlement for your programme and admission year</li>
+  <li><a href="https://naac.gov.in" target="_blank" rel="noopener">NAAC accreditation database</a> to confirm the A++ grade, the CGPA and the validity window</li>
+  <li><a href="https://ugc.gov.in" target="_blank" rel="noopener">UGC official notifications</a> for the recognised universities list and the list of institutions declared fake</li>
+  <li><a href="https://nirfindia.org" target="_blank" rel="noopener">NIRF India Rankings</a> to confirm for yourself which categories a university appears in, and which it does not</li>
+</ul>
+
+<div class="disclaimer">
+  Legal status, accreditation and entitlement details in this review reflect EdifyEdu's verified university records as of 26 August 2026, cross-checked against our Supabase accreditation data. DDU publishes no fee table, so the figures here were confirmed directly with the university and should be re-checked before any payment; fees at state universities change with government notification. DDU holds no NIRF rank in any category for 2025 and no AICTE approval. Accreditation grades and UGC-DEB entitlement are granted for defined periods and change between cycles. EdifyEdu accepts no referral commission from DDU Gorakhpur or any other institution mentioned, and no university pays for placement or ranking on this site.
+</div>`,
+  },
+  {
     slug: "is-integral-university-online-fake-or-legit-2026",
     title: "Is Integral University Online Fake or Legit? And the NIRF Rank That Does Not Apply to You",
     seoTitle: "Is Integral University Online Fake? No. NAAC A+, UGC-DEB",

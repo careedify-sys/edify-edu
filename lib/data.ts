@@ -8102,7 +8102,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     nirf: 999,
     naac: 'A++',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A++', 'AICTE'],
+    approvals: ['UGC DEB', 'NAAC A++'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
