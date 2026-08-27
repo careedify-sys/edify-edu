@@ -2672,5 +2672,27 @@
       "B.Com"
     ],
     "region": "South"
+  },
+  {
+    "id": "silver-oak-university-online",
+    "name": "Silver Oak University Online",
+    "abbr": "SOU",
+    "naac": "",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 0,
+    "feeMax": 0,
+    "emiFrom": 0,
+    "feeStr": "Not published",
+    "emiStr": "Not published",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA",
+      "M.Com",
+      "MA"
+    ],
+    "region": "West"
   }
 ]

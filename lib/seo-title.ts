@@ -128,6 +128,7 @@ export const TITLE_NAME: Record<string, string> = {
   'central-university-tamil-nadu-online': 'CUTN',
   'ajeenkya-dy-patil-university-online': 'Ajeenkya D.Y. Patil',
   'dr-br-ambedkar-open-university-online': 'BRAOU',
+  'silver-oak-university-online': 'Silver Oak University',
   'shobhit-university-online': 'Shobhit University',
   'teerthanker-mahaveer-university-online': 'Teerthanker Mahaveer',
   'subharti-university-online': 'Subharti University',
