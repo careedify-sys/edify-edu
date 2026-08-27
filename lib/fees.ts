@@ -127,6 +127,8 @@ function getReference(u: University, program: Program): Ref | null {
   if (typeof perProgram === 'number' && perProgram > 0) {
     return { min: perProgram, max: perProgram, label: `programFees.${program.toLowerCase()} ${perProgram}` }
   }
+  // No fee on record yet. Never synthesise a reference from a zero.
+  if (!u.feeMin || u.feeMin <= 0) return null
   if (program === 'MBA') {
     // Skip the MBA placeholder feeMin=60000 / feeMax=200000 which appears on
     // dozens of state/central-university rows; that isn't per-programme data.

@@ -66,7 +66,7 @@ function nirfBadge(u: { nirf: number; nirfMgt?: number; naac: string }): { label
     const color = u.nirf <= 25 ? '#10B981' : u.nirf <= 75 ? '#F59E0B' : '#6B7280'
     return { label: `NIRF #${u.nirf} Uni`, color }
   }
-  return { label: `NAAC ${u.naac}`, color: '#6B7280' }
+  return { label: u.naac ? `NAAC ${u.naac}` : 'UGC Entitled', color: '#6B7280' }
 }
 
 const PROGRAM_CATEGORIES = {

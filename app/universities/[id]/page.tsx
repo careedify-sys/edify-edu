@@ -31,18 +31,21 @@ export async function generateMetadata(
   const progStr = u.programs.slice(0, 3).join(', ')
   const feeMin = Math.round(u.feeMin / 1000)
   const feeMax = Math.round(u.feeMax / 1000)
+  const hasFee = u.feeMin > 0
   const feeStr = feeMin === feeMax ? `₹${feeMin}K` : `₹${feeMin}K-${feeMax}K`
+  const feeSeg = hasFee ? `Fees ${feeStr}, ` : ''
+  const naacSeg = u.naac ? `NAAC ${u.naac}` : 'UGC-DEB Entitled'
   const mainProg = u.programs[0] || 'MBA'
   const specCount = Object.values(u.programDetails || {}).reduce((sum, pd) => sum + (pd?.specs?.length || 0), 0)
   const nirfStr = u.nirf && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
   const nirfHook = u.nirf && u.nirf < 100 ? ` NIRF #${u.nirf},` : ''
   // CTR-tuned title (2026-05-25): lead with brand, fee number first, NAAC + bracket year hook.
   // Pattern: "{Uni} Online: ₹{fee} Fees, NAAC {grade} [{year} Review] | EdifyEdu"
-  const title = `${titleName} Online ${year}: Fees ${feeStr}, NAAC ${u.naac} [Review] | EdifyEdu`
+  const title = `${titleName} Online ${year}: ${feeSeg}${naacSeg} [Review] | EdifyEdu`
   const specStr = specCount > 3 ? ` ${specCount}+ specialisations.` : ''
   const cityStr = u.city && u.city !== 'Online' ? ` Based in ${u.city}.` : ''
   // CTR-tuned description: numeric facts first, no "Compare/Explore" lead, micro-CTA at end.
-  let description = `${cleanName} online ${progStr}: fees ${feeStr},${nirfHook} NAAC ${u.naac}. UGC-DEB approved.${specStr}${cityStr} Check ${year} eligibility, syllabus & placement data free.`
+  let description = `${cleanName} online ${progStr}: ${hasFee ? `fees ${feeStr},` : ''}${nirfHook} ${naacSeg}. UGC-DEB approved.${specStr}${cityStr} Check ${year} eligibility, syllabus & placement data free.`
   if (description.length < 150) {
     description = `${cleanName} online ${progStr} ${year}: fees ${feeStr}, NAAC ${u.naac} accredited${nirfStr}.${specStr}${cityStr} See verified fees, syllabus & honest placement data. Check eligibility free.`
   }
@@ -108,7 +111,7 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
         name: u.name,
         url: `https://edifyedu.in/universities/${u.id}`,
         telephone: '+91-7061285806',
-        description: `${u.name} is a UGC DEB approved university offering online degrees. NAAC ${u.naac} accredited.${u.nirf < 200 ? ` NIRF ranked #${u.nirf}.` : ''}`,
+        description: `${u.name} is a UGC DEB approved university offering online degrees.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}${u.nirf < 200 ? ` NIRF ranked #${u.nirf}.` : ''}`,
         ...(kw ? { keywords: kw } : {}),
         address: {
           '@type': 'PostalAddress',

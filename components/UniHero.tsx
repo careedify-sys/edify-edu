@@ -34,7 +34,7 @@ export default function UniHero({ u, program, pd, cleanName, spec, customH1 }: P
     : `${level} · ${specs.length > 0 ? `${specs.length} Specialisations · ` : ''}${pd.duration || '2 Years'} · UGC DEB Approved`
 
   const sub = spec
-    ? `${program} with ${spec} specialisation from ${cleanName}. UGC DEB approved. NAAC ${u.naac} accredited.`
+    ? `${program} with ${spec} specialisation from ${cleanName}. UGC DEB approved.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}`
     : (cleanCareerOutcome(pd.careerOutcome || '') || `Advance your career with an Online ${program} from ${cleanName}. Choose from ${specs.length}+ industry-relevant specialisations. Study while working.`)
 
   const eligibilityLabel = ['MBA', 'MCA'].includes(program) ? 'Grad + 50%' : '10+2 + 50%'

@@ -35,14 +35,16 @@ export default function ApprovalsRow({ u }: Props) {
     <section className="rounded-xl border border-slate-200 bg-white p-5">
       <h2 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Approvals & Recognitions</h2>
       <div className="flex flex-wrap gap-2">
-        {/* Always show NAAC */}
-        <div
-          className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold border"
-          style={{ background: '#FFFBEB', borderColor: '#FDE68A', color: '#92400E' }}
-        >
-          <span>NAAC</span>
-          <span className="font-black">{u.naac}</span>
-        </div>
+        {/* NAAC when a grade is on record. Empty means not published yet. */}
+        {u.naac && (
+          <div
+            className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold border"
+            style={{ background: '#FFFBEB', borderColor: '#FDE68A', color: '#92400E' }}
+          >
+            <span>NAAC</span>
+            <span className="font-black">{u.naac}</span>
+          </div>
+        )}
 
         {/* NIRF if ranked */}
         {u.nirf > 0 && u.nirf < 999 && (

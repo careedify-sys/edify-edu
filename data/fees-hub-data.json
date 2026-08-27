@@ -2446,5 +2446,27 @@
       "MBA"
     ],
     "region": "North"
+  },
+  {
+    "id": "choudhary-charan-singh-university-online",
+    "name": "Choudhary Charan Singh University Online",
+    "abbr": "CCSU",
+    "naac": "",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 0,
+    "feeMax": 0,
+    "emiFrom": 0,
+    "feeStr": "Not published",
+    "emiStr": "Not published",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BA",
+      "M.Com",
+      "MA"
+    ],
+    "region": "North"
   }
 ]

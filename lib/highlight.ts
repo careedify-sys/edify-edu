@@ -46,6 +46,11 @@ export function buildHighlight(u: HighlightInput, prefer: RankPreference = 'auto
   // 5. Genuinely non-derivable thematic label (per-university override)
   if (u.highlightExtra) parts.push(u.highlightExtra)
 
+  // A newly added university can have no rank, no grade and no international
+  // tag yet. Fall back to the one thing every record here does have, rather
+  // than rendering an empty highlight on the card.
+  if (parts.length === 0) return 'UGC-DEB entitled'
+
   return parts.join(' · ')
 }
 

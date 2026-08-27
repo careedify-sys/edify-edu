@@ -13,6 +13,7 @@ const ALL_NAAC = ['A++', 'A+', 'A']
 const ALL_REGIONS = ['North', 'South', 'East', 'West', 'Central']
 
 function NaacBadge({ grade }: { grade: string }) {
+  if (!grade) return <span className="text-slate-400">&mdash;</span>
   const colors: Record<string, string> = {
     'A++': 'bg-emerald-100 text-emerald-800',
     'A+': 'bg-blue-100 text-blue-800',

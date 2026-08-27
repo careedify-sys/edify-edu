@@ -37,7 +37,7 @@ export default function CompareBar() {
           }}>
             <div style={{ width: '8px', height: '8px', borderRadius: 'var(--r-pill)', background: u.color }} />
             <span style={{ fontSize: '13px', fontWeight: '600', color: 'var(--surface)' }}>{u.abbr}</span>
-            <span className="text-[11px] text-ink-2">{formatRank(u, 'auto').shortLabel || u.naac}</span>
+            <span className="text-[11px] text-ink-2">{formatRank(u, 'auto').shortLabel || (u.naac ? `NAAC ${u.naac}` : 'UGC')}</span>
             <button onClick={() => removeFromCompare(u.id)}
               style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--ink-2)', padding: '0', display: 'flex', alignItems: 'center' }}>
               <X size={13} />

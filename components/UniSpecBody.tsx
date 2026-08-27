@@ -276,12 +276,12 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
   const specJson = getSpecPageContent(u.id, program.toLowerCase(), specSlug)
 
   const faqs: { q: string; a: string }[] = [
-    { q: `Is ${cleanName} Online ${program} in ${spec} valid for jobs?`, a: `Yes. ${cleanName} is UGC DEB approved and NAAC ${u.naac} accredited. The degree is identical to an on-campus degree.` },
+    { q: `Is ${cleanName} Online ${program} in ${spec} valid for jobs?`, a: `Yes. ${cleanName} is UGC DEB approved${u.naac ? ` and NAAC ${u.naac} accredited` : ''}. The degree is identical to an on-campus degree.` },
     { q: `What is the fee for ${program} ${spec} at ${cleanName}?`, a: `Total fee is ${pd.fees || `₹${Math.round(u.feeMin / 1000)}K+`}. EMI from ₹${u.emiFrom.toLocaleString()}/month.` },
     { q: `Can I work while doing ${program} in ${spec} from ${cleanName}?`, a: `Yes. Live sessions on weekends, recordings available 24/7. ${u.examMode} assessments. No campus visits required.` },
     { q: `What career opportunities does ${spec} specialisation offer?`, a: specContent?.careerBeginner?.length ? `${specContent.careerBeginner[0]?.title} and other roles. ${specContent.salaryRange || ''}` : `Graduates typically enter ${spec}-related roles with salary ranges of ${pd.avgSalary || '₹4L–₹12L'} depending on experience.` },
     { q: `What syllabus is covered in ${spec} specialisation?`, a: specContent?.skills?.length ? `Key areas include: ${specContent.skills.slice(0, 5).join(', ')}.` : `The specialisation covers core ${spec} subjects along with project work and industry case studies.` },
-    { q: `Is ${cleanName} NAAC accredited?`, a: (() => { const r = formatRank(u, preferForProgram(program)); return `Yes. ${cleanName} is NAAC ${u.naac} accredited${r.rank !== null ? ` with a ${r.label} rank` : ''}.` })() },
+    { q: `Is ${cleanName} NAAC accredited?`, a: (() => { const r = formatRank(u, preferForProgram(program)); return u.naac ? `Yes. ${cleanName} is NAAC ${u.naac} accredited${r.rank !== null ? ` with a ${r.label} rank` : ''}.` : `No NAAC grade is published on this page yet. Check the current grade at naac.gov.in.` })() },
     { q: `What is the exam mode for ${cleanName} ${program}?`, a: `${u.examMode} assessments.` },
     { q: `How long is the ${program} ${spec} program at ${cleanName}?`, a: `${pd.duration || '2 years'}.` },
   ]

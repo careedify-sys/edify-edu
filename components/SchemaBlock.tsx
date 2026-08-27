@@ -50,8 +50,8 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
     '@type': 'Course',
     name: spec ? `${brand} Online ${program}: ${spec} Specialisation` : `${brand} Online ${program}`,
     description: spec
-      ? `Online ${program} with ${spec} specialisation from ${brand}. NAAC ${u.naac} accredited, UGC DEB approved. Admissions open for ${year}.`
-      : `UGC DEB approved Online ${program} from ${brand}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations${fee.ok ? `, fees ${fee.compact}` : ''}.`,
+      ? `Online ${program} with ${spec} specialisation from ${brand}.${u.naac ? ` NAAC ${u.naac} accredited,` : ''} UGC DEB approved. Admissions open for ${year}.`
+      : `UGC DEB approved Online ${program} from ${brand}.${u.naac ? ` NAAC ${u.naac} accredited.` : ''} ${pd.specs?.length || 0}+ specialisations${fee.ok ? `, fees ${fee.compact}` : ''}.`,
     provider: {
       '@type': 'CollegeOrUniversity',
       name: u.name,

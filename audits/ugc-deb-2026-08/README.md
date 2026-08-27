@@ -375,3 +375,68 @@ A record's **render surface is wider than its sitemap presence**.
 allowlist carries the pair. Reading redirect scope off `valid-urls.json` alone
 undercounts it: on that basis all four pairs looked like zero redirects, when
 the real figure is **15**.
+
+---
+
+## 12. First new university built: Choudhary Charan Singh (2026-08-27)
+
+Built on the counsellor-form pattern Rishi chose: create the record now, carry no
+invented facts, and let the absent fee hold every hub at `noindex` until real
+numbers arrive.
+
+**What the record carries, and from where**
+
+| Field | Value | Source |
+|---|---|---|
+| name, state, type | Choudhary Charan Singh University, Uttar Pradesh, state university | UGC main list #105 |
+| programmes | MBA, MCA, BBA, BA, M.Com, MA | the 12 granted programmes, mapped to site codes |
+| MBA specs | General, Hospital Administration | both named in the grant |
+| MA specs | Sociology, History, English, Political Science, Education, Economics | named in the grant |
+| BA specs | the 13 subjects named in the grant | named in the grant |
+| `nirf` | 999 | the site's not-ranked sentinel |
+| `naac` | `''` | no grade in any source we hold, so no grade is claimed |
+| `feeMin` / `feeMax` / `emiFrom` | 0 | no fee on record |
+| `fees` per programme | `'Not published'` | rule 4c routes this to noindex, no interface change needed |
+| `avgSalary`, `topCompanies` | `''` and `[]` | not invented |
+
+All six hubs resolve `shouldIndexProgrammeHub` to **false** on rule 4c, so each
+shows the counsellor form rather than a price. Verified on the running page.
+
+**The part that took the work: empty fields leak.**
+
+`naac: ''` and `feeMin: 0` are new states for this codebase, since all 124
+existing records carry a real grade and a real fee. They leaked into rendered
+output in **fourteen** places across four rounds of checking, each caught by
+sweeping the built HTML rather than by typecheck:
+
+- the page title rendered `Fees ₹0K`
+- the meta description and JSON-LD rendered `NAAC  accredited` and `Total fee ₹0–₹0`
+- four FAQ answers asserted a `₹0` fee or a blank NAAC grade
+- the hero strip, the sidebar quick-facts, the programme fact tiles and the
+  compare bar each printed an empty grade or a zero
+- `Location` rendered as `, UTTAR PRADESH` from the blank city
+- the finance block promised `No-cost EMI from ₹0/month`
+
+All fourteen now fall back: `On request`, `Not published`, `UGC-DEB`, or the
+element is dropped. `lib/fees.ts` gained one guard, since `getReference` would
+otherwise synthesise a `{min:0,max:0}` reference for MBA and hand the page a
+real-looking zero price.
+
+**This is reusable.** Every guard is generic, so the next 20 records inherit it.
+
+**Two things to decide before the next one**
+
+1. **The sitemap will not pick this page up.** `valid-urls.json` and
+   `programs-manifest.json` are generated from
+   `data/EdifyEdu_Unified_Programs_v3.xlsx`, **not** from `lib/data.ts`. A
+   university added to `lib/data.ts` renders and is reachable but never enters
+   the sitemap until rows exist in that workbook. CCSU currently has 0 sitemap
+   URLs against 102 university roots that do. Arguably correct while the hubs
+   are all `noindex`, but it is a decision, not an accident.
+2. **Name spelling.** The UGC document says CHOUDHARY; the university brands
+   itself Chaudhary. The record follows the UGC document, since that is the only
+   source in hand. Worth confirming before more pages cite it.
+
+Also spotted: `chhatrapati-shahu-ji-maharaj-university-online` has
+`naac: 'A++'` while its own `description` says "NAAC B++ accredited". One of the
+two is wrong and both are published.

@@ -307,7 +307,7 @@ export default function ProgramPageClient({ program, programSlug, universities, 
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap items-center gap-1.5 mb-1">
-                    <span className="text-xs font-bold text-amber-text uppercase tracking-wider">{u.naac} Accredited</span>
+                    <span className="text-xs font-bold text-amber-text uppercase tracking-wider">{u.naac ? `${u.naac} Accredited` : 'UGC Entitled'}</span>
                     {u.nirf > 0 && u.nirf < 200 && <span className="text-xs text-ink-3">· NIRF #{u.nirf}</span>}
                     {DUAL_SPEC_IDS.includes(u.id) && (
                       <span style={{ background: '#0D9488', color: '#fff', fontSize: 10, fontWeight: 700, padding: '2px 10px', borderRadius: 20, letterSpacing: '0.02em', whiteSpace: 'nowrap' }}>

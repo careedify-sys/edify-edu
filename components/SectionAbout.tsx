@@ -43,7 +43,7 @@ export default function SectionAbout({ u, program, pd, cleanName, spec, customIn
               </p>
             )}
             <p>
-              The university holds NAAC {u.naac} accreditation
+              {u.naac ? `The university holds NAAC ${u.naac} accreditation` : 'The university is UGC-DEB entitled for online delivery'}
               {(() => { const r = formatRank(u, preferForProgram(program)); return r.rank !== null ? ` and a ${r.label} rank` : '' })()}, giving the {program} degree strong institutional credibility with employers.
               {u.psuEligible ? ' The degree is also eligible for PSU recruitment portals.' : ''}
             </p>

@@ -13546,5 +13546,149 @@
     "program": "mba",
     "spec_slug": "international-business",
     "spec_name": "International Business"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "mba",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "mba",
+    "spec_slug": "hospital-administration",
+    "spec_name": "Hospital Administration"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "mca",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "bba",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ba",
+    "spec_slug": "library-science",
+    "spec_name": "Library Science"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ba",
+    "spec_slug": "economics",
+    "spec_name": "Economics"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ba",
+    "spec_slug": "education",
+    "spec_name": "Education"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ba",
+    "spec_slug": "english",
+    "spec_name": "English"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ba",
+    "spec_slug": "hindi",
+    "spec_name": "Hindi"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ba",
+    "spec_slug": "history",
+    "spec_name": "History"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ba",
+    "spec_slug": "mathematics",
+    "spec_name": "Mathematics"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ba",
+    "spec_slug": "philosophy",
+    "spec_name": "Philosophy"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ba",
+    "spec_slug": "political-science",
+    "spec_name": "Political Science"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ba",
+    "spec_slug": "sanskrit",
+    "spec_name": "Sanskrit"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ba",
+    "spec_slug": "sociology",
+    "spec_name": "Sociology"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ba",
+    "spec_slug": "statistics",
+    "spec_name": "Statistics"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ba",
+    "spec_slug": "urdu",
+    "spec_name": "Urdu"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "mcom",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ma",
+    "spec_slug": "sociology",
+    "spec_name": "Sociology"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ma",
+    "spec_slug": "history",
+    "spec_name": "History"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ma",
+    "spec_slug": "english",
+    "spec_name": "English"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ma",
+    "spec_slug": "political-science",
+    "spec_name": "Political Science"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ma",
+    "spec_slug": "education",
+    "spec_name": "Education"
+  },
+  {
+    "university_slug": "choudhary-charan-singh-university-online",
+    "program": "ma",
+    "spec_slug": "economics",
+    "spec_name": "Economics"
   }
 ]

@@ -77,19 +77,19 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
   const faqs = [
     {
       q:`Is ${u.name} a good university for online degrees?`,
-      a:`${u.name} is ${u.nirf > 0 && u.nirf < 200 ? `NIRF #${u.nirf} overall` : 'a UGC DEB approved university'}${u.nirfMgt && u.nirfMgt < 200 ?` and NIRF #${u.nirfMgt} in Management`:''}. It holds NAAC ${u.naac} accreditation and is UGC DEB approved. For private sector careers and corporate hiring it is a strong choice. Always verify specific job notifications for government roles.`
+      a:`${u.name} is ${u.nirf > 0 && u.nirf < 200 ? `NIRF #${u.nirf} overall` : 'a UGC DEB approved university'}${u.nirfMgt && u.nirfMgt < 200 ?` and NIRF #${u.nirfMgt} in Management`:''}. ${u.naac ? `It holds NAAC ${u.naac} accreditation and is` : 'It is'} UGC DEB approved. For private sector careers and corporate hiring it is a strong choice. Always verify specific job notifications for government roles.`
     },
     {
       q:`What is the total fee for ${u.name} ${displayProgram}?`,
-      a:`The total fee for ${u.name} ${displayProgram} ranges from ${formatFee(u.feeMin)} to ${formatFee(u.feeMax)} for the complete program. EMI options start from ₹${u.emiFrom.toLocaleString()} per month. Semester-wise payment is available. Scholarships and bank tie-ups may reduce the final cost — fill the form to check what you qualify for.`
+      a:`${u.feeMin > 0 ? `The total fee for ${u.name} ${displayProgram} ranges from ${formatFee(u.feeMin)} to ${formatFee(u.feeMax)} for the complete program. EMI options start from ₹${u.emiFrom.toLocaleString()} per month.` : `${u.name} has not published a fee for ${displayProgram} on this page yet. Request the current intake fee in writing before you apply.`} Semester-wise payment is available. Scholarships and bank tie-ups may reduce the final cost, so fill the form to check what you qualify for.`
     },
     {
       q:`What programs does ${u.name} offer online?`,
-      a:`${u.name} offers ${u.programs.length} online programs: ${u.programs.join(', ')}. ${displayProgram} is among the most popular. Each program has multiple specialisations. Fees range from ${formatFee(u.feeMin)} to ${formatFee(u.feeMax)}.`
+      a:`${u.name} offers ${u.programs.length} online programs: ${u.programs.join(', ')}. ${displayProgram} is among the most popular. Each program has multiple specialisations.${u.feeMin > 0 ? ` Fees range from ${formatFee(u.feeMin)} to ${formatFee(u.feeMax)}.` : ' Fees for the current intake are not published here yet, so request them before you apply.'}`
     },
     {
       q:`Is ${u.name} ${displayProgram} valid and UGC approved?`,
-      a:`Yes. ${u.name} is UGC DEB approved and NAAC ${u.naac} accredited. The ${displayProgram} degree is fully valid for private sector employment, higher education, and banking sector jobs. ${u.govtRecognised ? 'It is also recognised for government recruitment as per UGC 2020 guidelines.' : 'Check specific government job notifications — some central PSU roles may have restrictions on online degrees.'}`
+      a:`Yes. ${u.name} is UGC DEB approved${u.naac ? ` and NAAC ${u.naac} accredited` : ''}. The ${displayProgram} degree is fully valid for private sector employment, higher education, and banking sector jobs. ${u.govtRecognised ? 'It is also recognised for government recruitment as per UGC 2020 guidelines.' : 'Check specific government job notifications. Some central PSU roles may have restrictions on online degrees.'}`
     },
     {
       q:`What is the eligibility for ${u.name} ${displayProgram}?`,
@@ -109,7 +109,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
     },
     {
       q:`What jobs can I get after ${u.name} ${displayProgram}?`,
-      a:`After completing ${displayProgram} from ${u.name}, typical roles include ${pd?.roles?.slice(0,4).join(', ') || 'Management Trainee, Business Analyst, Operations Executive'}. Average salaries range from ${pd?.avgSalary || formatFee(u.feeMin * 4) + ' per annum'}. Top hiring companies include ${pd?.topCompanies?.slice(0,5).join(', ') || 'leading corporates across sectors'}.`
+      a:`After completing ${displayProgram} from ${u.name}, typical roles include ${pd?.roles?.slice(0,4).join(', ') || 'Management Trainee, Business Analyst, Operations Executive'}. ${pd?.avgSalary ? `Average salaries range from ${pd.avgSalary}. ` : ''}${pd?.topCompanies?.length ? `Top hiring companies include ${pd.topCompanies.slice(0,5).join(', ')}.` : ''}`
     },
     {
       q:`Should I apply through Edify for ${u.name}?`,
@@ -128,7 +128,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
         '@context':'https://schema.org','@type':'Course',
         name:`${u.name} ${displayProgram}`,
-        description:`UGC DEB approved ${displayProgram} from ${u.name}. NAAC ${u.naac} accredited.${u.nirf > 0 && u.nirf < 200 ? ` NIRF #${u.nirf}.` : ''} Total fee ${formatFee(u.feeMin)}–${formatFee(u.feeMax)}.`,
+        description:`UGC DEB approved ${displayProgram} from ${u.name}.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}${u.nirf > 0 && u.nirf < 200 ? ` NIRF #${u.nirf}.` : ''}${u.feeMin > 0 ? ` Total fee ${formatFee(u.feeMin)}–${formatFee(u.feeMax)}.` : ''}`,
         url:`https://edifyedu.in/universities/${u.id}`,
         provider:{'@type':'EducationalOrganization',name:u.name},
         educationalLevel:'Postgraduate',
@@ -171,7 +171,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                   </h1>
                 </div>
                 <p className="text-slate-400 text-[15px] mb-3 flex items-center gap-1.5">
-                  <MapPin size={14}/> {u.city}, {u.state}
+                  <MapPin size={14}/> {[u.city, u.state].filter(Boolean).join(', ')}
                 </p>
                 {((u as any).rankingBadge || (u as any).enrollments) && (
                   <div className="flex flex-wrap items-center gap-2 mb-4">
@@ -220,8 +220,8 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                 {/* Quick Stats */}
                 <div className="flex flex-wrap gap-3 mb-3">
                   {[
-                    { label: 'Total Fee', value: `${formatFee(u.feeMin)} – ${formatFee(u.feeMax)}` },
-                    { label: 'EMI from', value: `₹${u.emiFrom.toLocaleString()}/mo` },
+                    { label: 'Total Fee', value: u.feeMin > 0 ? `${formatFee(u.feeMin)} – ${formatFee(u.feeMax)}` : 'On request' },
+                    ...(u.emiFrom > 0 ? [{ label: 'EMI from', value: `₹${u.emiFrom.toLocaleString()}/mo` }] : []),
                     { label: 'Duration', value: pd?.duration || '2 Years' },
                     { label: 'Exam Mode', value: u.examMode },
                   ].map(stat => (
@@ -350,12 +350,12 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                   <div className="bg-surface-2 rounded-lg p-4 text-center">
                     <div className="text-2xl mb-2">📍</div>
                     <div className="text-xs text-ink-3 uppercase tracking-wider">Location</div>
-                    <div className="font-bold text-navy">{u.city}, {u.state}</div>
+                    <div className="font-bold text-navy">{[u.city, u.state].filter(Boolean).join(', ')}</div>
                   </div>
                   <div className="bg-surface-2 rounded-lg p-4 text-center">
                     <div className="text-2xl mb-2">⭐</div>
-                    <div className="text-xs text-ink-3 uppercase tracking-wider">NAAC Grade</div>
-                    <div className="font-bold text-navy">{u.naac}</div>
+                    <div className="text-xs text-ink-3 uppercase tracking-wider">{u.naac ? 'NAAC Grade' : 'Recognition'}</div>
+                    <div className="font-bold text-navy">{u.naac || 'UGC-DEB'}</div>
                   </div>
                   {u.nirfMgt && u.nirfMgt > 0 && u.nirfMgt < 200 ? (
                     <div className="bg-surface-2 rounded-lg p-4 text-center">
@@ -384,7 +384,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     {[
                       { label: 'Total Fees', value: pd.fees, icon: '💰' },
                       { label: 'Duration', value: pd.duration, icon: '⏱️' },
-                      { label: 'Avg Salary', value: pd.avgSalary, icon: '📈' },
+                      ...(pd.avgSalary ? [{ label: 'Avg Salary', value: pd.avgSalary, icon: '📈' }] : []),
                       { label: 'Specialisations', value: `${pd.specs.length}+`, icon: '🎯' },
                     ].map(item => (
                       <div key={item.label} className="bg-surface-2 rounded-lg p-4 text-center">
@@ -577,7 +577,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                   emiFrom={u.emiFrom}
                   hints={[
                     `🎓 Merit scholarship — up to 25% fee waiver for eligible profiles at ${u.abbr}`,
-                    `🏦 No-cost EMI — 12 to 24 months, from ₹${u.emiFrom.toLocaleString()}/month`,
+                    u.emiFrom > 0 ? `🏦 No-cost EMI, 12 to 24 months, from ₹${u.emiFrom.toLocaleString()}/month` : '🏦 No-cost EMI, 12 to 24 month plans via partner banks',
                     `💼 Alumni referral & early-bird discounts available this admission cycle`,
                   ]}
                 />
@@ -669,12 +669,12 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                   {[
                     ...(u.nirf < 100 ? [{ label: 'NIRF Overall', value: `#${u.nirf}` }] : []),
                     ...(u.nirfMgt && u.nirfMgt < 100 ? [{ label: 'NIRF Management', value: `#${u.nirfMgt}` }] : []),
-                    { label: 'NAAC Grade', value: u.naacScore ? `${u.naac} (${u.naacScore})` : u.naac },
-                    { label: 'Location', value: `${u.city}, ${u.state}` },
+                    ...(u.naac ? [{ label: 'NAAC Grade', value: u.naacScore ? `${u.naac} (${u.naacScore})` : u.naac }] : []),
+                    { label: 'Location', value: [u.city, u.state].filter(Boolean).join(', ') },
                     { label: 'Exam Mode', value: u.examMode },
                     { label: 'Eligibility', value: u.eligibility },
-                    { label: 'Fees from', value: formatFee(u.feeMin) },
-                    { label: 'EMI from', value: `₹${u.emiFrom.toLocaleString()}/mo` },
+                    ...(u.feeMin > 0 ? [{ label: 'Fees from', value: formatFee(u.feeMin) }] : []),
+                    ...(u.emiFrom > 0 ? [{ label: 'EMI from', value: `₹${u.emiFrom.toLocaleString()}/mo` }] : []),
                   ].map(row => (
                     <div key={row.label} className="flex justify-between py-2 border-b border-border text-xs">
                       <span className="text-ink-3">{row.label}</span>

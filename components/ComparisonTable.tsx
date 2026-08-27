@@ -70,7 +70,7 @@ export default function ComparisonTable({ current: u, peers, program, programSlu
                 label: 'NAAC Grade',
                 render: (uni: University) => (
                   <td className={`px-3 py-2 text-center font-bold ${naacWeight(uni.naac) >= 3 ? 'text-green-700' : naacWeight(uni.naac) >= 1 ? 'text-amber-700' : 'text-slate-600'}`}>
-                    {uni.naac}
+                    {""+(uni.naac || '\u2014')}
                   </td>
                 ),
               },
