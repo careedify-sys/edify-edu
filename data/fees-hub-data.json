@@ -2633,5 +2633,25 @@
       "MA"
     ],
     "region": "South"
+  },
+  {
+    "id": "ajeenkya-dy-patil-university-online",
+    "name": "Ajeenkya D.Y. Patil University Online",
+    "abbr": "ADYPU",
+    "naac": "",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 0,
+    "feeMax": 0,
+    "emiFrom": 0,
+    "feeStr": "Not published",
+    "emiStr": "Not published",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA"
+    ],
+    "region": "West"
   }
 ]

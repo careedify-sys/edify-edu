@@ -90,6 +90,9 @@ const MANUAL = {
   // Navi Mumbai (heavier historical usage) but see also confidence downgrade
   // in attribute(): a bare mention with no campus qualifier stays LOW.
   'dy patil': 'dy-patil-university-online',
+  'ajeenkya': 'ajeenkya-dy-patil-university-online',
+  'ajeenkya dy patil': 'ajeenkya-dy-patil-university-online',
+  'adypu': 'ajeenkya-dy-patil-university-online',
   'd.y. patil': 'dy-patil-university-online',
   'dy patil navi mumbai': 'dy-patil-university-online',
   'dpu navi mumbai': 'dy-patil-university-online',

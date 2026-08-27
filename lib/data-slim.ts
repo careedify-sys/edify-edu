@@ -166,6 +166,7 @@ const UNIS_SLIM_RAW: (Omit<UniSlim, 'highlight'>)[] = [
   { id:'sri-venkateswara-university-online', name:'Sri Venkateswara University Online', abbr:'SVU', nirf:999, naac:'', feeMin:0, feeMax:0, emiFrom:0, programs: ['MBA', 'MCA', 'M.Com', 'MA'], color:'#8C2F39', region:'South', city:'', psuEligible:true },
   { id:'swami-rama-himalayan-university-online', name:'Swami Rama Himalayan University Online', abbr:'SRHU', nirf:999, naac:'', feeMin:0, feeMax:0, emiFrom:0, programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com'], color:'#0F766E', region:'North', city:'', psuEligible:true },
   { id:'central-university-tamil-nadu-online', name:'Central University of Tamil Nadu Online', abbr:'CUTN', nirf:999, naac:'', feeMin:0, feeMax:0, emiFrom:0, programs: ['MBA', 'M.Com', 'MA'], color:'#1E3A8A', region:'South', city:'', psuEligible:true },
+  { id:'ajeenkya-dy-patil-university-online', name:'Ajeenkya D.Y. Patil University Online', abbr:'ADYPU', nirf:999, naac:'', feeMin:0, feeMax:0, emiFrom:0, programs: ['MBA', 'MCA', 'BBA', 'BCA'], color:'#7C2D12', region:'West', city:'', psuEligible:true },
 ]
 
 export function getSlimById(id: string): UniSlim | undefined {
