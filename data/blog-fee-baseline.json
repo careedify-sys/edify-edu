@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-26",
+  "updatedAt": "2026-08-27",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
-  "totalUnverified": 2453,
+  "totalUnverified": 2451,
   "perSlug": {
     "amity-online-mba-hr-worth-it": 2,
     "is-online-mba-worth-it-2026": 8,
@@ -171,7 +171,7 @@
     "is-dy-patil-online-fake-or-legit-2026": 0,
     "why-online-mba-fees-differ-india-2026": 16,
     "parul-online-mba-review": 0,
-    "bharati-vidyapeeth-online-mba-review": 13,
+    "bharati-vidyapeeth-online-mba-review": 11,
     "ddu-gorakhpur-online-mba-review": 39,
     "amrita-online-mba-review": 0,
     "sppu-online-mba-review": 0,

@@ -20,6 +20,12 @@ const UNI_BY_ID = new Map(UNIVERSITIES.map(u => [u.id, u]))
 
 // -- Alias index ----------------------------------------------------------
 
+// Institution-type words. A bracketed fragment made only of these is a type,
+// not a name, and must never become an alias.
+const TYPE_WORDS = new Set(['deemed', 'to', 'be', 'the', 'of', 'a', 'an',
+  'open', 'autonomous', 'private', 'state', 'central', 'university',
+  'universities', 'institute', 'institution', 'college', 'deemedtobe'])
+
 const aliasEntries = []
 function addAlias(alias, uid) {
   if (!alias) return
@@ -36,7 +42,24 @@ for (const u of UNIVERSITIES) {
   addAlias(base.replace(/^University of\s+/i, ''), u.id)
   if (u.abbr) addAlias(u.abbr, u.id)
   if (u.shortName) addAlias(u.shortName, u.id)
-  for (const p of [...u.name.matchAll(/\(([^)]+)\)/g)].map(m => m[1])) addAlias(p, u.id)
+  // Parentheticals are usually a real abbreviation worth aliasing (UPES, MAHE,
+  // KSOU). But some names carry only an institution TYPE in brackets, e.g.
+  // "(Deemed to be University)", "(Open)", "(Autonomous)". Aliasing those makes
+  // one generic phrase resolve to several universities at once, so every
+  // sentence containing it degrades to multi-uni-sentence and the figure goes
+  // UNRESOLVED. "Deemed to be University" alone was aliased to four different
+  // universities. Skip a parenthetical when nothing distinctive survives after
+  // institution-type words are removed.
+  for (const p of [...u.name.matchAll(/\(([^)]+)\)/g)].map(m => m[1])) {
+    const distinctive = p
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, ' ')
+      .split(' ')
+      .filter(w => w && !TYPE_WORDS.has(w))
+      .join('')
+    if (!distinctive) continue
+    addAlias(p, u.id)
+  }
   addAlias(u.id.replace(/-online$/, '').replace(/-/g, ' '), u.id)
 }
 const MANUAL = {

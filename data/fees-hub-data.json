@@ -2468,5 +2468,26 @@
       "MA"
     ],
     "region": "North"
+  },
+  {
+    "id": "pt-sundarlal-sharma-open-university-online",
+    "name": "Pt. Sundarlal Sharma (Open) University Online",
+    "abbr": "PSSOU",
+    "naac": "",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 0,
+    "feeMax": 0,
+    "emiFrom": 0,
+    "feeStr": "Not published",
+    "emiStr": "Not published",
+    "programs": [
+      "MBA",
+      "MA",
+      "M.Com",
+      "MSc",
+      "BA"
+    ],
+    "region": "Central"
   }
 ]

@@ -117,6 +117,8 @@ export const TITLE_NAME: Record<string, string> = {
   'galgotias-university-online': 'Galgotias University',
   'mahatma-jyotiba-phule-rohilkhand-university-online': 'MJPRU',
   'deen-dayal-upadhyay-gorakhpur-university-online': 'DDU Gorakhpur Univ',
+  'choudhary-charan-singh-university-online': 'CCS University',
+  'pt-sundarlal-sharma-open-university-online': 'PSSOU',
   'shobhit-university-online': 'Shobhit University',
   'teerthanker-mahaveer-university-online': 'Teerthanker Mahaveer',
   'subharti-university-online': 'Subharti University',
