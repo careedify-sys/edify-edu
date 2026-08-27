@@ -13870,5 +13870,53 @@
     "program": "ba",
     "spec_slug": "sociology",
     "spec_name": "Sociology"
+  },
+  {
+    "university_slug": "dr-br-ambedkar-university-online",
+    "program": "mba",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "dr-br-ambedkar-university-online",
+    "program": "mba",
+    "spec_slug": "travel-and-tourism-management",
+    "spec_name": "Travel and Tourism Management"
+  },
+  {
+    "university_slug": "dr-br-ambedkar-university-online",
+    "program": "mca",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "dr-br-ambedkar-university-online",
+    "program": "bba",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "dr-br-ambedkar-university-online",
+    "program": "bca",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "dr-br-ambedkar-university-online",
+    "program": "bcom",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "dr-br-ambedkar-university-online",
+    "program": "mcom",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "dr-br-ambedkar-university-online",
+    "program": "ma",
+    "spec_slug": "sociology",
+    "spec_name": "Sociology"
   }
 ]

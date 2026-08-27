@@ -2529,5 +2529,28 @@
       "BA"
     ],
     "region": "South"
+  },
+  {
+    "id": "dr-br-ambedkar-university-online",
+    "name": "Dr. B.R. Ambedkar University Online",
+    "abbr": "DBRAU",
+    "naac": "",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 0,
+    "feeMax": 0,
+    "emiFrom": 0,
+    "feeStr": "Not published",
+    "emiStr": "Not published",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA",
+      "B.Com",
+      "M.Com",
+      "MA"
+    ],
+    "region": "North"
   }
 ]
