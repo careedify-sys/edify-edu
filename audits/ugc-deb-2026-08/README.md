@@ -1,15 +1,19 @@
 # UGC-DEB reconciliation — August 2026 lists
 
 **Run date:** 2026-08-27 · **Analyst:** Claude, for Rishi Kumar
-**Status:** analysis complete. No live data mutated. Action plan in §8.
+**Status:** analysis complete. No live data mutated. Plan in §8, working lists in §9.
 
-> **Rev 2 (2026-08-27).** Rishi corrected the reading of four "absent"
-> universities. IGNOU does not need DEB approval (IGNOU Act 1985), and BITS
-> Pilani, O.P. Jindal and Shiv Nadar are Institutions of Eminence, which may
+> **Rev 3 (2026-08-27).** Rishi: MAHE, Amrita and VIT are not Institutions of
+> Eminence. That claim was mine from background knowledge rather than from these
+> documents, and it is withdrawn. IoE membership is not establishable from either
+> PDF, so every IoE item below now waits on the MoE source. Shobhit is **on hold**
+> at Rishi's instruction. Three working lists added as §9.
+>
+> **Rev 2 (2026-08-27).** IGNOU does not need DEB approval (IGNOU Act 1985), and
+> BITS Pilani, O.P. Jindal and Shiv Nadar are Institutions of Eminence, which may
 > launch online programmes without prior DEB approval. Amity Rajasthan's
-> programmes are merged into Amity Noida on the site. This file reflects that;
-> §3 was rewritten and the headline count of "missing" universities fell from
-> six to one.
+> programmes are merged into Amity Noida on the site. §3 was rewritten and the
+> headline count of "missing" universities fell from six to one.
 
 ---
 
@@ -94,7 +98,7 @@ table is in `scripts/reconcile-ugc-deb.ts`.
 | `op-jindal-global-university-online` | **Exempt, IoE** | Institution of Eminence. |
 | `shiv-nadar-university-online` | **Exempt, IoE** | Institution of Eminence. |
 | `alvas-college-online` | **Not an HEI** | An autonomous **college**. DEB entitlement is granted to HEIs, so it can never appear on these lists in its own right. |
-| `shobhit-university-online` | **Genuinely unlisted** | Shobhit Institute of Engineering & Technology, Meerut. No exemption applies. **4 hubs, all 4 indexable.** The only record that needs a portal check. |
+| `shobhit-university-online` | **Genuinely unlisted — ON HOLD** | Shobhit Institute of Engineering & Technology, Meerut. No exemption applies. 4 hubs, all 4 indexable. Rishi has parked this; no action, no portal check, no page change until he says otherwise. |
 
 ### The finding this exposes
 
@@ -112,10 +116,10 @@ O.P. Jindal is the template. The other three claim an approval that does not
 apply to them, which is exactly the kind of statement a competitor gap-analysis
 would pick up.
 
-Being an IoE does not preclude appearing on the list, and the data shows both
-patterns: MAHE, Amrita and VIT are IoEs that **do** appear, with DEB labels that
-are correct. Only one of the site's seven IoE records carries an
-`Institution of Eminence (MoE)` badge at all.
+**Which universities hold IoE status cannot be read from these PDFs.** The three
+IoEs above are on Rishi's authority, not the documents'. Before any IoE label is
+added or removed anywhere, the MoE's own list of Institutions of Eminence has to
+be the source. Treat every IoE statement in this file as pending that check.
 
 ---
 
@@ -212,11 +216,15 @@ programmes the site does not list, at zero new-university cost.
 
 Full list in `university-status.csv`, column `ugc_entitled` against `offered`.
 
-### 6c. The IoE badge
+### 6c. The IoE badge — blocked on a source
 
-Six IoE records lack an `Institution of Eminence (MoE)` approval string: BITS
-Pilani, MAHE, Amrita, VIT (both records), Shiv Nadar. IoE is a stronger and
-rarer signal than DEB entitlement, and only O.P. Jindal currently shows it.
+`bits-pilani-work-integrated-online` and `shiv-nadar-university-online` should
+carry an `Institution of Eminence (MoE)` string, since that is the basis on which
+they deliver online programmes. `op-jindal-global-university-online` already
+does and is the template.
+
+Whether any **other** site record qualifies is an open question that these PDFs
+cannot answer. Do not extend the badge past those three without the MoE list.
 
 ---
 
@@ -257,7 +265,7 @@ holds the entitled-programme set per university to seed a better shape.
 
 | # | Action | Scope |
 |---|---|---|
-| A1 | `Institution of Eminence (MoE)` to the records that qualify | 6 records, §6c |
+| A1 | `Institution of Eminence (MoE)` to BITS Pilani and Shiv Nadar only | 2 records, §6c, blocked on V4 |
 | A2 | A per-programme entitlement shape, seeded from `reconciliation.json` | schema |
 | A3 | New university records | 21 HEIs, §6a |
 | A4 | New programme hubs for entitlement already held | up to 167, §6b |
@@ -267,10 +275,33 @@ holds the entitled-programme set per university to seed a better shape.
 
 | # | Action |
 |---|---|
-| V1 | `shobhit-university-online` at `deb.ugc.ac.in` — the only genuinely unlisted record, 4 indexable hubs |
+| V1 | ~~`shobhit-university-online` at `deb.ugc.ac.in`~~ — **ON HOLD** at Rishi's instruction |
+| V4 | The MoE Institutions of Eminence list, before any IoE label is added anywhere |
 | V2 | The 5 MBA gaps in §4, checking ODL vs Online mode, before touching any hub |
 | V3 | `ugc-deb-approved-universities-list-2026` — its table leads with IGNOU, which now needs the exemption framing rather than a DEB claim |
 
-R1, R2 and A1 are label corrections with no URL impact and are safe to apply as
-soon as you say go. R3, R4 and R5 move or remove live URLs. A3 and A4 are
-growth work, not corrections.
+R1 and R2 are label corrections with no URL impact and are safe to apply as soon
+as you say go. A1 is also label-only but waits on V4. R3, R4 and R5 move or
+remove live URLs. A3 and A4 are growth work, not corrections.
+
+---
+
+## 9. Working lists
+
+Generated by `scripts/ugc-deb-worklists.ts`, regenerate any time.
+
+| File | Contents |
+|---|---|
+| `worklist-1-missing-universities.md` | The 21 HEIs on the new lists that the site does not carry, ordered by programme count, each with its full granted programme list |
+| `worklist-2-duplicates.md` | The 4 duplicate pairs, each with its render surface, sitemap surface, a proposed keep side, a merge note where the retired side carries extra programmes, and the exact redirect map |
+| `worklist-3-unapproved-programmes.md` / `.csv` | The 21 programme gaps split into indexable (a live published claim) and not indexable (cleanup), each with what the UGC row grants instead and an empty `decision` column to fill in |
+
+### One thing worth knowing about the redirect maps
+
+A record's **render surface is wider than its sitemap presence**.
+`app/universities/[id]/page.tsx` returns every `UNIVERSITIES` entry from
+`generateStaticParams`, so a record's root page returns 200 whether or not
+`valid-urls.json` lists it, and programme hubs render whenever middleware's
+allowlist carries the pair. Reading redirect scope off `valid-urls.json` alone
+undercounts it: on that basis all four pairs looked like zero redirects, when
+the real figure is **15**.
