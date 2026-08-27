@@ -2715,5 +2715,24 @@
       "B.Com"
     ],
     "region": "South"
+  },
+  {
+    "id": "st-aloysius-university-online",
+    "name": "St Aloysius (Deemed to be University) Online",
+    "abbr": "ALOYSIUS",
+    "naac": "",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 0,
+    "feeMax": 0,
+    "emiFrom": 0,
+    "feeStr": "Not published",
+    "emiStr": "Not published",
+    "programs": [
+      "MBA",
+      "MCA",
+      "M.Com"
+    ],
+    "region": "South"
   }
 ]

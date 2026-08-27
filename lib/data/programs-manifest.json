@@ -14146,5 +14146,23 @@
     "program": "bcom",
     "spec_slug": "general",
     "spec_name": "General"
+  },
+  {
+    "university_slug": "st-aloysius-university-online",
+    "program": "mba",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "st-aloysius-university-online",
+    "program": "mca",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "st-aloysius-university-online",
+    "program": "mcom",
+    "spec_slug": "general",
+    "spec_name": "General"
   }
 ]
