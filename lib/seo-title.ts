@@ -132,6 +132,7 @@ export const TITLE_NAME: Record<string, string> = {
   'srinivas-university-online': 'Srinivas University',
   'st-aloysius-university-online': 'St Aloysius',
   'bennett-university-online': 'Bennett University',
+  'sandip-university-online': 'Sandip University',
   'shobhit-university-online': 'Shobhit University',
   'teerthanker-mahaveer-university-online': 'Teerthanker Mahaveer',
   'subharti-university-online': 'Subharti University',

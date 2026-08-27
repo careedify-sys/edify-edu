@@ -172,6 +172,7 @@ const UNIS_SLIM_RAW: (Omit<UniSlim, 'highlight'>)[] = [
   { id:'srinivas-university-online', name:'Srinivas University Online', abbr:'SRINIVAS', nirf:999, naac:'', feeMin:0, feeMax:0, emiFrom:0, programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com'], color:'#A16207', region:'South', city:'', psuEligible:true },
   { id:'st-aloysius-university-online', name:'St Aloysius (Deemed to be University) Online', abbr:'ALOYSIUS', nirf:999, naac:'', feeMin:0, feeMax:0, emiFrom:0, programs: ['MBA', 'MCA', 'M.Com'], color:'#1D4ED8', region:'South', city:'', psuEligible:true },
   { id:'bennett-university-online', name:'Bennett University Online', abbr:'BENNETT', nirf:999, naac:'', feeMin:0, feeMax:0, emiFrom:0, programs: ['MBA', 'BBA'], color:'#B91C1C', region:'North', city:'', psuEligible:true },
+  { id:'sandip-university-online', name:'Sandip University Online', abbr:'SANDIP', nirf:999, naac:'', feeMin:0, feeMax:0, emiFrom:0, programs: ['MBA', 'BBA'], color:'#065F46', region:'West', city:'', psuEligible:true },
 ]
 
 export function getSlimById(id: string): UniSlim | undefined {

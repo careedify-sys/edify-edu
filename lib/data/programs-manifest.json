@@ -14176,5 +14176,17 @@
     "program": "bba",
     "spec_slug": "general",
     "spec_name": "General"
+  },
+  {
+    "university_slug": "sandip-university-online",
+    "program": "mba",
+    "spec_slug": "marketing",
+    "spec_name": "Marketing"
+  },
+  {
+    "university_slug": "sandip-university-online",
+    "program": "bba",
+    "spec_slug": "general",
+    "spec_name": "General"
   }
 ]
