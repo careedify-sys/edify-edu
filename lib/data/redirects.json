@@ -292,7 +292,7 @@
     },
     {
       "source": "/universities/kiit-university-online/m-com",
-      "destination": "/universities/kiit-university-online/mcom",
+      "destination": "/universities/kalinga-institute-industrial-technology-online/mcom",
       "permanent": true
     },
     {
@@ -1392,7 +1392,7 @@
     },
     {
       "source": "/universities/kiit-university-online/m-com/international-business",
-      "destination": "/universities/kiit-university-online/mcom/international-business",
+      "destination": "/universities/kalinga-institute-industrial-technology-online/mcom/international-business",
       "permanent": true
     },
     {

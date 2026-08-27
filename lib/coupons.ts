@@ -275,7 +275,7 @@ export const COUPONS: Coupon[] = [
   {
     code: 'VIT2026-5K',
     university: 'VIT Vellore Online',
-    universityId: 'vit-vellore-online',
+    universityId: 'vit-university-online',
     discount: 10,
     program: 'All',
     tier: 'standard',

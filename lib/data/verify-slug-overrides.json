@@ -10,9 +10,6 @@
     "nmims-online",
     "manav-rachna-online",
     "charusat-university-online",
-    "sgt-university-online",
-    "vit-university-online",
-    "sastra-university-online",
     "dr-dy-patil-vidyapeeth-online",
     "shobhit-university-online",
     "amet-university-online",
@@ -20,7 +17,6 @@
     "sathyabama-university-online",
     "bit-mesra-online",
     "alvas-college-online",
-    "kiit-university-online",
     "bs-abdur-rahman-university-online",
     "shiv-nadar-university-online",
     "bits-pilani-work-integrated-online",
@@ -46,7 +42,6 @@
     "bharati-vidyapeeth-university-online": "bharati-vidyapeeth-online",
     "jss-university-online": "jss-academy-of-education-and-research-online",
     "jaypee-university-online": "jaypee-institute-of-information-technology-online",
-    "vit-vellore-online": "vellore-institute-of-technology-online",
     "vels-university-online": "vels-institute-of-science-technology-advanced-studies-vistas-online",
     "northcap-university-online": "the-northcap-university-online",
     "iift-online": "indian-institute-of-foreign-trade-online",
@@ -59,13 +54,15 @@
     "subharti-university-online": "swami-vivekanand-subharti-university-online",
     "kalinga-institute-industrial-technology-online": "kalinga-institute-of-industrial-technology-online",
     "graphic-era-university-online": "graphic-era-online",
-    "shanmugha-arts-science-technology-research-online": "shanmugha-arts-science-technology-research-academy-online",
     "guru-gobind-singh-indraprastha-university-online": "guru-gobind-singh-indraprastha-vishwavidyalaya-online",
     "iiit-bangalore-online": "international-institute-of-information-technology-online",
     "bharath-university-online": "bharath-institute-of-higher-education-and-research-online",
     "chhatrapati-shahu-ji-maharaj-university-online": "chatrapati-shahuji-maharaj-university-online",
     "guru-jambheshwar-university-online": "guru-jambheshwar-university-of-science-and-technology-online",
     "meenakshi-academy-higher-education-online": "meenakshi-academy-of-higher-education-and-research-online",
-    "mody-university-online": "mody-university-of-science-and-technology-online"
+    "mody-university-online": "mody-university-of-science-and-technology-online",
+    "sgt-university-online": "shree-guru-gobind-singh-tricentenary-university-online",
+    "vit-university-online": "vellore-institute-of-technology-online",
+    "sastra-university-online": "shanmugha-arts-science-technology-research-academy-online"
   }
 }

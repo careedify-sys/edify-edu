@@ -1417,23 +1417,6 @@
     "region": "South"
   },
   {
-    "id": "vit-vellore-online",
-    "name": "Vellore Institute of Technology Online",
-    "abbr": "VITO",
-    "naac": "A++",
-    "nirf": 11,
-    "nirfMgt": null,
-    "feeMin": 60000,
-    "feeMax": 200000,
-    "emiFrom": 2500,
-    "feeStr": "₹60K – ₹2L",
-    "emiStr": "₹3K/mo",
-    "programs": [
-      "MCA"
-    ],
-    "region": "South"
-  },
-  {
     "id": "anna-university-online",
     "name": "Anna University Online",
     "abbr": "AUDE",
@@ -1589,25 +1572,6 @@
       "MBA"
     ],
     "region": "West"
-  },
-  {
-    "id": "kiit-university-online",
-    "name": "KIIT Deemed to be University Online",
-    "abbr": "KDU",
-    "naac": "A++",
-    "nirf": 17,
-    "nirfMgt": 68,
-    "feeMin": 60000,
-    "feeMax": 200000,
-    "emiFrom": 2500,
-    "feeStr": "₹60K – ₹2L",
-    "emiStr": "₹3K/mo",
-    "programs": [
-      "M.Com",
-      "B.Com",
-      "MA"
-    ],
-    "region": "East"
   },
   {
     "id": "centurion-university-online",
@@ -2066,29 +2030,6 @@
     "region": "South"
   },
   {
-    "id": "shanmugha-arts-science-technology-research-online",
-    "name": "SHANMUGHA ARTS, SCIENCE, TECHNOLOGY & RESEARCH ACADEMY Online",
-    "abbr": "SASTR",
-    "naac": "A+",
-    "nirf": 57,
-    "nirfMgt": null,
-    "feeMin": 75000,
-    "feeMax": 200000,
-    "emiFrom": 3125,
-    "feeStr": "₹75K – ₹2L",
-    "emiStr": "₹3K/mo",
-    "programs": [
-      "B.Com",
-      "BBA",
-      "BCA",
-      "MA",
-      "M.Com",
-      "MBA",
-      "MCA"
-    ],
-    "region": "South"
-  },
-  {
     "id": "university-of-mumbai-online",
     "name": "UNIVERSITY OF MUMBAI Online",
     "abbr": "UOM",
@@ -2465,27 +2406,6 @@
       "MCA"
     ],
     "region": "Central"
-  },
-  {
-    "id": "shree-guru-gobind-singh-tricentenary-university-online",
-    "name": "SHREE GURU GOBIND SINGH TRICENTENARY UNIVERSITY Online",
-    "abbr": "SGGST",
-    "naac": "A",
-    "nirf": 99,
-    "nirfMgt": null,
-    "feeMin": 60000,
-    "feeMax": 150000,
-    "emiFrom": 2500,
-    "feeStr": "₹60K – ₹1.50L",
-    "emiStr": "₹3K/mo",
-    "programs": [
-      "B.Com",
-      "BBA",
-      "BCA",
-      "MBA",
-      "MCA"
-    ],
-    "region": "North"
   },
   {
     "id": "ignou-online",

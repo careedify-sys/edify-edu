@@ -16317,7 +16317,7 @@ export const BLOG_POSTS: BlogPost[] = [
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@mari-pandy-3579934" target="_blank" rel="noopener nofollow">MARI PANDY</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     heroImageAlt: 'Aerial view of Chennai\'s urban landscape with Marina Beach in the background.',
     targetKeyword: 'distance mba chennai 2026',
-    relatedUniversities: ['vit-vellore-online', 'sastra-university-online', 'bharathidasan-university-online', 'alagappa-university-online', 'sri-ramachandra-university-online'],
+    relatedUniversities: ['vit-university-online', 'sastra-university-online', 'bharathidasan-university-online', 'alagappa-university-online', 'sri-ramachandra-university-online'],
     faqs: [
       { q: 'Which is the best distance MBA in Chennai in 2026?', a: 'For Tamil Nadu-based UGC-DEB approved options: VIT Vellore Online (NAAC A++, NIRF 11), SASTRA Online (NAAC A++, NIRF 29), Bharathidasan University Online (NAAC A+, NIRF 36) and Alagappa University Online (NAAC A++, NIRF 44). For national brands popular with Chennai professionals: SRM Online (NIRF University 11), NMIMS Online (NIRF Management 24), Symbiosis SSODL (NIRF Management 11) and LPU Online (NAAC A++, Rs 1.62-2.00L total fee).' },
       { q: 'What is the fee for distance MBA in Chennai?', a: 'Tamil Nadu state university distance MBAs (Madras, Annamalai, Bharathidasan) cost Rs 15,000 to 60,000 total. Premier state-funded universities like VIT, SASTRA and Alagappa run online MBAs in the Rs 60,000 to Rs 2 lakh range. National-brand options span Rs 1.50 lakh (LPU, MUJ) to Rs 3.70 lakh (Symbiosis SSODL). Chennai IT employers (TCS, Infosys, Wipro, Cognizant) commonly reimburse part of the fee on completion; confirm in writing before paying.' },
@@ -16367,7 +16367,7 @@ export const BLOG_POSTS: BlogPost[] = [
   </thead>
   <tbody>
     <tr>
-      <td><a href="/universities/vit-vellore-online" class="ilink">VIT Vellore Online</a></td>
+      <td><a href="/universities/vit-university-online" class="ilink">VIT Vellore Online</a></td>
       <td>A++</td>
       <td>#11 (Univ)</td>
       <td>Rs 1.50 to 2.20 L</td>
