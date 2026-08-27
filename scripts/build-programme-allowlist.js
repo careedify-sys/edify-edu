@@ -54,12 +54,12 @@ for (let i = 0; i < idHits.length; i++) {
   // programs: ['MBA', 'BBA', ...]
   const progsMatch = body.match(/programs:\s*\[([^\]]*)\]/)
   const programs = progsMatch
-    ? [...progsMatch[1].matchAll(/'([^']+)'/g)].map(x => x[1])
+    ? [...progsMatch[1].matchAll(/['"]([^'"]+)['"]/g)].map(x => x[1])
     : []
 
   // programDetails: parse each 'PROGRAM': { ... } block
   const pdKeys = new Set()
-  const pdRe = /'(MBA|MCA|BBA|BCA|B\.Com|MSc|BSc|MA|BA|M\.Com)':\s*\{/g
+  const pdRe = /['"](MBA|MCA|BBA|BCA|B\.Com|MSc|BSc|MA|BA|M\.Com)['"]:\s*\{/g
   let pm
   while ((pm = pdRe.exec(body))) pdKeys.add(pm[1])
 

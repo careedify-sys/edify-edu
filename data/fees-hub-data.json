@@ -2489,5 +2489,25 @@
       "BA"
     ],
     "region": "Central"
+  },
+  {
+    "id": "reva-university-online",
+    "name": "REVA University Online",
+    "abbr": "REVA",
+    "naac": "",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 0,
+    "feeMax": 0,
+    "emiFrom": 0,
+    "feeStr": "Not published",
+    "emiStr": "Not published",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA"
+    ],
+    "region": "South"
   }
 ]

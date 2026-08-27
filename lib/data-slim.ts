@@ -159,6 +159,7 @@ const UNIS_SLIM_RAW: (Omit<UniSlim, 'highlight'>)[] = [
   { id: 'op-jindal-global-university-online', name: 'O.P. Jindal Global University Online', abbr: 'JGU', nirf: 999, naac: 'A', highlightExtra: '1-Year MBA', feeMin: 200000, feeMax: 200000, emiFrom: 8333, programs: ['MBA'], color: '#1e40af', region: 'North', city: 'Sonipat', psuEligible: true, approvals: ['UGC Recognised', 'NAAC A', 'Institution of Eminence (MoE)', 'AACSB Accredited', 'QS 5 Star'] , mbaSpecs: ["Finance","Human Resource Management","Marketing","Strategy & Leadership","Supply Chain & Operations Management","AI for Business","Digital Finance"] },
   { id:'choudhary-charan-singh-university-online', name:'Choudhary Charan Singh University Online', abbr:'CCSU', nirf:999, naac:'', feeMin:0, feeMax:0, emiFrom:0, programs: ['MBA','MCA','BBA','BA','M.Com','MA'], color:'#1D4E89', region:'North', city:'', psuEligible:true },
   { id:'pt-sundarlal-sharma-open-university-online', name:'Pt. Sundarlal Sharma (Open) University Online', abbr:'PSSOU', nirf:999, naac:'', feeMin:0, feeMax:0, emiFrom:0, programs: ["MBA","MA","M.Com","MSc","BA"], color:'#0E7C7B', region:'Central', city:'', psuEligible:true },
+  { id:'reva-university-online', name:'REVA University Online', abbr:'REVA', nirf:999, naac:'', feeMin:0, feeMax:0, emiFrom:0, programs: ["MBA","MCA","BBA","BCA"], color:'#B02A37', region:'South', city:'', psuEligible:true },
 ]
 
 export function getSlimById(id: string): UniSlim | undefined {
