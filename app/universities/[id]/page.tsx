@@ -47,7 +47,10 @@ export async function generateMetadata(
   // CTR-tuned description: numeric facts first, no "Compare/Explore" lead, micro-CTA at end.
   let description = `${cleanName} online ${progStr}: ${hasFee ? `fees ${feeStr},` : ''}${nirfHook} ${naacSeg}. UGC-DEB approved.${specStr}${cityStr} Check ${year} eligibility, syllabus & placement data free.`
   if (description.length < 150) {
-    description = `${cleanName} online ${progStr} ${year}: fees ${feeStr}, NAAC ${u.naac} accredited${nirfStr}.${specStr}${cityStr} See verified fees, syllabus & honest placement data. Check eligibility free.`
+    // Same guards as the primary description. A record with few programmes and
+    // no city produces a short primary string and falls through to here, which
+    // is how "fees 0K, NAAC  accredited" reached the meta tags.
+    description = `${cleanName} online ${progStr} ${year}: ${hasFee ? `fees ${feeStr}, ` : ''}${u.naac ? `NAAC ${u.naac} accredited` : 'UGC-DEB entitled'}${nirfStr}.${specStr}${cityStr} See verified fees, syllabus & honest placement data. Check eligibility free.`
   }
 
   const keywords = [

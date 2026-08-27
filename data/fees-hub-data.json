@@ -2734,5 +2734,23 @@
       "M.Com"
     ],
     "region": "South"
+  },
+  {
+    "id": "bennett-university-online",
+    "name": "Bennett University Online",
+    "abbr": "BENNETT",
+    "naac": "",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 0,
+    "feeMax": 0,
+    "emiFrom": 0,
+    "feeStr": "Not published",
+    "emiStr": "Not published",
+    "programs": [
+      "MBA",
+      "BBA"
+    ],
+    "region": "North"
   }
 ]
