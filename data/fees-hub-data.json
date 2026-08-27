@@ -2573,5 +2573,25 @@
       "B.Com"
     ],
     "region": "South"
+  },
+  {
+    "id": "sri-venkateswara-university-online",
+    "name": "Sri Venkateswara University Online",
+    "abbr": "SVU",
+    "naac": "",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 0,
+    "feeMax": 0,
+    "emiFrom": 0,
+    "feeStr": "Not published",
+    "emiStr": "Not published",
+    "programs": [
+      "MBA",
+      "MCA",
+      "M.Com",
+      "MA"
+    ],
+    "region": "South"
   }
 ]

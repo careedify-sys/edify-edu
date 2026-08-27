@@ -13948,5 +13948,35 @@
     "program": "bcom",
     "spec_slug": "general",
     "spec_name": "General"
+  },
+  {
+    "university_slug": "sri-venkateswara-university-online",
+    "program": "mba",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "sri-venkateswara-university-online",
+    "program": "mca",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "sri-venkateswara-university-online",
+    "program": "mcom",
+    "spec_slug": "financial-management",
+    "spec_name": "Financial Management"
+  },
+  {
+    "university_slug": "sri-venkateswara-university-online",
+    "program": "ma",
+    "spec_slug": "economics",
+    "spec_name": "Economics"
+  },
+  {
+    "university_slug": "sri-venkateswara-university-online",
+    "program": "ma",
+    "spec_slug": "english",
+    "spec_name": "English"
   }
 ]
