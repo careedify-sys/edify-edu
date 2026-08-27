@@ -1,0 +1,4620 @@
+{
+ "generated": "2026-08-27",
+ "ugcRows": 142,
+ "siteUniversities": 128,
+ "listed": 122,
+ "notListed": [
+  {
+   "id": "shobhit-university-online",
+   "name": "Shobhit Institute of Engineering & Technology (Shobhit Online",
+   "state": "Uttar Pradesh",
+   "listed": false,
+   "sources": [],
+   "ugcName": "",
+   "ugcProgrammeCount": 0,
+   "entitled": [],
+   "offered": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "alvas-college-online",
+   "name": "Alva's College (Autonomous) - ACU Online",
+   "state": "Online",
+   "listed": false,
+   "sources": [],
+   "ugcName": "",
+   "ugcProgrammeCount": 0,
+   "entitled": [],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [
+    "MBA"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "shiv-nadar-university-online",
+   "name": "Shiv Nadar University Online",
+   "state": "Uttar Pradesh",
+   "listed": false,
+   "sources": [],
+   "ugcName": "",
+   "ugcProgrammeCount": 0,
+   "entitled": [],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [
+    "MBA"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "bits-pilani-work-integrated-online",
+   "name": "BITS Pilani Work Integrated Learning Programmes (WILP) Online",
+   "state": "GOA",
+   "listed": false,
+   "sources": [],
+   "ugcName": "",
+   "ugcProgrammeCount": 0,
+   "entitled": [],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [
+    "MBA"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "op-jindal-global-university-online",
+   "name": "O.P. Jindal Global University Online",
+   "state": "Haryana",
+   "listed": false,
+   "sources": [],
+   "ugcName": "",
+   "ugcProgrammeCount": 0,
+   "entitled": [],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [
+    "MBA"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "ignou-online",
+   "name": "Indira Gandhi National Open University (IGNOU) Online",
+   "state": "Delhi",
+   "listed": false,
+   "sources": [],
+   "ugcName": "",
+   "ugcProgrammeCount": 0,
+   "entitled": [],
+   "offered": [
+    "B.Com",
+    "BA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "B.Com",
+    "BA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  }
+ ],
+ "withUnbackedProgrammes": [
+  {
+   "id": "parul-university-online",
+   "name": "Parul University Online",
+   "state": "Gujarat",
+   "listed": true,
+   "sources": [
+    "main #19"
+   ],
+   "ugcName": "PARUL UNIVERSITY",
+   "ugcProgrammeCount": 10,
+   "entitled": [
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "B.Com"
+   ],
+   "notOffered": [
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "mangalayatan-university-online",
+   "name": "Mangalayatan University Online",
+   "state": "Uttar Pradesh",
+   "listed": true,
+   "sources": [
+    "main #107"
+   ],
+   "ugcName": "MANGALAYATAN UNIVERSITY",
+   "ugcProgrammeCount": 12,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "unbacked": [
+    "BA"
+   ],
+   "notOffered": [
+    "MA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "manav-rachna-online",
+   "name": "Manav Rachna Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #28",
+    "addendum #7"
+   ],
+   "ugcName": "MANAV RACHNA INTERNATIONAL INSTITUTE OF RESEARCH & STUDIES | MANAV RACHNA INTERNATIONA L INSTITUTE OF RESEARCH & STUDIES",
+   "ugcProgrammeCount": 10,
+   "entitled": [
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "B.Com"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "karnataka-state-open-university-online",
+   "name": "Karnataka State Open University (KSOU) Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #42"
+   ],
+   "ugcName": "KARNATAKA STATE OPEN UNIVERSITY",
+   "ugcProgrammeCount": 10,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "BBA",
+    "BCA",
+    "MCA"
+   ],
+   "notOffered": [
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "dr-babasaheb-ambedkar-open-university-online",
+   "name": "Dr. Babasaheb Ambedkar Open University Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #18"
+   ],
+   "ugcName": "DR. BABASAHEB AMBEDKAR OPEN UNIVERSITY",
+   "ugcProgrammeCount": 10,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "MBA"
+   ],
+   "notOffered": [
+    "BA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "gls-university-online",
+   "name": "GLS University Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #22"
+   ],
+   "ugcName": "G.L.S. UNIVERSITY",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "M.Com",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "BCA"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "christ-university-online",
+   "name": "Christ (Deemed to be University) Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #43"
+   ],
+   "ugcName": "CHRIST (DEEMED TO BE UNIVERSITY",
+   "ugcProgrammeCount": 7,
+   "entitled": [
+    "B.Com",
+    "BCA",
+    "MA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "BBA"
+   ],
+   "notOffered": [
+    "BCA",
+    "MA",
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "anna-university-online",
+   "name": "Anna University Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "main #97"
+   ],
+   "ugcName": "ANNA UNIVERSITY",
+   "ugcProgrammeCount": 2,
+   "entitled": [
+    "MBA"
+   ],
+   "offered": [
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "MCA"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "university-of-madras-online",
+   "name": "University of Madras Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "main #87"
+   ],
+   "ugcName": "UNIVERSITY OF MADRAS",
+   "ugcProgrammeCount": 9,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA"
+   ],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [
+    "MBA"
+   ],
+   "notOffered": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "jamia-hamdard-online",
+   "name": "JAMIA HAMDARD Online",
+   "state": "DELHI",
+   "listed": true,
+   "sources": [
+    "main #10"
+   ],
+   "ugcName": "JAMIA HAMDARD",
+   "ugcProgrammeCount": 7,
+   "entitled": [
+    "BA",
+    "BBA",
+    "BCA",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "B.Com"
+   ],
+   "notOffered": [
+    "BA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "kalinga-institute-industrial-technology-online",
+   "name": "KALINGA INSTITUTE OF INDUSTRIAL TECHNOLOGY Online",
+   "state": "ODISHA",
+   "listed": true,
+   "sources": [
+    "main #62"
+   ],
+   "ugcName": "KALINGA INSTITUTE OF INDUSTRIAL TECHNOLOGY",
+   "ugcProgrammeCount": 11,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "M.Com",
+    "MA"
+   ],
+   "unbacked": [
+    "BA"
+   ],
+   "notOffered": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "madurai-kamaraj-university-online",
+   "name": "MADURAI KAMARAJ UNIVERSITY Online",
+   "state": "TAMIL NADU",
+   "listed": true,
+   "sources": [
+    "main #82"
+   ],
+   "ugcName": "MADURAI KAMARAJ UNIVERSITY",
+   "ugcProgrammeCount": 9,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "notOffered": [
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "university-of-mumbai-online",
+   "name": "UNIVERSITY OF MUMBAI Online",
+   "state": "MAHARASHTRA",
+   "listed": true,
+   "sources": [
+    "main #57"
+   ],
+   "ugcName": "UNIVERSITY OF MUMBAI",
+   "ugcProgrammeCount": 1,
+   "entitled": [
+    "MA"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "iiit-bangalore-online",
+   "name": "INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY Online",
+   "state": "TELANGANA",
+   "listed": true,
+   "sources": [
+    "main #101"
+   ],
+   "ugcName": "INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY",
+   "ugcProgrammeCount": 1,
+   "entitled": [
+    "MSc"
+   ],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [
+    "MBA"
+   ],
+   "notOffered": [
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  }
+ ],
+ "duplicateSiteRecords": [
+  {
+   "ugcRow": "main #29",
+   "siteIds": [
+    "sgt-university-online",
+    "shree-guru-gobind-singh-tricentenary-university-online"
+   ]
+  },
+  {
+   "ugcRow": "main #92",
+   "siteIds": [
+    "vit-university-online",
+    "vit-vellore-online"
+   ]
+  },
+  {
+   "ugcRow": "main #84",
+   "siteIds": [
+    "sastra-university-online",
+    "shanmugha-arts-science-technology-research-online"
+   ]
+  },
+  {
+   "ugcRow": "main #62",
+   "siteIds": [
+    "kiit-university-online",
+    "kalinga-institute-industrial-technology-online"
+   ]
+  }
+ ],
+ "onListNotOnSite": [
+  {
+   "src": "main",
+   "sno": "4",
+   "state": "ANDHRA PRADESH",
+   "type": "PRIVATE UNIVERSITY",
+   "hei": "MOHAN BABU UNIVERSITY",
+   "programmes": [
+    "BACHELOR OF COMMERCE",
+    "BACHELOR OF BUSINESS ADMINISTRATION",
+    "BACHELOR OF COMPUTER APPLICATIONS",
+    "MASTER OF BUSINESS ADMINISTRATION",
+    "MASTER OF COMPUTER APPLICATIONS"
+   ]
+  },
+  {
+   "src": "main",
+   "sno": "5",
+   "state": "ANDHRA PRADESH",
+   "type": "STATE UNIVERSITY",
+   "hei": "SRI VENKATESWARA UNIVERSITY",
+   "programmes": [
+    "MASTER OF ARTS (ECONOMICS)",
+    "MASTER OF ARTS (ENGLISH)",
+    "MASTER OF COMMERCE (FINANCIAL MANAGEMENT)",
+    "MASTER OF BUSINESS ADMINISTRATION",
+    "MASTER OF COMPUTER APPLICATIONS"
+   ]
+  },
+  {
+   "src": "main",
+   "sno": "9",
+   "state": "CHHATTISGARH",
+   "type": "STATE OPEN UNIVERSITY",
+   "hei": "PT. SUNDARLAL SHARMA (OPEN) UNIVERSITY",
+   "programmes": [
+    "BACHELOR OF ARTS (COMBINATION OF 3 SUBJECTS HINDI, POLITICAL SCIENCE, SOCIOLOGY)",
+    "BACHELOR OF LIBRARY & INFORMATION SCIENCE",
+    "MASTER OF SCIENCE (MATHEMATICS)",
+    "MASTER OF ARTS (ENGLISH)",
+    "MASTER OF ARTS (SOCIOLOGY)",
+    "MASTER OF ARTS (HINDI)",
+    "MASTER OF ARTS (SANSKRIT)",
+    "MASTER OF ARTS (EDUCATION)",
+    "MASTER OF COMMERCE",
+    "MASTER OF BUSINESS ADMINISTRATION",
+    "MASTER OF ARTS (POLITICAL SCIENCE)",
+    "MASTER OF LIBRARY & INFORMATION SCIENCES"
+   ]
+  },
+  {
+   "src": "main",
+   "sno": "13",
+   "state": "DELHI",
+   "type": "CENTRAL UNIVERSITY",
+   "hei": "CENTRAL SANSKRIT UNIVERSITY",
+   "programmes": [
+    "SHASTRI (VYAKARANA SHASTRAM)",
+    "SHASTRI (SAHITYAM)",
+    "ACHARYA (PHALITA JYOTISHA)",
+    "ACHARYA (SAHITYAM)",
+    "ACHARYA (VYAKARANA SHASTRAM)",
+    "SHASTRI HONS. (PHALIT JYOTISHA)"
+   ]
+  },
+  {
+   "src": "main",
+   "sno": "38",
+   "state": "KARNATAKA",
+   "type": "DEEMED-TO-BE UNIVERSITY",
+   "hei": "SRI SIDDHARTHA ACADEMY OF HIGHER EDUCATION",
+   "programmes": [
+    "MASTER OF COMPUTER APPLICATIONS"
+   ]
+  },
+  {
+   "src": "main",
+   "sno": "47",
+   "state": "KARNATAKA",
+   "type": "DEEMED-TO-BE UNIVERSITY",
+   "hei": "ST. ALOYSIUS",
+   "programmes": [
+    "MASTER OF BUSINESS ADMINISTRATION",
+    "MASTER OF COMPUTER APPLICATIONS",
+    "MASTER OF COMMERCE"
+   ]
+  },
+  {
+   "src": "main",
+   "sno": "48",
+   "state": "KARNATAKA",
+   "type": "PRIVATE UNIVERSITY",
+   "hei": "REVA UNIVERSITY",
+   "programmes": [
+    "BACHELOR OF COMPUTER APPLICATIONS",
+    "BACHELOR OF BUSINESS ADMINISTRATION (FINANCE AND BANKING)",
+    "MASTER OF BUSINESS ADMINISTRATION (FINANCE AND INTERNATIONAL BUSINESS)",
+    "MASTER OF BUSINESS ADMINISTRATION (FINANCE AND MARKETING)",
+    "MASTER OF BUSINESS ADMINISTRATION (HUMAN RESOURCE AND MARKETING)",
+    "MASTER OF BUSINESS ADMINISTRATION (FINANCE AND OPERATIONS MANAGEMENT)",
+    "MASTER OF BUSINESS ADMINISTRATION (FINANCE AND HUMAN RESOURCE)",
+    "MASTER OF BUSINESS ADMINISTRATION (FINANCE AND BUSINESS ANALYTICS)",
+    "MASTER OF COMPUTER APPLICATIONS"
+   ]
+  },
+  {
+   "src": "main",
+   "sno": "48",
+   "state": "KERALA",
+   "type": "STATE UNIVERSITY",
+   "hei": "UNIVERSITY OF CALICUT",
+   "programmes": [
+    "BACHELOR OF ARTS (HONS.) HISTORY -(4 years)",
+    "BACHELOR OF ARTS (HONS.) SOCIOLOGY -(4 years)",
+    "MASTER OF ARTS (POLITICAL SCIENCE)",
+    "MASTER OF ARTS (ECONOMICS)",
+    "MASTER OF ARTS (HISTORY)",
+    "MASTER OF ARTS (SOCIOLOGY)",
+    "MASTER OF ARTS (ARABIC LANGUAGE AND LITERATURE)",
+    "MASTER OF COMMERCE (FINANCE)",
+    "MASTER OF BUSINESS ADMINISTRATION (HUMAN RESOURCE MANAGEMENT"
+   ]
+  },
+  {
+   "src": "main",
+   "sno": "74",
+   "state": "RAJASTHAN",
+   "type": "PRIVATE UNIVERSITY",
+   "hei": "AMITY UNIVERSITY",
+   "programmes": [
+    "BACHELOR OF COMMERCE (HONS)",
+    "BACHELOR OF BUSINESS ADMINISTRATION",
+    "BACHELOR OF COMPUTER APPLICATION",
+    "MASTER OF SCIENCE (MATHEMATICS)",
+    "MASTER OF ARTS (JOURNALISM & MASS COMMUNICATION)",
+    "MASTER OF ARTS (ENGLISH)",
+    "MASTER OF SCIENCE (DATA SCIENCE)",
+    "MASTER OF BUSINESS ADMINISTRATION",
+    "MASTER OF COMPUTER APPLICATIONS"
+   ]
+  },
+  {
+   "src": "main",
+   "sno": "81",
+   "state": "TAMIL NADU",
+   "type": "CENTRAL UNIVERSITY",
+   "hei": "CENTRAL UNIVERSITY OF TAMIL NADU",
+   "programmes": [
+    "MASTER OF ARTS (HINDI)",
+    "MASTER OF COMMERCE (COMMERCE)",
+    "MASTER OF ARTS (ENGLISH)",
+    "MASTER OF BUSINESS ADMINISTRATION"
+   ]
+  },
+  {
+   "src": "main",
+   "sno": "100",
+   "state": "TAMIL NADU",
+   "type": "DEEMED-TO-BE UNIVERSITY",
+   "hei": "SAVEETHA INSTITUTE OF MEDICAL AND TECHNICAL SCIENCES",
+   "programmes": [
+    "BACHELOR OF COMMERCE (GENERAL)"
+   ]
+  },
+  {
+   "src": "main",
+   "sno": "104",
+   "state": "UTTAR PRADESH",
+   "type": "PRIVATE UNIVERSITY",
+   "hei": "BENNETT UNIVERSITY",
+   "programmes": [
+    "BACHELOR OF BUSINESS ADMINISTRATION",
+    "MASTER OF BUSINESS ADMINISTRATION"
+   ]
+  },
+  {
+   "src": "main",
+   "sno": "105",
+   "state": "UTTAR PRADESH",
+   "type": "STATE UNIVERSITY",
+   "hei": "CHOUDHARY CHARAN SINGH UNIVERSITY",
+   "programmes": [
+    "B.A (LIBRARY SCIENCE, ECONOMICS, EDUCATION, ENGLISH, HINDI, HISTORY, MATHEMATICS, PHILOSOPHY, POLITICAL SCIENCE, SANSKRIT, SOCIOLOGY, STATISTICS, URDU)",
+    "BACHELOR OF BUSINESS ADMINISTRATION",
+    "MASTER OF BUSINESS ADMINISTRATION (HOSPITAL ADMINISTRATION)",
+    "MASTER OF BUSINESS ADMINISTRATION",
+    "MASTER OF COMPUTER APPLICATIONS-",
+    "MASTER OF COMMERCE",
+    "MASTER OF ARTS (SOCIOLOGY)",
+    "MASTER OF ARTS (HISTORY)",
+    "MASTER OF ARTS (ENGLISH)",
+    "MASTER OF ARTS (POLITICAL SCIENCE)",
+    "MASTER OF ARTS (EDUCATION)",
+    "MASTER OF ARTS (ECONOMICS)"
+   ]
+  },
+  {
+   "src": "main",
+   "sno": "106",
+   "state": "UTTAR PRADESH",
+   "type": "STATE UNIVERSITY",
+   "hei": "DR. B.R. AMBEDKAR UNIVERSITY",
+   "programmes": [
+    "BACHELOR OF COMMERCE",
+    "BACHELOR OF BUSINESS ADMINISTRATION",
+    "BACHELOR OF COMPUTER APPLICATIONS",
+    "MASTER OF COMMERCE",
+    "MASTER OF ARTS (SOCIOLOGY)",
+    "MASTER OF COMPUTER APPLICATIONS",
+    "MASTER OF BUSINESS ADMINISTRATION",
+    "MASTER OF BUSINESS ADMINISTRATION (TRAVEL AND TOURISM MANAGEMENT)"
+   ]
+  },
+  {
+   "src": "main",
+   "sno": "119",
+   "state": "UTTARAKHAND",
+   "type": "PRIVATE UNIVERSITY",
+   "hei": "SWAMI RAMA HIMALAYAN UNIVERSITY",
+   "programmes": [
+    "BACHELOR OF COMMERCE (HONS.) -4 Years",
+    "BACHELOR OF BUSINESS ADMINISTRATION (HONS.) -4 Years",
+    "BACHELOR OF COMPUTER APPLICATIONS -4 Years",
+    "MASTER OF BUSINESS ADMINISTRATION",
+    "MASTER OF COMPUTER APPLICATIONS"
+   ]
+  },
+  {
+   "src": "addendum",
+   "sno": "3",
+   "state": "GUJARAT",
+   "type": "PRIVATE UNIVERSITY",
+   "hei": "SILVER OAK UNIVERSITY",
+   "programmes": [
+    "BACHELOR OF BUSINESS ADMINISTRATION (GENERAL)",
+    "BACHELOR OF COMPUTER APPLICATIONS (GENERAL)",
+    "MASTER OF COMPUTER APPLICATIONS (GENERAL)",
+    "MASTER OF BUSINESS ADMINISTRATION (GENERAL)",
+    "MASTER OF COMMERCE (GENERAL)",
+    "MASTER OF ARTS (ENGLISH LITERATURE)"
+   ]
+  },
+  {
+   "src": "addendum",
+   "sno": "4",
+   "state": "HARYANA",
+   "type": "PRIVATE UNIVERSITY",
+   "hei": "BML MUNJAL UNIVERSITY, HARYANA",
+   "programmes": [
+    "MASTER OF BUSINESS ADMINISTRATION"
+   ]
+  },
+  {
+   "src": "addendum",
+   "sno": "9",
+   "state": "KARNATAKA",
+   "type": "PRIVATE UNIVERSITY",
+   "hei": "SRINIVAS UNIVERSITY",
+   "programmes": [
+    "Bachelor of Computer Applications - 4 years",
+    "Bachelor of Business Administration (Hons.) - 4 years",
+    "Bachelor of Commerce (Hons.) - 4 years",
+    "Master of Computer Applications",
+    "Master of Business Administration"
+   ]
+  },
+  {
+   "src": "addendum",
+   "sno": "10",
+   "state": "MAHARASHTRA",
+   "type": "PRIVATE UNIVERSITY",
+   "hei": "SANDIP UNIVERSITY",
+   "programmes": [
+    "BACHELOR OF BUSINESS ADMINISTRATION (GENERAL)",
+    "MASTER OF BUSINESS ADMINISTRATION (MARKETING)"
+   ]
+  },
+  {
+   "src": "addendum",
+   "sno": "11",
+   "state": "MAHARASHTRA",
+   "type": "PRIVATE UNIVERSITY",
+   "hei": "AJEENKYA D.Y. PATIL UNIVERSITY",
+   "programmes": [
+    "Bachelor of Computer Applications",
+    "Bachelor of Business Administration",
+    "Master of Business Administration",
+    "Master of Computer Applications"
+   ]
+  },
+  {
+   "src": "addendum",
+   "sno": "12",
+   "state": "MAHARASHTRA",
+   "type": "PRIVATE UNIVERSITY",
+   "hei": "ATLAS SKILLTECH UNIVERSITY",
+   "programmes": [
+    "Bachelor of Business Administration",
+    "Master of Business Administration"
+   ]
+  },
+  {
+   "src": "addendum",
+   "sno": "14",
+   "state": "TELANGANA",
+   "type": "",
+   "hei": "DR. B.R. AMBEDKAR OPEN UNIVERSITY",
+   "programmes": [
+    "Master of Arts - Telugu",
+    "Bachelor of Commerce - Commerce",
+    "Bachelor of Commerce - BCom Telugu Medium",
+    "Master of Commerce - Commerce"
+   ]
+  }
+ ],
+ "rows": [
+  {
+   "id": "jain-university-online",
+   "name": "JAIN (Deemed-to-be University) Online",
+   "state": "Karnataka",
+   "listed": true,
+   "sources": [
+    "main #34"
+   ],
+   "ugcName": "JAIN (DEEMED-TO-BE UNIVERSITY",
+   "ugcProgrammeCount": 11,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "amity-university-online",
+   "name": "Amity University Online",
+   "state": "Uttar Pradesh",
+   "listed": true,
+   "sources": [
+    "main #103",
+    "addendum #15"
+   ],
+   "ugcName": "AMITY UNIVERSITY | AMITY UNIVERSITY",
+   "ugcProgrammeCount": 18,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "BA",
+    "M.Com",
+    "MA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "lovely-professional-university-online",
+   "name": "Lovely Professional University Online",
+   "state": "Punjab 144411",
+   "listed": true,
+   "sources": [
+    "main #66"
+   ],
+   "ugcName": "LOVELY PROFESSIONAL UNIVERSITY",
+   "ugcProgrammeCount": 13,
+   "entitled": [
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "dayananda-sagar-university-online",
+   "name": "Dayananda Sagar University Online",
+   "state": "Karnataka",
+   "listed": true,
+   "sources": [
+    "main #44"
+   ],
+   "ugcName": "DAYANAND SAGAR UNIVERSITY",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "dy-patil-university-online",
+   "name": "D.Y. Patil University, Navi Mumbai Online",
+   "state": "Maharashtra 400706",
+   "listed": true,
+   "sources": [
+    "main #53"
+   ],
+   "ugcName": "D.Y. PATIL (NAVI MUMBAI",
+   "ugcProgrammeCount": 4,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "MCA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "upes-online",
+   "name": "University of Petroleum & Energy Studies (UPES) Online",
+   "state": "Uttarakhand",
+   "listed": true,
+   "sources": [
+    "main #120"
+   ],
+   "ugcName": "UNIVERSITY OF PETROLEUM AND ENERGY STUDIES",
+   "ugcProgrammeCount": 9,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "parul-university-online",
+   "name": "Parul University Online",
+   "state": "Gujarat",
+   "listed": true,
+   "sources": [
+    "main #19"
+   ],
+   "ugcName": "PARUL UNIVERSITY",
+   "ugcProgrammeCount": 10,
+   "entitled": [
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "B.Com"
+   ],
+   "notOffered": [
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "amrita-vishwa-vidyapeetham-online",
+   "name": "Amrita Vishwa Vidyapeetham Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #89"
+   ],
+   "ugcName": "AMRITA VISHWA VIDYAPEETHAM UNIVERSITY",
+   "ugcProgrammeCount": 10,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "MA",
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "mangalayatan-university-online",
+   "name": "Mangalayatan University Online",
+   "state": "Uttar Pradesh",
+   "listed": true,
+   "sources": [
+    "main #107"
+   ],
+   "ugcName": "MANGALAYATAN UNIVERSITY",
+   "ugcProgrammeCount": 12,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "unbacked": [
+    "BA"
+   ],
+   "notOffered": [
+    "MA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "shoolini-university-online",
+   "name": "Shoolini University Online",
+   "state": "Himachal Pradesh 173229",
+   "listed": true,
+   "sources": [
+    "main #30"
+   ],
+   "ugcName": "SHOOLINI UNIVERSITY OF BIOTECHNOLOGY AND MANAGEMENT SCIENCES",
+   "ugcProgrammeCount": 8,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "manipal-university-jaipur-online",
+   "name": "Manipal University Jaipur (MUJ) Online",
+   "state": "Rajasthan",
+   "listed": true,
+   "sources": [
+    "main #70"
+   ],
+   "ugcName": "MANIPAL UNIVERSITY",
+   "ugcProgrammeCount": 9,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "galgotias-university-online",
+   "name": "Galgotias University Online",
+   "state": "Uttar Pradesh",
+   "listed": true,
+   "sources": [
+    "main #115"
+   ],
+   "ugcName": "GALGOTIAS UNIVERSITY",
+   "ugcProgrammeCount": 8,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "sikkim-manipal-university-online",
+   "name": "Sikkim Manipal University Online",
+   "state": "Sikkim",
+   "listed": true,
+   "sources": [
+    "main #76"
+   ],
+   "ugcName": "SIKKIM MANIPAL UNIVERSITY",
+   "ugcProgrammeCount": 9,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "symbiosis-university-online",
+   "name": "Symbiosis School for Online and Digital Learning (SSODL), Pune Online",
+   "state": "Maharashtra",
+   "listed": true,
+   "sources": [
+    "main #54"
+   ],
+   "ugcName": "SYMBIOSIS INTERNATIONAL",
+   "ugcProgrammeCount": 10,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "BSc",
+    "MA",
+    "MBA",
+    "MSc"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "BSc",
+    "MA",
+    "MBA",
+    "MSc"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "chitkara-university-online",
+   "name": "Chitkara University Online",
+   "state": "Punjab",
+   "listed": true,
+   "sources": [
+    "main #65"
+   ],
+   "ugcName": "CHITKARA UNIVERSITY",
+   "ugcProgrammeCount": 4,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "BBA",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "BCA",
+    "MCA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "yenepoya-university-online",
+   "name": "Yenepoya (Deemed to be University) Online",
+   "state": "Karnataka",
+   "listed": true,
+   "sources": [
+    "main #40"
+   ],
+   "ugcName": "YENEPOYA",
+   "ugcProgrammeCount": 6,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "sharda-university-online",
+   "name": "Sharda University Online",
+   "state": "Uttar Pradesh",
+   "listed": true,
+   "sources": [
+    "main #106"
+   ],
+   "ugcName": "SHARDA UNIVERSITY",
+   "ugcProgrammeCount": 7,
+   "entitled": [
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "MA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "vignan-university-online",
+   "name": "Vignan's Foundation for Science, Technology & Research Online",
+   "state": "Andhra Pradesh",
+   "listed": true,
+   "sources": [
+    "main #3"
+   ],
+   "ugcName": "VIGNAN'S FOUNDATION FOR SCIENCE, TECHNOLOGY AND RESEARCH",
+   "ugcProgrammeCount": 7,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "manonmaniam-sundaranar-university-online",
+   "name": "Manonmaniam Sundaranar University Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "main #93"
+   ],
+   "ugcName": "MANONMANIAM SUNDARANAR UNIVERSITY",
+   "ugcProgrammeCount": 10,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA",
+    "MBA"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "nmims-online",
+   "name": "NMIMS (Narsee Monjee Institute of Management Studies) Online",
+   "state": "Maharashtra",
+   "listed": true,
+   "sources": [
+    "main #58"
+   ],
+   "ugcName": "NARSEE MONJEE INSTITUTE Of MANAGEMENT",
+   "ugcProgrammeCount": 4,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "MBA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "manipal-academy-higher-education-online",
+   "name": "Manipal Academy of Higher Education (MAHE) Online",
+   "state": "Karnataka",
+   "listed": true,
+   "sources": [
+    "main #36"
+   ],
+   "ugcName": "MANIPAL ACADEMY OF HIGHER EDUCATION",
+   "ugcProgrammeCount": 10,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BSc",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "BSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "kl-university-online",
+   "name": "Koneru Lakshmaiah Education Foundation (KL University) Online",
+   "state": "Andhra Pradesh",
+   "listed": true,
+   "sources": [
+    "main #2"
+   ],
+   "ugcName": "KONERU LAKSHMAIAH EDUCATION FOUNDATION",
+   "ugcProgrammeCount": 6,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "chandigarh-university-online",
+   "name": "Chandigarh University Online",
+   "state": "Punjab 140413",
+   "listed": true,
+   "sources": [
+    "main #64"
+   ],
+   "ugcName": "CHANDIGARH UNIVERSITY",
+   "ugcProgrammeCount": 10,
+   "entitled": [
+    "BA",
+    "BBA",
+    "BCA",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "BA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "vtu-online",
+   "name": "Visvesvaraya Technological University (VTU) Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #41"
+   ],
+   "ugcName": "VISVESWARAIAH TECHNOLOGICAL UNIVERSITY",
+   "ugcProgrammeCount": 13,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "integral-university-online",
+   "name": "Integral University Online",
+   "state": "Uttar Pradesh",
+   "listed": true,
+   "sources": [
+    "main #109"
+   ],
+   "ugcName": "INTEGRAL UNIVERSITY",
+   "ugcProgrammeCount": 13,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "manav-rachna-online",
+   "name": "Manav Rachna Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #28",
+    "addendum #7"
+   ],
+   "ugcName": "MANAV RACHNA INTERNATIONAL INSTITUTE OF RESEARCH & STUDIES | MANAV RACHNA INTERNATIONA L INSTITUTE OF RESEARCH & STUDIES",
+   "ugcProgrammeCount": 10,
+   "entitled": [
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "B.Com"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "karnataka-state-open-university-online",
+   "name": "Karnataka State Open University (KSOU) Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #42"
+   ],
+   "ugcName": "KARNATAKA STATE OPEN UNIVERSITY",
+   "ugcProgrammeCount": 10,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "BBA",
+    "BCA",
+    "MCA"
+   ],
+   "notOffered": [
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "bharathidasan-university-online",
+   "name": "Bharathidasan University Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "main #78"
+   ],
+   "ugcName": "BHARATHIDASAN UNIVERSITY",
+   "ugcProgrammeCount": 10,
+   "entitled": [
+    "BA",
+    "BBA",
+    "MA",
+    "MBA"
+   ],
+   "offered": [
+    "BA",
+    "BBA",
+    "MA",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "hindustan-institute-technology-online",
+   "name": "Hindustan Institute of Technology and Science (CODE) Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "main #94"
+   ],
+   "ugcName": "HINDUSTAN INSTITUTE OF TECHNOLOGY AND SCIENCE (HITS",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "guru-ghasidas-vishwavidyalaya-online",
+   "name": "Guru Ghasidas Vishwavidyalaya (GGU) Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #7"
+   ],
+   "ugcName": "GURU GHASIDAS VISHWAVIDYALAYA",
+   "ugcProgrammeCount": 12,
+   "entitled": [
+    "B.Com",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "dr-babasaheb-ambedkar-open-university-online",
+   "name": "Dr. Babasaheb Ambedkar Open University Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #18"
+   ],
+   "ugcName": "DR. BABASAHEB AMBEDKAR OPEN UNIVERSITY",
+   "ugcProgrammeCount": 10,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "MBA"
+   ],
+   "notOffered": [
+    "BA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "marwadi-university-online",
+   "name": "Marwadi University Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #20"
+   ],
+   "ugcName": "MARWADI UNIVERSITY",
+   "ugcProgrammeCount": 7,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "pp-savani-university-online",
+   "name": "P P Savani University Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #23"
+   ],
+   "ugcName": "P.P. SAVANI UNIVERSITY",
+   "ugcProgrammeCount": 10,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MSc"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MSc"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "university-of-mysore-online",
+   "name": "University of Mysore Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #39"
+   ],
+   "ugcName": "UNIVERSITY OF MYSORE",
+   "ugcProgrammeCount": 12,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "aligarh-muslim-university-online",
+   "name": "Aligarh Muslim University Online",
+   "state": "Uttar Pradesh",
+   "listed": true,
+   "sources": [
+    "main #102"
+   ],
+   "ugcName": "ALIGARH MUSLIM UNIVERSITY",
+   "ugcProgrammeCount": 13,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "M.Com",
+    "MA",
+    "MBA"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "M.Com",
+    "MA",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "gujarat-university-online",
+   "name": "Gujarat University Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #16"
+   ],
+   "ugcName": "GUJARAT UNIVERSITY",
+   "ugcProgrammeCount": 6,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MSc"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "charusat-university-online",
+   "name": "CHARUSAT (Charotar University of Science and Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #17"
+   ],
+   "ugcName": "CHAROTAR UNIVERSITY OF SCIENCE & TECHNOLOGY",
+   "ugcProgrammeCount": 4,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "gls-university-online",
+   "name": "GLS University Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #22"
+   ],
+   "ugcName": "G.L.S. UNIVERSITY",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "M.Com",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "BCA"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "maharishi-markandeshwar-university-online",
+   "name": "Maharishi Markandeshwar (Deemed to be University) Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #27"
+   ],
+   "ugcName": "MAHARISHI MARKANDESHWAR",
+   "ugcProgrammeCount": 6,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "mizoram-university-online",
+   "name": "Mizoram University (MZU) Online",
+   "state": "Mizoram",
+   "listed": true,
+   "sources": [
+    "main #61"
+   ],
+   "ugcName": "MIZORAM UNIVERSITY",
+   "ugcProgrammeCount": 13,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "MA",
+    "MBA"
+   ],
+   "offered": [
+    "MA",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "BA",
+    "BBA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "vivekananda-global-university-online",
+   "name": "Vivekananda Global University Online",
+   "state": "Rajasthan",
+   "listed": true,
+   "sources": [
+    "main #71"
+   ],
+   "ugcName": "VIVEKANANDA GLOBAL UNIVERSITY",
+   "ugcProgrammeCount": 9,
+   "entitled": [
+    "BA",
+    "BBA",
+    "BCA",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "BA",
+    "BBA",
+    "BCA",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "dr-mgr-educational-research-institute-online",
+   "name": "Dr. MGR Educational and Research Institute Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "main #83"
+   ],
+   "ugcName": "DR. M.G.R. EDUCATIONAL AND RESEARCH INSTITUTE",
+   "ugcProgrammeCount": 6,
+   "entitled": [
+    "B.Com",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MSc"
+   ],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "M.Com",
+    "MA",
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "uttaranchal-university-online",
+   "name": "Uttaranchal University Online",
+   "state": "Uttarakhand",
+   "listed": true,
+   "sources": [
+    "main #121"
+   ],
+   "ugcName": "UTTARANCHAL UNIVERSITY",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "BA",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "BA",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "andhra-university-online",
+   "name": "Andhra University Online",
+   "state": "Andhra Pradesh",
+   "listed": true,
+   "sources": [
+    "main #1"
+   ],
+   "ugcName": "ANDHRA UNIVERSITY",
+   "ugcProgrammeCount": 11,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "BA",
+    "M.Com"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "sgt-university-online",
+   "name": "SGT University Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #29"
+   ],
+   "ugcName": "SHREE GURU GOBIND SINGH TRICENTENARY UNIVERSITY",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "central-university-himachal-pradesh-online",
+   "name": "Central University of Himachal Pradesh Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #31"
+   ],
+   "ugcName": "CENTRAL UNIVERSITY OF HIMACHAL PRADESH",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "mahatma-gandhi-university-online",
+   "name": "Mahatma Gandhi University Online",
+   "state": "Kerala",
+   "listed": true,
+   "sources": [
+    "main #47"
+   ],
+   "ugcName": "MAHATMA GANDHI UNIVERSITY",
+   "ugcProgrammeCount": 13,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MSc"
+   ],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA",
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "vit-university-online",
+   "name": "Vellore Institute of Science and Technology (VIT Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "main #92"
+   ],
+   "ugcName": "VELLORE INSTITUTE OF TECHNOLOGY",
+   "ugcProgrammeCount": 4,
+   "entitled": [
+    "B.Com",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "karunya-university-online",
+   "name": "Karunya Institute of Technology and Sciences (KCODE) Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "main #95"
+   ],
+   "ugcName": "KARUNYA INSTITUTE OF TECHNOLOGY AND SCIENCES",
+   "ugcProgrammeCount": 2,
+   "entitled": [
+    "B.Com",
+    "MBA"
+   ],
+   "offered": [
+    "B.Com",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "kurukshetra-university-online",
+   "name": "Kurukshetra University Online",
+   "state": "Haryana",
+   "listed": true,
+   "sources": [
+    "main #25"
+   ],
+   "ugcName": "KURUKSHETRA UNIVERSITY",
+   "ugcProgrammeCount": 11,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "M.Com",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "BA",
+    "MA",
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "sastra-university-online",
+   "name": "SASTRA Deemed University Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "main #84"
+   ],
+   "ugcName": "SHANMUGHA ARTS, SCIENCE, TECHNOLOGY & RESEARCH ACADEMY",
+   "ugcProgrammeCount": 10,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MCA",
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "dr-dy-patil-vidyapeeth-online",
+   "name": "Dr. D.Y. Patil Vidyapeeth, Pune – Centre for Online Learning (DPU-COL) Online",
+   "state": "Maharashtra 411018",
+   "listed": true,
+   "sources": [
+    "main #52"
+   ],
+   "ugcName": "DR. D.Y. PATIL VIDYAPEETH (PUNE",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "BBA",
+    "BCA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "jamia-millia-islamia-online",
+   "name": "Jamia Millia Islamia (JMI) Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #11"
+   ],
+   "ugcName": "JAMIA MILLIA ISLAMIA UNIVERSITY",
+   "ugcProgrammeCount": 13,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA",
+    "MBA"
+   ],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "christ-university-online",
+   "name": "Christ (Deemed to be University) Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #43"
+   ],
+   "ugcName": "CHRIST (DEEMED TO BE UNIVERSITY",
+   "ugcProgrammeCount": 7,
+   "entitled": [
+    "B.Com",
+    "BCA",
+    "MA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "BBA"
+   ],
+   "notOffered": [
+    "BCA",
+    "MA",
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "shobhit-university-online",
+   "name": "Shobhit Institute of Engineering & Technology (Shobhit Online",
+   "state": "Uttar Pradesh",
+   "listed": false,
+   "sources": [],
+   "ugcName": "",
+   "ugcProgrammeCount": 0,
+   "entitled": [],
+   "offered": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "bharati-vidyapeeth-university-online",
+   "name": "Bharati Vidyapeeth (Deemed to be University) Online",
+   "state": "Maharashtra",
+   "listed": true,
+   "sources": [
+    "main #55"
+   ],
+   "ugcName": "BHARATI VIDYAPEETH",
+   "ugcProgrammeCount": 4,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "assam-don-bosco-university-online",
+   "name": "Assam Don Bosco University Online",
+   "state": "Assam",
+   "listed": true,
+   "sources": [
+    "addendum #1"
+   ],
+   "ugcName": "ASSAM DON BOSCO UNIVERSITY",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "university-of-lucknow-online",
+   "name": "University of Lucknow Online",
+   "state": "Uttar Pradesh",
+   "listed": true,
+   "sources": [
+    "main #112"
+   ],
+   "ugcName": "UNIVERSITY OF LUCKNOW",
+   "ugcProgrammeCount": 9,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "M.Com",
+    "MA",
+    "MBA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "M.Com",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "MA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "jss-university-online",
+   "name": "JSS Academy of Higher Education & Research (JSS AHER) Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #35"
+   ],
+   "ugcName": "JSS ACADEMY OF EDUCATION AND RESEARCH",
+   "ugcProgrammeCount": 3,
+   "entitled": [
+    "BBA",
+    "MBA"
+   ],
+   "offered": [
+    "BBA",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "alliance-university-online",
+   "name": "Alliance University Online",
+   "state": "Karnataka",
+   "listed": true,
+   "sources": [
+    "main #45"
+   ],
+   "ugcName": "ALLIANCE UNIVERSITY",
+   "ugcProgrammeCount": 3,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "MBA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "desh-bhagat-university-online",
+   "name": "Desh Bhagat University Online",
+   "state": "Punjab",
+   "listed": true,
+   "sources": [
+    "main #69"
+   ],
+   "ugcName": "DESH BHAGAT UNIVERSITY",
+   "ugcProgrammeCount": 13,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "BA",
+    "M.Com",
+    "MA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "ganpat-university-online",
+   "name": "Ganpat University Online",
+   "state": "Gujarat",
+   "listed": true,
+   "sources": [
+    "addendum #2"
+   ],
+   "ugcName": "GANPAT UNIVERSITY",
+   "ugcProgrammeCount": 3,
+   "entitled": [
+    "BBA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "BBA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "amet-university-online",
+   "name": "AMET University (Academy of Maritime Education and Training) Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "addendum #13"
+   ],
+   "ugcName": "ACADEMY OF MARITIME EDUCATION AND TRAINING (DEEMED-TO- BE-UNIVERSITY",
+   "ugcProgrammeCount": 3,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "MBA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "guru-nanak-dev-university-online",
+   "name": "Guru Nanak Dev University Online",
+   "state": "Punjab",
+   "listed": true,
+   "sources": [
+    "main #67"
+   ],
+   "ugcName": "GURU NANAK DEV UNIVERSITY",
+   "ugcProgrammeCount": 11,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "M.Com",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "BA",
+    "BCA",
+    "MA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "jaypee-university-online",
+   "name": "Jaypee Institute of Information Technology Online",
+   "state": "Uttar Pradesh",
+   "listed": true,
+   "sources": [
+    "addendum #18"
+   ],
+   "ugcName": "JAYPEE INSTITUTE OF INFORMATION TECHNOLOGY",
+   "ugcProgrammeCount": 4,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "BBA",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "BCA",
+    "MCA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "savitribai-phule-pune-university-online",
+   "name": "Savitribai Phule Pune University (SPPU) Online",
+   "state": "Maharashtra",
+   "listed": true,
+   "sources": [
+    "main #60"
+   ],
+   "ugcName": "SAVITRIBAI PHULE PUNE UNIVERSITY",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "M.Com"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "srm-university-sikkim-online",
+   "name": "SRM University Sikkim Online",
+   "state": "Sikkim",
+   "listed": true,
+   "sources": [
+    "main #77"
+   ],
+   "ugcName": "SHRI RAMASAMY MEMORIAL UNIVERSITY",
+   "ugcProgrammeCount": 6,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "M.Com",
+    "MCA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "sathyabama-university-online",
+   "name": "Sathyabama Institute of Science and Technology (Centre Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "main #85"
+   ],
+   "ugcName": "SATHYABAMA INSTITUTE OF SCIENCE AND TECHNOLOGY",
+   "ugcProgrammeCount": 6,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "MA",
+    "MBA",
+    "MSc"
+   ],
+   "offered": [
+    "BBA",
+    "MBA",
+    "MSc"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "BA",
+    "MA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "vit-vellore-online",
+   "name": "Vellore Institute of Technology Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "main #92"
+   ],
+   "ugcName": "VELLORE INSTITUTE OF TECHNOLOGY",
+   "ugcProgrammeCount": 4,
+   "entitled": [
+    "B.Com",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "MSc"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "MBA",
+    "MCA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "anna-university-online",
+   "name": "Anna University Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "main #97"
+   ],
+   "ugcName": "ANNA UNIVERSITY",
+   "ugcProgrammeCount": 2,
+   "entitled": [
+    "MBA"
+   ],
+   "offered": [
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "MCA"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "vels-university-online",
+   "name": "Vels Institute of Science, Technology & Advanced Online",
+   "state": "Chennai",
+   "listed": true,
+   "sources": [
+    "main #98"
+   ],
+   "ugcName": "VEL'S INSTITUTE OF SCIENCE, TECHNOLOGY & ADVANCED STUDIES (VISTAS",
+   "ugcProgrammeCount": 4,
+   "entitled": [
+    "BBA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "BBA",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "MCA",
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "northcap-university-online",
+   "name": "The NorthCap University Online",
+   "state": "Haryana",
+   "listed": true,
+   "sources": [
+    "addendum #6"
+   ],
+   "ugcName": "THE NORTHCAP UNIVERSITY",
+   "ugcProgrammeCount": 2,
+   "entitled": [
+    "B.Com",
+    "BBA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "noida-international-university-online",
+   "name": "Noida International University Online",
+   "state": "Uttar Pradesh",
+   "listed": true,
+   "sources": [
+    "main #113"
+   ],
+   "ugcName": "NOIDA INTERNATIONAL UNIVERSITY",
+   "ugcProgrammeCount": 9,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "BBA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "iift-online",
+   "name": "Indian Institute of Foreign Trade (IIFT) Online",
+   "state": "Delhi",
+   "listed": true,
+   "sources": [
+    "main #15"
+   ],
+   "ugcName": "INDIAN INSTITUTE OF FOREIGN TRADE",
+   "ugcProgrammeCount": 1,
+   "entitled": [
+    "MBA"
+   ],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "gujarat-technological-university-online",
+   "name": "Gujarat Technological University (GTU) Online",
+   "state": "Online",
+   "listed": true,
+   "sources": [
+    "main #21"
+   ],
+   "ugcName": "GUJARAT TECHNOLOGICAL UNIVERSITY",
+   "ugcProgrammeCount": 1,
+   "entitled": [
+    "MBA"
+   ],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "bit-mesra-online",
+   "name": "Birla Institute of Technology (BIT) Mesra Online",
+   "state": "Jharkhand",
+   "listed": true,
+   "sources": [
+    "main #33"
+   ],
+   "ugcName": "BIRLA INSTITUTE OF TECHNOLOGY",
+   "ugcProgrammeCount": 2,
+   "entitled": [
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "MCA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "alvas-college-online",
+   "name": "Alva's College (Autonomous) - ACU Online",
+   "state": "Online",
+   "listed": false,
+   "sources": [],
+   "ugcName": "",
+   "ugcProgrammeCount": 0,
+   "entitled": [],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [
+    "MBA"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "datta-meghe-university-online",
+   "name": "Datta Meghe Institute of Higher Education & Research Online",
+   "state": "Maharashtra",
+   "listed": true,
+   "sources": [
+    "main #56"
+   ],
+   "ugcName": "DATTA MEGHE INSTITUTE OF HIGHER EDUCATION AND RESEARCH",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "BBA",
+    "BCA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "kiit-university-online",
+   "name": "KIIT Deemed to be University Online",
+   "state": "Odisha",
+   "listed": true,
+   "sources": [
+    "main #62"
+   ],
+   "ugcName": "KALINGA INSTITUTE OF INDUSTRIAL TECHNOLOGY",
+   "ugcProgrammeCount": 11,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "M.Com",
+    "MA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "centurion-university-online",
+   "name": "Centurion University of Technology and Management Online",
+   "state": "Odisha",
+   "listed": true,
+   "sources": [
+    "main #63"
+   ],
+   "ugcName": "CENTURION UNIVERSITY OF TECHNOLOGY AND MANAGEMENT",
+   "ugcProgrammeCount": 6,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "guru-kashi-university-online",
+   "name": "Guru Kashi University Online",
+   "state": "",
+   "listed": true,
+   "sources": [
+    "main #68"
+   ],
+   "ugcName": "GURU KASHI UNIVERSITY",
+   "ugcProgrammeCount": 13,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "jaipur-national-university-online",
+   "name": "Jaipur National University Online",
+   "state": "Rajasthan",
+   "listed": true,
+   "sources": [
+    "main #75"
+   ],
+   "ugcName": "JAIPUR NATIONAL UNIVERSITY",
+   "ugcProgrammeCount": 8,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "BBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "BCA",
+    "MA",
+    "MBA",
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "bs-abdur-rahman-university-online",
+   "name": "B.S. Abdur Rahman Crescent Institute of Science and Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "main #80"
+   ],
+   "ugcName": "B.S ABDUR RAHMAN INSTITUTE OF SCIENCE AND TECHNOLOGY",
+   "ugcProgrammeCount": 3,
+   "entitled": [
+    "BA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "BA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "srm-institute-science-technology-online",
+   "name": "SRM Institute of Science and Technology Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "main #86"
+   ],
+   "ugcName": "S.R.M. INSTITUTE OF SCIENCES AND TECHNOLOGY",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "university-of-madras-online",
+   "name": "University of Madras Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "main #87"
+   ],
+   "ugcName": "UNIVERSITY OF MADRAS",
+   "ugcProgrammeCount": 9,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA"
+   ],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [
+    "MBA"
+   ],
+   "notOffered": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "kalasalingam-university-online",
+   "name": "Kalasalingam Academy of Research and Education (KARE) Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "main #88"
+   ],
+   "ugcName": "KALASALINGAM ACADEMY OF RESEARCH AND HIGHER EDUCATION",
+   "ugcProgrammeCount": 7,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MA",
+    "MCA",
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "alagappa-university-online",
+   "name": "Alagappa University Online",
+   "state": "",
+   "listed": true,
+   "sources": [
+    "main #90"
+   ],
+   "ugcName": "ALAGAPPA UNIVERSITY",
+   "ugcProgrammeCount": 8,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA",
+    "MBA"
+   ],
+   "offered": [
+    "B.Com"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA",
+    "MBA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "bharathiar-university-online",
+   "name": "Bharathiar University Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "main #91"
+   ],
+   "ugcName": "BHARATHIAR UNIVERSITY",
+   "ugcProgrammeCount": 11,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "BBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "BA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "sri-ramachandra-university-online",
+   "name": "Sri Ramachandra Institute of Higher Education and Online",
+   "state": "Tamil Nadu",
+   "listed": true,
+   "sources": [
+    "main #99"
+   ],
+   "ugcName": "SRI RAMACHANDRA INSTITUTE OF HIGHER EDUCATION AND RESEARCH",
+   "ugcProgrammeCount": 2,
+   "entitled": [
+    "BSc",
+    "MSc"
+   ],
+   "offered": [
+    "BSc"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "icfai-university-online",
+   "name": "ICFAI Foundation for Higher Education Online",
+   "state": "Telangana",
+   "listed": true,
+   "sources": [
+    "main #100"
+   ],
+   "ugcName": "ICFAI FOUNDATION FOR HIGHER EDUCATION",
+   "ugcProgrammeCount": 2,
+   "entitled": [
+    "BBA",
+    "MBA"
+   ],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "BBA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "shiv-nadar-university-online",
+   "name": "Shiv Nadar University Online",
+   "state": "Uttar Pradesh",
+   "listed": false,
+   "sources": [],
+   "ugcName": "",
+   "ugcProgrammeCount": 0,
+   "entitled": [],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [
+    "MBA"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "gla-university-online",
+   "name": "GLA University Online",
+   "state": "Uttar Pradesh",
+   "listed": true,
+   "sources": [
+    "main #110"
+   ],
+   "ugcName": "G.L.A. UNIVERSITY",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "jagannath-university-online",
+   "name": "Jagan Nath University Online",
+   "state": "Rajasthan",
+   "listed": true,
+   "sources": [
+    "addendum #12"
+   ],
+   "ugcName": "JAGANNATH UNIVERSITY",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "MA",
+    "MBA"
+   ],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "MA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "teerthanker-mahaveer-university-online",
+   "name": "Teerthanker Mahaveer University Online",
+   "state": "Uttar Pradesh",
+   "listed": true,
+   "sources": [
+    "addendum #16"
+   ],
+   "ugcName": "TEERTHANKER MAHAVEER UNIVERSITY",
+   "ugcProgrammeCount": 6,
+   "entitled": [
+    "BA",
+    "BBA",
+    "BCA",
+    "MBA"
+   ],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "BA",
+    "BBA",
+    "BCA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "subharti-university-online",
+   "name": "Swami Vivekanand Subharti University Online",
+   "state": "Uttar Pradesh",
+   "listed": true,
+   "sources": [
+    "addendum #17"
+   ],
+   "ugcName": "SWAMI VIVEKANAND SUBHARTI UNIVERSITY",
+   "ugcProgrammeCount": 2,
+   "entitled": [
+    "MA",
+    "MBA"
+   ],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "MA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "arka-jain-university-online",
+   "name": "ARKA JAIN University – JGI Online (arkajain.edu.in) Online",
+   "state": "Jharkhand",
+   "listed": true,
+   "sources": [
+    "addendum #8"
+   ],
+   "ugcName": "ARKA JAIN UNIVERSITY",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MCA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "jawaharlal-nehru-university-online",
+   "name": "JAWAHARLAL NEHRU UNIVERSITY Online",
+   "state": "DELHI",
+   "listed": true,
+   "sources": [
+    "main #12"
+   ],
+   "ugcName": "JAWAHARLAL NEHRU UNIVERSITY",
+   "ugcProgrammeCount": 1,
+   "entitled": [
+    "MA"
+   ],
+   "offered": [
+    "MA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "jamia-hamdard-online",
+   "name": "JAMIA HAMDARD Online",
+   "state": "DELHI",
+   "listed": true,
+   "sources": [
+    "main #10"
+   ],
+   "ugcName": "JAMIA HAMDARD",
+   "ugcProgrammeCount": 7,
+   "entitled": [
+    "BA",
+    "BBA",
+    "BCA",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "B.Com"
+   ],
+   "notOffered": [
+    "BA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "kalinga-institute-industrial-technology-online",
+   "name": "KALINGA INSTITUTE OF INDUSTRIAL TECHNOLOGY Online",
+   "state": "ODISHA",
+   "listed": true,
+   "sources": [
+    "main #62"
+   ],
+   "ugcName": "KALINGA INSTITUTE OF INDUSTRIAL TECHNOLOGY",
+   "ugcProgrammeCount": 11,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "M.Com",
+    "MA"
+   ],
+   "unbacked": [
+    "BA"
+   ],
+   "notOffered": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "university-of-kerala-online",
+   "name": "UNIVERSITY OF KERALA Online",
+   "state": "KERALA",
+   "listed": true,
+   "sources": [
+    "main #49"
+   ],
+   "ugcName": "UNIVERSITY OF KERALA",
+   "ugcProgrammeCount": 4,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "M.Com",
+    "MBA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "M.Com",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "bits-pilani-work-integrated-online",
+   "name": "BITS Pilani Work Integrated Learning Programmes (WILP) Online",
+   "state": "GOA",
+   "listed": false,
+   "sources": [],
+   "ugcName": "",
+   "ugcProgrammeCount": 0,
+   "entitled": [],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [
+    "MBA"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "op-jindal-global-university-online",
+   "name": "O.P. Jindal Global University Online",
+   "state": "Haryana",
+   "listed": false,
+   "sources": [],
+   "ugcName": "",
+   "ugcProgrammeCount": 0,
+   "entitled": [],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [
+    "MBA"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "graphic-era-university-online",
+   "name": "GRAPHIC ERA UNIVERSITY Online",
+   "state": "UTTARAKHAND",
+   "listed": true,
+   "sources": [
+    "main #118"
+   ],
+   "ugcName": "GRAPHIC ERA",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "devi-ahilya-vishwavidyalaya-online",
+   "name": "DEVI AHILYA VISHWAVIDYALAYA Online",
+   "state": "MADHYA PRADESH",
+   "listed": true,
+   "sources": [
+    "main #50"
+   ],
+   "ugcName": "DEVI AHILYA VISHWAVIDYALAYA",
+   "ugcProgrammeCount": 3,
+   "entitled": [
+    "MA",
+    "MBA"
+   ],
+   "offered": [
+    "MA",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "madurai-kamaraj-university-online",
+   "name": "MADURAI KAMARAJ UNIVERSITY Online",
+   "state": "TAMIL NADU",
+   "listed": true,
+   "sources": [
+    "main #82"
+   ],
+   "ugcName": "MADURAI KAMARAJ UNIVERSITY",
+   "ugcProgrammeCount": 9,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "notOffered": [
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "shanmugha-arts-science-technology-research-online",
+   "name": "SHANMUGHA ARTS, SCIENCE, TECHNOLOGY & RESEARCH ACADEMY Online",
+   "state": "TAMIL NADU",
+   "listed": true,
+   "sources": [
+    "main #84"
+   ],
+   "ugcName": "SHANMUGHA ARTS, SCIENCE, TECHNOLOGY & RESEARCH ACADEMY",
+   "ugcProgrammeCount": 10,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "university-of-mumbai-online",
+   "name": "UNIVERSITY OF MUMBAI Online",
+   "state": "MAHARASHTRA",
+   "listed": true,
+   "sources": [
+    "main #57"
+   ],
+   "ugcName": "UNIVERSITY OF MUMBAI",
+   "ugcProgrammeCount": 1,
+   "entitled": [
+    "MA"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "university-of-jammu-online",
+   "name": "UNIVERSITY OF JAMMU Online",
+   "state": "JAMMU & KASHMIR",
+   "listed": true,
+   "sources": [
+    "main #32"
+   ],
+   "ugcName": "UNIVERSITY OF JAMMU",
+   "ugcProgrammeCount": 2,
+   "entitled": [
+    "M.Com",
+    "MA"
+   ],
+   "offered": [
+    "M.Com",
+    "MA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "shivaji-university-online",
+   "name": "SHIVAJI UNIVERSITY Online",
+   "state": "MAHARASHTRA",
+   "listed": true,
+   "sources": [
+    "main #59"
+   ],
+   "ugcName": "SHIVAJI UNIVERSITY",
+   "ugcProgrammeCount": 3,
+   "entitled": [
+    "M.Com",
+    "MBA",
+    "MSc"
+   ],
+   "offered": [
+    "M.Com",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "banasthali-vidyapith-online",
+   "name": "BANASTHALI VIDYAPITH Online",
+   "state": "RAJASTHAN",
+   "listed": true,
+   "sources": [
+    "main #72"
+   ],
+   "ugcName": "BANASTHALI VIDYAPITH",
+   "ugcProgrammeCount": 11,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "M.Com",
+    "MA",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "guru-gobind-singh-indraprastha-university-online",
+   "name": "GURU GOBIND SINGH INDRAPRASTHA VISHWAVIDYALAYA Online",
+   "state": "DELHI",
+   "listed": true,
+   "sources": [
+    "main #14"
+   ],
+   "ugcName": "GURU GOBIND SINGH INDRAPRASTHA VISHWAVIDYALAYA",
+   "ugcProgrammeCount": 4,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "MA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "MA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "MCA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "bangalore-university-online",
+   "name": "BANGALORE UNIVERSITY Online",
+   "state": "KARNATAKA",
+   "listed": true,
+   "sources": [
+    "main #37"
+   ],
+   "ugcName": "BANGALORE UNIVERSITY",
+   "ugcProgrammeCount": 10,
+   "entitled": [
+    "B.Com",
+    "M.Com",
+    "MA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "M.Com",
+    "MA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "iiit-bangalore-online",
+   "name": "INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY Online",
+   "state": "TELANGANA",
+   "listed": true,
+   "sources": [
+    "main #101"
+   ],
+   "ugcName": "INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY",
+   "ugcProgrammeCount": 1,
+   "entitled": [
+    "MSc"
+   ],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [
+    "MBA"
+   ],
+   "notOffered": [
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "dayalbagh-educational-institute-online",
+   "name": "DAYAL BAGH EDUCATIONAL INSTITUTE Online",
+   "state": "UTTAR PRADESH",
+   "listed": true,
+   "sources": [
+    "main #111"
+   ],
+   "ugcName": "DAYAL BAGH EDUCATIONAL INSTITUTE",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "adichunchanagiri-university-online",
+   "name": "ADICHUNCHANAGIRI UNIVERSITY Online",
+   "state": "KARNATAKA",
+   "listed": true,
+   "sources": [
+    "main #46"
+   ],
+   "ugcName": "ADICHUNCHANAGI RI UNIVERSITY",
+   "ugcProgrammeCount": 1,
+   "entitled": [
+    "MBA"
+   ],
+   "offered": [
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "bharath-university-online",
+   "name": "BHARATH INSTITUTE OF HIGHER EDUCATION AND RESEARCH Online",
+   "state": "TAMIL NADU",
+   "listed": true,
+   "sources": [
+    "main #79"
+   ],
+   "ugcName": "BHARATH INSTITUTE OF HIGHER EDUCATION AND RESEARCH",
+   "ugcProgrammeCount": 3,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "M.Com"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "M.Com"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "chhatrapati-shahu-ji-maharaj-university-online",
+   "name": "CHATRAPATI SHAHUJI MAHARAJ UNIVERSITY Online",
+   "state": "UTTAR PRADESH",
+   "listed": true,
+   "sources": [
+    "main #114"
+   ],
+   "ugcName": "CHATRAPATI SHAHUJI MAHARAJ UNIVERSITY",
+   "ugcProgrammeCount": 6,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "deen-dayal-upadhyay-gorakhpur-university-online",
+   "name": "DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY Online",
+   "state": "UTTAR PRADESH",
+   "listed": true,
+   "sources": [
+    "main #117"
+   ],
+   "ugcName": "DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY",
+   "ugcProgrammeCount": 11,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BBA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MSc"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "BA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "guru-jambheshwar-university-online",
+   "name": "GURU JAMBHESHWAR UNIVERSITY OF SCIENCE AND TECHNOLOGY Online",
+   "state": "HARYANA",
+   "listed": true,
+   "sources": [
+    "main #24"
+   ],
+   "ugcName": "GURU JAMBHESHWAR UNIVERSITY OF SCIENCE AND TECHNOLOGY",
+   "ugcProgrammeCount": 8,
+   "entitled": [
+    "B.Com",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "B.Com",
+    "M.Com",
+    "MA",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "MCA",
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "maharshi-dayanand-university-online",
+   "name": "MAHARSHI DAYANAND UNIVERSITY Online",
+   "state": "HARYANA",
+   "listed": true,
+   "sources": [
+    "main #26"
+   ],
+   "ugcName": "MAHARSHI DAYANAND UNIVERSITY",
+   "ugcProgrammeCount": 8,
+   "entitled": [
+    "BA",
+    "M.Com",
+    "MA",
+    "MSc"
+   ],
+   "offered": [
+    "BA",
+    "M.Com",
+    "MA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "mahatma-jyotiba-phule-rohilkhand-university-online",
+   "name": "MAHATMA JYOTIBA PHULE ROHILKHAND UNIVERSITY Online",
+   "state": "UTTAR PRADESH",
+   "listed": true,
+   "sources": [
+    "main #116"
+   ],
+   "ugcName": "MAHATMA JYOTIBA PHULE ROHILKHAND UNIVERSITY",
+   "ugcProgrammeCount": 8,
+   "entitled": [
+    "BA",
+    "M.Com",
+    "MA",
+    "MSc"
+   ],
+   "offered": [
+    "BA",
+    "M.Com",
+    "MA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "mats-university-online",
+   "name": "MATS UNIVERSITY Online",
+   "state": "CHHATTISGARH",
+   "listed": true,
+   "sources": [
+    "main #8"
+   ],
+   "ugcName": "MATS UNIVERSITY",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "meenakshi-academy-higher-education-online",
+   "name": "MEENAKSHI ACADEMY OF HIGHER EDUCATION AND RESEARCH Online",
+   "state": "TAMIL NADU",
+   "listed": true,
+   "sources": [
+    "main #96"
+   ],
+   "ugcName": "MEENAKSHI ACADEMY OF HIGHER EDUCATION AND RESEARCH",
+   "ugcProgrammeCount": 3,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "MA"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "MA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "mody-university-online",
+   "name": "MODY UNIVERSITY OF SCIENCE AND TECHNOLOGY Online",
+   "state": "RAJASTHAN",
+   "listed": true,
+   "sources": [
+    "main #73"
+   ],
+   "ugcName": "MODY UNIVERSITY OF SCIENCE AND TECHNOLOGY",
+   "ugcProgrammeCount": 7,
+   "entitled": [
+    "B.Com",
+    "BA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "sage-university-online",
+   "name": "SAGE UNIVERSITY Online",
+   "state": "MADHYA PRADESH",
+   "listed": true,
+   "sources": [
+    "main #51"
+   ],
+   "ugcName": "SAGE UNIVERSITY",
+   "ugcProgrammeCount": 11,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA",
+    "MSc"
+   ],
+   "offered": [
+    "BBA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "MCA",
+    "MSc"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "shree-guru-gobind-singh-tricentenary-university-online",
+   "name": "SHREE GURU GOBIND SINGH TRICENTENARY UNIVERSITY Online",
+   "state": "HARYANA",
+   "listed": true,
+   "sources": [
+    "main #29"
+   ],
+   "ugcName": "SHREE GURU GOBIND SINGH TRICENTENARY UNIVERSITY",
+   "ugcProgrammeCount": 5,
+   "entitled": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "B.Com",
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "assam-down-town-university-online",
+   "name": "Assam Down Town University Online",
+   "state": "Assam",
+   "listed": true,
+   "sources": [
+    "main #6"
+   ],
+   "ugcName": "ASSAM DOWN TOWN UNIVERSITY",
+   "ugcProgrammeCount": 4,
+   "entitled": [
+    "BBA",
+    "BCA",
+    "MBA",
+    "MCA"
+   ],
+   "offered": [
+    "MCA"
+   ],
+   "unbacked": [],
+   "notOffered": [
+    "BBA",
+    "BCA",
+    "MBA"
+   ],
+   "siteClaimsUgcDeb": true
+  },
+  {
+   "id": "ignou-online",
+   "name": "Indira Gandhi National Open University (IGNOU) Online",
+   "state": "Delhi",
+   "listed": false,
+   "sources": [],
+   "ugcName": "",
+   "ugcProgrammeCount": 0,
+   "entitled": [],
+   "offered": [
+    "B.Com",
+    "BA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "unbacked": [
+    "B.Com",
+    "BA",
+    "BCA",
+    "M.Com",
+    "MA",
+    "MBA",
+    "MCA"
+   ],
+   "notOffered": [],
+   "siteClaimsUgcDeb": true
+  }
+ ]
+}

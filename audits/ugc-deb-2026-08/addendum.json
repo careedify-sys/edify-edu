@@ -1,0 +1,373 @@
+[
+ {
+  "sno": "1",
+  "state": "ASSAM",
+  "type": "PRIVATE UNIVERSITY",
+  "hei": "ASSAM DON BOSCO UNIVERSITY",
+  "blocks": [
+   {
+    "period": "2025-26, academic session beginning from July-August 2025 to 2029-30 (upto January, 2030 only)",
+    "count": 2,
+    "progCount": 2,
+    "programmes": [
+     "MASTER OF BUSINESS ADMINISTRATION",
+     "MASTER OF COMPUTER APPLICATIONS"
+    ]
+   },
+   {
+    "period": "2025-26, academic session beginning February, 2026 to 2030-31 (upto July-August, 2030 only)",
+    "count": 3,
+    "progCount": 3,
+    "programmes": [
+     "BACHELOR OF BUSINESS ADMINISTRATION (GENERAL)",
+     "BACHELOR OF COMPUTER APPLICATIONS (GENERAL)",
+     "MASTER OF ARTS (PUBLIC ADMINISTRATION)"
+    ]
+   }
+  ]
+ },
+ {
+  "sno": "2",
+  "state": "GUJARAT",
+  "type": "PRIVATE UNIVERSITY",
+  "hei": "GANPAT UNIVERSITY",
+  "blocks": [
+   {
+    "period": "2025-26, academic session beginning from July-August 2025 to 2029-30 (upto January-February, 2030 only)",
+    "count": 3,
+    "progCount": 3,
+    "programmes": [
+     "BACHELOR OF BUSINESS ADMINISTRATION (GENERAL)",
+     "MASTER OF BUSINESS ADMINISTRATION (GENERAL)",
+     "MASTER OF COMPUTER APPLICATIONS"
+    ]
+   }
+  ]
+ },
+ {
+  "sno": "3",
+  "state": "GUJARAT",
+  "type": "PRIVATE UNIVERSITY",
+  "hei": "SILVER OAK UNIVERSITY",
+  "blocks": [
+   {
+    "period": "2025-26, academic session beginning February, 2026 to 2030-31 (upto July-August, 2030 only)",
+    "count": 6,
+    "progCount": 6,
+    "programmes": [
+     "BACHELOR OF BUSINESS ADMINISTRATION (GENERAL)",
+     "BACHELOR OF COMPUTER APPLICATIONS (GENERAL)",
+     "MASTER OF COMPUTER APPLICATIONS (GENERAL)",
+     "MASTER OF BUSINESS ADMINISTRATION (GENERAL)",
+     "MASTER OF COMMERCE (GENERAL)",
+     "MASTER OF ARTS (ENGLISH LITERATURE)"
+    ]
+   }
+  ]
+ },
+ {
+  "sno": "4",
+  "state": "HARYANA",
+  "type": "PRIVATE UNIVERSITY",
+  "hei": "BML MUNJAL UNIVERSITY, HARYANA",
+  "blocks": [
+   {
+    "period": "2025-26, academic session beginning February, 2026 to 2030-31 (upto July-August, 2030 only)",
+    "count": 1,
+    "progCount": 1,
+    "programmes": [
+     "MASTER OF BUSINESS ADMINISTRATION"
+    ]
+   }
+  ]
+ },
+ {
+  "sno": "6",
+  "state": "HARYANA",
+  "type": "PRIVATE UNIVERSITY",
+  "hei": "THE NORTHCAP UNIVERSITY",
+  "blocks": [
+   {
+    "period": "2023-24, academic session beginning July-August, 2023 to 2027-28 (up to January, 2028 only)",
+    "count": 2,
+    "progCount": 2,
+    "programmes": [
+     "BACHELOR OF COMMERCE",
+     "BACHELOR OF BUSINESS ADMINISTRATION"
+    ]
+   }
+  ]
+ },
+ {
+  "sno": "7",
+  "state": "HARYANA",
+  "type": "",
+  "hei": "MANAV RACHNA INTERNATIONA L INSTITUTE OF RESEARCH & STUDIES",
+  "blocks": [
+   {
+    "period": "academic year 2026-27, academic session beginning July-August, 2026 to 2030-31 (upto January- February, 2031 only)",
+    "count": 1,
+    "progCount": 1,
+    "programmes": [
+     "BACHELOR OF ARTS (HONS.) (ECONOMICS) - 4 years duration"
+    ]
+   }
+  ]
+ },
+ {
+  "sno": "8",
+  "state": "JHARKHAND",
+  "type": "PRIVATE UNIVERSITY",
+  "hei": "ARKA JAIN UNIVERSITY",
+  "blocks": [
+   {
+    "period": "2024-25, academic session beginning from February, 2025 to 2029-30 (upto July-August, 2029 only)",
+    "count": 2,
+    "progCount": 2,
+    "programmes": [
+     "BACHELOR OF BUSINESS ADMINISTRATION",
+     "MASTER OF BUSINESS ADMINISTRATION (GENERAL)"
+    ]
+   },
+   {
+    "period": "2025-26, academic session beginning from July-August, 2025 to 2029-30 (upto January, 2030 only)",
+    "count": 3,
+    "progCount": 3,
+    "programmes": [
+     "BACHELOR OF COMPUTER APPLICATIONS",
+     "MASTER OF COMPUTER APPLICATIONS",
+     "BACHELOR OF COMMERCE (GENERAL)"
+    ]
+   }
+  ]
+ },
+ {
+  "sno": "9",
+  "state": "KARNATAKA",
+  "type": "PRIVATE UNIVERSITY",
+  "hei": "SRINIVAS UNIVERSITY",
+  "blocks": [
+   {
+    "period": "2026 -27 academic session beginning from August, 2026 to 2030- 31 (upto January- February, 2031 only)",
+    "count": 5,
+    "progCount": 5,
+    "programmes": [
+     "Bachelor of Computer Applications - 4 years",
+     "Bachelor of Business Administration (Hons.) - 4 years",
+     "Bachelor of Commerce (Hons.) - 4 years",
+     "Master of Computer Applications",
+     "Master of Business Administration"
+    ]
+   }
+  ]
+ },
+ {
+  "sno": "10",
+  "state": "MAHARASHTRA",
+  "type": "PRIVATE UNIVERSITY",
+  "hei": "SANDIP UNIVERSITY",
+  "blocks": [
+   {
+    "period": "2025-26, academic session beginning February, 2026 to 2030-31 (upto July-August, 2030 only)",
+    "count": 2,
+    "progCount": 2,
+    "programmes": [
+     "BACHELOR OF BUSINESS ADMINISTRATION (GENERAL)",
+     "MASTER OF BUSINESS ADMINISTRATION (MARKETING)"
+    ]
+   }
+  ]
+ },
+ {
+  "sno": "11",
+  "state": "MAHARASHTRA",
+  "type": "PRIVATE UNIVERSITY",
+  "hei": "AJEENKYA D.Y. PATIL UNIVERSITY",
+  "blocks": [
+   {
+    "period": "2026 -27 academic session beginning from August, 2026 to 2030- 31 (upto January- February, 2031 only)",
+    "count": 4,
+    "progCount": 4,
+    "programmes": [
+     "Bachelor of Computer Applications",
+     "Bachelor of Business Administration",
+     "Master of Business Administration",
+     "Master of Computer Applications"
+    ]
+   }
+  ]
+ },
+ {
+  "sno": "12",
+  "state": "MAHARASHTRA",
+  "type": "PRIVATE UNIVERSITY",
+  "hei": "ATLAS SKILLTECH UNIVERSITY",
+  "blocks": [
+   {
+    "period": "2026 -27 academic session beginning from August, 2026 to 2030- 31 (upto January- February, 2031 only)",
+    "count": 2,
+    "progCount": 2,
+    "programmes": [
+     "Bachelor of Business Administration",
+     "Master of Business Administration"
+    ]
+   }
+  ]
+ },
+ {
+  "sno": "12",
+  "state": "RAJASTHAN",
+  "type": "PRIVATE UNIVERSITY",
+  "hei": "JAGANNATH UNIVERSITY",
+  "blocks": [
+   {
+    "period": "2023-24, academic session beginning from January-February, 2024 to 2028-29 (upto July, 2028 only)",
+    "count": 1,
+    "progCount": 1,
+    "programmes": [
+     "BACHELOR OF BUSINESS ADMINISTRATION"
+    ]
+   },
+   {
+    "period": "2024-25, academic session beginning from October, 2024 (revised from July-August, 2024 to 2028-29 (up to",
+    "count": 4,
+    "progCount": 4,
+    "programmes": [
+     "BACHELOR OF COMMERCE",
+     "BACHELOR OF ARTS (JOURNALISM AND MASS COMMUNICATION)",
+     "MASTER OF ARTS (JOURNALISM AND MASS COMMUNICATION) January, 2029 Only)",
+     "MASTER OF BUSINESS ADMINISTRATION (GENERAL)"
+    ]
+   }
+  ]
+ },
+ {
+  "sno": "13",
+  "state": "TAMIL NADU",
+  "type": "",
+  "hei": "ACADEMY OF MARITIME EDUCATION AND TRAINING (DEEMED-TO- BE-UNIVERSITY",
+  "blocks": [
+   {
+    "period": "Academic year 2023-24, academic session beginning from February, 2024 to 2028-29 (upto July, 2028 only)",
+    "count": 1,
+    "progCount": 1,
+    "programmes": [
+     "BACHELOR OF COMMERCE"
+    ]
+   },
+   {
+    "period": "Academic year 2026-27, academic session beginning August, 2026 and January- February, 2027 only.",
+    "count": 2,
+    "progCount": 2,
+    "programmes": [
+     "BACHELOR OF BUSINESS ADMINISTRATION",
+     "MASTER OF BUSINESS ADMINISTRATION (SHIPPING LOGISTICS MANAGEMENT)"
+    ]
+   }
+  ]
+ },
+ {
+  "sno": "14",
+  "state": "TELANGANA",
+  "type": "",
+  "hei": "DR. B.R. AMBEDKAR OPEN UNIVERSITY",
+  "blocks": [
+   {
+    "period": "2026 -27 academic session beginning from August, 2026 to 2030- 31 (upto January- February, 2031 only)",
+    "count": 4,
+    "progCount": 4,
+    "programmes": [
+     "Master of Arts - Telugu",
+     "Bachelor of Commerce - Commerce",
+     "Bachelor of Commerce - BCom Telugu Medium",
+     "Master of Commerce - Commerce"
+    ]
+   }
+  ]
+ },
+ {
+  "sno": "15",
+  "state": "UTTAR PRADESH",
+  "type": "PRIVATE UNIVERSITY",
+  "hei": "AMITY UNIVERSITY",
+  "blocks": [
+   {
+    "period": "2022-23, academic session beginning September, 2022 (revised from July-August, 2022) and onwards to 2026-27 (upto January, 2027 only)",
+    "count": 6,
+    "progCount": 6,
+    "programmes": [
+     "BACHELOR OF SOCIAL WORK",
+     "BACHELOR OF COMMERCE (GENERAL)",
+     "BACHELOR OF ARTS (JOURNALISM AND MASS COMMUNICATION",
+     "MASTER OF ARTS PUBLIC POLICY & GOVERNANCE",
+     "MASTER OF SOCIAL WORK",
+     "MASTER OF ARTS (ENGLISH)"
+    ]
+   }
+  ]
+ },
+ {
+  "sno": "16",
+  "state": "UTTAR PRADESH",
+  "type": "PRIVATE UNIVERSITY",
+  "hei": "TEERTHANKER MAHAVEER UNIVERSITY",
+  "blocks": [
+   {
+    "period": "2024-25, academic session beginning from February, 2025 to 2029-30 (upto July-August, 2029 only)",
+    "count": 5,
+    "progCount": 5,
+    "programmes": [
+     "BACHELOR OF ARTS (HONS) (JAIN STUDIES)",
+     "BACHELOR OF ARTS (HONS) (SOCIOLOGY)",
+     "BACHELOR OF ARTS (HONS) (POLITICAL SCIENCE)",
+     "BACHELOR OF BUSINESS ADMINISTRATION",
+     "MASTER OF BUSINESS ADMINISTRATION"
+    ]
+   },
+   {
+    "period": "2025-26, academic session beginning February, 2026 to 2030-31 (upto July-August, 2030 only)",
+    "count": 1,
+    "progCount": 1,
+    "programmes": [
+     "BACHELOR OF COMPUTER APPLICATIONS (COMPUTER APPLICATIONS)"
+    ]
+   }
+  ]
+ },
+ {
+  "sno": "17",
+  "state": "UTTAR PRADESH",
+  "type": "PRIVATE UNIVERSITY",
+  "hei": "SWAMI VIVEKANAND SUBHARTI UNIVERSITY",
+  "blocks": [
+   {
+    "period": "2025-26, academic session beginning from July-August 2025 to 2029-30 (upto January- February 2030 only)",
+    "count": 2,
+    "progCount": 2,
+    "programmes": [
+     "MASTER OF ARTS (BUDDHIST STUDIES)",
+     "MASTER OF BUSINESS ADMINISTRATION - (GENERAL)"
+    ]
+   }
+  ]
+ },
+ {
+  "sno": "18",
+  "state": "UTTAR PRADESH",
+  "type": "DEEMED TO BE UNIVERSITY",
+  "hei": "JAYPEE INSTITUTE OF INFORMATION TECHNOLOGY",
+  "blocks": [
+   {
+    "period": "2026 -27 academic session beginning from August, 2026 to February, 2027 only",
+    "count": 4,
+    "progCount": 4,
+    "programmes": [
+     "BACHELOR OF BUSINESS ADMINISTRATION",
+     "BACHELOR OF COMPUTER APPLICATIONS",
+     "MASTER OF BUSINESS ADMINISTRATION",
+     "MASTER OF COMPUTER APPLICATIONS"
+    ]
+   }
+  ]
+ }
+]
