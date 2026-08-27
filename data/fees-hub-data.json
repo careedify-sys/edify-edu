@@ -2694,5 +2694,26 @@
       "MA"
     ],
     "region": "West"
+  },
+  {
+    "id": "srinivas-university-online",
+    "name": "Srinivas University Online",
+    "abbr": "SRINIVAS",
+    "naac": "",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 0,
+    "feeMax": 0,
+    "emiFrom": 0,
+    "feeStr": "Not published",
+    "emiStr": "Not published",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA",
+      "B.Com"
+    ],
+    "region": "South"
   }
 ]

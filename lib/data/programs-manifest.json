@@ -14116,5 +14116,35 @@
     "program": "ma",
     "spec_slug": "english-literature",
     "spec_name": "English Literature"
+  },
+  {
+    "university_slug": "srinivas-university-online",
+    "program": "mba",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "srinivas-university-online",
+    "program": "mca",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "srinivas-university-online",
+    "program": "bba",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "srinivas-university-online",
+    "program": "bca",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "srinivas-university-online",
+    "program": "bcom",
+    "spec_slug": "general",
+    "spec_name": "General"
   }
 ]
