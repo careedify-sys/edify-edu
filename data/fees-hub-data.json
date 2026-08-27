@@ -2593,5 +2593,26 @@
       "MA"
     ],
     "region": "South"
+  },
+  {
+    "id": "swami-rama-himalayan-university-online",
+    "name": "Swami Rama Himalayan University Online",
+    "abbr": "SRHU",
+    "naac": "",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 0,
+    "feeMax": 0,
+    "emiFrom": 0,
+    "feeStr": "Not published",
+    "emiStr": "Not published",
+    "programs": [
+      "MBA",
+      "MCA",
+      "BBA",
+      "BCA",
+      "B.Com"
+    ],
+    "region": "North"
   }
 ]
