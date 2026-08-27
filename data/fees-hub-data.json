@@ -2614,5 +2614,24 @@
       "B.Com"
     ],
     "region": "North"
+  },
+  {
+    "id": "central-university-tamil-nadu-online",
+    "name": "Central University of Tamil Nadu Online",
+    "abbr": "CUTN",
+    "naac": "",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 0,
+    "feeMax": 0,
+    "emiFrom": 0,
+    "feeStr": "Not published",
+    "emiStr": "Not published",
+    "programs": [
+      "MBA",
+      "M.Com",
+      "MA"
+    ],
+    "region": "South"
   }
 ]

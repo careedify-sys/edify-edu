@@ -14008,5 +14008,29 @@
     "program": "bcom",
     "spec_slug": "general",
     "spec_name": "General"
+  },
+  {
+    "university_slug": "central-university-tamil-nadu-online",
+    "program": "mba",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "central-university-tamil-nadu-online",
+    "program": "mcom",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "central-university-tamil-nadu-online",
+    "program": "ma",
+    "spec_slug": "hindi",
+    "spec_name": "Hindi"
+  },
+  {
+    "university_slug": "central-university-tamil-nadu-online",
+    "program": "ma",
+    "spec_slug": "english",
+    "spec_name": "English"
   }
 ]
