@@ -2653,5 +2653,24 @@
       "BCA"
     ],
     "region": "West"
+  },
+  {
+    "id": "dr-br-ambedkar-open-university-online",
+    "name": "Dr. B.R. Ambedkar Open University Online",
+    "abbr": "BRAOU",
+    "naac": "",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 0,
+    "feeMax": 0,
+    "emiFrom": 0,
+    "feeStr": "Not published",
+    "emiStr": "Not published",
+    "programs": [
+      "M.Com",
+      "MA",
+      "B.Com"
+    ],
+    "region": "South"
   }
 ]

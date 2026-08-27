@@ -14056,5 +14056,29 @@
     "program": "bca",
     "spec_slug": "general",
     "spec_name": "General"
+  },
+  {
+    "university_slug": "dr-br-ambedkar-open-university-online",
+    "program": "mcom",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "dr-br-ambedkar-open-university-online",
+    "program": "ma",
+    "spec_slug": "telugu",
+    "spec_name": "Telugu"
+  },
+  {
+    "university_slug": "dr-br-ambedkar-open-university-online",
+    "program": "bcom",
+    "spec_slug": "general",
+    "spec_name": "General"
+  },
+  {
+    "university_slug": "dr-br-ambedkar-open-university-online",
+    "program": "bcom",
+    "spec_slug": "telugu-medium",
+    "spec_name": "Telugu Medium"
   }
 ]

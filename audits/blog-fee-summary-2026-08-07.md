@@ -8,11 +8,11 @@ Total figures: **9447**
 
 | Class | Count |
 |---|---:|
-| MATCH | 1053 |
+| MATCH | 1059 |
 | MISMATCH | 762 |
-| SUPPRESSED | 8 |
-| ORPHAN | 42 |
-| UNRESOLVED | 1857 |
+| SUPPRESSED | 9 |
+| ORPHAN | 44 |
+| UNRESOLVED | 1848 |
 | NON_FEE | 5725 |
 
 ## By class × confidence
@@ -21,19 +21,19 @@ Total figures: **9447**
 |---|---:|
 | MATCH/high | 624 |
 | MATCH/low | 92 |
-| MATCH/medium | 337 |
+| MATCH/medium | 343 |
 | MISMATCH/high | 337 |
-| MISMATCH/low | 144 |
-| MISMATCH/medium | 281 |
+| MISMATCH/low | 142 |
+| MISMATCH/medium | 283 |
 | NON_FEE/- | 5725 |
-| ORPHAN/high | 32 |
+| ORPHAN/high | 34 |
 | ORPHAN/low | 2 |
 | ORPHAN/medium | 8 |
-| SUPPRESSED/high | 5 |
-| SUPPRESSED/medium | 3 |
+| SUPPRESSED/high | 7 |
+| SUPPRESSED/medium | 2 |
 | UNRESOLVED/high | 16 |
-| UNRESOLVED/low | 1837 |
-| UNRESOLVED/medium | 4 |
+| UNRESOLVED/low | 1827 |
+| UNRESOLVED/medium | 5 |
 
 ## Top 30 slugs by figure count
 
@@ -68,6 +68,6 @@ Total figures: **9447**
 | mba-after-bsc-is-it-good-2026 | 78 | 3 | 2 | 0 | 3 | 11 | 59 |
 | data-science-salary-india-2026-scope-jobs | 77 | 0 | 0 | 0 | 0 | 2 | 75 |
 | nmims-online-bba-review-2026 | 77 | 0 | 11 | 0 | 2 | 5 | 59 |
-| online-bcom-fees-india-2026-compared | 75 | 31 | 3 | 0 | 3 | 36 | 2 |
+| online-bcom-fees-india-2026-compared | 75 | 31 | 3 | 0 | 0 | 39 | 2 |
 
 CSV: audits/blog-fee-crossref-2026-08-07.csv
