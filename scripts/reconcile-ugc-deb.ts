@@ -56,7 +56,7 @@ const MAP: Record<string, string | string[] | null> = {
   'alliance-university-online': 'main:44',
   'alvas-college-online': null,
   'amet-university-online': 'add:12',
-  'amity-university-online': ['main:105', 'add:14'],
+  'amity-university-online': ['main:105', 'main:75', 'add:14'], // Noida absorbed the Rajasthan programmes
   'amrita-vishwa-vidyapeetham-online': 'main:90',
   'andhra-university-online': 'main:0',
   'anna-university-online': 'main:98',
@@ -180,6 +180,33 @@ const MAP: Record<string, string | string[] | null> = {
   'yenepoya-university-online': 'main:39',
 }
 
+// --------------------------------------------------- exemption from DEB
+// Some HEIs may deliver online degrees without a DEB entitlement at all, so
+// their absence from a recognition list is expected and is not a finding.
+// Labelling them "UGC DEB" states the wrong basis for their recognition.
+const EXEMPT: Record<string, { basis: string; label: string }> = {
+  'ignou-online': {
+    basis: 'IGNOU Act 1985 confers its own ODL and online authority.',
+    label: 'Central Open University (IGNOU Act 1985)',
+  },
+  'bits-pilani-work-integrated-online': {
+    basis: 'Institution of Eminence. IoEs may launch online programmes without prior DEB approval.',
+    label: 'Institution of Eminence (MoE)',
+  },
+  'op-jindal-global-university-online': {
+    basis: 'Institution of Eminence. IoEs may launch online programmes without prior DEB approval.',
+    label: 'Institution of Eminence (MoE)',
+  },
+  'shiv-nadar-university-online': {
+    basis: 'Institution of Eminence. IoEs may launch online programmes without prior DEB approval.',
+    label: 'Institution of Eminence (MoE)',
+  },
+}
+
+// Not a university. DEB entitlement is granted to HEIs, so an autonomous
+// college can never appear on these lists in its own right.
+const NOT_AN_HEI = new Set(['alvas-college-online'])
+
 // ------------------------------------------------- UGC programme -> site code
 const PROGRAM_RULES: [RegExp, string][] = [
   [/^MASTER OF BUSINESS ADMINISTRATION/i, 'MBA'],
@@ -226,6 +253,10 @@ const rows = UNIVERSITIES.map(u => {
     unbacked: unbacked.sort(),
     notOffered: notOffered.sort(),
     siteClaimsUgcDeb: u.ugc === true || u.approvals.some(a => /UGC[\s-]?DEB/i.test(a)),
+    debLabelInApprovals: u.approvals.some(a => /UGC[\s-]?DEB/i.test(a)),
+    status: hits.length ? 'LISTED' : EXEMPT[u.id] ? 'EXEMPT' : NOT_AN_HEI.has(u.id) ? 'NOT_AN_HEI' : 'NOT_LISTED',
+    exemptBasis: EXEMPT[u.id]?.basis ?? null,
+    correctLabel: EXEMPT[u.id]?.label ?? null,
   }
 })
 
@@ -244,7 +275,10 @@ const report = {
   ugcRows: ugc.length,
   siteUniversities: rows.length,
   listed: rows.filter(r => r.listed).length,
-  notListed: rows.filter(r => !r.listed),
+  notListed: rows.filter(r => r.status === 'NOT_LISTED'),
+  exempt: rows.filter(r => r.status === 'EXEMPT'),
+  mislabelledExempt: rows.filter(r => r.status === 'EXEMPT' && r.debLabelInApprovals),
+  notAnHei: rows.filter(r => r.status === 'NOT_AN_HEI'),
   withUnbackedProgrammes: rows.filter(r => r.listed && r.unbacked.length),
   duplicateSiteRecords: [...dupes.entries()].filter(([, v]) => v.length > 1).map(([k, v]) => ({ ugcRow: k, siteIds: v })),
   onListNotOnSite: notOnSite.map(r => ({ src: r.src, sno: r.sno, state: r.state, type: r.type, hei: r.hei, programmes: r.programmes })),
@@ -256,8 +290,8 @@ fs.writeFileSync(path.join(DIR, 'reconciliation.json'), JSON.stringify(report, n
 const csvEsc = (s: any) => '"' + String(s ?? '').replace(/"/g, '""') + '"'
 fs.writeFileSync(
   path.join(DIR, 'university-status.csv'),
-  ['id,name,state,on_new_list,ugc_source,ugc_name,offered,ugc_entitled,unbacked,site_claims_ugc_deb']
-    .concat(rows.map(r => [r.id, r.name, r.state, r.listed ? 'YES' : 'NO', r.sources.join(' + '), r.ugcName, r.offered.join(' '), r.entitled.join(' '), r.unbacked.join(' '), r.siteClaimsUgcDeb ? 'YES' : 'NO'].map(csvEsc).join(',')))
+  ['id,name,state,status,on_new_list,ugc_source,ugc_name,offered,ugc_entitled,unbacked,deb_label_in_approvals,correct_label']
+    .concat(rows.map(r => [r.id, r.name, r.state, r.status, r.listed ? 'YES' : 'NO', r.sources.join(' + '), r.ugcName, r.offered.join(' '), r.entitled.join(' '), r.unbacked.join(' '), r.debLabelInApprovals ? 'YES' : 'NO', r.correctLabel ?? ''].map(csvEsc).join(',')))
     .join('\n')
 )
 fs.writeFileSync(
@@ -274,6 +308,10 @@ console.log('site universities   :', rows.length)
 console.log('on the new list     :', report.listed)
 console.log('NOT on the new list :', report.notListed.length)
 report.notListed.forEach(r => console.log('   -', r.id, '|', r.name))
+console.log('exempt from DEB     :', report.exempt.length, '| of those mislabelled "UGC DEB":', report.mislabelledExempt.length)
+report.exempt.forEach(r => console.log('   ~', r.id.padEnd(38), r.debLabelInApprovals ? 'MISLABELLED -> ' + r.correctLabel : 'label already correct'))
+console.log('not an HEI          :', report.notAnHei.length)
+report.notAnHei.forEach(r => console.log('   ?', r.id, '|', r.name))
 console.log('duplicate site recs :', report.duplicateSiteRecords.length)
 report.duplicateSiteRecords.forEach(d => console.log('   -', d.ugcRow, '->', d.siteIds.join(' , ')))
 console.log('unbacked programmes :', report.withUnbackedProgrammes.reduce((a, r) => a + r.unbacked.length, 0), 'across', report.withUnbackedProgrammes.length, 'universities')

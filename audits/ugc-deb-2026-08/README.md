@@ -1,54 +1,69 @@
 # UGC-DEB reconciliation — August 2026 lists
 
-**Run date:** 2026-08-27 · **Analyst:** Claude (for Rishi Kumar)
-**Status:** analysis complete, no live data mutated. Decisions pending on §7.
+**Run date:** 2026-08-27 · **Analyst:** Claude, for Rishi Kumar
+**Status:** analysis complete. No live data mutated. Action plan in §8.
+
+> **Rev 2 (2026-08-27).** Rishi corrected the reading of four "absent"
+> universities. IGNOU does not need DEB approval (IGNOU Act 1985), and BITS
+> Pilani, O.P. Jindal and Shiv Nadar are Institutions of Eminence, which may
+> launch online programmes without prior DEB approval. Amity Rajasthan's
+> programmes are merged into Amity Noida on the site. This file reflects that;
+> §3 was rewritten and the headline count of "missing" universities fell from
+> six to one.
 
 ---
 
-## 1. The two source documents
+## 1. Both PDFs, fully covered
 
-| File | Shape | Rows | Programme rows |
-|---|---|---|---|
-| `140_upload_RecognitionDetails_20260820125501.pdf` | S.No · State · Type of HEI · HEI Name · No. of programmes · Programmes | 124 | 864 |
-| `UGC_20260818120433_1.pdf` | S.No · State · HEI Name & Type · **Period of recognition** · No. of programmes · Programmes | 18 | 66 |
+| File | Shape | Rows | Parsed | Matched to a site record | No site record | Programme rows |
+|---|---|---|---|---|---|---|
+| `140_upload_RecognitionDetails_20260820125501.pdf` | S.No · State · Type of HEI · HEI Name · Count · Programmes | 124 | 124 | 110 | 14 | 864 |
+| `UGC_20260818120433_1.pdf` | S.No · State · HEI Name & Type · **Period of recognition** · Count · Programmes | 18 | 18 | 11 | 7 | 66 |
 
-142 rows, **140 distinct HEIs** (Manav Rachna and Amity UP appear in both).
+Every row in both files is accounted for: 142 rows, **140 distinct HEIs**
+(Manav Rachna and Amity UP appear in both files, the addendum granting them
+further programmes).
 
-### Scope caveat — read this before acting on any absence
+From the site side, of 128 records: **111** cite the main list only, **9** cite
+the addendum only, **2** cite both, **6** cite neither.
 
-Neither PDF carries a title, preamble or scope statement. Nothing in either
-document says "complete list of entitled institutions". Three observations say
-these are **recognition-grant lists, not the cumulative standing register**:
-
-1. **IGNOU is absent from both.** IGNOU is the national open university created
-   by an Act of Parliament. Its absence from a complete DEB register is not
-   credible, so the register is not what these files are.
-2. **Programme counts are far below known entitlements.** University of Mumbai
-   shows 1 programme (MA Sociology). IIIT shows 1 (MSc Data Science). Christ
-   shows 7. These read as grants made in one cycle, not lifetime totals.
-3. The second file is explicitly period-scoped, with a *Period of Recognition*
-   column naming the academic sessions each grant covers.
-
-**Therefore: absence from these documents is a verification trigger, not proof
-that entitlement was withdrawn.** Nothing in §5 or §6 below should be published
-as "lost UGC-DEB approval" without a check at `deb.ugc.ac.in`.
+The 9 that exist *only* because the addendum was read — they would have looked
+unlisted on the main file alone — are `assam-don-bosco-university-online`,
+`ganpat-university-online`, `amet-university-online`, `jaypee-university-online`,
+`northcap-university-online`, `jagannath-university-online`,
+`teerthanker-mahaveer-university-online`, `subharti-university-online`,
+`arka-jain-university-online`.
 
 ### Defects in the UGC documents themselves
 
 - Duplicate S.No in the main list: **47, 48, 100, 106**. S.No **108 is skipped**.
 - Duplicate S.No **12** in the addendum. S.No **5 is skipped**.
-- Two rows state a programme count higher than the programmes printed:
-  - #2 Koneru Lakshmaiah Education Foundation — states 08, prints 6.
-  - #28 Manav Rachna IIRS — states 10, prints 9 (the list jumps from `1)` to `3)`).
+- Two rows state a count higher than the programmes printed: #2 Koneru
+  Lakshmaiah states 08 and prints 6; #28 Manav Rachna states 10 and prints 9,
+  its numbering jumping straight from `1)` to `3)`.
+
+### What these documents are
+
+Neither PDF carries a title, preamble or scope statement, so their exact scope
+cannot be established from the files. What can be said: the addendum is
+explicitly **incremental** — it grants named programmes for named sessions to
+universities that already appear on the main list. And several main-list rows
+sit well below known catalogues (University of Mumbai 1 programme, IIIT 1,
+Christ 7), which is consistent with a single mode or cycle rather than a
+lifetime cumulative register.
+
+**So absence from these files has four different meanings, and only one of them
+is a problem.** Classify before acting: exempt by statute, exempt as an IoE, not
+an HEI at all, or genuinely unlisted. Only the last needs a portal check.
 
 ---
 
 ## 2. Method
 
-`pdftotext -layout` and `pdftotext -table` both interleave the page watermark
+`pdftotext -layout` and `-table` both interleave the page watermark
 ("UNIVERSITY GRANTS COMMISSION") into the HEI-name column and are unusable.
-`pdftotext -raw` preserves content-stream order, which for these tables is
-clean cell-by-cell output.
+`-raw` preserves content-stream order, which for these tables is clean
+cell-by-cell output.
 
 ```
 pdftotext -raw <pdf> audits/ugc-deb-2026-08/{main,addendum}.raw.txt
@@ -59,55 +74,56 @@ node_modules/.bin/tsx scripts/ugc-deb-exposure.ts    -> exposure.csv
 ```
 
 Every parsed record carries the UGC's own stated programme count, so a parse
-loss shows up as a mismatch. After the fixes, the only two mismatches left are
-the UGC's own arithmetic errors named above.
+loss surfaces as a mismatch. After the parser fixes, the only two mismatches
+left are the UGC's own arithmetic errors above.
 
-Name matching was **not** left to the fuzzy matcher. Token-overlap scoring
-produced confident false positives wherever one distinctive word is shared
-(Sikkim Manipal → Manipal Academy, IIIT → Bangalore University, University of
-Mumbai → D.Y. Patil Navi Mumbai, ARKA JAIN → JAIN). All 128 site records were
-adjudicated by hand; the table lives in `scripts/reconcile-ugc-deb.ts`.
-
----
-
-## 3. Headline numbers
-
-| | |
-|---|---|
-| Site universities | 128 |
-| Matched to a row in the new lists | **122** |
-| No row in either document | **6** |
-| On the new lists, not on the site | **22** |
-| Site programmes with no matching UGC programme row | **21** across 14 universities |
-| …of those, on an **indexable** hub page | **14** |
-| Duplicate site records (two IDs, one real university) | **4 pairs** |
+Name matching is **hand-adjudicated, not fuzzy**. Token-overlap scoring produced
+confident false positives wherever one distinctive word is shared: Sikkim
+Manipal matched Manipal Academy, IIIT matched Bangalore University, University
+of Mumbai matched D.Y. Patil Navi Mumbai, ARKA JAIN matched JAIN. The mapping
+table is in `scripts/reconcile-ugc-deb.ts`.
 
 ---
 
-## 4. Site universities with no row in either document
+## 3. The six records with no row — classified
 
-Every one of these currently ships `ugc: true` and `UGC DEB` in `approvals`,
-and every hub they publish is indexable.
+| Record | Class | Reading |
+|---|---|---|
+| `ignou-online` | **Exempt, statutory** | IGNOU Act 1985 confers its own ODL and online authority. No DEB entitlement required. |
+| `bits-pilani-work-integrated-online` | **Exempt, IoE** | Institution of Eminence. May launch online programmes without prior DEB approval. |
+| `op-jindal-global-university-online` | **Exempt, IoE** | Institution of Eminence. |
+| `shiv-nadar-university-online` | **Exempt, IoE** | Institution of Eminence. |
+| `alvas-college-online` | **Not an HEI** | An autonomous **college**. DEB entitlement is granted to HEIs, so it can never appear on these lists in its own right. |
+| `shobhit-university-online` | **Genuinely unlisted** | Shobhit Institute of Engineering & Technology, Meerut. No exemption applies. **4 hubs, all 4 indexable.** The only record that needs a portal check. |
 
-| ID | Hubs | Indexable | Notes |
-|---|---|---|---|
-| `ignou-online` | 7 | 7 | Central open university by Act of Parliament. Absence almost certainly means these lists are not the register. **Highest content exposure: 77 blog posts mention IGNOU**, plus a dedicated review post. |
-| `shobhit-university-online` | 4 | 4 | Shobhit Institute of Engineering & Technology, Meerut. |
-| `bits-pilani-work-integrated-online` | 1 | 1 | WILP runs under a separate UGC framework, not DEB entitlement. Site frames it as an online degree. 15 blog posts. |
-| `op-jindal-global-university-online` | 1 | 1 | Named in `ugc-deb-approved-universities-list-2026`. |
-| `shiv-nadar-university-online` | 1 | 1 | 1 blog post. |
-| `alvas-college-online` | 1 | 1 | An autonomous **college**, not a university. These lists only carry HEIs, so it could never appear. Worth deciding whether it belongs in a UGC-DEB comparison set at all. |
+### The finding this exposes
 
-Confirmed absent by direct string search of the raw extracts for SHOBHIT, ALVA,
-NADAR, PILANI, JINDAL, INDIRA, IGNOU, MEERUT, SONIPAT — zero hits in both files.
+The exemptions are not the problem. **The labels are.** Three of the four exempt
+records state the wrong basis for their recognition:
+
+| Record | `approvals` today | Should say |
+|---|---|---|
+| `ignou-online` | `UGC DEB`, `NAAC A++`, `AICTE`, `Central University` | Central Open University (IGNOU Act 1985) |
+| `bits-pilani-work-integrated-online` | `UGC DEB`, `NAAC A+`, `NIRF #7 (University)`, `AICTE`, `WES Recognised` | Institution of Eminence (MoE) |
+| `shiv-nadar-university-online` | `UGC DEB`, `NAAC A`, `NIRF #57 (University)` | Institution of Eminence (MoE) |
+| `op-jindal-global-university-online` | `UGC Recognised`, `NAAC A`, `Institution of Eminence (MoE)`, … | **already correct** |
+
+O.P. Jindal is the template. The other three claim an approval that does not
+apply to them, which is exactly the kind of statement a competitor gap-analysis
+would pick up.
+
+Being an IoE does not preclude appearing on the list, and the data shows both
+patterns: MAHE, Amrita and VIT are IoEs that **do** appear, with DEB labels that
+are correct. Only one of the site's seven IoE records carries an
+`Institution of Eminence (MoE)` badge at all.
 
 ---
 
-## 5. Programme-level gaps on indexable hubs
+## 4. Programme gaps carrying a published claim
 
-Site offers the programme; the new lists show no matching programme row for
-that university. Full set in `programme-gaps.csv`, exposure ranking in
-`exposure.csv`.
+21 site programmes have no matching programme row for that university. 14 sit on
+hubs that `shouldIndexProgrammeHub` lets index, so those 14 are published
+claims; the other 7 are already `noindex`.
 
 | Hub | Gap | Why it indexes |
 |---|---|---|
@@ -126,92 +142,135 @@ that university. Full set in `programme-gaps.csv`, exposure ranking in
 | `/universities/mangalayatan-university-online/ba` | BA | fee |
 | `/universities/kalinga-institute-industrial-technology-online/ba` | BA | fee |
 
-The remaining 7 gaps sit on hubs already `noindex` under
-`shouldIndexProgrammeHub`, so they carry no published claim.
+Note the mode caveat in §1: a state university's other programmes may sit under
+an ODL entitlement not covered by these files. The MBA rows are still the ones
+to check first, because an MBA hub is the highest-intent page on the site.
 
-Two worth singling out:
-
-- **University of Mumbai** — the new list grants exactly one programme
-  (MA Sociology). The site publishes BBA, BCA, MA, MBA and MCA.
-- **IIIT** — `iiit-bangalore-online` carries `name: "INTERNATIONAL INSTITUTE OF
-  INFORMATION TECHNOLOGY"` and `state: TELANGANA`, i.e. IIIT **Hyderabad**,
-  under a **bangalore** slug. The UGC row (main #101, Telangana) grants MSc Data
-  Science only; the site publishes an MBA. Both halves need a decision.
+**`iiit-bangalore-online` is a compound defect.** The record carries
+`name: "INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY"` with
+`state: TELANGANA` — that is IIIT **Hyderabad**, sitting under a **bangalore**
+slug. Its UGC row grants MSc Data Science only, and the site publishes an MBA.
 
 ---
 
-## 6. Duplicate site records
+## 5. Four duplicate university records
 
-Four pairs of site IDs resolve to a single UGC row, i.e. the same real
-university is in `lib/data.ts` twice:
+Four pairs of site IDs resolve to a single UGC row, so the same real university
+is in `lib/data.ts` twice.
 
 | UGC row | Site IDs |
 |---|---|
-| main #29 Shree Guru Gobind Singh Tricentenary | `sgt-university-online` · `shree-guru-gobind-singh-tricentenary-university-online` |
-| main #92 Vellore Institute of Technology | `vit-university-online` · `vit-vellore-online` |
-| main #84 Shanmugha Arts, Science, Technology & Research Academy | `sastra-university-online` · `shanmugha-arts-science-technology-research-online` |
-| main #62 Kalinga Institute of Industrial Technology | `kiit-university-online` · `kalinga-institute-industrial-technology-online` |
-
-Consolidating these changes live URLs, so it is a separate decision from this
-audit. Recorded here so it is not rediscovered a third time.
+| main #29 · Shree Guru Gobind Singh Tricentenary | `sgt-university-online` · `shree-guru-gobind-singh-tricentenary-university-online` |
+| main #92 · Vellore Institute of Technology | `vit-university-online` · `vit-vellore-online` |
+| main #84 · Shanmugha Arts, Science, Technology & Research Academy | `sastra-university-online` · `shanmugha-arts-science-technology-research-online` |
+| main #62 · Kalinga Institute of Industrial Technology | `kiit-university-online` · `kalinga-institute-industrial-technology-online` |
 
 ---
 
-## 7. On the new lists, absent from the site
+## 6. What to add
 
-22 HEIs, i.e. coverage opportunities rather than risks.
+### 6a. 21 listed HEIs the site does not cover
 
-**Main list (15):** Mohan Babu University · Sri Venkateswara University ·
-Pt. Sundarlal Sharma (Open) University · Central Sanskrit University ·
-Sri Siddhartha Academy of Higher Education · St. Aloysius · REVA University ·
-University of Calicut · Amity University (Rajasthan) · Central University of
-Tamil Nadu · Saveetha Institute of Medical and Technical Sciences · Bennett
-University · Choudhary Charan Singh University · Dr. B.R. Ambedkar University ·
-Swami Rama Himalayan University
+Amity Rajasthan (main #74) is **not** in this list — its programmes are merged
+into Amity Noida on the site, and the reconciliation now maps both rows to
+`amity-university-online`.
 
-**Addendum (7):** Silver Oak University · BML Munjal University ·
-Srinivas University · Sandip University · Ajeenkya D.Y. Patil University ·
-Atlas SkillTech University · Dr. B.R. Ambedkar Open University (Telangana)
+**Main list (14):** Pt. Sundarlal Sharma (Open) University · Choudhary Charan
+Singh University · REVA University · University of Calicut · Dr. B.R. Ambedkar
+University · Central Sanskrit University · Mohan Babu University · Sri
+Venkateswara University · Swami Rama Himalayan University · Central University
+of Tamil Nadu · St. Aloysius · Bennett University · Sri Siddhartha Academy of
+Higher Education · Saveetha Institute of Medical and Technical Sciences
 
-Highest programme counts, so likely highest search demand: Pt. Sundarlal Sharma
-(12), Choudhary Charan Singh (12), REVA (9), University of Calicut (9), Amity
-Rajasthan (9), Dr. B.R. Ambedkar University (8).
+**Addendum (7):** Silver Oak University · Srinivas University · Ajeenkya D.Y.
+Patil University · Dr. B.R. Ambedkar Open University (Telangana) · Sandip
+University · Atlas SkillTech University · BML Munjal University
+
+Largest programme counts, the closest proxy available for demand: Pt. Sundarlal
+Sharma (12), Choudhary Charan Singh (12), REVA (9), University of Calicut (9),
+Dr. B.R. Ambedkar University (8).
+
+### 6b. 167 entitled programmes inside universities already covered
+
+The bigger opportunity. 66 universities on the site hold UGC entitlement for
+programmes the site does not list, at zero new-university cost.
+
+| University | Entitled, not offered |
+|---|---|
+| `sastra-university-online` | B.Com, BBA, BCA, M.Com, MA, MCA, MSc |
+| `mahatma-gandhi-university-online` | B.Com, BA, BBA, M.Com, MA, MSc |
+| `kalasalingam-university-online` | B.Com, BBA, BCA, MA, MCA, MSc |
+| `bharathiar-university-online` | B.Com, BA, M.Com, MA, MBA, MCA |
+| `jamia-millia-islamia-online` | B.Com, BA, BBA, M.Com, MA |
+| `noida-international-university-online` | B.Com, BCA, M.Com, MA, MSc |
+| `kiit-university-online` | BBA, BCA, MBA, MCA, MSc |
+| `guru-kashi-university-online` | BBA, BCA, M.Com, MA, MBA |
+| `jaipur-national-university-online` | B.Com, BCA, MA, MBA, MSc |
+| `university-of-madras-online` | B.Com, BA, BBA, M.Com, MA |
+| `alagappa-university-online` | BA, BBA, M.Com, MA, MBA |
+| `amity-university-online` | BA, M.Com, MA, MSc |
+
+Full list in `university-status.csv`, column `ugc_entitled` against `offered`.
+
+### 6c. The IoE badge
+
+Six IoE records lack an `Institution of Eminence (MoE)` approval string: BITS
+Pilani, MAHE, Amrita, VIT (both records), Shiv Nadar. IoE is a stronger and
+rarer signal than DEB entitlement, and only O.P. Jindal currently shows it.
 
 ---
 
-## 8. What was changed, and what was not
+## 7. What was changed, and what was not
 
-**Changed — new files only, no existing data touched:**
+**Added — new files only, no existing data touched:**
 
 - `scripts/ugc-deb/parse-main-list.js`, `scripts/ugc-deb/parse-addendum-list.js`
 - `scripts/reconcile-ugc-deb.ts`, `scripts/ugc-deb-exposure.ts`
 - `audits/ugc-deb-2026-08/` — raw extracts, parsed JSON, reconciliation, 3 CSVs, this file
 
-**Deliberately not changed:**
+**Deliberately not changed:** no `ugc` flag flipped, no `approvals` string
+edited, no blog copy touched, no duplicates consolidated. All of §8 is proposed,
+not applied.
 
-- No `ugc` flag flipped and no `UGC DEB` string removed from `approvals` in
-  `lib/data.ts`. Per §1, absence from these documents does not establish
-  withdrawal, and stripping the claim from IGNOU on this evidence would make the
-  site wrong in the other direction.
-- No blog copy edited.
-- No duplicate records consolidated (§6) — that moves live URLs.
-
-There is no `ugc_deb_status` field in the schema. Entitlement is currently
+**Schema note.** There is no `ugc_deb_status` field to update. Entitlement is
 modelled as `University.ugc: boolean` plus a `'UGC DEB'` string inside
-`University.approvals: string[]`. If per-programme entitlement is going to be
-tracked, that needs a new shape; the reconciliation JSON already holds the
-per-university entitled-programme sets to seed it.
+`University.approvals: string[]` — one flag for the whole university, with no
+room for the programme-by-programme grants these documents describe, and no way
+to express "recognised on a basis other than DEB". `reconciliation.json` already
+holds the entitled-programme set per university to seed a better shape.
 
 ---
 
-## 9. Open decisions
+## 8. Plan
 
-1. Check the six §4 universities at `deb.ugc.ac.in` — IGNOU first, since it
-   carries the most published claims.
-2. Decide `iiit-bangalore-online`: fix the slug/state mismatch, and whether the
-   MBA hub survives.
-3. Decide whether the 14 §5 hubs get a verification callout, a `noindex`, or
-   stay as-is pending the portal check.
-4. Review `blog/ugc-deb-approved-universities-list-2026` — its table leads with
-   IGNOU. Every other headline row in that table checks out against the new lists.
-5. Decide on §6 consolidation and §7 expansion.
+### Remove
+
+| # | Action | Scope |
+|---|---|---|
+| R1 | Drop `UGC DEB` from `approvals`, replace with the correct basis | `ignou-online`, `bits-pilani-work-integrated-online`, `shiv-nadar-university-online` |
+| R2 | Drop `UGC DEB` from an autonomous college that cannot hold it | `alvas-college-online` (or retire the record) |
+| R3 | Remove the MBA and fix the slug/state mismatch | `iiit-bangalore-online` |
+| R4 | Retire one record from each duplicate pair, with redirects | 4 pairs, §5 |
+| R5 | Decide per hub: drop the programme, add a verification callout, or `noindex` | 14 hubs, §4 |
+
+### Add
+
+| # | Action | Scope |
+|---|---|---|
+| A1 | `Institution of Eminence (MoE)` to the records that qualify | 6 records, §6c |
+| A2 | A per-programme entitlement shape, seeded from `reconciliation.json` | schema |
+| A3 | New university records | 21 HEIs, §6a |
+| A4 | New programme hubs for entitlement already held | up to 167, §6b |
+| A5 | An explainer on why IGNOU and IoEs need no DEB entitlement | blog and the four records |
+
+### Verify first
+
+| # | Action |
+|---|---|
+| V1 | `shobhit-university-online` at `deb.ugc.ac.in` — the only genuinely unlisted record, 4 indexable hubs |
+| V2 | The 5 MBA gaps in §4, checking ODL vs Online mode, before touching any hub |
+| V3 | `ugc-deb-approved-universities-list-2026` — its table leads with IGNOU, which now needs the exemption framing rather than a DEB claim |
+
+R1, R2 and A1 are label corrections with no URL impact and are safe to apply as
+soon as you say go. R3, R4 and R5 move or remove live URLs. A3 and A4 are
+growth work, not corrections.
