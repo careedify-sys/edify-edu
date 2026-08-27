@@ -13816,5 +13816,59 @@
     "program": "bca",
     "spec_slug": "general",
     "spec_name": "General"
+  },
+  {
+    "university_slug": "university-of-calicut-online",
+    "program": "mba",
+    "spec_slug": "human-resource-management",
+    "spec_name": "Human Resource Management"
+  },
+  {
+    "university_slug": "university-of-calicut-online",
+    "program": "mcom",
+    "spec_slug": "finance",
+    "spec_name": "Finance"
+  },
+  {
+    "university_slug": "university-of-calicut-online",
+    "program": "ma",
+    "spec_slug": "political-science",
+    "spec_name": "Political Science"
+  },
+  {
+    "university_slug": "university-of-calicut-online",
+    "program": "ma",
+    "spec_slug": "economics",
+    "spec_name": "Economics"
+  },
+  {
+    "university_slug": "university-of-calicut-online",
+    "program": "ma",
+    "spec_slug": "history",
+    "spec_name": "History"
+  },
+  {
+    "university_slug": "university-of-calicut-online",
+    "program": "ma",
+    "spec_slug": "sociology",
+    "spec_name": "Sociology"
+  },
+  {
+    "university_slug": "university-of-calicut-online",
+    "program": "ma",
+    "spec_slug": "arabic-language-and-literature",
+    "spec_name": "Arabic Language and Literature"
+  },
+  {
+    "university_slug": "university-of-calicut-online",
+    "program": "ba",
+    "spec_slug": "history",
+    "spec_name": "History"
+  },
+  {
+    "university_slug": "university-of-calicut-online",
+    "program": "ba",
+    "spec_slug": "sociology",
+    "spec_name": "Sociology"
   }
 ]

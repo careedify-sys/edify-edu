@@ -2509,5 +2509,25 @@
       "BCA"
     ],
     "region": "South"
+  },
+  {
+    "id": "university-of-calicut-online",
+    "name": "University of Calicut Online",
+    "abbr": "UOC",
+    "naac": "",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 0,
+    "feeMax": 0,
+    "emiFrom": 0,
+    "feeStr": "Not published",
+    "emiStr": "Not published",
+    "programs": [
+      "MBA",
+      "M.Com",
+      "MA",
+      "BA"
+    ],
+    "region": "South"
   }
 ]
