@@ -135,9 +135,22 @@ function getReference(u, program) {
 // Boolean-only port of lib/fees.ts getDisplayFee: returns true iff the
 // resolver would emit a Rule 1/2/3 pass (any ok path) rather than the
 // 4a/4b suppression. shouldIndexProgrammeHub only reads .ok.
+// Mirrors MIN_CREDIBLE_FEE in lib/fees.ts.
+const MIN_CREDIBLE_FEE = 5000
+
 function feeOk(u, program) {
   const pd = u.programDetails && u.programDetails[program]
   const parsed = pd && pd.fees ? parseFeeStr(pd.fees) : null
+  // Rule 4c: plausibility. MISSING here until 2026-08-29, which is how this
+  // script and lib/fees.ts drifted apart. An authored placeholder such as
+  // 'Not published' or '₹TBD' has no digits, so `parsed` is null and the
+  // pass-through below returned true, marking the hub indexable. The page
+  // itself emits noindex on 4c, so the sitemap advertised 73 hubs that tell
+  // Google not to index them. Mirror lib/fees.ts exactly.
+  if (pd && pd.fees) {
+    if (!/\d/.test(pd.fees)) return false
+    if (parsed && parsed.min < MIN_CREDIBLE_FEE) return false
+  }
   // Rule 4a: width sanity, pd.fees range spans > 3x → suppress.
   if (parsed && parsed.min > 0 && parsed.max / parsed.min > SUSPICIOUS_RANGE_RATIO) {
     return false
