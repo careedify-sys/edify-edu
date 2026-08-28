@@ -14206,5 +14206,11 @@
     "program": "mca",
     "spec_slug": "general",
     "spec_name": "General"
+  },
+  {
+    "university_slug": "saveetha-university-online",
+    "program": "bcom",
+    "spec_slug": "general",
+    "spec_name": "General"
   }
 ]
