@@ -440,3 +440,80 @@ real-looking zero price.
 Also spotted: `chhatrapati-shahu-ji-maharaj-university-online` has
 `naac: 'A++'` while its own `description` says "NAAC B++ accredited". One of the
 two is wrong and both are published.
+
+---
+
+## 13. The 20 new university records: done (2026-08-28)
+
+`UNIVERSITIES` went **124 -> 144**. Twenty of the 21 built. Central Sanskrit
+University is parked, see below.
+
+| # | Record | Source | Types | Note |
+|---|---|---|---|---|
+| 1 | `choudhary-charan-singh-university-online` | main #105 | 6 | |
+| 2 | `pt-sundarlal-sharma-open-university-online` | main #9 | 5 | 2 library-science grants have no site code |
+| 3 | `reva-university-online` | main #48 | 4 | all 6 MBA grants are DUAL specialisations |
+| 4 | `university-of-calicut-online` | main #48 KL | 4 | 4-year honours BA |
+| 5 | `dr-br-ambedkar-university-online` | main #106 | 7 | widest state grant |
+| 6 | `mohan-babu-university-online` | main #4 | 5 | /verify page already existed |
+| 7 | `sri-venkateswara-university-online` | main #5 | 4 | all-PG grant |
+| 8 | `swami-rama-himalayan-university-online` | main #119 | 5 | all 3 UG are 4-year |
+| 9 | `central-university-tamil-nadu-online` | main #81 | 3 | central university |
+| 10 | `ajeenkya-dy-patil-university-online` | add #11 | 4 | 3rd D.Y. Patil, manual aliases added |
+| 11 | `dr-br-ambedkar-open-university-online` | add #14 | 3 | Telugu-medium B.Com; exposed a blog claim |
+| 12 | `silver-oak-university-online` | add #3 | 6 | window already open |
+| 13 | `srinivas-university-online` | add #9 | 5 | all 3 UG are 4-year |
+| 14 | `st-aloysius-university-online` | main #47 | 3 | deemed + online tech, AICTE caveat |
+| 15 | `bennett-university-online` | main #104 | 2 | management only |
+| 16 | `sandip-university-online` | add #10 | 2 | MBA granted in Marketing ONLY |
+| 17 | `atlas-skilltech-university-online` | add #12 | 2 | management only |
+| 18 | `sri-siddhartha-academy-online` | main #38 | 1 | MCA only, sharpest AICTE case |
+| 19 | `saveetha-university-online` | main #100 | 1 | B.Com only, despite the name |
+| 20 | `bml-munjal-university-online` | add #4 | 1 | MBA only |
+
+**Every hub across all twenty is `noindex` on rule 4c with the counsellor form**,
+so nothing enters the index carrying an unpublished fee. Fee baseline rose
+100 -> 173, entirely intended suppression, and it falls as real fees arrive.
+
+### What the batch cost, and what it bought
+
+Each record with an unusual shape found one more place the codebase assumed a
+fee and a NAAC grade always exist. All 124 pre-existing records carry both, so
+these states had never occurred:
+
+1. **CCSU found fourteen leak sites.** Title `Fees 0K`, JSON-LD
+   `NAAC  accredited` and `Total fee 0-0`, four FAQ answers, hero strip, sidebar
+   quick facts, fact tiles, compare bar, `, UTTAR PRADESH` from a blank city,
+   and `No-cost EMI from 0/month`. Plus one real resolver bug: `getReference`
+   synthesised a `{min:0,max:0}` MBA reference and handed the page a
+   real-looking zero price.
+2. **PSSOU found the generic-alias collision.** `blog-fee-scan.mjs` aliased any
+   bracketed fragment, so `(Open)` became the alias "open" and every blog
+   sentence containing "open university" matched two universities. The bug
+   predated us: `Deemed to be University` was already aliased to four
+   universities and `Autonomous` to a fifth. Fixing it *lowered* unverified blog
+   fee figures 2453 -> 2451.
+3. **REVA found the allowlist parser.** `build-programme-allowlist.js`
+   text-parses `lib/data.ts` and matched only single-quoted programme names. A
+   double-quoted `programs` array parsed as empty, dropped REVA from every
+   allowlist, and would have 404'd all four hubs. Build and typecheck both
+   passed; only `check-internal-hub-links` caught it, going 1 -> 19.
+4. **Bennett found the short-description fallback.** The primary meta
+   description was guarded, but a length fallback beneath it was not, and only
+   fires under 150 characters. With 2 programmes, no city and no NIRF, Bennett
+   was the first record short enough to reach it.
+
+Every guard is generic, so the codebase now handles a fee-less, grade-less
+record correctly wherever one appears.
+
+### Parked: Central Sanskrit University (main #13)
+
+Its six granted programmes are **Shastri** and **Acharya** degrees. None maps to
+the site's `Program` union. Shastri is conventionally bachelor-equivalent and
+Acharya master-equivalent, but the UGC document says SHASTRI, not BACHELOR OF
+ARTS, so mapping them would assert an equivalence the source does not state and
+would put a BA hub on the page with specs like "Vyakarana Shastram", misnaming
+the degree a student receives. Three options, all open: skip the record, map
+with the equivalence stated explicitly in the copy, or extend the `Program`
+union. It is the only listed university whose entire grant falls outside the
+site's model.
