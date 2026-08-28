@@ -62,7 +62,7 @@ export default function ComparisonTable({ current: u, peers, program, programSlu
                 label: 'Fees (from)',
                 render: (uni: University) => (
                   <td className="px-3 py-2 text-center text-slate-700 font-semibold">
-                    {formatFee(uni.feeMin)}
+                    {uni.feeMin > 0 ? formatFee(uni.feeMin) : 'On request'}
                   </td>
                 ),
               },

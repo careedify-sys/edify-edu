@@ -22,6 +22,7 @@ import UniProgramBody from '@/components/UniProgramBody'
 import { pageKeywords } from '@/lib/page-keywords'
 import { resolveProgramme } from '@/lib/seo/resolve-programme'
 import { formatUniversityDisplayName } from '@/lib/format'
+import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('MBA')).map(u => ({ id: u.id }))
@@ -82,14 +83,14 @@ export async function generateMetadata(
   // "Fee structure verified by our counsellor" and the lead CTA instead.
   const title = fee.ok
     ? clampTitleFeeLed(
-        `${titleName} Online MBA Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`,
-        `${shortName} Online MBA Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`,
+        `${titleName} Online MBA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
+        `${shortName} Online MBA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
         fee.compact ?? null,
       )
-    : clampTitle(`${titleName} Online MBA ${year}: NAAC ${u.naac} [Review] | edifyedu.in`)
+    : clampTitle(`${titleName} Online MBA ${year}:${naacSuffix(u.naac)} [Review] | edifyedu.in`)
   const description = fee.ok
-    ? clampDescription(`${titleName} Online MBA ${year}: ${fee.compact} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. See honest review, syllabus and placement data.`)
-    : clampDescription(`${titleName} Online MBA ${year}: ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved.`)
+    ? clampDescription(`${titleName} Online MBA ${year}: ${fee.compact} fees, ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. See honest review, syllabus and placement data.`)
+    : clampDescription(`${titleName} Online MBA ${year}: ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved.`)
 
   const keywords = [
     `${u.name} online MBA fees`,
@@ -154,7 +155,7 @@ function MBAProgramSchema({
     '@context': 'https://schema.org',
     '@type': 'EducationalOccupationalProgram',
     name: `${brand} Online MBA`,
-    description: `UGC-DEB approved Online MBA from ${brand}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'MBA')}.`,
+    description: `UGC-DEB approved Online MBA from ${brand}.${naacAccredited(u.naac)} ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'MBA')}.`,
     url: pageUrl,
     provider: {
       '@type': 'CollegeOrUniversity',

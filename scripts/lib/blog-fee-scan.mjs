@@ -26,6 +26,13 @@ const TYPE_WORDS = new Set(['deemed', 'to', 'be', 'the', 'of', 'a', 'an',
   'open', 'autonomous', 'private', 'state', 'central', 'university',
   'universities', 'institute', 'institution', 'college', 'deemedtobe'])
 
+// Bracketed fragments that ARE a real short form but are also ordinary English
+// words. Aliasing them matches prose, not the university: "coupon code" resolved
+// to Hindustan's CODE centre across 24 occurrences in lib/blog.ts. A wrong
+// attribution is worse than none, and both universities remain reachable
+// through their full names, so these are skipped as auto-aliases.
+const COMMON_WORD_ALIASES = new Set(['code', 'bit'])
+
 const aliasEntries = []
 function addAlias(alias, uid) {
   if (!alias) return
@@ -58,6 +65,7 @@ for (const u of UNIVERSITIES) {
       .filter(w => w && !TYPE_WORDS.has(w))
       .join('')
     if (!distinctive) continue
+    if (COMMON_WORD_ALIASES.has(p.trim().toLowerCase())) continue
     addAlias(p, u.id)
   }
   addAlias(u.id.replace(/-online$/, '').replace(/-/g, ' '), u.id)

@@ -370,7 +370,7 @@ export default function ProgramPageClient({ program, programSlug, universities, 
                 <tr key={u.id} className="border-b border-border-light hover:bg-surface-1 transition-colors">
                   <td className="py-3 font-semibold text-navy">{u.name}</td>
                   <td className="py-3 text-right font-bold text-amber-text">{u.feeMin === u.feeMax ? formatFee(u.feeMin) : `${formatFee(u.feeMin)}–${formatFee(u.feeMax)}`}</td>
-                  <td className="py-3 text-right text-ink-2">₹{u.emiFrom.toLocaleString()}</td>
+                  <td className="py-3 text-right text-ink-2">{u.emiFrom > 0 ? `₹${u.emiFrom.toLocaleString()}` : 'On request'}</td>
                   <td className="py-3 text-right text-ink-3">{u.programDetails?.[program]?.specs?.length || '—'}</td>
                 </tr>
               ))}

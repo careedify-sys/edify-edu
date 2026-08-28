@@ -6,6 +6,7 @@ import type { Program } from '@/lib/data'
 import { resolveSpec } from '@/lib/data/programs'
 import { getTitleName, clampTitle, clampDescription, compactFee, shortenSpec } from '@/lib/seo-title'
 import UniSpecBody from '@/components/UniSpecBody'
+import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 
 const PM: Record<string, Program> = {
   'mba': 'MBA', 'mca': 'MCA', 'bba': 'BBA', 'bca': 'BCA', 'ba': 'BA',
@@ -37,8 +38,8 @@ export async function generateMetadata(
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
   // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
   // Uses shortenSpec so long names like "Healthcare Management" stay clampable.
-  const title     = clampTitle(`${titleName} ${program} ${shortSpec} ${year}: ${fees}, NAAC ${u.naac} | EdifyEdu`)
-  const description = clampDescription(`Online ${program} in ${spec} from ${titleName}: ${fees} fees, eligibility, syllabus and admission ${year}. NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Compare before you enrol.`)
+  const title     = clampTitle(`${titleName} ${program} ${shortSpec} ${year}: ${fees}${naacSegment(u.naac)} | EdifyEdu`)
+  const description = clampDescription(`Online ${program} in ${spec} from ${titleName}: ${fees} fees, eligibility, syllabus and admission ${year}.${naacSuffix(u.naac)}${nirfStr}. UGC-DEB approved. Compare before you enrol.`)
 
   return {
     title,

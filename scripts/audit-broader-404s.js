@@ -26,7 +26,10 @@ for (let i = 0; i < ids.length; i++) {
   const uni = ids[i].id
   // Find `programs: [...]` (list)
   const progsArr = body.match(/programs:\s*\[([^\]]+)\]/)
-  const programs = progsArr ? [...progsArr[1].matchAll(/'([^']+)'/g)].map(x => x[1]) : []
+// Accepts either quote style. A double-quoted array in lib/data.ts used to
+// parse as empty here, which silently dropped a university from the output.
+// See audits/ugc-deb-2026-08/README.md, the REVA case.
+  const programs = progsArr ? [...progsArr[1].matchAll(/['"]([^'"]+)['"]/g)].map(x => x[1]) : []
   // Find programDetails keys
   const pdKeys = []
   const pdBlock = body.indexOf('programDetails:')

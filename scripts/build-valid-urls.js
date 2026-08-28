@@ -37,7 +37,10 @@ function loadRedirectSourceDenylist() {
     const section = mw.match(/OLD_SLUG_REDIRECTS[\s\S]+?^\}/m)
     if (!section) return new Set()
     const keys = new Set()
-    for (const m of section[0].matchAll(/'([a-z0-9-]+)':\s*'/g)) keys.add(m[1])
+// Accepts either quote style. A double-quoted array in lib/data.ts used to
+// parse as empty here, which silently dropped a university from the output.
+// See audits/ugc-deb-2026-08/README.md, the REVA case.
+    for (const m of section[0].matchAll(/['"]([a-z0-9-]+)['"]:\s*['"]/g)) keys.add(m[1])
     return keys
   } catch {
     return new Set()

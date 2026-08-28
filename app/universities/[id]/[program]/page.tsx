@@ -17,6 +17,7 @@ import { shouldIndexProgrammeHub } from '@/lib/seo/should-index'
 import { getProgramSchemaOffer, getProgramSchemaFeeFragment } from '@/lib/seo/program-schema'
 import { pageKeywords } from '@/lib/page-keywords'
 import { resolveProgramme } from '@/lib/seo/resolve-programme'
+import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 
 // Static Params (SSG). Pre-render top university+program combinations only.
 // Others are served via ISR (dynamicParams = true) on first request, then cached.
@@ -60,16 +61,16 @@ export async function generateMetadata(
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
   const title = fee.ok
     ? clampTitleFeeLed(
-        `${titleName} Online ${program} Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`,
-        `${shortName} Online ${program} Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`,
+        `${titleName} Online ${program} Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
+        `${shortName} Online ${program} Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
         fee.compact ?? null,
       )
-    : clampTitle(`${titleName} Online ${program} ${year}: NAAC ${u.naac} [Review] | edifyedu.in`)
+    : clampTitle(`${titleName} Online ${program} ${year}:${naacSuffix(u.naac)} [Review] | edifyedu.in`)
   let description = fee.ok
-    ? `${titleName} Online ${program} ${year}: ${fee.compact} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. See honest review and syllabus.`
-    : `${titleName} Online ${program} ${year}: ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved.`
+    ? `${titleName} Online ${program} ${year}: ${fee.compact} fees, ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. See honest review and syllabus.`
+    : `${titleName} Online ${program} ${year}: ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved.`
   if (fee.ok && description.length < 150) {
-    description = `${titleName} Online ${program} ${year}: ${fee.compact} fees, ${specCount}+ specs, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Check verified syllabus, placement data and honest review free at edifyedu.in.`
+    description = `${titleName} Online ${program} ${year}: ${fee.compact} fees, ${specCount}+ specs${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. Check verified syllabus, placement data and honest review free at edifyedu.in.`
   }
   description = clampDescription(description)
 
@@ -132,7 +133,7 @@ function ProgramSchema({
     '@context': 'https://schema.org',
     '@type': 'EducationalOccupationalProgram',
     name: `${u.name} Online ${program}`,
-    description: `UGC-DEB approved Online ${program} from ${u.name}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, program)}.`,
+    description: `UGC-DEB approved Online ${program} from ${u.name}.${naacAccredited(u.naac)} ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, program)}.`,
     url: pageUrl,
     provider: {
       '@type': 'CollegeOrUniversity',

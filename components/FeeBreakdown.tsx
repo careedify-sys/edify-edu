@@ -58,7 +58,7 @@ export default function FeeBreakdown({ u, pd, program, cleanName, headingOverrid
   const rows = [
     { label: totalLabel, value: fee.range || fee.compact || '', highlight: true },
     { label: 'Per Semester (approx.)', value: perSemValue },
-    { label: 'EMI starts from', value: `${formatINR(u.emiFrom)}/month` },
+    ...(u.emiFrom > 0 ? [{ label: 'EMI starts from', value: `${formatINR(u.emiFrom)}/month` }] : []),
     { label: 'Registration / Admission Fee', value: 'Included in total' },
     { label: 'Exam Fee', value: 'Included in total (usually)' },
     { label: 'Study Material', value: 'Included (digital)' },

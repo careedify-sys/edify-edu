@@ -688,7 +688,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved MBA from UPES Online (University of Petroleu — recognised for corporate hiring.'},
       'MCA': {
         specs: ['Artificial Intelligence & Machine Learning', 'Cybersecurity', 'Data Science'],
-        fees: '₹TBD',
+        fees: 'Not published',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -2304,7 +2304,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MCA': {
         specs: ['General', 'Artificial Intelligence & Data Science', 'Cyber Security & Cloud Computing'],
-        fees: '₹TBD',
+        fees: 'Not published',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -2720,7 +2720,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MCA': {
         specs: ['Computer Science and IT', 'Cyber Security & Cloud Computing', 'Data Science'],
-        fees: '₹0K',
+        fees: 'Not published',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -3110,7 +3110,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MCA': {
         specs: ['General'],
-        fees: '₹TBD',
+        fees: 'Not published',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -3640,7 +3640,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MCA': {
         specs: ['Artificial Intelligence', 'Cloud Technology & Information Security'],
-        fees: '₹0K',
+        fees: 'Not published',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -4664,7 +4664,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MCA': {
         specs: ['Artificial Intelligence & Machine Learning', 'Data Science'],
-        fees: '₹TBD',
+        fees: 'Not published',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -5111,7 +5111,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MCA': {
         specs: ['General'],
-        fees: '₹0K',
+        fees: 'Not published',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -5859,7 +5859,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MCA': {
         specs: ['General'],
-        fees: '₹1K',
+        fees: 'Not published',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -5899,7 +5899,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programDetails: {
       'MCA': {
         specs: ['General'],
-        fees: '₹1K',
+        fees: 'Not published',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -5941,7 +5941,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programDetails: {
       'MCA': {
         specs: ['General'],
-        fees: '₹0K',
+        fees: 'Not published',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -6006,7 +6006,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MCA': {
         specs: ['General'],
-        fees: '₹1K',
+        fees: 'Not published',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -7094,7 +7094,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MCA': {
         specs: ['General'],
-        fees: '₹0K',
+        fees: 'Not published',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -7876,7 +7876,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MCA': {
         specs: ['General'],
-        fees: '₹TBD',
+        fees: 'Not published',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -8263,7 +8263,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MCA': {
         specs: ['General'],
-        fees: '₹TBD',
+        fees: 'Not published',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -8426,7 +8426,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MCA': {
         specs: ['Artificial Intelligence and Machine Learning', 'Cloud Computing', 'Internet of Things (IoT)', 'Web Technology'],
-        fees: '₹TBD',
+        fees: 'Not published',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',

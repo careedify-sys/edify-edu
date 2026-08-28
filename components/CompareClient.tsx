@@ -627,7 +627,7 @@ function UniCard({
           <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Course Fees</span>
           <div className="text-right">
             <span className="text-sm font-bold text-slate-800">{u.feeMin === u.feeMax ? formatFee(u.feeMin) : `${formatFee(u.feeMin)} – ${formatFee(u.feeMax)}`}</span>
-            <p className="text-[11px] text-slate-500 mt-0.5">EMI from ₹{u.emiFrom.toLocaleString()}/mo</p>
+            {u.emiFrom > 0 && <p className="text-[11px] text-slate-500 mt-0.5">EMI from ₹{u.emiFrom.toLocaleString()}/mo</p>}
           </div>
         </div>
         <div className="px-4 py-3">
@@ -794,7 +794,7 @@ function CompareContent() {
     return (
       <div className="flex items-center gap-1.5 text-sm">
         <Calendar size={13} className="text-amber-500" />
-        <span className="font-bold text-slate-800">₹{u.emiFrom.toLocaleString()}/mo</span>
+        <span className="font-bold text-slate-800">{u.emiFrom > 0 ? `₹${u.emiFrom.toLocaleString()}/mo` : "On request"}</span>
       </div>
     )
   }

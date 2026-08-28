@@ -183,7 +183,7 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
               ] : []),
               ...(prog === 'MBA' ? [
                 { label: 'Per Semester (x4)', vA: formatINR(Math.round(uA.feeMax / 4)) + '/sem', vB: formatINR(Math.round(uB.feeMax / 4)) + '/sem' },
-                { label: 'EMI from', vA: formatINR(uA.emiFrom) + '/mo', vB: formatINR(uB.emiFrom) + '/mo' },
+                { label: 'EMI from', vA: uA.emiFrom > 0 ? formatINR(uA.emiFrom) + '/mo' : 'On request', vB: uB.emiFrom > 0 ? formatINR(uB.emiFrom) + '/mo' : 'On request' },
               ] : []),
               { label: 'Duration', vA: pdA?.duration || (prog === 'MBA' || prog === 'MCA' ? '2 Years' : '3 Years'), vB: pdB?.duration || (prog === 'MBA' || prog === 'MCA' ? '2 Years' : '3 Years') },
               { label: 'Specialisations', vA: `${specCountA}`, vB: `${specCountB}` },

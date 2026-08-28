@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
 import FeesTableClient from '@/components/FeesTableClient'
 import feesData from '@/data/fees-hub-data.json'
+import { naacPhrase } from '@/lib/seo/display-guards'
 
 const BASE = 'https://edifyedu.in'
 const year = new Date().getFullYear()
@@ -60,7 +61,7 @@ function buildSchemas() {
       position: i + 1,
       name: u.name,
       url: `${BASE}/universities/${u.id}`,
-      description: `${u.name}: ${u.feeStr} total fee, NAAC ${u.naac}`,
+      description: `${u.name}: ${u.feeStr} total fee, ${naacPhrase(u.naac)}`,
     })),
   }
 

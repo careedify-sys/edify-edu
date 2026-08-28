@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { getUniversityById, formatFee, specName } from '@/lib/data'
 import type { Program } from '@/lib/data'
 import { getTitleName } from '@/lib/seo-title'
+import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 
 // Same SEO name map — shared source of truth
 const SEO_NAME: Record<string, string> = {
@@ -123,7 +124,7 @@ export async function generateMetadata({ params }: { params: { id: string; progr
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const title = `${titleName} ${progTitle} — Fees & Syllabus 2026 | EdifyEdu`
 
-  const description = `Admissions open Oct 15–30, 2026. Online ${progTitle} at ${seoName}: ${fee} total, NAAC ${u.naac}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}.${specs ? ` Specs: ${specs}.` : ''} UGC DEB approved. Compare & apply!`
+  const description = `Admissions open Oct 15–30, 2026. Online ${progTitle} at ${seoName}: ${fee} total${naacSegment(u.naac)}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}.${specs ? ` Specs: ${specs}.` : ''} UGC DEB approved. Compare & apply!`
 
   const sn = seoName.toLowerCase()
 

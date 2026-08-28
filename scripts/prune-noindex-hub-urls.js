@@ -204,7 +204,10 @@ for (let i = 0; i < idHits.length; i++) {
   // programs: ['MBA', 'BBA', ...]
   const progsMatch = body.match(/programs:\s*\[([^\]]*)\]/)
   const programs = progsMatch
-    ? [...progsMatch[1].matchAll(/'([^']+)'/g)].map(x => x[1])
+// Accepts either quote style. A double-quoted array in lib/data.ts used to
+// parse as empty here, which silently dropped a university from the output.
+// See audits/ugc-deb-2026-08/README.md, the REVA case.
+    ? [...progsMatch[1].matchAll(/['"]([^'"]+)['"]/g)].map(x => x[1])
     : []
 
   // feeMin / feeMax (numbers)

@@ -93,7 +93,7 @@ export default function EdifyRecommends({ program, currentId, programSlug }: Pro
                   <CheckCircle size={10} className="text-green-500 shrink-0" />
                   <span className="text-[11px] text-ink-3 truncate">{why}</span>
                 </div>
-                <div className="text-[11px] text-ink-2 mt-0.5 font-medium">{formatFee(u.feeMin)} · EMI ₹{u.emiFrom.toLocaleString()}/mo</div>
+                <div className="text-[11px] text-ink-2 mt-0.5 font-medium">{u.feeMin > 0 ? `${formatFee(u.feeMin)} · EMI ₹${u.emiFrom.toLocaleString()}/mo` : "Fee on request"}</div>
               </div>
 
               <span className="text-amber text-sm shrink-0 group-hover:translate-x-0.5 transition-transform">→</span>

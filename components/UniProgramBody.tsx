@@ -45,6 +45,7 @@ import { getProgramLinks } from '@/lib/internal-links'
 import ProgramBlogLinks from './ProgramBlogLinks'
 import SiblingProgrammes from './SiblingProgrammes'
 import { getSiblingProgrammes, getUniversityOverviewLink } from '@/lib/seo/safe-internal-links'
+import { feeSentence, emiSentence, hasRealFee } from '@/lib/seo/display-guards'
 
 interface Props {
   u: University
@@ -121,7 +122,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
 
   const faqs: { q: string; a: string }[] = [
     { q: `What is the total fee for ${program} at ${cleanName}?`,
-      a: `Total programme fee is ${feeStr} across ${pd.duration || '2 years'}. EMI starts from ₹${u.emiFrom.toLocaleString()}/month.` },
+      a: `${feeSentence(feeStr, pd.duration || '2 years', hasRealFee(u))} ${emiSentence(u.emiFrom)}` },
     { q: `Is the ${program} degree from ${cleanName} valid?`,
       a: `Yes. ${cleanName} is UGC-DEB approved. UGC-DEB approved online degrees are recognised as equivalent to on-campus degrees for higher education and government recruitment.` },
     ...(specs.length ? [{ q: `What specialisations does ${cleanName} offer in ${program}?`,
@@ -139,7 +140,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
     { q: `What placement support does ${cleanName} provide?`,
       a: `Our counsellor can confirm the current placement support offered by ${cleanName} for this programme.` },
     { q: `What is the EMI for ${cleanName} ${program}?`,
-      a: `EMI starts from ₹${u.emiFrom.toLocaleString()}/month. Our counsellor can confirm the current EMI tenure options and lender panel.` },
+      a: `${emiSentence(u.emiFrom)} Our counsellor can confirm the current EMI tenure options and lender panel.` },
   ]
 
   // Use content JSON FAQs for schema when available — keeps visible content and structured data in sync

@@ -7,6 +7,7 @@ import { getProgramSpecParams, resolveSpec } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
 import { getTitleName, shortenSpec, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
 import { pageKeywords } from '@/lib/page-keywords'
+import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
 export async function generateStaticParams() {
@@ -33,8 +34,8 @@ export async function generateMetadata(
   const fee = compactFee(pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`)
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : (u as any).nirfMgt && (u as any).nirfMgt < 200 ? `, NIRF #${(u as any).nirfMgt} Mgmt` : ''
   // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
-  const title = clampTitle(`${titleName} MBA ${shortSpec} ${year}: ${fee}, NAAC ${u.naac} | EdifyEdu`)
-  const description = clampDescription(`Online MBA in ${spec} from ${titleName}: ${fee} fees, eligibility, syllabus and admission ${year}. NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Compare before you enrol.`)
+  const title = clampTitle(`${titleName} MBA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`)
+  const description = clampDescription(`Online MBA in ${spec} from ${titleName}: ${fee} fees, eligibility, syllabus and admission ${year}.${naacSuffix(u.naac)}${nirfStr}. UGC-DEB approved. Compare before you enrol.`)
 
   return {
     title,

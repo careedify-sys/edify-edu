@@ -43,6 +43,7 @@ import CouponCard         from './CouponCard'
 import QuickFactsCard     from './QuickFactsCard'
 import AssuredMarquee    from './AssuredMarquee'
 import RequestSyllabusCard from './RequestSyllabusCard'
+import { feeSentence, emiSentence, hasRealFee } from '@/lib/seo/display-guards'
 
 // ── Inline bold renderer: converts **text** → <strong> at render time ─────────
 
@@ -277,7 +278,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
 
   const faqs: { q: string; a: string }[] = [
     { q: `Is ${cleanName} Online ${program} in ${spec} valid for jobs?`, a: `Yes. ${cleanName} is UGC DEB approved${u.naac ? ` and NAAC ${u.naac} accredited` : ''}. The degree is identical to an on-campus degree.` },
-    { q: `What is the fee for ${program} ${spec} at ${cleanName}?`, a: `Total fee is ${pd.fees || `₹${Math.round(u.feeMin / 1000)}K+`}. EMI from ₹${u.emiFrom.toLocaleString()}/month.` },
+    { q: `What is the fee for ${program} ${spec} at ${cleanName}?`, a: `${hasRealFee(u) ? `Total fee is ${pd.fees || `₹${Math.round(u.feeMin / 1000)}K+`}.` : 'The fee for the current intake is not published on this page yet.'} ${emiSentence(u.emiFrom)}` },
     { q: `Can I work while doing ${program} in ${spec} from ${cleanName}?`, a: `Yes. Live sessions on weekends, recordings available 24/7. ${u.examMode} assessments. No campus visits required.` },
     { q: `What career opportunities does ${spec} specialisation offer?`, a: specContent?.careerBeginner?.length ? `${specContent.careerBeginner[0]?.title} and other roles. ${specContent.salaryRange || ''}` : `Graduates typically enter ${spec}-related roles with salary ranges of ${pd.avgSalary || '₹4L–₹12L'} depending on experience.` },
     { q: `What syllabus is covered in ${spec} specialisation?`, a: specContent?.skills?.length ? `Key areas include: ${specContent.skills.slice(0, 5).join(', ')}.` : `The specialisation covers core ${spec} subjects along with project work and industry case studies.` },

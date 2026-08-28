@@ -19,6 +19,7 @@ import { getMasterSyllabus } from '@/lib/content'
 import UniProgramBody from '@/components/UniProgramBody'
 import { pageKeywords } from '@/lib/page-keywords'
 import { resolveProgramme } from '@/lib/seo/resolve-programme'
+import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('MCA')).map(u => ({ id: u.id }))
@@ -42,14 +43,14 @@ export async function generateMetadata(
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
   const title = fee.ok
     ? clampTitleFeeLed(
-        `${titleName} Online MCA Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`,
-        `${shortName} Online MCA Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`,
+        `${titleName} Online MCA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
+        `${shortName} Online MCA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
         fee.compact ?? null,
       )
-    : clampTitle(`${titleName} Online MCA ${year}: NAAC ${u.naac} [Review] | edifyedu.in`)
+    : clampTitle(`${titleName} Online MCA ${year}:${naacSuffix(u.naac)} [Review] | edifyedu.in`)
   const description = clampDescription(syllabus?.metaDesc || (fee.ok
-    ? `${titleName} Online MCA ${year}: ${fee.compact} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved. Check syllabus and eligibility free.`
-    : `${titleName} Online MCA ${year}: ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved.`))
+    ? `${titleName} Online MCA ${year}: ${fee.compact} fees, ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. Check syllabus and eligibility free.`
+    : `${titleName} Online MCA ${year}: ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved.`))
 
   const dynamicKw = [
     `${u.name} online MCA fees`,
@@ -86,7 +87,7 @@ function MCAProgramSchema({
     '@context': 'https://schema.org',
     '@type': 'EducationalOccupationalProgram',
     name: `${u.name} Online MCA`,
-    description: `UGC-DEB approved Online MCA from ${u.name}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'MCA')}.`,
+    description: `UGC-DEB approved Online MCA from ${u.name}.${naacAccredited(u.naac)} ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'MCA')}.`,
     url: pageUrl,
     provider: {
       '@type': 'CollegeOrUniversity',

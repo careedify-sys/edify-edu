@@ -17,6 +17,7 @@ import { getProgramSchemaOffer, getProgramSchemaFeeFragment } from '@/lib/seo/pr
 import UniProgramBody from '@/components/UniProgramBody'
 import { pageKeywords } from '@/lib/page-keywords'
 import { resolveProgramme } from '@/lib/seo/resolve-programme'
+import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('BBA')).map(u => ({ id: u.id }))
@@ -39,14 +40,14 @@ export async function generateMetadata(
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
   const title = fee.ok
     ? clampTitleFeeLed(
-        `${titleName} Online BBA Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`,
-        `${shortName} Online BBA Fees ${year}: ${fee.compact}, NAAC ${u.naac} [Review] | edifyedu.in`,
+        `${titleName} Online BBA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
+        `${shortName} Online BBA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
         fee.compact ?? null,
       )
-    : clampTitle(`${titleName} Online BBA ${year}: NAAC ${u.naac} [Review] | edifyedu.in`)
+    : clampTitle(`${titleName} Online BBA ${year}:${naacSuffix(u.naac)} [Review] | edifyedu.in`)
   const description = fee.ok
-    ? clampDescription(`${titleName} Online BBA ${year}: ${fee.compact} fees, ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. UGC-DEB approved 3-year degree.`)
-    : clampDescription(`${titleName} Online BBA ${year}: ${specCount}+ specialisations, NAAC ${u.naac}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved 3-year degree.`)
+    ? clampDescription(`${titleName} Online BBA ${year}: ${fee.compact} fees, ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved 3-year degree.`)
+    : clampDescription(`${titleName} Online BBA ${year}: ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved 3-year degree.`)
 
   const keywords = [
     `${u.name} online BBA fees`,
@@ -83,7 +84,7 @@ function BBAProgramSchema({
     '@context': 'https://schema.org',
     '@type': 'EducationalOccupationalProgram',
     name: `${u.name} Online BBA`,
-    description: `UGC-DEB approved Online BBA from ${u.name}. NAAC ${u.naac} accredited. ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'BBA')}.`,
+    description: `UGC-DEB approved Online BBA from ${u.name}.${naacAccredited(u.naac)} ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'BBA')}.`,
     url: pageUrl,
     provider: {
       '@type': 'CollegeOrUniversity',

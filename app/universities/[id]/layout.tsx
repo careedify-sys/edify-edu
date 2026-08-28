@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { getUniversityById, formatFee } from '@/lib/data'
 import { getTitleName } from '@/lib/seo-title'
+import { naacSuffix, naacSegment, naacAccredited, naacPhrase } from '@/lib/seo/display-guards'
 
 // ─── Canonical SEO name per university ID (from keyword research doc) ───
 const SEO_NAME: Record<string, string> = {
@@ -194,8 +195,14 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   const seoName = getSeoName(u.id, u.name)
   const mainProg = u.programs[0] || 'MBA'
   const progTitle = PROG_TITLE[mainProg] || `Online ${mainProg}`
+  const hasFee = u.feeMin > 0
   const feeStr = `${formatFee(u.feeMin)}–${formatFee(u.feeMax)}`
-  const nirf = u.nirf < 200 ? `NIRF #${u.nirf}` : u.nirfMgt ? `NIRF #${u.nirfMgt} ${u.nirfCategory || 'Mgmt'}` : `NAAC ${u.naac}`
+  // Falls back through NIRF then NAAC then the one thing every record has.
+  const nirf = u.nirf < 200
+    ? `NIRF #${u.nirf}`
+    : u.nirfMgt
+      ? `NIRF #${u.nirfMgt} ${u.nirfCategory || 'Mgmt'}`
+      : naacPhrase(u.naac)
 
   // ── Title: short name + programs in parens — stays within Google's 600px limit ──
   const titleName = getTitleName(u.id, u.name, u.abbr)
@@ -203,7 +210,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   const title = `${titleName} Online (${progStr}, Fees 2026) | EdifyEdu`
 
   // ── Description: keyword-rich, direct ────────────────────────
-  const description = `Direct Admission 2026 at ${seoName} Online. Get honest faculty reviews, actual package/placement stats, and total fees (${feeStr}). ${nirf}, NAAC ${u.naac}. UGC DEB approved. Compare syllabus and apply today!`
+  const description = `Direct Admission 2026 at ${seoName} Online. Get honest faculty reviews, actual package/placement stats${hasFee ? `, and total fees (${feeStr})` : ''}. ${nirf}${nirf.startsWith('NIRF') ? naacSegment(u.naac) : ''}. UGC DEB approved. Compare syllabus and apply today!`
 
   const sn = seoName.toLowerCase()
 
