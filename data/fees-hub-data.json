@@ -2822,5 +2822,22 @@
       "B.Com"
     ],
     "region": "South"
+  },
+  {
+    "id": "bml-munjal-university-online",
+    "name": "BML Munjal University Online",
+    "abbr": "BMU",
+    "naac": "",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 0,
+    "feeMax": 0,
+    "emiFrom": 0,
+    "feeStr": "Not published",
+    "emiStr": "Not published",
+    "programs": [
+      "MBA"
+    ],
+    "region": "North"
   }
 ]

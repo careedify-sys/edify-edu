@@ -136,6 +136,7 @@ export const TITLE_NAME: Record<string, string> = {
   'atlas-skilltech-university-online': 'Atlas SkillTech',
   'sri-siddhartha-academy-online': 'Sri Siddhartha',
   'saveetha-university-online': 'Saveetha SIMATS',
+  'bml-munjal-university-online': 'BML Munjal',
   'shobhit-university-online': 'Shobhit University',
   'teerthanker-mahaveer-university-online': 'Teerthanker Mahaveer',
   'subharti-university-online': 'Subharti University',

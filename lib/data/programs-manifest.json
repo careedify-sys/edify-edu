@@ -14212,5 +14212,11 @@
     "program": "bcom",
     "spec_slug": "general",
     "spec_name": "General"
+  },
+  {
+    "university_slug": "bml-munjal-university-online",
+    "program": "mba",
+    "spec_slug": "general",
+    "spec_name": "General"
   }
 ]
