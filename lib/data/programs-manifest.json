@@ -14200,5 +14200,11 @@
     "program": "bba",
     "spec_slug": "general",
     "spec_name": "General"
+  },
+  {
+    "university_slug": "sri-siddhartha-academy-online",
+    "program": "mca",
+    "spec_slug": "general",
+    "spec_name": "General"
   }
 ]

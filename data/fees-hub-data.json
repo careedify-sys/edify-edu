@@ -2788,5 +2788,22 @@
       "BBA"
     ],
     "region": "West"
+  },
+  {
+    "id": "sri-siddhartha-academy-online",
+    "name": "Sri Siddhartha Academy of Higher Education Online",
+    "abbr": "SSAHE",
+    "naac": "",
+    "nirf": 999,
+    "nirfMgt": null,
+    "feeMin": 0,
+    "feeMax": 0,
+    "emiFrom": 0,
+    "feeStr": "Not published",
+    "emiStr": "Not published",
+    "programs": [
+      "MCA"
+    ],
+    "region": "South"
   }
 ]
