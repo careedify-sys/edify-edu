@@ -137,6 +137,38 @@ export function getUniversityById(id: string) { return UNIVERSITIES.find(u => u.
 export function getUniversitiesByProgram(program: Program) {
   return UNIVERSITIES.filter(u => u.programs.includes(program)).sort((a, b) => a.nirf - b.nirf)
 }
+function peerOffset(seed: string, mod: number): number {
+  let h = 0
+  for (let i = 0; i < seed.length; i++) h = (Math.imul(h, 31) + seed.charCodeAt(i)) >>> 0
+  return mod > 0 ? h % mod : 0
+}
+
+/**
+ * Peer universities for the "other universities offering this programme"
+ * modules. Deliberately NOT the first N of a sorted list.
+ *
+ * The previous behaviour took .slice(0, 3) from a NIRF-ascending sort, so the
+ * same three or four universities appeared as peers on every page in the
+ * catalogue. Measured on the built site: Amity carried 2,541 inbound internal
+ * links from 2,263 pages while a newly added university carried 6, from the two
+ * listing pages alone. Internal link equity was pooling in four records and the
+ * long tail was starved, which is a ranking problem for every university
+ * outside that handful, not only the new ones.
+ *
+ * This rotates a fixed-size window through the eligible pool using a stable
+ * hash of the SOURCE university id. Output is deterministic, so builds stay
+ * reproducible and the same page always shows the same peers, but across the
+ * catalogue every university takes a turn.
+ */
+export function getPeerUniversities(program: Program, excludeId: string, count: number) {
+  const pool = UNIVERSITIES.filter(u => u.programs.includes(program) && u.id !== excludeId)
+  if (pool.length <= count) return pool
+  const start = peerOffset(excludeId, pool.length)
+  const out = []
+  for (let i = 0; i < count; i++) out.push(pool[(start + i) % pool.length])
+  return out
+}
+
 export function getAllPrograms(): Program[] {
   const all = new Set<Program>()
   UNIVERSITIES.forEach(u => u.programs.forEach(p => all.add(p)))

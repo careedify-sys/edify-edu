@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
 
 import type { University, ProgramDetail } from '@/lib/data'
-import { getUniversitiesByProgram, formatSpecList } from '@/lib/data'
+import { getUniversitiesByProgram, getPeerUniversities, formatSpecList } from '@/lib/data'
 import { getShortUniversityName } from '@/lib/format'
 import { COUPONS } from '@/lib/coupons'
 import type { Program } from '@/lib/data'
@@ -92,7 +92,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
   }
   const feeProminent = program === 'MBA' && u.id in FEE_PROMINENT_MBA_UNIS
   const specs      = pd.specs || []
-  const peers      = getUniversitiesByProgram(program).filter(x => x.id !== u.id).slice(0, 3)
+  const peers      = getPeerUniversities(program, u.id, 3)
   const coupon     = COUPONS.find(c => c.universityId === u.id && (c.program === program || c.program === 'All')) || null
 
   const content = getPageContent(u.id, program.toLowerCase())

@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { ChevronRight, CheckCircle } from 'lucide-react'
 
 import type { University, ProgramDetail } from '@/lib/data'
-import { getUniversitiesByProgram } from '@/lib/data'
+import { getUniversitiesByProgram, getPeerUniversities } from '@/lib/data'
 import { getShortUniversityName } from '@/lib/format'
 import { getSpecContent, getSpecFallback } from '@/lib/content'
 import { getSyllabus } from '@/lib/syllabus'
@@ -269,7 +269,7 @@ function SpecChooseSection({
 export default function UniSpecBody({ u, program, programSlug, spec, specSlug, pd, keywords }: Props) {
   const cleanName  = getShortUniversityName(u.name)
   const syllabus   = getSyllabus(u.id, program, specSlug)
-  const peers      = getUniversitiesByProgram(program).filter(x => x.id !== u.id).slice(0, 3)
+  const peers      = getPeerUniversities(program, u.id, 3)
   const coupon     = COUPONS.find(c => c.universityId === u.id && (c.program === program || c.program === 'All')) || null
   const specContent = getSpecContent(spec) || getSpecFallback(spec, program)
 

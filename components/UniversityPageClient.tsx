@@ -5,7 +5,7 @@ import {
   MapPin, CheckCircle, BarChart2, ChevronRight, Award,
   Briefcase, TrendingUp, Building2, Plus, BookOpen, Users
 } from 'lucide-react'
-import { getUniversitiesByProgram, formatFeeSlim as formatFee } from '@/lib/data-slim'
+import { getUniversitiesByProgram, getPeerUniversitiesSlim, formatFeeSlim as formatFee } from '@/lib/data-slim'
 import { cleanCareerOutcome, getShortUniversityName } from '@/lib/format'
 import { getProgramContent } from '@/lib/content'
 import { SAMPLE_DEGREES, getSampleDegree } from '@/lib/sample-degrees'
@@ -53,7 +53,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
   const displayProgram: Program = activeProgram || u.programs[0]
   const pd = u.programDetails[displayProgram]
   const programContent = getProgramContent(displayProgram)
-  const otherUnis = getUniversitiesByProgram(displayProgram).filter(x=>x.id!==u.id).slice(0,4)
+  const otherUnis = getPeerUniversitiesSlim(displayProgram, u.id, 4)
   const compareUrl = `/compare?a=${u.id}${compareList.map(i=>`&b=${i}`).join('')}`
   const cleanName = getShortUniversityName(u.name)
 
