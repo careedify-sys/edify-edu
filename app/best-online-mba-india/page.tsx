@@ -217,13 +217,15 @@ const TOP_10 = [
     rank: 8,
     id: 'nmims-online',
     name: 'NMIMS Online',
-    nirf: 17, nirfLabel: '#17 Management',
+    // NIRF Management 2025 is #24, per Supabase accreditations and lib/data.ts
+    // nirfMgt. The page claimed #17 through both the badge and the label.
+    nirf: 24, nirfLabel: '#24 Management',
     naac: 'A++',
     fee: '₹2.2L',
     emi: '₹2,500/mo',
     bestFor: 'Management Depth',
     specs: ['Marketing Management', 'Finance', 'HR', 'Operations & Data Sciences'],
-    badge: 'NIRF #17 Mgmt',
+    badge: 'NIRF #24 Mgmt',
     badgeColor: '#1a5f9a',
     badgeBg: '#e8f4fd',
   },
