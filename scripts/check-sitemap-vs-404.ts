@@ -68,6 +68,9 @@ const PROGRAMME_ALLOWLIST_FILES: { slug: string; file: string }[] = [
   { slug: 'bba',  file: 'programme-allowlist-bba.json' },
   { slug: 'bca',  file: 'programme-allowlist-bca.json' },
   { slug: 'mca',  file: 'programme-allowlist-mca.json' },
+  { slug: 'ba',   file: 'programme-allowlist-ba.json' },
+  { slug: 'msc',  file: 'programme-allowlist-msc.json' },
+  { slug: 'bsc',  file: 'programme-allowlist-bsc.json' },
 ]
 
 const SITE = 'https://edifyedu.in'
