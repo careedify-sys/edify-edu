@@ -262,3 +262,38 @@ export function getSortRank(u: { id: string; nirf: number }): number {
   }
   return u.nirf;
 }
+
+// 999 is the "not ranked" sentinel used throughout lib/data.ts and
+// lib/data-slim.ts. It must never reach a page as if it were a rank. 44 of the
+// 144 universities carry nirf: 999 and several carry nirfMgt: 999, so any
+// render path that interpolates a rank without checking will eventually print
+// "#999" the moment one of them sorts into view. That is exactly what happened
+// on /programs, where Sikkim Manipal reached the BA card's top three and
+// rendered "SMUOM #999".
+export function isRankedNirf(rank: number | null | undefined): rank is number {
+  return typeof rank === 'number' && rank > 0 && rank < 900;
+}
+
+/**
+ * Formats a NIRF rank for display, or returns null when the university is
+ * unranked. Always states the category, because Management and University are
+ * two different lists and an unqualified "#24" is misleading.
+ *
+ * `prefer` must match whatever the surrounding list is sorted by. A badge that
+ * shows a Management rank inside a list ordered by University rank reads as a
+ * sorting bug: MAHE (#39 Management, #3 University) would sit above BITS
+ * Pilani (#7 University) while displaying the larger number.
+ */
+export function formatNirfBadge(
+  u: { nirf?: number | null; nirfMgt?: number | null },
+  opts: { style?: 'short' | 'long'; prefer?: 'management' | 'university' } = {},
+): string | null {
+  const { style = 'short', prefer = 'management' } = opts;
+  const mgmt = isRankedNirf(u.nirfMgt)
+    ? (style === 'short' ? `#${u.nirfMgt} Mgmt` : `NIRF #${u.nirfMgt} Management`)
+    : null;
+  const univ = isRankedNirf(u.nirf)
+    ? (style === 'short' ? `#${u.nirf} Univ` : `NIRF #${u.nirf} University`)
+    : null;
+  return prefer === 'university' ? (univ ?? mgmt) : (mgmt ?? univ);
+}

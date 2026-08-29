@@ -2,7 +2,7 @@
 import { getSortRank } from '@/lib/data-slim'
 
 import Link from 'next/link'
-import { UNIS_SLIM, formatFeeSlim as formatFee } from '@/lib/data-slim'
+import { UNIS_SLIM, formatFeeSlim as formatFee, formatNirfBadge } from '@/lib/data-slim'
 import { PROGRAM_META } from '@/lib/data-client'
 import type { Program } from '@/lib/data'
 
@@ -47,7 +47,12 @@ export default function ProgramsPage() {
                           {u.abbr.slice(0, 1)}
                         </div>
                         <span className="text-slate-600 font-medium">{u.abbr}</span>
-                        <span className="text-orange-400 font-semibold">#{u.nirf}</span>
+                        {/* prefer: 'university' matches getSortRank, which orders this
+                            list by u.nirf. Showing a Management rank here would put a
+                            larger number above a smaller one. */}
+                        {formatNirfBadge(u, { prefer: 'university' })
+                          ? <span className="text-orange-400 font-semibold">{formatNirfBadge(u, { prefer: 'university' })}</span>
+                          : <span className="text-slate-400">Unranked</span>}
                       </div>
                       <span className="text-slate-500">{u.programDetails?.[prog]?.fees || `${formatFee(u.feeMin)}+`}</span>
                     </div>
