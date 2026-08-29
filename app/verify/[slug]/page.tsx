@@ -12,7 +12,7 @@ import { TrackPageView } from '@/components/verify/TrackPageView';
 import { AboutUniversity } from '@/components/verify/AboutUniversity';
 import { HelpdeskTeaser } from '@/components/verify/HelpdeskTeaser';
 import { VerifyFAQ, getVerifyFAQs } from '@/components/verify/VerifyFAQ';
-import { getTitleName } from '@/lib/seo-title';
+import { getTitleName, shortenInstitutionName } from '@/lib/seo-title';
 import { getUniversityById } from '@/lib/data';
 
 type PageProps = {
@@ -74,9 +74,17 @@ export async function generateMetadata({ params }: PageProps) {
 
   if (!uni) return { title: { absolute: 'University Not Found | EdifyEdu' } };
 
+  // 58 of the 124 verify slugs are Supabase slugs that are not lib/data.ts ids
+  // (narsee-monjee-institute-of-management-studies-nmims-online vs nmims-online),
+  // so getUniversityById returns null for them and the old expression fell
+  // through to the full legal name. That produced 90 and 97 character titles on
+  // the NMIMS and Shoolini pages. shortenInstitutionName works from the name
+  // alone, so it cannot attribute one entity's short name to another.
   const libUni = getUniversityById(slug);
-  const displayName = uni.name.length > 28 && libUni
-    ? getTitleName(libUni.id, libUni.name, libUni.abbr)
+  const displayName = uni.name.length > 28
+    ? (libUni
+        ? getTitleName(libUni.id, libUni.name, libUni.abbr)
+        : shortenInstitutionName(uni.name))
     : uni.name;
   const location = [uni.city, uni.state].filter(Boolean).join(', ');
   return {

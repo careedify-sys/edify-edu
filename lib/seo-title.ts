@@ -222,6 +222,58 @@ export function getTitleName(id: string, name: string, abbr: string): string {
   return abbr || cleaned.substring(0, 25)
 }
 
+// Words that must never be left dangling at the end of a truncated name.
+const TRAILING_STOPWORDS = /(?:\s+(?:of|and|for|the|in|to|&|at|on|with))+$/i
+
+/**
+ * Shortens an institution's own legal name for use in a page title, using
+ * nothing but that name. Never consults a slug, an id or a lookup table, so it
+ * cannot attribute one university's short name to another. That matters on
+ * /verify/, where three Manipal entities and two DY Patil entities each have
+ * their own page.
+ *
+ * Used by app/verify/[slug]/generateMetadata for the 58 verify slugs whose
+ * Supabase slug is not a lib/data.ts id. getUniversityById returns null for
+ * every one of them, so before this the full legal name went straight into
+ * the title: 90 and 97 characters on the NMIMS and Shoolini pages, both far
+ * past Google's ~60-char cut, both sitting at position 7.5-8.5 with 0 clicks
+ * on 120-128 impressions in the 28-day GSC export (2026-08-29).
+ *
+ * Order matters:
+ *  1. A name already inside budget is returned untouched, so disambiguating
+ *     suffixes survive. "Dr. D.Y. Patil Vidyapeeth (Pune)" is 32 chars and
+ *     must keep its "(Pune)" to stay distinct from "D.Y. Patil (Navi Mumbai)".
+ *  2. Only once a name is over budget does a bracketed acronym win, because
+ *     that acronym is the term people actually search: NMIMS, HITS, VISTAS.
+ *  3. Otherwise drop the brackets, then truncate on a word boundary.
+ */
+export function shortenInstitutionName(name: string, max = 26): string {
+  const s = name.replace(/\s+[Oo]nline\s*$/, '').trim()
+  if (s.length <= max) return s
+
+  // A bracketed token only counts as an acronym when it is genuinely
+  // capitalised. Requiring two capitals keeps NMIMS, HITS and VISTAS while
+  // rejecting "(Pune)", which is a disambiguator and would be actively wrong
+  // as a university name.
+  const bracketed = s.match(/\(([A-Z][A-Za-z.&]{2,7})\)/)
+  const acronym = bracketed && (bracketed[1].match(/[A-Z]/g) || []).length >= 2
+    ? bracketed[1]
+    : null
+  if (acronym) return acronym
+
+  const base = s.replace(/\s*\(.*?\)\s*/g, ' ').replace(/\s+/g, ' ').trim()
+  if (base.length <= max) return base
+
+  const truncated = base
+    .substring(0, max)
+    .replace(/\s+\S*$/, '')
+    .replace(TRAILING_STOPWORDS, '')
+    .replace(/[\s,;:.\-&]+$/, '')
+    .trim()
+
+  return truncated.length >= 8 ? truncated : base.substring(0, max).trim()
+}
+
 /**
  * Shortens common long MBA specialization names to fit in title tags.
  * Any spec not in the map is truncated to 22 chars.
