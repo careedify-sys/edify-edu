@@ -1,0 +1,40 @@
+{
+  "uniSlug": "sri-venkateswara-university-online",
+  "program": "ma",
+  "sections": {
+    "tldr": "TL;DR: Sri Venkateswara University Online MA at a glance. Newly recognised, listed in the UGC Distance Education Bureau recognition list of August 2026. State university in Andhra Pradesh. The grant names 2 specialisations: Economics, English. Duration 2 Years. The fee for the current intake is not published here yet, so request it before you apply.",
+    "ugcDeb": "Sri Venkateswara University is listed in the UGC Distance Education Bureau recognition list of August 2026, which grants it 5 programmes for online delivery. Master of Arts is one of them. UGC rules treat an online degree from an entitled university as equivalent to a conventional one for employment, government recruitment and further study. Entitlement is granted intake by intake and programme by programme, so confirm the current position for your admission year at deb.ugc.ac.in rather than relying on any page, including this one.",
+    "redFlags": [
+      "No fee is published on this page. Any figure quoted to you by a third party should be confirmed in writing with the university before you pay.",
+      "This is a recent entitlement. Confirm it covers the exact intake you are applying for, since UGC-DEB approval is granted per intake.",
+      "Check the specific recruitment notification if you are applying for a government role, as some services set their own conditions."
+    ],
+    "faqs": [
+      {
+        "question": "Is Sri Venkateswara University approved for an online MA?",
+        "answer": "Yes. Sri Venkateswara University appears in the UGC Distance Education Bureau recognition list of August 2026, which grants it Master of Arts for online delivery. Verify the current position for your admission year at deb.ugc.ac.in."
+      },
+      {
+        "question": "What does the Sri Venkateswara University online MA cost?",
+        "answer": "The fee for the current intake is not published on this page yet. This is a recent entitlement and the university has not put a public figure against it that we can verify. Request the current fee structure in writing before you apply, and treat any figure from a third party with caution."
+      },
+      {
+        "question": "What specialisations are available?",
+        "answer": "The August 2026 grant names Economics, English. A specialisation not on that list is not covered by this entitlement."
+      },
+      {
+        "question": "Is this degree valid for government jobs?",
+        "answer": "An online degree from a UGC-DEB entitled university is treated as equivalent to a conventional one for employment and government recruitment. Sri Venkateswara University holds that entitlement for this programme under the August 2026 list. Individual recruitment notifications can still set their own conditions, so check the notification you are applying against."
+      },
+      {
+        "question": "How long is the MA?",
+        "answer": "2 Years."
+      }
+    ]
+  },
+  "metadata": {
+    "generatedAt": "2026-08-29",
+    "source": "audits/ugc-deb-2026-08, UGC-DEB August 2026 recognition list and addendum",
+    "note": "No fee on record. Fee sections are deliberately absent and the page routes to the counsellor form."
+  }
+}

@@ -17,7 +17,7 @@ import { getProgramSchemaOffer, getProgramSchemaFeeFragment } from '@/lib/seo/pr
 import UniProgramBody from '@/components/UniProgramBody'
 import { pageKeywords } from '@/lib/page-keywords'
 import { resolveProgramme } from '@/lib/seo/resolve-programme'
-import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
+import { naacSuffix, naacSegment, naacAccredited, naacPhrase } from '@/lib/seo/display-guards'
 
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('BBA')).map(u => ({ id: u.id }))
@@ -44,7 +44,7 @@ export async function generateMetadata(
         `${shortName} Online BBA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
         fee.compact ?? null,
       )
-    : clampTitle(`${titleName} Online BBA ${year}:${naacSuffix(u.naac)} [Review] | edifyedu.in`)
+    : clampTitle(`${titleName} Online BBA ${year}: ${naacPhrase(u.naac, "UGC-DEB Entitled")} [Review] | edifyedu.in`)
   const description = fee.ok
     ? clampDescription(`${titleName} Online BBA ${year}: ${fee.compact} fees, ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved 3-year degree.`)
     : clampDescription(`${titleName} Online BBA ${year}: ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved 3-year degree.`)
