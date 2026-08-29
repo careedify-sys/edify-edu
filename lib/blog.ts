@@ -62,7 +62,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: "Is Sharda University AICTE approved for online programmes?", a: "No. Sharda holds UGC-DEB entitlement for its online programmes but they are not AICTE listed. For most employment and further study this changes nothing, because UGC-DEB entitlement is what establishes validity. It matters only if a specific government or PSU recruitment notification names AICTE approval in its eligibility clause. Read the notification before you enrol." },
       { q: "Does Sharda University have a NIRF rank?", a: "Yes, in two categories, and neither is Management. For 2025 it holds rank 87 in the University category and rank 57 in Pharmacy. There is no Management rank, so an online MBA applicant has no NIRF position describing that school. An absent rank is not a bad rank, but it does limit how you can compare. Check each category at nirfindia.org." },
       { q: "Is Sharda University Uzbekistan the same university?", a: "No. Sharda University Uzbekistan at Andijan was established in 2019 under an Uzbek presidential decree and is licensed by that country’s higher education ministry. It is a separate legal entity. A degree from it is not the UGC-DEB entitled Indian degree. If any prospectus or agent mentions an international campus while you are applying online from India, ask which legal entity awards the certificate." },
-      { q: "Which Sharda Online website is the real one?", a: "Several domains carry the Sharda Online name. The one linked from the university’s own website navigation is shardaonline.ac.in. The safe practice is to start at sharda.ac.in and click through to the online school from there, rather than starting from an advertisement, a forwarded message or an agent link. If a payment page sits on a domain you did not reach that way, stop." },
+      { q: "Which Sharda Online website is the real one?", a: "The university's main site sharda.ac.in links to shardaonline.ac.in, and that address redirects to shardaonline.ai. So the .ai domain is genuine, despite looking unusual for an Indian university. Other addresses using the Sharda Online name sit outside that chain. The safe practice is to start at sharda.ac.in and click through, rather than starting from an advertisement, a forwarded message or an agent link. If a payment page sits on a domain you did not reach that way, stop." },
       { q: "Is Sharda University good for an online MBA?", a: "It is a reasonable mid-market choice if you want an entitled degree from a recognised private university and you are in or near the Delhi capital region. It is a weaker choice if you are buying institutional prestige, since there are entitled universities with higher NAAC CGPAs and actual Management rankings. Decide on fees and the full record rather than on the A+ alone." },
     ],
     content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 29 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Legal status, UGC-DEB entitlement, accreditation and ranking data checked against UGC, NAAC and NIRF records.</em></p>
@@ -71,7 +71,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Sharda is not fake. But there are four specifics worth knowing before you pay, and most pages ranking for this question get at least one of them wrong.</p>
 
-<div class="callout-key"><strong>Short answer:</strong> Sharda University is a recognised private university in Uttar Pradesh, UGC-DEB entitled for online delivery across BA, BBA, BCA, M.Com, MA, MBA and MCA. It is NAAC accredited at A+ with a CGPA of 3.27. It holds a NIRF University rank and a NIRF Pharmacy rank, but none in Management. It does not carry AICTE approval on its online programmes.</div>
+<div class="callout-key"><strong>Short answer:</strong> Sharda University is a recognised private university in Uttar Pradesh, UGC-DEB entitled for online delivery across BA, BBA, BCA, M.Com, MA, MBA and MCA. It is NAAC accredited at A+ with a CGPA of 3.27. It holds a NIRF University rank and a NIRF Pharmacy rank, but none in Management. Its own online portal lists UGC entitlement, NAAC, NIRF, NBA and WES, and does not claim AICTE.</div>
 
 <h2>The A+ is real. It also sits at the floor of the band.</h2>
 
@@ -87,7 +87,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>No AICTE approval on the online programmes</h2>
 
-<p>Sharda's online programmes are UGC-DEB entitled. None of them is AICTE listed.</p>
+<p>Sharda's online programmes are UGC-DEB entitled. None of them is AICTE listed. Sharda's own online portal lists UGC entitlement, NAAC, NIRF, NBA and WES among its approvals, and does not claim AICTE for the online degrees.</p>
 
 <p>For most people this changes nothing. UGC-DEB entitlement is what establishes that an online degree is equivalent to a conventional one for employment, government recruitment and further study. AICTE is a separate technical-education body, and its approval is not a general requirement for an online MBA or MCA to be valid.</p>
 
@@ -111,11 +111,13 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>This is the thing that sends most people to Google asking whether Sharda is fake, and it is a fair question to ask.</p>
 
-<p>Several different domains carry the Sharda Online name. Only one of them is linked from the university's own website navigation, and that is shardaonline.ac.in. I checked this from sharda.ac.in itself rather than taking anyone's word for it.</p>
+<p>Here is what is actually going on, because it looks stranger than it is. The university's main site is sharda.ac.in, and its navigation links to the online school at shardaonline.ac.in. That address then redirects to shardaonline.ai.</p>
 
-<p>I am not going to accuse any other domain of being fraudulent, because some of them are probably marketing sites the university itself commissioned. But you have no way of telling from the outside, and you should not have to.</p>
+<p>So the .ai domain is genuine. It is the destination of a redirect that starts on the university's own .ac.in site, which is about as good as provenance gets. I checked the redirect myself rather than taking anyone's word for it. A .ai address looks odd for an Indian university and that is almost certainly why you are here, but on this one the unusual domain is the real one.</p>
 
-<p>So use the rule that works regardless. Start at sharda.ac.in and click through to the online school from there. Never start from an advertisement, a WhatsApp forward, or a link an agent sends you. If a payment page asks for money on a domain you did not reach by clicking through from the university's own site, stop.</p>
+<p>Other addresses using the Sharda Online name do exist and are not part of that chain. I am not going to call any of them fraudulent, because some are plausibly marketing sites the university commissioned. You cannot tell from the outside, and you should not have to.</p>
+
+<p>So use the rule that works regardless of which domain you land on. Start at sharda.ac.in and click through to the online school from there. Never start from an advertisement, a forwarded message, or a link an agent sends you. If a payment page asks for money on a domain you did not reach that way, stop and go back to sharda.ac.in.</p>
 
 <h2>Three places called Sharda, and one of them is not in India</h2>
 
