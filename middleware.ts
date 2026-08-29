@@ -24,6 +24,10 @@ import MBA_ALLOWLIST from './lib/data/programme-allowlist-mba.json'
 import BBA_ALLOWLIST from './lib/data/programme-allowlist-bba.json'
 import BCA_ALLOWLIST from './lib/data/programme-allowlist-bca.json'
 import MCA_ALLOWLIST from './lib/data/programme-allowlist-mca.json'
+import BA_ALLOWLIST from './lib/data/programme-allowlist-ba.json'
+import MSC_ALLOWLIST from './lib/data/programme-allowlist-msc.json'
+import BSC_ALLOWLIST from './lib/data/programme-allowlist-bsc.json'
+import SPEC_ALLOWLIST_RAW from './lib/data/spec-allowlist.json'
 
 // Old/truncated university slugs indexed by Google → current slugs
 // Verified against lib/data.ts UNIVERSITIES array (2026-04-17)
@@ -467,6 +471,10 @@ export function middleware(req: NextRequest) {
   // Slice 1 (2026-08-18): MA. Slice 2 (2026-08-18): + B.Com, M.Com.
   // Slice 3a (2026-08-18): + MBA. Slice 3b (2026-08-18): + BBA, BCA, MCA.
   // Slice 5 (2026-08-19): widen match from hub-only to subtree.
+  // Slice 6 (2026-08-29): + BA, MSc, BSc. Those three are real programmes in
+  // lib/data.ts served by the generic [program] route, but had no allowlist,
+  // so 387 hub paths (117 /ba + 128 /msc + 142 /bsc) plus their whole spec
+  // subtrees rendered the not-found shell under HTTP 200.
   // Extend by adding a new allowlist import + row to PROGRAMME_HUB_ALLOWLISTS.
   const PROGRAMME_HUB_ALLOWLISTS: { slug: string; allowlist: string[] }[] = [
     { slug: 'ma', allowlist: MA_ALLOWLIST as string[] },
@@ -476,6 +484,9 @@ export function middleware(req: NextRequest) {
     { slug: 'bba', allowlist: BBA_ALLOWLIST as string[] },
     { slug: 'bca', allowlist: BCA_ALLOWLIST as string[] },
     { slug: 'mca', allowlist: MCA_ALLOWLIST as string[] },
+    { slug: 'ba', allowlist: BA_ALLOWLIST as string[] },
+    { slug: 'msc', allowlist: MSC_ALLOWLIST as string[] },
+    { slug: 'bsc', allowlist: BSC_ALLOWLIST as string[] },
   ]
   for (const { slug: progSlug, allowlist } of PROGRAMME_HUB_ALLOWLISTS) {
     // Match hub OR any subtree beneath it. The optional /.* after the
@@ -489,6 +500,68 @@ export function middleware(req: NextRequest) {
         return new NextResponse(null, { status: 404 })
       }
       break
+    }
+  }
+
+  // ── 2e. Unknown segment under /universities/{id}/ → real 404 ─────────────
+  // 2d only fires for the ten slugs that own an allowlist. Any other second
+  // segment (a typo, a stale external link, a scraped slug) falls through to
+  // app/universities/[id]/[program]/, whose resolver calls notFound() but
+  // cannot set the status: that route has a loading.tsx, so Next flushes the
+  // streaming shell with a 200 before the page component ever runs. Same
+  // class of soft 404 that 2d exists to close, so close it the same way, at
+  // the edge, where no streaming has started yet.
+  //
+  // app/universities/[id]/ has no non-programme children, so the set of
+  // legitimate second segments is exactly the ten allowlisted programme slugs
+  // plus the segments an earlier section or a next.config.js redirect already
+  // owns. Those are exempted rather than 404'd so their 308 still fires
+  // regardless of whether middleware or next.config redirects run first.
+  const KNOWN_UNI_CHILD_SEGMENTS = new Set<string>([
+    ...PROGRAMME_HUB_ALLOWLISTS.map(r => r.slug),
+    // section 0 above
+    'programmes',
+    // next.config.js redirects
+    'mba-wx',
+    'online-mba', 'online-mca', 'online-bba', 'online-bca', 'online-bcom',
+    'online-mcom', 'online-ma', 'online-ba', 'online-msc', 'online-bsc',
+  ])
+  const uniChildMatch = pathname.match(/^\/universities\/[^/]+\/([^/]+)(?:\/.*)?$/)
+  if (uniChildMatch && !KNOWN_UNI_CHILD_SEGMENTS.has(uniChildMatch[1].toLowerCase())) {
+    return new NextResponse(null, { status: 404 })
+  }
+
+  // ── 2f. Valid hub, unknown specialisation → real 404 ─────────────────────
+  // The last soft-404 class under /universities. 2d and 2e stop at the hub, so
+  // /universities/{allowlisted-uni}/{prog}/{anything} still reached the spec
+  // route, which calls notFound() in both the page component and
+  // generateMetadata and still served the not-found UI inside a 200.
+  //
+  // dynamicParams=false, the fix used on /blog/[slug] and /universities/[id],
+  // is not available here. generateStaticParams deliberately omits two sets
+  // that must keep working: 148 spec URLs that render real content via alias
+  // resolution, and 2,991 alias URLs that 308 onto their canonical slug.
+  // Prerendering the latter would degrade those 308s into meta-refresh HTML
+  // (see getProgramSpecParams in lib/data/programs.ts). Both counts measured
+  // 2026-08-29. So the status is decided here instead, before Next routes.
+  //
+  // Allowlist source: resolveSpec() in lib/data/programs.ts, materialised by
+  // scripts/build-spec-allowlist.mts, invariance enforced by
+  // scripts/check-spec-allowlist.ts on pre-commit. Alias slugs ARE in the
+  // allowlist, so they pass here and the route still issues its 308.
+  const SPEC_ALLOWLIST = SPEC_ALLOWLIST_RAW as unknown as { s: string[]; m: Record<string, number[]> }
+  const specMatch = pathname.match(/^\/universities\/([^/]+)\/([^/]+)\/([^/]+)\/?$/)
+  if (specMatch) {
+    const [, specUniId, specProgSlug, specSlug] = specMatch
+    // Only the ten real programme slugs. The online-* and mba-wx segments
+    // exempted in 2e reach here too, and next.config.js owns their 308.
+    if (PROGRAMME_HUB_ALLOWLISTS.some(r => r.slug === specProgSlug)) {
+      const accepted = SPEC_ALLOWLIST.m[`${specUniId}|${specProgSlug}`]
+      const wanted = specSlug.toLowerCase()
+      // No entry at all means the hub is real but carries no specialisation,
+      // so nothing beneath it can resolve either.
+      const ok = accepted ? accepted.some(i => SPEC_ALLOWLIST.s[i] === wanted) : false
+      if (!ok) return new NextResponse(null, { status: 404 })
     }
   }
 

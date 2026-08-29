@@ -22,12 +22,20 @@ export async function generateMetadata(
   const { id, program: programSlug, spec: specSlug } = await params
   const u = getUniversityById(id)
   const program = PM[programSlug?.toLowerCase()]
-  if (!u || !program) return { title: 'Not Found', robots: { index: false, follow: false } }
+  // Soft-404 fix (2026-08-29): notFound() here, not a noindex title. This route
+  // sits under app/universities/[id]/loading.tsx, so by the time the page
+  // component runs Next has already flushed the streaming shell with a 200 and
+  // its notFound() can only swap the UI, never the status. generateMetadata
+  // resolves before that first flush, so throwing here is what actually
+  // produces HTTP 404. Branch order mirrors the page component exactly; the
+  // !pd branch stays a plain return so the page's redirect() still wins.
+  if (!u) notFound()
+  if (!program) return { title: 'Not Found', robots: { index: false, follow: false } }
 
   const pd      = u.programDetails[program]
   if (!pd) return { title: 'Not Found', robots: { index: false, follow: false } }
   const resolved = resolveSpec(id, program, programSlug.toLowerCase(), specSlug)
-  if (!resolved) return { title: 'Not Found', robots: { index: false, follow: false } }
+  if (!resolved) notFound()
   const spec = resolved.name
   const canonicalSlug = resolved.slug
 

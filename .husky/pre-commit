@@ -56,6 +56,13 @@ npx tsx scripts/check-spec-rescue.ts || exit 1
 echo "pre-commit: check-programme-allowlist-resolver"
 npx tsx scripts/check-programme-allowlist-resolver.ts || exit 1
 
+# Spec allowlist invariant. Blocks any commit where lib/data/spec-allowlist.json
+# disagrees with resolveSpec(), or where a sitemap spec URL is absent from it.
+# Middleware section 2f 404s specialisations at the edge using this file, so a
+# stale or too-narrow list would 404 pages that render real content.
+echo "pre-commit: check-spec-allowlist"
+npx tsx scripts/check-spec-allowlist.ts || exit 1
+
 # Task 3 slice 3c: never-both-404 and never-both-redirect invariants on the
 # actual sitemap() output. Blocks any commit where a HUB URL in the sitemap
 # would be 404'd by the middleware allowlist (class-A/B/C), or where any

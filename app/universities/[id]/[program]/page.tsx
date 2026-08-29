@@ -46,9 +46,13 @@ export async function generateMetadata(
   const resolvedParams = params instanceof Promise ? await params : params
   const { id, program: programSlug } = resolvedParams
   const r = resolveProgramme(id, programSlug)
-  if (r.kind === 'not-found') {
-    return { title: 'Program Not Found', robots: { index: false, follow: false } }
-  }
+  // Soft-404 fix (2026-08-29): notFound() here, not a noindex title. The page
+  // component's notFound() below runs after loading.tsx has flushed the
+  // streaming shell with a 200, so it can only swap the UI. generateMetadata
+  // resolves before that flush, which is what makes the status a real 404.
+  // Middleware section 2d/2e also 404s these at the edge; this is the
+  // app-side half of the same invariant.
+  if (r.kind === 'not-found') notFound()
   const u = r.university
   const program = r.program
   const pd: ProgramDetail = r.pd

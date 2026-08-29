@@ -294,7 +294,11 @@ for (const u of universities) {
 // the chain is broken and we should not silently pass.
 // Keep in sync with the middleware.ts PROGRAMME_HUB_ALLOWLISTS list and with
 // scripts/build-programme-allowlist.js SCOPE_PROGRAMS.
-const ALLOWLIST_PROGRAMMES = ['ma', 'bcom', 'mcom', 'mba', 'bba', 'bca', 'mca']
+// Slice 6 (2026-08-29): + ba, msc, bsc, matching the widened middleware
+// scope. Without them the sitemap kept 3 Amity hub/spec URLs whose
+// programme is absent from both u.programs and u.programDetails, so the
+// edge now returns a real 404 for a URL the sitemap advertises.
+const ALLOWLIST_PROGRAMMES = ['ma', 'bcom', 'mcom', 'mba', 'bba', 'bca', 'mca', 'ba', 'msc', 'bsc']
 const programmeAllowlists = new Map()
 for (const prog of ALLOWLIST_PROGRAMMES) {
   const p = path.join(ROOT, 'lib', 'data', `programme-allowlist-${prog}.json`)

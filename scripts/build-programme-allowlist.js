@@ -29,7 +29,12 @@ const OUT = path.join(ROOT, 'lib', 'data', 'programme-allowlist-ma.json')
 // Slice 2 (2026-08-18): + 'B.Com', 'M.Com'.
 // Slice 3a (2026-08-18): + 'MBA' (first specialised route).
 // Slice 3b (2026-08-18): + 'BBA', 'BCA', 'MCA' (remaining specialised routes).
-const SCOPE_PROGRAMS = ['MA', 'B.Com', 'M.Com', 'MBA', 'BBA', 'BCA', 'MCA']
+// Slice 6 (2026-08-29): + 'BA', 'MSc', 'BSc'. These three were real programmes
+// in lib/data.ts (27 / 17 / 2 universities) served by the generic
+// [program] route, but had no allowlist, so middleware section 2d never saw
+// them and every /universities/{uni}/{ba|msc|bsc} path for a uni that does
+// not offer them returned a soft 404.
+const SCOPE_PROGRAMS = ['MA', 'B.Com', 'M.Com', 'MBA', 'BBA', 'BCA', 'MCA', 'BA', 'MSc', 'BSc']
 
 const src = fs.readFileSync(DATA_TS, 'utf8')
 // Truncate at end of UNIVERSITIES export so trailing PROGRAM_META (same 'MBA'
