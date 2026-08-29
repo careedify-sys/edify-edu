@@ -198,8 +198,12 @@ export default async function UniversityPage(
   )
 }
 
-// ── ISR Configuration — revalidate every 6 hours ──
 export const revalidate = false
 
-// ── Allow dynamic params for new universities added via CMS ──
-export const dynamicParams = true
+// dynamicParams=false so an unknown university id 404s at the routing layer
+// with a real status. With dynamicParams=true and revalidate=false the route
+// rendered unknown ids on demand and served the not-found UI inside a 200,
+// i.e. a soft 404. The comment here used to say "for new universities added
+// via CMS", but the CMS is not in use and generateStaticParams above already
+// enumerates every entry in UNIVERSITIES, so the param set is closed.
+export const dynamicParams = false
