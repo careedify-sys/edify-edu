@@ -49,6 +49,14 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
         { slug: 'nmims-online-mba-review-2026', label: 'NMIMS Online MBA Review 2026: Fees, Accreditation and Placement Data' },
       ],
     },
+    bba: {
+      universityName: 'NMIMS Online',
+      shortName: 'NMIMS',
+      programPage: '/universities/nmims-online/bba',
+      blogs: [
+        { slug: 'nmims-online-bba-review-2026', label: 'NMIMS Online BBA Review 2026: Fees, BA Electives, Honest Take' },
+      ],
+    },
   },
   'symbiosis-university-online': {
     mba: {
@@ -174,6 +182,14 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
         { slug: 'is-chandigarh-university-online-fake-or-legit-2026', label: 'Is Chandigarh University Online Fake or Legit? 2026' },
       ],
     },
+    bba: {
+      universityName: 'Chandigarh University Online',
+      shortName: 'CU Online',
+      programPage: '/universities/chandigarh-university-online/bba',
+      blogs: [
+        { slug: 'chandigarh-online-bba-review-2026', label: 'Chandigarh Online BBA Review 2026: Fees, Scholarship, Honest Take' },
+      ],
+    },
   },
   'jain-university-online': {
     mba: {
@@ -192,6 +208,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       programPage: '/universities/galgotias-university-online/mba',
       blogs: [
         { slug: 'galgotias-online-mba-review', label: 'Galgotias University Online MBA Fees 2026: ₹80,200 Review and Honest Rating' },
+        { slug: 'is-galgotias-university-online-fake-or-legit-2026', label: 'Is Galgotias University Online Fake or Legit? 2026' },
       ],
     },
   },
@@ -235,12 +252,23 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
   // Deliberately NOT added:
   //   imt-ghaziabad-online-mba-review-2026, xlri-online-mba-review-2026
   //     no such university in lib/data.ts, so there is no hub to point at.
-  //   lpu-online-bba-review-2026, nmims-online-bba-review-2026,
-  //   chandigarh-online-bba-review-2026
+  //   lpu-online-bba-review-2026
   //     hub exists but is noindex (fails shouldIndexProgrammeHub: no page
   //     content JSON and no verified fee). Add once the fee data lands.
   //   the four "x-vs-y" comparison posts and the topic posts
   //     no single university owns them.
+  //
+  // ── Revised 2026-08-29 (revenue-first track) ──────────────────────────────
+  // nmims-online-bba-review-2026 and chandigarh-online-bba-review-2026 are now
+  // wired: both hubs resolve a verified fee, so shouldIndexProgrammeHub passes
+  // and both serve index,follow live. lpu-online-bba-review-2026 stays out,
+  // /universities/lovely-professional-university-online/bba is still Rule 4a
+  // suppressed (pd.fees '₹0.2L – ₹1.5L' vs reference 161600-200000).
+  //
+  // Also registered here: is-parul-university-online-fake-or-legit-2026 and
+  // is-galgotias-university-online-fake-or-legit-2026. Both shipped 26-27 Aug
+  // without an entry, so app/blog/[slug] emitted no CollegeOrUniversity JSON-LD
+  // for either. Registering the slug is what turns that schema block on.
   'vignan-university-online': {
     mba: {
       universityName: "Vignan's Foundation for Science, Technology & Research Online",
@@ -331,6 +359,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       verifyPage: '/verify/parul-university-online',
       blogs: [
         { slug: 'parul-online-mba-review', label: 'Parul University Online MBA Review 2026: Real Fee and the NIRF Category Trap' },
+        { slug: 'is-parul-university-online-fake-or-legit-2026', label: 'Is Parul University Online Fake or Legit? 2026' },
       ],
     },
   },
