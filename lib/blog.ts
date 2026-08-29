@@ -41,6 +41,138 @@ export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "is-sharda-university-online-fake-or-legit-2026",
+    title: "Is Sharda University Online Fake or Legit? The A+ Is Real, and It Sits at the Floor of the Band",
+    seoTitle: "Is Sharda University Online Fake? No, But Check the CGPA",
+    metaDescription: "Sharda University is UGC-DEB entitled and NAAC A+, but the CGPA is 3.27, there is no NIRF Management rank, and no AICTE approval on its online programmes.",
+    category: "University Reviews",
+    tags: ["is sharda university fake","sharda university online legit","sharda university ugc approved","sharda university naac grade","sharda online mba valid","sharda university nirf rank","Sharda University Fake or Legit 2026"],
+    publishedAt: "2026-08-29",
+    readTime: 8,
+    targetKeyword: "is Sharda University online fake or legit",
+    relatedUniversities: ["sharda-university-online"],
+    status: "published",
+    author: "Rishi Kumar",
+    ctaTitle: "Compare Sharda Against Other Online Universities",
+    ctaDesc: "See UGC-DEB entitlement, NAAC CGPA and NIRF category ranks side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
+    faqs: [
+      { q: "Is Sharda University online fake?", a: "No. Sharda University is a recognised private university in Uttar Pradesh and appears on the UGC-DEB entitled list for online delivery. It has never appeared on the UGC list of institutions declared fake. The confusion usually comes from several different websites carrying the Sharda Online name. Reach the online school by clicking through from sharda.ac.in rather than from an advertisement or an agent link." },
+      { q: "Is the Sharda University online degree valid?", a: "Yes. Sharda is UGC-DEB entitled for online delivery across BA, BBA, BCA, M.Com, MA, MBA and MCA. UGC treats an online degree from an entitled university as equivalent to a conventional one for employment, government recruitment and further study. Entitlement is granted intake by intake, so confirm your programme and admission year at deb.ugc.ac.in." },
+      { q: "What is the Sharda University NAAC grade?", a: "A+, from its second assessment cycle, awarded in January 2023 and valid to January 2030. The CGPA behind the grade is 3.27. The A+ band runs from 3.26 to 3.50, so Sharda sits just above the floor of that band. The grade is genuine, but ask for the CGPA rather than the letter when comparing universities. Verify at naac.gov.in." },
+      { q: "Is Sharda University AICTE approved for online programmes?", a: "No. Sharda holds UGC-DEB entitlement for its online programmes but they are not AICTE listed. For most employment and further study this changes nothing, because UGC-DEB entitlement is what establishes validity. It matters only if a specific government or PSU recruitment notification names AICTE approval in its eligibility clause. Read the notification before you enrol." },
+      { q: "Does Sharda University have a NIRF rank?", a: "Yes, in two categories, and neither is Management. For 2025 it holds rank 87 in the University category and rank 57 in Pharmacy. There is no Management rank, so an online MBA applicant has no NIRF position describing that school. An absent rank is not a bad rank, but it does limit how you can compare. Check each category at nirfindia.org." },
+      { q: "Is Sharda University Uzbekistan the same university?", a: "No. Sharda University Uzbekistan at Andijan was established in 2019 under an Uzbek presidential decree and is licensed by that country’s higher education ministry. It is a separate legal entity. A degree from it is not the UGC-DEB entitled Indian degree. If any prospectus or agent mentions an international campus while you are applying online from India, ask which legal entity awards the certificate." },
+      { q: "Which Sharda Online website is the real one?", a: "Several domains carry the Sharda Online name. The one linked from the university’s own website navigation is shardaonline.ac.in. The safe practice is to start at sharda.ac.in and click through to the online school from there, rather than starting from an advertisement, a forwarded message or an agent link. If a payment page sits on a domain you did not reach that way, stop." },
+      { q: "Is Sharda University good for an online MBA?", a: "It is a reasonable mid-market choice if you want an entitled degree from a recognised private university and you are in or near the Delhi capital region. It is a weaker choice if you are buying institutional prestige, since there are entitled universities with higher NAAC CGPAs and actual Management rankings. Decide on fees and the full record rather than on the A+ alone." },
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 29 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Legal status, UGC-DEB entitlement, accreditation and ranking data checked against UGC, NAAC and NIRF records.</em></p>
+
+<p>You probably landed here because you found more than one website calling itself Sharda Online, or because someone quoted you a NAAC grade that does not match what you read somewhere else. Both of those things are real, and both have straightforward explanations.</p>
+
+<p>Sharda is not fake. But there are four specifics worth knowing before you pay, and most pages ranking for this question get at least one of them wrong.</p>
+
+<div class="callout-key"><strong>Short answer:</strong> Sharda University is a recognised private university in Uttar Pradesh, UGC-DEB entitled for online delivery across BA, BBA, BCA, M.Com, MA, MBA and MCA. It is NAAC accredited at A+ with a CGPA of 3.27. It holds a NIRF University rank and a NIRF Pharmacy rank, but none in Management. It does not carry AICTE approval on its online programmes.</div>
+
+<h2>The A+ is real. It also sits at the floor of the band.</h2>
+
+<p>Sharda holds NAAC A+ from its second assessment cycle, awarded in January 2023 and valid to January 2030. The CGPA behind that grade is 3.27.</p>
+
+<p>Here is the part nobody mentions. The A+ band runs from 3.26 to 3.50. Sharda sits at 3.27, one hundredth of a point above the bottom of the band. A university at 3.49 and a university at 3.27 both advertise the same two characters, and they are not describing the same assessment outcome.</p>
+
+<p>That is not an accusation of anything. The grade is genuine, it was properly awarded, and A+ is a good grade. It just means the words "NAAC A+" carry less information than the marketing implies, and the CGPA is the number actually worth asking for.</p>
+
+<div class="pull">Ask for the CGPA, not the letter. Two universities can both say A+ and sit a full quarter-point apart.</div>
+
+<p>Worth noting: while researching this I found pages currently ranking for this exact question that state Sharda's grade as B++. That is wrong. If a site cannot get the accreditation grade right, treat the rest of its fee and placement numbers with the same suspicion.</p>
+
+<h2>No AICTE approval on the online programmes</h2>
+
+<p>Sharda's online programmes are UGC-DEB entitled. None of them is AICTE listed.</p>
+
+<p>For most people this changes nothing. UGC-DEB entitlement is what establishes that an online degree is equivalent to a conventional one for employment, government recruitment and further study. AICTE is a separate technical-education body, and its approval is not a general requirement for an online MBA or MCA to be valid.</p>
+
+<p>It matters in one situation. Some government and PSU recruitment notifications name AICTE approval explicitly in their eligibility clause. If you are studying specifically to clear a recruitment rule you have already read, check whether that rule names AICTE. If it does, Sharda's online programmes will not satisfy it, and no amount of UGC-DEB entitlement changes that.</p>
+
+<p>This is the single most useful thing on this page and I have not seen another site mention it.</p>
+
+<h2>NIRF ranks Sharda, but not for management</h2>
+
+<p>NIRF ranks the parent institution, not the online arm, and it publishes separate lists per category.</p>
+
+<p>For 2025 Sharda holds rank 87 in the University category and rank 57 in Pharmacy. It holds no rank in the Management category.</p>
+
+<p>So if you are weighing the online MBA, there is no NIRF position that describes your programme's school. The University rank of 87 describes the institution as a whole. The Pharmacy rank of 57 is irrelevant to you unless you are a pharmacy student, and any page that quotes it at an MBA applicant is padding.</p>
+
+<p>An absent rank is not a bad rank. Plenty of solid institutions never enter a given category. But it does mean you cannot use NIRF to compare Sharda's management provision against a university that does hold a Management rank.</p>
+
+<div class="callout-warning"><strong>Verify before you pay.</strong> NAAC grades expire and UGC-DEB entitlement is granted intake by intake. Confirm the A+ grade, the 3.27 CGPA and the validity window at naac.gov.in, and confirm your specific programme and admission year appear on the entitled list at deb.ugc.ac.in. A screenshot from a counsellor is not verification.</div>
+
+<h2>More than one website says Sharda Online</h2>
+
+<p>This is the thing that sends most people to Google asking whether Sharda is fake, and it is a fair question to ask.</p>
+
+<p>Several different domains carry the Sharda Online name. Only one of them is linked from the university's own website navigation, and that is shardaonline.ac.in. I checked this from sharda.ac.in itself rather than taking anyone's word for it.</p>
+
+<p>I am not going to accuse any other domain of being fraudulent, because some of them are probably marketing sites the university itself commissioned. But you have no way of telling from the outside, and you should not have to.</p>
+
+<p>So use the rule that works regardless. Start at sharda.ac.in and click through to the online school from there. Never start from an advertisement, a WhatsApp forward, or a link an agent sends you. If a payment page asks for money on a domain you did not reach by clicking through from the university's own site, stop.</p>
+
+<h2>Three places called Sharda, and one of them is not in India</h2>
+
+<p>Sharda operates its main campus at Knowledge Park III in Greater Noida. It also has a campus at Agra.</p>
+
+<p>And since 2019 there has been Sharda University Uzbekistan, at Andijan, established under an Uzbek presidential decree and licensed by Uzbekistan's higher education ministry. It is a separate legal entity, not a branch you can enrol into from India expecting an Indian degree.</p>
+
+<p>The distinction matters because a degree from the Uzbek institution is not the UGC-DEB entitled Indian degree you are researching. If any prospectus, agent or website mentions an international campus while you are applying for an online Indian degree, ask plainly which legal entity awards the certificate.</p>
+
+<h2>Verify Sharda yourself in four minutes</h2>
+
+<p>Four checks, four official sites, no logins, no counsellor required.</p>
+
+<p><strong>One.</strong> Open deb.ugc.ac.in, find Sharda University on the entitled list, and confirm the mode column says Online and your programme is named. Entitlement covers specific programmes, not the whole university.</p>
+
+<p><strong>Two.</strong> Open naac.gov.in and confirm the grade, the CGPA of 3.27 and the validity window. If the CGPA you are shown does not match, ask why.</p>
+
+<p><strong>Three.</strong> Open nirfindia.org and check the University category. Do not accept a Pharmacy rank as evidence about a management programme.</p>
+
+<p><strong>Four.</strong> Open ugc.gov.in and search the notices archive for the university name. This is the step almost nobody takes and it is the one that surfaces regulatory action before you pay.</p>
+
+<h2>Who should apply, and who should not</h2>
+
+<p>Sharda suits you if you want a UGC-DEB entitled degree from a recognised private university at a mid-market price, you are in or near the Delhi capital region where the name is known, and you value getting the paperwork right over buying a brand.</p>
+
+<p>It suits you less if you are optimising for institutional prestige. There are entitled universities with higher NAAC CGPAs and actual Management rankings, and if the name on the certificate is doing heavy lifting in your plan, Sharda is not the strongest card available.</p>
+
+<p>It also does not suit you if your target recruitment rule names AICTE. Read the notification first. That one is not a matter of opinion.</p>
+
+<h2>Final word</h2>
+
+<p>Sharda is a legitimate, entitled, properly accredited university, and the online degree it awards is valid for employment, government recruitment and further study. Nothing on this page should be read as a warning against it.</p>
+
+<p>What I would say is that the marketing around it is doing more work than the underlying record needs. The A+ is at the floor of its band, there is no Management ranking, and there is no AICTE approval. None of those is disqualifying. All three are things you should know before you sign, and all three are absent from every other page answering this question. Decide on the whole picture.</p>
+
+<div class="cta-box"><strong>Want to see how Sharda compares on the numbers that matter?</strong><br>Talk to our counsellor for current fees and a like-for-like comparison against other UGC-DEB entitled universities. Edify compares public UGC, NAAC and NIRF data only, no paid rankings and no referral commissions.<br><a class="ilink" href="/contact">Talk to our counsellor</a></div>
+
+<h2>Related reading on edifyedu.in</h2>
+
+<p>The CGPA-band point above is worth understanding properly before you compare any two universities. Our <a href="/blog/naac-accreditation-explained-grades-india-2026">guide to NAAC grades and what each band actually means</a> covers it in full, and <a href="/blog/nirf-ranking-explained-online-mba-2026">how NIRF rankings work for online MBA applicants</a> explains why category matters more than the number.</p>
+
+<p>For a different case of a university whose record is stronger than its reputation suggests, read <a href="/blog/is-nmims-online-fake-or-legit-2026">our verification of NMIMS Online</a>. If you are shortlisting within the state, <a href="/blog/online-mba-uttar-pradesh-2026">online MBA options in Uttar Pradesh</a> covers the wider field.</p>
+
+<p>The <a href="/universities/sharda-university-online/mba">Sharda MBA programme page</a> carries current fee and specialisation data, the <a href="/verify/sharda-university-online">Sharda verification page</a> shows the UGC-DEB, NAAC and NIRF record in one place, and you can weigh it against any other university with the <a href="/compare">comparison tool</a>.</p>
+
+<h2>Sources to consult</h2>
+
+<ul>
+<li><strong>deb.ugc.ac.in</strong> for the UGC-DEB entitled list, the mode column and the programmes covered for your intake year.</li>
+<li><strong>naac.gov.in</strong> for the A+ grade, the CGPA behind it and the validity window to January 2030.</li>
+<li><strong>nirfindia.org</strong> for the University and Pharmacy category rankings, which are separate lists.</li>
+<li><strong>ugc.gov.in</strong> for the public notices archive and the list of institutions declared fake.</li>
+</ul>
+
+<p style="font-size:13px;color:#64748b;margin:24px 0 0"><em>Disclaimer: accreditation status, UGC-DEB entitlement and ranking data change between assessment cycles and admission sessions. Every figure here was checked against UGC, NAAC and NIRF records on 29 August 2026. Verify current status against the official sources above before making any payment. EdifyEdu is independent, takes no referral commission and does not sell rankings.</em></p>`
+  },
+  {
     slug: "is-nmims-online-fake-or-legit-2026",
     title: "Is NMIMS Online Fake or Legit? UGC Did Debar It Once, and That Story Has an Ending",
     seoTitle: "Is NMIMS Online Fake? No. But Read the 2023 UGC Notice",

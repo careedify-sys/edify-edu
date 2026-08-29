@@ -352,6 +352,21 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       ],
     },
   },
+  // Added 2026-08-29 (revenue-first track). Sharda had no entry at all despite
+  // being a converting university with five of six hubs at 200 + index,follow.
+  // The BCA hub is excluded: it is still Rule 4a fee-suppressed and noindex.
+  'sharda-university-online': {
+    mba: {
+      universityName: 'Sharda University Online',
+      shortName: 'Sharda',
+      programPage: '/universities/sharda-university-online/mba',
+      comparePage: '/compare?a=sharda-university-online&b=nmims-online',
+      verifyPage: '/verify/sharda-university-online',
+      blogs: [
+        { slug: 'is-sharda-university-online-fake-or-legit-2026', label: 'Is Sharda University Online Fake or Legit? 2026' },
+      ],
+    },
+  },
   'parul-university-online': {
     mba: {
       universityName: 'Parul University Online',
