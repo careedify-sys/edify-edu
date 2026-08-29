@@ -352,6 +352,23 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       ],
     },
   },
+  // Added 2026-08-29 (revenue-first track). Mangalayatan had no entry at all
+  // despite every one of its seven hubs serving 200 and index,follow, and
+  // despite /verify/mangalayatan-university-online being the best performing
+  // converting-university URL on the site (19 clicks, 1.95% CTR, position 4.85
+  // in the 28-day GSC export).
+  'mangalayatan-university-online': {
+    mba: {
+      universityName: 'Mangalayatan University Online',
+      shortName: 'Mangalayatan',
+      programPage: '/universities/mangalayatan-university-online/mba',
+      comparePage: '/compare?a=mangalayatan-university-online&b=sharda-university-online',
+      verifyPage: '/verify/mangalayatan-university-online',
+      blogs: [
+        { slug: 'is-mangalayatan-university-online-fake-or-legit-2026', label: 'Is Mangalayatan University Online Fake or Legit? 2026' },
+      ],
+    },
+  },
   // Added 2026-08-29 (revenue-first track). Sharda had no entry at all despite
   // being a converting university with five of six hubs at 200 + index,follow.
   // The BCA hub is excluded: it is still Rule 4a fee-suppressed and noindex.

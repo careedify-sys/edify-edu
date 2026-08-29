@@ -41,6 +41,128 @@ export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "is-mangalayatan-university-online-fake-or-legit-2026",
+    title: "Is Mangalayatan University Online Fake or Legit? A Real Degree With a Thinner Record Than the Badges Suggest",
+    seoTitle: "Is Mangalayatan University Online Fake? No. Check the Cycle",
+    metaDescription: "Mangalayatan University, Aligarh is UGC-DEB entitled and NAAC A+ at CGPA 3.34. But the grade is first cycle, and it holds no published NIRF rank in any category.",
+    category: "University Reviews",
+    tags: ["is mangalayatan university fake","mangalayatan university online legit","mangalayatan ugc deb approved","mangalayatan naac grade","mangalayatan online mba valid","mangalayatan nirf rank","Mangalayatan Fake or Legit 2026"],
+    publishedAt: "2026-08-29",
+    readTime: 7,
+    targetKeyword: "is Mangalayatan University online fake or legit",
+    relatedUniversities: ["mangalayatan-university-online"],
+    status: "published",
+    author: "Rishi Kumar",
+    ctaTitle: "Compare Mangalayatan Against Other Online Universities",
+    ctaDesc: "See UGC-DEB entitlement, NAAC cycle and CGPA, and NIRF position side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
+    faqs: [
+      { q: "Is Mangalayatan University online fake?", a: "No. Mangalayatan University, Aligarh was created by the Mangalayatan University, Uttar Pradesh Act No. 32 of 2006, gazetted in October 2006. It is UGC entitled, appears on the UGC-DEB list for online delivery, and does not appear on the UGC list of institutions declared fake. You can confirm all of that yourself at ugc.gov.in and deb.ugc.ac.in." },
+      { q: "Is the Mangalayatan online degree valid?", a: "Yes. Mangalayatan is UGC-DEB entitled for online delivery across BBA, BCA, M.Com, MA, MBA, MCA and MSc. UGC treats an online degree from an entitled university as equivalent to a conventional one for employment, government recruitment and further study. Entitlement is granted per programme and per intake session, so confirm your own programme and year at deb.ugc.ac.in." },
+      { q: "What is the Mangalayatan NAAC grade?", a: "A+ with a CGPA of 3.34, awarded in March 2023 and valid to March 2030. The A+ band runs 3.26 to 3.50, so 3.34 sits comfortably inside it. The detail worth knowing is that this was the first assessment cycle, seventeen years after the university was founded. A first-cycle grade is a snapshot rather than a track record. Verify at naac.gov.in." },
+      { q: "Does Mangalayatan University have a NIRF rank?", a: "No published rank or band in any category. The university does submit data to NIRF and hosts its submission documents for the Overall, Pharmacy and Management categories, but submitting is not the same as being ranked. Some comparison sites quote a band for Mangalayatan; that could not be confirmed from NIRF or from the university’s own disclosure. Check nirfindia.org yourself." },
+      { q: "Is Mangalayatan University Aligarh the same as Mangalayatan University Jabalpur?", a: "No. They carry the same name but are two separate legal creations. The Aligarh institution was created by a Uttar Pradesh Act in 2006. The Jabalpur institution in Madhya Pradesh was created under a Madhya Pradesh private university Act notified in 2019. The UGC-DEB entitlement and the NAAC A+ described here belong to the Aligarh entity. Ask in writing which one awards your certificate." },
+      { q: "Why is Mangalayatan so much cheaper than other online universities?", a: "It is a young state private university with one accreditation cycle and no NIRF position, so it competes on price rather than on brand. That is a rational trade if you need a valid, entitled qualification and the name on the certificate does not have to do heavy lifting. It is a poor trade if you are buying recognition, particularly outside Uttar Pradesh." },
+      { q: "Will employers accept a Mangalayatan online degree?", a: "For validity purposes yes, because UGC-DEB entitlement makes it equivalent to a conventional degree for employment, government recruitment and further study. For recognition purposes it varies. It is a young institution without a NIRF position, and recruiters outside Uttar Pradesh may not know the name. Validity and recognition are different things and it is worth being clear about which one you need." },
+      { q: "How do I check my Mangalayatan programme is actually approved?", a: "Do not check whether the university is approved, check whether your exact programme is. Open deb.ugc.ac.in, find Mangalayatan University, confirm the mode column reads Online, and confirm your specific programme is named for the session you are joining. Entitlement is granted programme by programme and intake by intake, and a university can market something that sits outside its current list." },
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 29 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Legal status, UGC-DEB entitlement, accreditation and ranking data checked against UGC, NAAC and NIRF records.</em></p>
+
+<p>Mangalayatan is one of the cheapest UGC-DEB entitled online degrees in India, and cheap makes people suspicious. That suspicion is worth taking seriously, so this page answers it with records rather than reassurance.</p>
+
+<p>The short version: it is a real university created by a state Act, and the degree is valid. Three specifics deserve your attention before you pay, and no page currently ranking for this question mentions any of them.</p>
+
+<div class="callout-key"><strong>Short answer:</strong> Mangalayatan University, Aligarh is a state private university created by the Mangalayatan University, Uttar Pradesh Act No. 32 of 2006. It is UGC-DEB entitled for online delivery across BBA, BCA, M.Com, MA, MBA, MCA and MSc. It holds NAAC A+ at CGPA 3.34, awarded in its first assessment cycle in 2023 and valid to 2030. It holds no published NIRF rank in any category.</div>
+
+<h2>The A+ is first cycle, and that changes what it tells you</h2>
+
+<p>Mangalayatan holds NAAC A+ with a CGPA of 3.34. The grade was awarded in March 2023 and runs to March 2030. The A+ band covers 3.26 to 3.50, so 3.34 sits comfortably inside it rather than scraping the floor. That is a decent grade and I am not going to talk it down.</p>
+
+<p>What matters more is the word cycle. This was Mangalayatan's first NAAC assessment, seventeen years after the university was founded in 2006.</p>
+
+<p>A first-cycle grade is a snapshot. A fourth-cycle grade is a track record. When a university has been assessed four times across two decades, you can see whether it improved, held steady or slipped. With one cycle you get a single reading and nothing to compare it against.</p>
+
+<div class="pull">A first-cycle A+ and a fourth-cycle A+ are not the same evidence, even though they print the same two characters.</div>
+
+<p>This is not a warning. Every accredited university had a first cycle once. It simply means the grade carries less history than a number alone suggests, and the honest question to ask is what the second cycle shows when it lands.</p>
+
+<h2>It takes part in NIRF. It holds no rank.</h2>
+
+<p>This is the part most likely to be misrepresented to you, and the distinction is genuinely useful.</p>
+
+<p>Mangalayatan submits data to NIRF. Its own website hosts the submission documents for the Overall, Pharmacy and Management categories going back several years. Submitting is a real thing universities do and it takes effort.</p>
+
+<p>Submitting is not the same as being ranked. NIRF publishes ranks for institutions that place, and rank bands for a wider set below that. Mangalayatan's own NIRF page publishes the submission files and states no rank and no band for any year in any category. Our records show no NIRF position for it either.</p>
+
+<p>I found aggregator pages quoting a band for Mangalayatan. I could not confirm one from NIRF or from the university's own disclosure. Until you can see it on nirfindia.org yourself, treat any Mangalayatan ranking claim as unsupported.</p>
+
+<p>An absent rank is not evidence of a bad university. Hundreds of legitimate Indian universities never place. But it does mean NIRF gives you nothing to compare Mangalayatan against, and anyone implying otherwise is selling.</p>
+
+<div class="callout-warning"><strong>Verify before you pay.</strong> NAAC grades expire and UGC-DEB entitlement is granted intake by intake and programme by programme. Confirm the A+ grade, the 3.34 CGPA and the validity window at naac.gov.in, and confirm that your specific programme and admission year appear on the entitled list at deb.ugc.ac.in. A screenshot from a counsellor is not verification.</div>
+
+<h2>There are two Mangalayatan universities</h2>
+
+<p>Check which one you are applying to. This is not a trick question, and it is easy to get wrong.</p>
+
+<p>Mangalayatan University, Aligarh sits in Uttar Pradesh and was created by a Uttar Pradesh Act in 2006. Mangalayatan University, Jabalpur sits in Madhya Pradesh and was created under a Madhya Pradesh private university Act notified in 2019. Two states, two legislatures, two separate legal creations carrying the same name.</p>
+
+<p>The UGC-DEB entitlement discussed on this page, and the NAAC A+ at 3.34, belong to the Aligarh entity. Do not assume a record you read about one applies to the other. If a prospectus, an advertisement or an agent is vague about which campus awards your certificate, make them put it in writing before you pay.</p>
+
+<h2>Entitlement is per programme, not per university</h2>
+
+<p>People read "UGC-DEB approved" as a property of the university. It is not. Entitlement is granted for named programmes, for named intake sessions.</p>
+
+<p>Mangalayatan is entitled across a broad set including BBA, BCA, M.Com, MA, MBA, MCA and MSc. That is a wide catalogue and it is genuinely useful at this price point.</p>
+
+<p>But a university can market a programme that sits outside its current entitled list, usually through drift rather than deceit, and the person selling to you will not know the difference. So do not check whether Mangalayatan is approved. Check whether the exact programme you are buying, for the exact session you are joining, is on the list. That takes two minutes and it is the only check that actually protects you.</p>
+
+<h2>Verify Mangalayatan yourself in four minutes</h2>
+
+<p>Four checks, four official sites, no logins.</p>
+
+<p><strong>One.</strong> Open deb.ugc.ac.in, find Mangalayatan University on the entitled list, confirm the mode column says Online, and confirm your programme is named against it.</p>
+
+<p><strong>Two.</strong> Open naac.gov.in and confirm the A+ grade, the CGPA of 3.34 and the validity window. Note the cycle number while you are there.</p>
+
+<p><strong>Three.</strong> Open nirfindia.org and search the categories. If you cannot find a rank, there is not one, whatever a comparison site told you.</p>
+
+<p><strong>Four.</strong> Open ugc.gov.in, search the notices archive for the university name, and check the list of institutions declared fake. Mangalayatan does not appear on that list, and now you will have confirmed it yourself instead of taking my word.</p>
+
+<h2>Who should apply, and who should not</h2>
+
+<p>Mangalayatan suits you if price is your binding constraint and you need a UGC-DEB entitled degree that will stand up for employment, government recruitment and further study. On that specific job it does the work, and it does it for a fraction of what the well-known names charge.</p>
+
+<p>It suits you less if the name on the certificate has to carry weight in an interview. It is a young state private university with one accreditation cycle and no NIRF position. Recruiters outside Uttar Pradesh may not recognise it at all, and no amount of correct paperwork changes that.</p>
+
+<p>So be honest with yourself about which of those two things you are buying. If you need the qualification, this is a rational choice. If you need the brand, spend more elsewhere or do not spend at all.</p>
+
+<h2>Final word</h2>
+
+<p>Mangalayatan is legitimate. It was created by an Act of a state legislature, it is UGC entitled, it is NAAC accredited at A+, and its online programmes sit on the UGC-DEB list. Nothing here should be read as a warning against it.</p>
+
+<p>What I would push back on is the marketing. A first-cycle accreditation and no NIRF rank is a thinner record than the badges on a landing page imply, and the honest way to buy this degree is with clear eyes about what it is: a valid, inexpensive, lightly-credentialed qualification from a young university. For a lot of people that is exactly the right purchase. Just make it deliberately.</p>
+
+<div class="cta-box"><strong>Want to see how Mangalayatan compares at this price point?</strong><br>Talk to our counsellor for current fees and a like-for-like comparison against other UGC-DEB entitled universities. Edify compares public UGC, NAAC and NIRF data only, no paid rankings and no referral commissions.<br><a class="ilink" href="/contact">Talk to our counsellor</a></div>
+
+<h2>Related reading on edifyedu.in</h2>
+
+<p>The cycle point above is worth understanding before you compare any two universities. Our <a href="/blog/naac-accreditation-explained-grades-india-2026">guide to NAAC grades and what each band means</a> explains how cycles work, and <a href="/blog/nirf-ranking-explained-online-mba-2026">how NIRF rankings work for online applicants</a> covers why an absent rank is not the same as a bad one.</p>
+
+<p>For a university in the same state with a fuller record, see our verification of <a href="/blog/is-sharda-university-online-fake-or-legit-2026">Sharda University Online</a>. If you are shortlisting across the state, <a href="/blog/online-mba-uttar-pradesh-2026">online MBA options in Uttar Pradesh</a> covers the wider field.</p>
+
+<p>The <a href="/universities/mangalayatan-university-online/mba">Mangalayatan MBA programme page</a> carries current fee and specialisation data, the <a href="/verify/mangalayatan-university-online">Mangalayatan verification page</a> shows the UGC-DEB and NAAC record in one place, and you can weigh it against any other university with the <a href="/compare">comparison tool</a>.</p>
+
+<h2>Sources to consult</h2>
+
+<ul>
+<li><strong>deb.ugc.ac.in</strong> for the UGC-DEB entitled list, the mode column and the programmes covered for your intake year.</li>
+<li><strong>naac.gov.in</strong> for the A+ grade, the CGPA of 3.34, the cycle number and the validity window to March 2030.</li>
+<li><strong>nirfindia.org</strong> to confirm for yourself that no rank or band is published in any category.</li>
+<li><strong>ugc.gov.in</strong> for the public notices archive and the list of institutions declared fake.</li>
+</ul>
+
+<p style="font-size:13px;color:#64748b;margin:24px 0 0"><em>Disclaimer: accreditation status, UGC-DEB entitlement and ranking data change between assessment cycles and admission sessions. Every figure here was checked against UGC, NAAC and NIRF records on 29 August 2026. Verify current status against the official sources above before making any payment. EdifyEdu is independent, takes no referral commission and does not sell rankings.</em></p>`
+  },
+  {
     slug: "is-sharda-university-online-fake-or-legit-2026",
     title: "Is Sharda University Online Fake or Legit? The A+ Is Real, and It Sits at the Floor of the Band",
     seoTitle: "Is Sharda University Online Fake? No, But Check the CGPA",
