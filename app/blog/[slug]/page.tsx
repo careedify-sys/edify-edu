@@ -128,7 +128,16 @@ export async function generateMetadata(
   }
 }
 
-export const dynamicParams = true
+// dynamicParams=false so any slug outside generateStaticParams 404s at the
+// routing layer with a real status. With dynamicParams=true and
+// revalidate=false the route rendered unknown slugs on demand and served the
+// not-found UI inside a 200 response, i.e. a soft 404 across the whole /blog
+// namespace. /guides and /coupons never had this because they use a numeric
+// revalidate. Verified: /blog/<unknown> was 200, /guides/<unknown> was 404.
+//
+// Safe here because every post lives in lib/blog.ts, which is committed, so a
+// publish is a deploy and generateStaticParams is always current.
+export const dynamicParams = false
 export const revalidate = false
 
 export async function generateStaticParams() {
