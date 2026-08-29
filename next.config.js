@@ -124,6 +124,33 @@ const nextConfig = {
       { source: '/universities/university-of-mumbai-online/mba/marketing',                        destination: '/universities/university-of-mumbai-online',         permanent: true },
       { source: '/universities/university-of-mumbai-online/mba/operations-management',            destination: '/universities/university-of-mumbai-online',         permanent: true },
 
+      // ── Soft-404 rescue (2026-08-29) ─────────────────────────────────────
+      // These 15 URLs carry real Search Console history (18 clicks, 1,784
+      // impressions, several on page 1) but no longer resolve: the spec or the
+      // programme is absent from lib/data.ts, so the route called notFound().
+      // Until 2e24d1d they were soft 404s, served inside a 200. That commit made
+      // them real 404s, which is correct for junk URLs but throws away the
+      // ranking signal these had earned. A 301 to the nearest live page keeps
+      // that signal and lands the user on the hub that lists what IS offered.
+      // Sourced from audit-data/Pages.csv; scripts/check-gsc-404s.mjs blocks any
+      // commit that lets another ranking URL 404 without a redirect here.
+      { source: '/universities/alliance-university-online/mba/business-analytics',                  destination: '/universities/alliance-university-online/mba', permanent: true },  // 1 clicks, 50 impr, pos 7.48
+      { source: '/universities/andhra-university-online/bcom',                                      destination: '/universities/andhra-university-online', permanent: true },  // 2 clicks, 84 impr, pos 10.27
+      { source: '/universities/bits-pilani-work-integrated-online/mba/healthcare-management',       destination: '/universities/bits-pilani-work-integrated-online/mba', permanent: true },  // 1 clicks, 647 impr, pos 5.96
+      { source: '/universities/bits-pilani-work-integrated-online/mba/hr-management',               destination: '/universities/bits-pilani-work-integrated-online/mba', permanent: true },  // 1 clicks, 17 impr, pos 9.94
+      { source: '/universities/bits-pilani-work-integrated-online/mba/marketing',                   destination: '/universities/bits-pilani-work-integrated-online/mba', permanent: true },  // 1 clicks, 21 impr, pos 8.62
+      { source: '/universities/dayananda-sagar-university-online/mba/healthcare-management',        destination: '/universities/dayananda-sagar-university-online/mba', permanent: true },  // 3 clicks, 28 impr, pos 4.32
+      { source: '/universities/ignou-online/mba/fintech',                                           destination: '/universities/ignou-online/mba', permanent: true },  // 1 clicks, 61 impr, pos 9.77
+      { source: '/universities/jain-university-online/mba/healthcare-management',                   destination: '/universities/jain-university-online/mba', permanent: true },  // 1 clicks, 488 impr, pos 6.05
+      { source: '/universities/jain-university-online/mba/project-management',                      destination: '/universities/jain-university-online/mba', permanent: true },  // 1 clicks, 35 impr, pos 22.23
+      { source: '/universities/karnataka-state-open-university-online/mba/supply-chain-management', destination: '/universities/karnataka-state-open-university-online/mba', permanent: true },  // 1 clicks, 3 impr, pos 4.33
+      { source: '/universities/mats-university-online/mba/finance-and-accounting-management',       destination: '/universities/mats-university-online/mba', permanent: true },  // 1 clicks, 63 impr, pos 10.46
+      { source: '/universities/nmims-online/mba/fintech',                                           destination: '/universities/nmims-online/mba', permanent: true },  // 1 clicks, 90 impr, pos 9.16
+      { source: '/universities/sastra-university-online/mca',                                       destination: '/universities/sastra-university-online', permanent: true },  // 1 clicks, 124 impr, pos 10.8
+      { source: '/universities/shoolini-university-online/mba/business-analytics',                  destination: '/universities/shoolini-university-online/mba', permanent: true },  // 1 clicks, 2 impr, pos 5.5
+      { source: '/universities/uttaranchal-university-online/mba/healthcare-management',            destination: '/universities/uttaranchal-university-online/mba', permanent: true },  // 1 clicks, 71 impr, pos 4.96
+
+
       // Dot-slug normalisation
       { source: '/programs/m.com',             destination: '/programs/mcom',  permanent: true },
       { source: '/programs/m.com/:path*',      destination: '/programs/mcom',  permanent: true },

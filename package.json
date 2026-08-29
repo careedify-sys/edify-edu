@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/build-verify-slugs.js && node scripts/update-canonical-slugs.js && node scripts/build-valid-urls.js && node scripts/backfill-manifest-from-data.js && node scripts/build-programme-allowlist.js && node scripts/prune-noindex-hub-urls.js",
+    "prebuild": "node scripts/build-verify-slugs.js && node scripts/update-canonical-slugs.js && node scripts/build-valid-urls.js && node scripts/backfill-manifest-from-data.js && node scripts/build-programme-allowlist.js && node scripts/prune-noindex-hub-urls.js && node scripts/apply-url-canonical-map.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",

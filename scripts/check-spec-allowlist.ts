@@ -39,6 +39,32 @@ const toSet = (a: SpecAllowlist) => {
 const committedSet = toSet(committed)
 const freshSet = toSet(fresh)
 
+// The alias -> canonical table drives a 308 at the edge, so drift there sends
+// traffic to the wrong slug just as surely as drift in the allowlist itself.
+const toRedirectSet = (a: SpecAllowlist) => {
+  const out = new Set<string>()
+  for (const [key, flat] of Object.entries(a.r ?? {})) {
+    for (let i = 0; i < flat.length; i += 2) out.add(`${key}|${a.s[flat[i]]} -> ${a.s[flat[i + 1]]}`)
+  }
+  return out
+}
+const committedRedirects = toRedirectSet(committed)
+const freshRedirects = toRedirectSet(fresh)
+const redirectDrift = [
+  ...[...freshRedirects].filter(x => !committedRedirects.has(x)).map(x => `resolver has, file lacks: ${x}`),
+  ...[...committedRedirects].filter(x => !freshRedirects.has(x)).map(x => `file has, resolver lacks: ${x}`),
+]
+if (redirectDrift.length) {
+  console.error(`FAIL: ${FILE} alias redirect table is stale (${redirectDrift.length} difference(s)).`)
+  for (const d of redirectDrift.slice(0, 15)) console.error(`    - ${d}`)
+  if (redirectDrift.length > 15) console.error(`    ...and ${redirectDrift.length - 15} more`)
+  console.error('')
+  console.error('Fix: npx tsx scripts/build-spec-allowlist.mts and stage the diff.')
+  hardFail = true
+} else {
+  console.log(`OK. ${FILE} alias table (${committedRedirects.size} redirects) agrees with resolveSpec.`)
+}
+
 const stale: string[] = []
 const extra: string[] = []
 for (const t of freshSet) if (!committedSet.has(t)) stale.push(t)

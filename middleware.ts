@@ -549,19 +549,38 @@ export function middleware(req: NextRequest) {
   // scripts/build-spec-allowlist.mts, invariance enforced by
   // scripts/check-spec-allowlist.ts on pre-commit. Alias slugs ARE in the
   // allowlist, so they pass here and the route still issues its 308.
-  const SPEC_ALLOWLIST = SPEC_ALLOWLIST_RAW as unknown as { s: string[]; m: Record<string, number[]> }
+  const SPEC_ALLOWLIST = SPEC_ALLOWLIST_RAW as unknown as { s: string[]; m: Record<string, number[]>; r: Record<string, number[]> }
   const specMatch = pathname.match(/^\/universities\/([^/]+)\/([^/]+)\/([^/]+)\/?$/)
   if (specMatch) {
     const [, specUniId, specProgSlug, specSlug] = specMatch
     // Only the ten real programme slugs. The online-* and mba-wx segments
     // exempted in 2e reach here too, and next.config.js owns their 308.
     if (PROGRAMME_HUB_ALLOWLISTS.some(r => r.slug === specProgSlug)) {
-      const accepted = SPEC_ALLOWLIST.m[`${specUniId}|${specProgSlug}`]
+      const pairKey = `${specUniId}|${specProgSlug}`
+      const accepted = SPEC_ALLOWLIST.m[pairKey]
       const wanted = specSlug.toLowerCase()
       // No entry at all means the hub is real but carries no specialisation,
       // so nothing beneath it can resolve either.
       const ok = accepted ? accepted.some(i => SPEC_ALLOWLIST.s[i] === wanted) : false
       if (!ok) return new NextResponse(null, { status: 404 })
+
+      // Allowed, but an alias of the slug this university actually uses.
+      // Redirect here rather than letting the route do it: these pages are
+      // statically generated, and Next encodes a redirect() during static
+      // generation as a meta-refresh 200 with a cross-canonical rather than an
+      // HTTP 308. ISR renders the first request the same way, so removing the
+      // aliases from generateStaticParams does not help either. 3,223 alias
+      // URLs were served that way before this block, e.g.
+      // /universities/amity-university-online/mba/hrm.
+      const aliasPairs = SPEC_ALLOWLIST.r[pairKey]
+      if (aliasPairs) {
+        for (let i = 0; i < aliasPairs.length; i += 2) {
+          if (SPEC_ALLOWLIST.s[aliasPairs[i]] !== wanted) continue
+          const url = req.nextUrl.clone()
+          url.pathname = `/universities/${specUniId}/${specProgSlug}/${SPEC_ALLOWLIST.s[aliasPairs[i + 1]]}`
+          return NextResponse.redirect(url, 308)
+        }
+      }
     }
   }
 

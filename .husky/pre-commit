@@ -63,6 +63,20 @@ npx tsx scripts/check-programme-allowlist-resolver.ts || exit 1
 echo "pre-commit: check-spec-allowlist"
 npx tsx scripts/check-spec-allowlist.ts || exit 1
 
+# Sitemap canonicality. Blocks any commit where valid-urls.json advertises a URL
+# that redirects, and any commit where url-canonical-map.json has drifted from
+# resolveSpec / the programmes route. A sitemap full of redirect sources burns
+# crawl budget and splits signals across two URLs for the same page.
+echo "pre-commit: check-url-canonical-map"
+npx tsx scripts/build-url-canonical-map.mts --check || exit 1
+node scripts/apply-url-canonical-map.js --check || exit 1
+
+# Ranking-page protection. Blocks any commit that would make a URL with real
+# Search Console history 404 with no redirect standing in front of it. See the
+# header of scripts/check-gsc-404s.mts for why this is a rule, not a cleanup.
+echo "pre-commit: check-gsc-404s"
+npx tsx scripts/check-gsc-404s.mts || exit 1
+
 # Task 3 slice 3c: never-both-404 and never-both-redirect invariants on the
 # actual sitemap() output. Blocks any commit where a HUB URL in the sitemap
 # would be 404'd by the middleware allowlist (class-A/B/C), or where any

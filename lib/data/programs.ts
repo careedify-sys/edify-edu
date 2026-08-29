@@ -53,7 +53,11 @@ const SPEC_ALIASES: Record<string, string[]> = {
   'information-technology': ['it-management', 'information-technology-management', 'it', 'it-systems', 'it-systems-management'],
   'supply-chain-management': ['logistics-and-supply-chain-management', 'logistics-supply-chain-management', 'logistics-scm', 'logistics-supply-chain', 'supply-chain-logistics', 'operations-and-supply-chain-management', 'operations-supply-chain-management'],
   'entrepreneurship': ['entrepreneurship-and-leadership-management', 'entrepreneur', 'entrepreneurship-management'],
-  'data-science': ['data-science-and-analytics', 'data-science-analytics', 'data-science--ai'],
+  // data-science-ai is the single-dash form middleware's --  collapse rule
+  // (line 410) produces from data-science--ai. Without it in this group the
+  // collapsed URL resolved to nothing and section 2f 404'd it, so the chain
+  // /universities/{uni}/mba/data-science--ai went 308 -> 404 for 18 universities.
+  'data-science': ['data-science-and-analytics', 'data-science-analytics', 'data-science--ai', 'data-science-ai'],
   'general-management': ['general'],
   'cyber-security': ['cybersecurity', 'cyber-security-and-forensics', 'cyber-security-forensics'],
   'artificial-intelligence-and-machine-learning': ['ai-ml', 'ai-and-ml', 'artificial-intelligence-machine-learning', 'artificial-intelligence'],
@@ -116,6 +120,13 @@ const MBA_CANONICAL_OVERRIDES: Record<string, string> = {
   'hospital-healthcare-management': 'healthcare-management',
   'data-science-analytics': 'data-science',
   'logistics-supply-chain-management': 'supply-chain-management',
+  // 2026-08-30: next.config.js line 619 redirects /universities/:uni/mba/
+  // human-resource to hr-management sitewide, but resolveSpec canonicalised
+  // Symbiosis the other way, to its data.ts slug human-resource. Once the edge
+  // started serving that canonicalisation as a 308 the two rules pointed at
+  // each other and the URL looped. next.config is the sitewide authority for
+  // the MBA HR slug, so the resolver agrees with it here.
+  'human-resource': 'hr-management',
 }
 
 /**
@@ -362,5 +373,28 @@ export function getProgramSpecParams(
       }
     }
   }
-  return out
+
+  // Canonicalise before returning: prerender the slug the route settles on,
+  // never an alias of it. Prerendering an alias makes Next encode the page's
+  // redirect() as a meta-refresh 200 rather than an HTTP 308, the same trap the
+  // programDetails guard above avoids. Measured 2026-08-29: 195 spec URLs were
+  // served that way, e.g. /universities/amity-university-online/mba/hrm, each a
+  // 200 whose canonical pointed somewhere else.
+  //
+  // Mapping every param through resolveSpec keeps the real page static and lets
+  // the alias fall through to ISR, where redirect() returns a proper 308.
+  // Params resolveSpec rejects are dropped: they only ever prerendered a
+  // not-found shell, and middleware section 2f now 404s them at the edge.
+  if (!label) return out
+  const canonical: Array<{ id: string; spec: string }> = []
+  const canonicalSeen = new Set<string>()
+  for (const p of out) {
+    const r = resolveSpec(p.id, label, prog, p.spec)
+    if (!r) continue
+    const key = `${p.id}|${r.slug}`
+    if (canonicalSeen.has(key)) continue
+    canonicalSeen.add(key)
+    canonical.push({ id: p.id, spec: r.slug })
+  }
+  return canonical
 }
