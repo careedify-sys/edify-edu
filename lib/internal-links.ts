@@ -47,6 +47,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       comparePage: '/compare?a=nmims-online&b=amity-university-online',
       blogs: [
         { slug: 'nmims-online-mba-review-2026', label: 'NMIMS Online MBA Review 2026: Fees, Accreditation and Placement Data' },
+        { slug: 'is-nmims-online-fake-or-legit-2026', label: 'Is NMIMS Online Fake or Legit? 2026' },
       ],
     },
     bba: {
