@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { getUniversityById } from '@/lib/data'
 import { getProgramSpecParams, resolveSpec } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
-import { getTitleName, shortenSpec, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
+import { getTitleName, getShortTitleName, shortenSpec, clampTitle, clampTitleSpecLed, clampDescription, compactFee } from '@/lib/seo-title'
 import { pageKeywords } from '@/lib/page-keywords'
 import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 
@@ -36,13 +36,18 @@ export async function generateMetadata(
 
   const year = new Date().getFullYear()
   const titleName = getTitleName(u.id, u.name, u.abbr)
+  const shortName = getShortTitleName(u.id, u.shortName, u.name, u.abbr)
   const shortSpec = shortenSpec(spec)
   const pd = u.programDetails['BBA']
   const fee = compactFee(pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`)
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
   // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
   return {
-    title: clampTitle(`${titleName} BBA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`),
+    title: clampTitleSpecLed(
+      `${titleName} BBA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
+      `${shortName} BBA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
+      shortSpec,
+    ),
     description: clampDescription(`${u.name} Online BBA in ${spec} ${year}: ${fee} fees${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved 3-year degree. Check syllabus, eligibility & career scope free.`),
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/bba/${canonicalSlug}` },
     robots: { index: true, follow: true },

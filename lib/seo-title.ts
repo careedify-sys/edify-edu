@@ -186,6 +186,28 @@ export function getShortTitleName(
  * drop couldn't keep the fee. That way Sprint 1 titles that already fit
  * with the full name never regress.
  */
+/**
+ * Spec-page variant of clampTitleFeeLed. The specialisation token is what makes
+ * one spec page different from its siblings, and clampTitle drops the tail
+ * first, so a long university name pushed it out: all three Kurukshetra M.Com
+ * "General Commerce" pages rendered the identical title. Retry with the short
+ * university name, which buys enough room to keep the spec and the year.
+ * Measured 2026-08-30: 214 of 2,066 spec titles were over the limit, 142 of
+ * them fit once the university name is shortened.
+ */
+export function clampTitleSpecLed(
+  full: string,
+  short: string,
+  specToken: string,
+  max = 60,
+): string {
+  const clamped = clampTitle(full, max)
+  if (!specToken || clamped.includes(specToken)) return clamped
+  if (short === full) return clamped
+  const retry = clampTitle(short, max)
+  return retry.includes(specToken) ? retry : clamped
+}
+
 export function clampTitleFeeLed(
   full: string,
   short: string,
@@ -302,25 +324,81 @@ const SPEC_MAP: Record<string, string> = {
   'Marketing, Finance, Human Resource Management,': 'General MBA',
 }
 
+// Maximum length of a shortened specialisation label. Was an implicit 22 with a
+// hard substring cut, which collapsed distinct specialisations at the same
+// university onto one title: "Finance and International Business" and "Finance
+// and Operations Management" both became "Finance and". Seven such groups
+// covering 15 pages were shipping duplicate titles.
+const SHORT_SPEC_MAX = 26
+
+// Never leave one of these as the last word. "Finance and" is both unreadable
+// and non-distinguishing.
+const SPEC_TRAILING_STOPWORDS = new Set([
+  'and', 'or', 'for', 'of', 'the', 'with', 'in', 'on', 'a', 'an', 'to', '&', '-', '\u2013',
+])
+
+// Applied before any truncation so the distinguishing tail of a long spec
+// survives instead of being cut away.
+const SPEC_ABBREVIATIONS: [RegExp, string][] = [
+  [/\bInternational\b/g, 'Intl'],
+  [/\bManagement\b/g, 'Mgmt'],
+  [/\bAdministration\b/g, 'Admin'],
+  [/\bTechnologies\b/g, 'Tech'],
+  [/\bTechnology\b/g, 'Tech'],
+  [/\bApplications\b/g, 'Apps'],
+  [/\bEnvironmental\b/g, 'Env'],
+  [/\bDevelopment\b/g, 'Dev'],
+  [/\bEngineering\b/g, 'Engg'],
+]
+
+// The Excel source truncates some specialisation names mid-phrase and leaves an
+// unclosed bracket behind, e.g. "General Commerce (Taxation" and "Computer
+// Applications (4 specialisations available". Drop the stray bracket and keep
+// the words, which are the part that makes the label distinct.
+function tidySpecLabel(spec: string): string {
+  let s = spec
+  // "Computer Applications (4 specialisations available" is a count, not part of
+  // the specialisation's name, and it produced the title "Computer Apps 4".
+  s = s.replace(/\(?\s*\d+\s+specialisations?\s+available\)?/gi, ' ')
+  const open = (s.match(/\(/g) || []).length
+  const close = (s.match(/\)/g) || []).length
+  if (open !== close) s = s.replace(/[()]/g, ' ')
+  return s.replace(/\s+/g, ' ').trim()
+}
+
+// Trim on a word boundary, then drop any trailing stopword.
+function trimSpecToWords(s: string, max: number): string {
+  if (s.length <= max) return s
+  const out: string[] = []
+  for (const w of s.split(' ')) {
+    if (out.length && [...out, w].join(' ').length > max) break
+    out.push(w)
+  }
+  while (out.length > 1 && SPEC_TRAILING_STOPWORDS.has(out[out.length - 1].toLowerCase())) out.pop()
+  return out.join(' ').trim()
+}
+
 export function shortenSpec(spec: string): string {
   if (SPEC_MAP[spec]) return SPEC_MAP[spec]
-  if (spec.length <= 22) return spec
+  const cleaned = tidySpecLabel(spec)
+  if (cleaned.length <= SHORT_SPEC_MAX) return cleaned
 
-  // BCA specs follow the pattern "Computer Applications – Data Science".
+  // BCA specs follow the pattern "Computer Applications - Data Science".
   // Strip the common prefix so each specialization page gets a distinct token.
-  // "Computer Applications – Data Science" → "Data Science"
-  // "Computer Applications – Financial Technology & AI" → "Financial Technology & AI"
-  // No-dash variants (e.g. "Computer Applications 4 Specialisations Available") are
-  // left to the fallback, which returns "Computer Applications" as the base label.
-  const caMatch = spec.match(/^Computer Applications\s*[–—-]\s*(.+)$/)
+  const caMatch = cleaned.match(/^Computer Applications\s*[\u2013\u2014-]\s*(.+)$/)
   if (caMatch) {
     const suffix = caMatch[1].trim()
-    if (suffix.length <= 30) return suffix
-    return suffix.substring(0, 30).replace(/\s+\S*$/, '').trim()
+    return suffix.length <= 30 ? suffix : trimSpecToWords(suffix, 30)
   }
 
-  return spec.substring(0, 22).replace(/\s+\S*$/, '').trim()
+  let abbreviated = cleaned
+  for (const [re, rep] of SPEC_ABBREVIATIONS) abbreviated = abbreviated.replace(re, rep)
+  abbreviated = abbreviated.replace(/\s+/g, ' ').trim()
+  if (abbreviated.length <= SHORT_SPEC_MAX) return abbreviated
+
+  return trimSpecToWords(abbreviated, SHORT_SPEC_MAX)
 }
+
 
 /**
  * Collapse a CMS-supplied fee string when min and max are identical, so titles

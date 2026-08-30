@@ -93,5 +93,25 @@
     "program": "mba",
     "from": "human-resource",
     "to": "hr-management"
+  },
+  {
+    "program": "mcom",
+    "from": "financial-management",
+    "to": "finance"
+  },
+  {
+    "program": "bba",
+    "from": "business-analytics-specialization-with-data-focuse",
+    "to": "business-analytics"
+  },
+  {
+    "program": "bca",
+    "from": "computer-applications-data-science",
+    "to": "data-science"
+  },
+  {
+    "program": "bba",
+    "from": "general-business-administration-option-for-data-a",
+    "to": "general-business-administration-option-for-data-analytics-specialisation"
   }
 ]

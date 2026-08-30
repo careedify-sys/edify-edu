@@ -43,6 +43,31 @@ const OUT = 'lib/data/url-canonical-map.json'
 // Candidate enumeration is the sitemap generator's own domain: lib/data.ts
 // specs plus programs-manifest.json rows. Every candidate goes through
 // resolveSpec, so the table records exactly what the route would settle on.
+// Middleware section 2f redirects on its own table too, both aliases and the
+// rescue rules materialised from spec-slug-rescue-rules.json. resolveSpec alone
+// does not see those, so without following them the sitemap would advertise a
+// URL the edge 308s away.
+const specAllowlist = JSON.parse(
+  readFileSync('lib/data/spec-allowlist.json', 'utf8')
+) as { s: string[]; m: Record<string, number[]>; r: Record<string, number[]> }
+
+function followSpecTable(uniId: string, progSlug: string, slug: string): string {
+  let current = slug
+  const pairs = specAllowlist.r[`${uniId}|${progSlug}`]
+  if (!pairs) return current
+  for (let hop = 0; hop < 5; hop++) {
+    let moved = false
+    for (let i = 0; i < pairs.length; i += 2) {
+      if (specAllowlist.s[pairs[i]] !== current) continue
+      current = specAllowlist.s[pairs[i + 1]]
+      moved = true
+      break
+    }
+    if (!moved) break
+  }
+  return current
+}
+
 const manifestRows = JSON.parse(
   readFileSync('lib/data/programs-manifest.json', 'utf8')
 ) as { university_slug: string; program: string; spec_slug: string }[]
@@ -175,8 +200,9 @@ for (const progSlug of Object.keys(PROG)) {
       // redirect still fires and the destination 404s, so the sitemap must not
       // advertise either end of it. Measured 2026-08-30: 9 such pairs, none
       // with any Search Console history.
-      const settled = resolveSpec(uni.id, label, progSlug, seg[4])
-      u[key] = settled && settled.slug === seg[4] ? seg[4] : null
+      const afterTable = followSpecTable(uni.id, progSlug, seg[4])
+      const settled = resolveSpec(uni.id, label, progSlug, afterTable)
+      u[key] = settled && settled.slug === afterTable ? afterTable : null
     }
   }
 

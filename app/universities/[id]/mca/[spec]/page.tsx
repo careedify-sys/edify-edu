@@ -5,7 +5,7 @@ import { getUniversityById } from '@/lib/data'
 import { getMasterSyllabus } from '@/lib/content'
 import { getProgramSpecParams, resolveSpec } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
-import { getTitleName, shortenSpec, clampTitle, clampDescription, compactFee } from '@/lib/seo-title'
+import { getTitleName, getShortTitleName, shortenSpec, clampTitle, clampTitleSpecLed, clampDescription, compactFee } from '@/lib/seo-title'
 import { pageKeywords } from '@/lib/page-keywords'
 import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 
@@ -38,12 +38,17 @@ export async function generateMetadata(
   const year = new Date().getFullYear()
   const syllabus = getMasterSyllabus(u.id, 'MCA') as any
   const titleName = getTitleName(u.id, u.name, u.abbr)
+  const shortName = getShortTitleName(u.id, u.shortName, u.name, u.abbr)
   const shortSpec = shortenSpec(spec)
   const pd = u.programDetails['MCA']
   const fee = compactFee(pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`)
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
   // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
-  const title = clampTitle(`${titleName} MCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`)
+  const title = clampTitleSpecLed(
+      `${titleName} MCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
+      `${shortName} MCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
+      shortSpec,
+    )
   const description = clampDescription(syllabus?.metaDesc
     ? `${u.name} Online MCA in ${spec} ${year}. ${syllabus.metaDesc}`
     : `${u.name} Online MCA in ${spec} ${year}: ${fee} fees${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. Check syllabus, eligibility & career scope free.`)

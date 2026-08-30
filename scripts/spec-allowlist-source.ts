@@ -18,6 +18,7 @@
 import { readFileSync } from 'fs'
 import { UNIVERSITIES, specSlug as toSlug } from '../lib/data'
 import { resolveSpec } from '../lib/data/programs'
+import { shortenSpec } from '../lib/seo-title'
 
 export const PROGRAMME_LABELS: Record<string, string> = {
   mba: 'MBA', mca: 'MCA', bba: 'BBA', bca: 'BCA',
@@ -112,11 +113,24 @@ export function buildSpecAllowlist(): { payload: SpecAllowlist; stats: { triples
       // literal destination, which collapses what used to be a two hop chain
       // (wildcard to a generic slug, then the route to the real one).
       const acceptedSlugs = new Set(accepted.map(i => dict[i]))
+      const alreadyRedirected = new Set<string>()
+      for (let i = 0; i < aliasPairs.length; i += 2) alreadyRedirected.add(dict[aliasPairs[i]])
+
       for (const rule of rules) {
         if (rule.program !== progSlug) continue
-        if (acceptedSlugs.has(rule.from)) continue
+        if (alreadyRedirected.has(rule.from)) continue
         const dest = resolveSpec(u.id, label, progSlug, rule.to)
-        if (!dest) continue
+        if (!dest || dest.slug === rule.from) continue
+        if (acceptedSlugs.has(rule.from)) {
+          // The university serves both slugs. Keep both only when they are
+          // actually different specialisations. When they render the same title
+          // they are one specialisation entered twice, and the rule is doing
+          // real dedupe work: Jagannath serves both information-technology-it
+          // and it-management, and retiring the wildcard left them as a
+          // duplicate pair until this branch put the redirect back.
+          const from = resolveSpec(u.id, label, progSlug, rule.from)
+          if (!from || shortenSpec(from.name) !== shortenSpec(dest.name)) continue
+        }
         aliasPairs.push(intern(rule.from), intern(dest.slug))
         rescued++
       }

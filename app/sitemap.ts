@@ -57,13 +57,18 @@ function loadVerifySlugs(): string[] {
   }
 }
 
-// Returns the file mtime of a page-content JSON, or now as fallback
-function getContentLastMod(uniSlug: string, program: string): Date {
-  const filePath = join(process.cwd(), 'lib', 'data', 'page-content', `${uniSlug}-${program}.json`)
+// Returns undefined, not today's date, when there is no content file to date
+// the page by. Google's guidance is to omit lastmod rather than supply one it
+// can show to be wrong, and it says an inaccurate lastmod can make it ignore
+// the value across the whole site. Every URL here used to carry the build
+// timestamp, which would have devalued the dates that ARE real: the content
+// files below and the blog's publishedAt.
+function getContentLastMod(...parts: string[]): Date | undefined {
+  const filePath = join(process.cwd(), 'lib', 'data', 'page-content', `${parts.join('-')}.json`)
   try {
     return statSync(filePath).mtime
   } catch {
-    return new Date()
+    return undefined
   }
 }
 
@@ -122,7 +127,6 @@ function urlMeta(path: string): { priority: number; freq: Freq } {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date()
 
   // ── Registry pages from valid-urls.json ───────────────────────────────────
   // Filter out thin pages before building sitemap entries:
@@ -152,13 +156,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .map(path => {
       const { priority, freq } = urlMeta(path)
 
-      // For /universities/{slug}/mba paths, use content JSON file mtime as lastmod
-      const mbaMatch = path.match(/^\/universities\/([^/]+)\/mba$/)
-      const lastModified = mbaMatch ? getContentLastMod(mbaMatch[1], 'mba') : now
+      // Date the page by its content file when one exists, for hubs and for
+      // specialisation pages alike. Was MBA hubs only, so everything else
+      // carried the build time.
+      const hub = path.match(/^\/universities\/([^/]+)\/([^/]+)$/)
+      const spec = path.match(/^\/universities\/([^/]+)\/([^/]+)\/([^/]+)$/)
+      const lastModified = spec
+        ? getContentLastMod(spec[1], spec[2], spec[3])
+        : hub
+          ? getContentLastMod(hub[1], hub[2])
+          : undefined
 
       return {
         url: `${BASE}${path}`,
-        lastModified,
+        ...(lastModified ? { lastModified } : {}),
         changeFrequency: freq,
         priority,
       }
@@ -166,17 +177,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // ── Tool pages (not in registry — hardcoded static) ───────────────────────
   const toolPages: MetadataRoute.Sitemap = [
-    { url: `${BASE}/fees`,                     lastModified: now, changeFrequency: 'weekly',  priority: 0.85 },
-    { url: `${BASE}/tools`,                   lastModified: now, changeFrequency: 'monthly', priority: 0.80 },
-    { url: `${BASE}/tools/emi-calculator`,    lastModified: now, changeFrequency: 'monthly', priority: 0.78 },
-    { url: `${BASE}/tools/cgpa-calculator`,   lastModified: now, changeFrequency: 'monthly', priority: 0.75 },
-    { url: `${BASE}/tools/percentage-to-gpa`, lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
-    { url: `${BASE}/best-online-mba-india`,   lastModified: now, changeFrequency: 'monthly', priority: 0.90 },
+    { url: `${BASE}/fees`,                     changeFrequency: 'weekly',  priority: 0.85 },
+    { url: `${BASE}/tools`,                   changeFrequency: 'monthly', priority: 0.80 },
+    { url: `${BASE}/tools/emi-calculator`,    changeFrequency: 'monthly', priority: 0.78 },
+    { url: `${BASE}/tools/cgpa-calculator`,   changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${BASE}/tools/percentage-to-gpa`, changeFrequency: 'monthly', priority: 0.72 },
+    { url: `${BASE}/best-online-mba-india`,   changeFrequency: 'monthly', priority: 0.90 },
     // CGPA value pages: long-tail "X.X cgpa in percentage" search targets.
     ...CGPA_VALUES.map(entry => ({
       url: `${BASE}/tools/cgpa-calculator/${entry.slug}`,
-      lastModified: now,
-      changeFrequency: 'monthly' as const,
+        changeFrequency: 'monthly' as const,
       priority: 0.70,
     })),
   ]
@@ -198,7 +208,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ── Coupon pages ──────────────────────────────────────────────────────────
   const couponPages: MetadataRoute.Sitemap = COUPON_PAGE_SLUGS.map(slug => ({
     url: `${BASE}/coupons/${slug}`,
-    lastModified: now,
     changeFrequency: 'weekly' as const,
     priority: 0.85,
   }))
@@ -206,7 +215,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ── Guides ────────────────────────────────────────────────────────────────
   const guidePages: MetadataRoute.Sitemap = GUIDES.map(guide => ({
     url: `${BASE}/guides/${guide.id}`,
-    lastModified: now,
     changeFrequency: 'monthly' as const,
     priority: 0.70,
   }))
@@ -215,7 +223,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Source: lib/data/verify-slugs.json (update with: npx tsx scripts/build-verify-slugs.ts)
   const verifyPages: MetadataRoute.Sitemap = loadVerifySlugs().map(slug => ({
     url: `${BASE}/verify/${slug}`,
-    lastModified: now,
     changeFrequency: 'monthly' as const,
     priority: 0.75,
   }))
@@ -225,7 +232,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // May 2026 noindex sweep. Their metadata is updated to output index,follow.
   const rescuedPages: MetadataRoute.Sitemap = RESCUED_PROGRAM_PATHS.map(path => ({
     url: `${BASE}${path}`,
-    lastModified: now,
     changeFrequency: 'monthly' as const,
     priority: 0.75,
   }))

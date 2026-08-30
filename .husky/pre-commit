@@ -77,6 +77,12 @@ node scripts/apply-url-canonical-map.js --check || exit 1
 echo "pre-commit: check-gsc-404s"
 npx tsx scripts/check-gsc-404s.mts || exit 1
 
+# Duplicate specialisation titles. Two pages at the same university and
+# programme sharing a <title> is a duplicate-content signal and reads badly in a
+# SERP. Found 2026-08-30 by crawling the sitemap: 7 groups covering 15 pages.
+echo "pre-commit: check-duplicate-spec-titles"
+npx tsx scripts/check-duplicate-spec-titles.mts || exit 1
+
 # Task 3 slice 3c: never-both-404 and never-both-redirect invariants on the
 # actual sitemap() output. Blocks any commit where a HUB URL in the sitemap
 # would be 404'd by the middleware allowlist (class-A/B/C), or where any

@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById, specSlug as getSpecSlug, specName as getSpecName } from '@/lib/data'
 import type { Program } from '@/lib/data'
 import { resolveSpec } from '@/lib/data/programs'
-import { getTitleName, clampTitle, clampDescription, compactFee, shortenSpec } from '@/lib/seo-title'
+import { getTitleName, getShortTitleName, clampTitle, clampTitleSpecLed, clampDescription, compactFee, shortenSpec } from '@/lib/seo-title'
 import UniSpecBody from '@/components/UniSpecBody'
 import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 
@@ -42,11 +42,16 @@ export async function generateMetadata(
   const shortSpec = shortenSpec(spec)
   const year     = new Date().getFullYear()
   const titleName = getTitleName(u.id, u.name, u.abbr)
+  const shortName = getShortTitleName(u.id, u.shortName, u.name, u.abbr)
   const fees = compactFee(pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`)
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
   // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
   // Uses shortenSpec so long names like "Healthcare Management" stay clampable.
-  const title     = clampTitle(`${titleName} ${program} ${shortSpec} ${year}: ${fees}${naacSegment(u.naac)} | EdifyEdu`)
+  const title     = clampTitleSpecLed(
+    `${titleName} ${program} ${shortSpec} ${year}: ${fees}${naacSegment(u.naac)} | EdifyEdu`,
+    `${shortName} ${program} ${shortSpec} ${year}: ${fees}${naacSegment(u.naac)} | EdifyEdu`,
+    shortSpec,
+  )
   const description = clampDescription(`Online ${program} in ${spec} from ${titleName}: ${fees} fees, eligibility, syllabus and admission ${year}.${naacSuffix(u.naac)}${nirfStr}. UGC-DEB approved. Compare before you enrol.`)
 
   return {
