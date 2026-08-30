@@ -148,6 +148,15 @@ const nextConfig = {
       { source: '/universities/nmims-online/mba/fintech',                                           destination: '/universities/nmims-online/mba', permanent: true },  // 1 clicks, 90 impr, pos 9.16
       { source: '/universities/sastra-university-online/mca',                                       destination: '/universities/sastra-university-online', permanent: true },  // 1 clicks, 124 impr, pos 10.8
       { source: '/universities/shoolini-university-online/mba/business-analytics',                  destination: '/universities/shoolini-university-online/mba', permanent: true },  // 1 clicks, 2 impr, pos 5.5
+
+      // Second batch (2026-08-30). Retiring the 19 sitewide MBA slug wildcards
+      // uncovered these four: the wildcard used to carry them to a slug that
+      // does not resolve for that university either, so they were 308 into a
+      // soft 404. Neither end is real, so the hub is the honest destination.
+      { source: '/universities/andhra-university-online/mba/marketing-and-business-analytics',          destination: '/universities/andhra-university-online/mba', permanent: true },  // 3 clicks, 25 impr, pos 7.68
+      { source: '/universities/graphic-era-university-online/mba/marketing-and-business-analytics',     destination: '/universities/graphic-era-university-online/mba', permanent: true },  // 1 click, 5 impr, pos 6.0
+      { source: '/universities/manipal-academy-higher-education-online/mba/banking-financial-services', destination: '/universities/manipal-academy-higher-education-online/mba', permanent: true },  // 1 click, 33 impr, pos 17.09
+      { source: '/universities/university-of-kerala-online/mba/data-science-and-business-analytics',    destination: '/universities/university-of-kerala-online/mba', permanent: true },  // 1 click, 15 impr, pos 4.53
       { source: '/universities/uttaranchal-university-online/mba/healthcare-management',            destination: '/universities/uttaranchal-university-online/mba', permanent: true },  // 1 clicks, 71 impr, pos 4.96
 
 
@@ -505,23 +514,16 @@ const nextConfig = {
       { source: '/wp-login.php',               destination: '/',              permanent: true },
 
       // ── Sprint 4 (2026-06-12): duplicate MBA spec slug consolidation ──
-      // Collapse verbose spec slugs onto canonical shorter slugs to eliminate
-      // duplicate-content pairs flagged in the GSC coverage audit.
-      { source: '/universities/:university/mba/marketing-management',                  destination: '/universities/:university/mba/marketing',               permanent: true },
-      { source: '/universities/:university/mba/data-science-analytics',                destination: '/universities/:university/mba/data-science',            permanent: true },
-      { source: '/universities/:university/mba/financial-management',                  destination: '/universities/:university/mba/finance',                 permanent: true },
-      { source: '/universities/:university/mba/international-business-management',     destination: '/universities/:university/mba/international-business',  permanent: true },
-      { source: '/universities/:university/mba/entrepreneurship-management',           destination: '/universities/:university/mba/entrepreneurship',         permanent: true },
-      { source: '/universities/:university/mba/entrepreneurship-innovation-management',destination: '/universities/:university/mba/entrepreneurship',         permanent: true },
-      { source: '/universities/:university/mba/human-resource-management',             destination: '/universities/:university/mba/hr-management',           permanent: true },
-      { source: '/universities/:university/mba/information-technology-it',             destination: '/universities/:university/mba/it-management',           permanent: true },
-      { source: '/universities/:university/mba/information-technology',                destination: '/universities/:university/mba/it-management',           permanent: true },
-      { source: '/universities/:university/mba/digital-marketing-management',          destination: '/universities/:university/mba/digital-marketing',       permanent: true },
-      { source: '/universities/:university/mba/digital-marketing-sales',               destination: '/universities/:university/mba/digital-marketing',       permanent: true },
-      { source: '/universities/:university/mba/hospital-healthcare-management',        destination: '/universities/:university/mba/healthcare-management',   permanent: true },
-      { source: '/universities/:university/mba/operations-management',                 destination: '/universities/:university/mba/operations',              permanent: true },
-      { source: '/universities/:university/mba/retail-management',                     destination: '/universities/:university/mba/retail',                  permanent: true },
-      { source: '/universities/:university/mba/logistics-supply-chain-management',     destination: '/universities/:university/mba/supply-chain-management', permanent: true },
+      // The 19 wildcard rules that lived here moved to
+      // lib/data/spec-slug-rescue-rules.json on 2026-08-30. They applied one
+      // sitewide slug mapping to all 144 universities, which was wrong for the
+      // ones that use the "verbose" slug as their real spec: 11 live pages were
+      // redirected away from, 8 of them into a 404, e.g. Parul's
+      // banking-financial-services. Middleware section 2f now applies the same
+      // intent per university, from the alias table in spec-allowlist.json,
+      // which knows what each university actually offers. Measured before the
+      // move: 505 of the 542 matches agreed with the resolver anyway, and in
+      // the other 37 the resolver named the university's real slug.
 
       // ── Sprint 3 CTR cleanup (2026-07-07): stray URL redirects from phase4-performance.md ──
 
@@ -611,12 +613,6 @@ const nextConfig = {
       { source: '/programs/mca/chandigarh-university-online', destination: '/universities/chandigarh-university-online/mca', permanent: true },
       { source: '/programs/ba/gujarat-university-online', destination: '/universities/gujarat-university-online', permanent: true },
       { source: '/programs/mba/graphic-era-university-online', destination: '/universities/graphic-era-university-online/mba', permanent: true },
-
-      // University spec slug variants not covered by existing wildcard redirects
-      { source: '/universities/:university/mba/banking-financial-services', destination: '/universities/:university/mba/banking-insurance', permanent: true },
-      { source: '/universities/:university/mba/marketing-and-business-analytics', destination: '/universities/:university/mba/business-analytics', permanent: true },
-      { source: '/universities/:university/mba/data-science-and-business-analytics', destination: '/universities/:university/mba/business-analytics', permanent: true },
-      { source: '/universities/:university/mba/human-resource', destination: '/universities/:university/mba/hr-management', permanent: true },
 
       // Truncated university slug with sub-path: shanmugha online-bcom
       { source: '/universities/karunya-kcode-online/:path*', destination: '/universities/karunya-university-online/:path*', permanent: true },

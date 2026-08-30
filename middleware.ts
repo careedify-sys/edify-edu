@@ -557,21 +557,20 @@ export function middleware(req: NextRequest) {
     // exempted in 2e reach here too, and next.config.js owns their 308.
     if (PROGRAMME_HUB_ALLOWLISTS.some(r => r.slug === specProgSlug)) {
       const pairKey = `${specUniId}|${specProgSlug}`
-      const accepted = SPEC_ALLOWLIST.m[pairKey]
       const wanted = specSlug.toLowerCase()
-      // No entry at all means the hub is real but carries no specialisation,
-      // so nothing beneath it can resolve either.
-      const ok = accepted ? accepted.some(i => SPEC_ALLOWLIST.s[i] === wanted) : false
-      if (!ok) return new NextResponse(null, { status: 404 })
 
-      // Allowed, but an alias of the slug this university actually uses.
-      // Redirect here rather than letting the route do it: these pages are
-      // statically generated, and Next encodes a redirect() during static
-      // generation as a meta-refresh 200 with a cross-canonical rather than an
-      // HTTP 308. ISR renders the first request the same way, so removing the
-      // aliases from generateStaticParams does not help either. 3,223 alias
-      // URLs were served that way before this block, e.g.
-      // /universities/amity-university-online/mba/hrm.
+      // Redirect table first, because it is a superset of the allowed set.
+      // It holds two kinds of entry and both must win over the 404 below:
+      //   1. aliases of a slug this university does use, which have to
+      //      redirect here rather than in the route. These pages are
+      //      statically generated and Next encodes a redirect() during static
+      //      generation as a meta-refresh 200 with a cross-canonical, not an
+      //      HTTP 308. ISR renders the first request the same way and caches
+      //      that HTML, so dropping the aliases from generateStaticParams does
+      //      not help either.
+      //   2. rescue entries materialised from
+      //      lib/data/spec-slug-rescue-rules.json, whose source slug this
+      //      university does NOT serve and so is absent from the allowed set.
       const aliasPairs = SPEC_ALLOWLIST.r[pairKey]
       if (aliasPairs) {
         for (let i = 0; i < aliasPairs.length; i += 2) {
@@ -581,6 +580,12 @@ export function middleware(req: NextRequest) {
           return NextResponse.redirect(url, 308)
         }
       }
+
+      const accepted = SPEC_ALLOWLIST.m[pairKey]
+      // No entry at all means the hub is real but carries no specialisation,
+      // so nothing beneath it can resolve either.
+      const ok = accepted ? accepted.some(i => SPEC_ALLOWLIST.s[i] === wanted) : false
+      if (!ok) return new NextResponse(null, { status: 404 })
     }
   }
 

@@ -31,7 +31,7 @@ for (const p of PROGRAMMES) {
 }
 const specAllow = JSON.parse(
   fs.readFileSync(path.join(ROOT, 'lib', 'data', 'spec-allowlist.json'), 'utf8')
-) as { s: string[]; m: Record<string, number[]> }
+) as { s: string[]; m: Record<string, number[]>; r: Record<string, number[]> }
 
 // Mirrors middleware sections 2d, 2e and 2f. Kept deliberately small: if the
 // middleware grows another rule, add it here too or this gate goes blind.
@@ -53,8 +53,15 @@ function wouldEdge404(pathname: string): boolean {
   if (!EXEMPT_SEGMENTS.has(progSlug.toLowerCase())) return true            // 2e
   if (allow[progSlug] && !allow[progSlug].includes(uniId)) return true     // 2d
   if (seg.length === 5 && allow[progSlug]) {                               // 2f
-    const idxs = specAllow.m[`${uniId}|${progSlug}`]
+    const pairKey = `${uniId}|${progSlug}`
     const wanted = seg[4].toLowerCase()
+    // The redirect table is consulted first in middleware and is a superset of
+    // the allowed set, so a hit there is a 308, not a 404.
+    const pairs = specAllow.r[pairKey]
+    if (pairs) {
+      for (let i = 0; i < pairs.length; i += 2) if (specAllow.s[pairs[i]] === wanted) return false
+    }
+    const idxs = specAllow.m[pairKey]
     if (!idxs || !idxs.some(i => specAllow.s[i] === wanted)) return true
   }
   return false

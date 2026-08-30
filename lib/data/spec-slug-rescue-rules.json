@@ -1,0 +1,97 @@
+[
+  {
+    "program": "mba",
+    "from": "marketing-management",
+    "to": "marketing"
+  },
+  {
+    "program": "mba",
+    "from": "data-science-analytics",
+    "to": "data-science"
+  },
+  {
+    "program": "mba",
+    "from": "financial-management",
+    "to": "finance"
+  },
+  {
+    "program": "mba",
+    "from": "international-business-management",
+    "to": "international-business"
+  },
+  {
+    "program": "mba",
+    "from": "entrepreneurship-management",
+    "to": "entrepreneurship"
+  },
+  {
+    "program": "mba",
+    "from": "entrepreneurship-innovation-management",
+    "to": "entrepreneurship"
+  },
+  {
+    "program": "mba",
+    "from": "human-resource-management",
+    "to": "hr-management"
+  },
+  {
+    "program": "mba",
+    "from": "information-technology-it",
+    "to": "it-management"
+  },
+  {
+    "program": "mba",
+    "from": "information-technology",
+    "to": "it-management"
+  },
+  {
+    "program": "mba",
+    "from": "digital-marketing-management",
+    "to": "digital-marketing"
+  },
+  {
+    "program": "mba",
+    "from": "digital-marketing-sales",
+    "to": "digital-marketing"
+  },
+  {
+    "program": "mba",
+    "from": "hospital-healthcare-management",
+    "to": "healthcare-management"
+  },
+  {
+    "program": "mba",
+    "from": "operations-management",
+    "to": "operations"
+  },
+  {
+    "program": "mba",
+    "from": "retail-management",
+    "to": "retail"
+  },
+  {
+    "program": "mba",
+    "from": "logistics-supply-chain-management",
+    "to": "supply-chain-management"
+  },
+  {
+    "program": "mba",
+    "from": "banking-financial-services",
+    "to": "banking-insurance"
+  },
+  {
+    "program": "mba",
+    "from": "marketing-and-business-analytics",
+    "to": "business-analytics"
+  },
+  {
+    "program": "mba",
+    "from": "data-science-and-business-analytics",
+    "to": "business-analytics"
+  },
+  {
+    "program": "mba",
+    "from": "human-resource",
+    "to": "hr-management"
+  }
+]

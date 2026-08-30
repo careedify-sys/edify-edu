@@ -44,23 +44,19 @@ export interface SpecAllowlist {
   r: Record<string, number[]>
 }
 
-// next.config.js carries sitewide wildcard rules of the shape
-//   /universities/:university/{prog}/{from} -> /universities/:university/{prog}/{to}
-// and those run BEFORE middleware. If the alias table ever pointed at a slug
-// that is itself one of those `from` values, the two would redirect at each
-// other forever. That happened once for real: Symbiosis MBA hr-management and
-// human-resource looped until the resolver was taught next.config's sitewide
-// canonical. Rather than rely on the data staying in agreement, any pair whose
-// target is a wildcard source is dropped here and left to next.config.
-function wildcardRedirectSources(): Set<string> {
-  const out = new Set<string>()
-  const src = readFileSync('next.config.js', 'utf8')
-  const re = /source:\s*'\/universities\/:[a-z]+\/([a-z]+)\/([a-z0-9-]+)',\s*destination:\s*'([^']+)'/g
-  for (const m of src.matchAll(re)) out.add(`${m[1]}|${m[2]}`)
-  return out
+// lib/data/spec-slug-rescue-rules.json holds the slug mappings that used to be
+// wildcard redirects in next.config.js. Each says "this verbose MBA slug means
+// that shorter one". As a sitewide wildcard it fired for all 144 universities,
+// including the ones whose real spec IS the verbose slug, redirecting 11 live
+// pages away and 8 of those into a 404. Applied here instead, once per
+// university, a rule only produces a redirect when the university cannot serve
+// the source slug itself and CAN serve the destination.
+interface RescueRule { program: string; from: string; to: string }
+function rescueRules(): RescueRule[] {
+  return JSON.parse(readFileSync('lib/data/spec-slug-rescue-rules.json', 'utf8')) as RescueRule[]
 }
 
-export function buildSpecAllowlist(): { payload: SpecAllowlist; stats: { triples: number; aliases: number; loopsAvoided: number } } {
+export function buildSpecAllowlist(): { payload: SpecAllowlist; stats: { triples: number; aliases: number; rescued: number } } {
   const manifest = JSON.parse(
     readFileSync('lib/data/programs-manifest.json', 'utf8')
   ) as { university_slug: string; program: string; spec_slug: string }[]
@@ -70,8 +66,8 @@ export function buildSpecAllowlist(): { payload: SpecAllowlist; stats: { triples
     aliasVocab.add(m[1])
   }
 
-  const wildcardSources = wildcardRedirectSources()
-  let loopsAvoided = 0
+  const rules = rescueRules()
+  let rescued = 0
 
   const dict: string[] = []
   const dictIndex = new Map<string, number>()
@@ -107,16 +103,28 @@ export function buildSpecAllowlist(): { payload: SpecAllowlist; stats: { triples
         accepted.push(intern(c))
         triples++
         if (r.slug === c) continue
-        // Target is a next.config wildcard source: redirecting to it here would
-        // hand the request straight back to a rule that sends it somewhere else.
-        if (wildcardSources.has(`${progSlug}|${r.slug}`)) { loopsAvoided++; continue }
         aliasPairs.push(intern(c), intern(r.slug))
         aliases++
       }
+      // Rescue pass. A rule fires only when this university cannot serve the
+      // source slug at all, so a university that genuinely offers it keeps its
+      // page. The target is the resolver's canonical rather than the rule's
+      // literal destination, which collapses what used to be a two hop chain
+      // (wildcard to a generic slug, then the route to the real one).
+      const acceptedSlugs = new Set(accepted.map(i => dict[i]))
+      for (const rule of rules) {
+        if (rule.program !== progSlug) continue
+        if (acceptedSlugs.has(rule.from)) continue
+        const dest = resolveSpec(u.id, label, progSlug, rule.to)
+        if (!dest) continue
+        aliasPairs.push(intern(rule.from), intern(dest.slug))
+        rescued++
+      }
+
       if (accepted.length) map[`${u.id}|${progSlug}`] = accepted.sort((a, b) => a - b)
       if (aliasPairs.length) redirects[`${u.id}|${progSlug}`] = aliasPairs
     }
   }
 
-  return { payload: { s: dict, m: map, r: redirects }, stats: { triples, aliases, loopsAvoided } }
+  return { payload: { s: dict, m: map, r: redirects }, stats: { triples, aliases, rescued } }
 }
