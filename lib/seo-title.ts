@@ -119,7 +119,6 @@ export const TITLE_NAME: Record<string, string> = {
   'deen-dayal-upadhyay-gorakhpur-university-online': 'DDU Gorakhpur Univ',
   'choudhary-charan-singh-university-online': 'CCS University',
   'pt-sundarlal-sharma-open-university-online': 'PSSOU',
-  'reva-university-online': 'REVA University',
   'university-of-calicut-online': 'Calicut University',
   'dr-br-ambedkar-university-online': 'DBRAU',
   'mohan-babu-university-online': 'Mohan Babu University',

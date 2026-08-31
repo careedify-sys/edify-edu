@@ -21,6 +21,11 @@
 // advertises on-campus programmes only. The record was added from main-list
 // PDF row #48 in commit a4ed233 three days earlier.
 //
+// REVA was then DELETED from lib/data.ts outright, so this entry no longer
+// gates any live page. It is kept deliberately as a tripwire: if the record is
+// ever re-added from the same PDF, its pages come back noindex and claim-free
+// rather than silently republishing an online MBA that does not exist.
+//
 // To clear a university from this list, you need a written entitlement that
 // states Online mode, or a DEB portal row showing it. A programme name in a
 // PDF is not enough. That is what put REVA here.

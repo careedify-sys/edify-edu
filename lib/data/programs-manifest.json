@@ -13782,60 +13782,6 @@
     "spec_name": "Sociology"
   },
   {
-    "university_slug": "reva-university-online",
-    "program": "mba",
-    "spec_slug": "finance-and-international-business",
-    "spec_name": "Finance and International Business"
-  },
-  {
-    "university_slug": "reva-university-online",
-    "program": "mba",
-    "spec_slug": "finance-and-marketing",
-    "spec_name": "Finance and Marketing"
-  },
-  {
-    "university_slug": "reva-university-online",
-    "program": "mba",
-    "spec_slug": "human-resource-and-marketing",
-    "spec_name": "Human Resource and Marketing"
-  },
-  {
-    "university_slug": "reva-university-online",
-    "program": "mba",
-    "spec_slug": "finance-and-operations-management",
-    "spec_name": "Finance and Operations Management"
-  },
-  {
-    "university_slug": "reva-university-online",
-    "program": "mba",
-    "spec_slug": "finance-and-human-resource",
-    "spec_name": "Finance and Human Resource"
-  },
-  {
-    "university_slug": "reva-university-online",
-    "program": "mba",
-    "spec_slug": "finance-and-business-analytics",
-    "spec_name": "Finance and Business Analytics"
-  },
-  {
-    "university_slug": "reva-university-online",
-    "program": "mca",
-    "spec_slug": "general",
-    "spec_name": "General"
-  },
-  {
-    "university_slug": "reva-university-online",
-    "program": "bba",
-    "spec_slug": "finance-and-banking",
-    "spec_name": "Finance and Banking"
-  },
-  {
-    "university_slug": "reva-university-online",
-    "program": "bca",
-    "spec_slug": "general",
-    "spec_name": "General"
-  },
-  {
     "university_slug": "university-of-calicut-online",
     "program": "mba",
     "spec_slug": "human-resource-management",
