@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29",
+  "updatedAt": "2026-08-31",
   "note": "Per-file em-dash baseline for app/**/*.tsx and components/**/*.tsx. Mirrors data/fee-mismatch-baseline.json: check-em-dash-baseline.mjs blocks any commit that raises a file above its allowed count. Files not listed are allowed zero. Count can only ratchet DOWN. See audits/em-dash-cleanup-components-2026-08-05.md for the planned cleanup.",
   "files": {
     "app/about/page.tsx": 14,
@@ -68,7 +68,7 @@
     "components/FloatingCTA.tsx": 1,
     "components/Footer.tsx": 1,
     "components/GatedContent.tsx": 6,
-    "components/HonestVerdict.tsx": 5,
+    "components/HonestVerdict.tsx": 4,
     "components/LastUpdatedStamp.tsx": 1,
     "components/LeadCapture.tsx": 5,
     "components/LearningExperience.tsx": 2,

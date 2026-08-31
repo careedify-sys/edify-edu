@@ -2,39 +2,36 @@
   "uniSlug": "reva-university-online",
   "program": "bca",
   "sections": {
-    "tldr": "TL;DR: REVA University Online BCA at a glance. Newly recognised, listed in the UGC Distance Education Bureau recognition list of August 2026. Private university in Karnataka. It is granted as a general programme, with no named specialisation. Duration 3 Years. The fee for the current intake is not published here yet, so request it before you apply.",
-    "ugcDeb": "REVA University is listed in the UGC Distance Education Bureau recognition list of August 2026, which grants it 9 programmes for online delivery. Bachelor of Computer Applications is one of them. UGC rules treat an online degree from an entitled university as equivalent to a conventional one for employment, government recruitment and further study. Entitlement is granted intake by intake and programme by programme, so confirm the current position for your admission year at deb.ugc.ac.in rather than relying on any page, including this one.",
+    "tldr": "TL;DR: EdifyEdu cannot confirm an online BCA at REVA University. REVA appears in the UGC Distance Education Bureau recognition list of August 2026, but that document names programmes without stating whether a grant covers Online mode or Open and Distance Learning. The UGC DEB programme register does not list REVA University, and REVA advertises on-campus programmes only on its own website. REVA has told EdifyEdu that it does not run an MBA in online mode. Treat this page as a status note, not an admission page.",
+    "ugcDeb": "REVA University appears in the UGC Distance Education Bureau recognition list published in August 2026, which names 9 programmes for the university including Bachelor of Computer Applications. That document carries no mode column, so it does not establish whether the grant covers Online mode or Open and Distance Learning. The DEB programme register at deb.ugc.ac.in, which does state the mode against each programme, does not list REVA University. EdifyEdu has not been able to confirm an Online mode entitlement for this programme. Check deb.ugc.ac.in and ask REVA University directly before you act on anything here.",
     "redFlags": [
-      "No fee is published on this page. Any figure quoted to you by a third party should be confirmed in writing with the university before you pay.",
-      "This is a recent entitlement. Confirm it covers the exact intake you are applying for, since UGC-DEB approval is granted per intake.",
-      "Check the specific recruitment notification if you are applying for a government role, as some services set their own conditions."
+      "REVA University has told EdifyEdu that it does not offer an MBA in online mode. Do not read this page as evidence that an online programme exists.",
+      "The August 2026 UGC document names programmes but not the delivery mode. Appearing in it does not by itself establish an Online mode entitlement.",
+      "The UGC DEB programme register, which does state the mode, does not list REVA University. Confirm the current position at deb.ugc.ac.in.",
+      "No fee is published for this programme. Any figure quoted to you by a third party should be confirmed in writing with the university before you pay."
     ],
     "faqs": [
       {
-        "question": "Is REVA University approved for an online BCA?",
-        "answer": "Yes. REVA University appears in the UGC Distance Education Bureau recognition list of August 2026, which grants it Bachelor of Computer Applications for online delivery. Verify the current position for your admission year at deb.ugc.ac.in."
+        "question": "Does REVA University offer an online BCA?",
+        "answer": "EdifyEdu cannot confirm that it does. REVA has told us it runs no MBA in online mode, its own website advertises on-campus programmes only, and the UGC DEB programme register does not list the university. Contact REVA University directly and check deb.ugc.ac.in for the current position."
       },
       {
-        "question": "What does the REVA University online BCA cost?",
-        "answer": "The fee for the current intake is not published on this page yet. This is a recent entitlement and the university has not put a public figure against it that we can verify. Request the current fee structure in writing before you apply, and treat any figure from a third party with caution."
+        "question": "Why does REVA appear in the August 2026 UGC list then?",
+        "answer": "That list names the programmes granted to each institution but carries no mode column, so it does not separate Online mode from Open and Distance Learning. EdifyEdu earlier read it as an online grant. The document does not support that reading."
       },
       {
-        "question": "What specialisations are available?",
-        "answer": "The programme is granted as a general BCA with no named specialisation, so there is no separate track to choose at application."
-      },
-      {
-        "question": "Is this degree valid for government jobs?",
-        "answer": "An online degree from a UGC-DEB entitled university is treated as equivalent to a conventional one for employment and government recruitment. REVA University holds that entitlement for this programme under the August 2026 list. Individual recruitment notifications can still set their own conditions, so check the notification you are applying against."
+        "question": "What should I do if I want to study at REVA University?",
+        "answer": "Approach REVA University directly through reva.edu.in for its current programme options and admission process. Confirm the delivery mode and the UGC position in writing before you pay anything."
       },
       {
         "question": "How long is the BCA?",
-        "answer": "3 Years."
+        "answer": "3 Years as named in the August 2026 list."
       }
     ]
   },
   "metadata": {
-    "generatedAt": "2026-08-29",
-    "source": "audits/ugc-deb-2026-08, UGC-DEB August 2026 recognition list and addendum",
-    "note": "No fee on record. Fee sections are deliberately absent and the page routes to the counsellor form."
+    "generatedAt": "2026-08-31",
+    "source": "UGC-DEB August 2026 recognition list (no mode column), deb.ugc.ac.in programme register, reva.edu.in",
+    "note": "Online mode UNCONFIRMED. REVA contacted EdifyEdu on 2026-08-31 to say it runs no MBA in online mode. Every claim of online delivery was stripped and the slug is noindex via MODE_UNVERIFIED_UNIS in lib/seo/should-index.ts. Do not re-index without a written entitlement stating Online mode."
   }
 }

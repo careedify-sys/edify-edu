@@ -22,6 +22,11 @@
 import type { University, Program } from '../data'
 import { getPageContent } from '../data/page-content'
 import { getDisplayFee } from '../fees'
+import { shouldIndexUniversity } from './mode-unverified'
+
+// The university-level gate lives in ./mode-unverified so client components can
+// import it without dragging in the fee resolver and the page-content loader.
+export { MODE_UNVERIFIED_UNIS, shouldIndexUniversity } from './mode-unverified'
 
 export interface IndexDecision {
   shouldIndex: boolean
@@ -35,8 +40,11 @@ export function shouldIndexProgrammeHub(
 ): IndexDecision {
   const hasContentJson = getPageContent(u.id, program) !== null
   const feeOk = getDisplayFee(u, program).ok
+  // The hasContentJson || feeOk rule below is unchanged and must stay an OR.
+  // shouldIndexUniversity is a separate outer gate on a different axis: it asks
+  // whether the university's delivery mode is verified at all.
   return {
-    shouldIndex: hasContentJson || feeOk,
+    shouldIndex: shouldIndexUniversity(u.id) && (hasContentJson || feeOk),
     hasContentJson,
     feeOk,
   }

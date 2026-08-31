@@ -18,6 +18,7 @@ import UniProgramBody from '@/components/UniProgramBody'
 import { pageKeywords } from '@/lib/page-keywords'
 import { resolveProgramme } from '@/lib/seo/resolve-programme'
 import { naacSuffix, naacSegment, naacAccredited, naacPhrase } from '@/lib/seo/display-guards'
+import { shouldIndexUniversity, unverifiedDescription, onlinePrefix } from '@/lib/seo/mode-unverified'
 
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('BBA')).map(u => ({ id: u.id }))
@@ -46,14 +47,14 @@ export async function generateMetadata(
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
   const title = fee.ok
     ? clampTitleFeeLed(
-        `${titleName} Online BBA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
-        `${shortName} Online BBA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
+        `${titleName} ${onlinePrefix(u.id)}BBA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
+        `${shortName} ${onlinePrefix(u.id)}BBA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
         fee.compact ?? null,
       )
-    : clampTitle(`${titleName} Online BBA ${year}: ${naacPhrase(u.naac, "UGC-DEB Entitled")} [Review] | edifyedu.in`)
-  const description = fee.ok
-    ? clampDescription(`${titleName} Online BBA ${year}: ${fee.compact} fees, ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved 3-year degree.`)
-    : clampDescription(`${titleName} Online BBA ${year}: ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved 3-year degree.`)
+    : clampTitle(`${titleName} ${onlinePrefix(u.id)}BBA ${year}: ${naacPhrase(u.naac, "UGC-DEB Entitled")} [Review] | edifyedu.in`)
+  const baseDescription = fee.ok
+    ? clampDescription(`${titleName} ${onlinePrefix(u.id)}BBA ${year}: ${fee.compact} fees, ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved 3-year degree.`)
+    : clampDescription(`${titleName} ${onlinePrefix(u.id)}BBA ${year}: ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved 3-year degree.`)
 
   const keywords = [
     `${u.name} online BBA fees`,
@@ -63,6 +64,11 @@ export async function generateMetadata(
     `${u.name} online BBA admission ${year}`,
     `${u.abbr} online BBA`,
   ].join(', ')
+
+  // Mode-unverified universities: see lib/seo/mode-unverified.ts.
+  const description = shouldIndexUniversity(u.id)
+    ? baseDescription
+    : unverifiedDescription(u.name, 'BBA')
 
   return {
     title,
@@ -89,8 +95,8 @@ function BBAProgramSchema({
   const programSchema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'EducationalOccupationalProgram',
-    name: `${u.name} Online BBA`,
-    description: `UGC-DEB approved Online BBA from ${u.name}.${naacAccredited(u.naac)} ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'BBA')}.`,
+    name: `${u.name} ${onlinePrefix(u.id)}BBA`,
+    description: `UGC-DEB approved ${onlinePrefix(u.id)}BBA from ${u.name}.${naacAccredited(u.naac)} ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'BBA')}.`,
     url: pageUrl,
     provider: {
       '@type': 'CollegeOrUniversity',

@@ -1,5 +1,6 @@
 import type { University } from '@/lib/data'
 import { CheckCircle, XCircle } from 'lucide-react'
+import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 
 interface Props {
   u: University
@@ -59,7 +60,7 @@ export default function HonestVerdict({ u, program, cleanName }: Props) {
     <section className="rounded-xl border border-slate-200 bg-white p-6">
       <h2 className="text-lg font-bold mb-1" style={{ color: '#0B1533' }}>Edify&apos;s Honest Verdict</h2>
       <p className="text-sm text-slate-500 mb-5">
-        No paid ranking. No commission. Here is who {cleanName} Online {program} genuinely suits — and who should look elsewhere.
+        No paid ranking. No commission. Here is who {cleanName} {shouldIndexUniversity(u.id) ? `Online ${program}` : program} genuinely suits, and who should look elsewhere.
       </p>
 
       <div className="grid sm:grid-cols-2 gap-4">

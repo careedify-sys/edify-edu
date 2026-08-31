@@ -23,6 +23,7 @@ import { pageKeywords } from '@/lib/page-keywords'
 import { resolveProgramme } from '@/lib/seo/resolve-programme'
 import { formatUniversityDisplayName } from '@/lib/format'
 import { naacSuffix, naacSegment, naacAccredited, naacPhrase } from '@/lib/seo/display-guards'
+import { shouldIndexUniversity, unverifiedDescription, onlinePrefix } from '@/lib/seo/mode-unverified'
 
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('MBA')).map(u => ({ id: u.id }))
@@ -70,7 +71,7 @@ export async function generateMetadata(
         type: 'website',
         url: `https://edifyedu.in/universities/${u.id}/mba`,
         siteName: 'edifyedu.in',
-        images: [{ url: 'https://edifyedu.in/og.png', width: 1200, height: 630, alt: `${formatUniversityDisplayName(u.name)} Online MBA | edifyedu.in` }],
+        images: [{ url: 'https://edifyedu.in/og.png', width: 1200, height: 630, alt: `${formatUniversityDisplayName(u.name)} ${onlinePrefix(u.id)}MBA | edifyedu.in` }],
       },
       twitter: { card: 'summary_large_image', title: override.title, description: override.description, images: ['https://edifyedu.in/og.png'] },
       robots: { index: shouldIndexProgrammeHub(u, 'MBA').shouldIndex, follow: true },
@@ -89,14 +90,14 @@ export async function generateMetadata(
   // "Fee structure verified by our counsellor" and the lead CTA instead.
   const title = fee.ok
     ? clampTitleFeeLed(
-        `${titleName} Online MBA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
-        `${shortName} Online MBA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
+        `${titleName} ${onlinePrefix(u.id)}MBA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
+        `${shortName} ${onlinePrefix(u.id)}MBA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
         fee.compact ?? null,
       )
-    : clampTitle(`${titleName} Online MBA ${year}: ${naacPhrase(u.naac, "UGC-DEB Entitled")} [Review] | edifyedu.in`)
-  const description = fee.ok
-    ? clampDescription(`${titleName} Online MBA ${year}: ${fee.compact} fees, ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. See honest review, syllabus and placement data.`)
-    : clampDescription(`${titleName} Online MBA ${year}: ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved.`)
+    : clampTitle(`${titleName} ${onlinePrefix(u.id)}MBA ${year}: ${naacPhrase(u.naac, "UGC-DEB Entitled")} [Review] | edifyedu.in`)
+  const baseDescription = fee.ok
+    ? clampDescription(`${titleName} ${onlinePrefix(u.id)}MBA ${year}: ${fee.compact} fees, ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. See honest review, syllabus and placement data.`)
+    : clampDescription(`${titleName} ${onlinePrefix(u.id)}MBA ${year}: ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved.`)
 
   const keywords = [
     `${u.name} online MBA fees`,
@@ -107,6 +108,11 @@ export async function generateMetadata(
     `${u.abbr} online MBA`,
     `${u.name} MBA fees syllabus placements reviews`,
   ].join(', ')
+
+  // Mode-unverified universities: see lib/seo/mode-unverified.ts.
+  const description = shouldIndexUniversity(u.id)
+    ? baseDescription
+    : unverifiedDescription(u.name, 'MBA')
 
   return {
     title,
@@ -124,7 +130,7 @@ export async function generateMetadata(
           url: 'https://edifyedu.in/og.png',
           width: 1200,
           height: 630,
-          alt: `${formatUniversityDisplayName(u.name)} Online MBA | edifyedu.in`,
+          alt: `${formatUniversityDisplayName(u.name)} ${onlinePrefix(u.id)}MBA | edifyedu.in`,
         },
       ],
     },
@@ -154,14 +160,14 @@ function MBAProgramSchema({
   // Sprint 3 Task 6: strip trailing " Online" from u.name before composing
   // schema strings. Raw u.name for universities that end in "Online" (e.g.
   // "Galgotias University Online") produces double-word artefacts like
-  // "Galgotias University Online Online MBA" in every schema payload.
+  // "Galgotias University Online ${onlinePrefix(u.id)}MBA" in every schema payload.
   const brand = formatUniversityDisplayName(u.name)
 
   const programSchema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'EducationalOccupationalProgram',
-    name: `${brand} Online MBA`,
-    description: `UGC-DEB approved Online MBA from ${brand}.${naacAccredited(u.naac)} ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'MBA')}.`,
+    name: `${brand} ${onlinePrefix(u.id)}MBA`,
+    description: `UGC-DEB approved ${onlinePrefix(u.id)}MBA from ${brand}.${naacAccredited(u.naac)} ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'MBA')}.`,
     url: pageUrl,
     provider: {
       '@type': 'CollegeOrUniversity',

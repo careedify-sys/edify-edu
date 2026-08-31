@@ -8,6 +8,7 @@ import UniSpecBody from '@/components/UniSpecBody'
 import { getTitleName, getShortTitleName, shortenSpec, clampTitle, clampTitleSpecLed, clampDescription, compactFee } from '@/lib/seo-title'
 import { pageKeywords } from '@/lib/page-keywords'
 import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
+import { shouldIndexUniversity, unverifiedDescription } from '@/lib/seo/mode-unverified'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
 export async function generateStaticParams() {
@@ -49,9 +50,14 @@ export async function generateMetadata(
       `${shortName} MCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
       shortSpec,
     )
-  const description = clampDescription(syllabus?.metaDesc
+  const baseDescription = clampDescription(syllabus?.metaDesc
     ? `${u.name} Online MCA in ${spec} ${year}. ${syllabus.metaDesc}`
     : `${u.name} Online MCA in ${spec} ${year}: ${fee} fees${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. Check syllabus, eligibility & career scope free.`)
+
+  // Mode-unverified universities: see lib/seo/mode-unverified.ts.
+  const description = shouldIndexUniversity(u.id)
+    ? baseDescription
+    : unverifiedDescription(u.name, 'MCA')
 
   return {
     title,
@@ -59,7 +65,7 @@ export async function generateMetadata(
     keywords: syllabus?.metaKeywords || undefined,
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/mca/${canonicalSlug}` },
     openGraph: { title, description, type: 'website' },
-    robots: { index: true, follow: true },
+    robots: { index: shouldIndexUniversity(u.id), follow: true },
   }
 }
 

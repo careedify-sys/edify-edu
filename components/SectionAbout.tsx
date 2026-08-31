@@ -1,6 +1,7 @@
 import type { University, ProgramDetail } from '@/lib/data'
 import { formatSpecList } from '@/lib/data'
 import { formatRank, preferForProgram } from '@/lib/highlight'
+import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 
 interface Props {
   u: University
@@ -12,6 +13,38 @@ interface Props {
 }
 
 export default function SectionAbout({ u, program, pd, cleanName, spec, customIntro }: Props) {
+  // Mode-unverified universities: every sentence below asserts online delivery
+  // ("runs an Online X program", "live and recorded sessions", "entitled for
+  // online delivery"). None of that is established for these records, so the
+  // section is replaced wholesale rather than patched clause by clause.
+  // See MODE_UNVERIFIED_UNIS in lib/seo/should-index.ts.
+  if (!shouldIndexUniversity(u.id)) {
+    return (
+      <section className="rounded-xl border border-slate-200 bg-white p-6">
+        <h2 className="text-lg font-bold mb-4" style={{ color: '#0B1533' }}>
+          {cleanName} {program}{spec ? ` in ${spec}` : ''}: What We Can Confirm
+        </h2>
+        <div className="space-y-3 text-[15px] text-slate-600 leading-relaxed">
+          <p>
+            {cleanName} appears in the UGC Distance Education Bureau recognition list of
+            August 2026, which names {program}{spec ? ` in ${spec}` : ''} among its programmes.
+            That document records programme names without a delivery mode, so it does not
+            establish whether the grant covers Online mode or Open and Distance Learning.
+          </p>
+          <p>
+            The UGC DEB programme register, which does state the mode against each entry,
+            does not list {cleanName}, and the university advertises on-campus programmes
+            only on its own website. EdifyEdu cannot confirm that this programme runs online.
+          </p>
+          <p>
+            Contact {cleanName} directly and check deb.ugc.ac.in for the position that applies
+            to your admission year before you act on anything here.
+          </p>
+        </div>
+      </section>
+    )
+  }
+
   const heading = spec
     ? `${cleanName} Online ${program} in ${spec}: Programme Overview`
     : `${cleanName} Online ${program}: Programme Overview`

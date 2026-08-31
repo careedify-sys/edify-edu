@@ -20,6 +20,7 @@ import EdifyTrust from '@/components/EdifyTrust'
 import GatedContent from '@/components/GatedContent'
 import AssuredMarquee from '@/components/AssuredMarquee'
 import PreAdmissionTools from '@/components/PreAdmissionTools'
+import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 
 const progSlug = (p: Program) => p.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'')
 
@@ -74,7 +75,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
   }
 
   // Comprehensive FAQs — 10 questions matching real user searches
-  const faqs = [
+  const templateFaqs = [
     {
       q:`Is ${u.name} a good university for online degrees?`,
       a:`${u.name} is ${u.nirf > 0 && u.nirf < 200 ? `NIRF #${u.nirf} overall` : 'a UGC DEB approved university'}${u.nirfMgt && u.nirfMgt < 200 ?` and NIRF #${u.nirfMgt} in Management`:''}. ${u.naac ? `It holds NAAC ${u.naac} accreditation and is` : 'It is'} UGC DEB approved. For private sector careers and corporate hiring it is a strong choice. Always verify specific job notifications for government roles.`
@@ -117,6 +118,25 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
     },
   ]
 
+  // Mode-unverified universities: the set above answers "yes, UGC DEB approved",
+  // lists online programmes and describes an exam mode, and it is serialised
+  // into the FAQPage JSON-LD below. None of that is established for these
+  // records. See lib/seo/mode-unverified.ts.
+  const faqs = shouldIndexUniversity(u.id) ? templateFaqs : [
+    {
+      q:`Does ${u.name} offer online programmes?`,
+      a:`EdifyEdu cannot confirm that it does. ${u.name} appears in the UGC Distance Education Bureau recognition list of August 2026, but that document names programmes without stating a delivery mode. The UGC DEB programme register, which does state the mode, does not list ${u.name}, and the university advertises on-campus programmes only on its own website.`
+    },
+    {
+      q:`What does the August 2026 UGC list actually say?`,
+      a:`It names ${u.programs.length} programme types for ${u.name}: ${u.programs.join(', ')}. It records no delivery mode against them, so it does not separate Online mode from Open and Distance Learning.`
+    },
+    {
+      q:`What should I do if I want to study at ${u.name}?`,
+      a:`Approach the university directly for its current programme options and admission process. Confirm the delivery mode and the UGC position in writing at deb.ugc.ac.in before you pay anything.`
+    },
+  ]
+
   return (
     <>
       {/* ── Lead Capture Triggers ── */}
@@ -125,6 +145,10 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
         '@context':'https://schema.org','@type':'FAQPage',
         mainEntity:faqs.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))
       })}}/>
+      {/* Mode-unverified universities: this node asserts a Course exists, calls it
+          UGC DEB approved and stamps courseMode 'online' on its CourseInstance.
+          See lib/seo/mode-unverified.ts. */}
+      {shouldIndexUniversity(u.id) && (
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
         '@context':'https://schema.org','@type':'Course',
         name:`${u.name} ${displayProgram}`,
@@ -136,6 +160,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
         timeRequired: displayProgram==='MBA'||displayProgram==='MCA'?'P2Y':'P3Y',
       hasCourseInstance:{'@type':'CourseInstance',courseMode:'online',courseWorkload:displayProgram==='MBA'||displayProgram==='MCA'?'P2Y':'P3Y'},
       })}}/>
+      )}
 
       <AssuredMarquee />
 

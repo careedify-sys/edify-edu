@@ -25,6 +25,7 @@
 
 import type { University } from './data'
 import { TITLE_NAME, getTitleName } from './seo-title'
+import { shouldIndexUniversity } from './seo/mode-unverified'
 
 export type UniType = 'private' | 'deemed' | 'state-private' | 'central' | 'state-public' | 'open'
 
@@ -134,7 +135,10 @@ function fitTitle(base: string, tail: string[], max: number): string {
 
 // ── University degree pages ────────────────────────────────────────────────
 export function buildUniTitle(uni: UniLike, program: string, year: number, max = 60): string {
-  const base = `${getShortName(uni)} Online ${program} ${year}`
+  // Mode-unverified universities must not be titled "X Online MBA".
+  // See lib/seo/mode-unverified.ts.
+  const onlineWord = shouldIndexUniversity(uni.id) ? 'Online ' : ''
+  const base = `${getShortName(uni)} ${onlineWord}${program} ${year}`
   if (isTechProgram(program)) {
     const { label } = getApprovalSignal(uni, program)
     // Deemed uses "& Syllabus", others use "& Specializations" per spec.

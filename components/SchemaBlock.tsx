@@ -2,6 +2,7 @@ import type { University, ProgramDetail, Program } from '@/lib/data'
 import type { Coupon } from '@/lib/coupons'
 import { formatUniversityDisplayName } from '@/lib/format'
 import { getDisplayFee } from '@/lib/fees'
+import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 
 interface Props {
   u: University
@@ -31,7 +32,7 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
       { '@type': 'ListItem', position: 1, name: 'Home',         item: baseUrl },
       { '@type': 'ListItem', position: 2, name: 'Universities', item: `${baseUrl}/universities` },
       { '@type': 'ListItem', position: 3, name: u.name,         item: `${baseUrl}/universities/${u.id}` },
-      { '@type': 'ListItem', position: 4, name: `Online ${program}`, item: `${baseUrl}/universities/${u.id}/${programSlug}` },
+      { '@type': 'ListItem', position: 4, name: shouldIndexUniversity(u.id) ? `Online ${program}` : program, item: `${baseUrl}/universities/${u.id}/${programSlug}` },
       ...(spec && specSlug ? [{ '@type': 'ListItem', position: 5, name: spec, item: pageUrl }] : []),
     ],
   }
@@ -97,10 +98,19 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
   // FAQPage schema removed — rendered once by FAQBlock.tsx to avoid duplicate
   // rich result errors in Google Search Console
 
+  // Mode-unverified universities: courseSchema asserts a Course exists, names it
+  // "Online {program}", and stamps courseMode: 'Online' on both the Course and
+  // its CourseInstance. That is the exact claim we cannot support, and as
+  // structured data it travels further than the visible copy. Emit the
+  // breadcrumb only. See MODE_UNVERIFIED_UNIS in lib/seo/should-index.ts.
+  const emitCourse = shouldIndexUniversity(u.id)
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+      {emitCourse && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+      )}
     </>
   )
 }

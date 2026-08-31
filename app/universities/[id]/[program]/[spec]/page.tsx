@@ -7,6 +7,7 @@ import { resolveSpec } from '@/lib/data/programs'
 import { getTitleName, getShortTitleName, clampTitle, clampTitleSpecLed, clampDescription, compactFee, shortenSpec } from '@/lib/seo-title'
 import UniSpecBody from '@/components/UniSpecBody'
 import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
+import { shouldIndexUniversity, unverifiedDescription } from '@/lib/seo/mode-unverified'
 
 const PM: Record<string, Program> = {
   'mba': 'MBA', 'mca': 'MCA', 'bba': 'BBA', 'bca': 'BCA', 'ba': 'BA',
@@ -52,7 +53,12 @@ export async function generateMetadata(
     `${shortName} ${program} ${shortSpec} ${year}: ${fees}${naacSegment(u.naac)} | EdifyEdu`,
     shortSpec,
   )
-  const description = clampDescription(`Online ${program} in ${spec} from ${titleName}: ${fees} fees, eligibility, syllabus and admission ${year}.${naacSuffix(u.naac)}${nirfStr}. UGC-DEB approved. Compare before you enrol.`)
+  const baseDescription = clampDescription(`Online ${program} in ${spec} from ${titleName}: ${fees} fees, eligibility, syllabus and admission ${year}.${naacSuffix(u.naac)}${nirfStr}. UGC-DEB approved. Compare before you enrol.`)
+
+  // Mode-unverified universities: see lib/seo/mode-unverified.ts.
+  const description = shouldIndexUniversity(u.id)
+    ? baseDescription
+    : unverifiedDescription(u.name, program)
 
   return {
     title,
@@ -68,7 +74,7 @@ export async function generateMetadata(
       title, description, type: 'website',
       images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630 }],
     },
-    robots: { index: true, follow: true },
+    robots: { index: shouldIndexUniversity(u.id), follow: true },
   }
 }
 

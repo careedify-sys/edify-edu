@@ -20,6 +20,7 @@ import UniProgramBody from '@/components/UniProgramBody'
 import { pageKeywords } from '@/lib/page-keywords'
 import { resolveProgramme } from '@/lib/seo/resolve-programme'
 import { naacSuffix, naacSegment, naacAccredited, naacPhrase } from '@/lib/seo/display-guards'
+import { shouldIndexUniversity, unverifiedDescription, onlinePrefix } from '@/lib/seo/mode-unverified'
 
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('MCA')).map(u => ({ id: u.id }))
@@ -49,14 +50,14 @@ export async function generateMetadata(
   const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
   const title = fee.ok
     ? clampTitleFeeLed(
-        `${titleName} Online MCA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
-        `${shortName} Online MCA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
+        `${titleName} ${onlinePrefix(u.id)}MCA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
+        `${shortName} ${onlinePrefix(u.id)}MCA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
         fee.compact ?? null,
       )
-    : clampTitle(`${titleName} Online MCA ${year}: ${naacPhrase(u.naac, "UGC-DEB Entitled")} [Review] | edifyedu.in`)
-  const description = clampDescription(syllabus?.metaDesc || (fee.ok
-    ? `${titleName} Online MCA ${year}: ${fee.compact} fees, ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. Check syllabus and eligibility free.`
-    : `${titleName} Online MCA ${year}: ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved.`))
+    : clampTitle(`${titleName} ${onlinePrefix(u.id)}MCA ${year}: ${naacPhrase(u.naac, "UGC-DEB Entitled")} [Review] | edifyedu.in`)
+  const baseDescription = clampDescription(syllabus?.metaDesc || (fee.ok
+    ? `${titleName} ${onlinePrefix(u.id)}MCA ${year}: ${fee.compact} fees, ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. Check syllabus and eligibility free.`
+    : `${titleName} ${onlinePrefix(u.id)}MCA ${year}: ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved.`))
 
   const dynamicKw = [
     `${u.name} online MCA fees`,
@@ -66,6 +67,11 @@ export async function generateMetadata(
     `${u.name} online MCA admission ${year}`,
     `${u.abbr} online MCA`,
   ].join(', ')
+
+  // Mode-unverified universities: see lib/seo/mode-unverified.ts.
+  const description = shouldIndexUniversity(u.id)
+    ? baseDescription
+    : unverifiedDescription(u.name, 'MCA')
 
   return {
     title,
@@ -92,8 +98,8 @@ function MCAProgramSchema({
   const programSchema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'EducationalOccupationalProgram',
-    name: `${u.name} Online MCA`,
-    description: `UGC-DEB approved Online MCA from ${u.name}.${naacAccredited(u.naac)} ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'MCA')}.`,
+    name: `${u.name} ${onlinePrefix(u.id)}MCA`,
+    description: `UGC-DEB approved ${onlinePrefix(u.id)}MCA from ${u.name}.${naacAccredited(u.naac)} ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'MCA')}.`,
     url: pageUrl,
     provider: {
       '@type': 'CollegeOrUniversity',

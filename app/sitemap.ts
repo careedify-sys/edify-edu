@@ -25,7 +25,7 @@ import { GUIDES } from '@/lib/guides'
 import { CGPA_VALUES } from './tools/cgpa-calculator/[value]/data'
 import { COUPON_PAGE_SLUGS } from '@/lib/coupon-pages'
 import { RESCUED_PROGRAM_PATHS } from '@/lib/seo/rescued-pages'
-import { PROGRAMS_INDEX_ALLOWLIST, shouldIndexProgramsPath } from '@/lib/seo/should-index'
+import { PROGRAMS_INDEX_ALLOWLIST, shouldIndexProgramsPath, MODE_UNVERIFIED_UNIS } from '@/lib/seo/should-index'
 
 // MBA spec slugs that are redirect sources (Sprint 4, next.config.js).
 // Safety net: even if valid-urls.json contains stale entries, the sitemap
@@ -144,6 +144,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       if (path === '/programs') return false
       if (/^\/programs\/[^/]+$/.test(path) && !shouldIndexProgramsPath(path)) return false
 
+      // Mode-unverified universities (2026-08-31). Their per-page robots meta
+      // is noindex via shouldIndexUniversity, so the sitemap must drop them too
+      // or the two signals contradict each other.
+      if (path.startsWith('/universities/')) {
+        const uniSlug = path.split('/')[2]
+        if (MODE_UNVERIFIED_UNIS.has(uniSlug)) return false
+      }
+
       // Remove MBA spec pages whose spec slug is a redirect source
       const specMatch = path.match(/^\/universities\/([^/]+)\/mba\/([^/]+)$/)
       if (specMatch) {
@@ -221,7 +229,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // ── Verify pages (static JSON built from Supabase — no dynamic import) ──────
   // Source: lib/data/verify-slugs.json (update with: npx tsx scripts/build-verify-slugs.ts)
-  const verifyPages: MetadataRoute.Sitemap = loadVerifySlugs().map(slug => ({
+  const verifyPages: MetadataRoute.Sitemap = loadVerifySlugs()
+    .filter(slug => !MODE_UNVERIFIED_UNIS.has(slug))
+    .map(slug => ({
     url: `${BASE}/verify/${slug}`,
     changeFrequency: 'monthly' as const,
     priority: 0.75,

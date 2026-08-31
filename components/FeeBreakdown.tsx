@@ -3,6 +3,7 @@ import type { University, ProgramDetail, Program } from '@/lib/data'
 import { formatINR } from '@/lib/format'
 import { getDisplayFee } from '@/lib/fees'
 import { IndianRupee, AlertTriangle } from 'lucide-react'
+import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 
 interface Props {
   u: University
@@ -24,7 +25,7 @@ export default function FeeBreakdown({ u, pd, program, cleanName, headingOverrid
         <div className="flex items-center gap-2 mb-1">
           <IndianRupee size={16} className="text-slate-400" />
           <h2 className="text-lg font-bold" style={{ color: '#0B1533' }}>
-            {headingOverride || `${cleanName} Online ${program} Fees 2026`}
+            {headingOverride || `${cleanName} ${shouldIndexUniversity(u.id) ? 'Online ' : ''}${program} Fees 2026`}
           </h2>
         </div>
         <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 mt-3">
@@ -68,7 +69,7 @@ export default function FeeBreakdown({ u, pd, program, cleanName, headingOverrid
     <section className="rounded-xl border border-slate-200 bg-white p-6">
       <div className="flex items-center gap-2 mb-1">
         <IndianRupee size={16} className="text-slate-400" />
-        <h2 className="text-lg font-bold" style={{ color: '#0B1533' }}>{headingOverride || `${cleanName} Online ${program} Fees 2026`}</h2>
+        <h2 className="text-lg font-bold" style={{ color: '#0B1533' }}>{headingOverride || `${cleanName} ${shouldIndexUniversity(u.id) ? 'Online ' : ''}${program} Fees 2026`}</h2>
       </div>
       <p className="text-sm text-slate-500 mb-4">
         Fee structure for {program}. Payment is accepted semester-wise or in full. EMI available through lending partners.

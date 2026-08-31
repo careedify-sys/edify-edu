@@ -8870,7 +8870,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'reva-university-online',
-    name: 'REVA University Online',
+    name: 'REVA University',
     abbr: 'REVA',
     city: '',
     state: 'KARNATAKA',
@@ -8888,10 +8888,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 0,
     eligibility: 'Graduation in any discipline for PG programmes, 10+2 for UG programmes',
     eligibilityPct: 0,
-    tagline: 'Karnataka private university, UGC-DEB entitled with six dual-specialisation MBAs',
-    description: 'REVA University is a private university in Karnataka listed in the UGC Distance Education Bureau recognition list of August 2026, which grants it nine programmes for online delivery. All six of its MBA grants are dual specialisations rather than a general MBA, and the BBA grant is specifically Finance and Banking. Fees for the current intake are not published on this page yet. Confirm entitlement for your admission year and programme at deb.ugc.ac.in before you enrol.',
-    forWho: ['Candidates who want a dual-specialisation MBA rather than a single track', 'Working professionals in Bengaluru and across Karnataka', 'Finance-focused applicants, since five of the six MBA pairings include Finance'],
-    notFor: ['Applicants who need a published fee before shortlisting', 'Candidates looking for a general MBA with no specialisation pairing'],
+    tagline: 'Karnataka private university listed in the UGC-DEB August 2026 list, online mode unconfirmed',
+    description: 'REVA University appears in the UGC Distance Education Bureau recognition list of August 2026, which names 9 programmes for the university. That document carries no mode column, so it does not establish whether those grants cover Online mode or Open and Distance Learning. The UGC DEB programme register, which does state the mode, does not list REVA University, and REVA advertises on-campus programmes only on its own website. REVA has told EdifyEdu that it does not run an MBA in online mode. EdifyEdu cannot confirm an online programme here. Check deb.ugc.ac.in and contact REVA University directly before you act on this page.',
+    forWho: ['Applicants who want to see exactly what the August 2026 UGC list names for REVA University', 'Anyone comparing REVA against universities that hold a confirmed online entitlement'],
+    notFor: ['Applicants who want to enrol in an online programme at REVA, since EdifyEdu cannot confirm one exists', 'Applicants who need a published fee before shortlisting'],
     programs: ['MBA', 'MCA', 'BBA', 'BCA'],
     programDetails: {
       'MBA': {
@@ -8902,7 +8902,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '',
         topCompanies: [],
         internshipType: 'Not published',
-        careerOutcome: 'UGC-DEB entitled MBA offered only as dual specialisations. The August 2026 UGC grant names six pairings, five of which include Finance.',
+        careerOutcome: 'EdifyEdu cannot confirm that REVA University runs this MBA in online mode. The August 2026 UGC list names six dual specialisations but states no delivery mode, and REVA has told EdifyEdu it runs no online MBA. Contact the university directly.',
       },
       'MCA': {
         specs: ['General'],
@@ -8912,7 +8912,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '',
         topCompanies: [],
         internshipType: 'Not published',
-        careerOutcome: 'UGC-DEB entitled MCA from a Karnataka private university, valid for corporate hiring and further study.',
+        careerOutcome: 'EdifyEdu cannot confirm that REVA University runs this MCA in online mode. The August 2026 UGC list names the programme without stating a delivery mode. Contact the university directly.',
       },
       'BBA': {
         specs: ['Finance and Banking'],
@@ -8922,7 +8922,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '',
         topCompanies: [],
         internshipType: 'Not published',
-        careerOutcome: 'UGC-DEB entitled BBA granted specifically in Finance and Banking, which suits candidates targeting the banking and financial services sector.',
+        careerOutcome: 'EdifyEdu cannot confirm that REVA University runs this BBA in online mode. The August 2026 UGC list names it as Finance and Banking without stating a delivery mode. Contact the university directly.',
       },
       'BCA': {
         specs: ['General'],
@@ -8932,7 +8932,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '',
         topCompanies: [],
         internshipType: 'Not published',
-        careerOutcome: 'UGC-DEB entitled BCA from a Karnataka private university, accepted for MCA admission and IT entry-level roles.',
+        careerOutcome: 'EdifyEdu cannot confirm that REVA University runs this BCA in online mode. The August 2026 UGC list names the programme without stating a delivery mode. Contact the university directly.',
       },
     },
     color: '#B02A37',

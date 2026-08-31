@@ -7,6 +7,7 @@ import UniversityPageClient from '@/components/UniversityPageClient'
 import { getResolvableProgrammes, getVerifyPage } from '@/lib/seo/safe-internal-links'
 import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
 import { pageKeywords } from '@/lib/page-keywords'
+import { shouldIndexUniversity, onlinePrefix } from '@/lib/seo/mode-unverified'
 
 // ── Static Params (SSG) — pre-render all university pages at build time ──
 export async function generateStaticParams() {
@@ -34,14 +35,19 @@ export async function generateMetadata(
   const hasFee = u.feeMin > 0
   const feeStr = feeMin === feeMax ? `₹${feeMin}K` : `₹${feeMin}K-${feeMax}K`
   const feeSeg = hasFee ? `Fees ${feeStr}, ` : ''
-  const naacSeg = u.naac ? `NAAC ${u.naac}` : 'UGC-DEB Entitled'
+  // "UGC-DEB Entitled" is the no-NAAC fallback, but for a mode-unverified
+  // university that phrase reads as an online entitlement we cannot support.
+  // See lib/seo/mode-unverified.ts.
+  const naacSeg = u.naac
+    ? `NAAC ${u.naac}`
+    : shouldIndexUniversity(u.id) ? 'UGC-DEB Entitled' : 'Delivery Mode Unconfirmed'
   const mainProg = u.programs[0] || 'MBA'
   const specCount = Object.values(u.programDetails || {}).reduce((sum, pd) => sum + (pd?.specs?.length || 0), 0)
   const nirfStr = u.nirf && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
   const nirfHook = u.nirf && u.nirf < 100 ? ` NIRF #${u.nirf},` : ''
   // CTR-tuned title (2026-05-25): lead with brand, fee number first, NAAC + bracket year hook.
   // Pattern: "{Uni} Online: ₹{fee} Fees, NAAC {grade} [{year} Review] | EdifyEdu"
-  const title = `${titleName} Online ${year}: ${feeSeg}${naacSeg} [Review] | EdifyEdu`
+  const title = `${titleName} ${onlinePrefix(u.id)}${year}: ${feeSeg}${naacSeg} [Review] | EdifyEdu`
   const specStr = specCount > 3 ? ` ${specCount}+ specialisations.` : ''
   const cityStr = u.city && u.city !== 'Online' ? ` Based in ${u.city}.` : ''
   // CTR-tuned description: numeric facts first, no "Compare/Explore" lead, micro-CTA at end.
@@ -79,7 +85,7 @@ export async function generateMetadata(
       url: `https://edifyedu.in/universities/${u.id}`,
       type: 'website',
       siteName: 'edifyedu.in',
-      images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: `${u.name} Online Programs` }],
+      images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: `${u.name} ${onlinePrefix(u.id)}Programs` }],
     },
     twitter: {
       card: 'summary_large_image',
@@ -87,7 +93,7 @@ export async function generateMetadata(
       description: d,
       images: ['https://edifyedu.in/og.webp'],
     },
-    robots: { index: true, follow: true },
+    robots: { index: shouldIndexUniversity(u.id), follow: true },
   }
 }
 
@@ -139,15 +145,15 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
         },
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
-          name: `${u.name} Online Programs`,
+          name: `${u.name} ${onlinePrefix(u.id)}Programs`,
           itemListElement: u.programs.map((prog, i) => ({
             '@type': 'Offer',
             category: 'Online Education',
             position: i + 1,
             itemOffered: {
               '@type': 'Service',
-              name: `Online ${prog}`,
-              description: `${u.name} Online ${prog} program`,
+              name: `${onlinePrefix(u.id)}${prog}`,
+              description: `${u.name} ${onlinePrefix(u.id)}${prog} program`,
               provider: { '@type': 'CollegeOrUniversity', name: u.name },
             },
           })),

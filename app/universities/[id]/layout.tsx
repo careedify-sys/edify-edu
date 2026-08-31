@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { getUniversityById, formatFee } from '@/lib/data'
 import { getTitleName } from '@/lib/seo-title'
 import { naacSuffix, naacSegment, naacAccredited, naacPhrase } from '@/lib/seo/display-guards'
+import { shouldIndexUniversity, unverifiedDescription } from '@/lib/seo/mode-unverified'
 
 // ─── Canonical SEO name per university ID (from keyword research doc) ───
 const SEO_NAME: Record<string, string> = {
@@ -194,7 +195,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
 
   const seoName = getSeoName(u.id, u.name)
   const mainProg = u.programs[0] || 'MBA'
-  const progTitle = PROG_TITLE[mainProg] || `Online ${mainProg}`
+  const progTitle = PROG_TITLE[mainProg] || (shouldIndexUniversity(u.id) ? `Online ${mainProg}` : mainProg)
   const hasFee = u.feeMin > 0
   const feeStr = `${formatFee(u.feeMin)}–${formatFee(u.feeMax)}`
   // Falls back through NIRF then NAAC then the one thing every record has.
@@ -207,10 +208,10 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   // ── Title: short name + programs in parens — stays within Google's 600px limit ──
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const progStr = (u.programs || []).slice(0, 3).join(', ') || mainProg
-  const title = `${titleName} Online (${progStr}, Fees 2026) | EdifyEdu`
+  const title = `${titleName}${shouldIndexUniversity(u.id) ? ' Online' : ''} (${progStr}, Fees 2026) | EdifyEdu`
 
   // ── Description: keyword-rich, direct ────────────────────────
-  const description = `Direct Admission 2026 at ${seoName} Online. Get honest faculty reviews, actual package/placement stats${hasFee ? `, and total fees (${feeStr})` : ''}. ${nirf}${nirf.startsWith('NIRF') ? naacSegment(u.naac) : ''}. UGC DEB approved. Compare syllabus and apply today!`
+  const baseDescription = `Direct Admission 2026 at ${seoName} Online. Get honest faculty reviews, actual package/placement stats${hasFee ? `, and total fees (${feeStr})` : ''}. ${nirf}${nirf.startsWith('NIRF') ? naacSegment(u.naac) : ''}. UGC DEB approved. Compare syllabus and apply today!`
 
   const sn = seoName.toLowerCase()
 
@@ -240,6 +241,11 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     `ugc deb approved online mba`,
     `online mba for working professionals`,
   ]
+
+  // Mode-unverified universities: see lib/seo/mode-unverified.ts.
+  const description = shouldIndexUniversity(u.id)
+    ? baseDescription
+    : unverifiedDescription(u.name, undefined)
 
   return {
     title,

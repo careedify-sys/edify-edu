@@ -3,6 +3,7 @@ import { getUniversityById, formatFee, specName } from '@/lib/data'
 import type { Program } from '@/lib/data'
 import { getTitleName } from '@/lib/seo-title'
 import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
+import { shouldIndexUniversity, unverifiedDescription } from '@/lib/seo/mode-unverified'
 
 // Same SEO name map — shared source of truth
 const SEO_NAME: Record<string, string> = {
@@ -114,7 +115,7 @@ export async function generateMetadata({ params }: { params: { id: string; progr
   if (!u || !prog) return { title: 'Program Not Found', robots: { index: false, follow: false } }
 
   const seoName = getSeoName(u.id, u.name)
-  const progTitle = PROG_TITLE[prog] || `Online ${prog}`
+  const progTitle = PROG_TITLE[prog] || (shouldIndexUniversity(u.id) ? `Online ${prog}` : prog)
   const progKw = PROG_KW[prog] || `online ${prog.toLowerCase()}`
   const pd = u.programDetails[prog as keyof typeof u.programDetails]
   const fee = pd?.fees || `${formatFee(u.feeMin)}–${formatFee(u.feeMax)}`
@@ -124,7 +125,7 @@ export async function generateMetadata({ params }: { params: { id: string; progr
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const title = `${titleName} ${progTitle} — Fees & Syllabus 2026 | EdifyEdu`
 
-  const description = `Admissions open Oct 15–30, 2026. Online ${progTitle} at ${seoName}: ${fee} total${naacSegment(u.naac)}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}.${specs ? ` Specs: ${specs}.` : ''} UGC DEB approved. Compare & apply!`
+  const baseDescription = `Admissions open Oct 15–30, 2026. Online ${progTitle} at ${seoName}: ${fee} total${naacSegment(u.naac)}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}.${specs ? ` Specs: ${specs}.` : ''} UGC DEB approved. Compare & apply!`
 
   const sn = seoName.toLowerCase()
 
@@ -160,6 +161,11 @@ export async function generateMetadata({ params }: { params: { id: string; progr
     `${progKw} for working professionals`,
     ...(u.city && u.city !== 'India' ? [`${progKw} ${u.city.toLowerCase()}`] : []),
   ]
+
+  // Mode-unverified universities: see lib/seo/mode-unverified.ts.
+  const description = shouldIndexUniversity(u.id)
+    ? baseDescription
+    : unverifiedDescription(u.name, progTitle)
 
   return {
     title,

@@ -7,6 +7,7 @@ import { getDisplayFee } from '@/lib/fees'
 import { TrendingUp } from 'lucide-react'
 import LOGOS_MANIFEST from '@/lib/data/logos-manifest.json'
 import RankingBadge from './RankingBadge'
+import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 
 interface Props {
   u: University
@@ -24,16 +25,29 @@ export default function UniHero({ u, program, pd, cleanName, spec, customH1 }: P
 
   const year = new Date().getFullYear()
   const nameEndsOnline = cleanName.toLowerCase().endsWith('online')
+
+  // Mode-unverified universities: the H1, eyebrow and subheading below all
+  // assert online delivery and UGC DEB approval for this programme. Drop the
+  // word "Online" from the H1 and the approval claim from the eyebrow.
+  // See lib/seo/mode-unverified.ts.
+  const modeVerified = shouldIndexUniversity(u.id)
+
+  const onlinePrefix = modeVerified
+    ? (nameEndsOnline ? cleanName : cleanName + ' Online')
+    : cleanName
   const generatedH1 = spec
-    ? `${nameEndsOnline ? cleanName : cleanName + ' Online'} ${program} in ${spec}: Syllabus, Fees & Career Outcomes ${year}`
-    : `${nameEndsOnline ? cleanName : cleanName + ' Online'} ${program} ${year}: Fees, Placement, Syllabus & Reviews`
+    ? `${onlinePrefix} ${program} in ${spec}: Syllabus, Fees & Career Outcomes ${year}`
+    : `${onlinePrefix} ${program} ${year}: Fees, Placement, Syllabus & Reviews`
   const h1 = customH1 || generatedH1
 
+  const approvalSuffix = modeVerified ? ' · UGC DEB Approved' : ' · Delivery mode unconfirmed'
   const eyebrow = spec
-    ? `${level} · ${pd.duration || '2 Years'} · UGC DEB Approved`
-    : `${level} · ${specs.length > 0 ? `${specs.length} Specialisations · ` : ''}${pd.duration || '2 Years'} · UGC DEB Approved`
+    ? `${level} · ${pd.duration || '2 Years'}${approvalSuffix}`
+    : `${level} · ${specs.length > 0 ? `${specs.length} Specialisations · ` : ''}${pd.duration || '2 Years'}${approvalSuffix}`
 
-  const sub = spec
+  const sub = !modeVerified
+    ? `EdifyEdu cannot confirm that ${cleanName} runs this programme online. Check deb.ugc.ac.in and contact the university directly.`
+    : spec
     ? `${program} with ${spec} specialisation from ${cleanName}. UGC DEB approved.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}`
     : (cleanCareerOutcome(pd.careerOutcome || '') || `Advance your career with an Online ${program} from ${cleanName}. Choose from ${specs.length}+ industry-relevant specialisations. Study while working.`)
 

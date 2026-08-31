@@ -8,6 +8,7 @@ import UniSpecBody from '@/components/UniSpecBody'
 import { getTitleName, getShortTitleName, shortenSpec, clampTitle, clampTitleSpecLed, clampDescription, compactFee } from '@/lib/seo-title'
 import { pageKeywords } from '@/lib/page-keywords'
 import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
+import { shouldIndexUniversity, unverifiedDescription } from '@/lib/seo/mode-unverified'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
 export async function generateStaticParams() {
@@ -48,7 +49,12 @@ export async function generateMetadata(
       `${shortName} MBA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
       shortSpec,
     )
-  const description = clampDescription(`Online MBA in ${spec} from ${titleName}: ${fee} fees, eligibility, syllabus and admission ${year}.${naacSuffix(u.naac)}${nirfStr}. UGC-DEB approved. Compare before you enrol.`)
+  const baseDescription = clampDescription(`Online MBA in ${spec} from ${titleName}: ${fee} fees, eligibility, syllabus and admission ${year}.${naacSuffix(u.naac)}${nirfStr}. UGC-DEB approved. Compare before you enrol.`)
+
+  // Mode-unverified universities: see lib/seo/mode-unverified.ts.
+  const description = shouldIndexUniversity(u.id)
+    ? baseDescription
+    : unverifiedDescription(u.name, 'MBA')
 
   return {
     title,
@@ -64,7 +70,7 @@ export async function generateMetadata(
       images: [{ url: '/og.webp', width: 1200, height: 630 }],
     },
     twitter: { card: 'summary_large_image', title, description },
-    robots: { index: true, follow: true },
+    robots: { index: shouldIndexUniversity(u.id), follow: true },
   }
 }
 

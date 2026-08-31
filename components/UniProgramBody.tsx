@@ -46,6 +46,7 @@ import ProgramBlogLinks from './ProgramBlogLinks'
 import SiblingProgrammes from './SiblingProgrammes'
 import { getSiblingProgrammes, getUniversityOverviewLink } from '@/lib/seo/safe-internal-links'
 import { feeSentence, emiSentence, hasRealFee } from '@/lib/seo/display-guards'
+import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 
 interface Props {
   u: University
@@ -120,7 +121,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
     : `₹${u.feeMin.toLocaleString('en-IN')}`
   const nirfSuffix = u.nirf > 0 && u.nirf < 500 ? ` and a NIRF rank of #${u.nirf}` : ''
 
-  const faqs: { q: string; a: string }[] = [
+  const templateFaqs: { q: string; a: string }[] = [
     { q: `What is the total fee for ${program} at ${cleanName}?`,
       a: `${feeSentence(feeStr, pd.duration || '2 years', hasRealFee(u))} ${emiSentence(u.emiFrom)}` },
     { q: `Is the ${program} degree from ${cleanName} valid?`,
@@ -141,6 +142,19 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
       a: `Our counsellor can confirm the current placement support offered by ${cleanName} for this programme.` },
     { q: `What is the EMI for ${cleanName} ${program}?`,
       a: `${emiSentence(u.emiFrom)} Our counsellor can confirm the current EMI tenure options and lender panel.` },
+  ]
+
+  // Mode-unverified universities: the template set above asserts a valid online
+  // degree, an exam mode and a specialisation list, and it also feeds the
+  // FAQPage JSON-LD, so a wrong answer here becomes structured data. Replace the
+  // whole set. See MODE_UNVERIFIED_UNIS in lib/seo/should-index.ts.
+  const faqs: { q: string; a: string }[] = shouldIndexUniversity(u.id) ? templateFaqs : [
+    { q: `Does ${cleanName} offer an online ${program}?`,
+      a: `EdifyEdu cannot confirm that it does. The UGC DEB programme register does not list ${cleanName}, and the university advertises on-campus programmes only on its own website. Contact the university directly and check deb.ugc.ac.in.` },
+    { q: `Why does ${cleanName} appear in the UGC list of August 2026?`,
+      a: `That list names the programmes granted to each institution but records no delivery mode, so it does not separate Online mode from Open and Distance Learning.` },
+    { q: `What should I do if I want to study at ${cleanName}?`,
+      a: `Approach the university directly for its current programme options and admission process. Confirm the delivery mode and the UGC position in writing before you pay anything.` },
   ]
 
   // Use content JSON FAQs for schema when available — keeps visible content and structured data in sync
@@ -241,11 +255,15 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
               {/* §5 Who Can Apply */}
               <SectionWhoCanApply u={u} program={program} cleanName={cleanName} />
 
-              {/* §6 Class Schedule */}
-              <SectionClasses u={u} program={program} cleanName={cleanName} />
-
-              {/* §7 Exams */}
-              <SectionExams u={u} program={program} cleanName={cleanName} />
+              {/* §6 Class Schedule and §7 Exams describe online delivery, so they
+                  are suppressed for universities whose delivery mode is unverified.
+                  See MODE_UNVERIFIED_UNIS in lib/seo/should-index.ts. */}
+              {shouldIndexUniversity(u.id) && (
+                <>
+                  <SectionClasses u={u} program={program} cleanName={cleanName} />
+                  <SectionExams u={u} program={program} cleanName={cleanName} />
+                </>
+              )}
 
               {/* §8 Specializations */}
               {specs.length > 0 && (
@@ -376,7 +394,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
 
               {/* §20 FAQs */}
               <div id="faqs">
-                <FAQBlock faqs={s?.faqs?.length ? s.faqs.map(f => ({ q: f.question, a: f.answer })) : faqs} title={`${cleanName} Online ${program} FAQs`} />
+                <FAQBlock faqs={s?.faqs?.length ? s.faqs.map(f => ({ q: f.question, a: f.answer })) : faqs} title={`${cleanName} ${shouldIndexUniversity(u.id) ? 'Online ' : ''}${program} FAQs`} />
               </div>
 
               {/* §21 Last Updated */}

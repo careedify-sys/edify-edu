@@ -44,6 +44,7 @@ import QuickFactsCard     from './QuickFactsCard'
 import AssuredMarquee    from './AssuredMarquee'
 import RequestSyllabusCard from './RequestSyllabusCard'
 import { feeSentence, emiSentence, hasRealFee } from '@/lib/seo/display-guards'
+import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 
 // ── Inline bold renderer: converts **text** → <strong> at render time ─────────
 
@@ -276,7 +277,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
   // Spec-specific JSON content (Batch 9+) — takes priority over generic specContent
   const specJson = getSpecPageContent(u.id, program.toLowerCase(), specSlug)
 
-  const faqs: { q: string; a: string }[] = [
+  const templateFaqs: { q: string; a: string }[] = [
     { q: `Is ${cleanName} Online ${program} in ${spec} valid for jobs?`, a: `Yes. ${cleanName} is UGC DEB approved${u.naac ? ` and NAAC ${u.naac} accredited` : ''}. The degree is identical to an on-campus degree.` },
     { q: `What is the fee for ${program} ${spec} at ${cleanName}?`, a: `${hasRealFee(u) ? `Total fee is ${pd.fees || `₹${Math.round(u.feeMin / 1000)}K+`}.` : 'The fee for the current intake is not published on this page yet.'} ${emiSentence(u.emiFrom)}` },
     { q: `Can I work while doing ${program} in ${spec} from ${cleanName}?`, a: `Yes. Live sessions on weekends, recordings available 24/7. ${u.examMode} assessments. No campus visits required.` },
@@ -285,6 +286,19 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
     { q: `Is ${cleanName} NAAC accredited?`, a: (() => { const r = formatRank(u, preferForProgram(program)); return u.naac ? `Yes. ${cleanName} is NAAC ${u.naac} accredited${r.rank !== null ? ` with a ${r.label} rank` : ''}.` : `No NAAC grade is published on this page yet. Check the current grade at naac.gov.in.` })() },
     { q: `What is the exam mode for ${cleanName} ${program}?`, a: `${u.examMode} assessments.` },
     { q: `How long is the ${program} ${spec} program at ${cleanName}?`, a: `${pd.duration || '2 years'}.` },
+  ]
+
+  // Mode-unverified universities: the template set above answers "yes, valid for
+  // jobs", quotes an exam mode and promises weekend live sessions. None of that
+  // is established for these records, and schemaFaqs below turns it into
+  // FAQPage JSON-LD. See MODE_UNVERIFIED_UNIS in lib/seo/should-index.ts.
+  const faqs: { q: string; a: string }[] = shouldIndexUniversity(u.id) ? templateFaqs : [
+    { q: `Does ${cleanName} offer an online ${program} in ${spec}?`,
+      a: `EdifyEdu cannot confirm that it does. The UGC DEB programme register does not list ${cleanName}, and the university advertises on-campus programmes only on its own website. Contact the university directly and check deb.ugc.ac.in.` },
+    { q: `Why does this specialisation appear on EdifyEdu?`,
+      a: `The UGC list of August 2026 names ${spec} among the programmes granted to ${cleanName}. That list records no delivery mode, so it does not establish that the programme runs online.` },
+    { q: `What should I do if I want to study at ${cleanName}?`,
+      a: `Approach the university directly for its current programme options and admission process. Confirm the delivery mode and the UGC position in writing before you pay anything.` },
   ]
 
   // Use spec JSON FAQs for schema when available
@@ -534,7 +548,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                   />
 
                   {/* §11 FAQs */}
-                  <FAQBlock faqs={schemaFaqs} title={`${cleanName} Online ${program} FAQs`} />
+                  <FAQBlock faqs={schemaFaqs} title={`${cleanName} ${shouldIndexUniversity(u.id) ? 'Online ' : ''}${program} FAQs`} />
 
                   {/* §12 Choose / Alternatives */}
                   {specJson.sections.chooseAlternatives && (
@@ -571,8 +585,14 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                   </div>
                   <SectionAbout u={u} program={program} pd={pd} cleanName={cleanName} spec={spec} />
                   <SectionWhoCanApply u={u} program={program} cleanName={cleanName} />
-                  <SectionClasses u={u} program={program} cleanName={cleanName} />
-                  <SectionExams u={u} program={program} cleanName={cleanName} />
+                  {/* Suppressed for mode-unverified universities: both sections
+                      assert online delivery. See lib/seo/should-index.ts. */}
+                  {shouldIndexUniversity(u.id) && (
+                    <>
+                      <SectionClasses u={u} program={program} cleanName={cleanName} />
+                      <SectionExams u={u} program={program} cleanName={cleanName} />
+                    </>
+                  )}
 
                   {/* §8 — Curriculum Deep Dive (replaces SpecializationGrid) */}
                   <CurriculumDive />
@@ -633,7 +653,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                     variant="primary"
                   />
 
-                  <FAQBlock faqs={faqs} title={`${cleanName} Online ${program} FAQs`} />
+                  <FAQBlock faqs={faqs} title={`${cleanName} ${shouldIndexUniversity(u.id) ? 'Online ' : ''}${program} FAQs`} />
                   <LastUpdatedStamp program={program} universityId={u.id} />
 
                   <div className="pt-2 flex gap-4 flex-wrap text-sm font-semibold">
