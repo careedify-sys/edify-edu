@@ -33,16 +33,6 @@ const teamSchema = [
     description: 'Education researcher and data analyst focused on India\'s online higher education sector. Tracks UGC DEB approvals, NIRF rankings, and fee structures across 125+ universities. 7+ years advising students on degree choices.',
     knowsAbout: ['UGC DEB approved universities', 'Online MBA India 2026', 'NIRF rankings', 'NAAC accreditation', 'Online degree validity India'],
   },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Person',
-    name: 'Komal Srivastava',
-    jobTitle: 'Senior Education Counsellor',
-    worksFor: { '@type': 'Organization', name: 'edifyedu.in', url: 'https://edifyedu.in' },
-    url: 'https://edifyedu.in/about#team',
-    description: '7+ years in higher education counselling. Specialises in reviewing online MBA programs, AI-integrated curricula, and helping working professionals choose programs aligned with their career goals.',
-    knowsAbout: ['Online MBA program review', 'Higher education counselling India', 'UGC DEB approved programs', 'MBA specializations India'],
-  },
 ]
 
 const aboutFaqSchema = {
@@ -256,8 +246,8 @@ export default function AboutPage() {
         {/* Research Team */}
         <div id="team" className="card p-8 mb-8">
           <h2 className="text-2xl font-bold text-navy mb-2">Research Team</h2>
-          <p className="text-sm text-ink-2 mb-6">Every university review, ranking, and comparison on Edify is authored or verified by one of our two in-house education specialists.</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <p className="text-sm text-ink-2 mb-6">Every university review, ranking, and comparison on Edify is authored or verified in-house.</p>
+          <div className="grid grid-cols-1 gap-6">
             {[
               {
                 initials: 'RK',
@@ -265,13 +255,6 @@ export default function AboutPage() {
                 title: 'Founder & Lead Researcher',
                 desc: 'Education researcher and data analyst focused on India\'s online higher education sector. Tracks UGC DEB approvals, NIRF rankings, and fee structures across 125+ universities.',
                 tags: ['UGC DEB', 'NIRF Rankings', 'Fee Structures', '7+ Years'],
-              },
-              {
-                initials: 'KS',
-                name: 'Komal Srivastava',
-                title: 'Senior Education Counsellor',
-                desc: '7+ years in higher education counselling. Specialises in reviewing online MBA programs, AI-integrated curricula, and helping working professionals choose programs aligned with their career goals.',
-                tags: ['Online MBA', 'Career Counselling', 'UGC DEB', '7+ Years'],
               },
             ].map(member => (
               <div key={member.name} className="flex gap-4 p-5 rounded-xl" style={{ background: 'var(--surface-2)', border: '1px solid var(--border)' }}>
