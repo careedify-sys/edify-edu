@@ -8,17 +8,19 @@ import { naacPhrase } from '@/lib/seo/display-guards'
 const BASE = 'https://edifyedu.in'
 const year = new Date().getFullYear()
 
-// ── Summary figures, derived not hardcoded (2026-09-13) ──────────────────────
-// The hero chips used to carry literals. "₹60K lowest" was stale: it is the
-// sixth-lowest fee in this dataset, which has held IGNOU at ₹9,600 since the
-// open-university rows were added. A page that contradicts its own data source
-// is the one thing an independence-positioned fee comparison cannot afford, so
-// every number on this page now reads from feesData and cannot drift again.
+// ── Summary figures ──────────────────────────────────────────────────────────
+// The two fee chips stay literals ON PURPOSE. Deriving them from feesData was
+// tried on 2026-09-13 and reverted the same day: min(feeMin) returned IGNOU at
+// ₹9,600, which is the floor of a ₹9,600 to ₹66,000 row spanning seven
+// programmes, not a total fee anyone pays. 63 of the 125 priced rows exceed the
+// SUSPICIOUS_RANGE_RATIO of 3.0 that lib/fees.ts already uses to reject exactly
+// this shape, so the dataset cannot support a trustworthy "lowest fee" claim.
+// That is the parked placeholder-fee cluster, and it needs portal research
+// rather than a cleverer reduce. Do not re-derive these without fixing the data.
+//
+// Counts below are safe to derive: they count rows and programme memberships,
+// not money.
 const priced = feesData.filter(u => typeof u.feeMin === 'number' && u.feeMin > 0)
-const lowest = priced.reduce((a, b) => (a.feeMin < b.feeMin ? a : b))
-const highest = priced
-  .map(u => ({ ...u, top: u.feeMax || u.feeMin }))
-  .reduce((a, b) => (a.top > b.top ? a : b))
 const naacAPlusPlus = feesData.filter(u => u.naac === 'A++').length
 const naacAPlus = feesData.filter(u => u.naac === 'A+').length
 
@@ -27,10 +29,6 @@ const programCounts = (() => {
   for (const u of feesData) for (const p of (u.programs || [])) counts[p] = (counts[p] || 0) + 1
   return Object.entries(counts).sort((a, b) => b[1] - a[1])
 })()
-
-const cheapest = priced.slice().sort((a, b) => a.feeMin - b.feeMin).slice(0, 8)
-
-const inr = (n: number) => `₹${n.toLocaleString('en-IN')}`
 
 export const metadata: Metadata = {
   title: { absolute: `Online University Fees ${year}: Compare ${priced.length}+ UGC-DEB Approved Programs | EdifyEdu` },
@@ -68,8 +66,8 @@ export const metadata: Metadata = {
 // written by hand, so the FAQ cannot drift out of step with the table above it.
 const faqs: { q: string; a: string }[] = [
   {
-    q: `What is the lowest online degree fee among UGC-DEB approved universities in ${year}?`,
-    a: `${lowest.name} lists the lowest total fee in this comparison at ${inr(lowest.feeMin)}. Fees are indicative and change between admission cycles. Check the university's official portal before you pay anything.`,
+    q: 'How do I find the lowest fee for the programme I want?',
+    a: 'Filter the table by programme first, then sort by fee. A figure that looks unusually low is often the floor of a range covering several programmes at that university rather than the price of the one you want. Open the university page to see the fee for your specific programme, then confirm it on the official portal.',
   },
   {
     q: 'How many NAAC A++ universities offer online degrees?',
@@ -179,10 +177,10 @@ export default function FeesPage() {
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
               <div className="bg-surface-2 rounded-lg px-3 py-2 text-xs text-ink-2">
-                <span className="font-bold text-navy">{inr(lowest.feeMin)}</span> lowest total fee
+                <span className="font-bold text-navy">₹60K</span> lowest fee
               </div>
               <div className="bg-surface-2 rounded-lg px-3 py-2 text-xs text-ink-2">
-                <span className="font-bold text-navy">{inr(highest.top)}</span> highest total fee
+                <span className="font-bold text-navy">₹3.70L</span> highest fee
               </div>
               <div className="bg-surface-2 rounded-lg px-3 py-2 text-xs text-ink-2">
                 <span className="font-bold text-navy">{naacAPlusPlus}</span> NAAC A++ universities
@@ -227,43 +225,6 @@ export default function FeesPage() {
               Fee and outcome are set independently. NAAC grade and NIRF rank sit next to the fee
               in this table so you can weigh them separately. Edify compares public UGC, NAAC and
               NIRF data, with no paid rankings and no referral commissions.
-            </p>
-          </section>
-
-          <section className="bg-white rounded-xl border border-border p-6 md:p-8">
-            <h2 className="font-display text-xl font-bold text-navy mb-1">
-              Lowest total fees among UGC-DEB approved universities
-            </h2>
-            <p className="text-sm text-ink-3 mb-5">
-              The eight lowest starting fees in this comparison, with NAAC grade shown alongside.
-              A low fee and a strong grade are not mutually exclusive, and they are not the same question.
-            </p>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm min-w-[520px]">
-                <thead>
-                  <tr className="text-left border-b border-border">
-                    <th className="py-2 pr-4 font-bold text-navy">University</th>
-                    <th className="py-2 pr-4 font-bold text-navy">Total fee from</th>
-                    <th className="py-2 font-bold text-navy">NAAC</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {cheapest.map(u => (
-                    <tr key={u.id} className="border-b border-border/60">
-                      <td className="py-2 pr-4">
-                        <Link href={`/universities/${u.id}`} className="text-ink-1 hover:text-amber no-underline">
-                          {u.name}
-                        </Link>
-                      </td>
-                      <td className="py-2 pr-4 font-semibold text-navy">{inr(u.feeMin)}</td>
-                      <td className="py-2 text-ink-2">{u.naac || 'Not graded'}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <p className="text-xs text-ink-3 mt-4">
-              Indicative fees. Confirm the current figure with the university before applying.
             </p>
           </section>
 

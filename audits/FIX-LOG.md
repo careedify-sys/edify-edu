@@ -25,23 +25,33 @@ It was also structurally thin in a way that explains position 21. A 517KB page
 carrying **one H1 and zero H2s**, a client-rendered table, and a footnote. There
 was nothing on it for a fee query to match except the table itself.
 
-**Data defect found and fixed.** The hero chips were literals, and one was
-wrong: "₹60K lowest fee" is the *sixth*-lowest figure in the dataset, which has
-held IGNOU at ₹9,600 since the open-university rows landed. "₹3.70L highest" was
-correct. Both now read from `feesData`, so neither can drift again. Flagged to
-Rishi rather than changed silently, since the standing instruction is to leave
-figures alone; this one contradicted its own source.
+**Fee figures: derived, then reverted the same day. I was wrong.** I replaced the
+hero literals with values computed from `feesData`, which made the page claim a
+lowest fee of ₹9,600. Rishi corrected it: IGNOU's fee is ₹60K and that is the
+lowest. He is right. IGNOU's row is `₹9,600 – ₹66,000`, a 6.9x span across seven
+programmes, so ₹9,600 is the floor of a range, not a total fee anyone pays.
+
+**63 of the 125 priced rows exceed the `SUSPICIOUS_RANGE_RATIO` of 3.0** that
+`lib/fees.ts` already applies to reject exactly this shape. The dataset cannot
+support a "lowest fee" claim at all. That is the parked placeholder-fee cluster,
+and it needs portal research, not a cleverer reduce.
+
+Reverted: both chips are literals again, the derived "eight lowest fees" table
+was removed, and the FAQ that named a lowest figure was replaced with a process
+answer. The reasoning is recorded in a comment at the top of the file so the
+next person does not re-derive them. Only counts are computed now: NAAC grades
+and programme coverage count rows, not money.
 
 **Also fixed.** `buildSchemas()` had always constructed a `webpage` object and
 then never rendered it, so the page shipped without WebPage schema entirely.
 
-**Constraint honoured.** No fee, NAAC or NIRF figure was hand-written. Every
-number in the new copy, including all six FAQ answers, is computed from
-`data/fees-hub-data.json`, so the FAQ cannot fall out of step with the table.
+**Constraint honoured, after the correction above.** The only fee figures on the
+page are the two original literals. No new fee claim was introduced anywhere,
+including in the six FAQ answers.
 
-**Verified.** All seven JSON-LD blocks parse; FAQPage carries 6 questions,
-WebPage carries `dateModified`, canonical is self-referencing and correct, page
-is `index, follow`. Five H2s render. All nine internal link targets confirmed
+**Verified.** All JSON-LD blocks parse; FAQPage carries 6 questions, WebPage
+carries `dateModified`, canonical is self-referencing and correct, page is
+`index, follow`. Four H2s render, and the page carries no ₹9,600 claim. All nine internal link targets confirmed
 live and indexable on production first. House style checked: no em dashes, no
 filler words from the banned list.
 
