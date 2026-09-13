@@ -216,7 +216,52 @@ fold earns nothing.
 
 ---
 
-## Issue 4 — Sharp positional drops on commercial pages
+## Issue 4 CORRECTED — the coupon and homepage "drops" are not drops
+
+Checked at cluster level rather than page level. Both findings below were wrong.
+
+### Coupons: the cluster grew
+
+| | pages | impressions | clicks |
+|---|---:|---:|---:|
+| Aug window | 9 | 1,848 | 44 |
+| Sep window | 9 | 1,532 | **46** |
+
+`/coupons` the index page did fall, 24 clicks to 10, position 12.4 to 19.1. But
+every click it lost went to a coupon landing page and then some:
+
+| page | impressions | clicks | position |
+|---|---:|---:|---:|
+| `/coupons/manipal-jaipur-online-mba-discount-coupon-2026` | 183 → 326 | **10 → 24** | 7.2 → **4.9** |
+| `/coupons/mahe-online-mba-discount-coupon-2026` | 155 → 226 | 2 → 4 | 6.4 → 6.5 |
+| `/coupons/lpu-online-mba-discount-coupon-2026` | 50 → 61 | 1 → 3 | 7.5 → 7.0 |
+| `/coupons/amrita-online-mba-discount-coupon-2026` | 50 → 28 | 2 → 1 | 14.3 → **9.8** |
+
+Google moved from ranking a generic index to ranking the specific coupon page for
+each university. That is the correct outcome, better for the reader, and better
+for conversion, since the landing page carries the offer and the form. **Do not
+"fix" this.**
+
+### Homepage: brand queries are at position 1
+
+| query | impressions | clicks | position |
+|---|---:|---:|---:|
+| `edifyedu` | 11 | 8 | **1.0** |
+| `edifyedu.in` | 7 | 3 | 1.4 |
+| `edify` | 365 | 0 | 4.9 |
+
+Real brand queries rank first and convert. The 365-impression `edify` query is a
+generic English word shared with schools, software and the verb, so zero clicks
+at position 4.9 is the expected result, not a defect. The homepage's average
+position moved because of the non-brand long tail it sits in, not because brand
+search weakened.
+
+**Lesson for future reads: check the cluster before calling a single page's
+decline a problem.** Both of these look like losses at page level and are not.
+
+---
+
+## Issue 4 as originally written (superseded by the correction above)
 
 | page | pos Aug | pos Sep | Δ |
 |---|---:|---:|---:|
