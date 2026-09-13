@@ -97,7 +97,8 @@ export const COUPON_PAGES: CouponPageData[] = [
     maxSavingsNum: 5000,
     finalFee: 'Rs 2,15,000',
     naac: 'A++',
-    nirf: '#17 Management',
+    // NIRF Management #24 per Supabase and lib/data.ts. The page claimed #17.
+    nirf: '#24 Management',
     couponCode: 'NMIMS2026-5K',
     couponDiscount: 'Up to Rs 5,000 verified discount coupon (Tue/Sat IST)',
     blogSlug: 'nmims-online-mba-review-2026',
@@ -325,7 +326,9 @@ export const COUPON_PAGES: CouponPageData[] = [
     maxSavingsNum: 5000,
     finalFee: 'Rs 1,91,000',
     naac: 'A++',
-    nirf: '#62 Management',
+    // #62 is JAIN's NIRF *University* rank. Its Management rank is #73, and an
+    // MBA page states the Management rank.
+    nirf: '#73 Management',
     couponCode: 'JAIN2026-5K',
     couponDiscount: 'Up to Rs 5,000 verified discount coupon (Tue/Sat IST)',
     blogSlug: 'best-mba-specialization-india-2026',
@@ -360,7 +363,8 @@ export const COUPON_PAGES: CouponPageData[] = [
     maxSavingsNum: 5000,
     finalFee: 'Rs 3,10,000',
     naac: 'A++',
-    nirf: '#32 Management',
+    // NIRF Management #11 per Supabase and lib/data.ts. #32 matched no category.
+    nirf: '#11 Management',
     couponCode: 'SYMB2026-7500',
     couponDiscount: 'Up to Rs 5,000 verified discount coupon (Tue/Sat IST)',
     blogSlug: 'symbiosis-online-mba-review-2026',
@@ -395,7 +399,10 @@ export const COUPON_PAGES: CouponPageData[] = [
     maxSavingsNum: 0,
     finalFee: 'Rs 66,000',
     naac: 'A++',
-    nirf: '#1 Open University',
+    // NIRF publishes no "Open University" category, so '#1 Open University'
+    // was a rank in a category that does not exist. IGNOU carries no NIRF rank
+    // in lib/data.ts or Supabase.
+    nirf: 'Not ranked in NIRF 2025',
     couponCode: 'N/A',
     couponDiscount: 'No coupon - lowest base fee in India',
     blogSlug: 'ignou-online-mba-review-2026',
@@ -430,7 +437,10 @@ export const COUPON_PAGES: CouponPageData[] = [
     maxSavingsNum: 5000,
     finalFee: 'Rs 1,15,000',
     naac: 'A++',
-    nirf: 'Ranked',
+    // Dr. D.Y. Patil Vidyapeeth, Pune. NIRF University #41 per Supabase and
+    // lib/data.ts. It holds no Management rank, so the category is stated.
+    // 'Ranked' was a rank claim with no category, which the house rule forbids.
+    nirf: '#41 University',
     couponCode: 'DPU2026-5K',
     couponDiscount: 'Up to Rs 5,000 verified discount coupon (Tue/Sat IST)',
     blogSlug: 'dy-patil-online-mba-review',
@@ -977,3 +987,23 @@ export function getCouponPage(slug: string): CouponPageData | undefined {
 }
 
 export const COUPON_PAGE_SLUGS = COUPON_PAGES.map(p => p.slug)
+
+/**
+ * Exact universityId -> coupon page slug.
+ *
+ * The /coupons hub used to resolve this by taking the first hyphen-segment of
+ * a coupon's universityId and finding the first page slug that *contained* it.
+ * That matched on substrings and silently mis-routed:
+ *   'dy-patil-university-online' -> 'dy' -> matched 'bharati-vi(dy)apeeth-...'
+ * and it found nothing at all whenever the slug uses a short form the id does
+ * not start with (lovely-professional -> lpu, sikkim-manipal -> smu,
+ * dayananda-sagar -> dsu, vivekananda-global -> vgu), so five coupon cards
+ * linked to no page. Always resolve through this map.
+ */
+export const COUPON_PAGE_BY_UNIVERSITY: Record<string, string> = Object.fromEntries(
+  COUPON_PAGES.map(p => [p.universityId, p.slug]),
+)
+
+export function getCouponPageSlugForUniversity(universityId: string): string | undefined {
+  return COUPON_PAGE_BY_UNIVERSITY[universityId]
+}

@@ -17,7 +17,7 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 import { COUPONS, getExpiryDisplay, getTodaysBonus, type Coupon } from '@/lib/coupons'
-import { COUPON_PAGE_SLUGS } from '@/lib/coupon-pages'
+import { getCouponPageSlugForUniversity } from '@/lib/coupon-pages'
 import EnquiryModal from '@/components/EnquiryModal'
 import CouponCountdown from '@/components/CouponCountdown'
 import CouponScarcityBanner from '@/components/CouponScarcityBanner'
@@ -199,9 +199,9 @@ function CouponCard({
           <Phone className="w-3.5 h-3.5 text-amber-600" />
           Or call counsellor: {COUNSELLOR_TEL_DISPLAY}
         </a>
-        {COUPON_PAGE_SLUGS.some(s => s.includes(coupon.universityId.split('-')[0])) && (
+        {getCouponPageSlugForUniversity(coupon.universityId) && (
           <Link
-            href={`/coupons/${COUPON_PAGE_SLUGS.find(s => s.includes(coupon.universityId.split('-')[0])) || ''}`}
+            href={`/coupons/${getCouponPageSlugForUniversity(coupon.universityId)}`}
             className="w-full flex items-center justify-center gap-1 text-amber-700 py-2 rounded-xl text-xs font-semibold hover:bg-amber-50 transition-colors no-underline"
           >
             View full discount details

@@ -61,6 +61,33 @@ export const COUPONS: Coupon[] = [
     expiry: 'rolling',
     featured: true,
   },
+  // MAHE and DPU each had a live /coupons/* landing page publishing these codes
+  // but no catalogue entry, so the hub rendered no card and therefore no link
+  // to either page. Codes and tiers copied from their own published pages, not
+  // newly invented. IGNOU's page stays out of the catalogue on purpose: it
+  // publishes couponCode 'N/A' because IGNOU carries no coupon.
+  {
+    code: 'MAHE2026-7500',
+    university: 'MAHE Manipal Online',
+    universityId: 'manipal-academy-higher-education-online',
+    discount: 10,
+    program: 'All',
+    tier: 'premium',
+    savings: TIER_SAVINGS_LABEL.premium,
+    expiry: 'rolling',
+    featured: false,
+  },
+  {
+    code: 'DPU2026-5K',
+    university: 'DY Patil Vidyapeeth Online',
+    universityId: 'dr-dy-patil-vidyapeeth-online',
+    discount: 10,
+    program: 'All',
+    tier: 'standard',
+    savings: TIER_SAVINGS_LABEL.standard,
+    expiry: 'rolling',
+    featured: false,
+  },
   {
     code: 'CU2026-5K',
     university: 'Chandigarh University Online',
@@ -141,7 +168,9 @@ export const COUPONS: Coupon[] = [
   {
     code: 'AMR2026-5K',
     university: 'Amrita Online',
-    universityId: 'amrita-university-online',
+    // 'amrita-university-online' does not exist in lib/data.ts. The real id is
+    // amrita-vishwa-vidyapeetham-online, which is what the coupon page uses.
+    universityId: 'amrita-vishwa-vidyapeetham-online',
     discount: 10,
     program: 'All',
     tier: 'standard',

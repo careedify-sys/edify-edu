@@ -9,6 +9,127 @@ the fix by accident.
 
 ---
 
+## 2026-09-13 · coupons cluster: wrong claims, unreachable pages, and a stale fees copy
+
+**What.** Five defect classes in and around the coupon cluster, plus a new
+pre-commit guard, `scripts/check-coupon-claims.mts`.
+
+**Why the coupon cluster and not something else.** It is the best-converting
+page type on the site by a wide margin, and the brief was to expand it. Before
+adding a page it is worth knowing the existing ones are correct and reachable.
+They were neither.
+
+| cluster | pages | clicks | CTR |
+|---|---:|---:|---:|
+| coupons | 9 | 46 | **3.00%** |
+| verify | 61 | 186 | 1.76% |
+| universities | 650 | 593 | 0.80% |
+| blog | 180 | 1,127 | 0.46% |
+
+### 1. Four coupon pages published NIRF ranks that were wrong
+
+Cross-checked against `lib/data.ts` and then against the Supabase
+`accreditations` table, which agreed with each other on every row.
+
+| page | claimed | truth | note |
+|---|---|---|---|
+| NMIMS | #17 Management | **#24 Management** | overstated on a commercial page |
+| JAIN | #62 Management | **#73 Management** | #62 is its *University* rank |
+| Symbiosis SSODL | #32 Management | **#11 Management** | #32 matched no category |
+| IGNOU | #1 Open University | **Not ranked in NIRF 2025** | NIRF publishes no such category |
+| DPU | "Ranked" | **#41 University** | a rank claim with no category |
+
+A wrong NIRF rank on a page whose entire pitch is verified independence is a
+trust defect before it is an SEO one, and the overstated NMIMS rank is the worst
+of the five because it flatters a university on a page that asks for a lead.
+
+### 2. The /coupons hub could not link five of its own pages
+
+The hub resolved a coupon to its landing page by taking the first hyphen segment
+of the universityId and finding the first page slug that *contained* it:
+
+```
+'dy-patil-university-online' -> 'dy' -> matched 'bharati-vi(dy)apeeth-...'
+```
+
+So DY Patil's card linked to Bharati Vidyapeeth's coupon page. Four more
+rendered no link at all, because their page slug uses a short form the id does
+not start with: LPU, SMU, DSU, VGU. Replaced with an exact
+`COUPON_PAGE_BY_UNIVERSITY` map. Verified on a running server: all seven
+affected links now resolve to the correct page.
+
+### 3. Three coupon pages had no card on the hub at all
+
+MAHE, DPU and IGNOU had a landing page but no `lib/coupons.ts` entry, so the hub
+rendered no card and therefore linked them from nowhere. MAHE
+(226 impressions, position 6.5) and DPU already publish live coupon codes on
+their own pages, so catalogue entries were added from what those pages already
+say, not invented. IGNOU stays out on purpose: its page publishes
+`couponCode: 'N/A'` because it carries no coupon, and a card would imply an
+offer that does not exist.
+
+### 4. `amrita-university-online` was not a real university id
+
+`lib/coupons.ts` carried an id absent from `lib/data.ts`. The substring matcher
+hid it by accidentally resolving 'amrita' to the right page. Corrected to
+`amrita-vishwa-vidyapeetham-online`.
+
+### 5. Six programme hubs told readers we run no coupon codes
+
+Six `page-content` files carried:
+
+> We do not apply exclusive coupon codes or take referral commissions from any university.
+
+Five of those six universities have a live coupon page offering an exclusive
+code. Two indexed pages, two clicks apart, contradicting each other on an
+independence-positioned site. Removed the false clause and kept the true one
+("We do not take referral commissions from any university"), which is the
+narrowest edit that makes the sentence accurate. The wording is worth a
+deliberate pass by Rishi, since how the coupon is described is a positioning
+decision rather than a data fix.
+
+### 6. `data/fees-hub-data.json` had drifted 85 fields from `lib/data.ts`
+
+`/fees` renders `{u.nirf < 999 ? '#'+u.nirf : '—'}`, so rows carrying the
+sentinels **99, 101 and 102** displayed as real ranks: "#99", "Mgt #101". Eleven
+universities showed a fabricated NIRF rank, with no category label, which the
+standing NIRF rule forbids on its own.
+
+Alongside them, 17 NAAC grades were stale, including one overstatement
+(KSOU shown as A++ where the truth is A+) and Christ shown as A++ where the
+truth is A+.
+
+`lib/data.ts` agreed with Supabase on **all 17**, so this was a stale derived
+copy and not a disputed fact. Synced all 85 fields from the master. No title or
+metadata anywhere reads from this file, so nothing outside `/fees` changes.
+
+**Verified.** `npx tsc --noEmit` clean on app and scripts. `/coupons` checked on
+a running dev server: 22 distinct landing pages linked, all seven previously
+broken or missing links correct. Console errors on that page are pre-existing
+CSP and ad-tracker noise, unrelated.
+
+**Guard.** `scripts/check-coupon-claims.mts` runs in pre-commit and blocks: a
+coupon page whose NAAC or NIRF disagrees with `lib/data.ts`; a NIRF string that
+is neither `#<rank> <Category>` nor `Not ranked...`; a coupon universityId
+absent from `lib/data.ts`; a page the hub cannot resolve; and a page that
+publishes a coupon code but has no catalogue entry.
+
+**Still open, needs Rishi.**
+
+- **BIT Mesra is filed under the id `bits-pilani-online` in
+  `data/fees-hub-data.json`,** two different universities, and the id is not in
+  `lib/data.ts`. `/fees` renders a link to `/universities/bits-pilani-online`,
+  which is in neither `valid-urls.json` nor the redirect map, so it 404s. BIT
+  Mesra is absent from `lib/data.ts` entirely, so fixing it properly means
+  adding the university with verified data rather than renaming a row.
+- **No new coupon page was added,** which was the original brief. The eight
+  universities in the catalogue without one each have a specific blocker,
+  recorded in `audits/coupon-expansion-worklist-2026-09-13.md`. Galgotias is the
+  best candidate by a distance and is blocked on one contradiction inside our
+  own content, not on anything external.
+
+---
+
 ## 2026-09-13 · lead attribution: four capture widgets were erasing the page path
 
 **What.** `RequestSyllabusModal`, `RequestSampleModal`, `StickyLeadCard` and
