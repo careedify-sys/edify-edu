@@ -177,6 +177,50 @@ console.log(`  program         → "${progCol}"`)
 console.log(`  spec_slug       → "${specCol || '(not found)'}"`)
 console.log(`  spec_name       → "${nameCol || '(not found)'}"`)
 
+// ── Spec-name repair (2026-09-13) ─────────────────────────────────────────────
+// Two import defects in the Programs sheet reach the manifest, and from there
+// the sitemap and the edge allowlists. Both are repaired here rather than in
+// the workbook so the fix survives the next refresh of it and is reviewable in
+// a diff. Audit: audits/malformed-spec-names-2026-09-13.md
+//
+// Defect 1: a trailing parenthetical that is a note to the reader, not part of
+// the specialisation name. "Computer Applications (4 specialisations
+// available)" published a page at
+// /universities/amity-university-online/bca/computer-applications-4-specialisations-available.
+// The specialisation is the head of the string; the parenthetical is dropped
+// and the slug re-derived from what remains.
+const PLACEHOLDER_PAREN = /\s*\((?:contact|check with|\d+\s+speciali|option for)[^)]*\)\s*$/i
+
+// Defect 2: one cell holds five specialisation names separated by pipes, which
+// published a single specialisation slugged
+// finance-marketing-human-resources-operations-strategy-contact-university-for-specialisation-structure.
+// It is not one specialisation and splitting it would invent slugs (strategy,
+// human-resources) that no source states, so the cell is treated as carrying no
+// specialisation. lib/data.ts already lists MATS's MBA specialisations properly
+// and backfill-manifest-from-data.js copies those in.
+function slugifySpec(name) {
+  return name.toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+}
+
+// Defect 3: for these (university, programme) pairs every Excel spec row is a
+// fragment of one comma-separated list that a previous import split. SPPU's BCA
+// reads General – C++ / General – Java / General – Dot Net and so on, which
+// published nine specialisation pages for what the university describes as one
+// General programme with those subjects in it. lib/data.ts now carries the
+// corrected single specialisation, and backfill-manifest-from-data.js copies it
+// in, so the Excel rows are skipped entirely here. Remove a pair from this list
+// once the workbook itself is corrected.
+const SPLIT_FRAGMENT_PAIRS = new Set([
+  'savitribai-phule-pune-university-online/bca',
+  'parul-university-online/bca',
+  'kurukshetra-university-online/mcom',
+  'mangalayatan-university-online/mcom',
+  'uttaranchal-university-online/bca',
+])
+let repairedNames = 0
+let multiNameCells = 0
+let fragmentRowsSkipped = 0
+
 // ── Build URL sets ────────────────────────────────────────────────────────────
 const uniSlugs      = new Set()
 const uniProgPairs  = new Set()
@@ -193,8 +237,25 @@ for (const row of rows) {
   const uniSlug = SLUG_REMAP[rawUniSlug] || rawUniSlug
   const rawProg = row[progCol]
   const program = rawProg.toLowerCase().trim()
-  const specSlug = specCol ? (row[specCol] || '').toLowerCase().trim() : ''
-  const specName = nameCol ? (row[nameCol] || '').trim() : ''
+  let specSlug = specCol ? (row[specCol] || '').toLowerCase().trim() : ''
+  let specName = nameCol ? (row[nameCol] || '').trim() : ''
+
+  // The defects live in the free-text `specialisation` column; `spec_name` is
+  // blank on exactly those rows, which is why nameCol cannot see them. Read the
+  // raw column so the repair applies whichever column supplied the slug.
+  const rawSpecText = (row['specialisation'] || row['specialization'] || specName || '').trim()
+
+  if (PLACEHOLDER_PAREN.test(rawSpecText)) {
+    const head = rawSpecText.replace(PLACEHOLDER_PAREN, '').trim()
+    // A head that still lists several names is defect 2, handled below.
+    if (!head.includes('|')) {
+      specName = head
+      specSlug = slugifySpec(head)
+      repairedNames++
+    } else {
+      specName = head
+    }
+  }
 
   if (!uniSlug || !program) { skipped++; continue }
   if (!VALID_PROGRAMS.has(program)) { skipped++; continue }
@@ -204,29 +265,53 @@ for (const row of rows) {
   // Skip MBA spec pages for universities without MBA data (pages redirect)
   if (program === 'mba' && specSlug && NO_MBA_DATA_UNIS.has(uniSlug)) { skipped++; continue }
 
-  // Canonicalize verbose MBA spec slugs that are redirect sources
-  let finalSpecSlug = specSlug
-  if (program === 'mba' && specSlug && SPEC_SLUG_CANONICAL[specSlug]) {
-    finalSpecSlug = SPEC_SLUG_CANONICAL[specSlug]
+  // Split-fragment pairs: keep the hub row, drop the fragment spec rows.
+  if (specSlug && SPLIT_FRAGMENT_PAIRS.has(`${uniSlug}/${program}`)) {
+    fragmentRowsSkipped++
+    specSlug = ''
+    specName = ''
   }
+
+  // A cell listing several names is not a specialisation record. Keep the hub
+  // row and let lib/data.ts supply the specialisations.
+  if (specName.includes('|')) {
+    multiNameCells++
+    specSlug = ''
+    specName = ''
+  }
+  const specPairs = [[specSlug, specName]]
 
   processed++
   uniSlugs.add(uniSlug)
   uniProgPairs.add(`${uniSlug}/${program}`)
   programs.add(program)
 
-  manifest.push({
-    university_slug: uniSlug,
-    program,
-    spec_slug: finalSpecSlug,
-    spec_name: specName,
-  })
+  for (const [rawSlug, rawName] of specPairs) {
+    // Canonicalize verbose MBA spec slugs that are redirect sources
+    let finalSpecSlug = rawSlug
+    if (program === 'mba' && rawSlug && SPEC_SLUG_CANONICAL[rawSlug]) {
+      finalSpecSlug = SPEC_SLUG_CANONICAL[rawSlug]
+    }
 
-  if (finalSpecSlug) {
-    uniSpecTriples.add(`${uniSlug}/${program}/${finalSpecSlug}`)
-    programSpecs.add(`${program}/${finalSpecSlug}`)
+    manifest.push({
+      university_slug: uniSlug,
+      program,
+      spec_slug: finalSpecSlug,
+      spec_name: rawName,
+    })
+
+    if (finalSpecSlug) {
+      uniSpecTriples.add(`${uniSlug}/${program}/${finalSpecSlug}`)
+      programSpecs.add(`${program}/${finalSpecSlug}`)
+    }
   }
 }
+
+console.log(
+  `Spec-name repair: ${repairedNames} placeholder parentheticals stripped, ` +
+  `${multiNameCells} multi-name cell(s) demoted to hub-only, ` +
+  `${fragmentRowsSkipped} split-fragment rows skipped.`
+)
 
 console.log(`\nProcessed: ${processed} rows, Skipped: ${skipped}`)
 

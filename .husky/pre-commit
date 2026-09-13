@@ -60,6 +60,14 @@ npx tsx scripts/check-programme-allowlist-resolver.ts || exit 1
 # disagrees with resolveSpec(), or where a sitemap spec URL is absent from it.
 # Middleware section 2f 404s specialisations at the edge using this file, so a
 # stale or too-narrow list would 404 pages that render real content.
+# Malformed specialisation names. Blocks a parenthesised list split on its
+# internal commas ("General (C", "C++", ... "Software Testing)"), a name
+# truncated at import, and placeholder text published as a specialisation. Each
+# of those shipped real pages claiming specialisations that do not exist. See
+# audits/malformed-spec-names-2026-09-13.md.
+echo "pre-commit: check-spec-names"
+npx tsx scripts/check-spec-names.ts || exit 1
+
 echo "pre-commit: check-spec-allowlist"
 npx tsx scripts/check-spec-allowlist.ts || exit 1
 

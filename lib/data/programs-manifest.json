@@ -182,8 +182,8 @@
   {
     "university_slug": "amity-university-online",
     "program": "bba",
-    "spec_slug": "general-business-administration-option-for-data-analytics-specialisation",
-    "spec_name": ""
+    "spec_slug": "general-business-administration",
+    "spec_name": "General Business Administration"
   },
   {
     "university_slug": "amity-university-online",
@@ -206,8 +206,8 @@
   {
     "university_slug": "amity-university-online",
     "program": "bca",
-    "spec_slug": "computer-applications-4-specialisations-available",
-    "spec_name": ""
+    "spec_slug": "computer-applications",
+    "spec_name": "Computer Applications"
   },
   {
     "university_slug": "amity-university-online",
@@ -1556,8 +1556,8 @@
   {
     "university_slug": "chhatrapati-shahu-ji-maharaj-university-online",
     "program": "mba",
-    "spec_slug": "general-contact-university-for-specialisations",
-    "spec_name": ""
+    "spec_slug": "general",
+    "spec_name": "General"
   },
   {
     "university_slug": "chhatrapati-shahu-ji-maharaj-university-online",
@@ -3644,19 +3644,19 @@
   {
     "university_slug": "kurukshetra-university-online",
     "program": "mcom",
-    "spec_slug": "general-commerce-finance",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
     "university_slug": "kurukshetra-university-online",
     "program": "mcom",
-    "spec_slug": "general-commerce-international-business",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
     "university_slug": "kurukshetra-university-online",
     "program": "mcom",
-    "spec_slug": "general-commerce-taxation",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
@@ -4256,25 +4256,25 @@
   {
     "university_slug": "mangalayatan-university-online",
     "program": "mcom",
-    "spec_slug": "accounting",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
     "university_slug": "mangalayatan-university-online",
     "program": "mcom",
-    "spec_slug": "direct-indirect-taxation",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
     "university_slug": "mangalayatan-university-online",
     "program": "mcom",
-    "spec_slug": "finance",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
     "university_slug": "mangalayatan-university-online",
     "program": "mcom",
-    "spec_slug": "international-business",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
@@ -4682,14 +4682,14 @@
   {
     "university_slug": "mats-university-online",
     "program": "bba",
-    "spec_slug": "general-management-contact-university-for-specialisation-structure",
-    "spec_name": ""
+    "spec_slug": "general-management",
+    "spec_name": "General Management"
   },
   {
     "university_slug": "mats-university-online",
     "program": "bca",
-    "spec_slug": "general-computer-applications-contact-university-for-specialisation",
-    "spec_name": ""
+    "spec_slug": "general-computer-applications",
+    "spec_name": "General Computer Applications"
   },
   {
     "university_slug": "mats-university-online",
@@ -4700,7 +4700,7 @@
   {
     "university_slug": "mats-university-online",
     "program": "mba",
-    "spec_slug": "finance-marketing-human-resources-operations-strategy-contact-university-for-specialisation-structure",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
@@ -4988,31 +4988,31 @@
   {
     "university_slug": "parul-university-online",
     "program": "bca",
-    "spec_slug": "general-ai",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
     "university_slug": "parul-university-online",
     "program": "bca",
-    "spec_slug": "general-data-mining",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
     "university_slug": "parul-university-online",
     "program": "bca",
-    "spec_slug": "general-deep-learning",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
     "university_slug": "parul-university-online",
     "program": "bca",
-    "spec_slug": "general-machine-learning",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
     "university_slug": "parul-university-online",
     "program": "bca",
-    "spec_slug": "general-mobile-app-dev",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
@@ -5192,49 +5192,49 @@
   {
     "university_slug": "savitribai-phule-pune-university-online",
     "program": "bca",
-    "spec_slug": "general",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
     "university_slug": "savitribai-phule-pune-university-online",
     "program": "bca",
-    "spec_slug": "general-android",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
     "university_slug": "savitribai-phule-pune-university-online",
     "program": "bca",
-    "spec_slug": "general-dbms",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
     "university_slug": "savitribai-phule-pune-university-online",
     "program": "bca",
-    "spec_slug": "general-dot-net",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
     "university_slug": "savitribai-phule-pune-university-online",
     "program": "bca",
-    "spec_slug": "general-java",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
     "university_slug": "savitribai-phule-pune-university-online",
     "program": "bca",
-    "spec_slug": "general-python",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
     "university_slug": "savitribai-phule-pune-university-online",
     "program": "bca",
-    "spec_slug": "general-software-testing",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
     "university_slug": "savitribai-phule-pune-university-online",
     "program": "bca",
-    "spec_slug": "general-web",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
@@ -6206,7 +6206,7 @@
   {
     "university_slug": "uttaranchal-university-online",
     "program": "bca",
-    "spec_slug": "iot",
+    "spec_slug": "",
     "spec_name": ""
   },
   {
@@ -7129,12 +7129,6 @@
   },
   {
     "university_slug": "amity-university-online",
-    "program": "bba",
-    "spec_slug": "general-business-administration-option-for-data-a",
-    "spec_name": "General Business Administration (option for Data A"
-  },
-  {
-    "university_slug": "amity-university-online",
     "program": "bca",
     "spec_slug": "computer-applications-financial-technology-ai",
     "spec_name": "Computer Applications – Financial Technology & AI"
@@ -7568,44 +7562,14 @@
   {
     "university_slug": "parul-university-online",
     "program": "bca",
-    "spec_slug": "machine-learning",
-    "spec_name": "Machine Learning"
-  },
-  {
-    "university_slug": "parul-university-online",
-    "program": "bca",
-    "spec_slug": "deep-learning",
-    "spec_name": "Deep Learning"
-  },
-  {
-    "university_slug": "parul-university-online",
-    "program": "bca",
-    "spec_slug": "mobile-app-dev",
-    "spec_name": "Mobile App Dev"
-  },
-  {
-    "university_slug": "parul-university-online",
-    "program": "bca",
-    "spec_slug": "data-mining",
-    "spec_name": "Data Mining)"
+    "spec_slug": "general",
+    "spec_name": "General"
   },
   {
     "university_slug": "parul-university-online",
     "program": "mcom",
-    "spec_slug": "general-accountancy",
-    "spec_name": "General (Accountancy"
-  },
-  {
-    "university_slug": "parul-university-online",
-    "program": "mcom",
-    "spec_slug": "finance",
-    "spec_name": "Finance"
-  },
-  {
-    "university_slug": "parul-university-online",
-    "program": "mcom",
-    "spec_slug": "elective-based",
-    "spec_name": "Elective-based)"
+    "spec_slug": "general",
+    "spec_name": "General"
   },
   {
     "university_slug": "amrita-vishwa-vidyapeetham-online",
@@ -7718,80 +7682,20 @@
   {
     "university_slug": "mangalayatan-university-online",
     "program": "bca",
-    "spec_slug": "general-ai",
-    "spec_name": "General (AI"
-  },
-  {
-    "university_slug": "mangalayatan-university-online",
-    "program": "bca",
-    "spec_slug": "machine-learning",
-    "spec_name": "Machine Learning"
-  },
-  {
-    "university_slug": "mangalayatan-university-online",
-    "program": "bca",
-    "spec_slug": "java",
-    "spec_name": "Java"
-  },
-  {
-    "university_slug": "mangalayatan-university-online",
-    "program": "bca",
-    "spec_slug": "python",
-    "spec_name": "Python"
-  },
-  {
-    "university_slug": "mangalayatan-university-online",
-    "program": "bca",
-    "spec_slug": "web-dev",
-    "spec_name": "Web Dev"
-  },
-  {
-    "university_slug": "mangalayatan-university-online",
-    "program": "bca",
-    "spec_slug": "dbms",
-    "spec_name": "DBMS)"
+    "spec_slug": "general",
+    "spec_name": "General"
   },
   {
     "university_slug": "mangalayatan-university-online",
     "program": "mcom",
-    "spec_slug": "general-accounting",
-    "spec_name": "General (Accounting"
+    "spec_slug": "general",
+    "spec_name": "General"
   },
   {
     "university_slug": "mangalayatan-university-online",
     "program": "msc",
-    "spec_slug": "pure-mathematics-algebra",
-    "spec_name": "Pure Mathematics (Algebra"
-  },
-  {
-    "university_slug": "mangalayatan-university-online",
-    "program": "msc",
-    "spec_slug": "analysis",
-    "spec_name": "Analysis"
-  },
-  {
-    "university_slug": "mangalayatan-university-online",
-    "program": "msc",
-    "spec_slug": "topology",
-    "spec_name": "Topology"
-  },
-  {
-    "university_slug": "mangalayatan-university-online",
-    "program": "msc",
-    "spec_slug": "differential-equations",
-    "spec_name": "Differential Equations"
-  },
-  {
-    "university_slug": "mangalayatan-university-online",
-    "program": "msc",
-    "spec_slug": "statistics",
-    "spec_name": "Statistics"
-  },
-  {
-    "university_slug": "mangalayatan-university-online",
-    "program": "msc",
-    "spec_slug": "number-theory",
-    "spec_name": "Number Theory)"
+    "spec_slug": "pure-mathematics",
+    "spec_name": "Pure Mathematics"
   },
   {
     "university_slug": "shoolini-university-online",
@@ -8006,20 +7910,8 @@
   {
     "university_slug": "galgotias-university-online",
     "program": "bca",
-    "spec_slug": "elective-based-generative-ai",
-    "spec_name": "Elective-based (Generative AI"
-  },
-  {
-    "university_slug": "galgotias-university-online",
-    "program": "bca",
-    "spec_slug": "iot",
-    "spec_name": "IoT"
-  },
-  {
-    "university_slug": "galgotias-university-online",
-    "program": "bca",
-    "spec_slug": "blockchain",
-    "spec_name": "Blockchain)"
+    "spec_slug": "elective-based",
+    "spec_name": "Elective-based"
   },
   {
     "university_slug": "sikkim-manipal-university-online",
@@ -8362,12 +8254,6 @@
     "program": "mca",
     "spec_slug": "artificial-intelligence-and-machine-learning",
     "spec_name": "Artificial Intelligence and Machine Learning"
-  },
-  {
-    "university_slug": "chandigarh-university-online",
-    "program": "bba",
-    "spec_slug": "business-analytics-specialization-with-data-focuse",
-    "spec_name": "Business Analytics specialization with data-focuse"
   },
   {
     "university_slug": "chandigarh-university-online",
@@ -8966,38 +8852,8 @@
   {
     "university_slug": "uttaranchal-university-online",
     "program": "bca",
-    "spec_slug": "general-iot",
-    "spec_name": "General (IoT"
-  },
-  {
-    "university_slug": "uttaranchal-university-online",
-    "program": "bca",
-    "spec_slug": "web-dev-php",
-    "spec_name": "Web Dev PHP"
-  },
-  {
-    "university_slug": "uttaranchal-university-online",
-    "program": "bca",
-    "spec_slug": "business-intelligence",
-    "spec_name": "Business Intelligence"
-  },
-  {
-    "university_slug": "uttaranchal-university-online",
-    "program": "bca",
-    "spec_slug": "net",
-    "spec_name": ".NET"
-  },
-  {
-    "university_slug": "uttaranchal-university-online",
-    "program": "bca",
-    "spec_slug": "linux",
-    "spec_name": "Linux"
-  },
-  {
-    "university_slug": "uttaranchal-university-online",
-    "program": "bca",
-    "spec_slug": "ai-foundations",
-    "spec_name": "AI foundations)"
+    "spec_slug": "general",
+    "spec_name": "General"
   },
   {
     "university_slug": "uttaranchal-university-online",
@@ -9254,14 +9110,8 @@
   {
     "university_slug": "kurukshetra-university-online",
     "program": "mcom",
-    "spec_slug": "finance",
-    "spec_name": "Finance"
-  },
-  {
-    "university_slug": "kurukshetra-university-online",
-    "program": "mcom",
-    "spec_slug": "international-business",
-    "spec_name": "International Business)"
+    "spec_slug": "general-commerce",
+    "spec_name": "General Commerce"
   },
   {
     "university_slug": "sastra-university-online",
@@ -9542,8 +9392,8 @@
   {
     "university_slug": "guru-nanak-dev-university-online",
     "program": "mba",
-    "spec_slug": "general-contact-university-for-specialisations",
-    "spec_name": "General (contact university for specialisations)"
+    "spec_slug": "general",
+    "spec_name": "General"
   },
   {
     "university_slug": "guru-nanak-dev-university-online",
@@ -9608,56 +9458,8 @@
   {
     "university_slug": "savitribai-phule-pune-university-online",
     "program": "bca",
-    "spec_slug": "general-c",
-    "spec_name": "General (C"
-  },
-  {
-    "university_slug": "savitribai-phule-pune-university-online",
-    "program": "bca",
-    "spec_slug": "c",
-    "spec_name": "C++"
-  },
-  {
-    "university_slug": "savitribai-phule-pune-university-online",
-    "program": "bca",
-    "spec_slug": "java",
-    "spec_name": "Java"
-  },
-  {
-    "university_slug": "savitribai-phule-pune-university-online",
-    "program": "bca",
-    "spec_slug": "python",
-    "spec_name": "Python"
-  },
-  {
-    "university_slug": "savitribai-phule-pune-university-online",
-    "program": "bca",
-    "spec_slug": "web",
-    "spec_name": "Web"
-  },
-  {
-    "university_slug": "savitribai-phule-pune-university-online",
-    "program": "bca",
-    "spec_slug": "dbms",
-    "spec_name": "DBMS"
-  },
-  {
-    "university_slug": "savitribai-phule-pune-university-online",
-    "program": "bca",
-    "spec_slug": "android",
-    "spec_name": "Android"
-  },
-  {
-    "university_slug": "savitribai-phule-pune-university-online",
-    "program": "bca",
-    "spec_slug": "dot-net",
-    "spec_name": "Dot Net"
-  },
-  {
-    "university_slug": "savitribai-phule-pune-university-online",
-    "program": "bca",
-    "spec_slug": "software-testing",
-    "spec_name": "Software Testing)"
+    "spec_slug": "general",
+    "spec_name": "General"
   },
   {
     "university_slug": "srm-university-sikkim-online",
@@ -10190,8 +9992,8 @@
   {
     "university_slug": "gla-university-online",
     "program": "bba",
-    "spec_slug": "general-business-administration-option-for-data-a",
-    "spec_name": "General Business Administration (option for Data A"
+    "spec_slug": "general-business-administration",
+    "spec_name": "General Business Administration"
   },
   {
     "university_slug": "gla-university-online",
@@ -10208,8 +10010,8 @@
   {
     "university_slug": "gla-university-online",
     "program": "bca",
-    "spec_slug": "computer-applications-4-specialisations-available",
-    "spec_name": "Computer Applications (4 specialisations available"
+    "spec_slug": "computer-applications",
+    "spec_name": "Computer Applications"
   },
   {
     "university_slug": "gla-university-online",

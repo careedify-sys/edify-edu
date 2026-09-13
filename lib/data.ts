@@ -367,7 +367,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       
 
       'BBA': {
-        specs: ['General Business Administration (option for Data A', 'Travel & Tourism Management', 'Data Analytics'],
+        specs: ['General Business Administration', 'Travel & Tourism Management', 'Data Analytics'],
         fees: '₹1.99L',
         duration: '3 Years',
         roles: ['Sales Executive', 'Marketing Trainee', 'Business Development Executive'],
@@ -377,7 +377,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved BBA from Amity University Online — recognised for corporate hiring.',
       },
       'BCA': {
-        specs: ['Computer Applications (4 specialisations available', 'Computer Applications – Data Science', 'Computer Applications – Financial Technology & AI'],
+        specs: ['Computer Applications', 'Computer Applications – Data Science', 'Computer Applications – Financial Technology & AI'],
         fees: '₹1.75L',
         duration: '3 Years',
         roles: ['Junior Developer', 'Software Trainee', 'IT Support'],
@@ -823,7 +823,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved BBA from Parul University – Online (paruluni — recognised for corporate hiring.',
       },
       'BCA': {
-        specs: ['General (AI', 'Machine Learning', 'Deep Learning', 'Mobile App Dev', 'Data Mining)'],
+        specs: ['General'],
         // 2026-08-23: was '₹0.1L – ₹0.9L', a placeholder spanning 9x and
         // suppressed by fee rule 4a. Corrected to the 3-year total, confirmed
         // by founder. Portal lists ₹18,500 per semester over 6 semesters.
@@ -860,7 +860,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved BA from Parul University – Online (paruluni — recognised for corporate hiring.',
       },
       'M.Com': {
-        specs: ['General (Accountancy', 'Finance', 'Elective-based)'],
+        specs: ['General'],
         // 2026-08-23: was '₹15K – ₹60K', a placeholder suppressed by fee rule
         // 4a. Corrected to ₹40,000, confirmed by founder. Note the portal
         // lists ₹15,000 per semester, which would compute to ₹60,000 over 4
@@ -1049,7 +1049,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved BBA from Mangalayatan University – Online (m — recognised for corporate hiring.',
       },
       'BCA': {
-        specs: ['General (AI', 'Machine Learning', 'Java', 'Python', 'Web Dev', 'DBMS)'],
+        specs: ['General'],
         fees: '₹70K – ₹103K',
         duration: '3 Yrs',
         roles: ['Web Developer', 'Java Developer', 'Python Developer', 'AI/ML Trainee'],
@@ -1069,7 +1069,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved BA from Mangalayatan University – Online (m — recognised for corporate hiring.',
       },
       'M.Com': {
-        specs: ['General (Accounting', 'Direct & Indirect Taxation', 'International Business', 'Finance)'],
+        specs: ['General'],
         fees: '₹67K – ₹67K',
         duration: '2 Yrs',
         roles: ['Accounts Executive', 'Tax Analyst', 'Audit Trainee', 'Finance Analyst'],
@@ -1079,7 +1079,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved M.Com from Mangalayatan University – Online (m — recognised for corporate hiring.',
       },
       'MSc': {
-        specs: ['Pure Mathematics (Algebra', 'Analysis', 'Topology', 'Differential Equations', 'Statistics', 'Number Theory)'],
+        specs: ['Pure Mathematics'],
         fees: '₹55K – ₹55K',
         duration: '2 Yrs',
         roles: ['Mathematics Teacher', 'Research Assistant', 'Data Analyst Trainee', 'Quantitative Analyst Trainee'],
@@ -1367,7 +1367,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved BBA from Galgotias University – Online (galg — recognised for corporate hiring.',
       },
       'BCA': {
-        specs: ['General Management', 'Elective-based (Generative AI', 'IoT', 'Blockchain)'],
+        specs: ['General Management', 'Elective-based'],
         fees: '₹83,200',
         duration: '3 Yrs',
         roles: ['Web Developer Trainee', 'Java Developer', 'Software Tester', 'ML Trainee'],
@@ -2264,7 +2264,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       
 
       'BBA': {
-        specs: ['Business Analytics specialization with data-focuse'],
+        specs: ['Business Analytics'],
         fees: '₹1,31,250',
         duration: '3 Years',
         roles: ['Business Analyst', 'Data Analyst', 'Machine Learning Engineer', 'Statistician', 'BI Developer', 'Market Research Analyst'],
@@ -3862,7 +3862,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved BBA from Uttaranchal University – UU Doon On — recognised for corporate hiring.',
       },
       'BCA': {
-        specs: ['General (IoT', 'Web Dev PHP', 'Business Intelligence', '.NET', 'Linux', 'AI foundations)'],
+        specs: ['General'],
         fees: '₹0.2L – ₹1.0L',
         duration: '3 Yrs',
         roles: ['Web Developer', 'Java Developer', 'Python Developer', 'Software Tester'],
@@ -4280,7 +4280,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved B.Com from Kurukshetra University – Online (ku — recognised for corporate hiring.',
       },
       'M.Com': {
-        specs: ['General Commerce (Taxation', 'Finance', 'International Business)'],
+        specs: ['General Commerce'],
         fees: '₹60,000',
         duration: '2 Yrs',
         roles: ['Accounts Executive', 'Tax Analyst', 'Finance Analyst'],
@@ -5132,7 +5132,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programs: ['MBA', 'MCA', 'M.Com'],
     programDetails: {
       'MBA': {
-        specs: ['General (contact university for specialisations)'],
+        specs: ['General'],
         fees: '₹27K – ₹55K',
         duration: '2 Yrs',
         roles: ['Management Trainee', 'Business Analyst'],
@@ -5277,7 +5277,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved BBA from Savitribai Phule Pune University (S — recognised for corporate hiring.',
       },
       'BCA': {
-        specs: ['General (C', 'C++', 'Java', 'Python', 'Web', 'DBMS', 'Android', 'Dot Net', 'Software Testing)'],
+        specs: ['General'],
         fees: '₹1,31,160',
         duration: '3 Yrs',
         roles: ['Java Developer', 'Python Developer', 'Web Developer', 'Android Developer Trainee', 'Software Tester'],
@@ -6506,7 +6506,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       
 
       'BBA': {
-        specs: ['General Business Administration (option for Data A', 'Travel & Tourism Management', 'Data Analytics'],
+        specs: ['General Business Administration', 'Travel & Tourism Management', 'Data Analytics'],
         fees: '₹99,800',
         duration: '3 Years',
         roles: ['Sales Executive', 'Marketing Trainee', 'Business Development Executive'],
@@ -6516,7 +6516,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved BBA from GLA University (GLA Online) — recognised for corporate hiring.',
       },
       'BCA': {
-        specs: ['Computer Applications (4 specialisations available', 'Computer Applications – Data Science', 'Computer Applications – Financial Technology & AI'],
+        specs: ['Computer Applications', 'Computer Applications – Data Science', 'Computer Applications – Financial Technology & AI'],
         fees: '₹99,800',
         duration: '3 Years',
         roles: ['Junior Developer', 'Software Trainee', 'IT Support'],

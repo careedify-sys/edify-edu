@@ -159,6 +159,69 @@ const nextConfig = {
       { source: '/universities/university-of-kerala-online/mba/data-science-and-business-analytics',    destination: '/universities/university-of-kerala-online/mba', permanent: true },  // 1 click, 15 impr, pos 4.53
       { source: '/universities/uttaranchal-university-online/mba/healthcare-management',            destination: '/universities/uttaranchal-university-online/mba', permanent: true },  // 1 clicks, 71 impr, pos 4.96
 
+      // ── Split-parenthetical spec cleanup (2026-09-13) ────────────────────────
+      // lib/data.ts held 13 specs arrays where a parenthesised list had been
+      // comma-split at import, so "General (C, C++, Java, ... Software Testing)"
+      // became nine separate specialisations. Those pages claimed SPPU offers a
+      // BCA specialisation in Dot Net and Web, which it does not: they are
+      // subjects inside one General programme. A second import bug truncated
+      // four names at 50 characters ("Computer Applications (4 specialisations
+      // available"). Both are repaired in lib/data.ts; the 51 URLs the bad rows
+      // published redirect here to the specialisation that actually exists,
+      // rather than 404ing. Four carry Search Console history, noted inline.
+      // Audit: audits/malformed-spec-names-2026-09-13.md
+      { source: '/universities/amity-university-online/bba/general-business-administration-option-for-data-a', destination: '/universities/amity-university-online/bba/general-business-administration', permanent: true },
+      { source: '/universities/gla-university-online/bba/general-business-administration-option-for-data-a',   destination: '/universities/gla-university-online/bba/general-business-administration', permanent: true },
+      { source: '/universities/amity-university-online/bca/computer-applications-4-specialisations-available', destination: '/universities/amity-university-online/bca/computer-applications', permanent: true },
+      { source: '/universities/gla-university-online/bca/computer-applications-4-specialisations-available',   destination: '/universities/gla-university-online/bca/computer-applications', permanent: true },
+      { source: '/universities/chandigarh-university-online/bba/business-analytics-specialization-with-data-focuse', destination: '/universities/chandigarh-university-online/bba/business-analytics', permanent: true },
+      { source: '/universities/guru-nanak-dev-university-online/mba/general-contact-university-for-specialisations', destination: '/universities/guru-nanak-dev-university-online/mba/general', permanent: true },
+      { source: '/universities/galgotias-university-online/bca/elective-based-generative-ai',                  destination: '/universities/galgotias-university-online/bca/elective-based', permanent: true },
+      { source: '/universities/galgotias-university-online/bca/iot',                                           destination: '/universities/galgotias-university-online/bca/elective-based', permanent: true },
+      { source: '/universities/galgotias-university-online/bca/blockchain',                                    destination: '/universities/galgotias-university-online/bca/elective-based', permanent: true },
+      { source: '/universities/kurukshetra-university-online/mcom/general-commerce-taxation',                  destination: '/universities/kurukshetra-university-online/mcom/general-commerce', permanent: true },
+      { source: '/universities/kurukshetra-university-online/mcom/finance',                                    destination: '/universities/kurukshetra-university-online/mcom/general-commerce', permanent: true },
+      { source: '/universities/kurukshetra-university-online/mcom/international-business',                     destination: '/universities/kurukshetra-university-online/mcom/general-commerce', permanent: true },
+      { source: '/universities/mangalayatan-university-online/bca/general-ai',                                 destination: '/universities/mangalayatan-university-online/bca/general', permanent: true },
+      { source: '/universities/mangalayatan-university-online/bca/machine-learning',                           destination: '/universities/mangalayatan-university-online/bca/general', permanent: true },
+      { source: '/universities/mangalayatan-university-online/bca/java',                                       destination: '/universities/mangalayatan-university-online/bca/general', permanent: true },
+      { source: '/universities/mangalayatan-university-online/bca/python',                                     destination: '/universities/mangalayatan-university-online/bca/general', permanent: true },
+      { source: '/universities/mangalayatan-university-online/bca/web-dev',                                    destination: '/universities/mangalayatan-university-online/bca/general', permanent: true },
+      { source: '/universities/mangalayatan-university-online/bca/dbms',                                       destination: '/universities/mangalayatan-university-online/bca/general', permanent: true },
+      { source: '/universities/mangalayatan-university-online/mcom/general-accounting',                        destination: '/universities/mangalayatan-university-online/mcom/general', permanent: true },
+      { source: '/universities/mangalayatan-university-online/mcom/direct-indirect-taxation',                  destination: '/universities/mangalayatan-university-online/mcom/general', permanent: true },
+      { source: '/universities/mangalayatan-university-online/mcom/international-business',                    destination: '/universities/mangalayatan-university-online/mcom/general', permanent: true },
+      { source: '/universities/mangalayatan-university-online/mcom/finance',                                   destination: '/universities/mangalayatan-university-online/mcom/general', permanent: true },
+      { source: '/universities/mangalayatan-university-online/msc/pure-mathematics-algebra',                   destination: '/universities/mangalayatan-university-online/msc/pure-mathematics', permanent: true },  // 1 click, 16 impr, pos 7.06
+      { source: '/universities/mangalayatan-university-online/msc/analysis',                                   destination: '/universities/mangalayatan-university-online/msc/pure-mathematics', permanent: true },
+      { source: '/universities/mangalayatan-university-online/msc/topology',                                   destination: '/universities/mangalayatan-university-online/msc/pure-mathematics', permanent: true },
+      { source: '/universities/mangalayatan-university-online/msc/differential-equations',                     destination: '/universities/mangalayatan-university-online/msc/pure-mathematics', permanent: true },
+      { source: '/universities/mangalayatan-university-online/msc/statistics',                                 destination: '/universities/mangalayatan-university-online/msc/pure-mathematics', permanent: true },  // 1 click, 19 impr, pos 5.32
+      { source: '/universities/mangalayatan-university-online/msc/number-theory',                              destination: '/universities/mangalayatan-university-online/msc/pure-mathematics', permanent: true },
+      { source: '/universities/parul-university-online/bca/general-ai',                                        destination: '/universities/parul-university-online/bca/general', permanent: true },
+      { source: '/universities/parul-university-online/bca/machine-learning',                                  destination: '/universities/parul-university-online/bca/general', permanent: true },
+      { source: '/universities/parul-university-online/bca/deep-learning',                                     destination: '/universities/parul-university-online/bca/general', permanent: true },
+      { source: '/universities/parul-university-online/bca/mobile-app-dev',                                    destination: '/universities/parul-university-online/bca/general', permanent: true },
+      { source: '/universities/parul-university-online/bca/data-mining',                                       destination: '/universities/parul-university-online/bca/general', permanent: true },
+      { source: '/universities/parul-university-online/mcom/general-accountancy',                              destination: '/universities/parul-university-online/mcom/general', permanent: true },
+      { source: '/universities/parul-university-online/mcom/finance',                                          destination: '/universities/parul-university-online/mcom/general', permanent: true },
+      { source: '/universities/parul-university-online/mcom/elective-based',                                   destination: '/universities/parul-university-online/mcom/general', permanent: true },
+      { source: '/universities/savitribai-phule-pune-university-online/bca/general-c',                         destination: '/universities/savitribai-phule-pune-university-online/bca/general', permanent: true },  // 1 click, 386 impr, pos 9.95
+      { source: '/universities/savitribai-phule-pune-university-online/bca/c',                                 destination: '/universities/savitribai-phule-pune-university-online/bca/general', permanent: true },
+      { source: '/universities/savitribai-phule-pune-university-online/bca/java',                              destination: '/universities/savitribai-phule-pune-university-online/bca/general', permanent: true },
+      { source: '/universities/savitribai-phule-pune-university-online/bca/python',                            destination: '/universities/savitribai-phule-pune-university-online/bca/general', permanent: true },
+      { source: '/universities/savitribai-phule-pune-university-online/bca/web',                               destination: '/universities/savitribai-phule-pune-university-online/bca/general', permanent: true },  // 3 clicks, 342 impr, pos 8.7
+      { source: '/universities/savitribai-phule-pune-university-online/bca/dbms',                              destination: '/universities/savitribai-phule-pune-university-online/bca/general', permanent: true },
+      { source: '/universities/savitribai-phule-pune-university-online/bca/android',                           destination: '/universities/savitribai-phule-pune-university-online/bca/general', permanent: true },
+      { source: '/universities/savitribai-phule-pune-university-online/bca/dot-net',                           destination: '/universities/savitribai-phule-pune-university-online/bca/general', permanent: true },
+      { source: '/universities/savitribai-phule-pune-university-online/bca/software-testing',                  destination: '/universities/savitribai-phule-pune-university-online/bca/general', permanent: true },
+      { source: '/universities/uttaranchal-university-online/bca/general-iot',                                 destination: '/universities/uttaranchal-university-online/bca/general', permanent: true },
+      { source: '/universities/uttaranchal-university-online/bca/web-dev-php',                                 destination: '/universities/uttaranchal-university-online/bca/general', permanent: true },
+      { source: '/universities/uttaranchal-university-online/bca/business-intelligence',                       destination: '/universities/uttaranchal-university-online/bca/general', permanent: true },
+      { source: '/universities/uttaranchal-university-online/bca/net',                                         destination: '/universities/uttaranchal-university-online/bca/general', permanent: true },
+      { source: '/universities/uttaranchal-university-online/bca/linux',                                       destination: '/universities/uttaranchal-university-online/bca/general', permanent: true },
+      { source: '/universities/uttaranchal-university-online/bca/ai-foundations',                              destination: '/universities/uttaranchal-university-online/bca/general', permanent: true },
+
 
       // Dot-slug normalisation
       { source: '/programs/m.com',             destination: '/programs/mcom',  permanent: true },
