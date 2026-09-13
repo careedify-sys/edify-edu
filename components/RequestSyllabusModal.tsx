@@ -63,6 +63,7 @@ export default function RequestSyllabusModal({ universityId, universityName, pro
           preferredUniversity: universityName,
           program: program || 'General',
           notes: `Syllabus request for ${universityName} ${program || ''}`.trim(),
+          sourcePage: typeof window !== 'undefined' ? window.location.pathname : '',
           source: 'syllabus_request',
           timestamp: new Date().toISOString(),
         }),

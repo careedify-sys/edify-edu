@@ -9,6 +9,48 @@ the fix by accident.
 
 ---
 
+## 2026-09-13 · lead attribution: four capture widgets were erasing the page path
+
+**What.** `RequestSyllabusModal`, `RequestSampleModal`, `StickyLeadCard` and
+`GatedContent` now send `sourcePage` alongside `source`. `/api/enquiry` composes
+both into one field as `"<path> · <widget>"` instead of letting either win.
+
+**Why.** The API resolved attribution as `sourcePage || source || 'website'`.
+Those four widgets sent only `source`, so the widget name won and the page path
+was never recorded. Measured against the live CRM on 2026-09-13:
+
+| source recorded | leads |
+|---|---:|
+| `syllabus_request` | 14 |
+| `sample_cert_request` | 14 |
+| `coupon_unlock` | 7 |
+| `sticky_card` | 7 |
+| `gated_scholarship` | 1 |
+| **widget name only, page unknown** | **43 of 89 website leads (48%)** |
+
+Nearly half of every website lead ever captured cannot be traced to the page
+that produced it. That single gap blocks the question the whole SEO programme
+exists to answer: which page earns a student. Every consolidation decision in
+`audits/gsc-ranking-lead-strategy-2026-08-23.html` is sized on projected leads
+per cluster, and there is no way to check any of those projections against
+outcomes while half the leads have no page.
+
+**Why one composed field and not a new column.** `source` is read by the Resend
+lead email, the Supabase `leads` row, the CRM list and the Sheets webhook. A new
+column means a migration plus four readers. The composed string preserves both
+facts, stays readable in the lead email, and existing rows (which hold either a
+path or a widget, never both) still parse: split on `" · "` and take what is
+there. Revisit if the CRM ever needs to group by widget and page independently.
+
+**Verified.** `npx tsc --noEmit` clean. Not backfillable: the 43 existing rows
+have lost the page permanently, so the funnel baseline starts from this commit.
+
+**Guard.** Any new lead-capture component must send `sourcePage` as well as
+`source`. A widget that sends only `source` silently loses attribution and
+nothing fails loudly.
+
+---
+
 ## 2026-09-13 · link the verify pages from programme hubs
 
 **What.** A `getVerifyPage()`-gated verify link in the approvals block of

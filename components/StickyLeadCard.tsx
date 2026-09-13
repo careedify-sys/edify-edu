@@ -77,6 +77,7 @@ export default function StickyLeadCard({ universityName, universityId, defaultPr
           preferredUniversity: universityName,
           universityId,
           notes: notes.trim() || undefined,
+          sourcePage: typeof window !== 'undefined' ? window.location.pathname : '',
           source: 'sticky_card',
           timestamp: new Date().toISOString(),
         }),

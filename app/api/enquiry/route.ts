@@ -113,7 +113,15 @@ export async function POST(req: NextRequest) {
     const timestamp = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })
     const universityValue = university || preferredUniversity || 'Not specified'
     const programValue = program || 'Not specified'
-    const sourceValue = sourcePage || source || 'website'
+    // Attribution: keep BOTH the page the lead came from and the widget that
+    // captured it. Four capture widgets (syllabus, sample cert, sticky card,
+    // gated scholarship) used to send only `source`, so the page path was lost
+    // and 42 of 89 website leads could not be traced to a page. Format:
+    // "<path> · <widget>", split on " · " when reporting.
+    const sourceValue =
+      sourcePage && source && sourcePage !== source
+        ? `${sourcePage} · ${source}`
+        : sourcePage || source || 'website'
     const stateValue = state || 'Not specified'
 
     // ── 1. EMAIL via Resend ─────────────────────────────────────────────────

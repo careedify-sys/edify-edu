@@ -65,6 +65,7 @@ export default function RequestSampleModal({ universityId, universityName, progr
           preferredUniversity: universityName,
           program: program || 'General',
           notes: `Sample degree request for ${universityName}`,
+          sourcePage: typeof window !== 'undefined' ? window.location.pathname : '',
           source: 'sample_cert_request',
           timestamp: new Date().toISOString(),
         }),

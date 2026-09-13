@@ -53,6 +53,7 @@ export default function GatedContent({
         body: JSON.stringify({
           ...form, university: universityName,
           program: programName, source: 'gated_scholarship',
+          sourcePage: typeof window !== 'undefined' ? window.location.pathname : '',
         }),
       })
       if (!res.ok) { setSubmitting(false); setSubmitError(true); return }
