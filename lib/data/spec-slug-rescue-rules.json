@@ -113,5 +113,850 @@
     "program": "bba",
     "from": "general-business-administration-option-for-data-a",
     "to": "general-business-administration-option-for-data-analytics-specialisation"
+  },
+  {
+    "program": "mca",
+    "from": "machine-learning",
+    "to": "artificial-intelligence-machine-learning"
+  },
+  {
+    "program": "mca",
+    "from": "machine-learning",
+    "to": "artificial-intelligence-and-machine-learning"
+  },
+  {
+    "program": "bba",
+    "from": "supply-chain",
+    "to": "logistics-supply-chain-management"
+  },
+  {
+    "program": "mca",
+    "from": "computer-science",
+    "to": "computer-science-and-information-technology"
+  },
+  {
+    "program": "mca",
+    "from": "computer-science",
+    "to": "computer-science-and-it"
+  },
+  {
+    "program": "mba",
+    "from": "information-technology-management",
+    "to": "it-management"
+  },
+  {
+    "program": "mba",
+    "from": "information-technology-management",
+    "to": "information-technology-it"
+  },
+  {
+    "program": "bba",
+    "from": "digital-business",
+    "to": "digital-sciences-business-management"
+  },
+  {
+    "program": "bca",
+    "from": "cloud-security",
+    "to": "cloud-technology-information-security"
+  },
+  {
+    "program": "bca",
+    "from": "information-security",
+    "to": "cloud-technology-information-security"
+  },
+  {
+    "program": "ma",
+    "from": "journalism-and-mass-communication",
+    "to": "journalism-mass-communication"
+  },
+  {
+    "program": "ma",
+    "from": "mass-communication",
+    "to": "journalism-mass-communication"
+  },
+  {
+    "program": "mba",
+    "from": "data-science",
+    "to": "data-science-and-artificial-intelligence"
+  },
+  {
+    "program": "mba",
+    "from": "artificial-intelligence",
+    "to": "data-science-and-artificial-intelligence"
+  },
+  {
+    "program": "mba",
+    "from": "business-analytics",
+    "to": "data-science-and-business-analytics"
+  },
+  {
+    "program": "mba",
+    "from": "data-science",
+    "to": "data-science-and-business-analytics"
+  },
+  {
+    "program": "mba",
+    "from": "analytics-and-data-science",
+    "to": "data-science-and-business-analytics"
+  },
+  {
+    "program": "mba",
+    "from": "data-science-and-analytics",
+    "to": "data-science-and-business-analytics"
+  },
+  {
+    "program": "mba",
+    "from": "analytics-and-data-science",
+    "to": "data-science-and-analytics"
+  },
+  {
+    "program": "mba",
+    "from": "supply-chain-management",
+    "to": "logistics-and-supply-chain-management"
+  },
+  {
+    "program": "mba",
+    "from": "logistics-supply-chain-management",
+    "to": "logistics-and-supply-chain-management"
+  },
+  {
+    "program": "mba",
+    "from": "supply-chain-logistics",
+    "to": "logistics-and-supply-chain-management"
+  },
+  {
+    "program": "mba",
+    "from": "finance-and-accounting-management",
+    "to": "international-finance-accounting-acca"
+  },
+  {
+    "program": "mba",
+    "from": "international-finance-accounting",
+    "to": "international-finance-accounting-acca"
+  },
+  {
+    "program": "mba",
+    "from": "international-finance-acca",
+    "to": "international-finance-accounting-acca"
+  },
+  {
+    "program": "mba",
+    "from": "international-finance-and-accounting",
+    "to": "international-finance-accounting-acca"
+  },
+  {
+    "program": "mba",
+    "from": "finance-accounting",
+    "to": "international-finance-accounting-acca"
+  },
+  {
+    "program": "mba",
+    "from": "systems-it-management",
+    "to": "it-systems"
+  },
+  {
+    "program": "mca",
+    "from": "big-data",
+    "to": "big-data-analytics"
+  },
+  {
+    "program": "mca",
+    "from": "cyber-security",
+    "to": "cyber-security-cloud-computing"
+  },
+  {
+    "program": "mca",
+    "from": "cloud-computing",
+    "to": "cyber-security-cloud-computing"
+  },
+  {
+    "program": "mca",
+    "from": "cloud-computing-and-cyber-security",
+    "to": "cyber-security-cloud-computing"
+  },
+  {
+    "program": "mca",
+    "from": "computer-science-it",
+    "to": "computer-science-and-it"
+  },
+  {
+    "program": "bca",
+    "from": "artificial-intelligence",
+    "to": "artificial-intelligence-machine-learning"
+  },
+  {
+    "program": "bca",
+    "from": "machine-learning",
+    "to": "ai-machine-learning"
+  },
+  {
+    "program": "bcom",
+    "from": "finance-accounting",
+    "to": "accounting-and-finance"
+  },
+  {
+    "program": "mba",
+    "from": "business-analytics",
+    "to": "business-intelligence-and-analytics"
+  },
+  {
+    "program": "mba",
+    "from": "digital-marketing",
+    "to": "digital-marketing-and-e-commerce"
+  },
+  {
+    "program": "mba",
+    "from": "human-resource-analytics",
+    "to": "human-resource-and-business-analytics"
+  },
+  {
+    "program": "mba",
+    "from": "production-and-operations-management",
+    "to": "supply-chain-production-and-operations-management"
+  },
+  {
+    "program": "mba",
+    "from": "supply-chain-management",
+    "to": "supply-chain-production-and-operations-management"
+  },
+  {
+    "program": "mba",
+    "from": "production-operations",
+    "to": "supply-chain-production-and-operations-management"
+  },
+  {
+    "program": "mba",
+    "from": "production-operations-management",
+    "to": "supply-chain-production-and-operations-management"
+  },
+  {
+    "program": "mba",
+    "from": "operations-supply-chain-management",
+    "to": "supply-chain-production-and-operations-management"
+  },
+  {
+    "program": "mba",
+    "from": "supply-chain-operations-management",
+    "to": "supply-chain-production-and-operations-management"
+  },
+  {
+    "program": "mba",
+    "from": "digital-marketing-management",
+    "to": "digital-marketing-and-e-commerce"
+  },
+  {
+    "program": "mba",
+    "from": "operations-and-supply-chain-management",
+    "to": "supply-chain-production-and-operations-management"
+  },
+  {
+    "program": "mba",
+    "from": "sales-marketing",
+    "to": "marketing-sales-management"
+  },
+  {
+    "program": "mba",
+    "from": "systems-it-management",
+    "to": "it-systems-management"
+  },
+  {
+    "program": "mba",
+    "from": "business-analytics",
+    "to": "data-science-business-analytics"
+  },
+  {
+    "program": "mba",
+    "from": "data-science",
+    "to": "data-science-business-analytics"
+  },
+  {
+    "program": "mba",
+    "from": "marketing-sales-management",
+    "to": "sales-marketing"
+  },
+  {
+    "program": "mba",
+    "from": "analytics-and-data-science",
+    "to": "data-science-business-analytics"
+  },
+  {
+    "program": "mba",
+    "from": "data-science-and-analytics",
+    "to": "data-science-business-analytics"
+  },
+  {
+    "program": "mba",
+    "from": "marketing-sales",
+    "to": "sales-marketing"
+  },
+  {
+    "program": "mba",
+    "from": "digital-marketing",
+    "to": "digital-marketing-sales"
+  },
+  {
+    "program": "mba",
+    "from": "marketing-sales-management",
+    "to": "digital-marketing-sales"
+  },
+  {
+    "program": "mba",
+    "from": "international-business",
+    "to": "international-trade-business"
+  },
+  {
+    "program": "mba",
+    "from": "family-business",
+    "to": "family-managed-business"
+  },
+  {
+    "program": "mba",
+    "from": "digital-marketing-management",
+    "to": "digital-marketing-sales"
+  },
+  {
+    "program": "mba",
+    "from": "international-business-management",
+    "to": "international-trade-business"
+  },
+  {
+    "program": "mba",
+    "from": "information-technology",
+    "to": "information-technology-it"
+  },
+  {
+    "program": "mba",
+    "from": "sales-marketing",
+    "to": "digital-marketing-sales"
+  },
+  {
+    "program": "mba",
+    "from": "marketing-sales",
+    "to": "digital-marketing-sales"
+  },
+  {
+    "program": "mba",
+    "from": "finance-and-accounting-management",
+    "to": "international-finance-and-accounting"
+  },
+  {
+    "program": "mba",
+    "from": "finance-accounting",
+    "to": "international-finance-and-accounting"
+  },
+  {
+    "program": "mba",
+    "from": "supply-chain-management",
+    "to": "operation-and-supply-chain-management"
+  },
+  {
+    "program": "mba",
+    "from": "data-science",
+    "to": "analytics-and-data-science"
+  },
+  {
+    "program": "mba",
+    "from": "data-science-and-analytics",
+    "to": "analytics-and-data-science"
+  },
+  {
+    "program": "mba",
+    "from": "it-systems",
+    "to": "systems-it-management"
+  },
+  {
+    "program": "mba",
+    "from": "it-systems-management",
+    "to": "systems-it-management"
+  },
+  {
+    "program": "mba",
+    "from": "supply-chain-operations-management",
+    "to": "operations-supply-chain-management"
+  },
+  {
+    "program": "mba",
+    "from": "data-science",
+    "to": "data-science-artificial-intelligence"
+  },
+  {
+    "program": "mba",
+    "from": "finance-and-accounting-management",
+    "to": "international-finance-accounting"
+  },
+  {
+    "program": "mba",
+    "from": "artificial-intelligence",
+    "to": "data-science-artificial-intelligence"
+  },
+  {
+    "program": "mba",
+    "from": "finance-accounting",
+    "to": "international-finance-accounting"
+  },
+  {
+    "program": "mba",
+    "from": "hospital-administration-healthcare-management",
+    "to": "healthcare-and-hospital-administration"
+  },
+  {
+    "program": "mba",
+    "from": "hospital-administration",
+    "to": "healthcare-and-hospital-administration"
+  },
+  {
+    "program": "mba",
+    "from": "hospital-healthcare-management",
+    "to": "healthcare-and-hospital-administration"
+  },
+  {
+    "program": "mba",
+    "from": "data-science-business-analytics",
+    "to": "data-science-and-business-analytics"
+  },
+  {
+    "program": "mba",
+    "from": "management-information-systems",
+    "to": "information-systems"
+  },
+  {
+    "program": "mba",
+    "from": "supply-chain-operations-management",
+    "to": "operations-and-supply-chain-management"
+  },
+  {
+    "program": "mba",
+    "from": "human-resources-management",
+    "to": "human-resources"
+  },
+  {
+    "program": "mba",
+    "from": "hospital-administration",
+    "to": "hospital-administration-healthcare-management"
+  },
+  {
+    "program": "mba",
+    "from": "healthcare-and-hospital-administration",
+    "to": "hospital-administration-healthcare-management"
+  },
+  {
+    "program": "mba",
+    "from": "hospital-healthcare-management",
+    "to": "hospital-administration-healthcare-management"
+  },
+  {
+    "program": "mba",
+    "from": "business-analytics",
+    "to": "business-analytics-ai"
+  },
+  {
+    "program": "mba",
+    "from": "ai-for-business",
+    "to": "business-analytics-ai"
+  },
+  {
+    "program": "mba",
+    "from": "business-analytics",
+    "to": "it-business-analytics"
+  },
+  {
+    "program": "mba",
+    "from": "business-analytics",
+    "to": "business-analytics-pathway"
+  },
+  {
+    "program": "mba",
+    "from": "it-systems-management",
+    "to": "it-systems"
+  },
+  {
+    "program": "mba",
+    "from": "information-systems",
+    "to": "management-information-systems"
+  },
+  {
+    "program": "mba",
+    "from": "sales-marketing",
+    "to": "marketing-sales"
+  },
+  {
+    "program": "mba",
+    "from": "supply-chain-management",
+    "to": "supply-chain-operations-management"
+  },
+  {
+    "program": "mba",
+    "from": "operations-supply-chain-management",
+    "to": "supply-chain-operations-management"
+  },
+  {
+    "program": "mba",
+    "from": "operations-and-supply-chain-management",
+    "to": "supply-chain-operations-management"
+  },
+  {
+    "program": "mca",
+    "from": "natural-language-processing",
+    "to": "natural-language-processing-large-language-models-development"
+  },
+  {
+    "program": "mca",
+    "from": "machine-learning",
+    "to": "machine-learning-ai"
+  },
+  {
+    "program": "mca",
+    "from": "game-development",
+    "to": "ar-vr-game-development"
+  },
+  {
+    "program": "mca",
+    "from": "ai-machine-learning",
+    "to": "machine-learning-ai"
+  },
+  {
+    "program": "mca",
+    "from": "digital-marketing",
+    "to": "digital-marketing-technology"
+  },
+  {
+    "program": "mca",
+    "from": "digital-marketing-management",
+    "to": "digital-marketing-technology"
+  },
+  {
+    "program": "mca",
+    "from": "data-science",
+    "to": "ai-data-science"
+  },
+  {
+    "program": "mca",
+    "from": "data-science-ai",
+    "to": "ai-data-science"
+  },
+  {
+    "program": "mca",
+    "from": "cyber-security",
+    "to": "cloud-computing-and-cyber-security"
+  },
+  {
+    "program": "mca",
+    "from": "cloud-computing",
+    "to": "cloud-computing-and-cyber-security"
+  },
+  {
+    "program": "mca",
+    "from": "cyber-security-cloud-computing",
+    "to": "cloud-computing-and-cyber-security"
+  },
+  {
+    "program": "mca",
+    "from": "virtual-and-augmented-reality",
+    "to": "augmented-reality-and-virtual-reality-with-artificial-intelligence"
+  },
+  {
+    "program": "mca",
+    "from": "artificial-intelligence",
+    "to": "artificial-intelligence-data-science"
+  },
+  {
+    "program": "mca",
+    "from": "data-science",
+    "to": "artificial-intelligence-data-science"
+  },
+  {
+    "program": "mca",
+    "from": "software-development",
+    "to": "general-it-software-development"
+  },
+  {
+    "program": "mca",
+    "from": "artificial-intelligence",
+    "to": "artificial-intelligence-and-data-science"
+  },
+  {
+    "program": "mca",
+    "from": "data-science",
+    "to": "artificial-intelligence-and-data-science"
+  },
+  {
+    "program": "mca",
+    "from": "cloud-technology",
+    "to": "cloud-technology-information-security"
+  },
+  {
+    "program": "mca",
+    "from": "artificial-intelligence",
+    "to": "artificial-intelligence-machine-learning"
+  },
+  {
+    "program": "mca",
+    "from": "machine-learning-ai",
+    "to": "ai-machine-learning"
+  },
+  {
+    "program": "mca",
+    "from": "artificial-intelligence-and-machine-learning",
+    "to": "artificial-intelligence-machine-learning"
+  },
+  {
+    "program": "mca",
+    "from": "data-science",
+    "to": "ai-and-data-science"
+  },
+  {
+    "program": "mca",
+    "from": "data-science-ai",
+    "to": "ai-and-data-science"
+  },
+  {
+    "program": "mca",
+    "from": "computer-applications",
+    "to": "general-computer-applications"
+  },
+  {
+    "program": "mca",
+    "from": "ai-and-data-science",
+    "to": "ai-data-science"
+  },
+  {
+    "program": "mca",
+    "from": "ai-and-data-science",
+    "to": "data-science-ai"
+  },
+  {
+    "program": "mca",
+    "from": "ai-data-science",
+    "to": "data-science-ai"
+  },
+  {
+    "program": "bba",
+    "from": "supply-chain",
+    "to": "logistics-supply-chain"
+  },
+  {
+    "program": "bba",
+    "from": "supply-chain",
+    "to": "logistics-and-supply-chain-management"
+  },
+  {
+    "program": "bba",
+    "from": "supply-chain-management",
+    "to": "supply-chain"
+  },
+  {
+    "program": "bba",
+    "from": "business-analytics",
+    "to": "business-analytics-with-ai"
+  },
+  {
+    "program": "bca",
+    "from": "web-development",
+    "to": "full-stack-web-development"
+  },
+  {
+    "program": "bca",
+    "from": "cloud-security",
+    "to": "cloud-computing-cyber-security"
+  },
+  {
+    "program": "bca",
+    "from": "cloud-computing",
+    "to": "cloud-computing-cyber-security"
+  },
+  {
+    "program": "bca",
+    "from": "cyber-security",
+    "to": "cloud-computing-cyber-security"
+  },
+  {
+    "program": "bca",
+    "from": "data-science",
+    "to": "artificial-intelligence-and-data-science"
+  },
+  {
+    "program": "bca",
+    "from": "computer-applications",
+    "to": "general-computer-applications"
+  },
+  {
+    "program": "bca",
+    "from": "artificial-intelligence",
+    "to": "artificial-intelligence-and-data-science"
+  },
+  {
+    "program": "bca",
+    "from": "data-science-and-artificial-intelligence",
+    "to": "artificial-intelligence-and-data-science"
+  },
+  {
+    "program": "bca",
+    "from": "cloud-security",
+    "to": "cloud-computing-and-cyber-security"
+  },
+  {
+    "program": "bca",
+    "from": "data-science",
+    "to": "data-science-and-artificial-intelligence"
+  },
+  {
+    "program": "bca",
+    "from": "artificial-intelligence-and-data-science",
+    "to": "data-science-and-artificial-intelligence"
+  },
+  {
+    "program": "bca",
+    "from": "artificial-intelligence-data-science",
+    "to": "data-science-and-artificial-intelligence"
+  },
+  {
+    "program": "bca",
+    "from": "artificial-intelligence",
+    "to": "data-science-and-artificial-intelligence"
+  },
+  {
+    "program": "bca",
+    "from": "cloud-computing",
+    "to": "cloud-computing-and-cyber-security"
+  },
+  {
+    "program": "bca",
+    "from": "cyber-security",
+    "to": "cloud-computing-and-cyber-security"
+  },
+  {
+    "program": "bca",
+    "from": "data-analytics",
+    "to": "data-science-and-big-data-analytics"
+  },
+  {
+    "program": "bca",
+    "from": "data-science",
+    "to": "data-science-and-big-data-analytics"
+  },
+  {
+    "program": "bca",
+    "from": "data-science-analytics",
+    "to": "data-science-and-big-data-analytics"
+  },
+  {
+    "program": "bca",
+    "from": "cloud-security",
+    "to": "cloud-technology-and-information-security"
+  },
+  {
+    "program": "bca",
+    "from": "information-security",
+    "to": "cloud-technology-and-information-security"
+  },
+  {
+    "program": "bca",
+    "from": "web-dev",
+    "to": "web-dev-php"
+  },
+  {
+    "program": "bca",
+    "from": "machine-learning",
+    "to": "artificial-intelligence-machine-learning"
+  },
+  {
+    "program": "bcom",
+    "from": "international-finance-and-accounting",
+    "to": "international-finance-accounting"
+  },
+  {
+    "program": "bcom",
+    "from": "finance-accounting",
+    "to": "international-finance-accounting"
+  },
+  {
+    "program": "bcom",
+    "from": "accounting-and-finance",
+    "to": "international-finance-accounting"
+  },
+  {
+    "program": "bcom",
+    "from": "accounting-finance",
+    "to": "international-finance-accounting"
+  },
+  {
+    "program": "bcom",
+    "from": "finance-accounting",
+    "to": "accounting-finance"
+  },
+  {
+    "program": "bcom",
+    "from": "finance-accounting",
+    "to": "international-finance-and-accounting"
+  },
+  {
+    "program": "bcom",
+    "from": "accounting-and-finance",
+    "to": "international-finance-and-accounting"
+  },
+  {
+    "program": "bcom",
+    "from": "accounting-finance",
+    "to": "international-finance-and-accounting"
+  },
+  {
+    "program": "bcom",
+    "from": "accounting-and-finance",
+    "to": "finance-accounting"
+  },
+  {
+    "program": "bcom",
+    "from": "accounting-finance",
+    "to": "finance-accounting"
+  },
+  {
+    "program": "bcom",
+    "from": "finance-accounting",
+    "to": "commerce-honours-advanced-accounting-finance"
+  },
+  {
+    "program": "bcom",
+    "from": "accounting-and-finance",
+    "to": "commerce-honours-advanced-accounting-finance"
+  },
+  {
+    "program": "bcom",
+    "from": "accounting-finance",
+    "to": "commerce-honours-advanced-accounting-finance"
+  },
+  {
+    "program": "mcom",
+    "from": "international-finance-and-accounting",
+    "to": "international-finance-accounting-acca"
+  },
+  {
+    "program": "mcom",
+    "from": "accounting-finance",
+    "to": "international-finance-and-accounting"
+  },
+  {
+    "program": "mcom",
+    "from": "accounting-and-finance",
+    "to": "international-finance-and-accounting"
+  },
+  {
+    "program": "mcom",
+    "from": "commerce-finance",
+    "to": "general-commerce-finance"
+  },
+  {
+    "program": "ma",
+    "from": "english-literature",
+    "to": "english-literature-language"
+  },
+  {
+    "program": "ma",
+    "from": "hindi-literature",
+    "to": "hindi-literature-language"
+  },
+  {
+    "program": "msc",
+    "from": "data-science",
+    "to": "msc-data-science"
   }
 ]

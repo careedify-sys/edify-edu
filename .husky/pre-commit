@@ -63,6 +63,16 @@ npx tsx scripts/check-programme-allowlist-resolver.ts || exit 1
 echo "pre-commit: check-spec-allowlist"
 npx tsx scripts/check-spec-allowlist.ts || exit 1
 
+# Structural health of the section 2f redirect table. check-spec-allowlist
+# proves the file agrees with resolveSpec, which a bad rescue rule in
+# lib/data/spec-slug-rescue-rules.json can satisfy while still producing a
+# redirect loop, a two-hop chain, or a redirect onto a page section 2d 404s.
+# Adding bca data-science -> computer-applications-data-science next to the
+# existing inverse rule did exactly that and put Amity's live BCA page in a
+# loop. See the header of scripts/check-spec-redirect-health.ts.
+echo "pre-commit: check-spec-redirect-health"
+npx tsx scripts/check-spec-redirect-health.ts || exit 1
+
 # Sitemap canonicality. Blocks any commit where valid-urls.json advertises a URL
 # that redirects, and any commit where url-canonical-map.json has drifted from
 # resolveSpec / the programmes route. A sitemap full of redirect sources burns
