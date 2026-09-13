@@ -8,7 +8,48 @@ numbers below. Direction and rank-order are reliable; magnitude is not.
 
 ---
 
-## 0. Headline: the site is declining, and the calculator hides it
+## 0. HEADLINE CORRECTED: the site is growing. The earlier claim was a windowing artifact.
+
+**Read this before the section below it.** The original headline said the real
+site lost 12% of clicks. That came from summing the two Pages exports, and the
+method does not survive scrutiny.
+
+**Both exports cap at exactly 1,000 rows.** When site totals move, which pages
+make the cut changes. Aug had 73 verify pages in the top 1,000 and Sep had 61.
+Those 12 did not lose their traffic, they fell below the cap. Summing a truncated
+list and differencing it measures the cap as much as the site.
+
+The daily series has no such problem. Both exports carry `Chart.csv`, and
+stitched together they give 43 unbroken days. The two 28-day windows overlap by
+13 days, so the clean comparison is the two non-overlapping halves:
+
+| period | days | impressions | clicks | CTR | avg pos |
+|---|---:|---:|---:|---:|---:|
+| Jul 30 to Aug 13 | 15 | 513,924 | 2,042 | 0.40% | 8.1 |
+| Aug 14 to Aug 26 (shared) | 13 | 433,051 | 1,686 | 0.39% | 9.1 |
+| **Aug 27 to Sep 10** | 15 | **533,715** | **2,264** | **0.42%** | 8.7 |
+
+**Per day, late versus early: clicks +10.9%, impressions +3.9%.**
+
+Last 7 days against first 7 days: **147 clicks/day to 170, up 15.6%**, with CTR
+improving 0.42% to 0.47%. The strongest two days in the whole 43-day series are
+the last two, 9 and 10 September, at 190 and 227 clicks. Nothing in this work
+shipped before 13 September, so none of that is ours.
+
+**What this means for the sections below.** The per-page and per-query findings
+are still sound, because those read individual rows rather than differencing
+truncated sums. Issue 2 was a real defect and is fixed. But treat every
+aggregate built by summing a Pages export as unreliable, including the
+"excluding calculator, clicks down 11.8%" figure. There is no page dimension in
+`Chart.csv`, so whether non-calculator traffic specifically fell cannot be
+settled from these two exports at all.
+
+**Method rule going forward: use `Chart.csv` for trend, and the Pages and
+Queries exports only for per-row facts. Never difference two capped exports.**
+
+---
+
+## 0a. The original headline, superseded by the correction above
 
 | metric | Aug window | Sep window | change |
 |---|---:|---:|---:|
