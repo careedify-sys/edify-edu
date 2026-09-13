@@ -174,7 +174,7 @@ export const COUPONS: Coupon[] = [
   {
     code: 'BVP2026-5K',
     university: 'Bharati Vidyapeeth Online',
-    universityId: 'bharati-vidyapeeth-online',
+    universityId: 'bharati-vidyapeeth-university-online',
     discount: 10,
     program: 'All',
     tier: 'standard',
@@ -327,6 +327,15 @@ export const COUPONS: Coupon[] = [
     expiry: 'rolling',
     featured: false,
   },
+  // ── Added 2026-09-13 ─────────────────────────────────────────────────────
+  // Requested by Rishi. All tiers resolve to the same {max: 5000, base: 4000}
+  // in TIER_AMOUNTS, so tier is informational here.
+  { code: 'DYPNM2026-5K', university: 'D.Y. Patil University, Navi Mumbai Online', universityId: 'dy-patil-university-online', discount: 5000, program: 'MBA', tier: 'standard', savings: TIER_SAVINGS_LABEL.standard, expiry: '2026-12-31', featured: false },
+  { code: 'KUK2026-5K', university: 'Kurukshetra University Online', universityId: 'kurukshetra-university-online', discount: 5000, program: 'MBA', tier: 'standard', savings: TIER_SAVINGS_LABEL.standard, expiry: '2026-12-31', featured: false },
+  { code: 'MRU2026-5K', university: 'Manav Rachna Online', universityId: 'manav-rachna-online', discount: 5000, program: 'MBA', tier: 'standard', savings: TIER_SAVINGS_LABEL.standard, expiry: '2026-12-31', featured: false },
+  { code: 'MGU2026-5K', university: 'Mangalayatan University Online', universityId: 'mangalayatan-university-online', discount: 5000, program: 'MBA', tier: 'standard', savings: TIER_SAVINGS_LABEL.standard, expiry: '2026-12-31', featured: false },
+  { code: 'VGU2026-5K', university: 'Vivekananda Global University Online', universityId: 'vivekananda-global-university-online', discount: 5000, program: 'MBA', tier: 'standard', savings: TIER_SAVINGS_LABEL.standard, expiry: '2026-12-31', featured: false },
+  { code: 'GLA2026-5K', university: 'GLA University Online', universityId: 'gla-university-online', discount: 5000, program: 'MBA', tier: 'standard', savings: TIER_SAVINGS_LABEL.standard, expiry: '2026-12-31', featured: false },
 ]
 
 /** Rolling expiry: always 30 days from now. Displays as "Valid till [date]" */
@@ -429,7 +438,8 @@ export function getCouponSections() {
 
   const top5 = COUPONS.filter(c => top5Ids.includes(c.universityId) && c.program !== 'MCA')
   const premium = COUPONS.filter(c => premiumIds.includes(c.universityId) && c.program !== 'MCA' && !top5Ids.includes(c.universityId))
-  const usedIds = new Set([...top5.map(c => c.code), ...premium.map(c => c.code), ...mcaPrograms.map(c => c.code)])
+  const usedIds = new Set([...top5.map(c => c.code), ...premium.map(c => c.code), ...mcaPrograms.map(c => c.code)
+])
   const budget = COUPONS.filter(c => !usedIds.has(c.code))
 
   return { top5, premium, budget, mca: mcaPrograms }

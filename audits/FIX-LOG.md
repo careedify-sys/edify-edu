@@ -9,6 +9,52 @@ the fix by accident.
 
 ---
 
+## 2026-09-13 · 11 new coupon pages
+
+**What.** `COUPON_PAGES` 12 to 23, `COUPONS` 26 to 32. New pages for Shoolini,
+DSU, UPES, Parul, Bharati Vidyapeeth, DY Patil Navi Mumbai, Kurukshetra, Manav
+Rachna, Mangalayatan, VGU and GLA.
+
+**Why.** Rishi asked for them. The coupon cluster is the site's best-converting
+inventory: it grew 44 clicks to 46 in the last GSC window while the index page
+fell, and the Manipal Jaipur page moved position 7.2 to 4.9.
+
+**How the fabrication risk was removed.** The blocker raised earlier was
+`CouponPageData.discounts[]`, which on existing pages lists real university
+schemes such as a 15% upfront discount and a 20% defence waiver. Those cannot be
+verified from inside the repo. Checking the template resolved it: **`discounts[]`
+is never rendered**, and neither are `totalFee`, `finalFee`, `stackExample`,
+`emiCompatible` or `couponDiscount`. So the new entries carry only the edifyedu
+coupon in `discounts[]`, assert no university scheme anywhere, and each page
+tells the reader to confirm scholarships on the official portal. The existing
+disclosure block already separates the two.
+
+Every factual field reads from `lib/data.ts`: name, NAAC, NIRF and the MBA fee
+string already published on that university's hub. No figure was hand-written.
+NIRF labels always state their category, and the 999 unranked sentinel renders
+as "Not ranked in NIRF 2025" rather than as a rank.
+
+All 11 official domains were checked to resolve before being written into
+`officialUrl` and the Course schema's `sameAs`.
+
+**Two defects fixed on the way.**
+- `BVP2026-5K` pointed at `bharati-vidyapeeth-online`, a universityId that does
+  not exist in `lib/data.ts`, so the coupon never matched its university.
+  Corrected to `bharati-vidyapeeth-university-online`.
+- `blogSlug` was required and rendered as an unconditional `<Link>`. Five of the
+  eleven universities have no review blog, so the field is now optional and the
+  card renders only when a slug exists. No `/blog/undefined` is emitted.
+
+**Still open.** `AMR2026-5K` points at `amrita-university-online`, which also
+does not exist; the live Amrita page uses `amrita-vishwa-vidyapeetham-online`.
+Left alone because it may be a deliberate duplicate rather than a typo.
+
+**Verified.** All 11 pages return 200 with Offer, FAQPage, HowTo and Course
+schema, no "Online Online", no orphan universityId, no duplicate slug, every
+`blogSlug` resolving to a real post. All 24 coupon URLs appear in the sitemap.
+
+---
+
 ## 2026-09-13 · coupon pages: "Online Online" on all 12, in copy and in schema
 
 **What.** Adopted the existing `formatUniversityDisplayName()` helper at the five

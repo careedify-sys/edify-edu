@@ -540,10 +540,12 @@ export default async function CouponDetailPage({ params }: { params: any }) {
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>Related Content</h2>
           <div className="grid sm:grid-cols-2 gap-3">
-            <Link href={`/blog/${page.blogSlug}`} className="rounded-xl border border-slate-200 bg-white p-4 no-underline hover:border-amber-400 transition-colors block">
-              <p className="text-xs text-amber-600 font-bold uppercase mb-1">Blog Review</p>
-              <p className="text-sm font-bold" style={{ color: '#0f2756' }}>{page.shortName} Online MBA Review {year}</p>
-            </Link>
+            {page.blogSlug && (
+              <Link href={`/blog/${page.blogSlug}`} className="rounded-xl border border-slate-200 bg-white p-4 no-underline hover:border-amber-400 transition-colors block">
+                <p className="text-xs text-amber-600 font-bold uppercase mb-1">Blog Review</p>
+                <p className="text-sm font-bold" style={{ color: '#0f2756' }}>{page.shortName} Online MBA Review {year}</p>
+              </Link>
+            )}
             <Link href={`/universities/${page.universityId}`} className="rounded-xl border border-slate-200 bg-white p-4 no-underline hover:border-amber-400 transition-colors block">
               <p className="text-xs text-amber-600 font-bold uppercase mb-1">University Page</p>
               <p className="text-sm font-bold" style={{ color: '#0f2756' }}>{page.universityName} -- Full Profile</p>
