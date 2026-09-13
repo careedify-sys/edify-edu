@@ -114,7 +114,44 @@ internal links**, taking spec pages from avg 1.1 to an expected ~6 inbound.
 
 ---
 
-## 4. Still open
+## 4. Measured result after deploy
+
+Re-crawled production after `f75395a` shipped. Same method, same exclusions.
+
+| page type | pages | 0 links | 1 link | avg inbound |
+|---|---:|---:|---:|---:|
+| **uni spec page** | 1,919 | **404 → 24** | **953 → 144** | **1.1 → 6.0** |
+| uni programme hub | 457 | 0 → 0 | 0 → 0 | 8.8 → 8.8 |
+| blog post | 192 | 0 → 0 | 18 → 18 | 8.2 → 8.2 |
+| university page | 138 | 0 → 0 | 0 → 0 | 28.9 → 28.9 |
+| verify page | 124 | 17 → 17 | 96 → 96 | 1.0 → 1.0 |
+| **TOTAL** | **2,875** | **422 → 42** | **1,094 → 285** | **4.2 → 7.4** |
+
+**Pages with 0 or 1 inbound contextual link: 1,516 → 327, a 78% reduction.**
+1,729 pages gained links. **0 pages lost links**, so nothing regressed.
+
+Reproduce with:
+
+```bash
+node scripts/audit-internal-link-graph.mjs
+node scripts/compare-link-graph.mjs <before>.json audits/internal-link-graph.json
+```
+
+### What the remaining 168 starved spec pages are
+
+Not defects. **160 of them are the only specialisation in their (university,
+programme) group**, so no sibling exists to link to and one hub link is the
+structural maximum for this mechanism. The other 32 sit under a noindex hub,
+which is cause C above.
+
+Raising those further needs a different mechanism: linking the same
+specialisation *across* universities ("other universities offering an online MBA
+in Finance"). That is a new feature rather than a fix, and it would add
+cross-university links to 160 pages. Not done.
+
+---
+
+## 5. Still open
 
 | item | pages | blocker |
 |---|---:|---|

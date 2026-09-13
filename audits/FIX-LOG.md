@@ -40,6 +40,12 @@ descriptive anchor text, hub link in the footer of the block.
 `resolveSpec`, so neither a broken nor a noindex target can be emitted.
 `scripts/check-internal-hub-links.js` still covers hub links after a build.
 
+**Measured after deploy (re-crawl of production).** Spec pages: 404 orphans → 24,
+953 single-link → 144, average inbound 1.1 → 6.0. Sitewide pages with 0 or 1
+inbound contextual link: **1,516 → 327, down 78%**. 1,729 pages gained links,
+**0 lost any**. The 168 that remain are structural: 160 are the only
+specialisation in their group, so no sibling exists to link.
+
 **Detail.** `audits/topical-authority-2026-09-13.md`, raw graph in
 `audits/internal-link-graph.md`.
 
