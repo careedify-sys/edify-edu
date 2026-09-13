@@ -6,7 +6,44 @@ diagnosis, or the repo itself. Sources named per section.
 
 ---
 
-## 0. The finding that reorders everything
+## 0. HEADLINE CORRECTED: the CRM is not the record, so this is not a follow-up gap
+
+**Read this before section 0a below it.** The original headline said the binding
+constraint was that captured leads go unworked. Rishi corrected it the same day:
+**leads are worked from Google Sheets, and conversions are good.**
+
+So the CRM numbers below measure CRM adoption, not follow-up. 285 rows at stage
+`Fresh` means 285 rows nobody moved in a tool nobody uses, and 22 call rows
+against 303 leads means calls are logged in Sheets instead. Neither says a lead
+went uncontacted.
+
+**What survives the correction, and it is the part that matters:**
+
+The real record lives in a spreadsheet, and the website's attribution lives in
+Supabase. Nothing joins them. So the question this whole SEO programme exists to
+answer stays unanswerable:
+
+> Which page earned a student?
+
+That is not a follow-up problem. It is a **closed-loop problem**, and it is the
+reason no page-level or university-level investment on this site can currently be
+justified on revenue. The consolidation programme in
+`audits/gsc-ranking-lead-strategy-2026-08-23.html` projects +403 leads across 17
+clusters. There is no way to check a single one of those projections against an
+outcome, because outcomes live in one system and sources live in another.
+
+**Corrected priority for Phase 1:** not "work the queue". Join the two records.
+Either the enrolment outcome comes back from Sheets into Supabase against the
+lead's `source`, or the CRM becomes the record. Either works. The current split
+does not.
+
+**And the attribution fix shipped on 2026-09-13 still matters more, not less.**
+Whichever system becomes the record, 43 of 89 website leads have no page
+attached, permanently. The baseline starts from that commit.
+
+---
+
+## 0a. The original headline, superseded by the correction above
 
 **Measured on the live Supabase CRM, 2026-09-13:**
 
@@ -143,17 +180,19 @@ goes out, because a pitch is hard to unsend.**
 
 ## 4. The plan
 
-### Phase 0, this week. Work the queue.
+### Phase 0, this week. Join the two records.
 
-Not a code task. 285 leads sit at `Fresh`, 89 of them people who filled a form
-on the site and were told in writing they would hear from us within 24 hours.
+Superseded from "work the queue" by the correction in section 0. Leads are
+worked in Google Sheets and convert well. The gap is that the sheet holds the
+outcome and Supabase holds the source, and nothing connects them.
 
-Target: every one contacted, every attempt logged, stage moved. Even a "Not
-interested" is worth more than `Fresh`, because it is information.
+Pick one to be the record. Either push enrolment outcomes from the sheet back
+into Supabase against the lead's `source`, or move the working queue into the
+CRM that already has the stages. Both are small. The split is what costs.
 
-What comes out of it is the only thing that can size everything else: the real
-`Lead > Contacted > Interested > Registered > Enrolled` rates, and which
-universities and programmes actually convert.
+What comes out of it is the only thing that can size everything else: real
+`Lead > Contacted > Interested > Registered > Enrolled` rates **per source
+page**, and which universities and programmes actually convert.
 
 ### Phase 1, weeks 1-4. Close the loop.
 
@@ -198,15 +237,17 @@ Section 3 above. Then build to it, not before.
 
 ## 5. What not to spend on
 
-Ads. Not on principle, on arithmetic. Paid traffic lands in the same queue where
-94% of leads currently sit untouched. Buy traffic once a lead that arrives gets
-called, and once you can name the enrolment rate it converts at.
+Ads. Not on principle, on arithmetic. You cannot yet name the enrolment rate a
+page converts at, so you cannot price a click. Buy traffic once the loop in
+Phase 0 is closed and a rupee of spend can be traced to an enrolment.
 
 ---
 
 ## 6. The one number to run the company on
 
-Not traffic. Not leads. **Leads contacted within 24 hours.**
+Not traffic. Not leads. **Enrolments traced back to the page that produced
+them.**
 
-It is currently near zero, it is free to fix, and every other number on this
-page is downstream of it.
+It is currently zero, not because nothing enrols, but because the outcome and
+the source are kept in two systems that never meet. Every page-level and
+university-level investment decision on this site is downstream of it.
