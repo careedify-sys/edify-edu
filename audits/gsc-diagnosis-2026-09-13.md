@@ -84,6 +84,83 @@ mentions fees. Recorded as gap analysis only — never linked, never cited.
 
 ---
 
+## Issue 1 REVISED (2026-09-13, after query-level analysis) — most of it is not winnable
+
+The framing above ("~9,000 impressions, 3 clicks, fix the cannibalisation") was
+wrong on sizing and wrong on cause. Corrected here rather than deleted, so the
+reasoning is auditable.
+
+### Correction 1: 80% of fee impressions are campus intent, not our market
+
+| fee query set | queries | impressions | clicks | CTR | avg pos |
+|---|---:|---:|---:|---:|---:|
+| All fee queries | 82 | 16,385 | 53 | 0.32% | 9.05 |
+| Qualified "online" / "distance" | 32 | **3,340** | 23 | **0.69%** | 8.49 |
+| Bare, no online qualifier | 50 | **13,045** | 30 | **0.23%** | 9.20 |
+
+`bits pilani mba fees` (2,607) and `galgotias university mba fees` (2,559) carry
+no online qualifier. Both universities run large on-campus MBAs, and that is what
+those searchers want. EdifyEdu is an online-education comparison site, so it
+ranks ~9 and converts at 0.04% because the intent is not ours to serve.
+
+The genuinely addressable set is the qualified subset: **3,340 impressions, 23
+clicks, position 8.5** — real, but a fraction of what was claimed.
+
+### Correction 2: the title-cannibalisation theory is contradicted by our own data
+
+The theory was that blog and hub carry near-identical fee-led titles, so Google
+picks one and the hub stays buried. BITS does show that collision. But:
+
+| university | blog `seoTitle` | already differentiated? | hub position |
+|---|---|---|---:|
+| Galgotias | "Galgotias Online MBA Review 2026: Cheapest NAAC A+ at Rs 80K" | **yes, review-led** | not ranking |
+| Jamia Hamdard | "Jamia Hamdard Online MBA Review 2026: Honest Verdict" | **yes, review-led** | 38.2 |
+| BITS Pilani | "BITS Pilani Online MBA (WILP) Fees 2026: ₹2.97L, NIRF #16 Review" | no, fee-led | 25.2 |
+
+Two of the three are **already** review-titled, and their hubs are buried anyway.
+Differentiating titles therefore does not predict hub recovery. Link count does
+not explain it either: Jain's hub carries **26 inbound internal links and sits at
+position 53**, while BITS's carries 11 and sits at 25.
+
+Google is preferring the long-form editorial page over a templated hub, which is
+a reasonable judgement. Rewriting 40 blog titles to fight it would be an
+unevidenced change against a ranking page that currently earns clicks.
+
+**Decision: do not ship the title rewrite.** Not enough evidence, real downside.
+
+### Correction 3: the striking-distance inventory is mostly zero-click query types
+
+All queries at position 4-12 with 150+ impressions, calculator excluded:
+**69 queries, 28,525 impressions, 36 clicks.**
+
+What they are:
+
+| cluster | impressions | clicks | why it earns nothing |
+|---|---:|---:|---|
+| Bare `{uni} mba fees` | ~8,000 | 3 | campus intent, not our market |
+| `how many iims in india` family | 4,312 | 4 | count question Google answers inline |
+| Full-form queries (`phd full form`, `ma full form`, `b com full form salary`) | ~2,000 | 1 | definitional, answered inline |
+| `naac grade` | 685 | 0 | definitional, answered inline |
+
+Positions on the IIM cluster are *improving* (-0.2 to -0.8) and clicks stay at
+zero. That is the signature of a query answered above the fold, not of a page
+that needs better on-page work.
+
+**This is the real finding.** The site's near-miss inventory is dominated by
+queries that do not produce clicks at any position short of the answer box. That
+is why 28,525 impressions yield 36 clicks, and no amount of title or linking work
+changes it.
+
+### The one under-exploited asset
+
+`/fees` is indexable, well titled ("Compare 125+ UGC-DEB Approved Programs"),
+backed by a 130-university dataset, and sits at **position 21 with 453
+impressions and 4 clicks**. Competitors rank fee-structure pages of exactly this
+shape. This is the only fee-side asset with genuine headroom that does not
+require inventing data or fighting Google's page preference.
+
+---
+
 ## Issue 2 — `/programs/*`: 13,533 impressions, 25 clicks, all noindexed
 
 0.18% CTR across 32 pages, ranking at positions 40–75.
