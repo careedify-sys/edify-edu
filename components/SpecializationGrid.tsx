@@ -2,11 +2,12 @@
 
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
-import { specSlug as getSpecSlug, specName as getSpecName } from '@/lib/data'
-import type { SpecValue } from '@/lib/data'
-
+// Props carry resolved { slug, name } pairs, not raw SpecValue. The caller
+// canonicalises through resolveSpec so every href is the URL that serves a 200
+// rather than an alias that 308s. See the comment on specLinks in
+// UniProgramBody.tsx.
 interface Props {
-  specs: SpecValue[]
+  specs: { slug: string; name: string }[]
   universityId: string
   programSlug: string
   program: string
@@ -27,9 +28,7 @@ export default function SpecializationGrid({ specs, universityId, programSlug, p
         Select a specialisation below for detailed syllabus, career scope, and salary data.
       </p>
       <div className="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3">
-        {specs.map(spec => {
-          const slug = getSpecSlug(spec)
-          const name = getSpecName(spec)
+        {specs.map(({ slug, name }) => {
           return (
             <Link
               key={slug}

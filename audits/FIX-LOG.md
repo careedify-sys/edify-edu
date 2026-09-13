@@ -9,6 +9,42 @@ the fix by accident.
 
 ---
 
+## 2026-09-13 · internal link starvation on specialisation pages
+
+**What.** Canonicalised the specialisation links on programme hubs, added
+manifest-only specs to that grid, and gave every specialisation page a
+sibling-specialisation block. ~9,600 new internal links.
+
+**Why.** A crawl of all 2,907 live pages found **1,516 of 2,875 (53%) had 0 or 1
+inbound contextual link**, concentrated almost entirely in specialisation pages:
+1,919 of them averaging 1.1 links, with 404 orphans and 953 on a single link.
+One link is a single point of failure — reword that one source and the page goes
+orphan — and it confers almost no topical signal. The site's own within-pair
+test (55 university+programme pairs with both a blog and a hub) shows the
+better-linked page is the better-ranking page in 51 of 55 cases.
+
+**Three causes, two fixed in code.**
+- 186 pages: the hub linked an alias that 308s (`human-resource-management` ->
+  `hr-management`), so the canonical page got zero direct links. 189 such links.
+- 143 pages: specs present only in `programs-manifest.json` were never listed,
+  because the grid renders `pd.specs` from `data.ts`.
+- 75 pages: linked only from a `noindex` hub. **Not fixed** — root cause is the
+  placeholder-fee cluster and it needs real fees from official portals.
+
+**Verified.** 60 hubs sampled, all 190 spec links return 200 directly, no
+redirect hops. 40 spec pages sampled, average 5.0 sibling links each, every one
+200. Rendered block checked in the accessibility tree: semantic `nav`,
+descriptive anchor text, hub link in the footer of the block.
+
+**Guard.** Links are gated on `isLinkable()` and canonicalised through
+`resolveSpec`, so neither a broken nor a noindex target can be emitted.
+`scripts/check-internal-hub-links.js` still covers hub links after a build.
+
+**Detail.** `audits/topical-authority-2026-09-13.md`, raw graph in
+`audits/internal-link-graph.md`.
+
+---
+
 ## 2026-09-13 · `e4a2643` — specialisation names split, truncated and placeheld at import
 
 **What.** Repaired 13 `specs` arrays in `lib/data.ts`; retired 51 URLs with

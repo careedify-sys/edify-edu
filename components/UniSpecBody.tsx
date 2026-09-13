@@ -38,6 +38,10 @@ import ComparisonTable    from './ComparisonTable'
 import HonestVerdict      from './HonestVerdict'
 import FAQBlock           from './FAQBlock'
 import LastUpdatedStamp   from './LastUpdatedStamp'
+import SiblingSpecialisations from './SiblingSpecialisations'
+import { getSiblingSpecialisations, isLinkable } from '@/lib/seo/safe-internal-links'
+import { resolveSpec, getAllSpecsForProgram } from '@/lib/data/programs'
+import { specSlug as toSpecSlug } from '@/lib/data'
 import StickyLeadCard     from './StickyLeadCard'
 import CouponCard         from './CouponCard'
 import QuickFactsCard     from './QuickFactsCard'
@@ -273,6 +277,36 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
   const peers      = getPeerUniversities(program, u.id, 3)
   const coupon     = COUPONS.find(c => c.universityId === u.id && (c.program === program || c.program === 'All')) || null
   const specContent = getSpecContent(spec) || getSpecFallback(spec, program)
+
+  // Sibling specialisation links. Built from the same two sources the programme
+  // hub uses, canonicalised through resolveSpec so no href is an alias that
+  // 308s, then gated on isLinkable so none points at a noindex page.
+  // See the block comment on getSiblingSpecialisations.
+  const siblingSpecCandidates = (() => {
+    const out: { slug: string; name: string }[] = []
+    const seen = new Set<string>()
+    const add = (raw: string) => {
+      const r = resolveSpec(u.id, program, programSlug, raw)
+      if (!r || seen.has(r.slug)) return
+      seen.add(r.slug)
+      out.push(r)
+    }
+    for (const sp of (pd.specs || [])) add(toSpecSlug(sp))
+    for (const row of getAllSpecsForProgram(u.id, programSlug)) add(row.spec_slug)
+    return out
+  })()
+  const siblingSpecs = getSiblingSpecialisations(u.id, programSlug, specSlug, siblingSpecCandidates)
+  const specHubHref = isLinkable(`/universities/${u.id}/${programSlug}`)
+    ? `/universities/${u.id}/${programSlug}`
+    : null
+  const siblingSpecBlock = (
+    <SiblingSpecialisations
+      links={siblingSpecs}
+      cleanName={cleanName}
+      program={program}
+      hubHref={specHubHref}
+    />
+  )
 
   // Spec-specific JSON content (Batch 9+) — takes priority over generic specContent
   const specJson = getSpecPageContent(u.id, program.toLowerCase(), specSlug)
@@ -558,6 +592,8 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                     />
                   )}
 
+                  {siblingSpecBlock}
+
                   <LastUpdatedStamp program={program} universityId={u.id} />
 
                   <div className="pt-2 flex gap-4 flex-wrap text-sm font-semibold">
@@ -654,6 +690,8 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                   />
 
                   <FAQBlock faqs={faqs} title={`${cleanName} ${shouldIndexUniversity(u.id) ? 'Online ' : ''}${program} FAQs`} />
+                  {siblingSpecBlock}
+
                   <LastUpdatedStamp program={program} universityId={u.id} />
 
                   <div className="pt-2 flex gap-4 flex-wrap text-sm font-semibold">

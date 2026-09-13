@@ -153,3 +153,8 @@ edifyedu-*.html
 sprint-*.bundle
 _unlink_test
 AGENTS.md
+
+# Regenerable crawl output from scripts/audit-internal-link-graph.mjs (~1MB).
+# The committed .md report is the readable artifact; rerun the script for the raw graph.
+audits/internal-link-graph.json
+audits/alias-internal-links.json

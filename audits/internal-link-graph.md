@@ -1,0 +1,335 @@
+# Internal link graph — inbound contextual links
+
+Crawled 2907 of 2907 sitemap pages on 2026-09-13.
+36 targets excluded as site chrome (linked from >50% of pages).
+
+## Starvation by page type
+
+| page type | pages | 0 links | 1 link | 2 links | avg |
+|---|---:|---:|---:|---:|---:|
+| uni spec page | 1919 | 404 | 953 | 547 | 1.1 |
+| verify page | 124 | 17 | 96 | 8 | 1.0 |
+| cgpa value page | 26 | 0 | 26 | 0 | 1.0 |
+| blog post | 192 | 0 | 18 | 35 | 8.2 |
+| programme spec hub | 2 | 1 | 1 | 0 | 0.5 |
+| university page | 138 | 0 | 0 | 0 | 28.9 |
+| uni programme hub | 457 | 0 | 0 | 9 | 8.8 |
+| programme hub | 2 | 0 | 0 | 0 | 16.5 |
+| other | 1 | 0 | 0 | 0 | 29.0 |
+| coupon page | 12 | 0 | 0 | 4 | 3.8 |
+| guide | 2 | 0 | 0 | 0 | 9.5 |
+
+**1516 of 2875 pages have 0 or 1 inbound contextual link.**
+
+## Orphans (0 inbound contextual links)
+
+422 pages. Reachable only from the sitemap.
+
+- `/programs/bba/aviation` *(programme spec hub)*
+- `/universities/adichunchanagiri-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/adichunchanagiri-university-online/mba/operations` *(uni spec page)*
+- `/universities/alliance-university-online/bba/finance` *(uni spec page)*
+- `/universities/alliance-university-online/bba/human-resource-management` *(uni spec page)*
+- `/universities/alliance-university-online/bba/marketing` *(uni spec page)*
+- `/universities/alliance-university-online/bcom/accounting-and-taxation` *(uni spec page)*
+- `/universities/alliance-university-online/bcom/finance` *(uni spec page)*
+- `/universities/alliance-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/amity-university-online/bca/cloud-security` *(uni spec page)*
+- `/universities/amity-university-online/bca/computer-applications-financial-technology-ai-with-paytm` *(uni spec page)*
+- `/universities/amity-university-online/bca/data-analytics` *(uni spec page)*
+- `/universities/amity-university-online/bca/data-engineering` *(uni spec page)*
+- `/universities/amity-university-online/bca/data-science` *(uni spec page)*
+- `/universities/amity-university-online/bca/software-engineering` *(uni spec page)*
+- `/universities/amity-university-online/bcom/international-finance-accounting` *(uni spec page)*
+- `/universities/amity-university-online/mba/digital-marketing` *(uni spec page)*
+- `/universities/amity-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/amity-university-online/mba/international-business` *(uni spec page)*
+- `/universities/amity-university-online/mba/retail` *(uni spec page)*
+- `/universities/amrita-vishwa-vidyapeetham-online/mba/esg` *(uni spec page)*
+- `/universities/amrita-vishwa-vidyapeetham-online/mba/hr-management` *(uni spec page)*
+- `/universities/amrita-vishwa-vidyapeetham-online/mba/operations` *(uni spec page)*
+- `/universities/andhra-university-online/ma/sociology-education` *(uni spec page)*
+- `/universities/andhra-university-online/ma/sociology-environmental` *(uni spec page)*
+- `/universities/andhra-university-online/ma/sociology-gender` *(uni spec page)*
+- `/universities/andhra-university-online/ma/sociology-health` *(uni spec page)*
+- `/universities/andhra-university-online/ma/sociology-industrial` *(uni spec page)*
+- `/universities/andhra-university-online/ma/sociology-rural` *(uni spec page)*
+- `/universities/andhra-university-online/ma/sociology-urban` *(uni spec page)*
+- `/universities/andhra-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/arka-jain-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/assam-don-bosco-university-online/bca/computer-science-and-information-technology` *(uni spec page)*
+- `/universities/assam-don-bosco-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/assam-don-bosco-university-online/mba/marketing` *(uni spec page)*
+- `/universities/assam-don-bosco-university-online/mba/operations` *(uni spec page)*
+- `/universities/banasthali-vidyapith-online/mba/hr-management` *(uni spec page)*
+- `/universities/banasthali-vidyapith-online/mba/operations` *(uni spec page)*
+- `/universities/bharathidasan-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/bharathidasan-university-online/mba/operations` *(uni spec page)*
+- `/universities/bharati-vidyapeeth-university-online/bba/event-management` *(uni spec page)*
+- `/universities/bharati-vidyapeeth-university-online/bba/human-resource-management` *(uni spec page)*
+- `/universities/bharati-vidyapeeth-university-online/bba/it` *(uni spec page)*
+- `/universities/bharati-vidyapeeth-university-online/bba/project-management` *(uni spec page)*
+- `/universities/bharati-vidyapeeth-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/bharati-vidyapeeth-university-online/mba/it-management` *(uni spec page)*
+- `/universities/bharati-vidyapeeth-university-online/mca/dot-net` *(uni spec page)*
+- `/universities/bit-mesra-online/mba/hr-management` *(uni spec page)*
+- `/universities/bs-abdur-rahman-university-online/mba/finance` *(uni spec page)*
+- `/universities/bs-abdur-rahman-university-online/mba/marketing` *(uni spec page)*
+- `/universities/bs-abdur-rahman-university-online/mba/operations` *(uni spec page)*
+- `/universities/bs-abdur-rahman-university-online/mba/supply-chain-management` *(uni spec page)*
+- `/universities/centurion-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/chandigarh-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/chandigarh-university-online/mba/it-management` *(uni spec page)*
+- `/universities/chandigarh-university-online/mba/operations` *(uni spec page)*
+- `/universities/chandigarh-university-online/mba/retail` *(uni spec page)*
+- `/universities/chandigarh-university-online/msc/data-science` *(uni spec page)*
+- `/universities/charusat-university-online/bba/human-resource-management` *(uni spec page)*
+- `/universities/charusat-university-online/mba/marketing` *(uni spec page)*
+- `/universities/chhatrapati-shahu-ji-maharaj-university-online/mba/general` *(uni spec page)*
+- `/universities/chhatrapati-shahu-ji-maharaj-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/chhatrapati-shahu-ji-maharaj-university-online/mba/operations` *(uni spec page)*
+- `/universities/chitkara-university-online/bba/data-science-ai` *(uni spec page)*
+- `/universities/chitkara-university-online/bba/digital-sciences-business-management` *(uni spec page)*
+- `/universities/chitkara-university-online/bba/fintech-ai` *(uni spec page)*
+- `/universities/chitkara-university-online/bba/logistics-supply-chain-management` *(uni spec page)*
+- `/universities/chitkara-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/choudhary-charan-singh-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/christ-university-online/bcom/general-management` *(uni spec page)*
+- `/universities/christ-university-online/mca/computer-science-and-it` *(uni spec page)*
+- `/universities/datta-meghe-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/datta-meghe-university-online/mba/it-systems` *(uni spec page)*
+- `/universities/dayalbagh-educational-institute-online/ba/social-science` *(uni spec page)*
+- `/universities/dayalbagh-educational-institute-online/bba/management` *(uni spec page)*
+- `/universities/dayalbagh-educational-institute-online/bcom/commerce` *(uni spec page)*
+- `/universities/dayalbagh-educational-institute-online/ma/theology` *(uni spec page)*
+- `/universities/dayalbagh-educational-institute-online/mcom/international-business` *(uni spec page)*
+- `/universities/dayananda-sagar-university-online/mba/entrepreneurship` *(uni spec page)*
+- `/universities/dayananda-sagar-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/dayananda-sagar-university-online/mba/marketing` *(uni spec page)*
+- `/universities/dayananda-sagar-university-online/mca/big-data-analytics` *(uni spec page)*
+- `/universities/dayananda-sagar-university-online/mca/business-data-analytics` *(uni spec page)*
+- `/universities/dayananda-sagar-university-online/mca/business-intelligence-technology` *(uni spec page)*
+- `/universities/dayananda-sagar-university-online/mca/cloud-computing-technologies` *(uni spec page)*
+- `/universities/dayananda-sagar-university-online/mca/data-analytics-visualization` *(uni spec page)*
+- `/universities/dayananda-sagar-university-online/mca/deep-learning` *(uni spec page)*
+- `/universities/dayananda-sagar-university-online/mca/industrial-iot-automation` *(uni spec page)*
+- `/universities/dayananda-sagar-university-online/mca/mobile-application-development` *(uni spec page)*
+- `/universities/dayananda-sagar-university-online/mca/natural-language-processing` *(uni spec page)*
+- `/universities/dayananda-sagar-university-online/mca/quantum-computing` *(uni spec page)*
+- `/universities/dayananda-sagar-university-online/mca/quantum-machine-learning` *(uni spec page)*
+- `/universities/deen-dayal-upadhyay-gorakhpur-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/deen-dayal-upadhyay-gorakhpur-university-online/mba/operations` *(uni spec page)*
+- `/universities/desh-bhagat-university-online/bcom/general-management` *(uni spec page)*
+- `/universities/devi-ahilya-vishwavidyalaya-online/mba/hr-management` *(uni spec page)*
+- `/universities/devi-ahilya-vishwavidyalaya-online/mba/operations` *(uni spec page)*
+- `/universities/dr-babasaheb-ambedkar-open-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/dr-dy-patil-vidyapeeth-online/mba/digital-marketing` *(uni spec page)*
+- `/universities/dr-dy-patil-vidyapeeth-online/mba/hr-management` *(uni spec page)*
+- `/universities/dr-dy-patil-vidyapeeth-online/mba/international-business` *(uni spec page)*
+- `/universities/dr-dy-patil-vidyapeeth-online/mba/marketing` *(uni spec page)*
+- `/universities/dr-dy-patil-vidyapeeth-online/mba/operations` *(uni spec page)*
+- `/universities/dr-dy-patil-vidyapeeth-online/mba/supply-chain-management` *(uni spec page)*
+- `/universities/dr-mgr-educational-research-institute-online/mba/hr-management` *(uni spec page)*
+- `/universities/dr-mgr-educational-research-institute-online/mba/marketing` *(uni spec page)*
+- `/universities/dr-mgr-educational-research-institute-online/mba/operations` *(uni spec page)*
+- `/universities/dy-patil-university-online/bba/human-resource-management` *(uni spec page)*
+- `/universities/dy-patil-university-online/bca/bca` *(uni spec page)*
+- `/universities/dy-patil-university-online/mba/data-science-abd-business-analytics` *(uni spec page)*
+- `/universities/dy-patil-university-online/mba/entrepreneurship` *(uni spec page)*
+- `/universities/dy-patil-university-online/mba/event-mgmt` *(uni spec page)*
+- `/universities/dy-patil-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/dy-patil-university-online/mba/retail` *(uni spec page)*
+- `/universities/dy-patil-university-online/mba/sales-mktg` *(uni spec page)*
+- `/universities/dy-patil-university-online/mba/supply-chain-management` *(uni spec page)*
+- `/universities/galgotias-university-online/mba/international-business` *(uni spec page)*
+- `/universities/galgotias-university-online/mba/marketing` *(uni spec page)*
+- `/universities/galgotias-university-online/mba/operations` *(uni spec page)*
+- `/universities/galgotias-university-online/mcom/accountancy` *(uni spec page)*
+- `/universities/galgotias-university-online/mcom/finance` *(uni spec page)*
+- `/universities/ganpat-university-online/bba/ib` *(uni spec page)*
+- `/universities/ganpat-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/gla-university-online/mba/banking-financial-services` *(uni spec page)*
+- `/universities/gla-university-online/mba/business-analytics` *(uni spec page)*
+- `/universities/gla-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/gla-university-online/mba/operations` *(uni spec page)*
+- `/universities/gla-university-online/mba/retail` *(uni spec page)*
+- `/universities/gls-university-online/bba/finance` *(uni spec page)*
+- `/universities/gls-university-online/bba/human-resource-management` *(uni spec page)*
+- `/universities/gls-university-online/bba/international-business` *(uni spec page)*
+- `/universities/gls-university-online/bba/marketing` *(uni spec page)*
+- `/universities/gls-university-online/bba/public` *(uni spec page)*
+- `/universities/gls-university-online/bca/artificial-intelligence-machine-learning` *(uni spec page)*
+- `/universities/gls-university-online/bca/web-development` *(uni spec page)*
+- `/universities/gls-university-online/bcom/finance-accounting` *(uni spec page)*
+- `/universities/gls-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/gls-university-online/mca/computer-science-and-it` *(uni spec page)*
+- `/universities/graphic-era-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/graphic-era-university-online/mba/operations` *(uni spec page)*
+- `/universities/guru-ghasidas-vishwavidyalaya-online/mba/hr-management` *(uni spec page)*
+- `/universities/guru-ghasidas-vishwavidyalaya-online/mca/computer-science-and-information-technology` *(uni spec page)*
+- `/universities/guru-jambheshwar-university-online/mba/hr-management` *(uni spec page)*
+- `/universities/guru-jambheshwar-university-online/mba/operations` *(uni spec page)*
+- `/universities/guru-nanak-dev-university-online/mca/general-computer-applications` *(uni spec page)*
+- `/universities/hindustan-institute-technology-online/mba/hospital-management` *(uni spec page)*
+- `/universities/hindustan-institute-technology-online/mba/hr-management` *(uni spec page)*
+- `/universities/hindustan-institute-technology-online/mba/logistics-and-supply-chain-management` *(uni spec page)*
+- `/universities/hindustan-institute-technology-online/mba/marketing` *(uni spec page)*
+- `/universities/hindustan-institute-technology-online/mba/operations` *(uni spec page)*
+- …and 272 more
+
+## Near-orphans (exactly 1 inbound contextual link)
+
+1094 pages. A single link is a single point of failure: if that
+one source page is denoised, pruned or reworded, the target goes orphan.
+
+- `/blog/best-online-bca-colleges-india-2026` *(blog post)* ← only from `/blog`
+- `/blog/gd-topics-for-mba-2026-with-answers` *(blog post)* ← only from `/blog`
+- `/blog/ias-officer-salary-india-2026-pay-scale-perks` *(blog post)* ← only from `/blog`
+- `/blog/is-ddu-gorakhpur-online-fake-or-legit-2026` *(blog post)* ← only from `/blog`
+- `/blog/is-ignou-fake-or-legit-2026` *(blog post)* ← only from `/blog`
+- `/blog/is-integral-university-online-fake-or-legit-2026` *(blog post)* ← only from `/blog`
+- `/blog/is-jamia-hamdard-online-fake-or-legit-2026` *(blog post)* ← only from `/blog`
+- `/blog/is-mba-post-graduation-india-2026` *(blog post)* ← only from `/blog`
+- `/blog/lpu-vs-chandigarh-university-online-mba-2026` *(blog post)* ← only from `/blog`
+- `/blog/mba-course-duration-india-2026` *(blog post)* ← only from `/blog`
+- `/blog/online-bba-fees-india-2026-compared` *(blog post)* ← only from `/blog`
+- `/blog/online-bca-fees-india-2026-compared` *(blog post)* ← only from `/blog`
+- `/blog/online-bcom-fees-india-2026-compared` *(blog post)* ← only from `/blog`
+- `/blog/online-mba-classes-workload-exams-2026` *(blog post)* ← only from `/blog`
+- `/blog/online-mca-amity-vs-lpu-2026` *(blog post)* ← only from `/blog`
+- `/blog/online-mca-fees-india-2026-compared` *(blog post)* ← only from `/blog`
+- `/blog/sppu-online-mba-review` *(blog post)* ← only from `/blog`
+- `/blog/toughest-exams-india-world-2026` *(blog post)* ← only from `/blog`
+- `/programs/mba/healthcare-management` *(programme spec hub)* ← only from `/programs/mba`
+- `/tools/cgpa-calculator/5-2-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/6-2-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/6-25-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/6-3-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/6-32-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/6-5-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/6-87-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/6-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/7-44-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/7-45-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/7-5-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/7-55-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/7-75-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/7-8-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/7-9-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/7-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/8-17-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/8-2-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/8-25-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/8-5-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/8-75-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/8-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/9-4-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/9-5-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/9-8-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/tools/cgpa-calculator/9-cgpa-percentage` *(cgpa value page)* ← only from `/tools/cgpa-calculator`
+- `/universities/ajeenkya-dy-patil-university-online/bba/general` *(uni spec page)* ← only from `/universities/ajeenkya-dy-patil-university-online/bba`
+- `/universities/ajeenkya-dy-patil-university-online/bca/general` *(uni spec page)* ← only from `/universities/ajeenkya-dy-patil-university-online/bca`
+- `/universities/ajeenkya-dy-patil-university-online/mca/general` *(uni spec page)* ← only from `/universities/ajeenkya-dy-patil-university-online/mca`
+- `/universities/aligarh-muslim-university-online/ba/economics` *(uni spec page)* ← only from `/universities/aligarh-muslim-university-online/ba`
+- `/universities/aligarh-muslim-university-online/ba/english` *(uni spec page)* ← only from `/universities/aligarh-muslim-university-online/ba`
+- `/universities/aligarh-muslim-university-online/ba/history` *(uni spec page)* ← only from `/universities/aligarh-muslim-university-online/ba`
+- `/universities/aligarh-muslim-university-online/ba/political-science` *(uni spec page)* ← only from `/universities/aligarh-muslim-university-online/ba`
+- `/universities/aligarh-muslim-university-online/bcom/general-commerce` *(uni spec page)* ← only from `/universities/aligarh-muslim-university-online/bcom`
+- `/universities/aligarh-muslim-university-online/mcom/general-commerce` *(uni spec page)* ← only from `/universities/aligarh-muslim-university-online/mcom`
+- `/universities/amet-university-online/bba/general-management` *(uni spec page)* ← only from `/universities/amet-university-online/bba`
+- `/universities/amet-university-online/bcom/general-management` *(uni spec page)* ← only from `/universities/amet-university-online/bcom`
+- `/universities/amity-university-online/bba/data-analytics` *(uni spec page)* ← only from `/universities/amity-university-online/bba`
+- `/universities/amity-university-online/bba/general-business-administration` *(uni spec page)* ← only from `/universities/amity-university-online/bba`
+- `/universities/amity-university-online/bba/travel-tourism-management` *(uni spec page)* ← only from `/universities/amity-university-online/bba`
+- `/universities/amity-university-online/bca/computer-applications` *(uni spec page)* ← only from `/universities/amity-university-online/bca`
+- `/universities/amity-university-online/bca/computer-applications-financial-technology-ai` *(uni spec page)* ← only from `/universities/amity-university-online/bca`
+- `/universities/amity-university-online/bcom/accounting` *(uni spec page)* ← only from `/universities/amity-university-online/bcom`
+- `/universities/amity-university-online/bcom/commerce` *(uni spec page)* ← only from `/universities/amity-university-online/bcom`
+- `/universities/amity-university-online/bcom/commerce-honours-advanced-accounting-finance` *(uni spec page)* ← only from `/universities/amity-university-online/bcom`
+- `/universities/amity-university-online/mba/healthcare-management` *(uni spec page)* ← only from `/programs/mba/healthcare-management`
+- `/universities/amity-university-online/mca/artificial-intelligence-and-machine-learning` *(uni spec page)* ← only from `/universities/amity-university-online/mca`
+- `/universities/amity-university-online/mca/blockchain-technology` *(uni spec page)* ← only from `/universities/amity-university-online/mca`
+- `/universities/amity-university-online/mca/cyber-security` *(uni spec page)* ← only from `/universities/amity-university-online/mca`
+- `/universities/amity-university-online/mca/financial-technology-and-ai` *(uni spec page)* ← only from `/universities/amity-university-online/mca`
+- `/universities/amity-university-online/mca/general` *(uni spec page)* ← only from `/universities/amity-university-online/mca`
+- `/universities/amity-university-online/mca/software-engineering` *(uni spec page)* ← only from `/universities/amity-university-online/mca`
+- `/universities/amrita-vishwa-vidyapeetham-online/bba/banking-fintech` *(uni spec page)* ← only from `/universities/amrita-vishwa-vidyapeetham-online/bba`
+- `/universities/amrita-vishwa-vidyapeetham-online/bba/data-analytics` *(uni spec page)* ← only from `/universities/amrita-vishwa-vidyapeetham-online/bba`
+- `/universities/amrita-vishwa-vidyapeetham-online/bba/digital-marketing` *(uni spec page)* ← only from `/universities/amrita-vishwa-vidyapeetham-online/bba`
+- `/universities/amrita-vishwa-vidyapeetham-online/bba/international-finance-acca` *(uni spec page)* ← only from `/universities/amrita-vishwa-vidyapeetham-online/bba`
+- `/universities/amrita-vishwa-vidyapeetham-online/bca/artificial-intelligence-and-data-science` *(uni spec page)* ← only from `/universities/amrita-vishwa-vidyapeetham-online/bca`
+- `/universities/amrita-vishwa-vidyapeetham-online/bca/general-computer-applications` *(uni spec page)* ← only from `/universities/amrita-vishwa-vidyapeetham-online/bca`
+- `/universities/amrita-vishwa-vidyapeetham-online/bcom/general-commerce` *(uni spec page)* ← only from `/universities/amrita-vishwa-vidyapeetham-online/bcom`
+- `/universities/amrita-vishwa-vidyapeetham-online/bcom/international-finance-and-accounting` *(uni spec page)* ← only from `/universities/amrita-vishwa-vidyapeetham-online/bcom`
+- `/universities/amrita-vishwa-vidyapeetham-online/mca/artificial-intelligence-and-machine-learning` *(uni spec page)* ← only from `/universities/amrita-vishwa-vidyapeetham-online/mca`
+- `/universities/amrita-vishwa-vidyapeetham-online/mca/cybersecurity` *(uni spec page)* ← only from `/universities/amrita-vishwa-vidyapeetham-online/mca`
+- `/universities/amrita-vishwa-vidyapeetham-online/mca/general` *(uni spec page)* ← only from `/universities/amrita-vishwa-vidyapeetham-online/mca`
+- `/universities/amrita-vishwa-vidyapeetham-online/mcom/general-commerce-and-management` *(uni spec page)* ← only from `/universities/amrita-vishwa-vidyapeetham-online/mcom`
+- `/universities/amrita-vishwa-vidyapeetham-online/mcom/international-finance-and-accounting` *(uni spec page)* ← only from `/universities/amrita-vishwa-vidyapeetham-online/mcom`
+- `/universities/andhra-university-online/ma/sociology` *(uni spec page)* ← only from `/universities/andhra-university-online/ma`
+- `/universities/assam-don-bosco-university-online/bba/artificial-intelligence` *(uni spec page)* ← only from `/universities/assam-don-bosco-university-online/bba`
+- `/universities/assam-don-bosco-university-online/bba/entrepreneurship` *(uni spec page)* ← only from `/universities/assam-don-bosco-university-online/bba`
+- `/universities/assam-don-bosco-university-online/bba/finance` *(uni spec page)* ← only from `/universities/assam-don-bosco-university-online/bba`
+- `/universities/assam-don-bosco-university-online/bba/hr-management` *(uni spec page)* ← only from `/universities/assam-don-bosco-university-online/bba`
+- `/universities/assam-don-bosco-university-online/bba/marketing-management` *(uni spec page)* ← only from `/universities/assam-don-bosco-university-online/bba`
+- `/universities/assam-don-bosco-university-online/mca/artificial-intelligence-machine-learning` *(uni spec page)* ← only from `/universities/assam-don-bosco-university-online/mca`
+- `/universities/assam-don-bosco-university-online/mca/data-science` *(uni spec page)* ← only from `/universities/assam-don-bosco-university-online/mca`
+- `/universities/atlas-skilltech-university-online/bba/general` *(uni spec page)* ← only from `/universities/atlas-skilltech-university-online/bba`
+- `/universities/banasthali-vidyapith-online/bcom/accounting` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/bcom`
+- `/universities/banasthali-vidyapith-online/bcom/banking-insurance` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/bcom`
+- `/universities/banasthali-vidyapith-online/bcom/e-commerce` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/bcom`
+- `/universities/banasthali-vidyapith-online/bcom/finance` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/bcom`
+- `/universities/banasthali-vidyapith-online/bcom/taxation` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/bcom`
+- `/universities/banasthali-vidyapith-online/ma/economics` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/ma`
+- `/universities/banasthali-vidyapith-online/ma/english` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/ma`
+- `/universities/banasthali-vidyapith-online/ma/history` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/ma`
+- `/universities/banasthali-vidyapith-online/ma/political-science` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/ma`
+- `/universities/banasthali-vidyapith-online/ma/psychology` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/ma`
+- `/universities/banasthali-vidyapith-online/ma/public-administration` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/ma`
+- `/universities/banasthali-vidyapith-online/ma/sociology` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/ma`
+- `/universities/banasthali-vidyapith-online/mba/data-science` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/mba`
+- `/universities/banasthali-vidyapith-online/mba/digital-marketing` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/mba`
+- `/universities/banasthali-vidyapith-online/mba/finance` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/mba`
+- `/universities/banasthali-vidyapith-online/mba/international-business` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/mba`
+- `/universities/banasthali-vidyapith-online/mba/marketing` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/mba`
+- `/universities/banasthali-vidyapith-online/mcom/accounting` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/mcom`
+- `/universities/banasthali-vidyapith-online/mcom/business-studies` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/mcom`
+- `/universities/banasthali-vidyapith-online/mcom/e-commerce` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/mcom`
+- `/universities/banasthali-vidyapith-online/mcom/finance` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/mcom`
+- `/universities/banasthali-vidyapith-online/mcom/taxation` *(uni spec page)* ← only from `/universities/banasthali-vidyapith-online/mcom`
+- `/universities/bangalore-university-online/ma/economics` *(uni spec page)* ← only from `/universities/bangalore-university-online/ma`
+- `/universities/bangalore-university-online/ma/english` *(uni spec page)* ← only from `/universities/bangalore-university-online/ma`
+- `/universities/bangalore-university-online/ma/history` *(uni spec page)* ← only from `/universities/bangalore-university-online/ma`
+- `/universities/bangalore-university-online/ma/political-science` *(uni spec page)* ← only from `/universities/bangalore-university-online/ma`
+- `/universities/bangalore-university-online/ma/psychology` *(uni spec page)* ← only from `/universities/bangalore-university-online/ma`
+- `/universities/bangalore-university-online/ma/public-administration` *(uni spec page)* ← only from `/universities/bangalore-university-online/ma`
+- `/universities/bangalore-university-online/ma/sociology` *(uni spec page)* ← only from `/universities/bangalore-university-online/ma`
+- `/universities/bangalore-university-online/mcom/accounting` *(uni spec page)* ← only from `/universities/bangalore-university-online/mcom`
+- `/universities/bangalore-university-online/mcom/business-studies` *(uni spec page)* ← only from `/universities/bangalore-university-online/mcom`
+- `/universities/bangalore-university-online/mcom/e-commerce` *(uni spec page)* ← only from `/universities/bangalore-university-online/mcom`
+- `/universities/bangalore-university-online/mcom/finance` *(uni spec page)* ← only from `/universities/bangalore-university-online/mcom`
+- `/universities/bangalore-university-online/mcom/taxation` *(uni spec page)* ← only from `/universities/bangalore-university-online/mcom`
+- `/universities/bennett-university-online/bba/general` *(uni spec page)* ← only from `/universities/bennett-university-online/bba`
+- `/universities/bharath-university-online/bcom/accounting` *(uni spec page)* ← only from `/universities/bharath-university-online/bcom`
+- `/universities/bharath-university-online/bcom/banking-insurance` *(uni spec page)* ← only from `/universities/bharath-university-online/bcom`
+- `/universities/bharath-university-online/bcom/e-commerce` *(uni spec page)* ← only from `/universities/bharath-university-online/bcom`
+- `/universities/bharath-university-online/bcom/finance` *(uni spec page)* ← only from `/universities/bharath-university-online/bcom`
+- `/universities/bharath-university-online/bcom/taxation` *(uni spec page)* ← only from `/universities/bharath-university-online/bcom`
+- `/universities/bharath-university-online/mcom/accounting` *(uni spec page)* ← only from `/universities/bharath-university-online/mcom`
+- `/universities/bharath-university-online/mcom/business-studies` *(uni spec page)* ← only from `/universities/bharath-university-online/mcom`
+- `/universities/bharath-university-online/mcom/e-commerce` *(uni spec page)* ← only from `/universities/bharath-university-online/mcom`
+- `/universities/bharath-university-online/mcom/finance` *(uni spec page)* ← only from `/universities/bharath-university-online/mcom`
+- `/universities/bharath-university-online/mcom/taxation` *(uni spec page)* ← only from `/universities/bharath-university-online/mcom`
+- `/universities/bharathidasan-university-online/ba/english` *(uni spec page)* ← only from `/universities/bharathidasan-university-online/ba`
+- `/universities/bharathidasan-university-online/bba/general-multi-disciplinary` *(uni spec page)* ← only from `/universities/bharathidasan-university-online/bba`
+- `/universities/bharati-vidyapeeth-university-online/bba/agribusiness` *(uni spec page)* ← only from `/universities/bharati-vidyapeeth-university-online/bba`
+- `/universities/bharati-vidyapeeth-university-online/bba/business-analytics` *(uni spec page)* ← only from `/universities/bharati-vidyapeeth-university-online/bba`
+- `/universities/bharati-vidyapeeth-university-online/bba/event-mgmt` *(uni spec page)* ← only from `/universities/bharati-vidyapeeth-university-online/bba`
+- `/universities/bharati-vidyapeeth-university-online/bba/financial-management` *(uni spec page)* ← only from `/universities/bharati-vidyapeeth-university-online/bba`
+- `/universities/bharati-vidyapeeth-university-online/bba/hospitality` *(uni spec page)* ← only from `/universities/bharati-vidyapeeth-university-online/bba`
+- `/universities/bharati-vidyapeeth-university-online/bba/international-business` *(uni spec page)* ← only from `/universities/bharati-vidyapeeth-university-online/bba`
+- `/universities/bharati-vidyapeeth-university-online/bba/marketing` *(uni spec page)* ← only from `/universities/bharati-vidyapeeth-university-online/bba`
+- `/universities/bharati-vidyapeeth-university-online/bba/production-operations` *(uni spec page)* ← only from `/universities/bharati-vidyapeeth-university-online/bba`
+- `/universities/bharati-vidyapeeth-university-online/bba/project-mgmt` *(uni spec page)* ← only from `/universities/bharati-vidyapeeth-university-online/bba`
+- `/universities/bharati-vidyapeeth-university-online/bba/retail` *(uni spec page)* ← only from `/universities/bharati-vidyapeeth-university-online/bba`
+- …and 944 more

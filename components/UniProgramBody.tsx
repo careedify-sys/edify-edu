@@ -4,7 +4,8 @@ import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
 
 import type { University, ProgramDetail } from '@/lib/data'
-import { getUniversitiesByProgram, getPeerUniversities, formatSpecList } from '@/lib/data'
+import { getUniversitiesByProgram, getPeerUniversities, formatSpecList, specSlug } from '@/lib/data'
+import { resolveSpec, getAllSpecsForProgram } from '@/lib/data/programs'
 import { getShortUniversityName } from '@/lib/format'
 import { COUPONS } from '@/lib/coupons'
 import type { Program } from '@/lib/data'
@@ -93,6 +94,33 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
   }
   const feeProminent = program === 'MBA' && u.id in FEE_PROMINENT_MBA_UNIS
   const specs      = pd.specs || []
+  // Links for the specialisation grid. Two defects fixed here, both measured in
+  // audits/internal-link-graph.md against a crawl of the live site:
+  //
+  //   1. The grid used to emit specSlug(spec) straight from data.ts. When the
+  //      resolver canonicalises that to a different slug (human-resource-management
+  //      -> hr-management), the link pointed at a 308 and the canonical page was
+  //      left with zero inbound internal links. 189 links, 186 orphaned pages.
+  //   2. Specs that exist only in programs-manifest.json were never listed at
+  //      all, because the grid renders pd.specs. Those pages are in the sitemap
+  //      and render fine, so Googlebot reached them by sitemap alone. 143 pages.
+  //
+  // resolveSpec is the same oracle middleware section 2f uses, so a slug it
+  // accepts is a slug that serves a page. Deduped by canonical slug so an alias
+  // and its target cannot both appear.
+  const specLinks = (() => {
+    const out: { slug: string; name: string }[] = []
+    const seen = new Set<string>()
+    const add = (raw: string) => {
+      const r = resolveSpec(u.id, program, programSlug, raw)
+      if (!r || seen.has(r.slug)) return
+      seen.add(r.slug)
+      out.push(r)
+    }
+    for (const s of specs) add(specSlug(s))
+    for (const row of getAllSpecsForProgram(u.id, programSlug)) add(row.spec_slug)
+    return out
+  })()
   const peers      = getPeerUniversities(program, u.id, 3)
   const coupon     = COUPONS.find(c => c.universityId === u.id && (c.program === program || c.program === 'All')) || null
 
@@ -266,10 +294,10 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
               )}
 
               {/* §8 Specializations */}
-              {specs.length > 0 && (
+              {specLinks.length > 0 && (
                 <div id="specialisations">
                 <SpecializationGrid
-                  specs={specs}
+                  specs={specLinks}
                   universityId={u.id}
                   programSlug={programSlug}
                   program={program}

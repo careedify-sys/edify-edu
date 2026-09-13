@@ -143,3 +143,50 @@ export function getUniversityOverviewLink(u: University): string | null {
   const href = `/universities/${u.id}`
   return isLinkable(href) ? href : null
 }
+
+// ── Sibling specialisations ─────────────────────────────────────────────────
+// A crawl of the live site on 2026-09-13 found 1,919 university specialisation
+// pages averaging 1.1 inbound contextual links: 404 had none and 953 had
+// exactly one, always their programme hub. That is the same starvation the
+// SiblingProgrammes block fixed for hubs in August, one level down the tree,
+// and it is the largest remaining block of thin-linked pages on the site.
+//
+// Each spec page now links to its siblings under the same (university,
+// programme). The offset is seeded by the current slug rather than taking the
+// first N, so inbound links spread across the whole group instead of piling
+// onto whichever specialisations sort first. Same reasoning as
+// getPeerUniversities in lib/data.ts.
+//
+// Gated on isLinkable(), so a sibling that is noindex or does not resolve is
+// never linked. Measurement and method: audits/internal-link-graph.md
+
+function rotationOffset(seed: string, mod: number): number {
+  let h = 0
+  for (let i = 0; i < seed.length; i++) h = (Math.imul(h, 31) + seed.charCodeAt(i)) >>> 0
+  return mod > 0 ? h % mod : 0
+}
+
+export interface SpecLink { href: string; slug: string; name: string }
+
+/**
+ * Sibling specialisation pages for one (university, programme), excluding the
+ * one being viewed. `candidates` must already be resolver-canonical slugs, so
+ * pass the same list the programme hub renders.
+ */
+export function getSiblingSpecialisations(
+  uniId: string,
+  programSlug: string,
+  currentSlug: string,
+  candidates: { slug: string; name: string }[],
+  count = 8,
+): SpecLink[] {
+  const pool = candidates
+    .filter(c => c.slug !== currentSlug)
+    .map(c => ({ href: `/universities/${uniId}/${programSlug}/${c.slug}`, slug: c.slug, name: c.name }))
+    .filter(c => isLinkable(c.href))
+  if (pool.length <= count) return pool
+  const start = rotationOffset(currentSlug, pool.length)
+  const out: SpecLink[] = []
+  for (let i = 0; i < count; i++) out.push(pool[(start + i) % pool.length])
+  return out
+}
