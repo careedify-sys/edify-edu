@@ -223,6 +223,37 @@ const nextConfig = {
       { source: '/universities/uttaranchal-university-online/bca/ai-foundations',                              destination: '/universities/uttaranchal-university-online/bca/general', permanent: true },
 
 
+      // ── /programs/mba/specializations/* consolidation (2026-09-13) ──────────
+      // Task 5 on 2026-08-19 decided that /programs/mba/{spec} is the canonical
+      // specialisation landing and noindexed this route. The decision was never
+      // finished: the route kept a SELF-referencing canonical, stayed live, and
+      // held 17 internal links from blogs and guides. GSC for the 28 days to
+      // 2026-09-10 shows the cost, 2,621 impressions and 3 clicks spread across
+      // seven dead-end URLs, four of them competing head-on with the canonical
+      // route for the same query:
+      //
+      //   /programs/mba/business-analytics        951 impr, pos 69.6
+      //   /programs/mba/specializations/...       725 impr, pos 69.5
+      //
+      // healthcare-management is the case that matters. It is the only spec on
+      // PROGRAMS_INDEX_ALLOWLIST, so it is the one page here allowed to rank,
+      // and it fell from pos 9.0 to 24.8 while its noindexed twin collected 477
+      // impressions. Index permission and link equity were sitting on different
+      // URLs. These redirects put them on the same one.
+      //
+      // logistics-management points at /programs/mba because its counterpart
+      // redirects there anyway; going direct avoids a two-hop chain.
+      // Diagnosis: audits/gsc-diagnosis-2026-09-13.md
+      { source: '/programs/mba/specializations/hr-management',           destination: '/programs/mba/hr-management',           permanent: true },
+      { source: '/programs/mba/specializations/supply-chain-management', destination: '/programs/mba/supply-chain-management', permanent: true },
+      { source: '/programs/mba/specializations/business-analytics',      destination: '/programs/mba/business-analytics',      permanent: true },
+      { source: '/programs/mba/specializations/healthcare-management',   destination: '/programs/mba/healthcare-management',   permanent: true },
+      { source: '/programs/mba/specializations/fintech',                 destination: '/programs/mba/fintech',                 permanent: true },
+      { source: '/programs/mba/specializations/hospitality-management',  destination: '/programs/mba/hospitality-management',  permanent: true },
+      { source: '/programs/mba/specializations/logistics-management',    destination: '/programs/mba',                         permanent: true },
+      { source: '/programs/mba/specializations',                         destination: '/programs/mba',                         permanent: true },
+      { source: '/programs/mba/specializations/:spec*',                  destination: '/programs/mba',                         permanent: true },
+
       // Dot-slug normalisation
       { source: '/programs/m.com',             destination: '/programs/mcom',  permanent: true },
       { source: '/programs/m.com/:path*',      destination: '/programs/mcom',  permanent: true },

@@ -1,3 +1,22 @@
+// SUPERSEDED 2026-09-13. This route is unreachable.
+//
+// next.config.js now 301s every /programs/mba/specializations/* path to
+// /programs/mba/{spec}, which redirects() evaluates before Next routes the
+// request, so nothing below renders in production.
+//
+// Task 5 (2026-08-19) already declared /programs/mba/{spec} the canonical
+// specialisation landing and noindexed this route, but left it live with a
+// self-referencing canonical and 17 inbound internal links. It went on
+// collecting impressions and competing with the canonical route on four
+// specialisations. The redirects finish that decision; the internal links were
+// repointed in the same commit.
+//
+// The per-spec editorial content below (SPECS) is deliberately preserved rather
+// than deleted: it is hand-written and is the obvious source if
+// /programs/mba/{spec} is ever built out to earn a place on
+// PROGRAMS_INDEX_ALLOWLIST. Remove the redirects first if you revive it.
+//
+// Diagnosis: audits/gsc-diagnosis-2026-09-13.md
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'

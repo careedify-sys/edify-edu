@@ -3679,7 +3679,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>If all that checks out and you need the degree for career growth, Amity's online MBA in HR is a reasonable choice. Not the best, not the worst, but solid enough to get you where you need to go.</p>
 
-<p><a href="/programs/mba/specializations/hr-management" class="ilink">Compare MAHE, NMIMS and Amity HR fees</a>, full university table with fees and eligibility on edifyedu.in.</p>
+<p><a href="/programs/mba/hr-management" class="ilink">Compare MAHE, NMIMS and Amity HR fees</a>, full university table with fees and eligibility on edifyedu.in.</p>
     `,
   },
   {
@@ -6081,7 +6081,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>HR is always in demand and never glamorous. Starting salary is ₹4L-₹7L. Senior HR roles (CHRO level) pay ₹30L+, but reaching that level takes 12-15 years. Choose this if you're genuinely passionate about people and organizational culture.</p>
 
 <h3>MBA Operations - The Underrated Choice</h3>
-<p>Supply chain, logistics, and manufacturing management. E-commerce growth has created massive demand for operations MBAs. Amazon, Flipkart, Delhivery, and Maersk are major employers. Starting salaries range from ₹6L-₹9L, and senior ops roles pay ₹18L-₹30L. Graduates targeting hotels, resorts and events companies apply for roles after completing an <a href="/programs/mba/specializations/hospitality-management" class="ilink">online MBA in Hospitality Management</a>.</p>
+<p>Supply chain, logistics, and manufacturing management. E-commerce growth has created massive demand for operations MBAs. Amazon, Flipkart, Delhivery, and Maersk are major employers. Starting salaries range from ₹6L-₹9L, and senior ops roles pay ₹18L-₹30L. Graduates targeting hotels, resorts and events companies apply for roles after completing an <a href="/programs/mba/hospitality-management" class="ilink">online MBA in Hospitality Management</a>.</p>
 
 <h2>MBA vs Other Postgrad (M.Tech, MCA, M.Com) - Salary Comparison</h2>
 
@@ -8484,7 +8484,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <ol>
   <li><strong>MBA AI Product Management:</strong> Rs 18 to 35 LPA fresher at top SaaS plus product companies. Strong demand at Razorpay, Freshworks, Adobe, Microsoft.</li>
-  <li><strong>MBA FinTech:</strong> Rs 12 to 22 LPA fresher at fintech unicorns. Paytm, PhonePe, CRED, Zerodha actively hiring. Professionals targeting banking technology and payments startups often choose an <a href="/programs/mba/specializations/fintech" class="ilink">online MBA in FinTech</a>, which covers blockchain, digital lending and regulatory compliance. Compare top <a href="/blog/online-mba-fintech-india-2026" class="ilink">MBA in Fintech programs</a> with fees and curriculum details.</li>
+  <li><strong>MBA FinTech:</strong> Rs 12 to 22 LPA fresher at fintech unicorns. Paytm, PhonePe, CRED, Zerodha actively hiring. Professionals targeting banking technology and payments startups often choose an <a href="/programs/mba/fintech" class="ilink">online MBA in FinTech</a>, which covers blockchain, digital lending and regulatory compliance. Compare top <a href="/blog/online-mba-fintech-india-2026" class="ilink">MBA in Fintech programs</a> with fees and curriculum details.</li>
   <li><strong>MBA Sustainability and ESG:</strong> Rs 10 to 18 LPA fresher. Growing demand at compliance-heavy MNCs plus listed companies.</li>
   <li><strong>MBA Cyber Security Management:</strong> Rs 12 to 22 LPA fresher. CISO track at BFSI plus tech.</li>
   <li><strong>MBA Healthcare and Hospital Management:</strong> Rs 10 to 18 LPA fresher. Strong at Apollo, Fortis, Max Healthcare, Manipal Hospitals. Read the full guide: <a href="/blog/online-mba-hospital-healthcare-management-india-2026" class="ilink">Online MBA Healthcare Management India 2026</a>.</li>
@@ -8538,7 +8538,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>If you plan to launch your own venture after the MBA, compare <a href="/blog/online-mba-entrepreneurship-india-2026" class="ilink">MBA Entrepreneurship programs</a> that include startup incubation and venture funding modules. For the events and MICE industry, see our review of <a href="/blog/online-mba-event-management-india-2026" class="ilink">MBA Event Management</a> programmes with placement data.</p>
 
-<p><a href="/programs/mba/specializations/business-analytics" class="ilink">Online MBA Business Analytics specialisation guide</a>, full university table with fees and eligibility on edifyedu.in.</p>
+<p><a href="/programs/mba/business-analytics" class="ilink">Online MBA Business Analytics specialisation guide</a>, full university table with fees and eligibility on edifyedu.in.</p>
 
 <div class="internal-links">
   <div class="il-grid">
@@ -12664,7 +12664,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>MBA Finance in 2026 remains India's highest-ceiling specialisation. Career trajectory reaches CFO at Rs 60 LPA to 2 Cr by year 15 with deliberate skill building. The path depends on programme tier plus certification stacking plus target sector. Online MBA Finance is the right path for working professionals at Rs 6 to 12 LPA seeking upgrade. Tier-1 IIM plus ISB is the right path for fresh graduates targeting investment banking plus consulting. Match the programme to your career stage plus 10-year goal, then commit to active certification stacking plus deliberate networking. For salary benchmarks across all finance roles and experience levels, see the <a href="/guides/salary-after-mba-india" class="ilink">MBA Finance salary 2026</a> guide.</p>
 
-<p><a href="/programs/mba/specializations/fintech" class="ilink">Compare online MBA FinTech programmes and fees</a>, full university table with fees and eligibility on edifyedu.in.</p>
+<p><a href="/programs/mba/fintech" class="ilink">Compare online MBA FinTech programmes and fees</a>, full university table with fees and eligibility on edifyedu.in.</p>
 
 <div class="internal-links">
 <strong>Related Guides</strong>
@@ -12910,7 +12910,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>MBA HR is one of the most strategically valuable specialisations in 2026 for those who enjoy people-centric work and want long-term leadership potential. The first 3 to 5 years are about building operational fluency. From year 6 onwards, HR Business Partner plus People Analytics roles accelerate CTC sharply. Pick the right online MBA HR programme tier for your experience level and build a deliberate certification stack from day 1. For salary benchmarks at each stage of the HR career ladder, see the <a href="/guides/salary-after-mba-india" class="ilink">MBA HR salary data</a> guide.</p>
 
-<p><a href="/programs/mba/specializations/hr-management" class="ilink">Compare online MBA HR programmes by fees</a>, full university table with fees and eligibility on edifyedu.in.</p>
+<p><a href="/programs/mba/hr-management" class="ilink">Compare online MBA HR programmes by fees</a>, full university table with fees and eligibility on edifyedu.in.</p>
 
 <div class="internal-links">
 <strong>Related Guides</strong>
@@ -13876,7 +13876,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>The MBA Data Science path is one of the cleanest specialisation routes in 2026. Pick the right programme tier for your work experience, stack certifications during, and target one industry vertical for the first three years post-MBA. Do this and you will hit Rs 25 LPA-plus by year 3.</p>
 
-<p><a href="/programs/mba/specializations/business-analytics" class="ilink">Compare online MBA Business Analytics programmes</a>, full university table with fees and eligibility on edifyedu.in.</p>
+<p><a href="/programs/mba/business-analytics" class="ilink">Compare online MBA Business Analytics programmes</a>, full university table with fees and eligibility on edifyedu.in.</p>
 
 <h2>MBA Data Science Application Timeline July 2026 Intake</h2>
 
@@ -16139,7 +16139,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>The MBA is two years. Treat it as a structured runway, not an end point. Here is the four-step playbook that actually moves you from current role to operations manager.</p>
 
-<p><strong>1. Pick your track before semester two.</strong> By the end of your first semester, you should know whether you are aiming at supply chain, plant, e-commerce or BFSI ops. Operations managers moving into transport and 3PL roles often strengthen their profile with an <a href="/programs/mba/specializations/logistics-management" class="ilink">online MBA in Logistics Management</a>. The electives you pick from semester three onwards depend on that decision.</p>
+<p><strong>1. Pick your track before semester two.</strong> By the end of your first semester, you should know whether you are aiming at supply chain, plant, e-commerce or BFSI ops. Operations managers moving into transport and 3PL roles often strengthen their profile with an <a href="/programs/mba" class="ilink">online MBA in Logistics Management</a>. The electives you pick from semester three onwards depend on that decision.</p>
 
 <p><strong>2. Stack one external certification alongside the MBA.</strong> Lean Six Sigma Green Belt is the highest-ROI bolt-on for plant and supply chain (Rs 8,000 to 15,000, finishable in 6 weeks). For e-commerce, a Google Data Analytics or Microsoft Power BI certificate signals you can work with the operational data they actually run on.</p>
 
@@ -16175,7 +16175,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>MBA Operations in 2026 leverages India's Make in India plus PLI scheme plus quick commerce expansion. Year 1 CTC Rs 6-12 LPA at top online MBAs. Year 5 Rs 14-22 LPA at functional manager track. Best fit working professionals in auto, FMCG, e-commerce, pharma, logistics, plus quick commerce sectors. Pair Operations MBA with Lean Six Sigma plus PMP plus AWS Cloud certifications for compounded career trajectory. The sector growth plus credential plus skill stacking together deliver measurable career outcomes.</p>
 
-<p><a href="/programs/mba/specializations/supply-chain-management" class="ilink">Compare online MBA SCM universities</a>, full university table with fees and eligibility on edifyedu.in.</p>
+<p><a href="/programs/mba/supply-chain-management" class="ilink">Compare online MBA SCM universities</a>, full university table with fees and eligibility on edifyedu.in.</p>
 
 <div class="internal-links">
 <strong>Explore Operations Management</strong>
@@ -37798,9 +37798,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p class="disclaimer"><em>Disclaimer: All fees, scholarships, and specialisation availability are indicative as of the date of this article and subject to revision by the universities each academic year. EdifyEdu does not earn referral commission from any university listed. Always verify current programme details on the official university portal and on UGC-DEB before payment.</em></p>
 
-<p><a href="/programs/mba/specializations/healthcare-management" class="ilink">Compare online MBA Healthcare programmes by fees</a>, full university table with fees and eligibility on edifyedu.in.</p>
+<p><a href="/programs/mba/healthcare-management" class="ilink">Compare online MBA Healthcare programmes by fees</a>, full university table with fees and eligibility on edifyedu.in.</p>
 
-<p><a href="/programs/mba/specializations/hospitality-management" class="ilink">See MBA Hospitality and Healthcare programmes</a>, full university table with fees and eligibility on edifyedu.in.</p><div class="cta-box">
+<p><a href="/programs/mba/hospitality-management" class="ilink">See MBA Hospitality and Healthcare programmes</a>, full university table with fees and eligibility on edifyedu.in.</p><div class="cta-box">
 <h3>Get a free counsellor call before you pay anyone</h3>
 <p>Online MBA fees, scholarships, and specialisation rules change every term. EdifyEdu does not earn referral commission from any university. Our counsellors compare programmes side by side and tell you which this programme programme genuinely fits your budget, location, and career goals.</p>
 <p>No sales pitch. Get honest advice on fees, placements, and which program actually fits your career goal. We earn zero commission from any university.</p>
@@ -39482,7 +39482,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>The honest takeaway: online MBA fintech delivers genuine senior career outcomes when combined with prior 2-3 years BFSI, payments, or product management experience and active certification stacking. The specialisation premium is structurally justified given fintech sector growth tailwind through 2026-2030.</p>
 
-<p><a href="/programs/mba/specializations/fintech" class="ilink">Online MBA FinTech specialisation hub with university table</a>, full university table with fees and eligibility on edifyedu.in.</p>
+<p><a href="/programs/mba/fintech" class="ilink">Online MBA FinTech specialisation hub with university table</a>, full university table with fees and eligibility on edifyedu.in.</p>
 
 <div class="cta-box">
 <h3>Talk to a real counsellor</h3>
@@ -39679,9 +39679,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>The honest takeaway: online MBA hospitality delivers genuine senior career outcomes when combined with prior 2-3 years hospitality or hotel operations experience and active certification stacking. The specialisation premium is justified for working professionals already in hospitality roles; freshers without hospitality background face structurally higher barriers. If you are considering an adjacent niche, our guide to <a href="/blog/mba-pharmaceutical-management-online-india-2026" class="ilink">MBA in Pharmaceutical Management</a> covers a sector with similar niche hiring dynamics.</p>
 
-<p><a href="/programs/mba/specializations/healthcare-management" class="ilink">See MBA Healthcare and Hospitality programmes</a>, full university table with fees and eligibility on edifyedu.in.</p>
+<p><a href="/programs/mba/healthcare-management" class="ilink">See MBA Healthcare and Hospitality programmes</a>, full university table with fees and eligibility on edifyedu.in.</p>
 
-<p><a href="/programs/mba/specializations/hospitality-management" class="ilink">Online MBA Hospitality Management hub with university table</a>, full university table with fees and eligibility on edifyedu.in.</p>
+<p><a href="/programs/mba/hospitality-management" class="ilink">Online MBA Hospitality Management hub with university table</a>, full university table with fees and eligibility on edifyedu.in.</p>
 
 <div class="cta-box">
 <h3>Talk to a real counsellor</h3>
@@ -39869,9 +39869,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p><strong>Premium senior tier (10+ years plus MBA plus advanced certifications)</strong>: ₹30-50 LPA at Chief Supply Chain Officer (CSCO), VP Logistics, Logistics Director at Fortune 500 India operations. Premium tier requires APICS CSCP plus PMP plus active leadership track record. Limited senior tier headcount; competitive landscape.</p>
 
-<p><a href="/programs/mba/specializations/supply-chain-management" class="ilink">MBA Supply Chain Management hub</a>, full university table with fees and eligibility on edifyedu.in.</p>
+<p><a href="/programs/mba/supply-chain-management" class="ilink">MBA Supply Chain Management hub</a>, full university table with fees and eligibility on edifyedu.in.</p>
 
-<p><a href="/programs/mba/specializations/logistics-management" class="ilink">Online MBA Logistics Management hub with university table</a>, full university table with fees and eligibility on edifyedu.in.</p>
+<p><a href="/programs/mba" class="ilink">Online MBA Logistics Management hub with university table</a>, full university table with fees and eligibility on edifyedu.in.</p>
 
 <div class="cta-box">
 <h3>Talk to a real counsellor</h3>

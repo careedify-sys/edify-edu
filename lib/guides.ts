@@ -371,7 +371,7 @@ export const GUIDES: Guide[] = [
 </tbody>
 </table>
 </div>
-<p>Analytics and data science commands a consistent salary premium across all university tiers. Candidates who combine an <a href="/programs/mba/specializations/business-analytics" class="ilink">MBA in Business Analytics</a> with SQL, Python, or Power BI skills report notably higher starting offers than non-technical MBA candidates.</p>
+<p>Analytics and data science commands a consistent salary premium across all university tiers. Candidates who combine an <a href="/programs/mba/business-analytics" class="ilink">MBA in Business Analytics</a> with SQL, Python, or Power BI skills report notably higher starting offers than non-technical MBA candidates.</p>
 
 <h2>Salary by University Tier</h2>
 <p>University tier affects salary in two ways: the employer brand signal at hiring time, and the strength of the alumni network for referrals later. The effect is strongest in the first 2 years and fades over time.</p>

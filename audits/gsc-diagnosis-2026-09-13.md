@@ -1,0 +1,173 @@
+# GSC diagnosis — 28d to 2026-09-10 vs 28d to 2026-08-26
+
+Source: two Search Console "Performance on Search" exports (Web, last 28 days).
+
+**Caveat on the comparison.** The two windows overlap by ~13 days (14–26 Aug is in
+both). Deltas are therefore *conservative* — real movement is larger than the
+numbers below. Direction and rank-order are reliable; magnitude is not.
+
+---
+
+## 0. Headline: the site is declining, and the calculator hides it
+
+| metric | Aug window | Sep window | change |
+|---|---:|---:|---:|
+| **All traffic** — clicks | 3,739 | 3,957 | **+5.8%** |
+| **All traffic** — impressions | 938,246 | 964,446 | +2.8% |
+| **Excl. calculator** — clicks | 2,373 | 2,092 | **−11.8%** |
+| **Excl. calculator** — impressions | 431,073 | 361,717 | **−16.1%** |
+| **Excl. calculator** — avg position | 10.64 | 11.94 | **−1.30 places** |
+
+Reported as-is the site looks up 5.8%. Filter out `cgpa|gpa|percentage` as
+`audits/seo-internal-links-session-2026-08-23.md` §1 instructs, and the real site
+lost **12% of clicks and 16% of impressions**, and slipped 1.3 positions.
+
+Anyone reading the unfiltered dashboard will conclude the opposite of the truth.
+
+---
+
+## Issue 1 — Fee queries: ~9,000 impressions, 3 clicks
+
+The single largest missed opportunity. Every one of these sits at position 8–10,
+which should convert at 1–2%, and converts at ~0.04%.
+
+| query | impressions | clicks | position |
+|---|---:|---:|---:|
+| bits pilani mba fees | 2,607 | 1 | 9.4 |
+| galgotias university mba fees | 2,559 | 1 | 9.7 |
+| jain university mba fees | 1,071 | 1 | 8.5 |
+| uttaranchal university mba fees | 642 | 0 | 10.0 |
+| jamia hamdard mba fees | 572 | 0 | 9.7 |
+| galgotia mba fees / mba fees in galgotias / galgotia university mba fees | 1,308 | 0 | 8.2–9.5 |
+
+### Cause 1a: the blog ranks, the commercial hub is buried
+
+| university | page that ranks | position | the hub | hub position |
+|---|---|---:|---|---:|
+| BITS Pilani | `/blog/bits-pilani-online-mba-review-2026` | **7.8** | `/universities/bits-pilani-work-integrated-online/mba` | **25.2** |
+| Jamia Hamdard | `/blog/jamia-hamdard-mba-2026` | **8.0** | `/universities/jamia-hamdard-online/mba` | **38.2** |
+| Jain | — | — | `/universities/jain-university-online/mba` | **53.0** |
+| Uttaranchal | — | — | `/universities/uttaranchal-university-online/mba` | **31.3** |
+
+This is the blog-vs-hub cannibalisation identified in the August audit §5c. It
+was only partly addressed (the `UNIVERSITY_PROGRAM_LINKS` gap). The ranking
+problem itself is untouched, and the hub is the page with the fee table, the EMI
+block and the lead form.
+
+### Cause 1b: the two pages carry near-identical titles AND contradictory data
+
+```
+blog : BITS Pilani Online MBA (WILP) Fees 2026: ₹2.97L, NIRF #16 Review
+hub  : BITS Pilani WILP Online MBA Fees 2026: ₹2.98L | edifyedu.in
+```
+
+Two index,follow pages, the same query, the same shape of title. Google must
+pick one, and it picks the blog.
+
+Worse, they disagree on fact: **₹2.97L vs ₹2.98L**, and **NIRF #16 Overall vs
+NIRF #7 with no category at all**. The missing category violates the standing
+rule that a NIRF rank must always state its category. Two pages on an
+independence-positioned site quoting different fees for the same programme is a
+trust problem before it is an SEO problem.
+
+### Cause 1c: the SERP is owned by aggregators
+
+Live check on "galgotias university online MBA fees 2026" returned eight
+results: seven are commercial aggregators (four of them on the never-link list),
+EdifyEdu sixth. Their titles all promise a full attribute set — "Fees,
+Eligibility, Admission & Review", "Fees, Placement & Ranking", "Fees & ROI:
+Semester-Wise Fee Structure". One runs a dedicated fee-structure URL per
+university.
+
+**Gap:** they have a page built for the fee query. We have a review that
+mentions fees. Recorded as gap analysis only — never linked, never cited.
+
+---
+
+## Issue 2 — `/programs/*`: 13,533 impressions, 25 clicks, all noindexed
+
+0.18% CTR across 32 pages, ranking at positions 40–75.
+
+| page | impressions | clicks | position | robots |
+|---|---:|---:|---:|---|
+| `/programs/mba/finance` | 1,650 | 0 | **73.0** | noindex |
+| `/programs/mba/human-resource-management` | 1,211 | 1 | 40.1 | noindex |
+| `/programs/mba/business-analytics` | 951 | 0 | 69.6 | noindex |
+| `/programs/mba/operations-management` | 847 | 1 | 59.7 | noindex |
+| `/programs/mba/specializations/business-analytics` | 725 | 0 | 69.5 | noindex |
+| `/programs/mba/marketing` | 687 | 0 | 55.4 | noindex |
+
+Every one is `noindex, follow` with a **self-referencing canonical** — a dead
+end that accumulates decaying impressions and passes nothing on.
+
+**And there are two competing route families for the same intent:**
+
+| | impressions | position | | impressions | position |
+|---|---:|---:|---|---:|---:|
+| `/programs/mba/business-analytics` | 951 | 69.6 | `/programs/mba/specializations/business-analytics` | 725 | 69.5 |
+| `/programs/mba/supply-chain-management` | 114 | 75.5 | `/programs/mba/specializations/supply-chain-management` | 568 | 70.4 |
+| `/programs/mba/healthcare-management` | 147 | 24.8 | `/programs/mba/specializations/healthcare-management` | 477 | 57.6 |
+| `/programs/mba/fintech` | 59 | 45.6 | `/programs/mba/specializations/fintech` | 182 | 58.4 |
+
+`app/programs/mba/specializations/[spec]/page.tsx` and
+`app/programs/[...slug]/page.tsx` both serve the same topic at different URLs.
+Four confirmed pairs are live in GSC, splitting signal between two noindexed
+dead ends.
+
+`/programs/mba/specializations/healthcare-management` fell **17.7 places** in two
+weeks, the worst single decline on the site.
+
+---
+
+## Issue 3 — IIM cluster declining, and the answer-intent queries convert nothing
+
+`/blog/iim-ranking-india-2026-all-iims-list` is the site's biggest non-calculator
+page and is shrinking: **198 → 154 clicks (−44)**, 22,223 → 18,391 impressions,
+while its *position improved* 7.8 → 7.5.
+
+Position up, clicks down means the SERP changed around us, not that we fell.
+
+| query | impressions | clicks | position |
+|---|---:|---:|---:|
+| total iim in india | 660 | 0 | 9.3 |
+| total iims in india | 435 | 0 | 8.9 |
+| how many iims in india | 341 | 0 | 7.8 |
+
+1,436 impressions, zero clicks, all at position 8–9. These are count questions
+Google answers in the SERP. Ranking 8th for a question already answered above the
+fold earns nothing.
+
+---
+
+## Issue 4 — Sharp positional drops on commercial pages
+
+| page | pos Aug | pos Sep | Δ |
+|---|---:|---:|---:|
+| `/coupons` | 12.4 | **19.1** | +6.6 |
+| `/` (homepage) | 14.5 | **19.2** | +4.7 |
+| `/universities/jain-university-online/mca` | 17.8 | 30.7 | +12.9 |
+| `/universities/symbiosis-university-online/mba` | 18.7 | 29.8 | +11.1 |
+| `/universities/savitribai-phule-pune-university-online/bba` | 7.9 | 16.3 | +8.4 |
+
+`/coupons` lost 14 of 24 clicks. The homepage at position 19 is weak for a brand
+whose name query (`edifyedu`) sits at 1.0.
+
+---
+
+## Issue 5 — Not a defect: pages "disappearing"
+
+25 pages with ≥100 impressions vanished between exports. **This is mostly a
+reporting artifact** — both exports cap at exactly 1,000 pages, so anything that
+slips below the cut looks deleted. The live sweep on 2026-09-13 confirmed all
+2,907 sitemap URLs return 200. Treat as decline, not breakage.
+
+---
+
+## What is NOT the problem
+
+- **Not indexing or crawling.** Every sitemap URL returns 200, no redirect
+  chains, sitemap is canonical-clean.
+- **Not internal links.** Fixed the same day: pages with 0–1 inbound contextual
+  link went 1,516 → 327. Too recent to have affected these numbers either way.
+- **Not the recent data/redirect work.** Those shipped 2026-09-13, after the
+  window closes on 09-10.

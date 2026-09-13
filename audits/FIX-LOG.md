@@ -9,6 +9,42 @@ the fix by accident.
 
 ---
 
+## 2026-09-13 · `/programs/mba/specializations/*` consolidation
+
+**What.** 301'd the whole deprecated route to `/programs/mba/{spec}`, repointed
+17 internal links, marked the route file superseded. No figure or ranking changed.
+
+**Why.** Two GSC exports (28d to 08-26 vs 28d to 09-10) showed the real site
+down **11.8% on clicks and 16.1% on impressions** once the calculator cluster is
+filtered out, against an unfiltered reading of +5.8%. Inside that, `/programs/*`
+carried **13,533 impressions for 25 clicks**, every page noindex with a
+self-referencing canonical, sitting at positions 40-75.
+
+Task 5 (2026-08-19) had already decided `/programs/mba/{spec}` was the canonical
+specialisation landing and noindexed this route, but never finished the job: the
+route stayed live, kept a SELF canonical, and held 17 inbound internal links from
+blogs and guides. Four specialisations had both URLs live and competing:
+business-analytics at 951 impr / pos 69.6 against 725 impr / pos 69.5.
+
+The case that matters is healthcare-management. It is the only spec on
+`PROGRAMS_INDEX_ALLOWLIST`, so the only one permitted to rank, and it fell from
+**pos 9.0 to 24.8** while its noindexed twin collected 477 impressions. Index
+permission sat on one URL and link equity on the other.
+
+**Deliberately not done.** Rishi asked that no fee or ranking figure be touched,
+so the blog-vs-hub data contradiction found in the same diagnosis (BITS Pilani
+quoted at ₹2.97L / NIRF #16 Overall on the blog and ₹2.98L / NIRF #7 with no
+category on the hub) is recorded and left alone. It remains open.
+
+**Verified.** All 7 deprecated URLs 301 to a target that returns 200 with no
+chain; the bare path and any unknown sub-path fall through to `/programs/mba`;
+all 17 repointed links resolve directly rather than through a hop; zero
+references to the dead route remain in `lib/`.
+
+**Detail.** `audits/gsc-diagnosis-2026-09-13.md`
+
+---
+
 ## 2026-09-13 · internal link starvation on specialisation pages
 
 **What.** Canonicalised the specialisation links on programme hubs, added
