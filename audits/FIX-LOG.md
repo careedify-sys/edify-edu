@@ -86,10 +86,11 @@ Shoolini, DSU, Uttaranchal, VIT, KLU, Graphic Era and Parul. That is the
 fabrication class this site cannot ship. The pages are worth building once
 someone confirms each scholarship scheme against the university portal.
 
-**Also noticed, not changed.** `lib/coupon-pages.ts` opens with a comment saying
-premium maps to Rs 7,500 and budget to Rs 4,000, while `lib/coupons.ts` sets all
-three tiers to `{max: 5000, base: 4000}`. Two coupon codes still read
-`MAHE2026-7500` and `SYMB2026-7500`. Figures are Rishi's call, so flagged only.
+**Raised and closed.** `lib/coupon-pages.ts` opens with a comment saying premium
+maps to Rs 7,500 while `lib/coupons.ts` sets all three tiers to
+`{max: 5000, base: 4000}`, and two codes read `MAHE2026-7500` and
+`SYMB2026-7500`. Flagged to Rishi on 2026-09-13; he confirmed it is not an issue.
+**Do not raise this again or "fix" the tier comment.**
 
 **Verified.** All 12 pages return 200 with zero "Online Online" anywhere in the
 HTML, and all eight JSON-LD blocks still parse, with Offer and Course carrying
