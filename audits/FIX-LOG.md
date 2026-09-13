@@ -9,6 +9,46 @@ the fix by accident.
 
 ---
 
+## 2026-09-13 · link the verify pages from programme hubs
+
+**What.** A `getVerifyPage()`-gated verify link in the approvals block of
+`UniProgramBody`, so every resolvable programme hub links its university's
+verification page. **356 new links across 105 verify pages, +3.4 inbound each.**
+
+**Why.** Verify pages are the best opportunity on the site by the numbers, and
+the audit had them parked as a "candidate":
+
+| cluster | pages | clicks | CTR | avg inbound links |
+|---|---:|---:|---:|---:|
+| coupons | 9 | 46 | 3.00% | healthy |
+| **verify** | 61 | 186 | **1.76%** | **1.0** |
+| universities | 650 | 593 | 0.80% | 28.9 |
+| blog | 180 | 1,127 | 0.46% | 8.2 |
+
+The second-best-converting page type on the site, ranking at position 4 to 6, was
+also the most link-starved: 124 pages averaging one inbound contextual link, 17
+with none, and the only source was the university overview page.
+
+The approvals block is the honest place for the link rather than a footer or a
+sidebar, because that is exactly where the page makes its UGC-DEB and NAAC
+claims. Anchor text names both.
+
+**Sized deliberately.** Hubs only, not the 1,919 spec pages. 356 links spread
+over 105 targets is proportionate; putting it on every spec page would have been
+roughly 1,900 links into a utility cluster and would pull equity off the
+commercial pages. Measure this first.
+
+**Gated.** `getVerifyPage()` returns null for the 19 universities Supabase has no
+record for, and those hubs render nothing. Never fall back to `/verify/{u.id}`,
+which 404s for roughly half the catalogue because the verify route keys off
+Supabase slugs rather than `lib/data.ts` ids.
+
+**Verified.** 45 hubs sampled: 27 carry a link, 16 correctly omit it, and every
+emitted verify URL returns 200. Two 500s in the sample were the known dev-server
+concurrency flake and return 200 on serial retry.
+
+---
+
 ## 2026-09-13 · 11 new coupon pages
 
 **What.** `COUPON_PAGES` 12 to 23, `COUPONS` 26 to 32. New pages for Shoolini,

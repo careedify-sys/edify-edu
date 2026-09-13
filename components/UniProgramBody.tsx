@@ -45,7 +45,7 @@ import { hasSyllabusData } from '@/lib/syllabus'
 import { getProgramLinks } from '@/lib/internal-links'
 import ProgramBlogLinks from './ProgramBlogLinks'
 import SiblingProgrammes from './SiblingProgrammes'
-import { getSiblingProgrammes, getUniversityOverviewLink } from '@/lib/seo/safe-internal-links'
+import { getSiblingProgrammes, getUniversityOverviewLink, getVerifyPage } from '@/lib/seo/safe-internal-links'
 import { feeSentence, emiSentence, hasRealFee } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 
@@ -132,6 +132,18 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
   // they only ever return hubs that resolve AND are indexable. See
   // lib/seo/safe-internal-links.ts for why u.programs is not used directly.
   const siblingProgrammes = getSiblingProgrammes(u, program)
+  // Verify page for this university, or null when Supabase has no record for it.
+  // getVerifyPage handles the id-to-slug mismatch documented in
+  // lib/seo/safe-internal-links.ts; never fall back to `/verify/${u.id}`, which
+  // 404s for roughly half the catalogue.
+  //
+  // Why link it from here (2026-09-13): verify pages convert at 1.76%, second
+  // only to coupons and more than twice the university pages, and they rank at
+  // position 4 to 6. They were also the most link-starved cluster on the site:
+  // 124 pages averaging 1.0 inbound contextual link, 17 of them with none. The
+  // approvals block is the honest place for the link, because that is where the
+  // UGC-DEB and NAAC claims are made. See audits/topical-authority-2026-09-13.md.
+  const verifyHref = getVerifyPage(u.id)
   const overviewHref      = getUniversityOverviewLink(u)
 
   // Sprint 1 Task 2 (revised): fact-scrubbed FAQ set. Every factual claim below
@@ -256,6 +268,17 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
                   highlight={u.highlight}
                   layout="row"
                 />
+                {verifyHref && (
+                  <div className="mt-3 pt-3 border-t border-slate-100">
+                    <Link
+                      href={verifyHref}
+                      className="text-sm font-semibold no-underline hover:underline"
+                      style={{ color: '#3B5068' }}
+                    >
+                      Verify {cleanName} UGC-DEB approval and NAAC grade
+                    </Link>
+                  </div>
+                )}
               </div>
 
               {/* §3B UGC-DEB (generated content only) */}
