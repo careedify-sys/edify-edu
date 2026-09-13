@@ -9,6 +9,46 @@ the fix by accident.
 
 ---
 
+## 2026-09-13 · built out `/fees`, the one fee asset with headroom
+
+**What.** Added five H2 sections, a six-question FAQ with FAQPage schema, a
+WebPage schema carrying dateModified, nine contextual internal links, and
+replaced the hardcoded hero figures with values derived from the dataset.
+
+**Why.** The corrected GSC diagnosis found the fee-query opportunity is far
+smaller than first claimed and mostly campus intent, and that the
+blog-versus-hub title theory is contradicted by our own data. `/fees` was the
+one fee-side asset left with real headroom: indexable, well titled, backed by a
+143-row dataset, and sitting at **position 21 on 453 impressions**.
+
+It was also structurally thin in a way that explains position 21. A 517KB page
+carrying **one H1 and zero H2s**, a client-rendered table, and a footnote. There
+was nothing on it for a fee query to match except the table itself.
+
+**Data defect found and fixed.** The hero chips were literals, and one was
+wrong: "₹60K lowest fee" is the *sixth*-lowest figure in the dataset, which has
+held IGNOU at ₹9,600 since the open-university rows landed. "₹3.70L highest" was
+correct. Both now read from `feesData`, so neither can drift again. Flagged to
+Rishi rather than changed silently, since the standing instruction is to leave
+figures alone; this one contradicted its own source.
+
+**Also fixed.** `buildSchemas()` had always constructed a `webpage` object and
+then never rendered it, so the page shipped without WebPage schema entirely.
+
+**Constraint honoured.** No fee, NAAC or NIRF figure was hand-written. Every
+number in the new copy, including all six FAQ answers, is computed from
+`data/fees-hub-data.json`, so the FAQ cannot fall out of step with the table.
+
+**Verified.** All seven JSON-LD blocks parse; FAQPage carries 6 questions,
+WebPage carries `dateModified`, canonical is self-referencing and correct, page
+is `index, follow`. Five H2s render. All nine internal link targets confirmed
+live and indexable on production first. House style checked: no em dashes, no
+filler words from the banned list.
+
+**Detail.** `audits/gsc-diagnosis-2026-09-13.md`
+
+---
+
 ## 2026-09-13 · `/programs/mba/specializations/*` consolidation
 
 **What.** 301'd the whole deprecated route to `/programs/mba/{spec}`, repointed
