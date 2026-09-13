@@ -9,6 +9,48 @@ the fix by accident.
 
 ---
 
+## 2026-09-13 · coupon pages: "Online Online" on all 12, in copy and in schema
+
+**What.** Adopted the existing `formatUniversityDisplayName()` helper at the five
+places the coupon template composes a university name with " Online MBA".
+
+**Why.** Every `universityName` in `COUPON_PAGES` already ends in "Online", and
+the template appended " Online MBA ...", so **all 12 pages** rendered
+"Amity University Online Online MBA Discount Coupon 2026". It was in the H1, the
+Offer schema `name`, the Course schema `name`, the HowTo description and the
+comparison table, so it reached both the page and the rich result.
+
+These are the best-converting pages on the site. The coupon cluster grew 44
+clicks to 46 in the last GSC window while the index page fell, and the Manipal
+Jaipur page went from position 7.2 to 4.9 with 10 clicks to 24. A visible
+grammar defect on the commercial pages that are actually ranking is worth more
+than most on-page work elsewhere.
+
+`lib/format.ts` has carried `formatUniversityDisplayName()` for this exact
+artefact since `SchemaBlock` and the blog template hit it. The coupon template
+never adopted it.
+
+**Asked for but NOT done: new coupon pages.** 13 universities hold a coupon in
+`COUPONS[]` with no landing page, and 10 of those have usable fee and NAAC data.
+The blocker is `CouponPageData.discounts[]`, which carries real university
+scholarship schemes: "15% upfront discount", "Defence scholarship 20% fee
+waiver", "Divyaang scholarship up to 100%", "Merit scholarship 5-15%". Those are
+per-university facts that would have to be invented for UPES, Sharda, Galgotias,
+Shoolini, DSU, Uttaranchal, VIT, KLU, Graphic Era and Parul. That is the
+fabrication class this site cannot ship. The pages are worth building once
+someone confirms each scholarship scheme against the university portal.
+
+**Also noticed, not changed.** `lib/coupon-pages.ts` opens with a comment saying
+premium maps to Rs 7,500 and budget to Rs 4,000, while `lib/coupons.ts` sets all
+three tiers to `{max: 5000, base: 4000}`. Two coupon codes still read
+`MAHE2026-7500` and `SYMB2026-7500`. Figures are Rishi's call, so flagged only.
+
+**Verified.** All 12 pages return 200 with zero "Online Online" anywhere in the
+HTML, and all eight JSON-LD blocks still parse, with Offer and Course carrying
+the corrected name.
+
+---
+
 ## 2026-09-13 · built out `/fees`, the one fee asset with headroom
 
 **What.** Added five H2 sections, a six-question FAQ with FAQPage schema, a

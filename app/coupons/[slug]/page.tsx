@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ChevronRight, BadgeCheck, Tag, Clock, ExternalLink, Phone } from 'lucide-react'
 import { getCouponPage, COUPON_PAGE_SLUGS, type CouponPageData } from '@/lib/coupon-pages'
+import { formatUniversityDisplayName } from '@/lib/format'
 import { getExpiryISO, getTodaysBonus, TIER_AMOUNTS } from '@/lib/coupons'
 import CouponPageCTA from '@/components/CouponPageCTA'
 import CouponCountdown from '@/components/CouponCountdown'
@@ -76,6 +77,13 @@ export default async function CouponDetailPage({ params }: { params: any }) {
   const tierBase = TIER_AMOUNTS[page.tier].base
   const liveBonus = getTodaysBonus(page.tier)
 
+  // Every universityName in COUPON_PAGES ends in "Online", and this template
+  // composes "{name} Online MBA ...", so all 12 pages rendered "Online Online"
+  // in the H1, the Offer schema, the Course schema and the comparison table.
+  // formatUniversityDisplayName is the helper SchemaBlock and the blog template
+  // already use for this; the coupon template never adopted it.
+  const uniDisplay = formatUniversityDisplayName(page.universityName)
+
   const breadcrumbSchema = {
     '@context': 'https://schema.org', '@type': 'BreadcrumbList',
     itemListElement: [
@@ -87,7 +95,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
 
   const offerSchema = page.couponCode !== 'N/A' ? {
     '@context': 'https://schema.org', '@type': 'Offer',
-    name: `${page.universityName} Online MBA ${year} Discount Coupon`,
+    name: `${uniDisplay} Online MBA ${year} Discount Coupon`,
     description: `Verified discount coupon ${page.couponCode}: up to ${page.maxSavings} off, applied at enrollment.`,
     category: 'Online Education Coupon',
     priceCurrency: 'INR',
@@ -119,7 +127,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
     name: `How to Apply ${page.couponCode} Coupon for ${page.shortName} Online MBA ${year}`,
-    description: `Six-step application flow to claim the verified ${page.couponCode} discount coupon on ${page.universityName} Online MBA and save up to ${page.maxSavings}.`,
+    description: `Six-step application flow to claim the verified ${page.couponCode} discount coupon on ${uniDisplay} Online MBA and save up to ${page.maxSavings}.`,
     totalTime: 'P3D',
     estimatedCost: { '@type': 'MonetaryAmount', currency: 'INR', value: 0 },
     supply: [{ '@type': 'HowToSupply', name: 'Graduation marksheets and ID proof' }],
@@ -137,7 +145,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
   const courseSchema = {
     '@context': 'https://schema.org',
     '@type': 'Course',
-    name: `${page.universityName} Online MBA`,
+    name: `${uniDisplay} Online MBA`,
     description: `UGC-DEB approved 2-year online MBA from ${page.universityName} (NAAC ${page.naac}). Verified discount coupon ${page.couponCode} saves up to ${page.maxSavings} at enrollment.`,
     provider: { '@type': 'CollegeOrUniversity', name: page.universityName, sameAs: page.officialUrl },
     offers: {
@@ -177,8 +185,8 @@ export default async function CouponDetailPage({ params }: { params: any }) {
         {/* H1 + Hero */}
         <h1 className="text-2xl md:text-3xl font-extrabold mb-4" style={{ color: '#0f2756' }}>
           {page.couponCode === 'N/A'
-            ? `${page.universityName} Online MBA ${year} - UGC-DEB Approved`
-            : `${page.universityName} Online MBA Discount Coupon ${year} - ${page.couponCode}`}
+            ? `${uniDisplay} Online MBA ${year} - UGC-DEB Approved`
+            : `${uniDisplay} Online MBA Discount Coupon ${year} - ${page.couponCode}`}
         </h1>
 
         {/* Scarcity banner + countdown */}
@@ -323,7 +331,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
                 </tr>
                 <tr className="bg-slate-50 border-b border-slate-100">
                   <td className="px-4 py-3 font-semibold text-slate-700">Programme</td>
-                  <td className="px-4 py-3 text-slate-600">{page.universityName} Online MBA {year}</td>
+                  <td className="px-4 py-3 text-slate-600">{uniDisplay} Online MBA {year}</td>
                 </tr>
                 <tr className="bg-white border-b border-slate-100">
                   <td className="px-4 py-3 font-semibold text-slate-700">Programme duration</td>
