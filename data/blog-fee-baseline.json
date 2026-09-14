@@ -1,7 +1,7 @@
 {
   "updatedAt": "2026-09-14",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
-  "totalUnverified": 2444,
+  "totalUnverified": 2441,
   "perSlug": {
     "amity-online-mba-hr-worth-it": 2,
     "is-online-mba-worth-it-2026": 8,
@@ -129,7 +129,7 @@
     "best-online-mba-colleges-india-2026": 48,
     "is-online-mba-valid-india-2026": 2,
     "online-mba-with-placement-india-2026": 2,
-    "bits-pilani-online-mba-review-2026": 10,
+    "bits-pilani-online-mba-review-2026": 7,
     "imt-ghaziabad-online-mba-review-2026": 10,
     "jain-online-mba-review-2026": 26,
     "online-mba-hospital-healthcare-management-india-2026": 13,

@@ -6994,9 +6994,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 298400,
-    feeMax: 298400,
-    emiFrom: 12433,
+    feeMin: 312400,
+    feeMax: 312400,
+    emiFrom: 13017,
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Goa university with online programs',
@@ -7008,10 +7008,17 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programDetails: {
       'MBA': {
         specs: [{ slug: 'ai-for-business', name: 'AI for Business' }, { slug: 'hospital-health-systems-management', name: 'Hospital & Health Systems Management' }, { slug: 'strategy-consulting', name: 'Strategy & Consulting' }, 'Finance', { slug: 'fintech', name: 'FinTech' }, { slug: 'digital-transformation', name: 'Digital Transformation' }, { slug: 'manufacturing-management', name: 'Manufacturing Management' }, { slug: 'quality-management', name: 'Quality Management' }, { slug: 'business-analytics', name: 'Business Analytics' }],
-        // Sprint 1 Task 3: previous value '\u20b975K \u2013 \u20b9180K' conflicted with feeMin/feeMax=298400 above.
+        // Sprint 1 Task 3: previous value '\u20b975K \u2013 \u20b9180K' conflicted with feeMin/feeMax above.
         // Aligned to the single-value form matching feeMin/feeMax so title, hero, and fee block agree.
-        // NEEDS-VERIFICATION: confirm BITS Pilani WILP MBA \u20b92,98,400 against the official portal.
-        fees: '\u20b92,98,400',
+        // VERIFIED 2026-09-14 against wilp.bits-pilani.ac.in (Programme Fee and
+        // Eligibility tab), screenshot supplied by Rishi. The page states
+        // "Programme Fee INR 3,12,400" and its own table reconciles:
+        //   application 1,500 + admission 18,500 + 4 x semester 73,100 = 3,12,400
+        //   (its Sem 1 total of 93,100 = 1,500 + 18,500 + 73,100 confirms it)
+        // The previous \u20b92,98,400 was never a portal figure. It was derived
+        // from stale components (\u20b970,100 per semester and \u20b916,500
+        // admission) and had propagated into five blog posts.
+        fees: '\u20b93,12,400',
         duration: '2 Years',
         roles: ['Business Manager','Strategy Consultant','Operations Lead','Business Analyst','Product Manager'],
         avgSalary: '\u20b94L \u2013 \u20b914L per annum',

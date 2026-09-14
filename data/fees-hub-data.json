@@ -1956,11 +1956,11 @@
     "naac": "A+",
     "nirf": 7,
     "nirfMgt": null,
-    "feeMin": 298400,
-    "feeMax": 298400,
-    "emiFrom": 12433,
-    "feeStr": "₹2.98L",
-    "emiStr": "₹12K/mo",
+    "feeMin": 312400,
+    "feeMax": 312400,
+    "emiFrom": 13017,
+    "feeStr": "₹3.12L",
+    "emiStr": "₹13K/mo",
     "programs": [
       "MBA"
     ],

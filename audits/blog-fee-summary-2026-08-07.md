@@ -2,38 +2,38 @@
 
 Extractor v2 (structural attribution + range parsing + expanded NON_FEE).
 
-Total figures: **9447**
+Total figures: **9319**
 
 ## By classification
 
 | Class | Count |
 |---|---:|
-| MATCH | 1059 |
-| MISMATCH | 762 |
-| SUPPRESSED | 9 |
+| MATCH | 1016 |
+| MISMATCH | 730 |
+| SUPPRESSED | 10 |
 | ORPHAN | 44 |
-| UNRESOLVED | 1848 |
-| NON_FEE | 5725 |
+| UNRESOLVED | 1806 |
+| NON_FEE | 5713 |
 
 ## By class × confidence
 
 | Class / Confidence | Count |
 |---|---:|
-| MATCH/high | 624 |
-| MATCH/low | 92 |
-| MATCH/medium | 343 |
-| MISMATCH/high | 337 |
-| MISMATCH/low | 142 |
-| MISMATCH/medium | 283 |
-| NON_FEE/- | 5725 |
+| MATCH/high | 618 |
+| MATCH/low | 67 |
+| MATCH/medium | 331 |
+| MISMATCH/high | 338 |
+| MISMATCH/low | 116 |
+| MISMATCH/medium | 276 |
+| NON_FEE/- | 5713 |
 | ORPHAN/high | 34 |
 | ORPHAN/low | 2 |
 | ORPHAN/medium | 8 |
-| SUPPRESSED/high | 7 |
+| SUPPRESSED/high | 8 |
 | SUPPRESSED/medium | 2 |
 | UNRESOLVED/high | 16 |
-| UNRESOLVED/low | 1827 |
-| UNRESOLVED/medium | 5 |
+| UNRESOLVED/low | 1786 |
+| UNRESOLVED/medium | 4 |
 
 ## Top 30 slugs by figure count
 
@@ -56,12 +56,12 @@ Total figures: **9447**
 | 1-year-mba-india-executive-mba-2026 | 96 | 5 | 5 | 0 | 0 | 30 | 56 |
 | online-mba-supply-chain-management-india-2026 | 96 | 15 | 4 | 0 | 0 | 13 | 64 |
 | ias-officer-salary-india-2026-pay-scale-perks | 92 | 0 | 0 | 0 | 0 | 33 | 59 |
+| online-mba-hospital-healthcare-management-india-2026 | 92 | 21 | 5 | 0 | 0 | 15 | 51 |
 | online-mba-tamil-nadu-2026 | 90 | 17 | 16 | 0 | 0 | 46 | 11 |
-| best-online-mba-colleges-india-2026 | 89 | 16 | 3 | 0 | 0 | 45 | 25 |
+| best-online-mba-colleges-india-2026 | 89 | 15 | 4 | 0 | 0 | 45 | 25 |
 | amity-online-bba-review-2026 | 87 | 6 | 9 | 0 | 0 | 5 | 67 |
 | top-correspondence-mba-colleges-india-2026 | 84 | 24 | 14 | 1 | 0 | 30 | 15 |
 | commerce-jobs-list-salary-india-2026 | 84 | 0 | 0 | 0 | 0 | 5 | 79 |
-| online-mba-hospital-healthcare-management-india-2026 | 84 | 18 | 4 | 0 | 0 | 12 | 50 |
 | distance-mba-bangalore-2026 | 82 | 5 | 4 | 0 | 2 | 3 | 68 |
 | mba-scope-india-2026 | 80 | 5 | 2 | 0 | 0 | 1 | 72 |
 | llm-course-duration-fees-scope-india-2026 | 79 | 0 | 0 | 0 | 0 | 24 | 55 |

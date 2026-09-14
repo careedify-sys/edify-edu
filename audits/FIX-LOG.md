@@ -9,6 +9,106 @@ the fix by accident.
 
 ---
 
+## 2026-09-14 (corrected) · BITS WILP is ₹3,12,400. My earlier ₹2,98,400 was wrong.
+
+**Source.** Rishi sent the official portal screenshot,
+`wilp.bits-pilani.ac.in` → Programme Fee and Eligibility. It states
+**Programme Fee INR 3,12,400**, and its own table reconciles exactly:
+
+```
+application (one time)     1,500
+admission   (one time)    18,500
+semester fee              73,100  x 4  = 2,92,400
+                                   ------------
+Programme Fee                        3,12,400
+Sem 1 total   1,500 + 18,500 + 73,100 =   93,100   (stated on the page)
+```
+
+**What I got wrong, and how.** Earlier the same day I "corrected" the fee to
+₹2,98,400 and recorded that the figure was provable from the post's own table.
+It was arithmetically consistent and it was wrong, because **the components it
+rested on were stale**: the post said ₹70,100 per semester where the portal says
+₹73,100, and ₹16,500 admission where the portal says ₹18,500. Deriving a total
+from two unverified inputs produced a confident, internally consistent, wrong
+number, which then propagated into five posts and matched `lib/data.ts` only
+because `lib/data.ts` carried the same derivation.
+
+`lib/data.ts` even said so: the line above the fee read
+`NEEDS-VERIFICATION: confirm BITS Pilani WILP MBA ₹2,98,400 against the official
+portal`. I treated agreement between `lib/data.ts` and a derivation as
+confirmation, when both were the same unverified claim wearing two hats.
+
+**The lesson is the house rule, restated.** Internal consistency is not
+verification. A total that reconciles with its own components says nothing about
+whether the components are current. Only the portal settles a fee. This is the
+same failure mode as [[feedback_never_derive_fees]], one level up: not a derived
+superlative but a derived total.
+
+**The post's original number was closer than mine.** It said "Effective Total
+Cost ₹3,15,000", which is ₹2,600 off the real ₹3,12,400. I replaced it with
+₹2,98,400, which is ₹14,000 off. The edit made the page less accurate.
+
+**What changed.** `lib/data.ts` feeMin/feeMax 298400 → 312400, `emiFrom` 12433 →
+13017, `programDetails.MBA.fees` → ₹3,12,400 with the NEEDS-VERIFICATION comment
+replaced by the portal reconciliation. `data/fees-hub-data.json` feeStr → ₹3.12L,
+emiStr → ₹13K/mo. In `lib/blog.ts`: per-semester ₹70,100 → ₹73,100 (x5),
+admission ₹16,500 → ₹18,500 (x5), tuition ₹2,80,400 → ₹2,92,400 (x4), all-in
+₹2,98,400 → ₹3,12,400 (x8), tuition+admission → ₹3,10,900, first-year outflow
+₹1,58,200 → ₹1,66,200, and six `2.98L` cross-references across
+working-professionals, NMIMS, best-online-mba (x2) and the BITS title and meta.
+
+**Four `₹2.98L` mentions were deliberately left.** They belong to JAIN's
+International Finance ACCA tier, which genuinely is ₹2.98L. A blanket replace
+would have corrupted three unrelated posts.
+
+**This also settles the inflation question left open earlier.** ₹2,84,000 (2024)
+→ ₹2,97,000 (2025) → ₹3,12,400 (2026) is +4.6% then +5.2%. The post's "roughly
+4-5% annual fee inflation" gloss is correct and stays. The earlier doubt existed
+only because ₹2,98,400 was wrong.
+
+**And it revisits the Jain finding.** The Jain post's ₹1.96L-₹2.98L range, which
+I read as contradicting its hub's ₹1.6L-₹1.96L, is the standard-to-ACCA spread.
+The blog may be right and the **hub's range may be the incomplete one**, missing
+the International Finance ACCA tier. The title fix still stands, two pages should
+not publish different ranges, but the direction of that error is now open and
+worth checking against the JAIN portal.
+
+### The same fee is written three different ways, and I missed one twice
+
+The first sweep searched `2,97,000` and found two posts. The second searched
+`2.97L` and found four more. `check-blog-fees` then failed the commit and
+surfaced a **third** form I had still not looked for: **`Rs 2.97 lakh` and
+`₹2.97 lakh`, spelled out**, in thirteen more places across
+`best-online-mba-colleges-india-2026`, `online-mba-with-placement-india-2026`,
+`xlri-online-mba-review-2026` and the BITS post itself.
+
+So one fee figure lives in the content as at least three shapes:
+
+```
+₹2,97,000      comma form
+₹2.97L         lakh-abbreviated
+₹2.97 lakh     lakh spelled out   <- missed twice
+```
+
+**Search all three, every time.** A sweep that finds and fixes two of the three
+leaves the site contradicting itself while looking finished, which is worse than
+not starting: the corrected pages now disagree with the uncorrected ones.
+
+The gate is what caught it. `check-blog-fees` failed with
+`best-online-mba-colleges-india-2026: 48 -> 49` and
+`xlri-online-mba-review-2026: 19 -> 21`, i.e. my partial fix had *increased* the
+unverified count by introducing figures that no longer matched their neighbours.
+After the third sweep the count went the other way, **2444 -> 2441**, and the
+BITS post dropped from 10 unverified figures to 7 because the corrected ones now
+resolve as MATCH against `lib/data.ts`.
+
+**Verified.** Both titles and all six component figures re-read from the running
+server. `/fees` row shows ₹3.12L and ₹13K/mo. Final sweep across all three forms:
+the only survivors are the two historical `₹2,97,000` lines in the BITS post and
+four `₹2.98L` mentions that belong to JAIN's ACCA tier.
+
+---
+
 ## 2026-09-14 (later still) · BITS WILP fee corrected to ₹2,98,400 across five posts
 
 **Source.** Rishi confirmed the BITS Pilani WILP fee is 298K, and that BIT Mesra
