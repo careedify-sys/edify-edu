@@ -33,24 +33,21 @@ large share of fee rows are placeholder ranges, so do not turn this into a
 "cheapest in India" claim on the page. The guard in
 `scripts/check-coupon-claims.mts` will block it.
 
-**The blocker is a contradiction inside EdifyEdu's own content:**
+**The blocker is closed.** Rishi confirmed on 2026-09-14 that Galgotias runs no
+scholarship or fee-waiver scheme on its online programmes. The specialisation
+pages ("Scholarships: None offered") were right. The programme hub's claim that
+it "offers need-based and merit-based scholarships" was unverified boilerplate
+shared with five other universities, and has been corrected.
 
-- `lib/data/page-content/galgotias-university-online-mba.json` says Galgotias
-  "offers need-based and merit-based scholarships", with concessions for defence
-  personnel, government employees and group-institution alumni.
-- The Galgotias specialisation pages say the opposite: "Scholarships: None
-  offered", and "no scholarships or fee waivers available".
+**Carried over to the other five.** Amrita, Chandigarh, MAHE, Shoolini and
+Sikkim Manipal ran the identical sentence. None is verified, so all five now say
+we do not list unverified schemes and point at the official portal. Each still
+needs a real answer, same question as Galgotias.
 
-Both are live and indexed. A coupon page has to state one of them, and picking
-either without checking makes the site contradict itself on a third page.
-
-**Shipped** as `/coupons/galgotias-online-mba-discount-coupon-2026` with no
-claim about scholarships in either direction, which is correct under both
-possible truths. **Still needed:** one answer on whether Galgotias runs any
-scholarship scheme, from the official portal. If the answer is no, the page can
-carry an angle competitors will not have: a NAAC A+ online MBA at Rs 80,200 that
-runs no university scholarship, so the coupon is the only reduction available.
-Stated that way it is checkable and needs no superlative.
+**Shipped** as `/coupons/galgotias-online-mba-discount-coupon-2026`, now
+carrying the angle: a NAAC A+ online MBA at Rs 80,200 that runs no university
+scholarship, so the coupon is the only reduction available. Checkable, and no
+superlative needed. The Galgotias MBA hub links it directly.
 
 **As shipped:** `Not ranked in the NIRF 2025 top 100`, and no scholarship claim
 in either direction. Pharmacy #55 and Law #36 are real but irrelevant to an MBA

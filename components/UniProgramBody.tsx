@@ -453,7 +453,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
 
               {/* Blog review links — pulls editorial authority into programme page */}
               {programBlogLinks && (
-                <ProgramBlogLinks links={programBlogLinks} program={program.toLowerCase()} />
+                <ProgramBlogLinks links={programBlogLinks} program={program.toLowerCase()} universityId={u.id} />
               )}
 
               {/* Sibling programme hubs. Closes the orphan-hub gap found in the

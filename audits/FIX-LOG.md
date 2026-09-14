@@ -9,6 +9,94 @@ the fix by accident.
 
 ---
 
+## 2026-09-14 · Galgotias runs no scholarships, and the boilerplate that said otherwise
+
+**Source.** Rishi confirmed on 2026-09-14 that Galgotias runs no scholarship or
+fee-waiver scheme on its online programmes. That closes the contradiction opened
+in `audits/coupon-expansion-worklist-2026-09-13.md` §1. The specialisation pages
+were right all along.
+
+### 1. The scholarship sentence was boilerplate, and it was wrong
+
+Six programme hubs carried the identical sentence:
+
+> {University} offers need-based and merit-based scholarships for eligible
+> students. Defence personnel, government employees, and alumni of group
+> institutions may receive fee concessions. Early payment discounts may apply.
+
+The same six that carried the false "we do not apply exclusive coupon codes"
+claim fixed yesterday. It is a template that was pasted onto six universities
+without checking any of them, and it is now demonstrably wrong for one.
+
+- **Galgotias** now states the confirmed fact: no scholarship scheme, no merit
+  slab, no defence concession, no alumni discount.
+- **The other five** (Amrita, Chandigarh, MAHE, Shoolini, Sikkim Manipal) no
+  longer assert schemes we have not verified. The copy now says policy is set by
+  the university, that we do not list unverified schemes, and points at the
+  official portal. **Not verified either way. Each still needs a real answer.**
+
+Removing an unverified claim is always safer than keeping it, which is why this
+went ahead without waiting. Asserting the opposite would not have been.
+
+**Note on blast radius:** `sections.coupon` from the page-content JSON is not
+rendered by any component today, so this text was data rather than live copy.
+Worth correcting regardless, since the JSON is the source other surfaces read
+from, but it did not mislead a reader on the hub itself.
+
+### 2. What *was* live: every programme hub promised scholarships
+
+`ProgramBlogLinks` renders on every programme hub with blog links, and its third
+link read:
+
+> Check available {University} {Programme} scholarships and discounts
+
+pointing at the `/coupons` index. Two problems. We list coupons, not university
+scholarships, and on a university that runs none the anchor promised something
+that does not exist. It also spent the link on an index page when the university
+often has its own coupon page carrying the code, the fee and the form.
+
+Now:
+
+| case | anchor | target |
+|---|---|---|
+| MBA hub, coupon page exists | "Check the {uni} MBA discount coupon" | that page |
+| MBA hub, page exists but no coupon | "{uni} MBA fees, and why no coupon runs on it" | that page |
+| everything else | "Compare MBA discount coupons across universities" | `/coupons` |
+
+**18 MBA hubs now link a specific coupon page** instead of the index.
+
+Two deliberate restrictions:
+
+- **MBA hubs only.** Every `/coupons/*` page is an online MBA page, so linking
+  one from a BBA or MCA hub under "Check the {uni} MCA discount coupon" would
+  point at a coupon for a different programme. That mistake was live for seven
+  hubs in the first draft of this change and was caught before commit.
+- **The no-coupon branch.** IGNOU publishes `couponCode: 'N/A'`. Its page is
+  worth linking, it is reachable from nowhere else since the hub renders no card
+  for it, but the anchor must not promise a coupon. It gets its own wording.
+
+### 3. Coupon page updated to the confirmed position
+
+The Galgotias FAQ now answers the scholarship question directly instead of
+deferring, and a second FAQ explains why a programme with no merit waiver can
+still be the cheaper choice. The comparison names figures rather than
+generalising: Amity from Rs 2,07,000 and Chandigarh from Rs 1,65,000, both read
+from `lib/data.ts`. An earlier draft said competitors "usually start from a fee
+two to three times higher", which is the same derive-a-fee-claim problem the
+superlative guard exists to stop, so it was replaced before commit.
+
+**Verified.** `npx tsc --noEmit` clean. Checked on a running dev server: the
+Galgotias MBA hub links `/coupons/galgotias-online-mba-discount-coupon-2026`
+under "Check the Galgotias MBA discount coupon" and no longer mentions
+scholarships; the IGNOU MBA hub links its page under "IGNOU MBA fees, and why no
+coupon runs on it"; the Galgotias coupon page carries the no-scholarship answer
+across 9 FAQs and still says nothing about who funds the discount.
+
+**Still open.** The five other universities whose scholarship copy was
+de-asserted need a real answer each, same shape as the Galgotias question.
+
+---
+
 ## 2026-09-14 · Galgotias coupon page, and the derived fee superlatives it exposed
 
 **What.** A 24th coupon page, `/coupons/galgotias-online-mba-discount-coupon-2026`,

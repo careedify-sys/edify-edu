@@ -1003,20 +1003,22 @@ export const COUPON_PAGES: CouponPageData[] = [
     couponDiscount: 'Up to Rs 5,000 verified discount coupon (Tue/Sat IST)',
     blogSlug: 'galgotias-online-mba-review',
     officialUrl: 'galgotiasonline.edu.in',
-    // Only the coupon is listed. Whether Galgotias runs a scholarship scheme of
-    // its own is unresolved in our own content: the programme hub says it
-    // offers need-based and merit-based scholarships, the specialisation pages
-    // say none are offered. Neither claim is repeated until that is settled.
+    // Only the coupon is listed, and that is the whole list. Rishi confirmed on
+    // 2026-09-14 that Galgotias runs no scholarship or fee-waiver scheme on its
+    // online programmes, which matches what the specialisation pages have always
+    // said. The programme hub's claim to the contrary was unverified boilerplate
+    // shared with five other universities and has been corrected.
     discounts: [
       { type: 'verified discount coupon', eligibility: 'All students via admission desk', saving: 'Up to Rs 5,000 on Tue/Sat IST, Rs 4,000 other days', howToApply: 'Mention code GALG2026-5K during enrollment call' },
     ],
-    stackExample: 'Galgotias administers any fee concession of its own independently, and we do not quote eligibility for university schemes. Treat the coupon as the one adjustment we can confirm: up to Rs 5,000 on a Tuesday or Saturday window, against an indicative programme fee of Rs 80,200.',
+    stackExample: 'There is nothing to stack. Galgotias runs no scholarship or fee-waiver scheme on its online programmes, so the coupon is the only reduction available: up to Rs 5,000 on a Tuesday or Saturday window, against an indicative programme fee of Rs 80,200.',
     emiCompatible: 'The coupon reduces the fee before any instalment plan is calculated. Some universities apply coupon discounts to lump-sum payment only, so confirm the exact terms with the Galgotias admissions team for the 2026-27 batch.',
     exclusions: ['Does not reduce the registration fee or per-semester examination charges', 'Cannot be combined with other third-party commercial coupon codes for the same programme', 'Does not override Galgotias admission eligibility or batch quotas', 'Not transferable and not redeemable for cash'],
     faqs: [
       { q: 'What is the Galgotias online MBA discount coupon code for 2026?', a: 'The verified discount coupon code is GALG2026-5K. It carries up to Rs 5,000 on Tuesday and Saturday in IST, and Rs 4,000 on other days. The amount is applied as a fee adjustment during your enrollment process.' },
       { q: 'What is the total Galgotias online MBA fee?', a: 'The programme fee is Rs 80,200, paid across four semesters over two years. This figure is indicative. Registration and per-semester examination charges are separate. Confirm the current fee on galgotiasonline.edu.in before making any payment.' },
-      { q: 'Does Galgotias run its own scholarships?', a: 'Galgotias administers any scholarship scheme itself, independently of this coupon. We do not administer university scholarships and do not quote eligibility for them. Check galgotiasonline.edu.in for current scholarship notifications before you apply.' },
+      { q: 'Does Galgotias offer any scholarship on the online MBA?', a: 'No. Galgotias runs no scholarship or fee-waiver scheme on its online programmes. There is no merit slab, no defence concession and no alumni discount to apply for. That makes the GALG2026-5K coupon the only reduction available on the Rs 80,200 fee. Confirm the current position on galgotiasonline.edu.in before you pay.' },
+      { q: 'Why is there no merit scholarship when other universities offer one?', a: 'Galgotias prices the online MBA low at the outset instead of listing a high fee and discounting it back down. For comparison, Amity starts at Rs 2,07,000 and Chandigarh at Rs 1,65,000 before any waiver is applied. Compare the amount you actually pay rather than the size of the discount advertised.' },
       { q: 'Can I use the Galgotias code with EMI?', a: 'The coupon reduces the fee first, and the balance is then spread under whatever instalment plan Galgotias offers for the batch. Some universities apply coupon discounts to lump-sum payment only. Confirm the terms with the Galgotias admissions team during enrollment.' },
       { q: 'When is the best time to use GALG2026-5K?', a: 'The coupon reaches its maximum of Rs 5,000 on Tuesday and Saturday in IST, and Rs 4,000 on other days. Time your enrollment call so the final fee invoice is generated on one of those two days.' },
       { q: 'Where do I enter the Galgotias code?', a: 'The code is mentioned during the admissions process to your admission desk, not on the Galgotias website. Our admission desk coordinates with the Galgotias admissions team so the adjustment is reflected in your fee invoice.' },
