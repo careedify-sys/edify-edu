@@ -5304,9 +5304,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 117000,
-    feeMax: 170000,
-    emiFrom: 4875,
+    feeMin: 110000,
+    feeMax: 117000,
+    emiFrom: 4583,
     eligibility: 'Graduation with minimum 50% marks (45% for SC/ST) from recognized university',
     eligibilityPct: 50,
     tagline: 'AI-driven personalized learning with dual degree opportunities — SRM Group, NAAC A+',
@@ -5316,8 +5316,17 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programs: ['MBA', 'BBA', 'BCA'],
     programDetails: {
       'MBA': {
-        specs: ['Finance', 'Marketing', 'Human Resource Management'],
-        fees: '₹1.70L total',
+        // 2026-09-14: onlinesrm.in/mba/ lists seven specialisations. Four were
+        // missing here: Operations and Supply Chain Management, Business Analytics
+        // and Artificial Intelligence, Hospital and Health Care Management, and
+        // Hospitality and Tourism Management. The portal titles the first three
+        // Finance & Fintech, Marketing & Digital Technologies and HR & Emerging
+        // Technologies; names left as-is so the three live spec URLs do not move.
+        specs: ['Finance', 'Marketing', 'Human Resource Management', 'Operations and Supply Chain Management', 'Business Analytics and Artificial Intelligence', 'Hospital and Health Care Management', 'Hospitality and Tourism Management'],
+        // 2026-09-14: was '₹1.70L total'. onlinesrm.in/mba/ prints ₹27,500 per
+        // semester and ₹1,10,000 for the full programme, inclusive of exam fees.
+        // BBA and BCA are ₹1,17,000 each, which is why feeMax is now the UG fee.
+        fees: '₹1,10,000 total (₹27,500/sem)',
         duration: '2 Years (4 Semesters)',
         roles: ['Business Analyst', 'Marketing Manager', 'Financial Consultant', 'HR Manager'],
         avgSalary: '₹4L – ₹10L per annum',

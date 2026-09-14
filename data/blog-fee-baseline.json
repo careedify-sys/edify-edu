@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-28",
+  "updatedAt": "2026-09-14",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
-  "totalUnverified": 2450,
+  "totalUnverified": 2446,
   "perSlug": {
     "amity-online-mba-hr-worth-it": 2,
     "is-online-mba-worth-it-2026": 8,
@@ -132,7 +132,7 @@
     "bits-pilani-online-mba-review-2026": 10,
     "imt-ghaziabad-online-mba-review-2026": 10,
     "jain-online-mba-review-2026": 26,
-    "online-mba-hospital-healthcare-management-india-2026": 16,
+    "online-mba-hospital-healthcare-management-india-2026": 13,
     "xlri-online-mba-review-2026": 19,
     "amrita-online-bba-review-2026": 21,
     "best-online-bba-colleges-india-2026": 34,
@@ -155,7 +155,7 @@
     "online-mba-tamil-nadu-2026": 62,
     "online-mba-maharashtra-2026": 17,
     "online-mba-karnataka-2026": 25,
-    "online-mba-northeast-india-2026": 9,
+    "online-mba-northeast-india-2026": 8,
     "naac-accreditation-explained-grades-india-2026": 2,
     "amity-vs-manipal-online-mba-2026": 14,
     "jain-vs-amity-online-mba-2026": 13,

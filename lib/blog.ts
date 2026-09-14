@@ -37603,9 +37603,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   {
     slug: 'online-mba-hospital-healthcare-management-india-2026',
     title: "Online MBA Hospital Administration and Healthcare Management India 2026",
-    seoTitle: "Online MBA Healthcare Management India 2026: 8 Universities, Fees ₹1.2L to ₹3.7L",
+    seoTitle: "Online MBA Healthcare Management India 2026: 9 Universities, Fees ₹1.1L to ₹3.7L",
     h1Title: 'Online MBA in Hospital Administration and Healthcare Management',
-    metaDescription: "Online MBA Hospital Administration & Healthcare Management India 2026: 8 UGC-DEB universities. Fees ₹1.2L (SMU) to ₹3.7L (Symbiosis). Honest guide.",
+    metaDescription: "Online MBA Hospital Administration & Healthcare Management India 2026: 9 UGC-DEB universities. Fees ₹1.1L (SRM Sikkim) to ₹3.7L (Symbiosis). Honest guide.",
     category: 'MBA Specialisation Guides',
     tags: ["online mba hospital administration","mba healthcare management online","online mba hospital management","healthcare mba india online","online mba in hospital management","hospital administration mba online india"],
     publishedAt: '2026-05-04',
@@ -37617,17 +37617,17 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@@rdne" target="_blank" rel="noopener nofollow">RDNE Stock project</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     heroImageAlt: 'A doctor in a white lab coat checks his wristwatch in a hospital hallway, conveying professionalism.',
     faqs: [
-      { q: "Which universities offer online MBA in Hospital Administration or Healthcare Management in India?", a: "Eight UGC-DEB approved universities offer this specialisation in 2026: SMU (₹1,20,000 with current discount), Sharda University (₹1,40,000), Chandigarh University (₹1,65,000 net), DPU Pune (₹1,89,400), LPU (₹2,00,000), Amity University (₹2,25,000), MAHE Manipal (₹2,92,000), and Symbiosis SSODL (₹3,15,000 net with experience scholarship). Verify the latest details on the official university portal and on UGC-DEB before applying." },
-      { q: "What is the difference between Hospital Administration and Healthcare Management?", a: "Hospital Administration tracks (Sharda, DPU) lean toward hospital operations: planning, NABH/JCI quality, hospital finance, hospital HR. Healthcare Management tracks (MAHE, Symbiosis, Amity, Chandigarh, LPU, SMU) cover the broader healthcare sector including pharma-hospital interface, public health, health insurance, and consulting. Choose Hospital Administration for hospital-operations careers; Healthcare Management for broader sector flexibility." },
-      { q: "How much does an online MBA in Hospital or Healthcare Management cost in 2026?", a: "Total fees range from ₹1,20,000 at SMU (cheapest with current discount) to ₹3,70,000 standard at Symbiosis SSODL. Three pricing tiers: affordable (₹1,20,000-₹1,65,000), mid (₹1,89,400-₹2,25,000), and premium (₹2,92,000-₹3,70,000). Verify the latest details on the official university portal and on UGC-DEB before applying. Verify the latest details on the official university portal and on UGC-DEB before applying." },
-      { q: "Which is the cheapest online MBA in this field?", a: "SMU Sikkim Manipal at ₹1,20,000 with current discount is the cheapest UGC-DEB approved option, but its track is titled 'Healthcare' rather than 'Hospital Administration'. The cheapest with a dedicated Hospital Administration title is Sharda University Online at ₹1,40,000 (NAAC A++, UGC-DEB). Verify the latest details on the official university portal and on UGC-DEB before applying." },
-      { q: "Is an online MBA in this field valid for hospital chain jobs?", a: "Yes. All eight universities are UGC-DEB entitled, giving the degree the same legal recognition as a regular on-campus MBA. Apollo, Fortis, Manipal Hospitals, Max Healthcare, Medanta, Narayana Health, and AIIMS network accept UGC-DEB approved online MBAs for management positions. Verify the latest details on the official university portal and on UGC-DEB before applying." },
+      { q: "Which universities offer online MBA in Hospital Administration or Healthcare Management in India?", a: "Nine UGC-DEB approved universities offer this specialisation in 2026: SRM University Sikkim (₹1,10,000), SMU (₹1,20,000 with current discount), Sharda University (₹1,40,000), Chandigarh University (₹1,65,000 net), DPU Pune (₹1,89,400), LPU (₹2,00,000), Amity University (₹2,25,000), MAHE Manipal (₹2,92,000), and Symbiosis SSODL (₹3,15,000 net with experience scholarship). Verify the latest details on the official university portal and on UGC-DEB before applying." },
+      { q: "What is the difference between Hospital Administration and Healthcare Management?", a: "Hospital Administration tracks (Sharda, DPU) lean toward hospital operations: planning, NABH/JCI quality, hospital finance, hospital HR. Healthcare Management tracks (MAHE, Symbiosis, Amity, Chandigarh, LPU, SMU) cover the broader healthcare sector including pharma-hospital interface, public health, health insurance, and consulting. SRM University Sikkim titles its track Hospital and Health Care Management, and its portal lists hospital infrastructure planning, healthcare operations, health informatics, health insurance and quality management, so it reads across both. Choose Hospital Administration for hospital-operations careers; Healthcare Management for broader sector flexibility." },
+      { q: "How much does an online MBA in Hospital or Healthcare Management cost in 2026?", a: "Total fees range from ₹1,10,000 at SRM University Sikkim to ₹3,70,000 standard at Symbiosis SSODL. Three pricing tiers: affordable (₹1,10,000-₹1,65,000), mid (₹1,89,400-₹2,25,000), and premium (₹2,92,000-₹3,70,000). Verify the latest details on the official university portal and on UGC-DEB before applying." },
+      { q: "Which is the cheapest online MBA in this field?", a: "SRM University Sikkim at ₹1,10,000 is the cheapest UGC-DEB approved option, and it titles the track Hospital and Health Care Management. SMU Sikkim Manipal follows at ₹1,20,000 with current discount, though its track is titled 'Healthcare'. The cheapest with Hospital Administration in the programme title is Sharda University Online at ₹1,40,000 (NAAC A++, UGC-DEB). Verify the latest details on the official university portal and on UGC-DEB before applying." },
+      { q: "Is an online MBA in this field valid for hospital chain jobs?", a: "Yes. All nine universities are UGC-DEB entitled, giving the degree the same legal recognition as a regular on-campus MBA. Apollo, Fortis, Manipal Hospitals, Max Healthcare, Medanta, Narayana Health, and AIIMS network accept UGC-DEB approved online MBAs for management positions. Verify the latest details on the official university portal and on UGC-DEB before applying." },
       { q: "What does the curriculum cover?", a: "Semesters 1-2 cover MBA core. Specialisation subjects from semester 3 include Hospital Planning and Services, Hospital Operations and Strategic Management, Healthcare Quality (NABH/JCI), Healthcare Information Systems, Patient Care Management, Hospital Finance and Revenue Cycle, Health Insurance, Healthcare Legal Frameworks (Clinical Establishments Act, Bio-Medical Waste Rules), and Hospital HR Management. Verify the latest details on the official university portal and on UGC-DEB before applying." },
       { q: "Who should pursue an online MBA in Hospital or Healthcare Management?", a: "Five strong profiles: practising doctors moving into administration, nursing professionals moving into nursing administration, existing hospital operations and HR staff, public health and government healthcare officers, and healthcare-IT or pharma professionals planning a switch. Verify the latest details on the official university portal and on UGC-DEB before applying. Verify the latest details on the official university portal and on UGC-DEB before applying." },
       { q: "Can a doctor pursue this online MBA alongside clinical practice?", a: "Yes, this is one of the strongest use cases. Online MBAs are designed for working professionals; recorded lectures and weekend live sessions allow continued clinical practice. Many hospital chains specifically prefer clinicians with management qualifications for Senior Resident to Medical Superintendent and Hospital Director progressions. Verify the latest details on the official university portal and on UGC-DEB before applying." },
       { q: "What is the salary after this MBA in India?", a: "Doctors moving into administration reach ₹15-25 LPA in mid-management within 2-3 years post-MBA, with senior Medical Superintendents and Hospital Directors at large chains reaching ₹35-60 LPA. Nursing and operations professionals reach ₹10-18 LPA. Healthcare consulting roles at Sathguru, IQVIA, KPMG, EY range ₹15-30 LPA. Verify the latest details on the official university portal and on UGC-DEB before applying." },
       { q: "Which is better: Sharda, DPU, MAHE, or Symbiosis?", a: "Sharda Online at ₹1,40,000 is cheapest with a dedicated Hospital Administration title. DPU Pune at ₹1,89,400 has the strongest Maharashtra hospital chain alumni (D.Y. Patil network). MAHE at ₹2,92,000 has the strongest national brand (NIRF #3, IoE) and international recognition. Symbiosis at ₹3,15,000 net has strong placement support. Choose based on whether budget, regional alumni, brand, or placement matters most." },
-      { q: "Are there scholarships available?", a: "Yes. Symbiosis SSODL offers ₹55,000 scholarship for applicants with 2+ years experience (₹3,70,000 becomes ₹3,15,000). Chandigarh offers a 25% Early Bird scholarship (₹2,20,000 becomes ₹1,65,000 net). LPU offers a 20% Student Grant on its ₹50,000 semester fee. SMU offers discounts that vary by intake; contact admissions for the current offer." },
+      { q: "Are there scholarships available?", a: "Yes. Symbiosis SSODL offers ₹55,000 scholarship for applicants with 2+ years experience (₹3,70,000 becomes ₹3,15,000). Chandigarh offers a 25% Early Bird scholarship (₹2,20,000 becomes ₹1,65,000 net). LPU offers a 20% Student Grant on its ₹50,000 semester fee. SMU offers discounts that vary by intake; contact admissions for the current offer. SRM University Sikkim gives a 5% waiver for annual payment and 10% for paying the full programme upfront." },
       { q: "Is this online MBA enough for senior hospital roles?", a: "The MBA opens doors to mid-management roles. For Senior Vice President or CEO roles at large hospital chains, you typically need 10-15 years of healthcare experience plus the MBA. For Medical Superintendent and Hospital Director positions, the MBA combined with 5-7 years of healthcare experience is usually sufficient. The degree alone without sector experience is rarely enough for senior roles." },
       { q: "Do I need work experience for admission?", a: "Most universities accept applicants without work experience, requiring only a bachelor's degree (typically 50% minimum aggregate). However, Symbiosis SSODL gives a substantial scholarship to applicants with 2+ years experience. Practical career outcomes are significantly better with prior healthcare or healthcare-adjacent experience before enrolling. Verify the latest details on the official university portal and on UGC-DEB before applying." }
     ],
@@ -37637,9 +37637,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <div class="callout-answer">
 <strong>Quick Answer</strong>
-<p>An online mba hospital administration or mba healthcare management online programme in India costs between <strong>₹1,20,000 and ₹3,70,000</strong> depending on the university. Eight UGC-DEB approved universities offer this specialisation in 2026, split across two tracks: <strong>Hospital Administration</strong> (Sharda, DPU Pune) and the broader <strong>Healthcare Management</strong> (MAHE, Symbiosis SSODL, Amity, Chandigarh, LPU, SMU). Subjects covered include hospital operations, healthcare quality (NABH/JCI), patient care management, healthcare finance, regulatory compliance, and pharma-hospital interface.</p>
+<p>An online mba hospital administration or mba healthcare management online programme in India costs between <strong>₹1,10,000 and ₹3,70,000</strong> depending on the university. Nine UGC-DEB approved universities offer this specialisation in 2026, split across two tracks: <strong>Hospital Administration</strong> (Sharda, DPU Pune, SRM University Sikkim) and the broader <strong>Healthcare Management</strong> (MAHE, Symbiosis SSODL, Amity, Chandigarh, LPU, SMU). Subjects covered include hospital operations, healthcare quality (NABH/JCI), patient care management, healthcare finance, regulatory compliance, and pharma-hospital interface.</p>
 <ul>
-<li><strong>Cheapest UGC-DEB approved option:</strong> SMU Sikkim Manipal at ₹1,20,000</li>
+<li><strong>Cheapest UGC-DEB approved option:</strong> SRM University Sikkim at ₹1,10,000</li>
 <li><strong>Best brand for international healthcare careers:</strong> MAHE Manipal (NIRF #3, IoE)</li>
 <li><strong>Best for:</strong> Practising doctors moving into administration, nursing professionals moving into nursing administration, hospital operations and HR staff, public health and government healthcare officers, healthcare-IT and pharma professionals planning a switch</li>
 </ul>
@@ -37647,13 +37647,13 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>The <strong>online mba hospital administration</strong> is an established choice for working professionals and fresh graduates in 2026. Healthcare administration is one of the fastest-growing functions in Indian healthcare. Hospital chains have expanded into Tier-2 and Tier-3 cities, regulatory frameworks have tightened post-COVID, and the role of hospital administrator has shifted from back-office function to boardroom strategy. Demand for managers who understand both clinical realities and business operations has gone up sharply, and hiring at chains like Apollo, Fortis, Manipal, Max, Medanta, Narayana Health, and AIIMS has become more credentialing-driven.</p>
 
-<p>An online mba hospital administration or healthcare management programme is built for working professionals who want to move into senior healthcare roles without leaving their current job. The curriculum covers hospital planning, operations, financial management, healthcare quality, patient care management, and the legal and ethical frameworks specific to Indian healthcare delivery. Eight UGC-DEB approved universities offer this specialisation in 2026, with subtle differences in track titles. Here is what each costs, what each teaches, and how to pick the right one.</p>
+<p>An online mba hospital administration or healthcare management programme is built for working professionals who want to move into senior healthcare roles without leaving their current job. The curriculum covers hospital planning, operations, financial management, healthcare quality, patient care management, and the legal and ethical frameworks specific to Indian healthcare delivery. Nine UGC-DEB approved universities offer this specialisation in 2026, with subtle differences in track titles. Here is what each costs, what each teaches, and how to pick the right one.</p>
 
 <h2>Hospital Administration vs Healthcare Management: which one</h2>
 
 <p>The two terms are often used interchangeably but represent slightly different angles within the same broad discipline.</p>
 
-<p><strong>Hospital Administration</strong> tracks (Sharda, DPU Pune) lean toward the operational side: hospital planning and services, hospital operations, NABH/JCI quality standards, hospital finance and revenue cycle management, hospital HR, and patient care management. The dedicated Hospital Administration title on the certificate is genuinely useful when applying for roles like Hospital Director, Medical Superintendent, or Hospital Operations Manager.</p>
+<p><strong>Hospital Administration</strong> tracks (Sharda, DPU Pune, SRM University Sikkim) lean toward the operational side: hospital planning and services, hospital operations, NABH/JCI quality standards, hospital finance and revenue cycle management, hospital HR, and patient care management. The dedicated Hospital Administration title on the certificate is genuinely useful when applying for roles like Hospital Director, Medical Superintendent, or Hospital Operations Manager.</p>
 
 <p><strong>Healthcare Management</strong> tracks (MAHE, Symbiosis SSODL, Amity, Chandigarh, LPU, SMU) cover the broader healthcare delivery sector: hospital operations, but also pharma-hospital interface, public health, health insurance, and healthcare consulting. Healthcare Management is more flexible across roles outside hospitals (consulting, pharma sales to hospitals, health insurance, healthtech).</p>
 
@@ -37661,13 +37661,14 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <h2>Which universities offer online MBA hospital management or healthcare MBA India online?</h2>
 
-<p>Eight UGC-DEB approved universities offer a Hospital Administration or Healthcare Management track in their online MBA in 2026.</p>
+<p>Nine UGC-DEB approved universities offer a Hospital Administration or Healthcare Management track in their online MBA in 2026.</p>
 
 <table>
 <thead>
 <tr><th>University</th><th>Specialisation Name</th><th>Total Fee (Indicative)</th><th>Per Semester</th><th>Accreditation</th></tr>
 </thead>
 <tbody>
+<tr><td>SRM University Sikkim</td><td>Hospital and Health Care Management</td><td>₹1,10,000</td><td>₹27,500</td><td>NAAC A+, UGC-DEB</td></tr>
 <tr><td>SMU Sikkim Manipal</td><td>Healthcare</td><td>₹1,20,000 (with current discount)</td><td>₹30,000</td><td>NAAC A+, UGC-DEB</td></tr>
 <tr><td>Sharda University Online</td><td>Healthcare and Hospital Administration</td><td>₹1,40,000</td><td>₹35,000</td><td>NAAC A++, UGC-DEB</td></tr>
 <tr><td>Chandigarh University Online</td><td>Hospital Management</td><td>₹1,65,000 net (after 25% Early Bird)</td><td>₹41,250</td><td>NAAC A+, UGC-DEB</td></tr>
@@ -37683,10 +37684,10 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <h2>How much does an online MBA in Hospital or Healthcare Management cost?</h2>
 
-<p>Three pricing tiers exist across the eight programmes.</p>
+<p>Three pricing tiers exist across the nine programmes.</p>
 
-<h3>Affordable tier (₹1,20,000 to ₹1,65,000 net)</h3>
-<p>SMU at ₹1,20,000 with current discounts is the cheapest UGC-DEB approved option. Sharda University Online at ₹1,40,000 follows and is the cheapest with a dedicated Hospital Administration title in the programme name (Healthcare and Hospital Administration). Chandigarh University Online at ₹1,65,000 net (after the 25% Early Bird scholarship from a ₹2,20,000 sticker price) sits at the upper end of this tier. The Premium tier at Chandigarh costs ₹1,80,400 net (after an 18% scholarship) and bundles three certifications: Harvard Business Publishing, PwC industry-readiness modules, and CAPM project management certification preparation.</p>
+<h3>Affordable tier (₹1,10,000 to ₹1,65,000 net)</h3>
+<p>SRM University Sikkim at ₹1,10,000, or ₹27,500 a semester, is the cheapest UGC-DEB approved option. SMU follows at ₹1,20,000 with current discounts. Sharda University Online at ₹1,40,000 comes next and is the cheapest with a dedicated Hospital Administration title in the programme name (Healthcare and Hospital Administration). Chandigarh University Online at ₹1,65,000 net (after the 25% Early Bird scholarship from a ₹2,20,000 sticker price) sits at the upper end of this tier. The Premium tier at Chandigarh costs ₹1,80,400 net (after an 18% scholarship) and bundles three certifications: Harvard Business Publishing, PwC industry-readiness modules, and CAPM project management certification preparation.</p>
 
 <h3>Mid-tier (₹1,89,400 to ₹2,25,000)</h3>
 <p>DPU Pune at ₹1,89,400 has the strongest hospital network alumni base in Maharashtra. The D.Y. Patil hospital chain is one of India's largest private hospital networks, which gives DPU graduates a genuine advantage in Pune-Mumbai-Nashik corridor hospital hiring. LPU Online at ₹40,400 per semester (with the 20% Student Grant on a ₹50,000 standard fee) totals ₹1,61,600 effective for the discounted track, or ₹2,00,000 actual without the grant. Amity University Online at ₹2,25,000 brings WASC (USA) and QAA (UK) international accreditations alongside UGC-DEB, useful for applicants planning to work in healthcare administration abroad later in their career.</p>
@@ -37698,7 +37699,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <h2>What does the curriculum actually teach?</h2>
 
-<p>Semesters 1 and 2 cover the standard MBA core: managerial economics, financial reporting, marketing management, organisational behaviour, business research methods, and operations management. The Hospital or Healthcare Management specialisation begins in Semester 3 across all eight universities.</p>
+<p>Semesters 1 and 2 cover the standard MBA core: managerial economics, financial reporting, marketing management, organisational behaviour, business research methods, and operations management. The Hospital or Healthcare Management specialisation begins in Semester 3 across all nine universities.</p>
 
 <p>Common specialisation subjects include Hospital Planning and Services, Hospital Operations and Strategic Management, Healthcare Marketing, Healthcare Quality Management (NABH/JCI standards), Healthcare Information Systems and Health Records, Patient Care Management and Medical Ethics, Hospital Finance and Revenue Cycle Management, Health Insurance and Claims Management, Healthcare Legal and Regulatory Frameworks (Clinical Establishments Act, Consumer Protection Act applied to healthcare, Bio-Medical Waste Management Rules), and Hospital Human Resources Management.</p>
 
@@ -37726,19 +37727,19 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <h2>Is the degree valid for hospital chain jobs?</h2>
 
-<p>Yes. All eight universities are UGC-DEB entitled, which means the degree carries the same legal recognition as a regular on-campus MBA. UGC's 2020 notification confirmed parity for hiring across both private hospital chains and government healthcare roles. Apollo, Fortis, Manipal Hospitals, Max Healthcare, Medanta, Narayana Health, and the AIIMS network all accept UGC-DEB approved online MBAs for management positions.</p>
+<p>Yes. All nine universities are UGC-DEB entitled, which means the degree carries the same legal recognition as a regular on-campus MBA. UGC's 2020 notification confirmed parity for hiring across both private hospital chains and government healthcare roles. Apollo, Fortis, Manipal Hospitals, Max Healthcare, Medanta, Narayana Health, and the AIIMS network all accept UGC-DEB approved online MBAs for management positions.</p>
 
-<p>For senior strategic roles at large hospital chains, the institutional brand matters more than the specialisation label. MAHE, Symbiosis SSODL, and Amity carry stronger weight in chain hiring than smaller universities. For mid-management hospital operations roles, all eight universities give equally valid degrees, and prior hospital experience matters more than the brand.</p>
+<p>For senior strategic roles at large hospital chains, the institutional brand matters more than the specialisation label. MAHE, Symbiosis SSODL, and Amity carry stronger weight in chain hiring than smaller universities. For mid-management hospital operations roles, all nine universities give equally valid degrees, and prior hospital experience matters more than the brand.</p>
 
 <h2>What are the realistic salary expectations?</h2>
 
 <p>Salaries depend heavily on prior experience. Existing doctors moving into administration typically reach ₹15 to ₹25 LPA in mid-management roles within 2 to 3 years post-MBA. Senior Medical Superintendents and Hospital Directors at large chains can reach ₹35 to ₹60 LPA. Nursing and operations professionals progressing post-MBA reach ₹10 to ₹18 LPA in mid-management. Healthcare consulting at firms like Sathguru, IQVIA, KPMG Healthcare, and EY Healthcare ranges from ₹15 to ₹30 LPA. Outsiders entering hospital administration without prior healthcare experience generally start at ₹6 to ₹10 LPA in junior administrative roles.</p>
 
-<h2>How to choose between SMU, Sharda, Chandigarh, DPU, LPU, Amity, MAHE, and Symbiosis</h2>
+<h2>How to choose between SRM Sikkim, SMU, Sharda, Chandigarh, DPU, LPU, Amity, MAHE, and Symbiosis</h2>
 
 <p>Decision matrix based on your priority.</p>
 
-<p><strong>If budget is the top priority:</strong> SMU at ₹1,20,000 or Sharda at ₹1,40,000. Both NAAC A or A++ rated, both UGC-DEB approved, both deliver standard hospital administration curriculum.</p>
+<p><strong>If budget is the top priority:</strong> SRM University Sikkim at ₹1,10,000, SMU at ₹1,20,000, or Sharda at ₹1,40,000. All three are NAAC A or A++ rated, all three are UGC-DEB entitled, and all three deliver a standard hospital administration curriculum.</p>
 
 <p><strong>If you want a dedicated Hospital Administration title on the certificate:</strong> Sharda University Online (Healthcare and Hospital Administration) at ₹1,40,000, or DPU Pune (Hospital Administration & Healthcare Management) at ₹1,89,400. Sharda is cheaper; DPU has stronger Maharashtra hospital industry alumni.</p>
 
@@ -37750,7 +37751,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p><strong>If brand and placement support matter most:</strong> MAHE or Symbiosis SSODL. Symbiosis at ₹3,15,000 net (with 2+ yrs experience scholarship) competes with MAHE on placement support if you qualify for the scholarship.</p>
 
-<p><strong>If you need lowest semester fee for cash flow management:</strong> SMU at ₹30,000 per semester or LPU at ₹40,400 per semester with the 20% Student Grant.</p>
+<p><strong>If you need lowest semester fee for cash flow management:</strong> SRM University Sikkim at ₹27,500 per semester, SMU at ₹30,000 per semester, or LPU at ₹40,400 per semester with the 20% Student Grant.</p>
 
 
 <p>To summarise the online mba hospital administration landscape: this comparison covers UGC-DEB approved options across all major price tiers. The online mba hospital administration fee structure varies significantly by university, payment plan, and scholarship eligibility. Applicants choosing the online mba hospital administration should compare not just sticker price but also semester-wise versus annual versus one-time payment differences. Most online mba hospital administration programmes offer multiple payment options, which can change the effective total fee by ₹15,000 to ₹30,000 across the 2 to 3 year duration.</p>
@@ -37760,7 +37761,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <h2>Final word on the online MBA in Hospital and Healthcare Management</h2>
 
-<p>Healthcare administration is a sector where domain knowledge compounds with management training. The MBA accelerates careers for those already inside healthcare. Eight programmes, three price tiers, two title variants. Pick the one that fits both your budget and the specific role you are aiming for. Pair the MBA with focused certifications (NABH Quality Manager, Lean Six Sigma in Healthcare, or Project Management Professional) to maximise outcomes. The Indian healthcare sector is structurally undersupplied with management talent: hospital chains are expanding aggressively into Tier-2 and Tier-3 cities, regulatory complexity continues to grow, and digital health is reshaping the patient experience. Talk to an independent counsellor before paying anything. Fees and scholarships at most of these universities change every term, and what is true today may not be true at admission time.</p>
+<p>Healthcare administration is a sector where domain knowledge compounds with management training. The MBA accelerates careers for those already inside healthcare. Nine programmes, three price tiers, two title variants. Pick the one that fits both your budget and the specific role you are aiming for. Pair the MBA with focused certifications (NABH Quality Manager, Lean Six Sigma in Healthcare, or Project Management Professional) to maximise outcomes. The Indian healthcare sector is structurally undersupplied with management talent: hospital chains are expanding aggressively into Tier-2 and Tier-3 cities, regulatory complexity continues to grow, and digital health is reshaping the patient experience. Talk to an independent counsellor before paying anything. Fees and scholarships at most of these universities change every term, and what is true today may not be true at admission time.</p>
 
 <h2>Sources to consult</h2>
 
@@ -37768,7 +37769,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <li><a href="https://deb.ugc.ac.in" rel="nofollow">deb.ugc.ac.in</a>, UGC-DEB approved programme list</li>
 <li><a href="https://naac.gov.in" rel="nofollow">naac.gov.in</a>, NAAC accreditation database</li>
 <li><a href="https://nirfindia.org" rel="nofollow">nirfindia.org</a>, NIRF Management rankings</li>
-<li>Official portal of each of the eight universities for current fees, scholarships, and admission deadlines</li>
+<li>Official portal of each of the nine universities for current fees, scholarships, and admission deadlines</li>
 <li>Ministry of Health and Family Welfare (mohfw.gov.in), for healthcare sector hiring norms and policy framework</li>
 <li>National Accreditation Board for Hospitals (NABH) at nabh.co, for the quality standards covered in the curriculum</li>
 </ul>
@@ -37783,7 +37784,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <h2>Final word on the online MBA in Hospital and Healthcare Management</h2>
 
-<p>Healthcare administration is a sector where domain knowledge compounds with management training. The MBA accelerates careers for those already inside healthcare. Eight programmes, three price tiers, two title variants. Pick the one that fits both your budget and the specific role you are aiming for. Pair the MBA with focused certifications (NABH Quality Manager, Lean Six Sigma in Healthcare, or Project Management Professional) to maximise outcomes. The Indian healthcare sector is structurally undersupplied with management talent: hospital chains are expanding aggressively into Tier-2 and Tier-3 cities, regulatory complexity continues to grow, and digital health is reshaping the patient experience. Talk to an independent counsellor before paying anything. Fees and scholarships at most of these universities change every term, and what is true today may not be true at admission time.</p>
+<p>Healthcare administration is a sector where domain knowledge compounds with management training. The MBA accelerates careers for those already inside healthcare. Nine programmes, three price tiers, two title variants. Pick the one that fits both your budget and the specific role you are aiming for. Pair the MBA with focused certifications (NABH Quality Manager, Lean Six Sigma in Healthcare, or Project Management Professional) to maximise outcomes. The Indian healthcare sector is structurally undersupplied with management talent: hospital chains are expanding aggressively into Tier-2 and Tier-3 cities, regulatory complexity continues to grow, and digital health is reshaping the patient experience. Talk to an independent counsellor before paying anything. Fees and scholarships at most of these universities change every term, and what is true today may not be true at admission time.</p>
 
 <h2>Sources to consult</h2>
 
@@ -37791,7 +37792,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <li><a href="https://deb.ugc.ac.in" rel="nofollow">deb.ugc.ac.in</a>, UGC-DEB approved programme list</li>
 <li><a href="https://naac.gov.in" rel="nofollow">naac.gov.in</a>, NAAC accreditation database</li>
 <li><a href="https://nirfindia.org" rel="nofollow">nirfindia.org</a>, NIRF Management rankings</li>
-<li>Official portal of each of the eight universities for current fees, scholarships, and admission deadlines</li>
+<li>Official portal of each of the nine universities for current fees, scholarships, and admission deadlines</li>
 <li>Ministry of Health and Family Welfare (mohfw.gov.in), for healthcare sector hiring norms and policy framework</li>
 <li>National Accreditation Board for Hospitals (NABH) at nabh.co, for the quality standards covered in the curriculum</li>
 </ul>
@@ -39569,8 +39570,8 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     heroImageAlt: 'Asian waitress setting an elegant table in a Hanoi restaurant, creating a formal dining experience.',
     faqs: [
       { q: 'Is online MBA hospitality management worth it 2026?', a: 'Yes for working professionals already in hotels, restaurants, tourism, travel, airlines, or events sectors seeking senior tier transitions. Online MBA hospitality management at premium UGC-DEB universities (NMIMS, Amity) delivers ₹6-12 LPA placement outcomes for hospitality manager roles, with senior progression to ₹15-30 LPA at General Manager or Hotel Director level within 5-8 years. The specialisation is structurally favourable for India hospitality sector recovery post-COVID, tourism expansion through Incredible India initiatives, and luxury hotel segment growth. For pure hotel management depth, offline IHM Pusa or IIHM Kolkata programmes deliver structurally deeper hospitality skills.' },
-      { q: 'What is the fee range for online MBA hospitality India?', a: 'Online MBA hospitality management fee range across UGC-DEB approved Indian universities: ₹31,500 (IGNOU cheapest valid) to ₹1,99,000 (Amity premium tier sticker). Mid-tier value programmes at LPU (₹1,30,600 net after 20 percent grant), Chandigarh (₹1,16,250 net after 25 percent scholarship), MUJ (₹1,75,000 inclusive) deliver hospitality career outcomes at accessible fees. Premium tier at NMIMS (₹1,76,500 sticker) and Amity (₹1,99,000 sticker) provide industry network access through alumni in hospitality leadership roles at Taj, Oberoi, Marriott India, Hyatt, ITC Hotels.' },
-      { q: 'Which colleges offer online MBA hospitality management?', a: 'Top UGC-DEB approved colleges offering online MBA with hospitality specialisation include NMIMS Mumbai (services management with hospitality alignment), Amity Online (hospitality and tourism specialisation), LPU Online (value tier with hospitality electives), Chandigarh University Online (hospitality management focus), MUJ Online Manipal (services management), IGNOU (cheapest valid option). For pure hospitality and hotel management depth, Indian Institute of Hotel Management (IHM) Pusa Delhi, Welcomgroup Graduate School of Hotel Administration (WGSHA Manipal), Indian Institute of Hotel Management Kolkata offer structurally deeper offline programmes. Online MBA hospitality is broader management track with hospitality electives rather than dedicated hotel management depth.' },
+      { q: 'What is the fee range for online MBA hospitality India?', a: 'Online MBA hospitality management fee range across UGC-DEB approved Indian universities: ₹31,500 (IGNOU cheapest valid) to ₹1,99,000 (Amity premium tier sticker). Mid-tier value programmes at LPU (₹1,30,600 net after 20 percent grant), Chandigarh (₹1,16,250 net after 25 percent scholarship), MUJ (₹1,75,000 inclusive), Bharati Vidyapeeth (₹1,76,000 tuition) deliver hospitality career outcomes at accessible fees. Premium tier at NMIMS (₹1,76,500 sticker) and Amity (₹1,99,000 sticker) provide industry network access through alumni in hospitality leadership roles at Taj, Oberoi, Marriott India, Hyatt, ITC Hotels.' },
+      { q: 'Which colleges offer online MBA hospitality management?', a: 'Top UGC-DEB approved colleges offering online MBA with hospitality specialisation include NMIMS Mumbai (services management with hospitality alignment), Amity Online (hospitality and tourism specialisation), LPU Online (value tier with hospitality electives), Chandigarh University Online (hospitality management focus), MUJ Online Manipal (services management), Bharati Vidyapeeth (DU) Online (a named Hospitality specialisation covering Food Service Operation, Tour Operations Management, Hospitality Marketing Management and Accommodation Operations Management), IGNOU (cheapest valid option). For pure hospitality and hotel management depth, Indian Institute of Hotel Management (IHM) Pusa Delhi, Welcomgroup Graduate School of Hotel Administration (WGSHA Manipal), Indian Institute of Hotel Management Kolkata offer structurally deeper offline programmes. Online MBA hospitality is broader management track with hospitality electives rather than dedicated hotel management depth.' },
       { q: 'What is online MBA hospitality salary India 2026?', a: 'Online MBA hospitality salary ranges in India 2026: ₹3-5 LPA for entry-level Front Office Manager Trainee, F&B Coordinator, Sales Coordinator roles at hotels and restaurants; ₹6-12 LPA for Department Manager (Front Office, F&B, Sales, Marketing) roles after 2-4 years experience; ₹15-30 LPA for General Manager, Resident Manager, Director of Operations roles after 5-8 years experience; ₹30-60 LPA for Hotel General Manager, Cluster GM, Vice President Operations roles at premium luxury hotel groups after 10+ years. Top employers include Taj Hotels, Oberoi Group, Marriott India, Hyatt India, ITC Hotels, Accor India, Hilton India, IHCL, Lemon Tree, Ginger Hotels, Trident, Vivanta.' },
       { q: 'What is the syllabus for online MBA hospitality?', a: 'Online MBA hospitality management syllabus across UGC-DEB approved Indian universities typically covers Hospitality Management Fundamentals, Hotel Operations Management, Food and Beverage Management, Front Office Management, Housekeeping Management, Tourism Management, Travel Operations, Event Management, Hospitality Marketing, Revenue Management and Pricing, Hospitality Finance, Customer Experience Management, Service Quality Management, Sustainable Tourism, Wellness and Spa Management, Cruise and Aviation Hospitality, Hospitality Technology (PMS, POS systems), and capstone project. The 4-semester structure follows AICTE 2021 framework with 24-month duration.' },
       { q: 'Is online MBA hospitality better than IHM diploma?', a: 'Different programmes serving different student profiles. IHM (Indian Institute of Hotel Management) 3-year BSc Hospitality and Hotel Administration delivers hands-on hospitality skills, kitchen training, F&B service training, and entry hotel hiring access at Taj, Oberoi, Marriott management training programmes. Online MBA hospitality delivers management theory, financial analysis, marketing depth, and senior tier promotion eligibility for working hospitality professionals. Pick IHM diploma path for entry hospitality careers as fresher with hands-on industry training. Pick online MBA hospitality for working hospitality professionals (3-5 years experience) seeking senior management transitions. Combined IHM degree plus online MBA hospitality is structurally optimal pathway.' },
@@ -39583,7 +39584,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <div class="callout-answer">
 <strong>Quick Answer (TL;DR)</strong>
-<p>An online mba hospitality management india is a 2-year UGC-DEB AICTE approved Master of Business Administration with hospitality, hotel operations, tourism, and event management specialisation tracks at premium and value tier UGC-DEB approved Indian universities. The verdict for 2026: structurally strong choice for working professionals already in hotels, restaurants, tourism, travel, airlines, or events sectors seeking senior tier transitions. Top colleges include NMIMS, Amity, LPU, Chandigarh, IGNOU at fee ranges ₹31,500 to ₹1,99,000.</p>
+<p>An online mba hospitality management india is a 2-year UGC-DEB AICTE approved Master of Business Administration with hospitality, hotel operations, tourism, and event management specialisation tracks at premium and value tier UGC-DEB approved Indian universities. The verdict for 2026: structurally strong choice for working professionals already in hotels, restaurants, tourism, travel, airlines, or events sectors seeking senior tier transitions. Top colleges include NMIMS, Amity, LPU, Chandigarh, Bharati Vidyapeeth, IGNOU at fee ranges ₹31,500 to ₹1,99,000.</p>
 <ul>
 <li><strong>Fee range:</strong> ₹31,500 (IGNOU) to ₹1,99,000 (Amity sticker)</li>
 <li><strong>Salary range:</strong> ₹3-5 LPA entry; ₹6-12 LPA mid; ₹15-30 LPA senior</li>
@@ -39609,12 +39610,15 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <tr><td>Value tier</td><td>Chandigarh University</td><td>₹1,16,250 net</td><td>₹29,063 net</td><td>Hospitality management focus</td></tr>
 <tr><td>Value tier</td><td>LPU Online</td><td>₹1,30,600 net</td><td>₹32,400 net</td><td>Hospitality electives</td></tr>
 <tr><td>Mid tier</td><td>MUJ Online Manipal</td><td>₹1,75,000</td><td>₹43,750</td><td>Services management</td></tr>
+<tr><td>Mid tier</td><td>Bharati Vidyapeeth (DU) Online</td><td>₹1,76,000</td><td>Total only, no per-semester split published</td><td>Named Hospitality specialisation</td></tr>
 <tr><td>Premium tier</td><td>NMIMS</td><td>₹1,76,500 sticker</td><td>Per AICTE structure</td><td>Services management hospitality</td></tr>
 <tr><td>Premium tier</td><td>Amity Online</td><td>₹1,99,000 sticker</td><td>₹49,750 sticker</td><td>Hospitality and tourism specialisation</td></tr>
 </tbody>
 </table>
 
 <p>The fee range across UGC-DEB approved Indian universities is genuinely wide. The ₹31,500 IGNOU option to ₹1,99,000 Amity premium tier represents over 6x fee variation; the right pick depends on placement support need, prior hospitality experience, and target employer category.</p>
+
+<p>Bharati Vidyapeeth (Deemed to be University) Online is one of the few universities in this table that names Hospitality as a full specialisation rather than folding it into a services-management elective block. Its portal lists four hospitality papers: Food Service Operation and Tour Operations Management in Semester 3, then Hospitality Marketing Management and Accommodation Operations Management in Semester 4. The university is NAAC A++ and holds NIRF University rank 59, and its online programmes are UGC-DEB entitled and AICTE approved. Tuition is ₹1,76,000 for the two years, with registration and admission fees charged separately and both non-refundable. The <a href="/universities/bharati-vidyapeeth-university-online/mba/hospitality" class="ilink">Bharati Vidyapeeth online MBA Hospitality page</a> carries the full subject list and eligibility. Edify compares public UGC, NAAC and NIRF data, no paid rankings.</p>
 
 <p class="callout-warning"><strong>Verify before paying:</strong> All fees are verified against official university portals as of May 2026 and indicative subject to revision. Confirm current scholarship eligibility, examination fee inclusion, and convocation costs on each university portal. Verify UGC-DEB and AICTE entitlements on respective official portals for the 2026 intake. EdifyEdu does not earn referral commission from any university listed.</p>
 
@@ -42714,8 +42718,8 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     slug: 'online-mba-northeast-india-2026',
     title: 'Best Online MBA Universities in Northeast India 2026',
     h1Title: 'Best Online MBA in Northeast India: 4 Universities Across 3 States Compared',
-    seoTitle: 'Best Online MBA in NE India 2026: 4 Unis, Fees ₹54K to ₹1.70L | Edify',
-    metaDescription: 'Online MBA in Northeast India 2026: 4 UGC-DEB approved universities across Sikkim, Assam, Mizoram compared. Fees from ₹54,000 (Central Uni) to ₹1,70,000.',
+    seoTitle: 'Best Online MBA in NE India 2026: 4 Unis, Fees ₹54K to ₹1.20L | Edify',
+    metaDescription: 'Online MBA in Northeast India 2026: 4 UGC-DEB approved universities across Sikkim, Assam, Mizoram compared. Fees from ₹54,000 (Central Uni) to ₹1,20,000.',
     category: 'City Guides',
     tags: ['online mba northeast india', 'online mba assam', 'online mba sikkim', 'online university northeast india', 'sikkim manipal online mba', 'assam don bosco online mba', 'mizoram university online mba', 'online mba northeast 2026'],
     publishedAt: '2026-07-07',
@@ -42728,7 +42732,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     heroImageAlt: 'Professionals collaborating around a modern office table with laptops and documents.',
     quickFacts: [
       { label: 'Region', value: 'Northeast India (4 universities, 3 states)' },
-      { label: 'Fee Range', value: '₹54,000 to ₹1,70,000' },
+      { label: 'Fee Range', value: '₹54,000 to ₹1,20,000' },
       { label: 'Best Value', value: 'Mizoram University (₹54K, Central Uni, NAAC A)' },
       { label: 'Duration', value: '2 years' },
     ],
@@ -42743,14 +42747,14 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 7 July 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. University data sourced from official portals, UGC-DEB entitlement list, NAAC accreditation database, and current edifyedu.in university profiles.</em></p>
 
 <div class="callout-answer">
-<p><strong>Short answer:</strong> Northeast India has 4 UGC-DEB entitled universities offering online MBA programmes in 2026, spread across Sikkim, Assam, and Mizoram. If you want the cheapest option from a Central University, <a href="/universities/mizoram-university-online">Mizoram University Online</a> (NAAC A, NIRF #82, ₹54K to ₹56K total) is the standout. If the Manipal brand matters, <a href="/universities/sikkim-manipal-university-online">Sikkim Manipal University Online</a> (NAAC A+, ₹1.20L, mandatory dual specialisation) is the region's strongest brand. For the SRM Group name with Coursera integration, <a href="/universities/srm-university-sikkim-online">SRM University Sikkim Online</a> (NAAC A+, ₹1.70L) fills the premium tier. Below is the full comparison.</p>
+<p><strong>Short answer:</strong> Northeast India has 4 UGC-DEB entitled universities offering online MBA programmes in 2026, spread across Sikkim, Assam, and Mizoram. If you want the cheapest option from a Central University, <a href="/universities/mizoram-university-online">Mizoram University Online</a> (NAAC A, NIRF #82, ₹54K to ₹56K total) is the standout. If the Manipal brand matters, <a href="/universities/sikkim-manipal-university-online">Sikkim Manipal University Online</a> (NAAC A+, ₹1.20L, mandatory dual specialisation) is the region's strongest brand. For the SRM Group name with Coursera integration, <a href="/universities/srm-university-sikkim-online">SRM University Sikkim Online</a> (NAAC A+, ₹1,10,000, 7 specialisations) is the cheaper of the two branded options. Below is the full comparison.</p>
 </div>
 
 <h2>Why Northeast India Needs Its Own Online MBA Guide</h2>
 
 <p>The eight states of Northeast India (Assam, Sikkim, Meghalaya, Mizoram, Manipur, Nagaland, Tripura, and Arunachal Pradesh) share a problem that most "best online MBA" lists ignore: quality B-schools are physically scarce in the region. IIM Shillong is the only top-tier management institute in the entire Northeast. For a working professional in Guwahati, Gangtok, or Aizawl, the on-campus MBA path typically means relocating to Delhi, Bangalore, or Mumbai.</p>
 
-<p>Online MBA solves that access problem directly. Four NE-based universities now offer UGC-DEB approved online MBA programmes. The fee range runs from ₹54,000 (Mizoram University, a Central University) to ₹1,70,000 (SRM Sikkim). That is a 3x difference for the same two-year degree format.</p>
+<p>Online MBA solves that access problem directly. Four NE-based universities now offer UGC-DEB approved online MBA programmes. The fee range runs from ₹54,000 (Mizoram University, a Central University) to ₹1,20,000 (Sikkim Manipal). That is more than a 2x difference for the same two-year degree format, and Assam Don Bosco quotes a wider band on top of that.</p>
 
 <p>This guide serves two audiences. If you are a learner IN the Northeast, these are your home-region universities with local credibility and alumni networks. If you are a learner OUTSIDE the Northeast, Mizoram University and Sikkim Manipal are pan-India budget options with government or heritage credibility that compete directly with universities charging 2x to 5x more.</p>
 
@@ -42800,8 +42804,8 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <td style="padding:8px">Gangtok, Sikkim</td>
 <td style="padding:8px;text-align:center">A+</td>
 <td style="padding:8px;text-align:center">Not ranked</td>
-<td style="padding:8px;text-align:right">₹1.70L</td>
-<td style="padding:8px">Finance, Marketing, HR</td>
+<td style="padding:8px;text-align:right">₹1.10L</td>
+<td style="padding:8px">Finance, Marketing, HR, Ops/SCM, Business Analytics/AI, Hospital &amp; Health Care, Hospitality &amp; Tourism</td>
 </tr>
 </tbody>
 </table>
@@ -42843,11 +42847,11 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <h3>SRM University Sikkim Online, Gangtok</h3>
 
-<p>SRM University Sikkim (formally Shri Ramasamy Memorial University) operates under the SRM Group brand, the same network as SRM IST Chennai (NAAC A++, NIRF #11). The Sikkim campus is a separate institution with its own NAAC A+ accreditation and UGC-DEB entitlement. The online MBA offers 3 specialisations: Finance, Marketing, and HR.</p>
+<p>SRM University Sikkim (formally Shri Ramasamy Memorial University) operates under the SRM Group brand, the same network as SRM IST Chennai (NAAC A++, NIRF #11). The Sikkim campus is a separate institution with its own NAAC A+ accreditation and UGC-DEB entitlement. The online MBA offers 7 specialisations: Finance and Fintech, Marketing and Digital Technologies, HR and Emerging Technologies, Operations and Supply Chain Management, Business Analytics and Artificial Intelligence, Hospital and Health Care Management, and Hospitality and Tourism Management.</p>
 
-<p>Total fee: ₹1,70,000. The programme includes Coursera certifications bundled into the curriculum and placement support through a 3000+ company network. SRM Sikkim's differentiator is the SRM Group brand, which carries recognition in southern and western India that other NE universities do not.</p>
+<p>Total fee: ₹1,10,000. The programme includes Coursera certifications bundled into the curriculum and placement support through a 3000+ company network. SRM Sikkim's differentiator is the SRM Group brand, which carries recognition in southern and western India that other NE universities do not.</p>
 
-<p>The trade-off: at ₹1.70L with only 3 specialisations, SRM Sikkim is the most expensive NE option with the narrowest spec menu. SMU at ₹1.20L offers 6 specialisations plus dual-spec at a lower price. SRM Sikkim makes sense if the SRM Group brand specifically matters for your career goals.</p>
+<p>The trade-off runs the other way to what the brand tier suggests. At ₹1,10,000 with 7 specialisations, SRM Sikkim undercuts SMU at ₹1.20L and carries the wider spec menu of the two, including Hospital and Health Care Management and Hospitality and Tourism Management, which no other NE university on this list offers. SMU still holds the larger alumni network and mandatory dual specialisation. SRM Sikkim makes sense if the SRM Group brand or one of those two niche tracks matters for your career goals.</p>
 
 <h2>Which NE Universities Did Not Make This List?</h2>
 
@@ -42861,7 +42865,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>An online MBA lets you restart or accelerate your career without relocating. If you took a 2-3 year break after your bachelor's degree, or if you are working in Guwahati, Shillong, or Imphal and cannot afford to pause your job for a full-time programme, online MBA is the format built for your situation.</p>
 
-<p>At ₹54,000 (MZU) to ₹1,70,000 (SRM Sikkim), the financial risk is dramatically lower than a ₹8-25 lakh residential MBA. You recover the fee within months of a post-MBA salary increment, not years.</p>
+<p>At ₹54,000 (MZU) to ₹1,20,000 (SMU), the financial risk is dramatically lower than a ₹8-25 lakh residential MBA. You recover the fee within months of a post-MBA salary increment, not years.</p>
 
 <div class="cta-box" style="background:#0f172a;color:#fff;border-radius:12px;padding:24px;margin:32px 0;text-align:center">
   <p style="font-size:18px;font-weight:700;margin:0 0 8px">Working professional in the Northeast ready to compare online MBA options?</p>

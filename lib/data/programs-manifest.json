@@ -9481,6 +9481,30 @@
   },
   {
     "university_slug": "srm-university-sikkim-online",
+    "program": "mba",
+    "spec_slug": "operations-and-supply-chain-management",
+    "spec_name": "Operations and Supply Chain Management"
+  },
+  {
+    "university_slug": "srm-university-sikkim-online",
+    "program": "mba",
+    "spec_slug": "business-analytics-and-artificial-intelligence",
+    "spec_name": "Business Analytics and Artificial Intelligence"
+  },
+  {
+    "university_slug": "srm-university-sikkim-online",
+    "program": "mba",
+    "spec_slug": "hospital-and-health-care-management",
+    "spec_name": "Hospital and Health Care Management"
+  },
+  {
+    "university_slug": "srm-university-sikkim-online",
+    "program": "mba",
+    "spec_slug": "hospitality-and-tourism-management",
+    "spec_name": "Hospitality and Tourism Management"
+  },
+  {
+    "university_slug": "srm-university-sikkim-online",
     "program": "bba",
     "spec_slug": "general-management",
     "spec_name": "General Management"

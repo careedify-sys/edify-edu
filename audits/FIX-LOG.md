@@ -9,6 +9,122 @@ the fix by accident.
 
 ---
 
+## 2026-09-14 · SRM Sikkim had four missing specialisations and a fee that was 55% too high
+
+**Source.** Rishi asked for BVDU and SRM Sikkim to be added to the hospital
+management page. Checking the two official portals before writing produced one
+confirmation, one refusal, and one fee correction nobody had asked for.
+
+### 1. SRM Sikkim: `lib/data.ts` listed three specialisations, the portal lists seven
+
+`onlinesrm.in/mba/` lists seven: Finance and Fintech, Marketing and Digital
+Technologies, HR and Emerging Technologies, Operations and Supply Chain
+Management, Business Analytics and Artificial Intelligence, **Hospital and
+Health Care Management**, and **Hospitality and Tourism Management**. We carried
+only Finance, Marketing and Human Resource Management.
+
+That is why SRM Sikkim was absent from `/programs/mba/healthcare-management`
+(and from `/programs/mba/hospital-management`, which redirects into it). The hub
+derives its university list from `mbaSpecs` in `lib/data-slim.ts`, so a missing
+specialisation is a missing university, not a missing link.
+
+The four missing names were added. The three existing names were **left alone
+deliberately**: their slugs (`finance`, `marketing`, `hr-management`) are live,
+indexed URLs, and renaming a spec string is how a URL moves. The portal's fuller
+titles are recorded in a comment above the array instead.
+
+Four new URLs, verified through the full regeneration chain
+(`prebuild` then `normalize-valid-urls.mts`, per `project_valid_urls_chain`):
+
+    /universities/srm-university-sikkim-online/mba/hospital-and-health-care-management
+    /universities/srm-university-sikkim-online/mba/hospitality-and-tourism-management
+    /universities/srm-university-sikkim-online/mba/operations-and-supply-chain-management
+    /universities/srm-university-sikkim-online/mba/business-analytics-and-artificial-intelligence
+
+Set diff against HEAD: 6 added (those four plus two `/programs/mba/` spec hubs,
+which `app/sitemap.ts` excludes anyway), 0 removed.
+
+### 2. BVDU does not offer this specialisation online, so it is not listed
+
+`bharatividyapeethonline.com/courses/mba/` lists fourteen specialisations and
+none of them is Hospital or Healthcare Management. BVDU *does* award an MBA in
+Health Care and Hospital Management, but through its Centre for Health
+Management Studies and Research, which is a campus programme, not the online
+MBA. Putting BVDU on the hospital-management page would have been a fabricated
+claim on a site whose whole positioning is that it does not make them.
+
+Rishi's call on being shown this: add BVDU's **Hospitality** track to the
+hospitality page instead, which the portal does confirm. Done, with the four
+elective papers the portal names (Food Service Operation, Tour Operations
+Management, Hospitality Marketing Management, Accommodation Operations
+Management) and a link to `/universities/bharati-vidyapeeth-university-online/mba/hospitality`.
+
+### 3. The fee was ₹1,70,000 in our data and ₹1,10,000 on the portal
+
+`onlinesrm.in/mba/` prints ₹27,500 per semester, ₹1,10,000 for the programme,
+inclusive of exam fees. BBA and BCA were checked at the same time and are
+₹1,17,000 each, which is correct in our data, so `feeMax` becomes the UG fee and
+`feeMin` the MBA fee. `emiFrom` follows the dataset's `feeMin / 24` convention
+at ₹4,583; the portal advertises ₹4,584 for the MBA.
+
+Changed in `lib/data.ts`, `lib/data-slim.ts` and `data/fees-hub-data.json`.
+
+**This inverted three published claims**, which is the expensive part and the
+reason this entry is long:
+
+- `online-mba-hospital-healthcare-management-india-2026`: SMU at ₹1,20,000 was
+  described as the cheapest of eight. SRM Sikkim at ₹1,10,000 displaces it, and
+  the post is now nine universities. Title, meta, four FAQ answers, the quick
+  answer, the fee table, the tier headings and the decision matrix all moved.
+- `online-mba-northeast-india-2026`: SRM Sikkim was "the most expensive NE option
+  with the narrowest spec menu" at ₹1.70L with 3 specialisations. It is now the
+  cheaper of the two branded options with the wider menu. The trade-off
+  paragraph says the opposite of what it said this morning. The headline fee
+  ceiling moves from ₹1.70L to ₹1.20L (SMU), preserving the original post's
+  choice to quote single-figure fees and leave the Assam Don Bosco band out of
+  the headline.
+- `srm-university-sikkim-online-mba.json` and the DAVV comparison block that
+  cites it: fee, EMI, specialisation count, the "only 3 specialisations" red
+  flag and the "look elsewhere if specialisation breadth is needed" verdict
+  bullet were all built on the old number. The red flag is now the accurate one
+  (no International Business, no standalone Data Science track).
+
+**Student reviews were left untouched on purpose.** Two of them complain about
+"only 3 specialisations" and one calls ₹1.70L reasonable. They are dated 2023
+and 2024 and were true for those intakes. Editing dated testimony to match
+today's prospectus is falsifying it.
+
+### Guards
+
+`check-blog-fees` blocked the first attempt at both posts. Three figures went
+into `data/blog-fee-allowlist.json` rather than being softened away: ₹1,10,000
+and ₹27,500 on the hospital post, ₹1,10,000 on the northeast post. The first is
+`getDisplayFee`-correct but sits outside the scanner's 200-character attribution
+window in most of its occurrences; the second is a per-semester instalment,
+which `lib/data.ts` does not model at all and so can never match. Baseline
+dropped 2450 to 2446 and auto-staged.
+
+Full `.husky/pre-commit` suite passes. `tsc --noEmit` clean. All four pages
+rendered against the dev server: the hub lists SRM Sikkim, the new spec page
+resolves with the corrected fee, both blog tables carry the new rows, and no
+`₹1.70L` survives anywhere outside the dated reviews.
+
+### Still open
+
+- MAHE is cited as "NIRF #3" in the hospital post's fee table with no category.
+  Pre-existing, and `feedback_nirf_category` says a bare rank is not allowed.
+  Not touched here because the verified category rank was not to hand.
+- `online-mba-hospital-healthcare-management-india-2026` has a duplicated
+  conclusion and sources block, which is what produces the duplicate-key warning
+  from `BlogTOC` and two identical entries in the table of contents.
+  Pre-existing; fixing it means deleting published copy.
+- SRM Sikkim's `programs` array says `['MBA','BBA','BCA']` in `lib/data.ts` and
+  `['MBA','MCA','BBA','BCA']` in `lib/data-slim.ts`. The UGC-DEB workbook lists
+  MBA, MCA, BBA, BCA, B.Com and M.Com for Shri Ramasamy Memorial University, so
+  both are short and they disagree with each other.
+
+---
+
 ## 2026-09-14 · Galgotias runs no scholarships, and the boilerplate that said otherwise
 
 **Source.** Rishi confirmed on 2026-09-14 that Galgotias runs no scholarship or

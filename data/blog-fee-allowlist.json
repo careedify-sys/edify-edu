@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27",
+  "updatedAt": "2026-09-14",
   "note": "Owner-verified fee figures that have no counterpart in lib/data.ts and therefore cannot resolve to MATCH via getDisplayFee. Only for figures a university's admissions team has confirmed in writing for a specific specialisation-tier or payment-mode variant that the fees hub does not model yet. Prefer the FeeVariant schema when implemented (see audits/fee-model-proposal-2026-08-07.md). Adding an entry here is a source-of-truth commitment: someone will re-verify at each intake.",
   "entries": [
     {
@@ -910,6 +910,33 @@
       "source": "lib/data.ts programDetails['MCA'].fees for Parul University Online, verified against EdifyEdu university records",
       "verified_date": "2026-08-27",
       "note": "Parul online MCA total fee. Correct for that programme; allowlisted because the sentence lists several Parul programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
+    },
+    {
+      "slug": "online-mba-hospital-healthcare-management-india-2026",
+      "figure": 110000,
+      "university": "srm-university-sikkim-online",
+      "programme": "MBA",
+      "source": "Portal-verified at onlinesrm.in/mba/ on 2026-09-14",
+      "verified_date": "2026-09-14",
+      "note": "Total online MBA fee at SRM University Sikkim, billed as Rs 27,500 x 4 semesters. Matches lib/data.ts feeMin; allowlisted so the range and prose occurrences whose attribution window does not attach to SRM Sikkim MBA cleanly do not read as unverified."
+    },
+    {
+      "slug": "online-mba-hospital-healthcare-management-india-2026",
+      "figure": 27500,
+      "university": "srm-university-sikkim-online",
+      "programme": "MBA",
+      "source": "Portal-verified at onlinesrm.in/mba/ on 2026-09-14",
+      "verified_date": "2026-09-14",
+      "note": "Per-semester instalment behind the Rs 1,10,000 total. lib/data.ts models the programme total, not the instalment, so getDisplayFee can never match this figure."
+    },
+    {
+      "slug": "online-mba-northeast-india-2026",
+      "figure": 110000,
+      "university": "srm-university-sikkim-online",
+      "programme": "MBA",
+      "source": "Portal-verified at onlinesrm.in/mba/ on 2026-09-14",
+      "verified_date": "2026-09-14",
+      "note": "Same SRM University Sikkim total as above. The 200-char attribution window in this post sits next to Sikkim Manipal, so the scanner mis-attributes it."
     }
   ]
 }
