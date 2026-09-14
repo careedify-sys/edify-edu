@@ -9,6 +9,81 @@ the fix by accident.
 
 ---
 
+## 2026-09-14 (later) · The hub and the blog were selling the same MBA at two different prices
+
+**Source.** Rishi asked me to settle blog-versus-hub ownership of "{uni} online
+mba fees" for the four universities not blocked on the BITS data question.
+Rendering the two titles side by side settled it faster than any ranking
+argument could.
+
+### What the pairs actually looked like
+
+```
+Galgotias  HUB  Galgotias University Online MBA Fees 2026: ₹80,200, NAAC A+ [Review]
+           BLOG Galgotias University Online MBA Fees 2026: ₹80,200, NAAC A+
+Jain       HUB  JAIN Online MBA Fees 2026: ₹1.6L-₹1.96L
+           BLOG Jain University Online MBA Fees 2026: ₹1.96L to ₹2.98L, NAAC A++
+Jamia      HUB  Jamia Hamdard Online MBA Fees 2026: ₹75K-₹1.8L
+           BLOG Jamia Hamdard Online MBA Fees 2026: NAAC A+, NIRF Management 87
+```
+
+Galgotias was character-identical bar the suffix, and **I had caused that** with
+the title edit earlier the same day: removing the "Cheapest NAAC A+" superlative
+was right, rewriting it onto the hub's exact construction was not.
+
+Jain is the serious one. The hub caps the MBA at **₹1.96L**; the blog called
+₹1.96L the *starting* fee and ran to **₹2.98L**. Two live pages on one domain
+answering "what does this MBA cost" with numbers a lakh apart.
+
+### The decision: the hub owns the fee query, the blog owns the review query
+
+Not because the hub ranks better. It does not: Galgotias hub sits at 7.18 on 39
+impressions while its blog sits at 8.25 on 2,576. The hub wins on **provenance**.
+Its title is built by `clampTitleFeeLed` from `getDisplayFee`, the single
+canonical fee source, with a suppression path when the data is inconsistent and
+`check-fee-baseline` behind it. Blog fee figures are ungoverned: 2,446 unverified
+against the baseline, and three of these four pairs contradicted their own hub.
+
+When two of our pages disagree, the one that cannot be audited should not be the
+one carrying the number into the SERP.
+
+**Neither page was redirected.** Hubs have spec children and carry the lead CTA;
+blogs hold the editorial. This is a differentiation fix, not a consolidation one,
+which is the opposite call to the verify cluster earlier today and for a
+different reason: there, two pages answered the *same* question, so one had to
+go. Here they answer different questions and were merely titled as if they did
+not.
+
+Blog titles moved to review angles, `targetKeyword` moved off the fee query, and
+each post now links its hub with the fee query as anchor text. Jain and BITS had
+**no link to their own MBA hub at all**; Galgotias already had the pattern and it
+was copied verbatim so there is one pattern, not three.
+
+### Two things found on the way
+
+**The BITS "discrepancy" was a year, not an error.** The post says the 2024 fee
+was ₹2,84,000 and the 2025 fee ₹2,97,000. So its title's ₹2.97L is the 2025
+number wearing a 2026 label, against `lib/data.ts` at ₹2,98,400. That is only
++0.5% where the post itself documents 4-5% annual inflation, so one of the two is
+still wrong and **it stays open for Rishi**. The NIRF #16 versus `nirf: 7`
+conflict is also still open. No fee was guessed.
+
+**Another derived superlative, in body copy this time.** The Galgotias post
+claimed ₹80,200 made it "one of the cheapest NAAC A+ accredited online MBAs in
+India". Same defect as the title, same reason it fails: 63 of 125 fee rows are
+placeholder ranges, so nothing can be ranked cheapest. Claim removed, verified
+fee kept.
+
+**Uttaranchal needed no decision.** It has no review blog. Its hub already owns
+the query unopposed and sits at 30.74, which is a weak-page problem, not a
+cannibalisation one.
+
+**Verified.** All six titles re-read from the running server. Caught and fixed a
+trailing "Review" left behind on the Jain title by a replacement that did not
+span the whole original string. Hub links confirmed present on all four posts.
+
+---
+
 ## 2026-09-14 · The impression cap on verify and coupons, and the 404 under the biggest fee query
 
 **Source.** Rishi read 269 clicks (Sat 12 Sep, Last 7 days) against 39 (Last 24
