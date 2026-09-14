@@ -7421,7 +7421,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <ul>
   <li><strong>NMIMS Online MBA Finance and Banking:</strong> Standard Rs 1.96 lakh. Banking and Capital Markets specialisation Rs 2.20 lakh.</li>
-  <li><strong>JAIN Online MBA International Finance (ACCA):</strong> Standard Rs 1.75 lakh to Rs 1.96 lakh. ACCA track at higher fee tier.</li>
+  <li><strong>JAIN Online MBA International Finance (ACCA):</strong> JAIN prices by elective from Rs 1.60 lakh to Rs 2.98 lakh, and International Finance sits at the top of that range.</li>
   <li><strong>Chandigarh University MBA Data Science and AI:</strong> Standard Rs 1.50 lakh. Premium spec with Harvard plus PwC bundle Rs 1.75 lakh.</li>
   <li><strong>Amity Online MBA Healthcare Management:</strong> Standard Rs 2.07 lakh. Premium plus internship support Rs 2.40 lakh.</li>
 </ul>
@@ -37398,9 +37398,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'jain-online-mba-review-2026',
-    title: "Jain Online MBA Fees 2026: ₹1.96L to ₹2.98L Review and Honest Take",
+    title: "Jain Online MBA Fees 2026: ₹1.6L to ₹2.98L Review and Honest Take",
     seoTitle: "Jain University Online MBA Review 2026: NAAC A++, NIRF Mgmt 73",
-    metaDescription: "Jain University online MBA fees ₹1,96,000 to ₹2,98,000 by specialization. NAAC A++ (3.71), NIRF Management #73. 18 specializations. Honest review.",
+    metaDescription: "Jain University online MBA fees ₹1,60,000 to ₹2,98,000 by specialization. NAAC A++ (3.71), NIRF Management #73. 19 electives. Honest review.",
     category: 'University Reviews',
     tags: ["jain university mba fees","jain university online mba","jain online mba review","jain online mba fees"],
     publishedAt: '2026-05-04',
@@ -37510,7 +37510,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <tr><th>University</th><th>Total Fee Range</th><th>NIRF (Mgmt)</th><th>NAAC</th><th>Specialisation Count</th><th>International Recognition</th></tr>
 </thead>
 <tbody>
-<tr><td>JAIN Online</td><td>₹1,96,000–₹2,98,000</td><td>#73 Management 2025 / #68 University 2024</td><td>A++</td><td>18 (highest in India)</td><td>WES + ACCA (Intl Finance only)</td></tr>
+<tr><td>JAIN Online</td><td>₹1,60,000–₹2,98,000</td><td>#73 Management 2025 / #68 University 2024</td><td>A++</td><td>18 (highest in India)</td><td>WES + ACCA (Intl Finance only)</td></tr>
 <tr><td>NMIMS NGASCE</td><td>₹1,75,000–₹2,15,000 approx</td><td>#24 mgmt 2025</td><td>A++</td><td>10–12</td><td>AACSB (campus only)</td></tr>
 <tr><td>MAHE Online</td><td>₹2,92,000</td><td>#3 mgmt 2025</td><td>A++</td><td>8</td><td>WES + IoE status</td></tr>
 <tr><td>Symbiosis SSODL</td><td>₹3,15,000–₹3,70,000</td><td>NAAC A++ deemed</td><td>A++</td><td>6 (deeper specialisation depth)</td><td>UGC-DEB + AACSB strong corporate recognition</td></tr>
@@ -42476,7 +42476,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 7 July 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. University data sourced from official portals, UGC-DEB entitlement list, NAAC accreditation database, and current edifyedu.in university profiles.</em></p>
 
 <div class="callout-answer">
-<p><strong>Short answer:</strong> Karnataka has 12 UGC-DEB entitled universities offering online MBA programmes in 2026. For the strongest brand and highest NIRF rank, <a href="/universities/manipal-academy-higher-education-online">MAHE Online</a> (NIRF #3 University, NAAC A++, ₹2.92L) leads nationally. For Bangalore tech professionals wanting a local alumni cluster, <a href="/universities/jain-university-online">JAIN Online</a> (NAAC A++, NIRF #73 Management, ₹1.75L to ₹1.96L) is the top pick. For budget-conscious candidates, <a href="/universities/karnataka-state-open-university-online">KSOU Online</a> (NAAC A+, ₹80K) and <a href="/universities/alvas-college-online">Alva's College Online</a> (₹30K to ₹1.20L) offer accredited options under ₹1 lakh. Below is the full comparison.</p>
+<p><strong>Short answer:</strong> Karnataka has 12 UGC-DEB entitled universities offering online MBA programmes in 2026. For the strongest brand and highest NIRF rank, <a href="/universities/manipal-academy-higher-education-online">MAHE Online</a> (NIRF #3 University, NAAC A++, ₹2.92L) leads nationally. For Bangalore tech professionals wanting a local alumni cluster, <a href="/universities/jain-university-online">JAIN Online</a> (NAAC A++, NIRF #73 Management, ₹1.6L to ₹2.98L by elective) is the top pick. For budget-conscious candidates, <a href="/universities/karnataka-state-open-university-online">KSOU Online</a> (NAAC A+, ₹80K) and <a href="/universities/alvas-college-online">Alva's College Online</a> (₹30K to ₹1.20L) offer accredited options under ₹1 lakh. Below is the full comparison.</p>
 </div>
 
 <h2>Why Karnataka Needs Its Own Online MBA Guide</h2>
@@ -42509,7 +42509,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 </thead>
 <tbody>
 <tr style="background:#f8fafc"><td style="padding:10px"><a href="/universities/manipal-academy-higher-education-online">MAHE Online</a></td><td>Manipal</td><td style="text-align:center">A++</td><td style="text-align:center">#3</td><td style="text-align:right">₹2.92L</td><td>Marketing, Finance, HR, Analytics, Operations, Logistics, Healthcare, Pharma, Data Science</td></tr>
-<tr><td style="padding:10px"><a href="/universities/jain-university-online">JAIN Online</a></td><td>Bengaluru</td><td style="text-align:center">A++</td><td style="text-align:center">#62</td><td style="text-align:right">₹1.75L to ₹1.96L</td><td>Marketing, Finance, HR, General, AI for Finance/Marketing/HR, Data Science and AI, Digital Marketing, Supply Chain + 9 more</td></tr>
+<tr><td style="padding:10px"><a href="/universities/jain-university-online">JAIN Online</a></td><td>Bengaluru</td><td style="text-align:center">A++</td><td style="text-align:center">#62</td><td style="text-align:right">₹1.6L to ₹2.98L</td><td>Marketing, Finance, HR, General, AI for Finance/Marketing/HR, Data Science and AI, Digital Marketing, Supply Chain + 9 more</td></tr>
 <tr style="background:#f8fafc"><td style="padding:10px"><a href="/universities/jss-university-online">JSS AHER Online</a></td><td>Mysore</td><td style="text-align:center">A++</td><td style="text-align:center">#21</td><td style="text-align:right">₹1L to ₹2L</td><td>Hospital Administration, Pharmacy Administration</td></tr>
 <tr><td style="padding:10px"><a href="/universities/alliance-university-online">Alliance University Online</a></td><td>Bangalore</td><td style="text-align:center">A+</td><td style="text-align:center">N/A</td><td style="text-align:right">₹1.60L</td><td>Finance, HR, Marketing, Operations, Business Analytics and AI</td></tr>
 <tr style="background:#f8fafc"><td style="padding:10px"><a href="/universities/university-of-mysore-online">University of Mysore Online</a></td><td>Mysore</td><td style="text-align:center">A</td><td style="text-align:center">#71</td><td style="text-align:right">₹1.60L</td><td>Logistics, Operations, HR, Finance, Marketing, Project Management</td></tr>
@@ -42540,7 +42540,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>JAIN (Deemed-to-be University) holds NAAC A++ accreditation, NIRF #62 University rank, and NIRF #73 in the Management category. It is headquartered in Bengaluru with the strongest local tech alumni cluster among online MBA providers. The programme offers 18 MBA specialisations, the widest in Karnataka, including AI for Finance, AI for Marketing, AI for HR, and Data Science and Artificial Intelligence.</p>
 
-<p>Total fee: ₹1,75,000 to ₹1,96,000. EMI from ₹6,667 per month. JAIN is roughly ₹1 lakh cheaper than MAHE while maintaining equivalent NAAC A++ accreditation. For Bengaluru-based tech professionals, JAIN's local network and AI-integrated specs make it the strongest mid-premium pick.</p>
+<p>Total fee: ₹1,60,000 to ₹2,98,000 by elective. EMI from ₹6,667 per month. JAIN is roughly ₹1 lakh cheaper than MAHE while maintaining equivalent NAAC A++ accreditation. For Bengaluru-based tech professionals, JAIN's local network and AI-integrated specs make it the strongest mid-premium pick.</p>
 
 <p>For the full review, read our <a href="/blog/jain-online-mba-review-2026">JAIN online MBA review 2026</a>.</p>
 

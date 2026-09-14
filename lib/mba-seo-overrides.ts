@@ -55,13 +55,21 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
     intro: 'Galgotias University online MBA total fees are ₹80,200 for the two-year programme, one of the more affordable options for candidates comparing online MBA programs in North India. The programme is UGC-DEB approved and NAAC A+ accredited, delivered from Greater Noida with EMI plans from ₹3,342 per month. Specialisations span Finance, Marketing, HR, Operations, and Business Analytics. edifyedu.in compares Galgotias MBA fees and accreditation status against Sharda, LPU, and Chandigarh University using public UGC-DEB data only.',
   },
 
-  // JAIN: data.ts:168 feeMin=160000, data.ts:169 feeMax=196000
-  // NEEDS-VERIFICATION: pd.fees at data.ts:201 is '₹1.75L-₹1.96L', which starts higher than feeMin (₹1.6L).
+  // JAIN: VERIFIED 2026-09-14 against onlinejain.com/online-mba. The page
+  // prices every elective individually, in four tiers:
+  //   ₹1,60,000  HR Management, Marketing, General Management, Finance
+  //   ₹1,75,000  the dual combinations (Finance+Marketing, HR+Finance, ...)
+  //   ₹1,96,000  BI & Analytics, Digital Marketing, Supply Chain, the AI tracks
+  //   ₹2,98,000  International Finance (Accredited by ACCA, UK)
+  // So the true span is ₹1.6L to ₹2.98L. The old NEEDS-VERIFICATION note here
+  // had spotted half of it, that pd.fees '₹1.75L-₹1.96L' started above feeMin.
+  // The bigger error was the other end: feeMax was 196000, which silently
+  // dropped the ACCA tier and made the ceiling look ₹1L lower than it is.
   'jain-university-online': {
-    title: 'JAIN Online MBA Fees 2026: ₹1.6L-₹1.96L Total | edifyedu.in',
-    description: 'JAIN Deemed University online MBA fees ₹1,60,000 to ₹1,96,000 total. NAAC A++, UGC-DEB approved. Zero-commission, verified fee data. Compare vs Amity, LPU, Chandigarh before you enrol.',
+    title: 'JAIN Online MBA Fees 2026: ₹1.6L-₹2.98L Total | edifyedu.in',
+    description: 'JAIN Deemed University online MBA fees ₹1,60,000 to ₹2,98,000 by elective. NAAC A++, UGC-DEB approved. Zero-commission, verified fee data. Compare vs Amity, LPU, Chandigarh before you enrol.',
     h1: 'Jain University Online MBA 2026: Fees, Review, and Specializations',
-    intro: 'Jain (Deemed-to-be) University online MBA total fees range from ₹1,60,000 to ₹1,96,000 depending on specialization, spread across four semesters with EMI options through NBFC partners. The programme is NAAC A++ accredited with UGC-DEB approval for its distance format. Specializations include Finance, Marketing, HR, and Business Analytics, plus dual-specialisation tracks that combine two domains in one degree. edifyedu.in reviews Jain University online MBA fees using only public regulatory and NIRF data, with no paid ranking influence.',
+    intro: 'Jain (Deemed-to-be) University online MBA has no single fee. It is priced per elective across four tiers, from ₹1,60,000 for Finance, Marketing, HR or General Management, up to ₹2,98,000 for International Finance, which is accredited by ACCA in the UK. Most electives sit at ₹1,75,000 or ₹1,96,000, spread across four semesters with EMI options through NBFC partners. The programme is NAAC A++ accredited with UGC-DEB approval. edifyedu.in reviews Jain University online MBA fees using only public regulatory and NIRF data, with no paid ranking influence. Fees are indicative, so confirm your elective on the official JAIN portal before you pay.',
   },
 
   // Chandigarh: data.ts:2151 feeMin=165000, data.ts:2152 feeMax=220000.

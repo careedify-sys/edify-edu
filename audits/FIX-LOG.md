@@ -9,6 +9,74 @@ the fix by accident.
 
 ---
 
+## 2026-09-14 · JAIN checked against its portal. Both our pages were wrong, at opposite ends.
+
+**Source.** Rishi asked for the same portal check on JAIN after the BITS
+correction. `onlinejain.com/online-mba` prices **every elective individually**,
+in four tiers:
+
+| Tier | Fee | Electives |
+|---|---|---|
+| Floor | **₹1,60,000** | HR Management, Marketing, General Management, Finance |
+| Mid | ₹1,75,000 | the dual combinations (Finance+Marketing, HR+Finance, Marketing+HR, the Analytics pairs) |
+| Upper | ₹1,96,000 | BI & Analytics, Digital Marketing & e-Commerce, Supply Chain, and every AI track |
+| Ceiling | **₹2,98,000** | International Finance (Accredited by ACCA, UK) |
+
+True span: **₹1,60,000 to ₹2,98,000**, across 19 electives.
+
+**Each of our two pages had one end right and one end wrong.**
+
+```
+hub   ₹1.6L – ₹1.96L    floor correct, ceiling ₹1L too low (drops the ACCA tier)
+blog  ₹1.96L – ₹2.98L   ceiling correct, floor a mid tier presented as the floor
+```
+
+Yesterday I recorded this pair as "the blog contradicts the governed hub" and
+treated the hub as the trustworthy side because its number comes from
+`getDisplayFee`. The portal says neither was right. **Governed provenance makes a
+number auditable, not correct.** The ownership split still stands, one page
+should carry the fee, but the reason I gave for trusting the hub was not a reason
+to trust its value.
+
+**The codebase had flagged it twice and I read past both.** `lib/data.ts` carried
+`pd.fees: '₹1.75L–₹1.96L'` against `feeMin: 160000`, and
+`lib/mba-seo-overrides.ts` carried a literal
+`NEEDS-VERIFICATION: pd.fees ... starts higher than feeMin (₹1.6L)`. That note
+had spotted the floor discrepancy. Nobody had looked at the other end, where
+`feeMax: 196000` silently dropped the ACCA tier.
+
+**Changed.** `lib/data.ts` feeMax 196000 → 298000 and `programDetails.MBA.fees`
+→ `₹1.6L–₹2.98L`; `data/fees-hub-data.json` feeMax and feeStr → `₹1.60L – ₹2.98L`;
+the JAIN override title, description and intro, with the intro rewritten to say
+the programme has no single fee and to name the ACCA tier as what drives the top
+of the range; and the JAIN review post's title, meta and comparison row, which
+had claimed a ₹1,96,000 floor **while its own body already said "JAIN's
+₹1,60,000 starting tier"**. The post contradicted itself.
+
+`getDisplayFee` still returns `ok: true` at rule 1 on the wider range: the
+suppression threshold is 3x and ₹2.98L / ₹1.6L is 1.86x.
+
+### Deliberately not done in this pass
+
+A sweep found **111 distinct post-and-figure JAIN fee claims across roughly 50
+posts**, in at least six notations (`Rs 1.60L to 1.96L`, `Rs 1,75,000 to
+Rs 1,96,000`, `₹1.96-2.98 lakh`, `₹1,96,000`, `Rs 1.60 to 1.96 L`, `Rs 1.96
+lakh`). They are **not uniformly wrong**. Many are spec-level and correct:
+"JAIN Finance & Business Analytics (₹1,96,000)" matches the portal exactly.
+Others are wrong in ways a find-and-replace would not catch, such as a claim
+that JAIN's three HR tracks are all ₹1,96,000 when the portal prices HR
+Management at ₹1,60,000 and the two HR duals at ₹1,75,000.
+
+Bulk-editing those on one reading is the exact failure that produced the wrong
+BITS number earlier today. Each claim needs checking against the tier table
+above. Left for a dedicated pass.
+
+**Verified.** Hub title, H1 and fee block re-read from the running server, all
+showing ₹1.6L to ₹2.98L. `/fees` row shows ₹1.60L – ₹2.98L. `getDisplayFee`
+confirmed unsuppressed.
+
+---
+
 ## 2026-09-14 (corrected) · BITS WILP is ₹3,12,400. My earlier ₹2,98,400 was wrong.
 
 **Source.** Rishi sent the official portal screenshot,

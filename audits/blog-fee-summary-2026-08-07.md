@@ -2,29 +2,29 @@
 
 Extractor v2 (structural attribution + range parsing + expanded NON_FEE).
 
-Total figures: **9319**
+Total figures: **9320**
 
 ## By classification
 
 | Class | Count |
 |---|---:|
-| MATCH | 1016 |
-| MISMATCH | 730 |
+| MATCH | 1028 |
+| MISMATCH | 718 |
 | SUPPRESSED | 10 |
 | ORPHAN | 44 |
-| UNRESOLVED | 1806 |
+| UNRESOLVED | 1807 |
 | NON_FEE | 5713 |
 
 ## By class × confidence
 
 | Class / Confidence | Count |
 |---|---:|
-| MATCH/high | 618 |
+| MATCH/high | 623 |
 | MATCH/low | 67 |
-| MATCH/medium | 331 |
-| MISMATCH/high | 338 |
+| MATCH/medium | 338 |
+| MISMATCH/high | 333 |
 | MISMATCH/low | 116 |
-| MISMATCH/medium | 276 |
+| MISMATCH/medium | 269 |
 | NON_FEE/- | 5713 |
 | ORPHAN/high | 34 |
 | ORPHAN/low | 2 |
@@ -32,14 +32,14 @@ Total figures: **9319**
 | SUPPRESSED/high | 8 |
 | SUPPRESSED/medium | 2 |
 | UNRESOLVED/high | 16 |
-| UNRESOLVED/low | 1786 |
+| UNRESOLVED/low | 1787 |
 | UNRESOLVED/medium | 4 |
 
 ## Top 30 slugs by figure count
 
 | slug | total | MATCH | MISMATCH | SUPPRESSED | ORPHAN | UNRESOLVED | NON_FEE |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| mba-fees-india-complete-guide-2026 | 276 | 21 | 23 | 1 | 0 | 49 | 182 |
+| mba-fees-india-complete-guide-2026 | 277 | 20 | 24 | 1 | 0 | 50 | 182 |
 | amity-online-bba-fees-2026 | 175 | 7 | 17 | 0 | 1 | 8 | 142 |
 | online-bba-fees-india-2026 | 170 | 3 | 3 | 0 | 0 | 55 | 109 |
 | mba-hr-management-online-india-2026 | 166 | 40 | 16 | 0 | 0 | 39 | 71 |
@@ -58,7 +58,7 @@ Total figures: **9319**
 | ias-officer-salary-india-2026-pay-scale-perks | 92 | 0 | 0 | 0 | 0 | 33 | 59 |
 | online-mba-hospital-healthcare-management-india-2026 | 92 | 21 | 5 | 0 | 0 | 15 | 51 |
 | online-mba-tamil-nadu-2026 | 90 | 17 | 16 | 0 | 0 | 46 | 11 |
-| best-online-mba-colleges-india-2026 | 89 | 15 | 4 | 0 | 0 | 45 | 25 |
+| best-online-mba-colleges-india-2026 | 89 | 16 | 3 | 0 | 0 | 45 | 25 |
 | amity-online-bba-review-2026 | 87 | 6 | 9 | 0 | 0 | 5 | 67 |
 | top-correspondence-mba-colleges-india-2026 | 84 | 24 | 14 | 1 | 0 | 30 | 15 |
 | commerce-jobs-list-salary-india-2026 | 84 | 0 | 0 | 0 | 0 | 5 | 79 |
