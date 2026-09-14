@@ -9,6 +9,60 @@ the fix by accident.
 
 ---
 
+## 2026-09-14 (later still) · BITS WILP fee corrected to ₹2,98,400 across five posts
+
+**Source.** Rishi confirmed the BITS Pilani WILP fee is 298K, and that BIT Mesra
+is a different university. The first settles a figure that had been open since
+the morning audit. The second confirms the id correction made earlier that day.
+
+**The number was already provable from the post's own table.** It listed
+per-semester tuition ₹70,100, total tuition ₹2,80,400 (4 × ₹70,100), a ₹16,500
+admission fee and a ₹1,500 application fee. Those sum to **₹2,98,400**, exactly
+what `lib/data.ts` carries and what Rishi confirmed. The post's headline
+"₹2,97,000 total" was neither the tuition nor the all-in figure, and its
+"Effective Total Cost ₹3,15,000" followed from nothing in the table.
+
+**Two real bugs found while correcting it.** A sentence was truncated
+mid-number, "priced at ₹2,97,000 total (₹70,100 per semester plus ₹16,`</p>`",
+with the parenthesis never closed. And "First Year Outflow ₹1,57,000" did not
+match its own stated components (1,500 + 16,500 + 70,100 + 70,100 = ₹1,58,200).
+
+**The stale fee had spread to four other posts.** `online-mba-for-working-professionals-india`,
+`nmims-online-mba-review-2026`, `best-online-mba-colleges-india-2026` (twice),
+`upes-online-mba-review-2026` and `xlri-online-mba-review-2026` all quoted the
+BITS fee in comparison tables or cross-references. The first audit pass missed
+four of them because it searched `2,97,000` and those posts write `Rs 2.97L`.
+**Lesson for the next fee correction: search both the comma form and the lakh
+form, or the fix looks complete while most of the site still disagrees.**
+
+**What was deliberately left alone.** The two historical lines, "the 2024 fee was
+₹2,84,000, the 2025 fee moved to ₹2,97,000", are statements about past years and
+stay. They do carry a forward-looking gloss ("roughly 4-5% annual fee
+inflation") that the 2026 figure contradicts at +0.5%, but the 2025 number may
+sit on a different basis (tuition + admission ≈ ₹2,96,900 rather than all-in), so
+the trend claim is **open for Rishi** rather than rewritten on a guess.
+
+**The NIRF conflict resolved itself, and was never a conflict.** The BITS post and
+the XLRI post say "#16 Overall 2025"; the UPES post says "#7 University 2025";
+`lib/data.ts` holds `nirf: 7`. Those are two different NIRF categories, both
+plausibly correct, which is exactly why the house rule requires a category on
+every NIRF claim. All three are category-labelled, so all three stay. The
+unlabelled "NIRF #16" was removed from the post title, which is now review-led
+under the ownership split: "BITS Pilani WILP Online MBA Review 2026: Is It Worth
+₹2.98L?" against the hub's "Fees 2026: ₹2.98L".
+
+**BIT Mesra separation re-checked.** No file conflates the two any more. Every
+remaining `bits-pilani-online` string is the blog slug
+`bits-pilani-online-mba-review-2026`, not a university id. The two rows now read
+BIT Mesra (NAAC A, NIRF 92, ₹1.78L) and BITS Pilani WILP (NAAC A+, NIRF 7,
+₹2.98L).
+
+**Verified.** Both titles re-read from the running server. Final sweep: zero
+`2.97L` and zero non-historical `2,97,000` remain; 10 `2.98L` and 8 `2,98,400`
+in place.
+
+---
+
 ## 2026-09-14 (later) · The hub and the blog were selling the same MBA at two different prices
 
 **Source.** Rishi asked me to settle blog-versus-hub ownership of "{uni} online
