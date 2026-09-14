@@ -244,7 +244,14 @@ export function getTitleName(id: string, name: string, abbr: string): string {
 }
 
 // Words that must never be left dangling at the end of a truncated name.
-const TRAILING_STOPWORDS = /(?:\s+(?:of|and|for|the|in|to|&|at|on|with))+$/i
+//
+// The adjectives matter as much as the prepositions. "Manipal Academy of Higher
+// Education" truncated to 26 chars leaves "Manipal Academy of Higher", which
+// read as merely clumsy in the old verify title but became an actual sentence
+// when /verify/ titles changed to "Is {name} Fake? No." on 2026-09-14. Each of
+// these only ever appears mid-name, never as the final word of an Indian
+// institution: Higher Education, Advanced Studies, Applied Sciences.
+const TRAILING_STOPWORDS = /(?:\s+(?:of|and|for|the|in|to|&|at|on|with|higher|advanced|applied))+$/i
 
 /**
  * Shortens an institution's own legal name for use in a page title, using

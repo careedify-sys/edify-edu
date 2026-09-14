@@ -119,6 +119,12 @@ npx tsx scripts/check-sitemap-vs-404.ts || exit 1
 echo "pre-commit: check-coupon-claims"
 npx tsx scripts/check-coupon-claims.mts || exit 1
 
+# /fees links every fees-hub row to /universities/{id} without checking the id
+# resolves. BIT Mesra's row carried the id "bits-pilani-online" (no such page),
+# so /fees shipped four dead links on the page that ranks for fee queries.
+echo "pre-commit: check-fees-hub-links"
+npx tsx scripts/check-fees-hub-links.mts || exit 1
+
 echo "pre-commit: typecheck:scripts"
 npx tsc --noEmit -p tsconfig.scripts.json || exit 1
 

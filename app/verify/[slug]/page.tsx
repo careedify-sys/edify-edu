@@ -19,7 +19,34 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export const dynamic = 'force-dynamic';
+// Was `force-dynamic` until 2026-09-14. That meant all 123 sitemap'd verify
+// pages hit Supabase live on every request, Googlebot's included, and a
+// transient database failure served the crawler notFound() from line 149 or the
+// title "University Not Found" from generateMetadata. 60 of the 123 pages had
+// never earned a single impression.
+//
+// Now pre-rendered from the same lib/data/verify-slugs.json the sitemap reads,
+// and revalidated hourly. Accreditation data moves on the scale of months, so
+// an hour is generous; the short window is there so a build that caught
+// Supabase mid-blip heals itself within the hour instead of serving a baked
+// 404 until the next deploy. Unknown slugs still render on demand and 404 when
+// Supabase does not know them, which is the behaviour force-dynamic had.
+export const revalidate = 3600;
+
+export async function generateStaticParams() {
+  try {
+    const { readFileSync } = await import('node:fs');
+    const { join } = await import('node:path');
+    const slugs: string[] = JSON.parse(
+      readFileSync(join(process.cwd(), 'lib', 'data', 'verify-slugs.json'), 'utf8'),
+    );
+    return slugs.map(slug => ({ slug }));
+  } catch {
+    // No slug file means nothing to pre-render. Every page still renders on
+    // demand, so this degrades to the old behaviour rather than failing a build.
+    return [];
+  }
+}
 
 // Map brand-merged slugs to brand_slug values
 const BRAND_SLUGS: Record<string, string> = {
@@ -68,7 +95,7 @@ export async function generateMetadata({ params }: PageProps) {
 
   const { data: uni } = await supabase
     .from('universities')
-    .select('name, city, state')
+    .select('name, city, state, ugc_deb_status')
     .eq('slug', slug)
     .single();
 
@@ -87,19 +114,39 @@ export async function generateMetadata({ params }: PageProps) {
         : shortenInstitutionName(uni.name))
     : uni.name;
   const location = [uni.city, uni.state].filter(Boolean).join(', ');
+
+  // Title targets the phrasing students actually use. Search Console, 6-12 Sep
+  // 2026: "mangalayatan university fake" alone drew 371 impressions in a week,
+  // while every "ugc approved" phrasing on the whole site drew 45. The old
+  // title, "{Name} UGC-DEB Verification {year}", matched the 45. The 14
+  // /blog/is-X-fake-or-legit posts matched the 371 and were redirected here on
+  // 2026-09-14, so this page inherits their query and has to rank for it.
+  //
+  // Answering in the title is deliberate. It is what the Manipal Jaipur post
+  // did ("Is ... Fake? No. NAAC A+, UGC Approved") and that post out-drew every
+  // other page in the cluster. A searcher asking whether a university is fake
+  // wants the answer, not an invitation to click and find out.
+  const approved = uni.ugc_deb_status === 'approved';
+  const title = approved
+    ? `Is ${displayName} Fake? No. UGC-DEB Approved ${year}`
+    : `${displayName}: UGC-DEB Approval Status ${year}`;
+  const description = approved
+    ? `${uni.name} is not fake. UGC-DEB approved${location ? ', ' + location : ''}. NAAC grade, AICTE and NIRF status checked against the official UGC, NAAC and NIRF portals. Independent, ${year}.`
+    : `${uni.name}${location ? ', ' + location : ''}: current UGC-DEB approval status, NAAC grade, AICTE and NIRF rank, checked against the official UGC, NAAC and NIRF portals. Independent, ${year}.`;
+
   return {
-    title: { absolute: `${displayName} UGC-DEB Verification ${year} | EdifyEdu` },
-    description: `Verify ${uni.name}${location ? ' (' + location + ')' : ''} UGC-DEB approval, AICTE, NAAC grade and NIRF rank — sourced from official UGC, NAAC and NIRF portals. Independent verification, ${year}.`,
+    title: { absolute: title },
+    description,
     alternates: { canonical: `https://edifyedu.in/verify/${slug}` },
     openGraph: {
-      title: `Is ${uni.name} UGC-DEB Approved? Verification ${year}`,
+      title,
       description: `Independent verification of ${uni.name} from UGC, AICTE, NAAC and NIRF official sources.`,
       url: `https://edifyedu.in/verify/${slug}`,
       type: 'article',
     },
     twitter: {
       card: 'summary_large_image',
-      title: `Is ${uni.name} UGC-DEB Approved? Verification ${year}`,
+      title,
       description: `Independent verification of ${uni.name} from UGC, AICTE, NAAC and NIRF official sources.`,
     },
   };

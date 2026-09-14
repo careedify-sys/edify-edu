@@ -26,6 +26,33 @@ function NaacBadge({ grade }: { grade: string }) {
   )
 }
 
+// Some fees-hub rows describe a university we track fees for but do not publish
+// a /universities/{id} page for. BIT Mesra is the current one. Those rows carry
+// "noPage": true, and linking them produced a 404 from /fees.
+function hasPage(u: University) {
+  return !('noPage' in u && (u as { noPage?: boolean }).noPage)
+}
+
+/** University name: a link when the university has a page, plain text when not. */
+function UniName({ u, className }: { u: University; className: string }) {
+  if (!hasPage(u)) return <span className={className}>{u.name}</span>
+  return (
+    <Link href={`/universities/${u.id}`} className={className}>
+      {u.name}
+    </Link>
+  )
+}
+
+/** "View details" affordance, omitted entirely when there is nothing to view. */
+function ViewLink({ u, className, label }: { u: University; className: string; label: string }) {
+  if (!hasPage(u)) return <span className="text-ink-3 text-xs">Fees only</span>
+  return (
+    <Link href={`/universities/${u.id}`} className={className}>
+      {label} <ExternalLink size={11} />
+    </Link>
+  )
+}
+
 type Sort = 'fee-asc' | 'fee-desc' | 'nirf' | 'naac'
 
 export default function FeesTableClient() {
@@ -145,9 +172,7 @@ export default function FeesTableClient() {
                   }`}
                 >
                   <td className="px-4 py-3">
-                    <Link href={`/universities/${u.id}`} className="font-semibold text-navy hover:text-amber transition-colors leading-snug">
-                      {u.name}
-                    </Link>
+                    <UniName u={u} className="font-semibold text-navy hover:text-amber transition-colors leading-snug" />
                   </td>
                   <td className="px-3 py-3 text-center">
                     <NaacBadge grade={u.naac} />
@@ -173,12 +198,11 @@ export default function FeesTableClient() {
                   <td className="px-3 py-3 text-right font-semibold text-navy">{u.feeStr}</td>
                   <td className="px-3 py-3 text-right text-ink-2">{u.emiStr}</td>
                   <td className="px-3 py-3 text-right">
-                    <Link
-                      href={`/universities/${u.id}`}
+                    <ViewLink
+                      u={u}
+                      label="View"
                       className="inline-flex items-center gap-1 text-amber text-xs font-semibold hover:underline"
-                    >
-                      View <ExternalLink size={11} />
-                    </Link>
+                    />
                   </td>
                 </tr>
               ))}
@@ -195,9 +219,7 @@ export default function FeesTableClient() {
         {filtered.map(u => (
           <div key={u.id} className="bg-white border border-border rounded-xl p-4">
             <div className="flex items-start justify-between gap-2 mb-2">
-              <Link href={`/universities/${u.id}`} className="font-semibold text-navy text-sm leading-snug hover:text-amber transition-colors">
-                {u.name}
-              </Link>
+              <UniName u={u} className="font-semibold text-navy text-sm leading-snug hover:text-amber transition-colors" />
               <NaacBadge grade={u.naac} />
             </div>
             <div className="flex flex-wrap gap-1 mb-3">
@@ -212,12 +234,11 @@ export default function FeesTableClient() {
               </div>
               <div className="text-right">
                 {u.nirf < 999 && <div className="text-xs text-ink-2">NIRF #{u.nirf}</div>}
-                <Link
-                  href={`/universities/${u.id}`}
+                <ViewLink
+                  u={u}
+                  label="View details"
                   className="mt-1 inline-flex items-center gap-1 text-amber text-xs font-semibold hover:underline"
-                >
-                  View details <ExternalLink size={11} />
-                </Link>
+                />
               </div>
             </div>
           </div>

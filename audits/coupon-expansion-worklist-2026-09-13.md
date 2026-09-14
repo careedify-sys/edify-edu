@@ -1,5 +1,28 @@
 # Coupon cluster expansion worklist, 2026-09-13
 
+> ## SHELVED 2026-09-14. Do not build these seven pages.
+>
+> The premise below is wrong, and the query data says so. Total coupon-intent
+> search demand across the whole site is **33 impressions a week**:
+> `mba online scholarships` 24 at position 22, `coupon code for manipal
+> university jaipur` 5 at position 1, `manipal university jaipur coupon code`
+> 4 at position 2. That is all of it.
+>
+> The 25 coupon pages that already exist earn **16 clicks a week between them**,
+> and 19 of the 25 have never been shown once. We hold positions 1 and 2 on the
+> only two queries that convert, so there is no ranking headroom left to win.
+>
+> The "best CTR on the site" reasoning is the trap: 4.56% is a great rate on an
+> impression base of 351 a week at position 1. Seven more pages cannot create
+> searches nobody is running. Keep the existing pages, they are cheap and they
+> do convert the few people who search this way.
+>
+> The research below stays useful. Every NAAC, NIRF and fee value in it was
+> verified on 2026-09-13, so reuse it when those universities need work on a
+> page type that has demand. See
+> `audits/verify-coupon-impression-caps-2026-09-14.html` for the full working,
+> and `audits/FIX-LOG.md` under 2026-09-14.
+
 Seven universities hold a coupon code in `lib/coupons.ts` but have no
 `/coupons/*` landing page. Each is blocked on one specific fact. Nothing here
 needs new research on our side except where marked "official portal".
@@ -8,9 +31,9 @@ Every NAAC and NIRF value below was read from the Supabase `accreditations`
 table on 2026-09-13 and cross-checked against `lib/data.ts`. Where the two
 disagreed, that disagreement is the blocker and is named.
 
-**Why this matters:** coupons convert at 3.00% CTR, the best of any page type on
+**Why this matters:** ~~coupons convert at 3.00% CTR, the best of any page type on
 the site, against 0.46% for blog. Each page is small. The constraint is verified
-facts, not effort.
+facts, not effort.~~ Superseded, see the shelf note above.
 
 ---
 
