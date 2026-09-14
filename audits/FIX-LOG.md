@@ -9,6 +9,132 @@ the fix by accident.
 
 ---
 
+## 2026-09-14 · The impression cap on verify and coupons, and the 404 under the biggest fee query
+
+**Source.** Rishi read 269 clicks (Sat 12 Sep, Last 7 days) against 39 (Last 24
+hours) and thought traffic had collapsed. It had not. The 24-hour report
+backfills for hours; the top 40 queries were all down by the same ~0.19 factor
+with positions holding or improving. A penalty hits specific pages and blows out
+position, it never scales every unrelated query by one constant. He then asked
+what actually caps the verify and coupon clusters. Full working in
+`audits/verify-coupon-impression-caps-2026-09-14.html`.
+
+### 1. Coupons cannot grow, and the expansion worklist was arguing from the wrong number
+
+Total coupon-intent demand across the whole site is **33 impressions a week**:
+`mba online scholarships` 24 at position 22, `coupon code for manipal university
+jaipur` 5 at position 1, `manipal university jaipur coupon code` 4 at position 2.
+The 25 pages that exist earn 16 clicks a week and 19 have never been shown.
+
+`audits/coupon-expansion-worklist-2026-09-13.md` proposed seven more pages
+because "coupons convert at 3.00% CTR, the best of any page type on the site".
+That is a real CTR on a 351-impression base at positions 1 and 2. There is no
+ranking headroom left to win, and no pages to build that would find demand that
+is not there. Marked **SHELVED** at the top of the file rather than deleted: every
+NAAC, NIRF and fee value in it was verified on 13 Sep and stays reusable.
+
+**Why this is the trap worth naming.** CTR is a ratio. Reading it as evidence of
+opportunity, without checking the impression base underneath it, is what produced
+a 25-page cluster for a 33-impression market.
+
+### 2. `/fees` linked to a 404 on the university behind the site's biggest fee query
+
+`data/fees-hub-data.json` carried BIT Mesra's numbers (`naac: A`, `nirf: 92`,
+`₹1.78L`) under the id `bits-pilani-online`. Two different universities.
+`FeesTableClient` renders `/universities/{id}` in four places per row, so every
+render shipped four dead links: that id is in neither `lib/data.ts` nor
+`valid-urls.json`.
+
+The 13 Sep worklist had spotted this and concluded "fixing it properly means
+adding the university with verified data, not renaming a row". That was wrong.
+BIT Mesra was already in `lib/data.ts` as `bit-mesra-online` with six live URLs
+including `/universities/bit-mesra-online/mba`. It was a wrong id and nothing
+more. Corrected, and the link now lands on a real page that carries the fee.
+
+This sat on the page that ranks for fee queries while `bits pilani mba fees`
+drew 668 impressions a week at position 9.64 for zero clicks.
+
+**Guard.** `scripts/check-fees-hub-links.mts`, wired into pre-commit, fails any
+fees-hub row whose id does not resolve to a university page. A row we hold fees
+for but publish no page for must declare `"noPage": true` and renders unlinked;
+the check also fails a stale `noPage` on a row that does have a page. No row
+carries the flag today.
+
+### 3. Two blog titles were not on the query they rank for
+
+Galgotias read "Cheapest NAAC A+ at Rs 80K". That is a derived fee superlative of
+exactly the kind `e8f879a` stripped from the coupon pages, and it is
+unsupportable while 63 of 125 fee rows are placeholder ranges. Replaced with the
+verified `₹80,200` and the query wording. Jamia Hamdard targeted `jamia hamdard
+mba fees` with a title containing neither a fee nor a number.
+
+**Left alone deliberately.** The BITS Pilani post says `₹2.97L` where
+`lib/data.ts` says `298400`, and `NIRF #16` where `lib/data.ts` says `7` with no
+category. Both need Supabase, which is the source of truth for accreditation
+claims. Raised with Rishi rather than guessed at.
+
+### 4. `/verify/[slug]` came off `force-dynamic`
+
+All 123 sitemap'd verify pages hit Supabase live on every request, Googlebot's
+included. A transient database failure served the crawler `notFound()` from the
+page body or the title "University Not Found" from `generateMetadata`. 60 of the
+123 had never earned a single impression.
+
+Now `generateStaticParams` over the same `lib/data/verify-slugs.json` the sitemap
+reads, with `revalidate = 3600`. The hour is deliberately short: accreditation
+data moves on the scale of months, so the window exists only so a build that
+caught Supabase mid-blip heals itself within the hour instead of serving a baked
+404 until the next deploy. Unknown slugs still render on demand and 404 when
+Supabase does not know them, which is what `force-dynamic` did.
+
+### 5. The `is-X-fake-or-legit` blog cluster folded into `/verify/`
+
+Both page types answered "is this university fake". Google shows about one result
+per domain per query, so the blog post took the slot and the verify page was
+filtered out. Search Console, 6-12 Sep: blog cluster 3,261 impressions at 0.71%
+CTR, verify cluster 2,233 at 1.84%, and **verify ranked better in 8 of the 9
+head-to-heads**. We were spending the impressions on the page that converts a
+third as well.
+
+13 of the 14 posts now 308 to their verify page and are marked
+`status: 'redirected'` in `lib/blog.ts`, which drops them from
+`getPublishedPosts()`, the sitemap and every listing. **IGNOU is not redirected**:
+`/blog/is-ignou-fake-or-legit-2026` has 269 impressions and there is no verify
+page to send them to. Add the redirect when the page exists.
+
+Verify titles now carry the phrasing that has the volume. `mangalayatan
+university fake` alone drew 371 impressions in a week; every "ugc approved"
+phrasing on the whole site drew 45. The old title matched the 45. Titles answer
+in place ("Is X Fake? No. UGC-DEB Approved 2026") because that is what the
+Manipal Jaipur post did, and it out-drew every other page in the cluster.
+
+**Two destinations were picked by hand against the fuzzy match, and both matters.**
+The DY Patil post is about Dr. D.Y. Patil Vidyapeeth **Pune** (DPU-COL), not the
+Navi Mumbai entity the token overlap preferred. `/verify/manipal-university-online`
+is the Rajasthan entity founded 2011, i.e. Manipal University **Jaipur**; MAHE is
+a separate university with its own page. A wrong destination here would have sent
+a ranking page to the wrong institution.
+
+**To undo.** Delete the block in `next.config.js` and set those 13 back to
+`'published'`. Nothing else holds state.
+
+### 6. A truncation bug the new titles exposed
+
+`shortenInstitutionName` clipped "Manipal Academy of Higher Education" to
+"Manipal Academy of Higher". That read as clumsy inside the old title and as an
+actual sentence inside "Is Manipal Academy of Higher Fake?".
+`TRAILING_STOPWORDS` now drops a dangling `higher`, `advanced` or `applied`.
+Those three only ever appear mid-name in an Indian institution.
+
+**Verified.** 308s confirmed with curl on four posts including the IGNOU
+non-redirect (200). Sitemap re-read: only the IGNOU post remains of the 14.
+Titles checked on the long-name cases (MAHE, VISTAS, Bharath Institute, NMIMS,
+Shoolini). `/fees` re-read: both BIT Mesra renders now point at
+`/universities/bit-mesra-online`, which loads. Full pre-commit suite green,
+redirect sources 653 to 666.
+
+---
+
 ## 2026-09-14 · SRM Sikkim had four missing specialisations and a fee that was 55% too high
 
 **Source.** Rishi asked for BVDU and SRM Sikkim to be added to the hospital
