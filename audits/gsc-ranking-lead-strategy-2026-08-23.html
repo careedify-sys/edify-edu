@@ -1,0 +1,550 @@
+<title>The Position 8 Problem</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+
+<style>
+:root{
+  --ink:#0f172a;
+  --ink-2:#334155;
+  --muted:#64748b;
+  --rule:#dbe1ea;
+  --rule-soft:#e8edf3;
+  --ground:#f7f9fc;
+  --panel:#ffffff;
+  --panel-2:#eef2f8;
+  --accent:#f97316;
+  --accent-ink:#c2410c;
+  --good:#10b981;
+  --warn:#B8892A;
+  --bad:#ef4444;
+  --good-bg:#e7f7f0;
+  --warn-bg:#f9f0dc;
+  --bad-bg:#fdeaea;
+  --shadow:0 1px 2px rgba(15,23,42,.05), 0 8px 24px -12px rgba(15,23,42,.18);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#e8eef7;
+    --ink-2:#b9c6d8;
+    --muted:#8395ad;
+    --rule:#26344a;
+    --rule-soft:#1d2939;
+    --ground:#0b1220;
+    --panel:#111a2b;
+    --panel-2:#18233a;
+    --accent:#fb923c;
+    --accent-ink:#fdba74;
+    --good:#34d399;
+    --warn:#d9ab4e;
+    --bad:#f87171;
+    --good-bg:#0f2f26;
+    --warn-bg:#2e2413;
+    --bad-bg:#331a1c;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#e8eef7;
+  --ink-2:#b9c6d8;
+  --muted:#8395ad;
+  --rule:#26344a;
+  --rule-soft:#1d2939;
+  --ground:#0b1220;
+  --panel:#111a2b;
+  --panel-2:#18233a;
+  --accent:#fb923c;
+  --accent-ink:#fdba74;
+  --good:#34d399;
+  --warn:#d9ab4e;
+  --bad:#f87171;
+  --good-bg:#0f2f26;
+  --warn-bg:#2e2413;
+  --bad-bg:#331a1c;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px 96px}
+.col{max-width:70ch}
+
+h1,h2,h3,.disp{font-family:Archivo,"Helvetica Neue",Arial,sans-serif;text-wrap:balance}
+h1{font-size:clamp(2.3rem,5.2vw,3.5rem);font-weight:700;letter-spacing:-.028em;line-height:1.02;margin:0}
+h2{font-size:clamp(1.45rem,2.6vw,1.9rem);font-weight:700;letter-spacing:-.02em;line-height:1.15;margin:0}
+h3{font-size:1.06rem;font-weight:600;letter-spacing:-.01em;margin:0}
+p{margin:0}
+a{color:var(--accent-ink)}
+
+.eyebrow{
+  font-family:Archivo,sans-serif;font-size:.7rem;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+}
+.mono{font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;font-variant-ligatures:none}
+
+/* ---------- masthead ---------- */
+header.mast{border-bottom:1px solid var(--rule);background:var(--panel);}
+.mast-in{max-width:1140px;margin:0 auto;padding:52px 28px 44px;display:flex;flex-direction:column;gap:22px}
+.mast-meta{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:baseline}
+.rule-accent{width:56px;height:4px;background:var(--accent);border-radius:2px}
+.lede{font-size:1.22rem;line-height:1.5;color:var(--ink-2);max-width:64ch}
+.lede strong{color:var(--ink);font-weight:600}
+
+/* ---------- tiles ---------- */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(178px,1fr));gap:1px;background:var(--rule);
+  border:1px solid var(--rule);border-radius:10px;overflow:hidden;margin-top:8px}
+.tile{background:var(--panel);padding:18px 20px;display:flex;flex-direction:column;gap:5px}
+.tile .k{font-family:Archivo,sans-serif;font-size:1.85rem;font-weight:700;letter-spacing:-.03em;font-variant-numeric:tabular-nums;line-height:1}
+.tile .l{font-size:.78rem;color:var(--muted);font-family:Archivo,sans-serif;letter-spacing:.02em}
+.tile .s{font-size:.75rem;font-family:"JetBrains Mono",monospace;color:var(--ink-2)}
+.tile.flag .k{color:var(--bad)}
+
+/* ---------- sections ---------- */
+section{margin-top:64px}
+.sec-head{display:flex;flex-direction:column;gap:12px;margin-bottom:24px}
+.stack{display:flex;flex-direction:column;gap:18px}
+.stack-tight{display:flex;flex-direction:column;gap:11px}
+
+/* ---------- finding block ---------- */
+.finding{
+  background:var(--panel);border:1px solid var(--rule);border-radius:12px;
+  box-shadow:var(--shadow);overflow:hidden;
+}
+.finding-head{display:flex;gap:16px;align-items:flex-start;padding:22px 24px;border-bottom:1px solid var(--rule-soft)}
+.sev{
+  flex:none;width:5px;align-self:stretch;border-radius:3px;background:var(--bad);min-height:44px;
+}
+.sev.mid{background:var(--warn)}
+.sev.low{background:var(--good)}
+.finding-body{padding:22px 24px;display:flex;flex-direction:column;gap:16px}
+.finding-body > p{max-width:72ch}
+
+/* ---------- callouts ---------- */
+.note{
+  border-left:3px solid var(--accent);background:var(--panel-2);
+  padding:14px 18px;border-radius:0 8px 8px 0;font-size:.94rem;color:var(--ink-2);max-width:74ch;
+}
+.note strong{color:var(--ink)}
+.verdict{
+  background:var(--panel-2);border:1px solid var(--rule);border-radius:10px;padding:16px 20px;
+  display:flex;flex-direction:column;gap:6px;
+}
+.verdict .lab{font-family:Archivo,sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)}
+
+/* ---------- tables ---------- */
+.tscroll{overflow-x:auto;border:1px solid var(--rule);border-radius:10px;background:var(--panel);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;font-size:.87rem;min-width:640px}
+caption{
+  caption-side:top;text-align:left;padding:16px 20px 12px;font-family:Archivo,sans-serif;
+  font-size:.82rem;color:var(--muted);border-bottom:1px solid var(--rule-soft);
+}
+caption b{color:var(--ink);font-weight:600;font-size:.95rem;display:block;margin-bottom:3px;letter-spacing:-.01em}
+th{
+  font-family:Archivo,sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);text-align:left;padding:12px 14px;border-bottom:1px solid var(--rule);white-space:nowrap;
+  background:var(--panel);
+}
+td{padding:11px 14px;border-bottom:1px solid var(--rule-soft);vertical-align:middle}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:var(--panel-2)}
+.num{text-align:right;font-family:"JetBrains Mono",monospace;font-variant-numeric:tabular-nums;font-size:.83rem;white-space:nowrap}
+.url{font-family:"JetBrains Mono",monospace;font-size:.78rem;color:var(--ink-2);white-space:nowrap}
+tfoot td{padding:12px 14px;border-top:2px solid var(--rule);font-family:Archivo,sans-serif;font-weight:600;font-size:.85rem;background:var(--panel-2)}
+.gain{color:var(--good);font-weight:700}
+.loss{color:var(--bad);font-weight:700}
+
+/* position chip — encodes SERP band */
+.pos{
+  display:inline-block;min-width:46px;text-align:center;padding:3px 8px;border-radius:5px;
+  font-family:"JetBrains Mono",monospace;font-size:.76rem;font-weight:700;font-variant-numeric:tabular-nums;
+}
+.p-top{background:var(--good-bg);color:var(--good)}
+.p-mid{background:var(--warn-bg);color:var(--warn)}
+.p-low{background:var(--bad-bg);color:var(--bad)}
+
+.tag{
+  display:inline-block;padding:2px 8px;border-radius:20px;font-family:Archivo,sans-serif;
+  font-size:.68rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+}
+.t-build{background:var(--warn-bg);color:var(--warn)}
+.t-merge{background:var(--bad-bg);color:var(--bad)}
+.t-hold{background:var(--good-bg);color:var(--good)}
+
+/* ---------- phases (a real sequence, so numbered) ---------- */
+.phases{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:12px;overflow:hidden}
+.phase{background:var(--panel);padding:22px 24px;display:grid;grid-template-columns:52px 1fr;gap:20px;align-items:start}
+.pnum{
+  font-family:Archivo,sans-serif;font-size:1.5rem;font-weight:700;color:var(--accent);
+  font-variant-numeric:tabular-nums;letter-spacing:-.03em;line-height:1.1;
+}
+.pnum small{display:block;font-size:.62rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.phase-body{display:flex;flex-direction:column;gap:9px}
+.phase h3{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline}
+.phase p{font-size:.94rem;color:var(--ink-2);max-width:68ch}
+ul.tick{margin:0;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:7px;font-size:.92rem;color:var(--ink-2)}
+ul.tick li{padding-left:20px;position:relative;max-width:68ch}
+ul.tick li::before{content:"";position:absolute;left:2px;top:.58em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+ul.tick li code, p code, td code{font-family:"JetBrains Mono",monospace;font-size:.82em;background:var(--panel-2);padding:1px 5px;border-radius:4px;color:var(--ink)}
+
+footer{margin-top:72px;padding-top:26px;border-top:1px solid var(--rule);color:var(--muted);font-size:.85rem;display:flex;flex-direction:column;gap:8px}
+
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 18px 72px}
+  .mast-in{padding:36px 18px 32px}
+  .phase{grid-template-columns:1fr;gap:10px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<header class="mast">
+  <div class="mast-in">
+    <div class="rule-accent"></div>
+    <div class="mast-meta">
+      <span class="eyebrow">EdifyEdu · Technical SEO</span>
+      <span class="eyebrow" style="color:var(--accent-ink)">Search Console · Last 6 months to 20 Aug 2026</span>
+    </div>
+    <h1>The Position&nbsp;8 Problem</h1>
+    <p class="lede">Every page that earns you a lead is stuck between position&nbsp;7 and&nbsp;11 — and <strong>not one of your 247 programme pages ranks above position&nbsp;5</strong>. You do not have a traffic problem. You have a page-consolidation problem, and it is costing roughly <strong>400 leads every six months</strong>.</p>
+
+    <div class="tiles">
+      <div class="tile"><span class="k">2.74M</span><span class="l">Impressions</span><span class="s">6 months</span></div>
+      <div class="tile"><span class="k">10,490</span><span class="l">Clicks</span><span class="s">avg pos 6.9–8.8</span></div>
+      <div class="tile flag"><span class="k">0.38%</span><span class="l">Site-wide CTR</span><span class="s">par ≈ 1.4%</span></div>
+      <div class="tile"><span class="k">346</span><span class="l">Leads captured</span><span class="s">4.9% of real clicks</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- ================= DIAGNOSIS ================= -->
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">Diagnosis</span>
+    <h2>Three things are true, and only one of them is obvious</h2>
+    <p class="col" style="color:var(--ink-2)">The 0.38% CTR looks like a title-tag problem. It is not — your titles are well built, fee-led, and render correctly. The CTR is low because of what is being counted and where your pages sit.</p>
+  </div>
+
+  <div class="stack">
+
+    <!-- FINDING 1 -->
+    <article class="finding">
+      <div class="finding-head">
+        <div class="sev"></div>
+        <div class="stack-tight">
+          <span class="eyebrow">Finding 01 · Measurement</span>
+          <h3>Half your impressions are a mirage, and they are hiding the real numbers</h3>
+        </div>
+      </div>
+      <div class="finding-body">
+        <p>The CGPA calculator cluster pulls <strong>1,403,518 impressions — 51% of everything</strong> — at 0.25% CTR, and has produced <strong>zero leads</strong> in six months. Queries like <span class="mono">7.5 cgpa in percentage</span> (27,166 impressions, position 4.55, 0.16% CTR) are answered by Google's own inline calculator. You rank, the user never clicks, and if they did they would not be a lead.</p>
+        <div class="note">Strip the calculator out and your real site looks completely different: <strong>7,033 clicks on 1,341,223 impressions = 0.52% CTR</strong>, converting at <strong>4.9% to leads</strong>. That is your actual business. Every decision below is made on that number, not the headline one.</div>
+        <div class="verdict">
+          <span class="lab">Do this</span>
+          <p style="font-size:.94rem;color:var(--ink-2)">Leave the calculator live — it costs nothing and builds topical authority. But add a GSC regex filter excluding <span class="mono">cgpa|gpa|percentage</span> and make <em>that</em> your reporting view. Stop optimising against a number that 51% junk traffic controls.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- FINDING 2 -->
+    <article class="finding">
+      <div class="finding-head">
+        <div class="sev"></div>
+        <div class="stack-tight">
+          <span class="eyebrow">Finding 02 · Structural — this is the big one</span>
+          <h3>Your review blog and your programme hub are fighting each other for the same query</h3>
+        </div>
+      </div>
+      <div class="finding-body">
+        <p>For every major university you have published <em>two</em> pages chasing <span class="mono">[university] online mba fees</span>: a blog review and a <span class="mono">/universities/…/mba</span> hub. Google cannot decide, so it half-ranks both. The blog wins position 7–9. The hub — the page carrying the fee table, the specialisation list and the schema — gets buried at 10 to 40.</p>
+
+        <div class="tscroll">
+          <table>
+            <caption><b>Cannibalised clusters</b>Blog position vs the programme hub that should own the query</caption>
+            <thead><tr>
+              <th>Review blog</th><th class="num">Impr.</th><th>Pos</th>
+              <th>Programme hub</th><th class="num">Impr.</th><th>Pos</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="url">/blog/galgotias-online-mba-review</td><td class="num">39,245</td><td><span class="pos p-mid">8.04</span></td><td class="url">galgotias…/mba</td><td class="num">694</td><td><span class="pos p-low">11.19</span></td></tr>
+              <tr><td class="url">/blog/amity-online-mba-review-2026</td><td class="num">22,481</td><td><span class="pos p-mid">7.86</span></td><td class="url">amity…/mba</td><td class="num">636</td><td><span class="pos p-low">19.36</span></td></tr>
+              <tr><td class="url">/blog/symbiosis-online-mba-review-2026</td><td class="num">13,901</td><td><span class="pos p-mid">7.68</span></td><td class="url">symbiosis…/mba</td><td class="num">1,912</td><td><span class="pos p-low">10.56</span></td></tr>
+              <tr><td class="url">/blog/dy-patil-online-mba-review</td><td class="num">12,714</td><td><span class="pos p-mid">8.39</span></td><td class="url">dy-patil…/mba</td><td class="num">972</td><td><span class="pos p-low">13.65</span></td></tr>
+              <tr><td class="url">/blog/chandigarh-university-online-mba-review</td><td class="num">11,967</td><td><span class="pos p-low">9.81</span></td><td class="url">chandigarh…/mba</td><td class="num">1,480</td><td><span class="pos p-low">40.05</span></td></tr>
+              <tr><td class="url">/blog/jamia-hamdard-mba-2026</td><td class="num">8,558</td><td><span class="pos p-mid">7.45</span></td><td class="url">jamia-hamdard…/mba</td><td class="num">553</td><td><span class="pos p-low">36.95</span></td></tr>
+              <tr><td class="url">/blog/shoolini-online-mba-review</td><td class="num">8,383</td><td><span class="pos p-mid">8.29</span></td><td class="url">shoolini…/mba</td><td class="num">430</td><td><span class="pos p-low">27.40</span></td></tr>
+              <tr><td class="url">/blog/ignou-online-mba-review-2026</td><td class="num">12,752</td><td><span class="pos p-mid">8.08</span></td><td class="url">ignou-online/mba</td><td class="num">557</td><td><span class="pos p-low">10.05</span></td></tr>
+              <tr><td class="url">/blog/nmims-online-mba-review-2026</td><td class="num">3,681</td><td><span class="pos p-low">10.05</span></td><td class="url">nmims-online/mba</td><td class="num">756</td><td><span class="pos p-low">17.07</span></td></tr>
+              <tr><td class="url">/blog/online-manipal-mba-review-2026</td><td class="num">4,418</td><td><span class="pos p-mid">5.89</span></td><td class="url">manipal-jaipur…/mba</td><td class="num">805</td><td><span class="pos p-low">16.42</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>The distribution across <strong>all 247 programme hubs</strong> makes it unambiguous. There is no top-of-page-one tail at all:</p>
+
+        <div class="tscroll">
+          <table>
+            <caption><b>Programme hub position distribution</b>Where all 247 <span class="mono">/universities/…/[programme]</span> pages actually sit</caption>
+            <thead><tr><th>Position band</th><th class="num">Hubs</th><th class="num">Impressions</th><th class="num">Clicks</th><th class="num">CTR</th></tr></thead>
+            <tbody>
+              <tr><td><span class="pos p-top">1–3</span></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">—</td></tr>
+              <tr><td><span class="pos p-top">3–5</span></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">—</td></tr>
+              <tr><td><span class="pos p-mid">5–8</span></td><td class="num">46</td><td class="num">39,668</td><td class="num">231</td><td class="num">0.58%</td></tr>
+              <tr><td><span class="pos p-low">8–10</span></td><td class="num">110</td><td class="num">104,774</td><td class="num">384</td><td class="num">0.37%</td></tr>
+              <tr><td><span class="pos p-low">10–20</span></td><td class="num">82</td><td class="num">59,099</td><td class="num">237</td><td class="num">0.40%</td></tr>
+              <tr><td><span class="pos p-low">20+</span></td><td class="num">9</td><td class="num">6,628</td><td class="num">22</td><td class="num">0.33%</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="verdict">
+          <span class="lab">Do this</span>
+          <p style="font-size:.94rem;color:var(--ink-2)">Pick one winner per university+programme and consolidate hard. <strong>Keep the blog as the ranking URL</strong> — it already holds the position, and it already carries <span class="mono">BlogLeadForm</span>, <span class="mono">UniversityEndCta</span> and <span class="mono">WhatsAppSticky</span>, so it converts. Move the hub's fee table and specialisation list <em>into</em> the blog, then 301 the hub to the blog. Details in the rollout below.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- FINDING 3 -->
+    <article class="finding">
+      <div class="finding-head">
+        <div class="sev mid"></div>
+        <div class="stack-tight">
+          <span class="eyebrow">Finding 03 · Coverage</span>
+          <h3>People are asking you about universities you have never written about</h3>
+        </div>
+      </div>
+      <div class="finding-body">
+        <p>All 128 universities exist in <span class="mono">lib/data.ts</span>, so raw coverage is not the gap. The gap is <em>review content</em>. Cross-referencing your 346 leads against Search Console shows universities generating real enquiries with almost no search visibility — which means those leads are arriving despite you, not because of you.</p>
+        <p>The clearest case is <strong>Mody University: 7 leads from 9 total impressions.</strong> That is demand with effectively zero organic presence. Same shape at JSS AHER (4 leads, 173 impressions) and BIT Mesra (3 leads, 288 impressions).</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= PRIORITY QUEUE ================= -->
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">Action queue · Ranked by lead value</span>
+    <h2>Fix these seventeen clusters first</h2>
+    <p class="col" style="color:var(--ink-2)">Consolidate the pair, then push the surviving URL from position ~8 to position 3. Projection uses a position-3 CTR of 3.8% (India mobile-weighted) against combined current impressions, and your measured 4.9% click-to-lead rate.</p>
+  </div>
+
+  <div class="tscroll">
+    <table>
+      <caption><b>Consolidation targets</b>Combined cluster impressions · projected gain at position 3</caption>
+      <thead><tr>
+        <th>Cluster</th><th class="num">Impr.</th><th>Pos now</th><th class="num">Clicks now</th><th class="num">Clicks @3</th><th class="num">Gain</th><th class="num">Leads</th>
+      </tr></thead>
+      <tbody>
+        <tr><td class="url">galgotias-online-mba</td><td class="num">39,939</td><td><span class="pos p-mid">8.04</span></td><td class="num">70</td><td class="num">1,518</td><td class="num gain">+1,448</td><td class="num gain">+71</td></tr>
+        <tr><td class="url">is-manipal-university-jaipur-fake</td><td class="num">36,825</td><td><span class="pos p-mid">5.76</span></td><td class="num">336</td><td class="num">1,399</td><td class="num gain">+1,063</td><td class="num gain">+52</td></tr>
+        <tr><td class="url">amity-online-mba</td><td class="num">23,117</td><td><span class="pos p-mid">7.86</span></td><td class="num">43</td><td class="num">878</td><td class="num gain">+835</td><td class="num gain">+41</td></tr>
+        <tr><td class="url">bits-pilani-online-mba</td><td class="num">23,417</td><td><span class="pos p-mid">7.14</span></td><td class="num">127</td><td class="num">890</td><td class="num gain">+763</td><td class="num gain">+37</td></tr>
+        <tr><td class="url">symbiosis-online-mba</td><td class="num">15,813</td><td><span class="pos p-mid">7.68</span></td><td class="num">53</td><td class="num">601</td><td class="num gain">+548</td><td class="num gain">+27</td></tr>
+        <tr><td class="url">jain-online-mba</td><td class="num">14,815</td><td><span class="pos p-mid">6.81</span></td><td class="num">35</td><td class="num">563</td><td class="num gain">+528</td><td class="num gain">+26</td></tr>
+        <tr><td class="url">chandigarh-university-online-mba</td><td class="num">13,447</td><td><span class="pos p-low">9.81</span></td><td class="num">14</td><td class="num">511</td><td class="num gain">+497</td><td class="num gain">+24</td></tr>
+        <tr><td class="url">dy-patil-online-mba</td><td class="num">13,686</td><td><span class="pos p-mid">8.39</span></td><td class="num">32</td><td class="num">520</td><td class="num gain">+488</td><td class="num gain">+24</td></tr>
+        <tr><td class="url">ignou-online-mba</td><td class="num">13,309</td><td><span class="pos p-mid">8.08</span></td><td class="num">56</td><td class="num">506</td><td class="num gain">+450</td><td class="num gain">+22</td></tr>
+        <tr><td class="url">jamia-hamdard-mba</td><td class="num">9,111</td><td><span class="pos p-mid">7.45</span></td><td class="num">19</td><td class="num">346</td><td class="num gain">+327</td><td class="num gain">+16</td></tr>
+        <tr><td class="url">shoolini-online-mba</td><td class="num">8,813</td><td><span class="pos p-mid">8.29</span></td><td class="num">22</td><td class="num">335</td><td class="num gain">+313</td><td class="num gain">+15</td></tr>
+        <tr><td class="url">symbiosis-online-bba</td><td class="num">7,158</td><td><span class="pos p-mid">6.50</span></td><td class="num">54</td><td class="num">272</td><td class="num gain">+218</td><td class="num gain">+11</td></tr>
+        <tr><td class="url">online-manipal-mba</td><td class="num">5,223</td><td><span class="pos p-mid">5.89</span></td><td class="num">24</td><td class="num">198</td><td class="num gain">+174</td><td class="num gain">+9</td></tr>
+        <tr><td class="url">amity-online-bba</td><td class="num">4,944</td><td><span class="pos p-mid">7.94</span></td><td class="num">15</td><td class="num">188</td><td class="num gain">+173</td><td class="num gain">+8</td></tr>
+        <tr><td class="url">nmims-online-mba</td><td class="num">4,437</td><td><span class="pos p-low">10.05</span></td><td class="num">6</td><td class="num">169</td><td class="num gain">+163</td><td class="num gain">+8</td></tr>
+        <tr><td class="url">vignan-online-mba</td><td class="num">3,616</td><td><span class="pos p-mid">6.74</span></td><td class="num">11</td><td class="num">137</td><td class="num gain">+126</td><td class="num gain">+6</td></tr>
+        <tr><td class="url">nmims-online-bba</td><td class="num">3,306</td><td><span class="pos p-mid">7.60</span></td><td class="num">11</td><td class="num">126</td><td class="num gain">+115</td><td class="num gain">+6</td></tr>
+      </tbody>
+      <tfoot><tr>
+        <td>17 clusters</td><td class="num">240,976</td><td></td><td class="num">928</td><td class="num">9,157</td><td class="num gain">+8,229</td><td class="num gain">+403</td>
+      </tr></tfoot>
+    </table>
+  </div>
+
+  <div class="note" style="margin-top:18px">
+    <strong>Read this projection as directional, not a promise.</strong> It assumes every lead came from a non-calculator organic click, which overstates the rate — some of your 346 leads arrived direct, from WhatsApp, or from referral. It also assumes position 3 is reachable on every cluster, which it will not be against the universities' own domains on pure brand queries. Treat the <em>ranking</em> of the 17 as reliable and the absolute lead numbers as an upper bound. Even at half, this doubles your lead flow.
+  </div>
+</section>
+
+<!-- ================= MONEY QUERIES ================= -->
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">Query evidence</span>
+    <h2>The exact searches your leads come from — and where you sit on them</h2>
+    <p class="col" style="color:var(--ink-2)">Every one of your 346 leads names a university and a programme. These are the matching query shapes. Note what is missing from this table: <strong>not a single commercial query ranks in the top three.</strong></p>
+  </div>
+
+  <div class="tscroll">
+    <table>
+      <caption><b>High-intent commercial queries</b>Fee, review and legitimacy searches · position 3–25</caption>
+      <thead><tr><th>Query</th><th class="num">Impr.</th><th class="num">Clicks</th><th class="num">CTR</th><th>Pos</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">galgotias university mba fees</td><td class="num">9,041</td><td class="num">6</td><td class="num loss">0.07%</td><td><span class="pos p-low">9.08</span></td></tr>
+        <tr><td class="mono">is manipal university jaipur fake</td><td class="num">2,410</td><td class="num">32</td><td class="num">1.33%</td><td><span class="pos p-top">3.11</span></td></tr>
+        <tr><td class="mono">jain university mba fees</td><td class="num">2,072</td><td class="num">5</td><td class="num loss">0.24%</td><td><span class="pos p-low">8.51</span></td></tr>
+        <tr><td class="mono">jamia hamdard mba fees</td><td class="num">1,801</td><td class="num">2</td><td class="num loss">0.11%</td><td><span class="pos p-mid">7.98</span></td></tr>
+        <tr><td class="mono">symbiosis online mba fees</td><td class="num">1,611</td><td class="num">2</td><td class="num loss">0.12%</td><td><span class="pos p-low">11.35</span></td></tr>
+        <tr><td class="mono">shoolini university mba fees</td><td class="num">1,163</td><td class="num">2</td><td class="num loss">0.17%</td><td><span class="pos p-low">9.55</span></td></tr>
+        <tr><td class="mono">sikkim manipal university online mba fees</td><td class="num">1,009</td><td class="num">1</td><td class="num loss">0.10%</td><td><span class="pos p-low">10.03</span></td></tr>
+        <tr><td class="mono">bits pilani online mba fees</td><td class="num">988</td><td class="num">11</td><td class="num">1.11%</td><td><span class="pos p-mid">6.05</span></td></tr>
+        <tr><td class="mono">shoolini university online mba fees</td><td class="num">945</td><td class="num">2</td><td class="num loss">0.21%</td><td><span class="pos p-low">8.53</span></td></tr>
+        <tr><td class="mono">imt ghaziabad online mba fees</td><td class="num">928</td><td class="num">2</td><td class="num loss">0.22%</td><td><span class="pos p-low">8.80</span></td></tr>
+        <tr><td class="mono">galgotias university online mba fees</td><td class="num">882</td><td class="num">4</td><td class="num loss">0.45%</td><td><span class="pos p-mid">6.43</span></td></tr>
+        <tr><td class="mono">chandigarh university online mba fees</td><td class="num">782</td><td class="num">1</td><td class="num loss">0.13%</td><td><span class="pos p-low">11.62</span></td></tr>
+        <tr><td class="mono">kurukshetra university bba fees</td><td class="num">723</td><td class="num">2</td><td class="num loss">0.28%</td><td><span class="pos p-low">8.71</span></td></tr>
+        <tr><td class="mono">uttaranchal university online mba fees</td><td class="num">674</td><td class="num">2</td><td class="num loss">0.30%</td><td><span class="pos p-low">9.04</span></td></tr>
+        <tr><td class="mono">ignou online mba fees</td><td class="num">626</td><td class="num">1</td><td class="num loss">0.16%</td><td><span class="pos p-low">10.64</span></td></tr>
+        <tr><td class="mono">amity online mba fees 2026</td><td class="num">630</td><td class="num">1</td><td class="num loss">0.16%</td><td><span class="pos p-mid">8.13</span></td></tr>
+        <tr><td class="mono">xlri online mba fees</td><td class="num">545</td><td class="num">5</td><td class="num">0.92%</td><td><span class="pos p-mid">4.57</span></td></tr>
+        <tr><td class="mono">parul university bca fees</td><td class="num">505</td><td class="num">1</td><td class="num loss">0.20%</td><td><span class="pos p-low">9.95</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note" style="margin-top:18px">
+    <strong>The two queries you already win prove the model.</strong> <span class="mono">is manipal university jaipur fake</span> sits at 3.11 and returns 1.33% CTR — <em>19× the CTR of the same-sized query at position 9</em>. <span class="mono">iim rankings 2026</span> sits at 3.34 and pulls <strong>17.05%</strong>. Position 3 is not a marginal improvement over position 8. It is a different business.
+  </div>
+</section>
+
+<!-- ================= CONTENT GAP ================= -->
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">Content roadmap</span>
+    <h2>Which universities to build next</h2>
+    <p class="col" style="color:var(--ink-2)">Ranked by <em>proven lead demand</em> from your own CRM, not by keyword tools. These universities are already sending you enquiries. Every one of them lacks a review blog — the page type that is demonstrably doing your ranking.</p>
+  </div>
+
+  <div class="tscroll">
+    <table>
+      <caption><b>Build queue</b>Lead demand vs current search visibility · no review blog exists for any of these</caption>
+      <thead><tr><th>University</th><th class="num">Leads</th><th class="num">Impr.</th><th class="num">Clicks</th><th>Best pos</th><th>Priority</th></tr></thead>
+      <tbody>
+        <tr><td>Parul University</td><td class="num">13</td><td class="num">8,821</td><td class="num">44</td><td><span class="pos p-mid">7.44</span></td><td><span class="tag t-build">Build first</span></td></tr>
+        <tr><td>Bharati Vidyapeeth</td><td class="num">11</td><td class="num">3,665</td><td class="num">54</td><td><span class="pos p-mid">4.94</span></td><td><span class="tag t-build">Build first</span></td></tr>
+        <tr><td>Bangalore University</td><td class="num">11</td><td class="num">3,155</td><td class="num">64</td><td><span class="pos p-mid">4.14</span></td><td><span class="tag t-build">Build first</span></td></tr>
+        <tr><td>DDU Gorakhpur</td><td class="num">10</td><td class="num">10,227</td><td class="num">43</td><td><span class="pos p-mid">4.77</span></td><td><span class="tag t-build">Build first</span></td></tr>
+        <tr><td>Amrita Vishwa Vidyapeetham <span style="color:var(--muted);font-size:.82em">(MBA — BBA exists)</span></td><td class="num">9</td><td class="num">2,159</td><td class="num">21</td><td><span class="pos p-low">8.64</span></td><td><span class="tag t-build">Build first</span></td></tr>
+        <tr><td>Savitribai Phule Pune (SPPU)</td><td class="num">8</td><td class="num">8,451</td><td class="num">40</td><td><span class="pos p-mid">7.63</span></td><td><span class="tag t-build">Build first</span></td></tr>
+        <tr><td>Mody University</td><td class="num">7</td><td class="num">9</td><td class="num">2</td><td><span class="pos p-mid">6.44</span></td><td><span class="tag t-build">Build first</span></td></tr>
+        <tr><td>University of Mumbai</td><td class="num">6</td><td class="num">4,167</td><td class="num">62</td><td><span class="pos p-mid">6.09</span></td><td><span class="tag t-build">Second wave</span></td></tr>
+        <tr><td>Christ University</td><td class="num">5</td><td class="num">1,748</td><td class="num">18</td><td><span class="pos p-mid">7.34</span></td><td><span class="tag t-build">Second wave</span></td></tr>
+        <tr><td>Andhra University</td><td class="num">5</td><td class="num">4,501</td><td class="num">45</td><td><span class="pos p-mid">5.42</span></td><td><span class="tag t-build">Second wave</span></td></tr>
+        <tr><td>Dr Babasaheb Ambedkar Open Univ.</td><td class="num">5</td><td class="num">5,296</td><td class="num">22</td><td><span class="pos p-mid">5.90</span></td><td><span class="tag t-build">Second wave</span></td></tr>
+        <tr><td>University of Lucknow</td><td class="num">5</td><td class="num">1,907</td><td class="num">9</td><td><span class="pos p-mid">6.00</span></td><td><span class="tag t-build">Second wave</span></td></tr>
+        <tr><td>Madurai Kamaraj University</td><td class="num">4</td><td class="num">3,614</td><td class="num">67</td><td><span class="pos p-mid">7.24</span></td><td><span class="tag t-build">Second wave</span></td></tr>
+        <tr><td>KIIT</td><td class="num">4</td><td class="num">1,274</td><td class="num">10</td><td><span class="pos p-mid">5.32</span></td><td><span class="tag t-build">Second wave</span></td></tr>
+        <tr><td>JSS AHER</td><td class="num">4</td><td class="num">173</td><td class="num">3</td><td><span class="pos p-mid">5.98</span></td><td><span class="tag t-build">Second wave</span></td></tr>
+        <tr><td>Sathyabama</td><td class="num">4</td><td class="num">3,672</td><td class="num">21</td><td><span class="pos p-mid">7.45</span></td><td><span class="tag t-build">Second wave</span></td></tr>
+        <tr><td>Gujarat University</td><td class="num">4</td><td class="num">2,753</td><td class="num">9</td><td><span class="pos p-low">8.76</span></td><td><span class="tag t-build">Second wave</span></td></tr>
+        <tr><td>BIT Mesra</td><td class="num">3</td><td class="num">288</td><td class="num">1</td><td><span class="pos p-mid">7.07</span></td><td><span class="tag t-build">Second wave</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note" style="margin-top:18px">
+    <strong>Programme mix, from your CRM:</strong> MBA 125 · BBA 36 · MA 35 · MCA 26 · BCA 26 · B.Com 20 · BA 19 · BSc 7. MBA is 36% of all leads, but <strong>BBA, BCA and MA together are 28%</strong> and you have almost no review content for them. The BCA hubs already pull volume — <span class="mono">galgotias…/bca</span> at 3,806 impressions, <span class="mono">gla…/bca</span> at 3,676, <span class="mono">chitkara…/bca</span> at 3,657 — all stuck at position 8–10. A BCA review series is the cheapest untapped cluster you have.
+  </div>
+</section>
+
+<!-- ================= ROLLOUT ================= -->
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">Rollout · Run in this order</span>
+    <h2>Four phases, twelve weeks</h2>
+    <p class="col" style="color:var(--ink-2)">The order matters. Consolidation must land before new content, or the new pages inherit the same split-signal problem.</p>
+  </div>
+
+  <div class="phases">
+
+    <div class="phase">
+      <div class="pnum">01<small>Wk 1–2</small></div>
+      <div class="phase-body">
+        <h3>Stop the bleeding <span class="tag t-merge">Merge</span></h3>
+        <p>Take the top 5 clusters — Galgotias, Amity, BITS Pilani, Symbiosis, Jain. For each: move the hub's fee table, specialisation list and <span class="mono">Course</span> schema into the blog post body, then 301 the hub to the blog.</p>
+        <ul class="tick">
+          <li>Add redirects in <code>next.config.js</code>; the middleware allowlist and <code>resolveSpec</code> canonical logic you fixed in the last five commits already give you the pattern.</li>
+          <li>Keep the hub's <code>Offer</code>/fee schema fragment — port it, do not drop it. That schema is why some hubs pick up rich results.</li>
+          <li>Point every internal link that targeted the hub at the blog instead. Zero orphan links, per house rules.</li>
+          <li>Deep-buried spec pages at position 27–50 (<span class="mono">jain…/mba/international-finance-acca</span> at 32.98, <span class="mono">chandigarh…/mba</span> at 40.05) — <code>noindex</code> them or fold into the parent. 17 pages, 7,685 impressions, 31 clicks. They are dilution, not assets.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="pnum">02<small>Wk 3–5</small></div>
+      <div class="phase-body">
+        <h3>Finish the merge, then push for position 3 <span class="tag t-merge">Merge</span></h3>
+        <p>Run the same operation across the remaining 12 clusters. Then work the surviving URLs upward — this is where the fee-query rankings actually move.</p>
+        <ul class="tick">
+          <li>Rewrite each merged page's H2 set to match the query shape exactly: <em>fees</em>, <em>total fees</em>, <em>fee structure</em>, <em>placement</em>, <em>is it valid</em>. <span class="mono">galgotias university mba total fees</span> and <span class="mono">galgotia mba fees structure</span> are separate ranking queries you are already half-catching.</li>
+          <li>Add an FAQ block answering the fee question in the first 40 words — that is what wins the snippet at position 3.</li>
+          <li>Internal links: 5–10 per post, from the high-authority pages. <span class="mono">/blog/iim-ranking-india-2026-all-iims-list</span> (621 clicks) and <span class="mono">/blog/is-manipal-university-jaipur-fake-or-legit-2026</span> (336 clicks) are your two strongest link sources. Use them.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="pnum">03<small>Wk 6–9</small></div>
+      <div class="phase-body">
+        <h3>Build the seven proven-demand reviews <span class="tag t-build">Build</span></h3>
+        <p>Parul, Bharati Vidyapeeth, Bangalore University, DDU Gorakhpur, Amrita (MBA), SPPU, Mody. Use <code>/university-review</code> so house style and the fee-verification directive are enforced automatically.</p>
+        <ul class="tick">
+          <li>Publish the blog <em>first</em>, and link the existing hub to it rather than creating a competing hub — do not recreate the problem you just fixed.</li>
+          <li>Cross-check every NAAC, NIRF, AICTE claim against Supabase before publishing. NIRF ranks must state the category.</li>
+          <li>Mody is the highest-leverage of the seven: 7 leads on 9 impressions means the demand is real and the SERP is wide open.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="pnum">04<small>Wk 10–12</small></div>
+      <div class="phase-body">
+        <h3>Open the BCA and BBA front <span class="tag t-build">Build</span></h3>
+        <p>62 of your leads are BBA or BCA and you have four review posts between them. The hubs already rank at 8–10 with 2,000–4,000 impressions each, which means the pages are acceptable and only the content depth is missing.</p>
+        <ul class="tick">
+          <li>Start with the hubs already pulling volume: Galgotias, GLA, Chitkara, Integral, Jamia Hamdard, DY Patil, SGT, Guru Ghasidas.</li>
+          <li>Target the fee-query variants directly — <span class="mono">parul university bca fees</span>, <span class="mono">chandigarh university bca total fees</span>, <span class="mono">integral university bca fees per semester</span>, <span class="mono">sgt university bca fees</span>, <span class="mono">gla bca fees</span> — all sitting at position 9–11 with near-zero CTR.</li>
+          <li>Switch your GSC reporting to the CGPA-excluded view before measuring any of this. Otherwise the calculator noise will mask a genuine doubling.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= LEAVE ALONE ================= -->
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">Restraint</span>
+    <h2>What not to touch</h2>
+  </div>
+  <div class="tscroll">
+    <table>
+      <caption><b>Working as intended</b>These are earning; changes here carry downside and no upside</caption>
+      <thead><tr><th>Asset</th><th class="num">Clicks</th><th class="num">CTR</th><th>Pos</th><th>Why leave it</th></tr></thead>
+      <tbody>
+        <tr><td class="url">/blog/iim-ranking-india-2026-all-iims-list</td><td class="num">621</td><td class="num">1.27%</td><td><span class="pos p-mid">7.77</span></td><td>Best non-tool page you own. <span class="mono">iim rankings 2026</span> converts at 17.05%.</td></tr>
+        <tr><td class="url">/coupons</td><td class="num">109</td><td class="num">2.57%</td><td><span class="pos p-mid">7.83</span></td><td>Highest CTR section on the site at 2.14%.</td></tr>
+        <tr><td class="url">/verify/*</td><td class="num">611</td><td class="num">1.02%</td><td><span class="pos p-mid">~6.5</span></td><td>81 pages, 1.02% CTR — nearly 3× the site average. Your trust moat.</td></tr>
+        <tr><td class="url">/tools/cgpa-calculator</td><td class="num">2,260</td><td class="num loss">0.25%</td><td><span class="pos p-mid">6.56</span></td><td>Zero leads, but free authority. Keep it, just stop reporting on it.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <div><strong style="font-family:Archivo,sans-serif;color:var(--ink)">EdifyEdu · Search Console analysis</strong></div>
+  <div>Source: GSC Performance export, 23 Feb – 20 Aug 2026 (web search, all countries) · 1,000 pages, 1,000 queries · cross-referenced against 346 CRM lead records and <span class="mono">lib/data.ts</span> (128 universities).</div>
+  <div>Projections model position-3 CTR at 3.8% against combined cluster impressions and the measured 4.9% click-to-lead rate. Directional, not guaranteed.</div>
+</footer>
+
+</div>
