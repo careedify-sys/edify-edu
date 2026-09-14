@@ -15,8 +15,13 @@ export default function CouponPageCTA({ page }: { page: CouponPageData }) {
     return (
       <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 text-center mb-8">
         <Tag className="w-8 h-8 text-slate-400 mx-auto mb-3" />
-        <h3 className="text-lg font-bold text-slate-700 mb-2">No coupon needed - {page.shortName} has the lowest fee</h3>
-        <p className="text-sm text-slate-500 mb-4">{page.shortName} at {page.totalFee} is already the most affordable online MBA from a NAAC {page.naac} university. Apply directly on {page.officialUrl}.</p>
+        {/* No superlative here. "the lowest fee" and "the most affordable online
+            MBA from a NAAC A++ university" were both derived claims we cannot
+            verify: we track 143 universities rather than all of India, and a
+            large share of fee rows are placeholder ranges. State the fee, say
+            why there is no coupon, and send the reader to the portal. */}
+        <h3 className="text-lg font-bold text-slate-700 mb-2">No coupon on the {page.shortName} online MBA</h3>
+        <p className="text-sm text-slate-500 mb-4">{page.shortName} lists its online MBA at {page.totalFee} and runs no coupon through our admission desk, so there is nothing for us to add. That figure is indicative. Confirm the current fee on {page.officialUrl} before you pay.</p>
         <a href={`https://${page.officialUrl}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors no-underline">
           Apply on {page.officialUrl}
         </a>

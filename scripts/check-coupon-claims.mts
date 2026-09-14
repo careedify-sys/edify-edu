@@ -72,6 +72,44 @@ for (const p of COUPON_PAGES) {
   }
 }
 
+// ── Derived fee superlatives ───────────────────────────────────────────────
+// Standing rule: never derive a fee superlative. A large share of fee rows are
+// placeholder ranges, and we track 143 universities rather than the whole
+// market, so "cheapest in India" is not a claim our data can support. On
+// 2026-09-14 the cluster carried three: a "has the lowest fee" heading, "the
+// most affordable online MBA from a NAAC A++ university", and "lowest base fee
+// in India" in a rendered peer-comparison row.
+//
+// A superlative bounded to a named set that we hold fee data for is checkable
+// and allowed, but only after someone has actually checked it. Those live in
+// CHECKED_SUPERLATIVES with the date and the figures.
+const SUPERLATIVE = /cheapest|most affordable|lowest (?:base )?fee|best value/i
+
+const CHECKED_SUPERLATIVES: string[] = [
+  // Verified 2026-09-14 against lib/data.ts: SMU Rs 1,20,000 < MUJ Rs 1,53,000
+  // < MAHE Rs 2,92,000. Bounded to the three named Manipal-group programmes.
+  'SMU is the most affordable Manipal-group MBA. Northeast residents save 30% automatically, bringing effective fee to Rs 84,000. Add the coupon discount (up to Rs 4,000 on Tue/Sat) on top.',
+  'Is SMU the most affordable Manipal-group online MBA?',
+  'Yes. SMU is the most affordable of the three Manipal-group online MBA programmes (SMU, MUJ, MAHE). Confirm the current fee structure with our admission desk on your enrollment call.',
+]
+
+for (const p of COUPON_PAGES) {
+  const strings: string[] = [
+    p.couponDiscount,
+    p.stackExample,
+    p.emiCompatible,
+    ...p.exclusions,
+    ...p.faqs.flatMap(f => [f.q, f.a]),
+    ...p.peerComparisons.flatMap(c => [c.uni, c.savings]),
+    ...p.discounts.flatMap(d => [d.type, d.eligibility, d.saving, d.howToApply]),
+  ]
+  for (const str of strings) {
+    if (SUPERLATIVE.test(str) && !CHECKED_SUPERLATIVES.includes(str)) {
+      fail(`${p.slug}: derived fee superlative in "${str.slice(0, 90)}". Either drop it, or bound it to a named set, verify it against lib/data.ts, and add the exact string to CHECKED_SUPERLATIVES with the figures.`)
+    }
+  }
+}
+
 if (bad) {
   console.error(`\ncheck-coupon-claims: ${bad} problem(s). Fix the claim or the data, do not weaken the check.`)
   process.exit(1)

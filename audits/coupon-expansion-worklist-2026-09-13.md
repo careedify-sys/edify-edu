@@ -14,7 +14,7 @@ facts, not effort.
 
 ---
 
-## 1. Galgotias — the best candidate by a distance, blocked on our own content
+## 1. Galgotias — SHIPPED 2026-09-14, one question still open
 
 | | |
 |---|---|
@@ -26,9 +26,12 @@ facts, not effort.
 | Official portal | galgotiasonline.edu.in |
 | Coupon code | `GALG2026-5K` |
 
-**Why it is the top candidate.** Galgotias is the single largest cluster on the
-site at **39,939 impressions**, and at roughly Rs 80,200 it is among the cheapest
-NAAC A+ online MBAs we track. That is a strong, honest coupon-page angle.
+**Why it was the top candidate.** Galgotias is the single largest cluster on the
+site at **39,939 impressions**, and at Rs 80,200 it sits at the low end of the
+NAAC A+ programmes we track. Note that "low end" is as far as our data goes: a
+large share of fee rows are placeholder ranges, so do not turn this into a
+"cheapest in India" claim on the page. The guard in
+`scripts/check-coupon-claims.mts` will block it.
 
 **The blocker is a contradiction inside EdifyEdu's own content:**
 
@@ -41,14 +44,17 @@ NAAC A+ online MBAs we track. That is a strong, honest coupon-page angle.
 Both are live and indexed. A coupon page has to state one of them, and picking
 either without checking makes the site contradict itself on a third page.
 
-**What is needed:** one answer on whether Galgotias runs any scholarship scheme,
-from the official portal. If the answer is no, the page gets a genuinely
-differentiated angle that competitors will not have: the cheapest NAAC A+ online
-MBA in India, no university scholarships, so the EdifyEdu coupon is the only
-discount there is.
+**Shipped** as `/coupons/galgotias-online-mba-discount-coupon-2026` with no
+claim about scholarships in either direction, which is correct under both
+possible truths. **Still needed:** one answer on whether Galgotias runs any
+scholarship scheme, from the official portal. If the answer is no, the page can
+carry an angle competitors will not have: a NAAC A+ online MBA at Rs 80,200 that
+runs no university scholarship, so the coupon is the only reduction available.
+Stated that way it is checkable and needs no superlative.
 
-**Note for whoever writes it:** no NIRF claim of any kind. Pharmacy and Law ranks
-are real but irrelevant to an MBA page, and quoting either would mislead.
+**As shipped:** `Not ranked in the NIRF 2025 top 100`, and no scholarship claim
+in either direction. Pharmacy #55 and Law #36 are real but irrelevant to an MBA
+page, so neither is quoted.
 
 ---
 
@@ -154,8 +160,8 @@ adding the university with verified data, not renaming a row.
 
 ## Suggested order
 
-1. **Galgotias**, as soon as the scholarship question has one answer. Largest
-   cluster on the site and every other fact is already verified.
+1. ~~Galgotias~~ **shipped 2026-09-14.** The scholarship question is still open
+   and would let the page carry a real discounts table.
 2. **Graphic Era**, as soon as the MBA fee is confirmed. Cleanest accreditation
    of the remaining set, including a Management rank.
 3. **Sharda** and **Uttaranchal**, with the rest of the `verify-fees` drift

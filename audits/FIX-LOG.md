@@ -9,6 +9,101 @@ the fix by accident.
 
 ---
 
+## 2026-09-14 · Galgotias coupon page, and the derived fee superlatives it exposed
+
+**What.** A 24th coupon page, `/coupons/galgotias-online-mba-discount-coupon-2026`,
+plus removal of three derived fee superlatives found while building it and a
+guard that blocks new ones.
+
+### The page
+
+Galgotias is the largest cluster on the site at **39,939 impressions**, and it
+had no coupon page while a `GALG2026-5K` code sat in the catalogue.
+
+Every published fact is verified twice, against `lib/data.ts` and the Supabase
+`accreditations` table:
+
+| field | value | source |
+|---|---|---|
+| NAAC | A+, score 3.37, cycle 1, valid to 2029-08-16 | Supabase |
+| NIRF | **no rank claimed** | Supabase holds only Pharmacy #55 and Law #36 |
+| UGC-DEB | approved | Supabase `ugc_deb_status` |
+| Fee | Rs 80,200, four semesters over two years | `lib/data.ts`, `fees-hub`, and the programme hub agree |
+| Review blog | `/blog/galgotias-online-mba-review` | exists |
+
+**Two claims deliberately not made.**
+
+*No NIRF rank of any kind.* The programme hub content asserts a "NIRF band
+101-125 (Management 2025)" that the source of truth does not carry, and that
+band is where the phantom `nirfMgt: 101` in `fees-hub-data.json` came from
+(removed 2026-09-13). The page states `Not ranked in the NIRF 2025 top 100`,
+which is true whether or not the band claim turns out to be real. Pharmacy and
+Law ranks are real but irrelevant to an MBA page, so quoting either would
+mislead.
+
+*Nothing about Galgotias scholarships, in either direction.* Our own content
+still contradicts itself: the programme hub says Galgotias "offers need-based
+and merit-based scholarships", the specialisation pages say "Scholarships: None
+offered". The page repeats neither and sends scholarship questions to
+galgotiasonline.edu.in, which is correct under both possible truths. **Still
+open:** one answer from the official portal would settle it and let the page
+carry a real discounts table.
+
+Rishi confirmed the discount is EdifyEdu's own and asked that the page not say
+so. It does not, and neither does any other coupon page. The template's standing
+disclosure already carries the part that matters for accuracy: the coupon is
+"not an official discount offer issued, endorsed, sponsored, or administered by"
+the university, and university scholarships "are separate from this coupon".
+So the page never implies the university is discounting its own fee.
+
+### The superlatives this exposed
+
+Checking what renders turned up three claims our data cannot support. The
+standing rule is never to derive a fee superlative, because a large share of fee
+rows are placeholder ranges and we track 143 universities rather than a market.
+
+| where | claim | status |
+|---|---|---|
+| `CouponPageCTA.tsx` heading | "{shortName} has the lowest fee" | removed |
+| `CouponPageCTA.tsx` body | "the most affordable online MBA from a NAAC {naac} university" | removed |
+| Amity `peerComparisons` | "No coupon but lowest base fee in India" | now "No coupon, lower base fee" |
+| IGNOU `couponDiscount` | "No coupon - lowest base fee in India" | now "No coupon on this programme" |
+
+The `CouponPageCTA` pair renders only on the `couponCode === 'N/A'` branch,
+which today is IGNOU alone. The Amity row renders on Amity's page, because
+`peerComparisons` is one of the few fields still rendered.
+
+The replacement copy states the fee, says why there is no coupon, flags the
+figure as indicative and sends the reader to the portal, which the old copy did
+not do.
+
+**SMU's superlative was checked and kept.** "the most affordable of the three
+Manipal-group online MBA programmes (SMU, MUJ, MAHE)" names its comparison set
+and every member is in our data: SMU Rs 1,20,000 < MUJ Rs 1,53,000 < MAHE
+Rs 2,92,000. A bounded, checkable comparison is not the thing the rule forbids.
+
+### Guard
+
+`scripts/check-coupon-claims.mts` now also scans every rendered coupon string
+for `cheapest|most affordable|lowest (base )?fee|best value` and fails unless
+the exact string sits in `CHECKED_SUPERLATIVES`, which carries the date and the
+figures someone verified it against. Bounded claims stay possible, unchecked
+ones cannot ship.
+
+**Noted while reading the template, not fixed.** `discounts`, `stackExample` and
+`emiCompatible` are rendered nowhere since the quick-facts card replaced the
+discounts table. That is roughly 23 pages' worth of scholarship detail sitting
+in the type and in nobody's view. Worth either restoring a discounts section or
+dropping the fields, but not in the same change as a new page.
+
+**Verified.** `npx tsc --noEmit` clean on app and scripts. Checked on a running
+dev server: the new page renders with NAAC A+, no NIRF rank, UGC-DEB and the
+coupon block; `/coupons` now links 23 distinct landing pages including
+Galgotias; the IGNOU page carries no superlative and shows its fee. Console
+errors on both are pre-existing CSP and ad-tracker noise.
+
+---
+
 ## 2026-09-13 · coupons cluster: wrong claims, unreachable pages, and a stale fees copy
 
 **What.** Five defect classes in and around the coupon cluster, plus a new

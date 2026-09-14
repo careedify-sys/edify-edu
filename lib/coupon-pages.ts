@@ -82,7 +82,7 @@ export const COUPON_PAGES: CouponPageData[] = [
       { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
       { uni: 'JAIN (Rs 1,96,000)', savings: 'Up to Rs 5,000 via JAIN2026-5K' },
       { uni: 'Chandigarh (Rs 1,65,000)', savings: 'Up to Rs 5,000 via CU2026-5K' },
-      { uni: 'IGNOU (Rs 66,000)', savings: 'No coupon but lowest base fee in India' },
+      { uni: 'IGNOU (Rs 66,000)', savings: 'No coupon, lower base fee' },
     ],
   },
   {
@@ -404,11 +404,11 @@ export const COUPON_PAGES: CouponPageData[] = [
     // in lib/data.ts or Supabase.
     nirf: 'Not ranked in NIRF 2025',
     couponCode: 'N/A',
-    couponDiscount: 'No coupon - lowest base fee in India',
+    couponDiscount: 'No coupon on this programme',
     blogSlug: 'ignou-online-mba-review-2026',
     officialUrl: 'ignou.ac.in',
     discounts: [
-      { type: 'Already lowest fee', eligibility: 'All students', saving: 'Rs 66,000 total - no further discount needed', howToApply: 'Apply directly on ignou.ac.in' },
+      { type: 'No coupon', eligibility: 'All students', saving: 'Rs 66,000 total, no coupon runs on this programme', howToApply: 'Apply directly on ignou.ac.in' },
       { type: 'SC/ST fee concession', eligibility: 'SC/ST category candidates', saving: 'Reduced fee structure', howToApply: 'Submit caste certificate during admission' },
     ],
     stackExample: 'IGNOU at Rs 66,000 is already the lowest-priced online MBA from a NAAC A++ university. No coupons are needed. The fee itself is the discount.',
@@ -978,6 +978,56 @@ export const COUPON_PAGES: CouponPageData[] = [
       { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
       { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
       { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
+    ],
+  },
+  {
+    slug: 'galgotias-online-mba-discount-coupon-2026',
+    universityId: 'galgotias-university-online',
+    universityName: 'Galgotias University Online',
+    shortName: 'Galgotias',
+    tier: 'standard',
+    totalFee: 'Rs 80,200',
+    totalFeeNum: 80200,
+    maxSavings: 'Rs 5,000',
+    maxSavingsNum: 5000,
+    finalFee: 'Rs 75,200',
+    // NAAC A+, score 3.37, cycle 1, valid to 2029-08-16 per Supabase.
+    naac: 'A+',
+    // Supabase holds only Pharmacy #55 and Law #36 for Galgotias. There is no
+    // University rank and no Management rank, so no rank is claimed here. The
+    // programme hub content mentions a "NIRF band 101-125 (Management)" that
+    // the source of truth does not carry, which is why this states a bound
+    // rather than repeating it.
+    nirf: 'Not ranked in the NIRF 2025 top 100',
+    couponCode: 'GALG2026-5K',
+    couponDiscount: 'Up to Rs 5,000 verified discount coupon (Tue/Sat IST)',
+    blogSlug: 'galgotias-online-mba-review',
+    officialUrl: 'galgotiasonline.edu.in',
+    // Only the coupon is listed. Whether Galgotias runs a scholarship scheme of
+    // its own is unresolved in our own content: the programme hub says it
+    // offers need-based and merit-based scholarships, the specialisation pages
+    // say none are offered. Neither claim is repeated until that is settled.
+    discounts: [
+      { type: 'verified discount coupon', eligibility: 'All students via admission desk', saving: 'Up to Rs 5,000 on Tue/Sat IST, Rs 4,000 other days', howToApply: 'Mention code GALG2026-5K during enrollment call' },
+    ],
+    stackExample: 'Galgotias administers any fee concession of its own independently, and we do not quote eligibility for university schemes. Treat the coupon as the one adjustment we can confirm: up to Rs 5,000 on a Tuesday or Saturday window, against an indicative programme fee of Rs 80,200.',
+    emiCompatible: 'The coupon reduces the fee before any instalment plan is calculated. Some universities apply coupon discounts to lump-sum payment only, so confirm the exact terms with the Galgotias admissions team for the 2026-27 batch.',
+    exclusions: ['Does not reduce the registration fee or per-semester examination charges', 'Cannot be combined with other third-party commercial coupon codes for the same programme', 'Does not override Galgotias admission eligibility or batch quotas', 'Not transferable and not redeemable for cash'],
+    faqs: [
+      { q: 'What is the Galgotias online MBA discount coupon code for 2026?', a: 'The verified discount coupon code is GALG2026-5K. It carries up to Rs 5,000 on Tuesday and Saturday in IST, and Rs 4,000 on other days. The amount is applied as a fee adjustment during your enrollment process.' },
+      { q: 'What is the total Galgotias online MBA fee?', a: 'The programme fee is Rs 80,200, paid across four semesters over two years. This figure is indicative. Registration and per-semester examination charges are separate. Confirm the current fee on galgotiasonline.edu.in before making any payment.' },
+      { q: 'Does Galgotias run its own scholarships?', a: 'Galgotias administers any scholarship scheme itself, independently of this coupon. We do not administer university scholarships and do not quote eligibility for them. Check galgotiasonline.edu.in for current scholarship notifications before you apply.' },
+      { q: 'Can I use the Galgotias code with EMI?', a: 'The coupon reduces the fee first, and the balance is then spread under whatever instalment plan Galgotias offers for the batch. Some universities apply coupon discounts to lump-sum payment only. Confirm the terms with the Galgotias admissions team during enrollment.' },
+      { q: 'When is the best time to use GALG2026-5K?', a: 'The coupon reaches its maximum of Rs 5,000 on Tuesday and Saturday in IST, and Rs 4,000 on other days. Time your enrollment call so the final fee invoice is generated on one of those two days.' },
+      { q: 'Where do I enter the Galgotias code?', a: 'The code is mentioned during the admissions process to your admission desk, not on the Galgotias website. Our admission desk coordinates with the Galgotias admissions team so the adjustment is reflected in your fee invoice.' },
+      { q: 'Is the Galgotias online MBA UGC-DEB approved?', a: 'Yes. Galgotias University Online is UGC-DEB approved for online degree programmes and holds NAAC A+ accreditation. The degree certificate identifies the programme as Online mode, per UGC (Online Programmes) Regulations 2018. It is valid for UPSC, banking exams, PSU recruitment and private-sector employment.' },
+      { q: 'Does Galgotias have a NIRF rank?', a: 'Galgotias University does not appear in the NIRF 2025 top 100 for Management or for University. It holds NAAC A+ with a score of 3.37, valid to August 2029. Judge the programme on its accreditation and fee rather than on a rank it does not hold.' },
+    ],
+    peerComparisons: [
+      { uni: 'IGNOU (Rs 66,000)', savings: 'No coupon, lower base fee' },
+      { uni: 'Chandigarh (from Rs 1,65,000)', savings: 'Up to Rs 5,000 via CU2026-5K' },
+      { uni: 'JAIN (from Rs 1,75,000)', savings: 'Up to Rs 5,000 via JAIN2026-5K' },
+      { uni: 'Amity (from Rs 2,07,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
     ],
   },
 ]
