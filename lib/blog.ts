@@ -5812,7 +5812,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'mahe-online-mba-review-2026',
     title: 'MAHE Online MBA: Fees, Specialisations and Review 2026',
-    seoTitle: 'MAHE Online MBA Fees 2026: ₹2,92,000, NIRF Rank 39',
+    seoTitle: 'MAHE Online MBA Review 2026: Manipal’s Premium Tier',
     metaDescription: 'Manipal Academy of Higher Education (MAHE) Online MBA fees 2026: ₹2,92,000. NIRF Management rank 39, NAAC A++ (3.65), AACSB accredited. Top-tier online MBA.',
     category: 'University Review',
     tags: ['mahe online mba', 'manipal academy online mba', 'mahe mba fees', 'mahe mba review 2026', 'manipal online mba working professionals'],
@@ -6045,7 +6045,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'muj-online-mba-review-2026',
     title: 'MUJ Online MBA: Fees, 13 Specialisations and Review 2026',
-    seoTitle: 'MUJ Online MBA Fees 2026: ₹1,80,000 + 13 Specs',
+    seoTitle: 'MUJ (Manipal Jaipur) Online MBA Review 2026',
     metaDescription: 'Manipal University Jaipur (MUJ) Online MBA fees 2026: ₹1,80,000 total (₹45,000 per semester × 4) plus ₹500 application fee. NAAC A+, 13 specialisations.',
     category: 'University Review',
     tags: ['muj online mba', 'manipal university jaipur mba', 'muj mba fees', 'muj mba specialisations', 'online manipal muj 2026'],
@@ -35631,7 +35631,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 ,
   {
   "slug": "amity-online-bba-fees-2026",
-  "title": "Amity Online BBA Fees 2026: ₹1,75,120 One-Time + 0% EMI",
+  "title": "Amity Online BBA: One-Time vs EMI vs Semester Payment",
   "metaDescription": "Amity Online BBA fees 2026: ₹1,75,120 One-Time / ₹7,877/mo 0% EMI / ₹33,200 sem. Scholarships, comparison vs JAIN, NMIMS, Sharda, MUJ. Honest guide.",
   "category": "Fee Guides",
   "tags": [
@@ -35642,7 +35642,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   ],
   "publishedAt": "2026-05-04",
   "readTime": 11,
-  "targetKeyword": "amity online bba fees",
+  "targetKeyword": "amity online bba payment options",
   "status": "published",
   "heroImage": "https://images.pexels.com/photos/7009596/pexels-photo-7009596.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
   "heroImageAttribution": "Photo by <a href=\"https://www.pexels.com/@tima-miroshnichenko\" target=\"_blank\" rel=\"noopener nofollow\">Tima Miroshnichenko</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
