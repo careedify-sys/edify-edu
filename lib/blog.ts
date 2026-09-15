@@ -41,6 +41,151 @@ export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "integral-university-online-review",
+    title: "Integral University Online Review 2026: Cheap, and Older Than It Looks",
+    seoTitle: "Integral University Online Review 2026: Second-Cycle A+",
+    metaDescription: "Integral University Lucknow is UGC 2(f) and 12B, NAAC A+ in its second cycle, and has run online programmes since 2013-14. Online fees start at ₹31,500.",
+    category: "University Reviews",
+    tags: ["integral university online","integral university online review","integral university bca fees","integral university online mba","integral university lucknow online","iul online","integral university naac grade"],
+    publishedAt: "2026-09-15",
+    readTime: 7,
+    targetKeyword: "integral university online",
+    relatedUniversities: ["integral-university-online"],
+    status: "draft",
+    author: "Rishi Kumar",
+    ctaTitle: "Compare Integral Against the Budget Tier",
+    ctaDesc: "See UGC-DEB entitlement, NAAC cycle and the real fee side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
+    faqs: [
+      { q: "Is the Integral University online degree valid?", a: "Yes. Integral University, Lucknow is recognised by UGC under Sections 2(f) and 12B, and the UGC-DEB programme register lists 14 of its programmes for the 2025-26 session, 13 of them entitled for online mode. A UGC-entitled online degree carries the same standing as a conventional one for employment, government recruitment and further study. Entitlement is granted per programme and per session, so confirm your own programme and intake year at deb.ugc.ac.in." },
+      { q: "What is the Integral University online BCA fee?", a: "The university portal states ₹12,800 per semester and a total of ₹75,300 for the three-year online BCA. Note that six semesters at ₹12,800 comes to ₹76,800, so the stated total is ₹1,500 lower than the semester arithmetic. Ask admissions in writing which figure is billed, and whether registration or examination fees sit outside both. Fees are indicative and change each intake." },
+      { q: "How much is the Integral University online MBA?", a: "₹17,000 per semester and ₹67,500 in total for two years, per the university’s own online portal. That makes it one of the lowest fees for a UGC-entitled online MBA in India. Several comparison listings quote ₹1.1 lakh to ₹1.6 lakh for this programme, which is roughly double the portal figure. Verify on the official portal before budgeting." },
+      { q: "What is the Integral University NAAC grade?", a: "A+, awarded in May 2023 following a seven-member NAAC peer team assessment. The point worth noting is that this was Integral’s second assessment cycle, not its first. A second-cycle grade shows the institution was assessed, and then assessed again years later against the same framework, which is a stronger signal than a single first-cycle visit. Confirm the grade, cycle and validity window at naac.gov.in." },
+      { q: "How long has Integral University been running online programmes?", a: "Its Centre for Distance and Online Education has run programmes since 2013-14, so more than a decade. That operational history matters for the unglamorous things: transcripts, verification requests, convocations and migration certificates have all been through their cycles many times, which is not true of an online arm launched last year." },
+      { q: "Does Integral University offer an online BBA or B.Sc?", a: "No. The online programme menu covers BA, B.Com and BCA at undergraduate level, and MA, M.Com, MCA, MBA, M.Sc (Mathematics) and MSW at postgraduate level. There is no online BBA and no online B.Sc. If you have seen Integral listed as offering an online BBA, that listing does not match the university’s own published menu." },
+      { q: "Which online programmes does Integral University offer and what do they cost?", a: "Nine programmes. Undergraduate: BA ₹31,500, B.Com ₹37,500, BCA ₹75,300, all three years. Postgraduate, all two years: MA ₹35,500, M.Com ₹35,500, MSW ₹35,500, M.Sc Mathematics ₹39,500, MBA ₹67,500 and MCA ₹67,500. The BA and MA each run five subject options. All figures are the totals stated on the university portal and are indicative." },
+      { q: "Is Integral University good for government jobs?", a: "Its degrees carry UGC entitlement and the university holds 12B status, which is the recognition most government recruitment and further-study routes look for. Validity is not the same as recognition, though. Outside Uttar Pradesh and the wider north the name does limited work on its own, so treat it as a valid and affordable credential rather than a brand that opens doors by itself." },
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 15 September 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Fees read from the university's own online portal, entitlement checked against the UGC-DEB programme register, accreditation against NAAC records.</em></p>
+
+<p>Most cheap online degrees in India come from young universities. A 2021 charter, a first NAAC cycle, an online arm launched last year. You accept the thin record because the price is low.</p>
+
+<p>Integral University does not fit that pattern, and that is the only reason this page is worth your time. It is cheap, and it has been running distance and online programmes since 2013-14.</p>
+
+<div class="callout-key"><strong>Short answer:</strong> Integral University, Lucknow is UGC recognised under Sections 2(f) and 12B, and holds NAAC A+ awarded in its <strong>second</strong> assessment cycle in May 2023. Its Centre for Distance and Online Education has operated since 2013-14. The UGC-DEB register lists 14 of its programmes for the 2025-26 session, 13 of them entitled for online mode. Online fees run from ₹31,500 for a BA to ₹75,300 for a BCA.</div>
+
+<h2>A second-cycle A+ is a different claim from a first-cycle A+</h2>
+
+<p>Integral holds NAAC A+, awarded in May 2023 after a seven-member peer team assessment. The detail that matters is the word second.</p>
+
+<p>A first-cycle grade tells you what one assessment team found on one visit. A second-cycle grade tells you the institution was assessed, went away, and was assessed again years later against the same framework. It is the difference between a photograph and a trend line.</p>
+
+<p>Plenty of budget online universities advertise A+ without mentioning it is their first cycle. Integral is one of the few in this price band that can point to a second. It also holds UGC 12B status, which most private universities in Uttar Pradesh do not.</p>
+
+<div class="callout-warning"><strong>Check the cycle yourself:</strong> NAAC publishes the cycle number and the validity window for every accredited institution. A grade with no cycle stated is a grade you have not finished reading. Verify at <a href="https://naac.gov.in" rel="nofollow">naac.gov.in</a>.</div>
+
+<h2>The real fee table, from the university's own portal</h2>
+
+<p>Integral publishes every online fee openly, which is less common than it should be. Here is the full menu.</p>
+
+<table>
+<thead>
+<tr><th>Programme</th><th>Duration</th><th>Per semester</th><th>Total stated</th></tr>
+</thead>
+<tbody>
+<tr><td>Online BA (5 subjects)</td><td>3 years</td><td>₹5,500</td><td><strong>₹31,500</strong></td></tr>
+<tr><td>Online B.Com</td><td>3 years</td><td>₹6,500</td><td><strong>₹37,500</strong></td></tr>
+<tr><td>Online BCA</td><td>3 years</td><td>₹12,800</td><td><strong>₹75,300</strong></td></tr>
+<tr><td>Online MA (5 subjects)</td><td>2 years</td><td>₹9,000</td><td><strong>₹35,500</strong></td></tr>
+<tr><td>Online M.Com</td><td>2 years</td><td>₹9,000</td><td><strong>₹35,500</strong></td></tr>
+<tr><td>Online MSW</td><td>2 years</td><td>₹9,000</td><td><strong>₹35,500</strong></td></tr>
+<tr><td>Online M.Sc (Mathematics)</td><td>2 years</td><td>₹10,000</td><td><strong>₹39,500</strong></td></tr>
+<tr><td>Online MBA</td><td>2 years</td><td>₹17,000</td><td><strong>₹67,500</strong></td></tr>
+<tr><td>Online MCA</td><td>2 years</td><td>₹17,000</td><td><strong>₹67,500</strong></td></tr>
+</tbody>
+</table>
+
+<p>Two things stand out. The BCA is the most expensive undergraduate option at more than double the BA, which is unusual and reflects the lab and software component. And the MBA at ₹67,500 is one of the lowest fees for a UGC-entitled online MBA anywhere in India.</p>
+
+<div class="pull">If you have seen Integral's online MBA quoted anywhere near ₹1.5 lakh, that figure is wrong. The university's own portal says ₹67,500.</div>
+
+<p>Comparison listings for this university are unusually unreliable. Several quote the MBA and MCA at ₹1.1 lakh to ₹1.6 lakh, which is roughly double what the portal charges. Over-budgeting is a smaller injury than under-budgeting, but it can still push a programme off your shortlist for no reason.</p>
+
+<h2>The arithmetic does not quite close, and you should ask about it</h2>
+
+<p>Multiply the semester fee by the number of semesters and you do not get the stated total. The gap is consistent.</p>
+
+<table>
+<thead>
+<tr><th>Programme</th><th>Semester fee x semesters</th><th>Total the portal states</th><th>Difference</th></tr>
+</thead>
+<tbody>
+<tr><td>BA</td><td>₹5,500 x 6 = ₹33,000</td><td>₹31,500</td><td>₹1,500 lower</td></tr>
+<tr><td>B.Com</td><td>₹6,500 x 6 = ₹39,000</td><td>₹37,500</td><td>₹1,500 lower</td></tr>
+<tr><td>BCA</td><td>₹12,800 x 6 = ₹76,800</td><td>₹75,300</td><td>₹1,500 lower</td></tr>
+<tr><td>MBA</td><td>₹17,000 x 4 = ₹68,000</td><td>₹67,500</td><td>₹500 lower</td></tr>
+<tr><td>M.Com</td><td>₹9,000 x 4 = ₹36,000</td><td>₹35,500</td><td>₹500 lower</td></tr>
+</tbody>
+</table>
+
+<p>The pattern is exact: ₹1,500 off every three-year programme and ₹500 off every two-year one. That looks like a deliberate convention rather than an error, but the portal does not explain it.</p>
+
+<p>Ask admissions in writing which number is actually billed, and whether registration, examination or convocation fees sit outside both figures. A fee table that does not reconcile is not a reason to walk away. It is a reason to get the answer before you pay.</p>
+
+<h2>Thirteen online programmes, entitled for the current session</h2>
+
+<p>The UGC-DEB programme register lists 14 Integral University entries for the 2025-26 session, 13 of them under online mode. That is a substantial portfolio, and it is current rather than historical.</p>
+
+<p>It matters because entitlement is granted programme by programme and session by session. A university can hold entitlement for six programmes and market nine. Integral's register entry count and its published programme menu line up closely, which is the result you want to see.</p>
+
+<p>The centre has also been running distance programmes since 2013-14. Over a decade of operation means administrative processes, transcripts, verification requests and convocations have all been through their cycles many times. For a student who will one day need a degree verified by an employer or a foreign university, that operational history is worth more than a glossy platform.</p>
+
+<h2>What is actually on offer, and what is not</h2>
+
+<p>Nine online programmes across arts, commerce, computing, management and social work. The BA and MA each run five subject options. The M.Sc is Mathematics only.</p>
+
+<p>There is no online BBA and no online B.Sc. If you have seen Integral listed as offering an online BBA, check again, because its own programme menu does not carry one. Our <a href="/universities/integral-university-online">university profile page</a> lists what the current register and portal support.</p>
+
+<p>The specialisation menus are narrow by design. The online MBA is a general management degree rather than a branded specialisation catalogue. If you want eight named electives with certificates attached, this is not that programme. If you want a recognised, low-cost postgraduate qualification from an institution with a real record, it is exactly that.</p>
+
+<h2>Who this suits, and who it does not</h2>
+
+<table>
+<thead>
+<tr><th>Good fit if</th><th>Poor fit if</th></tr>
+</thead>
+<tbody>
+<tr><td>You want the lowest credible price for a UGC-entitled degree and will not compromise on the record behind it</td><td>You need a brand recruiters rank against IIMs or top private schools</td></tr>
+<tr><td>You value a second NAAC cycle and 12B status over marketing polish</td><td>You want a wide named-specialisation menu on the certificate</td></tr>
+<tr><td>You are in Uttar Pradesh or the wider north where the name is known</td><td>You want a campus network and in-person cohort events</td></tr>
+<tr><td>You will need transcripts and verifications handled by a centre that has done it for a decade</td><td>You are shopping purely on platform features and app polish</td></tr>
+</tbody>
+</table>
+
+<h2>Check your own programme before you pay</h2>
+
+<p>Do not check whether the university is approved. Check whether <em>your</em> programme and <em>your</em> intake session are.</p>
+
+<p>Open the UGC-DEB programme register at <a href="https://deb.ugc.ac.in" rel="nofollow">deb.ugc.ac.in</a> and search for Integral University. Confirm your programme is named, the mode column reads online, and the session matches the year you are joining. Our <a href="/guides/how-to-check-ugc-deb-approval">step-by-step UGC-DEB check</a> walks through the screens.</p>
+
+<p>Then confirm the NAAC grade, its cycle and its validity window at <a href="https://naac.gov.in" rel="nofollow">naac.gov.in</a>, and the university's recognition at <a href="https://ugc.gov.in" rel="nofollow">ugc.gov.in</a>. Our explainer on <a href="/guides/naac-nirf-rankings-explained">what NAAC and NIRF actually measure</a> covers why a cycle number changes how you read a grade.</p>
+
+<p>The BCA fee, the EMI split and the approvals summary sit together on the <a href="/universities/integral-university-online/bca">Integral online BCA page</a>, and you can sanity-check the monthly outflow with the <a href="/tools/emi-calculator">EMI calculator</a>. If you want the legitimacy question answered on its own, that is on the <a href="/verify/integral-university-online">Integral verification page</a>.</p>
+
+<div class="cta-box">
+<h3>Compare Integral against the rest of the budget tier</h3>
+<p>Edify compares public UGC, NAAC and NIRF data only. No paid rankings, and no referral commission from any university, so there is nothing in it for us either way.</p>
+<p><a href="/compare" class="ilink"><strong>Compare universities side by side</strong></a> &nbsp; <a href="/contact" class="ilink">Ask a counsellor about current fees</a></p>
+</div>
+
+<h2>The verdict</h2>
+
+<p>Integral is the rare case where the cheap option is also the one with the longer record. A second-cycle A+, 12B status, thirteen online-entitled programmes for the current session, and a distance centre that has been running since 2013-14.</p>
+
+<p>What you give up is brand reach and specialisation choice. Outside Uttar Pradesh the name does limited work in an interview, and the programme menus are deliberately plain.</p>
+
+<p>If you are buying a credential you need to be valid, verifiable and affordable, this is one of the strongest options in its price band. If you are buying a name to put in front of a recruiter, spend more elsewhere. Just do not let a wrong ₹1.5 lakh figure from a comparison site make that decision for you.</p>`,
+  },
+  {
     slug: "adichunchanagiri-university-online-mba-review",
     title: "Adichunchanagiri University Online MBA Review 2026: One Programme, One Fee, First-Cycle A+",
     seoTitle: "Adichunchanagiri Online MBA Review 2026: Honest Take",
