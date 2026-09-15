@@ -41,6 +41,167 @@ export const getBlogPost = getPostBySlug
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "adichunchanagiri-university-online-mba-review",
+    title: "Adichunchanagiri University Online MBA Review 2026: One Programme, One Fee, First-Cycle A+",
+    seoTitle: "Adichunchanagiri Online MBA Review 2026: Honest Take",
+    metaDescription: "Adichunchanagiri is UGC-DEB entitled and NAAC A+ at CGPA 3.39, but the grade is first cycle and the fee is Rs 1,40,000, not the Rs 75,000 that circulates.",
+    category: "University Reviews",
+    tags: ["adichunchanagiri university online mba","adichunchanagiri online mba","adichunchanagiri university mba review","acu online mba","adichunchanagiri ugc deb approved","adichunchanagiri naac grade","online mba karnataka"],
+    publishedAt: "2026-09-15",
+    readTime: 8,
+    targetKeyword: "adichunchanagiri university online mba",
+    relatedUniversities: ["adichunchanagiri-university-online"],
+    status: "published",
+    author: "Rishi Kumar",
+    ctaTitle: "Compare Adichunchanagiri Against the Karnataka Field",
+    ctaDesc: "See UGC-DEB entitlement, NAAC cycle and CGPA, and the real fee side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
+    faqs: [
+      { q: "Is the Adichunchanagiri University online MBA UGC approved?", a: "Yes. Adichunchanagiri University is recognised by UGC under Section 2(f) since November 2022 and is listed under Section 12(B). The UGC-DEB programme register carries an entry for the university in online mode for the 2025-26 session. Entitlement is granted per programme and per session, so confirm your own intake year at deb.ugc.ac.in before paying." },
+      { q: "What is the real fee for the Adichunchanagiri online MBA?", a: "The university portal lists a semester fee of Rs 35,000, an annual plan of Rs 70,000, and a total programme fee of Rs 1,40,000 across two years. On top of that sit a one-time registration fee of Rs 2,000 and an examination fee of Rs 4,000 per year. Adding the university’s own listed components gives Rs 1,50,000 all in. A no-cost EMI from Rs 6,187 per month is advertised. Fees are indicative and change each intake, so verify on the official portal." },
+      { q: "Why do some sites say the fee starts at Rs 75,000?", a: "That figure circulates widely but the university’s own online portal does not support it. There is a single fee of Rs 1,40,000 for the two-year programme and no cheaper tier to start from. If you built a shortlist around a Rs 75,000 entry point, the comparison needs redoing, because the real all-in cost is double that." },
+      { q: "How many programmes does Adichunchanagiri offer online?", a: "One. The MBA is the university’s only online programme. The UGC-DEB register carries a single online-mode entry for the university and the ACU Online programmes menu lists only the MBA. Listings that show an online BBA, BCA or B.Com for this university are wrong." },
+      { q: "What is the Adichunchanagiri NAAC grade?", a: "A+ with a CGPA of 3.39 out of 4.00, awarded in 2024. The A+ band runs 3.26 to 3.50, so 3.39 sits comfortably inside it. The detail that matters is that this was the university’s first assessment cycle, so there is no second data point to show whether standards held over time. Verify at naac.gov.in." },
+      { q: "Does Adichunchanagiri University have a NIRF rank?", a: "It reports NIRF positions of 78 in 2023 and 83 in 2024, and both are in the Pharmacy category, earned by its pharmacy college. The university holds no published rank in the NIRF Management category and none in the University category. A pharmacy rank tells you nothing about an online MBA. Check the category yourself at nirfindia.org." },
+      { q: "Does the online MBA have specialisations?", a: "Not in the sense most applicants mean. ACU Online lists nine micro-credential pathways including Business Analytics, Digital Marketing, Banking and Financial Services, and Healthcare and Hospital Management. These account for 6 credits of the 86-credit programme and produce a separate digital credential rather than a named track printed on the degree. If a printed specialisation matters to you, ask admissions in writing which track appears on the certificate." },
+      { q: "What are the placement outcomes for this programme?", a: "The university publishes none for the online MBA. It describes mentorship and placement support and names internal initiatives, but releases no placement percentage, median salary or cohort size. Any salary figure you see quoted for this specific programme is almost certainly a category average borrowed from elsewhere. Ask for the online cohort’s own figures in writing." },
+    ],
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 15 September 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Fees, accreditation and entitlement checked against the university's own portals, the UGC-DEB programme register, and NAAC records.</em></p>
+
+<p>Adichunchanagiri University sits in B G Nagara, a town in Mandya district about 90 minutes from Bengaluru. Its online MBA keeps appearing in Karnataka comparison lists at a price the university does not charge.</p>
+
+<p>That gap is the reason this page exists. The programme is real, it is entitled, and the fee is clean and single-tier. But three things circulating about it are wrong, and one of them could cost you ₹75,000 of budgeting error.</p>
+
+<div class="callout-key"><strong>Short answer:</strong> Adichunchanagiri University (ACU) is UGC-recognised under Section 2(f) since November 2022 and holds NAAC A+ at CGPA 3.39, awarded in its first assessment cycle in 2024. Its online MBA is entitled by UGC-DEB and is the university's only online programme. The fee is ₹1,40,000 for two years, not the ₹75,000 that circulates. It holds no NIRF rank in Management or in the University category.</div>
+
+<h2>The fee that circulates is not the fee you pay</h2>
+
+<p>A figure of ₹75,000 is widely attached to this programme as a starting price. The university's own online portal does not support it. There is one fee, and there is no cheaper tier to start from.</p>
+
+<p>Here is what the portal lists for Indian and SAARC students.</p>
+
+<table>
+<thead>
+<tr><th>Component</th><th>Amount</th><th>When</th></tr>
+</thead>
+<tbody>
+<tr><td>Semester fee</td><td>₹35,000</td><td>Each of 4 semesters</td></tr>
+<tr><td>Annual fee plan</td><td>₹70,000</td><td>Alternative to paying per semester</td></tr>
+<tr><td><strong>Total programme fee</strong></td><td><strong>₹1,40,000</strong></td><td>Across 2 years</td></tr>
+<tr><td>University registration fee</td><td>₹2,000</td><td>One time</td></tr>
+<tr><td>Examination fee</td><td>₹4,000</td><td>Per year, so ₹8,000 over the degree</td></tr>
+<tr><td><strong>All in, on the university's own figures</strong></td><td><strong>₹1,50,000</strong></td><td>2 years</td></tr>
+</tbody>
+</table>
+
+<p>The portal also advertises a no-cost EMI starting at ₹6,187 per month. Foreign students are quoted separately at $2,333 total, with a $10 registration fee and $50 per year for examinations.</p>
+
+<div class="pull">The gap between the circulating ₹75,000 and the real ₹1,50,000 all-in is ₹75,000. That is not a rounding error. It is the whole first year.</div>
+
+<p>If you have been comparing this programme against cheaper Karnataka options on the strength of a ₹75,000 entry point, redo that comparison. At ₹1,40,000 it is a mid-tier programme, not a budget one.</p>
+
+<div class="callout-warning"><strong>Verify before you pay:</strong> fees change every intake and this page is a snapshot. Confirm the current figure on the university's own online portal before transferring anything, and get the registration and examination components in writing.</div>
+
+<h2>One online programme, not a catalogue</h2>
+
+<p>This is the detail most listings get wrong. Adichunchanagiri offers exactly one programme online, and it is the MBA.</p>
+
+<p>The UGC-DEB programme register carries a single entry for Adichunchanagiri University, in online mode, for the 2025-26 session. The university's own online portal has one item in its programmes menu. If you have seen it listed as offering an online BBA, BCA or B.Com, that listing is wrong.</p>
+
+<p>This matters in a practical way. A university running one online programme has its whole online operation pointed at your degree, which can work in your favour. It also means there is no internal track record across programmes to judge it by, and no option to switch if the MBA turns out not to suit you.</p>
+
+<h2>The A+ is real, recent, and first cycle</h2>
+
+<p>ACU holds NAAC A+ with a CGPA of 3.39 out of 4.00. The A+ band runs from 3.26 to 3.50, so 3.39 sits comfortably inside it rather than scraping the boundary. That is a good grade and worth saying so plainly.</p>
+
+<p>Two qualifiers belong next to it. The assessment was the university's <strong>first cycle</strong>, and it happened in <strong>2024</strong>. A first-cycle grade tells you what an assessment team found on one visit. It does not tell you whether standards held across a decade, because there is no second data point yet.</p>
+
+<p>The regulatory timeline is similarly young. UGC recognition under Section 2(f) came in November 2022. The university has therefore been UGC-recognised for under four years and NAAC-accredited for under two.</p>
+
+<table>
+<thead>
+<tr><th>Credential</th><th>Status</th><th>Date</th><th>What it does not tell you</th></tr>
+</thead>
+<tbody>
+<tr><td>UGC Section 2(f)</td><td>Recognised</td><td>November 2022</td><td>Nothing about teaching quality, only legal standing</td></tr>
+<tr><td>UGC Section 12(B)</td><td>Listed</td><td>Current</td><td>Eligibility for central grants, not a quality mark</td></tr>
+<tr><td>NAAC</td><td>A+, CGPA 3.39</td><td>2024, first cycle</td><td>No second cycle to compare it against yet</td></tr>
+<tr><td>UGC-DEB online entitlement</td><td>Entitled, 1 programme</td><td>Session 2025-26</td><td>Granted per programme per session, so it is not permanent</td></tr>
+</tbody>
+</table>
+
+<h2>The NIRF rank belongs to Pharmacy, not to this MBA</h2>
+
+<p>ACU reports NIRF positions of 78 in 2023 and 83 in 2024. Both sit in the <strong>Pharmacy</strong> category, earned by its pharmacy college.</p>
+
+<p>The university holds no published rank in the NIRF Management category and none in the University category. Anyone citing "NIRF ranked" as a reason to choose this MBA is moving a pharmacy result onto a management degree.</p>
+
+<div class="callout-warning"><strong>Read rankings by category:</strong> a NIRF position is always category-specific. A Pharmacy rank says nothing about an MBA, and a strong University rank says nothing about a business school. Check the category on <a href="https://nirfindia.org" rel="nofollow">nirfindia.org</a> before you let a number influence a decision.</div>
+
+<h2>What the 86 credits actually contain</h2>
+
+<p>The programme runs two years across four semesters and carries 86 credits. That splits into 80 credits of coursework and 6 credits of micro-credential courses taken in semesters two, three and four.</p>
+
+<p>The final semester carries a 12-credit project. That is a heavy weighting for applied work, and more than several competing online MBAs allocate.</p>
+
+<p>The curriculum is described as NEP-aligned, with foundation courses in economics, accounting, statistics, ethics and communication, then functional exposure across marketing, finance, HR, operations, banking and analytics, plus modules on emerging technologies and business analytics and a research methods component feeding the capstone.</p>
+
+<h2>Micro-credential pathways are not MBA specialisations</h2>
+
+<p>ACU Online lists nine micro-credential pathways: Business Analytics, Financial Analysis, Digital Marketing, Sales and Business Development, Banking and Financial Services, Global Accounting and Taxation, Human Resource Management, Operations and Supply Chain Management, and Healthcare and Hospital Management.</p>
+
+<p>Read what those are before treating them as specialisations. They account for 6 credits out of 86. They are short skill courses producing a separate digital credential you can put on a profile.</p>
+
+<p>A specialisation, in the sense most applicants mean, is a named track printed on the degree certificate. A micro-credential pathway is a bolt-on. Both have value, but they are not the same thing, and a page advertising "nine specialisations" for this programme overstates what you receive.</p>
+
+<p>If a named specialisation on the certificate matters to you, ask the admissions office in writing which track is printed, and get the answer before paying. Compare against the menus in our <a href="/blog/online-mba-karnataka-2026">Karnataka online MBA comparison</a>, where several universities do print named tracks.</p>
+
+<h2>No published placement data</h2>
+
+<p>The portal describes mentorship and placement support, shows hiring partner logos, and names internal initiatives called SEED, 4Cs and ACE. It publishes no placement percentage, no median salary, and no cohort size for the online MBA.</p>
+
+<p>That absence is worth stating rather than filling. Any salary range quoted for this specific programme is almost certainly a category average borrowed from elsewhere, because the university has not released one.</p>
+
+<p>Treat placement support here as access to a service, not as an outcome you have been promised. If placement numbers drive your decision, ask for the online cohort's figures in writing and be ready for them not to exist yet.</p>
+
+<h2>Who this suits, and who it does not</h2>
+
+<table>
+<thead>
+<tr><th>Good fit if</th><th>Poor fit if</th></tr>
+</thead>
+<tbody>
+<tr><td>You need a UGC-entitled MBA for a promotion, pay-scale move or DPC eligibility</td><td>You are buying a brand recruiters recognise on sight outside Karnataka</td></tr>
+<tr><td>You want one clean fee with no tier puzzle, and a no-cost EMI route</td><td>You want a named specialisation printed on the certificate</td></tr>
+<tr><td>You value a heavy 12-credit applied project over a wide elective menu</td><td>You are comparing on published placement outcomes</td></tr>
+<tr><td>You are in the Mandya, Mysuru or Bengaluru corridor where the name carries locally</td><td>You need a long accreditation record rather than a first-cycle grade</td></tr>
+</tbody>
+</table>
+
+<h2>Check your own entitlement before you pay</h2>
+
+<p>Do not check whether the university is approved. Check whether <em>your</em> programme and <em>your</em> intake session are.</p>
+
+<p>Open the UGC-DEB programme register at <a href="https://deb.ugc.ac.in" rel="nofollow">deb.ugc.ac.in</a>, search for Adichunchanagiri University, and confirm three things: your programme is named, the mode column reads online, and the session matches the year you join. Entitlement is granted programme by programme and session by session, so a university can market something sitting outside its current list.</p>
+
+<p>Then confirm the NAAC grade and its validity window at <a href="https://naac.gov.in" rel="nofollow">naac.gov.in</a>, and the recognition status at <a href="https://ugc.gov.in" rel="nofollow">ugc.gov.in</a>. Our <a href="/guides/how-to-check-ugc-deb-approval">step-by-step UGC-DEB check</a> walks through the screens, and <a href="/guides/naac-nirf-rankings-explained">what NAAC and NIRF actually measure</a> explains why a cycle number changes how you read a grade.</p>
+
+<p>The current fee, the EMI split and the accreditation summary sit side by side on the <a href="/universities/adichunchanagiri-university-online/mba">Adichunchanagiri online MBA fee page</a>, and the institution profile on its <a href="/universities/adichunchanagiri-university-online">university page</a>. To model the monthly outflow against your own tenure, use the <a href="/tools/emi-calculator">EMI calculator</a>.</p>
+
+<div class="cta-box">
+<h3>Compare this against the rest of the Karnataka field</h3>
+<p>Edify compares public UGC, NAAC and NIRF data only. No paid rankings, and no referral commission from any university, so there is nothing in it for us either way.</p>
+<p><a href="/compare" class="ilink"><strong>Compare universities side by side</strong></a> &nbsp; <a href="/contact" class="ilink">Ask a counsellor about current fees</a></p>
+</div>
+
+<h2>The verdict</h2>
+
+<p>Adichunchanagiri's online MBA is a legitimate, entitled degree at ₹1,40,000, and the single-tier pricing is more honest than the multi-tier pricing several larger universities use.</p>
+
+<p>What you are not getting is a track record. A 2022 recognition, a 2024 first-cycle grade, one online programme, and no published placement data together describe an institution early in its online life. That is a reasonable thing to buy if you need the credential and the price fits. It is a poor thing to buy if you need the name to do work for you in an interview.</p>
+
+<p>Buy it for the entitlement and the applied project. Do not buy it for a ₹75,000 price that does not exist, or for a pharmacy ranking that has nothing to do with your degree.</p>`,
+  },
+  {
     slug: "is-mangalayatan-university-online-fake-or-legit-2026",
     title: "Is Mangalayatan University Online Fake or Legit? A Real Degree With a Thinner Record Than the Badges Suggest",
     seoTitle: "Is Mangalayatan University Online Fake? No. Check the Cycle",
@@ -42467,7 +42628,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     ],
     faqs: [
       { q: 'Is Manipal Online (MAHE) the same as Manipal University Jaipur?', a: 'No. They are two separate institutions under the Manipal umbrella. MAHE (Manipal Academy of Higher Education) is based in Manipal, Karnataka. It holds NAAC A++, NIRF #3 University rank, and Institution of Eminence status. MBA fee: ₹2,92,000. Manipal University Jaipur (MUJ) is based in Jaipur, Rajasthan. It holds NAAC A+, NIRF #32 University rank. MBA fee: ₹1,53,000 to ₹1,80,000. Both offer UGC-DEB entitled online MBA programmes, but they have different campuses, separate NAAC grades, separate NIRF ranks, and different fee structures. Edify has a detailed head-to-head comparison at edifyedu.in/compare/manipal-jaipur-vs-manipal-mahe covering all differences.' },
-      { q: 'Which is the cheapest online MBA in Karnataka in 2026?', a: 'Alva\'s College Online offers the lowest entry point, starting from approximately ₹30,000 to ₹1,20,000 total for a Business Analytics Pathway MBA. KSOU (Karnataka State Open University) is the next most affordable at ₹80,000 flat for a full MBA with 4 specialisations. Adichunchanagiri University starts from ₹75,000. All three are UGC-DEB approved. KSOU also carries NAAC A+ accreditation. Fees are indicative. Confirm with our counsellor on edifyedu.in before paying.' },
+      { q: 'Which is the cheapest online MBA in Karnataka in 2026?', a: 'Alva\'s College Online offers the lowest entry point, starting from approximately ₹30,000 to ₹1,20,000 total for a Business Analytics Pathway MBA. KSOU (Karnataka State Open University) is the next most affordable at ₹80,000 flat for a full MBA with 4 specialisations. Adichunchanagiri University charges ₹1,40,000 for the full two-year programme, not a starting figure, because it prices one MBA with no cheaper tier. All three are UGC-DEB approved. KSOU also carries NAAC A+ accreditation. Fees are indicative. Confirm with our counsellor on edifyedu.in before paying.' },
       { q: 'Is an online MBA from a Karnataka university valid for government jobs?', a: 'Yes. All 12 Karnataka universities listed here are UGC-DEB entitled. UGC Notification 2020 gives online degrees from entitled institutions the same legal standing as regular on-campus degrees. This means they are valid for UPSC, KPSC, SSC exams, banking recruitment, and corporate hiring. KSOU and University of Mysore are state universities, which carry extra weight in Karnataka government and public sector hiring. Verify current UGC-DEB entitlement status at deb.ugc.ac.in before applying.' },
       { q: 'Which Karnataka online MBA university has the best NIRF ranking?', a: 'MAHE (Manipal Academy of Higher Education) holds NIRF #3 in the University category and NIRF #39 in Management (2025). This is the highest University rank among all online MBA providers in India, not just Karnataka. JAIN University holds NIRF #62 University and NIRF #73 Management. JSS AHER holds NIRF #21 University. Christ University holds NIRF #63 University and NIRF #57 Management. Alliance University holds NIRF #71 Management. NIRF Management rank specifically reflects business school quality.' },
       { q: 'Should I pick a Bangalore university or a Mysore university for online MBA?', a: 'It depends on your career goal and budget. Bangalore cluster (JAIN, DSU, Christ, Alliance, Adichunchanagiri) offers stronger private-sector brand pull, especially in the Bangalore tech corridor. JAIN is strongest for tech and startup hiring. Mysore cluster (University of Mysore, KSOU, JSS AHER) offers heritage university brands at lower fees, and stronger recognition for government and public sector careers. KSOU at ₹80K is the most affordable NAAC A+ option. If targeting tech companies in Bangalore, pick JAIN or Alliance. If targeting government jobs or budget is the primary constraint, pick KSOU or University of Mysore.' },
@@ -42518,7 +42679,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <tr><td style="padding:10px"><a href="/universities/yenepoya-university-online">Yenepoya Online</a></td><td>Mangalore</td><td style="text-align:center">A+</td><td style="text-align:center">N/A</td><td style="text-align:right">₹1.20L</td><td>Finance, Marketing, HR</td></tr>
 <tr style="background:#f8fafc"><td style="padding:10px"><a href="/universities/christ-university-online">Christ University Online</a></td><td>Bangalore</td><td style="text-align:center">A+</td><td style="text-align:center">#63</td><td style="text-align:right">Confirm with counsellor*</td><td>Business Analytics</td></tr>
 <tr><td style="padding:10px"><a href="/universities/karnataka-state-open-university-online">KSOU Online</a></td><td>Mysore</td><td style="text-align:center">A+</td><td style="text-align:center">N/A</td><td style="text-align:right">₹80K</td><td>Finance, Marketing, HR, Operations</td></tr>
-<tr style="background:#f8fafc"><td style="padding:10px"><a href="/universities/adichunchanagiri-university-online">Adichunchanagiri Online</a></td><td>Bengaluru</td><td style="text-align:center">A+</td><td style="text-align:center">N/A</td><td style="text-align:right">₹75K to ₹1.80L</td><td>Finance, Marketing, HR, Ops, Data Science, Digital Marketing, Intl Business</td></tr>
+<tr style="background:#f8fafc"><td style="padding:10px"><a href="/universities/adichunchanagiri-university-online">Adichunchanagiri Online</a></td><td>Bengaluru</td><td style="text-align:center">A+</td><td style="text-align:center">N/A</td><td style="text-align:right">₹1,40,000</td><td>Finance, Marketing, HR, Ops, Data Science, Digital Marketing, Intl Business</td></tr>
 <tr><td style="padding:10px"><a href="/universities/alvas-college-online">Alva's College Online</a></td><td>Moodabidri</td><td style="text-align:center">A+</td><td style="text-align:center">N/A</td><td style="text-align:right">₹30K to ₹1.20L</td><td>Business Analytics Pathway</td></tr>
 </tbody>
 </table>
@@ -42596,9 +42757,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <h3>Adichunchanagiri University Online, Bengaluru</h3>
 
-<p>Adichunchanagiri University holds NAAC A+ accreditation. The online MBA offers 7 specialisations including Data Science, Digital Marketing, and International Business, the widest spec menu in the value tier. Fee range: ₹75,000 to ₹1,80,000.</p>
+<p>Adichunchanagiri University holds NAAC A+ accreditation. The online MBA is the university's only online programme. Its own portal describes functional specialisation exposure across marketing, finance, HR, operations, banking and analytics, plus nine micro-credential pathways worth 6 of the 86 credits. The fee is ₹1,40,000 for two years, with a ₹2,000 registration fee and ₹4,000 examination fee per year on top.</p>
 
-<p>The lower end of that range competes directly with KSOU on price, while offering nearly double the specialisations. Adichunchanagiri is a newer entrant to online education, so alumni network depth does not match KSOU's established base. But for candidates who want more specialisation options at budget pricing, it fills a gap.</p>
+<p>At ₹1,40,000 it sits well above KSOU on price, so the older claim that it competes at the budget end does not hold. Adichunchanagiri is a newer entrant to online education, so alumni network depth does not match KSOU's established base. But for candidates who want more specialisation options at budget pricing, it fills a gap.</p>
 
 <h3>VTU Online, Belgaum</h3>
 
@@ -42667,7 +42828,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>The ₹1.30L to ₹1.96L mid-range works well for Bangalore tech professionals targeting private sector promotions, dual specialisation seekers (JAIN offers 18 specs with dual options), or candidates who want WES recognition for international plans. To break that into monthly payments, <a href="/tools/emi-calculator">use the free EMI calculator</a> to see what each university costs per month.</p>
 
-<p>The under-₹1L budget tier (KSOU at ₹80K, Adichunchanagiri from ₹75K, Alva's from ₹30K) works if your primary goal is the credential for government promotions, DPC eligibility, or competitive exam qualification. If you are comparing budget online MBA options across India, also check our <a href="/fees">fees comparison page</a> for side-by-side pricing.</p>
+<p>The under-₹1L budget tier (KSOU at ₹80K, Alva's from ₹30K) works if your primary goal is the credential for government promotions, DPC eligibility, or competitive exam qualification. If you are comparing budget online MBA options across India, also check our <a href="/fees">fees comparison page</a> for side-by-side pricing.</p>
 
 <h2>Exclusions and Why</h2>
 

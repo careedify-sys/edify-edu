@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-15",
   "note": "Owner-verified fee figures that have no counterpart in lib/data.ts and therefore cannot resolve to MATCH via getDisplayFee. Only for figures a university's admissions team has confirmed in writing for a specific specialisation-tier or payment-mode variant that the fees hub does not model yet. Prefer the FeeVariant schema when implemented (see audits/fee-model-proposal-2026-08-07.md). Adding an entry here is a source-of-truth commitment: someone will re-verify at each intake.",
   "entries": [
     {
@@ -937,6 +937,87 @@
       "source": "Portal-verified at onlinesrm.in/mba/ on 2026-09-14",
       "verified_date": "2026-09-14",
       "note": "Same SRM University Sikkim total as above. The 200-char attribution window in this post sits next to Sikkim Manipal, so the scanner mis-attributes it."
+    },
+    {
+      "slug": "adichunchanagiri-university-online-mba-review",
+      "figure": 35000,
+      "university": "adichunchanagiri-university-online",
+      "programme": "MBA",
+      "source": "Official portal acuonline.edu.in/program/mba, Fee Structure tab (Indian & SAARC), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Per-semester fee. Four semesters make the Rs 1,40,000 total that lib/data.ts now carries. A component of the total, so it cannot resolve to MATCH on its own."
+    },
+    {
+      "slug": "adichunchanagiri-university-online-mba-review",
+      "figure": 70000,
+      "university": "adichunchanagiri-university-online",
+      "programme": "MBA",
+      "source": "Official portal acuonline.edu.in/program/mba, Fee Structure tab (Indian & SAARC), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Annual fee plan, the alternative to paying per semester. Payment-mode variant of the same Rs 1,40,000 total, not modelled separately in lib/data.ts."
+    },
+    {
+      "slug": "adichunchanagiri-university-online-mba-review",
+      "figure": 140000,
+      "university": "adichunchanagiri-university-online",
+      "programme": "MBA",
+      "source": "Official portal acuonline.edu.in/program/mba, Fee Structure tab (Indian & SAARC), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Total two-year programme fee. This is the figure lib/data.ts now carries (feeMin = feeMax = 140000) after this session corrected the placeholder Rs 75K-180K range. Allowlisted to cover prose occurrences whose attribution window does not attach cleanly."
+    },
+    {
+      "slug": "adichunchanagiri-university-online-mba-review",
+      "figure": 2000,
+      "university": "adichunchanagiri-university-online",
+      "programme": "MBA",
+      "source": "Official portal acuonline.edu.in/program/mba, Fee Structure tab (Indian & SAARC), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "One-time university registration fee, listed on the portal as payable on top of the programme fee. Not modelled in lib/data.ts."
+    },
+    {
+      "slug": "adichunchanagiri-university-online-mba-review",
+      "figure": 4000,
+      "university": "adichunchanagiri-university-online",
+      "programme": "MBA",
+      "source": "Official portal acuonline.edu.in/program/mba, Fee Structure tab (Indian & SAARC), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Examination fee per year, listed on the portal as payable on top of the programme fee. Not modelled in lib/data.ts."
+    },
+    {
+      "slug": "adichunchanagiri-university-online-mba-review",
+      "figure": 8000,
+      "university": "adichunchanagiri-university-online",
+      "programme": "MBA",
+      "source": "Official portal acuonline.edu.in/program/mba, Fee Structure tab (Indian & SAARC), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Examination fee across the two-year degree (Rs 4,000 per year x 2). Arithmetic on the portal’s own stated per-year figure, not a derived or estimated fee."
+    },
+    {
+      "slug": "adichunchanagiri-university-online-mba-review",
+      "figure": 150000,
+      "university": "adichunchanagiri-university-online",
+      "programme": "MBA",
+      "source": "Official portal acuonline.edu.in/program/mba, Fee Structure tab (Indian & SAARC), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "All-in total: Rs 1,40,000 programme fee + Rs 2,000 registration + Rs 8,000 examination. Sum of the portal’s own listed components. Presented in the post as such, never as the headline programme fee."
+    },
+    {
+      "slug": "adichunchanagiri-university-online-mba-review",
+      "figure": 6187,
+      "university": "adichunchanagiri-university-online",
+      "programme": "MBA",
+      "source": "Official portal acuonline.edu.in/program/mba, Fee Structure tab (Indian & SAARC), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "No-cost EMI monthly instalment advertised on the portal. A monthly figure, not a programme fee."
+    },
+    {
+      "slug": "adichunchanagiri-university-online-mba-review",
+      "figure": 75000,
+      "university": "adichunchanagiri-university-online",
+      "programme": "MBA",
+      "source": "Official portal acuonline.edu.in/program/mba, Fee Structure tab (Indian & SAARC), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "NOT a fee this university charges. This figure circulates widely for the ACU online MBA and the post exists partly to correct it; every occurrence in the body is a citation of the false claim, immediately contradicted by the verified Rs 1,40,000. It was also the placeholder floor in lib/data.ts (Rs 75K-180K, byte-identical to Bharath University’s) until this session replaced it. Allowlisted so the post can name the wrong number in order to debunk it."
     }
   ]
 }

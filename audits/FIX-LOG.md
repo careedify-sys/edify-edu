@@ -9,6 +9,112 @@ the fix by accident.
 
 ---
 
+## 2026-09-15 · Adichunchanagiri: the one uncovered university, and the placeholder fee that made it look cheap
+
+**How it was found.** Rishi asked for blogs that do not exist yet. A fresh 28-day GSC
+export (16 Aug to 12 Sep) was pulled and every non-calculator query with 100+
+impressions was checked against the blog inventory. Three candidates I proposed
+from the **July** export turned out to be dead or already covered, which is the
+finding worth keeping:
+
+| candidate | July impressions | Sept impressions | verdict |
+|---|---:|---:|---|
+| GLS University | 2,329 | **4** | demand collapsed, do not write |
+| Sikkim Manipal | 1,322 | 176 | demand collapsed |
+| Kurukshetra | 486 | 0 | gone from the export |
+| Dayananda Sagar | 213 | 652 | already covered by `dsu-online-mba-review` |
+| XLRI | 765 | 875 | already covered by `xlri-online-mba-review-2026` |
+| Uttaranchal | n/a | 1,655 | already covered by `uu-doon-online-mba-review` |
+| **Adichunchanagiri** | 269 | **319 @ pos 6.7, 1.88% CTR** | **no blog, written** |
+
+Three of those "gaps" were covered by posts my slug-matching script missed
+because the full university name lives only in `seoTitle`. **Grep every field,
+not the slug.** The English blog inventory is effectively saturated at 195 posts;
+Adichunchanagiri was the only university with live demand and no dedicated post.
+
+**The data was wrong, and wrong in a way that mattered.** `lib/data.ts` carried
+`feeMin: 75000, feeMax: 180000` for Adichunchanagiri. That pair is **byte-identical
+to Bharath University's**, and both taglines follow the same "X university with
+online programs" template, so it was bulk-generated placeholder, not a researched
+fee. The official portal (`acuonline.edu.in/program/mba`, Fee Structure tab) states:
+
+```
+semester fee            35,000  x 4  = 1,40,000
+registration (one time)  2,000
+examination      4,000/yr x 2 =  8,000
+                              -----------
+all in                          1,50,000
+```
+
+There is **one fee and no cheaper tier**, so "starts from ₹75,000" was not merely
+stale, it described a pricing structure that does not exist. The ₹75,000 floor was
+₹65,000 below the real programme fee.
+
+**We were publishing the wrong number, and arguing from it.** `online-mba-karnataka-2026`
+claimed "Adichunchanagiri University starts from ₹75,000", listed it in the
+"under-₹1L budget tier", and built a comparison on it: *the lower end of that range
+competes directly with KSOU on price*. At ₹1,40,000 it does not compete with KSOU
+at all. Five false claims in that post were corrected, and the post's unverified-figure
+count dropped 25 → 23.
+
+**Also corrected:** `city` was `Bengaluru`; the university is in **B G Nagara,
+Nagamangala taluk, Mandya district**. `emiFrom` was 3125 against a portal figure
+of ₹6,187.
+
+**Verified independently, not taken from the portal alone:**
+- NAAC **A+, CGPA 3.39/4.00, first cycle, 2024** (acu.edu.in/about/accreditations)
+- UGC **Section 2(f) November 2022**, 12(B) listed
+- UGC-DEB register (`deb.ugc.ac.in`) carries **exactly one** Adichunchanagiri entry,
+  **online mode, session 2025-26**, which independently confirms the MBA is the only
+  online programme. Listings showing an online BBA/BCA/B.Com for this university are wrong.
+- NIRF **78 (2023) and 83 (2024) in Pharmacy**. No Management rank, no University rank.
+  Per the NIRF-category rule, the post says so explicitly, because a pharmacy rank is
+  being moved onto an MBA elsewhere on the web.
+
+**The "specialisations" are not specialisations.** The portal lists nine
+*micro-credential pathways* worth **6 credits of 86**, producing a separate digital
+credential rather than a named track on the certificate. Our own data claims seven
+named MBA specs and we publish seven spec URLs under this university. That is
+**not resolved** and is flagged below.
+
+**Cannibalisation.** Four pages now exist for this university and each owns a
+different intent, consistent with the ownership rule settled 2026-09-14:
+
+```
+/blog/…-mba-review   "Adichunchanagiri Online MBA Review 2026: Honest Take"     review query
+/universities/…/mba  "Adichunchanagiri Online MBA Fees 2026: ₹1.4L"             fee query
+/universities/…      "Adichunchanagiri Online 2026: Fees ₹140K"                 brand query
+/verify/…            "Is Adichunchanagiri University Fake? No."                 legitimacy query
+```
+
+The blog's `targetKeyword` is deliberately `adichunchanagiri university online mba`,
+not the fee query, so it does not compete with its own hub. The Karnataka guide keeps
+the cluster query. No title pair overlaps.
+
+**Fee gate.** The post tripped `check-blog-fees` with 26 figures. All nine distinct
+values were added to `data/blog-fee-allowlist.json` with portal source and
+verified_date, including **75000 itself**, annotated as a figure the post cites only
+in order to debunk it. Post baselined at **0** unverified figures.
+
+**Verified.** Dev server: the post, the hub, the university page and the Karnataka
+guide all return 200. Hub title now reads ₹1.4L. The Karnataka guide shows zero
+occurrences of "starts from ₹75,000" and of "₹75K to ₹1.80L". `tsc --noEmit`: 0 errors.
+`check-em-dash-baseline` and `check-fee-baseline`: unchanged. Post body: 0 em dashes,
+0 H1, 0 filler words, 8 unique internal links, 4 approved external sources.
+
+### Still open
+
+- **Seven spec URLs may be fabricated.** We publish `/mba/data-science`,
+  `/mba/international-business`, `/mba/digital-marketing`, `/mba/finance`,
+  `/mba/hr-management`, `/mba/marketing` and `/mba/operations` for this university.
+  The portal names no such MBA tracks, and the DEB register carries one programme,
+  not seven. Deleting URLs needs the `check-gsc-404s` pass first, so this was not
+  touched. Same class as the fabricated-spec-URL work in `audits/fabricated-spec-urls-2026-08-17.csv`.
+- **The placeholder-fee pattern is wider than one university.** `feeMin: 75000,
+  feeMax: 180000` is shared with Bharath University and possibly others. A sweep for
+  identical feeMin/feeMax pairs across `lib/data.ts` would size it.
+
+---
 ## 2026-09-14 · JAIN checked against its portal. Both our pages were wrong, at opposite ends.
 
 **Source.** Rishi asked for the same portal check on JAIN after the BITS
