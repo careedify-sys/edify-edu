@@ -1371,8 +1371,8 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "is-ignou-fake-or-legit-2026",
     title: "Is IGNOU Fake or Legit? The Real Question Is Not the One You Are Asking",
-    seoTitle: "Is IGNOU Fake? No. Central University, NAAC A++",
-    metaDescription: "IGNOU is a central university with NAAC A++ and UGC-DEB approval. The real question is whether a Rs 14,400 degree is respected. An honest answer, with the limitations.",
+    seoTitle: "Is IGNOU Fake? No. Central University by Act of Parliament",
+    metaDescription: "IGNOU: a central university created by Act of Parliament in 1985, with 141 programmes on the UGC-DEB register for 2025-26. Not fake. The question is respect.",
     category: "University Reviews",
     tags: ["is ignou fake","is ignou degree valid","ignou ugc approved","ignou degree valid for government jobs","ignou naac grade","is ignou online degree respected","IGNOU Fake or Legit 2026"],
     publishedAt: "2026-08-26",
@@ -1384,12 +1384,12 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaTitle: "Compare IGNOU Against Private Online Universities",
     ctaDesc: "See accreditation, approval status and fees side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
     faqs: [
-      { q: "Is IGNOU fake?", a: "No. IGNOU is a central university, established and funded by the central government, which is the strongest recognition category India has. It holds NAAC A++, the top accreditation band, and is UGC-DEB approved for online delivery. It has never appeared on the UGC list of institutions declared fake, which you can check yourself at ugc.gov.in." },
+      { q: "Is IGNOU fake?", a: "No. IGNOU is a central university, established and funded by the central government, which is the strongest recognition category India has. It was awarded NAAC A++ (CGPA 3.56) in January 2021, and it carries 141 programmes on the UGC-DEB register for 2025-26. NAAC letter grades run five years, so check the current grade at naac.gov.in rather than assuming the 2021 award still stands. It has never appeared on the UGC list of institutions declared fake, which you can check yourself at ugc.gov.in." },
       { q: "Is an IGNOU degree valid for government jobs?", a: "Yes. UGC rules treat a degree from a recognised university delivered under DEB entitlement as equivalent to a conventional one, and IGNOU is a central university. Confirm that entitlement covered your admission year for your specific programme, and read the recruitment notification you are targeting, since individual employers can set conditions beyond the UGC baseline." },
       { q: "Is an IGNOU degree respected by employers?", a: "The degree is legally equivalent to any conventional degree and carries NAAC A++ accreditation, the same band as several universities charging many times more. Some employers still associate distance and online study with the pre-2020 era, before UGC tightened the regulations. Your work history and skills carry more weight in that conversation than the fee you paid." },
       { q: "Why is IGNOU so cheap?", a: "Because it is a central university funded by the central government, so its fees reflect public funding rather than market positioning. The low price is not a signal of weak quality: a Rs 14,400 B.Com from IGNOU carries the same NAAC A++ band and the same legal validity as a B.Com costing Rs 2,94,000 elsewhere." },
       { q: "How much does an IGNOU online degree cost?", a: "Full-programme fees range from Rs 9,600 for a BA to Rs 66,000 for an MBA. The B.Com is Rs 14,400, the MA and M.Com are Rs 18,000 each, the BCA is Rs 49,800 and the MCA is Rs 50,800. All figures are indicative and change between intakes, so confirm before you pay." },
-      { q: "Is IGNOU NAAC accredited?", a: "Yes, at NAAC A++, which is the top band. That is the same grade held by Amrita, NMIMS and Manipal Academy of Higher Education. Verify the current grade, the CGPA behind it and its validity window at naac.gov.in before you rely on it." },
+      { q: "Is IGNOU NAAC accredited?", a: "IGNOU was awarded NAAC A++ with a CGPA of 3.56 in January 2021, the first Open University in India to reach that band. Read the date carefully. NAAC letter grades run for five years, so that award’s window closes during 2026, and since February 2025 NAAC has assessed new applications under a binary Accredited or Not Accredited framework rather than renewing letter grades. Treat A++ as the grade IGNOU was awarded in 2021, not as a guaranteed current standing, and check the live position at naac.gov.in before you rely on it." },
       { q: "Does IGNOU offer placement support?", a: "Placement support is minimal, so plan to run your own job search. At these fee levels that is a reasonable trade, but it is a genuine trade. If placement assistance is central to your plan, budget for a private university that publishes what it actually provides." },
       { q: "Who should not choose IGNOU?", a: "Look elsewhere if you need structured teaching with scheduled live classes to stay on track, if placement support is central to your plan, or if a specific private brand carries weight in your sector. Those are legitimate reasons to pay more. IGNOU suits self-directed students who need a recognised degree at the lowest cost." },
     ],
@@ -1414,7 +1414,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>The Credential Nobody Disputes</h2>
 
-<p>Central universities are established and funded by the central government, which puts them in the strongest recognition category India has. IGNOU sits in that category, holds NAAC A++, and is UGC-DEB approved to deliver its degrees online.</p>
+<p>Central universities are established and funded by the central government, which puts them in the strongest recognition category India has. IGNOU sits in that category and is on the UGC-DEB register for the 2025-26 session with 141 programmes, 18 of them in online mode and 123 in open and distance mode. Checked on deb.ugc.ac.in in September 2026.</p>
 
 <p>NAAC A++ is the top accreditation band. It is the same grade held by Amrita, NMIMS and Manipal Academy of Higher Education, all of which charge many times more for comparable programmes.</p>
 
