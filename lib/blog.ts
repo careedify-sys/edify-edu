@@ -4996,7 +4996,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'nmims-online-mba-review-2026',
     title: 'NMIMS Online MBA Fees 2026: ₹1.96L to ₹2.2L Review and Honest Verdict',
-    seoTitle: 'NMIMS Online MBA Review 2026: Best Value for Mumbai BFSI Roles',
+    seoTitle: 'NMIMS Online MBA Review 2026: Best for Mumbai BFSI',
     metaDescription: 'NMIMS Online MBA honest review: fees, specialisations, placement reality. Based on real student feedback. Zero commission, no sales pitch.',
     category: 'University Reviews',
     tags: ['nmims online mba', 'nmims online mba fees', 'nmims online mba review', 'nmims mba specializations', 'nmims online mba placements', 'nmims cdoe', 'nmims distance mba', 'nmims online mba admission 2026', 'Narsee Monjee Online MBA Fees', 'NMIMS CDOE MBA Review'],
@@ -7247,7 +7247,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'mba-fees-india-complete-guide-2026',
     title: 'MBA Fees India 2026: All Programs Compared with Costs',
-    seoTitle: 'MBA Fees India 2026: IIM Rs 27L to Online Rs 31K Complete Guide | Edify',
+    seoTitle: 'MBA Fees India 2026: Rs 31K Online to Rs 27L at IIM',
     metaDescription: 'MBA fees India 2026 complete guide: IIM Rs 27L, ISB Rs 45L, private Rs 8-25L, online Rs 31K-2.25L. Hidden costs, ROI math, payback timelines, EMI options.',
     category: 'MBA Guides',
     tags: ['MBA fees', 'MBA cost India', 'MBA fees in India', 'online MBA fees', 'mba fees in india', 'mba fees india 2026', 'online mba courses fees', 'online mba fee comparison', 'online mba fees india 2026', 'cheapest online mba india'],
@@ -10994,7 +10994,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'online-mba-lpu-review-2026',
     title: 'LPU Online MBA Fees 2026: Lovely Professional University Review and Honest Take',
-    seoTitle: 'LPU Online MBA Review 2026: Dual Specialisation, NAAC A++ at Rs 1.46L',
+    seoTitle: 'LPU Online MBA 2026: Rs 1.46L, NAAC A++, Dual Specs',
     metaDescription: 'Lovely Professional University (LPU) online MBA fees ₹1,46,240 lumpsum or ₹40,400/semester. 12 specializations, NAAC A++, NIRF Management #44.',
     category: 'Online MBA University Reviews',
     tags: ['LPU Online MBA', 'LPU MBA Review 2026', 'LPU Online MBA Fees', 'UGC DEB Approved MBA', 'NAAC A++ Online MBA', 'LPU MBA Salary', 'LPU MBA Specialisations', 'Lovely Professional University MBA Fees', 'Lovely Professional University Online MBA'],
@@ -20200,7 +20200,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'top-correspondence-mba-colleges-india-2026',
     title: 'MBA Correspondence Fees 2026: IGNOU to NMIMS, Complete Fee Guide',
-    seoTitle: 'MBA Correspondence Fees 2026: ₹31,500 to ₹2L, Top Colleges Ranked',
+    seoTitle: 'Correspondence MBA Fees 2026: ₹31,500 to ₹2L',
     metaDescription: 'Top correspondence MBA colleges India 2026: 3-tier picker (premium, mid, budget), IGNOU Rs 31.5K to NMIMS Rs 1.96L, NAAC + UGC-DEB verified.',
     category: 'Distance MBA',
     tags: ['mba correspondence fees', 'correspondence mba colleges india', 'distance mba fees', 'correspondence mba', 'distance mba colleges', 'online mba india', 'ugc deb approved'],
@@ -24951,7 +24951,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'data-science-salary-india-2026-scope-jobs',
     title: 'Data Science Salary India 2026: Role-by-Role Breakdown',
-    seoTitle: `Data Science Salary India 2026: GenAI Premium, Product vs Services Gap | Edify`,
+    seoTitle: `Data Science Salary India 2026: The GenAI Premium`,
     metaDescription: `Data science salary India 2026: analyst vs scientist vs ML engineer, 25-40% GenAI/LLM premium, 2-3x product company gap, city multiplier, certifications.`,
     category: 'Career Guides',
     tags: ['data science salary india 2026', 'data scientist salary india', 'data analyst salary india', 'ml engineer salary india', 'data science jobs india', 'data science career scope'],
@@ -30453,7 +30453,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'mba-full-form-course-details-eligibility-fees-2026',
     title: 'MBA Full Form 2026: Course, Fees, Eligibility and Salary',
-    seoTitle: 'MBA Full Form, Course Details, Fees, Eligibility, Salary [2026]',
+    seoTitle: 'MBA Full Form: Master of Business Administration 2026',
     metaDescription: 'MBA stands for Master of Business Administration. Full guide on MBA eligibility, fees (40K-25L), top specializations, salary, and online vs regular MBA in India 2026.',
     category: 'Career Guides',
     tags: ['mba full form','what is mba','mba course details','mba eligibility','mba fees','mba specializations','mba salary india'],
@@ -32903,7 +32903,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   {
     slug: 'bcom-full-form-course-details-eligibility-fees-2026',
     title: 'B.Com Full Form 2026: Course, Fees, Subjects and Salary',
-    seoTitle: 'B.Com Full Form, Course, Subjects, Fees, Salary [2026]',
+    seoTitle: 'B.Com Full Form: Bachelor of Commerce, Fees and Salary',
     metaDescription: 'B.Com stands for Bachelor of Commerce. Full guide on B.Com course, subjects, eligibility, fees (5K-2L), salary, and career options in India 2026.',
     category: 'Career Guides',
     tags: ['bcom full form','b.com full form','what is bcom','bcom course details','bcom eligibility','bcom fees','bcom salary india'],
@@ -33525,7 +33525,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   {
     slug: 'btech-full-form-course-details-eligibility-fees-2026',
     title: 'B.Tech Full Form 2026: Branches, Fees and Salary Guide',
-    seoTitle: 'B.Tech Full Form, Branches, Fees, Eligibility, Salary [2026]',
+    seoTitle: 'B.Tech Full Form: Bachelor of Technology, Fees, Salary',
     metaDescription: 'B.Tech stands for Bachelor of Technology. Full guide on B.Tech branches, eligibility, fees (1-20L), salary by branch, and career options in India 2026.',
     category: 'Career Guides',
     tags: ['btech full form','b.tech full form','what is btech','btech branches','btech eligibility','btech fees','btech salary india'],
@@ -34129,7 +34129,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   {
     slug: 'bsc-full-form-course-details-eligibility-fees-2026',
     title: 'BSc Full Form: Branches, Subjects, Fees and Salary 2026',
-    seoTitle: 'BSc Full Form, Branches, Subjects, Fees, Salary [2026]',
+    seoTitle: 'BSc Full Form: Bachelor of Science, Branches and Salary',
     metaDescription: 'BSc stands for Bachelor of Science. Full guide on BSc branches, subjects, eligibility, fees (5K-2L), salary by specialization, and career options in India 2026.',
     category: 'Career Guides',
     tags: ['bsc full form','b.sc full form','what is bsc','bsc branches','bsc eligibility','bsc fees','bsc salary india'],
@@ -34776,7 +34776,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   {
     slug: 'ma-full-form-course-details-eligibility-fees-2026',
     title: 'MA Full Form 2026: Specialisations, Fees and Salary',
-    seoTitle: 'MA Full Form: Course, Eligibility, Fees and Scope 2026',
+    seoTitle: 'MA Full Form: Master of Arts, Fees, Duration and Scope',
     metaDescription: 'MA full form is Master of Arts, a two-year PG degree in humanities and social sciences. See subjects, eligibility, fees, online MA options, and career scope 2026.',
     category: 'Career Guides',
     tags: ['ma full form','m.a full form','what is ma','ma course details','ma eligibility','ma fees','ma salary india','ma specializations'],
@@ -39092,7 +39092,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
   {
     slug: 'nmims-online-bba-review-2026',
-    title: 'NMIMS Online BBA Review 2026: Fees, BA Electives, Honest Take',
+    title: 'NMIMS Online BBA Review 2026: Fees and Honest Take',
     h1Title: 'NMIMS Online BBA: Fees, BA Electives and Honest Take',
     metaDescription: 'NMIMS online BBA review 2026: ₹1,50,000 standard or ₹1,80,000 BA electives, NIRF top 100, NAAC A++, NMIMS deemed university Mumbai BFSI corridor brand.',
     category: 'Online BBA Programs',
@@ -43060,7 +43060,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   {
     slug: 'naac-accreditation-explained-grades-india-2026',
     title: 'NAAC Accreditation Explained: A++, A+, A, B++ and What They Mean for Your Degree',
-    seoTitle: 'NAAC Accreditation Grades Explained: A++ to B++ Meaning India 2026',
+    seoTitle: 'NAAC Grades Explained: What A++, A+ and B++ Mean',
     metaDescription: 'NAAC accreditation grades A++ to B++ explained with official CGPA ranges. What each grade means for your online degree, UGC-DEB approval, and employer acceptance.',
     category: 'Accreditation',
     tags: ['naac accreditation', 'naac grading system', 'naac a++ meaning', 'naac grade for online mba', 'what is naac accreditation', 'naac cgpa range', 'ugc deb naac requirement', 'online degree accreditation india'],
