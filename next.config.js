@@ -729,9 +729,13 @@ const nextConfig = {
       // they leave getPublishedPosts(), the sitemap and every listing. To undo
       // this, delete this block and set those 13 back to 'published'.
       //
-      // IGNOU is deliberately NOT here. /blog/is-ignou-fake-or-legit-2026 has
-      // 269 impressions and there is no /verify/ page to send them to, so it
-      // stays published. Add the redirect when the verify page exists.
+      // IGNOU joined on 2026-09-15, making it 14. The verify page did not exist
+      // before then because IGNOU had no row in the Supabase universities
+      // table. It now has one, deliberately WITHOUT an accreditations row: the
+      // NAAC A++ (CGPA 3.56) was awarded 19 Jan 2021 on a five-year window that
+      // closes during 2026, and NAAC has assessed under a binary framework
+      // since Feb 2025, so no current grade could be confirmed and none is
+      // asserted. ApprovalsCard guards with if(naac), so the card is omitted.
       //
       // Two destinations were picked by hand against the fuzzy match:
       //   dy-patil    → the post is about Dr. D.Y. Patil Vidyapeeth PUNE
@@ -746,6 +750,7 @@ const nextConfig = {
       { source: '/blog/is-galgotias-university-online-fake-or-legit-2026',    destination: '/verify/galgotias-university-online', permanent: true },
       { source: '/blog/is-integral-university-online-fake-or-legit-2026',     destination: '/verify/integral-university-online', permanent: true },
       { source: '/blog/is-jamia-hamdard-online-fake-or-legit-2026',           destination: '/verify/jamia-hamdard-online', permanent: true },
+      { source: '/blog/is-ignou-fake-or-legit-2026',                        destination: '/verify/ignou-online', permanent: true },
       { source: '/blog/is-lpu-online-fake-or-legit-2026',                     destination: '/verify/lovely-professional-university-online', permanent: true },
       { source: '/blog/is-mangalayatan-university-online-fake-or-legit-2026', destination: '/verify/mangalayatan-university-online', permanent: true },
       { source: '/blog/is-manipal-university-jaipur-fake-or-legit-2026',      destination: '/verify/manipal-university-online', permanent: true },

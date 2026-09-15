@@ -1379,7 +1379,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 7,
     targetKeyword: "is IGNOU fake or legit",
     relatedUniversities: ["ignou-online"],
-    status: "published",
+    status: "redirected",
     author: "Rishi Kumar",
     ctaTitle: "Compare IGNOU Against Private Online Universities",
     ctaDesc: "See accreditation, approval status and fees side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
