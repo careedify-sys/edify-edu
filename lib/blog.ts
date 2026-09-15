@@ -22746,7 +22746,7 @@ export const BLOG_POSTS: BlogPost[] = [
     // Sprint 1 revert: title/seoTitle/metaDescription reverted to pre-Sprint values
     // pending a separate A/B test. Cross-link callout at top of content field kept.
     title: 'Amity University Online MBA Fees 2026: ₹2.07L Review and Honest Assessment',
-    seoTitle: 'Amity Online MBA Review 2026: Best Pick for International Careers?',
+    seoTitle: 'Amity Online MBA Review 2026: Who It Actually Suits',
     metaDescription: 'Amity Online MBA honest review: ₹2.07L to ₹4.49L fees, 14 specialisations, placement reality from real student feedback. Zero commission.',
     category: 'University Reviews',
     tags: ['amity online mba', 'amity online mba review', 'amity mba online fees', 'amity online mba placements', 'amity online mba worth it', 'amity university mba eligibility', 'amity university noida mba fees and placement', 'mba in amity university fees'],
@@ -27347,7 +27347,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'dsu-online-mba-review',
     title: 'DSU Online MBA Review 2026: Fees and Honest Rating',
-    seoTitle: 'DSU Online MBA Fees 2026, Rs. 1,30,000 Total | Dayananda Sagar Review',
+    seoTitle: 'Dayananda Sagar Online MBA Review 2026: Bangalore Value',
     metaDescription: 'DSU Online MBA fees Rs 1,30,000 total (Rs 32,875 first semester). NAAC A++ Bangalore. Fee breakdown, specialisations, syllabus, honest 2026 review.',
     category: 'Online MBA Programs',
     tags: ['dsu online mba', 'dayananda sagar university online mba', 'dayananda sagar online mba fees', 'online mba bangalore', 'dsu online mba review'],
@@ -28001,7 +28001,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'uu-doon-online-mba-review',
     title: 'Uttaranchal University Online MBA Review 2026: Fees',
-    seoTitle: 'UU Doon Online MBA Fees 2026, Rs. 94,000 Total | Uttaranchal Review',
+    seoTitle: 'Uttaranchal University Online MBA Review 2026',
     metaDescription: 'UU Doon Online MBA at Rs. 94,000 total (after 30% scholarship). NAAC A+, Dehradun. Full fee breakdown, 8 specializations, syllabus and honest review for 2026.',
     category: 'Online MBA Programs',
     tags: ['uttaranchal university online mba', 'uu doon online mba', 'online mba dehradun', 'uu online mba fees', 'cheapest online mba uttarakhand', 'uu doon mba review'],
@@ -28991,7 +28991,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'noida-international-university-online-mba-review',
     title: 'NIU Online MBA Review 2026: Fees and Honest Rating',
-    seoTitle: 'NIU Online MBA Fees 2026, Rs. 88,500 | 10 Specializations | SPSS Training',
+    seoTitle: 'NIU (Noida International) Online MBA Review 2026',
     metaDescription: 'NIU Online MBA at Rs. 88,500 after early-bird discount. NAAC A+, Greater Noida. 10 specializations, SPSS training, healthcare & agri syllabi.',
     category: 'Online MBA Programs',
     tags: ['noida international university online mba', 'niu online mba', 'niu online mba fees', 'online mba greater noida', 'niu mba review', 'cheapest online mba ncr'],
@@ -29724,7 +29724,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'dy-patil-online-mba-review',
     title: 'DY Patil Online MBA Fees 2026: ₹1,89,400 Review and Honest Verdict',
-    seoTitle: 'DY Patil Online MBA Review 2026: WES-Recognised, Tech-Forward Specs',
+    seoTitle: 'DY Patil Online MBA Review 2026: WES-Recognised',
     metaDescription: 'DY Patil Online MBA reviewed: ₹1,89,400 total fee, most affordable WES-recognised online MBA. Real student feedback, pros, cons. Zero commission.',
     category: 'Online MBA Programs',
     tags: ['dy patil online mba', 'dy patil online mba review', 'wes recognized mba india', 'dy patil mba fees', 'online mba pune', 'Dr DY Patil Vidyapeeth MBA Fees', 'DY Patil Pune Online MBA', 'DY Patil Navi Mumbai vs Pune'],
