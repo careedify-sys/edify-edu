@@ -23533,7 +23533,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>What is the average prep time for CAT 99 percentile?:</strong> 6 to 12 months of structured prep. 4-5 hours daily during peak prep period.</li>
   <li><strong>Can working professionals clear CAT?:</strong> Yes. Many working professionals clear 95-plus percentile with 8-12 months disciplined evening plus weekend prep.</li>
   <li><strong>What is the CAT 2026 application fee?:</strong> Approximately Rs 2,400 General, Rs 1,200 reserved categories.</li>
-  <li><strong>How many IIM seats are filled through CAT 2026?:</strong> Approximately 5,000 to 6,000 across 21 IIMs combined.</li>
+  <li><strong>How many IIM seats are filled through CAT 2026?:</strong> Approximately 5,000 to 6,000 across 22 IIMs combined (IIM Guwahati, the newest, opened with a 70-seat first batch in 2026).</li>
 </ul>
 
 <h2>CAT 2025 Trends and Implications for CAT 2026</h2>
@@ -24124,9 +24124,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'iim-ranking-india-2026-all-iims-list',
-    title: 'IIM Ranking India 2026: All 21 IIMs Compared by NIRF',
-    seoTitle: `IIM Ranking India 2026: All 21 IIMs by NIRF, Fees, and Sector Strength | Edify`,
-    metaDescription: `IIM ranking India 2026: all 21 IIMs ranked by NIRF Management 2025, fees, CAT cutoffs, and sector specialisation (finance, tech, consulting, FMCG).`,
+    title: 'IIM Ranking India 2026: All 22 IIMs Compared by NIRF',
+    seoTitle: `IIM Ranking India 2026: All 22 IIMs Ranked by NIRF`,
+    metaDescription: `IIM ranking India 2026: all 22 IIMs ranked by NIRF Management 2025, fees, CAT cutoffs, and sector specialisation (finance, tech, consulting, FMCG).`,
     category: 'MBA & Management',
     tags: ['iim ranking 2026', 'iim ranking india', 'best iim india', 'all iim in india', 'iim fees', 'iim placement 2026', 'iim cutoff', 'top iim india'],
     publishedAt: '2026-04-10',
@@ -24141,7 +24141,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaDesc: `Compare top online MBA universities in India, fees, accreditation, placements, and specialisations side by side.`,
     faqs: [
       { q: `Which is the No 1 IIM in India 2026?`, a: `IIM Ahmedabad has ranked NIRF Management 1 for multiple consecutive years and remains India's most prestigious management institution. IIM Bangalore (typically NIRF 2) and IIM Calcutta (NIRF 3 or 4) are the closest competitors. The "Big 3" of IIMA, IIMB, and IIMC consistently feature in Financial Times Top 50 global MBA programmes.` },
-      { q: `How many IIMs are there in India in 2026?`, a: `There are 21 IIMs in India as of 2026. The newest addition was IIM Mumbai (originally NITIE), which has already broken into NIRF Management Top 10 in 2025. IIM Guwahati and additional baby IIMs may be added in future cycles per Ministry of Education plans.` },
+      { q: `How many IIMs are there in India in 2026?`, a: `There are 22 IIMs in India as of September 2026. The twenty-second is IIM Guwahati in Assam, which is mentored by IIM Ahmedabad and inaugurated its first MBA batch for 2026-28 on 21 July 2026. Before it, the newest was IIM Mumbai (originally NITIE), which has already broken into the NIRF Management Top 10 in 2025. Many lists still say 21 because they predate the Guwahati intake.` },
       { q: `What does BLACKI mean for IIMs?`, a: `BLACKI is the colloquial acronym for the six oldest and traditionally most prestigious IIMs: IIM Bangalore (B), IIM Lucknow (L), IIM Ahmedabad (A), IIM Calcutta (C), IIM Kozhikode (K), and IIM Indore (I). All six are consistently in NIRF Management Top 10 and carry the strongest brand recall among Indian recruiters.` },
       { q: `What CAT percentile do I need for IIM Ahmedabad?`, a: `IIMA requires 99-plus overall CAT percentile combined with 99-plus in each section (VARC, DILR, QA). Academic record (10th, 12th, graduation), work experience, gender diversity, and academic discipline diversity also factor into final selection. The CAT score alone does not guarantee admission; the final composite score determines the outcome.` },
       { q: `Which IIM is best for finance in 2026?`, a: `IIM Calcutta is widely regarded as India's strongest IIM for finance and investment banking placement. Goldman Sachs, JP Morgan, Morgan Stanley, and top private equity firms recruit heavily from IIMC. IIM Ahmedabad is second for finance plus the strongest for management consulting. IIM Bangalore is third for finance and strongest for tech and product roles.` },
@@ -24154,7 +24154,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Written for: CAT aspirants choosing between IIM preferences, applicants comparing IIMs against ISB or top private MBAs, and family decision-makers evaluating IIM ROI.</p>
 
-<div class="callout-key"><strong>One-line frame for IIM ranking 2026:</strong> 21 IIMs split into 4 tiers (Big 3, Old IIMs, New IIMs, Baby IIMs). NIRF rank tells you average outcome. Sector specialisation (IIMA consulting, IIMB tech, IIMC finance, IIMK marketing) tells you actual fit. Pick by both, not by NIRF alone.</div>
+<div class="callout-key"><strong>One-line frame for IIM ranking 2026:</strong> 22 IIMs split into 4 tiers (Big 3, Old IIMs, New IIMs, Baby IIMs). NIRF rank tells you average outcome. Sector specialisation (IIMA consulting, IIMB tech, IIMC finance, IIMK marketing) tells you actual fit. Pick by both, not by NIRF alone.</div>
 
 <h2>The 4 IIM Tiers Most Articles Mash Together</h2>
 
@@ -24163,7 +24163,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@vanessa-garcia" target="_blank" rel="noopener nofollow">Vanessa Garcia</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
 </figure>
 
-<p>The 21 IIMs are not a single cohort. They split into 4 tiers with sharply different fees, cutoffs, and outcomes.</p>
+<p>The 22 IIMs are not a single cohort. They split into 4 tiers with sharply different fees, cutoffs, and outcomes.</p>
 
 <table>
   <caption>IIM tier structure India 2026 (NIRF 2025 data)</caption>
@@ -24197,10 +24197,16 @@ export const BLOG_POSTS: BlogPost[] = [
   </tbody>
 </table>
 
-<h2>The Complete List: All 21 IIMs by Establishment Year</h2>
+<h2>How Many IIMs Are There in India?</h2>
+
+<p><strong>There are 22 IIMs in India as of September 2026.</strong> The twenty-second is IIM Guwahati, set up in Assam and mentored by IIM Ahmedabad, which inaugurated its first MBA batch for 2026-28 on 21 July 2026. Most lists still say 21 because they were written before it opened.</p>
+
+<p>The count on its own decides nothing. Twenty-two institutes share a name and a governing Act, and almost nothing else: fees run from about Rs 16 lakh to Rs 27 lakh, and the gap in placement outcome between the top tier and the newest campuses is wider than the gap between a new IIM and a good private school. What follows is the tier structure, which is the part that changes your decision.</p>
+
+<h2>The Complete List: All 22 IIMs by Establishment Year</h2>
 
 <table>
-  <caption>All 21 IIMs in India 2026 by founding year</caption>
+  <caption>All 22 IIMs in India 2026 by founding year</caption>
   <thead><tr><th>IIM</th><th>Location</th><th>Established</th><th>Category</th></tr></thead>
   <tbody>
     <tr><td>IIM Calcutta</td><td>Kolkata, West Bengal</td><td>1961</td><td>Big 3</td></tr>
@@ -24224,6 +24230,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>IIM Sirmaur</td><td>Sirmaur, Himachal Pradesh</td><td>2015</td><td>Baby IIM</td></tr>
     <tr><td>IIM Jammu</td><td>Jammu, Jammu and Kashmir</td><td>2016</td><td>Baby IIM</td></tr>
     <tr><td>IIM Mumbai (NITIE)</td><td>Mumbai, Maharashtra</td><td>2023 (as IIM)</td><td>New addition (operations focus)</td></tr>
+  <tr><td>IIM Guwahati</td><td>Guwahati, Assam</td><td>2026</td><td>Newest IIM, mentored by IIM Ahmedabad</td></tr>
   </tbody>
 </table>
 
