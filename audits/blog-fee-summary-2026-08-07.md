@@ -2,44 +2,44 @@
 
 Extractor v2 (structural attribution + range parsing + expanded NON_FEE).
 
-Total figures: **9320**
+Total figures: **9391**
 
 ## By classification
 
 | Class | Count |
 |---|---:|
-| MATCH | 1028 |
-| MISMATCH | 718 |
+| MATCH | 1026 |
+| MISMATCH | 723 |
 | SUPPRESSED | 10 |
 | ORPHAN | 44 |
-| UNRESOLVED | 1807 |
-| NON_FEE | 5713 |
+| UNRESOLVED | 1815 |
+| NON_FEE | 5773 |
 
 ## By class × confidence
 
 | Class / Confidence | Count |
 |---|---:|
-| MATCH/high | 623 |
-| MATCH/low | 67 |
-| MATCH/medium | 338 |
-| MISMATCH/high | 333 |
-| MISMATCH/low | 116 |
-| MISMATCH/medium | 269 |
-| NON_FEE/- | 5713 |
+| MATCH/high | 621 |
+| MATCH/low | 69 |
+| MATCH/medium | 336 |
+| MISMATCH/high | 328 |
+| MISMATCH/low | 134 |
+| MISMATCH/medium | 261 |
+| NON_FEE/- | 5773 |
 | ORPHAN/high | 34 |
 | ORPHAN/low | 2 |
 | ORPHAN/medium | 8 |
 | SUPPRESSED/high | 8 |
 | SUPPRESSED/medium | 2 |
 | UNRESOLVED/high | 16 |
-| UNRESOLVED/low | 1787 |
+| UNRESOLVED/low | 1795 |
 | UNRESOLVED/medium | 4 |
 
 ## Top 30 slugs by figure count
 
 | slug | total | MATCH | MISMATCH | SUPPRESSED | ORPHAN | UNRESOLVED | NON_FEE |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| mba-fees-india-complete-guide-2026 | 277 | 20 | 24 | 1 | 0 | 50 | 182 |
+| mba-fees-india-complete-guide-2026 | 276 | 21 | 23 | 1 | 0 | 49 | 182 |
 | amity-online-bba-fees-2026 | 175 | 7 | 17 | 0 | 1 | 8 | 142 |
 | online-bba-fees-india-2026 | 170 | 3 | 3 | 0 | 0 | 55 | 109 |
 | mba-hr-management-online-india-2026 | 166 | 40 | 16 | 0 | 0 | 39 | 71 |

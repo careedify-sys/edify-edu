@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
   "totalUnverified": 2433,
   "perSlug": {
@@ -185,7 +185,8 @@
     "is-integral-university-online-fake-or-legit-2026": 0,
     "is-ddu-gorakhpur-online-fake-or-legit-2026": 0,
     "is-parul-university-online-fake-or-legit-2026": 0,
-    "adichunchanagiri-university-online-mba-review": 0
+    "adichunchanagiri-university-online-mba-review": 0,
+    "integral-university-online-review": 0
   },
   "rebaselineNote": "2026-08-24: re-baselined after replacing placeholder fee ranges in lib/data.ts with exact owner-confirmed fees for 24 programme hubs. Wide junk ranges (e.g. 60K-200K) had been absorbing blog fee figures as MATCH; exact fees correctly reclassify them as payment-mode/list-price variants (e.g. NMIMS BBA semester plan 1,50,000 vs annual plan 1,41,000; Chandigarh BBA list 1,75,000 vs post-early-bird 1,31,250). No blog content was changed by that commit."
 }

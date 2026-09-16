@@ -51,7 +51,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 7,
     targetKeyword: "integral university online",
     relatedUniversities: ["integral-university-online"],
-    status: "draft",
+    status: "published",
     author: "Rishi Kumar",
     ctaTitle: "Compare Integral Against the Budget Tier",
     ctaDesc: "See UGC-DEB entitlement, NAAC cycle and the real fee side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",

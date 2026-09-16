@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "note": "Owner-verified fee figures that have no counterpart in lib/data.ts and therefore cannot resolve to MATCH via getDisplayFee. Only for figures a university's admissions team has confirmed in writing for a specific specialisation-tier or payment-mode variant that the fees hub does not model yet. Prefer the FeeVariant schema when implemented (see audits/fee-model-proposal-2026-08-07.md). Adding an entry here is a source-of-truth commitment: someone will re-verify at each intake.",
   "entries": [
     {
@@ -1018,6 +1018,195 @@
       "source": "Official portal acuonline.edu.in/program/mba, Fee Structure tab (Indian & SAARC), read 2026-09-15",
       "verified_date": "2026-09-15",
       "note": "NOT a fee this university charges. This figure circulates widely for the ACU online MBA and the post exists partly to correct it; every occurrence in the body is a citation of the false claim, immediately contradicted by the verified Rs 1,40,000. It was also the placeholder floor in lib/data.ts (Rs 75K-180K, byte-identical to Bharath University’s) until this session replaced it. Allowlisted so the post can name the wrong number in order to debunk it."
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 5500,
+      "university": "integral-university-online",
+      "programme": "BA",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Portal fee card: per-semester fee"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 31500,
+      "university": "integral-university-online",
+      "programme": "BA",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Portal fee card: total, 3 years"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 6500,
+      "university": "integral-university-online",
+      "programme": "B.Com",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Portal fee card: per-semester fee"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 37500,
+      "university": "integral-university-online",
+      "programme": "B.Com",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Portal fee card: total, 3 years"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 12800,
+      "university": "integral-university-online",
+      "programme": "BCA",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Portal fee card: per-semester fee"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 75300,
+      "university": "integral-university-online",
+      "programme": "BCA",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Portal fee card: total, 3 years. This is the one figure lib/data.ts already carries and it agrees exactly"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 9000,
+      "university": "integral-university-online",
+      "programme": "MA",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Portal fee card: per-semester fee, shared by MA, M.Com and MSW"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 35500,
+      "university": "integral-university-online",
+      "programme": "MA",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Portal fee card: total, 2 years, shared by MA, M.Com and MSW"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 10000,
+      "university": "integral-university-online",
+      "programme": "MSc",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Portal fee card: per-semester fee, M.Sc Mathematics"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 39500,
+      "university": "integral-university-online",
+      "programme": "MSc",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Portal fee card: total, 2 years, M.Sc Mathematics"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 17000,
+      "university": "integral-university-online",
+      "programme": "MBA",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Portal fee card: per-semester fee, shared by MBA and MCA"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 67500,
+      "university": "integral-university-online",
+      "programme": "MBA",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Portal fee card: total, 2 years, shared by MBA and MCA. lib/data.ts is stale here at Rs 1.1L for MCA and has duplicate MBA keys; flagged, not changed"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 33000,
+      "university": "integral-university-online",
+      "programme": "BA",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Arithmetic on the portal’s own stated figures: Rs 5,500 x 6 semesters, shown beside the portal total of Rs 31,500"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 39000,
+      "university": "integral-university-online",
+      "programme": "B.Com",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Arithmetic on the portal’s own stated figures: Rs 6,500 x 6 semesters, shown beside the portal total of Rs 37,500"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 76800,
+      "university": "integral-university-online",
+      "programme": "BCA",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Arithmetic on the portal’s own stated figures: Rs 12,800 x 6 semesters, shown beside the portal total of Rs 75,300"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 68000,
+      "university": "integral-university-online",
+      "programme": "MBA",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Arithmetic on the portal’s own stated figures: Rs 17,000 x 4 semesters, shown beside the portal total of Rs 67,500"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 36000,
+      "university": "integral-university-online",
+      "programme": "MA",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Arithmetic on the portal’s own stated figures: Rs 9,000 x 4 semesters, shown beside the portal total of Rs 35,500"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 1500,
+      "university": "integral-university-online",
+      "programme": "BCA",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Arithmetic on the portal’s own stated figures: the consistent gap between semester arithmetic and the stated total on every 3-year programme"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 500,
+      "university": "integral-university-online",
+      "programme": "MBA",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "Arithmetic on the portal’s own stated figures: the consistent gap between semester arithmetic and the stated total on every 2-year programme"
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 110000,
+      "university": "integral-university-online",
+      "programme": "MCA",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "NOT a fee the portal charges. Comparison listings quote Rs 1.1 lakh for the online MCA against the portal’s Rs 67,500; the post names the wrong figure in order to correct it. lib/data.ts also still carries this stale value."
+    },
+    {
+      "slug": "integral-university-online-review",
+      "figure": 150000,
+      "university": "integral-university-online",
+      "programme": "MBA",
+      "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
+      "verified_date": "2026-09-15",
+      "note": "NOT a fee the portal charges. The post says plainly that any quote near Rs 1.5 lakh for the Integral online MBA is wrong, against the portal’s Rs 67,500."
     }
   ]
 }
