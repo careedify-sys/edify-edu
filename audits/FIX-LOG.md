@@ -9,6 +9,89 @@ the fix by accident.
 
 ---
 
+## 2026-09-17 · A parse error hid three years of fabricated placement data on 35 spec pages
+
+**How it was found.** While checking which universities carry AI and banking MBA
+specialisations for a blog batch, a script that read every file in
+`lib/data/page-content/` threw. **35 of 431 files are invalid JSON**: all 26
+`chandigarh-university-online-mba-*` and 9 `symbiosis-university-online-mba-*`,
+each with a literal CR/LF pair sitting unescaped inside one string value.
+
+**Why nobody noticed.** `getSpecPageContent()` wraps the parse in a bare
+`try { ... } catch { return null }`. A null return is indistinguishable from
+"no content file exists", so `UniSpecBody.tsx` rendered the **generic thin
+fallback** on all 35 while the files sat on disk looking complete. Every audit
+that counted content coverage with `existsSync` has been overcounting by 35.
+**File exists is not page is rich.** Repaired with a state machine that escapes
+only control characters inside string values, so the content is otherwise
+byte-identical.
+
+**What the recovered content turned out to contain was worse than the bug.**
+
+**Fabricated employer lists, rendered on-page.** 33 of the 35 carried a
+`**Top hiring organisations:**` roster under `whoHires.body`, which *is*
+rendered. Across the 35 they name roughly 300 real organisations as hiring from
+specific online MBA specialisations: Netflix India, Google India, Disney+
+Hotstar, NITI Aayog, UNICEF India, the World Food Programme, Oxfam India and the
+American Red Cross India, the last four attached to a Chandigarh online MBA in
+Disaster Management. Nothing sources any of it. Removed, replaced with a note
+telling the reader to ask the university for the placement report covering their
+programme and mode, and saying plainly that we do not publish employer lists we
+cannot source. **This pattern is sitewide: 141 of 431 files carry one.**
+
+**Fabricated testimonials, not rendered.** Each file carried three named reviews
+with ratings, cities, years and outcome stories, introduced as "verified... from
+post-completion surveys". Sitewide that is **1,127 review items, 750 distinct
+invented names, 200 intros claiming verification**. The renderer never reads
+`sections.reviews`, so none of it was ever published, and the schema equivalent
+was already pulled on 2026-08-07 for exactly this reason. Removed from the 35
+anyway, because a dormant field like this is a trap for whoever wires the section
+up later.
+
+**Wrong NIRF category, in both directions.** The `tldr` and `hero` led with the
+University-category rank on MBA pages. For Chandigarh that meant quoting #19
+where Management is #32, which flatters. For Symbiosis it meant quoting #24 where
+Management is **#11**, which understates by a wide margin. Both now lead with
+Management. The comparison sections were worse: **31 wrong claims about *other*
+universities**, including Amity and MUJ both inflated to NAAC A++ when data.ts
+says A+, JAIN and LPU deflated to A+ when both are A++, and Amity, MUJ, UPES and
+LPU each compared on their University rank against a Management rank, which makes
+the comparison meaningless.
+
+**A fix that made things worse, then fixed again.** The first accreditation pass
+spliced Chandigarh's lapsed-NAAC caveat inline at every mention, 105 times across
+26 files, producing sentences like "at the NAAC A+ (accreditation cycle valid
+to September 2026, reconfirm...) level". Collapsed to one note per page. The
+comparator-grade fix also wrongly upgraded Chandigarh's *own* grade to A++ inside
+two comparison blocks, since it rewrote every NAAC mention in a block rather than
+only the comparator's. Caught by enumerating all 35 A++ occurrences with context
+rather than trusting the heuristic that found only one of the two.
+
+**Then the copy itself.** 37,500 words of rendered prose that opened by describing
+the institution, dumped bold-label bullet lists, and never said who a programme
+was wrong for. Rewrote `tldr`, `about` and `skills` on all 35 so each opens with
+the reader's situation, names what the syllabus actually contains, and states a
+limitation: business analytics trades depth for breadth, an MBA in IT moves you
+away from building, product roles still hire on evidence of shipping, aviation
+and media hire on sector experience so the degree helps insiders more than
+entrants. Subject names, fee figures and accreditation values are carried over,
+not restated.
+
+**Verified.** All 431 files parse. `tsc --noEmit` clean. No em dash, no filler
+words, no banned sentence starters in the new copy. Cross-check of
+university-to-university accreditation claims down from 31 wrong to 0. Sample
+pages across both universities return 200 and render the rich template with the
+corrected ranks and the new copy. Note for anyone verifying content edits
+locally: `getSpecPageContent()` caches per process, so the dev server must be
+restarted, not just reloaded.
+
+**What is still open.** The employer-list pattern in the other 106 files, the
+review items in the other 313, and the same NIRF-category error wherever else it
+appears. Those were left alone because the brief was these 35, not because they
+are fine.
+
+---
+
 ## 2026-09-17 · Twelve posts for three audiences the site has no footprint in: bankers, IT professionals, AI seekers
 
 **Why these three clusters.** Rishi asked for content aimed at people who need an
