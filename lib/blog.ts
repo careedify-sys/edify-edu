@@ -42,6 +42,9 @@ export const getBlogPost = getPostBySlug
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "online-mba-bank-employees-promotion-2026",
+    heroImage: "https://images.pexels.com/photos/6289062/pexels-photo-6289062.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Crop anonymous person inserting credit card PIN code and pressing buttons on ATM keyboard",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@gabby-k\" target=\"_blank\" rel=\"noopener nofollow\">Monstera Production</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA for Bank Employees 2026: What It Changes for Promotion",
     seoTitle: "Online MBA for Bank Employees: The Promotion Reality",
     h1Title: "Online MBA for Bank Employees: What It Actually Changes",
@@ -62,6 +65,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-bfsi-india-2026",
+    heroImage: "https://images.pexels.com/photos/37320179/pexels-photo-37320179.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "A glass office tower reflecting the sky, of the kind that houses financial services firms.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@wal_-172619-2156618639\" target=\"_blank\" rel=\"noopener nofollow\">wal_ 172619</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA in BFSI 2026: The Universities That Actually Label It",
     seoTitle: "Online MBA in BFSI 2026: Who Really Offers It",
     h1Title: "Online MBA in BFSI: The Real Shortlist for 2026",
@@ -82,6 +88,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "mba-vs-jaiib-caiib-bank-officers-2026",
+    heroImage: "https://images.pexels.com/photos/6671685/pexels-photo-6671685.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "A student studying from an open book, holding a pencil, indoors.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@tima-miroshnichenko\" target=\"_blank\" rel=\"noopener nofollow\">Tima Miroshnichenko</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "MBA vs JAIIB and CAIIB for Bank Officers: Different Papers, Different Jobs",
     seoTitle: "MBA vs JAIIB and CAIIB: Which One a Bank Officer Needs",
     h1Title: "MBA vs JAIIB and CAIIB: What Each One Is Actually For",
@@ -102,6 +111,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-banking-insurance-vs-finance-vs-bfsi-2026",
+    heroImage: "https://images.pexels.com/photos/6814526/pexels-photo-6814526.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Person in business attire signing a document at a wooden table in an office setting.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@cottonbro\" target=\"_blank\" rel=\"noopener nofollow\">cottonbro studio</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Banking and Insurance vs Finance vs BFSI: Three MBA Labels Compared",
     seoTitle: "Banking and Insurance vs Finance vs BFSI MBA Labels",
     h1Title: "Three MBA Labels That Sound the Same and Are Not",
@@ -122,6 +134,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-it-professionals-india-2026",
+    heroImage: "https://images.pexels.com/photos/36706459/pexels-photo-36706459.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "A software developer working on code at a dual monitor setup in a modern office.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@zayed-hossain-52728970\" target=\"_blank\" rel=\"noopener nofollow\">Zayed Hossain</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA for IT Professionals 2026: When It Moves You and When It Does Not",
     seoTitle: "Online MBA for IT Professionals: An Honest 2026 Read",
     h1Title: "Online MBA for IT Professionals: The Honest Version",
@@ -142,6 +157,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "mba-tech-lead-to-engineering-manager-india-2026",
+    heroImage: "https://images.pexels.com/photos/7698712/pexels-photo-7698712.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "A diverse group of professionals engaged in a collaborative office meeting with laptops and a whiteboard.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@yankrukov\" target=\"_blank\" rel=\"noopener nofollow\">Yan Krukau</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "MBA for the Tech Lead to Engineering Manager Jump: An Honest Read",
     seoTitle: "MBA for Engineering Managers: Does It Make the Jump",
     h1Title: "Tech Lead to Engineering Manager: Where an MBA Helps",
@@ -162,6 +180,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-information-technology-management-india-2026",
+    heroImage: "https://images.pexels.com/photos/37730212/pexels-photo-37730212.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Close-up of server racks in a data center highlighting modern technology infrastructure.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@cookiecutter\" target=\"_blank\" rel=\"noopener nofollow\">panumas nikhomkhai</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA in IT Management 2026: Who Offers It and What Is Inside",
     seoTitle: "Online MBA in IT Management 2026: The Real Options",
     h1Title: "Online MBA in IT Management: The 2026 Shortlist",
@@ -182,6 +203,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-vs-ms-vs-executive-pgp-software-engineers-2026",
+    heroImage: "https://images.pexels.com/photos/9159042/pexels-photo-9159042.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Students learning in a classroom setting with a teacher assisting and laptops on desks, creating an interactive education environment.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@mikhail-nilov\" target=\"_blank\" rel=\"noopener nofollow\">Mikhail Nilov</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "MBA vs MS vs Executive PGP for Software Engineers in India",
     seoTitle: "MBA vs MS vs Executive PGP for Software Engineers",
     h1Title: "MBA, MS or Executive PGP: Three Different Instruments",
@@ -202,6 +226,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-artificial-intelligence-india-2026",
+    heroImage: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "A robotic hand reaching into a digital network on a blue background.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@tara-winstead\" target=\"_blank\" rel=\"noopener nofollow\">Tara Winstead</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA in Artificial Intelligence 2026: Who Actually Offers One",
     seoTitle: "Online MBA in Artificial Intelligence: The 2026 Reality",
     h1Title: "Online MBA in Artificial Intelligence: What Exists in 2026",
@@ -222,6 +249,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "mba-ai-vs-mca-ai-vs-mtech-ai-india-2026",
+    heroImage: "https://images.pexels.com/photos/4078342/pexels-photo-4078342.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Close-up view of a programmer typing code on a laptop in a workspace.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@imperioame\" target=\"_blank\" rel=\"noopener nofollow\">Mario Amé</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "MBA in AI vs MCA in AI vs M.Tech in AI: Which Degree Fits Which Job",
     seoTitle: "MBA in AI vs MCA in AI vs M.Tech in AI Compared",
     h1Title: "MBA, MCA or M.Tech in AI: Three Different Job Families",
@@ -242,6 +272,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "mba-data-science-vs-business-analytics-2026",
+    heroImage: "https://images.pexels.com/photos/577210/pexels-photo-577210.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "A laptop displaying data analytics charts on screen in a bright room.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@goumbik\" target=\"_blank\" rel=\"noopener nofollow\">Lukas Blazek</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "MBA Data Science vs Business Analytics: The Labels Are Not Interchangeable",
     seoTitle: "MBA Data Science vs Business Analytics: The Difference",
     h1Title: "Data Science or Business Analytics: Which MBA Label",
@@ -262,6 +295,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-ai-eligibility-maths-coding-2026",
+    heroImage: "https://images.pexels.com/photos/7983587/pexels-photo-7983587.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "A person working on a laptop at a desk with snacks, emphasizing productivity and technology.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@kampus\" target=\"_blank\" rel=\"noopener nofollow\">Kampus Production</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Do You Need Maths or Coding for an Online MBA in AI?",
     seoTitle: "Online MBA in AI: Do You Need Maths or Coding?",
     h1Title: "Maths and Coding for an Online MBA in AI: The Real Answer",
