@@ -9,6 +9,80 @@ the fix by accident.
 
 ---
 
+## 2026-09-17 · Twelve posts for three audiences the site has no footprint in: bankers, IT professionals, AI seekers
+
+**Why these three clusters.** Rishi asked for content aimed at people who need an
+MBA for a promotion in banking or tech, and at people shopping for AI programmes.
+The 28-day GSC export (18 Aug to 14 Sep, 4,446 clicks / 987,942 impressions) says
+the site has essentially **no footprint in any of them**:
+
+| cluster | GSC evidence, 28 days | position |
+|---|---|---:|
+| AI / analytics programmes | `mba in business analytics` 135 impr, `...online` 11 impr | **72.3** |
+| Finance / banking programmes | 5 generic `mba finance` variants, ~716 impr combined, 0 clicks | **68 to 77** |
+| Working professionals | `bits pilani mba for working professionals` 278 impr, 0 clicks | 9.6 |
+| Bank promotion, AI MBA, IT MBA | **no queries at all** | n/a |
+
+Position 68 to 77 is page seven. This is not a rescue of existing impressions, it
+is a bet on demand the site has never competed for, and it should be judged that
+way when the next export is pulled.
+
+**What justified the bet.** Career-intent content is the format that already works
+here. `govt-jobs-after-mba-india-2026` is the site's second-biggest page after the
+CGPA calculator (190 clicks, 15,723 impressions, position 6.73) and
+`mca-vs-btech-which-is-better-2026` pulls 4,950 impressions at 6.8. Programme-intent
+pages sit on page seven; career-intent and comparison pages sit on page one. All
+twelve posts are written as career or decision content, not as programme brochures.
+
+**The constraint that shaped every post: no rupee figures.** `scripts/check-blog-fees.mjs`
+applies a strict rule to any slug not in `data/blog-fee-baseline.json`: every rupee,
+Rs or INR figure must resolve to MATCH against `getDisplayFee()` or sit in the
+allowlist, and NON_FEE no longer clears it. There is also no approved source for
+Indian banking or tech salary data (CLAUDE.md permits official university portals,
+deb.ugc.ac.in, naac.gov.in, nirfindia.org, ugc.gov.in and nothing else), so quoting
+salaries would have meant fabricating them. **Both constraints point the same way**,
+so these posts carry zero currency figures and route every money question to the
+official portal. The gate confirms it: 2,433 unverified figures before and after.
+
+**Accreditation claims were cross-checked against Supabase, and three universities
+could not be.** Per the source-of-truth rule, every NAAC and NIRF claim in these posts
+was verified against the `accreditations` table. Verified: JAIN A++ / NIRF Mgt 73, LPU
+A++ / 44, Symbiosis A++ / 11, NMIMS A++ / 24, Amity A+ / 49, Chitkara A+ / 78, UPES
+A / 36, BIT Mesra A / 97, SMU A+. **Not in Supabase at all: Manipal University Jaipur,
+Dayananda Sagar, BITS Pilani.** Those three are named in the posts for their
+specialisations only, with no accreditation claim attached. Two further findings worth
+carrying: Chandigarh University's NAAC A+ row carries `valid_till 2026-09-09`, which
+has now passed, so the posts say its validity needs a direct check rather than
+asserting the grade; and NIRF ranks are always written with their category, since
+Management is the relevant one for an MBA page.
+
+**The posts.** Banking: `online-mba-bank-employees-promotion-2026`,
+`online-mba-bfsi-india-2026`, `mba-vs-jaiib-caiib-bank-officers-2026`,
+`online-mba-banking-insurance-vs-finance-vs-bfsi-2026`. Tech:
+`online-mba-it-professionals-india-2026`,
+`mba-tech-lead-to-engineering-manager-india-2026`,
+`online-mba-information-technology-management-india-2026`,
+`online-mba-vs-ms-vs-executive-pgp-software-engineers-2026`. AI:
+`online-mba-artificial-intelligence-india-2026`,
+`mba-ai-vs-mca-ai-vs-mtech-ai-india-2026`,
+`mba-data-science-vs-business-analytics-2026`,
+`online-mba-ai-eligibility-maths-coding-2026`.
+
+**Verified.** `check-locked-rules.js` PASS (no em dash, no competitor link).
+`check-blog-fees.mjs` OK, count unchanged. `tsc --noEmit` clean. A purpose-built
+validator checked all twelve for filler words, banned sentence starters, currency
+figures, H1-in-body, 5 to 10 unique internal links, dead link targets against
+`valid-urls.json` and the runtime slug list, FAQ count and HTML tag balance: 0 errors.
+All twelve return 200 on the dev server and appear in `sitemap.xml`. Runtime count
+180 to 192 published.
+
+**What to watch.** Pull GSC around 15 October. If the banking and AI clusters are
+still unseen after four weeks, the conclusion is that these queries have no Indian
+volume rather than that the posts are weak, and the cluster should be abandoned
+rather than expanded. Do not add more posts to these clusters before that read.
+
+---
+
 ## 2026-09-15 · Adichunchanagiri: the one uncovered university, and the placeholder fee that made it look cheap
 
 **How it was found.** Rishi asked for blogs that do not exist yet. A fresh 28-day GSC
