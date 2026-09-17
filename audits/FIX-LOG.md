@@ -9,6 +9,72 @@ the fix by accident.
 
 ---
 
+## 2026-09-17 · lib/data.ts ids and Supabase slugs do not agree, and the mismatch was producing false findings
+
+**How it was found.** Chandigarh's NAAC cycle turned out to have lapsed, so I
+swept every university for the same problem. The first sweep returned five grade
+mismatches and claimed MUJ, DSU and Amrita had no accreditation records. **All of
+that was wrong.** The join was matching on slug, and the two sources do not use
+the same slugs.
+
+| lib/data.ts id | Supabase slug |
+|---|---|
+| `upes-online` | `university-of-petroleum-and-energy-studies-online` |
+| `manipal-university-jaipur-online` | `manipal-university-online` (Rajasthan) |
+| `dayananda-sagar-university-online` | `dayanand-sagar-university-online` (one letter) |
+| `symbiosis-university-online` | `symbiosis-international-online` |
+| `nmims-online` | `narsee-monjee-institute-of-management-studies-nmims-online` |
+
+A naive join drops these silently. A fuzzy join is worse: it paired
+`dr-br-ambedkar-open-university-online` (Telangana) with
+**Dr. Babasaheb Ambedkar Open University** (Gujarat), which is a different
+institution, and paired UPES with whatever shared a common word.
+
+**Corrections to earlier entries in this log.** The 2026-09-17 spec-page entry
+says MUJ, Dayananda Sagar and BITS Pilani are absent from Supabase. Only **BITS
+Pilani** is. MUJ carries NAAC A+ (3.28, valid to 2027-02-14), NIRF Management 81
+and University 58, all of which agree with lib/data.ts. DSU carries NAAC A+ (3.31).
+Separately, [[project_supabase_accreditation_gap]] recorded Amrita as having no
+accreditation rows; it has a full set, including NAAC A++ (3.7, valid to
+2028-08-17) and NIRF Management 26. That also resolves the flagged Amrita
+conflict between "NIRF #8" and "#26 Management": **both are correct**, they are
+the University and Management categories.
+
+**What shipped.** `scripts/lib/supabase-uni-map.mjs` holds a hand-verified
+id-to-slug map (41 overrides), a set of 7 universities confirmed genuinely absent
+from Supabase, and 3 that are present but carry no NAAC row. `resolveSupabaseSlug()`
+returns null rather than guessing. Any future Supabase cross-check must go
+through it, because [[feedback_supabase_truth]] makes those cross-checks
+mandatory and a wrong join produces a confident wrong answer.
+
+`scripts/audit-naac-validity.mjs` joins through that map and reports grades whose
+cycle has lapsed, grades expiring within six months, and disagreements between
+lib/data.ts and Supabase.
+
+**What it found, now that the join is trustworthy.**
+
+- **0 grade disagreements.** The five from the first run were all matcher
+  artefacts. lib/data.ts agrees with Supabase everywhere both hold a value.
+- **2 lapsed cycles the site still presents as current**: Chandigarh University
+  A+ (expired 2026-09-09) and Dayalbagh Educational Institute A+ (2026-08-09).
+- **4 expiring within six months**: MUJ (2027-02-14), Shiv Nadar (2026-11-26),
+  Devi Ahilya Vishwavidyalaya (2026-11-26), Banasthali Vidyapith (2027-03-11).
+- **20 universities** either absent from Supabase or holding no NAAC row, which
+  is the backfill list. IGNOU, SPPU and Bharathidasan are present with no NAAC
+  row, so their grades on site are unverifiable against source of truth.
+
+**Deliberately not done.** The NAAC grade renders at **63 sites** across the
+component tree with no shared formatter, so there is no chokepoint to add an
+"as at" caveat to. Wiring that is its own piece of work and a display decision,
+not something to half-apply. The Chandigarh spec pages already date the claim
+from the earlier pass. Dayalbagh and Chandigarh's other surfaces still assert it.
+
+**An expired cycle does not mean the grade is gone.** Reassessment is often
+pending. It means we cannot assert it as current, which is the same treatment
+IGNOU's A++ already gets.
+
+---
+
 ## 2026-09-17 · Finishing the sweep: 126 rendered employer lists and 1,022 testimonials removed sitewide
 
 **Why this followed the 35-file repair.** Fixing the unparseable spec files
