@@ -19,30 +19,69 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Strategic Management", "desc": "Corporate strategy, competitive advantage, strategic planning, and business model analysis." },
-            { "name": "Legal Aspects", "desc": "Contract law, consumer protection, IP rights, and business regulatory compliance." },
-            { "name": "Agricultural Marketing Management", "desc": "Agricultural commodity marketing, mandi operations, eNAM platform, FPO aggregation, and farm-gate pricing strategies." },
-            { "name": "Agribusiness Cooperatives", "desc": "Cooperative society structure, FPO management, Amul model study, SHG-cooperative linkage, and cooperative governance." },
-            { "name": "Food Retail Management", "desc": "Food retail formats, cold chain retail operations, FSSAI compliance for retail, category management for food products, and farm-to-fork traceability." },
-            { "name": "Quality Management in Agribusiness", "desc": "FSSAI standards, food safety management systems, Codex Alimentarius basics, post-harvest quality control, and agri-product grading." },
-            { "name": "Merger, Acquisition, Corporate Restructuring and Valuation", "desc": "M&A in agribusiness context, valuation methods for agricultural enterprises, corporate restructuring frameworks, and due diligence." }
+            {
+              "name": "Strategic Management",
+              "desc": "Corporate strategy, competitive advantage, strategic planning, and business model analysis."
+            },
+            {
+              "name": "Legal Aspects",
+              "desc": "Contract law, consumer protection, IP rights, and business regulatory compliance."
+            },
+            {
+              "name": "Agricultural Marketing Management",
+              "desc": "Agricultural commodity marketing, mandi operations, eNAM platform, FPO aggregation, and farm-gate pricing strategies."
+            },
+            {
+              "name": "Agribusiness Cooperatives",
+              "desc": "Cooperative society structure, FPO management, Amul model study, SHG-cooperative linkage, and cooperative governance."
+            },
+            {
+              "name": "Food Retail Management",
+              "desc": "Food retail formats, cold chain retail operations, FSSAI compliance for retail, category management for food products, and farm-to-fork traceability."
+            },
+            {
+              "name": "Quality Management in Agribusiness",
+              "desc": "FSSAI standards, food safety management systems, Codex Alimentarius basics, post-harvest quality control, and agri-product grading."
+            },
+            {
+              "name": "Merger, Acquisition, Corporate Restructuring and Valuation",
+              "desc": "M&A in agribusiness context, valuation methods for agricultural enterprises, corporate restructuring frameworks, and due diligence."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Entrepreneurship Development", "desc": "Agri-startup ideation, business plan development, funding for agriculture ventures, and rural entrepreneurship." },
-            { "name": "Digital Marketing and E-Commerce", "desc": "Digital marketing for agricultural products, e-commerce platforms for farm produce, and social media for agri-brands." },
-            { "name": "Agribusiness Environment and Policy", "desc": "Agricultural policy frameworks (MSP, APMC, PM-KISAN, eNAM), WTO agriculture agreement, FDI in agriculture, and regulatory environment." },
-            { "name": "Fertilizer Technology and Management", "desc": "Fertilizer product types, manufacturing process overview, distribution chain, subsidy mechanisms, and market dynamics for fertilizer companies." },
-            { "name": "Seed Production Technology and Management", "desc": "Seed certification process, hybrid seed production basics, seed distribution networks, quality control, and seed industry regulations." },
-            { "name": "Microfinance for Agribusiness", "desc": "Kisan Credit Card product structure, NABARD refinance schemes, SHG-bank linkage, agricultural microfinance product design, and crop insurance basics." }
+            {
+              "name": "Entrepreneurship Development",
+              "desc": "Agri-startup ideation, business plan development, funding for agriculture ventures, and rural entrepreneurship."
+            },
+            {
+              "name": "Digital Marketing and E-Commerce",
+              "desc": "Digital marketing for agricultural products, e-commerce platforms for farm produce, and social media for agri-brands."
+            },
+            {
+              "name": "Agribusiness Environment and Policy",
+              "desc": "Agricultural policy frameworks (MSP, APMC, PM-KISAN, eNAM), WTO agriculture agreement, FDI in agriculture, and regulatory environment."
+            },
+            {
+              "name": "Fertilizer Technology and Management",
+              "desc": "Fertilizer product types, manufacturing process overview, distribution chain, subsidy mechanisms, and market dynamics for fertilizer companies."
+            },
+            {
+              "name": "Seed Production Technology and Management",
+              "desc": "Seed certification process, hybrid seed production basics, seed distribution networks, quality control, and seed industry regulations."
+            },
+            {
+              "name": "Microfinance for Agribusiness",
+              "desc": "Kisan Credit Card product structure, NABARD refinance schemes, SHG-bank linkage, agricultural microfinance product design, and crop insurance basics."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "NIU MBA Agri Business graduates target roles across the agriculture value chain:\n\n**Industries:** Agri-input companies (seeds, fertilizers, crop protection), food processing, commodity trading, agricultural finance, FPO management, food retail, government agricultural departments, and agri-tech startups\n\n**Entry-level roles:** Agri Business Executive, Agricultural Marketing Executive, Farm Input Sales Officer, FPO Coordinator, Food Retail Executive, Agri-Finance Analyst\n\n**Mid-level roles (3-5 years experience):** Agri Business Manager, Regional Sales Manager (agri-inputs), Commodity Trading Manager, FPO CEO, Food Processing Plant Manager, Branch Manager (agricultural bank)\n\n**Senior roles (7+ years):** VP Agri Business, Head of Rural Markets, Director Agri Supply Chain, COO (food processing), Head of Agricultural Lending\n\n**Employers:** Agri-input (UPL, PI Industries, Rallis India, Coromandel), food processing (ITC Foods, Nestle India, Britannia), commodity (Cargill, Olam), agri-finance (NABARD, RRBs), and government (agricultural marketing boards, FCI).\n\n**Note:** NIU provides career support. Greater Noida location provides Delhi-NCR regional access."
+      "body": "NIU MBA Agri Business graduates target roles across the agriculture value chain:\n\n**Industries:** Agri-input companies (seeds, fertilizers, crop protection), food processing, commodity trading, agricultural finance, FPO management, food retail, government agricultural departments, and agri-tech startups\n\n**Entry-level roles:** Agri Business Executive, Agricultural Marketing Executive, Farm Input Sales Officer, FPO Coordinator, Food Retail Executive, Agri-Finance Analyst\n\n**Mid-level roles (3-5 years experience):** Agri Business Manager, Regional Sales Manager (agri-inputs), Commodity Trading Manager, FPO CEO, Food Processing Plant Manager, Branch Manager (agricultural bank)\n\n**Senior roles (7+ years):** VP Agri Business, Head of Rural Markets, Director Agri Supply Chain, COO (food processing), Head of Agricultural Lending\n\n**Employers:** Agri-input (UPL, PI Industries, Rallis India, Coromandel), food processing (ITC Foods, Nestle India, Britannia), commodity (Cargill, Olam), agri-finance (NABARD, RRBs), and government (agricultural marketing boards, FCI).\n\n**Note:** NIU provides career support. Greater Noida location provides Delhi-NCR regional access.\n\n**Where to verify placement claims:** ask Noida International University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Agri Business specialisation builds skills across agricultural value chain management:\n\n**Technical skills:**\n- Agricultural Marketing: mandi pricing analysis, eNAM platform operations, FPO aggregation model design, and farm-gate to retail margin mapping\n- Fertilizer and Seed Management: fertilizer distribution chain analysis, subsidy mechanism understanding, seed certification process, and hybrid seed production economics\n- Quality Management: FSSAI compliance documentation, food safety audit basics, post-harvest loss assessment, and grading standard application\n- Microfinance: KCC limit calculation, NABARD scheme application, SHG credit linkage facilitation, and crop insurance (PMFBY) product understanding\n\n**Applied skills:**\n- Cooperative Management: FPO business plan design, cooperative governance structure, and member benefit distribution analysis\n- Agri-Policy: MSP calculation methodology, APMC reform analysis, and agricultural trade policy interpretation\n\n**Soft skills:** Communicating with farmer-producer groups, presenting agri-business proposals to financial institutions, managing multi-stakeholder agricultural supply chains, and government scheme documentation."
@@ -55,38 +94,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Agri Business as the specialisation, issued by Noida International University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A+ accreditation and UGC-DEB approval. Valid for NABARD officer recruitment, FCI positions, agricultural PSU roles, government agricultural department positions, and private-sector agri-business employers. WES recognised. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from NIU Online MBA Agri Business students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Ravi P.",
-          "city": "Greater Noida",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Fertilizer Technology and Seed Production as MBA subjects is something I have not seen in any other online programme. Directly applicable to my agri-input company role",
-          "disliked": "NIU online MBA brand recognition is limited. Most agri-sector employers in my experience are unfamiliar with NIU's online programme",
-          "body": "I work at an agri-input company in UP. The fertilizer technology, seed production, and agricultural marketing subjects were directly applicable. At ₹97,600 after Early Bird, the fee is manageable. The agri-business curriculum is genuinely niche. The limitation is brand. For NABARD and government roles, the NAAC A+ and UGC-DEB credentials work, but for private-sector agri companies, the NIU name does not carry the same weight as larger universities."
-        },
-        {
-          "name": "Sunita D.",
-          "city": "Lucknow",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Microfinance for Agribusiness covered KCC and NABARD schemes at an operational level. Directly useful for my cooperative bank role",
-          "disliked": "No perks, no Coursera, nothing bundled. The programme is bare-bones at a bare-bones price",
-          "body": "The agri-business curriculum is comprehensive for the price. Microfinance, cooperative management, and quality management subjects covered what I need for my role in agricultural lending. The 25% Early Bird brought the fee within budget. The LMS is functional but not polished. Career services for online students are limited."
-        },
-        {
-          "name": "Ajay M.",
-          "city": "Delhi",
-          "year": 2023,
-          "rating": 3.8,
-          "liked": "Agribusiness Environment and Policy covered MSP, APMC reforms, and eNAM at a depth useful for my agricultural consulting work",
-          "disliked": "EMI interest rate was not zero-cost in my case. The financing partner charged interest, which was not clearly communicated upfront",
-          "body": "The programme fills a genuine gap. Very few online MBAs offer agri-business at any fee, let alone sub-₹1L. The curriculum covers input-side (fertilizer, seeds), output-side (marketing, food retail), and finance (microfinance, cooperatives). The main issues are brand recognition and EMI transparency. Confirm the EMI interest structure before committing."
-        }
-      ]
     },
     "faqs": [
       {
@@ -130,6 +137,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 26,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

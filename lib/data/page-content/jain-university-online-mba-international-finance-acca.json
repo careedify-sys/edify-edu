@@ -69,7 +69,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "International Finance (ACCA) MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** Big 4 accounting and audit firms, International financial reporting, Corporate treasury at MNCs, Investment banking, Regulatory and compliance, Financial consulting\n\n**Entry-level roles:** Audit Associate, Financial Reporting Analyst, Management Accountant, Corporate Finance Analyst, Compliance Analyst\n\n**Mid-level roles (3-5 years experience):** Audit Manager, Financial Controller, Senior Finance Manager, Treasury Manager, Financial Reporting Manager\n\n**Senior roles (7+ years):** Partner (Audit), CFO, Head of Group Finance, VP Corporate Finance, Head of Treasury\n\n**Top hiring organisations:** Deloitte, PwC, EY, KPMG, Grant Thornton, ICAI-registered firms, HDFC Bank, Infosys Finance, Wipro Finance, MNC treasury teams, SEC-listed Indian companies requiring IFRS compliance"
+      "body": "This International Finance (ACCA) MBA syllabus maps to the following industries and roles:\n\n**Industries:** Big 4 accounting and audit firms, International financial reporting, Corporate treasury at MNCs, Investment banking, Regulatory and compliance, Financial consulting\n\n**Entry-level roles:** Audit Associate, Financial Reporting Analyst, Management Accountant, Corporate Finance Analyst, Compliance Analyst\n\n**Mid-level roles (3-5 years experience):** Audit Manager, Financial Controller, Senior Finance Manager, Treasury Manager, Financial Reporting Manager\n\n**Senior roles (7+ years):** Partner (Audit), CFO, Head of Group Finance, VP Corporate Finance, Head of Treasury\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN International Finance (ACCA) specialisation builds skills that Big 4 and corporate finance employers test at financial reporting and audit manager levels:\n\n**Technical skills:**\n- Financial Reporting (ACCA): IFRS standards application, consolidated financial statement preparation, and complex reporting scenario analysis for financial controller and group reporting roles\n- Audit and Assurance (ACCA): ISA standards application, audit risk assessment, substantive procedure design, and internal control evaluation for audit manager and assurance roles\n- Advanced Financial Management (ACCA): complex capital structure optimisation, advanced valuation techniques, and international treasury management for senior corporate finance roles\n- Advanced Performance Management (ACCA): Balanced Scorecard design, EVA framework application, and divisional performance management system for management accounting roles\n\n**Applied skills:**\n- Strategic Business Reporting (ACCA): IFRS 9, 15, and 16 application, group accounts preparation, and financial reporting quality analysis for CFO-track and Big 4 roles\n- Analytics for Finance: Python-based financial modelling and data-driven financial analysis for modern finance roles\n\n**Soft skills:** Presenting financial statements to audit committees, managing external auditor relationships, communicating IFRS implications to non-finance boards, and negotiating accounting treatment with Big 4 audit teams."
@@ -82,38 +82,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. The International Finance (ACCA) specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India. ACCA examination exemptions are subject to ACCA Global's current exemption policy - confirm directly with ACCA before enrolment."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA International Finance (ACCA) alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Nithya Krishnamurthy",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Financial Reporting (ACCA) and Advanced Financial Management subjects were directly applicable to my Big 4 audit preparation. The ACCA-aligned curriculum is a genuine differentiator. Analytics for Finance in Sem 4 was a bonus skill.",
-          "disliked": "ACCA exam fees are separate and add significantly to the total cost. Clarify this before deciding.",
-          "body": "I was targeting ACCA qualification alongside an Indian MBA and this was the only programme offering ACCA paper content within the degree. JAIN brand is recognised at Bengaluru Big 4 offices. The dual credential pathway saved time and cost."
-        },
-        {
-          "name": "Arjun Balakrishnan",
-          "city": "Chennai",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Audit and Assurance and Strategic Business Reporting were at Big 4 training level. Strong preparation for ACCA Applied Skills papers.",
-          "disliked": "Not all ACCA papers are covered - students still need additional ACCA exam preparation and registration. The MBA alone does not make you ACCA qualified.",
-          "body": "Good ACCA foundation within an MBA framework. Chennai Big 4 firms recognised both the JAIN credential and the ACCA paper coverage. For full ACCA status, additional exam preparation and registration are still required."
-        },
-        {
-          "name": "Swetha Rajan",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 3,
-          "liked": "ACCA paper subjects were well-taught. Financial Markets subject in Sem 4 gave good capital markets grounding.",
-          "disliked": "The ACCA exemption pathway is less clear than marketed. Recommend direct ACCA Global confirmation of exemptions before enrolment.",
-          "body": "Good content quality. The ACCA linkage is valuable but requires careful understanding of what exemptions actually apply. Recommend confirming ACCA exemption status directly with ACCA Global before making the enrolment decision based on dual qualification."
-        }
-      ]
     },
     "faqs": [
       {
@@ -154,6 +122,7 @@
     "wordCount": 2200,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

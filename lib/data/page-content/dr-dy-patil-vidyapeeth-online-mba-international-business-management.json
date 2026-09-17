@@ -19,24 +19,45 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "International Marketing", "desc": "International market research, market entry strategies (exporting, licensing, JV, FDI), global branding, cultural adaptation in marketing, and international pricing strategies." },
-            { "name": "International Finance", "desc": "Foreign exchange markets, exchange rate determination and forecasting, international capital budgeting, trade finance instruments (LC, DP, DA), and forex hedging (forwards, options)." },
-            { "name": "Global Logistics and Supply Chain Management", "desc": "International freight forwarding, Incoterms 2020 application, customs clearance process, containerisation and shipping logistics, and free trade zone operations." },
-            { "name": "Export-Import Procedures", "desc": "DGFT licensing and IEC code, customs documentation (shipping bill, bill of entry), Free Trade Agreement utilisation, FEMA compliance for international payments, and export promotion schemes." }
+            {
+              "name": "International Marketing",
+              "desc": "International market research, market entry strategies (exporting, licensing, JV, FDI), global branding, cultural adaptation in marketing, and international pricing strategies."
+            },
+            {
+              "name": "International Finance",
+              "desc": "Foreign exchange markets, exchange rate determination and forecasting, international capital budgeting, trade finance instruments (LC, DP, DA), and forex hedging (forwards, options)."
+            },
+            {
+              "name": "Global Logistics and Supply Chain Management",
+              "desc": "International freight forwarding, Incoterms 2020 application, customs clearance process, containerisation and shipping logistics, and free trade zone operations."
+            },
+            {
+              "name": "Export-Import Procedures",
+              "desc": "DGFT licensing and IEC code, customs documentation (shipping bill, bill of entry), Free Trade Agreement utilisation, FEMA compliance for international payments, and export promotion schemes."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "International Business Law", "desc": "WTO dispute resolution, bilateral and multilateral trade agreements, CISG (UN Convention on Contracts), international intellectual property protection, and cross-border contract enforcement." },
-            { "name": "Global Strategic Management", "desc": "MNC organisational structures, global vs multi-domestic strategy, cross-cultural management frameworks, international JV and alliance management, and global competitive strategy." },
-            { "name": "Project Work", "desc": "Industry-linked international business project. Typically an export market feasibility study, international supply chain analysis, or FTA utilisation assessment." }
+            {
+              "name": "International Business Law",
+              "desc": "WTO dispute resolution, bilateral and multilateral trade agreements, CISG (UN Convention on Contracts), international intellectual property protection, and cross-border contract enforcement."
+            },
+            {
+              "name": "Global Strategic Management",
+              "desc": "MNC organisational structures, global vs multi-domestic strategy, cross-cultural management frameworks, international JV and alliance management, and global competitive strategy."
+            },
+            {
+              "name": "Project Work",
+              "desc": "Industry-linked international business project. Typically an export market feasibility study, international supply chain analysis, or FTA utilisation assessment."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "DPU-COL MBA International Business Management graduates target roles in cross-border trade, MNC management, and global supply chains:\n\n**Industries:** Export houses, trading companies, MNC India operations, international logistics and freight, DGFT and customs consultancy, international banking (trade finance), and government export promotion agencies\n\n**Entry-level roles:** Export Executive, International Marketing Executive, Trade Finance Analyst, Customs Documentation Executive, Supply Chain Coordinator (international), Foreign Trade Analyst\n\n**Mid-level roles (3-5 years experience):** Export Manager, International Business Manager, Trade Finance Manager, Global Supply Chain Manager, Country Manager (MNC), EXIM Compliance Manager\n\n**Senior roles (7+ years):** VP International Business, Head of Exports, Director of Global Supply Chain, Chief Commercial Officer (trading firms), Country Director (MNC)\n\n**Employers:** Export houses and trading firms, IT services (international delivery management), pharma and chemical exporters, auto component exporters, logistics firms (DHL, Kuehne+Nagel, Maersk), and MNC India offices (P&G, Unilever, Siemens, Bosch).\n\n**Note:** DPU-COL provides placement assistance for all MBA programmes."
+      "body": "DPU-COL MBA International Business Management graduates target roles in cross-border trade, MNC management, and global supply chains:\n\n**Industries:** Export houses, trading companies, MNC India operations, international logistics and freight, DGFT and customs consultancy, international banking (trade finance), and government export promotion agencies\n\n**Entry-level roles:** Export Executive, International Marketing Executive, Trade Finance Analyst, Customs Documentation Executive, Supply Chain Coordinator (international), Foreign Trade Analyst\n\n**Mid-level roles (3-5 years experience):** Export Manager, International Business Manager, Trade Finance Manager, Global Supply Chain Manager, Country Manager (MNC), EXIM Compliance Manager\n\n**Senior roles (7+ years):** VP International Business, Head of Exports, Director of Global Supply Chain, Chief Commercial Officer (trading firms), Country Director (MNC)\n\n**Employers:** Export houses and trading firms, IT services (international delivery management), pharma and chemical exporters, auto component exporters, logistics firms (DHL, Kuehne+Nagel, Maersk), and MNC India offices (P&G, Unilever, Siemens, Bosch).\n\n**Note:** DPU-COL provides placement assistance for all MBA programmes.\n\n**Where to verify placement claims:** ask Dr. D.Y. Patil Vidyapeeth, Pune – Centre for Online Learning (DPU-COL) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The International Business Management specialisation builds skills across trade operations, global strategy, and cross-border compliance:\n\n**Technical skills:**\n- Export-Import Operations: IEC code application, shipping bill preparation, bill of entry processing, DGFT scheme utilisation (MEIS/RoDTEP), and customs duty calculation\n- Trade Finance: letter of credit documentation, DP/DA collection process, export credit insurance, ECGC cover application, and FEMA compliance for outward/inward remittances\n- International Logistics: Incoterms 2020 selection for different trade scenarios, container booking process, freight cost comparison (FCL vs LCL), and customs broker coordination\n- Forex Management: forward contract booking, option premium evaluation, natural hedging strategies, and PCFC (Pre-Shipment Credit in Foreign Currency) utilisation\n\n**Strategic skills:**\n- International Market Entry: market screening methodology, entry mode selection framework, partner due diligence, and JV agreement negotiation\n- Global Strategy: global integration vs local responsiveness trade-offs, international organisation design, and cross-cultural team management\n\n**Soft skills:** Negotiating with international suppliers and buyers across cultural contexts, presenting export strategy to boards, managing multi-country logistics teams, and coordinating with customs authorities and DGFT officials."
@@ -49,38 +70,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with International Business Management as the specialisation, issued by Dr. D.Y. Patil Vidyapeeth, Pune (DPU-COL) under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation and NIRF #41 University rank. It is valid for government trade officer recruitment, PSU international operations roles, export promotion council positions, and MNC management recruitment. edX certifications supplement the credential. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from DPU-COL Online MBA International Business Management alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Sanjay T.",
-          "city": "Mumbai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Export-Import Procedures module was the most practically useful — DGFT licensing, customs documentation, and FEMA compliance are daily requirements in my trading firm",
-          "disliked": "More coverage of digital trade platforms (ICEGATE, SWIFT GPI, eWay bill for exports) would modernise the operational content",
-          "body": "I manage export operations at a chemical trading company. The EXIM procedures, trade finance, and international logistics subjects were directly applicable to my daily work. NAAC A++ and NIRF #41 satisfied the credential requirements for a senior export manager role I was targeting. The ₹10,000 lump-sum discount helped."
-        },
-        {
-          "name": "Priya V.",
-          "city": "Pune",
-          "year": 2024,
-          "rating": 4,
-          "liked": "International Finance covered forex hedging instruments at a practical level — forward contracts, options, and PCFC utilisation are directly applicable to my treasury role",
-          "disliked": "International business law content leaned academic — more practical contract drafting and dispute resolution case studies would strengthen this module",
-          "body": "I work in treasury at an auto component exporter. The international finance, EXIM procedures, and global logistics subjects gave me a holistic view of cross-border trade that my pure finance background lacked. DPU being in Pune with its strong export and manufacturing ecosystem made the programme contextually relevant."
-        },
-        {
-          "name": "Rakesh M.",
-          "city": "Delhi",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Global Strategic Management module helped me structure my company's market entry strategy for Southeast Asian markets",
-          "disliked": "More India-specific FTA analysis (India-UAE CEPA, India-EFTA TEPA) would make the programme more directly actionable for Indian exporters",
-          "body": "I run a small export house and needed the MBA for DGFT meetings and bank credit applications where management qualifications are assessed. The EXIM procedures, trade finance, and international marketing subjects directly improved my business operations. NAAC A++ from NIRF #41 satisfied every documentation requirement."
-        }
-      ]
     },
     "faqs": [
       {
@@ -112,9 +101,9 @@
         "₹1,89,400 with zero-cost EMI and edX certifications fits your budget."
       ],
       "consider": [
-        "NIRF top 20 matters — CU (NIRF #19) at ₹1,65,000 or Symbiosis (NIRF #20) at ₹1,70,000 are alternatives.",
-        "Your career target is purely domestic market management — a Marketing or Finance MBA would be more relevant.",
-        "You need deep country-specific market research skills — a dedicated international trade certification may supplement this MBA."
+        "NIRF top 20 matters, CU (NIRF #19) at ₹1,65,000 or Symbiosis (NIRF #20) at ₹1,70,000 are alternatives.",
+        "Your career target is purely domestic market management, a Marketing or Finance MBA would be more relevant.",
+        "You need deep country-specific market research skills, a dedicated international trade certification may supplement this MBA."
       ]
     }
   },
@@ -123,6 +112,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 21,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

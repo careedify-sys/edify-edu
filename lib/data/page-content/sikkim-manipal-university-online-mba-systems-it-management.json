@@ -19,25 +19,49 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Project Management", "desc": "IT project lifecycle management, Agile and Waterfall methodologies, resource planning, and project delivery." },
-            { "name": "Business Strategy", "desc": "Strategic management frameworks, competitive analysis, and IT strategy alignment with business objectives." },
-            { "name": "Object Oriented Programming System and Open Source System", "desc": "OOP concepts, Java and Python basics, open source platforms, and software development fundamentals." },
-            { "name": "Database Management Systems", "desc": "Relational database design, SQL basics, DBMS architecture, data integrity, and database administration fundamentals." }
+            {
+              "name": "Project Management",
+              "desc": "IT project lifecycle management, Agile and Waterfall methodologies, resource planning, and project delivery."
+            },
+            {
+              "name": "Business Strategy",
+              "desc": "Strategic management frameworks, competitive analysis, and IT strategy alignment with business objectives."
+            },
+            {
+              "name": "Object Oriented Programming System and Open Source System",
+              "desc": "OOP concepts, Java and Python basics, open source platforms, and software development fundamentals."
+            },
+            {
+              "name": "Database Management Systems",
+              "desc": "Relational database design, SQL basics, DBMS architecture, data integrity, and database administration fundamentals."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Banking and Insurance Management", "desc": "BFSI technology systems, core banking software, digital insurance platforms, and fintech regulatory compliance." },
-            { "name": "Project Work", "desc": "Applied IT management project: technology implementation study, system design, or digital transformation analysis." },
-            { "name": "E-Commerce", "desc": "E-commerce platform models, digital payment infrastructure, online marketplace management, and D2C technology." },
-            { "name": "Technology Management and Strategy", "desc": "IT governance frameworks, digital transformation strategy, technology vendor management, and CTO-level decision-making." }
+            {
+              "name": "Banking and Insurance Management",
+              "desc": "BFSI technology systems, core banking software, digital insurance platforms, and fintech regulatory compliance."
+            },
+            {
+              "name": "Project Work",
+              "desc": "Applied IT management project: technology implementation study, system design, or digital transformation analysis."
+            },
+            {
+              "name": "E-Commerce",
+              "desc": "E-commerce platform models, digital payment infrastructure, online marketplace management, and D2C technology."
+            },
+            {
+              "name": "Technology Management and Strategy",
+              "desc": "IT governance frameworks, digital transformation strategy, technology vendor management, and CTO-level decision-making."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Systems (IT Management) MBA graduates from SMU are hired across India's technology and digital services sectors:\n\n**Industries:** IT services, software product companies, BFSI technology, e-commerce, government IT projects, and technology consulting\n\n**Entry-level roles:** IT Project Coordinator, Business Analyst, Systems Analyst, ERP Coordinator, Technology Associate\n\n**Mid-level roles (3-5 years experience):** IT Project Manager, Technology Manager, Business Systems Manager, Digital Transformation Manager, E-Commerce Manager\n\n**Senior roles (7+ years):** IT Director, VP Technology, Chief Technology Officer (SME), Head of Digital Transformation, CIO\n\n**Top hiring organisations:** TCS, Infosys, Wipro, HCL Technologies, Cognizant, Accenture, IBM, Tech Mahindra, Capgemini, HDFC Bank Technology, ICICI Bank Digital, Zoho, Freshworks, and government IT bodies including NIC and state IT departments"
+      "body": "This Systems (IT Management) MBA syllabus maps to the following India's technology and digital services sectors:\n\n**Industries:** IT services, software product companies, BFSI technology, e-commerce, government IT projects, and technology consulting\n\n**Entry-level roles:** IT Project Coordinator, Business Analyst, Systems Analyst, ERP Coordinator, Technology Associate\n\n**Mid-level roles (3-5 years experience):** IT Project Manager, Technology Manager, Business Systems Manager, Digital Transformation Manager, E-Commerce Manager\n\n**Senior roles (7+ years):** IT Director, VP Technology, Chief Technology Officer (SME), Head of Digital Transformation, CIO\n\n**Where to verify placement claims:** ask Sikkim Manipal University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Systems (IT Management) specialisation builds skills that IT employers test at project manager and technology manager levels:\n\n**Technical skills:**\n- Database Management: SQL query writing basics, ER diagram creation, DBMS security fundamentals, and data backup procedures\n- Systems Analysis: requirements gathering techniques, use case documentation, process flow mapping, and system testing frameworks\n- Technology Strategy: IT governance frameworks (COBIT basics), digital transformation roadmap design, and technology portfolio management\n- E-Commerce: marketplace platform evaluation, payment gateway integration concepts, digital retail KPIs, and e-commerce compliance\n\n**Applied skills:**\n- IT Project Management: Agile sprint planning, Waterfall project documentation, change management for technology implementations, and IT vendor SLA management\n- Open Source Management: Linux basics, open source software licensing, and open source stack selection for enterprise applications\n\n**Soft skills:** Translating technical requirements into business language for non-technical stakeholders, presenting technology investment proposals to CFO and board, managing offshore development team productivity, communicating system change impacts to end users, and leading technology adoption change management programmes."
@@ -50,38 +74,6 @@
     },
     "certificate": {
       "body": "Graduates receive a Sikkim Manipal University MBA degree certificate with Systems (IT Management) noted on the marksheet, issued under UGC-DEB 2020 online mode standards. The degree carries the SMU name, NAAC A+ accredited with decades of distance-learning recognition.\n\nDigiLocker verification is available. UGC-DEB 2020 compliance ensures the degree is valid for technology manager roles at IT companies, digital transformation leadership, and government IT project roles."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from SMU Online MBA Systems (IT Management) alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Deepak R.",
-          "city": "Imphal",
-          "year": 2024,
-          "rating": 5,
-          "liked": "30% Northeast scholarship made NAAC A+ IT Management MBA cost Rs 84,000 net",
-          "disliked": "Cloud computing and cybersecurity were not covered as dedicated subjects",
-          "body": "I work as a software developer in Manipur and the 30% scholarship reduced my MBA cost to Rs 84,000. Technology Management and Strategy gave me the business frameworks I was missing from my technical background. Project Management content covered Agile and IT project delivery that I applied immediately. DBMS subject was familiar ground that reinforced my technical foundation. SMU NAAC A+ was accepted by my employer for my team lead promotion application. Zero-cost EMI through SMU was seamless."
-        },
-        {
-          "name": "Kavya S.",
-          "city": "Bangalore",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Technology Management and Strategy gave business context I needed as an IT professional",
-          "disliked": "E-commerce content was basic compared to what current e-commerce roles require",
-          "body": "I was an IT project coordinator wanting management credentialing without the cost of Amity or NMIMS. SMU at Rs 1,20,000 delivered NAAC A+ at a price point my budget could manage. Technology Management and Strategy was the most useful subject. OOPS content was revision of my CS background. Zero-cost EMI through the university made the quarterly instalment straightforward. Good for IT professionals who need a management degree at accessible cost."
-        },
-        {
-          "name": "Rahul T.",
-          "city": "Guwahati",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Unique Northeast scholarship + most affordable NAAC A+ IT Management MBA I found",
-          "disliked": "LMS quality was below industry standard; technical issues during exams were frustrating",
-          "body": "The 30% Northeast scholarship was my primary decision driver. At Rs 84,000 net, the value is exceptional. The IT management content was solid if not cutting-edge: DBMS, e-commerce, and technology strategy gave me the business layer I needed. LMS technical reliability was a real frustration point during assessment submissions. For self-directed IT professionals in the Northeast who can work around platform limitations, the credential value at this price is hard to beat."
-        }
-      ]
     },
     "faqs": [
       {
@@ -124,6 +116,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 17,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

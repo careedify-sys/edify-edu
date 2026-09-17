@@ -61,7 +61,7 @@
       "note": "Sem 1-2 shared core subjects across all UPES MBA specialisations. Core includes Managerial Economics, Accounting for Managers, Marketing Management, Quantitative Techniques, Operations Management, OB and HRM, Project Management, Financial Management, Research Methodology, and Business Analytics for Managers."
     },
     "whoHires": {
-      "body": "Finance Management MBA graduates from UPES Online are hired across these industries and roles:\n\n**Industries:** Banking and financial services, Investment management, Fintech, Corporate treasury, Consulting and advisory, Energy sector finance\n\n**Entry-level roles:** Financial Analyst, Investment Analyst, Risk Analyst, Corporate Finance Analyst, Fintech Business Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Portfolio Manager, Risk Manager, Treasury Manager, Fintech Product Manager\n\n**Senior roles (7+ years):** CFO, Head of Finance, VP Treasury, Investment Director, Chief Risk Officer\n\n**Top hiring organisations (UPES alumni placements):** TCS, Infosys, HCL, Wipro, Deloitte, KPMG, and BFSI sector firms. UPES's strong energy sector heritage means Energy Finance professionals find direct career pathways at oil and gas, power, and infrastructure companies that recruit UPES graduates specifically."
+      "body": "This Finance Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** Banking and financial services, Investment management, Fintech, Corporate treasury, Consulting and advisory, Energy sector finance\n\n**Entry-level roles:** Financial Analyst, Investment Analyst, Risk Analyst, Corporate Finance Analyst, Fintech Business Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Portfolio Manager, Risk Manager, Treasury Manager, Fintech Product Manager\n\n**Senior roles (7+ years):** CFO, Head of Finance, VP Treasury, Investment Director, Chief Risk Officer\n\n**Where to verify placement claims:** ask University of Petroleum & Energy Studies (UPES) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The UPES Finance Management specialisation builds quantitative finance skills that investment, banking, and corporate finance employers test at analyst and manager levels:\n\n**Technical skills:**\n- Financial Econometrics: regression and time-series modelling for financial data, applicable to investment research, risk quantification, and quantitative finance roles - an uncommon standalone subject in online MBA programmes at this fee range\n- Corporate Valuation: DCF and comparable company analysis for equity valuation, M&A advisory, and corporate finance strategy\n- International Finance and Risk Management: FOREX risk management, country risk assessment, and cross-border capital structure for treasury and international finance roles\n- Investment Analysis and Portfolio Management: CAPM, Markowitz portfolio theory, equity analysis, and portfolio performance measurement for investment management\n\n**Applied skills:**\n- Behavioural Finance: investor psychology and market anomaly analysis for wealth management, retail banking, and consumer finance roles\n- Financial Technology: digital lending, blockchain, and robo-advisory evaluation for fintech product and digital banking careers\n\n**Soft skills:** Presenting valuation models to investment committees, communicating financial risk to boards, building DCF models for capital allocation decisions, and negotiating credit facilities with banking partners."
@@ -74,38 +74,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by University of Petroleum and Energy Studies (UPES) and carries the UPES name with the MBA designation. The Finance Management specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India. UPES is WES recognised, making the degree suitable for international credential evaluation."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from UPES Online MBA Finance Management alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Amit Gupta",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Financial Econometrics was the standout subject - directly applicable to my investment research analyst role. Corporate Valuation gave me DCF modelling skills I use daily. NIRF #36 in Management was a credibility differentiator.",
-          "disliked": "Placement support for finance roles was stronger in Uttarakhand and North India than in Mumbai's BFSI ecosystem.",
-          "body": "I had 3 years in corporate banking and the UPES Finance MBA gave me the quantitative credentials for an investment analyst transition. The Fintech subject was relevant for my current fintech employer."
-        },
-        {
-          "name": "Neha Agarwal",
-          "city": "Noida",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Behavioural Finance and Investment Analysis were well-structured. International Finance and Risk Management gave good FOREX management grounding.",
-          "disliked": "For Mumbai investment banking, NMIMS carries stronger brand recognition. Self-sourcing was needed for Delhi NCR BFSI openings.",
-          "body": "Good programme for North India BFSI careers. UPES brand is stronger in corporate finance and energy sector finance than in traditional investment banking. NIRF #36 Management rank is a strong credential."
-        },
-        {
-          "name": "Vikas Joshi",
-          "city": "Dehradun",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Fintech subject was applicable to digital banking product work. Corporate Valuation gave practical M&A grounding.",
-          "disliked": "Faculty depth for advanced econometrics topics could be stronger. Some assignments were too theory-focused for working professionals.",
-          "body": "Solid finance credential at Rs 1,75,000 with zero-cost EMI. Best for North India corporate finance and energy sector roles. For deep investment banking in Mumbai, supplement with CFA or NISM certifications."
-        }
-      ]
     },
     "faqs": [
       {
@@ -146,6 +114,7 @@
     "wordCount": 1950,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch15",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

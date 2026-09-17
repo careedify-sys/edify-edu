@@ -18,7 +18,7 @@
       "semesters": []
     },
     "whoHires": {
-      "body": "HRM MBA graduates target roles across the entire employee lifecycle in organizations of all sizes:\n\n**Industries:** IT services, manufacturing, BFSI, healthcare, retail, e-commerce, consulting, government and PSUs, education, and HR outsourcing firms\n\n**Entry-level roles:** HR Executive, Recruitment Coordinator, Payroll Executive, HR Operations Associate, Training Coordinator, Employee Engagement Executive\n\n**Mid-level roles (3-5 years):** HR Manager, Talent Acquisition Manager, Compensation and Benefits Manager, Learning and Development Manager, HR Business Partner, Employee Relations Manager\n\n**Senior roles (7+ years):** HR Director, VP Human Resources, CHRO, Head of Talent Management, Director of Organizational Development, Head of HR Operations\n\n**Employers:** IT companies (TCS, Infosys, Wipro, Persistent Systems), manufacturing (Tata Motors, Bajaj Auto, Mahindra), BFSI (HDFC Bank, ICICI, Bajaj Finserv), consulting (Deloitte, EY, PwC), HR outsourcing (Randstad, ManpowerGroup, TeamLease, Quess Corp), and Pune's mid-sized companies across IT, manufacturing, and services."
+      "body": "HRM MBA graduates target roles across the entire employee lifecycle in organizations of all sizes:\n\n**Industries:** IT services, manufacturing, BFSI, healthcare, retail, e-commerce, consulting, government and PSUs, education, and HR outsourcing firms\n\n**Entry-level roles:** HR Executive, Recruitment Coordinator, Payroll Executive, HR Operations Associate, Training Coordinator, Employee Engagement Executive\n\n**Mid-level roles (3-5 years):** HR Manager, Talent Acquisition Manager, Compensation and Benefits Manager, Learning and Development Manager, HR Business Partner, Employee Relations Manager\n\n**Senior roles (7+ years):** HR Director, VP Human Resources, CHRO, Head of Talent Management, Director of Organizational Development, Head of HR Operations\n\n**Employers:** IT companies (TCS, Infosys, Wipro, Persistent Systems), manufacturing (Tata Motors, Bajaj Auto, Mahindra), BFSI (HDFC Bank, ICICI, Bajaj Finserv), consulting (Deloitte, EY, PwC), HR outsourcing (Randstad, ManpowerGroup, TeamLease, Quess Corp), and Pune's mid-sized companies across IT, manufacturing, and services.\n\n**Where to verify placement claims:** ask Bharati Vidyapeeth (Deemed to be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The HRM specialisation builds skills that HR professionals need across the employee lifecycle:\n\n**Technical skills:**\n- Talent Acquisition: sourcing strategy, employer branding, interview assessment design, offer management, and onboarding programme design\n- Performance Management: goal-setting frameworks (OKR, KPI), performance appraisal system design, feedback mechanisms, and PIP management\n- Compensation and Benefits: salary benchmarking, compensation structure design, variable pay planning, benefits administration, and total rewards strategy\n- Labour Law: Industrial Disputes Act, Factories Act, EPF, ESI, Shops and Establishments Act, Sexual Harassment Prevention Act, and new Labour Codes compliance\n\n**Applied skills:**\n- HR Analytics: attrition analysis, recruitment funnel metrics, engagement survey analysis, and HR dashboard creation for data-driven HR decisions\n- Organizational Development: change management, culture assessment, organizational structure design, and succession planning\n\n**Soft skills:** Conflict resolution, disciplinary hearing management, union negotiation, employee counselling, and leadership communication for HR business partner roles."
@@ -31,38 +31,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Human Resource Management as the specialisation, issued by Bharati Vidyapeeth (Deemed to be University), Pune.\n\nThe degree carries NAAC A+ accreditation, NIRF #59 University ranking, and UGC-DEB approval. Online mode is identified per UGC-DEB 2020 regulations. Valid for corporate hiring, government HR roles, PSU eligibility, SHRM/HRCI certification support, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three reviews from Bharati Vidyapeeth Online MBA HRM students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Pooja",
-          "city": "Pune",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Bharati Vidyapeeth's Pune legacy is strong. HR MBA from a NIRF #59 university at Rs 1.6L is good value. Labour law and compensation management subjects were practical",
-          "disliked": "Syllabus details were not available before admission. Had to rely on counsellor description of subjects",
-          "body": "I work in HR at a Pune manufacturing company. The HRM MBA covered talent acquisition, performance management, and labour law at an applied level. The Bharati Vidyapeeth name is well-known in Pune's industrial circles. Zero-cost EMI made the Rs 1.6L fee manageable alongside my salary."
-        },
-        {
-          "name": "Sameer",
-          "city": "Nashik",
-          "year": 2024,
-          "rating": 4,
-          "liked": "NAAC A+ and NIRF ranking gave me confidence. Organizational development and HR analytics subjects were directly applicable to my HR generalist role",
-          "disliked": "Compared to Symbiosis in Pune, Bharati Vidyapeeth's HR brand is a tier below in employer perception",
-          "body": "For HR careers in Tier-2 Maharashtra cities, Bharati Vidyapeeth is a credible and affordable option. The NIRF ranking differentiates it from budget universities. HR analytics content helped me bring data-driven practices to my current HR role. Good fit for working HR professionals."
-        },
-        {
-          "name": "Dipti",
-          "city": "Aurangabad",
-          "year": 2023,
-          "rating": 3,
-          "liked": "One of the more affordable NIRF-ranked options for HR MBA. Talent acquisition and employee engagement subjects were relevant",
-          "disliked": "The LMS interface could be more modern. Some recorded sessions felt dated",
-          "body": "Functional HR MBA at a reasonable price. The content covers the HR lifecycle from recruitment to exit at a practical level. Bharati Vidyapeeth is recognized in Maharashtra. For HR professionals in Marathwada region, this is a credible option without relocating to Pune or Mumbai."
-        }
-      ]
     },
     "faqs": [
       {
@@ -105,6 +73,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 34,
     "hasSyllabusData": false,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

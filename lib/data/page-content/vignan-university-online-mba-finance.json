@@ -19,27 +19,57 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Business Environment and Strategy", "desc": "Macro-economic environment analysis, industry structure, competitive strategy, and strategic planning frameworks." },
-            { "name": "Management of Banking and Financial Services", "desc": "Banking operations, NBFC regulation, insurance sector, mutual fund mechanics, and financial services distribution channels." },
-            { "name": "Direct and Indirect Taxation", "desc": "Income tax provisions, GST framework, TDS compliance, advance tax planning, and corporate tax strategy." },
-            { "name": "Fixed Income Securities and Derivatives", "desc": "Bond valuation, yield curve analysis, options and futures pricing, hedging strategies, and derivative risk management." },
-            { "name": "Research-Based Learning-I", "desc": "Guided research project on a finance topic. Literature review, methodology design, and initial data collection." }
+            {
+              "name": "Business Environment and Strategy",
+              "desc": "Macro-economic environment analysis, industry structure, competitive strategy, and strategic planning frameworks."
+            },
+            {
+              "name": "Management of Banking and Financial Services",
+              "desc": "Banking operations, NBFC regulation, insurance sector, mutual fund mechanics, and financial services distribution channels."
+            },
+            {
+              "name": "Direct and Indirect Taxation",
+              "desc": "Income tax provisions, GST framework, TDS compliance, advance tax planning, and corporate tax strategy."
+            },
+            {
+              "name": "Fixed Income Securities and Derivatives",
+              "desc": "Bond valuation, yield curve analysis, options and futures pricing, hedging strategies, and derivative risk management."
+            },
+            {
+              "name": "Research-Based Learning-I",
+              "desc": "Guided research project on a finance topic. Literature review, methodology design, and initial data collection."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Entrepreneurship Development", "desc": "Startup ideation, business plan creation, funding strategies, and entrepreneurial risk management." },
-            { "name": "Investment Analysis and Portfolio Management", "desc": "Equity valuation (DCF, PE, PBV), Modern Portfolio Theory, CAPM, portfolio construction, and risk-adjusted return metrics." },
-            { "name": "Fintech Foundation and Applications", "desc": "Digital payments (UPI), blockchain in banking, robo-advisory platforms, regtech, and AI-driven credit scoring." },
-            { "name": "Corporate Valuation and Investment Banking", "desc": "DCF valuation, comparable company analysis, M&A transaction structuring, LBO basics, and deal advisory process." },
-            { "name": "Research-Based Learning-II", "desc": "Continuation of research project. Data analysis, findings presentation, and thesis completion." }
+            {
+              "name": "Entrepreneurship Development",
+              "desc": "Startup ideation, business plan creation, funding strategies, and entrepreneurial risk management."
+            },
+            {
+              "name": "Investment Analysis and Portfolio Management",
+              "desc": "Equity valuation (DCF, PE, PBV), Modern Portfolio Theory, CAPM, portfolio construction, and risk-adjusted return metrics."
+            },
+            {
+              "name": "Fintech Foundation and Applications",
+              "desc": "Digital payments (UPI), blockchain in banking, robo-advisory platforms, regtech, and AI-driven credit scoring."
+            },
+            {
+              "name": "Corporate Valuation and Investment Banking",
+              "desc": "DCF valuation, comparable company analysis, M&A transaction structuring, LBO basics, and deal advisory process."
+            },
+            {
+              "name": "Research-Based Learning-II",
+              "desc": "Continuation of research project. Data analysis, findings presentation, and thesis completion."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Vignan MBA Finance graduates target roles across banking, corporate finance, and advisory:\n\n**Industries:** Commercial banking, NBFC, insurance, corporate treasury, equity research, fintech, financial consulting, and government finance\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Banking Officer, Tax Analyst, Equity Research Associate, Treasury Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Credit Manager, Branch Manager (banking), Portfolio Analyst, Tax Manager, Financial Controller\n\n**Senior roles (7+ years):** CFO (mid-market), VP Finance, Head of Treasury, Director of Credit Risk, Head of Corporate Finance\n\n**Employers:** Banks (SBI, HDFC, ICICI, Axis), NBFCs (Bajaj Finance, Muthoot), insurance (LIC, HDFC Life), IT/ITES finance teams, and Andhra Pradesh/Telangana regional corporates.\n\n**Note:** Vignan provides career support. Guntur/AP location provides South India regional access."
+      "body": "Vignan MBA Finance graduates target roles across banking, corporate finance, and advisory:\n\n**Industries:** Commercial banking, NBFC, insurance, corporate treasury, equity research, fintech, financial consulting, and government finance\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Banking Officer, Tax Analyst, Equity Research Associate, Treasury Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Credit Manager, Branch Manager (banking), Portfolio Analyst, Tax Manager, Financial Controller\n\n**Senior roles (7+ years):** CFO (mid-market), VP Finance, Head of Treasury, Director of Credit Risk, Head of Corporate Finance\n\n**Employers:** Banks (SBI, HDFC, ICICI, Axis), NBFCs (Bajaj Finance, Muthoot), insurance (LIC, HDFC Life), IT/ITES finance teams, and Andhra Pradesh/Telangana regional corporates.\n\n**Note:** Vignan provides career support. Guntur/AP location provides South India regional access.\n\n**Where to verify placement claims:** ask Vignan's Foundation for Science, Technology & Research Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Finance specialisation builds skills across capital markets, taxation, and fintech:\n\n**Technical skills:**\n- Investment Analysis: equity valuation (DCF, comparable), portfolio construction, risk-adjusted return calculation (Sharpe, Treynor)\n- Derivatives: options pricing basics, futures hedging design, interest rate swap mechanics, and derivative risk measurement\n- Taxation: income tax computation, GST return filing process, TDS compliance, and corporate tax planning\n- Fintech: digital payments architecture, blockchain in banking, robo-advisory evaluation, and AI credit scoring interpretation\n\n**Applied skills:**\n- Corporate Valuation: DCF model building, comparable analysis, M&A premium analysis, and deal structuring basics\n- Banking Operations: credit appraisal process, NPA management, and financial services product design\n\n**Soft skills:** Presenting investment theses to committees, negotiating credit terms, managing audit relationships, and communicating financial risk to non-finance stakeholders."
@@ -52,38 +82,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Finance as the specialisation, issued by Vignan's Foundation for Science, Technology and Research under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A+ accreditation, NIRF #70 University rank, and UGC-DEB approval. Valid for government recruitment, PSU finance roles, banking promotions, and private-sector corporate finance positions. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from Vignan Online MBA Finance students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Rajesh K.",
-          "city": "Hyderabad",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Rs 90,000 total for a NAAC A+ finance MBA with fintech and corporate valuation subjects. Cannot find this combination cheaper anywhere except IGNOU",
-          "disliked": "Vignan brand recognition outside Andhra Pradesh and Telangana is limited. North India employers may not recognise the name immediately",
-          "body": "I chose Vignan because the fee is unbeatable for a NAAC A+ deemed university. The fintech and fixed income subjects were directly applicable to my banking role. Zero-cost EMI at Rs 5,700/month made it accessible. The LMS is functional. The main trade-off is brand recognition. In AP and Telangana, Vignan is well-known. Nationally, the brand is still growing."
-        },
-        {
-          "name": "Priya S.",
-          "city": "Guntur",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Investment Analysis and Corporate Valuation subjects covered DCF and M&A at a depth I did not expect from a Rs 90,000 programme",
-          "disliked": "Placement support for online MBA students could be more proactive. Self-directed job search is the reality",
-          "body": "The finance curriculum is comprehensive for the price. Banking management, taxation, derivatives, portfolio management, fintech, and valuation in one programme. The research-based learning across Sem 3-4 forced structured thinking. Career services exist but are not as developed as larger universities."
-        },
-        {
-          "name": "Anil M.",
-          "city": "Visakhapatnam",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Direct and Indirect Taxation covered both income tax and GST at a practical level useful for my CA-adjacent work",
-          "disliked": "Some recorded lectures felt dated. The LMS interface could be more modern. Study materials need updating for 2024-era financial regulations",
-          "body": "At Rs 90,000 the value is clear. The curriculum covers what you need for a finance career. The delivery quality is adequate, not premium. Faculty engagement varies by subject. If you are in AP/Telangana and need an affordable NAAC A+ MBA, Vignan works. If brand recognition nationally is your priority, consider spending more."
-        }
-      ]
     },
     "faqs": [
       {
@@ -127,6 +125,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 28,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

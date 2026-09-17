@@ -69,7 +69,7 @@
       "note": "Sem 1-2 shared core subjects across all Alliance MBA specialisations. Design Thinking is a mandatory Sem 3 subject for all specs. Strategic Management in Digital Era and Dissertation are common Sem 4 subjects."
     },
     "whoHires": {
-      "body": "Finance MBA graduates from Alliance Online target these industries and roles:\n\n**Industries:** Commercial and retail banking, Corporate treasury, Fintech startups, Wealth management and insurance, Investment research, Consulting and accounting firms\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Risk Analyst, Investment Research Associate, Fintech Business Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Treasury Manager, Risk Manager, Portfolio Manager, M&A Associate\n\n**Senior roles (7+ years):** CFO, VP Finance, Head of Risk, Investment Director, Chief Risk Officer\n\n**Top hiring sectors:** HDFC Bank, ICICI Bank, Axis Bank, Kotak Mahindra Bank, Bajaj Finance, Razorpay, PhonePe, Deloitte, KPMG, EY, Motilal Oswal, IIFL Wealth, HDFC Life, SBI Life"
+      "body": "Finance MBA graduates from Alliance Online target these industries and roles:\n\n**Industries:** Commercial and retail banking, Corporate treasury, Fintech startups, Wealth management and insurance, Investment research, Consulting and accounting firms\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Risk Analyst, Investment Research Associate, Fintech Business Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Treasury Manager, Risk Manager, Portfolio Manager, M&A Associate\n\n**Senior roles (7+ years):** CFO, VP Finance, Head of Risk, Investment Director, Chief Risk Officer\n\n**Top hiring sectors:** HDFC Bank, ICICI Bank, Axis Bank, Kotak Mahindra Bank, Bajaj Finance, Razorpay, PhonePe, Deloitte, KPMG, EY, Motilal Oswal, IIFL Wealth, HDFC Life, SBI Life\n\n**Where to verify placement claims:** ask Alliance University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Alliance Finance specialisation builds AI-augmented skills for banking and corporate finance careers:\n\n**Technical skills:**\n- Security Analysis and Portfolio Management: DCF and relative equity valuation, Markowitz portfolio theory, CAPM application, and portfolio performance measurement\n- AI-enabled Fraud Detection and Risk Management: machine learning classification for fraud patterns, AI-driven credit risk scoring, and operational risk assessment\n- Financial Analysis and Modelling: DCF models, LBO models, comparable company analyses, and financial statement modelling for investment banking\n- Revenue Intelligence for Fixed Income: yield curve analysis, duration and convexity modelling, and bond pricing for fixed-income roles\n\n**Applied skills:**\n- Mergers Acquisition and Corporate Restructuring: deal rationale assessment, synergy valuation, due diligence, and post-merger integration\n- Financial Architecture for New Ventures: cap table structuring, convertible instruments, and venture funding round modelling\n- AI and Human Biases in Finance: understanding algorithmic bias in trading systems and robo-advisory platforms\n\n**Soft skills:** Design Thinking for structured problem-solving, presenting investment recommendations, building financial models for board-level decisions, and communicating risk exposure to senior management."
@@ -82,38 +82,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Alliance University, Bangalore, and carries the Alliance name with the MBA designation. The Finance specialisation is noted on the marksheet and transcript. The degree is WES recognised for international credential evaluation. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Alliance Online MBA Finance students. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Siddharth",
-          "city": "Bangalore",
-          "year": 2025,
-          "rating": 5,
-          "liked": "AI-enabled Fraud Detection subject was directly applicable to my risk analytics role. The AI integration is genuine, not just a marketing label. Financial Modelling and M&A subjects gave practical deal-evaluation frameworks.",
-          "disliked": "Peer study group formation took time in the first semester.",
-          "body": "I chose Alliance specifically for the AI-integrated finance curriculum. The AI subjects were embedded into core finance learning, not tacked on as electives. Security Analysis and Portfolio Management plus Financial Modelling built strong technical foundations. Design Thinking in Sem 3 was unexpectedly useful for structuring client presentations."
-        },
-        {
-          "name": "Priyanka",
-          "city": "Hyderabad",
-          "year": 2025,
-          "rating": 4,
-          "liked": "Revenue Intelligence for Fixed Income and Multinational Financial Management were well-structured. Fees at Rs 1.75L total were competitive.",
-          "disliked": "Alliance's online MBA is newer compared to Amity or JAIN. Brand recognition outside Karnataka is still building.",
-          "body": "Solid finance curriculum with genuine AI integration at a competitive price. The Bangalore brand helped in South India banking applications. For Hyderabad corporates, I had to explain the Alliance credential more than I would have with Amity or JAIN. Content quality was strong."
-        },
-        {
-          "name": "Karthik",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Modern Financial Ecosystem and Financial Architecture for New Ventures were relevant for fintech roles.",
-          "disliked": "NAAC A (not A+) is a gap compared to peers like JAIN (A++) or Amity (A+). Specialisation count is smaller than competitors offering 15+ specs.",
-          "body": "Good programme for the fees. The AI subjects are a real differentiator. But Alliance online brand is still establishing itself. For Chennai BFSI careers, JAIN or Amity would carry slightly more immediate recognition. Alliance is a value pick if AI-augmented finance skills matter more than brand weight."
-        }
-      ]
     },
     "faqs": [
       {
@@ -155,6 +123,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 29,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

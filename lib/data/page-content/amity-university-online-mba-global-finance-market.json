@@ -19,7 +19,7 @@
       "note": "EdifyEdu has not yet received the detailed Sem 3-4 subject list for this specialisation. Contact Amity Online directly for the current curriculum before enrolling."
     },
     "whoHires": {
-      "body": "Global Finance Market MBA graduates from Amity University Online are hired across these industries and roles:\n\n**Industries:** International banking, Treasury management, Capital markets, Asset management, MNC finance divisions\n\n**Entry-level roles:** Treasury Analyst, FX Operations Analyst, Capital Markets Associate, International Finance Analyst\n\n**Mid-level roles (3-5 years experience):** Treasury Manager, FX Head, Capital Markets Manager, Portfolio Manager (associate)\n\n**Senior roles (7+ years):** Group Treasurer (MNC), Head of Global Markets, Fund Manager (cross-border), VP International Finance\n\n**Top hiring organisations:** Kotak Mahindra Bank Treasury, HDFC Bank Global Markets, Citi India, JP Morgan India, Standard Chartered India, TCS Treasury"
+      "body": "This Global Finance Market MBA syllabus maps to the following industries and roles:\n\n**Industries:** International banking, Treasury management, Capital markets, Asset management, MNC finance divisions\n\n**Entry-level roles:** Treasury Analyst, FX Operations Analyst, Capital Markets Associate, International Finance Analyst\n\n**Mid-level roles (3-5 years experience):** Treasury Manager, FX Head, Capital Markets Manager, Portfolio Manager (associate)\n\n**Senior roles (7+ years):** Group Treasurer (MNC), Head of Global Markets, Fund Manager (cross-border), VP International Finance\n\n**Where to verify placement claims:** ask Amity University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Global Finance Market specialisation builds skills that international banking and treasury employers test in cross-border finance roles:\n\n**Technical skills:**\n- FX Management: currency risk identification, hedging with forwards, options, and swaps for corporate treasury\n- International Capital Markets: equity and debt capital raising, ADR and GDR structures, and cross-border M&A financing\n- Financial Derivatives: derivative pricing concepts and corporate hedging strategy for bank treasury and risk desks\n- Cross-Border Investment Management: international portfolio construction and currency-adjusted return measurement\n\n**Applied skills:**\n- FEMA and RBI Compliance: international transaction regulatory frameworks for Indian treasury professionals\n- Global Banking Operations: correspondent banking, trade finance instruments, and SWIFT payment systems\n\n**Soft skills:** Presenting currency risk positions to CFOs, managing global bank counterparty relationships, navigating multi-jurisdiction regulatory requirements."
@@ -33,42 +33,10 @@
     "certificate": {
       "body": "The Amity University degree certificate carries the Amity University name, the MBA designation, and identifies the online learning mode per UGC-DEB 2020 regulations. The Global Finance Market specialisation is noted on the marksheet and transcript. Online mode identification on the certificate is standard for UGC-DEB approved programmes and equivalent in recognition to regular MBA degrees for employment, promotions, and further studies."
     },
-    "reviews": {
-      "intro": "Three verified reviews from Amity Online MBA Global Finance Market alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Aditya Sharma",
-          "city": "Mumbai",
-          "year": 2024,
-          "rating": 5,
-          "liked": "FX risk management and derivatives content was directly applicable to my treasury operations role",
-          "disliked": "More coverage of India-specific FEMA regulations and RBI circular updates would have been useful",
-          "body": "I manage FX hedging for a large IT company. The global finance content gave me the theoretical framework behind what I had been executing operationally for 4 years. The derivatives and international capital markets sections were the most relevant. The Amity MBA credential was well received when I moved to the Group Treasury Manager role — my CFO specifically noted it was a NIRF-ranked university degree."
-        },
-        {
-          "name": "Pooja Iyer",
-          "city": "Bangalore",
-          "year": 2023,
-          "rating": 4,
-          "liked": "International portfolio management content introduced me to cross-border asset allocation frameworks I had not encountered before",
-          "disliked": "Content on digital currencies and their impact on global finance was minimal — increasingly relevant topic",
-          "body": "I work at an asset management company with cross-border fund mandates. The global capital markets and portfolio management content was substantive and gave me vocabulary and analytical frameworks I now use in client presentations. The Amity degree helped me qualify for the Senior Portfolio Analyst role that required an MBA from a recognised university."
-        },
-        {
-          "name": "Sanjay Kumar",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Trade finance and international banking instruments were thoroughly covered — critical for my export finance role",
-          "disliked": "Case studies were mostly US and European market examples — more Asia-Pacific and India-specific global finance cases needed",
-          "body": "I handle trade finance and export credit for a manufacturing exporter. The LC, bank guarantee, and SWIFT payment systems content was directly relevant. The cross-border credit risk assessment frameworks improved how I evaluate our overseas buyers. The Amity brand was recognised by our bank relationship managers as a strong qualification for a senior export finance head role."
-        }
-      ]
-    },
     "faqs": [
       {
         "question": "Is CFA a better credential than MBA Global Finance Market for capital markets careers?",
-        "answer": "CFA and MBA serve different purposes. CFA is the deepest investment analysis credential globally and is required or preferred for equity research, portfolio management, and asset management. The MBA Global Finance Market provides management, strategy, and organisational context alongside finance knowledge — and a management degree credential for leadership roles. For pure investment analysis, CFA alone may be stronger. For management roles in global finance, the MBA plus CFA Level 1 is a strong combination."
+        "answer": "CFA and MBA serve different purposes. CFA is the deepest investment analysis credential globally and is required or preferred for equity research, portfolio management, and asset management. The MBA Global Finance Market provides management, strategy, and organisational context alongside finance knowledge, and a management degree credential for leadership roles. For pure investment analysis, CFA alone may be stronger. For management roles in global finance, the MBA plus CFA Level 1 is a strong combination."
       },
       {
         "question": "Does this MBA cover RBI and FEMA regulations for international finance?",
@@ -84,7 +52,7 @@
       },
       {
         "question": "How does this spec compare to doing a Finance specialisation at Amity?",
-        "answer": "Finance and Accounting Management at Amity covers domestic corporate finance, financial reporting, and taxation — suited for CFO track and domestic finance management. Global Finance Market is specifically oriented to international capital markets, FX, cross-border banking, and portfolio management. Choose based on whether your career is domestically or internationally oriented in finance."
+        "answer": "Finance and Accounting Management at Amity covers domestic corporate finance, financial reporting, and taxation, suited for CFO track and domestic finance management. Global Finance Market is specifically oriented to international capital markets, FX, cross-border banking, and portfolio management. Choose based on whether your career is domestically or internationally oriented in finance."
       }
     ],
     "chooseAlternatives": {
@@ -94,9 +62,9 @@
         "You want the international finance-focused MBA at Amity that is explicitly differentiated from domestic corporate finance programmes."
       ],
       "consider": [
-        "You are targeting domestic CFO track, financial reporting, or taxation roles — the Finance and Accounting Management spec is more relevant for those positions.",
-        "You want the strongest finance brand for investment banking roles — NMIMS Online Finance or an ISB finance track carries more weight at Tier 1 investment banks.",
-        "You need deep investment analysis credentials — supplement any MBA with CFA Level 1-3 for roles that specifically require investment analysis certification."
+        "You are targeting domestic CFO track, financial reporting, or taxation roles. The Finance and Accounting Management spec is more relevant for those positions.",
+        "You want the strongest finance brand for investment banking roles, NMIMS Online Finance or an ISB finance track carries more weight at Tier 1 investment banks.",
+        "You need deep investment analysis credentials, supplement any MBA with CFA Level 1-3 for roles that specifically require investment analysis certification."
       ]
     }
   },
@@ -105,6 +73,7 @@
     "generatedAt": "2026-04-21",
     "batchNumber": 9,
     "hasSyllabusData": false,
-    "phase71Updated": "2026-04-21"
+    "phase71Updated": "2026-04-21",
+    "claimSweep": "2026-09-17"
   }
 }

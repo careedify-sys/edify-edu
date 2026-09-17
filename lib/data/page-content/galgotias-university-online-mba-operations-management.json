@@ -61,7 +61,7 @@
       "note": "Sem 1-2 core subjects are common across all Galgotias Online MBA specialisations. See the main Galgotias Online MBA page for the core subject list."
     },
     "whoHires": {
-      "body": "Operations Management MBA graduates target these industries and roles:\n\n**Industries:** Manufacturing (automotive, FMCG, pharmaceuticals), Logistics and warehousing, E-commerce fulfilment, IT services delivery, Retail supply chain, Construction and infrastructure\n\n**Entry-level roles:** Operations Executive, Production Planning Associate, Supply Chain Analyst, Logistics Coordinator, Quality Assurance Executive\n\n**Mid-level roles (3-5 years):** Operations Manager, Supply Chain Manager, Production Manager, Quality Manager, Logistics Manager\n\n**Senior roles (7+ years):** Head of Operations, VP Supply Chain, Plant Director, Chief Operations Officer, VP Manufacturing\n\n**Typical hiring organisations:** Maruti Suzuki, Tata Motors, Hero MotoCorp, Hindustan Unilever (supply chain), ITC, Nestle, Amazon India (fulfilment), Flipkart, Delhivery, Blue Dart, L&T, Grasim Industries\n\nNote: Galgotias does not offer dedicated placement support, Six Sigma certification, or corporate tie-ups for online MBA students. Career advancement depends on your existing network and self-sourced opportunities."
+      "body": "Operations Management MBA graduates target these industries and roles:\n\n**Industries:** Manufacturing (automotive, FMCG, pharmaceuticals), Logistics and warehousing, E-commerce fulfilment, IT services delivery, Retail supply chain, Construction and infrastructure\n\n**Entry-level roles:** Operations Executive, Production Planning Associate, Supply Chain Analyst, Logistics Coordinator, Quality Assurance Executive\n\n**Mid-level roles (3-5 years):** Operations Manager, Supply Chain Manager, Production Manager, Quality Manager, Logistics Manager\n\n**Senior roles (7+ years):** Head of Operations, VP Supply Chain, Plant Director, Chief Operations Officer, VP Manufacturing\n\n**Typical hiring organisations:** Maruti Suzuki, Tata Motors, Hero MotoCorp, Hindustan Unilever (supply chain), ITC, Nestle, Amazon India (fulfilment), Flipkart, Delhivery, Blue Dart, L&T, Grasim Industries\n\nNote: Galgotias does not offer dedicated placement support, Six Sigma certification, or corporate tie-ups for online MBA students. Career advancement depends on your existing network and self-sourced opportunities.\n\n**Where to verify placement claims:** ask Galgotias University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Galgotias Operations Management specialisation builds these skills across Sem 3-4:\n\n**Technical skills:**\n- SCM and Logistics Management: supply chain network design, demand forecasting, warehouse optimisation, transportation planning, and logistics cost analysis\n- Total Quality Management: Six Sigma DMAIC, SPC chart interpretation, Kaizen event facilitation, 5S implementation, and root cause analysis\n- Sourcing and Materials Management: procurement strategy design, vendor evaluation, MRP calculation, EOQ and JIT inventory management, and purchase contract negotiation\n\n**Applied skills:**\n- Project Management: WBS creation, Gantt chart scheduling, CPM/PERT analysis, project risk assessment, and stakeholder communication planning\n- Management of Service Operations: service capacity planning, queuing theory application, service blueprinting, and process optimisation for IT, banking, and healthcare services\n\n**Soft skills:** Business communication for operations reporting, strategic management for capacity planning decisions, ethical reasoning for supply chain sustainability and labour compliance."
@@ -74,38 +74,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Galgotias University, Greater Noida. It carries the MBA designation with Operations Management specialisation noted on the marksheet and transcript. Online mode is mentioned per UGC-DEB 2020 regulations. The degree is WES recognised for international credential evaluation. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three reviews from Galgotias Online MBA Operations Management students. Ratings from post-completion feedback.",
-      "items": [
-        {
-          "name": "Rahul",
-          "city": "Greater Noida",
-          "year": 2024,
-          "rating": 4.1,
-          "liked": "SCM and Logistics Management was directly relevant to my role at a logistics company. At Rs 80,200, this was the cheapest NAAC A+ operations MBA I found.",
-          "disliked": "No Six Sigma or PMP certification bundled. No career services or placement partnerships.",
-          "body": "I have 6 years in warehouse operations and needed an MBA for promotion to regional operations manager. Galgotias gave me the credential without a loan. The SCM and TQM subjects were practical. Brand recognition at large manufacturers is limited, but for logistics and mid-size manufacturing firms in North India, the NAAC A+ credential is accepted."
-        },
-        {
-          "name": "Meena",
-          "city": "Agra",
-          "year": 2023,
-          "rating": 3.8,
-          "liked": "Total Quality Management covered Six Sigma DMAIC in good detail. Project Management was practical with real scheduling examples. The fee advantage is genuine.",
-          "disliked": "No hands-on simulation tools. No factory visits or operations labs. Brand recognition outside UP is weak for operations roles at large manufacturers.",
-          "body": "Good value for the price. If you work in manufacturing in UP, Delhi-NCR, or Rajasthan and need an MBA credential under Rs 1 lakh, Galgotias Operations Management works. For operations careers at top auto or FMCG manufacturers, LPU or Amity will carry more weight."
-        },
-        {
-          "name": "Kunal",
-          "city": "Ghaziabad",
-          "year": 2024,
-          "rating": 4.0,
-          "liked": "Sourcing and Materials Management was directly useful for my procurement role. Management of Service Operations added a service-sector perspective I did not expect.",
-          "disliked": "No EMI option made the payment challenging. Had to arrange semester fees upfront each time.",
-          "body": "For operations professionals who need a formal MBA at the lowest possible cost, Galgotias is rational. The subjects are relevant, the degree is NAAC A+ accredited, and the fee is under Rs 90,000. Do not expect premium perks, strong alumni network, or recruiter access. Set expectations based on the price."
-        }
-      ]
     },
     "faqs": [
       {
@@ -147,6 +115,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 24,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

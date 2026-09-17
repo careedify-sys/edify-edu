@@ -18,7 +18,7 @@
       "semesters": []
     },
     "whoHires": {
-      "body": "Business Analytics MBA graduates target data-driven management roles across industries:\n\n**Industries:** IT services and consulting, BFSI analytics, e-commerce, FMCG consumer analytics, healthcare analytics, telecom, manufacturing analytics, and analytics consulting firms\n\n**Entry-level roles:** Business Analyst, Data Analyst, MIS Analyst, Analytics Associate, Business Intelligence Analyst, Reporting Analyst\n\n**Mid-level roles (3-5 years):** Analytics Manager, Business Intelligence Manager, Data Analytics Lead, Consumer Insights Manager, Revenue Analytics Manager, Product Analytics Manager\n\n**Senior roles (7+ years):** Director of Analytics, VP Business Intelligence, Chief Analytics Officer, Head of Data Strategy, Director of Consumer Insights\n\n**Employers:** Pune IT companies (Persistent Systems, Cybage, Zensar), national IT services (TCS, Infosys, Wipro), consulting firms (Deloitte, EY, KPMG), e-commerce (Flipkart, Amazon), BFSI (HDFC, ICICI, Bajaj Finserv), and FMCG analytics teams."
+      "body": "Business Analytics MBA graduates target data-driven management roles across industries:\n\n**Industries:** IT services and consulting, BFSI analytics, e-commerce, FMCG consumer analytics, healthcare analytics, telecom, manufacturing analytics, and analytics consulting firms\n\n**Entry-level roles:** Business Analyst, Data Analyst, MIS Analyst, Analytics Associate, Business Intelligence Analyst, Reporting Analyst\n\n**Mid-level roles (3-5 years):** Analytics Manager, Business Intelligence Manager, Data Analytics Lead, Consumer Insights Manager, Revenue Analytics Manager, Product Analytics Manager\n\n**Senior roles (7+ years):** Director of Analytics, VP Business Intelligence, Chief Analytics Officer, Head of Data Strategy, Director of Consumer Insights\n\n**Employers:** Pune IT companies (Persistent Systems, Cybage, Zensar), national IT services (TCS, Infosys, Wipro), consulting firms (Deloitte, EY, KPMG), e-commerce (Flipkart, Amazon), BFSI (HDFC, ICICI, Bajaj Finserv), and FMCG analytics teams.\n\n**Where to verify placement claims:** ask Bharati Vidyapeeth (Deemed to be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Business Analytics specialisation builds skills that bridge business strategy and data analysis:\n\n**Technical skills:**\n- Statistical Analysis: hypothesis testing, regression analysis, ANOVA, and statistical inference for business problem solving\n- Predictive Analytics: forecasting models, classification techniques, clustering analysis, and propensity modelling for customer behaviour prediction\n- Data Visualization: dashboard design, storytelling with data, and visual communication of analytical findings to business stakeholders\n- Business Intelligence: BI tool application, report automation, KPI dashboard creation, and self-service analytics platform management\n\n**Applied skills:**\n- Marketing Analytics: customer segmentation, campaign performance analysis, attribution modelling, and customer lifetime value calculation\n- Financial Analytics: revenue forecasting, cost analysis, pricing optimization, and financial KPI tracking\n\n**Soft skills:** Translating analytical findings into business recommendations, presenting data insights to non-technical leadership, and framing business problems as analytical questions."
@@ -31,38 +31,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Business Analytics as the specialisation, issued by Bharati Vidyapeeth (Deemed to be University), Pune.\n\nThe degree carries NAAC A+ accreditation, NIRF #59 University ranking, and UGC-DEB approval. Online mode is identified per UGC-DEB 2020 regulations. Valid for corporate hiring, government recruitment, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three reviews from Bharati Vidyapeeth Online MBA Business Analytics students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Ankit",
-          "city": "Pune",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Bharati Vidyapeeth is a Pune legacy institution. The analytics MBA combines well with Pune's IT corridor job market. NIRF ranking adds credibility",
-          "disliked": "Syllabus was not visible before admission. Had to trust the counsellor's subject list",
-          "body": "I work at a Pune IT company and needed an MBA with analytics focus. Bharati Vidyapeeth's name is well known in the city. The Rs 1.6L fee with zero-cost EMI was manageable on my salary. Analytics content covered statistical modelling and data visualization at a practical level."
-        },
-        {
-          "name": "Priyanka",
-          "city": "Mumbai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "NAAC A+ and NIRF #59 ranking gave me confidence. Business Analytics subjects were applicable to my MIS reporting role at a financial services company",
-          "disliked": "Brand recognition in Mumbai is not as strong as Symbiosis, which is also Pune-based. LMS could be more interactive",
-          "body": "The programme covered predictive analytics and business intelligence at a management level. Not as deep as a pure data science degree, but that is the point of an MBA in analytics. You learn to use data for business decisions, not to build algorithms. Good fit for my financial services analytics career."
-        },
-        {
-          "name": "Rahul",
-          "city": "Nagpur",
-          "year": 2023,
-          "rating": 3,
-          "liked": "One of the more affordable NIRF-ranked options for Business Analytics MBA. Zero-cost EMI helped with cash flow",
-          "disliked": "Faculty engagement was average. Some analytics tools could have been covered in more depth",
-          "body": "Functional business analytics MBA at a reasonable price from a NAAC A+ university. The content covers the basics of statistical analysis, visualization, and BI tools. Not cutting-edge, but solid for business analyst and MIS roles. The Bharati Vidyapeeth name is recognized in Maharashtra."
-        }
-      ]
     },
     "faqs": [
       {
@@ -105,6 +73,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 34,
     "hasSyllabusData": false,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

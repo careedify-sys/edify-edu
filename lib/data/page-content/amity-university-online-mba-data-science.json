@@ -10,7 +10,7 @@
     },
     "tldr": "Amity University Online MBA in Data Science combines advanced ML, deep learning, data engineering, and EDA with management depth. NAAC A+, NIRF #22 at ₹2,25,000. Best suited for data professionals targeting data science management, ML product roles, or chief data officer tracks.",
     "about": {
-      "body": "Data Science is the most technically intensive MBA specialisation Amity offers. The Amity Online MBA in Data Science covers the full data science lifecycle from data engineering and exploratory data analysis through supervised and unsupervised machine learning to advanced deep learning — anchored in management and business strategy context.\n\nThe specialisation is designed for data professionals, software engineers, and quantitative analysts who want to move into senior data science roles, ML product management, or data science leadership without pursuing a full-time MTech or M.Sc programme. It is also suited for professionals transitioning from statistics, actuarial, or quant backgrounds into industry data science management.\n\nAmity University Online is NAAC A+ accredited with NIRF #22 University ranking for 2025. EdifyEdu verifies accreditation data independently and does not receive commission from Amity. For the full programme overview including Sem 1-2 core subjects, visit /universities/amity-university-online/mba."
+      "body": "Data Science is the most technically intensive MBA specialisation Amity offers. The Amity Online MBA in Data Science covers the full data science lifecycle from data engineering and exploratory data analysis through supervised and unsupervised machine learning to advanced deep learning, anchored in management and business strategy context.\n\nThe specialisation is designed for data professionals, software engineers, and quantitative analysts who want to move into senior data science roles, ML product management, or data science leadership without pursuing a full-time MTech or M.Sc programme. It is also suited for professionals transitioning from statistics, actuarial, or quant backgrounds into industry data science management.\n\nAmity University Online is NAAC A+ accredited with NIRF #22 University ranking for 2025. EdifyEdu verifies accreditation data independently and does not receive commission from Amity. For the full programme overview including Sem 1-2 core subjects, visit /universities/amity-university-online/mba."
     },
     "syllabus": {
       "hasData": true,
@@ -69,7 +69,7 @@
       "note": "Semesters 1 and 2 cover the shared management core. See the main Amity MBA page for Sem 1-2 subject details."
     },
     "whoHires": {
-      "body": "Data Science MBA graduates from Amity University Online are hired across these industries and roles:\n\n**Industries:** Technology, Fintech, BFSI, Management consulting, Research organisations\n\n**Entry-level roles:** Junior Data Scientist, ML Engineer (management track), Data Science Analyst, NLP Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Data Scientist, ML Product Manager, Data Science Manager, Head of Data\n\n**Senior roles (7+ years):** Chief Data Officer, VP Data Science, Principal Data Scientist\n\n**Top hiring organisations:** Amazon AI, Flipkart, Fractal Analytics, HDFC Bank AI Division, Razorpay, Tiger Analytics"
+      "body": "This Data Science MBA syllabus maps to the following industries and roles:\n\n**Industries:** Technology, Fintech, BFSI, Management consulting, Research organisations\n\n**Entry-level roles:** Junior Data Scientist, ML Engineer (management track), Data Science Analyst, NLP Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Data Scientist, ML Product Manager, Data Science Manager, Head of Data\n\n**Senior roles (7+ years):** Chief Data Officer, VP Data Science, Principal Data Scientist\n\n**Where to verify placement claims:** ask Amity University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Data Science specialisation builds the most technically demanding skill set in the Amity MBA portfolio, tested in data science leadership roles:\n\n**Technical skills:**\n- Data Engineering: ETL pipeline design and data warehouse architecture for analytics use\n- EDA: statistical summarisation, outlier detection, and visual storytelling from raw datasets\n- Supervised ML: classification algorithms for churn prediction, credit risk, and fraud detection\n- Deep Learning: CNN and RNN architectures for image, text, and sequence data problems\n\n**Applied skills:**\n- Unsupervised ML: K-means clustering and PCA for customer segmentation and anomaly detection\n- Responsible AI: algorithmic bias testing and data governance frameworks for production models\n\n**Soft skills:** Communicating model outputs to non-technical stakeholders, translating business problems into data science problem statements, managing data science team delivery cycles."
@@ -83,38 +83,6 @@
     "certificate": {
       "body": "The Amity University degree certificate carries the Amity University name, the MBA designation, and identifies the online learning mode per UGC-DEB 2020 regulations. The Data Science specialisation is noted on the marksheet and transcript. Online mode identification on the certificate is standard for UGC-DEB approved programmes and equivalent in recognition to regular MBA degrees for employment, promotions, and further studies."
     },
-    "reviews": {
-      "intro": "Three verified reviews from Amity Online MBA Data Science alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Rahul Sharma",
-          "city": "Bangalore",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Deep learning module covered CNNs and RNNs in applied business contexts — not just theory",
-          "disliked": "Data engineering section needed more real pipeline tooling such as Airflow and dbt",
-          "body": "I was a senior data analyst targeting ML engineering management. The deep learning and supervised ML content was genuinely rigorous — not a watered-down MBA version. The project I built in Sem 4 became part of my portfolio. Got a Data Science Manager role at a fintech company 5 months after completion. Amity brand was specifically recognised as strong for a management degree with real technical content."
-        },
-        {
-          "name": "Anita Nair",
-          "city": "Mumbai",
-          "year": 2023,
-          "rating": 4,
-          "liked": "EDA and visualisation module taught me to communicate model outputs to non-technical stakeholders",
-          "disliked": "Unsupervised ML module was lighter than I expected — K-means covered but no advanced clustering",
-          "body": "The EDA content directly improved my work. My VP noted that my data presentations became much clearer after I completed Sem 3. The transition from data analyst to Data Science Lead happened partly due to the management framing this MBA provided. The Amity brand held up well in interviews — interviewers at technology companies knew the NIRF ranking."
-        },
-        {
-          "name": "Kiran Menon",
-          "city": "Hyderabad",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Strategic management module helped me connect data projects to business value — something I was missing",
-          "disliked": "Professional ethics section was too philosophical — needed more practical AI governance frameworks",
-          "body": "The strategic management content was the most immediately impactful for my career. I now lead data science road-mapping conversations with the CEO that I could not have done as a data scientist alone. Got promoted to Head of Analytics at a mid-size SaaS company. The degree gave me the management credibility I lacked despite 7 years of data experience."
-        }
-      ]
-    },
     "faqs": [
       {
         "question": "Does the Data Science MBA require Python or R skills before enrolling?",
@@ -126,7 +94,7 @@
       },
       {
         "question": "Is deep learning (CNNs, RNNs) actually taught in this programme?",
-        "answer": "Yes. Advanced Deep Learning is a dedicated Sem 4 subject covering CNNs and RNNs. The depth is at MBA level — conceptually and applied, not at a pure computer science research level. Candidates targeting AI engineering roles should supplement with TensorFlow or PyTorch self-study alongside the degree."
+        "answer": "Yes. Advanced Deep Learning is a dedicated Sem 4 subject covering CNNs and RNNs. The depth is at MBA level, conceptually and applied, not at a pure computer science research level. Candidates targeting AI engineering roles should supplement with TensorFlow or PyTorch self-study alongside the degree."
       },
       {
         "question": "What salary can Data Science MBA graduates from Amity expect?",
@@ -144,9 +112,9 @@
         "You want a NIRF #22, NAAC A+ management credential to add business depth to your technical data science profile."
       ],
       "consider": [
-        "You want Coursera certifications alongside the degree — MAHE Online Data Science includes dual Coursera certs with NIRF #6 standing, worth the premium for senior roles.",
-        "You are targeting analytics management rather than deep ML roles — the Amity Business Analytics spec covers Power BI, forecasting, and optimisation without the deep learning intensity.",
-        "You are a non-technical professional wanting data literacy — this spec is too technically intensive; Business Analytics or General Management is more appropriate."
+        "You want Coursera certifications alongside the degree, MAHE Online Data Science includes dual Coursera certs with NIRF #6 standing, worth the premium for senior roles.",
+        "You are targeting analytics management rather than deep ML roles. The Amity Business Analytics spec covers Power BI, forecasting, and optimisation without the deep learning intensity.",
+        "You are a non-technical professional wanting data literacy. This spec is too technically intensive; Business Analytics or General Management is more appropriate."
       ]
     }
   },
@@ -155,6 +123,7 @@
     "generatedAt": "2026-04-21",
     "batchNumber": 9,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-21"
+    "phase71Updated": "2026-04-21",
+    "claimSweep": "2026-09-17"
   }
 }

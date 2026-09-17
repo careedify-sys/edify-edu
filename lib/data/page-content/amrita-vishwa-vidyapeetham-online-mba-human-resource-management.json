@@ -19,27 +19,57 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "International Business", "desc": "Global trade frameworks, cross-border market entry strategies, FDI analysis, and managing international operations." },
-            { "name": "Business Analytics and Business Modelling", "desc": "Quantitative business modelling, regression analysis, forecasting techniques, and data-driven decision-making frameworks." },
-            { "name": "Industrial Relations and Labour Laws", "desc": "Trade union dynamics, Industrial Disputes Act, Factories Act, Contract Labour Act, statutory compliance framework, and collective bargaining process." },
-            { "name": "Recruitment and Retention Management", "desc": "End-to-end talent acquisition process, sourcing channel strategy, employer branding, onboarding effectiveness, and retention analytics." },
-            { "name": "Education for Life", "desc": "Soft skills development, mindfulness, health and wellbeing, and holistic personal effectiveness for professionals." }
+            {
+              "name": "International Business",
+              "desc": "Global trade frameworks, cross-border market entry strategies, FDI analysis, and managing international operations."
+            },
+            {
+              "name": "Business Analytics and Business Modelling",
+              "desc": "Quantitative business modelling, regression analysis, forecasting techniques, and data-driven decision-making frameworks."
+            },
+            {
+              "name": "Industrial Relations and Labour Laws",
+              "desc": "Trade union dynamics, Industrial Disputes Act, Factories Act, Contract Labour Act, statutory compliance framework, and collective bargaining process."
+            },
+            {
+              "name": "Recruitment and Retention Management",
+              "desc": "End-to-end talent acquisition process, sourcing channel strategy, employer branding, onboarding effectiveness, and retention analytics."
+            },
+            {
+              "name": "Education for Life",
+              "desc": "Soft skills development, mindfulness, health and wellbeing, and holistic personal effectiveness for professionals."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Environment Sustainability and Governance", "desc": "ESG reporting frameworks, corporate sustainability strategy, carbon accounting basics, and governance obligations." },
-            { "name": "Project", "desc": "Applied industry HR project integrating specialisation knowledge with real-world talent, compliance, or strategic HRM problem-solving." },
-            { "name": "Change Management", "desc": "Kotter and ADKAR change models, organisational resistance analysis, change communication planning, and HR's role in M&A integration." },
-            { "name": "HR Audit", "desc": "HR audit methodology, compliance gap assessment, HR metrics dashboard design, HR process benchmarking, and audit report writing." },
-            { "name": "Strategic HRM", "desc": "HR strategy alignment with business strategy, workforce planning, succession planning, total rewards strategy, and HRBP role design." }
+            {
+              "name": "Environment Sustainability and Governance",
+              "desc": "ESG reporting frameworks, corporate sustainability strategy, carbon accounting basics, and governance obligations."
+            },
+            {
+              "name": "Project",
+              "desc": "Applied industry HR project integrating specialisation knowledge with real-world talent, compliance, or strategic HRM problem-solving."
+            },
+            {
+              "name": "Change Management",
+              "desc": "Kotter and ADKAR change models, organisational resistance analysis, change communication planning, and HR's role in M&A integration."
+            },
+            {
+              "name": "HR Audit",
+              "desc": "HR audit methodology, compliance gap assessment, HR metrics dashboard design, HR process benchmarking, and audit report writing."
+            },
+            {
+              "name": "Strategic HRM",
+              "desc": "HR strategy alignment with business strategy, workforce planning, succession planning, total rewards strategy, and HRBP role design."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "HR Management MBA graduates from Amrita Vishwa Vidyapeetham Online are hired across India's corporate HR sector:\n\n**Industries:** IT services, BFSI HR, manufacturing HR, consulting (HR advisory), FMCG HR, healthcare HR, and HR tech startups\n\n**Entry-level roles:** HR Executive, Talent Acquisition Specialist, HR Business Partner (junior), Compensation and Benefits Analyst, HR Operations Executive, Training Coordinator\n\n**Mid-level roles (3-5 years experience):** HR Business Partner, Talent Acquisition Manager, HR Manager, Learning and Development Manager, Compensation and Benefits Manager, HR Compliance Manager\n\n**Senior roles (7+ years):** HR Director, VP HR, Chief People Officer, Head of Talent, Head of Employee Relations, Global HRBP (MNC)\n\n**Top hiring organisations:** TCS HR, Infosys HR, Wipro HR, Accenture People Operations, Deloitte HR advisory, KPMG People and Change, HDFC Bank HR, ICICI Bank HR, Hindustan Unilever HR, ITC HR, Flipkart People, Amazon India HR, and HR tech platforms including Keka, Darwinbox, and greytHR"
+      "body": "This HR Management MBA syllabus maps to the following India's corporate HR sector:\n\n**Industries:** IT services, BFSI HR, manufacturing HR, consulting (HR advisory), FMCG HR, healthcare HR, and HR tech startups\n\n**Entry-level roles:** HR Executive, Talent Acquisition Specialist, HR Business Partner (junior), Compensation and Benefits Analyst, HR Operations Executive, Training Coordinator\n\n**Mid-level roles (3-5 years experience):** HR Business Partner, Talent Acquisition Manager, HR Manager, Learning and Development Manager, Compensation and Benefits Manager, HR Compliance Manager\n\n**Senior roles (7+ years):** HR Director, VP HR, Chief People Officer, Head of Talent, Head of Employee Relations, Global HRBP (MNC)\n\n**Where to verify placement claims:** ask Amrita Vishwa Vidyapeetham Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Human Resource Management specialisation builds skills that corporate HR, HR consulting, and talent management employers test at executive and manager levels:\n\n**Technical skills:**\n- Labour Law and Compliance: Industrial Disputes Act interpretation, standing orders drafting, Contract Labour Act compliance, POSH Act implementation basics, and statutory filing calendar management\n- Talent Acquisition: ATS configuration and sourcing workflow, campus hiring planning, offer and onboarding process design, employer brand strategy, and recruitment analytics (time-to-hire, offer acceptance rate)\n- Strategic HRM: HR strategy document preparation, workforce gap analysis, succession planning grid design, total rewards benchmarking, and OKR-to-HR KPI alignment\n- HR Audit: audit scope definition, HR process compliance checklist design, data privacy audit for HR systems, and remediation plan writing\n\n**Applied skills:**\n- Change Management: stakeholder impact assessment, change readiness survey design, communication plan for major org changes, and ADKAR model application in HR transformation\n- HR Analytics: headcount dashboard design, attrition predictor model basics, diversity and inclusion metrics, and board-level people metrics reporting\n\n**Soft skills:** Advising business heads on talent strategy without formal authority, managing sensitive employee relations cases with discretion, presenting HR audit findings to leadership without creating defensive reactions, and building a data-driven HR culture in organisations that still use manual HR systems."
@@ -52,38 +82,6 @@
     },
     "certificate": {
       "body": "Graduates receive an Amrita Vishwa Vidyapeetham MBA degree certificate with Human Resource Management noted on the marksheet, issued under UGC-DEB 2020 online mode standards.\n\nNAAC A++ and NIRF #8 University 2025 are the strongest institutional credentials in India's online MBA space. WES recognition gives formal degree equivalence in the USA and Canada - relevant for HR professionals targeting global HRBP roles at MNCs or Canadian PR pathways. DigiLocker verification is available."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Amrita Vishwa Vidyapeetham Online MBA Human Resource Management alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Kavitha R.",
-          "city": "Bengaluru",
-          "year": 2025,
-          "rating": 4,
-          "liked": "Strategic HRM subject gave me the workforce planning and succession planning frameworks to move from HR operations to an HRBP role",
-          "disliked": "Change Management content covered Kotter and ADKAR models well but more India-specific M&A integration HR case studies would improve relevance",
-          "body": "I transitioned from an HR operations role to an HR Business Partner position using this MBA. Strategic HRM, HR Audit, and Change Management subjects were directly applicable. NAAC A++ from NIRF #8 cleared every credential filter at IT services firms I applied to. The total fee of Rs 2,31,700 with zero-cost EMI was manageable alongside my HR coordinator salary."
-        },
-        {
-          "name": "Manoj S.",
-          "city": "Mumbai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Industrial Relations and Labour Laws subject gave me the statutory compliance framework my manufacturing client engagements require",
-          "disliked": "Recruitment and Retention Management content could be updated with more AI-driven sourcing tools and ATS-specific content given how rapidly the talent acquisition space is evolving",
-          "body": "I work in HR consulting, primarily for manufacturing clients. Industrial Relations, Labour Laws, and HR Audit were directly applicable to the compliance assessment work I do. NAAC A++ carries strong institutional weight with manufacturing sector HR teams - it was mentioned specifically in my last three client engagement approvals. WES recognition is relevant for the international client work I'm targeting."
-        },
-        {
-          "name": "Preethi V.",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "HR Audit subject gave me the methodology to structure HR compliance reviews for our ISO certification audit",
-          "disliked": "Analytics content in Strategic HRM could be deeper - more HR data analytics and predictive attrition modelling would make it more current for data-driven HR roles",
-          "body": "I manage HR compliance at a healthcare company. HR Audit, Industrial Relations, and Strategic HRM subjects were directly applicable. NAAC A++ is the strongest accreditation credential available in online MBA space - my CEO mentioned it specifically when approving my study request. Zero-cost EMI made the fee structure easy to plan around my existing salary commitments."
-        }
-      ]
     },
     "faqs": [
       {
@@ -126,6 +124,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 19,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

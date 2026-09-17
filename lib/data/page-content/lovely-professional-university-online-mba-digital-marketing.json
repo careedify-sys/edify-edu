@@ -65,7 +65,7 @@
       "note": "Sem 1-2 shared core subjects across all LPU Online MBA specialisations. See the main LPU Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Digital Marketing MBA graduates from LPU Online are hired across these industries and roles:\n\n**Industries:** E-commerce and D2C brands, FMCG, EdTech, Fintech, IT services, Media and advertising agencies\n\n**Entry-level roles:** Digital Marketing Executive, SEO Analyst, Social Media Manager, Performance Marketing Executive, Content Strategist\n\n**Mid-level roles (3-5 years experience):** Digital Marketing Manager, SEO Manager, Performance Marketing Manager, Growth Manager, Digital Brand Manager\n\n**Senior roles (7+ years):** Head of Digital Marketing, VP Growth, Chief Marketing Officer, Digital Strategy Director\n\n**Top hiring organisations:** Amazon India, Flipkart, Myntra, Nykaa, Zomato, Swiggy, PhonePe, Paytm, BYJU's, Unacademy, HUL Digital, ITC Digital, Dentsu India, Publicis Sapient, WPP India"
+      "body": "This Digital Marketing MBA syllabus maps to the following industries and roles:\n\n**Industries:** E-commerce and D2C brands, FMCG, EdTech, Fintech, IT services, Media and advertising agencies\n\n**Entry-level roles:** Digital Marketing Executive, SEO Analyst, Social Media Manager, Performance Marketing Executive, Content Strategist\n\n**Mid-level roles (3-5 years experience):** Digital Marketing Manager, SEO Manager, Performance Marketing Manager, Growth Manager, Digital Brand Manager\n\n**Senior roles (7+ years):** Head of Digital Marketing, VP Growth, Chief Marketing Officer, Digital Strategy Director\n\n**Where to verify placement claims:** ask Lovely Professional University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The LPU Digital Marketing specialisation builds skills that e-commerce and brand employers test at digital marketing manager and growth manager levels:\n\n**Technical skills:**\n- Search Engine Optimisation: on-page and technical SEO implementation, link building strategy, keyword research, and content optimisation for organic search management roles\n- Online Advertising: Google Ads campaign management, Meta Ads optimisation, programmatic display buying, and performance marketing with ROAS and CPA metrics for paid media roles\n- Web and Social Media Analytics: Google Analytics 4 configuration, Meta Insights reporting, social listening tool management, and attribution modelling for analytics and insights roles\n- Social Media Marketing: platform-specific content strategy, community management, influencer marketing management, and social commerce for social media management roles\n\n**Applied skills:**\n- Digital Marketing Strategy: omnichannel customer journey design, digital brand strategy, and integrated channel mix planning for senior digital marketing and growth strategy roles\n- Foundation of Digital Marketing: digital consumer behaviour analysis and integrated campaign planning frameworks\n\n**Soft skills:** Presenting digital marketing ROI to business stakeholders, managing advertising agency relationships, building data-driven business cases for digital budget allocation, and leading cross-functional digital transformation projects."
@@ -78,38 +78,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Lovely Professional University (LPU) and carries the LPU name with the MBA designation. The Digital Marketing specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from LPU Online MBA Digital Marketing alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Shreya Bhatia",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Online Advertising and Web and Social Media Analytics subjects were directly applicable to my performance marketing role. Digital Marketing Strategy gave me the framework to move from execution to strategy.",
-          "disliked": "SEO subject could be updated to include GA4 migration and Core Web Vitals content.",
-          "body": "I had 3 years in performance marketing and the LPU Digital Marketing MBA helped me move to digital marketing manager. The Rs 1.61L with zero-cost EMI was the clear deciding factor. Delhi e-commerce companies recognised the LPU credential."
-        },
-        {
-          "name": "Abhishek Thakur",
-          "city": "Chandigarh",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Social Media Marketing and Digital Marketing Strategy were well-structured and practically applicable. Good for D2C brand roles.",
-          "disliked": "Google Ads and Meta Ads coverage could include more hands-on campaign simulation exercises.",
-          "body": "Good programme for digital marketing career advancement. The digital-specific curriculum was more targeted than what general marketing MBAs offer. Zero-cost EMI was a genuine benefit."
-        },
-        {
-          "name": "Priyanka Verma",
-          "city": "Jalandhar",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Foundation of Digital Marketing and Online Advertising subjects gave me strong conceptual grounding.",
-          "disliked": "Analytics tools coverage was slightly dated. More live platform access would help.",
-          "body": "Solid digital marketing credential at a very competitive price. For North India digital marketing careers in e-commerce, FMCG, and startups, LPU Digital Marketing is a well-recognised and affordable choice."
-        }
-      ]
     },
     "faqs": [
       {
@@ -150,6 +118,7 @@
     "wordCount": 2050,
     "generatedAt": "2026-04-21",
     "batchNumber": "Phase7-Batch13",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

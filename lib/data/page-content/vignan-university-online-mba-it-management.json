@@ -65,7 +65,7 @@
       "note": "Sem 1-2 cover shared core subjects across all Vignan Online MBA specialisations. See the main Vignan Online MBA page for the core subject list. Syllabus applies to the 2025-26 admission cycle. Reconfirm current syllabus with our counsellor before enrolment."
     },
     "whoHires": {
-      "body": "IT Management MBA graduates target these industries and roles:\n\n**Industries:** IT and IT services, ITES/BPO, Banking (IT divisions), Manufacturing (ERP teams), Consulting, Telecom, E-commerce\n\n**Entry-level roles:** IT Analyst, Systems Analyst, ERP Consultant (Junior), Project Coordinator, IT Operations Executive\n\n**Mid-level roles (3-5 years):** IT Project Manager, ERP Manager, Technology Manager, IT Business Analyst, Information Security Manager\n\n**Senior roles (7+ years):** CTO, CIO, VP Technology, Head of IT Operations, Director of Digital Transformation\n\n**Typical hiring organisations:** TCS, Infosys, Wipro, HCL Tech, Cognizant, Tech Mahindra, Accenture, IBM India, Capgemini, SAP India, Oracle India, HDFC Bank (IT), Reliance Jio, Tata Communications"
+      "body": "IT Management MBA graduates target these industries and roles:\n\n**Industries:** IT and IT services, ITES/BPO, Banking (IT divisions), Manufacturing (ERP teams), Consulting, Telecom, E-commerce\n\n**Entry-level roles:** IT Analyst, Systems Analyst, ERP Consultant (Junior), Project Coordinator, IT Operations Executive\n\n**Mid-level roles (3-5 years):** IT Project Manager, ERP Manager, Technology Manager, IT Business Analyst, Information Security Manager\n\n**Senior roles (7+ years):** CTO, CIO, VP Technology, Head of IT Operations, Director of Digital Transformation\n\n**Typical hiring organisations:** TCS, Infosys, Wipro, HCL Tech, Cognizant, Tech Mahindra, Accenture, IBM India, Capgemini, SAP India, Oracle India, HDFC Bank (IT), Reliance Jio, Tata Communications\n\n**Where to verify placement claims:** ask Vignan's Foundation for Science, Technology & Research Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The IT Management specialisation builds skills tested by IT services, consulting, and enterprise IT organisations:\n\n**Technical skills:**\n- ERP: SAP/Oracle module understanding, ERP implementation lifecycle, business process mapping, and change management for ERP rollouts\n- Software Engineering: SDLC model selection, requirements gathering, software quality assurance, and testing strategy design\n- DBMS: relational database design, SQL query writing, normalisation, and database performance tuning basics\n- IT Privacy and Security: cybersecurity risk assessment, IT Act compliance, data privacy governance, and information security policy design\n\n**Applied skills:**\n- IT Project Management: Agile sprint planning, Waterfall milestone tracking, risk register maintenance, and delivery governance\n- Technology Management: technology roadmap creation, build-vs-buy decision frameworks, and IT-business alignment strategy\n\n**Soft skills:** Stakeholder communication for IT projects, vendor negotiation, cross-functional coordination between business and technology teams, and executive presentation of technology proposals."
@@ -78,38 +78,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Vignan's Foundation for Science, Technology and Research, Guntur. It reads 'Master of Business Administration' with the IT Management specialisation noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The degree is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three reviews from Vignan Online MBA IT Management students. Ratings from post-completion feedback.",
-      "items": [
-        {
-          "name": "Arun",
-          "city": "Vijayawada",
-          "year": 2025,
-          "rating": 4.1,
-          "liked": "ERP and DBMS subjects were directly relevant to my SAP consulting role. Rs 90,000 total is genuinely the cheapest NAAC A+ IT management MBA available.",
-          "disliked": "No cloud computing, DevOps, or AI subjects. The syllabus is traditional IT management, not modern tech leadership.",
-          "body": "I work as a junior SAP consultant. The ERP subject covered implementation lifecycle and business process integration, which I use daily. IT Project Management gave me Agile frameworks that improved my sprint planning. At Rs 90,000, the ROI came through a promotion within a year. For SAP, ERP, and database professionals, this is a solid credential."
-        },
-        {
-          "name": "Meena",
-          "city": "Hyderabad",
-          "year": 2024,
-          "rating": 3.5,
-          "liked": "IT Privacy and Security subject was timely and well-structured. Zero-cost EMI made it easy to manage alongside rent and other expenses.",
-          "disliked": "Vignan brand recognition at IT companies in Hyderabad is limited compared to Manipal, BITS, or Amity. For IT manager roles at top-tier companies, the brand does not carry weight.",
-          "body": "The IT management syllabus covers the basics well. But Hyderabad IT hiring managers expect MBA brands they recognise. If you are already at a mid-size IT company and need the credential for promotion, Vignan works. For lateral moves to TCS, Infosys, or Wipro management tracks, invest in a stronger brand. The programme content is fine for the price, but brand is the bottleneck."
-        },
-        {
-          "name": "Srinivas",
-          "city": "Guntur",
-          "year": 2025,
-          "rating": 4.0,
-          "liked": "Software Engineering and IT Project Management were the strongest subjects. The research projects pushed applied learning.",
-          "disliked": "Career services for online students are minimal. No IT job fairs or recruiter connections.",
-          "body": "Good programme for working IT professionals in Andhra Pradesh and Telangana. The Technology Management subject in Sem 4 helped me think about IT strategy beyond daily operations. At Rs 90,000 with no-cost EMI, the financial barrier is essentially zero. Just pair it with PMP or ITIL certifications for stronger positioning in the IT management job market."
-        }
-      ]
     },
     "faqs": [
       {
@@ -151,6 +119,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 28,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

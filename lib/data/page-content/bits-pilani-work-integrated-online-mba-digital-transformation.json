@@ -49,7 +49,7 @@
       "note": "Sem 1-2 cover shared MBA core subjects across all BITS Pilani WILP specialisations. Sem 3-4 introduce specialisation-specific and elective subjects. General Management Elective pool includes Advanced Marketing Management, AI for Competitive Advantage, Business Environment Laws Ethics, Business Research Methods, Data Visualization, Decision Analysis, Entrepreneurship, Entrepreneurial Finance, Enterprise Risk Management, Indian Ethos, International Business and Trade, Leadership and Managing Change, Management Control Systems, Project Management, Strategic HRM, and Technology Management."
     },
     "whoHires": {
-      "body": "Digital Transformation MBA graduates from BITS Pilani WILP target these industries and roles:\n\n**Industries:** IT and tech companies, BFSI digital divisions, E-commerce, Manufacturing (Industry 4.0), Consulting firms, Telecom\n\n**Entry-level roles:** Digital Analyst, Digital Marketing Specialist, Cloud Solutions Associate, Digital Product Associate\n\n**Mid-level roles (3-5 years experience):** Digital Transformation Manager, Digital Product Manager, Cloud Strategy Lead, Digital Marketing Manager, Digital Operations Head\n\n**Senior roles (7+ years):** Chief Digital Officer, VP Digital Transformation, Head of Digital Strategy, Director Digital Products\n\n**Note:** BITS Pilani WILP does not conduct placement drives. This programme is for working professionals only. Career progression depends on your existing employment trajectory and how you apply programme skills."
+      "body": "Digital Transformation MBA graduates from BITS Pilani WILP target these industries and roles:\n\n**Industries:** IT and tech companies, BFSI digital divisions, E-commerce, Manufacturing (Industry 4.0), Consulting firms, Telecom\n\n**Entry-level roles:** Digital Analyst, Digital Marketing Specialist, Cloud Solutions Associate, Digital Product Associate\n\n**Mid-level roles (3-5 years experience):** Digital Transformation Manager, Digital Product Manager, Cloud Strategy Lead, Digital Marketing Manager, Digital Operations Head\n\n**Senior roles (7+ years):** Chief Digital Officer, VP Digital Transformation, Head of Digital Strategy, Director Digital Products\n\n**Note:** BITS Pilani WILP does not conduct placement drives. This programme is for working professionals only. Career progression depends on your existing employment trajectory and how you apply programme skills.\n\n**Where to verify placement claims:** ask BITS Pilani Work Integrated Learning Programmes (WILP) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The BITS Pilani WILP Digital Transformation specialisation builds digital leadership and technology management skills:\n\n**Technical skills:**\n- Digital Marketing: search, social, content marketing strategy, paid advertising, attribution models, and digital analytics\n- AI and ML: machine learning fundamentals, AI applications in business decision-making, and automation strategy\n- Cloud Technology Management: cloud architecture, migration strategy, and cloud-based business transformation\n- Analytics for Digital Business: data-driven decision-making for digital products and platforms\n\n**Applied skills:**\n- Digital Product Management: product lifecycle in digital environments, feature prioritisation, and go-to-market strategy for digital offerings\n- Digital Banking and Payment Systems: fintech transformation, digital payment infrastructure, and regulatory technology\n- Digital Manufacturing and Logistics: Industry 4.0, IoT-enabled supply chains, and smart manufacturing\n- Information Security and Risk Management: cybersecurity governance, risk assessment, and compliance in digital environments\n\n**Management skills:** Strategic Management and Business Policy, Managerial Economics, and General Management electives in leadership, project management, and entrepreneurship."
@@ -62,38 +62,6 @@
     },
     "certificate": {
       "body": "Graduates receive a degree certificate issued by BITS Pilani under UGC norms. The certificate reads Master of Business Administration. The Digital Transformation specialisation is noted on the marksheet and transcript. BITS Pilani carries Institution of Eminence status, NAAC A+ accreditation, and NIRF #7 University 2025 ranking. The BITS Pilani brand is among the strongest institutional names in Indian higher education for employer recognition."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from BITS Pilani WILP MBA Digital Transformation students. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Vikram S.",
-          "city": "Bangalore",
-          "year": 2025,
-          "rating": 4,
-          "liked": "AI and ML elective was genuinely rigorous. BITS Pilani brand opened conversations with senior leadership at my company. Virtual labs and simulations added practical depth beyond just theory.",
-          "disliked": "In-person exams meant travelling to the nearest centre twice a semester. At Rs 2.98L, this is premium pricing for an online MBA.",
-          "body": "Strong programme if you value the BITS Pilani name. AI and ML and Cloud Technology electives were directly applicable to my role in digital strategy. In-person exams require planning but keep academic credibility high. No placements, which is fine since WILP targets working professionals."
-        },
-        {
-          "name": "Meera K.",
-          "city": "Mumbai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Digital Product Management elective was outstanding. The NIRF #7 ranking and Institution of Eminence status made this MBA credible with my employer for a promotion case.",
-          "disliked": "Wish there were more live sessions with faculty. Platform could be more modern.",
-          "body": "Digital Transformation spec covered breadth from cloud to digital banking to AI. The project component forced me to apply concepts at my company. BITS Pilani on the certificate was the deciding factor over cheaper options. Exams are in-person, so plan for travel."
-        },
-        {
-          "name": "Arjun D.",
-          "city": "Hyderabad",
-          "year": 2025,
-          "rating": 3.5,
-          "liked": "Information Security and Risk Management elective filled a gap in my knowledge. BITS Pilani alumni network in tech is unmatched.",
-          "disliked": "Rs 2.98L is steep compared to DSU or Alliance. No placement support since WILP is only for working professionals.",
-          "body": "Good curriculum covering digital transformation holistically. The fee is high but the BITS Pilani brand justifies it if employer recognition matters. In-person exams at designated centres are a reality you must accept. No placements, which was clear from the start."
-        }
-      ]
     },
     "faqs": [
       {
@@ -139,6 +107,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 42,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

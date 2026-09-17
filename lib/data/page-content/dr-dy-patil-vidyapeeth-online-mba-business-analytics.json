@@ -19,24 +19,45 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Data Visualization", "desc": "Dashboard design principles, data storytelling frameworks, Tableau/Power BI conceptual overview, chart selection for different data types, and executive reporting with visual analytics." },
-            { "name": "Statistical Modeling", "desc": "Regression analysis, hypothesis testing, ANOVA, time series fundamentals, probability distributions, and statistical significance interpretation for business decisions." },
-            { "name": "Python for Analytics", "desc": "Python basics for data manipulation, pandas DataFrames, NumPy array operations, data cleaning workflows, and introductory scikit-learn for predictive model building." },
-            { "name": "Predictive Analytics", "desc": "Classification models (logistic regression, decision trees), regression models for demand forecasting, model validation techniques, and business applications in churn prediction and credit scoring." }
+            {
+              "name": "Data Visualization",
+              "desc": "Dashboard design principles, data storytelling frameworks, Tableau/Power BI conceptual overview, chart selection for different data types, and executive reporting with visual analytics."
+            },
+            {
+              "name": "Statistical Modeling",
+              "desc": "Regression analysis, hypothesis testing, ANOVA, time series fundamentals, probability distributions, and statistical significance interpretation for business decisions."
+            },
+            {
+              "name": "Python for Analytics",
+              "desc": "Python basics for data manipulation, pandas DataFrames, NumPy array operations, data cleaning workflows, and introductory scikit-learn for predictive model building."
+            },
+            {
+              "name": "Predictive Analytics",
+              "desc": "Classification models (logistic regression, decision trees), regression models for demand forecasting, model validation techniques, and business applications in churn prediction and credit scoring."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Optimization Techniques", "desc": "Linear programming, integer programming, simulation models for operations, inventory optimisation, and transportation problem formulation for supply chain decisions." },
-            { "name": "Big Data Analytics", "desc": "Hadoop ecosystem overview, Spark fundamentals, data pipeline architecture concepts, NoSQL database basics, and big data use cases in banking, retail, and telecom." },
-            { "name": "Project Work", "desc": "Industry-linked analytics project applying Sem 3-4 learning to a real business dataset. Typically a predictive model, dashboard design, or optimisation study." }
+            {
+              "name": "Optimization Techniques",
+              "desc": "Linear programming, integer programming, simulation models for operations, inventory optimisation, and transportation problem formulation for supply chain decisions."
+            },
+            {
+              "name": "Big Data Analytics",
+              "desc": "Hadoop ecosystem overview, Spark fundamentals, data pipeline architecture concepts, NoSQL database basics, and big data use cases in banking, retail, and telecom."
+            },
+            {
+              "name": "Project Work",
+              "desc": "Industry-linked analytics project applying Sem 3-4 learning to a real business dataset. Typically a predictive model, dashboard design, or optimisation study."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "DPU-COL MBA Business Analytics graduates target data-driven management roles:\n\n**Industries:** Banking and financial services, e-commerce and retail, IT services and consulting, telecom, healthcare, FMCG, and insurance\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Associate, MIS Executive, Reporting Analyst, BI Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Business Analyst, Analytics Manager, BI Manager, Data Strategy Manager, Marketing Analytics Lead, Credit Risk Analytics Manager\n\n**Senior roles (7+ years):** Head of Analytics, VP Data Strategy, Chief Analytics Officer, Director of Business Intelligence, Head of Decision Sciences\n\n**Employers:** IT and consulting (TCS, Infosys, Wipro, Capgemini, Accenture, Deloitte), banking (HDFC Bank, ICICI Bank, Axis Bank analytics teams), e-commerce (Flipkart, Amazon India analytics), and FMCG (HUL, ITC, Nestle India for demand analytics).\n\n**Note:** DPU-COL provides placement assistance for all MBA programmes."
+      "body": "DPU-COL MBA Business Analytics graduates target data-driven management roles:\n\n**Industries:** Banking and financial services, e-commerce and retail, IT services and consulting, telecom, healthcare, FMCG, and insurance\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Associate, MIS Executive, Reporting Analyst, BI Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Business Analyst, Analytics Manager, BI Manager, Data Strategy Manager, Marketing Analytics Lead, Credit Risk Analytics Manager\n\n**Senior roles (7+ years):** Head of Analytics, VP Data Strategy, Chief Analytics Officer, Director of Business Intelligence, Head of Decision Sciences\n\n**Employers:** IT and consulting (TCS, Infosys, Wipro, Capgemini, Accenture, Deloitte), banking (HDFC Bank, ICICI Bank, Axis Bank analytics teams), e-commerce (Flipkart, Amazon India analytics), and FMCG (HUL, ITC, Nestle India for demand analytics).\n\n**Note:** DPU-COL provides placement assistance for all MBA programmes.\n\n**Where to verify placement claims:** ask Dr. D.Y. Patil Vidyapeeth, Pune – Centre for Online Learning (DPU-COL) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Business Analytics specialisation builds both analytical and management skills:\n\n**Technical skills:**\n- Statistical Modelling: regression model specification, hypothesis test interpretation, time series decomposition, and ANOVA for A/B test analysis\n- Python Analytics: pandas data wrangling, NumPy calculations, matplotlib/seaborn visualisation, and scikit-learn model training basics\n- Predictive Analytics: classification model evaluation (confusion matrix, ROC), regression model accuracy assessment, and feature importance interpretation\n- Big Data: Hadoop/Spark architecture understanding, data lake vs data warehouse trade-offs, and ETL pipeline design at conceptual level\n\n**Applied skills:**\n- Data Visualization: executive dashboard design, KPI selection for different business functions, and data storytelling for board presentations\n- Optimization: LP model formulation for production planning, inventory optimisation model setup, and simulation-based decision analysis\n\n**Soft skills:** Translating analytics outputs into business recommendations, presenting statistical findings to non-technical stakeholders, managing analytics team sprint cycles, and negotiating data access with IT and compliance teams."
@@ -50,38 +71,6 @@
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Business Analytics as the specialisation, issued by Dr. D.Y. Patil Vidyapeeth, Pune (DPU-COL) under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation and NIRF #41 University rank. It is valid for government and private sector recruitment. edX certifications supplement the MBA credential. DigiLocker issuance is standard."
     },
-    "reviews": {
-      "intro": "Three verified reviews from DPU-COL Online MBA Business Analytics alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Rahul S.",
-          "city": "Pune",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Python for Analytics module gave me enough coding ability to build basic predictive models and communicate effectively with my data science team",
-          "disliked": "Big Data module was conceptual — no hands-on Spark or Hadoop lab sessions. Fine for understanding the architecture but not for implementation skills",
-          "body": "I work as a senior business analyst at an IT services company. The predictive analytics and statistical modelling subjects improved my analytical rigour for client consulting projects. NAAC A++ and NIRF #41 were accepted by my employer for education reimbursement. The edX certifications added practical value alongside the theory."
-        },
-        {
-          "name": "Meera K.",
-          "city": "Mumbai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Data Visualization subject taught me dashboard design principles I use daily for executive reporting at my bank",
-          "disliked": "More SQL content would strengthen the programme — SQL is the daily language of analytics teams and it was under-covered",
-          "body": "I manage the analytics reporting function at a private bank. The data visualisation, statistical modelling, and optimisation subjects were directly applicable. DPU's NAAC A++ cleared the credential filter for an internal promotion application. Zero-cost EMI from ₹2,500/month made it accessible."
-        },
-        {
-          "name": "Anand V.",
-          "city": "Hyderabad",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Optimization Techniques module helped me structure the inventory optimisation project I was leading for an FMCG client",
-          "disliked": "The programme assumes limited Python background — candidates with existing coding skills may find the Python module too basic",
-          "body": "I transitioned from a marketing manager to a marketing analytics manager role using this MBA. The combination of management core with analytics depth gave me the positioning that pure analytics certifications could not. NIRF #41 gave the credential credibility at client-facing consulting engagements."
-        }
-      ]
-    },
     "faqs": [
       {
         "question": "Is this MBA for data scientists or business managers?",
@@ -93,7 +82,7 @@
       },
       {
         "question": "Does the programme teach Python coding?",
-        "answer": "Yes. The Python for Analytics module covers pandas, NumPy, basic scikit-learn, and data visualization with Python libraries. The depth is introductory-to-intermediate — sufficient for building basic predictive models and data analysis scripts, but not for production-grade ML engineering."
+        "answer": "Yes. The Python for Analytics module covers pandas, NumPy, basic scikit-learn, and data visualization with Python libraries. The depth is introductory-to-intermediate, sufficient for building basic predictive models and data analysis scripts, but not for production-grade ML engineering."
       },
       {
         "question": "What is the total fee?",
@@ -107,14 +96,14 @@
     "chooseAlternatives": {
       "chooseIf": [
         "You want a NAAC A++ NIRF #41 analytics MBA with edX certifications bundled.",
-        "Your role requires data-driven management skills — dashboard design, predictive analytics interpretation, and optimisation.",
+        "Your role requires data-driven management skills, dashboard design, predictive analytics interpretation, and optimisation.",
         "₹1,89,400 with zero-cost EMI fits your budget while meeting NAAC A++ credential standards.",
         "You work in banking, retail, or IT consulting where analytics management roles are growing."
       ],
       "consider": [
-        "Your employer filters by NIRF top 20 — CU (NIRF #19) with PwC co-teaching at ₹1,65,000 is the stronger option.",
-        "You need deep data engineering or ML engineering skills — a dedicated data science programme is more appropriate.",
-        "Grant Thornton co-branding matters for your consulting context — Amrita's business analytics MBA at ₹2,24,000 includes this."
+        "Your employer filters by NIRF top 20, CU (NIRF #19) with PwC co-teaching at ₹1,65,000 is the stronger option.",
+        "You need deep data engineering or ML engineering skills, a dedicated data science programme is more appropriate.",
+        "Grant Thornton co-branding matters for your consulting context, Amrita's business analytics MBA at ₹2,24,000 includes this."
       ]
     }
   },
@@ -123,6 +112,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 21,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

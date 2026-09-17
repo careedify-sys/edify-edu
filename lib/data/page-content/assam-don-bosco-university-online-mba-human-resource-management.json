@@ -19,33 +19,81 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Applied Psychology in Personnel Administration", "desc": "Psychological principles in HR, employee motivation theories, workplace behaviour analysis, and psychometric assessment in hiring." },
-            { "name": "Compensation Management", "desc": "Salary structuring, pay-for-performance systems, benefits administration, executive compensation, and compensation benchmarking." },
-            { "name": "Training and Development", "desc": "Training needs analysis, programme design and delivery, e-learning methods, ROI of training, and employee development plans." },
-            { "name": "Team Dynamics and Leadership", "desc": "Group behaviour, team formation stages, conflict resolution, leadership styles, situational leadership, and high-performance team building." },
-            { "name": "Transformational Leadership", "desc": "Transformational vs transactional leadership, vision-driven management, change leadership, inspirational motivation, and intellectual stimulation." },
-            { "name": "Minor Project", "desc": "Guided research project on an HR-related topic. Problem identification, methodology design, and initial findings." },
-            { "name": "Startup Management", "desc": "Startup ecosystem, business model canvas, funding stages (seed, angel, VC), lean startup methodology, and go-to-market strategy." },
-            { "name": "Operations Management", "desc": "Production planning, quality management, supply chain basics, inventory control, and process optimization." }
+            {
+              "name": "Applied Psychology in Personnel Administration",
+              "desc": "Psychological principles in HR, employee motivation theories, workplace behaviour analysis, and psychometric assessment in hiring."
+            },
+            {
+              "name": "Compensation Management",
+              "desc": "Salary structuring, pay-for-performance systems, benefits administration, executive compensation, and compensation benchmarking."
+            },
+            {
+              "name": "Training and Development",
+              "desc": "Training needs analysis, programme design and delivery, e-learning methods, ROI of training, and employee development plans."
+            },
+            {
+              "name": "Team Dynamics and Leadership",
+              "desc": "Group behaviour, team formation stages, conflict resolution, leadership styles, situational leadership, and high-performance team building."
+            },
+            {
+              "name": "Transformational Leadership",
+              "desc": "Transformational vs transactional leadership, vision-driven management, change leadership, inspirational motivation, and intellectual stimulation."
+            },
+            {
+              "name": "Minor Project",
+              "desc": "Guided research project on an HR-related topic. Problem identification, methodology design, and initial findings."
+            },
+            {
+              "name": "Startup Management",
+              "desc": "Startup ecosystem, business model canvas, funding stages (seed, angel, VC), lean startup methodology, and go-to-market strategy."
+            },
+            {
+              "name": "Operations Management",
+              "desc": "Production planning, quality management, supply chain basics, inventory control, and process optimization."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Organizational Staffing and HR Analytics", "desc": "Recruitment strategy, workforce planning, talent acquisition metrics, HR data analysis, and predictive analytics for attrition and engagement." },
-            { "name": "Performance Management", "desc": "Performance appraisal systems, KPI design, 360-degree feedback, balanced scorecard approach, and performance improvement plans." },
-            { "name": "Organizational Change and Development", "desc": "Change management frameworks, OD interventions, organizational culture transformation, resistance management, and planned change processes." },
-            { "name": "Strategic Human Resource Management", "desc": "HR as a strategic partner, workforce strategy alignment with business goals, HR scorecard, and evidence-based HR decision making." },
-            { "name": "Cross Cultural Management", "desc": "Cultural dimensions (Hofstede, Trompenaars), managing diverse teams, cross-cultural communication, expatriate management, and global HR practices." },
-            { "name": "Business Policy and Strategic Management", "desc": "Strategic analysis frameworks, competitive positioning, corporate-level strategy, and strategic implementation and control." },
-            { "name": "Research Project/Dissertation", "desc": "Full research dissertation on an HR topic. Data collection, analysis, findings, and structured thesis presentation." },
-            { "name": "Computer Applications in Business", "desc": "Business software tools, data analysis using spreadsheets, MIS reporting, and technology-driven decision support systems." }
+            {
+              "name": "Organizational Staffing and HR Analytics",
+              "desc": "Recruitment strategy, workforce planning, talent acquisition metrics, HR data analysis, and predictive analytics for attrition and engagement."
+            },
+            {
+              "name": "Performance Management",
+              "desc": "Performance appraisal systems, KPI design, 360-degree feedback, balanced scorecard approach, and performance improvement plans."
+            },
+            {
+              "name": "Organizational Change and Development",
+              "desc": "Change management frameworks, OD interventions, organizational culture transformation, resistance management, and planned change processes."
+            },
+            {
+              "name": "Strategic Human Resource Management",
+              "desc": "HR as a strategic partner, workforce strategy alignment with business goals, HR scorecard, and evidence-based HR decision making."
+            },
+            {
+              "name": "Cross Cultural Management",
+              "desc": "Cultural dimensions (Hofstede, Trompenaars), managing diverse teams, cross-cultural communication, expatriate management, and global HR practices."
+            },
+            {
+              "name": "Business Policy and Strategic Management",
+              "desc": "Strategic analysis frameworks, competitive positioning, corporate-level strategy, and strategic implementation and control."
+            },
+            {
+              "name": "Research Project/Dissertation",
+              "desc": "Full research dissertation on an HR topic. Data collection, analysis, findings, and structured thesis presentation."
+            },
+            {
+              "name": "Computer Applications in Business",
+              "desc": "Business software tools, data analysis using spreadsheets, MIS reporting, and technology-driven decision support systems."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "ADB MBA HRM graduates target roles across talent management, organizational development, and HR operations:\n\n**Industries:** IT/ITES, manufacturing, BFSI, healthcare, hospitality, government and PSU HR departments, NGOs, and development sector organizations\n\n**Entry-level roles:** HR Executive, Recruitment Coordinator, Training Coordinator, Payroll Officer, HR Analyst, Employee Engagement Associate\n\n**Mid-level roles (3-5 years):** HR Manager, Talent Acquisition Manager, L&D Manager, Compensation and Benefits Manager, HR Business Partner, OD Specialist\n\n**Senior roles (7+ years):** CHRO, VP Human Resources, Director of Talent, Head of L&D, Director of Organizational Development, Head of HR Strategy\n\n**Employers:** IT companies (TCS, Infosys, Wipro), manufacturing firms, banking HR teams, NE India development organizations, tea industry corporates, and government/PSU HR departments.\n\n**Note:** NE India's growing service sector and development organizations create steady HR demand. Cross Cultural Management skills are directly relevant to the region's diverse ethnic and linguistic landscape."
+      "body": "ADB MBA HRM graduates target roles across talent management, organizational development, and HR operations:\n\n**Industries:** IT/ITES, manufacturing, BFSI, healthcare, hospitality, government and PSU HR departments, NGOs, and development sector organizations\n\n**Entry-level roles:** HR Executive, Recruitment Coordinator, Training Coordinator, Payroll Officer, HR Analyst, Employee Engagement Associate\n\n**Mid-level roles (3-5 years):** HR Manager, Talent Acquisition Manager, L&D Manager, Compensation and Benefits Manager, HR Business Partner, OD Specialist\n\n**Senior roles (7+ years):** CHRO, VP Human Resources, Director of Talent, Head of L&D, Director of Organizational Development, Head of HR Strategy\n\n**Employers:** IT companies (TCS, Infosys, Wipro), manufacturing firms, banking HR teams, NE India development organizations, tea industry corporates, and government/PSU HR departments.\n\n**Note:** NE India's growing service sector and development organizations create steady HR demand. Cross Cultural Management skills are directly relevant to the region's diverse ethnic and linguistic landscape.\n\n**Where to verify placement claims:** ask Assam Don Bosco University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The HRM specialisation builds skills across people management, analytics, and organizational development:\n\n**Technical skills:**\n- HR Analytics: workforce data analysis, attrition prediction models, recruitment funnel metrics, and HR dashboard creation\n- Compensation Design: salary benchmarking, pay band structuring, CTC computation, benefits package design, and executive compensation frameworks\n- Performance Systems: KPI framework design, 360-degree feedback implementation, PIP documentation, and balanced scorecard metrics\n- Training and Development: TNA methodology, training programme ROI calculation, e-learning platform evaluation, and competency mapping\n\n**Applied skills:**\n- Organizational Development: change management project execution, culture assessment surveys, OD intervention design, and restructuring support\n- Cross Cultural Management: cultural assessment tools, expatriate onboarding programme design, and diverse team facilitation\n\n**Soft skills:** Conducting difficult conversations (PIPs, exits), facilitating leadership workshops, presenting HR metrics to C-suite, and mediating workplace conflicts across cultural contexts."
@@ -58,38 +106,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Human Resource Management as the specialisation, issued by Assam Don Bosco University under UGC-DEB online mode standards.\n\nThe degree carries NAAC A accreditation and UGC-DEB approval. The university is part of the Don Bosco/Salesian educational network with global recognition across 130+ countries. Valid for government recruitment, PSU HR roles, corporate HR positions, and professional HR certifications (SHRM, HRCI) eligibility support."
-    },
-    "reviews": {
-      "intro": "Three reviews from ADB Online MBA HRM students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Debajit",
-          "city": "Guwahati",
-          "year": 2024,
-          "rating": 5,
-          "liked": "The Don Bosco educational heritage adds credibility that other NE India universities cannot match. Ten dedicated HR subjects across two semesters is strong",
-          "disliked": "Fee is not publicly listed on the website. Required a call to admissions for the exact amount",
-          "body": "I selected ADB specifically for the Don Bosco name. The Salesian network is recognized globally, and that matters when your resume reaches HR teams outside NE India. Applied Psychology in Personnel Administration and Cross Cultural Management were directly useful in my role managing teams across Assam and Meghalaya. Startup Management as a core subject was a bonus."
-        },
-        {
-          "name": "Merina",
-          "city": "Imphal",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Cross Cultural Management as a dedicated subject is directly relevant for anyone working in NE India's multi-ethnic work environments",
-          "disliked": "Some recorded sessions could be more interactive. Faculty response time varies",
-          "body": "Working in Manipur, I needed an MBA that understood the NE India context. ADB delivered on this. Cross Cultural Management and Team Dynamics subjects addressed real challenges I face daily. HR Analytics in Sem 4 added the data skills my role increasingly demands. The dissertation required structured research, which was time-intensive but valuable."
-        },
-        {
-          "name": "Kamal",
-          "city": "Jorhat",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Compensation Management and Performance Management covered practical frameworks I could apply immediately at work",
-          "disliked": "Brand recognition outside NE India is limited. The LMS interface needs modernization",
-          "body": "The HR curriculum is thorough. Ten dedicated subjects plus a dissertation is more than most online MBA HRM programmes offer. The content is functional. The trade-off is brand recognition outside the Northeast. In NE India, Don Bosco is a respected name. Nationally, you may need to explain the university's background to hiring managers."
-        }
-      ]
     },
     "faqs": [
       {
@@ -132,6 +148,7 @@
     "wordCount": 1980,
     "generatedAt": "2026-04-23",
     "batchNumber": 33,
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

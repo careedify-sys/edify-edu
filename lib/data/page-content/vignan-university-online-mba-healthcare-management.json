@@ -69,7 +69,7 @@
       "note": "Sem 1-2 cover shared core subjects across all Vignan Online MBA specialisations. See the main Vignan Online MBA page for the core subject list. Syllabus applies to the 2025-26 admission cycle. Reconfirm current syllabus with our counsellor before enrolment."
     },
     "whoHires": {
-      "body": "Healthcare Management MBA graduates target these industries and roles:\n\n**Industries:** Hospitals and multi-specialty chains, Pharma companies, Health insurance (TPAs), Medical devices, Public health organisations, Diagnostic chains, Medical tourism agencies\n\n**Entry-level roles:** Hospital Operations Executive, Healthcare Analyst, Medical Insurance Coordinator, Health IT Associate, Patient Relations Executive\n\n**Mid-level roles (3-5 years):** Hospital Administrator, Healthcare Operations Manager, Insurance Manager, Medical Records Manager, Healthcare Project Manager\n\n**Senior roles (7+ years):** CEO (Hospital), Director of Operations (Healthcare Chain), VP Healthcare Services, Chief Medical Administrator, Head of Medical Tourism\n\n**Typical hiring organisations:** Apollo Hospitals, Fortis Healthcare, Max Healthcare, Narayana Health, Manipal Hospitals, AIIMS (admin cadre), Star Health Insurance, ICICI Lombard Health, Medanta, Dr Reddy's, Cipla, SRL Diagnostics"
+      "body": "Healthcare Management MBA graduates target these industries and roles:\n\n**Industries:** Hospitals and multi-specialty chains, Pharma companies, Health insurance (TPAs), Medical devices, Public health organisations, Diagnostic chains, Medical tourism agencies\n\n**Entry-level roles:** Hospital Operations Executive, Healthcare Analyst, Medical Insurance Coordinator, Health IT Associate, Patient Relations Executive\n\n**Mid-level roles (3-5 years):** Hospital Administrator, Healthcare Operations Manager, Insurance Manager, Medical Records Manager, Healthcare Project Manager\n\n**Senior roles (7+ years):** CEO (Hospital), Director of Operations (Healthcare Chain), VP Healthcare Services, Chief Medical Administrator, Head of Medical Tourism\n\n**Typical hiring organisations:** Apollo Hospitals, Fortis Healthcare, Max Healthcare, Narayana Health, Manipal Hospitals, AIIMS (admin cadre), Star Health Insurance, ICICI Lombard Health, Medanta, Dr Reddy's, Cipla, SRL Diagnostics\n\n**Where to verify placement claims:** ask Vignan's Foundation for Science, Technology & Research Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Healthcare Management specialisation builds skills tested by hospitals, health insurance, and pharma organisations:\n\n**Technical skills:**\n- Healthcare SCM: medical supply procurement, hospital inventory optimisation, vendor management, and cold chain logistics for pharmaceuticals\n- Medical Record Management: EHR system administration, health data coding, patient record digitisation, and medical data privacy compliance\n- Healthcare IT: hospital information system selection, telemedicine platform management, and health IT infrastructure planning\n- Healthcare Insurance: TPA operations, claim adjudication, Ayushman Bharat compliance, and corporate health plan design\n\n**Applied skills:**\n- Healthcare Planning: hospital capacity modelling, outpatient department flow optimisation, and service delivery network design\n- Healthcare Laws: Clinical Establishments Act compliance, medical negligence risk management, and patient consent documentation\n\n**Soft skills:** Patient relations management, cross-departmental coordination in hospitals, regulatory audit preparation, and healthcare service quality communication."
@@ -82,38 +82,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Vignan's Foundation for Science, Technology and Research, Guntur. It reads 'Master of Business Administration' with the Healthcare Management specialisation noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The degree is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three reviews from Vignan Online MBA Healthcare Management students. Ratings from post-completion feedback.",
-      "items": [
-        {
-          "name": "Ramya",
-          "city": "Guntur",
-          "year": 2025,
-          "rating": 4.3,
-          "liked": "Healthcare Insurance and Healthcare Laws subjects were immediately applicable to my hospital admin role. At Rs 90,000, this is the cheapest healthcare MBA I could find with NAAC A+.",
-          "disliked": "Limited case studies from Apollo or Fortis-style large hospital chains. More real-world case integration would help.",
-          "body": "I work in hospital administration at a multi-specialty hospital in Andhra Pradesh. The Healthcare SCM subject improved how I manage medical supply procurement. Healthcare Laws gave me compliance frameworks I now apply to accreditation audits. The Master Thesis project on patient flow optimisation became a working document for my hospital. At Rs 90,000, the return was immediate."
-        },
-        {
-          "name": "Naveen",
-          "city": "Bangalore",
-          "year": 2024,
-          "rating": 3.4,
-          "liked": "Medical Tourism subject was unique and relevant for Bangalore's growing medical tourism sector.",
-          "disliked": "Vignan brand is not recognised by healthcare chains in Bangalore or Chennai. Hospital management roles at Apollo, Fortis, or Manipal Hospitals prefer MBAs from Symbiosis, Manipal, or Tata Institute. Vignan does not register.",
-          "body": "The healthcare syllabus is solid for the price point. Seven dedicated healthcare subjects across Sem 3-4 is more than most budget programmes offer. But healthcare management hiring in metros prioritises brand. If you already work in a hospital and need the credential for internal advancement, Vignan is fine. For external hiring at top hospital chains, the brand limitation is real. Budget an additional certification like NABH or healthcare quality to compensate."
-        },
-        {
-          "name": "Swathi",
-          "city": "Visakhapatnam",
-          "year": 2025,
-          "rating": 4.0,
-          "liked": "Healthcare IT subject covered telemedicine and HIS, which are directly relevant to my role in a diagnostic chain. Zero-cost EMI meant zero financial stress.",
-          "disliked": "Career support for healthcare management roles is non-existent from the university side.",
-          "body": "I manage IT systems at a diagnostic lab chain. The Healthcare IT and Medical Record Management subjects gave me frameworks for EHR implementation and health data governance. Planning of Healthcare Services helped me think about capacity planning across our branches. Good programme for healthcare professionals in Andhra Pradesh and Telangana who want an MBA without paying Rs 1.5-2 lakh."
-        }
-      ]
     },
     "faqs": [
       {
@@ -155,6 +123,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 28,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

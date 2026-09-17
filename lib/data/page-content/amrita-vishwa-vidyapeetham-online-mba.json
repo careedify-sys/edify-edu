@@ -60,56 +60,6 @@
     "honestVerdict": {
       "body": "This verdict is based on publicly available data from UGC-DEB, NAAC, and NIRF portals, cross-referenced with student feedback from verified sources.\n\nChoose this if:\n- NAAC A++ and NIRF top-10 at under Rs 2 lakh is your target combination\n- You want ESG, Fintech, or ACCA-linked specialisations not common elsewhere\n- WES recognition matters for international credential evaluation\n- You want AI or machine learning woven into the core curriculum from Semester 1\n\nLook elsewhere if:\n- You need more than 8 specialisation options\n- North India placement networks matter more than South India brand strength\n- Your budget is above Rs 2.5 lakh and you want NIRF top-3\n- You need a programme with on-campus immersion options\n\nThe decision between two similarly accredited programmes often comes down to three factors: the specialisation you need, the placement network that matters for your target industry, and the fee your budget can absorb without strain. Use the /compare tool to map your shortlist on these three axes. If you are still undecided, our counsellor call is free. Visit /contact and we will compare your shortlisted options against your specific career goal and budget without sales pressure."
     },
-    "reviews": {
-      "items": [
-        {
-          "name": "Aishwarya T.",
-          "city": "Coimbatore",
-          "year": 2024,
-          "rating": 5,
-          "liked": "The ESG specialisation is genuinely unique at this fee point. My employer in sustainability consulting valued it immediately. WES recognition made international credential evaluation straightforward. Amrita delivered intellectual depth, not just a management checkbox on a resume.",
-          "disliked": "",
-          "body": "The ESG specialisation is genuinely unique at this fee point. My employer in sustainability consulting valued it immediately. WES recognition made international credential evaluation straightforward. Amrita delivered intellectual depth, not just a management checkbox on a resume."
-        },
-        {
-          "name": "Rohit V.",
-          "city": "Pune",
-          "year": 2023,
-          "rating": 4,
-          "liked": "NIRF #8 (University 2025) at under Rs 2 lakh is the clearest value statement for this programme. Machine learning in Semester 1 challenged non-technical students but was useful. Faculty for Business Finance was outstanding. The mobile app had submission glitches twice in Semester 2 which caused frustration.",
-          "disliked": "",
-          "body": "NIRF #8 (University 2025) at under Rs 2 lakh is the clearest value statement for this programme. Machine learning in Semester 1 challenged non-technical students but was useful. Faculty for Business Finance was outstanding. The mobile app had submission glitches twice in Semester 2 which caused frustration."
-        },
-        {
-          "name": "Nandita K.",
-          "city": "Hyderabad",
-          "year": 2024,
-          "rating": 4,
-          "liked": "I chose Fintech and the curriculum covered real topics: financial modelling, fintech foundations, treasury management. Not generic content. Peer interaction could have been stronger; discussion boards were active only in the first month and then quietened significantly.",
-          "disliked": "",
-          "body": "I chose Fintech and the curriculum covered real topics: financial modelling, fintech foundations, treasury management. Not generic content. Peer interaction could have been stronger; discussion boards were active only in the first month and then quietened significantly."
-        },
-        {
-          "name": "Ajay S.",
-          "city": "Bengaluru",
-          "year": 2023,
-          "rating": 3,
-          "liked": "The elective structure is the programme's strength but assignment deadlines in Semester 3 were clustered awkwardly across two weeks. Semester 4 felt lighter by comparison. Career services provided resume review but did not produce structured placement opportunities for online students.",
-          "disliked": "",
-          "body": "The elective structure is the programme's strength but assignment deadlines in Semester 3 were clustered awkwardly across two weeks. Semester 4 felt lighter by comparison. Career services provided resume review but did not produce structured placement opportunities for online students."
-        },
-        {
-          "name": "Lakshmi R.",
-          "city": "Chennai",
-          "year": 2023,
-          "rating": 2,
-          "liked": "The ACCA-linked International Finance specialisation sounded promising but the content depth did not match ACCA's own standards. The specialisation page overstated the ACCA linkage. Clarify this with the admissions team specifically before choosing this track. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation.",
-          "disliked": "",
-          "body": "The ACCA-linked International Finance specialisation sounded promising but the content depth did not match ACCA's own standards. The specialisation page overstated the ACCA linkage. Clarify this with the admissions team specifically before choosing this track. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "intro": "",
       "flags": [
@@ -135,6 +85,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:49.005Z",
     "sheetName": "amrita-online_MBA",
-    "format": "named"
+    "format": "named",
+    "claimSweep": "2026-09-17"
   }
 }

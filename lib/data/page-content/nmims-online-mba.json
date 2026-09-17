@@ -82,58 +82,6 @@
       "heading": "Honest Verdict: Who Should Enroll, Who Should Look Elsewhere",
       "body": "Choose NMIMS Online MBA if: you are targeting BFSI, consulting, or FMCG roles in Mumbai and Western India; your preferred specialisation is among Finance, Marketing, HRM, or Business Administration; faculty quality and academic rigour matter more to you than specialisation variety; or the NMIMS brand name is specifically recognised by your target employer's HR team.\n\nLook elsewhere if: you need a specialisation outside the 5 available tracks; you require NIRF Management rank in the top 40; placement support is a primary decision factor; or you are targeting roles in energy, logistics, or agri sectors where UPES or DPU-COL offer more relevant specialisations.\n\nIf you are still undecided, our counsellor call is free. No commission, no pressure."
     },
-    "reviews": {
-      "heading": "What Students Are Saying",
-      "intro": "The following reviews are from students who enrolled in the NMIMS Online MBA. Ratings range from 2 to 5 stars, reflecting a real mix of experiences. These reviews are not curated to show only positive outcomes.",
-      "items": [
-        {
-          "rating": 5,
-          "name": "Kavya R.",
-          "city": "Mumbai",
-          "year": 2024,
-          "liked": "NMIMS brand name opened doors at BFSI firms that would not have called me before.",
-          "disliked": "Only 5 specialisations. I wanted Supply Chain but had to settle for Operations & Data Sciences.",
-          "body": "NMIMS brand name opened doors at BFSI firms that would not have called me before."
-        },
-        {
-          "rating": 4,
-          "name": "Deepak N.",
-          "city": "Pune",
-          "year": 2024,
-          "liked": "Financial Management track has genuinely strong content. Capital Markets module was excellent.",
-          "disliked": "The fee at Rs.1.96L is higher than some peers but the brand justifies it for finance roles.",
-          "body": "Financial Management track has genuinely strong content. Capital Markets module was excellent."
-        },
-        {
-          "rating": 4,
-          "name": "Anisha P.",
-          "city": "Bangalore",
-          "year": 2023,
-          "liked": "Faculty quality is noticeably higher than what I experienced in other online programmes I tried.",
-          "disliked": "Live classes are Mumbai time-zone biased. Students in IST+5:30 south India still manage but just.",
-          "body": "Faculty quality is noticeably higher than what I experienced in other online programmes I tried."
-        },
-        {
-          "rating": 3,
-          "name": "Sanjay G.",
-          "city": "Hyderabad",
-          "year": 2023,
-          "liked": "The NMIMS certificate looks clean and is recognised by most corporates in my sector.",
-          "disliked": "Exam schedule notifications come very late, sometimes 10 days before the exam. Stressful.",
-          "body": "The NMIMS certificate looks clean and is recognised by most corporates in my sector."
-        },
-        {
-          "rating": 2,
-          "name": "Ritu M.",
-          "city": "Delhi",
-          "year": 2024,
-          "liked": "Course content is well-structured and assignments are genuinely challenging.",
-          "disliked": "The placement cell for online students is nearly inactive. I did not receive a single referral.",
-          "body": "Course content is well-structured and assignments are genuinely challenging."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "heading": "Red Flags to Know Before Enrolling",
       "intro": "The following red flags are based on monitoring of student forums including Reddit r/indianeducation, Trustpilot reviews, and Consumer Complaints India.",
@@ -202,6 +150,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:48.993Z",
     "sheetName": "nmims-online_MBA",
-    "format": "named"
+    "format": "named",
+    "claimSweep": "2026-09-17"
   }
 }

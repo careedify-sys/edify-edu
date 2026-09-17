@@ -19,25 +19,49 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Project Management", "desc": "Operations project planning, warehouse launch management, and supply chain transformation delivery." },
-            { "name": "Business Strategy", "desc": "Operations-led competitive strategy, supply chain positioning, and make-vs-buy strategic decisions." },
-            { "name": "Operation and Logistics Management", "desc": "Freight management, multimodal transport, warehouse operations, inventory control, and 3PL coordination." },
-            { "name": "Supply Chain Management", "desc": "End-to-end supply chain design, demand planning, S&OP process, supplier management, and SC risk mitigation." }
+            {
+              "name": "Project Management",
+              "desc": "Operations project planning, warehouse launch management, and supply chain transformation delivery."
+            },
+            {
+              "name": "Business Strategy",
+              "desc": "Operations-led competitive strategy, supply chain positioning, and make-vs-buy strategic decisions."
+            },
+            {
+              "name": "Operation and Logistics Management",
+              "desc": "Freight management, multimodal transport, warehouse operations, inventory control, and 3PL coordination."
+            },
+            {
+              "name": "Supply Chain Management",
+              "desc": "End-to-end supply chain design, demand planning, S&OP process, supplier management, and SC risk mitigation."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Banking and Insurance Management", "desc": "Trade finance for supply chain, cargo insurance, and BFSI compliance relevant to logistics companies." },
-            { "name": "Project Work", "desc": "Applied operations project: supply chain optimisation, logistics cost reduction, or warehouse productivity study." },
-            { "name": "Materials and Store Management", "desc": "Inventory valuation methods, ABC analysis, store layout, spare parts management, and materials requirement planning." },
-            { "name": "Quality Management and Global Supply Chain Management", "desc": "ISO 9001, Six Sigma basics, global SC integration, international trade compliance, and supplier quality audits." }
+            {
+              "name": "Banking and Insurance Management",
+              "desc": "Trade finance for supply chain, cargo insurance, and BFSI compliance relevant to logistics companies."
+            },
+            {
+              "name": "Project Work",
+              "desc": "Applied operations project: supply chain optimisation, logistics cost reduction, or warehouse productivity study."
+            },
+            {
+              "name": "Materials and Store Management",
+              "desc": "Inventory valuation methods, ABC analysis, store layout, spare parts management, and materials requirement planning."
+            },
+            {
+              "name": "Quality Management and Global Supply Chain Management",
+              "desc": "ISO 9001, Six Sigma basics, global SC integration, international trade compliance, and supplier quality audits."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Operations and Supply Chain MBA graduates from SMU are hired across India's logistics and manufacturing sectors:\n\n**Industries:** E-commerce logistics, FMCG supply chains, 3PL companies, manufacturing, pharmaceutical logistics, retail distribution, and government logistics\n\n**Entry-level roles:** Supply Chain Analyst, Logistics Coordinator, Warehouse Executive, Operations Executive, Procurement Analyst\n\n**Mid-level roles (3-5 years experience):** Supply Chain Manager, Logistics Manager, Operations Manager, Warehouse Manager, Procurement Manager\n\n**Senior roles (7+ years):** VP Supply Chain, Head of Logistics, Chief Operations Officer, Head of Procurement, VP Operations\n\n**Top hiring organisations:** Amazon Logistics, Flipkart Supply Chain, Delhivery, Blue Dart, DTDC, Mahindra Logistics, HUL Supply Chain, ITC, Blinkit, Swiggy Instamart, Maersk India, DHL India, and manufacturing companies across Northeast India's growing industrial base"
+      "body": "This Operations and Supply Chain MBA syllabus maps to the following India's logistics and manufacturing sectors:\n\n**Industries:** E-commerce logistics, FMCG supply chains, 3PL companies, manufacturing, pharmaceutical logistics, retail distribution, and government logistics\n\n**Entry-level roles:** Supply Chain Analyst, Logistics Coordinator, Warehouse Executive, Operations Executive, Procurement Analyst\n\n**Mid-level roles (3-5 years experience):** Supply Chain Manager, Logistics Manager, Operations Manager, Warehouse Manager, Procurement Manager\n\n**Senior roles (7+ years):** VP Supply Chain, Head of Logistics, Chief Operations Officer, Head of Procurement, VP Operations\n\n**Where to verify placement claims:** ask Sikkim Manipal University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Operations and Supply Chain specialisation builds skills that logistics employers test at manager level:\n\n**Technical skills:**\n- Supply Chain Planning: demand forecasting basics, safety stock calculation, replenishment cycle design, and S&OP facilitation\n- Logistics Operations: route optimisation basics, warehouse layout design, freight cost benchmarking, and 3PL SLA management\n- Materials Management: ABC classification, EOQ model application, MRP calculation, and inventory turnover improvement\n- Quality Management: ISO 9001 documentation requirements, process capability basics, CAPA procedures, and supplier audit checklist design\n\n**Applied skills:**\n- Global Supply Chain: Incoterms interpretation, customs clearance documentation, trade finance instruments, and export-import compliance\n- Procurement: vendor evaluation scoring, total cost of ownership analysis, purchase order contract terms, and supply risk register management\n\n**Soft skills:** Presenting supply chain KPIs to operations and finance leadership, managing logistics vendor renegotiations under cost pressure, building consensus for network design changes across sales, finance, and operations stakeholders, and communicating inventory risk to CFO audiences."
@@ -50,38 +74,6 @@
     },
     "certificate": {
       "body": "Graduates receive a Sikkim Manipal University MBA degree certificate with Operations and Supply Chain Management noted on the marksheet, issued under UGC-DEB 2020 online mode standards. The degree carries the SMU name, NAAC A+ accredited with decades of distance-learning recognition.\n\nDigiLocker verification is available. UGC-DEB 2020 compliance ensures the degree is valid for operations manager roles at logistics companies, manufacturing firms, and government supply chain projects."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from SMU Online MBA Operations and Supply Chain Management alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Suresh K.",
-          "city": "Guwahati",
-          "year": 2024,
-          "rating": 5,
-          "liked": "30% Northeast scholarship made NAAC A+ Operations MBA cost Rs 84,000 total",
-          "disliked": "AI-specific supply chain content like demand sensing and quick commerce was not covered",
-          "body": "I work in logistics in Assam and the 30% Northeast scholarship reduced my cost to Rs 84,000 for a NAAC A+ Operations MBA. Supply Chain Management covered end-to-end SC design and demand planning practically. Materials Management subject helped me implement ABC analysis at our warehouse. Zero-cost EMI through SMU directly was smooth. SMU's credential was accepted without issue by our logistics company's HR for my manager promotion application."
-        },
-        {
-          "name": "Ramesh P.",
-          "city": "Delhi",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Quality Management subject covered ISO 9001 and Six Sigma basics I needed for my manufacturing role",
-          "disliked": "E-commerce and last-mile logistics content was missing given current industry trends",
-          "body": "I compared SMU with Chandigarh and MUJ for Operations MBA. SMU was Rs 45,000-55,000 cheaper. For my manufacturing logistics role, the Quality Management and Global Supply Chain subjects were the key content I needed. ISO 9001 documentation and supplier audit skills were directly applicable. Zero-cost EMI and flat fee with no hidden charges made budgeting straightforward. Good value for operations professionals not targeting e-commerce logistics roles."
-        },
-        {
-          "name": "Anita M.",
-          "city": "Dibrugarh",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Most affordable NAAC A+ Operations MBA with unique Northeast scholarship",
-          "disliked": "Faculty interaction was limited; relied on self-study materials for most subjects",
-          "body": "As a Northeast candidate the Rs 84,000 net fee with 30% scholarship was the key decision factor. The Operations and Logistics content covered warehousing and inventory management practically. However, the learning experience is largely self-paced with limited live sessions. For self-directed learners who need an affordable management credential to advance in operations or logistics, SMU delivers solid value. For those needing active mentorship, look at higher-priced alternatives."
-        }
-      ]
     },
     "faqs": [
       {
@@ -124,6 +116,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 17,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

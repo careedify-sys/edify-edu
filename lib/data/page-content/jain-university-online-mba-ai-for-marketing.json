@@ -73,7 +73,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "AI for Marketing MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** Digital marketing agencies, E-commerce, FMCG digital marketing, EdTech growth marketing, BFSI marketing analytics, SaaS marketing\n\n**Entry-level roles:** Digital Marketing Analyst, Growth Marketing Analyst, Marketing AI Analyst, Brand Analyst, Performance Marketing Analyst\n\n**Mid-level roles (3-5 years experience):** AI Marketing Manager, Growth Marketing Manager, Digital Brand Manager, Marketing Technology Manager, Customer Data Platform Manager\n\n**Senior roles (7+ years):** CMO, Head of Digital Marketing, VP Growth, Director Marketing Technology, Chief Marketing Officer (Digital)\n\n**Top hiring organisations:** Flipkart Marketing, Amazon India Marketing, Swiggy Growth, Zomato Marketing, Myntra Digital, HDFC Bank Digital Marketing, ICICI Bank Digital, Infosys Marketing, Publicis Groupe India, WPP India, GroupM India, Dentsu India, Ogilvy India"
+      "body": "This AI for Marketing MBA syllabus maps to the following industries and roles:\n\n**Industries:** Digital marketing agencies, E-commerce, FMCG digital marketing, EdTech growth marketing, BFSI marketing analytics, SaaS marketing\n\n**Entry-level roles:** Digital Marketing Analyst, Growth Marketing Analyst, Marketing AI Analyst, Brand Analyst, Performance Marketing Analyst\n\n**Mid-level roles (3-5 years experience):** AI Marketing Manager, Growth Marketing Manager, Digital Brand Manager, Marketing Technology Manager, Customer Data Platform Manager\n\n**Senior roles (7+ years):** CMO, Head of Digital Marketing, VP Growth, Director Marketing Technology, Chief Marketing Officer (Digital)\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN AI for Marketing specialisation builds skills at the AI-marketing intersection that digital-forward brands and agencies seek at manager level:\n\n**Technical skills:**\n- AI for Business Decision Making: GenAI tools for marketing campaign planning, RPA marketing operations automation, and AI decision frameworks for brand strategy and customer analytics\n- Predictive Financial Modelling applied to marketing: customer lifetime value prediction, marketing ROI forecasting, campaign attribution modelling, and budget allocation optimisation\n- AI-Driven Risk Management: click fraud detection, digital advertising fraud prevention, and marketing data security risk management for e-commerce and D2C brands\n- Emerging Tech in Business: AR/VR marketing experience design, digital twin customer simulation, and disruptive innovation frameworks for CMO-track roles\n\n**Applied skills:**\n- Design Thinking and Product Development: marketing product ideation, user-centric campaign design, and consumer insight-driven product strategy for growth marketing\n- AI-Enabled Leadership: marketing team AI transformation, customer data platform governance, and marketing technology vendor management\n\n**Soft skills:** Presenting AI-driven marketing ROI to CFO and board, managing creative agency relationships in AI-forward campaigns, communicating marketing data ethics to compliance teams, and leading omnichannel AI marketing transformation."
@@ -86,38 +86,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. The AI for Marketing specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA AI for Marketing alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Ananya Menon",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "AI for Business Decision Making and Emerging Tech subjects were directly applicable to my growth marketing role at a Bengaluru startup. GenAI tools coverage was immediately usable in campaign automation.",
-          "disliked": "Some Sem 3 subjects like AI in Corporate Finance felt more finance-oriented than marketing. Would benefit from more marketing-specific AI application examples.",
-          "body": "I had 4 years in digital marketing and this programme positioned me for AI-forward growth marketing roles. The JAIN brand combined with the AI marketing credential was a strong differentiator in Bengaluru tech hiring."
-        },
-        {
-          "name": "Shreya Nambiar",
-          "city": "Kochi",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Design Thinking and Emerging Tech subjects gave strong product and innovation frameworks for marketing roles.",
-          "disliked": "Some Sem 3 subjects share content with the AI for Finance spec. Marketing-specific AI case studies would make the specialisation more distinct.",
-          "body": "Good AI marketing programme for South India digital careers. Kerala and Bengaluru digital marketing companies recognised the JAIN credential. Supplement with Google and Meta digital marketing certifications for maximum career impact."
-        },
-        {
-          "name": "Vikram Chandrasekhar",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Predictive Financial Modelling for marketing ROI forecasting was directly applicable to my campaign planning work.",
-          "disliked": "The overlap with AI for Finance in Sem 3-4 subjects is notable. Students expecting a deeply differentiated marketing AI curriculum should review the syllabus carefully before enrolling.",
-          "body": "Reasonable credential for AI-oriented marketing management roles. For traditional FMCG or brand marketing without an AI technology focus, JAIN's standard Marketing specialisation or Amity MBA Marketing would be more appropriate."
-        }
-      ]
     },
     "faqs": [
       {
@@ -158,6 +126,7 @@
     "wordCount": 2100,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

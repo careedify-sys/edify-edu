@@ -19,33 +19,81 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Strategic Management", "desc": "Common core. Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic planning process." },
-            { "name": "Optimization Models for Business Decisions", "desc": "Common core. Linear programming, transportation models, assignment problems, and quantitative decision-making tools." },
-            { "name": "Summer Training/Project Work", "desc": "Common core. Industry-based project applying management concepts to a real business problem." },
-            { "name": "HRD Systems and Strategies", "desc": "Human resource development frameworks, training needs assessment, career development systems, and organizational learning strategies." },
-            { "name": "Indian Labour Legislation", "desc": "Factories Act, Industrial Disputes Act, Minimum Wages Act, PF and ESI regulations, and the new Labour Codes framework." },
-            { "name": "Management of Industrial Relations", "desc": "Trade union dynamics, collective bargaining, dispute resolution mechanisms, tripartite consultation, and IR in Indian manufacturing." },
-            { "name": "Human Resource Metrics and Analytics", "desc": "HR dashboards, attrition analysis, cost-per-hire calculation, employee engagement metrics, and predictive workforce analytics." },
-            { "name": "Compensation and Reward Management", "desc": "Salary structure design, variable pay frameworks, benefits administration, compensation benchmarking, and total rewards strategy." },
-            { "name": "Talent Acquisition and Performance Management", "desc": "Recruitment strategy, employer branding, competency-based hiring, performance appraisal systems, and goal-setting frameworks (OKR, KPI)." }
+            {
+              "name": "Strategic Management",
+              "desc": "Common core. Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic planning process."
+            },
+            {
+              "name": "Optimization Models for Business Decisions",
+              "desc": "Common core. Linear programming, transportation models, assignment problems, and quantitative decision-making tools."
+            },
+            {
+              "name": "Summer Training/Project Work",
+              "desc": "Common core. Industry-based project applying management concepts to a real business problem."
+            },
+            {
+              "name": "HRD Systems and Strategies",
+              "desc": "Human resource development frameworks, training needs assessment, career development systems, and organizational learning strategies."
+            },
+            {
+              "name": "Indian Labour Legislation",
+              "desc": "Factories Act, Industrial Disputes Act, Minimum Wages Act, PF and ESI regulations, and the new Labour Codes framework."
+            },
+            {
+              "name": "Management of Industrial Relations",
+              "desc": "Trade union dynamics, collective bargaining, dispute resolution mechanisms, tripartite consultation, and IR in Indian manufacturing."
+            },
+            {
+              "name": "Human Resource Metrics and Analytics",
+              "desc": "HR dashboards, attrition analysis, cost-per-hire calculation, employee engagement metrics, and predictive workforce analytics."
+            },
+            {
+              "name": "Compensation and Reward Management",
+              "desc": "Salary structure design, variable pay frameworks, benefits administration, compensation benchmarking, and total rewards strategy."
+            },
+            {
+              "name": "Talent Acquisition and Performance Management",
+              "desc": "Recruitment strategy, employer branding, competency-based hiring, performance appraisal systems, and goal-setting frameworks (OKR, KPI)."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Entrepreneurship Development", "desc": "Common core. Startup ideation, business plan creation, funding strategies, and entrepreneurial ecosystem in India." },
-            { "name": "Business Ethics and Corporate Governance", "desc": "Common core. Ethical frameworks, corporate social responsibility, board governance, and regulatory compliance." },
-            { "name": "Comprehensive Viva-Voce", "desc": "Common core. Oral examination covering all four semesters of the MBA programme." },
-            { "name": "Strategic Human Resource Management", "desc": "HR strategy alignment with business goals, workforce planning, HR business partnering, and strategic HR transformation." },
-            { "name": "Global Human Resource Management", "desc": "Expatriate management, cross-cultural HR practices, international compensation, global mobility, and multinational HR compliance." },
-            { "name": "HR Analytics", "desc": "Advanced people analytics, predictive turnover models, workforce optimization, sentiment analysis, and data-driven HR decision-making." },
-            { "name": "Counseling Skills for Managers", "desc": "Employee counseling techniques, active listening, conflict resolution, handling grievances, and supporting employee wellbeing." }
+            {
+              "name": "Entrepreneurship Development",
+              "desc": "Common core. Startup ideation, business plan creation, funding strategies, and entrepreneurial ecosystem in India."
+            },
+            {
+              "name": "Business Ethics and Corporate Governance",
+              "desc": "Common core. Ethical frameworks, corporate social responsibility, board governance, and regulatory compliance."
+            },
+            {
+              "name": "Comprehensive Viva-Voce",
+              "desc": "Common core. Oral examination covering all four semesters of the MBA programme."
+            },
+            {
+              "name": "Strategic Human Resource Management",
+              "desc": "HR strategy alignment with business goals, workforce planning, HR business partnering, and strategic HR transformation."
+            },
+            {
+              "name": "Global Human Resource Management",
+              "desc": "Expatriate management, cross-cultural HR practices, international compensation, global mobility, and multinational HR compliance."
+            },
+            {
+              "name": "HR Analytics",
+              "desc": "Advanced people analytics, predictive turnover models, workforce optimization, sentiment analysis, and data-driven HR decision-making."
+            },
+            {
+              "name": "Counseling Skills for Managers",
+              "desc": "Employee counseling techniques, active listening, conflict resolution, handling grievances, and supporting employee wellbeing."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Kurukshetra University MBA HR graduates target roles across corporate HR, industrial relations, and HR consulting:\n\n**Industries:** IT/ITES, manufacturing, banking, FMCG, consulting, government HR departments, PSUs, healthcare, and logistics\n\n**Entry-level roles:** HR Executive, Talent Acquisition Specialist, Payroll Executive, Employee Engagement Coordinator, HR Compliance Officer, Training Coordinator\n\n**Mid-level roles (3-5 years experience):** HR Manager, HR Business Partner, Compensation and Benefits Manager, Learning and Development Manager, IR Manager, Talent Acquisition Lead\n\n**Senior roles (7+ years):** CHRO (mid-market), VP HR, Head of Talent, Director of Employee Relations, Head of HR Operations, Head of L&D\n\n**Employers:** IT companies (TCS, Infosys, Wipro), manufacturing firms, PSUs, banks, FMCG companies, consulting firms, and Haryana/NCR regional corporates.\n\n**Note:** As a public state university with NAAC A++, the Kurukshetra MBA degree carries strong credibility for government HR, PSU HR departments, and IR roles in manufacturing. Indian Labour Legislation and Industrial Relations subjects add direct value for compliance-heavy sectors."
+      "body": "Kurukshetra University MBA HR graduates target roles across corporate HR, industrial relations, and HR consulting:\n\n**Industries:** IT/ITES, manufacturing, banking, FMCG, consulting, government HR departments, PSUs, healthcare, and logistics\n\n**Entry-level roles:** HR Executive, Talent Acquisition Specialist, Payroll Executive, Employee Engagement Coordinator, HR Compliance Officer, Training Coordinator\n\n**Mid-level roles (3-5 years experience):** HR Manager, HR Business Partner, Compensation and Benefits Manager, Learning and Development Manager, IR Manager, Talent Acquisition Lead\n\n**Senior roles (7+ years):** CHRO (mid-market), VP HR, Head of Talent, Director of Employee Relations, Head of HR Operations, Head of L&D\n\n**Employers:** IT companies (TCS, Infosys, Wipro), manufacturing firms, PSUs, banks, FMCG companies, consulting firms, and Haryana/NCR regional corporates.\n\n**Note:** As a public state university with NAAC A++, the Kurukshetra MBA degree carries strong credibility for government HR, PSU HR departments, and IR roles in manufacturing. Indian Labour Legislation and Industrial Relations subjects add direct value for compliance-heavy sectors.\n\n**Where to verify placement claims:** ask Kurukshetra University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Human Resource specialisation builds skills across talent management, analytics, IR/compliance, and strategic HR:\n\n**Technical skills:**\n- HR Analytics: dashboard creation, attrition prediction, cost-per-hire analysis, engagement survey interpretation, and workforce optimization models\n- Compensation Management: salary structure design, CTC calculation, variable pay plan creation, benefits benchmarking, and total rewards modelling\n- Labour Law Compliance: Factories Act application, PF/ESI calculation, Industrial Disputes Act procedures, and new Labour Codes implementation\n- Talent Acquisition: competency framework design, structured interview scorecards, employer branding strategy, and ATS workflow management\n\n**Applied skills:**\n- Industrial Relations: collective bargaining preparation, dispute resolution documentation, union negotiation, and IR audit processes\n- Global HRM: expatriate compensation design, cross-cultural training programme creation, and international mobility policy drafting\n\n**Soft skills:** Employee counseling, active listening in grievance handling, conflict mediation, performance conversation delivery, and presenting HR strategy to business leadership."
@@ -58,38 +106,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Human Resource Management as the specialisation, issued by Kurukshetra University under UGC-DEB online mode standards.\n\nThe degree carries NAAC A++ accreditation (the highest possible grade) and UGC-DEB approval. As a public state university degree, it holds strong validity for government recruitment, PSU HR roles, and private-sector HR management positions. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from Kurukshetra University Online MBA HR students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Kavita J.",
-          "city": "Faridabad",
-          "year": 2024,
-          "rating": 5,
-          "liked": "NAAC A++ public state university at Rs 1,02,000. For PSU and government HR roles, a state university MBA carries more weight than private alternatives",
-          "disliked": "The online platform works but is not as feature-rich as Amity or LPU. Mobile app experience needs improvement",
-          "body": "I work in a manufacturing firm where labour law compliance and industrial relations are daily realities. Kurukshetra's HR programme has Indian Labour Legislation and Management of Industrial Relations as full papers. That is exactly what I needed. The public university degree with NAAC A++ gives me credibility for internal promotions and government job applications. The fee at Rs 25,500 per semester is genuinely affordable."
-        },
-        {
-          "name": "Deepak S.",
-          "city": "Ambala",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Counseling Skills for Managers in Sem 4 is a unique subject. It directly helps with employee grievance handling and difficult performance conversations",
-          "disliked": "Kurukshetra brand is strong in Haryana and parts of North India but recognition drops in South and West India. National MNC employers may not immediately know the university",
-          "body": "The HR curriculum covers both traditional and modern HR well. HRD Systems, Compensation Management, Talent Acquisition, and HR Analytics give a solid foundation. The labour law and industrial relations papers add depth for compliance roles. Counseling Skills is genuinely useful. The brand limitation is regional. In Haryana, Punjab, and NCR the Kurukshetra name is well-regarded. Nationally, you may need to lead with the NAAC A++ public university positioning."
-        },
-        {
-          "name": "Ritu P.",
-          "city": "Kurukshetra",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Zero-cost EMI directly through the university. No third-party NBFC involved. The semester-wise payment of Rs 25,500 is manageable",
-          "disliked": "Some recorded lectures for HR Analytics could be more data-driven with practical tool demonstrations. Career services for online students are basic",
-          "body": "The programme covers what it should. The syllabus is strong, especially the IR and labour law content. Delivery quality is mixed. Some faculty are excellent, others rely on slides. HR Analytics could use more hands-on tool training. At this price from a NAAC A++ public university, the value is clear. If you need premium delivery and active placement support, you will need to spend more at a private university."
-        }
-      ]
     },
     "faqs": [
       {
@@ -133,6 +149,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 30,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

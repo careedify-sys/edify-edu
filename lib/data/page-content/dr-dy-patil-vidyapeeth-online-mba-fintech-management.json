@@ -19,24 +19,45 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Financial Services and Technology", "desc": "Digital transformation in banking and insurance, API-first financial architecture, open banking frameworks, payment gateway infrastructure, and cloud computing for financial services." },
-            { "name": "Blockchain for Finance", "desc": "DeFi protocols, smart contracts for trade finance, CBDC implementation frameworks, tokenised assets, and blockchain-based KYC and AML solutions." },
-            { "name": "Machine Learning in FinTech", "desc": "Credit scoring models using ML, fraud detection algorithms, customer segmentation for financial products, churn prediction in banking, and model risk management basics." },
-            { "name": "AI in FinTech", "desc": "Robo-advisory platform design, NLP for financial document processing, chatbot design for banking, AI-driven underwriting, and conversational AI in customer service." }
+            {
+              "name": "Financial Services and Technology",
+              "desc": "Digital transformation in banking and insurance, API-first financial architecture, open banking frameworks, payment gateway infrastructure, and cloud computing for financial services."
+            },
+            {
+              "name": "Blockchain for Finance",
+              "desc": "DeFi protocols, smart contracts for trade finance, CBDC implementation frameworks, tokenised assets, and blockchain-based KYC and AML solutions."
+            },
+            {
+              "name": "Machine Learning in FinTech",
+              "desc": "Credit scoring models using ML, fraud detection algorithms, customer segmentation for financial products, churn prediction in banking, and model risk management basics."
+            },
+            {
+              "name": "AI in FinTech",
+              "desc": "Robo-advisory platform design, NLP for financial document processing, chatbot design for banking, AI-driven underwriting, and conversational AI in customer service."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "FinTech Regulations and Ethics", "desc": "RBI regulatory sandbox framework, DPDP Act implications for fintech, SEBI fintech guidelines, data privacy in digital lending, and ethical AI in financial services." },
-            { "name": "Digital Banking and Payments", "desc": "UPI architecture and ecosystem, neobanking models, BNPL product structure, digital lending platforms, mobile wallet operations, and cross-border payment rails." },
-            { "name": "Project Work", "desc": "Industry-linked fintech project. Typically a digital lending product design, payments platform analysis, or regtech compliance framework development." }
+            {
+              "name": "FinTech Regulations and Ethics",
+              "desc": "RBI regulatory sandbox framework, DPDP Act implications for fintech, SEBI fintech guidelines, data privacy in digital lending, and ethical AI in financial services."
+            },
+            {
+              "name": "Digital Banking and Payments",
+              "desc": "UPI architecture and ecosystem, neobanking models, BNPL product structure, digital lending platforms, mobile wallet operations, and cross-border payment rails."
+            },
+            {
+              "name": "Project Work",
+              "desc": "Industry-linked fintech project. Typically a digital lending product design, payments platform analysis, or regtech compliance framework development."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "DPU-COL MBA FinTech Management graduates target roles at the intersection of finance and technology:\n\n**Industries:** Digital banking, payments (UPI ecosystem), digital lending, insurtech, wealthtech, regtech, and BFSI innovation labs\n\n**Entry-level roles:** FinTech Product Analyst, Digital Banking Associate, Payments Product Analyst, RegTech Analyst, Digital Lending Operations Executive\n\n**Mid-level roles (3-5 years experience):** FinTech Product Manager, Digital Banking Manager, Payments Product Manager, Compliance Manager (fintech), Digital Lending Manager, InsurTech Product Manager\n\n**Senior roles (7+ years):** Head of Digital Banking, VP Payments, Chief Product Officer (fintech), Head of FinTech Partnerships, Director of Digital Lending\n\n**Employers:** Payments companies (PhonePe, Paytm, Razorpay, Pine Labs), neobanks (Jupiter, Fi), digital lenders (KreditBee, MoneyTap, Capital Float), banks' digital divisions (HDFC Digital, ICICI iMobile, SBI YONO), and insurtech firms (Digit Insurance, Acko).\n\n**Note:** DPU-COL provides placement assistance for all MBA programmes."
+      "body": "DPU-COL MBA FinTech Management graduates target roles at the intersection of finance and technology:\n\n**Industries:** Digital banking, payments (UPI ecosystem), digital lending, insurtech, wealthtech, regtech, and BFSI innovation labs\n\n**Entry-level roles:** FinTech Product Analyst, Digital Banking Associate, Payments Product Analyst, RegTech Analyst, Digital Lending Operations Executive\n\n**Mid-level roles (3-5 years experience):** FinTech Product Manager, Digital Banking Manager, Payments Product Manager, Compliance Manager (fintech), Digital Lending Manager, InsurTech Product Manager\n\n**Senior roles (7+ years):** Head of Digital Banking, VP Payments, Chief Product Officer (fintech), Head of FinTech Partnerships, Director of Digital Lending\n\n**Employers:** Payments companies (PhonePe, Paytm, Razorpay, Pine Labs), neobanks (Jupiter, Fi), digital lenders (KreditBee, MoneyTap, Capital Float), banks' digital divisions (HDFC Digital, ICICI iMobile, SBI YONO), and insurtech firms (Digit Insurance, Acko).\n\n**Note:** DPU-COL provides placement assistance for all MBA programmes.\n\n**Where to verify placement claims:** ask Dr. D.Y. Patil Vidyapeeth, Pune – Centre for Online Learning (DPU-COL) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The FinTech Management specialisation builds skills across digital financial services, payments, and regulatory compliance:\n\n**Technical understanding:**\n- Digital Payments: UPI architecture, payment aggregator licensing, settlement mechanics, and merchant onboarding process design\n- Digital Lending: credit scoring model evaluation, NBFC-fintech partnership structures, RBI digital lending guidelines compliance, and collection automation\n- Blockchain for Finance: smart contract audit checklist for financial applications, CBDC pilot framework analysis, and tokenised asset custody\n- ML in Finance: credit model performance metrics (Gini coefficient, KS statistic), fraud detection rule engine design, and model monitoring dashboards\n\n**Regulatory skills:**\n- RBI sandbox application process, prepaid instrument licensing, digital lending compliance (RBI DL guidelines 2022), DPDP Act data handling requirements\n- SEBI fintech intermediary registration, and cross-border remittance compliance\n\n**Strategic skills:**\n- FinTech product-market fit analysis, unit economics for digital lending, customer acquisition cost optimisation for payments, and partnership strategy for NBFC-fintech models\n\n**Soft skills:** Presenting fintech product roadmaps to bank leadership, managing regulator relationships, negotiating banking partner integrations, and leading cross-functional fintech product teams."
@@ -49,38 +70,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with FinTech Management as the specialisation, issued by Dr. D.Y. Patil Vidyapeeth, Pune (DPU-COL) under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation and NIRF #41 University rank. It is valid for BFSI recruitment, fintech company roles, RBI and SEBI-regulated entity positions, and private-sector digital financial services employers. edX certifications supplement the MBA credential. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from DPU-COL Online MBA FinTech Management alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Aman S.",
-          "city": "Mumbai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Digital Banking and Payments module covered UPI architecture at an operational level — directly applicable to my payments product role",
-          "disliked": "More coverage of embedded finance and API monetisation would make the programme more current for 2024-era fintech roles",
-          "body": "I work as a payments product manager at a fintech startup. The digital banking, ML in FinTech, and regulations modules gave me the structured framework I needed to design compliant payment products. NAAC A++ and NIRF #41 gave the MBA credibility with banking partners who verify credentials. Zero-cost EMI was manageable alongside my startup salary."
-        },
-        {
-          "name": "Divya P.",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 4,
-          "liked": "FinTech Regulations and Ethics was the most valuable module — RBI sandbox framework and digital lending guidelines are directly relevant to my compliance role",
-          "disliked": "Blockchain for Finance content was broad — more depth on India-specific CBDC (e-Rupee) implementation and RBI's approach would be more actionable",
-          "body": "I manage regulatory compliance at a digital lending NBFC. The regulations module, ML-based credit scoring concepts, and digital banking content were all directly applicable. Having an MBA from a NIRF #41 NAAC A++ university satisfied the credential requirement for a senior compliance officer role I was targeting."
-        },
-        {
-          "name": "Rajat V.",
-          "city": "Pune",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Machine Learning in FinTech covered credit scoring model evaluation metrics clearly — I can now have informed discussions with data science teams about model performance",
-          "disliked": "AI in FinTech could add more on generative AI applications in banking — ChatGPT-era tools for customer service and document processing are under-covered",
-          "body": "I transitioned from a bank branch manager role to a digital banking product manager position after this programme. The combination of traditional banking understanding (from my work experience) with fintech depth (from this MBA) gave me the positioning that neither a pure banker nor a tech professional has. edX certifications supplemented the learning."
-        }
-      ]
     },
     "faqs": [
       {
@@ -112,9 +101,9 @@
         "You want coverage across the full fintech stack: payments, digital lending, blockchain for finance, ML, and regulations."
       ],
       "consider": [
-        "NIRF top-10 matters to your employer — Amrita (NIRF #8) with Grant Thornton co-branding at ₹2,20,000 is the premium alternative.",
-        "PwC co-teaching and NIRF #19 positioning matter — CU's FinTech spec at ₹1,65,000 is an alternative.",
-        "You specifically want deep blockchain or DLT roles — DPU's dedicated Blockchain spec goes deeper on that dimension."
+        "NIRF top-10 matters to your employer, Amrita (NIRF #8) with Grant Thornton co-branding at ₹2,20,000 is the premium alternative.",
+        "PwC co-teaching and NIRF #19 positioning matter, CU's FinTech spec at ₹1,65,000 is an alternative.",
+        "You specifically want deep blockchain or DLT roles, DPU's dedicated Blockchain spec goes deeper on that dimension."
       ]
     }
   },
@@ -123,6 +112,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 21,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

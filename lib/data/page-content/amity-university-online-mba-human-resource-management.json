@@ -18,7 +18,7 @@
       "emptyFallback": "Semesters 1 and 2 of the Amity Online MBA cover the management core: Accounting for Managers, Managerial Economics, Marketing Management, Statistics for Management, Professional Communication, Business Research Methods, Financial Management, Human Resource Management, Legal Aspects of Business, and Conflict Resolution and Management.\n\nSemesters 3 and 4 cover the Human Resource Management specialisation subjects. These typically include areas such as talent acquisition and workforce planning, performance management systems, compensation and benefits administration, training and development design, industrial relations and labour law, HR analytics basics, and strategic HRM. The specific Sem 3 and Sem 4 subjects for Human Resource Management are confirmed by Amity each admission cycle. Our counsellor can share the current spec-level syllabus within 24 hours. Both semesters include project work tied to the HR domain."
     },
     "whoHires": {
-      "body": "Human Resource Management MBA graduates from Amity University Online are hired across these industries and roles:\n\n**Industries:** Manufacturing, BFSI, IT services, FMCG, Management consulting and staffing, Professional services\n\n**Entry-level roles:** HR Generalist, Recruitment Manager, HR Operations Manager, Compensation Analyst\n\n**Mid-level roles (3-5 years experience):** HR Business Partner, HR Manager, Talent Acquisition Manager, L&D Manager, Industrial Relations Manager\n\n**Senior roles (7+ years):** HR Head, CHRO, VP Human Resources, Head of Talent Management\n\n**Top hiring organisations:** TCS, Infosys, HDFC Bank, HUL, Aditya Birla Group, L&T, Aon Hewitt, Mercer India"
+      "body": "This Human Resource Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** Manufacturing, BFSI, IT services, FMCG, Management consulting and staffing, Professional services\n\n**Entry-level roles:** HR Generalist, Recruitment Manager, HR Operations Manager, Compensation Analyst\n\n**Mid-level roles (3-5 years experience):** HR Business Partner, HR Manager, Talent Acquisition Manager, L&D Manager, Industrial Relations Manager\n\n**Senior roles (7+ years):** HR Head, CHRO, VP Human Resources, Head of Talent Management\n\n**Where to verify placement claims:** ask Amity University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Human Resource Management specialisation builds skills tested at HRBP and HR head level by large corporate and BFSI employers:\n\n**Technical skills:**\n- Compensation Design: salary grading, variable pay programme design, and benefits benchmarking against market data\n- Industrial Relations: union management, standing orders, disciplinary inquiry, and collective bargaining in Indian contexts\n- Recruitment and Selection: structured interview design, assessment centre management, and hiring decision quality improvement\n\n**Applied skills:**\n- Organisational Development: change management models, culture assessment tools, and OD intervention design\n- Manpower Planning: workforce demand forecasting, succession pipeline management, and skill gap closure strategy\n\n**Soft skills:** Managing unionised shop-floor workforces, presenting HR metrics to board and CHRO, navigating industrial disputes without production disruption."
@@ -31,38 +31,6 @@
     },
     "certificate": {
       "body": "The Amity University degree certificate carries the Amity University name, the MBA designation, and identifies the online learning mode per UGC-DEB 2020 regulations. The Human Resource Management specialisation is noted on the marksheet and transcript. Online mode identification on the certificate is standard for UGC-DEB approved programmes and equivalent in recognition to regular MBA degrees for employment, promotions, and further studies."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Amity Online MBA HR alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Ananya Joshi",
-          "city": "Pune",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Labour law module was comprehensive and directly applicable at my HRBP role",
-          "disliked": "HR analytics content was too basic â€” needed more Excel and Power BI tools practice",
-          "body": "The labour law and compliance content was excellent. I passed an internal HR compliance audit shortly after completing that module. Got promoted to HR Business Partner within a year of completing the MBA. The Amity name is well known in Pune HR circles. Would strongly recommend for working HR professionals wanting formal credentials."
-        },
-        {
-          "name": "Rahul Verma",
-          "city": "Hyderabad",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Talent acquisition module was very practical with structured interview design content",
-          "disliked": "Organisational development section needed more change management depth",
-          "body": "The talent acquisition and interview design content was genuinely useful. I applied the competency-based interview framework at my company within days of covering it. Changed jobs to a larger IT firm as a TA Lead. The Amity MBA gave me the credibility to apply for Manager-level roles I would have been filtered out from before."
-        },
-        {
-          "name": "Kavitha Reddy",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Compensation and benefits module covered CTC structuring clearly",
-          "disliked": "Performance management section was too textbook-oriented, needed current OKR/360 content",
-          "body": "Compensation structuring knowledge directly helped me in salary benchmarking work at my company. The Amity brand was recognised by the HR Manager who interviewed me for my current role. Programme overall is solid for working HR professionals. The weekend schedule made balancing work and study manageable."
-        }
-      ]
     },
     "faqs": [
       {
@@ -104,6 +72,7 @@
     "generatedAt": "2026-04-21",
     "batchNumber": 9,
     "hasSyllabusData": false,
-    "phase71Updated": "2026-04-21"
+    "phase71Updated": "2026-04-21",
+    "claimSweep": "2026-09-17"
   }
 }

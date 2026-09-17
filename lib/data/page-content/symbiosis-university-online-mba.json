@@ -20,7 +20,7 @@
     },
     "whoCanApply": {
       "heading": "Who Can Apply: Eligibility Criteria",
-      "body": "Eligibility: Graduation (any discipline) with 50% marks from a recognised university. Working professionals preferred.. Working professionals are welcome to apply. There is no upper age limit. Candidates appearing for their final bachelor's exam may apply provisionally. Admission confirmation is subject to submission of final degree certificate within the first semester."
+      "body": "Eligibility: Graduation (any discipline) with 50% marks from a recognised university. Working professionals preferred. Working professionals are welcome to apply. There is no upper age limit. Candidates appearing for their final bachelor's exam may apply provisionally. Admission confirmation is subject to submission of final degree certificate within the first semester."
     },
     "classes": {
       "heading": "How Classes Are Conducted",
@@ -82,58 +82,6 @@
       "heading": "Honest Verdict: Who Should Enroll, Who Should Look Elsewhere",
       "body": "Choose Symbiosis SSODL Online MBA if: you can afford the Rs.3.15L fee and want the strongest Pune academic brand; the academic depth with 10-12 subjects per semester is a priority; you are targeting HR or analytics roles in Pune and Mumbai BFSI; or R Programming and data-driven course design align with your career direction.\n\nLook elsewhere if: the fee of Rs.3.15L is outside your budget; your target specialisation is not among the 9 offered; you need stronger placement infrastructure; or you are targeting roles in energy, technology, or healthcare where UPES or DPU-COL are better matches.\n\nIf you are still undecided, our counsellor call is free. No commission, no pressure."
     },
-    "reviews": {
-      "heading": "What Students Are Saying",
-      "intro": "The following reviews are from students who enrolled in the Symbiosis School for Online and Digital Learning (SSODL), Pune Online MBA. Ratings range from 2 to 5 stars, reflecting a real mix of experiences. These reviews are not curated to show only positive outcomes.",
-      "items": [
-        {
-          "rating": 5,
-          "name": "Aditya K.",
-          "city": "Pune",
-          "year": 2024,
-          "liked": "Symbiosis brand is premium in Maharashtra. The 10-12 subject per semester depth is exceptional.",
-          "disliked": "At Rs.3.15L it is the most expensive of the NAAC A++ online MBAs. Not for budget buyers.",
-          "body": "Symbiosis brand is premium in Maharashtra. The 10-12 subject per semester depth is exceptional."
-        },
-        {
-          "rating": 4,
-          "name": "Meera L.",
-          "city": "Mumbai",
-          "year": 2024,
-          "liked": "R Programming in Sem 2 is a real skill. Most online MBAs skip it. Symbiosis includes it as core.",
-          "disliked": "The application process has multiple steps and the portal is not the most user-friendly.",
-          "body": "R Programming in Sem 2 is a real skill. Most online MBAs skip it. Symbiosis includes it as core."
-        },
-        {
-          "rating": 4,
-          "name": "Rahul M.",
-          "city": "Bangalore",
-          "year": 2023,
-          "liked": "Finance track Sem 3 and 4 subjects are at a level I did not expect from an online programme.",
-          "disliked": "Live session timings are weekday evenings. If your work ends late, you will miss some sessions.",
-          "body": "Finance track Sem 3 and 4 subjects are at a level I did not expect from an online programme."
-        },
-        {
-          "rating": 3,
-          "name": "Sonya N.",
-          "city": "Hyderabad",
-          "year": 2023,
-          "liked": "The SSODL certificate looks excellent and NAAC A++ gives it credibility in large organisations.",
-          "disliked": "9 specialisations is fewer than some peers. My preferred choice, IT Management, is not available.",
-          "body": "The SSODL certificate looks excellent and NAAC A++ gives it credibility in large organisations."
-        },
-        {
-          "rating": 2,
-          "name": "Kiran O.",
-          "city": "Chennai",
-          "year": 2024,
-          "liked": "Academic rigour is real. The assignments take time but they force genuine learning.",
-          "disliked": "For Rs.3.15L I expected much more placement support. The online student placement team is understaffed.",
-          "body": "Academic rigour is real. The assignments take time but they force genuine learning."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "heading": "Red Flags to Know Before Enrolling",
       "intro": "The following red flags are based on monitoring of student forums including Reddit r/indianeducation, Trustpilot reviews, and Consumer Complaints India.",
@@ -167,7 +115,7 @@
       },
       {
         "question": "What is the eligibility for Symbiosis SSODL Online MBA?",
-        "answer": "Graduation (any discipline) with 50% marks from a recognised university. Working professionals preferred.. No entrance exam is mandatory. Working professionals are the primary target audience. No upper age limit applies."
+        "answer": "Graduation (any discipline) with 50% marks from a recognised university. Working professionals preferred. No entrance exam is mandatory. Working professionals are the primary target audience. No upper age limit applies."
       },
       {
         "question": "How does Symbiosis SSODL conduct online MBA exams?",
@@ -202,6 +150,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:48.998Z",
     "sheetName": "symbiosis-university-online_MBA",
-    "format": "named"
+    "format": "named",
+    "claimSweep": "2026-09-17"
   }
 }

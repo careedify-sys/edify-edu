@@ -60,56 +60,6 @@
     "honestVerdict": {
       "body": "This verdict is based on publicly available data from UGC-DEB, NAAC, and NIRF portals, cross-referenced with student feedback from verified sources.\n\nChoose this if:\n- NAAC A++ from a central university is the priority credential for your government or PSU career target\n- You plan to use WES recognition for Canadian immigration or employment credential evaluation\n- Finance depth (Private Equity, Financial Engineering) or Rural Agribusiness Marketing suits your career\n- Rs 1.02 lakh total fee is a strong affordability factor in your decision\n\nLook elsewhere if:\n- NIRF ranking is a hard requirement for your employer or higher education institution\n- You need more than 5 specialisation choices\n- Structured corporate placement support is a non-negotiable requirement\n- You need a placement network outside North India and Haryana\n\nThe decision between two similarly approved programmes often comes down to three factors: the credential grade you need, the specialisation that fits your career, and the fee your budget supports. Use the /compare tool to map your shortlist. If you are still undecided, our counsellor call is free at /contact."
     },
-    "reviews": {
-      "items": [
-        {
-          "name": "Harjinder S.",
-          "city": "Chandigarh",
-          "year": 2024,
-          "rating": 5,
-          "liked": "NAAC A++ central university MBA at Rs 1.02 lakh is unbeatable value. The Finance specialisation had advanced content in Private Equity and Financial Engineering that I did not expect at this fee point. WES recognition was a deciding factor as I plan to move to Canada. Strongly recommended for North India professionals on a budget.",
-          "disliked": "",
-          "body": "NAAC A++ central university MBA at Rs 1.02 lakh is unbeatable value. The Finance specialisation had advanced content in Private Equity and Financial Engineering that I did not expect at this fee point. WES recognition was a deciding factor as I plan to move to Canada. Strongly recommended for North India professionals on a budget."
-        },
-        {
-          "name": "Ritu M.",
-          "city": "Kurukshetra",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Business Analytics track is well-constructed. Data Analytics using R and Econometrics in Semester 3 are substantive subjects. The Summer Training project in Semester 3 was a good applied experience. Live class timings were occasionally awkward for my shift-based job, though recordings were available.",
-          "disliked": "",
-          "body": "Business Analytics track is well-constructed. Data Analytics using R and Econometrics in Semester 3 are substantive subjects. The Summer Training project in Semester 3 was a good applied experience. Live class timings were occasionally awkward for my shift-based job, though recordings were available."
-        },
-        {
-          "name": "Navdeep K.",
-          "city": "Patiala",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Human Resource track had strong content in Indian Labour Legislation and HR Analytics in Semester 3. The Computer Applications lab in Semester 2 was basic but useful. Career services over-promised on placements in the initial counselling session; actual support was limited to resume workshops and job board sharing.",
-          "disliked": "",
-          "body": "Human Resource track had strong content in Indian Labour Legislation and HR Analytics in Semester 3. The Computer Applications lab in Semester 2 was basic but useful. Career services over-promised on placements in the initial counselling session; actual support was limited to resume workshops and job board sharing."
-        },
-        {
-          "name": "Mandeep T.",
-          "city": "Ludhiana",
-          "year": 2023,
-          "rating": 3,
-          "liked": "The LMS works adequately but live class timings are not always convenient for evening-shift workers. Peer interaction in the discussion forums is low; most students complete assignments without engaging in group discussion. Good content but limited community feel.",
-          "disliked": "",
-          "body": "The LMS works adequately but live class timings are not always convenient for evening-shift workers. Peer interaction in the discussion forums is low; most students complete assignments without engaging in group discussion. Good content but limited community feel."
-        },
-        {
-          "name": "Gurpreet V.",
-          "city": "Amritsar",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Career services over-promised placements during the pre-admission call. The actual support was a resume workshop and access to job listings, not structured placement. The Comprehensive Viva-Voce in Semester 4 was harder than I expected. Prepare for it seriously from Semester 3 onwards. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation.",
-          "disliked": "",
-          "body": "Career services over-promised placements during the pre-admission call. The actual support was a resume workshop and access to job listings, not structured placement. The Comprehensive Viva-Voce in Semester 4 was harder than I expected. Prepare for it seriously from Semester 3 onwards. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "intro": "",
       "flags": [
@@ -135,6 +85,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:49.014Z",
     "sheetName": "kurukshetra-online_MBA",
-    "format": "named"
+    "format": "named",
+    "claimSweep": "2026-09-17"
   }
 }

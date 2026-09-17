@@ -69,7 +69,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Finance MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** Commercial and retail banking, Fintech startups, Wealth management and insurance, Corporate treasury, Investment banking, Consulting and accounting firms\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Investment Research Analyst, Tax Analyst, Fintech Business Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Portfolio Manager, Treasury Manager, Risk Manager, Wealth Manager\n\n**Senior roles (7+ years):** CFO, Head of Finance, VP Treasury, Investment Director, Chief Risk Officer\n\n**Top hiring organisations:** HDFC Bank, ICICI Bank, Axis Bank, Kotak Mahindra Bank, SBI, Bajaj Finance, Zerodha, Groww, HDFC Life, Max Life, Deloitte, KPMG, EY, Motilal Oswal, IIFL Wealth"
+      "body": "This Finance MBA syllabus maps to the following industries and roles:\n\n**Industries:** Commercial and retail banking, Fintech startups, Wealth management and insurance, Corporate treasury, Investment banking, Consulting and accounting firms\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Investment Research Analyst, Tax Analyst, Fintech Business Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Portfolio Manager, Treasury Manager, Risk Manager, Wealth Manager\n\n**Senior roles (7+ years):** CFO, Head of Finance, VP Treasury, Investment Director, Chief Risk Officer\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN Finance specialisation builds skills that banking and corporate finance employers test at analyst and manager levels:\n\n**Technical skills:**\n- Investment Analysis and Portfolio Management: DCF and relative equity valuation, Markowitz portfolio theory, CAPM application, and portfolio performance measurement for investment research and advisory roles\n- Risk Management: credit risk modelling, VaR calculation, Basel III framework application, and stress testing for banking and insurance risk roles\n- Fintech: digital lending platform evaluation, blockchain payment system analysis, and robo-advisory product assessment for fintech and digital banking roles\n- Direct and Indirect Taxes: corporate tax planning, GST compliance, TDS management, and deferred tax accounting for corporate finance and consulting roles\n\n**Applied skills:**\n- Wealth Management: HNI client portfolio strategy, estate planning, and tax-efficient investment advisory for private banking and wealth management\n- International Finance and Investment Banking: FOREX risk management and investment banking deal analysis for global banking roles\n\n**Soft skills:** Presenting investment recommendations to portfolio committees, negotiating corporate credit facilities, building financial models for board-level capital allocation decisions, and communicating risk exposure to senior management."
@@ -82,38 +82,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. The Finance specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA Finance alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Rohit Nair",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Fintech subject was directly applicable to my role at a Bengaluru fintech startup. Investment Analysis and Portfolio Management gave me frameworks I use daily. Python from Sem 2 core was the standout feature.",
-          "disliked": "International Finance and Investment Banking could be deeper on deal structures.",
-          "body": "I had 4 years in corporate banking and the JAIN Finance MBA helped me transition to a fintech product role. JAIN's Bengaluru brand recognition opened doors at South India fintech companies that other online MBA brands did not."
-        },
-        {
-          "name": "Divya Menon",
-          "city": "Chennai",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Risk Management and Wealth Management subjects were well-structured. JAIN's ACCA International Finance parallel option was helpful to know about for future credentials.",
-          "disliked": "Fee tier structure needs upfront counsellor guidance. The 2-tier system is not fully transparent on the website.",
-          "body": "Good programme for South India BFSI careers. Chennai banking companies recognised the JAIN credential. For Mumbai investment banking, NMIMS would carry stronger brand weight. For South India, JAIN Finance is well-positioned."
-        },
-        {
-          "name": "Arjun Pillai",
-          "city": "Kochi",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Banking and Insurance and Indian Financial System subjects were applicable to my PSU bank role.",
-          "disliked": "Placement support for finance roles outside Bengaluru was limited. Self-sourcing necessary for Kochi-based BFSI openings.",
-          "body": "Solid credential for South India BFSI careers. JAIN brand is strongest in Karnataka and Tamil Nadu. For Kerala banking careers, self-sourcing was necessary. Content quality was good for the fee."
-        }
-      ]
     },
     "faqs": [
       {
@@ -154,6 +122,7 @@
     "wordCount": 2100,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

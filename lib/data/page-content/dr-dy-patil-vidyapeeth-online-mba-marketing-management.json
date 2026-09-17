@@ -19,28 +19,61 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Consumer Behavior", "desc": "Consumer decision-making models, psychological and sociological factors, perception and attitudes, cultural influences, and digital consumer behaviour patterns." },
-            { "name": "Marketing Research", "desc": "Research design, qualitative and quantitative methods, questionnaire design, sampling techniques, data analysis and interpretation, and marketing research report preparation." },
-            { "name": "Sales and Distribution Management", "desc": "Sales force structure design, territory management, distributor management, channel conflict resolution, trade marketing, and sales performance metrics." },
-            { "name": "Product and Brand Management", "desc": "Brand identity design, brand equity measurement (Keller, Aaker models), product lifecycle management, new product development process, and brand positioning strategy." },
-            { "name": "Retail Management", "desc": "Retail formats, store operations, category management, visual merchandising, retail pricing strategies, and omnichannel retail design." },
-            { "name": "Marketing of Services", "desc": "Services marketing 7Ps framework, SERVQUAL model, service blueprint design, customer retention, service recovery, and service brand differentiation." },
-            { "name": "Generic Elective-I: Digital Marketing or Business English", "desc": "Students select one. Digital Marketing adds SEO, social media, and performance marketing skills. Business English strengthens communication for marketing leadership." }
+            {
+              "name": "Consumer Behavior",
+              "desc": "Consumer decision-making models, psychological and sociological factors, perception and attitudes, cultural influences, and digital consumer behaviour patterns."
+            },
+            {
+              "name": "Marketing Research",
+              "desc": "Research design, qualitative and quantitative methods, questionnaire design, sampling techniques, data analysis and interpretation, and marketing research report preparation."
+            },
+            {
+              "name": "Sales and Distribution Management",
+              "desc": "Sales force structure design, territory management, distributor management, channel conflict resolution, trade marketing, and sales performance metrics."
+            },
+            {
+              "name": "Product and Brand Management",
+              "desc": "Brand identity design, brand equity measurement (Keller, Aaker models), product lifecycle management, new product development process, and brand positioning strategy."
+            },
+            {
+              "name": "Retail Management",
+              "desc": "Retail formats, store operations, category management, visual merchandising, retail pricing strategies, and omnichannel retail design."
+            },
+            {
+              "name": "Marketing of Services",
+              "desc": "Services marketing 7Ps framework, SERVQUAL model, service blueprint design, customer retention, service recovery, and service brand differentiation."
+            },
+            {
+              "name": "Generic Elective-I: Digital Marketing or Business English",
+              "desc": "Students select one. Digital Marketing adds SEO, social media, and performance marketing skills. Business English strengthens communication for marketing leadership."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "International Marketing", "desc": "Global market entry strategies, international market research, cross-cultural marketing, international pricing, and global brand management." },
-            { "name": "Integrated Marketing Communication", "desc": "IMC planning, media mix optimisation, ATL-BTL integration, campaign measurement, PR and corporate communication, and event marketing." },
-            { "name": "Generic Elective-II: Soft Skills or Business Ethics and Corporate Governance", "desc": "Students select one. Soft Skills covers negotiation and leadership. Business Ethics covers corporate governance and ethical marketing." },
-            { "name": "Project Work Report", "desc": "Industry-linked marketing project. Typically a brand audit, consumer research study, IMC campaign plan, or retail operations analysis." }
+            {
+              "name": "International Marketing",
+              "desc": "Global market entry strategies, international market research, cross-cultural marketing, international pricing, and global brand management."
+            },
+            {
+              "name": "Integrated Marketing Communication",
+              "desc": "IMC planning, media mix optimisation, ATL-BTL integration, campaign measurement, PR and corporate communication, and event marketing."
+            },
+            {
+              "name": "Generic Elective-II: Soft Skills or Business Ethics and Corporate Governance",
+              "desc": "Students select one. Soft Skills covers negotiation and leadership. Business Ethics covers corporate governance and ethical marketing."
+            },
+            {
+              "name": "Project Work Report",
+              "desc": "Industry-linked marketing project. Typically a brand audit, consumer research study, IMC campaign plan, or retail operations analysis."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "DPU-COL MBA Marketing Management graduates enter roles across FMCG, retail, services, and digital marketing:\n\n**Industries:** FMCG, retail, banking (product marketing), telecom, e-commerce, media and entertainment, consumer durables, hospitality, and healthcare marketing\n\n**Entry-level roles:** Marketing Executive, Brand Executive, Sales Executive, Retail Operations Executive, Market Research Analyst, Trade Marketing Executive\n\n**Mid-level roles (3-5 years experience):** Brand Manager, Marketing Manager, Regional Sales Manager, Category Manager (retail), Product Marketing Manager, Service Marketing Manager\n\n**Senior roles (7+ years):** VP Marketing, CMO, Head of Sales, National Sales Director, Head of Brand Management, Chief Commercial Officer\n\n**Employers:** FMCG (HUL, ITC, P&G, Nestle, Britannia), retail (Reliance Retail, Trent, DMart, Shoppers Stop), e-commerce (Flipkart, Amazon India, Nykaa), banking (HDFC, ICICI product marketing), and telecom (Jio, Airtel, Vi marketing).\n\n**Note:** DPU-COL provides placement assistance for all MBA programmes."
+      "body": "DPU-COL MBA Marketing Management graduates enter roles across FMCG, retail, services, and digital marketing:\n\n**Industries:** FMCG, retail, banking (product marketing), telecom, e-commerce, media and entertainment, consumer durables, hospitality, and healthcare marketing\n\n**Entry-level roles:** Marketing Executive, Brand Executive, Sales Executive, Retail Operations Executive, Market Research Analyst, Trade Marketing Executive\n\n**Mid-level roles (3-5 years experience):** Brand Manager, Marketing Manager, Regional Sales Manager, Category Manager (retail), Product Marketing Manager, Service Marketing Manager\n\n**Senior roles (7+ years):** VP Marketing, CMO, Head of Sales, National Sales Director, Head of Brand Management, Chief Commercial Officer\n\n**Employers:** FMCG (HUL, ITC, P&G, Nestle, Britannia), retail (Reliance Retail, Trent, DMart, Shoppers Stop), e-commerce (Flipkart, Amazon India, Nykaa), banking (HDFC, ICICI product marketing), and telecom (Jio, Airtel, Vi marketing).\n\n**Note:** DPU-COL provides placement assistance for all MBA programmes.\n\n**Where to verify placement claims:** ask Dr. D.Y. Patil Vidyapeeth, Pune – Centre for Online Learning (DPU-COL) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Marketing Management specialisation builds skills across brand, sales, retail, and services marketing:\n\n**Technical skills:**\n- Brand Management: brand equity audit, brand positioning map, product lifecycle strategy, new product launch plan, and brand architecture design\n- Marketing Research: survey design, focus group facilitation, data analysis (cross-tabulation, regression basics), and insights-to-action framework\n- Sales and Distribution: sales territory design, distributor ROI calculation, trade scheme evaluation, and sales force productivity metrics\n- Retail: category plan design, planogram basics, retail margin calculation, and store performance benchmarking\n\n**Applied skills:**\n- Services Marketing: service blueprint construction, SERVQUAL gap analysis, customer satisfaction survey design, and service recovery protocol\n- IMC: media plan design, campaign ROI calculation, ATL-BTL budget allocation, and PR event management\n\n**Soft skills:** Presenting marketing strategy to boards, negotiating with advertising agencies and media partners, managing cross-functional product launch teams, and leading brand turnaround initiatives."
@@ -53,38 +86,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Marketing Management as the specialisation, issued by Dr. D.Y. Patil Vidyapeeth, Pune (DPU-COL) under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation and NIRF #41 University rank. It is valid for government and private sector recruitment. edX certifications supplement the credential. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from DPU-COL Online MBA Marketing Management alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Ravi D.",
-          "city": "Mumbai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Consumer Behavior and Brand Management subjects gave me the conceptual framework I was applying intuitively after 5 years in FMCG sales",
-          "disliked": "Digital marketing is only available as an elective — in 2024 it should be a core subject for any marketing MBA",
-          "body": "I transitioned from a regional sales manager to a brand manager role at an FMCG company. Having seven subjects in Sem 3 meant the depth was genuinely better than the three or four-subject marketing programmes I evaluated. NAAC A++ and NIRF #41 met my employer's credential requirements."
-        },
-        {
-          "name": "Kavita S.",
-          "city": "Pune",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Marketing of Services and Retail Management as standalone subjects is rare — most programmes bundle these into a single module",
-          "disliked": "Marketing research module could include more tools training (SPSS, Qualtrics) alongside the theoretical methodology",
-          "body": "I work in service marketing at a hospitality company. The services marketing, consumer behaviour, and IMC subjects were directly applicable. DPU being in Pune made the occasional workshop attendance convenient. The ₹10,000 lump-sum discount and edX certifications added practical value."
-        },
-        {
-          "name": "Amit P.",
-          "city": "Delhi",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Sales and Distribution Management covered territory design and distributor management at an operational level — directly useful for my FMCG distribution role",
-          "disliked": "International Marketing content was traditional — more on D2C cross-border, Amazon Global Selling, and digital-first international market entry would modernise it",
-          "body": "I manage distribution for an FMCG company across North India. The sales and distribution, retail management, and product management subjects strengthened my management vocabulary for internal assessments. NIRF #41 and NAAC A++ gave the MBA credential immediate acceptance. Zero-cost EMI from ₹2,500/month was manageable."
-        }
-      ]
     },
     "faqs": [
       {
@@ -110,15 +111,15 @@
     ],
     "chooseAlternatives": {
       "chooseIf": [
-        "You want the deepest marketing curriculum among NAAC A++ online MBAs — seven Sem 3 subjects covering consumer behaviour, brand, sales, retail, services, and research.",
+        "You want the deepest marketing curriculum among NAAC A++ online MBAs, seven Sem 3 subjects covering consumer behaviour, brand, sales, retail, services, and research.",
         "Your target is broad marketing leadership (brand manager, CMO track, sales director) rather than digital marketing specifically.",
         "₹1,89,400 with zero-cost EMI and edX certifications fits your budget at NAAC A++ level.",
         "You work in FMCG, retail, services, or B2B sales and need comprehensive marketing management depth."
       ],
       "consider": [
-        "NIRF top 20 matters — CU (NIRF #19) at ₹1,65,000 or Amrita (NIRF #8) at ₹2,20,000 are stronger on rank.",
-        "Your career target is digital marketing specifically — DPU's Digital Marketing Management spec is more focused.",
-        "You need the most affordable marketing MBA — IGNOU Marketing Management at ₹66,000 is the lowest-cost NAAC A++ option."
+        "NIRF top 20 matters, CU (NIRF #19) at ₹1,65,000 or Amrita (NIRF #8) at ₹2,20,000 are stronger on rank.",
+        "Your career target is digital marketing specifically, DPU's Digital Marketing Management spec is more focused.",
+        "You need the most affordable marketing MBA, IGNOU Marketing Management at ₹66,000 is the lowest-cost NAAC A++ option."
       ]
     }
   },
@@ -127,6 +128,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 21,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

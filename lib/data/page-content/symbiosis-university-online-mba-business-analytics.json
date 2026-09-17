@@ -97,7 +97,7 @@
       "note": "Sem 1-2 shared core subjects across all SSODL MBA specialisations. See the main SSODL Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Business Analytics MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** IT services and consulting, BFSI analytics, E-commerce, Healthcare technology, FMCG analytics, Management consulting\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Consultant, BI Analyst, Marketing Analyst\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, Head of Business Intelligence, Senior Data Analyst, Marketing Analytics Manager\n\n**Senior roles (7+ years):** VP Analytics, Head of Data and Analytics, Chief Data Officer, Analytics Practice Head\n\n**Where to verify placement claims:** ask Symbiosis International University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
+      "body": "This Business Analytics MBA syllabus maps to the following industries and roles:\n\n**Industries:** IT services and consulting, BFSI analytics, E-commerce, Healthcare technology, FMCG analytics, Management consulting\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Consultant, BI Analyst, Marketing Analyst\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, Head of Business Intelligence, Senior Data Analyst, Marketing Analytics Manager\n\n**Senior roles (7+ years):** VP Analytics, Head of Data and Analytics, Chief Data Officer, Analytics Practice Head\n\n**Where to verify placement claims:** ask Symbiosis International University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "By the end you should be able to take a business question, work out which data answers it, and present the answer to people who will not read your workings.\n\nConcretely, that means building a dashboard someone actually uses, putting together a forecast and defending its assumptions, and reading a model built by a technical team well enough to challenge it. Visual Analytics and Spreadsheet Modelling carry most of the hands-on weight here.\n\nThe domain subjects teach you the questions each function asks. HR Analytics is about attrition and capability, Financial Analytics about margin and risk, Marketing and Sales Analytics about attribution and channel. Knowing which question belongs to which function is the part that is hard to pick up on the job.\n\nWhat you will not get is engineering. There is no data pipeline work, no production deployment, and the programming exposure stops at a level that lets you read code rather than ship it."
@@ -153,6 +153,7 @@
     "hasSyllabusData": true,
     "batch12v2Fixed": "2026-04-21",
     "integrityPass": "2026-09-17",
-    "humanisedAt": "2026-09-17"
+    "humanisedAt": "2026-09-17",
+    "claimSweep": "2026-09-17"
   }
 }

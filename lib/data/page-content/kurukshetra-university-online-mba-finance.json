@@ -19,33 +19,81 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Strategic Management", "desc": "Common core. Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic planning process." },
-            { "name": "Optimization Models for Business Decisions", "desc": "Common core. Linear programming, transportation models, assignment problems, and quantitative decision-making tools." },
-            { "name": "Summer Training/Project Work", "desc": "Common core. Industry-based project applying management concepts to a real business problem." },
-            { "name": "Quantitative Analysis for Financial Decision Making", "desc": "Statistical and quantitative methods for capital budgeting, risk assessment, and financial modelling." },
-            { "name": "Foreign Exchange Management", "desc": "Forex market structure, exchange rate determination, currency risk hedging, and international payment mechanisms." },
-            { "name": "Derivatives Trading in India", "desc": "Options and futures markets in India, SEBI regulations, pricing models, and hedging strategies for equity and commodity derivatives." },
-            { "name": "Banking and Financial Services", "desc": "Commercial banking operations, NBFC regulation, insurance sector, mutual funds, and financial services distribution." },
-            { "name": "Corporate Restructuring and Control", "desc": "Mergers and acquisitions, demergers, leveraged buyouts, corporate turnarounds, and governance in restructured entities." },
-            { "name": "Security Analysis", "desc": "Fundamental and technical analysis of equity securities, bond valuation, industry analysis, and stock selection frameworks." }
+            {
+              "name": "Strategic Management",
+              "desc": "Common core. Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic planning process."
+            },
+            {
+              "name": "Optimization Models for Business Decisions",
+              "desc": "Common core. Linear programming, transportation models, assignment problems, and quantitative decision-making tools."
+            },
+            {
+              "name": "Summer Training/Project Work",
+              "desc": "Common core. Industry-based project applying management concepts to a real business problem."
+            },
+            {
+              "name": "Quantitative Analysis for Financial Decision Making",
+              "desc": "Statistical and quantitative methods for capital budgeting, risk assessment, and financial modelling."
+            },
+            {
+              "name": "Foreign Exchange Management",
+              "desc": "Forex market structure, exchange rate determination, currency risk hedging, and international payment mechanisms."
+            },
+            {
+              "name": "Derivatives Trading in India",
+              "desc": "Options and futures markets in India, SEBI regulations, pricing models, and hedging strategies for equity and commodity derivatives."
+            },
+            {
+              "name": "Banking and Financial Services",
+              "desc": "Commercial banking operations, NBFC regulation, insurance sector, mutual funds, and financial services distribution."
+            },
+            {
+              "name": "Corporate Restructuring and Control",
+              "desc": "Mergers and acquisitions, demergers, leveraged buyouts, corporate turnarounds, and governance in restructured entities."
+            },
+            {
+              "name": "Security Analysis",
+              "desc": "Fundamental and technical analysis of equity securities, bond valuation, industry analysis, and stock selection frameworks."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Entrepreneurship Development", "desc": "Common core. Startup ideation, business plan creation, funding strategies, and entrepreneurial ecosystem in India." },
-            { "name": "Business Ethics and Corporate Governance", "desc": "Common core. Ethical frameworks, corporate social responsibility, board governance, and regulatory compliance." },
-            { "name": "Comprehensive Viva-Voce", "desc": "Common core. Oral examination covering all four semesters of the MBA programme." },
-            { "name": "Financial Engineering", "desc": "Structured products, synthetic instruments, securitization, and financial innovation for risk management." },
-            { "name": "Project Planning and Management", "desc": "Capital project appraisal, feasibility analysis, project scheduling (PERT/CPM), and project risk assessment." },
-            { "name": "Behavioural Finance", "desc": "Cognitive biases in investment decisions, prospect theory, herd behaviour, market anomalies, and investor psychology." },
-            { "name": "Private Equity and Wealth Management", "desc": "PE fund structure, deal sourcing, portfolio company management, HNI wealth advisory, and family office operations." }
+            {
+              "name": "Entrepreneurship Development",
+              "desc": "Common core. Startup ideation, business plan creation, funding strategies, and entrepreneurial ecosystem in India."
+            },
+            {
+              "name": "Business Ethics and Corporate Governance",
+              "desc": "Common core. Ethical frameworks, corporate social responsibility, board governance, and regulatory compliance."
+            },
+            {
+              "name": "Comprehensive Viva-Voce",
+              "desc": "Common core. Oral examination covering all four semesters of the MBA programme."
+            },
+            {
+              "name": "Financial Engineering",
+              "desc": "Structured products, synthetic instruments, securitization, and financial innovation for risk management."
+            },
+            {
+              "name": "Project Planning and Management",
+              "desc": "Capital project appraisal, feasibility analysis, project scheduling (PERT/CPM), and project risk assessment."
+            },
+            {
+              "name": "Behavioural Finance",
+              "desc": "Cognitive biases in investment decisions, prospect theory, herd behaviour, market anomalies, and investor psychology."
+            },
+            {
+              "name": "Private Equity and Wealth Management",
+              "desc": "PE fund structure, deal sourcing, portfolio company management, HNI wealth advisory, and family office operations."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Kurukshetra University MBA Finance graduates target roles across banking, capital markets, corporate finance, and advisory:\n\n**Industries:** Commercial banking, NBFC, insurance, equity research, corporate treasury, fintech, wealth management, and government finance departments\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Banking Officer, Tax Analyst, Equity Research Associate, Treasury Executive\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Credit Manager, Branch Manager (banking), Portfolio Analyst, Forex Analyst, Financial Controller\n\n**Senior roles (7+ years):** CFO (mid-market), VP Finance, Head of Treasury, Director of Credit Risk, Wealth Management Head\n\n**Employers:** PSU banks (SBI, PNB, BOB), private banks (HDFC, ICICI, Axis), NBFCs, insurance companies (LIC, HDFC Life), IT/ITES finance teams, and Haryana/NCR regional corporates.\n\n**Note:** As a public state university with NAAC A++ grade, the Kurukshetra MBA degree carries strong credibility for government and PSU recruitment. The Haryana/NCR region provides North India hiring access."
+      "body": "Kurukshetra University MBA Finance graduates target roles across banking, capital markets, corporate finance, and advisory:\n\n**Industries:** Commercial banking, NBFC, insurance, equity research, corporate treasury, fintech, wealth management, and government finance departments\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Banking Officer, Tax Analyst, Equity Research Associate, Treasury Executive\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Credit Manager, Branch Manager (banking), Portfolio Analyst, Forex Analyst, Financial Controller\n\n**Senior roles (7+ years):** CFO (mid-market), VP Finance, Head of Treasury, Director of Credit Risk, Wealth Management Head\n\n**Employers:** PSU banks (SBI, PNB, BOB), private banks (HDFC, ICICI, Axis), NBFCs, insurance companies (LIC, HDFC Life), IT/ITES finance teams, and Haryana/NCR regional corporates.\n\n**Note:** As a public state university with NAAC A++ grade, the Kurukshetra MBA degree carries strong credibility for government and PSU recruitment. The Haryana/NCR region provides North India hiring access.\n\n**Where to verify placement claims:** ask Kurukshetra University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Finance specialisation builds skills across capital markets, derivatives, banking, and wealth management:\n\n**Technical skills:**\n- Security Analysis: fundamental valuation (DCF, PE, PBV), technical chart patterns, bond yield computation, and stock screening\n- Derivatives Trading: options pricing (Black-Scholes basics), futures hedging, SEBI derivative regulations, and commodity derivative mechanics\n- Foreign Exchange: forex market operations, exchange rate forecasting, currency hedging instruments, and cross-border payment processing\n- Financial Engineering: structured product design, securitization mechanics, synthetic instrument construction, and risk transfer techniques\n\n**Applied skills:**\n- Corporate Restructuring: M&A valuation, demerger analysis, LBO structuring, and turnaround planning\n- Private Equity and Wealth Management: PE deal evaluation, portfolio company monitoring, HNI client advisory, and family office governance\n\n**Soft skills:** Presenting investment theses to committees, negotiating credit terms, managing audit relationships, and communicating financial risk to non-finance stakeholders."
@@ -58,38 +106,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Finance as the specialisation, issued by Kurukshetra University under UGC-DEB online mode standards.\n\nThe degree carries NAAC A++ accreditation (the highest possible grade) and UGC-DEB approval. As a public state university degree, it holds strong validity for government recruitment, PSU finance roles, banking promotions, UPSC eligibility, and private-sector corporate finance positions. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from Kurukshetra University Online MBA Finance students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Vikram S.",
-          "city": "Karnal",
-          "year": 2024,
-          "rating": 5,
-          "liked": "NAAC A++ public state university at Rs 1,02,000. The government-backed degree carries weight with PSU and banking employers in Haryana and NCR",
-          "disliked": "The online infrastructure is newer compared to private universities like Amity or Manipal. LMS could be more polished",
-          "body": "I specifically chose Kurukshetra because it is a public state university with the highest NAAC grade. For government job applications and banking promotions, a state university MBA carries credibility that private universities cannot match. The finance syllabus covers derivatives trading and financial engineering, which I did not expect at this price. The LMS works but is not flashy. The trade-off is worth it for the degree recognition."
-        },
-        {
-          "name": "Neha R.",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Private Equity and Wealth Management plus Behavioural Finance in Sem 4 added genuine depth beyond standard finance MBA subjects",
-          "disliked": "Kurukshetra is well-known in Haryana and parts of North India but brand recognition drops outside the region. National employers may ask about the university",
-          "body": "The finance curriculum surprised me. Security Analysis, Derivatives Trading, Financial Engineering, and Private Equity as separate papers, not modules. That is better coverage than some Rs 1.5L programmes. The NAAC A++ grade is the highest available. As a working professional in Delhi, the regional brand limitation is real but the degree quality is strong."
-        },
-        {
-          "name": "Amit G.",
-          "city": "Panipat",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Rs 25,500 per semester is genuinely affordable. Zero-cost EMI directly through the university helped with cash flow",
-          "disliked": "Recorded lecture quality varies. Some faculty deliver engaging content, others read from slides. Career services for online students need improvement",
-          "body": "At this price, expectations should be calibrated. The syllabus is strong on paper. Delivery quality is mixed. Some subjects had good recorded sessions, others felt rushed. The public university degree is legitimate and holds up for Haryana state government and PSU applications. If placement support and premium LMS matter more, budget for a more expensive programme."
-        }
-      ]
     },
     "faqs": [
       {
@@ -133,6 +149,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 30,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

@@ -19,27 +19,57 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Business Communication", "desc": "Professional writing, executive presentations, cross-functional communication, and stakeholder reporting skills." },
-            { "name": "Strategic Management", "desc": "Corporate strategy frameworks, competitive advantage, strategic planning, and business model analysis." },
-            { "name": "Master Thesis (Initial Phase)", "desc": "Research topic selection, literature review, methodology design, and initial data collection for the management research thesis." },
-            { "name": "AI for Business", "desc": "AI applications in business decision-making, ML fundamentals for managers, AI-driven process automation, and ethical AI considerations." },
-            { "name": "Analytics using Python", "desc": "Python basics for data analysis, pandas DataFrames, NumPy operations, data cleaning workflows, and introductory data manipulation for business analytics." },
-            { "name": "Marketing Analytics", "desc": "Campaign ROI measurement, customer segmentation analytics, marketing attribution models, CLV calculation, and A/B testing methodology." }
+            {
+              "name": "Business Communication",
+              "desc": "Professional writing, executive presentations, cross-functional communication, and stakeholder reporting skills."
+            },
+            {
+              "name": "Strategic Management",
+              "desc": "Corporate strategy frameworks, competitive advantage, strategic planning, and business model analysis."
+            },
+            {
+              "name": "Master Thesis (Initial Phase)",
+              "desc": "Research topic selection, literature review, methodology design, and initial data collection for the management research thesis."
+            },
+            {
+              "name": "AI for Business",
+              "desc": "AI applications in business decision-making, ML fundamentals for managers, AI-driven process automation, and ethical AI considerations."
+            },
+            {
+              "name": "Analytics using Python",
+              "desc": "Python basics for data analysis, pandas DataFrames, NumPy operations, data cleaning workflows, and introductory data manipulation for business analytics."
+            },
+            {
+              "name": "Marketing Analytics",
+              "desc": "Campaign ROI measurement, customer segmentation analytics, marketing attribution models, CLV calculation, and A/B testing methodology."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Business Ethics and CSR", "desc": "Ethical decision-making frameworks, CSR strategy, stakeholder theory, corporate governance, and sustainability reporting." },
-            { "name": "Master Thesis (Final Phase)", "desc": "Data analysis, findings presentation, thesis writing, and faculty-supervised defence of the management research project." },
-            { "name": "Data Visualization", "desc": "Dashboard design principles, chart selection for different data types, data storytelling frameworks, and executive reporting with visual analytics." },
-            { "name": "Decision Modelling with Spreadsheets", "desc": "Excel-based optimisation models, scenario analysis, sensitivity tables, simulation for business decisions, and what-if analysis frameworks." }
+            {
+              "name": "Business Ethics and CSR",
+              "desc": "Ethical decision-making frameworks, CSR strategy, stakeholder theory, corporate governance, and sustainability reporting."
+            },
+            {
+              "name": "Master Thesis (Final Phase)",
+              "desc": "Data analysis, findings presentation, thesis writing, and faculty-supervised defence of the management research project."
+            },
+            {
+              "name": "Data Visualization",
+              "desc": "Dashboard design principles, chart selection for different data types, data storytelling frameworks, and executive reporting with visual analytics."
+            },
+            {
+              "name": "Decision Modelling with Spreadsheets",
+              "desc": "Excel-based optimisation models, scenario analysis, sensitivity tables, simulation for business decisions, and what-if analysis frameworks."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Galgotias MBA Business Analytics graduates target data-driven management roles:\n\n**Industries:** IT services, banking, e-commerce, retail, telecom, FMCG, healthcare analytics, and consulting\n\n**Entry-level roles:** Business Analyst, Data Analyst, MIS Executive, Reporting Analyst, Marketing Analytics Associate, BI Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Business Analyst, Analytics Manager, BI Manager, Marketing Analytics Lead, Data Strategy Manager\n\n**Senior roles (7+ years):** Head of Analytics, VP Data Strategy, Director of BI, Chief Analytics Officer\n\n**Employers:** IT services (TCS, Infosys, Wipro, Cognizant), banking (HDFC, ICICI, Axis analytics teams), e-commerce (Flipkart, Amazon India), and NCR-region corporates.\n\n**Note:** Galgotias provides career support. Online MBA brand recognition is developing. The Delhi-NCR location provides regional recruiter access."
+      "body": "Galgotias MBA Business Analytics graduates target data-driven management roles:\n\n**Industries:** IT services, banking, e-commerce, retail, telecom, FMCG, healthcare analytics, and consulting\n\n**Entry-level roles:** Business Analyst, Data Analyst, MIS Executive, Reporting Analyst, Marketing Analytics Associate, BI Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Business Analyst, Analytics Manager, BI Manager, Marketing Analytics Lead, Data Strategy Manager\n\n**Senior roles (7+ years):** Head of Analytics, VP Data Strategy, Director of BI, Chief Analytics Officer\n\n**Employers:** IT services (TCS, Infosys, Wipro, Cognizant), banking (HDFC, ICICI, Axis analytics teams), e-commerce (Flipkart, Amazon India), and NCR-region corporates.\n\n**Note:** Galgotias provides career support. Online MBA brand recognition is developing. The Delhi-NCR location provides regional recruiter access.\n\n**Where to verify placement claims:** ask Galgotias University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Business Analytics specialisation builds both analytical and management skills:\n\n**Technical skills:**\n- Python Analytics: pandas data wrangling, NumPy calculations, data cleaning automation, and basic data pipeline construction\n- Marketing Analytics: campaign ROI calculation, attribution model comparison, customer segmentation design, and CLV estimation\n- Data Visualization: dashboard layout design, chart type selection, KPI tracking display, and executive data storytelling\n- Decision Modelling: Excel Solver application, scenario planning, sensitivity analysis tables, and Monte Carlo simulation basics\n\n**Applied skills:**\n- AI for Business: AI use-case identification, build-vs-buy evaluation for AI tools, and ML output interpretation for management decisions\n- Master Thesis: structured research methodology, data collection design, findings synthesis, and academic report writing\n\n**Soft skills:** Presenting analytics findings to non-technical stakeholders, managing analytics project timelines, translating data insights into business recommendations, and facilitating data-driven decision-making workshops."
@@ -52,38 +82,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Business Analytics as the specialisation, issued by Galgotias University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A+ accreditation and UGC-DEB approval. Valid for government recruitment, PSU applications, and private-sector analytics roles. WES recognised. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from Galgotias Online MBA Business Analytics students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Rohit K.",
-          "city": "Greater Noida",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Analytics using Python and AI for Business at a sub-₹1L total fee is genuinely hard to find elsewhere. The fee is the main draw",
-          "disliked": "No bundled perks at all. Other programmes at 2x the fee include Coursera Plus or certifications. Here you get nothing beyond the degree",
-          "body": "I chose Galgotias because the fee is unbeatable for an analytics MBA with Python content. At a sub-₹1L total, it is less than half of CU or JIIT. The Python module is introductory but gives enough to build basic dashboards. AI for Business was useful for understanding what AI tools can do for my team. The trade-off is clear: you save money but get no perks, no university-financed EMI, and limited brand recognition."
-        },
-        {
-          "name": "Neha S.",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Master Thesis split across two semesters gives more time for quality research than a single-semester capstone",
-          "disliked": "LMS is functional but basic. The interface feels dated compared to platforms like Amity or Manipal. Content delivery could be more polished",
-          "body": "The curriculum is solid for the price. Marketing Analytics and Data Visualization subjects were directly applicable to my marketing role. The Master Thesis forced me to do structured research which improved my analytical thinking. At a sub-₹1L total I cannot complain about the fee. But if your employer checks university brand reputation, Galgotias online MBA is not in the same tier as Amity or MAHE."
-        },
-        {
-          "name": "Sanjay P.",
-          "city": "Lucknow",
-          "year": 2023,
-          "rating": 3.8,
-          "liked": "Decision Modelling with Spreadsheets was practical. Excel-based optimisation is what I actually use daily in my operations role",
-          "disliked": "Career services for online MBA are minimal. The placement team focuses on on-campus students. Online learners are largely on their own",
-          "body": "The programme delivers on its price promise. At a sub-₹1L total you get Python, AI basics, and analytics subjects that cost ₹1.6-2.9L at other universities. The delivery quality is adequate, not premium. Faculty engagement varies. The Master Thesis was a genuine learning experience. My main concern is placement support, which is essentially absent for online students."
-        }
-      ]
     },
     "faqs": [
       {
@@ -127,6 +125,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 24,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

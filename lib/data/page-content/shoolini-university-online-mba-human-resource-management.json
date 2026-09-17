@@ -77,7 +77,7 @@
       ]
     },
     "whoHires": {
-      "body": "HRM MBA graduates from Shoolini University Online are hired across industries requiring structured people management:\n\n**Industries:** IT services, BFSI, manufacturing, FMCG, healthcare, retail, logistics, hospitality, and government PSUs\n\n**Entry-level roles:** HR Executive, Talent Acquisition Specialist, L&D Coordinator, HR Generalist, Payroll Executive, Employee Engagement Associate\n\n**Mid-level roles (3-5 years experience):** HR Manager, Talent Acquisition Manager, L&D Manager, HRBP (HR Business Partner), Compensation and Benefits Manager, Industrial Relations Manager\n\n**Senior roles (7+ years):** HR Director, VP Human Resources, Chief People Officer, Head of Talent Management, Head of L&D, Global HRBP\n\n**Top hiring organisations:** Infosys, TCS, Wipro, HCL, Accenture, Deloitte, KPMG, SBI, HDFC Bank, ICICI Bank, Bajaj Auto, Hero MotoCorp, Maruti Suzuki, Apollo Hospitals, Fortis Healthcare, and mid-market companies across Punjab, Haryana, Himachal Pradesh, and Uttarakhand manufacturing corridors"
+      "body": "This HRM MBA syllabus maps to the following industries requiring structured people management:\n\n**Industries:** IT services, BFSI, manufacturing, FMCG, healthcare, retail, logistics, hospitality, and government PSUs\n\n**Entry-level roles:** HR Executive, Talent Acquisition Specialist, L&D Coordinator, HR Generalist, Payroll Executive, Employee Engagement Associate\n\n**Mid-level roles (3-5 years experience):** HR Manager, Talent Acquisition Manager, L&D Manager, HRBP (HR Business Partner), Compensation and Benefits Manager, Industrial Relations Manager\n\n**Senior roles (7+ years):** HR Director, VP Human Resources, Chief People Officer, Head of Talent Management, Head of L&D, Global HRBP\n\n**Where to verify placement claims:** ask Shoolini University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The HRM specialisation builds skills that IT, manufacturing, and BFSI employers test at HR executive and manager levels:\n\n**Technical skills:**\n- Talent Acquisition: job description writing, structured interview frameworks, competency-based assessment design, and ATS navigation\n- Performance Management: KRA and KPI setting, OKR frameworks, 360-degree feedback process design, and performance improvement plan writing\n- Compensation Design: CTC structuring, variable pay design, benefits benchmarking, and salary band construction\n- Labour Law: Industrial Disputes Act, Shops and Establishments Act, PF and ESIC compliance, and contract labour management\n\n**Applied skills:**\n- HR Analytics: attrition modelling, workforce planning spreadsheets, HR dashboard design, and HRIS data interpretation\n- L&D: training need analysis, learning pathway design, ROI of training measurement, and e-learning platform management\n\n**Soft skills:** Mediating grievance resolution between employees and management, conducting sensitive performance conversations, presenting headcount and attrition data to senior leadership, and building trust-based relationships across organisational hierarchies."
@@ -90,38 +90,6 @@
     },
     "certificate": {
       "body": "Graduates receive a Shoolini University MBA degree certificate with Human Resource Management noted on the marksheet, issued under UGC-DEB 2020 online mode standards. NIRF #69 University and NAAC A+ accreditation are recognised by IT companies, BFSI employers, and manufacturing sector HR departments across India.\n\nDigiLocker verification is available. The degree satisfies management degree requirements for HR Manager promotions at PSUs, IT companies, and banks that specify a recognised UGC-DEB entitled university qualification. LinkedIn Learning and KPMG certifications add measurable professional development credentials alongside the core degree."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Shoolini University Online MBA HRM alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Kavita S.",
-          "city": "Shimla",
-          "year": 2025,
-          "rating": 5,
-          "liked": "PAP structure was ideal for a career-transition candidate - paid post-placement as promised",
-          "disliked": "Industrial relations content could go deeper on specific state-level labour laws for Himachal Pradesh",
-          "body": "I was transitioning from an admin role to HR at a manufacturing company in Himachal Pradesh. The PAP structure removed the financial risk from my career change - I paid Rs 30,000 post-placement only after securing my HR Executive role. Performance management and talent acquisition subjects were directly applicable. LinkedIn Learning HR courses supplemented the programme content well. NAAC A+ from Shoolini satisfied my new employer's degree requirement for the HR designation."
-        },
-        {
-          "name": "Anand P.",
-          "city": "Chandigarh",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Compensation design and HR analytics subjects were genuinely practical for my HRBP work",
-          "disliked": "Some faculty live sessions had audio quality issues on the LMS platform",
-          "body": "I work as an HRBP at an IT services company and enrolled to formalise my HR credential. Compensation benchmarking, OKR framework, and 360-degree feedback process design subjects matched exactly what I do at work. KPMG certification improved my profile for internal promotion discussions. NAAC A+ from NIRF #69 University 2025 Shoolini satisfied my company's MBA eligibility requirement for the senior HRBP role. Zero-cost EMI made the opt-out track at Rs 1,30,000 very accessible."
-        },
-        {
-          "name": "Meera K.",
-          "city": "Ludhiana",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Labour law content covered PF, ESIC, and contract labour compliance practically",
-          "disliked": "Placement support varied - more relevant for IT sector than manufacturing, which is my industry",
-          "body": "I manage HR compliance for a manufacturing unit in Ludhiana and needed the management degree for my company's internal promotion criteria. Labour law coverage - PF and ESIC compliance, Industrial Disputes Act, Shops Act - was directly applicable. Statistics for Management in Sem 2 helped me build basic attrition tracking models. The Rs 1,30,000 opt-out fee at NAAC A+ was the right price-quality combination for my situation."
-        }
-      ]
     },
     "faqs": [
       {
@@ -147,7 +115,7 @@
     ],
     "chooseAlternatives": {
       "chooseIf": [
-        "You want a Pay After Placement option for your HRM MBA — the only one available from a UGC-DEB approved online university.",
+        "You want a Pay After Placement option for your HRM MBA, the only one available from a UGC-DEB approved online university.",
         "Your budget is Rs 1,30,000 or below (opt-out track) with NAAC A+ and NIRF #69.",
         "You are in HR, admin, or operations in North India targeting a formal management credential for manager-level promotion.",
         "You value LinkedIn Learning and KPMG certifications bundled with your degree."
@@ -164,6 +132,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 18,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

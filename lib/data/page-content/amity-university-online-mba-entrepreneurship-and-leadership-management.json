@@ -19,7 +19,7 @@
       "note": "EdifyEdu has not yet received the detailed Sem 3-4 subject list for this specialisation. The subject list will be updated when Amity publishes the full spec curriculum. Contact Amity directly for the current Sem 3-4 subject list before enrolling."
     },
     "whoHires": {
-      "body": "Entrepreneurship and Leadership Management MBA graduates from Amity University Online are hired across these industries and roles:\n\n**Industries:** Growth-stage startups, Corporate innovation, PE-backed portfolio companies, Family businesses, Conglomerates\n\n**Entry-level roles:** Innovation Analyst, Management Trainee (startup), Business Development Associate, Strategy Analyst\n\n**Mid-level roles (3-5 years experience):** Head of Business Unit, VP Growth, Corporate Entrepreneur, Business Development Head\n\n**Senior roles (7+ years):** CEO (SME), COO (growth-stage company), Managing Director (family business), Country Manager\n\n**Top hiring organisations:** Tata Group intrapreneurship programmes, Mahindra Group, Sequoia India portfolio startups, PE-backed manufacturing companies, FMCG venture arms"
+      "body": "This Entrepreneurship and Leadership Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** Growth-stage startups, Corporate innovation, PE-backed portfolio companies, Family businesses, Conglomerates\n\n**Entry-level roles:** Innovation Analyst, Management Trainee (startup), Business Development Associate, Strategy Analyst\n\n**Mid-level roles (3-5 years experience):** Head of Business Unit, VP Growth, Corporate Entrepreneur, Business Development Head\n\n**Senior roles (7+ years):** CEO (SME), COO (growth-stage company), Managing Director (family business), Country Manager\n\n**Where to verify placement claims:** ask Amity University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Entrepreneurship and Leadership Management specialisation builds skills that founders and senior leaders apply in growth-stage organisations:\n\n**Technical skills:**\n- Entrepreneurial Judgment: evaluating market opportunities and making resource allocation decisions under uncertainty\n- Strategic Positioning: identifying competitive differentiation and building sustainable moats for growth-stage companies\n- Financial Discipline: gross margin management, working capital control, and financial signals of venture health\n\n**Applied skills:**\n- Leadership in Ambiguity: building and motivating teams during early-scale growth without rigid corporate processes\n- Stakeholder Management: managing investor, board, and employee relationships simultaneously as a founder-leader\n\n**Soft skills:** Founder-level communication, persuasive investor and board presentations, navigating the transition from individual contributor to team leader."
@@ -32,38 +32,6 @@
     },
     "certificate": {
       "body": "The Amity University degree certificate carries the Amity University name, the MBA designation, and identifies the online learning mode per UGC-DEB 2020 regulations. The Entrepreneurship and Leadership Management specialisation is noted on the marksheet and transcript. Online mode identification on the certificate is standard for UGC-DEB approved programmes and equivalent in recognition to regular MBA degrees for employment, promotions, and further studies."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Amity Online MBA Entrepreneurship and Leadership Management alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Vikram Reddy",
-          "city": "Hyderabad",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Leadership under ambiguity content was exactly what I needed to manage my first real management team at a startup",
-          "disliked": "Content on scaling from 10 to 100 employees was lighter than expected for a leadership-focused spec",
-          "body": "I co-founded a healthtech company and took this MBA to formalise my management knowledge. The leadership and entrepreneurship combination was the right choice — I was past the idea stage and needed frameworks for leading a team and making strategic resource decisions. The Amity degree gave me credibility when presenting to institutional investors who checked educational credentials."
-        },
-        {
-          "name": "Kavya Menon",
-          "city": "Chennai",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Strategic positioning content applied directly to the growth strategy reviews I lead as a business unit head",
-          "disliked": "More case content from Indian growth-stage companies would have been more immediately relatable",
-          "body": "I manage a new business unit at a large FMCG company. The entrepreneurship and leadership combination was perfect for an intrapreneur role — I apply both the venture-building mindset and the people leadership frameworks in every quarter review. The Amity NIRF #22 University 2025 degree was recognised by our Group HR when I applied for the senior role."
-        },
-        {
-          "name": "Rahul Gupta",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Financial discipline content specifically oriented to growth-stage companies was more useful than generic corporate finance",
-          "disliked": "Leadership development content could benefit from 360-degree assessment tools to make it more practical",
-          "body": "I was running my family's manufacturing business and needed both the entrepreneurship knowledge to grow and the leadership skills to manage our 80-person team through that growth. The combination worked. The MBA credential helped when we negotiated a bank line of credit — our banker specifically noted the management qualification during the credit committee review."
-        }
-      ]
     },
     "faqs": [
       {
@@ -94,9 +62,9 @@
         "You want a NIRF #22, NAAC A+ credential that is explicitly oriented to entrepreneurial leadership rather than generic corporate management."
       ],
       "consider": [
-        "You are in the early stages of a startup and need tactical venture-building content — the Digital Entrepreneurship spec covers idea validation and product launch in more depth.",
-        "You are targeting a specific corporate functional role (Finance, HR, Marketing) rather than an entrepreneurial leadership track — a functional specialisation is more credible to domain-specific employers.",
-        "You want premium brand recognition for senior leadership roles at MNCs or consulting firms — NMIMS Online or Symbiosis Online have stronger brand in those specific hiring contexts."
+        "You are in the early stages of a startup and need tactical venture-building content. The Digital Entrepreneurship spec covers idea validation and product launch in more depth.",
+        "You are targeting a specific corporate functional role (Finance, HR, Marketing) rather than an entrepreneurial leadership track, a functional specialisation is more credible to domain-specific employers.",
+        "You want premium brand recognition for senior leadership roles at MNCs or consulting firms, NMIMS Online or Symbiosis Online have stronger brand in those specific hiring contexts."
       ]
     }
   },
@@ -105,6 +73,7 @@
     "generatedAt": "2026-04-21",
     "batchNumber": 9,
     "hasSyllabusData": false,
-    "phase71Updated": "2026-04-21"
+    "phase71Updated": "2026-04-21",
+    "claimSweep": "2026-09-17"
   }
 }

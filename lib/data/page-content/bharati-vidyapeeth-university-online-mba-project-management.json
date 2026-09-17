@@ -18,7 +18,7 @@
       "note": "Detailed Sem 3-4 curriculum for Bharati Vidyapeeth's Project Management specialisation is shared at admission. Our counsellor can share the current subject list within 24 hours."
     },
     "whoHires": {
-      "body": "Project Management MBA graduates from Bharati Vidyapeeth Online target roles across IT, infrastructure, and consulting:\n\n**Industries:** IT/ITES project delivery, construction and infrastructure, consulting firms, banking transformation programmes, product development companies, manufacturing project teams, and government project implementation units\n\n**Entry-level roles:** Project Coordinator, Associate Project Manager, PMO Analyst, Business Analyst, Scrum Master (junior), Implementation Associate\n\n**Mid-level roles (3-5 years):** Project Manager, Programme Coordinator, PMO Lead, Agile Coach, Delivery Manager, Implementation Manager\n\n**Senior roles (7+ years):** Director of Programme Management, VP Delivery, Head of PMO, Chief Projects Officer, Director of Infrastructure Projects\n\n**Employers:** TCS, Infosys, Wipro, Persistent Systems (Pune), Cyient, L&T InfoTech, construction companies, infrastructure firms, Accenture delivery, Cognizant project management, and Pune-based IT services companies with large project delivery teams."
+      "body": "Project Management MBA graduates from Bharati Vidyapeeth Online target roles across IT, infrastructure, and consulting:\n\n**Industries:** IT/ITES project delivery, construction and infrastructure, consulting firms, banking transformation programmes, product development companies, manufacturing project teams, and government project implementation units\n\n**Entry-level roles:** Project Coordinator, Associate Project Manager, PMO Analyst, Business Analyst, Scrum Master (junior), Implementation Associate\n\n**Mid-level roles (3-5 years):** Project Manager, Programme Coordinator, PMO Lead, Agile Coach, Delivery Manager, Implementation Manager\n\n**Senior roles (7+ years):** Director of Programme Management, VP Delivery, Head of PMO, Chief Projects Officer, Director of Infrastructure Projects\n\n**Employers:** TCS, Infosys, Wipro, Persistent Systems (Pune), Cyient, L&T InfoTech, construction companies, infrastructure firms, Accenture delivery, Cognizant project management, and Pune-based IT services companies with large project delivery teams.\n\n**Where to verify placement claims:** ask Bharati Vidyapeeth (Deemed to be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Project Management specialisation builds skills that IT companies, construction firms, and consulting organisations test at project manager and delivery manager levels:\n\n**Technical skills:**\n- Project Planning: WBS creation, Gantt chart scheduling, critical path analysis, resource allocation, milestone tracking, and dependency management\n- Risk Management: risk identification frameworks, probability-impact matrices, risk response strategies, contingency planning, and risk register maintenance\n- Agile Methods: Scrum framework, sprint planning, Kanban boards, agile estimation, retrospective facilitation, and backlog management\n- Project Finance: project budgeting, earned value management (EVM), cost variance analysis, financial reporting for projects, and ROI justification\n\n**Applied skills:**\n- Stakeholder Management: stakeholder mapping, communication planning, expectation management, and conflict resolution in project contexts\n- Programme Management: multi-project coordination, portfolio prioritisation, resource sharing across projects, and programme-level reporting\n\n**Soft skills:** Leading cross-functional project teams, presenting project status to steering committees and sponsors, negotiating scope changes with clients, and managing vendor relationships in multi-vendor project environments."
@@ -31,38 +31,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate issued by Bharati Vidyapeeth (Deemed to be University) with Project Management noted on the marksheet. The certificate is issued under UGC-DEB 2020 standards. NAAC A+ accreditation and NIRF #59 ranking support employer recognition. The degree is valid for government jobs, PSU recruitment, and higher education. Bharati Vidyapeeth is WES recognised for international credential evaluation. The MBA supports PMP and PRINCE2 certification eligibility (separate exam registration with PMI/AXELOS required)."
-    },
-    "reviews": {
-      "intro": "Three reviews from Bharati Vidyapeeth Online MBA Project Management students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Amit",
-          "city": "Pune",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Project planning and risk management subjects were directly applicable to my IT delivery role at an IT park in Hinjewadi. Bharati Vidyapeeth's Pune legacy since 1964 carries recognition with IT services employers in the region",
-          "disliked": "Detailed syllabus was not visible on the website before I enrolled. Had to request it through the admissions team",
-          "body": "I manage projects at an IT services company in Pune. The PM specialisation covered planning, risk, agile, and stakeholder management at a practical level. Rs 1,60,000 with zero-cost EMI was affordable. The NAAC A+ credential satisfied my company's MBA eligibility requirement for the senior project manager promotion."
-        },
-        {
-          "name": "Pallavi",
-          "city": "Mumbai",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Agile methodology coverage was current and relevant. Earned value management content was useful for my construction project reporting role. Zero-cost EMI was a deciding factor",
-          "disliked": "Brand recognition in Mumbai is weaker compared to Symbiosis Pune for project management roles at top consulting firms",
-          "body": "I chose Bharati Vidyapeeth over general MBA options because the dedicated PM specialisation matches my career. Most online MBAs offer PM as one subject within operations. Here it is a full specialisation with Sem 3-4 devoted to project management topics. That focus is what I needed."
-        },
-        {
-          "name": "Girish",
-          "city": "Nashik",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Programme management and stakeholder coordination topics were useful for my multi-project coordination role. WES recognition adds international value",
-          "disliked": "NIRF #59 is outside top-50. LMS interface could be more polished. For PMP aspirants, the MBA does not replace formal PMP prep",
-          "body": "Functional PM MBA at a reasonable fee. The content covers the key PM knowledge areas. The trade-off is brand strength. For PM roles at top-tier consulting firms, stronger-branded institutions may be needed. For mid-level PM career progression in IT services and manufacturing, this delivers the required credential."
-        }
-      ]
     },
     "faqs": [
       {
@@ -104,6 +72,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 34,
     "hasSyllabusData": false,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

@@ -19,27 +19,57 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "International Business", "desc": "Global trade frameworks, cross-border market entry strategies, FDI analysis, and managing international operations." },
-            { "name": "Business Analytics and Business Modelling", "desc": "Quantitative business modelling, regression analysis, forecasting techniques, and data-driven decision-making frameworks." },
-            { "name": "Business Forecasting", "desc": "Demand forecasting methods, time series analysis, regression-based forecasting, and forecast accuracy measurement for operations planning." },
-            { "name": "ERP", "desc": "ERP implementation lifecycle, SAP and Oracle ERP module overview, change management for ERP rollouts, and ERP ROI assessment." },
-            { "name": "Education for Life", "desc": "Soft skills development, mindfulness, health and wellbeing, and holistic personal effectiveness for professionals." }
+            {
+              "name": "International Business",
+              "desc": "Global trade frameworks, cross-border market entry strategies, FDI analysis, and managing international operations."
+            },
+            {
+              "name": "Business Analytics and Business Modelling",
+              "desc": "Quantitative business modelling, regression analysis, forecasting techniques, and data-driven decision-making frameworks."
+            },
+            {
+              "name": "Business Forecasting",
+              "desc": "Demand forecasting methods, time series analysis, regression-based forecasting, and forecast accuracy measurement for operations planning."
+            },
+            {
+              "name": "ERP",
+              "desc": "ERP implementation lifecycle, SAP and Oracle ERP module overview, change management for ERP rollouts, and ERP ROI assessment."
+            },
+            {
+              "name": "Education for Life",
+              "desc": "Soft skills development, mindfulness, health and wellbeing, and holistic personal effectiveness for professionals."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Environment Sustainability and Governance", "desc": "ESG reporting frameworks, corporate sustainability strategy, carbon accounting basics, and governance obligations." },
-            { "name": "Project", "desc": "Applied industry operations project integrating specialisation knowledge with real-world process optimisation or supply chain problem-solving." },
-            { "name": "Operations Research", "desc": "Linear programming, transportation models, assignment models, queuing theory basics, and simulation techniques for operations decision-making." },
-            { "name": "Advanced Supply Chain Management", "desc": "Global supply chain design, supplier risk management, inventory optimisation models, S&OP integration, and supply chain resilience frameworks." },
-            { "name": "TQM", "desc": "Total Quality Management principles, Six Sigma DMAIC methodology, statistical process control, ISO 9001 quality management system, and lean manufacturing basics." }
+            {
+              "name": "Environment Sustainability and Governance",
+              "desc": "ESG reporting frameworks, corporate sustainability strategy, carbon accounting basics, and governance obligations."
+            },
+            {
+              "name": "Project",
+              "desc": "Applied industry operations project integrating specialisation knowledge with real-world process optimisation or supply chain problem-solving."
+            },
+            {
+              "name": "Operations Research",
+              "desc": "Linear programming, transportation models, assignment models, queuing theory basics, and simulation techniques for operations decision-making."
+            },
+            {
+              "name": "Advanced Supply Chain Management",
+              "desc": "Global supply chain design, supplier risk management, inventory optimisation models, S&OP integration, and supply chain resilience frameworks."
+            },
+            {
+              "name": "TQM",
+              "desc": "Total Quality Management principles, Six Sigma DMAIC methodology, statistical process control, ISO 9001 quality management system, and lean manufacturing basics."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Operations Management MBA graduates from Amrita Vishwa Vidyapeetham Online are hired across India's manufacturing, logistics, and supply chain sector:\n\n**Industries:** Automotive manufacturing, FMCG supply chain, e-commerce logistics, pharma manufacturing, steel and metals, IT services delivery operations, and consulting (operations practice)\n\n**Entry-level roles:** Operations Executive, Supply Chain Analyst, Production Supervisor (management trainee track), ERP Business Analyst, Procurement Analyst, Quality Analyst\n\n**Mid-level roles (3-5 years experience):** Operations Manager, Supply Chain Manager, Plant Manager (mid-scale), ERP Project Manager, Procurement Manager, Quality Manager\n\n**Senior roles (7+ years):** VP Operations, Supply Chain Director, Head of Manufacturing, Chief Operating Officer (mid-market), VP Procurement, Head of Lean and Quality\n\n**Top hiring organisations:** Tata Motors, Maruti Suzuki, Mahindra Manufacturing, HUL supply chain, ITC supply chain, Flipkart logistics, Amazon India operations, Delhivery, Blue Dart, Dr Reddy's manufacturing, Lupin operations, TCS delivery operations, and operations consulting firms including McKinsey Ops, Deloitte Operations, and KPMG Supply Chain"
+      "body": "This Operations Management MBA syllabus maps to the following India's manufacturing, logistics, and supply chain sector:\n\n**Industries:** Automotive manufacturing, FMCG supply chain, e-commerce logistics, pharma manufacturing, steel and metals, IT services delivery operations, and consulting (operations practice)\n\n**Entry-level roles:** Operations Executive, Supply Chain Analyst, Production Supervisor (management trainee track), ERP Business Analyst, Procurement Analyst, Quality Analyst\n\n**Mid-level roles (3-5 years experience):** Operations Manager, Supply Chain Manager, Plant Manager (mid-scale), ERP Project Manager, Procurement Manager, Quality Manager\n\n**Senior roles (7+ years):** VP Operations, Supply Chain Director, Head of Manufacturing, Chief Operating Officer (mid-market), VP Procurement, Head of Lean and Quality\n\n**Where to verify placement claims:** ask Amrita Vishwa Vidyapeetham Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Operations Management specialisation builds skills that manufacturing, supply chain, and operations consulting employers test at analyst and manager levels:\n\n**Technical skills:**\n- Business Forecasting: exponential smoothing, ARIMA basics, demand sensing, forecast accuracy KPIs (MAPE, MAD), and S&OP process design\n- ERP: SAP MM and PP module overview, Oracle SCM basics, ERP implementation project stages, business process mapping for ERP, and user acceptance testing management\n- Operations Research: linear programming formulation and solver usage, transportation problem setup, assignment model application, and waiting line model analysis\n- TQM and Six Sigma: DMAIC project structure, control chart interpretation, process capability analysis, root cause analysis tools (5-Why, fishbone), and ISO 9001 audit readiness\n\n**Applied skills:**\n- Supply Chain Management: inventory policy design (EOQ, safety stock), supplier scorecard design, network optimisation basics, and supply chain risk heat mapping\n- Process Improvement: value stream mapping, waste identification in manufacturing and services, lean project framing, and Kaizen event facilitation\n\n**Soft skills:** Leading cross-functional operations improvement projects, communicating process change to plant floor teams, managing vendor relationship and escalations, presenting operations KPIs to board and executive committees, and driving ERP adoption across resistant operational teams."
@@ -52,38 +82,6 @@
     },
     "certificate": {
       "body": "Graduates receive an Amrita Vishwa Vidyapeetham MBA degree certificate with Operations Management noted on the marksheet, issued under UGC-DEB 2020 online mode standards.\n\nNAAC A++ and NIRF #8 University 2025 are the strongest institutional credentials in India's online MBA space. WES recognition gives formal degree equivalence in the USA and Canada - relevant for operations professionals targeting global manufacturing companies, MNC supply chain roles, or Canadian PR pathways. DigiLocker verification is available."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Amrita Vishwa Vidyapeetham Online MBA Operations Management alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Suresh P.",
-          "city": "Pune",
-          "year": 2025,
-          "rating": 4,
-          "liked": "Advanced Supply Chain Management subject gave me the S&OP and inventory optimisation frameworks I apply directly in my automotive OEM role",
-          "disliked": "ERP content covered SAP module overview well but hands-on SAP sandbox access would have made it more practically actionable",
-          "body": "I manage supply chain operations at an automotive component manufacturer. The Business Forecasting, Advanced Supply Chain, and TQM subjects were directly applicable to my daily operations work. NAAC A++ from NIRF #8 is the strongest credential available in online MBA space - it cleared the management degree filter at every manufacturing firm I interviewed with. Zero-cost EMI made the Rs 2,24,000 tuition manageable on my existing salary."
-        },
-        {
-          "name": "Anand K.",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Operations Research subject gave me the LP and simulation frameworks that e-commerce logistics planning relies on",
-          "disliked": "TQM subject content was thorough but updated case studies from e-commerce fulfilment centres would make it more relevant for digital operations roles",
-          "body": "I moved from a technology role to an operations management track at an e-commerce logistics company using this MBA. The Operations Research and Advanced Supply Chain subjects were directly applicable. NAAC A++ from NIRF #8 is recognised at every MNC operations employer I engaged with. Study Abroad option was available and I used the Institut Mines Telecom France exchange to build a European supply chain network."
-        },
-        {
-          "name": "Lakshmi M.",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "TQM and Six Sigma content gave me the quality management framework to lead our ISO 9001 re-certification project",
-          "disliked": "Business Forecasting content was strong on statistical methods but would benefit from demand sensing and real-time analytics tools integration",
-          "body": "I work in quality management at a pharma manufacturing company. TQM, Business Forecasting, and ERP subjects were directly applicable to my plant operations role. NAAC A++ cleared the education quality filter at every pharma MNC I approached. WES recognition is relevant for my target of a global supply chain role in the US market within 3 years."
-        }
-      ]
     },
     "faqs": [
       {
@@ -126,6 +124,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 19,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

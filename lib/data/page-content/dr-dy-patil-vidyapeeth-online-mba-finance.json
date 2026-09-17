@@ -19,24 +19,45 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Capital Market", "desc": "Primary and secondary market structure, SEBI regulatory framework, stock exchange operations, IPO process, and capital market instruments (equity, debt, derivatives overview)." },
-            { "name": "Financial Institutions and Services", "desc": "Banking system structure, NBFC regulation, insurance sector overview, mutual fund operations, pension fund basics, and financial services distribution channels." },
-            { "name": "Management of Financial Services", "desc": "Financial product design, distribution channel management, customer relationship in financial services, compliance frameworks, and financial services marketing." },
-            { "name": "Advanced Financial Management", "desc": "Capital budgeting techniques (NPV, IRR, payback), cost of capital estimation (WACC), dividend policy theories, working capital management, and corporate restructuring basics." }
+            {
+              "name": "Capital Market",
+              "desc": "Primary and secondary market structure, SEBI regulatory framework, stock exchange operations, IPO process, and capital market instruments (equity, debt, derivatives overview)."
+            },
+            {
+              "name": "Financial Institutions and Services",
+              "desc": "Banking system structure, NBFC regulation, insurance sector overview, mutual fund operations, pension fund basics, and financial services distribution channels."
+            },
+            {
+              "name": "Management of Financial Services",
+              "desc": "Financial product design, distribution channel management, customer relationship in financial services, compliance frameworks, and financial services marketing."
+            },
+            {
+              "name": "Advanced Financial Management",
+              "desc": "Capital budgeting techniques (NPV, IRR, payback), cost of capital estimation (WACC), dividend policy theories, working capital management, and corporate restructuring basics."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "International Finance", "desc": "Foreign exchange market mechanics, exchange rate determination, international capital budgeting, foreign exchange risk management (hedging instruments), and international financial institutions." },
-            { "name": "Strategic Financial Management", "desc": "Financial strategy alignment with corporate strategy, M&A valuation, leveraged buyout basics, financial distress management, and shareholder value creation frameworks." },
-            { "name": "Project Work", "desc": "Industry-linked finance project. Typically a company valuation, capital structure analysis, or financial services product feasibility study." }
+            {
+              "name": "International Finance",
+              "desc": "Foreign exchange market mechanics, exchange rate determination, international capital budgeting, foreign exchange risk management (hedging instruments), and international financial institutions."
+            },
+            {
+              "name": "Strategic Financial Management",
+              "desc": "Financial strategy alignment with corporate strategy, M&A valuation, leveraged buyout basics, financial distress management, and shareholder value creation frameworks."
+            },
+            {
+              "name": "Project Work",
+              "desc": "Industry-linked finance project. Typically a company valuation, capital structure analysis, or financial services product feasibility study."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "DPU-COL MBA Finance graduates enter roles across banking, corporate finance, and financial services:\n\n**Industries:** Commercial banking, investment banking (associate level), NBFC, insurance, mutual funds, corporate treasury, equity research, and financial consulting\n\n**Entry-level roles:** Financial Analyst, Banking Officer, Credit Analyst, Equity Research Associate, Treasury Operations Executive, Insurance Underwriting Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Credit Manager, Branch Manager (banking), Fund Manager (junior), Treasury Manager, Financial Controller\n\n**Senior roles (7+ years):** CFO (mid-market), VP Finance, Head of Treasury, Head of Credit Risk, Director of Financial Planning\n\n**Employers:** Banks (HDFC Bank, ICICI Bank, SBI, Axis Bank), NBFCs (Bajaj Finance, Muthoot), insurance (LIC, HDFC Life, ICICI Prudential), mutual funds (SBI MF, HDFC MF), and corporate finance teams at Tata, Reliance, Infosys, TCS.\n\n**Note:** DPU-COL provides placement assistance for all MBA programmes."
+      "body": "DPU-COL MBA Finance graduates enter roles across banking, corporate finance, and financial services:\n\n**Industries:** Commercial banking, investment banking (associate level), NBFC, insurance, mutual funds, corporate treasury, equity research, and financial consulting\n\n**Entry-level roles:** Financial Analyst, Banking Officer, Credit Analyst, Equity Research Associate, Treasury Operations Executive, Insurance Underwriting Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Credit Manager, Branch Manager (banking), Fund Manager (junior), Treasury Manager, Financial Controller\n\n**Senior roles (7+ years):** CFO (mid-market), VP Finance, Head of Treasury, Head of Credit Risk, Director of Financial Planning\n\n**Employers:** Banks (HDFC Bank, ICICI Bank, SBI, Axis Bank), NBFCs (Bajaj Finance, Muthoot), insurance (LIC, HDFC Life, ICICI Prudential), mutual funds (SBI MF, HDFC MF), and corporate finance teams at Tata, Reliance, Infosys, TCS.\n\n**Note:** DPU-COL provides placement assistance for all MBA programmes.\n\n**Where to verify placement claims:** ask Dr. D.Y. Patil Vidyapeeth, Pune – Centre for Online Learning (DPU-COL) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Finance specialisation builds skills across financial analysis, capital markets, and strategic finance:\n\n**Technical skills:**\n- Capital Market: SEBI compliance documentation, IPO prospectus analysis, secondary market trading mechanics, and derivative instrument basics\n- Financial Analysis: NPV and IRR calculation, WACC estimation, ratio analysis, DuPont analysis, and financial modelling fundamentals\n- International Finance: forex hedging strategy selection (forwards, options, swaps), cross-currency valuation adjustments, and international capital budgeting\n- Financial Services: loan product structuring, credit risk scoring methodology, mutual fund NAV calculation, and insurance product design basics\n\n**Applied skills:**\n- Strategic Finance: M&A target screening, DCF valuation methodology, LBO model structure, and shareholder value analysis\n- Treasury Management: cash flow forecasting, working capital optimisation, and fund investment portfolio oversight\n\n**Soft skills:** Presenting financial analysis to board and audit committees, negotiating credit terms with borrowers, managing regulatory relationships with SEBI and RBI, and communicating investment theses to non-finance stakeholders."
@@ -50,38 +71,6 @@
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Finance as the specialisation, issued by Dr. D.Y. Patil Vidyapeeth, Pune (DPU-COL) under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation and NIRF #41 University rank. It is valid for banking officer promotions, PSU finance officer recruitment, SEBI-registered entity compliance roles, and private-sector corporate finance positions. edX certifications supplement the MBA credential. DigiLocker issuance is standard."
     },
-    "reviews": {
-      "intro": "Three verified reviews from DPU-COL Online MBA Finance alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Sandeep G.",
-          "city": "Mumbai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Capital Market and Advanced Financial Management subjects were directly applicable to my equity research associate work",
-          "disliked": "Financial modelling was covered conceptually but not with Excel hands-on — a financial modelling lab session would strengthen the programme",
-          "body": "I work as an equity research associate at a brokerage. The capital market, financial services, and strategic financial management subjects gave me the structured framework beyond the CFA preparation material I was studying. NAAC A++ and NIRF #41 satisfied my employer's credential requirements. The zero-cost EMI from ₹2,500/month was critical for me."
-        },
-        {
-          "name": "Priyanka D.",
-          "city": "Pune",
-          "year": 2024,
-          "rating": 4,
-          "liked": "International Finance was the most valuable module — forex hedging and international capital budgeting are directly relevant to my treasury role at a pharma company",
-          "disliked": "More case studies from Indian companies would improve the strategic financial management module — the examples leaned toward international cases",
-          "body": "I manage treasury operations at a mid-size pharma exporter. The international finance and advanced financial management subjects were directly applicable to my forex exposure management and capital allocation decisions. DPU being in Pune made the occasional workshop attendance convenient."
-        },
-        {
-          "name": "Kiran M.",
-          "city": "Hyderabad",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Financial Institutions and Services subject provided a comprehensive overview of the BFSI sector structure — useful for my banking career planning",
-          "disliked": "FinTech and digital banking content was limited — the finance curriculum needs a module on UPI, digital lending, and neobanking trends",
-          "body": "I completed this MBA to transition from a back-office banking role to a branch management track. The capital market, financial services, and credit analysis content gave me the knowledge base for the internal assessment. NIRF #41 and NAAC A++ were accepted by my bank's HR without any credential verification issues."
-        }
-      ]
-    },
     "faqs": [
       {
         "question": "Does the Finance MBA cover both banking and corporate finance?",
@@ -89,7 +78,7 @@
       },
       {
         "question": "How does DPU Finance compare to NMIMS Finance?",
-        "answer": "NMIMS carries legacy brand weight in the banking and finance sector from its campus MBA reputation. DPU holds NAAC A++ and NIRF #41 — stronger on accreditation metrics. NMIMS does not hold NIRF university rank. Fee is comparable (NMIMS approximately ₹1,80,000 vs DPU ₹1,89,400). Choose NMIMS if the brand name carries weight with your specific employer. Choose DPU if NIRF rank and NAAC A++ are the primary filters."
+        "answer": "NMIMS carries legacy brand weight in the banking and finance sector from its campus MBA reputation. DPU holds NAAC A++ and NIRF #41, stronger on accreditation metrics. NMIMS does not hold NIRF university rank. Fee is comparable (NMIMS approximately ₹1,80,000 vs DPU ₹1,89,400). Choose NMIMS if the brand name carries weight with your specific employer. Choose DPU if NIRF rank and NAAC A++ are the primary filters."
       },
       {
         "question": "Is the DPU Finance MBA valid for banking promotions?",
@@ -112,9 +101,9 @@
         "You need international finance and strategic finance depth alongside the BFSI foundation."
       ],
       "consider": [
-        "NIRF top 20 is your employer's filter — CU (NIRF #19) at ₹1,65,000 or Amrita (NIRF #8) at ₹2,20,000 are stronger options.",
+        "NIRF top 20 is your employer's filter, CU (NIRF #19) at ₹1,65,000 or Amrita (NIRF #8) at ₹2,20,000 are stronger options.",
         "NMIMS brand weight matters specifically in your banking employer context.",
-        "You need deep FinTech and digital banking coverage — consider DPU's FinTech Management spec."
+        "You need deep FinTech and digital banking coverage, consider DPU's FinTech Management spec."
       ]
     }
   },
@@ -123,6 +112,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 21,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

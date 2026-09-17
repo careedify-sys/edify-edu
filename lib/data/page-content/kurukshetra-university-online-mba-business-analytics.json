@@ -19,33 +19,81 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Strategic Management", "desc": "Common core. Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic planning process." },
-            { "name": "Optimization Models for Business Decisions", "desc": "Common core. Linear programming, transportation models, assignment problems, and quantitative decision-making tools." },
-            { "name": "Summer Training/Project Work", "desc": "Common core. Industry-based project applying management concepts to a real business problem." },
-            { "name": "Business Analysis using Excel", "desc": "Advanced Excel for business analytics: pivot tables, VLOOKUP, data visualization, statistical functions, and scenario analysis." },
-            { "name": "Econometrics for Business Forecasting", "desc": "Regression analysis, hypothesis testing, forecasting models, demand estimation, and econometric model building for business decisions." },
-            { "name": "Business Data Mining", "desc": "Classification, clustering, association rules, decision trees, and pattern recognition in business datasets." },
-            { "name": "Decision Modeling and Data Analysis", "desc": "Decision tree analysis, simulation models, sensitivity analysis, and data-driven decision frameworks." },
-            { "name": "Data Analytics using R", "desc": "R programming basics, data manipulation (dplyr), visualization (ggplot2), statistical testing, and reproducible analysis workflows." },
-            { "name": "Social Media Analytics", "desc": "Social listening tools, sentiment analysis, engagement metrics, influencer analytics, and social media ROI measurement." }
+            {
+              "name": "Strategic Management",
+              "desc": "Common core. Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic planning process."
+            },
+            {
+              "name": "Optimization Models for Business Decisions",
+              "desc": "Common core. Linear programming, transportation models, assignment problems, and quantitative decision-making tools."
+            },
+            {
+              "name": "Summer Training/Project Work",
+              "desc": "Common core. Industry-based project applying management concepts to a real business problem."
+            },
+            {
+              "name": "Business Analysis using Excel",
+              "desc": "Advanced Excel for business analytics: pivot tables, VLOOKUP, data visualization, statistical functions, and scenario analysis."
+            },
+            {
+              "name": "Econometrics for Business Forecasting",
+              "desc": "Regression analysis, hypothesis testing, forecasting models, demand estimation, and econometric model building for business decisions."
+            },
+            {
+              "name": "Business Data Mining",
+              "desc": "Classification, clustering, association rules, decision trees, and pattern recognition in business datasets."
+            },
+            {
+              "name": "Decision Modeling and Data Analysis",
+              "desc": "Decision tree analysis, simulation models, sensitivity analysis, and data-driven decision frameworks."
+            },
+            {
+              "name": "Data Analytics using R",
+              "desc": "R programming basics, data manipulation (dplyr), visualization (ggplot2), statistical testing, and reproducible analysis workflows."
+            },
+            {
+              "name": "Social Media Analytics",
+              "desc": "Social listening tools, sentiment analysis, engagement metrics, influencer analytics, and social media ROI measurement."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Entrepreneurship Development", "desc": "Common core. Startup ideation, business plan creation, funding strategies, and entrepreneurial ecosystem in India." },
-            { "name": "Business Ethics and Corporate Governance", "desc": "Common core. Ethical frameworks, corporate social responsibility, board governance, and regulatory compliance." },
-            { "name": "Comprehensive Viva-Voce", "desc": "Common core. Oral examination covering all four semesters of the MBA programme." },
-            { "name": "Financial Modelling", "desc": "Excel-based financial model construction, DCF valuation models, sensitivity tables, scenario analysis, and presentation of financial projections." },
-            { "name": "Predictive Analysis for Business Decision", "desc": "Predictive modelling techniques, logistic regression, random forests, model validation, and business application of prediction models." },
-            { "name": "Time Series Data Analysis", "desc": "ARIMA models, seasonal decomposition, moving averages, exponential smoothing, and forecasting accuracy metrics." },
-            { "name": "Applied Multivariate Analysis", "desc": "Factor analysis, principal component analysis, discriminant analysis, MANOVA, and multidimensional scaling for business research." }
+            {
+              "name": "Entrepreneurship Development",
+              "desc": "Common core. Startup ideation, business plan creation, funding strategies, and entrepreneurial ecosystem in India."
+            },
+            {
+              "name": "Business Ethics and Corporate Governance",
+              "desc": "Common core. Ethical frameworks, corporate social responsibility, board governance, and regulatory compliance."
+            },
+            {
+              "name": "Comprehensive Viva-Voce",
+              "desc": "Common core. Oral examination covering all four semesters of the MBA programme."
+            },
+            {
+              "name": "Financial Modelling",
+              "desc": "Excel-based financial model construction, DCF valuation models, sensitivity tables, scenario analysis, and presentation of financial projections."
+            },
+            {
+              "name": "Predictive Analysis for Business Decision",
+              "desc": "Predictive modelling techniques, logistic regression, random forests, model validation, and business application of prediction models."
+            },
+            {
+              "name": "Time Series Data Analysis",
+              "desc": "ARIMA models, seasonal decomposition, moving averages, exponential smoothing, and forecasting accuracy metrics."
+            },
+            {
+              "name": "Applied Multivariate Analysis",
+              "desc": "Factor analysis, principal component analysis, discriminant analysis, MANOVA, and multidimensional scaling for business research."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Kurukshetra University MBA Business Analytics graduates target roles across data analytics, business intelligence, and consulting:\n\n**Industries:** IT/ITES, BFSI, e-commerce, FMCG, consulting, healthcare analytics, telecom, and government data departments\n\n**Entry-level roles:** Business Analyst, Data Analyst, MIS Analyst, Analytics Associate, Market Research Analyst, BI Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Business Analyst, Analytics Manager, Data Science Associate, BI Manager, Forecasting Manager, Analytics Consultant\n\n**Senior roles (7+ years):** Head of Analytics, Director of BI, Chief Data Officer (mid-market), VP Analytics, Head of Decision Sciences\n\n**Employers:** IT companies (TCS, Infosys, Wipro analytics divisions), consulting firms (Mu Sigma, Fractal), banks, e-commerce platforms, and Haryana/NCR regional corporates.\n\n**Note:** As a public state university with NAAC A++, the Kurukshetra degree carries credibility for government analytics roles and PSU data departments. The quantitative depth (econometrics, multivariate analysis, time series) positions graduates for advanced analytics, not just reporting."
+      "body": "Kurukshetra University MBA Business Analytics graduates target roles across data analytics, business intelligence, and consulting:\n\n**Industries:** IT/ITES, BFSI, e-commerce, FMCG, consulting, healthcare analytics, telecom, and government data departments\n\n**Entry-level roles:** Business Analyst, Data Analyst, MIS Analyst, Analytics Associate, Market Research Analyst, BI Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Business Analyst, Analytics Manager, Data Science Associate, BI Manager, Forecasting Manager, Analytics Consultant\n\n**Senior roles (7+ years):** Head of Analytics, Director of BI, Chief Data Officer (mid-market), VP Analytics, Head of Decision Sciences\n\n**Employers:** IT companies (TCS, Infosys, Wipro analytics divisions), consulting firms (Mu Sigma, Fractal), banks, e-commerce platforms, and Haryana/NCR regional corporates.\n\n**Note:** As a public state university with NAAC A++, the Kurukshetra degree carries credibility for government analytics roles and PSU data departments. The quantitative depth (econometrics, multivariate analysis, time series) positions graduates for advanced analytics, not just reporting.\n\n**Where to verify placement claims:** ask Kurukshetra University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Business Analytics specialisation builds skills across data analysis, predictive modelling, and business intelligence:\n\n**Technical skills:**\n- R Programming: data wrangling (dplyr, tidyr), statistical visualization (ggplot2), hypothesis testing, and reproducible analysis\n- Excel Analytics: advanced pivot tables, Power Query, statistical functions, scenario modelling, and dashboard creation\n- Data Mining: classification (decision trees, random forests), clustering (k-means), association rule mining, and pattern detection\n- Econometrics: regression modelling, demand forecasting, elasticity estimation, and econometric model specification\n\n**Applied skills:**\n- Financial Modelling: DCF model construction, sensitivity analysis, scenario planning, and investor presentation preparation\n- Predictive Analytics: logistic regression for churn prediction, customer scoring models, model validation (AUC, confusion matrix), and business impact quantification\n- Time Series: ARIMA model fitting, seasonal adjustment, trend extraction, and forecasting accuracy evaluation\n\n**Soft skills:** Presenting analytical findings to non-technical stakeholders, translating data patterns into business recommendations, and managing analytics project timelines."
@@ -58,38 +106,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Business Analytics as the specialisation, issued by Kurukshetra University under UGC-DEB online mode standards.\n\nThe degree carries NAAC A++ accreditation (the highest possible grade) and UGC-DEB approval. As a public state university degree, it holds strong validity for government recruitment, PSU data/analytics roles, and private-sector analytics positions. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from Kurukshetra University Online MBA Business Analytics students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Manish K.",
-          "city": "Sonipat",
-          "year": 2024,
-          "rating": 5,
-          "liked": "NAAC A++ public university MBA at Rs 1,02,000. The degree from a government-backed state university carries credibility that private online MBAs cannot replicate for PSU and government analytics roles",
-          "disliked": "The R programming lab sessions could use more hands-on assignments. Theory coverage is solid but practical exercises need expansion",
-          "body": "I chose Kurukshetra for the NAAC A++ public university combination at this price. The analytics curriculum has genuine depth. Econometrics, Time Series, and Applied Multivariate Analysis are subjects you find in statistics MSc programmes, not typical MBA analytics tracks. Financial Modelling bridges analytics and finance well. The public university degree matters for my government sector career goals."
-        },
-        {
-          "name": "Anjali V.",
-          "city": "Gurgaon",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Predictive Analysis and Data Mining subjects covered practical modelling techniques. Social Media Analytics added a digital marketing dimension to the analytics programme",
-          "disliked": "Kurukshetra brand is strong in Haryana but not widely known in Bangalore or Mumbai tech circles. For MNC analytics roles in South India, the brand needs explaining",
-          "body": "The curriculum covers both Excel/R tool-based analytics and deeper statistical methods. That balance works for someone transitioning from business to analytics. Econometrics and multivariate analysis push the programme beyond basic BI. The regional brand limitation is real for tech-hub cities. In Haryana and NCR the Kurukshetra name is well-established. Nationally, lead with the NAAC A++ public university positioning."
-        },
-        {
-          "name": "Sanjay R.",
-          "city": "Panipat",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Rs 25,500 per semester for a NAAC A++ programme. Zero-cost EMI directly through the university with no NBFC involvement",
-          "disliked": "Python is not part of the curriculum. R is covered but Python is the industry standard for analytics. Some recorded sessions on data mining felt outdated",
-          "body": "The statistical and quantitative subjects are strong. Econometrics and time series are genuinely useful for forecasting roles. The gap is Python. R is covered but the analytics job market has shifted toward Python. You will need to self-learn Python alongside this programme. At Rs 1,02,000 from a NAAC A++ public university, the value is there. Just supplement with Python skills on your own."
-        }
-      ]
     },
     "faqs": [
       {
@@ -133,6 +149,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 30,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

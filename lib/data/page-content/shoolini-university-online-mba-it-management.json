@@ -77,7 +77,7 @@
       ]
     },
     "whoHires": {
-      "body": "IT Management MBA graduates from Shoolini University Online are hired across India's technology and tech-enabled sectors:\n\n**Industries:** IT services, BFSI technology divisions, e-commerce tech teams, consulting firms, manufacturing IT departments, healthcare IT, and edtech\n\n**Entry-level roles:** IT Project Coordinator, Business Analyst, Technology Manager (junior), ERP Consultant (junior), Product Analyst, Systems Analyst\n\n**Mid-level roles (3-5 years experience):** IT Project Manager, Product Manager, Technology Manager, ERP Implementation Manager, Digital Transformation Lead, IT Head (SME)\n\n**Senior roles (7+ years):** VP Technology, Chief Information Officer, Chief Technology Officer, Head of Digital, Director of IT, Chief Digital Officer\n\n**Top hiring organisations:** TCS, Infosys, Wipro, HCL, Tech Mahindra, Capgemini, Accenture, Cognizant, IBM India, HDFC Bank technology, ICICI Bank tech, Bajaj Finserv tech, Amazon India tech, Flipkart engineering, and mid-market IT services companies across Chandigarh, Mohali, and North India IT clusters"
+      "body": "This IT Management MBA syllabus maps to the following India's technology and tech-enabled sectors:\n\n**Industries:** IT services, BFSI technology divisions, e-commerce tech teams, consulting firms, manufacturing IT departments, healthcare IT, and edtech\n\n**Entry-level roles:** IT Project Coordinator, Business Analyst, Technology Manager (junior), ERP Consultant (junior), Product Analyst, Systems Analyst\n\n**Mid-level roles (3-5 years experience):** IT Project Manager, Product Manager, Technology Manager, ERP Implementation Manager, Digital Transformation Lead, IT Head (SME)\n\n**Senior roles (7+ years):** VP Technology, Chief Information Officer, Chief Technology Officer, Head of Digital, Director of IT, Chief Digital Officer\n\n**Where to verify placement claims:** ask Shoolini University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The IT Management specialisation builds skills that IT services, BFSI tech, and product companies test at manager and analyst levels:\n\n**Technical skills:**\n- IT Project Management: project charter writing, WBS creation, Agile sprint planning, JIRA board management, and project health reporting\n- Cybersecurity: ISO 27001 basics, data classification, access control policy writing, incident response process, and GDPR/IT Act compliance\n- Enterprise Systems: ERP implementation lifecycle, change management for ERP rollouts, system integration basics, and post-go-live support management\n- IT Governance: COBIT framework basics, IT audit readiness, vendor risk management, and SLA design for IT services\n\n**Applied skills:**\n- Product Management: PRD writing, user story mapping, product backlog prioritisation, and roadmap communication to engineering and business stakeholders\n- Digital Transformation: current-state process mapping, technology selection framework, change management playbook, and digital maturity assessment\n\n**Soft skills:** Translating technical constraints to non-technical business stakeholders, managing developer and vendor teams on deadline-driven projects, presenting IT investment cases to CFOs and boards, and facilitating technology adoption training for non-technical end users."
@@ -90,38 +90,6 @@
     },
     "certificate": {
       "body": "Graduates receive a Shoolini University MBA degree certificate with IT Management noted on the marksheet, issued under UGC-DEB 2020 online mode standards. NIRF #69 University and NAAC A+ carry recognition across India's IT services, BFSI technology, and digital employer base.\n\nLinkedIn Learning certificates earned alongside the programme are shareable on LinkedIn and recognised by technology employers as evidence of current skill development. DigiLocker verification is available for the degree."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Shoolini University Online MBA IT Management alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Arun T.",
-          "city": "Mohali",
-          "year": 2025,
-          "rating": 5,
-          "liked": "LinkedIn Learning cloud and project management certifications were directly applicable to my IT manager role",
-          "disliked": "AI and machine learning for IT managers was covered briefly - needed more depth given how rapidly this area is evolving",
-          "body": "I manage IT projects at an IT services company in Mohali. The combination of IT project management, agile delivery, and IT governance subjects gave me a structured management foundation to complement my technical background. LinkedIn Learning AWS basics and JIRA certification helped me lead cloud migration conversations with clients. PAP structure let me invest in the programme without large upfront risk. NAAC A+ from Shoolini cleared my company's MBA requirement for the Project Manager designation."
-        },
-        {
-          "name": "Kavita R.",
-          "city": "Chandigarh",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Cybersecurity governance and ISO 27001 basics were directly applicable to my compliance role",
-          "disliked": "ERP content was generic - more SAP-specific depth would have helped given SAP's dominance in enterprise IT",
-          "body": "I work in IT governance and compliance at a BFSI company. The cybersecurity management, GDPR and IT Act compliance, and IT audit readiness subjects were directly relevant. The MBA credential from a NAAC A+ university cleared the manager designation filter at my company. LinkedIn Learning cybersecurity courses supplemented the academic content with practical tool-level knowledge. Opted for Rs 1,30,000 track with zero-cost EMI."
-        },
-        {
-          "name": "Vikash S.",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Product management content was practical for transitioning from engineering to PM role",
-          "disliked": "Placement support for Delhi NCR tech market was limited compared to Punjab and HP clusters where Shoolini has stronger networks",
-          "body": "I transitioned from a software developer to product management using this MBA as the credential for the role change. PRD writing, user story mapping, and roadmap communication subjects were directly applicable. KPMG certification helped in client-facing product demos. The Rs 1,30,000 fee was competitive compared to bootcamps that cost more and don't give a recognised management degree. PAP option was available but I had a PM offer lined up."
-        }
-      ]
     },
     "faqs": [
       {
@@ -164,6 +132,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 18,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

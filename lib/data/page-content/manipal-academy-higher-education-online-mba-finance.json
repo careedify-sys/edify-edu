@@ -19,29 +19,65 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Management Accounting", "desc": "Cost analysis, budgeting, variance analysis, and management decision-making using accounting data." },
-            { "name": "Legal Aspects of Business", "desc": "Contract law, consumer protection, intellectual property, company law basics, and regulatory compliance." },
-            { "name": "Minor Project", "desc": "Applied finance research project supervised by faculty." },
-            { "name": "Security Analysis and Portfolio Management", "desc": "Equity valuation methods (DCF, PE, PBV), Modern Portfolio Theory, CAPM, efficient frontier, portfolio construction, and rebalancing strategies." },
-            { "name": "Financial Analytics", "desc": "Data-driven financial decision-making, financial modelling basics, ratio analysis automation, and financial dashboard design." },
-            { "name": "Financial Derivatives", "desc": "Options pricing (Black-Scholes basics), futures contracts, swaps, hedging strategies, and derivative risk management." }
+            {
+              "name": "Management Accounting",
+              "desc": "Cost analysis, budgeting, variance analysis, and management decision-making using accounting data."
+            },
+            {
+              "name": "Legal Aspects of Business",
+              "desc": "Contract law, consumer protection, intellectual property, company law basics, and regulatory compliance."
+            },
+            {
+              "name": "Minor Project",
+              "desc": "Applied finance research project supervised by faculty."
+            },
+            {
+              "name": "Security Analysis and Portfolio Management",
+              "desc": "Equity valuation methods (DCF, PE, PBV), Modern Portfolio Theory, CAPM, efficient frontier, portfolio construction, and rebalancing strategies."
+            },
+            {
+              "name": "Financial Analytics",
+              "desc": "Data-driven financial decision-making, financial modelling basics, ratio analysis automation, and financial dashboard design."
+            },
+            {
+              "name": "Financial Derivatives",
+              "desc": "Options pricing (Black-Scholes basics), futures contracts, swaps, hedging strategies, and derivative risk management."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Entrepreneurship and Innovation", "desc": "Startup ideation, business model canvas, lean startup methodology, and funding strategies." },
-            { "name": "Sustainability", "desc": "Sustainable business models, ESG frameworks, and CSR strategy." },
-            { "name": "Capstone Project", "desc": "Comprehensive finance capstone integrating Sem 1-4 learning with industry-linked problem." },
-            { "name": "Fintech: Emerging Technologies in Finance", "desc": "Blockchain in finance, digital payments (UPI, CBDC), robo-advisory platforms, regtech, and AI-driven credit scoring." },
-            { "name": "Fixed Income Securities", "desc": "Bond valuation, yield curve analysis, duration and convexity, credit risk assessment, and fixed income portfolio management." },
-            { "name": "Corporate Valuation", "desc": "DCF valuation, comparable company analysis, precedent transactions, M&A valuation, and LBO model basics." }
+            {
+              "name": "Entrepreneurship and Innovation",
+              "desc": "Startup ideation, business model canvas, lean startup methodology, and funding strategies."
+            },
+            {
+              "name": "Sustainability",
+              "desc": "Sustainable business models, ESG frameworks, and CSR strategy."
+            },
+            {
+              "name": "Capstone Project",
+              "desc": "Comprehensive finance capstone integrating Sem 1-4 learning with industry-linked problem."
+            },
+            {
+              "name": "Fintech: Emerging Technologies in Finance",
+              "desc": "Blockchain in finance, digital payments (UPI, CBDC), robo-advisory platforms, regtech, and AI-driven credit scoring."
+            },
+            {
+              "name": "Fixed Income Securities",
+              "desc": "Bond valuation, yield curve analysis, duration and convexity, credit risk assessment, and fixed income portfolio management."
+            },
+            {
+              "name": "Corporate Valuation",
+              "desc": "DCF valuation, comparable company analysis, precedent transactions, M&A valuation, and LBO model basics."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "MAHE MBA Finance graduates target roles across banking, corporate finance, and investment management:\n\n**Industries:** Commercial and investment banking, asset management, insurance, NBFC, corporate treasury, equity research, PE/VC (associate level), fintech, and financial consulting\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Equity Research Associate, Investment Banking Analyst, Treasury Analyst, Risk Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Portfolio Manager (junior), Credit Manager, Treasury Manager, Financial Controller, Fintech Product Manager\n\n**Senior roles (7+ years):** CFO, VP Finance, Head of Treasury, Director of Investments, Chief Risk Officer, Head of Corporate Finance\n\n**Employers:** Banks (HDFC Bank, ICICI Bank, Kotak, Axis Bank, SBI), asset management (HDFC AMC, SBI MF, ICICI Prudential), consulting (McKinsey, BCG, Deloitte financial advisory), and fintech (Razorpay, PhonePe, Paytm).\n\n**Note:** MAHE provides career support services. The Manipal alumni network is strong in healthcare, banking, and technology sectors."
+      "body": "MAHE MBA Finance graduates target roles across banking, corporate finance, and investment management:\n\n**Industries:** Commercial and investment banking, asset management, insurance, NBFC, corporate treasury, equity research, PE/VC (associate level), fintech, and financial consulting\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Equity Research Associate, Investment Banking Analyst, Treasury Analyst, Risk Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Portfolio Manager (junior), Credit Manager, Treasury Manager, Financial Controller, Fintech Product Manager\n\n**Senior roles (7+ years):** CFO, VP Finance, Head of Treasury, Director of Investments, Chief Risk Officer, Head of Corporate Finance\n\n**Employers:** Banks (HDFC Bank, ICICI Bank, Kotak, Axis Bank, SBI), asset management (HDFC AMC, SBI MF, ICICI Prudential), consulting (McKinsey, BCG, Deloitte financial advisory), and fintech (Razorpay, PhonePe, Paytm).\n\n**Note:** MAHE provides career support services. The Manipal alumni network is strong in healthcare, banking, and technology sectors.\n\n**Where to verify placement claims:** ask Manipal Academy of Higher Education (MAHE) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Finance specialisation builds skills across capital markets, corporate finance, and fintech:\n\n**Technical skills:**\n- Portfolio Management: MPT application, CAPM beta calculation, portfolio optimisation, risk-adjusted return metrics (Sharpe, Treynor, Jensen's alpha)\n- Derivatives: Black-Scholes option pricing, delta hedging, interest rate swap valuation, and currency futures strategy\n- Corporate Valuation: DCF model construction, WACC estimation, comparable analysis, and M&A premium analysis\n- Fixed Income: bond price-yield relationship, duration matching, credit spread analysis, and yield curve interpretation\n\n**Applied skills:**\n- Financial Analytics: financial dashboard design, ratio analysis automation, and data-driven credit assessment\n- Fintech: digital payment infrastructure understanding, robo-advisory platform evaluation, and regtech compliance framework\n\n**Soft skills:** Presenting investment theses to committees, negotiating credit terms, managing regulatory relationships, and communicating financial risk to non-finance stakeholders."
@@ -54,38 +90,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Finance as the specialisation, issued by Manipal Academy of Higher Education (MAHE) under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation, NIRF #3 University rank, Institution of Eminence status, and WES recognition. Valid for banking promotions, PSU finance roles, SEBI-regulated entity positions, and private-sector corporate finance recruitment. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from MAHE Online MBA Finance students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Arun K.",
-          "city": "Mumbai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Corporate Valuation and Financial Derivatives subjects were well-structured. Coursera Plus gave access to CFA prep content alongside the MBA",
-          "disliked": "₹2,92,000 is steep when MUJ offers a finance MBA on the same platform for ₹1,12,000 less. The MAHE brand premium should come with better placement infrastructure",
-          "body": "I chose MAHE specifically for the NIRF #3 credential for my BFSI career. The finance subjects were rigorous. The fintech module covering blockchain, digital payments, and robo-advisory was a genuine differentiator. Coursera Plus supplemented nicely with Python for Finance courses. The cost is the main concern. Unless the MAHE flagship tag specifically matters for your employer, MUJ gives you nearly identical content delivery."
-        },
-        {
-          "name": "Priya D.",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Security Analysis and Portfolio Management was taught by faculty with industry experience. The fixed income module was deeper than what most online MBAs cover",
-          "disliked": "Some pre-recorded lectures felt dated. The financial analytics module could include more hands-on Excel/Python modelling",
-          "body": "I work in corporate treasury at a pharma exporter. The derivatives, international finance coverage in the core, and portfolio management subjects were directly applicable. NIRF #3 and IoE cleared every credential filter. The 15% corporate employee scholarship brought my effective fee down, which made the decision easier."
-        },
-        {
-          "name": "Deepak S.",
-          "city": "Hyderabad",
-          "year": 2023,
-          "rating": 3.8,
-          "liked": "Fintech module was current and relevant. MAHE brand recognition in South India is genuinely strong for banking interviews",
-          "disliked": "Career services could be more proactive. Got minimal direct placement support. Self-driven networking through the Manipal alumni community was more effective",
-          "body": "The finance curriculum is comprehensive. The combination of traditional subjects (portfolio management, derivatives, fixed income) with fintech gives a balanced profile. My concern is that at ₹2,92,000, MAHE should offer more structured career support than what I received. The brand opens doors, but you still need to walk through them yourself."
-        }
-      ]
     },
     "faqs": [
       {
@@ -128,6 +132,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 22,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

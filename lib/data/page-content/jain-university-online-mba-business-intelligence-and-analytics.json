@@ -69,7 +69,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Business Intelligence and Analytics MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** IT services and consulting, E-commerce, BFSI analytics, Retail and FMCG, Healthcare data, Manufacturing BI\n\n**Entry-level roles:** BI Analyst, Data Analyst, MIS Executive, Business Analyst, SQL Developer\n\n**Mid-level roles (3-5 years experience):** BI Manager, Analytics Manager, Data Engineering Manager, Senior Business Analyst, Insights Manager\n\n**Senior roles (7+ years):** Head of Analytics, Chief Data Officer, VP Business Intelligence, Analytics Director\n\n**Top hiring organisations:** Infosys Analytics, TCS Insights and Intelligence, Wipro Analytics, Accenture Analytics, HCL Technologies BI, Amazon Analytics India, Flipkart Data, HDFC Bank Analytics, ICICI Bank Data, Deloitte Analytics, KPMG Data and Analytics"
+      "body": "This Business Intelligence and Analytics MBA syllabus maps to the following industries and roles:\n\n**Industries:** IT services and consulting, E-commerce, BFSI analytics, Retail and FMCG, Healthcare data, Manufacturing BI\n\n**Entry-level roles:** BI Analyst, Data Analyst, MIS Executive, Business Analyst, SQL Developer\n\n**Mid-level roles (3-5 years experience):** BI Manager, Analytics Manager, Data Engineering Manager, Senior Business Analyst, Insights Manager\n\n**Senior roles (7+ years):** Head of Analytics, Chief Data Officer, VP Business Intelligence, Analytics Director\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN Business Intelligence and Analytics specialisation builds skills that IT and enterprise data employers test at BI analyst and analytics manager levels:\n\n**Technical skills:**\n- Analytics Language for Managers: Python and R fundamentals, data manipulation with pandas and dplyr, and statistical programming for business analytics management\n- DBMS for Managers: SQL query writing, relational database design, data model management, and database optimisation for BI infrastructure roles\n- Data Warehousing: dimensional modelling (star and snowflake schema), ETL pipeline management, and cloud data warehouse implementation for data engineering roles\n- Data Mining for Intelligence: classification and clustering algorithm application, association rule mining, and anomaly detection for BI and decision support roles\n\n**Applied skills:**\n- BI Reporting for Managers: Tableau and Power BI dashboard design, KPI reporting system architecture, and executive reporting governance for BI management roles\n- Web Data Extraction and Analytics: web scraping, API integration, and competitive intelligence data extraction for market research and analytics\n\n**Soft skills:** Translating BI insights into business recommendations for C-suite, presenting data architecture proposals to IT leadership, managing BI platform vendor relationships, and communicating data model limitations to non-technical business stakeholders."
@@ -82,38 +82,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. The Business Intelligence and Analytics specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA Business Intelligence and Analytics alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Sriram Venkat",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Data Warehousing and DBMS for Managers were directly applicable to my BI engineer role at a Bengaluru IT company. Mathematical Foundation for ML filled the gap I had from a non-computer science background.",
-          "disliked": "Data Mining subject could include more hands-on Python exercises beyond conceptual coverage.",
-          "body": "I had 3 years in SQL development and the JAIN BI MBA helped me transition to a BI manager role. Python in core Sem 2 combined with BI subjects in Sem 3-4 gave me a full analytics stack credential. JAIN brand is recognised at Bengaluru analytics firms."
-        },
-        {
-          "name": "Lavanya Ramesh",
-          "city": "Chennai",
-          "year": 2023,
-          "rating": 4,
-          "liked": "BI Reporting subject with Power BI and Tableau was excellent. Web Data Extraction elective was unique and directly applicable to competitive intelligence work.",
-          "disliked": "Mathematical Foundation for ML could be harder for students without engineering backgrounds.",
-          "body": "Good programme for South India IT analytics careers. Chennai IT companies recognised the JAIN credential. For analytics roles requiring deep ML, supplementary self-study alongside the MBA is recommended."
-        },
-        {
-          "name": "Arun Ganesan",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Data Warehousing and Introduction to BI were the strongest subjects.",
-          "disliked": "LMS could be improved. Some recorded lectures for elective subjects were dated.",
-          "body": "Solid BI content for the fee. For Bengaluru analytics careers, JAIN delivers good value. For Mumbai or Delhi analytics management roles where NMIMS or Amity brand is more recognised, the JAIN BI credential may need to be supplemented with external certifications."
-        }
-      ]
     },
     "faqs": [
       {
@@ -154,6 +122,7 @@
     "wordCount": 2100,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

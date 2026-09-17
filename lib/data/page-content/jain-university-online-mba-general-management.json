@@ -69,7 +69,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "General Management MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** IT services, FMCG, Retail, Financial services, Consulting, Manufacturing, Healthcare\n\n**Entry-level roles:** Management Trainee, Business Analyst, Operations Executive, Assistant Manager (General)\n\n**Mid-level roles (3-5 years experience):** General Manager, Business Unit Manager, Operations Manager, Branch Manager, Centre Manager\n\n**Senior roles (7+ years):** VP Operations, Business Head, COO, Country Head, MD (SME)\n\n**Top hiring organisations:** Infosys Management Track, TCS Management, Deloitte Consulting, KPMG Advisory, Amazon Operations, Flipkart Operations, HDFC Bank Branch Management, Reliance Retail, D-Mart, Tata Group Management Trainee, Mahindra Group"
+      "body": "This General Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** IT services, FMCG, Retail, Financial services, Consulting, Manufacturing, Healthcare\n\n**Entry-level roles:** Management Trainee, Business Analyst, Operations Executive, Assistant Manager (General)\n\n**Mid-level roles (3-5 years experience):** General Manager, Business Unit Manager, Operations Manager, Branch Manager, Centre Manager\n\n**Senior roles (7+ years):** VP Operations, Business Head, COO, Country Head, MD (SME)\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN General Management specialisation builds cross-functional management skills that general manager and business head roles require:\n\n**Technical skills:**\n- Investment Analysis and Portfolio Management: corporate valuation, capital allocation frameworks, and financial statement analysis for general management financial decision-making\n- Performance Management Systems: KPI framework design, cross-functional target setting, and performance review cycle management for general manager and business unit manager roles\n- Organisation Development and Change Management: OD intervention design, change management programme leadership, and culture transformation for business restructuring roles\n- Market Research Tools: SPSS and survey analysis for market intelligence generation and customer insights in cross-functional roles\n\n**Applied skills:**\n- Talent Acquisition and Management: team hiring strategy, employer branding, and talent pipeline management for general managers building and leading teams\n- Retail Marketing and Service Management: category management, service quality design, and omnichannel execution for operations-facing general management\n\n**Soft skills:** Managing cross-functional project teams, presenting business performance to P&L owners, negotiating with vendors and partners, and leading organisational change initiatives across functions."
@@ -82,38 +82,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. The General Management specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA General Management alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Suhas Kulkarni",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "The cross-functional subject mix across HR, marketing, and finance in Sem 3-4 was exactly what I needed as an operations manager. OD and Change Management was directly applicable to my team restructuring project.",
-          "disliked": "General Management does not give deep domain credentials for specialist job applications. Best for generalist management roles only.",
-          "body": "I had 6 years in IT operations management and needed a formal MBA credential. The cross-functional breadth of the General Management spec matched my role. JAIN brand opened doors at Bengaluru IT consulting firms."
-        },
-        {
-          "name": "Meera Subramanian",
-          "city": "Chennai",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Investment Analysis and Market Research subjects gave me financial and analytical foundations I lacked. Strong balance across domains.",
-          "disliked": "Wished there was more tech sector-specific case study content given Bengaluru context.",
-          "body": "Good programme for professionals targeting general management tracks at South India IT companies. Chennai consulting firms recognised the JAIN credential. Python in core curriculum was a genuine talking point in interviews."
-        },
-        {
-          "name": "Vikram Iyer",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Performance Management Systems and OD subjects were well-structured.",
-          "disliked": "LMS quality was inconsistent. Some faculty for elective subjects lacked industry depth.",
-          "body": "Decent credential for the fee. General Management is best for those sure they want a generalist career. If you have a clear domain preference, a specialised MBA from JAIN or a peer university gives stronger career positioning."
-        }
-      ]
     },
     "faqs": [
       {
@@ -154,6 +122,7 @@
     "wordCount": 2050,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

@@ -19,25 +19,49 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Project Management", "desc": "Project planning, Gantt charts, resource allocation, project risk management, and marketing campaign project delivery." },
-            { "name": "Business Strategy", "desc": "Competitive strategy frameworks, market positioning, strategic planning, and marketing strategy alignment with business goals." },
-            { "name": "Consumer Behaviour and Marketing Research", "desc": "Consumer decision models, buyer motivation, marketing research methodology, survey design, and consumer insight applications." },
-            { "name": "Advertising and Sales Management", "desc": "Advertising campaign planning, media selection, sales force management, distribution channel management, and sales performance metrics." }
+            {
+              "name": "Project Management",
+              "desc": "Project planning, Gantt charts, resource allocation, project risk management, and marketing campaign project delivery."
+            },
+            {
+              "name": "Business Strategy",
+              "desc": "Competitive strategy frameworks, market positioning, strategic planning, and marketing strategy alignment with business goals."
+            },
+            {
+              "name": "Consumer Behaviour and Marketing Research",
+              "desc": "Consumer decision models, buyer motivation, marketing research methodology, survey design, and consumer insight applications."
+            },
+            {
+              "name": "Advertising and Sales Management",
+              "desc": "Advertising campaign planning, media selection, sales force management, distribution channel management, and sales performance metrics."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Banking and Insurance Management", "desc": "Financial products for marketing professionals, bancassurance basics, and financial services marketing applications." },
-            { "name": "Project Work", "desc": "Applied marketing project: brand audit, consumer research study, marketing plan, or market entry analysis." },
-            { "name": "Brand Management and Marketing Communication", "desc": "Brand equity frameworks, brand architecture, integrated marketing communication, digital brand building, and campaign effectiveness measurement." },
-            { "name": "International Marketing and Retail Management", "desc": "International market entry strategies, export marketing, retail operations management, merchandise planning, and omnichannel retail strategy." }
+            {
+              "name": "Banking and Insurance Management",
+              "desc": "Financial products for marketing professionals, bancassurance basics, and financial services marketing applications."
+            },
+            {
+              "name": "Project Work",
+              "desc": "Applied marketing project: brand audit, consumer research study, marketing plan, or market entry analysis."
+            },
+            {
+              "name": "Brand Management and Marketing Communication",
+              "desc": "Brand equity frameworks, brand architecture, integrated marketing communication, digital brand building, and campaign effectiveness measurement."
+            },
+            {
+              "name": "International Marketing and Retail Management",
+              "desc": "International market entry strategies, export marketing, retail operations management, merchandise planning, and omnichannel retail strategy."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Marketing MBA graduates from SMU are hired across India's consumer-facing industries:\n\n**Industries:** FMCG, retail chains, D2C brands, digital marketing agencies, banking and financial services, pharmaceutical companies, e-commerce, real estate, and technology companies\n\n**Entry-level roles:** Marketing Executive, Brand Executive, Sales Executive, Digital Marketing Executive, Trade Marketing Executive\n\n**Mid-level roles (3-5 years experience):** Marketing Manager, Brand Manager, Product Manager, Sales Manager, Digital Marketing Manager, Category Manager\n\n**Senior roles (7+ years):** VP Marketing, Head of Brand, Chief Marketing Officer, National Sales Head, Director of Marketing\n\n**Top hiring organisations:** HUL, ITC, Dabur, Marico, Godrej Consumer Products, Tata Consumer Products, Reliance Retail, DMart, Asian Paints, HDFC Bank marketing divisions, Axis Bank marketing, Zomato, Swiggy, and regional FMCG and retail brands across North and East India"
+      "body": "This Marketing MBA syllabus maps to the following India's consumer-facing industries:\n\n**Industries:** FMCG, retail chains, D2C brands, digital marketing agencies, banking and financial services, pharmaceutical companies, e-commerce, real estate, and technology companies\n\n**Entry-level roles:** Marketing Executive, Brand Executive, Sales Executive, Digital Marketing Executive, Trade Marketing Executive\n\n**Mid-level roles (3-5 years experience):** Marketing Manager, Brand Manager, Product Manager, Sales Manager, Digital Marketing Manager, Category Manager\n\n**Senior roles (7+ years):** VP Marketing, Head of Brand, Chief Marketing Officer, National Sales Head, Director of Marketing\n\n**Where to verify placement claims:** ask Sikkim Manipal University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Marketing specialisation builds skills that FMCG, retail, and digital marketing employers test at marketing executive and brand manager levels:\n\n**Technical skills:**\n- Consumer Research: consumer survey design, focus group methodology, data interpretation for product development, and consumer insight reporting\n- Brand Management: brand audit execution, brand architecture analysis, brand equity measurement, and brand extension feasibility assessment\n- Sales Management: territory planning, sales funnel management, distributor and dealer relationship management, and channel ROI tracking\n- Advertising: media planning basics, digital ad format selection, influencer brief writing, and campaign performance reporting\n\n**Applied skills:**\n- Retail Management: planogram basics, category management, retail P&L reading, and visual merchandising for brand visibility\n- International Marketing: market entry mode selection, export documentation basics, and cross-cultural marketing adaptation\n\n**Soft skills:** Presenting marketing plans and campaign proposals to brand teams and retail partners, managing agency relationships across creative, media, and digital, handling sales team motivation and target-setting conversations, and communicating consumer insight findings to product development teams."
@@ -50,38 +74,6 @@
     },
     "certificate": {
       "body": "Graduates receive a Sikkim Manipal University MBA degree certificate with Marketing noted on the marksheet, issued under UGC-DEB 2020 online mode standards. The SMU name carries NAAC A+ accreditation and the Manipal Group's brand recognition across India's FMCG, retail, and banking employers.\n\nDigiLocker verification is available. The degree satisfies qualification requirements for marketing manager and brand manager roles at companies that specify a recognised UGC-DEB entitled university degree."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from SMU Online MBA Marketing alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Priya S.",
-          "city": "Guwahati",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Most affordable Manipal Group MBA with 30% Northeast scholarship — net cost Rs 84,000",
-          "disliked": "Limited live faculty interaction; digital marketing content could be more current",
-          "body": "As a Northeast candidate the 30% scholarship brought my cost to Rs 84,000 net. The Consumer Behaviour and Marketing Research subject gave me the structured research methodology I was applying ad-hoc in my FMCG sales role. Brand Management covered brand equity frameworks I use when presenting brand plans to my distributor network. The Manipal brand on the degree was specifically mentioned positively by the national FMCG HR I spoke with. Excellent value for the price."
-        },
-        {
-          "name": "Rahul M.",
-          "city": "Kolkata",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Advertising and Sales Management covered sales force structure and channel management practically",
-          "disliked": "Digital marketing content needed more depth on performance marketing and analytics",
-          "body": "I work in trade marketing and the Advertising and Sales Management subject covered distributor management, territory planning, and channel ROI tracking that I apply directly. Brand Management and Marketing Communication gave me the integrated campaign framework I needed for my brand presentations. SMU's NAAC A+ at Rs 1,20,000 was the right combination of affordability and Manipal Group credibility. Zero-cost EMI through SMU was straightforward."
-        },
-        {
-          "name": "Ankita D.",
-          "city": "Siliguri",
-          "year": 2024,
-          "rating": 4,
-          "liked": "International Marketing covered market entry strategies and export documentation practically",
-          "disliked": "Retail Management content needed more e-commerce and D2C brand building depth",
-          "body": "I work in export marketing for a tea brand and International Marketing and Retail Management was directly applicable — market entry mode selection and cross-cultural marketing adaptation were the key modules. Consumer Behaviour research methodology strengthened my market analysis for new export destinations. For Northeast professionals needing an affordable Manipal Group MBA, SMU Marketing at Rs 84,000 net with the scholarship is unbeatable value."
-        }
-      ]
     },
     "faqs": [
       {
@@ -124,6 +116,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 17,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

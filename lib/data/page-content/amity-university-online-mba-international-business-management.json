@@ -18,7 +18,7 @@
       "emptyFallback": "Semesters 1 and 2 of the Amity Online MBA cover the management core: Accounting for Managers, Managerial Economics, Marketing Management, Statistics for Management, Professional Communication, Business Research Methods, Financial Management, Human Resource Management, Legal Aspects of Business, and Conflict Resolution and Management.\n\nSemesters 3 and 4 cover the International Business Management specialisation subjects. These typically include areas such as international trade policy and WTO regulations, foreign exchange management, global supply chain management, international marketing, cross-cultural management, trade finance and documentation, bilateral and multilateral trade agreements, and international business law. The specific Sem 3 and Sem 4 subjects for International Business Management are confirmed by Amity each admission cycle. Our counsellor can share the current spec-level syllabus within 24 hours."
     },
     "whoHires": {
-      "body": "International Business Management MBA graduates from Amity University Online are hired across these industries and roles:\n\n**Industries:** Export-oriented manufacturing, MNCs, International trade and logistics, Management consulting, Technology services\n\n**Entry-level roles:** International Business Analyst, Export Manager (junior), Global Sourcing Analyst, Trade Finance Analyst\n\n**Mid-level roles (3-5 years experience):** International Business Manager, Country Manager, Export Head, Global Procurement Manager\n\n**Senior roles (7+ years):** VP International Business, Director of Global Operations, Managing Director (international arm), Chief Business Officer\n\n**Top hiring organisations:** Tata International, Mahindra Agri, TCS international delivery, Infosys BPM, Deloitte Global Business Services, EXIM Bank India"
+      "body": "This International Business Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** Export-oriented manufacturing, MNCs, International trade and logistics, Management consulting, Technology services\n\n**Entry-level roles:** International Business Analyst, Export Manager (junior), Global Sourcing Analyst, Trade Finance Analyst\n\n**Mid-level roles (3-5 years experience):** International Business Manager, Country Manager, Export Head, Global Procurement Manager\n\n**Senior roles (7+ years):** VP International Business, Director of Global Operations, Managing Director (international arm), Chief Business Officer\n\n**Where to verify placement claims:** ask Amity University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The International Business Management specialisation builds skills that MNCs and export-oriented organisations test in cross-border business management roles:\n\n**Technical skills:**\n- International Trade: export-import regulations, Incoterms, trade documentation, and trade finance instruments (LC, BG)\n- Foreign Exchange Management: currency risk identification, hedging instruments, and cross-border payment systems\n- Global Supply Chain: international vendor development, cross-border logistics management, and bonded warehouse operations\n\n**Applied skills:**\n- Market Entry Strategy: mode selection, JV vs wholly-owned subsidiary analysis, and entry cost evaluation for new markets\n- Cross-Cultural Management: managing diverse global teams, international client relationships, and multi-country operations\n\n**Soft skills:** Negotiating with international buyers and distributors, presenting global market entry proposals to leadership, managing multi-jurisdiction regulatory and compliance requirements."
@@ -31,38 +31,6 @@
     },
     "certificate": {
       "body": "The Amity University degree certificate carries the Amity University name, the MBA designation, and identifies the online learning mode per UGC-DEB 2020 regulations. The International Business Management specialisation is noted on the marksheet and transcript. Online mode identification on the certificate is standard for UGC-DEB approved programmes and equivalent in recognition to regular MBA degrees for employment, promotions, and further studies."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Amity Online MBA International Business alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Arjun Malhotra",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Trade finance and Incoterms module was directly useful for my export documentation work",
-          "disliked": "WTO regulations content was theoretical â€” needed more India-specific FTA case studies",
-          "body": "I work in an export house and the LC documentation and Incoterms content was immediately applicable. Within a month of that module I had restructured our trade documentation process. The Amity name combined with the IB spec helped me negotiate a promotion to Export Manager. WES recognition was the deciding factor in choosing Amity over cheaper alternatives."
-        },
-        {
-          "name": "Sonali Kapoor",
-          "city": "Mumbai",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Forex management content covered FEMA compliance clearly",
-          "disliked": "Cross-cultural management section was too textbook â€” needed more current multinational examples",
-          "body": "The forex and treasury content was the strongest part of this spec. I use FEMA compliance knowledge in my current treasury role at an import-heavy manufacturing company. The Amity degree helped me clear the CV screening for roles that required a management degree. Cross-cultural content was decent but not as practically oriented as the finance modules."
-        },
-        {
-          "name": "Karan Singh",
-          "city": "Chandigarh",
-          "year": 2024,
-          "rating": 4,
-          "liked": "WES recognition was confirmed and employer in Canada accepted the degree",
-          "disliked": "Global supply chain content needed more digital freight and 3PL examples",
-          "body": "I was planning to move to Canada for work after completing the degree. WES recognition was the primary reason I chose Amity IB. The recognition was smooth â€” WES evaluation confirmed the degree without issues. My Canadian employer had no concerns. Global supply chain content was decent but a bit dated on logistics technology."
-        }
-      ]
     },
     "faqs": [
       {
@@ -104,6 +72,7 @@
     "generatedAt": "2026-04-21",
     "batchNumber": 9,
     "hasSyllabusData": false,
-    "phase71Updated": "2026-04-21"
+    "phase71Updated": "2026-04-21",
+    "claimSweep": "2026-09-17"
   }
 }

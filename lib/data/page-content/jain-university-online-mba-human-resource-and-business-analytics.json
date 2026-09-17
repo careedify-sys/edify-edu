@@ -69,7 +69,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Human Resource and Business Analytics dual MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** IT services and product companies, BFSI HR analytics, FMCG HR analytics, Consulting HR advisory, EdTech HR, Staffing analytics\n\n**Entry-level roles:** HR Analytics Analyst, People Data Analyst, HRIS Analyst, Talent Analytics Analyst, Workforce Planning Analyst\n\n**Mid-level roles (3-5 years experience):** HR Business Partner (Analytics), People Analytics Manager, HR Analytics Manager, Workforce Intelligence Manager, HRBP Lead\n\n**Senior roles (7+ years):** Head of People Analytics, CHRO (Data-Driven), VP HR Analytics, Director Workforce Intelligence, Chief People Analytics Officer\n\n**Top hiring organisations:** Infosys, TCS, Wipro, Accenture India, IBM India HR Analytics, Amazon India People, Flipkart HR, Deloitte HR Analytics, KPMG People Advisory, ManpowerGroup Analytics, Randstad Analytics, SAP SuccessFactors India, Workday India"
+      "body": "This Human Resource and Business Analytics dual MBA syllabus maps to the following industries and roles:\n\n**Industries:** IT services and product companies, BFSI HR analytics, FMCG HR analytics, Consulting HR advisory, EdTech HR, Staffing analytics\n\n**Entry-level roles:** HR Analytics Analyst, People Data Analyst, HRIS Analyst, Talent Analytics Analyst, Workforce Planning Analyst\n\n**Mid-level roles (3-5 years experience):** HR Business Partner (Analytics), People Analytics Manager, HR Analytics Manager, Workforce Intelligence Manager, HRBP Lead\n\n**Senior roles (7+ years):** Head of People Analytics, CHRO (Data-Driven), VP HR Analytics, Director Workforce Intelligence, Chief People Analytics Officer\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN HR and Business Analytics dual specialisation builds analytics-capable HR skills that tech and consulting employers test at HRBP and people analytics manager levels:\n\n**HR skills:**\n- Talent Acquisition and Management: data-driven hiring strategy, employer branding analytics, and structured interview design with analytics-informed shortlisting\n- Employee Management and Negotiation Skills: grievance management, PIP facilitation, and negotiation in difficult HR conversations informed by performance data and analytics\n- Performance Management Systems: analytics-driven KPI framework design, continuous feedback tool implementation, and data-informed appraisal calibration\n\n**Analytics skills:**\n- Data Analytics with Python: Python pandas application to HR datasets, workforce survey data cleaning, and automated people analytics reporting\n- Data Analytics using SPSS: multivariate analysis and regression for attrition prediction, workforce segmentation, and people research studies\n- Data Visualization and Analysis: Tableau and Power BI HR dashboard design and workforce KPI reporting for people analytics management\n\n**Cross-functional skills:**\n- Advanced Spreadsheet Modelling: HR budget and headcount cost models, workforce planning scenarios, and compensation benchmarking in Excel\n- Organisation Development: analytics-informed OD diagnostic models and culture transformation measurement\n\n**Soft skills:** Presenting people analytics insights to CHRO and business leadership, managing HR technology and analytics vendor relationships, communicating data-driven performance decisions to employees, and leading analytics adoption in HR teams."
@@ -82,38 +82,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. Both Human Resource Management and Business Analytics specialisations are noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The dual specialisation certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA HR and Business Analytics alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Preethi Raghavan",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Python analytics combined with Talent Acquisition was exactly the credential my HRBP role transition needed. Data Visualization in Tableau gave me workforce dashboards I present to HR leadership weekly.",
-          "disliked": "Labour law and compensation subjects are absent from the dual spec. If you need Industrial Relations or compensation benchmarking depth, single-spec HRM is better.",
-          "body": "I moved from HR executive to people analytics HRBP using this dual MBA. Python in Sem 2 core prepared me for the Sem 3 analytics subjects. JAIN brand and the analytics credentials opened doors at Bengaluru IT companies."
-        },
-        {
-          "name": "Vishnu Kumar",
-          "city": "Hyderabad",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Performance Management combined with SPSS gave strong analytical grounding for my HR analytics role. Employee Negotiation Skills remained a standout subject.",
-          "disliked": "The dual spec trades off HR depth in labour laws and international HRM. Clarify with counsellor which HR subjects are not covered before choosing.",
-          "body": "Good programme for South India IT HR analytics careers. Hyderabad tech companies responded well to the Python-HR analytics combination. For traditional HRBP roles without analytics focus, single-spec HRM provides broader people management depth."
-        },
-        {
-          "name": "Anitha Menon",
-          "city": "Kochi",
-          "year": 2024,
-          "rating": 3,
-          "liked": "OD and Change Management combined with Advanced Spreadsheet Modelling for workforce cost planning was directly applicable.",
-          "disliked": "JAIN brand recognition in Kerala is limited. Mostly useful for professionals targeting Bengaluru or Hyderabad IT sector HR roles.",
-          "body": "Solid credential for analytics-oriented HR roles. Best for South India IT sector HR professionals. For Kerala-based HR careers, the JAIN brand may require supplementary HR certifications for recognition."
-        }
-      ]
     },
     "faqs": [
       {
@@ -154,6 +122,7 @@
     "wordCount": 2050,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

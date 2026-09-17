@@ -60,56 +60,6 @@
     "honestVerdict": {
       "body": "This verdict is based on publicly available data from UGC-DEB, NAAC, and NIRF portals, cross-referenced with student feedback from verified sources.\n\nChoose this if:\n- Manipal Group brand name matters in your target industry or region\n- You want NAAC A+ at a mid-range fee with healthcare or IT-systems tracks\n- Coursera access and a structured alumni network are important to you\n- You are based in North-East India where SMU has strong regional recognition\n\nLook elsewhere if:\n- NIRF ranking is a hard filter for you (SMU is not NIRF ranked currently)\n- You want more than 6 specialisation choices\n- Your budget is below Rs 80,000 (Galgotias fits better)\n- You need a research-based programme with formal thesis output\n\nThe decision between two similarly accredited programmes often comes down to three factors: the specialisation you need, the placement network that matters for your target industry, and the fee your budget can absorb without strain. Use the /compare tool to map your shortlist on these three axes. If you are still undecided, our counsellor call is free. Visit /contact and we will compare your shortlisted options against your specific career goal and budget without sales pressure."
     },
-    "reviews": {
-      "items": [
-        {
-          "name": "Ananya G.",
-          "city": "Kolkata",
-          "year": 2024,
-          "rating": 5,
-          "liked": "The Manipal brand is recognised everywhere I applied. NAAC A+ plus 30 years of university history gives the degree credibility. Coursera access was genuinely useful and I added two certifications during the programme at no extra cost.",
-          "disliked": "",
-          "body": "The Manipal brand is recognised everywhere I applied. NAAC A+ plus 30 years of university history gives the degree credibility. Coursera access was genuinely useful and I added two certifications during the programme at no extra cost."
-        },
-        {
-          "name": "Rajesh M.",
-          "city": "Guwahati",
-          "year": 2023,
-          "rating": 4,
-          "liked": "SMU is very well regarded in North-East India. My current employer immediately recognised the SMUDE credential during background verification. The healthcare specialisation curriculum was current and practical. Live session timings were occasionally awkward for my shift schedule but recorded backups covered me.",
-          "disliked": "",
-          "body": "SMU is very well regarded in North-East India. My current employer immediately recognised the SMUDE credential during background verification. The healthcare specialisation curriculum was current and practical. Live session timings were occasionally awkward for my shift schedule but recorded backups covered me."
-        },
-        {
-          "name": "Preeti S.",
-          "city": "Patna",
-          "year": 2024,
-          "rating": 4,
-          "liked": "The 7-subject structure in Semesters 1 and 2 is intensive. There were weeks with 3 assignments due simultaneously. Faculty quality varied; Quantitative Methods faculty was excellent but Global Economic Environment content felt thin. Still a solid programme for the fee paid.",
-          "disliked": "",
-          "body": "The 7-subject structure in Semesters 1 and 2 is intensive. There were weeks with 3 assignments due simultaneously. Faculty quality varied; Quantitative Methods faculty was excellent but Global Economic Environment content felt thin. Still a solid programme for the fee paid."
-        },
-        {
-          "name": "Nitin B.",
-          "city": "Ranchi",
-          "year": 2023,
-          "rating": 3,
-          "liked": "The LMS was slow during peak submission windows. Downloading study material took longer than it should. The Manipal alumni network exists but active engagement from online MBA alumni specifically was lower than I expected from the programme's marketing.",
-          "disliked": "",
-          "body": "The LMS was slow during peak submission windows. Downloading study material took longer than it should. The Manipal alumni network exists but active engagement from online MBA alumni specifically was lower than I expected from the programme's marketing."
-        },
-        {
-          "name": "Sunita K.",
-          "city": "Bhubaneswar",
-          "year": 2024,
-          "rating": 3,
-          "liked": "SMU not being NIRF ranked was not clear to me during admission. I found out while comparing universities after joining. If NIRF ranking matters for your target employer or a government application, verify this before enrolling. Programme content itself is acceptable. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation.",
-          "disliked": "",
-          "body": "SMU not being NIRF ranked was not clear to me during admission. I found out while comparing universities after joining. If NIRF ranking matters for your target employer or a government application, verify this before enrolling. Programme content itself is acceptable. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "intro": "",
       "flags": [
@@ -135,6 +85,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:49.008Z",
     "sheetName": "smu-online_MBA",
-    "format": "named"
+    "format": "named",
+    "claimSweep": "2026-09-17"
   }
 }

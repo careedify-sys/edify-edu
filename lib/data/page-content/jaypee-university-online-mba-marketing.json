@@ -19,30 +19,69 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Artificial Intelligence in Business", "desc": "AI applications in business, ML basics for managers, AI-driven automation, and ethical AI in enterprise contexts." },
-            { "name": "Internship/OJT", "desc": "Mandatory industry internship or on-the-job training with faculty supervision and evaluation." },
-            { "name": "Corporate Skill Development-2", "desc": "Advanced professional skills: executive presentation, negotiation, and stakeholder communication." },
-            { "name": "Product and Brand Management", "desc": "Brand identity design, brand equity measurement (Keller, Aaker), product lifecycle management, new product development, and brand positioning strategies." },
-            { "name": "Integrated Marketing Communication", "desc": "IMC planning, media mix optimisation, ATL-BTL integration, PR and corporate communication, event marketing, and campaign measurement." },
-            { "name": "Sales and Distribution Management", "desc": "Sales force design, territory management, distributor management, channel conflict resolution, trade marketing, and sales performance metrics." },
-            { "name": "Consumer Behavior", "desc": "Consumer decision-making models, psychographic segmentation, cultural influences, perception and attitudes, and digital consumer behaviour." },
-            { "name": "Services Marketing", "desc": "Services marketing 7Ps, SERVQUAL model, service blueprint design, customer retention strategies, and service recovery." },
-            { "name": "Digital Marketing", "desc": "SEO/SEM fundamentals, social media strategy, content marketing, email automation, performance marketing metrics, and Google Analytics basics." }
+            {
+              "name": "Artificial Intelligence in Business",
+              "desc": "AI applications in business, ML basics for managers, AI-driven automation, and ethical AI in enterprise contexts."
+            },
+            {
+              "name": "Internship/OJT",
+              "desc": "Mandatory industry internship or on-the-job training with faculty supervision and evaluation."
+            },
+            {
+              "name": "Corporate Skill Development-2",
+              "desc": "Advanced professional skills: executive presentation, negotiation, and stakeholder communication."
+            },
+            {
+              "name": "Product and Brand Management",
+              "desc": "Brand identity design, brand equity measurement (Keller, Aaker), product lifecycle management, new product development, and brand positioning strategies."
+            },
+            {
+              "name": "Integrated Marketing Communication",
+              "desc": "IMC planning, media mix optimisation, ATL-BTL integration, PR and corporate communication, event marketing, and campaign measurement."
+            },
+            {
+              "name": "Sales and Distribution Management",
+              "desc": "Sales force design, territory management, distributor management, channel conflict resolution, trade marketing, and sales performance metrics."
+            },
+            {
+              "name": "Consumer Behavior",
+              "desc": "Consumer decision-making models, psychographic segmentation, cultural influences, perception and attitudes, and digital consumer behaviour."
+            },
+            {
+              "name": "Services Marketing",
+              "desc": "Services marketing 7Ps, SERVQUAL model, service blueprint design, customer retention strategies, and service recovery."
+            },
+            {
+              "name": "Digital Marketing",
+              "desc": "SEO/SEM fundamentals, social media strategy, content marketing, email automation, performance marketing metrics, and Google Analytics basics."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Strategic Management", "desc": "Corporate strategy, competitive advantage analysis, strategic planning, and marketing strategy alignment." },
-            { "name": "Major Project", "desc": "Comprehensive marketing project integrating Sem 1-4 learning. Industry-linked problem with faculty evaluation." },
-            { "name": "Omnichannel Marketing", "desc": "Unified online-offline customer experience design, channel integration strategy, click-and-collect operations, and omnichannel analytics." },
-            { "name": "AI/ML-powered Marketing", "desc": "Personalisation engines, recommendation system design for e-commerce, predictive customer analytics, programmatic advertising, and AI-driven content optimisation." }
+            {
+              "name": "Strategic Management",
+              "desc": "Corporate strategy, competitive advantage analysis, strategic planning, and marketing strategy alignment."
+            },
+            {
+              "name": "Major Project",
+              "desc": "Comprehensive marketing project integrating Sem 1-4 learning. Industry-linked problem with faculty evaluation."
+            },
+            {
+              "name": "Omnichannel Marketing",
+              "desc": "Unified online-offline customer experience design, channel integration strategy, click-and-collect operations, and omnichannel analytics."
+            },
+            {
+              "name": "AI/ML-powered Marketing",
+              "desc": "Personalisation engines, recommendation system design for e-commerce, predictive customer analytics, programmatic advertising, and AI-driven content optimisation."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "JIIT MBA Marketing graduates target roles across FMCG, digital, retail, and services marketing:\n\n**Industries:** FMCG, e-commerce, banking (product marketing), telecom, media, consumer durables, digital agencies, D2C brands, and MarTech companies\n\n**Entry-level roles:** Marketing Executive, Brand Executive, Digital Marketing Analyst, Sales Executive, Social Media Executive, Content Marketing Associate\n\n**Mid-level roles (3-5 years experience):** Brand Manager, Digital Marketing Manager, Regional Sales Manager, Growth Marketing Manager, CRM Manager, Product Marketing Manager\n\n**Senior roles (7+ years):** VP Marketing, CMO, Head of Digital Marketing, National Sales Director, Head of Growth, Chief Commercial Officer\n\n**Employers:** FMCG (HUL, ITC, P&G, Nestle), e-commerce (Flipkart, Amazon India, Myntra), D2C (Mamaearth, BoAt, Sugar Cosmetics), IT (marketing divisions of TCS, Infosys, Wipro), and NCR-region consumer companies.\n\n**Note:** JIIT provides career support. Online MBA brand recognition is developing."
+      "body": "JIIT MBA Marketing graduates target roles across FMCG, digital, retail, and services marketing:\n\n**Industries:** FMCG, e-commerce, banking (product marketing), telecom, media, consumer durables, digital agencies, D2C brands, and MarTech companies\n\n**Entry-level roles:** Marketing Executive, Brand Executive, Digital Marketing Analyst, Sales Executive, Social Media Executive, Content Marketing Associate\n\n**Mid-level roles (3-5 years experience):** Brand Manager, Digital Marketing Manager, Regional Sales Manager, Growth Marketing Manager, CRM Manager, Product Marketing Manager\n\n**Senior roles (7+ years):** VP Marketing, CMO, Head of Digital Marketing, National Sales Director, Head of Growth, Chief Commercial Officer\n\n**Employers:** FMCG (HUL, ITC, P&G, Nestle), e-commerce (Flipkart, Amazon India, Myntra), D2C (Mamaearth, BoAt, Sugar Cosmetics), IT (marketing divisions of TCS, Infosys, Wipro), and NCR-region consumer companies.\n\n**Note:** JIIT provides career support. Online MBA brand recognition is developing.\n\n**Where to verify placement claims:** ask Jaypee Institute of Information Technology Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Marketing specialisation builds skills across brand, digital, sales, and AI-driven marketing:\n\n**Technical skills:**\n- Brand Management: brand equity audit, positioning map, product lifecycle strategy, and new product launch planning\n- Digital Marketing: SEO audit, campaign ROI calculation, social media analytics, and performance marketing dashboard design\n- AI/ML Marketing: personalisation engine evaluation, recommendation system metrics, predictive churn modelling interpretation, and programmatic ad buying basics\n- Omnichannel: unified customer journey mapping, channel attribution analysis, and omnichannel conversion funnel design\n\n**Applied skills:**\n- IMC: media plan design, ATL-BTL budget allocation, campaign effectiveness measurement, and PR event planning\n- Sales Management: territory design, distributor ROI calculation, trade scheme evaluation, and sales pipeline management\n\n**Soft skills:** Presenting marketing strategy to boards, negotiating with agencies and media partners, managing cross-functional launch teams, and leading digital transformation in traditional marketing organisations."
@@ -55,38 +94,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Marketing as the specialisation, issued by Jaypee Institute of Information Technology (JIIT), Noida under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A accreditation, UGC-DEB approval, and WES recognition. Valid for government recruitment, PSU applications, and private-sector marketing roles. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from JIIT Online MBA Marketing students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Ravi D.",
-          "city": "Noida",
-          "year": 2024,
-          "rating": 4,
-          "liked": "AI/ML-powered Marketing in Sem 4 is forward-looking. Most online MBAs don't cover recommendation systems and programmatic advertising at this depth",
-          "disliked": "JIIT is known for BTech, not MBA. When I mention JIIT MBA in marketing interviews, I often need to explain the institute's credentials",
-          "body": "I work in digital marketing at an e-commerce company. The digital marketing, consumer behaviour, and AI/ML-powered marketing subjects were directly applicable. The mandatory internship helped me build a case study I use in interviews. At ₹1,82,000 the curriculum is strong for the price. The gap is brand recognition. MAHE at ₹2,92,000 or Amity at ₹2,25,000 carry stronger MBA brand weight, but at 40-60% higher cost."
-        },
-        {
-          "name": "Neha S.",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Omnichannel Marketing as a standalone subject is rare. Most programmes only cover this as a module within digital marketing",
-          "disliked": "No Coursera Plus or any bundled perk. MUJ at ₹1,80,000 gives you Coursera Plus for the same price. That is a real gap",
-          "body": "The marketing curriculum has 9 Sem 3 subjects covering brand, IMC, sales, consumer behaviour, services marketing, and digital. Plus Sem 4 adds omnichannel and AI/ML marketing. That is 8 marketing-specific subjects across Sem 3-4 plus AI in Business. The depth is real. The issue is that perks and brand are part of the buying decision, and JIIT offers neither at a price where competitors do."
-        },
-        {
-          "name": "Sanjay K.",
-          "city": "Gurgaon",
-          "year": 2023,
-          "rating": 3.8,
-          "liked": "Sales and Distribution Management and Services Marketing were practical for my FMCG distribution background",
-          "disliked": "Career services for online MBA are basic. The on-campus placement team focuses on BTech and MTech. Online MBA students need to network independently",
-          "body": "I transitioned from a sales executive to a marketing manager role using this MBA. The curriculum helped, especially consumer behaviour and IMC. The internship requirement was manageable since I used my existing job. The delivery quality was mixed. Some subjects had engaged faculty, others felt like recorded-lecture-and-PDF programmes. At this price, the content is strong, but the experience varies."
-        }
-      ]
     },
     "faqs": [
       {
@@ -130,6 +137,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 23,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

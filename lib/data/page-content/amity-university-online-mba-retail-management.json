@@ -19,7 +19,7 @@
       "note": "EdifyEdu has not yet received the detailed Sem 3-4 subject list for this specialisation. Contact Amity Online directly for the current curriculum before enrolling."
     },
     "whoHires": {
-      "body": "Retail Management MBA graduates from Amity University Online are hired across these industries and roles:\n\n**Industries:** Organised retail, E-commerce, FMCG modern trade, D2C brands, Quick commerce\n\n**Entry-level roles:** Store Manager, Area Sales Manager (retail), Category Analyst, Retail Operations Coordinator\n\n**Mid-level roles (3-5 years experience):** Category Manager, Regional Store Operations Manager, Buying and Merchandising Manager, Retail Marketing Manager\n\n**Senior roles (7+ years):** VP Retail Operations, Category Director, Head of Trade Marketing, Country Head of Retail\n\n**Top hiring organisations:** Reliance Retail, D-Mart, Tata Trent (Westside and Zudio), Shoppers Stop, Amazon India retail ops, Myntra, Blinkit"
+      "body": "This Retail Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** Organised retail, E-commerce, FMCG modern trade, D2C brands, Quick commerce\n\n**Entry-level roles:** Store Manager, Area Sales Manager (retail), Category Analyst, Retail Operations Coordinator\n\n**Mid-level roles (3-5 years experience):** Category Manager, Regional Store Operations Manager, Buying and Merchandising Manager, Retail Marketing Manager\n\n**Senior roles (7+ years):** VP Retail Operations, Category Director, Head of Trade Marketing, Country Head of Retail\n\n**Where to verify placement claims:** ask Amity University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Retail Management specialisation builds skills tested at category management, store operations, and retail leadership levels:\n\n**Technical skills:**\n- Retail Operations Management: store staffing, visual merchandising, planogram execution, shrinkage control, and store P&L management\n- Category Management: assortment planning, space management, OTB management, and promotional planning for retail formats\n- Supply Chain for Retail: inventory management, replenishment systems, DC operations, and out-of-stock reduction\n\n**Applied skills:**\n- Merchandising and Buying: vendor development, purchase planning, and range architecture for apparel and hardline categories\n- Consumer Behaviour in Retail: shopper decision-making, impulse trigger management, and loyalty programme design\n\n**Soft skills:** Managing large retail floor teams, negotiating with FMCG brand trade marketing teams, presenting category performance data to buying committees."
@@ -32,38 +32,6 @@
     },
     "certificate": {
       "body": "The Amity University degree certificate carries the Amity University name, the MBA designation, and identifies the online learning mode per UGC-DEB 2020 regulations. The Retail Management specialisation is noted on the marksheet and transcript. Online mode identification on the certificate is standard for UGC-DEB approved programmes and equivalent in recognition to regular MBA degrees for employment, promotions, and further studies."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Amity Online MBA Retail Management alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Priyanka Singh",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Category management and assortment planning content was directly applicable to my buying role at a fashion retailer",
-          "disliked": "Quick commerce and hyperlocal delivery operations content was minimal — a growing part of Indian retail management",
-          "body": "I was a junior buyer at an apparel chain targeting Category Manager. The assortment planning, OTB management, and vendor development content was exactly what I needed to formalise my ad-hoc buying knowledge. The retail operations and consumer behaviour content gave me broader context. Got the Category Manager role 5 months after completing the MBA. The Amity NIRF #22 University 2025 was specifically checked by my new employer."
-        },
-        {
-          "name": "Sandeep Kumar",
-          "city": "Bangalore",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Store P&L management and shrinkage control content was practical and measurable for my store manager work",
-          "disliked": "Omnichannel integration content needed more India-specific e-commerce and quick commerce case examples",
-          "body": "I manage a large format retail store. The store operations, shrinkage control, and staff management content was substantive and gave me the framework to restructure my team management approach. The MBA gave me the credentials to apply for Area Manager, which requires a management degree. The Amity degree was accepted without question by the retail chain's HR."
-        },
-        {
-          "name": "Meena Rao",
-          "city": "Mumbai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Consumer behaviour in retail context module explained shopper decision patterns I had been observing empirically",
-          "disliked": "Visual merchandising content was more conceptual than practical — could benefit from planogram software exposure",
-          "body": "I work in trade marketing at an FMCG company managing key account relationships with modern retail chains. The retail operations and category management content gave me a better understanding of how my retail customers think and make decisions. This improved my key account negotiations significantly. The Amity MBA opened doors to Senior Key Account Manager roles that required management degrees."
-        }
-      ]
     },
     "faqs": [
       {
@@ -89,14 +57,14 @@
     ],
     "chooseAlternatives": {
       "chooseIf": [
-        "You are a retail professional — store manager, category buyer, or retail operations executive — targeting area management, category management, or senior retail operations roles.",
+        "You are a retail professional, store manager, category buyer, or retail operations executive, targeting area management, category management, or senior retail operations roles.",
         "You work in organised retail, e-commerce operations, or FMCG modern trade and want a NIRF #22 management credential specifically oriented to retail management.",
         "You want a dedicated retail sector MBA under Rs 2 lakh at a NAAC A+ university."
       ],
       "consider": [
-        "You are on the brand or FMCG side managing trade marketing and distribution rather than retail operations — Marketing and Sales Management is more relevant for brand-side retail careers.",
-        "You want broader management coverage — General Management covers retail and operations management within a cross-functional framework.",
-        "You are targeting premium consulting or brand strategy roles at FMCG companies — NMIMS Online or Symbiosis Online carry stronger brand recognition in those hiring contexts."
+        "You are on the brand or FMCG side managing trade marketing and distribution rather than retail operations, Marketing and Sales Management is more relevant for brand-side retail careers.",
+        "You want broader management coverage, General Management covers retail and operations management within a cross-functional framework.",
+        "You are targeting premium consulting or brand strategy roles at FMCG companies, NMIMS Online or Symbiosis Online carry stronger brand recognition in those hiring contexts."
       ]
     }
   },
@@ -105,6 +73,7 @@
     "generatedAt": "2026-04-21",
     "batchNumber": 9,
     "hasSyllabusData": false,
-    "phase71Updated": "2026-04-21"
+    "phase71Updated": "2026-04-21",
+    "claimSweep": "2026-09-17"
   }
 }

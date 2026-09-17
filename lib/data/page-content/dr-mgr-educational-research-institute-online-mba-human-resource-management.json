@@ -19,29 +19,65 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Training and Development", "desc": "Training needs analysis, programme design, delivery methods, e-learning integration, ROI measurement, and competency-based training frameworks." },
-            { "name": "Stress Management", "desc": "Workplace stress identification, occupational health, employee wellness programmes, burnout prevention, and organizational stress intervention strategies." },
-            { "name": "Strategic Management", "desc": "Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic implementation processes." },
-            { "name": "Entrepreneurship Development", "desc": "Startup ideation, business plan creation, funding strategies, MSME support systems, and entrepreneurial risk management." },
-            { "name": "Management Accounting", "desc": "Cost-volume-profit analysis, budgetary control, standard costing, variance analysis, and management decision-making tools." },
-            { "name": "Production and Operations Management", "desc": "Production planning, quality management, facility layout, capacity planning, and operations scheduling." },
-            { "name": "Skill Development", "desc": "Communication skills, presentation techniques, team management, and professional development modules." },
-            { "name": "Summer Project", "desc": "Industry-linked summer project in an HR function requiring field research, data collection, and structured report." }
+            {
+              "name": "Training and Development",
+              "desc": "Training needs analysis, programme design, delivery methods, e-learning integration, ROI measurement, and competency-based training frameworks."
+            },
+            {
+              "name": "Stress Management",
+              "desc": "Workplace stress identification, occupational health, employee wellness programmes, burnout prevention, and organizational stress intervention strategies."
+            },
+            {
+              "name": "Strategic Management",
+              "desc": "Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic implementation processes."
+            },
+            {
+              "name": "Entrepreneurship Development",
+              "desc": "Startup ideation, business plan creation, funding strategies, MSME support systems, and entrepreneurial risk management."
+            },
+            {
+              "name": "Management Accounting",
+              "desc": "Cost-volume-profit analysis, budgetary control, standard costing, variance analysis, and management decision-making tools."
+            },
+            {
+              "name": "Production and Operations Management",
+              "desc": "Production planning, quality management, facility layout, capacity planning, and operations scheduling."
+            },
+            {
+              "name": "Skill Development",
+              "desc": "Communication skills, presentation techniques, team management, and professional development modules."
+            },
+            {
+              "name": "Summer Project",
+              "desc": "Industry-linked summer project in an HR function requiring field research, data collection, and structured report."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Digital Marketing", "desc": "Digital marketing fundamentals, employer branding online, recruitment marketing, and social media strategy." },
-            { "name": "International Business Management", "desc": "Global HR practices, cross-cultural management, international labour laws, and expatriate management." },
-            { "name": "Contemporary Seminar", "desc": "Student-led seminar on current HR management topics. Research, presentation, and peer discussion." },
-            { "name": "Field Work and Project Work (8 Weeks)", "desc": "Mandatory 8-week field project in an HR department or consulting firm. Structured report, data analysis, and viva voce defence." }
+            {
+              "name": "Digital Marketing",
+              "desc": "Digital marketing fundamentals, employer branding online, recruitment marketing, and social media strategy."
+            },
+            {
+              "name": "International Business Management",
+              "desc": "Global HR practices, cross-cultural management, international labour laws, and expatriate management."
+            },
+            {
+              "name": "Contemporary Seminar",
+              "desc": "Student-led seminar on current HR management topics. Research, presentation, and peer discussion."
+            },
+            {
+              "name": "Field Work and Project Work (8 Weeks)",
+              "desc": "Mandatory 8-week field project in an HR department or consulting firm. Structured report, data analysis, and viva voce defence."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Dr. MGR MBA Human Resource Management graduates target roles across HR operations, talent management, and organizational development:\n\n**Industries:** IT/ITES, manufacturing, banking, healthcare (leveraging Dr. MGR's heritage), retail, consulting, staffing agencies, and government departments\n\n**Entry-level roles:** HR Executive, Recruitment Coordinator, Training Coordinator, Payroll Executive, Employee Engagement Associate, HR Operations Associate\n\n**Mid-level roles (3-5 years):** HR Manager, Talent Acquisition Manager, Training and Development Manager, Compensation and Benefits Manager, HRBP (HR Business Partner), Employee Relations Manager\n\n**Senior roles (7+ years):** Head of HR, CHRO (mid-market), VP Human Resources, Director of Talent Management, Head of Learning and Development\n\n**Employers:** IT companies (TCS, Infosys, Wipro, HCL in Chennai), manufacturing firms, hospitals and healthcare chains (Apollo, MIOT, Kauvery), banking (SBI, HDFC, ICICI), and Tamil Nadu government departments.\n\n**Note:** Chennai is India's fourth-largest IT hub. Dr. MGR's local brand recognition gives graduates access to the Chennai/Tamil Nadu HR job market."
+      "body": "Dr. MGR MBA Human Resource Management graduates target roles across HR operations, talent management, and organizational development:\n\n**Industries:** IT/ITES, manufacturing, banking, healthcare (leveraging Dr. MGR's heritage), retail, consulting, staffing agencies, and government departments\n\n**Entry-level roles:** HR Executive, Recruitment Coordinator, Training Coordinator, Payroll Executive, Employee Engagement Associate, HR Operations Associate\n\n**Mid-level roles (3-5 years):** HR Manager, Talent Acquisition Manager, Training and Development Manager, Compensation and Benefits Manager, HRBP (HR Business Partner), Employee Relations Manager\n\n**Senior roles (7+ years):** Head of HR, CHRO (mid-market), VP Human Resources, Director of Talent Management, Head of Learning and Development\n\n**Employers:** IT companies (TCS, Infosys, Wipro, HCL in Chennai), manufacturing firms, hospitals and healthcare chains (Apollo, MIOT, Kauvery), banking (SBI, HDFC, ICICI), and Tamil Nadu government departments.\n\n**Note:** Chennai is India's fourth-largest IT hub. Dr. MGR's local brand recognition gives graduates access to the Chennai/Tamil Nadu HR job market.\n\n**Where to verify placement claims:** ask Dr. MGR Educational and Research Institute Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Human Resource Management specialisation builds skills across training, employee wellness, and talent management:\n\n**Technical skills:**\n- Training and Development: needs analysis frameworks (Kirkpatrick model), programme design, e-learning platform evaluation, training ROI calculation, and competency mapping\n- Stress Management: workplace stress assessment tools, employee assistance programme (EAP) design, burnout indicators, wellness programme metrics, and occupational health compliance\n- Talent Management (from Sem 2): talent pipeline building, succession planning, performance management systems, and high-potential identification\n\n**Applied skills:**\n- Strategic HRM (from Sem 2): HR strategy alignment with business goals, workforce planning, HR analytics basics, and organizational design\n- Industrial Relations (from Sem 2): Trade union management, collective bargaining, Industrial Disputes Act, and labour compliance\n\n**Soft skills:** Conducting training sessions, employee counselling, conflict resolution, exit interview management, and presenting HR metrics to leadership."
@@ -54,38 +90,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Human Resource Management as the specialisation, issued by Dr. MGR Educational and Research Institute (Deemed University) under UGC-DEB online mode standards.\n\nThe degree carries NAAC A+ accreditation, UGC-DEB approval, and Deemed University status since 2003. Valid for HR manager roles, government recruitment, PSU HR positions, and private-sector human resources careers. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from Dr. MGR Online MBA Human Resource Management students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Meena",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Training and Development subject was directly useful for my L&D role at a Chennai IT company. Dr. MGR's local brand recognition helped during internal promotion discussions",
-          "disliked": "Only two HRM-specific subjects in Sem 3. Sem 4 has no HR-specific courses at all",
-          "body": "I chose Dr. MGR because the name carries weight in Chennai corporate circles. NAAC A+ at this fee is reasonable. Training and Development covered Kirkpatrick model and ROI measurement at a practical level. Stress Management was relevant for my employee wellness initiatives. The 8-week HR field project added structure. The gap is limited spec-specific depth: only two dedicated HR subjects in Sem 3."
-        },
-        {
-          "name": "Arun",
-          "city": "Salem",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Stress Management as a standalone subject is uncommon in online MBA HRM programmes. Directly applicable to my role managing factory floor employee wellness",
-          "disliked": "Pan-India brand recognition is weak compared to Amity, Manipal, or LPU. Northern employers rarely know Dr. MGR",
-          "body": "The HRM programme is compact. Two spec subjects in Sem 3, plus Sem 2 covers Talent Management, Strategic HRM, and Industrial Relations as common core. So the HR exposure is spread across Sem 2-3. The 8-week field project was the highlight. I completed it in my manufacturing unit's HR department. For Tamil Nadu and South India HR careers, Dr. MGR is a solid choice. For national ambitions, the brand limitation is real."
-        },
-        {
-          "name": "Kavitha",
-          "city": "Coimbatore",
-          "year": 2023,
-          "rating": 3,
-          "liked": "The Sem 2 common core subjects (Talent Management, Strategic HRM, Industrial Relations) provided more HR depth than expected from a general MBA structure",
-          "disliked": "Fee is higher than Galgotias (Rs 80,200) and Uttaranchal (Rs 94,000) for similar NAAC-tier HR programmes",
-          "body": "At Rs 1.36-1.41L, Dr. MGR is not the cheapest option for an HR MBA. Galgotias and Uttaranchal are Rs 40,000-50,000 cheaper. Dr. MGR's value is the Tamil Nadu brand and Deemed University status since 2003. If you are a working professional in TN who needs the MBA credential for promotion, Dr. MGR delivers. If fee is your top criterion, look at cheaper alternatives."
-        }
-      ]
     },
     "faqs": [
       {
@@ -129,6 +133,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 31,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

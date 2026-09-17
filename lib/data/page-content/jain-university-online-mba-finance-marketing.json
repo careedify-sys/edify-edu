@@ -65,7 +65,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Finance and Marketing dual MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** FMCG brand finance, Banking marketing and product, Retail and e-commerce, Financial services marketing, Fintech product management, Consulting\n\n**Entry-level roles:** Marketing Finance Analyst, Brand Finance Analyst, Retail Merchandising Analyst, Banking Product Analyst, Fintech Marketing Analyst\n\n**Mid-level roles (3-5 years experience):** Brand Finance Manager, Marketing P&L Manager, Retail General Manager, Banking Product Manager, FMCG Marketing Finance Lead\n\n**Senior roles (7+ years):** CMO with P&L, VP Marketing Finance, Retail Business Head, Chief Revenue Officer, Head of Marketing Finance\n\n**Top hiring organisations:** Unilever India, P&G India, ITC, Nestle India, HDFC Bank Marketing, Axis Bank Product, Kotak Marketing, Flipkart Marketing Finance, Amazon India, Deloitte Marketing Advisory, KPMG Finance Advisory"
+      "body": "This Finance and Marketing dual MBA syllabus maps to the following industries and roles:\n\n**Industries:** FMCG brand finance, Banking marketing and product, Retail and e-commerce, Financial services marketing, Fintech product management, Consulting\n\n**Entry-level roles:** Marketing Finance Analyst, Brand Finance Analyst, Retail Merchandising Analyst, Banking Product Analyst, Fintech Marketing Analyst\n\n**Mid-level roles (3-5 years experience):** Brand Finance Manager, Marketing P&L Manager, Retail General Manager, Banking Product Manager, FMCG Marketing Finance Lead\n\n**Senior roles (7+ years):** CMO with P&L, VP Marketing Finance, Retail Business Head, Chief Revenue Officer, Head of Marketing Finance\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN Finance and Marketing dual specialisation builds integrated skills for P&L management, brand finance, and revenue-facing roles:\n\n**Finance skills:**\n- Direct and Indirect Taxes: corporate tax, GST, and TDS compliance for P&L owners managing marketing budgets and brand finance\n- Investment Analysis and Portfolio Management: DCF and relative valuation for capital allocation and marketing investment decisions\n- Risk Management and Behavioural Finance: financial risk management combined with behavioural consumer insight for integrated brand and finance decisions\n\n**Marketing skills:**\n- Consumer Behaviour and Insights: customer journey analysis and buying behaviour understanding for brand positioning and marketing strategy\n- Market Research Tools: SPSS and survey analytics for market intelligence generation supporting both marketing and financial decisions\n- Digital Marketing and Brand Management: digital brand equity building, performance marketing management, and marketing ROI integration\n\n**Cross-functional skills:**\n- Retail Marketing and Service Management: category strategy, omnichannel execution, and service quality management for general managers bridging finance and marketing\n- Indian Financial System: capital markets, SEBI regulations, and financial products knowledge for marketing professionals in BFSI and fintech\n\n**Soft skills:** Presenting integrated finance and marketing performance to business leadership, managing cross-functional P&L teams, building investment cases for marketing budgets, and communicating brand equity value to CFOs."
@@ -78,38 +78,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. Both Finance and Marketing specialisations are noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The dual specialisation certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA Finance and Marketing alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Aditya Srinivas",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Investment Analysis combined with Consumer Behaviour and Market Research gave me the dual credential my FMCG brand finance role requires. Digital Marketing and Brand Management subject was immediately applicable.",
-          "disliked": "The breadth means neither Finance nor Marketing is at single-spec depth. Know this trade-off before choosing dual over single-spec.",
-          "body": "I had 5 years in FMCG marketing and needed financial credibility for a brand finance transition. The JAIN Finance and Marketing dual MBA gave me exactly that. No other university at this fee offered both specialisations in one programme."
-        },
-        {
-          "name": "Kavya Iyer",
-          "city": "Chennai",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Dual specialisation gave me credibility in both brand and finance conversations. Risk Management and Behavioural Finance subject was a unique cross-domain combination.",
-          "disliked": "Students hoping for deep finance technical skills like derivatives or wealth management should choose single-spec Finance. Dual is for breadth.",
-          "body": "Good programme for revenue-facing management roles at South India FMCG and retail companies. Chennai companies valued the dual credential for cross-functional management positions."
-        },
-        {
-          "name": "Praveen Kumar",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 3,
-          "liked": "The dual credential was a clear differentiator on my resume for roles requiring both P&L and brand management.",
-          "disliked": "Some finance subjects like Direct Taxes felt basic compared to single-spec Finance depth.",
-          "body": "Good value at the fee. Best suited for roles requiring cross-functional P&L and brand management. Not suitable if deep finance or deep marketing specialisation is the career goal."
-        }
-      ]
     },
     "faqs": [
       {
@@ -150,6 +118,7 @@
     "wordCount": 2050,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

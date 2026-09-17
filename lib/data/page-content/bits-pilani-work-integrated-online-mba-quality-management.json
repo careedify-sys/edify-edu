@@ -49,7 +49,7 @@
       "note": "Sem 1-2 cover shared MBA core subjects across all BITS Pilani WILP specialisations. Sem 3-4 introduce specialisation-specific and elective subjects. General Management Elective pool includes Advanced Marketing Management, AI for Competitive Advantage, Business Environment Laws Ethics, Business Research Methods, Data Visualization, Decision Analysis, Entrepreneurship, Entrepreneurial Finance, Enterprise Risk Management, Indian Ethos, International Business and Trade, Leadership and Managing Change, Management Control Systems, Project Management, Strategic HRM, and Technology Management."
     },
     "whoHires": {
-      "body": "Quality Management MBA graduates from BITS Pilani WILP target these industries and roles:\n\n**Industries:** Automotive manufacturing, Pharmaceutical and medical devices, IT and software services, Aerospace and defence, Food processing, Construction and infrastructure, Consulting (quality and process improvement)\n\n**Entry-level roles:** Quality Analyst, SQC Engineer, Process Improvement Associate, QA Coordinator\n\n**Mid-level roles (3-5 years experience):** Quality Manager, Lean Six Sigma Lead, QA Head, Process Excellence Manager, Supplier Quality Manager\n\n**Senior roles (7+ years):** VP Quality, Director Process Excellence, Chief Quality Officer, Head of Operational Excellence\n\n**Note:** BITS Pilani WILP does not conduct placement drives. This programme is for working professionals only. Career progression depends on your existing employment trajectory and how you apply programme skills."
+      "body": "Quality Management MBA graduates from BITS Pilani WILP target these industries and roles:\n\n**Industries:** Automotive manufacturing, Pharmaceutical and medical devices, IT and software services, Aerospace and defence, Food processing, Construction and infrastructure, Consulting (quality and process improvement)\n\n**Entry-level roles:** Quality Analyst, SQC Engineer, Process Improvement Associate, QA Coordinator\n\n**Mid-level roles (3-5 years experience):** Quality Manager, Lean Six Sigma Lead, QA Head, Process Excellence Manager, Supplier Quality Manager\n\n**Senior roles (7+ years):** VP Quality, Director Process Excellence, Chief Quality Officer, Head of Operational Excellence\n\n**Note:** BITS Pilani WILP does not conduct placement drives. This programme is for working professionals only. Career progression depends on your existing employment trajectory and how you apply programme skills.\n\n**Where to verify placement claims:** ask BITS Pilani Work Integrated Learning Programmes (WILP) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The BITS Pilani WILP Quality Management specialisation builds quality leadership and process excellence skills:\n\n**Technical skills:**\n- Statistical Quality Control: control charts, process capability indices, acceptance sampling, ANOVA, and statistical process control\n- Lean Six Sigma: DMAIC methodology, waste elimination, value stream mapping, and continuous improvement frameworks\n- Quality Analytics: data-driven quality monitoring, defect pattern analysis, and predictive quality modelling\n- AI Management System: AI-powered quality inspection, automated defect detection, and intelligent process monitoring\n\n**Applied skills:**\n- Design for Quality: quality by design principles, robust design, Taguchi methods, and FMEA (failure mode and effects analysis)\n- Software Quality Management: software testing frameworks, QA processes, CMMI, and agile quality practices\n- Managing Quality in Services Industry: service quality models (SERVQUAL), customer satisfaction measurement, and service process improvement\n- Legal and Regulatory Aspects of Quality: regulatory compliance, standards (ISO 9001, ISO 14001), and quality auditing\n\n**Management skills:** Strategic Management and Business Policy, Managerial Economics, and General Management electives in leadership, project management, and enterprise risk management."
@@ -62,38 +62,6 @@
     },
     "certificate": {
       "body": "Graduates receive a degree certificate issued by BITS Pilani under UGC norms. The certificate reads Master of Business Administration. The Quality Management specialisation is noted on the marksheet and transcript. BITS Pilani carries Institution of Eminence status, NAAC A+ accreditation, and NIRF #7 University 2025 ranking. The BITS Pilani name is particularly valued in manufacturing, engineering, and quality assurance circles."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from BITS Pilani WILP MBA Quality Management students. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Pradeep R.",
-          "city": "Pune",
-          "year": 2025,
-          "rating": 4.5,
-          "liked": "This is the only standalone quality management MBA I could find online. Lean Six Sigma and Statistical Quality Control together in one spec is exactly what I needed for my automotive quality role. BITS Pilani brand is gold in manufacturing.",
-          "disliked": "In-person exams meant taking leave for travel. Rs 2.98L is premium but the niche content justified it.",
-          "body": "Rare and valuable programme. No other online university offers Quality Management as a full MBA specialisation. Lean Six Sigma elective was rigorous. Statistical Quality Control as the core subject gave a strong analytical foundation. In-person exams at designated centres keep the degree credible. No placements, which was expected for WILP."
-        },
-        {
-          "name": "Divya T.",
-          "city": "Bangalore",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Software Quality Management elective was perfect for my IT QA career. Quality Analytics added data-driven depth. Institution of Eminence status helped with promotion documentation.",
-          "disliked": "Niche spec means smaller peer group. Fewer people to discuss assignments with compared to popular specs like Finance or Marketing.",
-          "body": "Excellent for IT quality professionals. Software Quality Management and Quality Analytics electives are directly applicable to QA leadership roles. The BITS Pilani credential with NIRF #7 ranking carried weight with my employer. Exams are in-person. No placements offered, which was clear from admission."
-        },
-        {
-          "name": "Harish V.",
-          "city": "Chennai",
-          "year": 2025,
-          "rating": 3.5,
-          "liked": "Design for Quality and Legal and Regulatory Aspects of Quality filled genuine knowledge gaps. BITS Pilani alumni network in engineering is strong.",
-          "disliked": "Fee is steep at Rs 2.98L compared to DPU Operations (Rs 1.89L) which covers TQM. Very niche, so employer awareness of this specific spec is limited.",
-          "body": "Good programme if quality management is your exact career path. The specialisation depth is unmatched in the online space. But at Rs 2.98L, you pay a premium for a niche track. In-person exams require planning. No placement support since WILP targets working professionals."
-        }
-      ]
     },
     "faqs": [
       {
@@ -139,6 +107,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 42,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

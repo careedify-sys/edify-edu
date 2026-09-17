@@ -61,7 +61,7 @@
       "note": "Sem 1-2 shared core subjects across all UPES MBA specialisations. Core includes Managerial Economics, Accounting for Managers, Marketing Management, Quantitative Techniques, Operations Management, OB and HRM, Project Management, Financial Management, Research Methodology, and Business Analytics for Managers."
     },
     "whoHires": {
-      "body": "Power Management MBA graduates from UPES Online are hired across these industries and roles:\n\n**Industries:** Thermal power generation, Renewable energy (solar, wind, hydro), Power transmission and distribution, Energy consulting, Power trading, State electricity boards\n\n**Entry-level roles:** Business Analyst (Power), Commercial Executive, Renewable Project Analyst, Power Trading Analyst, Energy Finance Analyst\n\n**Mid-level roles (3-5 years experience):** Commercial Manager, Power Project Manager, Business Development Manager (Renewables), Operations Manager (Plant), Regulatory Affairs Manager\n\n**Senior roles (7+ years):** VP Commercial, Head of Renewable Development, Business Development Director, CEO (Power Company), Head of Regulatory Affairs\n\n**Top hiring organisations (UPES alumni placements):** NTPC, NHPC, PGCIL, NPCIL, Adani Green Energy, ReNew Power, Greenko, Tata Power, Sterlite Power, and state generation and distribution companies. UPES alumni in NTPC and PGCIL hold senior management roles that create direct referral pathways for programme graduates."
+      "body": "This Power Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** Thermal power generation, Renewable energy (solar, wind, hydro), Power transmission and distribution, Energy consulting, Power trading, State electricity boards\n\n**Entry-level roles:** Business Analyst (Power), Commercial Executive, Renewable Project Analyst, Power Trading Analyst, Energy Finance Analyst\n\n**Mid-level roles (3-5 years experience):** Commercial Manager, Power Project Manager, Business Development Manager (Renewables), Operations Manager (Plant), Regulatory Affairs Manager\n\n**Senior roles (7+ years):** VP Commercial, Head of Renewable Development, Business Development Director, CEO (Power Company), Head of Regulatory Affairs\n\n**Where to verify placement claims:** ask University of Petroleum & Energy Studies (UPES) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The UPES Power Management specialisation builds skills that power sector companies test at commercial manager and project manager levels:\n\n**Technical skills:**\n- Electricity Markets and Tariff Design: merit order dispatch understanding, power purchase agreement structuring, and tariff computation for power sector commercial and regulatory roles\n- Renewable Energy Project Development: solar and wind project economics evaluation, PPA structuring, and tender management for renewable energy business development roles\n- Energy Finance and Project Financing: power project debt-equity structure design and capital expenditure appraisal for energy sector finance and infrastructure project roles\n- Smart Grid Technology and Digital Energy: AMI, demand response, and smart grid management for digital energy and grid modernisation roles\n\n**Applied skills:**\n- Power Sector Policy and Reform: CERC, SERC, and national electricity policy navigation for regulatory affairs and government relations roles at power companies\n- Sustainable Energy Management: ESG framework application, carbon accounting, and renewable transition strategy for power company leadership and sustainability roles\n\n**Soft skills:** Presenting power project investment proposals to boards, negotiating power purchase agreements with DISCOMs, communicating regulatory changes to operations teams, and managing stakeholder relations during power sector reform processes."
@@ -74,38 +74,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by University of Petroleum and Energy Studies (UPES) and carries the UPES name with the MBA designation. The Power Management specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India. UPES is WES recognised, making the degree suitable for international credential evaluation."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from UPES Online MBA Power Management alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Sunil Pandey",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Electricity Markets and Tariff Design was outstanding. No other online MBA covers CERC and merit order dispatch at this level. Renewable Energy Project Development gave frameworks I applied immediately in solar tenders. UPES alumni at NTPC were directly helpful.",
-          "disliked": "Smart Grid subject could benefit from more hands-on AMI platform simulation exercises.",
-          "body": "I had 8 years in PGCIL and the UPES Power Management MBA gave me the commercial credentials for a business development role at a renewable IPP. UPES is genuinely the only credible choice for power sector professionals wanting an online MBA."
-        },
-        {
-          "name": "Mohan Lal",
-          "city": "Lucknow",
-          "year": 2023,
-          "rating": 5,
-          "liked": "Energy Finance and Project Financing was directly applicable to my role evaluating renewable project debt proposals. Sustainable Energy Management gave ESG frameworks relevant for current energy company mandates.",
-          "disliked": "International power sector case studies (EU electricity markets, US deregulation) could supplement India-specific content.",
-          "body": "Power Management MBA at Rs 2,20,000 is excellent value for money for power sector professionals. UPES alumni in state electricity boards and NTPC gave me access to job openings before they were posted publicly."
-        },
-        {
-          "name": "Deepika Tomar",
-          "city": "Dehradun",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Power Sector Policy and Reform covered DISCOM reforms and renewable integration comprehensively. Plant Operations Management was applicable to my thermal generation plant role.",
-          "disliked": "The Power Sector Policy subject could be more frequently updated to reflect current DISCOMS privatisation and electricity amendment bill developments.",
-          "body": "Strong sector-specific credential for power sector professionals. UPES is the right choice and at Rs 2,20,000 with zero-cost EMI, it is accessible for mid-career energy professionals targeting business leadership transitions."
-        }
-      ]
     },
     "faqs": [
       {
@@ -146,6 +114,7 @@
     "wordCount": 2000,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch15",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

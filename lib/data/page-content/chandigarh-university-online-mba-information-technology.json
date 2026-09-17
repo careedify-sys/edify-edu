@@ -73,7 +73,7 @@
       ]
     },
     "whoHires": {
-      "body": "IT MBA graduates from Chandigarh University Online are hired across technology and IT-intensive industries:\n\n**Industries:** IT services, banking and financial technology, e-commerce, telecom, government IT, consulting, and large enterprises undergoing digital transformation\n\n**Entry-level roles:** IT Project Coordinator, Business Analyst (IT), Systems Analyst, IT Consultant (Junior), Product Analyst\n\n**Mid-level roles (3-5 years experience):** IT Project Manager, Product Manager, IT Strategy Consultant, Digital Transformation Lead, Pre-sales Manager (technology)\n\n**Senior roles (7+ years):** IT Director, VP Technology, CTO, IT Practice Head (consulting), VP Digital\n\n**Where to verify placement claims:** ask Chandigarh University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
+      "body": "This IT MBA syllabus maps to the following technology and IT-intensive industries:\n\n**Industries:** IT services, banking and financial technology, e-commerce, telecom, government IT, consulting, and large enterprises undergoing digital transformation\n\n**Entry-level roles:** IT Project Coordinator, Business Analyst (IT), Systems Analyst, IT Consultant (Junior), Product Analyst\n\n**Mid-level roles (3-5 years experience):** IT Project Manager, Product Manager, IT Strategy Consultant, Digital Transformation Lead, Pre-sales Manager (technology)\n\n**Senior roles (7+ years):** IT Director, VP Technology, CTO, IT Practice Head (consulting), VP Digital\n\n**Where to verify placement claims:** ask Chandigarh University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "You should finish able to run a technology function: to decide what gets built, by whom, at what cost, and whether it is working.\n\nSystem Analysis and Design covers requirements, specification and the translation between what a business asks for and what can be built. Managing IT-Enabled Services covers delivery structures, service levels and vendor governance.\n\nData Engineering and MLOps Essentials covers the pipeline and lifecycle layer: how data arrives, how models get deployed, monitored and retrained, and why an accurate model still fails in production.\n\nAgentic AI and Intelligent Process Automation covers automating a process end to end, and the control questions about what a system may do without a human in the loop.\n\nBusiness Intelligence covers reporting and decision support. Knowledge Management covers capturing what an organisation knows, which is the problem retrieval-based AI systems are now being pointed at."
@@ -130,6 +130,7 @@
     "hasSyllabusData": true,
     "phase71Updated": "2026-04-22",
     "integrityPass": "2026-09-17",
-    "humanisedAt": "2026-09-17"
+    "humanisedAt": "2026-09-17",
+    "claimSweep": "2026-09-17"
   }
 }

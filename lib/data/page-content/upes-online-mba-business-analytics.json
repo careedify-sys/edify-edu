@@ -61,7 +61,7 @@
       "note": "Sem 1-2 shared core subjects across all UPES MBA specialisations. Core includes Managerial Economics, Accounting for Managers, Marketing Management, Quantitative Techniques, Operations Management, OB and HRM, Project Management, Financial Management, Research Methodology, and Business Analytics for Managers."
     },
     "whoHires": {
-      "body": "Business Analytics MBA graduates from UPES Online are hired across these industries and roles:\n\n**Industries:** IT services and product companies, E-commerce, BFSI analytics, FMCG analytics, Consulting and data advisory, EdTech\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Consultant, Business Intelligence Analyst, Digital Analytics Executive\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, Data Science Manager, Business Intelligence Manager, Product Analytics Manager, Decision Science Lead\n\n**Senior roles (7+ years):** Head of Analytics, Chief Data Officer, VP Data Science, Director Business Intelligence, Head of Decision Science\n\n**Top hiring organisations (UPES alumni placements):** TCS, Infosys, HCL, Wipro, Deloitte, KPMG, and BFSI and e-commerce analytics firms. UPES alumni in North India IT services corridors (Noida, Gurgaon, Dehradun) provide analytics career access that sector-general online MBAs at comparable fees cannot replicate."
+      "body": "This Business Analytics MBA syllabus maps to the following industries and roles:\n\n**Industries:** IT services and product companies, E-commerce, BFSI analytics, FMCG analytics, Consulting and data advisory, EdTech\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Consultant, Business Intelligence Analyst, Digital Analytics Executive\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, Data Science Manager, Business Intelligence Manager, Product Analytics Manager, Decision Science Lead\n\n**Senior roles (7+ years):** Head of Analytics, Chief Data Officer, VP Data Science, Director Business Intelligence, Head of Decision Science\n\n**Where to verify placement claims:** ask University of Petroleum & Energy Studies (UPES) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The UPES Business Analytics specialisation builds skills that IT, BFSI, and e-commerce analytics employers test at analyst and manager levels:\n\n**Technical skills:**\n- Programming for Business Analytics (Python): pandas, numpy, data wrangling, and analytics automation. A dedicated Python programming subject uncommon in online MBA programmes at this fee range\n- Big Data Analytics: Hadoop, Spark, and distributed computing for large-scale dataset processing applicable to enterprise analytics and data engineering roles\n- Natural Language Processing: text mining, sentiment analysis, and topic modelling for customer analytics, social media intelligence, and unstructured data applications\n- Data Visualization: Tableau, Power BI, and Python visualization for business intelligence dashboard design and executive reporting\n\n**Applied skills:**\n- AI for Managers: AI project evaluation, model interpretation, and analytics roadmap management for analytics leadership roles\n- Social and Web Analytics: Google Analytics, social listening, and digital audience analysis for e-commerce, digital marketing, and growth analytics roles\n\n**Soft skills:** Presenting predictive model outputs to senior management, translating analytics recommendations to business action, communicating data infrastructure requirements to IT leadership, and managing analytics project stakeholders across business units."
@@ -74,38 +74,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by University of Petroleum and Energy Studies (UPES) and carries the UPES name with the MBA designation. The Business Analytics specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India. UPES is WES recognised, making the degree suitable for international credential evaluation."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from UPES Online MBA Business Analytics alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Rohit Saxena",
-          "city": "Noida",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Python for Business Analytics was the standout subject. NLP gave me applied text mining skills I now use for customer feedback analysis at my IT company. NIRF #36 in Management was a strong credential in data analyst interviews.",
-          "disliked": "Big Data hands-on assignments could include more cluster computing practice with real enterprise-scale datasets.",
-          "body": "I had 4 years in IT services with limited analytics background. The UPES Business Analytics MBA gave me Python and NLP skills that drove a transition to a data analyst role. UPES alumni network in Noida and Gurgaon was genuinely active."
-        },
-        {
-          "name": "Shruti Agarwal",
-          "city": "Delhi",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Data Visualization and Social and Web Analytics were well-structured and directly applicable to my digital marketing analytics role. AI for Managers gave good frameworks for analytics project management.",
-          "disliked": "For deep data science and machine learning roles, supplementing with a certification like AWS or Google Analytics is needed. UPES brand is strongest in North India.",
-          "body": "Good programme for North India IT services and digital analytics careers. NIRF #36 Management rank is a credible differentiator vs many peer online MBA programmes at this fee."
-        },
-        {
-          "name": "Karan Mehta",
-          "city": "Dehradun",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Business Optimization and Data Environment and Management subjects were foundational and well-delivered. Python course structure was clear.",
-          "disliked": "Faculty depth for NLP advanced topics could be stronger. Some case studies were not India-specific for analytics scenarios.",
-          "body": "Solid analytics credential at Rs 1,75,000 with zero-cost EMI. Best for North India IT analytics careers. For deep ML engineering roles, supplementing with cloud certifications is recommended."
-        }
-      ]
     },
     "faqs": [
       {
@@ -146,6 +114,7 @@
     "wordCount": 1900,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch15",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

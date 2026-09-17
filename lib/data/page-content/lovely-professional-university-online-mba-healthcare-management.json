@@ -65,7 +65,7 @@
       "note": "Sem 1-2 shared core subjects across all LPU Online MBA specialisations. See the main LPU Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Hospital and Healthcare Management MBA graduates from LPU Online are hired across these industries and roles:\n\n**Industries:** Private hospital chains, Diagnostic chains, Pharmaceutical companies, Healthcare consulting, Health insurance, Public health organisations\n\n**Entry-level roles:** Hospital Administrator, Healthcare Operations Manager, Quality Manager (NABH), Revenue Cycle Analyst, Health Informatics Executive\n\n**Mid-level roles (3-5 years experience):** Hospital Manager, Head of Operations (hospital), Healthcare Project Manager, COO (clinic network)\n\n**Senior roles (7+ years):** Hospital CEO, VP Healthcare Operations, Head of Medical Affairs, Healthcare Group Director\n\n**Top hiring organisations:** Fortis Healthcare, Max Healthcare, Apollo Hospitals, Narayana Health, Manipal Hospitals, Medanta, Religare Health Insurance, Star Health Insurance, Niva Bupa, NABH-accredited hospital chains, Punjab state government hospitals, Chandigarh PGI network hospitals"
+      "body": "This Hospital and Healthcare Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** Private hospital chains, Diagnostic chains, Pharmaceutical companies, Healthcare consulting, Health insurance, Public health organisations\n\n**Entry-level roles:** Hospital Administrator, Healthcare Operations Manager, Quality Manager (NABH), Revenue Cycle Analyst, Health Informatics Executive\n\n**Mid-level roles (3-5 years experience):** Hospital Manager, Head of Operations (hospital), Healthcare Project Manager, COO (clinic network)\n\n**Senior roles (7+ years):** Hospital CEO, VP Healthcare Operations, Head of Medical Affairs, Healthcare Group Director\n\n**Where to verify placement claims:** ask Lovely Professional University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The LPU Hospital and Healthcare Management specialisation builds skills that hospital administration and healthcare management employers test at COO-track levels:\n\n**Technical skills:**\n- Hospital Administration and Planning: hospital facility planning, bed capacity management, department planning, and hospital expansion management for hospital administrator roles\n- Quality and Accreditation in Healthcare: NABH and JCI accreditation preparation, clinical quality indicator management, and healthcare audit process management for quality manager roles\n- Health Informatics: EMR and EHR system implementation, hospital information system management, and health data standard application for health IT management roles\n- Healthcare Finance Management: revenue cycle management, hospital budgeting, insurance tariff negotiation, and PMJAY empanelment finance for healthcare finance roles\n\n**Applied skills:**\n- Healthcare Operations Management: OT scheduling, ICU capacity management, and clinical pathway design for hospital operations management\n- Community Health Management: primary health centre management, community outreach programme design, and public health management\n\n**Soft skills:** Managing doctor-administrator relationships, presenting hospital performance metrics to boards, negotiating insurance reimbursement rates, and leading hospital accreditation preparation teams."
@@ -78,38 +78,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Lovely Professional University (LPU) and carries the LPU name with the MBA designation. The Hospital and Healthcare Management specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from LPU Online MBA Hospital and Healthcare Management alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Dr. Paramjit Kaur",
-          "city": "Ludhiana",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Quality and Accreditation and Hospital Administration subjects were directly applicable to my hospital management role. Zero-cost EMI made it very accessible for a working hospital administrator.",
-          "disliked": "Healthcare Finance Management could include more case studies on TPA negotiation and PMJAY billing.",
-          "body": "I had 5 years as a hospital administrator and the LPU Healthcare MBA helped me move to hospital manager level. The Rs 1.61L with zero-cost EMI was the key factor. LPU brand is recognised at North India private hospital groups."
-        },
-        {
-          "name": "Gaurav Nanda",
-          "city": "Chandigarh",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Health Informatics and Healthcare Operations Management subjects were excellent and practically applicable.",
-          "disliked": "Community Health Management was less relevant for private hospital careers but important for public health roles.",
-          "body": "Good programme for healthcare management career advancement. Chandigarh hospital groups recognised the LPU credential. The zero-cost EMI was the deciding factor over more expensive alternatives."
-        },
-        {
-          "name": "Swati Sharma",
-          "city": "Amritsar",
-          "year": 2024,
-          "rating": 4,
-          "liked": "NABH accreditation coverage in Quality subject was very practical. Hospital Administration planning concepts were directly applicable.",
-          "disliked": "Placement support for healthcare-specific roles was limited. Self-sourcing was necessary.",
-          "body": "Strong healthcare management content at an affordable price. For Punjab and North India hospital careers, LPU is a recognised and cost-effective choice. The zero-cost EMI made it an easy decision."
-        }
-      ]
     },
     "faqs": [
       {
@@ -150,6 +118,7 @@
     "wordCount": 2100,
     "generatedAt": "2026-04-21",
     "batchNumber": "Phase7-Batch13",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

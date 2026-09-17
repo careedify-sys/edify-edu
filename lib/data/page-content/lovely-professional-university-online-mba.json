@@ -74,58 +74,6 @@
       "body": "EdifyEdu connects enrolled LPU Online MBA students with 2-3 alumni from their target industry, runs a free 30-minute career transition call, and shares monthly curated job referrals matched to the students chosen specialisation. We also provide a fee-comparison worksheet showing LPU vs NMIMS vs MUJ so students can verify they made the right choice for their career goals. No commission taken from LPU.",
       "heading": "Beyond Admission: EdifyEdu Network"
     },
-    "reviews": {
-      "heading": "What Students Are Saying",
-      "intro": "LPU Online MBA students most commonly cite the low fee and NAAC A++ recognition as the strongest positives. Faculty quality and peer interaction receive more mixed feedback. Here are verified reviews from enrolled and graduated students.",
-      "items": [
-        {
-          "name": "Kavya R.",
-          "city": "Chandigarh",
-          "year": 2025,
-          "rating": 5,
-          "liked": "",
-          "disliked": "",
-          "body": "Chose LPU Online for the NAAC A++ credential at the lowest price I could find. Got the degree accepted immediately at my new employer in Gurugram. What I liked: the 20% institutional grant genuinely made the fee the most affordable in this tier. What I disliked: the LMS loads slowly during morning peak hours and I had to switch to off-peak study times."
-        },
-        {
-          "name": "Rajiv N.",
-          "city": "Amritsar",
-          "year": 2024,
-          "rating": 4,
-          "liked": "",
-          "disliked": "",
-          "body": "Completed the Finance specialisation in 2 years while working at a bank. The Semester 3 and 4 Finance electives were well-curated. What I liked: no entrance exam meant I started immediately, no waiting cycle. What I disliked: assignment deadlines clustered at the end of each semester made the last 4 weeks very stressful each time."
-        },
-        {
-          "name": "Priyanka S.",
-          "city": "Delhi",
-          "year": 2025,
-          "rating": 4,
-          "liked": "",
-          "disliked": "",
-          "body": "Did the HR specialisation. Faculty for core subjects was solid; elective faculty was more variable. What I liked: the Summer Training seminar component in Semester 3 pushed me to complete a real project at my workplace, which I later used in interviews. What I disliked: the mobile app is glitchy and I relied entirely on the desktop browser."
-        },
-        {
-          "name": "Siddharth K.",
-          "city": "Lucknow",
-          "year": 2024,
-          "rating": 3,
-          "liked": "",
-          "disliked": "",
-          "body": "The degree is NAAC A++ and that is the main attraction. What I liked: fee payment flexibility with lumpsum discount was genuinely useful for planning. What I disliked: career services promised placement support but actual outreach was minimal. I found my job through LinkedIn entirely on my own."
-        },
-        {
-          "name": "Meghna P.",
-          "city": "Jaipur",
-          "year": 2023,
-          "rating": 3,
-          "liked": "",
-          "disliked": "",
-          "body": "LPU Online completed on time. The programme works if you are self-disciplined. What I liked: the NAAC A++ certificate was accepted without any question at my state government department. What I disliked: proctoring software required a PC with specific settings. My laptop failed the check twice and I had to borrow a colleague's PC for two exams."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "heading": "Red Flags to Know Before Enrolling",
       "flags": [
@@ -201,6 +149,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:48.986Z",
     "sheetName": "lpu-online_MBA",
-    "format": "numbered"
+    "format": "numbered",
+    "claimSweep": "2026-09-17"
   }
 }

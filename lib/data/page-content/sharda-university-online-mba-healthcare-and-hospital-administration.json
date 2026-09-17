@@ -19,28 +19,61 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Entrepreneurship and Startup Ideation", "desc": "Business ideation frameworks, lean startup methodology, business model canvas, venture feasibility, and funding landscape for healthtech ventures." },
-            { "name": "Production and Operations Management", "desc": "Production planning, inventory management, quality control, lean principles, and operations strategy applied to hospital and healthcare service contexts." },
-            { "name": "Cross Functional Elective", "desc": "Elective subject from another specialisation domain. Broadens management perspective beyond the core healthcare track." },
-            { "name": "Quality Management in Healthcare", "desc": "NABH accreditation processes, JCI standards, healthcare quality indicators, patient safety protocols, clinical audit methodology, and continuous quality improvement in hospitals." },
-            { "name": "Hospital Planning and Designing", "desc": "Hospital facility layout, bed capacity planning, department zoning, OT and ICU design principles, green hospital concepts, and regulatory compliance in healthcare infrastructure." },
-            { "name": "Material and Equipment Management", "desc": "Biomedical equipment procurement, hospital inventory management, vendor evaluation, AMC contract management, and medical supply chain optimisation." }
+            {
+              "name": "Entrepreneurship and Startup Ideation",
+              "desc": "Business ideation frameworks, lean startup methodology, business model canvas, venture feasibility, and funding landscape for healthtech ventures."
+            },
+            {
+              "name": "Production and Operations Management",
+              "desc": "Production planning, inventory management, quality control, lean principles, and operations strategy applied to hospital and healthcare service contexts."
+            },
+            {
+              "name": "Cross Functional Elective",
+              "desc": "Elective subject from another specialisation domain. Broadens management perspective beyond the core healthcare track."
+            },
+            {
+              "name": "Quality Management in Healthcare",
+              "desc": "NABH accreditation processes, JCI standards, healthcare quality indicators, patient safety protocols, clinical audit methodology, and continuous quality improvement in hospitals."
+            },
+            {
+              "name": "Hospital Planning and Designing",
+              "desc": "Hospital facility layout, bed capacity planning, department zoning, OT and ICU design principles, green hospital concepts, and regulatory compliance in healthcare infrastructure."
+            },
+            {
+              "name": "Material and Equipment Management",
+              "desc": "Biomedical equipment procurement, hospital inventory management, vendor evaluation, AMC contract management, and medical supply chain optimisation."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Strategic Management", "desc": "Corporate strategy, competitive advantage frameworks, strategic planning models, and business model analysis applied to healthcare organisations." },
-            { "name": "Research Project", "desc": "Faculty-supervised research project applying healthcare management concepts to a real hospital or healthcare operations problem." },
-            { "name": "Healthcare Project Management", "desc": "Healthcare facility construction project planning, hospital expansion budgeting, healthtech implementation timelines, and stakeholder management in healthcare projects." },
-            { "name": "Hospital Management Information Systems", "desc": "HMIS architecture, electronic health records (EHR), hospital ERP systems, patient data management, and health informatics basics for hospital administrators." },
-            { "name": "Medical Records Management", "desc": "Medical record classification systems (ICD coding), record retention policies, digital medical record migration, patient data privacy compliance, and medico-legal documentation standards." }
+            {
+              "name": "Strategic Management",
+              "desc": "Corporate strategy, competitive advantage frameworks, strategic planning models, and business model analysis applied to healthcare organisations."
+            },
+            {
+              "name": "Research Project",
+              "desc": "Faculty-supervised research project applying healthcare management concepts to a real hospital or healthcare operations problem."
+            },
+            {
+              "name": "Healthcare Project Management",
+              "desc": "Healthcare facility construction project planning, hospital expansion budgeting, healthtech implementation timelines, and stakeholder management in healthcare projects."
+            },
+            {
+              "name": "Hospital Management Information Systems",
+              "desc": "HMIS architecture, electronic health records (EHR), hospital ERP systems, patient data management, and health informatics basics for hospital administrators."
+            },
+            {
+              "name": "Medical Records Management",
+              "desc": "Medical record classification systems (ICD coding), record retention policies, digital medical record migration, patient data privacy compliance, and medico-legal documentation standards."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Healthcare and Hospital Administration MBA graduates target management roles in healthcare organisations:\n\n**Industries:** Multi-speciality hospitals, diagnostic chains, health insurance, pharmaceutical companies, healthtech startups, public health departments, and healthcare consulting\n\n**Entry-level roles:** Hospital Operations Executive, Quality Coordinator, Medical Records Officer, Healthcare MIS Analyst, Hospital Admin Executive\n\n**Mid-level roles (3-5 years experience):** Hospital Operations Manager, Quality Manager, Healthcare Project Manager, HMIS Manager, Medical Superintendent (Admin), Health Insurance Manager\n\n**Senior roles (7+ years):** Hospital CEO/Director, VP Hospital Operations, Chief Quality Officer, Head of Healthcare Projects, Director of Hospital Administration\n\n**Employers:** Hospital chains (Apollo, Fortis, Max Healthcare, Manipal Hospitals, Medanta, Narayana Health), diagnostics (Dr Lal PathLabs, SRL, Metropolis), insurance (Star Health, HDFC Ergo Health), pharma (Sun Pharma, Cipla hospital division), and government (AIIMS admin, state hospital directorates).\n\n**Note:** Sharda provides career support. Greater Noida location offers NCR healthcare recruiter access. Delhi-NCR has a dense hospital network."
+      "body": "Healthcare and Hospital Administration MBA graduates target management roles in healthcare organisations:\n\n**Industries:** Multi-speciality hospitals, diagnostic chains, health insurance, pharmaceutical companies, healthtech startups, public health departments, and healthcare consulting\n\n**Entry-level roles:** Hospital Operations Executive, Quality Coordinator, Medical Records Officer, Healthcare MIS Analyst, Hospital Admin Executive\n\n**Mid-level roles (3-5 years experience):** Hospital Operations Manager, Quality Manager, Healthcare Project Manager, HMIS Manager, Medical Superintendent (Admin), Health Insurance Manager\n\n**Senior roles (7+ years):** Hospital CEO/Director, VP Hospital Operations, Chief Quality Officer, Head of Healthcare Projects, Director of Hospital Administration\n\n**Employers:** Hospital chains (Apollo, Fortis, Max Healthcare, Manipal Hospitals, Medanta, Narayana Health), diagnostics (Dr Lal PathLabs, SRL, Metropolis), insurance (Star Health, HDFC Ergo Health), pharma (Sun Pharma, Cipla hospital division), and government (AIIMS admin, state hospital directorates).\n\n**Note:** Sharda provides career support. Greater Noida location offers NCR healthcare recruiter access. Delhi-NCR has a dense hospital network.\n\n**Where to verify placement claims:** ask Sharda University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Healthcare and Hospital Administration specialisation builds hospital management skills:\n\n**Technical skills:**\n- Quality Management: NABH accreditation process management, JCI standards application, clinical audit execution, patient safety protocol implementation, and quality indicator tracking\n- Hospital Planning: facility layout design, bed capacity modelling, OT/ICU zoning, green hospital compliance, and regulatory approval processes\n- HMIS: hospital ERP system evaluation, EHR implementation planning, health informatics, and patient data system management\n- Medical Records: ICD coding systems, medical record digitisation, retention policy design, and medico-legal compliance\n\n**Applied skills:**\n- Material Management: biomedical equipment procurement, AMC contract negotiation, hospital inventory optimisation, and vendor management\n- Project Management: hospital expansion project planning, healthtech implementation, and budget control for healthcare facilities\n\n**Soft skills:** Hospital committee leadership, patient family communication, cross-departmental coordination (clinical and admin), vendor negotiation, and regulatory body interaction."
@@ -53,38 +86,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Healthcare and Hospital Administration as the specialisation, issued by Sharda University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A+ accreditation, NIRF #87 University rank, UGC-DEB approval, and WES recognition. Valid for hospital management hiring, health insurance roles, PSU health department applications, and higher education admission. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from Sharda Online MBA Healthcare and Hospital Administration students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Sanjay D.",
-          "city": "Greater Noida",
-          "year": 2024,
-          "rating": 4.0,
-          "liked": "Quality Management in Healthcare covered NABH processes in detail. Hospital Planning and Designing was directly applicable to my role at a multi-speciality hospital",
-          "disliked": "No scholarships and no perks. DPU at ₹1,89,400 has stronger healthcare brand recognition from its medical university heritage",
-          "body": "I chose Sharda over NIU because of the NIRF ranking and the specific healthcare subjects. Quality Management, HMIS, and Medical Records are the subjects I use daily in hospital operations. At ₹1,54,500 the fee is ₹34,900 less than DPU, which was the trade-off for me. DPU's Pune medical cluster brand is stronger, but Sharda's NCR location and NAAC A+ worked for my career context."
-        },
-        {
-          "name": "Anita R.",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 4.2,
-          "liked": "HMIS subject covered hospital ERP and EHR systems at a practical level. Medical Records Management included ICD coding which is essential for hospital administration",
-          "disliked": "Career services for online students are limited. Most hospital hiring still happens through personal networks rather than university placement",
-          "body": "The healthcare curriculum is well-designed for hospital administrators. HMIS, Medical Records, and Quality Management are the three subjects that directly improved my work. The Material and Equipment Management subject was useful for procurement decisions. At ₹1,54,500 with NAAC A+ and NIRF rank, the degree is credible. Brand recognition in healthcare is not as strong as DPU, but the fee advantage matters."
-        },
-        {
-          "name": "Vikash S.",
-          "city": "Lucknow",
-          "year": 2023,
-          "rating": 3.9,
-          "liked": "Healthcare Project Management was practical for my hospital expansion project. The Research Project in Sem 4 let me work on a real hospital operations problem",
-          "disliked": "EMI was not zero-cost. The financing partner charged interest. This was not communicated clearly during admission",
-          "body": "The healthcare spec covers hospital operations management well. Quality Management and HMIS were the strongest subjects. Material and Equipment Management was relevant for procurement. At ₹1,54,500, the fee is reasonable for an NAAC A+ healthcare MBA. NIU at ₹97,600 with 19 healthcare subjects is worth considering if budget is tight. Confirm EMI interest terms with admissions before committing."
-        }
-      ]
     },
     "faqs": [
       {
@@ -128,6 +129,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 27,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

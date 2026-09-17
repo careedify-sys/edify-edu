@@ -19,24 +19,45 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Agricultural Economics", "desc": "Agricultural price policy, MSP mechanism, commodity market structure, WTO agriculture agreement basics, and demand-supply analysis for agricultural products." },
-            { "name": "Rural Marketing", "desc": "Rural consumer behaviour, distribution challenges in Tier 3-4 markets, ITC e-Choupal model study, last-mile delivery networks, and rural brand positioning strategies." },
-            { "name": "Agri-Supply Chain Management", "desc": "Cold chain infrastructure design, mandi vs direct procurement models, FPO aggregation, post-harvest logistics, and technology-enabled supply chain traceability." },
-            { "name": "Farm Management", "desc": "Farm cost accounting, cropping pattern economics, input cost analysis, farm mechanisation ROI, and farm-level financial planning." }
+            {
+              "name": "Agricultural Economics",
+              "desc": "Agricultural price policy, MSP mechanism, commodity market structure, WTO agriculture agreement basics, and demand-supply analysis for agricultural products."
+            },
+            {
+              "name": "Rural Marketing",
+              "desc": "Rural consumer behaviour, distribution challenges in Tier 3-4 markets, ITC e-Choupal model study, last-mile delivery networks, and rural brand positioning strategies."
+            },
+            {
+              "name": "Agri-Supply Chain Management",
+              "desc": "Cold chain infrastructure design, mandi vs direct procurement models, FPO aggregation, post-harvest logistics, and technology-enabled supply chain traceability."
+            },
+            {
+              "name": "Farm Management",
+              "desc": "Farm cost accounting, cropping pattern economics, input cost analysis, farm mechanisation ROI, and farm-level financial planning."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Agri-Finance and Insurance", "desc": "Kisan Credit Card product structure, NABARD refinance schemes, crop insurance (PMFBY) operations, agricultural lending risk assessment, and microfinance for agriculture." },
-            { "name": "Food Processing Management", "desc": "FSSAI compliance framework, food safety standards, post-harvest loss reduction methods, cold storage economics, and food processing unit project planning." },
-            { "name": "Project Work", "desc": "Industry-linked project applying agri-business concepts to a real-world problem. Typically a supply chain optimisation, FPO business plan, or food processing feasibility study." }
+            {
+              "name": "Agri-Finance and Insurance",
+              "desc": "Kisan Credit Card product structure, NABARD refinance schemes, crop insurance (PMFBY) operations, agricultural lending risk assessment, and microfinance for agriculture."
+            },
+            {
+              "name": "Food Processing Management",
+              "desc": "FSSAI compliance framework, food safety standards, post-harvest loss reduction methods, cold storage economics, and food processing unit project planning."
+            },
+            {
+              "name": "Project Work",
+              "desc": "Industry-linked project applying agri-business concepts to a real-world problem. Typically a supply chain optimisation, FPO business plan, or food processing feasibility study."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "DPU-COL MBA Agri Business graduates enter roles across the agriculture value chain, food processing, and rural finance:\n\n**Industries:** Agri-input companies (seeds, fertilisers, crop protection), food processing and FMCG, commodity trading, agricultural finance and insurance, FPO management, government agricultural departments, and agri-tech startups\n\n**Entry-level roles:** Agri Business Executive, Rural Marketing Executive, Farm Input Sales Officer, Agri-Finance Analyst, FPO Coordinator, Supply Chain Coordinator (agriculture)\n\n**Mid-level roles (3-5 years experience):** Agri Business Manager, Rural Marketing Manager, Commodity Trading Manager, Branch Manager (agricultural bank), FPO CEO, Food Processing Plant Manager\n\n**Senior roles (7+ years):** VP Agri Business, Head of Rural Markets, Director Agri Supply Chain, Chief Operations Officer (food processing), Head of Agricultural Lending\n\n**Employers:** Agri-input majors (UPL, PI Industries, Rallis India), food processing firms (ITC Foods, Nestle India, Britannia), commodity traders (Cargill India, Olam), agricultural banks (NABARD, regional rural banks), and government agricultural marketing boards.\n\n**Note:** DPU-COL provides placement assistance for all MBA programmes."
+      "body": "DPU-COL MBA Agri Business graduates enter roles across the agriculture value chain, food processing, and rural finance:\n\n**Industries:** Agri-input companies (seeds, fertilisers, crop protection), food processing and FMCG, commodity trading, agricultural finance and insurance, FPO management, government agricultural departments, and agri-tech startups\n\n**Entry-level roles:** Agri Business Executive, Rural Marketing Executive, Farm Input Sales Officer, Agri-Finance Analyst, FPO Coordinator, Supply Chain Coordinator (agriculture)\n\n**Mid-level roles (3-5 years experience):** Agri Business Manager, Rural Marketing Manager, Commodity Trading Manager, Branch Manager (agricultural bank), FPO CEO, Food Processing Plant Manager\n\n**Senior roles (7+ years):** VP Agri Business, Head of Rural Markets, Director Agri Supply Chain, Chief Operations Officer (food processing), Head of Agricultural Lending\n\n**Employers:** Agri-input majors (UPL, PI Industries, Rallis India), food processing firms (ITC Foods, Nestle India, Britannia), commodity traders (Cargill India, Olam), agricultural banks (NABARD, regional rural banks), and government agricultural marketing boards.\n\n**Note:** DPU-COL provides placement assistance for all MBA programmes.\n\n**Where to verify placement claims:** ask Dr. D.Y. Patil Vidyapeeth, Pune – Centre for Online Learning (DPU-COL) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Agri Business specialisation builds skills across agricultural value chain management, rural markets, and agri-finance:\n\n**Technical skills:**\n- Agricultural Economics: MSP calculation methodology, commodity price analysis, agricultural trade policy interpretation, and farm-gate pricing\n- Agri-Supply Chain: cold chain cost modelling, FPO business plan design, mandi vs direct procurement comparison, and post-harvest loss audit\n- Agri-Finance: crop loan product design, PMFBY claim process management, Kisan Credit Card limit calculation, and agricultural credit risk scoring\n- Food Processing: FSSAI licence application, food safety audit checklist, processing unit financial viability assessment, and cold storage capacity planning\n\n**Applied skills:**\n- Rural Marketing: rural distribution network design, van-based marketing operations, SHG partnership models, and rural digital payment adoption frameworks\n- Farm Management: crop cost sheet preparation, input-output ratio calculation, and farm mechanisation investment analysis\n\n**Soft skills:** Communicating with farmer-producer groups, presenting agri-business proposals to financial institutions, managing multi-stakeholder agricultural supply chains, and navigating government agricultural scheme documentation."
@@ -49,38 +70,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Agri Business as the specialisation, issued by Dr. D.Y. Patil Vidyapeeth, Pune (DPU-COL) under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation and NIRF #41 University rank. It is valid for government agricultural department recruitment, NABARD officer applications, FCI and other agricultural PSU roles, and private-sector agri-business employers. edX certifications earned during the programme supplement the MBA credential. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from DPU-COL Online MBA Agri Business alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Rajesh V.",
-          "city": "Nagpur",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Agri-Supply Chain Management subject was directly applicable to my orange and soybean procurement role in Vidarbha",
-          "disliked": "Case studies were primarily North India focused — more Maharashtra and South India agri-supply chain examples would help Deccan students",
-          "body": "I work as a procurement officer for an agri-commodity firm in Nagpur. The supply chain, agricultural economics, and farm management subjects gave me the structured framework I was missing after years of field experience. NAAC A++ and NIRF #41 were accepted by my employer without any credential challenge. The ₹10,000 lump-sum discount helped reduce the effective fee."
-        },
-        {
-          "name": "Sunita M.",
-          "city": "Pune",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Agri-Finance and Insurance module covered PMFBY and Kisan Credit Card at an operational level — directly useful for my bank's agricultural lending team",
-          "disliked": "Rural marketing content could include more digital-first approaches — mobile app-based marketing and agri-tech platform strategies are under-covered",
-          "body": "I manage agricultural lending at a cooperative bank. The agri-finance, crop insurance, and rural marketing subjects were directly applicable. DPU-COL being in Pune made the occasional campus visit for workshops convenient. The zero-cost EMI from ₹2,500/month made it feasible alongside my salary."
-        },
-        {
-          "name": "Anil K.",
-          "city": "Hyderabad",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Food Processing Management subject covered FSSAI compliance at a practical level — helped me structure the compliance documentation for our processing unit",
-          "disliked": "The programme could add an agri-tech module covering drone-based crop monitoring, precision agriculture, and satellite data analytics that are becoming standard in modern agri-business",
-          "body": "I run a family food processing unit and needed a management qualification for government subsidy applications and bank project finance proposals. NAAC A++ and UGC-DEB approval satisfied every documentation requirement. The food processing management and farm management subjects were directly relevant. edX certifications added to the value."
-        }
-      ]
     },
     "faqs": [
       {
@@ -106,15 +95,15 @@
     ],
     "chooseAlternatives": {
       "chooseIf": [
-        "You work in or target the agriculture value chain and need a specialised MBA — one of the few UGC-DEB online MBAs with dedicated Agri Business content.",
+        "You work in or target the agriculture value chain and need a specialised MBA, one of the few UGC-DEB online MBAs with dedicated Agri Business content.",
         "Government agricultural department, NABARD, or FCI recruitment requires a recognised MBA with agriculture management focus.",
         "You want NAAC A++ and NIRF #41 credentials alongside agri-business specialisation.",
         "Zero-cost EMI from ₹2,500/month and edX certifications add value for your context."
       ],
       "consider": [
-        "Your target employer filters by NIRF top 20 — consider CU (NIRF #19) or Amrita (NIRF #8) with a general management track.",
-        "You need deeper agri-tech and precision agriculture content — a specialised agri-tech programme may be more relevant.",
-        "Your career target is in urban FMCG or consumer marketing rather than agricultural supply chains — a Marketing Management spec would be more directly applicable."
+        "Your target employer filters by NIRF top 20, consider CU (NIRF #19) or Amrita (NIRF #8) with a general management track.",
+        "You need deeper agri-tech and precision agriculture content, a specialised agri-tech programme may be more relevant.",
+        "Your career target is in urban FMCG or consumer marketing rather than agricultural supply chains, a Marketing Management spec would be more directly applicable."
       ]
     }
   },
@@ -123,6 +112,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 21,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

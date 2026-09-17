@@ -82,58 +82,6 @@
       "heading": "Honest Verdict: Who Should Enroll, Who Should Look Elsewhere",
       "body": "Choose DPU-COL Online MBA if: you want NAAC A++ at under Rs.2L; you are targeting a niche specialisation like FinTech, Blockchain, or Agri Business; your employer operates in Pune or Maharashtra and recognises the DY Patil brand; or you are in healthcare and want Hospital Administration & Healthcare Management as a specialisation.\n\nLook elsewhere if: you need a nationally recognised brand in BFSI or FMCG; you need NIRF Management category rank for corporate HR filters; placement support is a key requirement and you do not plan to job-search independently; or you are targeting investment banking or consulting where IIM and ISB brands dominate.\n\nIf you are still undecided, our counsellor call is free. No commission, no pressure."
     },
-    "reviews": {
-      "heading": "What Students Are Saying",
-      "intro": "The following reviews are from students who enrolled in the Dr. D.Y. Patil Vidyapeeth, Pune (DPU-COL) Online MBA. Ratings range from 2 to 5 stars, reflecting a real mix of experiences. These reviews are not curated to show only positive outcomes.",
-      "items": [
-        {
-          "rating": 5,
-          "name": "Arjun M.",
-          "city": "Pune",
-          "year": 2024,
-          "liked": "The 7-subject core per semester is thorough. I felt genuinely prepared for my promotion interview.",
-          "disliked": "Live sessions sometimes start late. A tighter schedule would help working students.",
-          "body": "The 7-subject core per semester is thorough. I felt genuinely prepared for my promotion interview."
-        },
-        {
-          "rating": 4,
-          "name": "Priya S.",
-          "city": "Nagpur",
-          "year": 2024,
-          "liked": "15 specialisations gave me the exact niche I needed: FinTech Management.",
-          "disliked": "The placement cell for online students is less proactive than the campus cell.",
-          "body": "15 specialisations gave me the exact niche I needed: FinTech Management."
-        },
-        {
-          "rating": 4,
-          "name": "Rohan D.",
-          "city": "Mumbai",
-          "year": 2023,
-          "liked": "NAAC A++ with a reasonable fee under Rs.2L. Good value for the accreditation level.",
-          "disliked": "LMS had downtime twice during my Sem 2 exam prep. It was stressful.",
-          "body": "NAAC A++ with a reasonable fee under Rs.2L. Good value for the accreditation level."
-        },
-        {
-          "rating": 3,
-          "name": "Sneha K.",
-          "city": "Nashik",
-          "year": 2023,
-          "liked": "Course material was up to date, especially for the AI and ML track.",
-          "disliked": "Customer support response times were slow. Took 4 days to resolve a fee receipt issue.",
-          "body": "Course material was up to date, especially for the AI and ML track."
-        },
-        {
-          "rating": 2,
-          "name": "Vikram T.",
-          "city": "Ahmedabad",
-          "year": 2024,
-          "liked": "The university name carries weight in Pune-based companies.",
-          "disliked": "No alumni network activity for online students. I had to build connections entirely on my own.",
-          "body": "The university name carries weight in Pune-based companies."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "heading": "Red Flags to Know Before Enrolling",
       "intro": "The following red flags are based on monitoring of student forums including Reddit r/indianeducation, Trustpilot reviews, and Consumer Complaints India.",
@@ -202,6 +150,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:48.991Z",
     "sheetName": "dy-patil-online_MBA",
-    "format": "named"
+    "format": "named",
+    "claimSweep": "2026-09-17"
   }
 }

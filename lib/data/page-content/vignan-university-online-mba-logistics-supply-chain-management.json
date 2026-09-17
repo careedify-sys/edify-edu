@@ -61,7 +61,7 @@
       "note": "Specific LSCM electives are confirmed with the Vignan counsellor at admission. The detailed subject list is pending official publication on Vignan Online's portal. Sem 1-2 cover shared core subjects across all Vignan Online MBA specialisations. See the main Vignan Online MBA page for the core subject list. Syllabus applies to the 2025-26 admission cycle. Reconfirm current syllabus with our counsellor before enrolment."
     },
     "whoHires": {
-      "body": "Logistics and Supply Chain Management MBA graduates target these industries and roles:\n\n**Industries:** E-commerce and logistics, Manufacturing, FMCG (supply chain), Retail, Automotive, Pharma (cold chain), Shipping and freight forwarding, Third-party logistics (3PL)\n\n**Entry-level roles:** Supply Chain Analyst, Logistics Coordinator, Procurement Executive, Warehouse Operations Executive, Demand Planning Associate\n\n**Mid-level roles (3-5 years):** Supply Chain Manager, Logistics Manager, Procurement Manager, Warehouse Manager, Demand Planning Manager\n\n**Senior roles (7+ years):** VP Supply Chain, Director of Logistics, Chief Procurement Officer, Head of Operations, SVP Supply Chain and Fulfilment\n\n**Typical hiring organisations:** Amazon India, Flipkart, Delhivery, BlueDart, Maersk, DHL, Mahindra Logistics, TCI Express, Hindustan Unilever (supply chain), Maruti Suzuki, Tata Motors, Reliance Retail, ITC (supply chain), Larsen and Toubro"
+      "body": "Logistics and Supply Chain Management MBA graduates target these industries and roles:\n\n**Industries:** E-commerce and logistics, Manufacturing, FMCG (supply chain), Retail, Automotive, Pharma (cold chain), Shipping and freight forwarding, Third-party logistics (3PL)\n\n**Entry-level roles:** Supply Chain Analyst, Logistics Coordinator, Procurement Executive, Warehouse Operations Executive, Demand Planning Associate\n\n**Mid-level roles (3-5 years):** Supply Chain Manager, Logistics Manager, Procurement Manager, Warehouse Manager, Demand Planning Manager\n\n**Senior roles (7+ years):** VP Supply Chain, Director of Logistics, Chief Procurement Officer, Head of Operations, SVP Supply Chain and Fulfilment\n\n**Typical hiring organisations:** Amazon India, Flipkart, Delhivery, BlueDart, Maersk, DHL, Mahindra Logistics, TCI Express, Hindustan Unilever (supply chain), Maruti Suzuki, Tata Motors, Reliance Retail, ITC (supply chain), Larsen and Toubro\n\n**Where to verify placement claims:** ask Vignan's Foundation for Science, Technology & Research Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The LSCM specialisation builds skills tested by e-commerce, manufacturing, and logistics organisations:\n\n**Technical skills:**\n- Supply Chain Planning: demand forecasting, inventory optimisation, safety stock calculation, and production planning coordination\n- Logistics Management: transportation mode selection, route optimisation, last-mile delivery design, and freight cost management\n- Procurement: vendor evaluation matrices, contract negotiation, purchase order management, and supplier performance tracking\n- Warehouse Management: warehouse layout design, WMS configuration, pick-pack-ship optimisation, and inventory accuracy management\n\n**Applied skills:**\n- Supply Chain Analytics: supply chain KPI dashboards, lead time analysis, fill rate tracking, and cost-to-serve modelling\n- International Logistics: Incoterms application, customs documentation, freight forwarding coordination, and cross-border supply chain compliance\n\n**Soft skills:** Vendor negotiation, cross-functional coordination between procurement, manufacturing, and sales teams, and supply chain risk communication to leadership."
@@ -74,38 +74,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Vignan's Foundation for Science, Technology and Research, Guntur. It reads 'Master of Business Administration' with the Logistics and Supply Chain Management specialisation noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The degree is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three reviews from Vignan Online MBA LSCM students. Ratings from post-completion feedback.",
-      "items": [
-        {
-          "name": "Rajesh",
-          "city": "Visakhapatnam",
-          "year": 2025,
-          "rating": 4.1,
-          "liked": "Rs 90,000 for a NAAC A+ online MBA in LSCM is the best deal available. The research projects forced me to apply concepts to my warehouse operations.",
-          "disliked": "Elective subject names were not published upfront. Had to confirm with the counsellor after admission. More transparency on the syllabus would help.",
-          "body": "I manage warehouse operations for an e-commerce company in Andhra Pradesh. The MBA credential helped me get promoted to warehouse manager. The research-based learning projects gave me applied frameworks for inventory optimisation and pick-pack efficiency. At Rs 90,000 with zero-cost EMI, there is no cheaper option with NAAC A+ for supply chain professionals."
-        },
-        {
-          "name": "Anitha",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 3.3,
-          "liked": "Affordable enough to pay outright without any loan. EMI at Rs 5,700/month was a backup option I did not even need.",
-          "disliked": "Vignan brand is not recognised by supply chain hiring managers in Chennai. Companies like Maersk, DHL, and Amazon look for MBAs from Symbiosis, NITIE alumni, or IIM distance programmes. Vignan does not register.",
-          "body": "The LSCM programme is fine for the price but the brand limitation is real outside Andhra Pradesh. If you work in logistics in Chennai, Bangalore, or Mumbai and want to switch to a top logistics company, the Vignan name will not open doors. For internal promotions at your current employer, it checks the MBA box. Set expectations accordingly and pair it with APICS or CSCMP certifications."
-        },
-        {
-          "name": "Krishna",
-          "city": "Guntur",
-          "year": 2025,
-          "rating": 4.0,
-          "liked": "The Entrepreneurship Development subject in Sem 4 helped me think about starting my own logistics business. Research projects were well-supervised.",
-          "disliked": "No dedicated placement support for LSCM roles. Career services are campus-focused.",
-          "body": "Good programme for logistics and supply chain professionals in Andhra Pradesh who want an affordable MBA. The research-based learning format across both semesters pushed applied thinking. I used my Research-Based Learning-II project on last-mile delivery optimisation as a working document for my company. For the price, the outcome was better than expected."
-        }
-      ]
     },
     "faqs": [
       {
@@ -147,6 +115,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 28,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

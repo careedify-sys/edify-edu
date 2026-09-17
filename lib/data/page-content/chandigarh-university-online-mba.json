@@ -60,56 +60,6 @@
     "honestVerdict": {
       "body": "This verdict is based on publicly available data from UGC-DEB, NAAC, and NIRF portals, cross-referenced with student feedback from verified sources.\n\nChoose this if:\n- You want a NAAC A+ programme with 23 specialisation choices\n- Triple global certifications from Harvard, PwC, and PMI matter to your employer\n- You are based in North India and value brand recognition in that market\n- You prefer a mid-range fee bracket with flexible EMI options\n\nLook elsewhere if:\n- You need a higher NIRF overall ranking (NIRF top-7 alternatives exist)\n- Your budget is under Rs 1 lakh and Galgotias fits better\n- You want a South or East India university brand for regional placement\n- You need an NAAC A++ institution for selective applications\n\nThe decision between two similarly accredited programmes often comes down to three factors: the specialisation you need, the placement network that matters for your target industry, and the fee your budget can absorb without strain. Use the /compare tool to map your shortlist on these three axes. If you are still undecided, our counsellor call is free. Visit /contact and we will compare your shortlisted options against your specific career goal and budget without sales pressure."
     },
-    "reviews": {
-      "items": [
-        {
-          "name": "Aryan M.",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 5,
-          "liked": "I chose CU Online for the Harvard Business Publishing certification. My manager noticed it immediately on my resume. Live sessions on weekends worked well for my schedule. The LMS could be more stable during peak assignment submission windows, but overall the programme delivered what it promised.",
-          "disliked": "",
-          "body": "I chose CU Online for the Harvard Business Publishing certification. My manager noticed it immediately on my resume. Live sessions on weekends worked well for my schedule. The LMS could be more stable during peak assignment submission windows, but overall the programme delivered what it promised."
-        },
-        {
-          "name": "Priya S.",
-          "city": "Ludhiana",
-          "year": 2023,
-          "rating": 4,
-          "liked": "NAAC A+ and the PwC certification were the two reasons I applied. Both lived up to expectations. The faculty for Financial Management was excellent, but Managerial Economics sessions felt rushed in Semester 1. I would recommend this programme to North India professionals.",
-          "disliked": "",
-          "body": "NAAC A+ and the PwC certification were the two reasons I applied. Both lived up to expectations. The faculty for Financial Management was excellent, but Managerial Economics sessions felt rushed in Semester 1. I would recommend this programme to North India professionals."
-        },
-        {
-          "name": "Rahul D.",
-          "city": "Chandigarh",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Getting 23 specialisations to choose from was the deciding factor for me. I picked Fintech and the curriculum was current and relevant. The mobile app was glitchy during assignment submission twice in Semester 2, which was frustrating. Still worth the fee overall.",
-          "disliked": "",
-          "body": "Getting 23 specialisations to choose from was the deciding factor for me. I picked Fintech and the curriculum was current and relevant. The mobile app was glitchy during assignment submission twice in Semester 2, which was frustrating. Still worth the fee overall."
-        },
-        {
-          "name": "Sneha K.",
-          "city": "Amritsar",
-          "year": 2023,
-          "rating": 3,
-          "liked": "The programme content is solid but peer interaction was weaker than I expected. Most classmates did not participate in discussion boards after Week 3. Career services helped with resume review but placements are not structured for online students the way they are for on-campus students.",
-          "disliked": "",
-          "body": "The programme content is solid but peer interaction was weaker than I expected. Most classmates did not participate in discussion boards after Week 3. Career services helped with resume review but placements are not structured for online students the way they are for on-campus students."
-        },
-        {
-          "name": "Deepak J.",
-          "city": "Jaipur",
-          "year": 2024,
-          "rating": 3,
-          "liked": "The certificate arrived three weeks after my convocation date, which delayed a background verification at my new employer. The university resolved it eventually but the process was slow. Programme quality was adequate for the fee paid but not exceptional. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation.",
-          "disliked": "",
-          "body": "The certificate arrived three weeks after my convocation date, which delayed a background verification at my new employer. The university resolved it eventually but the process was slow. Programme quality was adequate for the fee paid but not exceptional. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "intro": "",
       "flags": [
@@ -135,6 +85,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:49.003Z",
     "sheetName": "chandigarh-online_MBA",
-    "format": "named"
+    "format": "named",
+    "claimSweep": "2026-09-17"
   }
 }

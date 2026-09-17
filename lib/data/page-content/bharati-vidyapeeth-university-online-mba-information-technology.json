@@ -18,7 +18,7 @@
       "semesters": []
     },
     "whoHires": {
-      "body": "IT MBA graduates target management roles in technology companies and IT departments across industries:\n\n**Industries:** IT services and consulting, product companies, BFSI technology, manufacturing IT, telecom, healthcare IT, government IT, e-commerce technology, and IT outsourcing\n\n**Entry-level roles:** IT Project Coordinator, Business Analyst (IT), Systems Analyst, IT Operations Executive, Technology Account Manager, IT Service Desk Lead\n\n**Mid-level roles (3-5 years):** IT Project Manager, IT Manager, Delivery Manager, Technology Manager, IT Service Manager, Systems Manager, IT Business Analyst Lead\n\n**Senior roles (7+ years):** IT Director, CTO, VP Technology, Head of IT, Chief Information Officer, IT Programme Director\n\n**Employers:** Pune IT companies (Persistent Systems, Cybage, Zensar, KPIT Technologies), national IT services (TCS, Infosys, Wipro, HCL Technologies, Tech Mahindra, Cognizant), product companies (Microsoft India, Google India), consulting (Deloitte, Accenture, Capgemini), and BFSI technology teams."
+      "body": "IT MBA graduates target management roles in technology companies and IT departments across industries:\n\n**Industries:** IT services and consulting, product companies, BFSI technology, manufacturing IT, telecom, healthcare IT, government IT, e-commerce technology, and IT outsourcing\n\n**Entry-level roles:** IT Project Coordinator, Business Analyst (IT), Systems Analyst, IT Operations Executive, Technology Account Manager, IT Service Desk Lead\n\n**Mid-level roles (3-5 years):** IT Project Manager, IT Manager, Delivery Manager, Technology Manager, IT Service Manager, Systems Manager, IT Business Analyst Lead\n\n**Senior roles (7+ years):** IT Director, CTO, VP Technology, Head of IT, Chief Information Officer, IT Programme Director\n\n**Employers:** Pune IT companies (Persistent Systems, Cybage, Zensar, KPIT Technologies), national IT services (TCS, Infosys, Wipro, HCL Technologies, Tech Mahindra, Cognizant), product companies (Microsoft India, Google India), consulting (Deloitte, Accenture, Capgemini), and BFSI technology teams.\n\n**Where to verify placement claims:** ask Bharati Vidyapeeth (Deemed to be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The IT specialisation builds management skills for technology professionals moving into leadership:\n\n**Technical skills:**\n- IT Project Management: PMBOK and Agile framework application, sprint planning, resource allocation, risk management, and delivery governance for project manager and delivery manager roles\n- IT Strategy and Governance: technology strategy alignment with business objectives, COBIT governance frameworks, IT investment decision making, and digital transformation planning\n- Systems Management: enterprise application management, ERP lifecycle management, database administration oversight, and infrastructure capacity planning\n- Cybersecurity Management: information security governance, risk assessment frameworks, compliance management, and incident response planning\n\n**Applied skills:**\n- IT Service Management: ITIL framework concepts, incident management, change management, SLA governance, and IT service catalogue management\n- Technology Evaluation: vendor selection, build vs buy analysis, technology stack evaluation, and cloud migration strategy\n\n**Soft skills:** Presenting technology strategy to business leadership, managing cross-functional technology delivery teams, vendor relationship management, and building business cases for IT investments."
@@ -31,38 +31,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Information Technology as the specialisation, issued by Bharati Vidyapeeth (Deemed to be University), Pune.\n\nThe degree carries NAAC A+ accreditation, NIRF #59 University ranking, and UGC-DEB approval. Online mode is identified per UGC-DEB 2020 regulations. Valid for corporate hiring, IT management roles, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three reviews from Bharati Vidyapeeth Online MBA IT students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Siddharth",
-          "city": "Pune",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Bharati Vidyapeeth is a Pune legacy institution. Being in Pune's IT hub, the MBA IT carries local brand value. NIRF #59 adds national credibility",
-          "disliked": "Syllabus was shared only after admission. Would have preferred to see subjects before committing",
-          "body": "I work at a Pune IT services company and the IT MBA helped me move from team lead to IT manager. The Rs 1.6L fee with zero-cost EMI was affordable on my Pune IT salary. IT project management and governance subjects were directly relevant. Bharati Vidyapeeth's name is well-recognized in the Pune IT market."
-        },
-        {
-          "name": "Neha",
-          "city": "Mumbai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "NAAC A+ and NIRF ranking were deciding factors. IT strategy and cybersecurity management subjects aligned with my technology consulting role",
-          "disliked": "Compared to Symbiosis, Bharati Vidyapeeth's IT brand is a step below in Mumbai employer perception",
-          "body": "I compared several online IT MBAs before choosing Bharati Vidyapeeth. The NIRF #59 ranking at Rs 1.6L was better value than most alternatives. IT management content covered governance, project management, and service delivery at a practical level. Good for IT professionals targeting management roles."
-        },
-        {
-          "name": "Pravin",
-          "city": "Nagpur",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Affordable NIRF-ranked IT MBA option. Zero-cost EMI was helpful for managing the fee",
-          "disliked": "Platform experience could be more interactive. Some IT topics felt generic rather than Pune IT-specific",
-          "body": "Functional IT management MBA from a NAAC A+ university. The content covers IT project management, systems management, and cybersecurity at a management level. For IT professionals in central Maharashtra looking for an MBA upgrade, Bharati Vidyapeeth is a credible and accessible option."
-        }
-      ]
     },
     "faqs": [
       {
@@ -105,6 +73,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 34,
     "hasSyllabusData": false,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

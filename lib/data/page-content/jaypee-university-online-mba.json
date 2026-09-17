@@ -60,56 +60,6 @@
     "honestVerdict": {
       "body": "This verdict is based on publicly available data from UGC-DEB, NAAC, and NIRF portals, cross-referenced with student feedback from verified sources.\n\nChoose this if:\n- You work in technology and want a tech-institute brand MBA with AI and Blockchain embedded in the core\n- You can arrange an industry internship or OJT independently for the Semester 3 requirement\n- WES recognition matters for your Canadian immigration or credential evaluation plans\n- Rs 1.75 lakh fits your budget and the JIIT brand premium is justified by your career target\n\nLook elsewhere if:\n- NAAC A+ is a hard requirement and the extra fee over NAAC A+ programmes is hard to justify\n- Arranging an independent internship in Semester 3 is not feasible in your current situation\n- More than 4 specialisation choices are needed for your career direction\n- Budget is the primary filter and lower-fee NAAC A+ options meet your requirements\n\nThe decision between two similarly approved programmes usually comes down to the brand value you need, the specialisation that fits your career, and the fee your budget supports. Use the /compare tool to map your shortlist. If you are still undecided, our counsellor call is free at /contact."
     },
-    "reviews": {
-      "items": [
-        {
-          "name": "Aditya K.",
-          "city": "Noida",
-          "year": 2024,
-          "rating": 5,
-          "liked": "JIIT brand name opened doors in the tech space that other online MBA brands did not. The IT and Business Analytics track with Blockchain and Predictive Analytics in Semester 3 is genuinely advanced content. AI in Business in Semester 3 is a real subject with applied examples, not a marketing add-on. Worth every rupee of the Rs 1.75 lakh fee for a tech-track professional.",
-          "disliked": "",
-          "body": "JIIT brand name opened doors in the tech space that other online MBA brands did not. The IT and Business Analytics track with Blockchain and Predictive Analytics in Semester 3 is genuinely advanced content. AI in Business in Semester 3 is a real subject with applied examples, not a marketing add-on. Worth every rupee of the Rs 1.75 lakh fee for a tech-track professional."
-        },
-        {
-          "name": "Sneha M.",
-          "city": "Delhi",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Digital Transformation in Semester 1 and Business Analytics in Semester 2 set the programme apart from generic online MBAs. The Finance track in Semester 3 had strong advanced content. The proctoring software rejected my Voter ID and I had to use Aadhaar; prepare your documents before the exam window.",
-          "disliked": "",
-          "body": "Digital Transformation in Semester 1 and Business Analytics in Semester 2 set the programme apart from generic online MBAs. The Finance track in Semester 3 had strong advanced content. The proctoring software rejected my Voter ID and I had to use Aadhaar; prepare your documents before the exam window."
-        },
-        {
-          "name": "Rohit S.",
-          "city": "Gurgaon",
-          "year": 2024,
-          "rating": 4,
-          "liked": "The Internship and OJT in Semester 3 was genuinely challenging to arrange alongside a full-time job. JIIT did not help source the internship. The programme structure is good but be prepared to find the internship independently. Assignment deadlines in Semester 3 were clustered in a tight window.",
-          "disliked": "",
-          "body": "The Internship and OJT in Semester 3 was genuinely challenging to arrange alongside a full-time job. JIIT did not help source the internship. The programme structure is good but be prepared to find the internship independently. Assignment deadlines in Semester 3 were clustered in a tight window."
-        },
-        {
-          "name": "Prerna T.",
-          "city": "Faridabad",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Rs 1.75 lakh is the highest fee I found for a NAAC A institution in this segment. The brand recognition is real but the fee premium is steep compared to NAAC A+ options at lower price points. Weigh the brand premium against the extra cost carefully before committing.",
-          "disliked": "",
-          "body": "Rs 1.75 lakh is the highest fee I found for a NAAC A institution in this segment. The brand recognition is real but the fee premium is steep compared to NAAC A+ options at lower price points. Weigh the brand premium against the extra cost carefully before committing."
-        },
-        {
-          "name": "Vivek R.",
-          "city": "Ghaziabad",
-          "year": 2024,
-          "rating": 3,
-          "liked": "The proctoring software rejected my driving licence during Semester 2 exams. I eventually used Aadhaar and it worked, but the process was stressful on exam day. Career services consisted of a job board list and a resume workshop. Structured placement for online students is not available. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation.",
-          "disliked": "",
-          "body": "The proctoring software rejected my driving licence during Semester 2 exams. I eventually used Aadhaar and it worked, but the process was stressful on exam day. Career services consisted of a job board list and a resume workshop. Structured placement for online students is not available. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "intro": "",
       "flags": [
@@ -135,6 +85,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:49.015Z",
     "sheetName": "jaypee-university-online_MBA",
-    "format": "named"
+    "format": "named",
+    "claimSweep": "2026-09-17"
   }
 }

@@ -61,7 +61,7 @@
       "note": "Sem 1-2 shared core subjects across all UPES MBA specialisations. Core includes Managerial Economics, Accounting for Managers, Marketing Management, Quantitative Techniques, Operations Management, OB and HRM, Project Management, Financial Management, Research Methodology, and Business Analytics for Managers."
     },
     "whoHires": {
-      "body": "Operations Management MBA graduates from UPES Online are hired across these industries and roles:\n\n**Industries:** Manufacturing, Automotive, Energy and petroleum, FMCG operations, E-commerce logistics, Infrastructure and construction\n\n**Entry-level roles:** Operations Executive, Production Planner, Quality Analyst, SCM Analyst, Process Improvement Analyst\n\n**Mid-level roles (3-5 years experience):** Operations Manager, Production Manager, Supply Chain Manager, Quality Manager, Plant Manager\n\n**Senior roles (7+ years):** Head of Operations, VP Manufacturing, COO, Director Supply Chain, VP Quality\n\n**Top hiring organisations (UPES alumni placements):** TCS, Infosys, HCL, Wipro, Deloitte, KPMG, and manufacturing and energy sector companies. UPES's strong industry connect with oil and gas, power, automotive, and infrastructure sectors creates direct operations career pathways at companies like ONGC, NTPC, Maruti Suzuki, and Tata Motors that recruit UPES operations graduates specifically."
+      "body": "This Operations Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** Manufacturing, Automotive, Energy and petroleum, FMCG operations, E-commerce logistics, Infrastructure and construction\n\n**Entry-level roles:** Operations Executive, Production Planner, Quality Analyst, SCM Analyst, Process Improvement Analyst\n\n**Mid-level roles (3-5 years experience):** Operations Manager, Production Manager, Supply Chain Manager, Quality Manager, Plant Manager\n\n**Senior roles (7+ years):** Head of Operations, VP Manufacturing, COO, Director Supply Chain, VP Quality\n\n**Where to verify placement claims:** ask University of Petroleum & Energy Studies (UPES) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The UPES Operations Management specialisation builds skills that manufacturing, energy, and logistics employers test at operations manager levels:\n\n**Technical skills:**\n- Production Planning and Inventory Control: MRP and capacity planning, inventory optimisation modelling, and production scheduling for manufacturing operations manager roles\n- Lean Manufacturing: 5S, Kaizen, value stream mapping, and JIT application for factory floor improvement and operations efficiency roles\n- Total Quality Management: TQM framework deployment, Six Sigma DMAIC, ISO quality standard management, and process control for quality management roles\n- Product Lifecycle Management: PLM software management and cross-functional design-to-delivery operations for manufacturing firms with complex product portfolios\n\n**Applied skills:**\n- Technology Management: Industry 4.0 technology adoption evaluation, digital operations transformation, and smart manufacturing systems management\n- Introduction to Logistics and SCM: supply chain network design, 3PL management, and logistics analytics for operations and supply chain manager roles\n\n**Soft skills:** Presenting lean transformation results to plant and operations leadership, managing cross-functional production and quality teams, communicating technology adoption proposals to manufacturing boards, and leading TQM culture programmes across factory operations."
@@ -74,38 +74,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by University of Petroleum and Energy Studies (UPES) and carries the UPES name with the MBA designation. The Operations Management specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India. UPES is WES recognised, making the degree suitable for international credential evaluation."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from UPES Online MBA Operations Management alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Suresh Bisht",
-          "city": "Haridwar",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Lean Manufacturing and TQM were directly applicable to my manufacturing plant role. Technology Management subject gave Industry 4.0 frameworks I presented to our plant head. PLM subject was unique.",
-          "disliked": "Six Sigma content in TQM could be more hands-on with Green Belt level practice exercises.",
-          "body": "I had 5 years in automotive manufacturing and the UPES Operations MBA gave me the management credentials for a production manager role. UPES alumni network at Haridwar and Rishikesh industrial estates was genuinely helpful."
-        },
-        {
-          "name": "Manish Sharma",
-          "city": "Noida",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Production Planning and Inventory Control gave strong MRP grounding. Service Operations was well-structured for my role at a Delhi NCR logistics company.",
-          "disliked": "For pan-India operations brand recognition, NMIMS carries stronger corporate recognition. UPES is strongest in energy and manufacturing sectors.",
-          "body": "Good programme for North India manufacturing and logistics careers. NIRF #36 in Management was a credibility anchor. For energy sector operations, UPES has genuine competitive advantages over peer online MBAs."
-        },
-        {
-          "name": "Deepak Rawat",
-          "city": "Dehradun",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Lean Manufacturing and Logistics subjects were strong. Technology Management gave useful digital transformation frameworks.",
-          "disliked": "Some faculty for elective subjects lacked hands-on manufacturing industry experience. Case studies could be more India-manufacturing specific.",
-          "body": "Solid operations credential at Rs 1,75,000. Best for North India manufacturing and energy operations careers. For South India IT services operations roles, LPU or JAIN brands may be better recognised."
-        }
-      ]
     },
     "faqs": [
       {
@@ -146,6 +114,7 @@
     "wordCount": 1900,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch15",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

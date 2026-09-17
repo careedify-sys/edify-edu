@@ -19,27 +19,57 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "International Business", "desc": "Global trade frameworks, cross-border market entry strategies, FDI analysis, and managing international operations." },
-            { "name": "Business Analytics and Business Modelling", "desc": "Quantitative business modelling, regression analysis, forecasting techniques, and data-driven decision-making frameworks." },
-            { "name": "FinTech Foundations", "desc": "Digital payments ecosystem, API banking, neobank models, InsurTech, WealthTech, and RBI regulatory framework for fintech." },
-            { "name": "Financial Modelling", "desc": "DCF model construction, LBO basics, merger model design, three-statement financial modelling, and scenario analysis in Excel." },
-            { "name": "Education for Life", "desc": "Soft skills development, mindfulness, health and wellbeing, and holistic personal effectiveness for professionals." }
+            {
+              "name": "International Business",
+              "desc": "Global trade frameworks, cross-border market entry strategies, FDI analysis, and managing international operations."
+            },
+            {
+              "name": "Business Analytics and Business Modelling",
+              "desc": "Quantitative business modelling, regression analysis, forecasting techniques, and data-driven decision-making frameworks."
+            },
+            {
+              "name": "FinTech Foundations",
+              "desc": "Digital payments ecosystem, API banking, neobank models, InsurTech, WealthTech, and RBI regulatory framework for fintech."
+            },
+            {
+              "name": "Financial Modelling",
+              "desc": "DCF model construction, LBO basics, merger model design, three-statement financial modelling, and scenario analysis in Excel."
+            },
+            {
+              "name": "Education for Life",
+              "desc": "Soft skills development, mindfulness, health and wellbeing, and holistic personal effectiveness for professionals."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Environment Sustainability and Governance", "desc": "ESG reporting frameworks, corporate sustainability strategy, carbon accounting basics, and governance obligations." },
-            { "name": "Project", "desc": "Applied industry finance project integrating specialisation knowledge with real-world corporate or BFSI financial problem-solving." },
-            { "name": "Strategic Financial Management", "desc": "Capital structure optimisation, value creation frameworks, M&A financial evaluation, corporate restructuring, and shareholder value analysis." },
-            { "name": "Insurance and Risk Management", "desc": "Life and non-life insurance products, risk identification and quantification, enterprise risk management frameworks, and IRDAI regulations." },
-            { "name": "Treasury and Bank Management", "desc": "Bank balance sheet management, ALM frameworks, interbank market operations, FX treasury, and RBI reserve and liquidity management basics." }
+            {
+              "name": "Environment Sustainability and Governance",
+              "desc": "ESG reporting frameworks, corporate sustainability strategy, carbon accounting basics, and governance obligations."
+            },
+            {
+              "name": "Project",
+              "desc": "Applied industry finance project integrating specialisation knowledge with real-world corporate or BFSI financial problem-solving."
+            },
+            {
+              "name": "Strategic Financial Management",
+              "desc": "Capital structure optimisation, value creation frameworks, M&A financial evaluation, corporate restructuring, and shareholder value analysis."
+            },
+            {
+              "name": "Insurance and Risk Management",
+              "desc": "Life and non-life insurance products, risk identification and quantification, enterprise risk management frameworks, and IRDAI regulations."
+            },
+            {
+              "name": "Treasury and Bank Management",
+              "desc": "Bank balance sheet management, ALM frameworks, interbank market operations, FX treasury, and RBI reserve and liquidity management basics."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Finance MBA graduates from Amrita Vishwa Vidyapeetham Online are hired across India's BFSI and corporate finance sector:\n\n**Industries:** Banking, insurance, NBFC, corporate finance, investment management, treasury, private equity, and fintech\n\n**Entry-level roles:** Finance Analyst, Credit Analyst, Banking Officer (management trainee track), Insurance Product Analyst, Treasury Operations Executive, Financial Modelling Associate\n\n**Mid-level roles (3-5 years experience):** Finance Manager, VP (banking, credit), Treasury Manager, Risk Manager, Investment Analyst, Corporate Finance Manager\n\n**Senior roles (7+ years):** CFO (mid-market), Head of Treasury, Head of Credit, Director Corporate Finance, Chief Risk Officer (mid-tier NBFC), VP Investment Banking\n\n**Top hiring organisations:** HDFC Bank, ICICI Bank, Axis Bank, Kotak Mahindra Bank, SBI corporate banking, HDFC Life, ICICI Prudential, Bajaj Allianz, Tata AIG, Infosys BPM finance, Accenture finance shared services, TCS GBO finance, JP Morgan India, Goldman Sachs India analytics, and NBFC lending companies across Mumbai, Bengaluru, and Pune"
+      "body": "This Finance MBA syllabus maps to the following India's BFSI and corporate finance sector:\n\n**Industries:** Banking, insurance, NBFC, corporate finance, investment management, treasury, private equity, and fintech\n\n**Entry-level roles:** Finance Analyst, Credit Analyst, Banking Officer (management trainee track), Insurance Product Analyst, Treasury Operations Executive, Financial Modelling Associate\n\n**Mid-level roles (3-5 years experience):** Finance Manager, VP (banking, credit), Treasury Manager, Risk Manager, Investment Analyst, Corporate Finance Manager\n\n**Senior roles (7+ years):** CFO (mid-market), Head of Treasury, Head of Credit, Director Corporate Finance, Chief Risk Officer (mid-tier NBFC), VP Investment Banking\n\n**Where to verify placement claims:** ask Amrita Vishwa Vidyapeetham Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Finance specialisation builds skills that BFSI employers and corporate finance teams test at analyst and manager levels:\n\n**Technical skills:**\n- Financial Modelling: DCF valuation, three-statement model linking, sensitivity analysis, scenario building, and model documentation standards for PE and IB roles\n- FinTech Foundations: payment gateway stack, API banking product mechanics, RBI regulatory sandbox framework, and digital lending product P&L structure\n- Strategic Financial Management: WACC calculation, capital structure analysis, value creation frameworks in M&A, and leveraged buyout model basics\n- Treasury and Banking: ALM gap analysis, FX hedging instruments, cash management structure, and interbank market operations basics\n\n**Applied skills:**\n- Insurance and Risk: enterprise risk register design, actuarial concept overview for non-actuaries, IRDAI product filing basics, and reinsurance structure overview\n- Corporate Finance: board-level financial analysis presentation, investor relations preparation, and acquisition financial due diligence process\n\n**Soft skills:** Presenting financial models and valuation assumptions to CFOs and investment committees, managing external auditor and rating agency relationships, communicating credit risk assessments in non-technical language, and leading finance team data quality improvement."
@@ -52,38 +82,6 @@
     },
     "certificate": {
       "body": "Graduates receive an Amrita Vishwa Vidyapeetham MBA degree certificate with Finance noted on the marksheet, issued under UGC-DEB 2020 online mode standards.\n\nNAAC A++ and NIRF #8 University 2025 are the strongest institutional credentials in India's online MBA space. WES recognition gives formal degree equivalence in the USA and Canada - directly relevant for finance professionals targeting BFSI roles or treasury positions in North America, or for candidates pursuing Canadian PR pathways. DigiLocker verification is available."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Amrita Vishwa Vidyapeetham Online MBA Finance alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Arjun T.",
-          "city": "Mumbai",
-          "year": 2025,
-          "rating": 4,
-          "liked": "Financial Modelling subject gave me the DCF and three-statement model skills that every BFSI interview tested",
-          "disliked": "Treasury and Bank Management content was thorough but RBI FEMA compliance and cross-border treasury content could be expanded for candidates targeting international treasury roles",
-          "body": "I work in corporate finance at a listed company. The financial modelling and strategic financial management subjects were directly applicable to the capital structure and M&A advisory work I do. NAAC A++ from NIRF #8 cleared every employer filter at BFSI firms. WES recognition was the factor that distinguished Amrita when I looked at North American treasury roles. Total fee of Rs 2,31,700 with zero-cost EMI was manageable alongside my salary."
-        },
-        {
-          "name": "Deepa R.",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "FinTech Foundations subject was the most differentiated content - no other online Finance MBA I reviewed covered digital payments and neobank models in this depth",
-          "disliked": "Insurance and Risk Management content covered IRDAI basics well but an updated case study post the 2023 IRDAI reforms would make it more current",
-          "body": "I transitioned from an IT role to a BFSI finance track using this MBA. The FinTech Foundations subject gave me the vocabulary to work in a digital payments product team. Financial Modelling gave me the Excel and DCF skills that finance interviews expected. NAAC A++ is genuinely the strongest credential in the online MBA space - it was mentioned by name in my HDFC Bank interview. Zero-cost EMI made the fee structure accessible."
-        },
-        {
-          "name": "Vikram S.",
-          "city": "Hyderabad",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Treasury and Bank Management subject was very practically applicable for my NBFC treasury operations role",
-          "disliked": "Sem 4 project guidance was limited - would have benefited from more structured mentorship for the applied finance project",
-          "body": "I manage treasury operations at an NBFC. The Treasury and Bank Management subject and Strategic Financial Management content were directly applicable. NAAC A++ and NIRF #8 are the strongest credentials in the online space - two separate hiring managers mentioned them at final rounds. WES recognition is useful for the international correspondent banking work I do."
-        }
-      ]
     },
     "faqs": [
       {
@@ -126,6 +124,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 19,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

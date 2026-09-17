@@ -19,27 +19,57 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "International Business", "desc": "Global trade frameworks, cross-border market entry strategies, FDI analysis, and managing international operations." },
-            { "name": "Business Analytics and Business Modelling", "desc": "Quantitative business modelling, regression analysis, forecasting techniques, and data-driven decision-making frameworks." },
-            { "name": "Digital Marketing", "desc": "Search engine marketing, social media advertising, content strategy, SEO and SEM fundamentals, and performance marketing metrics." },
-            { "name": "Retail Marketing", "desc": "Retail store strategy, shopper behaviour, category management, omni-channel retail execution, and visual merchandising frameworks." },
-            { "name": "Education for Life", "desc": "Soft skills development, mindfulness, health and wellbeing, and holistic personal effectiveness for professionals." }
+            {
+              "name": "International Business",
+              "desc": "Global trade frameworks, cross-border market entry strategies, FDI analysis, and managing international operations."
+            },
+            {
+              "name": "Business Analytics and Business Modelling",
+              "desc": "Quantitative business modelling, regression analysis, forecasting techniques, and data-driven decision-making frameworks."
+            },
+            {
+              "name": "Digital Marketing",
+              "desc": "Search engine marketing, social media advertising, content strategy, SEO and SEM fundamentals, and performance marketing metrics."
+            },
+            {
+              "name": "Retail Marketing",
+              "desc": "Retail store strategy, shopper behaviour, category management, omni-channel retail execution, and visual merchandising frameworks."
+            },
+            {
+              "name": "Education for Life",
+              "desc": "Soft skills development, mindfulness, health and wellbeing, and holistic personal effectiveness for professionals."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Environment Sustainability and Governance", "desc": "ESG reporting frameworks, corporate sustainability strategy, carbon accounting basics, and governance obligations." },
-            { "name": "Project", "desc": "Applied industry marketing project integrating specialisation knowledge with real-world brand or campaign problem-solving." },
-            { "name": "Data-Driven Marketing", "desc": "Customer analytics, attribution modelling, A/B testing, marketing mix modelling, and using analytics platforms for campaign optimisation." },
-            { "name": "Marketing Research", "desc": "Quantitative and qualitative research design, survey methodology, conjoint analysis, focus group facilitation, and market sizing approaches." },
-            { "name": "CRM", "desc": "Customer lifecycle management, CRM platform configuration, loyalty programme design, customer segmentation, and churn prediction basics." }
+            {
+              "name": "Environment Sustainability and Governance",
+              "desc": "ESG reporting frameworks, corporate sustainability strategy, carbon accounting basics, and governance obligations."
+            },
+            {
+              "name": "Project",
+              "desc": "Applied industry marketing project integrating specialisation knowledge with real-world brand or campaign problem-solving."
+            },
+            {
+              "name": "Data-Driven Marketing",
+              "desc": "Customer analytics, attribution modelling, A/B testing, marketing mix modelling, and using analytics platforms for campaign optimisation."
+            },
+            {
+              "name": "Marketing Research",
+              "desc": "Quantitative and qualitative research design, survey methodology, conjoint analysis, focus group facilitation, and market sizing approaches."
+            },
+            {
+              "name": "CRM",
+              "desc": "Customer lifecycle management, CRM platform configuration, loyalty programme design, customer segmentation, and churn prediction basics."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Marketing MBA graduates from Amrita Vishwa Vidyapeetham Online are hired across India's consumer and digital marketing sector:\n\n**Industries:** FMCG brand management, e-commerce marketing, digital agencies, retail chains, BFSI marketing, edtech growth, healthcare marketing, and B2B marketing\n\n**Entry-level roles:** Brand Executive, Digital Marketing Executive, Marketing Analyst, CRM Associate, Retail Marketing Executive, Social Media Analyst\n\n**Mid-level roles (3-5 years experience):** Brand Manager, Digital Marketing Manager, Category Manager, Marketing Analytics Manager, CRM Manager, Trade Marketing Manager\n\n**Senior roles (7+ years):** VP Marketing, Chief Marketing Officer, Head of Digital, Brand Director, Marketing Director (FMCG), VP Growth\n\n**Top hiring organisations:** HUL, P&G India, Coca-Cola India, Marico, Godrej Consumer, Amazon India marketing, Flipkart growth, Nykaa, Meesho, Swiggy, Zomato marketing, Myntra brand, JWT, Ogilvy India, and BFSI marketing teams across HDFC Life, SBI Life, and Bajaj Finserv"
+      "body": "This Marketing MBA syllabus maps to the following India's consumer and digital marketing sector:\n\n**Industries:** FMCG brand management, e-commerce marketing, digital agencies, retail chains, BFSI marketing, edtech growth, healthcare marketing, and B2B marketing\n\n**Entry-level roles:** Brand Executive, Digital Marketing Executive, Marketing Analyst, CRM Associate, Retail Marketing Executive, Social Media Analyst\n\n**Mid-level roles (3-5 years experience):** Brand Manager, Digital Marketing Manager, Category Manager, Marketing Analytics Manager, CRM Manager, Trade Marketing Manager\n\n**Senior roles (7+ years):** VP Marketing, Chief Marketing Officer, Head of Digital, Brand Director, Marketing Director (FMCG), VP Growth\n\n**Where to verify placement claims:** ask Amrita Vishwa Vidyapeetham Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Marketing specialisation builds skills that brand management, digital marketing, and marketing analytics employers test at executive and manager levels:\n\n**Technical skills:**\n- Digital Marketing: Google Ads campaign setup, Meta advertising basics, SEO audit methodology, content calendar management, and performance marketing KPI tracking\n- Data-Driven Marketing: Google Analytics 4 interpretation, attribution model comparison, A/B test design and significance testing, and marketing mix model reading\n- CRM: Salesforce and Zoho CRM basics, customer segmentation logic, RFM analysis, loyalty tier design, and email automation workflow mapping\n- Retail Marketing: planogram design basics, category management P&L, shopper journey mapping, and retail promotional ROI analysis\n\n**Applied skills:**\n- Marketing Research: primary research design, brand tracking study methodology, conjoint analysis interpretation, and NPS programme management\n- Brand Management: brand architecture frameworks, positioning statement writing, brand audit methodology, and campaign briefing for creative agencies\n\n**Soft skills:** Presenting brand strategy to senior leadership using data, managing agency relationships and campaign quality, communicating market research findings to non-marketing stakeholders, and building marketing literacy in cross-functional product and sales teams."
@@ -52,38 +82,6 @@
     },
     "certificate": {
       "body": "Graduates receive an Amrita Vishwa Vidyapeetham MBA degree certificate with Marketing noted on the marksheet, issued under UGC-DEB 2020 online mode standards.\n\nNAAC A++ and NIRF #8 University 2025 are the strongest institutional credentials in India's online MBA space. WES recognition gives formal degree equivalence in the USA and Canada - useful for candidates targeting international marketing, brand management, or digital agency roles in North America. DigiLocker verification is available."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Amrita Vishwa Vidyapeetham Online MBA Marketing alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Pooja S.",
-          "city": "Mumbai",
-          "year": 2025,
-          "rating": 4,
-          "liked": "Data-Driven Marketing subject gave me the attribution and A/B testing frameworks my agency team needed to improve client reporting",
-          "disliked": "Digital Marketing content covered Google Ads and Meta well but LinkedIn B2B advertising and programmatic basics were light",
-          "body": "I work at a digital marketing agency managing FMCG clients. The data-driven marketing and CRM subjects were directly applicable to the client retention and campaign analytics work I do daily. NAAC A++ from NIRF #8 is the strongest credential available in online MBA space - it cleared every employer filter when I moved to a larger agency. WES recognition is a bonus for the international client work I do. Zero-cost EMI from the university was easy to set up."
-        },
-        {
-          "name": "Ravi M.",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 4,
-          "liked": "CRM subject content was thorough - covered the full lifecycle from segmentation through churn prediction in a business-applicable way",
-          "disliked": "Retail Marketing content felt South India oriented - more national chain and e-commerce retail case studies would improve relevance for non-metro markets",
-          "body": "I manage a brand team at an FMCG company. The marketing research and CRM subjects gave me frameworks I now apply in our quarterly brand health tracking work. NAAC A++ is a credential that carries weight in FMCG interviews - several hiring managers mentioned it directly. Study Abroad option was available but I did not need it for my career path."
-        },
-        {
-          "name": "Sneha K.",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Marketing Research subject directly improved my ability to design and present consumer insights studies",
-          "disliked": "Counsellor follow-up for Delhi NCR admission support was inconsistent compared to what Bengaluru-based alumni reported",
-          "body": "I transitioned from a sales role to a brand management track using this MBA. The digital marketing, data-driven marketing, and marketing research subjects were exactly the combination I needed. NAAC A++ from NIRF #8 cleared the institutional filter at every FMCG firm I interviewed with. Total fee of Rs 2,31,700 with zero-cost EMI was manageable on my existing salary."
-        }
-      ]
     },
     "faqs": [
       {
@@ -126,6 +124,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 19,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

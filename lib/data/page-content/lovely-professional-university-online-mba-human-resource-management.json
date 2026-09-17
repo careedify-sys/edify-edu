@@ -65,7 +65,7 @@
       "note": "Sem 1-2 shared core subjects across all LPU Online MBA specialisations. See the main LPU Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Human Resource Management MBA graduates from LPU Online are hired across these industries and roles:\n\n**Industries:** IT services and BPO, Manufacturing, FMCG, Banking and BFSI, Consulting firms, Staffing and recruitment\n\n**Entry-level roles:** HR Executive, Talent Acquisition Executive, Learning and Development Coordinator, HR Generalist, Compensation Analyst\n\n**Mid-level roles (3-5 years experience):** HR Business Partner, Talent Acquisition Manager, HR Manager, Compensation and Benefits Manager, L&D Manager\n\n**Senior roles (7+ years):** HR Director, CHRO, Head of Talent Management, VP HR, Head of People Operations\n\n**Top hiring organisations:** Infosys, TCS, Wipro, HCL Technologies, Cognizant, IBM India, Amazon India, Deloitte, KPMG, HDFC Bank, Bajaj Finserv, Aditya Birla Group, ManpowerGroup, Randstad India"
+      "body": "This Human Resource Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** IT services and BPO, Manufacturing, FMCG, Banking and BFSI, Consulting firms, Staffing and recruitment\n\n**Entry-level roles:** HR Executive, Talent Acquisition Executive, Learning and Development Coordinator, HR Generalist, Compensation Analyst\n\n**Mid-level roles (3-5 years experience):** HR Business Partner, Talent Acquisition Manager, HR Manager, Compensation and Benefits Manager, L&D Manager\n\n**Senior roles (7+ years):** HR Director, CHRO, Head of Talent Management, VP HR, Head of People Operations\n\n**Where to verify placement claims:** ask Lovely Professional University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The LPU HRM specialisation builds skills that HR employers test at HR business partner and HR manager levels:\n\n**Technical skills:**\n- Labour Laws and Industrial Relations: Industrial Disputes Act compliance, POSH implementation, contract labour management, and collective bargaining for HR compliance and IR roles\n- Performance Management Systems: KPI framework design, appraisal calibration, bell curve management, and continuous feedback tool implementation for HR generalist and HRBP roles\n- Compensation and Benefits Management: CTC structuring, pay band design, variable pay programme management, and compensation benchmarking for compensation and benefits roles\n- HR Analytics: attrition prediction, workforce productivity dashboards, people data analysis, and HR metrics reporting for HR analytics and people operations roles\n\n**Applied skills:**\n- Organisation Development and Change: OD intervention design, change management programme leadership, and culture transformation management\n- Strategic Human Resource Management: workforce planning, talent pipeline development, and HR-business alignment for senior HR roles\n\n**Soft skills:** Conducting salary negotiations with senior candidates, presenting workforce analytics to the CHRO, managing employee grievance processes, and leading performance improvement plan discussions."
@@ -78,38 +78,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Lovely Professional University (LPU) and carries the LPU name with the MBA designation. The Human Resource Management specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from LPU Online MBA HRM alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Gurpreet Kaur",
-          "city": "Ludhiana",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Labour Laws and HR Analytics subjects were directly applicable to my HR compliance and people analytics role. Zero-cost EMI was the deciding factor.",
-          "disliked": "Organisation Development cases could include more recent examples from IT services environments.",
-          "body": "I had 4 years in HR operations and the LPU HRM MBA helped me move to HRBP level. The Rs 1.61L fee with zero-cost EMI was unbeatable. LPU brand is well recognised at Punjab and Chandigarh IT services companies."
-        },
-        {
-          "name": "Vikash Kumar",
-          "city": "Delhi",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Performance Management Systems and Compensation and Benefits Management were well-structured and directly applicable. Strong practical orientation.",
-          "disliked": "Live session faculty engagement was variable across subjects.",
-          "body": "Good programme for HR career advancement. Delhi-NCR companies recognised the LPU credential. The HR Analytics subject gave me an edge in interviews at data-driven HR roles. Zero-cost EMI is a genuine benefit."
-        },
-        {
-          "name": "Anjali Mehra",
-          "city": "Chandigarh",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Strategic HRM and Labour Laws subjects were excellent. Strong for HR business partner roles.",
-          "disliked": "Placement support for senior HR roles was limited. Self-initiated outreach necessary.",
-          "body": "Solid credential at a very competitive price. For Chandigarh and North India HR careers, LPU is a recognised and affordable option. The zero-cost EMI made it a clear choice over more expensive alternatives."
-        }
-      ]
     },
     "faqs": [
       {
@@ -150,6 +118,7 @@
     "wordCount": 2100,
     "generatedAt": "2026-04-21",
     "batchNumber": "Phase7-Batch13",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

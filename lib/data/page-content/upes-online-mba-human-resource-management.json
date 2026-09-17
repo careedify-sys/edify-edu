@@ -61,7 +61,7 @@
       "note": "Sem 1-2 shared core subjects across all UPES MBA specialisations. Core includes Managerial Economics, Accounting for Managers, Marketing Management, Quantitative Techniques, Operations Management, OB and HRM, Project Management, Financial Management, Research Methodology, and Business Analytics for Managers."
     },
     "whoHires": {
-      "body": "Human Resource Management MBA graduates from UPES Online are hired across these industries and roles:\n\n**Industries:** IT services and product companies, BFSI, FMCG, Manufacturing, Energy and petroleum, Consulting\n\n**Entry-level roles:** HR Executive, Talent Acquisition Executive, L&D Coordinator, HR Generalist, Compensation Analyst\n\n**Mid-level roles (3-5 years experience):** HR Business Partner, Talent Acquisition Manager, L&D Manager, Compensation Manager, HR Manager\n\n**Senior roles (7+ years):** HR Director, CHRO, Head of Talent Management, VP HR, Head of People Operations\n\n**Top hiring organisations (UPES alumni placements):** TCS, Infosys, HCL, Wipro, Deloitte, KPMG, and energy sector companies. UPES's industry connect with oil and gas, power, and infrastructure sectors creates direct HR career pathways at companies like ONGC, NTPC, and GAIL that actively recruit UPES MBA graduates."
+      "body": "This Human Resource Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** IT services and product companies, BFSI, FMCG, Manufacturing, Energy and petroleum, Consulting\n\n**Entry-level roles:** HR Executive, Talent Acquisition Executive, L&D Coordinator, HR Generalist, Compensation Analyst\n\n**Mid-level roles (3-5 years experience):** HR Business Partner, Talent Acquisition Manager, L&D Manager, Compensation Manager, HR Manager\n\n**Senior roles (7+ years):** HR Director, CHRO, Head of Talent Management, VP HR, Head of People Operations\n\n**Where to verify placement claims:** ask University of Petroleum & Energy Studies (UPES) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The UPES HRM specialisation builds skills that IT, manufacturing, and energy sector HR employers test at HRBP and HR manager levels:\n\n**Technical skills:**\n- Industrial Relations and Labour Legislation: Industrial Disputes Act compliance, POSH implementation, Contract Labour Act management, and collective bargaining for HR compliance and IR roles\n- Compensation Management: CTC structuring, pay band design, variable pay programme management, and compensation benchmarking for total rewards and compensation roles\n- Performance Management: KPI framework design, appraisal calibration, continuous feedback system implementation, and PIP management for HRBP roles\n- Cross Cultural and Global HRM: expatriate policy design, global mobility framework management, and cross-cultural talent strategy for MNC HR roles\n\n**Applied skills:**\n- Digital HR: HRIS platform implementation, AI-assisted recruitment tool management, and digital HR transformation leadership - a dedicated subject uncommon in peer online MBA HRM programmes\n- Organisational Change and Intervention Strategies: OD intervention design, culture transformation leadership, and change management for HR-led restructuring\n\n**Soft skills:** Conducting compensation and performance conversations, presenting workforce analytics to CHRO and board, managing union relations in manufacturing and energy sectors, and leading digital HR platform adoption."
@@ -74,38 +74,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by University of Petroleum and Energy Studies (UPES) and carries the UPES name with the MBA designation. The Human Resource Management specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India. UPES is WES recognised, making the degree suitable for international credential evaluation."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from UPES Online MBA Human Resource Management alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Pooja Rawat",
-          "city": "Dehradun",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Digital HR subject was the standout - directly applicable to my HRIS implementation project at a Dehradun IT company. Industrial Relations gave strong labour law grounding for manufacturing HR.",
-          "disliked": "Placement support was stronger for energy sector companies than for IT services HR roles outside Uttarakhand.",
-          "body": "I had 4 years in HR operations and the UPES HRM MBA helped me move to HRBP. NIRF #36 in Management was a strong credential. Digital HR subject was a genuine differentiator in interviews with tech companies."
-        },
-        {
-          "name": "Sanjay Negi",
-          "city": "Noida",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Cross Cultural and Global HRM gave strong MNC HR frameworks. Compensation Management subject was directly applicable to my total rewards role.",
-          "disliked": "For pan-India HR careers, Amity or NMIMS carry stronger brand recognition. UPES brand is strongest in North India and energy sectors.",
-          "body": "Good programme for North India IT services and energy sector HR careers. UPES alumni network in Delhi NCR and Dehradun was helpful for lateral HR roles."
-        },
-        {
-          "name": "Kavita Sharma",
-          "city": "Haridwar",
-          "year": 2024,
-          "rating": 3,
-          "liked": "OD and Change Management and T&D subjects were well-structured and directly applicable.",
-          "disliked": "LMS platform stability was inconsistent during peak semester periods. Live sessions sometimes had connectivity issues.",
-          "body": "Decent credential for North India HR careers. Best value for energy sector HR professionals targeting ONGC, NTPC, and infrastructure companies where UPES brand is well known."
-        }
-      ]
     },
     "faqs": [
       {
@@ -146,6 +114,7 @@
     "wordCount": 1950,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch15",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

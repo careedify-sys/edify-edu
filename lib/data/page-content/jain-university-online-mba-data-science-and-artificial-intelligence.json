@@ -69,7 +69,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Data Science and AI MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** IT services and consulting, E-commerce and retail analytics, BFSI data science, Healthcare AI, EdTech analytics, Manufacturing AI\n\n**Entry-level roles:** Data Analyst, Business Analyst, AI/ML Business Analyst, Analytics Consultant, BI Analyst\n\n**Mid-level roles (3-5 years experience):** Data Science Manager, AI Product Manager, Analytics Manager, BI Manager, ML Operations Manager\n\n**Senior roles (7+ years):** Chief Data Officer, Head of AI, VP Analytics, Director Data Strategy, AI Transformation Lead\n\n**Top hiring organisations:** Infosys AI, TCS Data and Analytics, Wipro AI Labs, Accenture Analytics, Amazon India Analytics, Flipkart Data Science, HDFC Bank Data, ICICI Bank AI, IBM India Data Science, Microsoft India Analytics, Mu Sigma, Fractal Analytics"
+      "body": "This Data Science and AI MBA syllabus maps to the following industries and roles:\n\n**Industries:** IT services and consulting, E-commerce and retail analytics, BFSI data science, Healthcare AI, EdTech analytics, Manufacturing AI\n\n**Entry-level roles:** Data Analyst, Business Analyst, AI/ML Business Analyst, Analytics Consultant, BI Analyst\n\n**Mid-level roles (3-5 years experience):** Data Science Manager, AI Product Manager, Analytics Manager, BI Manager, ML Operations Manager\n\n**Senior roles (7+ years):** Chief Data Officer, Head of AI, VP Analytics, Director Data Strategy, AI Transformation Lead\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN Data Science and Artificial Intelligence specialisation builds skills that analytics and AI employer test at business analyst and analytics manager levels:\n\n**Technical skills:**\n- Business Applications of AI and ML: supervised and unsupervised algorithm application, model evaluation, and AI deployment decision-making for analytics manager and AI product roles\n- Predictive Modeling for Business Decision Making: regression, decision tree, and ensemble model building for customer churn, demand forecasting, and risk classification in data science roles\n- Text Analytics: NLP and sentiment analysis for customer voice, social media intelligence, and contract review automation at consulting and BFSI firms\n- Business Statistics for Decision Making: hypothesis testing, regression, and statistical inference for data-driven business analytics\n\n**Applied skills:**\n- Business Intelligence and Data Visualization: Tableau and Power BI dashboard design and executive data storytelling for BI manager roles\n- Applied Marketing Analytics: customer segmentation, attribution modelling, and marketing analytics for cross-functional data science deployment\n\n**Soft skills:** Presenting predictive model outputs to business leadership, translating ML findings into actionable business recommendations, managing AI vendor relationships, and communicating data limitations to non-technical stakeholders."
@@ -82,38 +82,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. The Data Science and Artificial Intelligence specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA Data Science and AI alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Karthik Subramaniam",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Predictive Modeling and Text Analytics subjects were directly applicable to my analytics manager role at a Bengaluru IT firm. Managerial Applications of AI helped me build the business case for our ML deployment.",
-          "disliked": "Business Statistics subject required prior math foundation. Students from non-engineering backgrounds should supplement with online prep before Sem 3.",
-          "body": "I had 4 years in data analytics and this programme helped me move from analyst to analytics manager. Python in Sem 2 core combined with ML and text analytics in Sem 3-4 gave me end-to-end data science credentials. JAIN brand is strong at Bengaluru tech companies."
-        },
-        {
-          "name": "Priya Venkataraman",
-          "city": "Chennai",
-          "year": 2023,
-          "rating": 4,
-          "liked": "BI and Data Visualization subject with Tableau and Power BI was excellent for my reporting management role. Applied Marketing Analytics gave cross-functional depth.",
-          "disliked": "More hands-on Python projects in Sem 3 would strengthen the ML subject. Conceptual coverage was strong but coding practice was limited.",
-          "body": "Good programme for South India analytics careers. Chennai IT companies recognised the JAIN credential. For deep ML engineering roles, additional Kaggle or Coursera projects alongside the MBA are recommended."
-        },
-        {
-          "name": "Abhijith Nair",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Text Analytics and Predictive Modeling were the strongest subjects. Relevant to real AI project work.",
-          "disliked": "LMS could be more interactive for analytics practice. Some modules need hands-on lab environments for running ML code.",
-          "body": "Solid AI content for the fee. JAIN's Bengaluru location is a genuine advantage for analytics networking. For deep computer science or research AI roles, a specialised BTech/MTech would be more appropriate than an MBA."
-        }
-      ]
     },
     "faqs": [
       {
@@ -154,6 +122,7 @@
     "wordCount": 2100,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

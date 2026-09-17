@@ -19,7 +19,7 @@
       "note": "EdifyEdu has not yet received the detailed Sem 3-4 subject list for this specialisation. Contact Amity Online directly for the current curriculum before enrolling."
     },
     "whoHires": {
-      "body": "Production and Operations Management MBA graduates from Amity University Online are hired across these industries and roles:\n\n**Industries:** Manufacturing, Logistics, Process industries, EPC contractors, Pharmaceutical\n\n**Entry-level roles:** Production Supervisor (management track), Operations Analyst, Plant Administration Executive, Manufacturing Planning Analyst\n\n**Mid-level roles (3-5 years experience):** Plant Manager, Production Manager, Supply Chain Manager, Quality Head, Operations Head\n\n**Senior roles (7+ years):** VP Operations, Director of Manufacturing, COO (mid-size manufacturer), Plant Director\n\n**Top hiring organisations:** Tata Motors, Mahindra, Bajaj Auto, Bharat Forge, L&T, Asian Paints, Nestle India, Sun Pharmaceutical"
+      "body": "This Production and Operations Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** Manufacturing, Logistics, Process industries, EPC contractors, Pharmaceutical\n\n**Entry-level roles:** Production Supervisor (management track), Operations Analyst, Plant Administration Executive, Manufacturing Planning Analyst\n\n**Mid-level roles (3-5 years experience):** Plant Manager, Production Manager, Supply Chain Manager, Quality Head, Operations Head\n\n**Senior roles (7+ years):** VP Operations, Director of Manufacturing, COO (mid-size manufacturer), Plant Director\n\n**Where to verify placement claims:** ask Amity University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Production and Operations Management specialisation builds skills that manufacturing and industrial employers test at plant manager and operations director level:\n\n**Technical skills:**\n- Production Planning: MRP and MPS systems, aggregate production planning, capacity management, and scheduling\n- Quality Management: ISO 9001, Six Sigma DMAIC methodology, SPC charts, and quality audit management\n- Supply Chain Management: vendor development, raw material procurement strategy, logistics optimisation, and inventory management\n\n**Applied skills:**\n- Lean Manufacturing: waste reduction, value stream mapping, Kaizen events, and OEE improvement programmes\n- Operations Strategy: make-or-buy decisions, facility planning, technology investment, and capacity expansion strategy\n\n**Soft skills:** Managing unionised shop-floor workforces, presenting OEE and quality data to plant boards, navigating multi-shift operations management."
@@ -33,38 +33,6 @@
     "certificate": {
       "body": "The Amity University degree certificate carries the Amity University name, the MBA designation, and identifies the online learning mode per UGC-DEB 2020 regulations. The Production and Operations Management specialisation is noted on the marksheet and transcript. Online mode identification on the certificate is standard for UGC-DEB approved programmes and equivalent in recognition to regular MBA degrees for employment, promotions, and further studies."
     },
-    "reviews": {
-      "intro": "Three verified reviews from Amity Online MBA Production and Operations Management alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Suresh Patil",
-          "city": "Pune",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Supply chain management and lean manufacturing content was directly applicable to my auto component plant operations",
-          "disliked": "Industry 4.0 and digital manufacturing content was lighter than expected given how fast the sector is changing",
-          "body": "I am a production engineer managing a 400-person auto component plant. The MBA gave me the management vocabulary and operational strategy frameworks I was missing. The supply chain and quality management content improved how I structure vendor development conversations. Got promoted to Plant Manager 8 months after completing the degree. Amity NIRF #22 University 2025 was specifically validated by our Group HR."
-        },
-        {
-          "name": "Deepak Verma",
-          "city": "Ahmedabad",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Production planning and capacity management content was systematic — gave structure to decisions I was making ad-hoc",
-          "disliked": "Six Sigma content was introductory — Green Belt level content would have been more useful for a practising quality manager",
-          "body": "I manage pharmaceutical plant operations and needed a management degree to qualify for VP Operations. The operations management and quality systems content was genuinely useful. The strategy and management subjects from Sem 1-2 gave me the business context I was missing as an operations specialist. The Amity degree was accepted for the VP Operations application without question."
-        },
-        {
-          "name": "Rohini Kaur",
-          "city": "Ludhiana",
-          "year": 2024,
-          "rating": 4,
-          "liked": "EHS management and operational compliance content was thorough — important for factory operations management",
-          "disliked": "Logistics and last-mile delivery content was limited — relevant for manufacturers doing direct supply to retail",
-          "body": "I manage operations at a garment export unit. The production planning and supply chain content was directly applicable to our seasonal demand cycles. The quality management frameworks helped us achieve our first ISO certification audit. The Amity degree gave me the credentials to apply for operations director roles at larger garment manufacturers in the region."
-        }
-      ]
-    },
     "faqs": [
       {
         "question": "Is this MBA suitable for engineers without prior management experience?",
@@ -72,7 +40,7 @@
       },
       {
         "question": "Is this spec relevant for service operations management (hospitals, IT companies, logistics firms)?",
-        "answer": "Production and Operations Management has historically been manufacturing-focused. However, operations management principles — capacity planning, quality management, process improvement, supply chain — apply to service operations as well. IT operations managers, hospital operations professionals, and logistics managers can extract relevant content. For pure service operations roles, verify that the specific Sem 3-4 subjects address your sector before enrolling."
+        "answer": "Production and Operations Management has historically been manufacturing-focused. However, operations management principles, capacity planning, quality management, process improvement, supply chain, apply to service operations as well. IT operations managers, hospital operations professionals, and logistics managers can extract relevant content. For pure service operations roles, verify that the specific Sem 3-4 subjects address your sector before enrolling."
       },
       {
         "question": "Does this MBA help qualify for government manufacturing sector roles (PSUs)?",
@@ -94,9 +62,9 @@
         "You want a dedicated manufacturing operations MBA at a NIRF #22 university under Rs 2 lakh."
       ],
       "consider": [
-        "You need cross-functional management breadth beyond operations — General Management covers operations planning alongside finance, HR, and marketing.",
-        "You are targeting supply chain management as your primary focus — check whether an SCM-specific certification (APICS CPIM, CSCP) better meets your target employer's requirements alongside this degree.",
-        "You are in service operations (IT, hospitality, healthcare) rather than manufacturing — verify spec content applicability to service sector operations before enrolling."
+        "You need cross-functional management breadth beyond operations, General Management covers operations planning alongside finance, HR, and marketing.",
+        "You are targeting supply chain management as your primary focus, check whether an SCM-specific certification (APICS CPIM, CSCP) better meets your target employer's requirements alongside this degree.",
+        "You are in service operations (IT, hospitality, healthcare) rather than manufacturing, verify spec content applicability to service sector operations before enrolling."
       ]
     }
   },
@@ -105,6 +73,7 @@
     "generatedAt": "2026-04-21",
     "batchNumber": 9,
     "hasSyllabusData": false,
-    "phase71Updated": "2026-04-21"
+    "phase71Updated": "2026-04-21",
+    "claimSweep": "2026-09-17"
   }
 }

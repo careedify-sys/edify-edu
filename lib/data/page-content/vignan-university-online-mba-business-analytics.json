@@ -69,7 +69,7 @@
       "note": "Sem 1-2 cover shared core subjects across all Vignan Online MBA specialisations. See the main Vignan Online MBA page for the core subject list. Syllabus applies to the 2025-26 admission cycle. Reconfirm current syllabus with our counsellor before enrolment."
     },
     "whoHires": {
-      "body": "Business Analytics MBA graduates target these industries and roles:\n\n**Industries:** IT and IT services, Banking and financial services, E-commerce, Consulting, Insurance, Manufacturing, Telecom, Healthcare\n\n**Entry-level roles:** Business Analyst, Data Analyst, BI Analyst, MIS Executive, Analytics Associate\n\n**Mid-level roles (3-5 years):** Senior Business Analyst, Analytics Manager, BI Manager, Data Insights Lead, Decision Science Manager\n\n**Senior roles (7+ years):** Head of Analytics, Director of BI, Chief Data Officer, VP Decision Sciences, Analytics Practice Lead\n\n**Typical hiring organisations:** TCS, Infosys, Wipro, HCL Tech, Cognizant, Deloitte, EY, Accenture, HDFC Bank, ICICI Bank, Flipkart, Amazon India, Mu Sigma, Fractal Analytics"
+      "body": "Business Analytics MBA graduates target these industries and roles:\n\n**Industries:** IT and IT services, Banking and financial services, E-commerce, Consulting, Insurance, Manufacturing, Telecom, Healthcare\n\n**Entry-level roles:** Business Analyst, Data Analyst, BI Analyst, MIS Executive, Analytics Associate\n\n**Mid-level roles (3-5 years):** Senior Business Analyst, Analytics Manager, BI Manager, Data Insights Lead, Decision Science Manager\n\n**Senior roles (7+ years):** Head of Analytics, Director of BI, Chief Data Officer, VP Decision Sciences, Analytics Practice Lead\n\n**Typical hiring organisations:** TCS, Infosys, Wipro, HCL Tech, Cognizant, Deloitte, EY, Accenture, HDFC Bank, ICICI Bank, Flipkart, Amazon India, Mu Sigma, Fractal Analytics\n\n**Where to verify placement claims:** ask Vignan's Foundation for Science, Technology & Research Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Business Analytics specialisation builds skills tested by IT, BFSI, and consulting organisations:\n\n**Technical skills:**\n- Business Intelligence: BI tool selection, dashboard design, KPI definition, and data visualisation best practices\n- Data Warehousing: ETL pipeline design, dimensional modelling, star schema construction, and data quality management\n- Data Mining: classification and clustering algorithms, association rule mining, and pattern recognition for business applications\n- Anomaly Detection: outlier identification methods, fraud detection model design, and anomaly scoring for risk management\n\n**Applied skills:**\n- Web Data Extraction: web scraping, social media data collection, clickstream analytics, and digital behaviour analysis\n- BI Reporting: executive dashboard creation, automated report scheduling, and data storytelling for business stakeholders\n\n**Soft skills:** Data-driven presentation to CXOs, cross-functional analytics project coordination, and translating technical findings into business recommendations."
@@ -82,38 +82,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Vignan's Foundation for Science, Technology and Research, Guntur. It reads 'Master of Business Administration' with the Business Analytics specialisation noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The degree is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three reviews from Vignan Online MBA Business Analytics students. Ratings from post-completion feedback.",
-      "items": [
-        {
-          "name": "Ravi",
-          "city": "Hyderabad",
-          "year": 2025,
-          "rating": 4.0,
-          "liked": "Data Warehousing and BI Reporting subjects were practical. At Rs 90,000, this is the cheapest NAAC A+ analytics MBA I could find.",
-          "disliked": "No Python or R programming in the syllabus. If you want to build ML models, this programme will not prepare you.",
-          "body": "I work as an MIS executive at an IT company. The BI subjects helped me transition from report generation to dashboard design and data storytelling. The Data Mining subject introduced classification and clustering concepts. For BI analysts and MIS professionals wanting an MBA credential, Vignan delivers at the right price. For data science or ML roles, look elsewhere."
-        },
-        {
-          "name": "Anjali",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 3.3,
-          "liked": "Zero-cost EMI at Rs 5,700/month meant I could complete the MBA without any financial stress.",
-          "disliked": "Vignan brand does not register with analytics hiring managers in Chennai. Peers with MBAs from Symbiosis or Manipal got shortlisted faster for analytics manager roles.",
-          "body": "The analytics syllabus covers BI fundamentals well but lacks the modern data science stack that employers now expect. No Python, no R, no machine learning. If you are a working BI professional needing the MBA box checked, it works. For career switching into analytics or data science roles at top companies, the brand and syllabus both fall short. Invest in a stronger programme."
-        },
-        {
-          "name": "Pavan",
-          "city": "Guntur",
-          "year": 2025,
-          "rating": 4.2,
-          "liked": "Anomaly Detection and Web Data Extraction were unique subjects not found in other budget analytics MBAs. Project Management in Sem 3 was a useful addition.",
-          "disliked": "LMS could be more intuitive. Assignment submission interface needs improvement.",
-          "body": "For the price, the analytics coverage is solid. Six dedicated analytics subjects across Sem 3-4 is good depth. The Anomaly Detection subject was particularly useful for my work in banking fraud monitoring. The Master Thesis project gave me a portfolio piece. Good programme for working professionals in Andhra Pradesh and Telangana who want analytics foundations without paying Rs 1.5-2 lakh."
-        }
-      ]
     },
     "faqs": [
       {
@@ -155,6 +123,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 28,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

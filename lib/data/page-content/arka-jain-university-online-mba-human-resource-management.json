@@ -19,30 +19,69 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Business Research Methods", "desc": "Research design, data collection methods, sampling techniques, hypothesis testing, and research report writing for management." },
-            { "name": "Operations Management", "desc": "Production planning, supply chain basics, quality management systems, inventory control, and process optimisation." },
-            { "name": "Talent Acquisition and Management", "desc": "Recruitment strategy design, employer branding, candidate assessment frameworks, onboarding processes, and talent pipeline management." },
-            { "name": "Learning and Development", "desc": "Training needs analysis, instructional design, e-learning strategy, competency mapping, and ROI measurement for L&D programmes." },
-            { "name": "Industrial Relations and Labor Laws", "desc": "Trade union management, collective bargaining, Industrial Disputes Act, Factories Act, new Labour Codes, and workplace compliance." },
-            { "name": "Employee Management and Negotiation Skills", "desc": "Conflict resolution, grievance handling, negotiation strategies, employee engagement frameworks, and workplace communication." },
-            { "name": "Open Elective Course", "desc": "Elective chosen from outside the HRM specialisation. Provides cross-functional exposure in finance, marketing, or general management." }
+            {
+              "name": "Business Research Methods",
+              "desc": "Research design, data collection methods, sampling techniques, hypothesis testing, and research report writing for management."
+            },
+            {
+              "name": "Operations Management",
+              "desc": "Production planning, supply chain basics, quality management systems, inventory control, and process optimisation."
+            },
+            {
+              "name": "Talent Acquisition and Management",
+              "desc": "Recruitment strategy design, employer branding, candidate assessment frameworks, onboarding processes, and talent pipeline management."
+            },
+            {
+              "name": "Learning and Development",
+              "desc": "Training needs analysis, instructional design, e-learning strategy, competency mapping, and ROI measurement for L&D programmes."
+            },
+            {
+              "name": "Industrial Relations and Labor Laws",
+              "desc": "Trade union management, collective bargaining, Industrial Disputes Act, Factories Act, new Labour Codes, and workplace compliance."
+            },
+            {
+              "name": "Employee Management and Negotiation Skills",
+              "desc": "Conflict resolution, grievance handling, negotiation strategies, employee engagement frameworks, and workplace communication."
+            },
+            {
+              "name": "Open Elective Course",
+              "desc": "Elective chosen from outside the HRM specialisation. Provides cross-functional exposure in finance, marketing, or general management."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Strategic Management", "desc": "Competitive strategy frameworks, corporate-level strategy, strategic analysis tools (SWOT, Porter's Five Forces), and strategic implementation." },
-            { "name": "International Human Resource Management", "desc": "Cross-cultural management, expatriate policies, global mobility, international labour standards, and multinational HR strategy." },
-            { "name": "Performance Management Systems", "desc": "KPI design, balanced scorecard, 360-degree feedback, OKR frameworks, performance appraisal methods, and linking performance to rewards." },
-            { "name": "Organization Development and Change Management", "desc": "OD interventions, change readiness assessment, Kotter's model, resistance management, and culture transformation planning." },
-            { "name": "Employee Compensation and Benefits Management", "desc": "Salary structuring, CTC components, variable pay design, ESOP frameworks, statutory benefits, and total rewards strategy." },
-            { "name": "Master Thesis / Project", "desc": "Supervised research project on an HR management topic. Literature review, methodology design, data analysis, and thesis presentation." }
+            {
+              "name": "Strategic Management",
+              "desc": "Competitive strategy frameworks, corporate-level strategy, strategic analysis tools (SWOT, Porter's Five Forces), and strategic implementation."
+            },
+            {
+              "name": "International Human Resource Management",
+              "desc": "Cross-cultural management, expatriate policies, global mobility, international labour standards, and multinational HR strategy."
+            },
+            {
+              "name": "Performance Management Systems",
+              "desc": "KPI design, balanced scorecard, 360-degree feedback, OKR frameworks, performance appraisal methods, and linking performance to rewards."
+            },
+            {
+              "name": "Organization Development and Change Management",
+              "desc": "OD interventions, change readiness assessment, Kotter's model, resistance management, and culture transformation planning."
+            },
+            {
+              "name": "Employee Compensation and Benefits Management",
+              "desc": "Salary structuring, CTC components, variable pay design, ESOP frameworks, statutory benefits, and total rewards strategy."
+            },
+            {
+              "name": "Master Thesis / Project",
+              "desc": "Supervised research project on an HR management topic. Literature review, methodology design, data analysis, and thesis presentation."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "ARKA JAIN MBA HRM graduates target roles across corporate HR, talent management, and organizational development:\n\n**Industries:** IT/ITES, manufacturing, BFSI, healthcare, retail, e-commerce, consulting, and government/PSU HR departments\n\n**Entry-level roles:** HR Executive, Talent Acquisition Specialist, L&D Coordinator, Payroll Analyst, Employee Engagement Associate\n\n**Mid-level roles (3-5 years experience):** HR Manager, Talent Acquisition Manager, L&D Manager, Compensation and Benefits Manager, HR Business Partner\n\n**Senior roles (7+ years):** Head of HR, CHRO (mid-market), VP People Operations, Director of Talent, Head of Organizational Development\n\n**Regional note:** ARKA JAIN's JGI Group network provides stronger placement access in East India (Jharkhand, Bihar, Odisha, West Bengal). Manufacturing and mining sector HR roles are particularly relevant in the Jamshedpur industrial corridor. Candidates targeting metro markets should supplement with independent networking."
+      "body": "ARKA JAIN MBA HRM graduates target roles across corporate HR, talent management, and organizational development:\n\n**Industries:** IT/ITES, manufacturing, BFSI, healthcare, retail, e-commerce, consulting, and government/PSU HR departments\n\n**Entry-level roles:** HR Executive, Talent Acquisition Specialist, L&D Coordinator, Payroll Analyst, Employee Engagement Associate\n\n**Mid-level roles (3-5 years experience):** HR Manager, Talent Acquisition Manager, L&D Manager, Compensation and Benefits Manager, HR Business Partner\n\n**Senior roles (7+ years):** Head of HR, CHRO (mid-market), VP People Operations, Director of Talent, Head of Organizational Development\n\n**Regional note:** ARKA JAIN's JGI Group network provides stronger placement access in East India (Jharkhand, Bihar, Odisha, West Bengal). Manufacturing and mining sector HR roles are particularly relevant in the Jamshedpur industrial corridor. Candidates targeting metro markets should supplement with independent networking.\n\n**Where to verify placement claims:** ask ARKA JAIN University – JGI Online (arkajain.edu.in) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The HRM specialisation builds skills across talent management, labour compliance, and organizational development:\n\n**Technical skills:**\n- Talent Acquisition: recruitment strategy design, employer branding, candidate assessment, ATS management, and onboarding process design\n- Compensation Design: CTC structuring, variable pay models, ESOP frameworks, statutory benefits calculation, and total rewards benchmarking\n- Labour Law Compliance: Industrial Disputes Act, Factories Act, new Labour Codes (2020), PF/ESI compliance, and workplace safety norms\n- Performance Management: KPI/OKR design, balanced scorecard implementation, 360-degree feedback setup, and appraisal calibration\n\n**Applied skills:**\n- Organizational Development: change readiness assessment, culture audit, OD intervention design, and transformation project management\n- International HRM: expatriate policy design, cross-cultural team management, global mobility processes, and international labour standards\n\n**AI skills (Sem 1):** Prompt engineering for HR analytics, AI-assisted screening tools, automated report generation, and GenAI for employee communication drafts."
@@ -55,38 +94,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Human Resource Management as the specialisation, issued by ARKA JAIN University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A accreditation and UGC-DEB approval. Valid for government recruitment, PSU HR roles, corporate HR positions, and higher education admissions. The certificate reads Master of Business Administration without the word 'online' on the document face, consistent with UGC-DEB norms. DigiLocker integration available for digital verification."
-    },
-    "reviews": {
-      "intro": "Three reviews from ARKA JAIN Online MBA HRM students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Deepika",
-          "city": "Jamshedpur",
-          "year": 2024,
-          "rating": 5,
-          "liked": "The Generative AI course in Sem 1 changed how I handle HR reporting. I now use AI tools for employee survey analysis and communication drafts. Industrial Relations and Labor Laws in Sem 3 was directly applicable to my manufacturing HR role in the Jamshedpur industrial belt.",
-          "disliked": "Only 3 MBA specialisations. A dual-spec option like HRM + Analytics would have been ideal.",
-          "body": "For East India HR professionals, this is a strong option. The JGI Group connection, NAAC A accreditation, and Rs 1.08 lakh fee make it practical. The GenAI Sem 1 subject is a real differentiator. I use those skills daily. The HRM curriculum covers the full lifecycle from talent acquisition to compensation design."
-        },
-        {
-          "name": "Manoj",
-          "city": "Dhanbad",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Performance Management Systems and Organization Development and Change Management in Sem 4 were strong capstone subjects. Compensation and Benefits Management covered CTC structuring at a practical level.",
-          "disliked": "Brand recognition outside Jharkhand and Bihar is limited. When I mention ARKA JAIN to colleagues in Bengaluru, they assume it is JAIN Deemed University. You have to clarify every time.",
-          "body": "The curriculum is well-designed for the price. Employee Management and Negotiation Skills was a subject I have not seen in other budget MBA programmes. The main trade-off is brand visibility. In East India, the JGI name is familiar. Pan-India, you will need to explain the university in professional settings."
-        },
-        {
-          "name": "Priyanka",
-          "city": "Bokaro",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Affordable at Rs 1.08 lakh. Learning and Development subject in Sem 3 covered e-learning strategy and training needs analysis, which was relevant to my L&D coordinator role.",
-          "disliked": "Placement support is limited to East India companies. If you are targeting pan-India HR roles at large corporates, the career services team cannot match what Amity or Manipal offer. LMS could be more polished.",
-          "body": "For the price and accreditation, it works. But be honest about what a sub-Rs 1.1L online MBA from Jharkhand delivers in terms of career acceleration outside East India. The curriculum is good. The brand is the constraint."
-        }
-      ]
     },
     "faqs": [
       {
@@ -130,6 +137,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 32,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

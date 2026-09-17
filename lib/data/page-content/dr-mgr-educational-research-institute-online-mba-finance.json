@@ -19,30 +19,69 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Security Analysis and Portfolio Management", "desc": "Equity valuation methods, bond pricing, Modern Portfolio Theory, CAPM application, and risk-adjusted performance measurement." },
-            { "name": "Merchant Banking and Financial Services", "desc": "IPO management, underwriting process, SEBI compliance for merchant bankers, and financial advisory services in India." },
-            { "name": "Banking and Insurance Management", "desc": "Commercial banking operations, NPA management, insurance product design, IRDA regulations, and bancassurance distribution." },
-            { "name": "Strategic Management", "desc": "Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic implementation processes." },
-            { "name": "Entrepreneurship Development", "desc": "Startup ideation, business plan creation, funding strategies, MSME support systems, and entrepreneurial risk management." },
-            { "name": "Management Accounting", "desc": "Cost-volume-profit analysis, budgetary control, standard costing, variance analysis, and management decision-making tools." },
-            { "name": "Production and Operations Management", "desc": "Production planning, quality management, facility layout, capacity planning, and operations scheduling." },
-            { "name": "Skill Development", "desc": "Communication skills, presentation techniques, team management, and professional development modules." },
-            { "name": "Summer Project", "desc": "Industry-linked summer project requiring field research, data collection, and structured report submission." }
+            {
+              "name": "Security Analysis and Portfolio Management",
+              "desc": "Equity valuation methods, bond pricing, Modern Portfolio Theory, CAPM application, and risk-adjusted performance measurement."
+            },
+            {
+              "name": "Merchant Banking and Financial Services",
+              "desc": "IPO management, underwriting process, SEBI compliance for merchant bankers, and financial advisory services in India."
+            },
+            {
+              "name": "Banking and Insurance Management",
+              "desc": "Commercial banking operations, NPA management, insurance product design, IRDA regulations, and bancassurance distribution."
+            },
+            {
+              "name": "Strategic Management",
+              "desc": "Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic implementation processes."
+            },
+            {
+              "name": "Entrepreneurship Development",
+              "desc": "Startup ideation, business plan creation, funding strategies, MSME support systems, and entrepreneurial risk management."
+            },
+            {
+              "name": "Management Accounting",
+              "desc": "Cost-volume-profit analysis, budgetary control, standard costing, variance analysis, and management decision-making tools."
+            },
+            {
+              "name": "Production and Operations Management",
+              "desc": "Production planning, quality management, facility layout, capacity planning, and operations scheduling."
+            },
+            {
+              "name": "Skill Development",
+              "desc": "Communication skills, presentation techniques, team management, and professional development modules."
+            },
+            {
+              "name": "Summer Project",
+              "desc": "Industry-linked summer project requiring field research, data collection, and structured report submission."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Digital Marketing", "desc": "SEO, SEM, social media marketing, content strategy, email marketing, and digital analytics tools." },
-            { "name": "International Business Management", "desc": "Global trade frameworks, foreign exchange management, international marketing, and cross-border business strategy." },
-            { "name": "Contemporary Seminar", "desc": "Student-led seminar on current business topics. Requires research, presentation, and peer discussion." },
-            { "name": "Field Work and Project Work (8 Weeks)", "desc": "Mandatory 8-week field project with an organization. Requires structured report, data analysis, and viva voce defence." }
+            {
+              "name": "Digital Marketing",
+              "desc": "SEO, SEM, social media marketing, content strategy, email marketing, and digital analytics tools."
+            },
+            {
+              "name": "International Business Management",
+              "desc": "Global trade frameworks, foreign exchange management, international marketing, and cross-border business strategy."
+            },
+            {
+              "name": "Contemporary Seminar",
+              "desc": "Student-led seminar on current business topics. Requires research, presentation, and peer discussion."
+            },
+            {
+              "name": "Field Work and Project Work (8 Weeks)",
+              "desc": "Mandatory 8-week field project with an organization. Requires structured report, data analysis, and viva voce defence."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Dr. MGR MBA Finance Management graduates target roles across banking, corporate finance, and financial services:\n\n**Industries:** Commercial banking, NBFC, insurance, mutual funds, corporate treasury, equity research, financial consulting, and government finance\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Banking Officer, Portfolio Associate, Insurance Underwriter, Treasury Analyst\n\n**Mid-level roles (3-5 years):** Finance Manager, Credit Manager, Branch Manager (banking), Portfolio Analyst, Investment Advisor, Financial Controller\n\n**Senior roles (7+ years):** CFO (mid-market), VP Finance, Head of Treasury, Director of Credit Risk, AVP Corporate Finance\n\n**Employers:** Banks (SBI, HDFC, ICICI, Indian Bank, City Union Bank), NBFCs (Bajaj Finance, Shriram Finance), insurance companies (LIC, Star Health), IT/ITES finance teams, and Chennai/Tamil Nadu regional corporates.\n\n**Note:** Dr. MGR's Deemed University status and NAAC A+ grade carry strong recognition in Tamil Nadu and South India. The 8-week field project adds practical exposure."
+      "body": "Dr. MGR MBA Finance Management graduates target roles across banking, corporate finance, and financial services:\n\n**Industries:** Commercial banking, NBFC, insurance, mutual funds, corporate treasury, equity research, financial consulting, and government finance\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Banking Officer, Portfolio Associate, Insurance Underwriter, Treasury Analyst\n\n**Mid-level roles (3-5 years):** Finance Manager, Credit Manager, Branch Manager (banking), Portfolio Analyst, Investment Advisor, Financial Controller\n\n**Senior roles (7+ years):** CFO (mid-market), VP Finance, Head of Treasury, Director of Credit Risk, AVP Corporate Finance\n\n**Employers:** Banks (SBI, HDFC, ICICI, Indian Bank, City Union Bank), NBFCs (Bajaj Finance, Shriram Finance), insurance companies (LIC, Star Health), IT/ITES finance teams, and Chennai/Tamil Nadu regional corporates.\n\n**Note:** Dr. MGR's Deemed University status and NAAC A+ grade carry strong recognition in Tamil Nadu and South India. The 8-week field project adds practical exposure.\n\n**Where to verify placement claims:** ask Dr. MGR Educational and Research Institute Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Finance Management specialisation builds skills across capital markets, banking, and insurance:\n\n**Technical skills:**\n- Security Analysis: equity valuation (DCF, PE ratio, PBV), bond pricing, yield curve interpretation, and portfolio construction using MPT\n- Merchant Banking: IPO process management, SEBI regulatory compliance, underwriting mechanics, and deal advisory fundamentals\n- Banking and Insurance: credit appraisal, NPA classification, insurance product structuring, IRDA compliance, and bancassurance models\n\n**Applied skills:**\n- Portfolio Management: risk-adjusted return calculation (Sharpe ratio, Treynor ratio), asset allocation strategy, and portfolio rebalancing\n- Management Accounting: cost analysis for financial decision-making, budgetary control, and variance interpretation\n\n**Soft skills:** Presenting investment recommendations, client relationship management in banking, insurance advisory communication, and financial report writing for non-finance stakeholders."
@@ -55,38 +94,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Finance Management as the specialisation, issued by Dr. MGR Educational and Research Institute (Deemed University) under UGC-DEB online mode standards.\n\nThe degree carries NAAC A+ accreditation, UGC-DEB approval, and Deemed University status since 2003. Valid for government recruitment, PSU finance roles, banking promotions, and private-sector corporate finance positions. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from Dr. MGR Online MBA Finance Management students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Karthik",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Strong Chennai/Tamil Nadu recognition. The Deemed University tag since 2003 carries weight with South Indian employers and government departments",
-          "disliked": "Semester 4 has no finance-specific subjects. All the finance depth is in Sem 3 only",
-          "body": "I chose Dr. MGR because the brand is well-known in Tamil Nadu. NAAC A+ at this fee is reasonable. The three Sem 3 finance courses (security analysis, merchant banking, banking/insurance) cover the essentials. The 8-week field project forced real-world application. Main gap: Sem 4 is entirely common core, so the finance depth feels front-loaded."
-        },
-        {
-          "name": "Lakshmi",
-          "city": "Coimbatore",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Merchant Banking and Financial Services subject covered IPO mechanics and SEBI compliance at a practical level useful for my role at a financial advisory firm",
-          "disliked": "Pan-India brand recognition outside Tamil Nadu and South India is limited compared to Manipal or Amity",
-          "body": "The fee is mid-range for NAAC A+. Not the cheapest, not the most expensive. The finance curriculum in Sem 3 is solid. Banking and Insurance Management was directly relevant to my work. The 8-week project is longer than most online MBA programmes and the viva voce adds accountability. For Tamil Nadu candidates, Dr. MGR is a safe choice. For North India careers, consider universities with stronger national brand."
-        },
-        {
-          "name": "Suresh",
-          "city": "Madurai",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Security Analysis and Portfolio Management covered MPT and CAPM with enough depth for entry-level equity research preparation",
-          "disliked": "LMS could be more modern. Some study materials feel dated. Faculty responsiveness varies",
-          "body": "At Rs 1.36-1.41L the value is acceptable but not exceptional. Vignan and Kurukshetra offer similar NAAC-grade programmes at lower fees. Dr. MGR's strength is the Tamil Nadu brand and the 8-week project. If you are based in TN or South India, the regional recognition helps. If national brand is your priority, the fee-to-brand ratio may not work."
-        }
-      ]
     },
     "faqs": [
       {
@@ -130,6 +137,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 31,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

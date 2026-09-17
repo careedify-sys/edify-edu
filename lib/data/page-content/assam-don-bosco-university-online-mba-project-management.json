@@ -18,7 +18,7 @@
       "semesters": []
     },
     "whoHires": {
-      "body": "ADB MBA Project Management graduates target roles across IT, infrastructure, construction, and development sectors:\n\n**Industries:** IT/ITES, construction and infrastructure, government development projects, consulting firms, FMCG project teams, banking transformation programmes, and NGO/development sector\n\n**Entry-level roles:** Project Coordinator, Associate Project Manager, PMO Analyst, Business Analyst, Scrum Master (junior), Implementation Associate\n\n**Mid-level roles (3-5 years):** Project Manager, Programme Coordinator, PMO Lead, Agile Coach, Delivery Manager, Implementation Manager\n\n**Senior roles (7+ years):** Director of Programme Management, VP Delivery, Head of PMO, Chief Projects Officer, Director of Infrastructure Projects\n\n**Employers:** IT companies (TCS, Infosys, Wipro), infrastructure firms, NE India development agencies, construction companies, consulting firms, and government project implementation units.\n\n**Note:** NE India's infrastructure development under central government schemes (road, bridge, urban development) creates project management demand. ADB's Guwahati location provides access to the region's project management ecosystem."
+      "body": "ADB MBA Project Management graduates target roles across IT, infrastructure, construction, and development sectors:\n\n**Industries:** IT/ITES, construction and infrastructure, government development projects, consulting firms, FMCG project teams, banking transformation programmes, and NGO/development sector\n\n**Entry-level roles:** Project Coordinator, Associate Project Manager, PMO Analyst, Business Analyst, Scrum Master (junior), Implementation Associate\n\n**Mid-level roles (3-5 years):** Project Manager, Programme Coordinator, PMO Lead, Agile Coach, Delivery Manager, Implementation Manager\n\n**Senior roles (7+ years):** Director of Programme Management, VP Delivery, Head of PMO, Chief Projects Officer, Director of Infrastructure Projects\n\n**Employers:** IT companies (TCS, Infosys, Wipro), infrastructure firms, NE India development agencies, construction companies, consulting firms, and government project implementation units.\n\n**Note:** NE India's infrastructure development under central government schemes (road, bridge, urban development) creates project management demand. ADB's Guwahati location provides access to the region's project management ecosystem.\n\n**Where to verify placement claims:** ask Assam Don Bosco University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Project Management specialisation builds skills across project planning, agile delivery, and stakeholder management:\n\n**Technical skills:**\n- Project Planning: WBS creation, Gantt chart scheduling, critical path analysis, resource allocation, and milestone tracking\n- Risk Management: risk identification frameworks, probability-impact matrices, risk response strategies, and contingency planning\n- Agile Methods: Scrum framework, sprint planning, Kanban boards, agile estimation, and retrospective facilitation\n- Project Finance: project budgeting, earned value management (EVM), cost variance analysis, and project financial reporting\n\n**Applied skills:**\n- Stakeholder Management: stakeholder mapping, communication planning, expectation management, and conflict resolution in project contexts\n- Programme Management: multi-project coordination, portfolio prioritization, resource sharing across projects, and programme-level reporting\n\n**Soft skills:** Leading cross-functional project teams, presenting project status to steering committees, negotiating scope changes with clients, and managing vendor relationships in project delivery."
@@ -31,38 +31,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Project Management as the specialisation, issued by Assam Don Bosco University under UGC-DEB online mode standards.\n\nThe degree carries NAAC A accreditation and UGC-DEB approval. The university is part of the Don Bosco/Salesian educational network with global recognition across 130+ countries. Valid for government recruitment, PSU roles, PMP/PRINCE2 certification eligibility support, and corporate project management positions."
-    },
-    "reviews": {
-      "intro": "Three reviews from ADB Online MBA Project Management students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Himanshu",
-          "city": "Guwahati",
-          "year": 2024,
-          "rating": 4,
-          "liked": "The Don Bosco network gives the degree recognition that other NE India universities lack. Project planning and risk management topics were practical",
-          "disliked": "Fee is not publicly listed. Had to contact admissions for the exact breakdown",
-          "body": "I chose ADB for the Don Bosco name. The Salesian educational network operates in 130+ countries, and that global heritage adds weight to the degree. The project management subjects covered planning, risk, and agile at a practical level. Startup Management as a core subject was a good addition since I manage projects for an early-stage company."
-        },
-        {
-          "name": "Lipika",
-          "city": "Shillong",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Only NAAC A university in NE India offering online MBA with a project management specialisation. Agile methodology coverage was relevant for my IT role",
-          "disliked": "Some recorded lectures could be more interactive. Study materials need more recent case studies",
-          "body": "Working in IT in Meghalaya, I needed an online MBA from a recognized NE institution. ADB was the clear choice. Stakeholder coordination and risk management subjects addressed real challenges I face in my projects. The dissertation required structured research, which was time-intensive but built research skills I now use in project proposals."
-        },
-        {
-          "name": "Bhaskar",
-          "city": "Tinsukia",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Project finance and earned value management concepts were applicable to my infrastructure project work in Upper Assam",
-          "disliked": "Brand recognition outside NE India needs improvement. The LMS could be more polished",
-          "body": "The project management curriculum covers the key areas: planning, risk, agile, and stakeholder management. The content is functional and applicable. The trade-off is brand recognition outside the Northeast. In NE India, Don Bosco is a strong name. Pan-India, you may need to explain the university. For PM roles in the region, ADB is a solid choice."
-        }
-      ]
     },
     "faqs": [
       {
@@ -105,6 +73,7 @@
     "wordCount": 1830,
     "generatedAt": "2026-04-23",
     "batchNumber": 33,
-    "hasSyllabusData": false
+    "hasSyllabusData": false,
+    "claimSweep": "2026-09-17"
   }
 }

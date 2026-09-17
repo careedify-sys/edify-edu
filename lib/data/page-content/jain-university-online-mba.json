@@ -74,58 +74,6 @@
       "body": "EdifyEdu connects enrolled JAIN Online MBA students with 2-3 alumni in the students target industry, runs a free 30-minute career transition call, and shares monthly job referrals curated to the students specialisation. For students choosing JAIN for the Python and Analytics curriculum, we provide a supplementary learning roadmap covering free certifications that extend those skills further. No commission taken from JAIN.",
       "heading": "Beyond Admission: EdifyEdu Network"
     },
-    "reviews": {
-      "heading": "What Students Are Saying",
-      "intro": "JAIN Online MBA students most often cite the Python core curriculum and the specialisation breadth as the decisive advantages. Recurring concerns centre on the higher monthly EMI and faculty quality variation across the many specialisation tracks. Here are verified reviews.",
-      "items": [
-        {
-          "name": "Nisha K.",
-          "city": "Bengaluru",
-          "year": 2025,
-          "rating": 5,
-          "liked": "",
-          "disliked": "",
-          "body": "The Python for Data Science in Semester 2 was the reason I chose JAIN over everything else. I work in IT and being able to show a data skill in my MBA curriculum was genuinely useful at my next appraisal. What I liked: the dual Finance and Business Analytics track gave me exactly the combination my finance role needed. What I disliked: assignment deadlines in Semester 3 and 4 clustered heavily toward the end of the semester."
-        },
-        {
-          "name": "Gopal R.",
-          "city": "Chennai",
-          "year": 2025,
-          "rating": 4,
-          "liked": "",
-          "disliked": "",
-          "body": "Chose the Marketing specialisation. The consumer behaviour and digital marketing content in Semesters 3 and 4 was well-designed. What I liked: the case study format in exams is practical and not just theory recall. What I disliked: peer interaction is minimal on the official LMS. The only real cohort connection I had was through a student WhatsApp group."
-        },
-        {
-          "name": "Divya M.",
-          "city": "Hyderabad",
-          "year": 2024,
-          "rating": 4,
-          "liked": "",
-          "disliked": "",
-          "body": "Completed the HR specialisation in 2 years alongside a full-time job. What I liked: the OB and HRM core subjects in Semester 1 are genuinely well-written and not shallow survey material. What I disliked: faculty for some electives in Semester 4 was inconsistent and the recorded sessions for two subjects were shorter than I expected."
-        },
-        {
-          "name": "Suresh T.",
-          "city": "Coimbatore",
-          "year": 2023,
-          "rating": 3,
-          "liked": "",
-          "disliked": "",
-          "body": "The degree is NAAC A++ and that is what I needed. What I liked: 17+ specialisations meant I could find the exact combination of Finance and Marketing I was looking for without settling. What I disliked: the EMI at Rs.12,781 per month is higher than peers and stretched my budget more than I had planned."
-        },
-        {
-          "name": "Arun P.",
-          "city": "Mysuru",
-          "year": 2024,
-          "rating": 3,
-          "liked": "",
-          "disliked": "",
-          "body": "The programme works if you are disciplined. What I liked: the NAAC A++ certificate was accepted immediately by my employer and the Python skills from Semester 2 were practical. What I disliked: the proctoring software had a compatibility issue with my laptop and I had to scramble to fix it 30 minutes before my first exam."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "heading": "Red Flags to Know Before Enrolling",
       "flags": [
@@ -201,6 +149,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:48.987Z",
     "sheetName": "jain-university-online_MBA",
-    "format": "numbered"
+    "format": "numbered",
+    "claimSweep": "2026-09-17"
   }
 }

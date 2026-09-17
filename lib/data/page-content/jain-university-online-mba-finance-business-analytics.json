@@ -65,7 +65,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Finance and Business Analytics dual MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** Investment banking analytics, BFSI data and analytics, Fintech, Corporate finance analytics, Fund management, Consulting finance analytics\n\n**Entry-level roles:** Financial Data Analyst, Investment Analyst, Finance Business Analyst, Risk Analyst, Fintech Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Analytics Manager, Investment Analytics Manager, Risk Analytics Manager, FP&A Manager, Fintech Product Analyst\n\n**Senior roles (7+ years):** Head of Finance Analytics, CFO (Data-Driven), VP Investment Analytics, Director Risk Analytics, Finance Data Director\n\n**Top hiring organisations:** HDFC Bank Analytics, ICICI Bank Data Science, Axis Bank Risk, Kotak Analytics, Bajaj Finance Analytics, Zerodha Data, Groww Analytics, Deloitte Finance Analytics, EY Data, KPMG Risk Analytics, Mu Sigma Finance, Fractal Analytics Finance"
+      "body": "This Finance and Business Analytics dual MBA syllabus maps to the following industries and roles:\n\n**Industries:** Investment banking analytics, BFSI data and analytics, Fintech, Corporate finance analytics, Fund management, Consulting finance analytics\n\n**Entry-level roles:** Financial Data Analyst, Investment Analyst, Finance Business Analyst, Risk Analyst, Fintech Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Analytics Manager, Investment Analytics Manager, Risk Analytics Manager, FP&A Manager, Fintech Product Analyst\n\n**Senior roles (7+ years):** Head of Finance Analytics, CFO (Data-Driven), VP Investment Analytics, Director Risk Analytics, Finance Data Director\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN Finance and Business Analytics dual specialisation builds finance depth combined with analytics tools that investment, risk, and fintech employers test:\n\n**Finance skills:**\n- Investment Analysis and Portfolio Management: DCF and relative equity valuation, CAPM application, portfolio performance measurement for investment research and portfolio management\n- Fintech: digital lending platform evaluation, blockchain payment analysis, and robo-advisory product assessment for fintech analytics roles\n- Risk Management and Behavioural Finance: credit and market risk quantification, behavioural bias identification, and risk analytics model building\n\n**Analytics skills:**\n- Tableau and Power BI: financial dashboard design, investment performance reporting, and executive data communication for finance analytics roles\n- R for Finance: time-series financial modelling, statistical risk quantification, portfolio optimisation using R - uncommon in Indian online MBA programmes\n- SPSS for Data Analytics: multivariate analysis, regression, and hypothesis testing for financial research and risk modelling\n\n**Cross-functional skills:**\n- Advanced Spreadsheet Modelling: complex Excel financial models for corporate valuation, scenario analysis, and automated management reporting\n\n**Soft skills:** Presenting R-based financial models to investment committees, translating analytics outputs into investment recommendations, managing fintech data vendor relationships, and communicating risk model assumptions to audit and compliance."
@@ -78,38 +78,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. Both Finance and Business Analytics specialisations are noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The dual specialisation certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA Finance and Business Analytics alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Suresh Balaji",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "R for Finance was the standout subject - no other online MBA I evaluated offered R programming specifically for financial analytics. Tableau and Power BI gave immediate applicable dashboard skills.",
-          "disliked": "R for Finance required prior statistics comfort. Students from non-quantitative backgrounds should prepare before Sem 3.",
-          "body": "I had 5 years in equity research and the R for Finance and Tableau subjects gave me the analytics credential I needed to move into a finance data analytics lead role. JAIN brand was recognised at Bengaluru analytics firms."
-        },
-        {
-          "name": "Arun Subramanian",
-          "city": "Chennai",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Investment Analysis combined with Fintech was directly applicable to my role at a Bengaluru fintech. SPSS subject gave statistical depth.",
-          "disliked": "Risk Management and Behavioural Finance could be more quantitative with hands-on VaR modelling exercises.",
-          "body": "Good programme for South India finance analytics careers. Chennai banking and fintech companies recognised the dual credential. For deep portfolio management or investment banking careers, supplementary finance certifications alongside the MBA are recommended."
-        },
-        {
-          "name": "Ramesh Nair",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Advanced Spreadsheet Modelling and Tableau subjects were directly applicable to my FP&A role.",
-          "disliked": "The dual spec means neither Finance nor Analytics is at single-spec depth. Know the trade-off before choosing.",
-          "body": "Solid analytics finance credential for the fee. Best for finance professionals wanting analytics tools. Not suitable for students seeking deep investment banking or advanced data science depth."
-        }
-      ]
     },
     "faqs": [
       {
@@ -150,6 +118,7 @@
     "wordCount": 2050,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

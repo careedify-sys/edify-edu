@@ -73,7 +73,7 @@
       ]
     },
     "whoHires": {
-      "body": "HR MBA graduates from Chandigarh University Online are hired across all industry sectors:\n\n**Industries:** IT and technology, manufacturing, BFSI, FMCG, retail, consulting, logistics, healthcare, and government PSUs\n\n**Entry-level roles:** HR Executive, Talent Acquisition Specialist, Training Coordinator, HR Business Partner (Junior)\n\n**Mid-level roles (3-5 years experience):** HR Manager, HRBP, L&D Manager, Compensation and Benefits Manager, HR Analytics Specialist\n\n**Senior roles (7+ years):** HR Director, CHRO, Head of Talent Acquisition, VP People, Head of Organisation Development\n\n**Where to verify placement claims:** ask Chandigarh University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
+      "body": "This HR MBA syllabus maps to the following all industry sectors:\n\n**Industries:** IT and technology, manufacturing, BFSI, FMCG, retail, consulting, logistics, healthcare, and government PSUs\n\n**Entry-level roles:** HR Executive, Talent Acquisition Specialist, Training Coordinator, HR Business Partner (Junior)\n\n**Mid-level roles (3-5 years experience):** HR Manager, HRBP, L&D Manager, Compensation and Benefits Manager, HR Analytics Specialist\n\n**Senior roles (7+ years):** HR Director, CHRO, Head of Talent Acquisition, VP People, Head of Organisation Development\n\n**Where to verify placement claims:** ask Chandigarh University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The outcome is being able to argue about people in the language the business uses.\n\nHuman Resource Analytics and Compensation Management do most of that work: attrition modelling, cost of replacement, pay band design and the arithmetic behind a reward structure. These are the subjects that let you answer a finance director rather than defer to one.\n\nAI in Talent Acquisition and Workforce Planning covers automated screening and capacity forecasting, including the bias and fairness questions that come with automating a hiring decision.\n\nPerformance Management Systems and Strategies covers goal setting, review design and the well-documented ways rating systems distort behaviour.\n\nMethodology of Training and Development covers programme design and the harder question of measuring whether training changed anything. Organisation Change and Development covers restructuring, culture and the practicalities of a transition."
@@ -130,6 +130,7 @@
     "hasSyllabusData": true,
     "phase71Updated": "2026-04-22",
     "integrityPass": "2026-09-17",
-    "humanisedAt": "2026-09-17"
+    "humanisedAt": "2026-09-17",
+    "claimSweep": "2026-09-17"
   }
 }

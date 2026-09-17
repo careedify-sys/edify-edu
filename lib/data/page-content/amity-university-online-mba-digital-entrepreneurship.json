@@ -69,7 +69,7 @@
       "note": "Semesters 1 and 2 cover the shared management core. See the main Amity MBA page for Sem 1-2 subject details."
     },
     "whoHires": {
-      "body": "Digital Entrepreneurship MBA graduates from Amity University Online are hired across these industries and roles:\n\n**Industries:** Startups, E-commerce, EdTech, Corporate innovation, Venture-backed consumer internet\n\n**Entry-level roles:** Growth Manager (startup), Product Launch Manager, New Ventures Analyst, Business Development Associate\n\n**Mid-level roles (3-5 years experience):** Head of New Ventures, Growth Lead, Business Development Head, Startup Operations Manager\n\n**Senior roles (7+ years):** CEO (early-stage company), COO (growth-stage venture), Managing Director (SME)\n\n**Top hiring organisations:** Y Combinator India portfolio, Sequoia India portfolio, HUL Launchpad, Tata Innoverse, NASSCOM startup ecosystem members"
+      "body": "This Digital Entrepreneurship MBA syllabus maps to the following industries and roles:\n\n**Industries:** Startups, E-commerce, EdTech, Corporate innovation, Venture-backed consumer internet\n\n**Entry-level roles:** Growth Manager (startup), Product Launch Manager, New Ventures Analyst, Business Development Associate\n\n**Mid-level roles (3-5 years experience):** Head of New Ventures, Growth Lead, Business Development Head, Startup Operations Manager\n\n**Senior roles (7+ years):** CEO (early-stage company), COO (growth-stage venture), Managing Director (SME)\n\n**Where to verify placement claims:** ask Amity University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Digital Entrepreneurship specialisation builds skills that founders and venture-builders apply at every stage of the startup lifecycle:\n\n**Technical skills:**\n- Idea Validation: customer discovery, market sizing, and competitive analysis frameworks for opportunity evaluation\n- Product Launch Planning: go-to-market strategy, channel selection, and early customer acquisition sequencing\n- Startup Finance: unit economics, burn rate management, and cap table fundamentals for investor conversations\n\n**Applied skills:**\n- Digital Customer Acquisition: SEO, paid media, and content-led growth strategies on startup budgets\n- Strategic Positioning: competitive moat identification and pivot decision criteria for early-stage companies\n\n**Soft skills:** Investor pitch storytelling, managing early teams through uncertainty, communicating venture strategy to advisors and board members."
@@ -82,38 +82,6 @@
     },
     "certificate": {
       "body": "The Amity University degree certificate carries the Amity University name, the MBA designation, and identifies the online learning mode per UGC-DEB 2020 regulations. The Digital Entrepreneurship specialisation is noted on the marksheet and transcript. Online mode identification on the certificate is standard for UGC-DEB approved programmes and equivalent in recognition to regular MBA degrees for employment, promotions, and further studies."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Amity Online MBA Digital Entrepreneurship alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Arjun Mehta",
-          "city": "Bangalore",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Idea scouting and product launch planning modules gave structure to what I had been doing intuitively",
-          "disliked": "Financial aspects module needed more India-specific funding landscape coverage — SEBI angel fund rules, government startup schemes",
-          "body": "I was building my second startup while doing this MBA. The idea validation and go-to-market planning content gave me frameworks I should have had the first time around. The major project became my actual Series A pitch deck — my investors specifically asked where I learned to structure financials the way I did. The Amity brand at NIRF #22 University 2025 gave the pitch credibility that a certificate course could not have provided."
-        },
-        {
-          "name": "Sneha Pillai",
-          "city": "Mumbai",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Digital marketing module was specifically designed for startup budgets — not the large brand approach most MBAs teach",
-          "disliked": "Cap table and equity dilution content was too brief — critical for founders but only covered at a surface level",
-          "body": "I joined a Series A edtech startup as Growth Manager after completing this MBA. The digital customer acquisition frameworks from the digital marketing and successful marketing subjects were directly applicable to the growth role. The startup financial management content helped me understand unit economics in board meetings. The Amity degree helped me get taken seriously in a room full of IIM graduates."
-        },
-        {
-          "name": "Rajiv Nair",
-          "city": "Hyderabad",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Entrepreneurial skills module changed how I think about problems — useful even for an intrapreneur at a large company",
-          "disliked": "Content is more suited for B2C digital startups than B2B SaaS — limited enterprise startup coverage",
-          "body": "I lead new venture development at a large manufacturing company. The entrepreneurship and product launch content was directly applicable to how we evaluate and launch new business units. The idea scouting frameworks are now part of our internal innovation process. The Amity MBA gave my proposals more weight internally — a formal management degree from a NIRF-ranked university carries more internal credibility than a startup bootcamp certificate."
-        }
-      ]
     },
     "faqs": [
       {
@@ -144,9 +112,9 @@
         "You want a NIRF #22, NAAC A+ credential that is explicitly oriented to venture-building rather than corporate management."
       ],
       "consider": [
-        "You are targeting a corporate management career path rather than venture-building — General Management or a functional spec (Finance, HR, Marketing) is more relevant to corporate hiring managers.",
-        "You want deeper financial management coverage for raising institutional capital — supplement with a financial modelling or venture finance certification alongside this MBA.",
-        "You want the strongest possible MBA brand for a startup career — consider whether an IIMA PGPX or ISB YLP programme aligns with your career goals if premium brand is the primary criterion."
+        "You are targeting a corporate management career path rather than venture-building, General Management or a functional spec (Finance, HR, Marketing) is more relevant to corporate hiring managers.",
+        "You want deeper financial management coverage for raising institutional capital, supplement with a financial modelling or venture finance certification alongside this MBA.",
+        "You want the strongest possible MBA brand for a startup career, consider whether an IIMA PGPX or ISB YLP programme aligns with your career goals if premium brand is the primary criterion."
       ]
     }
   },
@@ -155,6 +123,7 @@
     "generatedAt": "2026-04-21",
     "batchNumber": 9,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-21"
+    "phase71Updated": "2026-04-21",
+    "claimSweep": "2026-09-17"
   }
 }

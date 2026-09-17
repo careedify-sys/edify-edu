@@ -61,7 +61,7 @@
       "note": "Sem 1-2 shared core subjects across all LPU Online MBA specialisations. See the main LPU Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Data Science MBA graduates from LPU Online are hired across these industries and roles:\n\n**Industries:** IT services and product companies, E-commerce and fintech, BFSI analytics, Healthcare AI, Consulting, Research and AI labs\n\n**Entry-level roles:** Data Scientist, ML Engineer, Data Analyst, AI Product Analyst, Research Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Data Scientist, ML Engineering Manager, Head of Data Science, AI Product Manager, Analytics Manager\n\n**Senior roles (7+ years):** Chief Data Officer, Head of AI, VP Data Science, Director of Machine Learning\n\n**Top hiring organisations:** Infosys AI, TCS iON, Wipro AI Labs, HCL Technologies, Amazon AWS India, Microsoft India, IBM India Research, Google India, Flipkart Data Science, Paytm Analytics, HDFC Bank AI, Deloitte Analytics"
+      "body": "This Data Science MBA syllabus maps to the following industries and roles:\n\n**Industries:** IT services and product companies, E-commerce and fintech, BFSI analytics, Healthcare AI, Consulting, Research and AI labs\n\n**Entry-level roles:** Data Scientist, ML Engineer, Data Analyst, AI Product Analyst, Research Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Data Scientist, ML Engineering Manager, Head of Data Science, AI Product Manager, Analytics Manager\n\n**Senior roles (7+ years):** Chief Data Officer, Head of AI, VP Data Science, Director of Machine Learning\n\n**Where to verify placement claims:** ask Lovely Professional University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The LPU Data Science specialisation builds skills that IT and analytics employers test at data scientist and ML manager levels:\n\n**Technical skills:**\n- Machine Learning: supervised and unsupervised learning algorithm implementation, model evaluation, and production ML pipeline design for data scientist and ML engineer roles\n- Deep Learning and Neural Networks: CNN and RNN architecture design, transfer learning application, and neural network training for computer vision and NLP roles\n- Statistical Methods for Data Science: hypothesis testing, regression modelling, multivariate analysis, and experimental design for data analyst and research roles\n- Natural Language Processing: text classification, sentiment analysis, NER, and LLM application for NLP engineer and conversational AI roles\n\n**Applied skills:**\n- Data Science Project Management: MLOps framework application, data governance, model deployment management, and data science team leadership for data science manager roles\n\n**Soft skills:** Translating model outputs into business recommendations for C-suite, managing data science project delivery across cross-functional teams, communicating model uncertainty to non-technical stakeholders, and building business cases for AI investment."
@@ -74,38 +74,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Lovely Professional University (LPU) and carries the LPU name with the MBA designation. The Data Science specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from LPU Online MBA Data Science alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Rajan Sharma",
-          "city": "Mohali",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Machine Learning and Deep Learning subjects gave me strong hands-on foundations for my AI engineer role at a Chandigarh IT company. The zero-cost EMI was a genuine differentiator.",
-          "disliked": "NLP subject could include more LLM and generative AI content given how fast the field is moving.",
-          "body": "I had 3 years in software development and the LPU Data Science MBA helped me transition to data scientist. The Rs 1.61L with zero-cost EMI was unbeatable among NIRF-ranked programmes. LPU brand is well recognised at North India IT companies."
-        },
-        {
-          "name": "Tanmay Gupta",
-          "city": "Delhi",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Statistical Methods and Machine Learning were rigorous. Data Science Project Management gave me tools to lead analytics projects at work.",
-          "disliked": "Requires self-study in Python before Sem 3 if you are from a non-technical background.",
-          "body": "Good programme for IT professionals moving into data science management. Delhi IT companies recognised the LPU credential. The zero-cost EMI was the deciding factor over NMIMS."
-        },
-        {
-          "name": "Kanika Mehta",
-          "city": "Chandigarh",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Deep Learning and Neural Networks was excellent for my computer vision project work. Strong technical depth for a management MBA.",
-          "disliked": "Faculty for ML and DL subjects could have more industry practitioners.",
-          "body": "Strong data science content at a very affordable price. For North India IT data science careers, LPU is the right choice at this price point. Zero-cost EMI made it easy to manage alongside current EMIs."
-        }
-      ]
     },
     "faqs": [
       {
@@ -146,6 +114,7 @@
     "wordCount": 2000,
     "generatedAt": "2026-04-21",
     "batchNumber": "Phase7-Batch13",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

@@ -69,7 +69,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "AI for International Finance MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** International financial reporting, Big 4 advisory, Corporate treasury at MNCs, Investment banking analytics, Regulatory and compliance, Financial consulting\n\n**Entry-level roles:** Financial Reporting Analyst, Finance Data Analyst, Management Accountant, Corporate Finance Analyst, Financial Controls Analyst\n\n**Mid-level roles (3-5 years experience):** Financial Controller, Finance Analytics Manager, Group Reporting Manager, Treasury Analytics Manager, Senior Finance Analyst\n\n**Senior roles (7+ years):** CFO, Head of Group Finance, VP Corporate Finance, Director Financial Reporting, Head of Finance Analytics\n\n**Top hiring organisations:** Deloitte, PwC, EY, KPMG, Grant Thornton, HDFC Bank Finance Analytics, Infosys Finance, Wipro Finance, MNC treasury and reporting teams, SEC-listed Indian companies with IFRS reporting requirements, Big 4 analytics and advisory practices"
+      "body": "This AI for International Finance MBA syllabus maps to the following industries and roles:\n\n**Industries:** International financial reporting, Big 4 advisory, Corporate treasury at MNCs, Investment banking analytics, Regulatory and compliance, Financial consulting\n\n**Entry-level roles:** Financial Reporting Analyst, Finance Data Analyst, Management Accountant, Corporate Finance Analyst, Financial Controls Analyst\n\n**Mid-level roles (3-5 years experience):** Financial Controller, Finance Analytics Manager, Group Reporting Manager, Treasury Analytics Manager, Senior Finance Analyst\n\n**Senior roles (7+ years):** CFO, Head of Group Finance, VP Corporate Finance, Director Financial Reporting, Head of Finance Analytics\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN AI for International Finance specialisation builds skills that combine international accounting depth with analytics capabilities:\n\n**Technical skills:**\n- Financial Reporting: IFRS standards application, consolidated financial statement preparation, and complex reporting scenario analysis for financial controller and group reporting roles\n- Audit and Assurance: ISA standards application, audit risk assessment, substantive procedure design, and internal control evaluation for assurance and advisory roles\n- Analytics for Finance: Python-based financial modelling, data-driven investment analysis, and automated financial reporting for analytics-oriented finance positions\n- Advanced Financial Management: advanced valuation techniques, complex capital structure optimisation, and international treasury management for senior corporate finance\n\n**Applied skills:**\n- Strategic Business Reporting: IFRS 9, 15, and 16 application, consolidated group accounts preparation, and financial reporting quality analysis for CFO-track roles\n- Advanced Performance Management: Balanced Scorecard design, EVA framework application, and divisional performance management for management accounting roles\n\n**Soft skills:** Presenting IFRS-compliant financial statements to audit committees, communicating financial analytics insights to non-finance boards, managing external auditor relationships, and leading data-driven financial reporting transformation."
@@ -82,38 +82,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. The AI for International Finance specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India. Note: this specialisation does not carry ACCA curriculum labelling - students specifically seeking ACCA examination exemptions should enrol in the International Finance (ACCA) specialisation and confirm exemptions directly with ACCA Global."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA AI for International Finance alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Harish Venkatesh",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Analytics for Finance in Sem 4 was the standout subject - Python for financial modelling directly applicable to my Big 4 advisory role. Strategic Business Reporting gave strong IFRS consolidation grounding.",
-          "disliked": "The similarity to International Finance ACCA syllabus is confusing. Clearer differentiation on what analytics enhancements this spec adds would help during enrolment decisions.",
-          "body": "I wanted international finance depth with analytics skills rather than the ACCA qualification pathway. This spec delivered exactly that combination. JAIN brand worked well at Bengaluru Big 4 offices."
-        },
-        {
-          "name": "Meghna Iyer",
-          "city": "Chennai",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Advanced Financial Management and Advanced Performance Management were at a level applicable to senior finance roles. Analytics for Finance gave Python financial modelling I could use immediately.",
-          "disliked": "Confirm clearly with JAIN which spec enables ACCA exemptions and which does not before enrolment. The two international finance specs require careful differentiation.",
-          "body": "Good programme for Chennai Big 4 and MNC finance roles. Analytics orientation makes it relevant for modern finance functions. Confirm with counsellor whether ACCA exemption pathway or analytics pathway aligns with your career goal."
-        },
-        {
-          "name": "Ravi Chandran",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Financial Reporting and Audit subjects were well-structured. Analytics for Finance added genuine quantitative depth.",
-          "disliked": "The programme needs to more clearly articulate the analytics differentiation versus the ACCA pathway spec. Subject overlap creates confusion.",
-          "body": "Solid international finance content. Recommend confirming whether AI for International Finance or International Finance ACCA better matches your career target before finalising enrolment."
-        }
-      ]
     },
     "faqs": [
       {
@@ -154,6 +122,7 @@
     "wordCount": 2100,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

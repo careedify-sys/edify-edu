@@ -77,7 +77,7 @@
       "note": "Sem 1-2 shared core subjects across all NIU Online MBA specialisations. Strategic Management and Legal Aspects of Business are common Sem 3 subjects. Entrepreneurship Development and Digital Marketing and E-Commerce are common Sem 4 subjects."
     },
     "whoHires": {
-      "body": "IT Management MBA graduates target these industries and roles:\n\n**Industries:** IT services and consulting, E-commerce, BFSI technology, Telecom, Healthcare IT, EdTech, SaaS companies\n\n**Entry-level roles:** IT Business Analyst, Systems Analyst, IT Project Coordinator, ERP Consultant, Technology Analyst\n\n**Mid-level roles (3-5 years):** IT Manager, IT Project Manager, Technology Consultant, Solutions Architect (Business), IT Service Delivery Manager\n\n**Senior roles (7+ years):** CTO, VP Technology, IT Director, Head of Digital Transformation, Chief Information Officer\n\n**Typical hiring organisations in Delhi-NCR:** Infosys, TCS, Wipro, HCL Technologies, Tech Mahindra, Cognizant, Genpact, Accenture India, IBM India, Microsoft India, Oracle India, Paytm"
+      "body": "IT Management MBA graduates target these industries and roles:\n\n**Industries:** IT services and consulting, E-commerce, BFSI technology, Telecom, Healthcare IT, EdTech, SaaS companies\n\n**Entry-level roles:** IT Business Analyst, Systems Analyst, IT Project Coordinator, ERP Consultant, Technology Analyst\n\n**Mid-level roles (3-5 years):** IT Manager, IT Project Manager, Technology Consultant, Solutions Architect (Business), IT Service Delivery Manager\n\n**Senior roles (7+ years):** CTO, VP Technology, IT Director, Head of Digital Transformation, Chief Information Officer\n\n**Typical hiring organisations in Delhi-NCR:** Infosys, TCS, Wipro, HCL Technologies, Tech Mahindra, Cognizant, Genpact, Accenture India, IBM India, Microsoft India, Oracle India, Paytm\n\n**Where to verify placement claims:** ask Noida International University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The NIU IT specialisation builds skills tested by IT services and technology employers:\n\n**Technical management skills:**\n- Cloud Computing for Business: cloud deployment strategy, IaaS/PaaS/SaaS evaluation, migration planning, and cost optimisation for IT infrastructure roles\n- AI and ML for Business: business AI applications, ML model evaluation, and AI-driven automation for technology strategy roles\n- Database Management Systems: SQL, database design, data integrity, and performance tuning for data management and BI roles\n- Network Operations and Security: network infrastructure, cybersecurity, firewall management, and IT security compliance for IT operations roles\n\n**Business IT skills:**\n- Managing E-Business: e-commerce platform strategy, digital business models, and online marketplace management for digital business roles\n- Business Process Re-Engineering: process mapping, workflow automation, and IT-driven transformation for consulting and process improvement roles\n- Data Analytics for Business Decisions: statistical analysis, data visualisation, and business intelligence for analytics and BI roles\n- Business Data Warehousing and Data Mining: ETL design, data warehouse architecture, and pattern discovery for BI and data engineering roles\n\n**Soft skills:** IT project communication, vendor management, cross-functional technology stakeholder alignment, and IT governance reporting."
@@ -90,38 +90,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Noida International University (NIU) and carries the MBA designation. The Information Technology specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is WES recognised for international credential evaluation. It is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three reviews from NIU Online MBA IT students. Ratings from post-completion feedback.",
-      "items": [
-        {
-          "name": "Saurabh",
-          "city": "Noida",
-          "year": 2025,
-          "rating": 4.0,
-          "liked": "Cloud Computing for Business and AI and ML for Business subjects were relevant to my IT services career. The Rs 97,600 all-in fee is the lowest I found for a NAAC A+ IT MBA.",
-          "disliked": "NIU brand is not well known at large IT services firms like Infosys or TCS compared to LPU or Amity.",
-          "body": "For IT professionals already working in Noida's IT corridor, NIU provides a management credential at the lowest NAAC A+ fee. The IT subjects cover modern topics including cloud and AI. Brand recognition is limited, so plan to rely on your work experience for job transitions."
-        },
-        {
-          "name": "Pooja",
-          "city": "Greater Noida",
-          "year": 2024,
-          "rating": 4.2,
-          "liked": "Data Analytics for Business Decisions and Database Management Systems were practical. Network Security coverage was a useful addition.",
-          "disliked": "Career services for IT management roles were basic. No industry certifications bundled with the programme.",
-          "body": "Good IT management coverage at an unbeatable price. The 10 IT subjects span both traditional IT management and modern technologies. I used the BPR and Knowledge Management subjects directly in my IT consulting role. Self-sourced job search is necessary."
-        },
-        {
-          "name": "Manish",
-          "city": "Ghaziabad",
-          "year": 2025,
-          "rating": 3.9,
-          "liked": "Managing E-Business and Business Data Warehousing subjects were well-structured. Fee advantage over competing programmes was significant.",
-          "disliked": "EMI terms were not clearly zero-cost. Had to verify interest rates with the financing partner separately.",
-          "body": "At Rs 97,600, the IT subject depth is strong for the price. Managing IT-Enabled Services and Knowledge Management are subjects most budget MBAs skip. Confirm EMI interest rates before enrolling. The degree is valid for IT management roles but brand recognition needs improvement."
-        }
-      ]
     },
     "faqs": [
       {
@@ -163,6 +131,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 26,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

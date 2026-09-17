@@ -19,30 +19,69 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Healthcare Law and Ethics", "desc": "Medical negligence, patient rights, clinical trial ethics, PCPNDT Act, MCI regulations, and healthcare compliance frameworks in India." },
-            { "name": "Public Health System and Outreach", "desc": "Primary healthcare infrastructure, National Health Mission, Ayushman Bharat, community health worker programmes, and public health outreach strategies." },
-            { "name": "Strategic Management", "desc": "Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic implementation in healthcare organizations." },
-            { "name": "Entrepreneurship Development", "desc": "Healthcare startup ideation, clinic and diagnostic centre business planning, funding strategies, and MSME support for health ventures." },
-            { "name": "Management Accounting", "desc": "Hospital cost accounting, budgetary control for healthcare facilities, variance analysis, and financial decision-making tools." },
-            { "name": "Production and Operations Management", "desc": "Hospital operations management, patient flow optimization, facility layout for healthcare, and capacity planning." },
-            { "name": "Skill Development", "desc": "Communication skills for healthcare settings, patient interaction techniques, and professional development modules." },
-            { "name": "Summer Project", "desc": "Industry-linked summer project in a healthcare organization requiring field research, data collection, and structured report." }
+            {
+              "name": "Healthcare Law and Ethics",
+              "desc": "Medical negligence, patient rights, clinical trial ethics, PCPNDT Act, MCI regulations, and healthcare compliance frameworks in India."
+            },
+            {
+              "name": "Public Health System and Outreach",
+              "desc": "Primary healthcare infrastructure, National Health Mission, Ayushman Bharat, community health worker programmes, and public health outreach strategies."
+            },
+            {
+              "name": "Strategic Management",
+              "desc": "Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic implementation in healthcare organizations."
+            },
+            {
+              "name": "Entrepreneurship Development",
+              "desc": "Healthcare startup ideation, clinic and diagnostic centre business planning, funding strategies, and MSME support for health ventures."
+            },
+            {
+              "name": "Management Accounting",
+              "desc": "Hospital cost accounting, budgetary control for healthcare facilities, variance analysis, and financial decision-making tools."
+            },
+            {
+              "name": "Production and Operations Management",
+              "desc": "Hospital operations management, patient flow optimization, facility layout for healthcare, and capacity planning."
+            },
+            {
+              "name": "Skill Development",
+              "desc": "Communication skills for healthcare settings, patient interaction techniques, and professional development modules."
+            },
+            {
+              "name": "Summer Project",
+              "desc": "Industry-linked summer project in a healthcare organization requiring field research, data collection, and structured report."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Risk Management and Health Insurance", "desc": "Clinical risk assessment, hospital risk mitigation, health insurance models in India, TPA operations, Ayushman Bharat claims, and corporate health insurance design." },
-            { "name": "Digital Marketing", "desc": "Digital marketing for healthcare organizations, patient engagement strategies, healthcare SEO, and social media compliance." },
-            { "name": "International Business Management", "desc": "Global healthcare markets, medical tourism strategy, cross-border health services, and international healthcare regulations." },
-            { "name": "Contemporary Seminar", "desc": "Student-led seminar on current healthcare management topics. Research, presentation, and peer discussion." },
-            { "name": "Field Work and Project Work (8 Weeks)", "desc": "Mandatory 8-week field project in a hospital, clinic, or public health organization. Structured report, data analysis, and viva voce defence." }
+            {
+              "name": "Risk Management and Health Insurance",
+              "desc": "Clinical risk assessment, hospital risk mitigation, health insurance models in India, TPA operations, Ayushman Bharat claims, and corporate health insurance design."
+            },
+            {
+              "name": "Digital Marketing",
+              "desc": "Digital marketing for healthcare organizations, patient engagement strategies, healthcare SEO, and social media compliance."
+            },
+            {
+              "name": "International Business Management",
+              "desc": "Global healthcare markets, medical tourism strategy, cross-border health services, and international healthcare regulations."
+            },
+            {
+              "name": "Contemporary Seminar",
+              "desc": "Student-led seminar on current healthcare management topics. Research, presentation, and peer discussion."
+            },
+            {
+              "name": "Field Work and Project Work (8 Weeks)",
+              "desc": "Mandatory 8-week field project in a hospital, clinic, or public health organization. Structured report, data analysis, and viva voce defence."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Dr. MGR MBA Hospital and Healthcare Management graduates target roles across hospital administration, public health, and health insurance:\n\n**Industries:** Multi-specialty hospitals, primary healthcare chains, public health departments, health insurance (TPA and direct), pharmaceutical companies, medical device firms, diagnostic chains, and telemedicine platforms\n\n**Entry-level roles:** Hospital Administrator (junior), Healthcare Executive, Health Insurance Officer, Public Health Coordinator, Medical Records Manager, Patient Relations Officer\n\n**Mid-level roles (3-5 years):** Hospital Operations Manager, Health Insurance Manager, Public Health Programme Manager, Quality Manager (NABH), Healthcare Consultant, TPA Manager\n\n**Senior roles (7+ years):** Hospital CEO/COO, Director of Operations (hospital chain), VP Healthcare Services, Chief Quality Officer, Head of Health Insurance\n\n**Employers:** Apollo Hospitals, Fortis, MIOT Hospitals, Kauvery Hospital, Global Hospitals, Star Health Insurance, government health departments (Tamil Nadu and central), and Chennai/South India diagnostic chains.\n\n**Note:** Dr. MGR's healthcare heritage and Chennai location provide direct access to one of India's largest hospital ecosystems."
+      "body": "Dr. MGR MBA Hospital and Healthcare Management graduates target roles across hospital administration, public health, and health insurance:\n\n**Industries:** Multi-specialty hospitals, primary healthcare chains, public health departments, health insurance (TPA and direct), pharmaceutical companies, medical device firms, diagnostic chains, and telemedicine platforms\n\n**Entry-level roles:** Hospital Administrator (junior), Healthcare Executive, Health Insurance Officer, Public Health Coordinator, Medical Records Manager, Patient Relations Officer\n\n**Mid-level roles (3-5 years):** Hospital Operations Manager, Health Insurance Manager, Public Health Programme Manager, Quality Manager (NABH), Healthcare Consultant, TPA Manager\n\n**Senior roles (7+ years):** Hospital CEO/COO, Director of Operations (hospital chain), VP Healthcare Services, Chief Quality Officer, Head of Health Insurance\n\n**Employers:** Apollo Hospitals, Fortis, MIOT Hospitals, Kauvery Hospital, Global Hospitals, Star Health Insurance, government health departments (Tamil Nadu and central), and Chennai/South India diagnostic chains.\n\n**Note:** Dr. MGR's healthcare heritage and Chennai location provide direct access to one of India's largest hospital ecosystems.\n\n**Where to verify placement claims:** ask Dr. MGR Educational and Research Institute Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Hospital and Healthcare Management specialisation builds skills across hospital operations, public health, and health insurance:\n\n**Technical skills:**\n- Healthcare Law: medical negligence assessment, patient rights frameworks, clinical trial ethics review, MCI/NMC compliance, and PCPNDT Act application\n- Public Health: National Health Mission programme design, Ayushman Bharat scheme operations, community health outreach planning, and epidemiological data interpretation\n- Health Insurance: TPA claim processing, health insurance product design, Ayushman Bharat claims management, and corporate health policy structuring\n\n**Applied skills:**\n- Hospital Operations: patient flow management, OPD/IPD scheduling, hospital supply chain, NABH quality standards, and facility layout optimization\n- Risk Management: clinical risk identification, incident reporting systems, hospital safety protocols, and infection control compliance\n\n**Soft skills:** Patient communication, interdepartmental coordination in hospitals, presenting health outcomes data to non-clinical stakeholders, and managing healthcare teams across clinical and administrative functions."
@@ -55,38 +94,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Hospital and Healthcare Management as the specialisation, issued by Dr. MGR Educational and Research Institute (Deemed University) under UGC-DEB online mode standards.\n\nThe degree carries NAAC A+ accreditation, UGC-DEB approval, and Deemed University status since 2003. Valid for hospital administration roles, government health department positions, NABH quality officer requirements, and private healthcare management careers. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from Dr. MGR Online MBA Hospital and Healthcare Management students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Priya",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Healthcare Law and Ethics subject was directly applicable to my hospital compliance role. Dr. MGR's medical heritage in Chennai gives the degree extra credibility with hospital HR departments",
-          "disliked": "Only three healthcare-specific subjects across Sem 3 and 4. Would have preferred more clinical management depth",
-          "body": "I work at a multi-specialty hospital in Chennai. Dr. MGR's name carries weight in Tamil Nadu healthcare circles. The Healthcare Law and Ethics course covered medical negligence and patient rights at a practical level. Public Health System covered Ayushman Bharat operations, which is relevant for any hospital dealing with government insurance. The 8-week field project in my own hospital let me apply learnings immediately."
-        },
-        {
-          "name": "Rajesh",
-          "city": "Trichy",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Risk Management and Health Insurance in Sem 4 covered TPA operations and claims processing at the detail level I needed for my insurance role",
-          "disliked": "Outside Tamil Nadu and South India, Dr. MGR is not well-known compared to Apollo-affiliated or Manipal programmes",
-          "body": "The healthcare management curriculum is compact but covers the right areas: law, public health, insurance. The common core subjects (Strategic Management, Digital Marketing) add general management breadth. Fee at Rs 1.36-1.41L is reasonable for NAAC A+. The 8-week project is the highlight. For pan-India healthcare brands, you might want a nationally recognized university name. For TN-based healthcare careers, Dr. MGR works well."
-        },
-        {
-          "name": "Deepa",
-          "city": "Madurai",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Public Health System and Outreach covered National Health Mission and community health worker programmes at a level useful for my PHC administration work",
-          "disliked": "LMS interface needs improvement. Some study materials could be more current with 2024-era healthcare regulations",
-          "body": "At this fee, Vignan at Rs 90,000 and NIU at Rs 97,600 offer healthcare MBAs cheaper. Dr. MGR's advantage is the healthcare institutional heritage and Tamil Nadu brand. If you are a healthcare professional in TN, the brand recognition helps. The curriculum covers essentials. Delivery quality is adequate. For candidates outside South India, weigh the fee against national brand alternatives."
-        }
-      ]
     },
     "faqs": [
       {
@@ -130,6 +137,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 31,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

@@ -19,27 +19,57 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Strategic Management", "desc": "Corporate strategy frameworks, competitive advantage, strategic planning, and business model analysis." },
-            { "name": "Supply Chain Management", "desc": "Supply chain design, demand planning, inventory optimisation, and logistics coordination." },
-            { "name": "Financial Statement Analysis", "desc": "Ratio analysis, DuPont decomposition, cash flow analysis, and earnings quality assessment." },
-            { "name": "Big Data Analytics in Business", "desc": "Hadoop/Spark ecosystem overview, big data architecture concepts, NoSQL basics, and big data use cases in retail, banking, and telecom." },
-            { "name": "R Programming for Business", "desc": "Statistical computing with R, data manipulation with dplyr/tidyr, visualisation with ggplot2, and predictive model building for business decisions." }
+            {
+              "name": "Strategic Management",
+              "desc": "Corporate strategy frameworks, competitive advantage, strategic planning, and business model analysis."
+            },
+            {
+              "name": "Supply Chain Management",
+              "desc": "Supply chain design, demand planning, inventory optimisation, and logistics coordination."
+            },
+            {
+              "name": "Financial Statement Analysis",
+              "desc": "Ratio analysis, DuPont decomposition, cash flow analysis, and earnings quality assessment."
+            },
+            {
+              "name": "Big Data Analytics in Business",
+              "desc": "Hadoop/Spark ecosystem overview, big data architecture concepts, NoSQL basics, and big data use cases in retail, banking, and telecom."
+            },
+            {
+              "name": "R Programming for Business",
+              "desc": "Statistical computing with R, data manipulation with dplyr/tidyr, visualisation with ggplot2, and predictive model building for business decisions."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Entrepreneurship Development", "desc": "Startup ideation, business plan development, funding strategies, and entrepreneurial risk management." },
-            { "name": "Corporate Governance", "desc": "Board structure, shareholder rights, corporate ethics, regulatory compliance, and governance frameworks." },
-            { "name": "Project Work", "desc": "Applied analytics project using R/Python on a real business dataset. Faculty-supervised with evaluation." },
-            { "name": "Marketing and Social Media Analytics", "desc": "Campaign ROI measurement, social media metrics and KPIs, customer segmentation analytics, sentiment analysis basics, and attribution modelling." },
-            { "name": "Python Programming and Data Visualization", "desc": "Python basics for analytics, pandas DataFrames, matplotlib/seaborn visualisation, dashboard creation, and data storytelling techniques." }
+            {
+              "name": "Entrepreneurship Development",
+              "desc": "Startup ideation, business plan development, funding strategies, and entrepreneurial risk management."
+            },
+            {
+              "name": "Corporate Governance",
+              "desc": "Board structure, shareholder rights, corporate ethics, regulatory compliance, and governance frameworks."
+            },
+            {
+              "name": "Project Work",
+              "desc": "Applied analytics project using R/Python on a real business dataset. Faculty-supervised with evaluation."
+            },
+            {
+              "name": "Marketing and Social Media Analytics",
+              "desc": "Campaign ROI measurement, social media metrics and KPIs, customer segmentation analytics, sentiment analysis basics, and attribution modelling."
+            },
+            {
+              "name": "Python Programming and Data Visualization",
+              "desc": "Python basics for analytics, pandas DataFrames, matplotlib/seaborn visualisation, dashboard creation, and data storytelling techniques."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Uttaranchal MBA Business Analytics graduates target data-driven management roles:\n\n**Industries:** IT services, banking, e-commerce, retail, telecom, FMCG, healthcare analytics, and consulting\n\n**Entry-level roles:** Business Analyst, Data Analyst, MIS Executive, Reporting Analyst, Marketing Analytics Associate, BI Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Business Analyst, Analytics Manager, BI Manager, Marketing Analytics Lead, Data Strategy Manager\n\n**Senior roles (7+ years):** Head of Analytics, VP Data Strategy, Director of BI, Chief Analytics Officer\n\n**Employers:** IT services (TCS, Infosys, Wipro, Cognizant), banking (HDFC, ICICI analytics teams), e-commerce (Flipkart, Amazon India), and North India/Uttarakhand regional employers.\n\n**Note:** UU provides career support. Online MBA brand recognition is developing. Dehradun location provides access to Uttarakhand and North India regional recruiters."
+      "body": "Uttaranchal MBA Business Analytics graduates target data-driven management roles:\n\n**Industries:** IT services, banking, e-commerce, retail, telecom, FMCG, healthcare analytics, and consulting\n\n**Entry-level roles:** Business Analyst, Data Analyst, MIS Executive, Reporting Analyst, Marketing Analytics Associate, BI Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Business Analyst, Analytics Manager, BI Manager, Marketing Analytics Lead, Data Strategy Manager\n\n**Senior roles (7+ years):** Head of Analytics, VP Data Strategy, Director of BI, Chief Analytics Officer\n\n**Employers:** IT services (TCS, Infosys, Wipro, Cognizant), banking (HDFC, ICICI analytics teams), e-commerce (Flipkart, Amazon India), and North India/Uttarakhand regional employers.\n\n**Note:** UU provides career support. Online MBA brand recognition is developing. Dehradun location provides access to Uttarakhand and North India regional recruiters.\n\n**Where to verify placement claims:** ask Uttaranchal University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Business Analytics specialisation builds dual-language (R + Python) analytics skills:\n\n**Technical skills:**\n- R Programming: dplyr data wrangling, ggplot2 visualisation, statistical modelling (lm, glm), and time series analysis basics\n- Python Analytics: pandas DataFrames, matplotlib/seaborn charts, data cleaning automation, and basic ML model training with scikit-learn\n- Big Data: Hadoop/Spark architecture understanding, MapReduce concepts, and big data use-case identification\n- Marketing Analytics: campaign ROI calculation, social media KPI tracking, customer segmentation, and attribution model comparison\n\n**Applied skills:**\n- Financial Statement Analysis: ratio trend analysis, DuPont decomposition, and cash flow pattern recognition\n- Data Visualization: dashboard design for executive reporting, chart selection for different audiences, and data storytelling\n\n**Soft skills:** Presenting analytics findings to non-technical stakeholders, managing analytics project timelines, translating data insights into business recommendations."
@@ -52,38 +82,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Business Analytics as the specialisation, issued by Uttaranchal University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A+ accreditation and UGC-DEB approval. Valid for government recruitment, PSU applications, and private-sector analytics roles. WES recognised for international credential evaluation. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from Uttaranchal University Online MBA Business Analytics students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Deepak K.",
-          "city": "Dehradun",
-          "year": 2024,
-          "rating": 4,
-          "liked": "R Programming and Python in one MBA at ₹94,000 is genuinely hard to find elsewhere. The dual-language coverage is the main draw",
-          "disliked": "No bundled perks at all. CU at ₹1,65,000 includes PwC co-teaching. Galgotias at ₹80,200 is even cheaper. UU sits in a tight spot between them",
-          "body": "I chose UU because the analytics curriculum has R, Python, and Big Data as standalone subjects. At ₹94,000 one-time, it is the most affordable option with this tech depth. The 30% Early Bird made the fee manageable. The LMS is functional but not polished. The main limitation is brand recognition. UU is known locally in Uttarakhand but not nationally for online MBA."
-        },
-        {
-          "name": "Priya M.",
-          "city": "Lucknow",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Big Data Analytics subject covered Hadoop/Spark concepts at a level useful for my BI analyst role. Marketing Analytics was practical",
-          "disliked": "Career services for online MBA are minimal. Placement support is primarily for on-campus students. Online learners network independently",
-          "body": "The analytics subjects are solid for the price. The Python and R modules are introductory but give enough foundation to build on. The project work forced me to apply what I learned to a real dataset. At ₹94,000 after Early Bird, the ROI is reasonable if you are self-directed about career navigation."
-        },
-        {
-          "name": "Sanjay V.",
-          "city": "Delhi",
-          "year": 2023,
-          "rating": 3.8,
-          "liked": "Exam fee included in semester fee is transparent. No surprise charges unlike some other budget programmes",
-          "disliked": "Early Bird Scholarship has an admission window. Students who miss the window pay ₹1,40,000 gross, which is less competitive",
-          "body": "The programme delivers on its price promise. R + Python + Big Data at ₹94,000 is value. The delivery quality is adequate but not premium. Some recorded lectures need updating. The Early Bird is the key to making this competitive. Without it, the gross fee of ₹1,40,000 is closer to LPU/CU territory where brand recognition is stronger."
-        }
-      ]
     },
     "faqs": [
       {
@@ -127,6 +125,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 25,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

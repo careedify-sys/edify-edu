@@ -19,30 +19,69 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Business Research Methods", "desc": "Research design, data collection methods, sampling techniques, hypothesis testing, and research report writing for management." },
-            { "name": "Operations Management", "desc": "Production planning, supply chain basics, quality management systems, inventory control, and process optimisation." },
-            { "name": "Direct and Indirect Taxes", "desc": "Income tax provisions, GST framework, TDS compliance, advance tax planning, and corporate tax strategy for finance professionals." },
-            { "name": "Investment Analysis and Portfolio Management", "desc": "Equity valuation (DCF, PE, PBV), Modern Portfolio Theory, CAPM, portfolio construction, and risk-adjusted return metrics." },
-            { "name": "Banking and Insurance", "desc": "Commercial banking operations, NBFC regulation, insurance product design, mutual fund mechanics, and financial services distribution." },
-            { "name": "Fintech: Foundations and Applications", "desc": "Digital payments (UPI), blockchain in banking, robo-advisory platforms, AI-driven credit scoring, and regtech compliance tools." },
-            { "name": "Open Elective Course", "desc": "Elective chosen from outside the Finance specialisation. Provides cross-functional exposure in marketing, HR, or general management." }
+            {
+              "name": "Business Research Methods",
+              "desc": "Research design, data collection methods, sampling techniques, hypothesis testing, and research report writing for management."
+            },
+            {
+              "name": "Operations Management",
+              "desc": "Production planning, supply chain basics, quality management systems, inventory control, and process optimisation."
+            },
+            {
+              "name": "Direct and Indirect Taxes",
+              "desc": "Income tax provisions, GST framework, TDS compliance, advance tax planning, and corporate tax strategy for finance professionals."
+            },
+            {
+              "name": "Investment Analysis and Portfolio Management",
+              "desc": "Equity valuation (DCF, PE, PBV), Modern Portfolio Theory, CAPM, portfolio construction, and risk-adjusted return metrics."
+            },
+            {
+              "name": "Banking and Insurance",
+              "desc": "Commercial banking operations, NBFC regulation, insurance product design, mutual fund mechanics, and financial services distribution."
+            },
+            {
+              "name": "Fintech: Foundations and Applications",
+              "desc": "Digital payments (UPI), blockchain in banking, robo-advisory platforms, AI-driven credit scoring, and regtech compliance tools."
+            },
+            {
+              "name": "Open Elective Course",
+              "desc": "Elective chosen from outside the Finance specialisation. Provides cross-functional exposure in marketing, HR, or general management."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Strategic Management", "desc": "Competitive strategy frameworks, corporate-level strategy, strategic analysis tools (SWOT, Porter's Five Forces), and strategic implementation." },
-            { "name": "Indian Financial System and Financial Markets", "desc": "Structure of Indian capital markets, SEBI regulations, RBI monetary policy, stock exchange operations, and financial market instruments." },
-            { "name": "Wealth Management", "desc": "Personal financial planning, asset allocation strategies, retirement planning, estate planning, and high-net-worth advisory frameworks." },
-            { "name": "International Finance and Investment Banking", "desc": "Foreign exchange markets, international capital flows, M&A transaction structuring, LBO basics, and cross-border deal advisory." },
-            { "name": "Risk Management and Behavioural Finance", "desc": "Enterprise risk management frameworks, market risk measurement, credit risk assessment, and behavioural biases in investment decisions." },
-            { "name": "Master Thesis / Project", "desc": "Supervised research project on a finance topic. Literature review, methodology design, data analysis, and thesis presentation." }
+            {
+              "name": "Strategic Management",
+              "desc": "Competitive strategy frameworks, corporate-level strategy, strategic analysis tools (SWOT, Porter's Five Forces), and strategic implementation."
+            },
+            {
+              "name": "Indian Financial System and Financial Markets",
+              "desc": "Structure of Indian capital markets, SEBI regulations, RBI monetary policy, stock exchange operations, and financial market instruments."
+            },
+            {
+              "name": "Wealth Management",
+              "desc": "Personal financial planning, asset allocation strategies, retirement planning, estate planning, and high-net-worth advisory frameworks."
+            },
+            {
+              "name": "International Finance and Investment Banking",
+              "desc": "Foreign exchange markets, international capital flows, M&A transaction structuring, LBO basics, and cross-border deal advisory."
+            },
+            {
+              "name": "Risk Management and Behavioural Finance",
+              "desc": "Enterprise risk management frameworks, market risk measurement, credit risk assessment, and behavioural biases in investment decisions."
+            },
+            {
+              "name": "Master Thesis / Project",
+              "desc": "Supervised research project on a finance topic. Literature review, methodology design, data analysis, and thesis presentation."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "ARKA JAIN MBA Finance graduates target roles across banking, corporate finance, and advisory:\n\n**Industries:** Commercial banking, NBFC, insurance, corporate treasury, equity research, fintech startups, financial consulting, and government finance\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Banking Officer, Tax Analyst, Equity Research Associate, Treasury Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Credit Manager, Branch Manager (banking), Portfolio Analyst, Tax Manager, Financial Controller\n\n**Senior roles (7+ years):** CFO (mid-market), VP Finance, Head of Treasury, Director of Credit Risk, Head of Corporate Finance\n\n**Regional note:** ARKA JAIN's JGI Group network provides stronger placement access in East India (Jharkhand, Bihar, Odisha, West Bengal). Candidates targeting metro markets (Mumbai, Bengaluru, Delhi-NCR) should supplement with independent networking."
+      "body": "ARKA JAIN MBA Finance graduates target roles across banking, corporate finance, and advisory:\n\n**Industries:** Commercial banking, NBFC, insurance, corporate treasury, equity research, fintech startups, financial consulting, and government finance\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Banking Officer, Tax Analyst, Equity Research Associate, Treasury Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Credit Manager, Branch Manager (banking), Portfolio Analyst, Tax Manager, Financial Controller\n\n**Senior roles (7+ years):** CFO (mid-market), VP Finance, Head of Treasury, Director of Credit Risk, Head of Corporate Finance\n\n**Regional note:** ARKA JAIN's JGI Group network provides stronger placement access in East India (Jharkhand, Bihar, Odisha, West Bengal). Candidates targeting metro markets (Mumbai, Bengaluru, Delhi-NCR) should supplement with independent networking.\n\n**Where to verify placement claims:** ask ARKA JAIN University – JGI Online (arkajain.edu.in) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Finance specialisation builds skills across capital markets, taxation, fintech, and risk management:\n\n**Technical skills:**\n- Investment Analysis: equity valuation (DCF, comparable), portfolio construction, risk-adjusted return calculation (Sharpe, Treynor)\n- Taxation: income tax computation, GST return filing process, TDS compliance, and corporate tax planning\n- Fintech: digital payments architecture, blockchain in banking, robo-advisory evaluation, and AI credit scoring interpretation\n- Risk Management: enterprise risk frameworks, market risk measurement, credit risk assessment, and behavioural bias identification\n\n**Applied skills:**\n- Wealth Management: asset allocation, retirement planning, estate planning, and HNI advisory frameworks\n- Banking Operations: credit appraisal process, NBFC regulation, insurance product structuring, and financial services distribution\n- International Finance: forex market mechanics, cross-border capital flows, M&A structuring, and LBO basics\n\n**AI skills (Sem 1):** Prompt engineering, AI-assisted report writing, and GenAI tools for financial analysis and productivity."
@@ -55,38 +94,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Finance as the specialisation, issued by ARKA JAIN University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A accreditation and UGC-DEB approval. Valid for government recruitment, PSU finance roles, banking promotions, and private-sector corporate finance positions. The certificate reads Master of Business Administration without the word 'online' on the document face, consistent with UGC-DEB norms. DigiLocker integration available for digital verification."
-    },
-    "reviews": {
-      "intro": "Three reviews from ARKA JAIN Online MBA Finance students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Rohit",
-          "city": "Jamshedpur",
-          "year": 2024,
-          "rating": 4,
-          "liked": "The Generative AI course in Sem 1 was genuinely useful for my daily work. I use prompt engineering for financial report drafts now. Fintech Foundations in Sem 3 covered UPI, blockchain, and AI credit scoring at a practical level.",
-          "disliked": "Placement support is regional. If you are targeting Mumbai or Bengaluru finance jobs, you need to build your own network beyond JGI Group contacts.",
-          "body": "At Rs 1.08 lakh, the Finance curriculum is solid. The GenAI and fintech subjects set it apart from other budget MBAs. The main limitation is regional brand recognition. In Jharkhand and Bihar, the JGI Group name carries weight. Outside East India, you will need to explain the university in interviews."
-        },
-        {
-          "name": "Ankita",
-          "city": "Ranchi",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Investment Analysis and Portfolio Management covered DCF valuation and CAPM at a level I did not expect from a sub-Rs 1.1L programme. Risk Management and Behavioural Finance in Sem 4 was a strong capstone subject.",
-          "disliked": "Only 3 specialisations available. If I wanted a dual-spec like Finance + Analytics, it is not an option here.",
-          "body": "I compared ARKA JAIN with Galgotias and Vignan before enrolling. ARKA JAIN won because of the GenAI mandatory subject and the Fintech + Wealth Management combination. The faculty on the JGI Online platform were responsive. NAAC A at this price is fair value for East India working professionals."
-        },
-        {
-          "name": "Sunil",
-          "city": "Patna",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Affordable and UGC-DEB approved. Direct and Indirect Taxes was practically useful for my accounting role. The Open Elective in Sem 3 let me take a marketing subject for cross-functional exposure.",
-          "disliked": "The Jharkhand location limits brand recognition nationally. Employers in South and West India may not recognise the name immediately. LMS interface is functional but not premium.",
-          "body": "For the price, the programme delivers. But be realistic about what a sub-Rs 1.1L online MBA from a Jharkhand university can do for your career outside East India. The curriculum is good. The brand is growing. If you need national brand equity, consider spending more."
-        }
-      ]
     },
     "faqs": [
       {
@@ -130,6 +137,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 32,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

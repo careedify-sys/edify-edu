@@ -19,34 +19,85 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Strategic Management", "desc": "Common core. Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic planning process." },
-            { "name": "Optimization Models for Business Decisions", "desc": "Common core. Linear programming, transportation models, assignment problems, and quantitative decision-making tools." },
-            { "name": "Summer Training/Project Work", "desc": "Common core. Industry-based project applying management concepts to a real business problem." },
-            { "name": "Advertising Management", "desc": "Campaign planning, media selection, creative strategy, advertising budgets, and campaign effectiveness measurement." },
-            { "name": "Marketing Research and Analytics", "desc": "Research design, sampling methods, survey instruments, data analysis techniques, and marketing analytics tools." },
-            { "name": "Sales and Logistics Management", "desc": "Sales force design, territory management, distribution channel strategy, logistics operations, and supply chain coordination." },
-            { "name": "Consumer Behaviour", "desc": "Buyer decision process, psychological influences on purchase, cultural and social factors, and consumer segmentation models." },
-            { "name": "Strategic Brand Management", "desc": "Brand equity measurement, brand architecture, positioning strategy, brand extension decisions, and brand revitalization." },
-            { "name": "Digital and Social Media Marketing", "desc": "SEO, SEM, social media strategy, content marketing, influencer marketing, email campaigns, and digital marketing analytics." }
+            {
+              "name": "Strategic Management",
+              "desc": "Common core. Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic planning process."
+            },
+            {
+              "name": "Optimization Models for Business Decisions",
+              "desc": "Common core. Linear programming, transportation models, assignment problems, and quantitative decision-making tools."
+            },
+            {
+              "name": "Summer Training/Project Work",
+              "desc": "Common core. Industry-based project applying management concepts to a real business problem."
+            },
+            {
+              "name": "Advertising Management",
+              "desc": "Campaign planning, media selection, creative strategy, advertising budgets, and campaign effectiveness measurement."
+            },
+            {
+              "name": "Marketing Research and Analytics",
+              "desc": "Research design, sampling methods, survey instruments, data analysis techniques, and marketing analytics tools."
+            },
+            {
+              "name": "Sales and Logistics Management",
+              "desc": "Sales force design, territory management, distribution channel strategy, logistics operations, and supply chain coordination."
+            },
+            {
+              "name": "Consumer Behaviour",
+              "desc": "Buyer decision process, psychological influences on purchase, cultural and social factors, and consumer segmentation models."
+            },
+            {
+              "name": "Strategic Brand Management",
+              "desc": "Brand equity measurement, brand architecture, positioning strategy, brand extension decisions, and brand revitalization."
+            },
+            {
+              "name": "Digital and Social Media Marketing",
+              "desc": "SEO, SEM, social media strategy, content marketing, influencer marketing, email campaigns, and digital marketing analytics."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Entrepreneurship Development", "desc": "Common core. Startup ideation, business plan creation, funding strategies, and entrepreneurial ecosystem in India." },
-            { "name": "Business Ethics and Corporate Governance", "desc": "Common core. Ethical frameworks, corporate social responsibility, board governance, and regulatory compliance." },
-            { "name": "Comprehensive Viva-Voce", "desc": "Common core. Oral examination covering all four semesters of the MBA programme." },
-            { "name": "International Marketing", "desc": "Market entry strategies, global pricing, cross-cultural marketing, export procedures, and international distribution channels." },
-            { "name": "Business Marketing", "desc": "B2B marketing strategy, organizational buying behaviour, key account management, and industrial product marketing." },
-            { "name": "Service Marketing", "desc": "Service quality frameworks (SERVQUAL), services pricing, service blueprinting, customer experience management, and service recovery." },
-            { "name": "Strategic Marketing", "desc": "Marketing strategy formulation, competitive positioning, market-driven planning, and marketing resource allocation." },
-            { "name": "Rural and Agribusiness Marketing", "desc": "Rural consumer behaviour, agri-product distribution, FMCG rural strategies, rural media, and agricultural value chain marketing." }
+            {
+              "name": "Entrepreneurship Development",
+              "desc": "Common core. Startup ideation, business plan creation, funding strategies, and entrepreneurial ecosystem in India."
+            },
+            {
+              "name": "Business Ethics and Corporate Governance",
+              "desc": "Common core. Ethical frameworks, corporate social responsibility, board governance, and regulatory compliance."
+            },
+            {
+              "name": "Comprehensive Viva-Voce",
+              "desc": "Common core. Oral examination covering all four semesters of the MBA programme."
+            },
+            {
+              "name": "International Marketing",
+              "desc": "Market entry strategies, global pricing, cross-cultural marketing, export procedures, and international distribution channels."
+            },
+            {
+              "name": "Business Marketing",
+              "desc": "B2B marketing strategy, organizational buying behaviour, key account management, and industrial product marketing."
+            },
+            {
+              "name": "Service Marketing",
+              "desc": "Service quality frameworks (SERVQUAL), services pricing, service blueprinting, customer experience management, and service recovery."
+            },
+            {
+              "name": "Strategic Marketing",
+              "desc": "Marketing strategy formulation, competitive positioning, market-driven planning, and marketing resource allocation."
+            },
+            {
+              "name": "Rural and Agribusiness Marketing",
+              "desc": "Rural consumer behaviour, agri-product distribution, FMCG rural strategies, rural media, and agricultural value chain marketing."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Kurukshetra University MBA Marketing graduates target roles across FMCG, retail, digital marketing, and agribusiness:\n\n**Industries:** FMCG, retail, e-commerce, advertising agencies, digital marketing, agribusiness, media and entertainment, pharmaceutical marketing, and B2B sales\n\n**Entry-level roles:** Marketing Executive, Brand Coordinator, Digital Marketing Analyst, Market Research Analyst, Sales Executive, Content Marketing Associate\n\n**Mid-level roles (3-5 years experience):** Brand Manager, Digital Marketing Manager, Sales Manager, Trade Marketing Manager, Market Research Manager, E-Commerce Manager\n\n**Senior roles (7+ years):** VP Marketing, Head of Brand, CMO (mid-market), Head of Digital, National Sales Head, Director of Rural Marketing\n\n**Employers:** FMCG companies (HUL, ITC, Nestl\u00e9, Dabur), retail chains, e-commerce platforms, advertising agencies, agribusiness firms, and Haryana/NCR regional corporates.\n\n**Note:** As a public state university with NAAC A++, the Kurukshetra MBA degree carries strong credibility for government and PSU marketing/sales roles. Rural and Agribusiness Marketing adds differentiation for FMCG rural distribution careers."
+      "body": "Kurukshetra University MBA Marketing graduates target roles across FMCG, retail, digital marketing, and agribusiness:\n\n**Industries:** FMCG, retail, e-commerce, advertising agencies, digital marketing, agribusiness, media and entertainment, pharmaceutical marketing, and B2B sales\n\n**Entry-level roles:** Marketing Executive, Brand Coordinator, Digital Marketing Analyst, Market Research Analyst, Sales Executive, Content Marketing Associate\n\n**Mid-level roles (3-5 years experience):** Brand Manager, Digital Marketing Manager, Sales Manager, Trade Marketing Manager, Market Research Manager, E-Commerce Manager\n\n**Senior roles (7+ years):** VP Marketing, Head of Brand, CMO (mid-market), Head of Digital, National Sales Head, Director of Rural Marketing\n\n**Employers:** FMCG companies (HUL, ITC, Nestlé, Dabur), retail chains, e-commerce platforms, advertising agencies, agribusiness firms, and Haryana/NCR regional corporates.\n\n**Note:** As a public state university with NAAC A++, the Kurukshetra MBA degree carries strong credibility for government and PSU marketing/sales roles. Rural and Agribusiness Marketing adds differentiation for FMCG rural distribution careers.\n\n**Where to verify placement claims:** ask Kurukshetra University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Marketing specialisation builds skills across brand management, digital marketing, research, and rural marketing:\n\n**Technical skills:**\n- Digital Marketing: SEO/SEM campaign setup, social media strategy design, content calendar management, Google Analytics interpretation, and paid ad optimization\n- Marketing Research: survey design, sampling methodology, SPSS/Excel-based data analysis, conjoint analysis, and market sizing\n- Brand Management: brand equity measurement (Aaker model), positioning map creation, brand architecture planning, and brand health tracking\n- Advertising: media plan creation, creative brief writing, campaign ROI calculation, and programmatic advertising basics\n\n**Applied skills:**\n- Rural and Agribusiness Marketing: rural distribution network design, agri-product pricing, rural consumer profiling, and mandi-based supply chain analysis\n- International Marketing: market entry mode evaluation, export documentation, cross-cultural communication, and global pricing strategy\n\n**Soft skills:** Presenting campaign strategies to leadership, negotiating with media vendors, managing agency relationships, and pitching brand concepts to cross-functional teams."
@@ -59,38 +110,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Marketing as the specialisation, issued by Kurukshetra University under UGC-DEB online mode standards.\n\nThe degree carries NAAC A++ accreditation (the highest possible grade) and UGC-DEB approval. As a public state university degree, it holds strong validity for government recruitment, PSU marketing/sales roles, and private-sector brand management positions. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from Kurukshetra University Online MBA Marketing students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Pooja T.",
-          "city": "Hisar",
-          "year": 2024,
-          "rating": 5,
-          "liked": "A public state university MBA at Rs 1,02,000 with NAAC A++. The government-backed degree holds genuine credibility for government recruitment and PSU interviews",
-          "disliked": "Online platform is functional but not as polished as Amity or Manipal. Could use a better mobile experience",
-          "body": "I chose Kurukshetra because no private university matches NAAC A++ at this price. The marketing syllabus covers everything from digital marketing to rural agribusiness, which is rare. The public university tag matters for state government applications in Haryana. The LMS does the job. Not flashy, but the degree quality and fee combination are unmatched."
-        },
-        {
-          "name": "Rahul D.",
-          "city": "Chandigarh",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Rural and Agribusiness Marketing as a standalone paper is unique. I work in FMCG distribution and this subject directly applies to my role",
-          "disliked": "Kurukshetra is respected in Haryana and Punjab but brand recognition weakens in South and West India. Employers there may not immediately recognise the university",
-          "body": "The marketing curriculum has 11 specialisation subjects across Sem 3-4. That is broader than most competitors at this price. Digital and Social Media Marketing and Strategic Brand Management were my best subjects. The regional brand limitation is real. In North India the Kurukshetra name carries weight. For pan-India roles, you may need to explain the NAAC A++ public university positioning."
-        },
-        {
-          "name": "Sunita M.",
-          "city": "Rohtak",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Rs 25,500 per semester is genuinely affordable. The zero-cost EMI helped me manage finances during the programme",
-          "disliked": "Some recorded lectures need updating. A few marketing case studies referenced 2018-2019 campaigns. Faculty engagement in live sessions is inconsistent",
-          "body": "At this price from a NAAC A++ public university, the value equation is clear. The syllabus reads well. Delivery quality varies by subject. Consumer Behaviour and Brand Management had strong faculty. Some other subjects had generic recorded content. Career services for online students are basic. If you need hand-held placement support, look at larger private universities. If you need an affordable, credible degree, Kurukshetra delivers."
-        }
-      ]
     },
     "faqs": [
       {
@@ -134,6 +153,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 30,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

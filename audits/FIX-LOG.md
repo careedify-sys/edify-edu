@@ -9,6 +9,66 @@ the fix by accident.
 
 ---
 
+## 2026-09-17 · Finishing the sweep: 126 rendered employer lists and 1,022 testimonials removed sitewide
+
+**Why this followed the 35-file repair.** Fixing the unparseable spec files
+surfaced fabricated placement data in them. The same generator produced the rest
+of the corpus, so the same defects were sitting in files that had never been
+broken and therefore never looked at. This entry covers the other 396.
+
+**What was live and is now gone.**
+
+| defect | files | state |
+|---|---:|---|
+| `**Top hiring organisations:**` naming real companies | **126** | rendered on-page via `whoHires.body` |
+| "X graduates from Y **are hired across** these industries" | **143** | rendered, asserts placement we have no data for |
+| named "verified" testimonials in `sections.reviews` | **313** (1,022 items) | never rendered, dormant |
+
+The employer rosters are the serious one because they were published. They name
+real organisations as recruiting from a specific online MBA specialisation, with
+nothing sourcing the claim, on a site whose entire positioning is that it
+publishes only verifiable UGC, NAAC and NIRF data. Concentrated in eleven
+universities: JAIN 19, Amity 18, Shoolini 16, MUJ 13, LPU 12, UPES 11, Amrita 10,
+Chitkara 8, DSU 7, NMIMS 6, SMU 6.
+
+The opening sentence was the same defect in milder form. "Graduates from X are
+hired across these industries and roles" is a placement claim. It now reads
+"This <spec> MBA syllabus maps to the following industries and roles", which is
+a statement about the curriculum and is true. The 161 files that already said
+"target these industries and roles" were left alone, because that framing was
+already honest.
+
+Every `whoHires` section now closes with a note telling the reader to ask the
+university for its placement report covering their own programme and mode, and
+saying plainly that we do not publish employer lists we cannot source. 304 files
+carry it.
+
+**Kept the role families.** Industries, entry, mid and senior role names are
+generic and defensible. They describe what the syllabus prepares you for. Only
+the named-organisation roster was removed.
+
+**Deliberately left alone, for Rishi to decide.**
+
+- `sections.topHirers` (44 files) and `sections.placements` (44 files) on the
+  programme-hub `{uni}-mba.json` files. **Neither is rendered**: UniProgramBody
+  reads only `tldr`, `faqs`, `redFlags`, `ugcDeb` and `abcId`. They are hedged
+  in a way the spec-page rosters were not, mostly "alumni network spans" rather
+  than "hired from this programme", and 30 of the 44 cite a source or a
+  verification directive. Removing 44 dormant hedged blocks unasked is over-reach.
+- The salary ranges inside `placements` carry a **bulk-generation fingerprint**
+  worth recording: the sentence "Reported average salary range for MBA graduates
+  is Rs.XL to Rs.YL per annum based on publicly available placement data" appears
+  verbatim across Amity, DY Patil, NMIMS, Noida International, Symbiosis and UPES
+  with only the numbers changed. Identical sentence, different numbers, is the
+  same tell as identical feeMin/feeMax across two universities. The IGNOU and MUJ
+  entries are better: they name NIRF filings and a dated placement source.
+
+**Verified.** All 431 files parse, the new pre-commit gate passes, `tsc` clean,
+sample pages across four swept universities return 200, the softened opener
+renders, and a grep for the removed employer names on a live page returns zero.
+
+---
+
 ## 2026-09-17 · A parse error hid three years of fabricated placement data on 35 spec pages
 
 **How it was found.** While checking which universities carry AI and banking MBA

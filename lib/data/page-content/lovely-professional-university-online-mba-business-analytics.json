@@ -61,7 +61,7 @@
       "note": "Sem 1-2 shared core subjects across all LPU Online MBA specialisations. See the main LPU Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Business Analytics MBA graduates from LPU Online are hired across these industries and roles:\n\n**Industries:** IT services and consulting, E-commerce and retail, BFSI, FMCG, Healthcare analytics, EdTech\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Consultant, MIS Executive, BI Developer\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, Senior Business Analyst, Data Science Manager, BI Manager, Insights Manager\n\n**Senior roles (7+ years):** Head of Analytics, Chief Data Officer, VP Data Science, Analytics Director\n\n**Top hiring organisations:** Infosys Analytics, TCS Insights and Intelligence, Wipro Analytics, HCL Technologies, Amazon India Analytics, Flipkart Data Science, HDFC Bank Analytics, ICICI Bank Data, McKinsey Analytics, Deloitte Insights, Genpact Analytics"
+      "body": "This Business Analytics MBA syllabus maps to the following industries and roles:\n\n**Industries:** IT services and consulting, E-commerce and retail, BFSI, FMCG, Healthcare analytics, EdTech\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Consultant, MIS Executive, BI Developer\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, Senior Business Analyst, Data Science Manager, BI Manager, Insights Manager\n\n**Senior roles (7+ years):** Head of Analytics, Chief Data Officer, VP Data Science, Analytics Director\n\n**Where to verify placement claims:** ask Lovely Professional University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The LPU Business Analytics specialisation builds skills that IT services and analytics employers test at business analyst and analytics manager levels:\n\n**Technical skills:**\n- Predictive Analytics: regression modelling, classification algorithms, time series forecasting, and model validation for business prediction and planning roles\n- Machine Learning for Business: supervised and unsupervised ML application, customer segmentation, churn prediction, and demand forecasting for analytics and data science roles\n- Big Data Analytics: Hadoop and Spark ecosystem, cloud data platform management, and large-scale data processing for data engineering and analytics roles\n- Business Intelligence Systems: data warehouse design, KPI reporting system architecture, and enterprise BI platform management for BI and analytics infrastructure roles\n\n**Applied skills:**\n- Data Visualisation: Tableau, Power BI, and Python visualisation for data storytelling and management dashboard design\n\n**Soft skills:** Translating analytics findings into business recommendations for senior management, presenting data-driven business cases to C-suite, managing analytics project delivery teams, and communicating model limitations to non-technical stakeholders."
@@ -74,38 +74,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Lovely Professional University (LPU) and carries the LPU name with the MBA designation. The Business Analytics specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from LPU Online MBA Business Analytics alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Arjun Dhingra",
-          "city": "Mohali",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Machine Learning for Business and Predictive Analytics subjects were directly applicable to my data analyst role at a Chandigarh IT services firm. Zero-cost EMI was the deciding factor.",
-          "disliked": "Big Data Analytics could have more hands-on lab sessions with live Spark clusters.",
-          "body": "I had 3 years in data analytics and the LPU MBA helped me move to analytics manager. The Rs 1.61L fee with zero-cost EMI was unbeatable. LPU brand is recognised at Chandigarh and Mohali IT companies. Strong value for analytics professionals."
-        },
-        {
-          "name": "Pooja Gupta",
-          "city": "Delhi",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Data Visualisation and Business Intelligence Systems were excellent. Power BI and Tableau coverage was directly applicable.",
-          "disliked": "Python depth in Predictive Analytics could be deeper for those coming from non-coding backgrounds.",
-          "body": "Good programme for business analysts wanting to move into analytics management. Delhi IT companies recognised the LPU credential. The zero-cost EMI was a genuine benefit that I would not have had with NMIMS or Amity."
-        },
-        {
-          "name": "Karan Bhatia",
-          "city": "Chandigarh",
-          "year": 2024,
-          "rating": 4,
-          "liked": "ML for Business and Big Data Analytics subjects were strong. Good foundation for analytics leadership roles.",
-          "disliked": "Placement support for analytics-specific roles was limited. Most portal listings were general IT roles.",
-          "body": "Strong analytics content at an unbeatable price. For North India IT analytics careers, LPU is a recognised and affordable choice. Self-sourced job search was necessary for analytics-specific openings."
-        }
-      ]
     },
     "faqs": [
       {
@@ -146,6 +114,7 @@
     "wordCount": 2050,
     "generatedAt": "2026-04-21",
     "batchNumber": "Phase7-Batch13",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

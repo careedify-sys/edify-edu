@@ -19,30 +19,69 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Advertising and Sales Promotion", "desc": "Advertising strategy, media planning, creative brief development, sales promotion tools, IMC (Integrated Marketing Communications), and ad effectiveness measurement." },
-            { "name": "Services Marketing", "desc": "Service quality models (SERVQUAL), service blueprinting, customer experience design, hospitality and healthcare services marketing, and service recovery strategies." },
-            { "name": "Strategic Management", "desc": "Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic implementation processes." },
-            { "name": "Entrepreneurship Development", "desc": "Startup ideation, D2C brand building, funding strategies, and MSME support systems for marketing ventures." },
-            { "name": "Management Accounting", "desc": "Cost-volume-profit analysis, marketing budget allocation, variance analysis, and management decision-making tools." },
-            { "name": "Production and Operations Management", "desc": "Production planning, quality management, supply chain basics, and operations scheduling." },
-            { "name": "Skill Development", "desc": "Communication skills, presentation techniques, negotiation skills, and professional development modules." },
-            { "name": "Summer Project", "desc": "Industry-linked summer project in a marketing function requiring market research, data collection, and structured report." }
+            {
+              "name": "Advertising and Sales Promotion",
+              "desc": "Advertising strategy, media planning, creative brief development, sales promotion tools, IMC (Integrated Marketing Communications), and ad effectiveness measurement."
+            },
+            {
+              "name": "Services Marketing",
+              "desc": "Service quality models (SERVQUAL), service blueprinting, customer experience design, hospitality and healthcare services marketing, and service recovery strategies."
+            },
+            {
+              "name": "Strategic Management",
+              "desc": "Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic implementation processes."
+            },
+            {
+              "name": "Entrepreneurship Development",
+              "desc": "Startup ideation, D2C brand building, funding strategies, and MSME support systems for marketing ventures."
+            },
+            {
+              "name": "Management Accounting",
+              "desc": "Cost-volume-profit analysis, marketing budget allocation, variance analysis, and management decision-making tools."
+            },
+            {
+              "name": "Production and Operations Management",
+              "desc": "Production planning, quality management, supply chain basics, and operations scheduling."
+            },
+            {
+              "name": "Skill Development",
+              "desc": "Communication skills, presentation techniques, negotiation skills, and professional development modules."
+            },
+            {
+              "name": "Summer Project",
+              "desc": "Industry-linked summer project in a marketing function requiring market research, data collection, and structured report."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Rural Marketing", "desc": "Rural consumer behaviour, distribution strategies for tier-3/4 markets, ITC e-Choupal model, FMCG rural penetration, and agri-business marketing." },
-            { "name": "Digital Marketing", "desc": "SEO, SEM, social media marketing, content strategy, email marketing, influencer marketing, and digital analytics tools." },
-            { "name": "International Business Management", "desc": "Global marketing strategy, export marketing, cross-cultural consumer behaviour, and international brand management." },
-            { "name": "Contemporary Seminar", "desc": "Student-led seminar on current marketing topics. Research, presentation, and peer discussion on emerging marketing trends." },
-            { "name": "Field Work and Project Work (8 Weeks)", "desc": "Mandatory 8-week field project in a marketing department, agency, or distribution setup. Structured report, data analysis, and viva voce defence." }
+            {
+              "name": "Rural Marketing",
+              "desc": "Rural consumer behaviour, distribution strategies for tier-3/4 markets, ITC e-Choupal model, FMCG rural penetration, and agri-business marketing."
+            },
+            {
+              "name": "Digital Marketing",
+              "desc": "SEO, SEM, social media marketing, content strategy, email marketing, influencer marketing, and digital analytics tools."
+            },
+            {
+              "name": "International Business Management",
+              "desc": "Global marketing strategy, export marketing, cross-cultural consumer behaviour, and international brand management."
+            },
+            {
+              "name": "Contemporary Seminar",
+              "desc": "Student-led seminar on current marketing topics. Research, presentation, and peer discussion on emerging marketing trends."
+            },
+            {
+              "name": "Field Work and Project Work (8 Weeks)",
+              "desc": "Mandatory 8-week field project in a marketing department, agency, or distribution setup. Structured report, data analysis, and viva voce defence."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Dr. MGR MBA Marketing Management graduates target roles across advertising, FMCG, services, and digital marketing:\n\n**Industries:** FMCG, automotive, retail, e-commerce, advertising agencies, media houses, banking (retail marketing), healthcare marketing, telecom, and IT services marketing\n\n**Entry-level roles:** Marketing Executive, Brand Associate, Sales Officer, Digital Marketing Coordinator, Media Planner (junior), Market Research Analyst\n\n**Mid-level roles (3-5 years):** Brand Manager, Area Sales Manager, Digital Marketing Manager, Product Manager, Services Marketing Manager, Rural Sales Manager\n\n**Senior roles (7+ years):** VP Marketing, Chief Marketing Officer (mid-market), Head of Brand, National Sales Head, Director of Digital Marketing\n\n**Employers:** FMCG companies (ITC, HUL, P&G, Nestle), automotive (Hyundai Chennai plant, TVS, Royal Enfield), IT services marketing (TCS, Infosys), advertising agencies, and South India retail chains.\n\n**Note:** Chennai is home to major FMCG distribution hubs and the Hyundai/TVS automotive corridor. Dr. MGR's local brand provides access to the Tamil Nadu marketing job market."
+      "body": "Dr. MGR MBA Marketing Management graduates target roles across advertising, FMCG, services, and digital marketing:\n\n**Industries:** FMCG, automotive, retail, e-commerce, advertising agencies, media houses, banking (retail marketing), healthcare marketing, telecom, and IT services marketing\n\n**Entry-level roles:** Marketing Executive, Brand Associate, Sales Officer, Digital Marketing Coordinator, Media Planner (junior), Market Research Analyst\n\n**Mid-level roles (3-5 years):** Brand Manager, Area Sales Manager, Digital Marketing Manager, Product Manager, Services Marketing Manager, Rural Sales Manager\n\n**Senior roles (7+ years):** VP Marketing, Chief Marketing Officer (mid-market), Head of Brand, National Sales Head, Director of Digital Marketing\n\n**Employers:** FMCG companies (ITC, HUL, P&G, Nestle), automotive (Hyundai Chennai plant, TVS, Royal Enfield), IT services marketing (TCS, Infosys), advertising agencies, and South India retail chains.\n\n**Note:** Chennai is home to major FMCG distribution hubs and the Hyundai/TVS automotive corridor. Dr. MGR's local brand provides access to the Tamil Nadu marketing job market.\n\n**Where to verify placement claims:** ask Dr. MGR Educational and Research Institute Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Marketing Management specialisation builds skills across advertising, services marketing, and rural markets:\n\n**Technical skills:**\n- Advertising: media planning and buying, creative strategy development, IMC campaign design, ad effectiveness metrics (reach, frequency, GRPs), and sales promotion mechanics\n- Services Marketing: SERVQUAL application, service blueprinting, customer journey mapping, service recovery design, and Net Promoter Score management\n- Rural Marketing: rural distribution strategy (hub-and-spoke), rural consumer profiling, sachet pricing, mandi-based distribution, and agri-input marketing\n\n**Applied skills:**\n- Digital Marketing (from common core): SEO/SEM execution, social media campaign management, Google Analytics interpretation, and content marketing strategy\n- Market Research: survey design, focus group facilitation, data analysis for marketing decisions, and competitive intelligence gathering\n\n**Soft skills:** Client presentation, brand storytelling, negotiating media rates, managing agency relationships, and pitching marketing plans to leadership."
@@ -55,38 +94,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Marketing Management as the specialisation, issued by Dr. MGR Educational and Research Institute (Deemed University) under UGC-DEB online mode standards.\n\nThe degree carries NAAC A+ accreditation, UGC-DEB approval, and Deemed University status since 2003. Valid for marketing manager roles, government recruitment, PSU marketing positions, and private-sector brand/sales management careers. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from Dr. MGR Online MBA Marketing Management students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Anitha",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Advertising and Sales Promotion covered media planning and IMC at a practical level useful for my role at a Chennai ad agency. The brand carries weight in Tamil Nadu",
-          "disliked": "Services Marketing could include more digital service design content. The subject felt traditional",
-          "body": "I chose Dr. MGR because Chennai ad agencies and FMCG companies recognize the name. NAAC A+ at this fee is fair. Advertising and Sales Promotion was directly relevant. Rural Marketing in Sem 4 was an unexpected strength, covering ITC e-Choupal and sachet pricing models. The 8-week field project at my agency added real portfolio value. For TN marketing careers, Dr. MGR is a solid pick."
-        },
-        {
-          "name": "Kumar",
-          "city": "Trichy",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Rural Marketing as a standalone subject is rare in online MBAs. Directly useful for my FMCG distribution role in semi-urban Tamil Nadu",
-          "disliked": "National brand recognition outside South India is limited. Mumbai or Delhi FMCG employers may not know Dr. MGR",
-          "body": "The marketing curriculum covers traditional (advertising, services, rural) and digital marketing across Sem 3-4. Three spec-specific subjects plus Digital Marketing in common core give four marketing-relevant courses. The 8-week project was the highlight. At Rs 1.36-1.41L, the fee is mid-range. Vignan and Galgotias are cheaper but lack the rural marketing and Tamil Nadu brand advantage."
-        },
-        {
-          "name": "Nandini",
-          "city": "Coimbatore",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Services Marketing covered SERVQUAL and service blueprinting at a depth useful for my hospitality marketing role",
-          "disliked": "LMS could be more interactive. Some recorded sessions feel one-directional. Faculty engagement varies by subject",
-          "body": "At Rs 1.36-1.41L, Dr. MGR is not the cheapest marketing MBA. Galgotias at Rs 80,200 and Vignan at Rs 90,000 are significantly less. Dr. MGR's value is the Tamil Nadu brand and rural marketing depth. For South India FMCG and automotive marketing careers, the regional recognition helps. For pan-India brand management roles at top FMCG firms, Manipal or Amity have stronger national brands."
-        }
-      ]
     },
     "faqs": [
       {
@@ -130,6 +137,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 31,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

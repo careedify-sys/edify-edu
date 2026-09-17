@@ -19,30 +19,69 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Artificial Intelligence in Business", "desc": "AI applications in business decision-making, ML fundamentals for managers, AI-driven automation, and ethical AI frameworks." },
-            { "name": "Internship/OJT", "desc": "Mandatory industry internship or on-the-job training. Applied learning in a real business environment with faculty supervision and evaluation." },
-            { "name": "Corporate Skill Development-2", "desc": "Professional skills workshop covering presentation, negotiation, business writing, and workplace communication at an advanced level." },
-            { "name": "Security Analysis and Portfolio Management", "desc": "Equity valuation techniques (DCF, PE, PBV), risk-return trade-off frameworks, Modern Portfolio Theory, CAPM, and portfolio construction for listed equities and bonds." },
-            { "name": "Financial Statement Analysis and Business Valuation", "desc": "Ratio analysis, DuPont decomposition, cash flow analysis, comparative financial analysis, and business valuation methods for M&A and investment decisions." },
-            { "name": "Project Appraisal and Finance", "desc": "Capital budgeting techniques (NPV, IRR, payback), project feasibility analysis, project financing structures, and infrastructure project appraisal frameworks." },
-            { "name": "Options, Futures and Risk Management", "desc": "Options pricing basics, futures contract mechanics, hedging strategies using derivatives, VaR calculation, and enterprise risk management frameworks." },
-            { "name": "Fixed Income Securities", "desc": "Bond valuation, yield curve analysis, duration and convexity, credit risk assessment, and fixed income portfolio construction." },
-            { "name": "Behavioral Finance", "desc": "Cognitive biases in investment decisions, prospect theory, herd behaviour, market anomalies, and behavioural portfolio theory." }
+            {
+              "name": "Artificial Intelligence in Business",
+              "desc": "AI applications in business decision-making, ML fundamentals for managers, AI-driven automation, and ethical AI frameworks."
+            },
+            {
+              "name": "Internship/OJT",
+              "desc": "Mandatory industry internship or on-the-job training. Applied learning in a real business environment with faculty supervision and evaluation."
+            },
+            {
+              "name": "Corporate Skill Development-2",
+              "desc": "Professional skills workshop covering presentation, negotiation, business writing, and workplace communication at an advanced level."
+            },
+            {
+              "name": "Security Analysis and Portfolio Management",
+              "desc": "Equity valuation techniques (DCF, PE, PBV), risk-return trade-off frameworks, Modern Portfolio Theory, CAPM, and portfolio construction for listed equities and bonds."
+            },
+            {
+              "name": "Financial Statement Analysis and Business Valuation",
+              "desc": "Ratio analysis, DuPont decomposition, cash flow analysis, comparative financial analysis, and business valuation methods for M&A and investment decisions."
+            },
+            {
+              "name": "Project Appraisal and Finance",
+              "desc": "Capital budgeting techniques (NPV, IRR, payback), project feasibility analysis, project financing structures, and infrastructure project appraisal frameworks."
+            },
+            {
+              "name": "Options, Futures and Risk Management",
+              "desc": "Options pricing basics, futures contract mechanics, hedging strategies using derivatives, VaR calculation, and enterprise risk management frameworks."
+            },
+            {
+              "name": "Fixed Income Securities",
+              "desc": "Bond valuation, yield curve analysis, duration and convexity, credit risk assessment, and fixed income portfolio construction."
+            },
+            {
+              "name": "Behavioral Finance",
+              "desc": "Cognitive biases in investment decisions, prospect theory, herd behaviour, market anomalies, and behavioural portfolio theory."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Strategic Management", "desc": "Corporate strategy frameworks, competitive advantage analysis, strategic planning, diversification strategy, and strategic control." },
-            { "name": "Major Project", "desc": "Comprehensive finance project integrating Sem 1-4 learning. Industry-linked problem with faculty evaluation." },
-            { "name": "Working Capital Management", "desc": "Cash management, receivables management, inventory financing, short-term funding strategies, and working capital cycle optimisation." },
-            { "name": "Introduction to Financial Analytics", "desc": "Data-driven financial decision-making, financial modelling basics, Excel/Python for finance, and financial dashboard design." }
+            {
+              "name": "Strategic Management",
+              "desc": "Corporate strategy frameworks, competitive advantage analysis, strategic planning, diversification strategy, and strategic control."
+            },
+            {
+              "name": "Major Project",
+              "desc": "Comprehensive finance project integrating Sem 1-4 learning. Industry-linked problem with faculty evaluation."
+            },
+            {
+              "name": "Working Capital Management",
+              "desc": "Cash management, receivables management, inventory financing, short-term funding strategies, and working capital cycle optimisation."
+            },
+            {
+              "name": "Introduction to Financial Analytics",
+              "desc": "Data-driven financial decision-making, financial modelling basics, Excel/Python for finance, and financial dashboard design."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "JIIT MBA Finance graduates target roles across banking, corporate finance, and investment:\n\n**Industries:** Commercial banking, NBFC, insurance, corporate treasury, equity research, fintech, financial consulting, and government finance departments\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Equity Research Associate, Treasury Analyst, Risk Analyst, Banking Officer\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Credit Manager, Portfolio Analyst, Treasury Manager, Financial Controller, Risk Manager\n\n**Senior roles (7+ years):** CFO (mid-market), VP Finance, Head of Treasury, Director of Credit Risk, Head of Corporate Finance\n\n**Employers:** Banks (HDFC, ICICI, Axis, SBI), NBFCs (Bajaj Finance, Muthoot), insurance (LIC, HDFC Life), IT/ITES companies with finance functions (TCS, Infosys, Wipro), and NCR-region corporates.\n\n**Note:** JIIT provides career support. The Jaypee brand is strongest in the NCR/North India engineering and technology sector. Online MBA brand recognition is developing."
+      "body": "JIIT MBA Finance graduates target roles across banking, corporate finance, and investment:\n\n**Industries:** Commercial banking, NBFC, insurance, corporate treasury, equity research, fintech, financial consulting, and government finance departments\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Equity Research Associate, Treasury Analyst, Risk Analyst, Banking Officer\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Credit Manager, Portfolio Analyst, Treasury Manager, Financial Controller, Risk Manager\n\n**Senior roles (7+ years):** CFO (mid-market), VP Finance, Head of Treasury, Director of Credit Risk, Head of Corporate Finance\n\n**Employers:** Banks (HDFC, ICICI, Axis, SBI), NBFCs (Bajaj Finance, Muthoot), insurance (LIC, HDFC Life), IT/ITES companies with finance functions (TCS, Infosys, Wipro), and NCR-region corporates.\n\n**Note:** JIIT provides career support. The Jaypee brand is strongest in the NCR/North India engineering and technology sector. Online MBA brand recognition is developing.\n\n**Where to verify placement claims:** ask Jaypee Institute of Information Technology Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Finance specialisation builds skills across capital markets, corporate finance, and risk management:\n\n**Technical skills:**\n- Security Analysis: equity valuation (DCF, comparable), financial ratio analysis, DuPont decomposition, and earnings quality assessment\n- Derivatives and Risk: options Greeks interpretation, futures hedging strategy design, VaR calculation, and enterprise risk register construction\n- Fixed Income: bond pricing, yield spread analysis, duration matching, and credit risk scoring\n- Project Finance: NPV/IRR calculation, project feasibility report preparation, and infrastructure financing structure analysis\n\n**Applied skills:**\n- Behavioural Finance: cognitive bias identification in investment committees, prospect theory application, and debiasing frameworks\n- Financial Analytics: financial dashboard design, ratio trend automation, and data-driven credit assessment\n\n**Soft skills:** Presenting investment analysis to committees, negotiating credit terms, managing audit relationships, and communicating financial risk to non-finance stakeholders."
@@ -55,38 +94,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Finance as the specialisation, issued by Jaypee Institute of Information Technology (JIIT), Noida under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A accreditation and UGC-DEB approval. It is valid for government recruitment requiring an MBA, PSU applications, and private-sector employers who verify UGC-DEB entitlement. WES recognised for international credential evaluation. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from JIIT Online MBA Finance students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Ankit S.",
-          "city": "Noida",
-          "year": 2024,
-          "rating": 4,
-          "liked": "9 finance subjects in Sem 3 is genuinely deeper than any other online MBA I compared at this price point. Behavioural Finance and Fixed Income as standalone courses are rare",
-          "disliked": "JIIT online MBA brand recognition is limited. Most people know Jaypee for BTech, not MBA. This matters during interviews when the recruiter checks university name",
-          "body": "I work in a fintech startup in Noida. The derivatives, financial analytics, and project appraisal subjects were directly applicable. The mandatory internship in Sem 3 was genuinely useful for building portfolio evidence. At ₹1,82,000 all-in, the value is solid for the curriculum depth. The main limitation is brand recognition. Recruiters in NCR know JIIT for engineering but the online MBA is newer and less established."
-        },
-        {
-          "name": "Priya K.",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 4,
-          "liked": "AI in Business as a core subject gave me vocabulary for fintech conversations that a purely traditional finance MBA would not cover",
-          "disliked": "No scholarships and no bundled perks. At a similar fee, MUJ offers Coursera Plus free, which adds tangible value",
-          "body": "I chose JIIT over MUJ because the finance curriculum is deeper. 9 Sem 3 subjects including behavioural finance and fixed income vs MUJ's 6. The trade-off is that MUJ has Coursera Plus and the Manipal brand. For my career in banking in NCR, the JIIT curriculum depth mattered more than the brand. The zero-cost EMI at ₹7,417/month made it manageable."
-        },
-        {
-          "name": "Suresh R.",
-          "city": "Lucknow",
-          "year": 2023,
-          "rating": 3.8,
-          "liked": "Working Capital Management in Sem 4 was practical and applicable to my manufacturing finance role",
-          "disliked": "Career services for online MBA students could be more active. The on-campus placement infrastructure does not extend meaningfully to online learners",
-          "body": "The curriculum is the strong point. The delivery is adequate but not exceptional. Some recorded lectures felt like campus recordings adapted for online. The mandatory internship was logistically challenging since I was already working full-time. I managed it by aligning it with a project at my company, but the programme could be clearer about how working professionals should handle this requirement."
-        }
-      ]
     },
     "faqs": [
       {
@@ -130,6 +137,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 23,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

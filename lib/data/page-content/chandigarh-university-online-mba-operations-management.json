@@ -73,7 +73,7 @@
       ]
     },
     "whoHires": {
-      "body": "Operations Management MBA graduates from Chandigarh University Online are hired across manufacturing and supply chain industries:\n\n**Industries:** Automotive, FMCG manufacturing, e-commerce logistics, electronics manufacturing, pharma, steel, textiles, and engineering companies\n\n**Entry-level roles:** Operations Analyst, Supply Chain Coordinator, Production Planner, Procurement Executive, Logistics Manager (junior)\n\n**Mid-level roles (3-5 years experience):** Operations Manager, Supply Chain Manager, Plant Manager, Procurement Manager, Lean Manufacturing Lead\n\n**Senior roles (7+ years):** VP Operations, Head of Supply Chain, COO, Director of Manufacturing, VP Procurement\n\n**Where to verify placement claims:** ask Chandigarh University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
+      "body": "This Operations Management MBA syllabus maps to the following manufacturing and supply chain industries:\n\n**Industries:** Automotive, FMCG manufacturing, e-commerce logistics, electronics manufacturing, pharma, steel, textiles, and engineering companies\n\n**Entry-level roles:** Operations Analyst, Supply Chain Coordinator, Production Planner, Procurement Executive, Logistics Manager (junior)\n\n**Mid-level roles (3-5 years experience):** Operations Manager, Supply Chain Manager, Plant Manager, Procurement Manager, Lean Manufacturing Lead\n\n**Senior roles (7+ years):** VP Operations, Head of Supply Chain, COO, Director of Manufacturing, VP Procurement\n\n**Where to verify placement claims:** ask Chandigarh University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The outcome is being able to look at a process and say where the time and money go, with evidence rather than intuition.\n\nProduction Planning and Control covers scheduling, capacity, inventory policy and the trade between utilisation and responsiveness that sits behind most operational arguments.\n\nQuantitative Techniques and Methods covers the analytical toolkit: queuing, optimisation, statistical process control and the methods that let you model a process rather than describe it.\n\nAI-Predictive Supply Chain and Digital Twins covers simulation and predictive maintenance, including building a model of a process you can experiment on without disrupting the real one.\n\nOperations Management and Strategy covers the structural decisions about capacity, location and sourcing. Sustainable Supply Chain and ESG Procurement covers emissions accounting, supplier standards and the reporting that increasingly travels with a contract."
@@ -130,6 +130,7 @@
     "hasSyllabusData": true,
     "phase71Updated": "2026-04-22",
     "integrityPass": "2026-09-17",
-    "humanisedAt": "2026-09-17"
+    "humanisedAt": "2026-09-17",
+    "claimSweep": "2026-09-17"
   }
 }

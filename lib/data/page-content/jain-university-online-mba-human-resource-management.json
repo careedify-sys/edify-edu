@@ -69,7 +69,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Human Resource Management MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** IT services and product companies, BFSI, FMCG, Manufacturing, Consulting and staffing, EdTech\n\n**Entry-level roles:** HR Executive, Talent Acquisition Executive, L&D Coordinator, HR Generalist, Compensation Analyst\n\n**Mid-level roles (3-5 years experience):** HR Business Partner, Talent Acquisition Manager, L&D Manager, Compensation Manager, HR Manager\n\n**Senior roles (7+ years):** HR Director, CHRO, Head of Talent Management, VP HR, Head of People Operations\n\n**Top hiring organisations:** Infosys, Wipro, TCS, HCL Technologies, Accenture India, IBM India, Amazon India HR, Flipkart People, HDFC Bank HR, Deloitte HR Consulting, KPMG People Advisory, ManpowerGroup, Randstad India"
+      "body": "This Human Resource Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** IT services and product companies, BFSI, FMCG, Manufacturing, Consulting and staffing, EdTech\n\n**Entry-level roles:** HR Executive, Talent Acquisition Executive, L&D Coordinator, HR Generalist, Compensation Analyst\n\n**Mid-level roles (3-5 years experience):** HR Business Partner, Talent Acquisition Manager, L&D Manager, Compensation Manager, HR Manager\n\n**Senior roles (7+ years):** HR Director, CHRO, Head of Talent Management, VP HR, Head of People Operations\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN HRM specialisation builds skills that HR employers test at HRBP and HR manager levels:\n\n**Technical skills:**\n- Industrial Relations and Labour Laws: Industrial Disputes Act compliance, POSH implementation, Contract Labour Act management, and collective bargaining for HR compliance and IR roles\n- Performance Management Systems: KPI framework design, appraisal calibration, continuous feedback tool implementation, and performance improvement plan management for HRBP roles\n- Employee Compensation and Benefits: CTC structuring, pay band design, variable pay programme management, and compensation benchmarking for compensation and benefits roles\n- Talent Acquisition and Management: employer branding strategy, structured interview design, talent pipeline development, and ATS management for talent acquisition roles\n\n**Applied skills:**\n- Employee Management and Negotiation Skills: grievance management, PIP facilitation, employment dispute resolution, and negotiation in difficult HR conversations - a dedicated subject uncommon in peer programmes\n- Organisation Development and Change Management: OD intervention design, culture transformation, and HR-led change management\n\n**Soft skills:** Conducting sensitive performance and compensation conversations, presenting workforce analytics to CHRO and board, managing union relations, and leading employer brand campaigns."
@@ -82,38 +82,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. The Human Resource Management specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA HRM alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Ananya Krishnan",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Employee Management and Negotiation Skills was the standout subject - no other online MBA I evaluated had this as a dedicated module. Industrial Relations and Labour Laws was directly applicable to my IT company HR role.",
-          "disliked": "International HRM could include more India-headquartered MNC case studies.",
-          "body": "I had 4 years in HR operations at a Bengaluru IT company and the JAIN HRM MBA helped me move to HRBP. Python in Sem 2 core helped me build basic workforce dashboards that impressed the HR leadership team."
-        },
-        {
-          "name": "Pradeep Rao",
-          "city": "Hyderabad",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Talent Acquisition and L&D subjects were well-structured. Performance Management Systems was directly applicable.",
-          "disliked": "The fee tier was not immediately clear during admission. Needed counsellor clarification.",
-          "body": "Good programme for South India IT services HR careers. Hyderabad IT companies recognised the JAIN credential. For pan-India HR careers, Amity or NMIMS would add national brand recognition. For South India, JAIN is cost-effective."
-        },
-        {
-          "name": "Sneha Thomas",
-          "city": "Kochi",
-          "year": 2024,
-          "rating": 3,
-          "liked": "OD and Change Management subject gave strong frameworks for culture transformation projects.",
-          "disliked": "LMS platform had occasional stability issues. Live session recordings were sometimes delayed beyond 24 hours.",
-          "body": "Decent credential for the fee. JAIN brand is strong in Bengaluru and Hyderabad but less so in Kerala. For South India HR careers, self-sourcing was necessary outside major metros."
-        }
-      ]
     },
     "faqs": [
       {
@@ -154,6 +122,7 @@
     "wordCount": 2150,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

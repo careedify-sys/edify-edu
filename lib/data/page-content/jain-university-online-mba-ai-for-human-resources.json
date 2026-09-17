@@ -77,7 +77,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "AI for HR MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** IT services and product companies, BFSI HR technology, Consulting people advisory, EdTech HR, FMCG HR analytics, Staffing and talent technology\n\n**Entry-level roles:** HR Technology Analyst, People Analytics Analyst, Talent Acquisition Tech Analyst, HRIS Analyst, L&D Technology Analyst\n\n**Mid-level roles (3-5 years experience):** People Analytics Manager, HR Technology Manager, Talent Intelligence Manager, AI Recruitment Lead, HR Transformation Manager\n\n**Senior roles (7+ years):** CHRO (Digital), Head of People Analytics, VP HR Technology, Director Talent Intelligence, Chief People Officer\n\n**Top hiring organisations:** Infosys, Wipro, TCS, Accenture India, IBM India HR, Amazon India People, Flipkart HR, Deloitte HR Consulting, KPMG People Advisory, ManpowerGroup, Randstad India, Workday India, SAP SuccessFactors India, Oracle HCM India"
+      "body": "This AI for HR MBA syllabus maps to the following industries and roles:\n\n**Industries:** IT services and product companies, BFSI HR technology, Consulting people advisory, EdTech HR, FMCG HR analytics, Staffing and talent technology\n\n**Entry-level roles:** HR Technology Analyst, People Analytics Analyst, Talent Acquisition Tech Analyst, HRIS Analyst, L&D Technology Analyst\n\n**Mid-level roles (3-5 years experience):** People Analytics Manager, HR Technology Manager, Talent Intelligence Manager, AI Recruitment Lead, HR Transformation Manager\n\n**Senior roles (7+ years):** CHRO (Digital), Head of People Analytics, VP HR Technology, Director Talent Intelligence, Chief People Officer\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN AI for HR specialisation builds skills that HR technology and people analytics employers test at HRBP and HR manager levels:\n\n**Technical skills:**\n- AI for Recruitment and Onboarding Automation: AI-driven screening pipeline design, automated candidate shortlisting, and digital onboarding system management for talent acquisition technology roles\n- Predictive Human Resource Analytics: attrition prediction modelling, workforce demand forecasting, and HR KPI dashboard development for people analytics roles\n- Performance and Engagement Measurement using AI: AI-powered performance dashboard design, sentiment analysis on employee engagement data, and automated performance review analytics for HRBP roles\n- Diversity, Inclusion and Retention Prediction Models: ML-assisted diversity gap analysis, inclusion measurement framework design, and retention risk modelling for D&I and people analytics\n\n**Applied skills:**\n- Smart Talent Development and Learning Systems: AI-personalised LMS platform management, predictive skill gap identification, and intelligent learning programme design for L&D transformation roles\n- AI-Enabled Leadership and Change Management: HR AI governance, responsible AI in people operations, and HR technology transformation leadership\n\n**Soft skills:** Presenting people analytics insights to CHRO and board, managing HR technology vendor evaluations, communicating AI-driven performance decisions to employees, and leading responsible AI adoption in people operations."
@@ -90,38 +90,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. The AI for Human Resources specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA AI for HR alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Deepika Rajan",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "AI for Recruitment and Onboarding Automation was directly applicable to my TA tech role at a Bengaluru IT company. Predictive HR Analytics helped me build attrition dashboards that became a key HR leadership tool.",
-          "disliked": "Business Law in the Digital Age could be more India-specific regarding DPDP Act implications for HR data management.",
-          "body": "I had 5 years in HR operations and wanted to move into people analytics. The JAIN AI for HR MBA was the only programme I found with dedicated AI recruitment and predictive analytics subjects. JAIN brand helped in Bengaluru IT sector hiring."
-        },
-        {
-          "name": "Sujith Ramachandran",
-          "city": "Hyderabad",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Smart Talent Development and Learning Systems was unique - no other online MBA had AI-personalised LMS design as a subject. Diversity Prediction Models was forward-looking.",
-          "disliked": "8 subjects in Sem 3 is heavy. Pacing could be better distributed across the 2 semesters.",
-          "body": "Strong AI-HR curriculum for South India IT companies. Hyderabad IT firms recognised the AI HR credential well. For traditional HR roles without an AI transformation focus, standard JAIN HRM or LPU HRM offers more grounded people management depth."
-        },
-        {
-          "name": "Neethu Krishnan",
-          "city": "Kochi",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Predictive HR Analytics and AI-Enabled Leadership subjects were directly useful for my HR consulting work.",
-          "disliked": "JAIN brand recognition outside Karnataka is weaker. In Kerala, self-sourcing for HR technology roles was necessary.",
-          "body": "Strong curriculum for AI HR roles. Best suited for professionals at Bengaluru or Hyderabad IT companies where JAIN brand is recognised. For Kerala-based careers, JAIN HR credential may need to be supplemented with additional HR technology certifications."
-        }
-      ]
     },
     "faqs": [
       {
@@ -162,6 +130,7 @@
     "wordCount": 2200,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

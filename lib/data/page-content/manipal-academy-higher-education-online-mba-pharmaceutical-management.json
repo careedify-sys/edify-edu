@@ -19,29 +19,65 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Management Accounting", "desc": "Cost analysis, budgeting, variance analysis, and management decision-making using accounting data." },
-            { "name": "Legal Aspects of Business", "desc": "Contract law, consumer protection, intellectual property, company law basics, and regulatory compliance." },
-            { "name": "Minor Project", "desc": "Applied pharmaceutical management research project supervised by faculty." },
-            { "name": "Pharmaceutical Marketing", "desc": "Prescription drug marketing regulations, Key Opinion Leader (KOL) management, medical representative effectiveness, digital pharma marketing, and ethical marketing in healthcare." },
-            { "name": "Pharmaceutical Sales and CRM", "desc": "Territory management, doctor detailing strategies, pharma CRM system management, sales force effectiveness metrics, and pharmacy channel management." },
-            { "name": "Intellectual Property Rights", "desc": "Patent filing process, drug patent landscape, compulsory licensing provisions, trade secret protection in pharma, and trademark strategies for pharmaceutical brands." }
+            {
+              "name": "Management Accounting",
+              "desc": "Cost analysis, budgeting, variance analysis, and management decision-making using accounting data."
+            },
+            {
+              "name": "Legal Aspects of Business",
+              "desc": "Contract law, consumer protection, intellectual property, company law basics, and regulatory compliance."
+            },
+            {
+              "name": "Minor Project",
+              "desc": "Applied pharmaceutical management research project supervised by faculty."
+            },
+            {
+              "name": "Pharmaceutical Marketing",
+              "desc": "Prescription drug marketing regulations, Key Opinion Leader (KOL) management, medical representative effectiveness, digital pharma marketing, and ethical marketing in healthcare."
+            },
+            {
+              "name": "Pharmaceutical Sales and CRM",
+              "desc": "Territory management, doctor detailing strategies, pharma CRM system management, sales force effectiveness metrics, and pharmacy channel management."
+            },
+            {
+              "name": "Intellectual Property Rights",
+              "desc": "Patent filing process, drug patent landscape, compulsory licensing provisions, trade secret protection in pharma, and trademark strategies for pharmaceutical brands."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Entrepreneurship and Innovation", "desc": "Startup ideation, business model canvas, lean startup methodology, and funding strategies." },
-            { "name": "Sustainability", "desc": "Sustainable business models, ESG frameworks, green chemistry basics, and CSR strategy." },
-            { "name": "Capstone Project", "desc": "Pharmaceutical management capstone integrating Sem 1-4 learning with an industry-linked pharma business problem." },
-            { "name": "Pharma Logistics Management", "desc": "Cold chain for pharmaceuticals, Good Distribution Practice (GDP) compliance, pharmaceutical warehousing standards, drug distribution networks, and temperature-controlled supply chain." },
-            { "name": "Pharmaceutical Production Management", "desc": "GMP compliance, batch manufacturing records (BMR), quality control in production, process validation, and pharmaceutical plant layout." },
-            { "name": "Pharmaceutical Regulatory Environment", "desc": "CDSCO regulations, drug approval process in India, pharmacovigilance basics, FDA and EMA regulatory comparison, and clinical trial regulatory requirements." }
+            {
+              "name": "Entrepreneurship and Innovation",
+              "desc": "Startup ideation, business model canvas, lean startup methodology, and funding strategies."
+            },
+            {
+              "name": "Sustainability",
+              "desc": "Sustainable business models, ESG frameworks, green chemistry basics, and CSR strategy."
+            },
+            {
+              "name": "Capstone Project",
+              "desc": "Pharmaceutical management capstone integrating Sem 1-4 learning with an industry-linked pharma business problem."
+            },
+            {
+              "name": "Pharma Logistics Management",
+              "desc": "Cold chain for pharmaceuticals, Good Distribution Practice (GDP) compliance, pharmaceutical warehousing standards, drug distribution networks, and temperature-controlled supply chain."
+            },
+            {
+              "name": "Pharmaceutical Production Management",
+              "desc": "GMP compliance, batch manufacturing records (BMR), quality control in production, process validation, and pharmaceutical plant layout."
+            },
+            {
+              "name": "Pharmaceutical Regulatory Environment",
+              "desc": "CDSCO regulations, drug approval process in India, pharmacovigilance basics, FDA and EMA regulatory comparison, and clinical trial regulatory requirements."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "MAHE MBA Pharmaceutical Management graduates target roles across pharma companies, biotech, regulatory, and healthcare:\n\n**Industries:** Pharmaceutical manufacturing, biotech, contract research organisations (CROs), medical devices, pharma distribution, regulatory consulting, and healthcare consulting\n\n**Entry-level roles:** Medical Representative (advanced), Pharma Marketing Executive, Regulatory Affairs Associate, Quality Assurance Executive, Pharma Supply Chain Analyst, Business Development Executive (pharma)\n\n**Mid-level roles (3-5 years experience):** Product Manager (pharma), Regional Sales Manager, Regulatory Affairs Manager, Quality Manager (GMP), Pharma Supply Chain Manager, Medical Affairs Manager\n\n**Senior roles (7+ years):** VP Marketing (pharma), National Sales Head, Director of Regulatory Affairs, Head of Quality, VP Supply Chain (pharma), Chief Commercial Officer\n\n**Employers:** Indian pharma (Sun Pharma, Dr. Reddy's, Cipla, Lupin, Biocon), MNC pharma (Pfizer India, Abbott, Novartis India, AstraZeneca), CROs (Syngene, Lambda Therapeutic, Quintiles), and medical devices (Medtronic India, Johnson & Johnson Medical).\n\n**Note:** MAHE's Manipal College of Pharmaceutical Sciences is among India's top pharmacy schools. This institutional connection gives pharma management graduates domain credibility."
+      "body": "MAHE MBA Pharmaceutical Management graduates target roles across pharma companies, biotech, regulatory, and healthcare:\n\n**Industries:** Pharmaceutical manufacturing, biotech, contract research organisations (CROs), medical devices, pharma distribution, regulatory consulting, and healthcare consulting\n\n**Entry-level roles:** Medical Representative (advanced), Pharma Marketing Executive, Regulatory Affairs Associate, Quality Assurance Executive, Pharma Supply Chain Analyst, Business Development Executive (pharma)\n\n**Mid-level roles (3-5 years experience):** Product Manager (pharma), Regional Sales Manager, Regulatory Affairs Manager, Quality Manager (GMP), Pharma Supply Chain Manager, Medical Affairs Manager\n\n**Senior roles (7+ years):** VP Marketing (pharma), National Sales Head, Director of Regulatory Affairs, Head of Quality, VP Supply Chain (pharma), Chief Commercial Officer\n\n**Employers:** Indian pharma (Sun Pharma, Dr. Reddy's, Cipla, Lupin, Biocon), MNC pharma (Pfizer India, Abbott, Novartis India, AstraZeneca), CROs (Syngene, Lambda Therapeutic, Quintiles), and medical devices (Medtronic India, Johnson & Johnson Medical).\n\n**Note:** MAHE's Manipal College of Pharmaceutical Sciences is among India's top pharmacy schools. This institutional connection gives pharma management graduates domain credibility.\n\n**Where to verify placement claims:** ask Manipal Academy of Higher Education (MAHE) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Pharmaceutical Management specialisation builds skills across pharma marketing, regulatory affairs, and operations:\n\n**Technical skills:**\n- Pharma Marketing: KOL engagement strategy, medical representative performance metrics, digital pharma campaign design (within DTCA regulations), and product lifecycle management\n- Regulatory: CDSCO submission preparation, drug dossier management, pharmacovigilance reporting, and clinical trial regulatory understanding\n- Production: GMP audit preparation, batch manufacturing record management, process validation documentation, and quality control systems\n- IP: patent landscape analysis, freedom-to-operate assessment basics, and compulsory licensing evaluation\n\n**Applied skills:**\n- Pharma Logistics: cold chain validation, GDP compliance auditing, temperature excursion management, and pharmaceutical warehouse design\n- Sales: territory mapping, CRM system configuration, sales force effectiveness analysis, and pharmacy channel strategy\n\n**Soft skills:** Presenting drug launch strategies to medical advisory boards, negotiating with distributors, managing relationships with regulatory authorities, and communicating complex scientific data to commercial teams."
@@ -54,38 +90,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Pharmaceutical Management as the specialisation, issued by Manipal Academy of Higher Education (MAHE) under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation, NIRF #3 University rank, Institution of Eminence status, and WES recognition. Valid for pharma management roles, regulatory affairs positions, pharma marketing leadership, and pharma supply chain management. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from MAHE Online MBA Pharmaceutical Management students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Sanjay R.",
-          "city": "Hyderabad",
-          "year": 2024,
-          "rating": 4.1,
-          "liked": "Pharma-specific subjects like CDSCO regulatory environment and GMP production management. No other online MBA covers these as dedicated subjects",
-          "disliked": "At ₹2,92,000 the fee is high. However, since MUJ does not offer a pharma-dedicated MBA, the typical MUJ comparison does not apply here",
-          "body": "Working in pharma manufacturing, the Pharmaceutical Production Management and Regulatory Environment subjects were directly applicable. GMP compliance, batch record management, and CDSCO submission processes were taught with practical context. The IPR module on drug patents and compulsory licensing was useful for R&D-adjacent roles. At ₹2,92,000, the fee is premium, but since no comparable platform offers dedicated pharma MBA subjects, the comparison is against generic MBAs, not identical programmes."
-        },
-        {
-          "name": "Neha T.",
-          "city": "Mumbai",
-          "year": 2024,
-          "rating": 4.0,
-          "liked": "Pharmaceutical Marketing and Sales CRM subjects reflected actual industry practices. KOL management content was practical",
-          "disliked": "Career support was general, not pharma-specific. Expected MAHE to connect graduates with pharma recruiters given the Manipal pharmacy heritage",
-          "body": "The pharma marketing and sales subjects were practical. KOL management, territory mapping, and medical representative effectiveness metrics reflected real industry challenges. Coursera Plus supplemented with clinical research and drug development courses. The Manipal pharmacy brand (MCOPS) helped in interviews. My frustration was that career services were not pharma-specific despite this being a dedicated pharma MBA. At ₹2,92,000, I expected targeted pharma placement support."
-        },
-        {
-          "name": "Vikash P.",
-          "city": "Ahmedabad",
-          "year": 2023,
-          "rating": 3.9,
-          "liked": "Pharma Logistics Management covering cold chain and GDP was unique content. Intellectual Property Rights module was relevant for pharma R&D roles",
-          "disliked": "The loan-scholarship restriction was painful. Lost the corporate 15% scholarship when I opted for a loan. Some lecture content felt textbook-heavy",
-          "body": "The pharma logistics subject covering cold chain validation and GDP compliance was content I have not found in any other online MBA. This is niche and valuable for pharma supply chain roles. The regulatory module covered both Indian CDSCO and international FDA/EMA comparison. My issue was the scholarship policy. I qualified for 15% corporate scholarship but needed a loan, so I paid full ₹2,92,000. For pharma professionals who can pay upfront and qualify for scholarships, MAHE is the clear choice for a dedicated pharma MBA."
-        }
-      ]
     },
     "faqs": [
       {
@@ -128,6 +132,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 22,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

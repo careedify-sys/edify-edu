@@ -97,7 +97,7 @@
       "note": "Sem 1-2 shared core subjects across all SSODL MBA specialisations. See the main SSODL Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Marketing MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** FMCG, Consumer technology, Retail, Digital marketing agencies, D2C brands, Media and entertainment\n\n**Entry-level roles:** Brand Executive (management track), Category Analyst, Digital Marketing Manager, Trade Marketing Executive\n\n**Mid-level roles (3-5 years experience):** Brand Manager, Senior Brand Manager, Head of Digital Marketing, Marketing Analytics Manager\n\n**Senior roles (7+ years):** VP Marketing, Marketing Director, CMO, Group Brand Manager\n\n**Where to verify placement claims:** ask Symbiosis International University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
+      "body": "This Marketing MBA syllabus maps to the following industries and roles:\n\n**Industries:** FMCG, Consumer technology, Retail, Digital marketing agencies, D2C brands, Media and entertainment\n\n**Entry-level roles:** Brand Executive (management track), Category Analyst, Digital Marketing Manager, Trade Marketing Executive\n\n**Mid-level roles (3-5 years experience):** Brand Manager, Senior Brand Manager, Head of Digital Marketing, Marketing Analytics Manager\n\n**Senior roles (7+ years):** VP Marketing, Marketing Director, CMO, Group Brand Manager\n\n**Where to verify placement claims:** ask Symbiosis International University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "You should come out able to hold a brand position under pressure, and to show what it earned.\n\nBrand Management and Integrated Marketing Communication cover positioning, architecture and keeping a message consistent across channels that each want to bend it. Services Marketing handles the harder case where the product is an experience and quality varies by delivery.\n\nMarketing Analytics is where the defence comes from: attribution, campaign measurement and the arithmetic that separates a campaign that worked from one that coincided with a good quarter.\n\nSales Force and Channel Management and Customer Relationship Management cover the distribution side, from channel design and incentive structure to retention economics. Product Management ties it together, covering how a proposition gets defined, priced and taken to market."
@@ -153,6 +153,7 @@
     "hasSyllabusData": true,
     "batch12v2Fixed": "2026-04-21",
     "integrityPass": "2026-09-17",
-    "humanisedAt": "2026-09-17"
+    "humanisedAt": "2026-09-17",
+    "claimSweep": "2026-09-17"
   }
 }

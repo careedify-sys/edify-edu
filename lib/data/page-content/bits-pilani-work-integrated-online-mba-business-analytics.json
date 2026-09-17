@@ -49,7 +49,7 @@
       "note": "Sem 1-2 cover shared MBA core subjects across all BITS Pilani WILP specialisations. Sem 3-4 introduce specialisation-specific and elective subjects. General Management Elective pool includes Advanced Marketing Management, AI for Competitive Advantage, Business Environment Laws Ethics, Business Research Methods, Data Visualization, Decision Analysis, Entrepreneurship, Entrepreneurial Finance, Enterprise Risk Management, Indian Ethos, International Business and Trade, Leadership and Managing Change, Management Control Systems, Project Management, Strategic HRM, and Technology Management."
     },
     "whoHires": {
-      "body": "Business Analytics MBA graduates from BITS Pilani WILP target these industries and roles:\n\n**Industries:** BFSI analytics, IT and tech companies, E-commerce, Consulting firms (strategy and analytics), FMCG analytics, Healthcare analytics, Telecom\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Associate, BI Analyst, Decision Science Associate\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, Data Science Manager, BI Manager, Strategy Analytics Lead, Financial Analytics Manager\n\n**Senior roles (7+ years):** Chief Analytics Officer, VP Data Strategy, Head of BI, Director Analytics, Chief Data Officer\n\n**Note:** BITS Pilani WILP does not conduct placement drives. This programme is for working professionals only. Career progression depends on your existing employment trajectory and how you apply programme skills."
+      "body": "Business Analytics MBA graduates from BITS Pilani WILP target these industries and roles:\n\n**Industries:** BFSI analytics, IT and tech companies, E-commerce, Consulting firms (strategy and analytics), FMCG analytics, Healthcare analytics, Telecom\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Associate, BI Analyst, Decision Science Associate\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, Data Science Manager, BI Manager, Strategy Analytics Lead, Financial Analytics Manager\n\n**Senior roles (7+ years):** Chief Analytics Officer, VP Data Strategy, Head of BI, Director Analytics, Chief Data Officer\n\n**Note:** BITS Pilani WILP does not conduct placement drives. This programme is for working professionals only. Career progression depends on your existing employment trajectory and how you apply programme skills.\n\n**Where to verify placement claims:** ask BITS Pilani Work Integrated Learning Programmes (WILP) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The BITS Pilani WILP Business Analytics specialisation builds analytics leadership and data strategy skills:\n\n**Technical skills:**\n- Predictive Analytics: regression, classification, forecasting models, model validation, and deployment for business applications\n- Applied Deep Learning and NLP: neural network architectures, natural language processing, text analytics, and deep learning for business use cases\n- Big Data Analytics: distributed computing frameworks, large-scale data processing, and big data architecture for business intelligence\n- Econometrics and Time Series Analysis: econometric modelling, time-series forecasting, and causal inference for business and economic analysis\n\n**Applied skills:**\n- Financial Analytics: credit risk models, portfolio analytics, financial forecasting, and algorithmic trading concepts\n- Analytics for Marketing: customer segmentation, attribution modelling, CLV prediction, campaign analytics, and marketing mix optimisation\n- Analytics for HR: workforce analytics, attrition prediction, hiring funnel analysis, and employee engagement measurement\n- Supply Chain Analytics: demand forecasting, inventory optimisation, logistics analytics, and supply chain risk modelling\n\n**Strategic skills:**\n- Data Strategy and Governance: enterprise data architecture, data quality frameworks, governance policies, and analytics maturity models\n- Analytics for Competitive Advantage: competitive intelligence, market analytics, and analytics-driven strategic planning\n- Prescriptive Analytics: optimisation models, simulation, and decision support systems for business operations"
@@ -62,38 +62,6 @@
     },
     "certificate": {
       "body": "Graduates receive a degree certificate issued by BITS Pilani under UGC norms. The certificate reads Master of Business Administration. The Business Analytics specialisation is noted on the marksheet and transcript. BITS Pilani carries Institution of Eminence status, NAAC A+ accreditation, and NIRF #7 University 2025 ranking. The BITS Pilani brand is strong across BFSI, tech, and consulting sectors where analytics roles are concentrated."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from BITS Pilani WILP MBA Business Analytics students. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Siddharth N.",
-          "city": "Bangalore",
-          "year": 2025,
-          "rating": 4.5,
-          "liked": "10 domain electives gave me the flexibility to build a custom analytics profile. Applied Deep Learning and NLP elective was a standout. BITS Pilani on the MBA certificate opened doors at analytics consulting firms.",
-          "disliked": "In-person exams at designated centres meant travel planning twice per semester. Rs 2.98L is at the higher end of the market.",
-          "body": "The largest elective pool among BITS Pilani WILP specs. Predictive Analytics as the core was strong. I added Big Data Analytics and Applied Deep Learning and NLP as my domain electives. The combination gave me both breadth and depth. BITS Pilani brand carries serious weight in analytics hiring. No placements, but as a working professional with 4 years experience, I used the credential for an internal move to analytics."
-        },
-        {
-          "name": "Pooja M.",
-          "city": "Mumbai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Financial Analytics elective was directly applicable to my BFSI role. Data Strategy and Governance elective is rare and valuable for leadership positions. Institution of Eminence status added credibility.",
-          "disliked": "MAHE BA is slightly cheaper with online exams. BITS Pilani in-person exam requirement is a trade-off.",
-          "body": "Good analytics MBA at a premium price. Financial Analytics and Data Strategy and Governance electives are hard to find elsewhere. The BITS Pilani brand and NIRF #7 ranking justified the fee for my career goals. In-person exams require time off work but add academic credibility. No placements offered."
-        },
-        {
-          "name": "Karthik J.",
-          "city": "Hyderabad",
-          "year": 2025,
-          "rating": 3.5,
-          "liked": "Econometrics and Time Series Analysis elective was academically rigorous. Supply Chain Analytics was practical for my logistics analytics role.",
-          "disliked": "At Rs 2.98L, JAIN BA at Rs 1.75L with NAAC A++ is hard to ignore. Smaller peer group compared to JAIN or MAHE analytics cohorts.",
-          "body": "Academically strong programme with niche electives. The BITS Pilani name matters for employer perception. But the fee gap against JAIN (NAAC A++) and Alliance is significant. If brand and elective depth are your priorities, BITS Pilani wins. If value and accreditation grade matter more, JAIN or MAHE are compelling. In-person exams are non-negotiable. No placements."
-        }
-      ]
     },
     "faqs": [
       {
@@ -139,6 +107,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 42,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

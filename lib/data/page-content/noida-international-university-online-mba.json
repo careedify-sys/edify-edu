@@ -20,7 +20,7 @@
     },
     "whoCanApply": {
       "heading": "Who Can Apply: Eligibility Criteria",
-      "body": "Eligibility: Graduation (any discipline) from a recognised university. No minimum percentage specified.. Working professionals are welcome to apply. There is no upper age limit. Candidates appearing for their final bachelor's exam may apply provisionally. Admission confirmation is subject to submission of final degree certificate within the first semester."
+      "body": "Eligibility: Graduation (any discipline) from a recognised university. No minimum percentage specified. Working professionals are welcome to apply. There is no upper age limit. Candidates appearing for their final bachelor's exam may apply provisionally. Admission confirmation is subject to submission of final degree certificate within the first semester."
     },
     "classes": {
       "heading": "How Classes Are Conducted",
@@ -82,58 +82,6 @@
       "heading": "Honest Verdict: Who Should Enroll, Who Should Look Elsewhere",
       "body": "Choose NIU Online MBA if: your primary goal is a UGC-DEB approved degree at the lowest available fee; you are meeting a mandatory degree eligibility criterion for a job or promotion; you have your own industry connects and do not rely on placement support; or budget is the single most important factor in your decision.\n\nLook elsewhere if: your target employer uses NIRF rank as a hiring filter; NAAC A++ is required for your sector's HR shortlisting; brand recognition outside NCR and UP is important; or you expect active placement support from the university.\n\nIf you are still undecided, our counsellor call is free. No commission, no pressure."
     },
-    "reviews": {
-      "heading": "What Students Are Saying",
-      "intro": "The following reviews are from students who enrolled in the Noida International University Online MBA. Ratings range from 2 to 5 stars, reflecting a real mix of experiences. These reviews are not curated to show only positive outcomes.",
-      "items": [
-        {
-          "rating": 5,
-          "name": "Ravi U.",
-          "city": "Greater Noida",
-          "year": 2024,
-          "liked": "At under Rs.90K, UGC-DEB approved, this is genuinely the most accessible option in this list.",
-          "disliked": "No NIRF rank yet. Some corporate HR filters will exclude NIU if they set a NIRF cutoff.",
-          "body": "At under Rs.90K, UGC-DEB approved, this is genuinely the most accessible option in this list."
-        },
-        {
-          "rating": 4,
-          "name": "Swati V.",
-          "city": "Agra",
-          "year": 2024,
-          "liked": "11 specialisations at this fee point is exceptional value. Finance track content is solid.",
-          "disliked": "LMS is functional but lacks the polish of NMIMS or Symbiosis systems.",
-          "body": "11 specialisations at this fee point is exceptional value. Finance track content is solid."
-        },
-        {
-          "rating": 4,
-          "name": "Gaurav W.",
-          "city": "Meerut",
-          "year": 2023,
-          "liked": "SPSS training in Sem 2 is a practical skill rarely offered in online MBAs at this price.",
-          "disliked": "Placement support is limited. Most placement success stories are from students who self-marketed.",
-          "body": "SPSS training in Sem 2 is a practical skill rarely offered in online MBAs at this price."
-        },
-        {
-          "rating": 3,
-          "name": "Nita X.",
-          "city": "Lucknow",
-          "year": 2023,
-          "liked": "UGC-DEB approval is confirmed. The degree is legally valid for government job applications.",
-          "disliked": "Brand recognition outside UP and NCR is weak. I had to explain the university at every interview.",
-          "body": "UGC-DEB approval is confirmed. The degree is legally valid for government job applications."
-        },
-        {
-          "rating": 3,
-          "name": "Manish Y.",
-          "city": "Delhi",
-          "year": 2024,
-          "liked": "Admission process is fast. I was enrolled within 5 days of application.",
-          "disliked": "NAAC A (not A++) is a genuine limiting factor for mid-size BFSI recruiters with stricter filters.",
-          "body": "Admission process is fast. I was enrolled within 5 days of application."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "heading": "Red Flags to Know Before Enrolling",
       "intro": "The following red flags are based on monitoring of student forums including Reddit r/indianeducation, Trustpilot reviews, and Consumer Complaints India.",
@@ -167,7 +115,7 @@
       },
       {
         "question": "What is the eligibility for NIU Online MBA?",
-        "answer": "Graduation (any discipline) from a recognised university. No minimum percentage specified.. Working professionals are welcome to apply. No entrance exam is required. No minimum percentage is specified, making it accessible for graduates with lower percentage scores."
+        "answer": "Graduation (any discipline) from a recognised university. No minimum percentage specified. Working professionals are welcome to apply. No entrance exam is required. No minimum percentage is specified, making it accessible for graduates with lower percentage scores."
       },
       {
         "question": "How does NIU conduct online MBA exams?",
@@ -202,6 +150,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:49.001Z",
     "sheetName": "niu-online_MBA",
-    "format": "named"
+    "format": "named",
+    "claimSweep": "2026-09-17"
   }
 }

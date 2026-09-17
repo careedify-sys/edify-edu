@@ -18,7 +18,7 @@
       "note": "Detailed Sem 3-4 curriculum for Chitkara's Cyber Security specialisation is shared at admission. Our counsellor can share the current subject list within 24 hours."
     },
     "whoHires": {
-      "body": "Cyber Security MBA graduates target security leadership and risk governance roles across industries:\n\n**Industries:** IT services, banking and financial services, consulting (Big 4 cyber advisory), insurance, defence and government, healthcare IT, e-commerce, and telecom\n\n**Entry-level roles:** Information Security Analyst, Cyber Risk Associate, Security Compliance Executive, IT Audit Associate, GRC Analyst\n\n**Mid-level roles (3-5 years experience):** Cyber Security Manager, Information Security Officer, IT Risk Manager, Security Governance Lead, Data Privacy Manager\n\n**Senior roles (7+ years):** CISO (Chief Information Security Officer), VP Information Security, Head of Cyber Risk, Director IT Governance, Security Practice Head (consulting)\n\n**Top hiring organisations:** TCS, Infosys, Wipro (security practices), Deloitte Cyber, EY Forensics, KPMG Risk Advisory, PwC Cyber, HDFC Bank (infosec), RBI-regulated entities (compliance), Palo Alto Networks, CrowdStrike, and government cyber agencies"
+      "body": "Cyber Security MBA graduates target security leadership and risk governance roles across industries:\n\n**Industries:** IT services, banking and financial services, consulting (Big 4 cyber advisory), insurance, defence and government, healthcare IT, e-commerce, and telecom\n\n**Entry-level roles:** Information Security Analyst, Cyber Risk Associate, Security Compliance Executive, IT Audit Associate, GRC Analyst\n\n**Mid-level roles (3-5 years experience):** Cyber Security Manager, Information Security Officer, IT Risk Manager, Security Governance Lead, Data Privacy Manager\n\n**Senior roles (7+ years):** CISO (Chief Information Security Officer), VP Information Security, Head of Cyber Risk, Director IT Governance, Security Practice Head (consulting)\n\n**Where to verify placement claims:** ask Chitkara University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Cyber Security MBA builds a management-plus-security skill profile that technical certifications alone do not cover:\n\n**Technical skills:**\n- Information Security Management: ISO 27001 frameworks, security policy design, incident response planning, and vendor security assessment\n- Cyber Risk Assessment: threat modelling, risk quantification, control mapping, and regulatory compliance gap analysis\n- Digital Forensics: evidence preservation, chain of custody management, forensic investigation methodology for corporate fraud and breach cases\n- Data Privacy: GDPR, India DPDP Act 2023, privacy impact assessments, and cross-border data transfer compliance\n\n**Applied skills:**\n- IT Governance: COBIT framework, IT audit planning, board-level security reporting, and IT budget justification for security investments\n- Security Strategy: building a security roadmap, SOC maturity assessment, zero-trust architecture planning at the management level\n\n**Soft skills:** Presenting cyber risk to non-technical boards, translating vulnerability reports into business impact language, managing cross-functional incident response teams, and negotiating security budgets with CFOs."
@@ -31,38 +31,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Cyber Security noted as the specialisation, issued by Chitkara University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A+ accreditation and NIRF #78 ranking. Valid for government and PSU hiring, corporate promotions, and higher education applications. DigiLocker digital verification is available for employer background checks. The Cyber Security MBA credential is particularly valued for CISO-track roles where a management degree alongside technical certifications (CISSP, CISM) is the standard expectation."
-    },
-    "reviews": {
-      "intro": "Three reviews from Chitkara Online MBA Cyber Security students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Arjun S.",
-          "city": "Chandigarh",
-          "year": 2025,
-          "rating": 4,
-          "liked": "Dedicated Cyber Security MBA is hard to find anywhere online. The combination of management and security governance fills a real career gap",
-          "disliked": "Rs 2,00,000 is mid-tier pricing without bundled certifications or industry partnerships",
-          "body": "I was searching for an online MBA that combined management with cyber security, and Chitkara was one of the very few options in India. As someone working in the Chandigarh IT corridor, the Punjab location and regional recruiter familiarity helped. The course covers governance and risk at a management level, not just technical hacking. Good for professionals targeting CISO or security leadership roles."
-        },
-        {
-          "name": "Priyanka M.",
-          "city": "Mohali",
-          "year": 2024,
-          "rating": 4,
-          "liked": "NAAC A+ and UGC-DEB approval gave confidence during my employer's verification process",
-          "disliked": "Online brand is still developing compared to established players like Amity or Manipal",
-          "body": "Chitkara's campus reputation in Punjab is strong, but the online programme is newer. The Cyber Security specialisation is unique and directly relevant to my IT audit role. NAAC A+ helped with my company's education verification. The Rs 50,000 per semester payment structure made budgeting straightforward."
-        },
-        {
-          "name": "Rohit K.",
-          "city": "Delhi",
-          "year": 2025,
-          "rating": 3,
-          "liked": "Rare specialisation. The cyber risk and governance focus differentiates it from technical security programmes",
-          "disliked": "Limited alumni network for online students. Career support could be stronger for non-Punjab candidates",
-          "body": "I chose this over a generic IT Management MBA because the Cyber Security focus matched my career plan. The content covers information security management and risk frameworks at a business level. The main limitation is brand recognition outside Punjab. At Rs 2,00,000, I expected more career support or certification bundles. The degree itself is solid for compliance and governance roles."
-        }
-      ]
     },
     "faqs": [
       {
@@ -106,6 +74,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 35,
     "hasSyllabusData": false,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

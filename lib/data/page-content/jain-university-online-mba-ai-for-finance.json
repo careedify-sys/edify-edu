@@ -73,7 +73,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "AI for Finance MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** Fintech startups, BFSI AI teams, Investment banking technology, Corporate treasury transformation, Risk and compliance technology, Digital banking\n\n**Entry-level roles:** Fintech Business Analyst, Credit Risk Analyst, Financial Data Analyst, AI in Banking Analyst, Corporate Finance Analyst\n\n**Mid-level roles (3-5 years experience):** AI Finance Manager, Fintech Product Manager, Risk Technology Manager, Corporate Finance AI Lead, Treasury Transformation Manager\n\n**Senior roles (7+ years):** CFO Digital, Head of Fintech Innovation, VP Risk Technology, Chief AI Officer (Finance), Director Corporate Finance Transformation\n\n**Top hiring organisations:** HDFC Bank AI Lab, ICICI Bank Digital, Axis Bank Fintech, Paytm, PhonePe, Razorpay, Groww, Zerodha Tech, Deloitte Finance Technology, EY Fintech, KPMG Risk Technology, Goldman Sachs India, Morgan Stanley India Technology"
+      "body": "This AI for Finance MBA syllabus maps to the following industries and roles:\n\n**Industries:** Fintech startups, BFSI AI teams, Investment banking technology, Corporate treasury transformation, Risk and compliance technology, Digital banking\n\n**Entry-level roles:** Fintech Business Analyst, Credit Risk Analyst, Financial Data Analyst, AI in Banking Analyst, Corporate Finance Analyst\n\n**Mid-level roles (3-5 years experience):** AI Finance Manager, Fintech Product Manager, Risk Technology Manager, Corporate Finance AI Lead, Treasury Transformation Manager\n\n**Senior roles (7+ years):** CFO Digital, Head of Fintech Innovation, VP Risk Technology, Chief AI Officer (Finance), Director Corporate Finance Transformation\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN AI for Finance specialisation builds skills at the AI-finance intersection that banks, fintech firms, and corporate finance teams seek at manager level:\n\n**Technical skills:**\n- AI in Corporate Finance and Valuation: ML-assisted financial modeling, AI-driven equity valuation, and algorithmic scenario analysis for corporate finance and investment banking roles\n- AI-Driven Risk Management and Fraud Detection: predictive fraud detection model deployment, AI credit risk scoring, and digital forensics for BFSI risk and compliance teams\n- Predictive Financial Modelling: ML-assisted revenue forecasting, time-series prediction, and automated financial scenario analysis for FP&A and corporate planning\n- Fintech Innovations: blockchain payment system evaluation, DeFi application assessment, and RPA banking operations management for fintech product and innovation roles\n\n**Applied skills:**\n- Tech-Driven M&A: AI-assisted due diligence, comparable analysis automation, and technology-led deal structuring for investment banking and M&A advisory\n- AI for Business Decision Making: GenAI tools for financial analysis, RPA deployment in treasury operations, and AI governance for financial decision-making\n\n**Soft skills:** Building AI business cases for CFO and board approval, managing fintech vendor evaluation, leading AI transformation in traditional finance teams, and communicating model risk to audit committees."
@@ -86,38 +86,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. The AI for Finance specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA AI for Finance alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Vivek Krishnaswamy",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "AI in Corporate Finance and Valuation was directly applicable to my role at a Bengaluru fintech. Predictive Financial Modelling helped me build automated revenue forecasts that replaced manual Excel models. Blockchain and RPA subject was unique.",
-          "disliked": "Psychology of Leadership felt out of place in an AI finance curriculum - could be replaced with a dedicated AI ethics in finance module.",
-          "body": "I was in corporate finance for 5 years and wanted to move to AI-driven roles. The JAIN AI for Finance MBA gave me the positioning I needed. Bengaluru fintech firms responded well to the AI finance credential combined with my work experience."
-        },
-        {
-          "name": "Lakshmi Narayan",
-          "city": "Hyderabad",
-          "year": 2023,
-          "rating": 4,
-          "liked": "AI-Driven Risk Management and Fraud Detection was outstanding. Directly applicable to my risk technology role at a Hyderabad bank. Fintech Innovations gave good DeFi and blockchain grounding.",
-          "disliked": "Tech-Driven M&A subject was conceptual rather than applied. More live deal case studies would strengthen it.",
-          "body": "Good programme for Hyderabad BFSI AI careers. The AI finance combination is rare in online MBA programmes at this fee range. Self-supplementation with Python and ML courses alongside the MBA is recommended for full technical depth."
-        },
-        {
-          "name": "Rajan Pillai",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 3,
-          "liked": "AI-Enabled Leadership and Change Management was helpful for presenting AI transformation to senior finance management.",
-          "disliked": "The AI content assumes business management audience rather than technical depth. For technical ML engineering, additional specialised courses needed.",
-          "body": "Good credential for finance managers moving into AI-driven roles. Not suitable for those wanting deep technical ML engineering. Positioned well for business-side AI leadership in finance functions."
-        }
-      ]
     },
     "faqs": [
       {
@@ -158,6 +126,7 @@
     "wordCount": 2150,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

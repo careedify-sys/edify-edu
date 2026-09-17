@@ -69,7 +69,7 @@
       "note": "Sem 1-2 shared core subjects across all Alliance MBA specialisations. Alliance MBA HRM shares common Sem 4 modules with Finance, adding cross-functional financial literacy to HR strategy. Design Thinking is a mandatory Sem 3 subject for all specs."
     },
     "whoHires": {
-      "body": "HRM MBA graduates from Alliance Online target these industries and roles:\n\n**Industries:** IT and tech companies, BFSI, Manufacturing, Consulting firms, E-commerce, Pharmaceutical companies\n\n**Entry-level roles:** HR Executive, Talent Acquisition Specialist, HR Analyst, L&D Coordinator, Compensation and Benefits Analyst\n\n**Mid-level roles (3-5 years experience):** HR Business Partner, Talent Acquisition Manager, L&D Manager, HR Analytics Manager, DEI Programme Manager\n\n**Senior roles (7+ years):** CHRO, VP Human Resources, Head of Talent, Director L&D, Chief People Officer\n\n**Top hiring sectors:** Infosys, Wipro, TCS, HCL, Accenture, Deloitte, KPMG, Amazon, Flipkart, Bosch, Continental, Biocon, Razorpay"
+      "body": "HRM MBA graduates from Alliance Online target these industries and roles:\n\n**Industries:** IT and tech companies, BFSI, Manufacturing, Consulting firms, E-commerce, Pharmaceutical companies\n\n**Entry-level roles:** HR Executive, Talent Acquisition Specialist, HR Analyst, L&D Coordinator, Compensation and Benefits Analyst\n\n**Mid-level roles (3-5 years experience):** HR Business Partner, Talent Acquisition Manager, L&D Manager, HR Analytics Manager, DEI Programme Manager\n\n**Senior roles (7+ years):** CHRO, VP Human Resources, Head of Talent, Director L&D, Chief People Officer\n\n**Top hiring sectors:** Infosys, Wipro, TCS, HCL, Accenture, Deloitte, KPMG, Amazon, Flipkart, Bosch, Continental, Biocon, Razorpay\n\n**Where to verify placement claims:** ask Alliance University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Alliance HRM specialisation builds AI-augmented people management skills:\n\n**Technical skills:**\n- HR Analytics using AI: attrition prediction models, hiring funnel optimisation, employee engagement scoring using machine learning\n- Rewards and Performance Analytics: compensation benchmarking, variable pay modelling, and performance measurement frameworks\n- Diversity Equity and Inclusion Metrics: DEI KPI definition, inclusion index construction, and evidence-based intervention design\n- Technology Enabled Learning: LMS evaluation, microlearning design, and AI-driven personalised learning path creation\n\n**Cross-functional skills:**\n- Financial Analysis and Modelling: interpreting financial statements and building workforce cost models for board presentations\n- Mergers Acquisition and Corporate Restructuring: people-side M&A due diligence, workforce integration planning, and cultural integration\n\n**Soft skills:** Design Thinking for employee experience redesign, strategic workforce planning for leadership conversations, DEI programme facilitation, and presenting HR ROI to CFOs and boards."
@@ -82,38 +82,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Alliance University, Bangalore, and carries the Alliance name with the MBA designation. The Human Resource Management specialisation is noted on the marksheet and transcript. The degree is WES recognised for international credential evaluation. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Alliance Online MBA HRM students. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Meera",
-          "city": "Bangalore",
-          "year": 2025,
-          "rating": 5,
-          "liked": "HR Analytics using AI was the standout subject. I used the attrition prediction models directly in my current HR analytics role. The AI integration is built into the curriculum, not a surface-level addition.",
-          "disliked": "Smaller alumni network compared to Amity or JAIN online programmes.",
-          "body": "I work in HR analytics at a Bangalore tech firm and the Alliance HRM MBA gave me structured frameworks for AI-driven people analytics. The cross-functional finance modules in Sem 4 were unexpected but genuinely useful for HR business partner conversations with finance teams."
-        },
-        {
-          "name": "Rahul",
-          "city": "Pune",
-          "year": 2025,
-          "rating": 4,
-          "liked": "DEI Metrics and Strategic Workforce Management subjects were well-designed. Technology Enabled Learning helped me redesign our company's L&D programme.",
-          "disliked": "Alliance's online brand is newer. Pune employers needed explanation about the university's credentials and NAAC A status.",
-          "body": "Strong HRM curriculum with practical AI integration. The Rs 1.75L total cost is competitive. For Pune-based HR roles, I had to explain the Alliance credential more than I would with Amity. Content quality was high."
-        },
-        {
-          "name": "Ananya",
-          "city": "Hyderabad",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Rewards and Performance Analytics gave practical compensation benchmarking skills. Fees were competitive.",
-          "disliked": "NAAC A is a step below A+ or A++. The specialisation list is smaller than universities offering 15+ options. Limited elective choices within HRM.",
-          "body": "Decent programme for the price. The AI subjects are a differentiator that other HRM programmes at this price point do not offer. But for brand-conscious employers, the NAAC A grade and newer online presence are limitations to be aware of."
-        }
-      ]
     },
     "faqs": [
       {
@@ -155,6 +123,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 29,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

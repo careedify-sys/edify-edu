@@ -18,7 +18,7 @@
       "semesters": []
     },
     "whoHires": {
-      "body": "ICFAI MBA HRM graduates target HR roles across industries:\n\n**Industries:** IT services, manufacturing, banking and financial services, consulting (HR advisory), healthcare, FMCG, retail, and government enterprises\n\n**Entry-level roles:** HR Executive, Recruitment Executive, Compensation Analyst, L&D Coordinator, Employee Relations Executive, HR Operations Associate\n\n**Mid-level roles (3-5 years experience):** HR Manager, Talent Acquisition Manager, Compensation and Benefits Manager, HR Business Partner, L&D Manager, OD Manager\n\n**Senior roles (7+ years):** HR Director, CHRO, VP HR, Head of Talent Management, Head of OD, Chief People Officer\n\n**Employers:** IT services (TCS, Infosys, Wipro, Tech Mahindra HR teams), consulting (KPMG People Advisory, Deloitte Human Capital), manufacturing (Tata, Mahindra, L&T HR), banking (HDFC, ICICI, SBI HR), and Hyderabad/Telangana corporate employers.\n\n**Note:** ICFAI provides career support. The IBS alumni network spans management functions across South India and major Indian metros."
+      "body": "ICFAI MBA HRM graduates target HR roles across industries:\n\n**Industries:** IT services, manufacturing, banking and financial services, consulting (HR advisory), healthcare, FMCG, retail, and government enterprises\n\n**Entry-level roles:** HR Executive, Recruitment Executive, Compensation Analyst, L&D Coordinator, Employee Relations Executive, HR Operations Associate\n\n**Mid-level roles (3-5 years experience):** HR Manager, Talent Acquisition Manager, Compensation and Benefits Manager, HR Business Partner, L&D Manager, OD Manager\n\n**Senior roles (7+ years):** HR Director, CHRO, VP HR, Head of Talent Management, Head of OD, Chief People Officer\n\n**Employers:** IT services (TCS, Infosys, Wipro, Tech Mahindra HR teams), consulting (KPMG People Advisory, Deloitte Human Capital), manufacturing (Tata, Mahindra, L&T HR), banking (HDFC, ICICI, SBI HR), and Hyderabad/Telangana corporate employers.\n\n**Note:** ICFAI provides career support. The IBS alumni network spans management functions across South India and major Indian metros.\n\n**Where to verify placement claims:** ask ICFAI Foundation for Higher Education Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The HRM specialisation builds skills across people management, compliance, and talent strategy:\n\n**Technical skills:**\n- Talent Management: workforce planning models, succession pipeline design, high-potential identification criteria, and employer branding\n- Compensation Design: job evaluation methodology, pay band construction, variable pay frameworks, and statutory compliance (PF, ESI, gratuity)\n- HR Analytics: attrition prediction models, engagement score analysis, recruitment funnel metrics, and people analytics dashboard design\n- Industrial Relations: Industrial Disputes Act interpretation, new labour code implementation, and collective bargaining process\n\n**Applied skills:**\n- Performance Management: goal-setting frameworks (OKR, KRA), appraisal calibration, PIP documentation, and 360-degree feedback systems\n- OD and Change: organisational diagnosis, change readiness assessment, culture transformation, and intervention effectiveness measurement\n\n**Soft skills:** Managing sensitive employee relations cases, presenting HR strategy to boards, facilitating change management programmes, and coaching managers on performance conversations."
@@ -31,38 +31,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Human Resource Management as the specialisation, issued by ICFAI Foundation for Higher Education (IFHE), Hyderabad under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation and NIRF #46 Management rank. Valid for government HR officer recruitment, PSU HR positions, banking HR promotions, and private-sector HR management roles. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from ICFAI Foundation Online MBA HRM students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Meena R.",
-          "city": "Hyderabad",
-          "year": 2024,
-          "rating": 4,
-          "liked": "NAAC A++ from a NIRF Management ranked university. This credential combination cleared HR verification at every company I applied to",
-          "disliked": "ICFAI's strength is finance. The HR programme benefits from the institutional brand but the HR-specific faculty depth may not match dedicated HR-focused institutions",
-          "body": "I chose ICFAI for the NAAC A++ credential. For HR roles where employer verification is strict, the A++ grade is a genuine advantage. The IBS alumni network helped me connect with HR professionals in Hyderabad IT companies. The trade-off is that ICFAI is known as a finance institution. For HR, the brand is strong but not as specifically targeted as it is for finance careers."
-        },
-        {
-          "name": "Suresh M.",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "The IBS brand is recognised by IT services companies across South India. HR managers at TCS, Infosys, and Wipro know the ICFAI name",
-          "disliked": "Online placement support is not as structured as the campus IBS programme. Self-directed networking is essential",
-          "body": "The programme delivered on credentials. NAAC A++ and NIRF Management rank are verifiable signals that HR departments accept. The curriculum covered the essentials. Career outcomes depend on your own effort more than university placement services for online students."
-        },
-        {
-          "name": "Kavita D.",
-          "city": "Pune",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Fee is reasonable for a NAAC A++ institution. Most A++ universities charge significantly more for online MBA",
-          "disliked": "Fee details not published on portal. Study materials could be more updated for contemporary HR practices like people analytics and DEI",
-          "body": "Adequate programme from a strong institution. If your priority is NAAC A++ at a reasonable fee, ICFAI delivers that. If your priority is cutting-edge HR content (HR tech, people analytics platforms, DEI metrics), you may find the curriculum more traditional. The credential is the primary value proposition."
-        }
-      ]
     },
     "faqs": [
       {
@@ -106,6 +74,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 39,
     "hasSyllabusData": false,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

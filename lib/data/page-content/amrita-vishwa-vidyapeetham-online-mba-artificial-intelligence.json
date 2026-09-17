@@ -19,27 +19,57 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "International Business", "desc": "Global trade frameworks, cross-border market entry strategies, FDI analysis, and managing international operations." },
-            { "name": "Business Analytics and Business Modelling", "desc": "Quantitative business modelling, regression analysis, forecasting techniques, and data-driven decision-making frameworks." },
-            { "name": "Artificial Intelligence and its Applications", "desc": "ML application areas, computer vision, NLP use cases, and AI deployment frameworks for business decision-makers." },
-            { "name": "Data Visualization", "desc": "Power BI, Tableau, and Python visualisation libraries for communicating AI model outputs to non-technical audiences." },
-            { "name": "Education for Life", "desc": "Soft skills development, mindfulness, health and wellbeing, and holistic personal effectiveness for professionals." }
+            {
+              "name": "International Business",
+              "desc": "Global trade frameworks, cross-border market entry strategies, FDI analysis, and managing international operations."
+            },
+            {
+              "name": "Business Analytics and Business Modelling",
+              "desc": "Quantitative business modelling, regression analysis, forecasting techniques, and data-driven decision-making frameworks."
+            },
+            {
+              "name": "Artificial Intelligence and its Applications",
+              "desc": "ML application areas, computer vision, NLP use cases, and AI deployment frameworks for business decision-makers."
+            },
+            {
+              "name": "Data Visualization",
+              "desc": "Power BI, Tableau, and Python visualisation libraries for communicating AI model outputs to non-technical audiences."
+            },
+            {
+              "name": "Education for Life",
+              "desc": "Soft skills development, mindfulness, health and wellbeing, and holistic personal effectiveness for professionals."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Environment Sustainability and Governance", "desc": "ESG reporting frameworks, corporate sustainability strategy, carbon accounting basics, and governance obligations." },
-            { "name": "Project", "desc": "Applied industry research project integrating AI specialisation knowledge with structured business problem-solving and academic reporting." },
-            { "name": "Advanced Machine Learning", "desc": "Ensemble methods, model tuning, cross-validation, and production ML pipeline design for business analytics applications." },
-            { "name": "Natural Language Processing", "desc": "Text classification, sentiment analysis, named entity recognition, and NLP applications in customer and business analytics." },
-            { "name": "Deep Learning", "desc": "Neural network architectures, CNN and RNN basics, transfer learning, and deep learning model evaluation for business use cases." }
+            {
+              "name": "Environment Sustainability and Governance",
+              "desc": "ESG reporting frameworks, corporate sustainability strategy, carbon accounting basics, and governance obligations."
+            },
+            {
+              "name": "Project",
+              "desc": "Applied industry research project integrating AI specialisation knowledge with structured business problem-solving and academic reporting."
+            },
+            {
+              "name": "Advanced Machine Learning",
+              "desc": "Ensemble methods, model tuning, cross-validation, and production ML pipeline design for business analytics applications."
+            },
+            {
+              "name": "Natural Language Processing",
+              "desc": "Text classification, sentiment analysis, named entity recognition, and NLP applications in customer and business analytics."
+            },
+            {
+              "name": "Deep Learning",
+              "desc": "Neural network architectures, CNN and RNN basics, transfer learning, and deep learning model evaluation for business use cases."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "AI MBA graduates from Amrita Vishwa Vidyapeetham Online are hired across India's technology and analytics-driven sectors:\n\n**Industries:** IT services (AI practices), BFSI analytics, e-commerce AI teams, healthcare AI, manufacturing analytics, consulting firms with AI practices, and AI-native startups\n\n**Entry-level roles:** AI Product Analyst, Business Analyst (AI projects), Data Analyst, ML Ops Coordinator, AI Business Consultant (junior), Analytics Associate\n\n**Mid-level roles (3-5 years experience):** AI Product Manager, ML Project Manager, Analytics Manager, Head of AI (mid-market), Data Science Manager, AI Strategy Manager\n\n**Senior roles (7+ years):** VP AI and Analytics, Chief AI Officer, Director of Data Science, Head of AI Products, VP Technology (AI), Chief Data Officer\n\n**Top hiring organisations:** TCS AI.Cloud, Infosys Nia, Wipro Holmes, Accenture AI, Capgemini Applied Intelligence, IBM iX, HDFC Bank AI, Flipkart AI, Amazon India ML, PhonePe data science, Zomato analytics, and AI-first startups across Bengaluru, Hyderabad, Pune, and Chennai"
+      "body": "This AI MBA syllabus maps to the following India's technology and analytics-driven sectors:\n\n**Industries:** IT services (AI practices), BFSI analytics, e-commerce AI teams, healthcare AI, manufacturing analytics, consulting firms with AI practices, and AI-native startups\n\n**Entry-level roles:** AI Product Analyst, Business Analyst (AI projects), Data Analyst, ML Ops Coordinator, AI Business Consultant (junior), Analytics Associate\n\n**Mid-level roles (3-5 years experience):** AI Product Manager, ML Project Manager, Analytics Manager, Head of AI (mid-market), Data Science Manager, AI Strategy Manager\n\n**Senior roles (7+ years):** VP AI and Analytics, Chief AI Officer, Director of Data Science, Head of AI Products, VP Technology (AI), Chief Data Officer\n\n**Where to verify placement claims:** ask Amrita Vishwa Vidyapeetham Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Artificial Intelligence specialisation builds skills that AI product management, analytics management, and technology advisory employers test at manager level:\n\n**Technical skills:**\n- Machine Learning: supervised and unsupervised learning application, model selection rationale, model evaluation metrics, and business use-case scoping for ML projects\n- Deep Learning: neural network architecture overview, CNN application in image recognition, RNN for sequential data, and transfer learning strategy for pre-trained models\n- NLP: text classification for customer feedback, sentiment analysis for brand monitoring, entity extraction for contract review, and chatbot quality assessment\n- Data Visualisation: Power BI dashboard design, Tableau story creation, executive KPI reporting, and AI output communication to non-technical stakeholders\n\n**Applied skills:**\n- AI Project Management: AI sprint planning, vendor model evaluation, AI ethics risk assessment, and AI ROI calculation for board presentations\n- AI Strategy: build-vs-buy framework for AI capabilities, AI roadmap design, AI governance policy writing, and AI talent strategy\n\n**Soft skills:** Translating AI model outputs into business decisions for non-technical executives, managing AI implementation projects across engineering, data, and business teams, presenting AI investment cases to CFOs and boards, and communicating model limitations and confidence intervals clearly."
@@ -52,38 +82,6 @@
     },
     "certificate": {
       "body": "Graduates receive an Amrita Vishwa Vidyapeetham MBA degree certificate with Artificial Intelligence noted on the marksheet, issued under UGC-DEB 2020 online mode standards.\n\nAmrita holds NAAC A++ - India's highest accreditation grade - and NIRF #8 University 2025. The degree is WES-assessed as equivalent to a Canadian and American master's degree, giving graduates formal credential recognition for roles in the USA and Canada without requiring a separate evaluation. DigiLocker verification is available."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Amrita Vishwa Vidyapeetham Online MBA Artificial Intelligence alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Karthik M.",
-          "city": "Bengaluru",
-          "year": 2025,
-          "rating": 4,
-          "liked": "Advanced ML and NLP subjects gave me the vocabulary and frameworks to lead AI projects without coding myself",
-          "disliked": "Counsellor response time during the admission process was slow - took 3 working days to get fee confirmation",
-          "body": "I manage an AI product team at a Bengaluru startup. The Business Analytics and Modelling subject in Sem 3 gave me the quantitative grounding I needed alongside the ML and NLP content. WES recognition was the deciding factor - I was targeting a role at a Canadian fintech and the formally assessed credential made a real difference. NAAC A++ from NIRF #8 cleared every employer filter I faced. The AI Project in Sem 4 was directly applicable to my current product roadmap work."
-        },
-        {
-          "name": "Priya R.",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Deep Learning and NLP content gave me the technical literacy to evaluate AI vendor proposals credibly",
-          "disliked": "LMS interface was average - navigating between subjects required multiple clicks and could be streamlined",
-          "body": "I work in AI strategy at a BFSI firm. The combination of advanced ML, deep learning, and data visualisation gave me the technical vocabulary to manage AI vendor evaluations without relying entirely on my engineering team. NAAC A++ from Amrita is the strongest credential in online MBA space and that matters when you're presenting AI business cases to senior leadership. Zero-cost EMI made the Rs 2,44,000 tuition manageable without a large upfront payment."
-        },
-        {
-          "name": "Vishnu N.",
-          "city": "Hyderabad",
-          "year": 2024,
-          "rating": 4,
-          "liked": "NIRF #8 and NAAC A++ cleared every AI product manager role filter at top IT firms",
-          "disliked": "Proctoring software for exams had occasional technical issues - had to restart exam sessions twice",
-          "body": "I transitioned from a business analyst role to an AI product manager designation using this MBA. The NLP and deep learning subjects gave me the technical credibility in product interviews. The Amrita brand at NAAC A++ and NIRF #8 University 2025 is unmatched in the online MBA space for AI roles. Study Abroad option was available but I did not use it - the credential value alone was sufficient for my career move."
-        }
-      ]
     },
     "faqs": [
       {
@@ -126,6 +124,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 19,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

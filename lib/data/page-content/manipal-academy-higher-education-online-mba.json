@@ -60,56 +60,6 @@
     "honestVerdict": {
       "body": "This verdict is based on publicly available data from UGC-DEB, NAAC, and NIRF portals, cross-referenced with student feedback from verified sources.\n\nChoose this if:\n- NIRF top-3 and NAAC A++ credentials are your primary filter\n- You want healthcare, pharma, or data science specialisations from a research university\n- The IoE (Institution of Eminence) tag matters for your career sector\n- Your budget allows Rs 2.92 lakh over 2 years\n\nLook elsewhere if:\n- Your budget ceiling is below Rs 2 lakh and other NAAC A++ options exist\n- You want more than 9 specialisation options\n- You prefer a university with a larger North India placement footprint\n- You need Digital Marketing or International Business as a specialisation\n\nThe decision between two similarly accredited programmes often comes down to three factors: the specialisation you need, the placement network that matters for your target industry, and the fee your budget can absorb without strain. Use the /compare tool to map your shortlist on these three axes. If you are still undecided, our counsellor call is free. Visit /contact and we will compare your shortlisted options against your specific career goal and budget without sales pressure."
     },
-    "reviews": {
-      "items": [
-        {
-          "name": "Karthik R.",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "NIRF #3 and NAAC A++ on a single certificate is hard to argue with. The 1:1 industry mentorship was real, not performative. My mentor from a KPMG background gave useful strategic direction. Coursera access helped me add two relevant certifications during the programme at zero extra cost.",
-          "disliked": "",
-          "body": "NIRF #3 and NAAC A++ on a single certificate is hard to argue with. The 1:1 industry mentorship was real, not performative. My mentor from a KPMG background gave useful strategic direction. Coursera access helped me add two relevant certifications during the programme at zero extra cost."
-        },
-        {
-          "name": "Meera N.",
-          "city": "Hyderabad",
-          "year": 2023,
-          "rating": 4,
-          "liked": "MAHE's credentials are genuinely strong. The capstone project was the most useful learning experience in the programme. Faculty quality was uneven though; two subjects had excellent faculty and two had adjunct instructors with limited engagement. Still worth Rs 2.92 lakh for the brand.",
-          "disliked": "",
-          "body": "MAHE's credentials are genuinely strong. The capstone project was the most useful learning experience in the programme. Faculty quality was uneven though; two subjects had excellent faculty and two had adjunct instructors with limited engagement. Still worth Rs 2.92 lakh for the brand."
-        },
-        {
-          "name": "Vikram P.",
-          "city": "Pune",
-          "year": 2024,
-          "rating": 4,
-          "liked": "The IoE status made a difference when I applied for an international role. My foreign employer's HR team recognised it during background verification. Live session timings were awkward for IST-plus clients I was supporting. Recorded backups covered me when I missed live sessions.",
-          "disliked": "",
-          "body": "The IoE status made a difference when I applied for an international role. My foreign employer's HR team recognised it during background verification. Live session timings were awkward for IST-plus clients I was supporting. Recorded backups covered me when I missed live sessions."
-        },
-        {
-          "name": "Divya M.",
-          "city": "Chennai",
-          "year": 2023,
-          "rating": 3,
-          "liked": "The Coursera integration is positive but can feel disconnected from the MBA curriculum. You are effectively running two tracks in parallel. The Minor Project in Semester 3 was well structured. Career services over-promised placement support compared to what online students actually received.",
-          "disliked": "",
-          "body": "The Coursera integration is positive but can feel disconnected from the MBA curriculum. You are effectively running two tracks in parallel. The Minor Project in Semester 3 was well structured. Career services over-promised placement support compared to what online students actually received."
-        },
-        {
-          "name": "Suresh A.",
-          "city": "Mumbai",
-          "year": 2024,
-          "rating": 3,
-          "liked": "The proctoring software rejected my Voter ID twice before accepting my Aadhaar. That caused unnecessary stress on exam day. The programme content is good but at Rs 2.92 lakh I expected more structured placement support than what online students received. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation.",
-          "disliked": "",
-          "body": "The proctoring software rejected my Voter ID twice before accepting my Aadhaar. That caused unnecessary stress on exam day. The programme content is good but at Rs 2.92 lakh I expected more structured placement support than what online students received. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "intro": "",
       "flags": [
@@ -135,6 +85,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:49.004Z",
     "sheetName": "mahe-online_MBA",
-    "format": "named"
+    "format": "named",
+    "claimSweep": "2026-09-17"
   }
 }

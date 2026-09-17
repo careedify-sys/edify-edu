@@ -60,56 +60,6 @@
     "honestVerdict": {
       "body": "This verdict is based on publicly available data from UGC-DEB, NAAC, and NIRF portals, cross-referenced with student feedback from verified sources.\n\nChoose this if:\n- You need a niche specialisation: agri-business, biotech, food-tech, or real estate\n- 16 specialisation choices with QS-ranked brand suits your profile\n- QS ranking matters for international credential recognition\n- Budget of Rs 1.3 lakh fits and you want more tracks than Galgotias\n\nLook elsewhere if:\n- You need NIRF top-50 ranking (Shoolini is NIRF #69 overall)\n- Your employer specifically requires NAAC A++ credentials\n- North India placement networks are your primary concern (CU Online fits better)\n- You object to a mandatory direct-selling module in Semester 2 for all tracks\n\nThe decision between two similarly accredited programmes often comes down to three factors: the specialisation you need, the placement network that matters for your target industry, and the fee your budget can absorb without strain. Use the /compare tool to map your shortlist on these three axes. If you are still undecided, our counsellor call is free. Visit /contact and we will compare your shortlisted options against your specific career goal and budget without sales pressure."
     },
-    "reviews": {
-      "items": [
-        {
-          "name": "Pooja M.",
-          "city": "Shimla",
-          "year": 2024,
-          "rating": 5,
-          "liked": "The Agri-Business specialisation is unique in Indian online MBAs. I work in the agricultural input sector and the curriculum was immediately applicable. The Capstone Project in Semester 4 let me research my own company's supply chain. Excellent value for Rs 1.3 lakh.",
-          "disliked": "",
-          "body": "The Agri-Business specialisation is unique in Indian online MBAs. I work in the agricultural input sector and the curriculum was immediately applicable. The Capstone Project in Semester 4 let me research my own company's supply chain. Excellent value for Rs 1.3 lakh."
-        },
-        {
-          "name": "Hardeep S.",
-          "city": "Chandigarh",
-          "year": 2023,
-          "rating": 4,
-          "liked": "QS ranking and NAAC A+ were my two filters and Shoolini met both. The Data Science and Business Analytics track had strong content for a non-technical student. The Storytelling with Data module in Semester 3 was genuinely useful in my current role.",
-          "disliked": "",
-          "body": "QS ranking and NAAC A+ were my two filters and Shoolini met both. The Data Science and Business Analytics track had strong content for a non-technical student. The Storytelling with Data module in Semester 3 was genuinely useful in my current role."
-        },
-        {
-          "name": "Manpreet K.",
-          "city": "Ludhiana",
-          "year": 2024,
-          "rating": 4,
-          "liked": "16 specialisations is the standout feature. I chose Digital Marketing and the content was current and practical. The Future Leader's Program in Semester 4 was good for professional development. Assignment deadlines in Semester 3 were clustered in two weeks, stressful alongside a full-time job.",
-          "disliked": "",
-          "body": "16 specialisations is the standout feature. I chose Digital Marketing and the content was current and practical. The Future Leader's Program in Semester 4 was good for professional development. Assignment deadlines in Semester 3 were clustered in two weeks, stressful alongside a full-time job."
-        },
-        {
-          "name": "Vikram T.",
-          "city": "Delhi",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Fundamentals of Direct Selling in Semester 2 is mandatory for all specialisations, which felt odd for IT Management. The content itself is fine but irrelevant to my track. Shoolini should make this elective rather than compulsory for non-sales students.",
-          "disliked": "",
-          "body": "Fundamentals of Direct Selling in Semester 2 is mandatory for all specialisations, which felt odd for IT Management. The content itself is fine but irrelevant to my track. Shoolini should make this elective rather than compulsory for non-sales students."
-        },
-        {
-          "name": "Geeta R.",
-          "city": "Patiala",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Career services provided a resume workshop but did not extend to structured placement for online students. The certificate arrived six weeks after convocation, delaying a background verification at my new employer. Programme content is solid but manage expectations on placement outcomes. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation.",
-          "disliked": "",
-          "body": "Career services provided a resume workshop but did not extend to structured placement for online students. The certificate arrived six weeks after convocation, delaying a background verification at my new employer. Programme content is solid but manage expectations on placement outcomes. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "intro": "",
       "flags": [
@@ -135,6 +85,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:49.009Z",
     "sheetName": "shoolini-university-online_MBA",
-    "format": "named"
+    "format": "named",
+    "claimSweep": "2026-09-17"
   }
 }

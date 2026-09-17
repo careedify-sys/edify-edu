@@ -19,30 +19,69 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Artificial Intelligence in Business", "desc": "AI applications in business, ML basics for managers, AI-driven automation, and ethical AI in enterprise contexts." },
-            { "name": "Internship/OJT", "desc": "Mandatory industry internship or on-the-job training with faculty supervision and evaluation." },
-            { "name": "Corporate Skill Development-2", "desc": "Advanced professional skills: executive presentation, analytical communication, and stakeholder management." },
-            { "name": "IT Security and Cyber Law", "desc": "Information security fundamentals, IT Act 2000, DPDP Act 2023, cybercrime categories, data protection compliance, and ISO 27001 awareness." },
-            { "name": "BPR, Business Process Management and ERP", "desc": "Business process reengineering methodology, BPM lifecycle, ERP architecture (SAP/Oracle module overview), ERP implementation lifecycle, and process automation." },
-            { "name": "E-Commerce and Electronic Governance", "desc": "E-commerce business models, payment gateway architecture, digital India initiatives, e-governance frameworks, and UPI/digital payments ecosystem." },
-            { "name": "Data Management and Analysis", "desc": "Relational database design, SQL fundamentals, data warehousing concepts, ETL processes, data quality management, and data governance basics." },
-            { "name": "Predictive Analytics", "desc": "Regression modelling, classification techniques (decision trees, logistic regression), time series forecasting, model validation, and business applications (churn, demand, credit scoring)." },
-            { "name": "Blockchain", "desc": "Distributed ledger technology fundamentals, consensus mechanisms, smart contracts, enterprise blockchain use cases (supply chain, trade finance), and regulatory landscape." }
+            {
+              "name": "Artificial Intelligence in Business",
+              "desc": "AI applications in business, ML basics for managers, AI-driven automation, and ethical AI in enterprise contexts."
+            },
+            {
+              "name": "Internship/OJT",
+              "desc": "Mandatory industry internship or on-the-job training with faculty supervision and evaluation."
+            },
+            {
+              "name": "Corporate Skill Development-2",
+              "desc": "Advanced professional skills: executive presentation, analytical communication, and stakeholder management."
+            },
+            {
+              "name": "IT Security and Cyber Law",
+              "desc": "Information security fundamentals, IT Act 2000, DPDP Act 2023, cybercrime categories, data protection compliance, and ISO 27001 awareness."
+            },
+            {
+              "name": "BPR, Business Process Management and ERP",
+              "desc": "Business process reengineering methodology, BPM lifecycle, ERP architecture (SAP/Oracle module overview), ERP implementation lifecycle, and process automation."
+            },
+            {
+              "name": "E-Commerce and Electronic Governance",
+              "desc": "E-commerce business models, payment gateway architecture, digital India initiatives, e-governance frameworks, and UPI/digital payments ecosystem."
+            },
+            {
+              "name": "Data Management and Analysis",
+              "desc": "Relational database design, SQL fundamentals, data warehousing concepts, ETL processes, data quality management, and data governance basics."
+            },
+            {
+              "name": "Predictive Analytics",
+              "desc": "Regression modelling, classification techniques (decision trees, logistic regression), time series forecasting, model validation, and business applications (churn, demand, credit scoring)."
+            },
+            {
+              "name": "Blockchain",
+              "desc": "Distributed ledger technology fundamentals, consensus mechanisms, smart contracts, enterprise blockchain use cases (supply chain, trade finance), and regulatory landscape."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Strategic Management", "desc": "Corporate strategy, competitive analysis, strategic planning, and digital strategy frameworks." },
-            { "name": "Major Project", "desc": "Comprehensive IT/analytics project integrating Sem 1-4 learning. Industry-linked problem with faculty evaluation." },
-            { "name": "Big Data and Data Visualisation", "desc": "Hadoop/Spark ecosystem overview, big data architecture, Tableau/Power BI dashboard design, data storytelling, and visual analytics for executive reporting." },
-            { "name": "Advanced Tools for Data Science", "desc": "Python (pandas, scikit-learn), R programming basics, ML library application, data pipeline concepts, and advanced analytics workflows." }
+            {
+              "name": "Strategic Management",
+              "desc": "Corporate strategy, competitive analysis, strategic planning, and digital strategy frameworks."
+            },
+            {
+              "name": "Major Project",
+              "desc": "Comprehensive IT/analytics project integrating Sem 1-4 learning. Industry-linked problem with faculty evaluation."
+            },
+            {
+              "name": "Big Data and Data Visualisation",
+              "desc": "Hadoop/Spark ecosystem overview, big data architecture, Tableau/Power BI dashboard design, data storytelling, and visual analytics for executive reporting."
+            },
+            {
+              "name": "Advanced Tools for Data Science",
+              "desc": "Python (pandas, scikit-learn), R programming basics, ML library application, data pipeline concepts, and advanced analytics workflows."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "JIIT MBA IT and Business Analytics graduates target roles at the intersection of technology and business:\n\n**Industries:** IT services and consulting, banking IT, e-commerce, fintech, government digital services (NIC, MeitY), telecom, healthcare IT, and data analytics firms\n\n**Entry-level roles:** Business Analyst, Data Analyst, IT Analyst, ERP Functional Consultant (junior), BI Analyst, Cybersecurity Analyst (management track)\n\n**Mid-level roles (3-5 years experience):** IT Manager, Analytics Manager, ERP Programme Manager, Data Science Team Lead, IT Security Manager, Digital Transformation Manager\n\n**Senior roles (7+ years):** CIO, VP IT, Head of Analytics, Chief Data Officer, Head of Digital Transformation, Director of IT Governance\n\n**Employers:** IT services (TCS, Infosys, Wipro, HCL, Cognizant), consulting (Deloitte, KPMG IT advisory), banking IT (HDFC, ICICI, SBI technology), e-commerce (Flipkart, Amazon India analytics), and government IT (NIC, state IT departments).\n\n**Note:** JIIT's tech institute identity is an advantage for IT/analytics employer credibility."
+      "body": "JIIT MBA IT and Business Analytics graduates target roles at the intersection of technology and business:\n\n**Industries:** IT services and consulting, banking IT, e-commerce, fintech, government digital services (NIC, MeitY), telecom, healthcare IT, and data analytics firms\n\n**Entry-level roles:** Business Analyst, Data Analyst, IT Analyst, ERP Functional Consultant (junior), BI Analyst, Cybersecurity Analyst (management track)\n\n**Mid-level roles (3-5 years experience):** IT Manager, Analytics Manager, ERP Programme Manager, Data Science Team Lead, IT Security Manager, Digital Transformation Manager\n\n**Senior roles (7+ years):** CIO, VP IT, Head of Analytics, Chief Data Officer, Head of Digital Transformation, Director of IT Governance\n\n**Employers:** IT services (TCS, Infosys, Wipro, HCL, Cognizant), consulting (Deloitte, KPMG IT advisory), banking IT (HDFC, ICICI, SBI technology), e-commerce (Flipkart, Amazon India analytics), and government IT (NIC, state IT departments).\n\n**Note:** JIIT's tech institute identity is an advantage for IT/analytics employer credibility.\n\n**Where to verify placement claims:** ask Jaypee Institute of Information Technology Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The IT and Business Analytics specialisation builds skills across IT management, data analytics, and emerging tech:\n\n**Technical skills:**\n- Data Analytics: SQL querying, predictive model building (regression, classification), time series forecasting, and model performance evaluation\n- Big Data and Visualisation: Hadoop/Spark architecture understanding, Tableau dashboard design, Power BI report creation, and data storytelling\n- IT Security: ISO 27001 gap analysis awareness, DPDP Act compliance framework, IT Act 2000 application, and cybercrime incident response basics\n- Blockchain: DLT architecture understanding, smart contract use-case assessment, and enterprise blockchain feasibility analysis\n\n**Applied skills:**\n- ERP: SAP/Oracle module selection, ERP implementation risk assessment, and BPR methodology application\n- Data Science Tools: Python (pandas, scikit-learn) for analytics, R basics, and ML pipeline design at management level\n\n**Soft skills:** Presenting analytics insights to C-suite, managing cross-functional digital transformation teams, negotiating with IT vendors, and translating technical requirements into business cases."
@@ -55,38 +94,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with IT and Business Analytics as the specialisation, issued by Jaypee Institute of Information Technology (JIIT), Noida under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A accreditation, UGC-DEB approval, and WES recognition. The IT institute identity adds credibility for technology management and analytics roles. Valid for government IT department roles, PSU applications, and private-sector IT/analytics positions. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from JIIT Online MBA IT and Business Analytics students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Vikram P.",
-          "city": "Noida",
-          "year": 2024,
-          "rating": 4.2,
-          "liked": "Blockchain and Predictive Analytics as standalone subjects are rare in online MBAs under ₹2L. JIIT's tech DNA makes the IT+Analytics combination credible",
-          "disliked": "No Coursera or other bundled perks. MUJ at ₹1,80,000 includes Coursera Plus. At the same price, JIIT should offer something",
-          "body": "I work as a business analyst at an IT services company. The predictive analytics, data management, and big data subjects were directly applicable. The blockchain module gave me enough understanding for client conversations about DLT implementations. The AI in Business course was a genuine differentiator. JIIT being an IT institute gave the credential credibility at my employer. The gap is brand recognition for MBA specifically."
-        },
-        {
-          "name": "Shruti D.",
-          "city": "Gurgaon",
-          "year": 2024,
-          "rating": 4,
-          "liked": "IT Security and Cyber Law covered DPDP Act and IT Act at a practical level. Advanced Tools for Data Science gave me Python and R basics I use for dashboards",
-          "disliked": "The programme could include a certification from a recognisable platform (AWS, Google, IBM). At ₹1,82,000 with zero perks, it is hard to compete with CU at ₹1,65,000 with PwC co-teaching",
-          "body": "The combined IT management + analytics curriculum is the USP. Most online MBAs offer either IT management or business analytics, not both in one spec. The mandatory internship helped me build a portfolio project. The advanced data science tools module introduced Python and R at a management level, not a coding bootcamp level. For IT governance and analytics roles in NCR, the JIIT credential works."
-        },
-        {
-          "name": "Amit R.",
-          "city": "Lucknow",
-          "year": 2023,
-          "rating": 3.8,
-          "liked": "BPR/ERP module was practical. The combination of ERP understanding with data analytics gives a dual-track capability for IT consulting roles",
-          "disliked": "Career support for online MBA is limited. JIIT's placement infrastructure is primarily set up for on-campus BTech and MTech students. Online MBA students need to self-navigate",
-          "body": "The curriculum is comprehensive. 9 Sem 3 subjects covering IT security, ERP, e-commerce, data management, predictive analytics, and blockchain is genuine depth. The delivery quality varied by subject. Some faculty were strong, others felt like they were teaching from slides prepared for the campus programme. At ₹1,82,000 with no perks, the value comes from curriculum breadth, not platform experience."
-        }
-      ]
     },
     "faqs": [
       {
@@ -130,6 +137,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 23,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

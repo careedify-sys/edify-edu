@@ -65,7 +65,7 @@
       "note": "Sem 1-2 cover shared core subjects across all Vignan Online MBA specialisations. See the main Vignan Online MBA page for the core subject list. Syllabus applies to the 2025-26 admission cycle. Reconfirm current syllabus with our counsellor before enrolment."
     },
     "whoHires": {
-      "body": "HRM MBA graduates target these industries and roles:\n\n**Industries:** IT and IT services, Manufacturing, Banking and financial services, Pharma, FMCG, Consulting, BPO/KPO\n\n**Entry-level roles:** HR Executive, Talent Acquisition Associate, HR Generalist, Payroll Executive, Employee Engagement Coordinator\n\n**Mid-level roles (3-5 years):** HR Manager, Talent Acquisition Manager, HR Business Partner, Compensation and Benefits Manager, Learning and Development Manager\n\n**Senior roles (7+ years):** VP Human Resources, CHRO, Head of Talent, Director of HR Operations, Head of People Analytics\n\n**Typical hiring organisations:** TCS, Infosys, Wipro, HCL Tech, Cognizant, Deloitte, KPMG, Hindustan Unilever, Reliance Industries, HDFC Bank, ICICI Bank, Tata Steel, Larsen and Toubro"
+      "body": "HRM MBA graduates target these industries and roles:\n\n**Industries:** IT and IT services, Manufacturing, Banking and financial services, Pharma, FMCG, Consulting, BPO/KPO\n\n**Entry-level roles:** HR Executive, Talent Acquisition Associate, HR Generalist, Payroll Executive, Employee Engagement Coordinator\n\n**Mid-level roles (3-5 years):** HR Manager, Talent Acquisition Manager, HR Business Partner, Compensation and Benefits Manager, Learning and Development Manager\n\n**Senior roles (7+ years):** VP Human Resources, CHRO, Head of Talent, Director of HR Operations, Head of People Analytics\n\n**Typical hiring organisations:** TCS, Infosys, Wipro, HCL Tech, Cognizant, Deloitte, KPMG, Hindustan Unilever, Reliance Industries, HDFC Bank, ICICI Bank, Tata Steel, Larsen and Toubro\n\n**Where to verify placement claims:** ask Vignan's Foundation for Science, Technology & Research Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The HRM specialisation builds skills tested by IT, manufacturing, and services organisations:\n\n**Technical skills:**\n- Talent Acquisition: recruitment funnel design, ATS configuration, sourcing channel ROI analysis, and competency-based interview design\n- Industrial Relations and Labour Laws: compliance with Factories Act, Industrial Disputes Act, Shops and Establishments Act, and new Labour Codes\n- Performance Management: balanced scorecard design, 360-degree feedback implementation, and performance-linked incentive modelling\n- HR Metrics and Analytics: attrition prediction models, engagement survey design, workforce cost analysis, and HR dashboard creation\n\n**Applied skills:**\n- OD and Change Management: culture audit execution, change communication planning, and stakeholder alignment for transformation initiatives\n- Strategic HRM: workforce planning models, succession planning, and HR strategy alignment with business growth plans\n\n**Soft skills:** Conflict resolution, grievance handling, negotiation with trade unions, executive coaching conversations, and cross-functional stakeholder management."
@@ -78,38 +78,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Vignan's Foundation for Science, Technology and Research, Guntur. It reads 'Master of Business Administration' with the Human Resource Management specialisation noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The degree is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three reviews from Vignan Online MBA HRM students. Ratings from post-completion feedback.",
-      "items": [
-        {
-          "name": "Lakshmi",
-          "city": "Guntur",
-          "year": 2025,
-          "rating": 4.3,
-          "liked": "Rs 90,000 for a NAAC A+ online MBA in HRM is the best value I found. No-cost EMI at Rs 5,700/month made it truly affordable.",
-          "disliked": "Recorded lecture quality for some HR subjects could improve. Audio was inconsistent in a few sessions.",
-          "body": "I work as an HR generalist at a mid-size IT company in Vijayawada. The Talent Acquisition and Performance Management subjects directly improved my on-the-job skills. The HR Metrics and Analytics subject gave me frameworks for building the HR dashboard my manager had been asking for. At Rs 90,000, the ROI was clear within the first year."
-        },
-        {
-          "name": "Venkat",
-          "city": "Bangalore",
-          "year": 2024,
-          "rating": 3.4,
-          "liked": "Industrial Relations and Labour Laws subject was thorough and practically useful for compliance work.",
-          "disliked": "Vignan brand recognition in Bangalore IT corridors is weak. HR manager roles at top IT companies require a more recognised MBA brand. My Infosys colleagues had MBAs from Manipal or Symbiosis.",
-          "body": "If you already work in HR at a smaller company or in Andhra Pradesh, Vignan is fine. But for competitive HR roles at top-tier IT companies in Bangalore, Hyderabad, or Chennai, the brand does not open doors. I used it for an internal promotion, which worked. For external job switches to brand-name employers, invest more in a nationally recognised programme."
-        },
-        {
-          "name": "Divya",
-          "city": "Visakhapatnam",
-          "year": 2025,
-          "rating": 4.0,
-          "liked": "Strategic HRM and OD subjects in Sem 4 gave a big-picture perspective on building HR as a strategic function. Exam process was smooth.",
-          "disliked": "No dedicated placement support for online MBA students. Career services are limited to the on-campus batch.",
-          "body": "The HRM syllabus is solid for the price. Six dedicated HR subjects across Sem 3-4 is more depth than some programmes costing twice as much. The research-based learning projects pushed me to apply concepts to real workplace problems. Good programme for working HR professionals in South India who want credentials without breaking the bank."
-        }
-      ]
     },
     "faqs": [
       {
@@ -151,6 +119,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 28,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

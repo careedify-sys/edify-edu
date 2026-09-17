@@ -65,7 +65,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "HRM and Finance dual MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** Compensation consulting, BFSI HR, Corporate HR finance, Staffing and HR services, Payroll and compliance services, CFO-office HR\n\n**Entry-level roles:** Compensation Analyst, HR Finance Analyst, HRIS Finance Analyst, Benefits Analyst, HR Compliance Analyst\n\n**Mid-level roles (3-5 years experience):** Compensation and Benefits Manager, HR Controller, HRBP (Finance), HR Finance Manager, HR Risk Manager\n\n**Senior roles (7+ years):** Head of Compensation and Benefits, HR Director (Finance), CHRO with Finance P&L, VP HR Finance, Total Rewards Director\n\n**Top hiring organisations:** Deloitte HR Consulting, KPMG People Advisory, EY HR Advisory, PwC People, HDFC Bank HR, ICICI Bank Compensation, Infosys Compensation, Wipro Rewards, TCS HR Finance, Accenture Total Rewards, Mercer India, Aon Hewitt India, Willis Towers Watson India"
+      "body": "This HRM and Finance dual MBA syllabus maps to the following industries and roles:\n\n**Industries:** Compensation consulting, BFSI HR, Corporate HR finance, Staffing and HR services, Payroll and compliance services, CFO-office HR\n\n**Entry-level roles:** Compensation Analyst, HR Finance Analyst, HRIS Finance Analyst, Benefits Analyst, HR Compliance Analyst\n\n**Mid-level roles (3-5 years experience):** Compensation and Benefits Manager, HR Controller, HRBP (Finance), HR Finance Manager, HR Risk Manager\n\n**Senior roles (7+ years):** Head of Compensation and Benefits, HR Director (Finance), CHRO with Finance P&L, VP HR Finance, Total Rewards Director\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN HRM and Finance dual specialisation builds cross-domain skills for HR-finance bridge roles at compensation, HR controller, and HRBP levels:\n\n**Finance skills:**\n- Direct and Indirect Taxes: CTC structuring with tax efficiency, GST on HR services, and TDS management for compensation and benefits design\n- Investment Analysis: employee benefit fund management, corporate capital allocation awareness for HRBP strategic conversations\n- Risk Management and Behavioural Finance: HR risk quantification, compensation risk management, and behavioural economics applied to retention and motivation\n\n**HR skills:**\n- Talent Acquisition and Management: data-driven hiring strategy, employer branding, and structured interview design\n- Employee Management and Negotiation Skills: CTC negotiation, PIP facilitation, and employment dispute resolution informed by financial frameworks\n- Performance Management Systems: finance-linked KPI framework design, connecting business financial performance to individual and team appraisal\n\n**Cross-functional skills:**\n- Organisation Development: financial restructuring impact management, workforce cost optimisation, and change management in finance-driven restructuring programmes\n- Indian Financial System: capital markets and regulatory knowledge for HR professionals at BFSI firms managing compensation benchmarking\n\n**Soft skills:** Presenting total compensation benchmarking to CFO and board, managing executive compensation discussions, communicating tax-efficient pay structures to employees, and leading cost optimisation programmes with both financial and people dimensions."
@@ -78,38 +78,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. Both Human Resource Management and Finance specialisations are noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The dual specialisation certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA HRM and Finance alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Madhuri Krishnan",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Direct and Indirect Taxes combined with Employee Negotiation Skills was exactly what I needed for my compensation benchmarking role. Indian Financial System subject was directly applicable at my BFSI employer.",
-          "disliked": "L&D and International HRM are not covered. If those are needed, single-spec HRM is more complete.",
-          "body": "I was in compensation and benefits at a Bengaluru IT company and needed formal finance credentials. The JAIN HRM and Finance dual MBA gave me dual credibility for a compensation consulting transition. No peer university offered this combination."
-        },
-        {
-          "name": "Santhosh Nair",
-          "city": "Hyderabad",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Performance Management combined with Investment Analysis gave strong cross-domain depth for my HRBP role at a financial services firm.",
-          "disliked": "Finance subjects are not at single-spec Finance depth - Wealth Management and Fintech are absent. For deep finance careers, single-spec Finance is better.",
-          "body": "Good programme for HR professionals in BFSI companies. Hyderabad financial services and IT firms responded well to the dual credential. Compensation consulting firms valued the combination particularly."
-        },
-        {
-          "name": "Akshay Thomas",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Risk Management and Behavioural Finance combined with OD and Change Management was a unique cross-domain combination.",
-          "disliked": "Dual spec trades off depth in both domains. Know this clearly before choosing over single-spec options.",
-          "body": "Solid credential for HR-finance bridge roles. Best suited for compensation consulting, BFSI HR, and total rewards management. For traditional HR specialist or traditional finance specialist careers, single-spec programmes are more appropriate."
-        }
-      ]
     },
     "faqs": [
       {
@@ -150,6 +118,7 @@
     "wordCount": 2000,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

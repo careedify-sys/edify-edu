@@ -19,28 +19,61 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Entrepreneurship and Startup Ideation", "desc": "Business ideation frameworks, lean startup methodology, business model canvas, venture feasibility, and funding landscape for new ventures." },
-            { "name": "Production and Operations Management", "desc": "Production planning, inventory management, quality control, lean principles, and operations strategy for manufacturing and service sectors." },
-            { "name": "Cross Functional Elective", "desc": "Elective subject from another specialisation domain. Broadens management perspective beyond the core data science track." },
-            { "name": "Python for Data Science", "desc": "Python programming fundamentals, NumPy, Pandas, data wrangling, and scripting for business data analysis workflows." },
-            { "name": "SQL for Data Science", "desc": "Database querying, joins, aggregations, subqueries, and SQL-based data extraction for business reporting and analytics pipelines." },
-            { "name": "Statistical Methods for Decision Making", "desc": "Hypothesis testing, regression analysis, probability distributions, ANOVA, and statistical inference applied to business decision contexts." }
+            {
+              "name": "Entrepreneurship and Startup Ideation",
+              "desc": "Business ideation frameworks, lean startup methodology, business model canvas, venture feasibility, and funding landscape for new ventures."
+            },
+            {
+              "name": "Production and Operations Management",
+              "desc": "Production planning, inventory management, quality control, lean principles, and operations strategy for manufacturing and service sectors."
+            },
+            {
+              "name": "Cross Functional Elective",
+              "desc": "Elective subject from another specialisation domain. Broadens management perspective beyond the core data science track."
+            },
+            {
+              "name": "Python for Data Science",
+              "desc": "Python programming fundamentals, NumPy, Pandas, data wrangling, and scripting for business data analysis workflows."
+            },
+            {
+              "name": "SQL for Data Science",
+              "desc": "Database querying, joins, aggregations, subqueries, and SQL-based data extraction for business reporting and analytics pipelines."
+            },
+            {
+              "name": "Statistical Methods for Decision Making",
+              "desc": "Hypothesis testing, regression analysis, probability distributions, ANOVA, and statistical inference applied to business decision contexts."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Strategic Management", "desc": "Corporate strategy, competitive advantage frameworks, strategic planning models, and business model analysis." },
-            { "name": "Research Project", "desc": "Faculty-supervised research project applying data science and analytics methods to a real business problem." },
-            { "name": "Data Visualization", "desc": "Dashboard design principles, Tableau/Power BI concepts, chart selection, storytelling with data, and visual communication of analytical findings." },
-            { "name": "Predictive Analytics using Machine Learning", "desc": "Supervised and unsupervised learning algorithms, model training, validation, classification, clustering, and predictive model deployment for business use cases." },
-            { "name": "Web and Social Media Analytics", "desc": "Web traffic analysis, social media metrics, sentiment analysis, digital campaign measurement, and customer behaviour tracking across online channels." }
+            {
+              "name": "Strategic Management",
+              "desc": "Corporate strategy, competitive advantage frameworks, strategic planning models, and business model analysis."
+            },
+            {
+              "name": "Research Project",
+              "desc": "Faculty-supervised research project applying data science and analytics methods to a real business problem."
+            },
+            {
+              "name": "Data Visualization",
+              "desc": "Dashboard design principles, Tableau/Power BI concepts, chart selection, storytelling with data, and visual communication of analytical findings."
+            },
+            {
+              "name": "Predictive Analytics using Machine Learning",
+              "desc": "Supervised and unsupervised learning algorithms, model training, validation, classification, clustering, and predictive model deployment for business use cases."
+            },
+            {
+              "name": "Web and Social Media Analytics",
+              "desc": "Web traffic analysis, social media metrics, sentiment analysis, digital campaign measurement, and customer behaviour tracking across online channels."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Data Science and Analytics MBA graduates target roles that combine business acumen with analytical skills:\n\n**Industries:** IT services, e-commerce, BFSI, consulting, FMCG, telecom, healthcare analytics, and logistics\n\n**Entry-level roles:** Business Analyst, Data Analyst, Junior Data Scientist, Analytics Associate, MIS Executive\n\n**Mid-level roles (3-5 years experience):** Senior Data Analyst, Analytics Manager, Data Science Lead, Business Intelligence Manager, Product Analytics Manager\n\n**Senior roles (7+ years):** Head of Analytics, Chief Data Officer, VP of Data Science, Director of Business Intelligence, Analytics Practice Lead\n\n**Employers:** IT (TCS, Infosys, Wipro analytics divisions), consulting (Deloitte Analytics, EY Data, KPMG Lighthouse), e-commerce (Flipkart, Amazon India, Myntra), BFSI (HDFC, ICICI, Bajaj analytics teams), and startups (Razorpay, Zerodha, PhonePe data teams).\n\n**Note:** Sharda provides career support. Greater Noida location offers NCR recruiter access, but online MBA graduates should build an independent analytics portfolio."
+      "body": "Data Science and Analytics MBA graduates target roles that combine business acumen with analytical skills:\n\n**Industries:** IT services, e-commerce, BFSI, consulting, FMCG, telecom, healthcare analytics, and logistics\n\n**Entry-level roles:** Business Analyst, Data Analyst, Junior Data Scientist, Analytics Associate, MIS Executive\n\n**Mid-level roles (3-5 years experience):** Senior Data Analyst, Analytics Manager, Data Science Lead, Business Intelligence Manager, Product Analytics Manager\n\n**Senior roles (7+ years):** Head of Analytics, Chief Data Officer, VP of Data Science, Director of Business Intelligence, Analytics Practice Lead\n\n**Employers:** IT (TCS, Infosys, Wipro analytics divisions), consulting (Deloitte Analytics, EY Data, KPMG Lighthouse), e-commerce (Flipkart, Amazon India, Myntra), BFSI (HDFC, ICICI, Bajaj analytics teams), and startups (Razorpay, Zerodha, PhonePe data teams).\n\n**Note:** Sharda provides career support. Greater Noida location offers NCR recruiter access, but online MBA graduates should build an independent analytics portfolio.\n\n**Where to verify placement claims:** ask Sharda University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Data Science and Analytics specialisation builds a hybrid business-technical skill set:\n\n**Technical skills:**\n- Python: data manipulation with Pandas/NumPy, scripting for ETL processes, and Python-based model prototyping\n- SQL: database querying for business reporting, data extraction from relational databases, and query optimisation basics\n- Machine Learning: classification and regression model selection, model validation, overfitting management, and predictive model interpretation for business stakeholders\n- Data Visualization: dashboard design, KPI presentation, chart selection for different data types, and visual storytelling for non-technical audiences\n\n**Applied skills:**\n- Statistical Decision Making: hypothesis testing for A/B experiments, regression for forecasting, and statistical reasoning for business recommendations\n- Web and Social Media Analytics: campaign performance tracking, sentiment analysis interpretation, and customer journey analytics\n\n**Soft skills:** Presenting data insights to business leadership, translating technical findings into actionable recommendations, cross-functional collaboration with product and marketing teams, and structuring analytical problem statements."
@@ -53,38 +86,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Data Science and Analytics as the specialisation, issued by Sharda University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A+ accreditation, NIRF #87 University rank, UGC-DEB approval, and WES recognition. Valid for corporate analytics hiring, PSU applications, and higher education admission. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from Sharda Online MBA Data Science and Analytics students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Rahul S.",
-          "city": "Noida",
-          "year": 2024,
-          "rating": 4.0,
-          "liked": "Python and SQL subjects were practical with hands-on assignments. The ML subject in Sem 4 covered real business use cases, not just theory",
-          "disliked": "No free tool access (Tableau, cloud credits). You need to arrange your own software for the visualization subject",
-          "body": "The data science curriculum is solid for an MBA programme. Python, SQL, and ML subjects gave me a usable skill set alongside the management core. At ₹1,54,500 the fee is fair, though Galgotias at ₹80,200 offers similar analytics depth for less. Sharda's NIRF rank and NAAC A+ justified the premium for me. Career services exist but are limited for online students."
-        },
-        {
-          "name": "Priyanka M.",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 4.2,
-          "liked": "Statistical Methods for Decision Making was the strongest subject. It connected statistical concepts to business decisions rather than staying abstract",
-          "disliked": "Brand recognition is a gap. In job interviews, I had to explain Sharda's online MBA credibility more than expected",
-          "body": "I chose Sharda over NIU because of the NIRF ranking and the ML subject. The Statistical Methods and Predictive Analytics subjects were directly useful for my analytics role at a consulting firm. The Web and Social Media Analytics subject was lighter than I expected. At ₹1,54,500 with no scholarships, the value is in the curriculum and accreditation, not extras."
-        },
-        {
-          "name": "Amit K.",
-          "city": "Gurgaon",
-          "year": 2023,
-          "rating": 3.9,
-          "liked": "EMI at ₹7,375/month made the fee manageable. NAAC A+ and NIRF rank gave me confidence in the degree's validity",
-          "disliked": "EMI was not zero-cost. The financing partner charged interest, and this was not made clear during the admission process",
-          "body": "The data science subjects cover the right topics, but the depth depends on your self-study effort. Python and SQL assignments were structured well. The ML subject introduced key algorithms but you need supplementary learning for job-ready skills. At this price point with NAAC A+ and NIRF rank, Sharda is a reasonable mid-tier choice. Confirm EMI interest terms before committing."
-        }
-      ]
     },
     "faqs": [
       {
@@ -128,6 +129,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 27,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

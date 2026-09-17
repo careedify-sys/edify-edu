@@ -49,7 +49,7 @@
       "note": "Domain Elective pool for AI for Business: AI in Finance, AI in Marketing, AI in Operations and Supply Chain, AI in HR, FinOps for AI, Computer Vision for Business, NLP and GenAI for Business, Management of AI Products, AI Strategy Ethics and Governance, Human-centric AI, Disruptive Applications of AI. General Management Elective pool (all specs): Advanced Marketing Management, AI for Competitive Advantage, Business Environment Laws Ethics, Business Research Methods, Data Visualization, Decision Analysis, Entrepreneurship, Entrepreneurial Finance, Enterprise Risk Management, Indian Ethos in Management, International Business and Trade, Leadership and Managing Change, Management Control Systems, Project Management, Strategic HRM, Technology Management. Semesters 1 and 2 cover the shared management core. See the main BITS Pilani WILP MBA page for programme-level details."
     },
     "whoHires": {
-      "body": "AI for Business MBA graduates from BITS Pilani WILP target career growth within their current organisations. WILP does not offer campus placement drives. The programme builds skills for these roles:\n\n**Industries:** Technology, BFSI, Manufacturing, Healthcare, E-commerce, Consulting\n\n**Target roles:** AI Product Manager, AI Strategy Lead, Business Intelligence Manager, Analytics Director, AI Governance Lead, Digital Transformation Manager\n\n**Senior roles (7+ years):** VP of AI Strategy, Chief AI Officer, Head of Data and AI, AI Programme Director\n\n**Typical employers of BITS Pilani WILP alumni:** Infosys, TCS, Wipro, Cognizant, Deloitte, Accenture, Amazon, Microsoft, Google. These are based on the broader BITS Pilani alumni network. Individual outcomes depend on existing experience and industry."
+      "body": "AI for Business MBA graduates from BITS Pilani WILP target career growth within their current organisations. WILP does not offer campus placement drives. The programme builds skills for these roles:\n\n**Industries:** Technology, BFSI, Manufacturing, Healthcare, E-commerce, Consulting\n\n**Target roles:** AI Product Manager, AI Strategy Lead, Business Intelligence Manager, Analytics Director, AI Governance Lead, Digital Transformation Manager\n\n**Senior roles (7+ years):** VP of AI Strategy, Chief AI Officer, Head of Data and AI, AI Programme Director\n\n**Typical employers of BITS Pilani WILP alumni:** Infosys, TCS, Wipro, Cognizant, Deloitte, Accenture, Amazon, Microsoft, Google. These are based on the broader BITS Pilani alumni network. Individual outcomes depend on existing experience and industry.\n\n**Where to verify placement claims:** ask BITS Pilani Work Integrated Learning Programmes (WILP) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The AI for Business specialisation builds skills that technology and strategy employers value in AI management roles:\n\n**Technical skills:**\n- Applied ML and Deep Learning: supervised/unsupervised algorithms, neural networks, and model evaluation for business use cases\n- Data Science: data wrangling, statistical modelling, and pipeline design for enterprise data\n- AI Applications: understanding vendor ecosystems, deployment architectures, and AI readiness assessment\n- GenAI and NLP: large language models, prompt engineering, and text analytics for business processes (via electives)\n\n**Strategic skills:**\n- AI Strategy and Governance: ethical AI frameworks, bias mitigation, regulatory compliance, and responsible AI deployment\n- AI Product Management: roadmap planning, stakeholder alignment, and go-to-market for AI products\n- FinOps for AI: cloud cost management and financial operations for AI infrastructure\n\n**Applied skills:** Experiential learning through simulations, virtual labs, remote labs, and cloud-based labs. The BITS Pilani WILP model expects students to apply concepts directly to their professional environment."
@@ -62,38 +62,6 @@
     },
     "certificate": {
       "body": "Graduates receive a degree certificate issued by BITS Pilani. The certificate reads Master of Business Administration with the AI for Business specialisation noted on the marksheet and transcript. BITS Pilani's Institution of Eminence status and NIRF #7 University 2025 ranking make this one of the most recognised MBA credentials in the Indian online education space. WES recognition enables international degree verification. DigiLocker integration allows digital employer background checks."
-    },
-    "reviews": {
-      "intro": "Three reviews from BITS Pilani WILP MBA in AI for Business students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Vikram Desai",
-          "city": "Pune",
-          "year": 2025,
-          "rating": 4.5,
-          "liked": "The AI Applications and Ecosystem subject in Sem 2 gave me a vendor-neutral view of enterprise AI that I immediately applied at work",
-          "disliked": "In-person exams require travel to the nearest BITS exam centre, which meant 2 days off work each semester",
-          "body": "I am a software architect at a mid-size IT services firm. The AI for Business spec gave me the vocabulary and frameworks to lead AI initiatives, not just build them. The elective pool is excellent. I picked AI Strategy Ethics and Governance and NLP and GenAI for Business. Both were directly relevant to my company's GenAI rollout. The BITS Pilani brand carried weight when I presented AI strategy proposals to our CTO. Be prepared for in-person exams. They are serious, proctored, and at designated centres. No shortcuts."
-        },
-        {
-          "name": "Sneha Iyer",
-          "city": "Bangalore",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Applied Machine Learning and Deep Learning in Sem 3 was rigorous and comparable to what I have seen in BITS campus courses",
-          "disliked": "No placement support at all. WILP is strictly for working professionals, so you are on your own for career moves",
-          "body": "I enrolled while working at a product company as a data analyst. The programme helped me move into an AI Product Manager role within the same company. The curriculum is not a surface-level AI overview. Applied ML and Deep Learning went deep into algorithms. The project in Sem 4 let me build something real for my team. BITS Pilani's name on the degree opened conversations with recruiters, though I found the next role through my own network, not through any WILP placement."
-        },
-        {
-          "name": "Rajesh Tiwari",
-          "city": "Noida",
-          "year": 2025,
-          "rating": 3.5,
-          "liked": "FinOps for AI elective was unique. I have not seen this offered by any other online MBA programme",
-          "disliked": "The fee at Rs 2,98,400 is steep compared to DSU or Alliance. You are paying for the BITS brand, and you need to be honest about whether that premium is worth it for your career stage",
-          "body": "Good programme, but set expectations correctly. This is not BITS Pilani campus. WILP is a separate track for working professionals. Exams are in-person at centres, which is actually a positive for credibility. The AI elective pool is the best I have seen in any online MBA. But the fee is high, and there are no placements. If you are already employed and want the BITS name plus AI skills for internal career growth, this works. If you are hoping for a career restart, look elsewhere."
-        }
-      ]
     },
     "faqs": [
       {
@@ -135,6 +103,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 42,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

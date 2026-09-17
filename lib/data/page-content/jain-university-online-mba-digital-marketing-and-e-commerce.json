@@ -61,7 +61,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Digital Marketing and E-Commerce MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** E-commerce and D2C brands, Digital marketing agencies, FMCG digital marketing, EdTech growth, Retail tech, SaaS and startup marketing\n\n**Entry-level roles:** Digital Marketing Executive, Performance Marketing Analyst, E-Commerce Analyst, Social Media Marketing Executive, Growth Marketing Analyst\n\n**Mid-level roles (3-5 years experience):** Digital Marketing Manager, E-Commerce Manager, Growth Marketing Manager, Brand Manager (Digital), Performance Marketing Manager\n\n**Senior roles (7+ years):** Digital Marketing Head, CMO (Digital), VP E-Commerce, Head of Growth, Digital Commerce Director\n\n**Top hiring organisations:** Flipkart, Amazon India, Myntra, Meesho, Nykaa, BigBasket, Zomato, Swiggy, PhonePe Digital, Ogilvy India, Dentsu India, WPP India, GroupM, Publicis Groupe India, Unilever Digital India"
+      "body": "This Digital Marketing and E-Commerce MBA syllabus maps to the following industries and roles:\n\n**Industries:** E-commerce and D2C brands, Digital marketing agencies, FMCG digital marketing, EdTech growth, Retail tech, SaaS and startup marketing\n\n**Entry-level roles:** Digital Marketing Executive, Performance Marketing Analyst, E-Commerce Analyst, Social Media Marketing Executive, Growth Marketing Analyst\n\n**Mid-level roles (3-5 years experience):** Digital Marketing Manager, E-Commerce Manager, Growth Marketing Manager, Brand Manager (Digital), Performance Marketing Manager\n\n**Senior roles (7+ years):** Digital Marketing Head, CMO (Digital), VP E-Commerce, Head of Growth, Digital Commerce Director\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN Digital Marketing and E-Commerce specialisation builds skills that e-commerce brands and digital agencies test at digital marketing manager and growth manager levels:\n\n**Technical skills:**\n- Outbound Marketing: Google Ads campaign management, Meta Ads optimisation, programmatic display, and social media paid campaign execution for performance marketing roles\n- Marketing Analytics: attribution model design, customer cohort analysis, A/B testing management, and digital marketing ROI measurement for analytics-driven marketing roles\n- Data Visualisation: marketing dashboard design, campaign performance reporting, and executive data storytelling for digital marketing management\n- Digital Product Management: e-commerce product roadmapping, agile sprint management, and conversion rate optimisation for digital product and e-commerce manager roles\n\n**Applied skills:**\n- Brand Management for E-Commerce: D2C brand positioning, marketplace brand page management, and online retail brand architecture for brand management roles\n- Growth Marketing: growth hacking framework application, viral loop design, referral programme management, and full-funnel optimisation for growth roles\n\n**Soft skills:** Presenting digital marketing ROI to brand and business leadership, managing agency and performance marketing vendor relationships, communicating e-commerce platform product decisions to engineering teams, and leading cross-functional digital growth campaigns."
@@ -74,38 +74,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. The Digital Marketing and E-Commerce specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA Digital Marketing and E-Commerce alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Nikhil Shankar",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Growth Marketing subject was outstanding - frameworks directly applicable to my growth manager role at a Bengaluru D2C brand. Digital Product Management gave me the product vocabulary I needed for cross-functional roles.",
-          "disliked": "Marketing Analytics subject could include more hands-on tools coverage beyond conceptual attribution frameworks.",
-          "body": "I had 3 years in performance marketing and the JAIN DM and E-Commerce MBA gave me both the degree credential and advanced digital frameworks. JAIN brand combined with Bengaluru location was a strong differentiator at D2C companies."
-        },
-        {
-          "name": "Divya Krishnamurthy",
-          "city": "Chennai",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Brand Management for E-Commerce and Outbound Marketing subjects were directly applicable to my e-commerce brand management role.",
-          "disliked": "Would benefit from more SEO and organic marketing coverage alongside the paid media subjects.",
-          "body": "Good programme for South India digital marketing careers. Chennai e-commerce and digital agencies recognised the JAIN credential. For SEO-focused digital roles, self-supplementation with SEO tools training alongside the MBA is recommended."
-        },
-        {
-          "name": "Aparna Nair",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Digital Product Management was unique - not available as a subject in peer online MBA programmes at this fee range.",
-          "disliked": "LMS quality was inconsistent. Some elective subject recordings were below the quality of core subject recordings.",
-          "body": "Solid digital marketing credential for the fee. Best value for professionals targeting growth marketing and e-commerce brand roles. For traditional FMCG or B2B marketing careers, a standard marketing MBA would be more appropriate."
-        }
-      ]
     },
     "faqs": [
       {
@@ -146,6 +114,7 @@
     "wordCount": 2050,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

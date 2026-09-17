@@ -74,58 +74,6 @@
       "body": "EdifyEdu connects enrolled MUJ MBA students with 2-3 alumni from their target industry, runs a free 30-minute career transition call, and shares monthly job referrals curated to the students specialisation. We also provide a Coursera integration guide so students maximise the free certifications included in their enrolment. No commission taken from MUJ or any university.",
       "heading": "Beyond Admission: EdifyEdu Network"
     },
-    "reviews": {
-      "heading": "What Students Are Saying",
-      "intro": "MUJ Online MBA students broadly appreciate the Coursera integration and no-entrance-exam admission. Recurring complaints centre on LMS stability during exam periods and placement support quality outside metros. Here are verified reviews from enrolled and graduated students.",
-      "items": [
-        {
-          "name": "Deepa R.",
-          "city": "Bangalore",
-          "year": 2025,
-          "rating": 5,
-          "liked": "",
-          "disliked": "",
-          "body": "Chose MUJ for the Coursera integration and was not disappointed. The Google Data Analytics certificate I completed during Semester 2 actually came up in my next job interview. What I liked: internationally branded content alongside the Indian MBA curriculum is genuinely useful. What I disliked: the proctoring software crashed once during a mid-semester quiz and the support response took 3 days."
-        },
-        {
-          "name": "Arjun M.",
-          "city": "Hyderabad",
-          "year": 2024,
-          "rating": 4,
-          "liked": "",
-          "disliked": "",
-          "body": "Completed in 2 years while working in IT. The Finance specialisation content in Semesters 3 and 4 was solid. What I liked: no entrance exam meant I could start immediately after deciding to enrol, no 6-month preparation wait. What I disliked: assignment deadlines clustered at the end of each semester, making the last 3 weeks very heavy."
-        },
-        {
-          "name": "Sneha K.",
-          "city": "Pune",
-          "year": 2025,
-          "rating": 4,
-          "liked": "",
-          "disliked": "",
-          "body": "Did the HR specialisation. Faculty quality was good for the core subjects, variable for electives. What I liked: the alumni network events gave me 2 referrals that led to an interview. What I disliked: the mobile app is glitchy and I ended up using only the desktop browser for anything important."
-        },
-        {
-          "name": "Vivek S.",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 3,
-          "liked": "",
-          "disliked": "",
-          "body": "Decided to do MUJ for NAAC A+ recognition at an affordable fee. The degree itself is solid. What I liked: the fee payment flexibility with semester-wise EMI kept my monthly outflow manageable. What I disliked: career services over-promised on placement support. I got one email introduction in 8 months. Job search was entirely self-driven."
-        },
-        {
-          "name": "Ramesh P.",
-          "city": "Coimbatore",
-          "year": 2023,
-          "rating": 2,
-          "liked": "",
-          "disliked": "",
-          "body": "The LMS was unstable for the first 3 months of my programme. What I liked: the course content itself is well-structured and the NAAC A+ degree was accepted without question at my new employer. What I disliked: peer interaction is almost zero outside of a few WhatsApp groups students formed themselves. The official discussion boards are largely inactive."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "heading": "Red Flags to Know Before Enrolling",
       "flags": [
@@ -201,6 +149,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:48.984Z",
     "sheetName": "manipal-university-jaipur-online_MBA",
-    "format": "numbered"
+    "format": "numbered",
+    "claimSweep": "2026-09-17"
   }
 }

@@ -65,7 +65,7 @@
       "note": "Sem 1-2 shared core subjects across all LPU Online MBA specialisations. See the main LPU Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Finance MBA graduates from LPU Online are hired across these industries and roles:\n\n**Industries:** Commercial banking, Investment banking and capital markets, Corporate treasury, Insurance and wealth management, Financial consulting and accounting firms\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Investment Research Analyst, Treasury Analyst, Risk Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Portfolio Manager, Treasury Manager, Credit Manager, Risk Manager\n\n**Senior roles (7+ years):** CFO, Head of Finance, VP Treasury, Investment Director, Chief Risk Officer\n\n**Top hiring organisations:** HDFC Bank, ICICI Bank, Kotak Mahindra Bank, Axis Bank, SBI, Yes Bank, Bajaj Finance, HDFC Life, Max Life Insurance, Deloitte, KPMG, EY, Motilal Oswal, IIFL Wealth"
+      "body": "This Finance MBA syllabus maps to the following industries and roles:\n\n**Industries:** Commercial banking, Investment banking and capital markets, Corporate treasury, Insurance and wealth management, Financial consulting and accounting firms\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Investment Research Analyst, Treasury Analyst, Risk Analyst\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Portfolio Manager, Treasury Manager, Credit Manager, Risk Manager\n\n**Senior roles (7+ years):** CFO, Head of Finance, VP Treasury, Investment Director, Chief Risk Officer\n\n**Where to verify placement claims:** ask Lovely Professional University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The LPU Finance specialisation builds skills that banking and corporate finance employers test at analyst and manager levels:\n\n**Technical skills:**\n- Financial Derivatives: futures and options pricing, hedging strategy design, and structured product analysis for treasury and investment roles\n- Security Analysis and Portfolio Management: equity valuation, DCF modelling, relative valuation, and technical analysis for investment research and advisory\n- Risk Management: VaR calculation, credit risk modelling, stress testing, and enterprise risk framework design for banking and insurance roles\n- International Finance: FOREX hedging, multinational capital budgeting, and cross-border financing for corporate treasury and global banking\n\n**Applied skills:**\n- Investment Analysis and Portfolio Management: Markowitz optimisation, CAPM application, and factor model-based portfolio construction for wealth management roles\n- Tax Planning and Management: corporate tax structure optimisation and deferred tax accounting for corporate finance and consulting\n\n**Soft skills:** Presenting investment recommendations to senior management, negotiating credit facilities with banks, building financial models for board-level decisions, and communicating risk exposure to audit committees."
@@ -78,38 +78,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Lovely Professional University (LPU) and carries the LPU name with the MBA designation. The Finance specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from LPU Online MBA Finance alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Ankit Verma",
-          "city": "Ludhiana",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Financial Derivatives and Risk Management subjects were directly applicable to my role at a Punjab-based cooperative bank. Zero-cost EMI made the programme genuinely affordable.",
-          "disliked": "Faculty for some Sem 4 electives were shared with other specialisations and lacked deep finance domain focus.",
-          "body": "I had 4 years in bank credit operations and the LPU Finance MBA helped me transition to treasury management. The Rs 1.61L fee with zero-cost EMI was the key deciding factor. LPU brand is well recognised at North India banking institutions."
-        },
-        {
-          "name": "Priya Kapoor",
-          "city": "Delhi",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Security Analysis and Investment Analysis subjects gave me strong portfolio management fundamentals. Tax Planning and Management was well-structured and practically applicable.",
-          "disliked": "Peer group interaction in live sessions was limited. More case study integration from Indian banking would help.",
-          "body": "Good programme at a very competitive fee. The zero-cost EMI was a genuine benefit. LPU brand is recognised at Delhi-NCR financial services firms. For BFSI careers in North India, LPU Finance is a strong value proposition."
-        },
-        {
-          "name": "Rahul Singh",
-          "city": "Chandigarh",
-          "year": 2024,
-          "rating": 4,
-          "liked": "International Finance and Risk Management gave me language and frameworks for my corporate treasury role. Affordable fee with good content.",
-          "disliked": "Placement support was limited for specialised finance roles. Self-sourcing was necessary.",
-          "body": "Solid credential for the fee. For North India corporate finance roles, LPU is recognised. For Mumbai BFSI, NMIMS would carry stronger brand weight. For cost-conscious professionals with North India career focus, LPU Finance is the right choice."
-        }
-      ]
     },
     "faqs": [
       {
@@ -150,6 +118,7 @@
     "wordCount": 2100,
     "generatedAt": "2026-04-21",
     "batchNumber": "Phase7-Batch13",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

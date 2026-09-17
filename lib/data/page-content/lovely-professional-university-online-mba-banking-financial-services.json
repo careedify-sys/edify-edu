@@ -65,7 +65,7 @@
       "note": "Sem 1-2 shared core subjects across all LPU Online MBA specialisations. See the main LPU Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Banking and Financial Services MBA graduates from LPU Online are hired across these industries and roles:\n\n**Industries:** Commercial and retail banking, Investment banking, Insurance and wealth management, NBFCs and HFCs, Fintech startups, Financial consulting\n\n**Entry-level roles:** Credit Analyst, Relationship Manager (Banking), Risk Analyst, Trade Finance Executive, Investment Research Analyst\n\n**Mid-level roles (3-5 years experience):** Branch Manager, Credit Manager, Risk Manager, Relationship Manager (Corporate), Investment Banking Analyst\n\n**Senior roles (7+ years):** VP Banking, Regional Credit Head, Head of Risk, Investment Banking Vice President, Chief Risk Officer\n\n**Top hiring organisations:** SBI, HDFC Bank, ICICI Bank, Kotak Mahindra Bank, Axis Bank, Yes Bank, Bajaj Finance, Muthoot Finance, IIFL Finance, EXIM Bank, RBL Bank, IndusInd Bank, Edelweiss Financial Services, Motilal Oswal"
+      "body": "This Banking and Financial Services MBA syllabus maps to the following industries and roles:\n\n**Industries:** Commercial and retail banking, Investment banking, Insurance and wealth management, NBFCs and HFCs, Fintech startups, Financial consulting\n\n**Entry-level roles:** Credit Analyst, Relationship Manager (Banking), Risk Analyst, Trade Finance Executive, Investment Research Analyst\n\n**Mid-level roles (3-5 years experience):** Branch Manager, Credit Manager, Risk Manager, Relationship Manager (Corporate), Investment Banking Analyst\n\n**Senior roles (7+ years):** VP Banking, Regional Credit Head, Head of Risk, Investment Banking Vice President, Chief Risk Officer\n\n**Where to verify placement claims:** ask Lovely Professional University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The LPU Banking and Financial Services specialisation builds skills that banking employers test at credit manager and relationship manager levels:\n\n**Technical skills:**\n- Financial Statement Analysis and Credit Management: credit appraisal from balance sheet analysis, NPA resolution frameworks, and creditworthiness assessment for credit analyst and credit manager roles\n- Corporate Banking: working capital finance structuring, term loan assessment, and corporate treasury relationship management for corporate banking roles\n- International Banking and Forex Management: correspondent banking operations, FOREX treasury management, and trade finance instrument application for international banking and treasury roles\n- Risk Management: credit risk, market risk, operational risk, and liquidity risk measurement and management frameworks for risk management and audit roles\n\n**Applied skills:**\n- Investment Banking: DCF and comparable company valuation, M&A deal structuring, and capital market transaction management for investment banking and corporate finance roles\n- Management of Financial Services: mutual fund operations, insurance product management, and NBFC service delivery for financial services management\n\n**Soft skills:** Presenting credit proposals to credit committees, negotiating loan terms with corporate borrowers, building investment banking pitch books, and communicating risk exposure to senior banking management."
@@ -78,38 +78,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Lovely Professional University (LPU) and carries the LPU name with the MBA designation. The Banking and Financial Services specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from LPU Online MBA Banking and Financial Services alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Navdeep Arora",
-          "city": "Chandigarh",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Corporate Banking and Financial Statement Analysis subjects were directly applicable to my credit analyst role at a PSU bank. Risk Management gave me formal frameworks for work I was doing intuitively.",
-          "disliked": "Investment Banking content could be more India-specific with more SEBI and DRHP-related case studies.",
-          "body": "I had 5 years in bank credit and the LPU BFSI MBA helped me move to credit manager level. The Rs 1.61L fee with zero-cost EMI was the key factor. LPU brand is well recognised at North India PSU and private banks."
-        },
-        {
-          "name": "Ritika Bhardwaj",
-          "city": "Delhi",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Management of Financial Services and International Banking subjects were excellent for my NBFC relationship role.",
-          "disliked": "Investment Banking subject could have more practical deal simulation exercises.",
-          "body": "Good programme for BFSI career advancement. Delhi banking companies recognised the LPU credential. The zero-cost EMI made it very accessible for a working banker on a monthly salary."
-        },
-        {
-          "name": "Amandeep Singh",
-          "city": "Amritsar",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Risk Management and Corporate Banking subjects were strong and directly applicable.",
-          "disliked": "Placement support for investment banking roles was limited outside major metros.",
-          "body": "Strong BFSI content at a very affordable price. For Punjab and North India banking careers, LPU is well recognised. For Mumbai investment banking, NMIMS would carry stronger brand weight."
-        }
-      ]
     },
     "faqs": [
       {
@@ -150,6 +118,7 @@
     "wordCount": 2100,
     "generatedAt": "2026-04-21",
     "batchNumber": "Phase7-Batch13",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

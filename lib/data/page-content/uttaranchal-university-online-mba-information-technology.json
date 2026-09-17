@@ -61,7 +61,7 @@
       "note": "Sem 1-2 cover shared core subjects across all Uttaranchal University Online MBA specialisations. See the main Uttaranchal University Online MBA page for the core subject list."
     },
     "whoHires": {
-      "body": "Information Technology MBA graduates target these industries and roles:\n\n**Industries:** IT services and consulting, Software product companies, BFSI (technology divisions), Manufacturing (IT and ERP teams), E-commerce and digital platforms\n\n**Entry-level roles:** IT Analyst, Business Analyst, ERP Functional Consultant, BI Analyst, Technology Project Coordinator\n\n**Mid-level roles (3-5 years):** IT Manager, Project Manager, ERP Manager, BI and Analytics Manager, Technology Operations Manager\n\n**Senior roles (7+ years):** CTO, CIO, VP Technology, Head of IT Operations, Director of Digital Transformation\n\n**Typical hiring organisations:** TCS, Infosys, Wipro, HCL Technologies, Cognizant, Tech Mahindra, IBM India, Accenture, Capgemini, SAP India, Oracle India, Deloitte, KPMG, Reliance Jio, HDFC Bank (IT division)"
+      "body": "Information Technology MBA graduates target these industries and roles:\n\n**Industries:** IT services and consulting, Software product companies, BFSI (technology divisions), Manufacturing (IT and ERP teams), E-commerce and digital platforms\n\n**Entry-level roles:** IT Analyst, Business Analyst, ERP Functional Consultant, BI Analyst, Technology Project Coordinator\n\n**Mid-level roles (3-5 years):** IT Manager, Project Manager, ERP Manager, BI and Analytics Manager, Technology Operations Manager\n\n**Senior roles (7+ years):** CTO, CIO, VP Technology, Head of IT Operations, Director of Digital Transformation\n\n**Typical hiring organisations:** TCS, Infosys, Wipro, HCL Technologies, Cognizant, Tech Mahindra, IBM India, Accenture, Capgemini, SAP India, Oracle India, Deloitte, KPMG, Reliance Jio, HDFC Bank (IT division)\n\n**Where to verify placement claims:** ask Uttaranchal University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Information Technology specialisation builds skills for IT management and tech-business bridge roles:\n\n**Technical skills:**\n- Business Intelligence and Analytics: BI tool proficiency, data warehouse concepts, KPI dashboard design, and analytics-driven reporting for management\n- Enterprise Resource Planning: ERP system architecture, module configuration concepts, implementation lifecycle management, and vendor evaluation\n- IT Fundamentals: networking, database management, IT infrastructure planning, and technology stack evaluation for non-technical managers\n- Web Design and CMS: web development basics, CMS platform management, UX principles, and digital presence management\n\n**Applied skills:**\n- IT Project Management: scope definition, resource planning, risk assessment, and stakeholder communication for technology projects\n- Digital Strategy: technology roadmap development, IT budget planning, and vendor management for IT procurement\n\n**Soft skills:** Translating technical requirements for business stakeholders, managing cross-functional IT project teams, presenting technology investment proposals to leadership, and coordinating between development teams and business units."
@@ -74,38 +74,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Uttaranchal University, Dehradun. It reads 'Master of Business Administration' with the Information Technology specialisation noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The degree is WES recognised for international credential evaluation. It is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three reviews from Uttaranchal University Online MBA Information Technology students. Ratings from post-completion feedback.",
-      "items": [
-        {
-          "name": "Saurabh",
-          "city": "Dehradun",
-          "year": 2025,
-          "rating": 4.0,
-          "liked": "ERP and Business Intelligence subjects were directly useful for my role as an IT team lead at a manufacturing company. The Rs 94,000 fee is genuinely affordable.",
-          "disliked": "The IT syllabus leans traditional. No dedicated AI, machine learning, or cloud computing subjects. If you want cutting-edge tech MBA, look elsewhere.",
-          "body": "I needed the MBA to move from a technical lead role to IT management. UU delivered the credential at a price that did not require a loan. The ERP subject helped me lead our SAP implementation more effectively. For traditional IT management roles, the programme is sufficient. For tech-forward roles at product companies, the syllabus will feel dated."
-        },
-        {
-          "name": "Pooja",
-          "city": "Noida",
-          "year": 2024,
-          "rating": 3.9,
-          "liked": "Business Intelligence and Analytics was the strongest subject. No-cost EMI at Rs 3,956/month fit my budget as a mid-level IT professional.",
-          "disliked": "Brand recognition at Noida IT companies is limited. My manager did not recognise UU. The NAAC A+ tag helped during the internal promotion conversation.",
-          "body": "I work at an IT services company and needed the MBA for a project manager promotion. UU IT served that purpose at minimum cost. I would not recommend this for someone trying to break into product management at a startup or MNC. For internal promotions at mid-size IT firms, NAAC A+ at Rs 94,000 is practical."
-        },
-        {
-          "name": "Ravi",
-          "city": "Haridwar",
-          "year": 2025,
-          "rating": 4.2,
-          "liked": "Web Designing and Content Management was unexpectedly useful for managing our company website redesign. Exam fees included in the quoted fee, which was transparent.",
-          "disliked": "No Coursera Plus, no Azure/AWS certifications, no tool access bundled with the programme. You are on your own for tech certifications.",
-          "body": "Best value for money if you already work in IT and just need the management degree. The programme will not teach you new technologies, but it will give you the management frameworks and MBA credential. At Rs 94,000 with NAAC A+, no complaints about the fee. The brand is the main limitation."
-        }
-      ]
     },
     "faqs": [
       {
@@ -147,6 +115,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 25,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

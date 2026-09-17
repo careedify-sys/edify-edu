@@ -19,32 +19,77 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Strategic Management", "desc": "Common core. Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic planning process." },
-            { "name": "Optimization Models for Business Decisions", "desc": "Common core. Linear programming, transportation models, assignment problems, and quantitative decision-making tools." },
-            { "name": "Summer Training/Project Work", "desc": "Common core. Industry-based project applying management concepts to a real business problem." },
-            { "name": "Business Intelligence and Analytics", "desc": "BI architecture, data warehousing concepts, OLAP, dashboards, KPI tracking, and analytics-driven decision support systems." },
-            { "name": "Enterprise Resource Planning", "desc": "ERP system architecture, SAP/Oracle module overview, implementation methodology, change management, and ERP ROI measurement." },
-            { "name": "Relational Database Management System", "desc": "SQL fundamentals, normalization, ER modelling, query optimization, transaction management, and database design principles." },
-            { "name": "E-Customer Relationship Management", "desc": "CRM platforms, customer lifecycle management, digital customer engagement, CRM analytics, and customer retention strategies." },
-            { "name": "System Analysis and Design", "desc": "SDLC phases, requirements gathering, system modelling (DFD, UML), feasibility analysis, and system testing frameworks." },
-            { "name": "Knowledge Management Systems", "desc": "Knowledge capture and codification, knowledge-sharing platforms, communities of practice, and organizational learning infrastructure." }
+            {
+              "name": "Strategic Management",
+              "desc": "Common core. Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic planning process."
+            },
+            {
+              "name": "Optimization Models for Business Decisions",
+              "desc": "Common core. Linear programming, transportation models, assignment problems, and quantitative decision-making tools."
+            },
+            {
+              "name": "Summer Training/Project Work",
+              "desc": "Common core. Industry-based project applying management concepts to a real business problem."
+            },
+            {
+              "name": "Business Intelligence and Analytics",
+              "desc": "BI architecture, data warehousing concepts, OLAP, dashboards, KPI tracking, and analytics-driven decision support systems."
+            },
+            {
+              "name": "Enterprise Resource Planning",
+              "desc": "ERP system architecture, SAP/Oracle module overview, implementation methodology, change management, and ERP ROI measurement."
+            },
+            {
+              "name": "Relational Database Management System",
+              "desc": "SQL fundamentals, normalization, ER modelling, query optimization, transaction management, and database design principles."
+            },
+            {
+              "name": "E-Customer Relationship Management",
+              "desc": "CRM platforms, customer lifecycle management, digital customer engagement, CRM analytics, and customer retention strategies."
+            },
+            {
+              "name": "System Analysis and Design",
+              "desc": "SDLC phases, requirements gathering, system modelling (DFD, UML), feasibility analysis, and system testing frameworks."
+            },
+            {
+              "name": "Knowledge Management Systems",
+              "desc": "Knowledge capture and codification, knowledge-sharing platforms, communities of practice, and organizational learning infrastructure."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Entrepreneurship Development", "desc": "Common core. Startup ideation, business plan creation, funding strategies, and entrepreneurial ecosystem in India." },
-            { "name": "Business Ethics and Corporate Governance", "desc": "Common core. Ethical frameworks, corporate social responsibility, board governance, and regulatory compliance." },
-            { "name": "Comprehensive Viva-Voce", "desc": "Common core. Oral examination covering all four semesters of the MBA programme." },
-            { "name": "Information Security and Cyber Laws", "desc": "Cybersecurity frameworks, IT Act 2000 provisions, DPDP Act basics, data protection, risk assessment, and incident response planning." },
-            { "name": "E-Commerce", "desc": "E-commerce business models, payment gateway mechanics, marketplace strategy, last-mile logistics, and digital commerce regulation." },
-            { "name": "Digital Transformation and Innovation", "desc": "Digital strategy formulation, technology adoption frameworks, innovation management, cloud migration planning, and digital maturity assessment." }
+            {
+              "name": "Entrepreneurship Development",
+              "desc": "Common core. Startup ideation, business plan creation, funding strategies, and entrepreneurial ecosystem in India."
+            },
+            {
+              "name": "Business Ethics and Corporate Governance",
+              "desc": "Common core. Ethical frameworks, corporate social responsibility, board governance, and regulatory compliance."
+            },
+            {
+              "name": "Comprehensive Viva-Voce",
+              "desc": "Common core. Oral examination covering all four semesters of the MBA programme."
+            },
+            {
+              "name": "Information Security and Cyber Laws",
+              "desc": "Cybersecurity frameworks, IT Act 2000 provisions, DPDP Act basics, data protection, risk assessment, and incident response planning."
+            },
+            {
+              "name": "E-Commerce",
+              "desc": "E-commerce business models, payment gateway mechanics, marketplace strategy, last-mile logistics, and digital commerce regulation."
+            },
+            {
+              "name": "Digital Transformation and Innovation",
+              "desc": "Digital strategy formulation, technology adoption frameworks, innovation management, cloud migration planning, and digital maturity assessment."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Kurukshetra University MBA IT Management graduates target roles across IT services, digital transformation, and enterprise systems:\n\n**Industries:** IT/ITES, BFSI (IT divisions), e-commerce, consulting, telecom, manufacturing (ERP/IT), government IT departments, and digital agencies\n\n**Entry-level roles:** IT Business Analyst, Systems Analyst, ERP Functional Consultant, CRM Administrator, BI Analyst, IT Project Coordinator\n\n**Mid-level roles (3-5 years experience):** IT Manager, ERP Manager, BI Manager, IT Project Manager, Digital Transformation Lead, CRM Manager, InfoSec Manager\n\n**Senior roles (7+ years):** CIO (mid-market), VP IT, Head of Digital, Director of Enterprise Systems, Head of Information Security, Chief Digital Officer\n\n**Employers:** IT companies (TCS, Infosys, Wipro, HCL), consulting firms, banks (IT divisions), e-commerce platforms, manufacturing (ERP teams), and Haryana/NCR government IT departments.\n\n**Note:** As a public state university with NAAC A++, the Kurukshetra degree carries strong credibility for government IT roles and PSU IT departments. Information Security and Cyber Laws adds value for compliance and governance roles."
+      "body": "Kurukshetra University MBA IT Management graduates target roles across IT services, digital transformation, and enterprise systems:\n\n**Industries:** IT/ITES, BFSI (IT divisions), e-commerce, consulting, telecom, manufacturing (ERP/IT), government IT departments, and digital agencies\n\n**Entry-level roles:** IT Business Analyst, Systems Analyst, ERP Functional Consultant, CRM Administrator, BI Analyst, IT Project Coordinator\n\n**Mid-level roles (3-5 years experience):** IT Manager, ERP Manager, BI Manager, IT Project Manager, Digital Transformation Lead, CRM Manager, InfoSec Manager\n\n**Senior roles (7+ years):** CIO (mid-market), VP IT, Head of Digital, Director of Enterprise Systems, Head of Information Security, Chief Digital Officer\n\n**Employers:** IT companies (TCS, Infosys, Wipro, HCL), consulting firms, banks (IT divisions), e-commerce platforms, manufacturing (ERP teams), and Haryana/NCR government IT departments.\n\n**Note:** As a public state university with NAAC A++, the Kurukshetra degree carries strong credibility for government IT roles and PSU IT departments. Information Security and Cyber Laws adds value for compliance and governance roles.\n\n**Where to verify placement claims:** ask Kurukshetra University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The IT Management specialisation builds skills across enterprise systems, digital strategy, and information security:\n\n**Technical skills:**\n- Database Management: SQL query writing, ER diagram design, normalization, and database performance tuning\n- ERP: SAP/Oracle module navigation, ERP implementation methodology, business process mapping, and change management for ERP projects\n- Business Intelligence: dashboard design, KPI definition, OLAP cube navigation, and data warehouse architecture understanding\n- Information Security: risk assessment frameworks, IT Act 2000 compliance, data protection policies, and incident response planning\n\n**Applied skills:**\n- Digital Transformation: digital maturity assessment, cloud migration planning, technology adoption roadmap creation, and innovation management\n- System Analysis: requirements specification writing, DFD/UML modelling, feasibility study preparation, and system testing plan design\n- E-Commerce: marketplace strategy formulation, payment integration planning, and digital commerce compliance\n\n**Soft skills:** Presenting IT strategy to business leadership, managing vendor relationships, translating technical requirements into business language, and leading cross-functional IT projects."
@@ -57,38 +102,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with IT Management as the specialisation, issued by Kurukshetra University under UGC-DEB online mode standards.\n\nThe degree carries NAAC A++ accreditation (the highest possible grade) and UGC-DEB approval. As a public state university degree, it holds strong validity for government IT recruitment, PSU IT departments, and private-sector IT management positions. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from Kurukshetra University Online MBA IT Management students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Arun P.",
-          "city": "Panchkula",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Public state university with NAAC A++ at Rs 1,02,000. For government IT department applications and PSU IT roles, a state university MBA carries more weight than any private alternative",
-          "disliked": "The LMS is functional but the interface feels dated compared to Amity or Manipal. Navigation could be smoother",
-          "body": "I am in government IT and needed a management degree for promotion. Kurukshetra was the clear choice. Public state university, NAAC A++ (highest grade), and Rs 1,02,000 total. The IT Management curriculum covers ERP, RDBMS, BI, and information security, all relevant to my government IT role. The Information Security and Cyber Laws paper is timely given the DPDP Act implementation. The degree carries full state university recognition."
-        },
-        {
-          "name": "Meera S.",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Digital Transformation and Innovation in Sem 4 covered practical frameworks for technology adoption planning. E-Commerce and Information Security added contemporary IT management depth",
-          "disliked": "Kurukshetra is well-known in Haryana and parts of North India but brand recognition is limited in Bangalore, Pune, and Hyderabad IT hubs. For IT MNC roles in those cities, the brand needs context",
-          "body": "The IT Management curriculum balances enterprise systems (ERP, RDBMS, system analysis) with digital-era content (e-commerce, digital transformation, cyber laws). That balance works for mid-career IT professionals. The NAAC A++ grade is the highest available. The public university tag adds credibility. The trade-off is brand recognition outside North India. In Haryana and NCR the name is strong. Nationally for IT roles, you lead with the accreditation and public university story."
-        },
-        {
-          "name": "Gaurav L.",
-          "city": "Yamunanagar",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Zero-cost EMI directly through the university. Semester-wise payment of Rs 25,500 made it manageable on my salary",
-          "disliked": "The RDBMS and System Analysis subjects could use more practical lab components. Theory is covered well but hands-on exercises are limited",
-          "body": "The programme covers the right IT management topics. ERP, database systems, BI, CRM, and information security are all relevant for IT management roles. The delivery is adequate, not premium. Some subjects had strong faculty engagement, others relied on recorded lectures. At Rs 1,02,000 from a NAAC A++ public university, you get a credible degree. If you need hands-on technical labs and premium delivery, you will need to budget more."
-        }
-      ]
     },
     "faqs": [
       {
@@ -132,6 +145,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 30,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

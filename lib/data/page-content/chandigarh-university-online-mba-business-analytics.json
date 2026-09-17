@@ -73,7 +73,7 @@
       ]
     },
     "whoHires": {
-      "body": "Business Analytics MBA graduates from Chandigarh University Online are hired across data-driven industries:\n\n**Industries:** Technology, BFSI, retail and e-commerce, logistics, healthcare, consulting, telecom, and manufacturing\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Consultant, BI Developer, Reporting Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Business Analyst, Analytics Manager, Data Product Manager, Management Consulting Analyst, Decision Analytics Lead\n\n**Senior roles (7+ years):** Analytics Director, Head of Data Science, Chief Analytics Officer, Partner (analytics consulting track)\n\n**Where to verify placement claims:** ask Chandigarh University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
+      "body": "This Business Analytics MBA syllabus maps to the following data-driven industries:\n\n**Industries:** Technology, BFSI, retail and e-commerce, logistics, healthcare, consulting, telecom, and manufacturing\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Consultant, BI Developer, Reporting Analyst\n\n**Mid-level roles (3-5 years experience):** Senior Business Analyst, Analytics Manager, Data Product Manager, Management Consulting Analyst, Decision Analytics Lead\n\n**Senior roles (7+ years):** Analytics Director, Head of Data Science, Chief Analytics Officer, Partner (analytics consulting track)\n\n**Where to verify placement claims:** ask Chandigarh University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The practical outcome is that you can get the data yourself, model it, and present the result to people who will not read the code.\n\nSQL and Data Engineering and Dashboard Design cover the retrieval and presentation layer: querying, shaping a dataset and building reporting that survives contact with real users. This is the most immediately usable pair.\n\nPython for Business Analytics and Machine Learning cover the modelling work, from data handling through to supervised methods and how to tell a model that generalises from one that memorised the training set.\n\nBusiness Forecasting and Time Series covers demand and financial forecasting, including seasonality and why naive extrapolation fails. Big Data Analytics and Tools covers working at a scale where a spreadsheet stops being an option, and the GenAI subject covers using language models as an analysis and reporting aid."
@@ -130,6 +130,7 @@
     "hasSyllabusData": true,
     "phase71Updated": "2026-04-22",
     "integrityPass": "2026-09-17",
-    "humanisedAt": "2026-09-17"
+    "humanisedAt": "2026-09-17",
+    "claimSweep": "2026-09-17"
   }
 }

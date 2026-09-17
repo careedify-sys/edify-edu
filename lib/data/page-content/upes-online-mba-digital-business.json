@@ -61,7 +61,7 @@
       "note": "Sem 1-2 shared core subjects across all UPES MBA specialisations. Core includes Managerial Economics, Accounting for Managers, Marketing Management, Quantitative Techniques, Operations Management, OB and HRM, Project Management, Financial Management, Research Methodology, and Business Analytics for Managers."
     },
     "whoHires": {
-      "body": "Digital Business MBA graduates from UPES Online are hired across these industries and roles:\n\n**Industries:** E-commerce, IT product and services, EdTech, FinTech, Digital marketing agencies, Technology consulting\n\n**Entry-level roles:** Digital Business Analyst, Product Analyst, E-Commerce Executive, Digital Transformation Analyst, Growth Executive\n\n**Mid-level roles (3-5 years experience):** Product Manager, Digital Transformation Manager, E-Commerce Manager, Digital Business Development Manager, Technology Consulting Manager\n\n**Senior roles (7+ years):** Chief Digital Officer, Head of Digital Business, VP Product, Director Digital Transformation, Head of E-Commerce\n\n**Top hiring organisations (UPES alumni placements):** TCS, Infosys, HCL, Wipro, Deloitte, KPMG, and technology product and e-commerce companies. UPES NIRF #36 Management ranking and UGC-DEB approval give Digital Business graduates corporate credibility for technology business leadership roles in North India IT corridors."
+      "body": "This Digital Business MBA syllabus maps to the following industries and roles:\n\n**Industries:** E-commerce, IT product and services, EdTech, FinTech, Digital marketing agencies, Technology consulting\n\n**Entry-level roles:** Digital Business Analyst, Product Analyst, E-Commerce Executive, Digital Transformation Analyst, Growth Executive\n\n**Mid-level roles (3-5 years experience):** Product Manager, Digital Transformation Manager, E-Commerce Manager, Digital Business Development Manager, Technology Consulting Manager\n\n**Senior roles (7+ years):** Chief Digital Officer, Head of Digital Business, VP Product, Director Digital Transformation, Head of E-Commerce\n\n**Where to verify placement claims:** ask University of Petroleum & Energy Studies (UPES) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The UPES Digital Business specialisation builds skills that technology, e-commerce, and digital consulting employers test at product manager and digital transformation manager levels:\n\n**Technical skills:**\n- E-Commerce and Digital Business Models: platform business model design, marketplace economics, and D2C strategy for e-commerce and digital product management roles\n- Digital Consumer Experience: customer journey mapping, UX product thinking, and omnichannel experience design for product management and digital marketing roles\n- Cybersecurity for Managers: digital risk governance, cybersecurity policy management, and security-by-design thinking for technology leadership roles. A dedicated business subject uncommon in peer online MBAs at this fee range\n- FinTech and Digital Payments: digital payment infrastructure, fintech business model evaluation, and digital financial product development\n\n**Applied skills:**\n- Digital Innovation and Transformation: digital transformation programme leadership, innovation pipeline management, and design thinking application to technology-led business change\n- Emerging Technologies in Business: AI, IoT, blockchain, and cloud computing business application evaluation for technology investment and product roadmap decisions\n\n**Soft skills:** Presenting digital transformation business cases to boards, managing technology vendor relationships, communicating digital product roadmaps to cross-functional teams, and building stakeholder alignment for digital change initiatives."
@@ -74,38 +74,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by University of Petroleum and Energy Studies (UPES) and carries the UPES name with the MBA designation. The Digital Business specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India. UPES is WES recognised, making the degree suitable for international credential evaluation."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from UPES Online MBA Digital Business alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Aakash Verma",
-          "city": "Gurgaon",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Cybersecurity for Managers was unique and directly applicable to my digital product role. E-Commerce and Digital Business Models subject gave strong platform strategy frameworks I used in a product manager interview.",
-          "disliked": "FinTech subject depth could be stronger for those targeting core fintech product roles rather than general digital business.",
-          "body": "I had 5 years in IT services project management and the UPES Digital Business MBA helped me transition to a product manager role at a Gurgaon e-commerce startup. NIRF #36 in Management was a strong credential."
-        },
-        {
-          "name": "Nidhi Joshi",
-          "city": "Noida",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Digital Consumer Experience and Social Media Strategy were well-structured. Digital Innovation and Transformation gave good frameworks for digital project leadership.",
-          "disliked": "For South India tech company careers, UPES brand recognition is limited compared to NMIMS or JAIN Bengaluru. Self-sourcing was required for digital roles outside North India.",
-          "body": "Good programme for North India digital transformation and product careers. The Cybersecurity for Managers subject was a differentiator in interviews. UPES alumni in Delhi NCR digital corridor were helpful."
-        },
-        {
-          "name": "Siddharth Rawat",
-          "city": "Dehradun",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Emerging Technologies subject gave useful AI and blockchain business application frameworks. Digital Business Strategy was well-structured for startup scenarios.",
-          "disliked": "Some faculty lacked hands-on digital product experience. Assignment quality checks could be tighter.",
-          "body": "Solid digital business credential at Rs 1,75,000. NIRF #36 Management ranking is a genuine differentiator in North India. Best for digital transformation, product, and e-commerce careers in Uttarakhand and Delhi NCR."
-        }
-      ]
     },
     "faqs": [
       {
@@ -146,6 +114,7 @@
     "wordCount": 1900,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch15",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

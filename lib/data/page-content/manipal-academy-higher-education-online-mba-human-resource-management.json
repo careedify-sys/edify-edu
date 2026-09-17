@@ -19,29 +19,65 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Management Accounting", "desc": "Cost analysis, budgeting, variance analysis, and management decision-making using accounting data." },
-            { "name": "Legal Aspects of Business", "desc": "Contract law, consumer protection, intellectual property, company law basics, and regulatory compliance." },
-            { "name": "Minor Project", "desc": "Applied HR research project supervised by faculty." },
-            { "name": "Compensation and Benefits", "desc": "Salary structuring, CTC design, statutory compliance (PF, ESI, Gratuity), incentive design, pay equity analysis, and global compensation benchmarking." },
-            { "name": "Performance Management and Appraisal", "desc": "KRA/KPI frameworks, balanced scorecard, 360-degree feedback, bell curve and forced ranking debates, OKR methodology, and PIP design." },
-            { "name": "International HRM", "desc": "Cross-cultural management, expatriate compensation and taxation, global mobility policies, international labour law, and managing geographically distributed teams." }
+            {
+              "name": "Management Accounting",
+              "desc": "Cost analysis, budgeting, variance analysis, and management decision-making using accounting data."
+            },
+            {
+              "name": "Legal Aspects of Business",
+              "desc": "Contract law, consumer protection, intellectual property, company law basics, and regulatory compliance."
+            },
+            {
+              "name": "Minor Project",
+              "desc": "Applied HR research project supervised by faculty."
+            },
+            {
+              "name": "Compensation and Benefits",
+              "desc": "Salary structuring, CTC design, statutory compliance (PF, ESI, Gratuity), incentive design, pay equity analysis, and global compensation benchmarking."
+            },
+            {
+              "name": "Performance Management and Appraisal",
+              "desc": "KRA/KPI frameworks, balanced scorecard, 360-degree feedback, bell curve and forced ranking debates, OKR methodology, and PIP design."
+            },
+            {
+              "name": "International HRM",
+              "desc": "Cross-cultural management, expatriate compensation and taxation, global mobility policies, international labour law, and managing geographically distributed teams."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Entrepreneurship and Innovation", "desc": "Startup ideation, business model canvas, lean startup methodology, and funding strategies." },
-            { "name": "Sustainability", "desc": "Sustainable business models, ESG frameworks, and CSR strategy." },
-            { "name": "Capstone Project", "desc": "HR capstone integrating Sem 1-4 learning with an industry-linked organisational problem." },
-            { "name": "Training and Development", "desc": "Training needs analysis (TNA), L&D programme design, Kirkpatrick evaluation model, ROI of training, e-learning content development, and blended learning strategy." },
-            { "name": "Talent Management and Employee Retention", "desc": "Employee value proposition (EVP) design, succession planning, career pathing, attrition analysis, engagement surveys, and employer branding." },
-            { "name": "HR Analytics", "desc": "People data dashboards, predictive attrition models, workforce planning, recruitment funnel analytics, sentiment analysis, and data-driven HRBP decision-making." }
+            {
+              "name": "Entrepreneurship and Innovation",
+              "desc": "Startup ideation, business model canvas, lean startup methodology, and funding strategies."
+            },
+            {
+              "name": "Sustainability",
+              "desc": "Sustainable business models, ESG frameworks, and CSR strategy."
+            },
+            {
+              "name": "Capstone Project",
+              "desc": "HR capstone integrating Sem 1-4 learning with an industry-linked organisational problem."
+            },
+            {
+              "name": "Training and Development",
+              "desc": "Training needs analysis (TNA), L&D programme design, Kirkpatrick evaluation model, ROI of training, e-learning content development, and blended learning strategy."
+            },
+            {
+              "name": "Talent Management and Employee Retention",
+              "desc": "Employee value proposition (EVP) design, succession planning, career pathing, attrition analysis, engagement surveys, and employer branding."
+            },
+            {
+              "name": "HR Analytics",
+              "desc": "People data dashboards, predictive attrition models, workforce planning, recruitment funnel analytics, sentiment analysis, and data-driven HRBP decision-making."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "MAHE MBA HRM graduates target roles across corporate HR, consulting, and HR tech:\n\n**Industries:** IT services, BFSI, manufacturing, consulting, FMCG, pharma, e-commerce, and HR tech\n\n**Entry-level roles:** HR Executive, Talent Acquisition Associate, Compensation Analyst, HRBP (junior), L&D Coordinator, Employee Engagement Associate\n\n**Mid-level roles (3-5 years experience):** HR Manager, Talent Acquisition Manager, Compensation and Benefits Manager, L&D Manager, HR Analytics Lead, Employee Relations Manager\n\n**Senior roles (7+ years):** CHRO, VP Human Resources, Head of Talent Acquisition, Director of L&D, Head of People Analytics, Global HR Director\n\n**Employers:** IT firms (TCS, Infosys, Wipro, HCLTech), BFSI (HDFC Bank, ICICI, Kotak), consulting (Deloitte People Advisory, Mercer, Aon), FMCG (HUL, ITC, Nestle), and HR tech (Darwinbox, Keka, Zoho People).\n\n**Note:** MAHE provides career support services. The Manipal alumni network is strong in healthcare, IT services, and banking sectors."
+      "body": "MAHE MBA HRM graduates target roles across corporate HR, consulting, and HR tech:\n\n**Industries:** IT services, BFSI, manufacturing, consulting, FMCG, pharma, e-commerce, and HR tech\n\n**Entry-level roles:** HR Executive, Talent Acquisition Associate, Compensation Analyst, HRBP (junior), L&D Coordinator, Employee Engagement Associate\n\n**Mid-level roles (3-5 years experience):** HR Manager, Talent Acquisition Manager, Compensation and Benefits Manager, L&D Manager, HR Analytics Lead, Employee Relations Manager\n\n**Senior roles (7+ years):** CHRO, VP Human Resources, Head of Talent Acquisition, Director of L&D, Head of People Analytics, Global HR Director\n\n**Employers:** IT firms (TCS, Infosys, Wipro, HCLTech), BFSI (HDFC Bank, ICICI, Kotak), consulting (Deloitte People Advisory, Mercer, Aon), FMCG (HUL, ITC, Nestle), and HR tech (Darwinbox, Keka, Zoho People).\n\n**Note:** MAHE provides career support services. The Manipal alumni network is strong in healthcare, IT services, and banking sectors.\n\n**Where to verify placement claims:** ask Manipal Academy of Higher Education (MAHE) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The HRM specialisation builds skills across people management, analytics, and organisational development:\n\n**Technical skills:**\n- Compensation Design: CTC structuring, statutory compliance mapping, incentive scheme modelling, and pay equity analysis\n- HR Analytics: predictive attrition modelling, workforce planning with people data, recruitment funnel optimisation, and engagement survey analysis\n- Performance Systems: KRA/KPI design, OKR implementation, 360-degree feedback administration, and PIP creation\n- International HR: expatriate compensation calculation, cross-cultural assessment, and global mobility policy drafting\n\n**Applied skills:**\n- Training ROI: Kirkpatrick model application, training needs assessment, and blended learning programme design\n- Talent Management: succession planning frameworks, EVP articulation, employer branding strategy, and retention programme design\n\n**Soft skills:** Conducting difficult conversations (terminations, PIPs), negotiating with unions, presenting HR metrics to C-suite, and facilitating organisational change."
@@ -54,38 +90,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Human Resource Management as the specialisation, issued by Manipal Academy of Higher Education (MAHE) under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation, NIRF #3 University rank, Institution of Eminence status, and WES recognition. Valid for corporate HR promotions, PSU roles, MNC HR leadership positions, and private-sector talent management recruitment. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from MAHE Online MBA HRM students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Sneha M.",
-          "city": "Pune",
-          "year": 2024,
-          "rating": 4.1,
-          "liked": "HR Analytics as a full subject, not just a module. Compensation and Benefits covered statutory compliance in practical depth",
-          "disliked": "At ₹2,92,000, MUJ offers the same platform HRM MBA for ₹1,80,000. The MAHE premium needs better career support to justify",
-          "body": "I picked MAHE for the NIRF #3 tag because my employer uses university rank as a filter for L5+ HR roles. The HR Analytics subject was the highlight, covering predictive attrition and workforce planning dashboards. Coursera Plus supplemented well with People Analytics courses from Wharton. The concern is value for money. MUJ delivers almost identical content on the same LMS. Unless the flagship brand specifically matters for your career, consider MUJ seriously."
-        },
-        {
-          "name": "Rajesh P.",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 4.0,
-          "liked": "International HRM covered practical expatriate compensation and global mobility. Performance Management module addressed real PIP and bell curve scenarios",
-          "disliked": "Career services were reactive, not proactive. Had to independently network through Manipal alumni groups for opportunities",
-          "body": "Working in IT HR, the International HRM and Performance Management subjects were directly applicable. The Talent Management module on EVP design and employer branding was well taught. NIRF #3 and IoE cleared credential filters at two MNCs I applied to. The 15% corporate employee scholarship brought costs down to around ₹2,48,200, which made the decision easier versus full price."
-        },
-        {
-          "name": "Kavita R.",
-          "city": "Delhi",
-          "year": 2023,
-          "rating": 3.8,
-          "liked": "Training and Development covered Kirkpatrick model in practical depth. Coursera Plus access gave supplementary L&D content",
-          "disliked": "The loan-disqualifies-scholarship policy hurt. I needed financing but lost the 15% female learner discount, making effective cost higher than planned",
-          "body": "The HRM curriculum is solid, especially the Sem 4 combination of T&D, Talent Management, and HR Analytics. My main frustration was the scholarship policy. I qualified for the 15% female learner scholarship but needed a loan for the remaining amount. MAHE's policy disqualifies all scholarships if you take financing. This pushed my effective cost to the full ₹2,92,000. Other universities like Amity and LPU allow scholarship plus loan combinations."
-        }
-      ]
     },
     "faqs": [
       {
@@ -128,6 +132,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 22,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

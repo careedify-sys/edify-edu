@@ -69,7 +69,7 @@
       "note": "Sem 1-2 shared core subjects across all NIU Online MBA specialisations. Strategic Management and Legal Aspects of Business are common Sem 3 subjects. Entrepreneurship Development and Digital Marketing and E-Commerce are common Sem 4 subjects."
     },
     "whoHires": {
-      "body": "Business Analytics MBA graduates target these industries and roles:\n\n**Industries:** IT services and consulting, BFSI, E-commerce, FMCG, Healthcare analytics, Logistics and supply chain\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Associate, MIS Executive, BI Developer\n\n**Mid-level roles (3-5 years):** Analytics Manager, Senior Business Analyst, Data Science Manager, BI Manager, Marketing Analytics Lead\n\n**Senior roles (7+ years):** Head of Analytics, VP Data Science, Analytics Director, Chief Data Officer\n\n**Typical hiring organisations in Delhi-NCR:** Infosys, TCS, Wipro, HCL Technologies, Genpact, EXL Service, HDFC Bank, ICICI Bank, Amazon India, Flipkart, Paytm, Deloitte India"
+      "body": "Business Analytics MBA graduates target these industries and roles:\n\n**Industries:** IT services and consulting, BFSI, E-commerce, FMCG, Healthcare analytics, Logistics and supply chain\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Associate, MIS Executive, BI Developer\n\n**Mid-level roles (3-5 years):** Analytics Manager, Senior Business Analyst, Data Science Manager, BI Manager, Marketing Analytics Lead\n\n**Senior roles (7+ years):** Head of Analytics, VP Data Science, Analytics Director, Chief Data Officer\n\n**Typical hiring organisations in Delhi-NCR:** Infosys, TCS, Wipro, HCL Technologies, Genpact, EXL Service, HDFC Bank, ICICI Bank, Amazon India, Flipkart, Paytm, Deloitte India\n\n**Where to verify placement claims:** ask Noida International University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The NIU Business Analytics specialisation builds skills tested by IT services and analytics employers:\n\n**Technical skills:**\n- AI and Machine Learning: supervised and unsupervised learning, model selection, feature engineering, and algorithm evaluation for analyst and data science roles\n- Machine Learning using Python: hands-on implementation with scikit-learn, pandas, NumPy, and Python ML libraries for technical analytics positions\n- Supply Chain Analytics: demand forecasting, inventory optimisation, and logistics data modelling for operations analytics roles\n- Financial and Credit Risk Analytics: credit scoring models, default prediction, and portfolio risk assessment for BFSI analytics roles\n- Database Management System: SQL querying, relational database design, and data pipeline management for BI and data engineering roles\n\n**Applied skills:**\n- Marketing Analytics: customer segmentation, campaign attribution, and marketing ROI measurement for digital marketing and CRM teams\n- HR Analytics: workforce data analysis, attrition modelling, and talent pipeline optimisation for HR technology roles\n\n**Soft skills:** Translating analytics findings into business recommendations, presenting data-driven insights to non-technical stakeholders, and managing cross-functional analytics project delivery."
@@ -82,38 +82,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Noida International University (NIU) and carries the MBA designation. The Business Analytics specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is WES recognised for international credential evaluation. It is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three reviews from NIU Online MBA Business Analytics students. Ratings from post-completion feedback.",
-      "items": [
-        {
-          "name": "Vikram",
-          "city": "Greater Noida",
-          "year": 2025,
-          "rating": 4.2,
-          "liked": "AI and Machine Learning and Machine Learning using Python subjects were practical. The Rs 97,600 all-in fee is the lowest I found for a NAAC A+ MBA.",
-          "disliked": "NIU brand is not well known outside Greater Noida. Career services are basic compared to NIRF-ranked universities.",
-          "body": "I chose NIU purely on affordability. The analytics subjects are solid, especially the Python and ML components. The fee saved me over Rs 60,000 compared to alternatives. Brand recognition is a gap, but the NAAC A+ and UGC-DEB approval give the degree validity."
-        },
-        {
-          "name": "Priya",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 3.9,
-          "liked": "Supply Chain Analytics and Marketing Analytics were directly useful in my e-commerce analytics role. WES recognition was a bonus.",
-          "disliked": "EMI terms were not clearly communicated upfront. I had to confirm interest rates separately with the financing partner.",
-          "body": "Good analytics depth for the price. The Financial and Credit Risk Analytics subject was relevant for my BFSI career pivot. I would recommend confirming EMI interest rates before enrolling, as the zero-cost EMI is not guaranteed."
-        },
-        {
-          "name": "Rohit",
-          "city": "Noida",
-          "year": 2025,
-          "rating": 4.0,
-          "liked": "Blockchain Technologies and Database Management System subjects added breadth to the analytics specialisation. Fee advantage over LPU and Amity was significant.",
-          "disliked": "No bundled certifications or industry partnerships. Self-sourced job search was necessary.",
-          "body": "At Rs 97,600, this is hard to beat for a NAAC A+ online MBA with analytics depth. The subjects cover a wide range from ML to blockchain. Career support is limited, so be prepared to drive your own job search."
-        }
-      ]
     },
     "faqs": [
       {
@@ -155,6 +123,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 26,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

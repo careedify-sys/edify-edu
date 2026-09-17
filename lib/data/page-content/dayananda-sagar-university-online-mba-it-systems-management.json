@@ -18,7 +18,7 @@
       "note": "Detailed Sem 3-4 curriculum for DSU's IT & Systems Management specialisation is shared at admission. Our counsellor can share the current subject list within 24 hours."
     },
     "whoHires": {
-      "body": "IT and Systems Management MBA graduates target leadership roles in technology organisations:\n\n**Industries:** IT services, SaaS, product companies, GCCs (Global Capability Centres), BFSI (technology divisions), telecom, manufacturing (digital transformation), and government IT departments\n\n**Entry-level roles:** IT Project Coordinator, Systems Analyst, IT Operations Executive, Technology Consultant (junior), ERP Associate\n\n**Mid-level roles (3-5 years experience):** IT Project Manager, IT Manager, Systems Manager, Technology Lead, ERP Implementation Manager, IT Vendor Manager\n\n**Senior roles (7+ years):** CTO, CIO, VP Engineering (management track), Head of IT Operations, IT Director, Digital Transformation Head\n\n**Top hiring organisations in Bangalore:** Infosys, Wipro, TCS, HCL Technologies (IT services), Goldman Sachs, Target, Walmart Labs, SAP Labs (GCCs), Microsoft India, Google India, Amazon (product companies), and 400+ GCCs hiring IT management professionals in Bangalore alone"
+      "body": "IT and Systems Management MBA graduates target leadership roles in technology organisations:\n\n**Industries:** IT services, SaaS, product companies, GCCs (Global Capability Centres), BFSI (technology divisions), telecom, manufacturing (digital transformation), and government IT departments\n\n**Entry-level roles:** IT Project Coordinator, Systems Analyst, IT Operations Executive, Technology Consultant (junior), ERP Associate\n\n**Mid-level roles (3-5 years experience):** IT Project Manager, IT Manager, Systems Manager, Technology Lead, ERP Implementation Manager, IT Vendor Manager\n\n**Senior roles (7+ years):** CTO, CIO, VP Engineering (management track), Head of IT Operations, IT Director, Digital Transformation Head\n\n**Where to verify placement claims:** ask Dayananda Sagar University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The IT and Systems Management specialisation builds skills for managing technology teams, projects, and enterprise systems:\n\n**Technical skills:**\n- IT Project Management: Agile/Scrum, waterfall, hybrid methodologies, resource allocation, timeline management, and project risk mitigation\n- Enterprise Systems: ERP concepts (SAP, Oracle), CRM systems, enterprise architecture frameworks, and systems integration planning\n- IT Governance: ITIL frameworks, COBIT, IT audit processes, SLA management, and compliance reporting\n- Cybersecurity Management: threat landscape understanding, security policy design, incident response planning, and data protection regulations\n\n**Applied skills:**\n- IT Strategy: aligning technology investments with business objectives, build-vs-buy decisions, vendor evaluation, and technology roadmap creation\n- Digital Transformation: assessing organisational readiness for digital change, cloud migration planning, and automation strategy\n\n**Soft skills:** Managing cross-cultural technology teams (especially in GCC settings), translating technical requirements to business stakeholders, vendor negotiation, presenting technology investment cases to the board, and managing team productivity in remote/hybrid delivery models."
@@ -31,38 +31,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with IT and Systems Management noted as the specialisation, issued by Dayananda Sagar University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation, the highest NAAC grade. Valid for government IT positions, corporate IT leadership promotions, CIO-track progression, and higher education. WES recognition supports international credential evaluation for global IT management career pathways."
-    },
-    "reviews": {
-      "intro": "Three reviews from DSU Online MBA IT and Systems Management students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Sanjay V.",
-          "city": "Bangalore",
-          "year": 2025,
-          "rating": 4,
-          "liked": "NAAC A++ at Rs 1.3 lakh cleared my employer's education policy for IT manager promotion",
-          "disliked": "More hands-on case studies from Bangalore IT companies would be valuable",
-          "body": "I have been a senior developer at an IT services company in Bangalore for 8 years. The MBA was necessary for the project manager track. My company requires NAAC A or above for management-track promotions. DSU's NAAC A++ cleared that threshold, and the Rs 1,30,000 fee made it an easy decision. IT governance, project management, and enterprise systems content was directly relevant to my daily work."
-        },
-        {
-          "name": "Lakshmi N.",
-          "city": "Hyderabad",
-          "year": 2025,
-          "rating": 4,
-          "liked": "Bangalore IT ecosystem perspective enriched the curriculum content",
-          "disliked": "Online alumni network for IT management is still developing",
-          "body": "Working at a Hyderabad GCC, I chose DSU because the Bangalore IT context felt more relevant than universities in other cities. The IT strategy and governance modules referenced real enterprise scenarios. Faculty drew from Bangalore's tech industry for examples. The per-semester payment of Rs 30,000 was easy to budget. Good programme for mid-career IT professionals wanting the management credential."
-        },
-        {
-          "name": "Prakash D.",
-          "city": "Pune",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Affordable NAAC A++ credential for IT management track",
-          "disliked": "DSU online is newer, less recognised than Manipal or JAIN in IT industry",
-          "body": "The accreditation and price are excellent. My concern is employer brand recognition. In Pune's IT market, Manipal (SMU) and JAIN are better-known online MBA brands. DSU's offline campus has a good reputation in Bangalore, but the online programme is still building visibility nationally. For formal credential checks (NAAC grade, UGC-DEB), DSU clears every requirement. For informal brand conversations with hiring managers, it is a newer name."
-        }
-      ]
     },
     "faqs": [
       {
@@ -105,6 +73,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 36,
     "hasSyllabusData": false,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

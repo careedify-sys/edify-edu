@@ -19,27 +19,57 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "International Business", "desc": "Global trade frameworks, cross-border market entry strategies, FDI analysis, and managing international operations." },
-            { "name": "Business Analytics and Business Modelling", "desc": "Quantitative business modelling, regression analysis, forecasting techniques, and data-driven decision-making frameworks." },
-            { "name": "Robotic Process Automation", "desc": "RPA tool basics, process automation design for financial operations, bot deployment lifecycle, and ROI calculation for RPA implementations." },
-            { "name": "Financial Analytics using Python and SQL", "desc": "Python pandas for financial data analysis, SQL querying for fintech databases, and automated financial reporting scripts." },
-            { "name": "Education for Life", "desc": "Soft skills development, mindfulness, health and wellbeing, and holistic personal effectiveness for professionals." }
+            {
+              "name": "International Business",
+              "desc": "Global trade frameworks, cross-border market entry strategies, FDI analysis, and managing international operations."
+            },
+            {
+              "name": "Business Analytics and Business Modelling",
+              "desc": "Quantitative business modelling, regression analysis, forecasting techniques, and data-driven decision-making frameworks."
+            },
+            {
+              "name": "Robotic Process Automation",
+              "desc": "RPA tool basics, process automation design for financial operations, bot deployment lifecycle, and ROI calculation for RPA implementations."
+            },
+            {
+              "name": "Financial Analytics using Python and SQL",
+              "desc": "Python pandas for financial data analysis, SQL querying for fintech databases, and automated financial reporting scripts."
+            },
+            {
+              "name": "Education for Life",
+              "desc": "Soft skills development, mindfulness, health and wellbeing, and holistic personal effectiveness for professionals."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Environment Sustainability and Governance", "desc": "ESG reporting frameworks, corporate sustainability strategy, carbon accounting basics, and governance obligations." },
-            { "name": "Project", "desc": "Applied industry FinTech project integrating specialisation knowledge with real-world financial services problem-solving." },
-            { "name": "Artificial Intelligence and Analytics", "desc": "AI applications in fraud detection, credit scoring, robo-advisory, and customer analytics for fintech and BFSI firms." },
-            { "name": "Blockchain and Applications", "desc": "Blockchain architecture, smart contract design, DeFi basics, and blockchain use cases in payments and trade finance." },
-            { "name": "Generative AI, Prompt Engineering and AI Tools", "desc": "LLM application in financial analysis, prompt engineering for financial reporting, and AI tool selection for fintech product managers." }
+            {
+              "name": "Environment Sustainability and Governance",
+              "desc": "ESG reporting frameworks, corporate sustainability strategy, carbon accounting basics, and governance obligations."
+            },
+            {
+              "name": "Project",
+              "desc": "Applied industry FinTech project integrating specialisation knowledge with real-world financial services problem-solving."
+            },
+            {
+              "name": "Artificial Intelligence and Analytics",
+              "desc": "AI applications in fraud detection, credit scoring, robo-advisory, and customer analytics for fintech and BFSI firms."
+            },
+            {
+              "name": "Blockchain and Applications",
+              "desc": "Blockchain architecture, smart contract design, DeFi basics, and blockchain use cases in payments and trade finance."
+            },
+            {
+              "name": "Generative AI, Prompt Engineering and AI Tools",
+              "desc": "LLM application in financial analysis, prompt engineering for financial reporting, and AI tool selection for fintech product managers."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "FinTech MBA graduates from Amrita Vishwa Vidyapeetham Online are hired across India's financial services digital transformation sector:\n\n**Industries:** Digital banks and neo-banks, payment companies, BFSI technology divisions, lending tech platforms, regtech firms, insurance tech, wealth tech, and fintech startups\n\n**Entry-level roles:** FinTech Product Analyst, Business Analyst (BFSI digital), RPA Developer (junior), Digital Banking Operations Executive, Financial Analytics Associate\n\n**Mid-level roles (3-5 years experience):** FinTech Product Manager, Digital Banking Manager, RPA Program Manager, Financial Data Analytics Manager, Blockchain Project Manager\n\n**Senior roles (7+ years):** VP FinTech, Chief Digital Officer (BFSI), Head of Digital Transformation, Director of Financial Technology, Chief Innovation Officer\n\n**Top hiring organisations:** PhonePe, Razorpay, Paytm, BankBazaar, Lendingkart, HDFC Bank digital, ICICI Bank tech, Axis Bank fintech, PolicyBazaar, Zerodha tech, Groww, Cred, and fintech product companies across Bengaluru, Mumbai, and Hyderabad"
+      "body": "This FinTech MBA syllabus maps to the following India's financial services digital transformation sector:\n\n**Industries:** Digital banks and neo-banks, payment companies, BFSI technology divisions, lending tech platforms, regtech firms, insurance tech, wealth tech, and fintech startups\n\n**Entry-level roles:** FinTech Product Analyst, Business Analyst (BFSI digital), RPA Developer (junior), Digital Banking Operations Executive, Financial Analytics Associate\n\n**Mid-level roles (3-5 years experience):** FinTech Product Manager, Digital Banking Manager, RPA Program Manager, Financial Data Analytics Manager, Blockchain Project Manager\n\n**Senior roles (7+ years):** VP FinTech, Chief Digital Officer (BFSI), Head of Digital Transformation, Director of Financial Technology, Chief Innovation Officer\n\n**Where to verify placement claims:** ask Amrita Vishwa Vidyapeetham Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The FinTech specialisation builds skills that BFSI digital transformation and fintech product employers test at analyst and manager levels:\n\n**Technical skills:**\n- Robotic Process Automation: RPA process mapping, bot design basics, UiPath/Automation Anywhere overview, automation ROI modelling, and change management for RPA rollouts\n- Financial Python and SQL: pandas for financial time series, SQL query writing for BFSI databases, automated reconciliation scripts, and financial reporting automation\n- Blockchain: blockchain ledger design, smart contract use-case evaluation, DeFi product mechanics, and regulatory considerations for blockchain in financial services\n- Generative AI for Finance: prompt engineering for financial analysis, LLM-assisted research, AI tool selection for fintech product development, and responsible AI in financial services\n\n**Applied skills:**\n- AI in Finance: credit scoring model design, fraud detection rule-setting, robo-advisory product mechanics, and AI governance in regulated BFSI environments\n- FinTech Strategy: fintech market mapping, regulatory sandbox navigation, API banking product design, and digital payments P&L structure\n\n**Soft skills:** Presenting fintech product roadmaps to bank leadership teams, managing fintech vendor due diligence processes, translating blockchain and AI technical proposals into business cases, and engaging with RBI regulatory sandbox requirements."
@@ -52,38 +82,6 @@
     },
     "certificate": {
       "body": "Graduates receive an Amrita Vishwa Vidyapeetham MBA degree certificate with FinTech noted on the marksheet, along with Grant Thornton co-branded certifications. The degree is issued under UGC-DEB 2020 online mode standards.\n\nNAAC A++ and NIRF #8 University 2025 are the strongest institutional credentials in India's online MBA space. WES recognition gives formal degree equivalence in the USA and Canada - useful for candidates in fintech who may target international roles in payments, digital banking, or crypto regulation. DigiLocker verification is available."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Amrita Vishwa Vidyapeetham Online MBA FinTech alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Aditya R.",
-          "city": "Mumbai",
-          "year": 2025,
-          "rating": 4,
-          "liked": "Grant Thornton FinTech certification alongside the Amrita MBA gave me credibility in BFSI digital interviews that a standard MBA could not",
-          "disliked": "Blockchain content was strong on theory but practical smart contract writing exercises would have made it more hands-on",
-          "body": "I work in digital transformation at an NBFC. The RPA and Financial Python subjects were directly applicable to the automation projects I run. Grant Thornton co-branding in FinTech was the decisive factor - it opened advisory-side interviews. NAAC A++ from NIRF #8 cleared every credential filter at BFSI firms. Zero-cost EMI from the university made the fee commitment manageable on a banking salary."
-        },
-        {
-          "name": "Meera S.",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Generative AI and Prompt Engineering subject was the most current and practically relevant content in the programme",
-          "disliked": "Scheduling flexibility for live sessions could be improved - some sessions were at inconvenient times for professionals in IST plus 5.5 time zones",
-          "body": "I moved from a banking operations role to a FinTech product analyst position using this MBA. The generative AI for finance and AI and analytics in finance subjects gave me the vocabulary to lead vendor evaluations for AI tools at my firm. Grant Thornton FinTech certification stood out in my product analyst interviews. WES recognition is valuable - I have plans for the Canadian market within 3 years."
-        },
-        {
-          "name": "Venkat N.",
-          "city": "Hyderabad",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Financial Analytics with Python subject gave me practical data skills that complement the management framework",
-          "disliked": "Fee clarity at admission was initially confusing - the registration and exam fees were not upfront in the brochure and I found out from the EdifyEdu counsellor",
-          "body": "I transitioned from a traditional banking role to a digital banking product team. The Financial Python and SQL subject gave me the data skills to work alongside my analytics colleagues without being dependent on them for every data request. Blockchain and Generative AI subjects were ahead of the curve compared to other online MBAs. NAAC A++ and Grant Thornton certification are the two things that most impressed my hiring manager."
-        }
-      ]
     },
     "faqs": [
       {
@@ -126,6 +124,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 19,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

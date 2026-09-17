@@ -97,7 +97,7 @@
       "note": "Sem 1-2 shared core subjects across all SSODL MBA specialisations. See the main SSODL Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Logistics and Supply Chain Management MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** E-commerce and quick-commerce logistics, FMCG supply chain, Manufacturing, 3PL and freight forwarding, Management consulting (supply chain practice)\n\n**Entry-level roles:** Supply Chain Analyst, Logistics Manager, Procurement Manager, Warehouse Manager, 3PL Coordinator\n\n**Mid-level roles (3-5 years experience):** Supply Chain Manager, Head of Logistics, Procurement Head, Distribution Manager\n\n**Senior roles (7+ years):** VP Supply Chain, COO, Head of Procurement, Supply Chain Transformation Director\n\n**Where to verify placement claims:** ask Symbiosis International University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
+      "body": "This Logistics and Supply Chain Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** E-commerce and quick-commerce logistics, FMCG supply chain, Manufacturing, 3PL and freight forwarding, Management consulting (supply chain practice)\n\n**Entry-level roles:** Supply Chain Analyst, Logistics Manager, Procurement Manager, Warehouse Manager, 3PL Coordinator\n\n**Mid-level roles (3-5 years experience):** Supply Chain Manager, Head of Logistics, Procurement Head, Distribution Manager\n\n**Senior roles (7+ years):** VP Supply Chain, COO, Head of Procurement, Supply Chain Transformation Director\n\n**Where to verify placement claims:** ask Symbiosis International University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "You should finish able to redesign a piece of a network and show the cost and service consequences of the change.\n\nSupply Chain Modeling and Design carries that: node placement, flow, and the trade between inventory held and distance travelled. Supply Chain Strategy covers the make-or-buy and sourcing decisions that sit above it.\n\nWarehouse Management and Technology in Supply Chain cover the operating layer, from slotting and throughput to the systems that track it. International Logistics adds cross-border movement, documentation and the cost structure of shipping.\n\nLean Six Sigma gives you the improvement discipline and the statistics to support it. Sustainable Supply Chain covers emissions accounting across tiers, supplier standards and the reporting that increasingly travels with a contract."
@@ -153,6 +153,7 @@
     "hasSyllabusData": true,
     "batch12v2Fixed": "2026-04-21",
     "integrityPass": "2026-09-17",
-    "humanisedAt": "2026-09-17"
+    "humanisedAt": "2026-09-17",
+    "claimSweep": "2026-09-17"
   }
 }

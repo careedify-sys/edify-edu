@@ -69,7 +69,7 @@
       "note": "Sem 1-2 shared core subjects across all Alliance MBA specialisations. Design Thinking is a mandatory Sem 3 subject for all specs. Strategic Management in Digital Era and Dissertation are common Sem 4 subjects. The BA & AI capstone is in addition to the standard dissertation."
     },
     "whoHires": {
-      "body": "Business Analytics & AI MBA graduates from Alliance Online target these industries and roles:\n\n**Industries:** IT and tech companies, E-commerce, BFSI analytics, Consulting firms, FMCG analytics, Healthcare analytics\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Associate, BI Analyst, AI Product Associate\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, Data Science Manager, BI Manager, AI Product Manager, Strategy Analytics Lead\n\n**Senior roles (7+ years):** Chief Data Officer, VP Analytics, Head of BI, Director of AI Strategy, Chief Analytics Officer\n\n**Top hiring sectors:** Infosys, TCS, Wipro, Accenture, Deloitte, Amazon, Flipkart, Razorpay, HDFC Bank, ICICI Bank, Mu Sigma, Tiger Analytics, Fractal, LatentView Analytics, Google"
+      "body": "Business Analytics & AI MBA graduates from Alliance Online target these industries and roles:\n\n**Industries:** IT and tech companies, E-commerce, BFSI analytics, Consulting firms, FMCG analytics, Healthcare analytics\n\n**Entry-level roles:** Business Analyst, Data Analyst, Analytics Associate, BI Analyst, AI Product Associate\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, Data Science Manager, BI Manager, AI Product Manager, Strategy Analytics Lead\n\n**Senior roles (7+ years):** Chief Data Officer, VP Analytics, Head of BI, Director of AI Strategy, Chief Analytics Officer\n\n**Top hiring sectors:** Infosys, TCS, Wipro, Accenture, Deloitte, Amazon, Flipkart, Razorpay, HDFC Bank, ICICI Bank, Mu Sigma, Tiger Analytics, Fractal, LatentView Analytics, Google\n\n**Where to verify placement claims:** ask Alliance University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Alliance BA & AI specialisation builds analytics leadership and AI strategy skills:\n\n**Technical skills:**\n- Predictive Business Modelling: regression, classification, and time-series forecasting for demand prediction, churn modelling, and revenue forecasting\n- AI for Strategic Decision-Making: AI-augmented scenario planning, automated competitive intelligence, and executive decision frameworks\n- Marketing Analytics and Consumer Intelligence: customer segmentation, attribution analysis, CLV prediction, and sentiment analysis\n- Financial Data Analytics: credit scoring models, fraud detection patterns, portfolio risk measurement, and financial forecasting\n\n**Applied skills:**\n- Applied Business Intelligence: BI architecture design, dashboard development, ETL pipelines, and reporting frameworks\n- Data Visualization for Business: executive-ready data visualisations, interactive dashboards, and data storytelling\n- HR Analytics and Workforce Insights: attrition prediction, hiring optimisation, and employee engagement analytics\n- Capstone Data-Driven Business Transformation: end-to-end analytics project execution from problem scoping to recommendation delivery\n\n**Soft skills:** Design Thinking for problem framing, presenting analytics insights to non-technical leadership, translating business questions into analytical frameworks, and managing cross-functional analytics projects."
@@ -82,38 +82,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Alliance University, Bangalore, and carries the Alliance name with the MBA designation. The Business Analytics & AI specialisation is noted on the marksheet and transcript. The degree is WES recognised for international credential evaluation. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Alliance Online MBA Business Analytics & AI students. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Nithya",
-          "city": "Bangalore",
-          "year": 2025,
-          "rating": 5,
-          "liked": "AI for Strategic Decision-Making was the standout subject. The cross-functional analytics coverage (marketing, HR, finance) in a single spec is unique. The capstone project gave me a portfolio piece for analytics interviews.",
-          "disliked": "Would have liked optional Python or R coding labs alongside the business analytics subjects.",
-          "body": "I chose Alliance BA & AI because the curriculum treats AI as a strategic management tool, not just a technical skill. The combination of Predictive Business Modelling with AI for Strategic Decision-Making gave me both technical and strategic depth. Design Thinking helped me frame analytics problems for business stakeholders."
-        },
-        {
-          "name": "Rohan",
-          "city": "Hyderabad",
-          "year": 2025,
-          "rating": 4,
-          "liked": "Marketing Analytics and Financial Data Analytics gave practical cross-functional skills. Fees at Rs 1.75L for an AI-focused MBA are competitive.",
-          "disliked": "Alliance's online MBA is newer. For Hyderabad analytics firms, NMIMS or Amity carry more immediate recognition.",
-          "body": "Strong analytics curriculum with genuine AI integration. The cross-functional approach (covering marketing, HR, and finance analytics separately) is unusual and practical. For Bangalore analytics roles, Alliance is well-positioned. For Hyderabad, the brand is still building. Content quality was high for the fees."
-        },
-        {
-          "name": "Kavitha",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Applied Business Intelligence and Data Visualization for Business were practical for my BI analyst role.",
-          "disliked": "NAAC A (not A+) is a limitation. Smaller alumni network in analytics compared to NMIMS or JAIN. No dedicated programming or tool-specific labs.",
-          "body": "Good programme for the price. The AI-focused subjects are a real differentiator over standard business analytics MBAs. But this is a management degree, not a data science degree. If you want coding depth, a standalone data science programme is better. If you want analytics leadership skills with AI strategy, Alliance BA & AI is well-designed."
-        }
-      ]
     },
     "faqs": [
       {
@@ -155,6 +123,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 29,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

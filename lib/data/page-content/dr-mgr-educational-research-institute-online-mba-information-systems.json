@@ -19,30 +19,69 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Systems Analysis and Design", "desc": "Requirements gathering, system modelling (DFD, UML), feasibility analysis, system design methodologies, and implementation planning." },
-            { "name": "Software Quality and Project Management", "desc": "Software quality assurance, CMMI/ISO standards, Agile and Waterfall project management, risk management, and software testing frameworks." },
-            { "name": "Strategic Management", "desc": "Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic implementation in IT organizations." },
-            { "name": "Entrepreneurship Development", "desc": "Tech startup ideation, SaaS business planning, funding strategies, and MSME support for IT ventures." },
-            { "name": "Management Accounting", "desc": "Cost-volume-profit analysis, IT project budgeting, variance analysis, and management decision-making tools for technology investments." },
-            { "name": "Production and Operations Management", "desc": "IT service delivery management, ITIL basics, capacity planning, and operations scheduling for technology teams." },
-            { "name": "Skill Development", "desc": "Communication skills, technical presentation techniques, team management, and professional development modules." },
-            { "name": "Summer Project", "desc": "Industry-linked summer project in an IT organization requiring systems analysis, data collection, and structured report." }
+            {
+              "name": "Systems Analysis and Design",
+              "desc": "Requirements gathering, system modelling (DFD, UML), feasibility analysis, system design methodologies, and implementation planning."
+            },
+            {
+              "name": "Software Quality and Project Management",
+              "desc": "Software quality assurance, CMMI/ISO standards, Agile and Waterfall project management, risk management, and software testing frameworks."
+            },
+            {
+              "name": "Strategic Management",
+              "desc": "Competitive strategy frameworks, industry analysis, corporate-level strategy, and strategic implementation in IT organizations."
+            },
+            {
+              "name": "Entrepreneurship Development",
+              "desc": "Tech startup ideation, SaaS business planning, funding strategies, and MSME support for IT ventures."
+            },
+            {
+              "name": "Management Accounting",
+              "desc": "Cost-volume-profit analysis, IT project budgeting, variance analysis, and management decision-making tools for technology investments."
+            },
+            {
+              "name": "Production and Operations Management",
+              "desc": "IT service delivery management, ITIL basics, capacity planning, and operations scheduling for technology teams."
+            },
+            {
+              "name": "Skill Development",
+              "desc": "Communication skills, technical presentation techniques, team management, and professional development modules."
+            },
+            {
+              "name": "Summer Project",
+              "desc": "Industry-linked summer project in an IT organization requiring systems analysis, data collection, and structured report."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Artificial Intelligence", "desc": "AI fundamentals, machine learning basics, natural language processing concepts, AI applications in business, and ethical considerations in AI deployment." },
-            { "name": "Digital Marketing", "desc": "Digital marketing tools, marketing analytics, SEO/SEM, social media strategy, and data-driven marketing decisions." },
-            { "name": "International Business Management", "desc": "Global IT services market, offshore delivery models, cross-border technology partnerships, and international business strategy." },
-            { "name": "Contemporary Seminar", "desc": "Student-led seminar on current IT management topics. Research, presentation, and peer discussion on emerging technology trends." },
-            { "name": "Field Work and Project Work (8 Weeks)", "desc": "Mandatory 8-week field project in an IT organization. Systems implementation, software project analysis, or AI adoption study with structured report and viva voce." }
+            {
+              "name": "Artificial Intelligence",
+              "desc": "AI fundamentals, machine learning basics, natural language processing concepts, AI applications in business, and ethical considerations in AI deployment."
+            },
+            {
+              "name": "Digital Marketing",
+              "desc": "Digital marketing tools, marketing analytics, SEO/SEM, social media strategy, and data-driven marketing decisions."
+            },
+            {
+              "name": "International Business Management",
+              "desc": "Global IT services market, offshore delivery models, cross-border technology partnerships, and international business strategy."
+            },
+            {
+              "name": "Contemporary Seminar",
+              "desc": "Student-led seminar on current IT management topics. Research, presentation, and peer discussion on emerging technology trends."
+            },
+            {
+              "name": "Field Work and Project Work (8 Weeks)",
+              "desc": "Mandatory 8-week field project in an IT organization. Systems implementation, software project analysis, or AI adoption study with structured report and viva voce."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Dr. MGR MBA Information Systems graduates target roles across IT management, systems consulting, and technology leadership:\n\n**Industries:** IT services, software product companies, IT consulting, BFSI technology teams, healthcare IT (leveraging Dr. MGR's heritage), e-commerce, telecom, and government IT departments\n\n**Entry-level roles:** Systems Analyst, IT Project Coordinator, Business Analyst, Quality Assurance Analyst, Technology Consultant (junior), IT Operations Executive\n\n**Mid-level roles (3-5 years):** IT Project Manager, Systems Manager, Business Analyst Lead, Quality Manager, IT Service Delivery Manager, Product Manager\n\n**Senior roles (7+ years):** CTO (mid-market), VP Engineering, Head of IT, Director of Systems, IT Programme Director, Chief Information Officer\n\n**Employers:** IT companies (TCS, Infosys, Wipro, Cognizant, HCL in Chennai), IT consulting firms, fintech companies, healthcare IT providers, and Tamil Nadu state IT departments.\n\n**Note:** Chennai houses major IT parks (Tidel Park, SIPCOT IT Park, Mahindra World City). Dr. MGR's local brand provides access to the Chennai IT ecosystem."
+      "body": "Dr. MGR MBA Information Systems graduates target roles across IT management, systems consulting, and technology leadership:\n\n**Industries:** IT services, software product companies, IT consulting, BFSI technology teams, healthcare IT (leveraging Dr. MGR's heritage), e-commerce, telecom, and government IT departments\n\n**Entry-level roles:** Systems Analyst, IT Project Coordinator, Business Analyst, Quality Assurance Analyst, Technology Consultant (junior), IT Operations Executive\n\n**Mid-level roles (3-5 years):** IT Project Manager, Systems Manager, Business Analyst Lead, Quality Manager, IT Service Delivery Manager, Product Manager\n\n**Senior roles (7+ years):** CTO (mid-market), VP Engineering, Head of IT, Director of Systems, IT Programme Director, Chief Information Officer\n\n**Employers:** IT companies (TCS, Infosys, Wipro, Cognizant, HCL in Chennai), IT consulting firms, fintech companies, healthcare IT providers, and Tamil Nadu state IT departments.\n\n**Note:** Chennai houses major IT parks (Tidel Park, SIPCOT IT Park, Mahindra World City). Dr. MGR's local brand provides access to the Chennai IT ecosystem.\n\n**Where to verify placement claims:** ask Dr. MGR Educational and Research Institute Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Information Systems specialisation builds skills across systems design, software quality, and AI applications:\n\n**Technical skills:**\n- Systems Analysis: requirements engineering, process modelling (DFD, use case diagrams, UML), feasibility assessment, and system design documentation\n- Software Quality: QA methodologies, CMMI process areas, ISO 9001/27001 for IT, test planning, defect management, and software metrics\n- Project Management: Agile (Scrum, Kanban), Waterfall, hybrid models, project risk assessment, WBS creation, and earned value management\n- Artificial Intelligence: ML algorithm selection, NLP application design, AI use case identification, and ethical AI framework evaluation\n\n**Applied skills:**\n- IT Service Management: ITIL fundamentals, service level management, incident and problem management, and IT operations optimization\n- Technology Strategy: IT investment appraisal, build-vs-buy decisions, vendor evaluation, and digital transformation roadmap design\n\n**Soft skills:** Translating technical requirements to business stakeholders, managing cross-functional IT projects, vendor negotiation, and presenting technology ROI to leadership."
@@ -55,38 +94,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Information Systems as the specialisation, issued by Dr. MGR Educational and Research Institute (Deemed University) under UGC-DEB online mode standards.\n\nThe degree carries NAAC A+ accreditation, UGC-DEB approval, and Deemed University status since 2003. Valid for IT management roles, government IT positions, PSU technology officer recruitment, and private-sector systems management careers. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from Dr. MGR Online MBA Information Systems students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Venkat",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "AI as a standalone Sem 4 subject is a differentiator. Dr. MGR's Chennai location means the brand is recognized by local IT companies in Tidel Park and SIPCOT",
-          "disliked": "Only three IS-specific subjects total. Would have preferred more depth in ERP systems or cloud computing",
-          "body": "I work as a developer at a Chennai IT company and needed the MBA for a project management role. Systems Analysis and Design covered UML and requirements engineering at a practical level. Software Quality and Project Management gave me CMMI and Agile frameworks. AI in Sem 4 was a bonus. The 8-week field project in my own company let me apply learnings to a real systems implementation."
-        },
-        {
-          "name": "Divya",
-          "city": "Bangalore",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Software Quality and Project Management covered both CMMI and Agile at a depth useful for my QA lead role",
-          "disliked": "Dr. MGR brand is well-known in Tamil Nadu but less recognized in Karnataka. Bangalore IT employers may not know the university",
-          "body": "The IS curriculum is compact but relevant. Three spec subjects covering systems, quality, and AI. The common core adds strategic management and digital marketing breadth. Fee at Rs 1.36-1.41L is mid-range for NAAC A+. For Chennai IT professionals, the local brand works well. For Bangalore or Hyderabad, the brand recognition drops. The 8-week project is a plus."
-        },
-        {
-          "name": "Prakash",
-          "city": "Madurai",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Systems Analysis and Design provided structured methodology knowledge useful for moving from coding to analyst roles",
-          "disliked": "The AI subject covers fundamentals only. Not a deep dive into ML or data science. Study materials could be more current",
-          "body": "At Rs 1.36-1.41L, Vignan at Rs 90,000 and Kurukshetra at Rs 1,02,000 are cheaper options. Dr. MGR's edge is the AI subject and Chennai IT proximity. If you work in Chennai IT, the brand helps. If national IT brand is your goal, Manipal or Amity have stronger recognition. The LMS is functional but not premium."
-        }
-      ]
     },
     "faqs": [
       {
@@ -130,6 +137,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 31,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

@@ -97,7 +97,7 @@
       "note": "Sem 1-2 shared core subjects across all SSODL MBA specialisations. See the main SSODL Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Human Resource MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** BFSI, IT services, Manufacturing, FMCG, HR consulting and staffing, Automotive\n\n**Entry-level roles:** HR Generalist (management track), Talent Acquisition Manager, HR Operations Manager, Compensation Analyst\n\n**Mid-level roles (3-5 years experience):** HRBP, HR Manager, L&D Manager, Compensation and Benefits Manager, Talent Management Manager\n\n**Senior roles (7+ years):** HR Head, CHRO, VP Human Resources, Head of Talent Management\n\n**Where to verify placement claims:** ask Symbiosis International University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
+      "body": "This Human Resource MBA syllabus maps to the following industries and roles:\n\n**Industries:** BFSI, IT services, Manufacturing, FMCG, HR consulting and staffing, Automotive\n\n**Entry-level roles:** HR Generalist (management track), Talent Acquisition Manager, HR Operations Manager, Compensation Analyst\n\n**Mid-level roles (3-5 years experience):** HRBP, HR Manager, L&D Manager, Compensation and Benefits Manager, Talent Management Manager\n\n**Senior roles (7+ years):** HR Head, CHRO, VP Human Resources, Head of Talent Management\n\n**Where to verify placement claims:** ask Symbiosis International University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The gap this closes is the one between knowing your people and being able to argue about them in the language the business uses.\n\nHR Analytics and Compensation and Reward Management do most of that work: attrition modelling, cost of replacement, pay band design and the arithmetic behind a reward structure. These are the subjects that let you answer a finance director rather than defer to one.\n\nTalent Management and Learning and Development cover capability planning, succession and the design of development programmes that survive a budget review.\n\nOrganizational Development and Change, plus Conflict and Negotiation from the shared core, cover the part of the job nobody writes down: restructuring, difficult conversations and getting a change accepted rather than merely announced. Industrial Relations adds the statutory framing if you work anywhere with a unionised workforce."
@@ -153,6 +153,7 @@
     "hasSyllabusData": true,
     "batch12v2Fixed": "2026-04-21",
     "integrityPass": "2026-09-17",
-    "humanisedAt": "2026-09-17"
+    "humanisedAt": "2026-09-17",
+    "claimSweep": "2026-09-17"
   }
 }

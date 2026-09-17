@@ -65,7 +65,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Supply Chain, Production and Operations Management MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** Manufacturing, E-commerce and retail logistics, FMCG supply chain, Automotive and industrial, Pharmaceutical logistics, Export-import and international trade\n\n**Entry-level roles:** Supply Chain Analyst, Logistics Executive, Materials Planner, Production Analyst, Import-Export Executive\n\n**Mid-level roles (3-5 years experience):** Supply Chain Manager, Logistics Manager, Procurement Manager, Operations Manager, Inventory Manager\n\n**Senior roles (7+ years):** Head of Supply Chain, VP Operations, Chief Supply Chain Officer, Director Logistics, VP Manufacturing\n\n**Top hiring organisations:** Amazon Logistics India, Flipkart Supply Chain, Reliance Retail Logistics, D-Mart Operations, Mahindra Logistics, Blue Dart, Delhivery, DHL India, FedEx India, Maruti Suzuki Supply Chain, Tata Motors Operations, ITC Supply Chain, HUL Supply Chain, Cipla Pharma Logistics"
+      "body": "This Supply Chain, Production and Operations Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** Manufacturing, E-commerce and retail logistics, FMCG supply chain, Automotive and industrial, Pharmaceutical logistics, Export-import and international trade\n\n**Entry-level roles:** Supply Chain Analyst, Logistics Executive, Materials Planner, Production Analyst, Import-Export Executive\n\n**Mid-level roles (3-5 years experience):** Supply Chain Manager, Logistics Manager, Procurement Manager, Operations Manager, Inventory Manager\n\n**Senior roles (7+ years):** Head of Supply Chain, VP Operations, Chief Supply Chain Officer, Director Logistics, VP Manufacturing\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN Supply Chain, Production and Operations Management specialisation builds skills that manufacturing, e-commerce logistics, and FMCG operations employers test at operations manager levels:\n\n**Technical skills:**\n- Logistics and Supply Chain Management: end-to-end supply chain network design, 3PL management, warehousing and distribution optimisation for SCM manager roles\n- Materials and Inventory Management: EOQ and JIT inventory modelling, supplier management, and safety stock optimisation for procurement and inventory management\n- Agile Manufacturing and Lean Management: lean production principles, value stream mapping, Kaizen, and 5S application for manufacturing and production management\n- Information Systems for Logistics and SCM: ERP, WMS, and TMS platform management, supply chain analytics dashboards for digital logistics operations\n\n**Applied skills:**\n- Export and Import Documentation: EXIM procedures, customs documentation, Letter of Credit management, and international trade compliance for logistics and trade operations roles - a standalone subject uncommon in peer online MBA programmes\n- Sustainable Supply Chain Management: ESG supply chain framework design, green logistics strategy, and circular economy operations for ESG-conscious manufacturing and FMCG companies\n\n**Soft skills:**\n- Negotiation Skills for SCM Operations: vendor contract negotiation, supplier dispute resolution, and procurement negotiation frameworks for operations and procurement management\n- Communicating supply chain KPIs to CFO and operations leadership, managing cross-border logistics vendor relationships, and leading lean transformation initiatives across factory floors."
@@ -78,38 +78,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. The Supply Chain, Production and Operations Management specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA Supply Chain, Production and Operations Management alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Santosh Reddy",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Export and Import Documentation was directly applicable to my international trade operations role. Agile Manufacturing and Lean subject gave frameworks I applied to our production line improvement project. Sustainable SCM was forward-looking.",
-          "disliked": "Information Systems for SCM could include more hands-on ERP system training beyond conceptual WMS and TMS coverage.",
-          "body": "I had 5 years in FMCG supply chain and the JAIN operations MBA helped me move into a supply chain manager role. JAIN brand was recognised at Bengaluru and Chennai manufacturing companies. Negotiation Skills for SCM was a practical differentiator."
-        },
-        {
-          "name": "Rajan Krishnamurthy",
-          "city": "Chennai",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Lean and Agile Manufacturing combined with TQM gave comprehensive quality and efficiency management depth. Export-Import Documentation was unique and directly applicable.",
-          "disliked": "Operations analytics and quantitative methods could be stronger alongside the qualitative frameworks.",
-          "body": "Good programme for South India manufacturing and logistics careers. Chennai automotive and pharma logistics companies recognised the JAIN operations credential. For pan-India operations brand recognition, Amity or LPU may carry stronger reach."
-        },
-        {
-          "name": "Praveen Nair",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Sustainable Supply Chain Management subject was excellent - rare in operations MBA programmes at this fee range.",
-          "disliked": "LMS quality for some elective operations subjects was inconsistent. Live faculty sessions were limited for Sem 4 subjects.",
-          "body": "Good credential for South India manufacturing and logistics operations. Content quality was strong for the fee. For Mumbai or Delhi manufacturing brand recognition, LPU or Amity may carry stronger visibility."
-        }
-      ]
     },
     "faqs": [
       {
@@ -150,6 +118,7 @@
     "wordCount": 2100,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

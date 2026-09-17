@@ -73,7 +73,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Marketing and Business Analytics dual MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** E-commerce, FMCG digital marketing, Marketing analytics agencies, BFSI marketing analytics, EdTech growth, SaaS marketing analytics\n\n**Entry-level roles:** Marketing Analyst, Digital Marketing Analyst, Brand Analyst, Consumer Insights Analyst, Campaign Analytics Analyst\n\n**Mid-level roles (3-5 years experience):** Marketing Analytics Manager, Brand Analytics Manager, Growth Analytics Manager, Consumer Insights Manager, Digital Brand Manager\n\n**Senior roles (7+ years):** Head of Marketing Analytics, Chief Marketing Officer, VP Consumer Insights, Director Marketing Intelligence, Marketing Analytics Director\n\n**Top hiring organisations:** Flipkart Marketing Analytics, Amazon India Marketing, Nykaa Brand Analytics, Unilever India Analytics, P&G India Marketing, GroupM Analytics, Dentsu Analytics, Nielsen India, IPSOS India, Kantar India, HDFC Bank Marketing Analytics, Accenture Marketing Analytics"
+      "body": "This Marketing and Business Analytics dual MBA syllabus maps to the following industries and roles:\n\n**Industries:** E-commerce, FMCG digital marketing, Marketing analytics agencies, BFSI marketing analytics, EdTech growth, SaaS marketing analytics\n\n**Entry-level roles:** Marketing Analyst, Digital Marketing Analyst, Brand Analyst, Consumer Insights Analyst, Campaign Analytics Analyst\n\n**Mid-level roles (3-5 years experience):** Marketing Analytics Manager, Brand Analytics Manager, Growth Analytics Manager, Consumer Insights Manager, Digital Brand Manager\n\n**Senior roles (7+ years):** Head of Marketing Analytics, Chief Marketing Officer, VP Consumer Insights, Director Marketing Intelligence, Marketing Analytics Director\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN Marketing and Business Analytics dual specialisation builds skills that data-driven marketing employers test at marketing analyst and analytics manager levels:\n\n**Marketing skills:**\n- Consumer Behaviour and Insights: customer journey analysis, cultural influence mapping, and buying behaviour research for data-driven brand strategy and consumer insights roles\n- Integrated Marketing Communications: media mix planning, cross-channel message strategy, and analytics-integrated campaign communication for marketing managers\n- Digital Marketing and Brand Management: digital brand equity measurement, performance marketing analytics integration, and data-driven brand positioning\n\n**Analytics skills:**\n- Data Analytics with Python: pandas and NumPy for marketing dataset analysis, customer segmentation modelling, and automated campaign analytics reporting\n- Data Analytics using SPSS: multivariate analysis, cluster analysis, factor analysis, and regression for marketing research and consumer behaviour studies\n- Data Visualization and Analysis: Tableau and Power BI marketing dashboard design and analytics communication for marketing management roles\n\n**Cross-functional skills:**\n- Advanced Spreadsheet Modelling: marketing budget forecasting, scenario planning, and analytics reporting automation for cross-domain marketing finance roles\n\n**Soft skills:** Presenting consumer analytics insights to CMO and brand leadership, translating Python segmentation outputs into marketing strategy, managing research agency relationships, and communicating data-driven campaign decisions to creative teams."
@@ -86,38 +86,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. Both Marketing and Business Analytics specialisations are noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The dual specialisation certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA Marketing and Business Analytics alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Pooja Nair",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Data Analytics with Python combined with Consumer Behaviour was exactly what I needed for my marketing analytics manager role. SPSS subject directly applicable for consumer research projects. Dual credential was a resume differentiator.",
-          "disliked": "7 subjects in Sem 3 is a heavy load alongside full-time work. Pacing was challenging.",
-          "body": "I moved from a marketing executive to marketing analytics manager role using this dual MBA credential. JAIN's Python in Sem 2 core meant I arrived at Sem 3 analytics subjects with working programming knowledge. Bengaluru analytics firms responded well."
-        },
-        {
-          "name": "Rahul Menon",
-          "city": "Chennai",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Integrated Marketing Communications combined with Data Visualization gave strong cross-functional depth for my agency planning role.",
-          "disliked": "SPSS is powerful but dated. Additional coverage of Python-based multivariate analysis would be more industry-relevant.",
-          "body": "Good programme for marketing analytics roles in South India. Chennai ad agencies and market research firms valued the analytics-marketing dual credential. For deep data science roles, additional Python certifications alongside the MBA are recommended."
-        },
-        {
-          "name": "Swathi Ramamurthy",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Consumer Behaviour and Python Analytics combination was unique. Digital Marketing and Brand Management subject was well-structured.",
-          "disliked": "Dual spec breadth means neither marketing nor analytics is at single-spec depth. Be clear about the trade-off before choosing.",
-          "body": "Good credential for marketing analytics. For deep BI engineering or advanced data science, single-spec analytics programmes offer more technical depth. Best for marketing professionals who need analytics credentials."
-        }
-      ]
     },
     "faqs": [
       {
@@ -158,6 +126,7 @@
     "wordCount": 2100,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

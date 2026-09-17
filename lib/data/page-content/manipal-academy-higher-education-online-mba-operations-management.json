@@ -19,29 +19,65 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Management Accounting", "desc": "Cost analysis, budgeting, variance analysis, and management decision-making using accounting data." },
-            { "name": "Legal Aspects of Business", "desc": "Contract law, consumer protection, intellectual property, company law basics, and regulatory compliance." },
-            { "name": "Minor Project", "desc": "Applied operations research project supervised by faculty." },
-            { "name": "Enterprise Resource Planning", "desc": "SAP/ERP module overview, MRP (Material Requirements Planning), production planning integration, inventory management in ERP, and ERP implementation lifecycle." },
-            { "name": "Total Quality Management", "desc": "Six Sigma basics (DMAIC), ISO 9001 quality management systems, Kaizen methodology, statistical process control (SPC), and quality cost analysis." },
-            { "name": "Supply Chain Management", "desc": "Demand forecasting methods, inventory optimisation (EOQ, safety stock), vendor management and evaluation, bullwhip effect, and supply chain network design." }
+            {
+              "name": "Management Accounting",
+              "desc": "Cost analysis, budgeting, variance analysis, and management decision-making using accounting data."
+            },
+            {
+              "name": "Legal Aspects of Business",
+              "desc": "Contract law, consumer protection, intellectual property, company law basics, and regulatory compliance."
+            },
+            {
+              "name": "Minor Project",
+              "desc": "Applied operations research project supervised by faculty."
+            },
+            {
+              "name": "Enterprise Resource Planning",
+              "desc": "SAP/ERP module overview, MRP (Material Requirements Planning), production planning integration, inventory management in ERP, and ERP implementation lifecycle."
+            },
+            {
+              "name": "Total Quality Management",
+              "desc": "Six Sigma basics (DMAIC), ISO 9001 quality management systems, Kaizen methodology, statistical process control (SPC), and quality cost analysis."
+            },
+            {
+              "name": "Supply Chain Management",
+              "desc": "Demand forecasting methods, inventory optimisation (EOQ, safety stock), vendor management and evaluation, bullwhip effect, and supply chain network design."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Entrepreneurship and Innovation", "desc": "Startup ideation, business model canvas, lean startup methodology, and funding strategies." },
-            { "name": "Sustainability", "desc": "Sustainable business models, ESG frameworks, and CSR strategy." },
-            { "name": "Capstone Project", "desc": "Operations capstone integrating Sem 1-4 learning with an industry-linked process improvement problem." },
-            { "name": "Project Management", "desc": "CPM/PERT network analysis, Agile and Scrum basics, risk management frameworks, earned value analysis, and project scheduling with resource constraints." },
-            { "name": "Services Operations Management", "desc": "Service blueprint design, capacity planning for service industries, queue management theory, service quality measurement (SERVQUAL), and service recovery strategies." },
-            { "name": "Operations Research", "desc": "Linear programming (graphical and simplex methods), transportation and assignment models, simulation basics, decision analysis, and game theory introduction." }
+            {
+              "name": "Entrepreneurship and Innovation",
+              "desc": "Startup ideation, business model canvas, lean startup methodology, and funding strategies."
+            },
+            {
+              "name": "Sustainability",
+              "desc": "Sustainable business models, ESG frameworks, and CSR strategy."
+            },
+            {
+              "name": "Capstone Project",
+              "desc": "Operations capstone integrating Sem 1-4 learning with an industry-linked process improvement problem."
+            },
+            {
+              "name": "Project Management",
+              "desc": "CPM/PERT network analysis, Agile and Scrum basics, risk management frameworks, earned value analysis, and project scheduling with resource constraints."
+            },
+            {
+              "name": "Services Operations Management",
+              "desc": "Service blueprint design, capacity planning for service industries, queue management theory, service quality measurement (SERVQUAL), and service recovery strategies."
+            },
+            {
+              "name": "Operations Research",
+              "desc": "Linear programming (graphical and simplex methods), transportation and assignment models, simulation basics, decision analysis, and game theory introduction."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "MAHE MBA Operations Management graduates target roles across manufacturing, logistics, consulting, and services:\n\n**Industries:** Manufacturing (auto, FMCG, pharma, electronics), logistics, e-commerce operations, consulting, IT services delivery, and infrastructure\n\n**Entry-level roles:** Operations Executive, Supply Chain Analyst, Production Planning Associate, Quality Analyst, Project Coordinator, Process Associate\n\n**Mid-level roles (3-5 years experience):** Operations Manager, Supply Chain Manager, Production Manager, Quality Manager, Project Manager (PMP track), Process Excellence Lead\n\n**Senior roles (7+ years):** COO, VP Operations, Head of Supply Chain, Director of Manufacturing, Chief Quality Officer, Head of Project Management Office\n\n**Employers:** Manufacturing (Tata Motors, Maruti Suzuki, L&T, Godrej), FMCG (HUL, ITC, P&G), logistics (Delhivery, Blue Dart, DHL), consulting (McKinsey Operations, Deloitte Strategy & Operations), and IT services (TCS, Infosys delivery management).\n\n**Note:** MAHE provides career support services. The Manipal alumni network is strong in manufacturing, healthcare operations, and IT services sectors."
+      "body": "MAHE MBA Operations Management graduates target roles across manufacturing, logistics, consulting, and services:\n\n**Industries:** Manufacturing (auto, FMCG, pharma, electronics), logistics, e-commerce operations, consulting, IT services delivery, and infrastructure\n\n**Entry-level roles:** Operations Executive, Supply Chain Analyst, Production Planning Associate, Quality Analyst, Project Coordinator, Process Associate\n\n**Mid-level roles (3-5 years experience):** Operations Manager, Supply Chain Manager, Production Manager, Quality Manager, Project Manager (PMP track), Process Excellence Lead\n\n**Senior roles (7+ years):** COO, VP Operations, Head of Supply Chain, Director of Manufacturing, Chief Quality Officer, Head of Project Management Office\n\n**Employers:** Manufacturing (Tata Motors, Maruti Suzuki, L&T, Godrej), FMCG (HUL, ITC, P&G), logistics (Delhivery, Blue Dart, DHL), consulting (McKinsey Operations, Deloitte Strategy & Operations), and IT services (TCS, Infosys delivery management).\n\n**Note:** MAHE provides career support services. The Manipal alumni network is strong in manufacturing, healthcare operations, and IT services sectors.\n\n**Where to verify placement claims:** ask Manipal Academy of Higher Education (MAHE) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Operations Management specialisation builds skills across process optimisation, quality, and project management:\n\n**Technical skills:**\n- ERP: SAP module navigation, MRP calculation, production planning integration, and ERP implementation methodology\n- Quality Management: Six Sigma DMAIC application, SPC chart construction, ISO 9001 audit preparation, and quality cost calculation\n- Supply Chain: demand forecasting (moving average, exponential smoothing), EOQ/safety stock calculation, and vendor scorecard design\n- Operations Research: LP formulation and solution, transportation model optimisation, and simulation model design\n\n**Applied skills:**\n- Project Management: CPM/PERT network construction, Agile sprint planning, earned value metrics, and risk register development\n- Services Operations: service blueprint mapping, capacity utilisation calculation, and queue analysis\n\n**Soft skills:** Managing cross-functional production teams, negotiating with vendors, presenting process improvement ROI to leadership, and leading quality culture change."
@@ -54,38 +90,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Operations Management as the specialisation, issued by Manipal Academy of Higher Education (MAHE) under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation, NIRF #3 University rank, Institution of Eminence status, and WES recognition. Valid for manufacturing management promotions, PSU operations roles, MNC supply chain positions, and private-sector operations leadership. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from MAHE Online MBA Operations Management students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Suresh N.",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 4.1,
-          "liked": "Operations Research as a full subject with LP and simulation. TQM covered Six Sigma DMAIC in practical depth",
-          "disliked": "₹2,92,000 is steep when MUJ offers operations management on the same platform for ₹1,80,000. The content overlap between the two is significant",
-          "body": "I work in auto manufacturing and chose MAHE for the NIRF #3 credential. The Operations Research subject was the standout, covering LP formulation and simulation in depth that most online MBAs skip. TQM and Supply Chain Management were well-structured. The honest question is whether ₹1,12,000 extra over MUJ is worth it purely for the brand. For manufacturing employers who filter on university rank, yes. For everyone else, consider MUJ seriously."
-        },
-        {
-          "name": "Meera J.",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 4.0,
-          "liked": "Project Management covered CPM/PERT and Agile, bridging traditional and modern approaches. ERP module gave SAP context",
-          "disliked": "Services Operations Management felt lighter than the manufacturing-focused subjects. Career support could be more structured",
-          "body": "Coming from IT services delivery, the Project Management and Services Operations subjects were directly applicable. The ERP module gave useful SAP context for enterprise clients. Coursera Plus supplemented with PMP prep content. NIRF #3 and IoE cleared credential filters at two consulting firms. The 15% corporate scholarship brought my costs down, which helped justify the premium over MUJ."
-        },
-        {
-          "name": "Amit G.",
-          "city": "Pune",
-          "year": 2023,
-          "rating": 3.8,
-          "liked": "Supply Chain Management covered demand forecasting and inventory optimisation with quantitative methods. Coursera Plus access was a genuine bonus",
-          "disliked": "LMS video quality varied across subjects. Some operations lectures used outdated case examples. The loan-scholarship restriction was frustrating",
-          "body": "The operations curriculum covers breadth well. Supply Chain, TQM, ERP, and Project Management give a solid operations foundation. My issue was the scholarship policy. I qualified for the merit scholarship (10%) but needed a loan for the rest. MAHE's policy disqualifies scholarships if you take financing, so I paid full price. At ₹2,92,000 without any discount, the value proposition weakens against DPU at ₹1,89,400 or MUJ at ₹1,80,000."
-        }
-      ]
     },
     "faqs": [
       {
@@ -128,6 +132,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 22,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

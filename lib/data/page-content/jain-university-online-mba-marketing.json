@@ -69,7 +69,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Marketing MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** FMCG, E-commerce and retail, IT services marketing, Advertising and media agencies, BFSI marketing, EdTech\n\n**Entry-level roles:** Brand Executive, Marketing Research Analyst, Digital Marketing Executive, Channel Sales Executive, Content Strategist\n\n**Mid-level roles (3-5 years experience):** Brand Manager, Marketing Manager, Retail Category Manager, Digital Brand Manager, Trade Marketing Manager\n\n**Senior roles (7+ years):** VP Marketing, Head of Brand, Chief Marketing Officer, Marketing Director\n\n**Top hiring organisations:** HUL, Nestle, ITC, P&G, Amazon India, Flipkart, Myntra, Swiggy, Zomato, Infosys Marketing, Wipro Brand, HDFC Life, ICICI Prudential, Dentsu India, Publicis Sapient"
+      "body": "This Marketing MBA syllabus maps to the following industries and roles:\n\n**Industries:** FMCG, E-commerce and retail, IT services marketing, Advertising and media agencies, BFSI marketing, EdTech\n\n**Entry-level roles:** Brand Executive, Marketing Research Analyst, Digital Marketing Executive, Channel Sales Executive, Content Strategist\n\n**Mid-level roles (3-5 years experience):** Brand Manager, Marketing Manager, Retail Category Manager, Digital Brand Manager, Trade Marketing Manager\n\n**Senior roles (7+ years):** VP Marketing, Head of Brand, Chief Marketing Officer, Marketing Director\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN Marketing specialisation builds skills that FMCG and retail employers test at brand manager and marketing manager levels:\n\n**Technical skills:**\n- Consumer Behaviour and Insights: psychographic segmentation, attitude formation analysis, and buying behaviour framework application for brand insights and planning roles\n- Integrated Marketing Communications: campaign brief writing, media mix planning, and cross-channel message consistency for marketing communications roles\n- Omni Channel Marketing: customer journey mapping, digital-physical touchpoint design, and retail channel integration for e-commerce and retail management\n- Market Research Tools: SPSS survey analysis, focus group design, and secondary market research for research and planning functions\n\n**Applied skills:**\n- B2B Marketing: account-based marketing, complex sales cycle management, and B2B brand positioning for enterprise marketing roles\n- Digital Marketing and Brand Management: SEO execution, paid media management, and brand equity measurement for digital brand management\n\n**Soft skills:** Presenting brand strategy to senior management, managing advertising agency relationships, negotiating trade marketing budgets with retailers, and leading cross-functional new product launches."
@@ -82,38 +82,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. The Marketing specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA Marketing alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Pooja Shetty",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Omni Channel Marketing and Digital Marketing subjects were directly applicable to my e-commerce brand role in Bengaluru. Python for Data Science in Sem 2 gave me analytics skills my peers from other online MBAs lacked.",
-          "disliked": "B2B Marketing could include more SaaS and tech sector examples relevant to Bengaluru companies.",
-          "body": "I had 3 years in retail marketing and the JAIN MBA helped me move to brand manager. The Bengaluru brand recognition was strong at local FMCG and e-commerce companies. Fee range is reasonable with scholarship options."
-        },
-        {
-          "name": "Kiran Reddy",
-          "city": "Hyderabad",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Consumer Behaviour and Integrated Marketing Communications were well-structured. Global Marketing gave me frameworks for my export brand role.",
-          "disliked": "Fee tier structure was initially confusing - needed counsellor clarification to understand which tier the Marketing spec falls under.",
-          "body": "Good programme for South India marketing careers. Hyderabad FMCG and tech companies recognised the JAIN credential. Python in core was a genuine differentiator in interviews."
-        },
-        {
-          "name": "Sahana Kumar",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Retail Marketing and Service Management was directly applicable to my retail career.",
-          "disliked": "LMS platform experience was below tier-1 university standards. Live session scheduling was not always convenient for working professionals.",
-          "body": "Decent programme for the fee. Bengaluru brand is strong locally. For pan-India FMCG careers, Amity or NMIMS would carry stronger national recognition. For South India careers on a budget, JAIN works well."
-        }
-      ]
     },
     "faqs": [
       {
@@ -154,6 +122,7 @@
     "wordCount": 2100,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

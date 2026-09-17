@@ -77,7 +77,7 @@
       ]
     },
     "whoHires": {
-      "body": "Finance MBA graduates from Shoolini University Online are hired across India's banking, financial services, and corporate sector:\n\n**Industries:** Commercial banking, investment banking, insurance, mutual fund AMCs, NBFCs, corporate treasury, accounting firms, stock broking, and fintech\n\n**Entry-level roles:** Credit Officer, Treasury Analyst, Tax Associate, Banking Officer, Financial Analyst, Insurance Executive, Research Associate\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Treasury Manager, Branch Manager, Senior Financial Analyst, Tax Manager, Relationship Manager, Portfolio Manager\n\n**Senior roles (7+ years):** CFO (SME), VP Finance, Head of Treasury, Zonal Head (banking), Director of Finance, Chief Investment Officer\n\n**Top hiring organisations:** SBI, HDFC Bank, ICICI Bank, Axis Bank, Kotak Mahindra Bank, PNB, LIC, HDFC Life, Bajaj Allianz, SBI Mutual Fund, HDFC AMC, Motilal Oswal, KPMG, Deloitte, EY, Grant Thornton, and mid-market BFSI companies across Punjab, Himachal Pradesh, Haryana, and the Chandigarh financial district"
+      "body": "This Finance MBA syllabus maps to the following India's banking, financial services, and corporate sector:\n\n**Industries:** Commercial banking, investment banking, insurance, mutual fund AMCs, NBFCs, corporate treasury, accounting firms, stock broking, and fintech\n\n**Entry-level roles:** Credit Officer, Treasury Analyst, Tax Associate, Banking Officer, Financial Analyst, Insurance Executive, Research Associate\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Treasury Manager, Branch Manager, Senior Financial Analyst, Tax Manager, Relationship Manager, Portfolio Manager\n\n**Senior roles (7+ years):** CFO (SME), VP Finance, Head of Treasury, Zonal Head (banking), Director of Finance, Chief Investment Officer\n\n**Where to verify placement claims:** ask Shoolini University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Financial Management specialisation builds skills that BFSI and corporate employers test at analyst and officer levels:\n\n**Technical skills:**\n- Security Analysis: DCF valuation, P/E and EV/EBITDA multiples, bond duration, portfolio beta, and equity research report structure\n- Taxation: Income Tax Act sections for individuals and companies, GST input credit mechanics, TDS compliance, and advance tax planning\n- Banking: CRAR, GNPA/NNPA ratios, ALM basics, credit appraisal, and SARFAESI recovery procedures\n- Investment: mutual fund performance evaluation, asset allocation models, SIP mechanics, and portfolio rebalancing\n\n**Applied skills:**\n- Corporate Finance: M&A information memorandum basics, LBO model structure, working capital forecasting, and financial modelling in Excel\n- International Finance: forward contract pricing, political risk assessment, hedging strategies, and transfer pricing fundamentals\n\n**Soft skills:** Presenting financial analysis to credit committees, communicating tax planning recommendations to business owners, preparing management information reports for CFOs, and building relationship banking capabilities for retail and corporate client management."
@@ -90,38 +90,6 @@
     },
     "certificate": {
       "body": "Graduates receive a Shoolini University MBA degree certificate with Financial Management noted on the marksheet, issued under UGC-DEB 2020 online mode standards. NIRF #69 University and NAAC A+ accreditation are recognised by banks, NBFCs, accounting firms, and corporate finance departments across India.\n\nDigiLocker verification is available. The degree satisfies management qualification requirements for PSU bank promotion examinations and government finance roles. KPMG certifications bundled with the programme add credibility for candidates targeting consulting and advisory-adjacent finance roles."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Shoolini University Online MBA Financial Management alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Suresh M.",
-          "city": "Chandigarh",
-          "year": 2025,
-          "rating": 5,
-          "liked": "KPMG certification alongside Finance MBA was directly useful for my audit-adjacent role",
-          "disliked": "Capital markets content could cover derivative pricing more deeply for investment banking-focused candidates",
-          "body": "I work at a mid-size CA firm in Chandigarh and needed an MBA credential for the management consulting track. The KPMG certification bundled with Shoolini's MBA was directly useful - clients recognise the KPMG association. PAP track gave me security during the transition period. Financial Accounting from Sem 1 and Financial Management from Sem 2 reinforced my accounting base with a finance decision-making perspective. Good value for Rs 1,58,000 with PAP."
-        },
-        {
-          "name": "Deepika R.",
-          "city": "Ludhiana",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Adda247 banking exam prep helped me qualify for IBPS PO while doing the MBA",
-          "disliked": "Sem 3-4 finance subject names were not shared with me before admission - would have liked to see the full curriculum earlier",
-          "body": "I enrolled targeting both the MBA credential and IBPS banking exam preparation. Adda247's banking exam prep bundled with the programme was genuinely helpful - I used it for IBPS PO preparation alongside the MBA content. Statistics for Management strengthened my quantitative aptitude for banking exams. NAAC A+ from Shoolini was accepted by the PSU bank where I now work for the Officer Grade promotion criteria. Opt-out track at Rs 1,30,000 was affordable."
-        },
-        {
-          "name": "Arnav S.",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 4,
-          "liked": "PAP structure reduced financial anxiety during the job search period post-programme",
-          "disliked": "Placement team was more active in Himachal Pradesh and Punjab than in Delhi NCR - had to lean on personal networks for Delhi placement",
-          "body": "Finance MBA with PAP was the differentiating factor for me compared to SMU and Symbiosis. Rs 1,58,000 with Rs 30,000 deferred was a better deal than paying Rs 1,20,000 upfront at SMU without any PAP safety net. Taxation subject covered GST and Income Tax Act provisions I apply in my current CFO-adjacent role at an SME. LinkedIn Learning Finance courses supplemented the theory content well. For North India finance professionals, Shoolini offers a strong package."
-        }
-      ]
     },
     "faqs": [
       {
@@ -147,7 +115,7 @@
     ],
     "chooseAlternatives": {
       "chooseIf": [
-        "You want Pay After Placement for a Finance MBA — the only online option from a NAAC A+ UGC-DEB university.",
+        "You want Pay After Placement for a Finance MBA, the only online option from a NAAC A+ UGC-DEB university.",
         "Your budget is Rs 1,30,000 (opt-out) and you want KPMG certifications alongside your degree.",
         "You are a BFSI professional, CA-adjacent, or banking sector candidate in North India targeting manager credentials.",
         "You want Adda247 banking exam preparation bundled with your Finance MBA."
@@ -164,6 +132,7 @@
     "generatedAt": "2026-04-22",
     "batchNumber": 18,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-22"
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17"
   }
 }

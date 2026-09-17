@@ -65,7 +65,7 @@
       "note": "Sem 1-2 shared core subjects across all LPU Online MBA specialisations. See the main LPU Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Logistics and Supply Chain Management MBA graduates from LPU Online are hired across these industries and roles:\n\n**Industries:** E-commerce and quick-commerce logistics, FMCG supply chain, Manufacturing, 3PL and freight forwarding, Retail distribution, Pharma supply chain\n\n**Entry-level roles:** Supply Chain Analyst, Logistics Coordinator, Procurement Executive, Warehouse Manager, 3PL Coordinator\n\n**Mid-level roles (3-5 years experience):** Supply Chain Manager, Head of Logistics, Procurement Manager, Warehouse Operations Manager, Distribution Manager\n\n**Senior roles (7+ years):** VP Supply Chain, COO, Head of Procurement, Supply Chain Transformation Director\n\n**Top hiring organisations:** Amazon India Logistics, Flipkart Supply Chain, Delhivery, Blue Dart, TCI Express, Mahindra Logistics, DHL India, Maersk India, HUL Supply Chain, Nestle India Supply Chain, Lupin Pharma Logistics, Hero MotoCorp Procurement"
+      "body": "This Logistics and Supply Chain Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** E-commerce and quick-commerce logistics, FMCG supply chain, Manufacturing, 3PL and freight forwarding, Retail distribution, Pharma supply chain\n\n**Entry-level roles:** Supply Chain Analyst, Logistics Coordinator, Procurement Executive, Warehouse Manager, 3PL Coordinator\n\n**Mid-level roles (3-5 years experience):** Supply Chain Manager, Head of Logistics, Procurement Manager, Warehouse Operations Manager, Distribution Manager\n\n**Senior roles (7+ years):** VP Supply Chain, COO, Head of Procurement, Supply Chain Transformation Director\n\n**Where to verify placement claims:** ask Lovely Professional University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The LPU Logistics and SCM specialisation builds skills that logistics and supply chain employers test at SCM manager and procurement manager levels:\n\n**Technical skills:**\n- Supply Chain Strategy: network design, sourcing footprint planning, make-vs-buy analysis, and supply chain transformation roadmap development for strategic SCM roles\n- Procurement and Inventory Management: category strategy design, vendor evaluation, EOQ and ABC analysis, and JIT inventory management for procurement and purchasing roles\n- Supply Chain Analytics: demand forecasting models, inventory optimisation dashboards, and supply chain KPI reporting for data-driven SCM management\n- International Logistics: freight forwarding management, customs clearance, incoterms application, and international distribution network design for global logistics roles\n\n**Applied skills:**\n- Warehouse Management: WMS implementation, warehouse layout design, and pick-pack-ship operations optimisation for e-commerce and manufacturing warehouse management\n- Transportation Management: freight mode optimisation, 3PL contract negotiation, and last-mile delivery network design for logistics operations\n\n**Soft skills:** Presenting supply chain analytics to COO-level management, negotiating 3PL and carrier contracts, building business cases for logistics technology investment, and managing cross-functional supply chain transformation projects."
@@ -78,38 +78,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Lovely Professional University (LPU) and carries the LPU name with the MBA designation. The Logistics and Supply Chain Management specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from LPU Online MBA Logistics and Supply Chain Management alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Kulwinder Singh",
-          "city": "Ludhiana",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Supply Chain Strategy and Procurement and Inventory Management were directly applicable to my manufacturing supply chain role. Zero-cost EMI was the deciding factor.",
-          "disliked": "Supply Chain Analytics could benefit from more Python and Excel-based exercises.",
-          "body": "I had 5 years in logistics operations and the LPU SCM MBA helped me transition to supply chain manager. The Rs 1.61L with zero-cost EMI was unbeatable. LPU brand is well recognised at North India manufacturing and logistics companies."
-        },
-        {
-          "name": "Radhika Patel",
-          "city": "Delhi",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Warehouse Management and International Logistics were excellent and practically applicable. Strong for e-commerce operations roles.",
-          "disliked": "Transportation Management could include more quick-commerce last-mile delivery case studies.",
-          "body": "Good programme for supply chain career advancement. Delhi-NCR logistics companies recognised the LPU credential. The zero-cost EMI made it accessible compared to SSODL."
-        },
-        {
-          "name": "Sukhchain Mann",
-          "city": "Chandigarh",
-          "year": 2024,
-          "rating": 4,
-          "liked": "International Logistics and Supply Chain Analytics subjects were strong. Good foundation for global logistics roles.",
-          "disliked": "Limited case study coverage of pharma cold chain and temperature-controlled logistics.",
-          "body": "Strong logistics and SCM content at an affordable price. For North India manufacturing and 3PL careers, LPU is a recognised and cost-effective choice. Zero-cost EMI was a genuine benefit."
-        }
-      ]
     },
     "faqs": [
       {
@@ -150,6 +118,7 @@
     "wordCount": 2050,
     "generatedAt": "2026-04-21",
     "batchNumber": "Phase7-Batch13",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

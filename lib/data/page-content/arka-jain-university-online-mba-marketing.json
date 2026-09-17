@@ -19,30 +19,69 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Business Research Methods", "desc": "Research design, data collection methods, sampling techniques, hypothesis testing, and research report writing for management." },
-            { "name": "Operations Management", "desc": "Production planning, supply chain basics, quality management systems, inventory control, and process optimisation." },
-            { "name": "Consumer Behavior and Insights", "desc": "Purchase decision models, psychological and cultural factors, consumer journey mapping, and insight generation from behavioural data." },
-            { "name": "Integrated Marketing Communications", "desc": "Advertising strategy, public relations, sales promotion, direct marketing, content marketing, and IMC campaign planning." },
-            { "name": "Omni Channel Marketing", "desc": "Online-offline channel integration, e-commerce strategy, marketplace management, last-mile delivery, and unified customer experience design." },
-            { "name": "Market Research Tools", "desc": "Survey design, focus group methods, data analysis software, competitive intelligence gathering, and market sizing techniques." },
-            { "name": "Open Elective Course", "desc": "Elective chosen from outside the Marketing specialisation. Provides cross-functional exposure in finance, HR, or general management." }
+            {
+              "name": "Business Research Methods",
+              "desc": "Research design, data collection methods, sampling techniques, hypothesis testing, and research report writing for management."
+            },
+            {
+              "name": "Operations Management",
+              "desc": "Production planning, supply chain basics, quality management systems, inventory control, and process optimisation."
+            },
+            {
+              "name": "Consumer Behavior and Insights",
+              "desc": "Purchase decision models, psychological and cultural factors, consumer journey mapping, and insight generation from behavioural data."
+            },
+            {
+              "name": "Integrated Marketing Communications",
+              "desc": "Advertising strategy, public relations, sales promotion, direct marketing, content marketing, and IMC campaign planning."
+            },
+            {
+              "name": "Omni Channel Marketing",
+              "desc": "Online-offline channel integration, e-commerce strategy, marketplace management, last-mile delivery, and unified customer experience design."
+            },
+            {
+              "name": "Market Research Tools",
+              "desc": "Survey design, focus group methods, data analysis software, competitive intelligence gathering, and market sizing techniques."
+            },
+            {
+              "name": "Open Elective Course",
+              "desc": "Elective chosen from outside the Marketing specialisation. Provides cross-functional exposure in finance, HR, or general management."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Strategic Management", "desc": "Competitive strategy frameworks, corporate-level strategy, strategic analysis tools (SWOT, Porter's Five Forces), and strategic implementation." },
-            { "name": "B2B Marketing", "desc": "Industrial buying behaviour, B2B sales funnel design, key account management, trade marketing, and business relationship management." },
-            { "name": "Retail Marketing and Service Management", "desc": "Store operations, visual merchandising, retail analytics, service quality models (SERVQUAL), and customer retention strategies." },
-            { "name": "Digital Marketing and Brand Management", "desc": "SEO, SEM, social media marketing, performance marketing, brand positioning, brand equity measurement, and digital brand strategy." },
-            { "name": "Global Marketing", "desc": "International market entry strategies, cross-cultural marketing, global brand management, trade regulations, and export marketing." },
-            { "name": "Master Thesis / Project", "desc": "Supervised research project on a marketing topic. Literature review, methodology design, data analysis, and thesis presentation." }
+            {
+              "name": "Strategic Management",
+              "desc": "Competitive strategy frameworks, corporate-level strategy, strategic analysis tools (SWOT, Porter's Five Forces), and strategic implementation."
+            },
+            {
+              "name": "B2B Marketing",
+              "desc": "Industrial buying behaviour, B2B sales funnel design, key account management, trade marketing, and business relationship management."
+            },
+            {
+              "name": "Retail Marketing and Service Management",
+              "desc": "Store operations, visual merchandising, retail analytics, service quality models (SERVQUAL), and customer retention strategies."
+            },
+            {
+              "name": "Digital Marketing and Brand Management",
+              "desc": "SEO, SEM, social media marketing, performance marketing, brand positioning, brand equity measurement, and digital brand strategy."
+            },
+            {
+              "name": "Global Marketing",
+              "desc": "International market entry strategies, cross-cultural marketing, global brand management, trade regulations, and export marketing."
+            },
+            {
+              "name": "Master Thesis / Project",
+              "desc": "Supervised research project on a marketing topic. Literature review, methodology design, data analysis, and thesis presentation."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "ARKA JAIN MBA Marketing graduates target roles across brand management, digital marketing, and sales:\n\n**Industries:** FMCG, e-commerce, retail, IT/ITES, media and advertising, real estate, automotive, healthcare marketing, and D2C brands\n\n**Entry-level roles:** Marketing Executive, Digital Marketing Associate, Brand Coordinator, Market Research Analyst, Content Marketing Specialist, Sales Executive\n\n**Mid-level roles (3-5 years experience):** Marketing Manager, Brand Manager, Digital Marketing Manager, Product Marketing Manager, Regional Sales Manager, Category Manager\n\n**Senior roles (7+ years):** Head of Marketing, CMO (mid-market), VP Brand Strategy, Director of Digital Marketing, Head of E-commerce\n\n**Regional note:** ARKA JAIN's JGI Group network provides stronger placement access in East India (Jharkhand, Bihar, Odisha, West Bengal). FMCG and retail marketing roles in the Jamshedpur-Kolkata corridor are particularly accessible. Candidates targeting agency roles in Mumbai or Bengaluru should supplement with independent networking and a portfolio."
+      "body": "ARKA JAIN MBA Marketing graduates target roles across brand management, digital marketing, and sales:\n\n**Industries:** FMCG, e-commerce, retail, IT/ITES, media and advertising, real estate, automotive, healthcare marketing, and D2C brands\n\n**Entry-level roles:** Marketing Executive, Digital Marketing Associate, Brand Coordinator, Market Research Analyst, Content Marketing Specialist, Sales Executive\n\n**Mid-level roles (3-5 years experience):** Marketing Manager, Brand Manager, Digital Marketing Manager, Product Marketing Manager, Regional Sales Manager, Category Manager\n\n**Senior roles (7+ years):** Head of Marketing, CMO (mid-market), VP Brand Strategy, Director of Digital Marketing, Head of E-commerce\n\n**Regional note:** ARKA JAIN's JGI Group network provides stronger placement access in East India (Jharkhand, Bihar, Odisha, West Bengal). FMCG and retail marketing roles in the Jamshedpur-Kolkata corridor are particularly accessible. Candidates targeting agency roles in Mumbai or Bengaluru should supplement with independent networking and a portfolio.\n\n**Where to verify placement claims:** ask ARKA JAIN University – JGI Online (arkajain.edu.in) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Marketing specialisation builds skills across brand management, digital marketing, and market research:\n\n**Technical skills:**\n- Digital Marketing: SEO/SEM execution, social media campaign management, performance marketing (Google Ads, Meta Ads), and marketing automation tools\n- Market Research: survey design, focus group facilitation, data analysis, competitive intelligence, and market sizing\n- Brand Management: brand positioning, brand equity measurement, brand architecture design, and brand crisis management\n- Omni Channel: online-offline channel integration, e-commerce platform management, marketplace strategy, and unified CX design\n\n**Applied skills:**\n- B2B Marketing: industrial buying process, key account management, trade marketing, and B2B sales funnel design\n- Retail Marketing: store operations, visual merchandising, retail analytics, and customer retention strategy\n- Global Marketing: international market entry modes, cross-cultural campaign adaptation, export marketing, and trade compliance\n\n**AI skills (Sem 1):** Prompt engineering for content creation, AI-assisted campaign ideation, GenAI tools for market research summaries, and AI-driven customer insight generation."
@@ -55,38 +94,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Marketing as the specialisation, issued by ARKA JAIN University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A accreditation and UGC-DEB approval. Valid for government recruitment, PSU marketing and sales roles, corporate marketing positions, and higher education admissions. The certificate reads Master of Business Administration without the word 'online' on the document face, consistent with UGC-DEB norms. DigiLocker integration available for digital verification."
-    },
-    "reviews": {
-      "intro": "Three reviews from ARKA JAIN Online MBA Marketing students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Sneha",
-          "city": "Ranchi",
-          "year": 2024,
-          "rating": 5,
-          "liked": "The Generative AI course in Sem 1 taught me prompt engineering for marketing content. I now use AI tools for campaign copy, social media calendars, and customer persona development. Digital Marketing and Brand Management in Sem 4 was practical and current.",
-          "disliked": "Specialisation variety is limited to 3 options. No dual-spec available like Marketing + Analytics.",
-          "body": "For East India marketing professionals, ARKA JAIN delivers real value at Rs 1.08 lakh. The GenAI subject in Sem 1 is not fluff. I apply those skills daily in my agency role. Omni Channel Marketing and Digital Marketing and Brand Management together give strong coverage of modern marketing. The JGI Group alumni network helped me connect with FMCG companies in the Kolkata market."
-        },
-        {
-          "name": "Vikram",
-          "city": "Jamshedpur",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Consumer Behavior and Insights in Sem 3 covered purchase decision models and journey mapping at a practical level. Global Marketing in Sem 4 was useful for my export business context.",
-          "disliked": "The Jharkhand location means limited brand recognition outside East India. Bengaluru or Mumbai marketing agencies may not recognise the university name without explanation.",
-          "body": "The marketing curriculum is well-structured for a budget MBA. B2B Marketing, Retail Marketing, and Omni Channel are standalone subjects rather than brief modules. The main constraint is brand equity. In Jharkhand and Bihar, the JGI name opens doors. Nationally, you are building credibility from your portfolio and experience, not the university brand."
-        },
-        {
-          "name": "Ritu",
-          "city": "Kolkata",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Integrated Marketing Communications covered advertising, PR, and content marketing together. Market Research Tools included competitive intelligence methods I use in my research analyst role.",
-          "disliked": "Career services are focused on East India companies. If you are targeting pan-India FMCG marketing roles, the placement support is not strong enough. LMS is functional but the interface feels dated compared to larger university platforms.",
-          "body": "At Rs 1.08 lakh, the curriculum is solid. But career outcomes depend more on your portfolio and work experience than the degree brand. The GenAI subject is a genuine advantage. The regional limitation is the honest trade-off."
-        }
-      ]
     },
     "faqs": [
       {
@@ -130,6 +137,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 32,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

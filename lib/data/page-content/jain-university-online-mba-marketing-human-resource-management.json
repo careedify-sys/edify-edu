@@ -65,7 +65,7 @@
       "note": "Sem 1-2 shared core subjects across all JAIN MBA specialisations. See the main JAIN Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Marketing and HRM dual MBA graduates from JAIN Online are hired across these industries and roles:\n\n**Industries:** Retail and FMCG, Banking and financial services, EdTech, Hospitality, Healthcare services, Staffing and business services\n\n**Entry-level roles:** Management Trainee (Marketing and HR), Business Development Executive, Branch Management Trainee, Retail Operations Trainee\n\n**Mid-level roles (3-5 years experience):** Branch Manager, Retail General Manager, Business Development Manager, Centre Manager, Operations Manager (People and Revenue)\n\n**Senior roles (7+ years):** Business Head, VP Operations, Regional Head, COO, General Manager (Retail/Services)\n\n**Top hiring organisations:** Reliance Retail, D-Mart, HDFC Bank Branch Management, ICICI Bank Branch, Amazon Operations, Flipkart Operations, Tata Group Management, Mahindra Group, Infosys People Operations, Deloitte Advisory, KPMG People and Marketing"
+      "body": "This Marketing and HRM dual MBA syllabus maps to the following industries and roles:\n\n**Industries:** Retail and FMCG, Banking and financial services, EdTech, Hospitality, Healthcare services, Staffing and business services\n\n**Entry-level roles:** Management Trainee (Marketing and HR), Business Development Executive, Branch Management Trainee, Retail Operations Trainee\n\n**Mid-level roles (3-5 years experience):** Branch Manager, Retail General Manager, Business Development Manager, Centre Manager, Operations Manager (People and Revenue)\n\n**Senior roles (7+ years):** Business Head, VP Operations, Regional Head, COO, General Manager (Retail/Services)\n\n**Where to verify placement claims:** ask JAIN (Deemed-to-be University) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The JAIN Marketing and HRM dual specialisation builds integrated skills for cross-functional management roles bridging people and revenue:\n\n**Marketing skills:**\n- Consumer Behaviour and Insights: customer journey analysis, buying behaviour research, and consumer insight generation for marketing and business development\n- Retail Marketing and Service Management: category strategy, service quality design, and omnichannel execution for retail general management\n- Digital Marketing and Brand Management: digital brand equity building, employer brand digital strategy, and performance marketing management\n\n**HR skills:**\n- Talent Acquisition and Management: team hiring strategy, employer branding, and talent pipeline management for general managers building and leading teams\n- Industrial Relations and Labour Laws: compliance management for retail and service sector managers managing large frontline workforces\n- Performance Management Systems: sales team KPI frameworks, service team appraisal management, and cross-functional performance review\n\n**Cross-functional skills:**\n- Organisation Development and Change Management: leading retail transformation, managing change in service businesses, and OD diagnostics for restructuring\n- Market Research Tools: SPSS and survey analytics for both consumer research and employee survey analysis\n\n**Soft skills:** Managing cross-functional teams spanning sales, service, and HR, negotiating with union representatives in retail operations, presenting business performance to regional leadership, and building employer brand campaigns to attract talent."
@@ -78,38 +78,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by JAIN (Deemed-to-be University) and carries the JAIN name with the MBA designation. Both Marketing and Human Resource Management specialisations are noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The dual specialisation certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from JAIN Online MBA Marketing and HRM alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Raghu Krishnaswamy",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Industrial Relations combined with Retail Marketing was directly applicable to my retail branch general manager role. Performance Management and Digital Marketing dual coverage gave me complete branch management credentials.",
-          "disliked": "L&D and Compensation subjects are absent from the dual spec. For HR specialist roles, single-spec HRM is better.",
-          "body": "I was managing a retail branch and needed formal credentials for a GM promotion. The JAIN Marketing and HRM dual MBA gave me exactly the right combination. No peer university offered both at this fee range."
-        },
-        {
-          "name": "Pallavi Shankar",
-          "city": "Chennai",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Consumer Behaviour and Talent Acquisition combination was unique. OD and Change Management subject was well-structured and directly applicable to my franchise management role.",
-          "disliked": "Students expecting deep HR analytics or deep marketing analytics should choose a different specialisation. This is for cross-functional generalist roles.",
-          "body": "Good programme for general management and franchise operations roles. Chennai retail and services companies recognised the dual credential. For deep specialist HR or marketing careers, single-spec programmes are better."
-        },
-        {
-          "name": "Sajan Thomas",
-          "city": "Kochi",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Market Research Tools combined with Performance Management gave useful cross-functional skills for my business development role.",
-          "disliked": "JAIN brand in Kerala is less strong. Best for Bengaluru and Tamil Nadu markets where JAIN alumni network is active.",
-          "body": "Decent credential for cross-functional business management. Best suited for professionals managing people and revenue simultaneously. Not suitable for specialist HR or marketing career paths."
-        }
-      ]
     },
     "faqs": [
       {
@@ -150,6 +118,7 @@
     "wordCount": 2000,
     "generatedAt": "2026-04-22",
     "batchNumber": "Phase7-Batch14",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

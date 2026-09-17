@@ -19,28 +19,61 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Entrepreneurship and Startup Ideation", "desc": "Business ideation frameworks, lean startup methodology, business model canvas, venture feasibility, and funding landscape for new ventures." },
-            { "name": "Production and Operations Management", "desc": "Production planning, inventory management, quality control, lean principles, and operations strategy for manufacturing and service sectors." },
-            { "name": "Cross Functional Elective", "desc": "Elective subject from another specialisation domain. Broadens management perspective beyond the core finance track." },
-            { "name": "Direct and Indirect Taxes", "desc": "Indian income tax provisions, GST framework, TDS/TCS, corporate tax planning, and compliance requirements for businesses operating in India." },
-            { "name": "Financial Derivatives and Risk Management", "desc": "Options, futures, swaps, hedging strategies, derivative pricing models, credit risk assessment, and enterprise risk management frameworks." },
-            { "name": "Fundamentals of Fintech", "desc": "Digital payments ecosystem, blockchain basics, peer-to-peer lending models, robo-advisory platforms, InsurTech, and India's fintech regulatory landscape." }
+            {
+              "name": "Entrepreneurship and Startup Ideation",
+              "desc": "Business ideation frameworks, lean startup methodology, business model canvas, venture feasibility, and funding landscape for new ventures."
+            },
+            {
+              "name": "Production and Operations Management",
+              "desc": "Production planning, inventory management, quality control, lean principles, and operations strategy for manufacturing and service sectors."
+            },
+            {
+              "name": "Cross Functional Elective",
+              "desc": "Elective subject from another specialisation domain. Broadens management perspective beyond the core finance track."
+            },
+            {
+              "name": "Direct and Indirect Taxes",
+              "desc": "Indian income tax provisions, GST framework, TDS/TCS, corporate tax planning, and compliance requirements for businesses operating in India."
+            },
+            {
+              "name": "Financial Derivatives and Risk Management",
+              "desc": "Options, futures, swaps, hedging strategies, derivative pricing models, credit risk assessment, and enterprise risk management frameworks."
+            },
+            {
+              "name": "Fundamentals of Fintech",
+              "desc": "Digital payments ecosystem, blockchain basics, peer-to-peer lending models, robo-advisory platforms, InsurTech, and India's fintech regulatory landscape."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Strategic Management", "desc": "Corporate strategy, competitive advantage frameworks, strategic planning models, and business model analysis." },
-            { "name": "Research Project", "desc": "Faculty-supervised research project applying finance concepts and analytical methods to a real business or market problem." },
-            { "name": "Mergers Acquisitions and Corporate Restructuring", "desc": "M&A valuation methods (DCF, comparable, precedent), due diligence, deal structuring, hostile takeovers, and post-merger integration frameworks." },
-            { "name": "Security Analysis and Portfolio Management", "desc": "Fundamental and technical analysis, equity valuation, portfolio construction, asset allocation, Modern Portfolio Theory, and risk-adjusted performance measurement." },
-            { "name": "International Financial Management", "desc": "Foreign exchange markets, currency risk management, international capital budgeting, cross-border M&A, and global financial regulation basics." }
+            {
+              "name": "Strategic Management",
+              "desc": "Corporate strategy, competitive advantage frameworks, strategic planning models, and business model analysis."
+            },
+            {
+              "name": "Research Project",
+              "desc": "Faculty-supervised research project applying finance concepts and analytical methods to a real business or market problem."
+            },
+            {
+              "name": "Mergers Acquisitions and Corporate Restructuring",
+              "desc": "M&A valuation methods (DCF, comparable, precedent), due diligence, deal structuring, hostile takeovers, and post-merger integration frameworks."
+            },
+            {
+              "name": "Security Analysis and Portfolio Management",
+              "desc": "Fundamental and technical analysis, equity valuation, portfolio construction, asset allocation, Modern Portfolio Theory, and risk-adjusted performance measurement."
+            },
+            {
+              "name": "International Financial Management",
+              "desc": "Foreign exchange markets, currency risk management, international capital budgeting, cross-border M&A, and global financial regulation basics."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Finance MBA graduates target roles across banking, investment, and corporate finance:\n\n**Industries:** Banking and financial services, insurance, asset management, fintech, consulting, corporate treasury, and NBFC operations\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Investment Banking Associate, Tax Consultant, Treasury Analyst, Equity Research Associate\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Senior Financial Analyst, Portfolio Manager, Risk Manager, M&A Associate, FP&A Manager\n\n**Senior roles (7+ years):** CFO, VP Finance, Head of Risk, Director of Financial Planning, Chief Investment Officer, Head of M&A\n\n**Employers:** Banks (HDFC, ICICI, Axis, Kotak), consulting (Deloitte, EY, KPMG, PwC financial advisory), insurance (HDFC Life, ICICI Prudential, SBI Life), AMCs (SBI MF, HDFC AMC, Nippon), and fintech (Razorpay, PhonePe, Paytm financial services).\n\n**Note:** Sharda provides career support. Greater Noida location offers NCR recruiter access, but finance roles at top banks and investment firms will weigh brand alongside credentials."
+      "body": "Finance MBA graduates target roles across banking, investment, and corporate finance:\n\n**Industries:** Banking and financial services, insurance, asset management, fintech, consulting, corporate treasury, and NBFC operations\n\n**Entry-level roles:** Financial Analyst, Credit Analyst, Investment Banking Associate, Tax Consultant, Treasury Analyst, Equity Research Associate\n\n**Mid-level roles (3-5 years experience):** Finance Manager, Senior Financial Analyst, Portfolio Manager, Risk Manager, M&A Associate, FP&A Manager\n\n**Senior roles (7+ years):** CFO, VP Finance, Head of Risk, Director of Financial Planning, Chief Investment Officer, Head of M&A\n\n**Employers:** Banks (HDFC, ICICI, Axis, Kotak), consulting (Deloitte, EY, KPMG, PwC financial advisory), insurance (HDFC Life, ICICI Prudential, SBI Life), AMCs (SBI MF, HDFC AMC, Nippon), and fintech (Razorpay, PhonePe, Paytm financial services).\n\n**Note:** Sharda provides career support. Greater Noida location offers NCR recruiter access, but finance roles at top banks and investment firms will weigh brand alongside credentials.\n\n**Where to verify placement claims:** ask Sharda University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Finance specialisation builds skills tested by BFSI, corporate finance, and advisory employers:\n\n**Technical skills:**\n- Tax: Indian income tax and GST compliance, corporate tax planning, TDS/TCS provisions, and tax advisory for business entities\n- Derivatives and Risk: option and futures pricing, hedging strategy design, credit risk assessment, and enterprise risk framework application\n- Security Analysis: equity valuation (DCF, multiples), technical chart analysis, portfolio construction, and risk-adjusted return measurement\n- M&A: deal valuation, due diligence checklist management, deal structuring, and post-merger integration planning\n\n**Applied skills:**\n- Fintech: digital payment system architecture, blockchain use cases in banking, and fintech business model evaluation\n- International Finance: forex risk management, cross-border capital budgeting, and international trade finance basics\n\n**Soft skills:** Financial modelling presentation to leadership, investor communication, regulatory compliance reporting, credit committee presentation, and cross-functional finance-operations collaboration."
@@ -53,38 +86,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Finance as the specialisation, issued by Sharda University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A+ accreditation, NIRF #87 University rank, UGC-DEB approval, and WES recognition. Valid for BFSI hiring, PSU applications, and higher education admission. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from Sharda Online MBA Finance students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Kunal R.",
-          "city": "Noida",
-          "year": 2024,
-          "rating": 4.1,
-          "liked": "Security Analysis and Portfolio Management was well-structured. The derivatives subject covered practical hedging scenarios, not just Black-Scholes theory",
-          "disliked": "No scholarships at all. At ₹1,54,500, NIU at ₹97,600 offers similar finance subjects for significantly less",
-          "body": "The finance curriculum covers the right mix of traditional and modern topics. Derivatives, M&A, and Security Analysis are strong subjects. Fintech is introductory but relevant. At ₹1,54,500 the fee is fair given NAAC A+ and NIRF rank, but NIU and Galgotias offer comparable finance depth at lower prices. I chose Sharda for the NIRF ranking, which helped during my internal promotion review."
-        },
-        {
-          "name": "Deepa T.",
-          "city": "Greater Noida",
-          "year": 2024,
-          "rating": 3.8,
-          "liked": "Direct and Indirect Taxes subject was practical. International Financial Management covered forex risk in a way I could apply to my export finance role",
-          "disliked": "EMI interest was not zero-cost. The admissions team did not make this clear upfront. Confirm before enrolling",
-          "body": "The tax and international finance subjects were the strongest for my banking career. M&A was solid on valuation methods. The fintech subject was basic. Brand recognition is a limitation. At large banks, Sharda's online MBA is not as readily recognised as Amity or NMIMS. The NAAC A+ and NIRF rank helped during the verification stage with my employer."
-        },
-        {
-          "name": "Manish P.",
-          "city": "Delhi",
-          "year": 2023,
-          "rating": 4.0,
-          "liked": "NAAC A+ and NIRF #87 gave me confidence in the degree's validity. The M&A subject was directly relevant to my corporate finance work",
-          "disliked": "Career services for online students are minimal. The placement support is focused on campus students in Greater Noida",
-          "body": "I evaluated Sharda against DPU and JIIT. Sharda's ₹1,54,500 was the lowest of the three with comparable accreditation. The finance subjects are standard but well-delivered. No perks, no scholarships, no industry certifications bundled. The value is in the degree and accreditation, not the extras. Self-driven job search is necessary."
-        }
-      ]
     },
     "faqs": [
       {
@@ -128,6 +129,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 27,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

@@ -19,30 +19,69 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Purchase and Inventory Management", "desc": "Procurement strategies, vendor evaluation, EOQ models, JIT inventory, ABC analysis, safety stock calculations, and warehouse management." },
-            { "name": "Lean and Six Sigma Management", "desc": "Lean principles, 5S implementation, value stream mapping, DMAIC methodology, Six Sigma tools (fishbone, Pareto, control charts), and waste elimination." },
-            { "name": "Total Quality Management", "desc": "TQM philosophy, Deming's 14 points, Kaizen, quality circles, ISO 9001 implementation, and quality cost analysis." },
-            { "name": "Strategic Management", "desc": "Competitive strategy frameworks, industry analysis, manufacturing strategy alignment, and strategic implementation." },
-            { "name": "Entrepreneurship Development", "desc": "Manufacturing startup ideation, business plan creation, funding for SME manufacturing, and MSME support systems." },
-            { "name": "Management Accounting", "desc": "Cost accounting for manufacturing, budgetary control, standard costing, variance analysis, and make-or-buy decisions." },
-            { "name": "Production and Operations Management", "desc": "Production planning and control, facility layout, capacity planning, scheduling, and operations strategy frameworks." },
-            { "name": "Skill Development", "desc": "Communication skills, shop floor presentation techniques, team management, and professional development." },
-            { "name": "Summer Project", "desc": "Industry-linked summer project in a manufacturing or operations setup requiring process analysis, data collection, and structured report." }
+            {
+              "name": "Purchase and Inventory Management",
+              "desc": "Procurement strategies, vendor evaluation, EOQ models, JIT inventory, ABC analysis, safety stock calculations, and warehouse management."
+            },
+            {
+              "name": "Lean and Six Sigma Management",
+              "desc": "Lean principles, 5S implementation, value stream mapping, DMAIC methodology, Six Sigma tools (fishbone, Pareto, control charts), and waste elimination."
+            },
+            {
+              "name": "Total Quality Management",
+              "desc": "TQM philosophy, Deming's 14 points, Kaizen, quality circles, ISO 9001 implementation, and quality cost analysis."
+            },
+            {
+              "name": "Strategic Management",
+              "desc": "Competitive strategy frameworks, industry analysis, manufacturing strategy alignment, and strategic implementation."
+            },
+            {
+              "name": "Entrepreneurship Development",
+              "desc": "Manufacturing startup ideation, business plan creation, funding for SME manufacturing, and MSME support systems."
+            },
+            {
+              "name": "Management Accounting",
+              "desc": "Cost accounting for manufacturing, budgetary control, standard costing, variance analysis, and make-or-buy decisions."
+            },
+            {
+              "name": "Production and Operations Management",
+              "desc": "Production planning and control, facility layout, capacity planning, scheduling, and operations strategy frameworks."
+            },
+            {
+              "name": "Skill Development",
+              "desc": "Communication skills, shop floor presentation techniques, team management, and professional development."
+            },
+            {
+              "name": "Summer Project",
+              "desc": "Industry-linked summer project in a manufacturing or operations setup requiring process analysis, data collection, and structured report."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Digital Marketing", "desc": "Digital marketing fundamentals, B2B marketing for manufacturing, industrial marketing strategies, and digital analytics." },
-            { "name": "International Business Management", "desc": "Global supply chain management, export/import operations, international manufacturing strategy, and cross-border logistics." },
-            { "name": "Contemporary Seminar", "desc": "Student-led seminar on current operations management topics. Research, presentation, and peer discussion on Industry 4.0 trends." },
-            { "name": "Field Work and Project Work (8 Weeks)", "desc": "Mandatory 8-week field project in a manufacturing plant, logistics centre, or quality department. Process improvement study, structured report, and viva voce defence." }
+            {
+              "name": "Digital Marketing",
+              "desc": "Digital marketing fundamentals, B2B marketing for manufacturing, industrial marketing strategies, and digital analytics."
+            },
+            {
+              "name": "International Business Management",
+              "desc": "Global supply chain management, export/import operations, international manufacturing strategy, and cross-border logistics."
+            },
+            {
+              "name": "Contemporary Seminar",
+              "desc": "Student-led seminar on current operations management topics. Research, presentation, and peer discussion on Industry 4.0 trends."
+            },
+            {
+              "name": "Field Work and Project Work (8 Weeks)",
+              "desc": "Mandatory 8-week field project in a manufacturing plant, logistics centre, or quality department. Process improvement study, structured report, and viva voce defence."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Dr. MGR MBA Operations Management graduates target roles across manufacturing, supply chain, quality, and logistics:\n\n**Industries:** Automotive manufacturing, auto components, electronics manufacturing, pharmaceutical production, FMCG manufacturing, logistics and warehousing, heavy engineering, and construction\n\n**Entry-level roles:** Production Executive, Quality Analyst, Supply Chain Coordinator, Inventory Controller, Purchase Officer, Lean Executive\n\n**Mid-level roles (3-5 years):** Operations Manager, Quality Manager, Supply Chain Manager, Production Manager, Lean Six Sigma Black Belt, Warehouse Manager\n\n**Senior roles (7+ years):** VP Operations, Plant Head, Director of Manufacturing, Chief Operating Officer, Head of Supply Chain, Director of Quality\n\n**Employers:** Hyundai (Sriperumbudur), Royal Enfield, Ashok Leyland, TVS Motor, Caterpillar, Saint-Gobain, Foxconn, auto component clusters (Ambattur, Oragadam), and Chennai port logistics companies.\n\n**Note:** Chennai's Sriperumbudur-Oragadam automotive corridor is India's largest auto manufacturing cluster. Dr. MGR's local brand provides direct access to this ecosystem."
+      "body": "Dr. MGR MBA Operations Management graduates target roles across manufacturing, supply chain, quality, and logistics:\n\n**Industries:** Automotive manufacturing, auto components, electronics manufacturing, pharmaceutical production, FMCG manufacturing, logistics and warehousing, heavy engineering, and construction\n\n**Entry-level roles:** Production Executive, Quality Analyst, Supply Chain Coordinator, Inventory Controller, Purchase Officer, Lean Executive\n\n**Mid-level roles (3-5 years):** Operations Manager, Quality Manager, Supply Chain Manager, Production Manager, Lean Six Sigma Black Belt, Warehouse Manager\n\n**Senior roles (7+ years):** VP Operations, Plant Head, Director of Manufacturing, Chief Operating Officer, Head of Supply Chain, Director of Quality\n\n**Employers:** Hyundai (Sriperumbudur), Royal Enfield, Ashok Leyland, TVS Motor, Caterpillar, Saint-Gobain, Foxconn, auto component clusters (Ambattur, Oragadam), and Chennai port logistics companies.\n\n**Note:** Chennai's Sriperumbudur-Oragadam automotive corridor is India's largest auto manufacturing cluster. Dr. MGR's local brand provides direct access to this ecosystem.\n\n**Where to verify placement claims:** ask Dr. MGR Educational and Research Institute Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Operations Management specialisation builds skills across procurement, lean manufacturing, and quality management:\n\n**Technical skills:**\n- Purchase and Inventory: vendor evaluation matrices, EOQ calculation, safety stock optimization, ABC/VED analysis, JIT implementation, and warehouse layout design\n- Lean Six Sigma: value stream mapping, 5S audit execution, DMAIC project leadership, statistical process control (SPC), and root cause analysis using Six Sigma tools\n- Total Quality Management: ISO 9001 internal audit, quality circle facilitation, Kaizen event management, Deming cycle application, and cost of quality calculation\n\n**Applied skills:**\n- Production Planning: MRP/MRP-II concepts, production scheduling, capacity requirement planning, and shop floor control\n- Process Improvement: bottleneck identification, cycle time reduction, OEE (Overall Equipment Effectiveness) measurement, and continuous improvement project management\n\n**Soft skills:** Cross-functional team leadership on the shop floor, supplier negotiation, presenting process improvement data to plant leadership, and managing change during lean transformation."
@@ -55,38 +94,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Operations Management as the specialisation, issued by Dr. MGR Educational and Research Institute (Deemed University) under UGC-DEB online mode standards.\n\nThe degree carries NAAC A+ accreditation, UGC-DEB approval, and Deemed University status since 2003. Valid for operations manager roles, manufacturing management positions, quality manager certifications (ISO lead auditor eligibility), and private-sector plant management careers. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from Dr. MGR Online MBA Operations Management students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Sathish",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Lean and Six Sigma Management as a standalone subject is directly applicable to my auto component factory. Chennai's manufacturing corridor employers recognize Dr. MGR immediately",
-          "disliked": "Sem 4 has no operations-specific subjects. All the depth is front-loaded in Sem 3",
-          "body": "I work at an auto component plant in Oragadam. Dr. MGR is the obvious choice for Chennai manufacturing professionals. Three Sem 3 operations subjects (purchase/inventory, lean/six sigma, TQM) cover exactly what plant managers need. The 8-week field project in my own factory let me run a real DMAIC improvement cycle. For Chennai automotive and manufacturing careers, the brand works perfectly."
-        },
-        {
-          "name": "Ramya",
-          "city": "Coimbatore",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Total Quality Management covered ISO 9001 and quality circles at a practical level useful for my textile manufacturing quality role",
-          "disliked": "Pan-India brand recognition is limited. Manufacturing companies in Pune or Gujarat may not know Dr. MGR",
-          "body": "The operations curriculum is compact but covers the right areas: procurement, lean/six sigma, and TQM. Three dedicated subjects in one semester. The common core adds Production and Operations Management in the same semester, so Sem 3 is heavily operations-loaded. For Tamil Nadu manufacturing careers (auto, textiles, electronics), Dr. MGR works. For national manufacturing brands, the brand gap is a consideration."
-        },
-        {
-          "name": "Manoj",
-          "city": "Madurai",
-          "year": 2023,
-          "rating": 3,
-          "liked": "Purchase and Inventory Management covered EOQ, ABC analysis, and JIT at enough depth to apply in my warehouse operations role",
-          "disliked": "LMS interface needs modernization. Some study materials reference older manufacturing standards. Faculty responsiveness is inconsistent",
-          "body": "At Rs 1.36-1.41L, Vignan LSCM at Rs 90,000 is cheaper but focuses on logistics, not manufacturing operations. Alliance Operations at Rs 1,75,000 costs more but has national brand. Dr. MGR is the mid-range option with strong Chennai manufacturing access. If you are in the Chennai auto corridor, this is the most locally relevant operations MBA. For Pune, NCR, or Gujarat manufacturing hubs, the brand does not travel well."
-        }
-      ]
     },
     "faqs": [
       {
@@ -130,6 +137,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 31,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

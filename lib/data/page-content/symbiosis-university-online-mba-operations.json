@@ -97,7 +97,7 @@
       "note": "Sem 1-2 shared core subjects across all SSODL MBA specialisations. See the main SSODL Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Operations MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** Manufacturing, FMCG supply chain, IT-enabled operations, E-commerce fulfilment, Management consulting (operations practice)\n\n**Entry-level roles:** Operations Analyst, Supply Chain Analyst, Procurement Manager, Project Manager, Quality Manager\n\n**Mid-level roles (3-5 years experience):** Operations Manager, Plant Manager, Supply Chain Manager, Procurement Head, Quality Head\n\n**Senior roles (7+ years):** VP Operations, COO, Head of Procurement, Operations Transformation Director\n\n**Where to verify placement claims:** ask Symbiosis International University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
+      "body": "This Operations MBA syllabus maps to the following industries and roles:\n\n**Industries:** Manufacturing, FMCG supply chain, IT-enabled operations, E-commerce fulfilment, Management consulting (operations practice)\n\n**Entry-level roles:** Operations Analyst, Supply Chain Analyst, Procurement Manager, Project Manager, Quality Manager\n\n**Mid-level roles (3-5 years experience):** Operations Manager, Plant Manager, Supply Chain Manager, Procurement Head, Quality Head\n\n**Senior roles (7+ years):** VP Operations, COO, Head of Procurement, Operations Transformation Director\n\n**Where to verify placement claims:** ask Symbiosis International University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The outcome is being able to look at a process and say where the time and money are going, with evidence.\n\nOperations Planning and Scheduling and Procurement and Materials Management cover capacity, inventory and the supplier side: what to hold, what to order, and what a stockout actually costs. Total Quality Management and Lean Six Sigma give you the structured improvement methods, including the statistical grounding to tell a real improvement from noise.\n\nService Operations Management handles the case where capacity cannot be stored and demand arrives unevenly, which is most of the service economy.\n\nOutsourcing and IT Delivery Models covers delivery structures, vendor governance and the commercial shape of an outsourcing arrangement. Digital Manufacturing and Analytics covers instrumentation and what to do with the data once a process starts producing it."
@@ -153,6 +153,7 @@
     "hasSyllabusData": true,
     "batch12v2Fixed": "2026-04-21",
     "integrityPass": "2026-09-17",
-    "humanisedAt": "2026-09-17"
+    "humanisedAt": "2026-09-17",
+    "claimSweep": "2026-09-17"
   }
 }

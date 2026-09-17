@@ -18,7 +18,7 @@
       "note": "Detailed Sem 3-4 curriculum for Chitkara's Data Science & AI specialisation is shared at admission. Our counsellor can share the current subject list within 24 hours."
     },
     "whoHires": {
-      "body": "Data Science & AI MBA graduates target analytics leadership and AI strategy roles:\n\n**Industries:** IT services, banking and financial services, e-commerce, pharma and healthcare, consulting, telecom, FMCG, and manufacturing analytics\n\n**Entry-level roles:** Business Analyst, Data Analyst, Junior Data Scientist, Analytics Associate, AI Project Coordinator\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, Data Science Manager, AI Product Manager, Business Intelligence Lead, ML Operations Manager\n\n**Senior roles (7+ years):** Chief Data Officer, VP Analytics, Head of AI Strategy, Director of Data Science, Analytics Practice Head\n\n**Top hiring organisations:** TCS, Infosys, Wipro (analytics practices), Mu Sigma, Fractal Analytics, Tiger Analytics, HDFC Bank (data team), Amazon India, Flipkart, Deloitte Analytics, McKinsey QuantumBlack, and pharma companies in the Mohali corridor"
+      "body": "Data Science & AI MBA graduates target analytics leadership and AI strategy roles:\n\n**Industries:** IT services, banking and financial services, e-commerce, pharma and healthcare, consulting, telecom, FMCG, and manufacturing analytics\n\n**Entry-level roles:** Business Analyst, Data Analyst, Junior Data Scientist, Analytics Associate, AI Project Coordinator\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, Data Science Manager, AI Product Manager, Business Intelligence Lead, ML Operations Manager\n\n**Senior roles (7+ years):** Chief Data Officer, VP Analytics, Head of AI Strategy, Director of Data Science, Analytics Practice Head\n\n**Where to verify placement claims:** ask Chitkara University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Data Science & AI specialisation builds analytics leadership skills that bridge technical teams and business strategy:\n\n**Technical skills:**\n- Machine Learning: supervised and unsupervised learning models, model evaluation, feature engineering, and production deployment concepts\n- Predictive Analytics: regression, classification, time-series forecasting, and customer lifetime value modelling\n- AI Strategy: evaluating AI use cases, building business cases for AI adoption, managing data infrastructure investments, and AI governance\n- Data Visualisation: dashboard design, storytelling with data, and translating model outputs into executive-ready insights\n\n**Applied skills:**\n- NLP Applications: sentiment analysis, chatbot strategy, text mining for customer feedback, and document intelligence\n- Deep Learning Basics: neural network architecture understanding, computer vision use cases, and generative AI applications for business\n\n**Soft skills:** Presenting model results to non-technical leadership, managing cross-functional data teams, negotiating data infrastructure budgets, defining KPIs for analytics ROI, and bridging the gap between data engineers and business stakeholders."
@@ -31,38 +31,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Data Science & AI noted as the specialisation, issued by Chitkara University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A+ accreditation and NIRF #78 ranking. Valid for government and PSU hiring, corporate promotions, and higher education applications. DigiLocker digital verification is available for employer background checks. The Data Science & AI MBA credential signals analytics leadership capability to employers hiring for data team management and AI strategy roles."
-    },
-    "reviews": {
-      "intro": "Three reviews from Chitkara Online MBA Data Science & AI students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Naveen R.",
-          "city": "Mohali",
-          "year": 2025,
-          "rating": 4,
-          "liked": "Strong tech curriculum that reflects Chitkara's engineering-campus strengths. ML and AI modules were practical, not just theoretical",
-          "disliked": "Rs 2,00,000 is mid-tier without perks. CU offers a similar spec at Rs 1,65,000 with Harvard and PwC options",
-          "body": "I work in the Chandigarh IT corridor and chose Chitkara for regional recruiter familiarity. The Data Science & AI content covered ML model evaluation, predictive analytics, and AI strategy at a management level. Good for someone moving from a technical role to analytics leadership. The Punjab tech ecosystem recognises Chitkara well."
-        },
-        {
-          "name": "Sneha D.",
-          "city": "Jaipur",
-          "year": 2024,
-          "rating": 4,
-          "liked": "NAAC A+ and UGC-DEB approval made employer verification smooth",
-          "disliked": "Online brand recognition is weaker than JAIN or Manipal outside North India",
-          "body": "The specialisation covers the right topics for someone who wants to manage data teams rather than code models. I compared JAIN Data Science and Chitkara. JAIN has a larger online student base and slightly lower fee. Chitkara's advantage was the technology-focused curriculum approach. Both are solid options."
-        },
-        {
-          "name": "Amit V.",
-          "city": "Ludhiana",
-          "year": 2025,
-          "rating": 3,
-          "liked": "Niche AI strategy content that generic MBA programmes do not cover",
-          "disliked": "Limited placement support for online students. Career services are campus-focused",
-          "body": "The AI and data science content is relevant but the overall online MBA experience at Chitkara is still maturing. At Rs 2,00,000, I expected more career support or industry certification bundles. The degree is valid and accredited, but you need to drive your own job search. Good for working professionals who already have employer support for the credential."
-        }
-      ]
     },
     "faqs": [
       {
@@ -106,6 +74,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 35,
     "hasSyllabusData": false,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

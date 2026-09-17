@@ -19,28 +19,61 @@
         {
           "sem": 3,
           "subjects": [
-            { "name": "Entrepreneurship and Startup Ideation", "desc": "Business ideation frameworks, lean startup methodology, business model canvas, venture feasibility, and funding landscape for new ventures." },
-            { "name": "Production and Operations Management", "desc": "Production planning, inventory management, quality control, lean principles, and operations strategy for manufacturing and service sectors." },
-            { "name": "Cross Functional Elective", "desc": "Elective subject from another specialisation domain. Broadens management perspective beyond the core marketing track." },
-            { "name": "Consumer Behavior", "desc": "Buyer decision models, psychological and social influences on purchase, consumer perception, motivation theories, attitude formation, and post-purchase behaviour analysis." },
-            { "name": "Sales and Distribution Management", "desc": "Sales force design and management, territory planning, distributor selection, channel conflict resolution, trade marketing, and retail distribution strategy." },
-            { "name": "International Marketing", "desc": "Market entry strategies (export, licensing, joint ventures), cross-cultural marketing adaptation, international pricing, global brand management, and trade regulation basics." }
+            {
+              "name": "Entrepreneurship and Startup Ideation",
+              "desc": "Business ideation frameworks, lean startup methodology, business model canvas, venture feasibility, and funding landscape for new ventures."
+            },
+            {
+              "name": "Production and Operations Management",
+              "desc": "Production planning, inventory management, quality control, lean principles, and operations strategy for manufacturing and service sectors."
+            },
+            {
+              "name": "Cross Functional Elective",
+              "desc": "Elective subject from another specialisation domain. Broadens management perspective beyond the core marketing track."
+            },
+            {
+              "name": "Consumer Behavior",
+              "desc": "Buyer decision models, psychological and social influences on purchase, consumer perception, motivation theories, attitude formation, and post-purchase behaviour analysis."
+            },
+            {
+              "name": "Sales and Distribution Management",
+              "desc": "Sales force design and management, territory planning, distributor selection, channel conflict resolution, trade marketing, and retail distribution strategy."
+            },
+            {
+              "name": "International Marketing",
+              "desc": "Market entry strategies (export, licensing, joint ventures), cross-cultural marketing adaptation, international pricing, global brand management, and trade regulation basics."
+            }
           ]
         },
         {
           "sem": 4,
           "subjects": [
-            { "name": "Strategic Management", "desc": "Corporate strategy, competitive advantage frameworks, strategic planning models, and business model analysis." },
-            { "name": "Research Project", "desc": "Faculty-supervised research project applying marketing concepts and methods to a real business or market problem." },
-            { "name": "Service Marketing and CRM", "desc": "Service quality models (SERVQUAL, gaps model), customer lifecycle management, CRM platform strategy, customer retention programmes, and service recovery frameworks." },
-            { "name": "Digital Marketing and Marketing Analytics", "desc": "SEO/SEM, social media marketing, email marketing, content marketing, Google Analytics, campaign performance measurement, attribution models, and marketing ROI calculation." },
-            { "name": "Advertising and Brand Management", "desc": "Brand identity development, positioning strategy, advertising campaign planning, media selection, creative brief writing, brand equity measurement, and brand extension strategy." }
+            {
+              "name": "Strategic Management",
+              "desc": "Corporate strategy, competitive advantage frameworks, strategic planning models, and business model analysis."
+            },
+            {
+              "name": "Research Project",
+              "desc": "Faculty-supervised research project applying marketing concepts and methods to a real business or market problem."
+            },
+            {
+              "name": "Service Marketing and CRM",
+              "desc": "Service quality models (SERVQUAL, gaps model), customer lifecycle management, CRM platform strategy, customer retention programmes, and service recovery frameworks."
+            },
+            {
+              "name": "Digital Marketing and Marketing Analytics",
+              "desc": "SEO/SEM, social media marketing, email marketing, content marketing, Google Analytics, campaign performance measurement, attribution models, and marketing ROI calculation."
+            },
+            {
+              "name": "Advertising and Brand Management",
+              "desc": "Brand identity development, positioning strategy, advertising campaign planning, media selection, creative brief writing, brand equity measurement, and brand extension strategy."
+            }
           ]
         }
       ]
     },
     "whoHires": {
-      "body": "Marketing MBA graduates target brand, sales, digital, and product marketing roles:\n\n**Industries:** FMCG, e-commerce, consumer tech, advertising agencies, media, retail, automobile, telecom, and D2C brands\n\n**Entry-level roles:** Marketing Executive, Brand Associate, Digital Marketing Executive, Sales Officer, Market Research Analyst, Social Media Manager\n\n**Mid-level roles (3-5 years experience):** Brand Manager, Digital Marketing Manager, Area Sales Manager, CRM Manager, Product Marketing Manager, Media Planner\n\n**Senior roles (7+ years):** VP Marketing, CMO, Head of Brand, Head of Digital Marketing, National Sales Head, Director of CRM\n\n**Employers:** FMCG (Hindustan Unilever, ITC, Nestle, P&G India), e-commerce (Flipkart, Amazon India, Myntra), consumer tech (Samsung, Xiaomi, OnePlus), agencies (Ogilvy, Dentsu, GroupM, WPP), D2C (Mamaearth, boAt, Lenskart), and auto (Maruti, Hyundai, Tata Motors).\n\n**Note:** Sharda provides career support. Greater Noida location offers NCR recruiter access. Marketing hiring in FMCG and D2C brands in Delhi-NCR is active."
+      "body": "Marketing MBA graduates target brand, sales, digital, and product marketing roles:\n\n**Industries:** FMCG, e-commerce, consumer tech, advertising agencies, media, retail, automobile, telecom, and D2C brands\n\n**Entry-level roles:** Marketing Executive, Brand Associate, Digital Marketing Executive, Sales Officer, Market Research Analyst, Social Media Manager\n\n**Mid-level roles (3-5 years experience):** Brand Manager, Digital Marketing Manager, Area Sales Manager, CRM Manager, Product Marketing Manager, Media Planner\n\n**Senior roles (7+ years):** VP Marketing, CMO, Head of Brand, Head of Digital Marketing, National Sales Head, Director of CRM\n\n**Employers:** FMCG (Hindustan Unilever, ITC, Nestle, P&G India), e-commerce (Flipkart, Amazon India, Myntra), consumer tech (Samsung, Xiaomi, OnePlus), agencies (Ogilvy, Dentsu, GroupM, WPP), D2C (Mamaearth, boAt, Lenskart), and auto (Maruti, Hyundai, Tata Motors).\n\n**Note:** Sharda provides career support. Greater Noida location offers NCR recruiter access. Marketing hiring in FMCG and D2C brands in Delhi-NCR is active.\n\n**Where to verify placement claims:** ask Sharda University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Marketing specialisation builds brand, sales, and digital marketing skills:\n\n**Technical skills:**\n- Digital Marketing: SEO/SEM campaign management, social media strategy, content marketing planning, email marketing automation, and Google Analytics interpretation\n- Marketing Analytics: campaign ROI measurement, attribution modelling, A/B test analysis, funnel metrics, and marketing dashboard construction\n- Brand Management: brand positioning strategy, brand equity measurement (Aaker model), creative brief development, and brand extension decision frameworks\n- Sales Management: territory planning, sales force compensation design, distributor management, and trade marketing programme execution\n\n**Applied skills:**\n- Consumer Behavior: buyer persona development, purchase journey mapping, and consumer insight extraction from research data\n- International Marketing: market entry strategy evaluation, cross-cultural adaptation, and international pricing frameworks\n- CRM: customer segmentation, lifecycle marketing, retention programme design, and CRM platform evaluation\n\n**Soft skills:** Client presentation, campaign pitch delivery, cross-functional marketing-sales alignment, agency briefing, and stakeholder management for marketing budgets."
@@ -53,38 +86,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Marketing as the specialisation, issued by Sharda University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A+ accreditation, NIRF #87 University rank, UGC-DEB approval, and WES recognition. Valid for corporate marketing hiring, PSU applications, and higher education admission. DigiLocker issuance is standard."
-    },
-    "reviews": {
-      "intro": "Three reviews from Sharda Online MBA Marketing students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Riya S.",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 4.0,
-          "liked": "Digital Marketing and Marketing Analytics was the most practical subject. The SEO/SEM and Google Analytics coverage was directly applicable to my digital marketing role",
-          "disliked": "Brand recognition is a limitation. At FMCG interviews, Sharda's online MBA did not carry the same weight as Amity or NMIMS",
-          "body": "The marketing curriculum covers both traditional and digital well. Consumer Behavior and Brand Management gave me the strategic framework. Digital Marketing and Analytics gave me the execution skills. At ₹1,54,500, the fee is reasonable for NAAC A+ and NIRF rank. The limitation is brand recognition at top FMCG companies. For digital marketing and D2C roles, the degree works fine."
-        },
-        {
-          "name": "Sahil M.",
-          "city": "Noida",
-          "year": 2024,
-          "rating": 4.2,
-          "liked": "Sales and Distribution Management was excellent. The territory planning and distributor management content was directly useful for my FMCG sales role",
-          "disliked": "No scholarships and no perks. Galgotias at ₹80,200 offers marketing at nearly half the cost with NAAC A+",
-          "body": "I work in FMCG sales and needed an MBA to move to a brand management track. Sales and Distribution, Consumer Behavior, and Brand Management covered the right topics. International Marketing was useful since my company exports. At ₹1,54,500 with no scholarships, the value comes from the curriculum and accreditation. Career services for online students are minimal."
-        },
-        {
-          "name": "Pooja L.",
-          "city": "Gurgaon",
-          "year": 2023,
-          "rating": 3.9,
-          "liked": "Service Marketing and CRM subject covered customer lifecycle management in a way I could apply to my customer success role. NAAC A+ and NIRF rank validated the degree",
-          "disliked": "EMI charged interest through the financing partner. This was not disclosed clearly during the admission process",
-          "body": "The marketing spec is standard but well-structured. Consumer Behavior, Digital Marketing, and CRM are the strongest subjects. Advertising and Brand Management was theory-heavy. At ₹1,54,500, the fee sits between budget options (NIU, Galgotias) and premium ones (Amity, NMIMS). The trade-off is clear. Confirm EMI terms before committing."
-        }
-      ]
     },
     "faqs": [
       {
@@ -128,6 +129,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 27,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

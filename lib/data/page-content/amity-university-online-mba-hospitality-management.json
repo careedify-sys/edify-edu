@@ -19,7 +19,7 @@
       "note": "EdifyEdu has not yet received the detailed Sem 3-4 subject list for this specialisation. Contact Amity Online directly for the current curriculum before enrolling."
     },
     "whoHires": {
-      "body": "Hospitality Management MBA graduates from Amity University Online are hired across these industries and roles:\n\n**Industries:** Hotels and resorts, Food service chains, Travel and tourism, Airlines, Events management\n\n**Entry-level roles:** Front Office Manager, Food and Beverage Manager, Revenue Analyst, Hospitality Operations Coordinator\n\n**Mid-level roles (3-5 years experience):** Hotel General Manager (small property), Revenue Manager, Area Food and Beverage Manager, Hospitality Operations Manager\n\n**Senior roles (7+ years):** VP Operations (hotel chain), Director of Revenue Management, General Manager (large hotel), Head of Hospitality\n\n**Top hiring organisations:** Taj Hotels (Indian Hotels Company), Marriott India, ITC Hotels, OYO, Lemon Tree Hotels, Cox and Kings India"
+      "body": "This Hospitality Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** Hotels and resorts, Food service chains, Travel and tourism, Airlines, Events management\n\n**Entry-level roles:** Front Office Manager, Food and Beverage Manager, Revenue Analyst, Hospitality Operations Coordinator\n\n**Mid-level roles (3-5 years experience):** Hotel General Manager (small property), Revenue Manager, Area Food and Beverage Manager, Hospitality Operations Manager\n\n**Senior roles (7+ years):** VP Operations (hotel chain), Director of Revenue Management, General Manager (large hotel), Head of Hospitality\n\n**Where to verify placement claims:** ask Amity University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Hospitality Management specialisation builds skills tested at hotel operations and revenue management leadership levels:\n\n**Technical skills:**\n- Revenue Management: RevPAR optimisation, dynamic pricing, yield management systems, and OTA channel management\n- Hotel Operations Management: front office, housekeeping, F&B coordination, and multi-department P&L responsibility\n- Food Service Operations: restaurant management, HACCP compliance, cost control, and kitchen operations management\n- Tourism and Travel Management: destination management, tour operations, and travel technology platform oversight\n\n**Applied skills:**\n- Guest Experience Management: service design, complaint resolution systems, and loyalty programme management\n- Hospitality Marketing: OTA strategy, social media reputation management, and direct booking conversion optimisation\n\n**Soft skills:** Managing multi-cultural guest interactions, leading large hospitality teams across shifts, presenting hotel performance metrics (ADR, RevPAR, occupancy) to ownership groups."
@@ -32,38 +32,6 @@
     },
     "certificate": {
       "body": "The Amity University degree certificate carries the Amity University name, the MBA designation, and identifies the online learning mode per UGC-DEB 2020 regulations. The Hospitality Management specialisation is noted on the marksheet and transcript. Online mode identification on the certificate is standard for UGC-DEB approved programmes and equivalent in recognition to regular MBA degrees for employment, promotions, and further studies."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Amity Online MBA Hospitality Management alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Aarav Sharma",
-          "city": "Delhi",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Revenue management module with dynamic pricing and OTA channel strategy was exactly what I needed for my hotel role",
-          "disliked": "Event management content was limited — MICE (meetings, incentives, conferencing, exhibitions) is a major revenue driver at hotels",
-          "body": "I was a front office manager targeting a revenue manager role. The revenue management and hotel operations strategy content gave me the frameworks I needed. My ADR and RevPAR targets improved 18% after applying the yield management approaches from this module. The Amity MBA was a requirement for the Revenue Manager role at the international chain I joined. NIRF #22 was specifically noted by the HR recruiter."
-        },
-        {
-          "name": "Divya Nair",
-          "city": "Goa",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Tourism and destination management content was particularly relevant for resort and travel operations in India",
-          "disliked": "Sustainable tourism and eco-resort management content was minimal — growing area for resort development in India",
-          "body": "I manage operations at a beach resort. The hospitality operations and guest experience management content was substantive and gave me management frameworks I was applying intuitively. The Amity degree helped me move from Operations Manager to General Manager of a smaller property. The NIRF ranking was accepted by the hotel ownership group as a strong management qualification."
-        },
-        {
-          "name": "Kiran Joseph",
-          "city": "Kochi",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Food service operations content was thorough — HACCP and food safety compliance are increasingly required at hotel F&B management level",
-          "disliked": "International hotel management content focused more on global chains — more content on Indian hospitality chains would be useful",
-          "body": "I manage the F&B division at a mid-size hotel. The food service operations, cost management, and compliance content was directly applicable. The Amity MBA credential helped me qualify for the F&B Director role at a larger property that required a management degree. The NAAC A+ and NIRF #22 combination was sufficient for the international hotel chain's credential verification process."
-        }
-      ]
     },
     "faqs": [
       {
@@ -89,14 +57,14 @@
     ],
     "chooseAlternatives": {
       "chooseIf": [
-        "You are a hospitality professional — hotel operations manager, F&B manager, revenue analyst, or travel executive — targeting General Manager, Revenue Manager, or Director-level roles.",
+        "You are a hospitality professional, hotel operations manager, F&B manager, revenue analyst, or travel executive, targeting General Manager, Revenue Manager, or Director-level roles.",
         "You work in hotels, resorts, food service, or tourism and want a formal management credential covering hospitality operations, revenue management, and guest experience at a NIRF #22 university.",
         "You need a management degree to qualify for senior hospitality roles at international hotel chains or large domestic hospitality groups."
       ],
       "consider": [
-        "You want a more portable credential that allows you to switch from hospitality to other sectors — General Management at Amity is more widely recognised outside hospitality.",
-        "You are targeting premium hospitality consulting or brand strategy roles — a NMIMS or Symbiosis MBA carries broader recognition in consulting hiring.",
-        "You are early in your hospitality career without operational experience — a hotel management diploma combined with on-the-job experience may be more effective before pursuing an MBA."
+        "You want a more portable credential that allows you to switch from hospitality to other sectors, General Management at Amity is more widely recognised outside hospitality.",
+        "You are targeting premium hospitality consulting or brand strategy roles, a NMIMS or Symbiosis MBA carries broader recognition in consulting hiring.",
+        "You are early in your hospitality career without operational experience, a hotel management diploma combined with on-the-job experience may be more effective before pursuing an MBA."
       ]
     }
   },
@@ -105,6 +73,7 @@
     "generatedAt": "2026-04-21",
     "batchNumber": 9,
     "hasSyllabusData": false,
-    "phase71Updated": "2026-04-21"
+    "phase71Updated": "2026-04-21",
+    "claimSweep": "2026-09-17"
   }
 }

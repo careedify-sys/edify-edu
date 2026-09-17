@@ -73,7 +73,7 @@
       ]
     },
     "whoHires": {
-      "body": "Data Science and AI MBA graduates from Chandigarh University Online are hired across AI-intensive sectors:\n\n**Industries:** Technology product companies, BFSI, e-commerce, consulting, healthcare tech, government AI programmes, media and advertising tech\n\n**Entry-level roles:** AI Product Analyst, Data Science Consultant, Machine Learning Business Analyst, AI Programme Coordinator\n\n**Mid-level roles (3-5 years experience):** AI Product Manager, Data Science Manager, Head of AI Operations, AI Strategy Consultant, ML Platform Manager\n\n**Senior roles (7+ years):** Chief AI Officer, VP of Data and AI, AI Practice Head (consulting), Head of Intelligent Automation\n\n**Where to verify placement claims:** ask Chandigarh University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
+      "body": "This Data Science and AI MBA syllabus maps to the following AI-intensive sectors:\n\n**Industries:** Technology product companies, BFSI, e-commerce, consulting, healthcare tech, government AI programmes, media and advertising tech\n\n**Entry-level roles:** AI Product Analyst, Data Science Consultant, Machine Learning Business Analyst, AI Programme Coordinator\n\n**Mid-level roles (3-5 years experience):** AI Product Manager, Data Science Manager, Head of AI Operations, AI Strategy Consultant, ML Platform Manager\n\n**Senior roles (7+ years):** Chief AI Officer, VP of Data and AI, AI Practice Head (consulting), Head of Intelligent Automation\n\n**Where to verify placement claims:** ask Chandigarh University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "You should finish able to take a business problem to an AI approach, judge whether it is the right tool, and supervise the people building it.\n\nGenAI and Prompt Engineering, plus NLP and LLM Applications, cover what language models do well and badly, and how to structure a task so the output is usable rather than merely plausible.\n\nRAG Systems and AI Knowledge Assistants covers grounding a model in your own documents, which is the pattern behind most useful corporate AI deployments and the one most often attempted badly.\n\nAgentic AI and Business Automation covers chaining actions together and the control questions that come with it: what the system is allowed to do unsupervised, and what happens when it is wrong.\n\nAdvanced Business Analytics Using R and Python gives the quantitative grounding, and Advanced Excel for Data Science covers the tool most of your colleagues will actually open."
@@ -130,6 +130,7 @@
     "hasSyllabusData": true,
     "phase71Updated": "2026-04-22",
     "integrityPass": "2026-09-17",
-    "humanisedAt": "2026-09-17"
+    "humanisedAt": "2026-09-17",
+    "claimSweep": "2026-09-17"
   }
 }

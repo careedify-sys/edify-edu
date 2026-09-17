@@ -49,7 +49,7 @@
       "note": "Domain Elective pool for Hospital and Health Systems Management: AI in Healthcare, Clinical Trials Management, Digital Transformation in Healthcare, Environmental Health, Global Health Systems, Health Insurance and Managed Care, Healthcare Analytics, Healthcare Disaster Management, Medical Laws and Ethics. General Management Elective pool (all specs): Advanced Marketing Management, AI for Competitive Advantage, Business Environment Laws Ethics, Business Research Methods, Data Visualization, Decision Analysis, Entrepreneurship, Entrepreneurial Finance, Enterprise Risk Management, Indian Ethos in Management, International Business and Trade, Leadership and Managing Change, Management Control Systems, Project Management, Strategic HRM, Technology Management. Semesters 1 and 2 cover the shared management core. See the main BITS Pilani WILP MBA page for programme-level details."
     },
     "whoHires": {
-      "body": "Hospital and Health Systems Management MBA graduates from BITS Pilani WILP target career growth within their current healthcare organisations. WILP does not offer campus placement drives. The programme builds skills for these roles:\n\n**Industries:** Hospitals and health systems, Pharmaceuticals, Medical devices, Health insurance, Public health, Health-tech startups\n\n**Target roles:** Hospital Administrator, Healthcare Operations Manager, Quality Manager (NABH), Health Insurance Manager, Clinical Research Manager, Public Health Programme Manager\n\n**Senior roles (7+ years):** Chief Operating Officer (Hospital), VP Operations (Health System), Director of Clinical Operations, Head of Quality and Accreditation\n\n**Typical employers of BITS Pilani WILP alumni in healthcare:** Apollo Hospitals, Fortis Healthcare, Max Healthcare, Narayana Health, Cipla, Dr. Reddy's, Star Health Insurance, ICICI Lombard Health. These are based on the broader BITS Pilani alumni network. Individual outcomes depend on existing experience and domain."
+      "body": "Hospital and Health Systems Management MBA graduates from BITS Pilani WILP target career growth within their current healthcare organisations. WILP does not offer campus placement drives. The programme builds skills for these roles:\n\n**Industries:** Hospitals and health systems, Pharmaceuticals, Medical devices, Health insurance, Public health, Health-tech startups\n\n**Target roles:** Hospital Administrator, Healthcare Operations Manager, Quality Manager (NABH), Health Insurance Manager, Clinical Research Manager, Public Health Programme Manager\n\n**Senior roles (7+ years):** Chief Operating Officer (Hospital), VP Operations (Health System), Director of Clinical Operations, Head of Quality and Accreditation\n\n**Typical employers of BITS Pilani WILP alumni in healthcare:** Apollo Hospitals, Fortis Healthcare, Max Healthcare, Narayana Health, Cipla, Dr. Reddy's, Star Health Insurance, ICICI Lombard Health. These are based on the broader BITS Pilani alumni network. Individual outcomes depend on existing experience and domain.\n\n**Where to verify placement claims:** ask BITS Pilani Work Integrated Learning Programmes (WILP) Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Hospital and Health Systems Management specialisation builds skills for healthcare leadership roles:\n\n**Domain skills:**\n- Healthcare Economics: demand-supply dynamics in healthcare markets, insurance models, and government policy analysis\n- Hospital Strategy: competitive positioning, capacity planning, and growth strategies for health systems\n- Public Health and Epidemiology: population health assessment, disease burden analysis, and health programme evaluation\n- Clinical Trials Management: regulatory frameworks, trial design, GCP compliance, and site management (via elective)\n\n**Technology skills:**\n- AI in Healthcare: machine learning for diagnostics, predictive analytics for patient outcomes, and AI governance in clinical settings (via elective)\n- Healthcare Analytics: data-driven decision-making for hospital operations, patient flow, and resource allocation (via elective)\n- Digital Transformation: EHR implementation, telemedicine strategy, and health-tech integration (via elective)\n\n**Regulatory skills:** Medical Laws and Ethics, NABH accreditation frameworks, and healthcare compliance. Experiential learning through simulations, virtual labs, and cloud-based labs bridges theory and practice."
@@ -62,38 +62,6 @@
     },
     "certificate": {
       "body": "Graduates receive a degree certificate issued by BITS Pilani. The certificate reads Master of Business Administration with the Hospital and Health Systems Management specialisation noted on the marksheet and transcript. BITS Pilani's Institution of Eminence status and NIRF #7 University 2025 ranking make this one of the most recognised MBA credentials in Indian healthcare management education. WES recognition enables international degree verification. DigiLocker integration allows digital employer background checks."
-    },
-    "reviews": {
-      "intro": "Three reviews from BITS Pilani WILP MBA in Hospital and Health Systems Management students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Dr. Ananya Sharma",
-          "city": "Delhi",
-          "year": 2025,
-          "rating": 4.5,
-          "liked": "Healthcare Economics and Strategic Management of Healthcare Organizations gave me frameworks I used to restructure my hospital's outpatient department",
-          "disliked": "In-person exams required me to take leave from hospital shifts, which is harder to manage in healthcare than in IT",
-          "body": "I am a physician who moved into hospital administration. This MBA gave me the business vocabulary and strategic frameworks that clinical training does not cover. Healthcare Economics helped me understand the insurance reimbursement models my hospital depends on. The BITS Pilani name on my degree has been valuable in discussions with hospital board members and investor groups. Be prepared for in-person exams at designated centres. They are serious and require physical attendance."
-        },
-        {
-          "name": "Karthik Narayanan",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "AI in Healthcare elective covered diagnostic AI, predictive analytics for patient outcomes, and governance. Genuinely cutting-edge content",
-          "disliked": "No placements. I was hoping the BITS network would help with job transitions, but WILP explicitly does not offer placement support",
-          "body": "I work in a health-tech startup and enrolled to build hospital-side management skills. The AI in Healthcare elective was excellent and directly relevant to my product roadmap discussions with hospital CIOs. Public Health and Epidemiology was less relevant to my role but important for understanding the broader health system. BITS Pilani's brand helped me gain credibility with hospital clients who associate the name with technical excellence."
-        },
-        {
-          "name": "Meera Patel",
-          "city": "Ahmedabad",
-          "year": 2025,
-          "rating": 3.5,
-          "liked": "Clinical Trials Management elective was practical and covered GCP, regulatory frameworks, and site management",
-          "disliked": "At Rs 2,98,400, the fee is high for healthcare professionals whose salaries are often lower than IT sector peers. The ROI takes longer to realise",
-          "body": "I am a clinical research coordinator at a pharma company. The programme helped me understand the business side of clinical trials and healthcare operations. The Clinical Trials Management and Medical Laws and Ethics electives were directly applicable. The fee is steep for someone in clinical research. DPU would have been more affordable, but I chose BITS Pilani for the brand recognition outside healthcare circles. The in-person exam requirement is a positive for credibility."
-        }
-      ]
     },
     "faqs": [
       {
@@ -135,6 +103,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 42,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

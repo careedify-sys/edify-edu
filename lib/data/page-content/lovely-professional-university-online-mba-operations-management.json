@@ -65,7 +65,7 @@
       "note": "Sem 1-2 shared core subjects across all LPU Online MBA specialisations. See the main LPU Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Operations Management MBA graduates from LPU Online are hired across these industries and roles:\n\n**Industries:** Manufacturing, Pharmaceuticals, Automotive, E-commerce logistics, IT services (delivery operations), Consulting\n\n**Entry-level roles:** Operations Executive, Production Supervisor, Quality Analyst, Supply Chain Analyst, Project Coordinator\n\n**Mid-level roles (3-5 years experience):** Operations Manager, Plant Manager, Supply Chain Manager, Quality Manager, Project Manager\n\n**Senior roles (7+ years):** VP Operations, COO, Head of Supply Chain, Head of Manufacturing, Operations Director\n\n**Top hiring organisations:** Maruti Suzuki, Hero MotoCorp, Lupin Pharmaceuticals, Sun Pharma, Tata Motors, HUL, Nestle India, Amazon India Operations, Mahindra Logistics, DHL India, Infosys BPO, TCS Operations"
+      "body": "This Operations Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** Manufacturing, Pharmaceuticals, Automotive, E-commerce logistics, IT services (delivery operations), Consulting\n\n**Entry-level roles:** Operations Executive, Production Supervisor, Quality Analyst, Supply Chain Analyst, Project Coordinator\n\n**Mid-level roles (3-5 years experience):** Operations Manager, Plant Manager, Supply Chain Manager, Quality Manager, Project Manager\n\n**Senior roles (7+ years):** VP Operations, COO, Head of Supply Chain, Head of Manufacturing, Operations Director\n\n**Where to verify placement claims:** ask Lovely Professional University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The LPU Operations Management specialisation builds skills that manufacturing and logistics employers test at operations manager and plant manager levels:\n\n**Technical skills:**\n- Total Quality Management: ISO 9001 implementation, statistical process control, quality audit design, and TQM framework deployment for quality management roles\n- Lean and Six Sigma: Green Belt DMAIC tools, value stream mapping, 5S implementation, and lean waste elimination for process improvement roles\n- Supply Chain Management: SCOR model application, demand-supply synchronisation, supplier evaluation, and supply chain risk management for operations and procurement roles\n- Project Management: PMBOK methodology, WBS design, critical path method, and project risk management for project manager and PMO roles\n\n**Applied skills:**\n- Manufacturing Strategy: capacity planning, make-vs-buy analysis, plant layout design, and manufacturing network optimisation for plant and factory management\n- Service Operations Management: service capacity management, waiting line optimisation, and service quality measurement for service sector operations\n\n**Soft skills:** Building business cases for process improvement investments, presenting operational KPIs to the COO, leading cross-functional quality improvement teams, and negotiating capacity plans with manufacturing partners."
@@ -78,38 +78,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Lovely Professional University (LPU) and carries the LPU name with the MBA designation. The Operations Management specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from LPU Online MBA Operations Management alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Harjot Singh",
-          "city": "Ludhiana",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Lean and Six Sigma and TQM subjects were directly applicable to my manufacturing plant role. Zero-cost EMI made the programme very accessible.",
-          "disliked": "Manufacturing Strategy subject could include more EV and tech manufacturing case studies.",
-          "body": "I had 5 years in pharma manufacturing operations and the LPU Operations MBA helped me move into a plant manager role. The Rs 1.61L fee with zero-cost EMI was the key factor. LPU brand is recognised at North India manufacturing companies."
-        },
-        {
-          "name": "Sumit Bansal",
-          "city": "Chandigarh",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Project Management and Supply Chain Management were well-structured. Strong practical orientation for manufacturing roles.",
-          "disliked": "Service Operations Management was less relevant for pure manufacturing careers.",
-          "body": "Good programme for operations career advancement in North India. Chandigarh manufacturing companies recognised the LPU credential. For FMCG or automotive operations, this is a strong choice at an affordable price."
-        },
-        {
-          "name": "Deepak Malhotra",
-          "city": "Jalandhar",
-          "year": 2024,
-          "rating": 4,
-          "liked": "TQM and Lean Six Sigma gave me tools directly applicable to our ISO certification process.",
-          "disliked": "Placement support for senior operations roles was passive.",
-          "body": "Solid credential for North India manufacturing professionals. The zero-cost EMI made it a clear choice. For pan-India operations brand recognition, NMIMS or Amity would carry more weight. For Punjabi manufacturing sector roles, LPU is well-positioned."
-        }
-      ]
     },
     "faqs": [
       {
@@ -150,6 +118,7 @@
     "wordCount": 2050,
     "generatedAt": "2026-04-21",
     "batchNumber": "Phase7-Batch13",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

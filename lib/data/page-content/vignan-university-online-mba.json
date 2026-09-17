@@ -60,56 +60,6 @@
     "honestVerdict": {
       "body": "This verdict is based on publicly available data from UGC-DEB, NAAC, and NIRF portals, cross-referenced with student feedback from verified sources.\n\nChoose this if:\n- You want a NIRF-ranked NAAC A+ online MBA at Rs 90,000 in South India\n- Finance depth with Fintech, Fixed Income, or Corporate Valuation matches your BFSI career target\n- WES recognition matters for Canadian immigration or credential evaluation\n- Business Analytics with Data Mining and BI Reporting is your target specialisation\n\nLook elsewhere if:\n- NIRF Management category ranking is a specific requirement for your employer\n- You need structured collaborative peer learning with group project requirements\n- Consistent faculty quality across specialisation electives is a hard requirement\n- You need more than 7 specialisation choices and Uttaranchal at Rs 94,000 provides better track fit\n\nThe decision between two similarly accredited programmes usually comes down to the specialisation you need, the placement network relevant to your industry, and the fee your budget supports. Use the /compare tool to map your shortlist. If you are still undecided, our counsellor call is free at /contact."
     },
-    "reviews": {
-      "items": [
-        {
-          "name": "Srikanth M.",
-          "city": "Guntur",
-          "year": 2024,
-          "rating": 5,
-          "liked": "NIRF #75 and NAAC A+ at Rs 90,000 is the best value I found in this segment. The Finance specialisation with Fintech Foundation and Applications and Corporate Valuation in Semester 4 is genuinely advanced for this price point. WES recognition was a deciding factor for my Canada plans. Strongly recommended for South India professionals in BFSI.",
-          "disliked": "",
-          "body": "NIRF #75 and NAAC A+ at Rs 90,000 is the best value I found in this segment. The Finance specialisation with Fintech Foundation and Applications and Corporate Valuation in Semester 4 is genuinely advanced for this price point. WES recognition was a deciding factor for my Canada plans. Strongly recommended for South India professionals in BFSI."
-        },
-        {
-          "name": "Lakshmi P.",
-          "city": "Hyderabad",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Business Analytics track had strong applied content. Data Mining for Intelligence and BI Reporting for Managers in Semester 4 were immediately applicable at work. Faculty quality was good for core subjects in Semesters 1 and 2 but became uneven in Semester 3 specialisation subjects. Overall a solid programme at this fee.",
-          "disliked": "",
-          "body": "Business Analytics track had strong applied content. Data Mining for Intelligence and BI Reporting for Managers in Semester 4 were immediately applicable at work. Faculty quality was good for core subjects in Semesters 1 and 2 but became uneven in Semester 3 specialisation subjects. Overall a solid programme at this fee."
-        },
-        {
-          "name": "Ravi K.",
-          "city": "Vijayawada",
-          "year": 2024,
-          "rating": 4,
-          "liked": "The HR track had relevant content in Industrial Relations and Labour Laws and HR Metrics and Analytics. The Research-Based Learning format in Semesters 3 and 4 requires real effort; it is not a standard assignment. Peer interaction was weaker than expected; most students do not engage outside graded activities.",
-          "disliked": "",
-          "body": "The HR track had relevant content in Industrial Relations and Labour Laws and HR Metrics and Analytics. The Research-Based Learning format in Semesters 3 and 4 requires real effort; it is not a standard assignment. Peer interaction was weaker than expected; most students do not engage outside graded activities."
-        },
-        {
-          "name": "Priya T.",
-          "city": "Chennai",
-          "year": 2023,
-          "rating": 3,
-          "liked": "The mobile app was glitchy during two assignment submission windows in Semester 2. Desktop submission worked correctly both times. Faculty quality in the Marketing specialisation Semester 3 was uneven compared to the strong Semester 1 and 2 content. Programme is valid and the degree is sound.",
-          "disliked": "",
-          "body": "The mobile app was glitchy during two assignment submission windows in Semester 2. Desktop submission worked correctly both times. Faculty quality in the Marketing specialisation Semester 3 was uneven compared to the strong Semester 1 and 2 content. Programme is valid and the degree is sound."
-        },
-        {
-          "name": "Deepa S.",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Peer interaction in discussion forums is minimal. Most students only appear during assessed activities. The LMS is functional but not modern. Career support after completion was limited to alumni job board access. Set honest expectations on post-programme placement infrastructure. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation.",
-          "disliked": "",
-          "body": "Peer interaction in discussion forums is minimal. Most students only appear during assessed activities. The LMS is functional but not modern. Career support after completion was limited to alumni job board access. Set honest expectations on post-programme placement infrastructure. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "intro": "",
       "flags": [
@@ -135,6 +85,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:49.017Z",
     "sheetName": "vignan-university-online_MBA",
-    "format": "named"
+    "format": "named",
+    "claimSweep": "2026-09-17"
   }
 }

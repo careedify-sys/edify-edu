@@ -60,56 +60,6 @@
     "honestVerdict": {
       "body": "This verdict is based on publicly available data from UGC-DEB, NAAC, and NIRF portals, cross-referenced with student feedback from verified sources.\n\nChoose this if:\n- You need a healthcare or hospital administration MBA track with applied 8-week field work\n- You work in Tamil Nadu or South India and value a Chennai-based NAAC A+ institutional brand\n- Laboratory subjects in Semesters 1 and 2 add practical value to your chosen track\n- Rs 1.41 lakh total fee fits your education budget\n\nLook elsewhere if:\n- NIRF ranking is a hard requirement for your employer or target higher education institution\n- You need a placement network outside South India\n- You want more than 6 specialisation choices\n- Your career sits outside healthcare, HR, finance, marketing, IT, or operations\n\nThe decision between two similarly accredited programmes usually comes down to three factors: the specialisation you need, the placement network relevant to your industry, and the fee your budget can absorb. Use the /compare tool to map your shortlist. If you are still undecided, our counsellor call is free at /contact."
     },
-    "reviews": {
-      "items": [
-        {
-          "name": "Priya N.",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 5,
-          "liked": "The Hospital and Healthcare Management specialisation is exactly what I needed. I work in a corporate hospital group and every Semester 3 subject was directly applicable. The 8-week field project in Semester 4 let me complete a real process improvement assignment within my own organisation. Outstanding value for Rs 1.41 lakh.",
-          "disliked": "",
-          "body": "The Hospital and Healthcare Management specialisation is exactly what I needed. I work in a corporate hospital group and every Semester 3 subject was directly applicable. The 8-week field project in Semester 4 let me complete a real process improvement assignment within my own organisation. Outstanding value for Rs 1.41 lakh."
-        },
-        {
-          "name": "Karthik S.",
-          "city": "Coimbatore",
-          "year": 2023,
-          "rating": 4,
-          "liked": "NAAC A+ at this fee point is the standout feature. The Tally lab in Semester 2 was more useful than expected for a Finance specialisation. Core subjects in Semesters 1 and 2 are well-structured. Faculty quality was strong for core subjects but became uneven in Semester 3 electives.",
-          "disliked": "",
-          "body": "NAAC A+ at this fee point is the standout feature. The Tally lab in Semester 2 was more useful than expected for a Finance specialisation. Core subjects in Semesters 1 and 2 are well-structured. Faculty quality was strong for core subjects but became uneven in Semester 3 electives."
-        },
-        {
-          "name": "Lakshmi R.",
-          "city": "Madurai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Human Resource Management track had strong content in Strategic HRM and Industrial Relations. The Research Methodology module was practical and well-paced. Assignment deadlines in Semester 3 were clustered together within two weeks, which was stressful alongside a full-time HR job.",
-          "disliked": "",
-          "body": "Human Resource Management track had strong content in Strategic HRM and Industrial Relations. The Research Methodology module was practical and well-paced. Assignment deadlines in Semester 3 were clustered together within two weeks, which was stressful alongside a full-time HR job."
-        },
-        {
-          "name": "Venkat M.",
-          "city": "Hyderabad",
-          "year": 2023,
-          "rating": 3,
-          "liked": "The programme is solid and the degree is valid. The LMS was slow during assignment submission windows near semester-end. Faculty interaction outside scheduled sessions is limited. If you need strong peer learning or group project interaction, this programme may feel isolated.",
-          "disliked": "",
-          "body": "The programme is solid and the degree is valid. The LMS was slow during assignment submission windows near semester-end. Faculty interaction outside scheduled sessions is limited. If you need strong peer learning or group project interaction, this programme may feel isolated."
-        },
-        {
-          "name": "Deepa T.",
-          "city": "Bengaluru",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Career services provided a resume workshop but structured placement support for online students is minimal. The physical certificate arrived six weeks after convocation, delaying a background verification at my new employer. Programme content is solid but manage expectations on placement and certificate timelines. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation.",
-          "disliked": "",
-          "body": "Career services provided a resume workshop but structured placement support for online students is minimal. The physical certificate arrived six weeks after convocation, delaying a background verification at my new employer. Programme content is solid but manage expectations on placement and certificate timelines. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "intro": "",
       "flags": [
@@ -135,6 +85,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:49.011Z",
     "sheetName": "dmeri-online_MBA",
-    "format": "named"
+    "format": "named",
+    "claimSweep": "2026-09-17"
   }
 }

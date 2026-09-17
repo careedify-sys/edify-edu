@@ -18,7 +18,7 @@
       "emptyFallback": "Semesters 1 and 2 of the Amity Online MBA cover the management core: Accounting for Managers, Managerial Economics, Marketing Management, Statistics for Management, Professional Communication, Business Research Methods, Financial Management, Human Resource Management, Legal Aspects of Business, and Conflict Resolution and Management.\n\nSemesters 3 and 4 cover the Information Technology Management specialisation subjects. These typically include areas such as IT strategy and governance, project management and agile methodologies, enterprise resource planning (ERP) systems, cybersecurity management and IT risk, cloud computing management, IT procurement and vendor management, digital transformation strategy, and data management. The specific Sem 3 and Sem 4 subjects for Information Technology Management are confirmed by Amity each admission cycle. Our counsellor can share the current spec-level syllabus within 24 hours."
     },
     "whoHires": {
-      "body": "Information Technology Management MBA graduates from Amity University Online are hired across these industries and roles:\n\n**Industries:** IT services, Product technology, BFSI technology, E-commerce, Management consulting\n\n**Entry-level roles:** IT Project Manager (junior), Business Analyst (IT), IT Operations Analyst, Systems Administrator (management track)\n\n**Mid-level roles (3-5 years experience):** IT Manager, Project Manager, Head of IT Operations, IT Business Partner, Technology Product Manager\n\n**Senior roles (7+ years):** CTO, CIO, VP Technology, Head of Digital, IT Director\n\n**Top hiring organisations:** TCS, Infosys, Wipro, Accenture, IBM India, Deloitte Technology, HDFC Bank IT Division, Amazon Tech India"
+      "body": "This Information Technology Management MBA syllabus maps to the following industries and roles:\n\n**Industries:** IT services, Product technology, BFSI technology, E-commerce, Management consulting\n\n**Entry-level roles:** IT Project Manager (junior), Business Analyst (IT), IT Operations Analyst, Systems Administrator (management track)\n\n**Mid-level roles (3-5 years experience):** IT Manager, Project Manager, Head of IT Operations, IT Business Partner, Technology Product Manager\n\n**Senior roles (7+ years):** CTO, CIO, VP Technology, Head of Digital, IT Director\n\n**Where to verify placement claims:** ask Amity University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Information Technology Management specialisation builds skills that IT services and product technology employers test in management and leadership roles:\n\n**Technical skills:**\n- IT Project Management: scope definition, WBS, critical path, resource levelling, and risk management for IT projects\n- Cloud and Infrastructure Management: cloud architecture evaluation, vendor selection, and cloud cost optimisation\n- Enterprise Systems Management: ERP, CRM, HRMS selection, implementation oversight, and vendor SLA governance\n\n**Applied skills:**\n- IT Governance and Security: IT policy design, access control, and cybersecurity risk management for IT managers\n- Agile Delivery Management: Scrum and Kanban frameworks for IT development and operations delivery teams\n\n**Soft skills:** Building business cases for technology investment, presenting IT risk to the board, managing vendor relationships and service escalations."
@@ -31,38 +31,6 @@
     },
     "certificate": {
       "body": "The Amity University degree certificate carries the Amity University name, the MBA designation, and identifies the online learning mode per UGC-DEB 2020 regulations. The Information Technology Management specialisation is noted on the marksheet and transcript. Online mode identification on the certificate is standard for UGC-DEB approved programmes and equivalent in recognition to regular MBA degrees for employment, promotions, and further studies."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Amity Online MBA IT Management alumni. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Deepak Sharma",
-          "city": "Bangalore",
-          "year": 2024,
-          "rating": 5,
-          "liked": "IT strategy and digital transformation content was directly applicable to my consulting work",
-          "disliked": "Agile content was basic for someone already Scrum certified — could have been more advanced",
-          "body": "I was a software developer looking to move into IT consulting. This MBA gave me the management framing I was missing. The digital transformation strategy module was taught by a practitioner and was genuinely current. Got a Business Analyst role at a Big Four consulting firm within 6 months. Amity brand was specifically mentioned positively in the interview."
-        },
-        {
-          "name": "Meera Pillai",
-          "city": "Hyderabad",
-          "year": 2023,
-          "rating": 4,
-          "liked": "ERP implementation module covered SAP architecture in enough depth for my work context",
-          "disliked": "Cybersecurity content needed more depth — covered only frameworks, not practical tooling",
-          "body": "I was an SAP functional consultant wanting a management degree. The ERP module was actually useful — not generic. Got a Technology Manager role managing an SAP implementation at a manufacturing company. The MBA gave me the credibility to be taken seriously in management meetings that were previously dominated by MBAs from campus programmes."
-        },
-        {
-          "name": "Rajesh Kumar",
-          "city": "Noida",
-          "year": 2024,
-          "rating": 4,
-          "liked": "IT governance and vendor management content was practical for my IT Manager responsibilities",
-          "disliked": "Cloud computing management section needed AWS and Azure specific content rather than generic theory",
-          "body": "I manage a team of 12 in IT infrastructure at a mid-size company. This MBA helped me understand IT governance frameworks I had been applying intuitively. Got promoted to IT Head after completing Year 2. The Amity NIRF #22 University 2025 ranking made the degree credible when HR reviewed my file for the promotion."
-        }
-      ]
     },
     "faqs": [
       {
@@ -93,9 +61,9 @@
         "You are targeting IT Manager, Product Analyst, or Digital Transformation roles at large IT companies or MNC clients."
       ],
       "consider": [
-        "You are targeting senior technology leadership at premium companies — MAHE Online or Jain University Online with Coursera dual certifications offer stronger brand for those roles.",
-        "You want data science or AI content alongside management — the Amity Business Analytics or Data Science spec is more appropriate.",
-        "You are a non-IT professional wanting to understand technology — General Management with elective technology modules may be a better fit than a dedicated IT Management spec."
+        "You are targeting senior technology leadership at premium companies, MAHE Online or Jain University Online with Coursera dual certifications offer stronger brand for those roles.",
+        "You want data science or AI content alongside management. The Amity Business Analytics or Data Science spec is more appropriate.",
+        "You are a non-IT professional wanting to understand technology, General Management with elective technology modules may be a better fit than a dedicated IT Management spec."
       ]
     }
   },
@@ -104,6 +72,7 @@
     "generatedAt": "2026-04-21",
     "batchNumber": 9,
     "hasSyllabusData": false,
-    "phase71Updated": "2026-04-21"
+    "phase71Updated": "2026-04-21",
+    "claimSweep": "2026-09-17"
   }
 }

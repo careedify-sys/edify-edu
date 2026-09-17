@@ -60,56 +60,6 @@
     "honestVerdict": {
       "body": "This verdict is based on publicly available data from UGC-DEB, NAAC, and NIRF portals, cross-referenced with student feedback from verified sources.\n\nChoose this if:\n- Budget is the primary filter and Rs 94,000 is significantly better than alternatives at the same NAAC grade\n- You need 8 specialisation choices, including Logistics, International Business, or Digital Marketing\n- NAAC A+ is the credential floor and NIRF ranking is not a hard requirement\n- North India employer network aligns with your target roles\n\nLook elsewhere if:\n- NIRF ranking is a hard requirement for your employer or higher education institution\n- You need structured corporate placement support beyond career workshops\n- The Finance depth at Vignan (FinTech, Private Equity analogues) better fits your career goals\n- You need a brand with strong recognition outside North India\n\nThe decision between similarly accredited programmes usually comes down to the specialisation you need, the placement network for your target industry, and the fee your budget supports. Use the /compare tool to map your shortlist. If you are still undecided, our counsellor call is free at /contact."
     },
-    "reviews": {
-      "items": [
-        {
-          "name": "Shivam K.",
-          "city": "Dehradun",
-          "year": 2024,
-          "rating": 5,
-          "liked": "Rs 94,000 for 8 specialisations and NAAC A+ is genuinely unbeatable value. I chose the Logistics and Supply Chain track and the Semester 3 content on International Logistics and Supply Chain Modelling was immediately applicable at my current job. The Sustainability in Logistics subject in Semester 4 is ahead of what I expected at this price point. Excellent programme.",
-          "disliked": "",
-          "body": "Rs 94,000 for 8 specialisations and NAAC A+ is genuinely unbeatable value. I chose the Logistics and Supply Chain track and the Semester 3 content on International Logistics and Supply Chain Modelling was immediately applicable at my current job. The Sustainability in Logistics subject in Semester 4 is ahead of what I expected at this price point. Excellent programme."
-        },
-        {
-          "name": "Pooja S.",
-          "city": "Delhi NCR",
-          "year": 2023,
-          "rating": 4,
-          "liked": "Digital Marketing specialisation had strong applied content in Semesters 3 and 4. The core Business Analytics in Semester 2 is useful across any track. Career services over-promised on placements during the pre-admission call; actual support was resume workshops and a job board. The programme itself is good but manage placement expectations.",
-          "disliked": "",
-          "body": "Digital Marketing specialisation had strong applied content in Semesters 3 and 4. The core Business Analytics in Semester 2 is useful across any track. Career services over-promised on placements during the pre-admission call; actual support was resume workshops and a job board. The programme itself is good but manage placement expectations."
-        },
-        {
-          "name": "Amit R.",
-          "city": "Noida",
-          "year": 2024,
-          "rating": 4,
-          "liked": "International Business track had relevant content in Global Business Environment and Import Export Procedures in Semester 3. The LMS was occasionally slow during assignment submission windows near semester-end, which caused last-minute stress. Plan submissions ahead of deadlines.",
-          "disliked": "",
-          "body": "International Business track had relevant content in Global Business Environment and Import Export Procedures in Semester 3. The LMS was occasionally slow during assignment submission windows near semester-end, which caused last-minute stress. Plan submissions ahead of deadlines."
-        },
-        {
-          "name": "Kavita M.",
-          "city": "Lucknow",
-          "year": 2023,
-          "rating": 3,
-          "liked": "The LMS is functional but not polished. Live class timings were awkward for my shift pattern; recordings were available but watching back 2-3 days later made it harder to ask questions. Career support after completion was minimal. The degree is valid but job searching is fully your own responsibility.",
-          "disliked": "",
-          "body": "The LMS is functional but not polished. Live class timings were awkward for my shift pattern; recordings were available but watching back 2-3 days later made it harder to ask questions. Career support after completion was minimal. The degree is valid but job searching is fully your own responsibility."
-        },
-        {
-          "name": "Deepak T.",
-          "city": "Meerut",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Career services over-promised placements during the counselling session. The actual placement support was a resume workshop and job listings access. No structured corporate placement for online students. Content is solid for the fee but set honest expectations on post-programme career support. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation.",
-          "disliked": "",
-          "body": "Career services over-promised placements during the counselling session. The actual placement support was a resume workshop and job listings access. No structured corporate placement for online students. Content is solid for the fee but set honest expectations on post-programme career support. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "intro": "",
       "flags": [
@@ -135,6 +85,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:49.016Z",
     "sheetName": "uttaranchal-online_MBA",
-    "format": "named"
+    "format": "named",
+    "claimSweep": "2026-09-17"
   }
 }

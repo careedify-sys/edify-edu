@@ -74,58 +74,6 @@
       "body": "EdifyEdu connects enrolled IGNOU MBA students with 2-3 alumni from government, PSU, and corporate backgrounds in the students target domain. We run a free 30-minute career transition call and share monthly curated PSU and banking recruitment notifications relevant to IGNOU MBA holders. We also provide a document checklist and OPENMAT prep guide that saves applicants the confusion of reading through the full IGNOU prospectus. No commission taken from IGNOU.",
       "heading": "Beyond Admission: EdifyEdu Network"
     },
-    "reviews": {
-      "heading": "What Students Are Saying",
-      "intro": "IGNOU MBA students tend to split sharply on satisfaction. Those who expected an IIM-equivalent corporate MBA are disappointed. Those who came in knowing it is a self-paced, affordable, government-recognised degree are satisfied. Here are reviews from enrolled and graduated students.",
-      "items": [
-        {
-          "name": "Priya M.",
-          "city": "Hyderabad",
-          "year": 2024,
-          "rating": 5,
-          "liked": "",
-          "disliked": "",
-          "body": "Completed the IGNOU MBA while working at a state government department. The degree met the promotion requirement exactly. What I liked: semester-wise fee payment meant I was never financially stretched. What I disliked: PCP sessions at my regional centre were poorly attended and faculty contact was minimal."
-        },
-        {
-          "name": "Rohit S.",
-          "city": "Bengaluru",
-          "year": 2025,
-          "rating": 4,
-          "liked": "",
-          "disliked": "",
-          "body": "Finished in 2.5 years while working at a PSU. OPENMAT was manageable after 5 weeks of prep. What I liked: the degree is recognised across all government departments without question. What I disliked: the eGyanKosh portal is slow with dated UI and downloading study material sometimes needs multiple retries."
-        },
-        {
-          "name": "Ananya K.",
-          "city": "Lucknow",
-          "year": 2024,
-          "rating": 4,
-          "liked": "",
-          "disliked": "",
-          "body": "Chose IGNOU because I was preparing for UPSC simultaneously. The flexible TEE schedule worked around my exam calendar. What I liked: no fixed live class requirement suited my study plan completely. What I disliked: assignment submission process confused me for the first semester, especially navigating the regional centre requirements."
-        },
-        {
-          "name": "Saurabh T.",
-          "city": "Pune",
-          "year": 2023,
-          "rating": 3,
-          "liked": "",
-          "disliked": "",
-          "body": "Joined expecting structured faculty interaction. Reality is heavily self-study dependent. What I liked: the cost is unbeatable for a NAAC A++ degree and my company accepted it without issue. What I disliked: career support for private sector placement is essentially zero. You plan your own job search entirely."
-        },
-        {
-          "name": "Meera P.",
-          "city": "Chennai",
-          "year": 2025,
-          "rating": 3,
-          "liked": "",
-          "disliked": "",
-          "body": "Completed in 2 years. Certificate delivery took 6 months after my last TEE. What I liked: OPENMAT is manageable with 4-6 weeks of focused prep and the study material is well-written for self-learners. What I disliked: mobile app experience is poor and real-time doubt resolution is nearly impossible without live sessions."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "heading": "Red Flags to Know Before Enrolling",
       "flags": [
@@ -201,6 +149,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:48.982Z",
     "sheetName": "ignou-online_MBA",
-    "format": "numbered"
+    "format": "numbered",
+    "claimSweep": "2026-09-17"
   }
 }

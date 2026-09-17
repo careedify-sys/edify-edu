@@ -18,7 +18,7 @@
       "note": "Detailed Sem 3-4 curriculum for DSU's Business Analytics specialisation is shared at admission. Our counsellor can share the current subject list within 24 hours."
     },
     "whoHires": {
-      "body": "Business Analytics MBA graduates are hired across industries investing in data infrastructure and insights teams:\n\n**Industries:** IT services, e-commerce, BFSI, consulting, pharma, telecom, retail analytics, and SaaS companies\n\n**Entry-level roles:** Business Analyst, Data Analyst, MIS Executive, Reporting Analyst, Junior Consultant (analytics practice)\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, BI Manager, Data Strategy Lead, Product Analyst, Pricing and Revenue Analyst\n\n**Senior roles (7+ years):** Head of Analytics, VP Data Strategy, Chief Data Officer, Director of Business Intelligence, Analytics Practice Head\n\n**Top hiring organisations in Bangalore:** Flipkart, Walmart Labs, Goldman Sachs (Bangalore GCC), Target India, Mu Sigma, Fractal Analytics, Accenture Analytics, Deloitte Analytics, and analytics teams at HDFC Bank, ICICI, and Kotak Mahindra"
+      "body": "Business Analytics MBA graduates are hired across industries investing in data infrastructure and insights teams:\n\n**Industries:** IT services, e-commerce, BFSI, consulting, pharma, telecom, retail analytics, and SaaS companies\n\n**Entry-level roles:** Business Analyst, Data Analyst, MIS Executive, Reporting Analyst, Junior Consultant (analytics practice)\n\n**Mid-level roles (3-5 years experience):** Analytics Manager, BI Manager, Data Strategy Lead, Product Analyst, Pricing and Revenue Analyst\n\n**Senior roles (7+ years):** Head of Analytics, VP Data Strategy, Chief Data Officer, Director of Business Intelligence, Analytics Practice Head\n\n**Where to verify placement claims:** ask Dayananda Sagar University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Business Analytics specialisation builds both technical analytics and management interpretation skills:\n\n**Technical skills:**\n- Data Visualisation: building dashboards and executive reports using BI tools for operational and strategic decisions\n- Statistical Methods: regression analysis, hypothesis testing, time-series forecasting, and probability models for business scenarios\n- Predictive Analytics: building and interpreting predictive models for customer churn, demand planning, and risk scoring\n- Database and SQL Fundamentals: querying structured data, understanding data warehousing concepts, and ETL workflows\n\n**Applied skills:**\n- Business Intelligence Strategy: designing BI architecture for organisations, defining KPIs, and creating measurement frameworks\n- Analytics-Driven Decision Making: framing business problems as analytical questions, evaluating model output, and presenting data-backed recommendations\n\n**Soft skills:** Presenting analytical findings to non-technical stakeholders, building business cases for analytics investments, managing analytics vendor relationships, and bridging communication between data science teams and business leadership."
@@ -31,38 +31,6 @@
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Business Analytics noted as the specialisation, issued by Dayananda Sagar University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation, the highest NAAC grade. Valid for government hiring, analytics manager roles, consulting positions, corporate promotions, and higher education. WES recognition supports international credential evaluation for global analytics career pathways."
-    },
-    "reviews": {
-      "intro": "Three reviews from DSU Online MBA Business Analytics students. Ratings reflect individual experience.",
-      "items": [
-        {
-          "name": "Deepak M.",
-          "city": "Bangalore",
-          "year": 2025,
-          "rating": 5,
-          "liked": "NAAC A++ credential at Rs 1.3 lakh is unmatched for analytics MBA",
-          "disliked": "Alumni network for online programmes is still growing",
-          "body": "I work as a data analyst at a mid-size Bangalore firm and wanted an MBA to move into analytics leadership. DSU's NAAC A++ at Rs 1,30,000 was the best value I found. The analytics curriculum covered what I needed for the management side of my role. My company's HR policy requires NAAC A grade minimum for tuition reimbursement, so the A++ grade actually saved me the full tuition amount."
-        },
-        {
-          "name": "Meera S.",
-          "city": "Chennai",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Bangalore analytics ecosystem referenced throughout case studies",
-          "disliked": "Limited live interaction with Bangalore-based analytics practitioners",
-          "body": "The programme ties analytics concepts to real business problems from the Bangalore market. Faculty referenced local companies and actual analytics use cases from e-commerce and fintech. The Rs 32,500 per semester structure made it very manageable financially. I would have liked more live sessions with working analytics professionals, but the recorded content was solid and current."
-        },
-        {
-          "name": "Rajesh T.",
-          "city": "Mumbai",
-          "year": 2025,
-          "rating": 3,
-          "liked": "Strong accreditation and affordable fee structure",
-          "disliked": "DSU online is a newer brand, NIRF unranked for online programmes",
-          "body": "Content and accreditation are strong. My only concern is brand visibility. When I mention DSU to Mumbai-based recruiters, the recognition is lower than JAIN or Manipal. The NAAC A++ helps in formal credential checks, but in informal conversations, the name does not carry the same weight yet. For analytics roles where skills matter more than university brand, this is a non-issue. For management consulting entry, brand might matter more."
-        }
-      ]
     },
     "faqs": [
       {
@@ -105,6 +73,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 36,
     "hasSyllabusData": false,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }

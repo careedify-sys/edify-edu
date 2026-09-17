@@ -97,7 +97,7 @@
       "note": "Sem 1-2 shared core subjects across all SSODL MBA specialisations. See the main SSODL Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Finance MBA graduates from SSODL Online are hired across these industries and roles:\n\n**Industries:** BFSI, Investment banking, Corporate finance, Asset management, Big Four financial advisory\n\n**Entry-level roles:** Corporate Finance Analyst, Treasury Analyst, Investment Banking Analyst, FP&A Analyst, Equity Research Associate\n\n**Mid-level roles (3-5 years experience):** Corporate Finance Manager, VP Treasury, Portfolio Manager, Head of FP&A, M&A Associate\n\n**Senior roles (7+ years):** CFO, MD (Investment Banking), Fund Manager, Head of Corporate Finance\n\n**Where to verify placement claims:** ask Symbiosis International University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
+      "body": "This Finance MBA syllabus maps to the following industries and roles:\n\n**Industries:** BFSI, Investment banking, Corporate finance, Asset management, Big Four financial advisory\n\n**Entry-level roles:** Corporate Finance Analyst, Treasury Analyst, Investment Banking Analyst, FP&A Analyst, Equity Research Associate\n\n**Mid-level roles (3-5 years experience):** Corporate Finance Manager, VP Treasury, Portfolio Manager, Head of FP&A, M&A Associate\n\n**Senior roles (7+ years):** CFO, MD (Investment Banking), Fund Manager, Head of Corporate Finance\n\n**Where to verify placement claims:** ask Symbiosis International University for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The practical outcome is that you can build a valuation and defend it in a room where someone disagrees with you.\n\nCorporate Valuation and Mergers and Acquisitions carry the modelling work: discounted cash flow, comparable company analysis, and the arithmetic behind an acquisition price. Derivative Markets covers how options, futures and swaps are used to hedge rather than to speculate, which is the framing corporate treasury desks actually need.\n\nSecurity Analysis and Portfolio Management gives you equity research structure and risk-adjusted return thinking. Investment Banking covers transaction mechanics, pitch structure and deal process, which is the vocabulary you need before anyone will let you near a live mandate.\n\nBehavioral Finance is the odd one out and the more interesting for it. It covers why investors act against their own models, which is useful in advisory work and rarely taught at this level."
@@ -153,6 +153,7 @@
     "hasSyllabusData": true,
     "batch12v2Fixed": "2026-04-21",
     "integrityPass": "2026-09-17",
-    "humanisedAt": "2026-09-17"
+    "humanisedAt": "2026-09-17",
+    "claimSweep": "2026-09-17"
   }
 }

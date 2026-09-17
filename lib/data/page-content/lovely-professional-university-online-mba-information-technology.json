@@ -61,7 +61,7 @@
       "note": "Sem 1-2 shared core subjects across all LPU Online MBA specialisations. See the main LPU Online MBA page for core subject list."
     },
     "whoHires": {
-      "body": "Information Technology MBA graduates from LPU Online are hired across these industries and roles:\n\n**Industries:** IT services and consulting, Product companies, BFSI technology, Manufacturing IT, Telecom, Government IT\n\n**Entry-level roles:** IT Project Coordinator, Business Analyst (IT), IT Service Desk Manager, Junior IT Manager\n\n**Mid-level roles (3-5 years experience):** IT Project Manager, IT Manager, Delivery Manager, IT Service Manager, Cybersecurity Manager\n\n**Senior roles (7+ years):** IT Director, CTO, VP Technology, Head of IT, Chief Information Officer\n\n**Top hiring organisations:** Infosys, TCS, Wipro, HCL Technologies, Tech Mahindra, Cognizant, Capgemini, IBM India, Accenture, Microsoft India, Deloitte Technology, KPMG Technology Advisory, HDFC Bank Technology, ICICI Bank IT"
+      "body": "This Information Technology MBA syllabus maps to the following industries and roles:\n\n**Industries:** IT services and consulting, Product companies, BFSI technology, Manufacturing IT, Telecom, Government IT\n\n**Entry-level roles:** IT Project Coordinator, Business Analyst (IT), IT Service Desk Manager, Junior IT Manager\n\n**Mid-level roles (3-5 years experience):** IT Project Manager, IT Manager, Delivery Manager, IT Service Manager, Cybersecurity Manager\n\n**Senior roles (7+ years):** IT Director, CTO, VP Technology, Head of IT, Chief Information Officer\n\n**Where to verify placement claims:** ask Lovely Professional University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The LPU Information Technology specialisation builds skills that IT services employers test at IT manager and delivery manager levels:\n\n**Technical skills:**\n- IT Project Management: PMBOK and Agile framework application, sprint planning, IT project risk management, and project delivery governance for IT PM and delivery manager roles\n- Cybersecurity Management: ISO 27001 and NIST framework application, risk assessment, security governance, and incident response management for IT security manager and CISO-track roles\n- Cloud Computing Management: cloud strategy design, AWS/Azure/GCP deployment model evaluation, and cloud cost governance for cloud manager and technology leadership roles\n- IT Strategy and Governance: COBIT application, IT investment management, and IT-business alignment for IT director and CIO-track roles\n\n**Applied skills:**\n- IT Service Management: ITIL lifecycle management, incident and change management, and SLA governance for IT service manager and operations roles\n\n**Soft skills:** Presenting IT project status to non-technical business stakeholders, managing technology vendor relationships, building business cases for IT investments, and leading digital transformation programme governance."
@@ -74,38 +74,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Lovely Professional University (LPU) and carries the LPU name with the MBA designation. The Information Technology specialisation is noted on the marksheet and transcript. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from LPU Online MBA Information Technology alumni. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Harpreet Sidhu",
-          "city": "Chandigarh",
-          "year": 2024,
-          "rating": 5,
-          "liked": "IT Project Management and Cybersecurity Management were directly applicable to my IT delivery and security roles. Zero-cost EMI was the decisive factor.",
-          "disliked": "Cloud Computing Management could include more AWS and Azure hands-on lab exercises.",
-          "body": "I had 5 years in IT project delivery and the LPU IT MBA helped me move to IT manager level. The Rs 1.61L with zero-cost EMI was unbeatable. LPU brand is recognised at Chandigarh IT companies."
-        },
-        {
-          "name": "Vishal Arora",
-          "city": "Delhi",
-          "year": 2023,
-          "rating": 4,
-          "liked": "IT Strategy and Governance subject gave me frameworks for CIO-level thinking. IT Service Management was strong for ITSM roles.",
-          "disliked": "Emerging technologies content could be more current with AI and edge computing topics.",
-          "body": "Good IT management credential at a very competitive price. Delhi-NCR IT companies recognised the LPU credential. The zero-cost EMI was the deciding factor over more expensive alternatives."
-        },
-        {
-          "name": "Neetu Rani",
-          "city": "Ludhiana",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Cybersecurity Management and Cloud Computing Management were excellent for my IT risk and infrastructure roles.",
-          "disliked": "Placement support was generic. Specialised IT management roles required self-sourcing.",
-          "body": "Strong IT management content at an affordable price. For North India IT services careers, LPU is a well-recognised and cost-effective choice. The zero-cost EMI structure is genuinely beneficial."
-        }
-      ]
     },
     "faqs": [
       {
@@ -146,6 +114,7 @@
     "wordCount": 2000,
     "generatedAt": "2026-04-21",
     "batchNumber": "Phase7-Batch13",
-    "hasSyllabusData": true
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17"
   }
 }

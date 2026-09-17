@@ -60,56 +60,6 @@
     "honestVerdict": {
       "body": "This verdict is based on publicly available data from UGC-DEB, NAAC, and NIRF portals, cross-referenced with student feedback from verified sources.\n\nChoose this if:\n- You need a NIRF-ranked online MBA in North India at sub-1.5 lakh\n- Data Science and Analytics or Strategic HRM depth matches your career direction\n- Analytics-integrated curriculum from Semester 2 suits your learning style\n- NCR-region employer network aligns with your placement target\n\nLook elsewhere if:\n- You need NIRF top-50 and your employer enforces this threshold\n- Structured placement support is a non-negotiable requirement\n- You rely heavily on peer collaboration and group project learning\n- Budget is the primary filter and Galgotias at Rs 80,200 meets your eligibility requirements\n\nThe decision between two similarly accredited programmes usually comes down to the specialisation you need, the placement network relevant to your industry, and the fee your budget can absorb. Use the /compare tool to map your shortlist. If you are still undecided, our counsellor call is free at /contact."
     },
-    "reviews": {
-      "items": [
-        {
-          "name": "Anjali M.",
-          "city": "Greater Noida",
-          "year": 2024,
-          "rating": 5,
-          "liked": "The Data Science and Analytics specialisation is well ahead of similar tracks at this fee point. Python for Data Science and SQL for Data Science in Semester 3 gave me skills I applied immediately at work. NIRF ranking made it easy to explain the degree to my employer. Thoroughly recommended for analytics-focused professionals.",
-          "disliked": "",
-          "body": "The Data Science and Analytics specialisation is well ahead of similar tracks at this fee point. Python for Data Science and SQL for Data Science in Semester 3 gave me skills I applied immediately at work. NIRF ranking made it easy to explain the degree to my employer. Thoroughly recommended for analytics-focused professionals."
-        },
-        {
-          "name": "Rahul S.",
-          "city": "Delhi",
-          "year": 2023,
-          "rating": 4,
-          "liked": "NAAC A+ and NIRF #87 at Rs 1.4 lakh is strong value. The Technology and Analytics for Business module in Semester 2 was more useful than I expected. The Research Project in Semester 4 required real effort and genuine research, which I appreciated. Faculty quality was uneven between subjects in Semesters 3 and 4.",
-          "disliked": "",
-          "body": "NAAC A+ and NIRF #87 at Rs 1.4 lakh is strong value. The Technology and Analytics for Business module in Semester 2 was more useful than I expected. The Research Project in Semester 4 required real effort and genuine research, which I appreciated. Faculty quality was uneven between subjects in Semesters 3 and 4."
-        },
-        {
-          "name": "Meera K.",
-          "city": "Noida",
-          "year": 2024,
-          "rating": 4,
-          "liked": "Strategic HRM track is a genuinely different programme from the standard HRM track. The Live Industry Project in Semester 3 was engaging. The mobile app was glitchy during assignment submissions near the Semester 2 deadline window, which caused stress. Desktop submission worked fine.",
-          "disliked": "",
-          "body": "Strategic HRM track is a genuinely different programme from the standard HRM track. The Live Industry Project in Semester 3 was engaging. The mobile app was glitchy during assignment submissions near the Semester 2 deadline window, which caused stress. Desktop submission worked fine."
-        },
-        {
-          "name": "Suresh P.",
-          "city": "Gurgaon",
-          "year": 2023,
-          "rating": 3,
-          "liked": "The Healthcare and Hospital Administration track had reasonable content. Peer interaction in discussion forums was weaker than expected; most students seemed to engage only during graded activities. The programme works well if you are self-directed but felt isolated at times.",
-          "disliked": "",
-          "body": "The Healthcare and Hospital Administration track had reasonable content. Peer interaction in discussion forums was weaker than expected; most students seemed to engage only during graded activities. The programme works well if you are self-directed but felt isolated at times."
-        },
-        {
-          "name": "Pooja V.",
-          "city": "Lucknow",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Career services provided a resume workshop and shared job listings. Structured placement for online students is not available. The certificate arrived five weeks after convocation, which delayed a background check. Content quality is genuinely solid but post-programme support is limited. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation.",
-          "disliked": "",
-          "body": "Career services provided a resume workshop and shared job listings. Structured placement for online students is not available. The certificate arrived five weeks after convocation, which delayed a background check. Content quality is genuinely solid but post-programme support is limited. Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-        }
-      ],
-      "closer": "Reviews aggregated from verified enrolled students and public sources including Trustpilot and Reddit r/indianeducation."
-    },
     "redFlags": {
       "intro": "",
       "flags": [
@@ -135,6 +85,7 @@
   "metadata": {
     "generatedAt": "2026-04-20T18:52:49.013Z",
     "sheetName": "sharda-university-online_MBA",
-    "format": "named"
+    "format": "named",
+    "claimSweep": "2026-09-17"
   }
 }

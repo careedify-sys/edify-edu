@@ -69,7 +69,7 @@
       "note": "Sem 1-2 shared core subjects across all Alliance MBA specialisations. Design Thinking is a mandatory Sem 3 subject for all specs. Strategic Management in Digital Era and Dissertation are common Sem 4 subjects."
     },
     "whoHires": {
-      "body": "Operations MBA graduates from Alliance Online target these industries and roles:\n\n**Industries:** Manufacturing, Automotive, E-commerce and logistics, FMCG supply chain, IT services delivery, Pharmaceutical operations\n\n**Entry-level roles:** Operations Executive, Supply Chain Analyst, Quality Analyst, Production Planning Associate, Logistics Coordinator\n\n**Mid-level roles (3-5 years experience):** Operations Manager, Supply Chain Manager, Quality Manager, Production Manager, Procurement Manager\n\n**Senior roles (7+ years):** COO, VP Operations, Head of Supply Chain, Director of Manufacturing, Chief Procurement Officer\n\n**Top hiring sectors:** Toyota, Bosch, Continental, Amazon, Flipkart, Delhivery, HUL, ITC, Infosys BPM, Wipro Infrastructure, Biocon, Dr. Reddy's, Schneider Electric"
+      "body": "Operations MBA graduates from Alliance Online target these industries and roles:\n\n**Industries:** Manufacturing, Automotive, E-commerce and logistics, FMCG supply chain, IT services delivery, Pharmaceutical operations\n\n**Entry-level roles:** Operations Executive, Supply Chain Analyst, Quality Analyst, Production Planning Associate, Logistics Coordinator\n\n**Mid-level roles (3-5 years experience):** Operations Manager, Supply Chain Manager, Quality Manager, Production Manager, Procurement Manager\n\n**Senior roles (7+ years):** COO, VP Operations, Head of Supply Chain, Director of Manufacturing, Chief Procurement Officer\n\n**Top hiring sectors:** Toyota, Bosch, Continental, Amazon, Flipkart, Delhivery, HUL, ITC, Infosys BPM, Wipro Infrastructure, Biocon, Dr. Reddy's, Schneider Electric\n\n**Where to verify placement claims:** ask Alliance University Online for its most recent placement report, in writing, covering your specific programme and mode. Online cohorts are often reported separately from on-campus ones, or not at all. EdifyEdu does not publish employer lists we cannot source, so treat the roles above as the job families this syllabus maps to, not as a record of who has hired from this cohort."
     },
     "skills": {
       "body": "The Alliance Operations specialisation builds AI-augmented supply chain and manufacturing management skills:\n\n**Technical skills:**\n- AI Powered Lean Six Sigma: DMAIC methodology with AI-driven root cause analysis, predictive quality control, and ML-based process optimisation\n- Agile Supply Chain Management: demand sensing, flexible inventory strategies, and responsive supply chain network design\n- Business Blockchain: supply chain traceability, smart contracts for procurement, and distributed ledger operations\n- Digital Transformation for Operations: IoT, automation, digital twins, and Industry 4.0 technology evaluation\n\n**Applied skills:**\n- Greener Value Chain in Operation Management: sustainable procurement, circular economy models, and carbon footprint reduction\n- Strategic Sustainable Operations: long-term operations strategy balancing profitability with ESG compliance\n- Business Intelligence for Managers: BI dashboards, data visualisation, and operational analytics for decision-making\n\n**Soft skills:** Design Thinking for process improvement ideation, Project Management for transformation initiatives, presenting operational efficiency gains to leadership, and cross-functional stakeholder management."
@@ -82,38 +82,6 @@
     },
     "certificate": {
       "body": "The degree certificate is issued by Alliance University, Bangalore, and carries the Alliance name with the MBA designation. The Operations specialisation is noted on the marksheet and transcript. The degree is WES recognised for international credential evaluation. Online mode is identified per UGC-DEB 2020 regulations. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
-    },
-    "reviews": {
-      "intro": "Three verified reviews from Alliance Online MBA Operations students. Ratings from post-completion surveys.",
-      "items": [
-        {
-          "name": "Vikram",
-          "city": "Bangalore",
-          "year": 2025,
-          "rating": 5,
-          "liked": "AI Powered Lean Six Sigma was the highlight. The AI-driven root cause analysis and predictive quality modules were directly applicable to my manufacturing quality role. This is not standard Six Sigma with an AI label.",
-          "disliked": "Case studies could include more Indian manufacturing examples.",
-          "body": "I work in automotive manufacturing near Bangalore and the Alliance Operations MBA gave me AI-augmented quality and supply chain frameworks. The combination of AI Powered Lean Six Sigma with Agile Supply Chain Management is practical and current. Design Thinking in Sem 3 helped me restructure our shop-floor problem-solving process."
-        },
-        {
-          "name": "Deepika",
-          "city": "Chennai",
-          "year": 2025,
-          "rating": 4,
-          "liked": "Greener Value Chain and Strategic Sustainable Operations gave practical ESG and sustainability frameworks. Business Blockchain was a useful addition for supply chain traceability.",
-          "disliked": "Alliance's online MBA is newer. Chennai manufacturing employers are less familiar with Alliance online compared to Symbiosis or Amity.",
-          "body": "Good operations curriculum with genuine AI and sustainability integration at Rs 1.75L. The sustainability subjects are well-designed for companies now facing ESG reporting requirements. For Chennai manufacturing careers, the Alliance brand needs more time to build recognition. Content quality was strong."
-        },
-        {
-          "name": "Arjun",
-          "city": "Pune",
-          "year": 2024,
-          "rating": 3,
-          "liked": "Digital Transformation for Operations and Project Management were relevant for my IT services delivery role.",
-          "disliked": "NAAC A (not A+) is a gap compared to Symbiosis (A++) or Amity (A+). Smaller specialisation list than competitors. Limited operations-specific placement support.",
-          "body": "Decent programme for the fees. AI Powered Lean Six Sigma is a genuine differentiator that standard operations MBAs do not offer. But for Pune manufacturing and automotive companies, Symbiosis SSODL carries significantly stronger brand weight despite being almost double the cost. Alliance is a value pick if AI skills matter more than brand prestige."
-        }
-      ]
     },
     "faqs": [
       {
@@ -155,6 +123,7 @@
     "generatedAt": "2026-04-23",
     "batchNumber": 29,
     "hasSyllabusData": true,
-    "phase71Updated": "2026-04-23"
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17"
   }
 }
