@@ -6,6 +6,7 @@ import { VerifyHero } from '@/components/verify/VerifyHero';
 import { ProReportCTAPlaceholder } from '@/components/verify/ProReportCTAPlaceholder';
 import { ProgrammeFinder } from '@/components/verify/ProgrammeFinder';
 import { ApprovalsCard } from '@/components/verify/ApprovalsCard';
+import { naacCycle } from '@/lib/verify/naac-validity';
 import { NIRFStrip } from '@/components/verify/NIRFStrip';
 import { DataFreshnessBadge } from '@/components/verify/DataFreshnessBadge';
 import { TrackPageView } from '@/components/verify/TrackPageView';
@@ -508,14 +509,13 @@ function ApprovalsCardInline({ accreditations, ugcStatus }: { accreditations: an
   // Accreditation tier (NAAC, AACSB, NBA)
   const accred: any[] = [];
   if (naac) {
-    const desc = [
-      naac.cycle ? `Cycle ${naac.cycle}` : null,
-      naac.valid_till ? `valid till ${new Date(naac.valid_till).getFullYear()}` : null,
-    ].filter(Boolean).join(' · ');
+    // Same treatment as ApprovalsCard: a lapsed cycle is stated, not buried.
+    const { desc, expired } = naacCycle(naac.valid_till, naac.cycle);
+    const cgpa = naac.score ? `CGPA ${naac.score}` : '';
     accred.push({
       label: 'NAAC', grade: naac.grade,
-      status: naac.score ? `CGPA ${naac.score}` : 'Accredited',
-      desc: desc || 'Accredited by NAAC',
+      status: expired ? (cgpa ? `${cgpa}, lapsed` : 'Cycle lapsed') : (cgpa || 'Accredited'),
+      desc,
     });
   }
   if (aacsb) accred.push({

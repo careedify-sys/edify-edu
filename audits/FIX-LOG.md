@@ -9,6 +9,54 @@ the fix by accident.
 
 ---
 
+## 2026-09-17 · The verify pages were showing "valid till 2026" for cycles that had already ended
+
+**The defect.** Both NAAC renderers on the verify pages built their secondary
+line as `valid till ${new Date(valid_till).getFullYear()}`. For Chandigarh
+University, whose cycle ended **2026-09-09**, that printed "valid till 2026".
+Literally true, and it reads as reassurance. Same for Dayalbagh Educational
+Institute, cycle ended 2026-08-09.
+
+This matters more here than anywhere else on the site. The verify pages exist to
+answer "is this university legitimate", they rank at position 4 to 6, and they
+convert at 1.76%, second only to coupons. Presenting a lapsed accreditation
+cycle as current is the one thing that page must not do.
+
+**The fix.** `lib/verify/naac-validity.ts` exposes `naacCycle(validTill, cycle)`
+returning a description plus `expired` and `expiringSoon` flags. Three states:
+
+| state | secondary line | status |
+|---|---|---|
+| current | `Cycle 3 · valid till 2029` | `CGPA 3.56` |
+| expiring within 6 months | `Cycle 1 · valid till Feb 2027, due for reassessment` | `CGPA 3.28` |
+| lapsed | `Cycle 1 · cycle ended Sep 2026, reassessment due` | `CGPA 3.28, lapsed` |
+
+A lapsed row also drops to the neutral text colour instead of the gold accent,
+so it does not read as an active endorsement. Both call sites use it:
+`components/verify/ApprovalsCard.tsx` and the `ApprovalsCardInline` copy inside
+`app/verify/[slug]/page.tsx`.
+
+**An expired cycle does not mean the grade is gone.** Reassessment is frequently
+pending and institutions usually keep the grade in practice. What we cannot do
+is assert it as current. That is the same treatment IGNOU's A++ already gets in
+the blog copy, and it is the honest position for a page whose entire value is
+that its claims are checkable.
+
+**Verified against all three states on a running server**: Chandigarh renders
+"CGPA 3.28, lapsed" with "cycle ended Sep 2026, reassessment due", Dayalbagh the
+same for Aug 2026, MUJ shows the expiring-soon wording for Feb 2027, and
+Symbiosis is untouched at "Cycle 3 · valid till 2029". `tsc` clean.
+
+**Still open.** The grade also renders on university hubs, programme hubs, the
+compare tool and the fees table, roughly 25 files, none of which know about
+`valid_till` because `lib/data.ts` does not carry it. Only the verify pages read
+the Supabase row directly, which is why they could be fixed first and alone.
+Extending this needs a `naacValidTill` field on the lib/data.ts records, which is
+a data migration and a separate decision. Run
+`npx tsx scripts/audit-naac-validity.mjs` for the current list.
+
+---
+
 ## 2026-09-17 · lib/data.ts ids and Supabase slugs do not agree, and the mismatch was producing false findings
 
 **How it was found.** Chandigarh's NAAC cycle turned out to have lapsed, so I

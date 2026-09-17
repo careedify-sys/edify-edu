@@ -1,4 +1,5 @@
 import { brand } from '@/lib/brand';
+import { naacCycle } from '@/lib/verify/naac-validity';
 
 type Accreditation = {
   body: string; category: string | null; status: string;
@@ -23,10 +24,18 @@ export function ApprovalsCard({ accreditations, ugcStatus }: {
 
   if (naac) {
     const cgpa = naac.score ? `CGPA ${naac.score}` : '';
-    const cycle = naac.cycle ? `Cycle ${naac.cycle}` : '';
-    const validTill = naac.valid_till ? `valid till ${new Date(naac.valid_till).getFullYear()}` : '';
-    const desc = [cycle, validTill].filter(Boolean).join(' · ') || 'Accredited by NAAC';
-    rows.push({ title: 'NAAC', statusText: cgpa || 'Accredited', desc, icon: 'grade' as const, variant: 'warm' as const, grade: naac.grade } as any);
+    // A lapsed cycle must not render as an unqualified positive on the page
+    // people open to check whether an institution is legitimate.
+    const { desc, expired } = naacCycle(naac.valid_till, naac.cycle);
+    rows.push({
+      title: 'NAAC',
+      statusText: expired ? (cgpa ? `${cgpa}, lapsed` : 'Cycle lapsed') : (cgpa || 'Accredited'),
+      desc,
+      icon: 'grade' as const,
+      variant: 'warm' as const,
+      grade: naac.grade,
+      muted: expired,
+    } as any);
   }
 
   if (aacsb) rows.push({ title: 'AACSB', statusText: aacsb.via_school ? `via ${aacsb.via_school.split(',')[0].split(' ').slice(0, 4).join(' ')}` : 'Accredited', desc: 'Global B-school accreditation', icon: 'star' as const, variant: 'warm' as const } as any);
@@ -48,10 +57,14 @@ export function ApprovalsCard({ accreditations, ugcStatus }: {
   );
 }
 
-function ApprovalRow({ isLast, icon, variant, title, grade, statusText, desc }: any) {
+function ApprovalRow({ isLast, icon, variant, title, grade, statusText, desc, muted }: any) {
   const iconBg = variant === 'success' ? brand.successBg : brand.creamWarm;
   const iconColor = variant === 'success' ? brand.successAccent : brand.goldDeep;
-  const statusColor = variant === 'success' ? brand.successAccent : brand.goldDeep;
+  // `muted` marks a lapsed accreditation cycle. Drop it to the neutral text
+  // colour so it does not read as an active endorsement.
+  const statusColor = muted
+    ? brand.textMuted
+    : variant === 'success' ? brand.successAccent : brand.goldDeep;
 
   return (
     <div style={{
