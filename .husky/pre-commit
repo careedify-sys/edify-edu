@@ -31,6 +31,13 @@ npx tsx scripts/check-blog-fees.mjs || exit 1
 # in BLOG_POSTS. Runtime .find() picks the first match and would render
 # only one of the entries, so a duplicate is always a bug. See
 # audits/duplicate-blog-slugs-2026-08-11.md.
+# Every lib/data/page-content/*.json must parse. getSpecPageContent() swallows a
+# parse failure and returns null, which is indistinguishable from "no file", so a
+# broken file silently downgrades a spec page to the thin fallback. 35 files were
+# in that state on 2026-09-17. See scripts/check-page-content-json.mjs.
+echo "pre-commit: check-page-content-json"
+node scripts/check-page-content-json.mjs || exit 1
+
 echo "pre-commit: check-duplicate-slugs"
 npx tsx scripts/check-duplicate-slugs.mjs || exit 1
 

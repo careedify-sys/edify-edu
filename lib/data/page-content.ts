@@ -22,7 +22,15 @@ export function getPageContent(uniSlug: string, program: string): PageContent | 
     const content = JSON.parse(raw) as PageContent
     cache.set(key, content)
     return content
-  } catch {
+  } catch (err) {
+    // Never swallow this silently. A null return here is indistinguishable from
+    // "no content file exists", so the page quietly renders the thin fallback
+    // while the file sits on disk looking complete. That hid 35 broken files
+    // until 2026-09-17. See scripts/check-page-content-json.mjs.
+    console.error(
+      `[page-content] ${key}.json exists but could not be read, falling back to the generic template:`,
+      err instanceof Error ? err.message : err,
+    )
     cache.set(key, null)
     return null
   }
@@ -47,7 +55,12 @@ export function getSpecPageContent(
     const content = JSON.parse(raw) as SpecPageContent
     specCache.set(key, content)
     return content
-  } catch {
+  } catch (err) {
+    // See the note in getPageContent. Same failure mode, same reason to be loud.
+    console.error(
+      `[page-content] ${key}.json exists but could not be read, falling back to the generic template:`,
+      err instanceof Error ? err.message : err,
+    )
     specCache.set(key, null)
     return null
   }
