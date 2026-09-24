@@ -9,6 +9,76 @@ the fix by accident.
 
 ---
 
+## 2026-09-24 · Shoolini highlights: rankings, USPs and inclusions across all 46 URLs
+
+**What was asked.** Put Shoolini's QS and THE rankings, its four USPs, five free
+inclusions and the new MBA immersion onto the Shoolini pages, programmes and
+specialisations alike.
+
+**Why this went in lib/data.ts and not the page-content JSONs.** Shoolini has 46
+live URLs across 7 programmes, but only 17 page-content JSONs, all of them MBA.
+A JSON-based rollout would have reached the MBA pages and silently skipped BBA,
+BCA, B.Com, MCA and MSc. The data now sits on the university record as
+`highlights`, and one new component renders it on the university page, every
+programme hub and every specialisation page, in both the rich and the generic
+`UniSpecBody` branches.
+
+**What was cross-checked against Supabase** (per the NAAC/NIRF source-of-truth
+rule), joined through `scripts/lib/supabase-uni-map.mjs`, since the lib/data.ts
+id `shoolini-university-online` maps to the Supabase slug
+`shoolini-university-of-biotechnology-and-management-sciences-online`:
+
+| claim | Supabase | verdict |
+|---|---|---|
+| NAAC A+ | Cycle 2, CGPA 3.3, valid till 2031-11-21 | current, not lapsed |
+| NIRF #69 | category University, 69 of 200 | confirmed |
+| QS #452 / No. 1 private | absent, no rankings table | unverifiable here |
+| THE #3 India / 401-500 | absent | unverifiable here |
+
+So QS and THE render in their own row that names the ranker and the edition,
+and never as an Edify verdict. NAAC and NIRF are deliberately NOT repeated in
+the block: they already render in `ApprovalBadges`, and putting a QS placement
+beside them would imply the two carry the same evidential weight. Shoolini also
+holds NIRF Pharmacy #44, which the site does not currently use anywhere.
+
+**`qsRank` was deliberately left unset.** That field means QS ASIA rank
+everywhere else in the codebase (Amity 45, LPU 51, Jain 62) and
+`UniversityCard.tsx:117` prints it with no guard. Setting it to 452 would have
+rendered "QS #452" beside those as though it were the same metric. The world
+rank lives in `highlights.rankings`, where it is labelled.
+
+**Two defects found by verifying rather than assuming.**
+
+1. *MBA fees leaked onto BBA pages.* Pay-After-Placement carries MBA rupee
+   figures, Rs 31,600 and Rs 1.3L. It was first written into the university-wide
+   `usps`, which renders on the BBA hub where the fee is Rs 96,000. Moved into
+   `byProgram.mba`, so it appears on MBA surfaces only. The same key scopes the
+   immersion line.
+2. *"Online Online MBA".* The three callers disagree on whether `cleanName`
+   already carries "Online": the programme and spec bodies strip it, the
+   university page passes `u.name` verbatim. `UniHighlights` now normalises it,
+   so no caller can reintroduce the double.
+
+**On "India's ONLY".** Rishi was shown that "only" is a falsifiable exclusivity
+claim asserted in Edify's voice, and chose to keep it. It already matches the
+`tagline` live sitewide, so the two sources now agree rather than contradict.
+
+**Verified.** Dev server across all five page shapes: university page, MBA hub,
+MBA spec (rich branch), BBA hub and BBA spec (generic branch). Immersion and
+Pay-After-Placement appear on MBA only. Amity renders no block at all, which is
+the correct null for the other 142 universities. Grids are 2 column at 1280px
+and 1 column at 375px with no overflow at either width. `tsc --noEmit` clean.
+
+**Pre-existing, not introduced here.** Spec pages log a React duplicate-key
+warning from `renderParagraphsWithBold` in `UniSpecBody.tsx:74`. It reproduces
+on Amity, which has no highlights block, so it is unrelated to this change.
+
+**Still open for Rishi.** Whether the immersion cost sits inside the fee, and
+whether Pay-After-Placement extends beyond the MBA. Both are stated as unknown
+on the page rather than guessed.
+
+---
+
 ## 2026-09-24 · Red Flags removed from the Shoolini MBA hub, and the opt-out that made it possible
 
 **What was asked.** Remove the Red Flags section from

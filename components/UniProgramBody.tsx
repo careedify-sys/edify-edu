@@ -32,6 +32,7 @@ import SectionPlacements from './SectionPlacements'
 import BeyondAdmissionSection from './BeyondAdmissionSection'
 import TopHirers         from './TopHirers'
 import RedFlagsBlock     from './RedFlagsBlock'
+import UniHighlights    from './UniHighlights'
 import ComparisonTable   from './ComparisonTable'
 import HonestVerdict     from './HonestVerdict'
 import FAQBlock          from './FAQBlock'
@@ -290,6 +291,9 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
                   <div className="text-sm text-slate-600 leading-relaxed whitespace-pre-line">{s.ugcDeb.body}</div>
                 </section>
               )}
+
+              {/* §3C Highlights. Renders only for universities with `highlights`. */}
+              <UniHighlights u={u} program={program} cleanName={cleanName} />
 
               {/* §4 About */}
               <div id="about">

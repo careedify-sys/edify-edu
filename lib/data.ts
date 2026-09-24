@@ -45,6 +45,35 @@ export interface UniFeature {
   detail: string
 }
 
+export interface UniHighlightItem {
+  label: string
+  detail: string
+}
+
+/**
+ * Selling points for one university, rendered on the university page, every
+ * programme hub and every specialisation page beneath it.
+ *
+ * `rankings` is deliberately separate from `approvals` and `naac` / `nirf`.
+ * Those come from Supabase, which is the source of truth for NAAC, NIRF, AICTE
+ * and AACSB. Third-party rankers such as QS and THE are not in Supabase, so
+ * each entry names the ranking body and edition and reads as the ranker's
+ * finding, not as an Edify verdict. Never fold one of these into `approvals`.
+ *
+ * `valueAdds` are inclusions the UNIVERSITY bundles at no extra charge. Do not
+ * put an edifyedu.in incentive here. Those belong with the enrollment bonus,
+ * which is a separate promise from a separate party.
+ */
+export interface UniHighlights {
+  rankings?: Array<{ body: string; edition: string; claim: string }>
+  usps?: UniHighlightItem[]
+  valueAdds?: UniHighlightItem[]
+  /** Programme-scoped extras. Key is the lowercased programme name, e.g. 'mba'. */
+  byProgram?: Record<string, UniHighlightItem[]>
+  /** Shown under the block. Keeps unverifiable inclusions attributed. */
+  verifyNote?: string
+}
+
 export interface University {
   id: string
   name: string
@@ -105,6 +134,7 @@ export interface University {
   programFees?: Partial<Record<'mba' | 'bba' | 'mca' | 'bca' | 'mcom' | 'bcom' | 'btech' | 'mtech', { fee: number }>>
   programDetails: Partial<Record<Program, ProgramDetail>>
   specialFeatures?: UniFeature[]
+  highlights?: UniHighlights
   color: string
   enrollments?: number
   rankingBadge?: string
@@ -1182,6 +1212,63 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MSc from Shoolini University – Shoolini Onli — recognised for corporate hiring.',
       }
+    },
+      highlights: {
+      // QS and THE are not in Supabase, which is the source of truth for NAAC
+      // and NIRF. Each line therefore names the ranker and the edition so the
+      // claim reads as theirs and a student can check it. The QS world rank is
+      // deliberately NOT set as `qsRank`: that field means QS ASIA rank
+      // everywhere else (Amity 45, LPU 51) and UniversityCard prints it
+      // unguarded, so 452 would sit beside them as if it were the same metric.
+      rankings: [
+        {
+          body: 'QS World University Rankings',
+          edition: '2027',
+          claim: 'Ranked the No. 1 private university in India, and #452 globally.',
+        },
+        {
+          body: 'Times Higher Education World University Rankings',
+          edition: '2026',
+          claim: 'Ranked #3 in India overall, and placed in the global 401 to 500 band.',
+        },
+      ],
+      // Pay-After-Placement is NOT here. It is an MBA offer carrying MBA rupee
+      // figures, and this list renders on BBA, BCA, B.Com, MCA and MSc pages
+      // too, where the fee is different. It lives in byProgram.mba instead.
+      usps: [
+        {
+          label: 'AI-powered Career Tigers platform',
+          detail: "Shoolini's own AI job-preparation platform, open to online students.",
+        },
+        {
+          label: 'Global Gateway and study-abroad pathways',
+          detail: 'Routes to an international credential through partner institutions abroad.',
+        },
+        {
+          label: 'Mentorship from top 1% industry leaders',
+          detail: 'Shoolini pairs online learners with senior practitioners alongside academic faculty.',
+        },
+      ],
+      valueAdds: [
+        { label: 'Career Tigers Premium access', detail: 'Power job prep tools at no extra charge.' },
+        { label: 'Global Gateway', detail: 'International degree pathway support.' },
+        { label: 'One-stop government test prep', detail: 'Preparation for government recruitment exams.' },
+        { label: 'UPSC CSE and State PCS prep', detail: 'Civil services coaching bundled with the degree.' },
+        { label: 'Premium upskilling courses', detail: 'Extra skill courses included with enrolment.' },
+      ],
+      byProgram: {
+        mba: [
+          {
+            label: "India's ONLY Pay-After-Placement online MBA",
+            detail: 'Pay 80% of the fee during the course. The final 20%, Rs 31,600, falls due only after you are placed. Opt out of Pay-After-Placement and the total drops to Rs 1.3L. Fees are indicative, so confirm them on the official portal before you pay.',
+          },
+          {
+            label: 'New: 5-day on-campus immersion',
+            detail: 'Shoolini has just launched a five day on-campus immersion for the online MBA. Ask the counsellor for dates and whether the cost sits inside your fee.',
+          },
+        ],
+      },
+      verifyNote: 'Rankings are as published by QS and Times Higher Education for the editions named. Inclusions and platform access are as stated by Shoolini. Confirm what applies to your intake on the official portal before you pay. Edify earns no commission on this listing.',
     },
       rankingBadge: 'NIRF #69 (University 2025)',
   color: '#2563EB',

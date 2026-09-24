@@ -10,6 +10,7 @@ import { cleanCareerOutcome, getShortUniversityName } from '@/lib/format'
 import { getProgramContent } from '@/lib/content'
 import { SAMPLE_DEGREES, getSampleDegree } from '@/lib/sample-degrees'
 import type { Program, University } from '@/lib/data'
+import UniHighlights from './UniHighlights'
 import { formatSpecList } from '@/lib/data'
 import { COUPONS, TIER_AMOUNTS } from '@/lib/coupons'
 import { COUPON_PAGES } from '@/lib/coupon-pages'
@@ -398,6 +399,10 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                 </div>
               </section>
               
+              {/* Highlights. Tracks the programme tab, so the MBA-only
+                  immersion line shows on MBA and stays hidden on the rest. */}
+              <UniHighlights u={u} program={displayProgram} cleanName={u.name} />
+
               {/* Program Details */}
               {pd && (
                 <section className="card-lg p-6">

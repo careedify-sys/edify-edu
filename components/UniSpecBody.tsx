@@ -20,6 +20,7 @@ import SchemaBlock        from './SchemaBlock'
 import StickySectionNav   from './StickySectionNav'
 import UniHero            from './UniHero'
 import ApprovalBadges     from './ApprovalBadges'
+import UniHighlights from './UniHighlights'
 import SectionAbout       from './SectionAbout'
 import SectionWhoCanApply from './SectionWhoCanApply'
 import SectionClasses     from './SectionClasses'
@@ -471,6 +472,9 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                     />
                   </div>
 
+                  {/* §2B Highlights. Null unless the university has `highlights`. */}
+                  <UniHighlights u={u} program={program} cleanName={cleanName} />
+
                   {/* §3 About this specialisation */}
                   {specJson.sections.about?.body && (
                     <section className="rounded-xl border border-slate-200 bg-white p-6">
@@ -619,6 +623,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                       layout="row"
                     />
                   </div>
+                  <UniHighlights u={u} program={program} cleanName={cleanName} />
                   <SectionAbout u={u} program={program} pd={pd} cleanName={cleanName} spec={spec} />
                   <SectionWhoCanApply u={u} program={program} cleanName={cleanName} />
                   {/* Suppressed for mode-unverified universities: both sections
