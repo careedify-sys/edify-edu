@@ -9,6 +9,51 @@ the fix by accident.
 
 ---
 
+## 2026-09-24 · Red Flags removed from the Shoolini MBA hub, and the opt-out that made it possible
+
+**What was asked.** Remove the Red Flags section from
+`/universities/shoolini-university-online/mba`. That page only.
+
+**Why it needed a code change and not just a content edit.** The section has two
+renderers in `components/UniProgramBody.tsx`. When the page-content JSON carries
+`sections.redFlags.flags`, `GeneratedRedFlagsBlock` renders those. When it does
+not, the generic per-programme `RedFlagsBlock` renders four hardcoded MBA
+warnings instead. So emptying the JSON array does not delete the section, it
+swaps the written flags for boilerplate ones. Deleting the key does the same.
+
+Nor could the empty array itself be the signal to hide the section: **73 of the
+431 page-content JSONs have `redFlags` present with an empty `flags` array**, and
+every one of them is relying on that fallback today. Reading empty as "hide"
+would have silently stripped the section from 73 other pages.
+
+**The fix.** `sections.redFlags.hidden?: boolean` in
+`lib/data/page-content-schema.ts`, checked first in the render:
+
+```
+{s?.redFlags?.hidden ? null : s?.redFlags?.flags?.length ? ... : ...}
+```
+
+Set on `shoolini-university-online-mba.json` and nowhere else (1 of 431). The
+two existing behaviours are untouched: written flags still render, empty still
+falls back.
+
+**The four flags that came off the page** (recoverable from git history): the
+mandatory Semester 2 direct-selling module, NIRF #69 sitting outside the top 50,
+six-week certificate dispatch, and workshops-only career support.
+
+**What remains.** The `honestVerdict` section on the same page still carries its
+"Look elsewhere if" list, which repeats the NIRF #69 and direct-selling points in
+editorial form. That was deliberate: the request was for the Red Flags block, and
+the verdict is the page's balanced-judgement section, not a warning box. Say so
+if the intent was to drop the negatives entirely.
+
+**Verified.** Dev server, three pages: Shoolini now has zero occurrences of "Red
+Flag" in the rendered DOM; Amity (JSON flags) still renders its four; Ajeenkya
+D.Y. Patil (empty array) still renders the generic block. `tsc --noEmit` clean.
+Console errors on all three are the pre-existing Google Ads CSP blocks.
+
+---
+
 ## 2026-09-17 · The verify pages were showing "valid till 2026" for cycles that had already ended
 
 **The defect.** Both NAAC renderers on the verify pages built their secondary

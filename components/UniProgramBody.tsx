@@ -407,8 +407,8 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
                 </section>
               </div>
 
-              {/* §17 Red Flags */}
-              {s?.redFlags?.flags?.length ? (
+              {/* §17 Red Flags. Skipped entirely when the JSON sets hidden */}
+              {s?.redFlags?.hidden ? null : s?.redFlags?.flags?.length ? (
                 <GeneratedRedFlagsBlock redFlags={s.redFlags} />
               ) : (
                 <RedFlagsBlock u={u} program={program} cleanName={cleanName} />

@@ -114,6 +114,10 @@ export interface PageContent {
       intro?: string;
       flags?: RedFlag[];
       rawBody?: string; // fallback if parsing fails
+      // Editorial opt-out for one page. An empty flags array falls back to the
+      // generic per-programme block, so suppressing the section entirely needs
+      // this explicit flag. Set it only when the warnings do not hold up.
+      hidden?: boolean;
     };
     comparisons?: { heading?: string; body?: string };
     honestVerdict?: { heading?: string; body?: string };
