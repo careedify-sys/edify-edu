@@ -50,15 +50,26 @@ CGPA/percentage queries are now 91.4% of captured impressions, up from 79.4% in 
 - Clearest cases rank better and still lost reach: is-manipal-university-jaipur-fake-or-legit-2026
   improved 6.24 -> 5.62 and lost 46% of impressions.
 
-### Genuine ranking losses worth fixing
+### Ranking losses — CORRECTED same day, 3 of the 5 are not losses
 
-| Page | Position | Clicks |
+First written from page-level average position. That was wrong: an average position moves when the
+query mix moves, with no ranking change at all. Re-checked at cluster and query level.
+
+| Page | Page-level reading | Reality |
 |---|---|---|
-| /coupons | 12.42 -> 20.25 | 24 -> 6 |
-| / (homepage) | 14.49 -> 19.39 | 26 -> 12 |
-| /blog/affordable-online-mba-india-2026 | 8.48 -> 13.12 | 11 -> 0 |
-| /blog/phd-full-form-doctorate-meaning-india | 8.30 -> 10.27 | 22 -> 7 |
-| /blog/chandigarh-university-online-mba-review | 9.22 -> 10.28 | imp 3,090 -> 604 |
+| /coupons | 12.42 -> 20.25, 24 -> 6 clk | NOT a loss. Google now ranks the specific coupon page over the generic index. /coupons/manipal-jaipur-online-mba-discount-coupon-2026 went 10 -> 26 clicks at pos 3.92. Cluster flat, 44 -> 42 clicks on rising CTR. Its two exact queries sit at pos 1.2 and 1.93 with 24 impressions between them |
+| / (homepage) | 14.49 -> 19.39, 26 -> 12 clk | NOT a loss. `edifyedu` is at pos 1.0. Brand impressions fell 15 -> 9, which is search volume. `edify` is a generic English word, 344 imp at pos 5.7 and ~0 clicks, and it drags the average |
+| /blog/chandigarh-university-online-mba-review | imp 3,090 -> 604 | NOT a ranking loss. Position barely moved, 9.22 -> 10.28. 80% impression fall at flat position is demand |
+| /blog/phd-full-form-doctorate-meaning-india | 8.30 -> 10.27, 22 -> 7 clk | REAL. `phd full form` fell pos 4.74 -> 11.46, off page 1, 1,459 -> 344 impressions. No code change since 21 Jul, so Google reassessing. Zero-lead definition query though |
+| /blog/affordable-online-mba-india-2026 | 8.48 -> 13.12, 11 -> 0 clk | REAL but small. 504 -> 120 impressions, no sibling absorbed it. Commercially the most relevant of the five |
+
+Both /coupons and the homepage are technically sound: correct titles, descriptions, canonicals, both
+indexable. Acting on the original reading would have meant rebuilding an index page to compete with
+our own landing page that already ranks at 3.92.
+
+`audits/gsc-diagnosis-2026-09-13.md` reached the same conclusion under "Issue 4 corrected" and set
+the rule: **check the cluster before calling a single page decline a problem.** This section did not
+follow it. See [[feedback_check_cluster_before_page]].
 
 ## Did the 15-16 Sep title rescue work? Yes, modestly
 
@@ -105,7 +116,8 @@ jain-online-mba-review-2026 (0.12 -> 0.08%), amity-online-mca-fees-review (0.34 
 1. Split the GSC view by /tools/ vs everything else. A sitewide number now measures CGPA seasonality.
 2. Expect the topline to fall when results season decays. It will not be a disaster.
 3. Do not build more calculator pages. Same trap as the coupon cluster.
-4. Fix the five ranking losses, /coupons and the homepage first.
+4. Fix /blog/affordable-online-mba-india-2026, the one real and commercial loss. Leave /coupons
+   and the homepage alone, they are not broken.
 5. Pull a clean 28-day window around 15 Oct (first window entirely post-retitle) before touching the
    other 80 titles.
 6. The education problem is impressions, not CTR. CTR is already improving everywhere.

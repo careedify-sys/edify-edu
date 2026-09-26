@@ -1836,6 +1836,35 @@ the set was selected for low CTR and only 10 of 28 post-window days follow the c
 
 Full record: `audits/gsc-diagnosis-2026-09-27.md`.
 
+### GSC diagnosis correction (2026-09-27) — /coupons and the homepage are not broken
+
+**Why.** The diagnosis above listed five pages as "genuine ranking losses" from their
+page-level average position. That metric is an average across every query a page
+appears for, so it moves when the query mix moves, with no ranking change at all.
+Rishi asked for /coupons and the homepage to be fixed. Neither is broken.
+
+/coupons fell 12.42 -> 20.25 because Google switched to ranking the specific coupon
+page over the generic index. /coupons/manipal-jaipur-online-mba-discount-coupon-2026
+went 10 -> 26 clicks at position 3.92, and its two exact queries sit at positions 1.2
+and 1.93. The cluster is flat, 44 -> 42 clicks on rising CTR. Rebuilding the index
+would mean competing with our own better-ranking page.
+
+The homepage fell 14.49 -> 19.39 while `edifyedu` sits at position 1.0. Brand
+impressions fell 15 -> 9, which is search volume, not ranking. `edify` is a generic
+English word carrying 344 impressions at position 5.7 and near-zero clicks, and it
+alone drags the average down.
+
+Both pages are technically sound: correct titles, descriptions, canonicals, indexable.
+No code changed. Of the original five, only two are real: `phd full form` genuinely
+fell 4.74 -> 11.46 off page one (untouched since 21 July, so Google reassessing, and a
+zero-lead definition query), and /blog/affordable-online-mba-india-2026 lost 504 -> 120
+impressions while the three pages it overlaps with all improved position, which points
+at self-cannibalisation against /fees rather than an external loss.
+
+`audits/gsc-diagnosis-2026-09-13.md` had already reached this conclusion under "Issue 4
+corrected" and written "do not fix this". Flagging the same two pages again from the
+same metric is the repeat this entry exists to stop.
+
 ---
 
 ## Site size, for reference (2026-09-13)
