@@ -1816,6 +1816,26 @@ cannot serve the source slug and can serve the destination. This is the mechanis
 than keep unverifiable accreditation claims live, all 14 URLs were made real
 404s. Consistent with the site's positioning: absence of proof is not proof.
 
+### GSC diagnosis (2026-09-27) — no sitewide drop, but CGPA is masking one
+
+**Why.** Rishi reported a performance drop. Six GSC exports merged into one daily
+series say the opposite at 28 days (clicks +34%, CTR +28%) and the reported drop
+exists only in the 7-day view, half of it the 11 Sep one-day spike rolling out of
+the window.
+
+The finding that matters is underneath: `/tools/cgpa-calculator` gained 1,820 clicks
+while the whole site gained 1,228, so every other page lost ~590 net. On a
+matched-URL basis university hubs are -38% clicks and -46% impressions, blogs -26%
+and -24%. Position is flat and only one URL above 500 impressions vanished, so this
+is demand contraction, not ranking loss or anything the August technical work broke.
+
+Two corrections to standing notes. CGPA is now **91.4%** of captured impressions, not
+the 51% recorded earlier. And the 15-16 Sep title rescue is no longer unmeasured: the
+retitled posts held clicks flat (-1.3%) while 160 untouched posts fell -13.7%, though
+the set was selected for low CTR and only 10 of 28 post-window days follow the change.
+
+Full record: `audits/gsc-diagnosis-2026-09-27.md`.
+
 ---
 
 ## Site size, for reference (2026-09-13)
