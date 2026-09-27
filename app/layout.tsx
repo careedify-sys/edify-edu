@@ -94,10 +94,18 @@ export const metadata: Metadata = {
 }
 
 // ── Schema.org structured data ────────────────────────────────────────────
+// Entity signals hardened 2026-09-27. `name` stays 'edifyedu.in' deliberately:
+// that is the name on the Google Business Profile that already earns the
+// knowledge panel and the #1 local result for "edify", and a schema name that
+// disagrees with the GBP splits the entity rather than strengthening it. The
+// spoken and written brand variants go in alternateName, and @id gives the
+// other schema blocks something to point at instead of repeating a bare string.
 const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
+  '@id': 'https://edifyedu.in/#organization',
   name: 'edifyedu.in',
+  alternateName: ['EdifyEdu', 'Edify Edu', 'Edify Education India'],
   url: 'https://edifyedu.in',
   logo: {
     '@type': 'ImageObject',
@@ -123,13 +131,17 @@ const orgSchema = {
     contactType: 'customer service',
     availableLanguage: ['English', 'Hindi'],
   },
+  founder: { '@id': 'https://edifyedu.in/#rishi-kumar' },
 }
 
 const siteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
+  '@id': 'https://edifyedu.in/#website',
   name: 'edifyedu.in',
+  alternateName: ['EdifyEdu', 'Edify Edu'],
   url: 'https://edifyedu.in',
+  publisher: { '@id': 'https://edifyedu.in/#organization' },
   potentialAction: {
     '@type': 'SearchAction',
     target: { '@type': 'EntryPoint', urlTemplate: 'https://edifyedu.in/universities?search={search_term_string}' },
@@ -148,8 +160,8 @@ const authorSchema = {
   url: 'https://edifyedu.in/about',
   image: 'https://edifyedu.in/authors/rishi-avatar-md.svg',
   jobTitle: 'Senior Education Researcher',
-  worksFor: { '@type': 'Organization', name: 'EdifyEdu', url: 'https://edifyedu.in' },
-  affiliation: { '@type': 'Organization', name: 'EdifyEdu', url: 'https://edifyedu.in' },
+  worksFor: { '@id': 'https://edifyedu.in/#organization' },
+  affiliation: { '@id': 'https://edifyedu.in/#organization' },
   description: 'Founder of EdifyEdu and senior education researcher focused on UGC-DEB approved online degrees in India. Independent comparisons, no paid rankings.',
   knowsAbout: [
     'Online MBA in India',
