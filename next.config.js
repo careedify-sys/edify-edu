@@ -777,16 +777,48 @@ const nextConfig = {
           // HSTS: lock browsers to HTTPS for 2 years, include subdomains.
           // Safe here — edifyedu.in has been HTTPS-only since launch.
           { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
+          // This policy ships to PRODUCTION. Only 'unsafe-eval' is dev-gated, so
+          // anything dropped from these lists is dropped from the live site too.
+          //
+          // Ad-tech origins, listed one host at a time, never as a wildcard:
+          //
+          //   googleads.g.doubleclick.net   script-src + connect-src. The AW
+          //     conversion beacon, /pagead/viewthroughconversion/17380291250/.
+          //
+          //   www.google.com                script-src + connect-src. Carries
+          //     /ccm/collect and /rmkt/collect, the page_view and remarketing
+          //     pings for AW-17380291250, and is hop 2 of the beacon redirect.
+          //
+          //   www.google.co.in              script-src. Hop 3, and the reason a
+          //     console-driven fix does not work here. The beacon chain is
+          //     googleads.g.doubleclick.net -> www.google.com -> www.google.co.in
+          //     (Google bounces it to the visitor country domain, &ipr=y). CSP
+          //     re-checks every redirect target but reports the ORIGINAL url, so
+          //     the console only ever names googleads.g.doubleclick.net. Allow
+          //     just that host and the fix looks right while the beacon is still
+          //     blocked. Verified hop by hop with curl, not from the console.
+          //     KNOWN GAP: a visitor outside India bounces to their own ccTLD
+          //     (google.ae, google.com.sg) and is still blocked. Left tight on
+          //     purpose. Widen to the specific ccTLDs if overseas traffic matters.
+          //
+          //   ad.doubleclick.net            connect-src. /ccm/s/collect.
+          //
+          //   www.facebook.com              frame-src for the Meta pixel iframe.
+          //     Its connect-src entry was already here, which is why the pixel
+          //     half-worked and nobody noticed the frame was being dropped.
+          //
+          // Remove any of these and Google Ads records nothing, silently. A blocked
+          // beacon is a browser console warning, never an error the Ads UI surfaces.
           {
             key: 'Content-Security-Policy',
             value: [
               "default-src 'self'",
-              `script-src 'self' 'unsafe-inline' ${process.env.NODE_ENV === 'development' ? "'unsafe-eval'" : ""} https://www.googletagmanager.com https://www.google-analytics.com https://*.clarity.ms https://connect.facebook.net https://static.cloudflareinsights.com https://api.web3forms.com https://cdnjs.cloudflare.com https://embed.tawk.to https://*.tawk.to`,
+              `script-src 'self' 'unsafe-inline' ${process.env.NODE_ENV === 'development' ? "'unsafe-eval'" : ""} https://www.googletagmanager.com https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.google.com https://www.google.co.in https://*.clarity.ms https://connect.facebook.net https://static.cloudflareinsights.com https://api.web3forms.com https://cdnjs.cloudflare.com https://embed.tawk.to https://*.tawk.to`,
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.tawk.to",
               "font-src 'self' https://fonts.gstatic.com https://*.tawk.to",
               "img-src 'self' data: https:",
-              "connect-src 'self' https://api.web3forms.com https://api.anthropic.com https://api.github.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net https://*.clarity.ms https://cloudflareinsights.com https://*.cloudflareinsights.com https://www.facebook.com https://*.tawk.to wss://*.tawk.to",
-              "frame-src https://www.youtube.com https://www.youtube-nocookie.com https://*.tawk.to",
+              "connect-src 'self' https://api.web3forms.com https://api.anthropic.com https://api.github.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net https://googleads.g.doubleclick.net https://ad.doubleclick.net https://www.google.com https://*.clarity.ms https://cloudflareinsights.com https://*.cloudflareinsights.com https://www.facebook.com https://*.tawk.to wss://*.tawk.to",
+              "frame-src https://www.youtube.com https://www.youtube-nocookie.com https://www.facebook.com https://*.tawk.to",
               "frame-ancestors 'none'",
             ].join('; '),
           },
