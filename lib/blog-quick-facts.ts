@@ -102,5 +102,53 @@ export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; gr
     { label: 'MUJ Specs',         value: '13' },
     { label: 'UGC-DEB (Both)',    value: 'Yes', green: true },
   ],
+  'online-mba-business-analysts-india-2026': [
+    { label: 'What the degree changes',                       value: '' },
+    { label: 'Universities with a Business Analytics label',  value: '' },
+    { label: 'Maths needed for admission',                    value: '' },
+    { label: 'What decides programme quality',                value: '' },
+  ],
+  'online-mba-sales-professionals-india-2026': [
+    { label: 'MBA labels that name sales',           value: '' },
+    { label: 'Universities with a Marketing label',  value: '' },
+    { label: 'What you will actually buy',           value: '' },
+    { label: 'The paper to look for',                value: '' },
+  ],
+  'online-mba-medical-representatives-pharma-2026': [
+    { label: 'What a field promotion runs on',                       value: '' },
+    { label: 'What the degree opens',                                value: '' },
+    { label: 'Universities with a Pharmaceutical Management label',  value: '' },
+    { label: 'Do before you pay',                                    value: '' },
+  ],
+  'online-mba-hr-executives-india-2026': [
+    { label: 'Universities with an HR Management label',  value: '' },
+    { label: 'HR Analytics labels in our index',          value: '' },
+    { label: 'The paper that must be there',              value: '' },
+    { label: 'What the degree cannot supply',             value: '' },
+  ],
+  'online-mba-civil-site-engineers-project-management-2026': [
+    { label: 'Universities with a Project Management label',        value: '' },
+    { label: 'Project Management programmes with a NIRF Mgt rank',  value: '' },
+    { label: 'The paper that matters most',                         value: '' },
+    { label: 'When a certification beats the degree',               value: '' },
+  ],
+  'online-mba-nurses-healthcare-professionals-india-2026': [
+    { label: 'Is BSc Nursing eligible for an MBA',  value: "Yes, it is a bachelor's degree" },
+    { label: 'The one to check in writing',         value: '' },
+    { label: 'Your real advantage',                 value: '' },
+    { label: 'Watch on clinical institutions',      value: '' },
+  ],
+  'online-mba-chartered-accountants-india-2026': [
+    { label: 'What the finance core gives a CA',   value: '' },
+    { label: 'What you are actually buying',       value: '' },
+    { label: 'Universities with a Finance label',  value: '' },
+    { label: 'Ask in writing about ACCA labels',   value: '' },
+  ],
+  'online-mba-product-managers-india-2026': [
+    { label: 'MBA labels naming Product Management',  value: '' },
+    { label: 'What product hiring reads',             value: '' },
+    { label: 'Most common route into product',        value: '' },
+    { label: 'Buy the degree when',                   value: '' },
+  ],
 }
 

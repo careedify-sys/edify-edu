@@ -9,6 +9,114 @@ the fix by accident.
 
 ---
 
+## 2026-09-28 · Eight profession-audience posts, and the count that was wrong
+
+**What was asked.** Recount the blog inventory properly, check whether the
+profession-audience clusters Rishi named (bankers, IT staff, business analysts)
+were actually covered, and write the ones that were missing.
+
+**The count.** 217 entries in `BLOG_POSTS`: 200 published, 14 redirected, 3
+draft. Counted by importing the array with tsx, not by grepping `slug:`, which
+returns 199 because some entries are formatted differently. The 196 figure in
+project memory was correct on 15 September and is now stale by the twelve posts
+of 17 September plus these eight.
+
+**What was already covered.** Bankers and IT professionals both have four posts
+each from the 17 September batch, so the two audiences Rishi named first were
+done. Business analysts were not. The site had `mba-data-science-vs-business-analytics-2026`
+(a label comparison) and `online-mba-business-data-analytics-india-2026`
+(programme intent), but nothing written to the person holding the job. That was
+the real gap, and the same held for six other professions.
+
+**What shipped.** Eight career-intent posts, all published 2026-09-28:
+business analysts, sales professionals, medical representatives, HR executives,
+civil and site engineers, nurses and allied health staff, chartered accountants,
+and aspiring product managers.
+
+**Why career-intent and not programme-intent.** Same reasoning as the 17
+September batch, which the GSC export supports: `govt-jobs-after-mba-india-2026`
+pulls 15,723 impressions at position 6.73 while programme-intent pages sit on
+page seven. Every post here is written as a decision document, not a brochure.
+
+**Why these eight and not others.** Each one had to have something true and
+non-obvious to say that came out of the data rather than out of a template. The
+specialisation index supplied it:
+
+- Only 4 of 171 MBA specialisation labels mention sales, and all four pair it
+  with marketing, against 62 universities carrying Marketing. So an area sales
+  manager searching for an MBA in sales is going to buy Marketing, and the post
+  says so in the first paragraph.
+- Exactly 1 label is Product Management (Chandigarh University Online). That
+  post argues against its own product, because the honest read is that an MBA is
+  a weak instrument for entering product management in India.
+- Human Resource Management is carried by 77 universities, the highest count of
+  any specialisation we track. When 77 sellers carry one label the label cannot
+  differentiate, so the post pushes the decision onto accreditation and the
+  elective list.
+- Teachers were considered and dropped: no education-management label exists in
+  the index, so there was nothing honest to offer.
+
+**Constraints applied, and why each one held.**
+
+1. **Zero rupee figures in all eight.** `scripts/check-blog-fees.mjs` rejects any
+   currency figure in a new slug that does not MATCH `getDisplayFee()`, and there
+   is no approved source for Indian salary data, so a salary table would be
+   fabrication. The gate reports 2433 unverified, unchanged from baseline, which
+   is the proof that nothing new was added.
+2. **Every accreditation claim cross-checked against Supabase** through
+   `scripts/lib/supabase-uni-map.mjs`, because lib/data.ts ids and Supabase slugs
+   disagree and a naive join mis-pairs institutions. This changed what the posts
+   could say: Chandigarh University's NAAC A+ cycle expired 2026-09-09, so all
+   three posts that name it state the cycle has lapsed and route the reader to
+   naac.gov.in rather than asserting a grade. BITS Pilani WILP, SGT University,
+   SRM University Sikkim and D.Y. Patil Navi Mumbai have no verified record, so
+   those rows say so in the table instead of quietly omitting the column.
+3. **Every NIRF rank carries its category.** Eleven Management-category ranks
+   were verified against the Supabase `accreditations` rows and used; the rest
+   say "no NIRF Management placement on record". Two posts make the category
+   point explicitly, because JSS Academy (NIRF Pharmacy 4) and DPU-COL (NIRF
+   Medical and Dental) are exactly the institutions whose strong clinical ranks
+   get read as management endorsements.
+
+**The quick-facts bug found on the way.** `BlogPost` carries a `quickFacts`
+field, but `app/blog/[slug]/page.tsx:601` renders `BLOG_QUICK_FACTS[post.slug]`
+from `lib/blog-quick-facts.ts` instead. The field on the post object never
+reaches the sidebar. Only 9 slugs had entries in that file, so the 12 posts from
+17 September and these 8 all carried dead data. Entries for the new eight were
+added to `lib/blog-quick-facts.ts` and confirmed rendering. The 12 posts from 17
+September are still unwired; that is a separate fix.
+
+**The open disagreement, recorded rather than hidden.** The 17 September plan
+gates its own backlog on a GSC read around 15 October, on the reasoning that if
+the banking and AI clusters show nothing after four weeks the queries have no
+Indian volume and the cluster should be abandoned rather than expanded. Today is
+28 September, so that gate has not been reached, and one of these eight
+(`online-mba-product-managers-india-2026`) is backlog item 3. Rishi asked for
+this batch directly and that is his call to make, but the measurement problem is
+real: eight more posts shipped before the read makes the 15 October signal
+harder to attribute. Mitigation is that these eight target different professions
+from the banking and AI clusters, so they can be read as their own cohort. Pull
+GSC for both cohorts separately around 15 to 27 October.
+
+**How it was verified.** Runtime count via tsx, not grep. All eight pages return
+200 on the dev server and appear on `/blog`. House-style checks scripted rather
+than eyeballed: no em dashes, no banned AI vocabulary, no `Furthermore`/`Moreover`/
+`Additionally` openers, no curly quotes, no H1 in body, paragraphs at 4 sentences
+or fewer, 8 internal links per post with no duplicate target, no outbound link
+outside the four approved sources, no competitor named. Every internal link
+target resolved against `BLOG_POSTS`, `UNIVERSITIES` and `GUIDES` before commit.
+Full `.husky/pre-commit` suite passed.
+
+**What guards it.** `check-blog-fees` blocks any fee figure in a new slug.
+`check-duplicate-slugs` reports 217 posts and 217 distinct slugs. `check-em-dash`
+covers the house rule. The accreditation claims have no automated guard on the
+blog side, which is why they were cross-checked by hand against Supabase before
+writing; `scripts/audit-naac-validity.mjs` is the tool to re-run when a cycle
+lapses.
+
+---
+
+
 ## 2026-09-24 · Shoolini highlights: rankings, USPs and inclusions across all 46 URLs
 
 **What was asked.** Put Shoolini's QS and THE rankings, its four USPs, five free
