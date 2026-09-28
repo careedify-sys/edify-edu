@@ -9,6 +9,77 @@ the fix by accident.
 
 ---
 
+## 2026-09-28 · Quick Facts sidebar rendered nothing on twenty posts
+
+**What was reported.** The Quick Facts box was missing on the twelve posts of
+17 September. The diagnosis handed over was right. `app/blog/[slug]/page.tsx:601`
+reads `BLOG_QUICK_FACTS[post.slug]` out of `lib/blog-quick-facts.ts`, not the
+`quickFacts` field on the post object, so writing `quickFacts` in `lib/blog.ts`
+is silently a no-op. `app/online-mca/[slug]/page.tsx:293` does the same.
+
+**The count was not twelve.** 40 posts in `BLOG_POSTS` carry a populated
+`quickFacts` field and only 17 had a lookup entry. A first parse said 13 because
+it matched only double-quoted `slug:` lines, and 168 of the 205 post objects use
+single quotes. Counting both forms gives 32 posts with a field and no entry.
+
+**The second defect, which the handover had backwards.** The eight posts of 28
+September were described as the working reference to copy. They are the worst
+case on the site. Their lookup entries were added with every label present and
+every `value` set to the empty string, 31 blanks across 32 rows.
+`BlogSidebarWidgets` renders a row whether or not the value is empty, so those
+eight have been live since 28 September showing a Quick Facts card with an empty
+right-hand column. The real values sat unused in the `quickFacts` field the
+template ignores.
+
+**Why the lookup was filled and the template left alone.** The proposed fix was
+`BLOG_QUICK_FACTS[post.slug] ?? post.quickFacts` in both callers. That is the
+better architecture and it does remove the duplication, but it cannot ship as a
+one-line change, for two reasons.
+
+It would not have fixed the eight. Their lookup entry exists, so `??` keeps
+selecting it and keeps rendering blanks. A fallback has to be value-aware to help
+there, and filling the values is required work under either design.
+
+It would also publish 17 more posts in one commit. Of the 32 posts with no entry,
+17 carry fee, salary or superlative figures in `quickFacts` that have never
+rendered and so have never been checked by anything. They include derived
+best-value claims ("Best Value = AMU Online (Rs 28K, NIRF #10)"), a NIRF rank
+with no category attached, and salary bands ("Entry Salary = Rs 5-10 LPA") with
+no approved source behind them. Those break the no-fabricated-stats rule, the
+NIRF-category rule and the never-derive-fee-superlatives rule at once. A template
+fallback switches all 17 on at the same moment, with no gate in front of them,
+because the blog fee scan reads post bodies rather than this field.
+
+**What shipped.** Data only, no template change.
+
+- Filled the 31 empty values on the eight posts of 28 September. Each value came
+  from that post's own `quickFacts` field, matched on the label.
+- Added the twelve posts of 17 September as new lookup entries, copied from their
+  `quickFacts` fields. None of the twelve holds a money figure, so the blog fee
+  gate has nothing to catch here.
+
+Twenty posts now render a populated Quick Facts box. The lookup keeps priority
+over the field, so this data stays correct and authoritative if the fallback is
+added later.
+
+**What is deliberately still broken.** 20 posts keep a `quickFacts` field and no
+entry. 17 of them need their figures verified against the portals before they are
+allowed to render at all. The other three are clean of money, but one asserts
+"Approved Universities: 125+", a UGC-DEB claim no source in this repo supports,
+so all three were held back with the rest rather than shipped on a guess.
+
+**Verified.** Dev server on port 50631, curled all twenty pages. All twelve
+return the card and their own quick-fact label. All eight formerly blank posts
+return their values. Read the rendered card back out of the DOM on
+`online-mba-hr-executives-india-2026` and confirmed four populated rows.
+
+**Guard.** None added, and that is a gap worth naming. The guard that would have
+caught both defects is a check that every populated `quickFacts` field has a
+matching lookup entry with no empty values. It is not written yet because the 17
+unverified posts would fail it on the first run.
+
+---
+
 ## 2026-09-28 · Eight profession-audience posts, and the count that was wrong
 
 **What was asked.** Recount the blog inventory properly, check whether the
