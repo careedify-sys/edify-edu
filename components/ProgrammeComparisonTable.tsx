@@ -22,6 +22,7 @@ import Link from 'next/link'
 import { getUniversitiesByProgram, getSpecs, type Program, type University } from '@/lib/data'
 import { getDisplayFee } from '@/lib/fees'
 import naacSnapshot from '@/data/naac-verified.json'
+import verifySlugMap from '@/lib/data/verify-slug-map.json'
 
 const GRADES: Record<string, number> = { 'A++': 0, 'A+': 1, A: 2, 'B++': 3, 'B+': 4, B: 5, C: 6 }
 const snapshot = (naacSnapshot as { grades: Record<string, { grade: string; validTill: string | null }> }).grades
@@ -58,7 +59,11 @@ export default function ProgrammeComparisonTable({
       const nirf = nirfCell(u)
       const fee = getDisplayFee(u, program) as { ok: boolean; compact?: string; range?: string }
       const specs = getSpecs(u, program) || []
-      return { u, naac, nirf, fee, specCount: specs.length }
+      // Absent for a university with no Supabase record, so no verification
+      // page exists to link to. Never fall back to a guessed slug: it would
+      // send the reader to another institution's page.
+      const verifySlug = (verifySlugMap as Record<string, string>)[u.id] ?? null
+      return { u, naac, nirf, fee, specCount: specs.length, verifySlug }
     })
     // Best-evidenced first: a Management rank, then any rank, then grade, then name.
     .sort((a, b) => {
@@ -119,12 +124,17 @@ export default function ProgrammeComparisonTable({
             </tr>
           </thead>
           <tbody>
-            {rows.map(({ u, naac, nirf, fee, specCount }) => (
+            {rows.map(({ u, naac, nirf, fee, specCount, verifySlug }) => (
               <tr key={u.id} className="border-t border-border align-top">
                 <th scope="row" className="text-left px-3 py-3 font-medium">
                   <Link href={`/universities/${u.id}/${programSlug}`} className="text-navy hover:text-amber no-underline font-semibold">
                     {u.name}
                   </Link>
+                  {verifySlug && (
+                    <Link href={`/verify/${verifySlug}`} className="block text-xs text-ink-3 hover:text-amber no-underline mt-0.5">
+                      UGC-DEB verification
+                    </Link>
+                  )}
                 </th>
                 <td className="px-3 py-3 text-center">
                   {naac ? (
@@ -134,6 +144,12 @@ export default function ProgrammeComparisonTable({
                         <span className="block text-xs text-ink-3">valid to {naac.validTill}</span>
                       )}
                     </>
+                  ) : verifySlug ? (
+                    // A blank cell invites the reader to assume we simply did not
+                    // look. Send them to the page that shows what we did check.
+                    <Link href={`/verify/${verifySlug}`} className="text-xs text-ink-3 hover:text-amber underline decoration-dotted">
+                      Not verified
+                    </Link>
                   ) : (
                     <span className="text-xs text-ink-3">Not verified</span>
                   )}

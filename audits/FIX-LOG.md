@@ -9,6 +9,82 @@ the fix by accident.
 
 ---
 
+## 2026-09-29 · 125 good verification pages that nothing linked to
+
+**What was asked.** Start move 5, the community footprint. The research argued
+against it, and this is what was built instead.
+
+**Why not the community push.** Three findings, recorded in the strategy doc.
+Reddit's AI access is contractual rather than open: robots.txt has blocked
+crawlers wholesale since 2024, Google's access runs on a deal worth about 60
+million dollars a year and OpenAI's about 70 million, **both expire next year**,
+Reddit has discussed not renewing Google's, and Reddit is suing Perplexity over
+scraping. So a Reddit mention reaches ChatGPT and Gemini, never Claude or
+Perplexity, and rests on arrangements that may lapse inside the payback period.
+Neither platform is readable from here either, so any drafted answers would have
+been guesses. And nothing gets posted on Rishi's behalf regardless.
+
+**What the data pointed at instead.** The trust cluster, from the 28-day export
+to 12 September: `online degree is valid or not` at **position 1.7 with 0 clicks
+from 191 impressions**, `mangalayatan university fake` at 380 impressions and 0
+clicks, `is manipal university jaipur fake` at 183 and position 3.27. Being the
+top answer and earning no click is the citation economy seen from the
+publisher's side.
+
+### The recommendation was half wrong, and checking beat assuming
+
+The plan said to make the "is X fake" answer extractable because the site did not
+have it in a liftable shape. **It already did.** `/verify/{slug}` has 125
+server-rendered pages whose title answers the question directly ("Is Mangalayatan
+University Fake? No. UGC-DEB Approved 2026"), whose H1 and lead sentence answer
+it again, with NAAC grade and validity, programme counts, named sources and a
+commission disclosure. That work was done on 2026-09-14.
+
+Building the recommendation as written would have duplicated an existing asset.
+The gap was somewhere else, and only visible by looking:
+
+| Check | Result |
+|---|---|
+| Verify pages in the sitemap | 125 of 125 |
+| Linked from the `/verify` hub | 123 |
+| **Linked from anywhere else on the site** | **only `lib/blog.ts`** |
+
+So 125 strong pages sat with no path into them from the university pages, the
+programme hubs, or the comparison table shipped the day before. Meanwhile 38 of
+the 121 MBA rows in that table printed "Not verified" for NAAC and pointed
+nowhere, which reads as "we did not look" rather than "the cycle lapsed and here
+is what we did check".
+
+**What shipped.** Every row of the comparison table now carries a "UGC-DEB
+verification" link where a page exists, 88 of 121 on the MBA table, and the
+"Not verified" cell is itself that link. Chandigarh University, whose NAAC cycle
+lapsed on 2026-09-09, now sends the reader from the empty cell to its
+verification page.
+
+**The join is the dangerous part.** `/verify` pages are keyed by Supabase slug
+and `lib/data.ts` ids do not agree with those: `upes-online` is
+`university-of-petroleum-and-energy-studies-online`, and
+`manipal-university-jaipur-online` is `manipal-university-online`. A naive join
+would send a reader to **another institution's** verification page, which is far
+worse than no link. `scripts/build-verify-slug-map.mjs` resolves it once through
+`supabase-uni-map` and commits the result, so the render stays pure and the
+mapping is reviewable in a diff. 102 of 143 universities map; the other 41 have
+no Supabase record, get no link, and are never guessed.
+
+**Guards.** `check-verify-slug-map` blocks drift from either side, and degrades
+sensibly without Supabase credentials by checking the committed file is
+internally consistent rather than skipping. Tested by pointing a mapping at a
+non-existent page and confirming exit 1. All 88 links on the MBA table were
+fetched and returned 200.
+
+**What could not be measured, and should not be claimed.** The 13 fake-or-legit
+blogs were redirected to `/verify/` on 2026-09-14, and the freshest GSC export
+ends 2026-09-12. **Every number quoted above predates the redirect**, so whether
+`/verify` is performing is unknown. Pull GSC before drawing any conclusion about
+this cluster.
+
+---
+
 ## 2026-09-28 (sixth batch) · /methodology, and a regen chain that no longer reproduces its own artifact
 
 **What was asked.** Move 4 of the AI citation plan: publish a dated methodology

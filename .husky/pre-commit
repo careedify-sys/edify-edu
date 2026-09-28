@@ -61,6 +61,14 @@ npx tsx scripts/check-university-count.mjs || exit 1
 echo "pre-commit: check-llms-txt"
 npx tsx scripts/build-llms-txt.mjs --check || exit 1
 
+# lib/data.ts ids and Supabase slugs disagree, and /verify pages are keyed by
+# the Supabase slug. A naive join sends a reader to another institution's
+# verification page, which is worse than no link. The committed map is built
+# through supabase-uni-map; this blocks it drifting from lib/data.ts or from
+# verify-slugs.json. Regenerate: node scripts/build-verify-slug-map.mjs
+echo "pre-commit: check-verify-slug-map"
+npx tsx scripts/build-verify-slug-map.mjs --check || exit 1
+
 echo "pre-commit: check-page-content-json"
 node scripts/check-page-content-json.mjs || exit 1
 
