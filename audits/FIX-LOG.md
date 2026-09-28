@@ -116,6 +116,104 @@ lapses.
 
 ---
 
+## 2026-09-27 · CSP was silently swallowing every Google Ads conversion beacon
+
+**What broke.** The site-wide Content-Security-Policy in `next.config.js` never
+listed the Google Ads beacon hosts. Every page load fired the AW-17380291250
+tag, the browser refused the request, and the tag reported success to nobody.
+Three directives were short:
+
+| directive | what it was dropping |
+|---|---|
+| `script-src` | `googleads.g.doubleclick.net/pagead/viewthroughconversion/17380291250/` |
+| `connect-src` | `www.google.com/ccm/collect`, `www.google.com/rmkt/collect`, `ad.doubleclick.net/ccm/s/collect` |
+| `frame-src` | `www.facebook.com`, the Meta pixel iframe |
+
+**Why it shipped to production, not just dev.** `headers()` applies the policy
+at the catch-all source `/(.*)`, and the only environment-gated token in it is
+`'unsafe-eval'`. Evaluating the config under `NODE_ENV=production` returns the
+same script-src, connect-src and frame-src lists it returns in dev. There is no
+second policy anywhere: `middleware.ts` sets no CSP, `vercel.json` holds only a
+cron entry, and no page emits a meta http-equiv policy. So the live site has
+carried this since the v16 deploy, commit 0c3246f on 2026-03-23, which is the
+same commit that added the AW tag. The Ads tag has never had a working beacon
+path on this domain.
+
+**Why nobody caught it for six months.** A CSP refusal is a browser console
+warning. It is not an error the page surfaces, not a failed build, and not
+anything the Google Ads UI reports. Ads shows zero conversions, which reads
+identically to "the campaign is not converting". The tag also loads fine and
+`window.gtag` is a function, so every surface-level check passes.
+
+**NOT VERIFIED: whether the Ads account shows zero.** There is no Google Ads
+access from this session, so "conversions recorded nothing" is inference from
+the blocked requests, not observation. Confirm in Google Ads under Goals then
+Conversions then Conversion actions, and in Tools then Google tag then tag
+diagnostics. Two things soften the claim and should be checked, not assumed:
+
+1. There is no `gtag('event','conversion',{send_to:'AW-...'})` anywhere in the
+   codebase. The only Ads code is `gtag('config','AW-17380291250')` in
+   `app/layout.tsx:206`, so what was blocked is the automatic page_view and
+   remarketing collection, not a hand-fired conversion event.
+2. The `generate_lead` and `cta_click` events do fire, and they travel to GA4
+   over `www.google-analytics.com`, which the policy always allowed. If the Ads
+   conversions are GA4 imports rather than Ads-native, they were landing the
+   whole time and only remarketing audience building was broken.
+
+**The trap in this fix, and why the console cannot be trusted alone.** The
+beacon is a three-hop redirect:
+
+```
+googleads.g.doubleclick.net/pagead/viewthroughconversion/17380291250/
+  -> 302 www.google.com/pagead/1p-user-list/17380291250/
+  -> 302 www.google.co.in/pagead/1p-user-list/...&ipr=y
+```
+
+CSP re-checks every redirect target, but reports the ORIGINAL url in the
+violation so the policy cannot be used to probe redirect chains. The console
+therefore only ever names `googleads.g.doubleclick.net`. Allow-listing just that
+host looks like a complete fix and leaves the beacon blocked at hop two.
+Allow-listing hops one and two still leaves it blocked at hop three, which is
+the country domain every Indian visitor lands on. Both dead ends were hit in
+this session before the chain was walked with curl and confirmed with a
+`securitypolicyviolation` probe inside the page.
+
+**What was added**, specific origins only, no wildcard and no `unsafe-`
+widening:
+
+- `script-src`: `googleads.g.doubleclick.net`, `www.google.com`, `www.google.co.in`
+- `connect-src`: `googleads.g.doubleclick.net`, `ad.doubleclick.net`, `www.google.com`
+- `frame-src`: `www.facebook.com`
+
+**KNOWN GAP, left open deliberately.** A visitor outside India bounces to their
+own Google ccTLD at hop three, `google.ae`, `google.com.sg` and so on, and is
+still blocked. Keeping the policy tight was the instruction, so the ccTLD list
+was not widened. If overseas traffic is worth measuring, add those specific
+ccTLDs. A wildcard like `https://*.google.com` would not match ccTLDs anyway.
+
+**How it was verified.** A `securitypolicyviolation` probe on a clean tab
+against the dev server, on `/` and `/review/ignou-online`, with deliberate
+controls so the probe is known to discriminate rather than just report silence:
+
+| probe | before | after |
+|---|---|---|
+| beacon pixel, googleads.g.doubleclick.net | violation, script-src-elem | loaded, no violation |
+| /ccm/collect, /rmkt/collect, ad.doubleclick.net | blocked | allowed |
+| www.facebook.com iframe | blocked | framed |
+| control: cdn.jsdelivr.net script | violation | violation, still blocked |
+| control: not-in-policy.example.com fetch | violation | violation, still blocked |
+| control: vimeo.com iframe | violation | violation, still blocked |
+
+Clean-tab console on both URLs reports no CSP violations. The production policy
+was checked by evaluating `headers()` under `NODE_ENV=production`, not inferred
+from the dev header.
+
+**What guards it.** A comment block now sits directly above the CSP in
+`next.config.js` naming each ad-tech origin, the redirect chain, and the fact
+that the policy ships to production. The thing being documented is the silence:
+someone tidying the origin list later will not see anything break.
+
+---
 
 ## 2026-09-24 · Shoolini highlights: rankings, USPs and inclusions across all 46 URLs
 
