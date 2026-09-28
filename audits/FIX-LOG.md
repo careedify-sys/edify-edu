@@ -9,6 +9,87 @@ the fix by accident.
 
 ---
 
+## 2026-09-28 (fifth batch) · The canonical comparison table, and the honesty that is the point of it
+
+**What was asked.** Move 3 of the AI citation plan: publish the comparison data
+in a shape a model can lift.
+
+**The gap, measured before building anything.** No page on the site published a
+server-rendered comparison table built from the live database:
+
+| Page | Server HTML | `<table>` | Rows |
+|---|---|---|---|
+| `/universities` | 1.43 MB | **0** | **0** |
+| `/programs/mba` | 1.41 MB | 1 | 8 |
+| `/best-online-mba-india` | 0.26 MB | 1 | 11 (static, hand-written) |
+| `/fees` | 0.54 MB | 1 | 144 (fee-framed) |
+
+`/universities` is the worst of these: 1.4 MB of cards with not one table row,
+and the string "NMIMS" appearing twice in the whole document. A model asked to
+compare Indian online MBAs gets a div blob. That is why Perplexity built its
+table from a competitor.
+
+**What shipped.** `components/ProgrammeComparisonTable.tsx`, a server component
+rendering one real `<table>` per programme hub: 121 rows on `/programs/mba`, 74
+on MCA, 80 on BBA, 57 on BCA, each with `<th scope="row">`, a screen-reader
+caption and an as-of date.
+
+**The honesty rules are the product, not a caveat on it.** Every competitor
+table asserts a NAAC grade and invents a fee range. This one:
+
+- prints a NAAC grade only where the Supabase snapshot confirms it **and** the
+  cycle is current, which is why 38 of the 121 MBA rows read "Not verified".
+  Chandigarh University, whose cycle lapsed on 2026-09-09, is one of them.
+- names the category on **every** NIRF rank, because Management and University
+  are separate tables. Symbiosis renders as "#11, Management category".
+- prints "Not published" rather than guessing a fee, on 20 of 121 MBA rows.
+
+A table that admits what it does not know is the one thing here a competitor
+cannot copy, and it is the same claim the site already makes about itself,
+finally made checkable.
+
+**Why the fee column is not the spine.** The obvious design was a fee-led table,
+and the data will not support one. 106 of 143 universities share a `feeMin`/`feeMax`
+pair with another university: **59 of them sit on the identical range 60000 to
+200000**, and 18 more are 0 to 0. Those are bulk-generated placeholders. The
+programme-level fees are better (101 of 121 MBA entries clear `getDisplayFee`,
+which already rejects ranges wider than 3x and figures below a credible floor),
+but 50 of those 101 still share a fee string with another university. They are
+round numbers that different universities plausibly do charge, so they are
+published, marked indicative, and routed to the university's own portal. The
+column is a supporting fact, not the axis.
+
+**Reused rather than reinvented.** `getDisplayFee` from `lib/fees.ts` already
+encodes the placeholder rules, and `/fees` already documents this cluster in its
+header comment. The new table calls that function rather than inventing a second
+opinion about which fees are real.
+
+**One wrong turn worth recording.** The table was first inserted after the
+`!activeSpec` H2 near the end of `app/programs/[...slug]/page.tsx`, which looked
+like the programme hub and is not. That file has three return paths: MBA hubs
+return early with `MBAHubClient`, other programme hubs return early with
+`ProgramHubClient`, and the code after them serves **specialisation** pages,
+where `!activeSpec` is always false. The insert compiled, passed typecheck,
+threw no error and rendered nothing. Caught by curling for `<tr>` and finding
+zero. It now sits in both hub branches, before their closing fragment.
+
+**Deliberately not on spec hubs.** A spec hub is a narrower cut of the same
+rows, and repeating the full table across dozens of them would be duplicate
+content on a site that already has gates against exactly that.
+
+**Cost.** `/programs/mba` grew from 1.41 MB to 1.63 MB, since server component
+output appears both as HTML and in the RSC flight payload. That doubling is also
+why raw string counts in the HTML read double: 78 occurrences of "Not verified"
+is 2 x 38 rows plus the one in the explanatory note.
+
+**How it was verified.** Rows counted per hub by curl. Chandigarh confirmed
+rendering "Not verified" with its NIRF Management rank intact, Symbiosis
+confirmed at "A++ valid to 2029-12-20" and "#11 Management category". The
+computed sentence "38 of these 121 universities" confirmed in the rendered
+output. Typecheck clean, full pre-commit suite passes.
+
+---
+
 ## 2026-09-28 (fourth batch) · The site was telling models seven different university counts
 
 **What was asked.** Start fixing the AI citation plan. This is moves 1 and 2 of

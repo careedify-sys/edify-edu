@@ -15,6 +15,7 @@ import { getCanonicalSpec } from '@/lib/specMapping'
 import { shouldIndexProgramsPath } from '@/lib/seo/should-index'
 import { MBA_SPEC_SEO_OVERRIDES } from '@/lib/mba-spec-seo-overrides'
 import { SPEC_HUB_EDITORIAL } from '@/lib/data/spec-hub-editorial'
+import ProgrammeComparisonTable from '@/components/ProgrammeComparisonTable'
 import ProgramPageClient from '@/components/ProgramPageClient'
 import MBAHubClient from '@/components/MBAHubClient'
 import MBASpecHubClient from '@/components/MBASpecHubClient'
@@ -671,6 +672,13 @@ export default async function CatchAllProgramPage(
           </div>
         </div>
         <MBAHubClient />
+        {/* The canonical machine-readable comparison for this programme. Lives
+            on the base hub only: a spec hub is a narrower cut of the same rows,
+            and repeating the full table across dozens of them would be
+            duplicate content. See the component header for why it exists. */}
+        <div className="max-w-7xl mx-auto px-4 pb-10">
+          <ProgrammeComparisonTable program={program} programSlug={programSlug} />
+        </div>
       </>
     )
     }
@@ -700,6 +708,9 @@ export default async function CatchAllProgramPage(
           </div>
         </div>
         <ProgramHubClient program={program} />
+        <div className="max-w-7xl mx-auto px-4 pb-10">
+          <ProgrammeComparisonTable program={program} programSlug={programSlug} />
+        </div>
       </>
     )
   }
