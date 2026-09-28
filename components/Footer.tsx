@@ -126,6 +126,7 @@ export default function Footer() {
               { label:'Discount Coupons',      href:'/coupons' },
               { label:'Blog',                  href:'/blog' },
               { label:'About Us',              href:'/about' },
+              { label:'Methodology',           href:'/methodology' },
               { label:'Contact Us',            href:'/contact' },
               { label:'Privacy Policy',        href:'/privacy-policy' },
               { label:'Terms of Use',          href:'/terms' },

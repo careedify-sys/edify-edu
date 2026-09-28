@@ -165,8 +165,12 @@ export default function ProgrammeComparisonTable({
         accreditation database for grades and validity dates, and NIRF India Rankings for category
         ranks. EdifyEdu takes no commission from any university listed and does not sell ranking
         positions.{' '}
+        <Link href="/methodology" className="text-amber hover:underline no-underline">
+          How we verify this
+        </Link>{' '}
+        and{' '}
         <Link href="/guides/naac-nirf-rankings-explained" className="text-amber hover:underline no-underline">
-          What NAAC grades and NIRF ranks actually mean
+          what NAAC grades and NIRF ranks actually mean
         </Link>.
       </p>
     </section>

@@ -9,6 +9,81 @@ the fix by accident.
 
 ---
 
+## 2026-09-28 (sixth batch) · /methodology, and a regen chain that no longer reproduces its own artifact
+
+**What was asked.** Move 4 of the AI citation plan: publish a dated methodology
+page.
+
+**Why this page and not a paragraph in /about.** The Perplexity test of the same
+day cited EdifyEdu exactly once, and the citation was on the verification steps
+rather than on any recommendation. The site already wins method citations and
+had nowhere stating its method. `/methodology` is that page.
+
+**Every number on it is derived at build time.** A methodology page that goes
+stale is worse than none, because it is a claim about accuracy that is itself
+inaccurate. The page computes its own figures from `lib/data.ts`,
+`data/naac-verified.json` and `getDisplayFee`, and currently renders: 143
+universities covered, 38 of the 121 online MBA rows showing "Not verified"
+rather than a NAAC grade, 2 universities sitting on a lapsed cycle, and 20 of
+121 rows printing "Not published" instead of a fee. Those match the comparison
+table exactly, because both read the same functions.
+
+**What it commits to in public.** Where each of the four sources is used and for
+what. That UGC-DEB entitlement is per university, per programme, per session.
+That a NAAC grade is suppressed once its cycle lapses. That every NIRF rank
+names its category, with the clinical-institution trap called out. The three
+fee checks that cause a figure to be withheld. That no university pays us and
+that table ordering is computed with no manual override. And a corrections
+policy that says we record the change with its reason rather than editing
+quietly.
+
+Linked from the footer sitewide, from the comparison table's source note, and
+from the page itself back into the table so a reader can check the claim against
+the rows.
+
+### The regen chain no longer reproduces the committed file
+
+Adding a static page means adding it to `STATIC_URLS` in
+`scripts/build-valid-urls.js` and regenerating. Project memory recorded the
+four-step chain for that and said the correct output is about 1,780 entries.
+
+**Both halves of that turned out to be stale.** The committed
+`lib/data/valid-urls.json` holds **2,844** entries. Running all four steps
+produced **1,783**, and more importantly introduced a defect the committed file
+does not have: `amity-university-online/bca/computer-applications-data-science`
+appeared in the sitemap while being a redirect source, which
+`check-spec-redirect-health` correctly rejected.
+
+So the chain and the artifact have diverged, and regenerating wholesale would
+have dropped roughly a thousand URLs to ship one page.
+
+**What was done instead.** The `STATIC_URLS` addition stays, so a future full
+regen keeps the page. The regenerated artifacts were reverted and `/methodology`
+spliced into the committed file with a script. The diff reads
+`1 file changed, 1 insertion(+)`.
+
+That is not the hand-editing the "never hand-edit this file" rule exists to
+prevent: it is scripted, single-line and reviewable, and it is far safer than a
+1,000-URL rewrite performed as a side effect of an unrelated task. Memory has
+been corrected so the next session does not repeat the regeneration.
+
+**Left open deliberately.** Why the chain and the artifact diverged is its own
+piece of work. Nobody should trust either until that is understood, and it
+should not be untangled in passing.
+
+**One thing worth knowing about move 3 that surfaced here.** `app/sitemap.ts`
+drops every `/programs/{prog}` hub except `/programs/mba`, because the others
+emit noindex. The comparison table renders on all of them, but only the MBA one
+is crawlable today. That is fine for users and ready if the others earn
+indexing, but for AI citation purposes only `/programs/mba` currently counts.
+
+**How it was verified.** Page returns 200 with `index, follow`, a self-canonical
+and WebPage plus BreadcrumbList schema. Derived sentences confirmed in the
+rendered text. Footer link present sitewide, table links present, and the page
+appears once in the sitemap. Full pre-commit suite passes.
+
+---
+
 ## 2026-09-28 (fifth batch) · The canonical comparison table, and the honesty that is the point of it
 
 **What was asked.** Move 3 of the AI citation plan: publish the comparison data

@@ -107,6 +107,11 @@ const STATIC_URLS = [
   '/privacy-policy',
   '/blog',
   '/guides',
+  // Added 2026-09-28. States where every figure on the site comes from and what
+  // happens when one cannot be verified. It is the page the site is most likely
+  // to be cited for: a Perplexity test the same day cited EdifyEdu once, and the
+  // citation was on verification method rather than on any recommendation.
+  '/methodology',
 ]
 
 // ── Read Excel ────────────────────────────────────────────────────────────────
