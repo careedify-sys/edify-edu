@@ -35,6 +35,15 @@ npx tsx scripts/check-blog-fees.mjs || exit 1
 # parse failure and returns null, which is indistinguishable from "no file", so a
 # broken file silently downgrades a spec page to the thin fallback. 35 files were
 # in that state on 2026-09-17. See scripts/check-page-content-json.mjs.
+# Quick Facts sidebar. The template reads lib/blog-quick-facts.ts and ignores
+# the quickFacts field on the post object, so an entry added with empty values
+# renders a card of blank cells while still returning 200 and still containing
+# the string "Quick Facts". That shipped twice, in fd2464c and f40abee. Blocks
+# any blank row. Missing entries are reported but not blocked, because 20 posts
+# are held back deliberately. See scripts/check-quick-facts.mjs.
+echo "pre-commit: check-quick-facts"
+npx tsx scripts/check-quick-facts.mjs || exit 1
+
 echo "pre-commit: check-page-content-json"
 node scripts/check-page-content-json.mjs || exit 1
 

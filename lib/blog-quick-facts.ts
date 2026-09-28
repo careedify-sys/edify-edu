@@ -222,5 +222,53 @@ export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; gr
     { label: 'Coursework assumes',            value: 'Spreadsheet and chart literacy' },
     { label: 'Real barrier',                  value: 'No exposure to organisational data' },
   ],
+  'online-mba-supply-chain-logistics-professionals-india-2026': [
+    { label: 'Labels touching supply chain',  value: '19 distinct ones' },
+    { label: 'Widest single label',           value: 'Operations Management, 38 unis' },
+    { label: 'The distinction that is real',  value: 'Inside your walls vs between them' },
+    { label: 'Most commonly missing paper',   value: 'Procurement and contracting' },
+  ],
+  'online-mba-teachers-educators-india-2026': [
+    { label: 'Education management labels',           value: '0 out of 171' },
+    { label: 'What school leadership usually names',  value: 'M.Ed and teaching years' },
+    { label: 'Strongest MBA case for a teacher',      value: 'Education technology' },
+    { label: 'Ask the university about',              value: 'Deferring an exam cycle' },
+  ],
+  'online-mba-doctors-mbbs-india-2026': [
+    { label: 'Does an MBA extend your licence',  value: 'No, NMC governs that' },
+    { label: 'Is MBBS eligible for an MBA',      value: "Yes, it is a bachelor's degree" },
+    { label: 'The trap for clinicians',          value: 'NIRF Medical rank is not Management' },
+    { label: 'The question that decides it',     value: 'Clinical or managerial decade' },
+  ],
+  'online-mba-retail-professionals-india-2026': [
+    { label: 'Retail Management labels',        value: '1, carried by 11 unis' },
+    { label: 'Of those, with a NIRF Mgt rank',  value: 'A small minority' },
+    { label: 'The paper that must be there',    value: 'Merchandise planning and buying' },
+    { label: 'Marketing alternative',           value: '62 unis, far more choice' },
+  ],
+  'online-mba-family-business-owners-india-2026': [
+    { label: 'Family Business labels in India',   value: '1 out of 171' },
+    { label: 'Entrepreneurship-adjacent labels',  value: '6, widest at 6 unis' },
+    { label: 'Often the better choice',           value: 'Finance, not Entrepreneurship' },
+    { label: 'The paper owners underrate',        value: 'Working capital management' },
+  ],
+  'online-mba-hospitality-hotel-professionals-india-2026': [
+    { label: 'Hospitality and tourism labels',  value: '7, none above 2 unis' },
+    { label: 'With any NIRF Mgt placement',     value: '2 of 7' },
+    { label: 'Usually the better buy',          value: 'Accreditation over sector label' },
+    { label: 'Strongest single move',           value: 'Revenue management' },
+  ],
+  'online-mba-insurance-professionals-india-2026': [
+    { label: 'Insurance-only MBA labels',  value: '1, at Amity Online' },
+    { label: 'What licenses you to sell',  value: 'IRDAI, not a degree' },
+    { label: 'What the degree opens',      value: 'Salaried and head office roles' },
+    { label: 'Paper that must be there',   value: 'Risk and underwriting principles' },
+  ],
+  'online-mba-agribusiness-professionals-india-2026': [
+    { label: 'Agribusiness labels',            value: '6, none above 2 unis' },
+    { label: 'With a verified NIRF Mgt rank',  value: '1 of 7 listings' },
+    { label: 'Search trap',                    value: 'One spelling hides the others' },
+    { label: 'Biggest practical constraint',   value: 'Rural connectivity' },
+  ],
 }
 

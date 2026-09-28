@@ -73,10 +73,112 @@ return the card and their own quick-fact label. All eight formerly blank posts
 return their values. Read the rendered card back out of the DOM on
 `online-mba-hr-executives-india-2026` and confirmed four populated rows.
 
-**Guard.** None added, and that is a gap worth naming. The guard that would have
-caught both defects is a check that every populated `quickFacts` field has a
-matching lookup entry with no empty values. It is not written yet because the 17
-unverified posts would fail it on the first run.
+**It recurred while this was being written.** `f40abee` landed on main during
+this fix with eight more profession posts, and all eight repeated the empty-value
+bug exactly: 31 blank values across 32 rows. Its commit message records the
+sidebar as verified, which it was, by the same test that cannot see the defect.
+Checking that the card renders passes whether or not the card has any content.
+Merged, then filled those eight the same way. Twenty-eight posts in total now
+render a populated box.
+
+**Guard.** `scripts/check-quick-facts.mjs`, wired into `.husky/pre-commit`. It
+fails the commit on any blank label or value in `lib/blog-quick-facts.ts`, which
+is the defect that shipped twice in two consecutive commits. It reports posts
+carrying an unread `quickFacts` field without failing, because 20 of those are
+held back on purpose and a blocking check there would have to be satisfied with
+unverified fee figures, which is the opposite of what is wanted. Verified by
+injecting a blank value and confirming a non-zero exit.
+
+---
+
+## 2026-09-28 (second batch) · Eight more profession audiences, and a validator that was lying
+
+**What was asked.** Continue the profession-audience work: check what is already
+covered and write only what is not.
+
+**How coverage was checked.** A script grepping the title, seoTitle, h1Title,
+metaDescription, targetKeyword and tags of all 217 published posts against 30
+candidate professions. Grepping the slug alone is what wrongly declared three
+universities uncovered in a previous session, so nothing here relies on it.
+
+The audit's useful correction: several professions that *looked* covered were
+covered only by **programme-intent** posts. `online-mba-entrepreneurship-india-2026`
+describes a specialisation; it is not written to a family business successor.
+Same for hospitality, aviation, real estate and supply chain. A programme page
+and an audience page are different documents with different readers.
+
+**What shipped.** Eight more career-intent posts: supply chain and logistics
+staff, teachers, doctors, retail professionals, family business owners,
+hospitality staff, insurance professionals, agribusiness professionals.
+Inventory is now **225 entries, 208 published**.
+
+**Why these eight.** Each needed a finding from the specialisation index, not a
+template. The index supplied one every time:
+
+- **Teachers: zero of 171 labels serve education.** No education management,
+  educational leadership or school administration label exists anywhere in the
+  online market. The post leads with that and then says the thing a seller would
+  not: for school leadership the recognised route is M.Ed, and an MBA is for
+  leaving the classroom rather than rising in it.
+- **Supply chain: 19 distinct labels for roughly one subject**, several differing
+  only by an ampersand or a plural. The post tells readers to ignore the label
+  and names the one distinction that is real (operations is inside your walls,
+  supply chain is between them).
+- **Family Business: exactly one label**, at Chandigarh University, whose NAAC
+  cycle has lapsed. The post then argues *against* the obvious choice, because
+  entrepreneurship coursework is built around starting something and a successor
+  is inheriting a going concern. Finance usually serves them better.
+- **Hospitality: 7 labels, none above two universities**, the thinnest field
+  mapped so far. Since you cannot have both the sector label and strong
+  accreditation, the post says take the accreditation.
+- **Insurance: one insurance-only label.** Framed on the same two-document logic
+  as the bank post: IRDAI licensing decides whether you can sell, a degree
+  decides which salaried roles read your application.
+- **Agribusiness: 6 labels across 7 listings, spelled inconsistently enough that
+  one spelling hides the others.** That search trap is the post's most useful line.
+- **Retail: exactly one clean label at 11 universities**, which makes it the
+  tidiest category in the market and moves the whole decision onto accreditation.
+- **Doctors** were written separately from nurses because the questions differ:
+  MD versus MBA, and the fact that an MBA confers nothing clinical.
+
+**The validator bug, which matters more than the posts.** A tag-balance check
+built with `new RegExp('<' + tag + '(\\s[^>]*)?>')` lost a backslash level when
+the script was written through a bash heredoc. The pattern became `(s[^>]*)?`,
+which matches no real tag, so the check counted **zero opening tags for every
+element** and concluded everything was balanced. It passed a post that had a
+stray `</p>`.
+
+Two posts in this batch carried that stray before it was caught by counting tags
+by hand. The check was rewritten to scan with `indexOf` and plain character
+comparison, with no backslash escapes anywhere in it, because a dynamically
+assembled regex in this codebase cannot be trusted to survive the shell.
+
+**A sweep it then found.** With the working check, **7 published posts predating
+this work have unbalanced tags**: `online-mba-for-working-professionals-india`,
+`nmims-online-mba-review-2026`, `iim-online-mba-india-2026`,
+`online-mba-lpu-review-2026`, `mba-course-duration-india-2026`,
+`online-bba-programs-india-2026`, `online-bba-fees-india-2026`. Browsers repair
+most stray `</p>` tags, but `nmims-online-mba-review-2026` has 15 opening divs
+against 19 closing ones, which can close a layout wrapper early. Not fixed here
+because it is unrelated to this task, and left for Rishi to schedule.
+
+**Constraints, unchanged and all holding.** Zero rupee figures (fee gate reports
+2433 unverified, unchanged from baseline). Every accreditation claim cross-checked
+against Supabase through `supabase-uni-map`. Chandigarh University's lapsed NAAC
+cycle flagged in all three posts naming it. SRM University Sikkim, O.P. Jindal,
+KL University, AMET, Dr. B.R. Ambedkar Open University and D.Y. Patil Navi Mumbai
+have no verified record and the tables say so. NIRF ranks always with category,
+which two posts make explicit: DPU-COL's strong ranks are Medical and Dental,
+JSS Academy's is Pharmacy, and neither has a Management placement.
+
+**Quick facts wired.** All eight added to `lib/blog-quick-facts.ts` and confirmed
+rendering. The twelve posts from 17 September are being handled separately.
+
+**How it was verified.** Runtime count (225 entries, 208 published, no duplicate
+slugs). All eight return 200 and render callouts, CTA, FAQ schema and the quick
+facts sidebar. House style checked by script including the repaired tag balance.
+Every internal link target resolved against `BLOG_POSTS`, `UNIVERSITIES` and
+`GUIDES`. Full `.husky/pre-commit` suite passed.
 
 ---
 
