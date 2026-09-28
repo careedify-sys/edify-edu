@@ -11,7 +11,7 @@ export const dynamic = 'force-static'
 
 // Metadata added 2026-09-27. This route exported none, so all 143 pre-rendered
 // /review/* pages inherited the root layout metadata verbatim: the homepage
-// title "Online Universities India 2026: 125+ UGC-DEB Ranked | EdifyEdu" and
+// title "Online Universities India 2026: 143 UGC-DEB Ranked | EdifyEdu" and
 // the homepage description, 143 times over.
 //
 // That had a visible cost. On the brand query "edifyedu" the top organic result

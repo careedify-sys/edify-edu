@@ -9,6 +9,113 @@ the fix by accident.
 
 ---
 
+## 2026-09-28 (fourth batch) · The site was telling models seven different university counts
+
+**What was asked.** Start fixing the AI citation plan. This is moves 1 and 2 of
+it: correct the facts models read, and ship a real freshness signal.
+
+**Why any of this matters.** A live Perplexity test on 28 September cited
+EdifyEdu once, for the verification steps, while a competitor owned the whole
+recommendation table. Access was never the problem: the crawlers reach the site
+and summarise it accurately. What they were reading was wrong in two ways.
+
+### The count nobody was counting
+
+The brief was "125+ appears in 17 files and the real number is 143". The gate
+written to enforce that found something worse. The site was simultaneously
+claiming **seven different university counts**:
+
+| Claim | Where | |
+|---|---|---|
+| 100+ | `components/BlogSidebarForm.tsx` | on every blog post |
+| 106+ | `components/Navbar.tsx` | **on every page of the site** |
+| 120+ | `app/tools/cgpa-calculator/` (3 places) | the page carrying ~49% of site impressions |
+| 122+ | `app/verify/page.tsx` | |
+| 125+ | 17 files incl. `app/layout.tsx`, homepage FAQ schema, `llms.txt` | sitewide meta description |
+| 127 | `app/contact/page.tsx` | |
+| 130+ | `app/contact/layout.tsx` | |
+
+`lib/data.ts` holds 143. Every one of those was an understatement, and a model
+crawling the site saw an accuracy-positioned platform unable to agree with
+itself about the size of its own database. All now read 143.
+
+The phrasing needed care rather than a blind replace. Several read "NMIMS,
+Amity, Symbiosis and 120+ universities", meaning 120 *more* beyond the named
+ones, so substituting the total would have overstated it. Those were rewritten
+as "across 143" rather than "and 143".
+
+### llms.txt is now generated, not hand-written
+
+Eight of its twenty-two NAAC claims were wrong, stale or unverifiable, and six
+of those contradicted `lib/data.ts`. Chandigarh University was still asserted as
+NAAC A+ nineteen days after its cycle lapsed on 2026-09-09. LPU, Parul, Manav
+Rachna and KL University were each listed a full grade below what both
+`lib/data.ts` and Supabase hold.
+
+Hand-maintaining a file whose whole purpose is to be read by language models is
+what allowed that, so `scripts/build-llms-txt.mjs` now generates it from
+`lib/data.ts` plus a committed snapshot of Supabase-verified grades
+(`data/naac-verified.json`, refreshed with `--refresh-naac`).
+
+**The generator's NAAC policy is the point of it.** A grade prints only when
+Supabase confirms it and the cycle has not lapsed. A lapsed cycle prints no
+grade. A university with no Supabase row prints no grade however confident
+`lib/data.ts` is. That silently dropped all eight problem universities from the
+graded list, which is the correct outcome: the file now says less and every word
+of it is true. It also states that NIRF ranks carry their category, since the
+old file printed grades with no such discipline.
+
+**Worth knowing:** the research behind this says llms.txt is largely ignored
+(Ahrefs, 137,000 sites, 97% with zero traffic). It was fixed because shipping
+wrong data is not acceptable regardless of who reads it, not because the file is
+expected to move citations. It should not be expanded further.
+
+### dateModified was a lie on all 208 posts
+
+`app/blog/[slug]/page.tsx` set `dateModified: post.publishedAt`, so every post
+signalled "never updated" however often it was revised. 2026 research describes
+a roughly three-month citation cliff, which makes this an actively harmful
+signal on an archive where most posts date from March to May.
+
+`BlogPost` now carries an optional `updatedAt`, and `dateModified` is
+`post.updatedAt || post.publishedAt`. The same fix went into
+`app/online-mca/[slug]/page.tsx`.
+
+**Deliberately not set to the build date.** That would claim a modification on
+every deploy, which is the dishonest version of this fix. No post was given an
+`updatedAt` in this commit, because none was substantively revised: the field is
+there for the next real revision. Verified both paths by temporarily setting one
+and confirming the schema picked it up, then reverting.
+
+**Two hardcoded dates left alone.** `best-online-mba-india` carries
+`dateModified: '2026-04-16'` and does not import `lib/data.ts`, so April is
+honest for static content that has not changed; the content being five months
+stale is a separate editorial call. `CompareClient` is a client component whose
+schema only renders on `/compare?a=X&b=Y`, and `robots.ts` blocks that pattern
+from crawling, so it is not worth a hydration-safe build constant.
+
+### Guards
+
+Both gates were tested by deliberately breaking them before being wired in, on
+the principle that a check which has never failed cannot be trusted.
+
+- `check-university-count` fails any coverage claim disagreeing with
+  `UNIVERSITIES.length`. It skips four shapes that look like coverage claims and
+  are not: ranking bands ("NIRF top-50 universities"), proportions ("63 of 128"),
+  code comments, and programme counts ("10 UGC DEB approved online MBA
+  programs"). `lib/blog.ts` is out of scope on purpose, since post bodies carry
+  dated statements that were true when written and rewriting an archive to match
+  today's number would falsify the record.
+- `check-llms-txt` regenerates and compares, so a hand-edit or a database drift
+  fails the commit.
+
+**One wrinkle worth recording.** The sed pass touched three lines that already
+contained em dashes, which made them "added lines" to `check-em-dash` and failed
+the commit. Editing a line makes you the author of its existing style
+violations. The three were rewritten rather than exempted.
+
+---
+
 ## 2026-09-28 (third batch) · Hero images for the last 31 posts, and five that lied to screen readers
 
 **What was asked.** Add images relevant to the posts.

@@ -71,7 +71,7 @@ export default function Footer() {
               { label:'Manipal Online',   href:'/universities/manipal-university-jaipur-online' },
               { label:'LPU Online',       href:'/universities/lovely-professional-university-online' },
               { label:'Amity Online',     href:'/universities/amity-university-online' },
-              { label:'View All 125+ →',  href:'/universities' },
+              { label:'View All 143 →',  href:'/universities' },
             ].map(l => (
               <Link key={l.href} href={l.href} className="footer-link">{l.label}</Link>
             ))}

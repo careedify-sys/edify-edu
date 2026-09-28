@@ -105,7 +105,7 @@ export default async function OnlineMcaPostPage({ params }: Props) {
     headline: post.title,
     description: post.metaDescription,
     datePublished: post.publishedAt,
-    dateModified: post.publishedAt,
+    dateModified: post.updatedAt || post.publishedAt,
     image: { '@type': 'ImageObject', url: 'https://edifyedu.in/og.webp', width: 1200, height: 630 },
     author: { '@type': 'Person', name: 'Rishi Kumar', url: 'https://edifyedu.in/about' },
     publisher: {

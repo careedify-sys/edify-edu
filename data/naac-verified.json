@@ -1,0 +1,394 @@
+{
+  "note": "Supabase-verified NAAC grades. Refresh with: node scripts/build-llms-txt.mjs --refresh-naac",
+  "refreshedAt": "2026-09-28",
+  "grades": {
+    "jain-university-online": {
+      "grade": "A++",
+      "validTill": null
+    },
+    "amity-university-online": {
+      "grade": "A+",
+      "validTill": "2027-12-31"
+    },
+    "lovely-professional-university-online": {
+      "grade": "A++",
+      "validTill": "2030-08-12"
+    },
+    "dayananda-sagar-university-online": {
+      "grade": "A+",
+      "validTill": null
+    },
+    "upes-online": {
+      "grade": "A",
+      "validTill": "2028-03-01"
+    },
+    "parul-university-online": {
+      "grade": "A++",
+      "validTill": "2030-02-20"
+    },
+    "amrita-vishwa-vidyapeetham-online": {
+      "grade": "A++",
+      "validTill": "2028-08-17"
+    },
+    "mangalayatan-university-online": {
+      "grade": "A+",
+      "validTill": "2030-03-30"
+    },
+    "shoolini-university-online": {
+      "grade": "A+",
+      "validTill": "2031-11-21"
+    },
+    "manipal-university-jaipur-online": {
+      "grade": "A+",
+      "validTill": "2027-02-14"
+    },
+    "galgotias-university-online": {
+      "grade": "A+",
+      "validTill": "2029-08-16"
+    },
+    "sikkim-manipal-university-online": {
+      "grade": "A+",
+      "validTill": "2029-08-23"
+    },
+    "symbiosis-university-online": {
+      "grade": "A++",
+      "validTill": "2029-12-20"
+    },
+    "chitkara-university-online": {
+      "grade": "A+",
+      "validTill": "2028-09-07"
+    },
+    "yenepoya-university-online": {
+      "grade": "A+",
+      "validTill": "2029-08-10"
+    },
+    "sharda-university-online": {
+      "grade": "A+",
+      "validTill": "2030-01-17"
+    },
+    "vignan-university-online": {
+      "grade": "A++",
+      "validTill": "2031-06-16"
+    },
+    "manonmaniam-sundaranar-university-online": {
+      "grade": "A+",
+      "validTill": "2032-06-20"
+    },
+    "nmims-online": {
+      "grade": "A++",
+      "validTill": "2032-06-28"
+    },
+    "manipal-academy-higher-education-online": {
+      "grade": "A++",
+      "validTill": "2029-05-31"
+    },
+    "chandigarh-university-online": {
+      "grade": "A+",
+      "validTill": "2026-09-09"
+    },
+    "vtu-online": {
+      "grade": "B+",
+      "validTill": "2029-03-29"
+    },
+    "integral-university-online": {
+      "grade": "A+",
+      "validTill": "2030-05-19"
+    },
+    "manav-rachna-online": {
+      "grade": "A++",
+      "validTill": "2030-02-20"
+    },
+    "karnataka-state-open-university-online": {
+      "grade": "A+",
+      "validTill": "2030-05-19"
+    },
+    "hindustan-institute-technology-online": {
+      "grade": "A+",
+      "validTill": "2030-10-06"
+    },
+    "guru-ghasidas-vishwavidyalaya-online": {
+      "grade": "A++",
+      "validTill": "2031-04-25"
+    },
+    "dr-babasaheb-ambedkar-open-university-online": {
+      "grade": "A++",
+      "validTill": "2029-07-26"
+    },
+    "marwadi-university-online": {
+      "grade": "A+",
+      "validTill": "2030-11-09"
+    },
+    "pp-savani-university-online": {
+      "grade": "A+",
+      "validTill": null
+    },
+    "university-of-mysore-online": {
+      "grade": "A",
+      "validTill": "2028-09-20"
+    },
+    "aligarh-muslim-university-online": {
+      "grade": "A+",
+      "validTill": "2029-05-10"
+    },
+    "gujarat-university-online": {
+      "grade": "A+",
+      "validTill": "2032-02-06"
+    },
+    "charusat-university-online": {
+      "grade": "A+",
+      "validTill": "2029-07-12"
+    },
+    "gls-university-online": {
+      "grade": "A+",
+      "validTill": null
+    },
+    "maharishi-markandeshwar-university-online": {
+      "grade": "A++",
+      "validTill": "2028-12-21"
+    },
+    "mizoram-university-online": {
+      "grade": "A+",
+      "validTill": "2032-06-28"
+    },
+    "vivekananda-global-university-online": {
+      "grade": "A+",
+      "validTill": "2029-08-16"
+    },
+    "uttaranchal-university-online": {
+      "grade": "A+",
+      "validTill": "2029-01-11"
+    },
+    "andhra-university-online": {
+      "grade": "A++",
+      "validTill": "2030-11-09"
+    },
+    "mahatma-gandhi-university-online": {
+      "grade": "A++",
+      "validTill": "2031-03-14"
+    },
+    "vit-university-online": {
+      "grade": "A++",
+      "validTill": "2028-08-31"
+    },
+    "karunya-university-online": {
+      "grade": "A++",
+      "validTill": "2029-08-16"
+    },
+    "kurukshetra-university-online": {
+      "grade": "A++",
+      "validTill": "2030-09-22"
+    },
+    "dr-dy-patil-vidyapeeth-online": {
+      "grade": "A++",
+      "validTill": "2029-02-08"
+    },
+    "jamia-millia-islamia-online": {
+      "grade": "A++",
+      "validTill": "2028-12-14"
+    },
+    "christ-university-online": {
+      "grade": "A+",
+      "validTill": "2029-10-26"
+    },
+    "bharati-vidyapeeth-university-online": {
+      "grade": "A++",
+      "validTill": "2031-11-08"
+    },
+    "assam-don-bosco-university-online": {
+      "grade": "A",
+      "validTill": "2028-11-30"
+    },
+    "university-of-lucknow-online": {
+      "grade": "A++",
+      "validTill": "2029-07-26"
+    },
+    "jss-university-online": {
+      "grade": "A++",
+      "validTill": null
+    },
+    "alliance-university-online": {
+      "grade": "A+",
+      "validTill": "2031-11-08"
+    },
+    "desh-bhagat-university-online": {
+      "grade": "A+",
+      "validTill": "2031-05-16"
+    },
+    "ganpat-university-online": {
+      "grade": "A",
+      "validTill": "2031-02-07"
+    },
+    "guru-nanak-dev-university-online": {
+      "grade": "A++",
+      "validTill": "2029-12-20"
+    },
+    "jaypee-university-online": {
+      "grade": "A+",
+      "validTill": "2031-04-25"
+    },
+    "sathyabama-university-online": {
+      "grade": "A++",
+      "validTill": "2030-05-19"
+    },
+    "anna-university-online": {
+      "grade": "A++",
+      "validTill": "2030-08-21"
+    },
+    "northcap-university-online": {
+      "grade": "A",
+      "validTill": "2029-08-02"
+    },
+    "noida-international-university-online": {
+      "grade": "A+",
+      "validTill": "2031-03-14"
+    },
+    "gujarat-technological-university-online": {
+      "grade": "A+",
+      "validTill": "2030-02-14"
+    },
+    "bit-mesra-online": {
+      "grade": "A",
+      "validTill": "2029-11-22"
+    },
+    "centurion-university-online": {
+      "grade": "A+",
+      "validTill": "2030-08-12"
+    },
+    "guru-kashi-university-online": {
+      "grade": "A++",
+      "validTill": "2030-05-19"
+    },
+    "jaipur-national-university-online": {
+      "grade": "A+",
+      "validTill": "2031-04-25"
+    },
+    "srm-institute-science-technology-online": {
+      "grade": "A++",
+      "validTill": "2029-08-16"
+    },
+    "university-of-madras-online": {
+      "grade": "A++",
+      "validTill": "2030-08-21"
+    },
+    "kalasalingam-university-online": {
+      "grade": "A++",
+      "validTill": "2031-02-14"
+    },
+    "alagappa-university-online": {
+      "grade": "A++",
+      "validTill": "2032-02-13"
+    },
+    "bharathiar-university-online": {
+      "grade": "A++",
+      "validTill": "2030-03-30"
+    },
+    "icfai-university-online": {
+      "grade": "A++",
+      "validTill": "2029-09-13"
+    },
+    "shiv-nadar-university-online": {
+      "grade": "A",
+      "validTill": "2026-11-26"
+    },
+    "gla-university-online": {
+      "grade": "A+",
+      "validTill": null
+    },
+    "jagannath-university-online": {
+      "grade": "A",
+      "validTill": null
+    },
+    "teerthanker-mahaveer-university-online": {
+      "grade": "A",
+      "validTill": "2029-06-21"
+    },
+    "subharti-university-online": {
+      "grade": "A",
+      "validTill": "2029-08-10"
+    },
+    "arka-jain-university-online": {
+      "grade": "A",
+      "validTill": "2031-02-22"
+    },
+    "jawaharlal-nehru-university-online": {
+      "grade": "A++",
+      "validTill": "2031-09-05"
+    },
+    "jamia-hamdard-online": {
+      "grade": "A+",
+      "validTill": "2030-12-15"
+    },
+    "university-of-kerala-online": {
+      "grade": "A++",
+      "validTill": "2029-06-21"
+    },
+    "graphic-era-university-online": {
+      "grade": "A+",
+      "validTill": "2029-08-23"
+    },
+    "devi-ahilya-vishwavidyalaya-online": {
+      "grade": "A+",
+      "validTill": "2026-11-26"
+    },
+    "madurai-kamaraj-university-online": {
+      "grade": "A++",
+      "validTill": "2028-03-16"
+    },
+    "university-of-mumbai-online": {
+      "grade": "A++",
+      "validTill": "2028-08-31"
+    },
+    "university-of-jammu-online": {
+      "grade": "A++",
+      "validTill": "2031-12-20"
+    },
+    "shivaji-university-online": {
+      "grade": "A++",
+      "validTill": "2028-03-31"
+    },
+    "banasthali-vidyapith-online": {
+      "grade": "A++",
+      "validTill": "2027-03-11"
+    },
+    "bangalore-university-online": {
+      "grade": "A++",
+      "validTill": "2030-06-10"
+    },
+    "dayalbagh-educational-institute-online": {
+      "grade": "A+",
+      "validTill": "2026-08-09"
+    },
+    "adichunchanagiri-university-online": {
+      "grade": "A+",
+      "validTill": "2031-08-23"
+    },
+    "deen-dayal-upadhyay-gorakhpur-university-online": {
+      "grade": "A++",
+      "validTill": "2030-01-17"
+    },
+    "guru-jambheshwar-university-online": {
+      "grade": "A+",
+      "validTill": "2029-10-18"
+    },
+    "mahatma-jyotiba-phule-rohilkhand-university-online": {
+      "grade": "A++",
+      "validTill": null
+    },
+    "mats-university-online": {
+      "grade": "A+",
+      "validTill": null
+    },
+    "mody-university-online": {
+      "grade": "A+",
+      "validTill": "2029-06-14"
+    },
+    "sage-university-online": {
+      "grade": "A+",
+      "validTill": null
+    },
+    "assam-down-town-university-online": {
+      "grade": "A+",
+      "validTill": "2032-05-09"
+    }
+  }
+}

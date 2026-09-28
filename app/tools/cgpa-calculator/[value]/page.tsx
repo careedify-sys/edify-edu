@@ -75,7 +75,7 @@ function buildFaqs(entry: CgpaValueEntry): CgpaFaqItem[] {
       : tier === 'tier-50-60'
         ? `Partly. ${percentage}% clears the 50% floor used by Galgotias, Sharda, LPU, Amity and Jain for online MBA admission. Premium programmes like NMIMS, Symbiosis SCDL and MAHE Online ask for 60% and above, so ${label} CGPA falls short of those.`
         : tier === 'tier-60-70'
-          ? `Yes. ${percentage}% qualifies you for the broader online MBA catalogue including NMIMS, Symbiosis, MAHE, Amity, LPU, Galgotias and 120+ UGC-DEB approved universities. Merit scholarships at most top programmes start at 70% and above, so you remain just outside fee-waiver slabs.`
+          ? `Yes. ${percentage}% qualifies you for the broader online MBA catalogue including NMIMS, Symbiosis, MAHE, Amity, LPU, Galgotias across 143 UGC-DEB approved universities. Merit scholarships at most top programmes start at 70% and above, so you remain just outside fee-waiver slabs.`
           : `Yes. ${percentage}% clears every UGC-DEB approved online MBA in India including NMIMS, Symbiosis, MAHE, Amity, LPU and 120+ others. You also qualify for merit-based scholarships and fee waivers at most premium universities.`
 
   return [
@@ -329,14 +329,14 @@ export default function CgpaValuePage({
                 className="bg-white border border-border rounded-xl p-4 hover:border-amber transition-colors"
               >
                 <div className="font-bold text-navy text-sm">Online MBA programmes</div>
-                <div className="text-xs text-ink-3 mt-1">Compare 120+ UGC-DEB approved MBAs</div>
+                <div className="text-xs text-ink-3 mt-1">Compare MBAs across 143 UGC-DEB universities</div>
               </Link>
               <Link
                 href="/universities"
                 className="bg-white border border-border rounded-xl p-4 hover:border-amber transition-colors"
               >
                 <div className="font-bold text-navy text-sm">Browse universities</div>
-                <div className="text-xs text-ink-3 mt-1">125+ universities, NIRF and NAAC data</div>
+                <div className="text-xs text-ink-3 mt-1">143 universities, NIRF and NAAC data</div>
               </Link>
               <Link
                 href="/tools/emi-calculator"

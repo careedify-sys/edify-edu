@@ -175,7 +175,7 @@ export default function Navbar() {
       <div className="bg-navy border-b border-white/[0.07] py-1.5 px-4 text-center text-xs">
         <span style={{ color: 'rgba(255,255,255,0.4)' }}>India&apos;s independent education guide — </span>
         <span className="text-amber font-bold">
-          106+ UGC DEB verified universities · NIRF ranked
+          143 UGC DEB verified universities · NIRF ranked
         </span>
       </div>
 

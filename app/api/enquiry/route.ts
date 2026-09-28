@@ -285,7 +285,7 @@ export async function POST(req: NextRequest) {
           `---`,
           `edifyedu.in`,
           `India's commission-free university comparison platform`,
-          `125+ UGC-DEB approved universities compared`,
+          `143 UGC-DEB approved universities compared`,
           ``,
           `WhatsApp: +91 70612 85806 - https://wa.me/${wa}`,
           `Email: hello@edifyedu.in`,
@@ -325,7 +325,7 @@ export async function POST(req: NextRequest) {
 
           `<p style="margin:0 0 2px;font-size:15px;font-weight:bold;color:#0f172a"><a href="https://edifyedu.in" style="color:#0f172a;text-decoration:none">edifyedu.in</a></p>`,
           `<p style="margin:0 0 6px;font-size:13px;color:#64748b;line-height:1.4">India's commission-free university comparison platform</p>`,
-          `<p style="margin:0 0 14px;font-size:12px;color:#94a3b8;line-height:1.4">125+ UGC-DEB approved universities compared</p>`,
+          `<p style="margin:0 0 14px;font-size:12px;color:#94a3b8;line-height:1.4">143 UGC-DEB approved universities compared</p>`,
 
           `<p style="margin:0 0 8px;font-size:12px;color:#64748b">`,
           `<a href="https://wa.me/${escHtml(wa)}" style="color:#64748b;text-decoration:none">WhatsApp +91 70612 85806</a>`,

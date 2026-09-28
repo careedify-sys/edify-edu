@@ -44,7 +44,7 @@ export default function CgpaEligibilityBanner({ percentage }: Props) {
       </div>
 
       <p className="text-xs mt-3" style={{ color: 'rgba(255,255,255,0.45)' }}>
-        Free counselling. Zero commission. 125+ UGC-approved universities.
+        Free counselling. Zero commission. 143 UGC-approved universities.
       </p>
     </div>
   )

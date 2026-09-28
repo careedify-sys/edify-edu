@@ -44,6 +44,23 @@ npx tsx scripts/check-blog-fees.mjs || exit 1
 echo "pre-commit: check-quick-facts"
 npx tsx scripts/check-quick-facts.mjs || exit 1
 
+# The site claimed seven different university counts at once (100+, 106+, 120+,
+# 122+, 127, 130 and 125+) while lib/data.ts held 143. The Navbar one appeared
+# on every page. A hardcoded count never breaks anything when the database
+# grows past it, it just understates the product to every reader, human and
+# model alike, and a site disagreeing with itself reads as unreliable to the
+# AI assistants we want citing it. See scripts/check-university-count.mjs.
+echo "pre-commit: check-university-count"
+npx tsx scripts/check-university-count.mjs || exit 1
+
+# public/llms.txt is written purely to be read by language models, and on
+# 2026-09-28 eight of its twenty-two NAAC claims were wrong, stale or
+# unverifiable, six of them contradicting lib/data.ts. It is now generated, so
+# this blocks a hand-edit or a drift from the database.
+# Regenerate with: node scripts/build-llms-txt.mjs
+echo "pre-commit: check-llms-txt"
+npx tsx scripts/build-llms-txt.mjs --check || exit 1
+
 echo "pre-commit: check-page-content-json"
 node scripts/check-page-content-json.mjs || exit 1
 

@@ -207,7 +207,9 @@ export default async function BlogPostPage({ params }: Props) {
     headline: post.title,
     description: post.metaDescription,
     datePublished: post.publishedAt,
-    dateModified: post.publishedAt,
+    // Falls back to publishedAt when a post has not been revised. Do not set
+    // this to the build date: that would claim a modification on every deploy.
+    dateModified: post.updatedAt || post.publishedAt,
     image: {
       '@type': 'ImageObject',
       url: post.heroImage || 'https://edifyedu.in/og.webp',

@@ -113,7 +113,7 @@ export default function HomePage() {
             </div>
 
             <h1 style={{ fontFamily:"'Fraunces',serif", fontSize:'clamp(2rem,5vw,3.5rem)', fontWeight:800, color:'#fff', lineHeight:1.12, marginBottom:'20px', letterSpacing:'-0.02em' }}>
-              Compare 125+ <span style={{ color:'var(--amber-bright)' }}>UGC Approved</span><br />
+              Compare 143 <span style={{ color:'var(--amber-bright)' }}>UGC Approved</span><br />
               Online Universities India 2026
             </h1>
 
@@ -511,8 +511,8 @@ export default function HomePage() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'VideoObject',
-          'name': 'What is EdifyEdu.in? Compare 125+ UGC Approved Online Universities India 2026',
-          'description': 'EdifyEdu compares 125+ UGC DEB approved online universities in India. No paid rankings. All data sourced from official NIRF, NAAC, and UGC portals.',
+          'name': 'What is EdifyEdu.in? Compare 143 UGC Approved Online Universities India 2026',
+          'description': 'EdifyEdu compares 143 UGC DEB approved online universities in India. No paid rankings. All data sourced from official NIRF, NAAC, and UGC portals.',
           'thumbnailUrl': 'https://img.youtube.com/vi/Waj6Ph6baVg/maxresdefault.jpg',
           'uploadDate': '2026-05-27T00:00:00+05:30',
           'embedUrl': 'https://www.youtube.com/embed/Waj6Ph6baVg',
@@ -530,13 +530,13 @@ export default function HomePage() {
               What is EdifyEdu? Watch the Explainer
             </h2>
             <p style={{ fontSize:'14px', color:'var(--ink-3)', marginTop:'10px', lineHeight:1.7 }}>
-              Compare 125+ UGC approved online universities honestly. No paid rankings. No referral commissions.
+              Compare 143 UGC approved online universities honestly. No paid rankings. No referral commissions.
             </p>
           </div>
           <div style={{ position:'relative', paddingBottom:'56.25%', height:0, borderRadius:'var(--r-md)', overflow:'hidden', boxShadow:'0 8px 32px rgba(15,23,42,0.12)', border:'1px solid var(--border)' }}>
             <iframe
               src="https://www.youtube.com/embed/Waj6Ph6baVg?si=6Ih8EfV5jUTEH6X9"
-              title="What is EdifyEdu.in? Compare 125+ UGC Approved Online Universities India 2026"
+              title="What is EdifyEdu.in? Compare 143 UGC Approved Online Universities India 2026"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen

@@ -102,7 +102,7 @@ export default function BlogSidebarForm({ postTitle, compact = false }: Props) {
         </div>
         {!compact && (
           <p className="text-[11px] text-slate-400 mt-1 leading-relaxed">
-            100+ UGC verified universities · NIRF ranked · Honest advice
+            143 UGC verified universities · NIRF ranked · Honest advice
           </p>
         )}
       </div>

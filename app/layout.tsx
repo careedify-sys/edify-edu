@@ -34,10 +34,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: 'Online Universities India 2026: 125+ UGC-DEB Ranked | EdifyEdu',
+    default: 'Online Universities India 2026: 143 UGC-DEB Ranked | EdifyEdu',
     template: '%s | EdifyEdu',
   },
-  description: '125+ UGC-DEB online universities ranked by NIRF & NAAC: verified fees ₹35K-5L, real placement data. Zero paid rankings. Check eligibility free at EdifyEdu.',
+  description: '143 UGC-DEB online universities ranked by NIRF & NAAC: verified fees ₹35K-5L, real placement data. Zero paid rankings. Check eligibility free at EdifyEdu.',
   keywords: [
     'online mba india 2026', 'best online mba india', 'online mba for working professionals',
     'ugc deb approved online degree', 'nirf ranked online mba', 'naac a++ online university',
@@ -65,12 +65,12 @@ export const metadata: Metadata = {
     siteName: 'edifyedu.in',
     type: 'website',
     locale: 'en_IN',
-    title: 'Online Universities India 2026: 125+ UGC-DEB Ranked | EdifyEdu',
-    description: '125+ UGC-DEB online universities ranked by NIRF & NAAC: verified fees ₹35K-5L, real placement data. Zero paid rankings. Check eligibility free at EdifyEdu.',
+    title: 'Online Universities India 2026: 143 UGC-DEB Ranked | EdifyEdu',
+    description: '143 UGC-DEB online universities ranked by NIRF & NAAC: verified fees ₹35K-5L, real placement data. Zero paid rankings. Check eligibility free at EdifyEdu.',
     url: 'https://edifyedu.in',
     images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: "edifyedu.in: India's honest guide to online degrees" }],
   },
-  twitter: { card: 'summary_large_image', site: '@edifyedu', title: 'Online Universities India 2026: 125+ UGC-DEB Ranked | EdifyEdu', description: '125+ UGC-DEB online universities ranked by NIRF & NAAC: verified fees ₹35K-5L, real placement data. Zero paid rankings. Check eligibility free.' },
+  twitter: { card: 'summary_large_image', site: '@edifyedu', title: 'Online Universities India 2026: 143 UGC-DEB Ranked | EdifyEdu', description: '143 UGC-DEB online universities ranked by NIRF & NAAC: verified fees ₹35K-5L, real placement data. Zero paid rankings. Check eligibility free.' },
   robots: {
     index: true,
     follow: true,

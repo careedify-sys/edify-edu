@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-28",
   "note": "Per-file em-dash baseline for app/**/*.tsx and components/**/*.tsx. Mirrors data/fee-mismatch-baseline.json: check-em-dash-baseline.mjs blocks any commit that raises a file above its allowed count. Files not listed are allowed zero. Count can only ratchet DOWN. See audits/em-dash-cleanup-components-2026-08-05.md for the planned cleanup.",
   "files": {
     "app/about/page.tsx": 14,
@@ -17,8 +17,8 @@
     "app/blog/BlogIndexClient.tsx": 1,
     "app/blog/page.tsx": 7,
     "app/blog/write/page.tsx": 7,
-    "app/compare/layout.tsx": 3,
-    "app/compare/page.tsx": 17,
+    "app/compare/layout.tsx": 2,
+    "app/compare/page.tsx": 16,
     "app/coupons/[slug]/page.tsx": 5,
     "app/coupons/page.tsx": 6,
     "app/guides/layout.tsx": 3,
@@ -46,7 +46,6 @@
     "app/universities/[id]/mba/[spec]/page.tsx": 1,
     "app/universities/[id]/mca/[spec]/page.tsx": 1,
     "app/universities/[id]/page.tsx": 4,
-    "app/universities/page.tsx": 1,
     "app/verify/[slug]/page.tsx": 6,
     "app/verify/page.tsx": 1,
     "components/admin/PexelsPicker.tsx": 1,

@@ -8,13 +8,13 @@ export default function CouponsHubBottomCta() {
           Still deciding? Talk to a counsellor.
         </h2>
         <p className="text-sm sm:text-base max-w-xl mx-auto" style={{ color: '#3B5068' }}>
-          Drop your details. We'll share current discounts across all 125+ UGC-DEB approved universities, no obligation.
+          Drop your details. We'll share current discounts across all 143 UGC-DEB approved universities, no obligation.
         </p>
       </div>
 
       <BlogLeadForm
         title="Get All Discounts"
-        desc="Free counselling across 125+ UGC-DEB approved universities. Zero commission. Honest advice."
+        desc="Free counselling across 143 UGC-DEB approved universities. Zero commission. Honest advice."
         submitLabel="Get All Discounts"
         source="coupons_hub_bottom"
         defaultProgram="Online MBA"

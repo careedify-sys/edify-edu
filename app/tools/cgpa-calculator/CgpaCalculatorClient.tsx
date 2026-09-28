@@ -126,7 +126,7 @@ export default function CgpaCalculatorClient() {
               <div className="text-sm leading-snug" style={{ color: 'rgba(255,255,255,0.92)' }}>
                 Most online MBA &amp; MCA programs in India require <strong style={{ color: '#fff' }}>50% aggregate</strong> (45% for reserved category). Not sure if your CGPA qualifies?{' '}
                 <span className="font-bold whitespace-nowrap" style={{ color: '#e0a93a' }}>
-                  Compare 125+ UGC-DEB approved online universities →
+                  Compare 143 UGC-DEB approved online universities →
                 </span>
               </div>
             </div>
@@ -330,7 +330,7 @@ export default function CgpaCalculatorClient() {
                       Your CGPA qualifies you for India's top online universities
                     </h2>
                     <p className="text-sm text-ink-2 leading-relaxed">
-                      Working professional or final-year student? Compare online MBA, BBA, MCA &amp; BCA programs from Symbiosis, MAHE, NMIMS, Amity, LPU and 120+ UGC-DEB approved universities.
+                      Working professional or final-year student? Compare online MBA, BBA, MCA &amp; BCA programs from Symbiosis, MAHE, NMIMS, Amity, LPU across 143 UGC-DEB approved universities.
                     </p>
                   </div>
                 </div>
@@ -374,7 +374,7 @@ export default function CgpaCalculatorClient() {
                       Looking at next steps after your degree?
                     </h2>
                     <p className="text-sm text-ink-2 leading-relaxed">
-                      125+ UGC-DEB approved online universities in India offer flexible MBA, MCA, BBA &amp; BCA programs. Many have relaxed eligibility for working professionals.
+                      143 UGC-DEB approved online universities in India offer flexible MBA, MCA, BBA &amp; BCA programs. Many have relaxed eligibility for working professionals.
                     </p>
                   </div>
                 </div>
@@ -614,7 +614,7 @@ export default function CgpaCalculatorClient() {
           />
           <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-2.5">
             {[
-              '125+ UGC-DEB verified universities',
+              '143 UGC-DEB verified universities',
               'Real fees, no hidden charges',
               "Independent advice. We don't sell admissions",
             ].map((t) => (

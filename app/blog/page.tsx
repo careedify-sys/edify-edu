@@ -67,7 +67,7 @@ function TrustStrip() {
       {[
         { icon: '✅', text: 'Every post fact-checked against UGC DEB & NIRF data' },
         { icon: '🔒', text: 'Zero paid university partnerships — 100% independent' },
-        { icon: '⭐', text: 'Real fees & salary data from 125+ universities' },
+        { icon: '⭐', text: 'Real fees & salary data from 143 universities' },
       ].map(({ icon, text }) => (
         <div key={text} className="flex items-start gap-3 mb-3 last:mb-0">
           <span className="text-base shrink-0 mt-0.5">{icon}</span>
@@ -153,7 +153,7 @@ export default function BlogPage() {
           {/* Stats row */}
           <div className="flex items-center gap-5 sm:gap-8">
             {[
-              { val: '125+', label: 'Universities reviewed' },
+              { val: '143', label: 'Universities reviewed' },
               { val: '2026', label: 'Data updated' },
               { val: 'Free', label: 'Independent advice' },
             ].map(({ val, label }) => (

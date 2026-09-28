@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: { absolute: 'Contact edifyedu.in, Free Counselling for Online Degrees' },
-  description: 'Speak with an education advisor at edifyedu.in for free. Get unbiased guidance on online MBA, MCA, BBA and BCA programs from 130+ UGC-DEB approved universities. No spam, no paid referrals.',
+  description: 'Speak with an education advisor at edifyedu.in for free. Get unbiased guidance on online MBA, MCA, BBA and BCA programs from 143 UGC-DEB approved universities. No spam, no paid referrals.',
   keywords: 'contact edifyedu, education advisor india, online mba guidance, free counselling online degree',
   alternates: { canonical: 'https://edifyedu.in/contact' },
   openGraph: {
     title: 'Contact edifyedu.in, Free Counselling for Online Degrees',
-    description: 'Speak with an education advisor for free. Unbiased guidance on online MBA, MCA, BBA and BCA from 130+ UGC-DEB approved universities.',
+    description: 'Speak with an education advisor for free. Unbiased guidance on online MBA, MCA, BBA and BCA from 143 UGC-DEB approved universities.',
     url: 'https://edifyedu.in/contact',
     type: 'website',
     images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: 'Contact EdifyEdu' }],

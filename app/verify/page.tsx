@@ -313,7 +313,7 @@ export default async function VerifyHomePage() {
               {
                 step: '01',
                 title: 'Search for your university',
-                body: 'Type the university name in the search bar above. We track 122+ UGC-DEB approved online universities. Results appear as you type.',
+                body: 'Type the university name in the search bar above. We track 143 UGC-DEB approved online universities. Results appear as you type.',
                 accent: '#1F6B52',
                 accentBg: '#E4F5EF',
               },

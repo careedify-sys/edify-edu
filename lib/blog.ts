@@ -4,6 +4,12 @@
 export interface BlogPost {
   slug: string; title: string; metaDescription: string; category: string
   tags: string[]; publishedAt: string; readTime: number; content: string
+  // Set this when a post's substance is revised, in YYYY-MM-DD form. It feeds
+  // schema.org dateModified, which previously just echoed publishedAt, so every
+  // post signalled "never updated" however often it was edited. Leave it unset
+  // on a post that has not been revised: dateModified falls back to publishedAt,
+  // and claiming a modification that did not happen is worse than claiming none.
+  updatedAt?: string
   faqs: { q: string; a: string }[]; relatedUniversities: string[]
   targetKeyword: string; status: 'published' | 'draft' | 'redirected'
   ctaTitle?: string; ctaDesc?: string

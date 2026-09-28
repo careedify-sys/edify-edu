@@ -1,15 +1,17 @@
 # Edify Education
-> India's independent online degree comparison platform. We cover 125+ UGC-DEB verified universities offering online MBA, MCA, BBA, BCA, BA, MA, B.Com, M.Com, MSc programs.
-> All data is independently verified. No paid university partnerships.
+> India's independent online degree comparison platform. We cover 143 UGC-DEB universities offering online MBA, MCA, BBA, BCA, BA, MA, B.Com, M.Com and MSc programmes.
+> All data is independently verified. No paid university partnerships and no referral commissions.
 
 ## Key Facts
-- All universities listed are UGC-DEB approved
-- Fee data updated 2026
-- Independent platform — no paid rankings
-- NIRF and NAAC data from official government sources
+- 143 universities covered, each carrying UGC-DEB entitlement for at least one online programme
+- UGC-DEB entitlement is granted per university, per programme, per academic session, and is not a permanent institutional badge
+- NAAC grades below are printed only where an accreditation record confirms them and the cycle has not lapsed
+- NIRF ranks always state their category; a Management rank and a University rank are different tables and are not interchangeable
+- Independent platform, no paid rankings, no referral commissions
 - Platform URL: https://edifyedu.in
+- Fees change between intakes. Verify any figure against the university's own portal before acting on it.
 
-## Programs
+## Programmes
 - Online MBA: https://edifyedu.in/programs/mba
 - Online MCA: https://edifyedu.in/programs/mca
 - Online BBA: https://edifyedu.in/programs/bba
@@ -30,51 +32,53 @@
 - MBA Operations Management: https://edifyedu.in/programs/mba/operations-management
 - MBA International Business: https://edifyedu.in/programs/mba/international-business
 
-## Top Universities
-- Amity University Online (NAAC A+): https://edifyedu.in/universities/amity-university-online
-- NMIMS Online (NAAC A++): https://edifyedu.in/universities/nmims-online
-- Symbiosis University Online (NAAC A++): https://edifyedu.in/universities/symbiosis-university-online
-- JAIN University Online (NAAC A++): https://edifyedu.in/universities/jain-university-online
-- Chandigarh University Online (NAAC A+): https://edifyedu.in/universities/chandigarh-university-online
-- LPU Online (NAAC A+): https://edifyedu.in/universities/lovely-professional-university-online
-- Manipal Academy (MAHE) Online (NAAC A++): https://edifyedu.in/universities/manipal-academy-higher-education-online
-- Manipal University Jaipur Online (NAAC A+): https://edifyedu.in/universities/manipal-university-jaipur-online
-- Shoolini University Online (NAAC A+): https://edifyedu.in/universities/shoolini-university-online
-- UPES Online (NAAC A): https://edifyedu.in/universities/upes-online
-- Dayananda Sagar University Online (NAAC A+): https://edifyedu.in/universities/dayananda-sagar-university-online
-- D.Y. Patil University Online (NAAC A+): https://edifyedu.in/universities/dy-patil-university-online
-- Parul University Online (NAAC A+): https://edifyedu.in/universities/parul-university-online
-- Amrita Vishwa Vidyapeetham Online (NAAC A++): https://edifyedu.in/universities/amrita-vishwa-vidyapeetham-online
-- Sikkim Manipal University Online (NAAC A): https://edifyedu.in/universities/sikkim-manipal-university-online
-- Galgotias University Online (NAAC A+): https://edifyedu.in/universities/galgotias-university-online
-- Chitkara University Online (NAAC A+): https://edifyedu.in/universities/chitkara-university-online
-- Sharda University Online (NAAC A+): https://edifyedu.in/universities/sharda-university-online
-- KL University Online (NAAC A+): https://edifyedu.in/universities/kl-university-online
-- Manav Rachna Online (NAAC A+): https://edifyedu.in/universities/manav-rachna-online
-- SRM Institute of Science and Technology Online (NAAC A++): https://edifyedu.in/universities/srm-institute-science-technology-online
-- BITS Pilani Work Integrated (NAAC A++): https://edifyedu.in/universities/bits-pilani-work-integrated-online
+## Universities with a current verified NAAC grade
+> Ordered by NIRF Management rank where one is on record. A university absent from this list is still covered on the site; it simply has no current verified grade to quote.
+- Symbiosis School for Online and Digital Learning (SSODL), Pune Online (NAAC A++, NIRF Management #11): https://edifyedu.in/universities/symbiosis-university-online
+- NMIMS (Narsee Monjee Institute of Management Studies) Online (NAAC A++, NIRF Management #24): https://edifyedu.in/universities/nmims-online
+- Amrita Vishwa Vidyapeetham Online (NAAC A++, NIRF Management #26): https://edifyedu.in/universities/amrita-vishwa-vidyapeetham-online
+- Jamia Millia Islamia (JMI) Online (NAAC A++, NIRF Management #28): https://edifyedu.in/universities/jamia-millia-islamia-online
+- University of Petroleum & Energy Studies (UPES) Online (NAAC A, NIRF Management #36): https://edifyedu.in/universities/upes-online
+- Manipal Academy of Higher Education (MAHE) Online (NAAC A++, NIRF Management #39): https://edifyedu.in/universities/manipal-academy-higher-education-online
+- Lovely Professional University Online (NAAC A++, NIRF Management #44): https://edifyedu.in/universities/lovely-professional-university-online
+- ICFAI Foundation for Higher Education Online (NAAC A++, NIRF Management #46): https://edifyedu.in/universities/icfai-university-online
+- Amity University Online (NAAC A+, NIRF Management #49): https://edifyedu.in/universities/amity-university-online
+- GRAPHIC ERA UNIVERSITY Online (NAAC A+, NIRF Management #52): https://edifyedu.in/universities/graphic-era-university-online
+- SRM Institute of Science and Technology Online (NAAC A++, NIRF Management #56): https://edifyedu.in/universities/srm-institute-science-technology-online
+- Christ (Deemed to be University) Online (NAAC A+, NIRF Management #57): https://edifyedu.in/universities/christ-university-online
+- Aligarh Muslim University Online (NAAC A+, NIRF Management #69): https://edifyedu.in/universities/aligarh-muslim-university-online
+- Alliance University Online (NAAC A+, NIRF Management #71): https://edifyedu.in/universities/alliance-university-online
+- JAIN (Deemed-to-be University) Online (NAAC A++, NIRF Management #73): https://edifyedu.in/universities/jain-university-online
+- Chitkara University Online (NAAC A+, NIRF Management #78): https://edifyedu.in/universities/chitkara-university-online
+- Manipal University Jaipur (MUJ) Online (NAAC A+, NIRF Management #81): https://edifyedu.in/universities/manipal-university-jaipur-online
+- JAMIA HAMDARD Online (NAAC A+, NIRF Management #87): https://edifyedu.in/universities/jamia-hamdard-online
+- Anna University Online (NAAC A++, NIRF Management #88): https://edifyedu.in/universities/anna-university-online
+- Birla Institute of Technology (BIT) Mesra Online (NAAC A, NIRF Management #97): https://edifyedu.in/universities/bit-mesra-online
+- University of Lucknow Online (NAAC A++, NIRF Management #100): https://edifyedu.in/universities/university-of-lucknow-online
+- ADICHUNCHANAGIRI UNIVERSITY Online (NAAC A+): https://edifyedu.in/universities/adichunchanagiri-university-online
+- Alagappa University Online (NAAC A++): https://edifyedu.in/universities/alagappa-university-online
+- Andhra University Online (NAAC A++): https://edifyedu.in/universities/andhra-university-online
+- ARKA JAIN University – JGI Online (arkajain.edu.in) Online (NAAC A): https://edifyedu.in/universities/arka-jain-university-online
 
-## University MBA Pages
-- Amity MBA: https://edifyedu.in/universities/amity-university-online/mba
-- NMIMS MBA: https://edifyedu.in/universities/nmims-online/mba
-- Symbiosis MBA: https://edifyedu.in/universities/symbiosis-university-online/mba
-- LPU MBA: https://edifyedu.in/universities/lovely-professional-university-online/mba
-- Chandigarh University MBA: https://edifyedu.in/universities/chandigarh-university-online/mba
-- Manipal Jaipur MBA: https://edifyedu.in/universities/manipal-university-jaipur-online/mba
-- JAIN MBA: https://edifyedu.in/universities/jain-university-online/mba
-- SRM MBA: https://edifyedu.in/universities/srm-institute-science-technology-online/mba
+## Verification and methodology
+- How to check UGC-DEB approval yourself: https://edifyedu.in/guides/how-to-check-ugc-deb-approval
+- What NAAC and NIRF actually mean: https://edifyedu.in/guides/naac-nirf-rankings-explained
+- Is an online degree valid in India: https://edifyedu.in/guides/is-online-degree-valid-india
+- UGC Distance Education Bureau programme register: https://deb.ugc.ac.in
+- NAAC accreditation database: https://naac.gov.in
+- NIRF India Rankings: https://nirfindia.org
 
 ## Tools
-- Compare Universities: https://edifyedu.in/compare
-- All Universities: https://edifyedu.in/universities
+- Compare universities side by side: https://edifyedu.in/compare
+- All universities: https://edifyedu.in/universities
 - Guides: https://edifyedu.in/guides
-- Blog: https://edifyedu.in/blog
-- CGPA to Percentage Calculator: https://edifyedu.in/tools/cgpa-calculator
-- Percentage to GPA Calculator: https://edifyedu.in/tools/percentage-to-gpa
-- EMI Calculator: https://edifyedu.in/tools/emi-calculator
-- All Tools: https://edifyedu.in/tools
+- Blog, university reviews and career guides: https://edifyedu.in/blog
+- CGPA to percentage calculator: https://edifyedu.in/tools/cgpa-calculator
+- Percentage to GPA calculator: https://edifyedu.in/tools/percentage-to-gpa
+- Fee EMI calculator: https://edifyedu.in/tools/emi-calculator
 
 ## About
-Edify is India's first independent research portal for UGC DEB approved online degrees.
-We do not accept payments from universities. All rankings are based on official NIRF data.
-Contact: hello@edifyedu.in | +91 70612 85806
+Edify Education is an independent research portal for UGC-DEB approved online degrees in India.
+We accept no payment from any university and we do not sell ranking positions.
+Rankings cite NIRF with the category named; accreditation cites NAAC with its validity date.
+Contact: hello@edifyedu.in
