@@ -9,6 +9,91 @@ the fix by accident.
 
 ---
 
+## 2026-09-28 (third batch) · Hero images for the last 31 posts, and five that lied to screen readers
+
+**What was asked.** Add images relevant to the posts.
+
+**Scope.** 31 of 208 published posts had no `heroImage`: the 16 written today
+plus 15 older ones. All 31 now have one, so every published post carries a hero.
+
+**Why this is not just decoration.** `app/blog/[slug]/page.tsx` feeds `heroImage`
+into `openGraph.images` and `twitter.images` as well as the page body. A post
+without one fell back to the generic site card, so every share of those 31 posts
+looked identical on social and in chat previews.
+
+**Why not `scripts/add-pexels-images-to-blogs.js`.** Two reasons, both blocking.
+Its block parser matches `slug: '...'` and `"slug": "..."`, and the 16 posts of
+today are written `slug: "..."` at four-space indent, so it would have silently
+skipped every one of them. Its `decideQuery` keyword mapper is also too coarse
+for profession posts: the branch order sends anything containing "mba" to
+"indian professional online learning laptop", so the nurse post, the product
+manager post and the agribusiness post would all have received the same stock
+laptop photo. Queries were written per post instead, and results were read for
+relevance rather than taking `photos[0]`.
+
+**Everything is from the Pexels API.** Photographer name, photographer URL, image
+URL and base alt text all come from the API response. Nothing about a
+photographer was composed by hand. Each chosen URL was checked with a HEAD
+request for a 200 and an `image/*` content type before anything was written, and
+the script refuses to write if any fail.
+
+**One judgement worth recording: no campus photographs on university reviews.**
+Seven of the 15 older posts review a named university. A stock campus building
+under "Parul University Online MBA Review" reads as a photograph of Parul's
+campus, which would be a quiet fabrication on a site whose whole claim is
+independence. Those seven got neutral study, library, graduation and online-class
+imagery instead, with alt text that describes the scene and names no institution.
+
+**Stock-library sales copy stripped from alt text.** Pexels alt sometimes ends
+with "Ideal for business and HR visuals". That describes a licensing use case,
+not the image, and does not belong in an alt attribute.
+
+**Two candidate images rejected on review**, which is why results are read rather
+than trusted by rank: a fees post was offered photos of US dollar bills, wrong
+currency for an Indian fees comparison, and the workload post was offered a woman
+studying with a glass of wine.
+
+**The defect found on the way, which matters more than the additions.** Five MCA
+posts shared one identical image (Pexels 574071), none credited, and two carried
+alt text describing an image that is not there:
+
+- `online-mca-amity-vs-lpu-2026` said "Two laptops side by side representing the
+  comparison between Amity and LPU" over a photo of one pair of hands coding.
+- `mca-after-bca-is-it-good-2026` said "BCA graduate weighing options" over the
+  same photo.
+
+A sighted reader sees a generic coding photo and moves on. A screen reader user
+is told there are two laptops, or a graduate deciding, and there is neither. That
+is an accessibility defect rather than a style nit, and
+`mca-vs-btech-which-is-better-2026` is the site's second-biggest page by
+impressions, so it sat on a page that matters. Four received distinct relevant
+images with accurate alt text. `online-mca-india-2026` kept 574071, whose alt
+does describe it honestly, and gained the missing credit to Lukas Blazek.
+
+**Duplicate sweep.** After the additions, nine images were used by more than one
+published post. One collision was introduced by this work
+(`best-online-mba-for-women-india-2026` landed on the photo already used by
+`online-mba-for-working-professionals-india`) and was swapped. The remaining
+**8 pairs predate this work** and were left alone: a 2x repeat across 208 posts
+is a far smaller problem than the 5x it replaced, and changing them is a
+judgement call for Rishi rather than a defect fix.
+
+**Not changed, but worth knowing.** `chandigarh-online-bba-review-2026` uses a
+local SVG hero and correctly needs no Pexels credit, so it is the only published
+post without `heroImageAttribution`. Its alt text carries a rupee figure, which
+the blog fee gate cannot see because `scanAllPosts()` reads `post.content` only
+(`scripts/lib/blog-fee-scan.mjs:614`). No fee claim appears in any alt text
+written here.
+
+**How it was verified.** 208 of 208 published posts now carry a hero, 0 without
+alt, 1 without attribution and that one by design. Typecheck clean. Fee gate
+unchanged from baseline at 2433, confirming no currency entered the scanned
+field. Duplicate-slug, em-dash and quick-facts gates pass. Rendered pages checked
+for the `<img>`, the `og:image` and the attribution line, and the agribusiness
+hero confirmed visually in the browser.
+
+---
+
 ## 2026-09-28 · Quick Facts sidebar rendered nothing on twenty posts
 
 **What was reported.** The Quick Facts box was missing on the twelve posts of

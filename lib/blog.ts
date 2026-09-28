@@ -42,6 +42,9 @@ export const getBlogPost = getPostBySlug
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "online-mba-supply-chain-logistics-professionals-india-2026",
+    heroImage: "https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Team working in an industrial warehouse discussing and organizing inventory with pallets.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@tiger-lily\" target=\"_blank\" rel=\"noopener nofollow\">Tiger Lily</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA for Supply Chain and Logistics Professionals 2026",
     seoTitle: "Online MBA for Supply Chain Professionals: 19 Labels",
     h1Title: "Online MBA for Supply Chain and Logistics Professionals",
@@ -62,6 +65,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-teachers-educators-india-2026",
+    heroImage: "https://images.pexels.com/photos/5212342/pexels-photo-5212342.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Teacher interacting with students raising hands in a classroom setting.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@max-fischer\" target=\"_blank\" rel=\"noopener nofollow\">Max Fischer</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA for Teachers 2026: There Is No Education MBA",
     seoTitle: "Online MBA for Teachers: The Label That Does Not Exist",
     h1Title: "Online MBA for Teachers and Educators: Read the Eligibility Clause First",
@@ -82,6 +88,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-doctors-mbbs-india-2026",
+    heroImage: "https://images.pexels.com/photos/6129112/pexels-photo-6129112.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "A doctor in a lab coat reviews a medical chart in a hospital hallway.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@rdne\" target=\"_blank\" rel=\"noopener nofollow\">RDNE Stock project</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA for Doctors 2026: What It Can and Cannot Do",
     seoTitle: "Online MBA for Doctors: Not an Alternative to MD",
     h1Title: "Online MBA for Doctors: An MBA Adds Nothing Clinical",
@@ -102,6 +111,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-retail-professionals-india-2026",
+    heroImage: "https://images.pexels.com/photos/5864244/pexels-photo-5864244.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Customers browsing clothing in a stylish boutique store with elegant interior design.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@rachel-claire\" target=\"_blank\" rel=\"noopener nofollow\">Rachel Claire</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA for Retail Professionals 2026: Floor to Head Office",
     seoTitle: "Online MBA for Retail Professionals: Store to Buying",
     h1Title: "Online MBA for Retail Professionals: The Head Office Is a Different Company",
@@ -122,6 +134,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-family-business-owners-india-2026",
+    heroImage: "https://images.pexels.com/photos/36729739/pexels-photo-36729739.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Confident café owner stands with arms crossed inside a rustic, cozy coffee shop.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@silverkblack\" target=\"_blank\" rel=\"noopener nofollow\">Vitaly Gariev</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA for Family Business Owners 2026: What It Buys You",
     seoTitle: "Online MBA for Family Business Owners: One Label Exists",
     h1Title: "Online MBA for Family Business Owners and Successors",
@@ -142,6 +157,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-hospitality-hotel-professionals-india-2026",
+    heroImage: "https://images.pexels.com/photos/5378703/pexels-photo-5378703.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Guests interacting at a luxurious hotel reception desk, emphasizing hospitality and service.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@cottonbro\" target=\"_blank\" rel=\"noopener nofollow\">cottonbro studio</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA for Hotel and Hospitality Professionals 2026",
     seoTitle: "Online MBA for Hospitality Professionals: A Thin Field",
     h1Title: "Online MBA for Hotel and Hospitality Professionals",
@@ -162,6 +180,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-insurance-professionals-india-2026",
+    heroImage: "https://images.pexels.com/photos/7734574/pexels-photo-7734574.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Close-up image of two people signing an insurance policy document on a wooden desk.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@mikhail-nilov\" target=\"_blank\" rel=\"noopener nofollow\">Mikhail Nilov</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA for Insurance Professionals 2026: Licence vs Degree",
     seoTitle: "Online MBA for Insurance Professionals: One Label Only",
     h1Title: "Online MBA for Insurance Professionals: Two Documents, One Career",
@@ -182,6 +203,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-agribusiness-professionals-india-2026",
+    heroImage: "https://images.pexels.com/photos/20445181/pexels-photo-20445181.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "An Indian farmer tends to a lush wheat field under clear skies.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@equalstock\" target=\"_blank\" rel=\"noopener nofollow\">EqualStock IN</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA for Agribusiness Professionals 2026: Six Labels",
     seoTitle: "Online MBA for Agribusiness: Search All Six Spellings",
     h1Title: "Online MBA for Agribusiness and Agri Input Professionals",
@@ -202,6 +226,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-business-analysts-india-2026",
+    heroImage: "https://images.pexels.com/photos/3183131/pexels-photo-3183131.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Coworkers analyzing data charts on laptops during a team meeting.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@fauxels\" target=\"_blank\" rel=\"noopener nofollow\">fauxels</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA for Business Analysts 2026: Is It Worth It?",
     seoTitle: "Online MBA for Business Analysts: What It Changes",
     h1Title: "Online MBA for Business Analysts: What It Actually Changes",
@@ -222,6 +249,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-sales-professionals-india-2026",
+    heroImage: "https://images.pexels.com/photos/6285086/pexels-photo-6285086.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Three businessmen in suits having a meeting, shaking hands in front of a presentation chart.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@gustavo-fring\" target=\"_blank\" rel=\"noopener nofollow\">Gustavo Fring</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA for Sales Professionals 2026: The Label Problem",
     seoTitle: "Online MBA for Sales Professionals: Read This First",
     h1Title: "Online MBA for Sales Professionals: There Is No MBA in Sales",
@@ -242,6 +272,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-medical-representatives-pharma-2026",
+    heroImage: "https://images.pexels.com/photos/9155927/pexels-photo-9155927.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Close-up of doctor writing prescription with medicines and stethoscope on desk.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@towfiqu-barbhuiya-3440682\" target=\"_blank\" rel=\"noopener nofollow\">Towfiqu barbhuiya</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA for Medical Representatives 2026: Field to Head Office",
     seoTitle: "Online MBA for Medical Representatives: The Real Move",
     h1Title: "Online MBA for Medical Representatives: Buying a Door, Not a Rung",
@@ -262,6 +295,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-hr-executives-india-2026",
+    heroImage: "https://images.pexels.com/photos/36733328/pexels-photo-36733328.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Confident woman interviewing candidate in a modern office.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@silverkblack\" target=\"_blank\" rel=\"noopener nofollow\">Vitaly Gariev</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA for HR Executives 2026: Processing to Partnering",
     seoTitle: "Online MBA for HR Executives: What Actually Changes",
     h1Title: "Online MBA for HR Executives: The Most Crowded Label in India",
@@ -282,6 +318,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-civil-site-engineers-project-management-2026",
+    heroImage: "https://images.pexels.com/photos/8961133/pexels-photo-8961133.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Engineering team analyzing blueprints together at an outdoor construction site with safety gear.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@mikael-blomkvist\" target=\"_blank\" rel=\"noopener nofollow\">Mikael Blomkvist</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA for Civil and Site Engineers 2026: Site to Planning",
     seoTitle: "Online MBA for Civil Engineers: Degree or Certification?",
     h1Title: "Online MBA for Civil and Site Engineers: Which Move Are You Making?",
@@ -302,6 +341,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-nurses-healthcare-professionals-india-2026",
+    heroImage: "https://images.pexels.com/photos/6129194/pexels-photo-6129194.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "A nurse in blue scrubs reads a folder near an emergency room sign in a hospital.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@rdne\" target=\"_blank\" rel=\"noopener nofollow\">RDNE Stock project</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA for Nurses and Allied Health Professionals 2026",
     seoTitle: "Online MBA for Nurses: Eligibility and the Admin Route",
     h1Title: "Online MBA for Nurses and Allied Health Professionals",
@@ -322,6 +364,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-chartered-accountants-india-2026",
+    heroImage: "https://images.pexels.com/photos/7821716/pexels-photo-7821716.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "A businessman in a black suit using a calculator at a desk with financial documents and a laptop.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@rdne\" target=\"_blank\" rel=\"noopener nofollow\">RDNE Stock project</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA for Chartered Accountants 2026: Worth It or Not?",
     seoTitle: "Online MBA for Chartered Accountants: The Honest Case",
     h1Title: "Online MBA for Chartered Accountants: Buy It for the Wrong Subjects",
@@ -342,6 +387,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-product-managers-india-2026",
+    heroImage: "https://images.pexels.com/photos/17724731/pexels-photo-17724731.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Two professionals brainstorming and planning projects on a whiteboard in a collaborative office setting.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@walls-io-440716388\" target=\"_blank\" rel=\"noopener nofollow\">Walls.io</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MBA for Aspiring Product Managers 2026: The Honest Read",
     seoTitle: "Online MBA for Product Managers: Only One Label Exists",
     h1Title: "Online MBA for Aspiring Product Managers: A Weak Instrument",
@@ -638,6 +686,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "integral-university-online-review",
+    heroImage: "https://images.pexels.com/photos/8085931/pexels-photo-8085931.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "A person taking notes and working on a laptop surrounded by documents on a desk.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@ron-lach\" target=\"_blank\" rel=\"noopener nofollow\">Ron Lach</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Integral University Online Review 2026: Cheap, and Older Than It Looks",
     seoTitle: "Integral University Online Review 2026: Second-Cycle A+",
     metaDescription: "Integral University Lucknow is UGC 2(f) and 12B, NAAC A+ in its second cycle, and has run online programmes since 2013-14. Online fees start at ₹31,500.",
@@ -783,6 +834,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "adichunchanagiri-university-online-mba-review",
+    heroImage: "https://images.pexels.com/photos/8199654/pexels-photo-8199654.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Two students engaged in study, taking notes with books and a laptop on a wooden desk indoors.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@yankrukov\" target=\"_blank\" rel=\"noopener nofollow\">Yan Krukau</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Adichunchanagiri University Online MBA Review 2026: One Programme, One Fee, First-Cycle A+",
     seoTitle: "Adichunchanagiri Online MBA Review 2026: Honest Take",
     metaDescription: "Adichunchanagiri is UGC-DEB entitled and NAAC A+ at CGPA 3.39, but the grade is first cycle and the fee is Rs 1,40,000, not the Rs 75,000 that circulates.",
@@ -2294,6 +2348,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-bba-fees-india-2026-compared",
+    heroImage: "https://images.pexels.com/photos/7054801/pexels-photo-7054801.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Calculator, coins, and stationery symbolize budgeting and finance on a pastel purple backdrop.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@kindelmedia\" target=\"_blank\" rel=\"noopener nofollow\">Kindel Media</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online BBA Fees in India 2026: 37 Universities Compared, and Where NAAC A++ Is Cheapest",
     seoTitle: "Online BBA Fees 2026: 37 Universities Compared",
     metaDescription: "Online BBA fees in India run Rs 39,000 to Rs 1,99,000. Five NAAC A++ universities charge under Rs 80,000, while the priciest is graded A+. Full fee table.",
@@ -2505,6 +2562,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mca-fees-india-2026-compared",
+    heroImage: "https://images.pexels.com/photos/6424583/pexels-photo-6424583.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Close-up of colorful programming code displayed on a computer monitor with a dark background.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@nemuel\" target=\"_blank\" rel=\"noopener nofollow\">Nemuel Sereti</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online MCA Fees in India 2026: 24 Universities Compared, and Why the Expensive One Is Not Always Better",
     seoTitle: "Online MCA Fees 2026: 24 Universities Compared",
     metaDescription: "Online MCA fees in India run Rs 50,800 to Rs 2,30,000. A Rs 65,500 programme beats a Rs 2,30,000 one on both NAAC grade and NIRF rank. Full fee table.",
@@ -2695,6 +2755,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-bca-fees-india-2026-compared",
+    heroImage: "https://images.pexels.com/photos/3776136/pexels-photo-3776136.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "A woman sits on a desk in a university hallway, studying on a laptop.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@olly\" target=\"_blank\" rel=\"noopener nofollow\">Andrea Piacquadio</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online BCA Fees in India 2026: 30 Universities Compared, and Why Price Should Not Decide It",
     seoTitle: "Online BCA Fees 2026: 30 Universities Compared",
     metaDescription: "Online BCA fees in India run Rs 45,000 to Rs 1,77,000, but 16 of 30 universities cluster in one band. Full fee table with NAAC grades and NIRF ranks.",
@@ -2890,6 +2953,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-bcom-fees-india-2026-compared",
+    heroImage: "https://images.pexels.com/photos/8296977/pexels-photo-8296977.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "An accountant using a calculator and signing paperwork, showcasing financial analysis.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@mikhail-nilov\" target=\"_blank\" rel=\"noopener nofollow\">Mikhail Nilov</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Online B.Com Fees in India 2026: 24 Universities Compared, Rs 12,000 to Rs 2.94 Lakh",
     seoTitle: "Online B.Com Fees 2026: 24 Universities Compared",
     metaDescription: "Online B.Com fees in India range from Rs 12,000 to Rs 2,94,000 for the same valid degree. 24 UGC-DEB universities compared on fee, NAAC grade and NIRF rank.",
@@ -3127,6 +3193,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "sppu-online-mba-review",
+    heroImage: "https://images.pexels.com/photos/15093007/pexels-photo-15093007.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Smiling graduate in cap and gown holds diploma outdoors, celebrating academic achievement.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@uddab-bogati-419073263\" target=\"_blank\" rel=\"noopener nofollow\">Uddab Bogati</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "SPPU Online MBA Review 2026: The Rs 1.61 Lakh State-University Degree That Does Not Say Online",
     seoTitle: "SPPU Online MBA Review 2026: Rs 1.61L, NAAC A++",
     metaDescription: "SPPU's online MBA costs Rs 1,60,880 tuition plus Rs 1,000 registration, from a NAAC A++ state university. An honest review of the fee, the certificate, and who it suits.",
@@ -3342,6 +3411,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "amrita-online-mba-review",
+    heroImage: "https://images.pexels.com/photos/5538322/pexels-photo-5538322.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    heroImageAlt: "Concentrated Asian female in black blouse watching video lecture at laptop and taking notes sitting at table in cafe.",
+    heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@zen-chung\" target=\"_blank\" rel=\"noopener nofollow\">Zen Chung</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
     title: "Amrita Online MBA Review 2026: Is the Rs 1.76 Lakh Premium Worth It?",
     seoTitle: "Amrita Online MBA Review 2026: Is the Premium Worth It?",
     metaDescription: "Amrita online MBA fees run Rs 1.76L to Rs 2.6L by specialisation. An honest review of what the premium buys: NAAC A++, NIRF Management rank, AICTE and WES.",
@@ -3603,6 +3675,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'ddu-gorakhpur-online-mba-review',
+    heroImage: 'https://images.pexels.com/photos/32662455/pexels-photo-32662455.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAlt: 'Young male student explores bookshelves in university library for research.',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@jatin-chaudhary-820545799" target="_blank" rel="noopener nofollow">Jatin  Chaudhary</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     title: 'DDU Gorakhpur Online MBA Review 2026: Rs 52,500 From a NAAC A++ University, and What That Price Does Not Buy',
     seoTitle: 'DDU Gorakhpur Online MBA Review 2026: Rs 52,500 Verdict',
     metaDescription: 'DDU Gorakhpur online MBA costs Rs 52,500 for the full two years, from a NAAC A++ state university. An honest review of what that low price does not buy.',
@@ -3875,6 +3950,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'bharati-vidyapeeth-online-mba-review',
+    heroImage: 'https://images.pexels.com/photos/6549598/pexels-photo-6549598.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAlt: 'A young adult studying with books and a laptop, focused on taking notes at a desk under a lamp.',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@tima-miroshnichenko" target="_blank" rel="noopener nofollow">Tima Miroshnichenko</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     title: 'Bharati Vidyapeeth Online MBA Review 2026: The Real Fee, the AICTE Advantage, and Who Should Skip It',
     seoTitle: 'Bharati Vidyapeeth Online MBA Review 2026: Real Fee, AICTE',
     metaDescription: 'Bharati Vidyapeeth online MBA fees are Rs 1,76,000 plus Rs 2,000 non-refundable, not the Rs 1,60,000 quoted elsewhere. AICTE listed, NAAC A++ honest review.',
@@ -4149,6 +4227,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'parul-online-mba-review',
+    heroImage: 'https://images.pexels.com/photos/6697368/pexels-photo-6697368.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAlt: 'Person gesturing towards a laptop displaying a video call participant in a cozy room.',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@tim-samuel" target="_blank" rel="noopener nofollow">Tim  Samuel</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     title: 'Parul University Online MBA Review 2026: The Real Fee, the NIRF Category Trap, and Who Should Skip It',
     seoTitle: 'Parul Online MBA Review 2026: The Real Fee and NIRF Truth',
     metaDescription: 'Parul University online MBA fees are Rs 1,50,000 on the official portal, not the Rs 99,000 quoted elsewhere. NAAC A++, 20 specialisations, honest review.',
@@ -41275,6 +41356,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     status: 'published',
     heroImage: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroImageAlt: 'Developer writing code on a laptop, representing online MCA programs in India.',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@goumbik" target="_blank" rel="noopener nofollow">Lukas Blazek</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     ctaTitle: 'Compare Online MCA Universities Free',
     ctaDesc: 'EdifyEdu compares public UGC/NAAC/NIRF data across all online MCA programs. No paid rankings, no referral commissions.',
     faqs: [
@@ -41409,8 +41491,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: 'MCA after BCA 2026',
     relatedUniversities: ['amity-university-online', 'lovely-professional-university-online', 'galgotias-university-online'],
     status: 'published',
-    heroImage: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    heroImageAlt: 'BCA graduate weighing options for MCA admission in India 2026.',
+    heroImage: 'https://images.pexels.com/photos/7777690/pexels-photo-7777690.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAlt: 'A young man sitting at a desk with a laptop in a classic library, contemplating.',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     ctaTitle: 'Compare Online MCA After BCA',
     ctaDesc: 'EdifyEdu compares public UGC/NAAC/NIRF data. No paid rankings, no commissions.',
     faqs: [
@@ -41550,8 +41633,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: 'career after MCA India 2026',
     relatedUniversities: ['amity-university-online', 'manipal-academy-higher-education-online'],
     status: 'published',
-    heroImage: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    heroImageAlt: 'IT professional working at a computer in a modern office, representing MCA career paths in India.',
+    heroImage: 'https://images.pexels.com/photos/6804068/pexels-photo-6804068.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAlt: 'Team of developers working together on computers in a modern tech office.',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@cottonbro" target="_blank" rel="noopener nofollow">cottonbro studio</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     ctaTitle: 'Compare Online MCA Programs',
     ctaDesc: 'EdifyEdu compares public NAAC/NIRF/UGC data. No paid rankings, no commissions.',
     faqs: [
@@ -41714,8 +41798,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: 'Amity vs LPU online MCA 2026',
     relatedUniversities: ['amity-university-online', 'lovely-professional-university-online'],
     status: 'published',
-    heroImage: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    heroImageAlt: 'Two laptops side by side representing the comparison between Amity and LPU online MCA programs.',
+    heroImage: 'https://images.pexels.com/photos/11969078/pexels-photo-11969078.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAlt: 'Detailed close-up of two laptops showcasing sleek design and modern technology.',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@dlxmedia-hu-215591835" target="_blank" rel="noopener nofollow">dlxmedia.hu</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     ctaTitle: 'Compare Amity vs LPU Online MCA',
     ctaDesc: 'EdifyEdu compares public UGC/NAAC/NIRF data. No paid rankings, no commissions.',
     faqs: [
@@ -41859,8 +41944,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: 'MCA vs BTech which is better 2026',
     relatedUniversities: [],
     status: 'published',
-    heroImage: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    heroImageAlt: 'Student choosing between MCA and BTech programs in India 2026.',
+    heroImage: 'https://images.pexels.com/photos/5538594/pexels-photo-5538594.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAlt: 'Back view of diverse female students carrying backpacks and supplies for university while talking in park.',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@zen-chung" target="_blank" rel="noopener nofollow">Zen Chung</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     ctaTitle: 'Explore MCA Programs on EdifyEdu',
     ctaDesc: 'EdifyEdu compares public UGC/NAAC/NIRF data for online MCA programs. No paid rankings.',
     faqs: [
@@ -46394,6 +46480,9 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
   },
   {
     slug: 'online-mba-scholarship-india-2026',
+    heroImage: 'https://images.pexels.com/photos/7972735/pexels-photo-7972735.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAlt: 'Group of graduates holding diplomas with red ribbons during a ceremony outdoors.',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@george-pak" target="_blank" rel="noopener nofollow">George Pak</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     title: 'The Online MBA Scholarship Guide for India: What Actually Exists and How to Verify (2026)',
     seoTitle: 'Online MBA Scholarship India 2026: Types, Structure, and Verification Guide',
     h1Title: 'The Online MBA Scholarship Guide for India (2026): Structure, Not Numbers',
@@ -46597,6 +46686,9 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
   },
   {
     slug: 'best-online-mba-for-women-india-2026',
+    heroImage: 'https://images.pexels.com/photos/8111853/pexels-photo-8111853.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAlt: 'Business woman focused on paperwork at office desk, reviewing documents.',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@pavel-danilyuk" target="_blank" rel="noopener nofollow">Pavel Danilyuk</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     title: 'Best Online MBA for Women in India (2026): Specialisation, Situation, Not a Separate Shortlist',
     seoTitle: 'Best Online MBA for Women in India 2026: Choose by Situation, Not by Default',
     h1Title: 'Best Online MBA for Women in India (2026): The Honest Guide to Choosing by Profile, Not by Default',
@@ -46791,6 +46883,9 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
   },
   {
     slug: 'online-mba-classes-workload-exams-2026',
+    heroImage: 'https://images.pexels.com/photos/7983362/pexels-photo-7983362.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAlt: 'Focused woman taking notes at night while working at home. Cozy and productive ambiance.',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@ron-lach" target="_blank" rel="noopener nofollow">Ron Lach</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     title: 'What an Online MBA Actually Looks Like: Classes, Workload, Exams (2026)',
     seoTitle: 'Online MBA Classes, Workload, Exams India 2026: The Honest Mechanics Guide',
     h1Title: 'What an Online MBA Actually Looks Like in 2026: Classes, Workload, and Exams',
@@ -47959,6 +48054,9 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
   },
   {
     slug: 'why-online-mba-fees-differ-india-2026',
+    heroImage: 'https://images.pexels.com/photos/14907377/pexels-photo-14907377.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAlt: 'A detailed close-up of Indian currency notes and coins, highlighting financial themes.',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@ravi-roshan-2875998" target="_blank" rel="noopener nofollow">Ravi Roshan</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     title: 'Online MBA Fees India 2026: Why Every Site Says Different',
     seoTitle: 'Online MBA Fees India 2026: Why Every Site Says Different',
     h1Title: 'Online MBA Fees India 2026: Why Every Site Quotes a Different Number',
