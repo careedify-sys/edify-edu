@@ -150,5 +150,53 @@ export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; gr
     { label: 'Most common route into product',        value: '' },
     { label: 'Buy the degree when',                   value: '' },
   ],
+  'online-mba-supply-chain-logistics-professionals-india-2026': [
+    { label: 'Labels touching supply chain',  value: '' },
+    { label: 'Widest single label',           value: '' },
+    { label: 'The distinction that is real',  value: '' },
+    { label: 'Most commonly missing paper',   value: '' },
+  ],
+  'online-mba-teachers-educators-india-2026': [
+    { label: 'Education management labels',           value: '' },
+    { label: 'What school leadership usually names',  value: '' },
+    { label: 'Strongest MBA case for a teacher',      value: '' },
+    { label: 'Ask the university about',              value: '' },
+  ],
+  'online-mba-doctors-mbbs-india-2026': [
+    { label: 'Does an MBA extend your licence',  value: '' },
+    { label: 'Is MBBS eligible for an MBA',      value: "Yes, it is a bachelor's degree" },
+    { label: 'The trap for clinicians',          value: '' },
+    { label: 'The question that decides it',     value: '' },
+  ],
+  'online-mba-retail-professionals-india-2026': [
+    { label: 'Retail Management labels',        value: '' },
+    { label: 'Of those, with a NIRF Mgt rank',  value: '' },
+    { label: 'The paper that must be there',    value: '' },
+    { label: 'Marketing alternative',           value: '' },
+  ],
+  'online-mba-family-business-owners-india-2026': [
+    { label: 'Family Business labels in India',   value: '' },
+    { label: 'Entrepreneurship-adjacent labels',  value: '' },
+    { label: 'Often the better choice',           value: '' },
+    { label: 'The paper owners underrate',        value: '' },
+  ],
+  'online-mba-hospitality-hotel-professionals-india-2026': [
+    { label: 'Hospitality and tourism labels',  value: '' },
+    { label: 'With any NIRF Mgt placement',     value: '' },
+    { label: 'Usually the better buy',          value: '' },
+    { label: 'Strongest single move',           value: '' },
+  ],
+  'online-mba-insurance-professionals-india-2026': [
+    { label: 'Insurance-only MBA labels',  value: '' },
+    { label: 'What licenses you to sell',  value: '' },
+    { label: 'What the degree opens',      value: '' },
+    { label: 'Paper that must be there',   value: '' },
+  ],
+  'online-mba-agribusiness-professionals-india-2026': [
+    { label: 'Agribusiness labels',            value: '' },
+    { label: 'With a verified NIRF Mgt rank',  value: '' },
+    { label: 'Search trap',                    value: '' },
+    { label: 'Biggest practical constraint',   value: '' },
+  ],
 }
 

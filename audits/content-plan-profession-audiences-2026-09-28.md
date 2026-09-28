@@ -73,16 +73,63 @@ way.
 | `online-mba-chartered-accountants-india-2026` | Buy it for the subjects you are least interested in | Finance is 74 universities and all revision for a CA; ACCA-mapped labels are the only non-redundant ones |
 | `online-mba-product-managers-india-2026` | Argues against itself: a weak instrument for entering product | Exactly 1 label is Product Management, and its NAAC cycle has lapsed |
 
+## 4b. Second batch, same day (8 more posts)
+
+A follow-up coverage audit ran every candidate profession against the title,
+seoTitle, h1Title, metaDescription, targetKeyword and tags of all 217 published
+posts. Its useful correction: several professions that looked covered were
+covered only by **programme-intent** posts. `online-mba-entrepreneurship-india-2026`
+describes a specialisation and is not written to a family business successor.
+The same held for hospitality, aviation, real estate and supply chain.
+
+| slug | angle | the finding |
+|---|---|---|
+| `online-mba-supply-chain-logistics-professionals-india-2026` | Ignore the label, learn the one real distinction | **19 distinct labels** for roughly one subject |
+| `online-mba-teachers-educators-india-2026` | For school leadership the answer is M.Ed, not MBA | **0 of 171 labels** serve education |
+| `online-mba-doctors-mbbs-india-2026` | An MBA confers nothing clinical and is not an MD alternative | DPU-COL and JSS rank in Medical/Dental/Pharmacy, never Management |
+| `online-mba-retail-professionals-india-2026` | Store floor to buying and category management | Exactly **1 clean label**, 11 universities |
+| `online-mba-family-business-owners-india-2026` | Take Finance, not Entrepreneurship | **1 Family Business label**, and its NAAC has lapsed |
+| `online-mba-hospitality-hotel-professionals-india-2026` | Take accreditation over the sector label | **7 labels, none above 2 universities** |
+| `online-mba-insurance-professionals-india-2026` | Licence lets you sell, degree opens salaried roles | **1 insurance-only label** |
+| `online-mba-agribusiness-professionals-india-2026` | Search all six spellings or you will miss most of it | **6 labels across 7 listings**, inconsistently spelled |
+
+Inventory after both batches: **225 entries, 208 published**.
+
+## 4c. The validator bug this batch exposed
+
+A tag-balance check assembled as `new RegExp('<' + tag + '(\\s[^>]*)?>')` lost a
+backslash level when written through a bash heredoc. The pattern became
+`(s[^>]*)?`, matched no real tag, and therefore counted **zero opening tags for
+every element**, reporting everything as balanced. It passed a post carrying a
+stray `</p>`.
+
+Rewritten to scan with `indexOf` and plain character comparison, with no
+backslash escapes at all. **Do not build regexes by string concatenation in a
+script that reaches disk through a shell here.**
+
+With the repaired check, **7 posts predating this work have unbalanced tags**:
+`online-mba-for-working-professionals-india`, `nmims-online-mba-review-2026`,
+`iim-online-mba-india-2026`, `online-mba-lpu-review-2026`,
+`mba-course-duration-india-2026`, `online-bba-programs-india-2026`,
+`online-bba-fees-india-2026`. Browsers repair most stray `</p>` tags, but
+`nmims-online-mba-review-2026` has 15 opening divs against 19 closing ones, which
+can close a layout wrapper early. Left for Rishi to schedule.
+
 ## 5. Considered and rejected
 
-- **Teachers and school educators.** No education-management label exists in the
-  specialisation index, so there was nothing honest to offer. Revisit only if a
-  university adds one.
-- **Defence and ex-servicemen.** Real audience, but the resettlement question is
-  governed by policy documents we hold no source for, and the post would have
-  been generic.
-- **Insurance agents.** Only one Insurance Management label exists (Amity). Too
-  thin to carry a post of its own; covered inside the BFSI post from September.
+- **Defence and ex-servicemen.** Real audience, but resettlement is governed by
+  policy documents we hold no approved source for, and the post would have been
+  generic.
+- **Company secretaries and cost accountants.** No label reaches them that the
+  chartered accountant post does not already cover; they would take Finance.
+- **Merchant navy and shipping.** One label exists (Shipping & Logistics at AMET)
+  and we hold no verified accreditation record for that institution.
+- **Aviation, real estate, sports, media, energy.** Each has one or two labels at
+  a single university. Named inside the relevant posts rather than given their own,
+  since a post about a one-university field is thin by construction.
+- **Teachers were reconsidered and written.** The first pass dropped them for
+  having no matching label. That was the wrong call: the absence *is* the story,
+  the same shape as the sales post. Zero of 171 is a finding, not a blocker.
 
 ## 6. Constraints applied to every post
 
@@ -111,13 +158,21 @@ Rishi asked for this batch directly, which settles whether it ships. It does not
 settle the measurement question. Eight more posts landing 11 days after the
 first twelve makes the October signal harder to read.
 
-**Mitigation:** these eight target professions that do not overlap the banking,
+**Mitigation:** these posts target professions that do not overlap the banking,
 tech or AI clusters, so they can be pulled as a separate cohort. When reading
 GSC in late October, segment three ways:
 
 - 17 September cohort (12 posts, banking / IT / AI)
-- 28 September cohort (8 posts, other professions)
+- 28 September cohort (16 posts, other professions)
 - everything else
+
+**The concern grew with the second batch and should be recorded honestly.** The
+profession-audience bet is now 16 posts rather than 8, all published on one day,
+none of them rescuing measured demand. If the late-October read shows nothing
+for either cohort, the correct conclusion is that career-intent posts aimed at
+named professions do not find Indian search demand at this site's authority, and
+the strategy should stop rather than continue into more professions. There are
+always more professions. That is precisely why a stopping rule is needed.
 
 If both cohorts are unseen after four weeks, the conclusion is about the format
 and the audience, not about any individual post, and the profession-audience
