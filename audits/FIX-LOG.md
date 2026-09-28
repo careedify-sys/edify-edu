@@ -9,6 +9,78 @@ the fix by accident.
 
 ---
 
+## 2026-09-29 (second) · The page said "Fake? No." about a university under a reported MoE complaint
+
+**How this was found.** Rishi asked what was outranking the verify pages on
+their head queries. `mangalayatan university fake` draws 779 impressions at
+position 8.46 with **zero clicks**, the worst case in the cluster. Looking at the
+actual SERP answered the ranking question and turned up something worse.
+
+**What is on that SERP.** Three YouTube videos, one of them in Hindi, plus
+Quora, Wikipedia, a competitor running the identical play
+(`verify.exammint.in`, titled "Yes, Mangalayatan University is Real"), and a
+news report: ten private universities named in complaints about improperly
+awarded PhD degrees.
+
+**The finding.** In December 2024 the Ministry of Education told the Rajya Sabha
+that complaints received through the Central Vigilance Commission alleged ten
+private universities had awarded PhD degrees improperly. **Mangalayatan
+University is one of the ten.** UGC forwarded the complaints to state
+governments. Since then Uttarakhand and Madhya Pradesh cleared Quantum and Sri
+Satya Sai, and UGC debarred OPJS, Sunrise and Singhania in Rajasthan from
+enrolling PhD scholars. **No adverse finding against Mangalayatan has been
+reported.**
+
+Our page title said **"Is Mangalayatan University Fake? No. UGC-DEB Approved
+2026"**. The H1 and body were fine, since they claim UGC-DEB entitlement, which
+is true and checkable. The title answered a broader question than the evidence
+supported, on the one university where that gap mattered, and a reader who
+searched that phrase because of the news was told nothing about it.
+
+It also explains the ranking. People search that phrase *because of* the story.
+A page answering "No" without engaging it does not match the intent, which is
+why Google serves video instead.
+
+**Scope checked, not assumed.** All ten named universities were matched against
+the 143 in `lib/data.ts` and the 125 verify slugs. **Only Mangalayatan is
+affected.** The apparent second hit, "University of Technology", resolved to
+Centurion University of Technology and Management, a different institution, and
+was not treated as a match.
+
+**What shipped.** `lib/data/verify-advisories.json` plus
+`components/verify/VerifyAdvisory.tsx`, rendering directly under the verdict,
+above the programme list, because someone who searched "is X fake" needs it
+before anything else.
+
+The wording is the work. It names the forum, the date and the route (MoE reply
+to the Rajya Sabha, complaints via CVC), states what has been reported since,
+says plainly that **no adverse finding has been reported and no action
+announced**, separates the PhD matter from the online UG and PG programmes the
+page actually covers, says outright that a complaint is not a finding, and gives
+a correction address. It is there to inform someone about to pay fees, not to
+accuse an institution.
+
+**The title narrows too, and that was not optional.** An advisory saying "under
+enquiry" beneath a title saying "Fake? No." would have made the page contradict
+itself. Presence of an advisory now suppresses the flat "No" in both title and
+meta description. The other 124 pages are untouched and still carry it, verified
+against MATS as a control.
+
+**Why this was not done unilaterally.** Publishing a note about a live
+allegation against a named institution is an outward-facing call with Rishi's
+name on it. The finding was reported with three options and built only after he
+chose this one.
+
+**How it was verified.** Mangalayatan returns 200 with the narrowed title and
+the advisory rendered; MATS returns 200 with the original title and no advisory.
+Typecheck clean, full pre-commit suite passes.
+
+**Left open.** The ranking problem itself is unsolved. The page will rank better
+for engaging the question, but the SERP is majority video and this cluster may
+need a different format rather than a better paragraph.
+
+---
+
 ## 2026-09-29 · 125 good verification pages that nothing linked to
 
 **What was asked.** Start move 5, the community footprint. The research argued

@@ -15,6 +15,14 @@ import { HelpdeskTeaser } from '@/components/verify/HelpdeskTeaser';
 import { VerifyFAQ, getVerifyFAQs } from '@/components/verify/VerifyFAQ';
 import { getTitleName, shortenInstitutionName } from '@/lib/seo-title';
 import { getUniversityById } from '@/lib/data';
+import { VerifyAdvisory } from '@/components/verify/VerifyAdvisory';
+import advisoryData from '@/lib/data/verify-advisories.json';
+
+const ADVISORIES = (advisoryData as {
+  advisories: Record<string, {
+    addedAt: string; heading: string; paragraphs: string[]; checkYourself?: string;
+  }>;
+}).advisories;
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -128,10 +136,15 @@ export async function generateMetadata({ params }: PageProps) {
   // other page in the cluster. A searcher asking whether a university is fake
   // wants the answer, not an invitation to click and find out.
   const approved = uni.ugc_deb_status === 'approved';
-  const title = approved
+  // A university carrying an advisory never gets the flat "No". The entitlement
+  // is still true and the page still says so, but "Is X Fake? No." answers a
+  // broader question than a DEB check supports, and it would contradict the
+  // advisory block rendered under it. See lib/data/verify-advisories.json.
+  const hasAdvisory = !!ADVISORIES[slug];
+  const title = approved && !hasAdvisory
     ? `Is ${displayName} Fake? No. UGC-DEB Approved ${year}`
     : `${displayName}: UGC-DEB Approval Status ${year}`;
-  const description = approved
+  const description = approved && !hasAdvisory
     ? `${uni.name} is not fake. UGC-DEB approved${location ? ', ' + location : ''}. NAAC grade, AICTE and NIRF status checked against the official UGC, NAAC and NIRF portals. Independent, ${year}.`
     : `${uni.name}${location ? ', ' + location : ''}: current UGC-DEB approval status, NAAC grade, AICTE and NIRF rank, checked against the official UGC, NAAC and NIRF portals. Independent, ${year}.`;
 
@@ -269,6 +282,9 @@ export default async function VerifyPage({ params }: PageProps) {
             <div style={{ background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: `1px solid ${brand.creamBorder}` }}>
               <VerifyHero university={university} accreditations={accreditations} />
             </div>
+            {/* Directly under the verdict. A reader who searched "is X fake"
+                needs this before the programme list, not after it. */}
+            {ADVISORIES[slug] && <VerifyAdvisory advisory={ADVISORIES[slug]} />}
             {(university.description || university.known_for || university.history_summary) && (
               <div style={{ background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: `1px solid ${brand.creamBorder}` }}>
                 <AboutUniversity

@@ -1,0 +1,21 @@
+{
+  "_note": "Material facts about a university that a UGC-DEB entitlement check does not surface, keyed by /verify/{slug}. Added only where a reader about to pay fees would reasonably want to know, and written to inform rather than to accuse. A complaint is not a finding and must never be worded as one. Presence of an entry also suppresses the 'Is X Fake? No.' title on that page, because a flat No would contradict the note below it.",
+  "_rules": [
+    "State the forum, the date and who said it, so the reader can check it themselves.",
+    "State the current status explicitly, including when no adverse finding has been reported.",
+    "Separate what the matter concerns from what this page covers, where they differ.",
+    "Never imply an outcome that has not been announced."
+  ],
+  "advisories": {
+    "mangalayatan-university-online": {
+      "addedAt": "2026-09-29",
+      "heading": "One thing a UGC-DEB check does not tell you",
+      "paragraphs": [
+        "In December 2024 the Ministry of Education told the Rajya Sabha that complaints received through the Central Vigilance Commission alleged that ten private universities had awarded PhD degrees improperly. Mangalayatan University was one of the ten named. The University Grants Commission forwarded those complaints to the relevant state governments for enquiry.",
+        "What has been reported since: the state governments of Uttarakhand and Madhya Pradesh cleared Quantum University and Sri Satya Sai University, and the UGC separately debarred OPJS, Sunrise and Singhania universities in Rajasthan from enrolling PhD scholars. No adverse finding against Mangalayatan University has been reported and no action against it has been announced.",
+        "Two things are worth keeping apart. The complaints concern the award of PhD degrees, not the online undergraduate and postgraduate programmes this page covers. And a complaint is not a finding. We record it because you may be about to pay fees and would reasonably want to know it exists, not because it settles anything."
+      ],
+      "checkYourself": "Ask the university directly for its current position, and check the UGC for any action listed against it."
+    }
+  }
+}
