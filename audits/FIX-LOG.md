@@ -9,6 +9,71 @@ the fix by accident.
 
 ---
 
+## 2026-09-29 (seventh) · /best-online-mba-india ranked by the wrong NIRF table
+
+**The page promising a ranked online MBA list was ordered by the NIRF University
+table, and never said so.** `/best-online-mba-india` carried a hand-typed
+`TOP_10` array with zero imports from `lib/data.ts`. Its defects, all visible to
+a reader and all quotable by an assistant:
+
+| Defect | Evidence |
+|---|---|
+| Ordered by the wrong NIRF table | Top 3 were MAHE, Amrita, SRM: University #3, #8, #11. By Management they are #39, #26, #56, so none belongs in the top 3 |
+| Ranks printed with no category | Badges read `NIRF #8`, `NIRF #11`. One entry said `NIRF Mgmt #24`, so the page was inconsistent with itself |
+| Fee claims from placeholder data | `from Rs 60K` in the verdict box and FAQ. Rs 60,000 is the floor of a range shared across universities, suppressed by rule 4d two commits earlier |
+| A fee contradicting the database | LPU quoted at Rs 1.46L; `lib/data.ts` says Rs 1.61L to Rs 2L |
+| A lapsed NAAC grade printed as current | Chandigarh University A+, cycle expired 2026-09-09 |
+| Unsourced salary figures | Six specialisation cards carried salary bands traceable to no source |
+| `dateModified` five months stale | `2026-04-16`, unchanged while the underlying data moved |
+
+**Why the FAQ mattered most.** FAQ answer 1 listed University ranks as the
+answer to "which is the best online MBA", inside `FAQPage` schema. That is the
+single most liftable block on the page: an assistant quoting it would have
+repeated a management ranking built from the wrong table, attributed to us.
+
+**The fix is structural, not editorial.** New `lib/best-mba-ranking.ts` derives
+the ranking at build time from `lib/data.ts`, the Supabase NAAC snapshot and
+`getDisplayFee`. Nothing on the page is hand-typed any more, including the
+verdict box, the budget bands, the use-case picks and the FAQ answers, so a
+sentence cannot drift from the table beneath it.
+
+Inclusion rule, stated on the page: the university holds a NIRF **Management**
+placement. **23 of 121.** The other 98 are named as unranked in that category
+rather than quietly omitted, because omission reads as a quality judgement.
+
+Suppression carried over from the fee work. Of the 23 rows: **20** print a NAAC
+grade (1 lapsed, 2 absent from Supabase), **20** print a fee (3 publish none).
+Blank cells say "Not published" or "Cycle expired" rather than guessing.
+
+**Two things removed rather than fixed.** Per-university EMI figures are gone:
+`emiFrom` shows the same duplication fingerprint as the placeholder fees, with
+seven universities on exactly 2500. The page links to the EMI calculator and
+explains the omission. Specialisation salary bands are gone, being unsourced.
+
+**A data defect surfaced, not fixed.** Rendering `city` exposed junk in
+`lib/data.ts`: Amrita and Jamia Millia Islamia carry `"Online"`, Chandigarh
+University `"NH-95"`, LPU `"Block 32"`. The module drops any value containing a
+digit or naming a delivery mode. The underlying records are still wrong.
+
+**Verified on the rendered page, not the source.** A previous section of work
+shipped a table into unreachable code that compiled and typechecked and rendered
+nothing, so source inspection is not evidence. Fetched the live HTML and
+asserted against the table block only, to keep the RSC flight payload from
+doubling the counts: 24 `<tr>` (1 header + 23 rows), 23 `scope="row"`, exactly
+3 "Not published", 1 "Cycle expired", 2 "Not verified", 3 "Not ranked". Parsed
+all 7 JSON-LD blocks: `ItemList` carries 23 items with `numberOfItems` agreeing,
+`Article.dateModified` is 2026-09-29. Confirmed the strings `Rs 60,000`,
+`Rs 60K` and `Rs 1.46L` no longer appear, and that the only bare uncategorised
+`NIRF #n` left is a deliberate quotation illustrating the problem. Full
+pre-commit suite passes; `check-em-dash-baseline` recorded a drop for this file.
+
+**What still guards nothing.** No gate asserts that a NIRF rank stated anywhere
+in page or blog copy names its category. This page is now derived so it cannot
+regress, but the 225 blog posts are not, and eight of them carried a false NIRF
+claim as recently as the previous commit.
+
+---
+
 ## 2026-09-29 (sixth) · I published a false NIRF claim in eight posts
 
 **My error, found while working on something else.** Eight of the sixteen posts

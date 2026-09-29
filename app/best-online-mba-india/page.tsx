@@ -1,25 +1,55 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { CheckCircle, ArrowRight, Shield, BarChart2, BookOpen, IndianRupee } from 'lucide-react'
-import EnquiryModal from '@/components/EnquiryModalDynamic'
+import { CheckCircle, ArrowRight, Shield, BarChart2, BookOpen, IndianRupee, AlertTriangle } from 'lucide-react'
 import BestMBAClient from './BestMBAClient'
+import {
+  BEST_MBA_RANKING,
+  RANKING_COUNTS,
+  RANKING_AS_OF,
+  type RankedMba,
+} from '@/lib/best-mba-ranking'
+
+// Every fact on this page is derived from lib/best-mba-ranking.ts, which reads
+// lib/data.ts, the Supabase NAAC snapshot, and getDisplayFee. Nothing below is
+// hand-typed. The previous version of this page hardcoded a ten-row array that
+// had drifted: it ordered universities by NIRF *University* rank while claiming
+// to rank online MBAs, printed "NIRF #8" with no category, quoted a fee for LPU
+// that lib/data.ts contradicts, and told readers fees "start at Rs 60,000" when
+// Rs 60,000 was the floor of a placeholder range nine universities shared.
+
+// ── Derived figures used in copy, so no sentence can drift from the table ─────
+
+const WITH_FEE = BEST_MBA_RANKING.filter(r => r.feeMin !== null)
+const CHEAPEST = WITH_FEE.reduce((a, b) => ((a.feeMin as number) <= (b.feeMin as number) ? a : b))
+const DEAREST = WITH_FEE.reduce((a, b) => ((a.feeMax as number) >= (b.feeMax as number) ? a : b))
+const TOP_RANKED = BEST_MBA_RANKING[0]
+const NO_FEE = BEST_MBA_RANKING.filter(r => r.fee === null)
+
+// Strongest across both NIRF tables at once, by sum of the two ranks. Only
+// universities NIRF ranks in both categories can qualify.
+const BEST_COMBINED = BEST_MBA_RANKING
+  .filter(r => r.nirfUniversity !== null)
+  .reduce((a, b) =>
+    a.nirfManagement + (a.nirfUniversity as number) <= b.nirfManagement + (b.nirfUniversity as number) ? a : b)
+
+const FEE_SPAN = `${CHEAPEST.fee} to ${DEAREST.fee}`
 
 export const metadata: Metadata = {
-  title: 'Best Online MBA in India 2026 — Top 10 Ranked by NIRF & NAAC',
-  description: 'Compare the best online MBA programs in India for 2026. Ranked by NIRF, NAAC grade, fees (₹60K–₹3.15L), and employer acceptance. UGC DEB approved only. Updated April 2026.',
-  keywords: 'best online mba in india 2026, top online mba colleges india, ugc approved online mba, best online mba universities india, nirf ranked online mba, naac a++ online mba india, online mba for working professionals india, best online mba colleges in india 2026',
+  title: `Best Online MBA in India 2026: ${RANKING_COUNTS.ranked} Ranked by NIRF Management`,
+  description: `The ${RANKING_COUNTS.ranked} UGC DEB approved online MBA universities that hold a NIRF Management category rank, ordered best rank first. Fees ${FEE_SPAN} where the university publishes them. No paid rankings.`,
+  keywords: 'best online mba in india 2026, top online mba colleges india, ugc approved online mba, nirf management ranked online mba, naac a++ online mba india, online mba for working professionals india',
   alternates: { canonical: 'https://edifyedu.in/best-online-mba-india' },
   openGraph: {
-    title: 'Best Online MBA in India 2026 — Top 10 Ranked by NIRF & NAAC',
-    description: 'Compare the best online MBA programs in India. Ranked by NIRF + NAAC. UGC DEB approved only. Fees from ₹60,000. Updated April 2026.',
+    title: `Best Online MBA in India 2026: ${RANKING_COUNTS.ranked} Ranked by NIRF Management`,
+    description: `Ranked by NIRF Management category, not the University table. ${RANKING_COUNTS.ranked} of ${RANKING_COUNTS.mbaUniversities} online MBA universities hold that rank. Fees shown only where published.`,
     url: 'https://edifyedu.in/best-online-mba-india',
     type: 'website',
     images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: 'Best Online MBA in India 2026' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Online MBA in India 2026 — Top 10 Ranked by NIRF & NAAC',
-    description: 'Compare 10 best online MBA programs in India ranked by NIRF, NAAC, fees. UGC DEB approved only.',
+    title: `Best Online MBA in India 2026: Ranked by NIRF Management`,
+    description: `${RANKING_COUNTS.ranked} UGC DEB approved online MBA universities with a NIRF Management rank, compared on NAAC and published fees.`,
   },
 }
 
@@ -34,6 +64,32 @@ const breadcrumbSchema = {
   ],
 }
 
+// The ranking as machine-readable data. Each description states the category of
+// every rank, because "NIRF #24" on its own is ambiguous between two tables and
+// an assistant quoting it has no way to tell which one it came from.
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: `Online MBA universities in India ranked by NIRF Management category, ${RANKING_AS_OF}`,
+  numberOfItems: BEST_MBA_RANKING.length,
+  itemListOrder: 'https://schema.org/ItemListOrderAscending',
+  itemListElement: BEST_MBA_RANKING.map(r => ({
+    '@type': 'ListItem',
+    position: r.position,
+    item: {
+      '@type': 'CollegeOrUniversity',
+      name: r.name,
+      url: `https://edifyedu.in${r.href}`,
+      description: [
+        `NIRF Management category rank ${r.nirfManagement}`,
+        r.nirfUniversity ? `NIRF University category rank ${r.nirfUniversity}` : 'not ranked in the NIRF University category',
+        r.naac.grade ? `NAAC ${r.naac.grade}` : `NAAC grade not stated by EdifyEdu (${r.naac.note.toLowerCase()})`,
+        r.fee ? `total online MBA fee ${r.fee}` : 'total fee not published by the university',
+      ].join('; ') + '.',
+    },
+  })),
+}
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -43,7 +99,7 @@ const faqSchema = {
       name: 'Which is the best online MBA in India in 2026?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Based on NIRF ranking and NAAC grade, the top online MBA universities in India in 2026 are: MAHE Manipal (NIRF #3, NAAC A++), Amrita Vishwa Vidyapeetham (NIRF #8, NAAC A++), SRM Institute (NIRF #11, NAAC A++), Chandigarh University (NIRF #19, NAAC A+), Amity University (NIRF #22, NAAC A+), Symbiosis SSODL (NIRF #24, NAAC A++), and NMIMS (NIRF #52, NAAC A++). All are UGC DEB approved and valid for government jobs and corporate hiring.',
+        text: `On the only ranking that applies to a management degree, NIRF's Management category, ${TOP_RANKED.name} holds the best placement of any university offering an online MBA at rank ${TOP_RANKED.nirfManagement}, followed by ${BEST_MBA_RANKING[1].name} at ${BEST_MBA_RANKING[1].nirfManagement} and ${BEST_MBA_RANKING[2].name} at ${BEST_MBA_RANKING[2].nirfManagement}. A caution about how this is usually reported: most lists order online MBAs by the NIRF University rank, which measures the whole institution and not its management school. ${BEST_COMBINED.name} is the strongest university across both tables at once, Management ${BEST_COMBINED.nirfManagement} and University ${BEST_COMBINED.nirfUniversity}. Only ${RANKING_COUNTS.ranked} of the ${RANKING_COUNTS.mbaUniversities} universities offering a UGC DEB approved online MBA hold any NIRF Management rank at all.`,
       },
     },
     {
@@ -51,7 +107,7 @@ const faqSchema = {
       name: 'Is an online MBA from India valid for government jobs?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, provided the university is UGC DEB approved. Online MBAs from UGC DEB approved universities are treated equivalent to regular on-campus MBAs under UGC guidelines and are accepted for UPSC, SSC, state PSC, banking and railway exams where an MBA is a listed qualification.',
+        text: 'Yes, provided the university is UGC DEB approved for that programme in online mode. Online MBAs from UGC DEB approved universities are treated equivalent to regular on-campus MBAs under UGC guidelines and are accepted for UPSC, SSC, state PSC, banking and railway exams where an MBA is a listed qualification. Check the university and the specific programme on the DEB list at deb.ugc.ac.in before you pay anything, because entitlement is granted per programme and per mode, not to the university as a whole.',
       },
     },
     {
@@ -59,7 +115,7 @@ const faqSchema = {
       name: 'What is the minimum fee for an online MBA in India?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The minimum fee for a UGC DEB approved online MBA in India starts at around ₹60,000 total for programs from government universities like IGNOU, Anna University, and Andhra University. Private university programs range from ₹1.2L to ₹3.15L depending on the institution and specialization.',
+        text: `Among the ${RANKING_COUNTS.ranked} NIRF Management ranked universities, the lowest fee we can verify from a published source is ${CHEAPEST.fee} at ${CHEAPEST.name}, and the highest is ${DEAREST.fee} at ${DEAREST.name}. Treat any figure below that as unverified until you see it on the university's own fee page. ${NO_FEE.length} of the ${RANKING_COUNTS.ranked} publish no fee at all, and a further group of universities across our database carry fee ranges that turned out to be one placeholder copied across several institutions, so we suppress those rather than print them as prices. Fees change between intakes, so confirm the current number with the university before you decide.`,
       },
     },
     {
@@ -67,7 +123,7 @@ const faqSchema = {
       name: 'Which online MBA has the best placement support in India?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'NMIMS, Amity, MAHE Manipal, and Symbiosis SSODL are known for having structured placement assistance for online MBA students. However, no online MBA program in India offers guaranteed placements the way full-time campus programs do. Career outcomes depend primarily on your prior work experience and the effort you put into networking.',
+        text: 'We do not rank placement support, because no Indian university publishes audited placement data for its online MBA cohort separately from its campus cohort. Any list claiming to know online MBA placement rates is using campus numbers or numbers the university supplied without audit. What you can verify is whether the university has a NIRF Management placement, which NIRF scores partly on graduate outcomes, and that is the ranking on this page. Ask any university for the median salary of its online cohort specifically, in writing, and treat a refusal as the answer.',
       },
     },
     {
@@ -75,7 +131,7 @@ const faqSchema = {
       name: 'What is the difference between online MBA and distance MBA?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Online MBA is delivered through a live Learning Management System (LMS) with scheduled online classes, proctored online exams, and UGC DEB approval. Distance MBA is primarily correspondence-based, with printed study material sent by post and physical exam centres. Both are valid degrees if the university is UGC DEB approved, but online MBAs typically have better learning infrastructure and employer perception.',
+        text: 'Online MBA is delivered through a live Learning Management System with scheduled online classes, proctored online exams, and UGC DEB approval in online mode. Distance MBA is primarily correspondence-based, with study material sent by post and physical exam centres. Both are valid degrees if the university holds DEB entitlement for that programme in that mode, and the mode matters: a university approved for distance mode is not automatically approved for online mode.',
       },
     },
     {
@@ -83,7 +139,7 @@ const faqSchema = {
       name: 'Can I do an online MBA while working full time?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Online MBA programs are specifically designed for working professionals. Live classes are usually held on weekends (Saturday/Sunday) and all lectures are recorded for on-demand access. Exams are proctored online from home. Most students manage 8–12 hours per week of study time alongside full-time work.',
+        text: 'Yes. Online MBA programmes are built for working professionals. Live classes usually run on weekends and lectures are recorded for on-demand access, with exams proctored online from home. Most students report 8 to 12 hours of study a week alongside full-time work, though that varies with the specialisation and your background.',
       },
     },
   ],
@@ -92,16 +148,16 @@ const faqSchema = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Best Online MBA in India 2026 — Top 10 Ranked by NIRF & NAAC',
-  description: 'Compare the best online MBA programs in India for 2026, ranked by NIRF, NAAC grade, fees, and employer acceptance.',
+  headline: `Best Online MBA in India 2026: ${RANKING_COUNTS.ranked} Universities Ranked by NIRF Management`,
+  description: `The UGC DEB approved online MBA universities holding a NIRF Management category rank, with NAAC status and published fees.`,
   datePublished: '2026-04-16',
-  dateModified: '2026-04-16',
+  dateModified: RANKING_AS_OF,
   image: { '@type': 'ImageObject', url: 'https://edifyedu.in/og.webp', width: 1200, height: 630 },
   author: {
     '@type': 'Person',
     name: 'Rishi Kumar',
     url: 'https://edifyedu.in/about#team',
-    jobTitle: 'Founder & Lead Researcher',
+    jobTitle: 'Senior Education Researcher, Founder, EdifyEdu',
   },
   publisher: {
     '@type': 'Organization',
@@ -112,195 +168,75 @@ const articleSchema = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://edifyedu.in/best-online-mba-india' },
 }
 
-// ── Top 10 University Data ────────────────────────────────────────────────────
+// ── Small presentational helpers ──────────────────────────────────────────────
 
-const TOP_10 = [
-  {
-    rank: 1,
-    id: 'manipal-academy-higher-education-online',
-    name: 'MAHE Manipal Online',
-    nirf: 3, nirfLabel: '#3 University',
-    naac: 'A++',
-    fee: '₹2.92L',
-    emi: '₹12,167/mo',
-    bestFor: 'Brand + Ranking',
-    specs: ['Finance', 'Marketing', 'Business Analytics', 'Data Science', 'HR'],
-    badge: 'QS #32 Asia',
-    badgeColor: '#6B21A8',
-    badgeBg: '#F3E8FF',
-  },
-  {
-    rank: 2,
-    id: 'amrita-vishwa-vidyapeetham-online',
-    name: 'Amrita Vishwa Vidyapeetham Online',
-    nirf: 8,
-    naac: 'A++',
-    fee: '₹1.7L',
-    emi: '₹2,000/mo',
-    bestFor: 'Technical MBA',
-    specs: ['Business Analytics', 'Finance', 'Marketing', 'HR', 'Operations'],
-    badge: 'NIRF #8',
-    badgeColor: '#1a5f9a',
-    badgeBg: '#e8f4fd',
-  },
-  {
-    rank: 3,
-    id: 'srm-institute-science-technology-online',
-    name: 'SRM Institute of Science & Technology Online',
-    nirf: 11,
-    naac: 'A++',
-    fee: '₹60K–₹1.89L',
-    emi: '₹1,500/mo',
-    bestFor: 'Value + Brand',
-    specs: ['Finance', 'Marketing', 'HR', 'Data Science', 'Operations'],
-    badge: 'NIRF #11',
-    badgeColor: '#1a5f9a',
-    badgeBg: '#e8f4fd',
-  },
-  {
-    rank: 4,
-    id: 'chandigarh-university-online',
-    name: 'Chandigarh University Online',
-    nirf: 19,
-    naac: 'A+',
-    fee: '₹1.65L',
-    emi: '₹2,000/mo',
-    bestFor: 'Working Professionals',
-    specs: ['Finance', 'Marketing', 'HR', 'Business Analytics', 'International Business'],
-    badge: 'NIRF #19',
-    badgeColor: '#1a5f9a',
-    badgeBg: '#e8f4fd',
-  },
-  {
-    rank: 5,
-    id: 'amity-university-online',
-    name: 'Amity University Online',
-    nirf: 22,
-    naac: 'A+',
-    fee: '₹2.07L',
-    emi: '₹8,625/mo',
-    bestFor: 'Brand Recognition',
-    specs: ['Finance', 'Marketing', 'HR', 'International Business', 'Data Science'],
-    badge: 'WES Recognised',
-    badgeColor: '#6B21A8',
-    badgeBg: '#F3E8FF',
-  },
-  {
-    rank: 6,
-    id: 'symbiosis-university-online',
-    name: 'Symbiosis SSODL Online',
-    nirf: 24,
-    naac: 'A++',
-    fee: '₹3.15L',
-    emi: '₹3,500/mo',
-    bestFor: 'Premium Brand',
-    specs: ['Marketing', 'Finance', 'HR', 'Operations', 'Business Analytics', 'International Business'],
-    badge: 'NAAC A++',
-    badgeColor: '#16a34a',
-    badgeBg: '#f0fff4',
-  },
-  {
-    rank: 7,
-    id: 'lovely-professional-university-online',
-    name: 'Lovely Professional University Online',
-    nirf: 31,
-    naac: 'A++',
-    fee: '₹1.46L',
-    emi: '₹1,800/mo',
-    bestFor: 'Affordable A++',
-    specs: ['Finance', 'Marketing', 'HR', 'Digital Marketing', 'Business Analytics'],
-    badge: 'NAAC A++',
-    badgeColor: '#16a34a',
-    badgeBg: '#f0fff4',
-  },
-  {
-    rank: 8,
-    id: 'nmims-online',
-    name: 'NMIMS Online',
-    // NIRF Management 2025 is #24, per Supabase accreditations and lib/data.ts
-    // nirfMgt. The page claimed #17 through both the badge and the label.
-    nirf: 24, nirfLabel: '#24 Management',
-    naac: 'A++',
-    fee: '₹2.2L',
-    emi: '₹2,500/mo',
-    bestFor: 'Management Depth',
-    specs: ['Marketing Management', 'Finance', 'HR', 'Operations & Data Sciences'],
-    badge: 'NIRF #24 Mgmt',
-    badgeColor: '#1a5f9a',
-    badgeBg: '#e8f4fd',
-  },
-  {
-    rank: 9,
-    id: 'manipal-university-jaipur-online',
-    name: 'Manipal University Jaipur Online',
-    nirf: 58,
-    naac: 'A+',
-    fee: '₹1.6L',
-    emi: '₹1,800/mo',
-    bestFor: 'Manipal Brand, Lower Cost',
-    specs: ['Finance', 'Marketing', 'HR', 'Digital Marketing', 'Business Analytics'],
-    badge: 'NIRF #58',
-    badgeColor: '#1a5f9a',
-    badgeBg: '#e8f4fd',
-  },
-  {
-    rank: 10,
-    id: 'jain-university-online',
-    name: 'JAIN (Deemed-to-be University) Online',
-    nirf: 62,
-    naac: 'A++',
-    fee: '₹2.2L',
-    emi: '₹2,500/mo',
-    bestFor: 'South India Brand',
-    specs: ['Finance', 'Marketing', 'HR', 'Data Analytics', 'International Business'],
-    badge: 'NAAC A++',
-    badgeColor: '#16a34a',
-    badgeBg: '#f0fff4',
-  },
+function NaacCell({ r }: { r: RankedMba }) {
+  if (r.naac.grade) {
+    return (
+      <span className="font-bold text-xs" style={{ color: '#10b981' }}>
+        {r.naac.grade}
+      </span>
+    )
+  }
+  return (
+    <span className="text-[11px] font-semibold" style={{ color: '#64748b' }} title={r.naac.note}>
+      {r.naac.status === 'lapsed' ? 'Cycle expired' : 'Not verified'}
+    </span>
+  )
+}
+
+function FeeCell({ r }: { r: RankedMba }) {
+  if (r.fee) return <span className="font-semibold text-navy text-xs">{r.fee}</span>
+  return (
+    <span className="text-[11px] font-semibold" style={{ color: '#64748b' }}>
+      Not published
+    </span>
+  )
+}
+
+const BUDGET_BANDS = [
+  { label: 'Under ₹1 lakh', test: (r: RankedMba) => (r.feeMin as number) < 100000, color: '#10b981', bg: '#ecfdf5', border: '#a7f3d0' },
+  { label: '₹1 lakh to ₹2 lakh', test: (r: RankedMba) => (r.feeMin as number) >= 100000 && (r.feeMin as number) < 200000, color: '#f97316', bg: '#fff7ed', border: '#fed7aa' },
+  { label: '₹2 lakh and above', test: (r: RankedMba) => (r.feeMin as number) >= 200000, color: '#0f172a', bg: '#f1f5f9', border: '#cbd5e1' },
 ]
 
-// ── Page ──────────────────────────────────────────────────────────────────────
-
-export default function BestOnlineMBAPage() {
+export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
-      <div className="min-h-screen" style={{ background: '#F7F8FA' }}>
-
-        {/* ── Breadcrumb ─────────────────────────────────────────────────── */}
-        <div className="bg-white border-b border-border">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 py-2.5 text-xs text-slate-500 flex items-center gap-1.5">
-            <Link href="/" className="hover:text-amber no-underline font-medium">Home</Link>
-            <span>›</span>
-            <span className="text-navy font-semibold">Best Online MBA in India 2026</span>
-          </div>
-        </div>
+      <div className="bg-surface min-h-screen">
 
         {/* ── Hero ───────────────────────────────────────────────────────── */}
         <div className="bg-navy text-white py-14">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-bold mb-5"
-              style={{ background: 'rgba(200,129,26,0.2)', color: '#e0a93a', border: '1px solid rgba(200,129,26,0.3)' }}>
-              <Shield className="w-3 h-3" /> Updated April 2026 · Zero Paid Rankings
+              style={{ background: 'rgba(249,115,22,0.18)', color: '#fb923c', border: '1px solid rgba(249,115,22,0.3)' }}>
+              <Shield className="w-3 h-3" /> Updated {RANKING_AS_OF} · Zero paid rankings
             </div>
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight mb-4">
               Best Online MBA in India 2026
             </h1>
-            <p className="text-lg text-white/70 max-w-2xl leading-relaxed mb-6">
-              10 UGC DEB approved online MBA programs ranked by NIRF and NAAC — not by who paid us.
-              Fees from ₹60,000. All valid for government jobs and corporate hiring.
+            <p className="text-lg text-white/70 max-w-2xl leading-relaxed mb-3">
+              Ranked by NIRF&apos;s <strong className="text-white">Management</strong> category, best rank first.
+              That is the table that measures a management school. Most lists use the
+              University table instead, which scores the whole institution.
+            </p>
+            <p className="text-sm text-white/55 max-w-2xl leading-relaxed mb-6">
+              {RANKING_COUNTS.ranked} of the {RANKING_COUNTS.mbaUniversities} universities in our database offering a
+              UGC DEB approved online MBA hold a Management rank. Every rank below names its category.
             </p>
 
-            {/* Quick nav pills */}
             <div className="flex flex-wrap gap-2">
               {[
-                { label: 'Top 10 Rankings', href: '#rankings' },
-                { label: 'By Budget', href: '#by-budget' },
-                { label: 'By Use Case', href: '#by-usecase' },
-                { label: 'Specializations', href: '#specializations' },
+                { label: 'The ranking', href: '#rankings' },
+                { label: 'What we ranked on', href: '#criteria' },
+                { label: 'By budget', href: '#by-budget' },
+                { label: 'By use case', href: '#by-usecase' },
+                { label: 'Specialisations', href: '#specializations' },
                 { label: 'FAQs', href: '#faq' },
               ].map(pill => (
                 <a key={pill.href} href={pill.href}
@@ -313,244 +249,259 @@ export default function BestOnlineMBAPage() {
           </div>
         </div>
 
-        {/* ── Last updated + methodology strip ───────────────────────────── */}
+        {/* ── Methodology strip ──────────────────────────────────────────── */}
         <div className="bg-white border-b border-border">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center gap-x-6 gap-y-1 text-xs text-slate-500">
-            <span className="flex items-center gap-1.5"><CheckCircle className="w-3.5 h-3.5 text-sage" /> Ranked by NIRF (Ministry of Education)</span>
-            <span className="flex items-center gap-1.5"><CheckCircle className="w-3.5 h-3.5 text-sage" /> NAAC grade verified (naac.gov.in)</span>
+            <span className="flex items-center gap-1.5"><CheckCircle className="w-3.5 h-3.5 text-sage" /> Ordered by NIRF Management rank (nirfindia.org)</span>
+            <span className="flex items-center gap-1.5"><CheckCircle className="w-3.5 h-3.5 text-sage" /> NAAC grade printed for {RANKING_COUNTS.naacConfirmed} of {RANKING_COUNTS.ranked}, cross-checked</span>
             <span className="flex items-center gap-1.5"><CheckCircle className="w-3.5 h-3.5 text-sage" /> UGC DEB approved only</span>
-            <span className="flex items-center gap-1.5"><CheckCircle className="w-3.5 h-3.5 text-sage" /> Fees from official university websites</span>
+            <span className="flex items-center gap-1.5"><CheckCircle className="w-3.5 h-3.5 text-sage" /> Fees shown for {RANKING_COUNTS.feesPublished} of {RANKING_COUNTS.ranked}, rest not published</span>
             <span className="flex items-center gap-1.5"><Shield className="w-3.5 h-3.5 text-amber" /> Zero paid placements</span>
           </div>
         </div>
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
 
-          {/* ── Quick verdict box ─────────────────────────────────────────── */}
+          {/* ── Quick verdict ─────────────────────────────────────────────── */}
           <div className="card p-6 mb-8 border-l-4 border-amber">
-            <h2 className="text-lg font-bold text-navy mb-3">Quick Verdict — Best Online MBA by Category</h2>
+            <h2 className="text-lg font-bold text-navy mb-1">Quick verdict</h2>
+            <p className="text-xs text-ink-2 mb-4">
+              Each line names the category of every rank it quotes. Derived from the table below, so the two cannot disagree.
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                { label: 'Best overall (ranking + brand)', value: 'MAHE Manipal Online — NIRF #3, NAAC A++' },
-                { label: 'Best under ₹1.5L', value: 'SRM Online — NIRF #11, NAAC A++ from ₹60K' },
-                { label: 'Best premium brand', value: 'Symbiosis SSODL — NIRF #24, NAAC A++' },
-                { label: 'Best for government jobs', value: 'IGNOU / Andhra University — cheapest UGC DEB approved' },
-                { label: 'Best management depth', value: 'NMIMS Online — NIRF Mgmt #24, NAAC A++' },
-                { label: 'Best for working professionals', value: 'Chandigarh University or LPU — flexible + A++' },
+                {
+                  label: 'Best NIRF Management rank',
+                  value: `${TOP_RANKED.displayName}, Management #${TOP_RANKED.nirfManagement}${TOP_RANKED.naac.grade ? `, NAAC ${TOP_RANKED.naac.grade}` : ''}`,
+                },
+                {
+                  label: 'Strongest across both NIRF tables',
+                  value: `${BEST_COMBINED.displayName}, Management #${BEST_COMBINED.nirfManagement} and University #${BEST_COMBINED.nirfUniversity}`,
+                },
+                {
+                  label: 'Lowest fee we can verify',
+                  value: `${CHEAPEST.displayName}, ${CHEAPEST.fee}, Management #${CHEAPEST.nirfManagement}`,
+                },
+                {
+                  label: 'Highest fee we can verify',
+                  value: `${DEAREST.displayName}, ${DEAREST.fee}, Management #${DEAREST.nirfManagement}`,
+                },
+                {
+                  label: 'Ranked but fee not published',
+                  value: `${NO_FEE.map(r => r.displayName).join(', ')}. Ask the university directly.`,
+                },
+                {
+                  label: 'Not on this page',
+                  value: `${RANKING_COUNTS.unranked} online MBA universities hold no NIRF Management rank. That is a gap in the data, not a verdict on them.`,
+                },
               ].map(item => (
                 <div key={item.label} className="flex gap-2">
                   <CheckCircle className="w-4 h-4 text-sage shrink-0 mt-0.5" />
                   <div>
                     <div className="text-xs font-bold text-navy">{item.label}</div>
-                    <div className="text-xs text-ink-2">{item.value}</div>
+                    <div className="text-xs text-ink-2 leading-relaxed">{item.value}</div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* ── Top 10 Rankings Table ─────────────────────────────────────── */}
+          {/* ── Ranking table ─────────────────────────────────────────────── */}
           <section id="rankings" className="mb-10 scroll-mt-20">
-            <h2 className="text-2xl font-bold text-navy mb-2">Top 10 Online MBA Universities in India 2026</h2>
-            <p className="text-sm text-ink-2 mb-6">Ranked by NIRF (Ministry of Education, India). All universities are UGC DEB approved and NAAC accredited. Fees shown are total program cost from official university websites.</p>
+            <h2 className="text-2xl font-bold text-navy mb-2">
+              Online MBA universities ranked by NIRF Management, {RANKING_AS_OF}
+            </h2>
+            <p className="text-sm text-ink-2 mb-6">
+              All {RANKING_COUNTS.ranked} universities that offer a UGC DEB approved online MBA and hold a placement in
+              NIRF&apos;s Management category, best rank first. Both NIRF columns are shown so you can see where the two
+              tables disagree, and they disagree a lot: {BEST_MBA_RANKING.filter(r => r.nirfUniversity !== null && Math.abs(r.nirfManagement - (r.nirfUniversity as number)) >= 20).length} of
+              these universities sit at least 20 places apart in the two rankings.
+            </p>
 
-            <div className="space-y-4">
-              {TOP_10.map((u) => (
-                <div key={u.id} className="card overflow-hidden">
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-4 p-5">
-                    {/* Rank */}
-                    <div className="flex items-center gap-4 sm:w-8 shrink-0">
-                      <div className="w-8 h-8 rounded-full flex items-center justify-center font-black text-sm shrink-0"
-                        style={{ background: u.rank <= 3 ? 'linear-gradient(135deg,#c9922a,#e0a93a)' : 'var(--surface-2)', color: u.rank <= 3 ? '#fff' : 'var(--ink-2)' }}>
-                        {u.rank}
-                      </div>
-                    </div>
-
-                    {/* Name + badges */}
-                    <div className="flex-1 min-w-0">
-                      <div className="flex flex-wrap items-center gap-2 mb-1">
-                        <Link href={`/universities/${u.id}/mba`} className="font-bold text-navy hover:text-amber transition-colors no-underline text-base">
-                          {u.name}
-                        </Link>
-                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full"
-                          style={{ background: u.badgeBg, color: u.badgeColor, border: `1px solid ${u.badgeColor}30` }}>
-                          {u.badge}
-                        </span>
-                      </div>
-                      <div className="flex flex-wrap gap-3 text-xs text-ink-2 mb-2">
-                        <span className="font-semibold" style={{ color: '#1a5f9a' }}>NIRF {(u as any).nirfLabel || `#${u.nirf} University`}</span>
-                        <span className="font-semibold" style={{ color: '#16a34a' }}>NAAC {u.naac}</span>
-                        <span>Best for: <strong className="text-ink-1">{u.bestFor}</strong></span>
-                      </div>
-                      <div className="flex flex-wrap gap-1.5">
-                        {u.specs.slice(0, 4).map(s => (
-                          <span key={s} className="text-[10px] px-2 py-0.5 rounded-md font-medium"
-                            style={{ background: 'var(--surface-2)', color: 'var(--ink-2)', border: '1px solid var(--border)' }}>
-                            {s}
-                          </span>
-                        ))}
-                        {u.specs.length > 4 && (
-                          <span className="text-[10px] px-2 py-0.5 rounded-md" style={{ background: 'var(--surface-2)', color: 'var(--ink-3)', border: '1px solid var(--border)' }}>
-                            +{u.specs.length - 4} more
-                          </span>
-                        )}
-                      </div>
-                    </div>
-
-                    {/* Fee + CTA */}
-                    <div className="flex sm:flex-col items-center sm:items-end gap-3 sm:gap-1 shrink-0">
-                      <div className="text-right">
-                        <div className="text-[10px] text-ink-3">Total fees</div>
-                        <div className="font-bold text-navy text-sm">{u.fee}</div>
-                        <div className="text-[10px] text-amber font-semibold">EMI {u.emi}</div>
-                      </div>
-                      <Link href={`/universities/${u.id}/mba`}
-                        className="px-4 py-2 rounded-lg text-xs font-bold btn-primary whitespace-nowrap no-underline">
-                        View Details →
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-5 p-4 rounded-xl text-xs text-ink-2 leading-relaxed" style={{ background: 'var(--surface-2)', border: '1px solid var(--border)' }}>
-              <strong className="text-navy">Ranking methodology:</strong> Universities are ordered by their overall NIRF rank published by the Ministry of Education, India (nirfindia.org). NAAC grade sourced from naac.gov.in. Fees are from official university websites as of March 2026 and may change. <strong>No university paid to appear or rank higher on this list.</strong>
-              <p className="mt-2">MAHE ranks #1 on this list. Read the full <Link href="/blog/mahe-online-mba-review-2026" className="font-semibold text-amber hover:underline">MAHE online MBA review</Link> for a deeper look at fees, NAAC A++, and specialisations.</p>
-            </div>
-          </section>
-
-          {/* ── Comparison Table ──────────────────────────────────────────── */}
-          <section className="mb-10">
-            <h2 className="text-xl font-bold text-navy mb-4">Side-by-Side Comparison</h2>
             <div className="overflow-x-auto rounded-2xl border border-border">
               <table className="w-full text-sm">
+                <caption className="sr-only">
+                  Online MBA universities in India holding a NIRF Management category rank, with NIRF University rank,
+                  NAAC grade and total published fee, as of {RANKING_AS_OF}.
+                </caption>
                 <thead>
                   <tr style={{ background: 'var(--navy)', color: '#fff' }}>
-                    <th className="text-left px-4 py-3 font-bold text-xs">University</th>
-                    <th className="px-4 py-3 font-bold text-xs text-center">NIRF</th>
-                    <th className="px-4 py-3 font-bold text-xs text-center">NAAC</th>
-                    <th className="px-4 py-3 font-bold text-xs text-center">Total Fee</th>
-                    <th className="px-4 py-3 font-bold text-xs text-center">Govt Jobs</th>
-                    <th className="px-4 py-3 font-bold text-xs hidden md:table-cell">Best For</th>
+                    <th scope="col" className="px-3 py-3 font-bold text-xs text-center">#</th>
+                    <th scope="col" className="text-left px-4 py-3 font-bold text-xs">University</th>
+                    <th scope="col" className="px-4 py-3 font-bold text-xs text-center">NIRF<br />Management</th>
+                    <th scope="col" className="px-4 py-3 font-bold text-xs text-center">NIRF<br />University</th>
+                    <th scope="col" className="px-4 py-3 font-bold text-xs text-center">NAAC</th>
+                    <th scope="col" className="px-4 py-3 font-bold text-xs text-center">Total fee</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {TOP_10.map((u, i) => (
-                    <tr key={u.id} className={i % 2 === 0 ? 'bg-white' : ''} style={{ background: i % 2 !== 0 ? 'var(--surface-2)' : '' }}>
-                      <td className="px-4 py-3 font-medium text-navy text-xs">
-                        <Link href={`/universities/${u.id}/mba`} className="hover:text-amber no-underline">{u.name}</Link>
+                  {BEST_MBA_RANKING.map(r => (
+                    <tr key={r.id} style={{ background: r.position % 2 === 0 ? 'var(--surface-2)' : '' }}>
+                      <td className="px-3 py-3 text-center">
+                        <span className="inline-flex w-6 h-6 rounded-full items-center justify-center font-black text-[11px]"
+                          style={{
+                            background: r.position <= 3 ? 'linear-gradient(135deg,#f97316,#fb923c)' : 'var(--surface-2)',
+                            color: r.position <= 3 ? '#fff' : 'var(--ink-2)',
+                          }}>
+                          {r.position}
+                        </span>
                       </td>
-                      <td className="px-4 py-3 text-center text-xs font-bold" style={{ color: '#1a5f9a' }}>{(u as any).nirfLabel || `#${u.nirf} Univ`}</td>
-                      <td className="px-4 py-3 text-center text-xs font-bold" style={{ color: '#16a34a' }}>{u.naac}</td>
-                      <td className="px-4 py-3 text-center text-xs font-semibold text-navy">{u.fee}</td>
-                      <td className="px-4 py-3 text-center"><CheckCircle className="w-4 h-4 text-sage mx-auto" /></td>
-                      <td className="px-4 py-3 text-xs text-ink-2 hidden md:table-cell">{u.bestFor}</td>
+                      <th scope="row" className="px-4 py-3 font-medium text-navy text-xs text-left">
+                        <Link href={`${r.href}/mba`} className="hover:text-amber no-underline">{r.displayName}</Link>
+                        {r.city ? <span className="block text-[10px] text-ink-3 font-normal">{r.city}</span> : null}
+                      </th>
+                      <td className="px-4 py-3 text-center text-xs font-bold" style={{ color: '#0f172a' }}>
+                        #{r.nirfManagement}
+                      </td>
+                      <td className="px-4 py-3 text-center text-xs" style={{ color: '#64748b' }}>
+                        {r.nirfUniversity ? `#${r.nirfUniversity}` : <span className="text-[11px]">Not ranked</span>}
+                      </td>
+                      <td className="px-4 py-3 text-center"><NaacCell r={r} /></td>
+                      <td className="px-4 py-3 text-center"><FeeCell r={r} /></td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-ink-3 mt-2">All universities above are UGC DEB approved and valid for government job applications.</p>
+
+            <p className="text-xs text-ink-3 mt-2">
+              Every university listed is UGC DEB approved. Entitlement is granted per programme and per mode, so confirm
+              your specific programme on{' '}
+              <Link href="/verify" className="font-semibold text-amber hover:underline">our verification pages</Link>{' '}
+              or directly at deb.ugc.ac.in before you pay.
+            </p>
           </section>
 
-          {/* ── By Budget ─────────────────────────────────────────────────── */}
-          <section id="by-budget" className="mb-10 scroll-mt-20">
-            <h2 className="text-xl font-bold text-navy mb-4">Best Online MBA by Budget</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {[
-                {
-                  range: 'Under ₹1 Lakh',
-                  color: '#16a34a',
-                  bg: '#f0fff4',
-                  border: '#bbf7d0',
-                  picks: [
-                    { name: 'SRM Online', fee: '₹60K', note: 'NIRF #11, NAAC A++', id: 'srm-institute-science-technology-online' },
-                    { name: 'Andhra University Online', fee: '₹60K', note: 'NIRF #23, NAAC A++', id: 'andhra-university-online' },
-                    { name: 'Anna University Online', fee: '₹60K', note: 'NIRF #20, NAAC A++', id: 'anna-university-online' },
-                  ],
-                  note: 'Government and government-funded universities. Best value for NAAC A++ credential.',
-                },
-                {
-                  range: '₹1L – ₹2L',
-                  color: '#1a5f9a',
-                  bg: '#eff6ff',
-                  border: '#bfdbfe',
-                  picks: [
-                    { name: 'Chandigarh University Online', fee: '₹1.65L', note: 'NIRF #19, NAAC A+', id: 'chandigarh-university-online' },
-                    { name: 'LPU Online', fee: '₹1.46L', note: 'NIRF #31, NAAC A++', id: 'lovely-professional-university-online' },
-                    { name: 'MUJ Online', fee: '₹1.6L', note: 'NIRF #58, NAAC A+', id: 'manipal-university-jaipur-online' },
-                  ],
-                  note: 'Best mix of brand value and affordability. Strong employer recognition.',
-                },
-                {
-                  range: '₹2L – ₹3.5L',
-                  color: '#7c3aed',
-                  bg: '#f5f3ff',
-                  border: '#ddd6fe',
-                  picks: [
-                    { name: 'MAHE Manipal Online', fee: '₹2.75L', note: 'NIRF #3, NAAC A++, QS #32', id: 'manipal-academy-higher-education-online' },
-                    { name: 'NMIMS Online', fee: '₹2.2L', note: 'NIRF #52, NAAC A++', id: 'nmims-online' },
-                    { name: 'Symbiosis SSODL', fee: '₹3.70L', note: 'NIRF #24, NAAC A++. ₹3.15L after 2+ yrs exp concession', id: 'symbiosis-university-online' },
-                  ],
-                  note: 'Premium programs with strongest brand recognition for corporate hiring.',
-                },
-              ].map(tier => (
-                <div key={tier.range} className="card p-5" style={{ borderTop: `3px solid ${tier.color}` }}>
-                  <div className="text-sm font-bold mb-3" style={{ color: tier.color }}>{tier.range}</div>
-                  <div className="space-y-2 mb-3">
-                    {tier.picks.map(p => (
-                      <div key={p.id} className="flex items-start justify-between gap-2">
-                        <div>
-                          <Link href={`/universities/${p.id}/mba`} className="text-xs font-bold text-navy hover:text-amber no-underline block">{p.name}</Link>
-                          <div className="text-[10px] text-ink-3">{p.note}</div>
-                        </div>
-                        <span className="text-xs font-bold shrink-0" style={{ color: tier.color }}>{p.fee}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <p className="text-[10px] text-ink-2 leading-relaxed border-t border-border pt-2">{tier.note}</p>
+          {/* ── Criteria ──────────────────────────────────────────────────── */}
+          <section id="criteria" className="mb-10 scroll-mt-20">
+            <div className="card p-6" style={{ borderLeft: '4px solid #f97316' }}>
+              <h2 className="text-xl font-bold text-navy mb-3">What we ranked on, and what we left out</h2>
+              <div className="space-y-3 text-sm text-ink-2 leading-relaxed">
+                <p>
+                  <strong className="text-navy">The one criterion for inclusion:</strong> the university holds a
+                  placement in NIRF&apos;s Management category. {RANKING_COUNTS.ranked} of {RANKING_COUNTS.mbaUniversities} do.
+                  We use that table rather than the NIRF University table because a University rank scores the whole
+                  institution, including departments that have nothing to do with an MBA.
+                </p>
+                <p>
+                  The difference is not cosmetic. {BEST_MBA_RANKING[0].displayName} ranks{' '}
+                  #{BEST_MBA_RANKING[0].nirfManagement} for Management and{' '}
+                  #{BEST_MBA_RANKING[0].nirfUniversity} as a university. Order the same set by the University column and
+                  a completely different name comes first. A list that prints only &quot;NIRF #3&quot; has told you nothing
+                  you can act on.
+                </p>
+                <p>
+                  <strong className="text-navy">NAAC grades are gated.</strong> We print a grade only where our
+                  Supabase record confirms it and the accreditation cycle has not expired. That is why{' '}
+                  {RANKING_COUNTS.ranked - RANKING_COUNTS.naacConfirmed} rows read &quot;Not verified&quot; or &quot;Cycle
+                  expired&quot; instead of a letter. An expired cycle does not mean the university lost its grade, it means
+                  we will not assert a current grade we cannot stand behind.
+                </p>
+                <p>
+                  <strong className="text-navy">Fees are suppressed rather than guessed.</strong>{' '}
+                  {NO_FEE.length} of {RANKING_COUNTS.ranked} rows show no fee. Some universities publish none. Others
+                  carried a fee range that several unrelated universities carried byte for byte, which makes it a
+                  placeholder someone copied, not a price. A blank cell costs you nothing. A wrong price costs you money.
+                </p>
+                <div className="flex gap-2 p-3 rounded-lg" style={{ background: '#fef2f2', border: '1px solid #fecaca' }}>
+                  <AlertTriangle className="w-4 h-4 shrink-0 mt-0.5" style={{ color: '#ef4444' }} />
+                  <p className="text-xs" style={{ color: '#7f1d1d' }}>
+                    <strong>What this ranking cannot tell you:</strong> placement outcomes for online cohorts. No Indian
+                    university publishes audited salary or placement data for its online MBA students separately from its
+                    campus students. Any ranking that claims otherwise is reusing campus numbers.
+                  </p>
                 </div>
-              ))}
+                <p className="text-xs text-ink-3">
+                  All fees are indicative and change between intakes. Verify the current figure on the university&apos;s own
+                  fee page before deciding. Read the full{' '}
+                  <Link href="/methodology" className="font-semibold text-amber hover:underline">EdifyEdu methodology</Link>{' '}
+                  for how we source and gate every field, or see all{' '}
+                  <Link href="/programs/mba" className="font-semibold text-amber hover:underline">
+                    {RANKING_COUNTS.mbaUniversities} online MBA universities
+                  </Link>{' '}
+                  including the {RANKING_COUNTS.unranked} without a Management rank.
+                </p>
+              </div>
             </div>
           </section>
 
-          {/* ── By Use Case ───────────────────────────────────────────────── */}
+          {/* ── By budget ─────────────────────────────────────────────────── */}
+          <section id="by-budget" className="mb-10 scroll-mt-20">
+            <h2 className="text-xl font-bold text-navy mb-2">Ranked universities by budget</h2>
+            <p className="text-sm text-ink-2 mb-4">
+              Only the {RANKING_COUNTS.feesPublished} universities with a fee we can verify appear here, grouped by the
+              lower bound of their published fee. Management rank shown against each.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {BUDGET_BANDS.map(band => {
+                const inBand = WITH_FEE.filter(band.test)
+                return (
+                  <div key={band.label} className="rounded-xl p-4"
+                    style={{ background: band.bg, border: `1px solid ${band.border}` }}>
+                    <div className="font-bold text-sm mb-1" style={{ color: band.color }}>{band.label}</div>
+                    <div className="text-[10px] font-semibold mb-3" style={{ color: '#64748b' }}>
+                      {inBand.length} of {RANKING_COUNTS.feesPublished} ranked universities
+                    </div>
+                    <ul className="space-y-2">
+                      {inBand.map(r => (
+                        <li key={r.id} className="text-xs">
+                          <Link href={`${r.href}/mba`} className="font-semibold text-navy hover:text-amber no-underline">
+                            {r.displayName}
+                          </Link>
+                          <span className="block text-ink-2">
+                            {r.fee} · Management #{r.nirfManagement}
+                            {r.naac.grade ? ` · NAAC ${r.naac.grade}` : ''}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )
+              })}
+            </div>
+            <p className="text-xs text-ink-3 mt-3">
+              Work out the monthly cost of any of these with the{' '}
+              <Link href="/tools/emi-calculator" className="font-semibold text-amber hover:underline">EMI calculator</Link>.
+              We do not print per-university EMI figures on this page, because the stored EMI values share the same
+              duplication problem as the placeholder fees.
+            </p>
+          </section>
+
+          {/* ── By use case ───────────────────────────────────────────────── */}
           <section id="by-usecase" className="mb-10 scroll-mt-20">
-            <h2 className="text-xl font-bold text-navy mb-4">Best Online MBA by Use Case</h2>
+            <h2 className="text-xl font-bold text-navy mb-2">Which of these fits your situation</h2>
+            <p className="text-sm text-ink-2 mb-4">
+              Picks are drawn from the table above, so every name here holds a NIRF Management rank.
+            </p>
             <div className="space-y-4">
               {[
                 {
-                  useCase: 'Government Job / PSU Eligibility',
+                  useCase: 'Government job or PSU eligibility',
                   icon: '🏛️',
-                  desc: 'Any UGC DEB approved online MBA qualifies. Choose based on budget. Even IGNOU\'s ₹58,000 MBA is fully valid for UPSC, SSC, banking, and railway exams.',
-                  picks: ['Andhra University Online (NIRF #23, cheapest A++)', 'SRM Online (NIRF #11, ₹60K)', 'IGNOU (₹58K, government-run)'],
+                  desc: 'Any UGC DEB approved online MBA qualifies where an MBA is a listed qualification, so rank matters less than cost and DEB entitlement for your exact programme. Choose on price and verify the mode.',
+                  picks: WITH_FEE.slice().sort((a, b) => (a.feeMin as number) - (b.feeMin as number)).slice(0, 3),
                   link: '/guides/online-mba-for-government-jobs',
-                  linkLabel: 'Read: Online MBA & Govt Jobs Guide',
+                  linkLabel: 'Read: online MBA and government jobs',
                 },
                 {
-                  useCase: 'Working Professionals (No Time for Classes)',
-                  icon: '💼',
-                  desc: 'Prioritise universities with recorded lectures, flexible schedules, and online proctored exams. Weekend-only live sessions are standard across all top online MBAs.',
-                  picks: ['LPU Online (NIRF #31, flexible, ₹1.46L)', 'Chandigarh University (NIRF #19, strong LMS)', 'Amity Online (NIRF #22, industry exposure)'],
-                  link: '/blog/is-online-mba-worth-it-2026',
-                  linkLabel: 'Read: Is Online MBA Worth It in 2026?',
-                },
-                {
-                  useCase: 'Corporate Hiring / Brand-Conscious Employers',
+                  useCase: 'Employers who screen on the university name',
                   icon: '🏢',
-                  desc: 'For employers who care about the university name, stick to MAHE Manipal, NMIMS, Symbiosis, or Amity. These carry the strongest brand recall in HR circles.',
-                  picks: ['MAHE Manipal (NIRF #3, QS #32 Asia)', 'NMIMS (NIRF Mgmt #24)', 'Symbiosis SSODL (NIRF #24)'],
+                  desc: 'Where a recruiter filters on institution, the two NIRF tables together are the closest thing to a defensible signal. These are the universities ranked well in both.',
+                  picks: BEST_MBA_RANKING
+                    .filter(r => r.nirfUniversity !== null)
+                    .slice()
+                    .sort((a, b) => (a.nirfManagement + (a.nirfUniversity as number)) - (b.nirfManagement + (b.nirfUniversity as number)))
+                    .slice(0, 3),
                   link: '/compare',
-                  linkLabel: 'Compare these universities →',
+                  linkLabel: 'Compare these side by side',
                 },
                 {
-                  useCase: 'International Recognition / Going Abroad',
-                  icon: '🌍',
-                  desc: 'For immigration or foreign employer recognition, choose WES Canada-recognised or QS-ranked programs. Only a handful of Indian online MBAs meet this bar.',
-                  picks: ['Amity Online (WES Recognised)', 'MAHE Manipal Online (QS #32, WES Recognised)', 'NMIMS Online (WES Recognised)'],
-                  link: '/universities/manipal-academy-higher-education-online',
-                  linkLabel: 'View MAHE Manipal details →',
+                  useCase: 'Strongest management ranking, cost aside',
+                  icon: '📊',
+                  desc: 'If the management school itself is what you are buying, read the Management column and nothing else. Note that the top of this list is not the top of most published rankings.',
+                  picks: BEST_MBA_RANKING.slice(0, 3),
+                  link: '/programs/mba',
+                  linkLabel: 'All online MBA universities',
                 },
               ].map(item => (
                 <div key={item.useCase} className="card p-6">
@@ -562,10 +513,17 @@ export default function BestOnlineMBAPage() {
                     </div>
                   </div>
                   <ul className="space-y-1 mb-3 pl-2">
-                    {item.picks.map(p => (
-                      <li key={p} className="flex items-center gap-2 text-sm text-ink-1">
+                    {item.picks.map(r => (
+                      <li key={r.id} className="flex items-center gap-2 text-sm text-ink-1">
                         <CheckCircle className="w-3.5 h-3.5 text-sage shrink-0" />
-                        {p}
+                        <Link href={`${r.href}/mba`} className="no-underline text-ink-1 hover:text-amber">
+                          {r.displayName}
+                        </Link>
+                        <span className="text-xs text-ink-2">
+                          Management #{r.nirfManagement}
+                          {r.nirfUniversity ? `, University #${r.nirfUniversity}` : ''}
+                          {r.fee ? `, ${r.fee}` : ', fee not published'}
+                        </span>
                       </li>
                     ))}
                   </ul>
@@ -577,53 +535,76 @@ export default function BestOnlineMBAPage() {
             </div>
           </section>
 
-          {/* ── Specializations ───────────────────────────────────────────── */}
+          {/* ── Specialisations ───────────────────────────────────────────── */}
           <section id="specializations" className="mb-10 scroll-mt-20">
-            <h2 className="text-xl font-bold text-navy mb-2">Best MBA Specialization for Your Career</h2>
-            <p className="text-sm text-ink-2 mb-5">All specializations below are available in online MBA programs from UGC DEB approved universities.</p>
+            <h2 className="text-xl font-bold text-navy mb-2">Choosing a specialisation</h2>
+            <p className="text-sm text-ink-2 mb-5">
+              These specialisations are offered across UGC DEB approved online MBA programmes. We do not publish salary
+              figures by specialisation, because the numbers circulating for online cohorts are not traceable to an
+              audited source.
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                { spec: 'Finance', career: 'Banking, CFO roles, Investment, Fintech', salary: '₹5L–₹20L', link: '/programs/mba/finance' },
-                { spec: 'Marketing', career: 'Brand management, Digital marketing, Sales', salary: '₹4L–₹15L', link: '/programs/mba/marketing' },
-                { spec: 'Human Resource Management', career: 'HR Business Partner, L&D, Talent Acquisition', salary: '₹4L–₹12L', link: '/programs/mba/human-resource-management' },
-                { spec: 'Business Analytics', career: 'Data Analyst, Business Intelligence, Consulting', salary: '₹6L–₹20L', link: '/programs/mba/business-analytics' },
-                { spec: 'Operations Management', career: 'Supply Chain, Logistics, Process Management', salary: '₹5L–₹18L', link: '/programs/mba/operations-management' },
-                { spec: 'International Business', career: 'Export-Import, Global Strategy, Trade Finance', salary: '₹5L–₹16L', link: '/programs/mba/international-business' },
+                { spec: 'Finance', career: 'Banking, treasury, investment, fintech', link: '/programs/mba/finance' },
+                { spec: 'Marketing', career: 'Brand management, digital marketing, sales', link: '/programs/mba/marketing' },
+                { spec: 'Human Resource Management', career: 'HR business partner, L&D, talent acquisition', link: '/programs/mba/human-resource-management' },
+                { spec: 'Business Analytics', career: 'Data analysis, business intelligence, consulting', link: '/programs/mba/business-analytics' },
+                { spec: 'Operations Management', career: 'Supply chain, logistics, process management', link: '/programs/mba/operations-management' },
+                { spec: 'International Business', career: 'Export and import, global strategy, trade finance', link: '/programs/mba/international-business' },
               ].map(item => (
                 <Link key={item.spec} href={item.link}
                   className="card p-4 hover:border-amber transition-colors no-underline block">
                   <div className="font-bold text-navy text-sm mb-0.5">{item.spec}</div>
-                  <div className="text-xs text-ink-2 mb-1">{item.career}</div>
-                  <div className="text-xs font-semibold text-amber">{item.salary} avg package</div>
+                  <div className="text-xs text-ink-2">{item.career}</div>
                 </Link>
               ))}
             </div>
             <div className="mt-3">
               <Link href="/blog/best-mba-specialization-india-2026" className="text-xs font-bold text-amber hover:underline flex items-center gap-1">
-                Read: Best MBA Specialization in India 2026 — Full Salary Comparison <ArrowRight className="w-3 h-3" />
+                Read: best MBA specialisation in India 2026 <ArrowRight className="w-3 h-3" />
               </Link>
             </div>
           </section>
 
-          {/* ── How to Choose ─────────────────────────────────────────────── */}
+          {/* ── How to choose ─────────────────────────────────────────────── */}
           <section className="card p-7 mb-10">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-10 h-10 rounded-full bg-amber/10 flex items-center justify-center">
                 <BarChart2 className="w-5 h-5 text-amber" />
               </div>
-              <h2 className="text-xl font-bold text-navy">How to Choose the Right Online MBA</h2>
+              <h2 className="text-xl font-bold text-navy">How to choose, in order</h2>
             </div>
             <div className="space-y-3">
               {[
-                { step: '1', title: 'Verify UGC DEB approval first', desc: 'Check the official UGC DEB approved list at ugc.ac.in. Do not enrol in any online MBA from a university not on this list — the degree will not be recognised.' },
-                { step: '2', title: 'Match NIRF rank to your career goal', desc: 'If you are targeting PSU, govt jobs, or education — any UGC DEB approved university works. For corporate hiring at competitive companies, stick to NIRF top 50.' },
-                { step: '3', title: 'Check NAAC grade (A++ > A+ > A)', desc: 'NAAC A++ signals highest quality accreditation. For most online MBA programs, aim for at least NAAC A or A+.' },
-                { step: '4', title: 'Set a realistic budget with EMI', desc: 'Total fees range from ₹60K to ₹3.15L. All top universities offer semester-wise payment or EMI from ₹1,500/month. Factor in total cost, not just semester 1.' },
-                { step: '5', title: 'Choose specialization based on your career, not trend', desc: 'Finance and Analytics have the highest salary ceiling but need prior aptitude. HR and Marketing are broader. Pick based on your current work or target role.' },
+                {
+                  step: '1',
+                  title: 'Check DEB entitlement for the programme and the mode',
+                  desc: 'Look the university up at deb.ugc.ac.in and confirm the MBA is listed in online mode specifically. Entitlement is per programme and per mode. A university approved for distance mode is not approved for online mode, and that distinction has caught real students.',
+                },
+                {
+                  step: '2',
+                  title: 'Read the right NIRF column',
+                  desc: `For a management degree, the Management category is the relevant table. Ask which category any rank you are quoted refers to. Only ${RANKING_COUNTS.ranked} of ${RANKING_COUNTS.mbaUniversities} online MBA universities hold a Management rank at all, so an unranked university is common rather than disqualifying.`,
+                },
+                {
+                  step: '3',
+                  title: 'Check the NAAC cycle, not just the grade',
+                  desc: 'A grade has an expiry date. An A++ whose cycle ended last year is not a current A++. Ask for the accreditation certificate with its validity period, which universities will provide on request.',
+                },
+                {
+                  step: '4',
+                  title: 'Get the total fee in writing',
+                  desc: `Across the ranked universities that publish a fee, the verified span is ${FEE_SPAN} for the full programme. Ask for the all-in figure including registration and examination charges, not the per-semester number, and get it on university letterhead or a university email.`,
+                },
+                {
+                  step: '5',
+                  title: 'Pick the specialisation on your actual work',
+                  desc: 'Choose on the role you hold now or the one you are moving to, not on which specialisation is being marketed hardest this year. The curriculum difference between specialisations is usually four to six papers.',
+                },
               ].map(item => (
                 <div key={item.step} className="flex gap-4">
                   <div className="w-7 h-7 rounded-full flex items-center justify-center font-black text-xs shrink-0"
-                    style={{ background: 'linear-gradient(135deg,#c9922a,#e0a93a)', color: '#fff' }}>
+                    style={{ background: 'linear-gradient(135deg,#f97316,#fb923c)', color: '#fff' }}>
                     {item.step}
                   </div>
                   <div>
@@ -635,64 +616,25 @@ export default function BestOnlineMBAPage() {
             </div>
             <div className="mt-5 pt-4 border-t border-border flex flex-col gap-2">
               <Link href="/blog/how-to-choose-online-mba-university-india-2026" className="text-sm font-bold text-amber hover:underline flex items-center gap-1">
-                Read the full 2026 guide: How to Choose the Right Online MBA University in India <ArrowRight className="w-3.5 h-3.5" />
+                The full 2026 guide: how to choose an online MBA university <ArrowRight className="w-3.5 h-3.5" />
               </Link>
-              <Link href="/blog/best-online-mba-colleges-india-2026" className="text-sm font-bold text-amber hover:underline flex items-center gap-1">
-                See our detailed ranking of best online MBA colleges <ArrowRight className="w-3.5 h-3.5" />
-              </Link>
-              <Link href="/blog/online-manipal-mba-review-2026" className="text-sm font-bold text-amber hover:underline flex items-center gap-1">
-                MAHE vs MUJ vs SMU compared <ArrowRight className="w-3.5 h-3.5" />
+              <Link href="/contact" className="text-sm font-bold text-amber hover:underline flex items-center gap-1">
+                Ask us about a university that is not on this list <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
           </section>
 
-          {/* ── Related Content ───────────────────────────────────────────── */}
+          {/* ── Related ───────────────────────────────────────────────────── */}
           <section className="mb-10">
-            <h2 className="text-xl font-bold text-navy mb-4">Related Guides &amp; Articles</h2>
+            <h2 className="text-xl font-bold text-navy mb-4">Related guides and articles</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
-                {
-                  icon: BookOpen,
-                  title: 'Is Online MBA Worth It in 2026?',
-                  desc: 'Honest ROI breakdown — salary data, employer perception, who should and shouldn\'t do it.',
-                  href: '/blog/is-online-mba-worth-it-2026',
-                  tag: 'Blog',
-                },
-                {
-                  icon: BookOpen,
-                  title: 'Best Affordable Online MBA India 2026',
-                  desc: 'Programs under ₹1 lakh compared honestly — IGNOU, government universities, and budget private options.',
-                  href: '/blog/affordable-online-mba-india-2026',
-                  tag: 'Blog',
-                },
-                {
-                  icon: BookOpen,
-                  title: 'Online MBA vs Distance MBA',
-                  desc: 'Key differences in delivery, recognition, learning experience, and career outcomes.',
-                  href: '/guides/online-mba-vs-distance-mba',
-                  tag: 'Guide',
-                },
-                {
-                  icon: BookOpen,
-                  title: 'Online MBA for Government Jobs',
-                  desc: 'Which online MBAs are valid for UPSC, SSC, banking, PSU exams — and which are not.',
-                  href: '/guides/online-mba-for-government-jobs',
-                  tag: 'Guide',
-                },
-                {
-                  icon: BookOpen,
-                  title: 'Best MBA Specialization 2026',
-                  desc: 'Finance vs Marketing vs Analytics vs HR — salary data and career paths compared.',
-                  href: '/blog/best-mba-specialization-india-2026',
-                  tag: 'Blog',
-                },
-                {
-                  icon: IndianRupee,
-                  title: 'EMI Calculator',
-                  desc: 'Calculate your exact monthly EMI for any online MBA fee.',
-                  href: '/tools/emi-calculator',
-                  tag: 'Tool',
-                },
+                { icon: BookOpen, title: 'Is an online MBA worth it in 2026?', desc: 'ROI, employer perception, and who should not do one.', href: '/blog/is-online-mba-worth-it-2026', tag: 'Blog' },
+                { icon: BookOpen, title: 'Affordable online MBA India 2026', desc: 'Programmes under ₹1 lakh, with the fees we can and cannot verify marked.', href: '/blog/affordable-online-mba-india-2026', tag: 'Blog' },
+                { icon: BookOpen, title: 'Online MBA vs distance MBA', desc: 'Delivery, recognition, and why DEB mode matters.', href: '/guides/online-mba-vs-distance-mba', tag: 'Guide' },
+                { icon: Shield, title: 'How we verify a university', desc: 'The checks behind every claim on this page.', href: '/methodology', tag: 'Method' },
+                { icon: BarChart2, title: 'All online MBA universities', desc: `Every one of the ${RANKING_COUNTS.mbaUniversities}, ranked and unranked.`, href: '/programs/mba', tag: 'Compare' },
+                { icon: IndianRupee, title: 'EMI calculator', desc: 'Monthly cost for any fee you have been quoted.', href: '/tools/emi-calculator', tag: 'Tool' },
               ].map(item => (
                 <Link key={item.href} href={item.href} className="card p-5 hover:border-amber transition-colors no-underline block">
                   <div className="text-[10px] font-bold uppercase tracking-widest text-amber mb-2">{item.tag}</div>
@@ -705,7 +647,7 @@ export default function BestOnlineMBAPage() {
 
           {/* ── FAQ ───────────────────────────────────────────────────────── */}
           <section id="faq" className="mb-10 scroll-mt-20">
-            <h2 className="text-xl font-bold text-navy mb-5">Frequently Asked Questions</h2>
+            <h2 className="text-xl font-bold text-navy mb-5">Frequently asked questions</h2>
             <div className="space-y-3">
               {faqSchema.mainEntity.map((faq) => (
                 <details key={faq.name} className="card p-5 group">
