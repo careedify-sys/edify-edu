@@ -9,6 +9,49 @@ the fix by accident.
 
 ---
 
+## 2026-09-29 (sixth) · I published a false NIRF claim in eight posts
+
+**My error, found while working on something else.** Eight of the sixteen posts
+written on 2026-09-28 stated "No NIRF Management placement on record" for a
+university that holds one:
+
+| University | Actual NIRF Management rank | Posts affected |
+|---|---:|---:|
+| MAHE Online | **39** | 6 |
+| Manipal University Jaipur Online | **81** | 3 |
+
+Nine table rows across eight distinct posts, one post carrying both.
+
+**How it happened.** The tables were built on 28 September from a Supabase query
+whose printed output did not include every university. Absence from that output
+was read as absence of a rank. `lib/data.ts` carries `nirfMgt: 39` and
+`nirfMgt: 81` for these two in plain sight, and a single check against it would
+have caught both. This is precisely the failure
+`project_supabase_accreditation_gap` exists to prevent: joining Supabase without
+care produces confident wrong answers, and I produced two.
+
+**Direction of the error matters but does not excuse it.** The claim understated
+two universities rather than overstating them, which is the less harmful
+direction. It is still a false statement of fact, published nine times, on a
+site whose whole argument is that it does not do this, and two days after
+shipping a methodology page promising that every NIRF rank names its category
+and that absence is stated only where it is real.
+
+**How it was found and fixed.** A row-level audit parsing every `<tr>` and
+resolving the first cell to a university record. The first pass used a looser
+regex, reported three different universities, and was wrong: it missed MAHE,
+which was already confirmed by hand, and flagged Symbiosis and Alliance, which
+were mis-resolutions. Only the row-level parse agreed with manual checking.
+Corrected to "NIRF Management category rank 39" and "... rank 81". Re-audit
+reports 30 remaining absence claims, all of them true.
+
+**What is not fixed.** There is no gate on NIRF claims in blog content. The 30
+surviving "no placement" claims were verified correct today, but nothing stops
+the next one being wrong. A `check-nirf-claims` gate along the lines of
+`check-coupon-claims` would close it.
+
+---
+
 ## 2026-09-29 (fifth) · The fees cannot be fetched, so the queue is the deliverable
 
 **What was asked.** Fix it, meaning go and get the real fees behind the 242
