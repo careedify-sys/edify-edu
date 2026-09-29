@@ -1,0 +1,349 @@
+{
+  "note": "Fee ranges claimed identically by two or more universities. A range is two numbers; identical independent authorship is not plausible, so these are treated as bulk-authored placeholders and suppressed by lib/fees.ts rule 4d. Regenerate with scripts/build-placeholder-fee-ranges.mjs. Single values are deliberately excluded, see that script for why.",
+  "generatedAt": "2026-09-29",
+  "minUniversities": 2,
+  "rangeCount": 25,
+  "affectedRows": 101,
+  "ranges": [
+    {
+      "min": 48000,
+      "max": 117000,
+      "universities": [
+        "dayalbagh-educational-institute-online",
+        "devi-ahilya-vishwavidyalaya-online",
+        "jamia-hamdard-online",
+        "madurai-kamaraj-university-online",
+        "maharshi-dayanand-university-online",
+        "mahatma-jyotiba-phule-rohilkhand-university-online",
+        "meenakshi-academy-higher-education-online",
+        "mody-university-online",
+        "university-of-jammu-online"
+      ],
+      "programmes": [
+        "MA"
+      ]
+    },
+    {
+      "min": 60000,
+      "max": 200000,
+      "universities": [
+        "assam-don-bosco-university-online",
+        "chitkara-university-online",
+        "desh-bhagat-university-online",
+        "galgotias-university-online",
+        "gls-university-online",
+        "iift-online",
+        "mahatma-gandhi-university-online",
+        "upes-online"
+      ],
+      "programmes": [
+        "B.Com",
+        "BBA",
+        "BCA",
+        "M.Com",
+        "MBA"
+      ]
+    },
+    {
+      "min": 37000,
+      "max": 90000,
+      "universities": [
+        "bharath-university-online",
+        "dayalbagh-educational-institute-online",
+        "madurai-kamaraj-university-online",
+        "maharshi-dayanand-university-online",
+        "mahatma-jyotiba-phule-rohilkhand-university-online",
+        "meenakshi-academy-higher-education-online",
+        "mody-university-online"
+      ],
+      "programmes": [
+        "BA"
+      ]
+    },
+    {
+      "min": 41000,
+      "max": 99000,
+      "universities": [
+        "bharath-university-online",
+        "dayalbagh-educational-institute-online",
+        "graphic-era-university-online",
+        "jamia-hamdard-online",
+        "madurai-kamaraj-university-online",
+        "meenakshi-academy-higher-education-online",
+        "mody-university-online"
+      ],
+      "programmes": [
+        "B.Com"
+      ]
+    },
+    {
+      "min": 52000,
+      "max": 125000,
+      "universities": [
+        "bharath-university-online",
+        "dayalbagh-educational-institute-online",
+        "madurai-kamaraj-university-online",
+        "maharshi-dayanand-university-online",
+        "mahatma-jyotiba-phule-rohilkhand-university-online",
+        "mody-university-online",
+        "university-of-jammu-online"
+      ],
+      "programmes": [
+        "M.Com"
+      ]
+    },
+    {
+      "min": 45000,
+      "max": 108000,
+      "universities": [
+        "dayalbagh-educational-institute-online",
+        "graphic-era-university-online",
+        "jamia-hamdard-online",
+        "madurai-kamaraj-university-online",
+        "mody-university-online"
+      ],
+      "programmes": [
+        "BBA",
+        "BCA"
+      ]
+    },
+    {
+      "min": 58000,
+      "max": 130000,
+      "universities": [
+        "banasthali-vidyapith-online",
+        "guru-gobind-singh-indraprastha-university-online",
+        "jawaharlal-nehru-university-online",
+        "kalinga-institute-industrial-technology-online",
+        "university-of-mumbai-online"
+      ],
+      "programmes": [
+        "MA"
+      ]
+    },
+    {
+      "min": 42000,
+      "max": 105000,
+      "universities": [
+        "bangalore-university-online",
+        "deen-dayal-upadhyay-gorakhpur-university-online",
+        "guru-jambheshwar-university-online",
+        "sage-university-online"
+      ],
+      "programmes": [
+        "M.Com"
+      ]
+    },
+    {
+      "min": 49000,
+      "max": 110000,
+      "universities": [
+        "banasthali-vidyapith-online",
+        "guru-gobind-singh-indraprastha-university-online",
+        "kalinga-institute-industrial-technology-online",
+        "university-of-kerala-online"
+      ],
+      "programmes": [
+        "B.Com"
+      ]
+    },
+    {
+      "min": 60000,
+      "max": 150000,
+      "universities": [
+        "guru-jambheshwar-university-online",
+        "iiit-bangalore-online",
+        "mats-university-online",
+        "sage-university-online"
+      ],
+      "programmes": [
+        "MBA"
+      ]
+    },
+    {
+      "min": 62000,
+      "max": 140000,
+      "universities": [
+        "banasthali-vidyapith-online",
+        "kalinga-institute-industrial-technology-online",
+        "shivaji-university-online",
+        "university-of-kerala-online"
+      ],
+      "programmes": [
+        "M.Com"
+      ]
+    },
+    {
+      "min": 75000,
+      "max": 180000,
+      "universities": [
+        "devi-ahilya-vishwavidyalaya-online",
+        "graphic-era-university-online",
+        "jamia-hamdard-online",
+        "mody-university-online"
+      ],
+      "programmes": [
+        "MBA"
+      ]
+    },
+    {
+      "min": 10000,
+      "max": 90000,
+      "universities": [
+        "jss-university-online",
+        "karunya-university-online",
+        "lovely-professional-university-online"
+      ],
+      "programmes": [
+        "B.Com",
+        "BA",
+        "BBA"
+      ]
+    },
+    {
+      "min": 10000,
+      "max": 80000,
+      "universities": [
+        "alliance-university-online",
+        "sikkim-manipal-university-online",
+        "vels-university-online"
+      ],
+      "programmes": [
+        "B.Com",
+        "BA",
+        "BBA"
+      ]
+    },
+    {
+      "min": 20000,
+      "max": 150000,
+      "universities": [
+        "lovely-professional-university-online",
+        "sharda-university-online",
+        "symbiosis-university-online"
+      ],
+      "programmes": [
+        "BBA",
+        "BCA",
+        "BSc"
+      ]
+    },
+    {
+      "min": 20000,
+      "max": 120000,
+      "universities": [
+        "jaypee-university-online",
+        "marwadi-university-online",
+        "pp-savani-university-online"
+      ],
+      "programmes": [
+        "BBA"
+      ]
+    },
+    {
+      "min": 33000,
+      "max": 82000,
+      "universities": [
+        "bangalore-university-online",
+        "guru-jambheshwar-university-online",
+        "mats-university-online"
+      ],
+      "programmes": [
+        "B.Com"
+      ]
+    },
+    {
+      "min": 39000,
+      "max": 97000,
+      "universities": [
+        "bangalore-university-online",
+        "guru-jambheshwar-university-online",
+        "sage-university-online"
+      ],
+      "programmes": [
+        "MA"
+      ]
+    },
+    {
+      "min": 90000,
+      "max": 200000,
+      "universities": [
+        "banasthali-vidyapith-online",
+        "shivaji-university-online",
+        "university-of-kerala-online"
+      ],
+      "programmes": [
+        "MBA"
+      ]
+    },
+    {
+      "min": 10000,
+      "max": 70000,
+      "universities": [
+        "karnataka-state-open-university-online",
+        "uttaranchal-university-online"
+      ],
+      "programmes": [
+        "B.Com",
+        "BA"
+      ]
+    },
+    {
+      "min": 20000,
+      "max": 110000,
+      "universities": [
+        "alliance-university-online",
+        "noida-international-university-online"
+      ],
+      "programmes": [
+        "BBA"
+      ]
+    },
+    {
+      "min": 25000,
+      "max": 100000,
+      "universities": [
+        "marwadi-university-online",
+        "pp-savani-university-online"
+      ],
+      "programmes": [
+        "M.Com",
+        "MSc"
+      ]
+    },
+    {
+      "min": 36000,
+      "max": 90000,
+      "universities": [
+        "mats-university-online",
+        "sage-university-online"
+      ],
+      "programmes": [
+        "BBA",
+        "BCA"
+      ]
+    },
+    {
+      "min": 45000,
+      "max": 100000,
+      "universities": [
+        "banasthali-vidyapith-online",
+        "kalinga-institute-industrial-technology-online"
+      ],
+      "programmes": [
+        "BA"
+      ]
+    },
+    {
+      "min": 54000,
+      "max": 120000,
+      "universities": [
+        "guru-gobind-singh-indraprastha-university-online",
+        "university-of-kerala-online"
+      ],
+      "programmes": [
+        "BBA"
+      ]
+    }
+  ]
+}

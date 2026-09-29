@@ -27,6 +27,14 @@ node scripts/check-fee-baseline.mjs || exit 1
 echo "pre-commit: check-blog-fees"
 npx tsx scripts/check-blog-fees.mjs || exit 1
 
+# Rule 4d's input. A fee RANGE claimed identically by two or more universities
+# is one placeholder copied, not a price: nine universities carry the
+# byte-identical "₹48K – ₹117K" for MA. Rule 4a measures width and cannot see
+# duplication, so these printed as real prices at 2.4x. Blocks the list drifting
+# from lib/data.ts. Regenerate: node scripts/build-placeholder-fee-ranges.mjs
+echo "pre-commit: check-placeholder-fee-ranges"
+npx tsx scripts/build-placeholder-fee-ranges.mjs --check || exit 1
+
 # Duplicate-slug gate. Blocks any commit that introduces a slug collision
 # in BLOG_POSTS. Runtime .find() picks the first match and would render
 # only one of the entries, so a duplicate is always a bug. See
