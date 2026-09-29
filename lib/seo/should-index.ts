@@ -68,6 +68,14 @@ export const PROGRAMS_INDEX_ALLOWLIST: readonly string[] = [
   '/programs/msc',                        //  2 clicks, 2.06% CTR, pos 11.05
   '/programs/bcom',                       //  2 clicks, pos 10.45
   '/programs/bsc',                        //  1 click,  pos 8.39
+  // Added 2026-09-29 on content, not clicks, which is a departure from every
+  // line above and worth justifying. This list was built on GSC performance
+  // when these hubs were thin, and BA had nothing to show. Since the
+  // comparison table shipped (fa7e62f) the picture has inverted: /programs/ba
+  // renders 27 university rows while /programs/bsc, which this list already
+  // admits on a single click, renders 2. Indexing the 2-row page and hiding
+  // the 27-row one is not a position the content supports.
+  '/programs/ba',
 ]
 
 export function shouldIndexProgramsPath(pathname: string): boolean {

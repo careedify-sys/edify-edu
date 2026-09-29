@@ -9,6 +9,61 @@ the fix by accident.
 
 ---
 
+## 2026-09-29 (third) · A stale comment produced a wrong conclusion, and /programs/ba
+
+**What was asked.** What is next, fix it.
+
+### The correction first
+
+On 2026-09-28 I recorded, in the fix log, in memory and in the strategy doc,
+that `app/sitemap.ts` drops every `/programs/{prog}` hub except
+`/programs/mba`, and therefore that nine of the ten comparison tables shipped in
+`fa7e62f` were invisible to crawlers.
+
+**That was wrong.** Nine of the ten hubs were already in
+`PROGRAMS_INDEX_ALLOWLIST`, already in the sitemap, already emitting
+`index, follow`. The tables were landing.
+
+The source of the error was `app/sitemap.ts:141`, a comment reading "only
+/programs/mba earns its slot" that stopped being true as the allowlist grew.
+I read the comment and did not check the allowlist three lines below it, or
+curl the sitemap, either of which would have caught it immediately. A stale
+comment is more dangerous than no comment, because it reads as a finding
+somebody already made.
+
+The comment now describes what the code does and says explicitly to read the
+allowlist rather than the prose. The wrong claim is struck through in the
+entries that carry it rather than quietly deleted.
+
+### The one real gap it exposed
+
+Checking properly turned up an inconsistency the wrong belief had been hiding:
+
+| Hub | Table rows | Indexed |
+|---|---:|---|
+| `/programs/bcom` | 57 | yes |
+| `/programs/ma` | 52 | yes |
+| `/programs/mcom` | 50 | yes |
+| **`/programs/ba`** | **27** | **no** |
+| `/programs/msc` | 17 | yes |
+| `/programs/bsc` | 2 | yes |
+
+`/programs/bsc` is indexed on a two-row table. `/programs/ba` was noindexed on a
+twenty-seven-row one. The allowlist was built on GSC clicks back when these hubs
+were thin and BA had nothing to show, and the comparison table inverted that
+without anyone revisiting the decision.
+
+`/programs/ba` is now allowed, on content rather than clicks, which is a
+departure from every other line in that list and is commented as such. All ten
+hubs are now consistent and the `/programs` index itself still correctly
+noindexes.
+
+**How it was verified.** `/programs/ba` returns `index, follow` with a
+self-canonical and appears once in the sitemap; the sitemap now carries all ten
+hubs and still excludes `/programs`. Full pre-commit suite passes.
+
+---
+
 ## 2026-09-29 (second) · The page said "Fake? No." about a university under a reported MoE complaint
 
 **How this was found.** Rishi asked what was outranking the verify pages on
@@ -224,6 +279,16 @@ drops every `/programs/{prog}` hub except `/programs/mba`, because the others
 emit noindex. The comparison table renders on all of them, but only the MBA one
 is crawlable today. That is fine for users and ready if the others earn
 indexing, but for AI citation purposes only `/programs/mba` currently counts.
+
+> **CORRECTION, 2026-09-29.** The paragraph above is wrong. Nine of the ten
+> programme hubs were already in `PROGRAMS_INDEX_ALLOWLIST` and already in the
+> sitemap emitting `index, follow`. It was written from the code comment at
+> `app/sitemap.ts:141`, which still said "only /programs/mba earns its slot"
+> long after the allowlist grew past that. The comment was taken at face value
+> instead of being checked against the allowlist it describes or against the
+> rendered sitemap, either of which would have caught it in seconds. The
+> comment has been corrected and now points the reader at the allowlist. See
+> the entry below.
 
 **How it was verified.** Page returns 200 with `index, follow`, a self-canonical
 and WebPage plus BreadcrumbList schema. Derived sentences confirmed in the

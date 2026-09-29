@@ -137,10 +137,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       // Remove /programs/{prog}/{spec} (3-segment program paths)
       if (/^\/programs\/[^/]+\/[^/]+$/.test(path)) return false
 
-      // Task 5 (2026-08-19). /programs/{prog} hubs come in via valid-urls.json,
-      // but only /programs/mba earns its slot; every other program hub noindexes,
-      // as does the /programs index itself. Drop them here so the sitemap matches
-      // the per-page robots meta.
+      // Task 5 (2026-08-19). /programs/{prog} hubs come in via valid-urls.json
+      // and are filtered here against PROGRAMS_INDEX_ALLOWLIST so the sitemap
+      // matches the per-page robots meta. The /programs index itself always
+      // noindexes.
+      //
+      // This comment previously said "only /programs/mba earns its slot", which
+      // stopped being true as the allowlist grew and was wrong by 2026-09-29,
+      // when all ten hubs are allowed. It was read at face value that day and
+      // produced a confidently wrong conclusion in the AI-citation work: that
+      // nine of the ten comparison tables were invisible to crawlers. Read the
+      // allowlist, not this comment.
       if (path === '/programs') return false
       if (/^\/programs\/[^/]+$/.test(path) && !shouldIndexProgramsPath(path)) return false
 
