@@ -9,6 +9,40 @@ the fix by accident.
 
 ---
 
+## 2026-10-01 · Shoolini review counted patent filings as patents granted
+
+**The post said "the university has generated over 1,500 patents".** It did not.
+That figure belongs to Shoolini's *filing* count, which covers utility patents,
+designs, copyrights and trademarks, and which the university's own press history
+tracks past 1,000 (2022) and past 2,000 (2026). A filing is an application. It
+proves intent, not an award. Printing it as "generated patents" turned the
+university's marketing arithmetic into an Edify factual claim in Edify's voice.
+
+**Why this one was liftable.** It sat in the Accreditation and Recognition
+Profile section, the block an assistant quotes when asked "is Shoolini research
+active", directly beside verified NAAC, NIRF and UGC-DEB values. A wrong number
+with correct neighbours reads as verified.
+
+**The fix separates the two counts instead of deleting the claim.** Rishi
+supplied the grant-side figure, 650+ granted or registered intellectual
+properties. The paragraph now states that, states the #3-in-India-for-patents-
+filed claim as the university's portal claim rather than ours, and tells the
+reader the two numbers measure different things. Checked against
+`shoolini.online`, which asserts "#3 IN INDIA PATENTS FILED" with no number
+attached, so the rank is quotable only as their claim.
+
+**Not verified, carried as the university's figure:** the 650 count itself.
+`shoolini.com` was unreachable from this environment, and no approved source
+states a grant total. If it is ever restated, restate it as a grant count, never
+as a filing count.
+
+**What guards it:** nothing automated. `lib/blog.ts` has no fact gate, and the
+only other patent mentions in the file are the Parul NIRF Innovation note and an
+NIRF parameter gloss, both correct. Grep `patent` in `lib/blog.ts` before
+adding a research claim to any review.
+
+---
+
 ## 2026-09-29 (seventh) · /best-online-mba-india ranked by the wrong NIRF table
 
 **The page promising a ranked online MBA list was ordered by the NIRF University

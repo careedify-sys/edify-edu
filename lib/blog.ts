@@ -30034,7 +30034,9 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Shoolini University: Accreditation and Recognition Profile</h2>
 
-<p>Shoolini University was established in 2009 in Solan, Himachal Pradesh. Despite being a relatively young institution, it has built a strong research profile. NAAC A+ accreditation with a CGPA of 3.54 on a 4.0 scale. NIRF University Rank #69 (2025). QS World University Rankings 2025 placed Shoolini as the #1 private university in India, which is frequently cited in its marketing. UGC-DEB entitlement for online programmes is active and verified. The university has generated over 1,500 patents, which is unusually high for a private Indian university of its age.</p>
+<p>Shoolini University was established in 2009 in Solan, Himachal Pradesh. Despite being a relatively young institution, it has built a strong research profile. NAAC A+ accreditation with a CGPA of 3.54 on a 4.0 scale. NIRF University Rank #69 (2025). QS World University Rankings 2025 placed Shoolini as the #1 private university in India, which is frequently cited in its marketing. UGC-DEB entitlement for online programmes is active and verified.</p>
+
+<p>Research output is the stronger half of that profile. The university reports more than 650 granted or registered intellectual properties, and its own portal claims the #3 position in India for patents filed. Those two numbers measure different things, because a filing is an application and a grant is an award, so read them separately when you compare universities.</p>
 
 <p>One important distinction: Shoolini's QS ranking applies to the campus university as a whole, not specifically to the online MBA programme. The online programme uses the same faculty for recorded lectures and curriculum design, but the learning experience is delivered through a standard LMS platform, not through the campus infrastructure that earned the QS ranking. This is a common point of confusion in marketing materials.</p>
 
