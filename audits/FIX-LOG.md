@@ -9,6 +9,74 @@ the fix by accident.
 
 ---
 
+## 2026-10-02 · The data-slim gate, and the 89 truncations my first sweep missed
+
+**The gate.** `scripts/check-data-slim-drift.mts` compares `lib/data-slim.ts` to
+`lib/data.ts` on the twelve fields where mirroring is the contract, and fails on a
+missing record, an extra record, or any value that disagrees. Wired into pre-commit.
+
+**Its scope is narrower than "every shared field", on purpose.** Five shared fields are
+curated in the mirror rather than copied, and enforcing them would be a regression:
+`city` (120 differ, and the mirror is the better value: the master holds raw address
+fragments like "Block 32" and "Sector 7" where the mirror holds "Phagwara" and "Navi
+Mumbai"), `approvals` (136 differ, mirror abbreviated or absent, and its strings predate
+the NIRF-category rule, so that one wants its own cleanup), `qsRank` (36 differ, all
+present in the mirror and absent from the master, so the mirror is the only source),
+`logo` (separate slim-logo pipeline) and `color` (presentational).
+
+**Proven before it was trusted.** Four injected defects, one per class: a removed record,
+a `programs` array missing a programme, a `programs` array carrying one the master does
+not have, and a reintroduced truncated name. All four failed the gate with the right
+diagnosis, including "hidden from hubs" against "falsely listed on hubs". It then caught a
+real one unprompted: two names I had just fixed in the master left the mirror stale, and
+the gate flagged it before I noticed.
+
+**Which is also the correction this entry exists for.** Yesterday I reported the
+truncated university strings as fixed. They were not. That sweep detected truncation by
+unbalanced parentheses, so it only ever found a cut that happened to land inside a
+bracket. Everything cut in open prose passed:
+
+- 14 more `description` values, including Sathyabama's "...from Sathyabama Institute of
+  Science and Technolog." which was still live on the page a day after I said it was fixed.
+- 75 `careerOutcome` values across 40 distinct strings. Each one cut the university name
+  mid-word just before the dash, so the page read "UGC DEB approved MBA from Koneru
+  Lakshmaiah Education Foundat", then a dash, then "recognised for corporate hiring."
+  These render on the programme block of each university page.
+- 2 more `name` values, "B.S. Abdur Rahman Crescent Institute of Science and Online" and
+  "Sri Ramachandra Institute of Higher Education and Online". Both end on "and" with no
+  bracket anywhere, so neither could ever have been caught by the first detector. Worse,
+  rebuilding a description from a truncated name just reproduces the truncation, which is
+  what happened on the first repair attempt here.
+
+**The detector needed four passes, and each failure is the same shape.** v1 keyed on
+bracket balance. v2 looked for a sentence ending on a dangling connective or a cut word,
+and flagged three complete descriptions because they end "...at deb.ugc.ac.in." where the
+final ".in." reads as a sentence ending on "in". v3 skipped dotted tokens but only looked
+for a cut word before a full stop, so "Crescent Institut", cut before a dash, survived. v4
+checks a cut word before any terminator. Each version reported a clean result that was
+not clean, which is the real lesson: a detector that finds nothing is not evidence of
+nothing until it has been shown to find something.
+
+Names taken from Supabase `universities.name`. The rebuilt `careerOutcome` strings also
+drop their em dash, so the em-dash baseline fell rather than held.
+
+**Not fixed, needs Rishi.** Three taglines are truncated and editorial, so the missing
+text cannot be reconstructed, only invented:
+- `jain-university-online`: ends "Business Analytics & A"
+- `mangalayatan-university-online`: ends "Organization Development + Group and"
+- `nmims-online`: ends "SCM, IS for Managemen"
+
+**Verified.** Gate green, `check-em-dash`, `check-em-dash-baseline`, `verify-fees`,
+`tsc --noEmit`, and the full pre-commit suite. On the dev server the Sathyabama, UPES and
+B.S. Abdur Rahman pages now render complete sentences in both the description and the
+programme block, with no console errors.
+
+**Guarded by.** `check-data-slim-drift` for the mirror. Nothing guards string truncation
+in `lib/data.ts` itself; the v4 rule is cheap and belongs in pre-commit next, which would
+have caught all 89 of these on the day they were imported.
+
+---
+
 ## 2026-10-02 · Two hubs carried a blog post's title, and the count that exposed it was wrong
 
 **The collision.** `/programs/mba` and `/programs/bba` each carried a "Best Online X

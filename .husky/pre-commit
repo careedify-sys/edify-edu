@@ -58,6 +58,16 @@ npx tsx scripts/check-quick-facts.mjs || exit 1
 # grows past it, it just understates the product to every reader, human and
 # model alike, and a site disagreeing with itself reads as unreliable to the
 # AI assistants we want citing it. See scripts/check-university-count.mjs.
+# lib/data-slim.ts mirrors lib/data.ts by hand, with no generator. The client
+# programme hubs filter on slim.programs, so drift there hides a university
+# from its own hub or advertises a programme it does not offer. On 2026-10-02
+# 32 of 143 records disagreed, one university was missing from the mirror, and
+# five names fixed in the master were still truncated in the mirror a day after
+# the master was fixed. See scripts/check-data-slim-drift.mts for the scope and
+# for which shared fields are deliberately NOT mirrored.
+echo "pre-commit: check-data-slim-drift"
+npx tsx scripts/check-data-slim-drift.mts || exit 1
+
 echo "pre-commit: check-university-count"
 npx tsx scripts/check-university-count.mjs || exit 1
 
