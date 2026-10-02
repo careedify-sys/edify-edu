@@ -9,6 +9,63 @@ the fix by accident.
 
 ---
 
+## 2026-10-02 · Truncation gate, and the 120-character cut it exposed
+
+**The gate.** `scripts/check-string-truncation.mts` blocks a string in `lib/data.ts` that
+was cut off mid-sentence. These render verbatim on university pages, in the description
+block, the per-programme career line and the hero tagline. Wired into pre-commit.
+
+**Three rules, each earning its place from a cut the previous version missed.**
+R1 flags a sentence ending on a word that cannot end one ("...Institute of Science and.").
+R2 flags a token that is a cut form of a word in the same record's `name` ("Technolog"
+against "Technology"), before any terminator rather than only before a full stop, because
+all 75 of the `careerOutcome` cuts sit before a dash. R3 flags a value that just stops on a
+one or two letter stub ("...Business Analytics & A"). A token preceded by a dot is skipped
+throughout, or every value ending "...at deb.ugc.ac.in." trips R1 on the final ".in.".
+
+**Proven before it was trusted, because four earlier detector versions each reported
+clean and were wrong.** Five behaviours tested: R1, R2 and R3 each rejected an injected
+instance; R3 was re-tested in isolation after the first attempt turned out to be caught by
+R2 instead; and a stale allowlist entry is reported without failing the build. Then
+restored and confirmed green.
+
+**What R3 found that nothing had seen before.** Taglines were cut at a hard 120
+characters on import. 26 records sit at exactly 120. Eleven of them still end mid-word and
+are visible to a reader; the other fifteen happen to land on a word boundary, so they read
+fine but silently lost whatever came after. The eleven visible ones are editorial and the
+missing half cannot be reconstructed from the record, only invented, so they are listed in
+`data/string-truncation-allowlist.json` with a reason each. That file is a to-do list, not
+a set of exemptions, and the gate reports entries that stop matching so they get removed.
+
+**A content defect the same probe turned up, and this one was fixable.** Scanning for
+duplicate taglines showed `gla-university-online` carrying Amity's tagline verbatim:
+"ONLY QS-ranked online MBA in India offering 19 specialisations". GLA has no `qsRank` at
+all and 16 MBA specialisations, so every claim in that sentence was false for it. Replaced
+with the site's own default for a NAAC A+ university, which 16 other records already use
+and which is true.
+
+**Two things left for Rishi, both flagged rather than guessed.**
+
+Amity's own tagline claims "ONLY QS-ranked online MBA in India". `lib/data.ts` contradicts
+it: 36 universities carry a `qsRank`. The superlative is false on the site's own data and
+needs removing by whoever rewrites the truncated line. Noted inside that allowlist entry so
+it travels with the text.
+
+`gls-university-online` and `sgt-university-online` share a tagline word for word ("Minor
+in AI in Business (GenAI for Finance) ... 500+ recruiters incl. Google"). Both are NAAC
+A+ with 8 MBA specialisations and no NIRF rank, so nothing in the data says which one owns
+it. Unlike the GLA case there is no basis to pick, so it stays as found.
+
+**Verified.** Gate green at 11 found and 11 allowlisted, the full pre-commit suite, and
+`/universities/gla-university-online` on the dev server no longer renders any QS claim,
+with no console errors.
+
+**Guarded by.** Itself, for new truncations. Nothing yet guards a tagline being copied
+verbatim between two universities, which is how the GLA claim arrived; a duplicate-tagline
+check is the obvious next one.
+
+---
+
 ## 2026-10-02 · The data-slim gate, and the 89 truncations my first sweep missed
 
 **The gate.** `scripts/check-data-slim-drift.mts` compares `lib/data-slim.ts` to

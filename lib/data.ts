@@ -6573,7 +6573,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 5833,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'ONLY QS-ranked online MBA in India offering 19 specialisations – highest count nationally; WASC (USA) + WES (Canada) + Q',
+    tagline: 'NAAC A+ accredited · UGC DEB approved online programs',
     description: 'UGC DEB approved online programs from GLA University (GLA Online). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals or graduates wanting domain flexibility with 19 choices in'],
     notFor: ['Those who want a very deep niche curriculum', 'prefer breadth over depth'],

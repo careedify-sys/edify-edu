@@ -65,6 +65,15 @@ npx tsx scripts/check-quick-facts.mjs || exit 1
 # five names fixed in the master were still truncated in the mirror a day after
 # the master was fixed. See scripts/check-data-slim-drift.mts for the scope and
 # for which shared fields are deliberately NOT mirrored.
+# Strings in lib/data.ts cut off mid-sentence by an importer. 89 of them shipped
+# and rendered verbatim on university pages. The 2026-10-01 sweep keyed on
+# unbalanced parentheses, found only the cuts that landed inside a bracket, and
+# declared the job done. Taglines were cut at a hard 120 characters: 26 sit at
+# exactly that length and 11 still end mid-word. Known-but-unfixable cases live
+# in data/string-truncation-allowlist.json with a reason each.
+echo "pre-commit: check-string-truncation"
+npx tsx scripts/check-string-truncation.mts || exit 1
+
 echo "pre-commit: check-data-slim-drift"
 npx tsx scripts/check-data-slim-drift.mts || exit 1
 
