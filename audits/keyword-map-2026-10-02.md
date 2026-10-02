@@ -218,7 +218,75 @@ of Technology".
 
 ## Open, deliberately not actioned here
 
-1. **The three-page cannibalisation above.** A consolidation call, not a silent edit.
+1. ~~**The three-page cannibalisation above.**~~ RESOLVED 2026-10-02, see below.
+
+### Resolution of the "best online MBA colleges in India" collision
+
+**It was a two-page problem, not three.** `/best-online-mba-india` had already been
+re-angled onto NIRF Management in 30bcb4c and no longer competes. The live collision was
+`/programs/mba` against `/blog/best-online-mba-colleges-india-2026`, whose titles shared
+their first five words.
+
+**A hypothesis I had to drop.** The colliding title was added to `/programs/mba` on
+2026-07-04 (a43d7e7), and the hub fell from position 6.93 to 11.90 across the GSC windows
+either side of it. That looked causal. It is not: every programme hub fell in the same
+period, and the hubs the commit did *not* touch fell further on average (21.51 places
+against 14.13). The retitle cannot be blamed for the drop.
+
+**A second thing I had to drop.** The September `Queries.csv` shows almost no impressions
+for "best/top online MBA" phrasing, which read like evidence the cluster does not exist.
+It is not evidence of anything: `Queries.csv` is capped at 1,000 rows and covers only
+36.5% of the window's impressions. `Pages.csv` covers 99.8%, so page-level numbers are
+safe to reason from and query-level absence is not.
+
+**What the fix rests on instead**, both provable from the code:
+
+- Two pages carried near-identical titles. The repo already treats that as a defect worth
+  a gate for specialisation pages (`check-duplicate-spec-titles.mts`).
+- `/programs/mba`'s title promised a curated best-of while its H1 and content deliver a
+  complete filterable database of every UGC-DEB university.
+
+**Resolved by intent, with no merge and no cross-canonical.** A canonical from the hub to
+the blog would delete a 121-university tool from the index to promote a 15-university
+article. They are different pages for different intents.
+
+| URL | Owns | Title now |
+|---|---|---|
+| `/blog/best-online-mba-colleges-india-2026` | "best online MBA colleges in India" | unchanged, it holds the best position of the three (5.77) and is the editorial ranked list |
+| `/programs/mba` | "online MBA in India" (14,400/mo in the export, previously unowned in any title) | Online MBA in India 2026: 121 UGC-DEB Universities Compared |
+| `/programs/bba` | "online BBA in India" | Online BBA in India 2026: 80 UGC-DEB Universities Compared |
+| `/best-online-mba-india` | NIRF Management ranking | unchanged |
+
+`/programs/bba` had the identical collision from the same commit, against
+`/blog/best-online-bba-colleges-india-2026`, and is fixed the same way.
+
+Guarded by `scripts/check-hub-blog-title-collision.mts`, wired into pre-commit. It
+compares the shared leading phrase rather than word overlap: the first version used
+Jaccard over word sets, which flagged 13 specialisation hubs that merely share template
+vocabulary and missed both real collisions.
+
+### `lib/data-slim.ts` had drifted from the master (found via the above, fixed)
+
+Putting a university count in the hub title exposed it. `/programs/mba` was rendering
+three different numbers: title 121, H1 119, comparison table 121. `UNIS_SLIM` is
+hand-maintained and the client hubs filter on its `programs` array.
+
+32 records disagreed with `lib/data.ts`, and one university was missing from the file
+altogether. Both directions were live defects:
+
+- **Missing entries hid universities from their own hub.** The MCA hub was short 8.
+  SPPU and IIIT Bangalore were absent from the MBA hub entirely.
+- **Extra entries advertised programmes that do not exist.** SASTRA was listed on the MCA
+  hub while `lib/data.ts` has it offering MBA only. Chitkara was listed on the B.Com and
+  BCA hubs. IIIT Bangalore was tagged MCA when it offers MBA, so it was both missing and
+  wrong.
+
+All 32 synced from `lib/data.ts` and `assam-down-town-university-online` added. `UNIS_SLIM`
+is now 143 records with zero programme drift and zero per-programme count gaps.
+
+**Still open:** `lib/data-slim.ts` has no generator and no gate, so it will drift again.
+A `--check` script comparing it to `lib/data.ts` is the obvious follow-up.
+
 2. **Placeholder fees.** 100 of 143 university records share a fee range with at least one other record:
    59 sit on ₹60,000 to ₹2,00,000, 18 on 0 to 0, 11 on ₹75,000 to ₹1,80,000. Sathyabama's page title
    renders "Fees ₹60K-200K" straight out of that cluster. `getDisplayFee` resolves real per-programme

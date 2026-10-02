@@ -14,6 +14,7 @@ import { getSpecFAQs } from '@/lib/specFaqs'
 import { getCanonicalSpec } from '@/lib/specMapping'
 import { shouldIndexProgramsPath } from '@/lib/seo/should-index'
 import { MBA_SPEC_SEO_OVERRIDES } from '@/lib/mba-spec-seo-overrides'
+import { getProgramHubSeo } from '@/lib/program-hub-seo'
 import { SPEC_HUB_EDITORIAL } from '@/lib/data/spec-hub-editorial'
 import ProgrammeComparisonTable from '@/components/ProgrammeComparisonTable'
 import ProgramPageClient from '@/components/ProgramPageClient'
@@ -200,17 +201,13 @@ export async function generateMetadata(
   // When present, these replace the generic template entirely.
   const specOverride = program === 'MBA' && subSlug ? MBA_SPEC_SEO_OVERRIDES[subSlug] : null
 
-  const PROGRAM_HUB_SEO: Record<string, { title: string; description: string }> = {
-    'mba': {
-      title: 'Best Online MBA Colleges in India 2026: Fees Compared',
-      description: 'Compare online MBA colleges side by side: fees, accreditation, placement reality. Independent comparison, zero commission.',
-    },
-    'bba': {
-      title: 'Best Online BBA Colleges in India 2026: Fees Compared',
-      description: 'Compare online BBA colleges: fees, NAAC grades, UGC-DEB approval. Symbiosis, Amity, LPU, Galgotias and more. Real student feedback, zero commission.',
-    },
-  }
-  const hubOverride = !activeSpec ? PROGRAM_HUB_SEO[programSlug] : null
+  // Count from UNIS_SLIM, not getUniversitiesByProgram: the hub client renders
+  // its list and its H1 from UNIS_SLIM, and the two disagree (121 vs 119 for
+  // MBA, 80 vs 79 for BBA, because lib/data-slim.ts is hand-maintained and has
+  // drifted). A title that states a different number from the H1 beneath it is
+  // the defect check-university-count.mjs exists to stop.
+  const hubUniCount = UNIS_SLIM.filter(u => u.programs.includes(program)).length
+  const hubOverride = !activeSpec ? getProgramHubSeo(programSlug, hubUniCount, year) : null
 
   // CTR-tuned title pattern (2026-05-25): lead with concrete number, year-in-
   // brackets hook, no em dashes, no "Compare/Explore" lead. clampTitle below

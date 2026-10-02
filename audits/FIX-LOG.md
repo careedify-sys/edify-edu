@@ -9,6 +9,77 @@ the fix by accident.
 
 ---
 
+## 2026-10-02 · Two hubs carried a blog post's title, and the count that exposed it was wrong
+
+**The collision.** `/programs/mba` and `/programs/bba` each carried a "Best Online X
+Colleges in India 2026" title, added together on 2026-07-04 in a43d7e7. Each is the
+opening of a blog post that already targets that phrase. Two URLs with the same title
+compete for one SERP slot and read as duplicate content, which is why the repo already
+gates it for specialisation pages.
+
+**Equally important, each title contradicted its own page.** The hub H1 says "Online MBA
+in India 2026: N UGC-Approved Universities Compared" and the page is a filterable database
+of every UGC-DEB university. The title promised a curated best-of. The page did not
+deliver what its title sold.
+
+**Two hypotheses I had to abandon, recorded so they are not re-run.**
+
+The hub fell from position 6.93 to 11.90 across the GSC windows either side of the
+retitle, which looked causal. It is not. Every programme hub fell in that period and the
+ones the commit did not touch fell further on average, 21.51 places against 14.13. A
+control group is cheap and it killed the story I wanted to tell.
+
+Separately, September's `Queries.csv` shows almost no impressions on "best online MBA"
+phrasing, which read like proof the cluster is dead. `Queries.csv` is capped at 1,000 rows
+and covers 36.5% of that window's impressions, so it cannot prove a negative. `Pages.csv`
+covers 99.8% and is safe to reason from. The decision rests on the duplicate title and the
+title/content mismatch, both provable from the code and neither needing traffic data.
+
+**Resolved by intent, not by merge or canonical.** Pointing the hub's canonical at the
+blog would drop a 121-university tool from the index in favour of a 15-university article;
+they answer different questions. The blog keeps "best online MBA colleges in India", where
+it holds the best position of the three. The hubs take "online MBA in India" and "online
+BBA in India", which their H1 and content already answer and which no title owned.
+`/best-online-mba-india` needed nothing: 30bcb4c had already re-angled it onto NIRF
+Management.
+
+**The guard, and why its first version was useless.** `scripts/check-hub-blog-title-collision.mts`
+compares hub titles to published blog titles. The first version scored Jaccard similarity
+over word sets. It flagged 13 specialisation hubs whose titles merely share the template
+vocabulary ("online mba in X management universities fees") and it missed both real
+collisions, which differ in their tails and scored 0.50. What collides in a SERP is the
+leading phrase a reader sees first, and word order is exactly what a set comparison throws
+away. Rewritten to measure the shared leading phrase: it now flags the two real pairs and
+nothing else. Hub SEO overrides moved to `lib/program-hub-seo.ts` so the gate can import
+them rather than parse a route file.
+
+**What putting a number in a title exposed.** `/programs/mba` rendered three different
+counts at once: title 121, H1 119, comparison table 121. `lib/data-slim.ts` is
+hand-maintained, the client hubs filter on its `programs` array, and 32 of its records
+disagreed with `lib/data.ts` while one university was missing from the file entirely.
+
+Both directions were live defects. Missing entries hid universities from their own hub:
+the MCA hub was short 8, and SPPU and IIIT Bangalore were absent from the MBA hub. Extra
+entries advertised programmes that do not exist: SASTRA was listed on the MCA hub when it
+offers MBA only, Chitkara on the B.Com and BCA hubs. IIIT Bangalore was tagged MCA when it
+offers MBA, so it was simultaneously missing and wrong.
+
+All 32 synced from `lib/data.ts`, the documented master, and the missing record added.
+`UNIS_SLIM` is now 143 records with zero drift. Had I taken the H1's 119 at face value I
+would have shipped the stale number in a title and called the job done.
+
+**Verified.** The full pre-commit suite, plus `check-university-count`,
+`check-programme-allowlist-resolver` and `check-sitemap-vs-404` run early because
+`slim.programs` decides hub membership. On the dev server all three counts on
+`/programs/mba` now read 121, `/programs/mca` reads 74 throughout, and the four pages in
+the cluster carry four distinct titles with no console errors.
+
+**Guarded by.** `check-hub-blog-title-collision` in pre-commit. `lib/data-slim.ts` still
+has no generator and no gate, so it will drift again; a `--check` against `lib/data.ts`
+is the obvious next one.
+
+---
+
 ## 2026-10-02 · A keyword export exposed a wrong NIRF rank and 33 truncated records
 
 **What prompted it.** Rishi supplied a 108-keyword export for the online-degree
