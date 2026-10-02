@@ -2,37 +2,37 @@
 
 Extractor v2 (structural attribution + range parsing + expanded NON_FEE).
 
-Total figures: **9391**
+Total figures: **9403**
 
 ## By classification
 
 | Class | Count |
 |---|---:|
-| MATCH | 1026 |
-| MISMATCH | 723 |
+| MATCH | 1034 |
+| MISMATCH | 732 |
 | SUPPRESSED | 10 |
 | ORPHAN | 44 |
-| UNRESOLVED | 1815 |
-| NON_FEE | 5773 |
+| UNRESOLVED | 1800 |
+| NON_FEE | 5783 |
 
 ## By class × confidence
 
 | Class / Confidence | Count |
 |---|---:|
-| MATCH/high | 621 |
+| MATCH/high | 625 |
 | MATCH/low | 69 |
-| MATCH/medium | 336 |
-| MISMATCH/high | 328 |
+| MATCH/medium | 340 |
+| MISMATCH/high | 330 |
 | MISMATCH/low | 134 |
-| MISMATCH/medium | 261 |
-| NON_FEE/- | 5773 |
+| MISMATCH/medium | 268 |
+| NON_FEE/- | 5783 |
 | ORPHAN/high | 34 |
 | ORPHAN/low | 2 |
 | ORPHAN/medium | 8 |
 | SUPPRESSED/high | 8 |
 | SUPPRESSED/medium | 2 |
-| UNRESOLVED/high | 16 |
-| UNRESOLVED/low | 1795 |
+| UNRESOLVED/high | 18 |
+| UNRESOLVED/low | 1778 |
 | UNRESOLVED/medium | 4 |
 
 ## Top 30 slugs by figure count
@@ -57,7 +57,7 @@ Total figures: **9391**
 | online-mba-supply-chain-management-india-2026 | 96 | 15 | 4 | 0 | 0 | 13 | 64 |
 | ias-officer-salary-india-2026-pay-scale-perks | 92 | 0 | 0 | 0 | 0 | 33 | 59 |
 | online-mba-hospital-healthcare-management-india-2026 | 92 | 21 | 5 | 0 | 0 | 15 | 51 |
-| online-mba-tamil-nadu-2026 | 90 | 17 | 16 | 0 | 0 | 46 | 11 |
+| online-mba-tamil-nadu-2026 | 90 | 23 | 22 | 0 | 0 | 34 | 11 |
 | best-online-mba-colleges-india-2026 | 89 | 16 | 3 | 0 | 0 | 45 | 25 |
 | amity-online-bba-review-2026 | 87 | 6 | 9 | 0 | 0 | 5 | 67 |
 | top-correspondence-mba-colleges-india-2026 | 84 | 24 | 14 | 1 | 0 | 30 | 15 |

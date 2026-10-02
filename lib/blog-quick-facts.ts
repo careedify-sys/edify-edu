@@ -3,6 +3,18 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'srm-online-mba-2026': [
+    { label: 'SRMIST Total Fee',  value: '₹1,50,000 to ₹1,89,000' },
+    { label: 'SRM Sikkim Fee',    value: '₹1,10,000', green: true },
+    { label: 'SRMIST NAAC',       value: 'A++ (CGPA 3.53)' },
+    { label: 'SRM Sikkim NAAC',   value: 'A+ (CGPA 3.26)' },
+    { label: 'SRMIST NIRF',       value: '#11 University, #56 Management' },
+    { label: 'SRM Sikkim NIRF',   value: 'Not ranked' },
+    { label: 'Duration (both)',   value: '2 Years, 4 Semesters' },
+    { label: 'Specialisations',   value: '5 (SRMIST) / 7 (Sikkim)' },
+    { label: 'UGC-DEB Entitled',  value: 'Both', green: true },
+    { label: 'Entrance Exam',     value: 'None', green: true },
+  ],
   'nmims-online-mba-review-2026': [
     { label: 'Duration',          value: '2 Years' },
     { label: 'Mode',              value: '100% Online' },

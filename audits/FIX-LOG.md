@@ -9,6 +9,71 @@ the fix by accident.
 
 ---
 
+## 2026-10-02 · A keyword export exposed a wrong NIRF rank and 33 truncated records
+
+**What prompted it.** Rishi supplied a 108-keyword export for the online-degree
+market and asked for the gaps to be filled. Mapping every keyword to an owning
+URL (`audits/keyword-map-2026-10-02.md`) showed the gap was almost closed
+already: 70 of 71 in-scope keywords had a page. Auditing the data behind those
+pages is what turned up the actual defects.
+
+**SRMIST claimed NIRF #18 in the University category. Its rank is #11.**
+The `tagline`, the `description` and the M.Com `careerOutcome` all said #18. The
+record's own `nirf` field said 11, and Supabase `accreditations` says University
+rank 11 of 200. #18 is SRMIST's Medical and Architecture rank, so the number was
+real and attached to the wrong category. That is the failure mode the
+"NIRF ranks must state category" rule exists to stop, and here the category *was*
+stated, which made the claim read as carefully sourced rather than wrong.
+
+**Why it was worth a sweep rather than a one-line fix.** A rank that contradicts
+its own record cannot be caught by reading the page, because the page renders the
+field and the prose in different components. A scan of all 143 records comparing
+NIRF numbers in `tagline`/`description` against `nirf`/`nirfMgt`/`nirfEng` found
+this was the only contradiction in the database. Worth knowing; the scan is in
+the session notes and is cheap to re-run.
+
+**29 descriptions and 4 names were truncated by an importer.** Every broken
+description followed one template and was cut at exactly 45 characters after
+"UGC DEB approved online programs from ", leaving a half word and an unclosed
+bracket: "from NMIMS (Narsee Monjee Institute of Management. NAAC A++
+accredited." It renders twice as body text on every affected university page.
+Four `name` values were cut the same way, so "Sathyabama Institute of Science and
+Technology (Centre Online" appeared in every heading, title and FAQ on that
+university's pages. Names were rebuilt from Supabase `universities.name`, which
+also corrected VIT: the record said "Vellore Institute of Science and Technology"
+where VIT is "Vellore Institute of Technology".
+
+**One thing that went wrong while fixing it, recorded because it was invisible.**
+The first repair script scanned record boundaries from the pristine source but
+mutated the source inside the same loop. Every replacement shifted the offsets,
+so each record read the *next* record's name: SASTRA was given D.Y. Patil's name,
+Anna University was given Vels. It wrote 26 wrong descriptions and reported
+"applied 35/35". Reverted with `git checkout` and rewritten to plan all edits
+against the pristine source and apply them in one pass, with each needle required
+to match exactly once. A bulk data edit that reports success is not evidence it
+paired the right values.
+
+**New content: `/blog/srm-online-mba-2026`.** The only in-scope keyword with no
+page was `srm online mba` (1,300/mo, KD 6), and the reason it is worth a page is
+that two different universities answer to it. SRM Institute of Science and
+Technology (Tamil Nadu, NAAC A++, NIRF #11 University, #56 Management) and SRM
+University Sikkim (Gangtok, NAAC A+, no NIRF rank) are separate legal entities
+with separate UGC-DEB entries and a fee gap of roughly 36% to 72%. Neither is
+listed on the DEB register under "SRM": they appear as "Shri Ramasamy Memorial
+University" and "S.R.M. Institute of Sciences and Technology", so an applicant
+who checks the register for "SRM" finds nothing and concludes wrongly.
+
+**Verified.** `verify-fees`, `check-em-dash`, `check-blog-fees` (new post
+baselined at 0), `tsc --noEmit`, and the post rendered on the dev server with the
+table, Quick Facts card and hero image correct and no console errors. The NIRF
+fix was confirmed on the live SRMIST page, which now renders "NIRF (Uni) #11".
+
+**Guarded by.** Nothing new. The NIRF prose-versus-data check and the
+truncated-string check are not in `.husky/pre-commit`; both are cheap and should
+be, and that is the obvious follow-up.
+
+---
+
 ## 2026-10-01 · Shoolini review counted patent filings as patents granted
 
 **The post said "the university has generated over 1,500 patents".** It did not.
