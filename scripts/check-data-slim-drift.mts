@@ -27,9 +27,6 @@
 // curated in the mirror rather than copied, and enforcing them would be a
 // regression rather than a fix:
 //
-//   city       120 differ. The master holds raw address fragments ("Block 32",
-//              "Sector 7", "Waghodia"); the mirror holds the display city
-//              ("Phagwara", "Navi Mumbai", "Vadodara"). The mirror is better.
 //   approvals  136 differ. The mirror is abbreviated or absent. Its strings
 //              also predate the "NIRF rank must state its category" rule
 //              ("NIRF #62" against the master's "NIRF #62 (University)"), so
@@ -67,9 +64,20 @@ const MIRRORED = [
   'feeMin',       // fee claim, and the hub's fee filter reads it
   'feeMax',
   'emiFrom',
+  'city',         // see the note below
   'region',       // the region filter reads it
   'psuEligible',
 ] as const
+
+// `city` was excluded here when this gate was written, on the stated grounds
+// that the mirror held the better value: the master had been cut to address
+// fragments like "Block 32" and "Sector 7" while the mirror read "Phagwara" and
+// "Navi Mumbai". That was drawn from two examples and was wrong as a
+// generalisation. A full count on 2026-10-03 found 134 of 143 mirror cities
+// were REGION labels ("North India", "Central India") while the master held the
+// real city (Bangalore, Dehradun, Gangtok, Pune). The master won 98 records,
+// the mirror won 2, and 43 have no city in either. The two were merged and now
+// agree, so the field is enforced like the rest.
 
 // A field the master does not define is not drift: the mirror is allowed to
 // carry nothing where the master carries nothing. Only a master value that the

@@ -196,9 +196,11 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     {cleanName} — Online Degrees, Fees &amp; Reviews 2026
                   </h1>
                 </div>
-                <p className="text-slate-400 text-[15px] mb-3 flex items-center gap-1.5">
-                  <MapPin size={14}/> {[u.city, u.state].filter(Boolean).join(', ')}
-                </p>
+                {[u.city, u.state].filter(Boolean).length > 0 && (
+                  <p className="text-slate-400 text-[15px] mb-3 flex items-center gap-1.5">
+                    <MapPin size={14}/> {[u.city, u.state].filter(Boolean).join(', ')}
+                  </p>
+                )}
                 {((u as any).rankingBadge || (u as any).enrollments) && (
                   <div className="flex flex-wrap items-center gap-2 mb-4">
                     {(u as any).rankingBadge && (
@@ -373,11 +375,13 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     <div className="text-xs text-ink-3 uppercase tracking-wider">Established</div>
                     <div className="font-bold text-navy">{u.established || 'N/A'}</div>
                   </div>
-                  <div className="bg-surface-2 rounded-lg p-4 text-center">
-                    <div className="text-2xl mb-2">📍</div>
-                    <div className="text-xs text-ink-3 uppercase tracking-wider">Location</div>
-                    <div className="font-bold text-navy">{[u.city, u.state].filter(Boolean).join(', ')}</div>
-                  </div>
+                  {[u.city, u.state].filter(Boolean).length > 0 && (
+                    <div className="bg-surface-2 rounded-lg p-4 text-center">
+                      <div className="text-2xl mb-2">📍</div>
+                      <div className="text-xs text-ink-3 uppercase tracking-wider">Location</div>
+                      <div className="font-bold text-navy">{[u.city, u.state].filter(Boolean).join(', ')}</div>
+                    </div>
+                  )}
                   <div className="bg-surface-2 rounded-lg p-4 text-center">
                     <div className="text-2xl mb-2">⭐</div>
                     <div className="text-xs text-ink-3 uppercase tracking-wider">{u.naac ? 'NAAC Grade' : 'Recognition'}</div>
@@ -700,7 +704,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     ...(u.nirf < 100 ? [{ label: 'NIRF Overall', value: `#${u.nirf}` }] : []),
                     ...(u.nirfMgt && u.nirfMgt < 100 ? [{ label: 'NIRF Management', value: `#${u.nirfMgt}` }] : []),
                     ...(u.naac ? [{ label: 'NAAC Grade', value: u.naacScore ? `${u.naac} (${u.naacScore})` : u.naac }] : []),
-                    { label: 'Location', value: [u.city, u.state].filter(Boolean).join(', ') },
+                    ...([u.city, u.state].filter(Boolean).length ? [{ label: 'Location', value: [u.city, u.state].filter(Boolean).join(', ') }] : []),
                     { label: 'Exam Mode', value: u.examMode },
                     { label: 'Eligibility', value: u.eligibility },
                     ...(u.feeMin > 0 ? [{ label: 'Fees from', value: formatFee(u.feeMin) }] : []),

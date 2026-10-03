@@ -9,6 +9,58 @@ the fix by accident.
 
 ---
 
+## 2026-10-03 · City and state were junk on half the database, and I had the mirror backwards
+
+**The shape of it.** 74 of 143 records carried a city or state that was not one. Twenty had
+`city` and `state` set to the literal string "Online". Thirty-one had an uppercase state
+("UTTAR PRADESH"). Five had a PIN code welded on ("Punjab 144411"). Three had an address
+fragment as the city ("Block 32", "Sector 7", "NH-95"). One had a city in the state field
+(Vels: state "Chennai", city "Pallavaram").
+
+**Why it was not cosmetic.** `app/universities/[id]/page.tsx` built schema.org PostalAddress
+from these. When the city was "Online" it fell back to `u.name.split(' ')[0]`, so GLS
+published `addressLocality: "GLS"` and SGT published `"SGT"`: a fabricated locality, in
+structured data, on the field search engines read for location. The region fallback was
+`'India'`, which is a country. Both now omit the field instead, and the visible Location
+card and table row hide themselves when there is nothing to show.
+
+**States: fixed from sources, in that order.** Deterministic normalisation (case, trailing
+PIN, "&" to "and") resolved 51. The Supabase `universities` table resolved 19 more, but
+only after switching from a name match to `scripts/lib/supabase-uni-map.mjs`, the repo's
+hand-verified slug map: the naive join found 11. One came from the university's own name
+("Central University of Himachal Pradesh"). Vels was a field mix-up, and Chennai being in
+Tamil Nadu is not new information. That left two, SGT and Alva’s, both genuinely absent
+from Supabase and from the UGC-DEB CSV, so their state is now empty rather than "Online".
+
+**Cities: no source exists, so none were invented.** Supabase has a `city` column populated
+for 1 of its 124 rows. Nothing else in the repo carries one. The junk values were cleared.
+43 records now have no city, which is incomplete; "Online" was false.
+
+**The correction this entry is really for.** Yesterday I excluded `city` from
+check-data-slim-drift and wrote in its header that the mirror held the better value,
+because the master had been cut to "Block 32" where the mirror read "Phagwara". I checked
+two records and generalised from them. Counting all 143: **134 of the mirror’s cities were
+region labels** ("North India", "Central India", "West India") while the master held the
+real city, Bangalore, Dehradun, Gangtok, Pune. The master wins 98, the mirror wins 2, 43
+have neither. So every university card on the site has been showing a compass direction
+where a city belongs.
+
+Merged best-of-both into both files, 4 writes to the master and 118 to the mirror, and
+`city` is now enforced by the drift gate like the other mirrored fields. The header comment
+there now records the count rather than the two examples.
+
+**Verified.** Re-audit shows no false city or state left, only absent ones. Schema checked
+on the rendered pages: GLS now emits Gujarat with no locality, UPES emits Dehradun and
+Uttarakhand, SGT emits only the country. The drift gate passes with 13 mirrored fields, and
+the full pre-commit suite is green.
+
+**Still open.** SGT and Alva’s have no state, and 43 records have no city. Those want a
+pass against the universities’ own portals. Nothing gates a city or state being junk in the
+first place, which is how "Online" survived; the audit used here is a few lines and belongs
+in pre-commit next.
+
+---
+
 ## 2026-10-03 · Clone gate, and a sitemap page every build was deleting
 
 **Two separate things, one of them urgent.** Rishi reported a failed deployment mid-task.

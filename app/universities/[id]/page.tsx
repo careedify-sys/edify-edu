@@ -122,10 +122,17 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
         telephone: '+91-7061285806',
         description: `${u.name} is a UGC DEB approved university offering online degrees.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}${u.nirf < 200 ? ` NIRF ranked #${u.nirf}.` : ''}`,
         ...(kw ? { keywords: kw } : {}),
+        // Omit a field we do not have rather than inventing one. This used to
+        // read `u.city !== 'Online' ? u.city : u.name.split(' ')[0]`, which
+        // turned a junk city of "Online" into an addressLocality of "GLS" or
+        // "SGT", publishing a fabricated locality in structured data; and
+        // `addressRegion: 'India'`, which is a country, not a region. The junk
+        // values were cleared from lib/data.ts on 2026-10-03, so the fields are
+        // now empty where the location is genuinely unknown.
         address: {
           '@type': 'PostalAddress',
-          addressLocality: u.city !== 'Online' ? u.city : u.name.split(' ')[0],
-          addressRegion: u.state !== 'Online' ? u.state : 'India',
+          ...(u.city ? { addressLocality: u.city } : {}),
+          ...(u.state ? { addressRegion: u.state } : {}),
           addressCountry: 'IN',
         },
         review: {
