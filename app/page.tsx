@@ -112,7 +112,7 @@ export default function HomePage() {
               India's Only Unbiased Online Education Platform
             </div>
 
-            <h1 style={{ fontFamily:"'Fraunces',serif", fontSize:'clamp(2rem,5vw,3.5rem)', fontWeight:800, color:'#fff', lineHeight:1.12, marginBottom:'20px', letterSpacing:'-0.02em' }}>
+            <h1 style={{ fontFamily: 'var(--font-display)', fontSize:'clamp(2rem,5vw,3.5rem)', fontWeight:800, color:'#fff', lineHeight:1.12, marginBottom:'20px', letterSpacing:'-0.02em' }}>
               Compare 143 <span style={{ color:'var(--amber-bright)' }}>UGC Approved</span><br />
               Online Universities India 2026
             </h1>
@@ -129,7 +129,7 @@ export default function HomePage() {
                 { n:'₹0',            label:'Paid Rankings' },
               ].map(s => (
                 <div key={s.n} className="text-center">
-                  <div style={{ fontFamily:"'Fraunces',serif", fontSize:'26px', fontWeight:800, color:'#fff', lineHeight:1 }}>{s.n}</div>
+                  <div style={{ fontFamily: 'var(--font-display)', fontSize:'26px', fontWeight:800, color:'#fff', lineHeight:1 }}>{s.n}</div>
                   <div style={{ fontSize:'11px', color:'rgba(255,255,255,0.65)', marginTop:'4px' }}>{s.label}</div>
                 </div>
               ))}
@@ -164,7 +164,7 @@ export default function HomePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div style={{ textAlign:'center', marginBottom:'56px' }}>
           <div className="section-label">Why edifyedu.in?</div>
-          <h2 style={{ fontFamily:"'Fraunces',serif", fontSize:'clamp(2rem,4vw,3rem)', fontWeight:900, color:'var(--navy)', lineHeight:1.2, marginTop:'8px', letterSpacing:'-0.02em' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize:'clamp(2rem,4vw,3rem)', fontWeight:900, color:'var(--navy)', lineHeight:1.2, marginTop:'8px', letterSpacing:'-0.02em' }}>
             Honest, by design. <span style={{ fontStyle:'italic', color:'var(--amber)' }}>Always.</span>
           </h2>
         </div>
@@ -227,7 +227,7 @@ export default function HomePage() {
           <div style={{ display:'flex', alignItems:'flex-end', justifyContent:'space-between', marginBottom:'40px', flexWrap:'wrap', gap:'12px' }}>
             <div>
               <div className="section-label">Sorted by NIRF Rank</div>
-              <h2 style={{ fontFamily:"'Fraunces',serif", fontSize:'clamp(1.6rem,4vw,2.2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontSize:'clamp(1.6rem,4vw,2.2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
                 Top Rated Universities
               </h2>
             </div>
@@ -247,7 +247,7 @@ export default function HomePage() {
           {/* Header */}
           <div style={{ marginBottom: '48px' }}>
             <div className="section-label" style={{ marginBottom: '12px' }}>Why edifyedu.in exists</div>
-            <h2 style={{ fontFamily: "'Fraunces',serif", fontSize: 'clamp(1.8rem,4vw,2.4rem)', fontWeight: 800, color: 'var(--navy)', lineHeight: 1.2, marginBottom: '16px' }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.8rem,4vw,2.4rem)', fontWeight: 800, color: 'var(--navy)', lineHeight: 1.2, marginBottom: '16px' }}>
               Most online MBA guides are ads.<br />We built the one that isn't.
             </h2>
             <p style={{ fontSize: '16px', color: 'var(--ink-2)', lineHeight: 1.8, maxWidth: '600px' }}>
@@ -303,7 +303,7 @@ export default function HomePage() {
       {/* TRUST STATS */}
       <section className="py-20 relative overflow-hidden" style={{ background:'linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 text-center">
-          <h2 style={{ fontFamily:"'Fraunces',serif", fontSize:'clamp(1.5rem,4vw,2.2rem)', fontWeight:800, color:'#fff', marginBottom:'12px' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize:'clamp(1.5rem,4vw,2.2rem)', fontWeight:800, color:'#fff', marginBottom:'12px' }}>
             India&apos;s Most Trusted Online Degree Guide
           </h2>
           <p style={{ color:'rgba(255,255,255,0.7)', maxWidth:'480px', margin:'0 auto 48px', fontSize:'14px', lineHeight:'1.7' }}>
@@ -321,7 +321,7 @@ export default function HomePage() {
                 <div style={{ width:'46px', height:'46px', borderRadius:'var(--r-sm)', display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 12px', background:'rgba(212,146,42,0.12)', color:'var(--amber-bright)', border:'1px solid rgba(212,146,42,0.2)' }}>
                   {s.icon}
                 </div>
-                <div style={{ fontFamily:"'Fraunces',serif", fontSize:'2.5rem', fontWeight:800, color:'#fff', lineHeight:1.1, marginBottom:'4px' }}>
+                <div style={{ fontFamily: 'var(--font-display)', fontSize:'2.5rem', fontWeight:800, color:'#fff', lineHeight:1.1, marginBottom:'4px' }}>
                   {s.n}
                 </div>
                 <div style={{ fontSize:'12px', color:'rgba(255,255,255,0.7)', fontWeight:600 }}>
@@ -346,7 +346,7 @@ export default function HomePage() {
                 <Shield style={{ width: 13, height: 13 }} />
                 Only on edifyedu.in
               </div>
-              <h2 style={{ fontFamily: "'Fraunces',serif", fontSize: 'clamp(1.6rem,3.5vw,2.2rem)', fontWeight: 800, color: 'var(--navy)', lineHeight: 1.2, marginBottom: 14 }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.6rem,3.5vw,2.2rem)', fontWeight: 800, color: 'var(--navy)', lineHeight: 1.2, marginBottom: 14 }}>
                 Verify any university's approvals.<br />Before you pay a single rupee.
               </h2>
               <p style={{ fontSize: 15, color: 'var(--ink-2)', lineHeight: 1.75, maxWidth: 520, marginBottom: 24 }}>
@@ -434,7 +434,7 @@ export default function HomePage() {
               <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               <span style={{ fontSize:12, fontWeight:800, color:'#fff', letterSpacing:'0.04em' }}>TRUSTPILOT · Verified Reviews</span>
             </div>
-            <h2 style={{ fontFamily:"'Fraunces',serif", fontSize:'clamp(1.4rem,3vw,2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize:'clamp(1.4rem,3vw,2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
               Students Who Found the Right University
             </h2>
             <p style={{ fontSize:'14px', color:'var(--ink-3)', marginTop:10, lineHeight:1.7 }}>
@@ -526,7 +526,7 @@ export default function HomePage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div style={{ textAlign:'center', marginBottom:'32px' }}>
             <div className="section-label">Watch First</div>
-            <h2 style={{ fontFamily:"'Fraunces',serif", fontSize:'clamp(1.4rem,3vw,2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize:'clamp(1.4rem,3vw,2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
               What is EdifyEdu? Watch the Explainer
             </h2>
             <p style={{ fontSize:'14px', color:'var(--ink-3)', marginTop:'10px', lineHeight:1.7 }}>
@@ -551,7 +551,7 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div style={{ textAlign:'center', marginBottom:'40px' }}>
             <div className="section-label">Free Guides</div>
-            <h2 style={{ fontFamily:"'Fraunces',serif", fontSize:'clamp(1.4rem,3vw,2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize:'clamp(1.4rem,3vw,2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
               Honest Answers Before You Enrol
             </h2>
           </div>
@@ -587,7 +587,7 @@ export default function HomePage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div style={{ textAlign:'center', marginBottom:'40px' }}>
             <div className="section-label">Common Questions</div>
-            <h2 style={{ fontFamily:"'Fraunces',serif", fontSize:'clamp(1.6rem,4vw,2.2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize:'clamp(1.6rem,4vw,2.2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
               What Working Professionals Ask
             </h2>
           </div>
@@ -613,7 +613,7 @@ export default function HomePage() {
 
       {/* BOTTOM CTA */}
       <section style={{ background:'var(--amber)', padding:'56px 24px', textAlign:'center' }}>
-        <h2 style={{ fontFamily:"'Fraunces',serif", fontSize:'clamp(1.5rem,4vw,2.2rem)', fontWeight:800, color:'var(--navy)', marginBottom:'12px' }}>
+        <h2 style={{ fontFamily: 'var(--font-display)', fontSize:'clamp(1.5rem,4vw,2.2rem)', fontWeight:800, color:'var(--navy)', marginBottom:'12px' }}>
           Still unsure which university to choose?
         </h2>
         <p style={{ fontSize:'15px', color:'rgba(11,29,53,0.6)', marginBottom:'28px', maxWidth:'480px', margin:'0 auto 28px', lineHeight:'1.7' }}>

@@ -226,7 +226,7 @@ html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 body {
   background: var(--bg);
   color: var(--ink);
-  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: var(--font-body);
   font-size: 15px;
   line-height: 1.6;
   overflow-x: hidden;
@@ -239,7 +239,7 @@ input, select, textarea { font-size: 16px; font-family: inherit; }
 
 /* ── TYPOGRAPHY ─────────────────────────────────────────────────── */
 .font-display, h1, h2 {
-  font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+  font-family: var(--font-display);
   font-optical-sizing: auto;
   letter-spacing: -0.02em;
 }
@@ -257,7 +257,7 @@ input, select, textarea { font-size: 16px; font-family: inherit; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-body);
   letter-spacing: 0.01em;
 }
 .btn-primary:hover {
@@ -278,7 +278,7 @@ input, select, textarea { font-size: 16px; font-family: inherit; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-body);
 }
 .btn-navy:hover { background: var(--navy-mid); transform: translateY(-1px); box-shadow: var(--shadow-md); }
 
@@ -292,7 +292,7 @@ input, select, textarea { font-size: 16px; font-family: inherit; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-body);
 }
 .btn-outline:hover { border-color: var(--amber); color: var(--amber); background: var(--amber-light); }
 
@@ -305,7 +305,7 @@ input, select, textarea { font-size: 16px; font-family: inherit; }
   color: var(--ink);
   padding: 11px 14px;
   font-size: 16px; /* prevents iOS zoom */
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-body);
   outline: none;
   transition: border-color 0.15s, box-shadow 0.15s;
   width: 100%;
@@ -460,7 +460,7 @@ input, select, textarea { font-size: 16px; font-family: inherit; }
 .admin-tabs::-webkit-scrollbar { display: none; }
 
 /* ── BLOG CONTENT ───────────────────────────────────────────────── */
-.blog-content h2 { font-size: 1.5rem; font-weight: 700; color: var(--navy); margin: 2rem 0 0.75rem; font-family: 'Fraunces',serif; }
+.blog-content h2 { font-size: 1.5rem; font-weight: 700; color: var(--navy); margin: 2rem 0 0.75rem; font-family: var(--font-display); }
 .blog-content h3 { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin: 1.5rem 0 0.5rem; }
 .blog-content p  { margin: 0.75rem 0; line-height: 1.8; color: var(--ink-2); }
 .blog-content ul, .blog-content ol { margin: 0.75rem 0 0.75rem 1.5rem; color: var(--ink-2); }
@@ -478,7 +478,7 @@ input, select, textarea { font-size: 16px; font-family: inherit; }
 
 /* ── STAT NUMBER ────────────────────────────────────────────────── */
 .stat-number {
-  font-family: 'Fraunces', serif; font-size: 2.5rem; font-weight: 800;
+  font-family: var(--font-display); font-size: 2.5rem; font-weight: 800;
   color: var(--navy); line-height: 1;
 }
 

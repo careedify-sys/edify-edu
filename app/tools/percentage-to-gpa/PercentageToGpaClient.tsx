@@ -103,7 +103,7 @@ export default function PercentageToGpaClient() {
             </div>
             <p className="text-xs font-bold uppercase tracking-widest" style={{ color: 'rgba(212,146,42,0.9)' }}>Free Calculator</p>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-bold text-white mb-2" style={{ fontFamily: "'Fraunces',serif" }}>
+          <h1 className="text-2xl sm:text-3xl font-bold text-white mb-2" style={{ fontFamily: 'var(--font-display)' }}>
             Percentage to GPA Calculator 2026
           </h1>
           <p className="text-sm" style={{ color: 'rgba(255,255,255,0.6)', lineHeight: '1.7' }}>

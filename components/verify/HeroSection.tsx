@@ -89,7 +89,7 @@ export function HeroSection({ universities, totalCount }: Props) {
 
           {/* Heading */}
           <h1 style={{
-            fontFamily: "'Fraunces', serif",
+            fontFamily: 'var(--font-display)',
             fontWeight: 800,
             lineHeight: 1.12,
             margin: '0 0 16px',

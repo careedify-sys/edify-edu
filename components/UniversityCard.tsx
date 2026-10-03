@@ -93,7 +93,7 @@ export default function UniversityCard({ u, highlightProgram, specSlug }: { u: U
                 <UniLogo src={u.logo || getUniversityLogo(u.id)} name={u.name} abbr={(u as any).abbr || ''} color={u.color} />
               </div>
               <h3 className="font-semibold text-base leading-tight mb-1"
-                style={{ color:'var(--navy-light)', fontFamily:'"Plus Jakarta Sans",sans-serif' }}>
+                style={{ color:'var(--navy-light)', fontFamily: 'var(--font-body)' }}>
                 {u.name}
               </h3>
               <div className="flex items-center gap-1 text-xs text-[var(--ink-3)]">

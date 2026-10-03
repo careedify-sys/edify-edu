@@ -64,7 +64,7 @@ export default function UniversitiesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
           <p className="section-label mb-3" style={{ color:'rgba(245,158,11,0.8)' }}>UGC DEB Approved</p>
           <h1 className="font-display text-3xl md:text-4xl text-white mb-3"
-            style={{ fontFamily:"'Fraunces',serif" }}>
+            style={{ fontFamily: 'var(--font-display)' }}>
             143 Best Online Universities India 2026, UGC DEB Approved
           </h1>
           <p className="text-sm max-w-lg" style={{ color:'rgba(255,255,255,0.5)', lineHeight:'1.7' }}>

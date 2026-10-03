@@ -146,7 +146,7 @@ export default async function VerifyHomePage() {
             THE PROBLEM
           </div>
           <h2 style={{
-            fontFamily: "'Fraunces', serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)',
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(1.5rem, 3vw, 2rem)',
             fontWeight: 800, color: 'var(--navy, #0B1D35)', lineHeight: 1.2,
             margin: '0 0 16px', letterSpacing: '-0.02em',
           }}>
@@ -214,7 +214,7 @@ export default async function VerifyHomePage() {
             WHAT GETS CHECKED
           </div>
           <h2 style={{
-            fontFamily: "'Fraunces', serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)',
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(1.5rem, 3vw, 2rem)',
             fontWeight: 800, color: 'var(--navy, #0B1D35)', lineHeight: 1.2,
             margin: '0 0 12px', letterSpacing: '-0.02em',
           }}>
@@ -298,7 +298,7 @@ export default async function VerifyHomePage() {
             HOW TO USE
           </div>
           <h2 style={{
-            fontFamily: "'Fraunces', serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)',
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(1.5rem, 3vw, 2rem)',
             fontWeight: 800, color: 'var(--navy, #0B1D35)', lineHeight: 1.2,
             margin: '0 0 12px', letterSpacing: '-0.02em',
           }}>
@@ -364,7 +364,7 @@ export default async function VerifyHomePage() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 20 }}>
             <div style={{ width: 4, height: 18, background: 'var(--amber, #C8811A)', borderRadius: 2 }} />
             <h2 style={{
-              fontFamily: "'Fraunces', serif",
+              fontFamily: 'var(--font-display)',
               fontSize: 22,
               fontWeight: 700,
               margin: 0,
@@ -398,7 +398,7 @@ export default async function VerifyHomePage() {
             ONLY ON EDIFYEDU
           </div>
           <h2 style={{
-            fontFamily: "'Fraunces', serif", fontSize: 'clamp(1.4rem, 3vw, 1.8rem)',
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(1.4rem, 3vw, 1.8rem)',
             fontWeight: 800, color: '#fff', lineHeight: 1.3, margin: '0 0 12px',
           }}>
             No other platform in India offers this.

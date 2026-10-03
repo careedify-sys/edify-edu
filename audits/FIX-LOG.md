@@ -9,6 +9,43 @@ the fix by accident.
 
 ---
 
+## 2026-10-03 · The fonts now actually render
+
+Follow-up to the self-hosting commit, which recorded that neither font had ever reached a
+visitor and left the wiring for Rishi to decide. He asked for it.
+
+**The cause, restated.** `next/font` does not expose the real family name. It generates a
+hashed one and exposes it through the CSS variable it sets on `<html>`. Asking for
+`font-family: 'Plus Jakarta Sans'` by name only resolves if the visitor has that font
+installed locally, so body text fell through to the system sans-serif and every heading
+fell through to Georgia.
+
+**What changed.** Eight `font-family` declarations in `app/globals.css` and the inline
+styles across `app/page.tsx`, `app/universities/page.tsx`, `app/verify/page.tsx`,
+`app/tools/percentage-to-gpa/PercentageToGpaClient.tsx`, `components/UniversityCard.tsx`
+and `components/verify/HeroSection.tsx` now read `var(--font-body)` or
+`var(--font-display)`. `app/admin/` is untouched, per the CMS rule.
+
+**The two variable definitions at globals.css:164-165 are deliberately left alone.** They
+read `--font-body: var(--font-body, 'Plus Jakarta Sans', system-ui, sans-serif)`, which
+resolves to next/font’s value with the fallback chain appended. That self-reference looks
+wrong and is what makes `var(--font-body)` safe to use everywhere else, so it stays.
+
+**Verified by measurement, not by eye.** Before, `getComputedStyle(document.body)` returned
+`"Plus Jakarta Sans", -apple-system, ...` and every `@font-face` reported status
+`unloaded`. After, it returns `__plusJakarta_fddcb3, ...`, the `h1` returns
+`__fraunces_b36429, ...`, and all six faces report `loaded`. Rendered width at 48px bold
+moved off both fallbacks: body 757.02px against plain sans-serif at 741.70px, heading
+766.47px against Georgia at 787.11px. Checked on the homepage and a blog post with no
+console errors, and the production build exits 0.
+
+**Note for next time.** `document.fonts.check('700 48px "Plus Jakarta Sans"')` returned
+true throughout, including while the font was definitively not in use. It answers "can
+something render this text", not "is this font present". Measuring the rendered width
+against a known fallback is the test that actually distinguishes them.
+
+---
+
 ## 2026-10-03 · Fonts self-hosted, and neither font was ever reaching a visitor
 
 **The build failure.** `app/layout.tsx` loaded Plus Jakarta Sans and Fraunces through
