@@ -1,0 +1,6 @@
+{
+  "note": "Records with no city or no state. There is no city source in this repo (Supabase has one for 1 of 124 rows), so absence is tracked rather than blocked. These counts may fall, never rise. Lower them by filling the field from the university's own portal.",
+  "updatedAt": "2026-10-03",
+  "noCity": 43,
+  "noState": 2
+}

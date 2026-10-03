@@ -92,6 +92,17 @@ npx tsx scripts/check-duplicate-tagline.mts || exit 1
 echo "pre-commit: check-string-truncation"
 npx tsx scripts/check-string-truncation.mts || exit 1
 
+# A location field that is not a location. 74 of 143 records carried one: 20 had
+# city AND state set to the literal string "Online", 31 had an uppercase state,
+# 5 had a PIN code appended. The university page builds schema.org PostalAddress
+# from these and used to fall back to the first word of the name, so GLS
+# published addressLocality "GLS". Region is checked against state too: 20
+# records left on the default "Central" put Gujarat and Karnataka universities
+# under the wrong filter. Absence is ratcheted, not blocked, because no city
+# source exists. See the header of scripts/check-city-state.mts.
+echo "pre-commit: check-city-state"
+npx tsx scripts/check-city-state.mts || exit 1
+
 echo "pre-commit: check-data-slim-drift"
 npx tsx scripts/check-data-slim-drift.mts || exit 1
 

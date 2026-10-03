@@ -9,6 +9,38 @@ the fix by accident.
 
 ---
 
+## 2026-10-03 · City/state gate, and 22 universities filed under the wrong region
+
+**The gate.** `scripts/check-city-state.mts` blocks a location field in `lib/data.ts` that
+is not a location. Wired into pre-commit.
+
+**What blocks and what is only tracked.** A FALSE value always blocks: "Online" is not a
+place, "UTTAR PRADESH" is not how the field is written anywhere else, "Punjab 144411"
+carries a PIN code, "Block 32" is an address fragment, and a region contradicting its own
+state is wrong whichever one you believe. An ABSENT value does not block, because there is
+no city source: Supabase has a city for 1 of its 124 rows and nothing else in the repo
+carries one. 43 records have no city and 2 have no state, and those counts are ratcheted
+through `data/city-state-baseline.json` so absence can shrink but never grow. Inventing a
+city to satisfy a gate would be worse than the gap.
+
+**Writing it found a second fault.** Region is derivable from state, so the gate checks the
+two agree. They did not, on 22 records. Twenty of those were the ones whose state had been
+the string "Online" and whose region was left on the default "Central", so seven Gujarat
+universities, five Karnataka and three Tamil Nadu were filed under the Central filter on
+`/universities`. Two more were plain errors: BITS Goa marked South, Jammu marked South.
+All 22 now derive from state, and the drift gate immediately caught the mirror going stale
+on the same field, which is the second time this week it has earned its place.
+
+**Proven against injected defects**, nine of them, one per rule plus the ratchet: state
+"Online", uppercase state, PIN-suffixed state, city "Online", city as a region label, city
+as an address fragment, region contradicting state, region outside the vocabulary, and a
+city going missing. All nine rejected, then restored and confirmed green.
+
+**Still open.** 43 records have no city and SGT and Alva’s have no state. The gate stops
+that growing; filling it needs a pass against the universities’ own portals.
+
+---
+
 ## 2026-10-03 · City and state were junk on half the database, and I had the mirror backwards
 
 **The shape of it.** 74 of 143 records carried a city or state that was not one. Twenty had
