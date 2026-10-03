@@ -9,6 +9,68 @@ the fix by accident.
 
 ---
 
+## 2026-10-03 · Clone gate, and a sitemap page every build was deleting
+
+**Two separate things, one of them urgent.** Rishi reported a failed deployment mid-task.
+The build reproduces clean locally, exit 0, so it is not a compile error and I could not
+reproduce the failure. What reproducing it did turn up is below.
+
+### Every build since 28 September deleted /methodology from the sitemap
+
+Two scripts write `lib/data/valid-urls.json`, in order: `build-valid-urls.js`, then
+`backfill-manifest-from-data.js`, which rebuilds the file from the manifest. Each carried
+its own copy of the static-page list. `/methodology` was added to the first copy on
+2026-09-28 and not the second, so every build wrote a sitemap containing the URL and then
+immediately rewrote the file without it.
+
+Nothing gave it away. The page exists at `app/methodology/page.tsx`, is linked from the
+footer and from `/best-online-mba-india`, and sets its own canonical, so it looked healthy
+from every direction except the sitemap. It is also the page the site is most likely to be
+cited for: the comment added beside it records a Perplexity test that cited EdifyEdu on
+verification method rather than on any recommendation.
+
+The list now lives once, in `scripts/lib/static-urls.js`. Verified by running the prebuild
+chain a step at a time: before the fix the URL survived three steps and vanished at the
+fourth; after it, it survives all seven, and the regenerated file is content-identical to
+the committed one at 2845 URLs with nothing lost or gained. Only sort order still differs,
+which the sitemap does not care about.
+
+### The clone gate
+
+`scripts/check-cloned-programme-block.mts` blocks one university’s programme data being a
+copy of another’s. `check-duplicate-tagline` only ever saw the tagline half of that defect.
+
+**Counting shared values does not work.** 55 universities share one MCA recruiter list and
+18 share one MA specialisation list: those are seed defaults. Raw overlap also puts
+lovely-professional and symbiosis at four shared values, but their specialisations and fees
+differ and all four matches are generic recruiter names, job titles and a salary band. Not
+a clone.
+
+So fields are weighted. STRONG is `specs`, `syllabus` and the three `edify*` lists, what a
+university actually teaches; two institutions independently writing the same list of five
+or more is not credible. WEAK is `topCompanies`, `roles`, `avgSalary`, `fees`, `duration`,
+`internshipType`, which repeat legitimately across the sector. A pair fails on two or more
+shared STRONG values. Weak-only overlap is reported as a note and never blocks, so the
+Chitkara, GLS and SGT recruiter-list cluster stays visible without being asserted as a
+clone. Any value held by five or more universities is skipped before pairing.
+
+**It found two pairs, and one of them was new.** GLS and SGT, already known. And
+**amity-university-online and gla-university-online**: GLA still carries Amity’s
+specialisation lists for BBA, BCA and B.Com, and its role lists for four programmes. Only
+the tagline half of that was visible yesterday, and replacing the tagline left the rest in
+place. The direction is known here, GLA is the copy, but GLA’s real specialisations have
+to come from its own portal, so both pairs are recorded in
+`data/cloned-programme-allowlist.json` rather than guessed at.
+
+**Proven against injected defects**, not just observed green: a clone injected by copying
+two of one university’s specialisation lists onto another is rejected; generic-only overlap
+stays a note; site-wide templates are skipped before pairing; and the file restores clean.
+
+**Guarded by.** Itself. Still unguarded: `city` and `state` set to the literal string
+"Online" on both GLS and SGT, which is junk data that no check looks at.
+
+---
+
 ## 2026-10-03 · Duplicate-claim gate, and the hole it found in yesterday’s gate
 
 **The gate.** `scripts/check-duplicate-tagline.mts` blocks a university-specific claim in

@@ -1,0 +1,14 @@
+{
+  "note": "Pairs that scripts/check-cloned-programme-block.mts correctly identifies as sharing programme data, but where the data does not say which record is the copy. This is a to-do list, not a set of exceptions. Picking the wrong one would leave a real university carrying another's prospectus, which is the same mistake that put Amity's tagline on GLA. The gate reports entries that stop matching, so remove one as soon as the records are rebuilt.",
+  "updatedAt": "2026-10-03",
+  "entries": [
+    {
+      "pair": ["gls-university-online", "sgt-university-online"],
+      "reason": "UNRESOLVED DEFECT. One record was cloned from the other. They share the same eight MBA specialisations and the same specialisation lists for BBA and BCA, plus the same recruiter list ending '500+ recruiters' and the same role lists across four programmes. Both also carry city and state set to the literal string 'Online'. GLS University is in Ahmedabad, Gujarat; SGT University is in Gurugram, Haryana. Nothing in lib/data.ts indicates which one the EY and Google claims belong to. One record needs rebuilding from that university's own portal, not editing. Raised with Rishi 2026-10-03. See also data/duplicate-tagline-allowlist.json, which holds the tagline half of the same defect."
+    },
+    {
+      "pair": ["amity-university-online", "gla-university-online"],
+      "reason": "UNRESOLVED DEFECT, and the direction IS known here: GLA is the copy. GLA carried Amity's tagline word for word, claiming 'ONLY QS-ranked online MBA in India offering 19 specialisations' while holding no qsRank and 16 specialisations; that tagline was replaced on 2026-10-02. This gate shows the copying went further: GLA still carries Amity's specialisation lists for BBA, BCA and B.Com, and its role lists for four programmes. Fees and recruiter lists already differ, so the record was partly rewritten and partly left as Amity's. GLA's actual specialisations need taking from its own portal before this can be cleared. Raised with Rishi 2026-10-03."
+    }
+  ]
+}

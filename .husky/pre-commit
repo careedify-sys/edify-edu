@@ -77,6 +77,15 @@ npx tsx scripts/check-quick-facts.mjs || exit 1
 # specialisations", while holding no qsRank and 16 specialisations. It was found
 # by accident, not by a check. Generic fallbacks shared by 77 records are allowed
 # by pattern; see the header of scripts/check-duplicate-tagline.mts.
+# One university's programme data being a copy of another's. GLS and SGT carry
+# the same eight MBA specialisations and the same role lists across four
+# programmes; GLA still carries Amity's specialisation lists for BBA, BCA and
+# B.Com. check-duplicate-tagline only ever saw the tagline half of that. Fields
+# are weighted: a shared specialisation list is evidence, a shared recruiter
+# list is not. See the header of scripts/check-cloned-programme-block.mts.
+echo "pre-commit: check-cloned-programme-block"
+npx tsx scripts/check-cloned-programme-block.mts || exit 1
+
 echo "pre-commit: check-duplicate-tagline"
 npx tsx scripts/check-duplicate-tagline.mts || exit 1
 
