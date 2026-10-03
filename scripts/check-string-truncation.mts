@@ -34,6 +34,15 @@
 //   R3 stub ending. The value ends, with no closing punctuation, on a token of
 //      one or two letters. Catches "...Business Analytics & A".
 //
+//   R4 unbalanced bracket. An opening bracket with no closing one means the cut
+//      landed inside a parenthetical. Catches "UGC DEB approved MBA from SGT
+//      University (Centre for Distance", then a dash, then "recognised for
+//      corporate hiring." R1 cannot see it, because "Distance" is a complete
+//      word; R2 cannot, because the record's name holds no "Distance..."; R3
+//      cannot, because the value does not end there. This was the FIRST sweep's
+//      only rule, dropped when this gate was written, and dropping it left 86
+//      strings uncaught. Keep all four: each catches a cut the others cannot.
+//
 // A token preceded by a dot is skipped throughout. Without that, every value
 // ending "...at deb.ugc.ac.in." trips R1, because the final ".in." reads as a
 // sentence ending on the word "in". That false positive flagged three complete
@@ -118,6 +127,17 @@ function inspect(value: string, nameWords: string[]): { rule: string; detail: st
   if (!/[.!?)"'\]]$/.test(value)) {
     const s = value.match(STUB_END)
     if (s) return { rule: 'R3', detail: `ends on the stub "${s[2]}"` }
+  }
+
+  const open = (value.match(/\(/g) || []).length
+  const close = (value.match(/\)/g) || []).length
+  if (open !== close) {
+    return {
+      rule: 'R4',
+      detail: open > close
+        ? `${open - close} unclosed "(", so the cut landed inside a parenthetical`
+        : `${close - open} stray ")"`,
+    }
   }
   return null
 }

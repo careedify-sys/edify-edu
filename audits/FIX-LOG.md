@@ -9,6 +9,73 @@ the fix by accident.
 
 ---
 
+## 2026-10-03 · Duplicate-claim gate, and the hole it found in yesterday’s gate
+
+**The gate.** `scripts/check-duplicate-tagline.mts` blocks a university-specific claim in
+`lib/data.ts` being carried by more than one university. A shared claim is false for at
+least one of them, and false in the voice of a site whose entire position is that its
+numbers can be trusted. Wired into pre-commit.
+
+**The distinction it has to make.** 77 records share a generic fallback, "NAAC A+
+accredited, UGC DEB approved online programs" or "Tamil Nadu university with online
+programs". Those restate fields already on the record and carry no claim, so they are
+allowed by pattern. Everything else that repeats is a copy.
+
+**Scope narrowed after measuring.** The first run also checked `careerOutcome` and
+reported 10 shared values. Every one turned out to be a statement about a degree type
+rather than an institution: "BA is valid for most government jobs and civil services"
+across 9 records, "UGC-DEB entitled M.Com, valid for commerce and finance roles and for
+NET eligibility" across 3. All true of all of them. The specific form of that field is
+built as "UGC DEB approved MBA from {name}", which contains the university name and so
+cannot collide. Including the field added noise and no signal, so it is excluded and the
+header says why.
+
+**What it found, and why it is worse than a shared tagline.** One hit:
+`gls-university-online` and `sgt-university-online` share "Minor in AI in Business (GenAI
+for Finance) in every MBA; EY DS track available as upgrade; 500+ recruiters incl.
+Google". Pulling both records up, the duplication is not limited to the tagline. They
+carry the identical MBA block, the same eight specialisations, the same topCompanies list
+ending "500+ recruiters", and both have `city` and `state` set to the literal string
+"Online". GLS is in Ahmedabad and SGT is in Gurugram. One record was cloned from the other.
+
+Nothing in the data says which one the EY and Google claims belong to. Guessing would put
+a false claim on a real university, which is exactly what GLA’s copy of Amity’s tagline
+already did, so it is recorded in `data/duplicate-tagline-allowlist.json` with the full
+finding and left for Rishi. One of those records needs rebuilding from the university’s
+own portal, not editing.
+
+**The hole this opened in yesterday’s truncation gate.** Reading the GLS and SGT records
+showed a `careerOutcome` reading "UGC DEB approved MBA from SGT University (Centre for
+Distance", then a dash, then "recognised for corporate hiring." The gate shipped yesterday
+passes it. R1 wants a dangling connective and "Distance" is a complete word. R2 wants a cut
+form of a word in the record’s own name, and "SGT University Online" contains no
+"Distance...". R3 only looks at the very end of the value. The unbalanced bracket is the
+only signal, and that was the FIRST sweep’s rule, which I dropped when writing the gate.
+
+Added back as R4. It immediately found **86 strings** the shipped gate was passing: 79
+`careerOutcome` values rebuilt from each record’s own name, and 7 more truncated taglines.
+Keep all four rules: each catches a cut the other three cannot, and every version of this
+detector that dropped one reported a clean result that was false.
+
+**Both gates proven against injected defects, not just observed green.** R4 rejects a cut
+inside a parenthetical; the duplicate gate rejects a specific claim copied onto a second
+university; and it does not fire on the 77 generic fallbacks.
+
+**Open for Rishi**, now 17 truncated taglines in the allowlist rather than 11, plus two
+superlatives the data does not support, both noted inside their allowlist entries so they
+travel with the text: Amity’s "ONLY QS-ranked online MBA in India", contradicted by the 36
+records carrying a `qsRank`, and Chandigarh’s "India’s ONLY online MBA with Triple
+Industry Certification", which nothing in `lib/data.ts` supports.
+
+**Verified.** Both gates green, the full pre-commit suite, and the Parul and SGT pages now
+render complete career lines with no console errors.
+
+**Guarded by.** Each other, in effect: the duplicate gate found the truncation gate’s
+blind spot. Still unguarded is a whole programme block being cloned between records, which
+is the actual GLS and SGT defect and which a tagline check only hints at.
+
+---
+
 ## 2026-10-02 · Truncation gate, and the 120-character cut it exposed
 
 **The gate.** `scripts/check-string-truncation.mts` blocks a string in `lib/data.ts` that

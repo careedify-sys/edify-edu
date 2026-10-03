@@ -71,6 +71,15 @@ npx tsx scripts/check-quick-facts.mjs || exit 1
 # declared the job done. Taglines were cut at a hard 120 characters: 26 sit at
 # exactly that length and 11 still end mid-word. Known-but-unfixable cases live
 # in data/string-truncation-allowlist.json with a reason each.
+# A university-specific claim carried by two universities is false for at least
+# one of them. gla-university-online shipped amity-university-online's tagline
+# word for word, claiming "ONLY QS-ranked online MBA in India offering 19
+# specialisations", while holding no qsRank and 16 specialisations. It was found
+# by accident, not by a check. Generic fallbacks shared by 77 records are allowed
+# by pattern; see the header of scripts/check-duplicate-tagline.mts.
+echo "pre-commit: check-duplicate-tagline"
+npx tsx scripts/check-duplicate-tagline.mts || exit 1
+
 echo "pre-commit: check-string-truncation"
 npx tsx scripts/check-string-truncation.mts || exit 1
 
