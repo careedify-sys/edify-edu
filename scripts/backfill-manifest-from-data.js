@@ -127,7 +127,7 @@ console.log('Added', added, 'rows to manifest. Total now:', manifest.length)
 fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2))
 
 // Rebuild valid-urls.json
-const STATIC_URLS = ['/', '/universities', '/programs', '/compare', '/about', '/contact', '/coupons', '/privacy-policy', '/blog', '/guides']
+const { STATIC_URLS } = require('./lib/static-urls')
 const uniSlugs = new Set()
 const uniProgPairs = new Set()
 const uniSpecTriples = new Set()

@@ -96,23 +96,7 @@ const SLUG_REMAP = {
 }
 
 // Static pages always in sitemap
-const STATIC_URLS = [
-  '/',
-  '/universities',
-  '/programs',
-  '/compare',
-  '/about',
-  '/contact',
-  '/coupons',
-  '/privacy-policy',
-  '/blog',
-  '/guides',
-  // Added 2026-09-28. States where every figure on the site comes from and what
-  // happens when one cannot be verified. It is the page the site is most likely
-  // to be cited for: a Perplexity test the same day cited EdifyEdu once, and the
-  // citation was on verification method rather than on any recommendation.
-  '/methodology',
-]
+const { STATIC_URLS } = require('./lib/static-urls')
 
 // ── Read Excel ────────────────────────────────────────────────────────────────
 if (!fs.existsSync(EXCEL_PATH)) {
