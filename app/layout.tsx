@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Plus_Jakarta_Sans, Fraunces } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import { EntryPopup, ExitIntentPopup } from '@/components/LeadCapture'
@@ -7,21 +7,40 @@ import Footer from '@/components/Footer'
 import BottomNav from '@/components/BottomNav'
 import MobileLeadNudge from '@/components/MobileLeadNudge'
 
-// ── Fonts loaded via next/font (auto-optimised, no layout shift) ─────────
-const plusJakarta = Plus_Jakarta_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
-  style: ['normal', 'italic'],
+// ── Fonts, self-hosted (auto-optimised, no layout shift) ─────────────────
+//
+// These were loaded with next/font/google until 2026-10-03. That fetches the
+// font from Google at BUILD time, which made every build depend on a network
+// call: when it was rate-limited the loader's regex matched null and the build
+// died in 18 seconds with "An error occurred in `next/font`. TypeError: Cannot
+// read properties of null (reading '1')". It happened twice on 3 October while
+// the same commit built green on two sibling Vercel projects minutes apart.
+//
+// The files in ./fonts are the latin subset of each font's VARIABLE build, so
+// one file per style covers the whole 400-800 range the site uses, rather than
+// nine static instances. Both fonts are SIL OFL 1.1; the licences sit beside
+// them. Re-download with the script recorded in audits/FIX-LOG.md if the
+// weight range or subset ever needs to change.
+const plusJakarta = localFont({
+  src: [
+    { path: './fonts/PlusJakartaSans-normal.woff2', weight: '400 800', style: 'normal' },
+    { path: './fonts/PlusJakartaSans-italic.woff2', weight: '400 800', style: 'italic' },
+  ],
   display: 'swap',
   variable: '--font-body',
+  fallback: ['system-ui', 'sans-serif'],
+  adjustFontFallback: 'Arial',
 })
 
-const fraunces = Fraunces({
-  subsets: ['latin'],
-  weight: ['400', '600', '700', '800'],
-  style: ['normal', 'italic'],
+const fraunces = localFont({
+  src: [
+    { path: './fonts/Fraunces-normal.woff2', weight: '400 800', style: 'normal' },
+    { path: './fonts/Fraunces-italic.woff2', weight: '400 800', style: 'italic' },
+  ],
   display: 'swap',
   variable: '--font-display',
+  fallback: ['Georgia', 'serif'],
+  adjustFontFallback: 'Times New Roman',
 })
 
 export const viewport: Viewport = {

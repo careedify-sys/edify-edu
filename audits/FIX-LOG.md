@@ -9,6 +9,66 @@ the fix by accident.
 
 ---
 
+## 2026-10-03 · Fonts self-hosted, and neither font was ever reaching a visitor
+
+**The build failure.** `app/layout.tsx` loaded Plus Jakarta Sans and Fraunces through
+`next/font/google`, which fetches the font from Google at BUILD time. When that call was
+rate-limited the loader’s regex matched null and the build died in 18 seconds:
+
+```
+An error occurred in `next/font`.
+TypeError: Cannot read properties of null (reading '1')
+  at @next/font/dist/google/loader.js:112
+```
+
+It happened twice on 3 October on the `edify-edu` Vercel project while the *same commit*
+built green on `edify-edu-dh2m` and `edify-next` minutes apart, which is what identified it
+as an external, intermittent fault rather than a code defect.
+
+**Now self-hosted.** `app/fonts/` holds the latin subset of each font’s VARIABLE build, one
+file per style, so two files cover the whole 400 to 800 range the site asks for instead of
+nine static instances. 139 KB for all four. Both fonts are SIL OFL 1.1 and the licences sit
+beside them. `next/font/local` keeps the preloading and the fallback metric adjustment, so
+nothing about loading behaviour changes; the build simply no longer touches the network.
+Verified: four woff2 files emitted into `.next/static/media`, no `fonts.gstatic.com` or
+`fonts.googleapis.com` anywhere in the server output, build exits 0.
+
+**What that uncovered, and it is the bigger finding.** Neither font has ever rendered for a
+visitor. `next/font` does not expose the real family name: it generates a hashed one
+(`__plusJakarta_fddcb3`) and exposes it through the CSS variable it sets on `<html>`. But
+`app/globals.css` and the inline styles ask for the literal names, `font-family: 'Plus
+Jakarta Sans'` and `'Fraunces'`, which only resolve if the visitor happens to have those
+fonts installed locally. Measured in the browser at 48px bold:
+
+| declaration | rendered width |
+|---|---|
+| body, as the CSS asks for it | 741.71px |
+| plain `sans-serif` | **741.71px, identical** |
+| body, via the next/font variable | 744.98px |
+| heading, as the CSS asks for it | 787.11px (this is Georgia) |
+| heading, via the next/font variable | 795.21px |
+
+So body text renders in the system sans-serif and headings render in Georgia, while the
+site downloads two fonts nothing points at. `document.fonts.check()` returns true for both
+names, which is misleading: it answers "can something render this", not "is this font
+present".
+
+This predates the change above. `next/font/google` had exactly the same hashed-name
+behaviour, so the fonts were decorative in the build and absent from the page throughout.
+
+**Deliberately not fixed here.** Wiring them up means pointing 12 declarations in
+`app/globals.css` and 25 inline styles across six components at `var(--font-body)` and
+`var(--font-display)`. That is a visible change to every page, body going from system sans
+to Plus Jakarta Sans and every heading from Georgia to Fraunces. It is a design decision,
+not a build fix, so it is Rishi’s call and is left out of this commit.
+
+**Re-downloading the fonts**, if the weight range or subset ever changes: request the
+variable range from the css2 API with a desktop browser User-Agent (it serves ttf to
+anything else), keep only the `/* latin */` blocks, and save one woff2 per style, e.g.
+`https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800`.
+
+---
+
 ## 2026-10-03 · City/state gate, and 22 universities filed under the wrong region
 
 **The gate.** `scripts/check-city-state.mts` blocks a location field in `lib/data.ts` that
