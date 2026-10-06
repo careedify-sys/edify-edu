@@ -234,6 +234,13 @@ npx tsx scripts/check-fees-hub-links.mts || exit 1
 # check on 2026-10-06 found exactly one /compare URL submitted, the hub. The
 # pair URLs are hand-listed in scripts/lib/static-urls.js because that file is
 # CommonJS and pairs.ts is TypeScript. This keeps the two in exact sync.
+# 214 posts linked to comparison pages 15 times and reached 5 of 26, while the
+# blog carried 193,455 impressions a month and those pages were the best
+# converting on the site. lib/compare-links.ts derives the links now; this stops
+# a new pair landing with none.
+echo "pre-commit: check-compare-inbound-links"
+npx tsx scripts/check-compare-inbound-links.mts || exit 1
+
 echo "pre-commit: check-compare-pair-urls"
 npx tsx scripts/check-compare-pair-urls.mts || exit 1
 

@@ -16,6 +16,8 @@ import UniversityEndCta from '@/components/blog-cta/UniversityEndCta'
 import { BLOG_CTA_BUNDLES } from '@/lib/university-blog-cta'
 import { getUniversityFromBlog } from '@/lib/internal-links'
 import BlogRelatedLinks from '@/components/BlogRelatedLinks'
+import BlogComparisonLinks from '@/components/BlogComparisonLinks'
+import { getComparisonsForBlog } from '@/lib/compare-links'
 import WhatsAppSticky from '@/components/WhatsAppSticky'
 import { pageKeywords } from '@/lib/page-keywords'
 
@@ -171,6 +173,9 @@ export default async function BlogPostPage({ params }: Props) {
   // See lib/university-blog-cta.ts for config entries.
   const ctaConfig = BLOG_CTA_BUNDLES[slug]
   const uniFromBlog = getUniversityFromBlog(slug)
+  // Derived from the post's own relatedUniversities, so a pair added to
+  // [pair]/pairs.ts picks up inbound links with no mapping to maintain.
+  const comparisonLinks = getComparisonsForBlog(post)
   if (ctaConfig) {
     contentWithIds = injectMidCtaMarker(
       contentWithIds,
@@ -524,6 +529,10 @@ export default async function BlogPostPage({ params }: Props) {
               {uniFromBlog && (
                 <BlogRelatedLinks links={uniFromBlog.links} program={uniFromBlog.program} />
               )}
+
+              {/* Comparison pages for the universities this post covers. 21 of
+                  26 had no inbound link from any post before 2026-10-06. */}
+              <BlogComparisonLinks links={comparisonLinks} />
 
               {/* From Our Guides — links to /guides/* pages to break content silo */}
               <div className="mt-6 bg-white rounded-2xl border border-border p-5">
