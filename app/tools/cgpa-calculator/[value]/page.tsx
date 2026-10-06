@@ -4,10 +4,17 @@ import { ChevronRight } from 'lucide-react'
 import { notFound } from 'next/navigation'
 import {
   CGPA_VALUES,
-  TIER_COPY,
   getEntryBySlug,
   type CgpaValueEntry,
 } from './data'
+import {
+  COMMON_MIN,
+  COMMON_MIN_CGPA,
+  COMMON_MIN_COUNT,
+  MBA_WITH_MIN,
+  eligibilityFaqAnswer,
+  eligibilityParagraph,
+} from './eligibility'
 import CgpaValueHero from '@/components/cgpa/CgpaValueHero'
 import CgpaGradeTable from '@/components/cgpa/CgpaGradeTable'
 import CgpaInlineCalculator from '@/components/cgpa/CgpaInlineCalculator'
@@ -67,16 +74,12 @@ export function generateMetadata({
 }
 
 function buildFaqs(entry: CgpaValueEntry): CgpaFaqItem[] {
-  const { label, percentage, mumbaiPct, tier } = entry
+  const { label, percentage, mumbaiPct } = entry
 
-  const eligibilityAnswer =
-    tier === 'below-50'
-      ? `Not for most programmes. ${percentage}% sits below the 50% minimum that UGC-DEB approved online MBAs use as their floor. You can still apply to a few open universities or take a bridge course to reach the eligibility threshold before applying to NMIMS, Symbiosis, MAHE or Amity.`
-      : tier === 'tier-50-60'
-        ? `Partly. ${percentage}% clears the 50% floor used by Galgotias, Sharda, LPU, Amity and Jain for online MBA admission. Premium programmes like NMIMS, Symbiosis SCDL and MAHE Online ask for 60% and above, so ${label} CGPA falls short of those.`
-        : tier === 'tier-60-70'
-          ? `Yes. ${percentage}% qualifies you for the broader online MBA catalogue including NMIMS, Symbiosis, MAHE, Amity, LPU, Galgotias across 143 UGC-DEB approved universities. Merit scholarships at most top programmes start at 70% and above, so you remain just outside fee-waiver slabs.`
-          : `Yes. ${percentage}% clears every UGC-DEB approved online MBA in India including NMIMS, Symbiosis, MAHE, Amity, LPU and 120+ others. You also qualify for merit-based scholarships and fee waivers at most premium universities.`
+  // Derived from lib/data.ts, not asserted. The four bands this replaces named
+  // cut-offs (60%, 70%) that no university in the data uses, and promised
+  // scholarships and fee waivers the site holds no data for.
+  const eligibilityAnswer = eligibilityFaqAnswer(label, parseFloat(percentage))
 
   return [
     {
@@ -242,24 +245,16 @@ export default function CgpaValuePage({
               Is {percentage}% a good score for online MBA, MCA, or BBA?
             </h2>
             <p className="text-ink-2 text-sm md:text-base leading-relaxed mb-4">
-              {TIER_COPY[tier]}
+              {eligibilityParagraph(parseFloat(percentage))}
             </p>
             <div className="grid sm:grid-cols-2 gap-3 text-xs">
               <div className="bg-surface-2 rounded-lg p-3">
-                <div className="font-bold text-navy mb-1">Below 50% (under 5.26 CGPA)</div>
-                <div className="text-ink-3">Not eligible for most online MBA programmes</div>
+                <div className="font-bold text-navy mb-1">Below {COMMON_MIN}% (under {COMMON_MIN_CGPA} CGPA)</div>
+                <div className="text-ink-3">Short of the graduation minimum at {COMMON_MIN_COUNT} of the {MBA_WITH_MIN} universities here that publish one</div>
               </div>
               <div className="bg-surface-2 rounded-lg p-3">
-                <div className="font-bold text-navy mb-1">50 to 60% (5.26 to 6.32 CGPA)</div>
-                <div className="text-ink-3">Eligible for Galgotias, Sharda, LPU and similar</div>
-              </div>
-              <div className="bg-surface-2 rounded-lg p-3">
-                <div className="font-bold text-navy mb-1">60 to 70% (6.32 to 7.37 CGPA)</div>
-                <div className="text-ink-3">Eligible for NMIMS, Symbiosis, MAHE</div>
-              </div>
-              <div className="bg-surface-2 rounded-lg p-3">
-                <div className="font-bold text-navy mb-1">70% and above (7.37+ CGPA)</div>
-                <div className="text-ink-3">All top-tier programmes plus merit scholarships</div>
+                <div className="font-bold text-navy mb-1">{COMMON_MIN}% and above ({COMMON_MIN_CGPA}+ CGPA)</div>
+                <div className="text-ink-3">Meets the stated minimum at all {MBA_WITH_MIN}. Above the floor, marks rarely decide admission</div>
               </div>
             </div>
           </section>

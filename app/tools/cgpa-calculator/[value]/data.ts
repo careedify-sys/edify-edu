@@ -87,15 +87,9 @@ export function getEntryBySlug(slug: string): CgpaValueEntry | undefined {
   return CGPA_VALUES.find(e => e.slug === slug)
 }
 
-// Eligibility copy keyed by tier. Each block is one short paragraph used in
-// the "Is X% a good score" section. No em dashes, plain phrasing.
-export const TIER_COPY: Record<CgpaTier, string> = {
-  'below-50':
-    'This score sits below 50%, which is the floor most UGC-DEB approved online MBA programmes use as their minimum bachelor\'s requirement. Universities like Galgotias, Sharda, LPU, NMIMS and Symbiosis will not accept this percentage for direct admission. You may still apply to a few open universities or upgrade your eligibility through a bridge course before applying.',
-  'tier-50-60':
-    'This score falls in the 50% to 60% band, which clears the basic eligibility cut-off for most online MBA programmes in India. Universities like Galgotias, Sharda, LPU, Amity and Jain accept students at this level. Premium programmes such as NMIMS, Symbiosis Centre for Distance Learning and MAHE Online require 60% and above, so this percentage will not qualify you for those without an entrance score boost.',
-  'tier-60-70':
-    'This score sits in the 60% to 70% band, which qualifies you for the broader middle tier of online MBA programmes. You become eligible for NMIMS Online, Symbiosis SCDL, MAHE Online, plus the full Galgotias, Sharda, LPU and Amity catalogues. Top scholarship slabs usually kick in above 70%, so you remain just outside merit-based fee waivers at most universities.',
-  'tier-70+':
-    'This score is in the 70% and above band, which clears every UGC-DEB approved online MBA in India including NMIMS, Symbiosis, MAHE, Amity, LPU, Galgotias and 120+ others. You also become eligible for merit-based scholarships and fee waivers at most premium universities, plus direct entry tracks that skip the entrance test at some institutes.',
-}
+// TIER_COPY lived here until 2026-10-06. It told readers that NMIMS, Symbiosis
+// and MAHE require 60%, that scholarship slabs start at 70%, and that a 70%
+// score earns fee waivers and entrance-test exemptions, across all 26 pages.
+// lib/data.ts has none of it: of the online MBA universities that publish a
+// graduation minimum, all but one state 50% and the exception states 40%.
+// The copy is now derived in ./eligibility.ts so it tracks the data.
