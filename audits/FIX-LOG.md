@@ -3669,3 +3669,37 @@ same metric is the repeat this entry exists to stop.
 The alias count exceeds the page count because one page can be reached by many
 spellings. Only the 2,838 are indexable; 0 aliases appear in the sitemap, an
 invariant `check-url-canonical-map` enforces on every commit.
+
+---
+
+## Audit: the 29 September click halving (2026-10-06)
+
+No code changed. Recorded here because the conclusion contradicts two standing
+assumptions and the next person to look at a GSC drop needs the method.
+
+Clicks/day fell 196 -> 100 and impressions 34,858 -> 23,704 between the Sep 6-26
+baseline and Sep 30 - Oct 3, with average position moving 7.51 -> 7.92 worse.
+
+**Why the attribution is arithmetic, not a guess.** Everything outside `/tools/`
+is 29.3% of impressions, so the largest sitewide fall those pages can produce,
+even at zero, is -29.3%. Observed -32.0%. Therefore `/tools/` fell. Use this
+bound instead of differencing two Pages exports, which cap at 1,000 rows.
+
+**Cause.** Google's September 2026 spam update, started 24 Sep, enforcing scaled
+content abuse. Edify's slide begins day five. Ruled out: the 2-3 Oct font/data
+commits (too late), serving (all 200), crawl, the www split, geography, and a
+core update (none confirmed for October). Circumstantial but nothing else fits.
+
+**Why it was exposed.** `app/tools/cgpa-calculator/[value]/page.tsx` is one
+368-line template and the only per-page variation across its 26 URLs is four
+numbers. They rank at a 4.17 mean position and convert at 0.30%, half the
+parent's rate, because Google prints the answer. Second surface: 331 of 638
+`/universities/` URLs earned zero clicks in 28 days.
+
+**Two corrections.** The AI-features citation share tracks ranking share almost
+exactly, so there is no AEO edge in those 989,266 impressions to defend. And the
+zero-click fee cluster is partly phantom: "bits pilani mba fees" at position 9.25
+lands on the WILP review, and the searcher wants the on-campus fee, so no title
+rewrite can recover it.
+
+Full audit: `audits/spam-update-decline-2026-10-06.md`.
