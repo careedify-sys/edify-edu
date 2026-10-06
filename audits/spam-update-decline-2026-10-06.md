@@ -296,3 +296,60 @@ sloppy mode, while `0924` falls back to decimal because 9 is not an octal digit.
 Month labels and event markers then disagree silently and the chart still
 renders. Quote the key. Caught here by asserting the rendered SVG contained all
 seven month labels, not by looking at it.
+
+---
+
+## Update 3: the seasonality hypothesis, tested
+
+Rishi: "in October admission closed of July batch, very few students enquire in
+November and December, and October traffic generally declines, so that could be
+the possible reason?"
+
+**The business read is correct.** Published UGC-DEB cycle: July intake applies
+roughly Apr/May to 30 Jun, extended to ~Sep-end; January intake runs roughly
+Oct to Apr. So October is the handover between cycles and a genuine enquiry lull
+there is entirely plausible.
+
+**It still does not fit the chart, and 29 Sep settles it on its own.**
+
+| date | impressions | clicks | CTR | pos |
+|---|---|---|---|---|
+| Mon 28 Sep | 33,078 | 249 | 0.75% | 6.5 |
+| **Tue 29 Sep** | **34,168** | **163** | **0.48%** | 7.0 |
+| Wed 30 Sep | 29,795 | 120 | 0.40% | 7.5 |
+
+29 Sep had **the most impressions of the entire 28-day window**, and clicks fell
+35% with CTR halved on the same day. More students searched, more of them saw
+the site, far fewer clicked. **No fall in demand produces that.** Fewer searchers
+means fewer impressions, not a halved CTR on a day impressions rose.
+
+Three supporting checks:
+
+1. **Seasonality cannot move CTR or position.** 24-28 Sep vs 29 Sep-3 Oct: CTR
+   -37.3%, position +1.02 worse. Demand changes how many people search, not
+   where you rank or what share of viewers click.
+2. **Arithmetic caps it.** Every admissions-driven page (universities, hubs,
+   compare, verify, coupons) is 12.6% of clicks. Total collapse of enquiry
+   demand = max -12.6% sitewide. Observed -46.0%.
+3. **The calculator is not an admissions asset.** It converts a grade to a
+   percentage; demand tracks results and form-filling, not a July deadline. The
+   arithmetic already pins the loss inside `/tools/`.
+
+**What a real demand taper looked like on this site**, 20-31 Jul vs 1-15 Aug:
+impressions -11.2%, clicks -19.1%, **CTR only -8.9%**. Impressions and clicks
+eased together. The last week moved CTR four times as far on a third of the
+impression change. Different mechanism.
+
+**The honest limit.** This site cannot be checked against its own seasonality:
+the 6-month window opens 4 Apr at 255 impressions/day, so there is no comparable
+October. **To close the question, export Last 16 months** (full GSC retention).
+If the site was still too small last October, the supply-side fingerprint has to
+carry it.
+
+**Where the read is right, and the consequence.** Few enquiries Oct-Dec is real
+and the cycle supports it. That makes this the quietest revenue window of the
+year, which is the right time to fix the education side's ranking problem rather
+than the wrong time to look at it. January intake applications run to April, so
+work shipped now is indexed and ranking when that demand arrives. Pairs with the
+Update 2 finding that the education side's next lever is rankings and coverage,
+not CTR.
