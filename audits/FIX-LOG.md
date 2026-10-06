@@ -3703,3 +3703,63 @@ lands on the WILP review, and the searcher wants the on-campus fee, so no title
 rewrite can recover it.
 
 Full audit: `audits/spam-update-decline-2026-10-06.md`.
+
+---
+
+## /compare made static, 22 invisible pages, and an invented eligibility ladder (2026-10-06)
+
+Three fixes, two commits (`acfd2e7`, `76df8f3`). Recorded because each one was a
+belief the code held that the data denied.
+
+**/compare was force-dynamic for nothing.** The directive existed so
+generateMetadata could emit a per-pair canonical and title for `/compare?a=&b=`.
+`robots.txt` disallows `/compare?` for `*`, `Googlebot` and `Googlebot-Image`,
+so no crawler ever saw that metadata. The site paid origin rendering on every
+request to the base URL to produce titles for URLs Google may not fetch, and the
+base URL was the collateral: `Cache-Control: private`, `x-vercel-cache: MISS`,
+499ms TTFB against 200-250ms elsewhere, on the page the comparison business runs
+through. Now prerendered, `s-maxage=31536000`.
+
+Removing `force-dynamic` alone would not have worked: in Next 14 *reading*
+`searchParams` is what forces dynamic rendering, so the read had to go too.
+`CompareClient` already carried its own Suspense boundary, so deep links
+survived. **Verified against a non-default pair.** The first test used
+`a=amity&b=jain` and showed no difference, and I nearly reported the feature
+broken. `CompareClient.tsx:731` sets JAIN + Amity as the no-params default, so
+that pair cannot distinguish anything. LPU vs Chandigarh showed it working.
+
+**All 22 `/compare/[pair]` pages were in no sitemap.** The live sitemap carried
+one `/compare` URL, the hub. Google had reached them by crawling alone, and they
+are the best-converting pages on the site: 1.4% to 2.8% CTR against a 0.55% site
+average, on 98 to 389 impressions each. They now sit in
+`scripts/lib/static-urls.js`, the one file both valid-urls writers read.
+`normalize-valid-urls.mts` looked like the natural hook and **is not in the
+prebuild chain at all**, so anything added there would never reach a build. That
+is the `/methodology` bug in a new costume.
+
+**Three MCA pairs added, with no fee figures in their prose.**
+`/compare/amity-vs-lpu-mca` prints four money figures for two universities: its
+table reads `programFees` (LPU 1,29,600) while its hand-written FAQ says
+1,08,000, and its "saves Rs 91,000" line only works with the second. Prose that
+restates a governed figure drifts from it. The three new pages print exactly two
+each. **Not built:** `amity-vs-jain-mca`, because JAIN has no `programFees.mca`
+and the fee row would render blank on a fee-led query. **Open for Rishi:** the
+JAIN online MCA fee, and which of Amity (1,99,000 vs 1.7L) and LPU (1,29,600 vs
+1.08L) is right.
+
+**The 26 CGPA value pages invented an eligibility ladder.** They asserted
+below 50% not eligible, 50-60% "Galgotias, Sharda, LPU", 60-70% "Eligible for
+NMIMS, Symbiosis, MAHE", 70%+ "clears every UGC-DEB approved online MBA in India
+... and 120+ others", plus merit scholarships, fee waivers and entrance-test
+exemptions. Of the 121 universities here running an online MBA, **105 publish a
+graduation minimum: 104 state 50%, one states 40%.** No 60% band, no 70% band,
+no scholarship data anywhere on the site, and the site's own MBA allowlist puts
+the count at 119, not "120+". Copy is now derived in
+`app/tools/cgpa-calculator/[value]/eligibility.ts`. Swept all 26 built pages:
+0 carry any old claim, 26 carry the derived copy.
+
+**New gate `check-compare-pair-urls`** keeps `static-urls.js` and `PAIR_SLUGS` in
+exact sync. Proven against injected defects in both directions before being
+trusted, per the rule that a gate which can pass by finding nothing is not a
+gate. The eligibility helper throws if it derives zero, for the same reason:
+copy built on zeroes still reads as a sentence.
