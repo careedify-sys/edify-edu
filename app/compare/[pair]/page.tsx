@@ -23,9 +23,12 @@ function getProgramFee(uni: ReturnType<typeof getUniversityById>, program: strin
   if (program === 'MBA') return { min: uni.feeMin, max: uni.feeMax }
   const pd = (uni.programDetails as Record<string, unknown> | undefined)?.[program] as { fees?: string } | undefined
   if (!pd) return null
-  const pf = uni.programFees as Record<string, { fee: number }> | undefined
+  const pf = uni.programFees as Record<string, { fee: number; feeMax?: number }> | undefined
   const key = program.toLowerCase()
-  if (pf?.[key]) return { min: pf[key].fee, max: pf[key].fee }
+  if (pf?.[key]) {
+    const { fee, feeMax } = pf[key]
+    return { min: fee, max: typeof feeMax === 'number' && feeMax > fee ? feeMax : fee }
+  }
   return null
 }
 

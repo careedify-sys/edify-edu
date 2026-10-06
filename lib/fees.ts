@@ -131,10 +131,18 @@ function makeFullRange(min: number, max: number): string {
 interface Ref { min: number; max: number; label: string }
 
 function getReference(u: University, program: Program): Ref | null {
-  const pf = (u as unknown as { programFees?: Record<string, { fee?: number }> }).programFees
-  const perProgram = pf?.[program.toLowerCase()]?.fee
+  const pf = (u as unknown as { programFees?: Record<string, { fee?: number; feeMax?: number }> }).programFees
+  const entry = pf?.[program.toLowerCase()]
+  const perProgram = entry?.fee
   if (typeof perProgram === 'number' && perProgram > 0) {
-    return { min: perProgram, max: perProgram, label: `programFees.${program.toLowerCase()} ${perProgram}` }
+    // feeMax is the upper tier where a programme is priced per elective.
+    // Without it the floor would print as the whole price.
+    const upper = typeof entry?.feeMax === 'number' && entry.feeMax > perProgram ? entry.feeMax : perProgram
+    return {
+      min: perProgram,
+      max: upper,
+      label: `programFees.${program.toLowerCase()} ${perProgram}${upper !== perProgram ? '-' + upper : ''}`,
+    }
   }
   // No fee on record yet. Never synthesise a reference from a zero.
   if (!u.feeMin || u.feeMin <= 0) return null

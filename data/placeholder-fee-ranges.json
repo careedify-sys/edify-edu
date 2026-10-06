@@ -1,6 +1,6 @@
 {
   "note": "Fee ranges claimed identically by two or more universities. A range is two numbers; identical independent authorship is not plausible, so these are treated as bulk-authored placeholders and suppressed by lib/fees.ts rule 4d. Regenerate with scripts/build-placeholder-fee-ranges.mjs. Single values are deliberately excluded, see that script for why.",
-  "generatedAt": "2026-09-29",
+  "generatedAt": "2026-10-06",
   "minUniversities": 2,
   "rangeCount": 25,
   "affectedRows": 101,

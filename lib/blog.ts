@@ -27399,7 +27399,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <tbody>
     <tr><td>Amrita Vishwa Vidyapeetham Online</td><td>NAAC A plus plus, NIRF University 8</td><td>Rs 1.40 lakh</td><td>Software Engineering, Cyber Security</td></tr>
     <tr><td>Manipal MAHE Online</td><td>NAAC A plus plus, NIRF University 3</td><td>Rs 2.20 lakh</td><td>AI plus ML, Cloud Computing</td></tr>
-    <tr><td>JAIN Online (Bengaluru)</td><td>NAAC A plus plus, NIRF University 73</td><td>Rs 1.50 lakh</td><td>Data Science, AI plus ML, FinTech</td></tr>
+    <tr><td>JAIN Online (Bengaluru)</td><td>NAAC A plus plus, NIRF University 73</td><td>From Rs 1.3 lakh</td><td>Data Science, AI plus ML, FinTech</td></tr>
     <tr><td>Amity University Online</td><td>NAAC A plus</td><td>Rs 1.99 lakh</td><td>FinTech (Paytm), Cyber Security (HCL), Blockchain</td></tr>
     <tr><td>Chandigarh University Online</td><td>NAAC A plus, NIRF University 25</td><td>Rs 1.55 lakh</td><td>Data Science, AI, Cyber Security</td></tr>
     <tr><td>LPU Online</td><td>NAAC A plus plus, NIRF University 31</td><td>Rs 1.45 lakh</td><td>Web Development, Cloud Computing</td></tr>
@@ -27580,7 +27580,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>Christ University Online</td><td>A plus plus</td><td>University 51-100</td><td>Rs 2.30 lakh</td><td>Bengaluru ecosystem, strong placement</td></tr>
     <tr><td>Chandigarh University Online</td><td>A plus</td><td>University 25</td><td>Rs 1.55 lakh</td><td>AWS, Azure, Cyber Security tracks</td></tr>
     <tr><td>Sikkim Manipal Online</td><td>A plus</td><td>Not ranked</td><td>Rs 1.10 lakh</td><td>Affordable, Manipal brand</td></tr>
-    <tr><td>JAIN Online (Bengaluru)</td><td>A plus plus</td><td>University 73</td><td>Rs 1.50 lakh</td><td>Cloud, AI specialisations</td></tr>
+    <tr><td>JAIN Online (Bengaluru)</td><td>A plus plus</td><td>University 73</td><td>From Rs 1.3 lakh</td><td>Cloud, AI specialisations</td></tr>
     <tr><td>LPU Online</td><td>A plus plus</td><td>University 31</td><td>Rs 1.45 lakh</td><td>Largest cohort, alumni network</td></tr>
     <tr><td>UPES Online</td><td>A plus</td><td>University 52</td><td>Rs 1.40 lakh</td><td>Cyber Security, IoT specialisations</td></tr>
     <tr><td>IGNOU MCA</td><td>A plus plus</td><td>Open University 1</td><td>Rs 36,000</td><td>Cheapest UGC-DEB option</td></tr>

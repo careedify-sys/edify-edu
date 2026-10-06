@@ -55,11 +55,7 @@ const MBA_PAIRS = [
 const MCA_PAIRS = [
   { label: 'Amity vs LPU Online MCA', href: '/compare/amity-vs-lpu-mca' },
   { label: 'MUJ vs Chandigarh University Online MCA', href: '/compare/manipal-jaipur-vs-chandigarh-mca' },
-  // Still a query-string link, which robots.txt blocks, because JAIN has no
-  // programFees.mca. A static pair page would render with no fee row on a
-  // fee-led query. Add the JAIN MCA fee from the official portal, then give
-  // this an amity-vs-jain-mca entry in [pair]/pairs.ts like the other three.
-  { label: 'Amity Online MCA vs JAIN Online MCA', href: '/compare?a=amity-university-online&b=jain-university-online' },
+  { label: 'Amity Online MCA vs JAIN Online MCA', href: '/compare/amity-vs-jain-mca' },
   { label: 'LPU vs Chandigarh University Online MCA', href: '/compare/lpu-vs-chandigarh-mca' },
   { label: 'MUJ vs Sikkim Manipal Online MCA', href: '/compare/manipal-jaipur-vs-sikkim-manipal-mca' },
   { label: 'Amity vs MUJ Online MCA', href: '/compare/amity-vs-manipal-jaipur-mca' },

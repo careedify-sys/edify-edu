@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-02",
+  "updatedAt": "2026-10-06",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
-  "totalUnverified": 2427,
+  "totalUnverified": 2425,
   "perSlug": {
     "amity-online-mba-hr-worth-it": 2,
     "is-online-mba-worth-it-2026": 8,
@@ -93,8 +93,8 @@
     "bsc-career-options-scope-salary-india-2026": 5,
     "gd-topics-for-mba-2026-with-answers": 1,
     "llm-course-duration-fees-scope-india-2026": 24,
-    "online-mca-course-india": 18,
-    "amity-online-mca-fees-review": 8,
+    "online-mca-course-india": 17,
+    "amity-online-mca-fees-review": 7,
     "vignan-online-mba-review": 10,
     "dsu-online-mba-review": 12,
     "smu-online-mba-review": 9,

@@ -61,6 +61,7 @@ const STATIC_URLS = [
   '/compare/lpu-vs-chandigarh-mca',
   '/compare/manipal-jaipur-vs-sikkim-manipal-mca',
   '/compare/amity-vs-manipal-jaipur-mca',
+  '/compare/amity-vs-jain-mca',
   '/compare/amity-vs-lpu-bba',
   '/compare/sharda-vs-galgotias-bba',
   '/compare/amity-vs-lpu-bca',

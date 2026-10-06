@@ -328,6 +328,20 @@ export const PAIRS: Record<string, PairConfig> = {
     verdictA: ['Financial Technology or Blockchain is the track you want, and MUJ runs neither', 'You want Software Engineering available as a named option', 'NIRF University rank matters to you, and Amity sits higher of the two in that category'],
     verdictB: ['Cloud Computing is your target track, and Amity does not list it', 'You want the Manipal group name and the five tracks MUJ runs', 'The fee in the table above is what decides it for you'],
   },
+  'amity-vs-jain-mca': {
+    uniA: 'amity-university-online',
+    uniB: 'jain-university-online',
+    program: 'MCA',
+    defaultSpec: 'general',
+    faqs: [
+      { q: 'Do Amity and JAIN price their online MCA the same way?', a: 'No, and it is the thing most worth understanding before you compare them. JAIN prices per elective, so what you pay depends on which track you pick and the entry track costs less than the rest. Amity prices one programme, and charges less in total if you pay once rather than by semester. The table above shows the span for each, which is why a single headline number is misleading for this pair.' },
+      { q: 'Which specialisations does only one of them run?', a: 'Amity carries Financial Technology and AI, Blockchain Technology and Software Engineering as named tracks. Both universities run an artificial intelligence and machine learning track and a cybersecurity track, so those are not a differentiator. Check the current elective list on each admission page, because both change these between intakes.' },
+      { q: 'Is an online MCA from either university valid for IT jobs?', a: 'Both are UGC-DEB approved, so the degree carries the same standing as a regular MCA under the UGC DEB regulations 2020. That covers private employers, PSU recruitment and further study. Confirm the entitlement for your admission year at deb.ugc.ac.in before you pay anything.' },
+      { q: 'How do I confirm what each one will actually cost me?', a: 'Treat the table above as indicative and confirm on the university admission page. Ask for the figure that applies to your elective, your intake and your payment mode, because both universities quote more than one number for the same degree.' },
+    ],
+    verdictA: ['Financial Technology, Blockchain or Software Engineering is the track you want, and JAIN runs none of them as a named option', 'Paying the full fee once suits you, since Amity charges less in total that way than by semester', 'NIRF University rank matters to you, and Amity sits higher of the two in that category'],
+    verdictB: ['NAAC grade is your deciding credential, and JAIN holds the stronger of the two', 'The entry-level elective fits your goal, since it is priced below the rest of the JAIN catalogue', 'You want to pick a track on price rather than take one programme fee as given'],
+  },
   'amity-vs-lpu-bba': {
     uniA: 'amity-university-online',
     uniB: 'lovely-professional-university-online',

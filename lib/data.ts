@@ -131,7 +131,11 @@ export interface University {
    * and falls back to feeMin / feeMax. Lowercase keys to match runtime
    * `program.toLowerCase()` lookup. Sprint 2 data fix.
    */
-  programFees?: Partial<Record<'mba' | 'bba' | 'mca' | 'bca' | 'mcom' | 'bcom' | 'btech' | 'mtech', { fee: number }>>
+  // fee is the floor. feeMax is set only where a university prices one
+  // programme in tiers, so a single number would be wrong at one end: JAIN
+  // charges Rs 1,30,000 for the CS & IT MCA elective and Rs 1,60,000 for the
+  // six others. Omit feeMax when the programme has one price.
+  programFees?: Partial<Record<'mba' | 'bba' | 'mca' | 'bca' | 'mcom' | 'bcom' | 'btech' | 'mtech', { fee: number; feeMax?: number }>>
   programDetails: Partial<Record<Program, ProgramDetail>>
   specialFeatures?: UniFeature[]
   highlights?: UniHighlights
@@ -220,6 +224,11 @@ export function getUniversitiesBySpec(program: Program, spec: string) {
 const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   {
     id: 'jain-university-online',
+    // Verified 2026-10-06 against onlinejain.com/online-mca. Priced per
+    // elective: Rs 1,30,000 for Computer Science and Information Technology,
+    // Rs 1,60,000 for Cyber Security and AI, AI and ML, Data Science and AI,
+    // Generative and Agentic AI, Cloud and DevOps, and Full Stack Development.
+    programFees: { mca: { fee: 130000, feeMax: 160000 } },
     logo: '/logos/university_logos/jain_university-logo.svg',
     name: 'JAIN (Deemed-to-be University) Online',
     abbr: 'JUJOD',
@@ -276,7 +285,16 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved MBA from JAIN (Deemed-to-be University) – JA — recognised for corporate hiring.'},
       'MCA': {
         specs: ['Artificial Intelligence and Machine Learning', 'Cybersecurity', 'Data Science', 'Internet of Things (IoT)', 'Full Stack Development', 'Cloud Computing', 'General', 'Blockchain Technology'],
-        fees: '₹1.6L',
+        // Verified 2026-10-06 on onlinejain.com/online-mca. Priced per elective:
+        // Rs 1,30,000 for Computer Science and Information Technology, Rs 1,60,000
+        // for the six others. '₹1.6L' printed the top tier as the whole price.
+        // A single value, not a range, on purpose. The real span is Rs 1,30,000
+        // to Rs 1,60,000 and it is carried in programFees.mca so the comparison
+        // table shows both ends. Written as a range here it collides with
+        // Shoolini's MSc 1.3L-1.6L and rule 4d suppresses BOTH as copied
+        // placeholders, which this is not. As a single value getDisplayFee
+        // renders 'From Rs 1.3L', the right framing for per-elective pricing.
+        fees: '₹1.3L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
