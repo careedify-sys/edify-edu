@@ -1856,7 +1856,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   {
     id: 'sharda-university-online',
     // own .ac.in domain, outbound links stay in-house
-    officialUrl: 'https://shardaonline.ac.in',
+    officialUrl: 'https://shardaonline.ai',
+    feeVerifiedOn: '2026-10-06',
     programFees: { bca: { fee: 120000 }, mca: { fee: 120000 } },
     logo: '/logos/university_logos/sharda-university.svg',
     name: 'Sharda University Online',
@@ -1917,7 +1918,11 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ['General Management'],
-        fees: '₹0.2L – ₹1.5L',
+        // Verified 2026-10-06 on shardaonline.ai/programs/sharda/bca/: total
+        // program fee 1,35,000, per semester 22,500, per year 45,000, for
+        // Indian nationals. Registration 500 one-time and exam 3,500 a year
+        // are charged on top and are not in this figure.
+        fees: '₹1.35L',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -3944,6 +3949,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     id: 'uttaranchal-university-online',
     // links to student.uttaranchaluniversity.ac.in and uudoon.in
     officialUrl: 'https://onlineuu.in',
+    feeVerifiedOn: '2026-10-06',
     logo: '/logos/university_logos/uttaranchal-online-university-logo_1.svg',
     name: 'Uttaranchal University Online',
     abbr: 'UUUDO',
@@ -4004,7 +4010,11 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ['General'],
-        fees: '₹0.2L – ₹1.0L',
+        // Verified 2026-10-06 on onlineuu.in/bca.php: total program fee
+        // 1,20,000, or 1,02,000 under a 15 per cent Early Bird scholarship
+        // whose last date is 9 October 2026. The list price is recorded
+        // because the offer expires. Includes exam fee 2,500 a semester.
+        fees: '₹1.2L',
         duration: '3 Yrs',
         roles: ['Web Developer', 'Java Developer', 'Python Developer', 'Software Tester'],
         avgSalary: '₹3L – ₹10L per annum',
@@ -4014,7 +4024,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BA': {
         specs: ['General – Sociology', 'Economics', 'Psychology', 'Political Science', 'Public Speaking'],
-        fees: '₹0.1L – ₹0.7L',
+        // Verified 2026-10-06 on onlineuu.in/ba.php: total program fee 72,000, or
+        // 61,200 under the same 15 per cent Early Bird scholarship expiring
+        // 9 October 2026. Includes exam fee 2,500 a semester.
+        fees: '₹72K',
         duration: '3 Yrs',
         roles: ['Content Writer', 'Research Assistant', 'Social Worker', 'Counsellor Trainee', 'Government exam aspirant'],
         avgSalary: '₹2.5L – ₹6L per annum',

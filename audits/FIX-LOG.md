@@ -3763,3 +3763,58 @@ exact sync. Proven against injected defects in both directions before being
 trusted, per the rule that a gate which can pass by finding nothing is not a
 gate. The eligibility helper throws if it derives zero, for the same reason:
 copy built on zeroes still reads as a sentence.
+
+---
+
+## Fee verification restarted, with provenance (2026-10-06)
+
+The backlog is 242 suppressed programme rows: a fee the site cannot show because
+the data is a copied placeholder, a range spanning more than 3x, "Not published",
+or missing. Down to 239 today.
+
+**The enabling change is `officialUrl` + `feeVerifiedOn` on the University
+record.** Nothing recorded where a fee came from, so every re-check restarted the
+domain hunt, and the hunt is the dangerous part.
+`galgotiasuniversityonline.com` ranks, reads as the university's portal, and
+routes every programme link to `collegebandhu.com`, a lead-generation site. A fee
+taken from there is a commission-driven number on a commission-free site.
+
+**Confirmation rule:** populate `officialUrl` only after reading that portal's
+own fee page, or after the university's main domain links to it. Blank otherwise.
+Vignan failed both tests and stays blank despite `vignanonline.com` resolving.
+
+**Verified today, from the universities' own portals:**
+
+| university | programme | was | now |
+|---|---|---|---|
+| Amity | MCA | display string `₹1.7L` | `₹1.99L` (portal: 49,800/sem) |
+| JAIN | MCA | `₹1.6L`, top tier as whole price | `₹1.3L` floor + `feeMax` 1,60,000 |
+| Sharda | BCA | `₹0.2L – ₹1.5L`, 7.5x | `₹1.35L` |
+| Uttaranchal | BCA | `₹0.2L – ₹1.0L`, 5x | `₹1.2L` |
+| Uttaranchal | BA | `₹0.1L – ₹0.7L`, 7x | `₹72K` |
+
+**Record the list price, not the promotion.** LPU quotes a 20% Student Grant
+price (ended 10 Oct), Uttaranchal a 15 per cent Early Bird (ends 9 Oct). Both
+expire; the list price survives. LPU's own displayed figure is still `₹1.08L`,
+which matches neither its list (1,60,000) nor its grant price (1,29,600), and is
+open pending Rishi's call.
+
+**Blocked, with reasons, so nobody re-runs them:**
+- **Galgotias**: `online.galgotiasuniversity.edu.in` returns "Under Construction".
+  Their online fees cannot be verified from any official source. The existing
+  suppression is correct, not a gap.
+- **Jamia Hamdard**: fees appear only as images inside a 9MB prospectus; the text
+  layer holds no figures at all, and the online portal does not resolve. Needs a
+  human with the PDF open.
+- **BITS Pilani**: nothing to fix. Its fee is clean. Its 2,735 zero-click
+  impressions are the on-campus vs WILP intent mismatch, not missing data.
+
+**Gate `check-official-urls`** rejects non-https, trailing slashes, a
+`feeVerifiedOn` with no `officialUrl`, a future date, and any host matching the
+competitors CLAUDE.md forbids or a known aggregator. **Its first version passed
+the galgotias URL**: the blocklist named `collegebandhu`, the site it links to,
+not the lookalike itself, so it reported clean on the one mistake it existed to
+stop. Caught by injecting that exact URL before trusting it. A blocklist cannot
+recognise the next lookalike, because a lookalike is built from the university's
+own name and a name heuristic would clear it while flagging honest abbreviations
+like `onlineuu.in`. The defence stays human, and is written on the field.

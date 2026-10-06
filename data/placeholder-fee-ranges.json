@@ -2,8 +2,8 @@
   "note": "Fee ranges claimed identically by two or more universities. A range is two numbers; identical independent authorship is not plausible, so these are treated as bulk-authored placeholders and suppressed by lib/fees.ts rule 4d. Regenerate with scripts/build-placeholder-fee-ranges.mjs. Single values are deliberately excluded, see that script for why.",
   "generatedAt": "2026-10-06",
   "minUniversities": 2,
-  "rangeCount": 25,
-  "affectedRows": 101,
+  "rangeCount": 24,
+  "affectedRows": 98,
   "ranges": [
     {
       "min": 48000,
@@ -216,20 +216,6 @@
     },
     {
       "min": 20000,
-      "max": 150000,
-      "universities": [
-        "lovely-professional-university-online",
-        "sharda-university-online",
-        "symbiosis-university-online"
-      ],
-      "programmes": [
-        "BBA",
-        "BCA",
-        "BSc"
-      ]
-    },
-    {
-      "min": 20000,
       "max": 120000,
       "universities": [
         "jaypee-university-online",
@@ -277,15 +263,15 @@
       ]
     },
     {
-      "min": 10000,
-      "max": 70000,
+      "min": 20000,
+      "max": 150000,
       "universities": [
-        "karnataka-state-open-university-online",
-        "uttaranchal-university-online"
+        "lovely-professional-university-online",
+        "symbiosis-university-online"
       ],
       "programmes": [
-        "B.Com",
-        "BA"
+        "BBA",
+        "BSc"
       ]
     },
     {
