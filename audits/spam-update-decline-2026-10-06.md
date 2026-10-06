@@ -213,3 +213,86 @@ the reader "also qualifies for merit-based scholarships and fee waivers at most
 premium universities". Unverified blanket eligibility and scholarship claims,
 templated across 26 URLs. Same class as the 126 employer lists and 1,022 fake
 reviews in [[project_page_content_json_broken]]. Nothing gates this copy.
+
+---
+
+## Update 2: the six-month export, which changes the framing
+
+Rishi supplied the Last-6-months Web export (4 Apr to 3 Oct 2026, 183 days).
+Site-wide, not the filtered one, but it answers more than the filter would have.
+
+### Yes, the decline is real and it is the only one of its kind
+
+A rolling scan of every 5-day window against its prior 21 days, across all 183
+days, finds **exactly one** breach of -20% impressions / -30% clicks: the five
+days ending 3 Oct (-24.7% / -44.5%). August's dip never reached it.
+
+**Not a weekday or holiday artefact.** Over the last 8 weeks Saturday averages
+29,222 impressions and 157 clicks. 3 Oct (Sat) is **19,894 / 83**, the lowest
+Saturday in the whole series and 32% under the Saturday norm. Gandhi Jayanti
+(2 Oct, national holiday) explains part of that one day, Friday avg 31,557 vs
+20,778 actual, but nothing about 30 Sep, 1 Oct or 3 Oct.
+
+### The break is 29 Sep, not 24 Sep
+
+| phase | impr/d | clicks/d | pos | AI impr/d | vs prev |
+|---|---|---|---|---|---|
+| A. 1-13 Sep, peak | 36,325 | 193 | 8.03 | 7,524 | - |
+| B. 14-23 Sep, pre-update | 35,072 | 181 | 7.40 | 7,736 | impr -3.5% |
+| C. 24-28 Sep, update days 1-5 | 29,934 | **208** | **6.72** | 8,515 | clicks **+15.2%** |
+| D. 29 Sep-3 Oct | 25,797 | 112 | 7.74 | 5,135 | clicks **-46.0%** |
+
+**Phase C was a good period.** Fewer impressions, better position, more clicks.
+The first five days of the spam update improved the site commercially. Whatever
+landed on 29 Sep took clicks -46% and AI citations -39.7% *together* and pushed
+position back out to 7.74.
+
+That simultaneity is the strongest support for the attribution. The CGPA cluster
+is 68% of impressions, 70% of clicks and 63% of AI citations, so a demotion there
+moves all three in proportion on the same day. One cause, three symptoms, no
+second explanation needed.
+
+### Where today sits
+
+| month | impr/day | clicks/day |
+|---|---|---|
+| Jun | 23,595 | 81 |
+| Jul | 33,991 | 151 |
+| Aug | 33,326 | 130 |
+| Sep | 34,553 | 188 |
+| **Oct (3 days)** | **21,673** | **93** |
+
+3 Oct is the lowest impression day since **8 June** and the lowest click day
+since **13 June**. About three and a half months of growth handed back. The site
+is still roughly 4x its April size, so this is a giveback, not a collapse.
+
+### The finding that matters more than the drop
+
+Split the six months at the 28-day boundary, clicks per day:
+
+| segment | prior 155 days | last 28 days | change |
+|---|---|---|---|
+| CGPA and tools | 28.3 | 129.0 | **+355%** |
+| Blog | 26.4 | 30.2 | +15% |
+| **Education** (unis, verify, compare, hubs, coupons) | **24.7** | **24.4** | **-1%** |
+
+**The part of the site that sells online degrees earned ~25 clicks/day in April
+and earns ~25 clicks/day now.** The entire six-month growth curve was the
+calculator, and so is the entire fall. Cross-check: tools were 45.9% of clicks
+over 6 months and 70.3% over 28 days, so the concentration was still increasing
+right up to the break.
+
+**But the CTR work did land.** Education impressions fell 3,488 to 2,788/day
+(-20%) while clicks held flat, so CTR went **0.71% -> 0.88%, +24%**. The title
+and snippet programme succeeded and was cancelled out by losing impressions.
+**So the next lever on the education side is rankings and coverage, not CTR.**
+That is a different job from the one that has been running since August, and it
+supersedes the emphasis in `audits/review-blog-ctr-audit-2026-08-19.md`.
+
+### Note for whoever builds the next chart
+
+Emitting dates as bare `0404` in a JS array is a legacy octal literal (260) in
+sloppy mode, while `0924` falls back to decimal because 9 is not an octal digit.
+Month labels and event markers then disagree silently and the chart still
+renders. Quote the key. Caught here by asserting the rendered SVG contained all
+seven month labels, not by looking at it.
