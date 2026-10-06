@@ -1,41 +1,22 @@
 // app/compare/page.tsx — Server Component wrapper
 // Static H1/H2/FAQ is server-rendered (crawler-visible)
 // Interactive comparison tool loads client-side via CompareClient
-// force-dynamic: each ?a=&b= pair gets its own canonical + title via generateMetadata
-export const dynamic = 'force-dynamic'
+// Fully static since 2026-10-06. This route was force-dynamic so generateMetadata
+// could emit a per-pair canonical and title for /compare?a=&b= URLs. But robots.txt
+// disallows /compare? for *, Googlebot and Googlebot-Image, so no crawler ever saw
+// that metadata. The cost landed on the base URL instead: Cache-Control: private,
+// x-vercel-cache MISS and a 499ms TTFB against 200-250ms for every other page, on
+// the one page the comparison business runs through.
+// Named pairs that genuinely need their own metadata have static routes at
+// /compare/[pair]. CompareClient reads ?a=&b= on the client and carries its own
+// Suspense boundary, so shared ?a=&b= links still deep-link into the right pair.
+export const revalidate = false
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ChevronRight, ChevronDown, ShieldCheck, Award, Wallet, Phone } from 'lucide-react'
 import CompareClient from '@/components/CompareClient'
-import { getUniversityById } from '@/lib/data'
-import { getTitleName } from '@/lib/seo-title'
 
-export async function generateMetadata(
-  { searchParams }: { searchParams: Promise<{ a?: string; b?: string }> }
-): Promise<Metadata> {
-  const { a, b } = await searchParams
-
-  if (a && b) {
-    const uA = getUniversityById(a)
-    const uB = getUniversityById(b)
-    if (uA && uB) {
-      const nameA = getTitleName(uA.id, uA.name, uA.abbr)
-      const nameB = getTitleName(uB.id, uB.name, uB.abbr)
-      const canonicalUrl = `https://edifyedu.in/compare?a=${a}&b=${b}`
-      // CTR-tuned (2026-05-25): pair-first hook, year + bracket review tag, no em dash.
-      const title = `${nameA} vs ${nameB} Online MBA 2026: Fees, NIRF [Review] | EdifyEdu`
-      const description = `${nameA} vs ${nameB} online MBA 2026: side-by-side fees, NIRF rank, NAAC grade, specialisations and semester-wise syllabus. See which fits your budget free.`
-      return {
-        // absolute disables the root layout's "%s | EdifyEdu" template so the
-        // brand suffix is not duplicated when titles already contain it.
-        title: { absolute: title },
-        description,
-        alternates: { canonical: canonicalUrl },
-        openGraph: { title, description, url: canonicalUrl, type: 'website' },
-      }
-    }
-  }
-
+export function generateMetadata(): Metadata {
   return {
     // CTR-tuned (2026-05-25): no em dash, no "Compare" lead in desc, bracket hook.
     // absolute disables the root layout "%s | EdifyEdu" template (we already include the suffix).
@@ -74,10 +55,14 @@ const MBA_PAIRS = [
 const MCA_PAIRS = [
   { label: 'Amity vs LPU Online MCA', href: '/compare/amity-vs-lpu-mca' },
   { label: 'MUJ vs Chandigarh University Online MCA', href: '/compare/manipal-jaipur-vs-chandigarh-mca' },
+  // Still a query-string link, which robots.txt blocks, because JAIN has no
+  // programFees.mca. A static pair page would render with no fee row on a
+  // fee-led query. Add the JAIN MCA fee from the official portal, then give
+  // this an amity-vs-jain-mca entry in [pair]/pairs.ts like the other three.
   { label: 'Amity Online MCA vs JAIN Online MCA', href: '/compare?a=amity-university-online&b=jain-university-online' },
-  { label: 'LPU vs Chandigarh University Online MCA', href: '/compare?a=lovely-professional-university-online&b=chandigarh-university-online' },
-  { label: 'MUJ vs Sikkim Manipal Online MCA', href: '/compare?a=manipal-university-jaipur-online&b=sikkim-manipal-university-online' },
-  { label: 'Amity vs MUJ Online MCA', href: '/compare?a=amity-university-online&b=manipal-university-jaipur-online' },
+  { label: 'LPU vs Chandigarh University Online MCA', href: '/compare/lpu-vs-chandigarh-mca' },
+  { label: 'MUJ vs Sikkim Manipal Online MCA', href: '/compare/manipal-jaipur-vs-sikkim-manipal-mca' },
+  { label: 'Amity vs MUJ Online MCA', href: '/compare/amity-vs-manipal-jaipur-mca' },
 ]
 
 // Popular comparison pairs — BBA & BCA
@@ -131,10 +116,9 @@ const FAQS = [
   },
 ]
 
-export default async function ComparePage(
-  { searchParams }: { searchParams: Promise<{ a?: string; b?: string }> }
-) {
-  // searchParams consumed by generateMetadata above; page content is the same for all pairs
+export default function ComparePage() {
+  // Page content is identical for every pair. The selected pair is applied
+  // client-side by CompareClient from the query string.
   return (
     <div className="bg-slate-100">
 

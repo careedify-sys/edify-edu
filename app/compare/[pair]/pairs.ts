@@ -278,6 +278,56 @@ export const PAIRS: Record<string, PairConfig> = {
     verdictA: ['Coursera Plus free access adds value to MCA learning', 'Manipal group brand matters for IT recruiter recognition', 'You want Cybersecurity or Emerging Technologies specialisation'],
     verdictB: ['NIRF #19 University rank is a strong credential for IT jobs', 'You want Full Stack Development or Data Analytics specialisation', 'Industry certifications (IBM) matter for your resume'],
   },
+  /* ─── MCA, added 2026-10-06 ───
+     These three replace query-string links on /compare that robots.txt blocks
+     (Disallow: /compare? for *, Googlebot and Googlebot-Image), so they were
+     unreachable for crawlers. No fee figures appear in this prose on purpose:
+     the fee row comes from programFees via getProgramFee and is governed, while
+     prose is not. See amity-vs-lpu-mca, where the two disagree on the live page.
+     A fourth pair, amity-vs-jain-mca, is deliberately NOT here: JAIN has no
+     programFees.mca, so its fee row would render blank on a fee-led query. */
+  'lpu-vs-chandigarh-mca': {
+    uniA: 'lovely-professional-university-online',
+    uniB: 'chandigarh-university-online',
+    program: 'MCA',
+    defaultSpec: 'general',
+    faqs: [
+      { q: 'Which specialisations differ between LPU and Chandigarh University online MCA?', a: 'LPU runs six tracks: AR/VR (Game Development), Machine Learning and AI, Data Science, Cybersecurity, Full Stack Web Development and Cloud Computing. Chandigarh University runs four: Cloud Computing, Full Stack Development, Data Analytics and Artificial Intelligence and Machine Learning. Cloud computing and full stack appear on both lists. AR/VR is the one track only LPU offers.' },
+      { q: 'Is an online MCA from either university valid for IT jobs?', a: 'Both are UGC-DEB approved, so the degree carries the same standing as a regular MCA under the UGC DEB regulations 2020. That covers private employers, PSU recruitment and further study. Confirm the entitlement for your admission year at deb.ugc.ac.in before you pay anything.' },
+      { q: 'How do I confirm the current fee for either programme?', a: 'Treat every fee in the table above as indicative. Fees move between intakes and scholarships change the figure you actually pay, so check the amount for your session on the university admission portal before you transfer money.' },
+      { q: 'Does either university offer game development in the MCA?', a: 'Only LPU. Its AR/VR track covers game development. Chandigarh University lists no equivalent, so if that is your target this is the clearest single difference between the two.' },
+    ],
+    verdictA: ['AR/VR and game development is your target, and Chandigarh University does not run it', 'You want six specialisation tracks to choose from rather than four', 'NAAC grade is your deciding credential, and LPU holds the stronger of the two'],
+    verdictB: ['You want a track named Data Analytics rather than the Data Science framing LPU uses', 'NIRF University rank matters to you, and Chandigarh University sits higher in that category', 'A short focused specialisation list suits you better than a wide menu'],
+  },
+  'manipal-jaipur-vs-sikkim-manipal-mca': {
+    uniA: 'manipal-university-jaipur-online',
+    uniB: 'sikkim-manipal-university-online',
+    program: 'MCA',
+    defaultSpec: 'general',
+    faqs: [
+      { q: 'Are MUJ and Sikkim Manipal the same university?', a: 'No. They are separate institutions. Both sit in the Manipal group but each is governed independently and accredited separately, and each issues its own degree. Their accreditation and ranking records are not interchangeable, so compare them as you would any two universities.' },
+      { q: 'Which of the two lets me specialise?', a: 'MUJ runs five named tracks: AI and Data Science, Comprehensive Emerging Technologies, Artificial Intelligence and Machine Learning, Cloud Computing and Cybersecurity. Sikkim Manipal runs a single general MCA with no named specialisation. If you need a track printed on your transcript, that settles it.' },
+      { q: 'Does a general MCA hurt my job prospects?', a: 'Not by itself. For a first developer role employers weigh the skills you can demonstrate over the track name. A named specialisation helps most when you apply into that exact field and need the transcript to say so, for example a cybersecurity role that screens on qualifications.' },
+      { q: 'How do I confirm the current fee for either programme?', a: 'Treat every fee in the table above as indicative. Fees move between intakes and scholarships change the figure you actually pay, so check the amount for your session on the university admission portal before you transfer money.' },
+    ],
+    verdictA: ['You want a named specialisation on your transcript rather than a general MCA', 'Cloud computing or cybersecurity is the field you are aiming at', 'NIRF University rank matters to you, and of the two only MUJ holds one'],
+    verdictB: ['A general MCA meets your goal and the fee in the table above decides it', 'You want the Manipal group name on a shorter and simpler programme', 'You do not need a named track to reach the role you are targeting'],
+  },
+  'amity-vs-manipal-jaipur-mca': {
+    uniA: 'amity-university-online',
+    uniB: 'manipal-university-jaipur-online',
+    program: 'MCA',
+    defaultSpec: 'general',
+    faqs: [
+      { q: 'Which specialisations differ between Amity and MUJ online MCA?', a: 'Amity runs General, Artificial Intelligence and Machine Learning, Financial Technology and AI, Cyber Security, Software Engineering and Blockchain Technology. MUJ runs AI and Data Science, Comprehensive Emerging Technologies, Artificial Intelligence and Machine Learning, Cloud Computing and Cybersecurity. Both carry an AI track and a cybersecurity track. Financial Technology and Blockchain are Amity only. Cloud Computing is MUJ only.' },
+      { q: 'Which one suits a financial technology career?', a: 'Amity. Its Financial Technology and AI track is the only one of the two built for that path. MUJ has no equivalent, so if fintech is the goal the choice is already made.' },
+      { q: 'Is an online MCA from either university valid for IT jobs?', a: 'Both are UGC-DEB approved, so the degree carries the same standing as a regular MCA under the UGC DEB regulations 2020. That covers private employers, PSU recruitment and further study. Confirm the entitlement for your admission year at deb.ugc.ac.in before you pay anything.' },
+      { q: 'How do I confirm the current fee for either programme?', a: 'Treat every fee in the table above as indicative. Fees move between intakes and scholarships change the figure you actually pay, so check the amount for your session on the university admission portal before you transfer money.' },
+    ],
+    verdictA: ['Financial Technology or Blockchain is the track you want, and MUJ runs neither', 'You want Software Engineering available as a named option', 'NIRF University rank matters to you, and Amity sits higher of the two in that category'],
+    verdictB: ['Cloud Computing is your target track, and Amity does not list it', 'You want the Manipal group name and the five tracks MUJ runs', 'The fee in the table above is what decides it for you'],
+  },
   'amity-vs-lpu-bba': {
     uniA: 'amity-university-online',
     uniB: 'lovely-professional-university-online',

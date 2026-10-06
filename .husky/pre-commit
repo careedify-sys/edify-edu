@@ -230,6 +230,13 @@ npx tsx scripts/check-coupon-claims.mts || exit 1
 echo "pre-commit: check-fees-hub-links"
 npx tsx scripts/check-fees-hub-links.mts || exit 1
 
+# Every /compare/[pair] page was prerendered, linked and in no sitemap: a live
+# check on 2026-10-06 found exactly one /compare URL submitted, the hub. The
+# pair URLs are hand-listed in scripts/lib/static-urls.js because that file is
+# CommonJS and pairs.ts is TypeScript. This keeps the two in exact sync.
+echo "pre-commit: check-compare-pair-urls"
+npx tsx scripts/check-compare-pair-urls.mts || exit 1
+
 echo "pre-commit: typecheck:scripts"
 npx tsc --noEmit -p tsconfig.scripts.json || exit 1
 
