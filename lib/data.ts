@@ -136,6 +136,29 @@ export interface University {
   // charges Rs 1,30,000 for the CS & IT MCA elective and Rs 1,60,000 for the
   // six others. Omit feeMax when the programme has one price.
   programFees?: Partial<Record<'mba' | 'bba' | 'mca' | 'bca' | 'mcom' | 'bcom' | 'btech' | 'mtech', { fee: number; feeMax?: number }>>
+  /**
+   * The university's OWN portal for its online programmes, https only.
+   *
+   * Added 2026-10-06 because nothing recorded where a fee came from, so every
+   * re-check restarted the domain hunt. That hunt is the dangerous part:
+   * galgotiasuniversityonline.com ranks, looks official, and sends every
+   * programme link to collegebandhu.com, a lead-generation site. A fee taken
+   * from there would be a commission-driven number on a site whose proposition
+   * is that it takes no commission.
+   *
+   * Populate ONLY a domain confirmed to belong to this university, by reading
+   * its own fee page or by the university's main domain linking to it. Leave it
+   * unset otherwise. Blank is honest; a wrong domain is worse than none, and
+   * scripts/check-official-urls.mts rejects a known aggregator or competitor.
+   */
+  officialUrl?: string
+  /**
+   * YYYY-MM-DD this record's fees were last read from officialUrl. Requires
+   * officialUrl, because a verification date with no source is not a claim
+   * anyone can re-check. Knowing the portal is not the same as having read it,
+   * so a record may carry officialUrl and no date.
+   */
+  feeVerifiedOn?: string
   programDetails: Partial<Record<Program, ProgramDetail>>
   specialFeatures?: UniFeature[]
   highlights?: UniHighlights
@@ -224,6 +247,9 @@ export function getUniversitiesBySpec(program: Program, spec: string) {
 const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   {
     id: 'jain-university-online',
+    // MCA fee read from onlinejain.com/online-mca, priced per elective
+    officialUrl: 'https://onlinejain.com',
+    feeVerifiedOn: '2026-10-06',
     // Verified 2026-10-06 against onlinejain.com/online-mca. Priced per
     // elective: Rs 1,30,000 for Computer Science and Information Technology,
     // Rs 1,60,000 for Cyber Security and AI, AI and ML, Data Science and AI,
@@ -342,6 +368,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'amity-university-online',
+    // MCA fee read from amityonline.com/master-of-computer-applications-online
+    officialUrl: 'https://amityonline.com',
+    feeVerifiedOn: '2026-10-06',
     uniType: 'private',
     programFees: { bca: { fee: 175000 }, mca: { fee: 199000 } },
     logo: '/logos/university_logos/amity-online-university-logo_2.svg',
@@ -451,6 +480,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'lovely-professional-university-online',
+    // MCA fee read from lpuonline.com/master-of-computer-application
+    officialUrl: 'https://www.lpuonline.com',
+    feeVerifiedOn: '2026-10-06',
     uniType: 'private',
     programFees: { bca: { fee: 122400 }, mca: { fee: 129600 } },
     logo: '/logos/university_logos/lpu-logo.svg',
@@ -1823,6 +1855,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'sharda-university-online',
+    // own .ac.in domain, outbound links stay in-house
+    officialUrl: 'https://shardaonline.ac.in',
     programFees: { bca: { fee: 120000 }, mca: { fee: 120000 } },
     logo: '/logos/university_logos/sharda-university.svg',
     name: 'Sharda University Online',
@@ -3908,6 +3942,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'uttaranchal-university-online',
+    // links to student.uttaranchaluniversity.ac.in and uudoon.in
+    officialUrl: 'https://onlineuu.in',
     logo: '/logos/university_logos/uttaranchal-online-university-logo_1.svg',
     name: 'Uttaranchal University Online',
     abbr: 'UUUDO',

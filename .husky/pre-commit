@@ -238,6 +238,12 @@ npx tsx scripts/check-fees-hub-links.mts || exit 1
 # blog carried 193,455 impressions a month and those pages were the best
 # converting on the site. lib/compare-links.ts derives the links now; this stops
 # a new pair landing with none.
+# officialUrl records where a fee was read from, so a re-check does not restart
+# the domain hunt. The hunt is the dangerous part: galgotiasuniversityonline.com
+# reads as official and routes every link to a lead-generation site.
+echo "pre-commit: check-official-urls"
+npx tsx scripts/check-official-urls.mts || exit 1
+
 echo "pre-commit: check-compare-inbound-links"
 npx tsx scripts/check-compare-inbound-links.mts || exit 1
 
