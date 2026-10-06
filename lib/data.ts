@@ -1325,6 +1325,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'manipal-university-jaipur-online',
+    // The Manipal group's own portal, serving MUJ, SMU and MAHE as separate
+    // entities with entity-suffixed programme URLs.
+    officialUrl: 'https://www.onlinemanipal.com',
+    feeVerifiedOn: '2026-10-06',
     programFees: { bca: { fee: 139500 }, mca: { fee: 158000 } },
     logo: '/logos/university_logos/muj-logo.svg',
     name: 'Manipal University Jaipur (MUJ) Online',
@@ -1419,7 +1423,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'M.Com': {
         specs: ['General Management'],
-        fees: '₹30K – ₹120K',
+        // Verified 2026-10-06 on onlinemanipal.com/online-mcom-degree-muj:
+        // semester fee 27,000, course fee 1,08,000. The 97,200 also shown
+        // is a 10 per cent full-payment discount, not the price.
+        fees: '₹1.08L',
         duration: '2 Years (4 Semesters)',
         roles: ['Senior Accountant', 'Tax Consultant', 'Finance Manager', 'Auditor', 'Commerce Lecturer'],
         avgSalary: '₹4L – ₹9L per annum',
@@ -1429,7 +1436,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MSc': {
         specs: ['General Management'],
-        fees: '₹30K – ₹120K',
+        // Verified 2026-10-06 on onlinemanipal.com/online-msc-mathematics-muj:
+        // semester fee 20,000, course fee 80,000. Mathematics is the only
+        // MSc MUJ awards; the other MSc pages on that portal are MAHE.
+        fees: '₹80K',
         duration: '2 Years (4 Semesters)',
         roles: ['Mathematics Lecturer', 'Data Analyst', 'Statistical Analyst', 'Research Associate', 'Actuarial Analyst'],
         avgSalary: '₹3L – ₹8L per annum',
@@ -1530,6 +1540,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'sikkim-manipal-university-online',
+    // The Manipal group's own portal, serving MUJ, SMU and MAHE as separate
+    // entities with entity-suffixed programme URLs.
+    officialUrl: 'https://www.onlinemanipal.com',
+    feeVerifiedOn: '2026-10-06',
     uniType: 'state-private',
     programFees: { mca: { fee: 110000 } },
     logo: '/logos/university_logos/sikkim-manipal-university-logo.svg',
@@ -1606,7 +1620,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BA': {
         specs: ['General Management'],
-        fees: '₹0.1L – ₹0.8L',
+        // Verified 2026-10-06 on onlinemanipal.com/online-ba-degree-smu:
+        // semester fee 12,500, course fee 75,000 over six semesters.
+        fees: '₹75K',
         duration: '3 Years (6 Semesters)',
         roles: ['Content Writer', 'Journalist', 'Social Worker', 'Educator', 'Public Administrator', 'Civil Services aspirant'],
         avgSalary: '₹2L – ₹5L per annum',
@@ -1616,7 +1632,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'M.Com': {
         specs: ['General Management'],
-        fees: '₹18K – ₹75K',
+        // Verified 2026-10-06 on onlinemanipal.com/online-mcom-degree-smu:
+        // semester fee 18,750, course fee 75,000. The old range was not
+        // invented, it was the semester fee and the total written as a span.
+        fees: '₹75K',
         duration: '2 Years (4 Semesters)',
         roles: ['Senior Accountant', 'Tax Consultant', 'Finance Manager', 'Auditor', 'Commerce Lecturer'],
         avgSalary: '₹3.5L – ₹8L per annum',
@@ -1629,6 +1648,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'symbiosis-university-online',
+    // SSODL's own portal. siu.edu.in links to it from
+    // /programmes/online-education.
+    officialUrl: 'https://ssodl.edu.in',
+    feeVerifiedOn: '2026-10-06',
     programFees: { bca: { fee: 157500 } }, // MCA not offered online by SSODL
     logo: '/logos/university_logos/SSODL.svg',
     name: 'Symbiosis School for Online and Digital Learning (SSODL), Pune Online',
@@ -1697,7 +1720,11 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MSc': {
         specs: ['Data Science', 'Computer Applications', 'Economics'],
-        fees: '₹35K – ₹140K',
+        // Verified 2026-10-06 on ssodl.edu.in/ug-pg-fees, EMI plan, actual
+        // program fee: Economics 1,40,000; Data Science and Computer
+        // Application 1,54,000 each. A genuine range across the three
+        // MSc programmes SSODL awards, not a placeholder span.
+        fees: '₹1.4L-₹1.54L',
         duration: '2 Years (4 Semesters); extendable to 4 years',
         roles: ['Data Scientist', 'ML Engineer', 'Data Analyst', 'Business Intelligence Analyst', 'NLP Engineer', 'Research Data Scientist'],
         avgSalary: '₹6L – ₹25L per annum',
@@ -1707,14 +1734,30 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BSc': {
         specs: ['Economics', 'Social Sciences'],
-        fees: '₹0.2L – ₹1.5L',
+        // Verified 2026-10-06 on ssodl.edu.in/ug-pg-fees, EMI plan, actual
+        // program fee 1,50,000, listed on the table as BSC (Eco).
+        // The old span's upper bound was already right; its floor was not.
+        fees: '₹1.5L',
         duration: '3 Years (6 Semesters)',
         roles: ['Economist', 'Data Analyst', 'Financial Analyst', 'Policy Researcher', 'Banking Officer', 'UPSC/Civil Services aspirant'],
         avgSalary: '₹3L – ₹9L per annum',
         topCompanies: ['Deloitte', 'KPMG', 'Accenture', 'American Express', 'DHL Logistics', 'Johnson Controls', 'Schneider Electric', 'Sterlite Power', 'Asian Paints', 'Forbes Marshall'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BSc from Symbiosis School for Online and Dig — recognised for corporate hiring.',
-      }
+      },
+      'MA': {
+        specs: ['Mass Communication'],
+        // Verified 2026-10-06 on ssodl.edu.in/ug-pg-fees, EMI plan, actual
+        // program fee 1,00,000 for MA (Mass comm.). A one-time plan is also
+        // offered at a lower actual fee with a further concession.
+        fees: '₹1L',
+        duration: '2 Years (4 Semesters)',
+        roles: ['Content Writer', 'Journalist', 'Public Relations Executive', 'Digital Media Executive', 'Corporate Communications Executive'],
+        avgSalary: '',
+        topCompanies: [],
+        internshipType: 'Not published by the university',
+        careerOutcome: 'UGC DEB approved MA from Symbiosis School for Online and Digital Learning, recognised for corporate hiring and higher study.',
+      },
     },
     color: '#1B4FBE',
   rankingBadge: 'NIRF #11 (Management)',
@@ -2166,6 +2209,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'manipal-academy-higher-education-online',
+    // The Manipal group's own portal, serving MUJ, SMU and MAHE as separate
+    // entities with entity-suffixed programme URLs.
+    officialUrl: 'https://www.onlinemanipal.com',
+    feeVerifiedOn: '2026-10-06',
     uniType: 'deemed',
     programFees: { mca: { fee: 220000 } },
     logo: '/logos/university_logos/mahe-manipal-online-logo.svg',
@@ -2239,7 +2286,11 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MSc': {
         specs: ['General Management'],
-        fees: '₹60K – ₹240K',
+        // Verified 2026-10-06 on onlinemanipal.com: MAHE awards four online MSc
+        // programmes at two prices. Biostatistics and Financial Economics
+        // are 1,60,000; Data Science and Business Analytics are 2,80,000.
+        // Each page names MAHE as the awarding university in its title.
+        fees: '₹1.6L-₹2.8L',
         duration: '2 Years (4 Semesters)',
         roles: ['Data Scientist', 'ML Engineer', 'AI Research Engineer', 'BI Analyst', 'Deep Learning Specialist'],
         avgSalary: '₹8L – ₹30L per annum',
