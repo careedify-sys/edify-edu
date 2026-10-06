@@ -139,3 +139,77 @@ block per review, both flagged indicative with a portal verification line.
 3. Hold structural changes until ~2026-10-15. Spam update volatility settles
    2-4 weeks after a rollout completes, and the rollout started 24 Sep with a
    two-week window. Re-probe before acting: see `feedback_reprobe_worklists`.
+
+---
+
+## Update, same day: manual action cleared, and the live SERP cannot find the cluster
+
+**Rishi checked GSC: Manual actions "No issues detected", Security issues "No
+issues detected".** Confirms the hit is algorithmic. Nothing to appeal, no
+reconsideration request exists for a spam update.
+
+**Not self-inflicted either.** `/tools/cgpa-calculator` serves 200, no
+`X-Robots-Tag`, `<meta name="robots" content="index, follow">`, a correct
+self-canonical, and all 27 CGPA URLs are in the live sitemap. Worth checking
+explicitly because of the `valid-urls.json` precedent in
+[[project_valid_urls_static_list]], where a duplicated list silently deleted a
+page from every build for five days. Not that.
+
+**Not a rendering problem.** The parent ships 8,111 chars of server-rendered
+visible text, a value page 6,262. Googlebot does not need to run
+`CgpaCalculatorClient.tsx` to read either.
+
+### Four index checks, 2026-10-06, three days past the last data point
+
+| check | result |
+|---|---|
+| `site:edifyedu.in/tools/cgpa-calculator` | "did not match any documents" |
+| `site:edifyedu.in "cgpa calculator"` | 7 results, all footer mentions, never the tool |
+| `"edifyedu" cgpa to percentage` | same, footer mentions only |
+| `cgpa to percentage` page 1 | edifyedu.in absent |
+
+`site:edifyedu.in` itself returns plenty, so the domain is fine. A `site:` query
+with an exact phrase that sits in the title AND the URL should rank that page
+first. It does not appear at all.
+
+**But do not report a deindex from this alone.** The export through 3 Oct has
+the cluster still delivering roughly 9,700 impressions/day: the Oct 3 total is
+19,894 and non-`/tools/` at its baseline share is only ~10,214/day, so `/tools/`
+cannot be at zero. Both readings hold if removal was still in flight when the
+data ends (29,795 -> 24,348 -> 20,778 -> 19,894 is still falling steeply).
+
+**Decisive test, owner-only: GSC URL Inspection on the parent URL.** Indexed =
+deep demotion. Not indexed = the cluster is gone and consolidation moves from
+advisable to urgent. Inspect two value pages too, to see if the children went
+first.
+
+### Two things the SERP rules out
+
+- **No Google inline CGPA converter widget** on that query, so the cluster is
+  not structurally dead the way a SERP feature would kill it.
+- **The category was not cleared.** onlineresult.in, studenttools.in,
+  raddiwalla.com and cgpafullform.com still rank, and they are the same thin-tool
+  profile. This looks site-specific, not query-class-wide.
+
+### The duplication, now measured rather than asserted
+
+Strip markup from `7-5-cgpa-percentage` and `8-25-cgpa-percentage` and diff the
+visible text:
+
+- 6,261 chars on the page
+- **4,115 verbatim identical** to the sibling
+- 1,006 unique = **16.1%**, and every one of them is a number substituted into a
+  shared sentence
+
+"Is 7.5 CGPA good for online MBA admission?" and "Is 8.25 CGPA good for online
+MBA admission?" are one template run 26 times. **83.9% byte-identical** is the
+number to quote when justifying the consolidation.
+
+### A second problem in the same template
+
+Every value page asserts the percentage "clears every UGC-DEB approved online MBA
+in India including NMIMS, Symbiosis, MAHE, Amity, LPU and 120+ others" and that
+the reader "also qualifies for merit-based scholarships and fee waivers at most
+premium universities". Unverified blanket eligibility and scholarship claims,
+templated across 26 URLs. Same class as the 126 employer lists and 1,022 fake
+reviews in [[project_page_content_json_broken]]. Nothing gates this copy.
