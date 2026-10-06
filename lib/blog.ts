@@ -2701,7 +2701,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>Chandigarh University</td><td>Rs 1,55,000</td><td>A+</td><td>#19</td></tr>
     <tr><td>Manipal University Jaipur</td><td>Rs 1,58,000</td><td>A+</td><td>#58</td></tr>
     <tr><td>GLS University</td><td>Rs 1,60,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
-    <tr><td>Amity University</td><td>Rs 1,70,000</td><td>A+</td><td>#22</td></tr>
+    <tr><td>Amity University</td><td>Rs 1,99,000</td><td>A+</td><td>#22</td></tr>
     <tr><td>Dr. D.Y. Patil Vidyapeeth, Pune</td><td>Rs 1,90,000</td><td>A++</td><td>#41</td></tr>
     <tr><td>Shanmugha Arts, Science, Technology and Research Academy</td><td>Rs 2,00,000</td><td>A+</td><td>#57</td></tr>
     <tr><td>Manipal Academy of Higher Education</td><td>Rs 2,20,000</td><td>A++</td><td>#3</td></tr>
@@ -15609,7 +15609,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <caption>Online MBA and MCA options from same universities 2026 (data live from edifyedu.in)</caption>
   <thead><tr><th>University</th><th>NAAC</th><th>MBA fee</th><th>MCA fee</th><th>Best for</th></tr></thead>
   <tbody>
-    <tr><td><a href="/universities/amity-university-online" class="ilink">Amity University Online</a></td><td>A+</td><td>Rs 2.07L to 2.25L</td><td>Rs 1.70L approx</td><td>Broadest specialisation choice both degrees</td></tr>
+    <tr><td><a href="/universities/amity-university-online" class="ilink">Amity University Online</a></td><td>A+</td><td>Rs 2.07L to 2.25L</td><td>Rs 1.99L approx</td><td>Broadest specialisation choice both degrees</td></tr>
     <tr><td><a href="/universities/manipal-university-jaipur-online" class="ilink">Manipal University Jaipur Online</a></td><td>A+</td><td>Rs 1.53L to 1.80L</td><td>Rs 1.58L approx</td><td>Affordable NAAC A+ both degrees</td></tr>
     <tr><td><a href="/universities/jain-university-online" class="ilink">JAIN Online</a></td><td>A++</td><td>Rs 1.60L to 1.96L</td><td>Verify</td><td>Highest NAAC, strong analytics MBA</td></tr>
     <tr><td><a href="/universities/lovely-professional-university-online" class="ilink">LPU Online</a></td><td>A++</td><td>Rs 1.62L to 2.00L</td><td>Rs 1.30 lakh approx</td><td>Affordable A++ both degrees</td></tr>
@@ -15728,7 +15728,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>Online MCA Programmes Worth Considering 2026</h2>
 
 <ul>
-  <li><strong>Amity University Online MCA:</strong> NAAC A+, 6 specialisations (General, AI plus ML, FinTech, Cyber Security, Software Engineering, Blockchain). Fee approximately Rs 1.70 lakh.</li>
+  <li><strong>Amity University Online MCA:</strong> NAAC A+, 6 specialisations (General, AI plus ML, FinTech, Cyber Security, Software Engineering, Blockchain). Fee approximately Rs 1.99 lakh.</li>
   <li><strong>Manipal University Jaipur Online MCA:</strong> NAAC A+, fee approximately Rs 1.58 lakh.</li>
   <li><strong>LPU Online MCA:</strong> NAAC A++, fee approximately Rs 1.30 lakh. Most affordable A++ option.</li>
   <li><strong>JAIN Online MCA:</strong> NAAC A++, verify current fee and specialisations.</li>
@@ -27400,7 +27400,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>Amrita Vishwa Vidyapeetham Online</td><td>NAAC A plus plus, NIRF University 8</td><td>Rs 1.40 lakh</td><td>Software Engineering, Cyber Security</td></tr>
     <tr><td>Manipal MAHE Online</td><td>NAAC A plus plus, NIRF University 3</td><td>Rs 2.20 lakh</td><td>AI plus ML, Cloud Computing</td></tr>
     <tr><td>JAIN Online (Bengaluru)</td><td>NAAC A plus plus, NIRF University 73</td><td>Rs 1.50 lakh</td><td>Data Science, AI plus ML, FinTech</td></tr>
-    <tr><td>Amity University Online</td><td>NAAC A plus</td><td>Rs 1.70 lakh</td><td>FinTech (Paytm), Cyber Security (HCL), Blockchain</td></tr>
+    <tr><td>Amity University Online</td><td>NAAC A plus</td><td>Rs 1.99 lakh</td><td>FinTech (Paytm), Cyber Security (HCL), Blockchain</td></tr>
     <tr><td>Chandigarh University Online</td><td>NAAC A plus, NIRF University 25</td><td>Rs 1.55 lakh</td><td>Data Science, AI, Cyber Security</td></tr>
     <tr><td>LPU Online</td><td>NAAC A plus plus, NIRF University 31</td><td>Rs 1.45 lakh</td><td>Web Development, Cloud Computing</td></tr>
     <tr><td>Sikkim Manipal Online</td><td>NAAC A plus</td><td>Rs 1.10 lakh</td><td>Standard MCA plus IT Management</td></tr>
@@ -27502,7 +27502,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'amity-online-mca-fees-review',
     title: 'Amity Online MCA: Fees, Specialisations and Honest Review 2026',
     seoTitle: 'Amity Online MCA Review 2026: FinTech and Cyber Tracks',
-    metaDescription: 'Amity Online MCA fees Rs 1.7L total (Rs 42,500 per semester). Review of all 6 specialisations, HCLTech and Paytm tie-ups and comparison with alternatives.',
+    metaDescription: 'Amity Online MCA fees Rs 1.99L total (Rs 49,800 per semester). Review of all 6 specialisations, HCLTech and Paytm tie-ups and comparison with alternatives.',
     category: 'Online MCA Programs',
     tags: ["amity online mca","amity online mca fees","amity mca online","amity university online mca","amity university online mca fees"],
     publishedAt: '2026-04-11',
@@ -27543,10 +27543,10 @@ export const BLOG_POSTS: BlogPost[] = [
 ],
     content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Amity Online MCA programme data verified from amityonline.com, UGC-DEB approved list (deb.ugc.ac.in), NAAC database (naac.gov.in), and live edifyedu.in profile.</em></p>
 
-<p>The <strong>Amity online MCA fees</strong> sit at Rs 42,500 per semester (Rs 1.7 lakh total). That puts Amity University online MCA in the mid-to-upper range for private universities in India. Whether that is worth it depends on what you are getting in return.</p>
+<p>The <strong>Amity online MCA fees</strong> sit at Rs 49,800 per semester (Rs 1.99 lakh total). That puts Amity University online MCA in the mid-to-upper range for private universities in India. Whether that is worth it depends on what you are getting in return.</p>
 <p>Amity is one of the more searched names in this space, and for good reason. It has brand recognition, a large alumni network, and genuine industry tie-ups. But there is a lot of marketing noise around it. This review gives you a clear picture of the program, the specialisations, and how it stacks up against <a href="/blog/online-mca-course-india" style="color:inherit;text-decoration:underline;text-underline-offset:2px">other online MCA programs</a>.</p>
 
-<div class="callout-key"><strong>One-line frame for Amity Online MCA 2026:</strong> Rs 1.7 lakh total fees, NAAC A plus accredited, UGC-DEB approved 2-year programme. 6 specialisations including industry co-developed tracks with HCLTech, Paytm, TCS iON. Strong brand pull at IT services plus banking employers.</div>
+<div class="callout-key"><strong>One-line frame for Amity Online MCA 2026:</strong> Rs 1.99 lakh total fees, NAAC A plus accredited, UGC-DEB approved 2-year programme. 6 specialisations including industry co-developed tracks with HCLTech, Paytm, TCS iON. Strong brand pull at IT services plus banking employers.</div>
 
 <h2>Amity Online MCA at a Glance</h2>
 <p>The Amity MCA online program runs over 2 years (4 semesters), fully online. It is UGC-entitled and NAAC A plus accredited. As a deemed-to-be university, the degree is accepted for private sector jobs, government roles, and higher studies, same as any regular campus MCA.</p>
@@ -27559,14 +27559,14 @@ export const BLOG_POSTS: BlogPost[] = [
 </figure>
 
 <ul>
-<li><strong>Semester fee:</strong> Rs 42,500 per semester</li>
-<li><strong>Total course fee:</strong> Rs 1,70,000 (4 semesters)</li>
-<li><strong>EMI option:</strong> Approximately Rs 6,729 per month</li>
+<li><strong>Semester fee:</strong> Rs 49,800 per semester</li>
+<li><strong>Total course fee:</strong> Rs 1,99,000 (4 semesters)</li>
+<li><strong>EMI option:</strong> Zero-cost EMI from Rs 7,877 per month, the starting figure Amity publishes</li>
 </ul>
 <p>The Amity online MCA fees may not include all charges upfront. Registration fees and examination fees per semester can add to the total. Always ask for a complete fee breakup before enrolling. Several students report being surprised by additional costs after admission.</p>
 <p>The chart below puts these fees in context against other comparable UGC-approved universities:</p>
 <div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/svg4_amity_fees.svg" alt="Amity Online MCA Fees vs Competitors 2026 UGC Approved Universities" loading="lazy" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
-<p>Compared to the market, Amity University online MCA at Rs 1.7 lakh is more expensive than Amrita (Rs 1.4 lakh) and Chandigarh University (Rs 1.55 lakh), though cheaper than Manipal MAHE (Rs 2.2 lakh) and <a href="/universities/christ-university-online">Christ University</a> (Rs 2.3 lakh). The question is whether the Amity brand and industry tie-ups justify the premium over Amrita, which has a higher NIRF ranking and NAAC A plus plus accreditation at lower cost.</p>
+<p>Compared to the market, Amity University online MCA at Rs 1.99 lakh is more expensive than Amrita (Rs 1.4 lakh) and Chandigarh University (Rs 1.55 lakh), though cheaper than Manipal MAHE (Rs 2.2 lakh) and <a href="/universities/christ-university-online">Christ University</a> (Rs 2.3 lakh). The question is whether the Amity brand and industry tie-ups justify the premium over Amrita, which has a higher NIRF ranking and NAAC A plus plus accreditation at lower cost.</p>
 
 <h2>Amity Online MCA vs Top Competitors 2026 (Detailed)</h2>
 
@@ -27574,7 +27574,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <caption>Amity Online MCA vs key competitors May 2026</caption>
   <thead><tr><th>University</th><th>NAAC</th><th>NIRF Rank</th><th>Total Fees</th><th>USP</th></tr></thead>
   <tbody>
-    <tr><td>Amity University Online</td><td>A plus</td><td>University 50-plus</td><td>Rs 1.70 lakh</td><td>HCLTech, Paytm, TCS iON industry tracks</td></tr>
+    <tr><td>Amity University Online</td><td>A plus</td><td>University 50-plus</td><td>Rs 1.99 lakh</td><td>HCLTech, Paytm, TCS iON industry tracks</td></tr>
     <tr><td>Amrita Vishwa Vidyapeetham Online</td><td>A plus plus</td><td>University 8</td><td>Rs 1.40 lakh</td><td>Top NIRF rank, NAAC A plus plus</td></tr>
     <tr><td>Manipal MAHE Online</td><td>A plus plus</td><td>University 3</td><td>Rs 2.20 lakh</td><td>Institution of Eminence, premier brand</td></tr>
     <tr><td>Christ University Online</td><td>A plus plus</td><td>University 51-100</td><td>Rs 2.30 lakh</td><td>Bengaluru ecosystem, strong placement</td></tr>
@@ -27624,7 +27624,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div style="background:rgba(245,158,11,0.07);border:1.5px solid rgba(245,158,11,0.22);border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0"><p style="margin:0 0 0.5rem;font-weight:700;color:#0B1D35">⚠️ Verify before you enrol:</p><p style="margin:0;color:#3B5068">Amity Online operates separately from Amity University's campus programs. Confirm the specific online MCA program appears on the UGC-DEB approved list at ugcdeb.gov.in before paying any fees.</p></div>
 <h2>Is Amity Online MCA Worth the Fee?</h2>
 <p>Straightforward answer: it depends on your target employer and specialisation choice.</p>
-<p>If you are targeting FinTech, cybersecurity, or enterprise software roles, and brand name matters in your specific hiring context, the Amity online MCA fees at Rs 1.7 lakh are defensible. The Paytm and HCLTech co-developed tracks are genuine differentiators that few other MCA online programs offer.</p>
+<p>If you are targeting FinTech, cybersecurity, or enterprise software roles, and brand name matters in your specific hiring context, the Amity online MCA fees at Rs 1.99 lakh are defensible. The Paytm and HCLTech co-developed tracks are genuine differentiators that few other MCA online programs offer.</p>
 <p>If brand recognition matters less and you want better institutional credibility per rupee spent, Amrita Vishwa Vidyapeetham (NIRF Rank 8, NAAC A plus plus, Rs 1.4 lakh) or Sikkim Manipal (Rs 1.1 lakh, NAAC A plus, Manipal brand) give you more for less. See the full <a href="/blog/online-mca-course-india" style="color:inherit;text-decoration:underline;text-underline-offset:2px">online MCA comparison guide</a> for a neutral breakdown.</p>
 
 <h2>Amity Online MCA Career Acceleration Tips 2026</h2>
@@ -27653,7 +27653,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>Amity Online MCA FAQ 2026</h2>
 
 <ul>
-  <li><strong>Is Amity Online MCA worth Rs 1.7 lakh?:</strong> For premium specialisations (FinTech, Cyber, AI) targeting specific sectors, yes. For generic MCA, Amrita or Sikkim Manipal offer better value.</li>
+  <li><strong>Is Amity Online MCA worth Rs 1.99 lakh?:</strong> For premium specialisations (FinTech, Cyber, AI) targeting specific sectors, yes. For generic MCA, Amrita or Sikkim Manipal offer better value.</li>
   <li><strong>Can BCA graduates apply for Amity Online MCA?:</strong> Yes. Standard eligibility BCA with 50 percent aggregate or any graduation with maths at 10+2 level.</li>
   <li><strong>Is Amity Online MCA same as Amity Campus MCA?:</strong> Same degree, different delivery mode plus placement support. Online is lateral, campus has dedicated placement.</li>
   <li><strong>Does Amity Online MCA provide internship?:</strong> Yes for select industry co-developed specialisations. Standard programmes are self-driven.</li>
@@ -27661,14 +27661,14 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>How does Amity Online MCA compare to UGC online programmes from IGNOU?:</strong> Amity has stronger brand pull at IT services plus banking. IGNOU is cheapest plus government recognised.</li>
 </ul>
 
-<p>Amity Online MCA in 2026 is a credible mid-premium online MCA option with strong industry co-developed specialisations. The Rs 1.7 lakh investment is defensible for AI plus FinTech plus Cyber Security plus Software Engineering tracks targeting specific employer sectors. For budget-constrained learners or those prioritising NIRF rank, Amrita or LPU offer alternative routes. Match your specialisation choice plus target sector plus brand pull required against the Amity premium. Stack one premium certification plus build active GitHub portfolio plus LinkedIn presence during the 2-year programme for maximum career impact.</p>
+<p>Amity Online MCA in 2026 is a credible mid-premium online MCA option with strong industry co-developed specialisations. The Rs 1.99 lakh investment is defensible for AI plus FinTech plus Cyber Security plus Software Engineering tracks targeting specific employer sectors. For budget-constrained learners or those prioritising NIRF rank, Amrita or LPU offer alternative routes. Match your specialisation choice plus target sector plus brand pull required against the Amity premium. Stack one premium certification plus build active GitHub portfolio plus LinkedIn presence during the 2-year programme for maximum career impact.</p>
 
 <h2>Amity Online MCA Application Timeline 2026</h2>
 
 <ol>
   <li><strong>March to May 2026:</strong> Research programme specialisations. Attend Amity Online webinars. Decide between July or January batch.</li>
   <li><strong>June 2026:</strong> Submit application at amityonline.com. Pay registration fee (approximately Rs 1,000).</li>
-  <li><strong>July 2026:</strong> First semester fee payment (Rs 42,500). LMS access activated.</li>
+  <li><strong>July 2026:</strong> First semester fee payment (Rs 49,800). LMS access activated.</li>
   <li><strong>July to October 2026:</strong> Semester 1 (foundational modules common across specialisations).</li>
   <li><strong>November 2026 to February 2027:</strong> Semester 2 (specialisation deep-dive begins).</li>
   <li><strong>August 2026 onwards:</strong> Start parallel certification (AWS, Coursera Deep Learning, Tableau).</li>

@@ -256,13 +256,13 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MCA',
     defaultSpec: 'general',
     faqs: [
-      { q: 'Is Amity or LPU better for online MCA?', a: 'Amity MCA costs Rs 1,99,000 with 6 specialisations (AI/ML, FinTech, Cyber Security, Software Engg, Blockchain). LPU MCA costs Rs 1,08,000 with 6 specs (AR/VR, ML, Data Science, Cybersecurity, Full Stack, Cloud). LPU is nearly half the cost.' },
-      { q: 'What is the fee difference for MCA?', a: 'Amity MCA costs Rs 1,99,000. LPU MCA costs Rs 1,08,000. LPU saves Rs 91,000. Significant difference for the same 2-year UGC-DEB approved MCA.' },
+      { q: 'Is Amity or LPU better for online MCA?', a: 'They differ most on specialisation. Amity runs General, Artificial Intelligence and Machine Learning, Financial Technology and AI, Cyber Security, Software Engineering and Blockchain Technology. LPU runs AR/VR (Game Development), Machine Learning and AI, Data Science, Cybersecurity, Full Stack Web Development and Cloud Computing. FinTech and Blockchain are Amity only. AR/VR is LPU only. On cost, read the fee table above rather than any rule of thumb.' },
+      { q: 'How do I confirm what each one will actually cost me?', a: 'Use the fee table above as indicative, then confirm on the university portal. Both price in ways a single number hides. Amity quotes a lower total for one-time payment than for semester-wise instalments. LPU quotes a lower per-semester figure under a Student Grant that carries an end date, and its full fee applies once that lapses. Ask for the figure that applies to your intake and your payment mode before you transfer money.' },
       { q: 'Which has better NAAC grade?', a: 'LPU has NAAC A++ (highest). Amity has NAAC A+. LPU scores higher on NAAC accreditation.' },
       { q: 'Does Amity MCA offer FinTech specialisation?', a: 'Yes. Amity is one of the few online MCA programmes with a Financial Technology and AI specialisation. LPU does not offer FinTech but has AR/VR (Game Development) which is also unique.' },
     ],
     verdictA: ['You want FinTech or Blockchain specialisation in MCA', 'QS ranking and WASC (USA) accreditation matter for your career', 'Your target is NCR-based IT employers'],
-    verdictB: ['Budget is your priority (save Rs 91,000 vs Amity)', 'NAAC A++ is a priority credential for IT sector jobs', 'You want AR/VR or Full Stack Web Development specialisation'],
+    verdictB: ['The fee in the table above is what decides it for you', 'NAAC grade is a priority credential for your IT sector target, and LPU holds the stronger of the two', 'You want AR/VR or Full Stack Web Development specialisation'],
   },
   'manipal-jaipur-vs-chandigarh-mca': {
     uniA: 'manipal-university-jaipur-online',
