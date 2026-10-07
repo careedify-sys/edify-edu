@@ -9,6 +9,77 @@ the fix by accident.
 
 ---
 
+## 2026-10-07 · One MUJ MBA fee, after three contradictory ones
+
+The site carried **three mutually contradictory prices for the same
+programme**, plus two numbers derived from the wrong one. 61 figures across 32
+posts.
+
+| family | count | what it actually was |
+|---|---|---|
+| `Rs 1.66-1.80 lakh` / `1,66,000` | 24 | an old range |
+| `Rs 1.75 lakh` / `1,75,000` | 19 | an old single list price |
+| `~₹1,48,750` | 6 | **15 percent off the OLD list price** |
+| `EMI Rs 7,292/month` | 2 | 1,75,000 / 24 |
+| per-semester `₹43,750` | 4 | 1,75,000 / 4 |
+
+**Truth, owner-verified from the onlinemanipal.com fee panel on 2026-10-07:**
+Rs 1,80,000 list over four semesters (Rs 45,000 per semester), Rs 1,53,000
+payable after the standing 15 percent concession, no-cost EMI from
+Rs 6,375/month, Rs 500 application fee separate.
+
+**Why this mattered beyond accuracy.** `muj-online-mba-review-2026` and
+`smu-online-mba-review` each carried **two different families internally**, so
+the same post quoted two prices for one programme. A reader comparing two Edify
+pages got different answers.
+
+**The derived numbers are the part that would have been missed.** A sweep for
+the two headline families leaves `₹1,48,750`, `Rs 7,292/month` and
+`₹43,750` behind, and each of those is arithmetic on a number that no
+longer exists. The per-semester cells became Rs 45,000, which is the portal's
+own figure and restores 45,000 x 4 = 1,80,000. The EMI became "from
+Rs 6,375/month", the only EMI the portal states. **Nothing was recomputed**, per
+[[feedback_never_derive_fees]].
+
+**Two claims moved with the figures.**
+
+1. The Manipal-group bar chart in `smu-online-mba-review` scales bar widths at
+   487px per Rs 2,92,000. MUJ's bar was 292px *because* it meant 1,75,000, so
+   the label could not change alone: the bar went to **300px** and its centred
+   label from `x=206` to `x=210`. Changing the text and leaving the rect would
+   have drawn Rs 1,80,000 at the width of Rs 1,75,000, which is a chart that
+   lies in a way no fee gate can see.
+2. My own first pass left two `or`s in the SMU/MUJ/MAHE comparison sentence.
+   Fixed in the same commit.
+
+**Claims checked and left alone because they still hold:** "SMU is the most
+affordable Manipal-group option" (1,20,000 against 1,53,000), the `Rs 1L to
+Rs 2L` and `Rs 1.5L to Rs 2.5L` buckets, and the ranked tables in
+`best-online-mba-colleges-india-2026` and `online-mba-with-placement-india-2026`,
+**which are ordered editorially and not by fee**, so no rank moved. That had to
+be read off the tables; it is not inferable from the fee column.
+
+**Six figures on MUJ-naming lines were deliberately left**, because proximity to
+the word MUJ is not attribution: DY Patil Navi Mumbai and JAIN share one
+comparison line, UPES and JIIT account for three in the HR post, and
+`Rs 90K to 1.66 lakh` is MUJ's own **undergraduate** row for BA/BBA/B.Com/BCA.
+`online-mba-supply-chain-management-india-2026` already carried the correct pair
+and is untouched. A fourth-family sweep cleared `₹1,75,120` (Amity BBA),
+`₹1,31,250` (Chandigarh net), `₹1,35,000` (JAIN and Sharda) and
+`₹1,39,500` (MUJ's own BBA/BCA, correct).
+
+**Verified.** `check-blog-fees` went **DOWN, 2,425 to 2,408** unverified, with
+nothing added to the allowlist to achieve it; MATCH rose 1,087 to 1,109 and the
+gate re-staged its own baseline. All gates green. Production, two cache-busted
+rounds across seven posts: 7/7 pass, zero stale MUJ MBA figures, and the SVG
+serving `width="300"` with `x="210"`.
+
+**Still open, deliberately.** In that same SVG, SMU's bar is 185px where the
+scale implies 200px for Rs 1,20,000. It is another university's bar and was out
+of scope for this commit.
+
+---
+
 ## 2026-10-07 · The 14 legitimacy posts come back, the verify fold did not pay
 
 Reverts the consolidation `f8d8b5c` shipped on 14 Sep, which 308'd
