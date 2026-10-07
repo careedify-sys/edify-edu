@@ -147,6 +147,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       programPage: '/universities/ignou-online/mba',
       blogs: [
         { slug: 'ignou-online-mba-review-2026', label: 'IGNOU Online MBA Review 2026: Fees, Admission and Honest Verdict' },
+        { slug: 'is-ignou-fake-or-legit-2026', label: 'Is IGNOU Fake or Legit? The Real Question Is Not the One You Are Asking' },
       ],
     },
   },
@@ -159,6 +160,21 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       verifyPage: '/verify/jamia-hamdard-online',
       blogs: [
         { slug: 'jamia-hamdard-mba-2026', label: 'Jamia Hamdard Online MBA Review 2026: Worth It or Skip It?' },
+        { slug: 'is-jamia-hamdard-online-fake-or-legit-2026', label: 'Is Jamia Hamdard Online Fake or Legit? And the Ranking Number Nobody Shows You' },
+      ],
+    },
+  },
+  // Added 2026-10-07 with the restore of the 14 legitimacy posts. Integral was
+  // the only one of the 14 with no UNIVERSITY_PROGRAM_LINKS key at all, so its
+  // post emitted no CollegeOrUniversity schema even before the consolidation.
+  'integral-university-online': {
+    mba: {
+      universityName: 'Integral University Online',
+      shortName: 'Integral University',
+      programPage: '/universities/integral-university-online/mba',
+      verifyPage: '/verify/integral-university-online',
+      blogs: [
+        { slug: 'is-integral-university-online-fake-or-legit-2026', label: 'Is Integral University Online Fake or Legit? And the NIRF Rank That Does Not Apply to You' },
       ],
     },
   },
@@ -338,6 +354,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       verifyPage: '/verify/deen-dayal-upadhyay-gorakhpur-university-online',
       blogs: [
         { slug: 'ddu-gorakhpur-online-mba-review', label: 'DDU Gorakhpur Online MBA Review 2026: Rs 52,500 From a NAAC A++ University' },
+        { slug: 'is-ddu-gorakhpur-online-fake-or-legit-2026', label: 'Is DDU Gorakhpur Online Fake or Legit? A NAAC A++ Degree at a Price That Makes People Doubt It' },
       ],
     },
   },

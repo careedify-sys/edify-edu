@@ -1035,7 +1035,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 7,
     targetKeyword: "is Mangalayatan University online fake or legit",
     relatedUniversities: ["mangalayatan-university-online"],
-    status: "redirected",
+    // 2026-10-07: restored after the f8d8b5c consolidation of 2026-09-14.
+    // Measured, 6 Sep to 3 Oct against 28 Sep to 4 Oct, per day: the 14 blog and
+    // verify pairs fell 55% on impressions and 71% on clicks while the site fell
+    // 20% and 29%, and the 14 verify targets sit at 0.51% CTR, not the 1.84% the
+    // consolidation assumed. audits/spam-update-decline-2026-10-06.md
+    status: "published",
     author: "Rishi Kumar",
     ctaTitle: "Compare Mangalayatan Against Other Online Universities",
     ctaDesc: "See UGC-DEB entitlement, NAAC cycle and CGPA, and NIRF position side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
@@ -1157,7 +1162,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 8,
     targetKeyword: "is Sharda University online fake or legit",
     relatedUniversities: ["sharda-university-online"],
-    status: "redirected",
+    // 2026-10-07: restored after the f8d8b5c consolidation of 2026-09-14.
+    // Measured, 6 Sep to 3 Oct against 28 Sep to 4 Oct, per day: the 14 blog and
+    // verify pairs fell 55% on impressions and 71% on clicks while the site fell
+    // 20% and 29%, and the 14 verify targets sit at 0.51% CTR, not the 1.84% the
+    // consolidation assumed. audits/spam-update-decline-2026-10-06.md
+    status: "published",
     author: "Rishi Kumar",
     ctaTitle: "Compare Sharda Against Other Online Universities",
     ctaDesc: "See UGC-DEB entitlement, NAAC CGPA and NIRF category ranks side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
@@ -1291,7 +1301,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 8,
     targetKeyword: "is NMIMS online fake or legit",
     relatedUniversities: ["nmims-online"],
-    status: "redirected",
+    // 2026-10-07: restored after the f8d8b5c consolidation of 2026-09-14.
+    // Measured, 6 Sep to 3 Oct against 28 Sep to 4 Oct, per day: the 14 blog and
+    // verify pairs fell 55% on impressions and 71% on clicks while the site fell
+    // 20% and 29%, and the 14 verify targets sit at 0.51% CTR, not the 1.84% the
+    // consolidation assumed. audits/spam-update-decline-2026-10-06.md
+    status: "published",
     author: "Rishi Kumar",
     ctaTitle: "Compare NMIMS Against Other Online Universities",
     ctaDesc: "See UGC-DEB entitlement, NAAC grades and NIRF category ranks side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
@@ -1429,7 +1444,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 7,
     targetKeyword: "is Parul University online fake or legit",
     relatedUniversities: ["parul-university-online"],
-    status: "redirected",
+    // 2026-10-07: restored after the f8d8b5c consolidation of 2026-09-14.
+    // Measured, 6 Sep to 3 Oct against 28 Sep to 4 Oct, per day: the 14 blog and
+    // verify pairs fell 55% on impressions and 71% on clicks while the site fell
+    // 20% and 29%, and the 14 verify targets sit at 0.51% CTR, not the 1.84% the
+    // consolidation assumed. audits/spam-update-decline-2026-10-06.md
+    status: "published",
     author: "Rishi Kumar",
     ctaTitle: "Compare Parul Against Other Online Universities",
     ctaDesc: "See accreditation, NIRF category ranks and fees side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
@@ -1584,7 +1604,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 7,
     targetKeyword: "is DDU Gorakhpur online fake or legit",
     relatedUniversities: ["deen-dayal-upadhyay-gorakhpur-university-online"],
-    status: "redirected",
+    // 2026-10-07: restored after the f8d8b5c consolidation of 2026-09-14.
+    // Measured, 6 Sep to 3 Oct against 28 Sep to 4 Oct, per day: the 14 blog and
+    // verify pairs fell 55% on impressions and 71% on clicks while the site fell
+    // 20% and 29%, and the 14 verify targets sit at 0.51% CTR, not the 1.84% the
+    // consolidation assumed. audits/spam-update-decline-2026-10-06.md
+    status: "published",
     author: "Rishi Kumar",
     ctaTitle: "Compare DDU Gorakhpur Against Other Online Universities",
     ctaDesc: "See accreditation, approval status and fees side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
@@ -1753,7 +1778,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 7,
     targetKeyword: "is Integral University online fake or legit",
     relatedUniversities: ["integral-university-online"],
-    status: "redirected",
+    // 2026-10-07: restored after the f8d8b5c consolidation of 2026-09-14.
+    // Measured, 6 Sep to 3 Oct against 28 Sep to 4 Oct, per day: the 14 blog and
+    // verify pairs fell 55% on impressions and 71% on clicks while the site fell
+    // 20% and 29%, and the 14 verify targets sit at 0.51% CTR, not the 1.84% the
+    // consolidation assumed. audits/spam-update-decline-2026-10-06.md
+    status: "published",
     author: "Rishi Kumar",
     ctaTitle: "Compare Integral Against Other Online Universities",
     ctaDesc: "See accreditation, NIRF category ranks and fees side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
@@ -1905,7 +1935,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 7,
     targetKeyword: "is Jamia Hamdard online fake or legit",
     relatedUniversities: ["jamia-hamdard-online"],
-    status: "redirected",
+    // 2026-10-07: restored after the f8d8b5c consolidation of 2026-09-14.
+    // Measured, 6 Sep to 3 Oct against 28 Sep to 4 Oct, per day: the 14 blog and
+    // verify pairs fell 55% on impressions and 71% on clicks while the site fell
+    // 20% and 29%, and the 14 verify targets sit at 0.51% CTR, not the 1.84% the
+    // consolidation assumed. audits/spam-update-decline-2026-10-06.md
+    status: "published",
     author: "Rishi Kumar",
     ctaTitle: "Compare Jamia Hamdard Against Other Online Universities",
     ctaDesc: "See accreditation, NIRF category ranks and fees side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
@@ -2057,7 +2092,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 7,
     targetKeyword: "is IGNOU fake or legit",
     relatedUniversities: ["ignou-online"],
-    status: "redirected",
+    // 2026-10-07: restored after the f8d8b5c consolidation of 2026-09-14.
+    // Measured, 6 Sep to 3 Oct against 28 Sep to 4 Oct, per day: the 14 blog and
+    // verify pairs fell 55% on impressions and 71% on clicks while the site fell
+    // 20% and 29%, and the 14 verify targets sit at 0.51% CTR, not the 1.84% the
+    // consolidation assumed. audits/spam-update-decline-2026-10-06.md
+    status: "published",
     author: "Rishi Kumar",
     ctaTitle: "Compare IGNOU Against Private Online Universities",
     ctaDesc: "See accreditation, approval status and fees side by side. Public UGC, NAAC and NIRF data only, no paid rankings.",
@@ -2212,7 +2252,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 7,
     targetKeyword: "is Galgotias University online fake or legit",
     relatedUniversities: ["galgotias-university-online"],
-    status: "redirected",
+    // 2026-10-07: restored after the f8d8b5c consolidation of 2026-09-14.
+    // Measured, 6 Sep to 3 Oct against 28 Sep to 4 Oct, per day: the 14 blog and
+    // verify pairs fell 55% on impressions and 71% on clicks while the site fell
+    // 20% and 29%, and the 14 verify targets sit at 0.51% CTR, not the 1.84% the
+    // consolidation assumed. audits/spam-update-decline-2026-10-06.md
+    status: "published",
     author: "Rishi Kumar",
     ctaTitle: "Check Galgotias Against Other Online Universities",
     ctaDesc: "Compare accreditation, approval status and fees across universities. Public UGC, NAAC and NIRF data only, no paid rankings.",
@@ -7851,7 +7896,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 12,
     targetKeyword: 'is manipal university jaipur fake or legit',
     relatedUniversities: ['manipal-university-jaipur-online'],
-    status: 'redirected' as const,
+    // 2026-10-07: restored after the f8d8b5c consolidation of 2026-09-14.
+    // Measured, 6 Sep to 3 Oct against 28 Sep to 4 Oct, per day: the 14 blog and
+    // verify pairs fell 55% on impressions and 71% on clicks while the site fell
+    // 20% and 29%, and the 14 verify targets sit at 0.51% CTR, not the 1.84% the
+    // consolidation assumed. audits/spam-update-decline-2026-10-06.md
+    status: 'published' as const,
     heroImage: 'https://images.pexels.com/photos/37145891/pexels-photo-37145891.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@mohammad-rashid-raza-439663678" target="_blank" rel="noopener nofollow">Mohammad Rashid Raza</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     heroImageAlt: 'View of a modern red-brick educational campus in India during daytime, showcasing architecture and greenery.',
@@ -8065,7 +8115,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Is MUJ same as MAHE Manipal?:</strong> No. Separate universities. MUJ is Jaipur. MAHE is Karnataka.</li>
 </ul>
 
-<p>For 2026 working professionals considering MUJ Online MBA at Rs 1.66-1.80 lakh, the credential is genuine, recognised, and credible. Match programme to your career stage plus sector target for maximum 5-year outcome.</p>
+<p>For 2026 working professionals considering the MUJ Online MBA, the credential is genuine, recognised, and credible. Fees move with each intake, so confirm the current figure on the Online Manipal portal before you pay. Match programme to your career stage plus sector target for maximum 5-year outcome.</p>
 
 <h2>How to Verify Any University Legitimacy 2026</h2>
 
@@ -8077,7 +8127,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Step 5:</strong> Talk to 2-3 alumni for real experience verification.</li>
 </ol>
 
-<p>Use this 5-step framework before paying for any online programme. The 30-minute verification protects your 2-year, Rs 1-3 lakh investment from fraudulent universities. MUJ passes all 5 checks. The credential is legitimate plus career-valuable. Apply this verification framework to any university before paying any fees in the online MBA ecosystem.</p>
+<p>Use this 5-step framework before paying for any online programme. The 30-minute verification protects a two-year investment from fraudulent universities. MUJ passes all 5 checks. The credential is legitimate plus career-valuable. Apply this verification framework to any university before paying any fees in the online MBA ecosystem.</p>
 
 <p>The Indian higher education ecosystem in 2026 has both legitimate universities and confusing similar-named entities. Smart verification at university selection stage protects against fraud plus low-quality credentials. The 30-minute upfront effort saves years of regret from wrong programme choice. MUJ plus other Manipal universities are all legitimate plus career-valuable when matched to right career stage. Match credential plus career goals for measurable 5-year career outcomes. Trust verified data over marketing claims for credible choices.</p>
 
@@ -47164,7 +47214,12 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
     readTime: 13,
     targetKeyword: 'is amity university online fake',
     relatedUniversities: ['amity-university-online'],
-    status: 'redirected' as const,
+    // 2026-10-07: restored after the f8d8b5c consolidation of 2026-09-14.
+    // Measured, 6 Sep to 3 Oct against 28 Sep to 4 Oct, per day: the 14 blog and
+    // verify pairs fell 55% on impressions and 71% on clicks while the site fell
+    // 20% and 29%, and the 14 verify targets sit at 0.51% CTR, not the 1.84% the
+    // consolidation assumed. audits/spam-update-decline-2026-10-06.md
+    status: 'published' as const,
     heroImage: 'https://images.pexels.com/photos/159490/yale-university-landscape-universities-schools-159490.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@pixabay" target="_blank" rel="noopener nofollow">Pixabay</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     heroImageAlt: 'Wide-angle daytime shot of a modern university campus building, symbolising formal higher education.',
@@ -47392,7 +47447,12 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
     readTime: 14,
     targetKeyword: 'is chandigarh university online fake',
     relatedUniversities: ['chandigarh-university-online'],
-    status: 'redirected' as const,
+    // 2026-10-07: restored after the f8d8b5c consolidation of 2026-09-14.
+    // Measured, 6 Sep to 3 Oct against 28 Sep to 4 Oct, per day: the 14 blog and
+    // verify pairs fell 55% on impressions and 71% on clicks while the site fell
+    // 20% and 29%, and the 14 verify targets sit at 0.51% CTR, not the 1.84% the
+    // consolidation assumed. audits/spam-update-decline-2026-10-06.md
+    status: 'published' as const,
     heroImage: 'https://images.pexels.com/photos/159490/yale-university-landscape-universities-schools-159490.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@pixabay" target="_blank" rel="noopener nofollow">Pixabay</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     heroImageAlt: 'Wide-angle daytime shot of a modern university campus building, symbolising formal higher education.',
@@ -47624,7 +47684,12 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
     readTime: 15,
     targetKeyword: 'is lpu online fake',
     relatedUniversities: ['lovely-professional-university-online'],
-    status: 'redirected' as const,
+    // 2026-10-07: restored after the f8d8b5c consolidation of 2026-09-14.
+    // Measured, 6 Sep to 3 Oct against 28 Sep to 4 Oct, per day: the 14 blog and
+    // verify pairs fell 55% on impressions and 71% on clicks while the site fell
+    // 20% and 29%, and the 14 verify targets sit at 0.51% CTR, not the 1.84% the
+    // consolidation assumed. audits/spam-update-decline-2026-10-06.md
+    status: 'published' as const,
     heroImage: 'https://images.pexels.com/photos/159490/yale-university-landscape-universities-schools-159490.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@pixabay" target="_blank" rel="noopener nofollow">Pixabay</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     heroImageAlt: 'Modern university campus building in daytime, symbolising formal higher education.',
@@ -47868,7 +47933,12 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
     readTime: 16,
     targetKeyword: 'is dy patil online mba fake',
     relatedUniversities: ['dr-dy-patil-vidyapeeth-online'],
-    status: 'redirected' as const,
+    // 2026-10-07: restored after the f8d8b5c consolidation of 2026-09-14.
+    // Measured, 6 Sep to 3 Oct against 28 Sep to 4 Oct, per day: the 14 blog and
+    // verify pairs fell 55% on impressions and 71% on clicks while the site fell
+    // 20% and 29%, and the 14 verify targets sit at 0.51% CTR, not the 1.84% the
+    // consolidation assumed. audits/spam-update-decline-2026-10-06.md
+    status: 'published' as const,
     heroImage: 'https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@pixabay" target="_blank" rel="noopener nofollow">Pixabay</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     heroImageAlt: 'University campus building with clear sky, symbolising formal higher education in India.',
