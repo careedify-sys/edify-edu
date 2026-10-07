@@ -9,6 +9,94 @@ the fix by accident.
 
 ---
 
+## 2026-10-07 · The 14 legitimacy posts come back, the verify fold did not pay
+
+Reverts the consolidation `f8d8b5c` shipped on 14 Sep, which 308'd
+`/blog/is-{uni}-fake-or-legit-2026` onto `/verify/{uni}` for 13 posts, plus IGNOU
+in `015ed00` the next day.
+
+**Why the fold was made, and why that reasoning was not wrong.** Both page types
+answered one question, Google shows about one result per domain per query, and on
+6-12 Sep the blog cluster held 3,261 impressions at 0.71% CTR while verify held
+2,233 at 1.84% and outranked the blog in 8 of 9 head-to-heads. Spending the
+impressions on the page that converted better was the right call on that evidence.
+
+**Why it is being undone.** Measured 6 Sep-3 Oct against 28 Sep-4 Oct, per day,
+the 14 blog and verify pairs fell **55% on impressions and 71% on clicks** while
+the site fell 20% and 29%. The 14 verify targets now hold **786 impressions and 4
+clicks, a 0.51% CTR**, level with the site and nowhere near 1.84%.
+`/verify/amity-online` earned no impressions at all.
+
+**The measurement error that let it stand for 23 days.** The 1.84% belonged to the
+**whole `/verify` segment**, which is carried by its other 56 pages. It was never a
+measurement of these 14 destinations. I quoted the segment figure repeatedly as
+proof the fold had worked, including in `project_verify_consolidation`. A segment
+average does not validate a specific move inside it. Check the pages you changed,
+not the folder they live in.
+
+**Why removing the redirects alone would have shipped 14 hard 404s.** The redirect
+was one of four gates, and `status:'redirected'` drove the other three.
+`generateStaticParams()` calls `getPublishedPosts()`, and with
+`dynamicParams = false` any slug outside it 404s at the routing layer. The page
+component returns `notFound()`. `app/sitemap.ts` uses `getPublishedPosts()`. And
+`generateMetadata` served `index: false, follow: false` with a canonical pointing
+at `/blog`. **The status flip is what restores these posts; the redirect removal
+only stops the hop.** A task spec that said "remove the 14 redirects" would have
+produced 14 404s.
+
+**What changed.** 14 statuses flipped to `'published'` in `lib/blog.ts`, each with a
+dated comment carrying the measurement. 14 entries deleted from `next.config.js`.
+4 posts registered in `UNIVERSITY_PROGRAM_LINKS` that had none, so their
+`CollegeOrUniversity` schema now emits: DDU Gorakhpur, IGNOU, Jamia Hamdard, and
+Integral, which had no university key at all. 10 of the 14 were already registered.
+
+**Two unverifiable fee figures came out of the MUJ post,** which re-entered
+`check-blog-fees` scope when its status flipped. `Rs 1.66-1.80 lakh` was an
+MBA-specific claim from 23 April. `lib/data.ts` holds MUJ at Rs 1.53L-1.8L
+verified against onlinemanipal.com on 2026-10-06, but that figure is
+university-wide and `programFees` carries no `mba` entry, so nothing in the repo
+can confirm an MBA range. `Rs 1-3 lakh` was a generic illustrative range the
+extractor attributed by slug fallback, not a fee claim. Neither could be
+allowlisted honestly, because that contract wants a source and a verified_date.
+Both are gone and the MBA sentence carries the portal directive instead.
+
+**Open for Rishi, not a gate.** The restore puts about **48 MISMATCH and 46
+UNRESOLVED** fee figures back into public view across the other 13 posts. All are
+grandfathered or allowlisted, which is why `check-blog-fees` passes at 2,425
+unchanged, but they were out of sight for 23 days and are not now. Heaviest: IGNOU
+15 MISMATCH, DDU Gorakhpur 16 UNRESOLVED, Chandigarh 8 plus 5, DY Patil 6 plus 10,
+LPU 10 UNRESOLVED, Galgotias 6, Parul 6.
+
+**What is deliberately kept.** `'redirected'` stays in the status union. The 27-line
+explanatory block in `next.config.js` stays, with a dated `REVERTED` note on top,
+because a comment describing behaviour the code no longer has is how a wrong
+conclusion gets repeated.
+
+**Two hand-corrected destinations were already right in the data** and are
+unchanged: DY Patil resolves to `dr-dy-patil-vidyapeeth-online`, the Pune entity,
+and Manipal to `manipal-university-jaipur-online`, not MAHE. Production schema
+confirms it renders as "Dr. D.Y. Patil Vidyapeeth, Pune Online (DPU-COL)" and
+"Manipal University Jaipur Online".
+
+**A finding that made the revert cheaper than expected.** 5 of the 14 blog URLs
+were still earning impressions (279 over 7 days) while serving a 308, so Google had
+not fully consolidated them onto verify after 23 days.
+
+**Verified.** Local acceptance on a production build and three cache-busted
+production rounds, all 14: HTTP 200, exactly one `<h1>`, exactly one
+`<meta name="robots">` = `index, follow`, self-canonical, present in
+`/sitemap.xml`, and 200 with no redirect hop. All 14 `/verify/` targets still 200
+and untouched. `/programs/mba/specializations/healthcare-management` still 308.
+Sitemap **2,981 to 2,995**, exactly +14. `check-sitemap-vs-404` redirect sources
+667 to 653, also exactly 14.
+
+**What guards it.** `check-sitemap-vs-404` reads both redirect tables and fails if a
+sitemap URL is also a redirect source, so the two can never disagree again.
+`check-blog-fees` is what caught the MUJ figures, and it only catches them because
+status drives scope, which is the same coupling that made the 404 trap.
+
+---
+
 ## 2026-10-03 · The fonts now actually render
 
 Follow-up to the self-hosting commit, which recorded that neither font had ever reached a
