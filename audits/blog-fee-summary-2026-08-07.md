@@ -2,30 +2,30 @@
 
 Extractor v2 (structural attribution + range parsing + expanded NON_FEE).
 
-Total figures: **9560**
+Total figures: **9563**
 
 ## By classification
 
 | Class | Count |
 |---|---:|
-| MATCH | 1087 |
+| MATCH | 1089 |
 | MISMATCH | 780 |
 | SUPPRESSED | 9 |
 | ORPHAN | 44 |
 | UNRESOLVED | 1846 |
-| NON_FEE | 5794 |
+| NON_FEE | 5795 |
 
 ## By class × confidence
 
 | Class / Confidence | Count |
 |---|---:|
 | MATCH/high | 633 |
-| MATCH/low | 96 |
-| MATCH/medium | 358 |
+| MATCH/low | 97 |
+| MATCH/medium | 359 |
 | MISMATCH/high | 334 |
 | MISMATCH/low | 164 |
 | MISMATCH/medium | 282 |
-| NON_FEE/- | 5794 |
+| NON_FEE/- | 5795 |
 | ORPHAN/high | 34 |
 | ORPHAN/low | 2 |
 | ORPHAN/medium | 8 |
