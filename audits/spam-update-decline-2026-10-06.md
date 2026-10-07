@@ -353,3 +353,138 @@ than the wrong time to look at it. January intake applications run to April, so
 work shipped now is indexed and ranking when that demand arrives. Pairs with the
 Update 2 finding that the education side's next lever is rankings and coverage,
 not CTR.
+
+---
+
+# Update 3, 2026-10-07: the calculator is indexed, and the mechanism is the AI Overview
+
+Data: GSC Web export **Last 7 days, 2026-09-28 to 2026-10-04**, pulled 7 Oct. One
+day is new against Update 2, which ended 3 Oct. Coverage checked first:
+`Pages.csv` holds 185,444 impressions against a `Devices.csv` total of 184,308,
+so page shares are safe. `Queries.csv` holds 83,672 = **45.4%**, so query rows
+prove presence and never absence.
+
+## 4 October is the first up day
+
+| | 3 Oct | 4 Oct | change |
+|---|---|---|---|
+| Clicks | 83 | **95** | +14.5% |
+| Impressions | 19,894 | **22,247** | +11.8% |
+| Position | 8.2 | **7.8** | 0.4 better |
+
+Impressions, clicks and position all moved the right way together for the first
+time since 28 Sep. Weak on its own: 4 Oct is a Sunday and Sundays usually come
+in under the Saturday before them, so the direction matters more than the size.
+It is still the lowest Sunday in the six-month series (95 against 213, 131, 191,
+150 for the four before it).
+
+## The deindex question is settled: the page is indexed
+
+Update 2 left one owner-only test open, because four `site:` probes could not
+surface the cluster while the impression arithmetic said it could not be at
+zero. **The export answers it without needing URL Inspection.**
+
+`/tools/cgpa-calculator`, 28 Sep to 4 Oct: **103,497 impressions, 538 clicks,
+average position 6.81.** Its 6 Sep to 3 Oct figure was average position
+**6.81** — identical to two decimal places. A removed page does not hold 14,785
+impressions a day at an unchanged rank.
+
+So the `site:` miss was a container check and the arithmetic was the content
+check, and the arithmetic won. Same trap as the one recorded in
+`feedback_verify_content_not_container`. **Consolidation is advisable, not
+urgent.** Re-check serving confirmed it too, 7 Oct: the parent and a value page
+both 200 in under a second, `index, follow`, correct self-canonical, 157 KB of
+HTML, no `X-Robots-Tag`.
+
+## It is not a deep demotion either
+
+Per-row positions, 6 Sep-3 Oct against 28 Sep-4 Oct:
+
+| query | impr/day | clicks/day | CTR | position |
+|---|---|---|---|---|
+| cgpa to percentage | 3,599 -> 3,060 | 37.2 -> 26.6 | 1.03% -> 0.87% | 5.47 -> **5.97** |
+| cgpa | 803 -> 670 | 30.8 -> 21.7 | 3.84% -> 3.24% | 2.50 -> **2.45** |
+| cgpa to percentage calculator | 528 -> 408 | 3.7 -> 4.0 | 0.70% -> 0.98% | 6.59 -> **4.97** |
+| percentage to cgpa | 461 -> 269 | 4.8 -> 1.1 | 1.05% -> 0.42% | 6.17 -> **7.27** |
+
+Half a place on the head term, and one of the four improved. The 26 value pages
+move by under 0.5 in both directions. **Nothing here is a ranking collapse.**
+
+## What actually fell, and it is not one cluster
+
+Site daily averages: 6-28 Sep ran 199 clicks and 34,502 impressions at 0.576%
+CTR and position 7.47. 1-4 Oct ran **94 clicks and 21,817 impressions at 0.429%
+CTR and position 7.99.**
+
+Clicks fell in **every** segment, per day, 28d window against 7d window:
+
+| segment | impr/day | clicks/day | CTR |
+|---|---|---|---|
+| cgpa (27 pages) | 22,539 -> 17,950 (-20%) | 125.5 -> 86.4 (**-31%**) | 0.56% -> 0.48% |
+| blog (189) | 6,909 -> 5,200 (-25%) | 30.2 -> 22.7 (**-25%**) | 0.44% -> 0.44% |
+| universities (654) | 1,784 -> 1,702 (-5%) | 15.0 -> 11.0 (**-26%**) | 0.84% -> 0.65% |
+| tools-other (2) | 856 -> 824 (-4%) | 3.6 -> 2.7 (-24%) | 0.42% -> 0.33% |
+| verify (70) | 376 -> 411 (+9%) | 5.1 -> 4.6 (-10%) | 1.36% -> 1.11% |
+
+Two different shapes. The blog lost a quarter of its impressions at **exactly
+flat CTR**, so it lost coverage. The university pages held impressions and lost
+CTR. Neither is what a penalty aimed at one scaled-content template does.
+
+Breadth check, education pages with at least 140 impressions in the 28-day
+window so the 7-day export floor of 6 cannot truncate them: of **248** pages,
+**182 lost more than 10% of impressions, 32 gained, 34 flat, median -26%.**
+Broad and shallow, not concentrated.
+
+**Do not read the eight `/blog/is-{uni}-fake-or-legit-2026` rows at -100% as a
+regression.** They 308 to `/verify/{uni}`, confirmed live on 7 Oct, from the
+consolidation shipped 2026-09-14. The 28-day window opens 6 Sep and so holds
+eight pre-redirect days. That consolidation worked and is not in question.
+
+## The mechanism, observed on the live SERP
+
+CTR halving while position holds has one ordinary explanation: **GSC position
+counts rank among the organic results. It does not count pixels.** A result can
+sit at rank 1 and still be far below the fold.
+
+Checked on two head queries from two different clusters, 7 Oct, `gl=in`:
+
+- **`cgpa to percentage`** (Edify at GSC position 5.97, 0.87% CTR): an AI
+  Overview occupies the top of the SERP. The first organic result begins at
+  **pixel 613**. No Google calculator widget, which matches the Update 2 check.
+- **`bcom full form`** (Edify at GSC position **1.22**, **1.91%** CTR): an AI
+  Overview prints the complete answer, "The full form of B.Com is Bachelor of
+  Commerce", plus degree type, duration, core subjects and eligibility. It
+  cites BYJU'S, avsas.ac.in and Karpagam. **It does not cite Edify.** First
+  organic result at **pixel 613**.
+
+The second one carries the argument on its own. At position 1.22 nothing
+except SERP furniture can explain 1.91%. This is also the only reading that
+fits the fact seasonality could not touch: on **29 Sep the site took its
+highest impressions of the 28-day window, 34,168, while clicks fell 35% and CTR
+halved.** More people saw Edify and far fewer clicked, because the answer had
+moved above it. And it fits the -43.2% fall in AI-feature impressions: the
+overviews kept showing, Edify stopped being cited inside them.
+
+**Limits, stated plainly.** Two queries, one desktop render, unpersonalized,
+from outside India, where **89% of this site's impressions are mobile** and an
+overview covers proportionally more of the screen. And this observes 7 Oct, not
+29 Sep, so it explains the **level** of CTR rather than proving the **timing**
+of the change. The dating would need a SERP archive this project does not keep.
+
+## What this changes
+
+1. **Nothing is broken and nothing needs appealing.** Manual actions and
+   security were already clear, serving is clean, the cluster is indexed at an
+   unchanged rank.
+2. **The hold to ~15 Oct stands,** and now rests on evidence rather than
+   caution: positions held, so there is no ranking damage to repair by
+   restructuring.
+3. **Rewriting the 26 value pages will not recover these clicks.** The clicks
+   were taken by an answer printed above the results, not lost to a competitor.
+   Consolidation is still right for the duplication recorded in Update 1, which
+   is a separate argument and keeps its own timetable.
+4. **The queries to fund are the ones an overview cannot finish.** `/verify`
+   held CTR at 1.11% and gained impressions while everything else fell, and
+   Update 2 found it over-indexes AI citations at 2.6x its ranking share.
+   A formula restates in one line. "Is this degree valid, and what is this
+   university's current UGC-DEB and NAAC standing" does not.
