@@ -2,30 +2,30 @@
 
 Extractor v2 (structural attribution + range parsing + expanded NON_FEE).
 
-Total figures: **9563**
+Total figures: **9569**
 
 ## By classification
 
 | Class | Count |
 |---|---:|
-| MATCH | 1089 |
-| MISMATCH | 780 |
+| MATCH | 1109 |
+| MISMATCH | 763 |
 | SUPPRESSED | 9 |
 | ORPHAN | 44 |
 | UNRESOLVED | 1846 |
-| NON_FEE | 5795 |
+| NON_FEE | 5798 |
 
 ## By class × confidence
 
 | Class / Confidence | Count |
 |---|---:|
-| MATCH/high | 633 |
+| MATCH/high | 651 |
 | MATCH/low | 97 |
-| MATCH/medium | 359 |
-| MISMATCH/high | 334 |
-| MISMATCH/low | 164 |
-| MISMATCH/medium | 282 |
-| NON_FEE/- | 5795 |
+| MATCH/medium | 361 |
+| MISMATCH/high | 318 |
+| MISMATCH/low | 165 |
+| MISMATCH/medium | 280 |
+| NON_FEE/- | 5798 |
 | ORPHAN/high | 34 |
 | ORPHAN/low | 2 |
 | ORPHAN/medium | 8 |
@@ -39,10 +39,10 @@ Total figures: **9563**
 
 | slug | total | MATCH | MISMATCH | SUPPRESSED | ORPHAN | UNRESOLVED | NON_FEE |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| mba-fees-india-complete-guide-2026 | 276 | 21 | 23 | 1 | 0 | 49 | 182 |
+| mba-fees-india-complete-guide-2026 | 277 | 21 | 23 | 1 | 0 | 49 | 183 |
 | amity-online-bba-fees-2026 | 175 | 7 | 17 | 0 | 1 | 8 | 142 |
 | online-bba-fees-india-2026 | 170 | 3 | 3 | 0 | 0 | 55 | 109 |
-| mba-hr-management-online-india-2026 | 166 | 40 | 16 | 0 | 0 | 39 | 71 |
+| mba-hr-management-online-india-2026 | 166 | 42 | 14 | 0 | 0 | 39 | 71 |
 | online-bba-programs-india-2026 | 143 | 34 | 22 | 0 | 14 | 53 | 20 |
 | amity-online-mba-review-2026 | 130 | 9 | 9 | 0 | 0 | 24 | 88 |
 | online-mba-business-data-analytics-india-2026 | 125 | 33 | 7 | 0 | 0 | 40 | 45 |
