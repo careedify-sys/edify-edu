@@ -95,6 +95,16 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
+  // Pinterest domain verification, added 2026-10-07. `other` is how the Next
+  // metadata API emits a verification tag it has no named field for; it
+  // renders <meta name="p:domain_verify" content="..."/> into <head> on every
+  // page, which is what Pinterest checks. The token is a public claim code,
+  // not a secret, and is meant to be served in the HTML.
+  verification: {
+    other: {
+      'p:domain_verify': 'f0c36c7bb9e0b2f6b15f0940ff2712c4',
+    },
+  },
   alternates: { canonical: 'https://edifyedu.in' },
   icons: {
     icon: [
