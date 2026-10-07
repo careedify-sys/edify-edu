@@ -1329,7 +1329,16 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     // entities with entity-suffixed programme URLs.
     officialUrl: 'https://www.onlinemanipal.com',
     feeVerifiedOn: '2026-10-06',
-    programFees: { bca: { fee: 139500 }, mca: { fee: 158000 } },
+    // mba added 2026-10-07 from the onlinemanipal.com MUJ MBA fee panel, owner
+    // verified. fee is the payable total after the standing 15 percent
+    // concession, feeMax the list price: Rs 1,80,000 across four semesters,
+    // Rs 1,53,000 after concession. Carried as a range rather than the list
+    // price alone so getDisplayFee reaches rule 1 by agreement with pd.fees
+    // "₹1.53L–₹1.80L"; a bare fee: 180000 leaves the lower bound 15 percent
+    // out and only passes via the 10-25% drift fallback at fees.ts:284, whose
+    // stated rationale (trust per-programme pd.fees over a uni-wide reference)
+    // no longer applies once the reference is itself per-programme.
+    programFees: { mba: { fee: 153000, feeMax: 180000 }, bca: { fee: 139500 }, mca: { fee: 158000 } },
     logo: '/logos/university_logos/muj-logo.svg',
     name: 'Manipal University Jaipur (MUJ) Online',
     abbr: 'MUJOM',

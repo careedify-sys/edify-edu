@@ -8115,7 +8115,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Is MUJ same as MAHE Manipal?:</strong> No. Separate universities. MUJ is Jaipur. MAHE is Karnataka.</li>
 </ul>
 
-<p>For 2026 working professionals considering the MUJ Online MBA, the credential is genuine, recognised, and credible. Fees move with each intake, so confirm the current figure on the Online Manipal portal before you pay. Match programme to your career stage plus sector target for maximum 5-year outcome.</p>
+<p>For 2026 working professionals considering the MUJ Online MBA, the credential is genuine, recognised, and credible. MUJ prices the Online MBA at Rs 1,80,000 for the full four-semester programme. The payable total is Rs 1,53,000 once the standing 15 percent concession is applied, and Online Manipal was showing that concession in October 2026. A separate Rs 500 application fee is not refundable and sits outside the programme fee. Concession terms change between intakes, so confirm both figures on onlinemanipal.com before you pay. Match programme to your career stage plus sector target for maximum 5-year outcome.</p>
 
 <h2>How to Verify Any University Legitimacy 2026</h2>
 

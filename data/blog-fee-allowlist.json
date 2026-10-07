@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16",
+  "updatedAt": "2026-10-07",
   "note": "Owner-verified fee figures that have no counterpart in lib/data.ts and therefore cannot resolve to MATCH via getDisplayFee. Only for figures a university's admissions team has confirmed in writing for a specific specialisation-tier or payment-mode variant that the fees hub does not model yet. Prefer the FeeVariant schema when implemented (see audits/fee-model-proposal-2026-08-07.md). Adding an entry here is a source-of-truth commitment: someone will re-verify at each intake.",
   "entries": [
     {
@@ -1207,6 +1207,24 @@
       "source": "Official portal iulonline.in, programme fee cards (Semester Fee / Total Fee), read 2026-09-15",
       "verified_date": "2026-09-15",
       "note": "NOT a fee the portal charges. The post says plainly that any quote near Rs 1.5 lakh for the Integral online MBA is wrong, against the portal’s Rs 67,500."
+    },
+    {
+      "slug": "is-manipal-university-jaipur-fake-or-legit-2026",
+      "figure": 180000,
+      "university": "manipal-university-jaipur-online",
+      "programme": "MBA",
+      "source": "onlinemanipal.com official MUJ MBA fee panel (owner screenshot)",
+      "verified_date": "2026-10-07",
+      "note": "List fee, Rs 1,80,000 total across four semesters (Rs 90,000/year, Rs 45,000/semester). Currently classifies MATCH against pd.fees \"₹1.53L–₹1.80L\", so this entry does not fire today. Kept so the figure stays covered with real provenance if lib/data.ts drifts."
+    },
+    {
+      "slug": "is-manipal-university-jaipur-fake-or-legit-2026",
+      "figure": 153000,
+      "university": "manipal-university-jaipur-online",
+      "programme": "MBA",
+      "source": "onlinemanipal.com official MUJ MBA fee panel (owner screenshot)",
+      "verified_date": "2026-10-07",
+      "note": "Payable total after the 15 percent concession Online Manipal showed in October 2026 (Rs 76,500/year, Rs 38,250/semester). Also MATCH today; same drift-insurance reason as the 180000 entry."
     }
   ]
 }
