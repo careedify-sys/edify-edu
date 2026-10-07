@@ -28522,8 +28522,8 @@ export const BLOG_POSTS: BlogPost[] = [
   <svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,sans-serif" style="max-width:100%;height:auto">
     <rect width="700" height="240" fill="#f8fafc" rx="12"/>
     <text x="350" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Manipal Group: Online MBA Fee Comparison</text>
-    <rect x="60" y="50" width="185" height="40" fill="#f97316" rx="6"/>
-    <text x="152" y="75" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">SMU: Rs. 1,20,000</text>
+    <rect x="60" y="50" width="200" height="40" fill="#f97316" rx="6"/>
+    <text x="160" y="75" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">SMU: Rs. 1,20,000</text>
     <text x="60" y="105" font-size="12" fill="#64748b">Sikkim Manipal University</text>
     <rect x="60" y="125" width="300" height="40" fill="#B8892A" rx="6"/>
     <text x="210" y="150" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">MUJ: Rs. 1,80,000</text>
