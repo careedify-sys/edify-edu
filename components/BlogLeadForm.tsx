@@ -122,7 +122,7 @@ export default function BlogLeadForm({
         </div>
 
         <h2 className="text-2xl font-display font-bold text-white mb-2 leading-tight">
-          {title || 'Apply Now for 2026 Batch'}
+          {title || 'Apply Now for January 2027 Batch'}
         </h2>
         <p className="text-sm mb-6 leading-relaxed" style={{ color:'rgba(255,255,255,0.75)' }}>
           {desc || 'Get a free 1-on-1 session with our experts to find your perfect university match.'}

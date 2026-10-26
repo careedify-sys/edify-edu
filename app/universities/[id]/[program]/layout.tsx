@@ -125,7 +125,7 @@ export async function generateMetadata({ params }: { params: { id: string; progr
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const title = `${titleName} ${progTitle} — Fees & Syllabus 2026 | EdifyEdu`
 
-  const baseDescription = `Admissions open Oct 15–30, 2026. Online ${progTitle} at ${seoName}: ${fee} total${naacSegment(u.naac)}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}.${specs ? ` Specs: ${specs}.` : ''} UGC DEB approved. Compare & apply!`
+  const baseDescription = `January 2027 admissions open till March. Online ${progTitle} at ${seoName}: ${fee} total${naacSegment(u.naac)}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}.${specs ? ` Specs: ${specs}.` : ''} UGC DEB approved. Compare & apply!`
 
   const sn = seoName.toLowerCase()
 
@@ -142,9 +142,9 @@ export async function generateMetadata({ params }: { params: { id: string; progr
     `${sn} ${progKw}`,
     `${sn} ${progKw} fees`,
     `${sn} ${progKw} admission 2026`,
-    `${sn} ${progKw} october 2026 admission`,
+    `${sn} ${progKw} january 2027 admission`,
     `online ${progKw} ${sn} 2026`,
-    `${sn} ${progKw} july batch 2026`,
+    `${sn} ${progKw} january batch 2027`,
     `${sn} ${progKw} validity`,
     `${sn} ${progKw} eligibility`,
     `${sn} ${progKw} specialisation`,

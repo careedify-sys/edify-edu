@@ -473,14 +473,14 @@ export default async function CouponDetailPage({ params }: { params: any }) {
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>Best Time to Apply the {page.couponCode} Coupon Code</h2>
 
-          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>January Intake: Enroll in November or December</h3>
+          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>January Intake: Enroll Before March</h3>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            {page.shortName} runs a January intake each year. To redeem the {page.couponCode} coupon for the January batch, complete enrollment between mid-November and mid-December. The coupon refresh cycle aligns with the start of each calendar month, so the same Rs {tierMax.toLocaleString('en-IN')} max value applies across both months.
+            {page.shortName} runs a January intake each year. To redeem the {page.couponCode} coupon for the January batch, complete enrollment before admissions close in March. The coupon refresh cycle aligns with the start of each calendar month, so the same Rs {tierMax.toLocaleString('en-IN')} max value applies in every month of the window.
           </p>
 
           <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>July Intake: Enroll in May or June</h3>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            The July {year} intake is the larger of the two batches at {page.shortName}. Time your enrollment so the fee invoice is generated on a Tuesday or Saturday in May or June to lock in the Rs {tierMax.toLocaleString('en-IN')} maximum coupon value.
+            The July intake is the larger of the two batches at {page.shortName}. Time your enrollment so the fee invoice is generated on a Tuesday or Saturday in May or June to lock in the Rs {tierMax.toLocaleString('en-IN')} maximum coupon value.
           </p>
 
           <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>Time Your Final Invoice on a Tuesday or Saturday</h3>

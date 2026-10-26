@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://edifyedu.in/universities' },
   openGraph: {
     title: '143 UGC Approved Online Universities India 2026',
-    description: 'Compare UGC DEB approved online universities in India. NIRF rankings, NAAC grades, fees from ₹40K. July 2026 batch open.',
+    description: 'Compare UGC DEB approved online universities in India. NIRF rankings, NAAC grades, fees from ₹40K. January 2027 batch open.',
     url: 'https://edifyedu.in/universities',
     type: 'website',
     images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: 'Compare Online Universities India 2026' }],

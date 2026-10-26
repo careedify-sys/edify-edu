@@ -34,7 +34,7 @@ export default function MujCouponTopUrgency() {
                 Limited Window
               </div>
               <h2 className="font-bold text-white leading-tight mb-1.5" style={{ fontSize: 'clamp(1.05rem, 2.6vw, 1.3rem)' }}>
-                Claim this discount before MUJ closes July 2026 admissions
+                Claim this discount before MUJ closes January 2027 admissions
               </h2>
               <p className="text-sm" style={{ color: 'rgba(255,255,255,0.72)' }}>
                 Get the coupon applied to your enrolment plus a free counselling call to confirm MUJ is your best fit.

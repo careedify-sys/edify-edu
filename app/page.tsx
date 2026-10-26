@@ -50,14 +50,14 @@ export default function HomePage() {
 
   return (
     <>
-      {/* ── July 2026 Admission Banner ── */}
+      {/* ── January 2027 Admission Banner ── */}
       <div style={{ background: 'linear-gradient(135deg, #0B1D35, #1a3a5c)', borderBottom: '3px solid #C8811A', padding: '10px 0', textAlign: 'center', }}>
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-center gap-3 flex-wrap">
           <span style={{fontSize:12,fontWeight:800,color:'var(--amber-vivid)',letterSpacing:'0.05em',textTransform:'uppercase'}}>
             🎓 Admissions Open
           </span>
           <span className="text-xs text-white font-medium">
-            July 2026 batch — Admissions close October 15–30, 2026.
+            January 2027 batch. Admissions open now and close in March 2027.
           </span>
           <a href="#enquire" onClick={(e)=>{e.preventDefault();document.dispatchEvent(new CustomEvent('openEnquiry'))}}
             style={{fontSize:11,fontWeight:700,padding:'4px 14px',borderRadius:'var(--r-lg)',background:'var(--amber-text)',color:'#fff',textDecoration:'none',whiteSpace:'nowrap'}}>
