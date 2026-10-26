@@ -49509,6 +49509,266 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <p class="disclaimer"><em>Last verified on 26 October 2026. Entitlement is granted per programme and per session, and UGC can change the rules by notice. Confirm on deb.ugc.ac.in before you enrol.</em></p>
     `,
   },
+  {
+    slug: 'online-masters-pg-courses-india',
+    title: 'Online Master\'s Degree in India 2026: PG Courses Compared',
+    seoTitle: 'Online Master\'s Degree in India 2026: PG Courses Compared',
+    h1Title: 'Online Master\'s and PG Courses in India 2026: Which One Fits Your Goal',
+    metaDescription: 'Online MBA, MCA, MA, M.Com and MSc compared: who each suits, the subjects universities offer, eligibility, the new one-year online PG, and how to check approval.',
+    category: 'Online Degree Validity',
+    tags: ['Online Masters', 'Online PG Courses', 'Online MA', 'Online M.Com', 'Online MSc', 'Online MCA', 'Online MBA'],
+    publishedAt: '2026-10-26',
+    readTime: 9,
+    targetKeyword: 'online masters degree india',
+    relatedUniversities: [],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/15598638/pexels-photo-15598638.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@sanketgraphy" target="_blank" rel="noopener nofollow">Sanket  Mishra</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Two young adults working together on a laptop while sitting on a park bench outdoors.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'Which online master\'s degrees are available in India?', a: 'The main ones are MBA, MCA, MA, M.Com and MSc, offered by universities that UGC has recognised or entitled for Online mode. Each programme must be entitled for the session you join, which you can check on deb.ugc.ac.in.' },
+      { q: 'Is an online master\'s degree valid for jobs and further study in India?', a: 'Yes, when the programme is UGC-entitled. Regulation 22 of the UGC ODL and Online Programmes Regulations, 2020 treats online postgraduate degrees as equivalent to the conventional ones.' },
+      { q: 'Who is eligible for an online master\'s degree?', a: 'Under the UGC UG and PG Regulations, 2025, a 3-year bachelor\'s degree (120 credits) or a 4-year bachelor\'s with Honours (160 credits) makes you eligible for a postgraduate programme. MBA and MCA eligibility also follows the conditions set by the relevant regulator, and each university can add its own minimum marks.' },
+      { q: 'Is there a one-year online master\'s degree in India?', a: 'Yes, since a UGC circular of 28 July 2026, but only for students who hold a four-year Bachelor\'s degree with Honours. The university must already be recognised or entitled for the two-year online version of the same programme.' },
+      { q: 'Can I do an online master\'s in a different subject from my bachelor\'s?', a: 'The 2025 regulations allow admission to a PG programme in any discipline, regardless of your UG majors, if you qualify the national or university-level entrance examination for that discipline. Many online programmes admit without an entrance test, so check each university\'s eligibility rules.' },
+      { q: 'Which online master\'s degree is best for working professionals?', a: 'It depends on the goal. An MBA suits a move into management, an MCA a move into software roles, an M.Com a commerce or finance track, and an MA or MSc deeper study in one subject or a path towards teaching and research.' },
+      { q: 'How long does an online master\'s take?', a: 'Usually two years. Under the 2020 regulations, online programmes carry the same total credits and minimum duration as the conventional version. The one-year option applies only to four-year Honours graduates.' },
+    ],
+    ctaTitle: 'Choosing an online master\'s?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">"Online master's" covers five different degrees in India, and they lead to very different places. Pick by the job you want next, then check the programme is entitled for your session.</p>
+
+<p><strong>Short answer:</strong> the online master's degrees available in India are mainly the <strong>MBA, MCA, MA, M.Com and MSc</strong>, offered by universities UGC has recognised or entitled for Online mode. A valid online PG degree is <strong>equivalent to a regular one</strong> under Regulation 22 of the UGC 2020 regulations, usually takes <strong>two years</strong>, and needs a bachelor's degree to enter. Since a UGC circular of 28 July 2026, a <strong>one-year online master's</strong> is also possible, but only for holders of a four-year Honours degree.</p>
+
+<div class="callout-key">
+<strong>Online master's in India at a glance (last verified 26 October 2026)</strong>
+<ul>
+<li><strong>Degrees:</strong> MBA, MCA, MA, M.Com, MSc, plus two-year PG diplomas</li>
+<li><strong>Duration:</strong> usually 2 years, with the same credits as the campus version</li>
+<li><strong>One-year option:</strong> only after a four-year Honours bachelor's (UGC circular, 28 July 2026)</li>
+<li><strong>Eligibility:</strong> a 3-year (120-credit) or 4-year Honours (160-credit) bachelor's, plus any regulator or university conditions</li>
+<li><strong>Validity:</strong> equivalent to the regular degree when the programme is UGC-entitled</li>
+</ul>
+</div>
+
+<h2>Which online master's degree should you choose?</h2>
+
+<p>Start with the destination, not the degree. The table below matches each online PG degree to the goal it serves best and shows how many universities in the edifyedu.in database list it.</p>
+
+<table>
+<thead><tr><th>Degree</th><th>Best suited to</th><th>Universities in our database</th></tr></thead>
+<tbody>
+<tr><td>MBA</td><td>Moving into management, a promotion that asks for a management degree, or switching function</td><td>121</td></tr>
+<tr><td>MCA</td><td>Software, data and IT roles, especially after a BCA or B.Sc</td><td>74</td></tr>
+<tr><td>MA</td><td>Depth in one subject, teaching, civil-service preparation, or a later research path</td><td>52</td></tr>
+<tr><td>M.Com</td><td>Accounting, taxation and finance careers, or commerce teaching</td><td>50</td></tr>
+<tr><td>MSc</td><td>Mathematics or data science, in the few universities that run it online</td><td>17</td></tr>
+</tbody>
+</table>
+
+<p>Counts come from the programme lists we hold for each university on 26 October 2026. Entitlement is granted per programme and per session, so a university appearing here still needs the exact programme approved for your intake on <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>.</p>
+
+<h2>Which subjects can you study in an online MA, M.Com or MSc?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/18067562/pexels-photo-18067562.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A group of young South Asian women working together on a laptop in a Jaipur office." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@biyani-girls-college-701394465" target="_blank" rel="noopener nofollow">Biyani Girls College</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>Fewer than people expect. Across the universities in our database, online MA programmes concentrate on a handful of humanities and social science subjects, and the online MSc is almost entirely mathematics and data science. The reason is regulatory: UGC does not allow online programmes that need practical or laboratory work, and since July 2025 it has barred allied and healthcare specialisations online.</p>
+
+<figure class="svg-figure">
+<svg viewBox="0 0 640 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Most common online master's specialisations by number of universities in the edifyedu.in database: MA Sociology 23, English 22, Political Science 21, Economics 21, History 20, Public Administration 18; M.Com Finance 20, Accounting 18, Taxation 16; MCA AI and ML 18, Cybersecurity 18, Data Science 17; MSc Mathematics 8, Data Science 5">
+<rect width="640" height="330" fill="#ffffff"/>
+<text x="20" y="26" font-size="14" font-weight="700" fill="#0f172a">Most common online master's subjects (universities offering each)</text>
+<g font-size="11.5" fill="#0f172a">
+<text x="20" y="54">MA Sociology</text><rect x="210" y="43" width="345" height="14" fill="#0f172a"/><text x="562" y="54">23</text>
+<text x="20" y="74">MA English</text><rect x="210" y="63" width="330" height="14" fill="#0f172a"/><text x="547" y="74">22</text>
+<text x="20" y="94">MA Political Science</text><rect x="210" y="83" width="315" height="14" fill="#0f172a"/><text x="532" y="94">21</text>
+<text x="20" y="114">MA Economics</text><rect x="210" y="103" width="315" height="14" fill="#0f172a"/><text x="532" y="114">21</text>
+<text x="20" y="134">MA History</text><rect x="210" y="123" width="300" height="14" fill="#0f172a"/><text x="517" y="134">20</text>
+<text x="20" y="154">MA Public Administration</text><rect x="210" y="143" width="270" height="14" fill="#0f172a"/><text x="487" y="154">18</text>
+<text x="20" y="178">M.Com Finance</text><rect x="210" y="167" width="300" height="14" fill="#B8892A"/><text x="517" y="178">20</text>
+<text x="20" y="198">M.Com Accounting</text><rect x="210" y="187" width="270" height="14" fill="#B8892A"/><text x="487" y="198">18</text>
+<text x="20" y="218">M.Com Taxation</text><rect x="210" y="207" width="240" height="14" fill="#B8892A"/><text x="457" y="218">16</text>
+<text x="20" y="242">MCA AI and ML</text><rect x="210" y="231" width="270" height="14" fill="#f97316"/><text x="487" y="242">18</text>
+<text x="20" y="262">MCA Cybersecurity</text><rect x="210" y="251" width="270" height="14" fill="#f97316"/><text x="487" y="262">18</text>
+<text x="20" y="282">MCA Data Science</text><rect x="210" y="271" width="255" height="14" fill="#f97316"/><text x="472" y="282">17</text>
+<text x="20" y="306">MSc Mathematics</text><rect x="210" y="295" width="120" height="14" fill="#10b981"/><text x="337" y="306">8</text>
+</g>
+<text x="20" y="324" font-size="10.5" fill="#64748b">Source: edifyedu.in database of 143 universities, 26 Oct 2026. Name variants merged. Confirm entitlement on deb.ugc.ac.in.</text>
+</svg>
+<figcaption>Online PG choice is wide in management and computing, narrow in the sciences.</figcaption>
+</figure>
+
+<p>For the MBA, the most common specialisations in our database are Marketing (86 universities), Human Resource Management (77) and Finance (74), followed by Operations (38) and Business Analytics (26). If you are weighing an MBA against a subject master's, our <a href="/guides/online-mba-eligibility-india">online MBA eligibility guide</a> covers the entry rules.</p>
+
+<h2>Who is eligible for an online master's?</h2>
+
+<p>The UGC (Minimum Standards of Instruction for the Grant of Undergraduate Degree and Postgraduate Degree) Regulations, 2025 set the baseline. You are eligible for a postgraduate programme after a <strong>3-year bachelor's degree with 120 credits</strong> or a <strong>4-year bachelor's with Honours or Honours with Research, with 160 credits</strong>.</p>
+
+<p>The same regulations open up subject switching. Whatever your UG majors were, you can be admitted to a PG programme in any discipline if you qualify the national or university-level entrance examination for it. Many online programmes admit without an entrance test, though, and set their own subject and marks conditions. MBA and MCA eligibility also follows the conditions of the relevant regulator. Read each university's eligibility page, and get the conditions in writing if your degree is unusual.</p>
+
+<h2>Can you do a one-year online master's?</h2>
+
+<p>Yes, but only on one route. UGC circular F.No. 7-2/2026 (DEB-NWR), dated 28 July 2026, lets a university that is already recognised or entitled for a two-year online PG programme offer a <strong>one-year PG in the same discipline</strong>. Admission is restricted to learners who have completed a <strong>four-year Bachelor's degree with Honours</strong>. Entry rules for programmes such as MBA, MCA and PGDM still follow their regulators.</p>
+
+<p class="pull">A one-year online master's is real now. It is built for four-year graduates, not as a shortcut for three-year ones.</p>
+
+<p>So if you hold a three-year degree, a "one-year online MBA" offer should make you ask exactly what qualification it awards. Executive programmes and certificates exist, but they are not the one-year PG degree this circular describes. Our guide to the <a href="/blog/1-year-mba-india-executive-mba-2026">one-year MBA and executive MBA in India</a> separates the options.</p>
+
+<h2>Is an online master's as good as a regular one?</h2>
+
+<p>On paper, yes. Regulation 22 of the 2020 regulations treats online PG degrees from recognised institutions as equivalent to conventional ones, and the online version carries the same total credits and minimum duration. Read <a href="/guides/is-online-degree-valid-india">is an online degree valid in India</a> for jobs, government recruitment and higher study.</p>
+
+<p>In practice, the quality gap is between universities, not between modes. Only universities that clear UGC's quality bar, a NAAC score of 3.26 or above or a top-100 NIRF University rank twice in three cycles, may start full online programmes without prior approval. Our overview of <a href="/blog/online-degree-courses-india">online degree courses in India</a> explains that rule and the programmes UGC bans online.</p>
+
+<h2>How do you check an online master's before enrolling?</h2>
+
+<ol>
+<li>Find the university and the exact programme, in Online mode, for your session on deb.ugc.ac.in. Our <a href="/guides/how-to-check-ugc-deb-approval">UGC-DEB approval guide</a> shows where.</li>
+<li>Create your DEB ID from your ABC/APAAR ID. It is mandatory for every online admission. See <a href="/blog/ugc-deb-id-explained">our DEB ID guide</a>.</li>
+<li>Check the exam format. The proctored end-semester exam carries at least 70 per cent of marks; see <a href="/blog/how-online-degree-exams-work-india">how online degree exams work</a>.</li>
+<li>Ask for the fee in writing for your intake. Fees on edifyedu.in are indicative; confirm the current figure on the university's official portal.</li>
+</ol>
+
+<div class="cta-box">
+<p><strong>Narrowing down an online master's?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities side by side</a> or <a href="/contact">ask us</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC (Minimum Standards of Instruction for the Grant of Undergraduate Degree and Postgraduate Degree) Regulations, 2025, eligibility clauses (Gazette, 2 April 2025): ugc.gov.in</li>
+<li>UGC circular F.No. 7-2/2026 (DEB-NWR), 28 July 2026, one-year PG in ODL and Online mode: deb.ugc.ac.in</li>
+<li>UGC (ODL Programmes and Online Programmes) Regulations, 2020, Regulations 3(B), 4 and 22: deb.ugc.ac.in/Regulations</li>
+<li>UGC public notice F.No. 4-1/2025 (DEB-NER), 12 August 2025: deb.ugc.ac.in</li>
+<li>Programme and specialisation counts: edifyedu.in database of 143 universities, 26 October 2026</li>
+</ul>
+
+<p class="disclaimer"><em>Last verified on 26 October 2026. Entitlement is per programme and per session, and UGC can change rules by notice. Confirm on deb.ugc.ac.in before you enrol.</em></p>
+    `,
+  },
+  {
+    slug: 'online-bachelors-ug-courses-india',
+    title: 'Online Bachelor\'s Degree in India 2026: UG Courses Explained',
+    seoTitle: 'Online Bachelor\'s Degree in India 2026: UG Courses Explained',
+    h1Title: 'Online Bachelor\'s and Graduation Courses in India 2026: BA, B.Com, BBA, BCA and What UGC Allows',
+    metaDescription: 'Online graduation in India: BA, B.Com, BBA and BCA from UGC-entitled universities. Eligibility after Class 12, why 1-year degrees are not valid, and how to check.',
+    category: 'Online Degree Validity',
+    tags: ['Online Bachelor Degree', 'Online Graduation', 'Online UG Courses', 'Online BA', 'Online BBA', 'Online BCA', 'Online B.Com'],
+    publishedAt: '2026-10-26',
+    readTime: 8,
+    targetKeyword: 'online graduation degree in india',
+    relatedUniversities: [],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/30858451/pexels-photo-30858451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@shootsaga" target="_blank" rel="noopener nofollow">Anil  Sharma</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Smiling young girl with headset on a video call, studying online at home.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'Can I do graduation online in India?', a: 'Yes. UGC-entitled universities offer online BA, B.Com, BBA and BCA degrees, and a few offer an online BSc. A valid online bachelor\'s degree is equivalent to the regular degree under Regulation 22 of the UGC 2020 regulations.' },
+      { q: 'Who is eligible for an online bachelor\'s degree?', a: 'Under the UGC UG and PG Regulations, 2025, anyone who has passed Class 12, through formal schooling or the open school system, or its equivalent is eligible for an undergraduate programme. Universities can add their own subject or marks conditions.' },
+      { q: 'Is a one-year online bachelor\'s degree valid in India?', a: 'No. The UGC 2020 regulations require online programmes to carry the same total credits and minimum duration as the conventional degree, which is usually three years for a bachelor\'s. A one-year "degree" offer is a warning sign.' },
+      { q: 'Can I study computer science online at bachelor\'s level?', a: 'Through a BCA, yes: 57 universities in the edifyedu.in database list an online BCA. An online B.Tech is not allowed, because UGC prohibits engineering in ODL and Online mode, and lab-based BSc programmes are rare online.' },
+      { q: 'Can I do an online BFA or fine arts degree?', a: 'Not as a UGC online degree. UGC lists Visual Arts among the disciplines that cannot be offered in ODL or Online mode.' },
+      { q: 'Can I do an online degree after Class 12 while working?', a: 'Yes. Online programmes are designed for that, with recorded lectures and proctored exams each semester. You can also study an online degree alongside a regular one under UGC\'s two-programme guidelines.' },
+      { q: 'Does a four-year online bachelor\'s matter?', a: 'It can. Under a UGC circular of 28 July 2026, holders of a four-year Bachelor\'s degree with Honours can take a one-year online master\'s where a university is entitled for it. Check whether your university offers the four-year Honours route online.' },
+    ],
+    ctaTitle: 'Choosing an online bachelor\'s degree?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">You can earn a valid bachelor's degree online in India after Class 12, while working or from a town with no college nearby. The choice is narrower than ads suggest, and some offers are not degrees at all.</p>
+
+<p><strong>Short answer:</strong> online graduation in India means an <strong>online BA, B.Com, BBA or BCA</strong>, and in a few places a BSc, from a university UGC has entitled for that programme in Online mode. Anyone who has <strong>passed Class 12</strong>, including through open schooling, is eligible under the UGC UG and PG Regulations, 2025. The degree usually takes <strong>three years</strong>, the same as on campus, and a valid online degree is <strong>equivalent to a regular one</strong>. One-year bachelor's "degrees", online B.Tech and online fine arts degrees are not UGC-valid.</p>
+
+<div class="callout-key">
+<strong>Online bachelor's in India at a glance (last verified 26 October 2026)</strong>
+<ul>
+<li><strong>Degrees:</strong> BA, B.Com, BBA, BCA, and a little BSc</li>
+<li><strong>Eligibility:</strong> Class 12 pass, formal or open schooling, or equivalent</li>
+<li><strong>Duration:</strong> the same credits and minimum duration as the campus degree</li>
+<li><strong>Not available online:</strong> B.Tech, LLB, nursing, pharmacy, fine arts and other prohibited disciplines</li>
+<li><strong>Validity:</strong> equivalent to the regular degree when the programme is UGC-entitled</li>
+</ul>
+</div>
+
+<h2>Which bachelor's degrees can you study online?</h2>
+
+<table>
+<thead><tr><th>Degree</th><th>Who it suits</th><th>Universities in our database</th><th>Most common specialisations</th></tr></thead>
+<tbody>
+<tr><td>BBA</td><td>A first step into business and management roles</td><td>80</td><td>Marketing, Finance, HR, Digital Marketing</td></tr>
+<tr><td>BCA</td><td>Software and IT careers without engineering</td><td>57</td><td>Data Science, Cybersecurity, Cloud, AI and ML</td></tr>
+<tr><td>B.Com</td><td>Accounting, banking, tax and finance work</td><td>57</td><td>Accounting, Finance, Banking and Insurance, Taxation</td></tr>
+<tr><td>BA</td><td>Humanities, civil-service preparation, teaching paths</td><td>27</td><td>Political Science, English, History, Sociology, Economics</td></tr>
+<tr><td>BSc</td><td>Very limited online, because most science needs labs</td><td>2</td><td>Data Science, Economics</td></tr>
+</tbody>
+</table>
+
+<p>Counts and specialisations come from the programme lists we hold for each university on 26 October 2026, with name variants merged. Entitlement is granted per programme and per session, so confirm yours on <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a> before you apply. Our step-by-step <a href="/guides/how-to-check-ugc-deb-approval">UGC-DEB approval guide</a> shows where to look.</p>
+
+<h2>Who is eligible for online graduation?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159651/pexels-photo-9159651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A young woman focused on studying with her laptop in a modern indoor setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>The UGC (Minimum Standards of Instruction for the Grant of Undergraduate Degree and Postgraduate Degree) Regulations, 2025 say a student who has passed Class 12, through formal schooling or the open school system, or its equivalent, is eligible for an undergraduate programme. That matters for working adults and NIOS students, who are often told otherwise.</p>
+
+<p>The same regulations let you cross streams. Whatever subjects you took in Class 12, you can join any UG discipline if you qualify the national or university-level entrance exam for it, and universities may offer bridge courses. Most online UG programmes admit without an entrance test and set their own subject and marks conditions instead. Check the university's eligibility page before you pay.</p>
+
+<h2>Is a one-year online bachelor's degree valid?</h2>
+
+<p>No. Under the UGC 2020 regulations, a university must offer online programmes with the <strong>same total credits and minimum duration</strong> as the corresponding campus programme. A bachelor's degree is usually three years. A course that promises a bachelor's in one year, or a degree "without exams", is not a UGC online degree, however it is advertised.</p>
+
+<div class="callout-warning">
+<strong>Red flags in UG admissions:</strong> a degree in one year, backdated degrees, "no exams", or admission through a franchise centre. UGC requires the same duration as campus, proctored exams every semester, and admissions run by the university itself. Also check the institution is not on the <a href="/blog/ugc-fake-universities-list-2026">UGC fake universities list</a>.
+</div>
+
+<p class="pull">A real online bachelor's takes as long as a campus one. Anything faster is selling a certificate.</p>
+
+<h2>Can you study computer science, engineering or fine arts online?</h2>
+
+<ul>
+<li><strong>Computer science:</strong> yes, through a BCA. It is the main online route into software careers at UG level. An online BSc in computer science is rare because UGC does not allow online programmes that need laboratory work.</li>
+<li><strong>Engineering (B.Tech):</strong> no. UGC prohibits engineering in ODL and Online mode.</li>
+<li><strong>Fine arts (BFA):</strong> no. Visual Arts is on UGC's prohibited list for ODL and Online mode.</li>
+<li><strong>Law (LLB), nursing, pharmacy, hotel management:</strong> also prohibited online.</li>
+</ul>
+
+<p>Our overview of <a href="/blog/online-degree-courses-india">online degree courses in India</a> sets out the full allowed and prohibited lists with the UGC notices behind them.</p>
+
+<h2>Three-year or four-year online bachelor's?</h2>
+
+<p>The 2025 regulations recognise a 3-year bachelor's (120 credits) and a 4-year bachelor's with Honours or Honours with Research (160 credits). The four-year route has one concrete benefit for online learners. A UGC circular of 28 July 2026 allows a <strong>one-year online master's</strong>, but only for students with a four-year Honours degree. Ask whether your university offers the four-year option online before you enrol, because a three-year graduate goes on to the usual two-year master's. See our guide to <a href="/blog/online-masters-pg-courses-india">online master's courses</a> for what comes next.</p>
+
+<h2>How does studying for an online bachelor's work?</h2>
+
+<p>Lectures and material are delivered through the university's learning platform, and each semester ends in a proctored exam, written remotely under webcam supervision or at a test centre. The exam carries at least 70 per cent of the marks. Read <a href="/blog/how-online-degree-exams-work-india">how online degree exams work</a> before you start.</p>
+
+<p>Online degrees admit twice a year, in sessions beginning January to February and July to August, so missing one intake does not cost a year. See <a href="/blog/ugc-biannual-admissions-january-july-intake">how the January and July intakes work</a>. Before admission you also need a DEB ID, created from your ABC/APAAR ID; our <a href="/blog/ugc-deb-id-explained">DEB ID guide</a> walks through it.</p>
+
+<h2>Is an online bachelor's degree accepted for jobs?</h2>
+
+<p>An online degree from an entitled programme is treated as equivalent to the conventional degree under Regulation 22 of the 2020 regulations, and each degree is uploaded to the National Academic Depository so employers can verify it. Read <a href="/guides/is-online-degree-valid-india">is an online degree valid in India</a> for government jobs and higher study.</p>
+
+<div class="cta-box">
+<p><strong>Choosing an online bachelor's degree?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us which programmes are entitled for your session</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC (Minimum Standards of Instruction for the Grant of Undergraduate Degree and Postgraduate Degree) Regulations, 2025, eligibility clauses (Gazette, 2 April 2025): ugc.gov.in</li>
+<li>UGC (ODL Programmes and Online Programmes) Regulations, 2020, Regulations 4 and 22: deb.ugc.ac.in/Regulations</li>
+<li>UGC public notice F.No. 1-34/2024 (DEB-I), 11 November 2024, prohibited programmes: deb.ugc.ac.in</li>
+<li>UGC circular F.No. 7-2/2026 (DEB-NWR), 28 July 2026, one-year PG: deb.ugc.ac.in</li>
+<li>Programme and specialisation counts: edifyedu.in database of 143 universities, 26 October 2026</li>
+</ul>
+
+<p class="disclaimer"><em>Last verified on 26 October 2026. Entitlement is per programme and per session. Confirm on deb.ugc.ac.in before you enrol, and confirm fees on the university's official portal, since any fee shown on edifyedu.in is indicative.</em></p>
+    `,
+  },
 ]
 
 export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))
