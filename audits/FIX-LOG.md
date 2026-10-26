@@ -1,5 +1,26 @@
 # Fix log
 
+## 2026-10-27 · Blog posts quoted stale and wrong NIRF ranks
+
+No gate covers lib/blog.ts. An audit of all 375 "NIRF #N" mentions, each matched to the university named just
+before it and checked against lib/data.ts (which matches Supabase accreditations for these universities, NIRF
+2025), found a family of posts, mostly online BBA guides, repeating one stale set in the present tense: Chandigarh
+#28 / #36, LPU #38, Symbiosis #19, MAHE #7 / #4, sometimes tagged (2024). Current: CU #19, LPU #31, Symbiosis #24,
+MAHE #3, all University category. Also wrong: MUJ "#32 University" x3 (58; 32 is CU's Management rank), Amity
+"#51" x2 (22), JAIN "Management rank #62" (73; 62 is its University rank), "MUJ unranked" (58), MAHE "#3
+management ranking" (it is University).
+
+Pass 1 (63 edits) changed a number only when the nearest university named before it in the same sentence owned
+that stale value, adding the category and turning an adjacent (2024) into (2025). Pass 2 (21 edits) used exact
+strings for sentences pass 1 could not attribute. Comparisons that remain true with current ranks were kept
+(CU still outranks LPU; MAHE is still highest). Audit after: 214 of 375 verified, up from 144; the rest are
+labelled ranks of institutions outside lib/data.ts (XLRI, BITS, Jamia Hamdard) or matcher misreads.
+
+Flag for Rishi, not changed: posts give Yenepoya NIRF #63 University / #57 Management, Shivaji #65 University and
+University of Mumbai #61, while lib/data.ts and Supabase have Yenepoya and Shivaji unranked and Mumbai at 54.
+Needs a nirfindia.org check. Several posts still cite "Amity WASC+QAA", removed from Amity's MBA intro on 26 Oct
+because lib/data.ts approvals do not list it.
+
 ## 2026-10-27 · Em-dash sweep, part 2: component and page prose
 
 Visible em dashes in app/ and components/ (comments stripped; admin, blog/write, leads and api excluded): 194 in
