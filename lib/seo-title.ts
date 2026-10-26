@@ -538,6 +538,9 @@ export function clampDescription(desc: string, max = 160): string {
   if (boundary >= Math.floor(max * 0.6)) {
     return slice.substring(0, boundary + 1).trim()
   }
-  const wordTrimmed = slice.replace(/\s+\S*$/, '').trim()
+  // A word-boundary cut can land between a NIRF rank and its category, turning
+  // "NIRF #26 University" into a bare "NIRF #26". Drop the orphaned rank rather
+  // than publish it without its table (check-nirf-category covers templates).
+  const wordTrimmed = slice.replace(/\s+\S*$/, '').trim().replace(/,?\s*NIRF #\d+$/, '')
   return stripTrailingJunk(wordTrimmed)
 }

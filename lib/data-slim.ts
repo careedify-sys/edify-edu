@@ -297,3 +297,19 @@ export function formatNirfBadge(
     : null;
   return prefer === 'university' ? (univ ?? mgmt) : (mgmt ?? univ);
 }
+
+/**
+ * The NIRF phrase for a page about one programme, always with its category.
+ * Management programmes lead with the Management table, everything else with
+ * the University table. Meta descriptions printed a bare "NIRF #22" from 20+
+ * templates, and one title builder picked whichever of the two ranks was
+ * smaller, so Amity's MBA page showed its University #22 instead of its
+ * Management #49. Use this, or formatNirfBadge, for any rank shown to a reader.
+ */
+export function nirfForProgramme(
+  u: { nirf?: number | null; nirfMgt?: number | null },
+  programme?: string,
+): string | null {
+  const prefer = /^(mba|bba|pgdm|executive mba)$/i.test((programme || '').trim()) ? 'management' : 'university';
+  return formatNirfBadge(u, { style: 'long', prefer });
+}

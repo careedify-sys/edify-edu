@@ -79,7 +79,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
   const templateFaqs = [
     {
       q:`Is ${u.name} a good university for online degrees?`,
-      a:`${u.name} is ${u.nirf > 0 && u.nirf < 200 ? `NIRF #${u.nirf} overall` : 'a UGC DEB approved university'}${u.nirfMgt && u.nirfMgt < 200 ?` and NIRF #${u.nirfMgt} in Management`:''}. ${u.naac ? `It holds NAAC ${u.naac} accreditation and is` : 'It is'} UGC DEB approved. For private sector careers and corporate hiring it is a strong choice. Always verify specific job notifications for government roles.`
+      a:`${u.name} is ${u.nirf > 0 && u.nirf < 200 ? `ranked NIRF #${u.nirf} in the University category` : 'a UGC DEB approved university'}${u.nirfMgt && u.nirfMgt < 200 ?` and NIRF #${u.nirfMgt} in Management`:''}. ${u.naac ? `It holds NAAC ${u.naac} accreditation and is` : 'It is'} UGC DEB approved. For private sector careers and corporate hiring it is a strong choice. Always verify specific job notifications for government roles.`
     },
     {
       q:`What is the total fee for ${u.name} ${displayProgram}?`,
@@ -153,7 +153,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
         '@context':'https://schema.org','@type':'Course',
         name:`${u.name} ${displayProgram}`,
-        description:`UGC DEB approved ${displayProgram} from ${u.name}.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}${u.nirf > 0 && u.nirf < 200 ? ` NIRF #${u.nirf}.` : ''}${u.feeMin > 0 ? ` Total fee ${formatFee(u.feeMin)}–${formatFee(u.feeMax)}.` : ''}`,
+        description:`UGC DEB approved ${displayProgram} from ${u.name}.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}${u.nirf > 0 && u.nirf < 200 ? ` NIRF #${u.nirf} University.` : ''}${u.feeMin > 0 ? ` Total fee ${formatFee(u.feeMin)}–${formatFee(u.feeMax)}.` : ''}`,
         url:`https://edifyedu.in/universities/${u.id}`,
         provider:{'@type':'EducationalOrganization',name:u.name},
         educationalLevel:'Postgraduate',

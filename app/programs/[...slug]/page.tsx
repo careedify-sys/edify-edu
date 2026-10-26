@@ -9,7 +9,7 @@ import { PROGRAM_META } from '@/lib/data-client'
 import { getAllSpecs, getUniversitiesByProgram, UNIVERSITIES, specName as getSpecName, getUniversityById } from '@/lib/data'
 import { getProgramContent, getSpecContent, getSpecFallback } from '@/lib/content'
 import type { Program } from '@/lib/data'
-import { formatFeeSlim, UNIS_SLIM } from '@/lib/data-slim'
+import { formatFeeSlim, UNIS_SLIM, nirfForProgramme } from '@/lib/data-slim'
 import { getSpecFAQs } from '@/lib/specFaqs'
 import { getCanonicalSpec } from '@/lib/specMapping'
 import { shouldIndexProgramsPath } from '@/lib/seo/should-index'
@@ -613,7 +613,7 @@ export default async function CatchAllProgramPage(
                             </div>
                             <div className="flex-1 min-w-0">
                               <div className="text-sm font-bold text-navy group-hover:text-amber transition-colors leading-snug truncate">{getShortUniversityName(u.name)}</div>
-                              <div className="text-xs text-ink-3">NAAC {u.naac}{u.nirf < 200 ? ` · NIRF #${u.nirf}` : ''} · {upd?.fees || formatFee(u.feeMin)}</div>
+                              <div className="text-xs text-ink-3">NAAC {u.naac}{nirfForProgramme(u, program) ? ` · ${nirfForProgramme(u, program)}` : ''} · {upd?.fees || formatFee(u.feeMin)}</div>
                             </div>
                             <ChevronRight size={14} className="text-amber shrink-0" />
                           </Link>
@@ -930,7 +930,7 @@ export default async function CatchAllProgramPage(
                               {getShortUniversityName(u.name)}
                             </div>
                             <div className="text-xs text-ink-3">
-                              NAAC {u.naac}{u.nirf < 200 ? ` · NIRF #${u.nirf}` : ''} · {pd?.fees || formatFee(u.feeMin)}
+                              NAAC {u.naac}{nirfForProgramme(u, program) ? ` · ${nirfForProgramme(u, program)}` : ''} · {pd?.fees || formatFee(u.feeMin)}
                             </div>
                           </div>
                           <ChevronRight size={14} className="text-amber shrink-0" />

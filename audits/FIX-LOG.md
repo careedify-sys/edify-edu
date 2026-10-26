@@ -1,4 +1,61 @@
-# Fi## 2026-10-26 · Uttaranchal is NAAC A+ on every peer page; MUJ MBA title carries its fee
+# Fix log
+
+## 2026-10-26 · NIRF ranks always name their category; overview titles carry the searched brand and a labelled MBA fee
+
+Keyword gap improve track (audits/keyword-gap-plan-2026-10-26.md, Bucket A).
+
+**1. Bare NIRF ranks in 25 templates.** Meta descriptions on university, MBA,
+BBA, BCA, MCA, programme and spec pages printed "NIRF #22" with no category, as
+did the programme hub cards, blog sidebar, navbar search and a FAQ answer that
+called the University rank "overall". `lib/seo-title-builder.ts`
+`buildUniDescription` picked whichever of the University and Management ranks
+was smaller and printed it unlabelled. The MBA template led with the University
+rank even when a Management rank existed (Amity: University #22, Management #49).
+
+Why it matters: NIRF publishes separate tables, so a bare rank is wrong for the
+reader and for every AI answer that quotes the snippet. It had shipped three
+times before (memory: feedback_nirf_category) with nothing gating it.
+
+Fix: `nirfForProgramme(u, programme)` in `lib/data-slim.ts`, next to the existing
+`formatNirfBadge`. Management first for MBA/BBA/PGDM, University otherwise,
+category always named. All templates now call it. `clampDescription` drops a
+rank orphaned by a word-boundary cut, which is how KL University's BCA spec page
+still showed "NIRF #26" after the template fix.
+
+Gate: `scripts/check-nirf-category.mts` in pre-commit, with `--self-test`.
+Proven against the pre-fix tree: it flags 25 bare ranks there and 0 now. A
+production build scan of 1,805 university pages finds no bare rank in any title
+or description. Out of scope: rank claims inside `lib/blog.ts` prose.
+
+**2. University overview pages (/universities/{id}).** The title read
+"Amity Online 2026: Fees ₹207K-225K | EdifyEdu". Three problems: the searched
+phrase is "amity university online" (22,200/month), the fee was the MBA range
+labelled as the whole university's fee (feeMin/feeMax are MBA-led, see
+project_programme_faq_fee), and it bypassed `getDisplayFee`, so a suppressed fee
+could still print. Now: "{brand} Online 2026: Courses, MBA {fee}, NAAC {grade}",
+fee from `getDisplayFee(u, 'MBA')` and omitted when suppressed or when the
+university has no MBA. A short `SEARCH_BRAND` map covers the brands whose title
+name differs from the search (Amity University, LPU, JAIN, Uttaranchal (UU)).
+Titles fit by dropping "| edifyedu.in" first, then NAAC, then the fee, because
+`clampTitle` kept the suffix and cut Amity's title down to "Courses". All 143
+titles are 60 characters or under; 90 carry a labelled MBA fee.
+
+**3. MBA SEO overrides (`lib/mba-seo-overrides.ts`).** NMIMS claimed NAAC A+
+in its description and intro; `lib/data.ts` has A++. Chandigarh's MBA page
+showed its University rank #19; now Management #32. LPU, NMIMS, DY Patil and
+MAHE titles ran 69-75 characters with no fee on fee queries; now fee-led from the
+governed figure. NMIMS now names Narsee Monjee (9,900/month, KD 0, absent from
+every title and description). DY Patil's description said "Mumbai/Pune campus",
+mixing D.Y. Patil University, Navi Mumbai with Dr. D.Y. Patil Vidyapeeth, Pune;
+it now says which institution it is.
+
+**Seen, not fixed (pre-existing, layout title pattern):** five duplicate-title
+groups among indexed pages, e.g. University of Mumbai /bba /bca /mba /mca all
+titled "University of Mumbai Online (MA, BBA, BCA, Fees 2026) | EdifyEdu", and
+Madurai Kamaraj /bca /mba /mca. These hubs fall back to the [id]/layout title.
+University of Mumbai's description also says "Based in Pune".
+
+## 2026-10-26 · Uttaranchal is NAAC A+ on every peer page; MUJ MBA title carries its fee
 
 Two defects surfaced by the MUJ/Uttaranchal January 2027 fee sweep (8359b5b).
 

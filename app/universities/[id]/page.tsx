@@ -3,11 +3,24 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
+import { nirfForProgramme } from '@/lib/data-slim'
 import UniversityPageClient from '@/components/UniversityPageClient'
 import { getResolvableProgrammes, getVerifyPage } from '@/lib/seo/safe-internal-links'
 import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
+import { getDisplayFee } from '@/lib/fees'
 import { pageKeywords } from '@/lib/page-keywords'
 import { shouldIndexUniversity, onlinePrefix } from '@/lib/seo/mode-unverified'
+
+// The phrase people type for a university's online arm, where it differs from
+// the short title name. Amity's short name is "Amity", but the searches are
+// "amity university online" (22,200/month) and "amity online"; the overview
+// title said neither. Source: Semrush India gap export, 26 Oct 2026.
+const SEARCH_BRAND: Record<string, string> = {
+  'amity-university-online': 'Amity University',
+  'lovely-professional-university-online': 'LPU',
+  'jain-university-online': 'JAIN',
+  'uttaranchal-university-online': 'Uttaranchal (UU)',
+}
 
 // ── Static Params (SSG) — pre-render all university pages at build time ──
 export async function generateStaticParams() {
@@ -30,11 +43,14 @@ export async function generateMetadata(
   const cleanName = u.name.replace(/\s+online\s*$/i, '')
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const progStr = u.programs.slice(0, 3).join(', ')
-  const feeMin = Math.round(u.feeMin / 1000)
-  const feeMax = Math.round(u.feeMax / 1000)
-  const hasFee = u.feeMin > 0
-  const feeStr = feeMin === feeMax ? `₹${feeMin}K` : `₹${feeMin}K-${feeMax}K`
-  const feeSeg = hasFee ? `Fees ${feeStr}, ` : ''
+  // feeMin/feeMax are MBA-led, so printing them as "fees" for the whole
+  // university misstated every non-MBA programme. Show the MBA fee, labelled,
+  // from getDisplayFee so a suppressed figure stays suppressed here too.
+  const mbaFee = u.programs.includes('MBA') ? getDisplayFee(u, 'MBA') : null
+  const hasFee = !!(mbaFee && mbaFee.ok && mbaFee.compact)
+  const feeStr = hasFee ? `MBA ${mbaFee!.compact}` : ''
+  const feeSeg = hasFee ? `${feeStr}, ` : ''
+  const brandName = SEARCH_BRAND[u.id] || titleName
   // "UGC-DEB Entitled" is the no-NAAC fallback, but for a mode-unverified
   // university that phrase reads as an online entitlement we cannot support.
   // See lib/seo/mode-unverified.ts.
@@ -43,20 +59,29 @@ export async function generateMetadata(
     : shouldIndexUniversity(u.id) ? 'UGC-DEB Entitled' : 'Delivery Mode Unconfirmed'
   const mainProg = u.programs[0] || 'MBA'
   const specCount = Object.values(u.programDetails || {}).reduce((sum, pd) => sum + (pd?.specs?.length || 0), 0)
-  const nirfStr = u.nirf && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
-  const nirfHook = u.nirf && u.nirf < 100 ? ` NIRF #${u.nirf},` : ''
+  const nirfLabel = nirfForProgramme(u)
+  const nirfStr = nirfLabel ? `, ${nirfLabel}` : ''
+  const nirfHook = nirfLabel ? ` ${nirfLabel},` : ''
   // CTR-tuned title (2026-05-25): lead with brand, fee number first, NAAC + bracket year hook.
   // Pattern: "{Uni} Online: ₹{fee} Fees, NAAC {grade} [{year} Review] | EdifyEdu"
-  const title = `${titleName} ${onlinePrefix(u.id)}${year}: ${feeSeg}${naacSeg} [Review] | EdifyEdu`
+  // Facts first: the fee and grade earn the click, the brand suffix does not.
+  // clampTitle keeps the suffix and cuts the body, which left "Courses" alone.
+  const head = `${brandName} ${onlinePrefix(u.id)}${year}: Courses`
+  const title = [
+    `${head}, ${feeSeg}${naacSeg} | edifyedu.in`,
+    `${head}, ${feeSeg}${naacSeg}`,
+    hasFee ? `${head}, ${feeStr}` : `${head}, ${naacSeg}`,
+    `${head} | edifyedu.in`,
+  ].find(c => c.length <= 60) ?? head
   const specStr = specCount > 3 ? ` ${specCount}+ specialisations.` : ''
   const cityStr = u.city && u.city !== 'Online' ? ` Based in ${u.city}.` : ''
   // CTR-tuned description: numeric facts first, no "Compare/Explore" lead, micro-CTA at end.
-  let description = `${cleanName} online ${progStr}: ${hasFee ? `fees ${feeStr},` : ''}${nirfHook} ${naacSeg}. UGC-DEB approved.${specStr}${cityStr} Check ${year} eligibility, syllabus & placement data free.`
+  let description = `${cleanName} online courses: ${progStr}.${hasFee ? ` ${feeStr} fees.` : ''}${nirfHook} ${naacSeg}. UGC-DEB approved.${specStr}${cityStr} Check ${year} eligibility, syllabus & placement data free.`
   if (description.length < 150) {
     // Same guards as the primary description. A record with few programmes and
     // no city produces a short primary string and falls through to here, which
     // is how "fees 0K, NAAC  accredited" reached the meta tags.
-    description = `${cleanName} online ${progStr} ${year}: ${hasFee ? `fees ${feeStr}, ` : ''}${u.naac ? `NAAC ${u.naac} accredited` : 'UGC-DEB entitled'}${nirfStr}.${specStr}${cityStr} See verified fees, syllabus & honest placement data. Check eligibility free.`
+    description = `${cleanName} online courses ${year}: ${progStr}.${hasFee ? ` ${feeStr} fees.` : ''} ${u.naac ? `NAAC ${u.naac} accredited` : 'UGC-DEB entitled'}${nirfStr}.${specStr}${cityStr} See verified fees, syllabus & honest placement data. Check eligibility free.`
   }
 
   const keywords = [

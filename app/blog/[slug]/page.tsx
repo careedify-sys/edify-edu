@@ -5,7 +5,7 @@ import { Metadata, ResolvingMetadata } from 'next'
 import { Clock, Calendar, ChevronRight, Hash, BookOpen } from 'lucide-react'
 import { getBlogPost, getPublishedPosts } from '@/lib/blog'
 import { BLOG_QUICK_FACTS } from '@/lib/blog-quick-facts'
-import { getSlimById } from '@/lib/data-slim'
+import { getSlimById, formatNirfBadge } from '@/lib/data-slim'
 import BlogLeadForm from '@/components/BlogLeadForm'
 import BlogClientActions from '@/components/BlogClientActions'
 import BlogTOC from '@/components/BlogTOC'
@@ -648,7 +648,7 @@ export default async function BlogPostPage({ params }: Props) {
                                 className="text-[10px] font-bold uppercase tracking-wider"
                                 style={{ color: '#D4922A' }}
                               >
-                                {u.nirf > 0 && u.nirf < 900 ? `NIRF #${u.nirf}` : 'UGC Approved'}
+                                {formatNirfBadge(u, { style: 'long', prefer: 'university' }) ?? 'UGC Approved'}
                               </div>
                             </div>
                           </Link>

@@ -2,6 +2,7 @@
 import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getUniversityById } from '@/lib/data'
+import { nirfForProgramme } from '@/lib/data-slim'
 import { getProgramSpecParams, resolveSpec } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
 import { getTitleName, getShortTitleName, shortenSpec, clampTitle, clampTitleSpecLed, clampDescription, compactFee } from '@/lib/seo-title'
@@ -41,7 +42,8 @@ export async function generateMetadata(
   const shortSpec = shortenSpec(spec)
   const pd = u.programDetails['BCA']
   const fee = compactFee(pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`)
-  const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
+  const nirfLabel = nirfForProgramme(u, 'BCA')
+  const nirfStr = nirfLabel ? `, ${nirfLabel}` : ''
   // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
   return {
     title: clampTitleSpecLed(

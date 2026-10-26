@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { getUniversityById, formatFee, specName } from '@/lib/data'
+import { nirfForProgramme } from '@/lib/data-slim'
 import type { Program } from '@/lib/data'
 import { getTitleName } from '@/lib/seo-title'
 import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
@@ -120,12 +121,13 @@ export async function generateMetadata({ params }: { params: { id: string; progr
   const pd = u.programDetails[prog as keyof typeof u.programDetails]
   const fee = pd?.fees || `${formatFee(u.feeMin)}–${formatFee(u.feeMax)}`
   const specs = pd?.specs?.slice(0, 3).map(s => specName(s)).join(', ') || ''
-  const nirf = u.nirf < 200 ? `NIRF #${u.nirf}` : u.nirfMgt ? `NIRF #${u.nirfMgt} ${u.nirfCategory || 'Mgmt'}` : `NAAC ${u.naac}`
+  const nirfLabel = nirfForProgramme(u, prog)
+  const nirf = nirfLabel ?? `NAAC ${u.naac}`
 
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const title = `${titleName} ${progTitle} — Fees & Syllabus 2026 | EdifyEdu`
 
-  const baseDescription = `January 2027 admissions open till March. Online ${progTitle} at ${seoName}: ${fee} total${naacSegment(u.naac)}${u.nirf < 200 ? `, NIRF #${u.nirf}` : ''}.${specs ? ` Specs: ${specs}.` : ''} UGC DEB approved. Compare & apply!`
+  const baseDescription = `January 2027 admissions open till March. Online ${progTitle} at ${seoName}: ${fee} total${naacSegment(u.naac)}${nirfLabel ? `, ${nirfLabel}` : ''}.${specs ? ` Specs: ${specs}.` : ''} UGC DEB approved. Compare & apply!`
 
   const sn = seoName.toLowerCase()
 
