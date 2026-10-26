@@ -11,6 +11,7 @@ import { COUPONS } from '@/lib/coupons'
 import type { Program } from '@/lib/data'
 import { getPageContent } from '@/lib/data/page-content'
 import { getDisplayFee } from '@/lib/fees'
+import { nirfForProgramme } from '@/lib/data-slim'
 import type { PageContent } from '@/lib/data/page-content-schema'
 
 import SchemaBlock       from './SchemaBlock'
@@ -163,7 +164,10 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
   // getDisplayFee resolves the fee for this programme.
   const programFee = getDisplayFee(u, program)
   const feeStr = programFee.ok ? programFee.range : null
-  const nirfSuffix = u.nirf > 0 && u.nirf < 500 ? ` and a NIRF rank of #${u.nirf}` : ''
+  // Was "a NIRF rank of #22" from u.nirf on every programme, so the MBA FAQ gave
+  // Amity's University rank with no category. Management first for MBA/BBA.
+  const nirfLabel = nirfForProgramme(u, program)
+  const nirfSuffix = nirfLabel ? ` and a ${nirfLabel} rank` : ''
 
   const templateFaqs: { q: string; a: string }[] = [
     { q: `What is the total fee for ${program} at ${cleanName}?`,

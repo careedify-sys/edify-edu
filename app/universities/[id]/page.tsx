@@ -150,7 +150,7 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
         name: u.name,
         url: `https://edifyedu.in/universities/${u.id}`,
         telephone: '+91-7061285806',
-        description: `${u.name} is a UGC DEB approved university offering online degrees.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}${u.nirf < 200 ? ` NIRF ranked #${u.nirf}.` : ''}`,
+        description: `${u.name} is a UGC DEB approved university offering online degrees.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}${u.nirf < 200 ? ` NIRF #${u.nirf} University.` : ''}`,
         ...(kw ? { keywords: kw } : {}),
         // Omit a field we do not have rather than inventing one. This used to
         // read `u.city !== 'Online' ? u.city : u.name.split(' ')[0]`, which

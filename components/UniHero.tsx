@@ -66,7 +66,7 @@ export default function UniHero({ u, program, pd, cleanName, spec, customH1 }: P
     ...((u as any).nirfMgt && (u as any).nirfMgt < 200
       ? [{ label: 'NIRF Mgmt', value: `#${(u as any).nirfMgt}`, highlight: false }]
       : u.nirf > 0 && u.nirf < 500
-        ? [{ label: 'NIRF', value: `#${u.nirf}`, highlight: false }]
+        ? [{ label: 'NIRF Univ', value: `#${u.nirf}`, highlight: false }]
         : []),
   ]
 

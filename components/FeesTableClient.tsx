@@ -178,7 +178,7 @@ export default function FeesTableClient() {
                     <NaacBadge grade={u.naac} />
                   </td>
                   <td className="px-3 py-3 text-center text-ink-2 text-xs">
-                    {u.nirf < 999 ? `#${u.nirf}` : '—'}
+                    {u.nirf < 999 ? `#${u.nirf} Univ` : 'NR'}
                     {u.nirfMgt && u.nirfMgt < 999 ? (
                       <div className="text-ink-3 text-[10px]">Mgt #{u.nirfMgt}</div>
                     ) : null}

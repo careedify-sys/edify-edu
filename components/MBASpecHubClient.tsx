@@ -144,7 +144,7 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
                     <td className="px-4 py-3">
                       <Link href={`/universities/${u.id}/mba`} className="font-medium text-blue-700 hover:underline">{u.name}</Link>
                     </td>
-                    <td className="px-4 py-3">{u.nirfMgt && u.nirfMgt < 500 ? `#${u.nirfMgt} (Mgmt)` : u.nirf > 0 && u.nirf < 500 ? `#${u.nirf}` : 'Not ranked (Mgmt)'}</td>
+                    <td className="px-4 py-3">{u.nirfMgt && u.nirfMgt < 500 ? `#${u.nirfMgt} (Mgmt)` : u.nirf > 0 && u.nirf < 500 ? `#${u.nirf} (Univ)` : 'Not ranked (Mgmt)'}</td>
                     <td className="px-4 py-3">{u.naac || 'NA'}</td>
                     <td className="px-4 py-3">{(() => {
                       const mf = mbaFeeMap?.[u.id]

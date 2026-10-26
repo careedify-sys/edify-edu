@@ -1,5 +1,22 @@
 # Fix log
 
+## 2026-10-27 · check-nirf-category catches "#${...nirf...}"; 7 more bare ranks fixed
+
+The ComparisonTable bare rank (fixed in 73c72f9) slipped past the gate because PATTERN only matched "NIRF #${expr}".
+Added PATTERN2 for "#${expr mentioning nirf}" with the category accepted before the # (label: 'NIRF University',
+(Uni) #) or after it ("#${u.nirf} Univ", "(Mgmt)"), plus a 3-entry ALLOW2 with reasons (a column headed "NIRF
+University" on /best-online-mba-india, the internal enquiry email, the internal leads tool). Self-test now includes
+the exact ComparisonTable form: 3 of 3 caught, 0 false positives. Proven both ways: 7 hits on the unfixed pages, 0 after.
+
+Fixed: university overview schema description ("NIRF ranked #22." -> "NIRF #22 University."), UniProgramBody NAAC FAQ
+(nirfForProgramme, so MBA/BBA give the Management rank), MBASpecHubClient fallback (Univ), FeesTableClient (Univ),
+/programs/mba/specializations/[spec] table (Management first), UniHero badge label "NIRF" -> "NIRF Univ", and
+UniversityPageClient quick facts labelled the University rank "NIRF Overall", a different NIRF table.
+
+Also lib/specFaqs.ts (static prose, outside both patterns): "MAHE (NIRF #3)" -> NIRF #3 University category; dropped
+"Amity (WASC+QAA)", the same unbacked claim removed from Amity's MBA intro on 26 Oct; fees now exact from
+getDisplayFee (IGNOU Rs 66,000, Galgotias Rs 80,200).
+
 ## 2026-10-27 · University-page comparison table: uncategorised NIRF rank and MBA fees on every programme
 
 components/ComparisonTable.tsx (peer table on every /universities/{id}/{programme} and spec page) printed

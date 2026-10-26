@@ -701,7 +701,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                 <div className="bg-white border border-border rounded-xl p-4">
                   <div className="font-bold text-navy text-sm mb-3">Quick Facts</div>
                   {[
-                    ...(u.nirf < 100 ? [{ label: 'NIRF Overall', value: `#${u.nirf}` }] : []),
+                    ...(u.nirf < 100 ? [{ label: 'NIRF University', value: `#${u.nirf}` }] : []),
                     ...(u.nirfMgt && u.nirfMgt < 100 ? [{ label: 'NIRF Management', value: `#${u.nirfMgt}` }] : []),
                     ...(u.naac ? [{ label: 'NAAC Grade', value: u.naacScore ? `${u.naac} (${u.naacScore})` : u.naac }] : []),
                     ...([u.city, u.state].filter(Boolean).length ? [{ label: 'Location', value: [u.city, u.state].filter(Boolean).join(', ') }] : []),
