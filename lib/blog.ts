@@ -46850,7 +46850,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 <h2>Related Reading</h2>
 <div style="display:flex;flex-wrap:wrap;gap:8px;margin:16px 0">
   <a class="il-card" href="/blog/mba-fees-india-complete-guide-2026">MBA Fees India Complete Guide</a>
-  <a class="il-card" href="/blog/affordable-online-mba-india-2026">Affordable Online MBA India</a>
+  <a class="il-card" href="/blog/online-degree-scholarships-india">Online Degree Scholarships: Who Qualifies</a>
   <a class="il-card" href="/blog/best-online-mba-colleges-india-2026">Best Online MBA Colleges</a>
   <a class="il-card" href="/blog/is-online-mba-worth-it-2026">Is Online MBA Worth It?</a>
   <a class="il-card" href="/blog/naac-accreditation-explained-grades-india-2026">NAAC Accreditation Explained</a>
@@ -49767,6 +49767,177 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 </ul>
 
 <p class="disclaimer"><em>Last verified on 26 October 2026. Entitlement is per programme and per session. Confirm on deb.ugc.ac.in before you enrol, and confirm fees on the university's official portal, since any fee shown on edifyedu.in is indicative.</em></p>
+    `,
+  },
+  {
+    slug: 'online-degree-scholarships-india',
+    title: 'Online Degree Scholarships in India 2026: Who Qualifies and How to Check',
+    seoTitle: 'Online Degree Scholarships India 2026: Who Qualifies',
+    h1Title: 'Online Degree Scholarships in India: Who Qualifies, What UGC Requires, and How to Check an Offer',
+    metaDescription: 'Online degree scholarships come from three places: the university, government schemes and your employer. What UGC rules require and how to check an offer before you pay.',
+    category: 'Fees',
+    tags: ['Online Degree Scholarship', 'Scholarship', 'Online Degree Fees', 'UGC Rules', 'Fee Waiver', 'Student Guidance'],
+    publishedAt: '2026-10-26',
+    readTime: 8,
+    targetKeyword: 'online degree scholarships',
+    relatedUniversities: ['uttaranchal-university-online', 'manipal-university-jaipur-online'],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/14907339/pexels-photo-14907339.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@ravi-roshan-2875998" target="_blank" rel="noopener nofollow">Ravi Roshan</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Top view of various Indian rupee banknotes and coins, highlighting financial themes.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'Are scholarships available for online degrees in India?', a: 'Yes. Many UGC-entitled universities publish their own scholarships or fee waivers for online programmes, government fee-waiver schemes for SC, ST, PwD and economically deprived learners can apply, and some employers sponsor staff. Each has its own eligibility rules, so check the specific scheme rather than assuming.' },
+      { q: 'What does UGC say about scholarships for online learners?', a: 'Regulation 14(2)(iii) of the UGC ODL and Online Programmes Regulations, 2020 says fee waivers and scholarships for SC, ST, PwD and deprived-section learners follow the orders of the Central or State Government. The same regulation requires universities to declare all fees in the prospectus and on their website.' },
+      { q: 'Can I get a government scholarship for an online degree?', a: 'It depends on the scheme. UGC leaves these waivers to Central and State Government orders, and each scheme sets its own conditions, which can include mode of study. Read the scheme notice for the words online or distance, and ask the university scholarship cell in writing whether online learners are covered.' },
+      { q: 'Is a university scholarship on an online degree a real discount?', a: 'Compare the amount you actually pay, not the percentage. If every applicant receives the same scholarship, it works as the price. What matters is the payable total, whether it applies to every semester, and what conditions can take it away.' },
+      { q: 'Should I pay a scholarship amount to an agent or counsellor?', a: 'No. UGC regulations require online programme fees to be paid only to the university, by online transfer, bank draft or pay order, against a written receipt. A scholarship that needs a payment to anyone else is a warning sign.' },
+      { q: 'Can I lose an online degree scholarship after admission?', a: 'Some scholarships carry conditions such as minimum marks, continuous enrolment or paying on time. Ask the university to state in writing whether the scholarship applies to every semester and what ends it, before you pay the first instalment.' },
+    ],
+    ctaTitle: 'Compare the fee you would actually pay',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">"Scholarship" is the most used word in online degree advertising and the least explained. Here is where the money really comes from, what UGC rules require, and how to test an offer before you pay.</p>
+
+<p><strong>Short answer:</strong> Scholarships for online degrees in India come from three places: the <strong>university itself</strong>, <strong>government fee-waiver schemes</strong> for SC, ST, PwD and economically deprived learners, and <strong>employers</strong> who sponsor staff. UGC rules require universities to publish every fee on their website and to accept payment only directly, and they leave reserved-category waivers to Central and State Government orders. So the test for any offer is simple: get the payable amount in writing, from the university, before you pay.</p>
+
+<div class="callout-key">
+<strong>Online degree scholarships in one box (last verified 26 October 2026)</strong>
+<ul>
+<li><strong>University scholarships:</strong> set by each university; often a percentage off the listed fee, sometimes applied to every applicant</li>
+<li><strong>Government waivers:</strong> for SC, ST, PwD and deprived-section learners, under Central or State Government orders (UGC Regulation 14(2)(iii), 2020)</li>
+<li><strong>Employer sponsorship:</strong> depends on your employer's policy; ask HR before you enrol</li>
+<li><strong>UGC rule on fees:</strong> declared in the prospectus and on the university website, paid only to the university, with a written receipt</li>
+<li><strong>Red flag:</strong> any "scholarship" that needs a payment to an agent</li>
+</ul>
+</div>
+
+<h2>Where do online degree scholarships come from?</h2>
+
+<p>There are three sources, and they work very differently. Knowing which one an offer belongs to tells you who decides it and where to check it.</p>
+
+<figure class="svg-figure">
+<svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of the three sources of online degree scholarships: the university, which sets its own scholarship and publishes it on its website; the government, whose fee waivers for SC, ST, PwD and deprived learners follow Central or State orders; and the employer, whose sponsorship follows company policy">
+<rect width="640" height="220" fill="#ffffff"/>
+<text x="320" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Three sources, three different people to ask</text>
+<g font-size="12" text-anchor="middle">
+<rect x="20" y="48" width="190" height="150" rx="10" fill="#f1f5f9" stroke="#f97316" stroke-width="2"/>
+<text x="115" y="76" font-size="14" font-weight="700" fill="#0f172a">University</text>
+<text x="115" y="104" fill="#0f172a">Sets its own scholarship</text>
+<text x="115" y="124" fill="#0f172a">Must publish fees on</text>
+<text x="115" y="140" fill="#0f172a">its website</text>
+<text x="115" y="172" fill="#64748b">Ask: admissions office</text>
+<rect x="225" y="48" width="190" height="150" rx="10" fill="#f1f5f9" stroke="#10b981" stroke-width="2"/>
+<text x="320" y="76" font-size="14" font-weight="700" fill="#0f172a">Government</text>
+<text x="320" y="104" fill="#0f172a">SC, ST, PwD and</text>
+<text x="320" y="124" fill="#0f172a">deprived learners, under</text>
+<text x="320" y="140" fill="#0f172a">Central or State orders</text>
+<text x="320" y="172" fill="#64748b">Ask: scholarship cell</text>
+<rect x="430" y="48" width="190" height="150" rx="10" fill="#f1f5f9" stroke="#B8892A" stroke-width="2"/>
+<text x="525" y="76" font-size="14" font-weight="700" fill="#0f172a">Employer</text>
+<text x="525" y="104" fill="#0f172a">Sponsorship or</text>
+<text x="525" y="124" fill="#0f172a">reimbursement under</text>
+<text x="525" y="140" fill="#0f172a">company policy</text>
+<text x="525" y="172" fill="#64748b">Ask: HR, in writing</text>
+</g>
+</svg>
+<figcaption>The government box follows Regulation 14(2)(iii) of the UGC ODL and Online Programmes Regulations, 2020.</figcaption>
+</figure>
+
+<h2>What do UGC rules say about scholarships and fees?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9929281/pexels-photo-9929281.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Woman holding a jar labeled 'savings' filled with coins, representing financial savings." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@towfiqu-barbhuiya-3440682" target="_blank" rel="noopener nofollow">Towfiqu barbhuiya</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>The UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020 deal with fees in Regulation 14. Three parts of it matter when you weigh a scholarship.</p>
+
+<ul>
+<li><strong>Fees must be public.</strong> A university may collect only the fees it has fixed and declared in its prospectus and on its website, and it must upload the details of every kind of fee it charges (Regulation 14(2)(i) and (ii)).</li>
+<li><strong>Pay the university only.</strong> Payment goes directly to the university by online transfer, bank draft or pay order, against a written receipt (Regulation 14(2)(i)(c)).</li>
+<li><strong>Reserved-category waivers follow government orders.</strong> Fee waivers and scholarships for SC, ST, PwD and deprived-section learners follow the instructions of the Central or State Government (Regulation 14(2)(iii)).</li>
+</ul>
+
+<p>The same clause adds that a university must not commercialise education and must provide equity and access to deserving learners. That is a principle, not a scholarship amount. It does not oblige any university to offer a particular discount.</p>
+
+<p class="pull">If a scholarship is not on the university's own website, ask why. UGC rules expect fees to be published there.</p>
+
+<h2>Can you get a government scholarship for an online degree?</h2>
+
+<p>Sometimes, and you have to check each scheme. UGC hands reserved-category waivers to Central and State Government orders, so there is no single national answer. Each scheme notice sets its own eligibility, and some conditions turn on the mode of study.</p>
+
+<p>Do three things before you count on government support:</p>
+
+<ol>
+<li><strong>Read the scheme's own notice.</strong> Look for the words "online", "distance" or "regular mode" in the eligibility section.</li>
+<li><strong>Ask the university's scholarship cell in writing</strong> whether its online learners have received this scheme before, and for which session.</li>
+<li><strong>Check the programme's entitlement.</strong> A scheme will not fund a programme that is not entitled for your session. Our <a href="/blog/ugc-deb-id-explained">DEB ID guide</a> shows how to confirm it.</li>
+</ol>
+
+<div class="callout-warning">
+<strong>Do not plan your budget around an unconfirmed government scholarship.</strong> If the scheme turns out to exclude online mode, you still owe the full fee. Get the university's written answer first.
+</div>
+
+<h2>How do university scholarships work on online degrees?</h2>
+
+<p>Most university scholarships on online programmes take a percentage off the listed fee. Two universities we track published their January 2027 charts this way. The figures below are indicative and come from the charts the universities shared for that batch.</p>
+
+<table>
+<thead><tr><th>Online MBA, January 2027 batch</th><th>Listed fee</th><th>Scholarship or discount</th><th>Fee after it</th></tr></thead>
+<tbody>
+<tr><td><a href="/universities/uttaranchal-university-online/mba">Uttaranchal University</a></td><td>₹1,48,000</td><td>30% scholarship</td><td>₹1,03,600 (₹25,900 a semester)</td></tr>
+<tr><td><a href="/universities/manipal-university-jaipur-online/mba">Manipal University Jaipur</a></td><td>₹1,84,000</td><td>15% discount</td><td>₹1,56,400</td></tr>
+</tbody>
+</table>
+
+<p>Read these as price information, not a ranking. A percentage tells you little on its own. A 30% scholarship on a higher list fee can leave you paying more than a smaller one on a lower fee, so always compare the figure you would actually pay.</p>
+
+<p>When a scholarship goes to every applicant in a batch, it works as the price. That is not a trick, but it means the "saving" is not a reason to hurry. Fees and scholarships change by batch, so confirm both on the official portal before you pay.</p>
+
+<h2>Six questions to ask before you accept a scholarship</h2>
+
+<ol>
+<li><strong>What is the total I will pay, in rupees?</strong> Ask for one number covering tuition, exam and any other fees.</li>
+<li><strong>Does it apply to every semester or year?</strong> A first-semester-only scholarship changes the total a lot.</li>
+<li><strong>What can end it?</strong> Ask about minimum marks, late payment and taking a break between semesters.</li>
+<li><strong>Is it on the university's website?</strong> UGC rules expect fees to be declared there.</li>
+<li><strong>Who do I pay?</strong> The answer must be the university, directly.</li>
+<li><strong>What happens to it if I withdraw?</strong> Read the refund clause with the <a href="/blog/ugc-fee-refund-policy">UGC fee refund policy</a> in mind.</li>
+</ol>
+
+<h2>Red flags in scholarship offers</h2>
+
+<ul>
+<li><strong>"Pay today or lose the scholarship."</strong> Batch scholarships usually run to a published deadline. Ask for that date in writing.</li>
+<li><strong>A scholarship paid through an agent.</strong> UGC rules route fees directly to the university.</li>
+<li><strong>A scholarship you cannot find on the official portal.</strong> If only a caller can describe it, get it in writing from the university.</li>
+<li><strong>An institution on the fake list.</strong> Check the <a href="/blog/ugc-fake-universities-list-2026">UGC fake universities list</a> before anything else.</li>
+</ul>
+
+<h2>Does your employer pay for online degrees?</h2>
+
+<p>Some employers sponsor or reimburse study that fits the job. The rules sit in your company's policy, not in any UGC regulation. Ask HR three things before you enrol: whether the programme and university qualify, whether payment comes upfront or after you pass, and whether you must stay for a set period afterwards.</p>
+
+<p>Keep the university's receipts and the programme's UGC-DEB entitlement proof. HR teams often ask for both.</p>
+
+<h2>If there is no scholarship: other ways to spread the cost</h2>
+
+<p>Most online programmes let you pay by semester, and many offer EMI through a lending partner. Our <a href="/tools/emi-calculator">EMI calculator</a> shows what a monthly plan costs over the full term. For MBA-specific scholarship types and traps, read our <a href="/blog/online-mba-scholarship-india-2026">online MBA scholarship guide</a>.</p>
+
+<p>If you have not settled on a programme yet, start with our guide to <a href="/blog/online-degree-courses-india">online degree courses in India</a>, then <a href="/compare">compare universities side by side</a>.</p>
+
+<div class="cta-box">
+<p><strong>Not sure whether an offer is real?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulation 14 (Admission and fees): deb.ugc.ac.in</li>
+<li>Uttaranchal University Online, January 2027 fee chart: onlineuu.in</li>
+<li>Manipal University Jaipur Online, January 2027 fee chart: onlinemanipal.com</li>
+</ul>
+
+<p class="disclaimer"><em>Last verified on 26 October 2026. Fees and scholarships are indicative and change by batch. Confirm the current figures on each university's official portal before you pay.</em></p>
     `,
   },
 ]

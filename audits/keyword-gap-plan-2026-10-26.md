@@ -52,7 +52,7 @@ Status key: TODO, WRITING, SHIPPED (commit), BLOCKED (reason).
 | 7 | Online degree courses in India (pillar) | `/blog/online-degree-courses-india` | online degree courses 5,400; online university in india 880; online degree courses in india 720; online degree in india 480; online graduation degree 1,300; accredited online degrees 1,300 ≈ **10,080** | No cross-programme pillar. Links down to all 10 programme hubs | SHIPPED 26 Oct |
 | 8 | Online master's / PG courses in India | `/blog/online-masters-pg-courses-india` | online masters, online pg courses, online postgraduate courses, online master degree courses ≈ **7,710** | No PG pillar above MBA/MCA/MA/MSc/MCom hubs | SHIPPED 26 Oct |
 | 9 | Online bachelor's / UG courses in India | `/blog/online-bachelors-ug-courses-india` | online graduation degree, online ug courses, online bachelor's degree in india ≈ **3,500** (psychology rows held, see C) | No UG pillar above BA/BBA/BCA/BCom/BSc hubs | SHIPPED 26 Oct |
-| 10 | Online degree scholarships | `/blog/online-degree-scholarships-india` | online degree scholarships 590 | No page. Needs per-uni facts from data; may block | TODO |
+| 10 | Online degree scholarships | `/blog/online-degree-scholarships-india` | online degree scholarships 590 | Anchored on UGC Reg 14(2) (fees public, pay university only, reserved waivers per govt orders). Only UU 30% and MUJ 15% as worked examples; no per-uni ranking. Old MBA scholarship post had 0 impressions in 6 months, linked as child | SHIPPED 2026-10-26 (local commit) |
 
 Batch 1 = items 1 to 6 (UGC regulation cluster, ≈62,000/mo, all answerable from `ugc.gov.in`).
 Batch 2 = items 7 to 10 (pillars that link the existing hubs).
@@ -169,4 +169,5 @@ eligibility follows the regulator. Feeds item 8 and the "one year online mba" ro
 - Bucket A part 2 DONE 2026-10-26: answer-first intros on Amity, LPU, NMIMS, Chandigarh, Symbiosis MBA hubs (unbacked claims removed, see FIX-LOG).
 - Bucket A part 3 DONE 2026-10-26: duplicate titles were 404 build artifacts (no fix); fixed overview MBA fee on 404 hubs, 26 caps names, 8 cities, "Based in Pune". Open: iiit-bangalore-online slug is IIIT Hyderabad; its NAAC A++ vs "NAAC A" conflict.
 - Bucket A part 4 DONE 2026-10-26: "Online Online" removed from 14 template lines (descriptions, schema).
-- Bucket A improve track: all listed items done ("Based in Pune" fixed in part 3). Next: item 10 (online degree scholarships), then measure Bucket A ~23 Nov.
+- Bucket A improve track: all listed items done ("Based in Pune" fixed in part 3).
+- Item 10 SHIPPED 2026-10-26. Writing queue 1-10 complete. Remaining: Bucket C validity explainers (need Rishi), psychology dispute, measure Bucket A ~23 Nov.

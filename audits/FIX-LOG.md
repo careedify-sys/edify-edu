@@ -1,5 +1,20 @@
 # Fix log
 
+## 2026-10-26 · Item 10: online degree scholarships post
+
+New post /blog/online-degree-scholarships-india (keyword gap item 10, "online degree scholarships" 590/month).
+The plan flagged it as likely blocked on per-university data. We hold verified scholarship figures for two
+universities only (Uttaranchal 30%, MUJ 15%, January 2027 charts), so the post does not rank or list offers.
+It answers from UGC Regulation 14(2) of the 2020 ODL/Online Regulations instead: fees must be declared on the
+website, paid only to the university, and reserved-category waivers follow Central or State orders. No claim
+about any named government scheme, since none is on the approved source list.
+
+The five rupee figures classify as NON_FEE in the scanner and passed only because the post is dated on the
+baseline day. Allowlisted against the charts recorded in lib/data.ts so they do not depend on that.
+
+The existing online-mba-scholarship-india-2026 post had zero impressions in six months of Pages.csv. One of
+its five duplicated Related Reading cards now points at the new post, so link count is unchanged.
+
 ## 2026-10-26 · "Online Online" in descriptions and schema names
 
 u.name already ends in " Online", and 14 visible template lines appended Online again: the BBA, BCA and MCA spec

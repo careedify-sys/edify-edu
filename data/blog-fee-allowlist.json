@@ -1252,6 +1252,51 @@
       "figure": 5000,
       "source": "UGC Notification on Refund of Fees, Oct 2018, clause 4.1.4, as reproduced in ugc.gov.in/pdfnews/1857727_Fee-Refund-Policy-2025-26.pdf",
       "note": "Regulatory cap, not a university fee: maximum processing charge (5% of fees, capped) in the 100% refund category."
+    },
+    {
+      "slug": "online-degree-scholarships-india",
+      "university": "uttaranchal-university-online",
+      "programme": "MBA",
+      "verified_date": "2026-10-26",
+      "figure": 148000,
+      "source": "Uttaranchal University Online January 2027 fee chart, owner supplied 2026-10-26, recorded in lib/data.ts (uttaranchal-university-online comment block)",
+      "note": "Listed MBA fee before the 30% scholarship (worked example table)."
+    },
+    {
+      "slug": "online-degree-scholarships-india",
+      "university": "uttaranchal-university-online",
+      "programme": "MBA",
+      "verified_date": "2026-10-26",
+      "figure": 103600,
+      "source": "Uttaranchal University Online January 2027 fee chart, owner supplied 2026-10-26, recorded in lib/data.ts (uttaranchal-university-online comment block)",
+      "note": "MBA fee after the 30% scholarship, semester-wise total."
+    },
+    {
+      "slug": "online-degree-scholarships-india",
+      "university": "uttaranchal-university-online",
+      "programme": "MBA",
+      "verified_date": "2026-10-26",
+      "figure": 25900,
+      "source": "Uttaranchal University Online January 2027 fee chart, owner supplied 2026-10-26, recorded in lib/data.ts (uttaranchal-university-online comment block)",
+      "note": "Per-semester MBA instalment after the 30% scholarship."
+    },
+    {
+      "slug": "online-degree-scholarships-india",
+      "university": "manipal-university-jaipur-online",
+      "programme": "MBA",
+      "verified_date": "2026-10-26",
+      "figure": 184000,
+      "source": "MUJ Online January 2027 fee chart, recorded in lib/data.ts (manipal-university-jaipur-online comment block; programFees.mba 156400/184000)",
+      "note": "Listed MBA fee before the 15% discount."
+    },
+    {
+      "slug": "online-degree-scholarships-india",
+      "university": "manipal-university-jaipur-online",
+      "programme": "MBA",
+      "verified_date": "2026-10-26",
+      "figure": 156400,
+      "source": "MUJ Online January 2027 fee chart, recorded in lib/data.ts (manipal-university-jaipur-online comment block; programFees.mba 156400/184000)",
+      "note": "MBA fee after the 15% discount."
     }
   ]
 }
