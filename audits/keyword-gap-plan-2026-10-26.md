@@ -169,4 +169,4 @@ eligibility follows the regulator. Feeds item 8 and the "one year online mba" ro
 - Bucket A part 2 DONE 2026-10-26: answer-first intros on Amity, LPU, NMIMS, Chandigarh, Symbiosis MBA hubs (unbacked claims removed, see FIX-LOG).
 - Bucket A part 3 DONE 2026-10-26: duplicate titles were 404 build artifacts (no fix); fixed overview MBA fee on 404 hubs, 26 caps names, 8 cities, "Based in Pune". Open: iiit-bangalore-online slug is IIIT Hyderabad; its NAAC A++ vs "NAAC A" conflict.
 - Bucket A part 4 DONE 2026-10-26: "Online Online" removed from 14 template lines (descriptions, schema).
-- Bucket A next: University of Mumbai "Based in Pune".
+- Bucket A improve track: all listed items done ("Based in Pune" fixed in part 3). Next: item 10 (online degree scholarships), then measure Bucket A ~23 Nov.
