@@ -1614,6 +1614,16 @@
       "source": "/universities/ignou-online/m-com/international-business",
       "destination": "/universities/ignou-online/mcom/international-business",
       "permanent": true
+    },
+    {
+      "source": "/universities/manipal-university-jaipur-online/msc/general-management",
+      "destination": "/universities/manipal-university-jaipur-online/msc",
+      "permanent": true
+    },
+    {
+      "source": "/universities/manipal-academy-higher-education-online/msc/general-management",
+      "destination": "/universities/manipal-academy-higher-education-online/msc",
+      "permanent": true
     }
   ]
 }

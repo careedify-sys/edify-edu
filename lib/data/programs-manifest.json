@@ -7866,12 +7866,6 @@
     "spec_name": "General Management"
   },
   {
-    "university_slug": "manipal-university-jaipur-online",
-    "program": "msc",
-    "spec_slug": "general-management",
-    "spec_name": "General Management"
-  },
-  {
     "university_slug": "galgotias-university-online",
     "program": "mba",
     "spec_slug": "marketing-management",
@@ -8186,12 +8180,6 @@
   {
     "university_slug": "manipal-academy-higher-education-online",
     "program": "bcom",
-    "spec_slug": "general-management",
-    "spec_name": "General Management"
-  },
-  {
-    "university_slug": "manipal-academy-higher-education-online",
-    "program": "msc",
     "spec_slug": "general-management",
     "spec_name": "General Management"
   },

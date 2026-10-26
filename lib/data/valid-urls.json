@@ -1869,7 +1869,6 @@
   "/universities/manipal-academy-higher-education-online/mca/data-science",
   "/universities/manipal-academy-higher-education-online/mca/full-stack-development",
   "/universities/manipal-academy-higher-education-online/mca/general",
-  "/universities/manipal-academy-higher-education-online/msc/general-management",
   "/universities/manipal-university-jaipur-online/bba/general-management",
   "/universities/manipal-university-jaipur-online/bca/general-management",
   "/universities/manipal-university-jaipur-online/bcom/general-management",
@@ -1892,7 +1891,6 @@
   "/universities/manipal-university-jaipur-online/mca/comprehensive-emerging-technologies",
   "/universities/manipal-university-jaipur-online/mca/cybersecurity",
   "/universities/manipal-university-jaipur-online/mcom/general-management",
-  "/universities/manipal-university-jaipur-online/msc/general-management",
   "/universities/manonmaniam-sundaranar-university-online/ba/english-literature",
   "/universities/manonmaniam-sundaranar-university-online/bba/general-management",
   "/universities/manonmaniam-sundaranar-university-online/bcom/general-commerce",
@@ -2882,5 +2880,10 @@
   "/programs/msc/economics",
   "/programs/msc/mathematics",
   "/programs/msc/msc-data-science",
-  "/programs/msc/pure-mathematics"
+  "/programs/msc/pure-mathematics",
+  "/universities/manipal-university-jaipur-online/msc/mathematics",
+  "/universities/manipal-academy-higher-education-online/msc/biostatistics",
+  "/universities/manipal-academy-higher-education-online/msc/financial-economics",
+  "/universities/manipal-academy-higher-education-online/msc/data-science",
+  "/universities/manipal-academy-higher-education-online/msc/business-analytics"
 ]
