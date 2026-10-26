@@ -24,7 +24,7 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
     title: 'Amity Online MBA Fees 2026: ₹2.07L-₹2.25L | edifyedu.in',
     description: 'Amity University online MBA fees ₹2,07,000 to ₹2,25,000 total (₹8,906/mo EMI). 19 specializations, NAAC A+, WASC and QAA accredited. UGC-DEB approved. Zero-commission, verified fee data.',
     h1: 'Amity University Online MBA 2026: Fees, Specializations, and Honest Review',
-    intro: 'Amity University online MBA total fees range from ₹2,07,000 to ₹2,25,000 over two years, with EMI from ₹8,906 per month. The programme holds NAAC A+ accreditation and UGC-DEB approval, covering 19 specializations from Finance to Business Analytics. International accreditations from WASC and QAA strengthen the degree for candidates targeting global employers. edifyedu.in compares Amity online MBA fees against NMIMS, Symbiosis, and other approved universities using public data only.',
+    intro: 'The Amity University online MBA costs ₹2,07,000 to ₹2,25,000 in total over two years (four semesters), depending on the specialisation. You need a bachelor\'s degree with 50% marks to apply. Amity holds NAAC A+ accreditation, UGC-DEB approval and a NIRF Management rank of #49, and lists 19 specialisations, from Finance and Accounting to Business Analytics and Data Science. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Fees are indicative, so confirm the current figure on online.amity.edu before you pay.',
   },
   // Uttaranchal: data.ts feeMin=99600 (one-time), feeMax=148000 (before the 30%
   // scholarship); 1,03,600 is the semester-track total. The generic template
@@ -51,13 +51,13 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
     title: 'LPU Online MBA Fees 2026: ₹1.61L-₹2L | edifyedu.in',
     description: 'Lovely Professional University (LPU) online MBA fees ₹1.61L to ₹2L total. NAAC A++, NIRF #44 Management, UGC-DEB approved. Compare with Amity, Chandigarh, NMIMS.',
     h1: 'LPU Online MBA 2026: Fees, Review, and Specialization Guide',
-    intro: 'LPU online MBA from Lovely Professional University carries NAAC A++ accreditation, one of the top-rated programs in North India. LPU MBA fees are structured across four semesters with EMI options available. Lovely Professional University MBA fees are competitive against similar NAAC A++ programs. The program spans 15+ specializations including Finance, HR, Marketing, and Operations, delivered via weekend live sessions and recorded backups. edifyedu.in presents LPU online MBA fees and accreditation data from UGC-DEB and NAAC public records, without referral commissions.',
+    intro: 'The LPU (Lovely Professional University) online MBA costs ₹1,61,000 to ₹2,00,000 in total over two years (four semesters), and you can take up to four years to finish. You need a bachelor\'s degree with 50% marks to apply. LPU holds NAAC A++ accreditation, UGC-DEB approval and a NIRF Management rank of #44, and lists 12 specialisations, including Finance, Business Analytics, Data Science, and Banking and Financial Services. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Fees are indicative, so confirm the current figure on the official LPU Online portal before you pay.',
   },
   'nmims-online': {
     title: 'NMIMS Online MBA Fees 2026: ₹1.96L-₹2.2L | edifyedu.in',
     description: 'NMIMS (Narsee Monjee) online MBA fees ₹1.96L to ₹2.2L total. NAAC A++, NIRF #24 Management, UGC-DEB approved. Compare NMIMS vs Amity vs Symbiosis, zero commission.',
     h1: 'NMIMS Online MBA 2026: Fees, Specializations, and Independent Review',
-    intro: 'The NMIMS online MBA, from Narsee Monjee Institute of Management Studies, is one of India\'s most searched management programmes. NMIMS holds NAAC A++ accreditation and a NIRF Management rank of #24. NMIMS online MBA fees cover two years of coursework across Finance, Marketing, HR, Operations, and other specializations. The university holds UGC-DEB approval, giving the degree full validity for employment and higher studies. edifyedu.in compares NMIMS online MBA fees against Amity, Symbiosis, and MAHE using public regulatory data. Candidates shortlisting NMIMS frequently compare fees and specialization counts before applying.',
+    intro: 'The NMIMS (Narsee Monjee Institute of Management Studies) online MBA costs ₹1,96,000 to ₹2,20,000 in total over two years, with up to four years allowed to finish. You need a bachelor\'s degree with 50% marks to apply. NMIMS holds NAAC A++ accreditation, UGC-DEB approval and a NIRF Management rank of #24, and offers 6 specialisations: Business, Financial, Human Resource, IT, Marketing, and Operations and Data Sciences Management. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Fees are indicative, so confirm the current figure on the official NMIMS portal before you pay.',
   },
 
   // Sprint 1: fee-led rewrites for the 5 fee-stripping overrides + CU MBA reconciliation.
@@ -103,7 +103,7 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
     title: 'Chandigarh MBA Fees 2026: ₹1.65L-₹1.8L | edifyedu.in',
     description: 'Chandigarh University online MBA fees ₹1,65,000 to ₹1,80,000. NAAC A+, NIRF #32 Management, UGC-DEB approved. 25% Early Bird Scholarship available. Zero-commission, verified fee data.',
     h1: 'Chandigarh University Online MBA 2026: Fees, Scholarships, and Review',
-    intro: 'Chandigarh University online MBA total fees range from ₹1,65,000 to ₹1,80,000 across four semesters. The programme is UGC-DEB approved and NAAC A+ accredited, with a NIRF University rank of #19. Chandigarh University runs a 25% Early Bird Scholarship for eligible early applicants, verifiable on the UGC-DEB and NAAC public registers. Live classes are delivered on weekends via the CUOnline platform. edifyedu.in compares Chandigarh University MBA fees using public university data, not paid rankings.',
+    intro: 'The Chandigarh University online MBA costs ₹1,65,000 to ₹1,80,000 in total over two years (four semesters). You need a bachelor\'s degree with 50% marks to apply. Chandigarh University holds NAAC A+ accreditation, UGC-DEB approval and a NIRF Management rank of #32 (its NIRF University rank is #19), and lists 26 specialisations, from Finance and Marketing to FinTech and Data Science and AI. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Fees and scholarships change by batch, so confirm both on the official portal before you pay.',
   },
 
   'dy-patil-university-online': {
@@ -142,6 +142,6 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
     title: 'Symbiosis SSODL MBA Fees 2026: ₹3.15L-₹3.7L | edifyedu.in',
     description: 'Symbiosis SSODL online MBA fees ₹3,15,000 to ₹3,70,000 total. NAAC A++, NIRF #11 Management, UGC-DEB approved. Zero-commission, verified fee data. Compare vs NMIMS, Amity, MAHE.',
     h1: 'Symbiosis Online MBA 2026: SSODL Fees, Specializations, and Honest Review',
-    intro: 'Symbiosis online MBA from SSODL (Symbiosis School for Online and Digital Learning) total fees range from ₹3,15,000 to ₹3,70,000 depending on specialization, across a two-year programme. The programme is NAAC A++ accredited with a NIRF Management rank of #11 and UGC-DEB approval. Specializations include Finance, Marketing, Operations, Human Resource, Logistics and Supply Chain, Business Analytics, and Hospital and Healthcare Management. edifyedu.in reviews Symbiosis online MBA fees and placement data using NIRF and NAAC public databases, without paid rankings.',
+    intro: 'The Symbiosis online MBA from SSODL (Symbiosis School for Online and Digital Learning, Pune) costs ₹3,15,000 to ₹3,70,000 in total over two years, depending on the specialisation. You need a bachelor\'s degree with 50% marks to apply. Symbiosis holds NAAC A++ accreditation, UGC-DEB approval and a NIRF Management rank of #11, and offers 9 specialisations, including Finance, Business Analytics, Logistics and Supply Chain, and Agri Operations Management. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Fees are indicative, so confirm the current figure on the official SSODL portal before you pay.',
   },
 }

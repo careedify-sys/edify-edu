@@ -1,5 +1,30 @@
 # Fix log
 
+## 2026-10-26 · MBA hub intros rewritten as direct answers (Amity, LPU, NMIMS, Chandigarh, Symbiosis)
+
+Keyword gap improve track, Bucket A part 2. These hubs rank 38-61 for "X online
+mba fees". The override intro is the first paragraph under "Programme Overview"
+and the most extractable text on the page, but it opened with positioning copy and
+three of five never stated the fee.
+
+Each intro now answers in order: total fee and duration, eligibility, NAAC,
+UGC-DEB, NIRF Management rank, specialisation count, then the verify directive.
+Every figure comes from lib/data.ts through getDisplayFee.
+
+Claims removed because the data did not back them:
+- LPU "15+ specializations" (data lists 12), "one of the top-rated programs in
+  North India", "weekend live sessions".
+- Amity "EMI from ₹8,906" (emiFrom is 8,625), and "WASC and QAA" accreditations,
+  which are not in its approvals.
+- Chandigarh intro still led with NIRF University #19 on the MBA page; now
+  Management #32 with the University rank in brackets. Its scholarship sentence
+  said the offer was "verifiable on the UGC-DEB and NAAC public registers", which
+  do not list scholarships. "CUOnline platform" weekend classes also dropped.
+- Symbiosis "placement data" (the page cites none).
+
+Verified on the dev server: all five pages render the new paragraph.
+Measure with the Bucket A part 1 set around 23 Nov.
+
 ## 2026-10-26 · NIRF ranks always name their category; overview titles carry the searched brand and a labelled MBA fee
 
 Keyword gap improve track (audits/keyword-gap-plan-2026-10-26.md, Bucket A).
