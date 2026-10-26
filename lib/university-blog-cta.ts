@@ -85,7 +85,7 @@ export const MUJ_CONFIG: UniversityBlogCtaConfig = {
 
   verdictHeadline: 'Manipal University Jaipur is UGC-DEB approved and 100% legitimate',
   verdictSubheading: 'Considering MUJ Online for your degree?',
-  verdictDiscountLabel: '💰 See July 2026 Discount',
+  verdictDiscountLabel: '💰 See January 2027 Discount',
   verdictCompareLabel: '📊 Compare MUJ vs Others',
   verdictCounsellorLabel: '📞 Talk to Counsellor (Free)',
   couponSlug: 'manipal-jaipur-online-mba-discount-coupon-2026',
@@ -139,7 +139,7 @@ export const AMITY_CONFIG: UniversityBlogCtaConfig = {
 
   verdictHeadline: 'Amity Online MBA is UGC-DEB approved and AICTE recognised',
   verdictSubheading: 'Considering Amity Online for your MBA?',
-  verdictDiscountLabel: '💰 See July 2026 Discount',
+  verdictDiscountLabel: '💰 See January 2027 Discount',
   verdictCompareLabel: '📊 Compare Amity vs Tier-2 Universities',
   verdictCounsellorLabel: '📞 Talk to Counsellor (Free)',
   couponSlug: 'amity-online-mba-discount-coupon-2026',

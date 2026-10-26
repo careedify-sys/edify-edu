@@ -9,6 +9,30 @@ the fix by accident.
 
 ---
 
+## 2026-10-26 · Site-wide admissions messaging moved to the January 2027 batch
+
+The homepage banner, university page "Admissions Open" card, UniHero fallback,
+/compare badge, programme meta descriptions, MUJ coupon urgency card, verdict CTA
+labels and blog lead form still advertised the **July 2026 batch closing
+October 15-30**. That deadline had passed, so every page was telling students a
+batch was closing that was already closed.
+
+**Truth, owner-stated 2026-10-26:** January 2027 admissions are open and run till
+March 2027. 19 strings across 11 files now say that.
+
+Not changed, on purpose:
+- `lib/site-config.ts` still says July 2026. It is CMS-generated and nothing
+  imports it (grep for SITE_CONFIG / getSiteConfig finds only the definition).
+- Blog posts in `lib/blog.ts` that contain "July 2026 intake" timelines (about 25
+  posts). Those are article content with month-by-month plans and need a rewrite
+  per post, not a string swap. Parked pending Rishi.
+- "Fees as of July 2026" / "Published July 2026" lines. Those are dates, not batches.
+
+Verified: `tsc --noEmit` clean; grep for July 2026 outside lib/blog.ts and
+site-config returns only comments.
+
+---
+
 ## 2026-10-07 · One MUJ MBA fee, after three contradictory ones
 
 The site carried **three mutually contradictory prices for the same

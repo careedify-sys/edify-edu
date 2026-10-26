@@ -506,9 +506,9 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div>
                     <div className="text-[11px] font-bold text-amber uppercase tracking-widest mb-1">🎓 Admissions Open</div>
-                    <h2 className="font-display text-xl font-bold text-white mb-2">Admissions Open — July 2026 Batch</h2>
+                    <h2 className="font-display text-xl font-bold text-white mb-2">Admissions Open: January 2027 Batch</h2>
                     <ul className="flex flex-col gap-1.5">
-                      <li className="text-sm text-slate-300">📅 Last date to apply: <strong className="text-white">October 15–30, 2026</strong></li>
+                      <li className="text-sm text-slate-300">📅 Last date to apply: <strong className="text-white">March 2027</strong></li>
                       <li className="text-sm text-slate-300">💻 Mode: <strong className="text-white">100% Online — apply from anywhere in India</strong></li>
                       <li className="text-sm text-slate-300">✅ Eligibility: <strong className="text-white">{u.eligibility}</strong></li>
                     </ul>

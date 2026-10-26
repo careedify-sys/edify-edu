@@ -72,7 +72,7 @@ export default function UniHero({ u, program, pd, cleanName, spec, customH1 }: P
 
   const intakeLine = (pd as any).nextIntake
     ? `Next batch: ${(pd as any).nextIntake}`
-    : 'Next batch: Jul 2026'
+    : 'Next batch: Jan 2027'
 
   function scrollToLead() {
     document.getElementById('sticky-lead-card')?.scrollIntoView({ behavior: 'smooth', block: 'center' })

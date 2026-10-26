@@ -124,7 +124,7 @@ export default function ComparePage() {
         <div className="max-w-4xl mx-auto px-5 sm:px-6 pt-7 pb-2 sm:pt-10 sm:pb-4 relative z-10">
           <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-100 text-amber-700 text-[11px] font-bold uppercase tracking-widest mb-4">
             <span className="w-1.5 h-1.5 rounded-full bg-amber-700" />
-            July 2026 Session
+            January 2027 Session
           </span>
           <h1 className="text-[30px] sm:text-[38px] font-semibold leading-[1.1] mb-3" style={{ fontFamily: 'var(--font-display)', color: '#0f2756', letterSpacing: '-0.02em' }}>
             Compare Online <em className="italic font-medium" style={{ color: '#d97706' }}>MBAs</em> side-by-side.
