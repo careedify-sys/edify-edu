@@ -48620,6 +48620,166 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <p class="disclaimer"><em>Last verified against the UGC fake universities page on 26 October 2026. UGC revises this list without notice. Always confirm against the official page before acting on it.</em></p>
     `,
   },
+  {
+    slug: 'how-online-degree-exams-work-india',
+    title: 'How Do Online Degree Exams Work in India? UGC Rules 2026',
+    seoTitle: 'How Do Online Degree Exams Work in India? UGC Rules 2026',
+    h1Title: 'How Online Degree Exams Work in India: Proctoring, Marks and UGC Rules',
+    metaDescription: 'Online degree exams in India are proctored, either remotely or at a test centre. UGC caps internal marks at 30%. Here is how the exam, ID check and grading work.',
+    category: 'Online Degree Validity',
+    tags: ['Online Exams', 'Proctored Exams', 'UGC Regulations', 'Online Degree', 'UGC-DEB', 'Student Guidance'],
+    publishedAt: '2026-10-26',
+    readTime: 8,
+    targetKeyword: 'how do online exams work',
+    relatedUniversities: [],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/30858451/pexels-photo-30858451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@shootsaga" target="_blank" rel="noopener nofollow">Anil  Sharma</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Smiling young girl with headset on a video call, studying online at home.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'How do online exams work for a UGC-approved online degree?', a: 'The university runs a proctored exam each semester. Under the UGC 2020 regulations it can hold the exam at a designated test centre, on computer or on paper, or remotely through technology-mediated proctoring that watches you through your webcam and locks your screen.' },
+      { q: 'Can I write online degree exams from home?', a: 'Often, yes. The UGC regulations allow online examination through technology-mediated proctoring, which most universities use for online programmes. Some universities still use test centres for some or all papers, so check the exam section of your university before you enrol.' },
+      { q: 'How are marks split in an online degree?', a: 'UGC caps continuous assessment such as assignments and quizzes at 30 per cent of the marks. The end-semester exam carries at least 70 per cent. Both are shown separately on your grade card.' },
+      { q: 'How does the university confirm it is really me writing the exam?', a: 'The regulations require attendance to be authenticated biometrically against Aadhaar or another government identifier for Indian learners, and passports for international learners. In remote exams this usually means a photo and ID check through the webcam before the paper opens.' },
+      { q: 'What happens if my internet disconnects during an online exam?', a: 'It depends on the university. The regulations require test centres to have backup plans for power or application failure, but remote-exam rules on reconnection and re-tests are set by each university. Ask for the written policy before your first exam.' },
+      { q: 'Is an online degree with online exams valid?', a: 'Yes, if the programme is UGC-entitled. Regulation 22 of the UGC 2020 regulations treats online degrees from recognised institutions as equivalent to conventional degrees. Check the programme on deb.ugc.ac.in for your admission session.' },
+      { q: 'Can a university outsource its online exams?', a: 'No. The regulations say all assessment must be handled directly by the institution and no part of it may be outsourced. Invigilators and observers must be faculty from the university or another UGC-recognised institution.' },
+    ],
+    ctaTitle: 'Want to know how a specific university runs its exams?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">Every UGC-approved online degree ends each semester with a proctored exam. You may write it from home under webcam supervision or at a test centre. The rules on marks and identity checks are the same everywhere.</p>
+
+<p><strong>Short answer:</strong> online degree exams in India are <strong>proctored exams held at the end of every semester</strong>. Under the UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, a university can run them at a designated test centre, on a computer or on paper, or remotely through <strong>technology-mediated proctoring</strong>, where software watches you through your webcam. Assignments and quizzes can carry <strong>at most 30 per cent</strong> of your marks, and the end-semester exam carries <strong>at least 70 per cent</strong>.</p>
+
+<div class="callout-key">
+<strong>The rules in one box, from the UGC 2020 regulations (last checked 26 October 2026)</strong>
+<ul>
+<li><strong>Exam type:</strong> proctored, every semester</li>
+<li><strong>Where:</strong> a designated test centre, or remotely with technology-mediated proctoring</li>
+<li><strong>Marks split:</strong> continuous assessment up to 30%, end-semester exam at least 70%</li>
+<li><strong>Identity check:</strong> biometric, against Aadhaar or another government ID (passport for international learners)</li>
+<li><strong>Who runs it:</strong> the university itself. Outsourcing any part of assessment is not allowed</li>
+<li><strong>Degree value:</strong> equivalent to a conventional degree (Regulation 22)</li>
+</ul>
+</div>
+
+<h2>What is a proctored exam?</h2>
+
+<p>UGC defines a proctored examination as one held under the supervision of an approved person or technology that confirms two things: the identity of the person taking the test, and the integrity of the room they are taking it in. The format can be pen and paper, computer-based testing, or fully online.</p>
+
+<p>So "online exam" does not mean an open-book quiz you take whenever you like. It means a timed paper, on a fixed date, with someone or something watching. That supervision is what lets an online degree stand next to a regular one.</p>
+
+<h2>Can you write online degree exams from home?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159651/pexels-photo-9159651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A young woman focused on studying with her laptop in a modern indoor setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>In most cases, yes. Annexure II of the regulations lets a university running an online programme hold exams at a designated test centre, and it adds that the university "can also conduct online examination through technology mediated proctoring." That second route is the one most online universities use for most papers.</p>
+
+<p>Not every university uses it for every paper, though. Some keep test centres for end-semester exams, some for practical-heavy subjects, and some switch between the two from one session to the next. Before you enrol, read the examination section of the university's website and ask the admissions team in writing which format applies to your programme.</p>
+
+<figure class="svg-figure">
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram comparing the two exam formats UGC allows for online degrees: remote proctored exam at home and proctored exam at a designated test centre, both with biometric ID checks and a 70 per cent minimum weight for the end-semester exam">
+<rect width="640" height="300" fill="#ffffff"/>
+<text x="320" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Two exam formats UGC allows for online degrees</text>
+<rect x="24" y="48" width="280" height="190" rx="10" fill="#f1f5f9" stroke="#0f172a" stroke-width="1.5"/>
+<text x="164" y="76" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Remote proctored exam</text>
+<g font-size="12" fill="#0f172a">
+<text x="44" y="104">Where: your home or office</text>
+<text x="44" y="128">Needs: laptop, webcam, stable internet</text>
+<text x="44" y="152">Watched by: proctoring software,</text>
+<text x="44" y="170">often with human review</text>
+<text x="44" y="194">ID check: photo and ID on webcam</text>
+<text x="44" y="218">Common for most online programmes</text>
+</g>
+<rect x="336" y="48" width="280" height="190" rx="10" fill="#f1f5f9" stroke="#f97316" stroke-width="1.5"/>
+<text x="476" y="76" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Test centre exam</text>
+<g font-size="12" fill="#0f172a">
+<text x="356" y="104">Where: a designated test centre</text>
+<text x="356" y="128">Format: computer-based or pen and paper</text>
+<text x="356" y="152">Watched by: proctors in each room,</text>
+<text x="356" y="170">CCTV recording</text>
+<text x="356" y="194">ID check: biometric at check-in</text>
+<text x="356" y="218">Used by some universities or papers</text>
+</g>
+<rect x="24" y="252" width="592" height="34" rx="8" fill="#0f172a"/>
+<text x="320" y="274" text-anchor="middle" font-size="12.5" fill="#ffffff">Both: end-semester exam at least 70% of marks. Assignments and quizzes at most 30%.</text>
+</svg>
+<figcaption>Source: UGC (ODL and Online Programmes) Regulations, 2020, Regulation 15 and Annexure II.</figcaption>
+</figure>
+
+<h2>How does a remote proctored exam work, step by step?</h2>
+
+<p>The software differs between universities, but the sequence is close to identical. Here is what a typical end-semester paper looks like from the student's side.</p>
+
+<ol>
+<li><strong>Exam slot and admit card.</strong> The university publishes a schedule and issues an admit card or exam link on its learning portal, usually after you clear any pending fee.</li>
+<li><strong>System check.</strong> You run a compatibility test in advance: browser, webcam, microphone and internet speed. Do this a day early, not ten minutes before.</li>
+<li><strong>Identity check.</strong> You show your face and a government ID to the camera. The regulations require biometric authentication against Aadhaar or another government identifier, which in a remote exam usually takes this form.</li>
+<li><strong>Room scan.</strong> Many systems ask you to turn the camera around the room to show your desk is clear.</li>
+<li><strong>Locked paper.</strong> The exam opens in a locked browser. Switching tabs, opening another app or leaving the frame can be flagged.</li>
+<li><strong>Submission and review.</strong> Flags raised by the software are typically reviewed by a person before any action is taken.</li>
+</ol>
+
+<div class="callout-warning">
+<strong>Ask for the disconnection policy in writing.</strong> The regulations require test centres to have backup plans for power or application failure. They do not spell out what happens if your home internet drops mid-paper. Each university sets that rule itself, including whether you get a re-test and whether it costs extra.
+</div>
+
+<h2>How are marks split between assignments and exams?</h2>
+
+<p>Regulation 15 fixes the split for every ODL and online programme. Continuous or formative assessment, meaning assignments, quizzes and similar work during the semester, can count for <strong>a maximum of 30 per cent</strong>. The summative end-semester or term-end exam must count for <strong>a minimum of 70 per cent</strong>.</p>
+
+<p>That has a practical consequence. You cannot coast through an online degree on assignments alone. The proctored exam decides most of your grade, which is exactly why UGC regulates it so closely. Your grade card shows the two components separately, so anyone reading it can see both.</p>
+
+<p class="pull">An online degree is graded mostly by a supervised exam, not by homework.</p>
+
+<h2>Who sets and checks the papers?</h2>
+
+<p>The university does, and only the university. Annexure II says all assessment must be handled directly by the institution and no part of it may be outsourced. Invigilators, exam superintendents and observers must be full-time faculty of the university or qualified faculty from another UGC-recognised institution.</p>
+
+<p>This rule is one of the quieter tests of a legitimate programme. If an "online degree" offer comes through an agent who promises to "manage" your exams, that is a red flag about the whole programme, not a convenience. Our guide on <a href="/blog/ugc-fake-universities-list-2026">the UGC fake universities list</a> covers the other warning signs.</p>
+
+<h2>What does a test centre exam involve?</h2>
+
+<p>When a university uses a test centre, the regulations set minimum standards. Each room needs human proctors or technology-mediated proctoring, examinees must sit far enough apart that they cannot see each other's work, and the centre must test the exam application before the paper starts. Centres also need CCTV recording of the whole exam, kept for at least five years, plus an observer appointed by the university.</p>
+
+<p>There is one difference from distance learning that matters if you live far from the university. Online programmes are not bound by territorial jurisdiction, so a university can enrol online learners across India. Distance (ODL) exams, by contrast, must be held within the university's territorial jurisdiction. If you are weighing the two modes, our guide to <a href="/guides/online-mba-vs-distance-mba">online versus distance MBA</a> sets out the other differences.</p>
+
+<h2>Is a degree earned through online exams valid?</h2>
+
+<p>Yes, when the programme is UGC-entitled. Regulation 22 says degrees awarded through ODL or online mode by recognised institutions are equivalent to the corresponding conventional degrees. Each degree must also carry a unique identification number and be uploaded to the National Academic Depository, which makes it verifiable.</p>
+
+<p>The entitlement is the part to check, because it applies to a specific programme in a specific session. Look the programme up on <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>, or use our step-by-step guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a>. For the wider question, read <a href="/guides/is-online-degree-valid-india">is an online degree valid in India</a>.</p>
+
+<h2>How to prepare for your first online exam</h2>
+
+<ul>
+<li>Run the university's system check at least a day before, on the device you will use.</li>
+<li>Use a wired connection or sit close to the router, and keep a mobile hotspot ready as a fallback.</li>
+<li>Keep the ID you registered with on the desk. A different ID can fail the check.</li>
+<li>Clear the desk and the wall behind you. Notes in view can be flagged.</li>
+<li>Read the university's rules on breaks. In many remote exams, leaving the frame counts as a violation.</li>
+<li>Save the exam helpdesk number and email before the paper, not during it.</li>
+</ul>
+
+<p>If you are still choosing a programme, the exam format is worth comparing alongside fees and accreditation. You can <a href="/compare">compare universities side by side</a> or browse <a href="/programs/mba">online MBA programmes</a>.</p>
+
+<div class="cta-box">
+<p><strong>Want to know how a particular university runs its exams?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020: Regulation 2 (definition of proctored examination), Regulation 15 (evaluation), Regulation 16 (certification), Regulation 22 (equivalence), Annexure II (conduct of examination). Published on deb.ugc.ac.in/Regulations</li>
+<li>UGC-DEB, Online Learning: deb.ugc.ac.in</li>
+</ul>
+
+<p class="disclaimer"><em>Last checked against the UGC 2020 regulations as published on deb.ugc.ac.in on 26 October 2026. Exam formats, software and re-test policies vary by university and can change between sessions. Confirm the current rules with your university.</em></p>
+    `,
+  },
 ]
 
 export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))

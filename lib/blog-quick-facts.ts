@@ -3,6 +3,16 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'how-online-degree-exams-work-india': [
+    { label: 'Exam type', value: 'Proctored, every semester' },
+    { label: 'Remote exams', value: 'Allowed (tech-mediated proctoring)' },
+    { label: 'Assignments weight', value: 'Max 30%' },
+    { label: 'End-sem exam weight', value: 'Min 70%' },
+    { label: 'ID check', value: 'Biometric / govt ID' },
+    { label: 'Outsourcing', value: 'Not allowed' },
+    { label: 'Degree equivalence', value: 'Yes (Reg. 22)', green: true },
+    { label: 'Last verified', value: '26 Oct 2026', green: true },
+  ],
   'ugc-fake-universities-list-2026': [
     { label: 'Fake universities listed', value: '32' },
     { label: 'List dated', value: 'February 2026' },
